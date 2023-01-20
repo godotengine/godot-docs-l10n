@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,22 +40,18 @@ msgstr ""
 "<class_Node2D>`basiert) dazu zu bringen benutzerdefinierte Befehle zu "
 "zeichnen. Es ist *wirklich* einfach dies zu tun."
 
-#, fuzzy
 msgid ""
 "Custom drawing in a 2D node is *really* useful. Here are some use cases:"
 msgstr ""
-"Das manuelle Zeichnen in einem Node ist *wirklich* nützlich. Hier einige "
-"Beispiele warum:"
+"Das manuelle Zeichnen in einem 2D-Node ist *wirklich* nützlich. Hier einige "
+"Beispiele, warum:"
 
-#, fuzzy
 msgid ""
 "Drawing shapes or logic that existing nodes can't do, such as an image with "
 "trails or a special animated polygon."
 msgstr ""
-"Zeichnen von Formen oder Logik, die nicht von Nodes bereitgestellt werden "
-"(zum Beispiel: Erstellen eines Nodes der einen Kreis zeichnet, eines Bildes "
-"das Spuren auf dem Weg hinterlässt, einer speziellen Art von animiertem "
-"Polygon usw.)."
+"Zeichnen von Formen oder Logik, die vorhandene Nodes nicht leisten können, "
+"z. B. ein Bild mit Spuren oder ein spezielles animiertes Polygon."
 
 msgid ""
 "Visualizations that are not that compatible with nodes, such as a tetris "
@@ -65,25 +61,23 @@ msgstr ""
 "ein Tetris-Brett. (Das Tetris-Beispiel verwendet eine benutzerdefinierte "
 "Zeichenfunktion, um die Blöcke zu zeichnen.)"
 
-#, fuzzy
 msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
 "of using a large number of nodes, possibly lowering memory usage and "
 "improving performance."
 msgstr ""
 "Zeichnen einer großen Anzahl einfacher Objekte. Durch benutzerdefinierte "
-"Zeichnungen wird der Overhead für die Verwendung von Nodes vermieden, "
-"wodurch sich die Speichernutzung verringert und möglicherweise schneller "
-"wird."
+"Zeichnungen wird der Overhead für die Verwendung großer Anzahlen von Nodes "
+"vermieden, wodurch sich die Speichernutzung verringert und möglicherweise "
+"schneller wird."
 
-#, fuzzy
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but when "
 "you have unusual needs, you will likely need a custom control."
 msgstr ""
-"Erstellen eines benutzerdefinierten UI-Steuerelements. Es gibt viele "
-"Steuerelemente, aber es ist leicht ein neues, benutzerdefiniertes "
-"Steuerelement zu erstellen."
+"Erstellen eines benutzerdefinierten UI-Steuerelements. Es gibt eine Vielzahl "
+"von Steuerelementen, aber wenn Sie ungewöhnliche Anforderungen haben, "
+"benötigen Sie wahrscheinlich ein benutzerdefiniertes Steuerelement."
 
 msgid "Drawing"
 msgstr "Zeichnen"
@@ -116,14 +110,13 @@ msgstr ""
 "Zeichenbefehle gecached und zwischengespeichert werden, sodass weitere "
 "Aufrufe nicht erforderlich sind."
 
-#, fuzzy
 msgid ""
 "If re-drawing is required because a state or something else changed, call :"
 "ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that same node "
 "and a new ``_draw()`` call will happen."
 msgstr ""
 "Wenn ein erneutes Zeichnen erforderlich ist, weil sich ein Status oder etwas "
-"anderes geändert hat, rufen Sie einfach :ref:`CanvasItem.update() "
+"anderes geändert hat, rufen Sie :ref:`CanvasItem.update() "
 "<class_CanvasItem_method_update>` in demselben Node auf und ein neuer "
 "``_draw()`` Aufruf wird ausgeführt."
 
@@ -432,7 +425,6 @@ msgstr ""
 msgid "Tools"
 msgstr "Werkzeuge"
 
-#, fuzzy
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor. This can be used as a preview or visualization of some feature or "
@@ -440,7 +432,8 @@ msgid ""
 msgstr ""
 "Das Zeichnen eigener Nodes kann auch erwünscht sein, wenn Sie diese im "
 "Editor ausführen, um sie als Vorschau oder Visualisierung einer Funktion "
-"oder eines Verhaltens zu verwenden."
+"oder eines Verhaltens zu verwenden. Unter :ref:"
+"`doc_running_code_in_the_editor`finden sie weitere Informationen."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

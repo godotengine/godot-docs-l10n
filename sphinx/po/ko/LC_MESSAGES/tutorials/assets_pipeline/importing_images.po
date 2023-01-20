@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,7 +117,7 @@ msgid "Import options are vast:"
 msgstr "가져오기 설정은 거대합니다:"
 
 msgid "Detect 3D"
-msgstr "3D 감지(Detect 3D)"
+msgstr "3D 감지"
 
 msgid ""
 "This option makes Godot be aware of when a texture (which is imported for 2D "
@@ -211,7 +211,7 @@ msgid "Compress VRAM"
 msgstr "VRAM 압축"
 
 msgid "Description"
-msgstr "서술"
+msgstr "설명"
 
 msgid "Stored as raw pixels"
 msgstr "압축되지 않은 픽셀로 저장됨"
@@ -297,7 +297,7 @@ msgstr ""
 "정을 활성화하세요."
 
 msgid "Normal Map"
-msgstr "노말맵"
+msgstr "일반 맵"
 
 msgid ""
 "When using a texture as normal map, only the red and green channels are "
@@ -354,7 +354,7 @@ msgstr ""
 "니다."
 
 msgid "Repeat"
-msgstr "Repeat(반복)"
+msgstr "반복"
 
 msgid ""
 "This setting is most commonly used in 3D, and is therefore generally "
@@ -368,7 +368,7 @@ msgid "Repeating can optionally be set to mirrored mode."
 msgstr "반복은 선택에 따라 거울 모드로 설정할 수 있습니다."
 
 msgid "Filter"
-msgstr "Filter(필터)"
+msgstr "필터"
 
 msgid ""
 "When pixels become larger than the screen pixels, this option enables linear "
@@ -381,7 +381,7 @@ msgstr ""
 "수 있지만, 픽셀 퍼펙트 게임을 만들 때는 보통 비활성화합니다."
 
 msgid "Mipmaps"
-msgstr "Mipmaps(밉맵)"
+msgstr "밉맵"
 
 msgid ""
 "When pixels become smaller than the screen, mipmaps kick in. This helps "
@@ -414,7 +414,7 @@ msgstr ""
 "리 있는 오브젝트에 사용됩니다)."
 
 msgid "Anisotropic"
-msgstr "Anisotropic(비등방성)"
+msgstr "이방성"
 
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
@@ -454,14 +454,14 @@ msgstr ""
 "2D에 사용하면 됩니다."
 
 msgid "Process"
-msgstr "Process(가공)"
+msgstr "프로세스"
 
 msgid ""
 "Some special processes can be applied to images when imported as textures."
 msgstr "이미지를 텍스처로 가져올 때, 일부 특수 프로세스를 적용할 수 있습니다."
 
 msgid "Fix Alpha Border"
-msgstr "Fix Alpha Border(알파 테두리 수정)"
+msgstr "알파 테두리 수정"
 
 msgid ""
 "This puts pixels of the same surrounding color in transition from "
@@ -502,7 +502,7 @@ msgstr ""
 "이 좋지만, 최악의 경우에서, 이 설정을 켜면 좋게 보이게 만듭니다."
 
 msgid "Invert Color"
-msgstr "Invert Color(색상 반전)"
+msgstr "색상 반전"
 
 msgid ""
 "Reverses the image's color. This is useful, for example, to convert a height "

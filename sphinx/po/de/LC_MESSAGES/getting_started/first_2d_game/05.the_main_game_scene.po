@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,24 +178,22 @@ msgstr ""
 "Zufallszahlengenerator bei jedem Durchlauf des Spiels andere Zufallszahlen "
 "erzeugt:"
 
-#, fuzzy
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob Scene`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
-"Klicken Sie auf die ``Main`` Node und man wird eine ``Mob`` Eigenschaft im "
-"Inspector unter \"Script Variables\" erkennen."
+"Klicken Sie auf das ``Main``-Node und Sie werden die Eigenschaft ``Mob "
+"Scene`` im Inspektor unter \"Script Variables\" sehen."
 
 msgid "You can assign this property's value in two ways:"
 msgstr "Man kann einen Wert für eine Eigenschaft auf zwei Wege hinzufügen:"
 
-#, fuzzy
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" dock and drop it in the **Mob "
 "Scene** property."
 msgstr ""
-"Ziehen Sie ``Mob.tscn`` aus dem Panel \"FileSystem\" und legen Sie es in der "
-"Eigenschaft ``Mob`` unter den Skript-Variablen des Nodes ``Main`` ab."
+"Ziehen Sie ``Mob.tscn`` aus dem \"Dateisystem\"-Dock und legen Sie es in der "
+"**Mob Scene** Eigenschaft ab."
 
 msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
@@ -243,7 +241,6 @@ msgstr ""
 "``StartTimer`` startet die anderen beiden Timer. ``ScoreTimer`` erhöht die "
 "Punktzahl um 1."
 
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -253,11 +250,14 @@ msgid ""
 "for how fast each mob will move (it would be boring if they were all moving "
 "at the same speed)."
 msgstr ""
-"In ``_on_MobTimer_timeout()`` erstellt eine Mob-Instanz, wählt einen "
-"zufälligen Startpunkt entlang des ``Path2D`` aus und setzt den Gegner in "
-"Bewegung. Der ``PathFollow2D``-Node dreht sich automatisch, wenn er dem Pfad "
-"folgt. Wir verwenden diesen, um die Richtung des Gegners sowie dessen "
-"Position auszuwählen."
+"In ``_on_MobTimer_timeout()`` erstellen wir eine Gegner-Instanz, wählen eine "
+"zufällige Startposition entlang des ``Path2D`` und setzen den Gegner in "
+"Bewegung. Das ``PathFollow2D``-Node wird sich automatisch drehen, wenn es "
+"dem Pfad folgt, also werden wir es benutzen, um die Richtung des Gegners und "
+"seine Position zu bestimmen. Wenn wir einen Gegner erzeugen, wählen wir "
+"einen Zufallswert zwischen ``150.0`` und ``250.0`` für die Geschwindigkeit, "
+"mit der sich jeder Gegner bewegt (es wäre langweilig, wenn sie sich alle mit "
+"der gleichen Geschwindigkeit bewegen würden)."
 
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
@@ -265,7 +265,6 @@ msgstr ""
 "Beachten Sie, dass der Szene mit ``add_child()`` eine neue Instanz "
 "hinzugefügt werden muss."
 
-#, fuzzy
 msgid ""
 "Why ``PI``? In functions requiring angles, Godot uses *radians*, not "
 "degrees. Pi represents a half turn in radians, about ``3.1415`` (there is "
@@ -273,21 +272,21 @@ msgid ""
 "working with degrees, you'll need to use the ``deg2rad()`` and ``rad2deg()`` "
 "functions to convert between the two."
 msgstr ""
-"Warum ``PI``? In Funktionen die Winkel erfordern, verwendet GDScript "
-"*Bogenmaß*, nicht Grad. Wenn Sie sich beim Arbeiten mit Grad wohler fühlen, "
-"müssen Sie die Funktionen ``deg2rad()`` und ``rad2deg()`` verwenden, um "
-"zwischen beiden zu konvertieren."
+"Warum ``PI``? Bei Funktionen, die Winkel erfordern, verwendet Godot "
+"*Bogenmaß*, nicht Grad. Pi steht für eine halbe Drehung im Bogenmaß, etwa "
+"``3,1415`` (es gibt auch ``TAU``, das gleich ``2 * PI`` ist). Wenn Sie "
+"lieber mit Grad arbeiten, müssen Sie die Funktionen ``deg2rad()`` und "
+"``rad2deg()`` verwenden, um zwischen den beiden zu konvertieren."
 
 msgid "Testing the scene"
 msgstr "Die Szene testen"
 
-#, fuzzy
 msgid ""
 "Let's test the scene to make sure everything is working. Add this "
 "``new_game`` call to ``_ready()``:"
 msgstr ""
-"Lassen Sie uns die Szene testen, um sicherzustellen, dass alles "
-"funktioniert. Fügen Sie folgendes ``_ready()`` hinzu:"
+"Testen wir die Szene, um sicherzustellen, dass alles funktioniert. Füge "
+"diesen ``new_game`` Aufruf zu ``_ready()`` hinzu:"
 
 msgid ""
 "Let's also assign ``Main`` as our \"Main Scene\" - the one that runs "

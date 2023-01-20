@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -205,7 +205,7 @@ msgid "Use vertex-based lighting."
 msgstr "使用基于顶点的照明。"
 
 msgid "**shadows_disabled**"
-msgstr "**specular_disabled**"
+msgstr "**shadows_disabled**"
 
 msgid "Disable computing shadows in shader."
 msgstr "在着色器中禁用阴影计算。"
@@ -321,7 +321,7 @@ msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr "in vec2 **VIEWPORT_SIZE**"
 
 msgid "Size of viewport (in pixels)."
-msgstr "视区大小(以像素为单位)."
+msgstr "视口大小（单位为像素）。"
 
 msgid "inout mat4 **WORLD_MATRIX**"
 msgstr "inout mat4 **WORLD_MATRIX**"
@@ -438,7 +438,7 @@ msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr "in vec4 **INSTANCE_CUSTOM**"
 
 msgid "Instance custom data (for particles, mostly)."
-msgstr "实例自定义数据(主要用于粒子)."
+msgstr "实例自定义数据（主要用于粒子）。"
 
 msgid ""
 "``MODELVIEW_MATRIX`` combines both the ``WORLD_MATRIX`` and "
@@ -447,6 +447,9 @@ msgid ""
 "you may run into floating point issues when using the seperated "
 "``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``."
 msgstr ""
+"``MODELVIEW_MATRIX`` 结合了 ``WORLD_MATRIX`` 和 ``INV_CAMERA_MATRIX``\\ ，更"
+"适合可能会造成浮点数问题的场合。例如，如果对象距离世界原点非常远，那么使用单"
+"独的 ``WORLD_MATRIX`` 和 ``INV_CAMERA_MATRIX`` 可能就会遇到浮点数问题。"
 
 msgid "Fragment built-ins"
 msgstr "片段内置"
@@ -462,13 +465,16 @@ msgstr ""
 "影. 但是, 你无需使用所有这些属性, 如果你不写入它们,Godot将优化掉相应的功能."
 
 msgid "Below are examples of common variables calculated using the built-ins:"
-msgstr ""
+msgstr "以下是使用内置去计算一些常见变量的例子："
 
 msgid ""
 "A commonly used alternative to ``WORLD_MATRIX[3].xyz`` is to use ``vec3 "
 "origin = (WORLD_MATRIX * vec4(0,0,0,1)).xyz``. It is more efficient to use "
 "``WORLD_MATRIX[3].xyz`` as it avoids the matrix multiplication."
 msgstr ""
+"``WORLD_MATRIX[3].xyz`` 的常见替代品是 ``vec3 origin = (WORLD_MATRIX * "
+"vec4(0,0,0,1)).xyz``\\ 。用 ``WORLD_MATRIX[3].xyz`` 更加高效，因为无需做矩阵"
+"乘法。"
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
@@ -674,8 +680,11 @@ msgstr "内置纹理, 用于从屏幕读取深度. 必须使用INV_PROJECTION转
 msgid "out float **DEPTH**"
 msgstr "out float **DEPTH**"
 
-msgid "Custom depth value (0..1)."
-msgstr "自定义深度值(0..1)."
+msgid ""
+"Custom depth value (0..1). If ``DEPTH`` is being written to in any shader "
+"branch, then you are responsible for setting the ``DEPTH`` for **all** other "
+"branches. Otherwise, the graphics API will leave them uninitialized."
+msgstr ""
 
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
@@ -743,6 +752,8 @@ msgid ""
 "``DIFFUSE_LIGHT`` using ``=``. This is due to lighting being computed in "
 "multiple passes (one for each light), unlike GLES3."
 msgstr ""
+"在 GLES2 中，灯光总是叠加的，即便你用 ``=`` 去覆盖 ``DIFFUSE_LIGHT``\\ 。这是"
+"因为灯光是多阶段计算的（一个光源一次），与 GLES3 不同。"
 
 msgid ""
 "The ``light()`` function won't be run if the ``vertex_lighting`` render mode "

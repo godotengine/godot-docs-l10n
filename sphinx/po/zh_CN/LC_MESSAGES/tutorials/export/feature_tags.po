@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -232,12 +232,17 @@ msgid ""
 "time conditions. For example, ``OS.has_feature(\"mobile\")`` will return "
 "``false`` when running a project exported to HTML5 on a mobile device."
 msgstr ""
+"除了纹理压缩特性标签之外，默认的特性标签都是\\ **不可修改**\\ 的。这意味着它"
+"们\\ *不会*\\ 根据运行时的情况变化。例如，在移动设备上运行导出为 HTML5 的项目"
+"时， ``OS.has_feature(\"mobile\")`` 返回的是 ``false``\\ 。"
 
 msgid ""
 "To check whether a project exported to HTML5 is running on a mobile device, :"
 "ref:`call JavaScript code <doc_javascript_eval>` that reads the browser's "
 "user agent."
 msgstr ""
+"要检查导出为 HTML5 的项目是否是在移动设备上运行，请\\ :ref:`调用 JavaScript "
+"代码 <doc_javascript_eval>`\\ 读取浏览器的用户代理。"
 
 msgid "Custom features"
 msgstr "自定义功能"
@@ -253,6 +258,9 @@ msgid ""
 "running the project from the editor, even if the export preset marked as "
 "**Runnable** for your current platform has custom feature tags defined."
 msgstr ""
+"自定义特性标签只会在运行导出后的项目中使用（包括 :ref:`doc_one-"
+"click_deploy`）。从编辑器中运行项目时\\ **不会使用**\\ ，即便标记为\\ **可执"
+"行**\\ 的导出预设对应的平台上存在自定义特性标签。"
 
 msgid "Overriding project settings"
 msgstr "覆盖项目设置"

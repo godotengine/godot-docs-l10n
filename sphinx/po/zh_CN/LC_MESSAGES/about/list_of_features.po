@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,14 +23,13 @@ msgstr "特性列表"
 msgid "This page aims to list all features currently supported by Godot."
 msgstr "这个页面旨在罗列所有的现在被 Godot 支持的功能特性。"
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`__ are available in the latest development version "
 "(4.0)."
 msgstr ""
-"这个页面列出了当前稳定版本的 Godot（3.4）所支持的特性。最新的开发版本（4.0）"
+"这个页面列出了当前稳定版本的 Godot（3.5）所支持的特性。最新的开发版本（4.0）"
 "提供\\ `更多特性 <https://docs.godotengine.org/en/latest/about/"
 "list_of_features.html>`_\\ 。"
 
@@ -142,7 +141,7 @@ msgid "Move the in-editor camera and see the result in the running project."
 msgstr "移动编辑器中的摄像头，并在正在运行的项目中查看结果。"
 
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "内置离线类参考文档。"
 
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "使用由社区贡献的支持数十种语言的编辑器。"
@@ -157,11 +156,12 @@ msgstr ""
 "可以从\\ :ref:`素材库 <doc_what_is_assetlib>`\\ 下载编辑器插件，扩展编辑器的"
 "功能。"
 
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
-msgstr "使用 GDScript :ref:`自己创建插件 <doc_making_plugins>` 来新建"
+msgstr ""
+"使用 GDScript :ref:`自己创建插件 <doc_making_plugins>`\\ ，添加新功能或者加速"
+"你的工作流。"
 
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
@@ -219,13 +219,12 @@ msgstr ""
 msgid "Bitmap fonts can be exported using tools like BMFont."
 msgstr "位图字体可以通过例如 BMFont 的工具被导出。"
 
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
-"DynamicFont支持单色字体以及彩色字体（例如用于表情符号）。支持的格式是TTF、OTF"
-"和WOFF1。"
+"DynamicFont 支持单色字体以及彩色字体（例如用于表情符号）。支持的格式有 TTF、"
+"OTF、WOFF1 和 WOFF2。"
 
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
@@ -524,14 +523,13 @@ msgid "Brightness, contrast and saturation adjustments."
 msgstr "亮度, 对比度和饱和度调整."
 
 msgid "*GLES3:* Automatic exposure adjustments based on viewport brightness."
-msgstr "*GLES3：*\\ 根据视区亮度自动调整曝光。"
+msgstr "*GLES3：*\\ 根据视口亮度自动调整曝光。"
 
 msgid "*GLES3:* Near and far depth of field."
 msgstr "*GLES3：*\\ 近景深和远景深。"
 
-#, fuzzy
 msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
-msgstr "*GLES3：*\\ 屏幕空间环境光遮蔽。"
+msgstr "*GLES3：*\\ 屏幕空间环境光遮蔽（SSAO）。"
 
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
@@ -582,12 +580,13 @@ msgstr ""
 "使用\\ :ref:`房间与入口 <doc_rooms_and_portals>`\\ 实现遮挡剔除。支持游戏通"
 "知，根据主次两级可见性来禁用不需要的节点的 AI/物理处理。"
 
-#, fuzzy
 msgid ""
 "Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
 "and portals (and doesn't support gameplay notifications), but easier to set "
 "up."
-msgstr "实时遮挡球。效率不及房间与入口（也不支持游戏通知），但更易使用。"
+msgstr ""
+"实时遮挡形状（球体及多边形）。效率不及房间与入口（也不支持游戏通知），但更易"
+"使用。"
 
 msgid ""
 "Most of the effects listed above can be adjusted for better performance or "
@@ -776,12 +775,18 @@ msgid ""
 "Future Godot 4.x releases may have VisualScript reimplemented as an "
 "extension."
 msgstr ""
+"`Godot 4.0 将会把 VisualScript 从核心中完全移除。 <https://godotengine.org/"
+"article/godot-4-will-discontinue-visual-scripting>`__\\ 因此，不推荐在新的 "
+"Godot 项目中使用可视化脚本。后续的 Godot 4.x 版本可能会将 VisualScript 重新实"
+"现为扩展。"
 
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
 "out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
 "intend to migrate your project to Godot 4."
 msgstr ""
+"Godot 3.x 仍会支持 VisualScript，我们建议你先\\ :ref:`试一试 GDScript <toc-"
+"learn-scripting-gdscript>`\\ ，尤其是你想要把项目移植到 Godot 4 的话。"
 
 msgid "Audio"
 msgstr "音频"
@@ -937,13 +942,12 @@ msgid "A* algorithm in 2D and 3D."
 msgstr "2D和3D A星算法."
 
 msgid "Navigation meshes with dynamic obstacle avoidance."
-msgstr ""
+msgstr "导航网格，带有动态避障。"
 
-#, fuzzy
 msgid ""
 "Generate navigation meshes from the editor or at run-time (including from an "
 "exported project)."
-msgstr "编辑器内生成导航网格."
+msgstr "在编辑器内或运行时生成导航网格（包括导出的项目）。"
 
 msgid "Networking"
 msgstr "网络"

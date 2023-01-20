@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,13 @@ msgstr ""
 msgid "Finishing up"
 msgstr "Fertigstellung"
 
-#, fuzzy
 msgid ""
 "We have now completed all the functionality for our game. Below are some "
 "remaining steps to add a bit more \"juice\" to improve the game experience."
 msgstr ""
 "Wir haben jetzt alle Funktionen für unser Spiel fertiggestellt. Im Folgenden "
-"werden einige Schritte beschrieben, um etwas mehr „Tiefe“ hinzuzufügen, die "
-"das Spielerlebnis verbessert. Zögern Sie nicht, das Gameplay mit Ihren "
-"eigenen Ideen zu erweitern."
+"finden Sie einige verbleibende Schritte, um das Spielerlebnis noch etwas zu "
+"verbessern."
 
 msgid "Feel free to expand the gameplay with your own ideas."
 msgstr "Fühl dich frei, dein Spiel mit deinen eigenen Ideen zu erweitern."
@@ -130,7 +128,6 @@ msgstr ""
 "``start_game`` und fügen Sie eine Tastenzuordnung für die Taste :kbd:`Enter` "
 "hinzu."
 
-#, fuzzy
 msgid ""
 "In the ``HUD`` scene, select the ``StartButton`` and find its *Shortcut* "
 "property in the Inspector. Select \"New Shortcut\" and click on the "
@@ -138,24 +135,22 @@ msgid ""
 "InputEventAction\" and click the new \"InputEventAction\". Finally, in the "
 "*Action* property, type the name ``start_game``."
 msgstr ""
-"Wählen Sie in der ``HUD``-Szene den ``StartButton`` aus, und suchen im "
-"Inspektor nach seiner *Shortcut*-Eigenschaft. Wählen Sie \"Neues Shortcut\" "
-"und klicke auf das *Shortcut*-Element. Eine zweite „Shortcut“-Eigenschaft "
-"wird angezeigt. Wählen Sie „Neue InputEventAction“ und klicken auf das neue "
-"„InputEvent“-Element. Geben Sie schließlich in der Eigenschaft *Action* den "
-"Namen ``ui_select`` ein. Dies ist das Standard Eingabe-Ereignis, das der "
-"Leertaste zugeordnet ist."
+"Wählen Sie in der Szene ``HUD`` das Element ``StartButton`` und suchen Sie "
+"im Inspektor die Eigenschaft *Verknüpfung*. Wählen Sie \"Neue Verknüpfung\" "
+"und klicken Sie auf das Element \"Verknüpfung\". Eine zweite *Verknüpfung* "
+"Eigenschaft wird erscheinen. Wählen Sie \"Neue EingabeEreignisAktion\" und "
+"klicken Sie auf die neue \"InputEventAction\". Geben Sie schließlich in der "
+"Eigenschaft *Aktion* den Namen ``start_game`` ein."
 
-#, fuzzy
 msgid ""
 "Now when the start button appears, you can either click it or press :kbd:"
 "`Enter` to start the game."
 msgstr ""
-"Wenn nun die Start-Schaltfläche angezeigt wird, können Sie entweder darauf "
-"klicken oder die :kbd:`Leertaste` drücken, um das Spiel zu starten."
+"Wenn nun der Start-Button angezeigt wird, können Sie entweder darauf klicken "
+"oder die :kbd:`Enter`-Taste drücken, um das Spiel zu starten."
 
 msgid "And with that, you completed your first 2D game in Godot."
-msgstr "Und damit hast du dein erstes Spiel in Godot fertiggestellt."
+msgstr "Und damit haben Sie ihr erstes 2D Spiel in Godot fertiggestellt."
 
 msgid ""
 "You got to make a player-controlled character, enemies that spawn randomly "
@@ -163,7 +158,7 @@ msgid ""
 "user interface, sounds, and more. Congratulations!"
 msgstr ""
 "Du hast einen vom Spieler gesteuerten Charakter und Feinde, die zufällig auf "
-"dem Spielfeld erscheinen, erstellt, den Spielstand gezählt, ein Spielende "
+"dem Spielfeld erscheinen, erstellt, den Punktestand gezählt, ein Spielende "
 "und eine Wiederholung implementiert und eine Benutzeroberfläche, Sounds und "
 "mehr hinzugefügt. Herzlichen Glückwunsch!"
 

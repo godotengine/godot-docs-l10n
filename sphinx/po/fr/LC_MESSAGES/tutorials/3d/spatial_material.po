@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -434,7 +434,7 @@ msgid "**Mul:** Object is multiplied."
 msgstr "**Mul :** objet est multiplié."
 
 msgid "Cull Mode"
-msgstr "Mode de Culling"
+msgstr "Mode Élagage"
 
 msgid ""
 "Determines which side of the object is not drawn when backfaces are rendered:"
@@ -745,7 +745,7 @@ msgstr ""
 "polycount.com/wiki/Normal_Map_Technical_Details>`__."
 
 msgid "Rim"
-msgstr "Bord"
+msgstr "Bordure"
 
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
@@ -773,7 +773,7 @@ msgstr ""
 "fonctionne généralement mieux."
 
 msgid "Clearcoat"
-msgstr "Vernis transparent"
+msgstr "Coucheclaire"
 
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr ""
@@ -795,9 +795,13 @@ msgid ""
 "This can be seen in the image below where clearcoat is turned on in the "
 "right."
 msgstr ""
+"L'effet est extrêmement subtil dans Godot 3 et peut nécessiter un éclairage "
+"spécifique ou de regarder un matériau d'une manière spécifique pour "
+"remarquer une différence. On peut le voir dans l'image ci-dessous où le "
+"vernis transparent est activé à droite."
 
 msgid "The effect will be more noticeable in Godot 4."
-msgstr ""
+msgstr "L'effet sera plus visible dans Godot 4."
 
 msgid "Anisotropy"
 msgstr "Anisotropie"

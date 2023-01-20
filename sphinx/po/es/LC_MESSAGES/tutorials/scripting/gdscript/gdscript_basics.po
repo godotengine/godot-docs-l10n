@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1759,9 +1759,9 @@ msgstr ""
 "Siempre que el valor de la ``variable`` sea modificado por una fuente "
 "*externa* (es decir, no sea modificado localmente en la clase), la función "
 "*setter* será invocada (``setterfunc`` arriba). Esto sucede *antes* de que "
-"el valor sea cambiado. Entonces la función *setter* debe de decidir que "
-"hacer con el nuevo valor. Y viceversa, cuando se accede a la ``variable``, "
-"la función *getter* (``getterfunc`` arriba) debe de ``return`` el valor "
+"el valor sea cambiado. La función *setter* debe de decidir que hacer con el "
+"nuevo valor. Y viceversa, cuando se accede a la ``variable``, la función "
+"*getter* (``getterfunc`` arriba) debe de ``return`` (regresar) el valor "
 "deseado. A continuación tienes un ejemplo:"
 
 msgid "Either of the *setter* or *getter* functions can be omitted::"

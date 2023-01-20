@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,10 +35,10 @@ msgid ""
 "GLES3 backend maps to OpenGL 3.3 on desktop, OpenGL ES 3.0 on mobile and "
 "WebGL 2.0 on the web."
 msgstr ""
-"\"GLES2\" 和 \"GLES3\" 是Godot中, 两个基于opengl呈现后端的名称. 在图形应用程"
-"序编程接口方面,GLES2后端映射到桌面的OpenGL 2.1, 移动版的OpenGL ES 2.0和web版"
-"的WebGL 1.0.GLES3后端映射到桌面的OpenGL 3.3, 移动版的OpenGL ES 3.0和web版的"
-"WebGL 2.0."
+"“GLES2”和“GLES3”是 Godot 中两个渲染后端的名称，它们都基于 OpenGL。在图形 API "
+"方面，GLES2 后端映射到桌面的 OpenGL 2.1、移动版的 OpenGL ES 2.0、Web 版的 "
+"WebGL 1.0。GLES3 后端映射到桌面的 OpenGL 3.3、移动版的 OpenGL ES 3.0、Web 版"
+"的 WebGL 2.0。"
 
 msgid "Particles"
 msgstr "粒子"
@@ -60,8 +60,8 @@ msgid ""
 "Particles and Particles2D can be converted to their CPU equivalent node with "
 "the \"Convert to CPUParticles\" option in the editor."
 msgstr ""
-"粒子和二维粒子可以通过编辑器中的 \"转换为CPU粒子\" 选项, 转换为它们的等效CPU"
-"节点."
+"Particles 和 Particles2D 可以通过编辑器中的“转换为 CPUParticles”选项转换为等"
+"效的 CPU 节点。"
 
 msgid "``SCREEN_TEXTURE`` mip-maps"
 msgstr "``SCREEN_TEXTURE`` 多级渐远纹理"
@@ -142,10 +142,10 @@ msgid "Subsurface scattering"
 msgstr "次表面散射"
 
 msgid "Anisotropy"
-msgstr "Anisotropy(各向异性)"
+msgstr "Anisotropy（各向异性）"
 
 msgid "Clearcoat"
-msgstr "Clearcoat(清漆)"
+msgstr "Clearcoat（清漆）"
 
 msgid "Depth mapping"
 msgstr "深度映射"
@@ -270,6 +270,9 @@ msgid ""
 "performance issues when using blend shapes in GLES2, try to minimize the "
 "number of blend shapes that are updated each frame."
 msgstr ""
+"在 GLES2 中，形状混合是在 CPU 而不是 GPU 上实现的。相应的，性能可能不及 "
+"GLES3 中的混合形状。要避免在 GLES2 中使用混合形状的性能问题，请尝试让每一帧中"
+"所需更新的混合形状尽可能地少。"
 
 msgid "Shading language"
 msgstr "着色语言"

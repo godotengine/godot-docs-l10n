@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -461,6 +461,9 @@ msgid ""
 "used to iterate though the contents of a string, list, range, dictionary or "
 "node."
 msgstr ""
+"和 ``if`` 关键字一同使用时，会检查字符串、列表、范围、字典、节点中是否存在某"
+"个值。和 ``for`` 关键字一同使用时，可用于遍历字符串、列表、范围、字典、节点中"
+"的内容。"
 
 msgid "``!`` ``not``"
 msgstr "``!`` ``not``"
@@ -1212,6 +1215,8 @@ msgid ""
 "use an ``if`` statement combined with the ``in`` operator to accomplish "
 "this::"
 msgstr ""
+"你可能还想要检查某个值是否包含在某些东西之中。可以通过 ``if`` 语句与 ``in`` "
+"操作符的组合来实现： ::"
 
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
@@ -1486,7 +1491,7 @@ msgid ""
 "they are passed like this::"
 msgstr ""
 "与常规函数的调用不同，就像在上面的示例中使用 ``.some_func`` 那样，如果被继承"
-"的类的构造函数接受参数，则将它们传递为： ::"
+"的类的构造函数接受参数，那么传递方式是这样的： ::"
 
 msgid "This is better explained through examples. Consider this scenario::"
 msgstr "通过示例可以更好地说明这一点。考虑这种情况： ::"

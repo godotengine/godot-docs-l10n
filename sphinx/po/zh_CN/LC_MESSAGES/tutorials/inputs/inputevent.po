@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgid ""
 "(the first node of the scene tree). Viewport does quite a lot of stuff with "
 "the received input, in order:"
 msgstr ""
-"但是 SceneTree 不知道如何处理这个事件，所以 SceneTree 把它交给视区，"
+"但是 SceneTree 不知道如何处理这个事件，所以 SceneTree 把它交给视口，"
 "从“根”\\ :ref:`Viewport <class_Viewport>`\\ （场景树的第一个节点）开始查找。"
 "Viewport 会对接收到的输入做很多事情，依次为:"
 
@@ -181,7 +181,7 @@ msgid ""
 "do so in a reverse depth-first order: Starting with the node at the bottom "
 "of the scene tree, and ending at the root node:"
 msgstr ""
-"将事件发送到场景中的所有侦听节点时, 视区将以反向深度优先顺序执行: 从场景树底"
+"将事件发送到场景中的所有侦听节点时, 视口将以反向深度优先顺序执行: 从场景树底"
 "部的节点开始, 到根节点结束:"
 
 msgid ""

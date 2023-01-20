@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,10 @@ msgstr ""
 msgid "Using the ArrayMesh"
 msgstr "使用 ArrayMesh"
 
-#, fuzzy
 msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
 "<class_arraymesh>`."
-msgstr "本教程将介绍使用 :ref:`ArrayMesh <class_arraymesh>` 的基础知识"
+msgstr "本教程将介绍使用 :ref:`ArrayMesh <class_arraymesh>` 的基础知识。"
 
 msgid ""
 "To do so, we will use the function :ref:`add_surface_from_arrays() "
@@ -35,18 +34,16 @@ msgstr ""
 "<class_ArrayMesh_method_add_surface_from_arrays>` , 它最多需要四个参数. 前两"
 "个参数是必须的, 后两个参数是可选的."
 
-#, fuzzy
 msgid ""
 "The first parameter is the ``PrimitiveType``, an OpenGL concept that "
 "instructs the GPU how to arrange the primitive based on the vertices given, "
 "i.e. whether they represent triangles, lines, points, etc. See :ref:`Mesh."
 "PrimitiveType <enum_Mesh_PrimitiveType>` for the options available."
 msgstr ""
-"第一个是 ``PrimitiveType``\\ （图元类型），这是 OpenGL 中的概念，用于指示 "
-"GPU 如何根据给定的顶点来安排图元，可以是三角形、线、点等。完整的列表可以在 :"
-"ref:`Mesh <class_mesh>` 的类参考下找到。"
+"第一个参数是 ``PrimitiveType``\\ （图元类型），这是 OpenGL 中的概念，用于指"
+"示 GPU 如何根据给定的顶点来安排图元，即它们表示的是三角形、线、还是点等等。可"
+"选项见 :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>`。"
 
-#, fuzzy
 msgid ""
 "The second parameter, ``arrays``, is the actual Array that stores the mesh "
 "information. The array is a normal Godot array that is constructed with "
@@ -54,140 +51,134 @@ msgid ""
 "PoolIntArray, etc.) for each type of information that will be used to build "
 "the surface."
 msgstr ""
-"第二种是存储网格信息的实际 Array。该数组是一个普通的 Godot 数组，用空括号 "
-"``[]`` 构造。它为每一种类型的信息存储一个 ``Pool**Array``\\ （如 "
-"PoolVector3Array、PoolIntArray 等）。"
+"第二各参数 ``arrays`` 是存储网格信息的实际 Array。该数组是一个普通的 Godot 数"
+"组，用空括号 ``[]`` 构造。它为每一种类型的信息存储一个 ``Pool**Array``\\ "
+"（如 PoolVector3Array、PoolIntArray 等），用于构建表面。"
 
 msgid ""
 "The possible elements of ``arrays`` are listed below, together with the "
 "position they must have within ``arrays``. See also :ref:`Mesh.ArrayType "
 "<enum_Mesh_ArrayType>`."
 msgstr ""
+"``arrays`` 可能包含下列元素，另外还必须在 ``arrays`` 中包含位置信息。另请参"
+"阅 :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`。"
 
 msgid "Index"
 msgstr "索引"
 
 msgid "Mesh.ArrayType Enum"
-msgstr ""
+msgstr "Mesh.ArrayType 枚举"
 
-#, fuzzy
 msgid "Array type"
-msgstr "数组模式"
+msgstr "数组类型"
 
 msgid "0"
 msgstr "0"
 
 msgid "``ARRAY_VERTEX``"
-msgstr ""
+msgstr "``ARRAY_VERTEX``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>` or :ref:`PoolVector2Array "
 "<class_PoolVector2Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`\\ ：\\ :ref:`Vector2 "
-"<class_Vector2>` 对象的数组。"
+":ref:`PoolVector3Array <class_PoolVector3Array>` 或 :ref:`PoolVector2Array "
+"<class_PoolVector2Array>`"
 
 msgid "1"
 msgstr "1"
 
 msgid "``ARRAY_NORMAL``"
-msgstr ""
+msgstr "``ARRAY_NORMAL``"
 
-#, fuzzy
 msgid ":ref:`PoolVector3Array <class_PoolVector3Array>`"
-msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
+msgstr ":ref:`PoolVector3Array <class_PoolVector3Array>`"
 
 msgid "2"
 msgstr "2"
 
 msgid "``ARRAY_TANGENT``"
-msgstr ""
+msgstr "``ARRAY_TANGENT``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. First 3 "
 "floats determine the tangent, and the last the binormal direction as -1 or 1."
 msgstr ""
-"``ARRAY_TANGENT`` = 2 | 4 个浮点数一组的 PoolRealArray。前 3 个浮点数决定切"
-"线，最后一个决定双法线方向，为 -1 或 1。"
+"4 个浮点数一组的 :ref:`PoolRealArray <class_PoolRealArray>`。前 3 个浮点数决"
+"定切线，最后一个决定双法线方向，为 -1 或 1。"
 
 msgid "3"
 msgstr "3"
 
 msgid "``ARRAY_COLOR``"
-msgstr ""
+msgstr "``ARRAY_COLOR``"
 
-#, fuzzy
 msgid ":ref:`PoolColorArray <class_PoolColorArray>`"
-msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
+msgstr ":ref:`PoolColorArray <class_PoolColorArray>`"
 
 msgid "4"
 msgstr "4"
 
 msgid "``ARRAY_TEX_UV``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>` or :ref:`PoolVector3Array "
 "<class_PoolVector3Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`\\ ：\\ :ref:`Vector2 "
-"<class_Vector2>` 对象的数组。"
+":ref:`PoolVector2Array <class_PoolVector2Array>` 或 :ref:`PoolVector3Array "
+"<class_PoolVector3Array>`"
 
 msgid "5"
 msgstr "5"
 
 msgid "``ARRAY_TEX_UV2``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2``"
 
 msgid "6"
 msgstr "6"
 
 msgid "``ARRAY_BONES``"
-msgstr ""
+msgstr "``ARRAY_BONES``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats or :ref:"
 "`PoolIntArray <class_PoolIntArray>` of groups of 4 ints. Each group lists "
 "indexes of 4 bones that affects a given vertex."
 msgstr ""
-"``ARRAY_BONES`` = 6 | 4 个 float 一组的 PoolRealArray 或 4 个 int 一组的 "
-"PoolIntArray。每一组都列出了影响某个特定顶点的 4 根骨骼。"
+"4 个 float 一组的 :ref:`PoolRealArray <class_PoolRealArray>` 或 4 个 int 一组"
+"的 :ref:`PoolIntArray <class_PoolIntArray>`。每一组都列出了影响某个特定顶点"
+"的 4 根骨骼。"
 
 msgid "7"
 msgstr "7"
 
 msgid "``ARRAY_WEIGHTS``"
-msgstr ""
+msgstr "``ARRAY_WEIGHTS``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. Each float "
 "lists the amount of weight an determined bone on ``ARRAY_BONES`` has on a "
 "given vertex."
 msgstr ""
-"``ARRAY_WEIGHTS`` = 7 | 4 个 float 一组的 PoolRealArray。每个 float 都列出了"
-"给定顶点对 ``ARRAY_BONES`` 中特定骨骼的权重。"
+"4 个 float 一组的 :ref:`PoolRealArray <class_PoolRealArray>`。每个 float 都列"
+"出了给定顶点对 ``ARRAY_BONES`` 中特定骨骼的权重。"
 
 msgid "8"
 msgstr "8"
 
-#, fuzzy
 msgid "``ARRAY_INDEX``"
-msgstr "``ARRAY_INDEX`` = 8 | PoolIntArray"
+msgstr "``ARRAY_INDEX``"
 
-#, fuzzy
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`"
-msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`"
 
-#, fuzzy
 msgid ""
 "The array of vertices (at index 0) is always required. The index array is "
 "optional and will only be used if included. We won't use it in this tutorial."
-msgstr "顶点阵列是必须的. 所有其他的都是可选的, 只有在包含的情况下才会使用."
+msgstr ""
+"顶点数组（索引为 0）始终是必须的。索引数组是可选的，包含时才会用到。在这个教"
+"程中我们不会用到。"
 
 msgid ""
 "All the other arrays carry information about the vertices. They are also "
@@ -197,44 +188,46 @@ msgid ""
 "g. ``ARRAY_TANGENT``) use four entries to describe a single vertex. These "
 "must be exactly four times larger than the vertex array."
 msgstr ""
+"其他所有数组包含的都是关于顶点的信息。他们也是可选的，包含时才会用到。有些数"
+"组（例如 `ARRAY_COLOR``\\ ）用每个顶点一个元素的形式来提供额外的顶点信息。他"
+"们的大小必须与顶点数组一致。另一些数组（例如 ``ARRAY_TANGENT``\\ ）用四个元素"
+"来描述一个顶点。他们必须正好是顶点数组的四倍大小。"
 
-#, fuzzy
 msgid ""
 "For normal usage, the last two parameters in :ref:`add_surface_from_arrays() "
 "<class_arraymesh_method_add_surface_from_arrays>` are typically left empty."
 msgstr ""
-"为此, 我们将使用函数 :ref:`add_surface_from_arrays() "
-"<class_ArrayMesh_method_add_surface_from_arrays>` , 它最多需要四个参数. 前两"
-"个参数是必须的, 后两个参数是可选的."
+"正常的使用场景下，\\ :ref:`add_surface_from_arrays() "
+"<class_arraymesh_method_add_surface_from_arrays>` 的最后两个参数通常都是留空"
+"的。"
 
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#, fuzzy
 msgid ""
 "In the editor, create a :ref:`MeshInstance <class_meshinstance>` and add an :"
 "ref:`ArrayMesh <class_arraymesh>` to it in the Inspector. Normally, adding "
 "an ArrayMesh in the editor is not useful, but in this case it allows us to "
 "access the ArrayMesh from code without creating one."
 msgstr ""
-"在Mesh实例中添加一个 :ref:`ArrayMesh <class_arraymesh>` . 通常情况下, 在编辑"
-"器中添加ArrayMesh是没有用的, 但在这种情况下, 允许从代码中访问ArrayMesh, 而不"
-"需要创建一个."
+"在编辑器中，创建一个 :ref:`MeshInstance <class_meshinstance>` 并在检查器中为"
+"其添加一个 :ref:`ArrayMesh <class_arraymesh>`\\ 。通常，在编辑器里添加 "
+"ArrayMesh 没什么用，但这里可以让我们免去用代码创建的麻烦，直接使用这个 "
+"ArrayMesh。"
 
 msgid "Next, add a script to the MeshInstance."
-msgstr "接下来, 在MeshInstance中添加一个脚本."
+msgstr "接下来，在 MeshInstance 上添加一个脚本。"
 
 msgid "Under ``_ready()``, create a new Array."
-msgstr "在 ``_ready()`` 下创建一个新的数组."
+msgstr "在 ``_ready()`` 下创建一个新的数组。"
 
-#, fuzzy
 msgid ""
 "This will be the array that we keep our surface information in - it will "
 "hold all the arrays of data that the surface needs. Godot will expect it to "
 "be of size ``Mesh.ARRAY_MAX``, so resize it accordingly."
 msgstr ""
-"这将是保存表面信息的数组, 将保存表面需要的所有数据数组.Godot希望它的大小最大"
-"是 ``Mesh.ARRAY_MAX`` , 所以要相应调整."
+"这将是保存表面信息的数组——将保存表面需要的所有数据数组。Godot 希望它的大小是 "
+"``Mesh.ARRAY_MAX``\\ ，所以要相应地调整。"
 
 msgid "Next create the arrays for each data type you will use."
 msgstr "接下来, 为您将使用的每种数据类型创建数组."
@@ -254,15 +247,13 @@ msgstr ""
 "在这个例子中，使用了 ``Mesh.PRIMITIVE_TRIANGLES``\\ ，但你也可以使用网格所提"
 "供的任何图元类型。"
 
-#, fuzzy
 msgid "Put together, the full code looks like:"
-msgstr "完整的代码如下:"
+msgstr "把这些放到一起，完整的代码是这样的："
 
-#, fuzzy
 msgid ""
 "The code that goes in the middle can be whatever you want. Below we will "
 "present some example code for generating a sphere."
-msgstr "中间可以放你想要的任何代码. 下面将介绍一些放在中间的示例代码."
+msgstr "中间可以放你想要的任何代码。下面我们会给出一些示例代码，用于生成球体。"
 
 msgid "Generating geometry"
 msgstr "生成几何体"
@@ -283,13 +274,12 @@ msgstr ""
 msgid "Saving"
 msgstr "保存"
 
-#, fuzzy
 msgid ""
 "Finally, we can use the :ref:`ResourceSaver <class_resourcesaver>` class to "
 "save the ArrayMesh. This is useful when you want to generate a mesh and then "
 "use it later without having to re-generate it."
 msgstr ""
-"最后，Godot 提供了 :ref:`ResourceSaver <class_resourcesaver>` 类来保存 "
+"最后，我们可以使用 :ref:`ResourceSaver <class_resourcesaver>` 类来保存该 "
 "ArrayMesh。当你想生成一个网格，然后在以后使用它而不需要重新生成时，这个方法很"
 "有用。"
 

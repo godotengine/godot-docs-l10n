@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,7 +156,6 @@ msgstr ""
 "后，在为游戏构建 Mod 内容时，这些修改者也将遵守文档中定义的 API（这样它将起作"
 "用）。用户然后将如上所述，使用 Godot 的内置导出工具来创建 PCK 文件。"
 
-#, fuzzy
 msgid ""
 "The developer uses Godot to build a GUI tool for adding their exact API "
 "content to a project. This Godot tool must either run on a tools-enabled "
@@ -167,12 +166,12 @@ msgid ""
 "the engine (for security), so it's best to keep the modding tool and game "
 "separate."
 msgstr ""
-"开发人员使用Godot来构建GUI工具, 以将其确切的API内容添加到项目中. 这个Godot工"
-"具必须运行在, 或者可以访问一个(分布在原始游戏的文件旁边或者可能在原始游戏的文"
-"件中), 启用工具的引擎构建上. 然后, 该工具可以从命令行, 使用Godot可执行文件以"
-"及 :ref:`OS.execute() <class_OS_method_execute>`, 导出PCK文件. 对于游戏而言最"
-"有意义的是, 不使用工具构建(出于安全性考虑)；而对于改装工具而言最有意义的是, "
-"使用工具启用的引擎构建."
+"开发者使用 Godot 来构建 GUI 工具，用这个工具向项目中添加特定的 API 内容。这"
+"个 Godot 工具要么是在启用了工具构建的引擎上执行，要么就必须能够访问到这种版本"
+"的邀请（一同分发，或者加入到原版游戏的文件之中）。这样这个工具就可以使用 :"
+"ref:`OS.execute() <class_OS_method_execute>` 通过命令行使用 Godot 可执行文件"
+"来导出 PCK 文件。游戏本体不应该使用工具构建的引擎（出于安全考虑），所以最好"
+"将 mod 工具和游戏分开。"
 
 msgid "Opening PCK files at runtime"
 msgstr "在运行时打开 PCK 文件"

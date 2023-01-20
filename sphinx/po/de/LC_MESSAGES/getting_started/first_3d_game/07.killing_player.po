@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Killing the player"
-msgstr "Den Spieler Bewegen"
+msgstr "Den Spieler töten"
 
 msgid ""
 "We can kill enemies by jumping on them, but the player still can't die. "
@@ -116,31 +115,46 @@ msgid ""
 "end the game and destroy the player. We can wrap these operations in a "
 "``die()`` function that helps us put a descriptive label on the code."
 msgstr ""
+"Code-mäßig werden wir zwei Dinge tun: Ein Signal senden welches wir später "
+"verwenden werden um das Spiel zu beenden und den Spieler zu zerstören. Wir "
+"können diese Vorgänge in eine ``die()`` Funktion verpacken um dem Code eine "
+"aussagekräftige Beschriftung zu geben."
 
 msgid ""
 "Try the game again by pressing :kbd:`F5`. If everything is set up correctly, "
 "the character should die when an enemy runs into it."
 msgstr ""
+"Testen sie das Spiel erneut indem sie :kbd:`F5` Drücken. Wenn alles richtig "
+"eingereichtet ist, sollte der Charakter sterben sobald ein Gegner gegen ihn "
+"läuft."
 
 msgid ""
 "However, note that this depends entirely on the size and position of the "
 "*Player* and the *Mob*\\ 's collision shapes. You may need to move them and "
 "resize them to achieve a tight game feel."
 msgstr ""
+"Beachten Sie jedoch, dass dies vollständig von der Größe und Position der "
+"Kollisionsformen des *Player*\\s und des *Mob*\\s abhängt. Möglicherweise "
+"müssen Sie sie etwas verschieben oder ihre größe verändern, um ein gutes "
+"Spielgefühl zu erreichen."
 
-#, fuzzy
 msgid "Ending the game"
-msgstr "Spiel starten"
+msgstr "Das Spiel beenden"
 
 msgid ""
 "We can use the *Player*\\ 's ``hit`` signal to end the game. All we need to "
 "do is connect it to the *Main* node and stop the *MobTimer* in reaction."
 msgstr ""
+"Wir können das Signal ``hit`` des *Player*\\s verwenden um das Spiel zu "
+"beenden. Alles was wir dazu tun müssen, ist das Signal mit der *Main* Node "
+"zu verbinden und als Reaktion den *MobTimer* auszuschalten."
 
 msgid ""
 "Open ``Main.tscn``, select the *Player* node, and in the *Node* dock, "
 "connect its ``hit`` signal to the *Main* node."
 msgstr ""
+"Öffnen Sie ``Main.tscn``, wählen sie das *Player* Node und verbinden Sie in "
+"dem *Node* Panel das ``hit`` Signal mit der *Main* Node."
 
 msgid "|image5|"
 msgstr "|image5|"
@@ -150,42 +164,56 @@ msgstr "image5"
 
 msgid "Get and stop the timer in the ``_on_Player_hit()`` function."
 msgstr ""
+"Rufen Sie den Timer in der ``_on_Player_hit()`` Funktion ab und Stoppen Sie "
+"ihn."
 
 msgid ""
 "If you try the game now, the monsters will stop spawning when you die, and "
 "the remaining ones will leave the screen."
 msgstr ""
+"Wenn Sie das Spiel jetzt testen, hören die Monster auf zu spawnen sobald Sie "
+"sterben und die verbleibenden Monster werden den Bildschirmbereich verlassen."
 
 msgid ""
 "You can pat yourself in the back: you prototyped a complete 3D game, even if "
 "it's still a bit rough."
 msgstr ""
+"Sie können sich selbst auf die Schulter klopfen: Sie haben einen "
+"Vollständigen Prototypen für ein 3D Spiel erstellt, auch wenn er noch etwas "
+"unfertig ist."
 
 msgid ""
 "From there, we'll add a score, the option to retry the game, and you'll see "
 "how you can make the game feel much more alive with minimalistic animations."
 msgstr ""
+"Als nächstest fügen wir einen Punkestand, die Option das Spiel zu "
+"wiederholen und Sie werden sehen wie Sie mit ein paar minimalen Animationen "
+"das Spiel lebendiger gestalten können."
 
-#, fuzzy
 msgid "Code checkpoint"
-msgstr "Haltepunkt umschalten"
+msgstr "Code-Checkpoint"
 
 msgid ""
 "Here are the complete scripts for the *Main*, *Mob*, and *Player* nodes, for "
 "reference. You can use them to compare and check your code."
 msgstr ""
+"Hier sind die vollständigen Skripte der *Main*, *Mob* und *Spieler* Nodes "
+"als Referenz. Sie können sie verwenden um Ihren Code zu vergleichen und zu "
+"überprüfen."
 
 msgid "Starting with ``Main.gd``."
 msgstr "Beginnend mit ``Main.gd``."
 
 msgid "Next is ``Mob.gd``."
-msgstr ""
+msgstr "Als nächstes ``Mob.gd``."
 
 msgid "Finally, the longest script, ``Player.gd``."
 msgstr "Schließlich das längste Skript, ``Player.gd``."
 
 msgid "See you in the next lesson to add the score and the retry option."
 msgstr ""
+"Wir sehen uns in der nächsten Lektion, um den Punktestand und die Option das "
+"Spiel zu wiederholen hinzuzufügen."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

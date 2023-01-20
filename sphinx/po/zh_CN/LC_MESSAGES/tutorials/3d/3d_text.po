@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "3D text"
-msgstr "深度纹理"
+msgstr "3D 文本"
 
 msgid "Introduction"
 msgstr "前言"
@@ -29,19 +28,20 @@ msgid ""
 "3D scene and not just in the HUD. Godot provides two methods to do this. The "
 "Label3D node and the text mesh for a MeshInstance node."
 msgstr ""
+"项目中不仅会要在 HUD 中使用文本，有时也会需要把文本作为 3D 场景的一部分。"
+"Godot 为此提供了两种方法。Label3D 节点以及 MeshInstance 节点的文本网格。"
 
-#, fuzzy
 msgid ""
 "This page does **not** cover how to display a GUI scene in a 3D environment. "
 "For information on how to do that see `this <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/viewport/2d_in_3d>`__ demo project."
 msgstr ""
-"有关示例, 请参见 `3D 视窗缩放演示 <https://github.com/godotengine/godot-demo-"
-"projects/tree/master/viewport/3d_scaling>`__ ."
+"这个页面\\ **不会**\\ 涉及如何在 3D 环境中显示 GUI 场景。相关的信息请参考\\ `"
+"这个 <https://github.com/godotengine/godot-demo-projects/tree/master/"
+"viewport/2d_in_3d>`__\\ 演示项目。"
 
-#, fuzzy
 msgid "Label3D"
-msgstr "标签"
+msgstr "Label3D"
 
 msgid ""
 "Label3D behaves like a label node but in a 3D space. Unlike label node this "
@@ -49,6 +49,9 @@ msgid ""
 "customizable and uses the same DynamicFont and BitmapFont subresources "
 "control nodes use."
 msgstr ""
+"Label3D 与标签节点行为类似，只不过是换到了 3D 空间中。与标签节点不同，它是不"
+"会继承 GUI 主题属性的。不过，还是可以自定义外观的，使用的也是和控件节点同样"
+"的 DynamicFont 和 BitmapFont 子资源。"
 
 msgid ""
 "Label3D has minimal interaction with a 3D environment, it can be lit up and "
@@ -59,10 +62,14 @@ msgid ""
 "`this page <doc_3d_rendering_limitations_transparency_sorting>` for more "
 "information."
 msgstr ""
+"Label3D 和 3D 环境的交互很少，着色标志启用时能够接受光照、被光源着色，但即便 "
+"GeometryInstance3D 节点打开了阴影投射，它也不会投射阴影。这是因为该节点是一个"
+"带透明纹理的四边形网格（每个四边形一个字形），有着和 Sprite3D 一样的限制。详"
+"情请参阅\\ :ref:`这个页面 "
+"<doc_3d_rendering_limitations_transparency_sorting>`。"
 
-#, fuzzy
 msgid "Text mesh"
-msgstr "下一步"
+msgstr "文本网格"
 
 msgid ""
 "Text meshes have similarities to Label3D. They display text in a 3D scene, "
@@ -71,11 +78,14 @@ msgid ""
 "can have a material applied to it. Here is an example of a texture and how "
 "it's applied to the mesh."
 msgstr ""
+"文本网格与 Label3D 类似。会在 3D 场景中显示文本，也会用到相同的 DynamicFont "
+"子资源。不过文本是 3D 的，具有网格的属性。文本网格会向环境投射阴影，并且能够"
+"应用材质。这个例子展示的是如何在该网格上应用纹理。"
 
 msgid ""
 "There are two limitations to text mesh. It can't use bitmap fonts, or fonts "
 "with self intersection."
-msgstr ""
+msgstr "文本网格有两个限制。它无法使用位图字体，也不能使用存在自交的字体。"
 
 msgid "Translation status"
 msgstr "翻译状态"

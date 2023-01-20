@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,6 @@ msgstr ""
 "ることができます。この機能により、ゲームの様々なコンポーネントを分解して整理"
 "することができます。"
 
-#, fuzzy
 msgid ""
 "You can create as many scenes as you'd like and save them as files with the "
 "``.tscn`` extension, which stands for \"text scene\". The ``Label.tscn`` "
@@ -40,7 +39,7 @@ msgid ""
 msgstr ""
 "好きなだけシーンを作成し、\\ ``.tscn``\\ (\"text scene\") という拡張子でディ"
 "スクに保存することが可能です。前のレッスンの\\ ``Label.tscn``\\ ファイルはそ"
-"の例でした。これらのファイルは、シーンの内容に関する情報をパックしているた"
+"の例です。これらのファイルは、シーンの内容に関する情報をパックしているた"
 "め、\"Packed Scenes\"と呼んでいます。"
 
 #, fuzzy
@@ -55,7 +54,6 @@ msgstr ""
 "ルートとして、 :ref:`Sprite <class_Sprite>` ノードと :ref:`CollisionShape2D "
 "<class_CollisionShape2D>` から構成されています。"
 
-#, fuzzy
 msgid ""
 "Once you saved a scene, it works as a blueprint: you can reproduce it in "
 "other scenes as many times as you'd like. Replicating an object from a "
@@ -89,14 +87,13 @@ msgstr ""
 msgid "In practice"
 msgstr "実際に使う"
 
-#, fuzzy
 msgid ""
 "Let's use instancing in practice to see how it works in Godot. We invite you "
 "to download the ball's sample project we prepared for you: :download:"
 "`instancing.zip <files/instancing.zip>`."
 msgstr ""
 "インスタンス化を実際に使って、Godotで具体的にどう動くのかを見てみましょう。私"
-"たちが用意したballのサンプルプロジェクトをダウンロードしてください： :"
+"たちが用意したボールのサンプルプロジェクトをダウンロードしてください： :"
 "download:`instancing.zip <files/instancing.zip>`."
 
 msgid ""

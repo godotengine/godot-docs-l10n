@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -112,15 +112,16 @@ msgid ""
 "library. Materials set on the node will be ignored."
 msgstr "在生成网格库时, 只使用网格内的材质. 节点上设置的材质将被忽略."
 
-#, fuzzy
 msgid "NavigationMeshes"
-msgstr "导航网格."
+msgstr "NavigationMesh"
 
 msgid ""
 "Like all mesh instances, MeshLibrary items can be assigned a :ref:"
 "`class_NavigationMesh` resource, which can be created manually, or baked as "
 "described below."
 msgstr ""
+"和所有网格实例一样，MeshLibrary 的项目可以用 :ref:`class_NavigationMesh` 赋"
+"值，既可以手动创建，也即可按下面的说明进行烘焙。"
 
 msgid ""
 "To create the NavigationMesh from a MeshLibrary scene export, place a :ref:"
@@ -129,23 +130,33 @@ msgid ""
 "NavigationMeshInstance and some source geometry nodes below and bake the "
 "NavigationMesh."
 msgstr ""
+"要从 MeshLibrary 场景导出项创建 NavigationMesh，请在 GridMap 项目的主 "
+"MeshInstance 下添加一个 :ref:`class_NavigationMeshInstance` 子节点。为该 "
+"NavigationMeshInstance 添加一个有效的 NavigationMesh 资源，然后在下面添加一些"
+"来源几何体节点，再烘焙该 NavigationMesh。"
 
 msgid ""
 "With small grid cells it is often necessary to reduce the NavigationMesh "
 "properties for agent radius and region minimum size."
 msgstr ""
+"如果单元格比较小，一般需要把 NavigationMesh 属性里的代理半径和最小地区大小降"
+"低。"
 
 msgid ""
 "Nodes below the NavigationMeshInstance are ignored for the MeshLibrary scene "
 "export, so additional nodes can be added as source geometry just for baking "
 "the navmesh."
 msgstr ""
+"NavigationMeshInstance 下的节点在导出 MeshLibrary 场景时会被忽略，所以可以专"
+"门为烘焙导航网格添加额外的节点，作为来源几何体。"
 
 msgid ""
 "The baked cell size of the NavigationMesh must match the NavigationServer "
 "map cell size to properly merge the navigation meshes of different grid "
 "cells."
 msgstr ""
+"烘焙 NavigationMesh 的单元格大小必须与 NavigationServer 地图的单元格大小一"
+"致，才能把不同 Grid 单元格的导航网格合并起来。"
 
 msgid "Exporting the MeshLibrary"
 msgstr "导出 MeshLibrary"

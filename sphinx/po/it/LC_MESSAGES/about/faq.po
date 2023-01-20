@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,13 +111,11 @@ msgstr "macOS"
 msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
 
-#, fuzzy
 msgid ":ref:`Web <doc_using_the_web_editor>`"
-msgstr ":ref:`doc_running_code_in_the_editor`"
+msgstr ":ref:`Web <doc_using_the_web_editor>`"
 
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Plugin Android"
+msgstr "Android (sperimentale)"
 
 msgid "**For exporting your games:**"
 msgstr "**Per esportare i tuoi giochi:**"
@@ -502,7 +500,6 @@ msgstr ""
 "Fai clic con il pulsante destro sull'eseguibile di Godot e scegli **Crea "
 "collegamento**."
 
-#, fuzzy
 msgid ""
 "Move the created shortcut to ``%LOCALAPPDATA%\\Microsoft\\Windows\\Start "
 "Menu\\Programs``. This is the user-wide location for shortcuts that will "
@@ -550,19 +547,17 @@ msgstr ""
 "pemette di :ref:`eseguire Godot da un terminale <doc_command_line_tutorial>` "
 "scrivendo``godot``."
 
-#, fuzzy
 msgid ""
 "If you cannot move the Godot editor binary to a protected location, you can "
 "keep the binary somewhere in your home directory, and modify the ``Path=`` "
 "line in the ``.desktop`` file linked below to contain the full *absolute* "
 "path to the Godot binary."
 msgstr ""
-"Se non puoi spostare il binario dell'editor Godot in una posizione protetta, "
-"puoi tenerlo da qualche parte nella tua home directory e modificare la riga "
-"``Path=`` nel file ``.desktop`` collegato di seguito per contenere l'intero "
-"percorso *assoluto*del binario Godot."
+"Se non puoi spostare l'eseguibile dell'editor Godot in una posizione "
+"protetta, puoi tenerlo da qualche parte nella tua cartella home e modificare "
+"la riga ``Path=`` del file ``.desktop`` linkato qui sotto andando a inserire "
+"l'intero percorso *assoluto* del file eseguibile Godot."
 
-#, fuzzy
 msgid ""
 "Save `this .desktop file <https://raw.githubusercontent.com/godotengine/"
 "godot/3.x/misc/dist/linux/org.godotengine.Godot.desktop>`__ to ``$HOME/."
@@ -576,9 +571,8 @@ msgstr ""
 "anche salvare il file ``.desktop`` in ``/usr/local/share/applications`` per "
 "rendere il collegamento disponibile per tutti gli utenti."
 
-#, fuzzy
 msgid "Is the Godot editor a portable application?"
-msgstr "L'editor Godot è un'applicazione portatile?"
+msgstr "L'editor Godot è un'applicazione portabile?"
 
 msgid ""
 "In its default configuration, Godot is *semi-portable*. Its executable can "
@@ -589,7 +583,6 @@ msgstr ""
 "può partire da ogni luogo (incluso luoghi non scrivibili) e non richiede mai "
 "privilegi di amministratore."
 
-#, fuzzy
 msgid ""
 "However, configuration files will be written to the user-wide configuration "
 "or data directory. This is usually a good approach, but this means "
@@ -598,18 +591,17 @@ msgid ""
 "information."
 msgstr ""
 "Tuttavia, i file di configurazione verranno scritti nella configurazione a "
-"livello di utente o nella directory dei dati. Questo di solito è un buon "
+"livello di utente o nella cartella dei dati. Questo di solito è un buon "
 "approccio, ma questo significa che i file di configurazione non verranno "
 "trasferiti tra le macchine se si copia la cartella contenente l'eseguibile "
 "Godot. Vedi :ref:`doc_data_paths` per maggiori informazioni."
 
-#, fuzzy
 msgid ""
 "If *true* portable operation is desired (e.g. for use on an USB stick), "
 "follow the steps in :ref:`doc_data_paths_self_contained_mode`."
 msgstr ""
-"Se si desidera *vere* operazioni portatili (ad esempio per l'uso su una "
-"chiavetta USB), seguire i passaggi in :ref:"
+"Se si è interessati a operazioni *veramente* portabili (ad esempio per l'uso "
+"su una chiavetta USB), seguire i passaggi in :ref:"
 "`doc_data_paths_self_contained_mode`."
 
 msgid "Why does Godot use Vulkan or OpenGL instead of Direct3D?"
@@ -722,7 +714,6 @@ msgstr ""
 "velocità non è disponibile. In aggiunta, in questi stati generalmente ci "
 "sono dei limiti stringenti sulla quantità di dati utilizzabili."
 
-#, fuzzy
 msgid ""
 "For all the reasons above, we have to be selective of what we can accept as "
 "core functionality in Godot. This is why we are aiming to move some core "

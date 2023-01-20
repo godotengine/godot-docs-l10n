@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,7 +113,6 @@ msgstr ""
 "如果你打算在你的 GDNative 项目中使用 Git，可以将 ``godot-headers`` 添加为 "
 "Git 子模块。"
 
-#, fuzzy
 msgid ""
 "The ``godot-headers`` repository has different branches. As Godot evolves, "
 "so does GDNative. While we try to preserve compatibility between version, "
@@ -123,10 +122,11 @@ msgid ""
 "Godot headers *may* work with newer versions of the engine, but not the "
 "other way around."
 msgstr ""
-"``godot-headers`` 仓库有不同的分支。随着Godot的发展，GDNative也在发展。虽然我"
-"们努力保持不同版本之间的兼容性，但你应该根据Godot稳定分支（如 ``3.1`` ）和实"
-"际情况使用版本（如 ``3.1.1-stable`` ）构建你的GDNative模块。用旧版本的Godot头"
-"文件构建的GDNative模块 *可能* 会在新版本的引擎上运行，但反之则不行。"
+"``godot-headers`` 仓库有不同的分支。GDNative 也在随着 Godot 发展。虽然我们努"
+"力保持不同版本之间的兼容性，但你应该根据 Godot 稳定分支（如 ``3.4`` ）和实际"
+"情况使用版本（如 ``3.4.4-stable`` ）构建你的 GDNative 模块。用旧版本的 Godot "
+"头文件构建的 GDNative 模块\\ *可能*\\ 可以在新版本的引擎上运行，但反之则不"
+"行。"
 
 msgid ""
 "The ``master`` branch of the ``godot-headers`` repository is kept in line "
@@ -136,7 +136,6 @@ msgstr ""
 "``godot-headers`` 仓库的 ``master`` 分支与Godot的 ``master`` 分支保持一致，因"
 "此包含了GDNative类和结构定义，可以在最新的开发版本中运行。"
 
-#, fuzzy
 msgid ""
 "If you want to write a GDNative module for a stable version of Godot, look "
 "at the available Git tags (with ``git tags``) for the one matching your "
@@ -144,30 +143,29 @@ msgid ""
 "with ``godot-``, so you can e.g. checkout the ``godot-3.4.4-stable`` tag for "
 "use with Godot 3.4.4. In your cloned repository, you can do:"
 msgstr ""
-"如果你想为Godot的稳定版本编写GDNative模块，请查看可用的Git标签，用 ``git "
-"tags`` ，找到与你的引擎版本匹配的标签。在 ``godot-headers`` 仓库中，这些标签"
-"以 ``godot-`` 为前缀，所以你可以检查 ``godot-3.1.1-stable`` 标签，以用于"
-"Godot 3.1.1。在你的克隆版本库中，可以执行以下操作："
+"如果你想为 Godot 的稳定版本编写 GDNative 模块，请查看可用的 Git 标签（用 "
+"``git tags``\\ ），找到与你的引擎版本匹配的标签。在 ``godot-headers`` 仓库"
+"中，这些标签以 ``godot-`` 为前缀，所以你可以检查 ``godot-3.4.4-stable`` 标"
+"签，以用于 Godot 3.4.4。在你的克隆版本库中，可以执行以下操作："
 
-#, fuzzy
 msgid ""
 "If a tag matching your stable release is missing for any reason, you can "
 "fall back to the matching stable branch (e.g. ``3.4``), which you would also "
 "check out with ``git checkout 3.4``."
 msgstr ""
-"如果由于任何原因缺少了与稳定版相匹配的标签, 你可以回到与之相匹配的稳定分支(例"
-"如 ``3.1`` ), 你也可以用 ``git checkout 3.1`` 来检查."
+"如果由于任何原因缺少了与稳定版相匹配的标签，你可以回到与之相匹配的稳定分支"
+"（例如 ``3.4``\\ ），你也可以用 ``git checkout 3.4`` 来获取。"
 
 msgid ""
 "If you are building Godot from source with your own changes that impact "
 "GDNative, you can find the updated class and structure definition in "
 "``<godotsource>/modules/gdnative/include``"
 msgstr ""
-"如果您使用您自己的影响GDNative的更改从源代码构建Godot, 您可以在 "
+"如果您使用您自己的影响 GDNative 的更改从源代码构建 Godot，您可以在 "
 "``<godotsource>/modules/gdnative/include`` 中找到更新的类和结构定义"
 
 msgid "Our C source"
-msgstr "我们的C源"
+msgstr "我们的 C 源代码"
 
 msgid ""
 "Let's start by writing our main code. Eventually, we want to end up with a "

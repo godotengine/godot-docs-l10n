@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,7 +132,6 @@ msgstr ""
 "让我们来创建一个只有单个节点的场景吧。这样的话，你就需要首先创建一个新的项"
 "目。打开项目后，你看到的应该是一个空的编辑器。"
 
-#, fuzzy
 msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
@@ -144,9 +143,10 @@ msgid ""
 "selected node."
 msgstr ""
 "在空场景中，左侧的“场景”面板提供了几个快速添加根节点的选项。“2D 场景”会添加 "
-"Node2D 节点，“3D 场景”会添加 Spatial 节点，“用户界面”会添加 Control 节点，"
-"而“其他节点”则可以选择任何节点。等价于点击“添加子节点”按钮。这些预设是为了提"
-"供方便；不是强制选择的。"
+"Node2D 节点，“3D 场景”会添加 Spatial 节点，“用户界面”会添加 Control 节点。这"
+"些预设是为了提供方便；不是强制选择的。“其他节点”可以选择任何节点作为根节点。"
+"在空场景中，“其他节点”等价于点击“场景”面板左上角的“添加子节点”按钮，这个按钮"
+"的作用是为当前选中的节点添加一个新的子节点。"
 
 msgid ""
 "We're going to add a single Label node to our scene. Its function is to draw "
@@ -155,7 +155,7 @@ msgstr "我们要往场景中添加一个 Label 节点。它的功能是在屏�
 
 msgid ""
 "Press the \"Add Child Node\" button or \"Other Node\" to create a root node."
-msgstr ""
+msgstr "点击“添加子节点”按钮或者“其他节点”，创建根节点。"
 
 msgid "The Create Node dialog opens, showing the long list of available nodes."
 msgstr "“新建 Node”对话框打开，展示一大串可用节点。"
@@ -176,7 +176,7 @@ msgid ""
 "right."
 msgstr ""
 "添加场景中的第一个节点时会发生很多事。场景会切换到 2D 工作区，因为 Label 是 "
-"2D 节点类型。该 Label 会以选中的状态出现在视区的左上角。这个节点也会出现在左"
+"2D 节点类型。该 Label 会以选中的状态出现在视口的左上角。这个节点也会出现在左"
 "侧的“场景”面板中，它的属性会书现在右侧的“检查器”面板里。"
 
 msgid "Changing a node's properties"
@@ -191,30 +191,31 @@ msgid ""
 "Head to the Inspector dock on the right of the viewport. Click inside the "
 "field below the Text property and type \"Hello World\"."
 msgstr ""
-"前往视区右侧的“检查器”面板。点击 Text 属性下方的字段，然后填入“Hello World”。"
+"前往视口右侧的“检查器”面板。点击 Text 属性下方的字段，然后填入“Hello World”。"
 
 msgid "You will see the text draw in the viewport as you type."
-msgstr "在你打字的同时，你会发现视区中也绘制出了这段文字。"
+msgstr "在你打字的同时，你会发现视口中也绘制出了这段文字。"
 
 msgid ""
 "You can move your Label node in the viewport by selecting the move tool in "
 "the toolbar."
-msgstr "选择工具栏上的移动工具，就可以在视区中移动你的 Label 节点。"
+msgstr "选择工具栏上的移动工具，就可以在视口中移动你的 Label 节点。"
 
 msgid ""
 "With the Label selected, click and drag anywhere in the viewport to move it "
 "to the center of the view delimited by the rectangle."
 msgstr ""
-"选中 Label，点击并拖拽视区中的任何位置，将它移动到矩形框所表示的视图中心。"
+"选中 Label，点击并拖拽视口中的任何位置，将它移动到矩形框所表示的视图中心。"
 
 msgid "Running the scene"
 msgstr "运行场景"
 
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the Play Scene button in the top-"
 "right of the screen or press :kbd:`F6` (:kbd:`Cmd + R` on macOS)."
-msgstr "运行场景一切就绪！请按下屏幕右上角的“运行场景”按钮或 :kbd:`F6`\\ 。"
+msgstr ""
+"运行场景一切就绪！请按下屏幕右上角的“运行场景”按钮或 :kbd:`F6`\\ （macOS 上则"
+"是 :kbd:`Cmd + R`）。"
 
 msgid "A popup invites you to save the scene, which is required to run it."
 msgstr "会有一个弹出框请你保存场景，这是运行所必须的。"
@@ -255,14 +256,14 @@ msgstr ""
 msgid "Setting the main scene"
 msgstr "设置主场景"
 
-#, fuzzy
 msgid ""
 "To run our test scene, we used the Play Scene button. Another button next to "
 "it allows you to set and run the project's main scene. You can press :kbd:"
 "`F5` (:kbd:`Cmd + B` on macOS) to do so."
 msgstr ""
 "我们运行测试场景用的是“运行场景”按钮。它旁边的另一个按钮可以用来设置并运行项"
-"目的主场景。你也可以按 :kbd:`F5` 达到同样的效果。"
+"目的主场景。你也可以按 :kbd:`F5`\\ （macOS 上则是 :kbd:`Cmd + B`）达到同样的"
+"效果。"
 
 msgid "A popup window appears and invites you to select the main scene."
 msgstr "出现弹出窗口让你选择主场景。"

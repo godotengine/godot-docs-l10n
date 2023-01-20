@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,6 @@ msgstr ""
 "Ta strona ma na celu wyszczególnienie wszystkich funkcji aktualnie "
 "obsługiwanych przez Godot."
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -33,9 +32,9 @@ msgid ""
 "(4.0)."
 msgstr ""
 "Ta strona zawiera listę funkcji wspieranych przez obecną stabilną wersję "
-"Godota (3.2). `Więcej funkcji <https://docs.godotengine.org/en/latest/about/"
-"list_of_features.html>`__ jest dostępnych w najnowszej wersji deweloperskiej "
-"(4.0)."
+"Godota (3.5). `Szerszy zakres funkcjonalności <https://docs.godotengine.org/"
+"en/latest/about/list_of_features.html>`__ jest dostępny w najnowszej wersji "
+"deweloperskiej (4.0)."
 
 msgid "Features"
 msgstr "Funkcje"
@@ -102,9 +101,8 @@ msgstr "**Funkcje**"
 msgid "Scene tree editor."
 msgstr "Edytor edytor hierarchii węzłów."
 
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "Wbudowany edytor motywów."
+msgstr "Wbudowany edytor skryptów."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -151,8 +149,9 @@ msgstr "Przejęcie kontroli nad kamerą."
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr "Ruszanie kamerą w edytorze wpływa na kamerę w uruchomionym projekcie."
 
+#, fuzzy
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "Wbudowane odwołania do klas w dokumentacji offline."
 
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Używaj edytora w dziesiątkach języków dodanych przez społeczność."
@@ -167,21 +166,19 @@ msgstr ""
 "Wtyczki edytora można pobrać z :ref:'biblioteki zasobów "
 "<doc_what_is_assetlib>', aby rozszerzyć funkcjonalność edytora."
 
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 ":ref:`Twórz swoje własne wtyczki <doc_making_plugins>` wykorzystując "
-"GDScript, by dodać nowe"
+"GDScript, by dodać nowe funkcjonalności lub przyspieszyć swoją pracę."
 
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
 msgstr ""
-"Pobieraj projekty z biblioteki zasobów w menadżerze projektów i importuj je "
-"bezpośrednio."
+":ref:`Pobieraj projekty z biblioteki zasobów <doc_using_assetlib_editor>` w "
+"menadżerze projektów i importuj je bezpośrednio."
 
 msgid "2D graphics"
 msgstr "Grafika 2D"
@@ -218,7 +215,7 @@ msgid "Parallax layers."
 msgstr "Płótna."
 
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "Obsługa pseudo-3D wraz z podglądem w edytorze."
 
 msgid "2D lighting with normal maps."
 msgstr "Oświetlenie 2D z mapowaniem normalnych."
@@ -238,13 +235,12 @@ msgstr ""
 "Czcionki bitmapowe mogą zostać wyeksportowane przy użyciu narzędzi takich "
 "jak BMFont."
 
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 "DynamicFont obsługuje zarówno czcionki monochromatyczne, jak i kolorowe (np. "
-"emotikony ). Obsługiwane formaty to TTF, OTF oraz WOFF1."
+"emotikony). Obsługiwane formaty to TTF, OTF, WOFF1 oraz WOFF1."
 
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
@@ -321,9 +317,8 @@ msgstr ""
 msgid "3D graphics"
 msgstr "Grafika 3D"
 
-#, fuzzy
 msgid "Optional HDR rendering with sRGB (enabled by default)."
-msgstr "Domyślnie funkcja importowania animacji jest włączona."
+msgstr "Opcjonalne renderowanie HDR z sRGB (domyślnie włączone)."
 
 msgid ""
 "Uses an optional depth prepass (enabled by default) to reduce the cost of "
@@ -376,8 +371,9 @@ msgstr ""
 msgid "Normal mapping."
 msgstr "Mapowanie normalnych."
 
+#, fuzzy
 msgid "Detail mapping for the albedo and normal maps."
-msgstr ""
+msgstr "Szczegółowe mapowanie dla albedo I normal mapsów."
 
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
@@ -591,8 +587,11 @@ msgstr "Filtrowanie, bliskie, dwuliniowe, trójliniowe lub anizotropiczne."
 msgid "**Texture compression:**"
 msgstr "**Kompresja tekstur:**"
 
+#, fuzzy
 msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
 msgstr ""
+"Bezstratny lub stratny WebP (nie oszczędza VRAM; tylko redukuje rozmiar "
+"składowania)"
 
 #, fuzzy
 msgid "S3TC (only supported on desktop platforms)."
@@ -674,9 +673,10 @@ msgstr ""
 msgid "3D geometry helper class."
 msgstr "Klasa pomocnicza geometrii 3D."
 
+#, fuzzy
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file from the editor."
-msgstr ""
+msgstr "Wsparcie dla eksportu aktualnej sceny jako plik glTF 2.0 z edytora"
 
 msgid "3D physics"
 msgstr "Fizyka 3D"
@@ -835,10 +835,13 @@ msgstr "Oficjalne wiązania dla C i C++."
 msgid "Use any build system and language features you wish."
 msgstr "Użyj dowolnego systemu budowy i funkcji języków."
 
+#, fuzzy
 msgid ""
 "Maintained D, Kotlin, Python, Nim, and Rust bindings provided by the "
 "community."
 msgstr ""
+"Wspierane bindingi języków D, Kotlin, Python, Nim i Rust są udostępnione "
+"dzięki społeczności."
 
 msgid ""
 "`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine."
@@ -964,10 +967,12 @@ msgid ""
 "actions."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
 "deadzone."
 msgstr ""
+"Wartości osi mogą być przypisane do różnych akcji z ustawialnym deadzonem."
 
 msgid "Use the same code to support both keyboards and gamepads."
 msgstr "Użyj takiego samego codu ,by wspierać oba: klawiaturę i gamypad'y."
@@ -985,10 +990,13 @@ msgstr ""
 msgid "Mouse input."
 msgstr "Mysz."
 
+#, fuzzy
 msgid ""
 "The mouse cursor can be visible, hidden, captured or confined within the "
 "window."
 msgstr ""
+"Kursor myszy może być widoczny, schowany, złapany lub ograniczony w obrębie "
+"okna."
 
 msgid ""
 "When captured, raw input will be used on Windows and Linux to sidestep the "
@@ -998,8 +1006,9 @@ msgstr ""
 msgid "Gamepad input (up to 8 simultaneous controllers)."
 msgstr ""
 
+#, fuzzy
 msgid "Pen/tablet input with pressure support."
-msgstr ""
+msgstr "Wejście pióra/tabletach graficznego z obsługą nacisku."
 
 msgid ""
 "Gamepad, keyboard and mouse input support are also available on Android."
@@ -1009,7 +1018,7 @@ msgid "Navigation"
 msgstr "Nawigacja"
 
 msgid "A* algorithm in 2D and 3D."
-msgstr ""
+msgstr "Algorytm A* w 2D i 3D"
 
 msgid "Navigation meshes with dynamic obstacle avoidance."
 msgstr ""
@@ -1023,34 +1032,38 @@ msgid "Networking"
 msgstr "Sieć"
 
 msgid "Low-level TCP networking using StreamPeer and TCP_Server."
-msgstr ""
+msgstr "Nisko poziomowe połączenie TCP z użyciem StreamPeer i TCP_Server."
 
 msgid "Low-level UDP networking using PacketPeer and UDPServer."
-msgstr ""
+msgstr "Nisko poziomowe połączenie UDP z użyciem PacketPeer i UPDServer."
 
 msgid "Low-level HTTP requests using HTTPClient."
-msgstr ""
+msgstr "Nisko poziomowe żądania HTTP z użyciem HTTPClient."
 
 msgid "High-level HTTP requests using HTTPRequest."
-msgstr ""
+msgstr "Wysoko poziomowe żądania z użyciem HTTPRequest."
 
+#, fuzzy
 msgid "Supports HTTPS out of the box using bundled certificates."
-msgstr ""
+msgstr "Wspiera HTTPS bez problemu z użyciem pakietowanych certyfikatów."
 
 msgid "High-level multiplayer API using UDP and ENet."
 msgstr "Wysokopoziomowe API multiplayer dzięki UDP i ENet."
 
+#, fuzzy
 msgid "Automatic replication using remote procedure calls (RPCs)."
 msgstr ""
+"Automatyczna replikacja z użyciem zdalnych wezwań proceduralnych (ang. RPC)."
 
 msgid "Supports unreliable, reliable and ordered transfers."
-msgstr ""
+msgstr "Wspiera zawodne, niezawodne i zamówione transfery."
 
+#, fuzzy
 msgid "WebSocket client and server, available on all platforms."
-msgstr ""
+msgstr "Klient WebSocket i serwer, jest dostępny na wszystkich platformach."
 
 msgid "WebRTC client and server, available on all platforms."
-msgstr ""
+msgstr "Klient WebRTC i serwer, jest dostępny na wszystkich platformach."
 
 msgid ""
 "Support for UPnP to sidestep the requirement to forward ports when hosting a "
@@ -1060,8 +1073,9 @@ msgstr ""
 msgid "Internationalization"
 msgstr "Umiędzynarodowienie"
 
+#, fuzzy
 msgid "Full support for Unicode including emoji."
-msgstr ""
+msgstr "Pełne wsparcie dla Unicode wraz z emocji."
 
 msgid ""
 "Store localization strings using :ref:`CSV <doc_internationalizing_games>` "

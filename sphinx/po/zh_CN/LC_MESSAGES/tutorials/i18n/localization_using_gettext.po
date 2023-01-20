@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,14 +20,14 @@ msgstr ""
 msgid "Localization using gettext"
 msgstr "使用 gettext 进行本地化"
 
-#, fuzzy
 msgid ""
 "In addition to :ref:`doc_importing_translations` in CSV format, Godot also "
 "supports loading translation files written in the GNU gettext format (text-"
 "based ``.po`` and compiled ``.mo`` since Godot 3.5)."
 msgstr ""
 "除了 CSV 格式的 :ref:`doc_importing_translations` 外，Godot 还支持加载 GNU "
-"gettext（\\ ``.po``\\ ）格式的翻译文件。"
+"gettext 格式的翻译文件（基于文本的 ``.po``\\ ，Godot 3.5 起还支持编译后的 ``."
+"mo``\\ ）。"
 
 msgid ""
 "For an introduction to gettext, check out `A Quick Gettext Tutorial <https://"
@@ -78,16 +78,15 @@ msgid ""
 msgstr ""
 "gettext 是一种比 CSV 更复杂的格式，对于刚接触软件本地化的人来说可能更难理解。"
 
-#, fuzzy
 msgid ""
 "People who maintain localization files will have to install gettext tools on "
 "their system. However, as Godot supports using text-based message files (``."
 "po``), translators can test their work without having to install gettext "
 "tools."
 msgstr ""
-"维护本地化文件的人员必须在其系统上安装 gettext 工具。但是，由于 Godot 不使用"
-"编译的消息对象文件（\\ ``.mo``\\ ），因此翻译人员无需安装 gettext 工具即可测"
-"试他们的工作。"
+"维护本地化文件的人员必须在其系统上安装 gettext 工具。但是，由于 Godot 支持使"
+"用基于文本的消息文件（\\ ``.po``\\ ），翻译人员无需安装 gettext 工具即可测试"
+"他们的工作。"
 
 msgid "Caveats"
 msgstr "注意事项"
@@ -231,7 +230,6 @@ msgstr ""
 msgid "Loading a messages file in Godot"
 msgstr "在 Godot 中加载消息文件"
 
-#, fuzzy
 msgid ""
 "To register a messages file as a translation in a project, open the "
 "**Project Settings**, then go to the **Localization** tab. In "
@@ -241,8 +239,8 @@ msgid ""
 msgstr ""
 "如果要将消息文件注册为项目的翻译，请打开\\ **项目设置**\\ ，然后进入\\ **本地"
 "化**\\ 选项卡。在\\ **翻译**\\ 中单击\\ **添加...**\\ ，然后在文件对话框中选"
-"择该 ``.po`` 文件。区域设置将从消息文件的 ``\"Language: <code>\\n\"`` 属性中"
-"推算出来。"
+"择该 ``.po`` 或者 ``.mo`` 文件。区域设置将从消息文件的 ``\"Language: "
+"<code>\\n\"`` 属性中推算出来。"
 
 msgid ""
 "See :ref:`doc_internationalizing_games` for more information on importing "
@@ -304,7 +302,7 @@ msgstr ""
 "西。"
 
 msgid "Using binary MO files (useful for large projects only)"
-msgstr ""
+msgstr "使用二进制 MO 文件（仅适用于大型项目）"
 
 msgid ""
 "For large projects with several thousands of strings to translate or more, "
@@ -312,25 +310,33 @@ msgid ""
 "based PO files. Binary MO files are smaller and faster to read than the "
 "equivalent PO files."
 msgstr ""
+"大型项目会有成千上万的字符串要翻译，相比于基于文本的 PO 文件，使用（编译为）"
+"二进制的 MO 消息文件可能更加划算。二进制 MO 文件比对应的 PO 文件更小、读起来"
+"更快。"
 
 msgid "You can generate a MO file with the command below:"
-msgstr ""
+msgstr "你可以使用下面的命令生成 MO 文件："
 
 msgid ""
 "If the PO file is valid, this command will create a ``fr.mo`` file besides "
 "the PO file. This MO file can then be loaded in Godot as described below."
 msgstr ""
+"如果这个 PO 文件是有效的，这个命令就会在 PO 文件的旁边创建一个 ``fr.mo`` 文"
+"件。这个 MO 文件可以按照下文的方法加载进 Godot。"
 
 msgid ""
 "The original PO file should be kept in version control so you can update "
 "your translation in the future. In case you lose the original PO file and "
 "wish to decompile a MO file into a text-based PO file, you can do so with:"
 msgstr ""
+"应该在版本控制中保留原始 PO 文件，这样以后就可以更新翻译。如果你丢失了原始的 "
+"PO 文件，希望将 MO 文件反编译为基于文本的 PO 文件，你可以这样做："
 
 msgid ""
 "The decompiled file will not include comments or fuzzy strings, as these are "
 "never compiled in the MO file in the first place."
 msgstr ""
+"反编译出的文件不包含注释和模糊字符串，因为它们一开始就没有编译进 MO 文件里。"
 
 msgid "Translation status"
 msgstr "翻译状态"

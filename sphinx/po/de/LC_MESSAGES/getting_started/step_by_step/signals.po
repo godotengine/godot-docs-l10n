@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,8 @@ msgstr ""
 msgid "Signal"
 msgstr "Ereignis"
 
-#, fuzzy
 msgid "Using signals"
-msgstr "Signale verwenden"
+msgstr "Signale nutzen"
 
 msgid ""
 "In this lesson, we will look at signals. They are messages that nodes emit "
@@ -34,18 +33,17 @@ msgstr ""
 "z. B. wenn eine Taste gedrückt wird. Andere Nodes können sich mit diesem "
 "Signal verbinden und eine Funktion aufrufen, wenn das Ereignis eintritt."
 
-#, fuzzy
 msgid ""
 "Signals are a delegation mechanism built into Godot that allows one game "
 "object to react to a change in another without them referencing one another. "
 "Using signals limits `coupling <https://en.wikipedia.org/wiki/"
 "Coupling_(computer_programming)>`_ and keeps your code flexible."
 msgstr ""
-"Es handelt sich um einen in Godot eingebauten Delegationsmechanismus, der es "
-"einem Spielobjekt ermöglicht, auf eine Änderung in einem anderen zu "
-"reagieren, ohne dass sie sich gegenseitig referenzieren. Die Verwendung von "
-"Signalen begrenzt die `Kopplung <https://en.wikipedia.org/wiki/"
-"Coupling_(computer_programming)>`_ und hält den Code flexibel."
+"Signale sind ein in Godot integrierter Delegierungsmechanismus, der es einem "
+"Spielobjekt ermöglicht, auf eine Änderung in einem anderen zu reagieren, "
+"ohne dass sie sich gegenseitig referenzieren. Die Verwendung von Signalen "
+"schränkt die `Kopplung <https://en.wikipedia.org/wiki/"
+"Coupling_(computer_programming)>`_ ein und hält Ihren Code flexibel."
 
 msgid ""
 "For example, you might have a life bar on the screen that represents the "
@@ -134,24 +132,23 @@ msgid "Click and drag on the button itself to move it closer to the sprite."
 msgstr ""
 "Klicken und ziehen Sie den Knopf, um ihn näher an das Sprite zu bringen."
 
-#, fuzzy
 msgid ""
 "You can also write a label on the Button by editing its Text property in the "
 "Inspector. Enter \"Toggle motion\"."
 msgstr ""
-"Du kannst den Button auch beschriften, indem du die Eigenschaft Text im "
-"Inspektor bearbeitest."
+"Sie können dem Knopf auch eine Beschriftung zuweisen, indem Sie ihre Text-"
+"Eigenschaft im Inspektor bearbeiten. Geben Sie \"Toggle motion\" ein."
 
 msgid "Your scene tree and viewport should look like this."
 msgstr "Dein Szenenbaum und Ansichtsfenster sollten wie folgt aussehen."
 
-#, fuzzy
 msgid ""
 "Save your newly created scene. You can then run it with :kbd:`F6`. At the "
 "moment, the button will be visible, but nothing will happen if you press it."
 msgstr ""
-"Speichern Sie Ihre neu erstellte Szene. Sie können diese dann mit :kbd:`F6` "
-"ausführen."
+"Speichern Sie Ihre neu erstellte Szene. Sie können sie dann mit :kbd:`F6` "
+"ausführen. Im Moment ist der Knopf sichtbar, aber es passiert nichts, wenn "
+"Sie ihn drücken."
 
 msgid "Connecting a signal in the editor"
 msgstr "Verbinden von Signalen im Editor"
@@ -209,25 +206,24 @@ msgstr ""
 "Knoten mit dazugehörigem Script und erstellt in diesem eine neue Callback-"
 "Funktion."
 
-#, fuzzy
 msgid ""
 "The advanced view lets you connect to any node and any built-in function, "
 "add arguments to the callback, and set options. You can toggle the mode in "
 "the window's bottom-right by clicking the Advanced button."
 msgstr ""
-"Die fortgeschrittene Ansicht erlaubt die Anbindung an jeden Knoten und jede "
-"native Funktion, das Hinzufügen von Argumenten zur Callback-Funktion und das "
-"Setzen von Optionen. Dieser Modus lässt sich über das Anwählen der "
-"entsprechenden Schaltfläche rechts unten im Fenster umschalten."
+"In der erweiterten Ansicht können Sie sich mit jedem Node und jeder "
+"integrierten Funktion verbinden, dem Callback Argumente hinzufügen und "
+"Optionen festlegen. Sie können den Modus unten rechts im Fenster umschalten, "
+"indem Sie auf die Schaltfläche Erweitert klicken."
 
-#, fuzzy
 msgid ""
 "Click the Connect button to complete the signal connection and jump to the "
 "Script workspace. You should see the new method with a connection icon in "
 "the left margin."
 msgstr ""
-"Drücke auf die Verbindungsschaltfläche, um die Signalverbindung zu "
-"vervollständigen und in den Arbeitsbereich des Skriptes zu wechseln."
+"Klicken Sie auf die Schaltfläche „Verbinden“, um die Signalverbindung "
+"abzuschließen und zum Arbeitsbereich „Skript“ zu wechseln. Sie sollten die "
+"neue Methode mit einem Verbindungssymbol am linken Rand sehen."
 
 msgid ""
 "If you click the icon, a window pops up and displays information about the "
@@ -418,10 +414,11 @@ msgid ""
 "If you run the scene now, you will see that the sprite blinks on and off, at "
 "one second intervals."
 msgstr ""
+"Wenn Sie die Szene jetzt ausführen, werden Sie sehen, dass das Sprite im "
+"Sekundentakt ein- und ausschaltet."
 
-#, fuzzy
 msgid "Complete script"
-msgstr "Beispiel von GDScript"
+msgstr "Vollständiges Skript"
 
 msgid ""
 "That's it for our little moving and blinking Godot icon demo! Here is the "
@@ -491,13 +488,12 @@ msgstr ""
 "aufrufen, wenn man Signale aufruft. Es ist also in der Hand der Person, "
 "diese richtigen Werte aufzurufen."
 
-#, fuzzy
 msgid ""
 "To emit values along with the signal, add them as extra arguments to the "
 "``emit_signal()`` function:"
 msgstr ""
-"Werte, die weitergereicht werden sollen, können der Funktion ``emit_signal`` "
-"als zweites Argument übergeben werden:"
+"Um Werte zusammen mit dem Signal auszugeben, fügen Sie sie als zusätzliche "
+"Argumente zur Funktion ``emit_signal()`` hinzu:"
 
 msgid "Summary"
 msgstr "Zusammenfassung"
@@ -522,26 +518,23 @@ msgstr ""
 "Kollision, darauf dass eine Spielfigur einen bestimmten Bereich betritt oder "
 "verlässt, darauf dass ein Element seine Größe verändert und vieles mehr."
 
-#, fuzzy
 msgid ""
 "For example, an :ref:`Area2D <class_Area2D>` representing a coin emits a "
 "``body_entered`` signal whenever the player's physics body enters its "
 "collision shape, allowing you to know when the player collected it."
 msgstr ""
-"Viele der in Godot integrierten Node-Typen liefern Signale, mit denen Sie "
-"Ereignisse erkennen können. Zum Beispiel ein :ref:`Area2D <class_Area2D>` "
-"würde eine Münze repräsentieren, die immer das Signal ``body_entered`` "
-"sendet, sobald die Spielerfigur die Kollisions-Form der Münze berührt. Damit "
-"wissen Sie, das der Spieler die Münze erreicht hat und einsammeln kann."
+"Beispielsweise gibt ein :ref:`Area2D <class_Area2D>`, das eine Münze "
+"darstellt, ein ``body_entered``-Signal aus, wenn der physische Körper des "
+"Spielers in seine Kollisionsform eintritt, sodass Sie wissen, wann der "
+"Spieler ihn eingesammelt hat."
 
-#, fuzzy
 msgid ""
 "In the next section, :ref:`doc_your_first_2d_game`, you'll create a complete "
 "2D game and put everything you learned so far into practice."
 msgstr ""
-"Im nächsten Abschnitt, :ref:`doc_your_first_game`, werden Sie ein komplettes "
-"Spiel erstellen, inklusive der Nutzung von Signalen, um die verschiedenen "
-"Spielkomponenten miteinander zu verbinden."
+"Im nächsten Abschnitt, :ref:`doc_your_first_2d_game`, erstellen Sie ein "
+"komplettes 2D-Spiel und setzen alles, was Sie bisher gelernt haben, in die "
+"Praxis um."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

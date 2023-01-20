@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,10 +155,10 @@ msgid ""
 msgstr ""
 "У порожній сцені панель «Сцена» зліва показує кілька варіантів швидкого "
 "додавання кореневого вузла. «Плоска сцена» додає вузол Node2D, «Просторова "
-"сцена» додає просторовий вузол, «Інтерфейс користувача» додає вузол "
-"керування, а «Інший вузол» дозволяє вибрати будь-який вузол. Це еквівалентно "
-"натисканню кнопки «Додати дочірній вузол». Ці попередні налаштування тут для "
-"зручності. Вони не є обов'язковими."
+"сцена» додає Spatial вузол, «Інтерфейс користувача» додає Control вузол, а "
+"«Інший вузол» дозволяє вибрати будь-який вузол. Це еквівалентно натисканню "
+"кнопки «Додати дочірній вузол». Ці варіанти тут для зручності. Вони не є "
+"обов'язковими."
 
 msgid ""
 "We're going to add a single Label node to our scene. Its function is to draw "
@@ -170,6 +170,8 @@ msgstr ""
 msgid ""
 "Press the \"Add Child Node\" button or \"Other Node\" to create a root node."
 msgstr ""
+"Натисніть кнопку «Додати дочірній вузол» або «Інший вузол», щоб створити "
+"кореневий вузол."
 
 msgid "The Create Node dialog opens, showing the long list of available nodes."
 msgstr ""
@@ -238,13 +240,12 @@ msgstr ""
 msgid "Running the scene"
 msgstr "Запуск сцени"
 
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the Play Scene button in the top-"
 "right of the screen or press :kbd:`F6` (:kbd:`Cmd + R` on macOS)."
 msgstr ""
-"Гаразд, все готово для запуску сцени! Натисніть справа зверху на екрані "
-"кнопку Відтворити сцену (або натисніть :kbd:`F6`)."
+"Все готово для запуску сцени! Натисніть кнопку Відтворити сцену з правої "
+"верхньої частини екрану :kbd:`F6` (:kbd:`Cmd + R` на macOS)."
 
 msgid "A popup invites you to save the scene, which is required to run it."
 msgstr "Спливаюче вікно пропонує вам зберегти сцену, яку потрібно запустити."
@@ -290,15 +291,14 @@ msgstr ""
 msgid "Setting the main scene"
 msgstr "Встановлення головної сцени"
 
-#, fuzzy
 msgid ""
 "To run our test scene, we used the Play Scene button. Another button next to "
 "it allows you to set and run the project's main scene. You can press :kbd:"
 "`F5` (:kbd:`Cmd + B` on macOS) to do so."
 msgstr ""
 "Щоб запустити нашу тестову сцену, ми використали кнопку «Відтворити сцену». "
-"Інша кнопка поруч із нею дозволяє встановити та запустити основну сцену "
-"проекту. Ви можете натиснути :kbd:`F5` для цього."
+"Кнопка поруч з нею дозволяє встановити та запустити основну сцену проекту. "
+"Ви можете натиснути :kbd:`F5` (:kbd:`Cmd + B` на macOS) для цього."
 
 msgid "A popup window appears and invites you to select the main scene."
 msgstr "З’явиться спливаюче вікно з пропозицією вибрати головну сцену."

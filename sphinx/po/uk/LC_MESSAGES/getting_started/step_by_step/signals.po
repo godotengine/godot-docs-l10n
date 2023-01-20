@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,17 +33,16 @@ msgstr ""
 "вузли можуть підключатися до цього сигналу і викликати функцію, коли "
 "відбувається подія."
 
-#, fuzzy
 msgid ""
 "Signals are a delegation mechanism built into Godot that allows one game "
 "object to react to a change in another without them referencing one another. "
 "Using signals limits `coupling <https://en.wikipedia.org/wiki/"
 "Coupling_(computer_programming)>`_ and keeps your code flexible."
 msgstr ""
-"Це механізм делегування, вбудований у Godot, який дозволяє одному ігровому "
-"об’єкту реагувати на зміни в іншому, не посилаючись один на одного. "
-"Використання сигналів обмежує `з'єднання <https://en.wikipedia.org/wiki/"
-"Coupling_(computer_programming)>`_ і забезпечує гнучкість вашого коду."
+"Сигнали є механізмом делегування, вбудований у Godot, що дозволяє одному "
+"ігровому об’єкту реагувати на зміни іншого, не посилаючись один на одного. "
+"Використання сигналів зменшує `зв'язність <https://uk.wikipedia.org/wiki/"
+"Зв'язність_(програмування)>`_ і забезпечує гнучкість вашого коду."
 
 msgid ""
 "For example, you might have a life bar on the screen that represents the "
@@ -128,13 +127,12 @@ msgstr ""
 msgid "Click and drag on the button itself to move it closer to the sprite."
 msgstr "Натисніть і перетягніть саму кнопку, щоб наблизити її до спрайту."
 
-#, fuzzy
 msgid ""
 "You can also write a label on the Button by editing its Text property in the "
 "Inspector. Enter \"Toggle motion\"."
 msgstr ""
-"Ви також можете написати мітку на кнопці, відредагувавши її властивість Text "
-"в Інспекторі."
+"Ви також можете вказати текст на кнопці, відредагувавши її властивість Text "
+"в Інспекторі. Введіть \"Toggle motion\"."
 
 msgid "Your scene tree and viewport should look like this."
 msgstr "Ваше дерево сцени та область перегляду мають виглядати так."
@@ -399,6 +397,8 @@ msgid ""
 "If you run the scene now, you will see that the sprite blinks on and off, at "
 "one second intervals."
 msgstr ""
+"Якщо ви запустите сцену зараз, ви побачите, що спрайт блимає та вимикається "
+"з інтервалом в одну секунду."
 
 msgid "Complete script"
 msgstr "Завершений скрипт"

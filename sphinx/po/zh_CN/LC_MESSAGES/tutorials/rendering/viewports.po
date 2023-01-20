@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgid ""
 "example a dynamic skybox."
 msgstr ""
 ":ref:`Viewports <class_Viewport>` 也可以添加到场景中, 以便绘制多个区域. 当我"
-"们绘制到一个不是根节点的 :ref:`Viewport <class_Viewport>` 时, 我们将该视区称"
+"们绘制到一个不是根节点的 :ref:`Viewport <class_Viewport>` 时, 我们将该视口称"
 "为渲染目标. 我们可以通过访问它对应的 :ref:`texture <class_ViewportTexture>` "
 "属性来访问渲染目标的内容. 将任一 :ref:`Viewport <class_Viewport>` 作为渲染目"
 "标时, 我们要么可以同时渲染多个场景, 要么可以渲染到场景中某个对象的 :ref:"
@@ -151,7 +151,7 @@ msgid ""
 "if there is more than one, make sure that the desired one has the "
 "\"current\" property set, or make it the current camera by calling:"
 msgstr ""
-"每个视窗 :ref:`Viewport <class_Viewport>` 只能有一个激活的摄像机, 因此, 如果"
+"每个视口 :ref:`Viewport <class_Viewport>` 只能有一个激活的摄像机, 因此, 如果"
 "有多个摄像机时, 请确保您需要的那个摄像机的 \"current\" 属性被设置上, 或者通过"
 "调用以下语句来使其成为当前摄像机:"
 
@@ -286,7 +286,7 @@ msgstr ""
 "你可以用来处理它, 例如:"
 
 msgid "Viewport Container"
-msgstr "视区容器"
+msgstr "视口容器"
 
 msgid ""
 "If the :ref:`Viewport <class_Viewport>` is a child of a :ref:"
@@ -342,7 +342,7 @@ msgstr ""
 "如果你知道 :ref:`Viewport <class_Viewport>` 将被如何使用，可以把它的用法设置"
 "为 3D 或 2D。这样 Godot 就会根据选择限制 :ref:`Viewport <class_Viewport>` 的"
 "绘制方式；默认是 3D。与 3D 使用模式相比，2D使用模式的速度稍快，占用的内存也"
-"少。如果视窗没有在 3D 中渲染任何东西，将 :ref:`Viewport <class_Viewport>` 的"
+"少。如果视口没有在 3D 中渲染任何东西，将 :ref:`Viewport <class_Viewport>` 的"
 "使用属性设置为 2D 是一个好主意。"
 
 msgid ""

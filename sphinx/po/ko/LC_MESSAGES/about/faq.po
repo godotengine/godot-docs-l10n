@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,13 +111,11 @@ msgstr "macOS"
 msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
 
-#, fuzzy
 msgid ":ref:`Web <doc_using_the_web_editor>`"
-msgstr ":ref:`doc_running_code_in_the_editor`"
+msgstr ":ref:`웹 <doc_using_the_web_editor>`"
 
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Android"
+msgstr "Android (시험용)"
 
 msgid "**For exporting your games:**"
 msgstr "**내보내는 게임:**"
@@ -470,6 +468,9 @@ msgid ""
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
 msgstr ""
+"추출한 Godot 애플리케이션을 ``/Applications/Godot.app``으로 드래그하세요, 추"
+"가로 원할 경우 Dock으로도 드래그하세요. 애플리케이션이 ``/Applications`` 또"
+"는 ``~/Applications``에 있다면 Spotlight에서 Godot를 찾을 수 있습니다."
 
 msgid "Linux"
 msgstr "리눅스"
@@ -490,6 +491,11 @@ msgid ""
 "allows you to :ref:`run the Godot editor from a terminal "
 "<doc_command_line_tutorial>` by entering ``godot``."
 msgstr ""
+"Godot 실행파일을 원하는 이름으로 변경하고 `PATH` 환경변수에 있는 디렉토리로 "
+"옮기세요. 일반적으로 `/usr/local/bin/godot` 또는 `/usr/bin/godot` 등의 경로"
+"가 자주 사용됩니다. 이 경로들로 파일을 옮기려면 보통 시스템 관리자 권한을 요"
+"구하지만, 옮길시 터미널에 `godot` 명령을 입력하므로써 Godot 를 실행할 수 있습"
+"니다."
 
 msgid ""
 "If you cannot move the Godot editor binary to a protected location, you can "
@@ -497,6 +503,9 @@ msgid ""
 "line in the ``.desktop`` file linked below to contain the full *absolute* "
 "path to the Godot binary."
 msgstr ""
+"Godot 편집기 바이너리를 보호된 위치로 옮길 수 없다면, 바이너리를 홈 디렉토리 "
+"어딘가에 보관하고, 아래 링크된 ``.desktop`` 파일의 ``Path=`` 줄을 수정하여 "
+"Godot 바이너리에 대한 전체 *절대* 경로를 포함할 수 있습니다."
 
 msgid ""
 "Save `this .desktop file <https://raw.githubusercontent.com/godotengine/"

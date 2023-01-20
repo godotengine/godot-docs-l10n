@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -126,6 +126,8 @@ msgid ""
 "devices`` command in a terminal, it will not be visible by Godot either. To "
 "resolve this:"
 msgstr ""
+"如果你在命令行中运行 ``adb devices`` 时无法在设备列表中看到该设备，那么 "
+"Godot 就也无法看到。要解决这个问题："
 
 msgid ""
 "Check if USB debugging is enabled *and authorized on the device*. Try "
@@ -133,22 +135,31 @@ msgid ""
 "If you can't see this prompt, running ``adb devices`` on your PC should make "
 "the authorization prompt appear on the device."
 msgstr ""
+"请检查是否启用了 USB *并在该设备上授权*\\ 。请尝试解锁你的设备，如果有任何授"
+"权的弹框的话请接受。如果你没有看到这样的弹框，在 PC 上执行 ``adb devices`` 应"
+"该就会在该设备上弹出授权提示。"
 
 msgid ""
 "Try `revoking the debugging authorization <https://stackoverflow.com/"
 "questions/23081263/adb-android-device-unauthorized>`__ in the device's "
 "developer settings, then follow the steps again."
 msgstr ""
+"请尝试在该设备的开发者设置中\\ `撤销调试授权 <https://stackoverflow.com/"
+"questions/23081263/adb-android-device-unauthorized>`__\\ ，然后再重试这些步"
+"骤。"
 
 msgid ""
 "Try using USB debugging instead of wireless debugging or vice versa. "
 "Sometimes, one of those can work better than the other."
 msgstr ""
+"请尝试使用 USB 调试而不是无线调试，反之亦然。有时候换种方法就能更好地工作。"
 
 msgid ""
 "On Linux, you may be missing the required `udev rules <https://github.com/"
 "M0Rf30/android-udev-rules>`__ for your device to be recognized."
 msgstr ""
+"在 Linux 上，你可能缺少所需的 `udev 规则 <https://github.com/M0Rf30/android-"
+"udev-rules>`__\\ ，导致你的设备无法被识别。"
 
 msgid "Translation status"
 msgstr "翻译状态"

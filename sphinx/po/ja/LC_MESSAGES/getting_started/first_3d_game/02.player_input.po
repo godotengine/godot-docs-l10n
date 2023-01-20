@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,6 +193,9 @@ msgid ""
 "This system is the Input Map. To access its editor, head to the *Project* "
 "menu and select *Project Settings…*."
 msgstr ""
+"このシステムが「インプットマップ」です。そのエディターにアクセスするには、\\ "
+"*プロジェクト*\\ (Project)メニューから、\\ *プロジェクト設定...*\\ (Project "
+"Settings...)を選択してください。"
 
 msgid "|image6|"
 msgstr "|image6|"
@@ -205,6 +208,10 @@ msgid ""
 "allows you to add new actions at the top; they are your labels. In the "
 "bottom part, you can bind keys to these actions."
 msgstr ""
+"上部に、複数のタブがあります。\\ *インプットマップ*\\ (Input Map)をクリックし"
+"ます。このウィンドウでは、上部で新しいアクションを追加することができます。そ"
+"れらはあなたのラベルです。下部では、これらのアクションにキーをバインドするこ"
+"とができます。"
 
 msgid "|image7|"
 msgstr "\\ |image7|"
@@ -225,6 +232,7 @@ msgstr ""
 
 msgid "To add an action, write its name in the bar at the top and press Enter."
 msgstr ""
+"アクションを追加するには、上部のバーに名前を記入して、Enterキーを押します。"
 
 msgid "|image8|"
 msgstr "\\ |image8|"
@@ -236,6 +244,8 @@ msgid ""
 "Create the five actions. Your window should have them all listed at the "
 "bottom."
 msgstr ""
+"5つのアクションを作成します。ウィンドウの下部に、これらのアクションがすべて表"
+"示されるはずです。"
 
 msgid "|image9|"
 msgstr "\\ |image9|"
@@ -265,9 +275,8 @@ msgstr "\\ |image11|"
 msgid "image11"
 msgstr "\\ image11"
 
-#, fuzzy
 msgid "Do the same for the A key."
-msgstr "ルートノードの大きさ。"
+msgstr "Aキーについても同様にします。"
 
 msgid "|image12|"
 msgstr "\\ |image12|"
@@ -320,6 +329,9 @@ msgid ""
 "gamepad's A button. To bind a gamepad's button, select the *Joy Button* "
 "option in the menu."
 msgstr ""
+"\\ ``jump``\\ アクションの設定が残っています。SpaceキーとゲームパッドのAボタ"
+"ンをバインドします。ゲームパッドのボタンをバインドするには、メニューから\\ *"
+"ゲームパッドのボタン*\\ (Joy Button)オプションを選択します。"
 
 #, fuzzy
 msgid "|image16|"
@@ -330,7 +342,7 @@ msgid "image16"
 msgstr "\\ |image1|"
 
 msgid "Leave the default values and click the *Add* button."
-msgstr ""
+msgstr "初期値のままで、\\ *追加*\\ (Add) ボタンをクリックします。"
 
 #, fuzzy
 msgid "|image17|"
@@ -340,13 +352,11 @@ msgstr "\\ |image1|"
 msgid "image17"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "Your jump input action should look like this."
-msgstr "シーンは次のようになります:"
+msgstr "ジャンプ入力のアクションはこのようになるはずです。"
 
-#, fuzzy
 msgid "|image18|"
-msgstr "\\ |image1|"
+msgstr ""
 
 #, fuzzy
 msgid "image18"
@@ -358,7 +368,7 @@ msgid ""
 msgstr ""
 
 msgid "In the next part, we'll code and test the player's movement."
-msgstr ""
+msgstr "次のパートでは、プレーヤーの動きをコーディングしてテストしていきます。"
 
 msgid "Translation status"
 msgstr "翻訳ステータス"

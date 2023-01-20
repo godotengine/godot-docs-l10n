@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,17 +76,18 @@ msgstr ""
 "aber es gibt auch Zeiten in denen man es nicht wünscht. Um diese Situationen "
 "zu unterscheiden, gibt es einige Dinge die man berücksichtigen kann:"
 
+#, fuzzy
 msgid ""
 "If one cannot determine when the script might load, then preloading a "
 "resource, especially a scene or script, could result in further loads one "
 "does not expect. This could lead to unintentional, variable-length load "
 "times on top of the original script's load operations."
 msgstr ""
-"Wenn man nicht bestimmen kann, wann das Skript geladen werden kann, kann das "
-"Vorladen einer Ressource, insbesondere einer Szene oder eines Skripts, zu "
-"weiteren Ladevorgängen führen, die man nicht erwartet. Dies kann zu "
-"unbeabsichtigten Ladezeiten variabler Länge zusätzlich zu den Ladevorgängen "
-"des ursprünglichen Skripts führen."
+"Wenn man nicht bestimmen kann, wann das Skript geladen wird, wird das "
+"Vorladen einer Ressource, insbesondere einer Szene oder eines Skripts, "
+"eventuell zu weiteren Ladevorgängen führen, die man nicht erwartet. Dies "
+"kann zu unbeabsichtigten Ladezeiten variabler Länge zusätzlich zu den "
+"Ladevorgängen des ursprünglichen Skripts führen."
 
 msgid ""
 "If something else could replace the value (like a scene's exported "

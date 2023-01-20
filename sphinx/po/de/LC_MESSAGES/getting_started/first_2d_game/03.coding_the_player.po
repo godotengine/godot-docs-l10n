@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Coding the player"
-msgstr "Den Spieler Bewegen"
+msgstr "Den Spieler coden"
 
 msgid ""
 "In this lesson, we'll add player movement, animation, and set it up to "
@@ -231,13 +230,12 @@ msgstr ""
 "Godot unter :ref:`doc_vector_math`. Es ist gut zu wissen, wird aber für den "
 "Rest dieser Anleitung nicht notwendig sein."
 
-#, fuzzy
 msgid ""
 "We also check whether the player is moving so we can call ``play()`` or "
 "``stop()`` on the AnimatedSprite."
 msgstr ""
-"Wir prüfen auch, ob sich der Spieler bewegt, damit wir die AnimatedSprite-"
-"Animation mit ``play()`` und ``stop()``, starten oder stoppen können."
+"Wir überprüfen auch, ob sich der Spieler bewegt, damit wir ``play()`` oder "
+"``stop()`` auf dem Animierten Sprite aufrufen können."
 
 msgid ""
 "``$`` is shorthand for ``get_node()``. So in the code above, "
@@ -248,15 +246,14 @@ msgstr ""
 "``$AnimatedSprite.play()`` dasselbe wie ``get_node(\"AnimatedSprite\")."
 "play()``."
 
-#, fuzzy
 msgid ""
 "In GDScript, ``$`` returns the node at the relative path from the current "
 "node, or returns ``null`` if the node is not found. Since AnimatedSprite is "
 "a child of the current node, we can use ``$AnimatedSprite``."
 msgstr ""
-"In GDScript gibt ``$`` den Node am relativen Pfad zum aktuellen Node zurück "
-"oder ``null``, wenn der Node nicht gefunden wird. Da AnimatedSprite ein "
-"Unterobjekt des aktuellen Nodes ist, können wir ``$AnimatedSprite`` "
+"In GDScript gibt ``$`` das Node am relativen Pfad vom aktuellen Node zurück "
+"oder gibt ``null`` zurück, wenn das Node nicht gefunden wird. Da Animiertes "
+"Sprite ein Kind des aktuellen Nodes ist, können wir ``$AnimatedSprite`` "
 "verwenden."
 
 msgid ""
@@ -301,21 +298,19 @@ msgstr ""
 "``Attempt to call function 'play' in base 'null instance' on a null "
 "instance``"
 
-#, fuzzy
 msgid ""
 "this likely means you spelled the name of the AnimatedSprite node wrong. "
 "Node names are case-sensitive and ``$NodeName`` must match the name you see "
 "in the scene tree."
 msgstr ""
-"bedeutet das wahrscheinlich, dass der Node-Namen des AnimatedSprite falsch "
-"geschrieben wurde. Node-Namen sind case-sensitive und ``$NodeName`` oder "
-"``get_node(\"NodeName\")`` müssen mit dem Namen übereinstimmen, der im "
-"Szenenbaum zu sehen ist."
+"Dies bedeutet wahrscheinlich, dass Sie den Namen des Animierten Sprite-Nodes "
+"falsch geschrieben haben. Bei Nodenamen wird zwischen Groß- und "
+"Kleinschreibung unterschieden und ``$NodeName`` muss mit dem Namen "
+"übereinstimmen, den Sie im Szenenbaum sehen."
 
 msgid "Choosing animations"
 msgstr "Animationen"
 
-#, fuzzy
 msgid ""
 "Now that the player can move, we need to change which animation the "
 "AnimatedSprite is playing based on its direction. We have the \"walk\" "
@@ -325,14 +320,13 @@ msgid ""
 "vertically with ``flip_v`` for downward movement. Let's place this code at "
 "the end of the ``_process()`` function:"
 msgstr ""
-"Nachdem sich der Player bewegen kann, müssen wir die von AnimatedSprite "
-"abgespielte Animation anhand seiner Richtung ändern. Wir haben die \"Walk\" -"
-"Animation, die den Spieler zeigt, wie er nach rechts geht. Diese Animation "
-"sollte horizontal gespiegelt werden, indem die Eigenschaft ``flip_h`` für "
-"die Bewegung nach links verwendet wird. Wir haben auch die \"Auf\" -"
-"Animation, die vertikal mit ``flip_v`` für die Abwärtsbewegung gespiegelt "
-"werden sollte. Platzieren wir diesen Code am Ende der Funktion "
-"``_process()``:"
+"Da sich der Spieler nun bewegen kann, müssen wir die Animation, die das "
+"Animierte Sprite abspielt, entsprechend seiner Richtung ändern. Wir haben "
+"die \"walk\"-Animation, die den Spieler zeigt, wie er nach rechts geht. "
+"Diese Animation sollte horizontal gespiegelt werden, indem die Eigenschaft "
+"``flip_h`` für links verwendet wird. Wir haben auch die \"up\"-Animation, "
+"die vertikal mit ``flip_v`` für die Abwärtsbewegung gespiegelt werden "
+"sollte. Wir fügen diesen Code am Ende der Funktion ``_process()`` ein:"
 
 msgid ""
 "The boolean assignments in the code above are a common shorthand for "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,9 +164,12 @@ msgstr ""
 "Dans une scène vide, le panneau Scène offre plusieurs options pour "
 "rapidement ajouter un nœud racine à une scène. \"Scène 2D\" ajoute un nœud "
 "Node2D, \"Scène 3D\" ajoute un nœud Spatial, \"Interface utilisateur\" "
-"ajoute un nœud Control et \"Autre noeud\" vous laisse choisir n'importe quel "
-"nœud. Cela équivaut à appuyer sur le bouton \"Ajouter un nœud enfant\". Ces "
-"préréglages sont là par commodité, ils ne sont pas obligatoires."
+"ajoute un nœud Control. Ces préréglages sont là par commodité, ils ne sont "
+"pas obligatoires. \"Autre noeud\" vous laisse choisir n'importe quel nœud "
+"comme noeud racine. « Autre nœud » équivaut à appuyer sur le bouton « "
+"Ajouter un nœud enfant » en haut à gauche du dock Scène, qui ajoute "
+"généralement un nouveau nœud en tant qu'enfant du nœud actuellement "
+"sélectionné."
 
 msgid ""
 "We're going to add a single Label node to our scene. Its function is to draw "
@@ -175,9 +178,12 @@ msgstr ""
 "Nous allons ajouter un seul nœud Label à notre scène. Sa fonction est de "
 "dessiner du texte à l'écran."
 
+#, fuzzy
 msgid ""
 "Press the \"Add Child Node\" button or \"Other Node\" to create a root node."
 msgstr ""
+"Appuyez sur le bouton « Ajouter un nœud enfant » ou « Autre nœud » pour "
+"créer un nœud racine."
 
 msgid "The Create Node dialog opens, showing the long list of available nodes."
 msgstr ""
@@ -254,7 +260,8 @@ msgid ""
 "right of the screen or press :kbd:`F6` (:kbd:`Cmd + R` on macOS)."
 msgstr ""
 "Tout est prêt pour lancer la scène ! Appuyez sur le bouton Lancer la Scène "
-"en haut à droite de l'écran ou appuyez sur :kbd:`F6`."
+"en haut à droite de l'écran ou appuyez sur :kbd:`F6` (:kbd:`Cmd + R` on "
+"macOS)."
 
 msgid "A popup invites you to save the scene, which is required to run it."
 msgstr ""
@@ -307,7 +314,6 @@ msgstr ""
 msgid "Setting the main scene"
 msgstr "Mise en place de la scène principale"
 
-#, fuzzy
 msgid ""
 "To run our test scene, we used the Play Scene button. Another button next to "
 "it allows you to set and run the project's main scene. You can press :kbd:"
@@ -315,7 +321,8 @@ msgid ""
 msgstr ""
 "Pour exécuter notre scène de test, nous avons utilisé le bouton Jouer la "
 "scène. Un autre bouton à côté vous permet de définir et de lancer la scène "
-"principale du projet. Vous pouvez appuyer sur :kbd:`F5` pour le faire."
+"principale du projet. Vous pouvez appuyer sur :kbd:`F5` (:kbd:`Cmd + B` on "
+"macOS) pour le faire."
 
 msgid "A popup window appears and invites you to select the main scene."
 msgstr ""

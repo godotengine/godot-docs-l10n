@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -107,7 +107,7 @@ msgstr ""
 "以下は、すべてのEnvironmentのオプションとそれらの使用方法の詳細な説明です。"
 
 msgid "Background"
-msgstr "Background(背景)"
+msgstr "背景"
 
 msgid ""
 "The Background section contains settings on how to fill the background "
@@ -214,9 +214,8 @@ msgstr ""
 "上記の方法のいずれかを使用すると、オブジェクトは一定した環境光をプローブから"
 "の環境光に置き換えます。"
 
-#, fuzzy
 msgid "Fog"
-msgstr "Fog(霧)"
+msgstr "フォグ"
 
 msgid ""
 "Fog, as in real life, makes distant objects fade away into an uniform color. "
@@ -480,9 +479,12 @@ msgstr ""
 "**Roughness** は、スクリーンスペースのぼかしを適用して、このマテリアル特性を"
 "持つオブジェクトの粗さを近似します。"
 
+#, fuzzy
 msgid ""
 "Keep in mind that screen-space-reflections only work for reflecting opaque "
-"geometry. Transparent objects can't be reflected."
+"geometry. Transparent materials won't be reflected, as they don't write to "
+"the depth buffer. This also applies to shaders that use ``SCREEN_TEXTURE`` "
+"or ``DEPTH_TEXTURE``."
 msgstr ""
 "スクリーンスペース反射は不透明なジオメトリを反射する場合にのみ機能することに"
 "注意してください。透明なオブジェクトは反射できません。"

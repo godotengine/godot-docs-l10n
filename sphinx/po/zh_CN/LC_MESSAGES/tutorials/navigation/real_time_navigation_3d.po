@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,30 +28,31 @@ msgid ""
 "non directly controlled characters or entities find their way around an "
 "environment. Godot provides several nodes for this purpose:"
 msgstr ""
+"很多游戏中 3D 环境的寻路都是非常重要的，常见的就是非直接控制的角色或者实体会"
+"在环境中找到去路。Godot 为此提供了若干节点："
 
 msgid ":ref:`Navigation<class_Navigation>` (deprecated)"
-msgstr ""
+msgstr ":ref:`Navigation<class_Navigation>`\\ （已弃用）"
 
 msgid ":ref:`NavigationMeshInstance<class_NavigationMeshInstance>`"
-msgstr ""
+msgstr ":ref:`NavigationMeshInstance<class_NavigationMeshInstance>`"
 
-#, fuzzy
 msgid ":ref:`NavigationAgent<class_NavigationAgent>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`NavigationAgent<class_NavigationAgent>`"
 
-#, fuzzy
 msgid ":ref:`NavigationObstacle<class_NavigationObstacle>`"
-msgstr ":ref:`Dictionary <class_Dictionary>`"
+msgstr ":ref:`NavigationObstacle<class_NavigationObstacle>`"
 
-#, fuzzy
 msgid "The map and navigation regions"
-msgstr "空间和操纵辅助线框"
+msgstr "地图与导航地区"
 
 msgid ""
 "The \"map\" is the entire world for navigation, it's similar to \"space\" "
 "for the physics engine. It's comprised of navigation regions, these regions "
 "define parts of the world that can be navigated around by navigation agents."
 msgstr ""
+"“地图”是导航的完整世界，类似于物理引擎的“空间”。它由导航地区组成，这些地区定"
+"义的是世界中导航代理能够到达的部分。"
 
 msgid ""
 "To create a navigation region add the :ref:"
@@ -63,34 +64,39 @@ msgid ""
 "each setting and how it works can be found in the :ref:`NavigationMesh class "
 "reference<class_NavigationMesh>`."
 msgstr ""
+"要创建导航地区，请在 3D 场景中添加 :ref:"
+"`NavigationMeshInstance<class_NavigationMeshInstance>` 节点。然后，请在检查其"
+"中为这个网格创建或者添加一个 :ref:`NavigationMesh<class_NavigationMesh>`。导"
+"航网格包含了烘焙时应该如何将其生成的选项。几何体选项控制的是在烘焙网格的过程"
+"中会用到哪些节点、哪些类型的节点。各个设置项的完整描述与工作原理可以在 :ref:"
+"`NavigationMesh 类参考 <class_NavigationMesh>`\\ 中找到。"
 
 msgid ""
 "Once the settings have been properly configured press the \"Bake NavMesh\" "
 "button at the top of the inspector to generate it."
-msgstr ""
+msgstr "正确设置好之后，请在点击检查器顶部的“烘焙导航网格”按钮来生成网格。"
 
 msgid ""
 "It can also be generated at runtime using the `bake_navigation_region()` "
 "method of the navigation region node."
-msgstr ""
+msgstr "也可以在运行时使用导航网格的 `bake_navigation_region()` 方法来生成。"
 
-#, fuzzy
 msgid ""
 "Once the mesh has finished generating you should see the transparent "
 "navigation mesh above the areas in the scene that can be navigated to."
 msgstr ""
-"网格生成完后，你就能在场景中可以进行导航的位置上方看到半透明的导航网格了。"
+"网格生成完后，你应该就能在场景中可以进行导航的位置上方看到半透明的导航网格"
+"了。"
 
-#, fuzzy
 msgid ""
 "Keep in mind that the navmesh shows where the center of an entity can go. "
 "For example, if you set the agent radius to 0.5 then the navigation mesh "
 "will have a distance of 0.5 from any ledges or walls to prevent clipping "
 "into the wall or hanging off of the edge."
 msgstr ""
-"请注意，导航网格显示的是实体中心点所能到达的位置。例如，如果你将 agent "
-"radius 设为 0.5，那么你的导航网格与台阶或者墙壁之间就会有 0.5 的距离，防止穿"
-"进墙壁或从边缘掉下。"
+"请注意，导航网格显示的是实体中心点所能到达的位置。例如，如果你将代理半径设为 "
+"0.5，那么你的导航网格与台阶或者墙壁之间就会有 0.5 的距离，防止穿进墙壁或从边"
+"缘掉下。"
 
 msgid ""
 "Navigation agents can moved from one region to another if they are next to "
@@ -98,31 +104,37 @@ msgid ""
 "will still be able to navigate onto it from another region. For example, "
 "navigating onto a moving platform that has stopped will work."
 msgstr ""
+"如果地区之间是紧挨着的，导航代理就可以从一个地区移动到另一个。另外烘焙出的导"
+"航网格可以在运行时移动，代理仍然可以从其他地区导航到它上面。例如，导航到停止"
+"的移动平台是可行的。"
 
-#, fuzzy
 msgid "NavigationAgent3D"
-msgstr "导航"
+msgstr "NavigationAgent3D"
 
 msgid ""
 "Navigation agent nodes are what actually does the pathfinding in a scene, "
 "one can be attached to the root node of an entity that needs to navigate."
 msgstr ""
+"导航代理节点是场景中实际进行寻路的东西，可以附加在需要导航的实体根节点下。"
 
 msgid ""
 "To have it pathfind use its `set_target_location` method. Once the target "
 "has been set a path will be generated to the node using navigation regions, "
 "with several points on the way to the final destination."
 msgstr ""
+"要让它进行寻路，请使用 `set_target_location` 方法。设置目的地之后，就会为使用"
+"导航地区的节点生成一条路径，包含到达最终目的地一路上经过的点。"
 
-#, fuzzy
 msgid "RVO processing"
-msgstr "后台处理"
+msgstr "RVO 处理"
 
 msgid ""
 "RVO stands for reciprocal velocity obstacle. RVO processing is a way to "
 "pathfind while taking into account other agents and physics bodies that are "
 "also moving."
 msgstr ""
+"RVO 即“相互速度障碍（Reciprocal Velocity Obstacle）”。RVO 处理是一种寻路方"
+"法，会考虑其他代理以及同时在移动的物理实体。"
 
 msgid ""
 "To use it set a target like normal. Then an agent needs to fetch its next "
@@ -131,6 +143,10 @@ msgid ""
 "`set_velocity`. Then a new velocity that takes into account other agents and "
 "obstacles is generated and emitted with the signal `velocity_computed`."
 msgstr ""
+"使用方法是和平时一样设置目标，然后代理需要获取它导航路径上的下一个位置，计算"
+"前往该位置所需的速度。这个值不用来移动，而是通过 `set_velocity` 将它设为代理"
+"的速度。然后就会生成一个考虑了其他代理和障碍物的新速度，通过 "
+"`velocity_computed` 信号发出。"
 
 msgid ""
 "However agents can only take into account a set number of other nearby "
@@ -139,10 +155,12 @@ msgid ""
 "agent and can be adjusted. This is **not** a limit for how many agents can "
 "use a navigation region at the same time."
 msgstr ""
+"不过代理只会考虑固定数量的周边代理，即代理的\\ :ref:`最大相邻数 "
+"<class_NavigationAgent_property_max_neighbors>`\\ 属性，是可调的。这\\ *并不"
+"是*\\ 对同时使用导航地区的代理数量的限制。"
 
-#, fuzzy
 msgid "NavigationObstacle3D"
-msgstr "导航"
+msgstr "NavigationObstacle3D"
 
 msgid ""
 "This node is used to mark physics bodies that move around a navigation area "
@@ -151,16 +169,20 @@ msgid ""
 "destructible environment. Add it as the child of a physics body and "
 "navigation agent nodes will avoid it while pathfinding."
 msgstr ""
+"这个节点是用来标记物理实体的，表示它会在导航区域中移动，代理需要避让（只有在"
+"使用 RVO 处理时才有效）。例如，这个节点可用于可破坏环境中的碎片。将它添加为物"
+"理实体的子节点，导航代理节点就会在寻路时进行避让。"
 
-#, fuzzy
 msgid "Generating a path (old method)"
-msgstr "生成路径"
+msgstr "生成路径（旧方法）"
 
 msgid ""
 "This is the old method for generating a navigation path, it will be removed "
 "in Godot 4. First, add a navigation node to the scene, then add a navigation "
 "mesh instance as it's child and set up a navigation mesh."
 msgstr ""
+"这是生成导航路径的旧方法，会在 Godot 4 中移除。首先在场景中添加一个导航节点，"
+"然后再添加一个导航网格实例作为其子节点，并设置导航网格。"
 
 msgid ""
 "To get a path between two areas on a map you use the navigation node method "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,6 +96,8 @@ msgid ""
 "`registering it automatically in the Project Settings "
 "<doc_making_plugins_autoload>` when the plugin is enabled."
 msgstr ""
+"如果你创建的自动加载是编辑器插件的一部分，请考虑在启用插件时\\ :ref:`将其自动"
+"注册到项目设置中 <doc_making_plugins_autoload>`。"
 
 msgid "AutoLoad"
 msgstr "自动加载"
@@ -156,6 +158,8 @@ msgid ""
 "Autoloads must **not** be removed using ``free()`` or ``queue_free()`` at "
 "runtime, or the engine will crash."
 msgstr ""
+"运行时绝对\\ **不能**\\ 通过 ``free()`` 或 ``queue_free()`` 去移除自动加载，"
+"否则引擎会崩溃。"
 
 msgid "Custom scene switcher"
 msgstr "自定义场景切换器"

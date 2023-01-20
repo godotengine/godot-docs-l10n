@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Scene Unique Nodes"
-msgstr "场景节点"
+msgstr "场景唯一节点"
 
 msgid "Introduction"
 msgstr "前言"
@@ -29,30 +28,37 @@ msgid ""
 "However, its position in the tree might change over time as adjustments are "
 "made to a scene, such as a button in a UI scene."
 msgstr ""
+"项目中会遇到需要从脚本中调用节点的情况。然而，这个节点在树中的位置可能随着对"
+"场景的调整而改变，例如 UI 场景中的按钮。"
 
 msgid ""
 "In situations like this, a node can be turned into a scene unique node to "
 "avoid having to update a script every time its path is changed."
 msgstr ""
+"在类似这样的情况下，可以将节点设为场景唯一节点，这样修改路径后就不必去修改脚"
+"本了。"
 
-#, fuzzy
 msgid "Creating and using them"
-msgstr "创建主题"
+msgstr "创建与使用"
 
 msgid ""
 "In the Scene tree dock, right-click on a node and select **Access as Scene "
 "Unique Name** in the context menu."
 msgstr ""
+"在场景树面板中，右键单击节点并在上下文菜单中选择\\ **作为场景唯一名称访问"
+"**\\ 。"
 
 msgid ""
 "After checking this, the node will now have a percent symbol (**%**) next to "
 "its name in the scene tree:"
-msgstr ""
+msgstr "勾选后，该节点在场景树中会在名称旁边显示一个百分号（\\ **%**\\ ）："
 
 msgid ""
 "To use a unique node in a script, use the ``%`` symbol and the node's name "
 "in the path for ``get_node()``. For example:"
 msgstr ""
+"要在脚本中使用唯一节点，请在 ``get_node()`` 中使用 ``%`` 符号和该节点的名称。"
+"例如："
 
 msgid "Translation status"
 msgstr "翻译状态"

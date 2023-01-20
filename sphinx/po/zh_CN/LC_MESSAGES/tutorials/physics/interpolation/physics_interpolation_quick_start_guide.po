@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Quick start guide"
-msgstr ""
+msgstr "快速入门指南"
 
 msgid ""
 "Turn on physics interpolation: :ref:`ProjectSettings.physics/common/"
 "physics_interpolation<class_ProjectSettings_property_physics/common/"
 "physics_interpolation>`"
 msgstr ""
+"打开物理插值：\\ :ref:`ProjectSettings.physics/common/"
+"physics_interpolation<class_ProjectSettings_property_physics/common/"
+"physics_interpolation>`"
 
 msgid ""
 "Make sure you move objects and run your game logic in ``_physics_process()`` "
@@ -32,6 +35,9 @@ msgid ""
 "indirectly* (by e.g. moving a parent, or using another mechanism to "
 "automatically move nodes)."
 msgstr ""
+"确保对象的移动以及游戏逻辑是在 ``_physics_process()`` 而不是 ``_process()`` "
+"中的。包含对象的直接\\ *和间接*\\ 移动（例如提供父级、使用其他机制自动移动节"
+"点）。"
 
 msgid ""
 "Be sure to call :ref:`Node."
@@ -39,12 +45,18 @@ msgid ""
 "on nodes *after* you first position or teleport them, to prevent "
 "\"streaking\""
 msgstr ""
+"确保在设置初始位置或者传送节点\\ *之后*\\ 调用 :ref:`Node."
+"reset_physics_interpolation<class_Node_method_reset_physics_interpolation>`，"
+"放置“连续移动”"
 
 msgid ""
 "Temporarily try setting :ref:`ProjectSettings.physics/common/"
 "physics_fps<class_ProjectSettings_property_physics/common/physics_fps>` to "
 "10 to see the difference with and without interpolation."
 msgstr ""
+"将 :ref:`ProjectSettings.physics/common/"
+"physics_fps<class_ProjectSettings_property_physics/common/physics_fps>` 临时"
+"设为 10，查看启用插值前后的差别。"
 
 msgid "Translation status"
 msgstr "翻译状态"

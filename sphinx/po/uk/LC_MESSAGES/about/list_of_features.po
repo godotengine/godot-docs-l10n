@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,6 @@ msgstr ""
 "Ця сторінка створена щоб показати всі особливості, що підтримуються рушієм "
 "на даний момент."
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -33,8 +32,9 @@ msgid ""
 "(4.0)."
 msgstr ""
 "Ця сторінка показує список особливостей які підтримує поточна, стабільна "
-"версія Godot(3.4). `Більше особливостей <https://docs.godotengine.org/en/"
-"latest/about/list_of_features.html>`__ доступні в останній версії (4.0)."
+"версія Godot(3.5). `Більше особливостей <https://docs.godotengine.org/en/"
+"latest/about/list_of_features.html>`__ доступні в останній версії розробки "
+"(4.0)."
 
 msgid "Features"
 msgstr "Можливості"
@@ -151,7 +151,7 @@ msgstr ""
 "Перемістіть камеру в редакторі та перегляньте зміни в робочому проєкті."
 
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "Вбудована довідка для класів."
 
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Використовуйте редактор на десятках мов, що надаються спільнотою."
@@ -166,13 +166,12 @@ msgstr ""
 "З :ref:`бібліотеки активів <doc_what_is_assetlib>` можна завантажити плагіни "
 "для розширення функціональності редактора."
 
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
-"Ви можете :ref:`створити власні плагіни<doc_making_plugins>` за допомогою "
-"GDScript"
+":ref:`Створюйте власні плагіни<doc_making_plugins>` за допомогою GDScript, "
+"щоб додати нові функції, чи прискорити свою роботу."
 
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
@@ -238,13 +237,12 @@ msgstr ""
 "Растрові шрифти можна експортувати за допомогою таких інструментів, як "
 "BMFont."
 
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
-"DynamicFont підтримує однотонні шрифти, а також кольорові шрифти. "
-"Підтримувані формати - TTF, OTF і WOFF1."
+"DynamicFont підтримує однотонні шрифти, а також кольорові шрифти (наприклад "
+"емоджі). Підтримувані формати: TTF, OTF, WOFF1 та WOFF2."
 
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
@@ -653,14 +651,14 @@ msgstr ""
 "Підтримує сповіщення про геймплей з первинною та вторинною видимістю, щоб "
 "вимкнути обробку ШІ/фізики для вузлів, які цього не потребують."
 
-#, fuzzy
 msgid ""
 "Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
 "and portals (and doesn't support gameplay notifications), but easier to set "
 "up."
 msgstr ""
-"Сфери оклюдерів у реальному часі. Не такі ефективні, як кімнати та портали "
-"(і не підтримують сповіщення про геймплей), але простіші в налаштуванні."
+"Форми оклюдерів у реальному часі (сфери чи полігони). Не такі ефективні, як "
+"кімнати та портали (і не підтримують сповіщення про геймплей), але простіші "
+"в налаштуванні."
 
 msgid ""
 "Most of the effects listed above can be adjusted for better performance or "
@@ -874,12 +872,20 @@ msgid ""
 "Future Godot 4.x releases may have VisualScript reimplemented as an "
 "extension."
 msgstr ""
+"«З Godot 4.0 буде повністю видалене ядро VisualScript. <https://godotengine."
+"org/article/godot-4-will-discontinue-visual-scripting>`__ Тому не "
+"рекомендується створювати нові проекти за допомогою візуальних скриптів у "
+"Godot. У майбутніх випусках Godot 4.x VisualScript може бути повторно "
+"реалізований як розширення."
 
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
 "out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
 "intend to migrate your project to Godot 4."
 msgstr ""
+"Хоча Godot 3.x підтримуватиме VisualScript, ми рекомендуємо :ref:`спробувати "
+"GDScript <toc-learn-scripting-gdscript>`, особливо якщо ви маєте намір "
+"перенести свій проект на Godot 4."
 
 msgid "Audio"
 msgstr "Аудіо"
@@ -1054,13 +1060,14 @@ msgid "A* algorithm in 2D and 3D."
 msgstr "Алгоритм A* в 2D і 3D."
 
 msgid "Navigation meshes with dynamic obstacle avoidance."
-msgstr ""
+msgstr "Навігація мешів з динамічним уникненням перешкод."
 
-#, fuzzy
 msgid ""
 "Generate navigation meshes from the editor or at run-time (including from an "
 "exported project)."
-msgstr "Створення навігаційних мешів (сіток) в редакторі."
+msgstr ""
+"Створення навігаційних мешів (сіток) в редакторі, чи під час виконання "
+"(включаючи з експортованого проекту)."
 
 msgid "Networking"
 msgstr "Робота у мережі"

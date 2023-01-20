@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,9 +149,8 @@ msgstr "啟用"
 msgid "Enables code signing."
 msgstr ""
 
-#, fuzzy
 msgid "Identity"
-msgstr "識別項"
+msgstr "身分"
 
 msgid ""
 "The \"Full Name\" or \"Common Name\" of the signing identity, store in the "
@@ -159,7 +158,7 @@ msgid ""
 msgstr ""
 
 msgid "Timestamp"
-msgstr ""
+msgstr "時間戳"
 
 msgid ""
 "Requests a timestamp server to authenticate the time of signing. Required "
@@ -167,7 +166,7 @@ msgid ""
 msgstr ""
 
 msgid "Hardened Runtime"
-msgstr ""
+msgstr "Hardened Runtime"
 
 msgid "Enables \"Hardened Runtime\". Required for notarization. [2]_"
 msgstr ""
@@ -206,13 +205,13 @@ msgid "Enables automatic upload for notarization."
 msgstr ""
 
 msgid "Apple ID Name"
-msgstr ""
+msgstr "Apple ID 名稱"
 
 msgid "Apple ID account name (email address)"
 msgstr ""
 
 msgid "Apple ID Password"
-msgstr ""
+msgstr "Apple ID 密碼"
 
 msgid ""
 "Apple ID app-specific password. See `Using app-specific passwords <https://"
@@ -221,7 +220,7 @@ msgid ""
 msgstr ""
 
 msgid "Apple Team ID"
-msgstr ""
+msgstr "Apple 團隊 ID"
 
 msgid "Team ID, if your Apple ID belongs to multiple teams"
 msgstr ""
@@ -290,9 +289,8 @@ msgid ""
 "provided external add-ons."
 msgstr ""
 
-#, fuzzy
 msgid "Audio Input"
-msgstr "聲音"
+msgstr "音源輸入"
 
 msgid ""
 "Enable if you need to use the microphone or other audio input sources, if "
@@ -318,7 +316,7 @@ msgid ""
 msgstr ""
 
 msgid "Address Book"
-msgstr ""
+msgstr "地址簿"
 
 msgid ""
 "[4]_ Enable to allow access contacts in the user's address book, if it's "
@@ -327,7 +325,7 @@ msgid ""
 msgstr ""
 
 msgid "Calendars"
-msgstr ""
+msgstr "日曆"
 
 msgid ""
 "[4]_ Enable to allow access to the user's calendar, if it's enabled you "
@@ -346,7 +344,7 @@ msgid ""
 msgstr ""
 
 msgid "Apple Events"
-msgstr ""
+msgstr "Apple 活動"
 
 msgid "[4]_ Enable to allow app to send Apple events to other apps."
 msgstr ""
@@ -396,22 +394,20 @@ msgstr "已啟用"
 msgid "Enables App Sandbox."
 msgstr ""
 
-#, fuzzy
 msgid "Network Server"
-msgstr "網路分析工具"
+msgstr "網路伺服器"
 
 msgid "Enable to allow app to listen for incoming network connections."
 msgstr ""
 
-#, fuzzy
 msgid "Network Client"
-msgstr "網路"
+msgstr "網路客戶端"
 
 msgid "Enable to allow app to establish outgoing network connections."
 msgstr ""
 
 msgid "Device USB"
-msgstr ""
+msgstr "裝置 USB"
 
 msgid ""
 "Enable to allow app to interact with USB devices. This entitlement is "
@@ -419,7 +415,7 @@ msgid ""
 msgstr ""
 
 msgid "Device Bluetooth"
-msgstr ""
+msgstr "裝置藍芽"
 
 msgid ""
 "Enable to allow app to interact with Bluetooth devices. This entitlement is "

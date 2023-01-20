@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,6 @@ msgstr ""
 "Questa pagina ha lo scopo di elencare tutte le funzionalità attualmente "
 "supportate da Godot."
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -33,7 +32,7 @@ msgid ""
 "(4.0)."
 msgstr ""
 "Questa pagina elenca le funzionalità supportate dall'attuale versione "
-"stabile di Godot (3.4). `Altre funzionalità <https://docs.godotengine.org/en/"
+"stabile di Godot (3.5). `Altre funzionalità <https://docs.godotengine.org/en/"
 "latest/about/list_of_features.html>` __ sono disponibili nell'ultima "
 "versione in sviluppo (4.0)."
 
@@ -155,7 +154,7 @@ msgstr ""
 "esecuzione."
 
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "Documentazione di riferimento delle classi offline integrata."
 
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Usa l'editor in svariate lingue fornite dalla community."
@@ -170,13 +169,12 @@ msgstr ""
 "I plug-in dell'editor possono essere scaricati da: ref: `Libreria dei "
 "Contenuti <doc_what_is_assetlib>` per estenderne le funzionalità."
 
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 ":ref:`Crea i tuoi plugin <doc_making_plugins>` usando GDScript per "
-"aggiungerne di nuovi"
+"aggiungere nuove funzionalità o velocizzare il tuo flusso di lavoro."
 
 #, fuzzy
 msgid ""
@@ -245,8 +243,8 @@ msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
-"DynamicFont supporta sia font monocromatici che colorati (ad esempio per le "
-"emoji). I formati supportati sono TTF, OTF e WOFF1."
+"DynamicFont supporta sia i caratteri monocromatici che quelli colorati (ad "
+"es. per le emoji). I formati supportati sono TTF, OTF, WOFF1 e WOFF2."
 
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
@@ -888,6 +886,7 @@ msgstr ""
 "Supporto per i bindings per D, Kotlin, Python, Nim e Rust forniti dalla "
 "comunità."
 
+#, fuzzy
 msgid ""
 "`Godot 4.0 will remove VisualScript from core entirely. <https://godotengine."
 "org/article/godot-4-will-discontinue-visual-scripting>`__ As a result, "
@@ -895,12 +894,21 @@ msgid ""
 "Future Godot 4.x releases may have VisualScript reimplemented as an "
 "extension."
 msgstr ""
+"`Godot 4.0 rimuoverà completamente VisualScript dal nucleo. <https://"
+"godotengine.org/article/godot-4-will-discontinue-visual-scripting>` Di "
+"conseguenza, non è consigliabile creare nuovi progetti utilizzando "
+"VisualScript in Godot. Le future versioni di Godot 4.x potrebbero avere "
+"VisualScript reimplementato come estensione."
 
+#, fuzzy
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
 "out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
 "intend to migrate your project to Godot 4."
 msgstr ""
+"Anche se Godot 3.x manterrà il supporto di VisualScript, si consiglia di :"
+"ref:`provare GDScript <toc-learn-scripting-gdscript>` al suo posto, "
+"soprattutto se si intende migrare il proprio progetto a Godot 4."
 
 msgid "Audio"
 msgstr "Audio"
@@ -955,7 +963,7 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr "*Linux:* PulseAudio o ALSA."
 
 msgid "Import"
-msgstr "Importa"
+msgstr "Importare"
 
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
 msgstr "Supporto per :ref:`custom import plugins <doc_import_plugins>`."
@@ -1078,8 +1086,9 @@ msgstr "Navigazione"
 msgid "A* algorithm in 2D and 3D."
 msgstr "Algoritmo A* in 2D e 3D."
 
+#, fuzzy
 msgid "Navigation meshes with dynamic obstacle avoidance."
-msgstr ""
+msgstr "Mesh di navigazione con evitamento dinamico degli ostacoli."
 
 #, fuzzy
 msgid ""

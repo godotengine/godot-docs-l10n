@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,11 +69,15 @@ msgstr ""
 "відображатиметься як замість матеріялу самого вузла, так і замість матеріялу "
 "геометрії використаної цим вузлом."
 
+#, fuzzy
 msgid ""
 "The *Material Overlay* property will render a material **over** the current "
 "one being used by the mesh. As an example, this can be used to put a "
 "transparent shield effect on a mesh."
 msgstr ""
+"Властивість *Material Overlay* відтворить матеріал **поверх** поточного, "
+"який використовується сіткою. Як приклад, це можна використати для створення "
+"ефекту прозорого щита на сітці."
 
 msgid "Flags"
 msgstr "Прапорці"
@@ -753,15 +757,20 @@ msgstr ""
 "іграшках. На практиці це маленька дзеркальна пляма, додана поверх існуючого "
 "матеріалу."
 
+#, fuzzy
 msgid ""
 "The effect is extremely subtle in Godot 3 releases, and may require specific "
 "lighting or looking at a material a specific way to notice a difference. "
 "This can be seen in the image below where clearcoat is turned on in the "
 "right."
 msgstr ""
+"У випусках Godot 3 цей ефект надзвичайно тонкий, і може знадобитися "
+"спеціальне освітлення або дивитися на матеріал певним чином, щоб помітити "
+"різницю. Це можна побачити на зображенні нижче, де праворуч увімкнено "
+"безбарвний лак."
 
 msgid "The effect will be more noticeable in Godot 4."
-msgstr ""
+msgstr "ефект буде більш помітнішим в godot 4."
 
 msgid "Anisotropy"
 msgstr "Анізотропія"

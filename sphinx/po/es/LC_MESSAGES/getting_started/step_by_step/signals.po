@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -82,6 +82,9 @@ msgid ""
 "include both a button and the ``Sprite.tscn`` scene that we scripted in "
 "previous lessons."
 msgstr ""
+"Para agregar un botón a nuestro juego, crearemos una nueva escena \"main\" "
+"que incluirá tanto un botón como la escena ``Sprite.tscn`` que escribimos en "
+"lecciones anteriores."
 
 msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr "Cree una nueva escena yendo al menú Escenas -> Nueva escena."
@@ -142,6 +145,8 @@ msgid ""
 "Save your newly created scene. You can then run it with :kbd:`F6`. At the "
 "moment, the button will be visible, but nothing will happen if you press it."
 msgstr ""
+"Guarde su escena recién creada. Luego puede ejecutarla con :kbd:`F6`. De "
+"momento, el botón estará visible, pero no pasará nada si lo pulsas."
 
 msgid "Connecting a signal in the editor"
 msgstr "Conexión de una señal en el editor"
@@ -345,6 +350,10 @@ msgid ""
 "function, which is called automatically by the engine when a node is fully "
 "instantiated."
 msgstr ""
+"Queremos conectar la señal cuando la escena es instanciada, y podemos "
+"hacerlo usando la función integrada :ref:`Node._ready() "
+"<class_Node_method__ready>`, que el motor llama automáticamente cuando un "
+"nodo está completamente instanciado."
 
 msgid ""
 "To get a reference to a node relative to the current one, we use the method :"
@@ -398,6 +407,8 @@ msgid ""
 "If you run the scene now, you will see that the sprite blinks on and off, at "
 "one second intervals."
 msgstr ""
+"Si ejecuta la escena ahora, verá que el sprite se enciende y se apaga, a "
+"intervalos de un segundo."
 
 #, fuzzy
 msgid "Complete script"
@@ -416,6 +427,8 @@ msgid ""
 "This section is a reference on how to define and use your own signals, and "
 "does not build upon the project created in previous lessons."
 msgstr ""
+"Está sección es una referencia de cómo definir y usar tus propias señales, y "
+"no se basa en el proyecto creado en lecciones anteriores."
 
 msgid ""
 "You can define custom signals in a script. Say, for example, that you want "

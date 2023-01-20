@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,6 @@ msgstr "Canvas-Ebenen"
 msgid "Viewport and Canvas items"
 msgstr "Ansichtsfenster und Canvas-Elemente"
 
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem <class_CanvasItem>` is the base for all 2D nodes, be it "
 "regular 2D nodes, such as :ref:`Node2D <class_Node2D>`, or :ref:`Control "
@@ -34,20 +33,18 @@ msgstr ""
 "Reguläre 2D-Nodes wie :ref:`Node2D <class_Node2D>` und :ref:`Control "
 "<class_Control>` sind abgeleitet von :ref:`CanvasItem <class_CanvasItem>` "
 "auf dem auch sämtliche andere 2D-Nodes basieren. CanvasItems können in einer "
-"Baumhierarchie strukturiert werden und kopieren ihre Transformation von der "
-"übergeordneten Node. Das heißt, wird ein übergeordneter Node bewegt, bewegen "
-"sich alle untergeordneten Nodes in gleicher Weise."
+"Baumhierarchie strukturiert werden und erben ihre Transformation vom "
+"übergeordneten Node. Das heißt, wenn ein übergeordnetes Node bewegt wird, "
+"bewegen sich alle untergeordneten Nodes in gleicher Weise."
 
-#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
 "children of a :ref:`Viewport <class_Viewport>`, that display them."
 msgstr ""
-"Diese Nodes in der Hierarchie sind stets direkte oder indirekte Unterobjekte "
-"einer :ref:`Viewport <class_Viewport>`-Instanz und werden über diese "
-"dargestellt."
+"CanvasItem-Nodes (oder Nodes, die von CanvasItem erben) sind stets direkte "
+"oder indirekte Unterobjekte einer :ref:`Ansichtsfenster <class_Viewport>`-"
+"Instanz und werden über diese dargestellt."
 
-#, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, allows to apply a custom :ref:"
@@ -55,29 +52,27 @@ msgid ""
 "contains. Nodes such as :ref:`Camera2D <class_Camera2D>` work by changing "
 "that transform."
 msgstr ""
-"Ein Viewport enthält die Eigenschaft :ref:`Viewport.canvas_transform "
+"Ein Ansichtsfenster enthält die Eigenschaft :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, die es erlaubt, die gesamte "
 "CanvasItem-Hierarchie durch ein benutzerdefiniertes :ref:`Transform2D "
-"<class_Transform2D>` zu beeinflussen. Bestehende Nodes wie :ref:`Camera2D "
-"<class_Camera2D>` passen auf diese Weise ihre Sicht an."
+"<class_Transform2D>` zu beeinflussen. Nodes wie :ref:`Camera2D "
+"<class_Camera2D>` funktionieren, indem sie diese Transformation verändern."
 
-#, fuzzy
 msgid ""
 "To achieve effects like scrolling, manipulating the canvas transform "
 "property is more efficient than moving the root canvas item and the entire "
 "scene with it."
 msgstr ""
 "Effekte wie das Scrollen lassen sich am besten durch Bearbeiten der Canvas-"
-"Transformationseigenschaft erzielen. Dieser Ansatz ist effizienter als das "
-"Verschieben des Wurzel-Canvas-Elements (und damit der gesamten Szene)."
+"Eigenschaft \"Transformation\" erzielen. Dieser Ansatz ist effizienter als "
+"das Verschieben des Wurzel-Canvas-Elements (und damit der gesamten Szene)."
 
-#, fuzzy
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. For example:"
 msgstr ""
-"Normalerweise wollen wir nicht, dass *alles* im Spiel durch Canvas Transform "
-"beeinflusst werden soll. Dazu zählen beispielsweise:"
+"Normalerweise wollen wir nicht, dass *alles* im Spiel durch Canvas-"
+"Transformation beeinflusst werden soll. Dazu zählen beispielsweise:"
 
 msgid ""
 "**Parallax Backgrounds**: Backgrounds that move slower than the rest of the "
@@ -86,7 +81,6 @@ msgstr ""
 "**Parallaxe Hintergründe**: Sich langsamer bewegende Hintergründe im "
 "Gegensatz zum Rest des Geschehens."
 
-#, fuzzy
 msgid ""
 "**UI**: Think of a user interface (UI) or head-up display (HUD) superimposed "
 "on our view of the game world. We want a life counter, score display and "
@@ -96,8 +90,8 @@ msgstr ""
 "**UI**: Stellen Sie sich eine Benutzeroberfläche (UI) oder ein Heads-up-"
 "Display (HUD) vor, die unsere Sicht auf die Spielwelt überlagert. Wir "
 "möchten, dass ein Lebenszähler, eine Punkteanzeige und andere Elemente ihre "
-"Bildschirmpositionen beibehalten, auch wenn sich unsere Sicht auf die "
-"Spielwelt ändert."
+"Positionen auf dem Bildschirm beibehalten, auch wenn sich unsere Sicht auf "
+"die Spielwelt ändert."
 
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "

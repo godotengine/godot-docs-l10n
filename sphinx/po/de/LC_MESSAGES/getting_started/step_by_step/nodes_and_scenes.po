@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -148,7 +148,6 @@ msgstr ""
 "müssen Sie zunächst ein neues Projekt erstellen. Nachdem Sie das Projekt "
 "geöffnet haben, sollten Sie einen leeren Editor sehen."
 
-#, fuzzy
 msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
@@ -177,6 +176,8 @@ msgstr ""
 msgid ""
 "Press the \"Add Child Node\" button or \"Other Node\" to create a root node."
 msgstr ""
+"Drücke \"Child Node hinzufügen\" oder \"Other Node\" um ein Wurzelnode zu "
+"erstellen."
 
 msgid "The Create Node dialog opens, showing the long list of available nodes."
 msgstr ""
@@ -249,13 +250,13 @@ msgstr ""
 msgid "Running the scene"
 msgstr "Ausführen der Szene"
 
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the Play Scene button in the top-"
 "right of the screen or press :kbd:`F6` (:kbd:`Cmd + R` on macOS)."
 msgstr ""
 "Alles ist bereit, die Szene abzuspielen! Drücken Sie die Schaltfläche \"Play "
-"Scene\" oben rechts auf dem Bildschirm oder drücken Sie :kbd:`F6`."
+"Scene\" oben rechts auf dem Bildschirm oder drücken Sie :kbd:`F6` (:kbd:`Cmd "
+"+ R` auf macOS)."
 
 msgid "A popup invites you to save the scene, which is required to run it."
 msgstr ""
@@ -307,7 +308,6 @@ msgstr ""
 msgid "Setting the main scene"
 msgstr "Die Hauptszene festlegen"
 
-#, fuzzy
 msgid ""
 "To run our test scene, we used the Play Scene button. Another button next to "
 "it allows you to set and run the project's main scene. You can press :kbd:"
@@ -316,7 +316,7 @@ msgstr ""
 "Um unsere Testszene auszuführen, haben wir die Schaltfläche \"Play Scene\" "
 "verwendet. Eine weitere Schaltfläche daneben ermöglicht es Ihnen, die "
 "Hauptszene des Projekts einzustellen und auszuführen. Dazu können Sie :kbd:"
-"`F5` drücken."
+"`F5` (:kbd:`Cmd + B` in macOS) drücken."
 
 msgid "A popup window appears and invites you to select the main scene."
 msgstr ""

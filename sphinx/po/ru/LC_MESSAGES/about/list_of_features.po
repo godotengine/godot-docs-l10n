@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,6 @@ msgstr ""
 "На этой странице перечислены все функции, поддерживаемые Godot в настоящий "
 "момент."
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot "
 "(3.5). `More features <https://docs.godotengine.org/en/latest/about/"
@@ -104,7 +103,7 @@ msgid "Scene tree editor."
 msgstr "Редактор дерева сцены."
 
 msgid "Built-in script editor."
-msgstr "Встроенный редактор сценариев."
+msgstr "Встроенный редактор скриптов."
 
 msgid ""
 "Support for :ref:`external script editors <doc_external_editor>` such as "
@@ -153,7 +152,7 @@ msgstr ""
 "Переместите камеру в редакторе и посмотрите результат в запущенном проекте."
 
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "Встроенная документация класса."
 
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Используйте редактор на десятках языков, предоставленных сообществом."
@@ -168,20 +167,20 @@ msgstr ""
 "Плагины редактора можно загрузить из :ref:`библиотеки ресурсов "
 "<doc_what_is_assetlib>` для расширения функциональности редактора."
 
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
 ":ref:`Создавайте свои собственные плагины <doc_making_plugins>` с помощью "
-"GDScript для добавления нового"
+"GDScript для добавления новых возможностей или ускорения вашего процесса "
+"работы."
 
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
 msgstr ""
-":ref:`Загрузите проекты из библиотеки ассетов <doc_using_assetlib_editor>` в "
-"менеджере проектов и импортируйте их напрямую."
+":ref:`Загрузите проекты из библиотеки ресурсов <doc_using_assetlib_editor>` "
+"в диспетчер проектов и импортируйте их напрямую."
 
 msgid "2D graphics"
 msgstr "2D графика"
@@ -240,13 +239,12 @@ msgstr ""
 "Растровые шрифты можно экспортировать с помощью таких инструментов, как "
 "BMFont."
 
-#, fuzzy
 msgid ""
 "DynamicFont supports monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
 "DynamicFont поддерживает монохромные шрифты, а также цветные шрифты "
-"(например, для эмодзи). Поддерживаемые форматы: TTF, OTF и WOFF1."
+"(например, для эмодзи). Поддерживаемые форматы: TTF, OTF, WOFF1 и WOFF2."
 
 msgid ""
 "DynamicFont supports optional font outlines with adjustable width and color."
@@ -378,8 +376,8 @@ msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance"
 msgstr ""
-"Использует горизонтальную зеркальную окклюзию (модель нити накала) для "
-"улучшения внешнего вида материала"
+"Использует горизонтальное затенение фона с помощью отражения (модель нити "
+"накаливания) для улучшения внешнего вида материала"
 
 msgid "Normal mapping."
 msgstr "Карты нормалей."
@@ -594,9 +592,9 @@ msgstr ""
 msgid "*GLES3:* Near and far depth of field."
 msgstr "*GLES3:* Ближняя и дальняя глубина резкости."
 
-#, fuzzy
 msgid "*GLES3:* Screen-space ambient occlusion (SSAO)."
-msgstr "*GLES3:* Преграждение окружающего света в экранном пространстве."
+msgstr ""
+"*GLES3:* Преграждение окружающего света в экранном пространстве (SSAO)."
 
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
@@ -654,15 +652,14 @@ msgstr ""
 "первичной и вторичной видимостью, чтобы отключить обработку искусственного "
 "интеллекта / физики для узлов, которым это не нужно."
 
-#, fuzzy
 msgid ""
 "Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
 "and portals (and doesn't support gameplay notifications), but easier to set "
 "up."
 msgstr ""
-"Окклюдирующие сферы в реальном времени. Не так эффективны, как комнаты и "
-"порталы (и не поддерживают уведомления о игровом процессе), но их проще "
-"настроить."
+"Замкнутые формы в режиме реального времени (сферы и многоугольники). Не "
+"столь эффективны, как комнаты и порталы (и не поддерживает уведомления о "
+"геймплее), но проще в настройке."
 
 msgid ""
 "Most of the effects listed above can be adjusted for better performance or "
@@ -882,12 +879,20 @@ msgid ""
 "Future Godot 4.x releases may have VisualScript reimplemented as an "
 "extension."
 msgstr ""
+"`В Godot 4.0 из ядра будет убрана поддержка VisualScript.<https://"
+"godotengine.org/article/godot-4-will-discontinue-visual-scripting>`__Так, "
+"создание новых проектов с использованием визуального программирования не "
+"рекомендуется. В будущем VisualScript может быть интегрирован в Godot 4.x "
+"только как расширение."
 
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
 "out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
 "intend to migrate your project to Godot 4."
 msgstr ""
+"Пока что Godot 3.x поддерживает VisualScript, но рекомендуется :ref:"
+"`использовать GDScript <toc-learn-scripting-gdscript>`, особенно если "
+"планируется дальнейший переход проекта на Godot 4."
 
 msgid "Audio"
 msgstr "Аудио"
@@ -1064,13 +1069,14 @@ msgid "A* algorithm in 2D and 3D."
 msgstr "Алгоритм A* в 2D и 3D."
 
 msgid "Navigation meshes with dynamic obstacle avoidance."
-msgstr ""
+msgstr "Навигационные сетки с учетом препятствий."
 
-#, fuzzy
 msgid ""
 "Generate navigation meshes from the editor or at run-time (including from an "
 "exported project)."
-msgstr "Генерация навигационных сеток в редакторе."
+msgstr ""
+"Генерируйте навигационные сетки в редакторе или во время выполнения (включая "
+"из экспортированного проекта)."
 
 msgid "Networking"
 msgstr "Сеть"

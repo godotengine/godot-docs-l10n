@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,9 +33,8 @@ msgstr ""
 "能, 而无需编写着色器代码. 但是, 如果需要其他功能, 可以将其转换为着色器代码."
 
 msgid "This tutorial explains most parameters present in ``SpatialMaterial``."
-msgstr "本教程解释了 ``SpatialMaterial`` 中出现的大多数参数."
+msgstr "本教程会解释 ``SpatialMaterial`` 中出现的大多数参数。"
 
-#, fuzzy
 msgid ""
 "There are 4 ways to add a ``SpatialMaterial`` to an object. It can be added "
 "in the *Material* property of the mesh. It can be added in the *Material* "
@@ -43,9 +42,10 @@ msgid ""
 "*Material Override* property of the node using the mesh, and the *Material "
 "Overlay*."
 msgstr ""
-"将 ``SpatialMaterial`` 添加到对象有三种方法。可以在网格的 *Material*\\ （材"
-"质）属性中添加，可以用网格（比如 MeshInstance 节点）在节点的 *Material* 属性"
-"中添加，也可以用网格在节点的 *Material Override*\\ （材质覆盖）属性中添加。"
+"将 ``SpatialMaterial`` 添加到对象有 4 种方法。可以在网格的 *Material*\\ （材"
+"质）属性中添加。可以在使用该网格的节点（比如 MeshInstance 节点）的 "
+"*Material* 属性中添加，可以使用该网格的节点的 *Material Override*\\ （材质覆"
+"盖）属性中添加，也可以是 *Material Overlay*\\ （材质覆盖层）属性。"
 
 msgid ""
 "If you add a material to the mesh itself, every time that mesh is used it "
@@ -66,6 +66,8 @@ msgid ""
 "one being used by the mesh. As an example, this can be used to put a "
 "transparent shield effect on a mesh."
 msgstr ""
+"*Material Overlay*\\ （材质覆盖层）属性会在该网格所使用的当前材质\\ **上方"
+"**\\ 再渲染一个材质。例如，可以用来在网格上放置半透明护盾效果。"
 
 msgid "Flags"
 msgstr "标志"
@@ -651,10 +653,10 @@ msgstr ""
 "间的值通常效果最佳."
 
 msgid "Clearcoat"
-msgstr "Clearcoat(清漆)"
+msgstr "Clearcoat（清漆）"
 
 msgid "*This feature is only available when using the GLES3 backend.*"
-msgstr "*此选项仅在使用GLES3后端时适用.*"
+msgstr "*此选项仅在使用 GLES3 后端时适用。*"
 
 msgid ""
 "The *Clearcoat* parameter is used to add a secondary pass of transparent "
@@ -670,12 +672,14 @@ msgid ""
 "This can be seen in the image below where clearcoat is turned on in the "
 "right."
 msgstr ""
+"在 Godot 3 版本中这个效果非常微小，可能需要特定的光照及特定的观察角度才能够发"
+"现区别。可以在下面的图片中看到右边开启了清漆效果。"
 
 msgid "The effect will be more noticeable in Godot 4."
-msgstr ""
+msgstr "在 Godot 4 中这个效果会更加显著。"
 
 msgid "Anisotropy"
-msgstr "Anisotropy(各向异性)"
+msgstr "Anisotropy（各向异性）"
 
 msgid ""
 "This changes the shape of the specular blob and aligns it to tangent space. "
@@ -687,7 +691,7 @@ msgstr ""
 "或使诸如拉丝铝之类的材质更加逼真。与流向贴图结合使用时效果特别好。"
 
 msgid "Ambient Occlusion"
-msgstr "Ambient Occlusion(环境光遮蔽)"
+msgstr "Ambient Occlusion（环境光遮蔽）"
 
 msgid ""
 "It is possible to specify a baked ambient occlusion map. This map affects "
@@ -717,7 +721,7 @@ msgstr ""
 "会为纹理产生逼真的深度效果. 为获得最佳效果,*Depth* 应与法线贴图一起使用."
 
 msgid "Subsurface Scattering"
-msgstr "Subsurface Scattering(表面下散射)"
+msgstr "Subsurface Scattering（次表面散射）"
 
 msgid ""
 "This effect emulates light that penetrates an object's surface, is "

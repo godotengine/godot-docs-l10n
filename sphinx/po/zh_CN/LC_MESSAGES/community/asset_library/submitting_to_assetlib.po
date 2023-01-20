@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -156,7 +156,6 @@ msgid ""
 msgstr ""
 "如果您的素材是用于处理其他文件的库，请考虑在素材中包含\\ **示例文件**\\ 。"
 
-#, fuzzy
 msgid ""
 "Consider adding a **.gitattributes** file to your repo. This file allows "
 "giving extra instructions to Git, such as specifying line endings and "
@@ -165,17 +164,16 @@ msgid ""
 "file, preventing them from being downloaded by the asset library users. "
 "These are common examples of **.gitattributes**:"
 msgstr ""
-"考虑将 **.gitattributes** 文件添加到你的仓库中。该文件允许向 Git 提供额外的指"
-"令，例如指定行结尾和列出资产不需要使用 ``export-ignore`` 指令运行的文件。该指"
-"令从生成的 ZIP 文件中删除此类文件，并防止素材库用户下载它们。对于典型的插件 "
-"**.gitattributes** 可能如下所示："
+"请考虑将 **.gitattributes** 文件添加到你的仓库中。该文件能够向 Git 提供额外的"
+"指令，例如指定行结尾和列出素材不需要使用 ``export-ignore`` 指令运行的文件。该"
+"指令会从生成的 ZIP 文件中删除此类文件，防止素材库用户下载到它们。以下是一些常"
+"见的 **.gitattributes** 示例："
 
-#, fuzzy
 msgid "Projects / Templates"
-msgstr "项目定义的模板"
+msgstr "项目 / 模板"
 
 msgid "Addons / Asset Packs"
-msgstr ""
+msgstr "附加组件 / 素材包"
 
 msgid ""
 "If you are submitting a plugin, add a **copy** of your license and readme to "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,33 +17,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Pausing games and process mode"
-msgstr "将更改推送到远程"
+msgstr "暂停游戏与处理模式"
 
 msgid "Introduction"
 msgstr "前言"
 
-#, fuzzy
 msgid ""
 "In most games it is desirable to, at some point, interrupt the game to do "
 "something else, such as taking a break or changing options. Implementing a "
 "fine-grained control for what can be paused (and what cannot) is a lot of "
 "work, so a simple framework for pausing is provided in Godot."
 msgstr ""
-"对可暂停(以及不可暂停)的内容实现细节控制需要大量工作, 因此Godot提供了一个简单"
-"的暂停框架."
+"在大多数游戏中，或多或少都会希望能够中断游戏去干些别的，例如休息一下或者修改"
+"选项。要非常细致地控制哪些可以暂停（哪些不可以）实现起来非常麻烦，所以 Godot "
+"提供了一个简单的暂停框架。"
 
 msgid "How pausing works"
 msgstr "如何暂停工作"
 
-#, fuzzy
 msgid ""
 "To pause the game the pause state must be set. This is done by assigning "
 "``true`` to the :ref:`SceneTree.paused <class_SceneTree_property_paused>` "
 "property:"
 msgstr ""
-"要设置暂停模式，必须设置暂停状态。将 :ref:`SceneTree.paused "
+"要将游戏暂停，就必须设置暂停状态。将 :ref:`SceneTree.paused "
 "<class_SceneTree_property_paused>` 属性赋值为 ``true`` 即可："
 
 msgid ""
@@ -51,28 +49,30 @@ msgid ""
 "for all nodes. Second, the behavior of certain nodes will stop or start "
 "depending on their process mode."
 msgstr ""
+"这样做会导致两件事。首先，所有节点的 2D 和 3D 物理都会停止。其次，根据处理模"
+"式的不同，某些节点的行为会停止或者开始。"
 
 msgid ""
 "The physics servers can be made active while the game is paused by using "
 "their ``set_active`` methods."
-msgstr ""
+msgstr "游戏暂停时，可以通过 ``set_active`` 方法激活物理服务器。"
 
-#, fuzzy
 msgid "Process Modes"
-msgstr "处理顺序"
+msgstr "处理模式"
 
 msgid ""
 "Each node in Godot has a \"Pause Mode\" that defines when it processes. It "
 "can be found and changed under a node's :ref:`Node <class_Node>` properties "
 "in the inspector."
 msgstr ""
+"Godot 中的节点都有“Pause Mode”（暂停模式）定义它们应该在何时进行处理。可以在"
+"检查器中 :ref:`Node <class_Node>` 的属性里找到并修改。"
 
-#, fuzzy
 msgid "You can also alter the property with code:"
-msgstr "你可以在代码中实现同样的结果:"
+msgstr "你也可以通过代码来修改该属性："
 
 msgid "This is what each mode tells a node to do:"
-msgstr ""
+msgstr "各个模式对节点的要求是这样的："
 
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
@@ -95,7 +95,6 @@ msgstr ""
 "**Process（处理）** ：无条件处理节点（以及 Inherit 模式的子节点）。无论暂停与"
 "否，该节点都会进行处理。"
 
-#, fuzzy
 msgid ""
 "By default, all nodes have this property in the \"Inherit\" state. If the "
 "parent is set to \"Inherit\", then the grandparent will be checked and so "
@@ -104,10 +103,10 @@ msgid ""
 "every node will be paused. Several things happen when a node stops "
 "processing."
 msgstr ""
-"默认情况下，所有节点的这个属性都是“Inherit（继承）”状态，也就是说，它们会根据"
-"父节点上这个属性的取值来决定处理与否。如果父节点也是“Inherit”，那么就会去检查"
-"祖父节点，以此类推。最终，如果祖宗们都没有更改过状态，那么就会使用 SceneTree "
-"的暂停状态。也就是说，在游戏暂停时默认所有节点也都会被暂停下来。"
+"默认情况下，所有节点的这个属性都是“Inherit”状态。如果父节点也是“Inherit”，那"
+"么就会去检查祖父节点，以此类推。如果祖宗们都没有更改过状态，那么就会使用 "
+"SceneTree 的暂停状态。也就是说，在游戏暂停时默认所有节点都会被暂停下来。节点"
+"停止处理时会发生不少事情。"
 
 msgid ""
 "The ``_process``, ``_physics_process``, ``_input``, and ``_input_event`` "
@@ -115,12 +114,17 @@ msgid ""
 "connected function to run, even if that function's script is attached to a "
 "node that has its pause mode set to \"Stop\"."
 msgstr ""
+"``_process``\\ 、\\ ``_physics_process``\\ 、\\ ``_input``\\ 、\\ "
+"``_input_event`` 函数都不会再被调用。不过信号仍然是正常工作的，因此它们连接的"
+"函数也会执行，即便该函数的脚本是附加在暂停模式为“Stop”的节点上的。"
 
 msgid ""
 "Animation nodes will pause their current animation, audio nodes will pause "
 "their current audio stream, and particles will pause. These resume "
 "automatically when the game is no longer paused."
 msgstr ""
+"动画节点会暂停它们的当前动画，音频节点会暂停它们的当前音频流，粒子也会暂停。"
+"游戏不再暂停时，它们都会自动继续运行。"
 
 msgid ""
 "It is important to note that even if a node is processing while the game is "
@@ -128,12 +132,13 @@ msgid ""
 "is because the physics servers are turned off. The physics servers can be "
 "made active while the game is paused by using their ``set_active`` methods."
 msgstr ""
+"请注意有一点非常重要，即便游戏暂停时节点仍在进行处理，但物理默认是\\ **无法"
+"**\\ 正常工作的。如前文所述，这是因为物理服务器会被关闭。游戏暂停时，可以通"
+"过 ``set_active`` 方法激活物理服务器。"
 
-#, fuzzy
 msgid "Pause Menu Example"
-msgstr "暂停场景"
+msgstr "暂停菜单示例"
 
-#, fuzzy
 msgid ""
 "Here is an example of a pause menu. Create a popup or panel with controls "
 "inside, and set its pause mode to \"Process\" then hide it. By setting the "
@@ -141,17 +146,17 @@ msgid ""
 "inherit that state. This way, this branch of the scene tree will continue "
 "working when paused."
 msgstr ""
-"只需设置暂停弹出窗口的根节点项为 \"Process\" , 所有子孙都将继承该状态. 这样, "
-"场景树的这个分支将在暂停时继续工作."
+"这是一个暂停菜单的例子。创建一个弹框或者面板，里面放上控件，然后将其暂停模式"
+"设为“Process”并隐藏。将暂停弹框根节点设为“Process”后，它的所有子孙节点都会继"
+"承该状态。这样，场景树的这个分支就会在暂停时继续工作。"
 
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
-msgstr "最后, 当按下暂停按钮(任何按钮都可以)时, 启用暂停并显示暂停屏幕."
+msgstr "最后，当按下暂停按钮（任何按钮都可以）时，启用暂停并显示暂停界面。"
 
-#, fuzzy
 msgid "To unpause, do the opposite when the pause screen is closed:"
-msgstr "要删除暂停, 请在暂停屏幕关闭时执行相反操作:"
+msgstr "要解除暂停，请在暂停界面关闭时执行相反操作："
 
 msgid "Translation status"
 msgstr "翻译状态"

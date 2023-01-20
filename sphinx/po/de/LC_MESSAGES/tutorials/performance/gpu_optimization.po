@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -281,9 +281,9 @@ msgid ""
 "grid. Mobile GPUs are limited to a tiny battery, so they need to be a lot "
 "more power efficient."
 msgstr ""
-"Auf Mobilgeräten sieht es anders anders. PC- und Konsolen-GPUs sind Brute-"
-"Force-Monster, die so viel Strom wie nötig ziehen können. Mobile GPUs sind "
-"auf einen winzigen Akku beschränkt, daher müssen sie viel energieeffizienter "
+"Auf Mobilgeräten sieht es anders aus. PC- und Konsolen-GPUs sind Brute-Force-"
+"Monster, die so viel Strom wie nötig ziehen können. Mobile GPUs sind auf "
+"einen winzigen Akku beschränkt, daher müssen sie viel energieeffizienter "
 "sein."
 
 #, fuzzy
@@ -606,7 +606,6 @@ msgstr ""
 msgid "Mobile/tiled renderers"
 msgstr "Mobile/Kachel-Renderer"
 
-#, fuzzy
 msgid ""
 "As described above, GPUs on mobile devices work in dramatically different "
 "ways from GPUs on desktop. Most mobile devices use tile renderers. Tile "
@@ -615,10 +614,10 @@ msgid ""
 "main memory."
 msgstr ""
 "GPUs auf Mobilgeräten funktionieren auf dramatisch andere Weise als GPUs auf "
-"dem Desktop. Die meisten Mobilgeräte verwenden Kachel-Renderer. Kachel-"
-"Renderer teilen den Bildschirm in Kacheln normaler Größe auf, die in den "
-"superschnellen Cache-Speicher passen, und reduzieren die Lese- und "
-"Schreibvorgänge zum Hauptspeicher."
+"dem Desktop. Die meisten Mobilgeräte verwenden Kachel-Renderer. Diese teilen "
+"den Bildschirm in Kacheln normaler Größe auf, die in den superschnellen "
+"Cache-Speicher passen, und reduzieren die Lese- und Schreibvorgänge zum "
+"Hauptspeicher."
 
 msgid ""
 "There are some downsides though. Tiled rendering can make certain techniques "
@@ -630,9 +629,9 @@ msgstr ""
 "Es gibt jedoch einige Nachteile, die die Durchführung bestimmter Techniken "
 "erheblich komplizierter und teurer machen können. Kacheln, die auf den "
 "Ergebnissen des Renderns verschiedener Kacheln oder auf den Ergebnissen "
-"früherer Vorgänge beruhen, können sehr langsam sein. Seien Sie sehr "
-"vorsichtig beim testen der Leistung der Shader, Ansichtsfenstern und bei der "
-"Nachbearbeitung."
+"früherer Vorgänge beruhen, können sehr langsam sein. Beim Testen der "
+"Leistung der Shader, Ansichtsfenstern und bei der Nachbearbeitung sollten "
+"sie sehr vorsichtig sein."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

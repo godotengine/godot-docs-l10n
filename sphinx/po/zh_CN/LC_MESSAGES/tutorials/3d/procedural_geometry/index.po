@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,6 @@ msgstr ""
 "可以在多个 MeshInstance 中重复使用同一个网格，用不同的材质或变换（缩放、旋"
 "转、位置等）在场景的不同部分绘制它。"
 
-#, fuzzy
 msgid ""
 "If you are going to draw the same object many times, it can be helpful to "
 "use a MultiMesh with a MultiMeshInstance. MultiMeshInstances draw meshes "
@@ -81,10 +80,9 @@ msgid ""
 "all the instances of each surface use the same material."
 msgstr ""
 "如果你要多次绘制同一个对象，那么使用 MultiMesh 与 MultiMeshInstance 就会很有"
-"帮助。MultiMeshInstance 可以非常便宜地绘制数千次网格。它利用了硬件实例化的优"
-"势来实现这一目的。使用 MultiMeshInstance 的缺点是所有实例只能使用同一种材质。"
-"它使用一个实例数组为每个实例存储不同的颜色和变换，但所有的实例都使用相同的材"
-"质。"
+"帮助。MultiMeshInstance 可以非常便宜地绘制数千次网格，利用的是硬件实例化的优"
+"势。使用 MultiMeshInstance 的缺点是所有实例都只能使用同一种材质。它使用一个实"
+"例数组为每个实例存储不同的颜色和变换，但所有实例的表面使用的都是相同的材质。"
 
 msgid "What a Mesh is"
 msgstr "什么是网格"
@@ -105,20 +103,19 @@ msgstr ""
 msgid "Surfaces"
 msgstr "表面"
 
-#, fuzzy
 msgid ""
 "Each surface has its own material. Alternatively, you can override the "
 "material for all surfaces in the Mesh when you use a MeshInstance using the :"
 "ref:`material_override <class_GeometryInstance_property_material_override>` "
 "property."
 msgstr ""
-"每个表面都有自己的材质。使用 MeshInstance 时，你也可以使用 ``MeshInstance."
-"override_material`` 覆盖网格中所有表面的材质。"
+"每个表面都有自己的材质。使用 MeshInstance 时，你也可以使用 :ref:"
+"`material_override <class_GeometryInstance_property_material_override>` 属性"
+"来覆盖 Mesh 中所有表面的材质。"
 
 msgid "Surface array"
 msgstr "表面数组"
 
-#, fuzzy
 msgid ""
 "The surface array is an array of length ``ArrayMesh.ARRAY_MAX``. Each "
 "position in the array is filled with a sub-array containing per-vertex "
@@ -128,7 +125,8 @@ msgid ""
 msgstr ""
 "表面数组是一个长度为 ``ArrayMesh.ARRAY_MAX`` 的数组。数组中的每个位置都有一个"
 "子数组，包含每个顶点的信息。例如，位于 ``ArrayMesh.ARRAY_NORMAL`` 处的数组是"
-"顶点法线的 :ref:`PoolVector3Array <class_PoolVector3Array>`\\ 。"
+"顶点法线的 :ref:`PoolVector3Array <class_PoolVector3Array>`\\ 。更多信息请参"
+"阅 :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`。"
 
 msgid ""
 "The surface array can be indexed or non-indexed. Creating a non-indexed "
@@ -162,14 +160,13 @@ msgstr ""
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#, fuzzy
 msgid ""
 "The ArrayMesh resource extends Mesh to add a few different quality of life "
 "functions and, most importantly, the ability to construct a Mesh surface "
 "through scripting."
 msgstr ""
-"ArrayMesh资源扩展了Mesh, 增加了一些不同的便捷功能, 最重要的是, 可以通过脚本构"
-"建Mesh曲面."
+"ArrayMesh 资源扩展了 Mesh，增加了一些不同的便捷函数，最重要的是，可以通过脚本"
+"构建 Mesh 表面。"
 
 msgid ""
 "For more information about the ArrayMesh, please see the :ref:`ArrayMesh "
@@ -212,7 +209,6 @@ msgstr ""
 msgid "ImmediateGeometry"
 msgstr "ImmediateGeometry"
 
-#, fuzzy
 msgid ""
 "ImmediateGeometry is a node that uses an immediate mode style interface "
 "(like SurfaceTool) to draw objects. The difference between ImmediateGeometry "
@@ -221,21 +217,20 @@ msgid ""
 "SurfaceTool generates a Mesh that needs to be added to a MeshInstance to be "
 "seen."
 msgstr ""
-"ImmediateGeometry（即时几何体）是一个使用即时模式风格接口（像SurfaceTool一"
-"样）绘制对象的节点。ImmediateGeometry 和 SurfaceTool 的区别在于，"
+"ImmediateGeometry（即时几何体）是使用立即模式风格的接口绘制对象的节点（像 "
+"SurfaceTool 一样）。ImmediateGeometry 和 SurfaceTool 的区别在于，"
 "ImmediateGeometry 本身是一个节点，可以添加到场景树中，直接从代码中绘制。"
-"SurfaceTool 生成一个 Mesh，需要添加一个 MeshInstance 才能看到。"
+"SurfaceTool 则是生成一个 Mesh，需要添加到 MeshInstance 上才能看到。"
 
-#, fuzzy
 msgid ""
 "ImmediateGeometry is useful for prototyping because of its straightforward "
 "API, but it is slow because the geometry is rebuilt every frame. It is most "
 "useful for adding simple geometry for visual debugging (e.g. by drawing "
 "lines to visualize physics raycasts etc.)."
 msgstr ""
-"ImmediateGeometry 因为其直接的 API 而对原型设计很有用，但它的速度很慢，因为每"
-"一帧都要重建几何体。它最有用的是快速添加简单的几何体来进行可视化调试（例如，"
-"通过画线来可视化物理光线投射等）。"
+"ImmediateGeometry 因为其直接的 API 而对原型设计很有用，但它的速度很慢，每一帧"
+"都要重建几何体。它最有用的是快速添加简单的几何体来进行可视化调试（例如，通过"
+"画线来可视化物理光线投射等）。"
 
 msgid ""
 "For more information about ImmediateGeometry, please see the :ref:"
@@ -247,11 +242,10 @@ msgstr ""
 msgid "Which one should I use?"
 msgstr "我应该使用哪一个？"
 
-#, fuzzy
 msgid ""
 "Which approach you use depends on what you are trying to do and what kind of "
 "procedure you are comfortable with."
-msgstr "用哪种方法取决于你想做什么, 以及你能接受什么样的程序."
+msgstr "用哪种方法取决于你想做什么，以及你觉得什么样的做法用起来更舒服。"
 
 msgid ""
 "Both SurfaceTool and ArrayMesh are excellent for generating static geometry "
@@ -278,7 +272,6 @@ msgstr ""
 "慢很多。然而，如果你本来就需要每一帧都改变几何体，它提供的接口更简单，甚至可"
 "能比每一帧生成一个 ArrayMesh 更快。"
 
-#, fuzzy
 msgid ""
 "The MeshDataTool is not fast, but it gives you access to all kinds of "
 "properties of the mesh that you don't get with the others (edges, faces, "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Introduction to GUI skinning"
-msgstr "GUI 皮肤的介绍"
+msgstr "GUI 皮肤简介"
 
 msgid ""
 "It is essential for a game to provide clear, informative, and yet visually "
@@ -233,6 +233,11 @@ msgid ""
 "other type. This allows to store various presets of theme items for the same "
 "class of the control node in the single ``Theme`` resource."
 msgstr ""
+"为了提供更多的自定义可能性，类型还能够链接在一起成为变种。这是自定义主题类型"
+"的另一种使用场景。例如，主题可以包含 ``Header`` 类型，标记为基础 ``Label`` 类"
+"型的变种。那么各个 ``Label`` 控件就可以将其类型设为使用 ``Header`` 变种，主题"
+"请求主题项目的时候，这个变种都会先于其他类型使用。这样就可以在同一个 "
+"``Theme`` 资源里为同样使用某个类的控件节点保存不同主题项目的预设值。"
 
 msgid ""
 "Only variations available from the default theme or defined in the custom "
@@ -240,11 +245,15 @@ msgid ""
 "input manually the name of a variation that is defined outside of those two "
 "places, but it is recommended to keep all variations to the project theme."
 msgstr ""
+"只有默认主题或者自定义项目主题中的变种才会在“检查器”中列为可选项。在这两处之"
+"外定义的变种名称仍然可以手动输入，但是建议把所有变种都放到项目主题里面。"
 
 msgid ""
 "You can learn more about creating and using theme type variations in a :ref:"
 "`dedicated article <doc_gui_theme_type_variations>`."
 msgstr ""
+"你可以通过\\ :ref:`专门的文章 <doc_gui_theme_type_variations>`\\ 了解到更多关"
+"于主题类型变种的创建和使用的内容。"
 
 msgid "Customizing a control"
 msgstr "自定义控件"

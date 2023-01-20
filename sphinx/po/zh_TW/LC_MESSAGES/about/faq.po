@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,9 +110,8 @@ msgstr "X11 (Linux, \\*BSD)"
 msgid ":ref:`Web <doc_using_the_web_editor>`"
 msgstr ":ref:`doc_running_code_in_the_editor`"
 
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Android"
+msgstr "安卓（實驗功能）"
 
 msgid "**For exporting your games:**"
 msgstr "**匯出遊戲：**"
@@ -911,6 +910,9 @@ msgid ""
 "and `Pixelorama <https://github.com/Orama-Interactive/Pixelorama>`__ for "
 "examples of open source applications made with Godot."
 msgstr ""
+"請查看 `Material Maker<https://github.com/RodZill4/material-maker>`__ 和 "
+"`Pixelorama<https://github.com/Orama-Interactive/Pixelorama>` __ 瞭解用 "
+"Godot 製作的開源應用的例子。"
 
 msgid "Is it possible to use Godot as a library?"
 msgstr "可以把 Godot 當作函式庫來用嗎？"
@@ -935,7 +937,7 @@ msgstr ""
 "常與 Godot 相比來得小。這樣會讓尋找問題答案變得比較困難。"
 
 msgid "What user interface toolkit does Godot use?"
-msgstr ""
+msgstr "Godot 使用的用戶界面工具包是什麽？"
 
 msgid ""
 "Godot does not use a standard :abbr:`GUI (Graphical User Interface)` toolkit "
@@ -945,6 +947,10 @@ msgid ""
 "in C++). These Control nodes can also be used in projects from any scripting "
 "language supported by Godot."
 msgstr ""
+"Godot 沒有像 GTK 、 Qt 和 wxWidgets 那樣使用標準 :abbr:`GUI （圖形用戶界面）`"
+"工具包。相反， Godot 使用的是自行開發的用戶界面工具包，使用 OpenGL ES 或 "
+"Vulkan 進行算繪。該工具包用於算繪編輯器（ C++ 編寫），以控制元件節點的形式公"
+"開。這些控制節點也可用於 Godot 支持的任意腳本語言項目。"
 
 msgid ""
 "This custom toolkit makes it possible to benefit from hardware acceleration "
@@ -1007,7 +1013,7 @@ msgid ""
 msgstr "使用自定字串型別，而 STL 提供的字串太簡陋且缺乏完善的在地化支援。"
 
 msgid "Why does Godot not use exceptions?"
-msgstr "Godot 怎麼不用例外 (Excaption)？"
+msgstr "Godot 怎麼不用例外 (Exception)？"
 
 msgid ""
 "We believe games should not crash, no matter what. If an unexpected "

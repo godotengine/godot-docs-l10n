@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,6 @@ msgstr ""
 "这个页面描述的是如何将 Godot 项目导出到 macOS。如果你想要找的是从源码编译编辑"
 "器或导出模板二进制文件，请阅读 :ref:`doc_compiling_for_osx`\\ 。"
 
-#, fuzzy
 msgid ""
 "macOS apps are exported as an ``.app`` bundle, a folder with a specific "
 "structure which stores the executable, libraries and all the project files. "
@@ -36,23 +35,22 @@ msgid ""
 "(only supported when exporting from a computer running macOS)."
 msgstr ""
 "macOS App 会被导出为 ``.app`` 捆绑包，这是一个具有特殊结构的文件夹，里面存放"
-"着可执行文件、库，以及所有项目文件。这个捆绑包会被打包到 ZIP 归档文件或 DMG "
-"磁盘映像文件中（后者只支持用于导出到 macOS）。"
+"着可执行文件、库，以及所有项目文件。这个捆绑包可以原样导出，或者打包到 ZIP 归"
+"档文件或 DMG 磁盘映像文件中（只有在运行 macOS 的计算机上进行导出时才支持）。"
 
 msgid "Requirements"
 msgstr "需求"
 
-#, fuzzy
 msgid ""
 "To enable code signing with Apple Developer ID and notarization, you must "
 "export from a computer running macOS with Xcode command line tools installed."
 msgstr ""
-"要启用代码签名和公证，你必须在运行 macOS 并且装有 Xcode 命令行工具的电脑上执"
-"行导出。"
+"要启用 Apple 开发者 ID 代码签名和公证，你必须在运行 macOS 并且装有 Xcode 命令"
+"行工具的电脑上执行导出。"
 
 msgid ""
 "Ad-hoc code signing is supported on all platforms, without additional tools."
-msgstr ""
+msgstr "所有平台都支持 Ad-hoc 代码签名，无需额外的工具。"
 
 msgid ""
 "Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
@@ -63,7 +61,7 @@ msgstr ""
 msgid ""
 "A valid and unique ``Bundle identifier`` should be set in the "
 "``Application`` section of the export options."
-msgstr ""
+msgstr "应当在导出选项的 ``应用`` 部分中设置有效且唯一的 ``捆绑包标识符``\\ 。"
 
 msgid ""
 "Projects exported without code signing and notarization will be blocked by "
@@ -78,34 +76,29 @@ msgstr ""
 msgid "Code signing and notarization"
 msgstr "代码签名与公证"
 
-#, fuzzy
 msgid ""
 "By default, macOS will run only applications that are signed and notarized. "
 "If you use any other signing configuration, see :ref:`Running Godot apps on "
 "macOS <doc_running_on_macos>` for workarounds."
 msgstr ""
-"默认情况下，macOS 只会运行经过签名和公证的应用程序，如果你使用了其他签名配"
-"置，备用方案请参阅\\ :ref:`在 macOS 上运行 Godot 应用 "
+"默认情况下，macOS 只会运行经过签名和公证的应用程序。如果你使用了其他签名配"
+"置，替代方案请参阅\\ :ref:`在 macOS 上运行 Godot 应用 "
 "<doc_running_on_macos>`\\ 。"
 
-#, fuzzy
 msgid ""
 "To notarize an app, you **must** have a valid `Apple Developer ID "
 "Certificate <https://developer.apple.com/>`__."
 msgstr ""
-"要公证 App，你必须持有有效的 `Apple 开发者 ID 证书 <https://developer.apple."
-"com/>`__\\ 。"
+"要公证 App，你\\ **必须**\\ 持有有效的 `Apple 开发者 ID 证书 <https://"
+"developer.apple.com/>`__\\ 。"
 
 msgid "If you have an Apple Developer ID Certificate"
 msgstr "如果你有 Apple 开发者 ID 证书"
 
-#, fuzzy
 msgid ""
 "Export your project from a computer running macOS with Xcode command line "
 "tools installed."
-msgstr ""
-"要启用代码签名和公证，你必须在运行 macOS 并且装有 Xcode 命令行工具的电脑上执"
-"行导出。"
+msgstr "在运行 macOS 并且装有 Xcode 命令行工具的电脑上执行导出。"
 
 msgid ""
 "Enable ``Code Signing``, ``Notarization``, ``Hardened Runtime`` and "
@@ -153,7 +146,6 @@ msgstr ""
 msgid "If you do not have an Apple Developer ID Certificate"
 msgstr "如果你没有 Apple 开发者 ID 证书"
 
-#, fuzzy
 msgid ""
 "Keep ``Code Signing`` enabled and leave the ``Identity`` option empty (when "
 "exporting from a computer running macOS, on other platforms this option is "
@@ -161,8 +153,10 @@ msgid ""
 "running an exported app easier for the end users, see the :ref:`Running "
 "Godot apps on macOS <doc_running_on_macos>` page for more information."
 msgstr ""
-"保持 ``Code Signing`` 启用，将 ``Identity`` 选项留空，这样 Godot 就会使用 Ad-"
-"hoc 签名，让最终用户能够更方便地运行导出的 App。"
+"保持 ``Code Signing`` 启用并将 ``Identity`` 选项留空（在运行 macOS 的计算机上"
+"导出时可用，这个选项在其他平台上是不可见的）。这样 Godot 就会使用 Ad-hoc 签"
+"名，让最终用户能够更方便地运行导出的 App，详情请见\\ :ref:`在 macOS 上运行 "
+"Godot App <doc_running_on_macos>` 页面。"
 
 msgid "Signing Options"
 msgstr "签名选项"
@@ -182,27 +176,24 @@ msgstr "启用代码签名。"
 msgid "Identity"
 msgstr "Identity"
 
-#, fuzzy
 msgid ""
 "The \"Full Name\" or \"Common Name\" of the signing identity, store in the "
 "macOS keychain. [1]_ [2]_"
-msgstr "签名主体的“全名”或“通用名”，存储在 macOS 钥匙串中。\\ [1]_"
+msgstr "签名主体的“全名”或“通用名”，存储在 macOS 钥匙串中。\\ [1]_ [2]_"
 
 msgid "Timestamp"
 msgstr "Timestamp"
 
-#, fuzzy
 msgid ""
 "Requests a timestamp server to authenticate the time of signing. Required "
 "for notarization. [2]_"
-msgstr "向时间戳服务器请求认证签名的时间。是公证所必须的。"
+msgstr "向时间戳服务器请求认证签名的时间。是公证所必须的。\\ [2]_"
 
 msgid "Hardened Runtime"
 msgstr "Hardened Runtime"
 
-#, fuzzy
 msgid "Enables \"Hardened Runtime\". Required for notarization. [2]_"
-msgstr "启用“加固运行时”。是公证所必需的。"
+msgstr "启用“加固运行时”。是公证所必需的。\\ [2]_"
 
 msgid "Replace Existing Signature"
 msgstr "替换现有签名"
@@ -221,13 +212,14 @@ msgid ""
 "The ``Hardened Runtime`` and ``Timestamp`` options are incompatible with ad-"
 "hoc signing and will be ignored."
 msgstr ""
+"``Hardened Runtime`` 和 ``Timestamp`` 选项与 Ad-hoc 签名是互斥的，会被忽略。"
 
 msgid "Leave ``Identity`` option empty to use ad-hoc signature."
 msgstr "使用 Ad-hoc 签名时请将 ``Identity`` 选项留空。"
 
 msgid ""
 "This option is visible only when exporting from a computer running macOS."
-msgstr ""
+msgstr "这个选项仅在运行 macOS 的计算机上导出时可见。"
 
 msgid "Notarization Options"
 msgstr "公证选项"
@@ -255,9 +247,8 @@ msgstr ""
 msgid "Apple Team ID"
 msgstr "Apple Team ID"
 
-#, fuzzy
 msgid "Team ID, if your Apple ID belongs to multiple teams"
-msgstr "如果你的 Apple ID 属于多个团队，即团队 ID"
+msgstr "团队 ID，如果你的 Apple ID 属于多个团队"
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://developer.apple."
@@ -272,6 +263,7 @@ msgid ""
 "Notarization is supported when exporting from a computer running macOS, "
 "these options are hidden on other platforms."
 msgstr ""
+"在运行 macOS 的计算机上执行导出时才支持公证，这些选项在其他平台上不可见。"
 
 msgid "Entitlements"
 msgstr "授权"
@@ -291,9 +283,8 @@ msgstr ""
 msgid "Entitlement"
 msgstr "授权"
 
-#, fuzzy
 msgid "Allow JIT Code Execution [3]_"
-msgstr "Allow JIT Code Execution [2]_"
+msgstr "Allow JIT Code Execution [3]_"
 
 msgid ""
 "Allows creating writable and executable memory for JIT code. If you are "
@@ -303,9 +294,8 @@ msgstr ""
 "允许为 JIT 代码创建可写可执行的内存。如果你正在使用动态或能够自我修改原生代码"
 "的插件，请根据插件文档启用它们。"
 
-#, fuzzy
 msgid "Allow Unsigned Executable Memory [3]_"
-msgstr "Allow Unsigned Executable Memory [2]_"
+msgstr "Allow Unsigned Executable Memory [3]_"
 
 msgid ""
 "Allows creating writable and executable memory without JIT restrictions. If "
@@ -315,9 +305,8 @@ msgstr ""
 "允许创建没有 JIT 限制的可写可执行的内存。如果你正在使用动态或能够自我修改原生"
 "代码的插件，请根据插件文档启用它们。"
 
-#, fuzzy
 msgid "Allow DYLD Environment Variables [3]_"
-msgstr "Allow DYLD Environment Variables [2]_"
+msgstr "Allow DYLD Environment Variables [3]_"
 
 msgid ""
 "Allows app to uss dynamic linker environment variables to inject code.  f "
@@ -373,56 +362,51 @@ msgstr ""
 msgid "Address Book"
 msgstr "Address Book"
 
-#, fuzzy
 msgid ""
 "[4]_ Enable to allow access contacts in the user's address book, if it's "
 "enabled you should also provide usage message in the `privacy/"
 "address_book_usage_description` option."
 msgstr ""
-"[3]_ 请在需要访问用户的地址簿时启用。启用时，你应该还要在 `privacy/"
+"[4]_ 请在需要访问用户的地址簿时启用。启用时，你应该还要在 `privacy/"
 "address_book_usage_description` 中提供用途信息。"
 
 msgid "Calendars"
 msgstr "Calendars"
 
-#, fuzzy
 msgid ""
 "[4]_ Enable to allow access to the user's calendar, if it's enabled you "
 "should also provide usage message in the `privacy/"
 "calendar_usage_description` option."
 msgstr ""
-"[3]_ 请在需要访问用户的日历时启用。启用时，你应该还要在 `privacy/"
+"[4]_ 请在需要访问用户的日历时启用。启用时，你应该还要在 `privacy/"
 "calendar_usage_description` 中提供用途信息。"
 
 msgid "Photo Library"
 msgstr "Photo Library"
 
-#, fuzzy
 msgid ""
 "[4]_ Enable to allow access to the user's Photos library, if it's enabled "
 "you should also provide usage message in the `privacy/"
 "photos_library_usage_description` option."
 msgstr ""
-"[3]_ 请在需要访问用户的照片图库时启用。启用时，你应该还要在 `privacy/"
+"[4]_ 请在需要访问用户的照片图库时启用。启用时，你应该还要在 `privacy/"
 "photos_library_usage_description` 中提供用途信息。"
 
 msgid "Apple Events"
 msgstr "Apple Events"
 
-#, fuzzy
 msgid "[4]_ Enable to allow app to send Apple events to other apps."
-msgstr "[3]_ 请在需要允许 App 向其他 App 发送 App 事件时启用。"
+msgstr "[4]_ 请在需要允许 App 向其他 App 发送 App 事件时启用。"
 
 msgid "Debugging"
 msgstr "调试"
 
-#, fuzzy
 msgid ""
 "[5]_ You can temporarily enable this entitlement to use native debugger "
 "(GDB, LLDB) with the exported app. This entitlement should be disabled for "
 "production export."
 msgstr ""
-"[4]_ 你可以临时启用这个授权来对导出的 App 使用原生调试器（GDB、LLDB）。生产导"
+"[5]_ 你可以临时启用这个授权来对导出的 App 使用原生调试器（GDB、LLDB）。生产导"
 "出中应该禁用这个授权。"
 
 msgid ""
@@ -497,37 +481,32 @@ msgid ""
 "required to use wireless controllers."
 msgstr "允许 App 与蓝牙设备交互。使用无线控制器需要这项授权。"
 
-#, fuzzy
 msgid "Files Downloads [6]_"
-msgstr "Files Downloads [5]_"
+msgstr "Files Downloads [6]_"
 
 msgid "Allows read or write access to the user's \"Downloads\" folder."
 msgstr "允许对用户的“ Downloads”文件夹进行读写。"
 
-#, fuzzy
 msgid "Files Pictures [6]_"
-msgstr "Files Pictures [5]_"
+msgstr "Files Pictures [6]_"
 
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr "允许对用户的“ Pictures”文件夹进行读写。"
 
-#, fuzzy
 msgid "Files Music [6]_"
-msgstr "Files Music [5]_"
+msgstr "Files Music [6]_"
 
 msgid "Allows read or write access to the user's \"Music\" folder."
 msgstr "允许对用户的“ Music”文件夹进行读写。"
 
-#, fuzzy
 msgid "Files Movies [6]_"
-msgstr "Files Movies [5]_"
+msgstr "Files Movies [6]_"
 
 msgid "Allows read or write access to the user's \"Movies\" folder."
 msgstr "允许对用户的“ Movies”文件夹进行读写。"
 
-#, fuzzy
 msgid "Files User Selected [6]_"
-msgstr "Files User Selected [5]_"
+msgstr "Files User Selected [6]_"
 
 msgid ""
 "Allows read or write access to arbitrary folder. To gain access, a folder "

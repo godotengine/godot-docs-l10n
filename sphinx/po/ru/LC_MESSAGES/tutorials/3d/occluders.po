@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,7 +104,7 @@ msgstr ""
 "заработает"
 
 msgid "OccluderShapeSphere"
-msgstr ""
+msgstr "OccluderShapeSphere"
 
 msgid ""
 "The sphere is one of the simplest and fastest occluders, and is easy to "
@@ -171,7 +171,7 @@ msgid ""
 "explanation."
 msgstr ""
 "Хотя вы можете изменить положение сферы с помощью преобразования Occluder "
-"Node  в инспекторе, это перемещает * весь массив* сфер. Если вы хотите "
+"Node в инспекторе, это перемещает * весь массив* сфер. Если вы хотите "
 "использовать несколько сфер в одном occluder, эту работу выполняют ручки. "
 "Чтобы разрешить позиционирование в 3D, gizmo будет перемещать 3D-положение "
 "только по двум основным осям в зависимости от точки обзора в редакторе. Вам "
@@ -267,12 +267,19 @@ msgid ""
 "If you drag a point into a position that would form a concave polygon, it "
 "will be ignored."
 msgstr ""
+"Редактор автоматически очистит ваши точки, чтобы сформировать выпуклый "
+"многоугольник. Если вы перетащите точку в положение, которое образовало бы "
+"вогнутый многоугольник, она будет проигнорирована."
 
 msgid ""
 "In general, the less edges (and thus points), the faster the polygon will "
 "work at runtime. A polygon with 6 edges will have to make twice the "
 "calculations of a polygon with 3 edges. In most cases 4 is a good number."
 msgstr ""
+"В общем, чем меньше ребер (и, следовательно, точек), тем быстрее "
+"многоугольник будет работать во время выполнения. Многоугольник с 6 ребрами "
+"должен будет выполнить вдвое больше вычислений, чем многоугольник с 3 "
+"ребрами. В большинстве случаев 4 ребер достаточно."
 
 msgid "Holes"
 msgstr ""

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -168,6 +168,10 @@ msgid ""
 "inside the ``_physics_process()`` function but outside the condition we just "
 "wrote."
 msgstr ""
+"Entonces, actualizamos la velocidad. Tenemos que calcular velocidad en suelo "
+"y la velocidad de caída por separado. Asegurese de regresar una sangría de "
+"modo que las lineas queden dentro de la función ``_physics_process()``pero "
+"fuera de la condición que acabamos de escribir."
 
 msgid ""
 "For the vertical velocity, we subtract the fall acceleration multiplied by "
@@ -180,6 +184,9 @@ msgid ""
 "seem strange if it's already on the floor. But we have to do this for the "
 "character to collide with the ground every frame."
 msgstr ""
+"Esta línea de código hará que nuestro personaje caiga en cada fotograma. "
+"Esto puede ser extraño si está en el suelo, pero tenemos que hacerlo para "
+"que el personaje colisione con el suelo cada fotograma."
 
 #, fuzzy
 msgid ""

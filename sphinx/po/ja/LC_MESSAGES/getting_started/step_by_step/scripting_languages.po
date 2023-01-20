@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,7 +51,6 @@ msgstr ""
 msgid "Available scripting languages"
 msgstr "利用可能なスクリプト言語"
 
-#, fuzzy
 msgid ""
 "Godot offers **five gameplay programming languages**: GDScript, C#, "
 "VisualScript, and, via its GDNative technology, C and C++. There are more :"
@@ -93,12 +92,20 @@ msgid ""
 "Future Godot 4.x releases may have VisualScript reimplemented as an "
 "extension."
 msgstr ""
+"`Godot4.0ではビジュアルスクリプトを完全に廃止することが決定されています。"
+"<https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>`"
+"そのような事から、これからビジュアルスクリプトを使用してプロジェクトを作成す"
+"るのはおすすめされていません。Godot4.0より先のバージョンでビジュアルスクリプ"
+"トを拡張機能としてリリースする可能性はあります。"
 
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
 "out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
 "intend to migrate your project to Godot 4."
 msgstr ""
+"Godot3はビジュアルスクリプトをサポートしているものの、特にGodot4に移行したい"
+"と考えている場合はこちらを :ref:`trying out GDScript <toc-learn-scripting-"
+"gdscript>`見ることをお勧めします。"
 
 msgid "Which language should I use?"
 msgstr "どの言語を使うべきか?"

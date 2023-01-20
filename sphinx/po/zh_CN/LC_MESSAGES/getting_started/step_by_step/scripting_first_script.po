@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "Creating your first script"
 msgstr "创建第一个脚本"
 
-#, fuzzy
 msgid ""
 "In this lesson, you will code your first script to make the Godot icon turn "
 "in circles using GDScript. As we mentioned :ref:`in the introduction <toc-"
@@ -28,7 +27,8 @@ msgid ""
 "equivalent C# code has been included in another tab for convenience."
 msgstr ""
 "在本课中，你将用 GDScript 编写第一个脚本，使 Godot 图标转圈。正如我们\\ :ref:"
-"`在介绍中<toc-learn-introduction>`\\ 提到的，我们假设你有编程基础。"
+"`在介绍中 <toc-learn-introduction>`\\ 提到的，我们假设你有编程基础。方便起"
+"见，我们在单独的选项卡中包含了等价的 C# 代码。"
 
 msgid ""
 "To learn more about GDScript, its keywords, and its syntax, head to the :ref:"
@@ -37,10 +37,9 @@ msgstr ""
 "要了解更多关于GDScript、其关键字和语法的信息，请前往 :ref:`GDScript 参考"
 "<doc_gdscript>`\\ 。"
 
-#, fuzzy
 msgid ""
 "To learn more about C#, head to the :ref:`C# basics <doc_c_sharp>` page."
-msgstr "要了解更多关于可视化着色器的信息, 请阅读 :ref:`doc_visual_shaders` ."
+msgstr "要了解更多关于 C# 的信息，请前往 :ref:`C# 基础 <doc_c_sharp>`\\ 页面。"
 
 msgid "Project setup"
 msgstr "项目设置"
@@ -81,11 +80,11 @@ msgstr ""
 msgid ""
 "You can create Sprite nodes automatically by dragging and dropping images on "
 "the viewport."
-msgstr "您可以通过将图像拖放到视区上来自动创建 Sprite 节点。"
+msgstr "您可以通过将图像拖放到视口上来自动创建 Sprite 节点。"
 
 msgid ""
 "Then, click and drag the icon in the viewport to center it in the game view."
-msgstr "然后，点击并拖动视区中的图标，使其在游戏视图中居中。"
+msgstr "然后，点击并拖动视口中的图标，使其在游戏视图中居中。"
 
 msgid "Creating a new script"
 msgstr "新建脚本"
@@ -142,7 +141,6 @@ msgid ""
 msgstr ""
 "继承的属性包括您可以在“检查器”面板中看到的属性，例如节点的 ``texture``\\ 。"
 
-#, fuzzy
 msgid ""
 "By default, the Inspector displays a node's properties in \"Title Case\", "
 "with capitalized words separated by a space. In GDScript code, these "
@@ -181,25 +179,24 @@ msgstr ""
 "构造函数的一个特殊名称。如果你定义了这个函数，引擎会在内存中创建每个对象或节"
 "点时调用 ``_init()`` 。"
 
-#, fuzzy
 msgid ""
 "GDScript is an indent-based language. The tab at the start of the line that "
 "says ``print()`` is necessary for the code to work. If you omit it or don't "
 "indent a line correctly, the editor will highlight it in red and display the "
 "following error message: \"Indented block expected\"."
 msgstr ""
-"GDScript 是一种基于缩进的语言。行首的制表符是 ``print()`` 代码工作的必要条"
+"GDScript 是基于缩进的语言。行首的制表符是 ``print()`` 代码正常工作的必要条"
 "件。如果你省略了它或者没有正确缩进一行，编辑器将以红色高亮显示，并显示以下错"
-"误信息：“Unexpected indentation.”（意外的缩进。）"
+"误信息：“Indented block expected”（应有缩进块）。"
 
-#, fuzzy
 msgid ""
 "Save the scene if you haven't already, then press :kbd:`F6` (:kbd:`Cmd + R` "
 "on macOS) to run it. Look at the **Output** bottom panel that expands. It "
 "should display \"Hello, world!\"."
 msgstr ""
-"如果你还没有保存场景，请保存，然后按 :kbd:`F6` 来运行它。看一下底部展开的“输"
-"出”面板。它应该显示“Hello, world!”"
+"如果你还没有保存场景，请保存，然后按 :kbd:`F6`\\ （macOS 上为 :kbd:`Cmd + "
+"R`\\ ）来运行。看一下底部展开的\\ **输出**\\ 面板。它应该显示“Hello, "
+"world!”。"
 
 msgid ""
 "Delete the ``_init()`` function, so you're only left with the line ``extends "
@@ -217,24 +214,22 @@ msgstr ""
 "是时候让我们的节点移动和旋转了。为此，我们将向脚本中添加两个成员变量：以像素"
 "每秒为单位的移动速度和以弧度每秒为单位的角速度。"
 
-#, fuzzy
 msgid ""
 "Member variables sit near the top of the script, after any \"extends\" "
 "lines, but before functions. Every node instance with this script attached "
 "to it will have its own copy of the ``speed`` and ``angular_speed`` "
 "properties."
 msgstr ""
-"成员变量位于脚本的顶部，在函数之前。附加了此脚本的每个节点实例都将具有自己的 "
-"``speed`` 和 ``angular_speed`` 属性副本。"
+"成员变量位于脚本的顶部，在“extends”之后、函数之前。附加了此脚本的每个节点实例"
+"都将具有自己的 ``speed`` 和 ``angular_speed`` 属性副本。"
 
-#, fuzzy
 msgid ""
 "Angles in Godot work in radians by default, but you have built-in functions "
 "and properties available if you prefer to calculate angles in degrees "
 "instead."
 msgstr ""
-"与其他一些引擎一样，Godot 中的角度默认以弧度为单位工作，但如果您更喜欢以度为"
-"单位计算角度，则可以使用内置函数和属性。"
+"与其他一些引擎一样，Godot 中的角度默认使用弧度为单位，但如果您更喜欢以度为单"
+"位计算角度，则可以使用内置函数和属性。"
 
 msgid ""
 "To move our icon, we need to update its position and rotation every frame in "

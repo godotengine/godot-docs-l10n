@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,11 +47,10 @@ msgstr ""
 "该引擎自带的工具可以在编辑器中编写动画。然后你可以在运行时使用代码来播放和控"
 "制它们。"
 
-#, fuzzy
 msgid ""
 "Open the player scene, select the player node, and add an *AnimationPlayer* "
 "node."
-msgstr "打开玩家场景，选中玩家节点，然后添加动画编辑器节点。"
+msgstr "打开玩家场景，选中玩家节点，然后添加一个 *AnimationPlayer* 节点。"
 
 msgid "The *Animation* dock appears in the bottom panel."
 msgstr "*动画*\\ 停靠面板就会出现在底部面板中。"
@@ -120,7 +119,7 @@ msgid ""
 "right. This prevents it from folding when you click on the viewport and "
 "deselect the nodes."
 msgstr ""
-"你还可以单击右上角的图钉图标，将动画编辑器进行固定。这样它就不会在你点击视窗"
+"你还可以单击右上角的图钉图标，将动画编辑器进行固定。这样它就不会在你点击视口"
 "取消选择节点时折叠。"
 
 msgid "|image6|"
@@ -442,7 +441,6 @@ msgstr ""
 "例如，\\ *Mob* 和 *Player* 场景都有 *Pivot* 和 *Character* 节点，所以我们可以"
 "在它们之间复用动画。"
 
-#, fuzzy
 msgid ""
 "Open the *Player* scene, select the animation player node and open the "
 "\"float\" animation. Next, click on **Animation > Copy**. Then open ``Mob."

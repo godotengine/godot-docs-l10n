@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,15 +31,14 @@ msgstr ""
 "在本课中，我们将介绍信号。它们是节点在发生特定事件时发出的消息，例如按下按"
 "钮。其他节点可以连接到该信号，并在事件发生时调用函数。"
 
-#, fuzzy
 msgid ""
 "Signals are a delegation mechanism built into Godot that allows one game "
 "object to react to a change in another without them referencing one another. "
 "Using signals limits `coupling <https://en.wikipedia.org/wiki/"
 "Coupling_(computer_programming)>`_ and keeps your code flexible."
 msgstr ""
-"它是 Godot 内置的委派机制，允许一个游戏对象对另一个游戏对象的变化做出反应，而"
-"无需相互引用。使用信号可以限制\\ `耦合 <https://zh.wikipedia.org/zh-cn/"
+"信号是 Godot 内置的委派机制，允许一个游戏对象对另一个游戏对象的变化做出反应，"
+"而无需相互引用。使用信号可以限制\\ `耦合 <https://zh.wikipedia.org/zh-cn/"
 "%E8%80%A6%E5%90%88%E6%80%A7_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8)>`_\\ ，"
 "并保持代码的灵活性。"
 
@@ -106,7 +105,7 @@ msgstr "寻找并添加 Button 节点类型。"
 msgid ""
 "The node is small by default. Click and drag on the bottom-right handle of "
 "the Button in the viewport to resize it."
-msgstr "该节点默认比较小。在视区中，点击并拖拽该按钮右下角的手柄来调整大小。"
+msgstr "该节点默认比较小。在视口中，点击并拖拽该按钮右下角的手柄来调整大小。"
 
 msgid ""
 "If you don't see the handles, ensure the select tool is active in the "
@@ -116,20 +115,22 @@ msgstr "如果看不到手柄，请确保工具栏中的选择工具处于活动
 msgid "Click and drag on the button itself to move it closer to the sprite."
 msgstr "点击并拖拽按钮使其更接近精灵。"
 
-#, fuzzy
 msgid ""
 "You can also write a label on the Button by editing its Text property in the "
 "Inspector. Enter \"Toggle motion\"."
-msgstr "你也可以通过在检查器中编辑 Text 属性在 Button 上写一个标签。"
+msgstr ""
+"你也可以通过在检查器中编辑 Text 属性在 Button 上写一个标签。请输入“Toggle "
+"motion”。"
 
 msgid "Your scene tree and viewport should look like this."
-msgstr "您的场景树和视区应该是类似这样的。"
+msgstr "您的场景树和视口应该是类似这样的。"
 
-#, fuzzy
 msgid ""
 "Save your newly created scene. You can then run it with :kbd:`F6`. At the "
 "moment, the button will be visible, but nothing will happen if you press it."
-msgstr "保存新建的场景，然后就可以使用 :kbd:`F6` 运行。"
+msgstr ""
+"保存新建的场景。然后你就可以使用 :kbd:`F6` 来运行。此时按钮是可见的，但是按下"
+"之后不会有任何反应。"
 
 msgid "Connecting a signal in the editor"
 msgstr "在编辑器中连接信号"
@@ -177,23 +178,21 @@ msgstr ""
 "通过编辑器的节点面板连接信号时，可以使用两种模式。简单的一个只允许您连接到附"
 "加了脚本的节点，并在它们上面创建一个新的回调函数。"
 
-#, fuzzy
 msgid ""
 "The advanced view lets you connect to any node and any built-in function, "
 "add arguments to the callback, and set options. You can toggle the mode in "
 "the window's bottom-right by clicking the Advanced button."
 msgstr ""
-"高级视图允许您连接到任何节点和任何内置函数，向回调添加参数以及设置选项。您可"
-"以通过单击单选按钮在窗口的右下角切换模式。"
+"您可以在高级视图中连接到任何节点和任何内置函数、向回调添加参数、设置选项。您"
+"可以单击窗口右下角的“高级”按钮来切换模式。"
 
-#, fuzzy
 msgid ""
 "Click the Connect button to complete the signal connection and jump to the "
 "Script workspace. You should see the new method with a connection icon in "
 "the left margin."
 msgstr ""
-"单击连接按钮以完成信号连接并跳转到脚本工作区。您应该会看到新方法，并在左边距"
-"中带有连接图标。"
+"单击“连接”按钮以完成信号连接并跳转到脚本工作区。您应该会看到新方法，并在左边"
+"距中带有连接图标。"
 
 msgid ""
 "If you click the icon, a window pops up and displays information about the "
@@ -355,7 +354,7 @@ msgstr ""
 msgid ""
 "If you run the scene now, you will see that the sprite blinks on and off, at "
 "one second intervals."
-msgstr ""
+msgstr "如果你现在运行场景，就会看到精灵在闪啊闪的，间隔为一秒。"
 
 msgid "Complete script"
 msgstr "完整脚本"

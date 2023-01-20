@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,6 +165,7 @@ msgid ""
 "``index`` (sets the order of appearance in the tree. If absent, inherited "
 "nodes will take precedence over plain ones)"
 msgstr ""
+"``index``\\ （设置在树中的出现顺序。不存在的话，继承节点优先于普通节点）"
 
 msgid "``groups``"
 msgstr "``groups``"
@@ -410,9 +411,8 @@ msgstr "``arrays`` 是一个二维数组，它包含："
 msgid "Vertex positions array"
 msgstr "顶点位置数组"
 
-#, fuzzy
 msgid "Normals array"
-msgstr "实数数组"
+msgstr "法线数组"
 
 msgid "Tangents array"
 msgstr "切线数组"

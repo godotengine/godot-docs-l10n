@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "File paths in Godot projects"
 msgstr "Godot 项目中的文件路径"
 
-#, fuzzy
 msgid ""
 "This page explains how file paths work inside Godot projects. You will learn "
 "how to access paths in your projects using the ``res://`` and ``user://`` "
@@ -28,43 +27,46 @@ msgid ""
 "users' systems."
 msgstr ""
 "本页面会讲解 Godot 项目中文件路径的工作原理。你会学到如何在项目中使用 "
-"``res://`` 和 ``user://`` 访问路径，以及 Godot 会在硬盘的哪些位置存储用户文"
-"件。"
+"``res://`` 和 ``user://`` 标记来访问路径，以及 Godot 会在你的以及用户系统上的"
+"哪些位置存储项目和编辑器文件。"
 
 msgid "Path separators"
 msgstr "路径分隔符"
 
-#, fuzzy
 msgid ""
 "To make supporting multiple platforms easier, Godot uses **UNIX-style path "
 "separators** (forward slash ``/``). These work on all platforms, **including "
 "Windows**."
 msgstr ""
-"为了简化多平台的支持，Godot 只接受 UNIX 风格的路径分隔符（\\ ``/``\\ ）。在所"
-"有平台上都可以使用，\\ **包括 Windows**\\ 。"
+"为了让支持跨平台更方便，Godot 使用 **UNIX 风格的路径分隔符**\\ （正斜杠 ``/"
+"``\\ ）。在所有平台上都可以使用，\\ **包括 Windows**\\ 。"
 
-#, fuzzy
 msgid ""
 "Instead of writing paths like ``C:\\Projects\\Game``, in Godot, you should "
 "write ``C:/Projects/Game``."
 msgstr ""
-"以前写成 ``C:\\Projects`` 的路径，在 Godot 中，就应该写 ``C:/Projects``\\ 。"
+"在 Godot 里写的不是类似 ``C:\\Projects\\Game`` 的路径，而应该写 ``C:/"
+"Projects/Game``\\ 。"
 
 msgid ""
 "Windows-style path separators (backward slash ``\\``) are also supported in "
 "some path-related methods, but they need to be doubled (``\\\\``), as ``\\`` "
 "is normally used as an escape for characters with a special meaning."
 msgstr ""
+"有些路径相关的方法也支持 Windows 风格的路径分隔符（反斜杠\\ ``\\``\\ ），不过"
+"需要写两个（\\ ``\\\\``\\ ），因为 ``\\`` 一般是用来进行字符转义的，有特殊含"
+"义。"
 
 msgid ""
 "This makes it possible to work with paths returned by other Windows "
 "applications. We still recommend using only forward slashes in your own code "
 "to guarantee that everything will work as intended."
 msgstr ""
+"这样就能够处理其他 Windows 程序所返回的路径了。我们仍然建议在您自己的代码里只"
+"使用正斜杠，这样才能确保一切都能正常工作。"
 
-#, fuzzy
 msgid "Accessing files in the project folder (``res://``)"
-msgstr "访问项目文件夹中的文件"
+msgstr "访问项目文件夹中的文件（\\ ``res://``\\ ）"
 
 msgid ""
 "Godot considers that a project exists in any folder that contains a "
@@ -84,9 +86,8 @@ msgstr ""
 "代表“资源”（resource）。例如，在代码中，你可以通过 ``res://character.png`` 来"
 "访问位于项目根文件夹的 ``character.png`` 图片。"
 
-#, fuzzy
 msgid "Accessing persistent user data (``user://``)"
-msgstr "访问持久化用户数据"
+msgstr "访问持久化用户数据（\\ ``user://``\\ ）"
 
 msgid ""
 "To store persistent data files, like the player's save or settings, you want "
@@ -98,20 +99,19 @@ msgstr ""
 "径前缀，而不是 ``res://``\\ 。这是因为游戏运行时，项目的文件系统很可能是只读"
 "的。"
 
-#, fuzzy
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
 "Unlike ``res://``, the directory pointed at by ``user://`` is created "
 "automatically and *guaranteed* to be writable to, even in an exported "
 "project."
 msgstr ""
-"``user://`` 前缀指向的是用户设备上的另一个目录。与 ``res://`` 不同，即便在导"
-"出后的项目中，\\ ``user://`` 指向的这个目录也\\ *保证*\\ 可写。"
+"``user://`` 前缀指向的是用户设备上的其他目录。与 ``res://`` 不同，即便在导出"
+"后的项目中，\\ ``user://`` 指向的这个目录也会自动创建并且\\ *保证*\\ 可写。"
 
 msgid ""
 "The location of the ``user://`` folder depends on what is configured in the "
 "Project Settings:"
-msgstr ""
+msgstr "``user://`` 文件夹的位置由“项目设置”中的配置决定："
 
 msgid ""
 "By default, the ``user://`` folder is created within Godot's :ref:`editor "
@@ -119,6 +119,10 @@ msgid ""
 "[project_name]`` folder. This is the default so that prototypes and test "
 "projects stay self-contained within Godot's data folder."
 msgstr ""
+"默认情况下，\\ ``user://`` 文件夹是在\\ :ref:`编辑器数据路径 "
+"<doc_data_paths_editor_data_paths>`\\ 中创建的 ``app_userdata/[项目名称]`` 文"
+"件夹。使用这一默认值的目的是让原型和测试项目能够在 Godot 的数据文件夹中达到自"
+"包含。"
 
 msgid ""
 "If :ref:`application/config/use_custom_user_dir "
@@ -127,6 +131,10 @@ msgid ""
 "to** Godot's editor data path, i.e. in the standard location for "
 "applications data."
 msgstr ""
+"如果“项目设置”中启用了 :ref:`application/config/use_custom_user_dir "
+"<class_ProjectSettings_property_application/config/use_custom_user_dir>`，\\ "
+"``user://`` 文件夹会与 Godot 编辑器的数据路径\\ *同级*\\ ，即程序数据的标准位"
+"置。"
 
 msgid ""
 "By default, the folder name will be inferred from the project name, but it "
@@ -135,6 +143,11 @@ msgid ""
 "This path can contain path separators, so you can use it e.g. to group "
 "projects of a given studio with a ``Studio Name/Game Name`` structure."
 msgstr ""
+"默认情况下，文件夹名称是从项目名称推导出来的，但可以使用 :ref:`application/"
+"config/custom_user_dir_name <class_ProjectSettings_property_application/"
+"config/custom_user_dir_name>` 进行进一步的自定义。这个路径可以包含路径分隔"
+"符，那么比如你就可以把给定工作室的项目都分组到 ``工作室名称/游戏名称`` 这样的"
+"目录结构之下。"
 
 msgid "On desktop platforms, the actual directory paths for ``user://`` are:"
 msgstr "在桌面平台上，\\ ``user://`` 的实际目录路径为："
@@ -145,9 +158,8 @@ msgstr "类型"
 msgid "Location"
 msgstr "位置"
 
-#, fuzzy
 msgid "Default"
-msgstr "默认批次"
+msgstr "默认"
 
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
 msgstr "Windows：\\ ``%APPDATA%\\Godot\\app_userdata\\[项目名称]``"
@@ -160,9 +172,8 @@ msgstr ""
 msgid "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
 msgstr "Linux：\\ ``~/.local/share/godot/app_userdata/[项目名称]``"
 
-#, fuzzy
 msgid "Custom dir"
-msgstr "自定义着色器"
+msgstr "自定义目录"
 
 msgid "Windows: ``%APPDATA%\\[project_name]``"
 msgstr "Windows：\\ ``%APPDATA%\\[项目名称]``"
@@ -173,21 +184,17 @@ msgstr "macOS：\\ ``~/Library/Application Support/Godot/[项目名称]``"
 msgid "Linux: ``~/.local/share/[project_name]``"
 msgstr "Linux：\\ ``~/.local/share/godot/[项目名称]``"
 
-#, fuzzy
 msgid "Custom dir and name"
-msgstr "2D 中的自定义绘图"
+msgstr "自定义目录及名称"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[custom_user_dir_name]``"
-msgstr "Windows：\\ ``%APPDATA%\\[项目名称]``"
+msgstr "Windows：\\ ``%APPDATA%\\[自定义目录名称]``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/[custom_user_dir_name]``"
-msgstr "macOS：\\ ``~/Library/Application Support/Godot/[项目名称]``"
+msgstr "macOS：\\ ``~/Library/Application Support/[自定义目录名称]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/[custom_user_dir_name]``"
-msgstr "Linux：\\ ``~/.local/share/godot/[项目名称]``"
+msgstr "Linux：\\ ``~/.local/share/[自定义目录名称]``"
 
 msgid ""
 "``[project_name]`` is based on the application name defined in the Project "
@@ -214,7 +221,7 @@ msgstr ""
 "行。）"
 
 msgid "Converting paths to absolute paths or \"local\" paths"
-msgstr ""
+msgstr "将路径转换为绝对路径或“本地”路径"
 
 msgid ""
 "You can use :ref:`ProjectSettings.globalize_path() "
@@ -225,6 +232,13 @@ msgid ""
 "paths in the OS file manager using :ref:`OS.shell_open() "
 "<class_OS_method_shell_open>` since it only accepts native OS paths."
 msgstr ""
+"你可以使用 :ref:`ProjectSettings.globalize_path() "
+"<class_ProjectSettings_method_globalize_path>` 将类似 ``res://path/to/file."
+"txt`` 的本地路径转换为操作系统的绝对路径。例如，可以使用 :ref:"
+"`ProjectSettings.globalize_path() "
+"<class_ProjectSettings_method_globalize_path>` 在操作系统的文件管理器中通过 :"
+"ref:`OS.shell_open() <class_OS_method_shell_open>` 打开“本地”路径，因为这个函"
+"数只接受原生操作系统路径。"
 
 msgid ""
 "To convert an absolute OS path to a \"local\" path starting with ``res://`` "
@@ -233,21 +247,23 @@ msgid ""
 "paths that point to files or folders in your project's root or ``user://`` "
 "folders."
 msgstr ""
+"要将操作系统绝对路径转换为以 ``res://`` 或 ``user://`` 开头的“本地”路径，请使"
+"用 :ref:`ProjectSettings.localize_path() "
+"<class_ProjectSettings_method_localize_path>`。只对指向项目根目录或者 "
+"``user://`` 文件夹中的文件或文件夹有效。"
 
 msgid "Editor data paths"
 msgstr "编辑器数据路径"
 
-#, fuzzy
 msgid ""
 "The editor uses different paths for editor data, editor settings, and cache, "
 "depending on the platform. By default, these paths are:"
 msgstr ""
-"编辑器根据平台使用不同的路径来存储用户数据、用户设置、缓存。默认情况下，这些"
-"路径是："
+"根据平台的不同，编辑器会使用不同的路径来存储编辑器数据、编辑器设置、缓存。默"
+"认情况下，这些路径是："
 
-#, fuzzy
 msgid "Editor data"
-msgstr "编辑器数据路径"
+msgstr "编辑器数据"
 
 msgid "Windows: ``%APPDATA%\\Godot\\``"
 msgstr "Windows：\\ ``%APPDATA%\\Godot\\``"
@@ -255,11 +271,9 @@ msgstr "Windows：\\ ``%APPDATA%\\Godot\\``"
 msgid "macOS: ``~/Library/Application Support/Godot/``"
 msgstr "macOS：\\ ``~/Library/Application Support/Godot/``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/godot/``"
-msgstr "Linux：\\ ``~/.cache/godot/``"
+msgstr "Linux：\\ ``~/.local/share/godot/``"
 
-#, fuzzy
 msgid "Editor settings"
 msgstr "编辑器设置"
 
@@ -278,21 +292,23 @@ msgstr "macOS：\\ ``~/Library/Caches/Godot/``"
 msgid "Linux: ``~/.cache/godot/``"
 msgstr "Linux：\\ ``~/.cache/godot/``"
 
-#, fuzzy
 msgid "**Editor data** contains export templates and project-specific data."
-msgstr "**用户数据**\\ 包含导出模板和具体项目数据。"
+msgstr "**编辑器数据**\\ 包含导出模板和具体项目数据。"
 
 msgid ""
 "**Editor settings** contains the main editor settings configuration file as "
 "well as various other user-specific customizations (editor layouts, feature "
 "profiles, script templates, etc.)."
 msgstr ""
+"**编辑器设置**\\ 包含主编辑器设置的配置文件，以及各种针对用户的自定义信息（编"
+"辑器布局、功能配置文件、脚本模板等）。"
 
-#, fuzzy
 msgid ""
 "**Cache** contains data generated by the editor, or stored temporarily. It "
 "can safely be removed when Godot is closed."
-msgstr "**缓存**\\ 包含临时数据。当 Godot 关闭时，它可以被安全地移除。"
+msgstr ""
+"**缓存**\\ 包含编辑器生成的数据，或者临时存储的数据。当 Godot 关闭时可以放心"
+"地移除。"
 
 msgid ""
 "Godot complies with the `XDG Base Directory Specification <https://"
@@ -316,7 +332,6 @@ msgstr ""
 msgid "Self-contained mode"
 msgstr "自包含模式"
 
-#, fuzzy
 msgid ""
 "If you create a file called ``._sc_`` or ``_sc_`` in the same directory as "
 "the editor binary (or in `MacOS/Contents/` for a macOS editor .app bundle), "
@@ -325,10 +340,11 @@ msgid ""
 "the same directory as the editor binary. You can use it to create a portable "
 "installation of the editor."
 msgstr ""
-"如果您在编辑器二进制文件所在的目录下创建了名为 ``._sc_`` 或 ``_sc_`` 的文件，"
-"Godot 就会开启\\ *自包含模式*\\ 。这种模式下，Godot 会将所有用户数据都写入一"
-"个与编辑器二进制文件位于同一目录中的名为 ``editor_data/`` 的目录。你可以用它"
-"来创建便携安装的编辑器。"
+"如果您在编辑器二进制文件所在的目录下创建了名为 ``._sc_`` 或 ``_sc_`` 的文件"
+"（macOS 编辑器 .app 捆绑包则是在 `MacOS/Contents/` 下），Godot 就会开启\\ *自"
+"包含模式*\\ 。这种模式下，Godot 会将所有编辑器数据、设置、缓存都写入一个与编"
+"辑器二进制文件位于同一目录中的名为 ``editor_data/`` 的目录。你可以用它来创建"
+"便携安装的编辑器。"
 
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "

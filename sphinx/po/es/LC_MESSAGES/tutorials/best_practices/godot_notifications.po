@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -242,7 +242,7 @@ msgid ""
 "When instantiating a scene, property values will set up according to the "
 "following sequence:"
 msgstr ""
-"Cuando se instancia un aescena, los valores de las propiedades se asignarán "
+"Cuando se instancia una escena, los valores de las propiedades se asignarán "
 "de acuerdo a la siguiente secuencia:"
 
 msgid ""
@@ -281,7 +281,7 @@ msgid ""
 "will call this method once all child nodes have finished calling theirs. "
 "This then causes a reverse cascade going up back to the tree's root."
 msgstr ""
-"Cuando se instancia una escena conectada a la primer escena eecutada, Godot "
+"Cuando se instancia una escena conectada a la primer escena ejecutada, Godot "
 "instanciará nodos en el árbol (haciendo llamadas a ``_init``) y construirá "
 "el árbol hacia abajo desde la raíz. Esto causa llamadas ``_enter_tree`` en "
 "cascada hacia abajo. Una vez que el árbol esté completo, los nodos hoja "

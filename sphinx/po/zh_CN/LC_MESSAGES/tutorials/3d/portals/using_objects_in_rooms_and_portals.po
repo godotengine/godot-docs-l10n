@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -251,8 +251,8 @@ msgstr ""
 "我们很难将物体准确地放置在房间的边缘，如果我们选择在入口被越过的那一刻将物体"
 "扩展到相邻的房间，即使是非常小的数量，就会出现不必要的扩展，而物体最终会在不"
 "是真正需要的时候被渲染。为了解决这个问题，入口有一个可调整的 ``margin``\\ ，"
-"物体越过这个边距就不会被考虑到下一个房间。边缘在编辑器中显示为红色的半透明区"
-"域。"
+"物体越过这个边距就不会被考虑到下一个房间。边缘在编辑器小工具中显示为红色的半"
+"透明区域。"
 
 msgid ""
 "You can set the margin globally in the RoomManager. You can also override "
@@ -261,7 +261,7 @@ msgid ""
 "3D editor viewport."
 msgstr ""
 "您可以在 RoomManager 中设置全局边距。如果您需要微调，可以在入口中覆盖此边距"
-"值。当您在检查器中编辑边距值时，应该会在 3D 编辑器视窗中看到边距更新。"
+"值。当您在检查器中编辑边距值时，应该会在 3D 编辑器视口中看到边距更新。"
 
 msgid "Include in Bound"
 msgstr "包含在边界中"

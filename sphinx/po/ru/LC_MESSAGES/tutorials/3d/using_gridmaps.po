@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,6 +133,9 @@ msgid ""
 "`class_NavigationMesh` resource, which can be created manually, or baked as "
 "described below."
 msgstr ""
+"Как все экземпляры mesh, объекты MeshLibrary могут быть назначенными как "
+"ресурс :ref:'class_NavigationMesh', которые могут быть созданными вручную, "
+"или запеченными как описано ниже."
 
 msgid ""
 "To create the NavigationMesh from a MeshLibrary scene export, place a :ref:"
@@ -141,17 +144,27 @@ msgid ""
 "NavigationMeshInstance and some source geometry nodes below and bake the "
 "NavigationMesh."
 msgstr ""
+"Чтобы создать NavigationMesh из экспорта сцены MeshLibrary, поместите "
+"дочерний узел :ref:`class_NavigationMeshInstance` ниже основного "
+"MeshInstance для элемента GridMap. Добавьте корректный ресурс NavigationMesh "
+"в NavigationMeshInstance, а также несколько узлов исходной геометрии ниже, и "
+"запеките NavigationMesh."
 
 msgid ""
 "With small grid cells it is often necessary to reduce the NavigationMesh "
 "properties for agent radius and region minimum size."
 msgstr ""
+"При использовании небольших ячеек сетки обычно необходимо уменьшить свойства "
+"NavigationMesh для радиуса агента и минимального размера области."
 
 msgid ""
 "Nodes below the NavigationMeshInstance are ignored for the MeshLibrary scene "
 "export, so additional nodes can be added as source geometry just for baking "
 "the navmesh."
 msgstr ""
+"Узлы под NavigationMeshInstance игнорируются при экспорте сцены MeshLibrary, "
+"поэтому дополнительные узлы могут быть добавлены в качестве исходной "
+"геометрии только для запекания навигационной сетки."
 
 msgid ""
 "The baked cell size of the NavigationMesh must match the NavigationServer "

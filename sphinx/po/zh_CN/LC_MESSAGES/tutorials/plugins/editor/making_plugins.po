@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,9 +83,8 @@ msgid ""
 "creation of the files and the config file's values."
 msgstr "每个字段中文本属性都描述了它会影响到哪些配置文件的值."
 
-#, fuzzy
 msgid "To continue with the example, use the following values:"
-msgstr "如果要继续使用该例子，请使用下列的值： ::"
+msgstr "如果要继续使用该例子，请使用下列的值："
 
 msgid ""
 "Unchecking the ``Activate now?`` option in C# is always required because, "
@@ -93,9 +92,12 @@ msgid ""
 "which requires building the project. After building the project the plugin "
 "can be enabled in the ``Plugins`` tab of ``Project Settings``."
 msgstr ""
+"始终需要在 C# 中去掉对 ``立即激活？`` 选项的勾选，因为和其他 C# 脚本一样，"
+"EditorPlugin 脚本是需要编译的，要求构建整个项目。构建项目后，就可以在 ``项目"
+"设置`` 的 ``插件`` 选项卡中启用该插件。"
 
 msgid "You should end up with a directory structure like this:"
-msgstr "你最终的目录结构应该是这样显示的:"
+msgstr "你最终的目录结构应该是这样显示的："
 
 msgid ""
 "``plugin.cfg`` is a simple INI file with metadata about your plugin. The "
@@ -125,10 +127,13 @@ msgstr ""
 "变: 它必须是一个 ``tool`` 脚本, 否则将无法在编辑器中正常加载；它必须继承 :"
 "ref:`class_EditorPlugin`."
 
+#, fuzzy
 msgid ""
-"In addition to the EditorPlugin script, any other GDScript that your plugin "
-"uses must *also* be a tool. Any GDScript without ``tool`` imported into the "
-"editor will act like an empty file!"
+"In addition to the EditorPlugin script, any other script that your plugin "
+"uses must *also* be a tool. * Any GDScript without ``tool`` imported into "
+"the editor will act like an empty file! * Any C# class without ``[Tool]`` "
+"won't be reloaded when the project is built forcing you to re-enable the "
+"plugin!"
 msgstr ""
 "除了这个 EditorPlugin 脚本之外，插件用到的其他 GDScript *也* 必须是工具脚本。"
 "没有 ``tool`` 的 GDScript 在导入编辑器后都会像空文件一样！"
@@ -356,25 +361,27 @@ msgstr ""
 "您可以制作自己的插件来帮助自己或在 `素材库 <https://godotengine.org/asset-"
 "library/>`_ 中分享它们，以便人们可以从您的工作中受益。"
 
-#, fuzzy
 msgid "Registering autoloads/singletons in plugins"
-msgstr "注册并登录"
+msgstr "在插件中注册自动加载/单例"
 
 msgid ""
 "It is possible for editor plugins to automatically register :ref:`autoloads "
 "<doc_singletons_autoload>` when the plugin is enabled. This also includes "
 "unregistering the autoload when the plugin is disabled."
 msgstr ""
+"编辑器插件可以在启用时自动注册\\ :ref:`自动加载 "
+"<doc_singletons_autoload>`\\ 。同样也包含了在插件禁用时反注册该自动加载。"
 
 msgid ""
 "This makes setting up plugins faster for users, as they no longer have to "
 "manually add autoloads to their project settings if your editor plugin "
 "requires the use of an autoload."
 msgstr ""
+"这样用户就可以更快速地设置插件了，因为你的编辑器插件要求使用自动加载时，他们"
+"不必再手动去项目设置里添加自动加载了。"
 
-#, fuzzy
 msgid "Use the following code to register a singleton from an editor plugin:"
-msgstr "然后使用以下命令对编辑器进行重新签名： ::"
+msgstr "在编辑器插件中使用以下代码注册单例："
 
 msgid "Translation status"
 msgstr "翻译状态"

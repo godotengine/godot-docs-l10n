@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,6 @@ msgstr ""
 "aufteilen. Diese Funktion hilft Ihnen, die verschiedenen Komponenten Ihres "
 "Spiels aufzuschlüsseln und zu organisieren."
 
-#, fuzzy
 msgid ""
 "You can create as many scenes as you'd like and save them as files with the "
 "``.tscn`` extension, which stands for \"text scene\". The ``Label.tscn`` "
@@ -45,7 +44,6 @@ msgstr ""
 "Wir nennen diese Dateien \"Packed Scenes\", da sie zusammengefasste "
 "Informationen über den Inhalt Ihrer Szene enthalten."
 
-#, fuzzy
 msgid ""
 "Here's an example of a ball. It's composed of a :ref:`RigidBody2D "
 "<class_RigidBody2D>` node as its root named Ball, which allows the ball to "
@@ -55,17 +53,17 @@ msgstr ""
 "Hier das Beispiel eines Balls. Er besteht aus einem :ref:`RigidBody2D "
 "<class_RigidBody2D>` Node als Wurzel namens Ball, der es dem Ball erlaubt, "
 "zu fallen und an Wänden abzuprallen, einem :ref:`Sprite <class_Sprite>` Node "
-"und einem :ref:`CollisionShape2D <class_CollisionShape2D>`."
+"und einer :ref:`CollisionShape2D <class_CollisionShape2D>`."
 
-#, fuzzy
 msgid ""
 "Once you saved a scene, it works as a blueprint: you can reproduce it in "
 "other scenes as many times as you'd like. Replicating an object from a "
 "template like this is called **instancing**."
 msgstr ""
-"Sobald Sie eine Szene gespeichert haben, funktioniert sie als Blaupause: Sie "
+"Sobald Sie eine Szene gespeichert haben, funktioniert sie als Vorlage: Sie "
 "können sie in anderen Szenen so oft reproduzieren, wie Sie möchten. Das "
-"Reproduzieren eines Objekts aus einer Vorlage wird **Instancing** genannt."
+"Reproduzieren eines Objekts aus einer Vorlage wird **Instanziierung** "
+"genannt."
 
 msgid ""
 "As we mentioned in the previous part, instanced scenes behave like a node: "
@@ -91,13 +89,12 @@ msgstr ""
 msgid "In practice"
 msgstr "In der Praxis"
 
-#, fuzzy
 msgid ""
 "Let's use instancing in practice to see how it works in Godot. We invite you "
 "to download the ball's sample project we prepared for you: :download:"
 "`instancing.zip <files/instancing.zip>`."
 msgstr ""
-"Um zu lernen, wie die Instantiierung funktioniert, laden wir zunächst ein "
+"Um zu lernen, wie die Instanziierung funktioniert, laden wir zunächst ein "
 "Beispielprojekt herunter: :download:`instancing.zip <files/instancing.zip>`."
 
 msgid ""
@@ -191,7 +188,6 @@ msgstr ""
 "Ändern Sie die Eigenschaften eines Balls, ohne die anderen zu beeinflussen "
 "mit dem Inspektor."
 
-#, fuzzy
 msgid ""
 "Change the default properties of every Ball by opening the ``Ball.tscn`` "
 "scene and making a change to the Ball node there. Upon saving, all instances "

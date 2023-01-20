@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -579,7 +579,6 @@ msgstr ""
 "好消息是您只需通过对您发出拉取请求的分支进行操作，就可以修改拉取请求。例如，"
 "您可以在该分支上进行新的提交，将其推送到您的分支，PR 就会自动更新："
 
-#, fuzzy
 msgid ""
 "However, be aware that in our PR workflow, we favor commits that bring the "
 "codebase from one functional state to another functional state, without "
@@ -592,8 +591,8 @@ msgstr ""
 "但请注意，在我们的 PR 工作流程中，我们偏向于将代码库从一种功能状态转换为另一"
 "种功能状态的提交，而没有中间提交来解决您自己的代码或样式问题中的错误。在大多"
 "数情况下，我们会倾向于在给定的 PR 中进行一次提交（除非有充分的理由将更改分"
-"开），因此与其撰写新的提交，不如考虑使用 ``git commit --amend`` 来修改先前提"
-"交的修复。上面的示例将变为："
+"开）。与其撰写新的提交，不如考虑使用 ``git commit --amend`` 来修改先前提交的"
+"修复。上面的示例将变为："
 
 msgid "The interactive rebase"
 msgstr "交互式变基"

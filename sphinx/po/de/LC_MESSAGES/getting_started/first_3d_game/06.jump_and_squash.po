@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,18 +26,17 @@ msgid ""
 "ground."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "First, we have to change a few settings related to physics interactions. "
 "Enter the world of :ref:`physics layers "
 "<doc_physics_introduction_collision_layers_and_masks>`."
 msgstr ""
-"Für weitere Informationen, siehe :ref:"
-"`doc_physics_introduction_collision_layers_and_masks`."
+"Zuerst müssen wir einige Einstellungen in Bezug auf physikalische "
+"Interaktionen ändern. Betreten Sie die Welt der :ref:`Physik-"
+"Layer<doc_physics_introduction_collision_layers_and_masks>`."
 
-#, fuzzy
 msgid "Controlling physics interactions"
-msgstr "Steuerung der Animation"
+msgstr "Steuerung der physikalischen Interaktionen"
 
 msgid ""
 "Physics bodies have access to two complementary properties: layers and "
@@ -69,9 +68,8 @@ msgid ""
 "keep track of what's what."
 msgstr ""
 
-#, fuzzy
 msgid "Setting layer names"
-msgstr "Meshes einrichten"
+msgstr "Ebenennamen festlegen"
 
 msgid ""
 "Let's give our physics layers a name. Go to *Project -> Project Settings*."
@@ -99,9 +97,8 @@ msgstr "image1"
 msgid "Now, we can assign them to our physics nodes."
 msgstr ""
 
-#, fuzzy
 msgid "Assigning layers and masks"
-msgstr "Kollisionsebenen und -masken"
+msgstr "Ebenen und Masken zuweisen"
 
 msgid ""
 "In the *Main* scene, select the *Ground* node. In the *Inspector*, expand "
@@ -175,7 +172,6 @@ msgstr ""
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
 msgstr "|image6|"
 
@@ -190,9 +186,8 @@ msgid ""
 "the XZ plane. We don't apply any gravity to them by design."
 msgstr ""
 
-#, fuzzy
 msgid "Jumping"
-msgstr "Dämpfung"
+msgstr "Springen"
 
 msgid ""
 "The jumping mechanic itself requires only two lines of code. Open the "
@@ -232,9 +227,8 @@ msgid ""
 "axis is positive downward."
 msgstr ""
 
-#, fuzzy
 msgid "Squashing monsters"
-msgstr "Verwenden von Containern"
+msgstr "Monster zerquetschen"
 
 msgid ""
 "Let's add the squash mechanic next. We're going to make the character bounce "
@@ -262,7 +256,6 @@ msgstr ""
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
 msgstr "|image7|"
 
@@ -274,7 +267,6 @@ msgstr ""
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
 msgstr "|image8|"
 
@@ -283,9 +275,8 @@ msgid ""
 "monsters from collisions with the floor."
 msgstr ""
 
-#, fuzzy
 msgid "Coding the squash mechanic"
-msgstr "Hauptmenü hinzufügen"
+msgstr "Die Zerquetsch-Mechanik programmieren"
 
 msgid "Head back to the *Player* script to code the squash and bounce."
 msgstr ""

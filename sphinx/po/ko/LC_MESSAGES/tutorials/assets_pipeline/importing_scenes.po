@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -329,10 +329,10 @@ msgid "The importer has several options, which will be discussed below:"
 msgstr "임포터에는 여러 설정이 있는데, 아래에서 논의합니다:"
 
 msgid "Nodes"
-msgstr "노드(Node)"
+msgstr "노드"
 
 msgid "Root Type"
-msgstr "Root Type(루트 타입)"
+msgstr "루트 유형"
 
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
@@ -342,19 +342,19 @@ msgstr ""
 "다."
 
 msgid "Root Name"
-msgstr "Root Name(루트 이름)"
+msgstr "루트 이름"
 
 msgid "Allows setting a specific name to the generated root node."
 msgstr "생성된 루트 노드에 특정 이름을 설정할 수 있습니다."
 
 msgid "Root Scale"
-msgstr "Root Scale(루트 크기)"
+msgstr "루트 스케일"
 
 msgid "The scale of the root node."
 msgstr "루트 노드의 크기입니다."
 
 msgid "Custom Script"
-msgstr "Custom Script(맞춤 스크립트)"
+msgstr "사용자 정의 스크립트"
 
 msgid ""
 "A special script to process the whole scene after import can be provided. "
@@ -377,7 +377,7 @@ msgstr ""
 "수 있습니다."
 
 msgid "Storage"
-msgstr "Storage(저장소)"
+msgstr "보관소"
 
 msgid ""
 "By default, Godot imports a single scene. This option allows specifying that "
@@ -394,7 +394,7 @@ msgid ""
 msgstr "물론 가져온 씬을 다른 곳에서 인스턴스화하는 것도 수동으로 작동합니다."
 
 msgid "Materials"
-msgstr "머티리얼(Materials)"
+msgstr "머티리얼"
 
 msgid "Location"
 msgstr "위치"
@@ -441,7 +441,7 @@ msgstr ""
 "**Files** 대신 **Built-In** 으로 변경하십시오."
 
 msgid "Keep On Reimport"
-msgstr "다시 가져오기 유지(Keep On Reimport)"
+msgstr "계속 다시 가져오기"
 
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
@@ -453,10 +453,10 @@ msgstr ""
 "된 경우에만 존재합니다."
 
 msgid "Meshes"
-msgstr "Meshes(메시)"
+msgstr "메쉬"
 
 msgid "Compress"
-msgstr "Compress(압축)"
+msgstr "컴프레스"
 
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
@@ -564,7 +564,7 @@ msgstr ""
 "이 있어야 할 자리에 없는 현상이 발생할 수 있습니다."
 
 msgid "Ensure Tangents"
-msgstr "Ensure Tangents(탄젠트 보장)"
+msgstr "접선 확인"
 
 #, fuzzy
 msgid ""
@@ -593,7 +593,7 @@ msgstr ""
 "다."
 
 msgid "Light Baking"
-msgstr "광원 베이킹"
+msgstr "라이트 베이킹"
 
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr "메시가 베이킹된 라이트맵에서 사용되는지 여부입니다."
@@ -617,7 +617,7 @@ msgstr ""
 "요."
 
 msgid "External Files"
-msgstr "External Files(외부 파일)"
+msgstr "외부 파일"
 
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
@@ -667,7 +667,7 @@ msgstr ""
 "프레임을 명시하세요. 이를 잘못하면 떨리는 애니메이션을 만들게 됩니다."
 
 msgid "Filter Script"
-msgstr "Filter Script(필터 스크립트)"
+msgstr "필터 스크립트"
 
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "
@@ -763,7 +763,7 @@ msgstr ""
 "가져온 후에도 이를 유지할 수 있습니다."
 
 msgid "Optimizer"
-msgstr "Optimizer(최적화 도구)"
+msgstr "최적화 도구"
 
 msgid ""
 "When animations are imported, an optimizer is run, which reduces the size of "
@@ -775,7 +775,7 @@ msgstr ""
 "이 손상되었다고 의심되는 상황이 아니라면 항상 활성화되어 있어야 합니다."
 
 msgid "Clips"
-msgstr "Clips(클립)"
+msgstr "클립"
 
 msgid ""
 "It is possible to specify multiple animations from a single timeline as "

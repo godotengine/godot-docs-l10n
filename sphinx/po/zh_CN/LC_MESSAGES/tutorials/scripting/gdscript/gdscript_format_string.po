@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,7 +191,7 @@ msgid "``f``"
 msgstr "``f``"
 
 msgid "A **decimal real** number. Expects an integral or real number."
-msgstr "一个 **十进制** 实数. 需要一个整数或实数."
+msgstr "一个\\ **十进制实数**\\ 。需要一个整数或实数。"
 
 msgid "Placeholder modifiers"
 msgstr "占位符的修饰符"
@@ -210,14 +210,14 @@ msgstr "用在数字说明符中，如果为正数则\\ **显示 + 号**\\ 。"
 msgid "Integer"
 msgstr "整数"
 
-#, fuzzy
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer or real number placeholder. The leading ``0`` is ignored "
 "if ``-`` is present. When used after ``.``, see ``.``."
 msgstr ""
-"设置\\ **填充**\\ 。用空格填充，如果整数占位符以 ``0`` 开头则用零填充。当在 "
-"``.`` 后使用时，请参阅 ``.``\\ 。"
+"设置\\ **填充**\\ 。用空格填充，如果整数或实数占位符的整数部分以 ``0`` 开头则"
+"用零填充。存在 ``-`` 时会忽略开头的 ``0``\\ 。当在 ``.`` 后使用时，请参阅 ``."
+"``\\ 。"
 
 msgid "``.``"
 msgstr "``.``"

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,6 @@ msgstr ""
 "**脚本附加到节点并扩展其行为**\\ 。这意味着脚本继承所附加节点的全部函数和属"
 "性。"
 
-#, fuzzy
 msgid ""
 "For example, take a game where a Camera2D node follows a ship. The Camera2D "
 "node follows its parent by default. Imagine you want the camera to shake "
@@ -43,13 +42,12 @@ msgid ""
 "would attach a script to the Camera2D node and code the shake."
 msgstr ""
 "例如，以一个 Camera2D 节点跟随一艘船的游戏为例。Camera2D 节点默认跟随其父节"
-"点。想象一下，当玩家受到伤害时，您希望它震动。由于此功能未内置在 Godot 中，因"
-"此您可以在其上附加脚本并对相机抖动进行编程。"
+"点。想象一下，当玩家受到伤害时，您希望相机震动。由于此功能未内置在 Godot 中，"
+"因此您可以在该 Camera2D 节点上附加脚本并对抖动进行编程。"
 
 msgid "Available scripting languages"
 msgstr "可用的脚本语言"
 
-#, fuzzy
 msgid ""
 "Godot offers **five gameplay programming languages**: GDScript, C#, "
 "VisualScript, and, via its GDNative technology, C and C++. There are more :"
@@ -85,12 +83,18 @@ msgid ""
 "Future Godot 4.x releases may have VisualScript reimplemented as an "
 "extension."
 msgstr ""
+"`Godot 4.0 将会把 VisualScript 从核心中完全移除。 <https://godotengine.org/"
+"article/godot-4-will-discontinue-visual-scripting>`__\\ 因此，不推荐在新的 "
+"Godot 项目中使用可视化脚本。后续的 Godot 4.x 版本可能会将 VisualScript 重新实"
+"现为扩展。"
 
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
 "out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
 "intend to migrate your project to Godot 4."
 msgstr ""
+"Godot 3.x 仍会支持 VisualScript，我们建议你先\\ :ref:`试一试 GDScript <toc-"
+"learn-scripting-gdscript>`\\ ，尤其是你想要把项目移植到 Godot 4 的话。"
 
 msgid "Which language should I use?"
 msgstr "我应该使用哪种语言？"
@@ -104,7 +108,6 @@ msgstr ""
 "如果你是初学者，我们推荐\\ **从 GDScript 入手**\\ 。这门语言是我们针对 Godot "
 "和游戏开发者的需求制作的。语法简单直白，与 Godot 结合得最为紧密。"
 
-#, fuzzy
 msgid ""
 "For C#, you will need an external code editor like `VSCode <https://code."
 "visualstudio.com/>`_ or Visual Studio. While C# support is now mature, you "
@@ -153,9 +156,8 @@ msgid ""
 "linear algebra, a must for games."
 msgstr "内置向量和变换类型，让海量线性代数计算更高效，游戏必备。"
 
-#, fuzzy
 msgid "Supports multiple threads as efficiently as statically typed languages."
-msgstr "比静态类型语言的性能要低."
+msgstr "支持多线程，与静态类型的语言一样高效。"
 
 msgid ""
 "No `garbage collection <https://en.wikipedia.org/wiki/"
@@ -267,13 +269,12 @@ msgstr ""
 "言，你可以将其中的代码块连接起来以进行编程。对于非程序员（如游戏设计人员和艺"
 "术家）来说，它可能是一个很好的工具。"
 
-#, fuzzy
 msgid ""
 "You can use other languages to create custom blocks that are specific to "
 "your game, for example, to script AIs, quests, or dialogues. That's where "
 "the strength of VisualScript lies."
 msgstr ""
-"你可以使用其他语言来创建特定于你的游戏的自定义块。例如，为AI、任务或对话编写"
+"你可以使用其他语言来创建特定于你的游戏的自定义块。例如，为 AI、任务或对话编写"
 "脚本。这就是 VisualScript 的优势所在。"
 
 msgid ""
@@ -307,14 +308,13 @@ msgstr ""
 "我们在内部使用 C API 桥接，得益于此，你可以使用任意版本的语言，也可以混用由不"
 "同厂牌、不同版本的编译器所生成的共享库。"
 
-#, fuzzy
 msgid ""
 "GDNative is the best choice for performance. You don't need to use it "
 "throughout an entire game, as you can write other parts in GDScript, C#, or "
 "VisualScript."
 msgstr ""
-"这种语言是性能上的最佳选择。它不需要在整个游戏中都使用，因为其他部分你可以用 "
-"GDScript、C#、VisualScript 编写。"
+"GDNative 是性能上的最佳选择。它不需要在整个游戏中都使用，因为其他部分你可以"
+"用 GDScript、C#、VisualScript 编写。"
 
 msgid ""
 "When working with GDNative, the available types, functions, and properties "

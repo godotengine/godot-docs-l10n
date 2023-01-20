@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,12 +27,18 @@ msgid ""
 "Future Godot 4.x releases may have VisualScript reimplemented as an "
 "extension."
 msgstr ""
+"`Godot 4.0 将会把 VisualScript 从核心中完全移除。 <https://godotengine.org/"
+"article/godot-4-will-discontinue-visual-scripting>`__\\ 因此，不推荐在新的 "
+"Godot 项目中使用可视化脚本。后续的 Godot 4.x 版本可能会将 VisualScript 重新实"
+"现为扩展。"
 
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
 "out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
 "intend to migrate your project to Godot 4."
 msgstr ""
+"Godot 3.x 仍会支持 VisualScript，我们建议你先\\ :ref:`试一试 GDScript <toc-"
+"learn-scripting-gdscript>`\\ ，尤其是你想要把项目移植到 Godot 4 的话。"
 
 msgid ""
 "Custom nodes are written in GDScript and can then be used in VisualScript. "

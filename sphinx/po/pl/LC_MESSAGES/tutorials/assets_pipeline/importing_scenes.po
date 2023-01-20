@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -289,7 +289,7 @@ msgid "Nodes"
 msgstr "Węzły"
 
 msgid "Root Type"
-msgstr "Typ głównego węzła"
+msgstr "Typ korzenia"
 
 msgid ""
 "By default, the type of the root node in imported scenes is \"Spatial\", but "
@@ -299,14 +299,13 @@ msgstr ""
 "można go zmodyfikować."
 
 msgid "Root Name"
-msgstr "Nazwa głównego węzła"
+msgstr "Nazwa korzenia"
 
 msgid "Allows setting a specific name to the generated root node."
 msgstr "Umożliwia ustawienie konkretnej nazwy wygenerowanego węzła głównego."
 
-#, fuzzy
 msgid "Root Scale"
-msgstr "Nazwa głównego węzła"
+msgstr "Skala korzenia"
 
 msgid "The scale of the root node."
 msgstr "Rola skryptu."
@@ -388,9 +387,8 @@ msgid ""
 "**Built-In** instead of **Files**."
 msgstr ""
 
-#, fuzzy
 msgid "Keep On Reimport"
-msgstr "Zachowaj przy ponownym imporcie"
+msgstr "Zachowaj po reimporcie"
 
 msgid ""
 "Once materials are edited to use Godot features, the importer will keep the "
@@ -405,7 +403,7 @@ msgid "Meshes"
 msgstr "Siatki"
 
 msgid "Compress"
-msgstr "Kompresja"
+msgstr "Skompresuj"
 
 msgid ""
 "Makes meshes use less precise numbers for multiple aspects of the mesh in "
@@ -486,7 +484,7 @@ msgid ""
 msgstr ""
 
 msgid "Ensure Tangents"
-msgstr ""
+msgstr "Zapewnij styczne"
 
 msgid ""
 "If textures with normal mapping are to be used, meshes need to have tangent "
@@ -508,9 +506,8 @@ msgstr ""
 "Opcja ta ma pomóc osobom, które wolą pracować bezpośrednio z siatkami niż "
 "scenami."
 
-#, fuzzy
 msgid "Light Baking"
-msgstr "Wypalanie"
+msgstr "Wypalanie światła"
 
 msgid "Whether or not the mesh is used in baked lightmaps."
 msgstr ""
@@ -532,7 +529,7 @@ msgstr ""
 "Więcej informacji można znaleźć na stronie :ref:`doc_c_sharp_differences`."
 
 msgid "External Files"
-msgstr "Zewnętrzne pliki"
+msgstr "Pliki zewnętrzne"
 
 msgid ""
 "Generated meshes and materials can be optionally stored in a subdirectory "
@@ -571,7 +568,7 @@ msgid ""
 msgstr ""
 
 msgid "Filter Script"
-msgstr ""
+msgstr "Skrypt filtra"
 
 msgid ""
 "It is possible to specify a filter script in a special syntax to decide "

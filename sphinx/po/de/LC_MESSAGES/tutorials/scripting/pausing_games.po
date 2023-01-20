@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,7 +99,6 @@ msgstr ""
 "Vererbungsmodus). Egal ob angehalten oder nicht, wird dieser Node "
 "verarbeitet."
 
-#, fuzzy
 msgid ""
 "By default, all nodes have this property in the \"Inherit\" state. If the "
 "parent is set to \"Inherit\", then the grandparent will be checked and so "
@@ -109,9 +108,9 @@ msgid ""
 "processing."
 msgstr ""
 "Standardmäßig haben alle Nodes diese Eigenschaft im Status \"vererbt\". Dies "
-"bedeutet, dass sie nur verarbeitet werden (oder nicht), je nachdem welche "
+"bedeutet, dass sie nur verarbeitet werden (oder nicht), je nachdem, welche "
 "Eigenschaft auf dem übergeordneten Node festgelegt ist. Wenn der Elternteil "
-"auf \"vererbt\" eingestellt ist, wird der Großelternteil überprüft und so "
+"auf \"vererbt\" eingestellt ist, wird der Großelternteil überprüft, und so "
 "weiter. Wenn bei keinem der Großeltern ein Status gefunden werden kann, wird "
 "der Pausenstatus in Szenenbaum verwendet. Dies bedeutet, wenn das Spiel "
 "angehalten wird, wird standardmäßig jeder Node angehalten."

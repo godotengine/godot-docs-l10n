@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,38 +24,38 @@ msgid ""
 "Ever wondered whether one should approach problem X with data structure Y or "
 "Z? This article covers a variety of topics related to these dilemmas."
 msgstr ""
-"有没有想过应该用数据结构Y还是Z, 来处理问题X ？本文涵盖了与这些困境有关的各种"
-"主题."
+"在面对问题 X 的时候，你有没有对应该使用数据结构 Y 还是 Z 产生过困惑？本文会涉"
+"及到与这些困境有关的各种主题。"
 
 msgid ""
 "This article makes references to \"[something]-time\" operations. This "
 "terminology comes from algorithm analysis' `Big O Notation <https://rob-bell."
 "net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
 msgstr ""
-"本文引用了 ``[something]-time`` 操作. 这个术语来自于算法分析的 `大O 表示法 "
-"<https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/>`_."
+"本文会提及“[某某]时间”的操作。这个术语来自于算法分析中的\\ `大 O 表示法 "
+"<https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/>`_\\ 。"
 
 msgid ""
 "Long-story short, it describes the worst-case scenario of runtime length. In "
 "laymen's terms:"
-msgstr "长话短说, 它描述了运行时长度的最坏的情况. 用外行的话来说:"
+msgstr "简而言之，它描述了最坏情况下的运行时长。用外行的话来说："
 
 msgid ""
 "\"As the size of a problem domain increases, the runtime length of the "
 "algorithm...\""
-msgstr "\"随着问题域的大小增加, 算法的运行时间长度…\""
+msgstr "“随着问题域的大小增加，算法的运行时长……”"
 
 msgid "Constant-time, ``O(1)``: \"...does not increase.\""
-msgstr "常量时间, ``O(1)``: \"…不会增加.\""
+msgstr "常量时间，\\ ``O(1)``\\ ：“……不会增加。”"
 
 msgid "Logarithmic-time, ``O(log n)``: \"...increases at a slow rate.\""
-msgstr "对数时间, ``O(log n)``: \"…以缓慢的速度增长.\""
+msgstr "对数时间，\\ ``O(log n)``\\ ：“……会以较慢的速度增长。”"
 
 msgid "Linear-time, ``O(n)``: \"...increases at the same rate.\""
-msgstr "线性时间, ``O(n)``: \"…以同样的速度增长.\""
+msgstr "线性时间，\\ ``O(n)``\\ ：“……会以相同的速度增长。”"
 
 msgid "Etc."
-msgstr "等等."
+msgstr "等等。"
 
 msgid ""
 "Imagine if one had to process 3 million data points within a single frame. "
@@ -120,13 +120,13 @@ msgid "Contiguous memory stores imply the following operation performance:"
 msgstr "因为是在内存中连续存储，所以执行各种操作的性能如下："
 
 msgid "**Iterate:** Fastest. Great for loops."
-msgstr "**迭代** ：最快，非常适合循环。"
+msgstr "**迭代：**\\ 最快，非常适合循环。"
 
 msgid "Op: All it does is increment a counter to get to the next record."
 msgstr "操作：把计数器加一即可获取下一个元素。"
 
 msgid "**Insert, Erase, Move:** Position-dependent. Generally slow."
-msgstr "**插入、删除、移动** ：与位置相关，一般较慢。"
+msgstr "**插入、删除、移动：**\\ 与位置相关，一般较慢。"
 
 msgid ""
 "Op: Adding/removing/moving content involves moving the adjacent records over "
@@ -135,22 +135,22 @@ msgstr ""
 "操作：元素的添加、删除、移动需要移动与之相邻的元素（腾出地方或者填充空缺）。"
 
 msgid "Fast add/remove *from the end*."
-msgstr "在 *末尾* 添加、删除很快。"
+msgstr "在\\ *末尾*\\ 添加、删除很快。"
 
 msgid "Slow add/remove *from an arbitrary position*."
-msgstr "在 *任意位置* 添加、删除较慢。"
+msgstr "在\\ *任意位置*\\ 添加、删除较慢。"
 
 msgid "Slowest add/remove *from the front*."
-msgstr "在 *开头* 添加、删除最慢。"
+msgstr "在\\ *开头*\\ 添加、删除最慢。"
 
 msgid "If doing many inserts/removals *from the front*, then..."
-msgstr "如果需要在 *开头* 执行多次插入、删除操作，那么……"
+msgstr "如果需要在\\ *开头*\\ 执行多次插入、删除操作，那么……"
 
 msgid "invert the array."
 msgstr "反转数组。"
 
 msgid "do a loop which executes the Array changes *at the end*."
-msgstr "通过循环在 *末尾* 执行数组更改。"
+msgstr "通过循环在\\ *末尾*\\ 执行数组更改。"
 
 msgid "re-invert the array."
 msgstr "再把数组反转回来。"
@@ -166,14 +166,14 @@ msgid ""
 "**Get, Set:** Fastest *by position*. E.g. can request 0th, 2nd, 10th record, "
 "etc. but cannot specify which record you want."
 msgstr ""
-"**取值、设值** ：因为是 *按位置* 存取的，所以最快。例如你可以请求第 0 个、第 "
-"2 个、第 10 个等等的元素，但不能按照元素的值来请求。"
+"**取值、设值：**\\ 因为是\\ *按位置*\\ 存取的，所以最快。例如你可以请求第 0 "
+"个、第 2 个、第 10 个等等的元素，但不能按照元素的值来请求。"
 
 msgid "Op: 1 addition operation from array start position up to desired index."
 msgstr "操作：把起始位置做一次加法，得到所需的索引。"
 
 msgid "**Find:** Slowest. Identifies the index/position of a value."
-msgstr "**查找** ：最慢。根据值获取索引，也就是位置。"
+msgstr "**查找：**\\ 最慢。根据值获取索引，也就是位置。"
 
 msgid ""
 "Op: Must iterate through array and compare values until one finds a match."

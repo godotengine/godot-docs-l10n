@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,6 @@ msgstr "2D Sprite Animation"
 msgid "Introduction"
 msgstr "Einführung"
 
-#, fuzzy
 msgid ""
 "In this tutorial, you'll learn how to create 2D animated characters with the "
 "AnimatedSprite class and the AnimationPlayer. Typically, when you create or "
@@ -31,14 +30,13 @@ msgid ""
 "individual images or as a single sprite sheet containing all the animation's "
 "frames. Both can be animated in Godot with the AnimatedSprite class."
 msgstr ""
-"In dieser Anleitung erfahren Sie, wie Sie 2D animierte Zeichen erstellen "
-"mittels AnimatedSprite-Klasse und dem AnimationPlayer. Wenn Sie einen "
-"animierten Charakter erstellen oder herunterladen gibt es normalerweise zwei "
-"Möglichkeiten: als einzelne Bilder oder als einzelnen Sprite-Bogen, der alle "
-"Frames der Animation enthält. Beide können in Godot mit der AnimatedSprite-"
-"Klasse animiert werden."
+"In dieser Anleitung erfahren Sie, wie mit der AnimatedSprite-Klasse und dem "
+"AnimationPlayer animierte 2D-Charaktere erstellt werden. Wenn Sie einen "
+"animierten Charakter erstellen oder herunterladen, gibt es normalerweise "
+"zwei Möglichkeiten: als einzelne Bilder oder als einen einzigen Sprite-"
+"Bogen, der alle Frames der Animation enthält. Beide können in Godot mit der "
+"AnimatedSprite-Klasse animiert werden."
 
-#, fuzzy
 msgid ""
 "First, we'll use :ref:`AnimatedSprite <class_AnimatedSprite>` to animate a "
 "collection of individual images. Then we will animate a sprite sheet using "
@@ -46,11 +44,11 @@ msgid ""
 "with :ref:`AnimationPlayer <class_AnimationPlayer>` and the *Animation* "
 "property of :ref:`Sprite <class_Sprite>`."
 msgstr ""
-"Zuerst verwenden wir :ref:`AnimatedSprite <class_AnimatedSprite>` um eine "
+"Zuerst verwenden wir :ref:`AnimatedSprite <class_AnimatedSprite>`, um eine "
 "Sammlung einzelner Bilder zu animieren. Dann werden wir mit dieser Klasse "
-"ein Sprite-Bogen animieren und abschließend zeigen wir noch eine andere "
-"Möglichkeit einen Sprite-Bogen zu animieren :ref:`AnimationPlayer "
-"<class_AnimationPlayer>` und die Eigenschaft *Animation* von :ref:`Sprite "
+"ein Sprite-Bogen animieren. Anschließend zeigen wir noch eine andere "
+"Möglichkeit, einen Sprite-Bogen zu animieren: mit dem :ref:`AnimationPlayer "
+"<class_AnimationPlayer>` und der Eigenschaft *Animation* von :ref:`Sprite "
 "<class_Sprite>`."
 
 msgid ""
@@ -156,13 +154,12 @@ msgstr ""
 msgid "Sprite sheet with AnimatedSprite"
 msgstr "Sprite-Bogen mittels AnimatedSprite"
 
-#, fuzzy
 msgid ""
 "You can also easily animate from a sprite sheet with the class "
 "``AnimatedSprite``. We will use this public domain sprite sheet:"
 msgstr ""
-"Sie können auch einfach von einem Sprite-Bogen mit der Klasse "
-"``AnimatedSprite`` animieren. Wir werden diesen frei nutzbaren Sprite-Bogen "
+"Es kann auch einfach von einem Sprite-Bogen mit der Klasse ``Animiertes "
+"Sprite`` animiert werden. Wir werden diesen frei nutzbaren Sprite-Bogen "
 "verwenden:"
 
 msgid ""
@@ -173,17 +170,15 @@ msgstr ""
 "speichern unter\" um es herunterzuladen. Kopieren Sie das Bild dann in Ihren "
 "Projektordner."
 
-#, fuzzy
 msgid ""
 "Set up your scene tree the same way you did previously when using individual "
 "images. Select the ``AnimatedSprite`` and in its *SpriteFrames* property, "
 "select \"New SpriteFrames\"."
 msgstr ""
-"Richten Sie Ihren Szenenbaum genauso ein wie zuvor, wenn Sie einzelne Bilder "
-"verwenden. Wählen Sie ``AnimatedSprite`` aus und wählen Sie in der "
-"*SpriteFrames* Eigenschaft \"Neue SpriteFrames\" aus."
+"Richten Sie Ihren Szenenbaum genauso ein wie zuvor, als Sie einzelne Bilder "
+"verwendeten. Wählen Sie ``Animiertes Sprite`` aus und wählen Sie in der "
+"*SpriteFrames*-Eigenschaft \"Neue SpriteFrames\" aus."
 
-#, fuzzy
 msgid ""
 "Click on the new SpriteFrames resource. This time, when the bottom panel "
 "appears, select \"Add frames from a Sprite Sheet\"."
@@ -192,10 +187,9 @@ msgstr ""
 "Panel angezeigt wird, wählen Sie \"Frames aus einem Sprite-Bogen "
 "hinzufügen\"."
 
-#, fuzzy
 msgid "You will be prompted to open a file. Select your sprite sheet."
 msgstr ""
-"Sie werden aufgefordert eine Datei zu öffnen. Wählen Sie Ihren Sprite-Bogen "
+"Sie werden aufgefordert, eine Datei zu öffnen. Wählen Sie Ihren Sprite-Bogen "
 "aus."
 
 #, fuzzy
@@ -229,13 +223,12 @@ msgstr ""
 "Panel. Doppelklicken Sie auf Standard um den Namen der zu springenden "
 "Animation zu ändern."
 
-#, fuzzy
 msgid ""
 "Finally, check Playing on the AnimatedSprite in the inspector to see your "
 "frog jump!"
 msgstr ""
-"Überprüfen Sie abschließend das Abspielen des AnimatedSprite im Inspektor um "
-"zu sehen wie Ihr Frosch springt!"
+"Überprüfen Sie abschließend das Abspielen des AnimatedSprite im Inspektor, "
+"um zu sehen, wie Ihr Frosch springt!"
 
 msgid "Sprite sheet with AnimationPlayer"
 msgstr "Sprite-Bogen mittels AnimationPlayer"

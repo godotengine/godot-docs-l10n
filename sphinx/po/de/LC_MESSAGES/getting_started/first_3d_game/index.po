@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your first 3D game"
-msgstr "Das erste Spiel"
+msgstr "Ihr erstes 3D-Spiel"
 
 msgid ""
 "In this step-by-step tutorial series, you will create your first complete 3D "
@@ -28,8 +27,8 @@ msgid ""
 msgstr ""
 "In dieser Schritt-für-Schritt-Tutorial-Serie wirst du dein erstes "
 "vollständiges 3D-Spiel mit Godot erstellen. Am Ende dieser Serie hast du "
-"dann ein einfaches, aber fertiges Projekt wie das untenstehende animierte "
-"Gif haben."
+"dann ein einfaches, aber fertiges Projekt wie das folgende, animierte GIF "
+"haben."
 
 msgid "|image0|"
 msgstr "|image0|"
@@ -72,12 +71,16 @@ msgid ""
 "Code basic procedural gameplay by instancing monsters at regular time "
 "intervals."
 msgstr ""
+"Programmiere prozedurales Gameplay durch regelmäßiges Instanziieren von "
+"Kreaturen."
 
 msgid "Design a movement animation and change its speed at run-time."
 msgstr ""
+"Entwerfen Sie eine Bewegungsanimation und ändern Sie ihre Geschwindigkeit "
+"zur Laufzeit."
 
 msgid "Draw a user interface on a 3D game."
-msgstr ""
+msgstr "Zeichnen Sie eine Benutzeroberfläche für ein 3D-Spiel."
 
 msgid "And more."
 msgstr "und vieles mehr..."
@@ -89,6 +92,11 @@ msgid ""
 "complete demo's source code here: `Squash the Creep source code <https://"
 "github.com/GDQuest/godot-3d-dodge-the-creeps/>`__."
 msgstr ""
+"Dieses Tutorial ist für Einsteiger geeignet welche bereits die \"Getting "
+"started\" Serie abgeschlossen haben. Anfangs werden wir Anweisungen im "
+"Detail erläutern, später aber Dinge kurz halten. Entwicklern mit mehr "
+"Erfahrung wird empfohlen, sich den Sourcecode des Demo-Projektes anzusehen: "
+"`Projekt ansehen <https://github.com/GDQuest/godot-3d-dodge-the-creeps/>`__."
 
 msgid ""
 "You can follow this series without having done the 2D one. However, if "
@@ -106,8 +114,11 @@ msgid ""
 "download them here: `Squash the Creeps assets <https://github.com/GDQuest/"
 "godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
 msgstr ""
+"Wir haben bereits einige Assets vorbereitet, so dass wir direkt mit der "
+"Programmierung beginnen können. Sie können hier heruntergeladen werden: "
+"`Squash the Creeps assets <https://github.com/GDQuest/godot-3d-dodge-the-"
+"creeps/releases/tag/1.1.0>`__."
 
-#, fuzzy
 msgid ""
 "We will first work on a basic prototype for the player's movement. We will "
 "then add the monsters that we'll spawn randomly around the screen. After "
@@ -116,13 +127,13 @@ msgid ""
 "screen."
 msgstr ""
 "Wir werden zuerst an einem einfachen Prototyp für die Bewegung des Spielers "
-"arbeiten. Dann werden wir die Monster hinzufügen, welche wir zufällig auf "
-"dem Bildschirm hervorbringen. Danach werden wir das Springen implementieren "
-"und"
+"arbeiten. Anschließend werden wir die Kreaturen hinzufügen, welche wir "
+"zufällig auf dem Bildschirm anzeigen. Danach werden wir weitere Mechaniken "
+"wie Springen einbauen und erweitern es mit Animationen. Zuletzt werden wir "
+"einen Punktestand sowie Neuversuchen einbauen."
 
-#, fuzzy
 msgid "Contents"
-msgstr "Inhalt prüfen"
+msgstr "Inhalt"
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

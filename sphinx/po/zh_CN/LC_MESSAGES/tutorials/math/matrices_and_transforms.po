@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -489,9 +489,9 @@ msgid ""
 "would like to find the world (parent-relative) position, or if you have a "
 "world position and want to know where it is relative to the player."
 msgstr ""
-"在许多情况下, 您可能需要将位置转换为变换中的位置或将其转换为转换外的位置. 例"
-"如, 如果您有一个相对于球员的位置并想要查找世界(父级相对)位置, 或者如果您有一"
-"个世界位置并想知道它相对于球员的位置."
+"在许多情况下，您可能需要将某个位置转换为变换前或者变换后的位置。例如，如果您"
+"有一个相对于玩家的位置并想要查找世界（相对于玩家来说是父级）位置，或者如果您"
+"有一个世界位置并想知道它相对于玩家的位置。"
 
 msgid ""
 "We can find what a vector relative to the player would be defined in world "
@@ -585,10 +585,10 @@ msgid ""
 "but this actually moves it (2, 1) in world space, due to the parent node's "
 "basis vectors."
 msgstr ""
-"所有子变换都受父变换的影响. 子对象的比例为 (0.5, 0.5), 因此您会认为它是 1:1 "
-"的比例正方形, 确实如此, 但仅相对于父对象. 子对象的 X 向量最终在世界空间中为 "
-"(1, 0), 因为它是由父对象的基础向量缩放的. 类似地，子节点的 `origin` 向量被设"
-"置为(1,1), 但由于父节点的基向量, 这实际上会在世界空间中移动它 (2, 1)."
+"所有子变换都受父变换的影响。子对象的比例为 (0.5, 0.5)，因此您会认为它是 1:1 "
+"的比例正方形，确实如此，但仅相对于父对象。子对象的 X 向量最终在世界空间中为 "
+"(1, 0)，因为它是由父对象的基础向量缩放的。类似地，子节点的 `origin` 向量被设"
+"置为(1,1)，但由于父节点的基向量，这实际上会在世界空间中移动 (2, 1)。"
 
 msgid ""
 "To calculate a child transform's world space transform manually, this is the "

@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,25 +211,28 @@ msgstr ""
 "<class_Object_method__get_property_list>` 方法。将变量与属性关联后，你还可以"
 "给它设置默认状态。\\ ::"
 
-#, fuzzy
 msgid "Adding default values for properties"
-msgstr "将变量与属性关联"
+msgstr "为属性添加默认值"
 
 msgid ""
 "To define default values for advanced exports, you need to override the "
 "``property_can_revert()`` and ``property_get_revert()`` methods."
 msgstr ""
+"要为高级导出定义默认值，你需要覆盖 ``property_can_revert()`` 和 "
+"``property_get_revert()`` 方法。"
 
 msgid ""
 "The ``property_can_revert()`` method takes the name of a property and must "
 "return ``true`` if the property can be reverted. This will enable the Revert "
 "button next to the property in the inspector."
 msgstr ""
+"``property_can_revert()`` 方法接受属性的名称，必须在该属性能够复原时返回 "
+"``true``\\ 。这样就可以启用检查器中该属性旁的“恢复”按钮。"
 
 msgid ""
 "The ``property_get_revert()`` method takes the name of a property and must "
 "return the default value for that property."
-msgstr ""
+msgstr "``property_get_revert()`` 方法接受属性的名称，必须返回该属性的默认值。"
 
 msgid "Adding script categories"
 msgstr "添加脚本分类"

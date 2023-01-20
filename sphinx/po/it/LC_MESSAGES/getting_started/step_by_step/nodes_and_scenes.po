@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,9 @@ msgid ""
 "scenes and that each scene is a tree of nodes. In this lesson, we explain a "
 "bit more about them. You will also create your first scene."
 msgstr ""
+"Su :ref:`doc_key_concepts_overview`, abbiamo visto che un gioco su Godot è "
+"un albero di scene e che ogni scena è un albero di nodi. In questa lezione, "
+"approfondiamo su di loro. Inoltre creerete la vostra prima scena."
 
 msgid "Nodes"
 msgstr "Nodi"
@@ -34,6 +37,9 @@ msgid ""
 "the ingredients in a recipe. There are dozens of kinds that can display an "
 "image, play a sound, represent a camera, and much more."
 msgstr ""
+"**I nodi sono i blocchi fondamentali del tuo gioco**. Sono come ingredienti "
+"in una ricetta. Ci sono dozzine di tipi che possono mostrare un’immagine, "
+"riprodurre un suono, rappresentare una camera, e molto altro."
 
 msgid "All nodes have the following attributes:"
 msgstr "Tutti i nodi hanno i seguenti attributi:"
@@ -66,6 +72,12 @@ msgid ""
 "node named \"Character\", a sprite node, a camera node, and a collision "
 "shape node."
 msgstr ""
+"L’ultimo attributo è chiave. **Insieme, i nodi formano un albero**, che è "
+"una potente funzionalità per organizzare progetti. Siccome diversi nodi "
+"hanno diversi funzioni, combinarli produce comportamenti complessi. Come "
+"abbiamo visto prima, puoi costruire un personaggio giocabile seguito dalla "
+"camera usando un nodo cinematico chiamato “Personaggio”, un nodo sprite, un "
+"nodo camera, e un nodo forma di collisione."
 
 msgid "Scenes"
 msgstr "Scene"
@@ -76,6 +88,11 @@ msgid ""
 "editor, where you can add them as a child of an existing node. In that case, "
 "the instance of the scene appears as a single node with its internals hidden."
 msgstr ""
+"Quando organizzi nodi in un albero, come il nostro personaggio, possiamo "
+"chiamare questa formazione una scena. Una volta salvata, la scena si "
+"presenta come un nuovo nodo nell’editor, dove possiamo aggiungerlo come "
+"figlio di un nodo esistente. In questo caso, l’istanza della scena appare "
+"come nodo singolo con interni nascosti."
 
 msgid ""
 "Scenes allow you to structure your game's code however you want. You can "
@@ -83,6 +100,10 @@ msgid ""
 "character that runs and jumps, a life bar, a chest with which you can "
 "interact, and more."
 msgstr ""
+"Le scene di consentono di strutturare il codice del gioco in qualunque modo "
+"tu voglia. Puoi **comporre nodi** per creare nodi personalizzati e "
+"complessi, come un personaggio di gioco che si muove e salta, una barra "
+"della vita, una cesta con cui puoi interagire, e molto altro."
 
 #, fuzzy
 msgid ""
@@ -97,8 +118,9 @@ msgstr ""
 "l'editor é basato sul concetto di manipolare una scena e i nodi che la "
 "compongono."
 
+#, fuzzy
 msgid "On top of acting like nodes, scenes have the following attributes:"
-msgstr ""
+msgstr "Oltre a comportarsi come nodi, le scene hanno i seguenti attributi:"
 
 msgid "They always have one root node, like the \"Character\" in our example."
 msgstr ""
@@ -107,20 +129,28 @@ msgstr ""
 msgid "You can save them to your hard drive and load them later."
 msgstr "Puoi salvarli sul tuo disco fisso e caricarli in seguito."
 
+#, fuzzy
 msgid ""
 "You can create as many instances of a scene as you'd like. You could have "
 "five or ten characters in your game, created from your Character scene."
 msgstr ""
+"Puoi creare tutte le istanze di una scena che desideri. Potresti avere "
+"cinque o dieci personaggi nel tuo gioco, creati dalla scena del tuo "
+"personaggio."
 
 #, fuzzy
 msgid "Creating your first scene"
-msgstr "Creare una posa di riposo"
+msgstr "Creare la tua prima scena"
 
+#, fuzzy
 msgid ""
 "Let's create our first scene with a single node. To do so, you will need to "
 "create a new project first. After opening the project, you should see an "
 "empty editor."
 msgstr ""
+"Creiamo la nostra prima scena con un singolo nodo. Per farlo, è necessario "
+"creare un nuovo progetto. Dopo aver aperto il progetto, si dovrebbe vedere "
+"un editor vuoto."
 
 #, fuzzy
 msgid ""
@@ -141,14 +171,20 @@ msgstr ""
 "\"Aggiungi Nodo Figlio\"). Puoi anche premere l'icona a forma di stella per "
 "mostrare i tuoi nodi preferiti."
 
+#, fuzzy
 msgid ""
 "We're going to add a single Label node to our scene. Its function is to draw "
 "text on the screen."
 msgstr ""
+"Aggiungeremo un singolo nodo Label alla nostra scena. La sua funzione è "
+"quella di disegnare del testo sullo schermo."
 
+#, fuzzy
 msgid ""
 "Press the \"Add Child Node\" button or \"Other Node\" to create a root node."
 msgstr ""
+"Premi il pulsante \"Aggiungi nodo figlio\" o \"Altro nodo\" per creare un "
+"nodo radice."
 
 #, fuzzy
 msgid "The Create Node dialog opens, showing the long list of available nodes."
@@ -158,11 +194,14 @@ msgstr ""
 
 msgid "Select the Label node. You can type its name to filter down the list."
 msgstr ""
+"Seleziona il nodo Label. Puoi scrivere il suo nome per filtrarlo sulla lista."
 
 msgid ""
 "Click on the Label node to select it and click the Create button at the "
 "bottom of the window."
 msgstr ""
+"Clicca sul nodo Label per selezionarlo e clicca il pulsante Crea nella parte "
+"inferiore della finestra."
 
 msgid ""
 "A lot happens when you add a scene's first node. The scene changes to the 2D "
@@ -171,6 +210,11 @@ msgid ""
 "the left, and the node's properties appear in the Inspector dock on the "
 "right."
 msgstr ""
+"Molto accade quando aggiungi il primo nodo di una scena. La scena cambia dal "
+"piano di lavoro 2D perchè Label è un nodo di tipo 2D. Il Label appare, "
+"selezionato, nel bordo in alto a sinistra del Viewport. Il nodo appare nel "
+"riquadro Scene sulla sinistra, e le proprietà del nodo appaiono nel pannello "
+"Inspector sulla destra."
 
 #, fuzzy
 msgid "Changing a node's properties"
@@ -188,19 +232,27 @@ msgid ""
 "Head to the Inspector dock on the right of the viewport. Click inside the "
 "field below the Text property and type \"Hello World\"."
 msgstr ""
+"Muoviti sul riquadro Inspector sulla destra del Viewport. Clicca dentro il "
+"campo sotto la proprietà Testo e scrivi \"Hello World\"."
 
+#, fuzzy
 msgid "You will see the text draw in the viewport as you type."
 msgstr ""
+"Vedrai il testo disegnare nel riquadro di visualizzazione mentre digiti."
 
 msgid ""
 "You can move your Label node in the viewport by selecting the move tool in "
 "the toolbar."
 msgstr ""
+"Puoi muovere il tuo nodo Label nel Viewport selezionando lo strumento muovi "
+"nella barra degli strumenti."
 
 msgid ""
 "With the Label selected, click and drag anywhere in the viewport to move it "
 "to the center of the view delimited by the rectangle."
 msgstr ""
+"Con la Label selezionata, premi e trascina ovunque nel Viewport per muoverlo "
+"al centro della vista delimitata dal rettangolo."
 
 #, fuzzy
 msgid "Running the scene"
@@ -215,12 +267,14 @@ msgstr ""
 "alto a destra dello schermo o premi :kbd:`F6`."
 
 msgid "A popup invites you to save the scene, which is required to run it."
-msgstr ""
+msgstr "Un popup ti invita a salvare la scena, che è richiesta per avviarlo."
 
 msgid ""
 "Click the Yes button, and in the file browser that appears, press the Save "
 "button to save it as \"Label.tscn\"."
 msgstr ""
+"Premi il tasto Sì, e nel navigatore file che appare, seleziona il tasto "
+"Salva per salvarlo come \"Label.tscn\"."
 
 msgid ""
 "The Save Scene As dialog, like other file dialogs in the editor, only allows "
@@ -230,13 +284,18 @@ msgid ""
 "`doc_filesystem`."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "The application should open in a new window and display the text \"Hello "
 "World\"."
 msgstr ""
+"L'applicazione dovrebbe aprirsi in una nuova finestra e visualizzare il "
+"testo \"Hello World\"."
 
+#, fuzzy
 msgid "Close the window or press :kbd:`F8` to quit the running scene."
 msgstr ""
+"Chiudi la finestra o premi :kbd:`F8` per uscire dalla scena in esecuzione."
 
 #, fuzzy
 msgid ""
@@ -258,18 +317,27 @@ msgid ""
 "`F5` (:kbd:`Cmd + B` on macOS) to do so."
 msgstr ""
 
+#, fuzzy
 msgid "A popup window appears and invites you to select the main scene."
 msgstr ""
+"Viene visualizzata una finestra popup che invita a selezionare la scena "
+"principale."
 
+#, fuzzy
 msgid ""
 "Click the Select button, and in the file dialog that appears, double click "
 "on Label.tscn."
 msgstr ""
+"Fare clic sul pulsante Seleziona e, nella finestra di dialogo del file che "
+"appare, fare doppio clic su Label.tscn."
 
+#, fuzzy
 msgid ""
 "The demo should run again. Moving forward, every time you run the project, "
 "Godot will use this scene as a starting point."
 msgstr ""
+"La demo dovrebbe essere eseguita di nuovo. Andando avanti, ogni volta che "
+"eseguirai il progetto, Godot utilizzerà questa scena come punto di partenza."
 
 msgid ""
 "The editor saves the main scene's path in a project.godot file in your "
@@ -278,10 +346,13 @@ msgid ""
 "window to do so."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "In the next part, we will discuss another key concept in games and in Godot: "
 "creating instances of a scene."
 msgstr ""
+"Nella prossima parte, discuteremo un altro concetto chiave nei giochi e in "
+"Godot: la creazione di istanze di una scena."
 
 msgid "Translation status"
 msgstr "Stato della traduzione"

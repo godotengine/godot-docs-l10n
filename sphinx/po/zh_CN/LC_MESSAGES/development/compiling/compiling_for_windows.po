@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -301,9 +301,8 @@ msgstr ""
 "``bin/`` 文件夹中创建一个名为 ``._sc_`` 或 ``_sc_`` 的文件来启用 :ref:"
 "`doc_data_paths_self_contained_mode`\\ 。"
 
-#, fuzzy
 msgid "Development in Visual Studio"
-msgstr "在 Visual Studio 或其他 IDE 中进行开发"
+msgstr "在 Visual Studio 中进行开发"
 
 msgid ""
 "Using an IDE is not required to compile Godot, as SCons takes care of "
@@ -311,12 +310,16 @@ msgid ""
 "engine's C++ code, you may be interested in configuring a code editor or an "
 "IDE."
 msgstr ""
+"编译 Godot 不需要使用 IDE，SCons 会处理所有事情。但是如果你想要做引擎开发，或"
+"者调试引擎的 C++ 代码，你可能会对配置代码编辑器或者 IDE 感兴趣。"
 
 msgid ""
 "Folder-based editors don't require any particular setup to start working "
 "with Godot's codebase. To edit projects with Visual Studio they need to be "
 "set up as a solution."
 msgstr ""
+"基于文件夹的编辑器不需要任何特殊的设置就可以开始使用 Godot 的代码库。要使用 "
+"Visual Studio 来编辑项目，需要先设置解决方案。"
 
 msgid ""
 "You can create a Visual Studio solution via SCons by running SCons with the "
@@ -332,9 +335,8 @@ msgstr ""
 "您现在可以在 Visual Studio 解决方案中打开 Godot 的源代码，并能够通过 Visual "
 "Studio 的\\ **构建**\\ 按钮构建 Godot。"
 
-#, fuzzy
 msgid "See :ref:`doc_configuring_an_ide_vs` for further details."
-msgstr "SCons 3.0+ (详见 :ref:`doc_compiling_for_windows` )."
+msgstr "详情请参阅 :ref:`doc_configuring_an_ide_vs`。"
 
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr "从其他操作系统为 Windows 交叉编译"

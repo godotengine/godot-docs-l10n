@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Moving the player with code"
-msgstr "プレイヤーを動かす"
+msgstr "プログラムでプレイヤーを動かす"
 
 msgid ""
 "It's time to code! We're going to use the input actions we created in the "
@@ -83,7 +82,7 @@ msgstr ""
 msgid ""
 "These four conditions give us eight possibilities and eight possible "
 "directions."
-msgstr ""
+msgstr "この4つの条件は8つの可能性そして8つの可能な方向を与えます。"
 
 msgid ""
 "In case the player presses, say, both W and D simultaneously, the vector "
@@ -96,6 +95,8 @@ msgid ""
 "Here, we only normalize the vector if the direction has a length greater "
 "than zero, which means the player is pressing a direction key."
 msgstr ""
+"ここでは、方向が0より大きい長さを持つ場合、つまりプレイヤーが方向キーを押して"
+"いる場合にのみ、このベクトルを正規化(normalize)します。"
 
 msgid ""
 "In this case, we also get the *Pivot* node and call its ``look_at()`` "
@@ -134,6 +135,9 @@ msgid ""
 "seem strange if it's already on the floor. But we have to do this for the "
 "character to collide with the ground every frame."
 msgstr ""
+"この行によってキャラクターは全てのフレームで落下します。キャラクターがすでに"
+"床の上にいる場合は、これは奇妙に思えるかもしれません。しかし、キャラクターを"
+"全てのフレームで地面に衝突させるためには、このようにしなければなりません。"
 
 msgid ""
 "The physics engine can only detect interactions with walls, the floor, or "

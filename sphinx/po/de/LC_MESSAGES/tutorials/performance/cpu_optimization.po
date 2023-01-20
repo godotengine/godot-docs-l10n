@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,6 @@ msgstr "CPU-Optimierungen"
 msgid "Measuring performance"
 msgstr "Leistung messen"
 
-#, fuzzy
 msgid ""
 "We have to know where the \"bottlenecks\" are to know how to speed up our "
 "program. Bottlenecks are the slowest parts of the program that limit the "
@@ -32,12 +31,13 @@ msgid ""
 "greatest speed improvement, instead of spending a lot of time optimizing "
 "functions that will lead to small performance improvements."
 msgstr ""
-"Um Programm beschleunigen können müssen wir wissen wo die \"Engpässe\" "
-"liegen. Engpässe sind die langsamsten Teile des Programms, die die "
-"Geschwindigkeit begrenzen, mit der alles voranschreitet. Dies ermöglicht es "
-"uns auf die Optimierung der Bereiche zu konzentrieren, die uns die größte "
-"Geschwindigkeitsverbesserung bringen, anstatt viel Zeit damit zu verbringen "
-"Funktionen zu optimieren, die nur kleine Leistungsverbesserungen bringen."
+"Um unser Programm beschleunigen zu können, müssen wir wissen, wo die "
+"\"Engpässe\" liegen. Engpässe sind die langsamsten Teile des Programms, die "
+"die Geschwindigkeit begrenzen, mit der alles voranschreitet. Dies ermöglicht "
+"es, dass wir uns auf die Optimierung der Bereiche konzentrieren, die uns die "
+"größte Geschwindigkeitsverbesserung bringen, anstatt viel Zeit damit zu "
+"verbringen, Funktionen zu optimieren, die nur kleine Leistungsverbesserungen "
+"bringen."
 
 msgid ""
 "For the CPU, the easiest way to identify bottlenecks is to use a profiler."

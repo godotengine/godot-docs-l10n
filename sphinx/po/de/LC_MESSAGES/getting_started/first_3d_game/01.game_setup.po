@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Setting up the game area"
-msgstr "Die Szene einrichten"
+msgstr "Einrichten des Spielbereichs"
 
 msgid ""
 "In this first part, we're going to set up the game area. Let's get started "
 "by importing the start assets and setting up the game scene."
 msgstr ""
+"In diesem ersten Teil werden wir den Spielbereich einrichten. Beginnen wir "
+"mit dem Importieren der Start-Assets und dem Einrichten der Spielszene."
 
 msgid ""
 "We've prepared a Godot project with the 3D models and sounds we'll use for "
@@ -32,11 +33,19 @@ msgid ""
 "download the archive here: `Squash the Creeps assets <https://github.com/"
 "GDQuest/godot-3d-dodge-the-creeps/releases/tag/1.0.0>`__."
 msgstr ""
+"Wir haben ein Godot-Projekt mit 3D Modellen und Soundeffekten vorbereitet, "
+"welche wir für dieses Tutorial nutzen werden (verlinkt in der Indexseite). "
+"Falls du das noch nicht getan hast, kannst du das Archiv hier herunterladen: "
+"\"Squash the Creeps Assets \"https://github.com/GDQuest/godot-3d-dodge-the-"
+"creeps/releases/tag/1.0.0\"\"."
 
 msgid ""
 "Once you downloaded it, extract the .zip archive on your computer. Open the "
 "Godot project manager and click the *Import* button."
 msgstr ""
+"Nachdem Sie es heruntergeladen haben, extrahieren Sie das .zip-Archiv auf "
+"Ihrem Computer. Öffnen Sie den Godot-Projektmanager und klicken Sie auf die "
+"Schaltfläche *Import*."
 
 msgid "|image1|"
 msgstr "|image1|"
@@ -50,6 +59,11 @@ msgid ""
 "to open a file browser and navigate to the ``project.godot`` file the folder "
 "contains."
 msgstr ""
+"Geben Sie im Popup-Fenster \"Import\" den vollständigen Pfad zu dem neu "
+"erstellten Verzeichnis ``squash_the_creeps_start/`` ein. Sie können auf die "
+"Schaltfläche *Durchsuchen* auf der rechten Seite klicken, um einen "
+"Dateibrowser zu öffnen und zu der Datei ``project.godot`` zu navigieren, die "
+"der Ordner enthält."
 
 msgid "|image2|"
 msgstr "|image2|"
@@ -57,10 +71,9 @@ msgstr "|image2|"
 msgid "image2"
 msgstr "image2"
 
-#, fuzzy
 msgid "Click *Import & Edit* to open the project in the editor."
 msgstr ""
-"Klicken Sie auf **Installieren & Bearbeiten**, um das Projekt im Editor zu "
+"Klicken Sie auf *Importieren & Bearbeiten*, um das Projekt im Editor zu "
 "öffnen."
 
 msgid "|image3|"
@@ -73,6 +86,9 @@ msgid ""
 "The start project contains an icon and two folders: ``art/`` and ``fonts/``. "
 "There, you will find the art assets and music we'll use in the game."
 msgstr ""
+"Das Startprojekt enthält ein Icon und zwei Ordner: ``art/`` und ``fonts/``. "
+"Dort finden Sie die grafischen Elemente (Assets) und die Musik, die wir im "
+"Spiel verwenden werden."
 
 msgid "|image4|"
 msgstr "|image4|"
@@ -84,10 +100,11 @@ msgid ""
 "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that "
 "belong to these models, and a music track."
 msgstr ""
+"Es gibt zwei 3D-Modelle, ``player.glb`` und ``mob.glb``, einige zu diesen "
+"Modellen gehörende Materialien, und einen Musiktitel."
 
-#, fuzzy
 msgid "Setting up the playable area"
-msgstr "Projekt einrichten"
+msgstr "Einrichten des spielbaren Bereichs"
 
 msgid ""
 "We're going to create our main scene with a plain *Node* as its root. In the "
@@ -96,6 +113,12 @@ msgid ""
 "to add a node to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` "
 "on macOS)."
 msgstr ""
+"Wir werden unsere Hauptszene mit einem einfachen *Node* als Wurzel "
+"erstellen. Klicken Sie im Andockfenster *Scene* auf die Schaltfläche *Add "
+"Node*, die durch ein \"+\"-Symbol oben links dargestellt wird, und "
+"doppelklicken Sie auf *Node*. Nennen Sie das Node \"Main\". Alternativ "
+"können Sie auch :kbd:`Strg + a` (oder :kbd:`Cmd + a` auf macOS) drücken, um "
+"ein Node zur Szene hinzuzufügen."
 
 msgid "|image5|"
 msgstr "|image5|"
@@ -103,13 +126,12 @@ msgstr "|image5|"
 msgid "image5"
 msgstr "image5"
 
-#, fuzzy
 msgid ""
 "Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
 "on macOS)."
 msgstr ""
-"Speichern Sie die Szene. Klicken Sie auf Szene -> Speichern oder drücken :"
-"kbd:`Ctrl + S` unter Windows/Linux oder :kbd:`Cmd + S` unter MacOS."
+"Speichern Sie die Szene als ``Main.tscn`` durch Drücken von :kbd:`Strg + s` "
+"(:kbd:`Cmd + s` auf macOS)."
 
 msgid ""
 "We'll start by adding a floor that'll prevent the characters from falling. "
@@ -118,11 +140,16 @@ msgid ""
 "collision area. With the *Main* node selected, add a *StaticBody* node, then "
 "a *CollisionShape*. Rename the *StaticBody* as *Ground*."
 msgstr ""
+"Wir beginnen mit dem Hinzufügen eines Bodens, der die Charaktere am Fallen "
+"hindert. Um statische Kollider wie den Boden, die Wände oder die Decken zu "
+"erstellen, können Sie das *StaticBody* -Node verwenden. Sie benötigen "
+"*CollisionShape* Unternodes, um den Kollisionsbereich zu definieren. Fügen "
+"Sie bei ausgewähltem *Main*-Node ein *StaticBody*-Node und dann ein "
+"*CollisionShape*-Node hinzu. Benennen Sie den *StaticBody* in *Ground* um."
 
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
 msgstr "|image6|"
 
@@ -131,11 +158,13 @@ msgid ""
 "defined its shape. If you click the icon, a popup appears to give you more "
 "information."
 msgstr ""
+"Neben *CollisionShape* erscheint ein Warnzeichen, da die Form nicht "
+"definiert wurde. Wenn Sie auf das Symbol klicken, erscheint ein Popup-"
+"Fenster, das Ihnen weitere Informationen gibt."
 
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
 msgstr "|image7|"
 
@@ -144,11 +173,13 @@ msgid ""
 "*Inspector* and click the *[empty]* field next to the *Shape* property. "
 "Create a new *Box Shape*."
 msgstr ""
+"Um eine Form zu erstellen, wählen Sie die *CollisionShape* aus, wechseln Sie "
+"zum *Inspector* und klicken Sie auf das *[leere]* Feld neben der "
+"*Eigenschaft Shape*. Erstellen Sie eine neue *Box Shape*."
 
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
 msgstr "|image8|"
 
@@ -156,6 +187,8 @@ msgid ""
 "The box shape is perfect for flat ground and walls. Its thickness makes it "
 "reliable to block even fast-moving objects."
 msgstr ""
+"Die Kastenform ist perfekt für flache Böden und Wände. Dank seiner Dicke "
+"blockiert er auch zuverlässig sich schnell bewegende Objekte."
 
 msgid ""
 "A box's wireframe appears in the viewport with three orange dots. You can "
@@ -164,11 +197,16 @@ msgid ""
 "the resource. Set its *Extents* to ``30`` on the X axis, ``1`` for the Y "
 "axis, and ``30`` for the Z axis."
 msgstr ""
+"Das Drahtgitter einer Box wird im Ansichtsfenster mit drei orangefarbenen "
+"Punkten angezeigt. Sie können diese anklicken und ziehen, um die Ausmaße der "
+"Form interaktiv zu bearbeiten. Sie können auch die Größe im Inspektor genau "
+"festlegen. Klicken Sie auf die *BoxShape*, um die Ressource zu erweitern. "
+"Stellen Sie die *Ausdehnung* auf ``30`` für die X-Achse, ``1`` für die Y-"
+"Achse und ``30`` für die Z-Achse ein."
 
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
 msgstr "|image9|"
 
@@ -178,17 +216,23 @@ msgid ""
 "units tall. The ground plane is defined by the X and Z axes, while the Y "
 "axis represents the height."
 msgstr ""
+"In 3D werden Translations und Größen Einheiten in Metern wiedergespiegelt. "
+"Die insgesamte Größe der Box ist das Doppelte seiner Maße: ``60`` zu ``60`` "
+"Meter auf der Grundebene und ``2`` Meter hoch. Die Grundebene liegt auf der "
+"X und Z Achse, während die Y Achse Höhe repräsentiert."
 
 msgid ""
 "Collision shapes are invisible. We need to add a visual floor that goes "
 "along with it. Select the *Ground* node and add a *MeshInstance* as its "
 "child."
 msgstr ""
+"Kollisionsformen sind unsichtbar. Wir sollten deswegen auch noch einen "
+"dazugehörigen Visuellen Boden hinzufügen. Wählen Sie das *Ground* Node aus "
+"und fügen Sie eine *MeshInstance* als Unternode hinzu."
 
 msgid "|image10|"
 msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
 msgstr "|image10|"
 
@@ -202,7 +246,6 @@ msgstr ""
 msgid "|image11|"
 msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
 msgstr "|image11|"
 
@@ -221,7 +264,6 @@ msgstr ""
 msgid "|image12|"
 msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
 msgstr "|image12|"
 
@@ -238,11 +280,15 @@ msgid ""
 "`Cmd` on macOS), and click and drag down on the Y axis. It's the green arrow "
 "in the move gizmo."
 msgstr ""
+"Wir werden den Boden nach unten verschieben, damit wir das Bodenraster sehen "
+"können. Wählen sie das *Ground* Node aus, halten Sie die :kbd:`Ctrl` Taste "
+"gedrückt um das Einrasten des Rasters zu aktivieren (:kbd:`Cmd` auf macOS), "
+"und klicken und ziehen Sie auf der Y-Achse nach unten. Das ist der grüne "
+"Pfeil im Bewegungs-Gizmo."
 
 msgid "|image13|"
 msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
 msgstr "|image13|"
 
@@ -250,11 +296,13 @@ msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
 "the *Select Mode* is active in the toolbar above the view."
 msgstr ""
+"Wenn Sie den 3D-Objektmanipulator nicht wie auf dem obrigen Bild sehen "
+"können, stellen Sie sicher dass der *Auswahlmodus* in der Werkzeugleiste "
+"über der Ansicht aktiv ist."
 
 msgid "|image14|"
 msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
 msgstr "|image14|"
 
@@ -262,19 +310,23 @@ msgid ""
 "Move the ground down ``1`` meter. A label in the bottom-left corner of the "
 "viewport tells you how much you're translating the node."
 msgstr ""
+"Bewegen Sie den Boden ``1`` Meter nach unten. Eine Beschriftung in der "
+"unteren linken Ecke ders Ansichtfensters zeigt an, um wie viel Sie das Node "
+"verschieben."
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
-#, fuzzy
 msgid "image15"
-msgstr "|image1|"
+msgstr "|image15|"
 
 msgid ""
 "Moving the *Ground* node down moves both children along with it. Ensure you "
 "move the *Ground* node, **not** the *MeshInstance* or the *CollisionShape*."
 msgstr ""
+"Wenn sie das *Ground* Node nach unten verschieben, werden beide Unternodes "
+"mitverschoben. Stellen sie sicher dass sie das *Ground* Node verschieben und "
+"**nicht** die *MeshInstance* oder die *CollisionShape*."
 
 msgid ""
 "Let's add a directional light so our scene isn't all grey. Select the *Main* "
@@ -283,34 +335,40 @@ msgid ""
 "arrow and click and drag on the red arc to rotate it around the X axis, "
 "until the ground is lit."
 msgstr ""
+"Fügen wir nun ein gerichtetes Licht hinzu, damit unsere Szene nicht komplett "
+"grau ist. Wählen Sie das *Main* Node aus und fügen sie ein "
+"*DirectionalLight* als Unternode hinzu. Wir sollten es verschieben und "
+"drehen. Verschieben Sie es nach oben indem sie auf den grünen Pfeil des "
+"Manipulators klicken und ziehen, und klicken und ziehen sie dann den roten "
+"Bogen, um das Licht um die X-Achse zu drehen, bis der Boden beleuchtet wird."
 
 msgid ""
 "In the *Inspector*, turn on *Shadow -> Enabled* by clicking the checkbox."
 msgstr ""
+"Schalten Sie im *Inspektor* *Shadow -> Enabled* ein, indem sie das "
+"Kontrollkästchen anklicken."
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
-#, fuzzy
 msgid "image16"
-msgstr "|image1|"
+msgstr "|image16|"
 
 msgid "At this point, your project should look like this."
 msgstr "Zu diesem Zeitpunkt sollte dein Projekt wie folgt aussehen."
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
-#, fuzzy
 msgid "image17"
-msgstr "|image1|"
+msgstr "|image17|"
 
 msgid ""
 "That's our starting point. In the next part, we will work on the player "
 "scene and base movement."
 msgstr ""
+"Das ist unser Ausgangspunkt. In dem nächsten Teil werden wir an unserer "
+"Spielerszene und simpler Bewegung arbeiten."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

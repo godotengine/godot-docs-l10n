@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,7 +47,6 @@ msgstr ""
 msgid "Project setup"
 msgstr "Projektkonfiguration"
 
-#, fuzzy
 msgid ""
 "This demo will use the following tiles taken from Kenney's \"Abstract "
 "Platformer\" art pack. You can find the complete set `here <https://kenney."
@@ -163,11 +162,11 @@ msgid ""
 "other properties. When the game runs, the TileMap combines the individual "
 "tiles into a single object."
 msgstr ""
-"Sobald Sie Ihre TileMap konfiguriert haben, ist es Zeit, ein :ref:`TileSet "
-"<class_TileSet>` hinzuzufügen. Ein TileSet ist eine :ref:`Resource "
-"<class_Resource>`, die die Daten zu Ihren Kacheln enthält: deren Texturen, "
-"Kollisionsformen und andere Eigenschaften. Wenn das Spiel läuft, kombiniert "
-"die TileMap die einzelnen Kacheln zu einem einzigen Objekt."
+"Sobald Sie Ihre TileMap konfiguriert haben ist es an der Zeit ein :ref:"
+"`TileSet <class_TileSet>` hinzuzufügen. Ein TileSet ist eine :ref:`Resource "
+"<class_Resource>`, welche die Daten  für jegliche Tiles enthält: Texturen, "
+"Collision Shapes und andere Eigenschaften. Wenn das Spiel läuft werden die "
+"einzelnen Tiles zu einem einzigen Objekt kombiniert."
 
 msgid ""
 "To add a new TileSet, click on the \"Tile Set\" property and select \"New "
@@ -567,7 +566,6 @@ msgstr ""
 msgid "3x3"
 msgstr "3x3"
 
-#, fuzzy
 msgid ""
 "In 3x3 mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 center)"
 msgstr "Im 3x3 Modus enthält jede Bitmaske 9 Bits (4 Ecken, 4 Ränder, 1 Mitte)"
@@ -636,17 +634,16 @@ msgstr ""
 msgid "Tips and tricks"
 msgstr "Tipps und Tricks"
 
-#, fuzzy
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
 "Settings and enable **Use Gpu Pixel Snap** in the **Rendering > 2d > "
 "Snapping** section."
 msgstr ""
-"Wenn Sie eine :ref:`Camera2D <class_Camera2D>` verwenden, um Ihren Level zu "
+"Wird eine :ref:`Camera2D <class_Camera2D>` verwendet, um Ihren Level zu "
 "scrollen, kann es vorkommen, dass Linien zwischen den Kacheln erscheinen. Um "
 "dies zu beheben, öffnen Sie die Projekteinstellungen und aktivieren Sie "
-"\"Pixel Snap verwenden\" im Abschnitt \"Rendering/Qualität\"."
+"\"GPU Pixel Snap verwenden\" im Abschnitt \"Rendering > 2D > Snapping\"."
 
 msgid ""
 "You can flip and rotate tiles using the icons at the top right of the editor."

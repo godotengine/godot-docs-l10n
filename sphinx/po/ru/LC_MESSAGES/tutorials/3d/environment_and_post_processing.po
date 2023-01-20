@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -277,7 +277,7 @@ msgstr ""
 "света. На практике это делает свет более заметным на фоне тумана."
 
 msgid "Tonemap"
-msgstr ""
+msgstr "Карта тональности"
 
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr "*Эта функция доступна только при использовании бэкенда GLES3*"
@@ -533,15 +533,18 @@ msgstr ""
 "экрана для аппроксимации шероховатости в объектах с данной характеристикой "
 "материала."
 
+#, fuzzy
 msgid ""
 "Keep in mind that screen-space-reflections only work for reflecting opaque "
-"geometry. Transparent objects can't be reflected."
+"geometry. Transparent materials won't be reflected, as they don't write to "
+"the depth buffer. This also applies to shaders that use ``SCREEN_TEXTURE`` "
+"or ``DEPTH_TEXTURE``."
 msgstr ""
 "Помните, что отражения в пространстве экрана работают только для отражения "
 "непрозрачной геометрии. Прозрачные объекты не могут быть отражены."
 
 msgid "Screen-Space Ambient Occlusion (SSAO)"
-msgstr ""
+msgstr "Затенение окружающего пространства экрана (SSAO)"
 
 msgid ""
 "As mentioned in the **Ambient** section, areas where light from light nodes "

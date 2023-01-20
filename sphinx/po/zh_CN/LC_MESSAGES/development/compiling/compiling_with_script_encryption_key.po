@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,22 +20,23 @@ msgstr ""
 msgid "Compiling with script encryption key"
 msgstr "使用脚本加密密钥编译"
 
-#, fuzzy
 msgid ""
 "The export dialog gives you the option to encrypt your scripts with a 256-"
 "bit AES key when releasing your project. This will make sure your scripts "
 "are not stored in plain text and can not easily be ripped by some script "
 "kiddie."
 msgstr ""
-"要发布游戏时，导出对话框为您提供了使用 256 位 AES 密钥加密脚本的选项。这样可"
-"以确保您的脚本不会以纯文本格式存储，不会被某些脚本小子轻易解包。当然，密钥需"
-"要存储在二进制文件中，但是如果对其进行了编译、优化，并且不带符号，则将需要花"
-"费一些功夫才能找到它。"
+"发布项目时，导出对话框为您提供了使用 256 位 AES 密钥加密脚本的选项。这样可以"
+"确保您的脚本不会以纯文本格式存储，不会被某些脚本小子轻易解包。当然，密钥需要"
+"存储在二进制文件中，但是如果对其进行了编译、优化，并且不带符号，则将需要花费"
+"一些功夫才能找到它。"
 
 msgid ""
 "Of course, the key needs to be stored in the binary, but if it's compiled, "
 "optimized and without symbols, it would take some effort to find it."
 msgstr ""
+"当然，密钥需要存储在二进制文件中，但是经过编译、优化、去除符号后，是需要花费"
+"一些精力才能找到的。"
 
 msgid ""
 "For this to work, you need to build the export templates from source, with "
@@ -47,11 +48,12 @@ msgid ""
 "is absolutely **required** to compile your own export templates to use PCK "
 "encryption."
 msgstr ""
+"如果你使用官方预编译的导出模板，是\\ **不会**\\ 起作用的。要使用 PCK 加密，绝"
+"对\\ **必须**\\ 自己编译导出模板。"
 
 msgid "Step by step"
 msgstr "渐进式教程"
 
-#, fuzzy
 msgid ""
 "Generate a 256-bit AES key in hexadecimal format. You can use the aes-256-"
 "cbc variant from `this service <https://asecuritysite.com/encryption/"
@@ -60,11 +62,12 @@ msgstr ""
 "生成十六进制的 256 位 AES 密钥。您可以使用\\ `此服务 <https://asecuritysite."
 "com/encryption/keygen>`_\\ 的 aes-256-cbc 版本。"
 
-#, fuzzy
 msgid ""
 "Alternatively, you can generate it yourself using `OpenSSL <https://www."
 "openssl.org/>`__ command-line tools:"
-msgstr "或者，您可以通过使用 OpenSSL 自己生成："
+msgstr ""
+"或者，您可以通过使用 `OpenSSL <https://www.openssl.org/>`__ 命令行工具自己生"
+"成："
 
 msgid "The output in ``godot.gdkey`` should be similar to:"
 msgstr "``godot.gdkey`` 中的输出应该类似："
@@ -85,9 +88,8 @@ msgid ""
 "the export preset options."
 msgstr "编译 Godot 导出模板，并在导出预设的选项中将它们设置为自定义导出模板。"
 
-#, fuzzy
 msgid "Set the encryption key in the **Script** tab of the export preset:"
-msgstr "在导出预设的 ``脚本`` 选项卡中设置加密密钥："
+msgstr "在导出预设的\\ **脚本**\\ 选项卡中设置加密密钥："
 
 msgid "Export the project. The game should run with encrypted scripts now."
 msgstr "导出项目。游戏现在应该使用加密脚本运行。"

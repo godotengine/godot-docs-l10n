@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,11 +36,11 @@ msgid ""
 "The SurfaceTool also provides some useful helper functions like ``index()`` "
 "and ``generate_normals()``."
 msgstr ""
-"SurfaceTool还提供了一些有用的辅助函数, 如 ``index()`` 和 "
-"``generate_normals()`` ."
+"SurfaceTool 还提供了一些有用的辅助函数，如 ``index()`` 和 "
+"``generate_normals()``\\ 。"
 
 msgid "Attributes are added before each vertex is added:"
-msgstr "属性是在添加每个顶点之前添加的:"
+msgstr "属性是在添加每个顶点之前添加的："
 
 msgid ""
 "When finished generating your geometry with the :ref:`SurfaceTool "
@@ -88,12 +88,13 @@ msgstr ""
 "时有效。"
 
 msgid ""
-"If you don't add custom tangents, they can be added with "
-"``generate_tangents()``, but it requires that each vertex have UVs and "
+"You may notice that normal mapping or other material properties look broken "
+"on the generated mesh. This is because normal mapping **requires** the mesh "
+"to feature *tangents*, which are separate from *normals*. You can either add "
+"custom tangents manually, or generate them automatically with with "
+"``generate_tangents()``. This method requires that each vertex have UVs and "
 "normals set already."
 msgstr ""
-"如果你不想添加自定义切线，那么可以使用 ``generate_tangents()`` 来添加，不过这"
-"个函数要求每个顶点都已经设好 UV 和法线。"
 
 msgid ""
 "By default, when generating normals, they will be calculated on a per-face "

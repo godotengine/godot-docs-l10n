@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,13 +63,12 @@ msgstr ""
 "ただし、アセットが承認されるためには、アセットが承認されるために満たす必要が"
 "ある要件がいくつかあります。"
 
-#, fuzzy
 msgid ""
 "The asset must **work**. If the asset doesn't run or otherwise doesn't work "
 "in the specified Godot version, then it will be rejected."
 msgstr ""
-"アセットは機能する必要があります。指定したGodotバージョンでアセットが実行され"
-"ない、または機能しない場合、拒否されます。"
+"アセットは**機能する**必要があります。指定したGodotバージョンでアセットが実行"
+"されない、または機能しない場合、拒否されます。"
 
 msgid ""
 "The asset must have a proper **.gitignore** file. It's important to keep "
@@ -77,15 +76,14 @@ msgid ""
 "githubusercontent.com/aaronfranke/gitignore/godot/Godot.gitignore>`_"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "No **submodules**, or any submodules must be non-essential. GitHub does not "
 "include submodules in the downloaded ZIP file, so if the asset needs the "
 "contents of the submodule, your asset won't work."
 msgstr ""
-"サブモジュールがないか、サブモジュールは必須ではありません。 GitHubでは、ダウ"
-"ンロードしたZIPファイルにサブモジュールが含まれていないため、アセットにサブモ"
-"ジュールのコンテンツが必要な場合、アセットは機能しません。"
+"**サブモジュール** がないか、サブモジュールは必須ではありません。 GitHubで"
+"は、ダウンロードしたZIPファイルにサブモジュールが含まれていないため、アセット"
+"にサブモジュールのコンテンツが必要な場合、アセットは機能しません。"
 
 msgid ""
 "The **license** needs to be correct. The license listed on the asset library "
@@ -95,15 +93,15 @@ msgid ""
 "copyright holder."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Use proper **English** for the name and description of your asset. This "
 "includes using correct capitalization, and using full sentences in the "
 "description. You can also include other languages, but there should at least "
 "be an English version."
 msgstr ""
-"アセットの名前と説明に適切な英語を使用してください。これには、正しい大文字の"
-"使用、および説明内の完全な文の使用が含まれます。"
+"アセットの名前と説明に適切な **英語** を使用してください。これには、正しい大"
+"文字の使用、および説明内の完全な文の使用が含まれます。他の言語を含めることも"
+"可能ですが、少なくとも英語版は必要です。"
 
 #, fuzzy
 msgid ""
@@ -125,17 +123,15 @@ msgstr ""
 "これらはアセットの承認に必須ではありませんが、これらの推奨事項に従えば、すべ"
 "てのユーザーにとってアセットライブラリをより良い場所にすることができます。"
 
-#, fuzzy
 msgid ""
 "Fix or suppress all script **warnings**. The warning system is there to help "
 "identify issues with your code, but people using your asset don't need to "
 "see them."
 msgstr ""
-"すべてのスクリプト警告を修正または抑制します。警告システムはコードの問題を特"
-"定するのに役立ちますが、アセットを使用している人はそれらを見る必要はありませ"
-"ん。"
+"すべてのスクリプト **警告**を修正または抑制します。警告システムはコードの問題"
+"を特定するのに役立ちますが、アセットを使用している人はそれらを見る必要はあり"
+"ません。"
 
-#, fuzzy
 msgid ""
 "Make your code conform to the official **style guides**. Having a consistent "
 "style helps other people read your code, and it also helps if other people "
@@ -143,8 +139,8 @@ msgid ""
 "the :ref:`doc_c_sharp_styleguide`."
 msgstr ""
 "コードを公式のスタイルガイドに準拠させます。一貫したスタイルを持つことは、他"
-"の人があなたのコードを読むのを助け、他の人があなたの資産に貢献したい場合にも"
-"役立ちます。\\ :ref:`doc_gdscript_styleguide` または :ref:"
+"の人があなたのコードを読むのを助け、他の人があなたのアセットに貢献したい場合"
+"にも役立ちます。\\ :ref:`doc_gdscript_styleguide` または :ref:"
 "`doc_c_sharp_styleguide` を参照してください。"
 
 msgid ""
@@ -155,13 +151,12 @@ msgid ""
 "to create a file whose name starts with a period."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "If your asset is a library for working with other files, consider including "
 "**example files** in the asset."
 msgstr ""
-"アセットが他のファイルを操作するためのライブラリである場合、サンプルファイル"
-"をアセットに含めることを検討してください。"
+"アセットが他のファイルを操作するためのライブラリである場合、 **サンプルファイ"
+"ル** をアセットに含めることを検討してください。"
 
 msgid ""
 "Consider adding a **.gitattributes** file to your repo. This file allows "
@@ -172,12 +167,11 @@ msgid ""
 "These are common examples of **.gitattributes**:"
 msgstr ""
 
-#, fuzzy
 msgid "Projects / Templates"
-msgstr "プロジェクトファイル"
+msgstr "プロジェクト / テンプレート"
 
 msgid "Addons / Asset Packs"
-msgstr ""
+msgstr "アドオン／アセットパック"
 
 msgid ""
 "If you are submitting a plugin, add a **copy** of your license and readme to "

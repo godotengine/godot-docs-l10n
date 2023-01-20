@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,6 +74,9 @@ msgid ""
 "one being used by the mesh. As an example, this can be used to put a "
 "transparent shield effect on a mesh."
 msgstr ""
+"Свойство *Material Overlay* (Наложение материала) будет отображать материал "
+"**поверх** текущего материала, используемого сеткой. Например, это можно "
+"использовать для наложения эффекта прозрачного щита на сетку."
 
 msgid "Flags"
 msgstr "Флаги"
@@ -86,7 +89,7 @@ msgstr ""
 "поведением."
 
 msgid "Transparent"
-msgstr "Прозрачность"
+msgstr "Прозрачный"
 
 msgid ""
 "In Godot, materials are not transparent unless specifically configured to "
@@ -259,7 +262,7 @@ msgstr ""
 "Заставляет объект не принимать тени которые иначе были бы отброшены на него."
 
 msgid "Disable Ambient Light"
-msgstr "Отключить окружающий свет"
+msgstr "Отключить окружающие освещение"
 
 msgid ""
 "Makes the object not receive any kind of ambient lighting that would "
@@ -274,7 +277,7 @@ msgid "Fixes normals when non-uniform scaling is used."
 msgstr "Исправляет нормали при использовании неравномерного масштабирования."
 
 msgid "Vertex Color"
-msgstr "Цвет вершины"
+msgstr "Цвет вершин"
 
 #, fuzzy
 msgid ""
@@ -313,7 +316,7 @@ msgstr ""
 "настройки многих аспектов рендеринга:"
 
 msgid "Diffuse Mode"
-msgstr "Диффузный режим"
+msgstr "Режим смешения"
 
 msgid ""
 "Specifies the algorithm used by diffuse scattering of light when hitting the "
@@ -770,9 +773,13 @@ msgid ""
 "This can be seen in the image below where clearcoat is turned on in the "
 "right."
 msgstr ""
+"В релизах Godot 3 эффект едва уловимый, и для того, чтобы заметить разницу, "
+"может потребоваться особое освещение или наблюдение материала особым "
+"образом. Это можно увидеть на изображении ниже, где прозрачный слой включен "
+"справа."
 
 msgid "The effect will be more noticeable in Godot 4."
-msgstr ""
+msgstr "Изменения будут более заметны в Godot 4."
 
 msgid "Anisotropy"
 msgstr "Анизотропия"
