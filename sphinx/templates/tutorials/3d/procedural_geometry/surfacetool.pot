@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-09 16:03+0200\n"
+"POT-Creation-Date: 2023-01-20 14:58+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,10 +53,10 @@ msgid "If you don't add custom normals yourself, you can add them using ``genera
 msgstr ""
 
 #: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:95
-msgid "If you don't add custom tangents, they can be added with ``generate_tangents()``, but it requires that each vertex have UVs and normals set already."
+msgid "You may notice that normal mapping or other material properties look broken on the generated mesh. This is because normal mapping **requires** the mesh to feature *tangents*, which are separate from *normals*. You can either add custom tangents manually, or generate them automatically with with ``generate_tangents()``. This method requires that each vertex have UVs and normals set already."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:104
+#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:108
 msgid "By default, when generating normals, they will be calculated on a per-face basis. If you want smooth vertex normals, when adding vertices, call ``add_smooth_group()``. ``add_smooth_group()`` needs to be called while building the geometry, e.g. before the call to ``add_vertex()`` (if non-indexed) or ``add_index()`` (if indexed)."
 msgstr ""
 
