@@ -1,0 +1,57 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:4
+msgid "Using NavigationPathQueryObjects"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:6
+msgid "``NavigationPathQueryObjects`` can be used together with ``NavigationServer.query_path()`` to obtain a heavily **customized** navigation path including optional **meta data** about the path."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:9
+msgid "This requires more setup compared to obtaining a normal NavigationPath but lets you tailor the pathfinding and provided path data to the different needs of a project."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:12
+msgid "NavigationPathQueryObjects consist of a pair of objects, a ``NavigationPathQueryParameters`` object holding the customization options for the query and a ``NavigationPathQueryResult`` that receives (regular) updates with the resulting path and meta data from the query."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:15
+msgid "2D and 3D versions of ``NavigationPathQueryParameters`` are available as :ref:`NavigationPathQueryParameters2D<class_NavigationPathQueryParameters2D>` and :ref:`NavigationPathQueryParameters3D<class_NavigationPathQueryParameters3D>` respectively."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:19
+msgid "2D and 3D versions of ``NavigationPathQueryResult`` are available as :ref:`NavigationPathQuerResult2D<class_NavigationPathQueryResult2D>` and :ref:`NavigationPathQueryResult3D<class_NavigationPathQueryResult3D>` respectively."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:23
+msgid "Both parameters and result are used as a pair with the ``NavigationServer.query_path()`` function."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:25
+msgid "For the available customization options and their use see the class doc of the parameters."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationpathqueryobjects.rst:27
+msgid "While not a strict requirement, both objects are intended to be created once in advance, stored in a persistent variable for the agent and reused for every followup path query with updated parameters. This reuse avoids performance implications from frequent object creation if a project has a large quantity of simultaneous agents that regularly update their paths."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

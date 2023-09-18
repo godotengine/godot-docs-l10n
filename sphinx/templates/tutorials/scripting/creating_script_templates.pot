@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,164 +25,251 @@ msgid "Godot provides a way to use script templates as seen in the ``Script Crea
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:11
-msgid "A set of default script templates is provided by default, but it's also possible to modify existing and create new ones, both per project and the editor."
+msgid "A set of built-in script templates are provided with the editor, but it is also possible to create new ones and set them by default, both per project and at editor scope."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:15
-msgid "Locating the templates"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:17
-msgid "There are two places where templates can be managed."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:20
-msgid "Editor-defined templates"
+msgid "Templates are linked to a specific node type, so when you create a script you will only see the templates corresponding to that particular node, or one of its parent types. For example, if you are creating a script for a CharacterBody3D, you will only see templates defined for CharacterBody3Ds, Node3Ds or Nodes."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:22
-msgid "These are available globally throughout any project. The location of these templates are determined per each OS:"
+msgid "Locating the templates"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:25
-msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:26
-msgid "Linux: ``$HOME/.config/godot/script_templates/``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:24
+msgid "There are two places where templates can be managed."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:27
-msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
+msgid "Editor-defined templates"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:29
-msgid "If no ``script_templates`` is detected, Godot will create a default set of built-in templates automatically, so this logic can be used to reset the default templates in case you've accidentally overwritten them."
+msgid "These are available globally throughout any project. The location of these templates are determined per each OS:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:32
+msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:33
+msgid "Linux: ``$HOME/.config/godot/script_templates/``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:34
-msgid "Project-defined templates"
+msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:36
-msgid "The default path to search for templates is the ``res://script_templates/`` directory. The path can be changed by configuring the ``editor/script_templates_search_path`` setting in the :ref:`ProjectSettings <class_ProjectSettings>`, both via code and the editor."
+msgid "If no ``script_templates`` is detected, Godot will create a default set of built-in templates automatically, so this logic can be used to reset the default templates in case you've accidentally overwritten them."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:41
+msgid "Project-defined templates"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:43
+msgid "The default path to search for templates is the ``res://script_templates/`` directory. The path can be changed by configuring the ``editor/script_templates_search_path`` setting in the :ref:`ProjectSettings <class_ProjectSettings>`, both via code and the editor."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:48
 msgid "If no ``script_templates`` directory is found within a project, it is simply ignored."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:45
-msgid "Language support and overriding behavior"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:47
-msgid "Depending on whether a particular language implements a way to generate scripts out of templates, it's possible to create a template which can be recognized by that language according to template's file extension. For GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
-msgstr ""
-
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:52
+msgid "Template organization and naming"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:54
+msgid "Both editor and project defined templates are organized in the following way:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:60
+msgid "where:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:62
+msgid "``template_path`` is one of the 2 locations discussed in the previous two sections"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:64
+msgid "``node_type`` is the node it will apply to (for example, :ref:`Node <class_Node>`, or :ref:`CharacterBody3D <class_CharacterBody3D>`)"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:66
+msgid "``file`` is the custom name you can chose for the template (for example: ``platformer_movement`` or ``smooth_camera``)"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:68
+msgid "``extension``: will indicate which language the template will apply to (it should be ``gd`` for GDScript or ``cs`` for C#)"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:70
+msgid "For example:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:72
+msgid "``template_scripts/Node/smooth_camera.gd``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:73
+msgid "``template_scripts/CharacterBody3D/platformer_movement.gd``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:77
+msgid "Default behaviour and overriding it"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:79
+msgid "By default:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:81
+msgid "the template's name is the same as the file name (minus the extension, prettyfied)"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:83
+msgid "the description is empty"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:85
+msgid "the space indent is set to 4"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:87
+msgid "the template will not be set as the default for the given node"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:90
+msgid "It is possible to customize this behaviour by adding meta headers at the start of your file, like this:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:110
+msgid "In this case, the name will be set to \"Platformer movement\", with the given custom description, and it will be set as the default template for the node in which directory it has been saved."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:113
+msgid "This is an example of utilizing custom templates at editor and project level:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:117
 msgid "The script templates have the same extension as the regular script files. This may lead to an issue of a script parser treating those templates as actual scripts within a project. To avoid this, make sure to ignore the directory containing them by creating an empty ``.gdignore`` file. The directory won't be visible throughout the project's filesystem anymore, yet the templates can be modified by an external text editor anytime."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:59
-msgid "The built-in editor templates are automatically shadowed by the project-specific templates given both scripts have the same filename."
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:126
+msgid "By default, every C# file inside the project directory is included in the compilation. Script templates must be manually excluded from the C# project to avoid build errors. See `Exclude files from the build <https://learn.microsoft.com/en-us/visualstudio/msbuild/how-to-exclude-files-from-the-build>`_ in the Microsoft documentation."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:63
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:130
+msgid "It is possible to create editor-level templates that have the same level as a project-specific templates, and also that have the same name as a built-in one, all will be shown on the new script dialog."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:135
 msgid "Default template"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:65
-msgid "The ``Default`` template is always generated dynamically per language and cannot be configured nor overridden, but you can use these as the base for creating other templates."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:116
-msgid "List of template placeholders"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:118
-msgid "The following describes the complete list of built-in template placeholders which are currently implemented."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:122
-msgid "Base placeholders"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:125
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:147
-msgid "Placeholder"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:125
-msgid "Description"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:127
-msgid "``%CLASS%``"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:127
-msgid "The name of the new class (used in C# only)."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:129
-msgid "``%BASE%``"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:129
-msgid "The base type a new script inherits from."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:131
-msgid "``%TS%``"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:131
-msgid "Indentation placeholder. The exact type and number of whitespace characters used for indentation is determined by the ``text_editor/indent/type`` and ``text_editor/indent/size`` settings in the :ref:`EditorSettings <class_EditorSettings>` respectively."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:139
-msgid "Type placeholders"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:137
+msgid "To override the default template, create a custom template at editor or project level inside a ``Node`` directory (or a more specific type, if only a subtype wants to be overridden) and start the file with the ``meta-default: true`` header."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:141
-msgid "These are only relevant for GDScript with static typing. Whether these placeholders are actually replaced is determined by the ``text_editor/completion/add_type_hints`` setting in the :ref:`EditorSettings <class_EditorSettings>`."
+msgid "Only one template can be set as default at the same time for the same node type."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:147
-msgid "Value"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:143
+msgid "The ``Default`` templates for basic Nodes, for both GDScript and C#, are shown here so you can use these as the base for creating other templates:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:149
-msgid "``%INT_TYPE%``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:185
+msgid "The Godot editor provides a set of useful built-in node-specific templates, such as ``basic_movement`` for both :ref:`CharacterBody2D <class_CharacterBody2D>` and :ref:`CharacterBody3D <class_CharacterBody3D>` and ``plugin`` for :ref:`EditorPlugin <class_EditorPlugin>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:149
-msgid "``: int``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:191
+msgid "List of template placeholders"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:151
-msgid "``%STRING_TYPE%``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:193
+msgid "The following describes the complete list of built-in template placeholders which are currently implemented."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:151
-msgid "``: String``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:197
+msgid "Base placeholders"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:153
-msgid "``%FLOAT_TYPE%``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:200
+msgid "Placeholder"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:153
-msgid "``: float``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:200
+msgid "Description"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:155
-msgid "``%VOID_RETURN%``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:202
+msgid "``_BINDINGS_NAMESPACE_``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/creating_script_templates.rst:155
-msgid "``-> void``"
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:202
+msgid "The name of the Godot namespace (used in C# only)."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:204
+msgid "``_CLASS_``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:204
+msgid "The name of the new class (used in C# only)."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:206
+msgid "``_BASE_``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:206
+msgid "The base type a new script inherits from."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:208
+msgid "``_TS_``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:208
+msgid "Indentation placeholder. The exact type and number of whitespace characters used for indentation is determined by the ``text_editor/indent/type`` and ``text_editor/indent/size`` settings in the :ref:`EditorSettings <class_EditorSettings>` respectively. Can be overridden by the ``meta-space-indent`` header on the template."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:218
+msgid "Type placeholders"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:220
+msgid "There used to be, in Godot 3.x, placeholders for GDScript type hints that would get replaced whenever a template was used to create a new script, such as: ``%INT_TYPE%``, ``%STRING_TYPE%``, ``%FLOAT_TYPE%`` or ``%VOID_RETURN%``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:224
+msgid "The placeholders no longer work for Godot 4.x, but if the setting ``text_editor/completion/add_type_hints`` from :ref:`EditorSettings <class_EditorSettings>` is disabled, type hints for parameters and return types will be automatically removed for a few base types:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:230
+msgid "``int``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:231
+msgid "``String``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:232
+msgid "``Array[String]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:233
+msgid "``float``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:234
+msgid "``void``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/creating_script_templates.rst:235
+msgid "``:=`` will be transformed into ``=``"
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

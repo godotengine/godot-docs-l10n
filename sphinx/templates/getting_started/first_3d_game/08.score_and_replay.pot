@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,512 +16,444 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:4
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:6
 msgid "Score and replay"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:6
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:8
 msgid "In this part, we'll add the score, music playback, and the ability to restart the game."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:9
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:11
 msgid "We have to keep track of the current score in a variable and display it on screen using a minimal interface. We will use a text label to do that."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:12
-msgid "In the main scene, add a new *Control* node as a child of *Main* and name it *UserInterface*. You will automatically be taken to the 2D screen, where you can edit your User Interface (UI)."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:16
-msgid "Add a *Label* node and rename it to *ScoreLabel*."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:14
+msgid "In the main scene, add a new child node :ref:`Control <class_Control>` to ``Main`` and name it ``UserInterface``. You will automatically be taken to the 2D screen, where you can edit your User Interface (UI)."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:18
-msgid "|image0|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:457
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:457
-msgid "image0"
+msgid "Add a :ref:`Label <class_Label>` node and name it ``ScoreLabel``"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:20
-msgid "In the *Inspector*, set the *Label*'s *Text* to a placeholder like \"Score: 0\"."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:22
 msgid "|image1|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:458
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:458
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:451
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:451
 msgid "image1"
 msgstr ""
 
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:22
+msgid "In the *Inspector*, set the *Label*'s *Text* to a placeholder like \"Score: 0\"."
+msgstr ""
+
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:24
-msgid "Also, the text is white by default, like our game's background. We need to change its color to see it at runtime."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:27
-msgid "Scroll down to *Theme Overrides*, and expand *Colors* and click the black box next to *Font Color* to tint the text."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:30
 msgid "|image2|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:459
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:459
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:452
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:452
 msgid "image2"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:32
-msgid "Pick a dark tone so it contrasts well with the 3D scene."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:26
+msgid "Also, the text is white by default, like our game's background. We need to change its color to see it at runtime."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:34
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:29
+msgid "Scroll down to *Theme Overrides*, and expand *Colors* and enable *Font Color* in order to tint the text to black (which contrasts well with the white 3D scene)"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:33
 msgid "|image3|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:460
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:460
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:453
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:453
 msgid "image3"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:36
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:35
 msgid "Finally, click and drag on the text in the viewport to move it away from the top-left corner."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:39
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:38
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:461
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:461
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:454
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:454
 msgid "image4"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:41
-msgid "The *UserInterface* node allows us to group our UI in a branch of the scene tree and use a theme resource that will propagate to all its children. We'll use it to set our game's font."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:40
+msgid "The ``UserInterface`` node allows us to group our UI in a branch of the scene tree and use a theme resource that will propagate to all its children. We'll use it to set our game's font."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:46
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:45
 msgid "Creating a UI theme"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:48
-msgid "Once again, select the *UserInterface* node. In the *Inspector*, create a new theme resource in *Theme -> Theme*."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:47
+msgid "Once again, select the ``UserInterface`` node. In the *Inspector*, create a new theme resource in *Theme -> Theme*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:51
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:50
 msgid "|image5|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:462
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:462
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:455
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:455
 msgid "image5"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:53
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:52
 msgid "Click on it to open the theme editor In the bottom panel. It gives you a preview of how all the built-in UI widgets will look with your theme resource."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:56
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:55
 msgid "|image6|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:463
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:463
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:456
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:456
 msgid "image6"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:58
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:57
 msgid "By default, a theme only has one property, the *Default Font*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:62
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:61
 msgid "You can add more properties to the theme resource to design complex user interfaces, but that is beyond the scope of this series. To learn more about creating and editing themes, see :ref:`doc_gui_skinning`."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:66
-msgid "Click the *Default Font* property and create a new *DynamicFont*."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:65
+msgid "This one expects a font file like the ones you have on your computer. Two common font file formats are TrueType Font (TTF) and OpenType Font (OTF)."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:68
+msgid "In the *FileSystem* dock, expand the ``fonts`` directory and click and drag the ``Montserrat-Medium.ttf`` file we included in the project onto the *Default Font*. The text will reappear in the theme preview."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:72
+msgid "The text is a bit small. Set the *Default Font Size* to ``22`` pixels to increase the text's size."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:74
 msgid "|image7|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:464
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:464
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:457
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:457
 msgid "image7"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:70
-msgid "Expand the *DynamicFont* by clicking on it and expand its *Font* section. There, you will see an empty *Font Data* field."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:73
-msgid "|image8|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:465
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:465
-msgid "image8"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:75
-msgid "This one expects a font file like the ones you have on your computer. DynamicFont supports the following formats:"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:78
-msgid "TrueType (``.ttf``)"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:79
-msgid "OpenType (``.otf``)"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:80
-msgid "Web Open Font Format 1 (``.woff``)"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:81
-msgid "Web Open Font Format 2 (``.woff2``, since Godot 3.5)"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:83
-msgid "In the *FileSystem* dock, expand the ``fonts`` directory and click and drag the ``Montserrat-Medium.ttf`` file we included in the project onto the *Font Data*. The text will reappear in the theme preview."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:87
-msgid "The text is a bit small. Set the *Settings -> Size* to ``22`` pixels to increase the text's size."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:90
-msgid "|image9|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:466
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:466
-msgid "image9"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:93
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:77
 msgid "Keeping track of the score"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:95
-msgid "Let's work on the score next. Attach a new script to the *ScoreLabel* and define the ``score`` variable."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:79
+msgid "Let's work on the score next. Attach a new script to the ``ScoreLabel`` and define the ``score`` variable."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:112
-msgid "The score should increase by ``1`` every time we squash a monster. We can use their ``squashed`` signal to know when that happens. However, as we instantiate monsters from the code, we cannot do the connection in the editor."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:98
+msgid "The score should increase by ``1`` every time we squash a monster. We can use their ``squashed`` signal to know when that happens. However, because we instantiate monsters from the code, we cannot connect the mob signal to the ``ScoreLabel`` via the editor."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:116
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:102
 msgid "Instead, we have to make the connection from the code every time we spawn a monster."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:119
-msgid "Open the script ``Main.gd``. If it's still open, you can click on its name in the script editor's left column."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:105
+msgid "Open the script ``main.gd``. If it's still open, you can click on its name in the script editor's left column."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:122
-msgid "|image10|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:108
+msgid "|image8|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:467
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:467
-msgid "image10"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:458
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:458
+msgid "image8"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:124
-msgid "Alternatively, you can double-click the ``Main.gd`` file in the *FileSystem* dock."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:110
+msgid "Alternatively, you can double-click the ``main.gd`` file in the *FileSystem* dock."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:127
-msgid "At the bottom of the ``_on_MobTimer_timeout()`` function, add the following line."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:113
+msgid "At the bottom of the ``_on_mob_timer_timeout()`` function, add the following line:"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:147
-msgid "This line means that when the mob emits the ``squashed`` signal, the *ScoreLabel* node will receive it and call the function ``_on_Mob_squashed()``."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:133
+msgid "This line means that when the mob emits the ``squashed`` signal, the ``ScoreLabel`` node will receive it and call the function ``_on_mob_squashed()``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:150
-msgid "Head back to the ``ScoreLabel.gd`` script to define the ``_on_Mob_squashed()`` callback function."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:136
+msgid "Head back to the ``ScoreLabel.gd`` script to define the ``_on_mob_squashed()`` callback function."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:153
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:139
 msgid "There, we increment the score and update the displayed text."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:170
-msgid "The second line uses the value of the ``score`` variable to replace the placeholder ``%s``. When using this feature, Godot automatically converts values to text, which is convenient to output text in labels or using the ``print()`` function."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:156
+msgid "The second line uses the value of the ``score`` variable to replace the placeholder ``%s``. When using this feature, Godot automatically converts values to string text, which is convenient when outputting text in labels or when using the ``print()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:177
-msgid "You can learn more about string formatting here: :ref:`doc_gdscript_printf`."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:163
+msgid "You can learn more about string formatting here: :ref:`doc_gdscript_printf`. In C#, consider using `string interpolation with \"$\" <https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated>`_."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:179
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:166
 msgid "You can now play the game and squash a few enemies to see the score increase."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:182
-msgid "|image11|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:169
+msgid "|image9|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:468
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:468
-msgid "image11"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:459
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:459
+msgid "image9"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:186
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:173
 msgid "In a complex game, you may want to completely separate your user interface from the game world. In that case, you would not keep track of the score on the label. Instead, you may want to store it in a separate, dedicated object. But when prototyping or when your project is simple, it is fine to keep your code simple. Programming is always a balancing act."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:193
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:180
 msgid "Retrying the game"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:195
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:182
 msgid "We'll now add the ability to play again after dying. When the player dies, we'll display a message on the screen and wait for input."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:198
-msgid "Head back to the *Main* scene, select the *UserInterface* node, add a *ColorRect* node as a child of it and name it *Retry*. This node fills a rectangle with a uniform color and will serve as an overlay to darken the screen."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:185
+msgid "Head back to the ``main.tscn`` scene, select the ``UserInterface`` node, add a child node :ref:`ColorRect <class_ColorRect>`, and name it ``Retry``. This node fills a rectangle with a uniform color and will serve as an overlay to darken the screen."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:203
-msgid "To make it span over the whole viewport, you can use the *Layout* menu in the toolbar."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:190
+msgid "To make it span over the whole viewport, you can use the *Anchor Preset* menu in the toolbar."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:206
-msgid "|image12|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:193
+msgid "|image10|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:469
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:469
-msgid "image12"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:460
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:460
+msgid "image10"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:208
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:195
 msgid "Open it and apply the *Full Rect* command."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:210
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:197
+msgid "|image11|"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:461
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:461
+msgid "image11"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:199
+msgid "Nothing happens. Well, almost nothing; only the four green pins move to the corners of the selection box."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:202
+msgid "|image12|"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:462
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:462
+msgid "image12"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:204
+msgid "This is because UI nodes (all the ones with a green icon) work with anchors and margins relative to their parent's bounding box. Here, the ``UserInterface`` node has a small size and the ``Retry`` one is limited by it."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:208
+msgid "Select the ``UserInterface`` and apply *Anchor Preset -> Full Rect* to it as well. The ``Retry`` node should now span the whole viewport."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:211
+msgid "Let's change its color so it darkens the game area. Select ``Retry`` and in the *Inspector*, set its *Color* to something both dark and transparent. To do so, in the color picker, drag the *A* slider to the left. It controls the color's Alpha channel, that is to say, its opacity/transparency."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:216
 msgid "|image13|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:470
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:470
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:463
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:463
 msgid "image13"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:212
-msgid "Nothing happens. Well, almost nothing: only the four green pins move to the corners of the selection box."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:218
+msgid "Next, add a :ref:`Label <class_Label>` as a child of ``Retry`` and give it the *Text* \"Press Enter to retry.\" To move it and anchor it in the center of the screen, apply *Anchor Preset -> Center* to it."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:215
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:223
 msgid "|image14|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:471
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:471
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:464
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:464
 msgid "image14"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:217
-msgid "This is because UI nodes (all the ones with a green icon) work with anchors and margins relative to their parent's bounding box. Here, the *UserInterface* node has a small size and the *Retry* one is limited by it."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:221
-msgid "Select the *UserInterface* and apply *Layout -> Full Rect* to it as well. The *Retry* node should now span the whole viewport."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:224
-msgid "Let's change its color so it darkens the game area. Select *Retry* and in the *Inspector*, set its *Color* to something both dark and transparent. To do so, in the color picker, drag the *A* slider to the left. It controls the color's alpha channel, that is to say, its opacity."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:229
-msgid "|image15|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:472
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:472
-msgid "image15"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:231
-msgid "Next, add a *Label* as a child of *Retry* and give it the *Text* \"Press Enter to retry.\""
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:234
-msgid "|image16|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:473
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:473
-msgid "image16"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:236
-msgid "To move it and anchor it in the center of the screen, apply *Layout -> Center* to it."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:239
-msgid "|image17|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:474
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:474
-msgid "image17"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:242
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:226
 msgid "Coding the retry option"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:244
-msgid "We can now head to the code to show and hide the *Retry* node when the player dies and plays again."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:228
+msgid "We can now head to the code to show and hide the ``Retry`` node when the player dies and plays again."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:231
+msgid "Open the script ``main.gd``. First, we want to hide the overlay at the start of the game. Add this line to the ``_ready()`` function."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:247
-msgid "Open the script ``Main.gd``. First, we want to hide the overlay at the start of the game. Add this line to the ``_ready()`` function."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:265
 msgid "Then, when the player gets hit, we show the overlay."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:282
-msgid "Finally, when the *Retry* node is visible, we need to listen to the player's input and restart the game if they press enter. To do this, we use the built-in ``_unhandled_input()`` callback."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:264
+msgid "Finally, when the ``Retry`` node is visible, we need to listen to the player's input and restart the game if they press enter. To do this, we use the built-in ``_unhandled_input()`` callback, which is triggered on any input."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:286
-msgid "If the player pressed the predefined ``ui_accept`` input action and *Retry* is visible, we reload the current scene."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:268
+msgid "If the player pressed the predefined ``ui_accept`` input action and ``Retry`` is visible, we reload the current scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:308
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:290
 msgid "The function ``get_tree()`` gives us access to the global :ref:`SceneTree <class_SceneTree>` object, which allows us to reload and restart the current scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:313
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:295
 msgid "Adding music"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:315
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:297
 msgid "To add music that plays continuously in the background, we're going to use another feature in Godot: :ref:`autoloads <doc_singletons_autoload>`."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:318
-msgid "To play audio, all you need to do is add an *AudioStreamPlayer* node to your scene and attach an audio file to it. When you start the scene, it can play automatically. However, when you reload the scene, like we do to play again, the audio nodes are also reset, and the music starts back from the beginning."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:300
+msgid "To play audio, all you need to do is add an :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` node to your scene and attach an audio file to it. When you start the scene, it can play automatically. However, when you reload the scene, like we do to play again, the audio nodes are also reset, and the music starts back from the beginning."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:323
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:305
 msgid "You can use the autoload feature to have Godot load a node or a scene automatically at the start of the game, outside the current scene. You can also use it to create globally accessible objects."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:327
-msgid "Create a new scene by going to the *Scene* menu and clicking *New Scene*."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:309
+msgid "Create a new scene by going to the *Scene* menu and clicking *New Scene* or by using the *+* icon next to your currently opened scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:329
-msgid "|image18|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:312
+msgid "|image15|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:475
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:475
-msgid "image18"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:465
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:465
+msgid "image15"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:331
-msgid "Click the *Other Node* button to create an *AudioStreamPlayer* and rename it to *MusicPlayer*."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:314
+msgid "Click the *Other Node* button to create an :ref:`AudioStreamPlayer <class_AudioStreamPlayer>` and rename it to ``MusicPlayer``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:334
-msgid "|image19|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:317
+msgid "|image16|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:476
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:476
-msgid "image19"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:466
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:466
+msgid "image16"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:336
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:319
 msgid "We included a music soundtrack in the ``art/`` directory, ``House In a Forest Loop.ogg``. Click and drag it onto the *Stream* property in the *Inspector*. Also, turn on *Autoplay* so the music plays automatically at the start of the game."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:341
-msgid "|image20|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:324
+msgid "|image17|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:477
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:477
-msgid "image20"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:467
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:467
+msgid "image17"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:343
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:326
 msgid "Save the scene as ``MusicPlayer.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:345
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:328
 msgid "We have to register it as an autoload. Head to the *Project -> Project Settings…* menu and click on the *Autoload* tab."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:348
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:331
 msgid "In the *Path* field, you want to enter the path to your scene. Click the folder icon to open the file browser and double-click on ``MusicPlayer.tscn``. Then, click the *Add* button on the right to register the node."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:352
-msgid "|image21|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:335
+msgid "|image18|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:478
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:478
-msgid "image21"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:468
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:468
+msgid "image18"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:354
-msgid "If you run the game now, the music will play automatically. And even when you lose and retry, it keeps going."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:337
+msgid "``MusicPlayer.tscn`` now loads into any scene you open or play. So if you run the game now, the music will play automatically in any scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:357
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:340
 msgid "Before we wrap up this lesson, here's a quick look at how it works under the hood. When you run the game, your *Scene* dock changes to give you two tabs: *Remote* and *Local*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:361
-msgid "|image22|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:344
+msgid "|image19|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:479
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:479
-msgid "image22"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:469
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:469
+msgid "image19"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:363
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:346
 msgid "The *Remote* tab allows you to visualize the node tree of your running game. There, you will see the *Main* node and everything the scene contains and the instantiated mobs at the bottom."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:367
-msgid "|image23|"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:350
+msgid "|image20|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:480
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:480
-msgid "image23"
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:470
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:470
+msgid "image20"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:369
-msgid "At the top are the autoloaded *MusicPlayer* and a *root* node, which is your game's viewport."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:352
+msgid "At the top are the autoloaded ``MusicPlayer`` and a *root* node, which is your game's viewport."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:372
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:355
 msgid "And that does it for this lesson. In the next part, we'll add an animation to make the game both look and feel much nicer."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:375
-msgid "Here is the complete ``Main.gd`` script for reference."
+#: ../../docs/getting_started/first_3d_game/08.score_and_replay.rst:358
+msgid "Here is the complete ``main.gd`` script for reference."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

@@ -1,0 +1,125 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:4
+msgid "Visual Studio Code"
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:6
+msgid "`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-platform code editor by `Microsoft <https://microsoft.com>`_ (not to be confused with :ref:`doc_configuring_an_ide_vs`)."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:10
+msgid "Importing the project"
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:12
+msgid "Make sure the C/C++ extension is installed. You can find instructions in the `official documentation <https://code.visualstudio.com/docs/languages/cpp>`_. Alternatively, `clangd <https://open-vsx.org/extension/llvm-vs-code-extensions/vscode-clangd>`_ can be used instead."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:16
+msgid "When using the clangd extension, run ``scons compiledb=yes``."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:17
+msgid "From the Visual Studio Code's main screen open the Godot root folder with **File > Open Folder...**."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:19
+msgid "Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter *Configure Task*."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:24
+msgid "Select the **Create tasks.json file from template** option."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:29
+msgid "Then select **Others**."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:34
+msgid "If there is no such option as **Create tasks.json file from template** available, either delete the file if it already exists in your folder or create a ``.vscode/tasks.json`` file manually. See `Tasks in Visual Studio Code <https://code.visualstudio.com/docs/editor/tasks#_custom-tasks>`_ for more details on tasks."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:36
+msgid "Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new section to it:"
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:56
+msgid "An example of a filled out ``tasks.json``."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:58
+msgid "Arguments can be different based on your own setup and needs. See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:62
+msgid "Debugging the project"
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:64
+msgid "To run and debug the project you need to create a new configuration in the ``launch.json`` file."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:66
+msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:67
+msgid "If ``launch.json`` file is missing you will be prompted to create a new one."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:72
+msgid "Select **C++ (GDB/LLDB)**. There may be another platform specific option here. If selected, adjust the configuration example provided accordingly."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:74
+msgid "Within the ``launch.json`` file find the ``\"configurations\"`` array and add a new section to it:"
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:142
+msgid "An example of a filled out ``launch.json``."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:147
+msgid "Due to sporadic performance issues, it is recommended to use LLDB over GDB on Unix-based systems. Make sure that the `CodeLLDB extension <https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb>`_ is installed."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:151
+msgid "If you encounter issues with lldb, you may consider using gdb (see the LinuxBSD_gdb configuration)."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:153
+msgid "Do note that lldb may work better with LLVM-based builds. See :ref:`doc_compiling_for_linuxbsd` for further information."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:155
+msgid "The name under ``program`` depends on your build configuration, e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD platform with ``platform=editor`` and ``dev_build=yes``."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:159
+msgid "If you run into any issues, ask for help in one of `Godot's community channels <https://godotengine.org/community>`__."
+msgstr ""
+
+#: ../../docs/contributing/development/configuring_an_ide/visual_studio_code.rst:164
+msgid "To get linting on class reference XML files, install the `vscode-xml extension <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml>`__."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

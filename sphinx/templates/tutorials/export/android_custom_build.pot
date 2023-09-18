@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,6 +70,14 @@ msgstr ""
 
 #: ../../docs/tutorials/export/android_custom_build.rst:49
 msgid "The templates built will be used automatically afterwards, so no further configuration is needed."
+msgstr ""
+
+#: ../../docs/tutorials/export/android_custom_build.rst:54
+msgid "When using the custom Android build system, assets that are placed within a folder whose name begins with an underscore will not be included in the generated APK. This does not apply to assets whose *file* name begins with an underscore."
+msgstr ""
+
+#: ../../docs/tutorials/export/android_custom_build.rst:59
+msgid "For example, ``_example/image.png`` will **not** be included as an asset, but ``_image.png`` will."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

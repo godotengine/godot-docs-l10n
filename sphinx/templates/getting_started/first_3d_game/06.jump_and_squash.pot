@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,183 +16,183 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:4
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:6
 msgid "Jumping and squashing monsters"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:6
-msgid "In this part, we'll add the ability to jump, to squash the monsters. In the next lesson, we'll make the player die when a monster hits them on the ground."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:8
+msgid "In this part, we'll add the ability to jump and squash the monsters. In the next lesson, we'll make the player die when a monster hits them on the ground."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:9
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:11
 msgid "First, we have to change a few settings related to physics interactions. Enter the world of :ref:`physics layers <doc_physics_introduction_collision_layers_and_masks>`."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:14
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:16
 msgid "Controlling physics interactions"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:16
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:18
 msgid "Physics bodies have access to two complementary properties: layers and masks. Layers define on which physics layer(s) an object is."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:19
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:21
 msgid "Masks control the layers that a body will listen to and detect. This affects collision detection. When you want two bodies to interact, you need at least one to have a mask corresponding to the other."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:23
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:25
 msgid "If that's confusing, don't worry, we'll see three examples in a second."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:25
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:27
 msgid "The important point is that you can use layers and masks to filter physics interactions, control performance, and remove the need for extra conditions in your code."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:29
-msgid "By default, all physics bodies and areas are set to both layer and mask ``0``. This means they all collide with each other."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:31
+msgid "By default, all physics bodies and areas are set to both layer and mask ``1``. This means they all collide with each other."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:32
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:34
 msgid "Physics layers are represented by numbers, but we can give them names to keep track of what's what."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:36
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:38
 msgid "Setting layer names"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:38
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:40
 msgid "Let's give our physics layers a name. Go to *Project -> Project Settings*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:40
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:42
 msgid "|image0|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:345
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:345
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:354
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:354
 msgid "image0"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:42
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:44
 msgid "In the left menu, navigate down to *Layer Names -> 3D Physics*. You can see a list of layers with a field next to each of them on the right. You can set their names there. Name the first three layers *player*, *enemies*, and *world*, respectively."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:47
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:49
 msgid "|image1|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:346
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:346
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:355
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:355
 msgid "image1"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:49
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:51
 msgid "Now, we can assign them to our physics nodes."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:52
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:54
 msgid "Assigning layers and masks"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:54
-msgid "In the *Main* scene, select the *Ground* node. In the *Inspector*, expand the *Collision* section. There, you can see the node's layers and masks as a grid of buttons."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:58
-msgid "|image2|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:347
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:347
-msgid "image2"
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:56
+msgid "In the *Main* scene, select the ``Ground`` node. In the *Inspector*, expand the *Collision* section. There, you can see the node's layers and masks as a grid of buttons."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:60
-msgid "The ground is part of the world, so we want it to be part of the third layer. Click the lit button to toggle off the first *Layer* and toggle on the third one. Then, toggle off the *Mask* by clicking on it."
+msgid "|image2|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:64
-msgid "|image3|"
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:356
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:356
+msgid "image2"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:348
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:348
-msgid "image3"
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:62
+msgid "The ground is part of the world, so we want it to be part of the third layer. Click the lit button to toggle **off** the first *Layer* and toggle **on** the third one. Then, toggle **off** the *Mask* by clicking on it."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:66
-msgid "As I mentioned above, the *Mask* property allows a node to listen to interaction with other physics objects, but we don't need it to have collisions. The *Ground* doesn't need to listen to anything; it's just there to prevent creatures from falling."
+msgid "|image3|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:71
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:357
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:357
+msgid "image3"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:68
+msgid "As mentioned before, the *Mask* property allows a node to listen to interaction with other physics objects, but we don't need it to have collisions. ``Ground`` doesn't need to listen to anything; it's just there to prevent creatures from falling."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:72
 msgid "Note that you can click the \"...\" button on the right side of the properties to see a list of named checkboxes."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:74
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:75
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:349
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:349
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:358
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:358
 msgid "image4"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:76
-msgid "Next up are the *Player* and the *Mob*. Open ``Player.tscn`` by double-clicking the file in the *FileSystem* dock."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:77
+msgid "Next up are the ``Player`` and the ``Mob``. Open ``player.tscn`` by double-clicking the file in the *FileSystem* dock."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:79
-msgid "Select the *Player* node and set its *Collision -> Mask* to both \"enemies\" and \"world\". You can leave the default *Layer* property as the first layer is the \"player\" one."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:80
+msgid "Select the *Player* node and set its *Collision -> Mask* to both \"enemies\" and \"world\". You can leave the default *Layer* property as it is, because the first layer is the \"player\" layer."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:83
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:84
 msgid "|image5|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:350
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:350
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:359
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:359
 msgid "image5"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:85
-msgid "Then, open the *Mob* scene by double-clicking on ``Mob.tscn`` and select the *Mob* node."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:86
+msgid "Then, open the *Mob* scene by double-clicking on ``mob.tscn`` and select the ``Mob`` node."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:88
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:89
 msgid "Set its *Collision -> Layer* to \"enemies\" and unset its *Collision -> Mask*, leaving the mask empty."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:91
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:92
 msgid "|image6|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:351
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:351
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:360
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:360
 msgid "image6"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:93
-msgid "These settings mean the monsters will move through one another. If you want the monsters to collide with and slide against each other, turn on the \"enemies\" mask."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:94
+msgid "These settings mean the monsters will move through one another. If you want the monsters to collide with and slide against each other, turn **on** the \"enemies\" mask."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:99
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:100
 msgid "The mobs don't need to mask the \"world\" layer because they only move on the XZ plane. We don't apply any gravity to them by design."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:103
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:104
 msgid "Jumping"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:105
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:106
 msgid "The jumping mechanic itself requires only two lines of code. Open the *Player* script. We need a value to control the jump's strength and update ``_physics_process()`` to code the jump."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:109
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:110
 msgid "After the line that defines ``fall_acceleration``, at the top of the script, add the ``jump_impulse``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:128
-msgid "Inside ``_physics_process()``, add the following code before the line where we called ``move_and_slide()``."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:129
+msgid "Inside ``_physics_process()``, add the following code before the ``move_and_slide()`` codeblock."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:158
@@ -200,15 +200,15 @@ msgid "That's all you need to jump!"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:160
-msgid "The ``is_on_floor()`` method is a tool from the ``KinematicBody`` class. It returns ``true`` if the body collided with the floor in this frame. That's why we apply gravity to the *Player*: so we collide with the floor instead of floating over it like the monsters."
+msgid "The ``is_on_floor()`` method is a tool from the ``CharacterBody3D`` class. It returns ``true`` if the body collided with the floor in this frame. That's why we apply gravity to the *Player*: so we collide with the floor instead of floating over it like the monsters."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:165
-msgid "If the character is on the floor and the player presses \"jump\", we instantly give them a lot of vertical speed. In games, you really want controls to be responsive and giving instant speed boosts like these, while unrealistic, feel great."
+msgid "If the character is on the floor and the player presses \"jump\", we instantly give them a lot of vertical speed. In games, you really want controls to be responsive and giving instant speed boosts like these, while unrealistic, feels great."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:170
-msgid "Notice that the Y axis is positive upwards. That's unlike 2D, where the Y axis is positive downward."
+msgid "Notice that the Y axis is positive upwards. That's unlike 2D, where the Y axis is positive downwards."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:174
@@ -224,7 +224,7 @@ msgid "We need to detect collisions with a monster and to differentiate them fro
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:183
-msgid "Open the scene ``Mob.tscn`` again and select the *Mob* node. Go to the *Node* dock on the right to see a list of signals. The *Node* dock has two tabs: *Signals*, which you've already used, and *Groups*, which allows you to assign tags to nodes."
+msgid "Open the scene ``mob.tscn`` again and select the *Mob* node. Go to the *Node* dock on the right to see a list of signals. The *Node* dock has two tabs: *Signals*, which you've already used, and *Groups*, which allows you to assign tags to nodes."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:188
@@ -235,8 +235,8 @@ msgstr ""
 msgid "|image7|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:352
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:352
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:361
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:361
 msgid "image7"
 msgstr ""
 
@@ -248,8 +248,8 @@ msgstr ""
 msgid "|image8|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:353
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:353
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:362
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:362
 msgid "image8"
 msgstr ""
 
@@ -270,7 +270,7 @@ msgid "At the top of the script, we need another property, ``bounce_impulse``. W
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:225
-msgid "Then, at the bottom of ``_physics_process()``, add the following loop. With ``move_and_slide()``, Godot makes the body move sometimes multiple times in a row to smooth out the character's motion. So we have to loop over all collisions that may have happened."
+msgid "Then, after the **Jumping** codeblock we added above in ``_physics_process()``, add the following loop. With ``move_and_slide()``, Godot makes the body move sometimes multiple times in a row to smooth out the character's motion. So we have to loop over all collisions that may have happened."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:230
@@ -281,47 +281,47 @@ msgstr ""
 msgid "With this code, if no collisions occurred on a given frame, the loop won't run."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:276
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:285
 msgid "That's a lot of new functions. Here's some more information about them."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:278
-msgid "The functions ``get_slide_count()`` and ``get_slide_collision()`` both come from the :ref:`KinematicBody<class_KinematicBody>` class and are related to ``move_and_slide()``."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:287
+msgid "The functions ``get_slide_collision_count()`` and ``get_slide_collision()`` both come from the :ref:`CharacterBody3D <class_CharacterBody3D>` class and are related to ``move_and_slide()``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:282
-msgid "``get_slide_collision()`` returns a :ref:`KinematicCollision<class_KinematicCollision>` object that holds information about where and how the collision occurred. For example, we use its ``collider`` property to check if we collided with a \"mob\" by calling ``is_in_group()`` on it: ``collision.collider.is_in_group(\"mob\")``."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:291
+msgid "``get_slide_collision()`` returns a :ref:`KinematicCollision3D<class_KinematicCollision3D>` object that holds information about where and how the collision occurred. For example, we use its ``get_collider`` property to check if we collided with a \"mob\" by calling ``is_in_group()`` on it: ``collision.get_collider().is_in_group(\"mob\")``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:290
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:299
 msgid "The method ``is_in_group()`` is available on every :ref:`Node<class_Node>`."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:292
-msgid "To check that we are landing on the monster, we use the vector dot product: ``Vector3.UP.dot(collision.normal) > 0.1``. The collision normal is a 3D vector that is perpendicular to the plane where the collision occurred. The dot product allows us to compare it to the up direction."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:301
+msgid "To check that we are landing on the monster, we use the vector dot product: ``Vector3.UP.dot(collision.get_normal()) > 0.1``. The collision normal is a 3D vector that is perpendicular to the plane where the collision occurred. The dot product allows us to compare it to the up direction."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:297
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:306
 msgid "With dot products, when the result is greater than ``0``, the two vectors are at an angle of fewer than 90 degrees. A value higher than ``0.1`` tells us that we are roughly above the monster."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:301
-msgid "We are calling one undefined function, ``mob.squash()``. We have to add it to the Mob class."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:310
+msgid "We are calling one undefined function, ``mob.squash()``, so we have to add it to the Mob class."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:304
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:313
 msgid "Open the script ``Mob.gd`` by double-clicking on it in the *FileSystem* dock. At the top of the script, we want to define a new signal named ``squashed``. And at the bottom, you can add the squash function, where we emit the signal and destroy the mob."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:338
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:347
 msgid "We will use the signal to add points to the score in the next lesson."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:340
-msgid "With that, you should be able to kill monsters by jumping on them. You can press :kbd:`F5` to try the game and set ``Main.tscn`` as your project's main scene."
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:349
+msgid "With that, you should be able to kill monsters by jumping on them. You can press :kbd:`F5` to try the game and set ``main.tscn`` as your project's main scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:343
+#: ../../docs/getting_started/first_3d_game/06.jump_and_squash.rst:352
 msgid "However, the player won't die yet. We'll work on that in the next part."
 msgstr ""
 

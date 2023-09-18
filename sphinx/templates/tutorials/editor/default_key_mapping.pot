@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,2864 +16,2760 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:1
+#: ../../docs/tutorials/editor/default_key_mapping.rst:3
 msgid "cheatsheet, cheat sheet, shortcut"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:7
+#: ../../docs/tutorials/editor/default_key_mapping.rst:9
 msgid "Default editor shortcuts"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:8
+#: ../../docs/tutorials/editor/default_key_mapping.rst:10
 msgid "Many of Godot Editor functions can be executed with keyboard shortcuts. This page lists functions which have associated shortcuts by default, but many others are available for customization in editor settings as well. To change keys associated with these and other actions navigate to ``Editor -> Editor Settings -> Shortcuts``."
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:13
+#: ../../docs/tutorials/editor/default_key_mapping.rst:15
 msgid "While some actions are universal, a lot of shortcuts are specific to individual tools. For this reason it is possible for some key combinations to be assigned to more than one function. The correct action will be performed depending on the context."
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:18
+#: ../../docs/tutorials/editor/default_key_mapping.rst:20
 msgid "While Windows and Linux builds of the editor share most of the default settings, some shortcuts may differ for macOS version. This is done for better integration of the editor into macOS ecosystem. Users fluent with standard shortcuts on that OS should find Godot Editor's default key mapping intuitive."
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:24
+#: ../../docs/tutorials/editor/default_key_mapping.rst:26
 msgid "General Editor Actions"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:27
-#: ../../docs/tutorials/editor/default_key_mapping.rst:92
-#: ../../docs/tutorials/editor/default_key_mapping.rst:145
-#: ../../docs/tutorials/editor/default_key_mapping.rst:220
-#: ../../docs/tutorials/editor/default_key_mapping.rst:301
-#: ../../docs/tutorials/editor/default_key_mapping.rst:348
-#: ../../docs/tutorials/editor/default_key_mapping.rst:373
-#: ../../docs/tutorials/editor/default_key_mapping.rst:384
-#: ../../docs/tutorials/editor/default_key_mapping.rst:397
-#: ../../docs/tutorials/editor/default_key_mapping.rst:428
+#: ../../docs/tutorials/editor/default_key_mapping.rst:29
+#: ../../docs/tutorials/editor/default_key_mapping.rst:94
+#: ../../docs/tutorials/editor/default_key_mapping.rst:147
+#: ../../docs/tutorials/editor/default_key_mapping.rst:222
+#: ../../docs/tutorials/editor/default_key_mapping.rst:303
+#: ../../docs/tutorials/editor/default_key_mapping.rst:350
+#: ../../docs/tutorials/editor/default_key_mapping.rst:361
+#: ../../docs/tutorials/editor/default_key_mapping.rst:374
+#: ../../docs/tutorials/editor/default_key_mapping.rst:405
+#: ../../docs/tutorials/editor/default_key_mapping.rst:418
 #: ../../docs/tutorials/editor/default_key_mapping.rst:441
-#: ../../docs/tutorials/editor/default_key_mapping.rst:464
-#: ../../docs/tutorials/editor/default_key_mapping.rst:481
-#: ../../docs/tutorials/editor/default_key_mapping.rst:516
+#: ../../docs/tutorials/editor/default_key_mapping.rst:458
+#: ../../docs/tutorials/editor/default_key_mapping.rst:493
 msgid "Action name"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:27
-#: ../../docs/tutorials/editor/default_key_mapping.rst:92
-#: ../../docs/tutorials/editor/default_key_mapping.rst:145
-#: ../../docs/tutorials/editor/default_key_mapping.rst:220
-#: ../../docs/tutorials/editor/default_key_mapping.rst:301
-#: ../../docs/tutorials/editor/default_key_mapping.rst:348
-#: ../../docs/tutorials/editor/default_key_mapping.rst:373
-#: ../../docs/tutorials/editor/default_key_mapping.rst:384
-#: ../../docs/tutorials/editor/default_key_mapping.rst:397
-#: ../../docs/tutorials/editor/default_key_mapping.rst:428
+#: ../../docs/tutorials/editor/default_key_mapping.rst:29
+#: ../../docs/tutorials/editor/default_key_mapping.rst:94
+#: ../../docs/tutorials/editor/default_key_mapping.rst:147
+#: ../../docs/tutorials/editor/default_key_mapping.rst:222
+#: ../../docs/tutorials/editor/default_key_mapping.rst:303
+#: ../../docs/tutorials/editor/default_key_mapping.rst:350
+#: ../../docs/tutorials/editor/default_key_mapping.rst:361
+#: ../../docs/tutorials/editor/default_key_mapping.rst:374
+#: ../../docs/tutorials/editor/default_key_mapping.rst:405
+#: ../../docs/tutorials/editor/default_key_mapping.rst:418
 #: ../../docs/tutorials/editor/default_key_mapping.rst:441
-#: ../../docs/tutorials/editor/default_key_mapping.rst:464
-#: ../../docs/tutorials/editor/default_key_mapping.rst:481
-#: ../../docs/tutorials/editor/default_key_mapping.rst:516
+#: ../../docs/tutorials/editor/default_key_mapping.rst:458
+#: ../../docs/tutorials/editor/default_key_mapping.rst:493
 msgid "Windows, Linux"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:27
-#: ../../docs/tutorials/editor/default_key_mapping.rst:92
-#: ../../docs/tutorials/editor/default_key_mapping.rst:145
-#: ../../docs/tutorials/editor/default_key_mapping.rst:220
-#: ../../docs/tutorials/editor/default_key_mapping.rst:301
-#: ../../docs/tutorials/editor/default_key_mapping.rst:348
-#: ../../docs/tutorials/editor/default_key_mapping.rst:373
-#: ../../docs/tutorials/editor/default_key_mapping.rst:384
-#: ../../docs/tutorials/editor/default_key_mapping.rst:397
-#: ../../docs/tutorials/editor/default_key_mapping.rst:428
+#: ../../docs/tutorials/editor/default_key_mapping.rst:29
+#: ../../docs/tutorials/editor/default_key_mapping.rst:94
+#: ../../docs/tutorials/editor/default_key_mapping.rst:147
+#: ../../docs/tutorials/editor/default_key_mapping.rst:222
+#: ../../docs/tutorials/editor/default_key_mapping.rst:303
+#: ../../docs/tutorials/editor/default_key_mapping.rst:350
+#: ../../docs/tutorials/editor/default_key_mapping.rst:361
+#: ../../docs/tutorials/editor/default_key_mapping.rst:374
+#: ../../docs/tutorials/editor/default_key_mapping.rst:405
+#: ../../docs/tutorials/editor/default_key_mapping.rst:418
 #: ../../docs/tutorials/editor/default_key_mapping.rst:441
-#: ../../docs/tutorials/editor/default_key_mapping.rst:464
-#: ../../docs/tutorials/editor/default_key_mapping.rst:481
-#: ../../docs/tutorials/editor/default_key_mapping.rst:516
+#: ../../docs/tutorials/editor/default_key_mapping.rst:458
+#: ../../docs/tutorials/editor/default_key_mapping.rst:493
 msgid "macOS"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:27
-#: ../../docs/tutorials/editor/default_key_mapping.rst:92
-#: ../../docs/tutorials/editor/default_key_mapping.rst:145
-#: ../../docs/tutorials/editor/default_key_mapping.rst:220
-#: ../../docs/tutorials/editor/default_key_mapping.rst:301
-#: ../../docs/tutorials/editor/default_key_mapping.rst:348
-#: ../../docs/tutorials/editor/default_key_mapping.rst:373
-#: ../../docs/tutorials/editor/default_key_mapping.rst:384
-#: ../../docs/tutorials/editor/default_key_mapping.rst:397
-#: ../../docs/tutorials/editor/default_key_mapping.rst:428
+#: ../../docs/tutorials/editor/default_key_mapping.rst:29
+#: ../../docs/tutorials/editor/default_key_mapping.rst:94
+#: ../../docs/tutorials/editor/default_key_mapping.rst:147
+#: ../../docs/tutorials/editor/default_key_mapping.rst:222
+#: ../../docs/tutorials/editor/default_key_mapping.rst:303
+#: ../../docs/tutorials/editor/default_key_mapping.rst:350
+#: ../../docs/tutorials/editor/default_key_mapping.rst:361
+#: ../../docs/tutorials/editor/default_key_mapping.rst:374
+#: ../../docs/tutorials/editor/default_key_mapping.rst:405
+#: ../../docs/tutorials/editor/default_key_mapping.rst:418
 #: ../../docs/tutorials/editor/default_key_mapping.rst:441
-#: ../../docs/tutorials/editor/default_key_mapping.rst:464
-#: ../../docs/tutorials/editor/default_key_mapping.rst:481
-#: ../../docs/tutorials/editor/default_key_mapping.rst:516
+#: ../../docs/tutorials/editor/default_key_mapping.rst:458
+#: ../../docs/tutorials/editor/default_key_mapping.rst:493
 msgid "Editor setting"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:29
+#: ../../docs/tutorials/editor/default_key_mapping.rst:31
 msgid "Open 2D Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:29
+#: ../../docs/tutorials/editor/default_key_mapping.rst:31
 msgid ":kbd:`Ctrl + F1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:29
+#: ../../docs/tutorials/editor/default_key_mapping.rst:31
 msgid ":kbd:`Alt + 1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:29
+#: ../../docs/tutorials/editor/default_key_mapping.rst:31
 msgid "``editor/editor_2d``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:31
+#: ../../docs/tutorials/editor/default_key_mapping.rst:33
 msgid "Open 3D Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:31
-#: ../../docs/tutorials/editor/default_key_mapping.rst:445
+#: ../../docs/tutorials/editor/default_key_mapping.rst:33
+#: ../../docs/tutorials/editor/default_key_mapping.rst:422
 msgid ":kbd:`Ctrl + F2`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:31
+#: ../../docs/tutorials/editor/default_key_mapping.rst:33
 msgid ":kbd:`Alt + 2`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:31
+#: ../../docs/tutorials/editor/default_key_mapping.rst:33
 msgid "``editor/editor_3d``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:33
+#: ../../docs/tutorials/editor/default_key_mapping.rst:35
 msgid "Open Script Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:33
+#: ../../docs/tutorials/editor/default_key_mapping.rst:35
 msgid ":kbd:`Ctrl + F3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:33
+#: ../../docs/tutorials/editor/default_key_mapping.rst:35
 msgid ":kbd:`Alt + 3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:33
+#: ../../docs/tutorials/editor/default_key_mapping.rst:35
 msgid "``editor/editor_script``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:35
+#: ../../docs/tutorials/editor/default_key_mapping.rst:37
 msgid "Search Help"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:35
+#: ../../docs/tutorials/editor/default_key_mapping.rst:37
 msgid ":kbd:`F1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:35
+#: ../../docs/tutorials/editor/default_key_mapping.rst:37
 msgid ":kbd:`Alt + Space`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:35
+#: ../../docs/tutorials/editor/default_key_mapping.rst:37
 msgid "``editor/editor_help``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:37
+#: ../../docs/tutorials/editor/default_key_mapping.rst:39
 msgid "Distraction Free Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:37
+#: ../../docs/tutorials/editor/default_key_mapping.rst:39
 msgid ":kbd:`Ctrl + Shift + F11`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:37
+#: ../../docs/tutorials/editor/default_key_mapping.rst:39
 msgid ":kbd:`Cmd + Ctrl + D`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:37
+#: ../../docs/tutorials/editor/default_key_mapping.rst:39
 msgid "``editor/distraction_free_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:39
+#: ../../docs/tutorials/editor/default_key_mapping.rst:41
 msgid "Next tab"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:39
+#: ../../docs/tutorials/editor/default_key_mapping.rst:41
 msgid ":kbd:`Ctrl + Tab`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:39
+#: ../../docs/tutorials/editor/default_key_mapping.rst:41
 msgid ":kbd:`Cmd + Tab`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:39
+#: ../../docs/tutorials/editor/default_key_mapping.rst:41
 msgid "``editor/next_tab``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:41
+#: ../../docs/tutorials/editor/default_key_mapping.rst:43
 msgid "Previous tab"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:41
+#: ../../docs/tutorials/editor/default_key_mapping.rst:43
 msgid ":kbd:`Ctrl + Shift + Tab`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:41
+#: ../../docs/tutorials/editor/default_key_mapping.rst:43
 msgid ":kbd:`Cmd + Shift + Tab`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:41
+#: ../../docs/tutorials/editor/default_key_mapping.rst:43
 msgid "``editor/prev_tab``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:43
+#: ../../docs/tutorials/editor/default_key_mapping.rst:45
 msgid "Filter Files"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:43
+#: ../../docs/tutorials/editor/default_key_mapping.rst:45
 msgid ":kbd:`Ctrl + Alt + P`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:43
+#: ../../docs/tutorials/editor/default_key_mapping.rst:45
 msgid ":kbd:`Cmd + Alt + P`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:43
+#: ../../docs/tutorials/editor/default_key_mapping.rst:45
 msgid "``editor/filter_files``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:45
+#: ../../docs/tutorials/editor/default_key_mapping.rst:47
 msgid "Open Scene"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:45
+#: ../../docs/tutorials/editor/default_key_mapping.rst:47
 msgid ":kbd:`Ctrl + O`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:45
+#: ../../docs/tutorials/editor/default_key_mapping.rst:47
 msgid ":kbd:`Cmd + O`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:45
+#: ../../docs/tutorials/editor/default_key_mapping.rst:47
 msgid "``editor/open_scene``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:47
+#: ../../docs/tutorials/editor/default_key_mapping.rst:49
 msgid "Close Scene"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:47
+#: ../../docs/tutorials/editor/default_key_mapping.rst:49
 msgid ":kbd:`Ctrl + Shift + W`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:47
+#: ../../docs/tutorials/editor/default_key_mapping.rst:49
 msgid ":kbd:`Cmd + Shift + W`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:47
+#: ../../docs/tutorials/editor/default_key_mapping.rst:49
 msgid "``editor/close_scene``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:49
+#: ../../docs/tutorials/editor/default_key_mapping.rst:51
 msgid "Reopen Closed Scene"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:49
-#: ../../docs/tutorials/editor/default_key_mapping.rst:319
+#: ../../docs/tutorials/editor/default_key_mapping.rst:51
+#: ../../docs/tutorials/editor/default_key_mapping.rst:321
 msgid ":kbd:`Ctrl + Shift + T`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:49
-#: ../../docs/tutorials/editor/default_key_mapping.rst:319
+#: ../../docs/tutorials/editor/default_key_mapping.rst:51
+#: ../../docs/tutorials/editor/default_key_mapping.rst:321
 msgid ":kbd:`Cmd + Shift + T`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:49
+#: ../../docs/tutorials/editor/default_key_mapping.rst:51
 msgid "``editor/reopen_closed_scene``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:51
+#: ../../docs/tutorials/editor/default_key_mapping.rst:53
 msgid "Save Scene"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:51
+#: ../../docs/tutorials/editor/default_key_mapping.rst:53
 msgid ":kbd:`Ctrl + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:51
+#: ../../docs/tutorials/editor/default_key_mapping.rst:53
 msgid ":kbd:`Cmd + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:51
+#: ../../docs/tutorials/editor/default_key_mapping.rst:53
 msgid "``editor/save_scene``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:53
+#: ../../docs/tutorials/editor/default_key_mapping.rst:55
 msgid "Save Scene As"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:53
+#: ../../docs/tutorials/editor/default_key_mapping.rst:55
 msgid ":kbd:`Ctrl + Shift + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:53
+#: ../../docs/tutorials/editor/default_key_mapping.rst:55
 msgid ":kbd:`Cmd + Shift + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:53
+#: ../../docs/tutorials/editor/default_key_mapping.rst:55
 msgid "``editor/save_scene_as``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:55
+#: ../../docs/tutorials/editor/default_key_mapping.rst:57
 msgid "Save All Scenes"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:55
-#: ../../docs/tutorials/editor/default_key_mapping.rst:323
+#: ../../docs/tutorials/editor/default_key_mapping.rst:57
+#: ../../docs/tutorials/editor/default_key_mapping.rst:325
 msgid ":kbd:`Ctrl + Shift + Alt + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:55
-#: ../../docs/tutorials/editor/default_key_mapping.rst:323
+#: ../../docs/tutorials/editor/default_key_mapping.rst:57
+#: ../../docs/tutorials/editor/default_key_mapping.rst:325
 msgid ":kbd:`Cmd + Shift + Alt + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:55
+#: ../../docs/tutorials/editor/default_key_mapping.rst:57
 msgid "``editor/save_all_scenes``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:57
+#: ../../docs/tutorials/editor/default_key_mapping.rst:59
 msgid "Quick Open"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:57
-#: ../../docs/tutorials/editor/default_key_mapping.rst:57
+#: ../../docs/tutorials/editor/default_key_mapping.rst:59
+#: ../../docs/tutorials/editor/default_key_mapping.rst:59
 msgid ":kbd:`Shift + Alt + O`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:57
+#: ../../docs/tutorials/editor/default_key_mapping.rst:59
 msgid "``editor/quick_open``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:59
+#: ../../docs/tutorials/editor/default_key_mapping.rst:61
 msgid "Quick Open Scene"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:59
+#: ../../docs/tutorials/editor/default_key_mapping.rst:61
 msgid ":kbd:`Ctrl + Shift + O`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:59
+#: ../../docs/tutorials/editor/default_key_mapping.rst:61
 msgid ":kbd:`Cmd + Shift + O`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:59
+#: ../../docs/tutorials/editor/default_key_mapping.rst:61
 msgid "``editor/quick_open_scene``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:61
+#: ../../docs/tutorials/editor/default_key_mapping.rst:63
 msgid "Quick Open Script"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:61
+#: ../../docs/tutorials/editor/default_key_mapping.rst:63
 msgid ":kbd:`Ctrl + Alt + O`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:61
+#: ../../docs/tutorials/editor/default_key_mapping.rst:63
 msgid ":kbd:`Cmd + Alt + O`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:61
+#: ../../docs/tutorials/editor/default_key_mapping.rst:63
 msgid "``editor/quick_open_script``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:63
-#: ../../docs/tutorials/editor/default_key_mapping.rst:242
+#: ../../docs/tutorials/editor/default_key_mapping.rst:65
+#: ../../docs/tutorials/editor/default_key_mapping.rst:244
 msgid "Undo"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:63
-#: ../../docs/tutorials/editor/default_key_mapping.rst:242
+#: ../../docs/tutorials/editor/default_key_mapping.rst:65
+#: ../../docs/tutorials/editor/default_key_mapping.rst:244
 msgid ":kbd:`Ctrl + Z`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:63
-#: ../../docs/tutorials/editor/default_key_mapping.rst:242
+#: ../../docs/tutorials/editor/default_key_mapping.rst:65
+#: ../../docs/tutorials/editor/default_key_mapping.rst:244
 msgid ":kbd:`Cmd + Z`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:63
+#: ../../docs/tutorials/editor/default_key_mapping.rst:65
 msgid "``editor/undo``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:65
-#: ../../docs/tutorials/editor/default_key_mapping.rst:244
+#: ../../docs/tutorials/editor/default_key_mapping.rst:67
+#: ../../docs/tutorials/editor/default_key_mapping.rst:246
 msgid "Redo"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:65
+#: ../../docs/tutorials/editor/default_key_mapping.rst:67
 msgid ":kbd:`Ctrl + Shift + Z`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:65
+#: ../../docs/tutorials/editor/default_key_mapping.rst:67
 msgid ":kbd:`Cmd + Shift + Z`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:65
+#: ../../docs/tutorials/editor/default_key_mapping.rst:67
 msgid "``editor/redo``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:67
+#: ../../docs/tutorials/editor/default_key_mapping.rst:69
 msgid "Quit"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:67
+#: ../../docs/tutorials/editor/default_key_mapping.rst:69
 msgid ":kbd:`Ctrl + Q`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:67
+#: ../../docs/tutorials/editor/default_key_mapping.rst:69
 msgid ":kbd:`Cmd + Q`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:67
+#: ../../docs/tutorials/editor/default_key_mapping.rst:69
 msgid "``editor/file_quit``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:69
+#: ../../docs/tutorials/editor/default_key_mapping.rst:71
 msgid "Quit to Project List"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:69
+#: ../../docs/tutorials/editor/default_key_mapping.rst:71
 msgid ":kbd:`Ctrl + Shift + Q`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:69
+#: ../../docs/tutorials/editor/default_key_mapping.rst:71
 msgid ":kbd:`Shift + Alt + Q`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:69
+#: ../../docs/tutorials/editor/default_key_mapping.rst:71
 msgid "``editor/quit_to_project_list``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:71
+#: ../../docs/tutorials/editor/default_key_mapping.rst:73
 msgid "Take Screenshot"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:71
+#: ../../docs/tutorials/editor/default_key_mapping.rst:73
 msgid ":kbd:`Ctrl + F12`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:71
+#: ../../docs/tutorials/editor/default_key_mapping.rst:73
 msgid ":kbd:`Cmd + F12`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:71
+#: ../../docs/tutorials/editor/default_key_mapping.rst:73
 msgid "``editor/take_screenshot``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:73
+#: ../../docs/tutorials/editor/default_key_mapping.rst:75
 msgid "Toggle Fullscreen"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:73
+#: ../../docs/tutorials/editor/default_key_mapping.rst:75
 msgid ":kbd:`Shift + F11`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:73
+#: ../../docs/tutorials/editor/default_key_mapping.rst:75
 msgid ":kbd:`Cmd + Ctrl + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:73
+#: ../../docs/tutorials/editor/default_key_mapping.rst:75
 msgid "``editor/fullscreen_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:75
+#: ../../docs/tutorials/editor/default_key_mapping.rst:77
 msgid "Play"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:75
-#: ../../docs/tutorials/editor/default_key_mapping.rst:405
-#: ../../docs/tutorials/editor/default_key_mapping.rst:405
+#: ../../docs/tutorials/editor/default_key_mapping.rst:77
+#: ../../docs/tutorials/editor/default_key_mapping.rst:382
+#: ../../docs/tutorials/editor/default_key_mapping.rst:382
 msgid ":kbd:`F5`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:75
-#: ../../docs/tutorials/editor/default_key_mapping.rst:278
+#: ../../docs/tutorials/editor/default_key_mapping.rst:77
+#: ../../docs/tutorials/editor/default_key_mapping.rst:280
 msgid ":kbd:`Cmd + B`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:75
+#: ../../docs/tutorials/editor/default_key_mapping.rst:77
 msgid "``editor/play``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:77
+#: ../../docs/tutorials/editor/default_key_mapping.rst:79
 msgid "Pause Scene"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:77
+#: ../../docs/tutorials/editor/default_key_mapping.rst:79
 msgid ":kbd:`F7`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:77
+#: ../../docs/tutorials/editor/default_key_mapping.rst:79
 msgid ":kbd:`Cmd + Ctrl + Y`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:77
+#: ../../docs/tutorials/editor/default_key_mapping.rst:79
 msgid "``editor/pause_scene``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:79
+#: ../../docs/tutorials/editor/default_key_mapping.rst:81
 msgid "Stop"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:79
+#: ../../docs/tutorials/editor/default_key_mapping.rst:81
 msgid ":kbd:`F8`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:79
-#: ../../docs/tutorials/editor/default_key_mapping.rst:290
+#: ../../docs/tutorials/editor/default_key_mapping.rst:81
+#: ../../docs/tutorials/editor/default_key_mapping.rst:292
 msgid ":kbd:`Cmd + .`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:79
+#: ../../docs/tutorials/editor/default_key_mapping.rst:81
 msgid "``editor/stop``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:81
+#: ../../docs/tutorials/editor/default_key_mapping.rst:83
 msgid "Play Scene"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:81
+#: ../../docs/tutorials/editor/default_key_mapping.rst:83
 msgid ":kbd:`F6`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:81
-#: ../../docs/tutorials/editor/default_key_mapping.rst:364
+#: ../../docs/tutorials/editor/default_key_mapping.rst:83
 msgid ":kbd:`Cmd + R`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:81
+#: ../../docs/tutorials/editor/default_key_mapping.rst:83
 msgid "``editor/play_scene``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:83
+#: ../../docs/tutorials/editor/default_key_mapping.rst:85
 msgid "Play Custom Scene"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:83
+#: ../../docs/tutorials/editor/default_key_mapping.rst:85
 msgid ":kbd:`Ctrl + Shift + F5`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:83
-#: ../../docs/tutorials/editor/default_key_mapping.rst:240
-#: ../../docs/tutorials/editor/default_key_mapping.rst:325
+#: ../../docs/tutorials/editor/default_key_mapping.rst:85
+#: ../../docs/tutorials/editor/default_key_mapping.rst:242
+#: ../../docs/tutorials/editor/default_key_mapping.rst:327
 msgid ":kbd:`Cmd + Shift + R`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:83
+#: ../../docs/tutorials/editor/default_key_mapping.rst:85
 msgid "``editor/play_custom_scene``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:85
+#: ../../docs/tutorials/editor/default_key_mapping.rst:87
 msgid "Expand Bottom Panel"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:85
-#: ../../docs/tutorials/editor/default_key_mapping.rst:85
+#: ../../docs/tutorials/editor/default_key_mapping.rst:87
+#: ../../docs/tutorials/editor/default_key_mapping.rst:87
 msgid ":kbd:`Shift + F12`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:85
+#: ../../docs/tutorials/editor/default_key_mapping.rst:87
 msgid "``editor/bottom_panel_expand``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:89
+#: ../../docs/tutorials/editor/default_key_mapping.rst:91
 msgid "2D / Canvas Item Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:94
-#: ../../docs/tutorials/editor/default_key_mapping.rst:337
+#: ../../docs/tutorials/editor/default_key_mapping.rst:96
+#: ../../docs/tutorials/editor/default_key_mapping.rst:339
 msgid "Zoom In"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:94
-#: ../../docs/tutorials/editor/default_key_mapping.rst:337
+#: ../../docs/tutorials/editor/default_key_mapping.rst:96
+#: ../../docs/tutorials/editor/default_key_mapping.rst:339
 msgid ":kbd:`Ctrl + =`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:94
-#: ../../docs/tutorials/editor/default_key_mapping.rst:337
+#: ../../docs/tutorials/editor/default_key_mapping.rst:96
+#: ../../docs/tutorials/editor/default_key_mapping.rst:339
 msgid ":kbd:`Cmd + =`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:94
+#: ../../docs/tutorials/editor/default_key_mapping.rst:96
 msgid "``canvas_item_editor/zoom_plus``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:96
-#: ../../docs/tutorials/editor/default_key_mapping.rst:339
+#: ../../docs/tutorials/editor/default_key_mapping.rst:98
+#: ../../docs/tutorials/editor/default_key_mapping.rst:341
 msgid "Zoom Out"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:96
-#: ../../docs/tutorials/editor/default_key_mapping.rst:339
+#: ../../docs/tutorials/editor/default_key_mapping.rst:98
+#: ../../docs/tutorials/editor/default_key_mapping.rst:341
 msgid ":kbd:`Ctrl + -`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:96
-#: ../../docs/tutorials/editor/default_key_mapping.rst:339
+#: ../../docs/tutorials/editor/default_key_mapping.rst:98
+#: ../../docs/tutorials/editor/default_key_mapping.rst:341
 msgid ":kbd:`Cmd + -`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:96
+#: ../../docs/tutorials/editor/default_key_mapping.rst:98
 msgid "``canvas_item_editor/zoom_minus``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:98
+#: ../../docs/tutorials/editor/default_key_mapping.rst:100
 msgid "Zoom Reset"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:98
-#: ../../docs/tutorials/editor/default_key_mapping.rst:341
+#: ../../docs/tutorials/editor/default_key_mapping.rst:100
+#: ../../docs/tutorials/editor/default_key_mapping.rst:343
 msgid ":kbd:`Ctrl + 0`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:98
-#: ../../docs/tutorials/editor/default_key_mapping.rst:341
+#: ../../docs/tutorials/editor/default_key_mapping.rst:100
+#: ../../docs/tutorials/editor/default_key_mapping.rst:343
 msgid ":kbd:`Cmd + 0`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:98
+#: ../../docs/tutorials/editor/default_key_mapping.rst:100
 msgid "``canvas_item_editor/zoom_reset``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:100
+#: ../../docs/tutorials/editor/default_key_mapping.rst:102
 msgid "Pan View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:100
-#: ../../docs/tutorials/editor/default_key_mapping.rst:100
+#: ../../docs/tutorials/editor/default_key_mapping.rst:102
+#: ../../docs/tutorials/editor/default_key_mapping.rst:102
 msgid ":kbd:`Space`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:100
+#: ../../docs/tutorials/editor/default_key_mapping.rst:102
 msgid "``canvas_item_editor/pan_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:102
-#: ../../docs/tutorials/editor/default_key_mapping.rst:165
+#: ../../docs/tutorials/editor/default_key_mapping.rst:104
+#: ../../docs/tutorials/editor/default_key_mapping.rst:167
 msgid "Select Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:102
-#: ../../docs/tutorials/editor/default_key_mapping.rst:102
-#: ../../docs/tutorials/editor/default_key_mapping.rst:159
-#: ../../docs/tutorials/editor/default_key_mapping.rst:159
-#: ../../docs/tutorials/editor/default_key_mapping.rst:165
-#: ../../docs/tutorials/editor/default_key_mapping.rst:165
+#: ../../docs/tutorials/editor/default_key_mapping.rst:104
+#: ../../docs/tutorials/editor/default_key_mapping.rst:104
+#: ../../docs/tutorials/editor/default_key_mapping.rst:161
+#: ../../docs/tutorials/editor/default_key_mapping.rst:161
+#: ../../docs/tutorials/editor/default_key_mapping.rst:167
+#: ../../docs/tutorials/editor/default_key_mapping.rst:167
 msgid ":kbd:`Q`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:102
+#: ../../docs/tutorials/editor/default_key_mapping.rst:104
 msgid "``canvas_item_editor/select_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:104
-#: ../../docs/tutorials/editor/default_key_mapping.rst:167
+#: ../../docs/tutorials/editor/default_key_mapping.rst:106
+#: ../../docs/tutorials/editor/default_key_mapping.rst:169
 msgid "Move Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:104
-#: ../../docs/tutorials/editor/default_key_mapping.rst:104
-#: ../../docs/tutorials/editor/default_key_mapping.rst:153
-#: ../../docs/tutorials/editor/default_key_mapping.rst:153
-#: ../../docs/tutorials/editor/default_key_mapping.rst:167
-#: ../../docs/tutorials/editor/default_key_mapping.rst:167
-#: ../../docs/tutorials/editor/default_key_mapping.rst:501
-#: ../../docs/tutorials/editor/default_key_mapping.rst:501
+#: ../../docs/tutorials/editor/default_key_mapping.rst:106
+#: ../../docs/tutorials/editor/default_key_mapping.rst:106
+#: ../../docs/tutorials/editor/default_key_mapping.rst:155
+#: ../../docs/tutorials/editor/default_key_mapping.rst:155
+#: ../../docs/tutorials/editor/default_key_mapping.rst:169
+#: ../../docs/tutorials/editor/default_key_mapping.rst:169
+#: ../../docs/tutorials/editor/default_key_mapping.rst:478
+#: ../../docs/tutorials/editor/default_key_mapping.rst:478
 msgid ":kbd:`W`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:104
+#: ../../docs/tutorials/editor/default_key_mapping.rst:106
 msgid "``canvas_item_editor/move_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:106
-#: ../../docs/tutorials/editor/default_key_mapping.rst:169
+#: ../../docs/tutorials/editor/default_key_mapping.rst:108
+#: ../../docs/tutorials/editor/default_key_mapping.rst:171
 msgid "Rotate Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:106
-#: ../../docs/tutorials/editor/default_key_mapping.rst:106
-#: ../../docs/tutorials/editor/default_key_mapping.rst:157
-#: ../../docs/tutorials/editor/default_key_mapping.rst:157
-#: ../../docs/tutorials/editor/default_key_mapping.rst:169
-#: ../../docs/tutorials/editor/default_key_mapping.rst:169
+#: ../../docs/tutorials/editor/default_key_mapping.rst:108
+#: ../../docs/tutorials/editor/default_key_mapping.rst:108
+#: ../../docs/tutorials/editor/default_key_mapping.rst:159
+#: ../../docs/tutorials/editor/default_key_mapping.rst:159
+#: ../../docs/tutorials/editor/default_key_mapping.rst:171
+#: ../../docs/tutorials/editor/default_key_mapping.rst:171
 msgid ":kbd:`E`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:106
+#: ../../docs/tutorials/editor/default_key_mapping.rst:108
 msgid "``canvas_item_editor/rotate_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:108
-#: ../../docs/tutorials/editor/default_key_mapping.rst:171
+#: ../../docs/tutorials/editor/default_key_mapping.rst:110
+#: ../../docs/tutorials/editor/default_key_mapping.rst:173
 msgid "Scale Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:108
-#: ../../docs/tutorials/editor/default_key_mapping.rst:108
-#: ../../docs/tutorials/editor/default_key_mapping.rst:155
-#: ../../docs/tutorials/editor/default_key_mapping.rst:155
-#: ../../docs/tutorials/editor/default_key_mapping.rst:499
-#: ../../docs/tutorials/editor/default_key_mapping.rst:499
+#: ../../docs/tutorials/editor/default_key_mapping.rst:110
+#: ../../docs/tutorials/editor/default_key_mapping.rst:110
+#: ../../docs/tutorials/editor/default_key_mapping.rst:157
+#: ../../docs/tutorials/editor/default_key_mapping.rst:157
+#: ../../docs/tutorials/editor/default_key_mapping.rst:476
+#: ../../docs/tutorials/editor/default_key_mapping.rst:476
 msgid ":kbd:`S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:108
+#: ../../docs/tutorials/editor/default_key_mapping.rst:110
 msgid "``canvas_item_editor/scale_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:110
+#: ../../docs/tutorials/editor/default_key_mapping.rst:112
 msgid "Ruler Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:110
-#: ../../docs/tutorials/editor/default_key_mapping.rst:110
-#: ../../docs/tutorials/editor/default_key_mapping.rst:171
-#: ../../docs/tutorials/editor/default_key_mapping.rst:171
+#: ../../docs/tutorials/editor/default_key_mapping.rst:112
+#: ../../docs/tutorials/editor/default_key_mapping.rst:112
+#: ../../docs/tutorials/editor/default_key_mapping.rst:173
+#: ../../docs/tutorials/editor/default_key_mapping.rst:173
 msgid ":kbd:`R`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:110
+#: ../../docs/tutorials/editor/default_key_mapping.rst:112
 msgid "``canvas_item_editor/ruler_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:112
+#: ../../docs/tutorials/editor/default_key_mapping.rst:114
 msgid "Use Smart Snap"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:112
-#: ../../docs/tutorials/editor/default_key_mapping.rst:112
+#: ../../docs/tutorials/editor/default_key_mapping.rst:114
+#: ../../docs/tutorials/editor/default_key_mapping.rst:114
 msgid ":kbd:`Shift + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:112
+#: ../../docs/tutorials/editor/default_key_mapping.rst:114
 msgid "``canvas_item_editor/use_smart_snap``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:114
+#: ../../docs/tutorials/editor/default_key_mapping.rst:116
 msgid "Use Grid Snap"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:114
-#: ../../docs/tutorials/editor/default_key_mapping.rst:114
+#: ../../docs/tutorials/editor/default_key_mapping.rst:116
+#: ../../docs/tutorials/editor/default_key_mapping.rst:116
 msgid ":kbd:`Shift + G`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:114
+#: ../../docs/tutorials/editor/default_key_mapping.rst:116
 msgid "``canvas_item_editor/use_grid_snap``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:116
+#: ../../docs/tutorials/editor/default_key_mapping.rst:118
 msgid "Multiply grid step by 2"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:116
-#: ../../docs/tutorials/editor/default_key_mapping.rst:116
+#: ../../docs/tutorials/editor/default_key_mapping.rst:118
+#: ../../docs/tutorials/editor/default_key_mapping.rst:118
 msgid ":kbd:`Num *`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:116
+#: ../../docs/tutorials/editor/default_key_mapping.rst:118
 msgid "``canvas_item_editor/multiply_grid_step``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:118
+#: ../../docs/tutorials/editor/default_key_mapping.rst:120
 msgid "Divide grid step by 2"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:118
-#: ../../docs/tutorials/editor/default_key_mapping.rst:118
+#: ../../docs/tutorials/editor/default_key_mapping.rst:120
+#: ../../docs/tutorials/editor/default_key_mapping.rst:120
 msgid ":kbd:`Num /`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:118
+#: ../../docs/tutorials/editor/default_key_mapping.rst:120
 msgid "``canvas_item_editor/divide_grid_step``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:120
+#: ../../docs/tutorials/editor/default_key_mapping.rst:122
 msgid "Always Show Grid"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:120
-#: ../../docs/tutorials/editor/default_key_mapping.rst:120
-#: ../../docs/tutorials/editor/default_key_mapping.rst:489
-#: ../../docs/tutorials/editor/default_key_mapping.rst:489
+#: ../../docs/tutorials/editor/default_key_mapping.rst:122
+#: ../../docs/tutorials/editor/default_key_mapping.rst:122
+#: ../../docs/tutorials/editor/default_key_mapping.rst:466
+#: ../../docs/tutorials/editor/default_key_mapping.rst:466
 msgid ":kbd:`G`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:120
+#: ../../docs/tutorials/editor/default_key_mapping.rst:122
 msgid "``canvas_item_editor/show_grid``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:122
+#: ../../docs/tutorials/editor/default_key_mapping.rst:124
 msgid "Show Helpers"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:122
-#: ../../docs/tutorials/editor/default_key_mapping.rst:122
+#: ../../docs/tutorials/editor/default_key_mapping.rst:124
+#: ../../docs/tutorials/editor/default_key_mapping.rst:124
 msgid ":kbd:`H`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:122
+#: ../../docs/tutorials/editor/default_key_mapping.rst:124
 msgid "``canvas_item_editor/show_helpers``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:124
+#: ../../docs/tutorials/editor/default_key_mapping.rst:126
 msgid "Show Guides"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:124
-#: ../../docs/tutorials/editor/default_key_mapping.rst:124
-#: ../../docs/tutorials/editor/default_key_mapping.rst:175
-#: ../../docs/tutorials/editor/default_key_mapping.rst:175
+#: ../../docs/tutorials/editor/default_key_mapping.rst:126
+#: ../../docs/tutorials/editor/default_key_mapping.rst:126
+#: ../../docs/tutorials/editor/default_key_mapping.rst:177
+#: ../../docs/tutorials/editor/default_key_mapping.rst:177
 msgid ":kbd:`Y`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:124
+#: ../../docs/tutorials/editor/default_key_mapping.rst:126
 msgid "``canvas_item_editor/show_guides``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:126
+#: ../../docs/tutorials/editor/default_key_mapping.rst:128
 msgid "Center Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:126
-#: ../../docs/tutorials/editor/default_key_mapping.rst:126
-#: ../../docs/tutorials/editor/default_key_mapping.rst:197
-#: ../../docs/tutorials/editor/default_key_mapping.rst:197
+#: ../../docs/tutorials/editor/default_key_mapping.rst:128
+#: ../../docs/tutorials/editor/default_key_mapping.rst:128
+#: ../../docs/tutorials/editor/default_key_mapping.rst:199
+#: ../../docs/tutorials/editor/default_key_mapping.rst:199
 msgid ":kbd:`F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:126
+#: ../../docs/tutorials/editor/default_key_mapping.rst:128
 msgid "``canvas_item_editor/center_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:128
+#: ../../docs/tutorials/editor/default_key_mapping.rst:130
 msgid "Frame Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:128
-#: ../../docs/tutorials/editor/default_key_mapping.rst:128
-#: ../../docs/tutorials/editor/default_key_mapping.rst:147
-#: ../../docs/tutorials/editor/default_key_mapping.rst:147
+#: ../../docs/tutorials/editor/default_key_mapping.rst:130
+#: ../../docs/tutorials/editor/default_key_mapping.rst:130
+#: ../../docs/tutorials/editor/default_key_mapping.rst:149
+#: ../../docs/tutorials/editor/default_key_mapping.rst:149
 msgid ":kbd:`Shift + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:128
+#: ../../docs/tutorials/editor/default_key_mapping.rst:130
 msgid "``canvas_item_editor/frame_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:130
+#: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid "Preview Canvas Scale"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:130
+#: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid ":kbd:`Ctrl + Shift + P`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:130
+#: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid ":kbd:`Cmd + Shift + P`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:130
+#: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid "``canvas_item_editor/preview_canvas_scale``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:132
+#: ../../docs/tutorials/editor/default_key_mapping.rst:134
 msgid "Insert Key"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:132
-#: ../../docs/tutorials/editor/default_key_mapping.rst:132
+#: ../../docs/tutorials/editor/default_key_mapping.rst:134
+#: ../../docs/tutorials/editor/default_key_mapping.rst:134
 msgid ":kbd:`Ins`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:132
+#: ../../docs/tutorials/editor/default_key_mapping.rst:134
 msgid "``canvas_item_editor/anim_insert_key``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:134
+#: ../../docs/tutorials/editor/default_key_mapping.rst:136
 msgid "Insert Key (Existing Tracks)"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:134
+#: ../../docs/tutorials/editor/default_key_mapping.rst:136
 msgid ":kbd:`Ctrl + Ins`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:134
+#: ../../docs/tutorials/editor/default_key_mapping.rst:136
 msgid ":kbd:`Cmd + Ins`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:134
+#: ../../docs/tutorials/editor/default_key_mapping.rst:136
 msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:136
+#: ../../docs/tutorials/editor/default_key_mapping.rst:138
 msgid "Make Custom Bones from Nodes"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:136
-#: ../../docs/tutorials/editor/default_key_mapping.rst:280
+#: ../../docs/tutorials/editor/default_key_mapping.rst:138
+#: ../../docs/tutorials/editor/default_key_mapping.rst:282
 msgid ":kbd:`Ctrl + Shift + B`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:136
-#: ../../docs/tutorials/editor/default_key_mapping.rst:280
-#: ../../docs/tutorials/editor/default_key_mapping.rst:286
+#: ../../docs/tutorials/editor/default_key_mapping.rst:138
+#: ../../docs/tutorials/editor/default_key_mapping.rst:282
+#: ../../docs/tutorials/editor/default_key_mapping.rst:288
 msgid ":kbd:`Cmd + Shift + B`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:136
+#: ../../docs/tutorials/editor/default_key_mapping.rst:138
 msgid "``canvas_item_editor/skeleton_make_bones``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:138
+#: ../../docs/tutorials/editor/default_key_mapping.rst:140
 msgid "Clear Pose"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:138
-#: ../../docs/tutorials/editor/default_key_mapping.rst:138
+#: ../../docs/tutorials/editor/default_key_mapping.rst:140
+#: ../../docs/tutorials/editor/default_key_mapping.rst:140
 msgid ":kbd:`Shift + K`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:138
+#: ../../docs/tutorials/editor/default_key_mapping.rst:140
 msgid "``canvas_item_editor/anim_clear_pose``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:142
+#: ../../docs/tutorials/editor/default_key_mapping.rst:144
 msgid "3D / Spatial Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:147
+#: ../../docs/tutorials/editor/default_key_mapping.rst:149
 msgid "Toggle Freelook"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:147
+#: ../../docs/tutorials/editor/default_key_mapping.rst:149
 msgid "``spatial_editor/freelook_toggle``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:149
+#: ../../docs/tutorials/editor/default_key_mapping.rst:151
 msgid "Freelook Left"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:149
-#: ../../docs/tutorials/editor/default_key_mapping.rst:149
-#: ../../docs/tutorials/editor/default_key_mapping.rst:497
-#: ../../docs/tutorials/editor/default_key_mapping.rst:497
+#: ../../docs/tutorials/editor/default_key_mapping.rst:151
+#: ../../docs/tutorials/editor/default_key_mapping.rst:151
+#: ../../docs/tutorials/editor/default_key_mapping.rst:474
+#: ../../docs/tutorials/editor/default_key_mapping.rst:474
 msgid ":kbd:`A`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:149
+#: ../../docs/tutorials/editor/default_key_mapping.rst:151
 msgid "``spatial_editor/freelook_left``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:151
+#: ../../docs/tutorials/editor/default_key_mapping.rst:153
 msgid "Freelook Right"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:151
-#: ../../docs/tutorials/editor/default_key_mapping.rst:151
+#: ../../docs/tutorials/editor/default_key_mapping.rst:153
+#: ../../docs/tutorials/editor/default_key_mapping.rst:153
 msgid ":kbd:`D`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:151
+#: ../../docs/tutorials/editor/default_key_mapping.rst:153
 msgid "``spatial_editor/freelook_right``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:153
+#: ../../docs/tutorials/editor/default_key_mapping.rst:155
 msgid "Freelook Forward"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:153
+#: ../../docs/tutorials/editor/default_key_mapping.rst:155
 msgid "``spatial_editor/freelook_forward``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:155
+#: ../../docs/tutorials/editor/default_key_mapping.rst:157
 msgid "Freelook Backwards"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:155
+#: ../../docs/tutorials/editor/default_key_mapping.rst:157
 msgid "``spatial_editor/freelook_backwards``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:157
+#: ../../docs/tutorials/editor/default_key_mapping.rst:159
 msgid "Freelook Up"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:157
+#: ../../docs/tutorials/editor/default_key_mapping.rst:159
 msgid "``spatial_editor/freelook_up``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:159
+#: ../../docs/tutorials/editor/default_key_mapping.rst:161
 msgid "Freelook Down"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:159
+#: ../../docs/tutorials/editor/default_key_mapping.rst:161
 msgid "``spatial_editor/freelook_down``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:161
+#: ../../docs/tutorials/editor/default_key_mapping.rst:163
 msgid "Freelook Speed Modifier"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:161
-#: ../../docs/tutorials/editor/default_key_mapping.rst:161
+#: ../../docs/tutorials/editor/default_key_mapping.rst:163
+#: ../../docs/tutorials/editor/default_key_mapping.rst:163
 msgid ":kbd:`Shift`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:161
+#: ../../docs/tutorials/editor/default_key_mapping.rst:163
 msgid "``spatial_editor/freelook_speed_modifier``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:163
+#: ../../docs/tutorials/editor/default_key_mapping.rst:165
 msgid "Freelook Slow Modifier"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:163
-#: ../../docs/tutorials/editor/default_key_mapping.rst:163
+#: ../../docs/tutorials/editor/default_key_mapping.rst:165
+#: ../../docs/tutorials/editor/default_key_mapping.rst:165
 msgid ":kbd:`Alt`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:163
+#: ../../docs/tutorials/editor/default_key_mapping.rst:165
 msgid "``spatial_editor/freelook_slow_modifier``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:165
+#: ../../docs/tutorials/editor/default_key_mapping.rst:167
 msgid "``spatial_editor/tool_select``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:167
+#: ../../docs/tutorials/editor/default_key_mapping.rst:169
 msgid "``spatial_editor/tool_move``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:169
+#: ../../docs/tutorials/editor/default_key_mapping.rst:171
 msgid "``spatial_editor/tool_rotate``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:171
+#: ../../docs/tutorials/editor/default_key_mapping.rst:173
 msgid "``spatial_editor/tool_scale``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:173
+#: ../../docs/tutorials/editor/default_key_mapping.rst:175
 msgid "Use Local Space"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:173
-#: ../../docs/tutorials/editor/default_key_mapping.rst:173
-#: ../../docs/tutorials/editor/default_key_mapping.rst:491
-#: ../../docs/tutorials/editor/default_key_mapping.rst:491
+#: ../../docs/tutorials/editor/default_key_mapping.rst:175
+#: ../../docs/tutorials/editor/default_key_mapping.rst:175
+#: ../../docs/tutorials/editor/default_key_mapping.rst:468
+#: ../../docs/tutorials/editor/default_key_mapping.rst:468
 msgid ":kbd:`T`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:173
+#: ../../docs/tutorials/editor/default_key_mapping.rst:175
 msgid "``spatial_editor/local_coords``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:175
+#: ../../docs/tutorials/editor/default_key_mapping.rst:177
 msgid "Use Snap"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:175
+#: ../../docs/tutorials/editor/default_key_mapping.rst:177
 msgid "``spatial_editor/snap``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:177
+#: ../../docs/tutorials/editor/default_key_mapping.rst:179
 msgid "Snap Object to Floor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:177
-#: ../../docs/tutorials/editor/default_key_mapping.rst:177
-#: ../../docs/tutorials/editor/default_key_mapping.rst:518
-#: ../../docs/tutorials/editor/default_key_mapping.rst:518
+#: ../../docs/tutorials/editor/default_key_mapping.rst:179
+#: ../../docs/tutorials/editor/default_key_mapping.rst:179
+#: ../../docs/tutorials/editor/default_key_mapping.rst:495
+#: ../../docs/tutorials/editor/default_key_mapping.rst:495
 msgid ":kbd:`PgDown`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:177
+#: ../../docs/tutorials/editor/default_key_mapping.rst:179
 msgid "``spatial_editor/snap_to_floor``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:179
+#: ../../docs/tutorials/editor/default_key_mapping.rst:181
 msgid "Top View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:179
-#: ../../docs/tutorials/editor/default_key_mapping.rst:179
+#: ../../docs/tutorials/editor/default_key_mapping.rst:181
+#: ../../docs/tutorials/editor/default_key_mapping.rst:181
 msgid ":kbd:`Num 7`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:179
+#: ../../docs/tutorials/editor/default_key_mapping.rst:181
 msgid "``spatial_editor/top_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:181
+#: ../../docs/tutorials/editor/default_key_mapping.rst:183
 msgid "Bottom View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:181
-#: ../../docs/tutorials/editor/default_key_mapping.rst:181
+#: ../../docs/tutorials/editor/default_key_mapping.rst:183
+#: ../../docs/tutorials/editor/default_key_mapping.rst:183
 msgid ":kbd:`Alt + Num 7`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:181
+#: ../../docs/tutorials/editor/default_key_mapping.rst:183
 msgid "``spatial_editor/bottom_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:183
+#: ../../docs/tutorials/editor/default_key_mapping.rst:185
 msgid "Front View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:183
-#: ../../docs/tutorials/editor/default_key_mapping.rst:183
+#: ../../docs/tutorials/editor/default_key_mapping.rst:185
+#: ../../docs/tutorials/editor/default_key_mapping.rst:185
 msgid ":kbd:`Num 1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:183
+#: ../../docs/tutorials/editor/default_key_mapping.rst:185
 msgid "``spatial_editor/front_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:185
+#: ../../docs/tutorials/editor/default_key_mapping.rst:187
 msgid "Rear View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:185
-#: ../../docs/tutorials/editor/default_key_mapping.rst:185
+#: ../../docs/tutorials/editor/default_key_mapping.rst:187
+#: ../../docs/tutorials/editor/default_key_mapping.rst:187
 msgid ":kbd:`Alt + Num 1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:185
+#: ../../docs/tutorials/editor/default_key_mapping.rst:187
 msgid "``spatial_editor/rear_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:187
+#: ../../docs/tutorials/editor/default_key_mapping.rst:189
 msgid "Right View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:187
-#: ../../docs/tutorials/editor/default_key_mapping.rst:187
+#: ../../docs/tutorials/editor/default_key_mapping.rst:189
+#: ../../docs/tutorials/editor/default_key_mapping.rst:189
 msgid ":kbd:`Num 3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:187
+#: ../../docs/tutorials/editor/default_key_mapping.rst:189
 msgid "``spatial_editor/right_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:189
+#: ../../docs/tutorials/editor/default_key_mapping.rst:191
 msgid "Left View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:189
-#: ../../docs/tutorials/editor/default_key_mapping.rst:189
+#: ../../docs/tutorials/editor/default_key_mapping.rst:191
+#: ../../docs/tutorials/editor/default_key_mapping.rst:191
 msgid ":kbd:`Alt + Num 3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:189
+#: ../../docs/tutorials/editor/default_key_mapping.rst:191
 msgid "``spatial_editor/left_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:191
+#: ../../docs/tutorials/editor/default_key_mapping.rst:193
 msgid "Switch Perspective/Orthogonal View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:191
-#: ../../docs/tutorials/editor/default_key_mapping.rst:191
+#: ../../docs/tutorials/editor/default_key_mapping.rst:193
+#: ../../docs/tutorials/editor/default_key_mapping.rst:193
 msgid ":kbd:`Num 5`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:191
+#: ../../docs/tutorials/editor/default_key_mapping.rst:193
 msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:193
+#: ../../docs/tutorials/editor/default_key_mapping.rst:195
 msgid "Insert Animation Key"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:193
-#: ../../docs/tutorials/editor/default_key_mapping.rst:193
+#: ../../docs/tutorials/editor/default_key_mapping.rst:195
+#: ../../docs/tutorials/editor/default_key_mapping.rst:195
 msgid ":kbd:`K`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:193
+#: ../../docs/tutorials/editor/default_key_mapping.rst:195
 msgid "``spatial_editor/insert_anim_key``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:195
+#: ../../docs/tutorials/editor/default_key_mapping.rst:197
 msgid "Focus Origin"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:195
-#: ../../docs/tutorials/editor/default_key_mapping.rst:195
+#: ../../docs/tutorials/editor/default_key_mapping.rst:197
+#: ../../docs/tutorials/editor/default_key_mapping.rst:197
 msgid ":kbd:`O`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:195
+#: ../../docs/tutorials/editor/default_key_mapping.rst:197
 msgid "``spatial_editor/focus_origin``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:197
+#: ../../docs/tutorials/editor/default_key_mapping.rst:199
 msgid "Focus Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:197
+#: ../../docs/tutorials/editor/default_key_mapping.rst:199
 msgid "``spatial_editor/focus_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:199
+#: ../../docs/tutorials/editor/default_key_mapping.rst:201
 msgid "Align Transform with View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:199
+#: ../../docs/tutorials/editor/default_key_mapping.rst:201
 msgid ":kbd:`Ctrl + Alt + M`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:199
+#: ../../docs/tutorials/editor/default_key_mapping.rst:201
 msgid ":kbd:`Cmd + Alt + M`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:199
+#: ../../docs/tutorials/editor/default_key_mapping.rst:201
 msgid "``spatial_editor/align_transform_with_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:201
+#: ../../docs/tutorials/editor/default_key_mapping.rst:203
 msgid "Align Rotation with View"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:201
-#: ../../docs/tutorials/editor/default_key_mapping.rst:282
+#: ../../docs/tutorials/editor/default_key_mapping.rst:203
+#: ../../docs/tutorials/editor/default_key_mapping.rst:284
 msgid ":kbd:`Ctrl + Alt + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:201
+#: ../../docs/tutorials/editor/default_key_mapping.rst:203
 msgid ":kbd:`Cmd + Alt + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:201
+#: ../../docs/tutorials/editor/default_key_mapping.rst:203
 msgid "``spatial_editor/align_rotation_with_view``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:203
+#: ../../docs/tutorials/editor/default_key_mapping.rst:205
 msgid "1 Viewport"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:203
+#: ../../docs/tutorials/editor/default_key_mapping.rst:205
 msgid ":kbd:`Ctrl + 1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:203
+#: ../../docs/tutorials/editor/default_key_mapping.rst:205
 msgid ":kbd:`Cmd + 1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:203
+#: ../../docs/tutorials/editor/default_key_mapping.rst:205
 msgid "``spatial_editor/1_viewport``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:205
+#: ../../docs/tutorials/editor/default_key_mapping.rst:207
 msgid "2 Viewports"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:205
+#: ../../docs/tutorials/editor/default_key_mapping.rst:207
 msgid ":kbd:`Ctrl + 2`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:205
+#: ../../docs/tutorials/editor/default_key_mapping.rst:207
 msgid ":kbd:`Cmd + 2`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:205
+#: ../../docs/tutorials/editor/default_key_mapping.rst:207
 msgid "``spatial_editor/2_viewports``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:207
+#: ../../docs/tutorials/editor/default_key_mapping.rst:209
 msgid "2 Viewports (Alt)"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:207
+#: ../../docs/tutorials/editor/default_key_mapping.rst:209
 msgid ":kbd:`Ctrl + Alt + 2`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:207
+#: ../../docs/tutorials/editor/default_key_mapping.rst:209
 msgid ":kbd:`Cmd + Alt + 2`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:207
+#: ../../docs/tutorials/editor/default_key_mapping.rst:209
 msgid "``spatial_editor/2_viewports_alt``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:209
+#: ../../docs/tutorials/editor/default_key_mapping.rst:211
 msgid "3 Viewports"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:209
+#: ../../docs/tutorials/editor/default_key_mapping.rst:211
 msgid ":kbd:`Ctrl + 3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:209
+#: ../../docs/tutorials/editor/default_key_mapping.rst:211
 msgid ":kbd:`Cmd + 3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:209
+#: ../../docs/tutorials/editor/default_key_mapping.rst:211
 msgid "``spatial_editor/3_viewports``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:211
+#: ../../docs/tutorials/editor/default_key_mapping.rst:213
 msgid "3 Viewports (Alt)"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:211
+#: ../../docs/tutorials/editor/default_key_mapping.rst:213
 msgid ":kbd:`Ctrl + Alt + 3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:211
+#: ../../docs/tutorials/editor/default_key_mapping.rst:213
 msgid ":kbd:`Cmd + Alt + 3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:211
+#: ../../docs/tutorials/editor/default_key_mapping.rst:213
 msgid "``spatial_editor/3_viewports_alt``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:213
+#: ../../docs/tutorials/editor/default_key_mapping.rst:215
 msgid "4 Viewports"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:213
+#: ../../docs/tutorials/editor/default_key_mapping.rst:215
 msgid ":kbd:`Ctrl + 4`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:213
+#: ../../docs/tutorials/editor/default_key_mapping.rst:215
 msgid ":kbd:`Cmd + 4`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:213
+#: ../../docs/tutorials/editor/default_key_mapping.rst:215
 msgid "``spatial_editor/4_viewports``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:217
+#: ../../docs/tutorials/editor/default_key_mapping.rst:219
 msgid "Text Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:222
+#: ../../docs/tutorials/editor/default_key_mapping.rst:224
 msgid "Cut"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:222
-#: ../../docs/tutorials/editor/default_key_mapping.rst:354
-#: ../../docs/tutorials/editor/default_key_mapping.rst:505
+#: ../../docs/tutorials/editor/default_key_mapping.rst:224
+#: ../../docs/tutorials/editor/default_key_mapping.rst:482
 msgid ":kbd:`Ctrl + X`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:222
-#: ../../docs/tutorials/editor/default_key_mapping.rst:354
-#: ../../docs/tutorials/editor/default_key_mapping.rst:505
+#: ../../docs/tutorials/editor/default_key_mapping.rst:224
+#: ../../docs/tutorials/editor/default_key_mapping.rst:482
 msgid ":kbd:`Cmd + X`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:222
+#: ../../docs/tutorials/editor/default_key_mapping.rst:224
 msgid "``script_text_editor/cut``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:224
+#: ../../docs/tutorials/editor/default_key_mapping.rst:226
 msgid "Copy"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:224
+#: ../../docs/tutorials/editor/default_key_mapping.rst:226
 #: ../../docs/tutorials/editor/default_key_mapping.rst:352
-#: ../../docs/tutorials/editor/default_key_mapping.rst:375
-#: ../../docs/tutorials/editor/default_key_mapping.rst:430
-#: ../../docs/tutorials/editor/default_key_mapping.rst:447
-#: ../../docs/tutorials/editor/default_key_mapping.rst:507
+#: ../../docs/tutorials/editor/default_key_mapping.rst:407
+#: ../../docs/tutorials/editor/default_key_mapping.rst:424
+#: ../../docs/tutorials/editor/default_key_mapping.rst:484
 msgid ":kbd:`Ctrl + C`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:224
+#: ../../docs/tutorials/editor/default_key_mapping.rst:226
 #: ../../docs/tutorials/editor/default_key_mapping.rst:352
-#: ../../docs/tutorials/editor/default_key_mapping.rst:375
-#: ../../docs/tutorials/editor/default_key_mapping.rst:430
-#: ../../docs/tutorials/editor/default_key_mapping.rst:447
-#: ../../docs/tutorials/editor/default_key_mapping.rst:507
+#: ../../docs/tutorials/editor/default_key_mapping.rst:407
+#: ../../docs/tutorials/editor/default_key_mapping.rst:424
+#: ../../docs/tutorials/editor/default_key_mapping.rst:484
 msgid ":kbd:`Cmd + C`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:224
+#: ../../docs/tutorials/editor/default_key_mapping.rst:226
 msgid "``script_text_editor/copy``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:226
+#: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid "Paste"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:226
-#: ../../docs/tutorials/editor/default_key_mapping.rst:356
+#: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid ":kbd:`Ctrl + V`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:226
-#: ../../docs/tutorials/editor/default_key_mapping.rst:356
+#: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid ":kbd:`Cmd + V`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:226
+#: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid "``script_text_editor/paste``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:228
+#: ../../docs/tutorials/editor/default_key_mapping.rst:230
 msgid "Select All"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:228
-#: ../../docs/tutorials/editor/default_key_mapping.rst:443
+#: ../../docs/tutorials/editor/default_key_mapping.rst:230
+#: ../../docs/tutorials/editor/default_key_mapping.rst:420
 msgid ":kbd:`Ctrl + A`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:228
-#: ../../docs/tutorials/editor/default_key_mapping.rst:443
+#: ../../docs/tutorials/editor/default_key_mapping.rst:230
+#: ../../docs/tutorials/editor/default_key_mapping.rst:420
 msgid ":kbd:`Cmd + A`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:228
+#: ../../docs/tutorials/editor/default_key_mapping.rst:230
 msgid "``script_text_editor/select_all``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:230
-#: ../../docs/tutorials/editor/default_key_mapping.rst:303
+#: ../../docs/tutorials/editor/default_key_mapping.rst:232
+#: ../../docs/tutorials/editor/default_key_mapping.rst:305
 msgid "Find"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:230
-#: ../../docs/tutorials/editor/default_key_mapping.rst:303
-#: ../../docs/tutorials/editor/default_key_mapping.rst:350
-#: ../../docs/tutorials/editor/default_key_mapping.rst:483
+#: ../../docs/tutorials/editor/default_key_mapping.rst:232
+#: ../../docs/tutorials/editor/default_key_mapping.rst:305
+#: ../../docs/tutorials/editor/default_key_mapping.rst:460
 msgid ":kbd:`Ctrl + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:230
-#: ../../docs/tutorials/editor/default_key_mapping.rst:303
-#: ../../docs/tutorials/editor/default_key_mapping.rst:350
-#: ../../docs/tutorials/editor/default_key_mapping.rst:483
+#: ../../docs/tutorials/editor/default_key_mapping.rst:232
+#: ../../docs/tutorials/editor/default_key_mapping.rst:305
+#: ../../docs/tutorials/editor/default_key_mapping.rst:460
 msgid ":kbd:`Cmd + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:230
+#: ../../docs/tutorials/editor/default_key_mapping.rst:232
 msgid "``script_text_editor/find``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:232
-#: ../../docs/tutorials/editor/default_key_mapping.rst:305
+#: ../../docs/tutorials/editor/default_key_mapping.rst:234
+#: ../../docs/tutorials/editor/default_key_mapping.rst:307
 msgid "Find Next"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:232
-#: ../../docs/tutorials/editor/default_key_mapping.rst:305
-#: ../../docs/tutorials/editor/default_key_mapping.rst:305
+#: ../../docs/tutorials/editor/default_key_mapping.rst:234
+#: ../../docs/tutorials/editor/default_key_mapping.rst:307
+#: ../../docs/tutorials/editor/default_key_mapping.rst:307
 msgid ":kbd:`F3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:232
-#: ../../docs/tutorials/editor/default_key_mapping.rst:360
+#: ../../docs/tutorials/editor/default_key_mapping.rst:234
 msgid ":kbd:`Cmd + G`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:232
+#: ../../docs/tutorials/editor/default_key_mapping.rst:234
 msgid "``script_text_editor/find_next``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:234
-#: ../../docs/tutorials/editor/default_key_mapping.rst:307
+#: ../../docs/tutorials/editor/default_key_mapping.rst:236
+#: ../../docs/tutorials/editor/default_key_mapping.rst:309
 msgid "Find Previous"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:234
-#: ../../docs/tutorials/editor/default_key_mapping.rst:307
-#: ../../docs/tutorials/editor/default_key_mapping.rst:307
+#: ../../docs/tutorials/editor/default_key_mapping.rst:236
+#: ../../docs/tutorials/editor/default_key_mapping.rst:309
+#: ../../docs/tutorials/editor/default_key_mapping.rst:309
 msgid ":kbd:`Shift + F3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:234
+#: ../../docs/tutorials/editor/default_key_mapping.rst:236
 msgid ":kbd:`Cmd + Shift + G`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:234
+#: ../../docs/tutorials/editor/default_key_mapping.rst:236
 msgid "``script_text_editor/find_previous``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:236
-#: ../../docs/tutorials/editor/default_key_mapping.rst:309
+#: ../../docs/tutorials/editor/default_key_mapping.rst:238
+#: ../../docs/tutorials/editor/default_key_mapping.rst:311
 msgid "Find in Files"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:236
-#: ../../docs/tutorials/editor/default_key_mapping.rst:309
+#: ../../docs/tutorials/editor/default_key_mapping.rst:238
+#: ../../docs/tutorials/editor/default_key_mapping.rst:311
 msgid ":kbd:`Ctrl + Shift + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:236
-#: ../../docs/tutorials/editor/default_key_mapping.rst:309
+#: ../../docs/tutorials/editor/default_key_mapping.rst:238
+#: ../../docs/tutorials/editor/default_key_mapping.rst:311
 msgid ":kbd:`Cmd + Shift + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:236
+#: ../../docs/tutorials/editor/default_key_mapping.rst:238
 msgid "``script_text_editor/find_in_files``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:238
+#: ../../docs/tutorials/editor/default_key_mapping.rst:240
 msgid "Replace"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:238
-#: ../../docs/tutorials/editor/default_key_mapping.rst:364
+#: ../../docs/tutorials/editor/default_key_mapping.rst:240
 msgid ":kbd:`Ctrl + R`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:238
+#: ../../docs/tutorials/editor/default_key_mapping.rst:240
 msgid ":kbd:`Alt + Cmd + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:238
+#: ../../docs/tutorials/editor/default_key_mapping.rst:240
 msgid "``script_text_editor/replace``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:240
+#: ../../docs/tutorials/editor/default_key_mapping.rst:242
 msgid "Replace in Files"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:240
-#: ../../docs/tutorials/editor/default_key_mapping.rst:325
+#: ../../docs/tutorials/editor/default_key_mapping.rst:242
+#: ../../docs/tutorials/editor/default_key_mapping.rst:327
 msgid ":kbd:`Ctrl + Shift + R`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:240
+#: ../../docs/tutorials/editor/default_key_mapping.rst:242
 msgid "``script_text_editor/replace_in_files``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:242
+#: ../../docs/tutorials/editor/default_key_mapping.rst:244
 msgid "``script_text_editor/undo``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:244
+#: ../../docs/tutorials/editor/default_key_mapping.rst:246
 msgid ":kbd:`Ctrl + Y`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:244
+#: ../../docs/tutorials/editor/default_key_mapping.rst:246
 msgid ":kbd:`Cmd + Y`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:244
+#: ../../docs/tutorials/editor/default_key_mapping.rst:246
 msgid "``script_text_editor/redo``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:246
-#: ../../docs/tutorials/editor/default_key_mapping.rst:311
-#: ../../docs/tutorials/editor/default_key_mapping.rst:455
+#: ../../docs/tutorials/editor/default_key_mapping.rst:248
+#: ../../docs/tutorials/editor/default_key_mapping.rst:313
+#: ../../docs/tutorials/editor/default_key_mapping.rst:432
 msgid "Move Up"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:246
-#: ../../docs/tutorials/editor/default_key_mapping.rst:246
-#: ../../docs/tutorials/editor/default_key_mapping.rst:403
-#: ../../docs/tutorials/editor/default_key_mapping.rst:403
+#: ../../docs/tutorials/editor/default_key_mapping.rst:248
+#: ../../docs/tutorials/editor/default_key_mapping.rst:248
+#: ../../docs/tutorials/editor/default_key_mapping.rst:380
+#: ../../docs/tutorials/editor/default_key_mapping.rst:380
 msgid ":kbd:`Alt + Up Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:246
+#: ../../docs/tutorials/editor/default_key_mapping.rst:248
 msgid "``script_text_editor/move_up``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:248
-#: ../../docs/tutorials/editor/default_key_mapping.rst:313
-#: ../../docs/tutorials/editor/default_key_mapping.rst:457
+#: ../../docs/tutorials/editor/default_key_mapping.rst:250
+#: ../../docs/tutorials/editor/default_key_mapping.rst:315
+#: ../../docs/tutorials/editor/default_key_mapping.rst:434
 msgid "Move Down"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:248
-#: ../../docs/tutorials/editor/default_key_mapping.rst:248
+#: ../../docs/tutorials/editor/default_key_mapping.rst:250
+#: ../../docs/tutorials/editor/default_key_mapping.rst:250
 msgid ":kbd:`Alt + Down Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:248
+#: ../../docs/tutorials/editor/default_key_mapping.rst:250
 msgid "``script_text_editor/move_down``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:250
+#: ../../docs/tutorials/editor/default_key_mapping.rst:252
 msgid "Delete Line"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:250
-#: ../../docs/tutorials/editor/default_key_mapping.rst:377
+#: ../../docs/tutorials/editor/default_key_mapping.rst:252
+#: ../../docs/tutorials/editor/default_key_mapping.rst:354
 msgid ":kbd:`Ctrl + Shift + K`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:250
-#: ../../docs/tutorials/editor/default_key_mapping.rst:377
+#: ../../docs/tutorials/editor/default_key_mapping.rst:252
+#: ../../docs/tutorials/editor/default_key_mapping.rst:354
 msgid ":kbd:`Cmd + Shift + K`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:250
+#: ../../docs/tutorials/editor/default_key_mapping.rst:252
 msgid "``script_text_editor/delete_line``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:252
+#: ../../docs/tutorials/editor/default_key_mapping.rst:254
 msgid "Toggle Comment"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:252
+#: ../../docs/tutorials/editor/default_key_mapping.rst:254
 msgid ":kbd:`Ctrl + K`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:252
+#: ../../docs/tutorials/editor/default_key_mapping.rst:254
 msgid ":kbd:`Cmd + K`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:252
+#: ../../docs/tutorials/editor/default_key_mapping.rst:254
 msgid "``script_text_editor/toggle_comment``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:254
+#: ../../docs/tutorials/editor/default_key_mapping.rst:256
 msgid "Fold/Unfold Line"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:254
-#: ../../docs/tutorials/editor/default_key_mapping.rst:254
-#: ../../docs/tutorials/editor/default_key_mapping.rst:409
-#: ../../docs/tutorials/editor/default_key_mapping.rst:409
+#: ../../docs/tutorials/editor/default_key_mapping.rst:256
+#: ../../docs/tutorials/editor/default_key_mapping.rst:256
+#: ../../docs/tutorials/editor/default_key_mapping.rst:386
+#: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid ":kbd:`Alt + F`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:254
+#: ../../docs/tutorials/editor/default_key_mapping.rst:256
 msgid "``script_text_editor/toggle_fold_line``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:256
+#: ../../docs/tutorials/editor/default_key_mapping.rst:258
 msgid "Clone Down"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:256
-#: ../../docs/tutorials/editor/default_key_mapping.rst:417
-#: ../../docs/tutorials/editor/default_key_mapping.rst:432
-#: ../../docs/tutorials/editor/default_key_mapping.rst:453
-#: ../../docs/tutorials/editor/default_key_mapping.rst:466
+#: ../../docs/tutorials/editor/default_key_mapping.rst:258
+#: ../../docs/tutorials/editor/default_key_mapping.rst:394
+#: ../../docs/tutorials/editor/default_key_mapping.rst:409
+#: ../../docs/tutorials/editor/default_key_mapping.rst:430
+#: ../../docs/tutorials/editor/default_key_mapping.rst:443
 msgid ":kbd:`Ctrl + D`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:256
+#: ../../docs/tutorials/editor/default_key_mapping.rst:258
 msgid ":kbd:`Cmd + Shift + C`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:256
+#: ../../docs/tutorials/editor/default_key_mapping.rst:258
 msgid "``script_text_editor/clone_down``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:258
+#: ../../docs/tutorials/editor/default_key_mapping.rst:260
 msgid "Complete Symbol"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:258
-#: ../../docs/tutorials/editor/default_key_mapping.rst:258
+#: ../../docs/tutorials/editor/default_key_mapping.rst:260
+#: ../../docs/tutorials/editor/default_key_mapping.rst:260
 msgid ":kbd:`Ctrl + Space`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:258
+#: ../../docs/tutorials/editor/default_key_mapping.rst:260
 msgid "``script_text_editor/complete_symbol``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:260
+#: ../../docs/tutorials/editor/default_key_mapping.rst:262
 msgid "Evaluate Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:260
+#: ../../docs/tutorials/editor/default_key_mapping.rst:262
 msgid ":kbd:`Ctrl + Shift + E`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:260
+#: ../../docs/tutorials/editor/default_key_mapping.rst:262
 msgid ":kbd:`Cmd + Shift + E`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:260
+#: ../../docs/tutorials/editor/default_key_mapping.rst:262
 msgid "``script_text_editor/evaluate_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:262
+#: ../../docs/tutorials/editor/default_key_mapping.rst:264
 msgid "Trim Trailing Whitespace"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:262
+#: ../../docs/tutorials/editor/default_key_mapping.rst:264
 msgid ":kbd:`Ctrl + Alt + T`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:262
+#: ../../docs/tutorials/editor/default_key_mapping.rst:264
 msgid ":kbd:`Cmd + Alt + T`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:262
+#: ../../docs/tutorials/editor/default_key_mapping.rst:264
 msgid "``script_text_editor/trim_trailing_whitespace``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:264
+#: ../../docs/tutorials/editor/default_key_mapping.rst:266
 msgid "Uppercase"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:264
-#: ../../docs/tutorials/editor/default_key_mapping.rst:264
+#: ../../docs/tutorials/editor/default_key_mapping.rst:266
+#: ../../docs/tutorials/editor/default_key_mapping.rst:266
 msgid ":kbd:`Shift + F4`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:264
+#: ../../docs/tutorials/editor/default_key_mapping.rst:266
 msgid "``script_text_editor/convert_to_uppercase``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:266
+#: ../../docs/tutorials/editor/default_key_mapping.rst:268
 msgid "Lowercase"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:266
-#: ../../docs/tutorials/editor/default_key_mapping.rst:266
+#: ../../docs/tutorials/editor/default_key_mapping.rst:268
+#: ../../docs/tutorials/editor/default_key_mapping.rst:268
 msgid ":kbd:`Shift + F5`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:266
+#: ../../docs/tutorials/editor/default_key_mapping.rst:268
 msgid "``script_text_editor/convert_to_lowercase``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:268
+#: ../../docs/tutorials/editor/default_key_mapping.rst:270
 msgid "Capitalize"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:268
-#: ../../docs/tutorials/editor/default_key_mapping.rst:268
+#: ../../docs/tutorials/editor/default_key_mapping.rst:270
+#: ../../docs/tutorials/editor/default_key_mapping.rst:270
 msgid ":kbd:`Shift + F6`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:268
+#: ../../docs/tutorials/editor/default_key_mapping.rst:270
 msgid "``script_text_editor/capitalize``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:270
+#: ../../docs/tutorials/editor/default_key_mapping.rst:272
 msgid "Convert Indent to Spaces"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:270
+#: ../../docs/tutorials/editor/default_key_mapping.rst:272
 msgid ":kbd:`Ctrl + Shift + Y`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:270
+#: ../../docs/tutorials/editor/default_key_mapping.rst:272
 msgid ":kbd:`Cmd + Shift + Y`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:270
+#: ../../docs/tutorials/editor/default_key_mapping.rst:272
 msgid "``script_text_editor/convert_indent_to_spaces``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:272
+#: ../../docs/tutorials/editor/default_key_mapping.rst:274
 msgid "Convert Indent to Tabs"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:272
+#: ../../docs/tutorials/editor/default_key_mapping.rst:274
 msgid ":kbd:`Ctrl + Shift + I`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:272
+#: ../../docs/tutorials/editor/default_key_mapping.rst:274
 msgid ":kbd:`Cmd + Shift + I`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:272
+#: ../../docs/tutorials/editor/default_key_mapping.rst:274
 msgid "``script_text_editor/convert_indent_to_tabs``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:274
+#: ../../docs/tutorials/editor/default_key_mapping.rst:276
 msgid "Auto Indent"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:274
+#: ../../docs/tutorials/editor/default_key_mapping.rst:276
 msgid ":kbd:`Ctrl + I`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:274
+#: ../../docs/tutorials/editor/default_key_mapping.rst:276
 msgid ":kbd:`Cmd + I`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:274
+#: ../../docs/tutorials/editor/default_key_mapping.rst:276
 msgid "``script_text_editor/auto_indent``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:276
+#: ../../docs/tutorials/editor/default_key_mapping.rst:278
 msgid "Toggle Bookmark"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:276
+#: ../../docs/tutorials/editor/default_key_mapping.rst:278
 msgid ":kbd:`Ctrl + Alt + B`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:276
+#: ../../docs/tutorials/editor/default_key_mapping.rst:278
 msgid ":kbd:`Cmd + Alt + B`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:276
+#: ../../docs/tutorials/editor/default_key_mapping.rst:278
 msgid "``script_text_editor/toggle_bookmark``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:278
+#: ../../docs/tutorials/editor/default_key_mapping.rst:280
 msgid "Go to Next Bookmark"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:278
+#: ../../docs/tutorials/editor/default_key_mapping.rst:280
 msgid ":kbd:`Ctrl + B`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:278
+#: ../../docs/tutorials/editor/default_key_mapping.rst:280
 msgid "``script_text_editor/goto_next_bookmark``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:280
+#: ../../docs/tutorials/editor/default_key_mapping.rst:282
 msgid "Go to Previous Bookmark"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:280
+#: ../../docs/tutorials/editor/default_key_mapping.rst:282
 msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:282
+#: ../../docs/tutorials/editor/default_key_mapping.rst:284
 msgid "Go to Function"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:282
+#: ../../docs/tutorials/editor/default_key_mapping.rst:284
 msgid ":kbd:`Ctrl + Cmd + J`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:282
+#: ../../docs/tutorials/editor/default_key_mapping.rst:284
 msgid "``script_text_editor/goto_function``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:284
+#: ../../docs/tutorials/editor/default_key_mapping.rst:286
 msgid "Go to Line"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:284
+#: ../../docs/tutorials/editor/default_key_mapping.rst:286
 msgid ":kbd:`Ctrl + L`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:284
+#: ../../docs/tutorials/editor/default_key_mapping.rst:286
 msgid ":kbd:`Cmd + L`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:284
+#: ../../docs/tutorials/editor/default_key_mapping.rst:286
 msgid "``script_text_editor/goto_line``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:286
-#: ../../docs/tutorials/editor/default_key_mapping.rst:366
+#: ../../docs/tutorials/editor/default_key_mapping.rst:288
 msgid "Toggle Breakpoint"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:286
-#: ../../docs/tutorials/editor/default_key_mapping.rst:366
-#: ../../docs/tutorials/editor/default_key_mapping.rst:366
+#: ../../docs/tutorials/editor/default_key_mapping.rst:288
 msgid ":kbd:`F9`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:286
+#: ../../docs/tutorials/editor/default_key_mapping.rst:288
 msgid "``script_text_editor/toggle_breakpoint``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:288
+#: ../../docs/tutorials/editor/default_key_mapping.rst:290
 msgid "Remove All Breakpoints"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:288
+#: ../../docs/tutorials/editor/default_key_mapping.rst:290
 msgid ":kbd:`Ctrl + Shift + F9`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:288
+#: ../../docs/tutorials/editor/default_key_mapping.rst:290
 msgid ":kbd:`Cmd + Shift + F9`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:288
+#: ../../docs/tutorials/editor/default_key_mapping.rst:290
 msgid "``script_text_editor/remove_all_breakpoints``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:290
+#: ../../docs/tutorials/editor/default_key_mapping.rst:292
 msgid "Go to Next Breakpoint"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:290
+#: ../../docs/tutorials/editor/default_key_mapping.rst:292
 msgid ":kbd:`Ctrl + .`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:290
+#: ../../docs/tutorials/editor/default_key_mapping.rst:292
 msgid "``script_text_editor/goto_next_breakpoint``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:292
+#: ../../docs/tutorials/editor/default_key_mapping.rst:294
 msgid "Go to Previous Breakpoint"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:292
+#: ../../docs/tutorials/editor/default_key_mapping.rst:294
 msgid ":kbd:`Ctrl + ,`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:292
+#: ../../docs/tutorials/editor/default_key_mapping.rst:294
 msgid ":kbd:`Cmd + ,`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:292
+#: ../../docs/tutorials/editor/default_key_mapping.rst:294
 msgid "``script_text_editor/goto_previous_breakpoint``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:294
+#: ../../docs/tutorials/editor/default_key_mapping.rst:296
 msgid "Contextual Help"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:294
+#: ../../docs/tutorials/editor/default_key_mapping.rst:296
 msgid ":kbd:`Alt + F1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:294
+#: ../../docs/tutorials/editor/default_key_mapping.rst:296
 msgid ":kbd:`Alt + Shift + Space`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:294
+#: ../../docs/tutorials/editor/default_key_mapping.rst:296
 msgid "``script_text_editor/contextual_help``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:298
+#: ../../docs/tutorials/editor/default_key_mapping.rst:300
 msgid "Script Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:303
+#: ../../docs/tutorials/editor/default_key_mapping.rst:305
 msgid "``script_editor/find``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:305
+#: ../../docs/tutorials/editor/default_key_mapping.rst:307
 msgid "``script_editor/find_next``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:307
+#: ../../docs/tutorials/editor/default_key_mapping.rst:309
 msgid "``script_editor/find_previous``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:309
+#: ../../docs/tutorials/editor/default_key_mapping.rst:311
 msgid "``script_editor/find_in_files``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:311
-#: ../../docs/tutorials/editor/default_key_mapping.rst:311
+#: ../../docs/tutorials/editor/default_key_mapping.rst:313
+#: ../../docs/tutorials/editor/default_key_mapping.rst:313
 msgid ":kbd:`Shift + Alt + Up Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:311
+#: ../../docs/tutorials/editor/default_key_mapping.rst:313
 msgid "``script_editor/window_move_up``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:313
-#: ../../docs/tutorials/editor/default_key_mapping.rst:313
+#: ../../docs/tutorials/editor/default_key_mapping.rst:315
+#: ../../docs/tutorials/editor/default_key_mapping.rst:315
 msgid ":kbd:`Shift + Alt + Down Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:313
+#: ../../docs/tutorials/editor/default_key_mapping.rst:315
 msgid "``script_editor/window_move_down``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:315
+#: ../../docs/tutorials/editor/default_key_mapping.rst:317
 msgid "Next Script"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:315
+#: ../../docs/tutorials/editor/default_key_mapping.rst:317
 msgid ":kbd:`Ctrl + Shift + .`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:315
+#: ../../docs/tutorials/editor/default_key_mapping.rst:317
 msgid ":kbd:`Cmd + Shift + .`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:315
+#: ../../docs/tutorials/editor/default_key_mapping.rst:317
 msgid "``script_editor/next_script``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:317
+#: ../../docs/tutorials/editor/default_key_mapping.rst:319
 msgid "Previous Script"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:317
+#: ../../docs/tutorials/editor/default_key_mapping.rst:319
 msgid ":kbd:`Ctrl + Shift + ,`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:317
+#: ../../docs/tutorials/editor/default_key_mapping.rst:319
 msgid ":kbd:`Cmd + Shift + ,`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:317
+#: ../../docs/tutorials/editor/default_key_mapping.rst:319
 msgid "``script_editor/prev_script``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:319
+#: ../../docs/tutorials/editor/default_key_mapping.rst:321
 msgid "Reopen Closed Script"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:319
+#: ../../docs/tutorials/editor/default_key_mapping.rst:321
 msgid "``script_editor/reopen_closed_script``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:321
+#: ../../docs/tutorials/editor/default_key_mapping.rst:323
 msgid "Save"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:321
+#: ../../docs/tutorials/editor/default_key_mapping.rst:323
 msgid ":kbd:`Ctrl + Alt + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:321
+#: ../../docs/tutorials/editor/default_key_mapping.rst:323
 msgid ":kbd:`Cmd + Alt + S`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:321
+#: ../../docs/tutorials/editor/default_key_mapping.rst:323
 msgid "``script_editor/save``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:323
+#: ../../docs/tutorials/editor/default_key_mapping.rst:325
 msgid "Save All"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:323
+#: ../../docs/tutorials/editor/default_key_mapping.rst:325
 msgid "``script_editor/save_all``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:325
+#: ../../docs/tutorials/editor/default_key_mapping.rst:327
 msgid "Soft Reload Script"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:325
+#: ../../docs/tutorials/editor/default_key_mapping.rst:327
 msgid "``script_editor/reload_script_soft``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:327
+#: ../../docs/tutorials/editor/default_key_mapping.rst:329
 msgid "History Previous"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:327
-#: ../../docs/tutorials/editor/default_key_mapping.rst:327
-#: ../../docs/tutorials/editor/default_key_mapping.rst:399
-#: ../../docs/tutorials/editor/default_key_mapping.rst:399
+#: ../../docs/tutorials/editor/default_key_mapping.rst:329
+#: ../../docs/tutorials/editor/default_key_mapping.rst:329
+#: ../../docs/tutorials/editor/default_key_mapping.rst:376
+#: ../../docs/tutorials/editor/default_key_mapping.rst:376
 msgid ":kbd:`Alt + Left Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:327
+#: ../../docs/tutorials/editor/default_key_mapping.rst:329
 msgid "``script_editor/history_previous``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:329
+#: ../../docs/tutorials/editor/default_key_mapping.rst:331
 msgid "History Next"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:329
-#: ../../docs/tutorials/editor/default_key_mapping.rst:329
-#: ../../docs/tutorials/editor/default_key_mapping.rst:401
-#: ../../docs/tutorials/editor/default_key_mapping.rst:401
+#: ../../docs/tutorials/editor/default_key_mapping.rst:331
+#: ../../docs/tutorials/editor/default_key_mapping.rst:331
+#: ../../docs/tutorials/editor/default_key_mapping.rst:378
+#: ../../docs/tutorials/editor/default_key_mapping.rst:378
 msgid ":kbd:`Alt + Right Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:329
+#: ../../docs/tutorials/editor/default_key_mapping.rst:331
 msgid "``script_editor/history_next``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:331
+#: ../../docs/tutorials/editor/default_key_mapping.rst:333
 msgid "Close"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:331
+#: ../../docs/tutorials/editor/default_key_mapping.rst:333
 msgid ":kbd:`Ctrl + W`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:331
+#: ../../docs/tutorials/editor/default_key_mapping.rst:333
 msgid ":kbd:`Cmd + W`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:331
+#: ../../docs/tutorials/editor/default_key_mapping.rst:333
 msgid "``script_editor/close_file``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:333
+#: ../../docs/tutorials/editor/default_key_mapping.rst:335
 msgid "Run"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:333
+#: ../../docs/tutorials/editor/default_key_mapping.rst:335
 msgid ":kbd:`Ctrl + Shift + X`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:333
+#: ../../docs/tutorials/editor/default_key_mapping.rst:335
 msgid ":kbd:`Cmd + Shift + X`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:333
+#: ../../docs/tutorials/editor/default_key_mapping.rst:335
 msgid "``script_editor/run_file``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:335
+#: ../../docs/tutorials/editor/default_key_mapping.rst:337
 msgid "Toggle Scripts Panel"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:335
+#: ../../docs/tutorials/editor/default_key_mapping.rst:337
 msgid ":kbd:`Ctrl + \\\\`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:335
+#: ../../docs/tutorials/editor/default_key_mapping.rst:337
 msgid ":kbd:`Cmd + \\\\`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:335
+#: ../../docs/tutorials/editor/default_key_mapping.rst:337
 msgid "``script_editor/toggle_scripts_panel``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:337
+#: ../../docs/tutorials/editor/default_key_mapping.rst:339
 msgid "``script_editor/zoom_in``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:339
+#: ../../docs/tutorials/editor/default_key_mapping.rst:341
 msgid "``script_editor/zoom_out``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:341
+#: ../../docs/tutorials/editor/default_key_mapping.rst:343
 msgid "Reset Zoom"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:341
+#: ../../docs/tutorials/editor/default_key_mapping.rst:343
 msgid "``script_editor/reset_zoom``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:345
-msgid "Visual Script Editor"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:350
-msgid "Find Node Type"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:350
-msgid "``visual_script_editor/find_node_type``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:352
-msgid "Copy Nodes"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:352
-msgid "``visual_script_editor/copy_nodes``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:354
-msgid "Cut Nodes"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:354
-msgid "``visual_script_editor/cut_nodes``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:356
-msgid "Paste Nodes"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:356
-msgid "``visual_script_editor/paste_nodes``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:358
-msgid "Delete Selected"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:358
-#: ../../docs/tutorials/editor/default_key_mapping.rst:415
-#: ../../docs/tutorials/editor/default_key_mapping.rst:434
-#: ../../docs/tutorials/editor/default_key_mapping.rst:449
-#: ../../docs/tutorials/editor/default_key_mapping.rst:470
-#: ../../docs/tutorials/editor/default_key_mapping.rst:509
-msgid ":kbd:`Del`"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:358
-#: ../../docs/tutorials/editor/default_key_mapping.rst:415
-#: ../../docs/tutorials/editor/default_key_mapping.rst:434
-#: ../../docs/tutorials/editor/default_key_mapping.rst:449
-#: ../../docs/tutorials/editor/default_key_mapping.rst:470
-#: ../../docs/tutorials/editor/default_key_mapping.rst:509
-msgid ":kbd:`Cmd + BkSp`"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:358
-msgid "``visual_script_editor/delete_selected``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:360
-msgid "Make Function"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:360
-msgid ":kbd:`Ctrl + G`"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:360
-msgid "``visual_script_editor/create_function``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:362
-msgid "Edit Member"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:362
-msgid ":kbd:`Ctrl + E`"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:362
-msgid ":kbd:`Cmd + E`"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:362
-msgid "``visual_script_editor/edit_member``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:364
-msgid "Refresh Graph"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:364
-msgid "``visual_script_editor/refresh_nodes``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:366
-msgid "``visual_script_editor/toggle_breakpoint``"
-msgstr ""
-
-#: ../../docs/tutorials/editor/default_key_mapping.rst:370
+#: ../../docs/tutorials/editor/default_key_mapping.rst:347
 msgid "Editor Output"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:375
-#: ../../docs/tutorials/editor/default_key_mapping.rst:507
+#: ../../docs/tutorials/editor/default_key_mapping.rst:352
+#: ../../docs/tutorials/editor/default_key_mapping.rst:484
 msgid "Copy Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:375
+#: ../../docs/tutorials/editor/default_key_mapping.rst:352
 msgid "``editor/copy_output``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:377
+#: ../../docs/tutorials/editor/default_key_mapping.rst:354
 msgid "Clear Output"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:377
+#: ../../docs/tutorials/editor/default_key_mapping.rst:354
 msgid "``editor/clear_output``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:381
+#: ../../docs/tutorials/editor/default_key_mapping.rst:358
 msgid "Debugger"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:386
+#: ../../docs/tutorials/editor/default_key_mapping.rst:363
 msgid "Step Into"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:386
-#: ../../docs/tutorials/editor/default_key_mapping.rst:386
+#: ../../docs/tutorials/editor/default_key_mapping.rst:363
+#: ../../docs/tutorials/editor/default_key_mapping.rst:363
 msgid ":kbd:`F11`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:386
+#: ../../docs/tutorials/editor/default_key_mapping.rst:363
 msgid "``debugger/step_into``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:388
+#: ../../docs/tutorials/editor/default_key_mapping.rst:365
 msgid "Step Over"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:388
-#: ../../docs/tutorials/editor/default_key_mapping.rst:388
+#: ../../docs/tutorials/editor/default_key_mapping.rst:365
+#: ../../docs/tutorials/editor/default_key_mapping.rst:365
 msgid ":kbd:`F10`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:388
+#: ../../docs/tutorials/editor/default_key_mapping.rst:365
 msgid "``debugger/step_over``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:390
+#: ../../docs/tutorials/editor/default_key_mapping.rst:367
 msgid "Continue"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:390
-#: ../../docs/tutorials/editor/default_key_mapping.rst:390
+#: ../../docs/tutorials/editor/default_key_mapping.rst:367
+#: ../../docs/tutorials/editor/default_key_mapping.rst:367
 msgid ":kbd:`F12`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:390
+#: ../../docs/tutorials/editor/default_key_mapping.rst:367
 msgid "``debugger/continue``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:394
+#: ../../docs/tutorials/editor/default_key_mapping.rst:371
 msgid "File Dialog"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:399
+#: ../../docs/tutorials/editor/default_key_mapping.rst:376
 msgid "Go Back"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:399
+#: ../../docs/tutorials/editor/default_key_mapping.rst:376
 msgid "``file_dialog/go_back``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:401
+#: ../../docs/tutorials/editor/default_key_mapping.rst:378
 msgid "Go Forward"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:401
+#: ../../docs/tutorials/editor/default_key_mapping.rst:378
 msgid "``file_dialog/go_forward``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:403
+#: ../../docs/tutorials/editor/default_key_mapping.rst:380
 msgid "Go Up"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:403
+#: ../../docs/tutorials/editor/default_key_mapping.rst:380
 msgid "``file_dialog/go_up``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:405
+#: ../../docs/tutorials/editor/default_key_mapping.rst:382
 msgid "Refresh"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:405
+#: ../../docs/tutorials/editor/default_key_mapping.rst:382
 msgid "``file_dialog/refresh``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:407
+#: ../../docs/tutorials/editor/default_key_mapping.rst:384
 msgid "Toggle Hidden Files"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:407
+#: ../../docs/tutorials/editor/default_key_mapping.rst:384
 msgid ":kbd:`Ctrl + H`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:407
+#: ../../docs/tutorials/editor/default_key_mapping.rst:384
 msgid ":kbd:`Cmd + H`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:407
+#: ../../docs/tutorials/editor/default_key_mapping.rst:384
 msgid "``file_dialog/toggle_hidden_files``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:409
+#: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid "Toggle Favorite"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:409
+#: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid "``file_dialog/toggle_favorite``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:411
+#: ../../docs/tutorials/editor/default_key_mapping.rst:388
 msgid "Toggle Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:411
-#: ../../docs/tutorials/editor/default_key_mapping.rst:411
+#: ../../docs/tutorials/editor/default_key_mapping.rst:388
+#: ../../docs/tutorials/editor/default_key_mapping.rst:388
 msgid ":kbd:`Alt + V`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:411
+#: ../../docs/tutorials/editor/default_key_mapping.rst:388
 msgid "``file_dialog/toggle_mode``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:413
+#: ../../docs/tutorials/editor/default_key_mapping.rst:390
 msgid "Create Folder"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:413
+#: ../../docs/tutorials/editor/default_key_mapping.rst:390
 msgid ":kbd:`Ctrl + N`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:413
+#: ../../docs/tutorials/editor/default_key_mapping.rst:390
 msgid ":kbd:`Cmd + N`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:413
+#: ../../docs/tutorials/editor/default_key_mapping.rst:390
 msgid "``file_dialog/create_folder``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:415
-#: ../../docs/tutorials/editor/default_key_mapping.rst:434
-#: ../../docs/tutorials/editor/default_key_mapping.rst:449
+#: ../../docs/tutorials/editor/default_key_mapping.rst:392
+#: ../../docs/tutorials/editor/default_key_mapping.rst:411
+#: ../../docs/tutorials/editor/default_key_mapping.rst:426
 msgid "Delete"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:415
+#: ../../docs/tutorials/editor/default_key_mapping.rst:392
+#: ../../docs/tutorials/editor/default_key_mapping.rst:411
+#: ../../docs/tutorials/editor/default_key_mapping.rst:426
+#: ../../docs/tutorials/editor/default_key_mapping.rst:447
+#: ../../docs/tutorials/editor/default_key_mapping.rst:486
+msgid ":kbd:`Del`"
+msgstr ""
+
+#: ../../docs/tutorials/editor/default_key_mapping.rst:392
+#: ../../docs/tutorials/editor/default_key_mapping.rst:411
+#: ../../docs/tutorials/editor/default_key_mapping.rst:426
+#: ../../docs/tutorials/editor/default_key_mapping.rst:447
+#: ../../docs/tutorials/editor/default_key_mapping.rst:486
+msgid ":kbd:`Cmd + BkSp`"
+msgstr ""
+
+#: ../../docs/tutorials/editor/default_key_mapping.rst:392
 msgid "``file_dialog/delete``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:417
+#: ../../docs/tutorials/editor/default_key_mapping.rst:394
 msgid "Focus Path"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:417
-#: ../../docs/tutorials/editor/default_key_mapping.rst:432
-#: ../../docs/tutorials/editor/default_key_mapping.rst:453
-#: ../../docs/tutorials/editor/default_key_mapping.rst:466
+#: ../../docs/tutorials/editor/default_key_mapping.rst:394
+#: ../../docs/tutorials/editor/default_key_mapping.rst:409
+#: ../../docs/tutorials/editor/default_key_mapping.rst:430
+#: ../../docs/tutorials/editor/default_key_mapping.rst:443
 msgid ":kbd:`Cmd + D`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:417
+#: ../../docs/tutorials/editor/default_key_mapping.rst:394
 msgid "``file_dialog/focus_path``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:419
+#: ../../docs/tutorials/editor/default_key_mapping.rst:396
 msgid "Move Favorite Up"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:419
-#: ../../docs/tutorials/editor/default_key_mapping.rst:455
+#: ../../docs/tutorials/editor/default_key_mapping.rst:396
+#: ../../docs/tutorials/editor/default_key_mapping.rst:432
 msgid ":kbd:`Ctrl + Up Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:419
-#: ../../docs/tutorials/editor/default_key_mapping.rst:455
+#: ../../docs/tutorials/editor/default_key_mapping.rst:396
+#: ../../docs/tutorials/editor/default_key_mapping.rst:432
 msgid ":kbd:`Cmd + Up Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:419
+#: ../../docs/tutorials/editor/default_key_mapping.rst:396
 msgid "``file_dialog/move_favorite_up``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:421
+#: ../../docs/tutorials/editor/default_key_mapping.rst:398
 msgid "Move Favorite Down"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:421
-#: ../../docs/tutorials/editor/default_key_mapping.rst:457
+#: ../../docs/tutorials/editor/default_key_mapping.rst:398
+#: ../../docs/tutorials/editor/default_key_mapping.rst:434
 msgid ":kbd:`Ctrl + Down Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:421
-#: ../../docs/tutorials/editor/default_key_mapping.rst:457
+#: ../../docs/tutorials/editor/default_key_mapping.rst:398
+#: ../../docs/tutorials/editor/default_key_mapping.rst:434
 msgid ":kbd:`Cmd + Down Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:421
+#: ../../docs/tutorials/editor/default_key_mapping.rst:398
 msgid "``file_dialog/move_favorite_down``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:425
+#: ../../docs/tutorials/editor/default_key_mapping.rst:402
 msgid "FileSystem Dock"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:430
+#: ../../docs/tutorials/editor/default_key_mapping.rst:407
 msgid "Copy Path"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:430
+#: ../../docs/tutorials/editor/default_key_mapping.rst:407
 msgid "``filesystem_dock/copy_path``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:432
-#: ../../docs/tutorials/editor/default_key_mapping.rst:453
+#: ../../docs/tutorials/editor/default_key_mapping.rst:409
+#: ../../docs/tutorials/editor/default_key_mapping.rst:430
 msgid "Duplicate"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:432
+#: ../../docs/tutorials/editor/default_key_mapping.rst:409
 msgid "``filesystem_dock/duplicate``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:434
+#: ../../docs/tutorials/editor/default_key_mapping.rst:411
 msgid "``filesystem_dock/delete``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:438
+#: ../../docs/tutorials/editor/default_key_mapping.rst:415
 msgid "Scene Tree Dock"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:443
+#: ../../docs/tutorials/editor/default_key_mapping.rst:420
 msgid "Add Child Node"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:443
+#: ../../docs/tutorials/editor/default_key_mapping.rst:420
 msgid "``scene_tree/add_child_node``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:445
+#: ../../docs/tutorials/editor/default_key_mapping.rst:422
 msgid "Batch Rename"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:445
+#: ../../docs/tutorials/editor/default_key_mapping.rst:422
 msgid ":kbd:`Cmd + F2`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:445
+#: ../../docs/tutorials/editor/default_key_mapping.rst:422
 msgid "``scene_tree/batch_rename``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:447
+#: ../../docs/tutorials/editor/default_key_mapping.rst:424
 msgid "Copy Node Path"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:447
+#: ../../docs/tutorials/editor/default_key_mapping.rst:424
 msgid "``scene_tree/copy_node_path``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:449
+#: ../../docs/tutorials/editor/default_key_mapping.rst:426
 msgid "``scene_tree/delete``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:451
+#: ../../docs/tutorials/editor/default_key_mapping.rst:428
 msgid "Force Delete"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:451
-#: ../../docs/tutorials/editor/default_key_mapping.rst:451
+#: ../../docs/tutorials/editor/default_key_mapping.rst:428
+#: ../../docs/tutorials/editor/default_key_mapping.rst:428
 msgid ":kbd:`Shift + Del`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:451
+#: ../../docs/tutorials/editor/default_key_mapping.rst:428
 msgid "``scene_tree/delete_no_confirm``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:453
+#: ../../docs/tutorials/editor/default_key_mapping.rst:430
 msgid "``scene_tree/duplicate``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:455
+#: ../../docs/tutorials/editor/default_key_mapping.rst:432
 msgid "``scene_tree/move_up``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:457
+#: ../../docs/tutorials/editor/default_key_mapping.rst:434
 msgid "``scene_tree/move_down``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:461
+#: ../../docs/tutorials/editor/default_key_mapping.rst:438
 msgid "Animation Track Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:466
+#: ../../docs/tutorials/editor/default_key_mapping.rst:443
 msgid "Duplicate Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:466
+#: ../../docs/tutorials/editor/default_key_mapping.rst:443
 msgid "``animation_editor/duplicate_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:468
+#: ../../docs/tutorials/editor/default_key_mapping.rst:445
 msgid "Duplicate Transposed"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:468
+#: ../../docs/tutorials/editor/default_key_mapping.rst:445
 msgid ":kbd:`Ctrl + Shift + D`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:468
+#: ../../docs/tutorials/editor/default_key_mapping.rst:445
 msgid ":kbd:`Cmd + Shift + D`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:468
+#: ../../docs/tutorials/editor/default_key_mapping.rst:445
 msgid "``animation_editor/duplicate_selection_transposed``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:470
+#: ../../docs/tutorials/editor/default_key_mapping.rst:447
 msgid "Delete Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:470
+#: ../../docs/tutorials/editor/default_key_mapping.rst:447
 msgid "``animation_editor/delete_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:472
+#: ../../docs/tutorials/editor/default_key_mapping.rst:449
 msgid "Go to Next Step"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:472
+#: ../../docs/tutorials/editor/default_key_mapping.rst:449
 msgid ":kbd:`Ctrl + Right Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:472
+#: ../../docs/tutorials/editor/default_key_mapping.rst:449
 msgid ":kbd:`Cmd + Right Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:472
+#: ../../docs/tutorials/editor/default_key_mapping.rst:449
 msgid "``animation_editor/goto_next_step``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:474
+#: ../../docs/tutorials/editor/default_key_mapping.rst:451
 msgid "Go to Previous Step"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:474
+#: ../../docs/tutorials/editor/default_key_mapping.rst:451
 msgid ":kbd:`Ctrl + Left Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:474
+#: ../../docs/tutorials/editor/default_key_mapping.rst:451
 msgid ":kbd:`Cmd + Left Arrow`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:474
+#: ../../docs/tutorials/editor/default_key_mapping.rst:451
 msgid "``animation_editor/goto_prev_step``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:478
+#: ../../docs/tutorials/editor/default_key_mapping.rst:455
 msgid "Tile Map Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:483
+#: ../../docs/tutorials/editor/default_key_mapping.rst:460
 msgid "Find Tile"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:483
+#: ../../docs/tutorials/editor/default_key_mapping.rst:460
 msgid "``tile_map_editor/find_tile``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:485
+#: ../../docs/tutorials/editor/default_key_mapping.rst:462
 msgid "Pick Tile"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:485
-#: ../../docs/tutorials/editor/default_key_mapping.rst:485
+#: ../../docs/tutorials/editor/default_key_mapping.rst:462
+#: ../../docs/tutorials/editor/default_key_mapping.rst:462
 msgid ":kbd:`I`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:485
+#: ../../docs/tutorials/editor/default_key_mapping.rst:462
 msgid "``tile_map_editor/pick_tile``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:487
+#: ../../docs/tutorials/editor/default_key_mapping.rst:464
 msgid "Paint Tile"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:487
-#: ../../docs/tutorials/editor/default_key_mapping.rst:487
+#: ../../docs/tutorials/editor/default_key_mapping.rst:464
+#: ../../docs/tutorials/editor/default_key_mapping.rst:464
 msgid ":kbd:`P`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:487
+#: ../../docs/tutorials/editor/default_key_mapping.rst:464
 msgid "``tile_map_editor/paint_tile``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:489
+#: ../../docs/tutorials/editor/default_key_mapping.rst:466
 msgid "Bucket Fill"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:489
+#: ../../docs/tutorials/editor/default_key_mapping.rst:466
 msgid "``tile_map_editor/bucket_fill``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:491
+#: ../../docs/tutorials/editor/default_key_mapping.rst:468
 msgid "Transpose"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:491
+#: ../../docs/tutorials/editor/default_key_mapping.rst:468
 msgid "``tile_map_editor/transpose``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:493
+#: ../../docs/tutorials/editor/default_key_mapping.rst:470
 msgid "Flip Horizontally"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:493
-#: ../../docs/tutorials/editor/default_key_mapping.rst:493
+#: ../../docs/tutorials/editor/default_key_mapping.rst:470
+#: ../../docs/tutorials/editor/default_key_mapping.rst:470
 msgid ":kbd:`X`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:493
+#: ../../docs/tutorials/editor/default_key_mapping.rst:470
 msgid "``tile_map_editor/flip_horizontal``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:495
+#: ../../docs/tutorials/editor/default_key_mapping.rst:472
 msgid "Flip Vertically"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:495
-#: ../../docs/tutorials/editor/default_key_mapping.rst:495
+#: ../../docs/tutorials/editor/default_key_mapping.rst:472
+#: ../../docs/tutorials/editor/default_key_mapping.rst:472
 msgid ":kbd:`Z`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:495
+#: ../../docs/tutorials/editor/default_key_mapping.rst:472
 msgid "``tile_map_editor/flip_vertical``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:497
+#: ../../docs/tutorials/editor/default_key_mapping.rst:474
 msgid "Rotate Left"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:497
+#: ../../docs/tutorials/editor/default_key_mapping.rst:474
 msgid "``tile_map_editor/rotate_left``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:499
+#: ../../docs/tutorials/editor/default_key_mapping.rst:476
 msgid "Rotate Right"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:499
+#: ../../docs/tutorials/editor/default_key_mapping.rst:476
 msgid "``tile_map_editor/rotate_right``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:501
+#: ../../docs/tutorials/editor/default_key_mapping.rst:478
 msgid "Clear Transform"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:501
+#: ../../docs/tutorials/editor/default_key_mapping.rst:478
 msgid "``tile_map_editor/clear_transform``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:503
+#: ../../docs/tutorials/editor/default_key_mapping.rst:480
 msgid "Select"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:503
-#: ../../docs/tutorials/editor/default_key_mapping.rst:503
+#: ../../docs/tutorials/editor/default_key_mapping.rst:480
+#: ../../docs/tutorials/editor/default_key_mapping.rst:480
 msgid ":kbd:`M`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:503
+#: ../../docs/tutorials/editor/default_key_mapping.rst:480
 msgid "``tile_map_editor/select``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:505
+#: ../../docs/tutorials/editor/default_key_mapping.rst:482
 msgid "Cut Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:505
+#: ../../docs/tutorials/editor/default_key_mapping.rst:482
 msgid "``tile_map_editor/cut_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:507
+#: ../../docs/tutorials/editor/default_key_mapping.rst:484
 msgid "``tile_map_editor/copy_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:509
+#: ../../docs/tutorials/editor/default_key_mapping.rst:486
 msgid "Erase Selection"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:509
+#: ../../docs/tutorials/editor/default_key_mapping.rst:486
 msgid "``tile_map_editor/erase_selection``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:513
+#: ../../docs/tutorials/editor/default_key_mapping.rst:490
 msgid "Tileset Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:518
+#: ../../docs/tutorials/editor/default_key_mapping.rst:495
 msgid "Next Coordinate"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:518
+#: ../../docs/tutorials/editor/default_key_mapping.rst:495
 msgid "``tileset_editor/next_shape``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:520
+#: ../../docs/tutorials/editor/default_key_mapping.rst:497
 msgid "Previous Coordinate"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:520
-#: ../../docs/tutorials/editor/default_key_mapping.rst:520
+#: ../../docs/tutorials/editor/default_key_mapping.rst:497
+#: ../../docs/tutorials/editor/default_key_mapping.rst:497
 msgid ":kbd:`PgUp`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:520
+#: ../../docs/tutorials/editor/default_key_mapping.rst:497
 msgid "``tileset_editor/previous_shape``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:522
+#: ../../docs/tutorials/editor/default_key_mapping.rst:499
 msgid "Region Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:522
-#: ../../docs/tutorials/editor/default_key_mapping.rst:522
+#: ../../docs/tutorials/editor/default_key_mapping.rst:499
+#: ../../docs/tutorials/editor/default_key_mapping.rst:499
 msgid ":kbd:`1`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:522
+#: ../../docs/tutorials/editor/default_key_mapping.rst:499
 msgid "``tileset_editor/editmode_region``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:524
+#: ../../docs/tutorials/editor/default_key_mapping.rst:501
 msgid "Collision Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:524
-#: ../../docs/tutorials/editor/default_key_mapping.rst:524
+#: ../../docs/tutorials/editor/default_key_mapping.rst:501
+#: ../../docs/tutorials/editor/default_key_mapping.rst:501
 msgid ":kbd:`2`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:524
+#: ../../docs/tutorials/editor/default_key_mapping.rst:501
 msgid "``tileset_editor/editmode_collision``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:526
+#: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid "Occlusion Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:526
-#: ../../docs/tutorials/editor/default_key_mapping.rst:526
+#: ../../docs/tutorials/editor/default_key_mapping.rst:503
+#: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid ":kbd:`3`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:526
+#: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid "``tileset_editor/editmode_occlusion``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:528
+#: ../../docs/tutorials/editor/default_key_mapping.rst:505
 msgid "Navigation Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:528
-#: ../../docs/tutorials/editor/default_key_mapping.rst:528
+#: ../../docs/tutorials/editor/default_key_mapping.rst:505
+#: ../../docs/tutorials/editor/default_key_mapping.rst:505
 msgid ":kbd:`4`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:528
+#: ../../docs/tutorials/editor/default_key_mapping.rst:505
 msgid "``tileset_editor/editmode_navigation``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:530
+#: ../../docs/tutorials/editor/default_key_mapping.rst:507
 msgid "Bitmask Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:530
-#: ../../docs/tutorials/editor/default_key_mapping.rst:530
+#: ../../docs/tutorials/editor/default_key_mapping.rst:507
+#: ../../docs/tutorials/editor/default_key_mapping.rst:507
 msgid ":kbd:`5`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:530
+#: ../../docs/tutorials/editor/default_key_mapping.rst:507
 msgid "``tileset_editor/editmode_bitmask``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:532
+#: ../../docs/tutorials/editor/default_key_mapping.rst:509
 msgid "Priority Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:532
-#: ../../docs/tutorials/editor/default_key_mapping.rst:532
+#: ../../docs/tutorials/editor/default_key_mapping.rst:509
+#: ../../docs/tutorials/editor/default_key_mapping.rst:509
 msgid ":kbd:`6`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:532
+#: ../../docs/tutorials/editor/default_key_mapping.rst:509
 msgid "``tileset_editor/editmode_priority``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:534
+#: ../../docs/tutorials/editor/default_key_mapping.rst:511
 msgid "Icon Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:534
-#: ../../docs/tutorials/editor/default_key_mapping.rst:534
+#: ../../docs/tutorials/editor/default_key_mapping.rst:511
+#: ../../docs/tutorials/editor/default_key_mapping.rst:511
 msgid ":kbd:`7`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:534
+#: ../../docs/tutorials/editor/default_key_mapping.rst:511
 msgid "``tileset_editor/editmode_icon``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:536
+#: ../../docs/tutorials/editor/default_key_mapping.rst:513
 msgid "Z Index Mode"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:536
-#: ../../docs/tutorials/editor/default_key_mapping.rst:536
+#: ../../docs/tutorials/editor/default_key_mapping.rst:513
+#: ../../docs/tutorials/editor/default_key_mapping.rst:513
 msgid ":kbd:`8`"
 msgstr ""
 
-#: ../../docs/tutorials/editor/default_key_mapping.rst:536
+#: ../../docs/tutorials/editor/default_key_mapping.rst:513
 msgid "``tileset_editor/editmode_z_index``"
 msgstr ""
 

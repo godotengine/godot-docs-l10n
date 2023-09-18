@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid "The file system stores resources on disk. Anything, from a script, to a s
 msgstr ""
 
 #: ../../docs/tutorials/scripting/filesystem.rst:24
-msgid "The Godot file system avoids using metadata files. Existing asset managers and VCSs are better than anything we can implement, so Godot tries its best to play along with SVN, Git, Mercurial, Perforce, etc."
+msgid "The Godot file system avoids using metadata files. Existing asset managers and VCSs are better than anything we can implement, so Godot tries its best to play along with Subversion, Git, Mercurial, etc."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/filesystem.rst:28
@@ -101,7 +101,7 @@ msgid "Drawbacks"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/filesystem.rst:93
-msgid "There are some drawbacks to this simple file system design. The first issue is that moving assets around (renaming them or moving them from one path to another inside the project) will break existing references to these assets. These references will have to be re-defined to point at the new asset location."
+msgid "There are some drawbacks to this file system design. The first issue is that moving assets around (renaming them or moving them from one path to another inside the project) will break existing references to these assets. These references will have to be re-defined to point at the new asset location."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/filesystem.rst:98
@@ -113,7 +113,7 @@ msgid "The second is that, under Windows and macOS, file and path names are case
 msgstr ""
 
 #: ../../docs/tutorials/scripting/filesystem.rst:109
-msgid "It is recommended that your team clearly define a naming convention for files when working with Godot. One simple fool-proof convention is to only allow lowercase file and path names."
+msgid "It is recommended that your team clearly define a naming convention for files when working with Godot. One fool-proof convention is to only allow lowercase file and path names."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

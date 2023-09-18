@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,130 +25,158 @@ msgid "This page explains how to code using an external text editor."
 msgstr ""
 
 #: ../../docs/tutorials/editor/external_editor.rst:8
-msgid "Godot can be used with an external text editor, such as Sublime Text or Visual Studio Code. Browse to the relevant editor settings: ``Editor -> Editor Settings -> Text Editor -> External``"
+msgid "Godot can be used with an external text editor, such as Sublime Text or Visual Studio Code. Browse to the relevant editor settings: **Editor > Editor Settings > Text Editor > External**"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:14
-msgid "There are two fields: the executable path and command-line flags. The flags allow you to integrate the editor with Godot, passing it the file path to open and other relevant arguments. Godot will replace the following placeholders in the flags string:"
+#: ../../docs/tutorials/editor/external_editor.rst:16
+msgid "Text Editor > External section of the Editor Settings"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:20
+#: ../../docs/tutorials/editor/external_editor.rst:16
+msgid "**Text Editor > External** section of the Editor Settings"
+msgstr ""
+
+#: ../../docs/tutorials/editor/external_editor.rst:18
+msgid "There are two text fields: the executable path and command-line flags. The flags allow you to integrate the editor with Godot, passing it the file path to open and other relevant arguments. Godot will replace the following placeholders in the flags string:"
+msgstr ""
+
+#: ../../docs/tutorials/editor/external_editor.rst:24
 msgid "Field in Exec Flags"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:20
+#: ../../docs/tutorials/editor/external_editor.rst:24
 msgid "Is replaced with"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:22
+#: ../../docs/tutorials/editor/external_editor.rst:26
 msgid "``{project}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:22
+#: ../../docs/tutorials/editor/external_editor.rst:26
 msgid "The absolute path to the project directory"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:24
+#: ../../docs/tutorials/editor/external_editor.rst:28
 msgid "``{file}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:24
+#: ../../docs/tutorials/editor/external_editor.rst:28
 msgid "The absolute path to the file"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:26
+#: ../../docs/tutorials/editor/external_editor.rst:30
 msgid "``{col}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:26
+#: ../../docs/tutorials/editor/external_editor.rst:30
 msgid "The column number of the error"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:28
+#: ../../docs/tutorials/editor/external_editor.rst:32
 msgid "``{line}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:28
+#: ../../docs/tutorials/editor/external_editor.rst:32
 msgid "The line number of the error"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:31
-msgid "Some example Exec Flags for various editors include:"
+#: ../../docs/tutorials/editor/external_editor.rst:35
+msgid "Some example **Exec Flags** for various editors include:"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:34
+#: ../../docs/tutorials/editor/external_editor.rst:38
 msgid "Editor"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:34
+#: ../../docs/tutorials/editor/external_editor.rst:38
 msgid "Exec Flags"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:36
+#: ../../docs/tutorials/editor/external_editor.rst:40
 msgid "Geany/Kate"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:36
+#: ../../docs/tutorials/editor/external_editor.rst:40
 msgid "``{file} --line {line} --column {col}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:38
-msgid "Atom/Sublime Text"
+#: ../../docs/tutorials/editor/external_editor.rst:42
+msgid "Atom"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:38
+#: ../../docs/tutorials/editor/external_editor.rst:42
 msgid "``{file}:{line}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:40
+#: ../../docs/tutorials/editor/external_editor.rst:44
 msgid "JetBrains Rider"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:40
+#: ../../docs/tutorials/editor/external_editor.rst:44
 msgid "``{project} --line {line} {file}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:42
+#: ../../docs/tutorials/editor/external_editor.rst:46
 msgid "Visual Studio Code"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:42
+#: ../../docs/tutorials/editor/external_editor.rst:46
 msgid "``{project} --goto {file}:{line}:{col}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:44
+#: ../../docs/tutorials/editor/external_editor.rst:48
 msgid "Vim (gVim)"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:44
+#: ../../docs/tutorials/editor/external_editor.rst:48
 msgid "``\"+call cursor({line}, {col})\" {file}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:46
+#: ../../docs/tutorials/editor/external_editor.rst:50
 msgid "Emacs"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:46
+#: ../../docs/tutorials/editor/external_editor.rst:50
 msgid "``emacs +{line}:{col} {file}``"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:49
-msgid "For Visual Studio Code, you will have to point to the ``code.cmd`` file. For Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the server mode."
+#: ../../docs/tutorials/editor/external_editor.rst:52
+msgid "Sublime Text"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:54
+#: ../../docs/tutorials/editor/external_editor.rst:52
+msgid "``{project} {file}:{line}:{column}``"
+msgstr ""
+
+#: ../../docs/tutorials/editor/external_editor.rst:57
+msgid "For Visual Studio Code on Windows, you will have to point to the ``code.cmd`` file."
+msgstr ""
+
+#: ../../docs/tutorials/editor/external_editor.rst:60
+msgid "For Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the server mode."
+msgstr ""
+
+#: ../../docs/tutorials/editor/external_editor.rst:64
+msgid "Using External Editor in Debugger"
+msgstr ""
+
+#: ../../docs/tutorials/editor/external_editor.rst:66
+msgid "Using external editor in debugger is determined by a separate option in settings. For details, see :ref:`Script editor debug tools and options <doc_debugger_tools_and_options>`."
+msgstr ""
+
+#: ../../docs/tutorials/editor/external_editor.rst:70
 msgid "Official editor plugins"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:56
+#: ../../docs/tutorials/editor/external_editor.rst:72
 msgid "We have official plugins for the following code editors:"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:58
+#: ../../docs/tutorials/editor/external_editor.rst:74
 msgid "`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
 msgstr ""
 
-#: ../../docs/tutorials/editor/external_editor.rst:59
+#: ../../docs/tutorials/editor/external_editor.rst:75
 msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 msgstr ""
 

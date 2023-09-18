@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "Node setup"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:16
-msgid "Click Scene -> New Scene and add the following nodes:"
+msgid "Click Scene -> New Scene from the top menu and add the following nodes:"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:18
@@ -41,7 +41,7 @@ msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:20
-msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgid ":ref:`AnimatedSprite2D <class_AnimatedSprite2D>`"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:21
@@ -49,7 +49,7 @@ msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:22
-msgid ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
+msgid ":ref:`VisibleOnScreenNotifier2D <class_VisibleOnScreenNotifier2D>`"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:24
@@ -57,19 +57,19 @@ msgid "Don't forget to set the children so they can't be selected, like you did 
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:27
-msgid "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity Scale`` to ``0``, so the mob will not fall downward. In addition, under the :ref:`CollisionObject2D <class_CollisionObject2D>` section, click the ``Mask`` property and uncheck the first box. This will ensure the mobs do not collide with each other."
+msgid "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity Scale`` to ``0``, so the mob will not fall downward. In addition, under the :ref:`CollisionObject2D <class_CollisionObject2D>` section, uncheck the ``1`` inside the ``Mask`` property. This will ensure the mobs do not collide with each other."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:34
-msgid "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. There are two images for each animation in the art folder."
+msgid "Set up the :ref:`AnimatedSprite2D <class_AnimatedSprite2D>` like you did for the player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. There are two images for each animation in the art folder."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:38
-msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
+msgid "The ``Animation Speed`` property has to be set for each individual animation. Adjust it to ``3`` for all 3 animations."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:42
-msgid "Set the ``Playing`` property in the Inspector to \"On\"."
+msgid "You can use the \"Play Animation\" buttons on the right of the ``Animation Speed`` input field to preview your animations."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:44
@@ -77,7 +77,7 @@ msgid "We'll select one of these animations randomly so that the mobs will have 
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:47
-msgid "Like the player images, these mob images need to be scaled down. Set the ``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
+msgid "Like the player images, these mob images need to be scaled down. Set the ``AnimatedSprite2D``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:50
@@ -96,31 +96,27 @@ msgstr ""
 msgid "Add a script to the ``Mob`` like this:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:102
+#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:104
 msgid "Now let's look at the rest of the script. In ``_ready()`` we play the animation and randomly choose one of the three animation types:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:140
-msgid "First, we get the list of animation names from the AnimatedSprite's ``frames`` property. This returns an Array containing all three animation names: ``[\"walk\", \"swim\", \"fly\"]``."
+#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:139
+msgid "First, we get the list of animation names from the AnimatedSprite2D's ``frames`` property. This returns an Array containing all three animation names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:144
+#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:143
 msgid "We then need to pick a random number between ``0`` and ``2`` to select one of these names from the list (array indices start at ``0``). ``randi() % n`` selects a random integer between ``0`` and ``n-1``."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:148
-msgid "You must use ``randomize()`` if you want your sequence of \"random\" numbers to be different every time you run the scene. We're going to use ``randomize()`` in our ``Main`` scene, so we won't need it here."
+#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:147
+msgid "The last piece is to make the mobs delete themselves when they leave the screen. Connect the ``screen_exited()`` signal of the ``VisibleOnScreenNotifier2D`` node to the ``Mob`` and add this code:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:152
-msgid "The last piece is to make the mobs delete themselves when they leave the screen. Connect the ``screen_exited()`` signal of the ``VisibilityNotifier2D`` node and add this code:"
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:176
+#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:171
 msgid "This completes the `Mob` scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:178
+#: ../../docs/getting_started/first_2d_game/04.creating_the_enemy.rst:173
 msgid "With the player and enemies ready, in the next part, we'll bring them together in a new scene. We'll make enemies spawn randomly around the game board and move forward, turning our project into a playable game."
 msgstr ""
 

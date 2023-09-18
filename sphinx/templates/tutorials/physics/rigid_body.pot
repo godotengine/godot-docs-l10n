@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "What is a rigid body?"
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:9
-msgid "A rigid body is one that is directly controlled by the physics engine in order to simulate the behavior of physical objects. In order to define the shape of the body, it must have one or more :ref:`Shape <class_Shape>` objects assigned. Note that setting the position of these shapes will affect the body's center of mass."
+msgid "A rigid body is one that is directly controlled by the physics engine in order to simulate the behavior of physical objects. In order to define the shape of the body, it must have one or more :ref:`Shape3D <class_Shape3D>` objects assigned. Note that setting the position of these shapes will affect the body's center of mass."
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:13
@@ -33,7 +33,7 @@ msgid "How to control a rigid body"
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:15
-msgid "A rigid body's behavior can be altered by setting its properties, such as mass and weight. A physics material needs to be added to the rigid body to adjust its friction and bounce, and set if it's absorbent and/or rough. These properties can be set in the Inspector or via code. See :ref:`RigidBody <class_RigidBody>` and :ref:`PhysicsMaterial <class_PhysicsMaterial>` for the full list of properties and their effects."
+msgid "A rigid body's behavior can be altered by setting its properties, such as mass and weight. A physics material needs to be added to the rigid body to adjust its friction and bounce, and set if it's absorbent and/or rough. These properties can be set in the Inspector or via code. See :ref:`RigidBody3D <class_RigidBody3D>` and :ref:`PhysicsMaterial <class_PhysicsMaterial>` for the full list of properties and their effects."
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:21
@@ -41,7 +41,7 @@ msgid "There are several ways to control a rigid body's movement, depending on y
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:23
-msgid "If you only need to place a rigid body once, for example to set its initial location, you can use the methods provided by the :ref:`Spatial <class_Spatial>` node, such as ``set_global_transform()`` or ``look_at()``. However, these methods cannot be called every frame or the physics engine will not be able to correctly simulate the body's state. As an example, consider a rigid body that you want to rotate so that it points towards another object. A common mistake when implementing this kind of behavior is to use ``look_at()`` every frame, which breaks the physics simulation. Below, we'll demonstrate how to implement this correctly."
+msgid "If you only need to place a rigid body once, for example to set its initial location, you can use the methods provided by the :ref:`Node3D <class_Node3D>` node, such as ``set_global_transform()`` or ``look_at()``. However, these methods cannot be called every frame or the physics engine will not be able to correctly simulate the body's state. As an example, consider a rigid body that you want to rotate so that it points towards another object. A common mistake when implementing this kind of behavior is to use ``look_at()`` every frame, which breaks the physics simulation. Below, we'll demonstrate how to implement this correctly."
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:26
@@ -53,15 +53,15 @@ msgid "The \"look at\" method"
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:31
-msgid "As described above, using the Spatial node's ``look_at()`` method can't be used each frame to follow a target. Here is a custom ``look_at()`` method that will work reliably with rigid bodies:"
-msgstr ""
-
-#: ../../docs/tutorials/physics/rigid_body.rst:73
-msgid "This method uses the rigid body's ``set_angular_velocity()`` method to rotate the body. It first calculates the difference between the current and desired angle and then adds the velocity needed to rotate by that amount in one frame's time."
+msgid "As described above, using the Node3D's ``look_at()`` method can't be used each frame to follow a target. Here is a custom ``look_at()`` method that will work reliably with rigid bodies:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/rigid_body.rst:75
-msgid "This script will not work with rigid bodies in *character mode* because then, the body's rotation is locked. In that case, you would have to rotate the attached mesh node instead using the standard Spatial methods."
+msgid "This method uses the rigid body's ``angular_velocity`` property to rotate the body. It first calculates the difference between the current and desired angle and then adds the velocity needed to rotate by that amount in one frame's time."
+msgstr ""
+
+#: ../../docs/tutorials/physics/rigid_body.rst:77
+msgid "This script will not work with rigid bodies in *character mode* because then, the body's rotation is locked. In that case, you would have to rotate the attached mesh node instead using the standard Node3D methods."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

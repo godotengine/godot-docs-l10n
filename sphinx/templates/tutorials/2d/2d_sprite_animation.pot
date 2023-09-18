@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:4
-msgid "2D Sprite animation"
+msgid "2D sprite animation"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:7
@@ -25,168 +25,168 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:9
-msgid "In this tutorial, you'll learn how to create 2D animated characters with the AnimatedSprite class and the AnimationPlayer. Typically, when you create or download an animated character, it will come in one of two ways: as individual images or as a single sprite sheet containing all the animation's frames. Both can be animated in Godot with the AnimatedSprite class."
+msgid "In this tutorial, you'll learn how to create 2D animated characters with the AnimatedSprite2D class and the AnimationPlayer. Typically, when you create or download an animated character, it will come in one of two ways: as individual images or as a single sprite sheet containing all the animation's frames. Both can be animated in Godot with the AnimatedSprite2D class."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:14
-msgid "First, we'll use :ref:`AnimatedSprite <class_AnimatedSprite>` to animate a collection of individual images. Then we will animate a sprite sheet using this class. Finally, we will learn another way to animate a sprite sheet with :ref:`AnimationPlayer <class_AnimationPlayer>` and the *Animation* property of :ref:`Sprite <class_Sprite>`."
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:19
-msgid "Art for the following examples by https://opengameart.org/users/ansimuz and by https://opengameart.org/users/tgfcoder"
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:16
+msgid "First, we'll use :ref:`AnimatedSprite2D <class_AnimatedSprite2D>` to animate a collection of individual images. Then we will animate a sprite sheet using this class. Finally, we will learn another way to animate a sprite sheet with :ref:`AnimationPlayer <class_AnimationPlayer>` and the *Animation* property of :ref:`Sprite2D <class_Sprite2D>`."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:23
-msgid "Individual images with AnimatedSprite"
+msgid "Art for the following examples by https://opengameart.org/users/ansimuz and tgfcoder."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:25
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:26
+msgid "Individual images with AnimatedSprite2D"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:28
 msgid "In this scenario, you have a collection of images, each containing one of your character's animation frames. For this example, we'll use the following animation:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:31
-msgid "You can download the images here: :download:`run_animation.zip <files/run_animation.zip>`"
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:34
+msgid "You can download the images here: `2d_sprite_animation_assets.zip <https://github.com/godotengine/godot-docs-project-starters/releases/download/latest-4.x/2d_sprite_animation_assets.zip>`_"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:34
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:37
 msgid "Unzip the images and place them in your project folder. Set up your scene tree with the following nodes:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:39
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:169
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:42
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:182
 msgid "The root node could also be :ref:`Area2D <class_Area2D>` or :ref:`RigidBody2D <class_RigidBody2D>`. The animation will still be made in the same way. Once the animation is completed, you can assign a shape to the CollisionShape2D. See :ref:`Physics Introduction <doc_physics_introduction>` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:46
-msgid "Now select the ``AnimatedSprite`` and in its *SpriteFrames* property, select \"New SpriteFrames\"."
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:49
+msgid "Now select the ``AnimatedSprite2D`` and in its *SpriteFrames* property, select \"New SpriteFrames\"."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:51
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:54
 msgid "Click on the new SpriteFrames resource and you'll see a new panel appear at the bottom of the editor window:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:56
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:59
 msgid "From the FileSystem dock on the left side, drag the 8 individual images into the center part of the SpriteFrames panel. On the left side, change the name of the animation from \"default\" to \"run\"."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:62
-msgid "Back in the Inspector, check the box for the *Playing* property. You should now see the animation playing in the viewport. However, it is a bit slow. To fix this, change the *Speed (FPS)* setting in the SpriteFrames panel to 10."
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:66
-msgid "You can add additional animations by clicking the \"New Animation\" button and adding additional images."
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:65
+msgid "Use the \"Play\" buttons on the top-right of the *Filter Animations* input to preview the animation. You should now see the animation playing in the viewport. However, it is a bit slow. To fix this, change the *Speed (FPS)* setting in the SpriteFrames panel to 10."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:70
+msgid "You can add additional animations by clicking the \"Add Animation\" button and adding additional images."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:74
 msgid "Controlling the animation"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:72
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:76
 msgid "Once the animation is complete, you can control the animation via code using the ``play()`` and ``stop()`` methods. Here is a brief example to play the animation while the right arrow key is held, and stop it when the key is released."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:116
-msgid "Sprite sheet with AnimatedSprite"
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:118
-msgid "You can also easily animate from a sprite sheet with the class ``AnimatedSprite``. We will use this public domain sprite sheet:"
-msgstr ""
-
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:122
-msgid "Right-click the image and choose \"Save Image As\" to download it, and then copy the image into your project folder."
+msgid "Sprite sheet with AnimatedSprite2D"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:124
-msgid "Set up your scene tree the same way you did previously when using individual images. Select the ``AnimatedSprite`` and in its *SpriteFrames* property, select \"New SpriteFrames\"."
+msgid "You can also easily animate from a sprite sheet with the class ``AnimatedSprite2D``. We will use this public domain sprite sheet:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:127
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:129
+msgid "Right-click the image and choose \"Save Image As\" to download it, and then copy the image into your project folder."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:132
+msgid "Set up your scene tree the same way you did previously when using individual images. Select the ``AnimatedSprite2D`` and in its *SpriteFrames* property, select \"New SpriteFrames\"."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:135
 msgid "Click on the new SpriteFrames resource. This time, when the bottom panel appears, select \"Add frames from a Sprite Sheet\"."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:131
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:140
 msgid "You will be prompted to open a file. Select your sprite sheet."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:133
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:142
 msgid "A new window will open, showing your sprite sheet. The first thing you will need to do is to change the number of vertical and horizontal images in your sprite sheet. In this sprite sheet, we have four images horizontally and two images vertically."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:137
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:148
 msgid "Next, select the frames from the sprite sheet that you want to include in your animation. We will select the top four, then click \"Add 4 frames\" to create the animation."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:141
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:153
 msgid "You will now see your animation under the list of animations in the bottom panel. Double click on default to change the name of the animation to jump."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:145
-msgid "Finally, check Playing on the AnimatedSprite in the inspector to see your frog jump!"
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:151
-msgid "Sprite sheet with AnimationPlayer"
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:153
-msgid "Another way that you can animate when using a sprite sheet is to use a standard :ref:`Sprite <class_Sprite>` node to display the texture, and then animating the change from texture to texture with :ref:`AnimationPlayer <class_AnimationPlayer>`."
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:157
-msgid "Consider this sprite sheet, which contains 6 frames of animation:"
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:161
-msgid "Right-click the image and choose \"Save Image As\" to download, then copy the image into your project folder."
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:158
+msgid "Finally, check the play button on the SpriteFrames editor to see your frog jump!"
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:164
+msgid "Sprite sheet with AnimationPlayer"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:166
+msgid "Another way that you can animate when using a sprite sheet is to use a standard :ref:`Sprite2D <class_Sprite2D>` node to display the texture, and then animating the change from texture to texture with :ref:`AnimationPlayer <class_AnimationPlayer>`."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:170
+msgid "Consider this sprite sheet, which contains 6 frames of animation:"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:174
+msgid "Right-click the image and choose \"Save Image As\" to download, then copy the image into your project folder."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:177
 msgid "Our goal is to display these images one after another in a loop. Start by setting up your scene tree:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:176
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:189
 msgid "Drag the spritesheet into the Sprite's *Texture* property, and you'll see the whole sheet displayed on the screen. To slice it up into individual frames, expand the *Animation* section in the Inspector and set the *Hframes* to ``6``. *Hframes* and *Vframes* are the number of horizontal and vertical frames in your sprite sheet."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:184
-msgid "Now try changing the value of the *Frame* property. You'll see that it ranges from ``0`` to ``5`` and the image displayed by the Sprite changes accordingly. This is the property we'll be animating."
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:197
+msgid "Now try changing the value of the *Frame* property. You'll see that it ranges from ``0`` to ``5`` and the image displayed by the Sprite2D changes accordingly. This is the property we'll be animating."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:188
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:201
 msgid "Select the ``AnimationPlayer`` and click the \"Animation\" button followed by \"New\". Name the new animation \"walk\". Set the animation length to ``0.6`` and click the \"Loop\" button so that our animation will repeat."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:194
-msgid "Now select the ``Sprite`` node and click the key icon to add a new track."
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:198
-msgid "Continue adding frames at each point in the timeline (``0.1`` seconds by default), until you have all the frames from 0 to 5. You'll see the frames actually appearing in the animation track:"
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:204
-msgid "Press \"Play\" on the animation to see how it looks."
-msgstr ""
-
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:209
-msgid "Controlling an AnimationPlayer animation"
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:207
+msgid "Now select the ``Sprite2D`` node and click the key icon to add a new track."
 msgstr ""
 
 #: ../../docs/tutorials/2d/2d_sprite_animation.rst:211
-msgid "Like with AnimatedSprite, you can control the animation via code using the ``play()`` and ``stop()`` methods. Again, here is an example to play the animation while the right arrow key is held, and stop it when the key is released."
+msgid "Continue adding frames at each point in the timeline (``0.1`` seconds by default), until you have all the frames from 0 to 5. You'll see the frames actually appearing in the animation track:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:253
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:217
+msgid "Press \"Play\" on the animation to see how it looks."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:222
+msgid "Controlling an AnimationPlayer animation"
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:224
+msgid "Like with AnimatedSprite2D, you can control the animation via code using the ``play()`` and ``stop()`` methods. Again, here is an example to play the animation while the right arrow key is held, and stop it when the key is released."
+msgstr ""
+
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:268
 msgid "If updating both an animation and a separate property at once (for example, a platformer may update the sprite's ``h_flip``/``v_flip`` properties when a character turns while starting a 'turning' animation), it's important to keep in mind that ``play()`` isn't applied instantly. Instead, it's applied the next time the :ref:`AnimationPlayer <class_AnimationPlayer>` is processed. This may end up being on the next frame, causing a 'glitch' frame, where the property change was applied but the animation was not. If this turns out to be a problem, after calling ``play()``, you can call ``advance(0)`` to update the animation immediately."
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:264
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:279
 msgid "Summary"
 msgstr ""
 
-#: ../../docs/tutorials/2d/2d_sprite_animation.rst:266
-msgid "These examples illustrate the two classes you can use in Godot for 2D animation. ``AnimationPlayer`` is a bit more complex than ``AnimatedSprite``, but it provides additional functionality, since you can also animate other properties like position or scale. The class ``AnimationPlayer`` can also be used with an ``AnimatedSprite``. Experiment to see what works best for your needs."
+#: ../../docs/tutorials/2d/2d_sprite_animation.rst:281
+msgid "These examples illustrate the two classes you can use in Godot for 2D animation. ``AnimationPlayer`` is a bit more complex than ``AnimatedSprite2D``, but it provides additional functionality, since you can also animate other properties like position or scale. The class ``AnimationPlayer`` can also be used with an ``AnimatedSprite2D``. Experiment to see what works best for your needs."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

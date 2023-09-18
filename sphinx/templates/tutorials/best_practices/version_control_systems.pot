@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:4
-msgid "Version Control Systems"
+msgid "Version control systems"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:7
@@ -25,47 +25,95 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:9
-msgid "Godot aims to be VCS friendly and generate mostly readable and mergeable files. Godot also supports the use of version control systems in the editor itself. However, VCS in the editor requires a plugin for the specific VCS you are using. VCS can be setup or shut down in the editor under **Project > Version Control**."
+msgid "Godot aims to be VCS-friendly and generate mostly readable and mergeable files."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/version_control_systems.rst:17
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:12
+msgid "Version control plugins"
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:14
+msgid "Godot also supports the use of version control systems in the editor itself. However, version control in the editor requires a plugin for the specific VCS you're using."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:18
+msgid "As of July 2023, there is only a Git plugin available, but the community may create additional VCS plugins."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:22
 msgid "Official Git plugin"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/version_control_systems.rst:19
-msgid "Using Git from inside the editor is supported with an official plugin. You can find the latest releases `here <https://github.com/godotengine/godot-git-plugin/releases>`__. Documentation on how to use the Git plugin can be found `here <https://github.com/godotengine/godot-git-plugin/wiki>`__."
-msgstr ""
-
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:26
-msgid "Files to exclude from VCS"
+msgid "As of July 2023, the Git plugin hasn't been updated to work with Godot 4.1 and later yet."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/version_control_systems.rst:28
-msgid "There are some folders Godot creates you should have your VCS ignore:"
-msgstr ""
-
-#: ../../docs/tutorials/best_practices/version_control_systems.rst:30
-msgid "``.import/``: This folder stores all the files it imports automatically based on your source assets and their import flags."
-msgstr ""
-
-#: ../../docs/tutorials/best_practices/version_control_systems.rst:32
-msgid "``*.translation``: These files are binary imported translations generated from CSV files."
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:29
+msgid "Using Git from inside the editor is supported with an official plugin. You can find the latest releases on `GitHub <https://github.com/godotengine/godot-git-plugin/releases>`__."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:33
-msgid "``export_presets.cfg``: This file contains all the export presets for the project, including sensitive information such as Android keystore credentials."
+msgid "Documentation on how to use the Git plugin can be found on its `wiki <https://github.com/godotengine/godot-git-plugin/wiki>`__."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/version_control_systems.rst:35
-msgid "``.mono/``: This folder stores automatically-generated Mono files. It only exists in projects that use the Mono version of Godot."
-msgstr ""
-
-#: ../../docs/tutorials/best_practices/version_control_systems.rst:39
-msgid "Working with Git on Windows"
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:37
+msgid "Files to exclude from VCS"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/version_control_systems.rst:41
-msgid "Most Git for Windows clients are configured with the ``core.autocrlf`` set to ``true``. This can lead to files unnecessarily being marked as modified by Git due to their line endings being converted automatically. It is better to set this option as::"
+msgid "This lists files and folders that should be ignored from version control in Godot 4.1 and later."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:44
+msgid "The list of files of folders that should be ignored from version control in Godot 3.x and Godot 4.0 is **entirely** different. This is important, as Godot 3.x and 4.0 may store sensitive credentials in ``export_presets.cfg`` (unlike Godot 4.1 and later)."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:49
+msgid "If you are using Godot 3, check the ``3.5`` version of this documentation page instead."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:52
+msgid "There are some files and folders Godot automatically creates when opening a project in the editor for the first time. To avoid bloating your version control repository with generated data, you should add them to your VCS ignore:"
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:56
+msgid "``.godot/``: This folder stores various project cache data."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:57
+msgid "``*.translation``: These files are binary imported :ref:`translations <doc_internationalizing_games>` generated from CSV files."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:60
+msgid "You can make the Godot project manager generate version control metadata for you automatically when creating a project. When choosing the **Git** option, this creates ``.gitignore`` and ``.gitattributes`` files in the project root:"
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:68
+msgid "Creating version control metadata in the project manager's New Project dialog"
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:68
+msgid "Creating version control metadata in the project manager's **New Project** dialog"
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:70
+msgid "In existing projects, select the **Project** menu at the top of the editor, then choose **Version Control > Generate Version Control Metadata**. This creates the same files as if the operation was performed in the project manager."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:75
+msgid "Working with Git on Windows"
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:77
+msgid "Most Git for Windows clients are configured with the ``core.autocrlf`` set to ``true``. This can lead to files unnecessarily being marked as modified by Git due to their line endings being converted from LF to CRLF automatically."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:81
+msgid "It is better to set this option as:"
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/version_control_systems.rst:87
+msgid "Creating version control metadata using the project manager or editor will automatically enforce LF line endings using the ``.gitattributes`` file. In this case, you don't need to change your Git configuration."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

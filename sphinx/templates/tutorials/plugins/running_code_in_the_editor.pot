@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,119 +21,131 @@ msgid "Running code in the editor"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:7
-msgid "What is ``tool``?"
+msgid "What is ``@tool``?"
 msgstr ""
 
 #: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:9
-msgid "``tool`` is a powerful line of code that, when added at the top of your script, makes it execute in the editor. You can also decide which parts of the script execute in the editor, which in game, and which in both."
-msgstr ""
-
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:11
-msgid "You can use it for doing many things, but it is mostly useful in level design for visually presenting things that are hard to predict ourselves. Here are some use cases:"
+msgid "``@tool`` is a powerful line of code that, when added at the top of your script, makes it execute in the editor. You can also decide which parts of the script execute in the editor, which in game, and which in both."
 msgstr ""
 
 #: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:13
+msgid "You can use it for doing many things, but it is mostly useful in level design for visually presenting things that are hard to predict ourselves. Here are some use cases:"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:17
 msgid "If you have a cannon that shoots cannonballs affected by physics (gravity), you can draw the cannonball's trajectory in the editor, making level design a lot easier."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:14
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:20
 msgid "If you have jumppads with varying jump heights, you can draw the maximum jump height a player would reach if it jumped on one, also making level design easier."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:15
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:23
 msgid "If your player doesn't use a sprite, but draws itself using code, you can make that drawing code execute in the editor to see your player."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:19
-msgid "``tool`` scripts run inside the editor, and let you access the scene tree of the currently edited scene. This is a powerful feature which also comes with caveats, as the editor does not include protections for potential misuse of ``tool`` scripts. Be **extremely** cautious when manipulating the scene tree, especially via :ref:`Node.queue_free<class_Node_method_queue_free>`, as it can cause crashes if you free a node while the editor runs logic involving it."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:28
+msgid "``@tool`` scripts run inside the editor, and let you access the scene tree of the currently edited scene. This is a powerful feature which also comes with caveats, as the editor does not include protections for potential misuse of ``@tool`` scripts. Be **extremely** cautious when manipulating the scene tree, especially via :ref:`Node.queue_free<class_Node_method_queue_free>`, as it can cause crashes if you free a node while the editor runs logic involving it."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:28
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:37
 msgid "How to use it"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:30
-msgid "To turn a script into a tool, add the keyword ``tool`` at the top of your code."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:39
+msgid "To turn a script into a tool, add the ``@tool`` annotation at the top of your code."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:32
-msgid "To check if you are currently in the editor, use: ``Engine.editor_hint``."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:41
+msgid "To check if you are currently in the editor, use: ``Engine.is_editor_hint()``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:34
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:43
 msgid "For example, if you want to execute some code only in the editor, use:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:49
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:58
 msgid "On the other hand, if you want to execute code only in game, simply negate the same statement:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:64
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:74
 msgid "Pieces of code do not have either of the 2 conditions above will run both in-editor and in-game."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:66
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:77
 msgid "Here is how a ``_process()`` function might look for you:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:97
-msgid "Modifications in editor are permanent. For example, in the following case, when we remove the script, the node will keep its rotation. Be careful to avoid making unwanted modifications."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:110
+msgid "Modifications in the editor are permanent. For example, in the following case, when we remove the script, the node will keep its rotation. Be careful to avoid making unwanted modifications."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:100
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:115
 msgid "Try it out"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:102
-msgid "Add a ``Sprite`` node to your scene and set the texture to Godot icon. Attach and open a script, and change it to this:"
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:117
+msgid "Add a ``Sprite2D`` node to your scene and set the texture to Godot icon. Attach and open a script, and change it to this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:127
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:142
 msgid "Save the script and return to the editor. You should now see your object rotate. If you run the game, it will also rotate."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:131
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:149
 msgid "If you don't see the changes, reload the scene (close it and open it again)."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:133
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:151
 msgid "Now let's choose which code runs when. Modify your ``_process()`` function to look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:158
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:177
 msgid "Save the script. Now the object will spin clockwise in the editor, but if you run the game, it will spin counter-clockwise."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:161
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:181
 msgid "Editing variables"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:162
-msgid "Add and export a variable speed to the script. The function set_speed after \"setget\" is executed with your input to change the variable. Modify  ``_process()`` to include the rotation speed."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:183
+msgid "Add and export a variable speed to the script. To update the speed and also reset the rotation angle add a setter ``set(new_speed)`` which is executed with the input from the inspector. Modify ``_process()`` to include the rotation speed."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:213
-msgid "Code from other nodes doesn't run in the editor. Your access to other nodes is limited. You can access the tree and nodes, and their default properties, but you can't access user variables. If you want to do so, other nodes have to run in the editor too. AutoLoad nodes cannot be accessed in the editor at all."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:233
+msgid "Code from other nodes doesn't run in the editor. Your access to other nodes is limited. You can access the tree and nodes, and their default properties, but you can't access user variables. If you want to do so, other nodes have to run in the editor too. Autoload nodes cannot be accessed in the editor at all."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:216
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:240
+msgid "Reporting node configuration warnings"
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:242
+msgid "Godot uses a *node configuration warning* system to warn users about incorrectly configured nodes. When a node isn't configured correctly, a yellow warning sign appears next to the node's name in the Scene dock. When you hover or click on the icon, a warning message pops up. You can use this feature in your scripts to help you and your team avoid mistakes when setting up scenes."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:248
+msgid "When using node configuration warnings, when any value that should affect or remove the warning changes, you need to call :ref:`update_configuration_warnings<class_Node_method_update_configuration_warnings>` . By default, the warning only updates when closing and reopening the scene."
+msgstr ""
+
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:283
 msgid "Instancing scenes"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:218
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:285
 msgid "You can instantiate packed scenes normally and add them to the scene currently opened in the editor. By default, nodes or scenes added with :ref:`Node.add_child(node) <class_Node_method_add_child>` are **not** visible in the Scene tree dock and are **not** persisted to disk. If you wish the node or scene to be visible in the scene tree dock and persisted to disk when saving the scene, you need to set the child node's :ref:`owner <class_Node_property_owner>` property to the currently edited scene root."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:226
-msgid "If you are using ``tool``:"
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:293
+msgid "If you are using ``@tool``:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:251
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:318
 msgid "If you are using :ref:`EditorScript<class_EditorScript>`:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:278
-msgid "Using ``tool`` improperly can yield many errors. It is advised to first write the code how you want it, and only then add the ``tool`` keyword to the top. Also, make sure to separate code that runs in-editor from code that runs in-game. This way, you can find bugs more easily."
+#: ../../docs/tutorials/plugins/running_code_in_the_editor.rst:349
+msgid "Using ``@tool`` improperly can yield many errors. It is advised to first write the code how you want it, and only then add the ``@tool`` annotation to the top. Also, make sure to separate code that runs in-editor from code that runs in-game. This way, you can find bugs more easily."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

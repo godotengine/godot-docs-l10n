@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,187 +44,199 @@ msgstr ""
 msgid "Start by declaring the member variables this object will need:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:86
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:85
 msgid "Using the ``export`` keyword on the first variable ``speed`` allows us to set its value in the Inspector. This can be handy for values that you want to be able to adjust just like a node's built-in properties. Click on the ``Player`` node and you'll see the property now appears in the \"Script Variables\" section of the Inspector. Remember, if you change the value here, it will override the value written in the script."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:93
-msgid "If you're using C#, you need to (re)build the project assemblies whenever you want to see new export variables or signals. This build can be manually triggered by clicking the word \"Mono\" at the bottom of the editor window to reveal the Mono Panel, then clicking the \"Build Project\" button."
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:94
+msgid "If you're using C#, you need to (re)build the project assemblies whenever you want to see new export variables or signals. This build can be manually triggered by clicking the \"Build\" button at the top right of the editor."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:101
+msgid "A manual build can also be triggered from the MSBuild Panel. Click the word \"MSBuild\" at the bottom of the editor window to reveal the MSBuild Panel, then click the \"Build\" button."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:107
 msgid "The ``_ready()`` function is called when a node enters the scene tree, which is a good time to find the size of the game window:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:129
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:135
 msgid "Now we can use the ``_process()`` function to define what the player will do. ``_process()`` is called every frame, so we'll use it to update elements of our game, which we expect will change often. For the player, we need to do the following:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:134
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:140
 msgid "Check for input."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:135
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:141
 msgid "Move in the given direction."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:136
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:142
 msgid "Play the appropriate animation."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:138
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:144
 msgid "First, we need to check for input - is the player pressing a key? For this game, we have 4 direction inputs to check. Input actions are defined in the Project Settings under \"Input Map\". Here, you can define custom events and assign different keys, mouse events, or other inputs to them. For this game, we will map the arrow keys to the four directions."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:144
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:150
 msgid "Click on *Project -> Project Settings* to open the project settings window and click on the *Input Map* tab at the top. Type \"move_right\" in the top bar and click the \"Add\" button to add the ``move_right`` action."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:150
-msgid "We need to assign a key to this action. Click the \"+\" icon on the right, then click the \"Key\" option in the drop-down menu. A dialog asks you to type in the desired key. Press the right arrow on your keyboard and click \"Ok\"."
-msgstr ""
-
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:156
-msgid "Repeat these steps to add three more mappings:"
+msgid "We need to assign a key to this action. Click the \"+\" icon on the right, to open the event manager window."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:158
-msgid "``move_left`` mapped to the left arrow key."
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:159
-msgid "``move_up`` mapped to the up arrow key."
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:160
-msgid "And ``move_down`` mapped to the down arrow key."
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:162
-msgid "Your input map tab should look like this:"
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:161
+msgid "The \"Listening for Input...\" field should automatically be selected. Press the \"right\" key on your keyboard, and the menu should look like this now."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:166
-msgid "Click the \"Close\" button to close the project settings."
+msgid "Select the \"ok\" button. The \"right\" key is now associated with the ``move_right`` action."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:168
+msgid "Repeat these steps to add three more mappings:"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:170
+msgid "``move_left`` mapped to the left arrow key."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:171
+msgid "``move_up`` mapped to the up arrow key."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:172
+msgid "And ``move_down`` mapped to the down arrow key."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:174
+msgid "Your input map tab should look like this:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:178
+msgid "Click the \"Close\" button to close the project settings."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:182
 msgid "We only mapped one key to each input action, but you can map multiple keys, joystick buttons, or mouse buttons to the same input action."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:173
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:185
 msgid "You can detect whether a key is pressed using ``Input.is_action_pressed()``, which returns ``true`` if it's pressed or ``false`` if it isn't."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:252
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:264
 msgid "We start by setting the ``velocity`` to ``(0, 0)`` - by default, the player should not be moving. Then we check each input and add/subtract from the ``velocity`` to obtain a total direction. For example, if you hold ``right`` and ``down`` at the same time, the resulting ``velocity`` vector will be ``(1, 1)``. In this case, since we're adding a horizontal and a vertical movement, the player would move *faster* diagonally than if it just moved horizontally."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:259
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:271
 msgid "We can prevent that if we *normalize* the velocity, which means we set its *length* to ``1``, then multiply by the desired speed. This means no more fast diagonal movement."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:263
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:275
 msgid "If you've never used vector math before, or need a refresher, you can see an explanation of vector usage in Godot at :ref:`doc_vector_math`. It's good to know but won't be necessary for the rest of this tutorial."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:267
-msgid "We also check whether the player is moving so we can call ``play()`` or ``stop()`` on the AnimatedSprite."
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:270
-msgid "``$`` is shorthand for ``get_node()``. So in the code above, ``$AnimatedSprite.play()`` is the same as ``get_node(\"AnimatedSprite\").play()``."
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:274
-msgid "In GDScript, ``$`` returns the node at the relative path from the current node, or returns ``null`` if the node is not found. Since AnimatedSprite is a child of the current node, we can use ``$AnimatedSprite``."
-msgstr ""
-
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:279
+msgid "We also check whether the player is moving so we can call ``play()`` or ``stop()`` on the AnimatedSprite2D."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:282
+msgid "``$`` is shorthand for ``get_node()``. So in the code above, ``$AnimatedSprite2D.play()`` is the same as ``get_node(\"AnimatedSprite2D\").play()``."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:286
+msgid "In GDScript, ``$`` returns the node at the relative path from the current node, or returns ``null`` if the node is not found. Since AnimatedSprite2D is a child of the current node, we can use ``$AnimatedSprite2D``."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:291
 msgid "Now that we have a movement direction, we can update the player's position. We can also use ``clamp()`` to prevent it from leaving the screen. *Clamping* a value means restricting it to a given range. Add the following to the bottom of the ``_process`` function (make sure it's not indented under the `else`):"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:307
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:318
 msgid "The `delta` parameter in the `_process()` function refers to the *frame length* - the amount of time that the previous frame took to complete. Using this value ensures that your movement will remain consistent even if the frame rate changes."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:312
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:323
 msgid "Click \"Play Scene\" (:kbd:`F6`, :kbd:`Cmd + R` on macOS) and confirm you can move the player around the screen in all directions."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:315
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:326
 msgid "If you get an error in the \"Debugger\" panel that says"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:317
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:328
 msgid "``Attempt to call function 'play' in base 'null instance' on a null instance``"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:320
-msgid "this likely means you spelled the name of the AnimatedSprite node wrong. Node names are case-sensitive and ``$NodeName`` must match the name you see in the scene tree."
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:331
+msgid "this likely means you spelled the name of the AnimatedSprite2D node wrong. Node names are case-sensitive and ``$NodeName`` must match the name you see in the scene tree."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:325
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:336
 msgid "Choosing animations"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:327
-msgid "Now that the player can move, we need to change which animation the AnimatedSprite is playing based on its direction. We have the \"walk\" animation, which shows the player walking to the right. This animation should be flipped horizontally using the ``flip_h`` property for left movement. We also have the \"up\" animation, which should be flipped vertically with ``flip_v`` for downward movement. Let's place this code at the end of the ``_process()`` function:"
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:338
+msgid "Now that the player can move, we need to change which animation the AnimatedSprite2D is playing based on its direction. We have the \"walk\" animation, which shows the player walking to the right. This animation should be flipped horizontally using the ``flip_h`` property for left movement. We also have the \"up\" animation, which should be flipped vertically with ``flip_v`` for downward movement. Let's place this code at the end of the ``_process()`` function:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:373
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:384
 msgid "The boolean assignments in the code above are a common shorthand for programmers. Since we're doing a comparison test (boolean) and also *assigning* a boolean value, we can do both at the same time. Consider this code versus the one-line boolean assignment above:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:397
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:408
 msgid "Play the scene again and check that the animations are correct in each of the directions."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:400
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:411
 msgid "A common mistake here is to type the names of the animations wrong. The animation names in the SpriteFrames panel must match what you type in the code. If you named the animation ``\"Walk\"``, you must also use a capital \"W\" in the code."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:405
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:416
 msgid "When you're sure the movement is working correctly, add this line to ``_ready()``, so the player will be hidden when the game starts:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:422
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:433
 msgid "Preparing for collisions"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:424
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:435
 msgid "We want ``Player`` to detect when it's hit by an enemy, but we haven't made any enemies yet! That's OK, because we're going to use Godot's *signal* functionality to make it work."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:428
-msgid "Add the following at the top of the script, after ``extends Area2D``:"
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:439
+msgid "Add the following at the top of the script. If you're using GDScript, add it after ``extends Area2D``. If you're using C#, add it after ``public partial class Player : Area2D``:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:457
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:469
 msgid "This defines a custom signal called \"hit\" that we will have our player emit (send out) when it collides with an enemy. We will use ``Area2D`` to detect the collision. Select the ``Player`` node and click the \"Node\" tab next to the Inspector tab to see the list of signals the player can emit:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:464
-msgid "Notice our custom \"hit\" signal is there as well! Since our enemies are going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node)`` signal. This signal will be emitted when a body contacts the player. Click \"Connect..\" and the \"Connect a Signal\" window appears. We don't need to change any of these settings so click \"Connect\" again. Godot will automatically create a function in your player's script."
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:476
+msgid "Notice our custom \"hit\" signal is there as well! Since our enemies are going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node2D)`` signal. This signal will be emitted when a body contacts the player. Click \"Connect..\" and the \"Connect a Signal\" window appears. We don't need to change any of these settings so click \"Connect\" again. Godot will automatically create a function in your player's script."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:473
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:485
 msgid "Note the green icon indicating that a signal is connected to this function. Add this code to the function:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:505
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:517
 msgid "Each time an enemy hits the player, the signal is going to be emitted. We need to disable the player's collision so that we don't trigger the ``hit`` signal more than once."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:509
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:521
 msgid "Disabling the area's collision shape can cause an error if it happens in the middle of the engine's collision processing. Using ``set_deferred()`` tells Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:514
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:526
 msgid "The last piece is to add a function we can call to reset the player when starting a new game."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:543
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:555
 msgid "With the player working, we'll work on the enemy in the next lesson."
 msgstr ""
 

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,6 @@ msgid "You can activate idle processing by defining the ``_process()`` method in
 msgstr ""
 
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:25
-#: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:57
 msgid "The engine calls this method every time it draws a frame:"
 msgstr ""
 
@@ -57,6 +56,10 @@ msgstr ""
 msgid "Physics processing works with a similar virtual function: ``_physics_process()``. Use it for calculations that must happen before each physics step, like moving a character that collides with the game world. As mentioned above, ``_physics_process()`` runs at fixed time intervals as much as possible to keep the physics interactions stable. You can change the interval between physics steps in the Project Settings, under Physics -> Common -> Physics Fps. By default, it's set to run 60 times per second."
 msgstr ""
 
+#: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:57
+msgid "The engine calls this method before every physics step:"
+msgstr ""
+
 #: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:73
 msgid "The function ``_process()`` is not synchronized with physics. Its rate depends on hardware and game optimization. It also runs after the physics step in single-threaded games."
 msgstr ""
@@ -65,7 +68,7 @@ msgstr ""
 msgid "You can see the ``_process()`` function at work by creating a scene with a single Label node, with the following script attached to it:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:104
+#: ../../docs/tutorials/scripting/idle_and_physics_processing.rst:106
 msgid "When you run the scene, you should see a counter increasing each frame."
 msgstr ""
 

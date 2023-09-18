@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,246 +16,233 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:4
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:6
 msgid "Designing the mob scene"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:6
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:8
 msgid "In this part, you're going to code the monsters, which we'll call mobs. In the next lesson, we'll spawn them randomly around the playable area."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:9
-msgid "Let's design the monsters themselves in a new scene. The node structure is going to be similar to the *Player* scene."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:11
+msgid "Let's design the monsters themselves in a new scene. The node structure is going to be similar to the ``player.tscn`` scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:12
-msgid "Create a scene with, once again, a *KinematicBody* node as its root. Name it *Mob*. Add a *Spatial* node as a child of it, name it *Pivot*. And drag and drop the file ``mob.glb`` from the *FileSystem* dock onto the *Pivot* to add the monster's 3D model to the scene. You can rename the newly created *mob* node into *Character*."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:14
+msgid "Create a scene with, once again, a :ref:`CharacterBody3D <class_CharacterBody3D>` node as its root. Name it ``Mob``. Add a child node :ref:`Node3D <class_Node3D>`, name it ``Pivot``. And drag and drop the file ``mob.glb`` from the *FileSystem* dock onto the ``Pivot`` to add the monster's 3D model to the scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:18
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:21
+msgid "You can rename the newly created ``mob`` node into ``Character``."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:24
 msgid "|image0|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:325
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:325
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:336
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:336
 msgid "image0"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:20
-msgid "We need a collision shape for our body to work. Right-click on the *Mob* node, the scene's root, and click *Add Child Node*."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:23
-msgid "|image1|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:326
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:326
-msgid "image1"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:25
-msgid "Add a *CollisionShape*."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:27
-msgid "|image2|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:327
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:327
-msgid "image2"
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:26
+msgid "We need a collision shape for our body to work. Right-click on the ``Mob`` node, the scene's root, and click *Add Child Node*."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:29
-msgid "In the *Inspector*, assign a *BoxShape* to the *Shape* property."
+msgid "|image1|"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:337
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:337
+msgid "image1"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:31
-msgid "|image3|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:328
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:328
-msgid "image3"
+msgid "Add a :ref:`CollisionShape3D <class_CollisionShape3D>`."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:33
-msgid "We should change its size to fit the 3D model better. You can do so interactively by clicking and dragging on the orange dots."
+msgid "|image2|"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:338
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:338
+msgid "image2"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:36
+msgid "In the *Inspector*, assign a *BoxShape3D* to the *Shape* property."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:40
+msgid "We should change its size to fit the 3D model better. You can do so interactively by clicking and dragging on the orange dots."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:43
 msgid "The box should touch the floor and be a little thinner than the model. Physics engines work in such a way that if the player's sphere touches even the box's corner, a collision will occur. If the box is a little too big compared to the 3D model, you may die at a distance from the monster, and the game will feel unfair to the players."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:42
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:49
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:329
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:329
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:339
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:339
 msgid "image4"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:44
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:51
 msgid "Notice that my box is taller than the monster. It is okay in this game because we're looking at the scene from above and using a fixed perspective. Collision shapes don't have to match the model exactly. It's the way the game feels when you test it that should dictate their form and size."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:50
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:57
 msgid "Removing monsters off-screen"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:52
-msgid "We're going to spawn monsters at regular time intervals in the game level. If we're not careful, their count could increase to infinity, and we don't want that. Each mob instance has both a memory and a processing cost, and we don't want to pay for it when the mob's outside the screen."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:59
+msgid "We're going to spawn monsters at regular time intervals in the game level. If we're not careful, their count could increase to infinity, and we don't want that. Each mob instance has both a memory and a processing cost, and we don't want to pay for it when the mob is outside the screen."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:57
-msgid "Once a monster leaves the screen, we don't need it anymore, so we can delete it. Godot has a node that detects when objects leave the screen, *VisibilityNotifier*, and we're going to use it to destroy our mobs."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:64
+msgid "Once a monster leaves the screen, we don't need it anymore, so we should delete it. Godot has a node that detects when objects leave the screen, :ref:`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>`, and we're going to use it to destroy our mobs."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:63
-msgid "When you keep instancing an object in games, there's a technique you can use to avoid the cost of creating and destroying instances all the time called pooling. It consists of pre-creating an array of objects and reusing them over and over."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:70
+msgid "When you keep instancing an object, there's a technique you can use to avoid the cost of creating and destroying instances all the time called pooling. It consists of pre-creating an array of objects and reusing them over and over."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:68
-msgid "When working with GDScript, you don't need to worry about this. The main reason to use pools is to avoid freezes with garbage-collected languages like C# or Lua. GDScript uses a different technique to manage memory, reference counting, which doesn't have that caveat. You can learn more about that here :ref:`doc_gdscript_basics_memory_management`."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:75
+msgid "When working with GDScript, you don't need to worry about this. The main reason to use pools is to avoid freezes with garbage-collected languages like C# or Lua. GDScript uses a different technique to manage memory, reference counting, which doesn't have that caveat. You can learn more about that here: :ref:`doc_gdscript_basics_memory_management`."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:74
-msgid "Select the *Mob* node and add a *VisibilityNotifier* as a child of it. Another box, pink this time, appears. When this box completely leaves the screen, the node will emit a signal."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:78
-msgid "|image5|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:330
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:330
-msgid "image5"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:80
-msgid "Resize it using the orange dots until it covers the entire 3D model."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:82
-msgid "|image6|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:331
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:331
-msgid "image6"
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:81
+msgid "Select the ``Mob`` node and add a child node :ref:`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>`. Another box, pink this time, appears. When this box completely leaves the screen, the node will emit a signal."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:85
-msgid "Coding the mob's movement"
+msgid "|image5|"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:340
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:340
+msgid "image5"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:87
-msgid "Let's implement the monster's motion. We're going to do this in two steps. First, we'll write a script on the *Mob* that defines a function to initialize the monster. We'll then code the randomized spawn mechanism in the *Main* scene and call the function from there."
+msgid "Resize it using the orange dots until it covers the entire 3D model."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:89
+msgid "|image6|"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:341
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:341
+msgid "image6"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:92
-msgid "Attach a script to the *Mob*."
+msgid "Coding the mob's movement"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:94
+msgid "Let's implement the monster's motion. We're going to do this in two steps. First, we'll write a script on the ``Mob`` that defines a function to initialize the monster. We'll then code the randomized spawn mechanism in the ``main.tscn`` scene and call the function from there."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:99
+msgid "Attach a script to the ``Mob``."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:101
 msgid "|image7|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:332
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:332
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:342
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:342
 msgid "image7"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:96
-msgid "Here's the movement code to start with. We define two properties, ``min_speed`` and ``max_speed``, to define a random speed range. We then define and initialize the ``velocity``."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:103
+msgid "Here's the movement code to start with. We define two properties, ``min_speed`` and ``max_speed``, to define a random speed range, which we will later use to define ``CharacterBody3D.velocity``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:137
-msgid "Similarly to the player, we move the mob every frame by calling ``KinematicBody``\\ 's ``move_and_slide()`` method. This time, we don't update the ``velocity`` every frame: we want the monster to move at a constant speed and leave the screen, even if it were to hit an obstacle."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:141
+msgid "Similarly to the player, we move the mob every frame by calling the function ``CharacterBody3D.move_and_slide()``. This time, we don't update the ``velocity`` every frame; we want the monster to move at a constant speed and leave the screen, even if it were to hit an obstacle."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:142
-msgid "You may see a warning in GDScript that the return value from ``move_and_slide()`` is unused. This is expected. You can simply ignore the warning or, if you want to hide it entirely, add the comment ``# warning-ignore:return_value_discarded`` just above the ``move_and_slide(velocity)`` line. To read more about the GDScript warning system, see :ref:`doc_gdscript_warning_system`."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:146
+msgid "We need to define another function to calculate the ``CharacterBody3D.velocity``. This function will turn the monster towards the player and randomize both its angle of motion and its velocity."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:149
-msgid "We need to define another function to calculate the start velocity. This function will turn the monster towards the player and randomize both its angle of motion and its velocity."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:150
+msgid "The function will take a ``start_position``,the mob's spawn position, and the ``player_position`` as its arguments."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:153
-msgid "The function will take a ``start_position``, the mob's spawn position, and the ``player_position`` as its arguments."
+msgid "We position the mob at ``start_position`` and turn it towards the player using the ``look_at_from_position()`` method, and randomize the angle by rotating a random amount around the Y axis. Below, ``randf_range()`` outputs a random value between ``-PI / 4`` radians and ``PI / 4`` radians."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:156
-msgid "We position the mob at ``start_position`` and turn it towards the player using the ``look_at_from_position()`` method, and randomize the angle by rotating a random amount around the Y axis. Below, ``rand_range()`` outputs a random value between ``-PI / 4`` radians and ``PI / 4`` radians."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:183
+msgid "We got a random position, now we need a ``random_speed``. ``randi_range()`` will be useful as it gives random int values, and we will use ``min_speed`` and ``max_speed``. ``random_speed`` is just an integer, and we just use it to multiply our ``CharacterBody3D.velocity``. After ``random_speed`` is applied, we rotate ``CharacterBody3D.velocity`` Vector3 towards the player."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:182
-msgid "We then calculate a random speed using ``rand_range()`` once again and we use it to calculate the velocity."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:185
-msgid "We start by creating a 3D vector pointing forward, multiply it by our ``random_speed``, and finally rotate it using the ``Vector3`` class's ``rotated()`` method."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:217
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:216
 msgid "Leaving the screen"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:219
-msgid "We still have to destroy the mobs when they leave the screen. To do so, we'll connect our *VisibilityNotifier* node's ``screen_exited`` signal to the *Mob*."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:218
+msgid "We still have to destroy the mobs when they leave the screen. To do so, we'll connect our :ref:`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>` node's ``screen_exited`` signal to the ``Mob``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:222
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:221
 msgid "Head back to the 3D viewport by clicking on the *3D* label at the top of the editor. You can also press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:225
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:224
 msgid "|image8|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:333
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:333
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:343
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:343
 msgid "image8"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:227
-msgid "Select the *VisibilityNotifier* node and on the right side of the interface, navigate to the *Node* dock. Double-click the *screen_exited()* signal."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:226
+msgid "Select the :ref:`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>` node and on the right side of the interface, navigate to the *Node* dock. Double-click the ``screen_exited()`` signal."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:230
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:229
 msgid "|image9|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:334
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:334
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:344
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:344
 msgid "image9"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:232
-msgid "Connect the signal to the *Mob*."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:231
+msgid "Connect the signal to the ``Mob``"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:234
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:233
 msgid "|image10|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:335
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:335
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:345
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:345
 msgid "image10"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:236
-msgid "This will take you back to the script editor and add a new function for you, ``_on_VisibilityNotifier_screen_exited()``. From it, call the ``queue_free()`` method. This will destroy the mob instance when the *VisibilityNotifier* \\'s box leaves the screen."
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:235
+msgid "This will take you back to the script editor and add a new function for you, ``_on_visible_on_screen_notifier_3d_screen_exited()``. From it, call the ``queue_free()`` method. This function destroy the instance it's called on."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:256
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:254
 msgid "Our monster is ready to enter the game! In the next part, you will spawn monsters in the game level."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:259
+#: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:257
 msgid "Here is the complete ``Mob.gd`` script for reference."
 msgstr ""
 

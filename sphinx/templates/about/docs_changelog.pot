@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,425 +21,779 @@ msgid "Documentation changelog"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:6
-msgid "The documentation is continually being improved. The release of version 3.2 includes many new tutorials, many fixes and updates for old tutorials, and many updates to the :ref:`class reference <doc_class_reference>`. Below is a list of new tutorials added since version 3.1."
+msgid "The documentation is continually being improved. New releases include new pages, fixes and updates to existing pages, and many updates to the :ref:`class reference <doc_class_reference>`. Below is a list of new pages added since version 3.0."
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:11
-msgid "This document only contains new tutorials so not all changes are reflected, many tutorials have been substantially updated but are not reflected in this document."
+msgid "This document only contains new pages so not all changes are reflected, many pages have been substantially updated but are not reflected in this document."
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:15
-msgid "New tutorials since version 3.1"
+msgid "New pages since version 4.0"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:18
-#: ../../docs/about/docs_changelog.rst:118
-msgid "Project workflow"
+#: ../../docs/about/docs_changelog.rst:67
+#: ../../docs/about/docs_changelog.rst:170
+msgid "Development"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:20
-msgid ":ref:`doc_android_custom_build`"
+msgid ":ref:`doc_internal_rendering_architecture`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:23
-#: ../../docs/about/docs_changelog.rst:134
-msgid "2D"
+#: ../../docs/about/docs_changelog.rst:21
+msgid ":ref:`doc_using_sanitizers`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:25
-msgid ":ref:`doc_2d_sprite_animation`"
+#: ../../docs/about/docs_changelog.rst:24
+#: ../../docs/about/docs_changelog.rst:72
+msgid "Migrating"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:28
-msgid "Audio"
+#: ../../docs/about/docs_changelog.rst:26
+msgid ":ref:`doc_upgrading_to_godot_4.1`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:30
-msgid ":ref:`doc_recording_with_microphone`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:31
-msgid ":ref:`doc_sync_with_audio`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:34
-msgid "Math"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:36
-msgid ":ref:`doc_beziers_and_curves`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:37
-msgid ":ref:`doc_interpolation`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:40
-msgid "Inputs"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:42
-msgid ":ref:`doc_input_examples`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:45
-msgid "Internationalization"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:47
-msgid ":ref:`doc_localization_using_gettext`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:50
-#: ../../docs/about/docs_changelog.rst:170
-msgid "Shading"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:55
-msgid "Your First Shader Series:"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:53
-#: ../../docs/about/docs_changelog.rst:177
-msgid ":ref:`doc_introduction_to_shaders`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:54
-msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:55
-msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:56
-msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:57
-msgid ":ref:`doc_visual_shaders`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:60
-msgid "Networking"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:62
-msgid ":ref:`doc_webrtc`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:65
-msgid "VR"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:67
-msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:68
-msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:71
-#: ../../docs/about/docs_changelog.rst:184
-msgid "Plugins"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:73
-msgid ":ref:`doc_android_plugin`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:74
-msgid ":ref:`doc_inspector_plugins`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:75
-msgid ":ref:`doc_visual_shader_plugins`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:78
-#: ../../docs/about/docs_changelog.rst:195
-msgid "Multi-threading"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:80
-msgid ":ref:`doc_using_multiple_threads`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:83
-#: ../../docs/about/docs_changelog.rst:200
-msgid "Creating content"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:90
-msgid "Procedural geometry series:"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:86
-msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:87
-msgid ":ref:`doc_arraymesh`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:88
-msgid ":ref:`doc_surfacetool`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:89
-msgid ":ref:`doc_meshdatatool`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:90
-msgid ":ref:`doc_immediategeometry`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:93
-msgid "Optimization"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:95
-msgid ":ref:`doc_using_multimesh`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:96
-msgid ":ref:`doc_using_servers`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:99
-msgid "Legal"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:101
-msgid ":ref:`doc_complying_with_licenses`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:104
-msgid "New tutorials since version 3.0"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:107
-msgid "Step by step"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:109
-msgid ":ref:`doc_signals`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:110
-msgid ":ref:`doc_exporting_basics`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:113
-msgid "Scripting"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:115
-msgid ":ref:`doc_gdscript_static_typing`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:120
-msgid "Best Practices:"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:122
-msgid ":ref:`doc_introduction_best_practices`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:123
-msgid ":ref:`doc_what_are_godot_classes`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:124
-msgid ":ref:`doc_scene_organization`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:125
-msgid ":ref:`doc_scenes_versus_scripts`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:126
-msgid ":ref:`doc_autoloads_versus_internal_nodes`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:127
-msgid ":ref:`doc_node_alternatives`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:128
-msgid ":ref:`doc_godot_interfaces`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:129
-msgid ":ref:`doc_godot_notifications`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:130
-msgid ":ref:`doc_data_preferences`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:131
-msgid ":ref:`doc_logic_preferences`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:136
-msgid ":ref:`doc_2d_lights_and_shadows`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:137
-msgid ":ref:`doc_2d_meshes`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:140
-msgid "3D"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:142
-msgid ":ref:`doc_csg_tools`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:143
-msgid ":ref:`doc_animating_thousands_of_fish`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:144
-msgid ":ref:`doc_controlling_thousands_of_fish`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:147
+#: ../../docs/about/docs_changelog.rst:29
+#: ../../docs/about/docs_changelog.rst:77
+#: ../../docs/about/docs_changelog.rst:208
+#: ../../docs/about/docs_changelog.rst:359
 msgid "Physics"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:149
-msgid ":ref:`doc_ragdoll_system`"
+#: ../../docs/about/docs_changelog.rst:31
+msgid ":ref:`doc_troubleshooting_physics_issues`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:150
-msgid ":ref:`doc_soft_body`"
+#: ../../docs/about/docs_changelog.rst:34
+msgid "New pages since version 3.6"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:153
+#: ../../docs/about/docs_changelog.rst:37
+#: ../../docs/about/docs_changelog.rst:241
+#: ../../docs/about/docs_changelog.rst:346
+msgid "2D"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:39
+msgid ":ref:`doc_2d_antialiasing`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:42
+#: ../../docs/about/docs_changelog.rst:115
+#: ../../docs/about/docs_changelog.rst:146
+#: ../../docs/about/docs_changelog.rst:352
+msgid "3D"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:44
+msgid ":ref:`doc_3d_antialiasing`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:45
+msgid ":ref:`doc_faking_global_illumination`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:46
+msgid ":ref:`doc_introduction_to_global_illumination`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:47
+msgid ":ref:`doc_mesh_lod`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:48
+msgid ":ref:`doc_occlusion_culling`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:49
+msgid ":ref:`doc_using_sdfgi`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:50
+msgid ":ref:`doc_using_decals`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:51
+msgid ":ref:`doc_visibility_ranges`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:52
+msgid ":ref:`doc_volumetric_fog`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:53
+msgid ":ref:`doc_variable_rate_shading`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:54
+msgid ":ref:`doc_physical_light_and_camera_units`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:57
+#: ../../docs/about/docs_changelog.rst:120
+#: ../../docs/about/docs_changelog.rst:365
 msgid "Animation"
 msgstr ""
 
+#: ../../docs/about/docs_changelog.rst:59
+msgid ":ref:`doc_creating_movies`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:62
+msgid "Assets pipeline"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:64
+msgid ":ref:`doc_retargeting_3d_skeletons`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:69
+msgid ":ref:`doc_custom_platform_ports`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:74
+msgid ":ref:`doc_upgrading_to_godot_4`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:79
+msgid ":ref:`doc_large_world_coordinates`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:82
+#: ../../docs/about/docs_changelog.rst:219
+#: ../../docs/about/docs_changelog.rst:325
+msgid "Scripting"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:84
+msgid ":ref:`doc_custom_performance_monitors`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:85
+msgid ":ref:`doc_c_sharp_collections`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:86
+msgid ":ref:`doc_c_sharp_global_classes`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:87
+msgid ":ref:`doc_c_sharp_variant`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:90
+#: ../../docs/about/docs_changelog.rst:214
+msgid "Shaders"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:92
+msgid ":ref:`doc_compute_shaders`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:95
+msgid "Workflow"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:97
+msgid ":ref:`doc_pr_review_guidelines`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:100
+msgid "XR"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:102
+msgid ":ref:`doc_introducing_xr_tools`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:103
+msgid ":ref:`doc_xr_action_map`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:104
+msgid ":ref:`doc_deploying_to_android`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:107
+msgid "New pages since version 3.5"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:109
+msgid "None."
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:112
+msgid "New pages since version 3.4"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:117
+msgid ":ref:`doc_3d_text`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:122
+msgid ":ref:`doc_playing_videos`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:125
+#: ../../docs/about/docs_changelog.rst:180
+msgid "Editor"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:127
+msgid ":ref:`doc_managing_editor_features`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:130
+msgid "New pages since version 3.3"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:133
+msgid "C++"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:135
+msgid ":ref:`doc_cpp_usage_guidelines`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:138
+msgid "GDScript"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:140
+msgid ":ref:`doc_gdscript_documentation_comments`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:143
+msgid "New pages since version 3.2"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:148
+msgid ":ref:`doc_3d_rendering_limitations`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:151
+msgid "About"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:153
+msgid ":ref:`doc_troubleshooting`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:154
+msgid ":ref:`doc_list_of_features`"
+msgstr ""
+
 #: ../../docs/about/docs_changelog.rst:155
-msgid ":ref:`doc_2d_skeletons`"
+msgid ":ref:`doc_release_policy`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:156
-msgid ":ref:`doc_animation_tree`"
+#: ../../docs/about/docs_changelog.rst:158
+msgid "Best practices"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:159
-msgid "GUI"
+#: ../../docs/about/docs_changelog.rst:160
+msgid ":ref:`doc_version_control_systems`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:161
-msgid ":ref:`doc_gui_containers`"
+#: ../../docs/about/docs_changelog.rst:163
+msgid "Community"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:164
-msgid "Viewports"
+#: ../../docs/about/docs_changelog.rst:165
+msgid ":ref:`doc_best_practices_for_engine_contributors`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:166
-msgid ":ref:`doc_viewport_as_texture`"
+msgid ":ref:`doc_bisecting_regressions`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:167
-msgid ":ref:`doc_custom_postprocessing`"
+msgid ":ref:`doc_editor_and_docs_localization`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:172
-msgid ":ref:`doc_converting_glsl_to_godot_shaders`"
+msgid ":ref:`doc_introduction_to_editor_development`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:173
-msgid ":ref:`doc_advanced_postprocessing`"
+msgid ":ref:`doc_editor_style_guide`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:174
+msgid ":ref:`doc_common_engine_methods_and_macros`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:175
-msgid "Shading Reference:"
+msgid ":ref:`doc_vulkan_validation_layers`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:178
-msgid ":ref:`doc_shading_language`"
+#: ../../docs/about/docs_changelog.rst:176
+msgid ":ref:`doc_gdscript_grammar`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:179
-msgid ":ref:`doc_spatial_shader`"
+#: ../../docs/about/docs_changelog.rst:177
+msgid "Configuring an IDE: :ref:`doc_configuring_an_ide_code_blocks`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:180
-msgid ":ref:`doc_canvas_item_shader`"
+#: ../../docs/about/docs_changelog.rst:182
+msgid ":ref:`doc_default_key_mapping`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:181
-msgid ":ref:`doc_particle_shader`"
+#: ../../docs/about/docs_changelog.rst:183
+msgid ":ref:`doc_using_the_web_editor`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:186
-msgid ":ref:`doc_making_main_screen_plugins`"
+msgid "Export"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:187
-msgid ":ref:`doc_spatial_gizmo_plugins`"
+#: ../../docs/about/docs_changelog.rst:188
+msgid ":ref:`doc_exporting_for_dedicated_servers`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:190
+#: ../../docs/about/docs_changelog.rst:191
+msgid "Input"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:193
+msgid ":ref:`doc_controllers_gamepads_joysticks`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:196
+#: ../../docs/about/docs_changelog.rst:252
+msgid "Math"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:198
+msgid ":ref:`doc_random_number_generation`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:201
+#: ../../docs/about/docs_changelog.rst:402
 msgid "Platform-specific"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:192
-msgid ":ref:`doc_customizing_html5_shell`"
+#: ../../docs/about/docs_changelog.rst:203
+msgid ":ref:`doc_plugins_for_ios`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:197
-msgid ":ref:`doc_thread_safe_apis`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:202
-msgid ":ref:`doc_making_trees`"
+#: ../../docs/about/docs_changelog.rst:204
+msgid ":ref:`doc_ios_plugin`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:205
-msgid "Miscellaneous"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:207
-msgid ":ref:`doc_jitter_stutter`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:208
-msgid ":ref:`doc_running_code_in_the_editor`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:209
-msgid ":ref:`doc_change_scenes_manually`"
+msgid ":ref:`doc_html5_shell_classref`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:210
-msgid ":ref:`doc_gles2_gles3_differences`"
+msgid ":ref:`doc_collision_shapes_2d`"
 msgstr ""
 
-#: ../../docs/about/docs_changelog.rst:213
-msgid "Compiling"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:215
-msgid ":ref:`doc_optimizing_for_size`"
+#: ../../docs/about/docs_changelog.rst:211
+msgid ":ref:`doc_collision_shapes_3d`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:216
-msgid ":ref:`doc_compiling_with_script_encryption_key`"
-msgstr ""
-
-#: ../../docs/about/docs_changelog.rst:219
-msgid "Engine development"
+msgid ":ref:`doc_shaders_style_guide`"
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:221
+msgid ":ref:`doc_debugger_panel`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:222
+msgid ":ref:`doc_creating_script_templates`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:223
+msgid ":ref:`doc_evaluating_expressions`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:224
+msgid ":ref:`doc_what_is_gdextension`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:225
+msgid ":ref:`doc_gdscript_warning_system` (split from :ref:`doc_gdscript_static_typing`)"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:228
+msgid "User Interface (UI)"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:230
+msgid ":ref:`doc_control_node_gallery`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:233
+msgid "New pages since version 3.1"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:236
+#: ../../docs/about/docs_changelog.rst:330
+msgid "Project workflow"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:238
+msgid ":ref:`doc_android_custom_build`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:243
+msgid ":ref:`doc_2d_sprite_animation`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:246
+msgid "Audio"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:248
+msgid ":ref:`doc_recording_with_microphone`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:249
+msgid ":ref:`doc_sync_with_audio`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:254
+msgid ":ref:`doc_beziers_and_curves`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:255
+msgid ":ref:`doc_interpolation`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:258
+msgid "Inputs"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:260
+msgid ":ref:`doc_input_examples`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:263
+msgid "Internationalization"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:265
+msgid ":ref:`doc_localization_using_gettext`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:268
+#: ../../docs/about/docs_changelog.rst:382
+msgid "Shading"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:273
+msgid "Your First Shader Series:"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:271
+#: ../../docs/about/docs_changelog.rst:389
+msgid ":ref:`doc_introduction_to_shaders`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:272
+msgid ":ref:`doc_your_first_canvasitem_shader`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:273
+msgid ":ref:`doc_your_first_spatial_shader`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:274
+msgid ":ref:`doc_your_second_spatial_shader`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:275
+msgid ":ref:`doc_visual_shaders`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:278
+msgid "Networking"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:280
+msgid ":ref:`doc_webrtc`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:283
+#: ../../docs/about/docs_changelog.rst:396
+msgid "Plugins"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:285
+msgid ":ref:`doc_android_plugin`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:286
+msgid ":ref:`doc_inspector_plugins`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:287
+msgid ":ref:`doc_visual_shader_plugins`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:290
+#: ../../docs/about/docs_changelog.rst:407
+msgid "Multi-threading"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:292
+msgid ":ref:`doc_using_multiple_threads`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:295
+#: ../../docs/about/docs_changelog.rst:412
+msgid "Creating content"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:302
+msgid "Procedural geometry series:"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:298
+msgid ":ref:`Procedural geometry <toc-procedural_geometry>`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:299
+msgid ":ref:`doc_arraymesh`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:300
+msgid ":ref:`doc_surfacetool`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:301
+msgid ":ref:`doc_meshdatatool`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:302
+msgid ":ref:`doc_immediatemesh`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:305
+msgid "Optimization"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:307
+msgid ":ref:`doc_using_multimesh`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:308
+msgid ":ref:`doc_using_servers`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:311
+msgid "Legal"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:313
+msgid ":ref:`doc_complying_with_licenses`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:316
+msgid "New pages since version 3.0"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:319
+msgid "Step by step"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:321
+msgid ":ref:`doc_signals`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:322
+msgid "Exporting"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:327
+msgid ":ref:`doc_gdscript_static_typing`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:332
+msgid "Best Practices:"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:334
+msgid ":ref:`doc_introduction_best_practices`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:335
+msgid ":ref:`doc_what_are_godot_classes`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:336
+msgid ":ref:`doc_scene_organization`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:337
+msgid ":ref:`doc_scenes_versus_scripts`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:338
+msgid ":ref:`doc_autoloads_versus_internal_nodes`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:339
+msgid ":ref:`doc_node_alternatives`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:340
+msgid ":ref:`doc_godot_interfaces`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:341
+msgid ":ref:`doc_godot_notifications`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:342
+msgid ":ref:`doc_data_preferences`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:343
+msgid ":ref:`doc_logic_preferences`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:348
+msgid ":ref:`doc_2d_lights_and_shadows`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:349
+msgid ":ref:`doc_2d_meshes`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:354
+msgid ":ref:`doc_csg_tools`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:355
+msgid ":ref:`doc_animating_thousands_of_fish`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:356
+msgid ":ref:`doc_controlling_thousands_of_fish`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:361
+msgid ":ref:`doc_ragdoll_system`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:362
+msgid ":ref:`doc_soft_body`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:367
+msgid ":ref:`doc_2d_skeletons`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:368
+msgid ":ref:`doc_animation_tree`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:371
+msgid "GUI"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:373
+msgid ":ref:`doc_gui_containers`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:376
+msgid "Viewports"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:378
+msgid ":ref:`doc_viewport_as_texture`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:379
+msgid ":ref:`doc_custom_postprocessing`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:384
+msgid ":ref:`doc_converting_glsl_to_godot_shaders`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:385
+msgid ":ref:`doc_advanced_postprocessing`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:387
+msgid "Shading Reference:"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:390
+msgid ":ref:`doc_shading_language`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:391
+msgid ":ref:`doc_spatial_shader`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:392
+msgid ":ref:`doc_canvas_item_shader`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:393
+msgid ":ref:`doc_particle_shader`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:398
+msgid ":ref:`doc_making_main_screen_plugins`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:399
+msgid ":ref:`doc_3d_gizmo_plugins`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:404
+msgid ":ref:`doc_customizing_html5_shell`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:409
+msgid ":ref:`doc_thread_safe_apis`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:414
+msgid ":ref:`doc_making_trees`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:417
+msgid "Miscellaneous"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:419
+msgid ":ref:`doc_jitter_stutter`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:420
+msgid ":ref:`doc_running_code_in_the_editor`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:421
+msgid ":ref:`doc_change_scenes_manually`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:424
+msgid "Compiling"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:426
+msgid ":ref:`doc_optimizing_for_size`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:427
+msgid ":ref:`doc_compiling_with_script_encryption_key`"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:430
+msgid "Engine development"
+msgstr ""
+
+#: ../../docs/about/docs_changelog.rst:432
 msgid ":ref:`doc_binding_to_external_libraries`"
 msgstr ""
 

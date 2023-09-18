@@ -1,0 +1,81 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:4
+msgid "Using NavigationRegions"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:6
+msgid "NavigationRegions are the visual Node representation of a ``region`` of the navigation ``map`` on the NavigationServer. Each NavigationRegion node holds a resource for the navigationmesh data."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:9
+msgid "Both 2D and 3D version are available as :ref:`NavigationRegion2D<class_NavigationRegion2D>` and :ref:`NavigationRegion3D<class_NavigationRegion3D>` respectively."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:12
+msgid "Individual NavigationRegions upload their 2D NavigationPolygon or 3D NavigationMesh resource data to the NavigationServer. The NavigationServer map turns this information into a combined navigation map for pathfinding."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:15
+msgid "To create a navigation region using the SceneTree add a ``NavigationRegion2D`` or ``NavigationRegion3D`` node to the scene. All regions require a navigationmesh resource to function. See :ref:`doc_navigation_using_navigationmeshes` to learn how to create and apply navigationmeshes."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:18
+msgid "NavigationRegions will automatically push ``global_transform`` changes to the region on the NavigationServer which makes them suitable for moving platforms. The NavigationServer will attempt to connect navmeshes of individual regions when they are close enough. For more detail see :ref:`doc_navigation_connecting_navmesh`. To connect NavigationRegions over arbitrary distances see :ref:`doc_navigation_using_navigationlinks` to learn how to create and use ``NavigationLinks``."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:24
+msgid "While changing the transform of a NavigationRegion node does update the region position on the NavigationServer changing the scale does not. A navigationmesh resource has no scale and needs to be fully updated when source geometry changes scale."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:28
+msgid "Regions can be enabled / disabled and if disabled will not contribute to future pathfinding queries."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:32
+msgid "Existing paths will not be automatically updated when a region gets enabled / disabled."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:35
+msgid "Creating new navigation regions"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:37
+msgid "New NavigationRegion nodes will automatically register to the default world navigation map for their 2D/3D dimension."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:39
+msgid "The region RID can then be obtained from NavigationRegion Nodes with ``get_region_rid()``."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:48
+msgid "New regions can also be created with the NavigationServer API and added to any existing map."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:50
+msgid "If regions are created with the NavigationServer API directly they need to be assigned a navigation map manually."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationregions.rst:72
+msgid "NavigationRegions can only be assigned to a single NavigationMap. If an existing region is assigned to a new map it will leave the old map."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

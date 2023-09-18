@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,23 +33,87 @@ msgid "Godot offers a more elegant approach for PC distribution when using the e
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:22
-msgid "Requirements"
+msgid "Code signing"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_windows.rst:24
-msgid "To enable code signing, you must have the ``Windows 10 SDK`` (on Windows) or `osslsigncode <https://github.com/mtrojnar/osslsigncode>`__ (on any other OS) installed."
+msgid "Godot is capable of automatic code signing on export. To do this you must have the ``Windows SDK`` (on Windows) or `osslsigncode <https://github.com/mtrojnar/osslsigncode>`__ (on any other OS) installed. You will also need a package signing certificate, information on creating one can be found `here <https://docs.microsoft.com/en-us/windows/win32/appxpkg/how-to-create-a-package-signing-certificate?redirectedfrom=MSDN>`__."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:25
-msgid "Download the Godot export templates. Use the Godot menu: ``Editor > Manage Export Templates``."
-msgstr ""
-
-#: ../../docs/tutorials/export/exporting_for_windows.rst:29
+#: ../../docs/tutorials/export/exporting_for_windows.rst:31
 msgid "If you export for Windows with embedded PCK files, you will not be able to sign the program as it will break."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_for_windows.rst:32
+#: ../../docs/tutorials/export/exporting_for_windows.rst:34
 msgid "On Windows, PCK embedding is also known to cause false positives in antivirus programs. Therefore, it's recommended to avoid using it unless you're distributing your project via Steam as it bypasses code signing and antivirus checks."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:40
+msgid "Setup"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:42
+msgid "Settings need to be changed in two places. First, in the editor settings, under **Export > Windows**. Click on the folder next to the ``Sign Tool`` setting, if you're using Windows navigate to and select ``SignTool.exe``, if you're on a different OS select ``osslsigncode``."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:49
+msgid "The second location is the Windows export preset, which can be found in **Project > Export...**. Add a windows desktop preset if you haven't already. Under options there is a code signing category."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:55
+msgid "``Enabled`` must be set to true, and ``Identity`` must be set to the signing certificate. The other settings can be adjusted as needed. Once this is Done Godot will sign your project on export."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:60
+msgid "Environment variables"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:62
+msgid "You can use the following environment variables to set export options outside of the editor. During the export process, these override the values that you set in the export menu."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:66
+msgid "Windows export environment variables"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:69
+msgid "Export option"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:70
+msgid "Environment variable"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:71
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:72
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:73
+msgid "Options / Codesign / Identity Type"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:74
+msgid "GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:75
+msgid "Options / Codesign / Identity"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:76
+msgid "GODOT_WINDOWS_CODESIGN_IDENTITY"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:77
+msgid "Options / Codesign / Password"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_for_windows.rst:78
+msgid "GODOT_WINDOWS_CODESIGN_PASSWORD"
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,7 @@ msgid "To do this, one must expose data and then rely on a parent context to ini
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:52
-msgid "Connect to a signal. Extremely safe, but should be used only to \"respond\" to behavior, not start it. Note that signal names are usually past-tense verbs like \"entered\", \"skill_activated\", or \"item_collected\"."
+msgid "Connect to a signal. Extremely safe, but should be used only to \"respond\" to behavior, not start it. By convention, signal names are usually past-tense verbs like \"entered\", \"skill_activated\", or \"item_collected\"."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:73
@@ -69,7 +69,7 @@ msgid "Call a method. Used to start behavior."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:92
-msgid "Initialize a :ref:`FuncRef <class_FuncRef>` property. Safer than a method as ownership of the method is unnecessary. Used to start behavior."
+msgid "Initialize a :ref:`Callable <class_Callable>` property. Safer than a method as ownership of the method is unnecessary. Used to start behavior."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:112
@@ -97,7 +97,7 @@ msgid "One should favor keeping data in-house (internal to a scene) though as pl
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:218
-msgid "To avoid creating and maintaining such documentation, one converts the dependent node (\"child\" above) into a tool script that implements :ref:`_get_configuration_warning() <class_Node_method__get_configuration_warning>`. Returning a non-empty string from it will make the Scene dock generate a warning icon with the string as a tooltip by the node. This is the same icon that appears for nodes such as the :ref:`Area2D <class_Area2D>` node when it has no child :ref:`CollisionShape2D <class_CollisionShape2D>` nodes defined. The editor then self-documents the scene through the script code. No content duplication via documentation is necessary."
+msgid "To avoid creating and maintaining such documentation, one converts the dependent node (\"child\" above) into a tool script that implements ``_get_configuration_warnings()``. Returning a non-empty PackedStringArray from it will make the Scene dock generate a warning icon with the string(s) as a tooltip by the node. This is the same icon that appears for nodes such as the :ref:`Area2D <class_Area2D>` node when it has no child :ref:`CollisionShape2D <class_CollisionShape2D>` nodes defined. The editor then self-documents the scene through the script code. No content duplication via documentation is necessary."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:229
@@ -105,7 +105,7 @@ msgid "A GUI like this can better inform project users of critical information a
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:234
-msgid "So, why do all this complex switcharoo work? Well, because scenes operate best when they operate alone. If unable to work alone, then working with others anonymously (with minimal hard dependencies, i.e. loose coupling) is the next best thing. Inevitably, changes may need to be made to a class and if these changes cause it to interact with other scenes in unforeseen ways, then things will start to break down. The whole point of all this indirection is to avoid ending up in a situation where changing one class results in adversely effecting other classes."
+msgid "So, why does all this complex switcharoo work? Well, because scenes operate best when they operate alone. If unable to work alone, then working with others anonymously (with minimal hard dependencies, i.e. loose coupling) is the next best thing. Inevitably, changes may need to be made to a class and if these changes cause it to interact with other scenes in unforeseen ways, then things will start to break down. The whole point of all this indirection is to avoid ending up in a situation where changing one class results in adversely effecting other classes dependent on it."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:243
@@ -154,7 +154,7 @@ msgid "Then one has their actual in-game \"World\" (a 2D or 3D one). This can be
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:277
-msgid "Node2D/Spatial \"World\" (game_world.gd)"
+msgid "Node2D/Node3D \"World\" (game_world.gd)"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:278
@@ -186,7 +186,7 @@ msgid "... then one should create an :ref:`autoload 'singleton' node <doc_single
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:295
-msgid "For smaller games, a simpler alternative with less control would be to have a \"Game\" singleton that simply calls the :ref:`SceneTree.change_scene() <class_SceneTree_method_change_scene>` method to swap out the main scene's content. This structure more or less keeps the \"World\" as the main game node."
+msgid "For smaller games, a simpler alternative with less control would be to have a \"Game\" singleton that simply calls the :ref:`SceneTree.change_scene_to_file() <class_SceneTree_method_change_scene_to_file>` method to swap out the main scene's content. This structure more or less keeps the \"World\" as the main game node."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:301
@@ -202,7 +202,7 @@ msgid "Each subsystem within one's game should have its own section within the S
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:320
-msgid "In some cases, one needs these separated nodes to *also* position themselves relative to each other. One can use the :ref:`RemoteTransform <class_RemoteTransform>` / :ref:`RemoteTransform2D <class_RemoteTransform2D>` nodes for this purpose. They will allow a target node to conditionally inherit selected transform elements from the Remote\\* node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of the following:"
+msgid "In some cases, one needs these separated nodes to *also* position themselves relative to each other. One can use the :ref:`RemoteTransform <class_RemoteTransform3D>` / :ref:`RemoteTransform2D <class_RemoteTransform2D>` nodes for this purpose. They will allow a target node to conditionally inherit selected transform elements from the Remote\\* node. To assign the ``target`` :ref:`NodePath <class_NodePath>`, use one of the following:"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:328
@@ -286,7 +286,7 @@ msgid "The **declarative** solution: place a :ref:`Node <class_Node>` in between
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:373
-msgid "The **imperative** solution: Use the ``set_as_toplevel`` setter for the :ref:`CanvasItem <class_CanvasItem_method_set_as_toplevel>` or :ref:`Spatial <class_Spatial_method_set_as_toplevel>` node. This will make the node ignore its inherited transform."
+msgid "The **imperative** solution: Use the ``top_level`` property for the :ref:`CanvasItem <class_CanvasItem_property_top_level>` or :ref:`Node3D <class_Node3D_property_top_level>` node. This will make the node ignore its inherited transform."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/scene_organization.rst:380

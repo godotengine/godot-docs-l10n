@@ -1,0 +1,234 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:4
+msgid "3D Navigation Overview"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:6
+msgid "Godot provides multiple objects, classes and servers to facilitate grid-based or mesh-based navigation and pathfinding for 2D and 3D games. The following section provides a quick overview over all available navigation related objects in Godot for 3D scenes and their primary use."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:9
+msgid "Godot provides the following objects and classes for 3D navigation:"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:15
+msgid ":ref:`Astar3D<class_Astar3D>`"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:12
+msgid "``Astar3D`` objects provide an option to find the shortest path in a graph of weighted **points**."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:14
+msgid "The AStar3D class is best suited for cellbased 3D gameplay that does not require actors to reach any possible position within an area but only predefined, distinct positions."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:40
+msgid ":ref:`NavigationServer3D<class_NavigationServer3D>`"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:18
+msgid "``NavigationServer3D`` provides a powerful server API to find the shortest path between two positions on a area defined by a navigation mesh."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:21
+msgid "The NavigationServer is best suited for 3D realtime gameplay that does require actors to reach any possible position within an navmesh defined area. Meshbased navigation scales well with large gameworlds as a large area can often be defined with a single polygon when it would require many, many grid cells."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:25
+msgid "The NavigationServer holds different navigation maps that each consist of regions that hold navigation mesh data. Agents can be placed on a map for avoidance calculation. RIDs are used to reference the internal maps, regions and agents when communicating with the server."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:40
+msgid "The following NavigationServer RID types are available."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:32
+msgid "NavMap RID"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:31
+msgid "Reference to a specific navigation map that holds regions and agents. The map will attempt to join changed navigation meshes of regions by proximity. The map will synchronize regions and agents each physics frame."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:35
+msgid "NavRegion RID"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:35
+msgid "Reference to a specific navigation region that can hold navigation mesh data. The region can be enabled / disabled or the use restricted with a navigationlayer bitmask."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:37
+msgid "NavLink RID"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:38
+msgid "Reference to a specific navigation link that connects two navigation mesh positions over arbitrary distances."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:40
+msgid "NavAgent RID"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:40
+msgid "Reference to a specific avoidance agent with a radius value use solely in avoidance."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:42
+msgid "The following SceneTree Nodes are available as helpers to work with the NavigationServer3D API."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:49
+msgid ":ref:`NavigationRegion3D<class_NavigationRegion3D>` Node"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:45
+msgid "A Node that holds a Navigation Mesh resource that defines a navigation mesh for the NavigationServer3D."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:47
+msgid "The region can be enabled / disabled."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:48
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:56
+msgid "The use in pathfinding can be further restricted through the navigationlayers bitmask."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:49
+msgid "Regions can join their navigation meshes by proximity for a combined navigation mesh."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:58
+msgid ":ref:`NavigationLink3D<class_NavigationLink3D>` Node"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:52
+msgid "A Node that connects two positions on navigation mesh over arbitrary distances for pathfinding."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:54
+msgid "The link can be enabled / disabled."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:55
+msgid "The link can be made one-way or bidirectional."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:58
+msgid "Links tell the pathfinding that a connection exists and at what cost. The actual agent handling and movement needs to happen in custom scripts."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:62
+msgid ":ref:`NavigationAgent3D<class_NavigationAgent3D>` Node"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:61
+msgid "An optional helper Node to facilitate common NavigationServer3D API calls for pathfinding and avoidance for a Node3D inheriting parent Node."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:68
+msgid ":ref:`NavigationObstacle3D<class_NavigationObstacle3D>` Node"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:65
+msgid "A Node that acts as an agent with avoidance radius, to work it needs to be added under a Node3D inheriting parent Node. Obstacles are intended as a last resort option for constantly moving objects that cannot be re(baked) to a navigation mesh efficiently. This node also only works if RVO processing is being used."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:70
+msgid "The 3D navigation meshes are defined with the following resources:"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:78
+msgid ":ref:`NavigationMesh<class_NavigationMesh>` Resource"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:73
+msgid "A resource that holds 3D navigation mesh data and provides 3D geometry baking options to define navigation areas inside the Editor as well as at runtime."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:76
+msgid "The NavigationRegion3D Node uses this resource to define its navigation area."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:77
+msgid "The NavigationServer3D uses this resource to update navmesh of individual regions."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:78
+msgid "The GridMap Editor uses this resource when specific navigation meshes are defined for each gridcell."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:82
+msgid "You can see how 3D navigation works in action using the `3D Navigation demo project <https://github.com/godotengine/godot-demo-projects/tree/master/3d/navigation>`__."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:86
+msgid "Setup for 3D scene"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:88
+msgid "The following steps show how to setup a minimum viable navigation in 3D that uses the NavigationServer3D and a NavigationAgent3D for path movement."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:91
+msgid "Add a NavigationRegion3D Node to the scene."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:93
+msgid "Click on the region node and add a new :ref:`NavigationMesh<class_NavigationMesh>` Resource to the region node."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:98
+msgid "Add a new MeshInstance3D node as a child of the region node."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:100
+msgid "Select the MeshInstance3D node and add a new PlaneMesh and increase the xy size to 10."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:102
+msgid "Select the region node again and press the \"Bake Navmesh\" button on the top bar."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:106
+msgid "Now a transparent navigation mesh appeared that hovers some distance on top the planemesh."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:110
+msgid "Add a CharacterBody3D node in the scene with a basic collision shape and some mesh for visuals."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:112
+msgid "Add a NavigationAgent3D node below the character node."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:116
+msgid "Add a script to the CharacterBody3D node with the following content. We make sure to set a movement target after the scene has fully loaded and the NavigationServer had time to sync. Also, add a Camera3D and some light and environment to see something."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_introduction_3d.rst:219
+msgid "On the first frame the NavigationServer map has not synchronized region data and any path query will return empty. Await one frame to pause scripts until the NavigationServer had time to sync."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

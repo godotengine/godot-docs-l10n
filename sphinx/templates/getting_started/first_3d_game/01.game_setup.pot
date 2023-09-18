@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,272 +16,127 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:4
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:6
 msgid "Setting up the game area"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:6
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:8
 msgid "In this first part, we're going to set up the game area. Let's get started by importing the start assets and setting up the game scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:9
-msgid "We've prepared a Godot project with the 3D models and sounds we'll use for this tutorial, linked in the index page. If you haven't done so yet, you can download the archive here: `Squash the Creeps assets <https://github.com/GDQuest/godot-3d-dodge-the-creeps/releases/tag/1.0.0>`__."
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:11
+msgid "We've prepared a Godot project with the 3D models and sounds we'll use for this tutorial, linked in the index page. If you haven't done so yet, you can download the archive here: `Squash the Creeps assets <https://github.com/godotengine/godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:14
-msgid "Once you downloaded it, extract the .zip archive on your computer. Open the Godot project manager and click the *Import* button."
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:16
+msgid "Once you downloaded it, extract the .zip archive on your computer. Open the Godot Project Manager and click the *Import* button."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:17
-msgid "|image1|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:148
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:148
-msgid "image1"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:19
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:21
 msgid "In the import popup, enter the full path to the freshly created directory ``squash_the_creeps_start/``. You can click the *Browse* button on the right to open a file browser and navigate to the ``project.godot`` file the folder contains."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:24
-msgid "|image2|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:149
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:149
-msgid "image2"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:26
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:28
 msgid "Click *Import & Edit* to open the project in the editor."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:28
-msgid "|image3|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:150
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:150
-msgid "image3"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:30
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:32
 msgid "The start project contains an icon and two folders: ``art/`` and ``fonts/``. There, you will find the art assets and music we'll use in the game."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:33
-msgid "|image4|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:151
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:151
-msgid "image4"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:35
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:37
 msgid "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that belong to these models, and a music track."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:39
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:41
 msgid "Setting up the playable area"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:41
-msgid "We're going to create our main scene with a plain *Node* as its root. In the *Scene* dock, click the *Add Node* button represented by a \"+\" icon in the top-left and double-click on *Node*. Name the node \"Main\". Alternatively, to add a node to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` on macOS)."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:46
-msgid "|image5|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:152
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:152
-msgid "image5"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:48
-msgid "Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` on macOS)."
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:43
+msgid "We're going to create our main scene with a plain :ref:`Node <class_Node>` as its root. In the *Scene* dock, click the *Add Child Node* button represented by a \"+\" icon in the top-left and double-click on *Node*. Name the node ``Main``. An alternate method to rename the node is to right-click on *Node* and choose *Rename* (or :kbd:`F2`). Alternatively, to add a node to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` on macOS)."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:50
-msgid "We'll start by adding a floor that'll prevent the characters from falling. To create static colliders like the floor, walls, or ceilings, you can use *StaticBody* nodes. They require *CollisionShape* child nodes to define the collision area. With the *Main* node selected, add a *StaticBody* node, then a *CollisionShape*. Rename the *StaticBody* as *Ground*."
+msgid "Save the scene as ``main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` on macOS)."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:56
-msgid "|image6|"
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:52
+msgid "We'll start by adding a floor that'll prevent the characters from falling. To create static colliders like the floor, walls, or ceilings, you can use :ref:`StaticBody3D <class_StaticBody3D>` nodes. They require :ref:`CollisionShape3D <class_CollisionShape3D>` child nodes to define the collision area. With the ``Main`` node selected, add a :ref:`StaticBody3D <class_StaticBody3D>` node, then a :ref:`CollisionShape3D <class_CollisionShape3D>`. Rename the :ref:`StaticBody3D <class_StaticBody3D>` to ``Ground``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:153
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:153
-msgid "image6"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:58
-msgid "A warning sign next to the *CollisionShape* appears because we haven't defined its shape. If you click the icon, a popup appears to give you more information."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:61
-msgid "|image7|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:154
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:154
-msgid "image7"
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:59
+msgid "Your scene tree should look like this"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:63
-msgid "To create a shape, with the *CollisionShape* selected, head to the *Inspector* and click the *[empty]* field next to the *Shape* property. Create a new *Box Shape*."
+msgid "A warning sign next to the :ref:`CollisionShape3D <class_CollisionShape3D>` appears because we haven't defined its shape. If you click the icon, a popup appears to give you more information."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:67
-msgid "|image8|"
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:68
+msgid "To create a shape, select the :ref:`CollisionShape3D <class_CollisionShape3D>` node, head to the *Inspector* and click the *<empty>* field next to the *Shape* property. Create a new *BoxShape3D*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:155
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:155
-msgid "image8"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:69
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:73
 msgid "The box shape is perfect for flat ground and walls. Its thickness makes it reliable to block even fast-moving objects."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:72
-msgid "A box's wireframe appears in the viewport with three orange dots. You can click and drag these to edit the shape's extents interactively. We can also precisely set the size in the inspector. Click on the *BoxShape* to expand the resource. Set its *Extents* to ``30`` on the X axis, ``1`` for the Y axis, and ``30`` for the Z axis."
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:76
+msgid "A box's wireframe appears in the viewport with three orange dots. You can click and drag these to edit the shape's extents interactively. We can also precisely set the size in the inspector. Click on the :ref:`BoxShape3D <class_BoxShape3D>` to expand the resource. Set its *Size* to ``60`` on the X axis, ``2`` for the Y axis, and ``60`` for the Z axis."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:78
-msgid "|image9|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:156
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:156
-msgid "image9"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:82
-msgid "In 3D, translation and size units are in meters. The box's total size is twice its extents: ``60`` by ``60`` meters on the ground plane and ``2`` units tall. The ground plane is defined by the X and Z axes, while the Y axis represents the height."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:87
-msgid "Collision shapes are invisible. We need to add a visual floor that goes along with it. Select the *Ground* node and add a *MeshInstance* as its child."
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:85
+msgid "Collision shapes are invisible. We need to add a visual floor that goes along with it. Select the ``Ground`` node and add a :ref:`MeshInstance3D <class_MeshInstance3D>` as its child."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:90
-msgid "|image10|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:157
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:157
-msgid "image10"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:92
-msgid "In the *Inspector*, click on the field next to *Mesh* and create a *CubeMesh* resource to create a visible cube."
+msgid "In the *Inspector*, click on the field next to *Mesh* and create a :ref:`BoxMesh <class_BoxMesh>` resource to create a visible box."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:95
-msgid "|image11|"
+msgid "Once again, it's too small by default. Click the box icon to expand the resource and set its *Size* to ``60``, ``2``, and ``60``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:158
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:158
-msgid "image11"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:97
-msgid "Once again, it's too small by default. Click the cube icon to expand the resource and set its *Size* to ``60``, ``2``, and ``60``. As the cube resource works with a size rather than extents, we need to use these values so it matches our collision shape."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:102
-msgid "|image12|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:159
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:159
-msgid "image12"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:104
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:100
 msgid "You should see a wide grey slab that covers the grid and blue and red axes in the viewport."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:107
-msgid "We're going to move the ground down so we can see the floor grid. Select the *Ground* node, hold the :kbd:`Ctrl` key down to turn on grid snapping (:kbd:`Cmd` on macOS), and click and drag down on the Y axis. It's the green arrow in the move gizmo."
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:103
+msgid "We're going to move the ground down so we can see the floor grid. Select the ``Ground`` node, hold the :kbd:`Ctrl` key down to turn on grid snapping, and click and drag down on the Y axis. It's the green arrow in the move gizmo."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:111
-msgid "|image13|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:160
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:160
-msgid "image13"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:115
 msgid "If you can't see the 3D object manipulator like on the image above, ensure the *Select Mode* is active in the toolbar above the view."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:118
-msgid "|image14|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:161
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:161
-msgid "image14"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:120
-msgid "Move the ground down ``1`` meter. A label in the bottom-left corner of the viewport tells you how much you're translating the node."
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:116
+msgid "Move the ground down ``1`` meter, in order to have a visible editor grid. A label in the bottom-left corner of the viewport tells you how much you're translating the node."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:123
-msgid "|image15|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:162
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:162
-msgid "image15"
+msgid "Moving the *Ground* node down moves both children along with it. Ensure you move the *Ground* node, **not** the *MeshInstance3D* or the *CollisionShape3D*."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:127
-msgid "Moving the *Ground* node down moves both children along with it. Ensure you move the *Ground* node, **not** the *MeshInstance* or the *CollisionShape*."
+msgid "Ultimately, ``Ground``'s transform.position.y should be -1"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:131
-msgid "Let's add a directional light so our scene isn't all grey. Select the *Main* node and add a *DirectionalLight* as a child of it. We need to move it and rotate it. Move it up by clicking and dragging on the manipulator's green arrow and click and drag on the red arc to rotate it around the X axis, until the ground is lit."
+msgid "Let's add a directional light so our scene isn't all grey. Select the ``Main`` node and add a child node :ref:`DirectionalLight3D <class_DirectionalLight3D>`."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:137
-msgid "In the *Inspector*, turn on *Shadow -> Enabled* by clicking the checkbox."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:139
-msgid "|image16|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:163
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:163
-msgid "image16"
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:136
+msgid "We need to move and rotate the :ref:`DirectionalLight3D <class_DirectionalLight3D>` node. Move it up by clicking and dragging on the manipulator's green arrow and click and drag on the red arc to rotate it around the X axis, until the ground is lit."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:141
-msgid "At this point, your project should look like this."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:143
-msgid "|image17|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:164
-#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:164
-msgid "image17"
+msgid "In the *Inspector*, turn on *Shadow -> Enabled* by clicking the checkbox."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/01.game_setup.rst:145
+msgid "At this point, your project should look like this."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/01.game_setup.rst:149
 msgid "That's our starting point. In the next part, we will work on the player scene and base movement."
 msgstr ""
 

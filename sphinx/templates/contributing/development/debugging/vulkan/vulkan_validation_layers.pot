@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:4
+msgid "Validation layers"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:6
+msgid "Validation layers enable developers to verify their application's correct use of the Vulkan API. Validation layers can be enabled in both debug and release builds, including in exported projects."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:12
+msgid "Enabling validation layers has a performance impact, so only enable them when you actually need the output to debug the application."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:16
+msgid "Windows"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:18
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:44
+msgid "Install the Vulkan SDK `<https://vulkan.lunarg.com/sdk/home>`__, which contains validation layers as part of its default installation. No need to enable any optional features in the installer; installing the core Vulkan SDK suffices. You don't need to reboot after installing the SDK, but you may need to close and reopen your current terminal."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:24
+msgid "After installing the Vulkan SDK, run Godot with the ``--gpu-validation`` :ref:`command line argument <doc_command_line_tutorial>`. You can also specify ``--gpu-abort`` which will make Godot quit as soon as a validation error happens. This can prevent your system from freezing if a validation error occurs."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:30
+msgid "macOS"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:34
+msgid "Official Godot macOS builds do **not** support validation layers, as these are statically linked against the Vulkan SDK. Dynamic linking must be used instead."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:38
+msgid "In practice, this means that using validation layers on macOS **requires** you to use a Godot build compiled with the ``use_volk=yes`` SCons option. :ref:`doc_compiling_for_macos`. If testing validation layers on an exported project, you must recompile the export template and specify it as a custom export template in your project's macOS export preset."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:50
+msgid "After installing the Vulkan SDK, run a Godot binary that was compiled with ``use_volk=yes`` SCons option. Specify the ``--gpu-validation`` :ref:`command line argument <doc_command_line_tutorial>`. You can also specify ``--gpu-abort`` which will make Godot quit as soon as a validation error happens. This can prevent your system from freezing if a validation error occurs."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:58
+msgid "Linux, \\*BSD"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:60
+msgid "Install Vulkan validation layers from your distribution's repositories:"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:64
+msgid "Alpine Linux"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:70
+msgid "Arch Linux"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:76
+msgid "Debian/Ubuntu"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:82
+msgid "Fedora"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:88
+msgid "FreeBSD"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:94
+msgid "Gentoo"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:100
+msgid "Mageia"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:106
+msgid "OpenBSD"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:112
+msgid "openSUSE"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:118
+msgid "Solus"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:124
+msgid "You don't need to reboot after installing the validation layers, but you may need to close and reopen your current terminal."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:127
+msgid "After installing the package, run Godot with the ``--gpu-validation`` :ref:`command line argument <doc_command_line_tutorial>`. You can also specify ``--gpu-abort`` which will make Godot quit as soon as a validation error happens. This can prevent your system from freezing if a validation error occurs."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:135
+msgid "Android"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:137
+msgid "After enabling validation layers on Android, a developer can see errors and warning messages in the ``adb logcat`` output."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:141
+msgid "iOS"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:143
+msgid "Validation layers are currently **not** supported on iOS."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:146
+msgid "Web"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:148
+msgid "Validation layers are **not** supported on the web platform, as there is no support for Vulkan there."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:152
+msgid "Enabling validation layers"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:155
+msgid "Build validation layers from official sources"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:157
+msgid "To build Android libraries, follow the instructions on `Khronos' repository  <https://github.com/KhronosGroup/Vulkan-ValidationLayers/blob/master/BUILD.md#building-on-android>`__. After a successful build, the libraries will be located in ``Vulkan-ValidationLayers/build-android/libs``."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:162
+msgid "Copy libraries"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:164
+msgid "Copy libraries from ``Vulkan-ValidationLayers/build-android/libs`` to ``godot/platform/android/java/app/libs/debug/vulkan_validation_layers``."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:167
+msgid "Your Godot source directory tree should look like on the example below::"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:182
+msgid "If the subdirectory ``libs/debug/vulkan_validation_layers`` doesn't exist, create it."
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:185
+msgid "Compile and run the Android app"
+msgstr ""
+
+#: ../../docs/contributing/development/debugging/vulkan/vulkan_validation_layers.rst:187
+msgid "Linked validation layers are automatically loaded and enabled in Android debug builds. You can use Godot's :ref:`doc_one-click_deploy` feature to quickly test your project with the validation layers enabled."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

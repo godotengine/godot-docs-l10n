@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,47 +117,51 @@ msgid "Tree order"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/scene_tree.rst:108
-msgid "Most node operations in Godot, such as drawing 2D, processing, or getting notifications are done in tree order. This means that parents and siblings with a lower rank in the tree order will get notified before the current node."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/scene_tree.rst:116
-msgid "\"Becoming active\" by entering the *Scene Tree*"
+msgid "Most node operations in Godot, such as drawing 2D, processing, or getting notifications are done in tree order, or top to bottom. For example, the top node in a scene has its ``_ready()`` function called first, then the node below it has its function called, then the node below that and so on. However, children of a node will get called before their parent, also in top to bottom order. So the top child node of the top node will get its ``_ready()`` function called first."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/scene_tree.rst:118
-msgid "A scene is loaded from disk or created by scripting."
+msgid "This can also be overridden using the ``process_priority`` node property. Nodes with a lower number are called first. For example, nodes with the priorities \"0, 1, 2, 3\" would be called in that order (from left to right)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/scene_tree.rst:119
-msgid "The root node of that scene (only one root, remember?) is added as either a child of the \"root\" Viewport (from SceneTree), or to any child or grandchild of it."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/scene_tree.rst:122
-msgid "Every node of the newly added scene, will receive the \"enter_tree\" notification ( _enter_tree() callback in GDScript) in top-to-bottom order."
+#: ../../docs/tutorials/scripting/scene_tree.rst:123
+msgid "\"Becoming active\" by entering the *Scene Tree*"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/scene_tree.rst:125
-msgid "An extra notification, \"ready\" ( _ready() callback in GDScript) is provided for convenience, when a node and all its children are inside the active scene."
+msgid "A scene is loaded from disk or created by scripting."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/scene_tree.rst:128
-msgid "When a scene (or part of it) is removed, they receive the \"exit scene\" notification ( _exit_tree() callback in GDScript) in bottom-to-top order"
+#: ../../docs/tutorials/scripting/scene_tree.rst:126
+msgid "The root node of that scene (only one root, remember?) is added as either a child of the \"root\" Viewport (from SceneTree), or to any of its descendants."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/scene_tree.rst:133
-msgid "Changing current scene"
+#: ../../docs/tutorials/scripting/scene_tree.rst:129
+msgid "Every node of the newly added scene, will receive the \"enter_tree\" notification ( ``_enter_tree()`` callback in GDScript) in top-to-bottom order."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/scene_tree.rst:132
+msgid "An extra notification, \"ready\" ( ``_ready()`` callback in GDScript) is provided for convenience, when a node and all its children are inside the active scene."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/scene_tree.rst:135
-msgid "After a scene is loaded, it is often desired to change this scene for another one. The simple way to do this is to use the :ref:`SceneTree.change_scene() <class_SceneTree_method_change_scene>` function:"
+msgid "When a scene (or part of it) is removed, they receive the \"exit scene\" notification ( ``_exit_tree()`` callback in GDScript) in bottom-to-top order"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/scene_tree.rst:153
-msgid "Rather than using file paths, one can also use ready-made :ref:`PackedScene <class_PackedScene>` resources using the equivalent function :ref:`SceneTree.change_scene_to(PackedScene scene) <class_SceneTree_method_change_scene_to>`:"
+#: ../../docs/tutorials/scripting/scene_tree.rst:140
+msgid "Changing current scene"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/scene_tree.rst:174
-msgid "These are quick and useful ways to switch scenes but have the drawback that the game will stall until the new scene is loaded and running. At some point in the development of your game, it may be preferable to create proper loading screens with progress bar, animated indicators or thread (background) loading. This must be done manually using autoloads (see next chapter) and :ref:`doc_background_loading`."
+#: ../../docs/tutorials/scripting/scene_tree.rst:142
+msgid "After a scene is loaded, you may want to change this scene for another one. One way to do this is to use the :ref:`SceneTree.change_scene_to_file() <class_SceneTree_method_change_scene_to_file>` function:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/scene_tree.rst:160
+msgid "Rather than using file paths, one can also use ready-made :ref:`PackedScene <class_PackedScene>` resources using the equivalent function :ref:`SceneTree.change_scene_to_packed(PackedScene scene) <class_SceneTree_method_change_scene_to_packed>`:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/scene_tree.rst:181
+msgid "These are quick and useful ways to switch scenes but have the drawback that the game will stall until the new scene is loaded and running. At some point in the development of your game, it may be preferable to create proper loading screens with progress bar, animated indicators or threaded (background) loading. This must be done manually using :ref:`doc_singletons_autoload` and :ref:`doc_background_loading`."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,215 +16,215 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:4
+#: ../../docs/tutorials/animation/2d_skeletons.rst:6
 msgid "2D skeletons"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:7
+#: ../../docs/tutorials/animation/2d_skeletons.rst:9
 msgid "Introduction"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:9
+#: ../../docs/tutorials/animation/2d_skeletons.rst:11
 msgid "When working with 3D, skeletal deforms are common for characters and creatures and most 3D modelling applications support it. For 2D, as this function is not used as often, it's difficult to find mainstream software aimed for this."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:13
+#: ../../docs/tutorials/animation/2d_skeletons.rst:15
 msgid "One option is to create animations in third-party software such as Spine or Dragonbones. From Godot 3.1 onwards, though, this functionality is supported built-in."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:17
+#: ../../docs/tutorials/animation/2d_skeletons.rst:19
 msgid "Why would you want to do skeletal animations directly in Godot? The answer is that there are many advantages to it:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:20
+#: ../../docs/tutorials/animation/2d_skeletons.rst:22
 msgid "Better integration with the engine, so less hassle importing and editing from an external tool."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:22
+#: ../../docs/tutorials/animation/2d_skeletons.rst:24
 msgid "Ability to control particle systems, shaders, sounds, call scripts, colors, transparency, etc. in animations."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:24
+#: ../../docs/tutorials/animation/2d_skeletons.rst:26
 msgid "The built-in skeletal system in Godot is very efficient and designed for performance."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:27
+#: ../../docs/tutorials/animation/2d_skeletons.rst:29
 msgid "The following tutorial will, then, explain 2D skeletal deformations."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:30
+#: ../../docs/tutorials/animation/2d_skeletons.rst:32
 msgid "Setup"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:34
+#: ../../docs/tutorials/animation/2d_skeletons.rst:36
 msgid "Before starting, we recommend you to go through the :ref:`doc_cutout_animation` tutorial to gain a general understanding of animating within Godot."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:38
+#: ../../docs/tutorials/animation/2d_skeletons.rst:40
 msgid "For this tutorial, we will be using a single image to construct our character. Download it from :download:`gBot_pieces.png <img/gBot_pieces.png>` or save the image below."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:44
+#: ../../docs/tutorials/animation/2d_skeletons.rst:46
 msgid "It is also advised to download the final character image :download:`gBot_complete.png <img/gBot_complete.png>` to have a good reference for putting the different pieces together."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:51
+#: ../../docs/tutorials/animation/2d_skeletons.rst:53
 msgid "Creating the polygons"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:53
-msgid "Create a new scene for your model (if it's going to be an animated character, you may want to use a ``KinematicBody2D``). For ease of use, an empty 2D node is created as a root for the polygons."
+#: ../../docs/tutorials/animation/2d_skeletons.rst:55
+msgid "Create a new scene for your model (if it's going to be an animated character, you may want to use a ``CharacterBody2D``). For ease of use, an empty 2D node is created as a root for the polygons."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:57
+#: ../../docs/tutorials/animation/2d_skeletons.rst:59
 msgid "Begin with a ``Polygon2D`` node. There is no need to place it anywhere in the scene for now, so simply create it like this:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:62
+#: ../../docs/tutorials/animation/2d_skeletons.rst:64
 msgid "Select it and assign the texture with the character pieces you have downloaded before:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:67
+#: ../../docs/tutorials/animation/2d_skeletons.rst:69
 msgid "Drawing a polygon directly is not advised. Instead, open the \"UV\" dialog for the polygon:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:72
+#: ../../docs/tutorials/animation/2d_skeletons.rst:74
 msgid "Head over to the *Points* mode, select the pencil and draw a polygon around the desired piece:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:77
+#: ../../docs/tutorials/animation/2d_skeletons.rst:79
 msgid "Duplicate the polygon node and give it a proper name. Then, enter the \"UV\" dialog again and replace the old polygon with another one in the new desired piece."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:81
+#: ../../docs/tutorials/animation/2d_skeletons.rst:83
 msgid "When you duplicate nodes and the next piece has a similar shape, you can edit the previous polygon instead of drawing a new one."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:84
-msgid "After moving the polygon, remember to update the UV by selecting Edit -> \"Polygon -> UV\" in the Polygon 2D UV Editor."
+#: ../../docs/tutorials/animation/2d_skeletons.rst:86
+msgid "After moving the polygon, remember to update the UV by selecting **Edit > Copy Polygon to UV** in the Polygon 2D UV Editor."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:89
+#: ../../docs/tutorials/animation/2d_skeletons.rst:91
 msgid "Keep doing this until you mapped all pieces."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:93
+#: ../../docs/tutorials/animation/2d_skeletons.rst:95
 msgid "You will notice that pieces for nodes appear in the same layout as they do in the original texture. This is because by default, when you draw a polygon, the UV and points are the same."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:97
+#: ../../docs/tutorials/animation/2d_skeletons.rst:99
 msgid "Rearrange the pieces and build the character. This should be pretty quick. There is no need to change pivots, so don't bother making sure rotation pivots for each piece are right; you can leave them be for now."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:103
+#: ../../docs/tutorials/animation/2d_skeletons.rst:105
 msgid "Ah, the visual order of the pieces is not correct yet, as some are covering wrong pieces. Rearrange the order of the nodes to fix this:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:108
+#: ../../docs/tutorials/animation/2d_skeletons.rst:110
 msgid "And there you go! It was definitely much easier than in the cutout tutorial."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:111
+#: ../../docs/tutorials/animation/2d_skeletons.rst:113
 msgid "Creating the skeleton"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:113
+#: ../../docs/tutorials/animation/2d_skeletons.rst:115
 msgid "Create a ``Skeleton2D`` node as a child of the root node. This will be the base of our skeleton:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:118
+#: ../../docs/tutorials/animation/2d_skeletons.rst:120
 msgid "Create a ``Bone2D`` node as a child of the skeleton. Put it on the hip (usually skeletons start here). The bone will be pointing to the right, but you can ignore this for now."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:124
+#: ../../docs/tutorials/animation/2d_skeletons.rst:126
 msgid "Keep creating bones in hierarchy and naming them accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:128
+#: ../../docs/tutorials/animation/2d_skeletons.rst:130
 msgid "At the end of this chain, there will be a *jaw* node. It is, again, very short and pointing to the right. This is normal for bones without children. The length of *tip* bones can be changed with a property in the inspector:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:134
+#: ../../docs/tutorials/animation/2d_skeletons.rst:136
 msgid "In this case, we don't need to rotate the bone (coincidentally the jaw points right in the sprite), but in case you need to, feel free to do it. Again, this is only really needed for tip bones as nodes with children don't usually need a length or a specific rotation."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:139
+#: ../../docs/tutorials/animation/2d_skeletons.rst:141
 msgid "Keep going and build the whole skeleton:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:143
+#: ../../docs/tutorials/animation/2d_skeletons.rst:145
 msgid "You will notice that all bones raise an annoying warning about a missing rest pose. This means that it's time to set one. Go to the *skeleton* node and create a rest pose. This pose is the default one, you can come back to it anytime you want (which is very handy for animating):"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:150
+#: ../../docs/tutorials/animation/2d_skeletons.rst:152
 msgid "The warnings will go away. If you modify the skeleton (add/remove bones) you will need to set the rest pose again."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:154
+#: ../../docs/tutorials/animation/2d_skeletons.rst:156
 msgid "Deforming the polygons"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:156
+#: ../../docs/tutorials/animation/2d_skeletons.rst:158
 msgid "Select the previously created polygons and assign the skeleton node to their ``Skeleton`` property. This will ensure that they can eventually be deformed by it."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:162
+#: ../../docs/tutorials/animation/2d_skeletons.rst:164
 msgid "Click the property highlighted above and select the skeleton node:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:166
+#: ../../docs/tutorials/animation/2d_skeletons.rst:168
 msgid "Again, open the UV editor for the polygon and go to the *Bones* section."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:170
+#: ../../docs/tutorials/animation/2d_skeletons.rst:172
 msgid "You will not be able to paint weights yet. For this you need to synchronize the list of bones from the skeleton with the polygon. This step is done only once and manually (unless you modify the skeleton by adding/removing/renaming bones). It ensures that your rigging information is kept in the polygon, even if a skeleton node is accidentally lost or the skeleton modified. Push the \"Sync Bones to Polygon\" button to sync the list."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:179
+#: ../../docs/tutorials/animation/2d_skeletons.rst:181
 msgid "The list of bones will automatically appear. By default, your polygon has no weight assigned to any of them. Select the bones you want to assign weight to and paint them:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:185
+#: ../../docs/tutorials/animation/2d_skeletons.rst:187
 msgid "Points in white have a full weight assigned, while points in black are not influenced by the bone. If the same point is painted white for multiple bones, the influence will be distributed amongst them (so usually there is not that much need to use shades in-between unless you want to polish the bending effect)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:193
+#: ../../docs/tutorials/animation/2d_skeletons.rst:195
 msgid "After painting the weights, animating the bones (NOT the polygons!) will have the desired effect of modifying and bending the polygons accordingly. As you only need to animate bones in this approach, work becomes much easier!"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:197
+#: ../../docs/tutorials/animation/2d_skeletons.rst:199
 msgid "But it's not all roses. Trying to animate bones that bend the polygon will often yield unexpected results:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:202
+#: ../../docs/tutorials/animation/2d_skeletons.rst:204
 msgid "This happens because Godot generates internal triangles that connect the points when drawing the polygon. They don't always bend the way you would expect. To solve this, you need to set hints in the geometry to clarify how you expect it to deform."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:208
+#: ../../docs/tutorials/animation/2d_skeletons.rst:210
 msgid "Internal vertices"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:210
+#: ../../docs/tutorials/animation/2d_skeletons.rst:212
 msgid "Open the UV menu for each bone again and go to the *Points* section. Add some internal vertices in the regions where you expect the geometry to bend:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:215
+#: ../../docs/tutorials/animation/2d_skeletons.rst:217
 msgid "Now, go to the *Polygon* section and redraw your own polygons with more detail. Imagine that, as your polygons bend, you need to make sure they deform the least possible, so experiment a bit to find the right setup."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:221
+#: ../../docs/tutorials/animation/2d_skeletons.rst:223
 msgid "Once you start drawing, the original polygon will disappear and you will be free to create your own:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:226
+#: ../../docs/tutorials/animation/2d_skeletons.rst:228
 msgid "This amount of detail is usually fine, though you may want to have more fine-grained control over where triangles go. Experiment by yourself until you get the results you like."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:230
+#: ../../docs/tutorials/animation/2d_skeletons.rst:232
 msgid "**Note:** Don't forget that your newly added internal vertices also need weight painting! Go to the *Bones* section again to assign them to the right bones."
 msgstr ""
 
-#: ../../docs/tutorials/animation/2d_skeletons.rst:233
+#: ../../docs/tutorials/animation/2d_skeletons.rst:235
 msgid "Once you are all set, you will get much better results:"
 msgstr ""
 

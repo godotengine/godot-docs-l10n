@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,198 +21,356 @@ msgid "Particle shaders"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:6
-msgid "Particle shaders are a special type of vertex shader that runs before the object is drawn. They are used for calculating material properties such as color, position, and rotation. They are drawn with any regular material for CanvasItem or Spatial, depending on whether they are 2D or 3D."
+msgid "Particle shaders are a special type of shader that runs before the object is drawn. They are used for calculating material properties such as color, position, and rotation. They are drawn with any regular material for CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:11
-msgid "Particle shaders are unique because they are not used to draw the object itself; they are used to calculate particle properties, which are then used by the CanvasItem of Spatial shader. They contain only a vertex processor function that outputs multiple properties (see built-ins below)."
+msgid "Particle shaders are unique because they are not used to draw the object itself; they are used to calculate particle properties, which are then used by the CanvasItem of Spatial shader. They contain two processor functions: ``start()`` and ``process()``."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:16
-msgid "Particle shaders use a transform feedback shader, which is a special type of vertex shader that runs on its own. It takes in data in a buffer like a regular vertex shader does, but it also outputs to data buffers instead of outputting to the fragment shader for pixel-processing. Because of this, transform feedback shaders can build on themselves each run, unlike other shaders that discard the data they have calculated once they draw to the frame buffer."
+msgid "Unlike other shader types, particle shaders keep the data that was output the previous frame. Therefore, particle shaders can be used for complex effects that take place over multiple frames."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:23
-msgid "Particle shaders are only available in the GLES3 backend. If you need particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:22
+msgid "Particle shaders are only available with GPU-based particle nodes (:ref:`class_GPUParticles2D` and :ref:`class_GPUParticles3D`)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:27
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:25
+msgid "CPU-based particle nodes (:ref:`class_CPUParticles2D` and :ref:`class_CPUParticles3D`) are *rendered* on the GPU (which means they can use custom CanvasItem or Spatial shaders), but their motion is *simulated* on the CPU."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:31
 msgid "Render modes"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:30
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:34
 msgid "Render mode"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:30
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:34
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:57
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:74
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:108
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:127
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:157
 msgid "Description"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:32
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:36
 msgid "**keep_data**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:32
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:36
 msgid "Do not clear previous data on restart."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:34
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:38
 msgid "**disable_force**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:34
-msgid "Disable attractor force. (Not currently implemented in 3.1)"
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:36
-msgid "**disable_velocity**"
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:36
-msgid "Ignore **VELOCITY** value."
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:38
+msgid "Disable attractor force."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:40
+msgid "**disable_velocity**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:40
+msgid "Ignore **VELOCITY** value."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:44
 msgid "Built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:42
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:46
 msgid "Values marked as \"in\" are read-only. Values marked as \"out\" are for optional writing and will not necessarily contain sensible values. Values marked as \"inout\" provide a sensible default value, and can optionally be written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:48
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:52
 msgid "Global built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:50
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:54
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:57
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:108
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:127
 msgid "Built-in"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:55
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:59
 msgid "in float **TIME**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:55
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:59
 msgid "Global time, in seconds."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:59
-msgid "Vertex built-ins"
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:61
+msgid "in float **PI**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:61
-msgid "In order to use the ``COLOR`` variable in a SpatialMaterial, set ``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with the ``COLOR`` variable."
+msgid "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its diameter and amount of radians in half turn."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:64
+msgid "in float **TAU**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:64
+msgid "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of radians in full turn."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:67
-msgid "inout vec4 **COLOR**"
+msgid "in float **E**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:67
-msgid "Particle color, can be written to and accessed in mesh's vertex function."
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:69
-msgid "inout vec3 **VELOCITY**"
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:69
-msgid "Particle velocity, can be modified."
+msgid "A ``E`` constant (``2.718281``). Euler's number and a base of the natural logarithm."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:71
-msgid "out float **MASS**"
+msgid "Start and Process built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:71
-msgid "Particle mass, use for attractors (not implemented in 3.1)."
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:74
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:157
+msgid "Function"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:73
-msgid "inout bool **ACTIVE**"
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:73
-msgid "``true`` when Particle is active, can be set to ``false``."
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:75
-msgid "in bool **RESTART**"
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:75
-msgid "``true`` when particle must restart (lifetime cycled)."
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:77
-msgid "inout vec4 **CUSTOM**"
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:77
-msgid "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:79
-msgid "inout mat4 **TRANSFORM**"
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:79
-msgid "Particle transform."
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:81
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:76
 msgid "in float **LIFETIME**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:81
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:76
 msgid "Particle lifetime."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:83
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:78
 msgid "in float **DELTA**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:83
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:78
 msgid "Delta process time."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:85
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:80
 msgid "in uint **NUMBER**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:85
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:80
 msgid "Unique number since emission start."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:87
-msgid "in int **INDEX**"
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:82
+msgid "in uint **INDEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:87
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:82
 msgid "Particle index (from total particles)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:89
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:84
 msgid "in mat4 **EMISSION_TRANSFORM**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:89
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:84
 msgid "Emitter transform (used for non-local systems)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:91
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:86
 msgid "in uint **RANDOM_SEED**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:91
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:86
 msgid "Random seed used as base for random."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:88
+msgid "inout bool **ACTIVE**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:88
+msgid "``true`` when the particle is active, can be set ``false``."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:90
+msgid "inout vec4 **COLOR**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:90
+msgid "Particle color, can be written to and accessed in mesh's vertex function."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:92
+msgid "inout vec3 **VELOCITY**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:92
+msgid "Particle velocity, can be modified."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:94
+msgid "inout mat4 **TRANSFORM**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:94
+msgid "Particle transform."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:96
+msgid "inout vec4 **CUSTOM**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:96
+msgid "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:98
+msgid "inout float **MASS**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:98
+msgid "Particle mass, intended to be used with attractors. Equals ``1.0`` by default."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:101
+msgid "In order to use the ``COLOR`` variable in a StandardMaterial3D, set ``vertex_color_use_as_albedo`` to ``true``. In a ShaderMaterial, access it with the ``COLOR`` variable."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:105
+msgid "Start built-ins"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:110
+msgid "in bool **RESTART_POSITION**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:112
+msgid "in bool **RESTART_ROT_SCALE**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:114
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:120
+msgid "in bool **RESTART_VELOCITY**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:116
+msgid "in bool **RESTART_COLOR**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:118
+msgid "in bool **RESTART_CUSTOM**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:124
+msgid "Process built-ins"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:129
+msgid "in bool **RESTART**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:129
+msgid "``true`` if the current process frame is first for the particle."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:131
+msgid "in uint **FLAG_EMIT_POSITION**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:131
+msgid "A flag for using on the last argument of ``emit_subparticle`` function to assign a position to a new particle's transform."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:133
+msgid "in uint **FLAG_EMIT_ROT_SCALE**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:133
+msgid "A flag for using on the last argument of ``emit_subparticle`` function to assign the rotation and scale to a new particle's transform."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:135
+msgid "in uint **FLAG_EMIT_VELOCITY**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:135
+msgid "A flag for using on the last argument of ``emit_subparticle`` function to assign a velocity to a new particle."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:137
+msgid "in uint **FLAG_EMIT_COLOR**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:137
+msgid "A flag for using on the last argument of ``emit_subparticle`` function to assign a color to a new particle."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:139
+msgid "in uint **FLAG_EMIT_CUSTOM**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:139
+msgid "A flag for using on the last argument of ``emit_subparticle`` function to assign a custom data vector to a new particle."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:141
+msgid "in bool **COLLIDED**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:141
+msgid "``true`` when the particle has collided with a particle collider."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:143
+msgid "in vec3 **COLLISION_NORMAL**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:143
+msgid "A normal of the last collision. If there is no collision detected it is equal to ``vec3(0.0)``."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:145
+msgid "in float **COLLISION_DEPTH**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:145
+msgid "A length of normal of the last collision. If there is no collision detected it is equal to ``0.0``."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:147
+msgid "in vec3 **ATTRACTOR_FORCE**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:147
+msgid "A combined force of the attractors at the moment on that particle."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:149
+msgid "in vec4 **USERDATAX**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:149
+msgid "Vector that enables the integration of supplementary user-defined data into the particle process shader. ``USERDATAX`` are six built-ins identified by number, ``X`` can be numbers between 1 and 6."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:154
+msgid "Process functions"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:159
+msgid "bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 custom, uint flags)"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:159
+msgid "Forces to emit a particle from a sub-emitter."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

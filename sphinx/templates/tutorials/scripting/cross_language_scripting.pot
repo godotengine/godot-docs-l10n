@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,28 +28,32 @@ msgstr ""
 msgid "The following two scripts will be used as references throughout this page."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:66
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:63
 msgid "Instantiating nodes"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:68
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:65
 msgid "If you're not using nodes from the scene tree, you'll probably want to instantiate nodes directly from the code."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:72
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:69
 msgid "Instantiating C# nodes from GDScript"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:74
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:71
 msgid "Using C# from GDScript doesn't need much work. Once loaded (see :ref:`doc_gdscript_classes_as_resources`), the script can be instantiated with :ref:`new() <class_CSharpScript_method_new>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:86
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:83
 msgid "When creating ``.cs`` scripts, you should always keep in mind that the class Godot will use is the one named like the ``.cs`` file itself. If that class does not exist in the file, you'll see the following error: ``Invalid call. Nonexistent function `new` in base``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:91
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:88
 msgid "For example, MyCoolNode.cs should contain a class named MyCoolNode."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:90
+msgid "The C# class needs to derive a Godot class, for example ``GodotObject``. Otherwise, the same error will occur."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cross_language_scripting.rst:93
@@ -80,51 +84,47 @@ msgstr ""
 msgid "Accessing C# fields from GDScript is straightforward, you shouldn't have anything to worry about."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:128
-msgid "Note that it doesn't matter if the field is defined as a property or an attribute. However, trying to set a value on a property that does not define a setter will result in a crash."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:133
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:126
 msgid "Accessing GDScript fields from C#"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:135
-msgid "As C# is statically typed, accessing GDScript from C# is a bit more convoluted, you will have to use :ref:`Object.Get() <class_Object_method_get>` and :ref:`Object.Set() <class_Object_method_set>`. The first argument is the name of the field you want to access."
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:128
+msgid "As C# is statically typed, accessing GDScript from C# is a bit more convoluted, you will have to use :ref:`GodotObject.Get() <class_Object_method_get>` and :ref:`GodotObject.Set() <class_Object_method_set>`. The first argument is the name of the field you want to access."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:148
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:138
 msgid "Keep in mind that when setting a field value you should only use types the GDScript side knows about. Essentially, you want to work with built-in types as described in :ref:`doc_gdscript` or classes extending :ref:`class_Object`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:153
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:143
 msgid "Calling methods"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:156
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:146
 msgid "Calling C# methods from GDScript"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:158
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:148
 msgid "Again, calling C# methods from GDScript should be straightforward. The marshalling process will do its best to cast the arguments to match function signatures. If that's impossible, you'll see the following error: ``Invalid call. Nonexistent function `FunctionName```."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:174
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:164
 msgid "Calling GDScript methods from C#"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:176
-msgid "To call GDScript methods from C# you'll need to use :ref:`Object.Call() <class_Object_method_call>`. The first argument is the name of the method you want to call. The following arguments will be passed to said method."
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:166
+msgid "To call GDScript methods from C# you'll need to use :ref:`GodotObject.Call() <class_Object_method_call>`. The first argument is the name of the method you want to call. The following arguments will be passed to said method."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:198
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:185
 msgid "As you can see, if the first argument of the called method is an array, you'll need to cast it as ``object``. Otherwise, each element of your array will be treated as a single argument and the function signature won't match."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:204
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:191
 msgid "Inheritance"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cross_language_scripting.rst:206
+#: ../../docs/tutorials/scripting/cross_language_scripting.rst:193
 msgid "A GDScript file may not inherit from a C# script. Likewise, a C# script may not inherit from a GDScript file. Due to how complex this would be to implement, this limitation is unlikely to be lifted in the future. See `this GitHub issue <https://github.com/godotengine/godot/issues/38352>`__ for more information."
 msgstr ""
 

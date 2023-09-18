@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:4
+msgid "Compiling for macOS"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:10
+msgid "This page describes how to compile macOS editor and export template binaries from source. If you're looking to export your project to macOS instead, read :ref:`doc_exporting_for_macos`."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:14
+msgid "Requirements"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:16
+msgid "For compiling under macOS, the following is required:"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:18
+msgid "`Python 3.6+ <https://www.python.org/downloads/macos/>`_."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:19
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:20
+msgid "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more lightweight Command Line Tools for Xcode)."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:22
+msgid "`Vulkan SDK <https://sdk.lunarg.com/sdk/download/latest/mac/vulkan-sdk.dmg>`_ for MoltenVK (macOS doesn't support Vulkan out of the box)."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:25
+msgid "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install SCons using the following command::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:30
+msgid "Installing Homebrew will also fetch the Command Line Tools for Xcode automatically if you don't have them already."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:33
+msgid "Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, you can easily install SCons using the following command::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:39
+msgid "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:42
+msgid "For a general overview of SCons usage for Godot, see :ref:`doc_introduction_to_the_buildsystem`."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:46
+msgid "Compiling"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:48
+msgid "Start a terminal, go to the root directory of the engine source code."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:50
+msgid "To compile for Intel (x86-64) powered Macs, use::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:54
+msgid "To compile for Apple Silicon (ARM64) powered Macs, use::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:58
+msgid "To support both architectures in a single \"Universal 2\" binary, run the above two commands and then use ``lipo`` to bundle them together::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:62
+msgid "If all goes well, the resulting binary executable will be placed in the ``bin/`` subdirectory. This executable file contains the whole engine and runs without any dependencies. Executing it will bring up the Project Manager."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:67
+msgid "If you want to use separate editor settings for your own Godot builds and official releases, you can enable :ref:`doc_data_paths_self_contained_mode` by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:72
+msgid "To create an ``.app`` bundle like in the official builds, you need to use the template located in ``misc/dist/macos_tools.app``. Typically, for an optimized editor binary built with ``target=release_debug``::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:84
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:157
+msgid "If you are building the ``master`` branch, you also need to include support for the MoltenVK Vulkan portability library. By default, it will be linked statically from your installation of the Vulkan SDK for macOS. You can also choose to link it dynamically by passing ``use_volk=yes`` and including the dynamic library in your ``.app`` bundle::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:94
+msgid "Running a headless/server build"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:96
+msgid "To run in *headless* mode which provides editor functionality to export projects in an automated manner, use the normal build::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:101
+msgid "And then use the ``--headless`` command line argument::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:105
+msgid "To compile a debug *server* build which can be used with :ref:`remote debugging tools <doc_command_line_tutorial>`, use::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:110
+msgid "To compile a release *server* build which is optimized to run dedicated game servers, use::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:116
+msgid "Building export templates"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:118
+msgid "To build macOS export templates, you have to compile using the targets without the editor: ``target=template_release`` (release template) and ``target=template_debug``."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:122
+msgid "Official templates are universal binaries which support both Intel x86_64 and ARM64 architectures. You can also create export templates that support only one of those two architectures by leaving out the ``lipo`` step below."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:126
+msgid "For Intel x86_64::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:131
+msgid "For ARM64 (Apple M1)::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:136
+msgid "To support both architectures in a single \"Universal 2\" binary, run the above two commands blocks and then use ``lipo`` to bundle them together::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:142
+msgid "To create an ``.app`` bundle like in the official builds, you need to use the template located in ``misc/dist/macos_template.app``. The release and debug builds should be placed in ``macos_template.app/Contents/MacOS`` with the names ``godot_macos_release.64`` and ``godot_macos_debug.64`` respectively. You can do so with the following commands (assuming a universal build, otherwise replace the ``.universal`` extension with the one of your arch-specific binaries)::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:166
+msgid "You can then zip the ``macos_template.app`` folder to reproduce the ``macos.zip`` template from the official Godot distribution::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:172
+msgid "Using Pyston for faster development"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:174
+msgid "You can use `Pyston <https://www.pyston.org/>`__ to run SCons. Pyston is a JIT-enabled implementation of the Python language (which SCons is written in). Its \"full\" version is currently only compatible with Linux, but Pyston-lite is also compatible with macOS (both x86 and ARM). Pyston can speed up incremental builds significantly, often by a factor between 1.5× and 2×. Pyston can be combined with alternative linkers such as LLD or Mold to get even faster builds."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:181
+msgid "To install Pyston-lite, run ``python -m pip install pyston_lite_autoload`` then run SCons as usual. This will automatically load a subset of Pyston's optimizations in any Python program you run. However, this won't bring as much of a performance improvement compared to installing \"full\" Pyston (which currently can't be done on macOS)."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:188
+msgid "Cross-compiling for macOS from Linux"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:190
+msgid "It is possible to compile for macOS in a Linux environment (and maybe also in Windows using the Windows Subsystem for Linux). For that, you'll need to install `OSXCross <https://github.com/tpoechtrager/osxcross>`__ to be able to use macOS as a target. First, follow the instructions to install it:"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:195
+msgid "Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ somewhere on your machine (or download a ZIP file and extract it somewhere), e.g.::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:201
+msgid "Follow the instructions to package the SDK: https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:203
+msgid "Follow the instructions to install OSXCross: https://github.com/tpoechtrager/osxcross#installation"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:206
+msgid "After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the OSXCross installation (the same place where you cloned the repository/extracted the zip), e.g.::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:212
+msgid "Now you can compile with SCons like you normally would::"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_for_macos.rst:216
+msgid "If you have an OSXCross SDK version different from the one expected by the SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` argument::"
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

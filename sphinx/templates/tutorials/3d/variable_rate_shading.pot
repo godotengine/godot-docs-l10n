@@ -1,0 +1,396 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:4
+msgid "Variable rate shading"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:7
+msgid "What is variable rate shading?"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:9
+msgid "In modern 3D rendering engines, shaders are much more complex compared to before. The advent of physically-based rendering, real-time global illumination and screen-space effects has increased the number of *per-pixel* shading that must be performed to render each frame. Additionally, screen resolutions also have increased a lot, with 1440p and 4K now being common target resolutions. As a result, the total shading cost in scene rendering usually represents a significant amount of the time taken to render each frame."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:17
+msgid "Variable rate shading (VRS) is a method of decreasing this shading cost by reducing the resolution of *per-pixel* shading (also called *fragment* shading), while keeping the original resolution for rendering geometry. This means geometry edges remain as sharp as they would without VRS. VRS can be combined with any :ref:`doc_3d_antialiasing` technique (MSAA, FXAA, TAA, SSAA)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:23
+msgid "VRS allows specifying the shading quality in a local manner, which makes it possible to have certain parts of the viewport receive more detailed shading than others. This is particularly useful in virtual reality (VR) to achieve *foveated rendering*, where the center of the viewport is more detailed than the edges."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:29
+msgid "Here's a scene rendered with rate shading disabled then enabled, using the density map linked at the bottom of this page:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:36
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:36
+msgid "Variable rate shading disabled in textured scene"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:42
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:42
+msgid "Variable rate shading enabled in textured scene (lower quality but higher performance)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:44
+msgid "When used in scenes with low-frequency detail (such as scenes with a stylized/low-poly aesthetic), it's possible to achieve similar performance gains but with less reduction in visual quality:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:52
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:52
+msgid "Variable rate shading disabled in untextured scene"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:58
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:58
+msgid "Variable rate shading enabled in untextured scene (lower quality but higher performance)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:61
+msgid "Hardware support"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:63
+msgid "Variable rate shading is only supported on specific GPUs:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:65
+msgid "**Desktop:**"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:67
+msgid "NVIDIA Turing and newer (including GTX 1600 series)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:68
+msgid "AMD RDNA2 and newer (both integrated and dedicated GPUs – including Steam Deck)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:69
+msgid "Intel Arc Alchemist and newer **(dedicated GPUs only)**"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:71
+msgid "Intel integrated graphics do not support variable rate shading."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:73
+msgid "**Mobile SoCs:**"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:75
+msgid "Snapdragon 888 and newer"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:76
+msgid "MediaTek Dimensity 9000 and newer"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:77
+msgid "ARM Mali-G615 and newer"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:79
+msgid "As of January 2023, Apple and Raspberry Pi GPUs do not support variable rate shading."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:82
+msgid "Using variable rate shading in Godot"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:86
+msgid "Both Forward Plus and Forward Mobile rendering methods support variable rate shading. VRS can be used in both pancake (non-XR) and XR display modes."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:89
+msgid "The Compatibility rendering method does **not** support variable rate shading."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:92
+msgid "In the advanced Project Settings, the **Rendering > VRS** section offers settings to control variable rate shading on the root viewport:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:95
+msgid "**Mode:** Controls the variable rate shading mode. **Disabled** disables variable rate shading. **Texture** uses a manually authored texture to set shading density (see the property below). **XR** automatically generates a texture suited for foveated rendering in virtual/augmented reality."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:99
+msgid "**Texture:** The texture to use to control shading density on the root viewport. Only used if **Mode** is **Texture**."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:102
+msgid "For custom viewports, the VRS mode and texture must be set manually to the :ref:`class_Viewport` node."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:107
+msgid "On unsupported hardware, there is no visual difference when variable rate shading is enabled. You can check whether hardware supports variable rate shading by running the editor or project with the ``--verbose`` :ref:`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:113
+msgid "Creating a VRS density map"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:115
+msgid "If using the **Texture** VRS mode, you *must* set a texture to be used as a density map. Otherwise, no effect will be visible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:118
+msgid "You can create your own VRS density map manually using an image editor, or generate it using another method (e.g. on the CPU using the Image class, or on the GPU using a shader). However, beware of performance implications when generating a VRS image dynamically. If opting for dynamic generation, make sure the VRS image generation process is fast enough to avoid outweighing the performance gains from VRS."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:125
+msgid "The texture must follow these rules:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:127
+msgid "The texture *must* use a lossless compression format so that colors can be matched precisely."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:129
+msgid "The following VRS densities are mapped to various colors, with brighter colors representing a lower level of shading precision:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:133
+msgid "Density"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:133
+msgid "Color"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:133
+msgid "Comment"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:135
+msgid "1×1 (highest detail)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:135
+msgid "``rgb(0, 0, 0) - #000000``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:137
+msgid "1×2"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:137
+msgid "``rgb(0, 85, 0) - #005500``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:139
+msgid "2×1"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:139
+msgid "``rgb(85, 0, 0) - #550000``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:141
+msgid "2×2"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:141
+msgid "``rgb(85, 85, 0) - #555500``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:143
+msgid "2×4"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:143
+msgid "``rgb(85, 170, 0) - #55aa00``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:145
+msgid "4×2"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:145
+msgid "``rgb(170, 85, 0) - #aa5500``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:147
+msgid "4×4"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:147
+msgid "``rgb(170, 170, 0) - #aaaa00``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:149
+msgid "4×8"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:149
+msgid "``rgb(170, 255, 0) - #aaff00``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:149
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:151
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:153
+msgid "Not supported on most hardware."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:151
+msgid "8×4"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:151
+msgid "``rgb(255, 170, 0) - #ffaa00``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:153
+msgid "8×8 (lowest detail)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:153
+msgid "``rgb(255, 255, 0) - #ffff00``"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:156
+msgid "For example, this VRS density texture provides the highest shading density in the center of the viewport, and the lowest shading density in the corners:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:163
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:163
+msgid "Example VRS density map texture, simulating foveated rendering"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:165
+msgid "There are no size or aspect ratio requirements for the VRS density texture. However, there is no benefit to using a VRS density map that is larger than the viewport resolution divided by the GPU's *tile size*. The tile size is what determines the smallest area of pixels where the shading density can be changed separately from other tiles. On most GPUs, this tile size is 8×8 pixels. You can view the tile size by running Godot with the ``--verbose`` command line argument, as it's printed in the VRS debugging information."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:173
+msgid "Therefore, sticking to a relatively low resolution such as 256×256 (square) or 480×270 (16:9) is recommended. Depending on your use cases, a square texture may be more suited compared to a texture that matches the most common viewport aspect ratio in your project (such as 16:9)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:180
+msgid "When using variable rate shading, you can use a negative :ref:`texture mipmap LOD bias <doc_resolution_scaling_mipmap_bias>` to reduce blurriness in areas with reduced shading rate."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:184
+msgid "Note that the texture LOD bias is set globally, so this will also affect areas of the viewport with full shading rate. Don't use values that are too low, or textures will appear grainy."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:189
+msgid "Performance comparison"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:191
+msgid "To give an idea of how much VRS can improve performance in theory, here's a performance comparison with the textured example scene shown at the top of this page. The VRS density map example present on this page is used."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:195
+msgid "Results were captured on a GeForce RTX 4090 with the NVIDIA 525.60.11 driver."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:198
+msgid "Resolution"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:198
+msgid "VRS disabled"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:198
+msgid "VRS enabled"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:198
+msgid "Performance improvement"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:200
+msgid "1920×1080 (Full HD)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:200
+msgid "2832 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:200
+msgid "3136 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:200
+msgid "+10.7%"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:202
+msgid "2560×1440 (QHD)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:202
+msgid "2008 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:202
+msgid "2256 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:202
+msgid "+12.3%"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:204
+msgid "3840×2160 (4K)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:204
+msgid "1236 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:204
+msgid "1436 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:204
+msgid "+16.2%"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:206
+msgid "7680×4320 (8K)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:206
+msgid "384 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:206
+msgid "473 FPS"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:206
+msgid "+23.1%"
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:209
+msgid "In terms of performance improvements, variable rate shading is more beneficial at higher target resolutions. The reduction in visual quality is also less noticeable at high resolutions."
+msgstr ""
+
+#: ../../docs/tutorials/3d/variable_rate_shading.rst:215
+msgid "For non-VR games, you will probably have to use a less aggressive VRS texture than what was used in this example. As a result, the effective performance gains will be lower."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

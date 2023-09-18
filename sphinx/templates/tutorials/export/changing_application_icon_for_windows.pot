@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -96,27 +96,39 @@ msgstr ""
 msgid "Linux and macOS users will also need to install `WINE <https://www.winehq.org/>`_ to use rcedit."
 msgstr ""
 
-#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:98
+#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:96
+msgid "On macOS 10.15 (Catalina) or later, make sure to use a 64-bit version of both WINE and rcedit since 32-bit applications aren't supported anymore."
+msgstr ""
+
+#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:101
 msgid "You should now have everything in place to change the file icon. To do that, you will need to specify the icon when exporting. Go to **Project → Export**. Assuming you have already created a Windows Desktop preset, select your icon in ICO format in the **Application → Icon** field."
 msgstr ""
 
-#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:108
-msgid "If rcedit fails to change the icon, you can instead :ref:`compile your own Windows export templates <doc_compiling_for_windows>` with the icon changed. To do so, replace `platform/windows/godot.ico <https://github.com/godotengine/godot/blob/master/platform/windows/godot.ico>`__ with your own ICO file *before* compiling export templates."
+#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:109
+msgid "All the supplied metadata must be valid. Most importantly, the version identifiers **must** take the form ``major.minor.patch.revision`` where every component is required and is a positive integer. For instance, ``1.2.0.0`` is valid but ``1.2.0`` is not."
 msgstr ""
 
 #: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:114
+msgid "If you provide invalid metadata in the export preset, the application icon won't change as rcedit will fail to change the executable's metadata."
+msgstr ""
+
+#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:121
+msgid "If rcedit fails to change the icon, you can instead :ref:`compile your own Windows export templates <doc_compiling_for_windows>` with the icon changed. To do so, replace `platform/windows/godot.ico <https://github.com/godotengine/godot/blob/master/platform/windows/godot.ico>`__ with your own ICO file *before* compiling export templates."
+msgstr ""
+
+#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:127
 msgid "Once this is done, you can specify your export templates as custom export templates in your project's Windows export preset."
 msgstr ""
 
-#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:118
+#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:131
 msgid "Testing the result"
 msgstr ""
 
-#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:120
+#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:133
 msgid "You can now export the project. If it worked correctly, you should see this:"
 msgstr ""
 
-#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:126
+#: ../../docs/tutorials/export/changing_application_icon_for_windows.rst:139
 msgid "If your icon isn't showing up properly, on Windows 10, try clearing the icon cache. To do so, open the **Run** dialog and enter ``ie4uinit.exe -ClearIconCache`` or ``ie4uinit.exe -show``."
 msgstr ""
 

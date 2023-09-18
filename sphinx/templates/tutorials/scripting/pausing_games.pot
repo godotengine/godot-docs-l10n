@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,7 +49,7 @@ msgid "Process Modes"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/pausing_games.rst:40
-msgid "Each node in Godot has a \"Pause Mode\" that defines when it processes. It can be found and changed under a node's :ref:`Node <class_Node>` properties in the inspector."
+msgid "Each node in Godot has a \"Process Mode\" that defines when it processes. It can be found and changed under a node's :ref:`Node <class_Node>` properties in the inspector."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/pausing_games.rst:45
@@ -61,46 +61,54 @@ msgid "This is what each mode tells a node to do:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/pausing_games.rst:62
-msgid "**Inherit**: Process depending on the state of the parent, grandparent, etc. The first parent that has a state other than Inherit determines the effective value that will be used."
+msgid "**Inherit**: Process depending on the state of the parent, grandparent, etc. The first parent that has a non-Inherit state."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:65
-msgid "**Stop**: If the scene tree is paused, pause the node no matter what (and children in Inherit mode). When paused, this node *will not* process."
+#: ../../docs/tutorials/scripting/pausing_games.rst:64
+msgid "**Pausable**: Process the node (and its children in Inherit mode) only when the game is not paused."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:67
-msgid "**Process**: Even if the scene tree is paused, process the node no matter what (and children in Inherit mode). Paused or not, this node *will* process."
+#: ../../docs/tutorials/scripting/pausing_games.rst:66
+msgid "**WhenPaused**: Process the node (and its children in Inherit mode) *only* when the game is paused."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/pausing_games.rst:68
+msgid "**Always**: Process the node (and its children in Inherit mode) no matter what. Paused or not, this node will process."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/pausing_games.rst:70
+msgid "**Disabled**: The node (and its children in Inherit mode) will not process at all."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/pausing_games.rst:73
 msgid "By default, all nodes have this property in the \"Inherit\" state. If the parent is set to \"Inherit\", then the grandparent will be checked and so on. If a state can't be found in any of the grandparents, the pause state in SceneTree is used. This means that, by default, when the game is paused every node will be paused. Several things happen when a node stops processing."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:76
-msgid "The ``_process``, ``_physics_process``, ``_input``, and ``_input_event`` functions will not be called. However signals still work and cause their connected function to run, even if that function's script is attached to a node that has its pause mode set to \"Stop\"."
+#: ../../docs/tutorials/scripting/pausing_games.rst:79
+msgid "The ``_process``, ``_physics_process``, ``_input``, and ``_input_event`` functions will not be called. However signals still work and cause their connected function to run, even if that function's script is attached to a node that is not currently being processed."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:81
+#: ../../docs/tutorials/scripting/pausing_games.rst:83
 msgid "Animation nodes will pause their current animation, audio nodes will pause their current audio stream, and particles will pause. These resume automatically when the game is no longer paused."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:85
+#: ../../docs/tutorials/scripting/pausing_games.rst:87
 msgid "It is important to note that even if a node is processing while the game is paused physics will **NOT** work for it by default. As stated earlier this is because the physics servers are turned off. The physics servers can be made active while the game is paused by using their ``set_active`` methods."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:91
+#: ../../docs/tutorials/scripting/pausing_games.rst:93
 msgid "Pause Menu Example"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:93
-msgid "Here is an example of a pause menu. Create a popup or panel with controls inside, and set its pause mode to \"Process\" then hide it. By setting the root of the pause popup to \"Process\", all children and grandchildren will inherit that state. This way, this branch of the scene tree will continue working when paused."
+#: ../../docs/tutorials/scripting/pausing_games.rst:95
+msgid "Here is an example of a pause menu. Create a popup or panel with controls inside, and set its pause mode to \"When Paused\" then hide it. By setting the root of the pause popup to \"When Paused\", all children and grandchildren will inherit that state. This way, this branch of the scene tree will continue working when paused."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:99
+#: ../../docs/tutorials/scripting/pausing_games.rst:101
 msgid "Finally, make it so when a pause button is pressed (any button will do), enable the pause and show the pause screen."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:117
+#: ../../docs/tutorials/scripting/pausing_games.rst:119
 msgid "To unpause, do the opposite when the pause screen is closed:"
 msgstr ""
 

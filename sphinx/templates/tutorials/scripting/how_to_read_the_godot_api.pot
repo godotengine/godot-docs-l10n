@@ -1,0 +1,241 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:4
+msgid "How to read the Godot API"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:6
+msgid "On this page, you'll learn how to read the class reference for the Godot API."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:8
+msgid "The API, or Application Programming Interface, is an index of what Godot offers users. It provides a brief summary of which classes exist, how they are related to each other, what features they have, and how to use them."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:13
+msgid "Inheritance"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:17
+msgid "At the top of each file, you will see the name of the class."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:19
+msgid "The \"Inherits\" section lists each class the current one inherits. Here ``CanvasItem`` inherits ``Node`` and ``Node`` inherits ``Object``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:22
+msgid "The \"Inherited By\" section lists each class which directly inherits the current class. Here ``Control`` and ``Node2D`` both inherit ``CanvasItem``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:26
+msgid "Brief Description"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:30
+msgid "Next a brief description of the class. This text appears in Godot Editor popups for creating Nodes, Resources, and other types."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:34
+msgid "Description"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:38
+msgid "Next a more detailed description the class, its features, and its use case(s)."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:40
+msgid "Things you may find here:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:42
+msgid "Specifics of how the class works."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:44
+msgid "Code samples of common use cases."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:46
+msgid "Usage details which are shared between each of the class's methods."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:48
+msgid "Warnings about required dependencies or configuration."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:50
+msgid "Links to other related parts of the Godot API."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:53
+msgid "Tutorials"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:57
+msgid "The page then provides links to parts of the manual which mention or make use of the current class."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:61
+msgid "Properties"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:65
+msgid "The Properties table lists the variables which belong to each instance of the class, also known as the \"properties.\""
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:68
+msgid "The left column contains the data type of the property. The text is also a link to that data type's Godot API page."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:71
+msgid "The center column contains the name of the property. The text is also a link to that property's full description on the page. Use this name to get the property's data or set a new value to it."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:75
+msgid "The right column contains the default value of the property. To initialize it with a different value, you must set a different value via script or the Inspector."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:80
+msgid "Methods"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:84
+msgid "The Methods table lists the functions which belong to each instance of the class, also known as the \"methods.\""
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:87
+msgid "The left column contains the data type of the method's return value."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:89
+msgid "The right column contains the name, parameters, and qualifiers of the method. The name is the text before the opening parenthesis. It is also a link to the method's full description on the page. Use this name to call the method."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:93
+msgid "For each parameter, the page details its data type, name, and default value, if any."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:96
+msgid "Possible qualifiers include..."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:98
+msgid "``const``: the method does not change any data in the class instance."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:99
+msgid "``virtual``: the method does nothing but wait for a script to override it."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:100
+msgid "``vararg``: the method can accept an arbitrary number of arguments."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:103
+msgid "Signals"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:107
+msgid "The Signals list details the names and parameters of events which \"signal\" a change in game state to other class instances."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:110
+msgid "Like the Methods table, any parameters will include their data type and name."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:112
+msgid "Each signal also has a detailed explanation of when the signal is emitted."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:115
+msgid "Enumerations"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:119
+msgid "The Enumerations list details the enumerable data types associated with the current class."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:122
+msgid "For each enumeration, the page states its name and then lists its possible values."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:125
+msgid "For each enumeration value, the page states its name, its integer value, and an explanation of its use case(s) and/or affects."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:129
+msgid "Constants"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:133
+msgid "The Constants list details named integer constants in the current class."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:135
+msgid "For each constant, the page states its name, its integer value, and an explanation of its use case(s) and/or affects."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:138
+msgid "``NOTIFICATION_*`` constants' descriptions will state which engine event triggers the notification."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:142
+msgid "Property Descriptions"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:146
+msgid "The Property Descriptions list details everything about each property."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:148
+msgid "It restates the data type and name of the property."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:150
+msgid "Every property in the Godot API is bound to a pair of setter and getter functions. Using either is equivalent. They are listed here."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:153
+msgid "Below that is a detailed summary of what the property's data represents, its use case(s) and/or the affects of changing it. It may include code samples and/or links to relevant parts of the Godot API."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:157
+msgid "Knowing the setter and getter names is useful when one must bind a method name or :ref:`Callable<class_Callable>` to something."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:161
+msgid "Method Descriptions"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:165
+msgid "The Method Descriptions list details everything about each method."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:167
+msgid "It restates the method's return data type, parameter names/types/defaults, and qualifiers."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/how_to_read_the_godot_api.rst:170
+msgid "Below that is a detailed summary of what the method does and its use case(s). It may include code samples and/or links to relevant parts of the Godot API."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

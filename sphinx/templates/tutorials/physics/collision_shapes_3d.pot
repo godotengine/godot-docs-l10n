@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid "Godot provides many kinds of collision shapes, with different performance
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:15
-msgid "You can define the shape of a :ref:`class_PhysicsBody` by adding one or more :ref:`CollisionShapes <class_CollisionShape>` as child nodes. Note that you must add a :ref:`class_Shape` *resource* to collision shape nodes in the Inspector dock."
+msgid "You can define the shape of a :ref:`class_PhysicsBody3D` by adding one or more :ref:`CollisionShape3Ds <class_CollisionShape3D>` as child nodes. Note that you must add a :ref:`class_Shape3D` *resource* to collision shape nodes in the Inspector dock."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:22
@@ -57,19 +57,19 @@ msgid "Godot provides the following primitive collision shape types:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:30
-msgid ":ref:`class_BoxShape`"
+msgid ":ref:`class_BoxShape3D`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:31
-msgid ":ref:`class_SphereShape`"
+msgid ":ref:`class_SphereShape3D`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:32
-msgid ":ref:`class_CapsuleShape`"
+msgid ":ref:`class_CapsuleShape3D`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:33
-msgid ":ref:`class_CylinderShape`"
+msgid ":ref:`class_CylinderShape3D`"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:35
@@ -85,7 +85,7 @@ msgid "Convex collision shapes"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:46
-msgid ":ref:`Convex collision shapes <class_ConvexPolygonShape>` are a compromise between primitive collision shapes and concave collision shapes. They can represent shapes of any complexity, but with an important caveat. As their name implies, an individual shape can only represent a *convex* shape. For instance, a pyramid is *convex*, but a hollow box is *concave*. To define a concave object with a single collision shape, you need to use a concave collision shape."
+msgid ":ref:`Convex collision shapes <class_ConvexPolygonShape3D>` are a compromise between primitive collision shapes and concave collision shapes. They can represent shapes of any complexity, but with an important caveat. As their name implies, an individual shape can only represent a *convex* shape. For instance, a pyramid is *convex*, but a hollow box is *concave*. To define a concave object with a single collision shape, you need to use a concave collision shape."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:53
@@ -93,7 +93,7 @@ msgid "Depending on the object's complexity, you may get better performance by u
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:60
-msgid "You can generate one or several convex collision shapes from the editor by selecting a MeshInstance and using the **Mesh** menu at the top of the 3D viewport. The editor exposes two generation modes:"
+msgid "You can generate one or several convex collision shapes from the editor by selecting a MeshInstance3D and using the **Mesh** menu at the top of the 3D viewport. The editor exposes two generation modes:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:64
@@ -109,7 +109,7 @@ msgid "Concave or trimesh collision shapes"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:78
-msgid ":ref:`Concave collision shapes <class_ConcavePolygonShape>`, also called trimesh collision shapes, can take any form, from a few triangles to thousands of triangles. Concave shapes are the slowest option but are also the most accurate in Godot. **You can only use concave shapes within StaticBodies.** They will not work with KinematicBodies or RigidBodies unless the RigidBody's mode is Static."
+msgid ":ref:`Concave collision shapes <class_ConcavePolygonShape3D>`, also called trimesh collision shapes, can take any form, from a few triangles to thousands of triangles. Concave shapes are the slowest option but are also the most accurate in Godot. **You can only use concave shapes within StaticBodies.** They will not work with KinematicBodies or RigidBodies unless the RigidBody's mode is Static."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:86
@@ -125,7 +125,7 @@ msgid "Note that unlike primitive and convex shapes, a concave collision shape d
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:99
-msgid "You can generate a concave collision shape from the editor by selecting a MeshInstance and using the **Mesh** menu at the top of the 3D viewport. The editor exposes two options:"
+msgid "You can generate a concave collision shape from the editor by selecting a MeshInstance3D and using the **Mesh** menu at the top of the 3D viewport. The editor exposes two options:"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:103
@@ -145,22 +145,22 @@ msgid "Once you've enabled smooth trimesh collision, make sure the concave shape
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:123
-msgid "Godot can generate collision shapes for your imported 3D scenes automatically. See :ref:`doc_importing_scenes_import_hints` in the documentation for more information."
+msgid "See :ref:`doc_importing_3d_scenes` for information on how to export models for Godot and automatically generate collision shapes on import."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:128
+#: ../../docs/tutorials/physics/collision_shapes_3d.rst:127
 msgid "Performance caveats"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:130
+#: ../../docs/tutorials/physics/collision_shapes_3d.rst:129
 msgid "You aren't limited to a single collision shape per PhysicsBody. Still, we recommend keeping the number of shapes as low as possible to improve performance, especially for dynamic objects like RigidBodies and KinematicBodies. On top of that, avoid translating, rotating, or scaling CollisionShapes to benefit from the physics engine's internal optimizations."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:136
+#: ../../docs/tutorials/physics/collision_shapes_3d.rst:135
 msgid "When using a single non-transformed collision shape in a StaticBody, the engine's *broad phase* algorithm can discard inactive PhysicsBodies. The *narrow phase* will then only have to take into account the active bodies' shapes. If a StaticBody has many collision shapes, the broad phase will fail. The narrow phase, which is slower, must then perform a collision check against each shape."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:142
+#: ../../docs/tutorials/physics/collision_shapes_3d.rst:141
 msgid "If you run into performance issues, you may have to make tradeoffs in terms of accuracy. Most games out there don't have a 100% accurate collision. They find creative ways to hide it or otherwise make it unnoticeable during normal gameplay."
 msgstr ""
 

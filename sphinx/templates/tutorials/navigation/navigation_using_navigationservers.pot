@@ -1,0 +1,269 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:4
+msgid "Using NavigationServer"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:6
+msgid "2D and 3D version of the NavigationServer are available as :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>` respectively."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:10
+msgid "Both 2D and 3D use the same NavigationServer with NavigationServer3D being the primary server. The NavigationServer2D is a frontend that converts 2D positions into 3D positions and back. Hence it is entirely possible (if not a little cumbersome) to exclusively use the NavigationServer3D API for 2D navigation."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:14
+msgid "Communicating with the NavigationServer"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:16
+msgid "To work with the NavigationServer means to prepare parameters for a ``query`` that can be send to the NavigationServer for updates or requesting data."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:18
+msgid "To reference the internal NavigationServer objects like maps, regions and agents RIDs are used as identification numbers. Every navigation related node in the SceneTree has a function that returns the RID for this node."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:22
+msgid "Threading and Synchronization"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:24
+msgid "The NavigationServer does not update every change immediately but waits until the end of the ``physics_frame`` to synchronize all the changes together."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:27
+msgid "Waiting for synchronization is required to apply changes to all maps, regions and agents. Synchronization is done because some updates like a recalculation of the entire navigation map are very expensive and require updated data from all other objects. Also the NavigationServer uses a ``threadpool`` by default for some functionality like avoidance calculation between agents."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:31
+msgid "Waiting is not required for most ``get()`` functions that only request data from the NavigationServer without making changes. Note that not all data will account for changes made in the same frame. E.g. if an avoidance ``agent`` changed the navigation ``map`` this frame the ``agent_get_map()`` function will still return the old map before the synchronization. The exception to this are nodes that store their values internally before sending the update to the NavigationServer. When a getter on a node is used for a value that was updated in the same frame it will return the already updated value stored on the node."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:37
+msgid "The NavigationServer is ``thread-safe`` as it places all API calls that want to make changes in a queue to be executed in the synchronization phase. Synchronization for the NavigationServer happens in the middle of the physics frame after scene input from scripts and nodes are all done."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:41
+msgid "The important takeaway is that most NavigationServer changes take effect after the next physics frame and not immediately. This includes all changes made by navigation related nodes in the SceneTree or through scripts."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:44
+msgid "The following functions will be executed in the synchronization phase only:"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:46
+msgid "map_set_active()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:47
+msgid "map_set_up()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:48
+msgid "map_set_cell_size()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:49
+msgid "map_set_edge_connection_margin()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:50
+msgid "region_set_map()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:51
+msgid "region_set_transform()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:52
+msgid "region_set_enter_cost()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:53
+msgid "region_set_travel_cost()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:54
+msgid "region_set_navigation_layers()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:55
+msgid "region_set_navigation_mesh()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:56
+msgid "agent_set_map()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:57
+msgid "agent_set_neighbor_dist()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:58
+msgid "agent_set_max_neighbors()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:59
+msgid "agent_set_time_horizon()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:60
+msgid "agent_set_radius()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:61
+msgid "agent_set_max_speed()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:62
+msgid "agent_set_velocity()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:63
+msgid "agent_set_target_velocity()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:64
+msgid "agent_set_position()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:65
+msgid "agent_set_ignore_y()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:66
+msgid "agent_set_callback()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:67
+msgid "free()"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:70
+msgid "2D and 3D NavigationServer differences"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:72
+msgid "NavigationServer2D and NavigationServer3D are equivalent in functionality for their dimension and both use the same NavigationServer behind the scene."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:75
+msgid "Strictly technical a NavigationServer2D is a myth. The NavigationServer2D is a frontend to facilitate conversions of Vector2(x, y) to Vector3(x, 0.0, z) and back for the NavigationServer3D API. 2D uses a flat 3D mesh pathfinding and the NavigationServer2D facilitates the conversions. When a guide uses just NavigationServer without the 2D or 3D suffix it usually works for both servers by exchange Vector2(x, y) with Vector3(x, 0.0, z) or reverse."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:82
+msgid "Technically it is possible to use the tools for creating navigationmesh for the other dimension, e..g. baking 2D navigationmesh with the 3D NavigationMesh when using flat 3D source geometry or creating 3D flat navigationmesh with the polygon outline drawtools of NavigationRegion2D and NavigationPolygons."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:87
+msgid "Any RID created with the NavigationServer2D API works on the NavigationServer3D API as well and both 2D and 3D avoidance agents can exist on the same map."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:91
+msgid "Regions created in 2D and 3D will merge their navigationmeshes when placed on the same map and merge conditions apply. The NavigationServer does not discriminate between NavigationRegion2D and NavigationRegion3D nodes as both are regions on the server. By default those nodes register on different navigation maps so this merge can only happen when maps are changed manually e.g. with scripts."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:95
+msgid "Actors with avoidance enabled will avoid both 2D and 3D avoidance agents when placed on the same map."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:98
+msgid "It is not possible to use NavigationServer2D while disabling 3D on a Godot custom build."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:101
+msgid "Waiting for synchronization"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:103
+msgid "At the start of the game, a new scene or procedural navigation changes any path query to a NavigationServer will return empty or wrong."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:105
+msgid "The navigation map is still empty or not updated at this point. All nodes from the SceneTree need to first upload their navigation related data to the NavigationServer. Each added or changed map, region or agent need to be registered with the NavigationServer. Afterward the NavigationServer requires a ``physics_frame`` for synchronization to update the maps, regions and agents."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:110
+msgid "One workaround is to make a deferred call to a custom setup function (so all nodes are ready). The setup function makes all the navigation changes, e.g. adding procedural stuff. Afterwards the function waits for the next physics_frame before continuing with path queries."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:167
+msgid "Server Avoidance Callbacks"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:169
+msgid "If RVO avoidance agents are registered for avoidance callbacks the NavigationServer dispatches their ``safe_velocity`` signals just before the PhysicsServer synchronization."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:172
+msgid "To learn more about NavigationAgents see :ref:`doc_navigation_using_navigationagents`."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:174
+msgid "The simplified order of execution for NavigationAgents that use avoidance:"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:176
+msgid "physics frame starts."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:177
+msgid "_physics_process(delta)."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:178
+msgid "set_velocity() on NavigationAgent Node."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:179
+msgid "Agent sends velocity and position to NavigationServer."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:180
+msgid "NavigationServer waits for synchronization."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:181
+msgid "NavigationServer synchronizes and computes avoidance velocities for all registered avoidance agents."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:182
+msgid "NavigationServer sends safe_velocity vector with signals for each registered avoidance agents."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:183
+msgid "Agents receive the signal and move their parent e.g. with move_and_slide or linear_velocity."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:184
+msgid "PhysicsServer synchronizes."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:185
+msgid "physics frame ends."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationservers.rst:187
+msgid "Therefore moving a physicsbody actor in the callback function with the safe_velocity is perfectly thread- and physics-safe as all happens inside the same physics_frame before the PhysicsServer commits to changes and does its own calculations."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

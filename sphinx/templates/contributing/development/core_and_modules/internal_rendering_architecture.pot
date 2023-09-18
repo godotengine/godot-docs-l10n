@@ -1,0 +1,992 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:4
+msgid "Internal rendering architecture"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:6
+msgid "This page is a high-level overview of Godot 4's internal renderer design. It does not apply to previous Godot versions."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:9
+msgid "The goal of this page is to document design decisions taken to best suit :ref:`Godot's design philosophy <doc_best_practices_for_engine_contributors>`, while providing a starting point for new rendering contributors."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:13
+msgid "If you have questions about rendering internals not answered here, feel free to ask in the ``#rendering`` channel of the `Godot Contributors Chat <https://chat.godotengine.org/channel/rendering>`__."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:19
+msgid "If you have difficulty understanding concepts on this page, it is recommended to go through an OpenGL tutorial such as `LearnOpenGL <https://learnopengl.com/>`__."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:23
+msgid "Modern low-level APIs (Vulkan/Direct3D 12) require intermediate knowledge of higher-level APIs (OpenGL/Direct3D 11) to be used effectively. Thankfully, contributors rarely need to work directly with low-level APIs. Godot's renderers are built entirely on OpenGL and RenderingDevice, which is our abstraction over Vulkan/Direct3D 12."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:32
+msgid "Rendering methods"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:35
+msgid "Forward+"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:37
+msgid "This is a forward renderer that uses a *clustered* approach to lighting."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:39
+msgid "Clustered lighting uses a compute shader to group lights into a 3D frustum aligned grid. Then, at render time, pixels can lookup what lights affect the grid cell they are in and only run light calculations for lights that might affect that pixel."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:44
+msgid "This approach can greatly speed up rendering performance on desktop hardware, but is substantially less efficient on mobile."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:48
+msgid "Forward Mobile"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:50
+msgid "This is a forward renderer that uses a traditional single-pass approach to lighting."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:52
+msgid "Intended for mobile platforms, but can also run on desktop platforms. This rendering method is optimized to perform well on mobile GPUs. Mobile GPUs have a very different architecture compared to desktop GPUs due to their unique constraints around battery usage, heat, and overall bandwidth limitations of reading and writing data. Compute shaders also have very limited support or aren't supported at all. As a result, the mobile renderer purely uses raster-based shaders (fragment/vertex)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:60
+msgid "Unlike desktop GPUs, mobile GPUs perform *tile-based rendering*. Instead of rendering the whole image as a single unit, the image is divided in smaller tiles that fit within the faster internal memory of the mobile GPU. Each tile is rendered and then written out to the destination texture. This all happens automatically on the graphics driver."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:66
+msgid "The problem is that this introduces bottlenecks in our traditional approach. For desktop rendering, we render all opaque geometry, then handle the background, then transparent geometry, then post-processing. Each pass will need to read the current result into tile memory, perform its operations and then write it out again. We then wait for all tiles to be completed before moving on to the next pass."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:73
+msgid "The first important change in the mobile renderer is that the mobile renderer does not use the RGBA16F texture formats that the desktop renderer does. Instead, it is using a R10G10B10A2 UNORM texture format. This halves the bandwidth required and has further improvements as mobile hardware often further optimizes for 32-bit formats. The tradeoff is that the mobile renderer has limited HDR capabilities due to the reduced precision and maximum values in the color data."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:80
+msgid "The second important change is the use of sub-passes whenever possible. Sub-passes allows us to perform the rendering steps end-to-end per tile saving on the overhead introduced by reading from and writing to the tiles between each rendering pass. The ability to use sub-passes is limited by the inability to read neighboring pixels, as we're constrained to working within a single tile."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:86
+msgid "This limitation of subpasses results in not being able to implement features such as glow and depth of field efficiently. Similarly, if there is a requirement to read from the screen texture or depth texture, we must fully write out the rendering result limiting our ability to use sub-passes. When such features are enabled, a mix of sub-passes and normal passes are used, and these features result in a notable performance penalty."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:93
+msgid "On desktop platforms, the use of sub-passes won't have any impact on performance. However, this rendering method can still perform better than Clustered Forward in simple scenes thanks to its lower complexity and lower bandwidth usage. This is especially noticeable on low-end GPUs, integrated graphics or in VR applications."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:99
+msgid "Given its low-end focus, this rendering method does not provide high-end rendering features such as SDFGI and :ref:`doc_volumetric_fog`. Several post-processing effects are also not available."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:106
+msgid "Compatibility"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:110
+msgid "This is the only rendering method available when using the OpenGL driver. This rendering method is not available when using Vulkan or Direct3D 12."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:113
+msgid "This is a traditional (non-clustered) forward renderer. It's intended for old GPUs that don't have Vulkan support, but still works very efficiently on newer hardware. Specifically, it is optimized for older and lower-end mobile devices However, many optimizations carry over making it a good choice for older and lower-end desktop as well."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:119
+msgid "Like the Mobile renderer, the Compatibility renderer uses an R10G10B10A2 UNORM texture for 3D rendering. Unlike the mobile renderer, colors are tonemapped and stored in sRGB format so there is no HDR support. This avoids the need for a tonemapping pass and allows us to use the lower bit texture without substantial banding."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:125
+msgid "The Compatibility renderer uses a traditional forward single-pass approach to drawing objects with lights, but it uses a multi-pass approach to draw lights with shadows. Specifically, in the first pass, it can draw multiple lights without shadows and up to one DirectionalLight3D with shadows. In each subsequent pass, it can draw up to one OmniLight3D, one SpotLight3D and one DirectionalLight3D with shadows. Lights with shadows will affect the scene differently than lights without shadows, as the lighting is blended in sRGB space instead of linear space. This difference in lighting will impact how the scene looks and needs to be kept in mind when designing scenes for the Compatibility renderer."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:136
+msgid "Given its low-end focus, this rendering method does not provide high-end rendering features (even less so compared to Forward Mobile). Most post-processing effects are not available."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:141
+msgid "Why not deferred rendering?"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:143
+msgid "Forward rendering generally provides a better tradeoff for performance versus flexibility, especially when a clustered approach to lighting is used. While deferred rendering can be faster in some cases, it's also less flexible and requires using hacks to be able to use MSAA. Since games with a less realistic art style can benefit a lot from MSAA, we chose to go with forward rendering for Godot 4 (like Godot 3)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:150
+msgid "That said, parts of the forward renderer *are* performed with a deferred approach to allow for some optimizations when possible. This applies to VoxelGI and SDFGI in particular."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:154
+msgid "A clustered deferred renderer may be developed in the future. This renderer could be used in situations where performance is favored over flexibility."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:158
+msgid "Rendering drivers"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:160
+msgid "Godot 4 supports the following graphics APIs:"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:163
+msgid "Vulkan"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:165
+msgid "This is the main driver in Godot 4, with most of the development focus going towards this driver."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:168
+msgid "Vulkan 1.0 is required as a baseline, with optional Vulkan 1.1 and 1.2 features used when available. `volk <https://github.com/zeux/volk>`__ is used as a Vulkan loader, and `Vulkan Memory Allocator <https://github.com/GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator>`__ is used for memory management."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:174
+msgid "Both the Forward+ and Mobile :ref:`doc_internal_rendering_architecture_methods` are supported when using the Vulkan driver."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:178
+msgid "**Vulkan context creation:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:180
+msgid "`drivers/vulkan/vulkan_context.cpp <https://github.com/godotengine/godot/blob/4.0/drivers/vulkan/vulkan_context.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:183
+msgid "Direct3D 12"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:185
+msgid "Like Vulkan, the Direct3D 12 driver targets modern platforms only. It is designed to target both Windows and Xbox (whereas Vulkan can't be used directly on Xbox)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:188
+msgid "Both the Forward+ and Mobile :ref:`doc_internal_rendering_architecture_methods` can be used with Direct3D 12."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:191
+msgid ":ref:`doc_internal_rendering_architecture_core_shaders` are shared with the Vulkan renderer. Shaders are transpiled from GLSL to HLSL using Mesa NIR (`more information <https://godotengine.org/article/d3d12-adventures-in-shaderland/>`__). This means you don't need to know HLSL to work on the Direct3D 12 renderer, although knowing the language's basics is recommended to ease debugging."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:197
+msgid "**As of May 2023, this driver is still in development and is not merged in Godot 4.0 or the master branch.** While Direct3D 12 allows supporting Direct3D-exclusive features on Windows 11 such as windowed optimizations and Auto HDR, Vulkan is still recommended for most projects. See the `pull request that introduced Direct3D 12 support <https://github.com/godotengine/godot/pull/70315>`__ for more information."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:205
+msgid "Metal"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:207
+msgid "Godot supports Metal rendering via `MoltenVK <https://github.com/KhronosGroup/MoltenVK>`__, as macOS and iOS do not support Vulkan natively. This is done automatically when specifying the Vulkan driver in the Project Settings."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:211
+msgid "MoltenVK makes driver maintenance easy at the cost of some performance overhead. Also, MoltenVK has several limitations that a native Metal driver implementation wouldn't have. Both the clustered and mobile :ref:`doc_internal_rendering_architecture_methods` can be used with a Metal backend via MoltenVK."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:217
+msgid "A native Metal driver is planned in the future for better performance and compatibility."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:221
+msgid "OpenGL"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:223
+msgid "This driver uses OpenGL ES 3.0 and targets legacy and low-end devices that don't support Vulkan. OpenGL 3.3 Core Profile is used on desktop platforms to run this driver, as most graphics drivers on desktop don't support OpenGL ES. WebGL 2.0 is used for web exports."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:228
+msgid "Only the :ref:`doc_internal_rendering_architecture_compatibility` rendering method can be used with the OpenGL driver."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:231
+msgid ":ref:`doc_internal_rendering_architecture_core_shaders` are entirely different from the Vulkan renderer."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:234
+msgid "**As of May 2023, this driver is still in development.** Many features are still not implemented, especially in 3D."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:238
+msgid "Summary of rendering drivers/methods"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:240
+msgid "The following rendering API + rendering method combinations are currently possible:"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:242
+msgid "Vulkan + Forward+"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:243
+msgid "Vulkan + Forward Mobile"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:244
+msgid "Direct3D 12 + Forward+"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:245
+msgid "Direct3D 12 + Forward Mobile"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:246
+msgid "Metal + Forward+ (via MoltenVK)"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:247
+msgid "Metal + Forward Mobile (via MoltenVK)"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:248
+msgid "OpenGL + Compatibility"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:250
+msgid "Each combination has its own limitations and performance characteristics. Make sure to test your changes on all rendering methods if possible before opening a pull request."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:255
+msgid "RenderingDevice abstraction"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:259
+msgid "The OpenGL driver does not use the RenderingDevice abstraction."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:261
+msgid "To make the complexity of modern low-level graphics APIs more manageable, Godot uses its own abstraction called RenderingDevice."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:264
+msgid "This means that when writing code for modern rendering methods, you don't actually use the Vulkan or Direct3D 12 APIs directly. While this is still lower-level than an API like OpenGL, this makes working on the renderer easier, as RenderingDevice will abstract many API-specific quirks for you. The RenderingDevice presents a similar level of abstraction as Metal or WebGPU."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:270
+msgid "**Vulkan RenderingDevice implementation:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:272
+msgid "`drivers/vulkan/rendering_device_vulkan.cpp <https://github.com/godotengine/godot/blob/4.0/drivers/vulkan/rendering_device_vulkan.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:275
+msgid "Core rendering classes architecture"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:277
+msgid "This diagram represents the structure of rendering classes in Godot, including the RenderingDevice abstraction:"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:281
+msgid "`View at full size <https://raw.githubusercontent.com/godotengine/godot-docs/4.0/contributing/development/core_and_modules/img/rendering_architecture_diagram.webp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:286
+msgid "Core shaders"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:288
+msgid "While shaders in Godot projects are written using a :ref:`custom language inspired by GLSL <doc_shading_language>`, core shaders are written directly in GLSL."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:292
+msgid "These core shaders are embedded in the editor and export template binaries at compile-time. To see any changes you've made to those GLSL shaders, you need to recompile the editor or export template binary."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:296
+msgid "Some material features such as height mapping, refraction and proximity fade are not part of core shaders, and are performed in the default BaseMaterial3D using the Godot shader language instead (not GLSL). This is done by procedurally generating the required shader code depending on the features enabled in the material."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:302
+msgid "By convention, shader files with ``_inc`` in their name are included in other GLSL files for better code reuse. Standard GLSL preprocessing is used to achieve this."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:308
+msgid "Core material shaders will be used by every material in the scene – both with the default BaseMaterial3D and custom shaders. As a result, these shaders must be kept as simple as possible to avoid performance issues and ensure shader compilation doesn't become too slow."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:313
+msgid "If you use ``if`` branching in a shader, performance may decrease as :abbr:`VGPR (Vector General-Purpose Register)` usage will increase in the shader. This happens even if all pixels evaluate to ``true`` or ``false`` in a given frame."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:318
+msgid "If you use ``#if`` preprocessor branching, the number of required shader versions will increase in the scene. In a worst-case scenario, adding a single boolean ``#define`` can *double* the number of shader versions that may need to be compiled in a given scene. In some cases, Vulkan specialization constants can be used as a faster (but more limited) alternative."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:325
+msgid "This means there is a high barrier to adding new built-in material features in Godot, both in the core shaders and BaseMaterial3D. While BaseMaterial3D can make use of dynamic code generation to only include the shader code if the feature is enabled, it'll still require generating more shader versions when these features are used in a project. This can make shader compilation stutter more noticeable in complex 3D scenes."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:332
+msgid "See `The Shader Permutation Problem <https://therealmjp.github.io/posts/shader-permutations-part1/>`__ and `Branching on a GPU <https://medium.com/@jasonbooth_86226/branching-on-a-gpu-18bfc83694f2>`__ blog posts for more information."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:338
+msgid "**Core GLSL material shaders:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:340
+msgid "Forward+: `servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/forward_clustered/scene_forward_clustered.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:341
+msgid "Forward Mobile: `servers/rendering/renderer_rd/shaders/forward_mobile/scene_forward_mobile.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/forward_mobile/scene_forward_mobile.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:342
+msgid "Compatibility: `drivers/gles3/shaders/scene.glsl <https://github.com/godotengine/godot/blob/4.0/drivers/gles3/shaders/scene.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:344
+msgid "**Material shader generation:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:346
+msgid "`scene/resources/material.cpp <https://github.com/godotengine/godot/blob/4.0/scene/resources/material.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:348
+msgid "**Other GLSL shaders for Forward+ and Forward Mobile rendering methods:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:350
+msgid "`servers/rendering/renderer_rd/shaders/ <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:351
+msgid "`modules/lightmapper_rd/ <https://github.com/godotengine/godot/blob/4.0/modules/lightmapper_rd>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:353
+msgid "**Other GLSL shaders for the Compatibility rendering method:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:355
+msgid "`drivers/gles3/shaders/ <https://github.com/godotengine/godot/blob/4.0/drivers/gles3/shaders/>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:358
+msgid "2D and 3D rendering separation"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:362
+msgid "The following is only applicable in the Forward+ and Forward Mobile rendering methods, not in Compatibility. Multiple Viewports can be used to emulate this when using the Compatibility backend, or to perform 2D resolution scaling."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:367
+msgid "2D and 3D are rendered to separate buffers, as 2D rendering in Godot is performed in :abbr:`LDR (Low Dynamic Range)` sRGB-space while 3D rendering uses :abbr:`HDR (High Dynamic Range)` linear space."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:371
+msgid "The color format used for 2D rendering is RGB8 (RGBA8 if the **Transparent** property on the Viewport is enabled). 3D rendering uses a 24-bit unsigned normalized integer depth buffer, or 32-bit signed floating-point if a 24-bit depth buffer is not supported by the hardware. 2D rendering does not use a depth buffer."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:377
+msgid "3D resolution scaling is performed differently depending on whether bilinear or FSR 1.0 scaling is used. When bilinear scaling is used, no special upscaling shader is run. Instead, the viewport's texture is stretched and displayed with a linear sampler (which makes the filtering happen directly on the hardware). This allows maximizing the performance of bilinear 3D scaling."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:383
+msgid "The ``configure()`` function in RenderSceneBuffersRD reallocates the 2D/3D buffers when the resolution or scaling changes."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:386
+msgid "Dynamic resolution scaling isn't supported yet, but is planned in a future Godot release."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:389
+msgid "**2D and 3D rendering buffer configuration C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:391
+msgid "`servers/rendering/renderer_rd/storage_rd/render_scene_buffers_rd.cpp <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/storage_rd/render_scene_buffers_rd.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:394
+msgid "2D rendering techniques"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:396
+msgid "2D light rendering is performed in a single pass to allow for better performance with large amounts of lights."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:399
+msgid "The Forward+ and Mobile rendering methods don't feature 2D batching yet, but it's planned for a future release."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:402
+msgid "The Compatibility backend features 2D batching to improve performance, which is especially noticeable with lots of text on screen."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:405
+msgid "MSAA can be enabled in 2D to provide \"automatic\" line and polygon antialiasing, but FXAA does not affect 2D rendering as it's calculated before 2D rendering begins. Godot's 2D drawing methods such as the Line2D node or some CanvasItem ``draw_*()`` methods provide their own way of antialiasing based on triangle strips and vertex colors, which don't require MSAA to work."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:411
+msgid "A 2D signed distance field representing LightOccluder2D nodes in the viewport is automatically generated if an user shader requests it. This can be used for various effects in custom shaders, such as 2D global illumination. It is also used to calculate particle collisions in 2D."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:416
+msgid "**2D SDF generation GLSL shader:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:418
+msgid "`https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/canvas_sdf.glsl <servers/rendering/renderer_rd/shaders/canvas_sdf.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:421
+msgid "3D rendering techniques"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:424
+msgid "Batching and instancing"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:426
+msgid "In the Forward+ backend, Vulkan instancing is used to group rendering of identical objects for performance. This is not as fast as static mesh merging, but it still allows instances to be culled individually."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:431
+msgid "Light, decal and reflection probe rendering"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:435
+msgid "Reflection probe and decal rendering are currently not available in the Compatibility backend."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:438
+msgid "As its name implies, the Forward+ backend uses clustered lighting. This allows using as many lights as you want; performance largely depends on screen coverage. Shadow-less lights can be almost free if they don't occupy much space on screen."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:443
+msgid "All rendering methods also support rendering up to 8 directional lights at the same time (albeit with lower shadow quality when more than one light has shadows enabled)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:447
+msgid "The Forward Mobile backend uses a single-pass lighting approach, with a limitation of 8 OmniLights + 8 SpotLights affecting each Mesh *resource* (plus a limitation of 256 OmniLights + 256 SpotLights in the camera view). These limits are hardcoded and can't be adjusted in the project settings."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:452
+msgid "The Compatibility backend uses a hybrid single-pass + multi-pass lighting approach. Lights without shadows are rendered in a single pass. Lights with shadows are rendered in multiple passes. This is required for performance reasons on mobile devices. As a result, performance does not scale well with many shadow-casting lights. It is recommended to only have a handful of lights with shadows in the camera frustum at a time and for those lights to be spread apart so that each object is only touched by 1 or 2 shadowed lights at a time. The maximum number of lights visible at once can be adjusted in the project settings."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:462
+msgid "In all 3 methods, lights without shadows are much cheaper than lights with shadows. To improve performance, lights are only updated when the light is modified or when objects in its radius are modified. Godot currently doesn't separate static shadow rendering from dynamic shadow rendering, but this is planned in a future release."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:468
+msgid "Clustering is also used for reflection probes and decal rendering in the Forward+ backend."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:472
+msgid "Shadow mapping"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:474
+msgid "Both Forward+ and Forward Mobile methods use :abbr:`PCF (Percentage Closer Filtering)` to filter shadow maps and create a soft penumbra. Instead of using a fixed PCF pattern, these methods use a vogel disk pattern which allows for changing the number of samples and smoothly changing the quality."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:480
+msgid "Godot also supports percentage-closer soft shadows (PCSS) for more realistic shadow penumbra rendering. PCSS shadows are limited to the Forward+ backend as they're too demanding to be usable in the Forward Mobile backend. PCSS also uses a vogel-disk shaped kernel."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:485
+msgid "Additionally, both shadow-mapping techniques rotate the kernel on a per-pixel basis to help soften under-sampling artifacts."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:488
+msgid "The Compatibility backend doesn't support shadow mapping for any light types yet."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:491
+msgid "Temporal antialiasing"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:495
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:603
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:680
+msgid "Only available in the Forward+ backend, not the Forward Mobile or Compatibility methods."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:498
+msgid "Godot uses a custom TAA implementation based on the old TAA implementation from `Spartan Engine <https://github.com/PanosK92/SpartanEngine>`__."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:501
+msgid "Temporal antialiasing requires motion vectors to work. If motion vectors are not correctly generated, ghosting will occur when the camera or objects move."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:504
+msgid "Motion vectors are generated on the GPU in the main material shader. This is done by running the vertex shader corresponding to the previous rendered frame (with the previous camera transform) in addition to the vertex shader for the current rendered frame, then storing the difference between them in a color buffer."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:509
+msgid "Using `FSR 2.0 <https://github.com/GPUOpen-Effects/FidelityFX-FSR2>`__ instead of a custom TAA implementation is planned in a future release."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:512
+msgid "**TAA resolve:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:514
+msgid "`servers/rendering/renderer_rd/shaders/effects/taa_resolve.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/taa_resolve.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:517
+msgid "Global illumination"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:521
+msgid "VoxelGI and SDFGI are only available in the Forward+ backend, not the Forward Mobile or Compatibility methods."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:524
+msgid "LightmapGI *baking* is only available in the Forward+ and Forward Mobile methods, and can only be performed within the editor (not in an exported project). LightmapGI *rendering* will eventually be supported by the Compatibility backend."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:529
+msgid "Godot supports voxel-based GI (VoxelGI), signed distance field GI (SDFGI) and lightmap baking and rendering (LightmapGI). These techniques can be used simultaneously if desired."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:533
+msgid "Lightmap baking happens on the GPU using Vulkan compute shaders. The GPU-based lightmapper is implemented in the LightmapperRD class, which inherits from the Lightmapper class. This allows for implementing additional lightmappers, paving the way for a future port of the CPU-based lightmapper present in Godot 3.x. This would allow baking lightmaps while using the Compatibility backend."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:539
+msgid "**Core GI C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:541
+msgid "`servers/rendering/renderer_rd/environment/gi.cpp <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/environment/gi.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:542
+msgid "`scene/3d/voxel_gi.cpp <https://github.com/godotengine/godot/blob/4.0/scene/3d/voxel_gi.cpp>`__ - VoxelGI node"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:543
+msgid "`editor/plugins/voxel_gi_editor_plugin.cpp <https://github.com/godotengine/godot/blob/4.0/editor/plugins/voxel_gi_editor_plugin.cpp>`__ - Editor UI for the VoxelGI node"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:545
+msgid "**Core GI GLSL shaders:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:547
+msgid "`servers/rendering/renderer_rd/shaders/environment/voxel_gi.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/voxel_gi.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:548
+msgid "`servers/rendering/renderer_rd/shaders/environment/voxel_gi_debug.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/voxel_gi_debug.glsl>`__ - VoxelGI debug draw mode"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:549
+msgid "`servers/rendering/renderer_rd/shaders/environment/sdfgi_debug.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/sdfgi_debug.glsl>`__ - SDFGI Cascades debug draw mode"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:550
+msgid "`servers/rendering/renderer_rd/shaders/environment/sdfgi_debug_probes.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/sdfgi_debug_probes.glsl>`__ - SDFGI Probes debug draw mode"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:551
+msgid "`servers/rendering/renderer_rd/shaders/environment/sdfgi_integrate.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/sdfgi_integrate.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:552
+msgid "`servers/rendering/renderer_rd/shaders/environment/sdfgi_preprocess.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/sdfgi_preprocess.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:553
+msgid "`servers/rendering/renderer_rd/shaders/environment/sdfgi_direct_light.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/sdfgi_direct_light.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:555
+msgid "**Lightmapper C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:557
+msgid "`scene/3d/lightmap_gi.cpp <https://github.com/godotengine/godot/blob/4.0/scene/3d/lightmap_gi.cpp>`__ - LightmapGI node"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:558
+msgid "`editor/plugins/lightmap_gi_editor_plugin.cpp <https://github.com/godotengine/godot/blob/4.0/editor/plugins/lightmap_gi_editor_plugin.cpp>`__ - Editor UI for the LightmapGI node"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:559
+msgid "`scene/3d/lightmapper.cpp <https://github.com/godotengine/godot/blob/4.0/scene/3d/lightmapper.cpp>`__ - Abstract class"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:560
+msgid "`modules/lightmapper_rd/lightmapper_rd.cpp <https://github.com/godotengine/godot/blob/4.0/modules/lightmapper_rd/lightmapper_rd.cpp>`__ - GPU-based lightmapper implementation"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:562
+msgid "**Lightmapper GLSL shaders:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:564
+msgid "`modules/lightmapper_rd/lm_raster.glsl <https://github.com/godotengine/godot/blob/4.0/modules/lightmapper_rd/lm_raster.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:565
+msgid "`modules/lightmapper_rd/lm_compute.glsl <https://github.com/godotengine/godot/blob/4.0/modules/lightmapper_rd/lm_compute.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:566
+msgid "`modules/lightmapper_rd/lm_blendseams.glsl <https://github.com/godotengine/godot/blob/4.0/modules/lightmapper_rd/lm_blendseams.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:569
+msgid "Depth of field"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:573
+msgid "Only available in the Forward+ and Forward Mobile methods, not the Compatibility backend."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:576
+msgid "The Forward+ and Forward Mobile methods use different approaches to DOF rendering, with different visual results. This is done to best match the performance characteristics of the target hardware. In Clustered Forward, DOF is performed using a compute shader. In Forward Mobile, DOF is performed using a fragment shader (raster)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:582
+msgid "Box, hexagon and circle bokeh shapes are available (from fastest to slowest). Depth of field can optionally be jittered every frame to improve its appearance when temporal antialiasing is enabled."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:586
+msgid "**Depth of field C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:588
+msgid "`servers/rendering/renderer_rd/effects/bokeh_dof.cpp <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/effects/bokeh_dof.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:590
+msgid "**Depth of field GLSL shader (compute - used for Forward+):**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:592
+msgid "`servers/rendering/renderer_rd/shaders/effects/bokeh_dof.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/bokeh_dof.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:594
+msgid "**Depth of field GLSL shader (raster - used for Forward Mobile):**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:596
+msgid "`servers/rendering/renderer_rd/shaders/effects/bokeh_dof_raster.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/bokeh_dof_raster.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:599
+msgid "Screen-space effects (SSAO, SSIL, SSR, SSS)"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:606
+msgid "The Forward+ backend supports screen-space ambient occlusion, screen-space indirect lighting, screen-space reflections and subsurface scattering."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:609
+msgid "SSAO uses an implementation derived from Intel's `ASSAO <https://www.intel.com/content/www/us/en/developer/articles/technical/adaptive-screen-space-ambient-occlusion.html>`__ (converted to Vulkan). SSIL is derived from SSAO to provide high-performance indirect lighting."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:614
+msgid "When both SSAO and SSIL are enabled, parts of SSAO and SSIL are shared to reduce the performance impact."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:617
+msgid "SSAO and SSIL are performed at half resolution by default to improve performance. SSR is always performed at half resolution to improve performance."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:620
+msgid "**Screen-space effects C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:622
+msgid "`servers/rendering/renderer_rd/effects/ss_effects.cpp <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/effects/ss_effects.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:624
+msgid "**Screen-space ambient occlusion GLSL shader:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:626
+msgid "`servers/rendering/renderer_rd/shaders/effects/ssao.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/ssao.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:627
+msgid "`servers/rendering/renderer_rd/shaders/effects/ssao_blur.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/ssao_blur.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:628
+msgid "`servers/rendering/renderer_rd/shaders/effects/ssao_interleave.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/ssao_interleave.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:629
+msgid "`servers/rendering/renderer_rd/shaders/effects/ssao_importance_map.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/ssao_importance_map.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:631
+msgid "**Screen-space indirect lighting GLSL shader:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:633
+msgid "`servers/rendering/renderer_rd/shaders/effects/ssil.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/ssil.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:634
+msgid "`servers/rendering/renderer_rd/shaders/effects/ssil_blur.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/ssil_blur.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:635
+msgid "`servers/rendering/renderer_rd/shaders/effects/ssil_interleave.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/ssil_interleave.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:636
+msgid "`servers/rendering/renderer_rd/shaders/effects/ssil_importance_map.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/ssil_importance_map.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:638
+msgid "**Screen-space reflections GLSL shader:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:640
+msgid "`servers/rendering/renderer_rd/shaders/effects/screen_space_reflection.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/screen_space_reflection.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:641
+msgid "`servers/rendering/renderer_rd/shaders/effects/screen_space_reflection_scale.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/screen_space_reflection_scale.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:642
+msgid "`servers/rendering/renderer_rd/shaders/effects/screen_space_reflection_filter.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/screen_space_reflection_filter.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:644
+msgid "**Subsurface scattering GLSL:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:646
+msgid "`servers/rendering/renderer_rd/shaders/effects/subsurface_scattering.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/effects/subsurface_scattering.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:649
+msgid "Sky rendering"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:653
+msgid ":ref:`doc_sky_shader`"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:655
+msgid "Godot supports using shaders to render the sky background. The radiance map (which is used to provide ambient light and reflections for PBR materials) is automatically updated based on the sky shader."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:659
+msgid "The SkyMaterial resources such as ProceduralSkyMaterial, PhysicalSkyMaterial and PanoramaSkyMaterial generate a built-in shader for sky rendering. This is similar to what BaseMaterial3D provides for 3D scene materials."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:663
+msgid "A detailed technical implementation can be found in the `Custom sky shaders in Godot 4.0 <https://godotengine.org/article/custom-sky-shaders-godot-4-0>`__ article."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:667
+msgid "**Sky rendering C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:669
+msgid "`servers/rendering/renderer_rd/environment/sky.cpp <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/environment/sky.cpp>`__ - Sky rendering"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:670
+msgid "`scene/resources/sky.cpp <https://github.com/godotengine/godot/blob/4.0/scene/resources/sky.cpp>`__ - Sky resource (not to be confused with sky rendering)"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:671
+msgid "`scene/resources/sky_material.cpp <https://github.com/godotengine/godot/blob/4.0/scene/resources/sky_material.cpp>`__ SkyMaterial resources (used in the Sky resource)"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:673
+msgid "**Sky rendering GLSL shader:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:676
+msgid "Volumetric fog"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:685
+msgid ":ref:`doc_fog_shader`"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:687
+msgid "Godot supports a frustum-aligned voxel (froxel) approach to volumetric fog rendering. As opposed to a post-processing filter, this approach is more general-purpose as it can work with any light type. Fog can also use shaders for custom behavior, which allows animating the fog or using a 3D texture to represent density."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:693
+msgid "The FogMaterial resource generates a built-in shader for FogVolume nodes. This is similar to what BaseMaterial3D provides for 3D scene materials."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:696
+msgid "A detailed technical explanation can be found in the `Fog Volumes arrive in Godot 4.0 <https://godotengine.org/article/fog-volumes-arrive-in-godot-4>`__ article."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:700
+msgid "**Volumetric fog C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:702
+msgid "`servers/rendering/renderer_rd/environment/fog.cpp <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/environment/fog.cpp>`__ - General volumetric fog"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:703
+msgid "`scene/3d/fog_volume.cpp <https://github.com/godotengine/godot/blob/4.0/scene/3d/fog_volume.cpp>`__ - FogVolume node"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:704
+msgid "`scene/resources/fog_material.cpp <https://github.com/godotengine/godot/blob/4.0/scene/resources/fog_material.cpp>`__ - FogMaterial resource (used by FogVolume)"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:706
+msgid "**Volumetric fog GLSL shaders:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:708
+msgid "`servers/rendering/renderer_rd/shaders/environment/volumetric_fog.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/volumetric_fog.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:709
+msgid "`servers/rendering/renderer_rd/shaders/environment/volumetric_fog_process.glsl <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_rd/shaders/environment/volumetric_fog_process.glsl>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:712
+msgid "Occlusion culling"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:714
+msgid "While modern GPUs can handle drawing a lot of triangles, the number of draw calls in complex scenes can still be a bottleneck (even with Vulkan and Direct3D 12)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:718
+msgid "Godot 4 supports occlusion culling to reduce overdraw (when the depth prepass is disabled) and reduce vertex throughput. This is done by rasterizing a low-resolution buffer on the CPU using `Embree <https://github.com/embree/embree>`__. The buffer's resolution depends on the number of CPU threads on the system, as this is done in parallel. This buffer includes occluder shapes that were baked in the editor or created at run-time."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:726
+msgid "As complex occluders can introduce a lot of strain on the CPU, baked occluders can be simplified automatically when generated in the editor."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:729
+msgid "Godot's occlusion culling doesn't support dynamic occluders yet, but OccluderInstance3D nodes can still have their visibility toggled or be moved. However, this will be slow when updating complex occluders this way. Therefore, updating occluders at run-time is best done only on simple occluder shapes such as quads or cuboids."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:735
+msgid "This CPU-based approach has a few advantages over other solutions, such as portals and rooms or a GPU-based culling solution:"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:738
+msgid "No manual setup required (but can be tweaked manually for best performance)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:739
+msgid "No frame delay, which is problematic in cutscenes during camera cuts or when the camera moves fast behind a wall."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:741
+msgid "Works the same on all rendering drivers and methods, with no unpredictable behavior depending on the driver or GPU hardware."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:744
+msgid "Occlusion culling is performed by registering occluder meshes, which is done using OccluderInstance3D *nodes* (which themselves use Occluder3D *resources*). RenderingServer then performs occlusion culling by calling Embree in RendererSceneOcclusionCull."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:749
+msgid "**Occlusion culling C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:751
+msgid "`scene/3d/occluder_instance_3d.cpp <https://github.com/godotengine/godot/blob/4.0/scene/3d/occluder_instance_3d.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:752
+msgid "`servers/rendering/renderer_scene_occlusion_cull.cpp <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_scene_occlusion_cull.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:755
+msgid "Visibility range (LOD)"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:757
+msgid "Godot supports manually authored hierarchical level of detail (HLOD), with distances specified by the user in the inspector."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:760
+msgid "In RenderingSceneCull, the ``_scene_cull()`` and ``_render_scene()`` functions are where most of the LOD determination happens. Each viewport can render the same mesh with different LODs (to allow for split screen rendering to look correct)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:764
+msgid "**Visibility range C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:766
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:797
+msgid "`servers/rendering/renderer_scene_cull.cpp <https://github.com/godotengine/godot/blob/4.0/servers/rendering/renderer_scene_cull.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:769
+msgid "Automatic mesh LOD"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:771
+msgid "The ImporterMesh class is used for the 3D mesh import workflow in the editor. Its ``generate_lods()`` function handles generating using the `meshoptimizer <https://meshoptimizer.org/>`__ library."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:775
+msgid "LOD mesh generation also generates shadow meshes at the same time. These are meshes that have their vertices welded regardless of smoothing and materials. This is used to improve shadow rendering performance by lowering the vertex throughput required to render shadows."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:780
+msgid "The RenderingSceneCull class's ``_render_scene()`` function determines which mesh LOD should be used when rendering. Each viewport can render the same mesh with different LODs (to allow for split screen rendering to look correct)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:784
+msgid "The mesh LOD is automatically chosen based on a screen coverage metric. This takes resolution and camera FOV changes into account without requiring user intervention. The threshold multiplier can be adjusted in the project settings."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:788
+msgid "To improve performance, shadow rendering and reflection probe rendering also choose their own mesh LOD thresholds (which can be different from the main scene rendering)."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:791
+msgid "**Mesh LOD generation on import C++ code:**"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:793
+msgid "`scene/resources/importer_mesh.cpp <https://github.com/godotengine/godot/blob/4.0/scene/resources/importer_mesh.cpp>`__"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/internal_rendering_architecture.rst:795
+msgid "**Mesh LOD determination C++ code:**"
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

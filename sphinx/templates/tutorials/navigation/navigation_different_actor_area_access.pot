@@ -1,0 +1,49 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/navigation/navigation_different_actor_area_access.rst:4
+msgid "Support different actor area access"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_different_actor_area_access.rst:8
+msgid "A typical example for different area access in gameplay are doors that connect rooms with different navigation meshes and are not accessible by all actors all the time."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_different_actor_area_access.rst:11
+msgid "Add a NavigationRegion at the door position. Add an appropriated navigationmesh the size of the door that can connect with the surrounding navigationmeshes. In order to control access enable / disable navigation layer bits so path queries that use the same navigation layer bits can find a path through the \"door\" navigationmesh."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_different_actor_area_access.rst:16
+msgid "The bitmask can act as a set of door keys or abilities and only actors with at least one matching and enabled bit layer in their pathfinding query will find a path through this region. See :ref:`doc_navigation_advanced_using_navigationlayers` for more information on how to work with navigation layers and the bitmask."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_different_actor_area_access.rst:22
+msgid "The entire \"door\" region can also be enabled / disable if required but if disabled will block access for all path queries."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_different_actor_area_access.rst:24
+msgid "Prefer working with navigation layers in path queries whenever possible as enabling or disabling navigation layers on a region triggers a performance costly recalculation of the navigation map connections."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_different_actor_area_access.rst:29
+msgid "Changing navigation layers will only affect new path queries but not automatically update existing paths."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

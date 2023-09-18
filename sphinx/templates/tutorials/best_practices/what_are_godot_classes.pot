@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgid "Attaching a :ref:`Script <class_Script>` to your object extends the metho
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:43
-msgid "Even scripts that don't use the ``extends`` keyword implicitly inherit from the engine's base :ref:`Reference <class_Reference>` class. As a result, you can instantiate scripts without the ``extends`` keyword from code. Since they extend ``Reference`` though, you cannot attach them to a :ref:`Node <class_Node>`."
+msgid "Even scripts that don't use the ``extends`` keyword implicitly inherit from the engine's base :ref:`RefCounted <class_RefCounted>` class. As a result, you can instantiate scripts without the ``extends`` keyword from code. Since they extend ``RefCounted`` though, you cannot attach them to a :ref:`Node <class_Node>`."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:49
@@ -85,7 +85,7 @@ msgid "The behavior of scenes has many similarities to classes, so it can make s
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:55
-msgid "We often pair a scene with a scripted root node that makes use of the scene's nodes. As such, the scene is often an extension of the script's declarative code."
+msgid "We often pair a scene with a scripted root node that makes use of the scene's nodes. As such, the script extends the scene by adding behavior through imperative code."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:58
@@ -93,19 +93,19 @@ msgid "The content of a scene helps to define:"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:60
-msgid "What nodes are available to the script"
+msgid "What nodes are available to the script."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:61
-msgid "How they are organized"
+msgid "How they are organized."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:62
-msgid "How they are initialized"
+msgid "How they are initialized."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:63
-msgid "What signal connections they have with each other"
+msgid "What signal connections they have with each other."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:65

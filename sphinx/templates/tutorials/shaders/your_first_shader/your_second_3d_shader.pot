@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "For a full list of these parameters see the :ref:`spatial shader <doc_spa
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_second_3d_shader.rst:18
-msgid "A difference between the vertex function and a fragment function is that the vertex function runs per vertex and sets properties such as ``VERTEX`` (position) and ``NORMAL``, while the fragment shader runs per pixel and, most importantly, sets the ``ALBEDO`` color of the :ref:`Mesh<class_MeshInstance>`."
+msgid "A difference between the vertex function and a fragment function is that the vertex function runs per vertex and sets properties such as ``VERTEX`` (position) and ``NORMAL``, while the fragment shader runs per pixel and, most importantly, sets the ``ALBEDO`` color of the :ref:`MeshInstance3D<class_MeshInstance3D>`."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_second_3d_shader.rst:24
@@ -117,7 +117,7 @@ msgid "In order to add fresnal reflectance, we will compute a fresnel term in ou
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_second_3d_shader.rst:156
-msgid "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of ShaderMaterials over SpatialMaterials. With SpatialMaterial, we could set these properties with a texture, or to a flat number. But with shaders we can set them based on any mathematical function that we can dream up."
+msgid "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of ShaderMaterials over StandardMaterial3Ds. With StandardMaterial3D, we could set these properties with a texture, or to a flat number. But with shaders we can set them based on any mathematical function that we can dream up."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/your_first_shader/your_second_3d_shader.rst:174

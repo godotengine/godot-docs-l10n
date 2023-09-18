@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "You can get a reference to a node by calling the :ref:`Node.get_node() <c
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:17
-msgid "If, for example,  you have a scene tree like this, and you want to get a reference to the Sprite and Camera2D nodes to access them in your script."
+msgid "If, for example,  you have a scene tree like this, and you want to get a reference to the Sprite2D and Camera2D nodes to access them in your script."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:22
@@ -41,11 +41,11 @@ msgid "To do so, you can use the following code."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:47
-msgid "Note that you get nodes using their name, not their type. Above, \"Sprite\" and \"Camera2D\" are the nodes' names in the scene."
+msgid "Note that you get nodes using their name, not their type. Above, \"Sprite2D\" and \"Camera2D\" are the nodes' names in the scene."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:52
-msgid "If you rename the Sprite node as Skin in the Scene dock, you have to change the line that gets the node to ``get_node(\"Skin\")`` in the script."
+msgid "If you rename the Sprite2D node as Skin in the Scene dock, you have to change the line that gets the node to ``get_node(\"Skin\")`` in the script."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:58
@@ -61,7 +61,7 @@ msgid "Take the following example scene, with the script attached to the UserInt
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:69
-msgid "To get the Tween node, you would use the following code."
+msgid "To get the AnimationPlayer node, you would use the following code."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:90
@@ -73,7 +73,7 @@ msgid "Syntactic sugar"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:99
-msgid "You can use two shorthands to shorten your code in GDScript. Firstly, putting the ``onready`` keyword before a member variable makes it initialize right before the ``_ready()`` callback."
+msgid "You can use two shorthands to shorten your code in GDScript. Firstly, putting the ``@onready`` annotation before a member variable makes it initialize right before the ``_ready()`` callback."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:107
@@ -97,7 +97,7 @@ msgid "To delete a node and free it from memory, you can call its ``queue_free()
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:160
-msgid "Before calling ``sprite.queue_free()``, the remote scene tree looks like this."
+msgid "Before calling ``sprite2d.queue_free()``, the remote scene tree looks like this."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:164
@@ -121,7 +121,7 @@ msgid "Scenes are templates from which you can create as many reproductions as y
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:184
-msgid "Loading the scene from the hard drive."
+msgid "Loading the scene from the local drive."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:185
@@ -133,7 +133,7 @@ msgid "Preloading the scene can improve the user's experience as the load operat
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:206
-msgid "At that point, ``scene`` is a packed scene resource, not a node. To create the actual node, you need to call :ref:`PackedScene.instance() <class_PackedScene_method_instance>`. It returns a tree of nodes that you can as a child of your current node."
+msgid "At that point, ``scene`` is a packed scene resource, not a node. To create the actual node, you need to call :ref:`PackedScene.instantiate() <class_PackedScene_method_instantiate>`. It returns a tree of nodes that you can use as a child of your current node."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:222

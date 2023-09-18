@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,7 +121,7 @@ msgid "Say no to Euler angles"
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:82
-msgid "The result of all this is that you should **not use** the ``rotation`` property of :ref:`class_Spatial` nodes in Godot for games. It's there to be used mainly in the editor, for coherence with the 2D engine, and for simple rotations (generally just one axis, or even two in limited cases). As much as you may be tempted, don't use it."
+msgid "The result of all this is that you should **not use** the ``rotation`` property of :ref:`class_Node3D` nodes in Godot for games. It's there to be used mainly in the editor, for coherence with the 2D engine, and for simple rotations (generally just one axis, or even two in limited cases). As much as you may be tempted, don't use it."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:84
@@ -133,7 +133,7 @@ msgid "Introducing transforms"
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:89
-msgid "Godot uses the :ref:`class_Transform` datatype for orientations. Each :ref:`class_Spatial` node contains a ``transform`` property which is relative to the parent's transform, if the parent is a Spatial-derived type."
+msgid "Godot uses the :ref:`class_Transform3D` datatype for orientations. Each :ref:`class_Node3D` node contains a ``transform`` property which is relative to the parent's transform, if the parent is a Node3D-derived type."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:91
@@ -185,7 +185,7 @@ msgid "It is possible to rotate a transform, either by multiplying its basis by 
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:168
-msgid "A method in Spatial simplifies this:"
+msgid "A method in Node3D simplifies this:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:185
@@ -217,7 +217,7 @@ msgid "This will make all axes have ``1.0`` length again and be ``90`` degrees f
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:220
-msgid "It is recommended you not scale nodes that are going to be manipulated; scale their children nodes instead (such as MeshInstance). If you absolutely must scale the node, then re-apply it at the end:"
+msgid "It is recommended you not scale nodes that are going to be manipulated; scale their children nodes instead (such as MeshInstance3D). If you absolutely must scale the node, then re-apply it at the end:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:234
@@ -281,7 +281,7 @@ msgid "Converting a rotation to quaternion is straightforward."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:387
-msgid "The :ref:`class_Quat` type reference has more information on the datatype (it can also do transform accumulation, transform points, etc., though this is used less often). If you interpolate or apply operations to quaternions many times, keep in mind they need to be eventually normalized. Otherwise, they will also suffer from numerical precision errors."
+msgid "The :ref:`class_Quaternion` type reference has more information on the datatype (it can also do transform accumulation, transform points, etc., though this is used less often). If you interpolate or apply operations to quaternions many times, keep in mind they need to be eventually normalized. Otherwise, they will also suffer from numerical precision errors."
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_transforms.rst:393

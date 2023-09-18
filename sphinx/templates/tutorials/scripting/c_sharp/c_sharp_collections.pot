@@ -1,0 +1,715 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:4
+msgid "C# collections"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:6
+msgid "The .NET base class library contains multiple collection types that can be used to store and manipulate data. Godot also provide some collection types that are tightly integrated with the rest of the engine."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:11
+msgid "Choose a collection"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:13
+msgid "The main difference between the `.NET collections <https://learn.microsoft.com/en-us/dotnet/standard/collections/>`_ and the Godot collections is that the .NET collections are implemented in C# while the Godot collections are implemented in C++ and the Godot C# API is a wrapper over it, this is an important distinction since it means every operation on a Godot collection requires marshaling which can be expensive especially inside a loop."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:19
+msgid "Due to the performance implications, using Godot collections is only recommended when absolutely necessary (such as interacting with the Godot API). Godot only understands its own collection types, so it's required to use them when talking to the engine."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:24
+msgid "If you have a collection of elements that don't need to be passed to a Godot API, using a .NET collection would be more performant."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:29
+msgid "It's also possible to convert between .NET collections and Godot collections. The Godot collections contain constructors from generic .NET collection interfaces that copy their elements, and the Godot collections can be used with the `LINQ <https://learn.microsoft.com/en-us/dotnet/standard/linq>`_ ``ToList``, ``ToArray`` and ``ToDictionary`` methods. But keep in mind this conversion requires marshaling every element in the collection and copies it to a new collection so it can be expensive."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:37
+msgid "Despite this, the Godot collections are optimized to try and avoid unnecessary marshaling, so methods like ``Sort`` or ``Reverse`` are implemented with a single interop call and don't need to marshal every element. Keep an eye out for generic APIs that take collection interfaces like `LINQ <https://learn.microsoft.com/en-us/dotnet/standard/linq>`_ because every method requires iterating the collection and, therefore, marshaling every element. Prefer using the instance methods of the Godot collections when possible."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:44
+msgid "To choose which collection type to use for each situation, consider the following questions:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:46
+msgid "Does your collection need to interact with the Godot engine? (e.g.: the type of an exported property, calling a Godot method)."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:49
+msgid "If yes, since Godot only supports :ref:`Variant-compatible <doc_c_sharp_variant>` types, use a Godot collection."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:51
+msgid "If not, consider `choosing an appropriate .NET collection <https://learn.microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-class>`_."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:53
+msgid "Do you need a Godot collection that represents a list or sequential set of data?"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:55
+msgid "Godot :ref:`arrays <doc_c_sharp_collections_array>` are similar to the C# collection ``List<T>``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:56
+msgid "Godot :ref:`packed arrays <doc_c_sharp_collections_packedarray>` are more memory-efficient arrays, in C# use one of the supported ``System.Array`` types."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:59
+msgid "Do you need a Godot collection that maps a set of keys to a set of values?"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:61
+msgid "Godot :ref:`dictionaries <doc_c_sharp_collections_dictionary>` store pairs of keys and values and allow easy access to the values by their associated key."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:65
+msgid "Godot collections"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:70
+msgid "PackedArray"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:72
+msgid "Godot packed arrays are implemented as an array of a specific type, allowing it to be more tightly packed as each element has the size of the specific type, not ``Variant``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:75
+msgid "In C#, packed arrays are replaced by ``System.Array``:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:78
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:118
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:216
+msgid "GDScript"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:78
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:118
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:216
+msgid "C#"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:80
+msgid "``PackedInt32Array``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:80
+msgid "``int[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:81
+msgid "``PackedInt64Array``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:81
+msgid "``long[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:82
+msgid "``PackedByteArray``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:82
+msgid "``byte[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:83
+msgid "``PackedFloat32Array``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:83
+msgid "``float[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:84
+msgid "``PackedFloat64Array``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:84
+msgid "``double[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:85
+msgid "``PackedStringArray``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:85
+msgid "``string[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:86
+msgid "``PackedColorArray``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:86
+msgid "``Color[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:87
+msgid "``PackedVector2Array``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:87
+msgid "``Vector2[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:88
+msgid "``PackedVector3Array``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:88
+msgid "``Vector3[]``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:91
+msgid "Other C# arrays are not supported by the Godot C# API since a packed array equivalent does not exist. See :ref:`Variant <doc_c_sharp_variant>` for a list of all the compatible types."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:98
+msgid "Array"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:100
+msgid "Godot arrays are implemented as an array of ``Variant`` and can contain several elements of any type. In C#, the equivalent type is ``Godot.Collections.Array``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:103
+msgid "The generic ``Godot.Collections.Array<T>`` type allows restricting the element type to a :ref:`Variant-compatible <doc_c_sharp_variant>` type."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:106
+msgid "An untyped ``Godot.Collections.Array`` can be converted to a typed array using the ``Godot.Collections.Array<T>(Godot.Collections.Array)`` constructor."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:111
+msgid "Despite the name, Godot arrays are more similar to the C# collection ``List<T>`` than ``System.Array``. Their size is not fixed and can grow or shrink as elements are added/removed from the collection."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:115
+msgid "List of Godot's Array methods and their equivalent in C#:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:120
+msgid "all"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:120
+msgid "`System.Linq.Enumerable.All`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:121
+msgid "any"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:121
+msgid "`System.Linq.Enumerable.Any`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:122
+msgid "append"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:122
+msgid "Add"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:123
+msgid "append_array"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:123
+msgid "AddRange"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:124
+msgid "assign"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:124
+msgid "Clear and AddRange"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:125
+msgid "back"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:125
+msgid "``Array[^1]`` or `System.Linq.Enumerable.Last`_ or `System.Linq.Enumerable.LastOrDefault`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:126
+msgid "bsearch"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:126
+msgid "BinarySearch"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:127
+msgid "bsearch_custom"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:127
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:136
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:137
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:138
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:144
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:145
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:168
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:169
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:171
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:172
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:221
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:224
+msgid "N/A"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:128
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:218
+msgid "clear"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:128
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:218
+msgid "Clear"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:129
+msgid "count"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:129
+msgid "`System.Linq.Enumerable.Count`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:130
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:219
+msgid "duplicate"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:130
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:219
+msgid "Duplicate"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:131
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:220
+msgid "erase"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:131
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:220
+msgid "Remove"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:132
+msgid "fill"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:132
+msgid "Fill"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:133
+msgid "filter"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:133
+msgid "Use `System.Linq.Enumerable.Where`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:134
+msgid "find"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:134
+msgid "IndexOf"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:135
+msgid "front"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:135
+msgid "``Array[0]`` or `System.Linq.Enumerable.First`_ or `System.Linq.Enumerable.FirstOrDefault`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:136
+msgid "get_typed_builtin"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:137
+msgid "get_typed_class_name"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:138
+msgid "get_typed_script"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:139
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:223
+msgid "has"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:139
+msgid "Contains"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:140
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:225
+msgid "hash"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:140
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:225
+msgid "GD.Hash"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:141
+msgid "insert"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:141
+msgid "Insert"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:142
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:226
+msgid "is_empty"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:142
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:226
+msgid "Use ``Count == 0``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:143
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:227
+msgid "is_read_only"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:143
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:227
+msgid "IsReadOnly"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:144
+msgid "is_same_typed"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:145
+msgid "is_typed"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:146
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:229
+msgid "make_read_only"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:146
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:229
+msgid "MakeReadOnly"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:147
+msgid "map"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:147
+msgid "`System.Linq.Enumerable.Select`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:148
+msgid "max"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:148
+msgid "Max"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:149
+msgid "min"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:149
+msgid "Min"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:150
+msgid "pick_random"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:150
+msgid "PickRandom (Consider using `System.Random`_)"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:151
+msgid "pop_at"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:151
+msgid "``Array[i]`` with ``RemoveAt(i)``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:152
+msgid "pop_back"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:152
+msgid "``Array[^1]`` with ``RemoveAt(Count - 1)``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:153
+msgid "pop_front"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:153
+msgid "``Array[0]`` with ``RemoveAt(0)``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:154
+msgid "push_back"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:154
+msgid "``Insert(Count, item)``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:155
+msgid "push_front"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:155
+msgid "``Insert(0, item)``"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:156
+msgid "reduce"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:156
+msgid "`System.Linq.Enumerable.Aggregate`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:157
+msgid "remove_at"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:157
+msgid "RemoveAt"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:158
+msgid "resize"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:158
+msgid "Resize"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:159
+msgid "reverse"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:159
+msgid "Reverse"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:160
+msgid "rfind"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:160
+msgid "LastIndexOf"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:161
+msgid "shuffle"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:161
+msgid "Shuffle"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:162
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:231
+msgid "size"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:162
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:231
+msgid "Count"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:163
+msgid "slice"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:163
+msgid "Slice"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:164
+msgid "sort"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:164
+msgid "Sort"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:165
+msgid "sort_custom"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:165
+msgid "`System.Linq.Enumerable.OrderBy`_"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:166
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:233
+msgid "operator !="
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:166
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:233
+msgid "!RecursiveEqual"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:167
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:167
+msgid "operator +"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:168
+msgid "operator <"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:169
+msgid "operator <="
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:170
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:234
+msgid "operator =="
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:170
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:234
+msgid "RecursiveEqual"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:171
+msgid "operator >"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:172
+msgid "operator >="
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:173
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:235
+msgid "operator []"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:173
+msgid "Array[int] indexer"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:192
+msgid "Dictionary"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:194
+msgid "Godot dictionaries are implemented as a dictionary with ``Variant`` keys and values. In C#, the equivalent type is ``Godot.Collections.Dictionary``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:197
+msgid "The generic ``Godot.Collections.Dictionary<TKey, TValue>`` type allows restricting the key and value types to a :ref:`Variant-compatible <doc_c_sharp_variant>` type."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:200
+msgid "An untyped ``Godot.Collections.Dictionary`` can be converted to a typed dictionary using the ``Godot.Collections.Dictionary<TKey, TValue>(Godot.Collections.Dictionary)`` constructor."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:205
+msgid "If you need a dictionary where the key is typed but not the value, use ``Variant`` as the ``TValue`` generic parameter of the typed dictionary."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:213
+msgid "List of Godot's Dictionary methods and their equivalent in C#:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:221
+msgid "find_key"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:222
+msgid "get"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:222
+msgid "Dictionary[Variant] indexer or TryGetValue"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:223
+msgid "ContainsKey"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:224
+msgid "has_all"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:228
+msgid "keys"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:228
+msgid "Keys"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:230
+msgid "merge"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:230
+msgid "Merge"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:232
+msgid "values"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:232
+msgid "Values"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_collections.rst:235
+msgid "Dictionary[Variant] indexer, Add or TryGetValue"
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

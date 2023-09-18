@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:2
+msgid "GD0105: Attempted to export indexer property"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:7
+msgid "**Rule ID**"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:7
+msgid "GD0105"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:8
+msgid "**Category**"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:8
+msgid "Usage"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:9
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:9
+msgid "Non-breaking"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:10
+msgid "**Enabled by default**"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:10
+msgid "Yes"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:14
+msgid "Cause"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:16
+msgid "An indexer is annotated with the ``[Export]`` attribute. Indexers can't be exported."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:19
+msgid "Rule description"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:21
+msgid "Godot doesn't allow exporting indexer properties."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:36
+msgid "How to fix violations"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:38
+msgid "To fix a violation of this rule, remove the ``[Export]`` attribute."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:41
+msgid "When to suppress warnings"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0105.rst:43
+msgid "Do not suppress a warning from this rule. Indexers can't be exported so they will be ignored by Godot, resulting in runtime errors."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

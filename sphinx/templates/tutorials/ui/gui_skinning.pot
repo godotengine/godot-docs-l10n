@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,146 +81,154 @@ msgid "A :ref:`font <class_Font>` resource, which is used by controls that displ
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:72
-msgid "**Icon**"
+msgid "**Font size**"
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:74
-msgid "A :ref:`texture <class_Texture>` resource, which is normally used to display an icon (on a :ref:`Button <class_Button>`, for example)."
+msgid "An integer value, which is used alongside a font to determine the size at which the text should be displayed."
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:77
-msgid "**StyleBox**"
+msgid "**Icon**"
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:79
+msgid "A :ref:`texture <class_Texture2D>` resource, which is normally used to display an icon (on a :ref:`Button <class_Button>`, for example)."
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_skinning.rst:82
+msgid "**StyleBox**"
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_skinning.rst:84
 msgid "A :ref:`StyleBox <class_StyleBox>` resource, a collection of configuration options which define the way a UI panel should be displayed. This is not limited to the :ref:`Panel <class_Panel>` control, as styleboxes are used by many controls for their backgrounds and overlays."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:85
+#: ../../docs/tutorials/ui/gui_skinning.rst:90
 msgid "Theme types"
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:87
+#: ../../docs/tutorials/ui/gui_skinning.rst:92
 msgid "To help with the organization of its items each theme is separated into types, and each item must belong to a single type. In other words, each theme item is defined by its name, its data type and its theme type. This combination must be unique within the theme. For example, there cannot be two color items named ``font_color`` in a type called ``Label``, but there can be another ``font_color`` item in a type ``LineEdit``."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:94
+#: ../../docs/tutorials/ui/gui_skinning.rst:99
 msgid "The default Godot theme comes with multiple theme types already defined, one for every built-in control node that uses UI skinning. The example above contains actual theme items present in the default theme. You can refer to the **Theme Properties** section in the class reference for each control to see which items are available to it and its child classes."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:101
+#: ../../docs/tutorials/ui/gui_skinning.rst:106
 msgid "Child classes can use theme items defined for their parent class (``Button`` and its derivatives being a good example of that). In fact, every control can use every theme item of any theme type, if it needs to (but for the clarity and predictability we try to avoid that in the engine)."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:106
+#: ../../docs/tutorials/ui/gui_skinning.rst:111
 msgid "It is important to remember that for child classes that process is automated. Whenever a built-in control requests a theme item from the theme it can omit the theme type, and its class name will be used instead. On top of that, the class names of its parent classes will also be used in turn. This allows changes to the parent class, such as ``Button``, to affect all derived classes without the need to customize every one of them."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:113
+#: ../../docs/tutorials/ui/gui_skinning.rst:118
 msgid "You can also define your own theme types, and additionally customize both built-in controls and your own controls. Because built-in controls have no knowledge of your custom theme types, you must utilize scripts to access those items. All control nodes have several methods that allow to fetch theme items from the theme that is applied to them. Those methods accept the theme type as one of the arguments."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:130
+#: ../../docs/tutorials/ui/gui_skinning.rst:135
 msgid "To give more customization opportunities types can also be linked together as type variations. This is another use-case for custom theme types. For example, a theme can contain a type ``Header`` which can be marked as a variation of the base ``Label`` type. An individual ``Label`` control can then be set to use the ``Header`` variation for its type, and every time a theme item is requested from a theme this variation will be used before any other type. This allows to store various presets of theme items for the same class of the control node in the single ``Theme`` resource."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:140
+#: ../../docs/tutorials/ui/gui_skinning.rst:145
 msgid "Only variations available from the default theme or defined in the custom project theme are shown in the Inspector dock as options. You can still input manually the name of a variation that is defined outside of those two places, but it is recommended to keep all variations to the project theme."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:145
+#: ../../docs/tutorials/ui/gui_skinning.rst:150
 msgid "You can learn more about creating and using theme type variations in a :ref:`dedicated article <doc_gui_theme_type_variations>`."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:149
+#: ../../docs/tutorials/ui/gui_skinning.rst:154
 msgid "Customizing a control"
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:151
+#: ../../docs/tutorials/ui/gui_skinning.rst:156
 msgid "Each control node can be customized directly without the use of themes. This is called local overrides. Every theme property from the control's class reference can be overridden directly on the control itself, using either the Inspector dock, or scripts. This allows to make granular changes to a particular part of the UI, while not affecting anything else in the project, including this control's children."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:161
+#: ../../docs/tutorials/ui/gui_skinning.rst:166
 msgid "Local overrides are less useful for the visual flair of your user interface, especially if you aim for consistency. However, for layout nodes these are essential. Nodes such as :ref:`BoxContainer <class_BoxContainer>` and :ref:`GridContainer <class_GridContainer>` use theme constants for defining separation between their children, and :ref:`MarginContainer <class_MarginContainer>` stores its customizable margins in its theme items."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:168
+#: ../../docs/tutorials/ui/gui_skinning.rst:173
 msgid "Whenever a control has a local theme item override, this is the value that it uses. Values provided by the theme are ignored."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:174
+#: ../../docs/tutorials/ui/gui_skinning.rst:179
 msgid "Customizing a project"
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:176
+#: ../../docs/tutorials/ui/gui_skinning.rst:181
 msgid "Out of the box each project adopts the default project theme provided by Godot. The default theme itself is constant and cannot be changed, but its items can be overridden with a custom theme. Custom themes can be applied in two ways: as a project setting, and as a node property throughout the tree of control nodes."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:181
+#: ../../docs/tutorials/ui/gui_skinning.rst:186
 msgid "There are two project settings that can be adjusted to affect your entire project: :ref:`gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>` allows you to set a custom project-wide theme, and :ref:`gui/theme/custom_font<class_ProjectSettings_property_gui/theme/custom_font>` does the same to the default fallback font. When a theme item is requested by a control node the custom project theme, if present, is checked first. Only if it doesn't have the item the default theme is checked."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:188
+#: ../../docs/tutorials/ui/gui_skinning.rst:193
 msgid "This allows you to configure the default look of every Godot control with a single theme resource, but you can go more granular than that. Every control node also has a :ref:`theme <class_Control_property_theme>` property, which allows you to set a custom theme for the branch of nodes starting with that control. This means that the control and all of its children, and their children in turn, would first check that custom theme resource before falling back on the project and the default themes."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:196
+#: ../../docs/tutorials/ui/gui_skinning.rst:201
 msgid "Instead of changing the project setting you can set the custom theme resource to the root-most control node of your entire UI branch to almost the same effect. While in the running project it will behave as expected, individual scenes will still display using the default theme when previewing or running them directly. To fix that you can set the same theme resource to the root control of each individual scene."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:202
+#: ../../docs/tutorials/ui/gui_skinning.rst:207
 msgid "For example, you can have a certain style for buttons in your project theme, but want a different look for buttons inside of a popup dialog. You can set a custom theme resource to the root control of your popup and define a different style for buttons within that resource. As long as the chain of control nodes between the root of the popup and the buttons is uninterrupted, those buttons will use the styles defined in the theme resource that is closest to them. All other controls will still be styled using the project-wide theme and the default theme styles."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:210
+#: ../../docs/tutorials/ui/gui_skinning.rst:215
 msgid "To sum it up, for an arbitrary control its theme item lookup would look something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:213
+#: ../../docs/tutorials/ui/gui_skinning.rst:218
 msgid "Check for local overrides of the same data type and name."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:214
-msgid "Using control's class name and parent class names:"
-msgstr ""
-
-#: ../../docs/tutorials/ui/gui_skinning.rst:216
-msgid "Check every control starting from itself and see if it has a theme property set;"
-msgstr ""
-
-#: ../../docs/tutorials/ui/gui_skinning.rst:217
-msgid "If it does, check that theme for the matching item of the same name, data and theme type;"
-msgstr ""
-
-#: ../../docs/tutorials/ui/gui_skinning.rst:218
-msgid "If there is no custom theme or it doesn't have the item, move to the parent control;"
-msgstr ""
-
 #: ../../docs/tutorials/ui/gui_skinning.rst:219
-msgid "Repeat steps a-c. until the root of the tree is reached, or a non-control node is reached."
+msgid "Using control's type variation, class name and parent class names:"
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:221
-msgid "Using control's class name check the project-wide theme, if it's present."
+msgid "Check every control starting from itself and see if it has a theme property set;"
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:222
-msgid "Using control's class name check the default theme."
+msgid "If it does, check that theme for the matching item of the same name, data and theme type;"
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_skinning.rst:223
+msgid "If there is no custom theme or it doesn't have the item, move to the parent control;"
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_skinning.rst:224
+msgid "Repeat steps a-c. until the root of the tree is reached, or a non-control node is reached."
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_skinning.rst:226
+msgid "Using control's type variation, class name and parent class names check the project-wide theme, if it's present."
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_skinning.rst:227
+msgid "Using control's type variation, class name and parent class names check the default theme."
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_skinning.rst:229
 msgid "Even if the item doesn't exist in any theme, a corresponding default value for that data type will be returned."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:228
+#: ../../docs/tutorials/ui/gui_skinning.rst:233
 msgid "Beyond controls"
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:230
+#: ../../docs/tutorials/ui/gui_skinning.rst:235
 msgid "Naturally, themes are an ideal type of resource for storing configuration for something visual. While the support for theming is built into control nodes, other nodes can use them as well, just like any other resource."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_skinning.rst:234
+#: ../../docs/tutorials/ui/gui_skinning.rst:239
 msgid "An example of using themes for something beyond controls can be a modulation of sprites for the same units on different teams in a strategy game. A theme resource can define a collection of colors, and sprites (with a help from scripts) can use those colors to draw the texture. The main benefit being that you could make different themes using the same theme items for red, blue, and green teams, and swap them with a single resource change."
 msgstr ""
 

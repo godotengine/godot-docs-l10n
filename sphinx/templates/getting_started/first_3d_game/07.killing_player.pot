@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,169 +16,173 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:4
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:6
 msgid "Killing the player"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:6
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:8
 msgid "We can kill enemies by jumping on them, but the player still can't die. Let's fix this."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:9
-msgid "We want to detect being hit by an enemy differently from squashing them. We want the player to die when they're moving on the floor, but not if they're in the air. We could use vector math to distinguish the two kinds of collisions. Instead, though, we will use an *Area* node, which works well for hitboxes."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:16
-msgid "Hitbox with the Area node"
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:11
+msgid "We want to detect being hit by an enemy differently from squashing them. We want the player to die when they're moving on the floor, but not if they're in the air. We could use vector math to distinguish the two kinds of collisions. Instead, though, we will use an :ref:`Area3D <class_Area3D>` node, which works well for hitboxes."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:18
-msgid "Head back to the *Player* scene and add a new *Area* node. Name it *MobDetector*. Add a *CollisionShape* node as a child of it."
+msgid "Hitbox with the Area node"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:21
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:20
+msgid "Head back to the ``player.tscn`` scene and add a new child node :ref:`Area3D <class_Area3D>`. Name it ``MobDetector`` Add a :ref:`CollisionShape3D <class_CollisionShape3D>` node as a child of it."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:24
 msgid "|image0|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:464
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:464
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:522
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:522
 msgid "image0"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:23
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:26
 msgid "In the *Inspector*, assign a cylinder shape to it."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:25
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:28
 msgid "|image1|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:465
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:465
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:523
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:523
 msgid "image1"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:27
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:30
 msgid "Here is a trick you can use to make the collisions only happen when the player is on the ground or close to it. You can reduce the cylinder's height and move it up to the top of the character. This way, when the player jumps, the shape will be too high up for the enemies to collide with it."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:33
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:36
 msgid "|image2|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:466
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:466
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:524
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:524
 msgid "image2"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:35
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:38
 msgid "You also want the cylinder to be wider than the sphere. This way, the player gets hit before colliding and being pushed on top of the monster's collision box."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:39
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:42
 msgid "The wider the cylinder, the more easily the player will get killed."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:41
-msgid "Next, select the *MobDetector* node again, and in the *Inspector*, turn off its *Monitorable* property. This makes it so other physics nodes cannot detect the area. The complementary *Monitoring* property allows it to detect collisions. Then, remove the *Collision -> Layer* and set the mask to the \"enemies\" layer."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:44
+msgid "Next, select the ``MobDetector`` node again, and in the *Inspector*, turn **off** its *Monitorable* property. This makes it so other physics nodes cannot detect the area. The complementary *Monitoring* property allows it to detect collisions. Then, remove the *Collision -> Layer* and set the mask to the \"enemies\" layer."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:47
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:50
 msgid "|image3|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:467
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:467
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:525
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:525
 msgid "image3"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:49
-msgid "When areas detect a collision, they emit signals. We're going to connect one to the *Player* node. In the *Node* tab, double-click the ``body_entered`` signal and connect it to the *Player*."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:52
+msgid "When areas detect a collision, they emit signals. We're going to connect one to the ``Player`` node. Select ``MobDetector`` and go to *Inspector*'s *Node* tab, double-click the ``body_entered`` signal and connect it to the ``Player``"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:53
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:56
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:468
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:468
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:526
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:526
 msgid "image4"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:55
-msgid "The *MobDetector* will emit ``body_entered`` when a *KinematicBody* or a *RigidBody* node enters it. As it only masks the \"enemies\" physics layers, it will only detect the *Mob* nodes."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:58
+msgid "The *MobDetector* will emit ``body_entered`` when a :ref:`CharacterBody3D <class_CharacterBody3D>` or a :ref:`RigidBody3D <class_RigidBody3D>` node enters it. As it only masks the \"enemies\" physics layers, it will only detect the ``Mob`` nodes."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:59
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:62
 msgid "Code-wise, we're going to do two things: emit a signal we'll later use to end the game and destroy the player. We can wrap these operations in a ``die()`` function that helps us put a descriptive label on the code."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:102
-msgid "Try the game again by pressing :kbd:`F5`. If everything is set up correctly, the character should die when an enemy runs into it."
-msgstr ""
-
 #: ../../docs/getting_started/first_3d_game/07.killing_player.rst:105
-msgid "However, note that this depends entirely on the size and position of the *Player* and the *Mob*\\ 's collision shapes. You may need to move them and resize them to achieve a tight game feel."
+msgid "Try the game again by pressing :kbd:`F5`. If everything is set up correctly, the character should die when an enemy runs into the collider. Note that without a ``Player``, the following line"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:110
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:118
+msgid "gives error because there is no $Player!"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:120
+msgid "Also note that the enemy colliding with the player and dying depends on the size and position of the ``Player`` and the ``Mob``\\ 's collision shapes. You may need to move them and resize them to achieve a tight game feel."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:125
 msgid "Ending the game"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:112
-msgid "We can use the *Player*\\ 's ``hit`` signal to end the game. All we need to do is connect it to the *Main* node and stop the *MobTimer* in reaction."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:127
+msgid "We can use the ``Player``\\ 's ``hit`` signal to end the game. All we need to do is connect it to the ``Main`` node and stop the ``MobTimer`` in reaction."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:116
-msgid "Open ``Main.tscn``, select the *Player* node, and in the *Node* dock, connect its ``hit`` signal to the *Main* node."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:131
+msgid "Open ``main.tscn``, select the ``Player`` node, and in the *Node* dock, connect its ``hit`` signal to the ``Main`` node."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:119
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:134
 msgid "|image5|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:469
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:469
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:527
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:527
 msgid "image5"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:121
-msgid "Get and stop the timer in the ``_on_Player_hit()`` function."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:136
+msgid "Get the timer, and stop it, in the ``_on_player_hit()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:137
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:152
 msgid "If you try the game now, the monsters will stop spawning when you die, and the remaining ones will leave the screen."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:140
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:155
 msgid "You can pat yourself in the back: you prototyped a complete 3D game, even if it's still a bit rough."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:143
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:158
 msgid "From there, we'll add a score, the option to retry the game, and you'll see how you can make the game feel much more alive with minimalistic animations."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:148
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:163
 msgid "Code checkpoint"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:150
-msgid "Here are the complete scripts for the *Main*, *Mob*, and *Player* nodes, for reference. You can use them to compare and check your code."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:165
+msgid "Here are the complete scripts for the ``Main``, ``Mob``, and ``Player`` nodes, for reference. You can use them to compare and check your code."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:153
-msgid "Starting with ``Main.gd``."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:168
+msgid "Starting with ``main.gd``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:226
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:230
 msgid "Next is ``Mob.gd``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:309
-msgid "Finally, the longest script, ``Player.gd``."
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:325
+msgid "Finally, the longest script, ``Player.gd``:"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:462
+#: ../../docs/getting_started/first_3d_game/07.killing_player.rst:520
 msgid "See you in the next lesson to add the score and the retry option."
 msgstr ""
 

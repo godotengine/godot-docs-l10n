@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "C# is a statically typed language. Therefore, you can't do the following:
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:21
-msgid "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly convert it to the desired derived type, ``Sprite`` in this case."
+msgid "The method ``GetNode()`` returns a ``Node`` instance. You must explicitly convert it to the desired derived type, ``Sprite2D`` in this case."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:24
@@ -45,7 +45,7 @@ msgid "**Casting and Type Checking**"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:28
-msgid "Throws ``InvalidCastException`` if the returned node cannot be cast to Sprite. You would use it instead of the ``as`` operator if you are pretty sure it won't fail."
+msgid "Throws ``InvalidCastException`` if the returned node cannot be cast to Sprite2D. You would use it instead of the ``as`` operator if you are pretty sure it won't fail."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:36
@@ -53,7 +53,7 @@ msgid "**Using the AS operator**"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:38
-msgid "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite, and for that reason, it cannot be used with value types."
+msgid "The ``as`` operator returns ``null`` if the node cannot be cast to Sprite2D, and for that reason, it cannot be used with value types."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:47
@@ -77,114 +77,94 @@ msgid "**Type checking using the IS operator**"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:68
-msgid "To check if the node can be cast to Sprite, you can use the ``is`` operator. The ``is`` operator returns false if the node cannot be cast to Sprite, otherwise it returns true."
+msgid "To check if the node can be cast to Sprite2D, you can use the ``is`` operator. The ``is`` operator returns false if the node cannot be cast to Sprite2D, otherwise it returns true. Note that when the ``is`` operator is used against ``null`` the result is always going to be ``false``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:79
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:85
+msgid "You can also declare a new variable to conditionally store the result of the cast if the ``is`` operator returns ``true``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:96
 msgid "For more advanced type checking, you can look into `Pattern Matching <https://docs.microsoft.com/en-us/dotnet/csharp/pattern-matching>`_."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:84
-msgid "C# signals"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:86
-msgid "For a complete C# example, see the **Handling a signal** section in the step by step :ref:`doc_scripting` tutorial."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:88
-msgid "Declaring a signal in C# is done with the ``[Signal]`` attribute on a delegate."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:98
-msgid "These signals can then be connected either in the editor or from code with ``Connect``. If you want to connect a signal in the editor, you need to (re)build the project assemblies to see the new signal. This build can be manually triggered by clicking the “Build” button at the top right corner of the editor window."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:119
-msgid "Emitting signals is done with the ``EmitSignal`` method."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:129
-msgid "Notice that you can always reference a signal name with the ``nameof`` keyword (applied on the delegate itself)."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:131
-msgid "It is possible to bind values when establishing a connection by passing a Godot array."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:151
-msgid "Signals support parameters and bound values of all the `built-in types <https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/keywords/built-in-types-table>`_ and Classes derived from :ref:`Godot.Object <class_Object>`. Consequently, any ``Node`` or ``Reference`` will be compatible automatically, but custom data objects will need to extend from `Godot.Object` or one of its subclasses."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:163
-msgid "Finally, signals can be created by calling ``AddUserSignal``, but be aware that it should be executed before any use of said signals (with ``Connect`` or ``EmitSignal``)."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:174
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:100
 msgid "Preprocessor defines"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:176
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:102
 msgid "Godot has a set of defines that allow you to change your C# code depending on the environment you are compiling to."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:179
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:105
 msgid "If you created your project before Godot 3.2, you have to modify or regenerate your `csproj` file to use this feature (compare ``<DefineConstants>`` with a new 3.2+ project)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:184
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:110
 msgid "Examples"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:186
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:112
 msgid "For example, you can change code based on the platform:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:203
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:129
 msgid "Or you can detect which engine your code is in, useful for making cross-engine libraries:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:219
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:144
+msgid "Or you can write scripts that target multiple Godot versions and can take advantage that are only available on some of those versions:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:159
 msgid "Full list of defines"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:221
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:161
 msgid "``GODOT`` is always defined for Godot projects."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:223
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:163
+msgid "``TOOLS`` is defined when building with the Debug configuration (editor and editor player)."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:165
+msgid "``GODOT_REAL_T_IS_DOUBLE`` is defined when the ``GodotFloat64`` property is set to ``true``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:167
 msgid "One of ``GODOT_64`` or ``GODOT_32`` is defined depending on if the architecture is 64-bit or 32-bit."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:225
-msgid "One of ``GODOT_X11``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, ``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. These names may change in the future. These are created from the ``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every possible OS the method returns is an OS that Godot with Mono runs on."
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:169
+msgid "One of ``GODOT_LINUXBSD``, ``GODOT_WINDOWS``, ``GODOT_OSX``, ``GODOT_ANDROID``, ``GODOT_IOS``, ``GODOT_HTML5``, or ``GODOT_SERVER`` depending on the OS. These names may change in the future. These are created from the ``get_name()`` method of the :ref:`OS <class_OS>` singleton, but not every possible OS the method returns is an OS that Godot with .NET runs on."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:232
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:176
+msgid "``GODOTX``, ``GODOTX_Y``, ``GODOTX_Y_Z``, ``GODOTx_OR_GREATER``, ``GODOTX_y_OR_GREATER``, and ``GODOTX_Y_z_OR_GREATER``, where ``X``, ``Y``, and ``Z`` are replaced by the current major, minor and patch version of Godot. ``x``, ``y``, and ``z`` are replaced by 0 to to the current version for that component."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:184
+msgid "These defines were first added in Godot 4.0.4 and 4.1. Version defines for prior versions do not exist, regardless of the current Godot version."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:187
+msgid "For example: Godot 4.0.5 defines ``GODOT4``, ``GODOT4_OR_GREATER``, ``GODOT4_0``, ``GODOT4_0_OR_GREATER``, ``GODOT4_0_5``, ``GODOT4_0_4_OR_GREATER``, and ``GODOT4_0_5_OR_GREATER``. Godot 4.3.2 defines ``GODOT4``, ``GODOT4_OR_GREATER``, ``GODOT4_3``, ``GODOT4_0_OR_GREATER``, ``GODOT4_1_OR_GREATER``, ``GODOT4_2_OR_GREATER``, ``GODOT4_3_OR_GREATER``, ``GODOT4_3_2``, ``GODOT4_3_0_OR_GREATER``, ``GODOT4_3_1_OR_GREATER``, and ``GODOT4_3_2_OR_GREATER``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:195
 msgid "When **exporting**, the following may also be defined depending on the export features:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:234
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:197
 msgid "One of ``GODOT_PC``, ``GODOT_MOBILE``, or ``GODOT_WEB`` depending on the platform type."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:236
-msgid "One of ``GODOT_ARM64_V8A`` or ``GODOT_ARMEABI_V7A`` on Android only depending on the architecture."
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:199
+msgid "One of ``GODOT_WINDOWS``, ``GODOT_LINUXBSD``, ``GODOT_MACOS``, ``GODOT_UWP``, ``GODOT_HAIKU``, ``GODOT_ANDROID``, ``GODOT_IOS``, or ``GODOT_WEB`` depending on the platform."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:238
-msgid "One of ``GODOT_ARM64`` or ``GODOT_ARMV7`` on iOS only depending on the architecture."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:240
-msgid "Any of ``GODOT_S3TC``, ``GODOT_ETC``, and ``GODOT_ETC2`` depending on the texture compression type."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:242
-msgid "Any custom features added in the export menu will be capitalized and prefixed: ``foo`` -> ``GODOT_FOO``."
-msgstr ""
-
-#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:244
+#: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:201
 msgid "To see an example project, see the OS testing demo: https://github.com/godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
 

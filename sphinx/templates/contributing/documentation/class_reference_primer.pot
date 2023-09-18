@@ -1,0 +1,475 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:4
+msgid "Class reference primer"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:6
+msgid "This page explains how to write the class reference. You will learn where to write new descriptions for the classes, methods, and properties for Godot's built-in node types."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:12
+msgid "To learn to submit your changes to the Godot project using the Git version control system, see :ref:`doc_updating_the_class_reference`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:15
+msgid "The reference for each class is contained in an XML file like the one below:"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:65
+msgid "It starts with brief and long descriptions. In the generated docs, the brief description is always at the top of the page, while the long description lies below the list of methods, variables, and constants. You can find methods, member variables, constants, and signals in separate XML nodes."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:70
+msgid "For each, you want to learn how they work in Godot's source code. Then, fill their documentation by completing or improving the text in these tags:"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:73
+msgid "`<brief_description>`"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:74
+msgid "`<description>`"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:75
+#: ../../docs/contributing/documentation/class_reference_primer.rst:80
+msgid "`<constant>`"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:76
+msgid "`<method>` (in its `<description>` tag; return types and arguments don't take separate documentation strings)"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:78
+msgid "`<member>`"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:79
+msgid "`<signal>` (in its `<description>` tag; arguments don't take separate documentation strings)"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:82
+msgid "Write in a clear and simple language. Always follow the :ref:`writing guidelines <doc_docs_writing_guidelines>` to keep your descriptions short and easy to read. **Do not leave empty lines** in the descriptions: each line in the XML file will result in a new paragraph, even if it is empty."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:90
+msgid "How to edit class XML"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:92
+msgid "Edit the file for your chosen class in ``doc/classes/`` to update the class reference. The folder contains an XML file for each class. The XML lists the constants and methods you will find in the class reference. Godot generates and updates the XML automatically."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:97
+msgid "For some modules in the engine's source code, you'll find the XML files in the ``modules/<module_name>/doc_classes/`` directory instead."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:100
+msgid "Edit it using your favorite text editor. If you use a code editor, make sure that it doesn't change the indent style: you should use tabs for the XML and four spaces inside BBCode-style blocks. More on that below."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:104
+msgid "To check that the modifications you've made are correct in the generated documentation, navigate to the ``doc/`` folder and run the command ``make rst``. This will convert the XML files to the online documentation's format and output errors if anything's wrong."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:109
+msgid "Alternatively, you can build Godot and open the modified page in the built-in code reference. To learn how to compile the engine, read the :ref:`compilation guide <toc-devel-compiling>`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:113
+msgid "We recommend using a code editor that supports XML files like Vim, Atom, Visual Studio Code, Notepad++, or another to comfortably edit the file. You can also use their search feature to find classes and properties quickly."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:119
+msgid "If you use Visual Studio Code, you can install the `vscode-xml extension <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml>`__ to get linting for class reference XML files."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:126
+msgid "Improve formatting with BBCode style tags"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:128
+msgid "Godot's XML class reference supports BBCode-like tags for linking as well as formatting text and code. In the tables below you can find the available tags, usage examples and the results after conversion to reStructuredText."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:132
+msgid "Linking"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:134
+msgid "Whenever you link to a member of another class, you need to specify the class name. For links to the same class, the class name is optional and can be omitted."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:138
+#: ../../docs/contributing/documentation/class_reference_primer.rst:173
+#: ../../docs/contributing/documentation/class_reference_primer.rst:195
+msgid "Tag and Description"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:138
+#: ../../docs/contributing/documentation/class_reference_primer.rst:173
+#: ../../docs/contributing/documentation/class_reference_primer.rst:195
+msgid "Example"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:138
+#: ../../docs/contributing/documentation/class_reference_primer.rst:173
+#: ../../docs/contributing/documentation/class_reference_primer.rst:195
+msgid "Result"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[Class]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Link to class"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:140
+msgid "``Move the [Sprite2D].``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:140
+msgid "Move the :ref:`class_Sprite2D`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[annotation Class.name]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Link to annotation"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:143
+msgid "``See [annotation @GDScript.@export].``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:143
+msgid "See :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[constant Class.name]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Link to constant"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:146
+msgid "``See [constant @GlobalScope.KEY_F1].``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:146
+msgid "See :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[enum Class.name]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Link to enum"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:149
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:149
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[method Class.name]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Link to method"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:152
+msgid "``Call [method Node3D.hide].``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:152
+msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[member Class.name]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Link to member"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:155
+msgid "``Get [member Node2D.scale].``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:155
+msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[signal Class.name]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Link to signal"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:158
+msgid "``Emit [signal Node.renamed].``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:158
+msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[theme_item Class.name]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Link to theme item"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:161
+msgid "``See [theme_item Label.font].``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:161
+msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:167
+msgid "Currently only :ref:`class_@GDScript` has annotations."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:170
+msgid "Formatting text"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[param name]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Formats a parameter name (as code)"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:175
+msgid "``Takes [param size] for the size.``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:175
+msgid "Takes ``size`` for the size."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[br]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Line break"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``Line 1.[br]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``Line 2.``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Line 1."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Line 2."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[b]`` ``[/b]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Bold"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:181
+msgid "``Some [b]bold[/b] text.``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:181
+msgid "Some **bold** text."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[i]`` ``[/i]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Italic"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:184
+msgid "``Some [i]italic[/i] text.``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:184
+msgid "Some *italic* text."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[kbd]`` ``[/kbd]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Keyboard/mouse shortcut"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:187
+msgid "``Some [kbd]Ctrl + C[/kbd] key.``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:187
+msgid "Some :kbd:`Ctrl + C` key."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:192
+msgid "Formatting code"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[code]`` ``[/code]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Monospace"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:197
+msgid "``Some [code]monospace[/code] text.``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:197
+msgid "Some ``monospace`` text."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[codeblock]`` ``[/codeblock]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Multiline preformatted block"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:200
+#: ../../docs/contributing/documentation/class_reference_primer.rst:200
+#: ../../docs/contributing/documentation/class_reference_primer.rst:203
+#: ../../docs/contributing/documentation/class_reference_primer.rst:203
+#: ../../docs/contributing/documentation/class_reference_primer.rst:206
+#: ../../docs/contributing/documentation/class_reference_primer.rst:206
+#: ../../docs/contributing/documentation/class_reference_primer.rst:209
+#: ../../docs/contributing/documentation/class_reference_primer.rst:209
+msgid "*See below.*"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[codeblocks]`` ``[/codeblocks]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "Codeblock for multiple languages"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[gdscript]`` ``[/gdscript]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "GDScript codeblock tab in codeblocks"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "``[csharp]`` ``[/csharp]``"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:0
+msgid "C# codeblock tab in codeblocks"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:215
+msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:216
+msgid "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:220
+msgid "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, always use **four spaces** for indentation. The parser will delete tabs."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:223
+msgid "For example:"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:233
+msgid "Will display as:"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:241
+msgid "If you need to have different code version in GDScript and C#, use ``[codeblocks]`` instead. If you use ``[codeblocks]``, you also need to have at least one of the language-specific tags, ``[gdscript]`` and ``[csharp]``."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:245
+msgid "Always write GDScript code examples first! You can use this `experimental code translation tool <https://github.com/HaSa1002/codetranslator>`_ to speed up your workflow."
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:266
+msgid "The above will display as:"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:283
+msgid "To denote important information, add a paragraph starting with \"[b]Note:[/b]\" at the end of the description:"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:290
+msgid "To denote crucial information that could cause security issues or loss of data if not followed carefully, add a paragraph starting with \"[b]Warning:[/b]\" at the end of the description:"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:298
+msgid "For deprecated properties, add a paragraph starting with \"[i]Deprecated.[/i]\". Notice the use of italics instead of bold:"
+msgstr ""
+
+#: ../../docs/contributing/documentation/class_reference_primer.rst:305
+msgid "In all the paragraphs described above, make sure the punctuation is part of the BBCode tags for consistency."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

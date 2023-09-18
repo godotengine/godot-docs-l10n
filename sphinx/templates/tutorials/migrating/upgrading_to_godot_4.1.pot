@@ -1,0 +1,817 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:4
+msgid "Upgrading from Godot 4.0 to Godot 4.1"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:6
+msgid "For most games and apps made with 4.0, it should be relatively safe to migrate to 4.1. This page intends to cover everything you need to pay attention to when migrating your project."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:11
+msgid "Breaking changes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:13
+msgid "If you are migrating from 4.0 to 4.1, the breaking changes listed here might affect you. Changes are grouped by areas/systems."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:18
+msgid "The GDExtension API completely breaks compatibility in 4.1, so it's not included in the table below. See the :ref:`updating_your_gdextension_for_godot_4_1` section for more information."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:22
+msgid "This article indicates whether each breaking change affects GDScript and whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:25
+msgid "**Binary compatible** - Existing binaries will load and execute successfully without recompilation, and the run-time behavior won't change."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:27
+msgid "**Source compatible** - Source code will compile successfully without changes when upgrading Godot."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:31
+msgid "Core"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:34
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:52
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:123
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:139
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:179
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:201
+msgid "Change"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:34
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:52
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:123
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:139
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:179
+msgid "GDScript Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:34
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:52
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:123
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:139
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:179
+msgid "C# Binary Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:34
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:52
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:123
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:139
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:179
+msgid "C# Source Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:34
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:52
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:66
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:123
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:139
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:179
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:201
+msgid "Introduced"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:36
+msgid "**Basis**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:37
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:41
+msgid "Method ``looking_at`` adds a new ``use_model_front`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:37
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:37
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:37
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:39
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:41
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:41
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:41
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:43
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:43
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:45
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:45
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:56
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:56
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:57
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:57
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:59
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:81
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:81
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:83
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:83
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:84
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:84
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:94
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:94
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:96
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:96
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:97
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:97
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:100
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:100
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:126
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:128
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:132
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:147
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:172
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:172
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:184
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:185
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:186
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:191
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:191
+msgid "|✔️|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:37
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:41
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:83
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:84
+msgid "`GH-76082`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:38
+msgid "**Object**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:39
+msgid "Method ``get_meta_list`` changes return type from ``PackedStringArray`` to ``Array[StringName]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:39
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:39
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:45
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:59
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:59
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:110
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:110
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:110
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:112
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:112
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:112
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:114
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:114
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:114
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:116
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:116
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:116
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:126
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:126
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:128
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:132
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:143
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:143
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:143
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:145
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:145
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:145
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:146
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:146
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:146
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:147
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:147
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:148
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:148
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:148
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:150
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:150
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:150
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:151
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:151
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:151
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:154
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:154
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:154
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:158
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:158
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:158
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:160
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:160
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:160
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:161
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:161
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:161
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:162
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:162
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:162
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:172
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:182
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:182
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:182
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:184
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:184
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:185
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:185
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:186
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:186
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:188
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:188
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:188
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:189
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:189
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:189
+msgid "|❌|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:39
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:59
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:126
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:128
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:130
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:132
+msgid "`GH-76418`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:40
+msgid "**Transform3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:42
+msgid "**UndoRedo**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:43
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:191
+msgid "Method ``create_action`` adds a new ``backward_undo_ops`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:43
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:56
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:57
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:81
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:83
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:84
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:94
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:96
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:97
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:100
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:128
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:132
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:191
+msgid "|✔️ with compat|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:43
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:191
+msgid "`GH-76688`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:44
+msgid "**WorkerThreadPool**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:45
+msgid "Method ``wait_for_task_completion`` changes return type from ``void`` to ``Error``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:45
+msgid "`GH-77143`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:49
+msgid "Animation"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:54
+msgid "**AnimationNode**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:55
+msgid "Method ``_process`` adds a new ``test_only`` parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:56
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:57
+msgid "`GH-75759`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:56
+msgid "Method ``blend_input`` adds a new ``test_only`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:57
+msgid "Method ``blend_node`` adds a new ``test_only`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:58
+msgid "**AnimationNodeStateMachinePlayback**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:59
+msgid "Method ``get_travel_path`` changes return type from ``PackedStringArray`` to ``Array[StringName]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:63
+msgid "2D nodes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:68
+msgid "**PathFollow2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:69
+msgid "Property ``lookahead`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:69
+msgid "`GH-72842`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:73
+msgid "3D nodes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:78
+msgid "**Geometry3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:79
+msgid "Method ``segment_intersects_convex`` changes ``planes`` parameter type from untyped ``Array`` to ``Array[Plane]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:80
+msgid "**MeshInstance3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:81
+msgid "Method ``create_multiple_convex_collisions`` adds a new ``settings`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:81
+msgid "`GH-72152`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:82
+msgid "**Node3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:83
+msgid "Method ``look_at`` adds a new ``use_model_front`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:84
+msgid "Method ``look_at_from_position`` adds a new ``use_model_front`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:88
+msgid "GUI nodes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:93
+msgid "**CodeEdit**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:94
+msgid "Method ``add_code_completion_option`` adds a new ``location`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:94
+msgid "`GH-75746`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:95
+msgid "**RichTextLabel**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:96
+msgid "Method ``push_list`` adds a new ``bullet`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:96
+msgid "`GH-75017`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:97
+msgid "Method ``push_paragraph`` adds a new ``justification_flags`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:97
+msgid "`GH-75250`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:98
+msgid "Method ``push_paragraph`` adds a new ``tab_stops`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:98
+msgid "`GH-76401`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:99
+msgid "**Tree**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:100
+msgid "Method ``edit_selected`` adds a new ``force_edit`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:100
+msgid "`GH-76794`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:104
+msgid "Physics"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:109
+msgid "**Area2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:110
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:112
+msgid "Property ``priority`` changes type from ``float`` to ``int``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:110
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:112
+msgid "`GH-72749`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:111
+msgid "**Area3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:113
+msgid "**PhysicsDirectSpaceState2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:114
+msgid "Method ``collide_shape`` changes return type from ``Array[PackedVector2Array]`` to ``Array[Vector2]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:114
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:116
+msgid "`GH-75260`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:115
+msgid "**PhysicsDirectSpaceState3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:116
+msgid "Method ``collide_shape`` changes return type from ``Array[PackedVector3Array]`` to ``Array[Vector3]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:120
+msgid "Rendering"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:125
+msgid "**RDShaderFile**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:126
+msgid "Method ``get_version_list`` changes return type from ``PackedStringArray`` to ``Array[StringName]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:127
+msgid "**RenderingDevice**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:128
+msgid "Method ``draw_list_begin`` changes ``storage_textures`` parameter type from untyped ``Array`` to ``Array[RID]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:129
+msgid "**RenderingServer**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:130
+msgid "Method ``global_shader_parameter_get_list`` changes return type from ``PackedStringArray`` to ``Array[StringName]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:131
+msgid "**SurfaceTool**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:132
+msgid "Method ``add_triangle_fan`` changes ``tangents`` parameter type from untyped ``Array`` to ``Array[Plane]``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:136
+msgid "Navigation"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:141
+msgid "**NavigationAgent2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:147
+msgid "Method ``set_velocity`` replaced with ``velocity`` property"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:143
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:145
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:146
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:147
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:148
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:150
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:151
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:154
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:158
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:160
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:161
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:162
+msgid "`GH-69988`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:143
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:148
+msgid "Property ``time_horizon`` split into ``time_horizon_agents`` and ``time_horizon_obstacles``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:144
+msgid "**NavigationAgent3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:145
+msgid "Property ``agent_height_offset`` renamed to ``path_height_offset``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:146
+msgid "Property ``ignore_y`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:149
+msgid "**NavigationObstacle2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:150
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:153
+msgid "Property ``estimate_radius`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:151
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:154
+msgid "Method ``get_rid`` renamed to ``get_agent_rid``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:152
+msgid "**NavigationObstacle3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:155
+msgid "**NavigationServer2D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:160
+msgid "Method ``agent_set_callback`` renamed to ``agent_set_avoidance_callback``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:161
+msgid "Method ``agent_set_target_velocity`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:158
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:162
+msgid "Method ``agent_set_time_horizon`` split into ``agent_set_time_horizon_agents`` and ``agent_set_time_horizon_obstacles``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:159
+msgid "**NavigationServer3D**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:166
+msgid "Networking"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:171
+msgid "**WebRTCPeerConnectionExtension**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:172
+msgid "Method ``_create_data_channel`` changes return type from ``Object`` to ``WebRTCDataChannel``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:172
+msgid "`GH-78237`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:176
+msgid "Editor plugins"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:181
+msgid "**AnimationTrackEditPlugin**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:182
+msgid "Type ``AnimationTrackEditPlugin`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:182
+msgid "`GH-76413`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:183
+msgid "**EditorInterface**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:184
+msgid "Type ``EditorInterface`` changes inheritance from ``Node`` to ``Object``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:184
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:185
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:186
+msgid "`GH-76176`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:185
+msgid "Method ``set_movie_maker_enabled`` replaced with ``movie_maker_enabled`` property"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:186
+msgid "Method ``is_movie_maker_enabled`` replaced with ``movie_maker_enabled`` property"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:187
+msgid "**EditorResourcePreviewGenerator**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:188
+msgid "Method ``_generate`` adds a new ``metadata`` parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:188
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:189
+msgid "`GH-64628`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:189
+msgid "Method ``_generate_from_path`` adds a new ``metadata`` parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:190
+msgid "**EditorUndoRedoManager**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:196
+msgid "Behavior changes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:198
+msgid "In 4.1 some behavior changes have been introduced, which might require you to adjust your project."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:203
+msgid "**SubViewportContainer**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:204
+msgid "When input events should reach SubViewports and their children, ``SubViewportContainer.mouse_filter`` now needs to be ``MOUSE_FILTER_STOP`` or ``MOUSE_FILTER_PASS``. See `GH-79271`_ for details."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:204
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:205
+msgid "`GH-57894`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:205
+msgid "Multiple layered ``SubViewportContainer`` nodes, that should all receive mouse input events, now need to be replaced by ``Area2D`` nodes. See `GH-79128`_ for details."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:206
+msgid "**Viewport**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:207
+msgid "``Viewport`` nodes, that have Physics Picking enabled, now automatically set InputEvents as handled. See `GH-79897`_ for workarounds."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:207
+msgid "`GH-77595`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:243
+msgid "Updating your GDExtension for 4.1"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:245
+msgid "GDExtension is still in beta. Until it's marked as stable, compatibility may break when upgrading to a new minor version of Godot."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:248
+msgid "In order to fix a serious bug, in Godot 4.1 we had to break binary compatibility in a big way and source compatibility in a small way."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:251
+msgid "This means that GDExtensions made for Godot 4.0 will need to be recompiled for Godot 4.1 (using the  ``4.1`` branch of godot-cpp), with a small change to their source code."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:254
+msgid "In Godot 4.0, your \"entry_symbol\" function looks something like this:"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:268
+msgid "However, for Godot 4.1, it should look like:"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:282
+msgid "There are two small changes:"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:284
+msgid "The first argument changes from ``const GDExtensionInterface *p_interface`` to ``GDExtensionInterfaceGetProcAddress p_get_proc_address``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:285
+msgid "The constructor for the `init_obj` variable now receives ``p_get_proc_address`` as its first parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:287
+msgid "You also need to add an extra ``compatibility_minimum`` line to your ``.gdextension`` file, so that it looks something like::"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.1.rst:294
+msgid "This lets Godot know that your GDExtension has been updated and is safe to load in Godot 4.1."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

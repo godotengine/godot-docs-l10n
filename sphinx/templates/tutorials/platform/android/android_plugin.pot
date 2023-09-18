@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,96 +16,92 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:4
+#: ../../docs/tutorials/platform/android/android_plugin.rst:6
 msgid "Creating Android plugins"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:7
+#: ../../docs/tutorials/platform/android/android_plugin.rst:9
 msgid "Introduction"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:9
+#: ../../docs/tutorials/platform/android/android_plugin.rst:11
 msgid "Android plugins are powerful tools to extend the capabilities of the Godot engine by tapping into the functionality provided by the Android platform and ecosystem."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:12
+#: ../../docs/tutorials/platform/android/android_plugin.rst:14
 msgid "Mobile gaming monetization is one such example since it requires features and capabilities that don't belong to the core feature set of a game engine:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:15
+#: ../../docs/tutorials/platform/android/android_plugin.rst:17
 msgid "Analytics"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:16
+#: ../../docs/tutorials/platform/android/android_plugin.rst:18
 msgid "In-app purchases"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:17
+#: ../../docs/tutorials/platform/android/android_plugin.rst:19
 msgid "Receipt validation"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:18
+#: ../../docs/tutorials/platform/android/android_plugin.rst:20
 msgid "Install tracking"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:19
+#: ../../docs/tutorials/platform/android/android_plugin.rst:21
 msgid "Ads"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:20
+#: ../../docs/tutorials/platform/android/android_plugin.rst:22
 msgid "Video ads"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:21
+#: ../../docs/tutorials/platform/android/android_plugin.rst:23
 msgid "Cross-promotion"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:22
+#: ../../docs/tutorials/platform/android/android_plugin.rst:24
 msgid "In-game soft & hard currencies"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:23
+#: ../../docs/tutorials/platform/android/android_plugin.rst:25
 msgid "Promo codes"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:24
+#: ../../docs/tutorials/platform/android/android_plugin.rst:26
 msgid "A/B testing"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:25
+#: ../../docs/tutorials/platform/android/android_plugin.rst:27
 msgid "Login"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:26
+#: ../../docs/tutorials/platform/android/android_plugin.rst:28
 msgid "Cloud saves"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:27
+#: ../../docs/tutorials/platform/android/android_plugin.rst:29
 msgid "Leaderboards and scores"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:28
+#: ../../docs/tutorials/platform/android/android_plugin.rst:30
 msgid "User support & feedback"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:29
+#: ../../docs/tutorials/platform/android/android_plugin.rst:31
 msgid "Posting to Facebook, Twitter, etc."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:30
+#: ../../docs/tutorials/platform/android/android_plugin.rst:32
 msgid "Push notifications"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:33
+#: ../../docs/tutorials/platform/android/android_plugin.rst:35
 msgid "Android plugin"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:35
-msgid "While introduced in Godot 3.2, the Android plugin system got a significant architecture update starting with Godot 3.2.2. The new plugin system is backward-incompatible with the previous one, but both systems are kept functional in future releases of the 3.2.x branch. Since we previously did not version the Android plugin systems, the new one is now labelled ``v1`` and is the starting point for the modern Godot Android ecosystem."
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_plugin.rst:39
-msgid "**Note:** In Godot 4.0, the previous system will be fully deprecated and removed."
+#: ../../docs/tutorials/platform/android/android_plugin.rst:37
+msgid "While introduced in Godot 3.2, the Android plugin system got a significant architecture update starting with Godot 3.2.2. The new plugin system is backward-incompatible with the previous one and in Godot 4.0, the previous system was fully deprecated and removed. Since we previously did not version the Android plugin systems, the new one is now labelled ``v1`` and is the starting point for the modern Godot Android ecosystem."
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:41
@@ -141,7 +137,7 @@ msgid "Add the Godot engine library as a dependency to your plugin module:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:59
-msgid "Download the Godot engine library (``godot-lib.<version>.<status>.aar``) from the `Godot download page <https://godotengine.org/download>`_ (e.g.: ``godot-lib.3.4.2.stable.release.aar``)."
+msgid "Download the Godot engine library (``godot-lib.<version>.<status>.aar``) from the `Godot download page <https://godotengine.org/download>`_ (e.g: ``godot-lib.4.0.stable.aar``)."
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:60
@@ -249,27 +245,31 @@ msgid "Loading and using an Android plugin"
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:124
-msgid "Move the plugin configuration file (e.g.: ``MyPlugin.gdap``) and, if any, its local binary (e.g.: ``MyPlugin.aar``) and dependencies to the Godot project's ``res://android/plugins`` directory."
+msgid "Move the plugin configuration file (e.g: ``MyPlugin.gdap``) and, if any, its local binary (e.g: ``MyPlugin.aar``) and dependencies to the Godot project's ``res://android/plugins`` directory."
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:126
 msgid "The Godot editor will automatically parse all ``.gdap`` files in the ``res://android/plugins`` directory and show a list of detected and toggleable plugins in the Android export presets window under the **Plugins** section."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_plugin.rst:130
-msgid "From your script:"
+#: ../../docs/tutorials/platform/android/android_plugin.rst:128
+msgid "In order to allow GDScript to communicate with your Java Singleton, you must annotate your function with ``@UsedByGodot``. The name called from GDScript must match the function name exactly. There is **no** coercing ``snake_case`` to ``camelCase``."
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/android_plugin.rst:132
+msgid "From your script::"
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:140
-msgid "Bundling GDNative resources"
+msgid "Bundling GDExtension resources"
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:142
-msgid "An Android plugin can define and provide C/C++ GDNative resources, either to provide and/or access functionality from the game logic. The GDNative resources can be bundled within the plugin ``aar`` file which simplifies the distribution and deployment process:"
+msgid "An Android plugin can define and provide C/C++ GDExtension resources, either to provide and/or access functionality from the game logic. The GDExtension resources can be bundled within the plugin ``aar`` file which simplifies the distribution and deployment process:"
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:145
-msgid "The shared libraries (``.so``) for the defined GDNative libraries will be automatically bundled by the ``aar`` build system."
+msgid "The shared libraries (``.so``) for the defined GDExtension libraries will be automatically bundled by the ``aar`` build system."
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:146
@@ -277,7 +277,7 @@ msgid "Godot ``*.gdnlib`` and ``*.gdns`` resource files must be manually defined
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:149
-msgid "For GDNative libraries, the plugin singleton object must override the ``org.godotengine.godot.plugin.GodotPlugin::getPluginGDNativeLibrariesPaths()`` method, and return the paths to the bundled GDNative libraries config files (``*.gdnlib``). The paths must be relative to the ``assets`` directory. At runtime, the plugin will provide these paths to Godot core which will use them to load and initialize the bundled GDNative libraries."
+msgid "For GDExtension libraries, the plugin singleton object must override the ``org.godotengine.godot.plugin.GodotPlugin::getPluginGDNativeLibrariesPaths()`` method, and return the paths to the bundled GDExtension libraries config files (``*.gdextension``). The paths must be relative to the ``assets`` directory. At runtime, the plugin will provide these paths to Godot core which will use them to load and initialize the bundled GDExtension libraries."
 msgstr ""
 
 #: ../../docs/tutorials/platform/android/android_plugin.rst:154

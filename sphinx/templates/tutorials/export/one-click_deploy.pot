@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,31 +88,31 @@ msgstr ""
 msgid "Click the button to export to the desired platform in one click."
 msgstr ""
 
-#: ../../docs/tutorials/export/one-click_deploy.rst:63
+#: ../../docs/tutorials/export/one-click_deploy.rst:65
 msgid "Troubleshooting"
 msgstr ""
 
-#: ../../docs/tutorials/export/one-click_deploy.rst:66
+#: ../../docs/tutorials/export/one-click_deploy.rst:68
 msgid "Android"
 msgstr ""
 
-#: ../../docs/tutorials/export/one-click_deploy.rst:68
+#: ../../docs/tutorials/export/one-click_deploy.rst:70
 msgid "If you can't see the device in the list of devices when running the ``adb devices`` command in a terminal, it will not be visible by Godot either. To resolve this:"
 msgstr ""
 
-#: ../../docs/tutorials/export/one-click_deploy.rst:72
+#: ../../docs/tutorials/export/one-click_deploy.rst:74
 msgid "Check if USB debugging is enabled *and authorized on the device*. Try unlocking your device and accepting the authorization prompt if you see any. If you can't see this prompt, running ``adb devices`` on your PC should make the authorization prompt appear on the device."
 msgstr ""
 
-#: ../../docs/tutorials/export/one-click_deploy.rst:76
+#: ../../docs/tutorials/export/one-click_deploy.rst:78
 msgid "Try `revoking the debugging authorization <https://stackoverflow.com/questions/23081263/adb-android-device-unauthorized>`__ in the device's developer settings, then follow the steps again."
 msgstr ""
 
-#: ../../docs/tutorials/export/one-click_deploy.rst:78
+#: ../../docs/tutorials/export/one-click_deploy.rst:80
 msgid "Try using USB debugging instead of wireless debugging or vice versa. Sometimes, one of those can work better than the other."
 msgstr ""
 
-#: ../../docs/tutorials/export/one-click_deploy.rst:80
+#: ../../docs/tutorials/export/one-click_deploy.rst:82
 msgid "On Linux, you may be missing the required `udev rules <https://github.com/M0Rf30/android-udev-rules>`__ for your device to be recognized."
 msgstr ""
 

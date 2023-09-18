@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,457 +16,457 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:4
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:6
 msgid "Spawning monsters"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:6
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:8
 msgid "In this part, we're going to spawn monsters along a path randomly. By the end, you will have monsters roaming the game board."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:9
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:11
 msgid "|image0|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:336
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:336
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:334
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:334
 msgid "image0"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:11
-msgid "Double-click on ``Main.tscn`` in the *FileSystem* dock to open the *Main* scene."
-msgstr ""
-
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:13
-msgid "Before drawing the path, we're going to change the game resolution. Our game has a default window size of ``1024x600``. We're going to set it to ``720x540``, a nice little box."
+msgid "Double-click on ``main.tscn`` in the *FileSystem* dock to open the ``Main`` scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:17
-msgid "Go to *Project -> Project Settings*."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:15
+msgid "Before drawing the path, we're going to change the game resolution. Our game has a default window size of ``1152x648``. We're going to set it to ``720x540``, a nice little box."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:19
-msgid "|image1|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:337
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:337
-msgid "image1"
+msgid "Go to *Project -> Project Settings*."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:21
+msgid "|image1|"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:335
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:335
+msgid "image1"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:23
 msgid "In the left menu, navigate down to *Display -> Window*. On the right, set the *Width* to ``720`` and the *Height* to ``540``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:24
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:26
 msgid "|image2|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:338
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:338
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:336
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:336
 msgid "image2"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:27
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:29
 msgid "Creating the spawn path"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:29
-msgid "Like you did in the 2D game tutorial, you're going to design a path and use a *PathFollow* node to sample random locations on it."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:31
+msgid "Like you did in the 2D game tutorial, you're going to design a path and use a :ref:`PathFollow3D <class_PathFollow3D>` node to sample random locations on it."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:32
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:34
 msgid "In 3D though, it's a bit more complicated to draw the path. We want it to be around the game view so monsters appear right outside the screen. But if we draw a path, we won't see it from the camera preview."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:36
-msgid "To find the view's limits, we can use some placeholder meshes. Your viewport should still be split into two parts, with the camera preview at the bottom. If that isn't the case, press :kbd:`Ctrl + 2` (:kbd:`Cmd + 2` on macOS) to split the view into two. Select the *Camera* node and click the *Preview* checkbox in the bottom viewport."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:38
+msgid "To find the view's limits, we can use some placeholder meshes. Your viewport should still be split into two parts, with the camera preview at the bottom. If that isn't the case, press :kbd:`Ctrl + 2` (:kbd:`Cmd + 2` on macOS) to split the view into two. Select the :ref:`Camera3D <class_Camera3D>` node and click the *Preview* checkbox in the bottom viewport."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:42
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:44
 msgid "|image3|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:339
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:339
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:337
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:337
 msgid "image3"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:45
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:47
 msgid "Adding placeholder cylinders"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:47
-msgid "Let's add the placeholder meshes. Add a new *Spatial* node as a child of the *Main* node and name it *Cylinders*. We'll use it to group the cylinders. As a child of it, add a *MeshInstance* node."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:49
+msgid "Let's add the placeholder meshes. Add a new :ref:`Node3D <class_Node3D>` as a child of the ``Main`` node and name it ``Cylinders``. We'll use it to group the cylinders. Select ``Cylinders`` and add a child node :ref:`MeshInstance3D <class_MeshInstance3D>`"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:51
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:52
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:340
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:340
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:338
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:338
 msgid "image4"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:53
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:54
 msgid "In the *Inspector*, assign a *CylinderMesh* to the *Mesh* property."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:55
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:56
 msgid "|image5|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:341
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:341
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:339
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:339
 msgid "image5"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:57
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:58
 msgid "Set the top viewport to the top orthogonal view using the menu in the viewport's top-left corner. Alternatively, you can press the keypad's 7 key."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:60
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:61
 msgid "|image6|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:342
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:342
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:340
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:340
 msgid "image6"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:62
-msgid "The grid is a bit distracting for me. You can toggle it by going to the *View* menu in the toolbar and clicking *View Grid*."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:63
+msgid "The grid may be distracting. You can toggle it by going to the *View* menu in the toolbar and clicking *View Grid*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:65
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:66
 msgid "|image7|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:343
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:343
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:341
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:341
 msgid "image7"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:67
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:68
 msgid "You now want to move the cylinder along the ground plane, looking at the camera preview in the bottom viewport. I recommend using grid snap to do so. You can toggle it by clicking the magnet icon in the toolbar or pressing Y."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:71
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:72
 msgid "|image8|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:344
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:344
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:342
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:342
 msgid "image8"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:73
-msgid "Place the cylinder so it's right outside the camera's view in the top-left corner."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:74
+msgid "Move the cylinder so it's right outside the camera's view in the top-left corner."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:76
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:77
 msgid "|image9|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:345
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:345
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:343
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:343
 msgid "image9"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:78
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:79
 msgid "We're going to create copies of the mesh and place them around the game area. Press :kbd:`Ctrl + D` (:kbd:`Cmd + D` on macOS) to duplicate the node. You can also right-click the node in the *Scene* dock and select *Duplicate*. Move the copy down along the blue Z axis until it's right outside the camera's preview."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:83
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:84
 msgid "Select both cylinders by pressing the :kbd:`Shift` key and clicking on the unselected one and duplicate them."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:86
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:87
 msgid "|image10|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:346
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:346
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:344
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:344
 msgid "image10"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:88
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:89
 msgid "Move them to the right by dragging the red X axis."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:90
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:91
 msgid "|image11|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:347
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:347
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:345
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:345
 msgid "image11"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:92
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:93
 msgid "They're a bit hard to see in white, aren't they? Let's make them stand out by giving them a new material."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:95
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:96
 msgid "In 3D, materials define a surface's visual properties like its color, how it reflects light, and more. We can use them to change the color of a mesh."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:98
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:99
 msgid "We can update all four cylinders at once. Select all the mesh instances in the *Scene* dock. To do so, you can click on the first one and Shift click on the last one."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:102
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:103
 msgid "|image12|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:348
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:348
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:346
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:346
 msgid "image12"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:104
-msgid "In the *Inspector*, expand the *Material* section and assign a *SpatialMaterial* to slot *0*."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:105
+msgid "In the *Inspector*, expand the *Material* section and assign a :ref:`StandardMaterial3D <class_StandardMaterial3D>` to slot *0*."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:107
 msgid "|image13|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:349
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:349
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:347
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:347
 msgid "image13"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:109
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:111
 msgid "Click the sphere icon to open the material resource. You get a preview of the material and a long list of sections filled with properties. You can use these to create all sorts of surfaces, from metal to rock or water."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:113
-msgid "Expand the *Albedo* section and set the color to something that contrasts with the background, like a bright orange."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:115
+msgid "Expand the *Albedo* section."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:116
-msgid "|image14|"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:350
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:350
-msgid "image14"
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:118
-msgid "We can now use the cylinders as guides. Fold them in the *Scene* dock by clicking the grey arrow next to them. Moving forward, you can also toggle their visibility by clicking the eye icon next to *Cylinders*."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:119
+msgid "Set the color to something that contrasts with the background, like a bright orange."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:122
-msgid "|image15|"
+msgid "|image14|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:351
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:351
-msgid "image15"
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:348
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:348
+msgid "image14"
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:124
-msgid "Add a *Path* node as a child of *Main*. In the toolbar, four icons appear. Click the *Add Point* tool, the icon with the green \"+\" sign."
+msgid "We can now use the cylinders as guides. Fold them in the *Scene* dock by clicking the grey arrow next to them. Moving forward, you can also toggle their visibility by clicking the eye icon next to *Cylinders*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:127
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:128
+msgid "|image15|"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:349
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:349
+msgid "image15"
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:130
+msgid "Add a child node :ref:`Path3D <class_Path3D>` to ``Main`` node. In the toolbar, four icons appear. Click the *Add Point* tool, the icon with the green \"+\" sign."
+msgstr ""
+
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:133
 msgid "|image16|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:352
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:352
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:350
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:350
 msgid "image16"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:129
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:135
 msgid "You can hover any icon to see a tooltip describing the tool."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:131
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:137
 msgid "Click in the center of each cylinder to create a point. Then, click the *Close Curve* icon in the toolbar to close the path. If any point is a bit off, you can click and drag on it to reposition it."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:135
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:141
 msgid "|image17|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:353
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:353
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:351
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:351
 msgid "image17"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:137
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:143
 msgid "Your path should look like this."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:139
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:145
 msgid "|image18|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:354
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:354
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:352
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:352
 msgid "image18"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:141
-msgid "To sample random positions on it, we need a *PathFollow* node. Add a *PathFollow* as a child of the *Path*. Rename the two nodes to *SpawnPath* and *SpawnLocation*, respectively. It's more descriptive of what we'll use them for."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:147
+msgid "To sample random positions on it, we need a :ref:`PathFollow3D <class_PathFollow3D>` node. Add a :ref:`PathFollow3D <class_PathFollow3D>` as a child of the ``Path3D``. Rename the two nodes to ``SpawnPath`` and ``SpawnLocation``, respectively. It's more descriptive of what we'll use them for."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:145
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:151
 msgid "|image19|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:355
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:355
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:353
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:353
 msgid "image19"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:147
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:153
 msgid "With that, we're ready to code the spawn mechanism."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:150
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:156
 msgid "Spawning monsters randomly"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:152
-msgid "Right-click on the *Main* node and attach a new script to it."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:158
+msgid "Right-click on the ``Main`` node and attach a new script to it."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:154
-msgid "We first export a variable to the *Inspector* so that we can assign ``Mob.tscn`` or any other monster to it."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:160
+msgid "We first export a variable to the *Inspector* so that we can assign ``mob.tscn`` or any other monster to it."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:157
-msgid "Then, as we're going to spawn the monsters procedurally, we want to randomize numbers every time we play the game. If we don't do that, the monsters will always spawn following the same sequence."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:182
+msgid "We want to spawn mobs at regular time intervals. To do this, we need to go back to the scene and add a timer. Before that, though, we need to assign the ``mob.tscn`` file to the ``mob_scene`` property above (otherwise it's null!)"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:190
-msgid "We want to spawn mobs at regular time intervals. To do this, we need to go back to the scene and add a timer. Before that, though, we need to assign the ``Mob.tscn`` file to the ``mob_scene`` property."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:186
+msgid "Head back to the 3D screen and select the ``Main`` node. Drag ``mob.tscn`` from the *FileSystem* dock to the *Mob Scene* slot in the *Inspector*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:194
-msgid "Head back to the 3D screen and select the *Main* node. Drag ``Mob.tscn`` from the *FileSystem* dock to the *Mob Scene* slot in the *Inspector*."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:197
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:189
 msgid "|image20|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:356
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:356
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:354
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:354
 msgid "image20"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:199
-msgid "Add a new *Timer* node as a child of *Main*. Name it *MobTimer*."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:191
+msgid "Add a new :ref:`Timer <class_Timer>` node as a child of ``Main``. Name it ``MobTimer``."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:201
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:193
 msgid "|image21|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:357
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:357
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:355
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:355
 msgid "image21"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:203
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:195
 msgid "In the *Inspector*, set its *Wait Time* to ``0.5`` seconds and turn on *Autostart* so it automatically starts when we run the game."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:206
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:198
 msgid "|image22|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:358
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:358
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:356
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:356
 msgid "image22"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:208
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:200
 msgid "Timers emit a ``timeout`` signal every time they reach the end of their *Wait Time*. By default, they restart automatically, emitting the signal in a cycle. We can connect to this signal from the *Main* node to spawn monsters every ``0.5`` seconds."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:213
-msgid "With the *MobTimer* still selected, head to the *Node* dock on the right and double-click the ``timeout`` signal."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:205
+msgid "With the *MobTimer* still selected, head to the *Node* dock on the right, and double-click the ``timeout`` signal."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:216
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:208
 msgid "|image23|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:359
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:359
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:357
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:357
 msgid "image23"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:218
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:210
 msgid "Connect it to the *Main* node."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:220
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:212
 msgid "|image24|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:360
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:360
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:358
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:358
 msgid "image24"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:222
-msgid "This will take you back to the script, with a new empty ``_on_MobTimer_timeout()`` function."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:214
+msgid "This will take you back to the script, with a new empty ``_on_mob_timer_timeout()`` function."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:225
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:217
 msgid "Let's code the mob spawning logic. We're going to:"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:227
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:219
 msgid "Instantiate the mob scene."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:228
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:220
 msgid "Sample a random position on the spawn path."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:229
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:221
 msgid "Get the player's position."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:230
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:222
 msgid "Call the mob's ``initialize()`` method, passing it the random position and the player's position."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:232
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:224
 msgid "Add the mob as a child of the *Main* node."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:273
-msgid "Above, ``randf()`` produces a random value between ``0`` and ``1``, which is what the *PathFollow* node's ``unit_offset`` expects."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:266
+msgid "Above, ``randf()`` produces a random value between ``0`` and ``1``, which is what the *PathFollow* node's ``progress_ratio`` expects: 0 is the start of the path, 1 is the end of the path. The path we have set is around the camera's viewport, so any random value between 0 and 1 is a random position alongside the edges of the viewport!"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:276
-msgid "Here is the complete ``Main.gd`` script so far, for reference."
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:272
+msgid "Here is the complete ``main.gd`` script so far, for reference."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:328
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:326
 msgid "You can test the scene by pressing :kbd:`F6`. You should see the monsters spawn and move in a straight line."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:331
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:329
 msgid "|image25|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:361
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:361
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:359
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:359
 msgid "image25"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:333
+#: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:331
 msgid "For now, they bump and slide against one another when their paths cross. We'll address this in the next part."
 msgstr ""
 

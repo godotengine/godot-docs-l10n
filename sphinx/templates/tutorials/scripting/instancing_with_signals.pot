@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,35 +44,35 @@ msgstr ""
 msgid "We'll use an ``Area2D`` for the bullet, which moves in a straight line at a given velocity:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/instancing_with_signals.rst:50
+#: ../../docs/tutorials/scripting/instancing_with_signals.rst:52
 msgid "However, if the bullets are added as children of the player, then they will remain \"attached\" to the player as it rotates:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/instancing_with_signals.rst:55
+#: ../../docs/tutorials/scripting/instancing_with_signals.rst:57
 msgid "Instead, we need the bullets to be independent of the player's movement - once fired, they should continue traveling in a straight line and the player can no longer affect them. Instead of being added to the scene tree as a child of the player, it makes more sense to add the bullet as a child of the \"main\" game scene, which may be the player's parent or even further up the tree."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/instancing_with_signals.rst:61
+#: ../../docs/tutorials/scripting/instancing_with_signals.rst:63
 msgid "You could do this by adding the bullet to the main scene directly:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/instancing_with_signals.rst:74
+#: ../../docs/tutorials/scripting/instancing_with_signals.rst:76
 msgid "However, this will lead to a different problem. Now if you try to test your \"Player\" scene independently, it will crash on shooting, because there is no parent node to access. This makes it a lot harder to test your player code independently and also means that if you decide to change your main scene's node structure, the player's parent may no longer be the appropriate node to receive the bullets."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/instancing_with_signals.rst:81
+#: ../../docs/tutorials/scripting/instancing_with_signals.rst:83
 msgid "The solution to this is to use a signal to \"emit\" the bullets from the player. The player then has no need to \"know\" what happens to the bullets after that - whatever node is connected to the signal can \"receive\" the bullets and take the appropriate action to spawn them."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/instancing_with_signals.rst:86
+#: ../../docs/tutorials/scripting/instancing_with_signals.rst:88
 msgid "Here is the code for the player using signals to emit the bullet:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/instancing_with_signals.rst:131
-msgid "In the main scene, we then connect the player's signal (it will appear in the \"Node\" tab)."
+#: ../../docs/tutorials/scripting/instancing_with_signals.rst:135
+msgid "In the main scene, we then connect the player's signal (it will appear in the \"Node\" tab of the Inspector)"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/instancing_with_signals.rst:155
+#: ../../docs/tutorials/scripting/instancing_with_signals.rst:159
 msgid "Now the bullets will maintain their own movement independent of the player's rotation:"
 msgstr ""
 
