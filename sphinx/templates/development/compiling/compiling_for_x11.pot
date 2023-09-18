@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -141,146 +141,142 @@ msgid "Start a terminal, go to the root dir of the engine source code and type:"
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:111
-msgid "A good rule of thumb for the ``-j`` (*jobs*) flag, is to have at least as many threads compiling Godot as you have cores in your CPU, if not one or two more. Feel free to add the ``-j`` option to any SCons command you see below."
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:115
 msgid "If all goes well, the resulting binary executable will be placed in the \"bin\" subdirectory. This executable file contains the whole engine and runs without any dependencies. Executing it will bring up the project manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:122
+#: ../../docs/development/compiling/compiling_for_x11.rst:118
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:128
+#: ../../docs/development/compiling/compiling_for_x11.rst:124
 msgid "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would not build."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:131
+#: ../../docs/development/compiling/compiling_for_x11.rst:127
 msgid "If you are compiling Godot for production use, then you can make the final executable smaller and faster by adding the SCons option ``target=release_debug``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:135
+#: ../../docs/development/compiling/compiling_for_x11.rst:131
 msgid "If you are compiling Godot with GCC, you can make the binary even smaller and faster by adding the SCons option ``use_lto=yes``. As link-time optimization is a memory-intensive process, this will require about 7 GB of available RAM while compiling."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:140
+#: ../../docs/development/compiling/compiling_for_x11.rst:136
 msgid "If you want to use separate editor settings for your own Godot builds and official releases, you can enable :ref:`doc_data_paths_self_contained_mode` by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:146
+#: ../../docs/development/compiling/compiling_for_x11.rst:142
 msgid "Compiling a headless/server build"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:148
+#: ../../docs/development/compiling/compiling_for_x11.rst:144
 msgid "To compile a *headless* build which provides editor functionality to export projects in an automated manner, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:153
+#: ../../docs/development/compiling/compiling_for_x11.rst:149
 msgid "To compile a debug *server* build which can be used with :ref:`remote debugging tools <doc_command_line_tutorial>`, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:158
+#: ../../docs/development/compiling/compiling_for_x11.rst:154
 msgid "To compile a *server* build which is optimized to run dedicated game servers, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:164
+#: ../../docs/development/compiling/compiling_for_x11.rst:160
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:166
+#: ../../docs/development/compiling/compiling_for_x11.rst:162
 msgid "Linux binaries usually won't run on distributions that are older than the distribution they were built on. If you wish to distribute binaries that work on most distributions, you should build them on an old distribution such as Ubuntu 16.04. You can use a virtual machine or a container to set up a suitable build environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:174
+#: ../../docs/development/compiling/compiling_for_x11.rst:170
 msgid "To build X11 (Linux, \\*BSD) export templates, run the build system with the following parameters:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:177
+#: ../../docs/development/compiling/compiling_for_x11.rst:173
 msgid "(32 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:184
+#: ../../docs/development/compiling/compiling_for_x11.rst:180
 msgid "(64 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:191
+#: ../../docs/development/compiling/compiling_for_x11.rst:187
 msgid "Note that cross-compiling for the opposite bits (64/32) as your host platform is not always straight-forward and might need a chroot environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:194
+#: ../../docs/development/compiling/compiling_for_x11.rst:190
 msgid "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:200
+#: ../../docs/development/compiling/compiling_for_x11.rst:196
 msgid "and named like this (even for \\*BSD which is seen as \"Linux X11\" by Godot):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:209
+#: ../../docs/development/compiling/compiling_for_x11.rst:205
 msgid "However, if you are writing your custom modules or custom C++ code, you might instead want to configure your binaries as custom export templates here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:215
+#: ../../docs/development/compiling/compiling_for_x11.rst:211
 msgid "You don't even need to copy them, you can just reference the resulting files in the ``bin/`` directory of your Godot source folder, so the next time you build, you automatically have the custom templates referenced."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:220
+#: ../../docs/development/compiling/compiling_for_x11.rst:216
 msgid "Using Clang and LLD for faster development"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:222
+#: ../../docs/development/compiling/compiling_for_x11.rst:218
 msgid "You can also use Clang and LLD to build Godot. This has two upsides compared to the default GCC + GNU ld setup:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:225
+#: ../../docs/development/compiling/compiling_for_x11.rst:221
 msgid "LLD links Godot significantly faster compared to GNU ld or gold. This leads to faster iteration times."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:227
+#: ../../docs/development/compiling/compiling_for_x11.rst:223
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:229
+#: ../../docs/development/compiling/compiling_for_x11.rst:225
 msgid "To do so, install Clang and the ``lld`` package from your distribution's package manager then use the following SCons command::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:234
+#: ../../docs/development/compiling/compiling_for_x11.rst:230
 msgid "After the build is completed, a new binary with a ``.llvm`` suffix will be created in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:237
+#: ../../docs/development/compiling/compiling_for_x11.rst:233
 msgid "It's still recommended to use GCC for production builds as they can be compiled using link-time optimization, making the resulting binaries smaller and faster."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:241
+#: ../../docs/development/compiling/compiling_for_x11.rst:237
 msgid "Using Pyston for faster development"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:243
+#: ../../docs/development/compiling/compiling_for_x11.rst:239
 msgid "You can use `Pyston <https://www.pyston.org/>`__ to run SCons. Pyston is a JIT-enabled implementation of the Python language (which SCons is written in). It is currently only compatible with Linux. Pyston can speed up incremental builds significantly, often by a factor between 1.5× and 2×. Pyston can be combined with Clang and LLD to get even faster builds."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:249
+#: ../../docs/development/compiling/compiling_for_x11.rst:245
 msgid "Download the `latest portable Pyston release <https://github.com/pyston/pyston/releases/latest>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:250
+#: ../../docs/development/compiling/compiling_for_x11.rst:246
 msgid "Extract the portable ``.tar.gz`` to a set location, such as ``$HOME/.local/opt/pyston/`` (create folders as needed)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:251
+#: ../../docs/development/compiling/compiling_for_x11.rst:247
 msgid "Use ``cd`` to reach the extracted Pyston folder from a terminal, then run ``./pyston -m pip install scons`` to install SCons within Pyston."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:253
+#: ../../docs/development/compiling/compiling_for_x11.rst:249
 msgid "To make SCons via Pyston easier to run, create a symbolic link of its wrapper script to a location in your ``PATH`` environment variable::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:258
+#: ../../docs/development/compiling/compiling_for_x11.rst:254
 msgid "Instead of running ``scons <build arguments>``, run ``pyston-scons <build arguments>`` to compile Godot."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:261
+#: ../../docs/development/compiling/compiling_for_x11.rst:257
 msgid "If you can't run ``pyston-scons`` after creating the symbolic link, make sure ``$HOME/.local/bin/`` is part of your user's ``PATH`` environment variable."
 msgstr ""
 

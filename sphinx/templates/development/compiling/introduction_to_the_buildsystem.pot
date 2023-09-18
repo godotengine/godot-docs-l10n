@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,210 +85,210 @@ msgid "To build for a platform (for example, x11), run with the ``platform=`` (o
 msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:84
-msgid "This will start the build process, which will take a while. If you want SCons to build faster, use the ``-j <cores>`` parameter to specify how many cores will be used for the build. Or leave it using one core, so you can use your computer for something else :)"
+msgid "This will start the build process, which will take a while. By default, Godot's SCons setup is configured to use all CPU threads but one (to keep the system responsive during compilation). If you want to adjust how many CPU threads SCons will use, use the ``-j <threads>`` parameter to specify how many threads will be used for the build."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:89
-msgid "Example for using 4 cores:"
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:90
+msgid "Example for using 4 threads:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:96
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:97
 msgid "Resulting binary"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:99
 msgid "The resulting binaries will be placed in the ``bin/`` subdirectory, generally with this naming convention::"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:103
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:104
 msgid "For the previous build attempt, the result would look like this::"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:108
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:109
 msgid "This means that the binary is for X11, is not optimized, has tools (the whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:111
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:112
 msgid "A Windows binary with the same configuration will look like this:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:118
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:119
 msgid "Copy that binary to any location you like, as it contains the project manager, editor and all means to execute the game. However, it lacks the data to export it to the different platforms. For that the export templates are needed (which can be either downloaded from `godotengine.org <https://godotengine.org/>`__, or you can build them yourself)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:125
 msgid "Aside from that, there are a few standard options that can be set in all build targets, and which will be explained below."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:131
 msgid "Tools"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:132
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:133
 msgid "Tools are enabled by default in all PC targets (Linux, Windows, macOS), disabled for everything else. Disabling tools produces a binary that can run projects but that does not include the editor or the project manager."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:145
 msgid "Target"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:149
 msgid "**debug**: Build with C++ debugging symbols, runtime checks (performs checks and reports error) and none to little optimization."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
 msgid "**release_debug**: Build without C++ debugging symbols and optimization, but keep the runtime checks (performs checks and reports errors). Official editor binaries use this configuration."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:153
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:154
 msgid "**release**: Build without symbols, with optimization and with little to no runtime checks. This target can't be used together with ``tools=yes``, as the editor requires some debug functionality and run-time checks to run."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:162
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:163
 msgid "This flag appends the ``.debug`` suffix (for debug), or ``.tools`` (for debug with tools enabled). When optimization is enabled (release), it appends the ``.opt`` suffix."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:168
 msgid "Bits"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:170
 msgid "Bits is meant to control the CPU or OS version intended to run the binaries. It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 msgid "**32**: Build binaries for 32-bit platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**64**: Build binaries for 64-bit platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:176
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:181
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:182
 msgid "This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when relevant. If ``bits=default`` is used, the suffix will match the detected architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
 msgid "Custom modules"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
 msgid "It's possible to compile modules residing outside of Godot's directory tree, along with the built-in modules."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
 msgid "A ``custom_modules`` build option can be passed to the command line before compiling. The option represents a comma-separated list of directory paths containing a collection of independent C++ modules that can be seen as C++ packages, just like the built-in ``modules/`` directory."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
 msgid "For instance, it's possible to provide both relative, absolute, and user directory paths containing such modules:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:207
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:208
 msgid "If there's any custom module with the exact directory name as a built-in module, the engine will only compile the custom one. This logic can be used to override built-in module implementations."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:214
 msgid ":ref:`doc_custom_modules_in_c++`"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:217
 msgid "Cleaning generated files"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:219
 msgid "Sometimes, you may encounter an error due to generated files being present. You can remove them by using ``scons --clean <options>``, where ``<options>`` is the list of build options you've used to build Godot previously."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:223
 msgid "Alternatively, you can use ``git clean -fixd`` which will clean build artifacts for all platforms and configurations. Beware, as this will remove all untracked and ignored files in the repository. Don't run this command if you have uncommitted work!"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:229
 msgid "Other build options"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:230
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:231
 msgid "There are several other build options that you can use to configure the way Godot should be built (compiler, debug options, etc.) as well as the features to include/disable."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:234
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:235
 msgid "Check the output of ``scons --help`` for details about each option for the version you are willing to compile."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:240
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:241
 msgid "Overriding the build options"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:244
 msgid "Using a file"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:246
 msgid "The default ``custom.py`` file can be created at the root of the Godot Engine source to initialize any SCons build options passed via the command line:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:257
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:258
 msgid "You can also disable some of the builtin modules before compiling, saving some time it takes to build the engine. See :ref:`doc_optimizing_for_size` page for more details."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:262
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:263
 msgid "You can use the online `Godot build options generator <https://godot-build-options-generator.github.io/>`__ to generate a ``custom.py`` file containing SCons options. You can then save this file and place it at the root of your Godot source directory."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:267
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:268
 msgid "Another custom file can be specified explicitly with the ``profile`` command line option, both overriding the default build configuration:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:274
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:275
 msgid "Build options set from the file can be overridden by the command line options."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:277
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:278
 msgid "It's also possible to override the options conditionally:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:292
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:293
 msgid "Using the SCONSFLAGS"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:294
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
 msgid "``SCONSFLAGS`` is an environment variable which is used by the SCons to set the options automatically without having to supply them via the command line."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:297
-msgid "For instance, you may want to build Godot in parallel with the aforementioned ``-j`` option for all the future builds:"
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:298
+msgid "For instance, you may want to force a number of CPU threads with the aforementioned ``-j`` option for all future builds:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:314
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:315
 msgid "Export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:316
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:317
 msgid "Official export templates are downloaded from the Godot Engine site: `godotengine.org <https://godotengine.org/>`__. However, you might want to build them yourself (in case you want newer ones, you are using custom modules, or simply don't trust your own shadow)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:321
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:322
 msgid "If you download the official export templates package and unzip it, you will notice that most files are optimized binaries or packages for each platform:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:344
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:345
 msgid "To create those yourself, follow the instructions detailed for each platform in this same tutorial section. Each platform explains how to create its own template."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:348
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:349
 msgid "The ``version.txt`` file should contain the corresponding Godot version identifier. This file is used to install export templates in a version-specific directory to avoid conflicts. For instance, if you are building export templates for Godot 3.1.1, ``version.txt`` should contain ``3.1.1.stable`` on the first line (and nothing else). This version identifier is based on the ``major``, ``minor``, ``patch`` (if present) and ``status`` lines of the `version.py file in the Godot Git repository <https://github.com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:356
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:357
 msgid "If you are developing for multiple platforms, macOS is definitely the most convenient host platform for cross-compilation, since you can cross-compile for almost every target (except for UWP). Linux and Windows come in second place, but Linux has the advantage of being the easier platform to set this up."
 msgstr ""
 

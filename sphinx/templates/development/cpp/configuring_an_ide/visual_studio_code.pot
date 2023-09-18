@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,59 +56,59 @@ msgstr ""
 msgid "Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:50
 msgid "An example of a filled out ``tasks.json``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:72
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
 msgid "Arguments can be different based on your own setup and needs. See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:76
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:56
 msgid "Debugging the project"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:78
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
 msgid "To run and debug the project you need to create a new configuration in the ``launch.json`` file."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:80
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:60
 msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:81
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:61
 msgid "If ``launch.json`` file is missing you will be prompted to create a new one."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:86
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:66
 msgid "Select **C++ (GDB/LLDB)**. There may be another platform specific option here. If selected, adjust the configuration example provided accordingly."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:88
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
 msgid "Within the ``launch.json`` file find the ``\"configurations\"`` array and add a new section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:156
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:136
 msgid "An example of a filled out ``launch.json``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:161
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:141
 msgid "Due to sporadic performance issues, it is recommended to use LLDB over GDB on Unix-based systems. Make sure that the `CodeLLDB extension <https://marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb>`_ is installed."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:165
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:145
 msgid "If you encounter issues with lldb, you may consider using gdb (see the X11_gdb configuration)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:167
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:147
 msgid "Do note that lldb may work better with llvm-based builds. See :ref:`doc_compiling_for_x11` for further information."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:169
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:149
 msgid "The name under ``program`` depends on your build configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:172
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:152
 msgid "If you run into any issues, ask for help in one of `Godot's community channels <https://godotengine.org/community>`__."
 msgstr ""
 
