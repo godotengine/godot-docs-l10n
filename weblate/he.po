@@ -27,7 +27,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: 2023-07-20 21:20+0000\n"
 "Last-Translator: Benjamin Stern <benj_stern@hotmail.com>\n"
 "Language-Team: Hebrew <https://hosted.weblate.org/projects/godot-engine/"
@@ -40,11 +40,14 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 5.0-dev\n"
 
-#: ../../docs/index.rst:58
-msgid "General"
-msgstr "כללי"
+#: ../../docs/index.rst:72
+#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
+#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:7
+#: ../../docs/development/cpp/variant_class.rst:7
+msgid "About"
+msgstr "על אודות"
 
-#: ../../docs/index.rst:66
+#: ../../docs/index.rst:86
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:35
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:44
 #: ../../docs/tutorials/vr/openxr/index.rst:16
@@ -53,24 +56,25 @@ msgstr "כללי"
 msgid "Getting started"
 msgstr "מתחילים"
 
-#: ../../docs/index.rst:78
-msgid "Tutorials"
-msgstr "מדריכים"
+#: ../../docs/index.rst:101
+msgid "Manual"
+msgstr ""
 
-#: ../../docs/index.rst:108
+#: ../../docs/index.rst:133
 msgid "Development"
 msgstr "פיתוח"
 
-#: ../../docs/index.rst:119
+#: ../../docs/index.rst:145
 msgid "Community"
 msgstr "קהילה"
 
-#: ../../docs/index.rst:130
+#: ../../docs/index.rst:157
 msgid "Class reference"
 msgstr "התייחסות למחלקה"
 
 #: ../../docs/index.rst:2
-msgid "Godot Docs – *3.5* branch"
+#, fuzzy
+msgid "Godot Docs – *3.6* branch"
 msgstr "מסמכי גודוט - ענף *3.5*"
 
 #: ../../docs/index.rst:6
@@ -82,9 +86,10 @@ msgstr ""
 "הימני למטה."
 
 #: ../../docs/index.rst:12
+#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
-"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "תיעוד זה תורגם מהשפה המקורית באנגלית < https://docs.godotengine.org/en/"
@@ -103,15 +108,17 @@ msgstr ""
 "קיימים ב- Weblate."
 
 #: ../../docs/index.rst:21
+#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
-"\"latest\" (development) branch, but should be suitable to learn how to use "
-"stable Godot releases nevertheless."
+"\"stable\" branch. You can still view the English documentation for other "
+"engine versions using the \"Read the Docs\" panel at the bottom of the "
+"sidebar."
 msgstr ""
 "לעת עתה, תרגומים לשפות אחרות זמינות רק עבור ענף הפיתוח \"עדכני\" (פיתוח), "
 "אבל צריכים להתאים לגרסאות גודוט יציב בכל זאת."
 
-#: ../../docs/index.rst:25
+#: ../../docs/index.rst:26
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
 "org>`__, the free and open source community-driven 2D and 3D game engine! If "
@@ -123,24 +130,21 @@ msgstr ""
 "שמונע ע\"י הקהילה. אם המסמך חדש עבורך, אנחנו ממליצים שתקרא את :ref:` דף "
 "ההיכרות <doc_about_intro>` כדי להבין מה המסמך הנ\"ל יכול להציע."
 
-#: ../../docs/index.rst:31
+#: ../../docs/index.rst:32
+#, fuzzy
 msgid ""
-"The table of contents below and in the sidebar should let you easily access "
-"the documentation for your topic of interest. You can also use the search "
-"function in the top left corner."
+"The table of contents in the sidebar should let you easily access the "
+"documentation for your topic of interest. You can also use the search "
+"function in the top-left corner."
 msgstr ""
 "תוכן העניינים למטה ובצד יכול לאפשר לך לגשת בקלות לתיעוד בנושא שבו הנך "
 "מעוניין. אתה גם יכול להשתמש בחיפוש בפינה השמאלית העליונה."
 
-#: ../../docs/index.rst:35
-msgid ""
-"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline reading (updated every Monday). Extract the ZIP archive then open "
-"the top-level ``index.html`` in a web browser."
+#: ../../docs/index.rst:36
+msgid "Get involved"
 msgstr ""
 
-#: ../../docs/index.rst:39
+#: ../../docs/index.rst:38
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -153,7 +157,7 @@ msgstr ""
 "מבין משהו, או שאינך יכול למצוא משהו שאתה מחפש במסמכים, תן לנו לדעת ועזור לנו "
 "לשפר את התיעוד!"
 
-#: ../../docs/index.rst:46
+#: ../../docs/index.rst:44
 #, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
@@ -169,7 +173,7 @@ msgstr ""
 "``‎#godotengine-doc`` תחת `irc.freenode.net <http://webchat.freenode.net/?"
 "channels=#godotengine-doc>`_!"
 
-#: ../../docs/index.rst:55
+#: ../../docs/index.rst:50
 #, fuzzy
 msgid "weblate_widget"
 msgstr "weblate_widget"
@@ -179,17 +183,71 @@ msgstr "weblate_widget"
 msgid "Translation status"
 msgstr "מצב תרגום"
 
-#: ../../docs/index.rst:56
-msgid ""
-"The main documentation for the site is organized into the following sections:"
-msgstr "התיעוד העיקרי בשביל האתר מסודר לפי הסעיפים הבאים:"
+#: ../../docs/index.rst:52
+#, fuzzy
+msgid "Offline documentation"
+msgstr "סדר התיעוד"
 
-#: ../../docs/about/index.rst:2
-#: ../../docs/tutorials/inputs/mouse_and_input_coordinates.rst:7
-#: ../../docs/tutorials/scripting/gdscript/gdscript_advanced.rst:7
-#: ../../docs/development/cpp/variant_class.rst:7
-msgid "About"
-msgstr "על אודות"
+#: ../../docs/index.rst:54
+msgid ""
+"To browse the documentation offline, you can use the mirror of the "
+"documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
+"offline browsing on DevDocs, you need to:"
+msgstr ""
+
+#: ../../docs/index.rst:58
+msgid "Click the three dots in the top-left corner, choose **Preferences**."
+msgstr ""
+
+#: ../../docs/index.rst:59
+msgid ""
+"Enable the desired version of the Godot documentation by checking the box "
+"next to it in the sidebar."
+msgstr ""
+
+#: ../../docs/index.rst:61
+msgid "Click the three dots in the top-left corner, choose **Offline data**."
+msgstr ""
+
+#: ../../docs/index.rst:62
+#, fuzzy
+msgid "Click the **Install** link next to the Godot documentation."
+msgstr "על אודות התיעוד"
+
+#: ../../docs/index.rst:64
+msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
+"offline reading (updated every Monday). Extract the ZIP archive then open "
+"the top-level ``index.html`` in a web browser."
+msgstr ""
+
+#: ../../docs/_templates/versions.html:26
+#: ../../docs/tutorials/performance/cpu_optimization.rst:160
+msgid "Languages"
+msgstr ""
+
+#: ../../docs/_templates/versions.html:32
+msgid "Versions"
+msgstr ""
+
+#: ../../docs/_templates/versions.html:39
+msgid "On Read the Docs"
+msgstr ""
+
+#: ../../docs/_templates/versions.html:41
+#, fuzzy
+msgid "Project Home"
+msgstr "מתחילים"
+
+#: ../../docs/_templates/versions.html:44
+#, fuzzy
+msgid "Builds"
+msgstr "אנימציות"
+
+#: ../../docs/_templates/versions.html:47
+msgid "Downloads"
+msgstr ""
 
 #: ../../docs/about/introduction.rst:4
 #: ../../docs/getting_started/introduction/index.rst:6
@@ -590,7 +648,7 @@ msgid "**For the editor:**"
 msgstr "**בשביל העורך:**"
 
 #: ../../docs/about/faq.rst:38 ../../docs/about/faq.rst:202
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:59
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:86
 #: ../../docs/development/compiling/compiling_with_mono.rst:335
 msgid "Windows"
 msgstr "וינדוס (Windows)"
@@ -611,7 +669,7 @@ msgstr "וינדוס (Windows)"
 #: ../../docs/tutorials/editor/default_key_mapping.rst:464
 #: ../../docs/tutorials/editor/default_key_mapping.rst:481
 #: ../../docs/tutorials/editor/default_key_mapping.rst:516
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:84
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:121
 msgid "macOS"
 msgstr "macOS"
 
@@ -640,14 +698,14 @@ msgstr "וינדוס ( וגם UWP)"
 #: ../../docs/about/faq.rst:49
 #: ../../docs/tutorials/export/exporting_basics.rst:326
 #: ../../docs/tutorials/export/one-click_deploy.rst:66
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:90
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:128
 #: ../../docs/development/compiling/compiling_with_mono.rst:327
 msgid "Android"
 msgstr "Android"
 
 #: ../../docs/about/faq.rst:50
 #: ../../docs/tutorials/export/exporting_basics.rst:382
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:96
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:135
 #: ../../docs/development/compiling/compiling_with_mono.rst:329
 msgid "iOS"
 msgstr "iOS"
@@ -974,7 +1032,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:220
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:302
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:104
 msgid "Linux"
 msgstr ""
 
@@ -1539,9 +1598,9 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:4
 #: ../../docs/tutorials/export/one-click_deploy.rst:63
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:180
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:249
 #: ../../docs/tutorials/platform/android/android_plugin.rst:162
-#: ../../docs/development/compiling/compiling_for_windows.rst:244
+#: ../../docs/development/compiling/compiling_for_windows.rst:236
 #: ../../docs/development/compiling/compiling_for_android.rst:204
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:73
 #: ../../docs/development/editor/creating_icons.rst:92
@@ -1562,8 +1621,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:14
 msgid ""
-"Everything I do in the editor or project manager appears delayed by one "
-"frame."
+"Everything I do in the editor or project manager appears delayed by one frame"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:16
@@ -1583,7 +1641,7 @@ msgstr ""
 #: ../../docs/about/troubleshooting.rst:25
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
-"editor."
+"editor"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:27
@@ -1606,7 +1664,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:37
-msgid "The editor or project takes a very long time to start."
+msgid "The editor or project takes a very long time to start"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:39
@@ -1621,7 +1679,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:47
 msgid ""
-"Editor tooltips in the Inspector and Node docks blink when they're displayed."
+"Editor tooltips in the Inspector and Node docks blink when they're displayed"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:49
@@ -1633,7 +1691,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:54
-msgid "The Godot editor appears frozen after clicking the system console."
+msgid "The Godot editor appears frozen after clicking the system console"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:56
@@ -1654,7 +1712,7 @@ msgstr ""
 #: ../../docs/about/troubleshooting.rst:65
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
-"manager and editor window."
+"manager and editor window"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:67
@@ -1676,7 +1734,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:76
-msgid "The project window appears blurry, unlike the editor."
+msgid "The project window appears blurry, unlike the editor"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:78
@@ -1694,7 +1752,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:87
-msgid "The project window doesn't appear centered when I run the project."
+msgid "The project window doesn't appear centered when I run the project"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:89
@@ -1707,11 +1765,39 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:95
 msgid ""
-"The project works when run from the editor, but fails to load some files "
-"when running from an exported copy."
+"The editor/project freezes or displays glitched visuals after resuming the "
+"PC from suspend"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:97
+msgid ""
+"This is a known issue on Linux with NVIDIA graphics when using the "
+"proprietary driver. There is no definitive fix yet, as suspend on Linux + "
+"NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:101
+msgid ""
+"The NVIDIA driver offers an *experimental* `option to preserve video memory "
+"after suspend <https://wiki.archlinux.org/title/NVIDIA/"
+"Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve "
+"this issue. This option has been reported to work better with more recent "
+"NVIDIA driver versions."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:106
+msgid ""
+"To avoid losing work, save scenes in the editor before putting the PC to "
+"sleep."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:109
+msgid ""
+"The project works when run from the editor, but fails to load some files "
+"when running from an exported copy"
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:111
 msgid ""
 "This is usually caused by forgetting to specify a filter for non-resource "
 "files in the Export dialog. By default, Godot will only include actual "
@@ -1721,7 +1807,7 @@ msgid ""
 "filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:104
+#: ../../docs/about/troubleshooting.rst:118
 msgid ""
 "On Windows, this can also be due to :ref:`case sensitivity "
 "<doc_project_organization_case_sensitivity>` issues. If you reference a "
@@ -2182,9 +2268,9 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:184
 msgid ""
-"*GLES3:* Refraction with support for material roughness (resulting in blurry "
-"refraction). On GLES2, refraction is still functional but lacks support for "
-"material roughness."
+"*GLES3:* Screen-space refraction with support for material roughness "
+"(resulting in blurry refraction). On GLES2, refraction is still functional "
+"but lacks support for material roughness."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:186
@@ -3393,8 +3479,8 @@ msgstr ""
 msgid ""
 "The documentation is continually being improved. The release of version 3.2 "
 "includes many new tutorials, many fixes and updates for old tutorials, and "
-"many updates to the :ref:`class reference <toc-class-ref>`. Below is a list "
-"of new tutorials added since version 3.1."
+"many updates to the :ref:`class reference <doc_class_reference>`. Below is a "
+"list of new tutorials added since version 3.1."
 msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:11
@@ -5100,8 +5186,8 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:36
 msgid ""
-"To browse it online, head to the manual's :ref:`Class Reference <toc-class-"
-"ref>` section."
+"To browse it online, head to the manual's :ref:`Class Reference "
+"<doc_class_reference>` section."
 msgstr ""
 
 #: ../../docs/getting_started/introduction/learning_new_features.rst:39
@@ -10056,7 +10142,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:378
 msgid ""
 "Here's where the magic happens. Select the *CameraPivot* and rotate it "
-"``45`` degrees around the X axis (using the red circle). You'll see the "
+"``-45`` degrees around the X axis (using the red circle). You'll see the "
 "camera move as if it was attached to a crane."
 msgstr ""
 
@@ -14394,7 +14480,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:464
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:76
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:131
 msgid "Tools"
 msgstr "כלים"
 
@@ -16434,22 +16520,67 @@ msgid ""
 "life."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:490
+#: ../../docs/tutorials/3d/spatial_material.rst:487
+msgid ""
+"Remember to use a transparent albedo texture (or reduce the albedo color's "
+"alpha channel) to make refraction visible, as refraction relies on "
+"transparency to have a visible effect."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:491
+msgid ""
+"A normal map can optionally be specified in the **Refraction Texture** "
+"property to allow distorting the refraction's direction on a per-pixel basis."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:498
+msgid ""
+"Refraction is implemented as a screen-space effect and forces the material "
+"to be transparent. This makes the effect relatively fast, but this results "
+"in some limitations:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:502
+msgid ""
+":ref:`Transparency sorting "
+"<doc_3d_rendering_limitations_transparency_sorting>` issues may occur."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:504
+msgid ""
+"The refractive material cannot refract onto itself, or onto other "
+"transparent materials. A refractive material behind another transparent "
+"material will be invisible."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:507
+msgid ""
+"Off-screen objects cannot appear in the refraction. This is most noticeable "
+"with high refraction strength values."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:509
+msgid ""
+"Opaque materials in front of the refractive material will appear to have "
+"\"refracted\" edges, even though they shouldn't."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:513
 msgid "Detail"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:492
+#: ../../docs/tutorials/3d/spatial_material.rst:515
 msgid ""
 "Godot allows using secondary albedo and normal maps to generate a detail "
 "texture, which can be blended in many ways. By combining this with secondary "
 "UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:498
+#: ../../docs/tutorials/3d/spatial_material.rst:521
 msgid "There are several settings that control how detail is used."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:500
+#: ../../docs/tutorials/3d/spatial_material.rst:523
 msgid ""
 "Mask: The detail mask is a black and white image used to control where the "
 "blending takes place on a texture. White is for the detail textures, Black "
@@ -16457,26 +16588,26 @@ msgid ""
 "partial blending of the material textures and detail textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:505
+#: ../../docs/tutorials/3d/spatial_material.rst:528
 msgid ""
 "Blend Mode: These four modes control how the textures are blended together."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:507
+#: ../../docs/tutorials/3d/spatial_material.rst:530
 msgid ""
 "Mix: Combines pixel values of both textures. At black, only show the "
 "material texture, at white, only show the detail texture. Values of gray "
 "create a smooth blend between the two."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:511
+#: ../../docs/tutorials/3d/spatial_material.rst:534
 msgid ""
 "Add: Adds pixel values of one Texture with the other. Unlike mix mode both "
 "textures are completely mixed at white parts of a mask and not at gray "
 "parts. The original texture is mostly unchanged at black"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:515
+#: ../../docs/tutorials/3d/spatial_material.rst:538
 msgid ""
 "Sub: Subtracts pixel values of one texture with the other. The second "
 "texture is completely subtracted at white parts of a mask with only a little "
@@ -16484,41 +16615,41 @@ msgid ""
 "based on the exact texture."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:520
+#: ../../docs/tutorials/3d/spatial_material.rst:543
 msgid ""
 "Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
 "with the values for the corresponding pixel from the bottom texture."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:523
+#: ../../docs/tutorials/3d/spatial_material.rst:546
 msgid ""
 "Albedo: This is where you put an albedo texture you want to blend. If "
 "nothing is in this slot it will be interpreted as white by default."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:526
+#: ../../docs/tutorials/3d/spatial_material.rst:549
 msgid ""
 "Normal: This is where you put a normal texture you want to blend. If nothing "
 "is in this slot it will be interpreted as a flat normal map. This can still "
 "be used even if the material does not have normal map enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:531
+#: ../../docs/tutorials/3d/spatial_material.rst:554
 msgid "UV1 and UV2"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:533
+#: ../../docs/tutorials/3d/spatial_material.rst:556
 msgid ""
 "Godot supports two UV channels per material. Secondary UV is often useful "
 "for ambient occlusion or emission (baked light). UVs can be scaled and "
 "offset, which is useful when using repeating textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:538
+#: ../../docs/tutorials/3d/spatial_material.rst:561
 msgid "Triplanar Mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:540
+#: ../../docs/tutorials/3d/spatial_material.rst:563
 msgid ""
 "Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
 "way to obtain texture coordinates, sometimes called \"Autotexture\". "
@@ -16526,17 +16657,17 @@ msgid ""
 "mapping can be performed in either world space or object space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:545
+#: ../../docs/tutorials/3d/spatial_material.rst:568
 msgid ""
 "In the image below, you can see how all primitives share the same material "
 "with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:551
+#: ../../docs/tutorials/3d/spatial_material.rst:574
 msgid "Proximity and distance fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:553
+#: ../../docs/tutorials/3d/spatial_material.rst:576
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "
 "depending on the distance from the viewer. Proximity fade is useful for "
@@ -16545,17 +16676,17 @@ msgid ""
 "only present after a given distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:559
+#: ../../docs/tutorials/3d/spatial_material.rst:582
 msgid ""
 "Keep in mind enabling these enables alpha blending, so abusing them for an "
 "entire scene is usually not a good idea."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:565
+#: ../../docs/tutorials/3d/spatial_material.rst:588
 msgid "Render priority"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:567
+#: ../../docs/tutorials/3d/spatial_material.rst:590
 msgid ""
 "The rendering order of objects can be changed, although this is mostly "
 "useful for transparent objects (or opaque objects that perform depth draw "
@@ -25384,8 +25515,8 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:15
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:94
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:139
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:210
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:341
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:203
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:342
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:17
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:52
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:114
@@ -30148,11 +30279,10 @@ msgstr ""
 
 #: ../../docs/tutorials/best_practices/data_preferences.rst:42
 msgid ""
-"Godot stores all variables in the scripting API in the `Variant <https://"
-"docs.godotengine.org/en/latest/development/cpp/variant_class.html>`_ class. "
-"Variants can store Variant-compatible data structures such as :ref:`Array "
-"<class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as :ref:"
-"`Object <class_Object>` s."
+"Godot stores all variables in the scripting API in the :ref:`Variant "
+"<doc_variant_class>` class. class. Variants can store Variant-compatible "
+"data structures such as :ref:`Array <class_Array>` and :ref:`Dictionary "
+"<class_Dictionary>` as well as :ref:`Object <class_Object>` s."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/data_preferences.rst:48
@@ -35003,7 +35133,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_basics.rst:250
 #: ../../docs/tutorials/export/exporting_projects.rst:92
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:314
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:315
 #: ../../docs/development/compiling/compiling_with_mono.rst:173
 msgid "Export templates"
 msgstr ""
@@ -38462,7 +38592,7 @@ msgstr "אנימציות"
 #: ../../docs/tutorials/export/exporting_for_dedicated_servers.rst:12
 msgid ""
 "**Linux:** `Download an official Linux server binary <https://godotengine."
-"org/download/server>`__. To compile a server binary from source, follow "
+"org/download/3.x/server>`__. To compile a server binary from source, follow "
 "instructions in :ref:`doc_compiling_for_x11`."
 msgstr ""
 
@@ -38492,7 +38622,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_dedicated_servers.rst:26
 msgid ""
-"The `server download page <https://godotengine.org/download/server>`__ "
+"The `server download page <https://godotengine.org/download/3.x/server>`__ "
 "offers two kinds of binaries with several differences."
 msgstr ""
 
@@ -43044,48 +43174,48 @@ msgid ""
 "axes to behave as a single input, use ``Input.get_vector()``:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:76
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:80
 msgid ""
 "When you have one axis that can go both ways (such as a throttle on a flight "
 "stick), or when you want to handle separate axes individually, use ``Input."
 "get_axis()``:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:97
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:101
 msgid ""
 "For other types of analog input, such as handling a trigger or handling one "
 "direction at a time, use ``Input.get_action_strength()``:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:111
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:115
 msgid ""
 "For non-analog digital/boolean input (only \"pressed\" or \"not pressed\" "
 "values), such as controller buttons, mouse buttons or keyboard keys, use "
 "``Input.is_action_pressed()``:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:127
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:131
 msgid ""
 "In Godot versions before 3.4, such as 3.3, ``Input.get_vector()`` and "
 "``Input.get_axis()`` aren't available. Only ``Input.get_action_strength()`` "
 "and ``Input.is_action_pressed()`` are available in Godot 3.3."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:132
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:136
 msgid "Differences between keyboard/mouse and controller input"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:134
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:138
 msgid ""
 "If you're used to handling keyboard and mouse input, you may be surprised by "
 "how controllers handle specific situations."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:138
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:142
 msgid "Dead zone"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:140
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:144
 msgid ""
 "Unlike keyboards and mice, controllers offer axes with *analog* inputs. The "
 "upside of analog inputs is that they offer additional flexibility for "
@@ -43098,7 +43228,7 @@ msgid ""
 "faulty controllers."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:149
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:153
 msgid ""
 "Let's take a racing game as a real-world example. Thanks to analog inputs, "
 "we can steer the car slowly in one direction or another. However, without a "
@@ -43111,7 +43241,7 @@ msgid ""
 "drifting, but is low enough to not ignore actual input from the player."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:159
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:163
 msgid ""
 "Godot features a built-in dead zone system to tackle this problem. The "
 "default value is ``0.2``, but you can increase it or decrease it on a per-"
@@ -43120,11 +43250,11 @@ msgid ""
 "calculate the average deadzone value from all of the actions in the vector."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:166
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:170
 msgid "\"Echo\" events"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:168
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:172
 msgid ""
 "Unlike keyboard input, holding down a controller button such as a D-pad "
 "direction will **not** generate repeated input events at fixed intervals "
@@ -43132,7 +43262,7 @@ msgid ""
 "sends \"echo\" events for controller input in the first place."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:173
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:177
 msgid ""
 "If you want controller buttons to send echo events, you will have to "
 "generate :ref:`class_InputEvent` objects by code and parse them using :ref:"
@@ -43142,28 +43272,89 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:184
+#, fuzzy
+msgid "Window focus"
+msgstr "וינדוס (Windows)"
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:186
+msgid ""
+"Unlike keyboard input, controller inputs can be seen by **all** windows on "
+"the operating system, including unfocused windows."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:189
+msgid ""
+"While this is useful for `third-party split screen functionality <https://"
+"nucleus-coop.github.io/>`__, it can also have adverse effects. Players may "
+"accidentally send controller inputs to the running project while interacting "
+"with another window."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:194
+msgid ""
+"If you wish to ignore events when the project window isn't focused, you will "
+"need to create an :ref:`autoload <doc_singletons_autoload>` called ``Focus`` "
+"with the following script and use it to check all your inputs:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:226
+msgid ""
+"Then, instead of using ``Input.is_action_pressed(action)``, use ``Focus."
+"input_is_action_pressed(action)`` where ``action`` is the name of the input "
+"action. Also, instead of using ``event.is_action_pressed(action)``, use "
+"``Focus.event_is_action_pressed(event, action)`` where ``event`` is an "
+"InputEvent reference and ``action`` is the name of the input action."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
+msgid "Power saving prevention"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:235
+msgid ""
+"Unlike keyboard and mouse input, controller inputs do **not** inhibit sleep "
+"and power saving measures (such as turning off the screen after a certain "
+"amount of time has passed)."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:239
+msgid ""
+"To combat this, Godot enables power saving prevention by default when a "
+"project is running. If you notice the system is turning off its display when "
+"playing with a gamepad, check the value of **Display > Window > Energy "
+"Saving > Keep Screen On** in the Project Settings."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:244
+msgid ""
+"Power saving prevention is **not** supported on Linux in Godot 3.x, but it "
+"is supported in Godot 4.x. As a workaround, increase the screensaver's "
+"timeout period to make it less likely to occur during gameplay."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:253
 msgid ""
 "You can view a list of `known issues with controller support <https://github."
 "com/godotengine/godot/issues?"
 "q=is%3Aopen+is%3Aissue+label%3Atopic%3Ainput+gamepad>`__ on GitHub."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:189
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:258
 msgid "My controller isn't recognized by Godot."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:191
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:260
 msgid ""
 "First, check that your controller is recognized by other applications. You "
 "can use the `Gamepad Tester <https://gamepad-tester.com/>`__ website to "
 "confirm that your controller is recognized."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:196
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:265
 msgid "My controller has incorrectly mapped buttons or axes."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:198
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:267
 msgid ""
 "If buttons are incorrectly mapped, this may be due to an erroneous mapping "
 "from the `SDL game controller database <https://github.com/gabomdq/"
@@ -43172,7 +43363,7 @@ msgid ""
 "repository."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:203
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:272
 msgid ""
 "There are many ways to create mappings. One option is to use the mapping "
 "wizard in the `official Joypads demo <https://godotengine.org/asset-library/"
@@ -43181,7 +43372,7 @@ msgid ""
 "before running Godot:"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:224
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:293
 msgid ""
 "To test mappings on non-desktop platforms or to distribute your project with "
 "additional controller mappings, you can add them by calling :ref:`Input."
@@ -43189,11 +43380,11 @@ msgid ""
 "in a script's ``_ready()`` function."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:230
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:299
 msgid "My controller works on a given platform, but not on another platform."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:235
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:304
 msgid ""
 "Prior to Godot 3.3, official Godot binaries were compiled with udev support "
 "but self-compiled binaries were compiled *without* udev support unless "
@@ -43201,12 +43392,12 @@ msgid ""
 "hotplugging support unavailable in self-compiled binaries."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:241
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:310
 #: ../../docs/tutorials/platform/platform_html5.rst:4
 msgid "HTML5"
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:243
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:312
 msgid ""
 "HTML5 controller support is often less reliable compared to \"native\" "
 "platforms. The quality of controller support tends to vary wildly across "
@@ -43214,7 +43405,7 @@ msgid ""
 "different browser if they can't get their controller to work."
 msgstr ""
 
-#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:248
+#: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:317
 msgid ""
 "Also, note that `controller support was significantly improved <https://"
 "github.com/godotengine/godot/pull/45078>`__ in Godot 3.3 and later."
@@ -46921,7 +47112,7 @@ msgstr ""
 
 #: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:59
 #, fuzzy
-msgid "NavigationAgent3D"
+msgid "NavigationAgent"
 msgstr "אנימציות"
 
 #: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:61
@@ -46968,7 +47159,7 @@ msgstr ""
 
 #: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:87
 #, fuzzy
-msgid "NavigationObstacle3D"
+msgid "NavigationObstacle"
 msgstr "אנימציות"
 
 #: ../../docs/tutorials/navigation/real_time_navigation_3d.rst:89
@@ -49214,10 +49405,6 @@ msgid ""
 "using :ref:`GDNative <toc-tutorials-gdnative>`."
 msgstr ""
 
-#: ../../docs/tutorials/performance/cpu_optimization.rst:160
-msgid "Languages"
-msgstr ""
-
 #: ../../docs/tutorials/performance/cpu_optimization.rst:162
 msgid ""
 "Godot supports a number of different languages, and it is worth bearing in "
@@ -50821,7 +51008,7 @@ msgid ""
 "In some cases, you can adapt your level design to add more occlusion "
 "opportunities. For example, you can add more walls to prevent the player "
 "from seeing too far away, which would decrease performance due to the lost "
-"opportunies for occlusion culling."
+"opportunities for occlusion culling."
 msgstr ""
 
 #: ../../docs/tutorials/performance/optimizing_3d_performance.rst:65
@@ -57471,14 +57658,12 @@ msgstr ""
 
 #: ../../docs/tutorials/plugins/editor/making_plugins.rst:98
 msgid ""
-"In addition to the EditorPlugin script, any other script that your plugin "
-"uses must *also* be a tool. * Any GDScript without ``tool`` imported into "
-"the editor will act like an empty file! * Any C# class without ``[Tool]`` "
-"won't be reloaded when the project is built forcing you to re-enable the "
-"plugin!"
+"In addition to the EditorPlugin script, any other GDScript that your plugin "
+"uses must *also* be a tool. Any GDScript without ``tool`` imported into the "
+"editor will act like an empty file!"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:103
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:102
 msgid ""
 "It's important to deal with initialization and clean-up of resources. A good "
 "practice is to use the virtual function :ref:`_enter_tree() "
@@ -57488,15 +57673,15 @@ msgid ""
 "something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:148
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:147
 msgid "This is a good template to use when creating new plugins."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:151
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:150
 msgid "A custom node"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:153
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:152
 msgid ""
 "Sometimes you want a certain behavior in many nodes, such as a custom scene "
 "or control that can be reused. Instancing is helpful in a lot of cases, but "
@@ -57505,7 +57690,7 @@ msgid ""
 "a custom behavior."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:161
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:160
 msgid ""
 "Nodes added via an EditorPlugin are \"CustomType\" nodes. While they work "
 "with any scripting language, they have fewer features than :ref:`the Script "
@@ -57513,7 +57698,7 @@ msgid ""
 "or NativeScript, we recommend using Script Classes instead."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:166
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:165
 msgid ""
 "To create a new node type, you can use the function :ref:`add_custom_type() "
 "<class_EditorPlugin_method_add_custom_type>` from the :ref:"
@@ -57524,14 +57709,14 @@ msgid ""
 "editor."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:173
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:172
 msgid ""
 "For this tutorial, we'll create a simple button that prints a message when "
 "clicked. For that, we'll need a simple script that extends from :ref:"
 "`class_Button`. It could also extend :ref:`class_BaseButton` if you prefer:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:211
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:210
 msgid ""
 "That's it for our basic button. You can save this as ``my_button.gd`` inside "
 "the plugin folder. You'll also need a 16×16 icon to show in the scene tree. "
@@ -57541,36 +57726,36 @@ msgid ""
 "desired."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:219
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:218
 msgid ""
 "Now, we need to add it as a custom type so it shows on the **Create New "
 "Node** dialog. For that, change the ``custom_node.gd`` script to the "
 "following:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:267
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:266
 msgid ""
 "With that done, the plugin should already be available in the plugin list in "
 "the **Project Settings**, so activate it as explained in `Checking the "
 "results`_."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:270
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:269
 msgid "Then try it out by adding your new node:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:274
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:273
 msgid ""
 "When you add the node, you can see that it already has the script you "
 "created attached to it. Set a text to the button, save and run the scene. "
 "When you click the button, you can see some text in the console:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:281
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:280
 msgid "A custom dock"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:283
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:282
 msgid ""
 "Sometimes, you need to extend the editor and add tools that are always "
 "available. An easy way to do it is to add a new dock with a plugin. Docks "
@@ -57578,28 +57763,28 @@ msgid ""
 "usual GUI scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:287
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:286
 msgid ""
 "Creating a custom dock is done just like a custom node. Create a new "
 "``plugin.cfg`` file in the ``addons/my_custom_dock`` folder, then add the "
 "following content to it:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:312
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:311
 msgid ""
 "Then create the script ``custom_dock.gd`` in the same folder. Fill it with "
 "the :ref:`template we've seen before <doc_making_plugins_template_code>` to "
 "get a good start."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:316
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:315
 msgid ""
 "Since we're trying to add a new custom dock, we need to create the contents "
 "of the dock. This is nothing more than a standard Godot scene: just create a "
 "new scene in the editor then edit it."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:320
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:319
 msgid ""
 "For an editor dock, the root node **must** be a :ref:`Control "
 "<class_Control>` or one of its child classes. For this tutorial, you can "
@@ -57608,7 +57793,7 @@ msgid ""
 "Also, don't forget to add some text to your button."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:328
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:327
 msgid ""
 "Save this scene as ``my_dock.tscn``. Now, we need to grab the scene we "
 "created then add it as a dock in the editor. For this, you can rely on the "
@@ -57617,24 +57802,24 @@ msgid ""
 "<class_EditorPlugin>` class."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:333
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:332
 msgid ""
 "You need to select a dock position and define the control to add (which is "
 "the scene you just created). Don't forget to **remove the dock** when the "
 "plugin is deactivated. The script could look like this:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:394
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:393
 msgid ""
 "Note that, while the dock will initially appear at its specified position, "
 "the user can freely change its position and save the resulting layout."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:398
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:397
 msgid "Checking the results"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:400
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:399
 msgid ""
 "It's now time to check the results of your work. Open the **Project "
 "Settings** and click on the **Plugins** tab. Your plugin should be the only "
@@ -57642,18 +57827,18 @@ msgid ""
 "top-right corner."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:407
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:406
 msgid ""
 "You can see the plugin is inactive on the **Status** column; click on the "
 "status to select **Active**. The dock should become visible before you even "
 "close the settings window. You should now have a custom dock:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:414
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:413
 msgid "Going beyond"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:416
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:415
 msgid ""
 "Now that you've learned how to make basic plugins, you can extend the editor "
 "in several ways. Lots of functionality can be added to the editor with "
@@ -57661,32 +57846,32 @@ msgid ""
 "to delve into C++ modules."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:421
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:420
 msgid ""
 "You can make your own plugins to help yourself and share them in the `Asset "
 "Library <https://godotengine.org/asset-library/>`_ so that people can "
 "benefit from your work."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:428
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:427
 msgid "Registering autoloads/singletons in plugins"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:430
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:429
 msgid ""
 "It is possible for editor plugins to automatically register :ref:`autoloads "
 "<doc_singletons_autoload>` when the plugin is enabled. This also includes "
 "unregistering the autoload when the plugin is disabled."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:434
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:433
 msgid ""
 "This makes setting up plugins faster for users, as they no longer have to "
 "manually add autoloads to their project settings if your editor plugin "
 "requires the use of an autoload."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/making_plugins.rst:438
+#: ../../docs/tutorials/plugins/editor/making_plugins.rst:437
 msgid "Use the following code to register a singleton from an editor plugin:"
 msgstr ""
 
@@ -58563,12 +58748,12 @@ msgid ""
 "methods to specifically add :ref:`class_EditorProperty`-based controls."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:172
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:171
 #, fuzzy
 msgid "Adding an interface to edit properties"
 msgstr "יצירת תוכן"
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:174
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:173
 msgid ""
 "The :ref:`class_EditorProperty` class is a special type of :ref:"
 "`class_Control` that can interact with the inspector dock's edited objects. "
@@ -58576,31 +58761,31 @@ msgid ""
 "complex scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:178
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:177
 msgid ""
 "There are three essential parts to the script extending :ref:"
 "`class_EditorProperty`:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:181
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:180
 msgid ""
 "You must define the ``_init()`` method to set up the control nodes' "
 "structure."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:184
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:183
 msgid ""
 "You should implement the ``update_property()`` to handle changes to the data "
 "from the outside."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:187
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:186
 msgid ""
 "A signal must be emitted at some point to inform the inspector that the "
 "control has changed the property using ``emit_changed``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:190
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:189
 msgid ""
 "You can display your custom widget in two ways. Use just the default "
 "``add_child()`` method to display it to the right of the property name, and "
@@ -58608,7 +58793,7 @@ msgid ""
 "the name."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:309
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:307
 msgid ""
 "Using the example code above you should be able to make a custom widget that "
 "replaces the default :ref:`class_SpinBox` control for integers with a :ref:"
@@ -59303,17 +59488,25 @@ msgstr ""
 msgid "Godot provides several useful tools to do this easily."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:52
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:53
+msgid ""
+"You can see how Godot's support for multiple resolutions works in action "
+"using the `Multiple Resolutions and Aspect Ratios demo project <https://"
+"github.com/godotengine/godot-demo-projects/tree/3.x/gui/"
+"multiple_resolutions>`__."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:57
 msgid "Base size"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:54
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:59
 msgid ""
 "A base size for the window can be specified in the Project Settings under "
 "**Display → Window**."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:59
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:64
 msgid ""
 "However, what it does is not completely obvious; the engine will *not* "
 "attempt to switch the monitor to this resolution. Rather, think of this "
@@ -59322,14 +59515,14 @@ msgid ""
 "rectangle in the 2D editor."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:65
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:70
 msgid ""
 "There is often a need to support devices with screen and window sizes that "
 "are different from this base size. Godot offers many ways to control how the "
 "viewport will be resized and stretched to different screen sizes."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:72
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:77
 msgid ""
 "Godot follows a modern approach to multiple resolutions. The engine will "
 "never change the monitor's resolution on its own. While changing the "
@@ -59339,25 +59532,25 @@ msgid ""
 "handle resolution changes as well as Windows."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:79
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:84
 msgid ""
 "Changing the monitor's resolution also removes any control from the game "
 "developer over filtering and aspect ratio stretching, which can be important "
 "to ensure correct display for pixel art games."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:83
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:88
 msgid ""
 "On top of that, changing the monitor's resolution makes alt-tabbing in and "
 "out of a game much slower since the monitor has to change resolutions every "
 "time this is done."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:88
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:93
 msgid "Resizing"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:90
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:95
 msgid ""
 "There are several types of devices, with several types of screens, which in "
 "turn have different pixel density and resolutions. Handling all of them can "
@@ -59368,7 +59561,7 @@ msgid ""
 "by calling ``get_tree().get_root()`` or ``get_node(\"/root\")``)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:99
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:104
 msgid ""
 "In any case, while changing the root Viewport params is probably the most "
 "flexible way to deal with the problem, it can be a lot of work, code and "
@@ -59376,27 +59569,27 @@ msgid ""
 "settings to handle multiple resolutions."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:105
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:110
 msgid "Stretch settings"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:107
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:112
 msgid ""
 "Stretch settings are located in the project settings and provide several "
 "options:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:112
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:117
 msgid "Stretch Mode"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:114
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:119
 msgid ""
 "The **Stretch Mode** setting defines how the base size is stretched to fit "
 "the resolution of the window or screen."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:119
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:124
 msgid ""
 "The animations below use a \"base size\" of just 16×9 pixels to demonstrate "
 "the effect of different stretch modes. A single sprite, also 16×9 pixels in "
@@ -59404,14 +59597,14 @@ msgid ""
 "<class_Line2D>` is added on top of it:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:129
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:134
 msgid ""
 "**Stretch Mode = Disabled** (default): No stretching happens. One unit in "
 "the scene corresponds to one pixel on the screen. In this mode, the "
 "**Stretch Aspect** setting has no effect."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:135
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:140
 msgid ""
 "**Stretch Mode = 2D**: In this mode, the base size specified in width and "
 "height in the project settings is stretched to cover the whole screen "
@@ -59421,7 +59614,7 @@ msgid ""
 "and screen pixels, which may result in scaling artifacts."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:145
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:150
 msgid ""
 "**Stretch Mode = Viewport**: Viewport scaling means that the size of the "
 "root :ref:`Viewport <class_Viewport>` is set precisely to the base size "
@@ -59430,17 +59623,17 @@ msgid ""
 "screen (taking the **Stretch Aspect** setting into account)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:155
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:160
 msgid "Stretch Aspect"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:157
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:162
 msgid ""
 "The second setting is the stretch aspect. Note that this only takes effect "
 "if **Stretch Mode** is set to something other than **Disabled**."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:160
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:165
 msgid ""
 "In the animations below, you will notice gray and black areas. The black "
 "areas are added by the engine and cannot be drawn into. The gray areas are "
@@ -59448,7 +59641,7 @@ msgid ""
 "region outside the blue frame you see in the 2D editor."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:165
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:170
 msgid ""
 "**Stretch Aspect = Ignore**: Ignore the aspect ratio when stretching the "
 "screen. This means that the original resolution will be stretched to exactly "
@@ -59456,7 +59649,7 @@ msgid ""
 "nonuniform stretching: things looking wider or taller than designed."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:173
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:178
 msgid ""
 "**Stretch Aspect = Keep**: Keep aspect ratio when stretching the screen. "
 "This means that the viewport retains its original size regardless of the "
@@ -59464,13 +59657,13 @@ msgid ""
 "screen (\"letterboxing\") or the sides (\"pillarboxing\")."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:179
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:184
 msgid ""
 "This is a good option if you know the aspect ratio of your target devices in "
 "advance, or if you don't want to handle different aspect ratios."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:185
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:190
 msgid ""
 "**Stretch Aspect = Keep Width**: Keep aspect ratio when stretching the "
 "screen. If the screen is wider than the base size, black bars are added at "
@@ -59480,13 +59673,13 @@ msgid ""
 "\"Expand Vertically\"."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:192
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:197
 msgid ""
 "This is usually the best option for creating GUIs or HUDs that scale, so "
 "some controls can be anchored to the bottom (:ref:`doc_size_and_anchors`)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:198
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:203
 msgid ""
 "**Stretch Aspect = Keep Height**: Keep aspect ratio when stretching the "
 "screen. If the screen is taller than the base size, black bars are added at "
@@ -59496,13 +59689,13 @@ msgid ""
 "\"Expand Horizontally\"."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:205
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:210
 msgid ""
 "This is usually the best option for 2D games that scroll horizontally (like "
 "runners or platformers)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:210
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:215
 msgid ""
 "**Stretch Aspect = Expand**: Keep aspect ratio when stretching the screen, "
 "but keep neither the base width nor height. Depending on the screen aspect "
@@ -59511,7 +59704,7 @@ msgid ""
 "screen is taller than the original size)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:221
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:226
 msgid ""
 "To support both portrait and landscape mode with a similar automatically "
 "determined scale factor, set your project's base resolution to be a *square* "
@@ -59521,31 +59714,31 @@ msgid ""
 "Project Settings."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:228
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:233
 msgid ""
 "To allow the user to choose their preferred screen orientation at run-time, "
 "remember to set **Display > Window > Handheld > Orientation** to ``sensor``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:232
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:237
 msgid "Stretch Shrink"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:234
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:239
 msgid ""
 "The **Shrink** setting allows you to add an extra scaling factor on top of "
 "what the **Stretch** options above already provide. The default value of 1 "
 "means that no scaling occurs."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:238
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:243
 msgid ""
 "If, for example, you set **Shrink** to 4 and leave **Stretch Mode** on "
 "**Disabled**, each unit in your scene will correspond to 4×4 pixels on the "
 "screen."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:242
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:247
 msgid ""
 "If **Stretch Mode** is set to something other than **Disabled**, the size of "
 "the root viewport is scaled down by the **Shrink** factor, and pixels in the "
@@ -59554,43 +59747,43 @@ msgid ""
 "lower resolution."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:249
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:254
 msgid "From scripts"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:251
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:256
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
 "set_screen_stretch()`` method (see :ref:`SceneTree.set_screen_stretch() "
 "<class_SceneTree_method_set_screen_stretch>`)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:256
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:261
 msgid "Common use case scenarios"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:258
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:263
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:262
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:267
 msgid "Desktop game"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:264
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:269
 msgid "**Non-pixel art:**"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:266
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:271
 msgid ""
 "Set the base window width to ``1920`` and window height to ``1080``. If you "
 "have a display smaller than 1920×1080, set **Test Width** and **Test "
 "Height** to lower values to make the window smaller when the project starts."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:269
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:274
 msgid ""
 "Alternatively, if you're targeting high-end devices primarily, set the base "
 "window width to ``3840`` and window height to ``2160``. This allows you to "
@@ -59601,34 +59794,34 @@ msgid ""
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:276
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:323
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:342
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:281
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:328
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:347
 msgid "Set the stretch mode to ``2d``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:277
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:324
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:343
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:282
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:329
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:348
 msgid ""
 "Set the stretch aspect to ``expand``. This allows for supporting multiple "
 "aspect ratios and makes better use of tall smartphone displays (such as 18:9 "
 "or 19:9 aspect ratios)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:279
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:326
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:345
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:284
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:331
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:350
 msgid ""
 "Configure Control nodes' anchors to snap to the correct corners using the "
 "**Layout** menu."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:281
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:286
 msgid "**Pixel art:**"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:283
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:288
 msgid ""
 "Set the base window size to the viewport size you intend to use. Most pixel "
 "art games use viewport sizes between 256×224 and 640×480. Higher viewport "
@@ -59636,24 +59829,24 @@ msgid ""
 "show more of the game world at a given time."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:287
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:292
 msgid "Set the stretch mode to ``viewport``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:288
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:293
 msgid ""
 "Set the stretch aspect to ``keep`` to enforce a single aspect ratio (with "
 "black bars). As an alternative, you can set the stretch aspect to ``expand`` "
 "to support multiple aspect ratios."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:291
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:296
 msgid ""
 "If using the ``expand`` stretch aspect, Configure Control nodes' anchors to "
 "snap to the correct corners using the **Layout** menu."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:296
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:301
 msgid ""
 "The ``viewport`` stretch mode provides low-resolution rendering that is then "
 "stretched to the final window size. If you are OK with sprites being able to "
@@ -59662,7 +59855,7 @@ msgid ""
 "``viewport`` stretch mode."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:302
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:307
 msgid ""
 "Godot currently doesn't have a way to enforce integer scaling when using the "
 "``2d`` or ``viewport`` stretch mode, which means pixel art may look bad if "
@@ -59671,21 +59864,21 @@ msgid ""
 "com/Yukitty/godot-addon-integer_resolution_handler>`__."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:308
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:313
 msgid "Mobile game in landscape mode"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:310
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:315
 msgid ""
 "Godot is configured to use landscape mode by default. This means you don't "
 "need to change the display orientation project setting."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:313
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:318
 msgid "Set the base window width to ``1280`` and window height to ``720``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:314
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:319
 msgid ""
 "Alternatively, if you're targeting high-end devices primarily, set the base "
 "window width to ``1920`` and window height to ``1080``. This allows you to "
@@ -59698,15 +59891,15 @@ msgid ""
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:329
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:334
 msgid "Mobile game in portrait mode"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:331
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:336
 msgid "Set the base window width to ``720`` and window height to ``1080``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:332
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:337
 msgid ""
 "Alternatively, if you're targeting high-end devices primarily, set the base "
 "window width to ``1080`` and window height to ``1920``. This allows you to "
@@ -59719,40 +59912,40 @@ msgid ""
 "`doc_multiple_resolutions_reducing_aliasing_on_downsampling`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:341
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:346
 msgid "Set **Display > Window > Handheld > Orientation** to ``portrait``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:348
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:353
 #, fuzzy
 msgid "Non-game application"
 msgstr "אנימציות"
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:350
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:355
 msgid ""
 "Set the base window width and height to the smallest window size that you "
 "intend to target. This is not required, but this ensures that you design "
 "your UI with small window sizes in mind."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:352
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:357
 msgid "Keep the stretch mode to its default value, ``disabled``."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:353
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:358
 msgid ""
 "Keep the stretch aspect to its default value, ``ignore`` (its value won't be "
 "used since the stretch mode is ``disabled``)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:355
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:360
 msgid ""
 "You can define a minimum window size by setting ``OS.min_window_size`` in a "
 "script's ``_ready()`` function. This prevents the user from resizing the "
 "application below a certain size, which could break the UI layout."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:361
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:366
 msgid ""
 "Godot doesn't support manually overriding the 2D scale factor yet, so it is "
 "not possible to have hiDPI support in non-game applications. Due to this, it "
@@ -59760,12 +59953,12 @@ msgid ""
 "allow for the OS to use its low-DPI fallback."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:367
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:372
 #, fuzzy
 msgid "hiDPI support"
 msgstr "אנימציות"
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:369
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:374
 msgid ""
 "By default, Godot projects aren't considered DPI-aware by the operating "
 "system. This is done to improve performance on low-end systems, since the "
@@ -59773,7 +59966,7 @@ msgid ""
 "application scale itself (even when using the ``viewport`` stretch mode)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:374
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:379
 msgid ""
 "However, the OS-provided DPI fallback scaling doesn't play well with "
 "fullscreen mode. If you want crisp visuals on hiDPI displays or if project "
@@ -59781,24 +59974,24 @@ msgid ""
 "Hidpi** in the Project Settings."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:379
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:384
 msgid ""
 "**Allow Hidpi** is only effective on Windows and macOS. It's ignored on all "
 "other platforms."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:384
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:389
 msgid ""
 "The Godot editor itself is always marked as DPI-aware. Running the project "
 "from the editor will only be DPI-aware if **Allow Hidpi** is enabled in the "
 "Project Settings."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:391
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:396
 msgid "Reducing aliasing on downsampling"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:393
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:398
 msgid ""
 "If the game has a very high base resolution (e.g. 3840×2160), aliasing might "
 "appear when downsampling to something considerably lower like 1280×720. "
@@ -59807,18 +60000,18 @@ msgid ""
 "data is loaded::"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:401
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:406
 msgid ""
 "Alternatively, you can also enable mipmaps on all your 2D textures. However, "
 "enabling mipmaps will increase memory usage which may be problematic on low-"
 "end mobile devices."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:406
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:411
 msgid "Handling aspect ratios"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:408
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:413
 msgid ""
 "Once scaling for different resolutions is accounted for, make sure that your "
 "*user interface* also scales for different aspect ratios. This can be done "
@@ -59826,11 +60019,11 @@ msgid ""
 "<doc_gui_containers>`."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:414
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:419
 msgid "Field of view scaling"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:416
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:421
 msgid ""
 "The 3D Camera node's **Keep Aspect** property defaults to the **Keep "
 "Height** scaling mode (also called *Hor+*). This is usually the best value "
@@ -59838,7 +60031,7 @@ msgid ""
 "will automatically use a wider field of view."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:421
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:426
 msgid ""
 "However, if your 3D game is intended to be played in portrait mode, it may "
 "make more sense to use **Keep Width** instead (also called *Vert-*). This "
@@ -59846,11 +60039,11 @@ msgid ""
 "a *taller* field of view, which is more logical here."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:427
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:432
 msgid "Scaling 2D and 3D elements differently using Viewports"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:429
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:434
 msgid ""
 "Using multiple Viewport nodes, you can have different scales for various "
 "elements. For instance, you can use this to render the 3D world at a low "
@@ -59859,7 +60052,7 @@ msgid ""
 "elements crisp."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:434
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:439
 msgid ""
 "This is done by using the root Viewport node only for 2D elements, then "
 "creating a Viewport node to display the 3D world and displaying it using a "
@@ -59869,18 +60062,18 @@ msgid ""
 "scaled 3D viewports look better in many cases."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/multiple_resolutions.rst:441
+#: ../../docs/tutorials/rendering/multiple_resolutions.rst:446
 msgid ""
 "See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ for examples."
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:4
-msgid "Fixing jitter and stutter"
+msgid "Fixing jitter, stutter and input lag"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:7
-msgid "What are jitter and stutter?"
+msgid "What is jitter, stutter and input lag?"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:9
@@ -59892,30 +60085,41 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:14
-msgid "Distinguishing between them"
+msgid ""
+"*Input lag* is unrelated to jitter and stutter, but is sometimes discussed "
+"alongside. Input lag refers to visible on-screen delay when performing "
+"actions with the mouse, keyboard, controller or touchscreen. It can be "
+"related to game code, engine code or external factors (such as hardware). "
+"Input lag is most noticeable in games that use the mouse to aim, such as "
+"first-person games. Input lag can't be completely eliminated, but it can be "
+"reduced in several ways."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:16
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:22
+msgid "Distinguishing between jitter and stutter"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:24
 msgid ""
 "A game running at a normal framerate without exhibiting any effect will "
 "appear smooth:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:20
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:28
 msgid "A game exhibiting *jitter* will shake constantly in a very subtle way:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:24
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:32
 msgid ""
 "Finally, a game exhibiting *stutter* will appear smooth, but appear to "
 "*stop* or *roll back a frame* every few seconds:"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:30
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:39
 msgid "Jitter"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:32
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:41
 msgid ""
 "There can be many causes of jitter, the most typical one happens when the "
 "game *physics frequency* (usually 60 Hz) runs at a different resolution than "
@@ -59923,49 +60127,71 @@ msgid ""
 "different from 60 Hz."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:35
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:46
 msgid ""
 "This is generally not a problem, given that most monitors are 60 Hz, and "
 "starting with Godot 3.1, a frame timer was introduced that tries to "
 "synchronize with refresh as well as possible."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:38
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:50
 msgid ""
 "Sometimes only some objects appear to jitter (character or background). This "
 "happens when they are processed in different time sources (one is processed "
 "in the physics step while another is processed in the idle step). Godot 3.1 "
 "does some improvements to this, from allowing kinematic bodies to be "
-"animated in the regular _process loop, to further fixes in the frame timer."
+"animated in the regular ``_process()`` loop, to further fixes in the frame "
+"timer."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:45
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:58
 msgid ""
-"You can use physics interpolation to mitigate physics-related jittering. See "
-"`lawnjelly's smoothing-addon <https://github.com/lawnjelly/smoothing-"
-"addon>`__ for an add-on that can be dropped into any project to enable "
-"physics interpolation."
+"In 3D, you can use :ref:`physics interpolation <doc_physics_interpolation>` "
+"to mitigate physics-related jittering."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:50
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:61
+msgid ""
+"For 2D, see `lawnjelly's smoothing-addon <https://github.com/lawnjelly/"
+"smoothing-addon>`__ for an add-on that can be dropped into any project to "
+"enable physics interpolation."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:65
 msgid "Stutter"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:52
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:67
 msgid ""
 "Stutter may happen due to two different reasons. The first, and most obvious "
 "one, is the game not being able to keep full framerate performance. Solving "
 "this is game specific and will require optimization."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:55
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:71
 msgid ""
 "The second is more complicated, because it is often not associated to the "
 "engine or game but the underlying operating system. Here is some information "
 "regarding stutter on different OSs."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:61
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:75
+msgid ""
+"On platforms that support disabling V-Sync, suttering can be made less "
+"noticeable by disabling V-Sync in the project settings. This will however "
+"cause tearing to appear, especially on monitors with low refresh rates. If "
+"your monitor supports it, consider enabling variable refresh rate (G-Sync/"
+"FreeSync) while leaving V-Sync enabled. This avoids mitigating some forms of "
+"stuttering without introducing tearing."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:82
+msgid ""
+"Forcing your graphics card to use the maximum performance profile can also "
+"help reduce stuttering, at the cost of increased GPU power draw."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:88
 msgid ""
 "Windows is known to cause stutter in windowed games. This mostly depends on "
 "the hardware installed, drivers version and processes running in parallel (e."
@@ -59974,7 +60200,7 @@ msgid ""
 "Normal\". This helps considerably but may not completely eliminate stutter."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:66
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:94
 msgid ""
 "Eliminating this completely requires giving your game full privileges to "
 "become \"time critical\", which is not advised. Some games may do it, but it "
@@ -59983,39 +60209,43 @@ msgid ""
 "window, e.g. puzzle games, will usually not exhibit this problem anyway)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:70
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:100
 msgid ""
 "For fullscreen, Windows gives special priority to the game so stutter is no "
 "longer visible and very rare. This is how most games are played."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:74
-msgid "Linux (X11)"
-msgstr ""
-
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:76
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:106
 msgid ""
-"Stutter may be visible on Desktop Linux, but this is usually associated with "
-"different video drivers and compositors. Nouveau drivers often exhibit this, "
-"while AMD or NVidia proprietary don't. Some compositors may also trigger "
+"Stutter may be visible on desktop Linux, but this is usually associated with "
+"different video drivers and compositors. Some compositors may also trigger "
 "this problem (e.g. KWin), so it is advised to try using a different one to "
-"rule it out as the cause."
+"rule it out as the cause. Some window managers such as KWin and Xfwm allow "
+"you to manually disable compositing, which can improve performance (at the "
+"cost of tearing)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:80
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:113
 msgid ""
-"There is no workaround for driver or compositor stuttering other than "
+"There is no workaround for driver or compositor stuttering, other than "
 "reporting it as an issue to the driver or compositor developers."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:86
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:116
+msgid ""
+"`Feral GameMode <https://github.com/FeralInteractive/gamemode>`__ can be "
+"used to automatically apply optimizations (such as forcing the GPU "
+"performance profile) when running specific processes."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:123
 msgid ""
 "Generally, macOS is stutter-free, although recently some bugs were reported "
 "when running on fullscreen (this is a macOS bug). If you have a machine "
 "exhibiting this behavior, please let us know."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:92
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:130
 msgid ""
 "Generally, Android is stutter and jitter-free because the running activity "
 "gets all the priority. That said, there may be problematic devices (older "
@@ -60023,18 +60253,128 @@ msgid ""
 "let us know."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:98
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:137
 msgid ""
 "iOS devices are generally stutter-free, but older devices running newer "
 "versions of the operating system may exhibit problems. This is generally "
 "unavoidable."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:102
-msgid "Reporting stutter or jitter problems"
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:141
+#, fuzzy
+msgid "Input lag"
+msgstr "קלט"
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:144
+msgid "Project configuration"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:104
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:146
+msgid ""
+"On platforms that support disabling V-Sync, input lag can be made less "
+"noticeable by disabling V-Sync in the project settings. This will however "
+"cause tearing to appear, especially on monitors with low refresh rates."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:150
+msgid ""
+"Increasing the number of physics iterations per second can also reduce "
+"physics-induced input latency. This is especially noticeable when using "
+"physics interpolation (which improves smoothness but increases latency). To "
+"do so, set **Physics > Common > Physics FPS** to a value higher than the "
+"default ``60``, or set ``Engine.physics_fps`` at run-time in a script. "
+"Values that are a multiple of the monitor refresh rate (typically ``60``) "
+"work best when physics interpolation is disabled, as they will avoid jitter. "
+"This means values such as ``120``, ``180`` and ``240`` are good starting "
+"points. As a bonus, higher physics FPSes make tunneling and physics "
+"unstability issues less likely to occur."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:161
+msgid ""
+"The downside of increasing physics FPS is that CPU usage will increase, "
+"which can lead to performance bottlenecks in games that have heavy physics "
+"simulation code. This can be alleviated by increasing physics FPS only in "
+"situations where low latency is critical, or by letting players adjust "
+"physics FPS to match their hardware. However, different physics FPS will "
+"lead to different outcomes in physics simulation, even when ``delta`` is "
+"consistently used in your game logic. This can give certain players an "
+"advantage over others. Therefore, allowing the player to change the physics "
+"FPS themselves should be avoided for competitive multiplayer games."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:171
+msgid ""
+"Lastly, you can disable input buffering on a per-rendered frame basis by "
+"calling ``Input.set_use_accumulated_input(false)`` in a script. This will "
+"make it so the ``_input()`` and ``_unhandled_input()`` functions in your "
+"scripts are called on every input, rather than accumulating inputs and "
+"waiting for a frame to be rendered. Disabling input accumulation will "
+"increase CPU usage, so it should be done with caution."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:179
+msgid "Hardware/OS-specific"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:181
+msgid ""
+"If your monitor supports it, consider enabling variable refresh rate (G-Sync/"
+"FreeSync) while leaving V-Sync enabled, then cap the framerate in the "
+"project settings to a slightly lower value than your monitor's maximum "
+"refresh rate as per `this page <https://blurbusters.com/howto-low-lag-vsync-"
+"on/>`__. For example, on a 144 Hz monitor, you can set the project's "
+"framerate cap to ``141``. This may be counterintuitive at first, but capping "
+"the FPS below the maximum refresh rate range ensures that the OS never has "
+"to wait for vertical blanking to finish. This leads to *similar* input lag "
+"as V-Sync disabled with the same framerate cap (usually less than 1 ms "
+"greater), but without any tearing."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:192
+msgid ""
+"This can be done by changing the **Debug > Settings > FPS > Force FPS** "
+"project setting or assigning ``Engine.target_fps`` at run-time in a script."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:195
+msgid ""
+"On some platforms, you can also opt into a low-latency mode in the graphics "
+"driver options (such as the NVIDIA Control Panel on Windows). The **Ultra** "
+"setting will give you the lowest possible latency, at the cost of slightly "
+"lower average framerates. Forcing the GPU to use the maximum performance "
+"profile can also further reduce input lag, at the cost of higher power "
+"consumption (and resulting heat/fan noise)."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:202
+msgid ""
+"Finally, make sure your monitor is running at its highest possible refresh "
+"rate in the OS' display settings."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:205
+msgid ""
+"Also, ensure that your mouse is configured to use its highest polling rate "
+"(typically 1,000 Hz for gaming mice, sometimes more). High USB polling rates "
+"can however result in high CPU usage, so 500 Hz may be a safer bet on low-"
+"end CPUs. If your mouse offers multiple :abbr:`DPI (Dots Per Inch)` "
+"settings, consider also `using the highest possible setting and reducing in-"
+"game sensitivity to reduce mouse latency <https://www.youtube.com/watch?"
+"v=6AoRfv9W110>`__."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:211
+msgid ""
+"On Linux, disabling compositing in window managers that allow it (such as "
+"KWin or Xfwm) can reduce input lag significantly."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:215
+msgid "Reporting jitter, stutter or input lag problems"
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:217
 msgid ""
 "If you are reporting a stutter or jitter problem (opening an issue) not "
 "caused by any of the above reasons, please specify very clearly all the "
@@ -60042,12 +60382,22 @@ msgid ""
 "This may help to better troubleshoot it."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:107
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:222
 msgid ""
-"Also make sure to use the correct term (jitter or stutter) based on the "
-"exhibited behavior. This will help understand your issue much faster. "
-"Provide a project that can be used to reproduce the issue, and if possible a "
-"screen capture demonstrating the bug."
+"If you are reporting input lag problems, please include a capture made with "
+"a high speed camera (such as your phone's slow motion video mode). The "
+"capture **must** have both the screen and the input device visible so that "
+"the number of frames between an input and the on-screen result can can be "
+"counted. Also, make sure to mention your monitor's refresh rate and your "
+"input device's polling rate (especially for mice)."
+msgstr ""
+
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:229
+msgid ""
+"Also, make sure to use the correct term (jitter, stutter, input lag) based "
+"on the exhibited behavior. This will help understand your issue much faster. "
+"Provide a project that can be used to reproduce the issue, and if possible, "
+"include a screen capture demonstrating the bug."
 msgstr ""
 
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:4
@@ -61868,7 +62218,9 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:879
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
-"using ``break`` or continued using ``continue``:"
+"using ``break`` or continued using ``continue`` (i.e. skipping to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:890
@@ -70518,22 +70870,23 @@ msgstr ""
 #: ../../docs/tutorials/scripting/pausing_games.rst:62
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
-"The first parent that has a non-Inherit state."
+"The first parent that has a state other than Inherit determines the "
+"effective value that will be used."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:64
+#: ../../docs/tutorials/scripting/pausing_games.rst:65
 msgid ""
-"**Stop**: Stop the node no matter what (and children in Inherit mode). When "
-"paused this node will not process."
+"**Stop**: If the scene tree is paused, pause the node no matter what (and "
+"children in Inherit mode). When paused, this node *will not* process."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:66
+#: ../../docs/tutorials/scripting/pausing_games.rst:67
 msgid ""
-"**Process**: Process the node no matter what (and children in Inherit mode). "
-"Paused or not this node will process."
+"**Process**: Even if the scene tree is paused, process the node no matter "
+"what (and children in Inherit mode). Paused or not, this node *will* process."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:69
+#: ../../docs/tutorials/scripting/pausing_games.rst:70
 msgid ""
 "By default, all nodes have this property in the \"Inherit\" state. If the "
 "parent is set to \"Inherit\", then the grandparent will be checked and so "
@@ -70543,7 +70896,7 @@ msgid ""
 "processing."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:75
+#: ../../docs/tutorials/scripting/pausing_games.rst:76
 msgid ""
 "The ``_process``, ``_physics_process``, ``_input``, and ``_input_event`` "
 "functions will not be called. However signals still work and cause their "
@@ -70551,14 +70904,14 @@ msgid ""
 "node that has its pause mode set to \"Stop\"."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:80
+#: ../../docs/tutorials/scripting/pausing_games.rst:81
 msgid ""
 "Animation nodes will pause their current animation, audio nodes will pause "
 "their current audio stream, and particles will pause. These resume "
 "automatically when the game is no longer paused."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:84
+#: ../../docs/tutorials/scripting/pausing_games.rst:85
 msgid ""
 "It is important to note that even if a node is processing while the game is "
 "paused physics will **NOT** work for it by default. As stated earlier this "
@@ -70566,12 +70919,12 @@ msgid ""
 "made active while the game is paused by using their ``set_active`` methods."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:90
+#: ../../docs/tutorials/scripting/pausing_games.rst:91
 #, fuzzy
 msgid "Pause Menu Example"
 msgstr "השהיית סצנה"
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:92
+#: ../../docs/tutorials/scripting/pausing_games.rst:93
 msgid ""
 "Here is an example of a pause menu. Create a popup or panel with controls "
 "inside, and set its pause mode to \"Process\" then hide it. By setting the "
@@ -70580,13 +70933,13 @@ msgid ""
 "working when paused."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:98
+#: ../../docs/tutorials/scripting/pausing_games.rst:99
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
 "enable the pause and show the pause screen."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/pausing_games.rst:116
+#: ../../docs/tutorials/scripting/pausing_games.rst:117
 msgid "To unpause, do the opposite when the pause screen is closed:"
 msgstr ""
 
@@ -73773,8 +74126,8 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:94
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:139
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:210
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:341
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:203
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:342
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:52
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:114
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:165
@@ -73785,7 +74138,7 @@ msgid "Built-in"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:344
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:54
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:55
 msgid "in float **TIME**"
@@ -73865,14 +74218,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:141
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:212
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:345
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:205
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:346
 msgid "in vec2 **VIEWPORT_SIZE**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:141
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:212
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:345
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:205
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:346
 msgid "Size of viewport (in pixels)."
 msgstr ""
 
@@ -73881,20 +74234,20 @@ msgid "inout mat4 **WORLD_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:143
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:217
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:352
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:210
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:353
 msgid "Model space to world space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:145
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:219
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:354
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:212
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:355
 msgid "in mat4 **INV_CAMERA_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:145
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:219
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:354
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:212
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:355
 msgid "World space to view space transform."
 msgstr ""
 
@@ -73903,21 +74256,21 @@ msgid "inout mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:147
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:223
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:358
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:216
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:359
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:120
 msgid "View space to clip space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:149
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:221
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:356
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:214
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:357
 msgid "in mat4 **CAMERA_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:149
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:221
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:356
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:214
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:357
 msgid "View space to world space transform."
 msgstr ""
 
@@ -73934,133 +74287,169 @@ msgid "inout mat4 **INV_PROJECTION_MATRIX**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:153
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:225
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:360
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:218
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:361
 msgid "Clip space to view space transform."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:155
-msgid "inout vec3 **VERTEX**"
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:220
+msgid "in vec3 **NODE_POSITION_WORLD**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:155
-msgid "Vertex in local coordinates."
+msgid "Node position, in world space."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:157
-msgid "out vec4  **POSITION**"
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:222
+msgid "in vec3 **NODE_POSITION_VIEW**"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:157
-msgid "If written to, overrides final vertex position."
+msgid "Node position, in view space."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:159
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:233
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:224
+msgid "in vec3 **CAMERA_POSITION_WORLD**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:159
+msgid "Camera position, in world space."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:161
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:226
+msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:161
+msgid "Camera direction, in world space."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:163
+msgid "inout vec3 **VERTEX**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:163
+msgid "Vertex in local coordinates."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:165
+msgid "out vec4 **POSITION**"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:165
+msgid "If written to, overrides final vertex position."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:167
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:234
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:171
 msgid "inout vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:159
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:167
 msgid "Normal in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:161
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:235
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:169
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:236
 msgid "inout vec3 **TANGENT**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:161
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:169
 msgid "Tangent in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:163
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:237
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:171
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:238
 msgid "inout vec3 **BINORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:163
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:171
 msgid "Binormal in local coordinates."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:165
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:261
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:173
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:262
 msgid "out float **ROUGHNESS**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:165
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:173
 msgid "Roughness for vertex lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:167
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:175
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:132
 msgid "inout vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:167
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:175
 msgid "UV main channel."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:169
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:177
 msgid "inout vec2 **UV2**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:169
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:177
 msgid "UV secondary channel."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:171
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:247
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:374
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:179
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:248
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:375
 msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:171
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:247
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:374
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:179
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:248
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:375
 msgid ""
 "``true`` when calculations happen in sRGB color space (``true`` in GLES2, "
 "``false`` in GLES3)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:174
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:182
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:134
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:180
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:67
 msgid "inout vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:174
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:182
 msgid "Color from vertices."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:176
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:184
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:140
 msgid "inout float **POINT_SIZE**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:176
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:184
 msgid "Point size for point rendering."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:178
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:186
 msgid "in int **INSTANCE_ID**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:178
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:186
 msgid "Instance ID for instancing."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:180
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:188
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:122
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:180
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:188
 msgid "Instance custom data (for particles, mostly)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:185
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:193
 msgid ""
 "``MODELVIEW_MATRIX`` combines both the ``WORLD_MATRIX`` and "
 "``INV_CAMERA_MATRIX`` and is better suited when floating point issues may "
@@ -74069,12 +74458,12 @@ msgid ""
 "``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:188
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:196
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:144
 msgid "Fragment built-ins"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:190
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:198
 msgid ""
 "The default use of a Godot fragment processor function is to set up the "
 "material properties of your object and to let the built-in renderer handle "
@@ -74083,329 +74472,334 @@ msgid ""
 "corresponding functionality."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:194
-msgid "Below are examples of common variables calculated using the built-ins:"
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:206
-msgid ""
-"A commonly used alternative to ``WORLD_MATRIX[3].xyz`` is to use ``vec3 "
-"origin = (WORLD_MATRIX * vec4(0,0,0,1)).xyz``. It is more efficient to use "
-"``WORLD_MATRIX[3].xyz`` as it avoids the matrix multiplication."
-msgstr ""
-
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:214
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:347
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:207
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:348
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:167
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:220
 msgid "in vec4 **FRAGCOORD**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:214
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:207
 msgid ""
 "Coordinate of pixel center in screen space. ``xy`` specifies  position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:217
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:352
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:210
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:353
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:116
 msgid "in mat4 **WORLD_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:223
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:358
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:216
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:359
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:120
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:225
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:360
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:218
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:361
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:227
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:220
+msgid "Node world space position."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:222
+msgid "Node view space position."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:224
+msgid "Camera world space position."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:226
+msgid "Camera world space direction."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:228
 msgid "in vec3 **VERTEX**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:227
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:228
 msgid "Vertex that comes from vertex function (default, in view space)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:229
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:368
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:230
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:369
 msgid "in vec3 **VIEW**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:229
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:230
 msgid "Vector from camera to fragment position (in view space)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:231
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:232
 msgid "in bool **FRONT_FACING**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:231
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:232
 msgid "``true`` if current face is front face."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:233
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:234
 msgid "Normal that comes from vertex function (default, in view space)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:235
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:236
 msgid "Tangent that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:237
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:238
 msgid "Binormal that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:239
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:240
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:173
 msgid "out vec3 **NORMALMAP**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:239
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:240
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:241
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:242
 msgid "out float **NORMALMAP_DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:241
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:242
 msgid "Depth from variable above. Defaults to 1.0."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:243
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:364
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:244
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:365
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:178
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:227
 msgid "in vec2 **UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:243
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:364
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:244
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:365
 msgid "UV that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:245
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:366
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:246
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:367
 msgid "in vec2 **UV2**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:245
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:366
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:246
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:367
 msgid "UV2 that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:249
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:250
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:229
 msgid "in vec4 **COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:249
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:250
 msgid "COLOR that comes from vertex function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:251
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:252
 msgid "out vec3 **ALBEDO**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:251
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:252
 msgid "Albedo (default white)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:253
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:381
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:254
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:385
 msgid "out float **ALPHA**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:253
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:381
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:254
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:385
 msgid ""
 "Alpha (0..1); if written to, the material will go to the transparent "
 "pipeline."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:255
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:256
 msgid "out float **ALPHA_SCISSOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:255
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:256
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:257
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:258
 msgid "out float **METALLIC**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:257
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:258
 msgid "Metallic (0..1)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:259
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:260
 msgid "out float **SPECULAR**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:259
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:260
 msgid ""
 "Specular. Defaults to 0.5, best not to modify unless you want to change IOR."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:261
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:262
 msgid "Roughness (0..1)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:263
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:264
 msgid "out float **RIM**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:263
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:264
 msgid "Rim (0..1). If used, Godot calculates rim lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:265
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:266
 msgid "out float **RIM_TINT**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:265
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:266
 msgid ""
 "Rim Tint, goes from 0 (white) to 1 (albedo). If used, Godot calculates rim "
 "lighting."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:267
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:268
 msgid "out float **CLEARCOAT**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:267
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:268
 msgid "Small added specular blob. If used, Godot calculates Clearcoat."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:269
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:270
 msgid "out float **CLEARCOAT_GLOSS**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:269
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:270
 msgid "Gloss of Clearcoat. If used, Godot calculates Clearcoat."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:271
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:272
 msgid "out float **ANISOTROPY**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:271
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:272
 msgid "For distorting the specular blob according to tangent space."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:273
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:274
 msgid "out vec2 **ANISOTROPY_FLOW**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:273
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:274
 msgid "Distortion direction, use with flowmaps."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:275
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:276
 msgid "out float **SSS_STRENGTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:275
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:276
 msgid ""
 "Strength of Subsurface Scattering. If used, Subsurface Scattering will be "
 "applied to object."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:277
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:278
 msgid "out vec3 **TRANSMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:277
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:278
 msgid ""
 "Transmission mask (default 0,0,0). Allows light to pass through object. Only "
 "applied if used."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:279
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:280
 msgid "out vec3 **EMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:279
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:280
 msgid "Emission color (can go over 1,1,1 for HDR)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:281
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:282
 msgid "out float **AO**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:281
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:282
 msgid "Strength of Ambient Occlusion. For use with pre-baked AO."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:283
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:284
 msgid "out float **AO_LIGHT_AFFECT**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:283
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:284
 msgid "How much AO affects lights (0..1; default 0)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:285
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:286
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:285
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:286
 msgid ""
 "Built-in Texture for reading from the screen. Mipmaps contain increasingly "
 "blurred copies."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:287
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:288
 msgid "sampler2D **DEPTH_TEXTURE**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:287
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:288
 msgid ""
 "Built-in Texture for reading depth from the screen. Must convert to linear "
 "using INV_PROJECTION."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:289
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:290
 msgid "out float **DEPTH**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:289
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:290
 msgid ""
 "Custom depth value (0..1). If ``DEPTH`` is being written to in any shader "
 "branch, then you are responsible for setting the ``DEPTH`` for **all** other "
 "branches. Otherwise, the graphics API will leave them uninitialized."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:293
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:294
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:195
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:243
 msgid "in vec2 **SCREEN_UV**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:293
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:294
 msgid "Screen UV coordinate for current pixel."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:295
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:296
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:199
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:245
 msgid "in vec2 **POINT_COORD**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:295
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:296
 msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:300
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:395
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:301
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:399
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
 "may exhibit transparency sorting issues. Read the :ref:`transparency sorting "
@@ -74414,13 +74808,13 @@ msgid ""
 "and ways to avoid issues."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:306
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:307
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:207
 #, fuzzy
 msgid "Light built-ins"
 msgstr "אנימציות"
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:308
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:309
 msgid ""
 "Writing light processor functions is completely optional. You can skip the "
 "light function by setting render_mode to ``unshaded``. If no light function "
@@ -74429,38 +74823,38 @@ msgid ""
 "render_mode)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:313
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:314
 msgid ""
 "To write a light function, assign something to ``DIFFUSE_LIGHT`` or "
 "``SPECULAR_LIGHT``. Assigning nothing means no light is processed."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:316
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:317
 msgid ""
 "The light function is called for every light in every pixel. It is called "
 "within a loop for each light type."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:319
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:320
 msgid ""
 "Below is an example of a custom light function using a Lambertian lighting "
 "model:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:327
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:328
 msgid ""
 "If you want the lights to add together, add the light contribution to "
 "``DIFFUSE_LIGHT`` using ``+=``, rather than overwriting it."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:331
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:332
 msgid ""
 "In GLES2, lights will always be added together even if you override "
 "``DIFFUSE_LIGHT`` using ``=``. This is due to lighting being computed in "
 "multiple passes (one for each light), unlike GLES3."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:335
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:336
 msgid ""
 "The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
 "is enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** "
@@ -74468,91 +74862,94 @@ msgid ""
 "platforms.)"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:344
 msgid "Elapsed total time in seconds."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:347
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:348
 msgid ""
 "Coordinate of pixel center in screen space. ``xy`` specifies position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:362
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:363
 #: ../../docs/tutorials/shaders/shader_reference/canvas_item_shader.rst:224
 msgid "in vec3 **NORMAL**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:362
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:363
 msgid "Normal vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:368
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:369
 msgid "View vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:370
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:371
 msgid "in vec3 **LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:370
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:371
 msgid "Light Vector, in view space."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:372
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:373
 msgid "in vec3 **ATTENUATION**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:372
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:373
 msgid "Attenuation based on distance or shadow."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:377
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:378
 msgid "in vec3 **ALBEDO**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:377
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:378
 msgid "Base albedo."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:379
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:380
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:379
-msgid "Color of light multiplied by energy."
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:380
+msgid ""
+"Color of light multiplied by ``energy * PI``. The ``PI`` multiplication is "
+"present because physically-based lighting models include a division by "
+"``PI``."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:384
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:388
 msgid "in float **ROUGHNESS**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:384
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:388
 msgid "Roughness."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:386
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:390
 msgid "in vec3 **TRANSMISSION**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:386
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:390
 msgid "Transmission mask from fragment function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:388
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:392
 msgid "out vec3 **DIFFUSE_LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:388
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:392
 msgid "Diffuse light result."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:390
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:394
 msgid "out vec3 **SPECULAR_LIGHT**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:390
+#: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:394
 msgid "Specular light result."
 msgstr ""
 
@@ -84873,41 +85270,42 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:84
 msgid ""
-"This will start the build process, which will take a while. If you want "
-"SCons to build faster, use the ``-j <cores>`` parameter to specify how many "
-"cores will be used for the build. Or leave it using one core, so you can use "
-"your computer for something else :)"
+"This will start the build process, which will take a while. By default, "
+"Godot's SCons setup is configured to use all CPU threads but one (to keep "
+"the system responsive during compilation). If you want to adjust how many "
+"CPU threads SCons will use, use the ``-j <threads>`` parameter to specify "
+"how many threads will be used for the build."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:89
-msgid "Example for using 4 cores:"
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:90
+msgid "Example for using 4 threads:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:96
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:97
 msgid "Resulting binary"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:99
 msgid ""
 "The resulting binaries will be placed in the ``bin/`` subdirectory, "
 "generally with this naming convention::"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:103
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:104
 msgid "For the previous build attempt, the result would look like this::"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:108
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:109
 msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:111
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:112
 msgid "A Windows binary with the same configuration will look like this:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:118
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:119
 msgid ""
 "Copy that binary to any location you like, as it contains the project "
 "manager, editor and all means to execute the game. However, it lacks the "
@@ -84916,95 +85314,95 @@ msgid ""
 "godotengine.org/>`__, or you can build them yourself)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:125
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:132
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:133
 msgid ""
 "Tools are enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling tools produces a binary that can run "
 "projects but that does not include the editor or the project manager."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:145
 msgid "Target"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:149
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
 msgid ""
 "**release_debug**: Build without C++ debugging symbols and optimization, but "
 "keep the runtime checks (performs checks and reports errors). Official "
 "editor binaries use this configuration."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:153
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:154
 msgid ""
 "**release**: Build without symbols, with optimization and with little to no "
 "runtime checks. This target can't be used together with ``tools=yes``, as "
 "the editor requires some debug functionality and run-time checks to run."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:162
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:163
 msgid ""
 "This flag appends the ``.debug`` suffix (for debug), or ``.tools`` (for "
 "debug with tools enabled). When optimization is enabled (release), it "
 "appends the ``.opt`` suffix."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:168
 msgid "Bits"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:170
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 msgid "**32**: Build binaries for 32-bit platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**64**: Build binaries for 64-bit platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:176
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:181
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:182
 msgid ""
 "This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when "
 "relevant. If ``bits=default`` is used, the suffix will match the detected "
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
 #, fuzzy
 msgid "Custom modules"
 msgstr "אותות"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
 msgid ""
 "It's possible to compile modules residing outside of Godot's directory tree, "
 "along with the built-in modules."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
 msgid ""
 "A ``custom_modules`` build option can be passed to the command line before "
 "compiling. The option represents a comma-separated list of directory paths "
@@ -85012,30 +85410,30 @@ msgid ""
 "packages, just like the built-in ``modules/`` directory."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
 msgid ""
 "For instance, it's possible to provide both relative, absolute, and user "
 "directory paths containing such modules:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:207
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:208
 msgid ""
 "If there's any custom module with the exact directory name as a built-in "
 "module, the engine will only compile the custom one. This logic can be used "
 "to override built-in module implementations."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:214
 #, fuzzy
 msgid ":ref:`doc_custom_modules_in_c++`"
 msgstr "Android"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:217
 #, fuzzy
 msgid "Cleaning generated files"
 msgstr "יצירת תוכן"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:219
 msgid ""
 "Sometimes, you may encounter an error due to generated files being present. "
 "You can remove them by using ``scons --clean <options>``, where "
@@ -85043,7 +85441,7 @@ msgid ""
 "previously."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:223
 msgid ""
 "Alternatively, you can use ``git clean -fixd`` which will clean build "
 "artifacts for all platforms and configurations. Beware, as this will remove "
@@ -85051,47 +85449,47 @@ msgid ""
 "you have uncommitted work!"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:229
 msgid "Other build options"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:230
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:231
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:234
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:235
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:240
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:241
 msgid "Overriding the build options"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:244
 #, fuzzy
 msgid "Using a file"
 msgstr "יצירת תוכן"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:246
 msgid ""
 "The default ``custom.py`` file can be created at the root of the Godot "
 "Engine source to initialize any SCons build options passed via the command "
 "line:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:257
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:258
 msgid ""
 "You can also disable some of the builtin modules before compiling, saving "
 "some time it takes to build the engine. See :ref:`doc_optimizing_for_size` "
 "page for more details."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:262
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:263
 msgid ""
 "You can use the online `Godot build options generator <https://godot-build-"
 "options-generator.github.io/>`__ to generate a ``custom.py`` file containing "
@@ -85099,39 +85497,39 @@ msgid ""
 "Godot source directory."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:267
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:268
 msgid ""
 "Another custom file can be specified explicitly with the ``profile`` command "
 "line option, both overriding the default build configuration:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:274
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:275
 msgid ""
 "Build options set from the file can be overridden by the command line "
 "options."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:277
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:278
 msgid "It's also possible to override the options conditionally:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:292
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:293
 msgid "Using the SCONSFLAGS"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:294
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
 msgid ""
 "``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
 "the options automatically without having to supply them via the command line."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:297
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:298
 msgid ""
-"For instance, you may want to build Godot in parallel with the "
-"aforementioned ``-j`` option for all the future builds:"
+"For instance, you may want to force a number of CPU threads with the "
+"aforementioned ``-j`` option for all future builds:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:316
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:317
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -85139,20 +85537,20 @@ msgid ""
 "modules, or simply don't trust your own shadow)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:321
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:322
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:344
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:345
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
 "template."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:348
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:349
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -85164,7 +85562,7 @@ msgid ""
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:356
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:357
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "
@@ -85382,23 +85780,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:137
-msgid "You can specify a number of CPU threads to use to speed up the build::"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_windows.rst:141
-msgid ""
-"In general, it is OK to have at least as many threads compiling Godot as you "
-"have cores in your CPU, if not one or two more. Feel free to add the ``-j`` "
-"option to any SCons command you see below."
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_windows.rst:145
 msgid ""
 "When compiling with multiple CPU threads, SCons may warn about pywin32 being "
 "missing. You can safely ignore this warning."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:148
+#: ../../docs/development/compiling/compiling_for_windows.rst:140
 msgid ""
 "If all goes well, the resulting binary executable will be placed in ``C:"
 "\\godot\\bin\\`` with the name ``godot.windows.tools.32.exe`` or ``godot."
@@ -85407,30 +85794,30 @@ msgid ""
 "``bits=32``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:154
+#: ../../docs/development/compiling/compiling_for_windows.rst:146
 msgid ""
 "This executable file contains the whole engine and runs without any "
 "dependencies. Running it will bring up the Project Manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:157
-#: ../../docs/development/compiling/compiling_for_x11.rst:131
+#: ../../docs/development/compiling/compiling_for_windows.rst:149
+#: ../../docs/development/compiling/compiling_for_x11.rst:127
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
 "executable smaller and faster by adding the SCons option "
 "``target=release_debug``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:161
+#: ../../docs/development/compiling/compiling_for_windows.rst:153
 msgid ""
 "If you are compiling Godot with MinGW, you can make the binary even smaller "
-"and faster by adding the SCons option ``use_lto=yes``. As link-time "
+"and faster by adding the SCons option ``lto=full``. As link-time "
 "optimization is a memory-intensive process, this will require about 7 GB of "
 "available RAM while compiling."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:166
-#: ../../docs/development/compiling/compiling_for_x11.rst:140
+#: ../../docs/development/compiling/compiling_for_windows.rst:158
+#: ../../docs/development/compiling/compiling_for_x11.rst:136
 #: ../../docs/development/compiling/compiling_for_osx.rst:66
 msgid ""
 "If you want to use separate editor settings for your own Godot builds and "
@@ -85438,12 +85825,12 @@ msgid ""
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:172
+#: ../../docs/development/compiling/compiling_for_windows.rst:164
 #, fuzzy
 msgid "Development in Visual Studio"
 msgstr "פיתוח"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:174
+#: ../../docs/development/compiling/compiling_for_windows.rst:166
 msgid ""
 "Using an IDE is not required to compile Godot, as SCons takes care of "
 "everything. But if you intend to do engine development or debugging of the "
@@ -85451,34 +85838,34 @@ msgid ""
 "IDE."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:178
+#: ../../docs/development/compiling/compiling_for_windows.rst:170
 msgid ""
 "Folder-based editors don't require any particular setup to start working "
 "with Godot's codebase. To edit projects with Visual Studio they need to be "
 "set up as a solution."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:181
+#: ../../docs/development/compiling/compiling_for_windows.rst:173
 msgid ""
 "You can create a Visual Studio solution via SCons by running SCons with the "
 "``vsproj=yes`` parameter, like this::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:186
+#: ../../docs/development/compiling/compiling_for_windows.rst:178
 msgid ""
 "You will be able to open Godot's source in a Visual Studio solution now, and "
 "able to build Godot using Visual Studio's **Build** button."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:189
+#: ../../docs/development/compiling/compiling_for_windows.rst:181
 msgid "See :ref:`doc_configuring_an_ide_vs` for further details."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:192
+#: ../../docs/development/compiling/compiling_for_windows.rst:184
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:194
+#: ../../docs/development/compiling/compiling_for_windows.rst:186
 msgid ""
 "If you are a Linux or macOS user, you need to install `MinGW-w64 <https://"
 "mingw-w64.org/doku.php>`__, which typically comes in 32-bit and 64-bit "
@@ -85486,98 +85873,98 @@ msgid ""
 "some known ones:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:200
+#: ../../docs/development/compiling/compiling_for_windows.rst:192
 #: ../../docs/development/compiling/compiling_for_x11.rst:48
 msgid "**Arch Linux**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:200
+#: ../../docs/development/compiling/compiling_for_windows.rst:192
 msgid "Install `mingw-w64-gcc from the AUR`_."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:202
+#: ../../docs/development/compiling/compiling_for_windows.rst:194
 #: ../../docs/development/compiling/compiling_for_x11.rst:53
 msgid "**Debian** / **Ubuntu**"
 msgstr "**דביאן** / **אובונטו**"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:206
+#: ../../docs/development/compiling/compiling_for_windows.rst:198
 #: ../../docs/development/compiling/compiling_for_x11.rst:58
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:211
+#: ../../docs/development/compiling/compiling_for_windows.rst:203
 msgid "**macOS**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:215
+#: ../../docs/development/compiling/compiling_for_windows.rst:207
 #: ../../docs/development/compiling/compiling_for_x11.rst:75
 msgid "**Mageia**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:223
+#: ../../docs/development/compiling/compiling_for_windows.rst:215
 msgid ""
 "Before attempting the compilation, SCons will check for the following "
 "binaries in your ``PATH`` environment variable::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:229
+#: ../../docs/development/compiling/compiling_for_windows.rst:221
 msgid ""
 "If the binaries are not located in the ``PATH`` (e.g. ``/usr/bin``), you can "
 "define the following environment variables to give a hint to the build "
 "system::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:236
+#: ../../docs/development/compiling/compiling_for_windows.rst:228
 msgid ""
 "To make sure you are doing things correctly, executing the following in the "
 "shell should result in a working compiler (the version output may differ "
 "based on your system)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:246
+#: ../../docs/development/compiling/compiling_for_windows.rst:238
 msgid ""
 "Cross-compiling from some Ubuntu versions may lead to `this bug <https://"
 "github.com/godotengine/godot/issues/9258>`_, due to a default configuration "
 "lacking support for POSIX threading."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:250
+#: ../../docs/development/compiling/compiling_for_windows.rst:242
 msgid ""
 "You can change that configuration following those instructions, for 64-bit::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:258
+#: ../../docs/development/compiling/compiling_for_windows.rst:250
 msgid "And for 32-bit::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:266
+#: ../../docs/development/compiling/compiling_for_windows.rst:258
 msgid "Creating Windows export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:268
+#: ../../docs/development/compiling/compiling_for_windows.rst:260
 msgid ""
 "Windows export templates are created by compiling Godot without the editor, "
 "with the following flags::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:276
+#: ../../docs/development/compiling/compiling_for_windows.rst:268
 msgid ""
 "If you plan on replacing the standard export templates, copy these to the "
 "following location, replacing ``<version>`` with the version identifier "
 "(such as ``3.1.1.stable`` or ``3.2.dev``)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:282
+#: ../../docs/development/compiling/compiling_for_windows.rst:274
 msgid "With the following names::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:289
+#: ../../docs/development/compiling/compiling_for_windows.rst:281
 msgid ""
 "However, if you are using custom modules or custom engine code, you may "
 "instead want to configure your binaries as custom export templates here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:295
+#: ../../docs/development/compiling/compiling_for_windows.rst:287
 msgid ""
 "You don't need to copy them in this case, just reference the resulting files "
 "in the ``bin\\`` directory of your Godot source folder, so the next time you "
@@ -85688,70 +86075,62 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:111
 msgid ""
-"A good rule of thumb for the ``-j`` (*jobs*) flag, is to have at least as "
-"many threads compiling Godot as you have cores in your CPU, if not one or "
-"two more. Feel free to add the ``-j`` option to any SCons command you see "
-"below."
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:115
-msgid ""
 "If all goes well, the resulting binary executable will be placed in the "
 "\"bin\" subdirectory. This executable file contains the whole engine and "
 "runs without any dependencies. Executing it will bring up the project "
 "manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:122
+#: ../../docs/development/compiling/compiling_for_x11.rst:118
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:128
+#: ../../docs/development/compiling/compiling_for_x11.rst:124
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:135
+#: ../../docs/development/compiling/compiling_for_x11.rst:131
 msgid ""
 "If you are compiling Godot with GCC, you can make the binary even smaller "
-"and faster by adding the SCons option ``use_lto=yes``. As link-time "
+"and faster by adding the SCons option ``lto=full``. As link-time "
 "optimization is a memory-intensive process, this will require about 7 GB of "
 "available RAM while compiling."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:146
+#: ../../docs/development/compiling/compiling_for_x11.rst:142
 #: ../../docs/development/compiling/compiling_for_osx.rst:81
 msgid "Compiling a headless/server build"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:148
+#: ../../docs/development/compiling/compiling_for_x11.rst:144
 #: ../../docs/development/compiling/compiling_for_osx.rst:83
 msgid ""
 "To compile a *headless* build which provides editor functionality to export "
 "projects in an automated manner, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:153
+#: ../../docs/development/compiling/compiling_for_x11.rst:149
 #: ../../docs/development/compiling/compiling_for_osx.rst:88
 msgid ""
 "To compile a debug *server* build which can be used with :ref:`remote "
 "debugging tools <doc_command_line_tutorial>`, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:158
+#: ../../docs/development/compiling/compiling_for_x11.rst:154
 msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:164
+#: ../../docs/development/compiling/compiling_for_x11.rst:160
 #: ../../docs/development/compiling/compiling_for_osx.rst:99
 #: ../../docs/development/compiling/compiling_for_web.rst:29
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:166
+#: ../../docs/development/compiling/compiling_for_x11.rst:162
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -85760,96 +86139,96 @@ msgid ""
 "a suitable build environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:174
+#: ../../docs/development/compiling/compiling_for_x11.rst:170
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:177
+#: ../../docs/development/compiling/compiling_for_x11.rst:173
 msgid "(32 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:184
+#: ../../docs/development/compiling/compiling_for_x11.rst:180
 msgid "(64 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:191
+#: ../../docs/development/compiling/compiling_for_x11.rst:187
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:194
+#: ../../docs/development/compiling/compiling_for_x11.rst:190
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:200
+#: ../../docs/development/compiling/compiling_for_x11.rst:196
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:209
+#: ../../docs/development/compiling/compiling_for_x11.rst:205
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
 "here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:215
+#: ../../docs/development/compiling/compiling_for_x11.rst:211
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
 "build, you automatically have the custom templates referenced."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:220
+#: ../../docs/development/compiling/compiling_for_x11.rst:216
 msgid "Using Clang and LLD for faster development"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:222
+#: ../../docs/development/compiling/compiling_for_x11.rst:218
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:225
+#: ../../docs/development/compiling/compiling_for_x11.rst:221
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:227
+#: ../../docs/development/compiling/compiling_for_x11.rst:223
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:229
+#: ../../docs/development/compiling/compiling_for_x11.rst:225
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:234
+#: ../../docs/development/compiling/compiling_for_x11.rst:230
 msgid ""
 "After the build is completed, a new binary with a ``.llvm`` suffix will be "
 "created in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:237
+#: ../../docs/development/compiling/compiling_for_x11.rst:233
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "
 "and faster."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:241
+#: ../../docs/development/compiling/compiling_for_x11.rst:237
 #, fuzzy
 msgid "Using Pyston for faster development"
 msgstr "מבוא"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:243
+#: ../../docs/development/compiling/compiling_for_x11.rst:239
 msgid ""
 "You can use `Pyston <https://www.pyston.org/>`__ to run SCons. Pyston is a "
 "JIT-enabled implementation of the Python language (which SCons is written "
@@ -85858,37 +86237,37 @@ msgid ""
 "Pyston can be combined with Clang and LLD to get even faster builds."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:249
+#: ../../docs/development/compiling/compiling_for_x11.rst:245
 msgid ""
 "Download the `latest portable Pyston release <https://github.com/pyston/"
 "pyston/releases/latest>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:250
+#: ../../docs/development/compiling/compiling_for_x11.rst:246
 msgid ""
 "Extract the portable ``.tar.gz`` to a set location, such as ``$HOME/.local/"
 "opt/pyston/`` (create folders as needed)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:251
+#: ../../docs/development/compiling/compiling_for_x11.rst:247
 msgid ""
 "Use ``cd`` to reach the extracted Pyston folder from a terminal, then run "
 "``./pyston -m pip install scons`` to install SCons within Pyston."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:253
+#: ../../docs/development/compiling/compiling_for_x11.rst:249
 msgid ""
 "To make SCons via Pyston easier to run, create a symbolic link of its "
 "wrapper script to a location in your ``PATH`` environment variable::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:258
+#: ../../docs/development/compiling/compiling_for_x11.rst:254
 msgid ""
 "Instead of running ``scons <build arguments>``, run ``pyston-scons <build "
 "arguments>`` to compile Godot."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:261
+#: ../../docs/development/compiling/compiling_for_x11.rst:257
 msgid ""
 "If you can't run ``pyston-scons`` after creating the symbolic link, make "
 "sure ``$HOME/.local/bin/`` is part of your user's ``PATH`` environment "
@@ -88058,7 +88437,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:172
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:152
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 #, fuzzy
 msgid ""
@@ -88124,7 +88503,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:73
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:76
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:56
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
 #, fuzzy
 msgid "Debugging the project"
@@ -88704,48 +89083,48 @@ msgid ""
 "section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:50
 msgid "An example of a filled out ``tasks.json``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:72
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
 msgid ""
 "Arguments can be different based on your own setup and needs. See :ref:"
 "`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:78
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
 msgid ""
 "To run and debug the project you need to create a new configuration in the "
 "``launch.json`` file."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:80
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:60
 msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:81
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:61
 msgid ""
 "If ``launch.json`` file is missing you will be prompted to create a new one."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:86
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:66
 msgid ""
 "Select **C++ (GDB/LLDB)**. There may be another platform specific option "
 "here. If selected, adjust the configuration example provided accordingly."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:88
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
 msgid ""
 "Within the ``launch.json`` file find the ``\"configurations\"`` array and "
 "add a new section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:156
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:136
 msgid "An example of a filled out ``launch.json``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:161
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:141
 msgid ""
 "Due to sporadic performance issues, it is recommended to use LLDB over GDB "
 "on Unix-based systems. Make sure that the `CodeLLDB extension <https://"
@@ -88753,19 +89132,19 @@ msgid ""
 "installed."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:165
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:145
 msgid ""
 "If you encounter issues with lldb, you may consider using gdb (see the "
 "X11_gdb configuration)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:167
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:147
 msgid ""
 "Do note that lldb may work better with llvm-based builds. See :ref:"
 "`doc_compiling_for_x11` for further information."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:169
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:149
 msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
@@ -91187,44 +91566,30 @@ msgstr ""
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:32
 msgid ""
-"To get profiling data that best matches the production environment, you "
-"should compile binaries with the following SCons options:"
+"To get profiling data that best matches the production environment (but with "
+"debugging symbols), you should compile binaries with the ``production=yes "
+"debug_symbols=yes`` SCons options."
 msgstr ""
 
 #: ../../docs/development/cpp/using_cpp_profilers.rst:35
-msgid "For editor binaries: ``target=release_debug use_lto=yes``"
-msgstr ""
-
-#: ../../docs/development/cpp/using_cpp_profilers.rst:36
-msgid "For debug export templates: ``target=release_debug use_lto=yes``"
-msgstr ""
-
-#: ../../docs/development/cpp/using_cpp_profilers.rst:37
-msgid ""
-"For release export templates: ``tools=no target=release debug_symbols=yes`` "
-"- ``debug_symbols=yes`` is required as export templates are stripped from "
-"debugging symbols by default."
-msgstr ""
-
-#: ../../docs/development/cpp/using_cpp_profilers.rst:40
 msgid ""
 "It is possible to run a profiler on less optimized builds (e.g. "
 "``target=debug`` without LTO), but results will naturally be less "
 "representative of real world conditions."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:45
+#: ../../docs/development/cpp/using_cpp_profilers.rst:40
 msgid ""
 "Do *not* strip debugging symbols on the binaries using the ``strip`` command "
 "after compiling the binaries. Otherwise, you will no longer get useful "
 "profiling information when running a profiler."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:50
+#: ../../docs/development/cpp/using_cpp_profilers.rst:45
 msgid "Benchmarking startup/shutdown times"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:52
+#: ../../docs/development/cpp/using_cpp_profilers.rst:47
 msgid ""
 "If you're looking into optimizing Godot's startup/shutdown performance, you "
 "can tell the profiler to use the ``--quit`` command line option on the Godot "
@@ -91233,21 +91598,21 @@ msgid ""
 "project directory>`` (which runs a project directly)."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:60
+#: ../../docs/development/cpp/using_cpp_profilers.rst:55
 msgid ""
 "See :ref:`doc_command_line_tutorial` for more command line arguments "
 "supported by Godot."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:64
+#: ../../docs/development/cpp/using_cpp_profilers.rst:59
 msgid "Profiler-specific instructions"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:67
+#: ../../docs/development/cpp/using_cpp_profilers.rst:62
 msgid "VerySleepy"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:69
+#: ../../docs/development/cpp/using_cpp_profilers.rst:64
 msgid ""
 "Start the Godot editor or your project first. If you start the project "
 "manager, make sure to edit or run a project first. Otherwise, the profiler "
@@ -91255,27 +91620,27 @@ msgid ""
 "child process for every project edited or run."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:73
+#: ../../docs/development/cpp/using_cpp_profilers.rst:68
 msgid ""
 "Open VerySleepy and select the Godot executable in the list of processes on "
 "the left:"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:77
+#: ../../docs/development/cpp/using_cpp_profilers.rst:72
 msgid "Click the **Profile All** button on the right to start profiling."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:78
+#: ../../docs/development/cpp/using_cpp_profilers.rst:73
 msgid ""
 "Perform the actions you wish to profile in the editor or project. When "
 "you're done, click **Stop** (*not* Abort)."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:79
+#: ../../docs/development/cpp/using_cpp_profilers.rst:74
 msgid "Wait for the results window to appear."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:80
+#: ../../docs/development/cpp/using_cpp_profilers.rst:75
 msgid ""
 "Once the results window appears, filter the view to remove external modules "
 "(such as the graphics driver). You can filter by module by finding a line "
@@ -91284,38 +91649,38 @@ msgid ""
 "that appears."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:84
+#: ../../docs/development/cpp/using_cpp_profilers.rst:79
 msgid "Your results window should now look something like this:"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:89
+#: ../../docs/development/cpp/using_cpp_profilers.rst:84
 msgid "HotSpot"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:91
+#: ../../docs/development/cpp/using_cpp_profilers.rst:86
 msgid "Open HotSpot. Click **Record Data**:"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:95
+#: ../../docs/development/cpp/using_cpp_profilers.rst:90
 msgid ""
 "In the next window, specify the path to the Godot binary that includes debug "
 "symbols."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:96
+#: ../../docs/development/cpp/using_cpp_profilers.rst:91
 msgid ""
 "Specify command line arguments to run a specific project, with or without "
 "the editor."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:97
+#: ../../docs/development/cpp/using_cpp_profilers.rst:92
 msgid ""
 "The path to the working directory can be anything if an absolute path is "
 "used for the ``--path`` command line argument. Otherwise, it must be set to "
 "that the relative path to the project is valid."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:100
+#: ../../docs/development/cpp/using_cpp_profilers.rst:95
 msgid ""
 "Make sure **Elevate Privileges** is checked if you have administrative "
 "privileges. While not essential for profiling Godot, this will ensure all "
@@ -91323,26 +91688,26 @@ msgid ""
 "capture. Your settings should now look something like this:"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:107
+#: ../../docs/development/cpp/using_cpp_profilers.rst:102
 msgid ""
 "Click **Start Recording** and perform the actions you wish to profile in the "
 "editor/project."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:108
+#: ../../docs/development/cpp/using_cpp_profilers.rst:103
 msgid ""
 "Quit the editor/project normally or use the **Stop Profiling** button in "
 "HotSpot to stop profiling early. Stopping profiling early can result in "
 "cleaner profiles if you're not interested in the engine's quit procedure."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:111
+#: ../../docs/development/cpp/using_cpp_profilers.rst:106
 msgid ""
 "Click **View Results** and wait for the profiling visualization to be "
 "generated:"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:115
+#: ../../docs/development/cpp/using_cpp_profilers.rst:110
 msgid ""
 "Use the tabs at the top to navigate between the different views. These views "
 "show the same data, but in different ways. The **Flame Graph** tab is a good "
@@ -91351,7 +91716,7 @@ msgid ""
 "optimizing them will improve performance the most."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:120
+#: ../../docs/development/cpp/using_cpp_profilers.rst:115
 msgid ""
 "At the bottom of all tabs except **Summary**, you will also see a list of "
 "CPU threads started by the engine among with the CPU utilization for each "
@@ -91359,7 +91724,7 @@ msgid ""
 "in time."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:128
+#: ../../docs/development/cpp/using_cpp_profilers.rst:123
 msgid ""
 "If you don't want the startup procedure to be included in the profile, you "
 "can also attach HotSpot to a running process by clicking **Record Data** "
@@ -91367,67 +91732,67 @@ msgid ""
 "Process(es)**."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:133
+#: ../../docs/development/cpp/using_cpp_profilers.rst:128
 msgid ""
 "This process attachment-based workflow is similar to the one used by "
 "VerySleepy."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:136
+#: ../../docs/development/cpp/using_cpp_profilers.rst:131
 msgid "Xcode Instruments"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:138
+#: ../../docs/development/cpp/using_cpp_profilers.rst:133
 msgid ""
 "Open Xcode. Select **Open Developer Tool** - **Instruments** from the "
 "**Xcode** app menu:"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:139
+#: ../../docs/development/cpp/using_cpp_profilers.rst:134
 msgid "Double-click on **Time Profiler** in the **Instruments** window:"
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:143
+#: ../../docs/development/cpp/using_cpp_profilers.rst:138
 msgid ""
 "In the Time Profiler window, click on the **Target** menu, select **Choose "
 "target...** and specify the path to the Godot binary, command line arguments "
 "and environment variables in the next window."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:149
+#: ../../docs/development/cpp/using_cpp_profilers.rst:144
 msgid ""
 "You can also attach the Time Profiler to a running process by selecting it "
 "from the **Target** menu."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:152
+#: ../../docs/development/cpp/using_cpp_profilers.rst:147
 msgid ""
 "Click the **Start an immediate mode recording** button to start profiling."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:156
+#: ../../docs/development/cpp/using_cpp_profilers.rst:151
 msgid ""
 "Perform the actions you wish to profile in the editor or project. When "
 "you're done, click the **Stop** button."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:159
+#: ../../docs/development/cpp/using_cpp_profilers.rst:154
 msgid "Wait for the results to appear."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:160
+#: ../../docs/development/cpp/using_cpp_profilers.rst:155
 msgid ""
 "At the bottom of the window you will see a call tree for all CPU threads "
 "started, and the **Heaviest Stack Trace** overview."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:162
+#: ../../docs/development/cpp/using_cpp_profilers.rst:157
 msgid ""
 "Select **Hide system libraries** in the **Call Tree** menu (at the bottom of "
 "window) to remove external modules."
 msgstr ""
 
-#: ../../docs/development/cpp/using_cpp_profilers.rst:164
+#: ../../docs/development/cpp/using_cpp_profilers.rst:159
 msgid ""
 "You can use the timeline at the top of the window to display details for the "
 "specific time period."
@@ -92898,9 +93263,9 @@ msgid ""
 "**The class reference.** This is the documentation for the complete Godot "
 "API as exposed to GDScript and the other scripting languages. It can be "
 "consulted offline, directly in Godot's code editor, or online at :ref:`Godot "
-"API <toc-class-ref>`. To contribute to the class reference, you have to edit "
-"the XML file corresponding to the class and make a pull request. See :ref:"
-"`doc_updating_the_class_reference` and :ref:"
+"API <doc_class_reference>`. To contribute to the class reference, you have "
+"to edit the XML file corresponding to the class and make a pull request. "
+"See :ref:`doc_updating_the_class_reference` and :ref:"
 "`doc_class_reference_writing_guidelines` for more details."
 msgstr ""
 
@@ -96117,8 +96482,8 @@ msgstr ""
 msgid ""
 "The class reference's source files are in the `Godot engine repository "
 "<https://github.com/godotengine/godot>`_. We generate the :ref:`Godot API "
-"<toc-class-ref>` section of this documentation from them. If you want to "
-"update the description of a class, its methods, or properties, read :ref:"
+"<doc_class_reference>` section of this documentation from them. If you want "
+"to update the description of a class, its methods, or properties, read :ref:"
 "`doc_updating_the_class_reference`."
 msgstr ""
 
@@ -96677,9 +97042,9 @@ msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:8
 msgid ""
-"The class reference is available online in the :ref:`classes <toc-class-"
-"ref>` section of the documentation and in the Godot editor, from the help "
-"menu."
+"The class reference is available online in the :ref:`classes "
+"<doc_class_reference>` section of the documentation and in the Godot editor, "
+"from the help menu."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:11
@@ -96745,9 +97110,9 @@ msgstr ""
 #: ../../docs/community/contributing/updating_the_class_reference.rst:46
 msgid ""
 "Always edit the API reference through these source XML files. Do not edit "
-"the generated ``.rst`` files :ref:`in the online documentation <toc-class-"
-"ref>`, hosted in the `godot-docs <https://github.com/godotengine/godot-"
-"docs>`_ repository."
+"the generated ``.rst`` files :ref:`in the online documentation "
+"<doc_class_reference>`, hosted in the `godot-docs <https://github.com/"
+"godotengine/godot-docs>`_ repository."
 msgstr ""
 
 #: ../../docs/community/contributing/updating_the_class_reference.rst:53
