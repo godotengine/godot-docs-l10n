@@ -57,7 +57,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: 2023-09-14 03:16+0000\n"
 "Last-Translator: Bayu Satiyo <itsyuukunz@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
@@ -1966,7 +1966,7 @@ msgstr ""
 #: ../../docs/tutorials/export/one-click_deploy.rst:63
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:180
 #: ../../docs/tutorials/platform/android/android_plugin.rst:162
-#: ../../docs/development/compiling/compiling_for_windows.rst:244
+#: ../../docs/development/compiling/compiling_for_windows.rst:236
 #: ../../docs/development/compiling/compiling_for_android.rst:204
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:73
 #: ../../docs/development/editor/creating_icons.rst:92
@@ -10970,7 +10970,7 @@ msgstr ""
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:378
 msgid ""
 "Here's where the magic happens. Select the *CameraPivot* and rotate it "
-"``45`` degrees around the X axis (using the red circle). You'll see the "
+"``-45`` degrees around the X axis (using the red circle). You'll see the "
 "camera move as if it was attached to a crane."
 msgstr ""
 
@@ -15316,7 +15316,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:464
 #: ../../docs/tutorials/3d/procedural_geometry/index.rst:76
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:130
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:131
 msgid "Tools"
 msgstr "Alat-alat"
 
@@ -35951,7 +35951,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_basics.rst:250
 #: ../../docs/tutorials/export/exporting_projects.rst:92
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:314
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:315
 #: ../../docs/development/compiling/compiling_with_mono.rst:173
 msgid "Export templates"
 msgstr ""
@@ -51766,7 +51766,7 @@ msgid ""
 "In some cases, you can adapt your level design to add more occlusion "
 "opportunities. For example, you can add more walls to prevent the player "
 "from seeing too far away, which would decrease performance due to the lost "
-"opportunies for occlusion culling."
+"opportunities for occlusion culling."
 msgstr ""
 
 #: ../../docs/tutorials/performance/optimizing_3d_performance.rst:65
@@ -62902,9 +62902,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:879
+#, fuzzy
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
-"using ``break`` or continued using ``continue``:"
+"using ``break`` or continued using ``continue`` (i.e. skipping to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
 msgstr ""
 "Perulangan dapat dibuat menggunakan sintaks ``while``. Perulngan dapat "
 "dihentikan menggunakan ``break`` atau dilanjutkan menggunakan ``continue``:"
@@ -86099,41 +86102,42 @@ msgstr ""
 
 #: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:84
 msgid ""
-"This will start the build process, which will take a while. If you want "
-"SCons to build faster, use the ``-j <cores>`` parameter to specify how many "
-"cores will be used for the build. Or leave it using one core, so you can use "
-"your computer for something else :)"
+"This will start the build process, which will take a while. By default, "
+"Godot's SCons setup is configured to use all CPU threads but one (to keep "
+"the system responsive during compilation). If you want to adjust how many "
+"CPU threads SCons will use, use the ``-j <threads>`` parameter to specify "
+"how many threads will be used for the build."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:89
-msgid "Example for using 4 cores:"
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:90
+msgid "Example for using 4 threads:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:96
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:97
 msgid "Resulting binary"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:98
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:99
 msgid ""
 "The resulting binaries will be placed in the ``bin/`` subdirectory, "
 "generally with this naming convention::"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:103
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:104
 msgid "For the previous build attempt, the result would look like this::"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:108
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:109
 msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:111
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:112
 msgid "A Windows binary with the same configuration will look like this:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:118
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:119
 msgid ""
 "Copy that binary to any location you like, as it contains the project "
 "manager, editor and all means to execute the game. However, it lacks the "
@@ -86142,94 +86146,94 @@ msgid ""
 "godotengine.org/>`__, or you can build them yourself)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:124
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:125
 msgid ""
 "Aside from that, there are a few standard options that can be set in all "
 "build targets, and which will be explained below."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:132
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:133
 msgid ""
 "Tools are enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling tools produces a binary that can run "
 "projects but that does not include the editor or the project manager."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:144
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:145
 msgid "Target"
 msgstr "Sasaran"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:146
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:147
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:148
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:149
 msgid ""
 "**debug**: Build with C++ debugging symbols, runtime checks (performs checks "
 "and reports error) and none to little optimization."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:150
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:151
 msgid ""
 "**release_debug**: Build without C++ debugging symbols and optimization, but "
 "keep the runtime checks (performs checks and reports errors). Official "
 "editor binaries use this configuration."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:153
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:154
 msgid ""
 "**release**: Build without symbols, with optimization and with little to no "
 "runtime checks. This target can't be used together with ``tools=yes``, as "
 "the editor requires some debug functionality and run-time checks to run."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:162
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:163
 msgid ""
 "This flag appends the ``.debug`` suffix (for debug), or ``.tools`` (for "
 "debug with tools enabled). When optimization is enabled (release), it "
 "appends the ``.opt`` suffix."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:167
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:168
 msgid "Bits"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:169
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:170
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:173
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
 msgid "**32**: Build binaries for 32-bit platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:174
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
 msgid "**64**: Build binaries for 64-bit platforms."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:175
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:176
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:181
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:182
 msgid ""
 "This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when "
 "relevant. If ``bits=default`` is used, the suffix will match the detected "
 "architecture."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:188
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:189
 msgid "Custom modules"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:190
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:191
 msgid ""
 "It's possible to compile modules residing outside of Godot's directory tree, "
 "along with the built-in modules."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:193
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:194
 msgid ""
 "A ``custom_modules`` build option can be passed to the command line before "
 "compiling. The option represents a comma-separated list of directory paths "
@@ -86237,30 +86241,30 @@ msgid ""
 "packages, just like the built-in ``modules/`` directory."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:198
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:199
 msgid ""
 "For instance, it's possible to provide both relative, absolute, and user "
 "directory paths containing such modules:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:207
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:208
 msgid ""
 "If there's any custom module with the exact directory name as a built-in "
 "module, the engine will only compile the custom one. This logic can be used "
 "to override built-in module implementations."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:213
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:214
 #, fuzzy
 msgid ":ref:`doc_custom_modules_in_c++`"
 msgstr ":ref:`doc_custom_postprocessing`"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:216
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:217
 #, fuzzy
 msgid "Cleaning generated files"
 msgstr "Membuat Kontent"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:218
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:219
 msgid ""
 "Sometimes, you may encounter an error due to generated files being present. "
 "You can remove them by using ``scons --clean <options>``, where "
@@ -86268,7 +86272,7 @@ msgid ""
 "previously."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:222
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:223
 msgid ""
 "Alternatively, you can use ``git clean -fixd`` which will clean build "
 "artifacts for all platforms and configurations. Beware, as this will remove "
@@ -86276,47 +86280,47 @@ msgid ""
 "you have uncommitted work!"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:228
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:229
 msgid "Other build options"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:230
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:231
 msgid ""
 "There are several other build options that you can use to configure the way "
 "Godot should be built (compiler, debug options, etc.) as well as the "
 "features to include/disable."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:234
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:235
 msgid ""
 "Check the output of ``scons --help`` for details about each option for the "
 "version you are willing to compile."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:240
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:241
 msgid "Overriding the build options"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:243
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:244
 #, fuzzy
 msgid "Using a file"
 msgstr "Membuat Kontent"
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:245
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:246
 msgid ""
 "The default ``custom.py`` file can be created at the root of the Godot "
 "Engine source to initialize any SCons build options passed via the command "
 "line:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:257
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:258
 msgid ""
 "You can also disable some of the builtin modules before compiling, saving "
 "some time it takes to build the engine. See :ref:`doc_optimizing_for_size` "
 "page for more details."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:262
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:263
 msgid ""
 "You can use the online `Godot build options generator <https://godot-build-"
 "options-generator.github.io/>`__ to generate a ``custom.py`` file containing "
@@ -86324,39 +86328,39 @@ msgid ""
 "Godot source directory."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:267
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:268
 msgid ""
 "Another custom file can be specified explicitly with the ``profile`` command "
 "line option, both overriding the default build configuration:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:274
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:275
 msgid ""
 "Build options set from the file can be overridden by the command line "
 "options."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:277
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:278
 msgid "It's also possible to override the options conditionally:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:292
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:293
 msgid "Using the SCONSFLAGS"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:294
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:295
 msgid ""
 "``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
 "the options automatically without having to supply them via the command line."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:297
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:298
 msgid ""
-"For instance, you may want to build Godot in parallel with the "
-"aforementioned ``-j`` option for all the future builds:"
+"For instance, you may want to force a number of CPU threads with the "
+"aforementioned ``-j`` option for all future builds:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:316
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:317
 msgid ""
 "Official export templates are downloaded from the Godot Engine site: "
 "`godotengine.org <https://godotengine.org/>`__. However, you might want to "
@@ -86364,20 +86368,20 @@ msgid ""
 "modules, or simply don't trust your own shadow)."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:321
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:322
 msgid ""
 "If you download the official export templates package and unzip it, you will "
 "notice that most files are optimized binaries or packages for each platform:"
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:344
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:345
 msgid ""
 "To create those yourself, follow the instructions detailed for each platform "
 "in this same tutorial section. Each platform explains how to create its own "
 "template."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:348
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:349
 msgid ""
 "The ``version.txt`` file should contain the corresponding Godot version "
 "identifier. This file is used to install export templates in a version-"
@@ -86389,7 +86393,7 @@ msgid ""
 "com/godotengine/godot/blob/master/version.py>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:356
+#: ../../docs/development/compiling/introduction_to_the_buildsystem.rst:357
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "
@@ -86607,23 +86611,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_windows.rst:137
-msgid "You can specify a number of CPU threads to use to speed up the build::"
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_windows.rst:141
-msgid ""
-"In general, it is OK to have at least as many threads compiling Godot as you "
-"have cores in your CPU, if not one or two more. Feel free to add the ``-j`` "
-"option to any SCons command you see below."
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_windows.rst:145
 msgid ""
 "When compiling with multiple CPU threads, SCons may warn about pywin32 being "
 "missing. You can safely ignore this warning."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:148
+#: ../../docs/development/compiling/compiling_for_windows.rst:140
 msgid ""
 "If all goes well, the resulting binary executable will be placed in ``C:"
 "\\godot\\bin\\`` with the name ``godot.windows.tools.32.exe`` or ``godot."
@@ -86632,21 +86625,21 @@ msgid ""
 "``bits=32``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:154
+#: ../../docs/development/compiling/compiling_for_windows.rst:146
 msgid ""
 "This executable file contains the whole engine and runs without any "
 "dependencies. Running it will bring up the Project Manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:157
-#: ../../docs/development/compiling/compiling_for_x11.rst:131
+#: ../../docs/development/compiling/compiling_for_windows.rst:149
+#: ../../docs/development/compiling/compiling_for_x11.rst:127
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
 "executable smaller and faster by adding the SCons option "
 "``target=release_debug``."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:161
+#: ../../docs/development/compiling/compiling_for_windows.rst:153
 msgid ""
 "If you are compiling Godot with MinGW, you can make the binary even smaller "
 "and faster by adding the SCons option ``use_lto=yes``. As link-time "
@@ -86654,8 +86647,8 @@ msgid ""
 "available RAM while compiling."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:166
-#: ../../docs/development/compiling/compiling_for_x11.rst:140
+#: ../../docs/development/compiling/compiling_for_windows.rst:158
+#: ../../docs/development/compiling/compiling_for_x11.rst:136
 #: ../../docs/development/compiling/compiling_for_osx.rst:66
 msgid ""
 "If you want to use separate editor settings for your own Godot builds and "
@@ -86663,12 +86656,12 @@ msgid ""
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:172
+#: ../../docs/development/compiling/compiling_for_windows.rst:164
 #, fuzzy
 msgid "Development in Visual Studio"
 msgstr "Pengembangan"
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:174
+#: ../../docs/development/compiling/compiling_for_windows.rst:166
 msgid ""
 "Using an IDE is not required to compile Godot, as SCons takes care of "
 "everything. But if you intend to do engine development or debugging of the "
@@ -86676,34 +86669,34 @@ msgid ""
 "IDE."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:178
+#: ../../docs/development/compiling/compiling_for_windows.rst:170
 msgid ""
 "Folder-based editors don't require any particular setup to start working "
 "with Godot's codebase. To edit projects with Visual Studio they need to be "
 "set up as a solution."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:181
+#: ../../docs/development/compiling/compiling_for_windows.rst:173
 msgid ""
 "You can create a Visual Studio solution via SCons by running SCons with the "
 "``vsproj=yes`` parameter, like this::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:186
+#: ../../docs/development/compiling/compiling_for_windows.rst:178
 msgid ""
 "You will be able to open Godot's source in a Visual Studio solution now, and "
 "able to build Godot using Visual Studio's **Build** button."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:189
+#: ../../docs/development/compiling/compiling_for_windows.rst:181
 msgid "See :ref:`doc_configuring_an_ide_vs` for further details."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:192
+#: ../../docs/development/compiling/compiling_for_windows.rst:184
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:194
+#: ../../docs/development/compiling/compiling_for_windows.rst:186
 msgid ""
 "If you are a Linux or macOS user, you need to install `MinGW-w64 <https://"
 "mingw-w64.org/doku.php>`__, which typically comes in 32-bit and 64-bit "
@@ -86711,98 +86704,98 @@ msgid ""
 "some known ones:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:200
+#: ../../docs/development/compiling/compiling_for_windows.rst:192
 #: ../../docs/development/compiling/compiling_for_x11.rst:48
 msgid "**Arch Linux**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:200
+#: ../../docs/development/compiling/compiling_for_windows.rst:192
 msgid "Install `mingw-w64-gcc from the AUR`_."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:202
+#: ../../docs/development/compiling/compiling_for_windows.rst:194
 #: ../../docs/development/compiling/compiling_for_x11.rst:53
 msgid "**Debian** / **Ubuntu**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:206
+#: ../../docs/development/compiling/compiling_for_windows.rst:198
 #: ../../docs/development/compiling/compiling_for_x11.rst:58
 msgid "**Fedora**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:211
+#: ../../docs/development/compiling/compiling_for_windows.rst:203
 msgid "**macOS**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:215
+#: ../../docs/development/compiling/compiling_for_windows.rst:207
 #: ../../docs/development/compiling/compiling_for_x11.rst:75
 msgid "**Mageia**"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:223
+#: ../../docs/development/compiling/compiling_for_windows.rst:215
 msgid ""
 "Before attempting the compilation, SCons will check for the following "
 "binaries in your ``PATH`` environment variable::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:229
+#: ../../docs/development/compiling/compiling_for_windows.rst:221
 msgid ""
 "If the binaries are not located in the ``PATH`` (e.g. ``/usr/bin``), you can "
 "define the following environment variables to give a hint to the build "
 "system::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:236
+#: ../../docs/development/compiling/compiling_for_windows.rst:228
 msgid ""
 "To make sure you are doing things correctly, executing the following in the "
 "shell should result in a working compiler (the version output may differ "
 "based on your system)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:246
+#: ../../docs/development/compiling/compiling_for_windows.rst:238
 msgid ""
 "Cross-compiling from some Ubuntu versions may lead to `this bug <https://"
 "github.com/godotengine/godot/issues/9258>`_, due to a default configuration "
 "lacking support for POSIX threading."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:250
+#: ../../docs/development/compiling/compiling_for_windows.rst:242
 msgid ""
 "You can change that configuration following those instructions, for 64-bit::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:258
+#: ../../docs/development/compiling/compiling_for_windows.rst:250
 msgid "And for 32-bit::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:266
+#: ../../docs/development/compiling/compiling_for_windows.rst:258
 msgid "Creating Windows export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:268
+#: ../../docs/development/compiling/compiling_for_windows.rst:260
 msgid ""
 "Windows export templates are created by compiling Godot without the editor, "
 "with the following flags::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:276
+#: ../../docs/development/compiling/compiling_for_windows.rst:268
 msgid ""
 "If you plan on replacing the standard export templates, copy these to the "
 "following location, replacing ``<version>`` with the version identifier "
 "(such as ``3.1.1.stable`` or ``3.2.dev``)::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:282
+#: ../../docs/development/compiling/compiling_for_windows.rst:274
 msgid "With the following names::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:289
+#: ../../docs/development/compiling/compiling_for_windows.rst:281
 msgid ""
 "However, if you are using custom modules or custom engine code, you may "
 "instead want to configure your binaries as custom export templates here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_windows.rst:295
+#: ../../docs/development/compiling/compiling_for_windows.rst:287
 msgid ""
 "You don't need to copy them in this case, just reference the resulting files "
 "in the ``bin\\`` directory of your Godot source folder, so the next time you "
@@ -86913,31 +86906,23 @@ msgstr ""
 
 #: ../../docs/development/compiling/compiling_for_x11.rst:111
 msgid ""
-"A good rule of thumb for the ``-j`` (*jobs*) flag, is to have at least as "
-"many threads compiling Godot as you have cores in your CPU, if not one or "
-"two more. Feel free to add the ``-j`` option to any SCons command you see "
-"below."
-msgstr ""
-
-#: ../../docs/development/compiling/compiling_for_x11.rst:115
-msgid ""
 "If all goes well, the resulting binary executable will be placed in the "
 "\"bin\" subdirectory. This executable file contains the whole engine and "
 "runs without any dependencies. Executing it will bring up the project "
 "manager."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:122
+#: ../../docs/development/compiling/compiling_for_x11.rst:118
 msgid "If you wish to compile using Clang rather than GCC, use this command:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:128
+#: ../../docs/development/compiling/compiling_for_x11.rst:124
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:135
+#: ../../docs/development/compiling/compiling_for_x11.rst:131
 msgid ""
 "If you are compiling Godot with GCC, you can make the binary even smaller "
 "and faster by adding the SCons option ``use_lto=yes``. As link-time "
@@ -86945,38 +86930,38 @@ msgid ""
 "available RAM while compiling."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:146
+#: ../../docs/development/compiling/compiling_for_x11.rst:142
 #: ../../docs/development/compiling/compiling_for_osx.rst:81
 msgid "Compiling a headless/server build"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:148
+#: ../../docs/development/compiling/compiling_for_x11.rst:144
 #: ../../docs/development/compiling/compiling_for_osx.rst:83
 msgid ""
 "To compile a *headless* build which provides editor functionality to export "
 "projects in an automated manner, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:153
+#: ../../docs/development/compiling/compiling_for_x11.rst:149
 #: ../../docs/development/compiling/compiling_for_osx.rst:88
 msgid ""
 "To compile a debug *server* build which can be used with :ref:`remote "
 "debugging tools <doc_command_line_tutorial>`, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:158
+#: ../../docs/development/compiling/compiling_for_x11.rst:154
 msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
 "servers, use::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:164
+#: ../../docs/development/compiling/compiling_for_x11.rst:160
 #: ../../docs/development/compiling/compiling_for_osx.rst:99
 #: ../../docs/development/compiling/compiling_for_web.rst:29
 msgid "Building export templates"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:166
+#: ../../docs/development/compiling/compiling_for_x11.rst:162
 msgid ""
 "Linux binaries usually won't run on distributions that are older than the "
 "distribution they were built on. If you wish to distribute binaries that "
@@ -86985,96 +86970,96 @@ msgid ""
 "a suitable build environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:174
+#: ../../docs/development/compiling/compiling_for_x11.rst:170
 msgid ""
 "To build X11 (Linux, \\*BSD) export templates, run the build system with the "
 "following parameters:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:177
+#: ../../docs/development/compiling/compiling_for_x11.rst:173
 msgid "(32 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:184
+#: ../../docs/development/compiling/compiling_for_x11.rst:180
 msgid "(64 bits)"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:191
+#: ../../docs/development/compiling/compiling_for_x11.rst:187
 msgid ""
 "Note that cross-compiling for the opposite bits (64/32) as your host "
 "platform is not always straight-forward and might need a chroot environment."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:194
+#: ../../docs/development/compiling/compiling_for_x11.rst:190
 msgid ""
 "To create standard export templates, the resulting files must be copied to:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:200
+#: ../../docs/development/compiling/compiling_for_x11.rst:196
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux X11\" by "
 "Godot):"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:209
+#: ../../docs/development/compiling/compiling_for_x11.rst:205
 msgid ""
 "However, if you are writing your custom modules or custom C++ code, you "
 "might instead want to configure your binaries as custom export templates "
 "here:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:215
+#: ../../docs/development/compiling/compiling_for_x11.rst:211
 msgid ""
 "You don't even need to copy them, you can just reference the resulting files "
 "in the ``bin/`` directory of your Godot source folder, so the next time you "
 "build, you automatically have the custom templates referenced."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:220
+#: ../../docs/development/compiling/compiling_for_x11.rst:216
 msgid "Using Clang and LLD for faster development"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:222
+#: ../../docs/development/compiling/compiling_for_x11.rst:218
 msgid ""
 "You can also use Clang and LLD to build Godot. This has two upsides compared "
 "to the default GCC + GNU ld setup:"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:225
+#: ../../docs/development/compiling/compiling_for_x11.rst:221
 msgid ""
 "LLD links Godot significantly faster compared to GNU ld or gold. This leads "
 "to faster iteration times."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:227
+#: ../../docs/development/compiling/compiling_for_x11.rst:223
 msgid "Clang tends to give more useful error messages compared to GCC."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:229
+#: ../../docs/development/compiling/compiling_for_x11.rst:225
 msgid ""
 "To do so, install Clang and the ``lld`` package from your distribution's "
 "package manager then use the following SCons command::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:234
+#: ../../docs/development/compiling/compiling_for_x11.rst:230
 msgid ""
 "After the build is completed, a new binary with a ``.llvm`` suffix will be "
 "created in the ``bin/`` folder."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:237
+#: ../../docs/development/compiling/compiling_for_x11.rst:233
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
 "compiled using link-time optimization, making the resulting binaries smaller "
 "and faster."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:241
+#: ../../docs/development/compiling/compiling_for_x11.rst:237
 #, fuzzy
 msgid "Using Pyston for faster development"
 msgstr "Pengantar"
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:243
+#: ../../docs/development/compiling/compiling_for_x11.rst:239
 msgid ""
 "You can use `Pyston <https://www.pyston.org/>`__ to run SCons. Pyston is a "
 "JIT-enabled implementation of the Python language (which SCons is written "
@@ -87083,37 +87068,37 @@ msgid ""
 "Pyston can be combined with Clang and LLD to get even faster builds."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:249
+#: ../../docs/development/compiling/compiling_for_x11.rst:245
 msgid ""
 "Download the `latest portable Pyston release <https://github.com/pyston/"
 "pyston/releases/latest>`__."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:250
+#: ../../docs/development/compiling/compiling_for_x11.rst:246
 msgid ""
 "Extract the portable ``.tar.gz`` to a set location, such as ``$HOME/.local/"
 "opt/pyston/`` (create folders as needed)."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:251
+#: ../../docs/development/compiling/compiling_for_x11.rst:247
 msgid ""
 "Use ``cd`` to reach the extracted Pyston folder from a terminal, then run "
 "``./pyston -m pip install scons`` to install SCons within Pyston."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:253
+#: ../../docs/development/compiling/compiling_for_x11.rst:249
 msgid ""
 "To make SCons via Pyston easier to run, create a symbolic link of its "
 "wrapper script to a location in your ``PATH`` environment variable::"
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:258
+#: ../../docs/development/compiling/compiling_for_x11.rst:254
 msgid ""
 "Instead of running ``scons <build arguments>``, run ``pyston-scons <build "
 "arguments>`` to compile Godot."
 msgstr ""
 
-#: ../../docs/development/compiling/compiling_for_x11.rst:261
+#: ../../docs/development/compiling/compiling_for_x11.rst:257
 msgid ""
 "If you can't run ``pyston-scons`` after creating the symbolic link, make "
 "sure ``$HOME/.local/bin/`` is part of your user's ``PATH`` environment "
@@ -89290,7 +89275,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:86
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:110
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:67
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:172
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:152
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:109
 #, fuzzy
 msgid ""
@@ -89358,7 +89343,7 @@ msgstr ""
 #: ../../docs/development/cpp/configuring_an_ide/kdevelop.rst:69
 #: ../../docs/development/cpp/configuring_an_ide/qt_creator.rst:73
 #: ../../docs/development/cpp/configuring_an_ide/visual_studio.rst:30
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:76
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:56
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:72
 #, fuzzy
 msgid "Debugging the project"
@@ -89943,48 +89928,48 @@ msgid ""
 "section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:70
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:50
 msgid "An example of a filled out ``tasks.json``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:72
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:52
 msgid ""
 "Arguments can be different based on your own setup and needs. See :ref:"
 "`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:78
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:58
 msgid ""
 "To run and debug the project you need to create a new configuration in the "
 "``launch.json`` file."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:80
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:60
 msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:81
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:61
 msgid ""
 "If ``launch.json`` file is missing you will be prompted to create a new one."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:86
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:66
 msgid ""
 "Select **C++ (GDB/LLDB)**. There may be another platform specific option "
 "here. If selected, adjust the configuration example provided accordingly."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:88
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:68
 msgid ""
 "Within the ``launch.json`` file find the ``\"configurations\"`` array and "
 "add a new section to it:"
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:156
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:136
 msgid "An example of a filled out ``launch.json``."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:161
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:141
 msgid ""
 "Due to sporadic performance issues, it is recommended to use LLDB over GDB "
 "on Unix-based systems. Make sure that the `CodeLLDB extension <https://"
@@ -89992,19 +89977,19 @@ msgid ""
 "installed."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:165
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:145
 msgid ""
 "If you encounter issues with lldb, you may consider using gdb (see the "
 "X11_gdb configuration)."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:167
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:147
 msgid ""
 "Do note that lldb may work better with llvm-based builds. See :ref:"
 "`doc_compiling_for_x11` for further information."
 msgstr ""
 
-#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:169
+#: ../../docs/development/cpp/configuring_an_ide/visual_studio_code.rst:149
 msgid ""
 "The name under ``program`` depends on your build configuration, e.g. ``godot."
 "x11.tools.64`` for 64-bit X11 platform with ``tools`` enabled."
