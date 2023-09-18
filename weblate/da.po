@@ -2,6 +2,7 @@
 # Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# BicaniWolfie <mathiasj20@live.dk>, 2023.
 # CaelusV <spamsnaq@gmail.com>, 2021.
 # Christoffer Schindel <ceas@outlook.com>, 2018.
 # Dankse Memes <purplelops@gmail.com>, 2018.
@@ -9,9 +10,11 @@
 # Esben Damkjær Sørensen <esben@damkjaergaard.com>, 2018.
 # GhostReven <GhostReven@gmail.com>, 2018.
 # Joe Osborne <reachjoe.o@gmail.com>, 2020.
+# Johan Fagerberg <johanringmann@gmail.com>, 2023.
 # Jonathan B. Jørgensen <pizzaernam@gmail.com>, 2018, 2021.
 # Kim Nielsen <kimmowich@stofanet.dk>, 2021.
 # Mads K. Bredager <mbredager@gmail.com>, 2019.
+# Mickas Jensen <noerd1998@live.dk>, 2023.
 # Mikkel Mouridsen <mikkelmouridsen@me.com>, 2022.
 # necrophcodr <necrophcodr@necrophcodr.me>, 2019.
 # snakatk <snaqii@live.dk>, 2021.
@@ -21,8 +24,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2022-04-08 07:28+0000\n"
-"Last-Translator: Mikkel Mouridsen <mikkelmouridsen@me.com>\n"
+"PO-Revision-Date: 2023-09-18 08:20+0000\n"
+"Last-Translator: Mickas Jensen <noerd1998@live.dk>\n"
 "Language-Team: Danish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/da/>\n"
 "Language: da\n"
@@ -30,7 +33,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.12-dev\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -47,7 +50,7 @@ msgstr "Kom i gang"
 
 #: ../../docs/index.rst:78
 msgid "Tutorials"
-msgstr "Tutorials"
+msgstr "Vejledning"
 
 #: ../../docs/index.rst:108
 msgid "Development"
@@ -59,12 +62,11 @@ msgstr "Fællesskab"
 
 #: ../../docs/index.rst:130
 msgid "Class reference"
-msgstr ""
+msgstr "Klasse-reference"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "Godot Docs – *3.4* gren"
+msgstr "Godot Docs – *3.5* gren"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -178,7 +180,7 @@ msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
 msgid "Translation status"
-msgstr ""
+msgstr "Status på oversættelse"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -309,6 +311,9 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"Siden :ref: `Tutorials and resources <doc_community_tutorials>` har en liste "
+"over video-tutorials, som fællesskabet har biddraget med. Hvis du "
+"foretrækker video frem for tekst, kunne de være gode at se."
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -577,7 +582,7 @@ msgstr ""
 "Al udgivet indhold af dokumentationen er under den tolerante Creative "
 "Commons Attribution 3.0 (`CC-BY 3.0 <https://creativecommons.org/licenses/"
 "by/3.0/>`_) licens med tilskrivelse af \"Juan Linietsky, Ariel Manzur og "
-"Godot fælleskabet\"."
+"Godot fælleskabet.\""
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -1110,9 +1115,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:280
-#, fuzzy
 msgid "There are several reasons for this:"
-msgstr "Der er ingen brugsrestriktioner på Godot"
+msgstr "Der er flere grunde til dette:"
 
 #: ../../docs/about/faq.rst:282
 msgid ""
@@ -1865,9 +1869,8 @@ msgid "Scene tree editor."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:48
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "Redaktør"
+msgstr "Indbygget script redaktør"
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -2562,14 +2565,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:330
-#, fuzzy
 msgid "Visual shader editor."
-msgstr "Android"
+msgstr "Visuel skygge redaktør."
 
 #: ../../docs/about/list_of_features.rst:332
-#, fuzzy
 msgid "Support for visual shader plugins."
-msgstr "Android"
+msgstr "Support til visuel skygge tilføjelses pakker."
 
 #: ../../docs/about/list_of_features.rst:335
 #: ../../docs/about/docs_changelog.rst:113
@@ -2783,9 +2784,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:417
-#, fuzzy
 msgid "Import"
-msgstr "Eksport"
+msgstr "Import"
 
 #: ../../docs/about/list_of_features.rst:419
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -3129,9 +3129,8 @@ msgid "**Nodes:**"
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:549
-#, fuzzy
 msgid "Buttons."
-msgstr "Knap"
+msgstr "Knapper."
 
 #: ../../docs/about/list_of_features.rst:550
 msgid "Checkboxes, check buttons, radio buttons."
@@ -3747,7 +3746,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:159
 msgid "GUI"
-msgstr ""
+msgstr "GUI"
 
 #: ../../docs/about/docs_changelog.rst:161
 msgid ":ref:`doc_gui_containers`"
@@ -4022,7 +4021,7 @@ msgstr "Aktivér"
 
 #: ../../docs/about/release_policy.rst:93
 msgid "Godot 3.6 (LTS)"
-msgstr ""
+msgstr "Godot 3.6 (LTS)"
 
 #: ../../docs/about/release_policy.rst:93
 msgid "Q1-Q2 2023 (estimate)"
@@ -7576,9 +7575,8 @@ msgid "Create a complete 2D game with the Godot editor."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:25
-#, fuzzy
 msgid "Structure a simple game project."
-msgstr "Kom i gang"
+msgstr "Strukturer et simpelt spil projekt."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:26
 msgid "Move the player character and change its sprite."
@@ -7673,9 +7671,8 @@ msgid "In this short first part, we'll set up and organize the project."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:8
-#, fuzzy
 msgid "Launch Godot and create a new project."
-msgstr "Kom i gang"
+msgstr "Start Gadot og lav et nyt projekt."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:15
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:22
@@ -10353,9 +10350,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:17
-#, fuzzy
 msgid "Go to *Project -> Project Settings*."
-msgstr "Tester"
+msgstr "Gå til *Projekt -> Projekt indstillinger*."
 
 #: ../../docs/getting_started/first_3d_game/05.spawning_mobs.rst:21
 msgid ""
@@ -17784,7 +17780,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:230
 msgid "Baking"
-msgstr ""
+msgstr "Bagning"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:232
 msgid ""
@@ -44021,7 +44017,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:59
 msgid "color"
-msgstr ""
+msgstr "farve"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:61
 msgid "15"
@@ -44053,7 +44049,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:65
 msgid "object"
-msgstr ""
+msgstr "objekt"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:67
 msgid "18"
@@ -44356,7 +44352,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:507
 #: ../../docs/tutorials/io/binary_serialization_api.rst:509
 msgid "Float"
-msgstr ""
+msgstr "Flyde"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:135
 msgid "IEEE 754 single-precision float"
@@ -49265,7 +49261,7 @@ msgstr "Kom i gang"
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/scripting/scene_tree.rst:33
 msgid "SceneTree"
-msgstr ""
+msgstr "SceneTræ"
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:226
 msgid ""
@@ -56366,9 +56362,8 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
-#, fuzzy
 msgid "function"
-msgstr "Introduktion"
+msgstr "funktion"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 msgid ":js:attr:`onExecute`"
@@ -60603,7 +60598,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "class"
-msgstr ""
+msgstr "klasse"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "Defines an inner class."
@@ -60749,7 +60744,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:199
 msgid "yield"
-msgstr ""
+msgstr "udbytte"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:199
 msgid "Coroutine support. See `Coroutines with yield`_."
@@ -60786,7 +60781,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:207
 msgid "puppet"
-msgstr ""
+msgstr "dukke"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:209
 msgid "remotesync"
@@ -65528,7 +65523,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Byggere"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -92239,7 +92234,7 @@ msgstr ""
 
 #: ../../docs/development/file_formats/tscn.rst:241
 msgid "AnimationPlayer"
-msgstr ""
+msgstr "AnimationAfspiller"
 
 #: ../../docs/development/file_formats/tscn.rst:243
 msgid ""

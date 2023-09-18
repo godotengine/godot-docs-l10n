@@ -5,9 +5,11 @@
 # Adam Švidroň <adsvidro@gmail.com>, 2022.
 # Mario-projects-dev <m.vitek.mv@gmail.com>, 2021.
 # Michal <alladinsiffon@gmail.com>, 2019-2020.
+# Milan <brnecovsky@gmail.com>, 2023.
 # MineGame 159 <minegame459@gmail.com>, 2018-2019.
 # Richard Urban <redasuio1@gmail.com>, 2020.
 # Rišo <urbanrichard77@gmail.com>, 2020.
+# Tengado <tenda151002@gmail.com>, 2023.
 # Validbit <validbit@outlook.com>, 2020.
 # vrecusko <vrecusko20@gmail.com>, 2021.
 #
@@ -16,8 +18,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2022-12-18 01:16+0000\n"
-"Last-Translator: Adam Švidroň <adsvidro@gmail.com>\n"
+"PO-Revision-Date: 2023-09-16 04:12+0000\n"
+"Last-Translator: Tengado <tenda151002@gmail.com>\n"
 "Language-Team: Slovak <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/sk/>\n"
 "Language: sk\n"
@@ -25,7 +27,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -53,14 +55,12 @@ msgid "Community"
 msgstr "Komunita"
 
 #: ../../docs/index.rst:130
-#, fuzzy
 msgid "Class reference"
-msgstr "Referencie tieňovania:"
+msgstr "Dokumentácia tried"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "Godot Dokumenty - *hlavná* vetva"
+msgstr "Godot Dokumentácia - *3.5* vetva"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -2964,9 +2964,8 @@ msgid "*Linux:* PulseAudio or ALSA."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:417
-#, fuzzy
 msgid "Import"
-msgstr "Export"
+msgstr "Importovať"
 
 #: ../../docs/about/list_of_features.rst:419
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -3093,9 +3092,8 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:465
 #: ../../docs/tutorials/navigation/index.rst:2
-#, fuzzy
 msgid "Navigation"
-msgstr "Viditeľná Navigácia"
+msgstr "Navigácia"
 
 #: ../../docs/about/list_of_features.rst:467
 msgid "A* algorithm in 2D and 3D."
@@ -3257,7 +3255,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "Mobile"
-msgstr ""
+msgstr "Mobil"
 
 #: ../../docs/about/list_of_features.rst:527
 msgid "In-app purchases on Android and iOS."
@@ -5943,9 +5941,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
-#, fuzzy
 msgid "Nodes and Scenes"
-msgstr "Scény a nodey"
+msgstr "Uzly a scény"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -12537,7 +12534,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:171
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:236
 msgid "Type"
-msgstr ""
+msgstr "Typ"
 
 #: ../../docs/tutorials/2d/2d_transforms.rst:63
 msgid "Transform"
@@ -18473,7 +18470,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:138
 msgid "Tonemap"
-msgstr ""
+msgstr "Tonemapa"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:142
 msgid ""
@@ -18820,7 +18817,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
 msgid "Glow"
-msgstr ""
+msgstr "Žiara"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
 msgid ""
@@ -25964,7 +25961,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:31
 msgid "Format"
-msgstr ""
+msgstr "Formát"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:31
 msgid "1 second of audio"
@@ -27604,7 +27601,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Mesh"
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -32685,7 +32682,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:104
 #: ../../docs/tutorials/editor/default_key_mapping.rst:167
 msgid "Move Mode"
-msgstr "Move Mode"
+msgstr "Režim presúvania"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:104
 #: ../../docs/tutorials/editor/default_key_mapping.rst:153
@@ -33039,7 +33036,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:173
 msgid "Use Local Space"
-msgstr ""
+msgstr "Použiť Lokálny Priestor"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:173
 #: ../../docs/tutorials/editor/default_key_mapping.rst:491
@@ -33073,7 +33070,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:179
 msgid "Top View"
-msgstr ""
+msgstr "Pohľad zhora"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:179
 msgid ":kbd:`Num 7`"
@@ -33085,7 +33082,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:181
 msgid "Bottom View"
-msgstr ""
+msgstr "Pohľad zdola"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:181
 msgid ":kbd:`Alt + Num 7`"
@@ -33097,7 +33094,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:183
 msgid "Front View"
-msgstr ""
+msgstr "Pohľad spredu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:183
 msgid ":kbd:`Num 1`"
@@ -33109,7 +33106,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:185
 msgid "Rear View"
-msgstr ""
+msgstr "Pohľad zozadu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:185
 msgid ":kbd:`Alt + Num 1`"
@@ -33121,7 +33118,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:187
 msgid "Right View"
-msgstr ""
+msgstr "Pohľad sprava"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:187
 msgid ":kbd:`Num 3`"
@@ -33133,7 +33130,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:189
 msgid "Left View"
-msgstr ""
+msgstr "Pohľad zľava"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:189
 msgid ":kbd:`Alt + Num 3`"
@@ -33145,7 +33142,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:191
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "Prepnúť Perspektívny/Ortogonálny Pohľad"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:191
 msgid ":kbd:`Num 5`"
@@ -33190,7 +33187,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:199
 msgid "Align Transform with View"
-msgstr ""
+msgstr "Zarovnať Transformáciu s Pohľadom"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:199
 msgid ":kbd:`Ctrl + Alt + M`"
@@ -33206,7 +33203,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:201
 msgid "Align Rotation with View"
-msgstr ""
+msgstr "Zarovnať Otáčanie s Pohľadom"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:201
 #: ../../docs/tutorials/editor/default_key_mapping.rst:282
@@ -33222,9 +33219,8 @@ msgid "``spatial_editor/align_rotation_with_view``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:203
-#, fuzzy
 msgid "1 Viewport"
-msgstr "Viewporty"
+msgstr "1 Viewport"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:203
 msgid ":kbd:`Ctrl + 1`"
@@ -33239,9 +33235,8 @@ msgid "``spatial_editor/1_viewport``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:205
-#, fuzzy
 msgid "2 Viewports"
-msgstr "Viewporty"
+msgstr "2 Viewporty"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:205
 msgid ":kbd:`Ctrl + 2`"
@@ -33256,9 +33251,8 @@ msgid "``spatial_editor/2_viewports``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:207
-#, fuzzy
 msgid "2 Viewports (Alt)"
-msgstr "Viewporty"
+msgstr "2 Viewporty (Alt)"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:207
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -33273,9 +33267,8 @@ msgid "``spatial_editor/2_viewports_alt``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:209
-#, fuzzy
 msgid "3 Viewports"
-msgstr "Viewporty"
+msgstr "3 Viewporty"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:209
 msgid ":kbd:`Ctrl + 3`"
@@ -33290,9 +33283,8 @@ msgid "``spatial_editor/3_viewports``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:211
-#, fuzzy
 msgid "3 Viewports (Alt)"
-msgstr "Viewporty"
+msgstr "3 Viewporty (Alt)"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:211
 msgid ":kbd:`Ctrl + Alt + 3`"
@@ -33307,9 +33299,8 @@ msgid "``spatial_editor/3_viewports_alt``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:213
-#, fuzzy
 msgid "4 Viewports"
-msgstr "Viewporty"
+msgstr "4 Viewporty"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:213
 msgid ":kbd:`Ctrl + 4`"
@@ -33330,7 +33321,7 @@ msgstr "Editor"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
-msgstr ""
+msgstr "Vyňať"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 #: ../../docs/tutorials/editor/default_key_mapping.rst:354
@@ -33394,7 +33385,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid "Select All"
-msgstr ""
+msgstr "Označiť všetko"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 #: ../../docs/tutorials/editor/default_key_mapping.rst:443
@@ -33491,7 +33482,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:238
 msgid "Replace"
-msgstr ""
+msgstr "Nahradiť"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:238
 #: ../../docs/tutorials/editor/default_key_mapping.rst:364
@@ -33539,7 +33530,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:311
 #: ../../docs/tutorials/editor/default_key_mapping.rst:455
 msgid "Move Up"
-msgstr ""
+msgstr "Presunúť hore"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:246
 #: ../../docs/tutorials/editor/default_key_mapping.rst:403
@@ -33554,7 +33545,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:313
 #: ../../docs/tutorials/editor/default_key_mapping.rst:457
 msgid "Move Down"
-msgstr ""
+msgstr "Presunúť dole"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:248
 msgid ":kbd:`Alt + Down Arrow`"
@@ -34212,7 +34203,7 @@ msgstr "Editor"
 #: ../../docs/tutorials/editor/default_key_mapping.rst:375
 #: ../../docs/tutorials/editor/default_key_mapping.rst:507
 msgid "Copy Selection"
-msgstr ""
+msgstr "Kopírovať Výber"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:375
 msgid "``editor/copy_output``"
@@ -34220,7 +34211,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:377
 msgid "Clear Output"
-msgstr ""
+msgstr "Vyčistiť Výstup"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:377
 msgid "``editor/clear_output``"
@@ -34229,11 +34220,11 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:381
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:14
 msgid "Debugger"
-msgstr ""
+msgstr "Ladič"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid "Step Into"
-msgstr ""
+msgstr "Vstúpiť do"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid ":kbd:`F11`"
@@ -34245,7 +34236,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:388
 msgid "Step Over"
-msgstr ""
+msgstr "Prekročiť"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:388
 msgid ":kbd:`F10`"
@@ -34257,7 +34248,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:390
 msgid "Continue"
-msgstr ""
+msgstr "Pokračovať"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:390
 msgid ":kbd:`F12`"
@@ -34273,7 +34264,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "Go Back"
-msgstr ""
+msgstr "Ísť späť"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "``file_dialog/go_back``"
@@ -34418,7 +34409,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:425
 msgid "FileSystem Dock"
-msgstr "FileSystém Dock"
+msgstr "Dok Súborového Systému"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:430
 #, fuzzy
@@ -34468,7 +34459,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:447
 msgid "Copy Node Path"
-msgstr ""
+msgstr "Kopírovať Cestu Nodu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:447
 msgid "``scene_tree/copy_node_path``"
@@ -35122,7 +35113,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/index.rst:2
 msgid "Export"
-msgstr "Export"
+msgstr "Exportovať"
 
 #: ../../docs/tutorials/export/exporting_basics.rst:9
 msgid ""
@@ -35632,17 +35623,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:112
-#, fuzzy
 msgid "Export all resources in the project"
-msgstr "Konfigurácia projektu"
+msgstr "Exportovať všetky zdroje v projekte"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:113
 msgid "Export selected scenes (and dependencies)"
-msgstr ""
+msgstr "Exportovať vybrané scény (a závislosti)"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:114
 msgid "Export selected resources (and dependencies)"
-msgstr ""
+msgstr "Exportovať vybrané zdroje (a závislosti)"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:118
 msgid ""
@@ -39448,7 +39438,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Locale"
-msgstr ""
+msgstr "Locale"
 
 #: ../../docs/tutorials/i18n/locales.rst:12
 msgid "Language and Variant"
@@ -43441,7 +43431,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:32
 #: ../../docs/community/contributing/class_reference_writing_guidelines.rst:126
 msgid "Usage"
-msgstr ""
+msgstr "Použitie"
 
 #: ../../docs/tutorials/io/background_loading.rst:26
 msgid "Usage is generally as follows"
@@ -44142,7 +44132,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:29
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:147
 msgid "Value"
-msgstr ""
+msgstr "Hodnota"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:31
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:346
@@ -44274,7 +44264,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:65
 msgid "object"
-msgstr ""
+msgstr "objekt"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:67
 msgid "18"
@@ -48435,12 +48425,11 @@ msgstr "Komunita"
 
 #: ../../docs/tutorials/performance/index.rst:53
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: ../../docs/tutorials/performance/index.rst:62
-#, fuzzy
 msgid "GPU"
-msgstr "GUI"
+msgstr "GPU"
 
 #: ../../docs/tutorials/performance/general_optimization.rst:4
 #, fuzzy
@@ -49480,7 +49469,7 @@ msgstr ":ref:`doc_použitie_multiple_threads`"
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/scripting/scene_tree.rst:33
 msgid "SceneTree"
-msgstr ""
+msgstr "Strom scény"
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:226
 msgid ""
@@ -50540,9 +50529,8 @@ msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:298
-#, fuzzy
 msgid "Project Settings"
-msgstr "Editor"
+msgstr "Nastavenia projektu"
 
 #: ../../docs/tutorials/performance/batching.rst:300
 msgid ""
@@ -51796,7 +51784,7 @@ msgstr ""
 #: ../../docs/development/file_formats/tscn.rst:263
 #: ../../docs/community/tutorials.rst:64
 msgid "Resources"
-msgstr ""
+msgstr "Zdroje"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:69
 msgid ""
@@ -56561,9 +56549,8 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
-#, fuzzy
 msgid "function"
-msgstr "Funkcie"
+msgstr "funkcia"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 msgid ":js:attr:`onExecute`"
@@ -56608,7 +56595,7 @@ msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
 msgid "value"
-msgstr ""
+msgstr "hodnota"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:228
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:35
@@ -60643,7 +60630,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
-msgstr ""
+msgstr "História"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:21
 msgid ""
@@ -60671,7 +60658,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:115
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:16
 msgid "Language"
-msgstr ""
+msgstr "Jazyk"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:117
 msgid ""
@@ -60797,7 +60784,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "class"
-msgstr ""
+msgstr "trieda"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "Defines an inner class."
@@ -61030,7 +61017,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:297
 msgid "Operators"
-msgstr ""
+msgstr "Operátory"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
@@ -63114,7 +63101,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:4
 msgid "GDScript exports"
-msgstr ""
+msgstr "GDScripty exporty"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:7
 msgid "Introduction to exports"
@@ -65463,7 +65450,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Akcia"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -65559,7 +65546,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:306
 msgid "Resource Path"
-msgstr ""
+msgstr "Cesta ku zdroju"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:308
 msgid ""
@@ -65715,7 +65702,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Konštruktory"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -67048,7 +67035,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Variant"
-msgstr ""
+msgstr "Variant"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:320
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
@@ -68831,7 +68818,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/index.rst:2
 msgid "Debug"
-msgstr "Debug"
+msgstr "Ladiť"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -69109,7 +69096,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:42
 msgid "Errors"
-msgstr ""
+msgstr "Chyby"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:44
 msgid ""
@@ -69184,7 +69171,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:87
 msgid "Monitors"
-msgstr ""
+msgstr "Monitory"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:89
 msgid ""
@@ -69197,7 +69184,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:95
 msgid "Video RAM"
-msgstr ""
+msgstr "Video RAM"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:97
 msgid ""
@@ -69210,7 +69197,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:105
 msgid "Misc"
-msgstr ""
+msgstr "Rôzne"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:107
 msgid ""
@@ -72403,7 +72390,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:302
 msgid "Class"
-msgstr "Class"
+msgstr "Trieda"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:304
 msgid "1 (highest)"
@@ -73898,7 +73885,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
 msgid "Built-in"
-msgstr ""
+msgstr "Vstavaný"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343
@@ -97832,7 +97819,7 @@ msgstr ""
 
 #: ../../docs/community/asset_library/index.rst:2
 msgid "Asset Library"
-msgstr "Asset Library"
+msgstr "Knižnica assetov"
 
 #: ../../docs/community/asset_library/what_is_assetlib.rst:4
 msgid "About the Asset Library"

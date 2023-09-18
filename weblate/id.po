@@ -6,30 +6,37 @@
 # Ade Fikri Malihuddin <ade.fm97@gmail.com>, 2020-2021.
 # adfriz <aditiyaafrizal2@gmail.com>, 2023.
 # Alficiro <alfiboy2003@gmail.com>, 2019, 2021.
+# ammar sajili <sjlammar@gmail.com>, 2023.
 # Azizkhasyi 11 <azizkhasyi11@gmail.com>, 2021.
 # Bagus Aji Santoso <lobothijau@gmail.com>, 2018.
+# Bayu Satiyo <itsyuukunz@gmail.com>, 2023.
 # Brian <brian@brianthe.dev>, 2021.
 # Damar Inderajati <damarind@gmail.com>, 2018.
 # dan990308 <sdanang657@gmail.com>, 2021.
 # desi fitri <desifitri033@gmail.com>, 2022.
 # Dimzt <dimas12345yuio@gmail.com>, 2019.
 # dzikroy 119 <dzikroy119@gmail.com>, 2020.
+# EngageIndo <engageindo@gmail.com>, 2023.
 # Evan Hyacinth <muhammad.ivan669@gmail.com>, 2018-2019.
 # Fajar Ru <kzofajar@gmail.com>, 2018.
 # FellowMustard <rachmawanng33@gmail.com>, 2022.
 # fikrirozan <fikrirozanimadudin@gmail.com>, 2021.
 # Gamebel Developer <david.agung.satrio@gmail.com>, 2021.
+# GID <ghavind12345@gmail.com>, 2023.
 # Hanz <hanzhaxors@gmail.com>, 2021.
 # Helmi Hibatullah <helmihibatullah393@gmail.com>, 2022.
 # herri siagian <herry.it.2007@gmail.com>, 2019.
 # Hilman Hazazi <hafizd.muhammad.kren.403@gmail.com>, 2021, 2023.
 # ilkompendek <aryantid.cs@gmail.com>, 2022.
+# Irfan Muzaki <redevelop.official@gmail.com>, 2023.
 # Jacque Fresco <aidter@use.startmail.com>, 2021.
 # Khairul Hidayat <khairulcyber4rt@gmail.com>, 2018.
 # MonsterGila <fikrirazor@outlook.co.id>, 2019-2020.
+# Muhammad Azri Fatihah Susanto <muhammad.azri.f.s@gmail.com>, 2023.
 # Nasrul Aziz <aziznasrul85@gmail.com>, 2021.
 # Naufal Adriansyah <naufaladrn90@gmail.com>, 2021.
 # Nenza Nurfirmansyah <nnurfirmansyah@gmail.com>, 2020.
+# PaKu211 <ridwanlupi211@gmail.com>, 2023.
 # ProgrammerIndonesia 44 <elo.jhy@gmail.com>, 2022.
 # Rahman Wardantz <rahman.wardantz@gmail.com>, 2020.
 # Reza Almanda <rezaalmanda27@gmail.com>, 2021-2022.
@@ -38,20 +45,21 @@
 # Rizky Ramadhan <rizkyterm@gmail.com>, 2022.
 # Romi Kusuma Bakti <romikusumab@gmail.com>, 2021.
 # Sandityas Noormina <bleedingfaceless@gmail.com>, 2019.
+# Septian Kurniawan <septgsk@outlook.com>, 2023.
 # Sofyan Sugianto <sofyanartem@gmail.com>, 2019-2021.
 # triarts <agung.triarta.h@gmail.com>, 2019.
 # Tsaqib Fadhlurrahman Soka <sokatsaqib@gmail.com>, 2021-2022.
 # undisputedgoose <diablodvorak@gmail.com>, 2021.
 # yusuf afandi <afandi.yusuf.04@gmail.com>, 2020, 2022.
-# zephyroths <ridho.hikaru@gmail.com>, 2021.
+# zephyroths <ridho.hikaru@gmail.com>, 2021, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2023-01-17 13:54+0000\n"
-"Last-Translator: Hilman Hazazi <hafizd.muhammad.kren.403@gmail.com>\n"
+"PO-Revision-Date: 2023-09-14 03:16+0000\n"
+"Last-Translator: Bayu Satiyo <itsyuukunz@gmail.com>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/id/>\n"
 "Language: id\n"
@@ -59,7 +67,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -689,13 +697,12 @@ msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:41
-#, fuzzy
 msgid ":ref:`Web <doc_using_the_web_editor>`"
 msgstr ":ref:`doc_running_code_in_the_editor`"
 
 #: ../../docs/about/faq.rst:42
 msgid "Android (experimental)"
-msgstr "Android"
+msgstr "Android (Eksperimental)"
 
 #: ../../docs/about/faq.rst:44
 msgid "**For exporting your games:**"
@@ -1170,6 +1177,11 @@ msgid ""
 "allows you to :ref:`run the Godot editor from a terminal "
 "<doc_command_line_tutorial>` by entering ``godot``."
 msgstr ""
+"Ganti nama dan pindahkan binary Godot ke lokasi yang ada di``PATH`` variabel "
+"lingkungan. BIasanya berada di``/usr/local/bin/godot`` atau ``/usr/bin/"
+"godot``. Untuk melakukan ini membutuhkan hak administrator , tapi ini juga "
+"memungkinkan kamu untuk :ref:`jalankan godot editor dari terminal "
+"<doc_command_line_tutorial>` dengan mengetikkan``godot``."
 
 #: ../../docs/about/faq.rst:230
 msgid ""
@@ -1178,6 +1190,10 @@ msgid ""
 "line in the ``.desktop`` file linked below to contain the full *absolute* "
 "path to the Godot binary."
 msgstr ""
+"Kalau kamu tidak bisa memindahkan biner editor godot ke lokasi yang "
+"terlindungi, kamu bisa menyimpan biner disuatu tempat di dalam direktori "
+"home,dan memodifikasi ``Path=`` baris di ``.desktop`` berkas yang terkait "
+"dibawah digunakan untuk menampung jalur *mutlak* ke biner godot."
 
 #: ../../docs/about/faq.rst:235
 msgid ""
@@ -1187,17 +1203,28 @@ msgid ""
 "also save the ``.desktop`` file to ``/usr/local/share/applications`` to make "
 "the shortcut available for all users."
 msgstr ""
+"Simpan/save`this .desktop file <https://raw.githubusercontent.com/"
+"godotengine/godot/3.x/misc/dist/linux/org.godotengine.Godot.desktop>`__ "
+"ke``$HOME/.local/share/applications/``. Jika kamu memiliki Administrator "
+"privileges (Berbeda dengan user biasa/Admin) , kamu juga bisa simpan/save ``."
+"desktop`` file ke ``/usr/local/share/applications`` untuk membuat shortcut-"
+"nya tersedia untuk semua user."
 
 #: ../../docs/about/faq.rst:241
 msgid "Is the Godot editor a portable application?"
 msgstr "Apakah Godot Editor merupakan aplikasi portabel?"
 
 #: ../../docs/about/faq.rst:243
+#, fuzzy
 msgid ""
 "In its default configuration, Godot is *semi-portable*. Its executable can "
 "run from any location (including non-writable locations) and never requires "
 "administrator privileges."
 msgstr ""
+"Pada konfigurasi standarnya, Godot adalah aplikasi \"Semi-Portabel\". "
+"Program Godot dapat dijalankan di tempat mana pun (termasuk tempat yang "
+"tidak dapat ditulis atau diubah dalam sistem) dan tidak membutuhkan Hak "
+"Khusus Andministrator."
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1207,6 +1234,11 @@ msgid ""
 "containing the Godot executable. See :ref:`doc_data_paths` for more "
 "information."
 msgstr ""
+"Namun, berkas konfigurasi akan ditulis ke konfigurasi pengguna atau "
+"direktori data. Ini biasanya merupakan pendekatan yang baik, tetapi ini "
+"berarti file konfigurasi tidak akan dibawa ke seluruh mesin jika Anda "
+"menyalin folder yang berisi eksekusi Godot. Lihat :ref:`doc_data_paths` "
+"untuk informasi lebih lanjut."
 
 #: ../../docs/about/faq.rst:252
 msgid ""
@@ -3087,7 +3119,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:325
 #: ../../docs/tutorials/shaders/index.rst:2
 msgid "Shaders"
-msgstr "Shaders"
+msgstr "Shader"
 
 #: ../../docs/about/list_of_features.rst:327
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -3985,7 +4017,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:624
 #: ../../docs/about/docs_changelog.rst:205
 msgid "Miscellaneous"
-msgstr "Lainnya"
+msgstr "Lain-lain"
 
 #: ../../docs/about/list_of_features.rst:626
 msgid ""
@@ -4154,7 +4186,7 @@ msgstr ":ref:`doc_localization_using_gettext`"
 #: ../../docs/about/docs_changelog.rst:50
 #: ../../docs/about/docs_changelog.rst:170
 msgid "Shading"
-msgstr "Shading"
+msgstr "Pengarsiran"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid "Your First Shader Series:"
@@ -4425,7 +4457,7 @@ msgstr ":ref:`doc_advanced_postprocessing`"
 
 #: ../../docs/about/docs_changelog.rst:175
 msgid "Shading Reference:"
-msgstr "Referensi Shading"
+msgstr "Referensi Shading:"
 
 #: ../../docs/about/docs_changelog.rst:178
 msgid ":ref:`doc_shading_language`"
@@ -4707,9 +4739,8 @@ msgid "unstable"
 msgstr "Konstanta"
 
 #: ../../docs/about/release_policy.rst:93
-#, fuzzy
 msgid "Godot 3.6 (LTS)"
-msgstr "Godot 3.4"
+msgstr "Godot 3.6 (LTS)"
 
 #: ../../docs/about/release_policy.rst:93
 msgid "Q1-Q2 2023 (estimate)"
@@ -5434,7 +5465,7 @@ msgstr ""
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:38
 #: ../../docs/tutorials/best_practices/what_are_godot_classes.rst:49
 msgid "Scenes"
-msgstr "Scene"
+msgstr "Adegan"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:22
 msgid ""
@@ -5550,7 +5581,7 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_pcks.rst:138
 #: ../../docs/tutorials/scripting/gdscript/static_typing.rst:381
 msgid "Summary"
-msgstr ""
+msgstr "Ringkasan"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:92
 msgid ""
@@ -5772,14 +5803,12 @@ msgid "Godot comes with a built-in class reference."
 msgstr "Referensi Kelas"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:133
-#, fuzzy
 msgid ""
 "You can search for information about a class, method, property, constant, or "
 "signal by any one of the following methods:"
 msgstr ""
-"Untuk mencari informasi terkait class, metode, keberhasilan, konstanta, atau "
-"sinyal dalam mesin ketika kamu menulis skrip, tekan tombol \"Pencarian "
-"Bantuan\" pada pojok kanan atas pada ruang kerja Script."
+"Anda dapat mencari informasi tentang class, method, property, constant, atau "
+"signal dengan salah satu metode berikut:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:136
 msgid ""
@@ -6352,7 +6381,7 @@ msgstr ""
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:145
 msgid "Community-driven"
-msgstr ""
+msgstr "Berbasis-komunitas"
 
 #: ../../docs/getting_started/introduction/godot_design_philosophy.rst:147
 msgid ""
@@ -6618,11 +6647,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:88
-#, fuzzy
 msgid "The Create Node dialog opens, showing the long list of available nodes."
 msgstr ""
-"Ini akan membuka dialog Buat Node, menampilkan daftar panjang dari node yang "
-"dapat dibuat:"
+"Dialog Buat Node terbuka, menampilkan daftar panjang dari node yang dapat "
+"dibuat."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:92
 msgid "Select the Label node. You can type its name to filter down the list."
@@ -6649,13 +6677,12 @@ msgid "Changing a node's properties"
 msgstr "Tutorial dan sumber daya"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:109
-#, fuzzy
 msgid ""
 "The next step is to change the Label's \"Text\" property. Let's change it to "
 "\"Hello World\"."
 msgstr ""
 "Langkah selanjutnya adalah mengubah Properti \"Teks\" dari label. Mari kita "
-"ubah menjadi \"Hello World\":"
+"ubah menjadi \"Hello World\"."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:112
 msgid ""
@@ -7982,9 +8009,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:6
 #: ../../docs/tutorials/scripting/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Sinyal-sinyal"
+msgstr "Sinyal"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
 #, fuzzy
@@ -8493,7 +8519,7 @@ msgstr "https://github.com/godotengine/godot-demo-projects"
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:44
 #: ../../docs/tutorials/scripting/gdnative/gdnative_c_example.rst:47
 msgid "Prerequisites"
-msgstr ""
+msgstr "Prasyarat"
 
 #: ../../docs/getting_started/first_2d_game/index.rst:47
 msgid ""
@@ -8528,9 +8554,8 @@ msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:62
 #: ../../docs/getting_started/first_3d_game/index.rst:53
-#, fuzzy
 msgid "Contents"
-msgstr "Komentar"
+msgstr "Konten"
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:4
 #: ../../docs/tutorials/scripting/gdnative/gdnative_cpp_example.rst:21
@@ -8569,7 +8594,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:294
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:351
 msgid "C#"
-msgstr ""
+msgstr "C#"
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:27
 msgid ""
@@ -9851,7 +9876,7 @@ msgstr ""
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:12
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:59
 msgid "Background"
-msgstr ""
+msgstr "Latar Belakang"
 
 #: ../../docs/getting_started/first_2d_game/07.finishing-up.rst:14
 msgid ""
@@ -12851,9 +12876,8 @@ msgid "And with that, you finished coding your first complete 3D game."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:274
-#, fuzzy
 msgid "**Congratulations**!"
-msgstr "Konstanta"
+msgstr "**Selamat**!"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:276
 msgid ""
@@ -13871,7 +13895,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:56
 msgid "Texture"
-msgstr ""
+msgstr "Tekstur"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:58
 msgid ""
@@ -13886,7 +13910,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:68
 msgid "Lifetime"
-msgstr ""
+msgstr "Seumur hidup"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:70
 msgid ""
@@ -13904,7 +13928,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:82
 msgid "One Shot"
-msgstr ""
+msgstr "Satu Tembakan"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:84
 msgid ""
@@ -13914,7 +13938,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:88
 msgid "Preprocess"
-msgstr ""
+msgstr "Mempersiapkan"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:90
 msgid ""
@@ -13938,7 +13962,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:104
 msgid "Explosiveness"
-msgstr ""
+msgstr "Daya ledak"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:106
 msgid ""
@@ -13963,7 +13987,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:119
 msgid "Randomness"
-msgstr ""
+msgstr "Keacakan"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:121
 msgid ""
@@ -13973,7 +13997,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:129
 msgid "Fixed FPS"
-msgstr ""
+msgstr "FPS tetap"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:131
 msgid ""
@@ -13985,7 +14009,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:136
 msgid "Fract Delta"
-msgstr ""
+msgstr "Fract Delta"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:138
 msgid "This can be used to turn Fract Delta on or off."
@@ -13997,7 +14021,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:144
 msgid "Visibility Rect"
-msgstr ""
+msgstr "Visibilitas Persegi"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:147
 msgid ""
@@ -14049,7 +14073,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:172
 msgid "Draw Order"
-msgstr ""
+msgstr "Urutan Gambar"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:174
 msgid ""
@@ -14063,9 +14087,8 @@ msgid "ParticlesMaterial settings"
 msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:182
-#, fuzzy
 msgid "Direction"
-msgstr "Vektor"
+msgstr "Arah"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:184
 msgid ""
@@ -14083,7 +14106,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:197
 msgid "Spread"
-msgstr ""
+msgstr "Menyebar"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:199
 msgid ""
@@ -14095,7 +14118,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:207
 msgid "Flatness"
-msgstr ""
+msgstr "Kerataan"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:209
 msgid "This property is only useful for 3D particles."
@@ -14111,7 +14134,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:219
 msgid "Initial Velocity"
-msgstr ""
+msgstr "Kecepatan Awal"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:221
 msgid ""
@@ -14122,7 +14145,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:228
 msgid "Angular Velocity"
-msgstr ""
+msgstr "Kecepatan Sudut"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:230
 msgid "Angular velocity is the initial angular velocity applied to particles."
@@ -14140,7 +14163,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:241
 msgid "Orbit Velocity"
-msgstr ""
+msgstr "Kecepatan Orbit"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:243
 msgid "Orbit velocity is used to make particles turn around their center."
@@ -14176,7 +14199,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:269
 msgid "Damping"
-msgstr ""
+msgstr "Redaman"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:271
 msgid ""
@@ -15030,7 +15053,7 @@ msgstr ""
 #: ../../docs/tutorials/math/beziers_and_curves.rst:233
 #: ../../docs/tutorials/ui/custom_gui_controls.rst:17
 msgid "Drawing"
-msgstr ""
+msgstr "Menggambar"
 
 #: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:33
 msgid ""
@@ -16009,7 +16032,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_transforms.rst:62
 #: ../../docs/tutorials/math/interpolation.rst:4
 msgid "Interpolation"
-msgstr ""
+msgstr "Interpolasi"
 
 #: ../../docs/tutorials/3d/using_transforms.rst:64
 msgid ""
@@ -16554,7 +16577,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:4
 msgid "Spatial Material"
-msgstr ""
+msgstr "Materi Spasial"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:9
 msgid ""
@@ -16598,7 +16621,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:33
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:135
 msgid "Flags"
-msgstr ""
+msgstr "Bendera"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:35
 msgid ""
@@ -16608,7 +16631,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Transparent"
-msgstr ""
+msgstr "Transparan"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:42
 msgid ""
@@ -16657,7 +16680,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:64
 msgid "Unshaded"
-msgstr ""
+msgstr "Tanpa bayangan"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:66
 msgid ""
@@ -16673,7 +16696,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:75
 msgid "Vertex Lighting"
-msgstr ""
+msgstr "Pencahayaan Verteks"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:77
 msgid ""
@@ -16704,7 +16727,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:94
 msgid "No Depth Test"
-msgstr ""
+msgstr "Tidak ada Uji Kedalaman"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:96
 msgid ""
@@ -16722,7 +16745,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:107
 msgid "Use Point Size"
-msgstr ""
+msgstr "Gunakan Ukuran Titik"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:109
 msgid ""
@@ -16733,7 +16756,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:114
 msgid "World Triplanar"
-msgstr ""
+msgstr "Dunia Tiga Dimensi"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:116
 msgid ""
@@ -16744,7 +16767,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:121
 msgid "Fixed Size"
-msgstr ""
+msgstr "Ukuran Tetap"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:123
 msgid ""
@@ -16765,7 +16788,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:134
 msgid "Disable Ambient Light"
-msgstr ""
+msgstr "Matikan Cahaya Lingkungan"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:136
 msgid ""
@@ -16775,7 +16798,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:140
 msgid "Ensure Correct Normals"
-msgstr ""
+msgstr "Pastikan Normal yang Benar"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:142
 msgid "Fixes normals when non-uniform scaling is used."
@@ -16783,7 +16806,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:145
 msgid "Vertex Color"
-msgstr ""
+msgstr "Color Titik-Titik"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:147
 msgid ""
@@ -16793,7 +16816,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:153
 msgid "Use as Albedo"
-msgstr ""
+msgstr "Gunakan sebagai Albedo"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:155
 msgid "Choosing this option means vertex color is used as albedo color."
@@ -16801,7 +16824,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:158
 msgid "Is sRGB"
-msgstr ""
+msgstr "Adalah sRGB"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:160
 msgid ""
@@ -16818,7 +16841,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:350
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:495
 msgid "Parameters"
-msgstr ""
+msgstr "Parameter"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:166
 msgid ""
@@ -16828,7 +16851,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:172
 msgid "Diffuse Mode"
-msgstr ""
+msgstr "Mode Difus"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:174
 msgid ""
@@ -16869,7 +16892,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:192
 msgid "Specular Mode"
-msgstr ""
+msgstr "Mode Spekular"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:194
 msgid ""
@@ -16902,7 +16925,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:207
 msgid "Blend Mode"
-msgstr ""
+msgstr "Mode Campuran"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:209
 msgid ""
@@ -16931,7 +16954,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:221
 msgid "Cull Mode"
-msgstr ""
+msgstr "Mode Cull"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:223
 msgid ""
@@ -16965,7 +16988,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:239
 msgid "Depth Draw Mode"
-msgstr ""
+msgstr "Mode Menggambar Kedalaman"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:241
 msgid "Specifies when depth rendering must take place."
@@ -17005,7 +17028,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:260
 msgid "Point Size"
-msgstr ""
+msgstr "Ukuran Titik"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:262
 msgid "When drawing points, specify the point size in pixels."
@@ -17056,7 +17079,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:287
 msgid "Grow"
-msgstr ""
+msgstr "Tumbuh"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:289
 msgid "Grows the object vertices in the direction pointed by their normals:"
@@ -17097,7 +17120,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:318
 msgid "Albedo"
-msgstr ""
+msgstr "Albedo"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:320
 msgid ""
@@ -17121,7 +17144,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:333
 msgid "Metallic"
-msgstr ""
+msgstr "Berbahan Logam"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:335
 msgid ""
@@ -17146,7 +17169,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:350
 msgid "Roughness"
-msgstr ""
+msgstr "Kekasaran"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:352
 msgid ""
@@ -17158,7 +17181,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:360
 msgid "Emission"
-msgstr ""
+msgstr "Emisi"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:362
 msgid ""
@@ -17199,7 +17222,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:391
 msgid "Rim"
-msgstr ""
+msgstr "Lingkaran Luar"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:393
 msgid ""
@@ -17221,7 +17244,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:406
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:64
 msgid "Clearcoat"
-msgstr ""
+msgstr "Lapisan Bening"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:408
 #: ../../docs/tutorials/3d/spatial_material.rst:426
@@ -17257,7 +17280,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:424
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:63
 msgid "Anisotropy"
-msgstr ""
+msgstr "Anisotrop"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:428
 msgid ""
@@ -17269,7 +17292,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:435
 msgid "Ambient Occlusion"
-msgstr ""
+msgstr "Ambient Occlusion"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:437
 msgid ""
@@ -17296,7 +17319,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:459
 msgid "Subsurface Scattering"
-msgstr ""
+msgstr "Subsurface Scattering"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:463
 msgid ""
@@ -17319,7 +17342,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/spatial_material.rst:479
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:61
 msgid "Refraction"
-msgstr ""
+msgstr "Refraction"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:483
 msgid ""
@@ -17331,7 +17354,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:490
 msgid "Detail"
-msgstr ""
+msgstr "Detil"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:492
 msgid ""
@@ -18592,7 +18615,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:177
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:47
 msgid "Disabled"
-msgstr ""
+msgstr "Dinonaktifkan"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:179
 msgid ""
@@ -18742,7 +18765,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:276
 msgid "Tweaks"
-msgstr ""
+msgstr "Tweak"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:278
 msgid ""
@@ -18807,7 +18830,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:312
 msgid "Atlas"
-msgstr ""
+msgstr "Atlas"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:314
 msgid ""
@@ -19038,7 +19061,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:76
 msgid "Ambient Light"
-msgstr ""
+msgstr "Cahaya Lingkungan"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:78
 msgid ""
@@ -19091,7 +19114,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:113
 #: ../../docs/tutorials/rendering/gles2_gles3_differences.rst:87
 msgid "Fog"
-msgstr ""
+msgstr "Kabut"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:115
 msgid ""
@@ -19136,7 +19159,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:138
 msgid "Tonemap"
-msgstr ""
+msgstr "Tonemap"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:142
 msgid ""
@@ -19484,7 +19507,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:324
 msgid "Glow"
-msgstr ""
+msgstr "Bersinar"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:326
 msgid ""
@@ -19589,7 +19612,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:376
 msgid "Adjustments"
-msgstr ""
+msgstr "Penyesuaian"
 
 #: ../../docs/tutorials/3d/environment_and_post_processing.rst:378
 msgid ""
@@ -26424,7 +26447,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:114
 msgid "Normal Map"
-msgstr ""
+msgstr "Peta Normal"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:116
 msgid ""
@@ -26468,7 +26491,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:147
 #: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Filter"
-msgstr ""
+msgstr "Filter"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:149
 msgid ""
@@ -26480,7 +26503,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:152
 msgid "Mipmaps"
-msgstr ""
+msgstr "Mipmap"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:154
 msgid ""
@@ -26557,7 +26580,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:191
 msgid "Fix Alpha Border"
-msgstr ""
+msgstr "Perbaiki Batas Alpha"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:193
 msgid ""
@@ -26586,7 +26609,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:207
 msgid "HDR as sRGB"
-msgstr ""
+msgstr "HDR sebagai sRGB"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:209
 msgid ""
@@ -26743,7 +26766,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:62
 msgid "Trimming"
-msgstr ""
+msgstr "Pemangkasan"
 
 #: ../../docs/tutorials/assets_pipeline/importing_audio_samples.rst:64
 msgid ""
@@ -27300,7 +27323,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:151
 msgid "Root Type"
-msgstr ""
+msgstr "Jenis Root"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:153
 msgid ""
@@ -27351,7 +27374,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:273
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:371
 msgid "Storage"
-msgstr ""
+msgstr "Penyimpanan"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:191
 msgid ""
@@ -27371,7 +27394,7 @@ msgstr ""
 #: ../../docs/tutorials/io/data_paths.rst:72
 #: ../../docs/tutorials/io/data_paths.rst:121
 msgid "Location"
-msgstr ""
+msgstr "Lokalisasi"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:204
 msgid ""
@@ -27420,7 +27443,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:235
 msgid "Meshes"
-msgstr ""
+msgstr "Mesh"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:238
 msgid "Compress"
@@ -27522,7 +27545,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:265
 msgid "Ensure Tangents"
-msgstr ""
+msgstr "Memastikan Garis Singgung"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:267
 msgid ""
@@ -27547,7 +27570,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:282
 msgid "Light Baking"
-msgstr ""
+msgstr "Pemanggangan Ringan"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:284
 msgid "Whether or not the mesh is used in baked lightmaps."
@@ -27698,7 +27721,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:377
 msgid "Optimizer"
-msgstr ""
+msgstr "Pengoptimal"
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:379
 msgid ""
@@ -28790,7 +28813,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_buses.rst:159
 msgid "Delay"
-msgstr ""
+msgstr "Penundaan"
 
 #: ../../docs/tutorials/audio/audio_buses.rst:161
 msgid ""
@@ -29125,7 +29148,7 @@ msgstr ""
 
 #: ../../docs/tutorials/audio/audio_streams.rst:92
 msgid "Doppler"
-msgstr ""
+msgstr "Doppler"
 
 #: ../../docs/tutorials/audio/audio_streams.rst:94
 msgid ""
@@ -32490,7 +32513,7 @@ msgstr ""
 #: ../../docs/tutorials/export/exporting_for_macos.rst:136
 #: ../../docs/tutorials/platform/customizing_html5_shell.rst:190
 msgid "Debugging"
-msgstr ""
+msgstr "Men-debug"
 
 #: ../../docs/tutorials/editor/command_line_tutorial.rst:258
 msgid ""
@@ -32654,7 +32677,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/external_editor.rst:34
 msgid "Exec Flags"
-msgstr ""
+msgstr "Tanda Eksekusi"
 
 #: ../../docs/tutorials/editor/external_editor.rst:36
 msgid "Geany/Kate"
@@ -32948,7 +32971,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:43
 msgid "Filter Files"
-msgstr ""
+msgstr "Filter File"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:43
 msgid ":kbd:`Ctrl + Alt + P`"
@@ -34214,7 +34237,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:240
 msgid "Replace in Files"
-msgstr ""
+msgstr "Ganti dalam File"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:240
 #: ../../docs/tutorials/editor/default_key_mapping.rst:325
@@ -34757,7 +34780,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:333
 #: ../../docs/development/compiling/compiling_for_ios.rst:79
 msgid "Run"
-msgstr "Jalankan"
+msgstr "Menjalankan"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:333
 msgid ":kbd:`Ctrl + Shift + X`"
@@ -34934,7 +34957,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:381
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:14
 msgid "Debugger"
-msgstr "Pengawakutu"
+msgstr "Pendebug"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid "Step Into"
@@ -34974,7 +34997,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:394
 msgid "File Dialog"
-msgstr ""
+msgstr "Dialog File"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:399
 msgid "Go Back"
@@ -35046,7 +35069,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:413
 msgid "Create Folder"
-msgstr ""
+msgstr "Buat berkas"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:413
 msgid ":kbd:`Ctrl + N`"
@@ -37271,9 +37294,8 @@ msgid "Enables code signing."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:63
-#, fuzzy
 msgid "Identity"
-msgstr "Pengidentifikasi"
+msgstr "Identitas"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:63
 msgid ""
@@ -37283,7 +37305,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:65
 msgid "Timestamp"
-msgstr ""
+msgstr "Timestamp"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:65
 msgid ""
@@ -37340,7 +37362,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:89
 msgid "Apple ID Name"
-msgstr ""
+msgstr "Nama ID Apple"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:89
 msgid "Apple ID account name (email address)"
@@ -37348,7 +37370,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:91
 msgid "Apple ID Password"
-msgstr ""
+msgstr "Kata Sandi ID Apple"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:91
 msgid ""
@@ -37359,7 +37381,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:93
 msgid "Apple Team ID"
-msgstr ""
+msgstr "ID Tim Apple"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:93
 msgid "Team ID, if your Apple ID belongs to multiple teams"
@@ -37379,9 +37401,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:103
-#, fuzzy
 msgid "Entitlements"
-msgstr "Komentar"
+msgstr "Hak"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:106
 msgid "Hardened Runtime Entitlements"
@@ -37434,7 +37455,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:120
 msgid "Disable Library Validation"
-msgstr ""
+msgstr "Menonaktifkan Validasi Library"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:120
 msgid ""
@@ -37444,9 +37465,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:122
-#, fuzzy
 msgid "Audio Input"
-msgstr "Suara"
+msgstr "Input Audio"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:122
 msgid ""
@@ -37508,7 +37528,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:134
 msgid "Apple Events"
-msgstr ""
+msgstr "Acara Apple"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:134
 msgid "[4]_ Enable to allow app to send Apple events to other apps."
@@ -37559,25 +37579,23 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:157
 msgid "Enabled"
-msgstr ""
+msgstr "Diaktifkan"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:157
 msgid "Enables App Sandbox."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:159
-#, fuzzy
 msgid "Network Server"
-msgstr "Network Profiler(Debug jaringan)"
+msgstr "Server Jaringan"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:159
 msgid "Enable to allow app to listen for incoming network connections."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:161
-#, fuzzy
 msgid "Network Client"
-msgstr "Jaringan"
+msgstr "Klien Jaringan"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:161
 msgid "Enable to allow app to establish outgoing network connections."
@@ -37585,7 +37603,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:163
 msgid "Device USB"
-msgstr ""
+msgstr "Perangkat USB"
 
 #: ../../docs/tutorials/export/exporting_for_macos.rst:163
 msgid ""
@@ -39068,7 +39086,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:7
 #: ../../docs/tutorials/performance/threads/using_multiple_threads.rst:7
 msgid "Threads"
-msgstr ""
+msgstr "Thread"
 
 #: ../../docs/tutorials/export/exporting_for_web.rst:135
 msgid ""
@@ -41983,7 +42001,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:464
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../../docs/tutorials/i18n/locales.rst:464
 msgid "Malay"
@@ -45017,7 +45035,7 @@ msgstr "17"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:65
 msgid "object"
-msgstr ""
+msgstr "objek"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:67
 msgid "18"
@@ -45156,7 +45174,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:484
 #: ../../docs/tutorials/io/binary_serialization_api.rst:499
 msgid "Offset"
-msgstr ""
+msgstr "Pengimbangan"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:102
 #: ../../docs/tutorials/io/binary_serialization_api.rst:113
@@ -45320,7 +45338,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:507
 #: ../../docs/tutorials/io/binary_serialization_api.rst:509
 msgid "Float"
-msgstr ""
+msgstr "Float"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:135
 msgid "IEEE 754 single-precision float"
@@ -45349,7 +45367,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:376
 #: ../../docs/tutorials/io/binary_serialization_api.rst:462
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:155
 #: ../../docs/tutorials/io/binary_serialization_api.rst:353
@@ -45469,7 +45487,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:230
 msgid "Distance"
-msgstr ""
+msgstr "Jarak"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:234
 msgid "10: :ref:`Quat<class_quat>`"
@@ -48979,7 +48997,7 @@ msgstr ""
 #: ../../docs/tutorials/networking/webrtc.rst:4
 #: ../../docs/tutorials/networking/webrtc.rst:21
 msgid "WebRTC"
-msgstr ""
+msgstr "WebRTC"
 
 #: ../../docs/tutorials/networking/webrtc.rst:7
 msgid "HTML5, WebSocket, WebRTC"
@@ -49179,18 +49197,16 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/index.rst:43
-#, fuzzy
 msgid "Common"
-msgstr "Komunitas"
+msgstr "Umum"
 
 #: ../../docs/tutorials/performance/index.rst:53
 msgid "CPU"
-msgstr ""
+msgstr "CPU"
 
 #: ../../docs/tutorials/performance/index.rst:62
-#, fuzzy
 msgid "GPU"
-msgstr "GUI (Antar Muka)"
+msgstr "GPU"
 
 #: ../../docs/tutorials/performance/general_optimization.rst:4
 #, fuzzy
@@ -50238,7 +50254,7 @@ msgstr ":ref:`doc_using_multiple_threads`"
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/scripting/scene_tree.rst:33
 msgid "SceneTree"
-msgstr "SceneTree"
+msgstr "PohonAdegan"
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:226
 msgid ""
@@ -51302,9 +51318,8 @@ msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:298
-#, fuzzy
 msgid "Project Settings"
-msgstr "Menguji"
+msgstr "Pengaturan Proyek"
 
 #: ../../docs/tutorials/performance/batching.rst:300
 msgid ""
@@ -52527,7 +52542,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/index.rst:2
 #: ../../docs/tutorials/rendering/viewports.rst:174
 msgid "Rendering"
-msgstr ""
+msgstr "Proses membuat gambar"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:55
 msgid ""
@@ -53993,7 +54008,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:25
 msgid "Space"
-msgstr ""
+msgstr "Spasi"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:27
 msgid ""
@@ -54098,7 +54113,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/ray-casting.rst:192
 msgid "Collision Mask"
-msgstr ""
+msgstr "Mask Collision"
 
 #: ../../docs/tutorials/physics/ray-casting.rst:194
 msgid ""
@@ -60336,7 +60351,7 @@ msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:112
 msgid "Stretch Mode"
-msgstr ""
+msgstr "Mode Peregangan"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:114
 msgid ""
@@ -60477,7 +60492,7 @@ msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:232
 msgid "Stretch Shrink"
-msgstr ""
+msgstr "Peregangan Menyusut"
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:234
 msgid ""
@@ -60867,7 +60882,7 @@ msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:30
 msgid "Jitter"
-msgstr ""
+msgstr "Jitter"
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:32
 msgid ""
@@ -61768,7 +61783,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:199
 msgid "yield"
-msgstr ""
+msgstr "hasil"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:199
 msgid "Coroutine support. See `Coroutines with yield`_."
@@ -61805,7 +61820,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:207
 msgid "puppet"
-msgstr ""
+msgstr "boneka"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:209
 msgid "remotesync"
@@ -62262,7 +62277,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:387
 msgid "Backspace"
-msgstr ""
+msgstr "Kembali"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:389
 msgid "``\\f``"
@@ -62683,7 +62698,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:311
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
-msgstr "konstan"
+msgstr "Konstanta"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:664
 msgid ""
@@ -64031,7 +64046,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:4
 msgid "GDScript exports"
-msgstr ""
+msgstr "ekspor GDScript"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:7
 #, fuzzy
@@ -64605,7 +64620,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:419
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:221
 msgid "Whitespace"
-msgstr "Tempat kosong"
+msgstr "Spasi"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_styleguide.rst:421
 msgid ""
@@ -66585,7 +66600,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:313
 msgid "Comment"
-msgstr ""
+msgstr "Komentar"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:315
 msgid ""
@@ -66676,9 +66691,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:378
-#, fuzzy
 msgid "Switch"
-msgstr "Switch"
+msgstr "Beralih"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:380
 msgid ""
@@ -66733,7 +66747,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Konstruktor"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -67629,14 +67643,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_features.rst:244
-#, fuzzy
 msgid ""
 "To see an example project, see the OS testing demo: https://github.com/"
 "godotengine/godot-demo-projects/tree/master/misc/os_test"
 msgstr ""
-"Sebagai tambahan untuk dokumentasi ini, Anda mungkin juga ingin melihat "
-"berbagai `proyek demo Godot <https://github.com/godotengine/godot-demo-"
-"projects>`_."
+"Untuk melihat contoh proyek, lihat demo test OS: https://github.com/"
+"godotengine/godot-demo-projects/tree/master/misc/os_test"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:4
 msgid "C# API differences to GDScript"
@@ -67854,7 +67866,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:212
 msgid "Basis"
-msgstr ""
+msgstr "Dasar"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:214
 msgid ""
@@ -67906,7 +67918,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:243
 msgid "Plane"
-msgstr "Plane"
+msgstr "Pesawat"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:245
 msgid ""
@@ -70060,7 +70072,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:119
 msgid "Shapes"
-msgstr ""
+msgstr "Bentuk"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:121
 msgid ""
@@ -70165,7 +70177,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:49
 msgid "Profiler"
-msgstr "Profiler(debugger/pemantauan)"
+msgstr "Profiler"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:51
 msgid ""
@@ -71203,7 +71215,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:34
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:302
 msgid "Operator"
-msgstr ""
+msgstr "Operator"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:34
 #: ../../docs/development/compiling/compiling_with_mono.rst:81
@@ -73619,7 +73631,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:421
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:59
 msgid "Varyings"
-msgstr ""
+msgstr "Bervariasi"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:423
 msgid ""
@@ -73668,7 +73680,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:523
 msgid "Qualifier"
-msgstr ""
+msgstr "Pengkualifikasi"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:525
 msgid "**flat**"
@@ -73734,7 +73746,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:570
 msgid "Hint"
-msgstr ""
+msgstr "Petunjuk"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:572
 msgid "hint_color"
@@ -74102,7 +74114,7 @@ msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:698
 msgid "Floor"
-msgstr ""
+msgstr "Lantai"
 
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:700
 msgid "vec_type **round** (vec_type x)"
@@ -74951,7 +74963,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
 msgid "Built-in"
-msgstr ""
+msgstr "Bawaan"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343
@@ -81955,7 +81967,7 @@ msgstr ""
 
 #: ../../docs/tutorials/vr/openxr/passthrough.rst:4
 msgid "Passthrough"
-msgstr ""
+msgstr "Melewati"
 
 #: ../../docs/tutorials/vr/openxr/passthrough.rst:8
 msgid "Only available in versions **1.1.1 and later** of the OpenXR plugin."
@@ -90000,7 +90012,7 @@ msgstr ""
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:4
 msgid "Xcode"
-msgstr ""
+msgstr "Xcode"
 
 #: ../../docs/development/cpp/configuring_an_ide/xcode.rst:6
 msgid ""
@@ -90634,7 +90646,7 @@ msgstr "Terapkan"
 
 #: ../../docs/development/cpp/core_types.rst:145
 msgid "Map"
-msgstr ""
+msgstr "Peta"
 
 #: ../../docs/development/cpp/core_types.rst:147
 msgid ""
@@ -93822,7 +93834,7 @@ msgstr ""
 
 #: ../../docs/community/contributing/index.rst:56
 msgid "Guidelines"
-msgstr ""
+msgstr "Pedoman"
 
 #: ../../docs/community/contributing/index.rst:58
 msgid ""

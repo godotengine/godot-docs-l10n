@@ -4,8 +4,10 @@
 #
 # agrocs <apittakis@csd.auth.gr>, 2019.
 # Ahilleas Balaktsis <ahibala@gmail.com>, 2019.
+# Alexander Petrache <petrache.dev@gmail.com>, 2023.
+# Andreas Tarasidis <andytgamedev@gmail.com>, 2023.
 # Andy <bookoftrust@gmail.com>, 2018.
-# Anthony V <anthonyv156@outlook.com>, 2022.
+# Anthony V <anthonyv156@outlook.com>, 2022-2023.
 # Dabs Yt <dabsgt1@gmail.com>, 2020.
 # Eternal Death <eternaldeath0001@gmail.com>, 2019.
 # George Tsiamasiotis <gtsiam@windowslive.com>, 2018-2021.
@@ -21,14 +23,15 @@
 # Shadofer <shadowrlrs@gmail.com>, 2021.
 # THANOS SIOURDAKIS <siourdakisthanos@gmail.com>, 2019.
 # thealexanton <greektechmania@gmail.com>, 2022.
+# kilkistanproductions <ddimitr@uth.gr>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2023-01-17 13:54+0000\n"
-"Last-Translator: Ilias Vasilakis <vaselas99@gmail.com>\n"
+"PO-Revision-Date: 2023-09-18 08:20+0000\n"
+"Last-Translator: Alexander Petrache <petrache.dev@gmail.com>\n"
 "Language-Team: Greek <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/el/>\n"
 "Language: el\n"
@@ -36,7 +39,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -68,7 +71,6 @@ msgid "Class reference"
 msgstr "Αναφορά κλάσης"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
 msgstr "Εγχειρίδιο Godot - *3.4* διακλάδωση"
 
@@ -144,6 +146,11 @@ msgid ""
 "offline reading (updated every Monday). Extract the ZIP archive then open "
 "the top-level ``index.html`` in a web browser."
 msgstr ""
+"Μπορείς επίσης να `κατεβάσεις ένα HTML αντίγραφο <https://nightly.link/"
+"godotengine/godot-docs/workflows/build_offline_docs/master/godot-docs-html-"
+"stable.zip>`__ για offline διάβασμα (ενημερώνεται κάθε Δευτέρα). Απόσπασε το "
+"αρχείο ZIP και άνοιξε το top-level ``index.html`` σε έναν πρόγραμμα "
+"περιήγησης διαδικτύου."
 
 #: ../../docs/index.rst:39
 msgid ""
@@ -161,7 +168,6 @@ msgstr ""
 "εγχειρίδιο, ενημερώνοντάς μας!"
 
 #: ../../docs/index.rst:46
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -171,7 +177,7 @@ msgid ""
 msgstr ""
 "Υποβάλετε ένα πρόβλημα (issue) ή ένα pull request στο GitHub repository "
 "<https://github.com/godotengine/godot-docs/issues>`_, βοηθήστε μας να "
-"μεταφράσουμε το εγειρίδιο <https://hosted.weblate.org/engage/godot-engine/"
+"μεταφράσουμε το εγχειρίδιο <https://hosted.weblate.org/engage/godot-engine/"
 ">`_ στη δική σας γλώσσα, ή μιλήστε μαζί μας είτε στο ``#documentation`` "
 "κανάλι στο`Discord <https://discord.gg/zH7NUgz>`_, .είτε στο ``#godotengine-"
 "doc`` κανάλι στο `irc.freenode.net <http://webchat.freenode.net/?"
@@ -182,9 +188,8 @@ msgid "weblate_widget"
 msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "Μετάβαση"
+msgstr "Κατάσταση μετάφρασης"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -561,20 +566,19 @@ msgstr ""
 "Η Godot είναι `Eλεύθερο και Ανοικτού-Κώδικα Λογισμικό <https://en.wikipedia."
 "org/wiki/Free_and_open-source_software>`_ διαθέσιμο υπό την `εγκεκριμένη από "
 "τον OSI <https://opensource.org/licenses/MIT>`_ άδεια MIT. Αυτό σημαίνει "
-"τόσο «ελεύθερο σαν τον λόγο», όσο και «δωρεάν σαν την μπύρα»."
+"τόσο «ελεύθερο σαν τον λόγο», όσο και «δωρεάν σαν την μπύρα.»"
 
 #: ../../docs/about/faq.rst:14
 msgid "In short:"
 msgstr "Σε συντομία:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Είστε ελεύθεροι να κατεβάσετε και να χρησημοποιήσετε τη Gobot για κάθε "
-"σκοπό, ιδιωτικό, μη κερδοσκοπικό, εμπορικό, ή όποιον επιθυμείτε."
+"Είστε ελεύθεροι να κατεβάσετε και να χρησιμοποιήσετε το Godot για "
+"οποιονδήποτε σκοπό: προσωπικό, μη κερδοσκοπικό, εμπορικό, ή άλλον."
 
 #: ../../docs/about/faq.rst:17
 msgid ""
@@ -593,8 +597,8 @@ msgid ""
 msgstr ""
 "Όλα τα περιεχόμενα αυτής της συνοδευτικής τεκμηρίωσης υπόκεινται της "
 "ελεύθερης άδειας Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
-"creativecommons.org/licenses/by/3.0/>`_), με απόδοση «Juan Linietsky, Ariel "
-"Manzur και η κοινότητα της Godot»."
+"creativecommons.org/licenses/by/3.0/>`_), με απόδοση \"Juan Linietsky, Ariel "
+"Manzur και η κοινότητα της Godot.\""
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -672,9 +676,8 @@ msgid ":ref:`Web <doc_using_the_web_editor>`"
 msgstr ":ref:`doc_running_code_in_the_editor`"
 
 #: ../../docs/about/faq.rst:42
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Android"
+msgstr "Android (πειραματικό)"
 
 #: ../../docs/about/faq.rst:44
 msgid "**For exporting your games:**"
@@ -826,7 +829,6 @@ msgstr ""
 "GDScript, δείτε :ref:`GDScript scripting guide <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:104
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -836,7 +838,7 @@ msgstr ""
 "Υπάρχουν πολλοί λόγοι για να χρησημοποιήσετε τη GDScript--ιδιαίτερα έαν "
 "κάνετε προτότυπο, σε alpha/beta στάδια του πρότζεκτ σας, ή δεν φτίαχνετε τον "
 "επόμενο AAA τίτλο--αλλά ο πιο εξέχων λόγος είναι η ολική **μείωση της "
-"πολυπλοκότητας.**"
+"πολυπλοκότητας**."
 
 #: ../../docs/about/faq.rst:108
 msgid ""
@@ -1089,6 +1091,9 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Μετακίνησε το εκτελέσιμο αρχείο Godot σε μία σταθερή τοποθεσία (πχ. έξω από "
+"τον φάκελο Λήψεων), ώστε να μην μετακινηθεί κατα λάθος και να καταστραφεί η "
+"συντόμευση στο μέλλον."
 
 #: ../../docs/about/faq.rst:206
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
@@ -1101,6 +1106,11 @@ msgid ""
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Μετακίνησε την συντόμευση που δημιουργήθηκε στο ``%LOCALAPPDATA%"
+"\\Microsoft\\Windows\\Start Menu\\Programs``. Αυτή είναι η τοποθεσία σε "
+"επίπεδο χρήστη για συντομεύσεις που θα εμφανιστούν στο Start μενού. Μπορείς "
+"επίσης να καρφιτσώσεις το Godot στην μπάρα εργασιών κάνοντας δεξί κλικ στο "
+"εκτελέσιμο αρχείο και επιλέγοντας **Καρφίτσωμα στην Γραμμή Εργασιών**."
 
 #: ../../docs/about/faq.rst:215
 msgid ""
@@ -1703,9 +1713,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/faq.rst:484
-#, fuzzy
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr "Γιατί η Godot δεν χρησιμοποιεί STL (Standard Template Library)"
+msgstr "Γιατί η Godot δεν χρησιμοποιεί STL (Standard Template Library)?"
 
 #: ../../docs/about/faq.rst:486
 msgid ""
@@ -2663,9 +2672,8 @@ msgid "Panorama sky (using an HDRI)."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:232
-#, fuzzy
 msgid "Procedural sky."
-msgstr "Σωματίδια"
+msgstr "Διαδικαστικός Ούρανος."
 
 #: ../../docs/about/list_of_features.rst:234
 msgid "**Fog:**"
@@ -4335,9 +4343,8 @@ msgid "Q1 2023 (estimate)"
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "|unstable| *Beta.* Current focus of development (unstable)."
-msgstr "|ασταθής| *Τρέχουσα εστίαση της ανάπτυξης (ασταθής).*"
+msgstr "|ασταθής| *Beta.* Τρέχουσα εστίαση της ανάπτυξης (ασταθής)."
 
 #: ../../docs/about/release_policy.rst:122
 #, fuzzy
@@ -5423,19 +5430,17 @@ msgid "Integrated class reference"
 msgstr "Αναφορά κλάσης"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:131
-#, fuzzy
 msgid "Godot comes with a built-in class reference."
-msgstr "Αναφορά κλάσης"
+msgstr "Η Godot έρχεται με ενσωματωμένη αναφορά κλάσης."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:133
-#, fuzzy
 msgid ""
 "You can search for information about a class, method, property, constant, or "
 "signal by any one of the following methods:"
 msgstr ""
-"Για να αναζητήσετε πληροφορίες σχετικά με μια κλάση, μέθοδο, ιδιότητα, "
-"σταθερά ή σήμα στη μηχανή ενώ γράφετε ένα σενάριο, πατήστε το κουμπί "
-"\"Αναζήτηση βοήθειας\" στην επάνω δεξιά γωνία του Script χώρου εργασίας."
+"Μπορείτε να αναζητήσετε πληροφορίες σχετικά με μια κλάση, μέθοδο, ιδιότητα, "
+"σταθερά ή σήμα στη μηχανή ενώ γράφετε ένα σενάριο, με οποιαδήποτε απο τις "
+"ακόλουθες μεθόδους:"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:136
 msgid ""
@@ -6154,14 +6159,12 @@ msgid "All nodes have the following attributes:"
 msgstr "Συμπληρώστε τη φόρμα με τις ακόλουθες ρυθμίσεις:"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:23
-#, fuzzy
 msgid "A name."
-msgstr "Όνομα Ενέργειας"
+msgstr "Όνομα Ενέργειας."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:24
-#, fuzzy
 msgid "Editable properties."
-msgstr "Ιδιότητες"
+msgstr "Επεξεργάσιμες Ιδιότητες."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:25
 msgid "They receive callbacks to update every frame."
@@ -8044,9 +8047,8 @@ msgid "Create a complete 2D game with the Godot editor."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/index.rst:25
-#, fuzzy
 msgid "Structure a simple game project."
-msgstr "Δημιουργήστε ή εισαγάγετε ένα πρότζεκτ"
+msgstr "Δομήστε ενα απλό σχέδιο παιχνιδίου."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:26
 msgid "Move the player character and change its sprite."
@@ -8143,9 +8145,8 @@ msgid "In this short first part, we'll set up and organize the project."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:8
-#, fuzzy
 msgid "Launch Godot and create a new project."
-msgstr "Δημιουργία νέου έργου"
+msgstr "Εκκίνηση της Godot και δημιουργία νέου έργου."
 
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:15
 #: ../../docs/getting_started/first_2d_game/01.project_setup.rst:22
@@ -10620,9 +10621,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:25
-#, fuzzy
 msgid "Add a *CollisionShape*."
-msgstr "Σχήματα σύγκρουσης"
+msgstr "Προσθήκη ενος *Σχήματος σύγκρουσης*."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:29
 msgid "In the *Inspector*, assign a *BoxShape* to the *Shape* property."
@@ -12214,9 +12214,8 @@ msgid "Let's create an animation. Click on *Animation -> New*."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:34
-#, fuzzy
 msgid "Name the animation \"float\"."
-msgstr "Κίνηση"
+msgstr "Ονομάστε το animation \"float\"."
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:38
 msgid ""
@@ -12473,9 +12472,8 @@ msgid "And with that, you finished coding your first complete 3D game."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:274
-#, fuzzy
 msgid "**Congratulations**!"
-msgstr "Σταθερές"
+msgstr "**Συγχαρητήρια**!"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:276
 msgid ""
@@ -18210,9 +18208,8 @@ msgstr "Οι επιλογές είναι:"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:177
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:47
-#, fuzzy
 msgid "Disabled"
-msgstr "Μεταβλητή"
+msgstr "Απενεργοποιημένο"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:179
 msgid ""
@@ -18296,7 +18293,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:230
 msgid "Baking"
-msgstr ""
+msgstr "Ψήσιμο"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:232
 msgid ""
@@ -19498,9 +19495,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:66
-#, fuzzy
 msgid "NavigationMeshes"
-msgstr "Πλέγματα Πλοήγησης."
+msgstr "Πλέγματα Πλοήγησης"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:68
 msgid ""
@@ -21404,9 +21400,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/occluders.rst:118
-#, fuzzy
 msgid "Some guidelines:"
-msgstr "Δοκιμή περιεχομένου"
+msgstr "Μερικές οδηγίες:"
 
 #: ../../docs/tutorials/3d/occluders.rst:120
 msgid ""
@@ -22820,9 +22815,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:137
-#, fuzzy
 msgid "Multimeshes"
-msgstr "Παράδειγμα Windows:"
+msgstr "ΠολυΠλέγματα"
 
 #: ../../docs/tutorials/3d/portals/editing_rooms_and_portals.rst:139
 msgid ""
@@ -22854,9 +22848,8 @@ msgid "Step 1"
 msgstr "Βήμα μέσα"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:18
-#, fuzzy
 msgid "Create a new project."
-msgstr "Δημιουργία νέου έργου"
+msgstr "Δημιουργία νέου έργου."
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:19
 msgid ""
@@ -23062,9 +23055,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:85
-#, fuzzy
 msgid "Some things to try"
-msgstr "Υπάρχουν μερικά πράγματα που πρέπει να σημειώσετε:"
+msgstr "Μερικά πράγματα που μπορείτε να δοκιμάσετε"
 
 #: ../../docs/tutorials/3d/portals/rooms_and_portals_example.rst:87
 msgid ""
@@ -23149,9 +23141,8 @@ msgstr ""
 "tree/master/misc/os_test"
 
 #: ../../docs/tutorials/3d/3d_text.rst:19
-#, fuzzy
 msgid "Label3D"
-msgstr "Επιγραφές."
+msgstr "Επιγραφές3D"
 
 #: ../../docs/tutorials/3d/3d_text.rst:23
 msgid ""
@@ -25146,9 +25137,8 @@ msgid "Godot supports video playback with the :ref:`class_VideoPlayer` node."
 msgstr ""
 
 #: ../../docs/tutorials/animation/playing_videos.rst:9
-#, fuzzy
 msgid "Supported playback formats"
-msgstr "Υποστηρίζει όλες τις πλατφόρμες."
+msgstr "Υποστηριζόμενες πλατφόρμες αναπαραγωγής"
 
 #: ../../docs/tutorials/animation/playing_videos.rst:11
 msgid ""
@@ -25340,15 +25330,14 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/animation/playing_videos.rst:115
-#, fuzzy
 msgid ""
 "See :ref:`doc_viewports` and the `GUI in 3D demo <https://github.com/"
 "godotengine/godot-demo-projects/tree/master/viewport/gui_in_3d>`__ for more "
 "information on setting this up."
 msgstr ""
-"Για να δείτε ένα παράδειγμα έργου, δείτε τη δοκιμαστική δοκιμή του "
-"λειτουργικού συστήματος: https://github.com/godotengine/godot-demo-projects/"
-"tree/master/misc/os_test"
+"Δείτε :ref: `doc_viewports` και `GUI in 3D demo <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/viewport/gui_in_3d>`__ για "
+"παραπάνω πληροφορίες για τη σωστή ρύθμιση αυτού."
 
 #: ../../docs/tutorials/animation/playing_videos.rst:120
 msgid "Video decoding conditions and recommended resolutions"
@@ -26826,10 +26815,11 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:102
-#, fuzzy
 msgid ""
 "For more information on Godot's materials, see :ref:`doc_spatial_material`."
-msgstr "Δείτε :ref:`doc_ways_to_contribute`"
+msgstr ""
+"Για παραπάνω πληροφορίες σχετικά με την Godot, δείτε :ref:"
+"`doc_spatial_material`."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:105
 #, fuzzy
@@ -27390,9 +27380,8 @@ msgid "Adding collision detection to objects."
 msgstr "Προσθέτωντας ανίχνευση συγκρούσεων σε αντικείμενα."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:419
-#, fuzzy
 msgid "Setting objects as navigation meshes."
-msgstr "Δημιουργία Πλοήγησης"
+msgstr "Ορίσμος αντικειμένου ως Πλέγμα Πλοήγησης."
 
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:420
 msgid ""
@@ -27608,9 +27597,8 @@ msgid "Limitations"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/exporting_3d_scenes.rst:26
-#, fuzzy
 msgid "There are several limitations with glTF export."
-msgstr "Υπάρχουν δύο τρόποι για να το κάνετε αυτό:"
+msgstr "Υπάρχουν αρκετοί περιορισμοί με την μέθοδο εξαγωγής glTF."
 
 #: ../../docs/tutorials/assets_pipeline/exporting_3d_scenes.rst:28
 msgid ""
@@ -27623,9 +27611,8 @@ msgid "ShaderMaterials cannot be exported."
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/exporting_3d_scenes.rst:30
-#, fuzzy
 msgid "No support for exporting 2D scenes."
-msgstr "Συνθήκη"
+msgstr "Δεν υπάρχει υποστήριξη για εξαγωγή σκηνών 2D."
 
 #: ../../docs/tutorials/assets_pipeline/exporting_3d_scenes.rst:31
 msgid "Only supported in editor builds (``tools=yes``)."
@@ -35245,9 +35232,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:64
-#, fuzzy
 msgid "No support for external script editors."
-msgstr "Συνθήκη"
+msgstr "Καμία υποστήριξη για εξωτερικούς επεξεργαστές κώδικα."
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:65
 msgid "No support for Android one-click deploy."
@@ -35329,9 +35315,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:110
-#, fuzzy
 msgid "Where are my project files?"
-msgstr "Αρχεία έργου"
+msgstr "Πού βρίσκονται τα αρχεία έργου μου;"
 
 #: ../../docs/tutorials/editor/using_the_web_editor.rst:112
 msgid ""
@@ -36007,9 +35992,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:156
-#, fuzzy
 msgid "Windows: ``.exe``"
-msgstr "Παράδειγμα Windows:"
+msgstr "Windows: ``.exe``"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:157
 msgid ""
@@ -39193,9 +39177,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/one-click_deploy.rst:29
-#, fuzzy
 msgid "Supported platforms"
-msgstr "Υποστηρίζει όλες τις πλατφόρμες."
+msgstr "Υποστηριζόμενες πλατφόρμες"
 
 #: ../../docs/tutorials/export/one-click_deploy.rst:31
 msgid ""
@@ -48901,14 +48884,12 @@ msgid "Putting a start/stop timer around code of interest."
 msgstr ""
 
 #: ../../docs/tutorials/performance/general_optimization.rst:58
-#, fuzzy
 msgid "Using the Godot profiler."
-msgstr "Δημιουργία περιεχομένου"
+msgstr "Χρήση του σχεδιαστή προφίλ της Godot."
 
 #: ../../docs/tutorials/performance/general_optimization.rst:59
-#, fuzzy
 msgid "Using external third-party CPU profilers."
-msgstr "Δημιουργία περιεχομένου"
+msgstr "Χρήση εξωτερικών αναλυτών προφίλ CPU τρίτων-κατασκευαστών."
 
 #: ../../docs/tutorials/performance/general_optimization.rst:60
 msgid ""
@@ -49838,9 +49819,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:221
-#, fuzzy
 msgid "For more information on threads, see :ref:`doc_using_multiple_threads`."
-msgstr "Δείτε :ref:`doc_ways_to_contribute`"
+msgstr ""
+"Για περισσότερες πληροφορίες σχετικά με τα νήματα, δείτε :ref: "
+"`doc_using_multiple_threads`."
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:224
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:288
@@ -50010,9 +49992,10 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/gpu_optimization.rst:54
-#, fuzzy
 msgid "For more information on 2D batching, see :ref:`doc_batching`."
-msgstr "Δείτε :ref:`doc_ways_to_contribute`"
+msgstr ""
+"Για περισσότερες πληροφορίες σχετικά με την 2D ομαδοποίηση, δείτε :ref:"
+"`doc_batching`."
 
 #: ../../docs/tutorials/performance/gpu_optimization.rst:57
 msgid "3D batching"
@@ -50464,9 +50447,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/using_multimesh.rst:48
-#, fuzzy
 msgid "Multimesh example"
-msgstr "Παράδειγμα Windows:"
+msgstr "Παράδειγμα ΠολυΠλέγματος"
 
 #: ../../docs/tutorials/performance/using_multimesh.rst:50
 msgid ""
@@ -50577,9 +50559,8 @@ msgid "Batching will be broken by (amongst other things):"
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:68
-#, fuzzy
 msgid "Change of texture."
-msgstr "υφές"
+msgstr "Αλλαγή Υφής."
 
 #: ../../docs/tutorials/performance/batching.rst:69
 msgid "Change of material."
@@ -50910,9 +50891,8 @@ msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:298
-#, fuzzy
 msgid "Project Settings"
-msgstr "Δοκιμιμαστικά"
+msgstr "Ρυθμίσεις Έργου"
 
 #: ../../docs/tutorials/performance/batching.rst:300
 msgid ""
@@ -52521,7 +52501,7 @@ msgstr ""
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:154
 msgid "Code example"
-msgstr "Παράδειγμα κώδικα:"
+msgstr "Παράδειγμα κώδικα"
 
 #: ../../docs/tutorials/physics/physics_introduction.rst:156
 msgid ""
@@ -56008,9 +55988,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:47
-#, fuzzy
 msgid "To build an iOS plugin:"
-msgstr "Κινήσεις"
+msgstr "Για να δημιουργήσετε ένα πρόσθετο πρόγραμμα για iOS:"
 
 #: ../../docs/tutorials/platform/ios/ios_plugin.rst:49
 msgid "Create an Objective-C static library for your plugin inside Xcode."
@@ -56213,13 +56192,13 @@ msgid "ARKit and Camera access are also provided as plugins."
 msgstr ""
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:11
-#, fuzzy
 msgid ""
 "Latest updates, documentation and source code can be found at `Godot iOS "
 "plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
 msgstr ""
-"Εάν συνεισφέρετε στo εγχειρίδιο, μπορείτε να βρείτε το αποθετήριό του `εδώ "
-"<https://github.com/godotengine/godot-docs>`_."
+"Οι τελευταίες ενημερώσεις, η τεκμηρίωση και ο πηγαίος κώδικας βρίσκονται στη "
+"διεύθυνση`Godot iOS plugins repository <https://github.com/godotengine/godot-"
+"ios-plugins>`_"
 
 #: ../../docs/tutorials/platform/ios/plugins_for_ios.rst:14
 msgid "Accessing plugin singletons"
@@ -60134,13 +60113,12 @@ msgid "Common use case scenarios"
 msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:258
-#, fuzzy
 msgid ""
 "The following settings are recommended to support multiple resolutions and "
 "aspect ratios well."
 msgstr ""
-"Πώς πρέπει να δημιουργηθούν οι πόροι ώστε να χειρίζονται πολλαπλές αναλύσεις "
-"και λόγους προβολής;"
+"Οι ακόλουθες ρυθμίσεις συνιστώνται για την καλή υποστήριξη πολλαπλών "
+"αναλύσεων και αναλογιών διαστάσεων."
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:262
 msgid "Desktop game"
@@ -60438,14 +60416,12 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/rendering/multiple_resolutions.rst:441
-#, fuzzy
 msgid ""
 "See the `3D viewport scaling demo <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/viewport/3d_scaling>`__ for examples."
 msgstr ""
-"Για να δείτε ένα παράδειγμα έργου, δείτε τη δοκιμαστική δοκιμή του "
-"λειτουργικού συστήματος: https://github.com/godotengine/godot-demo-projects/"
-"tree/master/misc/os_test"
+"Για παραδείγματα, δείτε το `3D viewport scaling demo <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/viewport/3d_scaling>`__."
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:4
 msgid "Fixing jitter and stutter"
@@ -61017,11 +60993,12 @@ msgid "``SSS_STRENGTH``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/index.rst:4
-#, fuzzy
 msgid ""
 "This section covers programming languages and core features to code your "
 "games in Godot."
-msgstr "Ποιες γλώσσες υποστηρίζονται από την Godot?"
+msgstr ""
+"Αυτή η ενότητα καλύπτει τις γλώσσες προγραμματισμού και τα βασικά "
+"χαρακτηριστικά για να προγραμματίσετε τα παιχνίδια σας στη Godot."
 
 #: ../../docs/tutorials/scripting/index.rst:7
 msgid ""
@@ -61224,7 +61201,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "class"
-msgstr ""
+msgstr "κλάση"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "Defines an inner class."
@@ -61458,7 +61435,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:297
 msgid "Operators"
-msgstr ""
+msgstr "Τελεστές"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
@@ -61858,7 +61835,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:387
 msgid "Backspace"
-msgstr ""
+msgstr "Backspace"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:389
 msgid "``\\f``"
@@ -66149,7 +66126,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Κατασκευαστής"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -66521,9 +66498,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:119
-#, fuzzy
 msgid "In Visual Studio Code:"
-msgstr "Visual Studio"
+msgstr "Στο Visual Studio Code:"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_basics.rst:121
 msgid ""
@@ -67480,7 +67456,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Variant"
-msgstr ""
+msgstr "Παραλλαγή"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:320
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
@@ -69836,9 +69812,10 @@ msgid "There are two ways to add/remove nodes to groups:"
 msgstr "Υπάρχουν δύο τρόποι για να το κάνετε αυτό:"
 
 #: ../../docs/tutorials/scripting/groups.rst:24
-#, fuzzy
 msgid "During design, by using the Node dock in the editor."
-msgstr "Βιβλιοθήκη Πόρων"
+msgstr ""
+"Κατά τη διάρκεια του σχεδιασμού, χρησιμοποιώντας την πλατφόρμα κόμβων στον "
+"επεξεργαστή."
 
 #: ../../docs/tutorials/scripting/groups.rst:25
 msgid ""
@@ -69958,7 +69935,6 @@ msgstr ""
 "<class_SceneTree_method_get_nodes_in_group>`:"
 
 #: ../../docs/tutorials/scripting/groups.rst:127
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many more useful "
 "methods to interact with scenes, their node hierarchy, and groups. It allows "
@@ -69969,7 +69945,7 @@ msgstr ""
 "όπως αλληλεπίδραση με σκηνές, την ιεραρχία κόμβων τους και ομάδες κόμβων. "
 "Σας επιτρέπει να αλλάζετε εύκολα σκηνές ή να τις φορτώνετε ξανά, να "
 "τερματίζετε το παιχνίδι ή να κάνετε παύση και επανεκκίνηση. Εμπεριέχει ακόμη "
-"και ενδιαφέροντα σήματα. Γι 'αυτό, ελέγξτε το αν έχετε λίγο χρόνο!"
+"και ενδιαφέροντα σήματα."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:4
 msgid "Nodes and scene instances"
@@ -70069,14 +70045,12 @@ msgid "Creating nodes"
 msgstr "Δημιουργία κόμβων"
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:118
-#, fuzzy
 msgid ""
 "To create a node from code, call its ``new()`` method like for any other "
 "class-based datatype."
 msgstr ""
 "Για να δημιουργήσετε έναν κόμβο από κώδικα, καλέστε τη μέθοδο ``.new()``, "
-"όπως για οποιονδήποτε άλλο τύπο δεδομένων που βασίζεται σε κλάση. Για "
-"παράδειγμα:"
+"όπως για οποιονδήποτε άλλο τύπο δεδομένων που βασίζεται σε κλάση."
 
 #: ../../docs/tutorials/scripting/nodes_and_scene_instances.rst:121
 msgid ""
@@ -74427,7 +74401,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
 msgid "Built-in"
-msgstr ""
+msgstr "Ενσωματωμένο"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343

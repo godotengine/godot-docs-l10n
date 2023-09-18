@@ -4,13 +4,17 @@
 #
 # Alex25820 <alexs25820@gmail.com>, 2021.
 # Björn Åkesson <bjorn.akesson@gmail.com>, 2022.
-# Christoffer Sundbom <christoffer_karlsson@live.se>, 2018.
-# Daniel K <danielkimblad@hotmail.com>, 2018.
+# Christoffer Sundbom <christoffer_karlsson@live.se>, 2018, 2023.
+# Daniel K <danielkimblad@hotmail.com>, 2018, 2023.
+# Daniel Ljung <weblate@bazonic.mozmail.com>, 2023.
 # <grenoscar@gmail.com>, 2018.
+# Henrik Nilsson <nsmoooose@gmail.com>, 2023.
 # Joakim Lundberg <joakim@joakimlundberg.com>, 2020.
 # Jonas Robertsson <jonas.robertsson@posteo.net>, 2020.
+# jontepson <ceccoham@gmail.com>, 2023.
 # Kent Jofur <kent.jofur@gmail.com>, 2021.
-# Kristoffer Grundström <swedishsailfishosuser@tutanota.com>, 2020-2022.
+# Kristoffer Grundström <swedishsailfishosuser@tutanota.com>, 2020-2023.
+# Leo Nilsson <jageleo@gmail.com>, 2023.
 # Leon <joel.lundborg@gmail.com>, 2021.
 # Mattias Münster <mattiasmun@gmail.com>, 2019.
 # Molntussen <frida@molntussen.com>, 2019.
@@ -25,8 +29,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2022-09-30 11:18+0000\n"
-"Last-Translator: Kristoffer Grundström <swedishsailfishosuser@tutanota.com>\n"
+"PO-Revision-Date: 2023-09-18 08:20+0000\n"
+"Last-Translator: Leo Nilsson <jageleo@gmail.com>\n"
 "Language-Team: Swedish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/sv/>\n"
 "Language: sv\n"
@@ -34,7 +38,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -66,9 +70,8 @@ msgid "Class reference"
 msgstr "Klassreferens"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "Dokumentation för Godot - *3.3*-gren"
+msgstr "Dokumentation för Godot - *3.5*-gren"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -102,7 +105,6 @@ msgstr ""
 "översättningar på Weblate."
 
 #: ../../docs/index.rst:21
-#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
 "\"latest\" (development) branch, but should be suitable to learn how to use "
@@ -138,7 +140,6 @@ msgstr ""
 "vänster i fönstret."
 
 #: ../../docs/index.rst:35
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
@@ -151,7 +152,6 @@ msgstr ""
 "arkivet och öppna sedan den översta nivån ``index.html`` i en webbläsare."
 
 #: ../../docs/index.rst:39
-#, fuzzy
 msgid ""
 "Godot Engine is an open source project developed by a community of "
 "volunteers. The documentation team can always use your feedback and help to "
@@ -166,7 +166,6 @@ msgstr ""
 "göra dokumentationen bättre genom att meddela oss!"
 
 #: ../../docs/index.rst:46
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -177,19 +176,16 @@ msgstr ""
 "Skicka in issues och pull requests till vår `GitHub repository <https://"
 "github.com/godotengine/godot-docs/issues>` _, hjälp oss `översätta "
 "dokumentationen <https://hosted.weblate.org/engage/godot-engine/>`_ till "
-"ditt språk, eller diskutera med oss på ``#documentation``-kanalen på "
-"`Discord <https://discord.gg/zH7NUgz>`_, eller på kanalen ``#godotengine-"
-"doc`` på `irc.freenode.net <http://webchat.freenode.net/?"
-"channels=#godotengine-doc>`_!"
+"ditt språk, eller diskutera med oss på ``#documentation``-kanalen på `Godot "
+"Contributors Chat <https://chat.godotengine.org/>`_!"
 
 #: ../../docs/index.rst:55
 msgid "weblate_widget"
 msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "Översättningsstatus"
+msgstr "Status för översättning"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -441,15 +437,14 @@ msgid "Organization of the documentation"
 msgstr "Dokumentationens organisation"
 
 #: ../../docs/about/introduction.rst:79
-#, fuzzy
 msgid ""
 "This documentation is organized in five sections with an impressively "
 "unbalanced distribution of contents – but the way it is split up should be "
 "relatively intuitive:"
 msgstr ""
-"Denna manual är organiserad i fem delar med en imponerande obalanserad "
-"fördelning av innehåll – men sättet som den är indelad borde vara lätt att "
-"förstå:"
+"Denna dokumentation är organiserad i fem delar med en imponerande "
+"obalanserad fördelning av innehåll – men sättet som den är uppdelad på borde "
+"vara lätt att förstå:"
 
 #: ../../docs/about/introduction.rst:83
 msgid ""
@@ -566,12 +561,11 @@ msgid "In short:"
 msgstr "Kort sagt:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
-"Du får ladda ner och använda Godot för alla ändamål, personligt, ideellt, "
+"Du får ladda ner och använda Godot för alla ändamål: personligt, ideellt, "
 "kommersiellt eller annat."
 
 #: ../../docs/about/faq.rst:17
@@ -663,14 +657,12 @@ msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:41
-#, fuzzy
 msgid ":ref:`Web <doc_using_the_web_editor>`"
-msgstr "Android"
+msgstr ":ref:`Web <doc_using_the_web_editor>``"
 
 #: ../../docs/about/faq.rst:42
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Android"
+msgstr "Android (experimentellt)"
 
 #: ../../docs/about/faq.rst:44
 msgid "**For exporting your games:**"
@@ -780,7 +772,6 @@ msgstr ""
 "din felsökning på."
 
 #: ../../docs/about/faq.rst:87
-#, fuzzy
 msgid ""
 "As for new languages, support is possible via third parties using the "
 "GDNative / NativeScript / PluginScript facilities. (See the question about "
@@ -788,18 +779,17 @@ msgid ""
 "bindings for Godot to `Python <https://github.com/touilleMan/godot-python>`_ "
 "and `Nim <https://github.com/pragmagic/godot-nim>`_."
 msgstr ""
-"Vad gäller nya språk, det är möjligt med stöd av tredje part genom att "
-"använda GDNative / NativeScript / PluginScript facilities. (Se frågan om "
-"plugins nedan.) Det jobbas på det, till exempel en Godot to `Python <https://"
-"github.com/touilleMan/godot-python>`_ och `Nim <https://github.com/pragmagic/"
-"godot-nim>`_."
+"Stöd för nya språk är möjligt via tredje part genom att använda GDNative / "
+"NativeScript / PluginScript facilities. (Se frågan om plugins nedan.) Mera "
+"stöd jobbas på, till exempel en Godot till `Python <https://github.com/"
+"touilleMan/godot-python>`_ och `Nim <https://github.com/pragmagic/godot-"
+"nim>`_."
 
 #: ../../docs/about/faq.rst:95
 msgid "What is GDScript and why should I use it?"
 msgstr "Vad är GDScript och varför bör jag använda det?"
 
 #: ../../docs/about/faq.rst:97
-#, fuzzy
 msgid ""
 "GDScript is Godot's integrated scripting language. It was built from the "
 "ground up to maximize Godot's potential in the least amount of code, "
@@ -814,11 +804,10 @@ msgstr ""
 "nybörjare och experter att utnyttja Godots styrkor så snabbt som möjligt. Om "
 "du någonsin har skrivit kod i ett språk som liknar Python kommer du att "
 "känna dig som hemma. För att se exempel, historia och en komplett översikt "
-"över styrkan som GDScript erbjuder dig, kolla in `GDScript skripting-guide "
-"<gdscript_basics>`_."
+"över styrkan som GDScript erbjuder dig, kolla in :ref:`GDScript scripting "
+"guide <doc_gdscript>`."
 
 #: ../../docs/about/faq.rst:104
-#, fuzzy
 msgid ""
 "There are several reasons to use GDScript--especially when you are "
 "prototyping, in alpha/beta stages of your project, or are not creating the "
@@ -826,9 +815,9 @@ msgid ""
 "complexity**."
 msgstr ""
 "Det finns flera anledningar till värför du bör använda GDScript - speciellt "
-"när du skapar prototyper, är i tidigt stadium att ditt projekt, eller inte "
-"gör nästa AAA titel - men det mest framträdande anledningen är **minskningen "
-"av komplexitet.**"
+"när du skapar prototyper, är i ett tidigt stadium av ditt projekt, eller "
+"inte gör nästa AAA titel - men den mest framträdande anledningen är "
+"**minskningen av komplexitet**."
 
 #: ../../docs/about/faq.rst:108
 #, fuzzy
@@ -1132,6 +1121,9 @@ msgid ""
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
 msgstr ""
+"Dra den extraherade Godot applikationen till ``/Applications/Godot.app``, "
+"dra sedan den till \"Dock\" om önskat. \"Spotlight\" kommer kunna hitta "
+"Godot så länge det är i ``/Applications`` eller ``~/Applications``."
 
 #: ../../docs/about/faq.rst:220
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
@@ -1804,7 +1796,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:484
 msgid "Why does Godot not use STL (Standard Template Library)?"
-msgstr ""
+msgstr "Varför använder inte Godot STL(Standard Template Library)?"
 
 #: ../../docs/about/faq.rst:486
 msgid ""
@@ -1838,6 +1830,8 @@ msgid ""
 "For large arrays, we use pooled memory, which can be mapped to either a "
 "preallocated buffer or virtual memory."
 msgstr ""
+"För stora listorm använder vi samlat minne, vilket kan be kartlagt till "
+"antingen en för-lokaliserad buffer eller virtuelt minne."
 
 #: ../../docs/about/faq.rst:494
 msgid ""
@@ -3440,7 +3434,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:525
 msgid "Mobile"
-msgstr ""
+msgstr "Mobil"
 
 #: ../../docs/about/list_of_features.rst:527
 msgid "In-app purchases on Android and iOS."
@@ -3811,7 +3805,6 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
 #: ../../docs/tutorials/performance/index.rst:72
-#, fuzzy
 msgid "2D"
 msgstr "2D"
 
@@ -6799,7 +6792,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:351
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:113
 msgid "GDScript"
-msgstr ""
+msgstr "GDSkript"
 
 #: ../../docs/getting_started/step_by_step/scripting_languages.rst:71
 msgid ""
@@ -7497,9 +7490,8 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:6
 #: ../../docs/tutorials/scripting/instancing_with_signals.rst:1
-#, fuzzy
 msgid "Signal"
-msgstr "Signaler"
+msgstr "Signal"
 
 #: ../../docs/getting_started/step_by_step/signals.rst:12
 #, fuzzy
@@ -16098,7 +16090,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Transparent"
-msgstr ""
+msgstr "Genomskinlig"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:42
 msgid ""
@@ -19357,7 +19349,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_scenes.rst:199
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/material.rst:2
 msgid "Materials"
-msgstr ""
+msgstr "Material"
 
 #: ../../docs/tutorials/3d/using_gridmaps.rst:62
 msgid ""
@@ -32450,7 +32442,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:49
 msgid "Reopen Closed Scene"
-msgstr ""
+msgstr "Öppna stängd scen"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:49
 #: ../../docs/tutorials/editor/default_key_mapping.rst:319
@@ -32500,7 +32492,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:55
 msgid "Save All Scenes"
-msgstr ""
+msgstr "Spara alla Scener"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:55
 #: ../../docs/tutorials/editor/default_key_mapping.rst:323
@@ -32848,7 +32840,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:104
 #: ../../docs/tutorials/editor/default_key_mapping.rst:167
 msgid "Move Mode"
-msgstr ""
+msgstr "Flyttläge"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:104
 #: ../../docs/tutorials/editor/default_key_mapping.rst:153
@@ -32864,7 +32856,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:106
 #: ../../docs/tutorials/editor/default_key_mapping.rst:169
 msgid "Rotate Mode"
-msgstr ""
+msgstr "Roteringsläge"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:106
 #: ../../docs/tutorials/editor/default_key_mapping.rst:157
@@ -32879,7 +32871,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:108
 #: ../../docs/tutorials/editor/default_key_mapping.rst:171
 msgid "Scale Mode"
-msgstr ""
+msgstr "Skalningsläge"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:108
 #: ../../docs/tutorials/editor/default_key_mapping.rst:155
@@ -33308,7 +33300,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:191
 msgid "Switch Perspective/Orthogonal View"
-msgstr ""
+msgstr "Ändra perspektiv/Ortogonal vy"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:191
 msgid ":kbd:`Num 5`"
@@ -33385,9 +33377,8 @@ msgid "``spatial_editor/align_rotation_with_view``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:203
-#, fuzzy
 msgid "1 Viewport"
-msgstr "exportera"
+msgstr "1 vy"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:203
 msgid ":kbd:`Ctrl + 1`"
@@ -33403,7 +33394,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:205
 msgid "2 Viewports"
-msgstr ""
+msgstr "2 vyer"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:205
 msgid ":kbd:`Ctrl + 2`"
@@ -33419,7 +33410,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:207
 msgid "2 Viewports (Alt)"
-msgstr ""
+msgstr "2 vyer (Alt)"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:207
 msgid ":kbd:`Ctrl + Alt + 2`"
@@ -33435,7 +33426,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:209
 msgid "3 Viewports"
-msgstr ""
+msgstr "3 vyer"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:209
 msgid ":kbd:`Ctrl + 3`"
@@ -33451,7 +33442,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:211
 msgid "3 Viewports (Alt)"
-msgstr ""
+msgstr "3 vyer (Alt)"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:211
 msgid ":kbd:`Ctrl + Alt + 3`"
@@ -33467,7 +33458,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:213
 msgid "4 Viewports"
-msgstr ""
+msgstr "4 vyer"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:213
 msgid ":kbd:`Ctrl + 4`"
@@ -33630,9 +33621,8 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:236
 #: ../../docs/tutorials/editor/default_key_mapping.rst:309
-#, fuzzy
 msgid "Find in Files"
-msgstr "Android"
+msgstr "Sök i filer"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:236
 #: ../../docs/tutorials/editor/default_key_mapping.rst:309
@@ -33889,7 +33879,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:272
 msgid "Convert Indent to Tabs"
-msgstr ""
+msgstr "Konvertera indentering till tabbar"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:272
 msgid ":kbd:`Ctrl + Shift + I`"
@@ -34366,7 +34356,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:375
 #: ../../docs/tutorials/editor/default_key_mapping.rst:507
 msgid "Copy Selection"
-msgstr ""
+msgstr "Kopiera urval"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:375
 msgid "``editor/copy_output``"
@@ -34383,7 +34373,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:381
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:14
 msgid "Debugger"
-msgstr ""
+msgstr "Avlusare"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:386
 msgid "Step Into"
@@ -34573,7 +34563,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:425
 msgid "FileSystem Dock"
-msgstr ""
+msgstr "FilSystems panel"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:430
 msgid "Copy Path"
@@ -41413,7 +41403,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:464
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../../docs/tutorials/i18n/locales.rst:464
 msgid "Malay"
@@ -43956,7 +43946,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:74
 msgid "Default"
-msgstr ""
+msgstr "Standard"
 
 #: ../../docs/tutorials/io/data_paths.rst:0
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
@@ -48615,11 +48605,11 @@ msgstr "Gemenskap"
 
 #: ../../docs/tutorials/performance/index.rst:53
 msgid "CPU"
-msgstr ""
+msgstr "PROCESSOR"
 
 #: ../../docs/tutorials/performance/index.rst:62
 msgid "GPU"
-msgstr ""
+msgstr "GPU"
 
 #: ../../docs/tutorials/performance/general_optimization.rst:4
 #, fuzzy
@@ -50726,9 +50716,8 @@ msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
 #: ../../docs/tutorials/performance/batching.rst:298
-#, fuzzy
 msgid "Project Settings"
-msgstr "Komma igång"
+msgstr "Projektinställningar"
 
 #: ../../docs/tutorials/performance/batching.rst:300
 msgid ""
@@ -56807,9 +56796,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "value"
-msgstr "Värde"
+msgstr "värde"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:228
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:35
@@ -60846,7 +60834,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:17
 msgid "History"
-msgstr ""
+msgstr "Historik"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:21
 msgid ""
@@ -61234,7 +61222,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:297
 msgid "Operators"
-msgstr ""
+msgstr "Operatorer"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
@@ -61637,7 +61625,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:387
 msgid "Backspace"
-msgstr ""
+msgstr "Backsteg"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:389
 msgid "``\\f``"
@@ -63322,7 +63310,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:4
 msgid "GDScript exports"
-msgstr ""
+msgstr "GDScript exporter"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:7
 #, fuzzy
@@ -65929,7 +65917,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Konstruktör"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -67264,7 +67252,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:318
 msgid "Variant"
-msgstr ""
+msgstr "Variant"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:320
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
@@ -69403,7 +69391,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:87
 msgid "Monitors"
-msgstr ""
+msgstr "Skärmar"
 
 #: ../../docs/tutorials/scripting/debug/debugger_panel.rst:89
 msgid ""
@@ -74119,7 +74107,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
 msgid "Built-in"
-msgstr ""
+msgstr "Inbyggt"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343

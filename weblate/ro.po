@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Adrian Paun <adipaun97@protonmail.com>, 2018.
+# Alexandra Moroz <allemoroz14@gmail.com>, 2023.
 # Andres Ene <grassiscomplex420@gmail.com>, 2022.
 # arydevy <arydev7@gmail.com>, 2020.
 # Calin Sopterean <csopterean@gmail.com>, 2018.
@@ -13,14 +14,19 @@
 # FlooferLand <yunaflarf@gmail.com>, 2022.
 # Gigel2 <mihalacher02@gmail.com>, 2020.
 # Grigore Antoniuc <grisa181@gmail.com>, 2018.
+# Hash Volt[ing] <hashvolting@gmail.com>, 2023.
 # Ilie Adrian Avramescu <himark1977@protonmail.com>, 2022.
+# Iustin Ivan <iustinivan2002@gmail.com>, 2023.
 # Levente Szalontai <szalontai.levente@gmail.com>, 2021.
 # Marincia Cătălin <catalinmarincia@gmail.com>, 2020.
 # N3mEee <n3mebusiness@gmail.com>, 2021.
+# omoNattie <omonattie@gmail.com>, 2023.
 # Psynt <nichita@cadvegra.com>, 2022.
 # Random Videos <istudordanadenis@gmail.com>, 2023.
+# RaresX22 <raresadv22@gmail.com>, 2023.
 # Rotated <rotated.dev@gmail.com>, 2022.
 # sebiTCR <Ssebi832@outlook.com>, 2022.
+# sergiu017 <sergiu.birou@gmail.com>, 2023.
 # Teodor <teo.virghi@yahoo.ro>, 2020.
 #
 msgid ""
@@ -28,8 +34,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2023-01-17 13:55+0000\n"
-"Last-Translator: Random Videos <istudordanadenis@gmail.com>\n"
+"PO-Revision-Date: 2023-09-15 00:04+0000\n"
+"Last-Translator: Alexandra Moroz <allemoroz14@gmail.com>\n"
 "Language-Team: Romanian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/ro/>\n"
 "Language: ro\n"
@@ -38,9 +44,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
 "20)) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: ../../docs/index.rst:58
+#, fuzzy
 msgid "General"
 msgstr "General"
 
@@ -495,7 +502,6 @@ msgstr ""
 "engine-ului,dezvoltarea modulelor C++ sau plugin-urilor pentru editor."
 
 #: ../../docs/about/introduction.rst:96
-#, fuzzy
 msgid ""
 "The :ref:`sec-community` section gives information related to contributing "
 "to engine development and the life of its community, e.g. how to report "
@@ -505,7 +511,7 @@ msgid ""
 msgstr ""
 "Secțiunea :ref:`sec-community` oferă informații in legatură cu contribuțiile "
 "făcute la dezvotarea engine-ului si la vitalitatea comunității ca de "
-"exemplu: cum să reportezi buguri,stadiul documentației și așa mai departe."
+"exemplu: cum să reportezi buguri,stadiul documentației și așa mai departe. "
 "Aceasta mai oferă si link-uri catre diferite canale IRC si Discord ale "
 "comunitații si conține o listă de tutoriale third-party recomandate aflate "
 "in afara documentației."
@@ -1938,7 +1944,7 @@ msgstr "Cum pot sprijini dezvoltarea Godot sau contribui la ea?"
 
 #: ../../docs/about/faq.rst:538
 msgid "See :ref:`doc_ways_to_contribute`."
-msgstr ""
+msgstr "Vezi :ref:`doc_ways_to_contribute`."
 
 #: ../../docs/about/faq.rst:541
 msgid "Who is working on Godot? How can I contact you?"
@@ -1961,13 +1967,15 @@ msgstr ""
 #: ../../docs/development/compiling/compiling_with_script_encryption_key.rst:73
 #: ../../docs/development/editor/creating_icons.rst:92
 msgid "Troubleshooting"
-msgstr ""
+msgstr "Depanare"
 
 #: ../../docs/about/troubleshooting.rst:6
 msgid ""
 "This page lists common issues encountered when using Godot and possible "
 "solutions."
 msgstr ""
+"Această pagină conține problemele comune întampinate folosind Godot si "
+"soluții posibile."
 
 #: ../../docs/about/troubleshooting.rst:10
 msgid ""
@@ -1982,6 +1990,8 @@ msgid ""
 "Everything I do in the editor or project manager appears delayed by one "
 "frame."
 msgstr ""
+"Tot ce fac în editor sau în managerul de proiect apare cu o întarziere de un "
+"cadru."
 
 #: ../../docs/about/troubleshooting.rst:16
 msgid ""
@@ -2067,6 +2077,8 @@ msgid ""
 "To solve this, select the system console window and press Enter to leave "
 "selection mode."
 msgstr ""
+"Pentru a rezolva, selectează fereastra consolă de sistem și apasă Enter "
+"pentru a ieși din modul de selecție."
 
 #: ../../docs/about/troubleshooting.rst:65
 msgid ""
@@ -2094,7 +2106,7 @@ msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:76
 msgid "The project window appears blurry, unlike the editor."
-msgstr ""
+msgstr "Fereastra de proiect se vede în ceață, spre deosebire de editor."
 
 #: ../../docs/about/troubleshooting.rst:78
 msgid ""
@@ -2149,9 +2161,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:4
-#, fuzzy
 msgid "List of features"
-msgstr "Capturează"
+msgstr "Listă de caracteristici"
 
 #: ../../docs/about/list_of_features.rst:6
 msgid "This page aims to list all features currently supported by Godot."
@@ -4126,7 +4137,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/cpu_optimization.rst:246
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "Cadru Fizic"
 
 #: ../../docs/about/docs_changelog.rst:149
 msgid ":ref:`doc_ragdoll_system`"
@@ -6141,9 +6152,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
-#, fuzzy
 msgid "Nodes and Scenes"
-msgstr "Deschide o scenă"
+msgstr "Noduri și scene"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -16140,7 +16150,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Transparent"
-msgstr ""
+msgstr "Transparent"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:42
 msgid ""
@@ -17771,7 +17781,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:81
 msgid "Reflections"
-msgstr ""
+msgstr "Reflecții"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:83
 msgid ""
@@ -18123,7 +18133,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:177
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:47
 msgid "Disabled"
-msgstr ""
+msgstr "Dezactivat"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:179
 msgid ""
@@ -18206,6 +18216,7 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:230
+#, fuzzy
 msgid "Baking"
 msgstr "Coacere"
 
@@ -32621,6 +32632,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:63
 #: ../../docs/tutorials/editor/default_key_mapping.rst:242
+#, fuzzy
 msgid "Undo"
 msgstr "Revenire"
 
@@ -32640,6 +32652,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:65
 #: ../../docs/tutorials/editor/default_key_mapping.rst:244
+#, fuzzy
 msgid "Redo"
 msgstr "Reîntoarcere"
 
@@ -33546,7 +33559,7 @@ msgstr "Editor"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
-msgstr ""
+msgstr "Tăiere"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 #: ../../docs/tutorials/editor/default_key_mapping.rst:354
@@ -33566,7 +33579,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:224
 msgid "Copy"
-msgstr "Copiază"
+msgstr "Copiaza"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:224
 #: ../../docs/tutorials/editor/default_key_mapping.rst:352
@@ -33592,7 +33605,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:226
 msgid "Paste"
-msgstr ""
+msgstr "Lipește"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:226
 #: ../../docs/tutorials/editor/default_key_mapping.rst:356
@@ -33707,7 +33720,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:238
 msgid "Replace"
-msgstr ""
+msgstr "Înlocuiți"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:238
 #: ../../docs/tutorials/editor/default_key_mapping.rst:364
@@ -34251,7 +34264,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:331
 msgid "Close"
-msgstr "Aproape"
+msgstr "Închide"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:331
 msgid ":kbd:`Ctrl + W`"
@@ -35020,9 +35033,8 @@ msgid "``tileset_editor/editmode_priority``"
 msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:534
-#, fuzzy
 msgid "Icon Mode"
-msgstr "Animație"
+msgstr "Modul pictogramă"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:534
 msgid ":kbd:`7`"
@@ -56859,9 +56871,8 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:207
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
-#, fuzzy
 msgid "function"
-msgstr "Funcții"
+msgstr "funcţie"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 msgid ":js:attr:`onExecute`"
@@ -61249,7 +61260,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:199
 msgid "yield"
-msgstr ""
+msgstr "Randament"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:199
 msgid "Coroutine support. See `Coroutines with yield`_."
@@ -61286,7 +61297,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:207
 msgid "puppet"
-msgstr ""
+msgstr "marionetă"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:209
 msgid "remotesync"
@@ -61336,7 +61347,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:297
 msgid "Operators"
-msgstr ""
+msgstr "Operatori"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
@@ -61737,8 +61748,9 @@ msgid "``\\b``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:387
+#, fuzzy
 msgid "Backspace"
-msgstr ""
+msgstr "Înapoi"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:389
 msgid "``\\f``"
@@ -66085,7 +66097,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:452
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:328
 msgid "Yield"
-msgstr ""
+msgstr "Randament"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:454
 msgid ""

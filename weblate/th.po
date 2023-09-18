@@ -8,9 +8,12 @@
 # Gunthee Tawewatmongkol <sirarat.t@ku.th>, 2019.
 # Kanda Ninthfish <akkhaporn@gmail.com>, 2022.
 # Kongfa Warorot <gongpha@hotmail.com>, 2020-2021.
+# LadsForTea <jajasamag@gmail.com>, 2023.
 # Poommetee Ketson <poommetee@protonmail.com>, 2018.
+# Ratthasorn Thassana <ratthasorn.thassana@gmail.com>, 2023.
 # Sanhaphat Srijumpa <fluke031@hotmail.com>, 2020.
-# SysError_ <ictsanook@hotmail.com>, 2021.
+# Satakun Utama <galaxytomostore@gmail.com>, 2023.
+# SysError_ <ictsanook@hotmail.com>, 2021, 2023.
 # Thanachart Monpassorn <nunf_2539@hotmail.com>, 2020-2021.
 # Tharawut P <xcession@gmail.com>, 2021.
 #
@@ -19,8 +22,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2022-11-26 14:36+0000\n"
-"Last-Translator: Absurdnoobman <jakkalin91@gmail.com>\n"
+"PO-Revision-Date: 2023-09-18 08:20+0000\n"
+"Last-Translator: Ratthasorn Thassana <ratthasorn.thassana@gmail.com>\n"
 "Language-Team: Thai <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/th/>\n"
 "Language: th\n"
@@ -28,7 +31,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.15-dev\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -60,9 +63,8 @@ msgid "Class reference"
 msgstr "อ้างอิงคลาส"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "เอกสาร Godot – branch *3.3*"
+msgstr "คู่มือ Godot – branch *3.3*"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -97,6 +99,8 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"ในขณะนี้การแปลมีเฉพาะ branch \"latest\" (development) เท่านั้น แต่ก็สามารถใช้เรียนรู้ "
+"Godot รุ่น stable ได้อย่างไม่มีปัญหา"
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -126,6 +130,10 @@ msgid ""
 "offline reading (updated every Monday). Extract the ZIP archive then open "
 "the top-level ``index.html`` in a web browser."
 msgstr ""
+"คุณสามารถดาวน์โหลดสำเนา HTML <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ "
+"เพื่ออ่านแบบออฟไลน์ (อัปเดตทุกวันจันทร์) โดยแตกไฟล์ ZIP แล้วเปิด ``index.html`` "
+"ด้วยเว็บเบราว์เซอร์"
 
 #: ../../docs/index.rst:39
 msgid ""
@@ -291,6 +299,8 @@ msgid ""
 "video tutorials contributed by the community. If you prefer video to text, "
 "those may be worth a look."
 msgstr ""
+"หน้า :ref:`Tutorials และ resources <doc_community_tutorials>` รายชื่อ tutorials "
+"วิดีโอที่มาจากชุมชน หากคุณชอบวิดีโอมากกว่าข้อความ คุณอาจสนใจดูบทเรียนเหล่านี้"
 
 #: ../../docs/about/introduction.rst:27
 msgid ""
@@ -298,6 +308,10 @@ msgid ""
 "find help on the various :ref:`Community channels <doc_community_channels>`, "
 "especially the Godot Discord community, Q&A, and IRC."
 msgstr ""
+"หากคุณมีปัญหาในการทำตาม tutorials หรือมีปัญหาในโปรเจกต์ของคุณ "
+"คุณสามารถหาความช่วยเหลือได้ที่ช่องทางต่าง ๆ ของชุมชน :ref:`ช่องทางชุมชน "
+"<doc_community_channels>` โดยเฉพาะ Godot Discord, Q&A และ IRC "
+"จะเป็นที่เหมาะสมในการหาความช่วยเหลือ"
 
 #: ../../docs/about/introduction.rst:32
 msgid "About Godot Engine"
@@ -521,6 +535,8 @@ msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
 msgstr ""
+"คุณสามารถดาวน์โหลดและใช้ Godot สำหรับวัตถุประสงค์ใดก็ได้: ส่วนตัว, ไม่แสวงผลกำไร, "
+"เชิงพาณิชย์หรือวัตถุประสงค์อื่น ๆ"
 
 #: ../../docs/about/faq.rst:17
 #, fuzzy
@@ -660,6 +676,8 @@ msgid ""
 "Some users also report building and using Godot successfully on ARM-based "
 "systems with Linux, like the Raspberry Pi."
 msgstr ""
+"ผู้ใช้บางส่วนยังรายงานว่าประสบความสำเร็จในการสร้างและใช้ Godot บนระบบที่ใช้เทคโนโลยี ARM "
+"พร้อมกับระบบปฏิบัติการ Linux เช่น Raspberry Pi ได้"
 
 #: ../../docs/about/faq.rst:59
 #, fuzzy
@@ -704,6 +722,12 @@ msgid ""
 "Viable Products (MVPs), and focusing on Time-To-Market (TTM), GDScript will "
 "provide a fast, friendly, and capable way of developing your games."
 msgstr ""
+"หากคุณเพิ่งเริ่มต้นใช้ Godot หรือเพิ่งเริ่มต้นในการพัฒนาเกม เราขอแนะนำให้เรียนรู้และใช้ภาษา "
+"GDScript เนื่องจากเป็นภาษา native ของ Godot "
+"ถึงแม้ว่าภาษาสคริปต์มักจะมีประสิทธิภาพที่ต่ำกว่าภาษาแบบ lower-level ในระยะยาว "
+"แต่สำหรับการทำ prototyping, การพัฒนาแบบ Minimum Viable Products (MVP), "
+"และการใส่โฟกัสในการทำตลาดแบบ Time-To-Market (TTM) นั้น ภาษา GDScript "
+"จะช่วยให้การพัฒนาเกมของคุณเป็นไปอย่างรวดเร็ว ใช้งานง่าย และมีประสิทธิภาพ"
 
 #: ../../docs/about/faq.rst:80
 msgid ""
@@ -715,6 +739,11 @@ msgid ""
 "github.com/godotengine/godot/issues>`_ is a great way to start your "
 "troubleshooting."
 msgstr ""
+"โปรดทราบว่าการสนับสนุนภาษา C# ยังคงเป็นเรื่องใหม่ "
+"และอาจพบปัญหาบางอย่างในระหว่างการใช้งาน ชุมชนนักพัฒนาของ Godot "
+"ยินดีต้อนรับเสมอในการแก้ปัญหาใหม่เมื่อเกิดขึ้น แต่เนื่องจากนี่เป็นโครงการโอเพนซอร์ส "
+"เราแนะนำให้คุณทำความเข้าใจเองก่อน ค้นหาผ่านการอภิปรายใน `open issues <https://"
+"github.com/godotengine/godot/issues>`_ เป็นวิธีที่ดีในการเริ่มปัญหาที่คุณพบในการใช้งาน"
 
 #: ../../docs/about/faq.rst:87
 #, fuzzy
@@ -730,7 +759,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:95
 msgid "What is GDScript and why should I use it?"
-msgstr ""
+msgstr "GDScript คืออะไรและทำไมฉันควรใช้มัน?"
 
 #: ../../docs/about/faq.rst:97
 msgid ""
@@ -742,6 +771,12 @@ msgid ""
 "and a complete overview of the power GDScript offers you, check out the :ref:"
 "`GDScript scripting guide <doc_gdscript>`."
 msgstr ""
+"GDScript คือภาษาสคริปต์ที่ใช้ใน Godot ภาษานี้ถูกสร้างขึ้นมาเพื่อให้สามารถใช้ประสิทธิภาพของ "
+"Godot ให้ได้มากที่สุดด้วยการเขียนโค้ดที่น้อยที่สุด "
+"ทำให้นักพัฒนาทั้งมือใหม่และมือโปรใช้ประโยชน์จากจุดแข็งของ Godot ให้ได้เร็วที่สุด "
+"หากคุณเคยเขียนโค้ดในภาษาอย่าง Python มาก่อน คุณจะรู้สึกคุ้นเคยเมื่อใช้ GDScript "
+"สำหรับตัวอย่าง ประวัติ และภาพรวมที่ครบถ้วนเกี่ยวกับพลังของ GDScript คุณสามารถตรวจสอบได้ที่ :"
+"ref:`คู่มือสคริปต์ GDScript <doc_gdscript>`"
 
 #: ../../docs/about/faq.rst:104
 msgid ""
@@ -795,6 +830,12 @@ msgstr ""
 #: ../../docs/about/faq.rst:129
 msgid "What were the motivations behind creating GDScript?"
 msgstr ""
+"หากคุณเพิ่งเริ่มต้นใช้ Godot หรือเพิ่งเริ่มต้นในการพัฒนาเกม เราขอแนะนำให้เรียนรู้และใช้ภาษา "
+"GDScript  เนื่องจากเป็นภาษา native ของ Godot "
+"ถึงแม้ว่าภาษาสคริปต์มักจะมีประสิทธิภาพที่ต่ำกว่าภาษาแบบ lower-level ในระยะยาว "
+"แต่สำหรับการทำ prototyping, การพัฒนาแบบ Minimum Viable Products (MVP), "
+"และการใส่โฟกัสในการทำตลาดแบบ Time-To-Market (TTM)  นั้น ภาษา GDScript "
+"จะช่วยให้การพัฒนาเกมของคุณเป็นไปอย่างรวดเร็ว ใช้งานง่าย และมีประสิทธิภาพ"
 
 #: ../../docs/about/faq.rst:131
 msgid ""
@@ -3017,7 +3058,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:492
 #: ../../docs/about/docs_changelog.rst:45 ../../docs/tutorials/i18n/index.rst:2
 msgid "Internationalization"
-msgstr ""
+msgstr "ความเป็นสากล"
 
 #: ../../docs/about/list_of_features.rst:494
 msgid "Full support for Unicode including emoji."
@@ -3480,7 +3521,7 @@ msgstr ":ref:`doc_android_custom_build`"
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
 #: ../../docs/tutorials/performance/index.rst:72
 msgid "2D"
-msgstr "2D"
+msgstr "2 มิติ"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`doc_2d_sprite_animation`"
@@ -3725,7 +3766,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/index.rst:81
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:33
 msgid "3D"
-msgstr ""
+msgstr "3 มิติ"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_csg_tools`"
@@ -3743,7 +3784,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/cpu_optimization.rst:246
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "ฟิสิกส์"
 
 #: ../../docs/about/docs_changelog.rst:149
 msgid ":ref:`doc_ragdoll_system`"
@@ -3763,8 +3804,9 @@ msgid ":ref:`doc_animation_tree`"
 msgstr "ดูได้ที่ :ref:`doc_ways_to_contribute`"
 
 #: ../../docs/about/docs_changelog.rst:159
+#, fuzzy
 msgid "GUI"
-msgstr ""
+msgstr "GUI (จียูไอ)"
 
 #: ../../docs/about/docs_changelog.rst:161
 #, fuzzy
@@ -8816,9 +8858,8 @@ msgid "*Align* : \"Center\""
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:78
-#, fuzzy
 msgid "Message"
-msgstr "การใช้"
+msgstr "ข้อความ"
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:80
 msgid "*Layout* : \"HCenter Wide\""
@@ -13346,7 +13387,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/using_multi_mesh_instance.rst:87
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:220
 msgid "Scale"
-msgstr ""
+msgstr "ขนาด"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:288
 msgid "Determines the initial scale of the particles."
@@ -13402,7 +13443,7 @@ msgstr ""
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:327
 msgid "Emission Mask"
-msgstr ""
+msgstr "มาส์กการปะทุ"
 
 #: ../../docs/tutorials/2d/particle_systems_2d.rst:329
 msgid "Three types of emission masks can be generated from a texture:"
@@ -15762,7 +15803,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Transparent"
-msgstr ""
+msgstr "โปร่งใส"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:42
 msgid ""
@@ -17395,7 +17436,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:81
 msgid "Reflections"
-msgstr ""
+msgstr "การสะท้อน"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:83
 msgid ""
@@ -17832,7 +17873,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:230
 msgid "Baking"
-msgstr ""
+msgstr "คำณวณ"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:232
 msgid ""
@@ -20018,7 +20059,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:29
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr ""
+msgstr "ลำดับ"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:30
 msgid "Mesh.ArrayType Enum"
@@ -25319,7 +25360,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:57
 msgid "Compression"
-msgstr ""
+msgstr "การบีบอัด"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:59
 msgid ""
@@ -32266,7 +32307,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:65
 #: ../../docs/tutorials/editor/default_key_mapping.rst:244
 msgid "Redo"
-msgstr ""
+msgstr "ทำซ้ำ"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:65
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -32433,7 +32474,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:85
 msgid "Expand Bottom Panel"
-msgstr ""
+msgstr "ขยายแผงด้านล่าง"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:85
 msgid ":kbd:`Shift + F12`"
@@ -33172,7 +33213,7 @@ msgstr "เอดิเตอร์"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
-msgstr ""
+msgstr "ตัด"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 #: ../../docs/tutorials/editor/default_key_mapping.rst:354
@@ -33218,7 +33259,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:226
 msgid "Paste"
-msgstr ""
+msgstr "วาง"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:226
 #: ../../docs/tutorials/editor/default_key_mapping.rst:356
@@ -33236,7 +33277,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid "Select All"
-msgstr ""
+msgstr "เลือกทั้งหมด"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 #: ../../docs/tutorials/editor/default_key_mapping.rst:443
@@ -34199,7 +34240,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:434
 #: ../../docs/tutorials/editor/default_key_mapping.rst:449
 msgid "Delete"
-msgstr "ลบ"
+msgstr "ลบไปทางขวา"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:415
 msgid "``file_dialog/delete``"
@@ -34513,7 +34554,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid "Select"
-msgstr ""
+msgstr "เลือก"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid ":kbd:`M`"
@@ -34642,7 +34683,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:534
 msgid "Icon Mode"
-msgstr ""
+msgstr "โหมดรูปย่อ"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:534
 msgid ":kbd:`7`"
@@ -43653,7 +43694,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:74
 msgid "Default"
-msgstr ""
+msgstr "ค่าเริ่มต้น"
 
 #: ../../docs/tutorials/io/data_paths.rst:0
 #, fuzzy
@@ -44157,7 +44198,7 @@ msgstr "17"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:65
 msgid "object"
-msgstr ""
+msgstr "วัตถุ"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:67
 msgid "18"
@@ -44296,7 +44337,7 @@ msgstr "1: :ref:`bool<class_bool>`"
 #: ../../docs/tutorials/io/binary_serialization_api.rst:484
 #: ../../docs/tutorials/io/binary_serialization_api.rst:499
 msgid "Offset"
-msgstr ""
+msgstr "ออฟเซ็ต"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:102
 #: ../../docs/tutorials/io/binary_serialization_api.rst:113
@@ -48322,9 +48363,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/performance/index.rst:43
-#, fuzzy
 msgid "Common"
-msgstr "ชุมชน"
+msgstr "ทั่วไป"
 
 #: ../../docs/tutorials/performance/index.rst:53
 msgid "CPU"
@@ -51667,7 +51707,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/index.rst:2
 #: ../../docs/tutorials/rendering/viewports.rst:174
 msgid "Rendering"
-msgstr ""
+msgstr "การเรนเดอร์"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:55
 msgid ""
@@ -56537,7 +56577,6 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:0
-#, fuzzy
 msgid "value"
 msgstr "ค่า"
 
@@ -60741,7 +60780,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "class"
-msgstr "class"
+msgstr "คลาส"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "Defines an inner class."
@@ -60977,7 +61016,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:297
 msgid "Operators"
-msgstr ""
+msgstr "ตัวดำเนินการ"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
@@ -61382,7 +61421,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:387
 msgid "Backspace"
-msgstr ""
+msgstr "ลบไปทางซ้าย"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:389
 msgid "``\\f``"
@@ -65734,7 +65773,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "ตัวสร้าง"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -70202,7 +70241,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:34
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:302
 msgid "Operator"
-msgstr ""
+msgstr "ผู้ให้บริการ"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:34
 #: ../../docs/development/compiling/compiling_with_mono.rst:81
@@ -73955,7 +73994,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
 msgid "Built-in"
-msgstr ""
+msgstr "ตั้งให้เป็นสคริปต์แบบฝังโหนด"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343

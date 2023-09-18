@@ -10,6 +10,7 @@
 # Elias Vähänen <eliasvaha@gmail.com>, 2019.
 # Hannu Lammi <hpl@kapsi.fi>, 2022.
 # Joonas Muuttoranta <joonas.muuttoranta@live.fi>, 2018.
+# juho <juke.chest@gmail.com>, 2023.
 # Matti Niskanen <matti.t.niskanen@gmail.com>, 2020.
 # Nekromanser <ari.taitto@protonmail.com>, 2021.
 # Orange719 <hiedanpaaoskari@gmail.com>, 2020.
@@ -30,8 +31,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2022-10-22 09:01+0000\n"
-"Last-Translator: Hannu Lammi <hpl@kapsi.fi>\n"
+"PO-Revision-Date: 2023-09-15 00:04+0000\n"
+"Last-Translator: juho <juke.chest@gmail.com>\n"
 "Language-Team: Finnish <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/fi/>\n"
 "Language: fi\n"
@@ -39,7 +40,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.14.2-dev\n"
+"X-Generator: Weblate 5.0.1-dev\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -1051,6 +1052,7 @@ msgstr ""
 msgid ""
 "How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
+"Kuinka asennan Godot editorin järjestelmälleni (työpöytäintegrointia varten)?"
 
 #: ../../docs/about/faq.rst:191
 msgid ""
@@ -1069,6 +1071,8 @@ msgid ""
 "Alternatively, you can manually perform the steps that an installer would do "
 "for you:"
 msgstr ""
+"Vaihtoehtoisesti voit manuaalisesti tehdä asennuksen vaiheet, jotka asennus "
+"ohjelma tekisi puolestasi:"
 
 #: ../../docs/about/faq.rst:204
 msgid ""
@@ -1076,10 +1080,15 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Siirrä Godotin suoritustiedosto pysyvään sijaintiin (eli lataukset-kansion "
+"ulkopuolelle), jotta et siirrä sitä vahingossa ja riko pikakuvaketta "
+"tulevaisuudessa."
 
 #: ../../docs/about/faq.rst:206
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
 msgstr ""
+"Napsauta hiiren oikealla painikkeella Godotin suoritustiedostoa ja valitse "
+"**Luo pikakuvake**."
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -1088,6 +1097,11 @@ msgid ""
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Siirrä luotu pikakuvake sijaintiin ``%LOCALAPPDATA%"
+"\\Microsoft\\Windows\\Start Menu\\Programs``. Tämä on käyttäjä kohtainen "
+"sijainti pikakuvakkeille, jotka näkyvät Käynnistä-valikossa. Voit myös "
+"kiinnittää Godotin tehtäväpalkkiin napsauttamalla hiiren kakkospainikkeella "
+"suoritustiedostoa ja valitsemalla **Kiinnitä tehtäväpalkkiin**."
 
 #: ../../docs/about/faq.rst:215
 msgid ""

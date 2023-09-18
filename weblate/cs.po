@@ -2,20 +2,36 @@
 # Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Anonynonymouse <tom.spaine60388@gmail.com>, 2023.
+# ARez <dark.gaming@fantasymail.de>, 2023.
+# ‎ <artism90@googlemail.com>, 2023.
+# Benedikt Wicklein <benedikt.wicklein@gmail.com>, 2023.
+# Benno <bennocrafterdev@googlemail.com>, 2023.
+# DafabHoid <github@dafabhoid.de>, 2023.
 # Daniel <dan@ger.cz>, 2021.
 # Daniel Kříž <Daniel.kriz@protonmail.com>, 2020.
+# dasTholo <kaitholo@gmail.com>, 2023.
 # David Husička <davidek251@seznam.cz>, 2020.
 # David Kubeš <kubesdavid@email.cz>, 2019.
 # Dominik Strnad <domi.str@seznam.cz>, 2022.
+# Erik Mičulek <erikmiculek@gmail.com>, 2023.
+# Ettore Atalan <atalanttore@googlemail.com>, 2023.
+# Florian Baumer <florianbaumer98@gmail.com>, 2023.
+# Fynn Godau <fynngodau@mailbox.org>, 2023.
+# Haoyu Qiu <timothyqiu32@gmail.com>, 2023.
 # Jakub Janšta <jansta.ja@gmail.com>, 2021.
 # Jakub Smetana <kubiceks76@gmail.com>, 2018.
 # jakub zukal <jakubzukal@email.cz>, 2018.
+# Janosch Lion <janorico@posteo.de>, 2023.
 # JoeMoos <josephmoose13@gmail.com>, 2022.
 # Josef Kuchař <josef.kuchar267@gmail.com>, 2018.
 # kubajz22 <til.jakubesko@seznam.cz>, 2020.
+# Leon Marz <main@lmarz.org>, 2023.
 # Luboš Nečas <lubosnecas506@seznam.cz>, 2019.
 # markidak <markidak@gmail.com>, 2020.
 # Martin Novák <maidx@seznam.cz>, 2019.
+# marv1nb <marvin_baumann@outlook.com>, 2023.
+# Max Felder <felder_max@web.de>, 2023.
 # Mirinek <mirek.nozicka77@gmail.com>, 2022.
 # Miroslav Kotalík <mikotalik@seznam.cz>, 2019.
 # Ondrej Pavelka <ondrej.pavelka@outlook.com>, 2020.
@@ -23,13 +39,16 @@
 # ProfJack <profjackcz@gmail.com>, 2021.
 # Reiqy <kvetny.michal@gmail.com>, 2020.
 # SharpCat <mix9k846@gmail.com>, 2019.
+# So Wieso <sowieso@dukun.de>, 2023.
 # Václav Blažej <vaclavblazej@seznam.cz>, 2020.
 # Validbit <validbit@outlook.com>, 2020.
 # Vít Petričák <v.petricak@gmail.com>, 2018.
 # VladimirBlazek <vblazek042@gmail.com>, 2020.
 # Vladimír Machat <machat.v@gmail.com>, 2019.
 # VojtechBrezina <vojta.brezina@gmail.com>, 2020.
-# Vojtěch Šamla <auzkok@seznam.cz>, 2018-2020, 2022.
+# Vojtěch Šamla <auzkok@seznam.cz>, 2018-2020, 2022-2023.
+# Wuzzy <Wuzzy@disroot.org>, 2023.
+# YTNamenlos <ytnamenlos2@gmail.com>, 2023.
 # Zbyněk <zbynek.fiala@gmail.com>, 2020-2022.
 #
 msgid ""
@@ -37,8 +56,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2023-01-06 09:59+0000\n"
-"Last-Translator: Ondřej Pavelka <flamekick97@gmail.com>\n"
+"PO-Revision-Date: 2023-08-11 23:45+0000\n"
+"Last-Translator: Vojtěch Šamla <auzkok@seznam.cz>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/godot-engine/godot-"
 "docs/cs/>\n"
 "Language: cs\n"
@@ -46,11 +65,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
-msgstr "Všeobecné"
+msgstr "Obecné"
 
 #: ../../docs/index.rst:66
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:35
@@ -4562,9 +4581,8 @@ msgid "Q1 2023 (estimate)"
 msgstr ""
 
 #: ../../docs/about/release_policy.rst:91
-#, fuzzy
 msgid "|unstable| *Beta.* Current focus of development (unstable)."
-msgstr "|unstable| *Aktuální zaměření vývoje (nestabilní).*"
+msgstr "|unstable| *Beta.* Aktuální zaměření vývoje (nestabilní)."
 
 #: ../../docs/about/release_policy.rst:122
 msgid "unstable"
@@ -8488,13 +8506,12 @@ msgstr ""
 "používat jazyk C#, přečtěte si před pokračováním také :ref:`doc_c_sharp`."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:19
-#, fuzzy
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible."
 msgstr ""
 "Hra se jmenuje „Dodge the Creeps!“. Vaše postava se musí pohybovat a vyhýbat "
-"se nepřátelům tak dlouho, jak je to možné. Zde je náhled konečného výsledku:"
+"se nepřátelům tak dlouho, jak je to možné."
 
 #: ../../docs/getting_started/first_2d_game/index.rst:22
 #: ../../docs/getting_started/first_3d_game/index.rst:17
@@ -17013,7 +17030,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Transparent"
-msgstr ""
+msgstr "Průhledný"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:42
 msgid ""
@@ -21270,7 +21287,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:29
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:464
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 #: ../../docs/tutorials/3d/procedural_geometry/arraymesh.rst:30
 msgid "Mesh.ArrayType Enum"
@@ -23915,9 +23932,8 @@ msgstr ""
 "`."
 
 #: ../../docs/tutorials/3d/3d_text.rst:19
-#, fuzzy
 msgid "Label3D"
-msgstr "Labels (Popisky)."
+msgstr "Label3D"
 
 #: ../../docs/tutorials/3d/3d_text.rst:23
 msgid ""
@@ -43658,7 +43674,7 @@ msgstr ""
 
 #: ../../docs/tutorials/i18n/locales.rst:464
 msgid "ms"
-msgstr ""
+msgstr "ms"
 
 #: ../../docs/tutorials/i18n/locales.rst:464
 msgid "Malay"
@@ -46832,7 +46848,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:484
 #: ../../docs/tutorials/io/binary_serialization_api.rst:499
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:102
 #: ../../docs/tutorials/io/binary_serialization_api.rst:113
@@ -54305,7 +54321,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/index.rst:2
 #: ../../docs/tutorials/rendering/viewports.rst:174
 msgid "Rendering"
-msgstr ""
+msgstr "Vykreslování"
 
 #: ../../docs/tutorials/performance/threads/thread_safe_apis.rst:55
 msgid ""
@@ -69194,7 +69210,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Konstruktory"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:419
 msgid ""
@@ -72463,7 +72479,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/index.rst:2
 msgid "Debug"
-msgstr "Ladění"
+msgstr "Debug"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:4
 msgid "Overview of debugging tools"
@@ -73827,7 +73843,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:34
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:302
 msgid "Operator"
-msgstr ""
+msgstr "Operátor"
 
 #: ../../docs/tutorials/scripting/evaluating_expressions.rst:34
 #: ../../docs/development/compiling/compiling_with_mono.rst:81
@@ -77906,7 +77922,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
 msgid "Built-in"
-msgstr ""
+msgstr "Vestavěný"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343

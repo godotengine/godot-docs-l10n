@@ -2,15 +2,18 @@
 # Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Anatoly Brusnikov <retricus@gmail.com>, 2023.
 # Artem Aleksandrov <bitraydev@gmail.com>, 2022.
-# Maxim Valuy <maks.valui@gmail.com>, 2022.
+# Maxim Valuy <maks.valui@gmail.com>, 2022-2023.
+# mono <monodevx@gmail.com>, 2023.
+# Иван Иванов <vankadurak32@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.4\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2022-12-23 06:13+0000\n"
+"PO-Revision-Date: 2023-07-05 10:54+0000\n"
 "Last-Translator: Maxim Valuy <maks.valui@gmail.com>\n"
 "Language-Team: Belarusian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/be/>\n"
@@ -20,11 +23,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.1-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
-msgstr ""
+msgstr "Асноўнае"
 
 #: ../../docs/index.rst:66
 #: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:35
@@ -33,19 +36,20 @@ msgstr ""
 #: ../../docs/community/contributing/index.rst:15
 #: ../../docs/community/contributing/contributing_to_the_documentation.rst:15
 msgid "Getting started"
-msgstr ""
+msgstr "Пачатак працы"
 
 #: ../../docs/index.rst:78
+#, fuzzy
 msgid "Tutorials"
-msgstr ""
+msgstr "Урокі"
 
 #: ../../docs/index.rst:108
 msgid "Development"
-msgstr ""
+msgstr "Распрацоўка"
 
 #: ../../docs/index.rst:119
 msgid "Community"
-msgstr ""
+msgstr "Супольнасьць"
 
 #: ../../docs/index.rst:130
 msgid "Class reference"
@@ -82,6 +86,9 @@ msgid ""
 "\"latest\" (development) branch, but should be suitable to learn how to use "
 "stable Godot releases nevertheless."
 msgstr ""
+"На дадзены момант лакалізаваныя пераклады даступныя толькі для «апошняй» "
+"галіны (распрацоўкі), але тым не менш павінны быць прыдатнымі, каб навучыцца "
+"карыстацца стабільнымі версіямі Godot."
 
 #: ../../docs/index.rst:25
 msgid ""
@@ -131,7 +138,7 @@ msgstr ""
 
 #: ../../docs/<rst_epilog>:0
 msgid "Translation status"
-msgstr ""
+msgstr "Стан перакладу"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -227,7 +234,7 @@ msgstr ""
 #: ../../docs/community/contributing/best_practices_for_engine_contributors.rst:7
 #: ../../docs/community/asset_library/submitting_to_assetlib.rst:7
 msgid "Introduction"
-msgstr ""
+msgstr "Уводзіны"
 
 #: ../../docs/about/introduction.rst:11
 msgid ""
@@ -401,7 +408,7 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:1
 msgid "FAQ"
-msgstr ""
+msgstr "Пытаньне/Адказ"
 
 #: ../../docs/about/faq.rst:7 ../../docs/tutorials/performance/batching.rst:474
 #: ../../docs/community/asset_library/what_is_assetlib.rst:42
@@ -479,7 +486,7 @@ msgstr ""
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:59
 #: ../../docs/development/compiling/compiling_with_mono.rst:335
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../docs/about/faq.rst:39 ../../docs/about/faq.rst:47
 #: ../../docs/about/faq.rst:213
@@ -499,7 +506,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:516
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:84
 msgid "macOS"
-msgstr ""
+msgstr "macOS"
 
 #: ../../docs/about/faq.rst:40 ../../docs/about/faq.rst:48
 msgid "X11 (Linux, \\*BSD)"
@@ -527,18 +534,18 @@ msgstr ""
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:90
 #: ../../docs/development/compiling/compiling_with_mono.rst:327
 msgid "Android"
-msgstr ""
+msgstr "Android"
 
 #: ../../docs/about/faq.rst:50
 #: ../../docs/tutorials/export/exporting_basics.rst:382
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:96
 #: ../../docs/development/compiling/compiling_with_mono.rst:329
 msgid "iOS"
-msgstr ""
+msgstr "iOS"
 
 #: ../../docs/about/faq.rst:51
 msgid "Web"
-msgstr ""
+msgstr "Web"
 
 #: ../../docs/about/faq.rst:53
 msgid ""
@@ -1604,11 +1611,11 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:15
 msgid "Features"
-msgstr ""
+msgstr "Магчымасці"
 
 #: ../../docs/about/list_of_features.rst:18
 msgid "Platforms"
-msgstr ""
+msgstr "Платформы"
 
 #: ../../docs/about/list_of_features.rst:20
 msgid "**Can run both the editor and exported projects:**"
@@ -1672,7 +1679,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/external_editor.rst:34
 #: ../../docs/development/compiling/compiling_with_mono.rst:197
 msgid "Editor"
-msgstr ""
+msgstr "Рэдактар"
 
 #: ../../docs/about/list_of_features.rst:45
 #: ../../docs/about/list_of_features.rst:93
@@ -1748,7 +1755,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:71
 msgid "**Plugins:**"
-msgstr ""
+msgstr "**Плагіны:**"
 
 #: ../../docs/about/list_of_features.rst:73
 msgid ""
@@ -1965,7 +1972,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:166
 msgid "**Camera:**"
-msgstr ""
+msgstr "**Камера:**"
 
 #: ../../docs/about/list_of_features.rst:168
 msgid "Perspective, orthographic and frustum-offset cameras."
@@ -2178,7 +2185,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:242
 msgid "**Particles:**"
-msgstr ""
+msgstr "**Часцінкі:**"
 
 #: ../../docs/about/list_of_features.rst:245
 msgid "*GLES3:* GPU-based particles with support for custom particle shaders."
@@ -2361,7 +2368,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:325
 #: ../../docs/tutorials/shaders/index.rst:2
 msgid "Shaders"
-msgstr ""
+msgstr "Шэйдары"
 
 #: ../../docs/about/list_of_features.rst:327
 msgid "*2D:* Custom vertex, fragment, and light shaders."
@@ -2539,7 +2546,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/index.rst:2
 #: ../../docs/tutorials/export/exporting_for_web.rst:167
 msgid "Audio"
-msgstr ""
+msgstr "Аўдыё"
 
 #: ../../docs/about/list_of_features.rst:397
 msgid "Mono, stereo, 5.1 and 7.1 output."
@@ -2597,7 +2604,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:417
 msgid "Import"
-msgstr ""
+msgstr "Імпарт"
 
 #: ../../docs/about/list_of_features.rst:419
 msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
@@ -2605,7 +2612,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:421
 msgid "**Formats:**"
-msgstr ""
+msgstr "**Фарматы:**"
 
 #: ../../docs/about/list_of_features.rst:423
 msgid "*Images:* See :ref:`doc_import_images`."
@@ -2613,7 +2620,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:424
 msgid "*Audio:*"
-msgstr ""
+msgstr "*Аўдыё:*"
 
 #: ../../docs/about/list_of_features.rst:426
 msgid "WAV with optional IMA-ADPCM compression."
@@ -2625,7 +2632,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:428
 msgid "MP3."
-msgstr ""
+msgstr "MP3."
 
 #: ../../docs/about/list_of_features.rst:430
 msgid "*3D scenes:*"
@@ -2724,7 +2731,7 @@ msgstr ""
 #: ../../docs/about/list_of_features.rst:465
 #: ../../docs/tutorials/navigation/index.rst:2
 msgid "Navigation"
-msgstr ""
+msgstr "Навігацыя"
 
 #: ../../docs/about/list_of_features.rst:467
 msgid "A* algorithm in 2D and 3D."
@@ -2938,7 +2945,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:549
 msgid "Buttons."
-msgstr ""
+msgstr "Кнопкі."
 
 #: ../../docs/about/list_of_features.rst:550
 msgid "Checkboxes, check buttons, radio buttons."
@@ -2986,7 +2993,7 @@ msgstr ""
 
 #: ../../docs/about/list_of_features.rst:561
 msgid "**Sizing:**"
-msgstr ""
+msgstr "**Памеры:**"
 
 #: ../../docs/about/list_of_features.rst:563
 msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
@@ -3062,7 +3069,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/animation.rst:2
 #: ../../docs/development/file_formats/tscn.rst:382
 msgid "Animation"
-msgstr ""
+msgstr "Анімацыя"
 
 #: ../../docs/about/list_of_features.rst:593
 msgid "Direct kinematics and inverse kinematics."
@@ -3247,37 +3254,37 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:20
 msgid ":ref:`doc_android_custom_build`"
-msgstr ""
+msgstr ":ref:`doc_android_custom_build`"
 
 #: ../../docs/about/docs_changelog.rst:23
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
 #: ../../docs/tutorials/performance/index.rst:72
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`doc_2d_sprite_animation`"
-msgstr ""
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 #: ../../docs/about/docs_changelog.rst:30
 msgid ":ref:`doc_recording_with_microphone`"
-msgstr ""
+msgstr ":ref:`doc_recording_with_microphone`"
 
 #: ../../docs/about/docs_changelog.rst:31
 msgid ":ref:`doc_sync_with_audio`"
-msgstr ""
+msgstr ":ref:`doc_sync_with_audio`"
 
 #: ../../docs/about/docs_changelog.rst:34 ../../docs/tutorials/math/index.rst:2
 msgid "Math"
-msgstr ""
+msgstr "Матэматыка"
 
 #: ../../docs/about/docs_changelog.rst:36
 msgid ":ref:`doc_beziers_and_curves`"
-msgstr ""
+msgstr ":ref:`doc_beziers_and_curves`"
 
 #: ../../docs/about/docs_changelog.rst:37
 msgid ":ref:`doc_interpolation`"
-msgstr ""
+msgstr ":ref:`doc_interpolation`"
 
 #: ../../docs/about/docs_changelog.rst:40
 #: ../../docs/tutorials/inputs/index.rst:2
@@ -3290,7 +3297,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:47
 msgid ":ref:`doc_localization_using_gettext`"
-msgstr ""
+msgstr ":ref:`doc_localization_using_gettext`"
 
 #: ../../docs/about/docs_changelog.rst:50
 #: ../../docs/about/docs_changelog.rst:170
@@ -3304,57 +3311,58 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:53
 #: ../../docs/about/docs_changelog.rst:177
 msgid ":ref:`doc_introduction_to_shaders`"
-msgstr ""
+msgstr ":ref:`doc_introduction_to_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:54
 msgid ":ref:`doc_your_first_canvasitem_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_first_canvasitem_shader`"
 
 #: ../../docs/about/docs_changelog.rst:55
 msgid ":ref:`doc_your_first_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_first_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:56
 msgid ":ref:`doc_your_second_spatial_shader`"
-msgstr ""
+msgstr ":ref:`doc_your_second_spatial_shader`"
 
 #: ../../docs/about/docs_changelog.rst:57
 msgid ":ref:`doc_visual_shaders`"
-msgstr ""
+msgstr ":ref:`doc_visual_shaders`"
 
 #: ../../docs/about/docs_changelog.rst:62
 msgid ":ref:`doc_webrtc`"
-msgstr ""
+msgstr ":ref:`doc_webrtc`"
 
 #: ../../docs/about/docs_changelog.rst:65
 msgid "VR"
-msgstr ""
+msgstr "Віртуальная рэальнасць"
 
 #: ../../docs/about/docs_changelog.rst:67
 msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ""
+msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
 
 #: ../../docs/about/docs_changelog.rst:68
 msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ""
+msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
 
 #: ../../docs/about/docs_changelog.rst:71
 #: ../../docs/about/docs_changelog.rst:184
 #: ../../docs/tutorials/plugins/index.rst:2
 msgid "Plugins"
-msgstr ""
+msgstr "Плагіны"
 
 #: ../../docs/about/docs_changelog.rst:73
 msgid ":ref:`doc_android_plugin`"
-msgstr ""
+msgstr ":ref:`doc_android_plugin`"
 
 #: ../../docs/about/docs_changelog.rst:74
+#, fuzzy
 msgid ":ref:`doc_inspector_plugins`"
-msgstr ""
+msgstr ":ref:`doc_inspector_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:75
 msgid ":ref:`doc_visual_shader_plugins`"
-msgstr ""
+msgstr ":ref:`doc_visual_shader_plugins`"
 
 #: ../../docs/about/docs_changelog.rst:78
 #: ../../docs/about/docs_changelog.rst:195
@@ -3364,7 +3372,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:80
 msgid ":ref:`doc_using_multiple_threads`"
-msgstr ""
+msgstr ":ref:`doc_using_multiple_threads`"
 
 #: ../../docs/about/docs_changelog.rst:83
 #: ../../docs/about/docs_changelog.rst:200
@@ -3381,7 +3389,7 @@ msgstr ""
 
 #: ../../docs/about/docs_changelog.rst:87
 msgid ":ref:`doc_arraymesh`"
-msgstr ""
+msgstr ":ref:`doc_arraymesh`"
 
 #: ../../docs/about/docs_changelog.rst:88
 msgid ":ref:`doc_surfacetool`"
@@ -4596,7 +4604,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/gdnative/gdnative_cpp_example.rst:559
 #: ../../docs/development/cpp/object_class.rst:219
 msgid "Signals"
-msgstr ""
+msgstr "Сігналы"
 
 #: ../../docs/getting_started/introduction/key_concepts_overview.rst:72
 msgid ""
@@ -5513,7 +5521,7 @@ msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:6
 msgid "Nodes and Scenes"
-msgstr ""
+msgstr "Вузлы і Сцэны"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:8
 msgid ""
@@ -17658,7 +17666,7 @@ msgstr ""
 #: ../../docs/tutorials/audio/audio_buses.rst:114
 #: ../../docs/tutorials/rendering/viewports.rst:133
 msgid "Capture"
-msgstr ""
+msgstr "Захоп"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:327
 msgid ""
@@ -25084,7 +25092,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/converting_glsl_to_godot_shaders.rst:236
 #: ../../docs/tutorials/ui/bbcode_in_richtextlabel.rst:53
 msgid "Description"
-msgstr ""
+msgstr "Апісанне"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:86
 msgid "Stored as raw pixels"
@@ -27063,7 +27071,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/mesh.rst:2
 msgid "Mesh"
-msgstr ""
+msgstr "Палісетка"
 
 #: ../../docs/tutorials/assets_pipeline/escn_exporter/mesh.rst:5
 msgid "Modifiers"
@@ -31848,7 +31856,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:63
 #: ../../docs/tutorials/editor/default_key_mapping.rst:242
 msgid "Undo"
-msgstr ""
+msgstr "Скасаваць"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:63
 #: ../../docs/tutorials/editor/default_key_mapping.rst:242
@@ -31867,7 +31875,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:65
 #: ../../docs/tutorials/editor/default_key_mapping.rst:244
 msgid "Redo"
-msgstr ""
+msgstr "Вярнуць"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:65
 msgid ":kbd:`Ctrl + Shift + Z`"
@@ -32319,7 +32327,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid "Insert Key"
-msgstr ""
+msgstr "Увядзіце Клавішу"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:132
 msgid ":kbd:`Ins`"
@@ -32770,7 +32778,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 msgid "Cut"
-msgstr ""
+msgstr "Выразаць"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:222
 #: ../../docs/tutorials/editor/default_key_mapping.rst:354
@@ -32790,7 +32798,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:224
 msgid "Copy"
-msgstr ""
+msgstr "Капіяваць"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:224
 #: ../../docs/tutorials/editor/default_key_mapping.rst:352
@@ -32816,7 +32824,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:226
 msgid "Paste"
-msgstr ""
+msgstr "Уставіць"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:226
 #: ../../docs/tutorials/editor/default_key_mapping.rst:356
@@ -32834,7 +32842,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid "Select All"
-msgstr ""
+msgstr "Вылучыць усё"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 #: ../../docs/tutorials/editor/default_key_mapping.rst:443
@@ -33730,7 +33738,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:405
 msgid "Refresh"
-msgstr ""
+msgstr "Пералпдаваць"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:405
 msgid "``file_dialog/refresh``"
@@ -33792,7 +33800,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:434
 #: ../../docs/tutorials/editor/default_key_mapping.rst:449
 msgid "Delete"
-msgstr ""
+msgstr "Выдаліць"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:415
 msgid "``file_dialog/delete``"
@@ -34104,7 +34112,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid "Select"
-msgstr ""
+msgstr "Выбраць"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid ":kbd:`M`"
@@ -35319,7 +35327,7 @@ msgstr ""
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:44
 msgid "shaders"
-msgstr ""
+msgstr "шэйдары"
 
 #: ../../docs/tutorials/export/exporting_pcks.rst:45
 msgid "models"
@@ -43551,7 +43559,7 @@ msgstr ""
 #: ../../docs/tutorials/io/binary_serialization_api.rst:29
 #: ../../docs/tutorials/scripting/creating_script_templates.rst:147
 msgid "Value"
-msgstr ""
+msgstr "Значэнне"
 
 #: ../../docs/tutorials/io/binary_serialization_api.rst:31
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:346
@@ -48879,7 +48887,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:288
 #: ../../docs/tutorials/scripting/scene_tree.rst:33
 msgid "SceneTree"
-msgstr ""
+msgstr "Дрэва сцэн"
 
 #: ../../docs/tutorials/performance/cpu_optimization.rst:226
 msgid ""
@@ -55925,7 +55933,7 @@ msgstr ""
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:209
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:211
 msgid "function"
-msgstr ""
+msgstr "функцыя"
 
 #: ../../docs/tutorials/platform/html5_shell_classref.rst:203
 msgid ":js:attr:`onExecute`"
@@ -60775,7 +60783,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:387
 msgid "Backspace"
-msgstr ""
+msgstr "Сцерці"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:389
 msgid "``\\f``"
@@ -61166,7 +61174,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shaders_style_guide.rst:311
 #: ../../docs/development/cpp/object_class.rst:99
 msgid "Constants"
-msgstr ""
+msgstr "Канстанты"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:664
 msgid ""
@@ -64805,7 +64813,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:240
 msgid "Action"
-msgstr ""
+msgstr "Дзеянне"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:242
 msgid ""
@@ -66113,7 +66121,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:149
 msgid "Singletons"
-msgstr ""
+msgstr "Сінглтаны"
 
 #: ../../docs/tutorials/scripting/c_sharp/c_sharp_differences.rst:151
 msgid ""
@@ -73210,7 +73218,7 @@ msgstr ""
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:53
 #: ../../docs/tutorials/shaders/shader_reference/particle_shader.rst:65
 msgid "Built-in"
-msgstr ""
+msgstr "Убудаваны"
 
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:96
 #: ../../docs/tutorials/shaders/shader_reference/spatial_shader.rst:343

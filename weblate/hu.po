@@ -3,6 +3,7 @@
 # This file is distributed under the same license as the Godot Engine package.
 #
 # Ács Zoltán <acszoltan111@gmail.com>, 2020.
+# Adam Gulacsi <adam.gulacsi@gmail.com>, 2023.
 # Andras Virag <snowflake71@gmail.com>, 2021.
 # Árpád Horváth <horvatha4@googlemail.com>, 2018.
 # balintmaci <balintmaci@gmail.com>, 2021.
@@ -19,19 +20,21 @@
 # Máté Széles <szelessm@gmail.com>, 2020.
 # Misi <varady.misi@gmail.com>, 2021.
 # Mr.Catfood <sipos22@msn.com>, 2022.
+# roli_greiner <greiner.roli@gmail.com>, 2023.
 # Szevin <kevingeiger25@gmail.com>, 2022.
 # sztrovacsek <magadeve@gmail.com>, 2019.
 # thekeymethod <csokan.andras87@protonmail.ch>, 2020.
 # Újvári Marcell <mmarci72@gmail.com>, 2021.
 # Varga Dániel <danikah.danikah@gmail.com>, 2021.
+# Viktor Rácz <raczviktor3@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2022-06-01 17:59+0000\n"
-"Last-Translator: Mr.Catfood <sipos22@msn.com>\n"
+"PO-Revision-Date: 2023-08-17 11:17+0000\n"
+"Last-Translator: Viktor Rácz <raczviktor3@gmail.com>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/hu/>\n"
 "Language: hu\n"
@@ -39,7 +42,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.13-dev\n"
+"X-Generator: Weblate 5.0-dev\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -71,9 +74,8 @@ msgid "Class reference"
 msgstr "Osztály referencia"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "Godot Dokumentáció – *3.4* ág"
+msgstr "Godot Dokumentáció – *3.5* ág"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -171,7 +173,6 @@ msgstr ""
 "velünk!"
 
 #: ../../docs/index.rst:46
-#, fuzzy
 msgid ""
 "Submit an issue or pull request on the `GitHub repository <https://github."
 "com/godotengine/godot-docs/issues>`_, help us `translate the documentation "
@@ -179,10 +180,10 @@ msgid ""
 "talk to us on the ``#documentation`` channel on the `Godot Contributors Chat "
 "<https://chat.godotengine.org/>`_!"
 msgstr ""
-"Jelentsen be problémát vagy készítsen behúzási kérelmet (pull request) `a "
+"Jelentsen egy problémát vagy készítsen behúzási kérelmet (pull request) `a "
 "GitHub adattárban <https://github.com/godotengine/godot-docs/issues>`_, "
-"segítsen nekünk `lefordítani a dokumentációt <https://hosted.weblate.org/"
-"engage/godot-engine/>`_ a saját nyelvére, vagy beszéljen velünk a "
+"segítsen `lefordítani a dokumentációt <https://hosted.weblate.org/engage/"
+"godot-engine/>`_ a saját nyelvére, vagy beszéljen velünk a "
 "``#documentation`` csatornán a `Discordon <https://discord.gg/zH7NUgz>`_, "
 "vagy a ``#documentation`` csatornán a `Godot Közreműködők Üzenőfalán "
 "<https://chat.godotengine.org/>`_!"
@@ -192,9 +193,8 @@ msgid "weblate_widget"
 msgstr "weblate_widget"
 
 #: ../../docs/<rst_epilog>:0
-#, fuzzy
 msgid "Translation status"
-msgstr "Animáció"
+msgstr "Fordítás állapota"
 
 #: ../../docs/index.rst:56
 msgid ""
@@ -582,17 +582,16 @@ msgstr ""
 "óhaja szerint, akármilyen célra, kereskedelmi vagy sem."
 
 #: ../../docs/about/faq.rst:19
-#, fuzzy
 msgid ""
 "All the contents of this accompanying documentation are published under the "
 "permissive Creative Commons Attribution 3.0 (`CC-BY 3.0 <https://"
 "creativecommons.org/licenses/by/3.0/>`_) license, with attribution to \"Juan "
 "Linietsky, Ariel Manzur and the Godot Engine community.\""
 msgstr ""
-"Minden dokumentáció tartalom a megengedő Creative Commons Attribution 3.0 "
-"(`CC-BY 3.0 <https://creativecommons.org/licenses/by/3.0/>`_) licence allatt "
-"áll, a \"Juan Linietsky, Ariel Manzur és a Godot Engine közösség\" "
-"elnevezéssel."
+"A dokumentáció tartalma a Creative Commons Attribution 3.0 (`CC-BY 3.0 "
+"<https://creativecommons.org/licenses/by/3.0/>`_) licenc alatt áll, a "
+"következő hivatkozással\"Juan Linietsky, Ariel Manzur és a Godot Engine "
+"közösség.\""
 
 #: ../../docs/about/faq.rst:23
 msgid ""
@@ -665,14 +664,12 @@ msgid "X11 (Linux, \\*BSD)"
 msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:41
-#, fuzzy
 msgid ":ref:`Web <doc_using_the_web_editor>`"
-msgstr "Animáció"
+msgstr ":ref:`Web <doc_using_the_web_editor>`"
 
 #: ../../docs/about/faq.rst:42
-#, fuzzy
 msgid "Android (experimental)"
-msgstr "Bővítmények"
+msgstr "Android (kisérleti)"
 
 #: ../../docs/about/faq.rst:44
 msgid "**For exporting your games:**"
@@ -34216,7 +34213,7 @@ msgstr ""
 #: ../../docs/tutorials/editor/default_key_mapping.rst:434
 #: ../../docs/tutorials/editor/default_key_mapping.rst:449
 msgid "Delete"
-msgstr "Törlés"
+msgstr "Törlés Jobbra"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:415
 msgid "``file_dialog/delete``"
@@ -34529,7 +34526,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid "Select"
-msgstr "Kiválasztás"
+msgstr "Kiválaszt"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:503
 msgid ":kbd:`M`"
@@ -43665,7 +43662,7 @@ msgstr ""
 
 #: ../../docs/tutorials/io/data_paths.rst:74
 msgid "Default"
-msgstr ""
+msgstr "Alapértelmezett"
 
 #: ../../docs/tutorials/io/data_paths.rst:0
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
@@ -60732,7 +60729,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "class"
-msgstr ""
+msgstr "osztály"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:163
 msgid "Defines an inner class."
@@ -61367,7 +61364,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:387
 msgid "Backspace"
-msgstr ""
+msgstr "Törlés Balra"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:389
 msgid "``\\f``"
@@ -65658,7 +65655,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:417
 msgid "Constructors"
-msgstr ""
+msgstr "Közreműködők"
 
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:419
 msgid ""

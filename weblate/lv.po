@@ -2,7 +2,10 @@
 # Copyright (C) 2014-2022, Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 #
+# Agnis Aldiņš <agnis16@gmail.com>, 2023.
+# Andrejs <ledaviskylv@gmail.com>, 2023.
 # D āvis <dlektauers@gmail.com>, 2022.
+# Mārtiņš Aldiņš <martins.aldins@gmail.com>, 2023.
 # M E <gruffy7932@gmail.com>, 2021-2022.
 # Rihards Kubilis <oldcar@inbox.lv>, 2020.
 # StiLins <aigars.skilins@gmail.com>, 2020.
@@ -13,8 +16,8 @@ msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: https://github.com/godotengine/godot-docs-l10n\n"
 "POT-Creation-Date: 2023-01-20 14:58+0100\n"
-"PO-Revision-Date: 2022-05-07 16:09+0000\n"
-"Last-Translator: D āvis <dlektauers@gmail.com>\n"
+"PO-Revision-Date: 2023-09-18 08:20+0000\n"
+"Last-Translator: Andrejs <ledaviskylv@gmail.com>\n"
 "Language-Team: Latvian <https://hosted.weblate.org/projects/godot-engine/"
 "godot-docs/lv/>\n"
 "Language: lv\n"
@@ -23,7 +26,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 0 || n % 100 >= 11 && n % 100 <= "
 "19) ? 0 : ((n % 10 == 1 && n % 100 != 11) ? 1 : 2);\n"
-"X-Generator: Weblate 4.12.1\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: ../../docs/index.rst:58
 msgid "General"
@@ -48,16 +51,15 @@ msgstr "Projekta Izstrāde"
 
 #: ../../docs/index.rst:119
 msgid "Community"
-msgstr "Komūns"
+msgstr "Komūna"
 
 #: ../../docs/index.rst:130
 msgid "Class reference"
 msgstr "Klašu atsauces"
 
 #: ../../docs/index.rst:2
-#, fuzzy
 msgid "Godot Docs – *3.5* branch"
-msgstr "Godot Dokumentācija - *3.4* zars"
+msgstr "Godot Dokumentācija - *3.5* zars"
 
 #: ../../docs/index.rst:6
 msgid ""
@@ -547,7 +549,6 @@ msgid "In short:"
 msgstr "Īsumā:"
 
 #: ../../docs/about/faq.rst:16
-#, fuzzy
 msgid ""
 "You are free to download and use Godot for any purpose: personal, non-"
 "profit, commercial, or otherwise."
@@ -647,11 +648,11 @@ msgstr "X11 (Linux, \\*BSD)"
 
 #: ../../docs/about/faq.rst:41
 msgid ":ref:`Web <doc_using_the_web_editor>`"
-msgstr ""
+msgstr ":ref:`Web <doc_using_the_web_editor>`"
 
 #: ../../docs/about/faq.rst:42
 msgid "Android (experimental)"
-msgstr ""
+msgstr "Android (eksperimentāls)"
 
 #: ../../docs/about/faq.rst:44
 msgid "**For exporting your games:**"
@@ -1031,6 +1032,7 @@ msgstr ""
 msgid ""
 "How do I install the Godot editor on my system (for desktop integration)?"
 msgstr ""
+"Kā uzstādīt Godot editoru uz manas sistēmas (personālā datora integrācija)?"
 
 #: ../../docs/about/faq.rst:191
 msgid ""
@@ -1043,12 +1045,19 @@ msgid ""
 "(Linux). This will automatically perform the required steps for desktop "
 "integration."
 msgstr ""
+"Godot editoram nav nepieciešama instalācija. To var paveikt divos veidos. "
+"Jūs variet instalēt Godot no `Steam <https://store.steampowered.com/"
+"app/404790/Godot_Engine/>`__ (Steam atbalstītās platformas), `Scoop <https://"
+"scoop.sh/>`__ (Windows), `Homebrew <https://brew.sh/>`__ (macOS) or `Flathub "
+"<https://flathub.org/apps/details/org.godotengine.Godot>`__ (Linux). Tā var "
+"veikt automātisku uzstādīšanu uz jūsu sistēmas."
 
 #: ../../docs/about/faq.rst:199
 msgid ""
 "Alternatively, you can manually perform the steps that an installer would do "
 "for you:"
 msgstr ""
+"Vai arī, Jūs variet veikt manuāli to, ko instalācija veiktu Jūsu vietā:"
 
 #: ../../docs/about/faq.rst:204
 msgid ""
@@ -1056,10 +1065,16 @@ msgid ""
 "Downloads folder), so you don't accidentally move it and break the shortcut "
 "in the future."
 msgstr ""
+"Pārvietot Godot izpildāmo programmu uz kādu noturīgu vietu ( tas ir, ārpus "
+"jūsu \"Downloads\" mapes ), lai izvairītos no nejaušas īsinājumikonas "
+"savienojuma salaušanas ar atstāšanu vietā, kur faili tiek dzēsti vai "
+"pārvietoti."
 
 #: ../../docs/about/faq.rst:206
 msgid "Right-click the Godot executable and choose **Create Shortcut**."
 msgstr ""
+"Labais klikšķis uz Godot izpildāmo programmu un izvēlaties **izveidot "
+"saīsinājumu**."
 
 #: ../../docs/about/faq.rst:207
 msgid ""
@@ -1068,18 +1083,27 @@ msgid ""
 "appear in the Start menu. You can also pin Godot in the task bar by right-"
 "clicking the executable and choosing **Pin to Task Bar**."
 msgstr ""
+"Pārvietojiet izveidoto īsinājumu uz ``%LOCALAPPDATA%"
+"\\Microsoft\\Windows\\Start Menu\\Programs``. Tur atrodas visi īsinājumi, "
+"kas lietotājam parādās sākuma izvēlnē. Jūs varat arī piespraust Godot darba "
+"joslā, noklikšķinot uz izpildāmo failu ar labo peles poge un izvēloties "
+"**Piespraust darba joslai**."
 
 #: ../../docs/about/faq.rst:215
+#, fuzzy
 msgid ""
 "Drag the extracted Godot application to ``/Applications/Godot.app``, then "
 "drag it to the Dock if desired. Spotlight will be able to find Godot as long "
 "as it's in ``/Applications`` or ``~/Applications``."
 msgstr ""
+"Izvelc Godot lietojumprogrammatūru uz ``/Applications/Godot.app``, un ja ir "
+"vēlme, tad izvelc to uz Doku. Spotlight varēs atrast Godot, kamēr tas būz "
+"zem mapēm ``/Applications`` vai ``~/Applications``."
 
 #: ../../docs/about/faq.rst:220
 #: ../../docs/tutorials/inputs/controllers_gamepads_joysticks.rst:233
 msgid "Linux"
-msgstr ""
+msgstr "Linux"
 
 #: ../../docs/about/faq.rst:222
 msgid ""
@@ -1116,14 +1140,18 @@ msgstr ""
 
 #: ../../docs/about/faq.rst:241
 msgid "Is the Godot editor a portable application?"
-msgstr ""
+msgstr "Vai Godot redaktors ir pārvietojamā lietojumprogrammatūra?"
 
 #: ../../docs/about/faq.rst:243
+#, fuzzy
 msgid ""
 "In its default configuration, Godot is *semi-portable*. Its executable can "
 "run from any location (including non-writable locations) and never requires "
 "administrator privileges."
 msgstr ""
+"Noklusējuma konfigurācijā, Godot ir *papusei-pārvietojams*. Tā aplikāciju "
+"var palaist no jebkuras vietas ( ieskaitot ne-rakstāmās vietas ) un nekad "
+"neprasa administrātora privilēģijas."
 
 #: ../../docs/about/faq.rst:247
 msgid ""
@@ -1952,9 +1980,8 @@ msgid "Scene tree editor."
 msgstr ""
 
 #: ../../docs/about/list_of_features.rst:48
-#, fuzzy
 msgid "Built-in script editor."
-msgstr "Atvērt skriptu redaktoru"
+msgstr "Atvērt skriptu redaktoru."
 
 #: ../../docs/about/list_of_features.rst:49
 msgid ""
@@ -3523,7 +3550,7 @@ msgstr ""
 #: ../../docs/about/docs_changelog.rst:134 ../../docs/tutorials/2d/index.rst:2
 #: ../../docs/tutorials/performance/index.rst:72
 msgid "2D"
-msgstr ""
+msgstr "2D"
 
 #: ../../docs/about/docs_changelog.rst:25
 msgid ":ref:`doc_2d_sprite_animation`"
@@ -3765,7 +3792,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/index.rst:81
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:33
 msgid "3D"
-msgstr ""
+msgstr "3D"
 
 #: ../../docs/about/docs_changelog.rst:142
 msgid ":ref:`doc_csg_tools`"
@@ -3783,7 +3810,7 @@ msgstr ""
 #: ../../docs/tutorials/performance/cpu_optimization.rst:246
 #: ../../docs/tutorials/physics/index.rst:2
 msgid "Physics"
-msgstr ""
+msgstr "Fizika"
 
 #: ../../docs/about/docs_changelog.rst:149
 msgid ":ref:`doc_ragdoll_system`"
@@ -5091,9 +5118,8 @@ msgid "Integrated class reference"
 msgstr "Klašu atsauces"
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:131
-#, fuzzy
 msgid "Godot comes with a built-in class reference."
-msgstr "Klašu atsauces"
+msgstr "Godot iekļautas klašu atsauces."
 
 #: ../../docs/getting_started/introduction/first_look_at_the_editor.rst:133
 msgid ""
@@ -5816,9 +5842,8 @@ msgid "A name."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:24
-#, fuzzy
 msgid "Editable properties."
-msgstr "Iestatījumi"
+msgstr "Maināmi uzstādījumi."
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:25
 msgid "They receive callbacks to update every frame."
@@ -5975,9 +6000,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:130
-#, fuzzy
 msgid "Running the scene"
-msgstr "Saglabāt Ainu."
+msgstr "Aina tiek palaista"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:132
 msgid ""
@@ -6022,9 +6046,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:165
-#, fuzzy
 msgid "Setting the main scene"
-msgstr "Saglabāt Ainu."
+msgstr "Aina tiek iestatīta"
 
 #: ../../docs/getting_started/step_by_step/nodes_and_scenes.rst:167
 msgid ""
@@ -10171,9 +10194,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:25
-#, fuzzy
 msgid "Add a *CollisionShape*."
-msgstr "Redzamas sadursmes formas"
+msgstr "Pievienot *SadursmesForma*."
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:29
 msgid "In the *Inspector*, assign a *BoxShape* to the *Shape* property."
@@ -10325,9 +10347,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:217
-#, fuzzy
 msgid "Leaving the screen"
-msgstr "Saglabāt Ainu."
+msgstr "Ekrāns tiek atstāts"
 
 #: ../../docs/getting_started/first_3d_game/04.mob_scene.rst:219
 msgid ""
@@ -11988,9 +12009,8 @@ msgid "And with that, you finished coding your first complete 3D game."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:274
-#, fuzzy
 msgid "**Congratulations**!"
-msgstr "Konstantes"
+msgstr "**Apsveicu**!"
 
 #: ../../docs/getting_started/first_3d_game/09.adding_animations.rst:276
 msgid ""
@@ -15735,7 +15755,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:40
 msgid "Transparent"
-msgstr ""
+msgstr "Caurspīdīgs"
 
 #: ../../docs/tutorials/3d/spatial_material.rst:42
 msgid ""
@@ -17366,7 +17386,7 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/gi_probes.rst:81
 msgid "Reflections"
-msgstr ""
+msgstr "Atspoguļojumi"
 
 #: ../../docs/tutorials/3d/gi_probes.rst:83
 msgid ""
@@ -17718,7 +17738,7 @@ msgstr ""
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:177
 #: ../../docs/tutorials/platform/mobile_rendering_limitations.rst:47
 msgid "Disabled"
-msgstr ""
+msgstr "Izslēgts"
 
 #: ../../docs/tutorials/3d/baked_lightmaps.rst:179
 msgid ""
@@ -24856,11 +24876,11 @@ msgid "Playback limitations"
 msgstr ""
 
 #: ../../docs/tutorials/animation/playing_videos.rst:141
-#, fuzzy
 msgid ""
 "There are several limitations with the current implementation of video "
 "playback in Godot:"
-msgstr "Ir vairāki ierobežojumi glTF eksportam."
+msgstr ""
+"Patreizējai video atspēlēšanas īstenošanai pastāv vairākas limitācijas:"
 
 #: ../../docs/tutorials/animation/playing_videos.rst:143
 msgid "Seeking a video to a certain point is not supported."
@@ -25262,7 +25282,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:57
 msgid "Compression"
-msgstr ""
+msgstr "Saspiešana"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:59
 msgid ""
@@ -25536,7 +25556,7 @@ msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:140
 msgid "Repeat"
-msgstr ""
+msgstr "Atkārtot"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:142
 msgid ""
@@ -25552,7 +25572,7 @@ msgstr ""
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:147
 #: ../../docs/tutorials/audio/audio_buses.rst:187
 msgid "Filter"
-msgstr ""
+msgstr "Filtrēt"
 
 #: ../../docs/tutorials/assets_pipeline/importing_images.rst:149
 msgid ""
@@ -33153,7 +33173,7 @@ msgstr ""
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 msgid "Select All"
-msgstr ""
+msgstr "Izvēlēties visu"
 
 #: ../../docs/tutorials/editor/default_key_mapping.rst:228
 #: ../../docs/tutorials/editor/default_key_mapping.rst:443
@@ -35439,9 +35459,8 @@ msgid ""
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:156
-#, fuzzy
 msgid "Windows: ``.exe``"
-msgstr "Windows paraugs:"
+msgstr "Windows:``.exe``"
 
 #: ../../docs/tutorials/export/exporting_projects.rst:157
 msgid ""
@@ -60287,11 +60306,12 @@ msgid "``SSS_STRENGTH``"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/index.rst:4
-#, fuzzy
 msgid ""
 "This section covers programming languages and core features to code your "
 "games in Godot."
-msgstr "Kādas programmēšanas valodas Godot atbalsta?"
+msgstr ""
+"Šī sekcija apskatīs kodola īpašības un programmēšanas valodas, lai izveidotu "
+"spēli ar Godot."
 
 #: ../../docs/tutorials/scripting/index.rst:7
 msgid ""
@@ -60726,7 +60746,7 @@ msgstr ""
 #: ../../docs/tutorials/scripting/visual_script/nodes_purposes.rst:470
 #: ../../docs/tutorials/shaders/shader_reference/shading_language.rst:297
 msgid "Operators"
-msgstr ""
+msgstr "Operātors"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_basics.rst:227
 msgid "The following is the list of supported operators and their precedence."
@@ -68684,7 +68704,7 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:106
 msgid "Settings"
-msgstr ""
+msgstr "Iestatījumi"
 
 #: ../../docs/tutorials/scripting/debug/overview_of_debugging_tools.rst:108
 msgid ""
@@ -80354,19 +80374,16 @@ msgid "OpenXR plugin"
 msgstr ""
 
 #: ../../docs/tutorials/vr/openxr/index.rst:6
-#, fuzzy
 msgid "Welcome to the Godot OpenXR documentation!"
-msgstr "Par dokumentāciju"
+msgstr "Sveicināti Godot OpenXR dokumentācijā!"
 
 #: ../../docs/tutorials/vr/openxr/index.rst:11
-#, fuzzy
 msgid ""
 "This is the documentation for the `Godot OpenXR plugin <https://github.com/"
 "GodotVR/godot_openxr>`__."
 msgstr ""
-"Pēdējie atjauninājumi, dokumentācija un kods var tikt atrasts Godot iOS "
-"spraudņu krātuvē `Godot iOS plugins repository <https://github.com/"
-"godotengine/godot-ios-plugins>`_"
+"Šī ir dokumentācija priekš `Godot OpenXR iespraudņa <https://github.com/"
+"GodotVR/godot_openxr>`__."
 
 #: ../../docs/tutorials/vr/openxr/index.rst:13
 msgid ""
@@ -92284,9 +92301,8 @@ msgid "Class reference guides"
 msgstr "Klašu atsauces"
 
 #: ../../docs/community/contributing/index.rst:82
-#, fuzzy
 msgid "The pages below focus on the class reference."
-msgstr "Klašu atsauces"
+msgstr "Lapa apakšā fokusējas uz klašu atsauci."
 
 #: ../../docs/community/contributing/index.rst:84
 msgid ""
