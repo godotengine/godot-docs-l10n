@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Designing the mob scene"
-msgstr "Тестирование сцены"
+msgstr "Разработка сцены для моба"
 
 msgid ""
 "In this part, you're going to code the monsters, which we'll call mobs. In "
@@ -125,9 +124,8 @@ msgstr ""
 "соответствовать модели. Их форма и размер должны определяться тем, как игра "
 "ощущается при тестировании."
 
-#, fuzzy
 msgid "Removing monsters off-screen"
-msgstr "Удаляем старых крипов"
+msgstr "Удаление монстров за пределами экрана"
 
 msgid ""
 "We're going to spawn monsters at regular time intervals in the game level. "
@@ -202,9 +200,8 @@ msgstr "|image6|"
 msgid "image6"
 msgstr "image6"
 
-#, fuzzy
 msgid "Coding the mob's movement"
-msgstr "Создаем логику передвижения FPS"
+msgstr "Прописываем движения мобов"
 
 msgid ""
 "Let's implement the monster's motion. We're going to do this in two steps. "
@@ -217,9 +214,8 @@ msgstr ""
 "монстра. Затем мы закодируем механизм случайного появления в сцене *Main* и "
 "вызовем функцию оттуда."
 
-#, fuzzy
 msgid "Attach a script to the *Mob*."
-msgstr "Добавьте скрипт в узел."
+msgstr "Добавьте скрипт к сцене *Mob*."
 
 msgid "|image7|"
 msgstr "|image7|"
@@ -306,9 +302,8 @@ msgstr ""
 "``random_speed``, и, наконец, поворачиваем его с помощью метода ``Vector3`` "
 "класса ``rotated()``."
 
-#, fuzzy
 msgid "Leaving the screen"
-msgstr "Тестирование сцены"
+msgstr "Уход с экрана"
 
 msgid ""
 "We still have to destroy the mobs when they leave the screen. To do so, "

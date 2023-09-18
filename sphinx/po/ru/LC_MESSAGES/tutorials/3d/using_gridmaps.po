@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using GridMaps"
-msgstr "Использование карт тайлов"
+msgstr "Использование GridMaps (карты тайлов)"
 
 msgid "Introduction"
 msgstr "Введение"
@@ -44,9 +43,8 @@ msgstr ""
 "Столкновения и навигацию также можно добавить к сеткам, как это делается с "
 "плитками карт тайлов."
 
-#, fuzzy
 msgid "Example project"
-msgstr "Пример GDScript"
+msgstr "Пример проекта"
 
 msgid ""
 "To learn how GridMaps work, start by downloading the sample project: :"
@@ -124,9 +122,8 @@ msgstr ""
 "При генерации библиотеки сеток используются только материалы из сеток. "
 "Материалы, установленные на узле, игнорируются."
 
-#, fuzzy
 msgid "NavigationMeshes"
-msgstr "Навигационные сетки."
+msgstr "Навигационные сетки"
 
 msgid ""
 "Like all mesh instances, MeshLibrary items can be assigned a :ref:"
@@ -171,6 +168,9 @@ msgid ""
 "map cell size to properly merge the navigation meshes of different grid "
 "cells."
 msgstr ""
+"Размер запеченной ячейки NavigationMesh должен соответствовать размеру "
+"ячейки карты NavigationServer, чтобы правильно объединить навигационные "
+"сетки разных ячеек сетки."
 
 msgid "Exporting the MeshLibrary"
 msgstr "Экспорт MeshLibrary"

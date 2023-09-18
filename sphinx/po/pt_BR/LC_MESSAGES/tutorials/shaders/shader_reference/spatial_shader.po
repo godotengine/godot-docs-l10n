@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Spatial shaders"
-msgstr ""
+msgstr "Shaders espaciais"
 
 msgid ""
 "Spatial shaders are used for shading 3D objects. They are the most complex "
@@ -33,197 +33,200 @@ msgid "Render modes"
 msgstr "Modos de renderização"
 
 msgid "Render mode"
-msgstr ""
+msgstr "Modo de renderização"
 
 msgid "Description"
 msgstr "Descrição"
 
 msgid "**blend_mix**"
-msgstr ""
+msgstr "**blend_mix**"
 
 msgid "Mix blend mode (alpha is transparency), default."
 msgstr ""
 
 msgid "**blend_add**"
-msgstr ""
+msgstr "**blend_add**"
 
 msgid "Additive blend mode."
 msgstr ""
 
 msgid "**blend_sub**"
-msgstr ""
+msgstr "**blend_sub**"
 
 msgid "Subtractive blend mode."
 msgstr ""
 
 msgid "**blend_mul**"
-msgstr ""
+msgstr "**blend_mul**"
 
 msgid "Multiplicative blend mode."
 msgstr ""
 
 msgid "**depth_draw_opaque**"
-msgstr ""
+msgstr "**depth_draw_opaque**"
 
 msgid "Only draw depth for opaque geometry (not transparent)."
 msgstr ""
 
 msgid "**depth_draw_always**"
-msgstr ""
+msgstr "**depth_draw_always**"
 
 msgid "Always draw depth (opaque and transparent)."
 msgstr ""
 
 msgid "**depth_draw_never**"
-msgstr ""
+msgstr "**depth_draw_never**"
 
 msgid "Never draw depth."
 msgstr ""
 
 msgid "**depth_draw_alpha_prepass**"
-msgstr ""
+msgstr "**depth_draw_alpha_prepass**"
 
 msgid "Do opaque depth pre-pass for transparent geometry."
 msgstr ""
 
 msgid "**depth_test_disable**"
-msgstr ""
+msgstr "**depth_test_disable**"
 
 msgid "Disable depth testing."
 msgstr ""
 
 msgid "**cull_front**"
-msgstr ""
+msgstr "**cull_front**"
 
+#, fuzzy
 msgid "Cull front-faces."
-msgstr ""
+msgstr "Cull faces frontais."
 
 msgid "**cull_back**"
-msgstr ""
+msgstr "**cull_back**"
 
 msgid "Cull back-faces (default)."
 msgstr ""
 
 msgid "**cull_disabled**"
-msgstr ""
+msgstr "**cull_disabled**"
 
 msgid "Culling disabled (double sided)."
 msgstr ""
 
 msgid "**unshaded**"
-msgstr ""
+msgstr "**unshaded**"
 
 msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
 
 msgid "**diffuse_lambert**"
-msgstr ""
+msgstr "**diffuse_lambert**"
 
 msgid "Lambert shading for diffuse (default)."
 msgstr ""
 
 msgid "**diffuse_lambert_wrap**"
-msgstr ""
+msgstr "**diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr ""
 
 msgid "**diffuse_oren_nayar**"
-msgstr ""
+msgstr "**diffuse_oren_nayar**"
 
 msgid "Oren Nayar for diffuse."
 msgstr ""
 
 msgid "**diffuse_burley**"
-msgstr ""
+msgstr "**diffuse_burley**"
 
 msgid "Burley (Disney PBS) for diffuse."
 msgstr ""
 
 msgid "**diffuse_toon**"
-msgstr ""
+msgstr "**diffuse_toon**"
 
 msgid "Toon shading for diffuse."
 msgstr ""
 
 msgid "**specular_schlick_ggx**"
-msgstr ""
+msgstr "**specular_schlick_ggx**"
 
 msgid "Schlick-GGX for specular (default)."
 msgstr ""
 
 msgid "**specular_blinn**"
-msgstr ""
+msgstr "**specular_blinn**"
 
 msgid "Blinn for specular (compatibility)."
 msgstr ""
 
 msgid "**specular_phong**"
-msgstr ""
+msgstr "**specular_phong**"
 
 msgid "Phong for specular (compatibility)."
 msgstr ""
 
 msgid "**specular_toon**"
-msgstr ""
+msgstr "**specular_toon**"
 
 msgid "Toon for specular."
 msgstr ""
 
 msgid "**specular_disabled**"
-msgstr ""
+msgstr "**specular_disabled**"
 
 msgid "Disable specular."
-msgstr ""
+msgstr "Desativar especular."
 
 msgid "**skip_vertex_transform**"
-msgstr ""
+msgstr "**skip_vertex_transform**"
 
 msgid "VERTEX/NORMAL/etc. need to be transformed manually in vertex function."
 msgstr ""
 
 msgid "**world_vertex_coords**"
-msgstr ""
+msgstr "**world_vertex_coords**"
 
 msgid "VERTEX/NORMAL/etc. are modified in world coordinates instead of local."
 msgstr ""
 
 msgid "**ensure_correct_normals**"
-msgstr ""
+msgstr "**ensure_correct_normals**"
 
 msgid "Use when non-uniform scale is applied to mesh."
 msgstr ""
 
 msgid "**vertex_lighting**"
-msgstr ""
+msgstr "**vertex_lighting**"
 
 msgid "Use vertex-based lighting."
 msgstr ""
 
 msgid "**shadows_disabled**"
-msgstr ""
+msgstr "**shadows_disabled**"
 
 msgid "Disable computing shadows in shader."
 msgstr ""
 
 msgid "**ambient_light_disabled**"
-msgstr ""
+msgstr "**ambient_light_disabled**"
 
 msgid "Disable contribution from ambient light and radiance map."
 msgstr ""
 
 msgid "**shadow_to_opacity**"
-msgstr ""
+msgstr "**shadow_to_opacity**"
 
 msgid ""
 "Lighting modifies the alpha so shadowed areas are opaque and non-shadowed "
 "areas are transparent. Useful for overlaying shadows onto a camera feed in "
 "AR."
 msgstr ""
+"A iluminação modifica o alfa para que as áreas sombreadas sejam opacas e as "
+"áreas não sombreadas sejam transparentes. Útil para sobrepor sombras em "
+"câmera de RA."
 
-#, fuzzy
 msgid "Built-ins"
-msgstr "Embutido"
+msgstr "Embutidos"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -232,15 +235,14 @@ msgid ""
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
 
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Tipos básicos de vetor"
+msgstr "Built-ins globais"
 
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
 
 msgid "Built-in"
-msgstr ""
+msgstr "Embutido"
 
 msgid "in float **TIME**"
 msgstr ""
@@ -248,9 +250,8 @@ msgstr ""
 msgid "Global time, in seconds."
 msgstr ""
 
-#, fuzzy
 msgid "Vertex built-ins"
-msgstr "Tipos básicos de vetor"
+msgstr "Vertex embutidos"
 
 msgid ""
 "Vertex data (``VERTEX``, ``NORMAL``, ``TANGENT``, ``BITANGENT``) are "
@@ -430,9 +431,8 @@ msgid ""
 "``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``."
 msgstr ""
 
-#, fuzzy
 msgid "Fragment built-ins"
-msgstr "Tipos básicos de vetor"
+msgstr "Fragmentos embutidos"
 
 msgid ""
 "The default use of a Godot fragment processor function is to set up the "
@@ -550,7 +550,7 @@ msgid "out float **METALLIC**"
 msgstr ""
 
 msgid "Metallic (0..1)."
-msgstr ""
+msgstr "Metálico (0..1)."
 
 msgid "out float **SPECULAR**"
 msgstr ""
@@ -560,7 +560,7 @@ msgid ""
 msgstr ""
 
 msgid "Roughness (0..1)."
-msgstr ""
+msgstr "Rugosidade (0..1)."
 
 msgid "out float **RIM**"
 msgstr ""
@@ -635,7 +635,7 @@ msgid "How much AO affects lights (0..1; default 0)."
 msgstr ""
 
 msgid "sampler2D **SCREEN_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **SCREEN_TEXTURE**"
 
 msgid ""
 "Built-in Texture for reading from the screen. Mipmaps contain increasingly "
@@ -643,7 +643,7 @@ msgid ""
 msgstr ""
 
 msgid "sampler2D **DEPTH_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **DEPTH_TEXTURE**"
 
 msgid ""
 "Built-in Texture for reading depth from the screen. Must convert to linear "
@@ -679,9 +679,8 @@ msgid ""
 "and ways to avoid issues."
 msgstr ""
 
-#, fuzzy
 msgid "Light built-ins"
-msgstr "Tipos básicos definidos por padrão"
+msgstr "Built-ins de iluminação"
 
 msgid ""
 "Writing light processor functions is completely optional. You can skip the "
@@ -732,18 +731,21 @@ msgid ""
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
+"Coordenada do centro do pixel no espaço da tela. ``xy`` especifica a posição "
+"na janela, ``z`` especifica a profundidade do fragmento se ``DEPTH`` não for "
+"usado. A origem está no canto inferior esquerdo."
 
 msgid "in vec3 **NORMAL**"
-msgstr ""
+msgstr "in vec3 **NORMAL**"
 
 msgid "Normal vector, in view space."
-msgstr ""
+msgstr "Vetor normal, no espaço de exibição."
 
 msgid "View vector, in view space."
 msgstr ""
 
 msgid "in vec3 **LIGHT**"
-msgstr ""
+msgstr "in vec3 **LIGHT**"
 
 msgid "Light Vector, in view space."
 msgstr ""
@@ -770,7 +772,7 @@ msgid "in float **ROUGHNESS**"
 msgstr ""
 
 msgid "Roughness."
-msgstr ""
+msgstr "Rugosidade."
 
 msgid "in vec3 **TRANSMISSION**"
 msgstr ""
@@ -791,4 +793,4 @@ msgid "Specular light result."
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

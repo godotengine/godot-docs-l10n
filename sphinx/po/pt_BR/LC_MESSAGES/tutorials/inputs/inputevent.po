@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using InputEvent"
-msgstr "InputEvent"
+msgstr "Usando InputEvent"
 
 msgid "What is it?"
 msgstr "O que é isso?"
@@ -42,7 +41,6 @@ msgid "Here is a quick example, closing your game if the escape key is hit:"
 msgstr ""
 "Eis um exemplo rápido, que fecha seu jogo se a tecla Escape for pressionada:"
 
-#, fuzzy
 msgid ""
 "However, it is cleaner and more flexible to use the provided :ref:`InputMap "
 "<class_InputMap>` feature, which allows you to define input actions and "
@@ -166,7 +164,6 @@ msgstr ""
 "de gameplay em tela-cheia, assim eles não são recebidos quando uma GUI está "
 "ativa."
 
-#, fuzzy
 msgid ""
 "If no one wanted the event so far, and a :ref:`Camera <class_Camera>` is "
 "assigned to the Viewport with :ref:`Object Picking "
@@ -179,13 +176,17 @@ msgid ""
 "relevant physics object (bodies receive this callback by default, but areas "
 "do not. This can be configured through :ref:`Area <class_Area>` properties)."
 msgstr ""
-"Se ninguém quis o evento até agora, e uma :ref:`Camera <class_Camera>` for "
-"atribuída ao Viewport, um raio para o mundo da física (na direção do raio do "
-"clique) será convertido. Se este raio atingir um objeto, ele chamará a "
-"função :ref:`CollisionObject._input_event () "
-"<class_CollisionObject_method__input_event>` no objeto físico relevante (os "
-"corpos recebem esse retorno de chamada por padrão, mas as áreas não. Isso "
-"pode ser configurado pelas propriedades da :ref:`Area <class_Area>`)."
+"Se ninguém queria o evento até agora, e uma :ref:`Camera <classe_Camera>` é "
+"atribuída ao Viewport com :ref:`Object Picking "
+"<classe_viewport_property_physics_object_picking>` ligado, um ray para o "
+"mundo da física (na direção do ray a partir do clique) será lançado. (Para o "
+"viewport raiz, isto também pode ser ativado em :ref:`Project Settings "
+"<class_ProjectSettings_property_physics/common/enable_object_picking>`) Se "
+"este ray atingir um objeto, ele chamará o :ref:`CollisionObject."
+"_input_event() <class_CollisionObject_method__input_event>` function in the "
+"relevant physics object (corpos recebem esta chamada de retorno por padrão, "
+"mas áreas não recebem. Isto pode ser configurado através de :ref:`Área "
+"<Área_classe_Área>` propriedades)."
 
 msgid ""
 "Finally, if the event was unhandled, it will be passed to the next Viewport "
@@ -242,46 +243,46 @@ msgstr ""
 "abaixo:"
 
 msgid "Event"
-msgstr ""
+msgstr "Evento"
 
 msgid "Type Index"
-msgstr ""
+msgstr "Índice de Tipo"
 
 msgid "Description"
 msgstr "Descrição"
 
 msgid ":ref:`InputEvent <class_InputEvent>`"
-msgstr ""
+msgstr ":ref:`InputEvent <class_InputEvent>`"
 
 msgid "NONE"
-msgstr ""
+msgstr "NONE"
 
 msgid "Empty Input Event."
 msgstr "Evento de Entrada vazio."
 
 msgid ":ref:`InputEventKey <class_InputEventKey>`"
-msgstr ""
+msgstr ":ref:`InputEventKey <class_InputEventKey>`"
 
 msgid "KEY"
-msgstr ""
+msgstr "KEY"
 
 msgid "Contains a scancode and Unicode value, as well as modifiers."
 msgstr "Contém um scancode e valor Unicode, assim como modificadores."
 
 msgid ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
-msgstr ""
+msgstr ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 
 msgid "MOUSE_BUTTON"
-msgstr ""
+msgstr "MOUSE_BUTTON"
 
 msgid "Contains click information, such as button, modifiers, etc."
 msgstr "Contém informações de clique, como botão, modificadores, etc."
 
 msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 
 msgid "MOUSE_MOTION"
-msgstr ""
+msgstr "MOUSE_MOTION"
 
 msgid ""
 "Contains motion information, such as relative, absolute positions and speed."
@@ -290,28 +291,28 @@ msgstr ""
 "velocidade."
 
 msgid ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 
 msgid "JOYSTICK_MOTION"
-msgstr ""
+msgstr "JOYSTICK_MOTION"
 
 msgid "Contains Joystick/Joypad analog axis information."
 msgstr "Contém informações de eixo analógico do Joystick/Joypad."
 
 msgid ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
-msgstr ""
+msgstr ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 
 msgid "JOYSTICK_BUTTON"
-msgstr ""
+msgstr "JOYSTICK_BUTTON"
 
 msgid "Contains Joystick/Joypad button information."
 msgstr "Contém informações de botão do Joystick/Joypad."
 
 msgid ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
-msgstr ""
+msgstr ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
 
 msgid "SCREEN_TOUCH"
-msgstr ""
+msgstr "SCREEN_TOUCH"
 
 msgid ""
 "Contains multi-touch press/release information. (only available on mobile "
@@ -321,10 +322,10 @@ msgstr ""
 "apenas em dispositivos móveis)"
 
 msgid ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
-msgstr ""
+msgstr ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 
 msgid "SCREEN_DRAG"
-msgstr ""
+msgstr "SCREEN_DRAG"
 
 msgid ""
 "Contains multi-touch drag information. (only available on mobile devices)"
@@ -333,10 +334,10 @@ msgstr ""
 "móveis)"
 
 msgid ":ref:`InputEventAction <class_InputEventAction>`"
-msgstr ""
+msgstr ":ref:`InputEventAction <class_InputEventAction>`"
 
 msgid "SCREEN_ACTION"
-msgstr ""
+msgstr "SCREEN_ACTION"
 
 msgid ""
 "Contains a generic action. These events are often generated by the "
@@ -395,7 +396,7 @@ msgstr ""
 "<class_input_method_parse_input_event>`. Você normalmente usaria assim:"
 
 msgid "InputMap"
-msgstr ""
+msgstr "InputMap"
 
 msgid ""
 "Customizing and re-mapping input from code is often desired. If your whole "
@@ -414,4 +415,4 @@ msgstr ""
 "precisa armazenar as configurações da maneira que o programador achar melhor."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

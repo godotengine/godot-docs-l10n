@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Optimization using batching"
-msgstr "Otimização"
+msgstr "Otimização por processamento de lotes"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -38,9 +37,8 @@ msgid ""
 "number of draw calls."
 msgstr ""
 
-#, fuzzy
 msgid "Draw calls"
-msgstr "Desvantagens"
+msgstr "Desenhar chamadas"
 
 msgid ""
 "In 2D, we need to tell the GPU to render a series of primitives (rectangles, "
@@ -163,18 +161,20 @@ msgid ""
 "`doc_batching_diagnostics` section to help you make this decision."
 msgstr ""
 
-#, fuzzy
 msgid "A trick"
-msgstr "Tijolos"
+msgstr "Um truque"
 
 msgid ""
 "And now, a sleight of hand. Even though the idea of painter's order is that "
 "objects are rendered from back to front, consider 3 objects ``A``, ``B`` and "
 "``C``, that contain 2 different textures: grass and wood."
 msgstr ""
+"E agora, uma carta na manga. Mesmo que a ideia da ordem do pintor seja que "
+"os objetos sejam renderizados de trás para frente, considere 3 objetos "
+"``A``, ``B`` e ``C``, que contêm 2 texturas diferentes: grama e madeira."
 
 msgid "In painter's order they are ordered::"
-msgstr ""
+msgstr "Na ordem do pintor são ordenados:"
 
 msgid ""
 "Because of the texture changes, they can't be batched and will be rendered "
@@ -190,7 +190,7 @@ msgid ""
 msgstr ""
 
 msgid "Item reordering"
-msgstr ""
+msgstr "Reordenamento de itens"
 
 msgid ""
 "It turns out that we can reorder items. However, we can only do this if the "
@@ -253,9 +253,8 @@ msgid ""
 "performance."
 msgstr ""
 
-#, fuzzy
 msgid "Overlap test"
-msgstr "Funções substituíveis"
+msgstr "Teste de sobreposição"
 
 msgid ""
 "However, as with the item reordering, things are not that simple. We must "
@@ -275,9 +274,8 @@ msgid ""
 "this lighting optimization."
 msgstr ""
 
-#, fuzzy
 msgid "Light scissoring"
-msgstr "Processo de importação"
+msgstr "Tesouras leves"
 
 msgid ""
 "Batching can make it more difficult to cull out objects that are not "
@@ -392,9 +390,8 @@ msgstr ""
 msgid "Reading ``VERTEX``  disables vertex position baking."
 msgstr ""
 
-#, fuzzy
 msgid "Project Settings"
-msgstr "Configuração do Projeto"
+msgstr "Configurações do Projeto"
 
 msgid ""
 "To fine-tune batching, a number of project settings are available. You can "
@@ -405,9 +402,8 @@ msgid ""
 "more information."
 msgstr ""
 
-#, fuzzy
 msgid "rendering/batching/options"
-msgstr "Animações"
+msgstr "renderização / processamento por lotes / opções"
 
 msgid ""
 ":ref:`use_batching <class_ProjectSettings_property_rendering/batching/"
@@ -427,9 +423,8 @@ msgid ""
 "it's not recommended."
 msgstr ""
 
-#, fuzzy
 msgid "rendering/batching/parameters"
-msgstr "Alterando Parâmetros de Importação"
+msgstr "renderização / processamento por lotes / parâmetros"
 
 msgid ""
 ":ref:`max_join_item_commands <class_ProjectSettings_property_rendering/"
@@ -467,8 +462,9 @@ msgid ""
 "project."
 msgstr ""
 
+#, fuzzy
 msgid "rendering/batching/lights"
-msgstr ""
+msgstr "rendering/batching/lights"
 
 msgid ""
 ":ref:`scissor_area_threshold <class_ProjectSettings_property_rendering/"
@@ -483,8 +479,9 @@ msgid ""
 "to use here."
 msgstr ""
 
+#, fuzzy
 msgid "rendering/batching/debug"
-msgstr ""
+msgstr "rendering/batching/debug"
 
 msgid ""
 ":ref:`flash_batching <class_ProjectSettings_property_rendering/batching/"
@@ -501,8 +498,9 @@ msgid ""
 "log to the Godot IDE / console."
 msgstr ""
 
+#, fuzzy
 msgid "rendering/batching/precision"
-msgstr ""
+msgstr "rendering/batching/precision"
 
 msgid ""
 ":ref:`uv_contract <class_ProjectSettings_property_rendering/batching/"
@@ -520,7 +518,7 @@ msgid ""
 msgstr ""
 
 msgid "Diagnostics"
-msgstr ""
+msgstr "Diagnóstico"
 
 msgid ""
 "Although you can change parameters and examine the effect on frame rate, "
@@ -533,7 +531,7 @@ msgid ""
 msgstr ""
 
 msgid "Reading a diagnostic"
-msgstr ""
+msgstr "Lendo um diagnóstico"
 
 msgid "This is a typical diagnostic."
 msgstr ""
@@ -559,9 +557,8 @@ msgid ""
 "currently batched."
 msgstr ""
 
-#, fuzzy
 msgid "Default batches"
-msgstr "Recursos padrão"
+msgstr "Lotes predefinidos"
 
 msgid ""
 "The second number following default batches is the number of commands in the "
@@ -641,7 +638,7 @@ msgid ""
 msgstr ""
 
 msgid "Appendix"
-msgstr ""
+msgstr "Apêndice"
 
 msgid "Batched primitives"
 msgstr ""
@@ -653,16 +650,16 @@ msgid ""
 msgstr ""
 
 msgid "RECT"
-msgstr ""
+msgstr "RECT"
 
 msgid "NINEPATCH (depending on wrapping mode)"
 msgstr ""
 
 msgid "POLY"
-msgstr ""
+msgstr "POLY"
 
 msgid "LINE"
-msgstr ""
+msgstr "LINE"
 
 msgid ""
 "With non-batched primitives, you may be able to get better performance by "
@@ -703,4 +700,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

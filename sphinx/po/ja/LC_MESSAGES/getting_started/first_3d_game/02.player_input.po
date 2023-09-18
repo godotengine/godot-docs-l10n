@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,9 +178,8 @@ msgstr ""
 "ノードの準備ができたので、ほとんどコーディングできるようになりました。しかし"
 "その前に、いくつかの入力アクションを定義する必要があります。"
 
-#, fuzzy
 msgid "Creating input actions"
-msgstr "アイコンの作成"
+msgstr "入力アクションの作成"
 
 msgid ""
 "To move the character, we will listen to the player's input, like pressing "
@@ -188,6 +187,11 @@ msgid ""
 "there's a powerful system that allows you to assign a label to a set of keys "
 "and buttons. This simplifies our scripts and makes them more readable."
 msgstr ""
+"キャラクターを動かすために、矢印キーを押した、などのようなプレイヤーの入力操"
+"作を認識する必要があります。Godotでは、全てのキーバインドをコードで書くことも"
+"できますが、キーやボタンのセットに操作のラベルを割り当てられる便利な機能があ"
+"ります。この機能により、スクリプトをよりシンプルで読みやすくすることができま"
+"す。"
 
 msgid ""
 "This system is the Input Map. To access its editor, head to the *Project* "
@@ -224,11 +228,17 @@ msgid ""
 "design, which we could use here. But we're defining our own to support "
 "gamepads."
 msgstr ""
+"Godotプロジェクトは、ユーザーインターフェイス設計のために設計された定義済みの"
+"アクションがいくつか用意されており、ここでそれを使うこともできます。しかし、"
+"ゲームパッドをサポートするために、私たちは独自のアクションを定義しています。"
 
 msgid ""
 "We're going to name our actions ``move_left``, ``move_right``, "
 "``move_forward``, ``move_back``, and ``jump``."
 msgstr ""
+"私たちはアクションに、\\ ``move_left``\\ 、\\ ``move_right``\\ 、\\ "
+"``move_forward``\\ 、\\ ``move_back``\\ 、 そして \\ ``jump``\\ という名前を"
+"つけたいと思います。"
 
 msgid "To add an action, write its name in the bar at the top and press Enter."
 msgstr ""
@@ -257,6 +267,9 @@ msgid ""
 "To bind a key or button to an action, click the \"+\" button to its right. "
 "Do this for ``move_left`` and in the drop-down menu, click *Key*."
 msgstr ""
+"キーやボタンをアクションに紐づけるには、その右側にある \"+\" ボタンをクリック"
+"します。\\ ``move_left``\\ に対してこの操作を行い、ドロップダウンメニューで"
+"\\ *キー*\\ (Key)をクリックします。"
 
 msgid "|image10|"
 msgstr "\\ |image10|"
@@ -268,6 +281,9 @@ msgid ""
 "This option allows you to add a keyboard input. A popup appears and waits "
 "for you to press a key. Press the left arrow key and click *OK*."
 msgstr ""
+"このオプションは、キーボード入力を追加することができます。ポップアップが表示"
+"され、キーが押されるのを待ちます。左矢印キーを押して、\\ *OK*\\ をクリックし"
+"ます。"
 
 msgid "|image11|"
 msgstr "\\ |image11|"
@@ -288,6 +304,9 @@ msgid ""
 "Let's now add support for a gamepad's left joystick. Click the \"+\" button "
 "again but this time, select *Joy Axis*."
 msgstr ""
+"次に、ゲームパッドの左ジョイスティックのサポートを追加しましょう。もう一度 "
+"\"+\" ボタンをクリックしますが、今度は \\ *ゲームパッドの方向キー/スティック"
+"*\\ (Joy Axis)を選択します。"
 
 msgid "|image13|"
 msgstr "\\ |image13|"
@@ -302,27 +321,32 @@ msgid ""
 "and direction you want to bind to the input action on the right. Leave the "
 "default values and press the *Add* button."
 msgstr ""
+"ポップアップでは、2つのドロップダウンメニューが表示されます。左側では、イン"
+"デックスでゲームパッドを選択します。\\ *Device 0*\\ は最初に接続されたゲーム"
+"パッドに対応し、*Device 1* は 2 番目に対応し、以下同様です。右側の入力アク"
+"ションにバインドするジョイスティックと方向を選択します。デフォルトのまま、\\*"
+"追加*\\ (Add)ボタンを押します。"
 
 msgid "|image14|"
 msgstr "\\ |image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "\\ |image14|"
+msgstr "\\ image14"
 
 msgid ""
 "Do the same for the other input actions. For example, bind the right arrow, "
 "D, and the left joystick's right axis to ``move_right``. After binding all "
 "keys, your interface should look like this."
 msgstr ""
+"他の入力アクションも同じようにします。たとえば、右矢印、D、左ジョイスティック"
+"の右軸を \\ ``move_right``\\ にバインドします。すべてのキーをバインドすると、"
+"インターフェイスは次のようになります。"
 
-#, fuzzy
 msgid "|image15|"
-msgstr "\\ |image1|"
+msgstr "\\ |image15|"
 
-#, fuzzy
 msgid "image15"
-msgstr "\\ |image1|"
+msgstr "\\ image15"
 
 msgid ""
 "We have the ``jump`` action left to set up. Bind the Space key and the "
@@ -333,39 +357,36 @@ msgstr ""
 "ンをバインドします。ゲームパッドのボタンをバインドするには、メニューから\\ *"
 "ゲームパッドのボタン*\\ (Joy Button)オプションを選択します。"
 
-#, fuzzy
 msgid "|image16|"
-msgstr "\\ |image1|"
+msgstr "\\ |image16|"
 
-#, fuzzy
 msgid "image16"
-msgstr "\\ |image1|"
+msgstr "\\ image16"
 
 msgid "Leave the default values and click the *Add* button."
 msgstr "初期値のままで、\\ *追加*\\ (Add) ボタンをクリックします。"
 
-#, fuzzy
 msgid "|image17|"
-msgstr "\\ |image1|"
+msgstr "\\ |image17|"
 
-#, fuzzy
 msgid "image17"
-msgstr "\\ |image1|"
+msgstr "\\ image17"
 
 msgid "Your jump input action should look like this."
 msgstr "ジャンプ入力のアクションはこのようになるはずです。"
 
 msgid "|image18|"
-msgstr ""
+msgstr "\\ |image18|"
 
-#, fuzzy
 msgid "image18"
-msgstr "\\ |image1|"
+msgstr "image18"
 
 msgid ""
 "That's all the actions we need for this game. You can use this menu to label "
 "any groups of keys and buttons in your projects."
 msgstr ""
+"これで、このゲームに必要なアクションが用意できました。このメニューを使って、"
+"プロジェクト内のキーやボタンのグループにラベルを付けることができます。"
 
 msgid "In the next part, we'll code and test the player's movement."
 msgstr "次のパートでは、プレーヤーの動きをコーディングしてテストしていきます。"

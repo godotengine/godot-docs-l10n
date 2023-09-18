@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Optimizing a build for size"
-msgstr ""
+msgstr "Optimizando una compilación para reducir el tamaño"
 
 msgid "Rationale"
 msgstr "Fundamentos"
@@ -29,38 +29,54 @@ msgid ""
 "specific compiler flags to aid on decreasing build size. Common situations "
 "include creating builds for mobile and Web platforms."
 msgstr ""
+"A veces, se desea optimizar una compilación para reducir el tamaño en lugar "
+"de la velocidad. Esto significa no compilar funciones no utilizadas del "
+"motor, así como utilizar banderas específicas del compilador para ayudar a "
+"disminuir el tamaño de la compilación. Situaciones comunes incluyen crear "
+"compilaciones para plataformas móviles y Web."
 
 msgid ""
 "This tutorial aims to give an overview on different methods to create a "
 "smaller binary. Before continuing, it is recommended to read the previous "
 "tutorials on compiling Godot for each platform."
 msgstr ""
+"Este tutorial tiene como objetivo proporcionar una visión general de "
+"diferentes métodos para crear un archivo binario más pequeño. Antes de "
+"continuar, se recomienda leer los tutoriales anteriores sobre cómo compilar "
+"Godot para cada plataforma."
 
 msgid ""
 "The options below are listed from the most important (greatest size savings) "
 "to the least important (lowest size savings)."
 msgstr ""
+"Las opciones a continuación se enumeran desde la más importante (mayor "
+"ahorro de tamaño) hasta la menos importante (menor ahorro de tamaño)."
 
 msgid "Stripping binaries"
-msgstr ""
+msgstr "Eliminación de símbolos de binarios"
 
 msgid "**Space savings:** Very high"
-msgstr ""
+msgstr "**Ahorro de espacio:** Muy alto"
 
 msgid "**Difficulty:** Easy"
-msgstr ""
+msgstr "**Dificultad:** Fácil"
 
 msgid "**Performed in official builds:** Yes"
-msgstr ""
+msgstr "**Realizado en compilaciones oficiales:** Sí"
 
 msgid ""
 "If you build Windows (MinGW), Linux or macOS binaries from source, remember "
 "to strip debug symbols from binaries by installing the ``strip`` package "
 "from your distribution then running:"
 msgstr ""
+"Si compilas binarios para Windows (MinGW), Linux o macOS desde el código "
+"fuente, recuerda eliminar los símbolos de depuración de los binarios "
+"instalando el paquete ``strip`` desde tu distribución y luego ejecutando:"
 
 msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
 msgstr ""
+"En Windows, ``strip.exe`` está incluido en la mayoría de las configuraciones "
+"del conjunto de herramientas MinGW."
 
 msgid ""
 "This will reduce the size of compiled binaries by a factor between 5× and "
@@ -69,32 +85,46 @@ msgid ""
 "`C++ profilers <doc_using_cpp_profilers>` will also no longer be able to "
 "display function names (this does not affect the built-in GDScript profiler)."
 msgstr ""
+"Esto reducirá el tamaño de los binarios compilados en un factor entre 5× y "
+"10×. La desventaja es que las trazas de fallos ya no proporcionarán "
+"información precisa (lo que es útil para solucionar problemas de un fallo). "
+"Los :ref:`profilers de C++ <doc_using_cpp_profilers>` tampoco podrán mostrar "
+"los nombres de las funciones (esto no afecta al profiler integrado de "
+"GDScript)."
 
 msgid ""
 "The above command will not work on Windows binaries compiled with MSVC and "
 "platforms such as Android and HTML5. Instead, pass ``debug_symbols=no`` on "
 "the SCons command line when compiling."
 msgstr ""
+"El comando anterior no funcionará en los binarios de Windows compilados con "
+"MSVC, ni en plataformas como Android y HTML5. En su lugar, pasa la opción "
+"``debug_symbols=no`` en la línea de comandos de SCons al compilar."
 
 msgid "Optimizing for size instead of speed"
-msgstr ""
+msgstr "Optimizando para tamaño en lugar de velocidad"
 
 msgid "**Space savings:** High"
-msgstr ""
+msgstr "**Ahorro de espacio:** Alto"
 
 msgid "**Performed in official builds:** Yes, but only for HTML5"
-msgstr ""
+msgstr "**Realizado en compilaciones oficiales:** Sí, pero solo para HTML5"
 
 msgid ""
 "Godot 3.1 onwards allows compiling using size optimizations (instead of "
 "speed). To enable this, set the ``optimize`` flag to ``size``:"
 msgstr ""
+"A partir de Godot 3.1 en adelante, es posible compilar utilizando "
+"optimizaciones de tamaño (en lugar de velocidad). Para habilitar esto, "
+"establece la bandera ``optimize`` en ``size``:"
 
 msgid "Some platforms such as WebAssembly already use this mode by default."
 msgstr ""
+"Algunas plataformas, como WebAssembly, ya utilizan este modo de forma "
+"predeterminada."
 
 msgid "Compiling with link-time optimization"
-msgstr ""
+msgstr "Compilando con optimización en tiempo de enlace"
 
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
@@ -102,153 +132,161 @@ msgid ""
 "template functions and unused code. It can currently be used with the GCC "
 "and MSVC compilers:"
 msgstr ""
+"Habilitar la optimización en tiempo de enlace produce binarios más "
+"eficientes, tanto en términos de rendimiento como de tamaño de archivo. "
+"Funciona eliminando funciones de plantilla duplicadas y código no utilizado. "
+"Actualmente, se puede utilizar con los compiladores GCC y MSVC:"
 
 msgid ""
 "Linking becomes much slower and more RAM-consuming with this option, so it "
 "should be used only for release builds:"
 msgstr ""
+"El enlazado se vuelve mucho más lento y consume más memoria RAM con esta "
+"opción, por lo que se debe utilizar solo para compilaciones de lanzamiento:"
 
 msgid ""
 "When compiling the ``master`` branch, you need to have at least 8 GB of RAM "
 "available for successful linking with LTO enabled."
 msgstr ""
+"Cuando se compila la rama ``master``, se necesita al menos 8 GB de RAM "
+"disponibles para enlazar correctamente con LTO habilitado."
 
 msgid ""
 "When compiling the ``3.x`` branch, you need to have at least 6 GB of RAM "
 "available for successful linking with LTO enabled."
 msgstr ""
+"Cuando se compila la rama ``3.x``, se necesita al menos 6 GB de RAM "
+"disponibles para enlazar correctamente con LTO habilitado."
 
 msgid "Disabling 3D"
-msgstr ""
+msgstr "Desabilitando 3D"
 
 msgid "**Space savings:** Moderate"
-msgstr ""
+msgstr "**Ahorro de espacio:** Moderado"
 
 msgid "**Performed in official builds:** No"
-msgstr ""
+msgstr "**Realizado en compilaciones oficiales:** No"
 
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
 "Because of this, there is a build flag to disable it:"
 msgstr ""
+"Para juegos 2D, tener todo el motor 3D disponible generalmente no tiene "
+"sentido. Por esta razón, existe una opción de compilación para desactivarlo:"
 
 msgid ""
 "Tools must be disabled in order to use this flag, as the editor is not "
 "designed to operate without 3D support. Without it, the binary size can be "
 "reduced by about 15%."
 msgstr ""
+"Las herramientas deben estar deshabilitadas para usar esta opción, ya que el "
+"editor no está diseñado para funcionar sin soporte 3D. Sin él, el tamaño del "
+"binario puede reducirse aproximadamente en un 15%."
 
-#, fuzzy
 msgid "Disabling advanced GUI objects"
-msgstr "Deshabilitar objetos específicos"
+msgstr "Deshabilitar objetos de la GUI avanzados"
 
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
 "TextEdit or GraphEdit. They can be disabled using a build flag:"
 msgstr ""
+"La mayoría de los juegos pequeños no requieren controles de GUI complejos "
+"como Tree, ItemList, TextEdit o GraphEdit. Pueden deshabilitarse usando una "
+"opción de compilación:"
 
 msgid "This is everything that will be disabled:"
-msgstr ""
+msgstr "Esto es todo lo que será deshabilitado:"
 
-#, fuzzy
 msgid "FileDialog"
-msgstr "Ventana de Archivos"
+msgstr "FileDialog"
 
 msgid "PopupMenu"
-msgstr ""
+msgstr "PopupMenu"
 
-#, fuzzy
 msgid "Tree"
-msgstr "Árbol de Escenas"
+msgstr "Árbol"
 
-#, fuzzy
 msgid "TextEdit"
-msgstr "Editor de Texto"
+msgstr "TextEdit"
 
 msgid "TreeItem"
-msgstr ""
+msgstr "TreeItem"
 
-#, fuzzy
 msgid "OptionButton"
-msgstr "Optimización"
+msgstr "OptionButton"
 
 msgid "SpinBox"
-msgstr ""
+msgstr "SpinBox"
 
-#, fuzzy
 msgid "ColorPicker"
-msgstr "Espacio de color"
+msgstr "ColorPicker"
 
 msgid "ColorPickerButton"
-msgstr ""
+msgstr "ColorPickerButton"
 
-#, fuzzy
 msgid "RichTextLabel"
-msgstr "BBCode en RichTextLabel"
+msgstr "RichTextLabel"
 
-#, fuzzy
 msgid "RichTextEffect"
-msgstr "Efecto"
+msgstr "RichTextEffect"
 
-#, fuzzy
 msgid "CharFXTransform"
-msgstr "Reestablecer Transformación"
+msgstr "CharFXTransform"
 
 msgid "PopupDialog"
-msgstr ""
+msgstr "PopupDialog"
 
-#, fuzzy
 msgid "WindowDialog"
-msgstr "Windows"
+msgstr "WindowDialog"
 
-#, fuzzy
 msgid "AcceptDialog"
-msgstr "Ventana de Archivos"
+msgstr "AcceptDialog"
 
-#, fuzzy
 msgid "ConfirmationDialog"
-msgstr "Configuración"
+msgstr "ConfirmationDialog"
 
-#, fuzzy
 msgid "MarginContainer"
-msgstr "Margin Container"
+msgstr "MarginContainer"
 
 msgid "ViewportContainer"
 msgstr "ViewportContainer"
 
-#, fuzzy
 msgid "SplitContainer"
-msgstr "Split Container"
+msgstr "SplitContainer"
 
-#, fuzzy
 msgid "HSplitContainer"
-msgstr "Split Container"
+msgstr "HSplitContainer"
 
 msgid "GraphNode"
-msgstr ""
+msgstr "GraphNode"
 
 msgid "GraphEdit"
-msgstr ""
+msgstr "GraphEdit"
 
 msgid "Disabling unwanted modules"
-msgstr ""
+msgstr "Desactivando módulos no deseados"
 
 msgid "**Space savings:** Very low to moderate depending on modules"
-msgstr ""
+msgstr "**Ahorro de espacio:** Muy bajo a moderado según los módulos"
 
 msgid "**Difficulty:** Medium to hard depending on modules"
-msgstr ""
+msgstr "**Dificultad:** Media a alta según los módulos"
 
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
 "modules with the following command:"
 msgstr ""
+"Muchas de las funciones de Godot se ofrecen como módulos. Puedes ver una "
+"lista de los módulos con el siguiente comando:"
 
 msgid ""
 "The list of modules that can be disabled will appear, together with all "
 "build options. If you are working on a simple 2D game, you could disable a "
 "lot of them:"
 msgstr ""
+"La lista de módulos que pueden ser desactivados aparecerá junto con todas "
+"las opciones de compilación. Si estás trabajando en un juego simple en 2D, "
+"podrías desactivar muchos de ellos:"
 
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
@@ -256,12 +294,19 @@ msgid ""
 "might want to keep networking-related modules, regex support, or theora/webm "
 "to play videos)."
 msgstr ""
+"Si esto no funciona para tu caso de uso, deberías revisar la lista de "
+"módulos y ver cuáles aún necesitas realmente para tu juego (por ejemplo, es "
+"posible que desees conservar los módulos relacionados con la red, el soporte "
+"de expresiones regulares o theora/webm para reproducir videos)."
 
 msgid ""
 "Alternatively, you can supply a list of disabled modules by creating "
 "``custom.py`` at the root of the source, with the contents similar to the "
 "following:"
 msgstr ""
+"Como alternativa, puedes proporcionar una lista de módulos desactivados "
+"creando un archivo llamado ``custom.py`` en la raíz del código fuente, con "
+"un contenido similar al siguiente:"
 
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_overriding_build_options`."

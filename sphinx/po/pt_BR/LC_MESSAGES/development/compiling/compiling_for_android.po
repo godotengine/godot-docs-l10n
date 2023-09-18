@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Compiling for Android"
-msgstr ""
+msgstr "Compilando para Android"
 
 msgid ""
 "This page describes how to compile Android export template binaries from "
@@ -48,7 +48,7 @@ msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr ""
 
 msgid "`Python 3.5+ <https://www.python.org/downloads/>`_."
-msgstr ""
+msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_."
 
 msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
 msgstr ""
@@ -73,9 +73,8 @@ msgstr ""
 msgid "Gradle (will be downloaded and installed automatically if missing)."
 msgstr ""
 
-#, fuzzy
 msgid "JDK 11 (either OpenJDK or Oracle JDK)."
-msgstr "JDK 8 (pode ser OpenJDK ou Oracle JDK)."
+msgstr "JDK 11 (pode ser OpenJDK ou Oracle JDK)."
 
 msgid ""
 "You can download a build from `ojdkbuild <https://github.com/ojdkbuild/"
@@ -174,16 +173,16 @@ msgid ""
 "APK."
 msgstr ""
 
-#, fuzzy
 msgid "Cleaning the generated export templates"
-msgstr "Configurando"
+msgstr "Limpando os modelos de exportação gerados"
 
 msgid ""
 "You can use the following commands to remove the generated export templates:"
 msgstr ""
 
+#, fuzzy
 msgid "Using the export templates"
-msgstr ""
+msgstr "Usando os modelos de exportação"
 
 msgid ""
 "Godot needs release and debug APKs that were compiled against the same "
@@ -198,7 +197,7 @@ msgid ""
 msgstr ""
 
 msgid "Installing the templates"
-msgstr ""
+msgstr "Instalando os modelos"
 
 msgid ""
 "The newly-compiled templates (``android_debug.apk`` and ``android_release."
@@ -207,13 +206,14 @@ msgid ""
 msgstr ""
 
 msgid "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
-msgstr ""
+msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
 
 msgid "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
-msgstr ""
+msgstr "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
 
 msgid "macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 msgstr ""
+"macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
 
 msgid ""
 "``<version>`` is of the form ``major.minor[.patch].status`` using values "
@@ -247,7 +247,7 @@ msgid ""
 msgstr ""
 
 msgid "Application not installed"
-msgstr ""
+msgstr "Aplicação não instalada"
 
 msgid ""
 "Android might complain the application is not correctly installed. If so:"
@@ -269,8 +269,9 @@ msgid ""
 "should be presented there. Seek assistance if you can't figure it out."
 msgstr ""
 
+#, fuzzy
 msgid "Application exits immediately"
-msgstr ""
+msgstr "O aplicativo é encerrado imediatamente"
 
 msgid ""
 "If the application runs but exits immediately, this might be due to one of "
@@ -297,4 +298,4 @@ msgid "In any case, ``adb logcat`` should also show the cause of the error."
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

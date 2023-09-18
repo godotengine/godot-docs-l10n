@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -91,9 +91,8 @@ msgstr ""
 "мобильными и бюджетными устройствами запечённые карты освещения - "
 "единственный выбор."
 
-#, fuzzy
 msgid "Visual comparison"
-msgstr "Сравнения"
+msgstr "Визуальное сравнение"
 
 msgid ""
 "Here are some comparisons of how BakedLightmap vs. GIProbe look. Notice that "
@@ -257,9 +256,8 @@ msgstr ""
 "текстуры. Если что-то не получается, проверьте, что сетки имеют эти UV2-"
 "координаты:"
 
-#, fuzzy
 msgid "Setting up the scene"
-msgstr "Создание сценариев сцены"
+msgstr "Настраиваем сцену"
 
 msgid ""
 "Before anything is done, a **BakedLightmap** node needs to be added to a "
@@ -292,9 +290,8 @@ msgstr ""
 "нее (подробнее об этом позже). Просто установите значения для сцены, как вы "
 "делаете с `GIProbe`.:"
 
-#, fuzzy
 msgid "Setting up meshes"
-msgstr "Настройка вашего проекта"
+msgstr "Настройка мешей"
 
 msgid ""
 "For a **MeshInstance** node to take part in the baking process, it needs to "
@@ -310,9 +307,8 @@ msgstr ""
 "При автоматической генерации карт освещения при импорте сцены этот параметр "
 "включается автоматически."
 
-#, fuzzy
 msgid "Setting up lights"
-msgstr "Настройка вашего проекта"
+msgstr "Настройка освещения"
 
 msgid ""
 "Lights are baked with indirect light by default. This means that "
@@ -330,9 +326,8 @@ msgstr ""
 "Свет может быть отключен (без запекания) или полностью запечён (прямой и не "
 "прямой). Этим можно управлять из меню **Bake Mode** в источниках освещения:"
 
-#, fuzzy
 msgid "The modes are:"
-msgstr "Приведём главные причины:"
+msgstr "Основные режимы:"
 
 msgid "Disabled"
 msgstr "Отключённый"
@@ -353,9 +348,8 @@ msgstr ""
 "Этот режим следует использовать для динамических световых эффектов, таких "
 "как взрывы и эффекты оружия."
 
-#, fuzzy
 msgid "Indirect"
-msgstr "rect2"
+msgstr "Indirect (Непрямой)"
 
 msgid ""
 "This is the default mode, and is a compromise between performance and real-"
@@ -515,9 +509,8 @@ msgstr ""
 "Например, в системе с 8 логическими ядрами CPU, если установить значение "
 "``-1``, то для запекания лайтмапа будет использоваться 7 потоков CPU."
 
-#, fuzzy
 msgid "Configuring bake"
-msgstr "Настройка проекта"
+msgstr "Настройка запекания"
 
 msgid "Several more options are present for baking:"
 msgstr "Для запекания имеется еще несколько вариантов:"
@@ -534,9 +527,8 @@ msgstr ""
 "запекания, будет запечён для него, но динамический захват объекта будет "
 "работать только в пределах этих границ."
 
-#, fuzzy
 msgid "Tweaks"
-msgstr "Подстройки"
+msgstr "Tweaks (надстройки)"
 
 msgid ""
 "**Quality:** Four bake quality modes are provided: Low, Medium, High, and "

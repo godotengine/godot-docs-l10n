@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using GIProbe"
-msgstr "Использование карт тайлов"
+msgstr "Использование GIProbe (карты тайтлов)"
 
 msgid "Introduction"
 msgstr "Введение"
@@ -69,9 +68,8 @@ msgstr ""
 "освещение сцены в реальном времени, не прибегая к световым картам "
 "(lightmaps)."
 
-#, fuzzy
 msgid "The main downsides of ``GIProbe`` are:"
-msgstr "Приведём главные причины:"
+msgstr "Основными недостатками ``GIProbe`` являются:"
 
 msgid ""
 "A small amount of light leaking can occur if the level is not carefully "
@@ -142,9 +140,8 @@ msgstr ""
 "(избегайте односторонних стенок). Для внутренних уровней заключите геометрию "
 "уровня в достаточно большую коробку и соедините контуры, чтобы закрыть сетку."
 
-#, fuzzy
 msgid "Adding lights"
-msgstr "Сложение векторов"
+msgstr "Добавление освещения"
 
 msgid ""
 "Unless there are materials with emission, ``GIProbe`` does nothing by "

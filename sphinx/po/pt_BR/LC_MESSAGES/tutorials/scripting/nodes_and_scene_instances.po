@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Nodes and scene instances"
-msgstr "Nós e recursos"
+msgstr "Instâncias de nós e cenas"
 
 msgid ""
 "This guide explains how to get nodes, create nodes, add them as a child, and "
 "instantiate scenes from code."
 msgstr ""
 
-#, fuzzy
 msgid "Getting nodes"
-msgstr "Criando nós"
+msgstr "Obtendo nós"
 
 msgid ""
 "You can get a reference to a node by calling the :ref:`Node.get_node() "
@@ -55,9 +53,8 @@ msgid ""
 "the line that gets the node to ``get_node(\"Skin\")`` in the script."
 msgstr ""
 
-#, fuzzy
 msgid "Node paths"
-msgstr "Copiar Caminho do Nó"
+msgstr "Caminhos dos nós"
 
 msgid ""
 "When getting a reference to a node, you're not limited to getting a direct "
@@ -153,13 +150,12 @@ msgstr ""
 msgid "Loading the scene from the hard drive."
 msgstr "Carregando a cena salva no disco rígido."
 
-#, fuzzy
 msgid ""
 "Creating an instance of the loaded :ref:`PackedScene <class_PackedScene>` "
 "resource."
 msgstr ""
-"Para obter uma instância da cena, o método :ref:`PackedScene.instance() "
-"<class_PackedScene_method_instance>` deve ser usado."
+"Criando uma instância do recurso carregado :ref:`PackedScene "
+"<class_PackedScene>`."
 
 msgid ""
 "Preloading the scene can improve the user's experience as the load operation "
@@ -178,16 +174,14 @@ msgstr ""
 "<class_PackedScene_method_instance>`. Ele retorna uma árvore de nós que você "
 "pode ter como filho do seu nó atual."
 
-#, fuzzy
 msgid ""
 "The advantage of this two-step process is you can keep a packed scene loaded "
 "and create new instances on the fly. For example, to quickly instance "
 "several enemies or bullets."
 msgstr ""
-"A vantagem deste processo de duas etapas é que uma cena empacotada pode ser "
-"mantida carregada e pronta para uso, de forma que você possa gerar quantas "
-"instâncias desejar. É útil especialmente para, rapidamente, criar instâncias "
-"de vários inimigos, balas e outras entidades na cena ativa."
+"A vantagem deste processo de duas etapas é que você pode manter uma cena "
+"compactada carregada e criar novas instâncias em tempo real. Por exemplo, "
+"para rapidamente instanciar vários inimigos ou balas."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

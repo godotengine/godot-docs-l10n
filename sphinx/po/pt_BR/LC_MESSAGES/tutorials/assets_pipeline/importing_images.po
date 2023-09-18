@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,18 +201,16 @@ msgstr ""
 "vantagens e desvantagens (|good| = melhor, |bad| = pior):"
 
 msgid "good"
-msgstr ""
+msgstr "bom"
 
-#, fuzzy
 msgid "bad"
-msgstr "e"
+msgstr "ruim"
 
 msgid "Uncompressed"
 msgstr "Sem Compressão"
 
-#, fuzzy
 msgid "Compress Lossless"
-msgstr "Compressão sem perdas (PNG)"
+msgstr "Compressão sem perdas"
 
 #, fuzzy
 msgid "Compress Lossy"
@@ -227,11 +225,9 @@ msgstr "Descrição"
 msgid "Stored as raw pixels"
 msgstr "Armazenado como pixels brutos"
 
-#, fuzzy
 msgid "Stored as Lossless WebP / PNG"
-msgstr "Compressão sem perdas (PNG)"
+msgstr "Armazenado como WebP sem perdas / PNG"
 
-#, fuzzy
 msgid "Stored as Lossy WebP"
 msgstr "Armazenado como WebP"
 
@@ -247,9 +243,8 @@ msgstr "|bad| Grande"
 msgid "|regular| Small"
 msgstr "|regular| Pequeno"
 
-#, fuzzy
 msgid "regular"
-msgstr "|regular| Pequeno"
+msgstr "regular"
 
 msgid "|good| Very Small"
 msgstr "|good| Muito Pequeno"
@@ -340,7 +335,6 @@ msgstr ""
 "Você terá que ajustar os shaders personalizados que usam o normal map para "
 "levar isso em conta."
 
-#, fuzzy
 msgid ""
 "Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is "
 "known as OpenGL style. If you've imported a material made to be used with "
@@ -439,7 +433,6 @@ msgstr ""
 msgid "Anisotropic"
 msgstr "Anisotrópico"
 
-#, fuzzy
 msgid ""
 "When textures are near parallel to the view (like floors), this option makes "
 "them have more detail by reducing blurriness."
@@ -450,7 +443,6 @@ msgstr ""
 msgid "sRGB"
 msgstr "sRGB"
 
-#, fuzzy
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -459,8 +451,8 @@ msgid ""
 msgstr ""
 "Godot usa o espaço de cores Linear ao renderizar em 3D. Texturas mapeadas "
 "para albedo ou canais de detalhes precisam ter essa opção ativada para que "
-"as cores pareçam corretas. Quando definido para o modo \"Detectar\", a "
-"textura será marcada como SRGB quando usada em canais de albedo."
+"as cores pareçam corretas. Quando definido para o modo** Detectar**, a "
+"textura será marcada como sRGB quando usada em canais de albedo."
 
 msgid ""
 "Since the texture will have its data modified when sRGB is enabled, this "
@@ -562,4 +554,4 @@ msgstr ""
 "original do projeto."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

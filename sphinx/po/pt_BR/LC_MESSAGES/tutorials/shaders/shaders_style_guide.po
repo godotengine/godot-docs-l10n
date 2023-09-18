@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Shaders style guide"
-msgstr "Guia de Estilo"
+msgstr "Guia de estilo de shaders"
 
-#, fuzzy
 msgid ""
 "This style guide lists conventions to write elegant shaders. The goal is to "
 "encourage writing clean, readable code and promote consistency across "
 "projects, discussions, and tutorials. Hopefully, this will also support the "
 "development of auto-formatting tools."
 msgstr ""
-"Este guia de estilo lista as convenções utilizadas para escrever código "
-"GDScript elegante. O objetivo é encorajar a escrita de código limpo e "
-"legível, além de promover a consistência entre projetos, discussões e "
-"tutoriais. Esperamos que isto também encoraje a criação de ferramentas de "
-"auto-formatação."
+"Este guia de estilo lista convenções para escrever de forma elegante os "
+"shaders. O objetivo é encorajar a escrita de código limpo e legível e "
+"promover a consistência entre projetos, discussões e tutoriais. Esperamos "
+"que isto também apoie o desenvolvimento de ferramentas de formatação "
+"automática."
 
 msgid ""
 "Since the Godot shader language is close to C-style languages and GLSL, this "
@@ -57,17 +55,15 @@ msgstr ""
 "Em geral, manter seu código consistente em seus projetos e em seu time é "
 "mais importante que seguir este guia à risca."
 
-#, fuzzy
 msgid ""
 "Godot's built-in shader editor uses a lot of these conventions by default. "
 "Let it help you."
 msgstr ""
-"O editor de scripts padrão do Godot usa várias dessas convenções por padrão. "
-"Deixe que isso te ajude."
+"O editor de shader integrado de Godot usa muitas dessas convenções por "
+"padrão. Deixa que te ajude."
 
-#, fuzzy
 msgid "Here is a complete shader example based on these guidelines:"
-msgstr "Aqui está um exemplo completo baseado nessas regras:"
+msgstr "Aqui está um exemplo completo de shader baseado nestas diretrizes:"
 
 msgid "Formatting"
 msgstr "Formatação"
@@ -97,9 +93,8 @@ msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr "Use **Tabs** ao invés de espaços para indentação. *(padrão do editor)*"
 
 msgid "Indentation"
-msgstr "Indentação"
+msgstr "Recuo"
 
-#, fuzzy
 msgid ""
 "Each indent level should be one tab greater than the block containing it."
 msgstr ""
@@ -119,9 +114,8 @@ msgstr ""
 "Use 2 níveis de indentação para distinguir linhas contínuas de blocos de "
 "código regulares."
 
-#, fuzzy
 msgid "Line breaks and blank lines"
-msgstr "Quebras de Linha e Linhas em Branco"
+msgstr "Quebras de linha e linhas em branco"
 
 msgid ""
 "For a general indentation rule, follow `the \"1TBS Style\" <https://en."
@@ -141,16 +135,16 @@ msgstr ""
 msgid "Blank lines"
 msgstr "Linhas em branco"
 
-#, fuzzy
 msgid "Surround function definitions with one (and only one) blank line:"
 msgstr ""
-"Deixe uma linha vazia em cima e embaixo de definições de classes e funções:"
+"Envolva as definições de função com uma (e apenas uma) linha em branco:"
 
-#, fuzzy
 msgid ""
 "Use one (and only one) blank line inside functions to separate logical "
 "sections."
-msgstr "Use uma linha vazia dentro de funções para separar seções lógicas."
+msgstr ""
+"Use uma (e apenas uma) linha em branco dentro das funções para separar "
+"seções lógicas."
 
 msgid "Line length"
 msgstr "Tamanho de linha"
@@ -158,15 +152,14 @@ msgstr "Tamanho de linha"
 msgid "Keep individual lines of code under 100 characters."
 msgstr "Mantenha linhas individuais de código abaixo de 100 caracteres."
 
-#, fuzzy
 msgid ""
 "If you can, try to keep lines under 80 characters. This helps to read the "
 "code on small displays and with two shaders opened side-by-side in an "
 "external text editor. For example, when looking at a differential revision."
 msgstr ""
-"Se puder, tente manter linhas com menos de 80 caracteres. Isso ajuda a ler o "
-"código em telas pequenas e com dois scripts abertos lado-a-lado em um editor "
-"de texto externo. Por exemplo, quando estiver olhando uma revisão diferente."
+"Se puder, tente manter as linhas com menos de 80 caracteres. Isso ajuda a "
+"ler o código em telas pequenas e com dois shaders abertos lado a lado em um "
+"editor de texto externo. Por exemplo, ao olhar para uma revisão diferencial."
 
 msgid "One statement per line"
 msgstr "Uma declaração por linha"
@@ -192,33 +185,30 @@ msgid ""
 "Don't use multiline comment syntax if your comment can fit on a single line:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "In the shader editor, to make the selected code a comment (or uncomment it), "
 "press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of "
 "the selected lines."
 msgstr ""
-"No editor de script, para desativar e ativar o código selecionado, aperte "
-"<kbd>Ctrl</kbd><kbd>K</kbd>. Isso adiciona um sinal de # no início das "
-"linhas selecionadas."
+"No editor de shader, para fazer o código selecionado um comentário (ou "
+"descomentar), pressione :kbd:`Ctrl + K`. Este recurso adiciona ou remove ``//"
+"`` no início das linhas selecionadas."
 
 msgid "Whitespace"
 msgstr "Espaço em branco"
 
-#, fuzzy
 msgid ""
 "Always use one space around operators and after commas. Also, avoid "
 "extraneous spaces in function calls."
 msgstr ""
-"Sempre use um espaço ao redor de operadores e depois de vírgulas. Evite "
-"espaços extras em referências de dicionário e chamadas de função."
+"Use sempre um espaço ao redor dos operadores e depois das vírgulas. Além "
+"disso, evite espaços estranhos em chamadas de função."
 
 msgid "Don't use spaces to align expressions vertically:"
 msgstr "Não use espaços para alinhas expressões verticalmente:"
 
-#, fuzzy
 msgid "Floating-point numbers"
-msgstr "Número de ponto flutuante (real)"
+msgstr "Números de ponto flutuante (real)"
 
 msgid ""
 "Always specify at least one digit for both the integer and fractional part. "
@@ -226,9 +216,8 @@ msgid ""
 "well as distinguishing numbers greater than 1 from those lower than 1."
 msgstr ""
 
-#, fuzzy
 msgid "Accessing vector members"
-msgstr "Acessando os Nós de Cena"
+msgstr "Acessando membros do vetor"
 
 msgid ""
 "Use ``r``, ``g``, ``b``, and ``a`` when accessing a vector's members if it "
@@ -268,9 +257,8 @@ msgstr ""
 msgid "Code order"
 msgstr "Ordem do código"
 
-#, fuzzy
 msgid "We suggest to organize shader code this way:"
-msgstr "Sugerimos que você organize seu código GDScript assim:"
+msgstr "Sugerimos organizar o código do shader desta forma:"
 
 msgid ""
 "We optimized the order to make it easy to read the code from top to bottom, "
@@ -282,13 +270,11 @@ msgstr ""
 "entender como ele funciona, e para evitar erros referentes à ordem da "
 "declaração de variáveis."
 
-#, fuzzy
 msgid "This code order follows two rules of thumb:"
-msgstr "Essa ordem de código segue quatro regras gerais:"
+msgstr "Essa ordem de código segue duas regras gerais:"
 
-#, fuzzy
 msgid "Metadata and properties first, followed by methods."
-msgstr "Propriedades e sinais vêm primeiro, seguidos por métodos."
+msgstr "Metadados e propriedades primeiro, seguidos por métodos."
 
 msgid ""
 "\"Public\" comes before \"private\". In a shader language's context, "
@@ -308,4 +294,4 @@ msgstr ""
 "onde a variável foi declarada."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

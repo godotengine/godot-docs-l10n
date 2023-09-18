@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -79,13 +79,12 @@ msgstr ""
 msgid "Creating a new module"
 msgstr "Criando um novo módulo"
 
-#, fuzzy
 msgid ""
 "Before creating a module, make sure to :ref:`download the source code of "
 "Godot and compile it <toc-devel-compiling>`."
 msgstr ""
-"Antes de criar um módulo, certifique-se de baixar o código fonte do Godot e "
-"conseguir compilá-lo. Existem tutoriais na documentação para isso."
+"Antes de criar um módulo, certifique-se de :ref:`baixar o código fonte do "
+"Godot e compilá-lo <toc-devel-compilação>`."
 
 msgid ""
 "To create a new module, the first step is creating a directory inside "
@@ -116,9 +115,8 @@ msgid ""
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
 
-#, fuzzy
 msgid "These files should contain the following:"
-msgstr "A cena Turba utilizará os seguintes nós:"
+msgstr "Esses arquivos devem conter o seguinte:"
 
 msgid ""
 "Next, we need to create a ``SCsub`` file so the build system compiles this "
@@ -275,21 +273,19 @@ msgid ""
 "`GDNative <doc_what_is_gdnative>` instead."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "So far, we defined a clean SCsub that allows us to add the sources of our "
 "new module as part of the Godot binary."
 msgstr ""
-"Até aqui nós definimos um limpo e simples SCsub que nos permite adicionar "
-"fonte de nosso novo módulo como parte do binário do Godot."
+"Até agora, definimos um SCsub limpo que nos permite acrescentar as fontes de "
+"nosso novo módulo como parte do binário Godot."
 
-#, fuzzy
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game, given we want all the modules in a single binary."
 msgstr ""
-"Essa estratégia estática é ótima quando nós queremos gerar um versão de "
-"lançamento de nosso jogo dado que queremos todos os módulos em um binário "
+"Essa estratégia estática é ótima quando nós queremos gerar uma versão de "
+"lançamento de nosso jogo, dado que queremos todos os módulos em um binário "
 "único."
 
 msgid ""
@@ -365,11 +361,8 @@ msgstr ""
 "Crie um novo diretório na raiz do módulo. O nome do diretório pode ser "
 "qualquer um, mas usaremos o nome ``doc_classes`` em toda esta seção."
 
-#, fuzzy
 msgid "Now, we need to edit ``config.py``, add the following snippet:"
-msgstr ""
-"Adicione um roteiro ao nó ``Turba`` e adicione as seguintes variáveis "
-"membros:"
+msgstr "Agora, precisamos editar ``config.py``, acrescente o seguinte trecho:"
 
 msgid ""
 "The ``get_doc_path()`` function is used by the build system to determine the "
@@ -390,9 +383,8 @@ msgid ""
 "the untracked files with ``git status``. For example::"
 msgstr ""
 
-#, fuzzy
 msgid "Example output::"
-msgstr "Exemplo:"
+msgstr "Exemplo de saída:"
 
 msgid "Now we can generate the documentation:"
 msgstr "Agora podemos gerar a documentação:"
@@ -444,9 +436,8 @@ msgid ""
 "you might encounter an error similar to the following:"
 msgstr ""
 
-#, fuzzy
 msgid "Adding custom editor icons"
-msgstr "Adicionando um script"
+msgstr "Adicionando ícones personalizados do editor"
 
 msgid ""
 "Similarly to how you can write self-contained documentation within a module, "
@@ -485,7 +476,7 @@ msgid "Summing up"
 msgstr "Resumindo"
 
 msgid "Remember to:"
-msgstr ""
+msgstr "Lembre-se de:"
 
 msgid "use ``GDCLASS`` macro for inheritance, so Godot can wrap it"
 msgstr "Use macro ``GDCLASS`` para herança, então Godot pode embrulhá-la"
@@ -527,4 +518,4 @@ msgstr ""
 "engine."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

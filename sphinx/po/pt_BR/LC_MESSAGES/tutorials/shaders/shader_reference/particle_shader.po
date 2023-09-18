@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Particle shaders"
-msgstr "Partículas"
+msgstr "Shaders de partículas"
 
 msgid ""
 "Particle shaders are a special type of vertex shader that runs before the "
@@ -27,6 +26,11 @@ msgid ""
 "color, position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
+"Shaders de partículas são um tipo especial de shader de vértice executado "
+"antes de o objeto ser desenhado. Eles são usados para calcular as "
+"propriedades do material, como cor, posição e rotação. Eles são desenhados "
+"com qualquer material regular para CanvasItem ou Spatial, dependendo se são "
+"2D ou 3D."
 
 msgid ""
 "Particle shaders are unique because they are not used to draw the object "
@@ -54,32 +58,31 @@ msgid "Render modes"
 msgstr "Modos de renderização"
 
 msgid "Render mode"
-msgstr ""
+msgstr "Modo de renderização"
 
 msgid "Description"
 msgstr "Descrição"
 
 msgid "**keep_data**"
-msgstr ""
+msgstr "**keep_data**"
 
 msgid "Do not clear previous data on restart."
 msgstr ""
 
 msgid "**disable_force**"
-msgstr ""
+msgstr "**disable_force**"
 
 msgid "Disable attractor force. (Not currently implemented in 3.1)"
 msgstr ""
 
 msgid "**disable_velocity**"
-msgstr ""
+msgstr "**disable_velocity**"
 
 msgid "Ignore **VELOCITY** value."
 msgstr ""
 
-#, fuzzy
 msgid "Built-ins"
-msgstr "Embutido"
+msgstr "Embutidos"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -88,15 +91,14 @@ msgid ""
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
 
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Tipos básicos de vetor"
+msgstr "Built-ins globais"
 
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
 
 msgid "Built-in"
-msgstr ""
+msgstr "Embutido"
 
 msgid "in float **TIME**"
 msgstr ""
@@ -104,9 +106,8 @@ msgstr ""
 msgid "Global time, in seconds."
 msgstr ""
 
-#, fuzzy
 msgid "Vertex built-ins"
-msgstr "Tipos básicos de vetor"
+msgstr "Vertex embutidos"
 
 msgid ""
 "In order to use the ``COLOR`` variable in a SpatialMaterial, set "
@@ -156,13 +157,13 @@ msgid "inout mat4 **TRANSFORM**"
 msgstr ""
 
 msgid "Particle transform."
-msgstr ""
+msgstr "Transformação de partícula."
 
 msgid "in float **LIFETIME**"
 msgstr ""
 
 msgid "Particle lifetime."
-msgstr ""
+msgstr "Tempo de vida da partícula."
 
 msgid "in float **DELTA**"
 msgstr ""
@@ -195,4 +196,4 @@ msgid "Random seed used as base for random."
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

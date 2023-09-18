@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Score and replay"
-msgstr "ScoreLabel"
+msgstr "Счет и повтор"
 
 msgid ""
 "In this part, we'll add the score, music playback, and the ability to "
@@ -118,9 +117,8 @@ msgstr ""
 "распространяться на все его дочерние элементы. Мы будем использовать его для "
 "установки шрифта нашей игры."
 
-#, fuzzy
 msgid "Creating a UI theme"
-msgstr "Создание темы"
+msgstr "Создание темы интерфейса"
 
 msgid ""
 "Once again, select the *UserInterface* node. In the *Inspector*, create a "
@@ -189,21 +187,18 @@ msgstr "|image8|"
 msgid "image8"
 msgstr "image8"
 
-#, fuzzy
 msgid ""
 "This one expects a font file like the ones you have on your computer. "
 "DynamicFont supports the following formats:"
 msgstr ""
-"Эта программа ожидает файл шрифта, подобный тем, которые есть на вашем "
-"компьютере. Два распространенных формата файлов шрифтов - TrueType Font "
-"(TTF) и OpenType Font (OTF)."
+"Это ожидает файл шрифта, подобный тем, которые есть на вашем компьютере. "
+"DynamicFont поддерживает следующие форматы:"
 
-#, fuzzy
 msgid "TrueType (``.ttf``)"
-msgstr "Truevision Targa (``.tga``)"
+msgstr "TrueType（\\ ``.ttf``\\ ）"
 
 msgid "OpenType (``.otf``)"
-msgstr "OpenType (``.otf``)"
+msgstr "OpenTypе (``.otf``)"
 
 msgid "Web Open Font Format 1 (``.woff``)"
 msgstr "Web Open Font Format 1 (``.woff``)"
@@ -211,7 +206,6 @@ msgstr "Web Open Font Format 1 (``.woff``)"
 msgid "Web Open Font Format 2 (``.woff2``, since Godot 3.5)"
 msgstr "Web Open Font Format 2 (``.woff2``, начиная с Godot 3.5)"
 
-#, fuzzy
 msgid ""
 "In the *FileSystem* dock, expand the ``fonts`` directory and click and drag "
 "the ``Montserrat-Medium.ttf`` file we included in the project onto the *Font "
@@ -234,9 +228,8 @@ msgstr "|image9|"
 msgid "image9"
 msgstr "image9"
 
-#, fuzzy
 msgid "Keeping track of the score"
-msgstr "Создание сервера Godot"
+msgstr "Отслеживание счета"
 
 msgid ""
 "Let's work on the score next. Attach a new script to the *ScoreLabel* and "
@@ -316,10 +309,11 @@ msgstr ""
 "преобразует значения в текст, что удобно для вывода текста в метках или с "
 "помощью функции ``print()``."
 
-#, fuzzy
 msgid ""
 "You can learn more about string formatting here: :ref:`doc_gdscript_printf`."
-msgstr "GDScript также поддерживает :ref:`doc_gdscript_printf`."
+msgstr ""
+"Вы можете узнать больше о форматировании строк здесь: :ref:"
+"`doc_gdscript_printf`."
 
 msgid ""
 "You can now play the game and squash a few enemies to see the score increase."
@@ -347,9 +341,8 @@ msgstr ""
 "вполне можно ограничиться простым кодом. Программирование - это всегда "
 "баланс."
 
-#, fuzzy
 msgid "Retrying the game"
-msgstr "Запуск игры"
+msgstr "Повторная попытка игры"
 
 msgid ""
 "We'll now add the ability to play again after dying. When the player dies, "
@@ -464,9 +457,8 @@ msgstr "|image17|"
 msgid "image17"
 msgstr "image17"
 
-#, fuzzy
 msgid "Coding the retry option"
-msgstr "Настройка презентации"
+msgstr "Кодирование опции повторной попытки"
 
 msgid ""
 "We can now head to the code to show and hide the *Retry* node when the "
@@ -559,13 +551,11 @@ msgstr ""
 "Нажмите кнопку *Other Node*, чтобы создать *AudioStreamPlayer*, и "
 "переименуйте его в *MusicPlayer*."
 
-#, fuzzy
 msgid "|image19|"
-msgstr "|image1|"
+msgstr "|изображение19|"
 
-#, fuzzy
 msgid "image19"
-msgstr "|image1|"
+msgstr "изображение19"
 
 msgid ""
 "We included a music soundtrack in the ``art/`` directory, ``House In a "
@@ -577,25 +567,21 @@ msgstr ""
 "``. Щёлкните и перетащите его на свойство *Stream* в инспекторе. Также "
 "включите *Autoplay*, чтобы музыка автоматически проигрывалась в начале игры."
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|изображение20|"
 
-#, fuzzy
 msgid "image20"
-msgstr "|image2|"
+msgstr "изображение20"
 
-#, fuzzy
 msgid "Save the scene as ``MusicPlayer.tscn``."
-msgstr "Наконец, сохраните сцену с именем ``sayhello.tscn``."
+msgstr "Сохраните сцену как ``MusicPlayer.tscn``."
 
-#, fuzzy
 msgid ""
 "We have to register it as an autoload. Head to the *Project -> Project "
 "Settings…* menu and click on the *Autoload* tab."
 msgstr ""
-"Чтобы автоматически загрузить сцену или скрипт, выберите **Project > Project "
-"Settings** в меню и перейдите на вкладку **AutoLoad**."
+"Мы должны зарегистрировать его как автозагрузку. Перейдите в меню *Project -"
+"> Project Settings…* и нажмите на вкладку *Autoload*."
 
 msgid ""
 "In the *Path* field, you want to enter the path to your scene. Click the "
@@ -606,13 +592,11 @@ msgstr ""
 "открыть браузер файлов, и дважды щёлкните на ``MusicPlayer.tscn``. Затем "
 "нажмите кнопку *Add* справа, чтобы зарегистрировать узел."
 
-#, fuzzy
 msgid "|image21|"
-msgstr "|image2|"
+msgstr "|изображение21|"
 
-#, fuzzy
 msgid "image21"
-msgstr "|image2|"
+msgstr "изображение21"
 
 msgid ""
 "If you run the game now, the music will play automatically. And even when "
@@ -630,13 +614,11 @@ msgstr ""
 "под капотом. Когда вы запускаете игру, ваша панель *Scene* изменяется, чтобы "
 "показать вам две вкладки: *Remote* и *Local*."
 
-#, fuzzy
 msgid "|image22|"
-msgstr "|image2|"
+msgstr "|изображение22|"
 
-#, fuzzy
 msgid "image22"
-msgstr "|image2|"
+msgstr "изображение22"
 
 msgid ""
 "The *Remote* tab allows you to visualize the node tree of your running game. "
@@ -647,13 +629,11 @@ msgstr ""
 "Здесь вы увидите узел *Main* и всё, что содержит сцена, а также экземпляры "
 "мобов в нижней части."
 
-#, fuzzy
 msgid "|image23|"
-msgstr "|image2|"
+msgstr "|изображение23|"
 
-#, fuzzy
 msgid "image23"
-msgstr "|image2|"
+msgstr "изображение23"
 
 msgid ""
 "At the top are the autoloaded *MusicPlayer* and a *root* node, which is your "

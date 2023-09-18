@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -161,13 +161,12 @@ msgstr ""
 "уменьшения зазора, создаваемого смещением. Контакт теней доступен только при "
 "использовании GLES3."
 
-#, fuzzy
 msgid ""
 "**Reverse Cull Face**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
-"**Обратное Отсечение Граней**: Некоторые сцены работают лучше когда "
-"отображение теней отрисовывается с инвертированным отсечением граней."
+"**Reverse Cull Face**: Некоторые сцены работают лучше, когда отображение "
+"теней визуализируется с перевернутой отбраковкой лиц."
 
 msgid ""
 "Below is an image of what tweaking bias looks like. Default values work for "
@@ -177,13 +176,13 @@ msgstr ""
 "работают в общем случае, но в целом всё зависит от размера и сложности "
 "геометрии."
 
-#, fuzzy
 msgid ""
 "Finally, if gaps can't be solved, the **Contact** option can help (at a "
 "performance cost):"
-msgstr "Наконец, если зазоры нельзя убрать, опция **Контакт** может помочь:"
+msgstr ""
+"Наконец, если зазоры не удаётся устранить, на помощь может прийти опция "
+"**Contact** (влияет на производительность):"
 
-#, fuzzy
 msgid ""
 "Any sort of bias issues can always be fixed by increasing the shadow map "
 "resolution, although that may lead to decreased performance."
@@ -191,7 +190,6 @@ msgstr ""
 "Любую проблему со смещением можно разрешить повышая разрешения карты теней, "
 "но это ухудшит производительность на слабом железе."
 
-#, fuzzy
 msgid ""
 "If shadow biasing is a problem in your scene, the following settings are a "
 "good starting point:"
@@ -223,16 +221,14 @@ msgstr ""
 "**Reverse Cull Face** включен, но должно быть положительным, когда он "
 "отключен."
 
-#, fuzzy
 msgid ""
 "For DirectionalLight, set the directional shadow **Normal Bias** to ``0.0`` "
 "and **Bias Split Scale** to ``0.0``. Depending on your scene, you may also "
 "want to further decrease **Bias** to a value between ``-0.05`` and ``-0.1``."
 msgstr ""
-"Для DirectionalLight установите для направленной тени **Normal Bias** "
-"значение ``0.0`` и **Bias Split Scale** значение ``0.0``. В зависимости от "
-"сцены, вы можете дополнительно уменьшить **Bias** до значения между "
-"``-0.05`` и ``-0.1``."
+"Для DirectionalLight установите направленную тень **Normal Bias** на ``0.0`` "
+"и **Bias Split Scale** на ``0.0``. В зависимости от вашей сцены вы также "
+"можете дополнительно уменьшить **Bias** до значения от ``-0.05`` до ``-0.1``."
 
 msgid ""
 "Following the above tips should make it possible to avoid gaps in shadows "
@@ -305,15 +301,12 @@ msgstr ""
 "теней. Это позволяет маленьким поверхностям расположенным близко к камере "
 "иметь такое же большое разрешение теней, как и у далеких поверхностей."
 
-#, fuzzy
 msgid "With this, shadows become more detailed:"
 msgstr "При этом тени становятся более детализированными:"
 
-#, fuzzy
 msgid "To control PSSM, a number of parameters are exposed:"
 msgstr "Для управления PSSM воздействию подвергается ряд параметров:"
 
-#, fuzzy
 msgid ""
 "Each split distance is controlled relative to the camera far (or shadow "
 "**Max Distance** if greater than zero), so *0.0* is the eye position and "
@@ -326,16 +319,15 @@ msgstr ""
 "глаз, а *1.0* - место, где тень заканчивается на расстоянии. Сплиты "
 "находятся между ними. Значения по умолчанию обычно работают хорошо, но для "
 "придания большей детализации близким объектам (например, персонажу в игре от "
-"третьего лица) первое деление обычно немного подстраивается."
+"третьего лица) первое деление можно немного править."
 
-#, fuzzy
 msgid ""
 "Always make sure to set a shadow *Max Distance* according to what the scene "
 "needs. A lower maximum distance will result in better-looking shadows."
 msgstr ""
 "Всегда следите за тем, чтобы установить *максимальное расстояние тени* в "
 "соответствии с тем, что требуется сцене. Меньшее максимальное расстояние "
-"приведет к более красивым теням."
+"приведёт к более красивым теням."
 
 msgid ""
 "Sometimes, the transition between a split and the next can look bad. To fix "
@@ -511,9 +503,8 @@ msgstr ""
 "диафрагме более 89 градусов тени перестают работать для спотов, и вам "
 "следует рассмотреть возможность использования вместо них омни-света."
 
-#, fuzzy
 msgid "Shadow atlas"
-msgstr "Атлас теней(Карта теней)"
+msgstr "Shadow atlas (Атлас теней)"
 
 msgid ""
 "Unlike Directional lights, which have their own shadow texture, Omni and "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,18 +29,17 @@ msgstr ""
 "следующем уроке мы сделаем так, чтобы игрок умирал, когда монстр ударяет его "
 "о землю."
 
-#, fuzzy
 msgid ""
 "First, we have to change a few settings related to physics interactions. "
 "Enter the world of :ref:`physics layers "
 "<doc_physics_introduction_collision_layers_and_masks>`."
 msgstr ""
-"Для получения дополнительной информации см. :ref:"
-"`doc_physics_introduction_collision_layers_and_masks`."
+"Во-первых, мы должны изменить несколько настроек, связанных с физическими "
+"взаимодействиями. Войдите в мир "
+"<doc_physics_introduction_collision_layers_and_masks>`."
 
-#, fuzzy
 msgid "Controlling physics interactions"
-msgstr "Управление анимацией"
+msgstr "Управление физическими взаимодействиями"
 
 msgid ""
 "Physics bodies have access to two complementary properties: layers and "
@@ -86,9 +85,8 @@ msgstr ""
 "Физические слои представлены числами, но мы можем дать им имена, чтобы "
 "отслеживать, что есть что."
 
-#, fuzzy
 msgid "Setting layer names"
-msgstr "Настройка вашего проекта"
+msgstr "Установка имен слоев"
 
 msgid ""
 "Let's give our physics layers a name. Go to *Project -> Project Settings*."
@@ -122,9 +120,8 @@ msgstr "image1"
 msgid "Now, we can assign them to our physics nodes."
 msgstr "Теперь мы можем назначить их нашим физическим узлам."
 
-#, fuzzy
 msgid "Assigning layers and masks"
-msgstr "Слои и маски столкновений"
+msgstr "Назначение слоев и масок"
 
 msgid ""
 "In the *Main* scene, select the *Ground* node. In the *Inspector*, expand "
@@ -237,9 +234,8 @@ msgstr ""
 "Мобам не нужно маскировать слой \"world\", потому что они движутся только в "
 "плоскости XZ. Мы не применяем к ним гравитацию."
 
-#, fuzzy
 msgid "Jumping"
-msgstr "Амортизация"
+msgstr "Прыжки"
 
 msgid ""
 "The jumping mechanic itself requires only two lines of code. Open the "
@@ -296,9 +292,8 @@ msgstr ""
 "Обратите внимание, что ось Y положительно направлена вверх. Это отличается "
 "от 2D, где ось Y положительно направлена вниз."
 
-#, fuzzy
 msgid "Squashing monsters"
-msgstr "Контейнеры"
+msgstr "Раздавить монстров"
 
 msgid ""
 "Let's add the squash mechanic next. We're going to make the character bounce "

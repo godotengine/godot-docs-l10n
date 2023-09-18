@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Real Time Navigation (3D)"
-msgstr "Navegação Visível"
+msgstr "Navegação em Tempo Real (3D)"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -31,21 +30,20 @@ msgid ""
 msgstr ""
 
 msgid ":ref:`Navigation<class_Navigation>` (deprecated)"
-msgstr ""
+msgstr ":ref:`Navigation<class_Navigation>` (obsoleto)"
 
 msgid ":ref:`NavigationMeshInstance<class_NavigationMeshInstance>`"
-msgstr ""
+msgstr ":ref:`NavigationMeshInstance<class_NavigationMeshInstance>`"
 
-#, fuzzy
 msgid ":ref:`NavigationAgent<class_NavigationAgent>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`NavigationAgent<class_NavigationAgent>`"
+
+msgid ":ref:`NavigationObstacle<class_NavigationObstacle>`"
+msgstr ":ref:`NavigationObstacle<class_NavigationObstacle>`"
 
 #, fuzzy
-msgid ":ref:`NavigationObstacle<class_NavigationObstacle>`"
-msgstr ":ref:`Dictionary <class_Dictionary>`"
-
 msgid "The map and navigation regions"
-msgstr ""
+msgstr "O mapa e as regiões de navegação"
 
 msgid ""
 "The \"map\" is the entire world for navigation, it's similar to \"space\" "
@@ -93,9 +91,8 @@ msgid ""
 "navigating onto a moving platform that has stopped will work."
 msgstr ""
 
-#, fuzzy
 msgid "NavigationAgent3D"
-msgstr "Navegação"
+msgstr "NavigationAgent3D"
 
 msgid ""
 "Navigation agent nodes are what actually does the pathfinding in a scene, "
@@ -108,9 +105,8 @@ msgid ""
 "with several points on the way to the final destination."
 msgstr ""
 
-#, fuzzy
 msgid "RVO processing"
-msgstr "Carregamento em segundo plano"
+msgstr "Processamento RVO"
 
 msgid ""
 "RVO stands for reciprocal velocity obstacle. RVO processing is a way to "
@@ -134,9 +130,8 @@ msgid ""
 "use a navigation region at the same time."
 msgstr ""
 
-#, fuzzy
 msgid "NavigationObstacle3D"
-msgstr "Navegação"
+msgstr "NavigationObstacle3D"
 
 msgid ""
 "This node is used to mark physics bodies that move around a navigation area "
@@ -146,9 +141,8 @@ msgid ""
 "navigation agent nodes will avoid it while pathfinding."
 msgstr ""
 
-#, fuzzy
 msgid "Generating a path (old method)"
-msgstr "Configurando"
+msgstr "Gerando um caminho (método antigo)"
 
 msgid ""
 "This is the old method for generating a navigation path, it will be removed "
@@ -172,4 +166,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

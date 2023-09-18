@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "CPU optimization"
-msgstr "Otimização"
+msgstr "Otimização da CPU"
 
-#, fuzzy
 msgid "Measuring performance"
-msgstr "Performance"
+msgstr "Medindo o desempenho"
 
 msgid ""
 "We have to know where the \"bottlenecks\" are to know how to speed up our "
@@ -38,9 +36,8 @@ msgid ""
 "For the CPU, the easiest way to identify bottlenecks is to use a profiler."
 msgstr ""
 
-#, fuzzy
 msgid "CPU profilers"
-msgstr "Profilador"
+msgstr "Perfiladores de CPU"
 
 msgid ""
 "Profilers run alongside your program and take timing measurements to work "
@@ -86,9 +83,8 @@ msgstr ""
 "Para mais informações sobre como usar o analisador de perfis embutido do "
 "Godot, veja :ref:`doc_debugger_panel`."
 
-#, fuzzy
 msgid "External profilers"
-msgstr "Arquivos Externos"
+msgstr "Perfiladores externos"
 
 msgid ""
 "Although the Godot IDE profiler is very convenient and useful, sometimes you "
@@ -147,9 +143,8 @@ msgid ""
 "bottlenecks in this area."
 msgstr ""
 
-#, fuzzy
 msgid "Manually timing functions"
-msgstr "Funções estáticas"
+msgstr "Funções de temporização manual"
 
 msgid ""
 "Another handy technique, especially once you have identified the bottleneck "
@@ -174,7 +169,7 @@ msgid ""
 msgstr ""
 
 msgid "Caches"
-msgstr ""
+msgstr "Caches"
 
 msgid ""
 "CPU caches are something else to be particularly aware of, especially when "
@@ -226,9 +221,8 @@ msgid ""
 "using :ref:`GDNative <toc-tutorials-gdnative>`."
 msgstr ""
 
-#, fuzzy
 msgid "Languages"
-msgstr "Linguagem"
+msgstr "Idiomas"
 
 msgid ""
 "Godot supports a number of different languages, and it is worth bearing in "
@@ -265,9 +259,8 @@ msgid ""
 "use *object pooling*, which is outside the scope of this guide."
 msgstr ""
 
-#, fuzzy
 msgid "Other languages"
-msgstr "Linguagem de concepção"
+msgstr "Outras línguas"
 
 msgid ""
 "Third parties provide support for several other languages, including `Rust "
@@ -305,14 +298,19 @@ msgid ""
 "these race conditions."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Threads can also make debugging considerably more difficult. The GDScript "
 "debugger doesn't support setting up breakpoints in threads yet."
 msgstr ""
+"Os threads também podem tornar a depuração consideravelmente mais difícil. O "
+"depurador GDScript não suporta a configuração de breakpoints em threads "
+"ainda."
 
-#, fuzzy
 msgid "For more information on threads, see :ref:`doc_using_multiple_threads`."
-msgstr "Para mais, veja a página: ref: `doc_c_sharp_differences`."
+msgstr ""
+"Para obter mais informações sobre threads, consulte: ref: "
+"`doc_c_sharp_differences`."
 
 msgid "SceneTree"
 msgstr "SceneTree"
@@ -355,9 +353,8 @@ msgid ""
 "objects."
 msgstr ""
 
-#, fuzzy
 msgid "Here are some techniques to speed up physics:"
-msgstr "Há algumas coisas para observar:"
+msgstr "Aqui estão algumas técnicas para acelerar a física:"
 
 msgid ""
 "Try using simplified versions of your rendered geometry for collision "
@@ -397,4 +394,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

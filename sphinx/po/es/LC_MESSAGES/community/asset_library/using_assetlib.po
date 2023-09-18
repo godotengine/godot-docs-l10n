@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,7 +116,6 @@ msgstr ""
 msgid "|image1|"
 msgstr "|image1|"
 
-#, fuzzy
 msgid "image1"
 msgstr "|image1|"
 
@@ -139,9 +138,8 @@ msgstr "Ahora veamos cómo es la página de un recurso y qué contiene."
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "|image2|"
+msgstr "image2"
 
 msgid "Asset's thumbnail/icon."
 msgstr "La miniatura/icono del recurso."
@@ -199,7 +197,6 @@ msgstr ""
 msgid "|image3|"
 msgstr "|image3|"
 
-#, fuzzy
 msgid "image3"
 msgstr "|image3|"
 
@@ -214,9 +211,8 @@ msgstr ""
 msgid "|image4|"
 msgstr "|image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "|image4|"
+msgstr "image4"
 
 msgid "Then, you can use your username and password to log in."
 msgstr "Entonces, puedes usar tu nombre de usuario y contraseña para entrar."
@@ -224,9 +220,8 @@ msgstr "Entonces, puedes usar tu nombre de usuario y contraseña para entrar."
 msgid "|image5|"
 msgstr "|image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "|image5|"
+msgstr "image5"
 
 msgid ""
 "This will change the look of the AssetLib header. Now you get access to a "
@@ -251,19 +246,17 @@ msgstr "La capacidad de presentar nuevos recursos."
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "|image6|"
+msgstr "image6"
 
-#, fuzzy
 msgid ""
 "You can learn how to submit assets to the Library, and what the asset "
 "submission guidelines are, in the next part of this tutorial, :ref:"
 "`doc_submitting_to_assetlib`."
 msgstr ""
-"Puede aprender cómo presentar los recursos a la Biblioteca, y cuáles son las "
-"pautas de presentación de recursos, en la siguiente parte de este tutorial, :"
-"ref:`doc_uploading_to_assetlib`."
+"Puedes aprender cómo enviar activos a la Biblioteca, así como conocer las "
+"pautas para enviar activos, en la siguiente parte de este tutorial: :ref:"
+"`doc_submitting_to_assetlib`."
 
 msgid "In the editor"
 msgstr "En el editor"
@@ -273,35 +266,46 @@ msgid ""
 "you're browsing the project manager's **Templates** tab or the editor's "
 "**AssetLib** tab."
 msgstr ""
+"El editor mostrará distintas categorías de recursos en función de si está "
+"navegando por la pestaña **Plantillas(Templates)** del administrador de "
+"proyectos o por la pestaña **Biblioteca de Recursos(AssetLib)** del editor."
 
 msgid ""
 "The project manager's **Templates** tab will only display assets that are "
 "standalone projects by themselves. This is denoted on the asset library with "
 "the *Templates*, *Demos* and *Projects* categories."
 msgstr ""
+"La pestaña **Plantillas(Templates)** del administrador de proyectos sólo "
+"mostrará recursos que sean proyectos independientes por sí mismos. Esto se "
+"indica en la biblioteca de recursos con las categorías *Plantillas*, *Demos* "
+"y *Proyectos*."
 
 msgid ""
 "The editor's **AssetLib** tab will only display assets that are *not* "
 "standalone projects by themselves. In other words, it will display assets "
 "from all categories except *Templates*, *Demos* and *Projects*."
 msgstr ""
+"La pestaña **Biblioteca de Recursos(AssetLib)** del editor sólo mostrará "
+"activos que *no* sean proyectos independientes por sí mismos. En otras "
+"palabras, mostrará recursos de todas las categorías excepto *Plantillas*, "
+"*Demos* y *Proyectos*."
 
 msgid "You can also access the AssetLib directly from Godot:"
 msgstr ""
+"También puede acceder a la Biblioteca de Recursos(AssetLib) directamente "
+"desde Godot:"
 
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "|image7|"
+msgstr "image7"
 
 msgid "|image14|"
 msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "|image14|"
+msgstr "image14"
 
 msgid ""
 "Click on it, and Godot will fetch info about the assets from the AssetLib. "
@@ -315,9 +319,8 @@ msgstr ""
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "|image8|"
+msgstr "image8"
 
 msgid ""
 "Similarly to the web version of the AssetLib, here you can search for assets "
@@ -327,7 +330,6 @@ msgstr ""
 "recursos por categoría, nombre y ordenarlos por factores como el nombre o la "
 "fecha de edición."
 
-#, fuzzy
 msgid ""
 "Notably, you can only fetch assets for the current version of Godot you are "
 "running. Projects, Demos and Templates can be downloaded from the Project "
@@ -337,15 +339,15 @@ msgid ""
 "in real-time (you do not have to press Search after every change to your "
 "search query for the changes to take place)."
 msgstr ""
-"Notablemente, sólo puedes buscar activos para la versión actual de Godot que "
-"estás ejecutando. Los proyectos, demostraciones y plantillas pueden ser "
-"descargados desde la vista de Administrador de Proyectos de la AssetLib. Los "
+"Destacablemente, solo puedes obtener activos para la versión actual de Godot "
+"que estás utilizando. Los proyectos, demos y plantillas pueden descargarse "
+"desde la vista del Administrador de Proyectos de la AssetLib. Los "
 "complementos (herramientas, scripts, materiales, etc.) se pueden descargar "
-"desde la vista de la AssetLib del proyecto y añadirlos al proyecto actual. "
-"Además, a diferencia de cuando se utiliza el frontend web, los resultados de "
-"la búsqueda se actualizan en tiempo real (no es necesario pulsar Buscar "
-"después de cada cambio en la consulta de búsqueda para que se produzcan los "
-"cambios)."
+"desde la AssetLib dentro del proyecto y añadirse al proyecto actual. Además, "
+"a diferencia de cuando se utiliza la interfaz web, los resultados de "
+"búsqueda se actualizan en tiempo real (no es necesario pulsar \"Buscar\" "
+"después de cada cambio en la consulta de búsqueda para que los cambios "
+"surtan efecto)."
 
 msgid ""
 "In the future, you will be able to choose a different AssetLib provider to "
@@ -366,9 +368,8 @@ msgstr "Cuando haga clic en un recurso, verá más información sobre él."
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "|image9|"
+msgstr "image9"
 
 msgid ""
 "If you click on the Install button, Godot will fetch an archive of the "
@@ -382,9 +383,8 @@ msgstr ""
 msgid "|image10|"
 msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "|image10|"
+msgstr "image10"
 
 msgid ""
 "When it finishes, you can proceed to install it using the Install button. "
@@ -396,9 +396,8 @@ msgstr ""
 msgid "|image11|"
 msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "|image11|"
+msgstr "image11"
 
 msgid ""
 "Here you can see a list of all the files that will be installed. You can "
@@ -416,9 +415,8 @@ msgstr ""
 msgid "|image12|"
 msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "|image12|"
+msgstr "image12"
 
 msgid ""
 "Once you are done, you can press the Install button, which will unzip all "
@@ -434,9 +432,8 @@ msgstr ""
 msgid "|image13|"
 msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "|image13|"
+msgstr "image13"
 
 msgid ""
 "You may also use the Import button to import asset archives obtained "

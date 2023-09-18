@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Differences between GLES2 and GLES3"
 msgstr "Diferenças gerais entre o C# e o GDScript"
 
@@ -52,7 +51,7 @@ msgid ""
 msgstr ""
 
 msgid "``SCREEN_TEXTURE`` mip-maps"
-msgstr ""
+msgstr "``SCREEN_TEXTURE`` mip-maps"
 
 msgid ""
 "In GLES2, ``SCREEN_TEXTURE`` (accessed via a :ref:`ShaderMaterial "
@@ -61,16 +60,15 @@ msgid ""
 msgstr ""
 
 msgid "``DEPTH_TEXTURE``"
-msgstr ""
+msgstr "``DEPTH_TEXTURE``"
 
 msgid ""
 "While GLES2 supports ``DEPTH_TEXTURE`` in shaders, it may not work on some "
 "old hardware (especially mobile)."
 msgstr ""
 
-#, fuzzy
 msgid "Color space"
-msgstr "Cor"
+msgstr "Espaço de cor"
 
 msgid ""
 "GLES2 and GLES3 are in different color spaces. This means that colors will "
@@ -99,9 +97,8 @@ msgid ""
 "GLES2."
 msgstr ""
 
-#, fuzzy
 msgid "SpatialMaterial features"
-msgstr "Recursos decisivos"
+msgstr "Características do SpatialMaterial"
 
 msgid ""
 "In GLES2, the following advanced rendering features in the :ref:"
@@ -118,7 +115,7 @@ msgid "Anisotropy"
 msgstr "Anisotrópico"
 
 msgid "Clearcoat"
-msgstr ""
+msgstr "Clearcoat"
 
 msgid "Depth mapping"
 msgstr ""
@@ -133,9 +130,8 @@ msgid ""
 "scattering) in your shader, but nothing will happen."
 msgstr ""
 
-#, fuzzy
 msgid "Environment features"
-msgstr "Funções e Variáveis"
+msgstr "Características de Environment"
 
 msgid ""
 "In GLES2, the following features in the :ref:`Environment "
@@ -146,7 +142,7 @@ msgid "Auto exposure"
 msgstr ""
 
 msgid "Tonemapping"
-msgstr ""
+msgstr "Mapeamento de tom"
 
 msgid "Screen space reflections"
 msgstr ""
@@ -160,9 +156,8 @@ msgstr ""
 msgid "Sky (including procedural sky)"
 msgstr ""
 
-#, fuzzy
 msgid "Ambient light"
-msgstr "Adicionando um script"
+msgstr "Ambient light"
 
 msgid "Fog"
 msgstr "Névoa"
@@ -174,10 +169,10 @@ msgid "Glow (also known as bloom)"
 msgstr ""
 
 msgid "Adjustment"
-msgstr ""
+msgstr "Ajuste"
 
 msgid "GIProbes"
-msgstr ""
+msgstr "GIProbes"
 
 msgid ""
 ":ref:`GIProbes <class_GIProbe>` do not work in GLES2. Instead use :ref:"
@@ -186,16 +181,15 @@ msgid ""
 msgstr ""
 
 msgid "Contact shadows"
-msgstr ""
+msgstr "Sombras de contato"
 
 msgid ""
 "The ``shadow_contact`` property of :ref:`Lights <class_Light>` is not "
 "supported in GLES2 and so does nothing."
 msgstr ""
 
-#, fuzzy
 msgid "Light performance"
-msgstr "Performance"
+msgstr "Desempenho de luzes"
 
 msgid ""
 "In GLES2, performance scales poorly with several lights, as each light is "
@@ -205,7 +199,7 @@ msgid ""
 msgstr ""
 
 msgid "Texture compression"
-msgstr ""
+msgstr "Compressão de texturas"
 
 msgid ""
 "On mobile, GLES2 requires ETC texture compression, while GLES3 requires "
@@ -221,9 +215,8 @@ msgid ""
 "after selecting them in the FileSystem dock."
 msgstr ""
 
-#, fuzzy
 msgid "Blend shapes"
-msgstr "Formas de colisão"
+msgstr "Mesclar formas"
 
 msgid ""
 "In GLES2, blend shapes are implemented on the CPU instead of the GPU. "
@@ -252,74 +245,84 @@ msgid "vec_type **modf** ( vec_type x, out vec_type i )"
 msgstr ""
 
 msgid "vec_int_type **floatBitsToInt** ( vec_type x )"
-msgstr ""
+msgstr "vec_int_type **floatBitsToInt** ( vec_type x )"
 
 msgid "vec_uint_type **floatBitsToUint** ( vec_type x )"
-msgstr ""
+msgstr "vec_uint_type **floatBitsToUint** ( vec_type x )"
 
 msgid "vec_type **intBitsToFloat** ( vec_int_type x )"
-msgstr ""
+msgstr "vec_type **intBitsToFloat** ( vec_int_type x )"
 
 msgid "vec_type **uintBitsToFloat** ( vec_uint_type x )"
-msgstr ""
+msgstr "vec_type **uintBitsToFloat** ( vec_uint_type x )"
 
 msgid "ivec2 **textureSize** ( sampler2D_type s, int lod )"
-msgstr ""
+msgstr "ivec2 **textureSize** ( sampler2D_type s, int lod )"
 
 msgid "See workaround below"
-msgstr ""
+msgstr "Veja a solução alternativa abaixo"
 
 msgid "ivec2 **textureSize** ( samplerCube s, int lod )"
-msgstr ""
+msgstr "ivec2 **textureSize** ( samplerCube s, int lod )"
 
 msgid "vec4_type **texture** ( sampler_type s, vec_type uv [, float bias] )"
-msgstr ""
+msgstr "vec4_type **texture** ( sampler_type s, vec_type uv [, float bias] )"
 
 msgid "**bias** not available in vertex shader"
-msgstr ""
+msgstr "**bias** não disponível no shader de vértice"
 
 msgid ""
 "vec4_type **textureProj** ( sampler_type s, vec_type uv [, float bias] )"
 msgstr ""
+"vec4_type **textureProj** ( sampler_type s, vec_type uv [, float bias] )"
 
 msgid "vec4_type **textureLod** ( sampler_type s, vec_type uv, float lod )"
-msgstr ""
+msgstr "vec4_type **textureLod** ( sampler_type s, vec_type uv, float lod )"
 
 msgid "Only available in vertex shader on some hardware"
-msgstr ""
+msgstr "Disponível apenas no vertex shader em alguns hardwares"
 
 msgid "vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 msgstr ""
+"vec4_type **textureProjLod** ( sampler_type s, vec_type uv, float lod )"
 
 msgid ""
 "vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
 "vec_type dPdy )"
 msgstr ""
+"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy )"
 
 msgid "vec_type **dFdx** ( vec_type p )"
-msgstr ""
+msgstr "vec_type **dFdx** ( vec_type p )"
 
 msgid "vec_type **dFdy** ( vec_type p )"
-msgstr ""
+msgstr "vec_type **dFdy** ( vec_type p )"
 
 msgid "vec_type **fwidth** ( vec_type p )"
-msgstr ""
+msgstr "vec_type **fwidth** ( vec_type p )"
 
 msgid ""
 "Functions not in GLES2's GLSL were added with Godots own shader standard "
 "library. These functions may perform worse in GLES2 compared to GLES3."
 msgstr ""
+"As funções que não estão no GLSL do GLES2 foram adicionadas com a biblioteca "
+"padrão de shader da própria Godot. Essas funções podem ter um desempenho "
+"pior no GLES2 em comparação com o GLES3."
 
 msgid "``textureSize()`` workaround"
-msgstr ""
+msgstr "``textureSize()`` solução alternativa"
 
 msgid ""
 "GLES2 does not support ``textureSize()``. You can get the size of a texture "
 "the old fashioned way by passing in a uniform with the texture size yourself."
 msgstr ""
+"GLES2 não suporta ``textureSize()``. Você pode obter o tamanho de uma "
+"textura à moda antiga, passando você mesmo um uniforme com o tamanho da "
+"textura."
 
 msgid "Built in variables and render modes"
-msgstr ""
+msgstr "Variáveis integradas e modos de renderização"
 
 msgid ""
 "Godot also provides many built-in variables and render modes. Some cannot be "
@@ -327,27 +330,31 @@ msgid ""
 "that, when written to, will have no effect or could even cause issues when "
 "using the GLES2 backend."
 msgstr ""
+"Godot também fornece muitas variáveis embutidas e modos de renderização. "
+"Alguns não podem ser suportados no GLES2. Abaixo está uma lista de variáveis "
+"embutidas e modos de renderização que, quando gravados, não terão efeito ou "
+"podem até causar problemas ao usar o back-end GLES2."
 
 msgid "Variable / Render Mode"
-msgstr ""
+msgstr "Variável / Modo de Renderização"
 
 msgid "``ensure_correct_normals``"
-msgstr ""
+msgstr "``ensure_correct_normals``"
 
 msgid "``INSTANCE_ID``"
-msgstr ""
+msgstr "``INSTANCE_ID``"
 
 msgid "``DEPTH``"
-msgstr ""
+msgstr "``DEPTH``"
 
 msgid "``ANISOTROPY``"
-msgstr ""
+msgstr "``ANISOTROPY``"
 
 msgid "``ANISOTROPY_FLOW``"
-msgstr ""
+msgstr "``ANISOTROPY_FLOW``"
 
 msgid "``SSS_STRENGTH``"
-msgstr ""
+msgstr "``SSS_STRENGTH``"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

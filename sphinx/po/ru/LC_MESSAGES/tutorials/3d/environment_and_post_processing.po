@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Environment and post-processing"
-msgstr "Функции и Переменные"
+msgstr "Окружающая среда и постобработка"
 
 msgid ""
 "Godot 3 provides a redesigned Environment resource, as well as a new post-"
@@ -43,9 +42,8 @@ msgstr ""
 "становится включенным, если используется в одном из следующих мест в порядке "
 "приоритета:"
 
-#, fuzzy
 msgid "Camera node"
-msgstr "Создание узлов"
+msgstr "Узел камеры"
 
 msgid ""
 "An Environment can be set to a camera. It will have priority over any other "
@@ -61,9 +59,8 @@ msgstr ""
 "В основном это полезно, когда нужно переопределить существующее окружение, "
 "но в целом лучше использовать опцию ниже."
 
-#, fuzzy
 msgid "WorldEnvironment node"
-msgstr "Функции и Переменные"
+msgstr "Узел WorldEnvironment"
 
 msgid ""
 "The WorldEnvironment node can be added to any scene, but only one can exist "
@@ -103,9 +100,8 @@ msgstr ""
 "умолчанию (``default_env.tres``). Если необходимо создать такое окружение, "
 "сохраните его на диск, прежде чем ссылаться на него здесь."
 
-#, fuzzy
 msgid "Environment options"
-msgstr "Функции и Переменные"
+msgstr "Параметры окружения"
 
 msgid ""
 "Following is a detailed description of all environment options and how they "
@@ -294,9 +290,8 @@ msgstr ""
 "того, чтобы сделать светлые и тёмные области более однородными, избегая при "
 "этом обрезания ярких бликов."
 
-#, fuzzy
 msgid "The tone mapping options are:"
-msgstr "Опции Tonemap:"
+msgstr "Опции тонального отображения (Tone Mapping):"
 
 msgid "**Mode:** The tone mapping mode to use."
 msgstr "**Mode:** Используемый режим отображения тонирования."
@@ -452,9 +447,8 @@ msgstr ""
 "**Speed:** Скорость, с которой происходит коррекция яркости. Чем выше "
 "значение, тем быстрее происходит коррекция."
 
-#, fuzzy
 msgid "Mid- and post-processing effects"
-msgstr "Функции и Переменные"
+msgstr "Эффекты промежуточной и последующей обработки"
 
 msgid ""
 "A large amount of widely-used mid- and post-processing effects are supported "
@@ -533,7 +527,6 @@ msgstr ""
 "экрана для аппроксимации шероховатости в объектах с данной характеристикой "
 "материала."
 
-#, fuzzy
 msgid ""
 "Keep in mind that screen-space-reflections only work for reflecting opaque "
 "geometry. Transparent materials won't be reflected, as they don't write to "
@@ -541,7 +534,9 @@ msgid ""
 "or ``DEPTH_TEXTURE``."
 msgstr ""
 "Помните, что отражения в пространстве экрана работают только для отражения "
-"непрозрачной геометрии. Прозрачные объекты не могут быть отражены."
+"непрозрачной геометрии. Прозрачные материалы не будут отражаться, так как "
+"они не записываются в буфер глубины. Это также относится к шейдерам, "
+"использующим ``SCREEN_TEXTURE`` или ``DEPTH_TEXTURE``."
 
 msgid "Screen-Space Ambient Occlusion (SSAO)"
 msgstr "Затенение окружающего пространства экрана (SSAO)"

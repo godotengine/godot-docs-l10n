@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "optimization"
 msgstr "Otimização"
 
-#, fuzzy
 msgid "Optimizing 3D performance"
-msgstr "Performance"
+msgstr "Otimizando o desempenho 3D"
 
-#, fuzzy
 msgid "Culling"
-msgstr "Compilando"
+msgstr "Culling (recorte)"
 
 msgid ""
 "Godot will automatically perform view frustum culling in order to prevent "
@@ -36,9 +33,8 @@ msgid ""
 "problematic in larger levels."
 msgstr ""
 
-#, fuzzy
 msgid "Occlusion culling"
-msgstr "Modo Oclusão"
+msgstr "Descarte por oclusão"
 
 msgid ""
 "Walking around a town for example, you may only be able to see a few "
@@ -95,11 +91,11 @@ msgid ""
 "In some cases, you can adapt your level design to add more occlusion "
 "opportunities. For example, you can add more walls to prevent the player "
 "from seeing too far away, which would decrease performance due to the lost "
-"opportunies for occlusion culling."
+"opportunities for occlusion culling."
 msgstr ""
 
 msgid "Other occlusion techniques"
-msgstr ""
+msgstr "Outras técnicas de oclusão"
 
 msgid ""
 "As well as the portal system and manual methods, there are various other "
@@ -109,7 +105,7 @@ msgid ""
 msgstr ""
 
 msgid "Transparent objects"
-msgstr ""
+msgstr "Objetos transparentes"
 
 msgid ""
 "Godot sorts objects by :ref:`Material <class_Material>` and :ref:`Shader "
@@ -129,7 +125,7 @@ msgstr ""
 "doc."
 
 msgid "Level of detail (LOD)"
-msgstr ""
+msgstr "Nível de detalhe (LOD)"
 
 msgid ""
 "In some situations, particularly at a distance, it can be a good idea to "
@@ -203,9 +199,8 @@ msgid ""
 "indirect light bounces."
 msgstr ""
 
-#, fuzzy
 msgid "Animation and skinning"
-msgstr "Animações"
+msgstr "Animação e skinning"
 
 msgid ""
 "Animation and vertex animation such as skinning and morphing can be very "
@@ -215,7 +210,7 @@ msgid ""
 msgstr ""
 
 msgid "Large worlds"
-msgstr ""
+msgstr "Mundos grandes"
 
 msgid ""
 "If you are making large worlds, there are different considerations than what "
@@ -236,4 +231,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Ragdoll system"
-msgstr "Sistema de arquivos"
+msgstr "Sistema de Ragdoll"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -40,13 +39,11 @@ msgid ""
 "`Asset Library <https://godotengine.org/asset-library/asset/125>`_."
 msgstr ""
 
-#, fuzzy
 msgid "Setting up the ragdoll"
-msgstr "Criando um novo projeto"
+msgstr "Configurando o ragdoll"
 
-#, fuzzy
 msgid "Creating physical bones"
-msgstr "Criando nós"
+msgstr "Criando ossos físicos"
 
 msgid ""
 "Like many other features in the engine, there is a node to set up a ragdoll: "
@@ -71,9 +68,8 @@ msgid ""
 "example. So we're going to clean up the skeleton by removing them."
 msgstr ""
 
-#, fuzzy
 msgid "Cleaning up the skeleton"
-msgstr "Configurando"
+msgstr "Limpando o esqueleto"
 
 msgid ""
 "Each ``PhysicalBone`` the engine needs to simulate has a performance cost, "
@@ -94,17 +90,18 @@ msgid ""
 "control the ragdoll."
 msgstr ""
 
-#, fuzzy
 msgid "Collision shape adjustment"
-msgstr "Formas de colisão"
+msgstr "Ajuste da forma de colisão"
 
 msgid ""
 "The next task is adjusting the collision shape and the size of physical "
 "bones to match the part of the body that each bone should simulate."
 msgstr ""
+"A próxima tarefa é ajustar a forma de colisão e o tamanho dos ossos físicos "
+"para corresponder à parte do corpo que cada osso deve simular."
 
 msgid "Joints adjustment"
-msgstr ""
+msgstr "Ajuste das articulações"
 
 msgid ""
 "Once you adjusted the collision shapes, your ragdoll is almost ready. You "
@@ -131,13 +128,13 @@ msgstr ""
 msgid ""
 "To stop the simulation, call the ``physical_bones_stop_simulation()`` method."
 msgstr ""
+"Para parar a simulação, chame o método ``physical_bones_stop_simulation()``."
 
 msgid ""
 "You can also limit the simulation to only a few bones. To do so, pass the "
 "bone names as a parameter. Here's an example of partial ragdoll simulation:"
 msgstr ""
 
-#, fuzzy
 msgid "Collision layer and mask"
 msgstr "Camadas e Máscaras de colisão"
 
@@ -149,11 +146,12 @@ msgstr ""
 "corretas para que a capsula do ``KinematicBody`` não atrapalhe as simulações "
 "físicas:"
 
-#, fuzzy
 msgid ""
 "For more information, read :ref:"
 "`doc_physics_introduction_collision_layers_and_masks`."
-msgstr "Para mais, veja a página: ref: `doc_c_sharp_differences`."
+msgstr ""
+"Para mais informações, leia :ref:"
+"`doc_physics_introduction_collision_layers_and_masks`."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

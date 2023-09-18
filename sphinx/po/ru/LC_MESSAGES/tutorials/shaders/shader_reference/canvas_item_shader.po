@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,31 +42,31 @@ msgid "Description"
 msgstr "Описание"
 
 msgid "**blend_mix**"
-msgstr "**blend_mix**"
+msgstr "**blеnd_mix**"
 
 msgid "Mix blend mode (alpha is transparency), default."
 msgstr ""
 
 msgid "**blend_add**"
-msgstr "**blend_add**"
+msgstr "**blеnd_add**"
 
 msgid "Additive blend mode."
 msgstr ""
 
 msgid "**blend_sub**"
-msgstr "**blend_sub**"
+msgstr "**blеnd_sub**"
 
 msgid "Subtractive blend mode."
 msgstr ""
 
 msgid "**blend_mul**"
-msgstr "**blend_mul**"
+msgstr "**blеnd_mul**"
 
 msgid "Multiplicative blend mode."
 msgstr ""
 
 msgid "**blend_premul_alpha**"
-msgstr "**blend_premul_alpha**"
+msgstr "**blеnd_premul_alpha**"
 
 msgid "Pre-multiplied alpha blend mode."
 msgstr ""
@@ -78,19 +78,19 @@ msgid "Disable blending, values (including alpha) are written as-is."
 msgstr ""
 
 msgid "**unshaded**"
-msgstr "**unshaded**"
+msgstr "**unshadеd**"
 
 msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
 
 msgid "**light_only**"
-msgstr "**light_only**"
+msgstr "**lіght_only**"
 
 msgid "Only draw on light pass."
 msgstr ""
 
 msgid "**skip_vertex_transform**"
-msgstr "**skip_vertex_transform**"
+msgstr "**skіp_vertex_transform**"
 
 msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
 msgstr ""
@@ -114,7 +114,7 @@ msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
 
 msgid "Built-in"
-msgstr ""
+msgstr "Встроенный"
 
 msgid "in float **TIME**"
 msgstr ""
@@ -360,6 +360,14 @@ msgid ""
 "occur for that object; this can be useful when you only want the object "
 "visible where it is covered by light."
 msgstr ""
+"Функции процессора света работают в 2D иначе, чем в 3D. В шейдерах "
+"CanvasItem шейдер вызывается один раз для рисуемого объекта, а затем один "
+"раз для каждого света, касающегося этого объекта в сцене. Используйте "
+"render_mode ``unshaded``, если вы не хотите, чтобы для этого объекта "
+"происходило прохождение света. Используйте render_mode ``light_only``, если "
+"вы хотите, чтобы для этого объекта выполнялись только проходы света; это "
+"может быть полезно, когда вы хотите, чтобы объект был виден только там, где "
+"он освещен."
 
 msgid ""
 "When the shader is on a light pass, the ``AT_LIGHT_PASS`` variable will be "
@@ -427,7 +435,7 @@ msgid "Color of Light."
 msgstr ""
 
 msgid "in vec2 **LIGHT_UV**"
-msgstr ""
+msgstr "в vec2 **LIGHT_UV**"
 
 msgid "UV for Light texture."
 msgstr ""

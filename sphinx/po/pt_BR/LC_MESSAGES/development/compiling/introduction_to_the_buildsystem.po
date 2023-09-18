@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Introduction to the buildsystem"
 msgstr ""
 
 msgid "SCons"
-msgstr ""
+msgstr "SCons"
 
 msgid ""
 "Godot uses `SCons <https://www.scons.org/>`__ to build. We love it, we are "
@@ -84,7 +84,7 @@ msgid ""
 msgstr ""
 
 msgid "Setup"
-msgstr "Configuração"
+msgstr "Configurar"
 
 msgid ""
 "Please refer to the documentation for :ref:`doc_compiling_for_android`, :ref:"
@@ -100,7 +100,7 @@ msgid ""
 msgstr ""
 
 msgid "Platform selection"
-msgstr ""
+msgstr "Seleção de plataforma"
 
 msgid ""
 "Godot's build system will begin by detecting the platforms it can build for. "
@@ -124,14 +124,16 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This will start the build process, which will take a while. If you want "
-"SCons to build faster, use the ``-j <cores>`` parameter to specify how many "
-"cores will be used for the build. Or leave it using one core, so you can use "
-"your computer for something else :)"
+"This will start the build process, which will take a while. By default, "
+"Godot's SCons setup is configured to use all CPU threads but one (to keep "
+"the system responsive during compilation). If you want to adjust how many "
+"CPU threads SCons will use, use the ``-j <threads>`` parameter to specify "
+"how many threads will be used for the build."
 msgstr ""
 
-msgid "Example for using 4 cores:"
-msgstr ""
+#, fuzzy
+msgid "Example for using 4 threads:"
+msgstr "Exemplo de faixas de animação Normal"
 
 msgid "Resulting binary"
 msgstr ""
@@ -141,18 +143,16 @@ msgid ""
 "generally with this naming convention::"
 msgstr ""
 
-#, fuzzy
 msgid "For the previous build attempt, the result would look like this::"
-msgstr "Até agora, o método update \\ _health se parece com isto:"
+msgstr "Para a tentativa de compilação anterior, o resultado ficaria assim:"
 
 msgid ""
 "This means that the binary is for X11, is not optimized, has tools (the "
 "whole editor) compiled in, and is meant for 64 bits."
 msgstr ""
 
-#, fuzzy
 msgid "A Windows binary with the same configuration will look like this:"
-msgstr "E finalmente, ao executar a cena, a animação deve ficar assim:"
+msgstr "Um binário do Windows com a mesma configuração terá esta aparência:"
 
 msgid ""
 "Copy that binary to any location you like, as it contains the project "
@@ -177,7 +177,7 @@ msgid ""
 msgstr ""
 
 msgid "Target"
-msgstr "Destino"
+msgstr "Alvo"
 
 msgid "Target controls optimization and debug flags. Each mode means:"
 msgstr ""
@@ -206,21 +206,26 @@ msgid ""
 msgstr ""
 
 msgid "Bits"
-msgstr ""
+msgstr "Bits"
 
 msgid ""
 "Bits is meant to control the CPU or OS version intended to run the binaries. "
 "It is focused mostly on desktop platforms and ignored everywhere else."
 msgstr ""
+"Bits destina-se a controlar a versão da CPU ou do sistema operacional "
+"destinada a executar os binários. Ele é focado principalmente em plataformas "
+"de desktop e ignorado em qualquer outro lugar."
 
 msgid "**32**: Build binaries for 32-bit platforms."
-msgstr ""
+msgstr "**32**: Compilar binários para plataformas de 32 bits."
 
 msgid "**64**: Build binaries for 64-bit platforms."
-msgstr ""
+msgstr "**64**: Compilar binários para plataformas de 64 bits."
 
 msgid "**default**: Build for the architecture that matches the host platform."
 msgstr ""
+"**default**: Compilar para a arquitetura que corresponde à plataforma do "
+"host."
 
 msgid ""
 "This flag appends ``.32`` or ``.64`` suffixes to resulting binaries when "
@@ -228,9 +233,8 @@ msgid ""
 "architecture."
 msgstr ""
 
-#, fuzzy
 msgid "Custom modules"
-msgstr "Iteradores personalizados"
+msgstr "Módulos personalizados"
 
 msgid ""
 "It's possible to compile modules residing outside of Godot's directory tree, "
@@ -255,13 +259,11 @@ msgid ""
 "to override built-in module implementations."
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`doc_custom_modules_in_c++`"
-msgstr ":ref:`Personalizar pós-processamento <doc_custom_postprocessing>`"
+msgstr ":ref:`doc_custom_modules_in_c++`"
 
-#, fuzzy
 msgid "Cleaning generated files"
-msgstr "Configurando"
+msgstr "Limpando arquivos gerados"
 
 msgid ""
 "Sometimes, you may encounter an error due to generated files being present. "
@@ -277,8 +279,9 @@ msgid ""
 "you have uncommitted work!"
 msgstr ""
 
+#, fuzzy
 msgid "Other build options"
-msgstr ""
+msgstr "Outras opções de compilação"
 
 msgid ""
 "There are several other build options that you can use to configure the way "
@@ -291,13 +294,11 @@ msgid ""
 "version you are willing to compile."
 msgstr ""
 
-#, fuzzy
 msgid "Overriding the build options"
-msgstr "Substituindo uma função virtual"
+msgstr "Sobrescrevendo as opções de compilação"
 
-#, fuzzy
 msgid "Using a file"
-msgstr "Usando Espaços"
+msgstr "Usando um arquivo"
 
 msgid ""
 "The default ``custom.py`` file can be created at the root of the Godot "
@@ -305,15 +306,14 @@ msgid ""
 "line:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "You can also disable some of the builtin modules before compiling, saving "
 "some time it takes to build the engine. See :ref:`doc_optimizing_for_size` "
 "page for more details."
 msgstr ""
-"Você pode otimizar o tamanho ainda mais compilando um modelo de exportação "
-"Android com apenas as funcionalidades que você precisa. Veja :ref:"
-"`doc_optimizing_for_size` para mais informações."
+"Você também pode desativar alguns dos módulos embutidos antes de compilar, "
+"economizando algum tempo para construir a engine. Veja a página ref:"
+"`doc_optimizing_for_size` para mais detalhes."
 
 msgid ""
 "You can use the online `Godot build options generator <https://godot-build-"
@@ -336,7 +336,7 @@ msgid "It's also possible to override the options conditionally:"
 msgstr ""
 
 msgid "Using the SCONSFLAGS"
-msgstr ""
+msgstr "Usando o SCONSFLAGS"
 
 msgid ""
 "``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
@@ -344,8 +344,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"For instance, you may want to build Godot in parallel with the "
-"aforementioned ``-j`` option for all the future builds:"
+"For instance, you may want to force a number of CPU threads with the "
+"aforementioned ``-j`` option for all future builds:"
 msgstr ""
 
 msgid "Export templates"
@@ -389,4 +389,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -93,11 +93,8 @@ msgid ""
 "behaviour when the player reaches certain points in a level."
 msgstr ""
 
-#, fuzzy
 msgid "VisbilityNotifiers / VisibilityEnablers"
-msgstr ""
-":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>` (chamado "
-"``Visibilidade``)"
+msgstr "VisbilityNotifiers / VisibilityEnablers"
 
 msgid ""
 "Gameplay callbacks have one more useful function. By default in Godot, "
@@ -124,9 +121,8 @@ msgid ""
 "happens automatically."
 msgstr ""
 
-#, fuzzy
 msgid "RoomGroups"
-msgstr "Grupos"
+msgstr "RoomGroups (Grupos de Salas)"
 
 msgid ""
 "A :ref:`RoomGroup<class_RoomGroup>` is a special node which allows you to "
@@ -156,9 +152,8 @@ msgid ""
 "skyboxes and much more."
 msgstr ""
 
-#, fuzzy
 msgid "Internal Rooms"
-msgstr "Recursos internos"
+msgstr "Salas Internas"
 
 msgid ""
 "There is one more trick that RoomGroups have up their sleeve. A very common "
@@ -204,9 +199,8 @@ msgid ""
 "*always* wins. Everything else works in a mostly similar way."
 msgstr ""
 
-#, fuzzy
 msgid "The only differences:"
-msgstr "Outras diferenças:"
+msgstr "As únicas diferenças:"
 
 msgid ""
 "Portals between internal rooms and outer rooms should always *be placed in "
@@ -255,9 +249,8 @@ msgid ""
 "purposes.* `CC Attribution <https://creativecommons.org/licenses/by/4.0/>`_"
 msgstr ""
 
-#, fuzzy
 msgid "Internal room scenes"
-msgstr "Recursos internos"
+msgstr "Cenas de sala interna"
 
 msgid ""
 "Let us look in detail at another practical example for an open world. We "
@@ -306,11 +299,17 @@ msgid ""
 "objects into RoomGroups with priority ``0``. However there are plenty of "
 "priority values available so this should not be a problem in practice."
 msgstr ""
+"Como a prioridade de autoplace padrão é ``0``, você não pode efetivamente "
+"forçar objetos em RoomGroups com prioridade ``0``. No entanto, existem "
+"muitos valores de prioridade disponíveis, portanto, isso não deve ser um "
+"problema na prática."
 
 msgid ""
 "The final scene looks something like this, with houses instanced wherever "
 "you want them on a giant outer room."
 msgstr ""
+"A cena final é mais ou menos assim, com casas instanciadas onde você quiser "
+"em uma sala externa gigante."
 
 msgid ""
 "The house exteriors will be placed in the outer room, and therefore can "
@@ -319,4 +318,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

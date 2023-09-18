@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Mobile rendering limitations"
-msgstr "Limitações de linguagem de shader"
+msgstr "Limitações de renderização em dispositivos móveis"
 
 msgid ""
 "The general :ref:`doc_3d_rendering_limitations` also apply to mobile "
@@ -54,28 +53,26 @@ msgstr ""
 msgid "The following project settings have mobile-specific overrides:"
 msgstr ""
 
-#, fuzzy
 msgid "Setting"
-msgstr "Configurações"
+msgstr "Configuração"
 
 msgid "Desktop default"
 msgstr ""
 
-#, fuzzy
 msgid "Mobile default"
-msgstr "Infixo (padrão)"
+msgstr "Padrão para dispositivos móveis"
 
 msgid "``rendering/quality/directional_shadow/size``"
-msgstr ""
+msgstr "``rendering/quality/directional_shadow/size``"
 
 msgid "4096"
-msgstr ""
+msgstr "4096"
 
 msgid "2048"
-msgstr ""
+msgstr "2048"
 
 msgid "``rendering/quality/intended_usage/framebuffer_allocation``"
-msgstr ""
+msgstr "``rendering/quality/intended_usage/framebuffer_allocation``"
 
 msgid "3D"
 msgstr "3D"
@@ -84,69 +81,71 @@ msgid "3D Without Effects"
 msgstr ""
 
 msgid "``rendering/quality/lightmapping/use_bicubic_sampling``"
-msgstr ""
+msgstr "``rendering/quality/lightmapping/use_bicubic_sampling``"
 
-#, fuzzy
 msgid "``true``"
-msgstr "Valor"
+msgstr "``true``"
 
-#, fuzzy
 msgid "``false``"
-msgstr "``if x else``"
+msgstr "``false``"
 
 msgid "``rendering/quality/reflections/high_quality_ggx``"
-msgstr ""
+msgstr "``rendering/quality/reflections/high_quality_ggx``"
 
 msgid "``rendering/quality/shading/force_blinn_over_ggx``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_blinn_over_ggx``"
 
 msgid "``rendering/quality/shading/force_lambert_over_burley``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_lambert_over_burley``"
 
 msgid "``rendering/quality/shading/force_vertex_shading``"
-msgstr ""
+msgstr "``rendering/quality/shading/force_vertex_shading``"
 
 msgid "``rendering/quality/shadow_atlas/size``"
-msgstr ""
+msgstr "``rendering/quality/shadow_atlas/size``"
 
 msgid "``rendering/quality/shadows/filter_mode``"
-msgstr ""
+msgstr "``rendering/quality/shadows/filter_mode``"
 
 msgid "PCF5"
-msgstr ""
+msgstr "PCF5"
 
 msgid "Disabled"
 msgstr "Desativado"
 
 msgid "*GLES3 only:* ``rendering/gles3/shaders/max_simultaneous_compiles``"
-msgstr ""
+msgstr "*GLES3 somente:* ``rendering/gles3/shaders/max_simultaneous_compiles``"
 
 msgid "2"
-msgstr ""
+msgstr "2"
 
 msgid "1"
-msgstr ""
+msgstr "1"
 
 msgid "*GLES3 only:* ``rendering/gles3/shaders/shader_cache_size_mb``"
-msgstr ""
+msgstr "*GLES3 somente:* ``rendering/gles3/shaders/shader_cache_size_mb``"
 
 msgid "512"
-msgstr ""
+msgstr "512"
 
 msgid "128"
-msgstr ""
+msgstr "128"
 
 msgid "*GLES3 only:* ``rendering/quality/depth/hdr``"
-msgstr ""
+msgstr "*Somente GLES3:* ``renderização/qualidade/profundidade/hdr``"
 
 msgid ""
 "*GLES3 only:* ``rendering/quality/reflections/texture_array_reflections``"
 msgstr ""
+"*Somente GLES3:* ``renderização/qualidade/reflexões/textura_array_reflexões``"
 
 msgid ""
 "See the :ref:`ProjectSettings class documentation <class_ProjectSettings>` "
 "for more information on those setting overrides."
 msgstr ""
+"Consulte a :ref:`documentação da classe ProjectSettings "
+"<class_ProjectSettings>` para obter mais informações sobre essas "
+"substituições de configuração."
 
 msgid ""
 "If you're only targeting mobile platforms in your project, consider changing "
@@ -154,6 +153,11 @@ msgid ""
 "get a preview that is closer to the mobile appearance when running the "
 "project on a desktop platform (as well as within the editor)."
 msgstr ""
+"Se você estiver segmentando apenas plataformas móveis em seu projeto, "
+"considere alterar os valores das configurações do projeto para corresponder "
+"às substituições móveis. Dessa forma, você terá uma visualização mais "
+"próxima da aparência móvel ao executar o projeto em uma plataforma de "
+"desktop (bem como dentro do editor)."
 
 msgid ""
 "Due to driver bugs, GLES3 support on Android and iOS can be poor, especially "
@@ -167,4 +171,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

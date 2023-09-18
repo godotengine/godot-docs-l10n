@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,28 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Collision shapes (3D)"
-msgstr "Виды и формы коллизий (cтолкновений)"
+msgstr "Формы столкновений (3D)"
 
-#, fuzzy
 msgid "This guide explains:"
-msgstr "Выведет:"
+msgstr "В этом руководстве объясняется:"
 
 msgid "The types of collision shapes available in 3D in Godot."
-msgstr ""
+msgstr "Типы форм столкновений, доступных в 3D в Godot."
 
 msgid "Using a convex or a concave mesh as a collision shape."
-msgstr ""
+msgstr "Использование convex или concave мешей как формы столкновения."
 
-#, fuzzy
 msgid "Performance considerations regarding 3D collisions."
-msgstr "Инструменты мониторинга производительности."
+msgstr "Вопросы производительности в отношении 3D-столкновений."
 
 msgid ""
 "Godot provides many kinds of collision shapes, with different performance "
 "and accuracy tradeoffs."
 msgstr ""
+"Godot предоставляет множество видов форм столкновений, с различными "
+"компромиссами по производительности и точности."
 
 msgid ""
 "You can define the shape of a :ref:`class_PhysicsBody` by adding one or "
@@ -46,35 +45,33 @@ msgid ""
 "you must add a :ref:`class_Shape` *resource* to collision shape nodes in the "
 "Inspector dock."
 msgstr ""
+"Вы можете определить форму :ref:`class_PhysicsBody`, добавив один или "
+"несколько :ref:`CollisionShapes <class_CollisionShape>` в качестве дочерних "
+"узлов. Обратите внимание, что вы должны добавить ресурс :ref:`class_Shape` "
+"** к узлам формы столкновения в доке Inspector."
 
 msgid ""
 "When you add multiple collision shapes to a single PhysicsBody, you don't "
 "have to worry about them overlapping. They won't \"collide\" with each other."
 msgstr ""
 
-#, fuzzy
 msgid "Primitive collision shapes"
-msgstr "Видимые области соприкосновения"
+msgstr "Примитивные формы столкновений"
 
-#, fuzzy
 msgid "Godot provides the following primitive collision shape types:"
-msgstr "Godot может импортировать данные форматы изображения:"
+msgstr "Godot предоставляет следующие примитивные типы форм столкновений:"
 
-#, fuzzy
 msgid ":ref:`class_BoxShape`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`class_BoxShape`"
 
-#, fuzzy
 msgid ":ref:`class_SphereShape`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`class_SphereShape`"
 
-#, fuzzy
 msgid ":ref:`class_CapsuleShape`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`class_CapsuleShape`"
 
-#, fuzzy
 msgid ":ref:`class_CylinderShape`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`class_CylinderShape`"
 
 msgid ""
 "You can represent the collision of most smaller objects using one or more "
@@ -82,16 +79,23 @@ msgid ""
 "a whole level, you may need convex or concave shapes instead. More on that "
 "below."
 msgstr ""
+"Столкновение большинства небольших объектов можно представить с помощью "
+"одной или нескольких примитивных фигур. Однако для более сложных объектов, "
+"таких как большой корабль или целый уровень, вам могут понадобиться выпуклые "
+"или вогнутые формы. Подробнее об этом ниже."
 
 msgid ""
 "We recommend favoring primitive shapes for dynamic objects such as "
 "RigidBodies and KinematicBodies as their behavior is the most reliable. They "
 "often provide better performance as well."
 msgstr ""
+"Мы рекомендуем использовать примитивные формы для динамических объектов, "
+"таких как RigidBodies и KinematicBodies, поскольку их поведение является "
+"наиболее надежным. Кроме того, они часто обеспечивают лучшую "
+"производительность."
 
-#, fuzzy
 msgid "Convex collision shapes"
-msgstr "Виды и формы коллизий (cтолкновений)"
+msgstr "Выпуклые формы столкновений"
 
 msgid ""
 ":ref:`Convex collision shapes <class_ConvexPolygonShape>` are a compromise "
@@ -133,9 +137,8 @@ msgid ""
 "faster than using a single concave collision shape."
 msgstr ""
 
-#, fuzzy
 msgid "Concave or trimesh collision shapes"
-msgstr "Виды и формы коллизий (cтолкновений)"
+msgstr "Вогнутые или тримешевые формы столкновений"
 
 msgid ""
 ":ref:`Concave collision shapes <class_ConcavePolygonShape>`, also called "

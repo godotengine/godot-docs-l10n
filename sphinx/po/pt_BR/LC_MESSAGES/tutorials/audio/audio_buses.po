@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -218,7 +218,7 @@ msgstr ""
 "geralmente é indesejável."
 
 msgid "BandLimit and BandPass"
-msgstr ""
+msgstr "BandLimit e BandPass"
 
 msgid ""
 "These are resonant filters which block frequencies around the *Cutoff* "
@@ -227,18 +227,26 @@ msgid ""
 "the sound of a wah-wah guitar pedal, think of the guitar in Jimi Hendrix's "
 "*Voodoo Child (Slight Return)*."
 msgstr ""
+"Estes são filtros ressonantes que bloqueiam freqüências em torno do ponto "
+"*Cutoff*. O BandPass pode ser usado para simular som passando por uma linha "
+"telefônica antiga ou megafone. A modulação da freqüência do BandPass pode "
+"simular o som de um pedal de guitarra wah-wah, pense na guitarra no ponto "
+"*Voodoo Child (Slight Return)* de Jimi Hendrix."
 
 msgid "Capture"
-msgstr "Capturar"
+msgstr "Captura"
 
 msgid ""
 "The Capture effect copies the audio frames of the audio bus that it is on "
 "into an internal buffer. This can be used to capture data from the "
 "microphone or to transmit audio over the network in real-time."
 msgstr ""
+"O efeito Capture copia os quadros de áudio do barramento de áudio em que ele "
+"está em um buffer interno. Isso pode ser usado para capturar dados do "
+"microfone ou para transmitir áudio pela rede em tempo real."
 
 msgid "Chorus"
-msgstr ""
+msgstr "Chorus"
 
 msgid ""
 "The Chorus effect duplicates the incoming audio, delays the duplicate "
@@ -247,6 +255,10 @@ msgid ""
 "together again. This creates a shimmering effect and adds stereo width to "
 "the sound."
 msgstr ""
+"O efeito Chorus duplica o áudio recebido, atrasa ligeiramente o duplicado e "
+"usa um LFO para modular continuamente o tom do sinal duplicado antes de "
+"misturar o(s) sinal(is) duplicado(s) e o original juntos novamente. Isso "
+"cria um efeito cintilante e adiciona amplitude estéreo ao som."
 
 msgid "Compressor"
 msgstr "Compressor"
@@ -269,14 +281,16 @@ msgstr ""
 "pode facilitar a mixagem."
 
 msgid "The compressor has many uses. For example:"
-msgstr ""
+msgstr "O compressor tem muitos usos. Por exemplo:"
 
 msgid "It can be used in the Master bus to compress the whole output."
-msgstr ""
+msgstr "Pode ser usado no barramento Master para comprimir toda a saída."
 
 msgid ""
 "It can be used in voice channels to ensure they sound as even as possible."
 msgstr ""
+"Ele pode ser usado em canais de voz para garantir que soem o mais uniformes "
+"possível."
 
 msgid ""
 "It can be *sidechained*. This means it can reduce the sound level of one "
@@ -284,11 +298,17 @@ msgid ""
 "technique is very common in video game mixing to \"duck\" the level of music "
 "or sound effects when voices need to be heard."
 msgstr ""
+"Pode ser encadeado. Isso significa que ele pode reduzir o nível de som de um "
+"sinal usando o nível de outro barramento de áudio para detecção de limite. "
+"Essa técnica é muito comum na mixagem de videogames para abaixar o nível de "
+"música ou efeitos sonoros quando as vozes precisam ser ouvidas."
 
 msgid ""
 "It can accentuate transients by using a slower attack. This can make sound "
 "effects more punchy."
 msgstr ""
+"Ele pode acentuar os transientes usando um ataque mais lento. Isso pode "
+"tornar os efeitos sonoros mais impactantes."
 
 msgid ""
 "If your goal is to prevent a signal from exceeding a given amplitude "
@@ -298,7 +318,7 @@ msgid ""
 msgstr ""
 
 msgid "Delay"
-msgstr "Atraso"
+msgstr "Delay"
 
 msgid ""
 "Adds an \"echo\" effect with a feedback loop. It can be used together with "
@@ -307,7 +327,7 @@ msgid ""
 msgstr ""
 
 msgid "Distortion"
-msgstr "Distorção"
+msgstr "Distortion"
 
 msgid ""
 "Makes the sound distorted. Godot offers several types of distortion: "
@@ -324,7 +344,7 @@ msgid ""
 msgstr ""
 
 msgid "EQ6, EQ10, EQ21"
-msgstr ""
+msgstr "EQ6, EQ10, EQ21"
 
 msgid ""
 "Godot provides three equalizers with different numbers of bands. An "
@@ -342,23 +362,23 @@ msgid ""
 "directly."
 msgstr ""
 
-#, fuzzy
 msgid "HighPassFilter"
-msgstr "Filtro"
+msgstr "HighPassFilter"
 
 msgid ""
 "Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used "
 "to reduce the bass content of a signal."
 msgstr ""
 
+#, fuzzy
 msgid "HighShelfFilter"
-msgstr ""
+msgstr "HighShelfFilter"
 
 msgid "Reduces all frequencies above a specific *Cutoff* frequency."
 msgstr ""
 
 msgid "Limiter"
-msgstr "Limitador"
+msgstr "Limiter"
 
 msgid ""
 "A limiter is similar to a compressor, but it's less flexible and designed to "
@@ -366,9 +386,8 @@ msgid ""
 "limiter to the Master bus is a safeguard against clipping."
 msgstr ""
 
-#, fuzzy
 msgid "LowPassFilter"
-msgstr "Filtro"
+msgstr "LowPassFilter (Filtro LowPass)"
 
 msgid ""
 "Cuts frequencies above a specific *Cutoff* frequency and can also resonate "
@@ -377,23 +396,23 @@ msgid ""
 "blocked by walls, or distant sounds."
 msgstr ""
 
-#, fuzzy
 msgid "LowShelfFilter"
-msgstr "Filtro"
+msgstr "LowShelfFilter (Filtro de Prateleira Baixa)"
 
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
 msgstr ""
 
 msgid "NotchFilter"
-msgstr ""
+msgstr "NotchFilter"
 
 msgid ""
 "The opposite of the BandPassFilter, it removes a band of sound from the "
 "frequency spectrum at a given *Cutoff* frequency."
 msgstr ""
 
+#, fuzzy
 msgid "Panner"
-msgstr ""
+msgstr "Panner"
 
 msgid ""
 "The Panner allows the stereo balance of a signal to be adjusted between the "
@@ -401,7 +420,7 @@ msgid ""
 msgstr ""
 
 msgid "Phaser"
-msgstr ""
+msgstr "Phaser"
 
 msgid ""
 "It probably does not make much sense to explain that this effect is formed "
@@ -409,8 +428,9 @@ msgid ""
 "Darth Vader voice with it, or jet-like sounds."
 msgstr ""
 
+#, fuzzy
 msgid "PitchShift"
-msgstr ""
+msgstr "PitchShift"
 
 msgid ""
 "This effect allows the adjustment of the signal's pitch independently of its "
@@ -419,13 +439,13 @@ msgid ""
 msgstr ""
 
 msgid "Record"
-msgstr ""
+msgstr "Gravação"
 
 msgid "The Record effect allows the user to record sound from a microphone."
 msgstr ""
 
 msgid "Reverb"
-msgstr ""
+msgstr "Reverberação"
 
 msgid ""
 "Reverb simulates rooms of different sizes. It has adjustable parameters that "
@@ -436,7 +456,7 @@ msgid ""
 msgstr ""
 
 msgid "SpectrumAnalyzer"
-msgstr ""
+msgstr "Analisador de espectro (SpectrumAnalyzer)"
 
 msgid ""
 "This effect doesn't alter audio, instead, you add this effect to buses you "
@@ -445,27 +465,32 @@ msgid ""
 "com/godotengine/godot-demo-projects/tree/master/audio/spectrum>`__."
 msgstr ""
 
+#, fuzzy
 msgid "StereoEnhance"
-msgstr ""
+msgstr "StereoEnhance"
 
 msgid ""
 "This effect uses a few algorithms to enhance a signal's stereo spectrum."
 msgstr ""
 
 msgid "Automatic bus disabling"
-msgstr ""
+msgstr "Desativando barramentos automaticamente"
 
 msgid ""
 "There is no need to disable buses manually when not in use. Godot detects "
 "that the bus has been silent for a few seconds and disables it (including "
 "all effects)."
 msgstr ""
+"Não há necessidade de desabilitar barramentos manualmente quando não "
+"estiverem em uso. O Godot detecta que o barramento ficou silencioso por "
+"alguns segundos e o desativa (incluindo todos os efeitos)."
 
 msgid "Disabled buses have a blue VU meter instead of a red-green one."
 msgstr ""
+"Barramentos desativados têm um medidor VU azul ao invés de um vermelho-verde."
 
 msgid "Bus rearrangement"
-msgstr ""
+msgstr "Reorganizando barramentos"
 
 msgid ""
 "Stream Players use bus names to identify a bus, which allows adding, "
@@ -474,15 +499,24 @@ msgid ""
 "Player will output to Master. This system was chosen because rearranging "
 "buses is a more common process than renaming them."
 msgstr ""
+"Stream Players usam nomes de barramento para identificar um barramento, o "
+"que permite adicionar, remover e mover barramentos enquanto a referência a "
+"eles é mantida. No entanto, se um barramento for renomeado, a referência "
+"será perdida e o áudio do Stream Player será enviado para o Master. Este "
+"sistema foi escolhido porque reorganizar os barramentos é um processo mais "
+"comum do que renomeá-los."
 
 msgid "Default bus layout"
-msgstr ""
+msgstr "Layout de barramento padrão"
 
 msgid ""
 "The default bus layout is automatically saved to the ``res://"
 "default_bus_layout.tres`` file. Custom bus arrangements can be saved and "
 "loaded from disk."
 msgstr ""
+"O layout de barramento padrão é salvo automaticamente no arquivo ``res://"
+"default_bus_layout.tres``. Layouts de barramento personalizados podem ser "
+"salvos e carregados do disco."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

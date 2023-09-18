@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Spawning monsters"
-msgstr "Добавление мобов"
+msgstr "Спавн монстров"
 
 msgid ""
 "In this part, we're going to spawn monsters along a path randomly. By the "
@@ -50,11 +49,8 @@ msgstr ""
 "окна по умолчанию ``1024x600``. Мы установим его на ``720x540``, маленькую "
 "красивую рамку."
 
-#, fuzzy
 msgid "Go to *Project -> Project Settings*."
-msgstr ""
-"Чтобы получить доступ к этому диалогу, выберите Project -> Project Settings. "
-"Попробуйте прямо сейчас."
+msgstr "Перейдите в *Проект -> Настройки проекта*."
 
 msgid "|image1|"
 msgstr "|image1|"
@@ -75,9 +71,8 @@ msgstr "|image2|"
 msgid "image2"
 msgstr "image2"
 
-#, fuzzy
 msgid "Creating the spawn path"
-msgstr "Создание анимации"
+msgstr "Создание пути спавна"
 
 msgid ""
 "Like you did in the 2D game tutorial, you're going to design a path and use "
@@ -114,9 +109,8 @@ msgstr "|image3|"
 msgid "image3"
 msgstr "image3"
 
-#, fuzzy
 msgid "Adding placeholder cylinders"
-msgstr "Типы заполнителей"
+msgstr "Добавление заполнителей цилиндров"
 
 msgid ""
 "Let's add the placeholder meshes. Add a new *Spatial* node as a child of the "
@@ -370,20 +364,17 @@ msgstr ""
 "узла в *SpawnPath* и *SpawnLocation* соответственно. Это более точно "
 "описывает то, для чего мы будем их использовать."
 
-#, fuzzy
 msgid "|image19|"
-msgstr "|image1|"
+msgstr "|изображение19|"
 
-#, fuzzy
 msgid "image19"
-msgstr "|image1|"
+msgstr "изображение19"
 
 msgid "With that, we're ready to code the spawn mechanism."
 msgstr "После этого мы готовы к написанию кода механизма порождения."
 
-#, fuzzy
 msgid "Spawning monsters randomly"
-msgstr "Добавление мобов"
+msgstr "Случайный спавн монстров"
 
 msgid "Right-click on the *Main* node and attach a new script to it."
 msgstr ""
@@ -421,26 +412,22 @@ msgstr ""
 "Вернитесь на 3D-экран и выберите узел *Main*. Перетащите ``Mob.tscn`` из "
 "панели *FileSystem* в слот *Mob Scene* в инспекторе."
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|изображение20|"
 
-#, fuzzy
 msgid "image20"
-msgstr "|image2|"
+msgstr "изображение20"
 
 msgid "Add a new *Timer* node as a child of *Main*. Name it *MobTimer*."
 msgstr ""
 "Добавьте новый узел *Timer* как дочерний узел *Main*. Назовите его "
 "*MobTimer*."
 
-#, fuzzy
 msgid "|image21|"
-msgstr "|image2|"
+msgstr "|изображение21|"
 
-#, fuzzy
 msgid "image21"
-msgstr "|image2|"
+msgstr "изображение21"
 
 msgid ""
 "In the *Inspector*, set its *Wait Time* to ``0.5`` seconds and turn on "
@@ -449,13 +436,11 @@ msgstr ""
 "В инспекторе установите *Wait Time* на ``0.5`` секунд и включите "
 "*Autostart*, чтобы он автоматически запускался, когда мы запустим игру."
 
-#, fuzzy
 msgid "|image22|"
-msgstr "|image2|"
+msgstr "|изображение22|"
 
-#, fuzzy
 msgid "image22"
-msgstr "|image2|"
+msgstr "изображение22"
 
 msgid ""
 "Timers emit a ``timeout`` signal every time they reach the end of their "
@@ -475,24 +460,20 @@ msgstr ""
 "Когда *MobTimer* всё ещё выбран, перейдите в панель *Node* справа и дважды "
 "щёлкните по сигналу ``timeout``."
 
-#, fuzzy
 msgid "|image23|"
-msgstr "|image2|"
+msgstr "|изображение23|"
 
-#, fuzzy
 msgid "image23"
-msgstr "|image2|"
+msgstr "изображение23"
 
 msgid "Connect it to the *Main* node."
 msgstr "Подключите его к узлу *Main*."
 
-#, fuzzy
 msgid "|image24|"
-msgstr "|image2|"
+msgstr "|изображение24|"
 
-#, fuzzy
 msgid "image24"
-msgstr "|image2|"
+msgstr "изображение24"
 
 msgid ""
 "This will take you back to the script, with a new empty "
@@ -503,9 +484,8 @@ msgstr ""
 msgid "Let's code the mob spawning logic. We're going to:"
 msgstr "Давайте напишем логику порождения мобов. Мы собираемся:"
 
-#, fuzzy
 msgid "Instantiate the mob scene."
-msgstr "Создать и добавить новую комнату."
+msgstr "Добавить подвижный объект на сцену."
 
 msgid "Sample a random position on the spawn path."
 msgstr "Выборка случайной позиции на пути порождения."
@@ -520,9 +500,8 @@ msgstr ""
 "Вызовите метод ``initialize()`` моба, передав ему случайную позицию и "
 "позицию игрока."
 
-#, fuzzy
 msgid "Add the mob as a child of the *Main* node."
-msgstr "Добавьте скрипт в узел."
+msgstr "Добавьте подвижный объект в качестве дочернего элемента узла *Main*."
 
 msgid ""
 "Above, ``randf()`` produces a random value between ``0`` and ``1``, which is "
@@ -541,13 +520,11 @@ msgstr ""
 "Вы можете протестировать сцену, нажав :kbd:`F6`. Вы должны увидеть, что "
 "монстры появляются и движутся по прямой линии."
 
-#, fuzzy
 msgid "|image25|"
-msgstr "|image2|"
+msgstr "|изображение25|"
 
-#, fuzzy
 msgid "image25"
-msgstr "|image2|"
+msgstr "изображение25"
 
 msgid ""
 "For now, they bump and slide against one another when their paths cross. "

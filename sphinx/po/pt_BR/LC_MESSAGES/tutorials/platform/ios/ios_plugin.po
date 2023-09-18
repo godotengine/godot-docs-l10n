@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating iOS plugins"
-msgstr "Criando um script C#"
+msgstr "Criando plugins para iOS"
 
 msgid ""
 "This page explains what iOS plugins can do for you, how to use an existing "
@@ -32,9 +31,8 @@ msgid ""
 "more."
 msgstr ""
 
-#, fuzzy
 msgid "Loading and using an existing plugin"
-msgstr "Criando um script C#"
+msgstr "Carregando e usando um plugin existente"
 
 msgid ""
 "An iOS plugin requires a ``.gdip`` configuration file, a binary file which "
@@ -63,9 +61,8 @@ msgid ""
 "get_singleton()``::"
 msgstr ""
 
-#, fuzzy
 msgid "Creating an iOS plugin"
-msgstr "Criando um script C#"
+msgstr "Criando um plug-in para iOS"
 
 msgid ""
 "At its core, a Godot iOS plugin is an iOS library (*.a* archive file or *."
@@ -113,13 +110,12 @@ msgid ""
 "Settings`` tab:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Download the Godot engine source from the `Godot GitHub page <https://github."
 "com/godotengine/godot>`_."
 msgstr ""
-"uma cópia do `godot-cpp repository <https://github.com/GodotNativeTools/"
-"godot-cpp>`__."
+"Baixe a fonte do engine Godot na página `Godot GitHub <https://github.com/"
+"godotengine/godot>`_."
 
 msgid ""
 "Run SCons to generate headers. You can learn the process by reading :ref:"
@@ -164,7 +160,7 @@ msgstr ""
 
 #, fuzzy
 msgid "The configuration file format is as follow::"
-msgstr "Os arquivos CSV devem ser formatados da seguinte forma:"
+msgstr "O formato do arquivo de configuração é o seguinte::"
 
 msgid "The ``config`` section and fields are required and defined as follow:"
 msgstr ""
@@ -207,7 +203,7 @@ msgid ""
 msgstr ""
 
 msgid "**dependencies**:"
-msgstr ""
+msgstr "**dependencies**:"
 
 msgid ""
 "**linked**: contains a list of iOS frameworks that the iOS application "
@@ -271,4 +267,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

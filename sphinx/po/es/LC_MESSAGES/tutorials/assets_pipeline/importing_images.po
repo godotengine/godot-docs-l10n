@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,6 +92,8 @@ msgid ""
 "WebP (``.webp``) - WebP files support transparency and can be compressed "
 "lossily or losslessly. The precision is limited to 8 bits per channel."
 msgstr ""
+"Los archivos WebP (``.webp``) admiten transparencia y pueden ser comprimidos "
+"con pérdida o sin pérdida. La precisión está limitada a 8 bits por canal."
 
 msgid ""
 "If you've compiled the Godot editor from source with specific modules "
@@ -199,22 +201,19 @@ msgstr ""
 "ventajas y desventajas (|good| = Mejor, |bad| = Peor):"
 
 msgid "good"
-msgstr ""
+msgstr "bien"
 
-#, fuzzy
 msgid "bad"
-msgstr "y"
+msgstr "mal"
 
 msgid "Uncompressed"
 msgstr "Sin comprimir"
 
-#, fuzzy
 msgid "Compress Lossless"
-msgstr "Compresión sin pérdida (PNG)"
+msgstr "Compresión sin pérdida"
 
-#, fuzzy
 msgid "Compress Lossy"
-msgstr "Compresión con pérdidas (WebP)"
+msgstr "Compresión con pérdidas"
 
 msgid "Compress VRAM"
 msgstr "Compresion VRAM"
@@ -225,13 +224,11 @@ msgstr "Descripción"
 msgid "Stored as raw pixels"
 msgstr "Guardado como pixeles sin procesar"
 
-#, fuzzy
 msgid "Stored as Lossless WebP / PNG"
-msgstr "Compresión sin pérdida (PNG)"
+msgstr "Almacenado como WebP sin pérdida / PNG"
 
-#, fuzzy
 msgid "Stored as Lossy WebP"
-msgstr "Guardado como WebP"
+msgstr "Almacenado como WebP con pérdidas"
 
 msgid "Stored as S3TC/BC or PVRTC/ETC depending on platform"
 msgstr "Guardado como S3TC/BC o PVRTC/ETC, según plataforma"
@@ -245,9 +242,8 @@ msgstr "|bad| Grande"
 msgid "|regular| Small"
 msgstr "|regular| Pequeño"
 
-#, fuzzy
 msgid "regular"
-msgstr "|regular| Pequeño"
+msgstr "regular"
 
 msgid "|good| Very Small"
 msgstr "|good| Muy pequeño"
@@ -338,17 +334,17 @@ msgstr ""
 "tener que ajustar shaders personalizados para que usan el mapa de normales "
 "para tener esto en cuenta."
 
-#, fuzzy
 msgid ""
 "Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is "
 "known as OpenGL style. If you've imported a material made to be used with "
 "another engine it may be DirectX style, in which case the normal map needs "
 "to be converted so its Y axis is flipped."
 msgstr ""
-"Godot requiere que el mapa de normales use coordenadas X+, Y- y Z+. En otras "
-"palabras, si has importado un material hecho para ser usado en otro motor, "
-"tal vez debas convertir el mapa de normales así el eje Y queda invertido. De "
-"otro modo la dirección del mapa de normales aparecerá invertido en el eje Y."
+"Godot requiere que el mapa de normales (normal map) utilice las coordenadas "
+"X+, Y+ y Z+ (estilo OpenGL). Esto se conoce como estilo OpenGL. Si has "
+"importado un material creado para ser utilizado con otro motor, es posible "
+"que esté en estilo DirectX, en cuyo caso el mapa de normales necesita ser "
+"convertido para que su eje Y esté invertido."
 
 msgid ""
 "More information about normal maps (including a coordinate order table for "
@@ -444,11 +440,9 @@ msgstr ""
 "Cuando las texturas son casi paralelas a la vista (como los pisos), esta "
 "opción les permite tener más detalles al reducir la borrosidad."
 
-#, fuzzy
 msgid "sRGB"
-msgstr "Is sRGB"
+msgstr "sRGB"
 
-#, fuzzy
 msgid ""
 "Godot uses Linear colorspace when rendering 3D. Textures mapped to albedo or "
 "detail channels need to have this option turned on in order for colors to "
@@ -458,7 +452,7 @@ msgstr ""
 "Godot usa el espacio de color lineal al renderizar 3D. Las texturas mapeadas "
 "en los canales de albedo o de detalles necesitan tener esta opción activada "
 "para que los colores se muestren correctamente. Cuando se configura en el "
-"modo \"Detect\", la textura se marcará como SRGB cuando se use en los "
+"modo **Detect**, la textura se marcará como sRGB cuando se use en los "
 "canales del albedo."
 
 msgid ""
@@ -466,12 +460,18 @@ msgid ""
 "means using the same texture in both 2D and 3D will make the texture display "
 "with incorrect colors in either 2D or 3D."
 msgstr ""
+"Dado que la textura tendrá sus datos modificados cuando se habilita sRGB, "
+"esto significa que usar la misma textura tanto en 2D como en 3D hará que la "
+"textura se muestre con colores incorrectos en cualquiera de los dos."
 
 msgid ""
 "To work around this, make a copy of the texture on the filesystem and enable "
 "sRGB on one of the copies only. Use the copy with sRGB enabled in 3D, and "
 "the copy with sRGB disabled in 2D."
 msgstr ""
+"Para solucionar esto, realiza una copia de la textura en el sistema de "
+"archivos y habilita sRGB solo en una de las copias. Utiliza la copia con "
+"sRGB habilitado en 3D y la copia con sRGB deshabilitado en 2D."
 
 msgid "Process"
 msgstr "Procesos"
@@ -483,7 +483,7 @@ msgstr ""
 "importan como texturas."
 
 msgid "Fix Alpha Border"
-msgstr "Fix Alpha Border"
+msgstr "Corregir Borde Alfa"
 
 msgid ""
 "This puts pixels of the same surrounding color in transition from "

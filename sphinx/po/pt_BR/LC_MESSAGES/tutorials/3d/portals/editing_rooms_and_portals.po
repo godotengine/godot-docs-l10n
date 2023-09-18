@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Editing Rooms and Portals"
-msgstr "Editando instâncias"
+msgstr "Editando salas e portais"
 
-#, fuzzy
 msgid "Example SceneTree"
-msgstr "SceneTree"
+msgstr "Exemplo de SceneTree"
 
 msgid "Putting all the ideas together, here is an example scene tree:"
 msgstr ""
@@ -67,9 +65,8 @@ msgid ""
 "will convert them into Rooms, RoomGroups and Portals."
 msgstr ""
 
-#, fuzzy
 msgid "Postfix convention"
-msgstr "Convenções de Formatação"
+msgstr "Convenção Postfix"
 
 msgid "``-room`` becomes a :ref:`Room<class_Room>`."
 msgstr ""
@@ -90,7 +87,7 @@ msgid ""
 msgstr ""
 
 msgid "For example:"
-msgstr ""
+msgstr "Por exemplo:"
 
 msgid "``kitchen-room`` - create a Room called \"kitchen\"."
 msgstr ""
@@ -126,9 +123,8 @@ msgid ""
 "the name of the Room you wish to link the Portal to as a prefix."
 msgstr ""
 
-#, fuzzy
 msgid "Wildcard"
-msgstr "Padrão coringa"
+msgstr "Curinga"
 
 msgid ""
 "In most cases, this can be done using a name such as ``kitchen-portal``. "
@@ -142,9 +138,8 @@ msgid ""
 "the wildcard, it will ignore anything placed after it in the name."
 msgstr ""
 
-#, fuzzy
 msgid "This means we can use the following portal names:"
-msgstr "O HUD exibirá as seguintes informações:"
+msgstr "Isto significa que podemos usar os seguintes nomes de portal:"
 
 msgid "``kitchen*1-portal`` - creates a Portal leading to the \"kitchen\"."
 msgstr ""
@@ -160,7 +155,7 @@ msgid "Wildcards work on all of the nodes which use these naming conventions."
 msgstr ""
 
 msgid "Manual bounds"
-msgstr ""
+msgstr "Limites manuais"
 
 msgid ""
 "Manual bounds are a way of explicitly setting the convex hull for a room, "
@@ -177,9 +172,8 @@ msgid ""
 "room, and delete the original ``-bound`` MeshInstance."
 msgstr ""
 
-#, fuzzy
 msgid "Portal point editing"
-msgstr "Detalhes sobre exportação"
+msgstr "Edição de pontos do portal"
 
 msgid ""
 "Portals are defined by a combination of the transform of the portal node, "
@@ -219,11 +213,9 @@ msgid ""
 "**Simplification** value will be inherited from the RoomManager."
 msgstr ""
 
-#, fuzzy
 msgid "RoomManager"
-msgstr "Gerenciador de Projetos"
+msgstr "RoomManager"
 
-#, fuzzy
 msgid "Show Debug"
 msgstr "Depuração"
 
@@ -256,9 +248,8 @@ msgid ""
 "this trade off usually works in your favor."
 msgstr ""
 
-#, fuzzy
 msgid "Plane Simplification"
-msgstr "Especificação de Linguagem"
+msgstr "Simplificação do plano"
 
 msgid ""
 "In some cases, the convex hulls automatically generated for rooms may "
@@ -278,7 +269,7 @@ msgid ""
 msgstr ""
 
 msgid "Two Way"
-msgstr ""
+msgstr "Bidirecional"
 
 msgid ""
 "Portals can either be two-way or one-way. The default two-way portals are "
@@ -288,9 +279,8 @@ msgid ""
 "viewing buildings from outdoors."
 msgstr ""
 
-#, fuzzy
 msgid "Particle Systems"
-msgstr "Sistema de arquivos"
+msgstr "Sistemas de Partículas"
 
 msgid ""
 "Be aware that when placing ``STATIC`` particle systems, the AABB on "
@@ -300,9 +290,8 @@ msgid ""
 "Margin** to the particle system in the Geometry Inspector."
 msgstr ""
 
-#, fuzzy
 msgid "Multimeshes"
-msgstr "String com múltiplas linhas"
+msgstr "Multimalhas"
 
 msgid ""
 "Note that multimeshes will be culled as a group, rather than individually. "
@@ -311,4 +300,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

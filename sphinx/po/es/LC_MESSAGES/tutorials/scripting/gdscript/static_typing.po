@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,9 +103,8 @@ msgstr ""
 "Probablemente hayas almacenado un nodo en una variable y escrito un punto "
 "esperando sugerencias de autocompletado sin obtener nada:"
 
-#, fuzzy
 msgid "code completion options for dynamic"
-msgstr "Forzar su finalización (opcional)"
+msgstr "Opciones de autocompletado para dinámico"
 
 msgid ""
 "This is due to dynamic code. Godot cannot know what node or value type "
@@ -116,9 +115,8 @@ msgstr ""
 "valor está pasando a la función. Sin embargo, si escribe el tipo "
 "explícitamente, obtendrás todos los métodos y variables públicos del nodo:"
 
-#, fuzzy
 msgid "code completion options for typed"
-msgstr "Forzar su finalización (opcional)"
+msgstr "Opciones de autocompletado para tipado"
 
 msgid ""
 "In the future, typed GDScript will also increase code performance: Just-In-"
@@ -175,14 +173,13 @@ msgstr ""
 "Clases principales y nodos (``Object``, ``Node``, ``Area2D``, ``Camera2D``, "
 "etc.)"
 
-#, fuzzy
 msgid ""
 "Your own custom classes. Look at the new :ref:`class_name "
 "<doc_gdscript_basics_class_name>` feature to register types in the editor."
 msgstr ""
-"Tu propio tipos, clases personalizadas. Observa la nueva funcionalidad :ref:"
-"`class_name <doc_scripting_continued_class_name>` para registrar tipos en el "
-"editor."
+"Tus propias clases personalizadas. Echa un vistazo a la nueva "
+"característica :ref:`class_name<doc_gdscript_basics_class_name>` para "
+"registrar tipos en el editor."
 
 msgid ""
 "You don't need to write type hints for constants, as Godot sets it "
@@ -318,7 +315,7 @@ msgstr ""
 "de verde a la izquierda del editor de script."
 
 msgid "Unsafe vs Safe Line"
-msgstr ""
+msgstr "Linea Segura vs Insegura"
 
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "Línea no segura (línea 7) vs Línea segura (líneas 6 y 8)"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Compiling for Windows"
-msgstr ""
+msgstr "Compilando para Windows"
 
 msgid ""
 "This page describes how to compile Windows editor and export template "
@@ -80,14 +80,12 @@ msgid ""
 msgstr ""
 
 msgid "Setting up SCons"
-msgstr ""
+msgstr "Configurando SCons"
 
-#, fuzzy
 msgid ""
 "To install SCons, open the command prompt and run the following command::"
 msgstr ""
-"Adicione um roteiro ao nó ``Turba`` e adicione as seguintes variáveis "
-"membros:"
+"Para instalar o SCons, abra o prompt de comando e execute o seguinte comando:"
 
 msgid ""
 "If you are prompted with the message ``Defaulting to user installation "
@@ -137,11 +135,10 @@ msgid ""
 msgstr ""
 
 msgid "Downloading Godot's source"
-msgstr ""
+msgstr "Download do código-fonte do Godot"
 
-#, fuzzy
 msgid "Refer to :ref:`doc_getting_source` for detailed instructions."
-msgstr "Veja :ref:`doc_exporting_projects` para mais informações."
+msgstr "Consulte :ref:`doc_getting_source` para instruções detalhadas."
 
 msgid ""
 "The tutorial will assume from now on that you placed the source code in ``C:"
@@ -164,9 +161,8 @@ msgstr ""
 msgid "Compiling"
 msgstr "Compilando"
 
-#, fuzzy
 msgid "Selecting a compiler"
-msgstr "Exemplo de Disparo"
+msgstr "Selecionando um compilador"
 
 msgid ""
 "SCons will automatically find and use an existing Visual Studio "
@@ -185,20 +181,11 @@ msgid ""
 msgstr ""
 
 msgid "Running SCons"
-msgstr ""
+msgstr "Executando SCons"
 
 msgid ""
 "After opening a command prompt, change to the root directory of the engine "
 "source code (using ``cd``) and type::"
-msgstr ""
-
-msgid "You can specify a number of CPU threads to use to speed up the build::"
-msgstr ""
-
-msgid ""
-"In general, it is OK to have at least as many threads compiling Godot as you "
-"have cores in your CPU, if not one or two more. Feel free to add the ``-j`` "
-"option to any SCons command you see below."
 msgstr ""
 
 msgid ""
@@ -238,9 +225,8 @@ msgid ""
 "by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
 msgstr ""
 
-#, fuzzy
 msgid "Development in Visual Studio"
-msgstr "Desenvolvimento"
+msgstr "Desenvolvimento no Visual Studio"
 
 msgid ""
 "Using an IDE is not required to compile Godot, as SCons takes care of "
@@ -265,11 +251,8 @@ msgid ""
 "able to build Godot using Visual Studio's **Build** button."
 msgstr ""
 
-#, fuzzy
 msgid "See :ref:`doc_configuring_an_ide_vs` for further details."
-msgstr ""
-"Veja :ref:`Executando código no editor <doc_running_code_in_the_editor>` "
-"para mais informações."
+msgstr "Veja :ref:`doc_configuring_an_ide_vs` para mais detalhes."
 
 msgid "Cross-compiling for Windows from other operating systems"
 msgstr ""
@@ -282,22 +265,22 @@ msgid ""
 msgstr ""
 
 msgid "**Arch Linux**"
-msgstr ""
+msgstr "**Arch Linux**"
 
 msgid "Install `mingw-w64-gcc from the AUR`_."
 msgstr ""
 
 msgid "**Debian** / **Ubuntu**"
-msgstr ""
+msgstr "**Debian** / **Ubuntu**"
 
 msgid "**Fedora**"
-msgstr ""
+msgstr "**Fedora**"
 
 msgid "**macOS**"
-msgstr ""
+msgstr "**macOS**"
 
 msgid "**Mageia**"
-msgstr ""
+msgstr "**Mageia**"
 
 msgid ""
 "Before attempting the compilation, SCons will check for the following "
@@ -319,18 +302,22 @@ msgstr ""
 msgid "Troubleshooting"
 msgstr "Solução de problemas"
 
+#, fuzzy
 msgid ""
 "Cross-compiling from some Ubuntu versions may lead to `this bug <https://"
 "github.com/godotengine/godot/issues/9258>`_, due to a default configuration "
 "lacking support for POSIX threading."
 msgstr ""
+"A compilação cruzada de algumas versões do Ubuntu pode levar a `este bug "
+"<https://github.com/godotengine/godot/issues/9258>`_, devido a uma "
+"configuração padrão sem suporte para threading POSIX."
 
 msgid ""
 "You can change that configuration following those instructions, for 64-bit::"
 msgstr ""
 
 msgid "And for 32-bit::"
-msgstr ""
+msgstr "E para 32-bit:"
 
 msgid "Creating Windows export templates"
 msgstr ""
@@ -346,9 +333,8 @@ msgid ""
 "(such as ``3.1.1.stable`` or ``3.2.dev``)::"
 msgstr ""
 
-#, fuzzy
 msgid "With the following names::"
-msgstr "Adicione o código abaixo:"
+msgstr "Com os seguintes nomes:"
 
 msgid ""
 "However, if you are using custom modules or custom engine code, you may "
@@ -362,4 +348,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Vector math"
-msgstr ""
+msgstr "Matemática vetorial"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -96,9 +96,8 @@ msgid ""
 "it always represents a relative direction and magnitude."
 msgstr ""
 
-#, fuzzy
 msgid "Vector operations"
-msgstr "Outras considerações"
+msgstr "Operações vetoriais"
 
 msgid ""
 "You can use either method (x and y coordinates or angle and magnitude) to "
@@ -115,14 +114,14 @@ msgid ""
 msgstr ""
 
 msgid "Member access"
-msgstr ""
+msgstr "Acesso de membros"
 
 msgid ""
 "The individual components of the vector can be accessed directly by name."
 msgstr ""
 
 msgid "Adding vectors"
-msgstr ""
+msgstr "Adicionando vetores"
 
 msgid ""
 "When adding or subtracting two vectors, the corresponding components are "
@@ -138,7 +137,7 @@ msgid "Note that adding ``a + b`` gives the same result as ``b + a``."
 msgstr ""
 
 msgid "Scalar multiplication"
-msgstr ""
+msgstr "Multiplicação escalar"
 
 msgid ""
 "Vectors represent both direction and magnitude. A value representing only "
@@ -154,13 +153,13 @@ msgid ""
 msgstr ""
 
 msgid "Practical applications"
-msgstr ""
+msgstr "Aplicações práticas"
 
 msgid "Let's look at two common uses for vector addition and subtraction."
 msgstr ""
 
 msgid "Movement"
-msgstr ""
+msgstr "Movimento"
 
 msgid ""
 "A vector can represent **any** quantity with a magnitude and direction. "
@@ -189,7 +188,7 @@ msgid "To find a vector pointing from ``A`` to ``B`` use ``B - A``."
 msgstr ""
 
 msgid "Unit vectors"
-msgstr ""
+msgstr "Vetores unitários"
 
 msgid ""
 "A vector with **magnitude** of ``1`` is called a **unit vector**. They are "
@@ -198,7 +197,7 @@ msgid ""
 msgstr ""
 
 msgid "Normalization"
-msgstr ""
+msgstr "Normalização"
 
 msgid ""
 "**Normalizing** a vector means reducing its length to ``1`` while preserving "
@@ -214,7 +213,7 @@ msgid ""
 msgstr ""
 
 msgid "Reflection"
-msgstr ""
+msgstr "Reflexão"
 
 msgid ""
 "A common use of unit vectors is to indicate **normals**. Normal vectors are "
@@ -270,7 +269,7 @@ msgid ""
 msgstr ""
 
 msgid "Facing"
-msgstr ""
+msgstr "Orientação (Voltado para)"
 
 msgid ""
 "We can use this fact to detect whether an object is facing toward another "
@@ -314,9 +313,8 @@ msgid ""
 "directions."
 msgstr ""
 
-#, fuzzy
 msgid "Calculating normals"
-msgstr "Criando nós"
+msgstr "Calculando normais"
 
 msgid ""
 "One common use of cross products is to find the surface normal of a plane or "
@@ -328,9 +326,8 @@ msgstr ""
 msgid "Here is a function to calculate a triangle's normal:"
 msgstr ""
 
-#, fuzzy
 msgid "Pointing to a target"
-msgstr "Preparando o projeto"
+msgstr "Apontando para um destino"
 
 msgid ""
 "In the dot product section above, we saw how it could be used to find the "
@@ -340,9 +337,8 @@ msgid ""
 "direction. The resulting perpendicular vector is the axis of rotation."
 msgstr ""
 
-#, fuzzy
 msgid "More information"
-msgstr "Animação por Sprites"
+msgstr "Mais informações"
 
 msgid ""
 "For more information on using vector math in Godot, see the following "
@@ -350,10 +346,10 @@ msgid ""
 msgstr ""
 
 msgid ":ref:`doc_vectors_advanced`"
-msgstr ""
+msgstr ":ref:`doc_vectors_advanced`"
 
 msgid ":ref:`doc_matrices_and_transforms`"
-msgstr ""
+msgstr ":ref:`doc_matrices_and_transforms`"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgid ""
 msgstr ""
 
 msgid "Transparent"
-msgstr ""
+msgstr "투명"
 
 msgid ""
 "In Godot, materials are not transparent unless specifically configured to "
@@ -144,7 +144,7 @@ msgid ""
 msgstr ""
 
 msgid "No Depth Test"
-msgstr ""
+msgstr "깊이 테스트 없음"
 
 msgid ""
 "In order for close objects to appear over far away objects, depth testing is "
@@ -159,7 +159,7 @@ msgid ""
 msgstr ""
 
 msgid "Use Point Size"
-msgstr ""
+msgstr "점 크기 사용"
 
 msgid ""
 "This option is only effective when the geometry rendered is made of points "
@@ -168,7 +168,7 @@ msgid ""
 msgstr ""
 
 msgid "World Triplanar"
-msgstr ""
+msgstr "월드 트라이플래너"
 
 msgid ""
 "When using triplanar mapping (see below, in the UV1 and UV2 settings), "
@@ -177,7 +177,7 @@ msgid ""
 msgstr ""
 
 msgid "Fixed Size"
-msgstr ""
+msgstr "고정 크기"
 
 msgid ""
 "This causes the object to be rendered at the same size no matter the "
@@ -194,7 +194,7 @@ msgid ""
 msgstr ""
 
 msgid "Disable Ambient Light"
-msgstr ""
+msgstr "환경광 비활성화"
 
 msgid ""
 "Makes the object not receive any kind of ambient lighting that would "
@@ -216,13 +216,13 @@ msgid ""
 msgstr ""
 
 msgid "Use as Albedo"
-msgstr ""
+msgstr "알베도로 사용"
 
 msgid "Choosing this option means vertex color is used as albedo color."
 msgstr ""
 
 msgid "Is sRGB"
-msgstr ""
+msgstr "sRGB 여부"
 
 msgid ""
 "Most 3D DCCs will likely export vertex colors as sRGB, so toggling this "
@@ -230,7 +230,7 @@ msgid ""
 msgstr ""
 
 msgid "Parameters"
-msgstr ""
+msgstr "매개변수"
 
 msgid ""
 "``SpatialMaterial`` also has several configurable parameters to tweak many "
@@ -238,7 +238,7 @@ msgid ""
 msgstr ""
 
 msgid "Diffuse Mode"
-msgstr ""
+msgstr "디퓨즈 모드"
 
 msgid ""
 "Specifies the algorithm used by diffuse scattering of light when hitting the "
@@ -272,7 +272,7 @@ msgid ""
 msgstr ""
 
 msgid "Specular Mode"
-msgstr ""
+msgstr "스펙큘러 모드"
 
 msgid ""
 "Specifies how the specular blob will be rendered. The specular blob "
@@ -298,7 +298,7 @@ msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
 msgstr ""
 
 msgid "Blend Mode"
-msgstr ""
+msgstr "혼합 모드"
 
 msgid ""
 "Controls the blend mode for the material. Keep in mind that any mode other "
@@ -321,7 +321,7 @@ msgid "**Mul:** Object is multiplied."
 msgstr ""
 
 msgid "Cull Mode"
-msgstr ""
+msgstr "컬 모드"
 
 msgid ""
 "Determines which side of the object is not drawn when backfaces are rendered:"
@@ -353,7 +353,7 @@ msgstr ""
 "면 Blender의 재질 탭에서 **Backface culling** 옵션을 활성화하십시오."
 
 msgid "Depth Draw Mode"
-msgstr ""
+msgstr "깊이 그리기 모드"
 
 msgid "Specifies when depth rendering must take place."
 msgstr ""
@@ -385,7 +385,7 @@ msgid ""
 msgstr ""
 
 msgid "Point Size"
-msgstr ""
+msgstr "점 크기"
 
 msgid "When drawing points, specify the point size in pixels."
 msgstr ""
@@ -425,7 +425,7 @@ msgid "Enables scaling a mesh in billboard mode."
 msgstr ""
 
 msgid "Grow"
-msgstr ""
+msgstr "자라기"
 
 msgid "Grows the object vertices in the direction pointed by their normals:"
 msgstr ""
@@ -458,7 +458,7 @@ msgid ""
 msgstr ""
 
 msgid "Albedo"
-msgstr ""
+msgstr "알베도"
 
 msgid ""
 "*Albedo* is the base color for the material, on which all the other settings "
@@ -478,7 +478,7 @@ msgid ""
 msgstr ""
 
 msgid "Metallic"
-msgstr ""
+msgstr "금속성"
 
 msgid ""
 "Godot uses a metallic model over competing models due to its simplicity. "
@@ -499,7 +499,7 @@ msgid ""
 msgstr ""
 
 msgid "Roughness"
-msgstr ""
+msgstr "굵기"
 
 msgid ""
 "*Roughness* affects the way reflection happens. A value of ``0`` makes it a "
@@ -509,7 +509,7 @@ msgid ""
 msgstr ""
 
 msgid "Emission"
-msgstr ""
+msgstr "방출"
 
 msgid ""
 "*Emission* specifies how much light is emitted by the material (keep in mind "
@@ -550,7 +550,7 @@ msgstr ""
 "찾을 수 있습니다."
 
 msgid "Rim"
-msgstr ""
+msgstr "림"
 
 msgid ""
 "Some fabrics have small micro-fur that causes light to scatter around it. "
@@ -568,7 +568,7 @@ msgid ""
 msgstr ""
 
 msgid "Clearcoat"
-msgstr ""
+msgstr "클리어코트"
 
 msgid "*This feature is only available when using the GLES3 backend.*"
 msgstr ""
@@ -590,7 +590,7 @@ msgid "The effect will be more noticeable in Godot 4."
 msgstr ""
 
 msgid "Anisotropy"
-msgstr ""
+msgstr "비등방성"
 
 msgid ""
 "This changes the shape of the specular blob and aligns it to tangent space. "
@@ -600,7 +600,7 @@ msgid ""
 msgstr ""
 
 msgid "Ambient Occlusion"
-msgstr ""
+msgstr "앰비언트 오클루전"
 
 msgid ""
 "It is possible to specify a baked ambient occlusion map. This map affects "
@@ -641,7 +641,7 @@ msgid ""
 msgstr ""
 
 msgid "Refraction"
-msgstr ""
+msgstr "굴절률"
 
 msgid ""
 "When refraction is enabled, it supersedes alpha blending, and Godot attempts "
@@ -651,7 +651,7 @@ msgid ""
 msgstr ""
 
 msgid "Detail"
-msgstr ""
+msgstr "디테일"
 
 msgid ""
 "Godot allows using secondary albedo and normal maps to generate a detail "

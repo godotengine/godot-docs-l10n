@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,12 +67,15 @@ msgid ""
 "position they must have within ``arrays``. See also :ref:`Mesh.ArrayType "
 "<enum_Mesh_ArrayType>`."
 msgstr ""
+"Les éléments possibles de ``arrays`` sont listés ci-dessous, avec la "
+"position qu'ils doivent avoir dans ``arrays``. Voir aussi :ref:`Mesh."
+"ArrayType <enum_Mesh_ArrayType>`."
 
 msgid "Index"
 msgstr "Index"
 
 msgid "Mesh.ArrayType Enum"
-msgstr ""
+msgstr "Mesh.ArrayType Enum"
 
 #, fuzzy
 msgid "Array type"
@@ -82,21 +85,20 @@ msgid "0"
 msgstr "0"
 
 msgid "``ARRAY_VERTEX``"
-msgstr ""
+msgstr "``ARRAY_VERTEX``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>` or :ref:`PoolVector2Array "
 "<class_PoolVector2Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>` : Un tableau d'objets :ref:"
-"`Vector2 <class_Vector2 <class_Vector2>`"
+":ref:`PoolVector3Array <class_PoolVector3Array>` ou :ref:`PoolVector2Array "
+"<class_PoolVector2Array>`"
 
 msgid "1"
 msgstr "1"
 
 msgid "``ARRAY_NORMAL``"
-msgstr ""
+msgstr "``ARRAY_NORMAL``"
 
 #, fuzzy
 msgid ":ref:`PoolVector3Array <class_PoolVector3Array>`"
@@ -106,7 +108,7 @@ msgid "2"
 msgstr "2"
 
 msgid "``ARRAY_TANGENT``"
-msgstr ""
+msgstr "``ARRAY_TANGENT``"
 
 #, fuzzy
 msgid ""
@@ -121,7 +123,7 @@ msgid "3"
 msgstr "3"
 
 msgid "``ARRAY_COLOR``"
-msgstr ""
+msgstr "``ARRAY_COLOR``"
 
 #, fuzzy
 msgid ":ref:`PoolColorArray <class_PoolColorArray>`"
@@ -131,27 +133,26 @@ msgid "4"
 msgstr "4"
 
 msgid "``ARRAY_TEX_UV``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>` or :ref:`PoolVector3Array "
 "<class_PoolVector3Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>` : Un tableau d'objets :ref:"
-"`PoolVector3Array <class_PoolVector3Array>`"
+":ref:`PoolVector3Array <class_PoolVector3Array>` ou :ref:`PoolVector2Array "
+"<class_PoolVector2Array>`"
 
 msgid "5"
 msgstr "5"
 
 msgid "``ARRAY_TEX_UV2``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2``"
 
 msgid "6"
 msgstr "6"
 
 msgid "``ARRAY_BONES``"
-msgstr ""
+msgstr "``ARRAY_BONES``"
 
 #, fuzzy
 msgid ""
@@ -167,7 +168,7 @@ msgid "7"
 msgstr "7"
 
 msgid "``ARRAY_WEIGHTS``"
-msgstr ""
+msgstr "``ARRAY_WEIGHTS``"
 
 #, fuzzy
 msgid ""
@@ -206,6 +207,14 @@ msgid ""
 "g. ``ARRAY_TANGENT``) use four entries to describe a single vertex. These "
 "must be exactly four times larger than the vertex array."
 msgstr ""
+"Tous les autres tableaux transportent des informations à propos des sommets. "
+"Ils sont aussi optionnels et seront uniquement utilisés s'ils sont inclus. "
+"Certains de ces tableaux (ex. ``ARRAY_COLOR``) utilisent une entrée par "
+"sommet afin de fournir des informations supplémentaires sur les sommets. Ils "
+"doivent avoir la même taille que le tableau des sommets. Les autres tableaux "
+"(ex. ``ARRAY_TANGENT``) utilisent quatre entrées pour décrire un seul "
+"sommet. Ceux-ci doivent être exactement quatre fois plus grand que le "
+"tableau de sommets."
 
 #, fuzzy
 msgid ""

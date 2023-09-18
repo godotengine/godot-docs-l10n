@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 3.5\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 16:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "CanvasItem shaders"
-msgstr ""
+msgstr "Shaders CanvasItem"
 
 msgid ""
 "CanvasItem shaders are used to draw all 2D elements in Godot. These include "
@@ -35,68 +35,67 @@ msgid "Render modes"
 msgstr "Modos de renderização"
 
 msgid "Render mode"
-msgstr ""
+msgstr "Modo de renderização"
 
 msgid "Description"
 msgstr "Descrição"
 
 msgid "**blend_mix**"
-msgstr ""
+msgstr "**blend_mix**"
 
 msgid "Mix blend mode (alpha is transparency), default."
 msgstr ""
 
 msgid "**blend_add**"
-msgstr ""
+msgstr "**blend_add**"
 
 msgid "Additive blend mode."
 msgstr ""
 
 msgid "**blend_sub**"
-msgstr ""
+msgstr "**blend_sub**"
 
 msgid "Subtractive blend mode."
 msgstr ""
 
 msgid "**blend_mul**"
-msgstr ""
+msgstr "**blend_mul**"
 
 msgid "Multiplicative blend mode."
 msgstr ""
 
 msgid "**blend_premul_alpha**"
-msgstr ""
+msgstr "**blend_premul_alpha**"
 
 msgid "Pre-multiplied alpha blend mode."
 msgstr "Alfa previamente multiplicado."
 
 msgid "**blend_disabled**"
-msgstr ""
+msgstr "**blend_disabled**"
 
 msgid "Disable blending, values (including alpha) are written as-is."
 msgstr ""
 
 msgid "**unshaded**"
-msgstr ""
+msgstr "**unshaded**"
 
 msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
 
 msgid "**light_only**"
-msgstr ""
+msgstr "**light_only**"
 
 msgid "Only draw on light pass."
 msgstr ""
 
 msgid "**skip_vertex_transform**"
-msgstr ""
+msgstr "**skip_vertex_transform**"
 
 msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
 msgstr ""
 
-#, fuzzy
 msgid "Built-ins"
-msgstr "Embutido"
+msgstr "Embutidos"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -105,15 +104,14 @@ msgid ""
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
 
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Tipos básicos de vetor"
+msgstr "Built-ins globais"
 
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
 
 msgid "Built-in"
-msgstr ""
+msgstr "Embutido"
 
 msgid "in float **TIME**"
 msgstr ""
@@ -127,9 +125,8 @@ msgid ""
 "as parameter (``1.0`` being the default)."
 msgstr ""
 
-#, fuzzy
 msgid "Vertex built-ins"
-msgstr "Tipos básicos de vetor"
+msgstr "Vertex embutidos"
 
 msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
@@ -249,9 +246,8 @@ msgstr ""
 msgid "Point size for point drawing."
 msgstr ""
 
-#, fuzzy
 msgid "Fragment built-ins"
-msgstr "Tipos básicos de vetor"
+msgstr "Fragmentos embutidos"
 
 msgid ""
 "Certain Nodes (for example, :ref:`Sprites <class_Sprite>`) display a texture "
@@ -346,9 +342,8 @@ msgstr ""
 msgid "Screen texture, mipmaps contain gaussian blurred versions."
 msgstr ""
 
-#, fuzzy
 msgid "Light built-ins"
-msgstr "Tipos básicos definidos por padrão"
+msgstr "Built-ins de iluminação"
 
 msgid ""
 "Light processor functions work differently in 2D than they do in 3D. In "
@@ -366,7 +361,7 @@ msgid ""
 msgstr ""
 
 msgid "in vec3 **NORMAL**"
-msgstr ""
+msgstr "in vec3 **NORMAL**"
 
 msgid ""
 "Input Normal. Although this value is passed in, **normal calculation still "
@@ -386,7 +381,7 @@ msgid ""
 msgstr ""
 
 msgid "sampler2D **TEXTURE**"
-msgstr ""
+msgstr "sampler2D **TEXTURE**"
 
 msgid "Current texture in use for CanvasItem."
 msgstr ""
@@ -423,27 +418,29 @@ msgid "inout vec4 **LIGHT_COLOR**"
 msgstr ""
 
 msgid "Color of Light."
-msgstr ""
+msgstr "Cor da Luz."
 
 msgid "in vec2 **LIGHT_UV**"
-msgstr ""
+msgstr "in vec2 **LIGHT_UV**"
 
 msgid "UV for Light texture."
-msgstr ""
+msgstr "UV para textura de luz."
 
 msgid "out vec4 **SHADOW_COLOR**"
-msgstr ""
+msgstr "out vec4 **SHADOW_COLOR**"
 
 msgid "Shadow Color of Light."
-msgstr ""
+msgstr "Cor da Sombra da Luz."
 
 msgid "inout vec4 **LIGHT**"
-msgstr ""
+msgstr "inout vec4 **LIGHT**"
 
 msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."
 msgstr ""
+"Valor da textura de Luz e da cor de saída. Pode ser modificado. Se não for "
+"usada, a função de luz será ignorada."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"
