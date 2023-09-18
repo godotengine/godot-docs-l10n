@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,27 +17,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Exporting for Linux"
-msgstr "Exportando para iOS"
+msgstr "Exportando para Linux"
 
 msgid ""
 "This page describes how to export a Godot project to Linux. If you're "
 "looking to compile editor or export template binaries from source instead, "
 "read :ref:`doc_compiling_for_x11`."
 msgstr ""
+"Esta página describe cómo exportar un proyecto de Godot a Linux. Si estás "
+"buscando compilar binarios del editor o plantillas de exportación desde el "
+"código fuente, lee :ref:`doc_compiling_for_x11`."
 
-#, fuzzy
 msgid ""
 "The simplest way to distribute a game for PC is to copy the executable "
 "(``godot``), compress the folder and send it to someone else. However, this "
 "is often not desired."
 msgstr ""
-"La forma más sencilla de distribuir un juego para PC es copiar los "
-"ejecutables (godot.exe en windows, godot en el resto), comprimir la carpeta "
-"y enviarla a otra persona. Sin embargo, esto a menudo no es lo deseado."
+"La forma más sencilla de distribuir un juego para PC es copiar el ejecutable "
+"(``godot``), comprimir la carpeta y enviarla a otra persona. Sin embargo, "
+"esto a menudo no es lo deseado."
 
-#, fuzzy
 msgid ""
 "Godot offers a more elegant approach for PC distribution when using the "
 "export system. When exporting for Linux, the exporter takes all the project "
@@ -46,11 +46,10 @@ msgid ""
 "debugger."
 msgstr ""
 "Godot ofrece un enfoque más elegante para la distribución en PC cuando se "
-"utiliza el sistema de exportación. Al exportar para PC (Linux, Windows, "
-"Mac), el exportador toma todos los archivos de proyecto y crea un archivo "
-"\"data.pck\". Este archivo está empaquetado con un binario especialmente "
-"optimizado que es más pequeño, más rápido y carece de herramientas y "
-"depurador."
+"utiliza el sistema de exportación. Al exportar para Linux, el exportador "
+"toma todos los archivos del proyecto y crea un archivo llamado ``data.pck``. "
+"Este archivo se empaqueta con un binario especialmente optimizado que es más "
+"pequeño, más rápido y no contiene el editor ni el depurador."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

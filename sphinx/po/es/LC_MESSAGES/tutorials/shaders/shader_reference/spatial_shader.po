@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -385,13 +385,45 @@ msgstr "inout mat4 **INV_PROJECTION_MATRIX**"
 msgid "Clip space to view space transform."
 msgstr "Recortar el espacio para ver la transformada del espacio."
 
+#, fuzzy
+msgid "in vec3 **NODE_POSITION_WORLD**"
+msgstr "in vec2 **POINT_COORD**"
+
+#, fuzzy
+msgid "Node position, in world space."
+msgstr "Posición del ratón en coordenadas de pixeles."
+
+#, fuzzy
+msgid "in vec3 **NODE_POSITION_VIEW**"
+msgstr "in vec3 **VIEW**"
+
+#, fuzzy
+msgid "Node position, in view space."
+msgstr "Vector normal, en el espacio de visión."
+
+#, fuzzy
+msgid "in vec3 **CAMERA_POSITION_WORLD**"
+msgstr "in vec3 **ATTENUATION**"
+
+msgid "Camera position, in world space."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
+msgstr "in vec3 **ATTENUATION**"
+
+#, fuzzy
+msgid "Camera direction, in world space."
+msgstr "Vector normal, en el espacio de visión."
+
 msgid "inout vec3 **VERTEX**"
 msgstr "inout vec3 **VERTEX**"
 
 msgid "Vertex in local coordinates."
 msgstr "Vertex en coordenadas locales."
 
-msgid "out vec4  **POSITION**"
+#, fuzzy
+msgid "out vec4 **POSITION**"
 msgstr "out vec4  **POSITION**"
 
 msgid "If written to, overrides final vertex position."
@@ -475,6 +507,13 @@ msgid ""
 "you may run into floating point issues when using the seperated "
 "``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``."
 msgstr ""
+"``MODELVIEW_MATRIX`` combina tanto la ``WORLD_MATRIX`` como la "
+"``INV_CAMERA_MATRIX`` y es más adecuada cuando puedan surgir problemas con "
+"números de punto flotante. Por ejemplo, si el objeto está muy lejos del "
+"origen del mundo, podrías encontrarte con problemas de números de punto "
+"flotante al usar las matrices ``WORLD_MATRIX`` y ``INV_CAMERA_MATRIX`` por "
+"separado. En esos casos, es preferible utilizar ``MODELVIEW_MATRIX`` para "
+"evitar estos problemas."
 
 msgid "Fragment built-ins"
 msgstr "Fragment built-ins"
@@ -491,15 +530,6 @@ msgstr ""
 "renderizador incorporado se encargue del shader final. Sin embargo, no es "
 "necesario que utilice todas estas propiedades, y si no las escribe, Godot "
 "optimizará la funcionalidad correspondiente."
-
-msgid "Below are examples of common variables calculated using the built-ins:"
-msgstr ""
-
-msgid ""
-"A commonly used alternative to ``WORLD_MATRIX[3].xyz`` is to use ``vec3 "
-"origin = (WORLD_MATRIX * vec4(0,0,0,1)).xyz``. It is more efficient to use "
-"``WORLD_MATRIX[3].xyz`` as it avoids the matrix multiplication."
-msgstr ""
 
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
@@ -521,6 +551,21 @@ msgstr "in mat4 **PROJECTION_MATRIX**"
 
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr "in mat4 **INV_PROJECTION_MATRIX**"
+
+#, fuzzy
+msgid "Node world space position."
+msgstr "Obten la posición del jugador."
+
+#, fuzzy
+msgid "Node view space position."
+msgstr "Obten la posición del jugador."
+
+#, fuzzy
+msgid "Camera world space position."
+msgstr "La posición del panel de animación"
+
+msgid "Camera world space direction."
+msgstr ""
 
 msgid "in vec3 **VERTEX**"
 msgstr "in vec3 **VERTEX**"
@@ -731,6 +776,10 @@ msgid ""
 "branch, then you are responsible for setting the ``DEPTH`` for **all** other "
 "branches. Otherwise, the graphics API will leave them uninitialized."
 msgstr ""
+"Valor de profundidad personalizado (0..1). Si se está escribiendo en "
+"``DEPTH`` en cualquier rama del shader, entonces es tu responsabilidad "
+"establecer el valor de ``DEPTH`` para **todas** las demás ramas. De lo "
+"contrario, la API gráfica las dejará sin inicializar."
 
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
@@ -751,6 +800,11 @@ msgid ""
 "<doc_3d_rendering_limitations_transparency_sorting>` for more information "
 "and ways to avoid issues."
 msgstr ""
+"Los shaders que pasan por la tubería de transparencia cuando se escribe en "
+"``ALPHA`` pueden presentar problemas de ordenación de transparencia. Lee la :"
+"ref:`sección de ordenación de transparencia en la página de limitaciones de "
+"renderizado 3D <doc_3d_rendering_limitations_transparency_sorting>` para "
+"obtener más información y formas de evitar problemas."
 
 msgid "Light built-ins"
 msgstr "Light built-ins"
@@ -801,6 +855,9 @@ msgid ""
 "``DIFFUSE_LIGHT`` using ``=``. This is due to lighting being computed in "
 "multiple passes (one for each light), unlike GLES3."
 msgstr ""
+"En GLES2, las luces siempre se sumarán incluso si anulas ``DIFFUSE_LIGHT`` "
+"usando ``=``. Esto se debe a que la iluminación se calcula en múltiples "
+"pasadas (una para cada luz), a diferencia de GLES3."
 
 msgid ""
 "The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
@@ -808,10 +865,10 @@ msgid ""
 "is enabled in the Project Settings. (It's enabled by default on mobile "
 "platforms.)"
 msgstr ""
-"La función ``light()`` no se ejecutará si el modo de renderizado "
-"``vertex_lighting`` está habilitado, o si **Rendering > Quality > Shading > "
-"Force Vertex Shading** está habilitado en la Configuración del Proyecto. "
-"(Está habilitada por defecto en las plataformas móviles)."
+"La función ``light()`` no se ejecutará si el modo de render "
+"``vertex_lighting`` está activado, o si **Renderizado > Calidad > Sombreado "
+"> Forzar sombreado de vértices** está activado en la configuración del "
+"proyecto. (Está activado por defecto en plataformas móviles)"
 
 msgid "Elapsed total time in seconds."
 msgstr "Tiempo total transcurrido en segundos."
@@ -855,8 +912,11 @@ msgstr "Albedo de la base."
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr "in vec3 **LIGHT_COLOR**"
 
-msgid "Color of light multiplied by energy."
-msgstr "El color de la luz multiplicado por la energía."
+msgid ""
+"Color of light multiplied by ``energy * PI``. The ``PI`` multiplication is "
+"present because physically-based lighting models include a division by "
+"``PI``."
+msgstr ""
 
 msgid "in float **ROUGHNESS**"
 msgstr "in real **ROUGHNESS**"

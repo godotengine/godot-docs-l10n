@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,6 @@ msgstr ""
 "використовувати компілятор Godot для експорту інструментів для створення "
 "файлу PCK, як детально описано вище."
 
-#, fuzzy
 msgid ""
 "The developer uses Godot to build a GUI tool for adding their exact API "
 "content to a project. This Godot tool must either run on a tools-enabled "
@@ -184,15 +183,15 @@ msgid ""
 "the engine (for security), so it's best to keep the modding tool and game "
 "separate."
 msgstr ""
-"Розробник використовує Godot для створення інструменту графічного інтерфейсу "
-"для додавання їх точного вмісту API до проєкту. Цей інструмент Godot "
-"повинен, або працювати на вбудованому механізмі з підтримкою інструментів, "
-"або мати доступ до нього (розповсюджуватися разом, або, можливо, у файлах "
-"оригінальної гри). Потім інструмент може використовувати виконуваний файл "
-"Godot для експорту файлу PCK з командного рядка за допомогою :ref:`OS."
-"execute ()<class_OS_method_execute>`. It makes the most sense for the game "
-"to not use a tool-build though (for security) and for the modding tools to "
-"*do* use a tool-enabled engine build."
+"Розробник використовує Godot для створення графічного інтерфейсу інструмента "
+"для додавання свого вмісту API до проекту. Цей інструмент Godot повинен або "
+"бути вбудованим у збірку рушія з підтримкою інструментів, або мати доступ до "
+"неї (розповсюджуватися разом з оригінальними файлами гри або, можливо, серед "
+"них). Потім інструмент може використовувати виконуваний файл Godot для "
+"експорту PCK-файлу з командного рядка за допомогою :ref:`OS.execute() "
+"<class_OS_method_execute>`. Сама гра не повинна використовувати "
+"інструментальну збірку рушія (з міркувань безпеки), тому краще тримати "
+"інструмент для модифікації окремо від гри."
 
 msgid "Opening PCK files at runtime"
 msgstr "Відкриття файлів PCK під час виконання"

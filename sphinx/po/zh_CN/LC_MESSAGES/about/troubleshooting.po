@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,9 @@ msgstr ""
 "关于 Godot 编辑器 HTML5 版本特定的注意事项，请参阅 :ref:"
 "`doc_using_the_web_editor`\\ 。"
 
+#, fuzzy
 msgid ""
-"Everything I do in the editor or project manager appears delayed by one "
-"frame."
+"Everything I do in the editor or project manager appears delayed by one frame"
 msgstr "我在编辑器或项目管理器里做的任何事都会延迟一帧显示。"
 
 msgid ""
@@ -54,9 +54,10 @@ msgstr ""
 "你应该使用 Intel 提供的显卡驱动而非你的笔记本生产厂商提供的，因为他们的驱动版"
 "本经常是过期了的。"
 
+#, fuzzy
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
-"editor."
+"editor"
 msgstr "当我在编辑器中旋转 3D 相机时，栅格消失了，网格也变黑了。"
 
 msgid ""
@@ -81,7 +82,8 @@ msgstr ""
 "如果你使用的电脑支持切换显卡，比如 NVIDIA Optimus，你可以使用独立显卡运行 "
 "Godot。"
 
-msgid "The editor or project takes a very long time to start."
+#, fuzzy
+msgid "The editor or project takes a very long time to start"
 msgstr "此编辑器或项目花了很长时间才启动。"
 
 msgid ""
@@ -97,8 +99,9 @@ msgstr ""
 "乎引起了该错误。尝试将 USB 外设的驱动程序更新为最新版本。如果错误仍然存在，则"
 "需要在打开编辑器之前断开故障外围设备的连接。然后，您可以再次连接外围设备。"
 
+#, fuzzy
 msgid ""
-"Editor tooltips in the Inspector and Node docks blink when they're displayed."
+"Editor tooltips in the Inspector and Node docks blink when they're displayed"
 msgstr "检查器和节点面板的编辑器工具提示出现后闪烁。"
 
 msgid ""
@@ -111,7 +114,8 @@ msgstr ""
 "issues/32990>`__\\ ，是由 Windows 上的第三方程序 Stardock Fences 引起的。已知"
 "的绕过方法是在使用 Godot 时禁用 Stardock Fences。"
 
-msgid "The Godot editor appears frozen after clicking the system console."
+#, fuzzy
+msgid "The Godot editor appears frozen after clicking the system console"
 msgstr "点击系统控制台后，Godot 编辑器没有响应。"
 
 msgid ""
@@ -130,9 +134,10 @@ msgid ""
 "selection mode."
 msgstr "要解决此问题，请选择系统控制台窗口，然后按 Enter 退出选择模式。"
 
+#, fuzzy
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
-"manager and editor window."
+"manager and editor window"
 msgstr "在项目管理器和编辑器窗口的左上角出现“NO DC”之类的文本。"
 
 msgid ""
@@ -155,7 +160,8 @@ msgstr ""
 "OpenGL Settings**\\ ，然后取消选中 **Enable Graphics API Visual "
 "Indicator**\\ 。"
 
-msgid "The project window appears blurry, unlike the editor."
+#, fuzzy
+msgid "The project window appears blurry, unlike the editor"
 msgstr "项目窗口看起来很模糊，但编辑器没有模糊。"
 
 msgid ""
@@ -175,7 +181,8 @@ msgstr ""
 "允许 hiDPI**\\ 。此外，请确保你的项目已经配置为支持\\ :ref:`多分辨率 "
 "<doc_multiple_resolutions>`\\ 。"
 
-msgid "The project window doesn't appear centered when I run the project."
+#, fuzzy
+msgid "The project window doesn't appear centered when I run the project"
 msgstr "运行项目时项目窗口没有居中显示。"
 
 msgid ""
@@ -190,8 +197,33 @@ msgstr ""
 "率 <doc_multiple_resolutions>`\\ 。"
 
 msgid ""
+"The editor/project freezes or displays glitched visuals after resuming the "
+"PC from suspend"
+msgstr ""
+
+msgid ""
+"This is a known issue on Linux with NVIDIA graphics when using the "
+"proprietary driver. There is no definitive fix yet, as suspend on Linux + "
+"NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+msgid ""
+"The NVIDIA driver offers an *experimental* `option to preserve video memory "
+"after suspend <https://wiki.archlinux.org/title/NVIDIA/"
+"Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve "
+"this issue. This option has been reported to work better with more recent "
+"NVIDIA driver versions."
+msgstr ""
+
+msgid ""
+"To avoid losing work, save scenes in the editor before putting the PC to "
+"sleep."
+msgstr ""
+
+#, fuzzy
+msgid ""
 "The project works when run from the editor, but fails to load some files "
-"when running from an exported copy."
+"when running from an exported copy"
 msgstr "项目在编辑器中正常运行，但在导出后无法加载部分文件。"
 
 msgid ""

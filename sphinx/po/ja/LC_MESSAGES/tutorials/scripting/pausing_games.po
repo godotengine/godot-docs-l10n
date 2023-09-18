@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,23 +75,27 @@ msgstr "コードで同じ結果を得ることができます:"
 msgid "This is what each mode tells a node to do:"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
-"The first parent that has a non-Inherit state."
+"The first parent that has a state other than Inherit determines the "
+"effective value that will be used."
 msgstr ""
 "**Inherit(継承)**: 親、祖父母などの状態に応じたプロセス。最初の親は非継承状態"
 "を持っている。"
 
+#, fuzzy
 msgid ""
-"**Stop**: Stop the node no matter what (and children in Inherit mode). When "
-"paused this node will not process."
+"**Stop**: If the scene tree is paused, pause the node no matter what (and "
+"children in Inherit mode). When paused, this node *will not* process."
 msgstr ""
 "**Stop(停止)**: 無条件にノードを停止します(Inherit モードの子も)。一時停止す"
 "ると、このノードはもう処理されません。"
 
+#, fuzzy
 msgid ""
-"**Process**: Process the node no matter what (and children in Inherit mode). "
-"Paused or not this node will process."
+"**Process**: Even if the scene tree is paused, process the node no matter "
+"what (and children in Inherit mode). Paused or not, this node *will* process."
 msgstr ""
 "**Process(処理)**: 無条件にノードを処理します(Inherit モードのも)。このノード"
 "は一時停止中か否かを問わず処理されます。"

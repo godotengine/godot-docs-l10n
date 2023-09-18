@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Converting GLSL to Godot shaders"
-msgstr "Convertendo chaves em texto"
+msgstr "Conversão de shaders GLSL para Godot"
 
 msgid ""
 "This document explains the differences between Godot's shading language and "
@@ -33,7 +32,7 @@ msgid ""
 msgstr ""
 
 msgid "GLSL"
-msgstr ""
+msgstr "GLSL"
 
 msgid ""
 "Godot uses a shading language based on GLSL with the addition of a few "
@@ -57,9 +56,8 @@ msgid ""
 "programs cannot share variables except when varyings are used."
 msgstr ""
 
-#, fuzzy
 msgid "Vertex attributes"
-msgstr "``x.attribute``"
+msgstr "Atributos Vertex"
 
 msgid ""
 "In GLSL, you can pass in per-vertex information using attributes and have "
@@ -69,9 +67,8 @@ msgid ""
 "`Shading language reference <doc_shading_language>`."
 msgstr ""
 
-#, fuzzy
 msgid "gl_Position"
-msgstr "Condição"
+msgstr "gl_Position"
 
 msgid ""
 "``gl_Position`` receives the final position of a vertex specified in the "
@@ -93,7 +90,7 @@ msgid ""
 msgstr ""
 
 msgid "Varyings"
-msgstr ""
+msgstr "Variações"
 
 msgid ""
 "Varyings are a type of variable that can be passed from the vertex shader to "
@@ -123,7 +120,7 @@ msgid ""
 msgstr ""
 
 msgid "Macros"
-msgstr ""
+msgstr "Macros"
 
 msgid ""
 "In keeping with its similarity to C, GLSL lets you use macros. Commonly "
@@ -150,79 +147,79 @@ msgid "Type"
 msgstr "Tipo"
 
 msgid "Equivalent"
-msgstr ""
+msgstr "Equivalente"
 
 msgid "Description"
 msgstr "Descrição"
 
 msgid "gl_FragColor"
-msgstr ""
+msgstr "gl_FragColor"
 
 msgid "out vec4"
-msgstr ""
+msgstr "out vec4"
 
 msgid "COLOR"
-msgstr ""
+msgstr "COLOR"
 
 msgid "Output color for each pixel."
 msgstr ""
 
 msgid "gl_FragCoord"
-msgstr ""
+msgstr "gL_FragCoord"
 
 msgid "vec4"
-msgstr ""
+msgstr "vec4"
 
 msgid "FRAGCOORD"
-msgstr ""
+msgstr "FRAGCOORD"
 
 msgid "For full screen quads. For smaller quads, use UV."
 msgstr ""
 
 msgid "VERTEX"
-msgstr ""
+msgstr "VERTEX"
 
 msgid "Position of Vertex, output from Vertex Shader."
 msgstr ""
 
 msgid "gl_PointSize"
-msgstr ""
+msgstr "gl_PointSize"
 
 msgid "float"
 msgstr "float"
 
 msgid "POINT_SIZE"
-msgstr ""
+msgstr "POINT_SIZE"
 
 msgid "Size of Point primitive."
 msgstr ""
 
 msgid "gl_PointCoord"
-msgstr ""
+msgstr "gl_PointCoord"
 
 msgid "vec2"
-msgstr ""
+msgstr "vec2"
 
 msgid "POINT_COORD"
-msgstr ""
+msgstr "POINT_COORD"
 
 msgid "Position on point when drawing Point primitives."
 msgstr ""
 
 msgid "gl_FrontFacing"
-msgstr ""
+msgstr "gl_FrontFacing"
 
 msgid "bool"
 msgstr "bool"
 
 msgid "FRONT_FACING"
-msgstr ""
+msgstr "FRONT_FACING"
 
 msgid "True if front face of primitive."
 msgstr ""
 
 msgid "Coordinates"
-msgstr ""
+msgstr "Coordenadas"
 
 msgid ""
 "``gl_FragCoord`` in GLSL and ``FRAGCOORD`` in the Godot shading language use "
@@ -231,7 +228,7 @@ msgid ""
 msgstr ""
 
 msgid "Precision"
-msgstr ""
+msgstr "Precisão"
 
 msgid ""
 "In GLSL, you can define the precision of a given type (float or int) at the "
@@ -243,7 +240,7 @@ msgid ""
 msgstr ""
 
 msgid "Shadertoy"
-msgstr ""
+msgstr "Shadertoy"
 
 msgid ""
 "`Shadertoy <https://www.shadertoy.com/results?"
@@ -257,9 +254,8 @@ msgid ""
 "all the input and uniforms and only lets the user write the fragment shader."
 msgstr ""
 
-#, fuzzy
 msgid "Types"
-msgstr "Tipo"
+msgstr "Tipos"
 
 msgid ""
 "Shadertoy uses the webgl spec, so it runs a slightly different version of "
@@ -267,9 +263,8 @@ msgid ""
 "macros."
 msgstr ""
 
-#, fuzzy
 msgid "mainImage"
-msgstr "Importando Imagens"
+msgstr "mainImage"
 
 msgid ""
 "The main point of entry to a Shadertoy shader is the ``mainImage`` function. "
@@ -291,9 +286,8 @@ msgid ""
 "the reader a hint about what they can pass in as a substitute."
 msgstr ""
 
-#, fuzzy
 msgid "fragColor"
-msgstr "Cor"
+msgstr "fragColor"
 
 msgid "fragCoord"
 msgstr "fragCoord"
@@ -365,14 +359,13 @@ msgid "Resolution of particular texture."
 msgstr ""
 
 msgid "iChanneli"
-msgstr ""
+msgstr "iChanneli"
 
-#, fuzzy
 msgid "Sampler2D"
-msgstr "Exemplo"
+msgstr "Sampler2D"
 
 msgid "TEXTURE"
-msgstr ""
+msgstr "TEXTURE"
 
 msgid "Godot provides only one built-in; user can make more."
 msgstr ""
@@ -417,13 +410,13 @@ msgid ""
 msgstr ""
 
 msgid "u_resolution"
-msgstr ""
+msgstr "u_resolution"
 
 msgid "u_time"
-msgstr ""
+msgstr "u_time"
 
 msgid "u_mouse"
-msgstr ""
+msgstr "u_mouse"
 
 msgid ""
 "The Book of Shaders uses the same coordinate system as :ref:`GLSL "
@@ -431,4 +424,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

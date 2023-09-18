@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,9 @@ msgid ""
 "looking to compile editor or export template binaries from source instead, "
 "read :ref:`doc_compiling_for_web`."
 msgstr ""
+"Esta página describe cómo exportar un proyecto de Godot a HTML5. Si estás "
+"buscando compilar binarios del editor o plantillas de exportación desde la "
+"fuente en su lugar, lee :ref:`doc_compiling_for_web`."
 
 msgid ""
 "HTML5 export allows publishing games made in Godot Engine to the browser. "
@@ -170,7 +173,6 @@ msgstr ""
 "generada. Esto permite, por ejemplo, cargar fuentes web y APIs JavaScript de "
 "terceros, incluir CSS o ejecutar código JavaScript."
 
-#, fuzzy
 msgid ""
 "Each project must generate their own HTML file. On export, several text "
 "placeholders are replaced in the generated HTML file specifically for the "
@@ -182,9 +184,9 @@ msgstr ""
 "placeholders se reemplazan en el **archivo HTML generado** específicamente "
 "para las opciones de exportación correspondientes. Cualquier modificación al "
 "**archivo HTML generado** serán perdidas en exportaciones futuras. Para "
-"personalizar el archivo generado, ver :ref:`doc_customizing_html5_shell`."
+"personalizar el archivo generado, utiliza la opción **Carcasa HTML "
+"personalizada**."
 
-#, fuzzy
 msgid ""
 "**Export types** other than *Regular* are not yet supported by the C# "
 "version."
@@ -254,9 +256,8 @@ msgstr ""
 "sistema de ficheros ``user://`` es persistente, pero puede dar falsos "
 "positivos en algunos casos."
 
-#, fuzzy
 msgid "Background processing"
-msgstr "Carga en segundo plano"
+msgstr "Procesamiento en segundo plano"
 
 msgid ""
 "The project will be paused by the browser when the tab is no longer the "
@@ -266,12 +267,22 @@ msgid ""
 "cause networked games to disconnect if the user switches tabs for a long "
 "duration."
 msgstr ""
+"El proyecto se pausará por el navegador cuando la pestaña ya no sea la "
+"pestaña activa en el navegador del usuario. Esto significa que funciones "
+"como ``_process()`` y ``_physics_process()`` ya no se ejecutarán hasta que "
+"la pestaña vuelva a ser activa por el usuario (al cambiar de nuevo a la "
+"pestaña). Esto puede causar que los juegos en red se desconecten si el "
+"usuario cambia de pestaña durante un largo período de tiempo."
 
 msgid ""
 "This limitation does not apply to unfocused browser *windows*. Therefore, on "
 "the user's side, this can be worked around by running the project in a "
 "separate *window* instead of a separate tab."
 msgstr ""
+"Esta limitación no se aplica a las *ventanas* del navegador que no tienen el "
+"enfoque. Por lo tanto, desde el lado del usuario, se puede resolver "
+"ejecutando el proyecto en una *ventana* separada en lugar de una pestaña "
+"separada."
 
 msgid "Threads"
 msgstr "Hilos"
@@ -285,7 +296,6 @@ msgstr ""
 "threading sólo está disponible si se establece el **Tipo de Exportación** "
 "apropiado y el soporte para ello en los navegadores es todavía limitado."
 
-#, fuzzy
 msgid ""
 "Requires a :ref:`secure context <doc_javascript_secure_contexts>`. Browsers "
 "also require that the web page is served with specific `cross-origin "
@@ -293,8 +303,8 @@ msgid ""
 "Cross-Origin-Embedder-Policy>`__."
 msgstr ""
 "Requiere un :ref:`contexto seguro <doc_javascript_secure_contexts>`. Los "
-"navegadores también están empezando a exigir que la página web se sirva con "
-"cabeceras específicas de `aislamiento entre orígenes <https://developer."
+"navegadores también requieren que la página web se sirva con encabezados de "
+"`política de inserción de origen cruzado específicos <https://developer."
 "mozilla.org/en-US/docs/Web/HTTP/Headers/Cross-Origin-Embedder-Policy>`__."
 
 msgid "GDNative"

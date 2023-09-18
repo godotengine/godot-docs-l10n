@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,6 +103,17 @@ msgid ""
 "if so make the PR for the ``master`` branch in priority. Release managers "
 "can then cherry-pick the fix to a stable branch if relevant."
 msgstr ""
+"As ramificações estáveis são nomeadas de acordo com sua versão, por exemplo "
+"``3.1`` e ``2.1``. Eles são usados para backport de correções de bugs e "
+"melhorias da ramificação ``master`` para a versão estável atualmente mantida "
+"(por exemplo, 3.1.2 ou 2.1.6). Como regra geral, a última ramificação "
+"estável é mantido até a próxima versão secundária (por exemplo, a "
+"ramificação ``3.0`` foi mantido até o lançamento do Godot 3.1). Se você "
+"deseja fazer PRs em uma ramificação estável mantida, verifique primeiro se "
+"suas alterações também são relevantes para a ramificação ``mestre`` e, se "
+"for o caso, faça o PR para a ramificação ``mestre`` em prioridade. Os "
+"gerentes de lançamento podem escolher a correção para uma ramificação "
+"estável, se relevante."
 
 msgid ""
 "There might occasionally be feature branches, usually meant to be merged "
@@ -190,7 +201,7 @@ msgid ""
 msgstr ""
 
 msgid "Branching"
-msgstr ""
+msgstr "Ramificação"
 
 msgid ""
 "By default, the ``git clone`` should have put you on the ``master`` branch "
@@ -301,7 +312,7 @@ msgid ""
 msgstr ""
 
 msgid "Making changes"
-msgstr ""
+msgstr "Fazendo alterações"
 
 msgid ""
 "You would then do your changes to our example's ``editor/project_manager."
@@ -585,4 +596,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

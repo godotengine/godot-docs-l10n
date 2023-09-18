@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -267,21 +267,6 @@ msgstr ""
 "Après avoir ouvert une invite de commande, allez dans le répertoire racine "
 "du code source du moteur (en utilisant ``cd``) et tapez :"
 
-msgid "You can specify a number of CPU threads to use to speed up the build::"
-msgstr ""
-"Vous pouvez spécifier le nombre de threads CPU à utiliser pour accélérer la "
-"compilation :"
-
-msgid ""
-"In general, it is OK to have at least as many threads compiling Godot as you "
-"have cores in your CPU, if not one or two more. Feel free to add the ``-j`` "
-"option to any SCons command you see below."
-msgstr ""
-"En général, il est correct d'avoir au moins autant de threads compilant "
-"Godot que de cœurs dans votre CPU, sinon un ou deux de plus. N'hésitez pas à "
-"ajouter l'option ``-j`` à n'importe quelle commande SCons que vous voyez ci-"
-"dessous."
-
 msgid ""
 "When compiling with multiple CPU threads, SCons may warn about pywin32 being "
 "missing. You can safely ignore this warning."
@@ -318,9 +303,10 @@ msgstr ""
 "rendre l'exécutable final plus petit et plus rapide en ajoutant l'option "
 "SCons ``target=release_debug``."
 
+#, fuzzy
 msgid ""
 "If you are compiling Godot with MinGW, you can make the binary even smaller "
-"and faster by adding the SCons option ``use_lto=yes``. As link-time "
+"and faster by adding the SCons option ``lto=full``. As link-time "
 "optimization is a memory-intensive process, this will require about 7 GB of "
 "available RAM while compiling."
 msgstr ""
@@ -349,12 +335,21 @@ msgid ""
 "engine's C++ code, you may be interested in configuring a code editor or an "
 "IDE."
 msgstr ""
+"L'utilisation d'un IDE n'est pas nécessaire pour compiler Godot, car SCons "
+"s'occupe de tout. Mais si vous avez l'intention de développer le moteur de "
+"jeu ou de déboguer son code C++, vous serez sûrement amenés à configurer un "
+"éditeur de code ou un IDE."
 
+#, fuzzy
 msgid ""
 "Folder-based editors don't require any particular setup to start working "
 "with Godot's codebase. To edit projects with Visual Studio they need to be "
 "set up as a solution."
 msgstr ""
+"Les éditeurs basés sur des dossiers ne nécessitent aucune configuration "
+"particulière pour commencer à travailler avec la base de code de Godot. Pour "
+"éditer des projets avec Visual Studio, ils doivent être configurés comme une "
+"solution."
 
 msgid ""
 "You can create a Visual Studio solution via SCons by running SCons with the "

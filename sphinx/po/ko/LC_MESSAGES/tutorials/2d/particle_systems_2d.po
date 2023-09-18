@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid "Your Particles2D node should now be emitting white points downward."
 msgstr "이제 Particles2D 노드는 아래쪽으로 내려가는 흰 점들이 방출됩니다."
 
 msgid "Texture"
-msgstr "텍스쳐"
+msgstr "텍스처"
 
 #, fuzzy
 msgid ""
@@ -101,7 +101,7 @@ msgid "Time parameters"
 msgstr ""
 
 msgid "Lifetime"
-msgstr ""
+msgstr "수명"
 
 msgid ""
 "The time in seconds that every particle will stay alive. When lifetime ends, "
@@ -116,7 +116,7 @@ msgid "Lifetime: 4.0"
 msgstr ""
 
 msgid "One Shot"
-msgstr ""
+msgstr "원샷"
 
 msgid ""
 "When enabled, a Particles2D node will emit all of its particles once and "
@@ -126,7 +126,7 @@ msgstr ""
 "니다."
 
 msgid "Preprocess"
-msgstr ""
+msgstr "전처리"
 
 #, fuzzy
 msgid ""
@@ -142,7 +142,7 @@ msgstr ""
 "기 전에 주어진 시간(초)를 처리하도록 하는데 사용됩니다."
 
 msgid "Speed Scale"
-msgstr ""
+msgstr "속도 배수"
 
 #, fuzzy
 msgid ""
@@ -155,7 +155,7 @@ msgstr ""
 "다."
 
 msgid "Explosiveness"
-msgstr ""
+msgstr "폭발성"
 
 #, fuzzy
 msgid ""
@@ -192,9 +192,8 @@ msgstr ""
 "모든 물리학 파라미터는 랜덤화될 수 있습니다. 무작위 값은 ``0\"부터 ``1\"까지 "
 "다양합니다. 파라미터를 랜덤화하는 공식은 다음과 같습니다:"
 
-#, fuzzy
 msgid "Fixed FPS"
-msgstr "고정 FPS(Fixed FPS)"
+msgstr "고정 FPS"
 
 #, fuzzy
 msgid ""
@@ -208,7 +207,7 @@ msgstr ""
 "려지게 하는 것이 아니니 주의하세요."
 
 msgid "Fract Delta"
-msgstr ""
+msgstr "분수 델타"
 
 #, fuzzy
 msgid "This can be used to turn Fract Delta on or off."
@@ -218,7 +217,7 @@ msgid "Drawing parameters"
 msgstr ""
 
 msgid "Visibility Rect"
-msgstr ""
+msgstr "가시성 직사각형"
 
 msgid ""
 "The visibility rectangle controls the visibility of the particles on screen. "
@@ -254,7 +253,7 @@ msgid ""
 msgstr ""
 
 msgid "Local Coords"
-msgstr "지역 좌표"
+msgstr "로컬 좌표"
 
 #, fuzzy
 msgid ""
@@ -274,7 +273,7 @@ msgstr ""
 "입자는 영향을 받지 않습니다."
 
 msgid "Draw Order"
-msgstr ""
+msgstr "그리기 순서"
 
 #, fuzzy
 msgid ""
@@ -288,9 +287,8 @@ msgstr ""
 msgid "ParticlesMaterial settings"
 msgstr ""
 
-#, fuzzy
 msgid "Direction"
-msgstr "벡터"
+msgstr "방향"
 
 msgid ""
 "This is the base direction at which particles emit. The default is "
@@ -305,7 +303,7 @@ msgid ""
 msgstr ""
 
 msgid "Spread"
-msgstr ""
+msgstr "스프레드"
 
 #, fuzzy
 msgid ""
@@ -318,7 +316,7 @@ msgstr ""
 "다. ``180``으로 설정하면 모든 방향(+/- 180)으로 방출됩니다."
 
 msgid "Flatness"
-msgstr ""
+msgstr "평면성"
 
 msgid "This property is only useful for 3D particles."
 msgstr ""
@@ -331,7 +329,7 @@ msgid "The gravity applied to every particle."
 msgstr "중력이 모든 입자에 적용됩니다."
 
 msgid "Initial Velocity"
-msgstr "초기 속도(Initial Velocity)"
+msgstr "초기 속도"
 
 #, fuzzy
 msgid ""
@@ -360,7 +358,7 @@ msgid ""
 msgstr "회전 속도는 입자가 각각의 입자 중심을 회전하는 속도입니다(초당 각도)."
 
 msgid "Orbit Velocity"
-msgstr "공전 속도(Orbit Velocity)"
+msgstr "공전 속도"
 
 msgid "Orbit velocity is used to make particles turn around their center."
 msgstr "공전 속도는 입자들이 중심을 돌게 만드는 데 사용됩니다."
@@ -391,7 +389,7 @@ msgstr ""
 "를 볼 수 있습니다."
 
 msgid "Damping"
-msgstr ""
+msgstr "댐핑"
 
 msgid ""
 "Damping applies friction to the particles, forcing them to stop. It is "

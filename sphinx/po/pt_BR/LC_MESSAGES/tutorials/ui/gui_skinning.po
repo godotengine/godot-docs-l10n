@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Introduction to GUI skinning"
-msgstr "Introdução ao editor do Godot"
+msgstr "Introdução ao skinning GUI"
 
 msgid ""
 "It is essential for a game to provide clear, informative, and yet visually "
@@ -73,27 +72,24 @@ msgid ""
 "<doc_gui_theme_in_project>`."
 msgstr ""
 
-#, fuzzy
 msgid "Theme items"
-msgstr "Tema"
+msgstr "Itens do tema"
 
 msgid ""
 "The configuration that is stored in a theme consists of theme items. Each "
 "item has a unique name and must be one of the following data types:"
 msgstr ""
 
-#, fuzzy
 msgid "**Color**"
-msgstr "Cor"
+msgstr "**Color**"
 
 msgid ""
 "A :ref:`color <class_Color>` value, which is often used for fonts and "
 "backgrounds. Colors can also be used for modulation of controls and icons."
 msgstr ""
 
-#, fuzzy
 msgid "**Constant**"
-msgstr "Constantes"
+msgstr "**Constante**"
 
 msgid ""
 "An integer value, which can be used either for numeric properties of "
@@ -102,9 +98,8 @@ msgid ""
 "relationship lines in a :ref:`Tree <class_Tree>`)."
 msgstr ""
 
-#, fuzzy
 msgid "**Font**"
-msgstr "**Neblina:**"
+msgstr "**Fonte**"
 
 msgid ""
 "A :ref:`font <class_Font>` resource, which is used by controls that display "
@@ -113,18 +108,16 @@ msgid ""
 "individual controls."
 msgstr ""
 
-#, fuzzy
 msgid "**Icon**"
-msgstr "**Versão**"
+msgstr "**Icon**"
 
 msgid ""
 "A :ref:`texture <class_Texture>` resource, which is normally used to display "
 "an icon (on a :ref:`Button <class_Button>`, for example)."
 msgstr ""
 
-#, fuzzy
 msgid "**StyleBox**"
-msgstr "**Estilo**"
+msgstr "**StyleBox**"
 
 msgid ""
 "A :ref:`StyleBox <class_StyleBox>` resource, a collection of configuration "
@@ -133,9 +126,8 @@ msgid ""
 "many controls for their backgrounds and overlays."
 msgstr ""
 
-#, fuzzy
 msgid "Theme types"
-msgstr "Tipos nomeados"
+msgstr "Tipos de temas"
 
 msgid ""
 "To help with the organization of its items each theme is separated into "
@@ -228,9 +220,8 @@ msgid ""
 "it uses. Values provided by the theme are ignored."
 msgstr ""
 
-#, fuzzy
 msgid "Customizing a project"
-msgstr "Criando um projeto"
+msgstr "Personalizando um projeto"
 
 msgid ""
 "Out of the box each project adopts the default project theme provided by "
@@ -280,11 +271,12 @@ msgid ""
 "using the project-wide theme and the default theme styles."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "To sum it up, for an arbitrary control its theme item lookup would look "
 "something like this:"
-msgstr "Sua cena final deve ser algo como isto:"
+msgstr ""
+"Para resumir, para um controle arbitrário, sua pesquisa de item de tema "
+"seria algo assim:"
 
 msgid "Check for local overrides of the same data type and name."
 msgstr ""
@@ -323,16 +315,21 @@ msgid ""
 "Even if the item doesn't exist in any theme, a corresponding default value "
 "for that data type will be returned."
 msgstr ""
+"Mesmo que o item não exista em nenhum tema, um valor padrão correspondente "
+"para esse tipo de dados será retornado."
 
-#, fuzzy
 msgid "Beyond controls"
-msgstr "Controle de fluxo"
+msgstr "Além dos controles"
 
 msgid ""
 "Naturally, themes are an ideal type of resource for storing configuration "
 "for something visual. While the support for theming is built into control "
 "nodes, other nodes can use them as well, just like any other resource."
 msgstr ""
+"Naturalmente, os temas são um tipo ideal de recurso para armazenar a "
+"configuração de algo visual. Embora o suporte para temas seja incorporado "
+"aos nós de controle, outros nós também podem usá-los, como qualquer outro "
+"recurso."
 
 msgid ""
 "An example of using themes for something beyond controls can be a modulation "
@@ -342,6 +339,13 @@ msgid ""
 "that you could make different themes using the same theme items for red, "
 "blue, and green teams, and swap them with a single resource change."
 msgstr ""
+"Um exemplo de uso de temas para algo além do controle pode ser uma modulação "
+"de sprites para as mesmas unidades em times diferentes em um jogo de "
+"estratégia. Um recurso de tema pode definir uma coleção de cores e sprites "
+"(com a ajuda de scripts) podem usar essas cores para desenhar a textura. O "
+"principal benefício é que você pode criar temas diferentes usando os mesmos "
+"itens de tema para as equipes vermelha, azul e verde e trocá-los com uma "
+"única alteração de recurso."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

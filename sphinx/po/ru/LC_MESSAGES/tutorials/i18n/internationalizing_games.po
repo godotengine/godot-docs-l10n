@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,6 +31,12 @@ msgid ""
 "offers many tools to make this process more straightforward, so this "
 "tutorial is more like a collection of tips and tricks."
 msgstr ""
+"Sería excelente que el mundo hablara solo un idioma (Было бы замечательно, "
+"если бы весь мир говорил только на одном языке). К сожалению, для нас, "
+"разработчиков, это не так. Если инди- или нишевые игры обычно не нуждаются в "
+"локализации, то игры, ориентированные на массовый рынок, часто требуют это. "
+"Godot предлагает множество инструментов, чтобы упростить этот процесс, "
+"поэтому данное руководство больше похоже на сборник советов и приёмов."
 
 msgid ""
 "Localization is usually done by specific studios hired for the job and, "
@@ -158,7 +164,7 @@ msgstr ""
 "обертывания текста, доступные в :ref:`Label <class_Label>`."
 
 msgid "TranslationServer"
-msgstr "TranslationServer"
+msgstr "TranslationSеrver"
 
 msgid ""
 "Godot has a server handling low-level translation management called the :ref:"
@@ -179,6 +185,8 @@ msgid ""
 "You may want to test a project's translation before releasing it. Godot "
 "provides two ways to do this."
 msgstr ""
+"Вам может потребоваться протестировать перевод проекта перед его выпуском. "
+"Godot предоставляет два способа сделать это."
 
 msgid ""
 "First, in the Project Settings, under **Input Devices > Locale**, there is a "
@@ -186,6 +194,10 @@ msgid ""
 "want to test. Godot will run the project with that locale when the project "
 "is run (either from the editor or when exported)."
 msgstr ""
+"Во-первых, в настройках проекта, в разделе **Input Devices > Locale**, есть "
+"свойство **Test**. Присвойте этому свойству код языкового стандарта "
+"тестируемого языка. Godot запустит проект с этим языковым стандартом при "
+"запуске проекта (либо из редактора, либо при экспорте)."
 
 msgid ""
 "Keep in mind that since this is a project setting, it will show up in "

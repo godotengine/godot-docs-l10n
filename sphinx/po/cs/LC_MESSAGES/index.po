@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "General"
-msgstr "Všeobecné"
+msgid "About"
+msgstr "O aplikaci"
 
 msgid "Getting started"
 msgstr "Začínáme"
 
-msgid "Tutorials"
-msgstr "Tutoriály"
+msgid "Manual"
+msgstr ""
 
 msgid "Development"
 msgstr "Vývoj"
@@ -35,7 +35,8 @@ msgstr "Komunita"
 msgid "Class reference"
 msgstr "Dokumentace tříd"
 
-msgid "Godot Docs – *3.5* branch"
+#, fuzzy
+msgid "Godot Docs – *3.6* branch"
 msgstr "Godot Dokumentace – *3.5* větev"
 
 msgid ""
@@ -46,9 +47,10 @@ msgstr ""
 "panel \"Přečtěte si dokumenty\" v dolní části postranního panelu pro "
 "zobrazení seznamu."
 
+#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
-"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "Tato dokumentace byla přeložena z `anglického originálu <https://docs."
@@ -65,10 +67,12 @@ msgstr ""
 "stránky, které jsou ještě v angličtině. Můžete pomoci komunitě tím, že "
 "poskytnete nové překlady, nebo přezkoumáte stávající překlady na Weblate."
 
+#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
-"\"latest\" (development) branch, but should be suitable to learn how to use "
-"stable Godot releases nevertheless."
+"\"stable\" branch. You can still view the English documentation for other "
+"engine versions using the \"Read the Docs\" panel at the bottom of the "
+"sidebar."
 msgstr ""
 "Prozatím jsou překlady dostupné pouze v \"latest\" (vývojové) větvi, i "
 "přesto jsou vhodné k učení jak používat stable verzi Godotu."
@@ -85,24 +89,17 @@ msgstr ""
 "poprvé, doporučujeme prečíst si :ref:`introduction page <doc_about_intro>` "
 "pro lepší představu, co tato dokumentace nabízí."
 
+#, fuzzy
 msgid ""
-"The table of contents below and in the sidebar should let you easily access "
-"the documentation for your topic of interest. You can also use the search "
-"function in the top left corner."
+"The table of contents in the sidebar should let you easily access the "
+"documentation for your topic of interest. You can also use the search "
+"function in the top-left corner."
 msgstr ""
 "Obsah níže a v bočním panelu vám usnadní přístup k dokumentaci k tématu co "
 "vás zajímá. Také můžete využít vyhledávaní v levém horním rohu."
 
-msgid ""
-"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline reading (updated every Monday). Extract the ZIP archive then open "
-"the top-level ``index.html`` in a web browser."
+msgid "Get involved"
 msgstr ""
-"Můžete si také `stáhnout HTML kopii <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ pro "
-"offline čtení (aktualizováno každé pondělí). Rozbalte archiv ZIP a poté "
-"otevřete horní úroveň ``index.html`` ve webovém prohlížeči."
 
 msgid ""
 "Godot Engine is an open source project developed by a community of "
@@ -135,6 +132,39 @@ msgstr "weblate_widget"
 msgid "Translation status"
 msgstr "Stav překladu"
 
+#, fuzzy
+msgid "Offline documentation"
+msgstr "Online dokumentace (RST)"
+
 msgid ""
-"The main documentation for the site is organized into the following sections:"
-msgstr "Hlavní dokumentace webu je uspořádána do následujících částí:"
+"To browse the documentation offline, you can use the mirror of the "
+"documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
+"offline browsing on DevDocs, you need to:"
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Preferences**."
+msgstr ""
+
+msgid ""
+"Enable the desired version of the Godot documentation by checking the box "
+"next to it in the sidebar."
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Offline data**."
+msgstr ""
+
+#, fuzzy
+msgid "Click the **Install** link next to the Godot documentation."
+msgstr "Co je dokumentace Godot"
+
+#, fuzzy
+msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
+"offline reading (updated every Monday). Extract the ZIP archive then open "
+"the top-level ``index.html`` in a web browser."
+msgstr ""
+"Můžete si také `stáhnout HTML kopii <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ pro "
+"offline čtení (aktualizováno každé pondělí). Rozbalte archiv ZIP a poté "
+"otevřete horní úroveň ``index.html`` ve webovém prohlížeči."

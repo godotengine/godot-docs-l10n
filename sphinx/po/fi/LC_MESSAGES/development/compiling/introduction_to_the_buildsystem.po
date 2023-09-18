@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,13 +110,14 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This will start the build process, which will take a while. If you want "
-"SCons to build faster, use the ``-j <cores>`` parameter to specify how many "
-"cores will be used for the build. Or leave it using one core, so you can use "
-"your computer for something else :)"
+"This will start the build process, which will take a while. By default, "
+"Godot's SCons setup is configured to use all CPU threads but one (to keep "
+"the system responsive during compilation). If you want to adjust how many "
+"CPU threads SCons will use, use the ``-j <threads>`` parameter to specify "
+"how many threads will be used for the build."
 msgstr ""
 
-msgid "Example for using 4 cores:"
+msgid "Example for using 4 threads:"
 msgstr ""
 
 msgid "Resulting binary"
@@ -325,8 +326,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"For instance, you may want to build Godot in parallel with the "
-"aforementioned ``-j`` option for all the future builds:"
+"For instance, you may want to force a number of CPU threads with the "
+"aforementioned ``-j`` option for all future builds:"
 msgstr ""
 
 msgid "Export templates"

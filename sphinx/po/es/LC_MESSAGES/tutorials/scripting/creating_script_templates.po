@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,9 +54,8 @@ msgstr ""
 msgid "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
 msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
 
-#, fuzzy
 msgid "Linux: ``$HOME/.config/godot/script_templates/``"
-msgstr "Linux: ``$HOME/.local/share/godot/script_templates/``"
+msgstr "Linux: ``$HOME/.config/godot/script_templates/``"
 
 msgid "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
 msgstr "macOS: ``$HOME/Library/Application Support/Godot/script_templates/``"
@@ -107,7 +106,6 @@ msgstr ""
 "plantilla. Para GDScript y C#, las extensiones deben ser ``gd`` y ``cs`` "
 "respectivamente."
 
-#, fuzzy
 msgid ""
 "The script templates have the same extension as the regular script files. "
 "This may lead to an issue of a script parser treating those templates as "
@@ -116,13 +114,13 @@ msgid ""
 "directory won't be visible throughout the project's filesystem anymore, yet "
 "the templates can be modified by an external text editor anytime."
 msgstr ""
-"La plantilla de script tiene que tener la misma extensión que un archivo "
-"regular de script. Esto puede ser un problema para algún parser de scripts "
-"que interprete las plantillas como scripts del proyecto. Para evitar esto "
-"asegúrate de ignorar el directorio que las contiene mediante la creación de "
-"un arthivo ``.gdignore``. Este directorio no será visible para el sistema de "
-"archivos del proyecto, pero las plantillas podrán ser modificadas por "
-"cualquier editor externo."
+"Las plantillas de script tienen la misma extensión que los archivos de "
+"script regulares. Esto puede provocar un problema en el que un analizador de "
+"scripts trate esas plantillas como scripts reales dentro de un proyecto. "
+"Para evitar esto, asegúrate de ignorar el directorio que las contiene "
+"creando un archivo ``.gdignore`` vacío. El directorio ya no será visible en "
+"el sistema de archivos del proyecto, pero las plantillas aún podrán ser "
+"modificadas por un editor de texto externo en cualquier momento."
 
 msgid ""
 "The built-in editor templates are automatically shadowed by the project-"

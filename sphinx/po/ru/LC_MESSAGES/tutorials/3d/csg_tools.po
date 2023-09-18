@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,9 +61,8 @@ msgstr ""
 "Shfty/qodot-plugin>`__. Он позволяет создавать уровни с помощью `TrenchBroom "
 "<https://kristianduske.com/trenchbroom/>`__ и импортировать их в Godot."
 
-#, fuzzy
 msgid "Introduction to CSG nodes"
-msgstr "Введение в редактор Godot"
+msgstr "Знакомство с узлами CSG"
 
 msgid ""
 "Like other features of Godot, CSG is supported in the form of nodes. These "
@@ -71,33 +70,26 @@ msgid ""
 msgstr ""
 "Как и другие функции Godot, CSG поддерживается в виде узлов. Это узлы CSG:"
 
-#, fuzzy
 msgid ":ref:`CSGBox <class_CSGBox>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGBox <class_CSGBox>`"
 
-#, fuzzy
 msgid ":ref:`CSGCylinder <class_CSGCylinder>` (also supports cone)"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGCylinder <class_CSGCylinder>` (также поддерживает конус)"
 
-#, fuzzy
 msgid ":ref:`CSGSphere <class_CSGSphere>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGSphere <class_CSGSphere>`"
 
-#, fuzzy
 msgid ":ref:`CSGTorus <class_CSGTorus>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGTorus <class_CSGTorus>`"
 
-#, fuzzy
 msgid ":ref:`CSGPolygon <class_CSGPolygon>`"
-msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
-#, fuzzy
 msgid ":ref:`CSGMesh <class_CSGMesh>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGMesh <class_CSGMesh>`"
 
-#, fuzzy
 msgid ":ref:`CSGCombiner <class_CSGcombiner>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`CSGCombiner <класс_CSGcombiner>`"
 
 msgid "CSG tools features"
 msgstr "Особенности инструментов CSG"
@@ -126,7 +118,7 @@ msgstr ""
 "вмятину своей формы."
 
 msgid "CSGPolygon"
-msgstr "CSGPolygon"
+msgstr "CSGPolygоn"
 
 msgid ""
 "The :ref:`CSGPolygon <class_CSGPolygon>` node extrude along a Polygon drawn "
@@ -157,9 +149,8 @@ msgstr ""
 "<class_Path>`. В узле Path нарисуйте путь и полигон в CSGPolygon будет "
 "выдавливаться по заданному пути."
 
-#, fuzzy
 msgid "Custom meshes"
-msgstr "Пользовательские сигналы"
+msgstr "Пользовательские меши"
 
 msgid ""
 "Any mesh can be used for :ref:`CSGMesh <class_CSGMesh>`; the mesh can be "
@@ -184,7 +175,7 @@ msgid "every edge must connect to only two other faces."
 msgstr "каждая грань должна соединяться только с двумя другими гранями."
 
 msgid "CSGCombiner"
-msgstr "CSGCombiner"
+msgstr "СSGCombiner"
 
 msgid ""
 "The :ref:`CSGCombiner <class_CSGCombiner>` node is an empty shape used for "
@@ -193,9 +184,8 @@ msgstr ""
 "Узел :ref:`CSGCombiner <class_CSGCombiner>` - это пустая форма, используемая "
 "для организации (группировки). Он объединяет только дочерние узлы."
 
-#, fuzzy
 msgid "Processing order"
-msgstr "Последовательность в дереве"
+msgstr "Порядок обработки"
 
 msgid ""
 "Every CSG node will first process its children nodes and their operations: "
@@ -353,11 +343,12 @@ msgstr ""
 "является узлом CSG, узлы CSGCombiner являются завершением операций; это "
 "показывает использование CSGCombiner для организации сцены CSG."
 
-#, fuzzy
 msgid ""
 "Undo the re-parent after observing the effect. The bed you've built should "
 "look like this:"
-msgstr "Дерево сцены должно выглядеть так:"
+msgstr ""
+"Отмените re-parent после наблюдения за эффектом. Собранная вами кровать "
+"должна выглядеть так:"
 
 msgid "Create a CSGCombiner and name it ``lamp``."
 msgstr "Создайте CSGCombiner и назовите его ``lamp``."
@@ -409,11 +400,12 @@ msgstr ""
 "Вы почти построили полку. Создайте ещё один CSGBox для разделения полки на "
 "два уровня."
 
-#, fuzzy
 msgid ""
 "Position your furniture in your room as you like and your scene should look "
 "this:"
-msgstr "Когда вы закончите, сцена с вашим ``Player`` будет выглядеть вот так:"
+msgstr ""
+"Расставьте мебель в комнате так, как вам нравится, и ваша сцена должна "
+"выглядеть следующим образом:"
 
 msgid ""
 "You've successfully prototyped a room level with the CSG tools in Godot. CSG "
@@ -425,9 +417,8 @@ msgstr ""
 "уровней, таких как лабиринт или город; изучите их возможности при разработке "
 "своей игры."
 
-#, fuzzy
 msgid "Using prototype textures"
-msgstr "Движение Игрока"
+msgstr "Использование прототипов текстур"
 
 msgid ""
 "Godot's :ref:`doc_spatial_material` supports *triplanar mapping*, which can "
@@ -454,9 +445,8 @@ msgstr ""
 "для прототипов с лицензией CC0 <https://kenney.nl/assets/prototype-"
 "textures>`__."
 
-#, fuzzy
 msgid "There are two ways to apply a material to a CSG node:"
-msgstr "Есть некоторые вещи, которые следует отметить:"
+msgstr "Существует два способа применения материала к узлу CSG:"
 
 msgid ""
 "Applying it to a CSGCombiner node as a material override (**Geometry > "

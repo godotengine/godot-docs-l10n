@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,7 +50,6 @@ msgstr ""
 "Потім ви можете використовувати код для відтворення та керування нею під час "
 "виконання."
 
-#, fuzzy
 msgid ""
 "Open the player scene, select the player node, and add an *AnimationPlayer* "
 "node."
@@ -484,17 +483,17 @@ msgstr ""
 "Наприклад, сцени *Mob* і *Player* мають вузол *Pivot* і *Character*, тому ми "
 "можемо повторно використовувати анімацію між ними."
 
-#, fuzzy
 msgid ""
 "Open the *Player* scene, select the animation player node and open the "
 "\"float\" animation. Next, click on **Animation > Copy**. Then open ``Mob."
 "tscn`` and open its animation player. Click **Animation > Paste**. That's "
 "it; all monsters will now play the float animation."
 msgstr ""
-"Відкрийте сцену *Mob*, виберіть вузол та відкрийте анімацію плавання. Далі "
-"натисніть *Анімація -> Копіювати*. Потім відкрийте ``Player.tscn`` та "
-"відкрийте його *АnimationРlayer*. Натисніть кнопку *Анімація -> Вставити*. "
-"Ось і все; всі монстри тепер будуть відтворювати анімацію плавання."
+"Відкрийте сцену *Player*, виберіть вузол анімації гравця та відкрийте "
+"анімацію плавання \"float\". Далі натисніть **Анімація -> Копіювати**. Потім "
+"відкрийте ``Mob.tscn`` та відкрийте його *АnimationРlayer*. Натисніть кнопку "
+"**Анімація -> Вставити**. Ось і все; всі монстри тепер будуть відтворювати "
+"анімацію плавання."
 
 msgid ""
 "We can change the playback speed based on the creature's ``random_speed``. "

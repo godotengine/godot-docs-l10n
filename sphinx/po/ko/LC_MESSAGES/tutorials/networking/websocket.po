@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,9 +48,8 @@ msgstr ""
 msgid "Godot supports WebSocket in both native and HTML5 exports."
 msgstr ""
 
-#, fuzzy
 msgid "Using WebSocket in Godot"
-msgstr "Godot에서 NuGet 패키지 사용하기"
+msgstr "Godot에서 WebSocket 사용하기"
 
 msgid ""
 "WebSocket is implemented in Godot via three main classes :ref:"
@@ -60,6 +59,10 @@ msgid ""
 "See section on :ref:`high-level multiplayer <doc_high_level_multiplayer>` "
 "for more details."
 msgstr ""
+"WebSocket는 Godot에서 세 가지 주요 클래스인 WebSocketClient, "
+"WebSocketServer, 그리고 WebSocketPeer를 통해 구현됩니다. WebSocket 구현은 높"
+"은 수준의 멀티플레이어와 호환됩니다. 자세한 내용은 `high-level multiplayer 문"
+"서 <doc_high_level_multiplayer> 섹션’을 참조하십시오."
 
 msgid ""
 "When exporting to Android, make sure to enable the ``INTERNET`` permission "

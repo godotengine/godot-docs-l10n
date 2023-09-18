@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "GDNative C++ example"
-msgstr "GDNative / C++"
+msgstr "Exemplo GDNative C++"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -44,9 +43,8 @@ msgstr ""
 msgid "Setting up the project"
 msgstr "Configurando o projeto"
 
-#, fuzzy
 msgid "There are a few prerequisites you'll need:"
-msgstr "Existem algumas diferenças:"
+msgstr "Existem alguns pré-requisitos que você precisará:"
 
 msgid "a Godot 3.x executable,"
 msgstr ""
@@ -57,13 +55,12 @@ msgstr ""
 msgid "SCons as a build tool,"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "a copy of the `godot-cpp repository <https://github.com/godotengine/godot-"
 "cpp>`__."
 msgstr ""
-"uma cópia do `godot-cpp repository <https://github.com/GodotNativeTools/"
-"godot-cpp>`__."
+"uma cópia do `repositório godot-cpp <https://github.com/godotengine/godot-"
+"cpp>`__."
 
 msgid ""
 "See also :ref:`Compiling <toc-devel-compiling>` as the build tools are "
@@ -169,9 +166,8 @@ msgstr ""
 msgid "You may need to add ``bits=64`` to the command on Windows or Linux."
 msgstr ""
 
-#, fuzzy
 msgid "Creating a simple plugin"
-msgstr "Criando um script C#"
+msgstr "Criando um plugin simples"
 
 msgid ""
 "Now it's time to build an actual plugin. We'll start by creating an empty "
@@ -290,7 +286,7 @@ msgid ""
 msgstr ""
 
 msgid "Compiling the plugin"
-msgstr ""
+msgstr "Compilando o plugin"
 
 msgid ""
 "We cannot easily write by hand a ``SConstruct`` file that SCons would use "
@@ -393,9 +389,8 @@ msgstr ""
 msgid "We're finally ready to run the project:"
 msgstr ""
 
-#, fuzzy
 msgid "Adding properties"
-msgstr "Propriedades do Node"
+msgstr "Adicionando propriedades"
 
 msgid ""
 "GDScript allows you to add properties to your script using the ``export`` "
@@ -496,9 +491,8 @@ msgid ""
 "wobbling Godot icon, we would need to showcase a far more complete example."
 msgstr ""
 
-#, fuzzy
 msgid "This is the required syntax:"
-msgstr "Este é o resultado final:"
+msgstr "Esta é a sintaxe necessária:"
 
 msgid ""
 "Note that you can only call ``my_method`` if you've previously registered it "
@@ -567,4 +561,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

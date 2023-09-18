@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,11 +121,21 @@ msgid ""
 "send a :ref:`Object.notification<class_Object_method_notification>` to "
 "update the translation::"
 msgstr ""
+"Esse comportamento de tradução automática pode ser indesejável em certos "
+"casos. Por exemplo, ao usar um rótulo para exibir o nome de um jogador, você "
+"provavelmente não deseja que o nome do jogador seja traduzido se "
+"corresponder a uma chave de tradução. Para desativar a tradução automática "
+"em um nó específico, use :ref:`Object."
+"set_message_translation<class_Object_method_set_message_translation>` e "
+"envie um :ref:`Object.notification<class_Object_method_notification>` para "
+"atualizar a tradução::"
 
 msgid ""
 "For more complex UI nodes such as OptionButtons, you may have to use this "
 "instead::"
 msgstr ""
+"Para nós de interface do usuário mais complexos, como OptionButtons, talvez "
+"seja necessário usar isso:"
 
 msgid ""
 "In code, the :ref:`Object.tr() <class_Object_method_tr>` function can be "
@@ -153,7 +163,7 @@ msgstr ""
 "disponíveis em :ref:`Label <class_Label>`."
 
 msgid "TranslationServer"
-msgstr ""
+msgstr "TranslationServer"
 
 msgid ""
 "Godot has a server handling low-level translation management called the :ref:"
@@ -166,14 +176,15 @@ msgstr ""
 "traduções podem ser adicionadas ou removidas durante o tempo de execução; o "
 "idioma atual também pode ser alterado em tempo de execução."
 
-#, fuzzy
 msgid "Testing translations"
-msgstr "Importando traduções"
+msgstr "Testando traduções"
 
 msgid ""
 "You may want to test a project's translation before releasing it. Godot "
 "provides two ways to do this."
 msgstr ""
+"Você pode querer testar a tradução de um projeto antes de lançá-lo. Godot "
+"fornece duas maneiras de fazer isso."
 
 msgid ""
 "First, in the Project Settings, under **Input Devices > Locale**, there is a "
@@ -181,14 +192,22 @@ msgid ""
 "want to test. Godot will run the project with that locale when the project "
 "is run (either from the editor or when exported)."
 msgstr ""
+"Primeiro, em Configurações do Projeto, em **Input Devices > Locale**, há uma "
+"propriedade **Test**. Configure esta propriedade para o código de localidade "
+"do idioma que você deseja testar. Godot executará o projeto com essa "
+"localidade quando o projeto for executado (seja do editor ou quando "
+"exportado)."
 
 msgid ""
 "Keep in mind that since this is a project setting, it will show up in "
 "version control when it is set to a non-empty value. Therefore, it should be "
 "set back to an empty value before committing changes to version control."
 msgstr ""
+"Lembre-se de que, como essa é uma configuração do projeto, ela aparecerá no "
+"controle de versão quando for definida como um valor não vazio. Portanto, "
+"ele deve ser definido como um valor vazio antes de confirmar as alterações "
+"no controle de versão."
 
-#, fuzzy
 msgid ""
 "Translations can also be tested when running Godot from the command line. "
 "For example, to test a game in French, the following argument can be "
@@ -222,4 +241,4 @@ msgstr ""
 "ref:`lista de códigos de locale <doc_locales>`."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

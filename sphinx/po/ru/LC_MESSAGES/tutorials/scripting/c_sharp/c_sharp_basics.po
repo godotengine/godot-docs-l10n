@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -166,13 +166,13 @@ msgstr ""
 "кликните по **Editor** и выберите внешний редактор на выбор:"
 
 msgid "Visual Studio 2019"
-msgstr "Visual Studio 2019"
+msgstr "Visuаl Studio 2019"
 
 msgid "Visual Studio Code"
-msgstr "Visual Studio Code"
+msgstr "Visuаl Studio Code"
 
 msgid "MonoDevelop"
-msgstr "MonoDevelop"
+msgstr "MonоDevelop"
 
 msgid "Visual Studio for Mac"
 msgstr "Visual Studio для MacOS"
@@ -259,7 +259,6 @@ msgstr ""
 "mono-project.com/download/stable/#download-lin> `__ для работы плагина "
 "инструментов C#."
 
-#, fuzzy
 msgid ""
 "To configure a project for debugging open the Godot project folder in VS "
 "Code. Go to the Run tab and click on **Add Configuration...**. Select **C# "
@@ -268,10 +267,13 @@ msgid ""
 "and  command settings in ``tasks.json`` to your Godot executable path. Now, "
 "when you start the debugger in VS Code, your Godot project will run."
 msgstr ""
-"Чтобы настроить проект для отладки, откройте папку Godot-проекта в Visual "
-"Studio Code. Перейдите на вкладку Run и нажмите **create a launch.json "
-"file**. В раскрывающемся меню выберите **C# Godot**. Теперь, когда вы "
-"запустите отладчик в VS Code, ваш проект Godot будет запущен."
+"Чтобы сконфигурировать проект для отладки, откройте папку проекта Godot в VS "
+"Code. Перейдите на вкладку Run и нажмите на **Add Configuration...**. "
+"Выберите **C# Godot** из выпадающего меню. Откройте созданные файлы ``tasks."
+"json`` и ``launch.json``. Измените настройки исполняемого файла в ``launch."
+"json`` и команды в ``tasks.json`` на путь к исполняемому файлу Godot. "
+"Теперь, когда вы запустите отладчик в VS Code, ваш проект Godot будет "
+"запущен."
 
 msgid "Visual Studio (Windows only)"
 msgstr "Visual Studio (Только windows)"
@@ -394,10 +396,10 @@ msgid ""
 "class reference pages for :ref:`@GDScript <class_@gdscript>` and :ref:"
 "`@GlobalScope <class_@globalscope>`."
 msgstr ""
-"Как видите, функции, которые в GDScript имеют глобальную область видимости, "
-"такие как функция ``print``, здесь доступны из класса ``GD``, который в свою "
-"очередь является частью пространства имен ``Godot``. Вы можете ознакомиться "
-"со списком методов класса ``GD`` на страницах справки класса :ref:`@GDScript "
+"Как вы можете видеть, функции, обычно находящиеся в глобальной области "
+"видимости в GDScript, такие как функция Godot ``print``, доступны в классе "
+"``GD``, который является частью пространства имен ``Godot``. Список методов "
+"класса ``GD`` смотрите в справочных страницах классов :ref:`@GDScript "
 "<class_@gdscript>` и :ref:`@GlobalScope <class_@globalscope>`."
 
 msgid ""

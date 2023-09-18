@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,17 @@ msgid ""
 "input actions, and code player movement. By the end, you'll have a playable "
 "character that moves in eight directions."
 msgstr ""
+"Nas próximas duas lições, projetaremos a cena do jogador, registraremos "
+"ações de entrada personalizadas e codificaremos o movimento do jogador. Ao "
+"final, você terá um personagem jogável que se move em oito direções."
 
 msgid ""
 "Create a new scene by going to the Scene menu in the top-left and clicking "
 "*New Scene*. Create a *KinematicBody* node as the root and name it *Player*."
 msgstr ""
+"Crie uma nova cena acessando o menu Cena no canto superior esquerdo e "
+"clicando em *Nova cena*. Crie um nó *KinematicBody* como raiz e nomeie-o "
+"como *Player*."
 
 msgid "|image0|"
 msgstr "|image0|"
@@ -44,23 +50,36 @@ msgid ""
 "dictate their movement. You will see how we use the node's unique features "
 "when we code the jump and squash mechanics."
 msgstr ""
+"Os corpos cinemáticos são complementares à área e aos corpos rígidos usados "
+"no tutorial do jogo 2D. Como corpos rígidos, eles podem se mover e colidir "
+"com o ambiente, mas em vez de serem controlados pelo mecanismo de física, "
+"você dita o movimento deles. Você verá como usamos os recursos exclusivos do "
+"nó quando codificamos a mecânica de pular e esmagar."
 
 msgid ""
 "To learn more about the different physics node types, see the :ref:"
 "`doc_physics_introduction`."
 msgstr ""
+"Para aprender mais sobre os diferentes tipos de nodos físicos, veja :ref:"
+"`doc_physics_introduction`."
 
 msgid ""
 "For now, we're going to create a basic rig for our character's 3D model. "
 "This will allow us to rotate the model later via code while it plays an "
 "animation."
 msgstr ""
+"Por enquanto, vamos criar um rig básico para o modelo 3D do nosso "
+"personagem. Isso nos permitirá girar o modelo posteriormente via código "
+"enquanto ele reproduz uma animação."
 
 msgid ""
 "Add a *Spatial* node as a child of *Player* and name it *Pivot*. Then, in "
 "the FileSystem dock, expand the ``art/`` folder by double-clicking it and "
 "drag and drop ``player.glb`` onto the *Pivot* node."
 msgstr ""
+"Adicione um nó *Spatial* como filho de *Player* e nomeie-o como *Pivot*. Em "
+"seguida, no dock FileSystem, expanda a pasta ``art/`` clicando duas vezes "
+"nela e arraste e solte ``player.glb`` no nó *Pivot*."
 
 msgid "|image1|"
 msgstr "|image1|"
@@ -72,6 +91,8 @@ msgid ""
 "This should instantiate the model as a child of *Pivot*. You can rename it "
 "to *Character*."
 msgstr ""
+"Isso deve instanciar o modelo como filho de *Pivot*. Você pode renomeá-lo "
+"para *Caractere*."
 
 msgid "|image2|"
 msgstr "|image2|"
@@ -86,6 +107,11 @@ msgid ""
 "designed the model in `Blender 3D <https://www.blender.org/>`__ and exported "
 "it to GLTF."
 msgstr ""
+"Os arquivos ``.glb`` contêm dados de cena 3D baseados na especificação GLTF "
+"2.0 de código aberto. Eles são uma alternativa moderna e poderosa para um "
+"formato proprietário como o FBX, que o Godot também suporta. Para produzir "
+"esses arquivos, projetamos o modelo no `Blender 3D <https://www.blender.org/"
+">`__ e exportamos para GLTF."
 
 msgid ""
 "As with all kinds of physics nodes, we need a collision shape for our "
@@ -93,12 +119,17 @@ msgid ""
 "and add a *CollisionShape*. In the *Inspector*, assign a *SphereShape* to "
 "the *Shape* property. The sphere's wireframe appears below the character."
 msgstr ""
+"Como em todos os tipos de nodos físicos, precisamos de uma forma de colisão "
+"para que nosso personagem colida com o ambiente. Selecione o nó *Player* "
+"novamente e adicione um *CollisionShape*. No *Inspector*, atribua um "
+"*SphereShape* à propriedade *Shape*. A estrutura de arame da esfera aparece "
+"abaixo do personagem."
 
 msgid "|image3|"
 msgstr "|image3|"
 
 msgid "image3"
-msgstr "|image3|"
+msgstr "imagem3"
 
 msgid ""
 "It will be the shape the physics engine uses to collide with the "
@@ -106,21 +137,29 @@ msgid ""
 "dragging the orange dot in the viewport. My sphere has a radius of about "
 "``0.8`` meters."
 msgstr ""
+"Será a forma que o motor de física usa para colidir com o ambiente, então "
+"queremos que ela se encaixe melhor no modelo 3D. Reduza um pouco arrastando "
+"o ponto laranja na viewport. Minha esfera tem um raio de cerca de ``0,8`` "
+"metros."
 
 msgid ""
 "Then, move the shape up so its bottom roughly aligns with the grid's plane."
 msgstr ""
+"Em seguida, mova a forma para cima para que sua parte inferior fique "
+"aproximadamente alinhada com o plano da grade."
 
 msgid "|image4|"
 msgstr "|image4|"
 
 msgid "image4"
-msgstr "|image4|"
+msgstr "imagem4"
 
 msgid ""
 "You can toggle the model's visibility by clicking the eye icon next to the "
 "*Character* or the *Pivot* nodes."
 msgstr ""
+"Você pode alternar a visibilidade do modelo clicando no ícone de olho ao "
+"lado dos nós *Caractere* ou *Pivot*."
 
 msgid "|image5|"
 msgstr "|image5|"
@@ -128,18 +167,18 @@ msgstr "|image5|"
 msgid "image5"
 msgstr "imagem5"
 
-#, fuzzy
 msgid "Save the scene as ``Player.tscn``."
-msgstr "Por ora, vamos abrir ``Player.tscn``."
+msgstr "Salve a cena como ``Player.tscn``."
 
 msgid ""
 "With the nodes ready, we can almost get coding. But first, we need to define "
 "some input actions."
 msgstr ""
+"Com os nós prontos, podemos quase começar a codificar. Mas primeiro, "
+"precisamos definir algumas ações de entrada."
 
-#, fuzzy
 msgid "Creating input actions"
-msgstr "Criando conteúdo"
+msgstr "Criando ações de entrada"
 
 msgid ""
 "To move the character, we will listen to the player's input, like pressing "
@@ -147,111 +186,128 @@ msgid ""
 "there's a powerful system that allows you to assign a label to a set of keys "
 "and buttons. This simplifies our scripts and makes them more readable."
 msgstr ""
+"Para mover o personagem, vamos escutar a entrada do jogador, como pressionar "
+"as teclas de seta. Em Godot, embora possamos escrever todas as combinações "
+"de teclas em código, há um sistema poderoso que permite atribuir um rótulo a "
+"um conjunto de teclas e botões. Isso simplifica nossos scripts e os torna "
+"mais legíveis."
 
 msgid ""
 "This system is the Input Map. To access its editor, head to the *Project* "
 "menu and select *Project Settings…*."
 msgstr ""
+"Este sistema é o Mapa de Entrada. Para acessar seu editor, vá até o menu "
+"*Projeto* e selecione *Configurações do projeto…*."
 
 msgid "|image6|"
-msgstr ""
+msgstr "|imagem 6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "|image1|"
+msgstr "image6"
 
 msgid ""
 "At the top, there are multiple tabs. Click on *Input Map*. This window "
 "allows you to add new actions at the top; they are your labels. In the "
 "bottom part, you can bind keys to these actions."
 msgstr ""
+"Na parte superior, existem várias guias. Clique em *Mapa de entrada*. Esta "
+"janela permite adicionar novas ações na parte superior; eles são seus "
+"rótulos. Na parte inferior, você pode vincular teclas a essas ações."
 
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "|image7|"
+msgstr "image7"
 
 msgid ""
 "Godot projects come with some predefined actions designed for user interface "
 "design, which we could use here. But we're defining our own to support "
 "gamepads."
 msgstr ""
+"Os projetos Godot vêm com algumas ações predefinidas projetadas para o "
+"design da interface do usuário, que poderíamos usar aqui. Mas estamos "
+"definindo o nosso próprio para oferecer suporte a gamepads."
 
 msgid ""
 "We're going to name our actions ``move_left``, ``move_right``, "
 "``move_forward``, ``move_back``, and ``jump``."
 msgstr ""
+"Vamos nomear nossas ações ``move_left``, ``move_right``, ``move_forward``, "
+"``move_back`` e ``jump``."
 
 msgid "To add an action, write its name in the bar at the top and press Enter."
 msgstr ""
+"Para adicionar uma ação, escreva seu nome na barra superior e pressione "
+"Enter."
 
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "|image8|"
+msgstr "image8"
 
 msgid ""
 "Create the five actions. Your window should have them all listed at the "
 "bottom."
 msgstr ""
+"Crie as cinco ações. Sua janela deve ter todos eles listados na parte "
+"inferior."
 
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "|image9|"
+msgstr "image9"
 
 msgid ""
 "To bind a key or button to an action, click the \"+\" button to its right. "
 "Do this for ``move_left`` and in the drop-down menu, click *Key*."
 msgstr ""
+"Para vincular uma tecla ou botão a uma ação, clique no botão \"+\" à "
+"direita. Faça isso para ``move_left`` e no menu suspenso, clique em *Key*."
 
 msgid "|image10|"
 msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "|image10|"
+msgstr "image10"
 
 msgid ""
 "This option allows you to add a keyboard input. A popup appears and waits "
 "for you to press a key. Press the left arrow key and click *OK*."
 msgstr ""
+"Esta opção permite adicionar uma entrada de teclado. Um pop-up aparece e "
+"espera que você pressione uma tecla. Pressione a tecla de seta para a "
+"esquerda e clique em *OK*."
 
 msgid "|image11|"
 msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "|image11|"
+msgstr "imagem11"
 
-#, fuzzy
 msgid "Do the same for the A key."
-msgstr "A escala do nó raiz."
+msgstr "Faça o mesmo para a tecla A."
 
 msgid "|image12|"
 msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "|image12|"
+msgstr "imagem12"
 
 msgid ""
 "Let's now add support for a gamepad's left joystick. Click the \"+\" button "
 "again but this time, select *Joy Axis*."
 msgstr ""
+"Vamos agora adicionar suporte para o joystick esquerdo de um gamepad. Clique "
+"no botão \"+\" novamente, mas desta vez, selecione *Joy Axis*."
 
 msgid "|image13|"
 msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "|image13|"
+msgstr "imagem13"
 
 msgid ""
 "The popup gives you two drop-down menus. On the left, you can select a "
@@ -260,71 +316,77 @@ msgid ""
 "and direction you want to bind to the input action on the right. Leave the "
 "default values and press the *Add* button."
 msgstr ""
+"O pop-up oferece dois menus suspensos. À esquerda, você pode selecionar um "
+"gamepad por índice. *Dispositivo 0* corresponde ao primeiro gamepad "
+"conectado, *Dispositivo 1* corresponde ao segundo e assim por diante. Você "
+"pode selecionar o joystick e a direção que deseja vincular à ação de entrada "
+"à direita. Deixe os valores padrão e pressione o botão *Adicionar*."
 
 msgid "|image14|"
 msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "|image14|"
+msgstr "imagem14"
 
 msgid ""
 "Do the same for the other input actions. For example, bind the right arrow, "
 "D, and the left joystick's right axis to ``move_right``. After binding all "
 "keys, your interface should look like this."
 msgstr ""
+"Faça o mesmo para as outras ações de entrada. Por exemplo, vincule a seta "
+"para a direita, D, e o eixo direito do joystick esquerdo para "
+"``move_right``. Depois de vincular todas as chaves, sua interface deve ficar "
+"assim."
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
-#, fuzzy
 msgid "image15"
-msgstr "|image1|"
+msgstr "image15"
 
 msgid ""
 "We have the ``jump`` action left to set up. Bind the Space key and the "
 "gamepad's A button. To bind a gamepad's button, select the *Joy Button* "
 "option in the menu."
 msgstr ""
+"Ainda temos a ação ``jump`` para configurar. Vincule a tecla de espaço e o "
+"botão A do gamepad. Para vincular o botão de um gamepad, selecione a opção "
+"*Joy Button* no menu."
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
-#, fuzzy
 msgid "image16"
-msgstr "|image1|"
+msgstr "image16"
 
 msgid "Leave the default values and click the *Add* button."
-msgstr ""
+msgstr "Deixe os valores padrão e clique no botão *Adicionar*."
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
-#, fuzzy
 msgid "image17"
-msgstr "|image1|"
+msgstr "image17"
 
 msgid "Your jump input action should look like this."
 msgstr "Sua ação de entrada de salto deve se parecer com isso."
 
-#, fuzzy
 msgid "|image18|"
-msgstr "|image1|"
+msgstr "|image18|"
 
-#, fuzzy
 msgid "image18"
-msgstr "|image1|"
+msgstr "image18"
 
 msgid ""
 "That's all the actions we need for this game. You can use this menu to label "
 "any groups of keys and buttons in your projects."
 msgstr ""
+"Essas são todas as ações que precisamos para este jogo. Você pode usar este "
+"menu para rotular quaisquer grupos de teclas e botões em seus projetos."
 
 msgid "In the next part, we'll code and test the player's movement."
 msgstr ""
+"Na próxima parte, nós iremos programar e testar o movimento do jogador."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

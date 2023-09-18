@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,6 +42,15 @@ msgid ""
 "too slow for 60 and only reach the deadlines for 30 FPS, in which case the "
 "frames you see will change at 30 FPS (resulting in stuttering)."
 msgstr ""
+"No entanto, a engine não necessariamente **renderiza** na mesma taxa. Embora "
+"muitos monitores atualizem a 60 Hz (ciclos por segundo), muitos atualizam em "
+"frequências completamente diferentes (por exemplo, 75 Hz, 144 Hz, 240 Hz ou "
+"mais). Mesmo que um monitor possa mostrar um novo quadro, por ex. 60 vezes "
+"por segundo, não há garantia de que a CPU e a GPU serão capazes de "
+"*fornecer* quadros nessa taxa. Por exemplo, ao rodar com o V-Sync, o "
+"computador pode ficar muito lento para 60 e atingir apenas os deadlines de "
+"30 FPS, caso em que os quadros que você vê mudarão a 30 FPS (resultando em "
+"engasgadas)."
 
 msgid ""
 "But there is a problem here. What happens if the physics ticks do not "
@@ -90,7 +99,7 @@ msgid ""
 msgstr ""
 
 msgid "Adapt the tick rate?"
-msgstr ""
+msgstr "Adaptar a taxa de ticks?"
 
 msgid ""
 "Instead of designing the game at a fixed physics tick rate, we could allow "
@@ -154,9 +163,8 @@ msgid ""
 "between those two points, in our ideal world of smooth continuous movement."
 msgstr ""
 
-#, fuzzy
 msgid "Linear interpolation"
-msgstr "Outras considerações"
+msgstr "Interpolação linear"
 
 msgid ""
 "The simplest way to achieve this is linear interpolation, or lerping, which "
@@ -176,9 +184,8 @@ msgid ""
 "easiest in terms of explanation."
 msgstr ""
 
-#, fuzzy
 msgid "The physics interpolation fraction"
-msgstr "Introdução à física"
+msgstr "A fração de interpolação física"
 
 msgid ""
 "If our physics ticks are happening 10 times per second (for this example), "
@@ -201,9 +208,8 @@ msgid ""
 "get_physics_interpolation_fraction<class_Engine_method_get_physics_interpolation_fraction>`."
 msgstr ""
 
-#, fuzzy
 msgid "Calculating the interpolated position"
-msgstr "Localizando os modelos"
+msgstr "Calculando a posição interpolada"
 
 msgid ""
 "Once we have the interpolation fraction, we can insert it into a standard "
@@ -214,7 +220,7 @@ msgid "So substituting our ``x_prev`` as 10, and ``x_curr`` as 30:"
 msgstr ""
 
 msgid "Let's break that down:"
-msgstr ""
+msgstr "Vamos detalhar isso:"
 
 msgid ""
 "We know the X starts from the coordinate on the previous tick (``x_prev``) "
@@ -255,9 +261,8 @@ msgid ""
 "ticks* into the past."
 msgstr ""
 
-#, fuzzy
 msgid "In the past"
-msgstr "Configurando o projeto"
+msgstr "No passado"
 
 msgid ""
 "What does this mean? This scheme does work, but it does mean we are "
@@ -306,9 +311,8 @@ msgid ""
 "onto the corrected path. This can be visually jarring."
 msgstr ""
 
-#, fuzzy
 msgid "Fixed timestep interpolation"
-msgstr "Outras considerações"
+msgstr "Interpolação por tempo fixo"
 
 msgid ""
 "In Godot this whole system is referred to as physics interpolation, but you "
@@ -329,4 +333,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

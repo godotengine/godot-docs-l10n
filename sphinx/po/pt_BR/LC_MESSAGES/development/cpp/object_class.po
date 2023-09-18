@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Object class"
-msgstr ""
+msgstr "Classe de objeto"
 
 msgid ""
 "This page describes the C++ implementation of objects in Godot. Looking for "
@@ -26,7 +26,7 @@ msgid ""
 msgstr ""
 
 msgid "General definition"
-msgstr ""
+msgstr "Definição geral"
 
 msgid ""
 ":ref:`Object <class_object>` is the base class for almost everything. Most "
@@ -41,16 +41,15 @@ msgstr ""
 msgid "References:"
 msgstr "Referências:"
 
-#, fuzzy
 msgid ""
 "`core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object."
 "h>`__"
 msgstr ""
-"`core/pool_vector.h <https://github.com/godotengine/godot/blob/master/core/"
-"pool_vector.cpp>`__"
+"`core/object.h <https://github.com/godotengine/godot/blob/3.x/core/object."
+"h>`__"
 
 msgid "Registering an Object"
-msgstr ""
+msgstr "Registrando um Objeto"
 
 msgid ""
 "ClassDB is a static class that holds the entire list of registered classes "
@@ -101,13 +100,12 @@ msgid ""
 "a string passing the name can be passed for brevity."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "class_db.h>`__"
 msgstr ""
-"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
-"h>`__"
+"`core/class_db.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"class_db.h>`__"
 
 msgid "Constants"
 msgstr "Constantes"
@@ -124,7 +122,7 @@ msgid "The constants can also be bound inside ``_bind_methods``, by using:"
 msgstr ""
 
 msgid "Properties (set/get)"
-msgstr ""
+msgstr "Propriedades (set/get)"
 
 msgid "Objects export properties, properties are useful for the following:"
 msgstr ""
@@ -141,7 +139,7 @@ msgid ""
 msgstr ""
 
 msgid "For example:"
-msgstr ""
+msgstr "Por exemplo:"
 
 msgid ""
 "This is an integer property, named \"amount\", hint is a range, range goes "
@@ -150,7 +148,7 @@ msgid ""
 msgstr ""
 
 msgid "Another example:"
-msgstr ""
+msgstr "Outro exemplo:"
 
 msgid ""
 "This is a string property, can take any string but the editor will only "
@@ -237,19 +235,16 @@ msgstr ""
 msgid "Notifications"
 msgstr "Notificações"
 
-#, fuzzy
 msgid ""
 "All objects in Godot have a :ref:`_notification "
 "<class_Object_method__notification>` method that allows it to respond to "
 "engine level callbacks that may relate to it. More information can be found "
 "on the :ref:`doc_godot_notifications` page."
 msgstr ""
-"Cada objeto no Godot implementa um método :ref:`_notification "
-"<class_Object_method__notification>`. Sua finalidade é permitir que o Objeto "
-"responda a uma variedade de chamadas de retorno em nível de motor que possam "
-"estar relacionadas a ele. Por exemplo, se o motor diz a um :ref:`CanvasItem "
-"<class_CanvasItem>` para \"desenhar\", ele irá chamar "
-"``_notification(NOTIFICATION_DRAW)``."
+"Todos os objetos em Godot têm um método :ref:`_notification "
+"<class_Object_method__notification>` que permite que ele responda a retornos "
+"de chamada no nível do mecanismo que possam estar relacionados a ele. Mais "
+"informações podem ser encontradas na página:ref:`doc_godot_notifications`."
 
 msgid "References"
 msgstr "Referências"
@@ -265,13 +260,12 @@ msgid ""
 "templates point to it."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`core/reference.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "reference.h>`__"
 msgstr ""
-"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
-"h>`__"
+"`core/reference.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"reference.h>`__"
 
 msgid "Resources:"
 msgstr "Recursos:"
@@ -287,13 +281,12 @@ msgstr ""
 msgid "Resources without a path are fine too."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
 "resource.h>`__"
 msgstr ""
-"`core/array.h <https://github.com/godotengine/godot/blob/master/core/array."
-"h>`__"
+"`core/resource.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"resource.h>`__"
 
 msgid "Resource loading"
 msgstr ""
@@ -308,18 +301,17 @@ msgid ""
 msgstr ""
 
 msgid "resourceinteractiveloader (TODO)"
-msgstr ""
+msgstr "resourceinteractiveloader (TODO)"
 
-#, fuzzy
 msgid ""
 "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_loader.h>`__"
 msgstr ""
-"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
-"master/core/io/resource_loader.cpp>`_"
+"`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/3.x/"
+"core/io/resource_loader.h>`__"
 
 msgid "Resource saving"
-msgstr ""
+msgstr "Economia de recursos"
 
 msgid "Saving a resource can be done with the resource saver API:"
 msgstr ""
@@ -331,13 +323,12 @@ msgid ""
 "someresource.res::1``. This also helps to cache them when loaded."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/3.x/"
 "core/io/resource_saver.h>`__"
 msgstr ""
-"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
-"master/core/io/resource_loader.cpp>`_"
+"`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/3.x/"
+"core/io/resource_saver.h>`__"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "General"
-msgstr "Generale"
+msgid "About"
+msgstr "Informazioni su Godot"
 
 msgid "Getting started"
 msgstr "Per iniziare"
 
-msgid "Tutorials"
-msgstr "Tutorials"
+#, fuzzy
+msgid "Manual"
+msgstr "Utilizzo manuale"
 
 msgid "Development"
 msgstr "Sviluppo"
@@ -33,9 +34,10 @@ msgid "Community"
 msgstr "Comunità"
 
 msgid "Class reference"
-msgstr "Riferimento di classe"
+msgstr "Riferimento alla classe"
 
-msgid "Godot Docs – *3.5* branch"
+#, fuzzy
+msgid "Godot Docs – *3.6* branch"
 msgstr "Documentazione di Godot – versione *3.5*"
 
 msgid ""
@@ -46,9 +48,10 @@ msgstr ""
 "Espandi il pannello \"Leggi la documentazione\" in fondo alla barra laterale "
 "per vedere la lista."
 
+#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
-"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "Questa documentazione è tradotta da `quella originale in inglese <https://"
@@ -66,10 +69,12 @@ msgstr ""
 "comunità fornendo nuove traduzioni o controllando quelle esistenti su "
 "Weblate."
 
+#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
-"\"latest\" (development) branch, but should be suitable to learn how to use "
-"stable Godot releases nevertheless."
+"\"stable\" branch. You can still view the English documentation for other "
+"engine versions using the \"Read the Docs\" panel at the bottom of the "
+"sidebar."
 msgstr ""
 "Al momento, le traduzioni localizzate sono disponibili solo per la versione "
 "\"latest\" (development), ma dovrebbero essere adatte per imparare come "
@@ -88,26 +93,19 @@ msgstr ""
 "raccomandiamo di leggere la :ref:`pagina di introduzione <doc_about_intro>` "
 "per avere una panoramica di cosa questa documentazione ha da offrirti."
 
+#, fuzzy
 msgid ""
-"The table of contents below and in the sidebar should let you easily access "
-"the documentation for your topic of interest. You can also use the search "
-"function in the top left corner."
+"The table of contents in the sidebar should let you easily access the "
+"documentation for your topic of interest. You can also use the search "
+"function in the top-left corner."
 msgstr ""
 "La tabella dei contenuti qui sotto e nella barra laterale ti dovrebbero "
 "consentire un accesso facile alla documentazione degli argomenti che ti "
 "interessano. Puoi usare anche la funzione di ricerca nell'angolo in alto a "
 "sinistra."
 
-msgid ""
-"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline reading (updated every Monday). Extract the ZIP archive then open "
-"the top-level ``index.html`` in a web browser."
+msgid "Get involved"
 msgstr ""
-"Puoi anche `scaricare una copia HTML <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ per "
-"la lettura offline (aggiornata ogni lunedì). Estrai l'archivio ZIP poi apri "
-"il livello superiore ``index.html`` in un browser web."
 
 msgid ""
 "Godot Engine is an open source project developed by a community of "
@@ -130,7 +128,7 @@ msgid ""
 "talk to us on the ``#documentation`` channel on the `Godot Contributors Chat "
 "<https://chat.godotengine.org/>`_!"
 msgstr ""
-"Segnala un problema o fai una pull request del `repository di GitHub "
+"Segnala un problema o fai una pull request sul `repository di GitHub "
 "<https://github.com/godotengine/godot-docs/issues>`_, aiutaci a `tradurre la "
 "documentazione <https://hosted.weblate.org/engage/godot-engine/>`_ nella tua "
 "lingua, o rimani in contatto con noi sia sul canale della ``#documentation`` "
@@ -142,7 +140,39 @@ msgstr "weblate_widget"
 msgid "Translation status"
 msgstr "Stato della traduzione"
 
+#, fuzzy
+msgid "Offline documentation"
+msgstr "Struttura della documentazione"
+
 msgid ""
-"The main documentation for the site is organized into the following sections:"
+"To browse the documentation offline, you can use the mirror of the "
+"documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
+"offline browsing on DevDocs, you need to:"
 msgstr ""
-"La documentazione principale del sito è organizzata nelle seguenti sezioni:"
+
+msgid "Click the three dots in the top-left corner, choose **Preferences**."
+msgstr ""
+
+msgid ""
+"Enable the desired version of the Godot documentation by checking the box "
+"next to it in the sidebar."
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Offline data**."
+msgstr ""
+
+#, fuzzy
+msgid "Click the **Install** link next to the Godot documentation."
+msgstr "Cos'è la documentazione di Godot"
+
+#, fuzzy
+msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
+"offline reading (updated every Monday). Extract the ZIP archive then open "
+"the top-level ``index.html`` in a web browser."
+msgstr ""
+"Puoi anche `scaricare una copia HTML <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ per "
+"la lettura offline (aggiornata ogni lunedì). Estrai l'archivio ZIP poi apri "
+"il livello superiore ``index.html`` in un browser web."

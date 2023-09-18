@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "General"
-msgstr "Allgemein"
+msgid "About"
+msgstr "Über"
 
 msgid "Getting started"
 msgstr "Erste Schritte"
 
-msgid "Tutorials"
-msgstr "Anleitungen"
+#, fuzzy
+msgid "Manual"
+msgstr "Manuelle Verwendung"
 
 msgid "Development"
 msgstr "Entwicklung"
@@ -35,7 +36,8 @@ msgstr "Community"
 msgid "Class reference"
 msgstr "Klassenreferenz"
 
-msgid "Godot Docs – *3.5* branch"
+#, fuzzy
+msgid "Godot Docs – *3.6* branch"
 msgstr "Godot-Dokumentation – *3.5*-Zweig"
 
 msgid ""
@@ -43,12 +45,13 @@ msgid ""
 "the \"Read the Docs\" panel at the bottom of the sidebar to see the list."
 msgstr ""
 "Die Godot-Dokumentation ist in verschiedenen Sprachen und Versionen "
-"vorhanden. Klappe das \"Read the Docs\"-Feld unten in der Seitenleiste auf "
-"um die Liste zu sehen."
+"vorhanden. Klappen Sie das \"Read the Docs\"-Panel unten in der Seitenleiste "
+"auf, um die Liste zu sehen."
 
+#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
-"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "Diese Dokumentation wurde von der `originalen englischen Version <https://"
@@ -66,10 +69,12 @@ msgstr ""
 "helfen, indem du neue Übersetzungen erstellst oder vorhandene in Weblate "
 "überprüfst."
 
+#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
-"\"latest\" (development) branch, but should be suitable to learn how to use "
-"stable Godot releases nevertheless."
+"\"stable\" branch. You can still view the English documentation for other "
+"engine versions using the \"Read the Docs\" panel at the bottom of the "
+"sidebar."
 msgstr ""
 "Derzeit sind lokalisierte Übersetzungen nur für den \"latest\"-Zweig "
 "(Entwicklungszweig) verfügbar, sollten aber ebenfalls geeignet sein, um zu "
@@ -88,26 +93,18 @@ msgstr ""
 "Erstes, die :ref:`Einführungsseite <doc_about_intro>` zu lesen, um eine "
 "Übersicht der verfügbaren Inhalte zu erhalten."
 
+#, fuzzy
 msgid ""
-"The table of contents below and in the sidebar should let you easily access "
-"the documentation for your topic of interest. You can also use the search "
-"function in the top left corner."
+"The table of contents in the sidebar should let you easily access the "
+"documentation for your topic of interest. You can also use the search "
+"function in the top-left corner."
 msgstr ""
 "Über das untenstehende Inhaltsverzeichnis und die Seitenleiste können Sie "
 "schnell auf die Themen zugreifen, die für Sie interessant sind. Außerdem "
 "steht eine Suchfunktion in der oberen linken Ecke zur Verfügung."
 
-msgid ""
-"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline reading (updated every Monday). Extract the ZIP archive then open "
-"the top-level ``index.html`` in a web browser."
+msgid "Get involved"
 msgstr ""
-"Sie können ebenfalls eine `HTML Kopie <https://nightly.link/godotengine/"
-"godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ "
-"herunterladen, um es offline zu lesen. Jeden Montag wird die Kopie "
-"aktualisiert. Extrahieren Sie die Zip Datei und öffnen Sie im Stammordner "
-"``index.html`` in einem Browser."
 
 msgid ""
 "Godot Engine is an open source project developed by a community of "
@@ -142,7 +139,40 @@ msgstr "weblate_widget"
 msgid "Translation status"
 msgstr "Übersetzungsstatus"
 
+#, fuzzy
+msgid "Offline documentation"
+msgstr "Online Dokumentation (RST)"
+
 msgid ""
-"The main documentation for the site is organized into the following sections:"
+"To browse the documentation offline, you can use the mirror of the "
+"documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
+"offline browsing on DevDocs, you need to:"
 msgstr ""
-"Die Hauptdokumentation von Godot ist in folgende Abschnitte gegliedert:"
+
+msgid "Click the three dots in the top-left corner, choose **Preferences**."
+msgstr ""
+
+msgid ""
+"Enable the desired version of the Godot documentation by checking the box "
+"next to it in the sidebar."
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Offline data**."
+msgstr ""
+
+#, fuzzy
+msgid "Click the **Install** link next to the Godot documentation."
+msgstr "Was ist die Godot-Dokumentation"
+
+#, fuzzy
+msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
+"offline reading (updated every Monday). Extract the ZIP archive then open "
+"the top-level ``index.html`` in a web browser."
+msgstr ""
+"Sie können ebenfalls eine `HTML Kopie <https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/3.3/godot-docs-html.zip>`__ "
+"herunterladen, um es offline zu lesen. Jeden Montag wird die Kopie "
+"aktualisiert. Extrahieren Sie die Zip Datei und öffnen Sie im Stammordner "
+"``index.html`` in einem Browser."

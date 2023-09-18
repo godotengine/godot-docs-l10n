@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Mouse and input coordinates"
-msgstr ""
+msgstr "Mouse e coordenadas de entrada"
 
 msgid "About"
 msgstr "Sobre"
@@ -27,18 +27,24 @@ msgid ""
 "The reason for this small tutorial is to clear up many common mistakes about "
 "input coordinates, obtaining mouse position and screen resolution, etc."
 msgstr ""
+"A razão para este pequeno tutorial é esclarecer muitos erros comuns sobre "
+"coordenadas de entrada, obtenção da posição do mouse e resolução da tela, "
+"etc."
 
 msgid "Hardware display coordinates"
-msgstr ""
+msgstr "Coordenadas de exibição de hardware"
 
 msgid ""
 "Using hardware coordinates makes sense in the case of writing complex UIs "
 "meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
 "make as much sense outside of that scope."
 msgstr ""
+"O uso de coordenadas de hardware faz sentido no caso de escrever UIs "
+"complexas destinadas a rodar no PC, como editores, MMOs, ferramentas, etc. "
+"No entanto, não faz tanto sentido fora desse escopo."
 
 msgid "Viewport display coordinates"
-msgstr ""
+msgstr "Coordenadas de exibição da janela de visualização"
 
 msgid ""
 "Godot uses viewports to display content, and viewports can be scaled by "
@@ -46,10 +52,14 @@ msgid ""
 "the functions in nodes to obtain the mouse coordinates and viewport size, "
 "for example:"
 msgstr ""
+"Godot usa janelas de exibição para exibir conteúdo, e as viewports podem ser "
+"dimensionadas por várias opções (consulte o tutorial :ref:"
+"`doc_multiple_resolutions`). Utilize, então, as funções em nós para obter as "
+"coordenadas do mouse e o tamanho do viewport, por exemplo:"
 
 msgid ""
 "Alternatively, it's possible to ask the viewport for the mouse position:"
-msgstr ""
+msgstr "Como alternativa, é possível solicitar à viewport a posição do mouse:"
 
 msgid ""
 "When the mouse mode is set to ``Input.MOUSE_MODE_CAPTURED``, the ``event."
@@ -57,6 +67,10 @@ msgid ""
 "Use ``event.relative`` instead of ``event.position`` and ``event.speed`` to "
 "process mouse movement and position changes."
 msgstr ""
+"Quando o modo do mouse é definido como ``Input.MOUSE_MODE_CAPTURED``, o "
+"valor ``event.position`` de ``InputEventMouseMotion`` é o centro da tela. "
+"Use ``event.relative`` em vez de ``event.position`` e ``event.speed`` para "
+"processar o movimento do mouse e as mudanças de posição."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

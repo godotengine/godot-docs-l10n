@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,7 +233,6 @@ msgstr ""
 msgid "Coordinate system"
 msgstr "Koordinatensystem"
 
-#, fuzzy
 msgid ""
 "Godot uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__ "
 "system for everything in 3D, with 1 unit being equal to 1 meter. Physics and "
@@ -241,11 +240,11 @@ msgid ""
 "different scale is usually a bad idea (unless you know what you are doing)."
 msgstr ""
 "Godot verwendet für alles das `metrische <https://en.wikipedia.org/wiki/"
-"Metric_system>`__ System. 3D-Physik und andere Bereiche sind darauf "
-"abgestimmt, daher ist der Versuch, einen anderen Maßstab zu verwenden, "
-"normalerweise eine schlechte Idee (es sei denn, Sie wissen, was Sie tun)."
+"Metric_system>`__ System, wobei eine Einheit einem Meter entspricht. 3D-"
+"Physik und andere Bereiche sind darauf abgestimmt, daher ist der Versuch, "
+"einen anderen Maßstab zu verwenden, normalerweise eine schlechte Idee (es "
+"sei denn, Sie wissen, was Sie tun)."
 
-#, fuzzy
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
@@ -256,8 +255,8 @@ msgstr ""
 "Bei der Arbeit mit 3D-Assets ist es immer am besten, im richtigen Maßstab zu "
 "arbeiten (stellen Sie Ihr DCC auf metrisch ein). Godot ermöglicht die "
 "Skalierung nach dem Import und obwohl dies in den meisten Fällen "
-"funktioniert, kann es in seltenen Situationen zu Problemen mit der Floating-"
-"Point-Genauigkeit (und damit zu Störungen oder Artefakten) in heiklen "
+"funktioniert, kann es in seltenen Situationen zu Problemen mit der "
+"Fließkomma-Genauigkeit (und damit zu Störungen oder Artefakten) in heiklen "
 "Bereichen wie Rendering oder Physik kommen. Stellen Sie also sicher, dass "
 "Ihre Künstler immer im richtigen Maßstab arbeiten!"
 
@@ -358,6 +357,10 @@ msgid ""
 "displayed unless a :ref:`Camera <class_Camera>` is also added to the scene. "
 "Cameras can work in either orthogonal or perspective projections:"
 msgstr ""
+"Unabhängig davon, wie viele Objekte im 3D-Raum platziert sind, wird nichts "
+"angezeigt, wenn nicht auch eine :ref:`Camera <class_Camera>` zur Szene "
+"hinzugefügt wird. Kameras können entweder in orthogonalen oder "
+"perspektivischen Projektionen arbeiten:"
 
 msgid ""
 "Cameras are associated with (and only display to) a parent or grandparent "
@@ -393,6 +396,9 @@ msgid ""
 "of any other camera in the scene. If the property is set, it will become "
 "active, replacing the previous camera."
 msgstr ""
+"Wenn für eine Kamera die Eigenschaft \"*current*\" gesetzt ist, wird sie "
+"unabhängig von allen anderen Kameras in der Szene verwendet. Wenn die "
+"Eigenschaft gesetzt ist, wird sie aktiv und ersetzt die vorherige Kamera."
 
 msgid ""
 "If an active camera leaves the scene tree, the first camera in tree-order "

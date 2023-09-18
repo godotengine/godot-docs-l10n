@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -439,7 +439,7 @@ msgid "White: \"off\""
 msgstr "Белый: \"выключено\""
 
 msgid "3x3 (minimal)"
-msgstr "3x3 (minimal)"
+msgstr "3x3（minimal）"
 
 msgid ""
 "In 3x3 (minimal) mode, each bitmask contains 9 bits (4 corners, 4 edges, 1 "
@@ -488,9 +488,8 @@ msgstr ""
 "64x64, но вам, возможно, придется использовать разные размеры субтайлов для "
 "нисходящих шаблонов, как описано ниже."
 
-#, fuzzy
 msgid "**Template - Generic 16 tiles:**"
-msgstr "**Шаблон - Общий:**"
+msgstr "**Шаблон - Общие 16 тайлов(клеток):**"
 
 msgid ""
 "This template can be used for tilesets that only have 16 tiles - for simpler "
@@ -573,9 +572,8 @@ msgstr ""
 "Всего потребуется 256 плиток, чтобы обеспечить ровно одну битовую маску для "
 "каждой компоновки, которую этот режим может проверить."
 
-#, fuzzy
 msgid "Disabling autotile"
-msgstr "Использование карт тайлов"
+msgstr "Отключение карт тайлов"
 
 msgid ""
 "When using an autotile, it is possible to turn off the autotile behaviour "
@@ -622,7 +620,6 @@ msgstr ""
 msgid "Tips and tricks"
 msgstr "Советы и хитрости"
 
-#, fuzzy
 msgid ""
 "If you're using a :ref:`Camera2D <class_Camera2D>` to scroll your level, you "
 "may notice lines appearing between your tiles. To fix this, open Project "
@@ -630,7 +627,7 @@ msgid ""
 "Snapping** section."
 msgstr ""
 "Если вы используете: ref: `Camera2D <class_Camera2D>` для прокрутки уровня, "
-"вы можете заметить линии, появляющиеся между вашими плитками. Чтобы "
+"вы можете заметить линии, появляющиеся между вашими плитками(тайлами). Чтобы "
 "исправить это, откройте настройки проекта и включите «Использовать "
 "пиксельную привязку» в разделе «Рендеринг/Качество»."
 

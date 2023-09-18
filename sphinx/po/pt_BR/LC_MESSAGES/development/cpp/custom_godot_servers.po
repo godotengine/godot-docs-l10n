@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Custom Godot servers"
 msgstr "Servidores Godot personalizados"
 
@@ -46,16 +45,17 @@ msgid ""
 msgstr ""
 
 msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
-msgstr ""
+msgstr "`Padrão singleton <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
 
+#, fuzzy
 msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
-msgstr ""
+msgstr "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
 
 msgid "What for?"
 msgstr "Para que serve?"
 
 msgid "Adding artificial intelligence."
-msgstr ""
+msgstr "Adicionando inteligência artificial."
 
 msgid "Adding custom asynchronous threads."
 msgstr ""
@@ -70,11 +70,10 @@ msgid "Adding a custom VoIP protocol."
 msgstr ""
 
 msgid "And more..."
-msgstr ""
+msgstr "E mais..."
 
-#, fuzzy
 msgid "Creating a Godot server"
-msgstr "Criando um Servidor Godot"
+msgstr "Criando um servidor Godot"
 
 msgid ""
 "At minimum, a server must have a static instance, a sleep timer, a thread "
@@ -94,16 +93,13 @@ msgstr ""
 msgid ":ref:`RID<class_rid>`"
 msgstr ":ref:`RID <class_rid>`"
 
-#, fuzzy
 msgid ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__"
 msgstr ""
-"`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
-"variant.h>`__"
+"`core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__"
 
-#, fuzzy
 msgid "Registering the class in GDScript"
-msgstr "Uso na GDScript"
+msgstr "Registrando a classe no GDScript"
 
 msgid ""
 "Servers are allocated in ``register_types.cpp``. The constructor sets the "
@@ -127,9 +123,11 @@ msgid ""
 "`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
 "blob/master/servers/register_server_types.cpp>`__"
 msgstr ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
 
 msgid "Bind methods"
-msgstr ""
+msgstr "Vincular métodos"
 
 msgid ""
 "The dummy class binds singleton methods to GDScript. In most cases, the "
@@ -159,22 +157,21 @@ msgstr ""
 msgid "References:"
 msgstr "Referências:"
 
-#, fuzzy
 msgid ""
 "`core/message_queue.cpp <https://github.com/godotengine/godot/blob/3.x/core/"
 "message_queue.cpp>`__"
 msgstr ""
-"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
-"master/core/io/resource_loader.cpp>`_"
+"`core/message_queue.cpp <https://github.com/godotengine/godot/blob/3.x/core/"
+"message_queue.cpp>`__"
 
 msgid "Summing it up"
-msgstr ""
+msgstr "Resumindo"
 
 msgid "Here is the GDScript sample code:"
 msgstr "Aqui está o código de amostra em GDScript:"
 
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgid ""
 "The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/"
@@ -185,4 +182,4 @@ msgid "Connecting signal example code is pretty hacky."
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

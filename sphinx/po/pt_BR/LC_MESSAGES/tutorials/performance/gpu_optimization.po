@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "GPU optimization"
-msgstr "Otimização"
+msgstr "Otimização da GPU"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -73,7 +72,7 @@ msgid ""
 msgstr ""
 
 msgid "2D batching"
-msgstr ""
+msgstr "Processamento por lotes 2D"
 
 msgid ""
 "In 2D, the costs of treating each item individually can be prohibitively "
@@ -84,12 +83,13 @@ msgid ""
 "changes can be kept to a minimum."
 msgstr ""
 
-#, fuzzy
 msgid "For more information on 2D batching, see :ref:`doc_batching`."
-msgstr "Para mais, veja a página: ref: `doc_c_sharp_differences`."
+msgstr ""
+"Para mais informações sobre o processamento por lotes 2D, consulte :ref:"
+"`doc_batching`."
 
 msgid "3D batching"
-msgstr ""
+msgstr "Processamento por lotes 3D"
 
 msgid ""
 "In 3D, we still aim to minimize draw calls and state changes. However, it "
@@ -112,11 +112,12 @@ msgid ""
 "considerations, especially for large numbers of distant or low-poly objects."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "For more information on 3D specific optimizations, see :ref:"
 "`doc_optimizing_3d_performance`."
-msgstr "Para mais, veja a página: ref: `doc_c_sharp_differences`."
+msgstr ""
+"Para mais informações sobre otimizações específicas em 3D, veja :ref:"
+"`doc_optimizing_3d_performance`."
 
 msgid "Reuse Shaders and Materials"
 msgstr ""
@@ -268,9 +269,8 @@ msgid ""
 "shaders you can reasonably afford to use.**"
 msgstr ""
 
-#, fuzzy
 msgid "Reading textures"
-msgstr "Importando Texturas"
+msgstr "Lendo texturas"
 
 msgid ""
 "The other factor in fragment shaders is the cost of reading textures. "
@@ -287,7 +287,7 @@ msgid ""
 msgstr ""
 
 msgid "Texture compression"
-msgstr ""
+msgstr "Compressão de texturas"
 
 msgid ""
 "By default, Godot compresses textures of 3D models when imported using video "
@@ -319,9 +319,8 @@ msgid ""
 "significantly due to their low resolution."
 msgstr ""
 
-#, fuzzy
 msgid "Post-processing and shadows"
-msgstr "Processamentos"
+msgstr "Pós-processamento e sombras"
 
 msgid ""
 "Post-processing effects and shadows can also be expensive in terms of "
@@ -370,9 +369,8 @@ msgid ""
 "opaque geometry can end up being faster than using transparency to \"cheat\"."
 msgstr ""
 
-#, fuzzy
 msgid "Multi-platform advice"
-msgstr "Múltiplas execuções (Multi-threading)"
+msgstr "Assessoria multiplataforma"
 
 msgid ""
 "If you are aiming to release on multiple platforms, test *early* and test "
@@ -408,4 +406,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

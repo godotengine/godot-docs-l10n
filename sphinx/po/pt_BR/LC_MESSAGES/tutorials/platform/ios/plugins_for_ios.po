@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,7 +28,6 @@ msgstr ""
 msgid "ARKit and Camera access are also provided as plugins."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Latest updates, documentation and source code can be found at `Godot iOS "
 "plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
@@ -37,9 +36,8 @@ msgstr ""
 "encontrados no `repositório de plugins iOS do Godot <https://github.com/"
 "godotengine/godot-ios-plugins>`_"
 
-#, fuzzy
 msgid "Accessing plugin singletons"
-msgstr "Acessando os Nós de Cena"
+msgstr "Acessando plugins singletons"
 
 msgid ""
 "To access plugin functionality, you first need to check that the plugin is "
@@ -51,7 +49,7 @@ msgid "Here's an example of how to do this in GDScript:"
 msgstr "Eis um exemplo de como fazer isso no GDScript:"
 
 msgid "Asynchronous methods"
-msgstr ""
+msgstr "Métodos assíncronos"
 
 msgid ""
 "When requesting an asynchronous operation, the method will look like this:"
@@ -89,7 +87,7 @@ msgid ""
 msgstr ""
 
 msgid "Store Kit"
-msgstr ""
+msgstr "Kit de loja"
 
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
@@ -106,9 +104,8 @@ msgstr ""
 msgid "The following methods are available and documented below:"
 msgstr ""
 
-#, fuzzy
 msgid "``purchase``"
-msgstr "``puppet``"
+msgstr "``purchase``"
 
 msgid ""
 "Purchases a product ID through the Store Kit API. You have to call "
@@ -126,19 +123,19 @@ msgid ""
 msgstr ""
 
 msgid "Response event"
-msgstr ""
+msgstr "Evento de resposta"
 
 msgid "The response event will be a dictionary with the following fields:"
 msgstr ""
 
 msgid "On error:"
-msgstr ""
+msgstr "Em caso de erro:"
 
 msgid "On success:"
-msgstr ""
+msgstr "Em caso de sucesso:"
 
 msgid "``request_product_info``"
-msgstr ""
+msgstr "``request_product_info``"
 
 msgid "Requests the product info on a list of product IDs."
 msgstr ""
@@ -149,19 +146,18 @@ msgid ""
 msgstr ""
 
 msgid "``restore_purchases``"
-msgstr ""
+msgstr "``restore_purchases``"
 
 msgid ""
 "Restores previously made purchases on user's account. This will create "
 "response events for each previously purchased product ID."
 msgstr ""
 
-#, fuzzy
 msgid "The response events will be dictionaries with the following fields:"
-msgstr "A cena Turba utilizará os seguintes nós:"
+msgstr "Os eventos de resposta serão dicionários com os seguintes campos:"
 
 msgid "``set_auto_finish_transaction``"
-msgstr ""
+msgstr "``set_auto_finish_transaction``"
 
 msgid ""
 "If set to ``true``, once a purchase is successful, your purchase will be "
@@ -173,9 +169,8 @@ msgid ""
 "automatically finalized. Example:"
 msgstr ""
 
-#, fuzzy
 msgid "``finish_transaction``"
-msgstr "Conexões"
+msgstr "``finish_transaction``"
 
 msgid ""
 "If you don't want transactions to be automatically finalized, call this "
@@ -205,16 +200,14 @@ msgstr ""
 msgid "and the pending events interface:"
 msgstr ""
 
-#, fuzzy
 msgid "``authenticate``"
-msgstr "``x.attribute``"
+msgstr "``authenticate``"
 
 msgid "Authenticates a user in Game Center."
 msgstr ""
 
-#, fuzzy
 msgid "``post_score``"
-msgstr "get_scale()"
+msgstr "``post_score``"
 
 msgid "Posts a score to a Game Center leaderboard."
 msgstr ""
@@ -232,7 +225,7 @@ msgid "Example:"
 msgstr "Exemplo:"
 
 msgid "``award_achievement``"
-msgstr ""
+msgstr "``award_achievement``"
 
 msgid "Modifies the progress of a Game Center achievement."
 msgstr ""
@@ -254,13 +247,13 @@ msgid ""
 msgstr ""
 
 msgid "``reset_achievements``"
-msgstr ""
+msgstr "``reset_achievements``"
 
 msgid "Clears all Game Center achievements. The function takes no parameters."
 msgstr ""
 
 msgid "``request_achievements``"
-msgstr ""
+msgstr "``request_achievements``"
 
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
@@ -268,16 +261,15 @@ msgid ""
 msgstr ""
 
 msgid "``request_achievement_descriptions``"
-msgstr ""
+msgstr "``request_achievement_descriptions``"
 
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
 msgstr ""
 
-#, fuzzy
 msgid "``show_game_center``"
-msgstr "center()"
+msgstr "``show_game_center``"
 
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
@@ -301,14 +293,13 @@ msgid ""
 msgstr ""
 
 msgid "Examples:"
-msgstr ""
+msgstr "Exemplos:"
 
 msgid "On close:"
-msgstr ""
+msgstr "Ao fechar:"
 
-#, fuzzy
 msgid "Multi-platform games"
-msgstr "Múltiplas execuções (Multi-threading)"
+msgstr "Jogos multiplataforma"
 
 msgid ""
 "When working on a multi-platform game, you won't always have the "
@@ -321,4 +312,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

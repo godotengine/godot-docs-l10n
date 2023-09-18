@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,7 @@ msgstr ""
 "вместо``snake_case``, используемого в GDScript и C++."
 
 msgid "Global scope"
-msgstr "Глобальный контекст"
+msgstr "Глобальная область"
 
 msgid ""
 "Global functions and some constants had to be moved to classes, since C# "
@@ -154,11 +154,10 @@ msgid ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
-"Используйте атрибут `` [Export] `` вместо ключевого слова GDScript "
-"``export``. Этот атрибут также может быть предоставлен с необязательными "
-"параметрами :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` и `` "
-"hintString``. Значения по умолчанию могут быть установлены путем присвоения "
-"значения."
+"Используйте атрибут ``[Export]`` вместо ключевого слова GDScript ``export``. "
+"Этот атрибут также может быть предоставлен с необязательными параметрами :"
+"ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` и ``hintString``. "
+"Значения по умолчанию могут быть установлены путём присвоения значения."
 
 msgid "Signal keyword"
 msgstr "Ключевое слово Signal"
@@ -285,7 +284,7 @@ msgid "``Scale``"
 msgstr "``Scale``"
 
 msgid "Transform2D"
-msgstr "Transform2D"
+msgstr "Transfоrm2D"
 
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
@@ -325,7 +324,7 @@ msgid "``Center``"
 msgstr "``Center``"
 
 msgid "Rect2"
-msgstr "Rect2"
+msgstr "Rеct2"
 
 msgid ""
 "The following field was converted to a property with a *slightly* different "
@@ -457,7 +456,7 @@ msgstr ""
 "Collections.Dictionary <T> (Godot.Collections.Dictionary)`` для его создания."
 
 msgid "Variant"
-msgstr "Variant"
+msgstr "Вариант"
 
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
 msgstr "``System.Object`` (`` object``) используется вместо ``Variant``."

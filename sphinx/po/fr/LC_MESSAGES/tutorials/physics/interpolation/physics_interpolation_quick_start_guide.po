@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Quick start guide"
-msgstr ""
+msgstr "Guide de démarrage rapide"
 
 msgid ""
 "Turn on physics interpolation: :ref:`ProjectSettings.physics/common/"
 "physics_interpolation<class_ProjectSettings_property_physics/common/"
 "physics_interpolation>`"
 msgstr ""
+"Activez l'interpolation physique : :ref:`ProjectSettings.physics/common/"
+"physics_interpolation<class_ProjectSettings_property_physics/common/"
+"physics_interpolation>`"
 
 msgid ""
 "Make sure you move objects and run your game logic in ``_physics_process()`` "
@@ -32,6 +35,11 @@ msgid ""
 "indirectly* (by e.g. moving a parent, or using another mechanism to "
 "automatically move nodes)."
 msgstr ""
+"Veillez à déplacer les objets et à exécuter votre logique de jeu dans "
+"``_physics_process()`` plutôt que dans ``_process()``. Cela inclut le "
+"déplacement des objets directement *et indirectement* (par exemple en "
+"déplaçant un parent, ou en utilisant un autre mécanisme pour déplacer "
+"automatiquement les noeuds)."
 
 msgid ""
 "Be sure to call :ref:`Node."
@@ -39,12 +47,19 @@ msgid ""
 "on nodes *after* you first position or teleport them, to prevent "
 "\"streaking\""
 msgstr ""
+"Assurez-vous d'appeler :ref:`Node."
+"reset_physics_interpolation<class_Node_method_reset_physics_interpolation>` "
+"sur les noeuds *après* que vous les ayez positionnés ou téléportés pour la "
+"première fois, pour éviter les \"streaks\""
 
 msgid ""
 "Temporarily try setting :ref:`ProjectSettings.physics/common/"
 "physics_fps<class_ProjectSettings_property_physics/common/physics_fps>` to "
 "10 to see the difference with and without interpolation."
 msgstr ""
+"Essayez temporairement de définir :ref:`ProjectSettings.physics/common/"
+"physics_fps<class_ProjectSettings_property_physics/common/physics_fps>` à 10 "
+"pour voir la différence avec et sans interpolation."
 
 msgid "Translation status"
 msgstr "État de la traduction"

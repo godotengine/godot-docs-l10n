@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,6 +105,13 @@ msgid ""
 "reproduced; if a developer looks at the issue one year later, the "
 "*Confirmed* label may not be relevant anymore."
 msgstr ""
+"*Confirmed*: было подтверждено по крайней мере ещ` одним участником, кроме "
+"автора сообщения об ошибке (обычно для сообщений *Bug* ). Цель этой пометки "
+"- дать разработчикам знать, какие проблемы все ещ` воспроизводимы, когда они "
+"хотят выбрать, над чем работать. Поэтому хорошей практикой является "
+"добавление комментария о том, на какой платформе и в какой версии или "
+"коммите Godot проблема может быть воспроизведена; если разработчик посмотрит "
+"на проблему год спустя, метка *Confirmed* может быть уже неактуальной."
 
 msgid ""
 "*Discussion*: the issue is not consensual and needs further discussion to "
@@ -321,7 +328,7 @@ msgid "**Platforms:**"
 msgstr "**Платформы:**"
 
 msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
-msgstr "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
+msgstr "*Android*, *HTML5*, *iOS*, *Linux*, *macОS*, *Windows*, *UWP*"
 
 msgid ""
 "By default, it is assumed that a given issue applies to all platforms. If "
@@ -400,6 +407,15 @@ msgid ""
 "critical bug that can't be accepted in any future stable release, or "
 "anything that Juan wants to work on right now. :)"
 msgstr ""
+"`Вехи <https://github.com/godotengine/godot/milestones>`_ соответствуют "
+"запланированным будущим версиям Godot, для которых существует дорожная "
+"карта. Проблемы, которые соответствуют указанной дорожной карте, должны быть "
+"зарегистрированы в соответствии с соответствующей вехой; если они не "
+"соответствуют какой-либо текущей дорожной карте, их следует оставить без "
+"вех. Как правило, проблема соответствует заданной вехе, если она касается "
+"функции, которая является новой в вехе, или критической ошибки, которая не "
+"может быть принята ни в одной будущей стабильной версии, или чего-либо, над "
+"чем Хуан хочет работать правильно. сейчас. :)"
 
 msgid ""
 "Contributors are free to pick issues regardless of their assigned milestone; "

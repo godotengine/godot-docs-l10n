@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,11 +41,12 @@ msgstr ""
 "Pfadtrenner im UNIX-Stil (``/``). Diese funktionieren auf allen Plattformen, "
 "einschließlich Windows."
 
-#, fuzzy
 msgid ""
 "Instead of writing paths like ``C:\\Projects\\Game``, in Godot, you should "
 "write ``C:/Projects/Game``."
-msgstr "Ein Pfad wie ``C:\\Projects`` wird zu ``C:/Projects``."
+msgstr ""
+"In Godot sollten Pfade nicht wie ``C:\\Projects\\Game``, sondern stattdessen "
+"wie ``C:/Projects/Game`` geschreiben werden."
 
 msgid ""
 "Windows-style path separators (backward slash ``\\``) are also supported in "
@@ -59,21 +60,19 @@ msgid ""
 "to guarantee that everything will work as intended."
 msgstr ""
 
-#, fuzzy
 msgid "Accessing files in the project folder (``res://``)"
-msgstr "Dateien zum Projekt hinzufügen"
+msgstr "Zugriff auf Dateien im Projektverzeichnis (``res://``)"
 
-#, fuzzy
 msgid ""
 "Godot considers that a project exists in any folder that contains a "
 "``project.godot`` text file, even if the file is empty. The folder that "
 "contains this file is your project's root folder."
 msgstr ""
-"Wie im :ref:`doc_command_line_tutorial` erwähnt, geht Godot davon aus, dass "
-"ein Projekt in einem beliebigen Ordner existiert, der eine ``project.godot`` "
-"Textdatei enthält, auch wenn diese Datei leer ist."
+"Godot geht davon aus, dass ein Projekt in einem beliebigen Ordner existiert, "
+"der eine ``project.godot`` Textdatei enthält, auch wenn diese Datei leer "
+"ist. Der Ordner, der diese Datei enthält, ist das Wurzelverzeichnis des "
+"Projekts."
 
-#, fuzzy
 msgid ""
 "You can access any file relative to it by writing paths starting with "
 "``res://``, which stands for resources. For example, you can access an image "
@@ -81,13 +80,13 @@ msgid ""
 "following path: ``res://character.png``."
 msgstr ""
 "Der Zugriff auf Projektdateien kann durch das Öffnen eines beliebigen Pfades "
-"mit ``res://`` als Basis erfolgen. Beispielsweise kann eine Textur, die sich "
-"im Stammverzeichnis des Projektordners befindet, vom folgenden Pfad aus "
-"geöffnet werden: ``res://some_texture.png``."
+"mit ``res://`` (kurz für Ressourcen) als Basis erfolgen. Beispielsweise kann "
+"eine Textur ``spieler.png``, die sich im Wurzelverzeichnis des "
+"Projektordners befindet, vom folgenden Pfad aus geöffnet werden: ``res://"
+"spieler.png``."
 
-#, fuzzy
 msgid "Accessing persistent user data (``user://``)"
-msgstr "auf Szenen-Nodes zugreifen"
+msgstr "Zugriff auf persistente Daten (``user://``)"
 
 msgid ""
 "To store persistent data files, like the player's save or settings, you want "
@@ -140,54 +139,46 @@ msgstr "Art"
 msgid "Location"
 msgstr "Ort"
 
-#, fuzzy
 msgid "Default"
-msgstr "Standard Stapeldateien"
+msgstr "Standard"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
-msgstr "Windows: ``%APPDATA%\\Godot\\script_templates\\``"
+msgstr "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
 
-#, fuzzy
 msgid ""
 "macOS: ``~/Library/Application Support/Godot/app_userdata/[project_name]``"
-msgstr "MacOS: ``~/Library/Application Support/Godot/``"
+msgstr ""
+"MacOS: ``~/Library/Application Support/Godot/app_userdata/[project_name]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
-msgstr "Linux: ``~/.local/share/godot/``"
+msgstr "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
 
 #, fuzzy
 msgid "Custom dir"
 msgstr "Benutzerdefinierte Shader"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[project_name]``"
-msgstr "Windows: ``%APPDATA%\\Godot\\``"
+msgstr "Windows: ``%APPDATA%\\[project_name]``"
 
 #, fuzzy
 msgid "macOS: ``~/Library/Application Support/[project_name]``"
-msgstr "MacOS: ``~/Library/Application Support/Godot/``"
+msgstr "macOS: ``~/Library/Application Support/[project_name]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/[project_name]``"
-msgstr "Linux: ``~/.local/share/godot/``"
+msgstr "Linux: ``~/.local/share/[project_name]``"
 
 #, fuzzy
 msgid "Custom dir and name"
 msgstr "2D benutzerdefiniertes zeichnen"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[custom_user_dir_name]``"
-msgstr "Windows: ``%APPDATA%\\Godot\\``"
+msgstr "Windows: ``%APPDATA%\\[custom_user_dir_name]``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/[custom_user_dir_name]``"
-msgstr "MacOS: ``~/Library/Application Support/Godot/``"
+msgstr "macOS: ``~/Library/Application Support/[custom_user_dir_name]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/[custom_user_dir_name]``"
-msgstr "Linux: ``~/.local/share/godot/``"
+msgstr "Linux: ``~/.local/share/[custom_user_dir_name]``"
 
 msgid ""
 "``[project_name]`` is based on the application name defined in the Project "
@@ -230,18 +221,15 @@ msgstr ""
 msgid "Editor data paths"
 msgstr "Editor-Datenpfade"
 
-#, fuzzy
 msgid ""
 "The editor uses different paths for editor data, editor settings, and cache, "
 "depending on the platform. By default, these paths are:"
 msgstr ""
 "Der Editor verwendet je nach Plattform unterschiedliche Pfade für "
-"Benutzerdaten, Benutzereinstellungen und Cache. Standardmäßig sind diese "
-"Pfade:"
+"Editordaten, Editoreinstellungen und Cache. Standardmäßig sind diese Pfade:"
 
-#, fuzzy
 msgid "Editor data"
-msgstr "Editor-Datenpfade"
+msgstr "Editor-Daten"
 
 msgid "Windows: ``%APPDATA%\\Godot\\``"
 msgstr "Windows: ``%APPDATA%\\Godot\\``"
@@ -249,11 +237,9 @@ msgstr "Windows: ``%APPDATA%\\Godot\\``"
 msgid "macOS: ``~/Library/Application Support/Godot/``"
 msgstr "MacOS: ``~/Library/Application Support/Godot/``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/godot/``"
-msgstr "Linux: ``~/.cache/godot/``"
+msgstr "Linux: ``~/.local/share/godot/``"
 
-#, fuzzy
 msgid "Editor settings"
 msgstr "Editoreinstellungen"
 
@@ -272,9 +258,8 @@ msgstr "MacOS: ``~/Library/Caches/Godot/``"
 msgid "Linux: ``~/.cache/godot/``"
 msgstr "Linux: ``~/.cache/godot/``"
 
-#, fuzzy
 msgid "**Editor data** contains export templates and project-specific data."
-msgstr "**User data** enthält Exportvorlagen und projektspezifische Daten."
+msgstr "**Editor data** enthält Exportvorlagen und projektspezifische Daten."
 
 msgid ""
 "**Editor settings** contains the main editor settings configuration file as "
@@ -282,13 +267,12 @@ msgid ""
 "profiles, script templates, etc.)."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "**Cache** contains data generated by the editor, or stored temporarily. It "
 "can safely be removed when Godot is closed."
 msgstr ""
-"**Cache** enthält temporäre Daten. Er kann sicher entfernt werden, wenn "
-"Godot geschlossen ist."
+"**Cache** enthält temporäre Daten, oder solche, die vom Editor generiert "
+"wurden. Er kann sicher entfernt werden, wenn Godot geschlossen ist."
 
 msgid ""
 "Godot complies with the `XDG Base Directory Specification <https://"

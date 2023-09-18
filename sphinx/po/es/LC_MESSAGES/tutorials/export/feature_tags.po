@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -241,12 +241,20 @@ msgid ""
 "time conditions. For example, ``OS.has_feature(\"mobile\")`` will return "
 "``false`` when running a project exported to HTML5 on a mobile device."
 msgstr ""
+"Con la excepción de las etiquetas de características de compresión de "
+"texturas, las etiquetas de características predeterminadas son "
+"**inmutables**. Esto significa que no cambiarán según las condiciones de "
+"tiempo de ejecución. Por ejemplo, ``OS.has_feature(\"mobile\")`` devolverá "
+"``false`` al ejecutar un proyecto exportado a HTML5 en un dispositivo móvil."
 
 msgid ""
 "To check whether a project exported to HTML5 is running on a mobile device, :"
 "ref:`call JavaScript code <doc_javascript_eval>` that reads the browser's "
 "user agent."
 msgstr ""
+"Para verificar si un proyecto exportado a HTML5 se está ejecutando en un "
+"dispositivo móvil, puedes :ref:`llamar código JavaScript "
+"<doc_javascript_eval>` que lea el agente de usuario del navegador."
 
 msgid "Custom features"
 msgstr "Funcionalidades personalizadas"
@@ -264,6 +272,11 @@ msgid ""
 "running the project from the editor, even if the export preset marked as "
 "**Runnable** for your current platform has custom feature tags defined."
 msgstr ""
+"Las etiquetas de características personalizadas solo se utilizan al ejecutar "
+"el proyecto exportado (incluido con :ref:`doc_one-click_deploy`). **No se "
+"utilizan** al ejecutar el proyecto desde el editor, incluso si el preset de "
+"exportación marcado como **Runnable** para tu plataforma actual tiene "
+"etiquetas de características personalizadas definidas."
 
 msgid "Overriding project settings"
 msgstr "Sobrescribir los ajustes del proyecto"

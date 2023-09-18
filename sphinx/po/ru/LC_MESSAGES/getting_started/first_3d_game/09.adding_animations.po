@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Character animation"
-msgstr "Анимация"
+msgstr "Анимация персонажей"
 
 msgid ""
 "In this final lesson, we'll use Godot's built-in animation tools to make our "
@@ -51,12 +50,12 @@ msgstr ""
 "вы можете использовать код для воспроизведения и управления ими во время "
 "выполнения."
 
-#, fuzzy
 msgid ""
 "Open the player scene, select the player node, and add an *AnimationPlayer* "
 "node."
 msgstr ""
-"Откройте сцену Player, выберите узел Player и добавьте узел анимации игрока."
+"Откройте сцену игрока, выберите узел игрока и добавьте узел "
+"*AnimationPlayer*."
 
 msgid "The *Animation* dock appears in the bottom panel."
 msgstr "На нижней панели появится вкладка *Animation*."
@@ -168,13 +167,12 @@ msgstr "|image8|"
 msgid "image8"
 msgstr "image8"
 
-#, fuzzy
 msgid ""
 "You can click and drag the slider in the bottom-right to zoom in and out of "
 "the timeline."
 msgstr ""
-"Вы можете переворачивать и вращать плитки, используя значки в правом верхнем "
-"углу редактора."
+"Вы можете щелкнуть и перетащить ползунок в правом нижнем углу, чтобы "
+"увеличить или уменьшить масштаб временной шкалы."
 
 msgid "|image9|"
 msgstr "|image9|"
@@ -182,9 +180,8 @@ msgstr "|image9|"
 msgid "image9"
 msgstr "image9"
 
-#, fuzzy
 msgid "The float animation"
-msgstr "Анимация"
+msgstr "Плавающая анимация"
 
 msgid ""
 "With the animation player node, you can animate most properties on as many "
@@ -378,13 +375,11 @@ msgstr ""
 msgid "Apply an ease-out to the second keyframe in the rotation track."
 msgstr "Примените ослабление ко второму ключевому кадру на дорожке вращения."
 
-#, fuzzy
 msgid "|image19|"
-msgstr "|image1|"
+msgstr "|изображение19|"
 
-#, fuzzy
 msgid "image19"
-msgstr "|image1|"
+msgstr "изображение19"
 
 msgid ""
 "Do the opposite for the second translation keyframe, dragging it to the "
@@ -393,25 +388,20 @@ msgstr ""
 "Проделайте обратные действия для второго ключевого кадра перемещения, "
 "перетащив его вправо."
 
-#, fuzzy
 msgid "|image20|"
-msgstr "|image2|"
+msgstr "|изображение20|"
 
-#, fuzzy
 msgid "image20"
-msgstr "|image2|"
+msgstr "изображение20"
 
-#, fuzzy
 msgid "Your animation should look something like this."
-msgstr "В итоге ваша сцена должна выглядеть примерно так."
+msgstr "Ваша анимация должна выглядеть примерно так."
 
-#, fuzzy
 msgid "|image21|"
-msgstr "|image2|"
+msgstr "|изображение21|"
 
-#, fuzzy
 msgid "image21"
-msgstr "|image2|"
+msgstr "изображение21"
 
 msgid ""
 "Animations update the properties of the animated nodes every frame, "
@@ -436,9 +426,8 @@ msgstr ""
 "Если существо находится слишком близко к полу, вы можете переместить *Pivot* "
 "вверх, чтобы сместить его."
 
-#, fuzzy
 msgid "Controlling the animation in code"
-msgstr "Управление анимацией"
+msgstr "Управление анимацией в коде"
 
 msgid ""
 "We can use code to control the animation playback based on the player's "
@@ -451,13 +440,11 @@ msgstr ""
 msgid "Open the *Player*'s script by clicking the script icon next to it."
 msgstr "Откройте скрипт *Player*, нажав на значок скрипта рядом с ним."
 
-#, fuzzy
 msgid "|image22|"
-msgstr "|image2|"
+msgstr "|изображение22|"
 
-#, fuzzy
 msgid "image22"
-msgstr "|image2|"
+msgstr "изображение22"
 
 msgid ""
 "In ``_physics_process()``, after the line where we check the ``direction`` "
@@ -483,9 +470,8 @@ msgstr ""
 "можем сделать дугу персонажа при прыжке с помощью следующей строки кода. "
 "Добавьте её в конец ``_physics_process()``."
 
-#, fuzzy
 msgid "Animating the mobs"
-msgstr "Анимации"
+msgstr "Анимация мобов"
 
 msgid ""
 "Here's another nice trick with animations in Godot: as long as you use a "
@@ -501,17 +487,16 @@ msgstr ""
 "Например, обе сцены *Mob* и *Player* имеют узел *Pivot* и узел *Character*, "
 "поэтому мы можем повторно использовать анимацию между ними."
 
-#, fuzzy
 msgid ""
 "Open the *Player* scene, select the animation player node and open the "
 "\"float\" animation. Next, click on **Animation > Copy**. Then open ``Mob."
 "tscn`` and open its animation player. Click **Animation > Paste**. That's "
 "it; all monsters will now play the float animation."
 msgstr ""
-"Откройте сцену *Mob*, выберите узел AnimationPlayer и откройте анимацию "
-"плавания. Затем щёлкните на *Animation -> Copy*. Затем откройте ``Player."
-"tscn`` и откройте его проигрыватель анимации. Щёлкните *Animation -> Paste*. "
-"Вот и всё: теперь все монстры будут воспроизводить анимацию плавания."
+"Откройте сцену *Player*, выберите узел animation player и откройте анимацию "
+"\"float\". Затем нажмите на **Animation > Copy**. Затем откройте ``Mob."
+"tscn`` и откройте его проигрыватель анимации. Нажмите **Animation > Paste**. "
+"Вот и все; теперь все монстры будут воспроизводить анимацию \"float\"."
 
 msgid ""
 "We can change the playback speed based on the creature's ``random_speed``. "

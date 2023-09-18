@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,9 +21,8 @@ msgid "Canvas layers"
 msgstr "Слои холста"
 
 msgid "Viewport and Canvas items"
-msgstr "Узлы Viewport и CanvasItem"
+msgstr "Область просмотра и Предметы холста"
 
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem <class_CanvasItem>` is the base for all 2D nodes, be it "
 "regular 2D nodes, such as :ref:`Node2D <class_Node2D>`, or :ref:`Control "
@@ -31,23 +30,21 @@ msgid ""
 "You can arrange canvas items in trees. Each item will inherit its parent's "
 "transform: when the parent moves, its children move too."
 msgstr ""
-"Обычные 2D-узлы, такие как :ref:`Node2D <class_Node2D>` или :ref:`Control "
-"<class_Control>` , наследуются от :ref:`CanvasItem <class_CanvasItem>`, "
-"который является базой для всех 2D-узлов. Узлы CanvasItem можно группировать "
-"в деревья. Каждый узел при этом будет наследовать преобразования своего "
-"родителя. Это означает, что когда родитель перемещается, дети тоже будут "
-"перемещаться."
+":ref:`CanvasItem <class_CanvasItem>` является основой для всех 2D-узлов, "
+"будь то обычные 2D-узлы, такие как :ref:`Node2D <class_Node2D>` или :ref:"
+"`Control <class_Control>`. Оба наследуют от :ref:`CanvasItem "
+"<class_CanvasItem>`. Вы можете расположить предметы холста на деревьях. "
+"Каждый элемент наследует преобразование своего родителя: когда родитель "
+"перемещается, его потомки тоже перемещаются."
 
-#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
 "children of a :ref:`Viewport <class_Viewport>`, that display them."
 msgstr ""
 "Узлы CanvasItem и узлы, унаследованные от них, являются прямыми или "
-"косвенными дочерними элементами объекта :ref:`Viewport <class_Viewport>` и "
-"будут отображаться через него."
+"косвенными дочерними элементами :ref:`Viewport <class_Viewport>`, который их "
+"отображает."
 
-#, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, allows to apply a custom :ref:"
@@ -84,17 +81,16 @@ msgstr ""
 "**Параллакс-фоны**: Фоновые изображения которые двигаются медленнее "
 "остальной сцены."
 
-#, fuzzy
 msgid ""
 "**UI**: Think of a user interface (UI) or head-up display (HUD) superimposed "
 "on our view of the game world. We want a life counter, score display and "
 "other elements to retain their screen positions even when our view of the "
 "game world changes."
 msgstr ""
-"**Интерфейс**: пользовательский интерфейс (UI) или Heads-up display (HUD) "
-"накладываются поверх изображения игрового мира. Мы хотим, чтобы счётчик "
-"жизней, отображение очков и другие элементы сохраняли свои позиции на экране "
-"независимо от перемещений персонажа."
+"**Интерфейс**: пользовательский интерфейс (UI) или проекционный дисплей "
+"(HUD) накладываются поверх изображения игрового мира. Мы хотим, чтобы "
+"счётчик жизней, отображение очков и другие элементы сохраняли свои позиции "
+"на экране независимо от перемещений персонажа."
 
 msgid ""
 "**Transitions**: We may want visual effects used for transitions (fades, "

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using the ArrayMesh"
-msgstr "Arrays"
+msgstr "Usando o ArrayMesh"
 
 msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
@@ -57,41 +56,38 @@ msgid "Index"
 msgstr "Índice"
 
 msgid "Mesh.ArrayType Enum"
-msgstr ""
+msgstr "Mesh.ArrayType Enum"
 
-#, fuzzy
 msgid "Array type"
-msgstr "Padrão de matriz"
+msgstr "Tipo de matriz"
 
 msgid "0"
-msgstr ""
+msgstr "0"
 
 msgid "``ARRAY_VERTEX``"
-msgstr ""
+msgstr "``ARRAY_VERTEX``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>` or :ref:`PoolVector2Array "
 "<class_PoolVector2Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`: Um array de objetos :ref:"
-"`Vector2 <class_Vector2>`."
+":ref:`PoolVector3Array <class_PoolVector3Array>` ou :ref:`PoolVector2Array "
+"<class_PoolVector2Array>`"
 
 msgid "1"
-msgstr ""
+msgstr "1"
 
 msgid "``ARRAY_NORMAL``"
-msgstr ""
+msgstr "``ARRAY_NORMAL``"
 
-#, fuzzy
 msgid ":ref:`PoolVector3Array <class_PoolVector3Array>`"
-msgstr ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`PoolVector3Array <class_PoolVector3Array>`"
 
 msgid "2"
-msgstr ""
+msgstr "2"
 
 msgid "``ARRAY_TANGENT``"
-msgstr ""
+msgstr "``ARRAY_TANGENT``"
 
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. First 3 "
@@ -99,40 +95,38 @@ msgid ""
 msgstr ""
 
 msgid "3"
-msgstr ""
+msgstr "3"
 
 msgid "``ARRAY_COLOR``"
-msgstr ""
+msgstr "``ARRAY_COLOR``"
 
-#, fuzzy
 msgid ":ref:`PoolColorArray <class_PoolColorArray>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`PoolColorArray <class_PoolColorArray>`"
 
 msgid "4"
-msgstr ""
+msgstr "4"
 
 msgid "``ARRAY_TEX_UV``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>` or :ref:`PoolVector3Array "
 "<class_PoolVector3Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`: Um array de objetos :ref:"
-"`Vector2 <class_Vector2>`."
+":ref:`PoolVector2Array <class_PoolVector2Array>` ou :ref:`PoolVector3Array "
+"<class_PoolVector3Array>`"
 
 msgid "5"
-msgstr ""
+msgstr "5"
 
 msgid "``ARRAY_TEX_UV2``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2``"
 
 msgid "6"
-msgstr ""
+msgstr "6"
 
 msgid "``ARRAY_BONES``"
-msgstr ""
+msgstr "``ARRAY_BONES``"
 
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats or :ref:"
@@ -141,10 +135,10 @@ msgid ""
 msgstr ""
 
 msgid "7"
-msgstr ""
+msgstr "7"
 
 msgid "``ARRAY_WEIGHTS``"
-msgstr ""
+msgstr "``ARRAY_WEIGHTS``"
 
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. Each float "
@@ -153,14 +147,13 @@ msgid ""
 msgstr ""
 
 msgid "8"
-msgstr ""
+msgstr "8"
 
 msgid "``ARRAY_INDEX``"
-msgstr ""
+msgstr "``ARRAY_INDEX``"
 
-#, fuzzy
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`"
 
 msgid ""
 "The array of vertices (at index 0) is always required. The index array is "
@@ -181,9 +174,8 @@ msgid ""
 "<class_arraymesh_method_add_surface_from_arrays>` are typically left empty."
 msgstr ""
 
-#, fuzzy
 msgid "ArrayMesh"
-msgstr "Arrays"
+msgstr "ArrayMesh"
 
 msgid ""
 "In the editor, create a :ref:`MeshInstance <class_meshinstance>` and add an :"
@@ -196,39 +188,49 @@ msgid "Next, add a script to the MeshInstance."
 msgstr "Em seguida, adicione um script à MeshInstance."
 
 msgid "Under ``_ready()``, create a new Array."
-msgstr ""
+msgstr "Em ''_ready()'', crie uma nova Array."
 
 msgid ""
 "This will be the array that we keep our surface information in - it will "
 "hold all the arrays of data that the surface needs. Godot will expect it to "
 "be of size ``Mesh.ARRAY_MAX``, so resize it accordingly."
 msgstr ""
+"Esta será a matriz na qual manteremos nossas informações de superfície - ela "
+"conterá todas as matrizes de dados que a superfície necessita. Godot espera "
+"que ela seja do tamanho ``Mesh.ARRAY_MAX``, portanto, redimensione-a de "
+"acordo."
 
 msgid "Next create the arrays for each data type you will use."
-msgstr ""
+msgstr "Em seguida, crie as matrizes para cada tipo de dado que você usará."
 
 msgid ""
 "Once you have filled your data arrays with your geometry you can create a "
 "mesh by adding each array to ``surface_array`` and then committing to the "
 "mesh."
 msgstr ""
+"Uma vez que você tenha preenchido suas matrizes de dados com sua geometria, "
+"você pode criar uma malha adicionando cada matriz a ``surface_array`` e, em "
+"seguida, comitando para a malha."
 
 msgid ""
 "In this example, we used ``Mesh.PRIMITIVE_TRIANGLES``, but you can use any "
 "primitive type available from mesh."
 msgstr ""
+"Neste exemplo, utilizamos ``Mesh.PRIMITIVE_TRIANGLES``, mas você pode "
+"utilizar qualquer tipo primitivo disponível na malha."
 
 msgid "Put together, the full code looks like:"
-msgstr ""
+msgstr "Juntos, o código completo se parece com:"
 
 msgid ""
 "The code that goes in the middle can be whatever you want. Below we will "
 "present some example code for generating a sphere."
 msgstr ""
+"O código que vai no meio pode ser o que você quiser. A seguir apresentaremos "
+"um exemplo de código para gerar uma esfera."
 
-#, fuzzy
 msgid "Generating geometry"
-msgstr "Configurando"
+msgstr "Gerando geometria"
 
 msgid ""
 "Here is sample code for generating a sphere. Although the code is presented "
@@ -238,6 +240,13 @@ msgid ""
 "are having trouble understanding it or want to learn more about procedural "
 "geometry in general, you can use any tutorial that you find online."
 msgstr ""
+"Aqui está uma amostra de código para gerar uma esfera. Embora o código seja "
+"apresentado no GDScript, não há nada de específico do Godot sobre a "
+"abordagem para gerá-lo. Esta implementação não tem nada em particular a ver "
+"com ArrayMeshes e é apenas uma abordagem genérica para a geração de uma "
+"esfera. Se você estiver tendo problemas para compreendê-la ou quiser "
+"aprender mais sobre a geometria de procedimentos em geral, você pode usar "
+"qualquer tutorial que encontrar on-line."
 
 msgid "Saving"
 msgstr "Salvando"
@@ -247,6 +256,9 @@ msgid ""
 "save the ArrayMesh. This is useful when you want to generate a mesh and then "
 "use it later without having to re-generate it."
 msgstr ""
+"Finalmente, podemos usar a classe :ref:'ResourceSaver<class_resourcesaver>' "
+"para salvar a ArrayMesh. Isso é útil quando você deseja gerar uma malha e, "
+"em seguida, usá-la mais tarde sem ter que gerá-la novamente."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,10 @@ msgid ""
 "ref:`HTTPRequest <class_HTTPRequest>` first, which has a tutorial available :"
 "ref:`here <doc_http_request_class>`."
 msgstr ""
+":ref:`HTTPClient <class_HTTPClient>` надає доступ низького рівня до HTTP "
+"зв'язку. Для інтерфейсу вищого рівня ви можете спочатку поглянути на :ref:"
+"`HTTPRequest <class_HTTPRequest>`, про який є стаття :ref:`тут "
+"<doc_http_request_class>`."
 
 msgid ""
 "When exporting to Android, make sure to enable the ``INTERNET`` permission "
@@ -33,14 +37,20 @@ msgid ""
 "deploy. Otherwise, network communication of any kind will be blocked by "
 "Android."
 msgstr ""
+"Під час експорту в Android обов’язково ввімкніть дозвіл ``INTERNET`` у "
+"попередньо налаштованих експортах Android, перш ніж експортувати проект, або "
+"використовувати розгортання одним клацанням мишки. Інакше Android заблокує "
+"будь-який мережевий зв’язок."
 
 msgid ""
 "Here's an example of using the :ref:`HTTPClient <class_HTTPClient>` class. "
 "It's just a script, so it can be run by executing:"
 msgstr ""
+"Ось приклад використання класу :ref:`HTTPClient <class_HTTPClient>`. Це "
+"просто скрипт, тому його можна запустити, виконавши:"
 
 msgid "It will connect and fetch a website."
-msgstr ""
+msgstr "Він підключиться та отримає веб-сайт."
 
 msgid "Translation status"
 msgstr "Стан перекладу"

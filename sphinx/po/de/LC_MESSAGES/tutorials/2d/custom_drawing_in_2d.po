@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -406,6 +406,7 @@ msgstr ""
 msgid "Antialiased drawing"
 msgstr "**Anti-Aliasing:**"
 
+#, fuzzy
 msgid ""
 "Godot offers method parameters in :ref:"
 "`draw_line<class_CanvasItem_method_draw_line>` to enable antialiasing, but "
@@ -414,13 +415,25 @@ msgid ""
 "parameter available in :ref:"
 "`draw_polygon<class_CanvasItem_method_draw_polygon>`."
 msgstr ""
+"Godot bietet Methodenparameter in :ref:"
+"`draw_line<class_CanvasItem_method_draw_line>` an, um Antialiasing zu "
+"aktivieren, aber es funktioniert nicht in allen Situationen zuverlässig (zum "
+"Beispiel auf Mobil-/Web-Plattformen oder wenn HDR aktiviert ist). Es ist "
+"auch kein ``antialiased`` Parameter in :ref:"
+"`draw_polygon<class_CanvasItem_method_draw_polygon>` verfügbar."
 
+#, fuzzy
 msgid ""
 "As a workaround, install and use the `Antialiased Line2D add-on <https://"
 "github.com/godot-extended-libraries/godot-antialiased-line2d>`__ (which also "
 "supports antialiased Polygon2D drawing). Note that this add-on relies on "
 "high-level nodes, rather than low-level ``_draw()`` functions."
 msgstr ""
+"Als Abhilfe können Sie das `Antialiased Line2D Add-on <https://github.com/"
+"godot-extended-libraries/godot-antialiased-line2d>`__ (das auch das "
+"Antialiased Polygon2D Zeichnen unterstützt) installieren und verwenden. "
+"Beachten Sie, dass dieses Add-on auf High-Level-Knoten beruht und nicht auf "
+"Low-Level-Funktionen ``_draw()``."
 
 msgid "Tools"
 msgstr "Werkzeuge"

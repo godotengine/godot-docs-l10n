@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 "니다."
 
 msgid "History"
-msgstr "역사"
+msgstr "작업 내역"
 
 msgid ""
 "Documentation about GDScript's history has been moved to the :ref:"
@@ -180,7 +180,7 @@ msgid "Returns a value from a function."
 msgstr "함수에서 값을 반환합니다."
 
 msgid "class"
-msgstr "class"
+msgstr "클래스"
 
 msgid "Defines an inner class."
 msgstr "내부 클래스를 정의합니다."
@@ -369,7 +369,7 @@ msgid "NAN (not a number) constant. Used for comparisons."
 msgstr "NAN (Not A Number, 숫자 아님) 상수. 비교할 때 사용됩니다."
 
 msgid "Operators"
-msgstr "연산자(Operator)"
+msgstr "연산자"
 
 msgid "The following is the list of supported operators and their precedence."
 msgstr "다음은 지원하는 연산자 목록과 우선 순위입니다."
@@ -585,7 +585,7 @@ msgstr ""
 "니다. 숫자를 쓰는 다음 방법은 모두 유효합니다:"
 
 msgid "Comments"
-msgstr "주석(Comment)"
+msgstr "주석"
 
 msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
@@ -1084,7 +1084,7 @@ msgstr ""
 "니다::"
 
 msgid "Constants"
-msgstr "상수"
+msgstr "제약"
 
 msgid ""
 "Constants are values you cannot change when the game is running. Their value "
@@ -1292,9 +1292,12 @@ msgid ""
 "this::"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
-"using ``break`` or continued using ``continue``:"
+"using ``break`` or continued using ``continue`` (i.e. skipping to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
 msgstr ""
 "간단한 루프는 ``while`` 구문으로 만들 수 있습니다. 루프는 ``break``\\ 를 사용"
 "해서 끊거나 ``continue``\\ 를 사용해서 계속할 수 있습니다:"
@@ -1463,7 +1466,7 @@ msgstr ""
 "허용되지 않습니다."
 
 msgid "Classes"
-msgstr "클래스(Class)"
+msgstr "클래스"
 
 msgid ""
 "By default, all script files are unnamed classes. In this case, you can only "

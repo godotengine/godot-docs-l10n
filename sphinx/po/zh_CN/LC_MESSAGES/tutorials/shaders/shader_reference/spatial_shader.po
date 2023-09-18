@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -359,13 +359,45 @@ msgstr "inout mat4 **INV_PROJECTION_MATRIX**"
 msgid "Clip space to view space transform."
 msgstr "裁剪空间向视图空间变换。"
 
+#, fuzzy
+msgid "in vec3 **NODE_POSITION_WORLD**"
+msgstr "in vec2 **POINT_COORD**"
+
+#, fuzzy
+msgid "Node position, in world space."
+msgstr "鼠标在像素坐标中的位置."
+
+#, fuzzy
+msgid "in vec3 **NODE_POSITION_VIEW**"
+msgstr "in vec3 **VIEW**"
+
+#, fuzzy
+msgid "Node position, in view space."
+msgstr "法向量, 在视图空间中."
+
+#, fuzzy
+msgid "in vec3 **CAMERA_POSITION_WORLD**"
+msgstr "in vec3 **ATTENUATION**"
+
+msgid "Camera position, in world space."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
+msgstr "in vec3 **ATTENUATION**"
+
+#, fuzzy
+msgid "Camera direction, in world space."
+msgstr "法向量, 在视图空间中."
+
 msgid "inout vec3 **VERTEX**"
 msgstr "inout vec3 **VERTEX**"
 
 msgid "Vertex in local coordinates."
 msgstr "局部坐标中的顶点."
 
-msgid "out vec4  **POSITION**"
+#, fuzzy
+msgid "out vec4 **POSITION**"
 msgstr "out vec4 **POSITION**"
 
 msgid "If written to, overrides final vertex position."
@@ -464,18 +496,6 @@ msgstr ""
 "Godot片段处理器函数的默认用法是设置对象的材质属性, 并让内置渲染器处理最终的阴"
 "影. 但是, 你无需使用所有这些属性, 如果你不写入它们,Godot将优化掉相应的功能."
 
-msgid "Below are examples of common variables calculated using the built-ins:"
-msgstr "以下是使用内置去计算一些常见变量的例子："
-
-msgid ""
-"A commonly used alternative to ``WORLD_MATRIX[3].xyz`` is to use ``vec3 "
-"origin = (WORLD_MATRIX * vec4(0,0,0,1)).xyz``. It is more efficient to use "
-"``WORLD_MATRIX[3].xyz`` as it avoids the matrix multiplication."
-msgstr ""
-"``WORLD_MATRIX[3].xyz`` 的常见替代品是 ``vec3 origin = (WORLD_MATRIX * "
-"vec4(0,0,0,1)).xyz``\\ 。用 ``WORLD_MATRIX[3].xyz`` 更加高效，因为无需做矩阵"
-"乘法。"
-
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
@@ -495,6 +515,21 @@ msgstr "in mat4 **PROJECTION_MATRIX**"
 
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr "in mat4 **INV_PROJECTION_MATRIX**"
+
+#, fuzzy
+msgid "Node world space position."
+msgstr "获取玩家的位置。"
+
+#, fuzzy
+msgid "Node view space position."
+msgstr "获取玩家的位置。"
+
+#, fuzzy
+msgid "Camera world space position."
+msgstr "动画面板位置"
+
+msgid "Camera world space direction."
+msgstr ""
 
 msgid "in vec3 **VERTEX**"
 msgstr "in vec3 **VERTEX**"
@@ -685,6 +720,9 @@ msgid ""
 "branch, then you are responsible for setting the ``DEPTH`` for **all** other "
 "branches. Otherwise, the graphics API will leave them uninitialized."
 msgstr ""
+"自定义深度值 (0..1)。如果在着色器的任何分支中写入了 ``DEPTH``\\ ，那么你就需"
+"要负责在\\ **所有**\\ 其他分支中设置 ``DEPTH``\\ 。否则图形 API 不会对其进行"
+"初始化。"
 
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
@@ -806,8 +844,11 @@ msgstr "基础反射."
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr "in vec3 **LIGHT_COLOR**"
 
-msgid "Color of light multiplied by energy."
-msgstr "光的颜色乘以能量."
+msgid ""
+"Color of light multiplied by ``energy * PI``. The ``PI`` multiplication is "
+"present because physically-based lighting models include a division by "
+"``PI``."
+msgstr ""
 
 msgid "in float **ROUGHNESS**"
 msgstr "in float **ROUGHNESS**"

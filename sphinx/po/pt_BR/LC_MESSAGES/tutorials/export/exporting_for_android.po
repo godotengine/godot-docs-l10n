@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,9 @@ msgid ""
 "looking to compile export template binaries from source instead, read :ref:"
 "`doc_compiling_for_android`."
 msgstr ""
+"Esta página descreve como exportar um projeto Godot para o Android. Se você "
+"deseja compilar binários de modelo de exportação da fonte, leia :ref:"
+"`doc_compiling_for_android`."
 
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
@@ -35,18 +38,14 @@ msgstr ""
 "Android. Os passos seguintes detalham o que é necessário para configurar o "
 "Android SDK e o motor."
 
-#, fuzzy
 msgid "Install OpenJDK 11"
-msgstr "Instale o OpenJDK 8"
+msgstr "Instale o OpenJDK 11"
 
-#, fuzzy
 msgid ""
 "Download and install  `OpenJDK 11 <https://adoptium.net/?"
 "variant=openjdk11>`__."
 msgstr ""
-"Baixe e instale o `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
-"variant=openjdk8&jvmVariant=hotspot>`__, versões mais recentes não vão "
-"funcionar."
+"Baixar e instalar `OpenJDK 11 <https://adoptium.net/?variant=openjdk11>`__."
 
 msgid "Download the Android SDK"
 msgstr "Baixe o Android SDK"
@@ -79,13 +78,11 @@ msgstr ""
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
 msgstr "Android SDK Platform-Tools versão 30.0.5 ou posterior"
 
-#, fuzzy
 msgid "Android SDK Build-Tools version 30.0.3"
-msgstr "Android SDK Platform-Tools versão 30.0.5 ou posterior"
+msgstr "Android SDK Build-Tools versão 30.0.3"
 
-#, fuzzy
 msgid "Android SDK Platform 31"
-msgstr "Plataforma Android SDK"
+msgstr "Plataforma Android SDK 31"
 
 msgid "Android SDK Command-line Tools (latest)"
 msgstr "Android SDK Command-line Tools (o mais recente)"
@@ -94,7 +91,7 @@ msgid "CMake version 3.10.2.4988404"
 msgstr "CMake versão 3.10.2.4988404"
 
 msgid "NDK version r23c (23.2.8568313)"
-msgstr ""
+msgstr "NDK versão r23c (23.2.8568313)"
 
 msgid ""
 "You can install it using the `command line tools <https://developer.android."
@@ -412,9 +409,8 @@ msgstr ""
 "Android com apenas as funcionalidades que você precisa. Veja :ref:"
 "`doc_optimizing_for_size` para mais informações."
 
-#, fuzzy
 msgid "Troubleshooting rendering issues"
-msgstr "Solução de problemas"
+msgstr "Resolução de problemas de renderização"
 
 msgid ""
 "To improve out-of-the-box performance on mobile devices, Godot automatically "
@@ -426,6 +422,9 @@ msgid ""
 "on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more "
 "information."
 msgstr ""
+"Isso pode causar problemas de renderização que não ocorrem ao executar o "
+"projeto em uma plataforma de desktop. Veja :ref:"
+"`doc_mobile_rendering_limitations` para mais informações."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

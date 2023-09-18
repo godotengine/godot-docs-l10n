@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,7 +80,7 @@ msgstr ":ref:`主控台 <doc_consoles>` 。"
 msgid ""
 ":ref:`Headless Linux and macOS servers "
 "<doc_exporting_for_dedicated_servers>`."
-msgstr ""
+msgstr "：ref:`無頭Linux和macOS服務器<doc_exporting_for_dedicated_servers>`。"
 
 msgid ""
 "Godot aims to be as platform-independent as possible and can be ported to "
@@ -141,7 +141,7 @@ msgid "Move the in-editor camera and see the result in the running project."
 msgstr "移動編輯器中的相機，並在執行中專案內檢視結果。"
 
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "內寘離線類參攷檔案。"
 
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "在編輯器中使用數十種由社群支援的語言。"
@@ -200,7 +200,7 @@ msgid "Parallax layers."
 msgstr "視差圖層。"
 
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "偽3D支持，可在編輯器中進行預覽。"
 
 msgid "2D lighting with normal maps."
 msgstr "使用一般映射的 2D 光照。"
@@ -302,6 +302,7 @@ msgid ""
 "Uses an optional depth prepass (enabled by default) to reduce the cost of "
 "overdraw, which speeds up complex scene rendering."
 msgstr ""
+"使用可選的深度預處理（默認啟用），减少重複繪製的消耗，加速複雜場景的渲染。"
 
 msgid "LDR rendering for greater compatibility."
 msgstr "為提供最佳相容性，以 LDR 進行算繪。"
@@ -330,10 +331,11 @@ msgid ""
 "Supports Lambert, Lambert Wrap (half-Lambert), Oren-Nayar and Toon diffuse "
 "shading modes."
 msgstr ""
+"支持Lambert、Lambert Wrap（半Lambert）、Oren-Nayar、Toon漫反射著色模式。"
 
 msgid ""
 "Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
-msgstr ""
+msgstr "支持 Schlick-GGX、Blinn、Phong、Toon、Disabled 镜面反射着色模式。"
 
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr "使用支援 ORM 紋理的粗糙金屬 (Roughness-metallic) 工作流程。"
@@ -341,13 +343,13 @@ msgstr "使用支援 ORM 紋理的粗糙金屬 (Roughness-metallic) 工作流程
 msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance"
-msgstr ""
+msgstr "使用地平线镜面反射遮蔽（Filament 模型）提升材质外观"
 
 msgid "Normal mapping."
 msgstr "法線映射。"
 
 msgid "Detail mapping for the albedo and normal maps."
-msgstr ""
+msgstr "反照率和法線貼圖的詳細貼圖。"
 
 msgid ""
 "Distance fade which can use alpha blending or dithering to avoid going "
@@ -365,11 +367,14 @@ msgstr "**GLES3:** 依據距離自動判斷精細等級的視差/浮雕映射。
 msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "**GLES3:** 次表面散射與透射。"
 
+#, fuzzy
 msgid ""
-"*GLES3:* Refraction with support for material roughness (resulting in blurry "
-"refraction). On GLES2, refraction is still functional but lacks support for "
-"material roughness."
+"*GLES3:* Screen-space refraction with support for material roughness "
+"(resulting in blurry refraction). On GLES2, refraction is still functional "
+"but lacks support for material roughness."
 msgstr ""
+"*GLES3:*支持材質粗糙度的折射（導致折射模糊）。 在GLES2上，折射仍然起作用，但"
+"缺乏對資料粗糙度的支持。"
 
 msgid "*GLES3:* Proximity fade (soft particles)."
 msgstr "**GLES3:** 臨近淡化 (軟粒子)。"
@@ -398,6 +403,10 @@ msgid ""
 "approach to lighting, which doesn't have a limit on the number of lights but "
 "is slower with many lights."
 msgstr ""
+"*GLES3:*照明採用單程向前進近。 默認情况下，每個網格資源最多可以顯示32個泛光燈"
+"和32個聚光燈。 如果需要，可以以新增著色器編譯時間和降低效能為代價來新增此限"
+"制。 GLES2使用多通道前向照明方法，對燈光數量沒有限制，但對許多燈光來說速度較"
+"慢。"
 
 msgid "**Shadow mapping:**"
 msgstr "**陰影映射：**"
@@ -430,11 +439,13 @@ msgid ""
 "lighting. The bake mode can be adjusted on a per-light basis to allow for "
 "hybrid light baking setups."
 msgstr ""
+"僅支持烘焙間接光源或同時烘焙直接光源和間接光源。 烘焙模式可以在每種光線的基礎"
+"上進行調整，以允許混合光線烘焙設定。"
 
 msgid ""
 "Supports lighting dynamic objects using an automatic octree-based system. No "
 "manual probe placement is required."
-msgstr ""
+msgstr "支持使用基於八叉樹的自動系統照明動態對象。 不需要手動放置探頭。"
 
 msgid "Lightmaps are baked on the CPU."
 msgstr "以 CPU 烘焙光照圖。"
@@ -527,7 +538,7 @@ msgstr "**GLES3:** 螢幕空間週遭遮擋。"
 msgid ""
 "*GLES3:* Optional debanding to avoid color banding (effective when HDR "
 "rendering is enabled)."
-msgstr ""
+msgstr "*GLES3:*\\可選的去色帶，避免產生色帶（在啟用HDR渲染時有效）。"
 
 msgid "**Texture filtering:**"
 msgstr "**紋理過濾：**"
@@ -539,7 +550,7 @@ msgid "**Texture compression:**"
 msgstr "**紋理壓縮：**"
 
 msgid "Lossless or lossy WebP (does not save VRAM; only reduces storage size)."
-msgstr ""
+msgstr "無損或有損WebP（不會節省VRAM；僅减少存儲大小）。"
 
 #, fuzzy
 msgid "S3TC (only supported on desktop platforms)."
@@ -573,6 +584,8 @@ msgid ""
 "Supports gameplay notifications with primary and secondary visibility to "
 "disable AI/physics processing for nodes that don't need it."
 msgstr ""
+"使用\\：ref:`房間與入口<doc_ rooms_ and_ portals>`\\實現遮擋剔除。 支持遊戲通"
+"知，根據主次兩級可見性來禁用不需要的節點的AI/物理處理。"
 
 msgid ""
 "Real-time occluder shapes (sphere and polygon). Not as effective as rooms "
@@ -1057,7 +1070,7 @@ msgid ""
 msgstr ""
 
 msgid "Mobile"
-msgstr "行動平台"
+msgstr "移動裝置"
 
 msgid "In-app purchases on Android and iOS."
 msgstr "支援 iOS 與 Android 的內購功能。"

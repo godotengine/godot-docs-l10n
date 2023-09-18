@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -238,8 +238,8 @@ msgid ""
 "The second is **Transmit Enabled** which simulates more realistic light "
 "transmittance. In practice, it makes light stand out more across the fog."
 msgstr ""
-"第二个是 ** Transmit Enabled ** , 模拟更逼真的透光率. 在实践中, 它使光线在雾"
-"中更加突出."
+"第二个是 **Transmit Enabled**\\ ，可以模拟更逼真的透射率。实践中会使光线在雾"
+"中更加突出。"
 
 msgid "Tonemap"
 msgstr "色调映射"
@@ -449,13 +449,15 @@ msgid ""
 "objects with this material characteristic."
 msgstr "**粗糙度** 将应用屏幕空间模糊来近似具有此材质特征的对象的粗糙度."
 
-#, fuzzy
 msgid ""
 "Keep in mind that screen-space-reflections only work for reflecting opaque "
 "geometry. Transparent materials won't be reflected, as they don't write to "
 "the depth buffer. This also applies to shaders that use ``SCREEN_TEXTURE`` "
 "or ``DEPTH_TEXTURE``."
-msgstr "请记住, 屏幕空间反射仅适用于反射不透明几何体. 透明对象无法反映."
+msgstr ""
+"请记住，屏幕空间反射仅适用于反射不透明几何体。透明对象无法反射，因为它们不会"
+"写入深度缓冲。同样也适用于使用 ``SCREEN_TEXTURE`` 或 ``DEPTH_TEXTURE`` 的着色"
+"器。"
 
 msgid "Screen-Space Ambient Occlusion (SSAO)"
 msgstr "屏幕空间环境遮挡(SSAO)"
@@ -494,8 +496,8 @@ msgid ""
 "able to appreciate it. This is because SSAO only acts on *ambient* light, "
 "not direct light."
 msgstr ""
-"启用此效果, 打开灯光并且无法欣赏它是一个常见的错误. 这是因为SSAO仅作用于* "
-"ambient * light, 而不是直接光."
+"启用此效果, 打开灯光并且无法欣赏它是一个常见的错误. 这是因为 SSAO 仅作用于\\ "
+"*环境光*\\ ，而不是直接光。"
 
 msgid ""
 "This is why, in the image above, the effect is less noticeable under the "

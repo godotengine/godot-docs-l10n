@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -67,6 +67,14 @@ msgid ""
 "It is also available in the Godot core and outputs to screen on desktop, "
 "which makes it ideal for prototyping or a tutorial such as this one."
 msgstr ""
+"Вы можете использовать функцию:ref:`get_interfaces() "
+"<class_ARVRServer_method_get_interfaces>` для возврата списка доступных "
+"интерфейсов, но для этого учебника, мы собираемся использовать :ref:`native "
+"mobile VR интерфейс <class_MobileVRInterface>` в наших примерах. Этот "
+"интерфейс является простой реализацией, которая использует датчики 3DOF на "
+"вашем телефоне для ориентации и выводит стереоскопическое изображение на "
+"экран. Он также доступен в ядре Godot и выводов на экран на рабочем столе, "
+"что делает его идеальным для прототипирования или учебник, такой как этот."
 
 #, fuzzy
 msgid "To enable an interface, you execute the following code:"
@@ -88,6 +96,14 @@ msgid ""
 "screen will show an undistorted version of the left eye, while showing the "
 "fully processed stereoscopic output on the device."
 msgstr ""
+"Для нашего мобильного VR-интерфейса и любого другого интерфейса, где "
+"основной ввод отображается непосредственно на экране, основным вьюпортом "
+"должен быть вьюпорт, в котором :ref:`arvr<class_Viewport_property_arvr>` "
+"установлен в ``true``. Но для интерфейсов, которые отображаются на внешнем "
+"устройстве, можно использовать вторичный видовой экран. В последнем случае "
+"вьюпорт, который показывает свой вывод на экране, будет показывать "
+"неискаженную версию левого глаза, в то время как на устройстве будет показан "
+"полностью обработанный стереоскопический вывод."
 
 msgid ""
 "Finally, you should only initialize an interface once; switching scenes and "
@@ -366,6 +382,13 @@ msgid ""
 "notice they're a bit more conservative on the effects or use some good old "
 "optical trickery."
 msgstr ""
+"В целом, нагрузка на ваш GPU по сравнению с обычной 3D-игрой довольно "
+"высока. Несмотря на то, что в настоящее время ведутся работы по улучшению "
+"ситуации, такие как MultiView и foveated rendering, они поддерживаются не на "
+"всех устройствах. Именно поэтому во многих играх VR используется более "
+"художественный стиль, а если вы обратите внимание на те игры VR, которые "
+"стремятся к реализму, то, вероятно, заметите, что они немного более "
+"консервативны в эффектах или используют старые добрые оптические обманы."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

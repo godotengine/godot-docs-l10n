@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,6 @@ msgstr ""
 "significa que los scripts heredan todas las funciones y propiedades del nodo "
 "al que se adjuntan."
 
-#, fuzzy
 msgid ""
 "For example, take a game where a Camera2D node follows a ship. The Camera2D "
 "node follows its parent by default. Imagine you want the camera to shake "
@@ -52,7 +51,6 @@ msgstr ""
 msgid "Available scripting languages"
 msgstr "Lenguajes de scripting disponibles"
 
-#, fuzzy
 msgid ""
 "Godot offers **five gameplay programming languages**: GDScript, C#, "
 "VisualScript, and, via its GDNative technology, C and C++. There are more :"
@@ -176,9 +174,10 @@ msgstr ""
 "Tipos de transformación y vector incorporados, lo que lo hace eficiente para "
 "el uso intensivo de álgebra lineal, imprescindible para los juegos."
 
-#, fuzzy
 msgid "Supports multiple threads as efficiently as statically typed languages."
-msgstr "Menor rendimiento que los lenguajes de tipado estático."
+msgstr ""
+"Admite múltiples hilos con la misma eficacia que los lenguajes tipados "
+"estáticamente."
 
 msgid ""
 "No `garbage collection <https://en.wikipedia.org/wiki/"
@@ -304,15 +303,14 @@ msgstr ""
 "una gran herramienta para quienes no son programadores, como diseñadores de "
 "juegos y artistas."
 
-#, fuzzy
 msgid ""
 "You can use other languages to create custom blocks that are specific to "
 "your game, for example, to script AIs, quests, or dialogues. That's where "
 "the strength of VisualScript lies."
 msgstr ""
-"Puede usar otros idiomas para crear bloques personalizados que sean "
-"específicos para su juego. Por ejemplo, para crear scripts de IA, misiones o "
-"diálogos. Ahí es donde radica la fuerza de VisualScript."
+"Puedes utilizar otros lenguajes para crear bloques personalizados "
+"específicos para tu juego, por ejemplo, para guionizar IAs, misiones o "
+"diálogos. Ahí es donde reside la fuerza de VisualScript."
 
 msgid ""
 "While it provides all the basic building blocks you need to code complete "
@@ -350,14 +348,13 @@ msgstr ""
 "compiladores para las bibliotecas compartidas generadas, gracias a nuestro "
 "uso de un puente API C interno."
 
-#, fuzzy
 msgid ""
 "GDNative is the best choice for performance. You don't need to use it "
 "throughout an entire game, as you can write other parts in GDScript, C#, or "
 "VisualScript."
 msgstr ""
-"Este lenguaje es la mejor opción para el rendimiento. No necesita usarlo "
-"durante todo el juego, ya que puede escribir otras partes en GDScript, C# o "
+"GDNative es la mejor opción para el rendimiento. No es necesario utilizarlo "
+"en todo un juego, ya que puedes escribir otras partes en GDScript, C# o "
 "VisualScript."
 
 msgid ""

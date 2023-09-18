@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "VR starter tutorial part 1"
-msgstr "Videos Tutoriais"
+msgstr "Tutorial inicial de VR parte 1"
 
 msgid "Introduction"
 msgstr "Introdução"
 
-#, fuzzy
 msgid ""
 "This tutorial will show you how to make a beginner VR game project in Godot."
 msgstr ""
-"Esta série de tutoriais lhe mostrará como fazer um jogo de tiro em primeira "
-"pessoa para um jogador."
+"Este tutorial mostrará como fazer um projeto de jogo RV para iniciantes no "
+"Godot."
 
 msgid ""
 "Keep in mind, **one of the most important things when making VR content is "
@@ -59,9 +57,8 @@ msgid ""
 "flat screen!"
 msgstr ""
 
-#, fuzzy
 msgid "Throughout the course of this tutorial, we will cover:"
-msgstr "Ao longo desta série, nós cobriremos como:"
+msgstr "Ao longo deste tutorial, abordaremos:"
 
 msgid "How to tell Godot to run in VR."
 msgstr ""
@@ -93,15 +90,14 @@ msgstr ""
 "Como criar alguns objetos especiais baseados em :ref:`RigidBody "
 "<class_RigidBody>`que podem destruir os alvos."
 
-#, fuzzy
 msgid ""
 "While this tutorial can be completed by beginners, it is highly advised to "
 "complete :ref:`doc_your_first_2d_game`, if you are new to Godot and/or game "
 "development."
 msgstr ""
-"Embora este guia possa ser seguido por iniciantes, é altamente aconselhado "
-"completar :ref:`doc_your_first_game` se você é novo no Godot e/ou "
-"desenvolvimento de jogos **antes** de prosseguir nesta série de tutoriais."
+"Embora este tutorial possa ser completado por iniciantes, é altamente "
+"recomendável completar :ref:`doc_your_first_2d_game`, se você é novo no "
+"Godot e/ou no desenvolvimento de jogos."
 
 msgid ""
 "**Some experience with making 3D games is required** before going through "
@@ -163,13 +159,12 @@ msgid ""
 "<https://github.com/TwistedTwigleg>`__ and is released under the MIT license."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`__."
 msgstr ""
-"Você pode encontrar o projeto finalizado em`OpenVR GitHub repository "
-"<https://github.com/GodotVR/godot_openvr_fps>`_."
+"Você pode encontrar o projeto terminado no repositório GitHub `OpenVR "
+"<https://github.com/GodotVR/godot_openvr_fps>`__."
 
 msgid "Getting everything ready"
 msgstr "Preparando tudo"
@@ -217,13 +212,12 @@ msgid ""
 "that texture onto a :ref:`MeshInstance <class_MeshInstance>` node."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Before we jump into the tutorial, let's take a moment to talk about how the "
 "nodes used for VR work."
 msgstr ""
-"Antes de entrarmos no editor, queremos planejar como aninharemos os "
-"contêineres com base em nossa imagem do protótipo."
+"Antes de começar o tutorial, vamos parar um momento para falar sobre como "
+"funcionam os nós usados para a RV."
 
 msgid ""
 "The :ref:`ARVROrigin <class_ARVROrigin>` node is the center point of the VR "
@@ -258,7 +252,7 @@ msgid ""
 msgstr ""
 
 msgid "To summarize:"
-msgstr ""
+msgstr "Resumindo:"
 
 msgid ""
 "The :ref:`ARVROrigin <class_ARVROrigin>` node is the center of the VR "
@@ -286,9 +280,8 @@ msgid ""
 "controllers and handle all of the input from the VR controllers."
 msgstr ""
 
-#, fuzzy
 msgid "Starting VR"
-msgstr "Configurando"
+msgstr "Iniciando com RV"
 
 msgid ""
 "Now that we have gone over the VR nodes, let's start working on the project. "
@@ -352,9 +345,8 @@ msgid ""
 "tracking."
 msgstr ""
 
-#, fuzzy
 msgid "Creating the controllers"
-msgstr "Movendo o Jogador"
+msgstr "Criando os controladores"
 
 msgid ""
 "Right now all that the VR user can do is stand around, which isn't really "
@@ -457,9 +449,8 @@ msgid ""
 "drive them."
 msgstr ""
 
-#, fuzzy
 msgid "The code for the VR controllers"
-msgstr "Movendo o Jogador"
+msgstr "O código para os controladores RV"
 
 msgid ""
 "Select the root node of the scene, either ``Right_Controller`` or "
@@ -489,9 +480,8 @@ msgid ""
 "does step-by-step."
 msgstr ""
 
-#, fuzzy
 msgid "Explaining the VR controller code"
-msgstr "Movendo o Jogador"
+msgstr "Explicando o código do controlador RV"
 
 msgid "First, let's go through all the class variables in the script:"
 msgstr "Primeiro, vamos examinar todas as variáveis de classe no script:"
@@ -803,12 +793,12 @@ msgid ""
 "explanation"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "First this function resets the ``controller_velocity`` variable to zero :ref:"
 "`Vector3 <class_Vector3>`."
 msgstr ""
-"Primeiro, definimos ``dir`` como um :ref:`Vector3 <class_Vector3>` vazio."
+"Primeiro esta função redefine a ``controller_velocity`` variável para zero :"
+"ref:`Vector3 <classe_Vector3>``."
 
 msgid ""
 "Then we check to see if there are any stored/cached VR controller velocities "
@@ -1629,7 +1619,7 @@ msgid ""
 msgstr ""
 
 msgid "Final notes"
-msgstr ""
+msgstr "Notas finais"
 
 msgid ""
 "Now you have fully working VR controllers that can move around the "
@@ -1645,4 +1635,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

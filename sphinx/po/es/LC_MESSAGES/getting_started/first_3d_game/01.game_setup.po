@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Setting up the game area"
-msgstr "Configurando la escena"
+msgstr "Configurando el área de juego"
 
 msgid ""
 "In this first part, we're going to set up the game area. Let's get started "
@@ -51,7 +50,6 @@ msgstr ""
 msgid "|image1|"
 msgstr "|image1|"
 
-#, fuzzy
 msgid "image1"
 msgstr "|image1|"
 
@@ -69,19 +67,15 @@ msgstr ""
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "|image2|"
+msgstr "image2"
 
-#, fuzzy
 msgid "Click *Import & Edit* to open the project in the editor."
-msgstr ""
-"Haga clic en **Instalar y editar ** y el proyecto se abrirá en el editor."
+msgstr "Haga clic en *Importar y editar* para abrir el proyecto en el editor."
 
 msgid "|image3|"
 msgstr "|image3|"
 
-#, fuzzy
 msgid "image3"
 msgstr "|image3|"
 
@@ -96,9 +90,8 @@ msgstr ""
 msgid "|image4|"
 msgstr "|image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "|image4|"
+msgstr "image4"
 
 msgid ""
 "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that "
@@ -107,11 +100,9 @@ msgstr ""
 "Hay dos modelos 3D, ``player.glb`` y ``mob.glb``, algunos materiales que "
 "pertenecen a estos modelos y una pista de música."
 
-#, fuzzy
 msgid "Setting up the playable area"
-msgstr "Configurando el proyecto"
+msgstr "Configurando el área jugable"
 
-#, fuzzy
 msgid ""
 "We're going to create our main scene with a plain *Node* as its root. In the "
 "*Scene* dock, click the *Add Node* button represented by a \"+\" icon in the "
@@ -123,22 +114,20 @@ msgstr ""
 "panel *Escena*, haga clic en el botón *Agregar nodo* representado por un "
 "icono \"+\" en la parte superior izquierda y haga doble clic en *Nodo*. "
 "Nombre el nodo \"Main\". Alternativamente, para agregar un nodo a la escena, "
-"puede presionar :kbd:`Ctrl + a` (o :kbd:`Cmd + a` en MacOS)."
+"puede presionar :kbd:`Ctrl + a` (o :kbd:`Cmd + a` en macOS)."
 
 msgid "|image5|"
 msgstr "|image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "|image5|"
+msgstr "image5"
 
-#, fuzzy
 msgid ""
 "Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
 "on macOS)."
 msgstr ""
-"Guarda la escena. Haz clic en Escenas -> Guardar escena, o presiona "
-"``Ctrl+S`` en Windows/Linux o ``Comando + S`` en Mac."
+"Guarda la escena como ``Main.tscn`` presionando :kbd:`Ctrl + s` (o :kbd:`Cmd "
+"+ s` en macOS)."
 
 msgid ""
 "We'll start by adding a floor that'll prevent the characters from falling. "
@@ -157,25 +146,23 @@ msgstr ""
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "|image6|"
+msgstr "image6"
 
 msgid ""
 "A warning sign next to the *CollisionShape* appears because we haven't "
 "defined its shape. If you click the icon, a popup appears to give you more "
 "information."
 msgstr ""
-"Aparece una señal de advertencia junto a *CollisionShape* porque no hemos "
-"definido su forma. Si hace clic en el icono, aparece una ventana emergente "
-"para brindarle más información."
+"Aparece un signo de advertencia junto a *CollisionShape* porque no hemos "
+"definido su forma. Si haces clic en el icono, aparecerá una ventana "
+"emergente para brindarte más información."
 
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "|image7|"
+msgstr "image7"
 
 msgid ""
 "To create a shape, with the *CollisionShape* selected, head to the "
@@ -189,9 +176,8 @@ msgstr ""
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "|image8|"
+msgstr "image8"
 
 msgid ""
 "The box shape is perfect for flat ground and walls. Its thickness makes it "
@@ -208,19 +194,17 @@ msgid ""
 "the resource. Set its *Extents* to ``30`` on the X axis, ``1`` for the Y "
 "axis, and ``30`` for the Z axis."
 msgstr ""
-"La estructura alámbrica de un cuadro aparece en la ventana gráfica con tres "
-"puntos naranjas. Puede hacer clic y arrastrarlos para editar la extensión de "
-"la forma de forma interactiva. También podemos establecer con precisión el "
-"tamaño en el inspector. Haga clic en *BoxShape* para expandir el recurso. "
-"Establezca sus *Extents* en ``30`` en el eje X, ``1`` para el eje Y y ``30`` "
-"para el eje Z."
+"Una box wireframe aparece en el viewport con tres puntos naranjas. Puede "
+"hacer clic en ellos y arrastrarlos para editar la extensión de la forma de "
+"forma interactiva. También podemos establecer con precisión el tamaño en el "
+"inspector. Haz clic en *BoxShape* para expandir el recurso. Ajusta sus "
+"*Extents* a ``30`` en el eje X, ``1`` para el eje Y, y ``30`` para el eje Z."
 
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "|image9|"
+msgstr "image9"
 
 msgid ""
 "In 3D, translation and size units are in meters. The box's total size is "
@@ -245,9 +229,8 @@ msgstr ""
 msgid "|image10|"
 msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "|image10|"
+msgstr "image10"
 
 msgid ""
 "In the *Inspector*, click on the field next to *Mesh* and create a "
@@ -259,9 +242,8 @@ msgstr ""
 msgid "|image11|"
 msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "|image11|"
+msgstr "image11"
 
 msgid ""
 "Once again, it's too small by default. Click the cube icon to expand the "
@@ -278,9 +260,8 @@ msgstr ""
 msgid "|image12|"
 msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "|image12|"
+msgstr "image12"
 
 msgid ""
 "You should see a wide grey slab that covers the grid and blue and red axes "
@@ -304,9 +285,8 @@ msgstr ""
 msgid "|image13|"
 msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "|image13|"
+msgstr "image13"
 
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
@@ -319,9 +299,8 @@ msgstr ""
 msgid "|image14|"
 msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "|image14|"
+msgstr "image14"
 
 msgid ""
 "Move the ground down ``1`` meter. A label in the bottom-left corner of the "
@@ -330,13 +309,11 @@ msgstr ""
 "Mueve el suelo hacia abajo ``1`` metro. Una etiqueta en la esquina inferior "
 "izquierda de la ventana gráfica le indica cuánto está desplazando el nodo."
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
-#, fuzzy
 msgid "image15"
-msgstr "|image1|"
+msgstr "image15"
 
 msgid ""
 "Moving the *Ground* node down moves both children along with it. Ensure you "
@@ -365,24 +342,20 @@ msgstr ""
 "En el *Inspector*, active *Shadow -> Activado* haciendo clic en la casilla "
 "de verificación."
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
-#, fuzzy
 msgid "image16"
-msgstr "|image1|"
+msgstr "image16"
 
 msgid "At this point, your project should look like this."
 msgstr "En este punto, tu proyecto debería verse así."
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
-#, fuzzy
 msgid "image17"
-msgstr "|image1|"
+msgstr "image17"
 
 msgid ""
 "That's our starting point. In the next part, we will work on the player "

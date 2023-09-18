@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,7 +76,6 @@ msgstr ""
 msgid "3D content"
 msgstr "3D контент"
 
-#, fuzzy
 msgid ""
 "Unlike 2D, where loading image content and drawing is straightforward, 3D is "
 "a little more difficult. The content needs to be created with special 3D "
@@ -86,9 +85,9 @@ msgid ""
 msgstr ""
 "В отличие от 2D, где загрузка содержимого изображения и рисования проста, 3D "
 "немного сложнее. Контент должен быть создан с помощью специальных 3D-"
-"инструментов (обычно называемых DCC) и экспортирован в обменный формат "
-"файла, чтобы быть импортированным в Godot (3D-форматы не так "
-"стандартизированы, как изображения)."
+"инструментов (обычно называемых инструментами создания цифрового контента, "
+"или DCC) и экспортирован в обменный формат файла для импорта в Godot. Это "
+"необходимо, поскольку 3D-форматы не так стандартизированы, как изображения."
 
 msgid "DCC-created models"
 msgstr "Модели, созданные DCC"
@@ -225,20 +224,17 @@ msgstr ""
 msgid "Coordinate system"
 msgstr "Система координат"
 
-#, fuzzy
 msgid ""
 "Godot uses the `metric <https://en.wikipedia.org/wiki/Metric_system>`__ "
 "system for everything in 3D, with 1 unit being equal to 1 meter. Physics and "
 "other areas are tuned for this scale. Therefore, attempting to use a "
 "different scale is usually a bad idea (unless you know what you are doing)."
 msgstr ""
-"Godot использует `метрическую <https://ru.wikipedia.org/wiki/"
-"%D0%9C%D0%B5%D1%82%D1%80%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0_%D0%BC%D0%B5%D1%80>`__ "
-"систему для всего. 3D-физика и прочие области настроены на неё, так что "
-"попытка использовать другую размерность обычно плохая идея (если вы точно не "
-"уверены что делаете)."
+"Godot использует `метрическую <https://en.wikipedia.org/wiki/"
+"Metric_system>`__ систему для всего. 3D-физика и прочие области настроены на "
+"неё, так что попытка использовать другую размерность обычно плохая идея "
+"(если вы точно не уверены что делаете)."
 
-#, fuzzy
 msgid ""
 "When working with 3D assets, it's always best to work in the correct scale "
 "(set your DCC to metric). Godot allows scaling post-import and, while this "
@@ -246,10 +242,10 @@ msgid ""
 "precision issues (and thus, glitches or artifacts) in delicate areas such as "
 "rendering or physics. Make sure your artists always work in the right scale!"
 msgstr ""
-"Во время работы с 3D ассетами, всегда лучше использовать правильный масштаб "
+"Во время работы с 3D-ассетами, всегда лучше использовать правильный масштаб "
 "(установите ваш DCC на метры). Godot позволяет масштабировать их после "
 "импорта , это работает в большинстве случаев, но изредка могут случаться "
-"сбои вычислений плавающей точки (и от них, глюки и артефакты) в определенных "
+"сбои вычислений плавающей точки (и от них, глюки и артефакты) в определённых "
 "областях, таких как отображение или физика, так что убедитесь что ваши "
 "художники всегда работают в правильном масштабе!"
 
@@ -398,15 +394,16 @@ msgstr ""
 msgid "Lights"
 msgstr "Света"
 
-#, fuzzy
 msgid ""
 "Godot has a limit of up to 8 lights per mesh. Aside from that, there is no "
 "limitation on the number of lights, nor of types of lights, in Godot. As "
 "many as desired can be added, as long as performance allows, and no more "
 "than 8 lights shine on a single mesh."
 msgstr ""
-"В Godot нет ограничений ни на количество источников света, ни на их типы. "
-"Можно добавить столько, сколько нужно (если достаточно производительности)."
+"Godot имеет ограничение до 8 светильников на сетку. Кроме этого, в Godot нет "
+"ограничений ни на количество огней, ни на типы огней. Их можно добавлять "
+"сколько угодно, если позволяет производительность, и не более 8 огней светят "
+"на одну сетку."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

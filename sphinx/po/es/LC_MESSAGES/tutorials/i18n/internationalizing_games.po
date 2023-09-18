@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,14 +177,15 @@ msgstr ""
 "pueden agregarse o eliminarse durante el tiempo de ejecución, y también se "
 "puede cambiar el idioma actual."
 
-#, fuzzy
 msgid "Testing translations"
-msgstr "Importar traducciones"
+msgstr "Probando traducciones"
 
 msgid ""
 "You may want to test a project's translation before releasing it. Godot "
 "provides two ways to do this."
 msgstr ""
+"Es posible que desees probar la traducción de un proyecto antes de lanzarlo. "
+"Godot ofrece dos formas de hacerlo."
 
 msgid ""
 "First, in the Project Settings, under **Input Devices > Locale**, there is a "
@@ -192,14 +193,22 @@ msgid ""
 "want to test. Godot will run the project with that locale when the project "
 "is run (either from the editor or when exported)."
 msgstr ""
+"Primero, en la configuración del proyecto, en **Dispositivos de entrada > "
+"Localización**, hay una propiedad llamada **Test**. Configura esta propiedad "
+"con el código de idioma de la localización que deseas probar. Godot "
+"ejecutará el proyecto con esa localización cuando se ejecute el proyecto (ya "
+"sea desde el editor o al exportarlo)."
 
 msgid ""
 "Keep in mind that since this is a project setting, it will show up in "
 "version control when it is set to a non-empty value. Therefore, it should be "
 "set back to an empty value before committing changes to version control."
 msgstr ""
+"Ten en cuenta que, dado que esta es una configuración del proyecto, "
+"aparecerá en el control de versiones cuando se establezca en un valor no "
+"vacío. Por lo tanto, debes asegurarte de restablecerlo a un valor vacío "
+"antes de realizar cambios y confirmarlos en el control de versiones."
 
-#, fuzzy
 msgid ""
 "Translations can also be tested when running Godot from the command line. "
 "For example, to test a game in French, the following argument can be "

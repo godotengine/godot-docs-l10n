@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Collision shapes (3D)"
-msgstr "Formas de colisão"
+msgstr "Formas de colisão (3D)"
 
-#, fuzzy
 msgid "This guide explains:"
-msgstr "Imprimirá:"
+msgstr "Este guia explica:"
 
 msgid "The types of collision shapes available in 3D in Godot."
 msgstr ""
@@ -31,9 +29,8 @@ msgstr ""
 msgid "Using a convex or a concave mesh as a collision shape."
 msgstr ""
 
-#, fuzzy
 msgid "Performance considerations regarding 3D collisions."
-msgstr "Ferramentas de monitoramento de performance."
+msgstr "Considerações de desempenho em relação às colisões 3D."
 
 msgid ""
 "Godot provides many kinds of collision shapes, with different performance "
@@ -52,29 +49,23 @@ msgid ""
 "have to worry about them overlapping. They won't \"collide\" with each other."
 msgstr ""
 
-#, fuzzy
 msgid "Primitive collision shapes"
-msgstr "Formas de Colisão Visíveis"
+msgstr "Formas primitivas de colisão"
 
-#, fuzzy
 msgid "Godot provides the following primitive collision shape types:"
-msgstr "Godot suporta os seguintes *formatos de arquivo de cena* 3D:"
+msgstr "Godot fornece os seguintes tipos de formas primitivas de colisão:"
 
-#, fuzzy
 msgid ":ref:`class_BoxShape`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`class_BoxShape`"
 
-#, fuzzy
 msgid ":ref:`class_SphereShape`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`class_SphereShape`"
 
-#, fuzzy
 msgid ":ref:`class_CapsuleShape`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`class_CapsuleShape`"
 
-#, fuzzy
 msgid ":ref:`class_CylinderShape`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`class_CylinderShape`"
 
 msgid ""
 "You can represent the collision of most smaller objects using one or more "
@@ -89,9 +80,8 @@ msgid ""
 "often provide better performance as well."
 msgstr ""
 
-#, fuzzy
 msgid "Convex collision shapes"
-msgstr "Formas de colisão"
+msgstr "Formas de colisão convexas"
 
 msgid ""
 ":ref:`Convex collision shapes <class_ConvexPolygonShape>` are a compromise "
@@ -133,9 +123,8 @@ msgid ""
 "faster than using a single concave collision shape."
 msgstr ""
 
-#, fuzzy
 msgid "Concave or trimesh collision shapes"
-msgstr "Formas de colisão"
+msgstr "Formas de colisão côncavas ou trimesh"
 
 msgid ""
 ":ref:`Concave collision shapes <class_ConcavePolygonShape>`, also called "
@@ -230,4 +219,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

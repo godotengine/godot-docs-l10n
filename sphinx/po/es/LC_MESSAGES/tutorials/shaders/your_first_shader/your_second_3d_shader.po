@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your second 3D shader"
-msgstr "Tu primer shader"
+msgstr "Tu segundo shader 3D"
 
 msgid ""
 "From a high-level, what Godot does is give the user a bunch of parameters "
@@ -252,18 +251,17 @@ msgstr ""
 "producto del punto entre ellos es una forma práctica de saber cuando estás "
 "mirando a la superficie de frente o en un ángulo de visión."
 
-#, fuzzy
 msgid ""
 "And mix it into both ``ROUGHNESS`` and ``ALBEDO``. This is the benefit of "
 "ShaderMaterials over SpatialMaterials. With SpatialMaterial, we could set "
 "these properties with a texture, or to a flat number. But with shaders we "
 "can set them based on any mathematical function that we can dream up."
 msgstr ""
-"Y mezclarlo en ambos, ``ROUGHNESS`` y ``ALBEDO``. Este es el beneficio de "
-"los ShaderMaterials sobre los SpatialMaterials. Con los SpatialMaterials, "
-"podríamos establecer estas propiedades con una textura, o con un número "
-"plano. Pero con los shaders podemos establecerlos basados en cualquier "
-"función matemática que podamos imaginar."
+"Y mézclalo tanto con ``ROUGHNESS`` como con ``ALBEDO``. Este es el beneficio "
+"de ShaderMaterials sobre SpatialMaterials. Con SpatialMaterial, podríamos "
+"configurar estas propiedades con una textura o con un número fijo. Pero con "
+"los shaders, podemos configurarlos basándonos en cualquier función "
+"matemática que podamos imaginar."
 
 msgid ""
 "And now, with only 5 lines of code, you can have complex looking water. Now "
@@ -409,9 +407,8 @@ msgstr ""
 "Ahora podemos reemplazar el contenido de nuestra función de ``height()`` con "
 "``wave()``."
 
-#, fuzzy
 msgid "Using this, you get:"
-msgstr "Usando esto tendrás:"
+msgstr "Usando esto, obtendrás:"
 
 msgid ""
 "The shape of the sin wave is too obvious. So let's spread the waves out a "

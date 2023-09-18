@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -356,6 +356,34 @@ msgid "Clip space to view space transform."
 msgstr ""
 
 #, fuzzy
+msgid "in vec3 **NODE_POSITION_WORLD**"
+msgstr "in vec2 **POINT_COORD**"
+
+msgid "Node position, in world space."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **NODE_POSITION_VIEW**"
+msgstr "in vec3 **VIEW**"
+
+msgid "Node position, in view space."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **CAMERA_POSITION_WORLD**"
+msgstr "in vec3 **ATTENUATION**"
+
+msgid "Camera position, in world space."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
+msgstr "in vec3 **ATTENUATION**"
+
+msgid "Camera direction, in world space."
+msgstr ""
+
+#, fuzzy
 msgid "inout vec3 **VERTEX**"
 msgstr "inout vec3 **VERTEX**"
 
@@ -363,7 +391,7 @@ msgid "Vertex in local coordinates."
 msgstr ""
 
 #, fuzzy
-msgid "out vec4  **POSITION**"
+msgid "out vec4 **POSITION**"
 msgstr "out vec4  **POSITION**"
 
 msgid "If written to, overrides final vertex position."
@@ -467,15 +495,6 @@ msgid ""
 "corresponding functionality."
 msgstr ""
 
-msgid "Below are examples of common variables calculated using the built-ins:"
-msgstr ""
-
-msgid ""
-"A commonly used alternative to ``WORLD_MATRIX[3].xyz`` is to use ``vec3 "
-"origin = (WORLD_MATRIX * vec4(0,0,0,1)).xyz``. It is more efficient to use "
-"``WORLD_MATRIX[3].xyz`` as it avoids the matrix multiplication."
-msgstr ""
-
 #, fuzzy
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
@@ -497,6 +516,18 @@ msgstr "in mat4 **PROJECTION_MATRIX**"
 #, fuzzy
 msgid "in mat4 **INV_PROJECTION_MATRIX**"
 msgstr "in mat4 **INV_PROJECTION_MATRIX**"
+
+msgid "Node world space position."
+msgstr ""
+
+msgid "Node view space position."
+msgstr ""
+
+msgid "Camera world space position."
+msgstr ""
+
+msgid "Camera world space direction."
+msgstr ""
 
 #, fuzzy
 msgid "in vec3 **VERTEX**"
@@ -821,7 +852,10 @@ msgstr "Albedo di base."
 msgid "in vec3 **LIGHT_COLOR**"
 msgstr "in vec3 **LIGHT_COLOR**"
 
-msgid "Color of light multiplied by energy."
+msgid ""
+"Color of light multiplied by ``energy * PI``. The ``PI`` multiplication is "
+"present because physically-based lighting models include a division by "
+"``PI``."
 msgstr ""
 
 msgid "in float **ROUGHNESS**"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,6 @@ msgstr ""
 "utilizar :ref:`Node._unhandled_input() <class_Node_method__unhandled_input>` "
 "porque permite que la GUI intercepte los eventos previamente."
 
-#, fuzzy
 msgid ""
 "Second, it will try to feed the input to the GUI, and see if any control can "
 "receive it. If so, the :ref:`Control <class_Control>` will be called via the "
@@ -168,7 +167,6 @@ msgstr ""
 "más. La llamada a _unhandled_input es ideal para eventos de gameplay de "
 "pantalla completa que deben ser ignorados si hay elementos de GUI activos."
 
-#, fuzzy
 msgid ""
 "If no one wanted the event so far, and a :ref:`Camera <class_Camera>` is "
 "assigned to the Viewport with :ref:`Object Picking "
@@ -181,14 +179,17 @@ msgid ""
 "relevant physics object (bodies receive this callback by default, but areas "
 "do not. This can be configured through :ref:`Area <class_Area>` properties)."
 msgstr ""
-"Si nadie ha querido realizar el evento hasta ahora, y una :ref:`Camera "
-"<class_Camera>` es asignada al Viewport, se emitirá un rayo al mundo de la "
-"física (en la dirección correspondiente al rayo del clic). Si este rayo "
-"golpea un objeto, llamará a la función :ref:`CollisionObject._input_event() "
-"<class_CollisionObject_method__input_event>` en el objeto físico "
-"correspondiente (los cuerpos reciben esta llamada de retorno por defecto, "
-"pero las áreas no lo hacen. Esto puede configurarse a través de las "
-"propiedades de :ref:`Area <class_Area>`)."
+"Si hasta ahora nadie ha querido el evento y se le asigna una :ref:`Cámara "
+"<class_Camera>` a la Vista con la opción :ref:`Object Picking "
+"<class_viewport_property_physics_object_picking>` activada, se lanzará un "
+"rayo al mundo físico (en la dirección del clic). (Para la vista raíz, esto "
+"también se puede habilitar en :ref:`Configuración del Proyecto "
+"<class_ProjectSettings_property_physics/common/enable_object_picking>`). Si "
+"este rayo golpea un objeto, se llamará a la función :ref:`CollisionObject."
+"_input_event() <class_CollisionObject_method__input_event>` en el objeto "
+"físico relevante (por defecto, los cuerpos reciben esta devolución de "
+"llamada, pero las áreas no lo hacen. Esto se puede configurar a través de "
+"las propiedades de :ref:`Área <class_Area>`)."
 
 msgid ""
 "Finally, if the event was unhandled, it will be passed to the next Viewport "

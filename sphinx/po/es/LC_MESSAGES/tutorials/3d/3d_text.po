@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "3D text"
-msgstr "Depth texture"
+msgstr "Texto 3D"
 
 msgid "Introduction"
 msgstr "Introducción"
@@ -29,20 +28,23 @@ msgid ""
 "3D scene and not just in the HUD. Godot provides two methods to do this. The "
 "Label3D node and the text mesh for a MeshInstance node."
 msgstr ""
+"En un proyecto, puede haber momentos en los que se necesite crear texto como "
+"parte de una escena 3D y no solo en la HUD. Godot proporciona dos métodos "
+"para hacer esto: el nodo Label3D y la malla de texto para un nodo "
+"MeshInstance."
 
-#, fuzzy
 msgid ""
 "This page does **not** cover how to display a GUI scene in a 3D environment. "
 "For information on how to do that see `this <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/viewport/2d_in_3d>`__ demo project."
 msgstr ""
-"Ver `demostración de escalado del viewport 3D <https://github.com/"
-"godotengine/godot-demo-projects/tree/master/viewport/3d_scaling>`__ para "
-"conocer algunos ejemplos."
+"Esta página **no** cubre cómo mostrar una escena de GUI en un entorno 3D. "
+"Para obtener información sobre cómo hacerlo, consulta este proyecto de "
+"demostración en `este enlace <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/viewport/2d_in_3d>`__."
 
-#, fuzzy
 msgid "Label3D"
-msgstr "Etiquetas"
+msgstr "Etiqueta 3D"
 
 msgid ""
 "Label3D behaves like a label node but in a 3D space. Unlike label node this "
@@ -50,6 +52,10 @@ msgid ""
 "customizable and uses the same DynamicFont and BitmapFont subresources "
 "control nodes use."
 msgstr ""
+"Label3D se comporta como un nodo de etiqueta, pero en un espacio 3D. A "
+"diferencia del nodo de etiqueta, este no puede heredar las propiedades de un "
+"tema de GUI. Sin embargo, su apariencia sigue siendo personalizable y "
+"utiliza los mismos nodos de control de sub-recursos DynamicFont y BitmapFont."
 
 msgid ""
 "Label3D has minimal interaction with a 3D environment, it can be lit up and "
@@ -60,10 +66,17 @@ msgid ""
 "`this page <doc_3d_rendering_limitations_transparency_sorting>` for more "
 "information."
 msgstr ""
+"Label3D tiene una interacción mínima con un entorno 3D. Puede ser iluminado "
+"y sombreado por fuentes de luz si se habilita la bandera de sombreado, pero "
+"no proyectará una sombra, incluso si se activa la opción de proyección de "
+"sombras en la configuración de GeometryInstance3D de los nodos. Esto se debe "
+"a que el nodo es una malla cuadrangular (un glifo por cuadrado) con texturas "
+"transparentes y tiene las mismas limitaciones que Sprite3D. Consulta :ref:"
+"`esta página <doc_3d_rendering_limitations_transparency_sorting>` para "
+"obtener más información."
 
-#, fuzzy
 msgid "Text mesh"
-msgstr "Siguientes pasos"
+msgstr "Malla de texto"
 
 msgid ""
 "Text meshes have similarities to Label3D. They display text in a 3D scene, "
@@ -72,11 +85,18 @@ msgid ""
 "can have a material applied to it. Here is an example of a texture and how "
 "it's applied to the mesh."
 msgstr ""
+"Las mallas de texto tienen similitudes con Label3D. Muestran texto en una "
+"escena 3D y utilizan el mismo sub-recurso DynamicFont. Sin embargo, el texto "
+"es en 3D y tiene las propiedades de una malla. Una malla de texto proyecta "
+"sombras sobre el entorno y se le puede aplicar un material. Aquí tienes un "
+"ejemplo de una textura y cómo se aplica a la malla."
 
 msgid ""
 "There are two limitations to text mesh. It can't use bitmap fonts, or fonts "
 "with self intersection."
 msgstr ""
+"Existen dos limitaciones para las mallas de texto. No pueden utilizar "
+"fuentes de mapa de bits (bitmap fonts) ni fuentes con auto-intersección."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

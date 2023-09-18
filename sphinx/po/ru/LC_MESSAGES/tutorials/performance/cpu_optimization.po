@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -228,6 +228,14 @@ msgid ""
 "access memory in a linear fashion (like a continuous list), then the cache "
 "will work optimally and the CPU will be able to work as fast as possible."
 msgstr ""
+"Понимание кэширования также имеет решающее значение для оптимизации "
+"процессора. Если у вас есть алгоритм (рутина), который загружает небольшие "
+"биты данных из произвольно распределенных областей основной памяти, это "
+"может привести к большому количеству пропусков кэша, и большую часть времени "
+"процессор будет ждать данных, вместо того чтобы выполнять какую-либо работу. "
+"Вместо этого, если вы можете сделать доступ к данным локализованным или, еще "
+"лучше, обращаться к памяти линейно (как к непрерывному списку), тогда кэш "
+"будет работать оптимально, а процессор сможет работать максимально быстро."
 
 msgid ""
 "Godot usually takes care of such low-level details for you. For example, the "
@@ -407,6 +415,15 @@ msgid ""
 "tick. It's orders of magnitude faster, so this can be a significant "
 "performance win while also reducing jitter."
 msgstr ""
+"Решением проблемы джиттера является использование *интерполяции с "
+"фиксированным временным интервалом*, которая включает в себя сглаживание "
+"отрисованных позиций и поворотов в течение нескольких кадров для "
+"соответствия физике. Вы можете реализовать это самостоятельно или "
+"использовать `аддон <https://github.com/lawnjelly/smoothing-addon>`__. С "
+"точки зрения производительности, интерполяция - очень дешёвая операция по "
+"сравнению с выполнением физического тика. Она на порядки быстрее, так что "
+"это может быть значительным выигрышем в производительности, а также "
+"уменьшением джиттера."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

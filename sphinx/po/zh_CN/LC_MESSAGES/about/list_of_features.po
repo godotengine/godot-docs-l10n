@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -153,7 +153,7 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
-"可以从\\ :ref:`素材库 <doc_what_is_assetlib>`\\ 下载编辑器插件，扩展编辑器的"
+"可以从\\ :ref:`资产库 <doc_what_is_assetlib>`\\ 下载编辑器插件，扩展编辑器的"
 "功能。"
 
 msgid ""
@@ -167,7 +167,7 @@ msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the project manager and import them directly."
 msgstr ""
-"在项目管理器中，\\ :ref:`从素材库下载项目 <doc_using_assetlib_editor>`\\ 并直"
+"在项目管理器中，\\ :ref:`从资产库下载项目 <doc_using_assetlib_editor>`\\ 并直"
 "接导入。"
 
 msgid "2D graphics"
@@ -367,10 +367,11 @@ msgstr "*GLES3：*\\ 基于距离的拥有自动层级细节的视差/浮雕透�
 msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "*GLES3：*\\ 次表面散射和透射率。"
 
+#, fuzzy
 msgid ""
-"*GLES3:* Refraction with support for material roughness (resulting in blurry "
-"refraction). On GLES2, refraction is still functional but lacks support for "
-"material roughness."
+"*GLES3:* Screen-space refraction with support for material roughness "
+"(resulting in blurry refraction). On GLES2, refraction is still functional "
+"but lacks support for material roughness."
 msgstr ""
 "*GLES3：*\\ 支持材质粗糙度的折射（达到模糊折射的效果）。在 GLES2 中，折射仍然"
 "有小，但不支持材质粗糙度。"
@@ -495,7 +496,7 @@ msgid ""
 msgstr "支持基于相机角度的自动深度雾颜色(依据日光的颜色)."
 
 msgid "Optional transmittance to make lights more visible in the fog."
-msgstr "可选透光率, 使灯光在雾中更清晰可见."
+msgstr "可选透射率，可以使灯光在雾中更清晰可见。"
 
 msgid "**Particles:**"
 msgstr "**粒子：**"

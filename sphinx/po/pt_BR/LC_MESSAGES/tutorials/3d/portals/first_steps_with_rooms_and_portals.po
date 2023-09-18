@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,8 @@ msgstr ""
 msgid "First steps with Rooms and Portals"
 msgstr ""
 
-#, fuzzy
 msgid "The RoomManager"
-msgstr "Gerenciador de Projetos"
+msgstr "O RoomManager"
 
 msgid ""
 "Anytime you want to use the portal system, you need to include a special "
@@ -32,9 +31,8 @@ msgid ""
 "used at runtime to perform occlusion culling and other tasks."
 msgstr ""
 
-#, fuzzy
 msgid "Room Conversion"
-msgstr "Controle de versão do Godot"
+msgstr "Room Conversion"
 
 msgid ""
 "This conversion must take place every time you want to activate the system. "
@@ -62,25 +60,31 @@ msgid ""
 "conversion will fail, and you will see a warning dialog box."
 msgstr ""
 
-#, fuzzy
 msgid "The RoomList"
-msgstr "Os inimigos"
+msgstr "A RoomList"
 
 msgid ""
 "Before we create any rooms, we must first create a node to be the parent of "
 "all the static objects, rooms, roomgroups, and so on in our level. This node "
 "is referred to as the the ``RoomList``."
 msgstr ""
+"Antes de criarmos qualquer sala, devemos primeiro criar um nó para ser o pai "
+"de todos os objetos estáticos, salas, grupos de salas e assim por diante em "
+"nosso nível. Esse nó é chamado de ``RoomList``."
 
 msgid ""
 "The roomlist is **not** a special node type – it can just be a regular "
 "Spatial."
 msgstr ""
+"A lista de quartos é ** não** um tipo de nó especial – pode ser apenas um "
+"Spatial normal."
 
 msgid ""
 "You will need to assign the roomlist node in the RoomManager so that it "
 "knows where to find the rooms."
 msgstr ""
+"Você precisará atribuir o nó roomlist no RoomManager para que ele saiba onde "
+"encontrar os quartos."
 
 msgid ""
 "Why do we use a specific branch of the scene tree and not the scene root? "
@@ -96,9 +100,8 @@ msgstr ""
 msgid "Rooms"
 msgstr "Quartos"
 
-#, fuzzy
 msgid "What is a room?"
-msgstr "O que é uma área?"
+msgstr "O que é uma sala?"
 
 msgid ""
 ":ref:`Room<class_Room>`\\ s are a way of spatially partitioning your level "
@@ -114,9 +117,8 @@ msgid ""
 "With a little imagination, you can use the system in almost any scenario."
 msgstr ""
 
-#, fuzzy
 msgid "Why convex?"
-msgstr "Por que exportar?"
+msgstr "Por que convexo?"
 
 msgid ""
 "Rooms are defined as convex volumes (or *convex hulls*) because it's trivial "
@@ -133,7 +135,7 @@ msgid ""
 msgstr ""
 
 msgid "Why non-overlapping?"
-msgstr ""
+msgstr "Por que não sobrepor?"
 
 msgid ""
 "If two rooms overlap, and a camera or player is in this overlapping zone, "
@@ -169,14 +171,19 @@ msgid ""
 "like any other. You can place objects within the room by making them "
 "children and grand-children of the Room node."
 msgstr ""
+"Um :ref:`Room<class_Room>` é um tipo de nó que pode ser adicionado a árvore "
+"de cenas como qualquer outro. Você pode colocar objetos na sala e fazer eles "
+"serem filhos e netos do nó Room."
 
 msgid "How do I define the shape and position of my room convex hull?"
-msgstr ""
+msgstr "Como eu defino a forma e a posição da minha sala casco convexo?"
 
 msgid ""
 "Because defining the room bound is the most important aspect of the system, "
 "there are THREE methods available to define the shape of a room in Godot:"
 msgstr ""
+"Porque definir os limites da sala é o mais importante aspecto do sistema, "
+"existem três métodos disponíveis para definir o formato de uma sala no Godot:"
 
 msgid ""
 "Use the geometry of the objects contained within the room to automatically "
@@ -255,11 +262,10 @@ msgid ""
 msgstr ""
 
 msgid "Portal linking"
-msgstr ""
+msgstr "Ligação de portal"
 
-#, fuzzy
 msgid "There are two ways to specify which room the portal should link to:"
-msgstr "Há algumas coisas para observar:"
+msgstr "Há duas maneiras de especificar a que sala o portal deve se conectar:"
 
 msgid ""
 "Leave the **Linked Room** in the inspector blank. The system will attempt to "
@@ -281,7 +287,7 @@ msgid ""
 msgstr ""
 
 msgid "Trying it out"
-msgstr ""
+msgstr "Experimentando"
 
 msgid ""
 "By now you should be able to create a couple of rooms, add some nodes such "
@@ -299,4 +305,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

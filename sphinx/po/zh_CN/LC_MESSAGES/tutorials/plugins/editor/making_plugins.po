@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -129,14 +129,13 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"In addition to the EditorPlugin script, any other script that your plugin "
-"uses must *also* be a tool. * Any GDScript without ``tool`` imported into "
-"the editor will act like an empty file! * Any C# class without ``[Tool]`` "
-"won't be reloaded when the project is built forcing you to re-enable the "
-"plugin!"
+"In addition to the EditorPlugin script, any other GDScript that your plugin "
+"uses must *also* be a tool. Any GDScript without ``tool`` imported into the "
+"editor will act like an empty file!"
 msgstr ""
-"除了这个 EditorPlugin 脚本之外，插件用到的其他 GDScript *也* 必须是工具脚本。"
-"没有 ``tool`` 的 GDScript 在导入编辑器后都会像空文件一样！"
+"除了 EditorPlugin 脚本之外，插件用到的其他 GDScript *也*\\ 必须是工具脚"
+"本。\\ *没有 ``tool`` 的 GDScript 在导入编辑器后都会像空文件一样！*\\ 构建项"
+"目时不会重新加载没有 ``[Tool]`` 的 C# 类，你就只能重新启用插件了！"
 
 msgid ""
 "It's important to deal with initialization and clean-up of resources. A good "
@@ -358,7 +357,7 @@ msgid ""
 "Library <https://godotengine.org/asset-library/>`_ so that people can "
 "benefit from your work."
 msgstr ""
-"您可以制作自己的插件来帮助自己或在 `素材库 <https://godotengine.org/asset-"
+"您可以制作自己的插件来帮助自己或在 `资产库 <https://godotengine.org/asset-"
 "library/>`_ 中分享它们，以便人们可以从您的工作中受益。"
 
 msgid "Registering autoloads/singletons in plugins"

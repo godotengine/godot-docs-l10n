@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,23 +74,27 @@ msgstr "你也可以通过代码来修改该属性："
 msgid "This is what each mode tells a node to do:"
 msgstr "各个模式对节点的要求是这样的："
 
+#, fuzzy
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
-"The first parent that has a non-Inherit state."
+"The first parent that has a state other than Inherit determines the "
+"effective value that will be used."
 msgstr ""
 "**Inherit（继承）** ：处理与否取决于父、祖父等等节点中第一个非 Inherit 状态的"
 "节点。"
 
+#, fuzzy
 msgid ""
-"**Stop**: Stop the node no matter what (and children in Inherit mode). When "
-"paused this node will not process."
+"**Stop**: If the scene tree is paused, pause the node no matter what (and "
+"children in Inherit mode). When paused, this node *will not* process."
 msgstr ""
 "**Stop（停止）** ：无条件停止节点（以及 Inherit 模式的子节点）。暂停时该节点"
 "不会进行处理。"
 
+#, fuzzy
 msgid ""
-"**Process**: Process the node no matter what (and children in Inherit mode). "
-"Paused or not this node will process."
+"**Process**: Even if the scene tree is paused, process the node no matter "
+"what (and children in Inherit mode). Paused or not, this node *will* process."
 msgstr ""
 "**Process（处理）** ：无条件处理节点（以及 Inherit 模式的子节点）。无论暂停与"
 "否，该节点都会进行处理。"

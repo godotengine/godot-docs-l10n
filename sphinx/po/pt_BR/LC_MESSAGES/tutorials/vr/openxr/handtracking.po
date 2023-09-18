@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -75,9 +75,8 @@ msgid ""
 "`Skeleton <class_Skeleton>` so mesh deformation can be used."
 msgstr ""
 
-#, fuzzy
 msgid "Node based hand tracking"
-msgstr "Nós e Terminologia"
+msgstr "Rastreamento de mão baseado em nó"
 
 msgid ""
 "This implementation is the most versatile as it doesn't require any "
@@ -95,9 +94,8 @@ msgid ""
 "image up above) and will update the position and orientation of its children."
 msgstr ""
 
-#, fuzzy
 msgid "There are two properties here:"
-msgstr "Há 6 tipos de padrões:"
+msgstr "Existem duas propriedades aqui:"
 
 msgid ""
 "`Hand` identifies whether we are tracking the position of the left or right "
@@ -182,6 +180,16 @@ msgid ""
 "hand and may thus be different to the 3D model. After importing the model "
 "into Godot you can add the required scripts to make everything work."
 msgstr ""
+"A melhor maneira de implementar essa lógica é pedir a um artista que modele "
+"uma mão em um software 3D usando as dimensões da mão real e crie uma "
+"armadura para a mão que siga a estrutura óssea exatamente como a "
+"especificação do OpenXR determina na imagem na parte superior deste artigo. "
+"Ao fazer a skin, é preciso tomar cuidado especial, tendo em mente que, se o "
+"rastreamento completo da mão estiver disponível, a distância entre as "
+"articulações será determinada pelo tamanho real da mão do jogador e, "
+"portanto, poderá ser diferente do modelo 3D. Depois de importar o modelo "
+"para o Godot, você pode adicionar os scripts necessários para que tudo "
+"funcione."
 
 msgid ""
 "To place the hand mesh in space a node needs to be added as a child to the :"
@@ -227,7 +235,7 @@ msgid ""
 msgstr ""
 
 msgid "Palm"
-msgstr ""
+msgstr "Palm"
 
 msgid "Wrist"
 msgstr ""
@@ -256,9 +264,8 @@ msgstr ""
 msgid "Index_Distal"
 msgstr ""
 
-#, fuzzy
 msgid "Index_Tip"
-msgstr "Index"
+msgstr "Index_Tip"
 
 msgid "Middle_Metacarpal"
 msgstr ""
@@ -279,13 +286,13 @@ msgid "Ring_Metacarpal"
 msgstr ""
 
 msgid "Ring_Proximal"
-msgstr ""
+msgstr "Ring_Proximal"
 
 msgid "Ring_Intermediate"
 msgstr ""
 
 msgid "Ring_Distal"
-msgstr ""
+msgstr "Ring_Distal"
 
 msgid "Ring_Tip"
 msgstr ""
@@ -315,4 +322,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

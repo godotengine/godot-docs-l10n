@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,6 @@ msgstr ""
 "impossível especificar como converter e alterar os sinalizadores de "
 "importação para texturas, arquivos de áudio, cenas, etc."
 
-#, fuzzy
 msgid ""
 "In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
 "assets (image files, scenes, audio files, fonts, etc) directly in the "
@@ -46,8 +45,8 @@ msgstr ""
 "largar seus assets (arquivos de imagem, cenas, arquivos de áudio, fontes, "
 "etc) diretamente na pasta do projeto (copie-os manualmente com o explorador "
 "de arquivos do SO). O Godot importará automaticamente esses arquivos "
-"internamente e manterá os recursos importados ocultos em uma pasta res://."
-"import."
+"internamente e manterá os recursos importados ocultos em uma pasta ``res://."
+"import``."
 
 msgid ""
 "This means that when trying to access imported assets through code you need "
@@ -142,21 +141,19 @@ msgstr ""
 msgid "Files generated"
 msgstr "Arquivos gerados"
 
-#, fuzzy
 msgid ""
 "Importing will add an extra ``<asset>.import`` file, containing the import "
 "configuration. Make sure to commit these to your version control system!"
 msgstr ""
-"A importação adicionará um arquivo extra <asset>.import, contendo a "
+"A importação adicionará um arquivo extra ``<asset>.import``, contendo a "
 "configuração de importação. Certifique-se de fazer commit destes para o seu "
 "sistema de controle de versão!"
 
-#, fuzzy
 msgid ""
 "Additionally, extra assets will be preset in the hidden ``res://.import`` "
 "folder:"
 msgstr ""
-"Além disso, os assets extras serão predefinidos na pasta res: //.import "
+"Além disso, os recursos extras serão predefinidos na pasta ``res://.import`` "
 "oculta:"
 
 msgid ""
@@ -217,4 +214,4 @@ msgstr ""
 "continue lendo para entender como trabalhar com todos eles!"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

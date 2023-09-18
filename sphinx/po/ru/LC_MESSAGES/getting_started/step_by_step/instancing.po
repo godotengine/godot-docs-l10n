@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,7 +31,6 @@ msgstr ""
 "разделить свой проект на любое количество сцен. Эта функция поможет вам "
 "разбить и организовать различные компоненты вашей игры."
 
-#, fuzzy
 msgid ""
 "You can create as many scenes as you'd like and save them as files with the "
 "``.tscn`` extension, which stands for \"text scene\". The ``Label.tscn`` "
@@ -39,10 +38,10 @@ msgid ""
 "Scenes\" as they pack information about your scene's content."
 msgstr ""
 "Вы можете создать столько сцен, сколько захотите, и сохранить их на диск с "
-"расширением ''.tscn'', которое расшифровывается как «текстовая сцена». Файл "
-"''Label.tscn'' из предыдущего урока был примером. Мы называем эти файлы "
-"«Упакованные сцены», поскольку они упаковывают информацию о содержимом вашей "
-"сцены."
+"расширением ``.tscn``, которое расшифровывается как \"текстовая сцена\". "
+"Файл ``Label.tscn`` из предыдущего урока был примером. Мы называем эти файлы "
+"\"Упакованные сцены\", поскольку они упаковывают информацию о содержимом "
+"вашей сцены."
 
 msgid ""
 "Here's an example of a ball. It's composed of a :ref:`RigidBody2D "
@@ -55,7 +54,6 @@ msgstr ""
 "стена, узла :ref:`Sprite<class_Sprite>` и узла :ref:"
 "`CollisionShape2D<class_CollisionShape2D>`."
 
-#, fuzzy
 msgid ""
 "Once you saved a scene, it works as a blueprint: you can reproduce it in "
 "other scenes as many times as you'd like. Replicating an object from a "
@@ -63,8 +61,8 @@ msgid ""
 msgstr ""
 "После того как вы сохранили сцену, она работает как шаблон: вы можете "
 "воспроизводить ее в других сценах столько раз, сколько захотите. "
-"Воспроизведение объекта из шаблона таким образом называется **instancing** "
-"(наследование)."
+"Воспроизведение объекта из шаблона таким образом называется **наследование** "
+"(instancing)."
 
 msgid ""
 "As we mentioned in the previous part, instanced scenes behave like a node: "
@@ -90,15 +88,14 @@ msgstr ""
 msgid "In practice"
 msgstr "На практике"
 
-#, fuzzy
 msgid ""
 "Let's use instancing in practice to see how it works in Godot. We invite you "
 "to download the ball's sample project we prepared for you: :download:"
 "`instancing.zip <files/instancing.zip>`."
 msgstr ""
-"Давайте воспользуемся инстансингом на практике, чтобы увидеть, как именно он "
-"работает в Godot. Мы приглашаем вас загрузить образец проекта мяча, который "
-"мы подготовили для вас: :download:`instancing.zip <files/instancing.zip>`."
+"Давайте воспользуемся наследованием на практике, чтобы увидеть, как именно "
+"он работает в Godot. Загрузим пример проекта мяча, который мы подготовили "
+"для вас: :download:`instancing.zip <files/instancing.zip>`."
 
 msgid ""
 "Extract the archive on your computer. Then, open Godot, and in the project "
@@ -189,15 +186,14 @@ msgid ""
 msgstr ""
 "Измените свойства одного шара, не затрагивая другие, с помощью Инспектора."
 
-#, fuzzy
 msgid ""
 "Change the default properties of every Ball by opening the ``Ball.tscn`` "
 "scene and making a change to the Ball node there. Upon saving, all instances "
 "of the Ball in the project will see their values update."
 msgstr ""
-"Измените свойства по умолчанию для каждого шара, открыв сцену ''Ball.tscn'' "
-"и внеся изменения в узел Ball. После сохранения все экземпляры Ball в "
-"проекте увидят обновление своих значений."
+"Измените свойства по умолчанию для каждого шара, открыв сцену ``Ball.tscn`` "
+"и внеся изменения в узел Ball. После сохранения, все экземпляры Ball в "
+"проекте получат новые значения параметров."
 
 msgid ""
 "Changing a property on an instance always overrides values from the "

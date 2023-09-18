@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +34,9 @@ msgstr ""
 "HTML5版のGodotエディタに特有の注意点については、 :ref:"
 "`doc_using_the_web_editor` をご覧ください。"
 
+#, fuzzy
 msgid ""
-"Everything I do in the editor or project manager appears delayed by one "
-"frame."
+"Everything I do in the editor or project manager appears delayed by one frame"
 msgstr ""
 "エディタやプロジェクトマネージャーで行うことがすべて、1フレーム分遅れて見え"
 "る。"
@@ -59,9 +59,10 @@ msgstr ""
 "デスクトップやラップトップのメーカーが提供しているものは古い場合がよくあるの"
 "で、代わりにインテルが提供しているグラフィックドライバーを使用してください。"
 
+#, fuzzy
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
-"editor."
+"editor"
 msgstr "エディタ上で3Dカメラを回転させるとグリッドが消えてメッシュが黒くなる。"
 
 msgid ""
@@ -86,7 +87,8 @@ msgstr ""
 "もしNVIDIA Optimusのようにグラフィックカードの切り替えが可能なコンピュータで"
 "あれば、専用グラフィックカードを使ってGodotを実行することができます。"
 
-msgid "The editor or project takes a very long time to start."
+#, fuzzy
+msgid "The editor or project takes a very long time to start"
 msgstr "エディタやプロジェクトの開始に非常に時間がかかる。"
 
 msgid ""
@@ -104,8 +106,9 @@ msgstr ""
 "は、エディタを開く前に問題のある周辺機器を切断する必要があります。その後、再"
 "度周辺機器を接続してください。"
 
+#, fuzzy
 msgid ""
-"Editor tooltips in the Inspector and Node docks blink when they're displayed."
+"Editor tooltips in the Inspector and Node docks blink when they're displayed"
 msgstr ""
 "インスペクタードックとノードドックのエディターツールチップは、表示されると点"
 "滅します。"
@@ -120,7 +123,8 @@ msgstr ""
 "起こされる `既知の問題<https://github.com/godotengine/godot/issues/32990>` で"
 "す。唯一の既知の回避策は、Godotの使用中にStardockFencesを無効にすることです。"
 
-msgid "The Godot editor appears frozen after clicking the system console."
+#, fuzzy
+msgid "The Godot editor appears frozen after clicking the system console"
 msgstr ""
 "システムコンソールをクリックすると、Godotエディタがフリーズしたように見える。"
 
@@ -144,9 +148,10 @@ msgstr ""
 "これを解決するには、システムコンソールウィンドウを選択し、Enterキーを押して選"
 "択モードを解除します。"
 
+#, fuzzy
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
-"manager and editor window."
+"manager and editor window"
 msgstr ""
 "プロジェクトマネージャーやエディターのウィンドウの左上に「NO DC」などの文字が"
 "表示されます。"
@@ -173,7 +178,8 @@ msgstr ""
 "Screen 0 > OpenGL Settings** を選択し、 **Enable Graphics API Visual "
 "Indicator** のチェックを外します。"
 
-msgid "The project window appears blurry, unlike the editor."
+#, fuzzy
+msgid "The project window appears blurry, unlike the editor"
 msgstr "プロジェクトウィンドウが、エディタと違ってぼやけて見える。"
 
 msgid ""
@@ -195,7 +201,8 @@ msgstr ""
 "トが\\ :ref:`複数の解像度 <doc_multiple_resolutions>`\\ に対応するように設定"
 "されていることを確認してください。"
 
-msgid "The project window doesn't appear centered when I run the project."
+#, fuzzy
+msgid "The project window doesn't appear centered when I run the project"
 msgstr "プロジェクトを実行してもプロジェクトウィンドウが中央に表示されない。"
 
 msgid ""
@@ -212,8 +219,33 @@ msgstr ""
 "ださい。"
 
 msgid ""
+"The editor/project freezes or displays glitched visuals after resuming the "
+"PC from suspend"
+msgstr ""
+
+msgid ""
+"This is a known issue on Linux with NVIDIA graphics when using the "
+"proprietary driver. There is no definitive fix yet, as suspend on Linux + "
+"NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+msgid ""
+"The NVIDIA driver offers an *experimental* `option to preserve video memory "
+"after suspend <https://wiki.archlinux.org/title/NVIDIA/"
+"Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve "
+"this issue. This option has been reported to work better with more recent "
+"NVIDIA driver versions."
+msgstr ""
+
+msgid ""
+"To avoid losing work, save scenes in the editor before putting the PC to "
+"sleep."
+msgstr ""
+
+#, fuzzy
+msgid ""
 "The project works when run from the editor, but fails to load some files "
-"when running from an exported copy."
+"when running from an exported copy"
 msgstr ""
 "エディタから実行するとプロジェクトは動作するが、エクスポートしたコピーから実"
 "行するといくつかのファイルの読み込みに失敗する。"

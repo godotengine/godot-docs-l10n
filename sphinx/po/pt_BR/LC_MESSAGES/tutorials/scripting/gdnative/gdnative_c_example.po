@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -72,15 +72,14 @@ msgid ""
 "you can use Visual Studio 2015 or later, or MinGW-w64."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "A Git clone of the `godot-headers repository <https://github.com/godotengine/"
 "godot-headers.git>`_: these are the C headers for Godot's public API exposed "
 "to GDNative."
 msgstr ""
-"Um Git clone do `godot_headers repository <https://github.com/"
-"GodotNativeTools/godot_headers>`_: estes são os C headers para a API pública "
-"do Godot exposta no GDNative."
+"Um Git clone do `godot_headers repository <https://github.com/godotengine/"
+"godot-headers.git>`_: estes são os C headers para a API pública do Godot "
+"exposta pra GDNative."
 
 msgid ""
 "For the latter, we suggest that you create a dedicated folder for this "
@@ -331,13 +330,13 @@ msgid ""
 msgstr ""
 
 msgid "On Linux:"
-msgstr ""
+msgstr "No Linux:"
 
 msgid "On macOS:"
-msgstr ""
+msgstr "No macOS:"
 
 msgid "On Windows:"
-msgstr ""
+msgstr "No Windows:"
 
 msgid ""
 "On the Windows build you also end up with a ``libsimple.lib`` library. This "
@@ -347,7 +346,7 @@ msgid ""
 msgstr ""
 
 msgid "Creating the GDNativeLibrary (``.gdnlib``) file"
-msgstr ""
+msgstr "Criando o arquivo GDNativeLibrary (``.gdnlib``)"
 
 msgid ""
 "With our module compiled, we now need to create a corresponding :ref:"
@@ -374,9 +373,8 @@ msgid ""
 "height:"
 msgstr ""
 
-#, fuzzy
 msgid "General properties"
-msgstr "Propriedades do Node"
+msgstr "Propriedades gerais"
 
 msgid ""
 "In the Inspector, you have various properties to control loading the library."
@@ -412,7 +410,7 @@ msgid ""
 msgstr ""
 
 msgid "Platform libraries"
-msgstr ""
+msgstr "Bibliotecas de plataforma"
 
 msgid ""
 "The GDNativeLibrary editor plugin lets you configure two things for each "
@@ -439,9 +437,8 @@ msgid ""
 "you built all three libraries, you should have something like this:"
 msgstr ""
 
-#, fuzzy
 msgid "Saving the resource"
-msgstr "Liberando recursos"
+msgstr "Salvando o recurso"
 
 msgid ""
 "We can then save our GDNativeLibrary resource as ``bin/libsimple.gdnlib`` "
@@ -509,4 +506,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

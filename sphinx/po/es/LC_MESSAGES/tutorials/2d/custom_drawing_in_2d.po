@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,31 +39,27 @@ msgstr ""
 "`Control <class_Control>` o :ref:`Node2D <class_Node2D>` ) puede aceptar "
 "comandos de dibujo personalizados. Esto es muy fácil de hacer."
 
-#, fuzzy
 msgid ""
 "Custom drawing in a 2D node is *really* useful. Here are some use cases:"
 msgstr ""
-"Dibujar manualmente en un nodo es muy útil, aquí hay unos ejemplos de por "
-"qué:"
+"Dibujar manualmente en un nodo 2D es *realmente* útil, aquí hay algunos "
+"casos de uso:"
 
-#, fuzzy
 msgid ""
 "Drawing shapes or logic that existing nodes can't do, such as an image with "
 "trails or a special animated polygon."
 msgstr ""
-"Dibujar figuras o crear lógica que no es manejada por nodos (ejemplo: hacer "
-"que un nodo dibuje un círculo, una imagen con un rastro o trail, un modo "
-"especial de polígono animado, etc.)."
+"Dibujar formas o lógica que los nodos existentes no pueden hacer, como una "
+"imagen con estelas o un polígono animado especial."
 
 msgid ""
 "Visualizations that are not that compatible with nodes, such as a tetris "
 "board. (The tetris example uses a custom draw function to draw the blocks.)"
 msgstr ""
-"Visualizaciones que no son compatibles con los nodos, como un tablero de "
-"tetris (el ejemplo del tetris utiliza una función de dibujo personalizado "
-"para dibujar los bloques)."
+"Visualizaciones que no son tan compatibles con los nodos, como un tablero de "
+"tetris. (El ejemplo del tetris utiliza una función de dibujo personalizada "
+"para dibujar los bloques)"
 
-#, fuzzy
 msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
 "of using a large number of nodes, possibly lowering memory usage and "
@@ -73,13 +69,13 @@ msgstr ""
 "sobrecarga del uso de nodos lo que lo hace menos intensivo en el uso de "
 "memoria y potencialmente más rápido."
 
-#, fuzzy
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but when "
 "you have unusual needs, you will likely need a custom control."
 msgstr ""
-"Hacer un control de UI personalizado. Hay muchos nodos Control disponibles "
-"pero puede existir la necesidad de crear uno nuevo, diferente."
+"Hacer un control de UI personalizado. Hay muchos nodos Control disponibles, "
+"Sin embargo, cuando tienes necesidades poco comunes, es probable que "
+"necesites un control personalizado."
 
 msgid "Drawing"
 msgstr "Dibujando"
@@ -110,14 +106,13 @@ msgstr ""
 "La función ``_draw()`` es llamada una vez y los comandos son guardados y "
 "recordados, así que no es necesario llamarla continuamente."
 
-#, fuzzy
 msgid ""
 "If re-drawing is required because a state or something else changed, call :"
 "ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that same node "
 "and a new ``_draw()`` call will happen."
 msgstr ""
-"Si es necesario volver a dibujar porque algo ha cambiado, simplemente llama :"
-"ref:`CanvasItem.update() <class_CanvasItem_method_update>` en el nodo y se "
+"Si es necesario redibujar porque algo ha cambiado, simplemente llama :ref:"
+"`CanvasItem.update() <class_CanvasItem_method_update>` en el nodo y se "
 "ejecutará una nueva llamada a ``_draw()``."
 
 msgid ""
@@ -396,9 +391,8 @@ msgstr ""
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr "¡Ejecutémoslo de nuevo! ¡Esta vez, la rotación se muestra bien!"
 
-#, fuzzy
 msgid "Antialiased drawing"
-msgstr "**Antialiasing:**"
+msgstr "Dibujo antialiasing"
 
 msgid ""
 "Godot offers method parameters in :ref:"
@@ -408,6 +402,12 @@ msgid ""
 "parameter available in :ref:"
 "`draw_polygon<class_CanvasItem_method_draw_polygon>`."
 msgstr ""
+"Godot ofrece parámetros de método en :ref:`draw_line "
+"<class_CanvasItem_method_draw_line>` para habilitar el antialiasing, pero no "
+"funciona de manera confiable en todas las situaciones (por ejemplo, en "
+"plataformas móviles/web o cuando el HDR está habilitado). Además, no hay un "
+"parámetro \"antialiased\" disponible en :ref:`draw_polygon "
+"<class_CanvasItem_method_draw_polygon>`."
 
 msgid ""
 "As a workaround, install and use the `Antialiased Line2D add-on <https://"
@@ -415,11 +415,15 @@ msgid ""
 "supports antialiased Polygon2D drawing). Note that this add-on relies on "
 "high-level nodes, rather than low-level ``_draw()`` functions."
 msgstr ""
+"Como solución alternativa, puedes instalar y utilizar el complemento "
+"\"Antialiased Line2D\" <https://github.com/godot-extended-libraries/godot-"
+"antialiased-line2d>, el cual también admite el dibujo antialiasing de "
+"Polygon2D. Ten en cuenta que este complemento se basa en nodos de alto nivel "
+"en lugar de las funciones \"_draw()\" de bajo nivel."
 
 msgid "Tools"
 msgstr "Herramientas"
 
-#, fuzzy
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor. This can be used as a preview or visualization of some feature or "
@@ -427,7 +431,8 @@ msgid ""
 msgstr ""
 "Dibujar tus propios nodos también puede ser conveniente mientras los "
 "ejecutas en el editor para usarlos como vista previa o visualización de "
-"alguna característica o comportamiento."
+"alguna característica o comportamiento. Consulta :ref:"
+"`doc_running_code_in_the_editor` para obtener más información."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

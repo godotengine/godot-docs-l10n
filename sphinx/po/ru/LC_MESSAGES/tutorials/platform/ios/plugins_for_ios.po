@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,6 +65,13 @@ msgid ""
 "response event will be produced and added to the 'pending events' queue. "
 "Example:"
 msgstr ""
+"Параметром обычно является словарь, содержащий информацию, необходимую для "
+"выполнения запроса, а вызов будет состоять из двух фаз. Сначала метод "
+"немедленно возвращает значение Error. Если значение Error не равно 'OK', "
+"операция вызова завершается, при этом ошибка, вероятно, вызвана локально "
+"(отсутствие подключения к Интернету, неправильная настройка API и т.д.). "
+"Если значение ошибки равно 'OK', будет создано ответное событие и добавлено "
+"в очередь 'ожидающих событий'. Пример:"
 
 msgid ""
 "Remember that when a call returns OK, the API will *always* produce an event "
@@ -319,6 +326,13 @@ msgid ""
 "identifiers (local variable or class member). This is an example of how to "
 "work around this in a class:"
 msgstr ""
+"При работе над мультиплатформенной игрой вам не всегда будет доступен "
+"синглтон \"GameCenter\" (например, при работе на ПК или Android). Поскольку "
+"компилятор gdscript просматривает синглтоны во время компиляции, вы не "
+"можете просто запросить синглтоны, чтобы увидеть и использовать то, что вам "
+"нужно внутри условного блока, вам нужно также определить их как допустимые "
+"идентификаторы (локальная переменная или член класса). Вот пример того, как "
+"это можно обойти в классе:"
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

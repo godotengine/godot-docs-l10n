@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,35 +17,33 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Pausing games and process mode"
-msgstr "Pausando jogos"
+msgstr "Pausando jogos e modo de processo"
 
 msgid "Introduction"
 msgstr "Introdução"
 
-#, fuzzy
 msgid ""
 "In most games it is desirable to, at some point, interrupt the game to do "
 "something else, such as taking a break or changing options. Implementing a "
 "fine-grained control for what can be paused (and what cannot) is a lot of "
 "work, so a simple framework for pausing is provided in Godot."
 msgstr ""
-"Implementar um controle refinado para o que pode ser pausado (e o que não "
-"pode) é muito trabalhoso, portanto, uma estrutura simples para pausa é "
-"fornecida no Godot."
+"Na maioria dos jogos é desejável, em algum momento, interromper o jogo para "
+"fazer algo mais, como fazer uma pausa ou mudar as opções. Implementar um "
+"controle refinado para o que pode ser pausado (e o que não pode) é muito "
+"trabalhoso, portanto, uma estrutura simples para pausar é fornecida no Godot."
 
 msgid "How pausing works"
 msgstr "Como a pausa funciona"
 
-#, fuzzy
 msgid ""
 "To pause the game the pause state must be set. This is done by assigning "
 "``true`` to the :ref:`SceneTree.paused <class_SceneTree_property_paused>` "
 "property:"
 msgstr ""
-"Para definir o modo de pausa, o estado de pausa deve ser definido. isso é "
-"feito atribuindo ``true`` à propriedade :ref:`SceneTree.paused "
+"Para pausar o jogo, o estado de pausa deve ser definido. Isto é feito "
+"atribuindo ``true`` à propriedade :ref:`SceneTree.paused "
 "<class_SceneTree_property_paused>`:"
 
 msgid ""
@@ -59,9 +57,8 @@ msgid ""
 "their ``set_active`` methods."
 msgstr ""
 
-#, fuzzy
 msgid "Process Modes"
-msgstr "Processo"
+msgstr "Modos de processo"
 
 msgid ""
 "Each node in Godot has a \"Pause Mode\" that defines when it processes. It "
@@ -69,35 +66,37 @@ msgid ""
 "in the inspector."
 msgstr ""
 
-#, fuzzy
 msgid "You can also alter the property with code:"
-msgstr "Você pode alcançar o mesmo resultado em código:"
+msgstr "Você também pode alterar a propriedade com o código:"
 
 msgid "This is what each mode tells a node to do:"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "**Inherit**: Process depending on the state of the parent, grandparent, etc. "
-"The first parent that has a non-Inherit state."
+"The first parent that has a state other than Inherit determines the "
+"effective value that will be used."
 msgstr ""
 "**Herdar**: Processa dependendo do estado do pai, avô, etc. O primeiro pai "
 "que tem um estado não Inherit."
 
+#, fuzzy
 msgid ""
-"**Stop**: Stop the node no matter what (and children in Inherit mode). When "
-"paused this node will not process."
+"**Stop**: If the scene tree is paused, pause the node no matter what (and "
+"children in Inherit mode). When paused, this node *will not* process."
 msgstr ""
 "**Stop**: Para o nó não importa o que aconteça (e filhos no modo Inherit). "
 "Quando pausado, este nó não será processado."
 
+#, fuzzy
 msgid ""
-"**Process**: Process the node no matter what (and children in Inherit mode). "
-"Paused or not this node will process."
+"**Process**: Even if the scene tree is paused, process the node no matter "
+"what (and children in Inherit mode). Paused or not, this node *will* process."
 msgstr ""
 "**Process**: Processa o nó independentemente do que aconteça (e os filhos no "
 "modo Inherit). Pausado ou não, este nó será processado."
 
-#, fuzzy
 msgid ""
 "By default, all nodes have this property in the \"Inherit\" state. If the "
 "parent is set to \"Inherit\", then the grandparent will be checked and so "
@@ -106,13 +105,12 @@ msgid ""
 "every node will be paused. Several things happen when a node stops "
 "processing."
 msgstr ""
-"Por padrão, todos os nós têm essa propriedade no estado \"Inherit\". Isso "
-"significa que eles só irão processar (ou não) dependendo do que esta mesma "
-"propriedade está definida no nó pai. Se o pai estiver definido como "
-"\"Inherit\", o avô será verificado e assim por diante. Por fim, se um estado "
-"não puder ser encontrado em nenhum dos avós, o estado de pausa em SceneTree "
-"será usado. Isso significa que, por padrão, quando o jogo é pausado, todos "
-"os nós serão pausados."
+"Por padrão, todos os nós têm esta propriedade no estado \"Herdar\". Se o pai "
+"estiver configurado para \"Herdar\", então o avô será verificado e assim por "
+"diante. Se um estado não puder ser encontrado em nenhum dos avós, o estado "
+"de pausa no SceneTree é usado. Isto significa que, por padrão, quando o jogo "
+"for pausado, todos os nós serão pausados. Várias coisas acontecem quando um "
+"nó pára de processar."
 
 msgid ""
 "The ``_process``, ``_physics_process``, ``_input``, and ``_input_event`` "
@@ -134,11 +132,9 @@ msgid ""
 "made active while the game is paused by using their ``set_active`` methods."
 msgstr ""
 
-#, fuzzy
 msgid "Pause Menu Example"
-msgstr "Pausar Cena"
+msgstr "Exemplo de Menu de Pausa"
 
-#, fuzzy
 msgid ""
 "Here is an example of a pause menu. Create a popup or panel with controls "
 "inside, and set its pause mode to \"Process\" then hide it. By setting the "
@@ -146,9 +142,11 @@ msgid ""
 "inherit that state. This way, this branch of the scene tree will continue "
 "working when paused."
 msgstr ""
-"Apenas definindo a raiz do pop-up de pausa como \"Process\", todos os filhos "
-"e netos herdarão esse estado. Dessa forma, este ramo da árvore da cena "
-"continuará funcionando quando estiver em pausa."
+"Aqui está um exemplo de um menu de pausa. Crie um popup ou painel com "
+"controles dentro, e defina seu modo de pausa para \"Process\" e depois o "
+"esconda. Ao definir a raiz do popup de pausa para \"Process\", todos os "
+"filhos e netos herdarão esse estado. Desta forma, este ramo da árvore da "
+"cena continuará funcionando quando pausado."
 
 msgid ""
 "Finally, make it so when a pause button is pressed (any button will do), "
@@ -157,10 +155,8 @@ msgstr ""
 "Finalmente, faça isso quando um botão de pausa for pressionado (qualquer "
 "botão serve), habilite a pausa e mostre a tela de pausa."
 
-#, fuzzy
 msgid "To unpause, do the opposite when the pause screen is closed:"
-msgstr ""
-"Para remover a pausa, faça o oposto quando a tela de pausa for fechada:"
+msgstr "Para despausar, faça o oposto quando a tela de pausa estiver fechada:"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

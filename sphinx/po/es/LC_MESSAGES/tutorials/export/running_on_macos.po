@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,148 +17,200 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Running Godot apps on macOS"
-msgstr "Ejecución en macOS"
+msgstr "Ejecutando la aplicación de Godot macOS"
 
 msgid ""
 "This page covers running Godot projects on macOS. If you haven't exported "
 "your project yet, read :ref:`doc_exporting_for_macos` first."
 msgstr ""
+"Esta página cubre la ejecución de proyectos de Godot en macOS. Si aún no has "
+"exportado tu proyecto, primero lee :ref:`doc_exporting_for_macos`."
 
 msgid ""
 "By default, macOS will run only applications that are signed and notarized."
 msgstr ""
+"De forma predeterminada, macOS solo ejecutará aplicaciones que estén "
+"firmadas y notarizadas."
 
 msgid ""
 "Depending on the way a macOS app is signed and distributed, the following "
 "scenarios are possible:"
 msgstr ""
+"Dependiendo de la forma en que una aplicación de macOS esté firmada y "
+"distribuida, son posibles los siguientes escenarios:"
 
 msgid "App is signed, notarized and distributed via App Store"
 msgstr ""
+"La aplicación está firmada, notarizada y distribuida a través de la App Store"
 
 msgid ""
 "App developers need to join the Apple Developer Program, and configure "
 "signing and notarization options during export, then upload the app to the "
 "App Store."
 msgstr ""
+"Los desarrolladores de aplicaciones deben unirse al Programa de "
+"Desarrolladores de Apple y configurar las opciones de firma y notarización "
+"durante la exportación, luego cargar la aplicación en la App Store."
 
 msgid ""
 "The app should run out of the box, without extra user interaction required."
 msgstr ""
+"La aplicación debería ejecutarse sin problemas, sin requerir interacciones "
+"adicionales por parte del usuario."
 
 msgid "App is signed, notarized and distributed outside App Store"
 msgstr ""
+"La aplicación está firmada, notarizada y distribuida fuera de la App Store"
 
 msgid ""
 "App developers need to join the Apple Developer Program, and configure "
 "signing and notarization options during export, then distribute the app as "
 "\".DMG\" or \".ZIP\" archive."
 msgstr ""
+"Los desarrolladores de aplicaciones deben unirse al Programa de "
+"Desarrolladores de Apple y configurar las opciones de firma y notarización "
+"durante la exportación, luego distribuir la aplicación como archivo \".DMG\" "
+"o \".ZIP\"."
 
 msgid ""
 "When you run the app for the first time, the following dialog is displayed:"
 msgstr ""
+"Cuando ejecutas la aplicación por primera vez, se muestra el siguiente "
+"diálogo:"
 
 msgid "Click ``Open`` to start the app."
-msgstr ""
+msgstr "Haz clic en ``Abrir`` para iniciar la aplicación."
 
 msgid ""
 "If you see the following warning dialog, your Mac is set up to allow apps "
 "only from the App Store."
 msgstr ""
+"Si ves el siguiente mensaje de advertencia, significa que tu Mac está "
+"configurado para permitir solo aplicaciones de la App Store."
 
 msgid ""
 "To allow third-party apps, open ``System Preferences``, click ``Security & "
 "Privacy``, then click ``General``, unlock settings, and select ``App Store "
 "and identified developers``."
 msgstr ""
+"Para permitir aplicaciones de terceros, abre ``Preferencias del Sistema``, "
+"haz clic en ``Seguridad y privacidad``, luego en ``General``, desbloquea la "
+"configuración y selecciona ``App Store y desarrolladores identificados``."
 
 msgid "App is signed (including ad-hoc signatures) but not notarized"
 msgstr ""
+"La aplicación está firmada (incluyendo firmas ad-hoc) pero no está notarizada"
 
 msgid ""
 "App developer used self-signed certificate or ad-hoc signing (default Godot "
 "behavior for exported project)."
 msgstr ""
+"El desarrollador de la aplicación utilizó un certificado autofirmado o una "
+"firma ad-hoc (comportamiento predeterminado de Godot para proyectos "
+"exportados)."
 
 msgid "To run this app, you can temporarily override Gatekeeper:"
-msgstr ""
+msgstr "Para ejecutar esta aplicación, puedes anular temporalmente Gatekeeper:"
 
 msgid ""
 "Either open ``System Preferences``, click ``Security & Privacy``, then click "
 "``General``, and click ``Open Anyway``."
 msgstr ""
+"O bien, abre ``Preferencias del Sistema``, haz clic en ``Seguridad y "
+"privacidad``, luego en ``General`` y haz clic en ``Abrir de todos modos``."
 
 msgid ""
 "Or, right-click (Control-click) on the app icon in the Finder window and "
 "select ``Open`` from the menu."
 msgstr ""
+"O, haz clic derecho (Control-clic) en el ícono de la aplicación en la "
+"ventana del Finder y selecciona ``Abrir`` en el menú."
 
 msgid "Then click ``Open`` in the confirmation dialog."
 msgstr "Después hacer clic en ``Open`` dentro del dialogo de confirmación."
 
 msgid "Enter your password if you're prompted."
-msgstr ""
+msgstr "Ingresa tu contraseña si se te solicita."
 
 msgid "App is not-signed, executable is linker-signed"
 msgstr ""
+"La aplicación no está firmada, pero el ejecutable está firmado por el "
+"enlazador (linker-signed)"
 
 msgid "App is built using official export templates, but it is not signed."
 msgstr ""
+"La aplicación se construyó utilizando plantillas de exportación oficiales, "
+"pero no está firmada."
 
 msgid ""
 "To run this app, you should remove the quarantine extended file attribute "
 "manually:"
 msgstr ""
+"Para ejecutar esta aplicación, debes eliminar manualmente el atributo "
+"extendido de cuarentena del archivo:"
 
 msgid "Open ``Terminal.app`` (press ``Cmd + Space``, and enter ``Terminal``)."
 msgstr ""
+"Abre ``Terminal.app`` (presiona ``Cmd + Espacio`` y escribe ``Terminal``)."
 
 msgid "Navigate to the folder containing the target application."
-msgstr ""
+msgstr "Navega hasta la carpeta que contiene la aplicación objetivo."
 
 msgid ""
 "Use the ``cd path_to_the_app_folder`` command, e.g. ``cd ~/Downloads/`` if "
 "it's in the ``Downloads`` folder."
 msgstr ""
+"Utiliza el comando ``cd ruta_a_la_carpeta_de_la_aplicación``, por ejemplo, "
+"``cd ~/Descargas/`` si está en la carpeta ``Descargas``."
 
 msgid ""
 "Run the command ``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` "
 "(including quotation marks and ``.app`` extension)."
 msgstr ""
+"Ejecuta el comando ``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` "
+"(incluyendo las comillas y la extensión ``.app``)."
 
 msgid ""
 "Neither app nor executable is signed (relevant for Apple Silicon macs only)"
 msgstr ""
+"Ni la aplicación ni el ejecutable están firmados (relevante solo para Mac "
+"con Apple Silicon)"
 
 msgid ""
 "App is built using custom export templates, compiled using OSXCross, and it "
 "is not signed at all."
 msgstr ""
+"La aplicación se construyó utilizando plantillas de exportación "
+"personalizadas, compiladas utilizando OSXCross, y no está firmada en "
+"absoluto."
 
 msgid "To run this app, you can ad-hoc sign it yourself:"
-msgstr ""
+msgstr "Para ejecutar esta aplicación, puedes firmarla ad-hoc por ti mismo:"
 
 msgid ""
 "Install ``Xcode`` for the App Store, start it and confirm command line tools "
 "installation."
 msgstr ""
+"Instala ``Xcode`` desde la App Store, ábrelo y confirma la instalación de "
+"las herramientas de línea de comandos."
 
-#, fuzzy
 msgid "Run the following commands:"
-msgstr "En el siguiente ejemplo:"
+msgstr "Corre los siguientes comandos:"
 
 msgid ""
 "``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` (including "
 "quotation marks and \".app\" extension)."
 msgstr ""
+"``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` (incluyendo "
+"comillas y extensión \".app\")."
 
 msgid ""
 "``codesign -s - --force --deep \"Unsigned Game.app\"`` (including quotation "
 "marks and \".app\" extension)."
 msgstr ""
+"``codesign -s - --force --deep \"Unsigned Game.app\"`` (incluyendo comillas "
+"y extensión \".app\")."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

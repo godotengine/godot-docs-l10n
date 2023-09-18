@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,18 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Evaluating expressions"
-msgstr "Avaliar Seleção"
+msgstr "Avaliando as expressões"
 
 msgid ""
 "Godot provides an :ref:`class_Expression` class you can use to evaluate "
 "expressions."
 msgstr ""
 
-#, fuzzy
 msgid "An expression can be:"
-msgstr "Os nós de Expressão podem:"
+msgstr "Uma expressão pode ser:"
 
 msgid "A mathematical expression such as ``(2 + 4) * 16/4.0``."
 msgstr ""
@@ -47,9 +45,8 @@ msgid ""
 "you compile Godot with the GDScript module disabled."
 msgstr ""
 
-#, fuzzy
 msgid "Basic usage"
-msgstr "Configuração básica"
+msgstr "Uso básico"
 
 msgid "To evaluate a mathematical expression, use::"
 msgstr ""
@@ -61,27 +58,24 @@ msgid "Operator"
 msgstr "Operador"
 
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
-#, fuzzy
 msgid "Addition ``+``"
-msgstr "Notas adicionais"
+msgstr "Adição ``+``"
 
 msgid ""
 "Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
 "world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
 
-#, fuzzy
 msgid "Subtraction (``-``)"
-msgstr "Subtração"
+msgstr "Subtração (``-``)"
 
 msgid "Multiplication (``*``)"
-msgstr ""
+msgstr "Multiplicação (``*``)"
 
-#, fuzzy
 msgid "Division (``/``)"
-msgstr "Truevision Targa (``.tga``)"
+msgstr "Divisão (``/``)"
 
 msgid ""
 "Performs and integer division if both operands are integers. If at least one "
@@ -89,7 +83,7 @@ msgid ""
 msgstr ""
 
 msgid "Modulo (``%``)"
-msgstr ""
+msgstr "Módulo (``%``)"
 
 msgid "Returns the remainder of an integer division."
 msgstr ""
@@ -123,9 +117,8 @@ msgid ""
 "sensitive**."
 msgstr ""
 
-#, fuzzy
 msgid "Setting a base instance for the expression"
-msgstr "Criando um Servidor Godot"
+msgstr "Definindo uma instância base para a expressão"
 
 msgid ""
 "By default, an expression has a base instance of ``null``. This means the "
@@ -161,9 +154,8 @@ msgid ""
 "allow arbitrary clients to run expressions on other players' devices."
 msgstr ""
 
-#, fuzzy
 msgid "Example script"
-msgstr "Exemplo de GDScript"
+msgstr "Exemplo de script"
 
 msgid "The script below demonstrates what the Expression class is capable of::"
 msgstr ""
@@ -171,9 +163,8 @@ msgstr ""
 msgid "The output from the script will be::"
 msgstr "A saída do script será::"
 
-#, fuzzy
 msgid "Built-in functions"
-msgstr "Funções estáticas"
+msgstr "Funções embutidas"
 
 msgid ""
 "Most methods available in the :ref:`class_@GDScript` scope are available in "
@@ -189,4 +180,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

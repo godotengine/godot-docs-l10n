@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,10 @@ msgstr ""
 msgid "Using the ArrayMesh"
 msgstr "Використання ArrayMesh"
 
-#, fuzzy
 msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
 "<class_arraymesh>`."
-msgstr "Цей урок дасть основи використання :ref:`ArrayMesh <class_arraymesh>`"
+msgstr "Цей урок дасть основи використання :ref:`ArrayMesh <class_arraymesh>`."
 
 msgid ""
 "To do so, we will use the function :ref:`add_surface_from_arrays() "
@@ -35,19 +34,17 @@ msgstr ""
 "<class_ArrayMesh_method_add_surface_from_arrays>`, яка приймає до чотирьох "
 "параметрів. Перші два обов'язкові, а другі два - необов'язкові."
 
-#, fuzzy
 msgid ""
 "The first parameter is the ``PrimitiveType``, an OpenGL concept that "
 "instructs the GPU how to arrange the primitive based on the vertices given, "
 "i.e. whether they represent triangles, lines, points, etc. See :ref:`Mesh."
 "PrimitiveType <enum_Mesh_PrimitiveType>` for the options available."
 msgstr ""
-"Перший - ``PrimitiveType``, це концепція OpenGL, яка інструктує графічний "
-"процесор, як розташувати примітив на основі вершин, враховуючи, чи це "
-"трикутники, лінії, точки тощо. Повний список можна знайти на сторінці "
-"посилання на клас :ref:`Mesh <class_mesh>`."
+"Перший параметр - ``PrimitiveType``, це концепція OpenGL, яка інструктує "
+"графічний процесор, як розташувати примітив на основі вершин, враховуючи, чи "
+"це трикутники, лінії, точки тощо. Повний список варіантів дивіться в :ref:"
+"`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>`."
 
-#, fuzzy
 msgid ""
 "The second parameter, ``arrays``, is the actual Array that stores the mesh "
 "information. The array is a normal Godot array that is constructed with "
@@ -55,63 +52,62 @@ msgid ""
 "PoolIntArray, etc.) for each type of information that will be used to build "
 "the surface."
 msgstr ""
-"Другий - це фактичний Масив, який зберігає інформацію про меш. Це звичайний "
-"масив Godot, побудований з порожніми дужками ``[]``. Він зберігає "
+"Другий - ``arrays``,це фактичний Масив, який зберігає інформацію про меш. Це "
+"звичайний масив Godot, побудований порожніми дужками ``[]``. Він зберігає "
 "``Pool**Array`` (наприклад, PoolVector3Array, PoolIntArray тощо) для кожного "
-"типу інформації."
+"типу інформації, яка буде використовуватися для побудови поверхні."
 
 msgid ""
 "The possible elements of ``arrays`` are listed below, together with the "
 "position they must have within ``arrays``. See also :ref:`Mesh.ArrayType "
 "<enum_Mesh_ArrayType>`."
 msgstr ""
+"Можливі елементи ``arrays`` перераховані нижче, разом з позицією, яку вони "
+"повинні мати в межах ``arrays``. Дивіться також :ref:`Mesh.ArrayType "
+"<enum_Mesh_ArrayType>`."
 
 msgid "Index"
 msgstr "Індекс"
 
 msgid "Mesh.ArrayType Enum"
-msgstr ""
+msgstr "Mesh.ArrayType Enum"
 
-#, fuzzy
 msgid "Array type"
-msgstr "Шаблон масиву"
+msgstr "Тип масиву"
 
 msgid "0"
-msgstr ""
+msgstr "0"
 
 msgid "``ARRAY_VERTEX``"
-msgstr ""
+msgstr "``ARRAY_VERTEX``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>` or :ref:`PoolVector2Array "
 "<class_PoolVector2Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`: Масив з об'єктів :ref:"
-"`Vector2 <class_Vector2>`."
+":ref:`PoolVector3Array <class_PoolVector3Array>`, або :ref:`PoolVector2Array "
+"<class_PoolVector2Array>`"
 
 msgid "1"
 msgstr "1"
 
 msgid "``ARRAY_NORMAL``"
-msgstr ""
+msgstr "``ARRAY_NORMAL``"
 
-#, fuzzy
 msgid ":ref:`PoolVector3Array <class_PoolVector3Array>`"
-msgstr ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`PoolVector3Array <class_PoolVector3Array>`"
 
 msgid "2"
 msgstr "2"
 
 msgid "``ARRAY_TANGENT``"
-msgstr ""
+msgstr "``ARRAY_TANGENT``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. First 3 "
 "floats determine the tangent, and the last the binormal direction as -1 or 1."
 msgstr ""
-"``ARRAY_TANGENT`` = 2 | PoolRealArray з групи з 4-х десяткових. Перші 3 "
+":ref:`PoolRealArray <class_PoolRealArray>` групи з 4-х десяткових. Перші 3 "
 "десяткові визначають тангенс, а останній - бінормальний напрямок типу -1, "
 "або 1."
 
@@ -119,82 +115,76 @@ msgid "3"
 msgstr "3"
 
 msgid "``ARRAY_COLOR``"
-msgstr ""
+msgstr "``ARRAY_COLOR``"
 
-#, fuzzy
 msgid ":ref:`PoolColorArray <class_PoolColorArray>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`PoolColorArray <class_PoolColorArray>`"
 
 msgid "4"
 msgstr "4"
 
 msgid "``ARRAY_TEX_UV``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>` or :ref:`PoolVector3Array "
 "<class_PoolVector3Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`: Масив з об'єктів :ref:"
-"`Vector2 <class_Vector2>`."
+":ref:`PoolVector2Array <class_PoolVector2Array>`, або :ref:`PoolVector3Array "
+"<class_PoolVector3Array>`"
 
 msgid "5"
 msgstr "5"
 
 msgid "``ARRAY_TEX_UV2``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2``"
 
 msgid "6"
 msgstr "6"
 
 msgid "``ARRAY_BONES``"
-msgstr ""
+msgstr "``ARRAY_BONES``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats or :ref:"
 "`PoolIntArray <class_PoolIntArray>` of groups of 4 ints. Each group lists "
 "indexes of 4 bones that affects a given vertex."
 msgstr ""
-"``ARRAY_BONES`` = 6 | PoolRealArray з групи з 4-х десяткових, або "
-"PoolIntArray з групи з 4-х цілих. Кожна група перераховує індекси 4-х "
-"кісток, які впливають на задану вершину."
+":ref:`PoolRealArray <class_PoolRealArray>` груп з 4-х десяткових, або :ref:"
+"`PoolIntArray <class_PoolIntArray>` груп з 4-х цілих. Кожна група "
+"перераховує індекси 4-х кісток, які впливають на задану вершину."
 
 msgid "7"
 msgstr "7"
 
 msgid "``ARRAY_WEIGHTS``"
-msgstr ""
+msgstr "``ARRAY_WEIGHTS``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. Each float "
 "lists the amount of weight an determined bone on ``ARRAY_BONES`` has on a "
 "given vertex."
 msgstr ""
-"``ARRAY_WEIGHTS`` = 7 | PoolRealArray з групи з 4-х десяткових. Кожне "
+":ref:`PoolRealArray <class_PoolRealArray>` груп з 4-х десяткових. Кожне "
 "десяткове вказує силу ваги кістки, визначеної в ``ARRAY_BONES``, на задану "
 "вершину."
 
 msgid "8"
 msgstr "8"
 
-#, fuzzy
 msgid "``ARRAY_INDEX``"
-msgstr "``ARRAY_INDEX`` = 8 | PoolIntArray"
+msgstr "``ARRAY_INDEX``"
 
-#, fuzzy
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`"
 
-#, fuzzy
 msgid ""
 "The array of vertices (at index 0) is always required. The index array is "
 "optional and will only be used if included. We won't use it in this tutorial."
 msgstr ""
-"Масив вершин (ARRAY_VERTEX) завжди обов'язковий. Всі інші є необов'язковими "
-"і будуть використовуватися тільки в тому випадку, якщо включені."
+"Масив вершин (з індексом 0) завжди обов'язковий. Масив індексів "
+"необов'язковий і використовується тільки в разі включення. Ми не будемо "
+"використовувати його тут."
 
 msgid ""
 "All the other arrays carry information about the vertices. They are also "
@@ -204,29 +194,35 @@ msgid ""
 "g. ``ARRAY_TANGENT``) use four entries to describe a single vertex. These "
 "must be exactly four times larger than the vertex array."
 msgstr ""
+"Всі інші масиви несуть інформацію про вершини. Вони також необов'язкові і "
+"будуть використовуватися лише в тому випадку, якщо вони включені. Деякі з "
+"цих масивів (наприклад ``ARRAY_COLOR``) використовують один запис на "
+"вершину, щоб надати додаткову інформацію про вершини. Вони повинні мати той "
+"же розмір, що і масив вершин. Інші масиви (наприклад ``ARRAY_TANGENT``) "
+"використовують чотири записи для опису однієї вершини. Вони повинні бути "
+"рівно в чотири рази більше масиву вершин."
 
-#, fuzzy
 msgid ""
 "For normal usage, the last two parameters in :ref:`add_surface_from_arrays() "
 "<class_arraymesh_method_add_surface_from_arrays>` are typically left empty."
 msgstr ""
-"Ми будемо використовувати функцію :ref:`add_surface_from_arrays() "
-"<class_ArrayMesh_method_add_surface_from_arrays>`, яка приймає до чотирьох "
-"параметрів. Перші два обов'язкові, а другі два - необов'язкові."
+"Для звичайного використання останні два параметри в :ref:"
+"`add_surface_from_arrays() <class_arraymesh_method_add_surface_from_arrays>` "
+"зазвичай залишаються порожніми."
 
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#, fuzzy
 msgid ""
 "In the editor, create a :ref:`MeshInstance <class_meshinstance>` and add an :"
 "ref:`ArrayMesh <class_arraymesh>` to it in the Inspector. Normally, adding "
 "an ArrayMesh in the editor is not useful, but in this case it allows us to "
 "access the ArrayMesh from code without creating one."
 msgstr ""
-"Додайте :ref:`ArrayMesh <class_arraymesh>` в MeshInstance. Як правило, "
-"додавання ArrayMesh в редактор не є корисним, але це дозволяє отримати "
-"доступ до масиву ArrayMesh з коду, без створення самого меша."
+"У редакторі створіть :ref:`MeshInstance <class_meshinstance>` і додайте "
+"йому :ref:`ArrayMesh <class_arraymesh>` в Інспекторі. Як правило, додавання "
+"ArrayMesh в редактор не є корисним, але це дозволяє отримати доступ до "
+"масиву ArrayMesh з коду, без створення самого меша."
 
 msgid "Next, add a script to the MeshInstance."
 msgstr "Далі додайте скрипт до MeshInstance."
@@ -234,7 +230,6 @@ msgstr "Далі додайте скрипт до MeshInstance."
 msgid "Under ``_ready()``, create a new Array."
 msgstr "Під ``_ready()`` створіть новий масив."
 
-#, fuzzy
 msgid ""
 "This will be the array that we keep our surface information in - it will "
 "hold all the arrays of data that the surface needs. Godot will expect it to "
@@ -263,17 +258,15 @@ msgstr ""
 "У цьому прикладі ми використовували ``Mesh.PRIMITIVE_TRIANGLES``, але ви "
 "можете використовувати будь-який тип примітиву, доступний для меша."
 
-#, fuzzy
 msgid "Put together, the full code looks like:"
-msgstr "Зібрати воєдино повний код виглядає так:"
+msgstr "В сукупності повний код виглядає так:"
 
-#, fuzzy
 msgid ""
 "The code that goes in the middle can be whatever you want. Below we will "
 "present some example code for generating a sphere."
 msgstr ""
 "Код в середині, може бути інший, залежно від вашого бажання. Нижче ми "
-"наведемо кілька прикладів коду, який може піти в середині."
+"наведемо кілька прикладів коду для генерування сфери."
 
 msgid "Generating geometry"
 msgstr "Генерування геометрії"
@@ -296,14 +289,13 @@ msgstr ""
 msgid "Saving"
 msgstr "Збереження"
 
-#, fuzzy
 msgid ""
 "Finally, we can use the :ref:`ResourceSaver <class_resourcesaver>` class to "
 "save the ArrayMesh. This is useful when you want to generate a mesh and then "
 "use it later without having to re-generate it."
 msgstr ""
-"Нарешті, Godot надає єдиний метод збереження ArrayMesh-ів за допомогою "
-"класу :ref:`ResourceSaver <class_resourcesaver>`. Це корисно, коли ви хочете "
+"Нарешті, ми можемо використати клас :ref:`ResourceSaver "
+"<class_resourcesaver>`, щоб зберегти ArrayMesh. Це корисно, коли ви хочете "
 "створити меш, а потім використовувати його пізніше без необхідності повторно "
 "генерувати."
 

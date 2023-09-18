@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,6 +149,13 @@ msgid ""
 "pattern: ``[PluginName].[TargetType].a``. You can also build the static "
 "library with your SCons configuration."
 msgstr ""
+"Добавьте необходимую логику для вашего плагина и создайте библиотеку для "
+"генерации ``.a`` файла. Вероятно, вам потребуется создать оба файла "
+"``debug`` и ``release`` целевые ``.a`` файлы. В зависимости от ваших "
+"потребностей, выберите один из них или оба. Если вам нужны и отладочный, и "
+"релизный ``.a`` файлы, их имя должно соответствовать следующему шаблону: "
+"``[PluginName].[TargetType].a``. Вы также можете собрать статическую "
+"библиотеку с помощью конфигурации SCons."
 
 msgid ""
 "The iOS plugin system also supports ``.xcframework`` files. To generate one, "

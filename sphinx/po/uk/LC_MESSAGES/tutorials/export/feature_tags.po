@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -237,12 +237,20 @@ msgid ""
 "time conditions. For example, ``OS.has_feature(\"mobile\")`` will return "
 "``false`` when running a project exported to HTML5 on a mobile device."
 msgstr ""
+"За винятком тегів властивостей стиснення текстур, за замовчуванням теги "
+"властивостей є **незмінними**. Це означає, що вони *не будуть* змінюватися "
+"залежно від умов виконання. Наприклад, ``OS.has_feature(\"mobile\")`` "
+"поверне ``false`` при запуску проекту, експортованого в HTML5, на мобільному "
+"пристрої."
 
 msgid ""
 "To check whether a project exported to HTML5 is running on a mobile device, :"
 "ref:`call JavaScript code <doc_javascript_eval>` that reads the browser's "
 "user agent."
 msgstr ""
+"Щоб перевірити, чи працює проект, експортований в HTML5, на мобільному "
+"пристрої, :ref:`викличте код JavaScript <doc_javascript_eval>`, який зчитує "
+"агент користувача браузера."
 
 msgid "Custom features"
 msgstr "Нетипові можливості"
@@ -260,6 +268,11 @@ msgid ""
 "running the project from the editor, even if the export preset marked as "
 "**Runnable** for your current platform has custom feature tags defined."
 msgstr ""
+"Спеціальні теги використовуються лише під час запуску експортованого проекту "
+"(зокрема з :ref:`doc_one-click_deploy`). Вони **не використовуються** під "
+"час запуску проекту з редактора, навіть якщо пресет експорту позначено як "
+"**Runnable** *(Запускається)* для вашої поточної платформи з визначені "
+"спеціальні теги."
 
 msgid "Overriding project settings"
 msgstr "Заміна параметрів проєкту"

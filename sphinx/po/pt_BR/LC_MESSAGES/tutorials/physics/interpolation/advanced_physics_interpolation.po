@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Advanced physics interpolation"
-msgstr "Controlando a animação"
+msgstr "Interpolação física avançada"
 
 msgid ""
 "Although the previous instructions will give satisfactory results in a lot "
@@ -27,9 +26,8 @@ msgid ""
 "possible results and the smoothest possible experience."
 msgstr ""
 
-#, fuzzy
 msgid "Exceptions to automatic physics interpolation"
-msgstr "Controlando a animação"
+msgstr "Exceções à interpolação física automática"
 
 msgid ""
 "Even with physics interpolation active, there may be some local situations "
@@ -70,9 +68,8 @@ msgid ""
 "manually."
 msgstr ""
 
-#, fuzzy
 msgid "Manual Camera interpolation"
-msgstr "Outras considerações"
+msgstr "Interpolação manual da câmera"
 
 msgid "**Ensure the Camera is using global coordinate space**"
 msgstr ""
@@ -85,9 +82,8 @@ msgid ""
 "the Camera Node itself, which can mess up the interpolation."
 msgstr ""
 
-#, fuzzy
 msgid "There are two ways of doing this:"
-msgstr "Há algumas coisas para observar:"
+msgstr "Há duas maneiras de se fazer isso:"
 
 msgid ""
 "Move the Camera so it is independent on its own branch, rather than being a "
@@ -118,9 +114,8 @@ msgid ""
 "if the *target* is only changing each physics tick."
 msgstr ""
 
-#, fuzzy
 msgid "get_global_transform_interpolated()"
-msgstr "Organização"
+msgstr "get_global_transform_interpolated()"
 
 msgid ""
 "What we really want to focus the Camera on, is not the position of the "
@@ -151,16 +146,14 @@ msgid ""
 "usually what you will want for gameplay code."
 msgstr ""
 
-#, fuzzy
 msgid "Example manual Camera script"
-msgstr "Exemplo de GDScript"
+msgstr "Exemplo de script de câmera manual"
 
 msgid ""
 "Here is an example of a simple fixed Camera which follows an interpolated "
 "target:"
 msgstr ""
 
-#, fuzzy
 msgid "Mouse look"
 msgstr "Movimentação do mouse"
 
@@ -216,9 +209,8 @@ msgid ""
 "player rotation to match the mouse in real-time."
 msgstr ""
 
-#, fuzzy
 msgid "MultiMeshes"
-msgstr "String com múltiplas linhas"
+msgstr "MultiMeshes"
 
 msgid ""
 "Although most visual Nodes follow the single Node single visual instance "
@@ -232,15 +224,20 @@ msgid ""
 ":ref:`MultiMesh."
 "reset_instance_physics_interpolation<class_MultiMesh_method_reset_instance_physics_interpolation>`"
 msgstr ""
+":ref:`MultiMesh."
+"reset_instance_physics_interpolation<class_MultiMesh_method_reset_instance_physics_interpolation>`"
 
 msgid ""
 ":ref:`MultiMesh."
 "set_as_bulk_array_interpolated<class_MultiMesh_method_set_as_bulk_array_interpolated>`"
 msgstr ""
+":ref:`MultiMesh."
+"set_as_bulk_array_interpolated<class_MultiMesh_method_set_as_bulk_array_interpolated>`"
 
 msgid ""
 "Full details are in the :ref:`MultiMesh<class_MultiMesh>` documentation."
 msgstr ""
+"Detalhes completos estão na documentação :ref:`MultiMesh<class_MultiMesh>`."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

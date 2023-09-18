@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +34,9 @@ msgstr ""
 "HTML5 버전 Godot 에디터 주의 사항은 :ref:`doc_using_the_web_editor`\\ 를 참고"
 "하세요."
 
+#, fuzzy
 msgid ""
-"Everything I do in the editor or project manager appears delayed by one "
-"frame."
+"Everything I do in the editor or project manager appears delayed by one frame"
 msgstr ""
 "에디터나 프로젝트 매니저에서 하는 모든 작업이 한 프레임 지연된 것처럼 보입니"
 "다."
@@ -58,9 +58,10 @@ msgstr ""
 "데스크톱 또는 랩톱 제조업체에서 제공하는 그래픽 드라이버가 종종 오래되었기 때"
 "문에 인텔에서 제공하는 그래픽 드라이버를 사용해야합니다."
 
+#, fuzzy
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
-"editor."
+"editor"
 msgstr ""
 "에디터에서 3D 카메라를 회전하면 그리드가 사라지고 메시가 검게 변합니다."
 
@@ -86,7 +87,8 @@ msgstr ""
 "NVIDIA Optimus와 같이 그래픽 카드를 변경할 수 있는 컴퓨터를 사용하는 경우 전"
 "용 그래픽 카드로 Godot를 실행할 수 있습니다."
 
-msgid "The editor or project takes a very long time to start."
+#, fuzzy
+msgid "The editor or project takes a very long time to start"
 msgstr "에디터 및 프로젝트가 시작하기까지 오랜 시간이 걸립니다."
 
 msgid ""
@@ -104,8 +106,9 @@ msgstr ""
 "함이 있는 주변 장치를 분리해야 합니다. 그런 다음 주변 장치를 다시 연결할 수 "
 "있습니다."
 
+#, fuzzy
 msgid ""
-"Editor tooltips in the Inspector and Node docks blink when they're displayed."
+"Editor tooltips in the Inspector and Node docks blink when they're displayed"
 msgstr "인스펙터와 노드 독의 에디터 툴팁이 화면에 나타날 때 깜빡거립니다 ."
 
 msgid ""
@@ -119,7 +122,8 @@ msgstr ""
 "하게 알려진 해결책은 Godot을 사용하는 동안 Stardock Fence를 비활성화하는 것입"
 "니다."
 
-msgid "The Godot editor appears frozen after clicking the system console."
+#, fuzzy
+msgid "The Godot editor appears frozen after clicking the system console"
 msgstr "시스템 콘솔을 클릭하면 Godot 에디터가 고정된 것처럼 보입니다."
 
 msgid ""
@@ -141,9 +145,10 @@ msgstr ""
 "이것을 해결하려면 시스템 콘솔 창을 선택하고 Enter를 눌러 선택 모드를 종료하십"
 "시오."
 
+#, fuzzy
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
-"manager and editor window."
+"manager and editor window"
 msgstr ""
 "프로젝트 매니저 및 에디터 창의 왼쪽 위 구석에 \"NO DC\"와 같은 텍스트가 나타"
 "납니다."
@@ -170,7 +175,8 @@ msgstr ""
 "Screen 0 > OpenGL Setting**\\ 에서 **Enable Graphics API Visual "
 "Indicator**\\ 를 선택 취소합니다."
 
-msgid "The project window appears blurry, unlike the editor."
+#, fuzzy
+msgid "The project window appears blurry, unlike the editor"
 msgstr "에디터와 달리 프로젝트 창이 흐릿하게 나타납니다."
 
 msgid ""
@@ -192,7 +198,8 @@ msgstr ""
 "니다. 그 전에, 프로젝트가 :ref:`multiple resolutions "
 "<doc_multiple_resolutions>`\\ 를 지원하도록 설정되어 있는지 확인하세요."
 
-msgid "The project window doesn't appear centered when I run the project."
+#, fuzzy
+msgid "The project window doesn't appear centered when I run the project"
 msgstr "프로젝트를 실행할 때 프로젝트 창이 가운데에 나타나지 않습니다."
 
 msgid ""
@@ -208,8 +215,33 @@ msgstr ""
 "록 설정되어 있어야 합니다."
 
 msgid ""
+"The editor/project freezes or displays glitched visuals after resuming the "
+"PC from suspend"
+msgstr ""
+
+msgid ""
+"This is a known issue on Linux with NVIDIA graphics when using the "
+"proprietary driver. There is no definitive fix yet, as suspend on Linux + "
+"NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+msgid ""
+"The NVIDIA driver offers an *experimental* `option to preserve video memory "
+"after suspend <https://wiki.archlinux.org/title/NVIDIA/"
+"Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve "
+"this issue. This option has been reported to work better with more recent "
+"NVIDIA driver versions."
+msgstr ""
+
+msgid ""
+"To avoid losing work, save scenes in the editor before putting the PC to "
+"sleep."
+msgstr ""
+
+#, fuzzy
+msgid ""
 "The project works when run from the editor, but fails to load some files "
-"when running from an exported copy."
+"when running from an exported copy"
 msgstr ""
 "에디터에서는 프로젝트가 잘 실행되지만 내보낸 사본에서 프로젝트를 실행할 시 일"
 "부 파일을 불러올 수 없습니다."

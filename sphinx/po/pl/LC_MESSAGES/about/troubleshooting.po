@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +34,9 @@ msgstr ""
 "Zobacz :ref:`doc_using_the_web_editor` konkretne zastrzeżenia wersji HTML5 "
 "edytora Godot."
 
+#, fuzzy
 msgid ""
-"Everything I do in the editor or project manager appears delayed by one "
-"frame."
+"Everything I do in the editor or project manager appears delayed by one frame"
 msgstr ""
 "Wszystko, co robię w edytorze lub menadżerze projektu, wydaje się być "
 "opóźnione o jedną klatkę."
@@ -60,9 +60,10 @@ msgstr ""
 "nie tegych dostarczonych przez producenta komputera stacjonarnego lub "
 "laptopa, ponieważ ich wersja jest często nieaktualna."
 
+#, fuzzy
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
-"editor."
+"editor"
 msgstr ""
 "Kiedy obracam kamerę 3D w edytorze, siatka koordynująca znika, a siatka "
 "obiektu 3D staje się czarna."
@@ -90,7 +91,8 @@ msgstr ""
 "NVIDIA Optimus, możesz użyć dedykowanej karty graficznej do uruchomienia "
 "Godota."
 
-msgid "The editor or project takes a very long time to start."
+#, fuzzy
+msgid "The editor or project takes a very long time to start"
 msgstr "Uruchomienie edytora lub projektu zajmuje bardzo dużo czasu."
 
 msgid ""
@@ -109,8 +111,9 @@ msgstr ""
 "urządzenia peryferyjne przed otwarciem edytora. Następnie możesz ponownie "
 "podłączyć urządzenie peryferyjne."
 
+#, fuzzy
 msgid ""
-"Editor tooltips in the Inspector and Node docks blink when they're displayed."
+"Editor tooltips in the Inspector and Node docks blink when they're displayed"
 msgstr ""
 "Etykietki edytora w dokach Inspektor i Węzły migają, gdy są wyświetlane."
 
@@ -125,7 +128,8 @@ msgstr ""
 "systemie Windows. Jedynym znanym obejściem jest wyłączenie Stardock Fences "
 "podczas korzystania z Godota."
 
-msgid "The Godot editor appears frozen after clicking the system console."
+#, fuzzy
+msgid "The Godot editor appears frozen after clicking the system console"
 msgstr "Po kliknięciu konsoli systemowej edytor Godot ulega zamrożeniu."
 
 msgid ""
@@ -148,9 +152,10 @@ msgstr ""
 "Aby rozwiązać ten problem, wybierz okno konsoli systemowej i naciśnij "
 "klawisz Enter, aby opuścić tryb wyboru."
 
+#, fuzzy
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
-"manager and editor window."
+"manager and editor window"
 msgstr ""
 "Niektóre teksty, takie jak „NO DC” pojawiają się w lewym górnym rogu okna "
 "menedżera projektu i edytora."
@@ -177,7 +182,8 @@ msgstr ""
 "przejdź do **X Screen 0 > OpenGL Settings** potem odznacz **Enable Graphics "
 "API Visual Indicator**."
 
-msgid "The project window appears blurry, unlike the editor."
+#, fuzzy
+msgid "The project window appears blurry, unlike the editor"
 msgstr "W przeciwieństwie do edytora okno projektu jest niewyraźne."
 
 msgid ""
@@ -200,7 +206,8 @@ msgstr ""
 "Twój projekt jest skonfigurowany do obsługi: ref: `wiele rozdzielczości "
 "<doc_multiple_resolutions>`."
 
-msgid "The project window doesn't appear centered when I run the project."
+#, fuzzy
+msgid "The project window doesn't appear centered when I run the project"
 msgstr "Okno projektu nie jest wycentrowane, kiedy uruchamiam projekt."
 
 msgid ""
@@ -216,8 +223,33 @@ msgstr ""
 "<doc_multiple_resolutions>`."
 
 msgid ""
+"The editor/project freezes or displays glitched visuals after resuming the "
+"PC from suspend"
+msgstr ""
+
+msgid ""
+"This is a known issue on Linux with NVIDIA graphics when using the "
+"proprietary driver. There is no definitive fix yet, as suspend on Linux + "
+"NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+msgid ""
+"The NVIDIA driver offers an *experimental* `option to preserve video memory "
+"after suspend <https://wiki.archlinux.org/title/NVIDIA/"
+"Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve "
+"this issue. This option has been reported to work better with more recent "
+"NVIDIA driver versions."
+msgstr ""
+
+msgid ""
+"To avoid losing work, save scenes in the editor before putting the PC to "
+"sleep."
+msgstr ""
+
+#, fuzzy
+msgid ""
 "The project works when run from the editor, but fails to load some files "
-"when running from an exported copy."
+"when running from an exported copy"
 msgstr ""
 "Projekt działa poprawnie uruchomiony przez edytor, jednak nie ładuje "
 "niektórych plików gdy jest uruchomiony z wyeksportowanej kopii."

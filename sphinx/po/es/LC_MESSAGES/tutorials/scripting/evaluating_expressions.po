@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,46 +17,50 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Evaluating expressions"
-msgstr "Evaluar Selección"
+msgstr "Evaluando expresiones"
 
 msgid ""
 "Godot provides an :ref:`class_Expression` class you can use to evaluate "
 "expressions."
 msgstr ""
+"Godot proporciona una clase :ref:`class_Expression` que puedes usar para "
+"evaluar expresiones."
 
-#, fuzzy
 msgid "An expression can be:"
-msgstr "Los nodos Expression pueden:"
+msgstr "Una expresión puede ser:"
 
 msgid "A mathematical expression such as ``(2 + 4) * 16/4.0``."
-msgstr ""
+msgstr "Una expresión matemática como ``(2 + 4) * 16/4.0``."
 
 msgid "A built-in method call like ``deg2rad(90)``."
-msgstr ""
+msgstr "Una llamada a un método integrado como ``deg2rad(90)``."
 
 msgid ""
 "A method call on an user-provided script like ``update_health()``, if "
 "``base_instance`` is set to a value other than ``null`` when calling :ref:"
 "`Expression.execute() <class_Expression_method_execute>`."
 msgstr ""
+"Una llamada a un método en un script proporcionado por el usuario, como "
+"``update_health()``, si ``base_instance`` se establece con un valor distinto "
+"de ``null`` al llamar a :ref:`Expression.execute() "
+"<class_Expression_method_execute>`."
 
 msgid ""
 "The Expression class is independent from GDScript. It's available even if "
 "you compile Godot with the GDScript module disabled."
 msgstr ""
+"La clase Expression es independiente de GDScript. Está disponible incluso si "
+"compilas Godot con el módulo GDScript desactivado."
 
-#, fuzzy
 msgid "Basic usage"
-msgstr "Configuración básica"
+msgstr "Uso básico"
 
 msgid "To evaluate a mathematical expression, use::"
-msgstr ""
+msgstr "Para evaluar una expresión matemática, utiliza::"
 
-#, fuzzy
 msgid "The following operators are available:"
-msgstr "Los siguientes métodos son usados para implementar la presentación:"
+msgstr "Los siguientes operadores estan disponibles:"
 
 msgid "Operator"
 msgstr "Operador"
@@ -64,75 +68,91 @@ msgstr "Operador"
 msgid "Notes"
 msgstr "Notas"
 
-#, fuzzy
 msgid "Addition ``+``"
-msgstr "Notas adicionales"
+msgstr "Adición ``+``"
 
 msgid ""
 "Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
 "world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
+"Correcto, también se puede utilizar para concatenar cadenas y arreglos: - "
+"``\"hello\" + \" world\"`` = ``hello world``- ``[1, 2] + [3, 4]`` = ``[1, 2, "
+"3, 4]``"
 
-#, fuzzy
 msgid "Subtraction (``-``)"
-msgstr "Resta"
+msgstr "Sustacción (``-``)"
 
-#, fuzzy
 msgid "Multiplication (``*``)"
-msgstr "multiplicativo"
+msgstr "Multiplicación (``*``)"
 
-#, fuzzy
 msgid "Division (``/``)"
-msgstr "Truevision Targa (``.tga``)"
+msgstr "División (``/``)"
 
 msgid ""
 "Performs and integer division if both operands are integers. If at least one "
 "of them is a floating-point number, returns a floating-point value."
 msgstr ""
+"Realiza una división entera si ambos operandos son enteros. Si al menos uno "
+"de ellos es un número de punto flotante, devuelve un valor de punto flotante."
 
 msgid "Modulo (``%``)"
-msgstr ""
+msgstr "Modulo o Residuo (``%``)"
 
 msgid "Returns the remainder of an integer division."
-msgstr ""
+msgstr "Devuelve el residuo de una división entera."
 
 msgid ""
 "Spaces around operators are optional. Also, keep in mind the usual `order of "
 "operations <https://en.wikipedia.org/wiki/Order_of_operations>`__ applies. "
 "Use parentheses to override the order of operations if needed."
 msgstr ""
+"Los espacios alrededor de los operadores son opcionales. Además, ten en "
+"cuenta que se aplica el `orden habitual de las operaciones <https://en."
+"wikipedia.org/wiki/Order_of_operations>`__. Utiliza paréntesis para anular "
+"el orden de las operaciones si es necesario."
 
 msgid ""
 "All the Variant types supported in Godot can be used: integers, floating-"
 "point numbers, strings, arrays, dictionaries, colors, vectors, …"
 msgstr ""
+"Todos los tipos de variantes admitidos en Godot se pueden usar: enteros, "
+"números de punto flotante, cadenas, arreglos, diccionarios, colores, "
+"vectores, entre otros…"
 
 msgid "Arrays and dictionaries can be indexed like in GDScript::"
-msgstr ""
+msgstr "Los arreglos y diccionarios se pueden indexar igual que en GDScript::"
 
 msgid "Passing variables to an expression"
-msgstr ""
+msgstr "Pasando variables a una expresión"
 
 msgid ""
 "You can pass variables to an expression. These variables will then become "
 "available in the expression's \"context\" and will be substituted when used "
 "in the expression::"
 msgstr ""
+"Puedes pasar variables a una expresión. Estas variables estarán disponibles "
+"en el \"contexto\" de la expresión y se sustituirán cuando se utilicen en la "
+"expresión:"
 
 msgid ""
 "Both the variable names and variable values **must** be specified as an "
 "array, even if you only define one variable. Also, variable names are **case-"
 "sensitive**."
 msgstr ""
+"Tanto los nombres de las variables como los valores de las variables "
+"**deben** especificarse como un arreglo, incluso si solo defines una "
+"variable. Además, los nombres de las variables son **sensibles a mayúsculas "
+"y minúsculas**."
 
-#, fuzzy
 msgid "Setting a base instance for the expression"
-msgstr "Obteniendo datos de servidores"
+msgstr "Configurando una instancia base para la expresión"
 
 msgid ""
 "By default, an expression has a base instance of ``null``. This means the "
 "expression has no base instance associated to it."
 msgstr ""
+"Por defecto, una expresión tiene una instancia base de ``null``. Esto "
+"significa que la expresión no tiene ninguna instancia base asociada a ella."
 
 msgid ""
 "When calling :ref:`Expression.execute() <class_Expression_method_execute>`, "
@@ -140,20 +160,28 @@ msgid ""
 "object instance such as ``self``, another script instance or even a "
 "singleton::"
 msgstr ""
+"Cuando llamas a :ref:`Expression.execute() "
+"<class_Expression_method_execute>`, puedes establecer el valor del parámetro "
+"``base_instance`` en una instancia específica de objeto, como ``self``, otra "
+"instancia de script o incluso un singleton::"
 
 msgid "Associating a base instance allows doing the following:"
-msgstr ""
+msgstr "Asociar una instancia base permite hacer lo siguiente:"
 
 msgid "Reference the instance's constants (``const``) in the expression."
 msgstr ""
+"Referenciar las constantes (``const``) de la instancia en la expresión."
 
 msgid "Reference the instance's member variables (``var``) in the expression."
 msgstr ""
+"Referenciar las variables miembro (``var``) de la instancia en la expresión."
 
 msgid ""
 "Call methods defined in the instance and use their return values in the "
 "expression."
 msgstr ""
+"Llamar a los métodos definidos en la instancia y utilizar sus valores de "
+"retorno en la expresión."
 
 msgid ""
 "Setting a base instance to a value other than ``null`` allows referencing "
@@ -162,13 +190,22 @@ msgid ""
 "cheating in your game, or may even introduce security vulnerabilities if you "
 "allow arbitrary clients to run expressions on other players' devices."
 msgstr ""
+"Establecer una instancia base con un valor distinto de ``null`` permite "
+"hacer referencia a constantes, variables miembro y llamar a todos los "
+"métodos definidos en el script adjunto a la instancia. Permitir que los "
+"usuarios ingresen expresiones puede permitir trampas en tu juego, o incluso "
+"introducir vulnerabilidades de seguridad si permites que clientes "
+"arbitrarios ejecuten expresiones en los dispositivos de otros jugadores. Por "
+"lo tanto, debes tener cuidado al permitir que los usuarios ingresen "
+"expresiones y asegurarte de validar y filtrar adecuadamente cualquier "
+"entrada para evitar posibles problemas."
 
-#, fuzzy
 msgid "Example script"
-msgstr "Ejemplo de GDScript"
+msgstr "Script de ejemplo"
 
 msgid "The script below demonstrates what the Expression class is capable of::"
 msgstr ""
+"El siguiente script demuestra lo que la clase Expression es capaz de hacer:"
 
 msgid "The output from the script will be::"
 msgstr "La salida de tu script será::"
@@ -181,6 +218,10 @@ msgid ""
 "the Expression class, even if no base instance is bound to the expression. "
 "The same parameters and return types are available."
 msgstr ""
+"La mayoría de los métodos disponibles en el ámbito de :ref:`class_@GDScript` "
+"están disponibles en la clase Expression, incluso si no se ha vinculado "
+"ninguna instancia base a la expresión. Los mismos parámetros y tipos de "
+"retorno están disponibles."
 
 msgid ""
 "However, unlike GDScript, parameters are **always required** even if they're "
@@ -188,6 +229,11 @@ msgid ""
 "restriction on arguments doesn't apply to user-made functions when you bind "
 "a base instance to the expression."
 msgstr ""
+"Sin embargo, a diferencia de GDScript, los parámetros **siempre son "
+"requeridos**, incluso si se especifican como opcionales en la referencia de "
+"clase. En contraste, esta restricción en los argumentos no se aplica a las "
+"funciones hechas por el usuario cuando se vincula una instancia base a la "
+"expresión."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

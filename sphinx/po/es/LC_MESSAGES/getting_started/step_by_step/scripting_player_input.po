@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,15 @@ msgstr ""
 msgid "Listening to player input"
 msgstr "Escuchando la entrada del jugador"
 
-#, fuzzy
 msgid ""
 "Building upon the previous lesson :ref:`doc_scripting_first_script`, let's "
 "look at another important feature of any game: giving control to the player. "
 "To add this, we need to modify our ``Sprite.gd`` code."
 msgstr ""
-"Sobre la base de la lección anterior, veamos otra característica importante "
-"de cualquier juego: dar control al jugador. Para agregar esto, necesitamos "
-"modificar nuestro código."
+"Basándonos en la lección anterior :ref:`doc_scripting_first_script`, vamos a "
+"ver otra característica importante de cualquier juego: dar el control al "
+"jugador. Para añadir esto, necesitamos modificar nuestro código ``Sprite."
+"gd``."
 
 msgid "You have two main tools to process the player's input in Godot:"
 msgstr ""
@@ -65,15 +65,14 @@ msgstr ""
 "Vamos a usar el singleton ``Input`` aquí, ya que necesitamos saber si el "
 "jugador quiere girar o mover cada frame."
 
-#, fuzzy
 msgid ""
 "For turning, we should use a new variable: ``direction``. In our "
 "``_process()`` function, replace the ``rotation += angular_speed * delta`` "
 "line with the code below."
 msgstr ""
-"Para girar, deberíamos usar una nueva variable: ``direction``. Actualiza la "
-"parte superior de la función ``_process()`` así, hasta la línea donde "
-"incrementamos la ``rotation`` del sprite."
+"Para girar, debemos utilizar una nueva variable: ``direction``. En nuestra "
+"función ``_process()``, sustituye la línea ``rotation += angular_speed * "
+"delta`` por el código siguiente."
 
 msgid ""
 "Our ``direction`` local variable is a multiplier representing the direction "
@@ -168,9 +167,8 @@ msgstr ""
 "Si el jugador presiona la acción \"ui_up\", actualizamos el valor de la "
 "velocidad, lo que hace que el sprite se mueva hacia adelante."
 
-#, fuzzy
 msgid "Complete script"
-msgstr "Ejemplo de GDScript"
+msgstr "Script completo"
 
 msgid "Here is the complete ``Sprite.gd`` file for reference."
 msgstr "Aquí está el archivo ``Sprite.gd`` completo como referencia."
@@ -227,13 +225,12 @@ msgstr ""
 "en cualquier parte de su código. En particular, podrás usarlo en el bucle "
 "``_process()``."
 
-#, fuzzy
 msgid ""
 "In the next lesson :ref:`doc_signals`, we'll build upon the relationship "
 "between scripts and nodes by having our nodes trigger code in scripts."
 msgstr ""
-"En la siguiente lección, desarrollaremos la relación entre los scripts y los "
-"nodos haciendo que nuestros nodos activen el código en los scripts."
+"En la siguiente lección :ref:`doc_signals`, ampliaremos la relación entre "
+"scripts y nodos haciendo que nuestros nodos activen código en scripts."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

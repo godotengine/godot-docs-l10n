@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -213,7 +213,6 @@ msgstr ""
 "імітувати поширення непрямого світло. Нижче наведено порівняння, з точки "
 "зору якості, між використанням плоского навколишнього кольору та GIProbe:"
 
-#, fuzzy
 msgid ""
 "Using one of the methods described above, objects get constant ambient "
 "lighting replaced by ambient light from the probes."
@@ -304,7 +303,6 @@ msgstr ""
 "оператор тонування, але він змушує яскраве освітлення виглядати схожим на "
 "плями, з помітним відсіканням вихідних кольорів."
 
-#, fuzzy
 msgid ""
 "**Reinhardt:** Performs a variation on rendered pixels' colors by this "
 "formula: ``color = color / (1 + color)``. This avoids clipping bright "
@@ -312,7 +310,7 @@ msgid ""
 msgstr ""
 "**Reinhardt:** Виконує варіацію вимальованих кольорів пікселів за цією "
 "формулою: ``color = color / (1 + color)``. Це дозволяє уникнути відсікання "
-"яскравих світлих тонів, але отримане зображення може виглядати трохи нудним."
+"яскравих світлих тонів, але отримане зображення може виглядати трохи тусклим."
 
 msgid ""
 "**Filmic:** This avoids clipping bright highlights, with a resulting image "
@@ -522,7 +520,6 @@ msgstr ""
 "**Roughness** буде застосовувати розмиття екранного простору для імітації "
 "шорсткості об'єктів з матеріалами з цією характеристикою."
 
-#, fuzzy
 msgid ""
 "Keep in mind that screen-space-reflections only work for reflecting opaque "
 "geometry. Transparent materials won't be reflected, as they don't write to "
@@ -530,7 +527,9 @@ msgid ""
 "or ``DEPTH_TEXTURE``."
 msgstr ""
 "Майте на увазі, що екран-простір-відбивання відбивають тільки непрозору "
-"геометрію. Прозорі об'єкти не відбиваються."
+"геометрію. Прозорі матеріали не відбиваються оскільки вони не записуються у "
+"буфер глибини. Це також стосується шейдерів, які використовують "
+"``SCREEN_TEXTURE``, або ``DEPTH_TEXTURE``."
 
 msgid "Screen-Space Ambient Occlusion (SSAO)"
 msgstr ""
@@ -791,13 +790,12 @@ msgstr ""
 "використовувати, але може добре виглядати з низькою інтенсивністю Bloom "
 "(виробляє ефект, схожий на сон)."
 
-#, fuzzy
 msgid ""
 "**Screen** ensures glow never brightens more than itself and it works great "
 "as an all around."
 msgstr ""
-"**Screen** гарантує, що світіння ніколи не світлішає більше, ніж екран, і "
-"він чудово працює як навколо."
+"**Screen** гарантує, що світіння ніколи не буде світліше за себе, і він "
+"чудово працює на всьому."
 
 msgid ""
 "**Softlight** is the default and weakest one, producing only a subtle color "

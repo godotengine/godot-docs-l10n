@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,18 +28,14 @@ msgstr ""
 "para mostrar elementos como la puntuación, un mensaje de \"game over\" y un "
 "botón de reinicio."
 
-#, fuzzy
 msgid ""
 "Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node "
 "named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational "
 "display that appears as an overlay on top of the game view."
 msgstr ""
-"La pieza final de nuestro juego es una UI (interfaz de usuario): una "
-"interfaz para mostrar cosas como la puntuación, el mensaje de \"juego "
-"terminado\" y un botón de reinicio. Crea una nueva escena, agrega un nodo :"
-"ref:`CanvasLayer <class_CanvasLayer>` llamado ``HUD``. \"HUD\" viene de "
-"\"heads-up display\" y es la serie de elementos informativos que aparecen "
-"encima de la vista de juego."
+"Crea una nueva escena y añade un nodo :ref:`CanvasLayer <class_CanvasLayer>` "
+"llamado ``HUD``. \"HUD\" son las siglas de \"heads-up display\", una "
+"pantalla informativa que aparece superpuesta a la vista del juego."
 
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
@@ -98,38 +94,34 @@ msgstr ""
 "escala bien. En los recursos del juego se incluye una fuente llamada "
 "\"Xolonium-Regular.ttf\". Para usar esta fuente, haz lo siguiente:"
 
-#, fuzzy
 msgid ""
 "Under **Theme overrides > Fonts** click on the empty box and select \"New "
 "DynamicFont\""
-msgstr "Dentro de \"Custom Fonts\", seleccionar \"New DynamicFont\""
+msgstr ""
+"En **Theme overrides > Fonts** haga clic en la casilla vacía y seleccione "
+"\"Nuevo DynamicFont\""
 
-#, fuzzy
 msgid ""
 "Click on the \"DynamicFont\" you added, and under **Font > FontData**, "
 "choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
 msgstr ""
-"Haz clic en la \"DynamicFont\" agregada y, dentro de \"Font Data\", elige "
-"\"Load\" y selecciona el archivo \"Xolonium-Regular.ttf\". Deberás también "
-"cambiar el ``Size`` (tamaño) de la fuente. Un valor de ``64`` funcionará "
-"bien."
+"Haz clic en la \"DynamicFont\" agregada, y en \"Font Data\", elige \"Load\" "
+"y selecciona el archivo \"Xolonium-Regular.ttf\"."
 
 msgid "Set the \"Size\" property under ``Settings``, ``64`` works well."
 msgstr ""
-"Establezca la propiedad \"Tamaño\" dentro de ``Ajustes``, ``64`` suele "
+"Establezca la propiedad \"Tamaño\" debajo de ``Ajustes``, ``64`` suele "
 "funcionar bien."
 
-#, fuzzy
 msgid ""
 "Once you've done this on the ``ScoreLabel``, you can click the down arrow "
 "next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
 "place on the other two Control nodes."
 msgstr ""
 "Una vez que haz hecho esto en ``ScoreLabel``, puedes hacer clic en la flecha "
-"junto a la propiedad DynamicFont y seleccionar \"Copiar\", luego \"Pegar\" "
-"en el mismo lugar en los otros dos nodos Control."
+"junto a la propiedad Font y seleccionar \"Copiar\", luego \"Pegar\" en el "
+"mismo lugar en los otros dos nodos de Control."
 
-#, fuzzy
 msgid ""
 "**Anchors and Margins:** ``Control`` nodes have a position and size, but "
 "they also have anchors and margins. Anchors define the origin - the "
@@ -138,11 +130,11 @@ msgid ""
 "control node's edges to its anchor."
 msgstr ""
 "**Anclas y Márgenes:** Nodos ``Control`` tienen posición y tamaño, pero "
-"también tienen anclas (anchor) y márgenes (margin). Anclas definen el origin "
+"también tienen anclas (anchor) y márgenes (margin). Anclas definen el origen "
 "- El punto de referencia para los bordes del nodo. Los márgenes se "
-"actualizan automaticamente cuando cambias el tamaño de un nodo Control. "
-"Representan la distancia del borde al ancla del nodo Control. Para más "
-"detalles, ver :ref:`doc_design_interfaces_with_the_control_nodes`."
+"actualizan automáticamente cuando mueves o cambias el tamaño de un nodo "
+"Control. Representan la distancia del borde al ancla del nodo Control. Para "
+"más detalles, ver :ref:`doc_design_interfaces_with_the_control_nodes`."
 
 msgid ""
 "Arrange the nodes as shown below. Click the \"Layout\" button to set a "
@@ -337,13 +329,12 @@ msgstr ""
 "nodo). Al lado de \"Señales\", haz clic en \"Grupos\" y puedes escribir un "
 "nuevo nombre de grupo y hacer clic en \"Añadir\"."
 
-#, fuzzy
 msgid ""
 "Now all mobs will be in the \"mobs\" group. We can then add the following "
 "line to the ``new_game()`` function in ``Main``:"
 msgstr ""
 "Ahora todos los enemigos estarán en el grupo \"mobs\". Podremos entonces "
-"agregar la siguiente línea a la función ``game_over()`` en ``Main``:"
+"agregar la siguiente línea a la función ``new_game()`` en ``Main``:"
 
 msgid ""
 "The ``call_group()`` function calls the named function on every node in a "

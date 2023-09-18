@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "VR starter tutorial part 2"
-msgstr "Videos Tutoriais"
+msgstr "Tutorial inicial de VR parte 2"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -36,17 +35,15 @@ msgid ""
 "called ``VR_Interactable_Rigidbody``."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "You can find the finished project on the `OpenVR GitHub repository <https://"
 "github.com/GodotVR/godot_openvr_fps>`__."
 msgstr ""
-"Você pode encontrar o projeto finalizado em`OpenVR GitHub repository "
-"<https://github.com/GodotVR/godot_openvr_fps>`_."
+"Você pode encontrar o projeto terminado no repositório GitHub `OpenVR "
+"<https://github.com/GodotVR/godot_openvr_fps>`__."
 
-#, fuzzy
 msgid "Adding destroyable targets"
-msgstr "Adicionando uma torre"
+msgstr "Adicionando alvos destrutíveis"
 
 msgid ""
 "Before we make any of the special :ref:`RigidBody <class_RigidBody>`-based "
@@ -228,9 +225,8 @@ msgid ""
 "Add the following code to ``Game.gd``:"
 msgstr ""
 
-#, fuzzy
 msgid "Let's go through what this function does real quick:"
-msgstr "Vamos olhar cada propriedade por vez:"
+msgstr "Vamos ver o que essa função faz bem rápido:"
 
 msgid ""
 "First, it removes one from the ``spheres_left`` variable. It then checks to "
@@ -248,9 +244,8 @@ msgid ""
 "<class_RigidBody>`-based nodes that can damage the targets."
 msgstr ""
 
-#, fuzzy
 msgid "Adding a pistol"
-msgstr "Adicionando um script"
+msgstr "Adicionando uma pistola"
 
 msgid ""
 "Let's add a pistol as the first interactable :ref:`RigidBody "
@@ -481,7 +476,7 @@ msgid ""
 msgstr ""
 
 msgid "Pistol finished"
-msgstr ""
+msgstr "Pistola terminada"
 
 msgid ""
 "That is all we need to do to have working pistols in the project! Go ahead "
@@ -491,9 +486,8 @@ msgid ""
 "into pieces."
 msgstr ""
 
-#, fuzzy
 msgid "Adding a shotgun"
-msgstr "Adicionando um script"
+msgstr "Adicionando uma espingarda"
 
 msgid "Next let's add a shotgun to the VR project."
 msgstr ""
@@ -531,9 +525,8 @@ msgid ""
 "to how similar these scripts are, let's just focus on the changes."
 msgstr ""
 
-#, fuzzy
 msgid "Explaining the shotgun code"
-msgstr "Liberando recursos"
+msgstr "Explicando o código da espingarda"
 
 msgid ""
 "Like with the pistol, the shotgun extends ``VR_Interactable_Rigidbody`` so "
@@ -638,7 +631,7 @@ msgid ""
 msgstr ""
 
 msgid "Shotgun finished"
-msgstr ""
+msgstr "Espingarda finalizada"
 
 msgid ""
 "Everything else is exactly the same as the pistol, with at most just some "
@@ -650,9 +643,8 @@ msgid ""
 "looking around the back of one of the walls (not in the building though!)."
 msgstr ""
 
-#, fuzzy
 msgid "Adding a bomb"
-msgstr "Adicionando uma Função"
+msgstr "Adicionando uma bomba"
 
 msgid ""
 "Okay, let's add a different special :ref:`RigidBody <class_RigidBody>`. "
@@ -948,7 +940,7 @@ msgid ""
 msgstr ""
 
 msgid "Bomb finished"
-msgstr ""
+msgstr "Bomba terminada"
 
 msgid ""
 "Now the bomb is ready to go! You can find the bombs in the orange building."
@@ -963,9 +955,8 @@ msgid ""
 "inaccurately calculated velocities."
 msgstr ""
 
-#, fuzzy
 msgid "Adding a sword"
-msgstr "Adicionando um script"
+msgstr "Adicionando uma espada"
 
 msgid ""
 "Let's add one last special :ref:`RigidBody <class_RigidBody>`-based node "
@@ -1018,9 +1009,8 @@ msgstr ""
 msgid "Let's go over how this script works!"
 msgstr "Vamos ver como esse script funciona!"
 
-#, fuzzy
 msgid "Explaining the sword code"
-msgstr "Liberando recursos"
+msgstr "Explicando o código da espada"
 
 msgid ""
 "Like with the other special :ref:`RigidBody <class_RigidBody>` nodes, the "
@@ -1140,16 +1130,15 @@ msgid ""
 msgstr ""
 
 msgid "Sword finished"
-msgstr ""
+msgstr "Espada terminada"
 
 msgid ""
 "With that done, you can now slice through the targets! You can find the "
 "sword in the corner in between the shotgun and the pistol."
 msgstr ""
 
-#, fuzzy
 msgid "Updating the target UI"
-msgstr "Preparando o projeto"
+msgstr "Atualização da UI de destino"
 
 msgid "Let's update the UI as the sphere targets are destroyed."
 msgstr ""
@@ -1201,9 +1190,8 @@ msgstr ""
 msgid "Let's quickly go over how this script works."
 msgstr "Vamos examinar rapidamente como esse script funciona."
 
-#, fuzzy
 msgid "Explaining the reset box code"
-msgstr "Liberando recursos"
+msgstr "Explicando o código da caixa de redefinição"
 
 msgid ""
 "Like with the other special :ref:`RigidBody <class_RigidBody>`-based objects "
@@ -1251,7 +1239,7 @@ msgid ""
 msgstr ""
 
 msgid "Reset box finished"
-msgstr ""
+msgstr "Reset box terminada"
 
 msgid ""
 "With that done, when you grab and interact with the reset box, the entire "
@@ -1264,7 +1252,7 @@ msgid ""
 msgstr ""
 
 msgid "Final notes"
-msgstr ""
+msgstr "Notas finais"
 
 msgid "Whew! That was a lot of work."
 msgstr ""
@@ -1288,4 +1276,4 @@ msgstr ""
 "godot_openvr_fps>`__, na aba Releases (Lançamentos)!"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

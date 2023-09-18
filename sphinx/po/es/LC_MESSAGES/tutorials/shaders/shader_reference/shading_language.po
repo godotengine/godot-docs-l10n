@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,15 +32,14 @@ msgstr ""
 "los tipos de datos y funciones están soportados y los pocos que no figuran "
 "serán agregados posteriormente."
 
-#, fuzzy
 msgid ""
 "If you are already familiar with GLSL, the :ref:`Godot Shader Migration "
 "Guide<doc_converting_glsl_to_godot_shaders>` is a resource that will help "
 "you transition from regular GLSL to Godot's shading language."
 msgstr ""
-"Si ya estás familiarizado con el GLSL, la :ref:`Godot Shader Migration "
-"Guide<doc_migrating_to_godot_shader_language>` es un recurso que te ayudará "
-"a pasar del GLSL regular al lenguaje shader de Godot."
+"Si ya estás familiarizado con GLSL, la :ref:`Guía de migración de shaders de "
+"Godot <doc_converting_glsl_to_godot_shaders>` es un recurso que te ayudará a "
+"hacer la transición desde GLSL regular al lenguaje de sombreado de Godot."
 
 msgid "Data types"
 msgstr "Tipos de datos"
@@ -292,16 +291,15 @@ msgstr ""
 "y \"a\" también funciona y es equivalente. Usa la que se ajuste mejor al "
 "caso."
 
-#, fuzzy
 msgid ""
 "For matrices, use the ``m[column][row]`` indexing syntax to access each "
 "scalar, or ``m[idx]`` to access a vector by row index. For example, for "
 "accessing the y position of an object in a mat4 you use ``m[3][1]``."
 msgstr ""
-"Para matrices, se utiliza indexación ``m[fila][columna]`` para acceder a "
-"cada escalar, o ``m[índice]`` para acceder al vector por índice de fila. Por "
-"ejemplo, para acceder a la posición Y de un objeto en mat4, deberás usar la "
-"sintaxis ``m[3][1]``."
+"Para las matrices, utiliza la sintaxis de indexación ``m[columna][fila]`` "
+"para acceder a cada escalar o ``m[idx]`` para acceder a un vector por índice "
+"de fila. Por ejemplo, para acceder a la posición y de un objeto en una mat4, "
+"se utiliza ``m[3][1]``."
 
 msgid "Constructing"
 msgstr "Construcción"
@@ -683,17 +681,16 @@ msgstr "Ejemplo:"
 msgid "Varyings"
 msgstr "Varyings"
 
-#, fuzzy
 msgid ""
 "To send data from the vertex to the fragment (or light) processor function, "
 "*varyings* are used. They are set for every primitive vertex in the *vertex "
 "processor*, and the value is interpolated for every pixel in the *fragment "
 "processor*."
 msgstr ""
-"Para enviar datos desde la función vertex hacia la función fragment, se "
-"utilizan *varyings*. Se establecen para cada vértice primitivo en el "
-"*procesador vertex*, y el valor se interpola (y se corrige la perspectiva) "
-"al alcanzar cada píxel en el procesador fragment."
+"Para enviar datos desde el procesador de vértices al procesador de "
+"fragmentos (o luz), se utilizan *varyings*. Se establecen para cada vértice "
+"primitivo en el procesador de vértices, y el valor se interpola para cada "
+"píxel en el *procesador de fragmentos*."
 
 msgid "Varying can also be an array:"
 msgstr "La variación también puede ser un array:"
@@ -703,16 +700,24 @@ msgid ""
 "*varying* keyword. To do so you can assign it in the *fragment* and later "
 "use it in the *light* function."
 msgstr ""
+"También es posible enviar datos desde el procesador de fragmentos al "
+"procesador de luz utilizando la palabra clave *varying*. Para hacerlo, "
+"puedes asignar un valor a una variable *varying* en el procesador de "
+"fragmentos y luego utilizarla en la función de luz."
 
 msgid ""
 "Note that varying may not be assigned in custom functions or a *light "
 "processor* function like:"
 msgstr ""
+"Ten en cuenta que las variables *varying* no se pueden asignar en funciones "
+"personalizadas o en la función del *procesador de luz*, como:"
 
 msgid ""
 "This limitation was introduced to prevent incorrect usage before "
 "initialization."
 msgstr ""
+"Esta limitación se introdujo para evitar un uso incorrecto antes de la "
+"inicialización."
 
 msgid "Interpolation qualifiers"
 msgstr "Calificadores de interpolación"
@@ -777,15 +782,15 @@ msgstr ""
 "el shader. Debe coincidir *exactamente* con el nombre del uniforme en el "
 "shader o de lo contrario no será reconocido."
 
-#, fuzzy
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
 "uniform is used, and how the editor should allow users to modify it."
 msgstr ""
-"Cualquier tipo GLSL excepto *void* puede ser un uniform. Adicionalmente, "
-"Godot provee shader hints opcionales para hacer que el compilador entienda "
-"para qué se usará el uniform."
+"Cualquier tipo de GLSL, excepto *void*, puede ser un uniforme. Además, Godot "
+"proporciona sugerencias opcionales para el shader (*pistas*) para que el "
+"compilador comprenda para qué se utiliza el uniforme y cómo el editor debe "
+"permitir a los usuarios modificarlo."
 
 msgid ""
 "It's important to understand that textures that are supplied as color "
@@ -806,9 +811,8 @@ msgstr "Hint"
 msgid "hint_color"
 msgstr "hint_color"
 
-#, fuzzy
 msgid "Used as color."
-msgstr "Usado como color"
+msgstr "Utilizado como color."
 
 msgid "**int, float**"
 msgstr "**int, float**"
@@ -816,30 +820,26 @@ msgstr "**int, float**"
 msgid "hint_range(min, max[, step])"
 msgstr "hint_range(min, max[, step])"
 
-#, fuzzy
 msgid "Restricted to values in a range (with min/max/step)."
-msgstr "Se utiliza como rango (con mín./máx./paso)"
+msgstr "Restringido a valores en un rango (con min/max/step)."
 
 msgid "hint_albedo"
 msgstr "hint_albedo"
 
-#, fuzzy
 msgid "Used as albedo color, default white."
-msgstr "Usado como color de albedo, blanco por defecto"
+msgstr "Utilizado como color del albedo, por defecto blanco."
 
 msgid "hint_black_albedo"
 msgstr "hint_black_albedo"
 
-#, fuzzy
 msgid "Used as albedo color, default black."
-msgstr "Usado como color de albedo, negro por defecto"
+msgstr "Utilizado como color de albedo, por defecto negro."
 
 msgid "hint_normal"
 msgstr "hint_normal"
 
-#, fuzzy
 msgid "Used as normalmap."
-msgstr "Usado como normalmap"
+msgstr "Utilizado como normalmap."
 
 msgid "hint_white"
 msgstr "hint_white"
@@ -902,9 +902,8 @@ msgstr ""
 msgid "Uniforms can also be assigned default values:"
 msgstr "A los uniforms se les pueden asignar valores por defecto:"
 
-#, fuzzy
 msgid "Built-in variables"
-msgstr "Editando variables"
+msgstr "Variables incorporadas"
 
 msgid ""
 "A large number of built-in variables are available, like ``UV``, ``COLOR`` "
@@ -913,17 +912,20 @@ msgid ""
 "(``vertex``, ``fragment`` or ``light``). For a list of the build-in "
 "variables that are available, please see the corresponding pages:"
 msgstr ""
+"Existe una gran cantidad de variables incorporadas disponibles, como ``UV``, "
+"``COLOR`` y ``VERTEX``. Las variables disponibles dependen del tipo de "
+"shader (``spatial``, ``canvas_item`` o ``particle``) y la función utilizada "
+"(``vertex``, ``fragment`` o ``light``). Para ver una lista de las variables "
+"incorporadas disponibles, consulta las páginas correspondientes:"
 
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`doc_spatial_shader`"
+msgstr ":ref:`Shaders espaciales <doc_spatial_shader>`"
 
 msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
 msgstr ":ref:`CanvasItem shaders <doc_canvas_item_shader>`"
 
-#, fuzzy
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
-msgstr ":ref:`doc_particle_shader`"
+msgstr ":ref:`Shaders de partículas <doc_particle_shader>`"
 
 msgid "Built-in functions"
 msgstr "Funciones integradas"

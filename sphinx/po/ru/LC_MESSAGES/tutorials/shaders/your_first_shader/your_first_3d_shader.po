@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -71,6 +71,13 @@ msgid ""
 "`PrimitiveMeshes <class_primitivemesh>` that allow you to add basic geometry "
 "to a scene without importing Meshes."
 msgstr ""
+"В 3D объекты рисуются с помощью :ref:`Meshes <class_Mesh>`. Сетки - это тип "
+"ресурса, который хранит геометрию (форму объекта) и материалы (цвет и "
+"реакцию объекта на свет) в единицах, называемых \"поверхностями\". Сетка "
+"может иметь несколько поверхностей или только одну. Как правило, вы "
+"импортируете сетку из другой программы (например, Blender). Но в Godot также "
+"есть несколько :ref:`PrimitiveMeshes <class_primitivemesh>`, которые "
+"позволяют добавить базовую геометрию в сцену без импорта мешей."
 
 msgid ""
 "There are multiple node types that you can use to draw a mesh. The main one "

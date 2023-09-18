@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -588,7 +588,7 @@ msgid ""
 msgstr ""
 
 msgid "The effect will be more noticeable in Godot 4."
-msgstr ""
+msgstr "L'effetto sarà più evidente in Godot 4."
 
 msgid "Anisotropy"
 msgstr "Anisotropia"
@@ -651,6 +651,44 @@ msgid ""
 "life."
 msgstr ""
 
+msgid ""
+"Remember to use a transparent albedo texture (or reduce the albedo color's "
+"alpha channel) to make refraction visible, as refraction relies on "
+"transparency to have a visible effect."
+msgstr ""
+
+msgid ""
+"A normal map can optionally be specified in the **Refraction Texture** "
+"property to allow distorting the refraction's direction on a per-pixel basis."
+msgstr ""
+
+msgid ""
+"Refraction is implemented as a screen-space effect and forces the material "
+"to be transparent. This makes the effect relatively fast, but this results "
+"in some limitations:"
+msgstr ""
+
+msgid ""
+":ref:`Transparency sorting "
+"<doc_3d_rendering_limitations_transparency_sorting>` issues may occur."
+msgstr ""
+
+msgid ""
+"The refractive material cannot refract onto itself, or onto other "
+"transparent materials. A refractive material behind another transparent "
+"material will be invisible."
+msgstr ""
+
+msgid ""
+"Off-screen objects cannot appear in the refraction. This is most noticeable "
+"with high refraction strength values."
+msgstr ""
+
+msgid ""
+"Opaque materials in front of the refractive material will appear to have "
+"\"refracted\" edges, even though they shouldn't."
+msgstr ""
+
 msgid "Detail"
 msgstr "Dettaglio"
 
@@ -662,6 +700,7 @@ msgstr ""
 
 msgid "There are several settings that control how detail is used."
 msgstr ""
+"Ci sono vari settaggi che controllano come viene utilizzato il dettaglio."
 
 msgid ""
 "Mask: The detail mask is a black and white image used to control where the "

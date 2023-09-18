@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,6 @@ msgstr "Uso de un editor de texto externo"
 msgid "This page explains how to code using an external text editor."
 msgstr "Esta página explica como codificar usando un editor de texto externo."
 
-#, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
 "Visual Studio Code. Browse to the relevant editor settings: ``Editor -> "
@@ -31,10 +30,9 @@ msgid ""
 msgstr ""
 "Godot se puede usar con un editor de texto externo, como Sublime Text o "
 "Visual Studio Code. Para habilitar un editor de texto externo, navegue a la "
-"configuración del editor relevante a través de: \"Editor -> Editor Settings -"
-"> Text Editor -> External\""
+"configuración del editor relevante a través de: ``Editor -> Editor Settings -"
+"> Text Editor -> External``"
 
-#, fuzzy
 msgid ""
 "There are two fields: the executable path and command-line flags. The flags "
 "allow you to integrate the editor with Godot, passing it the file path to "
@@ -83,7 +81,7 @@ msgid "Editor"
 msgstr "Editor"
 
 msgid "Exec Flags"
-msgstr "Exec Flags"
+msgstr "Ejecutar Banderas"
 
 msgid "Geany/Kate"
 msgstr "Geany / Kate"
@@ -100,9 +98,8 @@ msgstr "{archivo}:{linea}"
 msgid "JetBrains Rider"
 msgstr "JetBrains Rider"
 
-#, fuzzy
 msgid "``{project} --line {line} {file}``"
-msgstr "-\\-linea {linea} {archivo}"
+msgstr "``{project} --line {line} {file}``"
 
 msgid "Visual Studio Code"
 msgstr "Visual Studio Code"
@@ -117,34 +114,33 @@ msgid "``\"+call cursor({line}, {col})\" {file}``"
 msgstr "``\"+call cursor({line}, {col})\" {file}``"
 
 msgid "Emacs"
-msgstr ""
+msgstr "Emacs*"
 
-#, fuzzy
 msgid "``emacs +{line}:{col} {file}``"
-msgstr "``\"+call cursor({line}, {col})\" {file}``"
+msgstr "``emacs +{line}:{col} {file}``"
 
-#, fuzzy
 msgid ""
 "For Visual Studio Code, you will have to point to the ``code.cmd`` file. For "
 "Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
 "server mode."
-msgstr "Para Visual Studio Code, deberá señalar el archivo `` code.cmd``."
+msgstr ""
+"Para Visual Studio Code, deberás hacer referencia al archivo ``code.cmd``. "
+"Para Emacs, puedes llamar a ``emacsclient`` en lugar de ``emacs`` si estás "
+"utilizando el modo servidor."
 
-#, fuzzy
 msgid "Official editor plugins"
-msgstr "Plugin Git oficial"
+msgstr "Plugins oficiales del editor"
 
 msgid "We have official plugins for the following code editors:"
-msgstr ""
+msgstr "Tenemos complementos oficiales para los siguientes editores de código:"
 
-#, fuzzy
 msgid ""
 "`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
 
-#, fuzzy
 msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
+msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 
 msgid "Translation status"
 msgstr "Estado de traducción"

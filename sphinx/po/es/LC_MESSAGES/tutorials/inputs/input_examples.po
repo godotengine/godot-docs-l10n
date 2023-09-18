@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -221,6 +221,12 @@ msgid ""
 "keyboards feature antighosting at a hardware level, but this feature is "
 "generally not present on low-end keyboards and laptop keyboards."
 msgstr ""
+"Debido al *efecto ghosting* del teclado, es posible que no se registren "
+"todas las pulsaciones de teclas al mismo tiempo si se presionan demasiadas "
+"teclas a la vez. Debido a su ubicación en el teclado, ciertas teclas son más "
+"propensas al efecto ghosting que otras. Algunos teclados cuentan con "
+"tecnología antighosting a nivel de hardware, pero esta característica "
+"generalmente no está presente en teclados de gama baja y teclados de laptop."
 
 msgid ""
 "As a result, it's recommended to use a default keyboard layout that is "
@@ -228,11 +234,14 @@ msgid ""
 "Stack Exchange question <https://gamedev.stackexchange.com/a/109002>`__ for "
 "more information."
 msgstr ""
+"Como resultado, se recomienda utilizar un diseño de teclado predeterminado "
+"que esté diseñado para funcionar bien en un teclado sin tecnología "
+"antighosting. Consulta en `Gamedev Stack Exchange <https://gamedev."
+"stackexchange.com/a/109002>`__ para obtener más información al respecto."
 
 msgid "Keyboard modifiers"
 msgstr "Modificadores de teclado"
 
-#, fuzzy
 msgid ""
 "Modifier properties are inherited from :ref:`InputEventWithModifiers "
 "<class_InputEventWithModifiers>`. This allows you to check for modifier "

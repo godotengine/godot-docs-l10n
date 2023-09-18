@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Killing the player"
-msgstr "Движение Игрока"
+msgstr "Убийство игрока"
 
 msgid ""
 "We can kill enemies by jumping on them, but the player still can't die. "
@@ -96,7 +95,6 @@ msgstr ""
 msgid "The wider the cylinder, the more easily the player will get killed."
 msgstr "Чем шире цилиндр, тем легче будет убить игрока."
 
-#, fuzzy
 msgid ""
 "Next, select the *MobDetector* node again, and in the *Inspector*, turn off "
 "its *Monitorable* property. This makes it so other physics nodes cannot "
@@ -105,8 +103,8 @@ msgid ""
 "\"enemies\" layer."
 msgstr ""
 "Затем снова выберите узел *MobDetector* и в инспекторе отключите его "
-"свойство *Monitorable*. Это сделает так, что другие физические узлы не "
-"смогут обнаружить эту область. Дополнительное свойство *Monitoring* "
+"свойство *Monitorable*. Это свойство сделает так, что другие физические узлы "
+"не смогут обнаружить эту область. Дополнительное свойство *Monitoring* "
 "позволяет ему обнаруживать столкновения. Затем удалите *Collision -> Layer* "
 "и установите маску на слой \"enemies\"."
 
@@ -166,9 +164,8 @@ msgstr ""
 "фигур столкновения *Player* и *Mob*'. Вам может понадобиться переместить их "
 "и изменить их размер, чтобы добиться полноценного ощущения игры."
 
-#, fuzzy
 msgid "Ending the game"
-msgstr "Запуск игры"
+msgstr "Завершение игры"
 
 msgid ""
 "We can use the *Player*\\ 's ``hit`` signal to end the game. All we need to "
@@ -216,9 +213,8 @@ msgstr ""
 "увидите, как можно сделать игру более живой с помощью минималистичных "
 "анимаций."
 
-#, fuzzy
 msgid "Code checkpoint"
-msgstr "Переключить точку останова"
+msgstr "Кодовая контрольная точка"
 
 msgid ""
 "Here are the complete scripts for the *Main*, *Mob*, and *Player* nodes, for "

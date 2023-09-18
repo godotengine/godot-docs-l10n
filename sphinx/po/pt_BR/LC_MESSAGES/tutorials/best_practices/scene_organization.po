@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Scene organization"
-msgstr "Organização do projeto"
+msgstr "Organização da cena"
 
 msgid ""
 "This article covers topics related to the effective organization of scene "
@@ -269,7 +268,6 @@ msgstr "`YAGNI <https://pt.wikipedia.org/wiki/YAGNI>`_"
 msgid "Choosing a node tree structure"
 msgstr "Escolhendo uma estrutura de árvore de nós"
 
-#, fuzzy
 msgid ""
 "So, a developer starts work on a game only to stop at the vast possibilities "
 "before them. They might know what they want to do, what systems they want to "
@@ -301,7 +299,7 @@ msgstr ""
 "caso, seria um nó Main."
 
 msgid "Node \"Main\" (main.gd)"
-msgstr ""
+msgstr "Node \"Main\" (main.gd)"
 
 msgid ""
 "The ``main.gd`` script would then serve as the primary controller of one's "
@@ -319,10 +317,10 @@ msgstr ""
 "gerencie os vários menus e widgets de que o projeto precisa."
 
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr ""
+msgstr "Node2D/Spatial \"World\" (game_world.gd)"
 
 msgid "Control \"GUI\" (gui.gd)"
-msgstr ""
+msgstr "Control \"GUI\" (gui.gd)"
 
 msgid ""
 "When changing levels, one can then swap out the children of the \"World\" "
@@ -378,17 +376,16 @@ msgstr ""
 "do \"Mundo\"; ou ser adicionado manualmente como filho direto da raiz. Caso "
 "contrário, os nós da GUI também se excluiriam durante as transições de cena."
 
-#, fuzzy
 msgid ""
 "If one has systems that modify other systems' data, one should define those "
 "as their own scripts or scenes rather than autoloads. For more information "
 "on the reasons, please see the :ref:`Autoloads versus regular nodes "
 "<doc_autoloads_versus_internal_nodes>` documentation."
 msgstr ""
-"Se houverem sistemas que modificam os dados de outros sistemas, deve-se "
-"defini-los como seus próprios scripts ou cenas, em vez de carregamentos "
-"automáticos. Para mais informações sobre os motivos, consulte a "
-"documentação :ref:`Autoloads versus nós normais "
+"Se alguém tem sistemas que modificam os dados de outros sistemas, deve-se "
+"defini-los como seus próprios scripts ou cenas, em vez de cargas "
+"automáticas. Para obter mais informações sobre os motivos, consulte a "
+"documentação :ref:`Autoloads versus regular nodes "
 "<doc_autoloads_versus_internal_nodes>`."
 
 msgid ""
@@ -560,7 +557,6 @@ msgstr ""
 "separado do \"mundo\" pode ajudar a simplificar o gerenciamento de conexões "
 "de jogos e similares."
 
-#, fuzzy
 msgid ""
 "The key to scene organization is to consider the SceneTree in relational "
 "terms rather than spatial terms. Are the nodes dependent on their parent's "
@@ -580,6 +576,10 @@ msgid ""
 "one still has the flexibility to move nodes around, it is still best when "
 "such moves are unnecessary by default."
 msgstr ""
+"Isso significa que os próprios nós são componentes? De modo algum. As "
+"árvores de nós do Godot formam uma relação de agregação, não de composição. "
+"Mas, embora ainda se tenha a flexibilidade de mover nós, ainda é melhor "
+"quando esses movimentos são desnecessários por padrão."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

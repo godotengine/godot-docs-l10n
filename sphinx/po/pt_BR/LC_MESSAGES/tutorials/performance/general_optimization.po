@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "General optimization tips"
-msgstr "Animação"
+msgstr "Dicas gerais de otimização"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -38,20 +37,19 @@ msgid ""
 msgstr ""
 
 msgid "To achieve the best results, we have two approaches:"
-msgstr ""
+msgstr "Para obter os melhores resultados, temos duas abordagens:"
 
 msgid "Work faster."
-msgstr ""
+msgstr "Trabalhe mais rápido."
 
 msgid "Work smarter."
-msgstr ""
+msgstr "Trabalhe de forma mais inteligente."
 
 msgid "And preferably, we will use a blend of the two."
-msgstr ""
+msgstr "E, de preferência, usaremos uma mistura das duas."
 
-#, fuzzy
 msgid "Smoke and mirrors"
-msgstr "Nós e recursos"
+msgstr "Fumaça e espelhos"
 
 msgid ""
 "Part of working smarter is recognizing that, in games, we can often get the "
@@ -87,9 +85,8 @@ msgstr ""
 msgid "Each of these are annoying to the user, but in different ways."
 msgstr ""
 
-#, fuzzy
 msgid "Measuring performance"
-msgstr "Performance"
+msgstr "Medindo o desempenho"
 
 msgid ""
 "Probably the most important tool for optimization is the ability to measure "
@@ -158,9 +155,8 @@ msgid ""
 "find out where bottlenecks are."
 msgstr ""
 
-#, fuzzy
 msgid "Detective work"
-msgstr "Detecção 3D"
+msgstr "Trabalho de detetive"
 
 msgid ""
 "Detective work is a crucial skill for developers (both in terms of "
@@ -168,9 +164,8 @@ msgid ""
 "testing, and binary search."
 msgstr ""
 
-#, fuzzy
 msgid "Hypothesis testing"
-msgstr "Testando"
+msgstr "Teste de hipóteses"
 
 msgid ""
 "Say, for example, that you believe sprites are slowing down your game. You "
@@ -191,7 +186,7 @@ msgid ""
 msgstr ""
 
 msgid "Binary search"
-msgstr ""
+msgstr "Pesquisa binária"
 
 msgid ""
 "If you know that frames are taking much longer than they should, but you're "
@@ -205,7 +200,6 @@ msgid ""
 "repeat this process until you've pinned down the problematic area."
 msgstr ""
 
-#, fuzzy
 msgid "Profilers"
 msgstr "Profilador"
 
@@ -230,10 +224,10 @@ msgstr ""
 "Godot, veja :ref:`doc_debugger_panel`."
 
 msgid "Principles"
-msgstr ""
+msgstr "Princípios"
 
 msgid "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ said:"
-msgstr ""
+msgstr "`Donald Knuth <https://en.wikipedia.org/wiki/Donald_Knuth>`__ disse:"
 
 msgid ""
 "*Programmers waste enormous amounts of time thinking about, or worrying "
@@ -243,27 +237,43 @@ msgid ""
 "about 97% of the time: premature optimization is the root of all evil. Yet "
 "we should not pass up our opportunities in that critical 3%.*"
 msgstr ""
+"*Os programadores perdem muito tempo pensando ou se preocupando com a "
+"velocidade de partes não críticas de seus programas, e essas tentativas de "
+"eficiência, na verdade, têm um forte impacto negativo quando a depuração e a "
+"manutenção são consideradas. Devemos esquecer as pequenas eficiências, "
+"digamos, em cerca de 97% das vezes: a otimização prematura é a raiz de todos "
+"os males. No entanto, não devemos deixar passar nossas oportunidades nesses "
+"3% críticos.*"
 
 msgid "The messages are very important:"
-msgstr ""
+msgstr "As mensagens são muito importantes:"
 
 msgid ""
 "Developer time is limited. Instead of blindly trying to speed up all aspects "
 "of a program, we should concentrate our efforts on the aspects that really "
 "matter."
 msgstr ""
+"O tempo do desenvolvedor é limitado. Em vez de tentar cegamente acelerar "
+"todos os aspectos de um programa, devemos concentrar nossos esforços nos "
+"aspectos que realmente importam."
 
 msgid ""
 "Efforts at optimization often end up with code that is harder to read and "
 "debug than non-optimized code. It is in our interests to limit this to areas "
 "that will really benefit."
 msgstr ""
+"Os esforços de otimização geralmente acabam com código mais difícil de ler e "
+"depurar do que o código não otimizado. É do nosso interesse limitar esta "
+"situação a áreas que irão realmente beneficiar."
 
 msgid ""
 "Just because we *can* optimize a particular bit of code, it doesn't "
 "necessarily mean that we *should*. Knowing when and when not to optimize is "
 "a great skill to develop."
 msgstr ""
+"Só porque nós *podemos* otimizar um determinado pedaço de código, isso não "
+"significa necessariamente que *devemos*. Saber quando e quando não otimizar "
+"é uma grande habilidade a ser desenvolvida."
 
 msgid ""
 "One misleading aspect of the quote is that people tend to focus on the "
@@ -271,10 +281,13 @@ msgid ""
 "*premature* optimization is (by definition) undesirable, performant software "
 "is the result of performant design."
 msgstr ""
+"Um aspecto enganoso da citação é que as pessoas tendem a se concentrar na "
+"subcitação *\"otimização prematura é a raiz de todo o mal\"*. Enquanto a "
+"otimização *prematura* é (por definição) indesejável, o software de "
+"desempenho é o resultado de um design eficiente."
 
-#, fuzzy
 msgid "Performant design"
-msgstr "Performance"
+msgstr "Design de desempenho"
 
 msgid ""
 "The danger with encouraging people to ignore optimization until necessary, "
@@ -284,18 +297,31 @@ msgid ""
 "polishing the details later will make it run fast. It may run *faster*, but "
 "it will never run as fast as a program designed for performance."
 msgstr ""
+"O perigo de encorajar as pessoas a ignorar a otimização até que seja "
+"necessário, é que ela convenientemente ignora que o momento mais importante "
+"para considerar o desempenho é na fase de design, antes mesmo de uma tecla "
+"bater em um teclado. Se o design ou os algoritmos de um programa são "
+"ineficientes, então nenhuma quantidade de polimento dos detalhes mais tarde "
+"fará com que ele funcione rapidamente. Ele pode ser executado *mais rápido*, "
+"mas nunca será executado tão rápido quanto um programa projetado para "
+"desempenho."
 
+#, fuzzy
 msgid ""
 "This tends to be far more important in game or graphics programming than in "
 "general programming. A performant design, even without low-level "
 "optimization, will often run many times faster than a mediocre design with "
 "low-level optimization."
 msgstr ""
+"Isso tende a ser muito mais importante na programação de jogos ou gráficos "
+"do que na programação geral. Um design de desempenho, mesmo sem otimização "
+"de baixo nível, muitas vezes será executado muitas vezes mais rápido do que "
+"um design medíocre com otimização de baixo nível."
+
+msgid "Incremental design"
+msgstr "Desenho incremental"
 
 #, fuzzy
-msgid "Incremental design"
-msgstr "atualizações/patches incrementais"
-
 msgid ""
 "Of course, in practice, unless you have prior knowledge, you are unlikely to "
 "come up with the best design the first time. Instead, you'll often make a "
@@ -305,7 +331,15 @@ msgid ""
 "have finalized the overall design. Otherwise, much of your work will be "
 "thrown out."
 msgstr ""
+"Claro, na prática, a menos que você tenha conhecimento prévio, você "
+"provavelmente não virá com o melhor design da primeira vez. Em vez disso, "
+"você muitas vezes fará uma série de versões de uma determinada área de "
+"código, cada uma tendo uma abordagem diferente para o problema, até que você "
+"venha a uma solução satisfatória. É importante não gastar muito tempo nos "
+"detalhes nesta fase até que você tenha finalizado o design geral. Caso "
+"contrário, grande parte do seu trabalho será jogado fora."
 
+#, fuzzy
 msgid ""
 "It's difficult to give general guidelines for performant design because this "
 "is so dependent on the problem. One point worth mentioning though, on the "
@@ -314,42 +348,56 @@ msgid ""
 "designing data structures and algorithms for *cache locality* of data and "
 "linear access, rather than jumping around in memory."
 msgstr ""
+"É difícil dar diretrizes gerais para o design performante porque isso é tão "
+"dependente do problema. Um ponto que vale a pena mencionar, no lado da CPU, "
+"é que CPUs modernas são quase sempre limitadas pela largura de banda de "
+"memória. Isso levou a um ressurgimento no projeto orientado a dados, que "
+"envolve a concepção de estruturas de dados e algoritmos para a localidade "
+"*cache* de dados e acesso linear, em vez de saltar em torno da memória."
 
-#, fuzzy
 msgid "The optimization process"
-msgstr "Animação"
+msgstr "O processo de otimização"
 
 msgid ""
 "Assuming we have a reasonable design, and taking our lessons from Knuth, our "
 "first step in optimization should be to identify the biggest bottlenecks - "
 "the slowest functions, the low-hanging fruit."
 msgstr ""
+"Supondo que tenhamos um design razoável, e tirando nossas lições de Knuth, "
+"nosso primeiro passo na otimização deve ser identificar os maiores gargalos "
+"- as funções mais lentas, os frutos de baixa pendência."
 
 msgid ""
 "Once we've successfully improved the speed of the slowest area, it may no "
 "longer be the bottleneck. So we should test/profile again and find the next "
 "bottleneck on which to focus."
 msgstr ""
+"Uma vez que melhoramos com sucesso a velocidade da área mais lenta, pode não "
+"ser mais o gargalo. Portanto, devemos testar/traçar o perfil novamente e "
+"encontrar o próximo gargalo no qual nos concentrar."
 
 msgid "The process is thus:"
-msgstr ""
+msgstr "O processo é assim:"
 
 msgid "Profile / Identify bottleneck."
-msgstr ""
+msgstr "Perfil / Identificação de gargalo."
 
 msgid "Optimize bottleneck."
-msgstr ""
+msgstr "Otimize o gargalo."
 
 msgid "Return to step 1."
 msgstr "Volte ao passo 1."
 
 msgid "Optimizing bottlenecks"
-msgstr ""
+msgstr "Otimizando gargalos"
 
+#, fuzzy
 msgid ""
 "Some profilers will even tell you which part of a function (which data "
 "accesses, calculations) are slowing things down."
 msgstr ""
+"Alguns profilers irão até dizer-lhe qual parte de uma função (que acessos de "
+"dados, cálculos) estão retardando as coisas."
 
 msgid ""
 "As with design, you should concentrate your efforts first on making sure the "
@@ -378,7 +426,7 @@ msgid ""
 msgstr ""
 
 msgid "Appendix"
-msgstr ""
+msgstr "Apêndice"
 
 msgid "Bottleneck math"
 msgstr ""
@@ -417,4 +465,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

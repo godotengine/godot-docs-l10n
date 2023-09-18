@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -355,8 +355,8 @@ msgstr ""
 msgid ""
 "Supports Schlick-GGX, Blinn, Phong, Toon and Disabled specular shading modes."
 msgstr ""
-"Schlick-GGX、Blinn、Phong、ToonおよびDisabled 鏡面反射シェーディングモードを"
-"サポートします。"
+"Schlick-GGX、Blinn、Phong、Toon、Disabled 鏡面反射シェーディングモードをサ"
+"ポート。"
 
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr "ORMテクスチャに対応するラフネスメタリック用ワークフローを使用。"
@@ -393,10 +393,11 @@ msgstr ""
 msgid "*GLES3:* Sub-surface scattering and transmittance."
 msgstr "*GLES3:* サブサーフェス・スキャタリングおよび透過。"
 
+#, fuzzy
 msgid ""
-"*GLES3:* Refraction with support for material roughness (resulting in blurry "
-"refraction). On GLES2, refraction is still functional but lacks support for "
-"material roughness."
+"*GLES3:* Screen-space refraction with support for material roughness "
+"(resulting in blurry refraction). On GLES2, refraction is still functional "
+"but lacks support for material roughness."
 msgstr ""
 "*GLES3:*材料の粗さをサポートする屈折(ぼやけた屈折をもたらす)。GLES2では、屈折"
 "は機能的ですが、材料の粗さのサポートが欠けています。"
@@ -408,7 +409,7 @@ msgid "**Real-time lighting:**"
 msgstr "**リアルタイム照明:**"
 
 msgid "Directional lights (sun/moon). Up to 4 per scene."
-msgstr "ディレクショナルライト (太陽 / 月)。1 シーンにつき 4 個まで。"
+msgstr "指向性ライト (太陽 / 月)。1 シーンにつき 4 個まで。"
 
 msgid "Omnidirectional lights."
 msgstr "全方位ライト。"
@@ -832,10 +833,10 @@ msgid ""
 "extension."
 msgstr ""
 "`Godot4.0ではビジュアルスクリプトを完全に廃止することが決定されています。"
-"<https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>`"
-"そのような事から、これからビジュアルスクリプトを使用してプロジェクトを作成す"
-"るのはおすすめされていません。Godot4.0より先のバージョンでビジュアルスクリプ"
-"トを拡張機能としてリリースする可能性はあります。"
+"<https://godotengine.org/article/godot-4-will-discontinue-visual-scripting>` "
+"そのため、これからビジュアルスクリプトを使用してプロジェクトを作成するのは推"
+"奨されていません。Godot4.0より先のバージョンでビジュアルスクリプトを拡張機能"
+"としてリリースする可能性はあります。"
 
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
@@ -844,7 +845,7 @@ msgid ""
 msgstr ""
 "Godot3はビジュアルスクリプトをサポートしているものの、特にGodot4に移行したい"
 "と考えている場合はこちらを :ref:`trying out GDScript <toc-learn-scripting-"
-"gdscript>`見ることをお勧めします。"
+"gdscript>` 見ることをお勧めします。"
 
 msgid "Audio"
 msgstr "オーディオ"

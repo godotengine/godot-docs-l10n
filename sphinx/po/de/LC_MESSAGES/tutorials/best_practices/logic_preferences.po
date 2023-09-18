@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,18 +76,17 @@ msgstr ""
 "aber es gibt auch Zeiten in denen man es nicht wünscht. Um diese Situationen "
 "zu unterscheiden, gibt es einige Dinge die man berücksichtigen kann:"
 
-#, fuzzy
 msgid ""
 "If one cannot determine when the script might load, then preloading a "
 "resource, especially a scene or script, could result in further loads one "
 "does not expect. This could lead to unintentional, variable-length load "
 "times on top of the original script's load operations."
 msgstr ""
-"Wenn man nicht bestimmen kann, wann das Skript geladen wird, wird das "
+"Wenn man nicht bestimmen kann, wann das Skript geladen wird, so wird das "
 "Vorladen einer Ressource, insbesondere einer Szene oder eines Skripts, "
-"eventuell zu weiteren Ladevorgängen führen, die man nicht erwartet. Dies "
-"kann zu unbeabsichtigten Ladezeiten variabler Länge zusätzlich zu den "
-"Ladevorgängen des ursprünglichen Skripts führen."
+"eventuell zu weiteren Ladevorgängen führen, die man nicht erwartet. Daraus "
+"können unbeabsichtigte Ladezeiten variabler Länge zusätzlich zu den "
+"Ladevorgängen des ursprünglichen Skripts entstehen."
 
 msgid ""
 "If something else could replace the value (like a scene's exported "
@@ -99,15 +98,14 @@ msgstr ""
 "Dieser Punkt ist kein wesentlicher Faktor, wenn das Skript immer selbst "
 "erstellt werden soll."
 
-#, fuzzy
 msgid ""
 "If one wishes only to 'import' another class resource (script or scene), "
 "then using a preloaded constant is often the best course of action. However, "
 "in exceptional cases, one may wish not to do this:"
 msgstr ""
 "Wenn man nur eine andere Klassenressource (Skript oder Szene) "
-"\"importieren\" möchte, ist die Verwendung einer vorinstallierten Konstante "
-"oft die beste Vorgehensweise. In Ausnahmefällen möchte ich dies jedoch nicht "
+"\"importieren\" möchte, ist die Verwendung einer vorher geladenen Konstante "
+"oft die beste Vorgehensweise. In Ausnahmefällen sollte man dies jedoch nicht "
 "tun:"
 
 msgid ""
@@ -204,7 +202,7 @@ msgid "As such, the best options would be..."
 msgstr "Als solche wären die besten Optionen ..."
 
 msgid "To use a static level for smaller games."
-msgstr "statische Levels für kleinere Spiele zu verwenden."
+msgstr "Statische Levels für kleinere Spiele zu verwenden."
 
 msgid ""
 "If one has the time/resources on a medium/large game, create a library or "

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,9 @@ msgid ""
 "when something specific happens to them, like a button being pressed. Other "
 "nodes can connect to that signal and call a function when the event occurs."
 msgstr ""
+"이번 단원에서는 시그널에 대해 살펴보겠습니다. 시그널은 버튼이 눌리는 것과 같"
+"은 특정 상황이 발생했을 때 노드가 보내는 메시지입니다. 기타 노드는 이벤트가 "
+"발생하면 해당 시그널에 연결하여 함수를 호출할 수 있습니다."
 
 msgid ""
 "Signals are a delegation mechanism built into Godot that allows one game "
@@ -36,6 +39,11 @@ msgid ""
 "Using signals limits `coupling <https://en.wikipedia.org/wiki/"
 "Coupling_(computer_programming)>`_ and keeps your code flexible."
 msgstr ""
+"시그널은 Godot에 내장된 델리게이트 메커니즘으로, 어느 한 게임 오브젝트가 다"
+"른 게임 오브젝트를 직접 참조하지 않고도 해당 오브젝트의 변경사항에 반응할 수 "
+"있게 해줍니다. 시그널을 사용하면 `커플링 <https://en.wikipedia.org/wiki/"
+"Coupling_(컴퓨터_프로그래밍)>`_ 을 제한하고 코드를 유연하게 유지할 수 있습니"
+"다."
 
 msgid ""
 "For example, you might have a life bar on the screen that represents the "
@@ -43,6 +51,9 @@ msgid ""
 "want the bar to reflect the change. To do so, in Godot, you would use "
 "signals."
 msgstr ""
+"예를 들어 화면에 플레이어의 생명력을 나타내는 생명력 바가 있을 수 있습니다. "
+"플레이어가 피해를 입거나 회복 물약을 사용하면 생명력 바에 변화가 반영되도록 "
+"할 수 있습니다. 이를 위해 Godot에서는 시그널을 사용합니다."
 
 #, fuzzy
 msgid ""

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,6 @@ msgstr ""
 "кадры анимации. Оба могут быть анимированы в Godot с помощью класса "
 "AnimatedSprite."
 
-#, fuzzy
 msgid ""
 "First, we'll use :ref:`AnimatedSprite <class_AnimatedSprite>` to animate a "
 "collection of individual images. Then we will animate a sprite sheet using "
@@ -45,11 +44,11 @@ msgid ""
 "with :ref:`AnimationPlayer <class_AnimationPlayer>` and the *Animation* "
 "property of :ref:`Sprite <class_Sprite>`."
 msgstr ""
-"Для начала мы будем использовать :ref:`AnimatedSprite <class_Animated "
-"Sprite>` для анимации коллекции отдельных изображений. Затем мы анимируем "
-"спрайт-лист, используя этот класс. Наконец, мы изучим еще один способ "
-"анимации спрайт-листа с помощью :ref:`Animation Player <class_Animation "
-"Player>` и свойства *Animation* узла : ref:`Sprite <class_Sprite>`."
+"Сначала мы будем использовать :ref:`AnimatedSprite <class_Animated Sprite>` "
+"для анимации коллекции отдельных изображений. Затем мы анимируем спрайт-"
+"лист, используя этот класс. Наконец, мы изучим ещё один способ анимации "
+"спрайт-листа с помощью :ref:`Animation Player <class_Animation Player>` и "
+"свойства *Animation* узла : ref:`Sprite <class_Sprite>`."
 
 msgid ""
 "Art for the following examples by https://opengameart.org/users/ansimuz and "
@@ -151,16 +150,14 @@ msgstr ""
 "при удержании клавиши со стрелкой вправо и ее остановки при отпускании "
 "клавиши."
 
-#, fuzzy
 msgid "Sprite sheet with AnimatedSprite"
-msgstr "Анимация Спрайтов"
+msgstr "Спрайтовый лист (Sprite sheet) с использованием AnimatedSprite"
 
-#, fuzzy
 msgid ""
 "You can also easily animate from a sprite sheet with the class "
 "``AnimatedSprite``. We will use this public domain sprite sheet:"
 msgstr ""
-"Вы также можете легко анимировать с спрайт-лист с помощью класса "
+"Вы также можете легко анимировать из спрайт-листа с помощью класса "
 "``AnimatedSprite``. Мы будем использовать этот спрайт-лист из открытых "
 "источников:"
 
@@ -172,7 +169,6 @@ msgstr ""
 "как\", чтобы загрузить его, а затем скопируйте изображение в папку вашего "
 "проекта."
 
-#, fuzzy
 msgid ""
 "Set up your scene tree the same way you did previously when using individual "
 "images. Select the ``AnimatedSprite`` and in its *SpriteFrames* property, "
@@ -180,20 +176,18 @@ msgid ""
 msgstr ""
 "Настройте дерево сцены так же, как вы делали это ранее при использовании "
 "отдельных изображений. Выберите ``AnimatedSprite`` и в свойстве *Frames* "
-"выберите \"Новый SpriteFrames\"."
+"выберите \"New SpriteFrames\"."
 
-#, fuzzy
 msgid ""
 "Click on the new SpriteFrames resource. This time, when the bottom panel "
 "appears, select \"Add frames from a Sprite Sheet\"."
 msgstr ""
 "Нажмите на новый ресурс Sprite Frames. На этот раз, когда появится нижняя "
-"панель, выберите \"Добавить кадры из спрайт-листа\"."
+"панель, выберите \"Add frames from a Sprite Sheet\"."
 
 msgid "You will be prompted to open a file. Select your sprite sheet."
 msgstr "Вам будет предложено открыть файл. Выберите свой спрайт-лист."
 
-#, fuzzy
 msgid ""
 "A new window will open, showing your sprite sheet. The first thing you will "
 "need to do is to change the number of vertical and horizontal images in your "
@@ -205,25 +199,22 @@ msgstr ""
 "горизонтальных изображений на листе спрайта. На этом спрайт-листе у нас есть "
 "четыре изображения по горизонтали и два изображения по вертикали."
 
-#, fuzzy
 msgid ""
 "Next, select the frames from the sprite sheet that you want to include in "
 "your animation. We will select the top four, then click \"Add 4 frames\" to "
 "create the animation."
 msgstr ""
-"Затем выберите кадры из спрайт-листа, которые вы хотите включить в свою "
-"анимацию. Мы выберем четыре верхних, затем нажмем \"Добавить кадров: 4\", "
-"чтобы создать анимацию."
+"Затем выберите кадры из спрайт-листа, которые вы хотите включить в анимацию. "
+"Мы выберем четыре верхних кадра, затем нажмите \"Add 4 frames\", чтобы "
+"создать анимацию."
 
-#, fuzzy
 msgid ""
 "You will now see your animation under the list of animations in the bottom "
 "panel. Double click on default to change the name of the animation to jump."
 msgstr ""
-"Теперь вы увидите свою анимацию в списке анимаций на нижней панели. Дважды "
-"щелкните по \"default\", чтобы изменить название анимации на \"jump\"."
+"Теперь вы увидите свою анимацию в списке анимаций в нижней панели. Дважды "
+"щёлкните по \"default\", чтобы изменить название анимации на \"jump\"."
 
-#, fuzzy
 msgid ""
 "Finally, check Playing on the AnimatedSprite in the inspector to see your "
 "frog jump!"
@@ -231,9 +222,8 @@ msgstr ""
 "Наконец, отметьте \"Playing\" у \"AnimatedSprite\" в инспекторе, чтобы "
 "увидеть, как прыгает ваша лягушка!"
 
-#, fuzzy
 msgid "Sprite sheet with AnimationPlayer"
-msgstr "Анимация Спрайтов"
+msgstr "Спрайтовый лист с использованием AnimationPlayer"
 
 msgid ""
 "Another way that you can animate when using a sprite sheet is to use a "
@@ -315,9 +305,8 @@ msgstr ""
 "Нажмите \"Воспроизвести выбранную анимацию с текущей позиции\" , чтобы "
 "увидеть, как она выглядит."
 
-#, fuzzy
 msgid "Controlling an AnimationPlayer animation"
-msgstr "Создание анимации"
+msgstr "Управление анимацией AnimationPlayer"
 
 msgid ""
 "Like with AnimatedSprite, you can control the animation via code using the "
@@ -354,7 +343,6 @@ msgstr ""
 msgid "Summary"
 msgstr "Подведение итогов"
 
-#, fuzzy
 msgid ""
 "These examples illustrate the two classes you can use in Godot for 2D "
 "animation. ``AnimationPlayer`` is a bit more complex than "

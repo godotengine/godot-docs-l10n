@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating Android plugins"
-msgstr "Plugins"
+msgstr "Criando plugins Android"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -29,11 +28,17 @@ msgid ""
 "engine by tapping into the functionality provided by the Android platform "
 "and ecosystem."
 msgstr ""
+"Os plugins Android são ferramentas poderosas para estender as capacidades do "
+"motor Godot, aproveitando a funcionalidade fornecida pela plataforma e "
+"ecossistema Android."
 
 msgid ""
 "Mobile gaming monetization is one such example since it requires features "
 "and capabilities that don't belong to the core feature set of a game engine:"
 msgstr ""
+"A monetização de jogos para dispositivos móveis é um exemplo, pois requer "
+"recursos e capacidades que não pertencem ao conjunto de recursos principais "
+"de um game engine:"
 
 msgid "Analytics"
 msgstr "Análises"
@@ -45,47 +50,47 @@ msgid "Receipt validation"
 msgstr ""
 
 msgid "Install tracking"
-msgstr ""
+msgstr "Instalar rastreamento"
 
 msgid "Ads"
 msgstr "Anúncios"
 
 msgid "Video ads"
-msgstr ""
+msgstr "Anúncios em vídeo"
 
 msgid "Cross-promotion"
 msgstr "Promoção cruzada"
 
+#, fuzzy
 msgid "In-game soft & hard currencies"
-msgstr ""
+msgstr "Moedas suaves e fortes no jogo"
 
 msgid "Promo codes"
-msgstr ""
+msgstr "Códigos promocionais"
 
 msgid "A/B testing"
-msgstr ""
+msgstr "Teste A/B"
 
 msgid "Login"
 msgstr "Entrar"
 
 msgid "Cloud saves"
-msgstr ""
+msgstr "Salvamento na nuvem"
 
 msgid "Leaderboards and scores"
-msgstr ""
+msgstr "Tabelas de classificação e pontuações"
 
 msgid "User support & feedback"
-msgstr ""
+msgstr "Suporte ao usuário e feedback"
 
 msgid "Posting to Facebook, Twitter, etc."
-msgstr ""
+msgstr "Postar no Facebook, Twitter, etc."
 
 msgid "Push notifications"
-msgstr ""
+msgstr "Notificações via push"
 
-#, fuzzy
 msgid "Android plugin"
-msgstr "Android"
+msgstr "Plugin de Android"
 
 msgid ""
 "While introduced in Godot 3.2, the Android plugin system got a significant "
@@ -123,9 +128,8 @@ msgid ""
 "its manifest file."
 msgstr ""
 
-#, fuzzy
 msgid "Building an Android plugin"
-msgstr "Criando um script C#"
+msgstr "Criando um plug-in Android"
 
 msgid ""
 "**Prerequisite:** `Android Studio <https://developer.android.com/studio>`_ "
@@ -209,7 +213,7 @@ msgstr ""
 
 #, fuzzy
 msgid "The configuration file format is as follow::"
-msgstr "Os arquivos CSV devem ser formatados da seguinte forma:"
+msgstr "O formato do arquivo de configuração é o seguinte::"
 
 msgid "The ``config`` section and fields are required and defined as follow:"
 msgstr ""
@@ -223,7 +227,7 @@ msgid ""
 msgstr ""
 
 msgid "**binary**:"
-msgstr ""
+msgstr "**binary**:"
 
 msgid ""
 "If **binary_type** is ``local``, then this should be the filepath of the "
@@ -266,9 +270,8 @@ msgid ""
 "repositories required for the plugin's dependencies."
 msgstr ""
 
-#, fuzzy
 msgid "Loading and using an Android plugin"
-msgstr "Criando um script C#"
+msgstr "Carregando e usando um plug-in do Android"
 
 msgid ""
 "Move the plugin configuration file (e.g.: ``MyPlugin.gdap``) and, if any, "
@@ -282,13 +285,11 @@ msgid ""
 "plugins in the Android export presets window under the **Plugins** section."
 msgstr ""
 
-#, fuzzy
 msgid "From your script:"
-msgstr "Em seu script::"
+msgstr "De seu script:"
 
-#, fuzzy
 msgid "Bundling GDNative resources"
-msgstr "Liberando recursos"
+msgstr "Integrando recursos GDNative"
 
 msgid ""
 "An Android plugin can define and provide C/C++ GDNative resources, either to "
@@ -318,9 +319,8 @@ msgid ""
 "them to load and initialize the bundled GDNative libraries."
 msgstr ""
 
-#, fuzzy
 msgid "Reference implementations"
-msgstr "Implementação"
+msgstr "Implementações de referência"
 
 msgid ""
 "`Godot Oculus Mobile plugin <https://github.com/GodotVR/"
@@ -355,4 +355,4 @@ msgid "More complex datatypes are not supported for now."
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

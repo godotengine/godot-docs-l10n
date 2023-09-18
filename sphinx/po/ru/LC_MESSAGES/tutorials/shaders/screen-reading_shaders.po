@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -89,6 +89,13 @@ msgid ""
 "transparent geometry pass, so transparent objects will not be captured in "
 "the ``SCREEN_TEXTURE``."
 msgstr ""
+"Хотя это кажется волшебным, это не так. В 2D встроенная функция "
+"``SCREEN_TEXTURE``, впервые встречающаяся в узле, который собирается быть "
+"нарисованным, выполняет полноэкранное копирование в резервный буфер. "
+"Последующие узлы, использующие его в шейдерах, не будут копировать экран для "
+"них, потому что это оказывается неэффективным. В 3D экран копируется после "
+"прохода непрозрачной геометрии, но до прохода прозрачной геометрии, поэтому "
+"прозрачные объекты не будут захвачены в ``SCREEN_TEXTURE``."
 
 msgid ""
 "As a result, in 2D, if shaders that use ``SCREEN_TEXTURE`` overlap, the "

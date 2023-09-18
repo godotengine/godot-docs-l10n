@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,6 +29,9 @@ msgid ""
 "non directly controlled characters or entities find their way around an "
 "environment. Godot provides several nodes for this purpose:"
 msgstr ""
+"Поиск пути в трёхмерной среде имеет решающее значение для многих игр, обычно "
+"это то, как персонажи или сущности, не управляемые напрямую, находят свой "
+"путь по окружению. Godot предоставляет несколько узлов для этой цели:"
 
 msgid ":ref:`Navigation<class_Navigation>` (deprecated)"
 msgstr ""
@@ -64,6 +67,14 @@ msgid ""
 "each setting and how it works can be found in the :ref:`NavigationMesh class "
 "reference<class_NavigationMesh>`."
 msgstr ""
+"Для создания навигационной области добавьте узел :ref:"
+"`NavigationMeshInstance<class_NavigationMeshInstance>` в 3D-сцену. Затем в "
+"инспекторе для этой сетки создайте или добавьте :ref:"
+"`NavigationMesh<class_NavigationMesh>`. Навмеш содержит опции для того, как "
+"он будет сгенерирован при запекании. Параметры геометрии контролируют, какие "
+"узлы и типы узлов используются для запекания сетки. Полное описание каждого "
+"параметра и его работы можно найти в :ref:`справочнике по классу "
+"NavigationMesh<class_NavigationMesh>`."
 
 msgid ""
 "Once the settings have been properly configured press the \"Bake NavMesh\" "
@@ -95,7 +106,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "NavigationAgent3D"
+msgid "NavigationAgent"
 msgstr "Навигация"
 
 msgid ""
@@ -136,7 +147,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "NavigationObstacle3D"
+msgid "NavigationObstacle"
 msgstr "Навигация"
 
 msgid ""

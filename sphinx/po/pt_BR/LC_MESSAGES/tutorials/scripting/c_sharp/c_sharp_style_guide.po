@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgstr ""
 "Ter convenções de codificação bem definidas e consistentes é importante para "
 "todos os projetos, e o Godot não é uma exceção a essa regra."
 
-#, fuzzy
 msgid ""
 "This page contains a coding style guide, which is followed by developers of "
 "and contributors to Godot itself. As such, it is mainly intended for those "
@@ -60,7 +59,6 @@ msgstr ""
 "`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
 "standard/design-guidelines/naming-guidelines>`_."
 
-#, fuzzy
 msgid "Language specification"
 msgstr "Especificação de Linguagem"
 
@@ -86,15 +84,12 @@ msgstr ""
 msgid "Formatting"
 msgstr "Formatação"
 
-#, fuzzy
 msgid "General guidelines"
-msgstr "Diferenças Gerais"
+msgstr "Orientações gerais"
 
-#, fuzzy
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
 msgstr ""
-"Se você criar um novo arquivo, verifique se ele usa caracteres de "
-"alimentação de linha (*LF*) para quebrar linhas, não *CRLF* ou *CR*."
+"Use caracteres de pular linha (**LF**) para quebrar linhas, não CRLF ou CR."
 
 msgid ""
 "Use one line feed character at the end of each file, except for `csproj` "
@@ -110,21 +105,19 @@ msgstr ""
 "Use a codificação UTF-8 sem uma `marca de ordem de byte <https://pt."
 "wikipedia.org/wiki/Marca_de_ordem_de_byte>`."
 
-#, fuzzy
 msgid ""
 "Use **4 spaces** instead of tabs for indentation (which is referred to as "
 "\"soft tabs\")."
 msgstr ""
-"Use 4 espaços em vez de tabs para indentação (que é referido como \"tabs "
+"Use **4 espaços** em vez de tabs para indentação (que é referido como \"tabs "
 "suaves\")."
 
 msgid ""
 "Consider breaking a line into several if it's longer than 100 characters."
 msgstr "Considere quebrar uma linha em várias se for mais de 100 caracteres."
 
-#, fuzzy
 msgid "Line breaks and blank lines"
-msgstr "Quebras de Linha e Linhas em Branco"
+msgstr "Quebras de linha e linhas em branco"
 
 msgid ""
 "For a general indentation rule, follow `the \"Allman Style\" <https://en."
@@ -153,9 +146,8 @@ msgstr "Para auto propriedade abstrata, indexador ou declarações de evento."
 msgid "Insert a blank line:"
 msgstr "Insira uma linha em branco:"
 
-#, fuzzy
 msgid "After a list of ``using`` statements."
-msgstr "Depois de *usar* a lista de instruções."
+msgstr "Depois de uma lista de declarações ``using``."
 
 msgid "Between method, properties, and inner type declarations."
 msgstr "Entre o método, propriedades e declarações de tipo interno."
@@ -175,24 +167,20 @@ msgstr ""
 msgid "Avoid inserting a blank line:"
 msgstr "Evite inserir uma linha em branco:"
 
-#, fuzzy
 msgid "After ``{``, the opening brace."
-msgstr "Depois de uma chave de abertura ('{')."
+msgstr "Depois``{``, a chave de abertura."
 
-#, fuzzy
 msgid "Before ``}``, the closing brace."
-msgstr "Antes de uma chave de fechamento ('}')."
+msgstr "Antes ``}``, a chave de fechamento."
 
-#, fuzzy
 msgid "After a comment block or a single-line comment."
-msgstr "Depois de um bloco de comentário ou um comentário de linha única."
+msgstr "Após um bloco de comentário ou um comentário de uma única linha."
 
 msgid "Adjacent to another blank line."
 msgstr "Adjacente a outra linha em branco."
 
-#, fuzzy
 msgid "Using spaces"
-msgstr "Usando Espaços"
+msgstr "Usando espaços"
 
 msgid "Insert a space:"
 msgstr "Insira um espaço:"
@@ -200,13 +188,12 @@ msgstr "Insira um espaço:"
 msgid "Around a binary and tertiary operator."
 msgstr "Em torno de um operador binário e ternário."
 
-#, fuzzy
 msgid ""
 "Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
 "``while``, ``lock`` or ``using`` keywords."
 msgstr ""
-"Entre um parêntese de abertura e as palavras-chave *se*, *para*, *foreach*, "
-"*catch*, *while*, *lock* ou *using*."
+"Entre um parêntese de abertura e as palavras-chave ``if``, ``for``, "
+"``foreach``, ``catch``, ``while``, ``lock`` ou ``using``."
 
 msgid "Before and within a single line accessor block."
 msgstr "Antes e dentro de um bloco de acessador de linha única."
@@ -217,13 +204,11 @@ msgstr "Entre os acessadores em um bloco de acessador de linha única."
 msgid "After a comma which is not at the end of a line."
 msgstr "Depois de uma vírgula que não está no fim de uma linha."
 
-#, fuzzy
 msgid "After a semicolon in a ``for`` statement."
-msgstr "Depois de um ponto-e-vírgula em uma declaração *para*."
+msgstr "Depois de um ponto-e-vírgula em uma declaração``for``."
 
-#, fuzzy
 msgid "After a colon in a single line ``case`` statement."
-msgstr "Depois de dois pontos em declaração *case* de linha única."
+msgstr "Depois de dois pontos em declaração ``case`` de linha única."
 
 msgid "Around a colon in a type declaration."
 msgstr "Em torno de dois pontos em uma declaração de tipo."
@@ -231,25 +216,22 @@ msgstr "Em torno de dois pontos em uma declaração de tipo."
 msgid "Around a lambda arrow."
 msgstr "Em torno de uma seta lambda."
 
-#, fuzzy
 msgid ""
 "After a single-line comment symbol (``//``), and before it if used at the "
 "end of a line."
 msgstr ""
-"Após um símbolo de comentário de linha única ('//') e antes, se usado no "
+"Após um símbolo de comentário de linha única (``//``), e antes se usado no "
 "final de uma linha."
 
 msgid "Do not use a space:"
 msgstr "Não use um espaço:"
 
-#, fuzzy
 msgid "After type cast parentheses."
 msgstr "Depois de um parênteses de um tipo de conversão."
 
 msgid "Within single line initializer braces."
 msgstr "Dentro de chaves de inicialização de linha única."
 
-#, fuzzy
 msgid ""
 "The following example shows a proper use of spaces, according to some of the "
 "above mentioned conventions:"
@@ -260,45 +242,40 @@ msgstr ""
 msgid "Naming conventions"
 msgstr "Convenções de nomes"
 
-#, fuzzy
 msgid ""
 "Use **PascalCase** for all namespaces, type names and member level "
 "identifiers (i.e. methods, properties, constants, events), except for "
 "private fields:"
 msgstr ""
-"Use *PascalCase* para todos os namespaces, nomes de tipos e identificadores "
-"de nível de membro (ou seja, métodos, propriedades, constantes, eventos), "
-"exceto para campos privados:"
+"Use **PascalCase** para todos os namespaces, nomes de tipos e "
+"identificadores de nível de membro (ou seja, métodos, propriedades, "
+"constantes, eventos), exceto para campos privados:"
 
-#, fuzzy
 msgid ""
 "Use **camelCase** for all other identifiers (i.e. local variables, method "
 "arguments), and use an underscore (``_``) as a prefix for private fields "
 "(but not for methods or properties, as explained above):"
 msgstr ""
-"Use *camelCase* para todos os outros identificadores (isto é, variáveis "
-"locais, argumentos de método) e use sublinhado ('_') como um prefixo para "
+"Use **camelCase** para todos os outros identificadores (isto é, variáveis "
+"locais, argumentos de método) e use sublinhado (``_``) como um prefixo para "
 "campos privados (mas não para métodos ou propriedades, como explicado acima):"
 
-#, fuzzy
 msgid ""
 "There's an exception with acronyms which consist of two letters, like "
 "``UI``, which should be written in uppercase letters where PascalCase would "
 "be expected, and in lowercase letters otherwise."
 msgstr ""
-"Há uma exceção com siglas que consistem em duas letras como *'UI'*, que "
+"Há uma exceção com siglas que consistem em duas letras como ``UI``, que "
 "devem ser escritas em letras maiúsculas quando usadas onde o PascalCase "
 "seria esperado, e em letras minúsculas, caso contrário."
 
-#, fuzzy
 msgid ""
 "Note that ``id`` is **not** an acronym, so it should be treated as a normal "
 "identifier:"
 msgstr ""
-"Note que *'id'* **não** é um acrônimo, então deve ser tratado como um "
+"Note que ``id`` **não** é um acrônimo, então deve ser tratado como um "
 "identificador normal:"
 
-#, fuzzy
 msgid ""
 "It is generally discouraged to use a type name as a prefix of an identifier, "
 "like ``string strText`` or ``float fPower``, for example. An exception is "
@@ -307,10 +284,10 @@ msgid ""
 "``IDamageable``."
 msgstr ""
 "Geralmente é desencorajado usar um nome de tipo como um prefixo de um "
-"identificador como *'string strText'* ou *'float fPower'*, por exemplo. No "
+"identificador como ``string strText`` ou ``float fPower``, por exemplo. No "
 "entanto, há uma exceção sobre interfaces, caso em que elas **devem** ser "
-"nomeadas usando maiúsculas *'I'* como um prefixo, como *'IInventoryHolder'* "
-"ou *'IDamageable'*."
+"nomeadas usando maiúsculas ``I`` como um prefixo, como ``IInventoryHolder`` "
+"ou ``IDamageable``."
 
 msgid ""
 "Lastly, consider choosing descriptive names and do not try to shorten them "
@@ -353,21 +330,18 @@ msgstr ""
 "torna mais fácil seguir o código, sem ter que rolar muito para encontrar "
 "onde a variável foi declarada."
 
-#, fuzzy
 msgid "Implicitly typed local variables"
-msgstr "Variáveis Locais Tipadas Implicitamente"
+msgstr "Variáveis locais de tipo implícito"
 
-#, fuzzy
 msgid ""
 "Consider using implicitly typing (``var``) for declaration of a local "
 "variable, but do so **only when the type is evident** from the right side of "
 "the assignment:"
 msgstr ""
-"Considere usar implicitamente a digitação (*'var'*) para declaração de uma "
+"Considere usar implicitamente a digitação (``var``) para declaração de uma "
 "variável local, mas faça isso **somente quando o tipo for evidente** do lado "
 "direito da atribuição:"
 
-#, fuzzy
 msgid "Other considerations"
 msgstr "Outras considerações"
 
@@ -377,29 +351,26 @@ msgstr "Use modificadores de acesso explícito."
 msgid "Use properties instead of non-private fields."
 msgstr "Use propriedades em vez de campos não privados."
 
-#, fuzzy
 msgid ""
 "Use modifiers in this order: ``public``/``protected``/``private``/"
 "``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
 "``readonly``."
 msgstr ""
-"Use modificadores nesta ordem: *'public/protected/private/internal virtual/"
-"override/abstract/new static readonly'*."
+"Use modificadores nesta ordem: ``public``/``protected``/``private``/"
+"``internal``/``virtual``/``override``/``abstract``/`` new``/``static``/"
+"``readonly``."
 
-#, fuzzy
 msgid ""
 "Avoid using fully-qualified names or ``this.`` prefix for members when it's "
 "not necessary."
 msgstr ""
-"Evite usar nomes completos ou o prefixo *'this'* para membros, quando não "
+"Evite usar nomes completos ou o prefixo ``this.`` para membros, quando não "
 "for necessário."
 
-#, fuzzy
 msgid "Remove unused ``using`` statements and unnecessary parentheses."
 msgstr ""
-"Remova as instruções *'using'* não utilizadas e parênteses desnecessários."
+"Remova as instruções ``using`` não utilizadas e parênteses desnecessários."
 
-#, fuzzy
 msgid "Consider omitting the default initial value for a type."
 msgstr "Considere omitir o valor inicial padrão de um tipo."
 
@@ -418,4 +389,4 @@ msgstr ""
 "tipo diferente e use a conversão direta caso contrário."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

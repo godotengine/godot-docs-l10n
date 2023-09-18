@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Using multiple threads"
-msgstr ""
+msgstr "Usando múltiplas threads"
 
 msgid "Threads"
 msgstr "Threads"
@@ -41,13 +41,11 @@ msgid ""
 "first to check whether it can be safely used in a thread."
 msgstr ""
 
-#, fuzzy
 msgid "Creating a Thread"
-msgstr "Criando um projeto"
+msgstr "Criando um thread"
 
-#, fuzzy
 msgid "Creating a thread is very simple, just use the following code:"
-msgstr "A cena Turba utilizará os seguintes nós:"
+msgstr "Criar um thread é muito simples, basta usar o seguinte código:"
 
 msgid ""
 "Your function will, then, run in a separate thread until it returns. Even if "
@@ -56,8 +54,9 @@ msgid ""
 "wait until the thread is done (if not done yet), then properly dispose of it."
 msgstr ""
 
+#, fuzzy
 msgid "Mutexes"
-msgstr ""
+msgstr "Mutexes"
 
 msgid ""
 "Accessing objects or data from multiple threads is not always supported (if "
@@ -86,7 +85,7 @@ msgid "Here is an example of using a Mutex:"
 msgstr "Eis um exemplo de uso de um Mutex:"
 
 msgid "Semaphores"
-msgstr ""
+msgstr "Semáforos"
 
 msgid ""
 "Sometimes you want your thread to work *\"on demand\"*. In other words, tell "
@@ -103,4 +102,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

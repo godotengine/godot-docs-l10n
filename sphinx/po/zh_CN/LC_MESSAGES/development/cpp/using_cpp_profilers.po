@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -68,26 +68,14 @@ msgstr ""
 "如果要获取有用的性能分析信息，就\\ **必须**\\ 使用包含调试符号的 Godot 构建。"
 "官方二进制文件并不包含调试符号，因为会显著增加文件下载大小。"
 
+#, fuzzy
 msgid ""
-"To get profiling data that best matches the production environment, you "
-"should compile binaries with the following SCons options:"
+"To get profiling data that best matches the production environment (but with "
+"debugging symbols), you should compile binaries with the ``production=yes "
+"debug_symbols=yes`` SCons options."
 msgstr ""
 "如果想要获取与生产环境最接近的性能分析数据，你应该使用如下 SCons 选项来编译程"
 "序："
-
-msgid "For editor binaries: ``target=release_debug use_lto=yes``"
-msgstr "编辑器程序：\\ ``target=release_debug use_lto=yes``"
-
-msgid "For debug export templates: ``target=release_debug use_lto=yes``"
-msgstr "调试模式的导出模板：\\ ``target=release_debug use_lto=yes``"
-
-msgid ""
-"For release export templates: ``tools=no target=release debug_symbols=yes`` "
-"- ``debug_symbols=yes`` is required as export templates are stripped from "
-"debugging symbols by default."
-msgstr ""
-"发布模式的导出模板：\\ ``tools=no target=release debug_symbols=yes``\\ ——必须"
-"使用 ``debug_symbols=yes``\\ ，因为导出模板默认会和调试符号剥离。"
 
 msgid ""
 "It is possible to run a profiler on less optimized builds (e.g. "

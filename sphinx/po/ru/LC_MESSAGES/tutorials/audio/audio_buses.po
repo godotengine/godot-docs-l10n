@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Audio buses"
-msgstr "Аудио"
+msgstr "Аудиошины"
 
 msgid "Introduction"
 msgstr "Введение"
@@ -56,15 +55,14 @@ msgstr ""
 msgid "For those unfamiliar with it, it can be explained with a few facts:"
 msgstr "Для тех, кто не знаком с ней, это можно объяснить следующими фактами:"
 
-#, fuzzy
 msgid ""
 "The decibel (dB) scale is a relative scale. It represents the ratio of sound "
 "power by using 20 times the base 10 logarithm of the ratio (20 × log\\ :sub:"
 "`10`\\ (P/P\\ :sub:`0`\\ ))."
 msgstr ""
-"Децибел (дБ) — это относительная величина. Она представляет собой отношение "
-"мощностей звука с применением десятичного логарифма умноженного на 20 (20 × "
-"log\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ ))."
+"Шкала децибел (дБ) является относительной шкалой. Он представляет отношение "
+"звуковой мощности с использованием 20-кратного логарифма отношения по "
+"основанию 10 (20 × log\\ :sub:`10`\\ (P/P\\ :sub:`0`\\ ))."
 
 msgid ""
 "For every 6 dB, sound amplitude doubles or halves. 12 dB represents a factor "
@@ -382,7 +380,7 @@ msgstr ""
 "используется для уменьшения басов в сигнале."
 
 msgid "HighShelfFilter"
-msgstr "HighShelfFilter"
+msgstr "HighShelfFiltеr"
 
 msgid "Reduces all frequencies above a specific *Cutoff* frequency."
 msgstr "Подавляет все частоты выше определенной * Cutoff * частоты."
@@ -414,9 +412,8 @@ msgstr ""
 "использовать для имитации «приглушенного» звука. Например, подводные звуки, "
 "звуки, заблокированные стенами, или далекие звуки."
 
-#, fuzzy
 msgid "LowShelfFilter"
-msgstr "Режекторный фильтр"
+msgstr "LowShelfFiltеr"
 
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
 msgstr "Уменьшение всех частоты ниже определенной * Cutoff * частоты."
@@ -454,7 +451,7 @@ msgstr ""
 "помощью вы можете сделать голос Дарта Вейдера или звуки, похожие на струи."
 
 msgid "PitchShift"
-msgstr "PitchShift"
+msgstr "PitсhShift"
 
 msgid ""
 "This effect allows the adjustment of the signal's pitch independently of its "
@@ -467,12 +464,10 @@ msgstr ""
 "высоких или глубоких голосов."
 
 msgid "Record"
-msgstr "Record"
+msgstr "Record (запись)"
 
-#, fuzzy
 msgid "The Record effect allows the user to record sound from a microphone."
-msgstr ""
-"Эффект «Record» позволяет записывать звук, проходящий через шину, в файл."
+msgstr "Эффект Record позволяет пользователю записывать звук с микрофона."
 
 msgid "Reverb"
 msgstr "Реверберация"
@@ -491,7 +486,7 @@ msgstr ""
 "«камерности» всем звукам."
 
 msgid "SpectrumAnalyzer"
-msgstr "SpectrumAnalyzer"
+msgstr "SpectrumAnаlyzer"
 
 msgid ""
 "This effect doesn't alter audio, instead, you add this effect to buses you "
@@ -505,7 +500,7 @@ msgstr ""
 "godot-demo-projects/tree/master/audio/spectrum>` __."
 
 msgid "StereoEnhance"
-msgstr "StereoEnhance"
+msgstr "StereоEnhance"
 
 msgid ""
 "This effect uses a few algorithms to enhance a signal's stereo spectrum."

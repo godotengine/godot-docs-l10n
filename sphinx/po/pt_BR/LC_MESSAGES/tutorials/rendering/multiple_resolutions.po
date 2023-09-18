@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Multiple resolutions"
-msgstr ""
+msgstr "Resoluções múltiplas"
 
-#, fuzzy
 msgid "The problem of multiple resolutions"
-msgstr "O tipo da transição"
+msgstr "O problema das múltiplas resoluções"
 
 msgid ""
 "Developers often have trouble understanding how to best support multiple "
@@ -83,8 +82,19 @@ msgstr ""
 msgid "Godot provides several useful tools to do this easily."
 msgstr ""
 
-msgid "Base size"
+#, fuzzy
+msgid ""
+"You can see how Godot's support for multiple resolutions works in action "
+"using the `Multiple Resolutions and Aspect Ratios demo project <https://"
+"github.com/godotengine/godot-demo-projects/tree/3.x/gui/"
+"multiple_resolutions>`__."
 msgstr ""
+"Se você aprender melhor olhando para um exemplo, você pode encontrar o "
+"projeto demonstrativo `aqui <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/mobile/android_iap>`__."
+
+msgid "Base size"
+msgstr "Tamanho base"
 
 msgid ""
 "A base size for the window can be specified in the Project Settings under "
@@ -127,7 +137,7 @@ msgid ""
 msgstr ""
 
 msgid "Resizing"
-msgstr ""
+msgstr "Redimensionando"
 
 msgid ""
 "There are several types of devices, with several types of screens, which in "
@@ -147,7 +157,7 @@ msgid ""
 msgstr ""
 
 msgid "Stretch settings"
-msgstr ""
+msgstr "Configurações de alongamento"
 
 msgid ""
 "Stretch settings are located in the project settings and provide several "
@@ -155,7 +165,7 @@ msgid ""
 msgstr ""
 
 msgid "Stretch Mode"
-msgstr ""
+msgstr "Modo Esticado"
 
 msgid ""
 "The **Stretch Mode** setting defines how the base size is stretched to fit "
@@ -193,7 +203,7 @@ msgid ""
 msgstr ""
 
 msgid "Stretch Aspect"
-msgstr ""
+msgstr "Aspecto Esticado"
 
 msgid ""
 "The second setting is the stretch aspect. Note that this only takes effect "
@@ -277,7 +287,7 @@ msgid ""
 msgstr ""
 
 msgid "Stretch Shrink"
-msgstr ""
+msgstr "Esticar Encolher"
 
 msgid ""
 "The **Shrink** setting allows you to add an extra scaling factor on top of "
@@ -300,7 +310,7 @@ msgid ""
 msgstr ""
 
 msgid "From scripts"
-msgstr ""
+msgstr "Por scripts"
 
 msgid ""
 "To configure stretching at runtime from a script, use the ``get_tree()."
@@ -319,10 +329,10 @@ msgstr ""
 "resoluções e aspect ratio's."
 
 msgid "Desktop game"
-msgstr ""
+msgstr "Jogo para desktop"
 
 msgid "**Non-pixel art:**"
-msgstr ""
+msgstr "**Non-pixel art:****"
 
 msgid ""
 "Set the base window width to ``1920`` and window height to ``1080``. If you "
@@ -354,9 +364,8 @@ msgid ""
 "**Layout** menu."
 msgstr ""
 
-#, fuzzy
 msgid "**Pixel art:**"
-msgstr "**Formato PCK:**"
+msgstr "**Pixel art:**"
 
 msgid ""
 "Set the base window size to the viewport size you intend to use. Most pixel "
@@ -439,9 +448,8 @@ msgstr ""
 msgid "Set **Display > Window > Handheld > Orientation** to ``portrait``."
 msgstr ""
 
-#, fuzzy
 msgid "Non-game application"
-msgstr "Especificação de Linguagem"
+msgstr "Aplicação não-jogo"
 
 msgid ""
 "Set the base window width and height to the smallest window size that you "
@@ -470,9 +478,8 @@ msgid ""
 "allow for the OS to use its low-DPI fallback."
 msgstr ""
 
-#, fuzzy
 msgid "hiDPI support"
-msgstr "Suporte de terceiros"
+msgstr "Suporte a hiDPI"
 
 msgid ""
 "By default, Godot projects aren't considered DPI-aware by the operating "
@@ -516,9 +523,8 @@ msgid ""
 "end mobile devices."
 msgstr ""
 
-#, fuzzy
 msgid "Handling aspect ratios"
-msgstr "Manipulando um sinal"
+msgstr "Trabalhando com proporções de tela"
 
 msgid ""
 "Once scaling for different resolutions is accounted for, make sure that your "
@@ -573,4 +579,4 @@ msgstr ""
 "viewport/3d_scaling>`__ para exemplos."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

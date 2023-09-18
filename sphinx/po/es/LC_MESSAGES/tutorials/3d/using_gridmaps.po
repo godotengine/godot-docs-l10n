@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -125,15 +125,18 @@ msgstr ""
 "Sólo se utilizan los materiales del interior de las mallas para generar la "
 "biblioteca de mallas. Los materiales establecidos en el nodo serán ignorados."
 
-#, fuzzy
 msgid "NavigationMeshes"
-msgstr "Mallas de navegación."
+msgstr "NavigationMeshes"
 
 msgid ""
 "Like all mesh instances, MeshLibrary items can be assigned a :ref:"
 "`class_NavigationMesh` resource, which can be created manually, or baked as "
 "described below."
 msgstr ""
+"Al igual que todas las instancias de malla (MeshInstance), los elementos de "
+"MeshLibrary pueden asignarse a un recurso :ref:`NavigationMesh "
+"<class_NavigationMesh>`, el cual puede crearse manualmente o generarse "
+"mediante el proceso de generación de navegación descrito a continuación."
 
 msgid ""
 "To create the NavigationMesh from a MeshLibrary scene export, place a :ref:"
@@ -142,23 +145,39 @@ msgid ""
 "NavigationMeshInstance and some source geometry nodes below and bake the "
 "NavigationMesh."
 msgstr ""
+"Para crear el NavigationMesh a partir de una exportación de escena de "
+"MeshLibrary, coloca un nodo hijo :ref:`NavigationMeshInstance "
+"<class_NavigationMeshInstance>` debajo de la instancia principal de "
+"MeshInstance para el elemento de GridMap. Agrega un recurso válido de "
+"NavigationMesh al NavigationMeshInstance y algunos nodos de geometría fuente "
+"debajo, y luego realiza la generación del NavigationMesh."
 
 msgid ""
 "With small grid cells it is often necessary to reduce the NavigationMesh "
 "properties for agent radius and region minimum size."
 msgstr ""
+"Con celdas de malla pequeñas, a menudo es necesario reducir las propiedades "
+"del NavigationMesh para el radio del agente (agent radius) y el tamaño "
+"mínimo de la región (region minimum size)."
 
 msgid ""
 "Nodes below the NavigationMeshInstance are ignored for the MeshLibrary scene "
 "export, so additional nodes can be added as source geometry just for baking "
 "the navmesh."
 msgstr ""
+"Los nodos ubicados debajo del NavigationMeshInstance se ignoran en la "
+"exportación de la escena de MeshLibrary, por lo que se pueden agregar nodos "
+"adicionales como geometría fuente únicamente para generar el navmesh."
 
 msgid ""
 "The baked cell size of the NavigationMesh must match the NavigationServer "
 "map cell size to properly merge the navigation meshes of different grid "
 "cells."
 msgstr ""
+"El tamaño de celda (cell size) generado en el proceso de horneado del "
+"NavigationMesh debe coincidir con el tamaño de celda del mapa (map cell "
+"size) del NavigationServer para fusionar correctamente los navmeshes de "
+"diferentes celdas de malla."
 
 msgid "Exporting the MeshLibrary"
 msgstr "Exportación de MeshLibrary"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Custom resource format loaders"
-msgstr "Carregando recursos a partir do código"
+msgstr "Carregadores de recurso em formato personalizado"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -113,18 +112,16 @@ msgstr ""
 "recursos com a função ``load``. Para carregar um recurso, a função ``load`` "
 "deve ler e manipular a serialização de dados."
 
-#, fuzzy
 msgid "Creating a ResourceFormatSaver"
-msgstr "Criando um projeto"
+msgstr "Criando um ResourceFormatSaver"
 
 msgid ""
 "If you'd like to be able to edit and save a resource, you can implement a "
 "``ResourceFormatSaver``:"
 msgstr ""
 
-#, fuzzy
 msgid "Creating custom data types"
-msgstr "Criando nós"
+msgstr "Criando tipos de dados personalizados"
 
 msgid ""
 "Godot may not have a proper substitute within its :ref:`doc_core_types` or "
@@ -155,12 +152,14 @@ msgstr ""
 "``std::istream``."
 
 msgid "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
-msgstr ""
+msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 
 msgid ""
 "`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`_"
 msgstr ""
+"`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
 
 msgid ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
@@ -169,9 +168,8 @@ msgstr ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
 "os/file_access.h>`_"
 
-#, fuzzy
 msgid "Registering the new file format"
-msgstr "Uso na GDScript"
+msgstr "Registrando o novo formato de arquivo"
 
 msgid ""
 "Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
@@ -189,9 +187,8 @@ msgid ""
 "the project's root folder:"
 msgstr ""
 
-#, fuzzy
 msgid "Then attach the following script to any node::"
-msgstr "Existem as seguintes ressalvas:"
+msgstr "Em seguida, anexe o seguinte script a qualquer nó:"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

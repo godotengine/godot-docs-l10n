@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,6 @@ msgstr ""
 "certas sequências de caracteres de substituição. Essas sequências podem ser "
 "facilmente substituídas por parâmetros passados para a string de formatação."
 
-#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
 "how are you?\"`` can easily be changed to ``\"Hello World, how are you?\"``. "
@@ -242,14 +241,15 @@ msgstr "Nos especificadores numéricos, **mostra o simbolo +** se positivo."
 msgid "Integer"
 msgstr "Inteiro"
 
-#, fuzzy
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer or real number placeholder. The leading ``0`` is ignored "
 "if ``-`` is present. When used after ``.``, see ``.``."
 msgstr ""
-"Define o **espaçamento**. Espaçado com espaços, ou com zeros caso o inteiro "
-"começe com ``0`` no espaço reservado. Quando usado após ``.``, veja ``.``."
+"Defina o **espaçamento**. Espaçado com espaços ou com zeros se o número "
+"inteiro começa com ``0`` num número inteiro ou num número real com "
+"substituto. O principal ``0`` é ignorado se ``-`` estiver presente. Quando "
+"utilizado depois de ``.``, veja ``.``."
 
 msgid "``.``"
 msgstr "``.``"
@@ -475,4 +475,4 @@ msgid "Hi, Godette v3.11"
 msgstr "Oi, Godette v3.11"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

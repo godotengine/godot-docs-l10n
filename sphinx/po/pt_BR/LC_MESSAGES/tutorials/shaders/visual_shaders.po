@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using VisualShaders"
-msgstr ":ref:`Plugins de shader visual <doc_visual_shader_plugins>`"
+msgstr ":ref:`Usando VisualShaders <doc_visual_shader_plugins>`"
 
 msgid ""
 "Just as VisualScript is an alternative for users that prefer a graphical "
@@ -39,10 +38,11 @@ msgid ""
 "If you are not familiar with shaders, start by reading :ref:"
 "`doc_introduction_to_shaders`."
 msgstr ""
+"Se você não está familiarizado com os shaders, comece lendo: ref:"
+"`doc_introduction_to_shaders`."
 
-#, fuzzy
 msgid "Creating a VisualShader"
-msgstr "Criando um projeto"
+msgstr "Criando um VisualShader"
 
 msgid ""
 "VisualShaders can be created in any :ref:`class_ShaderMaterial`. To begin "
@@ -95,9 +95,8 @@ msgid ""
 "it in scripts."
 msgstr ""
 
-#, fuzzy
 msgid "Using the Visual Shader Editor"
-msgstr "Usando um editor de texto externo"
+msgstr "Usando o Editor Visual de Shader"
 
 msgid ""
 "By default, every new ``VisualShader`` will have an output node. Every node "
@@ -107,9 +106,8 @@ msgid ""
 "graph, and a menu will pop up."
 msgstr ""
 
-#, fuzzy
 msgid "This popup has the following properties:"
-msgstr "O HUD exibirá as seguintes informações:"
+msgstr "Este pop-up tem as seguintes propriedades:"
 
 msgid ""
 "If you right-click on the graph, this menu will be called at the cursor "
@@ -148,16 +146,14 @@ msgid ""
 "the scalar will be the average of the vector's components."
 msgstr ""
 
-#, fuzzy
 msgid "Visual Shader nodes"
-msgstr ":ref:`Plugins de shader visual <doc_visual_shader_plugins>`"
+msgstr "Nós do Visual Shader"
 
 msgid ""
 "Below are some special nodes that are worth knowing about. The list is not "
 "exhaustive and might be expanded with more nodes and examples."
 msgstr ""
 
-#, fuzzy
 msgid "Expression node"
 msgstr "Nó de Expressão"
 
@@ -178,9 +174,8 @@ msgid ""
 "``discard`` keyword, extended types, etc. For example:"
 msgstr ""
 
-#, fuzzy
 msgid "Fresnel node"
-msgstr "Criando nós"
+msgstr "Nó Fresnel"
 
 msgid ""
 "The ``Fresnel`` node is designed to accept normal and view vectors and "
@@ -189,9 +184,8 @@ msgid ""
 "``Fresnel`` node is great for adding a rim-like lighting effect to objects."
 msgstr ""
 
-#, fuzzy
 msgid "Boolean node"
-msgstr "OU Booleano"
+msgstr "Nó booleano"
 
 msgid ""
 "The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to "
@@ -201,7 +195,7 @@ msgid ""
 msgstr ""
 
 msgid "If node"
-msgstr ""
+msgstr "Se nó"
 
 msgid ""
 "The ``If`` node allows you to setup a vector which will be returned the "
@@ -211,9 +205,8 @@ msgid ""
 "value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
 msgstr ""
 
-#, fuzzy
 msgid "Switch node"
-msgstr "Switch"
+msgstr "Nó Switch"
 
 msgid ""
 "The ``Switch`` node returns a vector if the boolean condition is ``true`` or "
@@ -227,4 +220,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

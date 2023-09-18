@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,22 +42,22 @@ msgstr ""
 "scripts. Tanto que o Godot expões muitas delas com funções dedicadas:"
 
 msgid "``_ready()`` : NOTIFICATION_READY"
-msgstr ""
+msgstr "``_ready()`` : NOTIFICATION_READY"
 
 msgid "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
-msgstr ""
+msgstr "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
 
 msgid "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
-msgstr ""
+msgstr "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
 
 msgid "``_process(delta)`` : NOTIFICATION_PROCESS"
-msgstr ""
+msgstr "``_process(delta)`` : NOTIFICATION_PROCESS"
 
 msgid "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
-msgstr ""
+msgstr "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
 
 msgid "``_draw()`` : NOTIFICATION_DRAW"
-msgstr ""
+msgstr "``_draw()`` : NOTIFICATION_DRAW"
 
 msgid ""
 "What users might *not* realize is that notifications exist for types other "
@@ -163,7 +163,7 @@ msgstr ""
 "virtuais?"
 
 msgid "_process vs. _physics_process vs. \\*_input"
-msgstr ""
+msgstr "_process vs. _physics_process vs. \\*_input"
 
 msgid ""
 "Use ``_process`` when one needs a framerate-dependent deltatime between "
@@ -216,7 +216,7 @@ msgstr ""
 "buscá-lo a partir dos métodos deltatime relacionados conforme necessário."
 
 msgid "_init vs. initialization vs. export"
-msgstr ""
+msgstr "_init vs. initialization vs. export"
 
 msgid ""
 "If the script initializes its own node subtree, without a scene, that code "
@@ -270,7 +270,7 @@ msgstr ""
 "inicialização *como* o número de vezes que o mecanismo chama o setter."
 
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
-msgstr ""
+msgstr "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
 
 msgid ""
 "When instantiating a scene connected to the first executed scene, Godot will "
@@ -288,7 +288,6 @@ msgstr ""
 "que todos os nós filhos tenham terminado de chamar o seu. Isto então causa "
 "uma cascata inversa que volta à raiz da árvore."
 
-#, fuzzy
 msgid ""
 "When instantiating a script or a standalone scene, nodes are not added to "
 "the SceneTree upon creation, so no ``_enter_tree`` callbacks trigger. "
@@ -317,4 +316,4 @@ msgstr ""
 "execução."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

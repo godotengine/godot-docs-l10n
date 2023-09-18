@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,9 @@ msgid ""
 "looking to compile editor or export template binaries from source instead, "
 "read :ref:`doc_compiling_for_web`."
 msgstr ""
+"Esta página descreve como exportar um projeto Godot para HTML5. Se você "
+"deseja compilar o editor ou exportar binários de modelo do código-fonte, "
+"leia :ref:`doc_compiling_for_web`."
 
 msgid ""
 "HTML5 export allows publishing games made in Godot Engine to the browser. "
@@ -58,9 +61,8 @@ msgstr ""
 "recomendamos usar :ref:`iOS' native export functionality "
 "<doc_exporting_for_ios>`, pois também resultará em melhor desempenho."
 
-#, fuzzy
 msgid "WebGL version"
-msgstr "Controle de versão do Godot"
+msgstr "Versão WebGL"
 
 msgid ""
 "Depending on your choice of renderer, Godot can target WebGL 1.0 (*GLES2*) "
@@ -129,11 +131,17 @@ msgid ""
 "SharedArrayBuffer>`__. See `Can I use SharedArrayBuffer <https://caniuse.com/"
 "sharedarraybuffer>`__ for details."
 msgstr ""
+"*Threads*: exigirá que o navegador suporte `SharedArrayBuffer <https://"
+"developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/"
+"SharedArrayBuffer>`__. Consulte `Posso usar SharedArrayBuffer <https://"
+"caniuse.com/sharedarraybuffer>`__ para obter detalhes."
 
 msgid ""
 "*GDNative*: enables GDNative support but makes the binary bigger and slower "
 "to load."
 msgstr ""
+"*GDNative*: ativa o suporte GDNative, mas torna o binário maior e mais lento "
+"para carregar."
 
 msgid ""
 "If you plan to use :ref:`VRAM compression <doc_import_images>` make sure "
@@ -228,9 +236,8 @@ msgstr ""
 "sistema de arquivos ``user://`` é persistente, mas pode dar falso positivo "
 "em alguns casos."
 
-#, fuzzy
 msgid "Background processing"
-msgstr "Carregamento em segundo plano"
+msgstr "Processamento em segundo plano"
 
 msgid ""
 "The project will be paused by the browser when the tab is no longer the "
@@ -331,9 +338,12 @@ msgstr ""
 msgid "Networking"
 msgstr "Trabalho em rede"
 
+#, fuzzy
 msgid ""
 "Low level networking is not implemented due to lacking support in browsers."
 msgstr ""
+"A rede de baixo nível não é implementada devido à falta de suporte nos "
+"navegadores."
 
 msgid ""
 "Currently, only :ref:`HTTP client <doc_http_client_class>`, :ref:`HTTP "
@@ -380,10 +390,10 @@ msgid ""
 msgstr ""
 
 msgid "Requires a :ref:`secure context <doc_javascript_secure_contexts>`."
-msgstr ""
+msgstr "Requer um :ref:`secure context <doc_javascript_secure_contexts>`."
 
 msgid "Gamepads"
-msgstr ""
+msgstr "Controles de jogo (Gamepads)"
 
 msgid ""
 "Gamepads will not be detected until one of their button is pressed. Gamepads "
@@ -551,7 +561,6 @@ msgstr ""
 msgid "Any other JavaScript value is returned as ``null``."
 msgstr "Qualquer outro valor no JavaScript é retornado como ``null``."
 
-#, fuzzy
 msgid ""
 "HTML5 export templates may be :ref:`built <doc_compiling_for_web>` without "
 "support for the singleton to improve security. With such templates, and on "
@@ -559,11 +568,11 @@ msgid ""
 "``null``. The availability of the singleton can be checked with the "
 "``JavaScript`` :ref:`feature tag <doc_feature_tags>`::"
 msgstr ""
-"Os modelos de exportação HTML5 podem ser :ref:`construídos "
+"Os modelos HTML5 de exportação podem ser :ref:`built "
 "<doc_compiling_for_web>` sem suporte para o singleton para melhorar a "
-"segurança. Com esses modelos, e em plataformas diferentes de HTML5, chamar "
-"``JavaScript.eval`` também retornará ``null``. A disponibilidade do "
-"singleton pode ser verificada com a tag ``JavaScript`` :ref:`feature "
+"segurança. Com tais templates, e em outras plataformas além do HTML5, "
+"chamando ``JavaScript.eval`` também retornará ``null``. A disponibilidade do "
+"singleton pode ser verificada com a tag ``JavaScript`` :ref:`feature tag "
 "<doc_feature_tags>`::"
 
 msgid ""
@@ -584,4 +593,4 @@ msgstr ""
 "``falso`` para prevenir poluir o namespace global::"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

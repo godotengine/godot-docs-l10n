@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,9 +32,9 @@ msgstr ""
 "關於 Godot 編輯器 HTML5 版本的特定注意事項，請參考 :ref:"
 "`doc_using_the_web_editor`。"
 
+#, fuzzy
 msgid ""
-"Everything I do in the editor or project manager appears delayed by one "
-"frame."
+"Everything I do in the editor or project manager appears delayed by one frame"
 msgstr "我在編輯器與專案管理員中做任何事情感覺都慢了一幀。"
 
 msgid ""
@@ -54,9 +54,10 @@ msgstr ""
 "請使用由 Intel 提供的顯示卡驅動程式，而不要使用主機或筆電製造商提供的程式，因"
 "為通常版本都很舊。"
 
+#, fuzzy
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
-"editor."
+"editor"
 msgstr "在編輯器中旋轉 3D 相機時，柵欄不見了，網格也變成了全黑。"
 
 msgid ""
@@ -81,7 +82,8 @@ msgstr ""
 "如果使用的電腦允許切換顯示卡，如 NVIDIA Optimus，則可以使用合適的顯示卡來執"
 "行 Godot。"
 
-msgid "The editor or project takes a very long time to start."
+#, fuzzy
+msgid "The editor or project takes a very long time to start"
 msgstr "編輯器或專案花了很多時間才打開。"
 
 msgid ""
@@ -98,9 +100,10 @@ msgstr ""
 "本。若仍然遇到此 Bug，則必須在開啟編輯器時先斷開有問題的週邊設備。開啟後即可"
 "重新接上。"
 
+#, fuzzy
 msgid ""
-"Editor tooltips in the Inspector and Node docks blink when they're displayed."
-msgstr ""
+"Editor tooltips in the Inspector and Node docks blink when they're displayed"
+msgstr "檢查器和節點面板的編輯器工具提示出現後閃爍。"
 
 msgid ""
 "This is a `known issue <https://github.com/godotengine/godot/"
@@ -108,8 +111,12 @@ msgid ""
 "Windows. The only known workaround is to disable Stardock Fences while using "
 "Godot."
 msgstr ""
+"這是個\\ `已知錯誤< https://github.com/godotengine/godot/issues/32990 "
+">`__\\， 是由Windows上的協力廠商程式Stardock Fences引起的。 已知的繞過方法是"
+"在使用Godot時禁用Stardock Fences。"
 
-msgid "The Godot editor appears frozen after clicking the system console."
+#, fuzzy
+msgid "The Godot editor appears frozen after clicking the system console"
 msgstr "點擊系統主控台後，Godot 編輯器沒有回應。"
 
 msgid ""
@@ -128,27 +135,32 @@ msgid ""
 "selection mode."
 msgstr "要解決此問題，請選擇系統主控台視窗，並按一下 Enter 鍵來離開選擇模式。"
 
+#, fuzzy
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
-"manager and editor window."
+"manager and editor window"
 msgstr "在專案管理員與編輯器視窗左上角出現\"NO DC\"之類的文字。"
 
 msgid ""
 "This is caused by the NVIDIA graphics driver injecting an overlay to display "
 "information."
-msgstr ""
+msgstr "這是由於NVIDIA顯卡驅動程序注入了覆蓋顯示資訊造成的。"
 
 msgid ""
 "To disable this overlay on Windows, restore your graphics driver settings to "
 "the default values in the NVIDIA Control Panel."
 msgstr ""
+"要在Windows上禁用此覆蓋，請在NVIDIA控制台中將圖形驅動程序設定恢復為預設值。"
 
 msgid ""
 "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Screen "
 "0 > OpenGL Settings** then uncheck **Enable Graphics API Visual Indicator**."
 msgstr ""
+"要在Linux上禁用此覆蓋，請打開``nvidia-settings``\\，轉到**X Screen 0 > "
+"OpenGL Settings**\\，然後取消選中**Enable Graphics API Visual Indicator**\\。"
 
-msgid "The project window appears blurry, unlike the editor."
+#, fuzzy
+msgid "The project window appears blurry, unlike the editor"
 msgstr "專案視窗看起來很模式，編輯器則不會。"
 
 msgid ""
@@ -168,7 +180,8 @@ msgstr ""
 "[Dpi] > [Allow Hidpi]** 。除此之外，請確保專案有設定好 :ref:`多解析度 "
 "<doc_multiple_resolutions>` 支援。"
 
-msgid "The project window doesn't appear centered when I run the project."
+#, fuzzy
+msgid "The project window doesn't appear centered when I run the project"
 msgstr "執行專案時，專案視窗沒有顯示在正中間。"
 
 msgid ""
@@ -183,8 +196,33 @@ msgstr ""
 "好 :ref:`多解析度 <doc_multiple_resolutions>` 支援。"
 
 msgid ""
+"The editor/project freezes or displays glitched visuals after resuming the "
+"PC from suspend"
+msgstr ""
+
+msgid ""
+"This is a known issue on Linux with NVIDIA graphics when using the "
+"proprietary driver. There is no definitive fix yet, as suspend on Linux + "
+"NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+msgid ""
+"The NVIDIA driver offers an *experimental* `option to preserve video memory "
+"after suspend <https://wiki.archlinux.org/title/NVIDIA/"
+"Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve "
+"this issue. This option has been reported to work better with more recent "
+"NVIDIA driver versions."
+msgstr ""
+
+msgid ""
+"To avoid losing work, save scenes in the editor before putting the PC to "
+"sleep."
+msgstr ""
+
+#, fuzzy
+msgid ""
 "The project works when run from the editor, but fails to load some files "
-"when running from an exported copy."
+"when running from an exported copy"
 msgstr "專案可以從編輯器裡執行，但是從匯出的版本執行時無法載入某些檔案。"
 
 msgid ""

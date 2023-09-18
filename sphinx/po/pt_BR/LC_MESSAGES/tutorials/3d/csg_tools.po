@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,46 +46,37 @@ msgid ""
 "trenchbroom/>`__ and import them in Godot."
 msgstr ""
 
-#, fuzzy
 msgid "Introduction to CSG nodes"
-msgstr "Introdução ao editor do Godot"
+msgstr "Introdução aos nós de CSG"
 
 msgid ""
 "Like other features of Godot, CSG is supported in the form of nodes. These "
 "are the CSG nodes:"
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`CSGBox <class_CSGBox>`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`CSGBox <class_CSGBox>`"
 
-#, fuzzy
 msgid ":ref:`CSGCylinder <class_CSGCylinder>` (also supports cone)"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`CSGCylinder <class_CSGCylinder>` (também suporta cone)"
 
-#, fuzzy
 msgid ":ref:`CSGSphere <class_CSGSphere>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`CSGSphere <class_CSGSphere>`"
 
-#, fuzzy
 msgid ":ref:`CSGTorus <class_CSGTorus>`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`CSGTorus <class_CSGTorus>`"
 
-#, fuzzy
 msgid ":ref:`CSGPolygon <class_CSGPolygon>`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
-#, fuzzy
 msgid ":ref:`CSGMesh <class_CSGMesh>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`CSGMesh <class_CSGMesh>`"
 
-#, fuzzy
 msgid ":ref:`CSGCombiner <class_CSGcombiner>`"
-msgstr ":ref:`Color <class_Color>`"
+msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
 
-#, fuzzy
 msgid "CSG tools features"
-msgstr "Recursos decisivos"
+msgstr "Características das ferramentas CSG"
 
 msgid "Every CSG node supports 3 kinds of boolean operations:"
 msgstr ""
@@ -105,7 +96,7 @@ msgid ""
 msgstr ""
 
 msgid "CSGPolygon"
-msgstr ""
+msgstr "PolígonoCSG"
 
 msgid ""
 "The :ref:`CSGPolygon <class_CSGPolygon>` node extrude along a Polygon drawn "
@@ -129,9 +120,8 @@ msgid ""
 "extrude along the given path."
 msgstr ""
 
-#, fuzzy
 msgid "Custom meshes"
-msgstr "Iteradores personalizados"
+msgstr "Malhas personalizadas"
 
 msgid ""
 "Any mesh can be used for :ref:`CSGMesh <class_CSGMesh>`; the mesh can be "
@@ -139,9 +129,8 @@ msgid ""
 "supported. There are some restrictions for geometry:"
 msgstr ""
 
-#, fuzzy
 msgid "it must be closed,"
-msgstr "Repetição deve ser habilitada"
+msgstr "deve ser fechado,"
 
 msgid "it must not self-intersect,"
 msgstr ""
@@ -153,16 +142,15 @@ msgid "every edge must connect to only two other faces."
 msgstr ""
 
 msgid "CSGCombiner"
-msgstr ""
+msgstr "CombinadorCSG"
 
 msgid ""
 "The :ref:`CSGCombiner <class_CSGCombiner>` node is an empty shape used for "
 "organization. It will only combine children nodes."
 msgstr ""
 
-#, fuzzy
 msgid "Processing order"
-msgstr "Processo"
+msgstr "Ordem de processamento"
 
 msgid ""
 "Every CSG node will first process its children nodes and their operations: "
@@ -180,7 +168,7 @@ msgid ""
 msgstr ""
 
 msgid "Prototyping a level"
-msgstr ""
+msgstr "Prototipando um nível"
 
 msgid "We will prototype a room to practice the use of CSG tools."
 msgstr ""
@@ -194,19 +182,19 @@ msgid "Our level will contain these objects:"
 msgstr ""
 
 msgid "a room,"
-msgstr ""
+msgstr "um quarto,"
 
 msgid "a bed,"
-msgstr ""
+msgstr "uma cama,"
 
 msgid "a lamp,"
-msgstr ""
+msgstr "uma lâmpada,"
 
 msgid "a desk,"
-msgstr ""
+msgstr "uma mesa,"
 
 msgid "a bookshelf."
-msgstr ""
+msgstr "uma estante de livros."
 
 msgid "Create a scene with a Spatial node as root node."
 msgstr ""
@@ -281,11 +269,12 @@ msgid ""
 "this shows the use of CSGCombiner to organize the CSG scene."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Undo the re-parent after observing the effect. The bed you've built should "
 "look like this:"
-msgstr "A árvore da cena deveria se parecer assim:"
+msgstr ""
+"Desfaça a herança depois de observar o efeito. A cama que você construiu "
+"deve ter esta aparência:"
 
 msgid "Create a CSGCombiner and name it ``lamp``."
 msgstr ""
@@ -324,12 +313,11 @@ msgid ""
 "into two levels."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Position your furniture in your room as you like and your scene should look "
 "this:"
 msgstr ""
-"Quando tiver finalizado, sua cena ``Jogador`` deveria se parecer assim:"
+"Posicione seus móveis em seu quarto como quiser e sua cena deve ficar assim:"
 
 msgid ""
 "You've successfully prototyped a room level with the CSG tools in Godot. CSG "
@@ -337,9 +325,8 @@ msgid ""
 "city; explore its limitations when designing your game."
 msgstr ""
 
-#, fuzzy
 msgid "Using prototype textures"
-msgstr "Movendo o Jogador"
+msgstr "Usando texturas protótipo"
 
 msgid ""
 "Godot's :ref:`doc_spatial_material` supports *triplanar mapping*, which can "
@@ -355,9 +342,8 @@ msgid ""
 "licensed prototype textures <https://kenney.nl/assets/prototype-textures>`__."
 msgstr ""
 
-#, fuzzy
 msgid "There are two ways to apply a material to a CSG node:"
-msgstr "Há algumas coisas para observar:"
+msgstr "Há duas maneiras de aplicar um material a um nó CSG:"
 
 msgid ""
 "Applying it to a CSGCombiner node as a material override (**Geometry > "
@@ -393,4 +379,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

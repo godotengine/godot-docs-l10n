@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,9 @@ msgid ""
 "looking to compile editor or export template binaries from source instead, "
 "read :ref:`doc_compiling_for_osx`."
 msgstr ""
+"Эта страница описывает, как экспортировать проект Godot в macOS. Если вы "
+"хотите скомпилировать редактор или экспортировать двоичные файлы шаблона из "
+"исходного кода, читайте :ref:`doc_compiling_for_osx`."
 
 msgid ""
 "macOS apps are exported as an ``.app`` bundle, a folder with a specific "
@@ -48,6 +51,8 @@ msgstr ""
 msgid ""
 "Ad-hoc code signing is supported on all platforms, without additional tools."
 msgstr ""
+"Подписание кода Ad-hoc поддерживается на всех платформах, без дополнительных "
+"инструментов."
 
 msgid ""
 "Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
@@ -60,6 +65,8 @@ msgid ""
 "A valid and unique ``Bundle identifier`` should be set in the "
 "``Application`` section of the export options."
 msgstr ""
+"Действительный и уникальный идентификатор ``Bundle`` должен быть установлен "
+"в разделе ``Application`` вариантов экспорта."
 
 msgid ""
 "Projects exported without code signing and notarization will be blocked by "
@@ -67,6 +74,10 @@ msgid ""
 "`Running Godot apps on macOS <doc_running_on_macos>` page for more "
 "information."
 msgstr ""
+"Проекты, экспортируемые без подписи кода и нотариализации, будут "
+"заблокированы Gatekeeper, если они будут загружены из неизвестных "
+"источников, см.:ref:`Запуск Godot приложения на macOS "
+"<doc_running_on_macos>` для получения дополнительной информации."
 
 #, fuzzy
 msgid "Code signing and notarization"
@@ -77,14 +88,20 @@ msgid ""
 "If you use any other signing configuration, see :ref:`Running Godot apps on "
 "macOS <doc_running_on_macos>` for workarounds."
 msgstr ""
+"По умолчанию macOS будет запускать только приложения, которые подписаны и "
+"нотариально заверены. Если вы используете любую другую конфигурацию подписи, "
+"см.:ref:`Запуск Godot-приложения на macOS <doc_running_on_macos>` для "
+"обходов."
 
 msgid ""
 "To notarize an app, you **must** have a valid `Apple Developer ID "
 "Certificate <https://developer.apple.com/>`__."
 msgstr ""
+"Чтобы зафиксировать приложение, вы ** должны иметь действительный `Apple "
+"Developer ID Certificate <https://developer.apple.com/>`__."
 
 msgid "If you have an Apple Developer ID Certificate"
-msgstr ""
+msgstr "Если у вас есть сертификат Apple Developer ID"
 
 #, fuzzy
 msgid ""
@@ -98,14 +115,20 @@ msgid ""
 "Enable ``Code Signing``, ``Notarization``, ``Hardened Runtime`` and "
 "``Timestamp`` and disable the ``Debug`` entitlement."
 msgstr ""
+"Включить ``Code Signing``, ``Notarization``, ``Hardened Runtime`` и "
+"``Timestamp`` и отключить право ``Debug``."
 
 msgid "Provide valid Apple ID credentials and certificate identity."
 msgstr ""
+"Предоставление действительных учетных данных Apple ID и идентификационных "
+"данных сертификатов."
 
 msgid ""
 "If ``Notarization`` is enabled, Godot will automatically upload the exported "
 "project for notarization."
 msgstr ""
+"Если ``Notarization`` включен, Godot автоматически загрузит экспортируемый "
+"проект для нотариализации."
 
 msgid ""
 "You can use the ``xcrun notarytool history`` command to check notarization "
@@ -332,7 +355,7 @@ msgid ""
 msgstr ""
 
 msgid "Calendars"
-msgstr ""
+msgstr "Календари"
 
 msgid ""
 "[4]_ Enable to allow access to the user's calendar, if it's enabled you "

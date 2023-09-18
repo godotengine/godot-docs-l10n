@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "3D text"
-msgstr ""
+msgstr "3D текст"
 
 msgid "Introduction"
 msgstr "Введение"
@@ -28,6 +28,9 @@ msgid ""
 "3D scene and not just in the HUD. Godot provides two methods to do this. The "
 "Label3D node and the text mesh for a MeshInstance node."
 msgstr ""
+"В проекте могут возникнуть ситуации, когда текст должен быть создан как "
+"часть 3D-сцены, а не только в HUD. Godot предоставляет два метода для этого. "
+"Узел Label3D и текстовая сетка для узла MeshInstance."
 
 #, fuzzy
 msgid ""
@@ -48,6 +51,10 @@ msgid ""
 "customizable and uses the same DynamicFont and BitmapFont subresources "
 "control nodes use."
 msgstr ""
+"Label3D ведёт себя как узел метки, но в трёхмерном пространстве. В отличие "
+"от узла метки, он не может наследовать свойства темы GUI. Однако его внешний "
+"вид остаётся настраиваемым и использует те же подресурсы DynamicFont и "
+"BitmapFont, что и узлы управления."
 
 msgid ""
 "Label3D has minimal interaction with a 3D environment, it can be lit up and "
@@ -58,6 +65,13 @@ msgid ""
 "`this page <doc_3d_rendering_limitations_transparency_sorting>` for more "
 "information."
 msgstr ""
+"Label3D имеет минимальное взаимодействие с 3D-средой, он может быть освещен "
+"и затенен источниками света, если включен флаг shaded, но он не будет "
+"отбрасывать тень, даже при включенной функции cast shadow в настройках узла "
+"GeometryInstance3D. Это происходит потому, что узел представляет собой "
+"квадратную сетку (один глиф на квадрат) с прозрачными текстурами и имеет те "
+"же ограничения, что и Sprite3D. Дополнительную информацию смотрите на :ref:"
+"`этой странице <doc_3d_rendering_limitations_transparency_sorting>`."
 
 #, fuzzy
 msgid "Text mesh"
@@ -70,11 +84,18 @@ msgid ""
 "can have a material applied to it. Here is an example of a texture and how "
 "it's applied to the mesh."
 msgstr ""
+"Текстовые сетки имеют сходство с Label3D. Они отображают текст в трехмерной "
+"сцене и используют тот же подресурс DynamicFont. Однако текст является "
+"трехмерным и имеет свойства сетки. Текстовая сетка отбрасывает тени на "
+"окружение и может иметь материал, применённый к ней. Вот пример текстуры и "
+"её применения к сетке."
 
 msgid ""
 "There are two limitations to text mesh. It can't use bitmap fonts, or fonts "
 "with self intersection."
 msgstr ""
+"У текстовой сетки есть два ограничения. Она не может использовать растровые "
+"шрифты или шрифты с самопересечением."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

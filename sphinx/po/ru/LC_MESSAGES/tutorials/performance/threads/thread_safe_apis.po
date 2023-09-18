@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,42 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Thread-safe APIs"
-msgstr "Потоко-безопасные API"
+msgstr "Потокобезопасные API"
 
 msgid "Threads"
 msgstr "Потоки"
 
-#, fuzzy
 msgid ""
 "Threads are used to balance processing power across CPUs and cores. Godot "
 "supports multithreading, but not in the whole engine."
 msgstr ""
-"Использование потоков это обычный путь для балансировки процесса вычислений "
-"между CPU и ядрами. Godot поддерживает много-поточность, но не во всём "
+"Потоки используются для балансировки вычислительной мощности между "
+"процессорами и ядрами. Godot поддерживает многопоточность, но не во всем "
 "движке."
 
-#, fuzzy
 msgid ""
 "Below is a list of ways multithreading can be used in different areas of "
 "Godot."
 msgstr ""
-"Ниже перечислены области Godot и как они могут быть использованы с потоками."
+"Ниже приведен список способов, которыми многопоточность может быть "
+"использована в различных областях Godot."
 
 msgid "Global scope"
-msgstr "Глобальный контекст"
+msgstr "Глобальная область"
 
-#, fuzzy
 msgid ""
 ":ref:`Global Scope<class_@GlobalScope>` singletons are all thread-safe. "
 "Accessing servers from threads is supported (for VisualServer and Physics "
 "servers, ensure threaded or thread-safe operation is enabled in the project "
 "settings!)."
 msgstr ""
-":ref:`Глобальные<class_@GlobalScope>` синглтоны полностью потоко-безопасны. "
-"Доступ к серверам из потоков поддерживается (для VisualServer и Physics "
-"серверов, убедитесь что потоковые операции включены в настройках проекта!)."
+"Все синглтоны :ref:`Global Scope<class_@GlobalScope>` являются "
+"потокобезопасными. Доступ к серверам из потоков поддерживается (для серверов "
+"VisualServer и Physics убедитесь, что в настройках проекта включена "
+"потоковая или потокобезопасная работа!)."
 
 msgid ""
 "This makes them ideal for code that creates dozens of thousands of instances "
@@ -101,7 +99,7 @@ msgid ""
 msgstr ""
 
 msgid "Rendering"
-msgstr "Рендеринг"
+msgstr "*Рендеринг*"
 
 msgid ""
 "Instancing nodes that render anything in 2D or 3D (such as Sprite) is *not* "
@@ -140,6 +138,15 @@ msgid ""
 "easiest to use **one** thread for loading and modifying resources, and then "
 "the main thread for adding them."
 msgstr ""
+"Изменение уникального ресурса из нескольких потоков не поддерживается. "
+"Однако работа со ссылками в нескольких потоках поддерживается, поэтому "
+"загрузка ресурсов в поток также поддерживается - сцены, текстуры, сетки и т."
+"д. могут быть загружены и обработаны в потоке, а затем добавлены в активную "
+"сцену в основном потоке. Ограничением здесь является то, что, как описано "
+"выше, нужно быть осторожным, чтобы не загрузить один и тот же ресурс из "
+"нескольких потоков одновременно, поэтому проще всего использовать **один "
+"поток** для загрузки и изменения ресурсов, а затем основной поток для их "
+"добавления."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

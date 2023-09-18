@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Heads up display"
-msgstr "平视显示器"
+msgstr "游戏信息显示"
 
 msgid ""
 "The final piece our game needs is a User Interface (UI) to display things "
@@ -33,8 +33,8 @@ msgid ""
 "display that appears as an overlay on top of the game view."
 msgstr ""
 "创建新场景，然后添加一个 :ref:`CanvasLayer <class_CanvasLayer>` 节点并命名为 "
-"``HUD``\\ 。“HUD”是“heads-up display”（平视显示器）的缩写，是覆盖在游戏视图上"
-"用来显示信息的显示器。"
+"``HUD``\\ 。“HUD”是“heads-up display”（游戏信息显示）的缩写，是覆盖在游戏视图"
+"上显示的信息。"
 
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
@@ -87,7 +87,7 @@ msgid ""
 "Regular.ttf\". To use this font, do the following:"
 msgstr ""
 "点击 ``ScoreLabel`` 并在“检查器”的 ``Text`` 字段中键入一个数字。 ``Control`` "
-"节点的默认字体很小，不能很好地缩放。游戏素材包中有一个叫作“Xolonium-Regular."
+"节点的默认字体很小，不能很好地缩放。游戏资产包中有一个叫作“Xolonium-Regular."
 "ttf”的字体文件。 使用此字体需要执行以下操作："
 
 msgid ""

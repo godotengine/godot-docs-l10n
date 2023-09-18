@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,9 +34,9 @@ msgstr ""
 "Ver :ref:`doc_using_the_web_editor` para advertencias específicas de la "
 "versión HTML5 del editor Godot."
 
+#, fuzzy
 msgid ""
-"Everything I do in the editor or project manager appears delayed by one "
-"frame."
+"Everything I do in the editor or project manager appears delayed by one frame"
 msgstr ""
 "Todo lo que hago en el editor o en el administrador de proyectos aparece "
 "retrasado por un fotograma."
@@ -60,9 +60,10 @@ msgstr ""
 "proporcionado por el fabricante de tu ordenador de escritorio o portátil "
 "porque la versión del fabricante suele estar desfasada."
 
+#, fuzzy
 msgid ""
 "The grid disappears and meshes turn black when I rotate the 3D camera in the "
-"editor."
+"editor"
 msgstr ""
 "La rejilla desaparece y las mallas se vuelven negras cuando giro la cámara "
 "3D en el editor."
@@ -90,7 +91,8 @@ msgstr ""
 "Si tú ordenador permite intercambiar entre tarjetas gráficas, como NVIDIA "
 "Optimus, puedes usar una tarjeta gráfica dedicada para ejecutar Godot."
 
-msgid "The editor or project takes a very long time to start."
+#, fuzzy
+msgid "The editor or project takes a very long time to start"
 msgstr "El editor o el proyecto tarda mucho tiempo en arrancar."
 
 msgid ""
@@ -109,8 +111,9 @@ msgstr ""
 "periféricos defectuosos antes de abrir el editor. A continuación, puedes "
 "volver a conectar el periférico."
 
+#, fuzzy
 msgid ""
-"Editor tooltips in the Inspector and Node docks blink when they're displayed."
+"Editor tooltips in the Inspector and Node docks blink when they're displayed"
 msgstr ""
 "Los globos de información de herramientas del Editor en los muelles "
 "Inspector y Nodo parpadean cuando son mostrados."
@@ -126,7 +129,8 @@ msgstr ""
 "Windows. La única solución conocida es deshabilitar Stardock Fences mientras "
 "se utiliza Godot."
 
-msgid "The Godot editor appears frozen after clicking the system console."
+#, fuzzy
+msgid "The Godot editor appears frozen after clicking the system console"
 msgstr ""
 "El editor de Godot se congela después de hacer clic en la consola del "
 "sistema."
@@ -138,9 +142,9 @@ msgid ""
 "inside the system console. Godot cannot override this system-specific "
 "behavior."
 msgstr ""
-"Cuando se corre Godot en Windows con la consola del sistema activada, Tu "
-"puedes accidentalmente activar el *Modo de Selección* clickeando a dentro de "
-"la ventana de comandos."
+"Cuando se corre Godot en Windows con la consola del sistema activada, puedes "
+"accidentalmente activar el *Modo de Selección* clickeando a dentro de la "
+"ventana de comandos."
 
 msgid ""
 "To solve this, select the system console window and press Enter to leave "
@@ -149,9 +153,10 @@ msgstr ""
 "Para solucionarlo, seleccione la ventana de la consola del sistema y pulse "
 "Intro para salir del modo de selección."
 
+#, fuzzy
 msgid ""
 "Some text such as \"NO DC\" appears in the top-left corner of the project "
-"manager and editor window."
+"manager and editor window"
 msgstr ""
 "Un texto como \"NO DC\" aparece en la esquina superior izquierda de la "
 "ventana del administrador de proyectos y del editor."
@@ -179,7 +184,8 @@ msgstr ""
 "**X Screen 0 > OpenGL Settings** y desmarca **Enable Graphics API Visual "
 "Indicator**."
 
-msgid "The project window appears blurry, unlike the editor."
+#, fuzzy
+msgid "The project window appears blurry, unlike the editor"
 msgstr "La ventana del proyecto aparece borrosa, a diferencia del editor."
 
 msgid ""
@@ -201,7 +207,8 @@ msgstr ""
 "que tu proyecto esté configurado para soportar :ref:`multiple resolutions "
 "<doc_multiple_resolutions>`."
 
-msgid "The project window doesn't appear centered when I run the project."
+#, fuzzy
+msgid "The project window doesn't appear centered when I run the project"
 msgstr ""
 "La ventana del proyecto no aparece centrada cuando ejecuto el proyecto."
 
@@ -218,8 +225,33 @@ msgstr ""
 "resolutions <doc_multiple_resolutions>`."
 
 msgid ""
+"The editor/project freezes or displays glitched visuals after resuming the "
+"PC from suspend"
+msgstr ""
+
+msgid ""
+"This is a known issue on Linux with NVIDIA graphics when using the "
+"proprietary driver. There is no definitive fix yet, as suspend on Linux + "
+"NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+msgid ""
+"The NVIDIA driver offers an *experimental* `option to preserve video memory "
+"after suspend <https://wiki.archlinux.org/title/NVIDIA/"
+"Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve "
+"this issue. This option has been reported to work better with more recent "
+"NVIDIA driver versions."
+msgstr ""
+
+msgid ""
+"To avoid losing work, save scenes in the editor before putting the PC to "
+"sleep."
+msgstr ""
+
+#, fuzzy
+msgid ""
 "The project works when run from the editor, but fails to load some files "
-"when running from an exported copy."
+"when running from an exported copy"
 msgstr ""
 "El proyecto funciona cuando se ejecuta desde el editor, pero falla al cargar "
 "algunos archivos cuando se ejecuta desde una copia exportada."

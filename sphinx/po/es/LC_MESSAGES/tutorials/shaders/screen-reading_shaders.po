@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,6 @@ msgstr "Shaders de lectura de pantalla"
 msgid "Introduction"
 msgstr "Introducción"
 
-#, fuzzy
 msgid ""
 "It is often desired to make a shader that reads from the same screen to "
 "which it's writing. 3D APIs, such as OpenGL or DirectX, make this very "
@@ -32,12 +31,12 @@ msgid ""
 "problems. As a result, not even the most modern hardware supports this "
 "properly."
 msgstr ""
-"Muy a menudo, se desea hace un shader que lea desde la misma pantalla en la "
-"que está escribiendo. Las API de 3D, como OpenGL o DirectX, lo hacen muy "
-"difícil debido a las limitaciones internas del hardware. Las GPU son "
-"extremadamente paralelas, por lo que la lectura y la escritura causan todo "
-"tipo de problemas de caché y coherencia. Como resultado, ni siquiera el "
-"hardware más moderno lo soporta adecuadamente."
+"A menudo se desea crear un shader que lea desde la misma pantalla en la que "
+"está escribiendo. Las API 3D, como OpenGL o DirectX, hacen esto muy difícil "
+"debido a las limitaciones internas del hardware. Las GPU son extremadamente "
+"paralelas, por lo que leer y escribir causa problemas de caché y coherencia. "
+"Como resultado, ni siquiera el hardware más moderno admite esto "
+"correctamente."
 
 msgid ""
 "The workaround is to make a copy of the screen, or a part of the screen, to "
@@ -233,15 +232,14 @@ msgstr ""
 msgid "DEPTH_TEXTURE"
 msgstr "DEPTH_TEXTURE"
 
-#, fuzzy
 msgid ""
 "For 3D shaders, it's also possible to access the screen depth buffer. For "
 "this, the ``DEPTH_TEXTURE`` built-in is used. This texture is not linear; it "
 "must be converted via the inverse projection matrix."
 msgstr ""
-"Para los Shaders 3D, también es posible acceder al buffer de profundidad de "
-"la pantalla. Para ello, se utiliza la ``DEPTH_TEXTURE`` incorporada. Esta "
-"textura no es lineal; debe ser convertida a través de la matriz de "
+"Para los shaders 3D, también es posible acceder al búfer de profundidad de "
+"la pantalla. Para esto, se utiliza el valor incorporado ``DEPTH_TEXTURE``. "
+"Esta textura no es lineal; debe ser convertida a través de la matriz de "
 "proyección inversa."
 
 msgid ""

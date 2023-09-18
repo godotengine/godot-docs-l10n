@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Binary serialization API"
-msgstr ""
+msgstr "API de serialización Binaria"
 
 msgid "Introduction"
 msgstr "Introducción"
@@ -30,20 +30,31 @@ msgid ""
 "the packet APIs for :ref:`class_PacketPeer`. This format is *not* used for "
 "binary scenes and resources."
 msgstr ""
+"Godot tiene una API de serialización simple basada en Variant. Se utiliza "
+"para convertir tipos de datos en un arreglo de bytes de manera eficiente. "
+"Esta API se utiliza en las funciones ``get_var`` y ``store_var`` de :ref:"
+"`class_File`, así como en las API de paquetes para :ref:`class_PacketPeer`. "
+"Este formato *no* se utiliza para escenas y recursos binarios."
 
 msgid "Packet specification"
-msgstr ""
+msgstr "Especificación de paquete"
 
 msgid ""
 "The packet is designed to be always padded to 4 bytes. All values are little-"
 "endian-encoded. All packets have a 4-byte header representing an integer, "
 "specifying the type of data."
 msgstr ""
+"El paquete está diseñado para que siempre tenga un relleno de 4 bytes. Todos "
+"los valores están codificados en formato little-endian. Todos los paquetes "
+"tienen una cabecera de 4 bytes que representa un entero, especificando el "
+"tipo de datos."
 
 msgid ""
 "The lowest value two bytes are used to determine the type, while the highest "
 "value two bytes contain flags::"
 msgstr ""
+"Los dos bytes de menor valor se utilizan para determinar el tipo, mientras "
+"que los dos bytes de mayor valor contienen flags::"
 
 msgid "Type"
 msgstr "Tipo"
@@ -52,13 +63,13 @@ msgid "Value"
 msgstr "Valor"
 
 msgid "0"
-msgstr ""
+msgstr "0"
 
 msgid "null"
 msgstr "null"
 
 msgid "1"
-msgstr ""
+msgstr "1"
 
 msgid "bool"
 msgstr "bool"
@@ -103,70 +114,70 @@ msgid "8"
 msgstr "8"
 
 msgid "transform2d"
-msgstr ""
+msgstr "transformación 2d"
 
 msgid "9"
 msgstr "9"
 
 msgid "plane"
-msgstr ""
+msgstr "plano"
 
 msgid "10"
 msgstr "10"
 
 msgid "quat"
-msgstr ""
+msgstr "cuat"
 
 msgid "11"
 msgstr "11"
 
 msgid "aabb"
-msgstr ""
+msgstr "aabb*"
 
 msgid "12"
-msgstr ""
+msgstr "12"
 
 msgid "basis"
-msgstr ""
+msgstr "bases"
 
 msgid "13"
-msgstr ""
+msgstr "13"
 
 msgid "transform"
-msgstr ""
+msgstr "transformación"
 
 msgid "14"
-msgstr ""
+msgstr "14"
 
 msgid "color"
-msgstr ""
+msgstr "color"
 
 msgid "15"
-msgstr ""
+msgstr "15"
 
 msgid "node path"
-msgstr ""
+msgstr "ruta de nodo"
 
 msgid "16"
-msgstr ""
+msgstr "16"
 
 msgid "rid"
-msgstr ""
+msgstr "rid (Resource ID)"
 
 msgid "17"
-msgstr ""
+msgstr "17"
 
 msgid "object"
-msgstr ""
+msgstr "objeto"
 
 msgid "18"
-msgstr ""
+msgstr "18"
 
 msgid "dictionary"
-msgstr ""
+msgstr "diccionario"
 
 msgid "19"
-msgstr ""
+msgstr "19"
 
 msgid "array"
 msgstr "arreglo"
@@ -175,7 +186,7 @@ msgid "20"
 msgstr "20"
 
 msgid "raw array"
-msgstr ""
+msgstr "array crudo"
 
 msgid "21"
 msgstr "21"
@@ -187,37 +198,37 @@ msgid "22"
 msgstr "22"
 
 msgid "real array"
-msgstr ""
+msgstr "array real"
 
 msgid "23"
-msgstr ""
+msgstr "23"
 
 msgid "string array"
-msgstr ""
+msgstr "array de cadenas"
 
 msgid "24"
-msgstr ""
+msgstr "24"
 
 msgid "vector2 array"
-msgstr ""
+msgstr "array de vector2"
 
 msgid "25"
-msgstr ""
+msgstr "25"
 
 msgid "vector3 array"
-msgstr ""
+msgstr "array de vector3"
 
 msgid "26"
-msgstr ""
+msgstr "26"
 
 msgid "color array"
-msgstr ""
+msgstr "array de color"
 
 msgid "27"
-msgstr ""
+msgstr "27"
 
 msgid "max"
-msgstr ""
+msgstr "maximo"
 
 msgid ""
 "Following this is the actual packet contents, which varies for each type of "
@@ -227,18 +238,25 @@ msgid ""
 "and the offset should be ``(offset - 4) * 2 + 4``. The \"float\" type itself "
 "always uses double precision."
 msgstr ""
+"A continuación se encuentran los contenidos reales del paquete, los cuales "
+"varían para cada tipo de paquete. Ten en cuenta que esto asume que Godot "
+"está compilado con floats de precisión simple, que es el valor "
+"predeterminado. Si Godot se compiló con floats de precisión doble, la "
+"longitud de los campos ``Float`` dentro de las estructuras de datos debería "
+"ser de 8 y el desplazamiento debería ser ``(offset - 4) * 2 + 4``. El tipo "
+"``float`` en sí siempre utiliza precisión doble."
 
 msgid "0: null"
-msgstr ""
+msgstr "0: nulo"
 
 msgid "1: :ref:`bool<class_bool>`"
-msgstr ""
+msgstr "1: :ref:`bool<class_bool>`"
 
 msgid "Offset"
-msgstr ""
+msgstr "Ajuste"
 
 msgid "Len"
-msgstr ""
+msgstr "Len (longitud)"
 
 msgid "Description"
 msgstr "Descripción"
@@ -247,14 +265,16 @@ msgid "Integer"
 msgstr "Entero"
 
 msgid "0 for False, 1 for True"
-msgstr ""
+msgstr "0 para False, 1 para True"
 
 msgid "2: :ref:`int<class_int>`"
-msgstr ""
+msgstr "2: :ref:`int<class_int>`"
 
 msgid ""
 "If no flags are set (flags == 0), the integer is sent as a 32 bit integer:"
 msgstr ""
+"Si no se establecen banderas (flags == 0), el entero se envía como un entero "
+"de 32 bits:"
 
 msgid "32-bit signed integer"
 msgstr "Entero con signo de 32 bits"
@@ -263,6 +283,8 @@ msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the integer is sent "
 "as a 64-bit integer:"
 msgstr ""
+"Si la bandera ``ENCODE_FLAG_64`` está establecida (``flags & 1 == 1``), el "
+"entero se envía como un entero de 64 bits:"
 
 msgid "64-bit signed integer"
 msgstr "Entero de 64 bits con signo"
@@ -274,41 +296,45 @@ msgid ""
 "If no flags are set (flags == 0), the float is sent as a 32 bit single "
 "precision:"
 msgstr ""
+"Si no se establecen banderas (flags == 0), el flotante se envía como una "
+"precisión simple de 32 bits:"
 
 msgid "Float"
-msgstr ""
+msgstr "Flotante"
 
 msgid "IEEE 754 single-precision float"
-msgstr ""
+msgstr "IEEE 754 flotante de precisión simple"
 
 msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the float is sent as "
 "a 64-bit double precision number:"
 msgstr ""
+"Si la bandera ``ENCODE_FLAG_64`` está establecida (``flags & 1 == 1``), el "
+"flotante se envía como un número de precisión doble de 64 bits:"
 
 msgid "IEEE 754 double-precision float"
-msgstr ""
+msgstr "IEEE 754 flotante de precisión doble"
 
 msgid "4: :ref:`String<class_string>`"
-msgstr ""
+msgstr "4: :ref:`String<class_string>`"
 
 msgid "String length (in bytes)"
-msgstr ""
+msgstr "Longitud de cadenas (en bytes)"
 
 msgid "X"
-msgstr ""
+msgstr "X"
 
 msgid "Bytes"
-msgstr ""
+msgstr "Bytes"
 
 msgid "UTF-8 encoded string"
-msgstr ""
+msgstr "Cadena codificada en UTF-8"
 
 msgid "This field is padded to 4 bytes."
-msgstr ""
+msgstr "Este campo se rellena hasta alcanzar 4 bytes."
 
 msgid "5: :ref:`Vector2<class_vector2>`"
-msgstr ""
+msgstr "5: :ref:`Vector2<class_vector2>`"
 
 msgid "X coordinate"
 msgstr "Coordenada X"
@@ -317,22 +343,22 @@ msgid "Y coordinate"
 msgstr "Coordenada Y"
 
 msgid "6: :ref:`Rect2<class_rect2>`"
-msgstr ""
+msgstr "6: :ref:`Rect2<class_rect2>`"
 
 msgid "X size"
-msgstr ""
+msgstr "Tamaño en X"
 
 msgid "Y size"
-msgstr ""
+msgstr "Tamaño en Y"
 
 msgid "7: :ref:`Vector3<class_vector3>`"
-msgstr ""
+msgstr "7: :ref:`Vector3<class_vector3>`"
 
 msgid "Z coordinate"
 msgstr "Coordenada Z"
 
 msgid "8: :ref:`Transform2D<class_transform2d>`"
-msgstr ""
+msgstr "8: :ref:`Transform2D<class_transform2d>`"
 
 msgid "The X component of the X column vector, accessed via [0][0]"
 msgstr "La componente X del vector columna X, accedido mediante [0][0]"
@@ -353,43 +379,43 @@ msgid "The Y component of the origin vector, accessed via [2][1]"
 msgstr "La componente Y del vector origin, accedido mediante [2][1]"
 
 msgid "9: :ref:`Plane<class_plane>`"
-msgstr ""
+msgstr "9: :ref:`Plane<class_plane>`"
 
 msgid "Normal X"
-msgstr ""
+msgstr "Normal en X"
 
 msgid "Normal Y"
-msgstr ""
+msgstr "Normal en Y"
 
 msgid "Normal Z"
-msgstr ""
+msgstr "Normal en Z"
 
 msgid "Distance"
-msgstr ""
+msgstr "Distancia"
 
 msgid "10: :ref:`Quat<class_quat>`"
-msgstr ""
+msgstr "10: :ref:`Quat<class_quat>`"
 
 msgid "Imaginary X"
-msgstr ""
+msgstr "X imaginario"
 
 msgid "Imaginary Y"
-msgstr ""
+msgstr "Y imaginario"
 
 msgid "Imaginary Z"
-msgstr ""
+msgstr "Z imaginario"
 
 msgid "Real W"
-msgstr ""
+msgstr "W real"
 
 msgid "11: :ref:`AABB<class_aabb>`"
-msgstr ""
+msgstr "11: :ref:`AABB<class_aabb>`"
 
 msgid "Z size"
-msgstr ""
+msgstr "Tamaño en Z"
 
 msgid "12: :ref:`Basis<class_basis>`"
-msgstr ""
+msgstr "12: :ref:`Basis<class_basis>`"
 
 msgid "The Z component of the X column vector, accessed via [0][2]"
 msgstr "La componente Z del vector columna X, accedido mediante [0][2]"
@@ -398,207 +424,219 @@ msgid "The Z component of the Y column vector, accessed via [1][2]"
 msgstr "La componente Z del vector columna Y, accedido mediante [1][2]"
 
 msgid "28"
-msgstr ""
+msgstr "28"
 
 msgid "The X component of the Z column vector, accessed via [2][0]"
 msgstr "La componente X del vector columna Z, accedido mediante [2][0]"
 
 msgid "32"
-msgstr ""
+msgstr "32"
 
 msgid "The Y component of the Z column vector, accessed via [2][1]"
 msgstr "La componente Y del vector columna Z, accedido mediante [2][1]"
 
 msgid "36"
-msgstr ""
+msgstr "36"
 
 msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr "La componente Z del vector columna Z, accedido mediante [2][2]"
 
 msgid "13: :ref:`Transform<class_transform>`"
-msgstr ""
+msgstr "13: :ref:`Transform<class_transform>`"
 
 msgid "40"
-msgstr ""
+msgstr "40"
 
 msgid "The X component of the origin vector, accessed via [3][0]"
 msgstr "La componente X del vector origin, accedido mediante [3][0]"
 
 msgid "44"
-msgstr ""
+msgstr "44"
 
 msgid "The Y component of the origin vector, accessed via [3][1]"
 msgstr "La componente Y del vector origin, accedido mediante [3][1]"
 
 msgid "48"
-msgstr ""
+msgstr "48"
 
 msgid "The Z component of the origin vector, accessed via [3][2]"
 msgstr "La componente Z del vector origin, accedido mediante [3][2]"
 
 msgid "14: :ref:`Color<class_color>`"
-msgstr ""
+msgstr "14: :ref:`Color<class_color>`"
 
 msgid "Red (typically 0..1, can be above 1 for overbright colors)"
 msgstr ""
+"Rojo (generalmente en el rango de 0 a 1, pero puede ser superior a 1 para "
+"colores muy brillantes)"
 
 msgid "Green (typically 0..1, can be above 1 for overbright colors)"
 msgstr ""
+"Verde (generalmente en el rango de 0 a 1, pero puede ser superior a 1 para "
+"colores muy brillantes)"
 
 msgid "Blue (typically 0..1, can be above 1 for overbright colors)"
 msgstr ""
+"Azul (generalmente en el rango de 0 a 1, pero puede ser superior a 1 para "
+"colores muy brillantes)"
 
 msgid "Alpha (0..1)"
-msgstr ""
+msgstr "Alpha (0..1)"
 
 msgid "15: :ref:`NodePath<class_nodepath>`"
-msgstr ""
+msgstr "15: :ref:`NodePath<class_nodepath>`"
 
 msgid ""
 "String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 msgstr ""
+"Longitud de la cadena o nuevo formato (val&0x80000000!=0 y "
+"NameCount=val&0x7FFFFFFF)"
 
 msgid "For old format:"
-msgstr ""
+msgstr "Para el viejo formato:"
 
 msgid "Padded to 4 bytes."
-msgstr ""
+msgstr "Rellenado a 4 bytes."
 
 msgid "For new format:"
-msgstr ""
+msgstr "Para el nuevo formato:"
 
 msgid "Sub-name count"
-msgstr ""
+msgstr "conteo de sub-nombre"
 
 msgid "Flags (absolute: val&1 != 0 )"
-msgstr ""
+msgstr "Banderas (absolute: val&1 != 0 )"
 
 msgid "For each Name and Sub-Name"
-msgstr ""
+msgstr "Por cada Nombre y Sub-nombre"
 
 msgid "X+0"
-msgstr ""
+msgstr "X+0"
 
 msgid "String length"
 msgstr "Longitud de la cuerda"
 
 msgid "X+4"
-msgstr ""
+msgstr "X+4"
 
 msgid "Every name string is padded to 4 bytes."
-msgstr ""
+msgstr "Cada cadena de nombres es rellenado a 4 bytes."
 
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
-msgstr ""
+msgstr "16: :ref:`RID<class_rid>` (sin soporte)"
 
 msgid "17: :ref:`Object<class_object>` (unsupported)"
-msgstr ""
+msgstr "17: :ref:`Object<class_object>` (sin soporte)"
 
 msgid "18: :ref:`Dictionary<class_dictionary>`"
-msgstr ""
+msgstr "18: :ref:`Dictionary<class_dictionary>`"
 
 msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
-msgstr ""
+msgstr "val&0x7FFFFFFF = elementos, val&0x80000000 = compartidos (bool)"
 
 msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
 "one after the other, using this same format."
 msgstr ""
+"A continuación, para la cantidad de \"elementos\", se encuentran pares de "
+"clave y valor, uno tras otro, utilizando el mismo formato."
 
 msgid "19: :ref:`Array<class_array>`"
-msgstr ""
+msgstr "19: :ref:`Array<class_array>`"
 
 msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
 msgstr ""
+"A continuación, para la cantidad de \"elementos\", se encuentran los valores "
+"uno tras otro, utilizando el mismo formato."
 
 msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
-msgstr ""
+msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
 
 msgid "Array length (Bytes)"
-msgstr ""
+msgstr "Longitud de array (Bytes)"
 
 msgid "8..8+length"
-msgstr ""
+msgstr "8..8+longitud"
 
 msgid "Byte"
-msgstr ""
+msgstr "Byte"
 
 msgid "Byte (0..255)"
-msgstr ""
+msgstr "Byte (0..255)"
 
 msgid "The array data is padded to 4 bytes."
-msgstr ""
+msgstr "Los datos del array son rellenados a 4 bytes."
 
 msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
-msgstr ""
+msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
 
 msgid "Array length (Integers)"
-msgstr ""
+msgstr "longitud de array(Enteros)"
 
 msgid "8..8+length\\*4"
-msgstr ""
+msgstr "8..8+longitud\\*4"
 
 msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
-msgstr ""
+msgstr "22: :ref:`PoolRealArray<class_poolrealarray>`"
 
 msgid "Array length (Floats)"
-msgstr ""
+msgstr "Longitud de array (Flotantes)"
 
 msgid "32-bits IEEE 754 float"
-msgstr ""
+msgstr "IEEE 754 floatntes de 32-bits"
 
 msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
-msgstr ""
+msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
 
 msgid "Array length (Strings)"
-msgstr ""
+msgstr "Longitud de array (Cadenas)"
 
 msgid "For each String:"
-msgstr ""
+msgstr "Por cada Cadena:"
 
 msgid "Every string is padded to 4 bytes."
-msgstr ""
+msgstr "Cada cadena es rellenada a 4 bytes."
 
 msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
-msgstr ""
+msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 
 msgid "Array length"
 msgstr "Longitud de la matriz"
 
 msgid "8..8+length\\*8"
-msgstr ""
+msgstr "8..8+longitud\\*8"
 
 msgid "8..12+length\\*8"
-msgstr ""
+msgstr "8..12+longitud\\*8"
 
 msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
-msgstr ""
+msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 
 msgid "8..8+length\\*12"
-msgstr ""
+msgstr "8..8+longitud\\*12"
 
 msgid "8..12+length\\*12"
-msgstr ""
+msgstr "8..12+longitud\\*12"
 
 msgid "8..16+length\\*12"
-msgstr ""
+msgstr "8..16+longitud\\*12"
 
 msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
-msgstr ""
+msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
 msgid "8..8+length\\*16"
-msgstr ""
+msgstr "8..8+longitud\\*16"
 
 msgid "8..12+length\\*16"
-msgstr ""
+msgstr "8..12+longitud\\*16"
 
 msgid "8..16+length\\*16"
-msgstr ""
+msgstr "8..16+longitud\\*16"
 
 msgid "8..20+length\\*16"
-msgstr ""
+msgstr "8..20+longitud\\*16"
 
 msgid "Translation status"
 msgstr "Estado de traducción"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgstr ""
 "能緊密地與引擎整合，進而讓我們更有彈性地製作內容與整合功能。"
 
 msgid "History"
-msgstr "歷史"
+msgstr "歷史記錄"
 
 msgid ""
 "Documentation about GDScript's history has been moved to the :ref:"
@@ -349,7 +349,7 @@ msgid "NAN (not a number) constant. Used for comparisons."
 msgstr "NAN（Not a Number，不是數字）常數。用於比較。"
 
 msgid "Operators"
-msgstr "運算子"
+msgstr "操作子"
 
 msgid "The following is the list of supported operators and their precedence."
 msgstr "下面是支援的運算子與其優先度。"
@@ -675,7 +675,7 @@ msgid "``\\b``"
 msgstr "``\\b``"
 
 msgid "Backspace"
-msgstr "退格鍵"
+msgstr "退格"
 
 msgid "``\\f``"
 msgstr "``\\f``"
@@ -1214,9 +1214,12 @@ msgid ""
 "this::"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
-"using ``break`` or continued using ``continue``:"
+"using ``break`` or continued using ``continue`` (i.e. skipping to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
 msgstr ""
 "可以使用 ``while`` 語法來建立簡單的迴圈。迴圈可以使用 ``break`` 來中斷或是使"
 "用 ``continue`` 來繼續："

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,14 @@ msgstr ""
 msgid "Localization using gettext"
 msgstr "Локалізація за допомогою gettext"
 
-#, fuzzy
 msgid ""
 "In addition to :ref:`doc_importing_translations` in CSV format, Godot also "
 "supports loading translation files written in the GNU gettext format (text-"
 "based ``.po`` and compiled ``.mo`` since Godot 3.5)."
 msgstr ""
 "На додаток до :ref:`doc_importing_translations` у форматі CSV, Godot також "
-"підтримує завантаження файлів перекладу, написаних у форматі GNU gettext (``."
-"po``)."
+"підтримує завантаження файлів перекладу написаних у форматі GNU gettext "
+"(текстові ``.po`` та скомпільовані ``.mo`` починаючи з версії Godot 3.5)."
 
 msgid ""
 "For an introduction to gettext, check out `A Quick Gettext Tutorial <https://"
@@ -84,7 +83,6 @@ msgstr ""
 "gettext є складнішим форматом, ніж CSV, і може здаватися важким для людей, "
 "нових в локалізації програмного забезпечення."
 
-#, fuzzy
 msgid ""
 "People who maintain localization files will have to install gettext tools on "
 "their system. However, as Godot supports using text-based message files (``."
@@ -92,9 +90,9 @@ msgid ""
 "tools."
 msgstr ""
 "Люди, які підтримують файли локалізації, повинні будуть встановити в свою "
-"систему інструменти gettext. Однак, оскільки Godot не використовує "
-"скомпільовані файли об'єктів повідомлень (``.mo``), перекладачі можуть "
-"тестувати свою роботу без необхідності встановлювати інструменти gettext."
+"систему інструменти gettext. Однак, оскільки Godot підтримує використання "
+"текстових файлів повідомлень (``.po``), перекладачі можуть перевіряти свою "
+"роботу без необхідності встановлювати інструменти gettext."
 
 msgid "Caveats"
 msgstr "Застереження"
@@ -252,7 +250,6 @@ msgstr ""
 msgid "Loading a messages file in Godot"
 msgstr "Завантаження файлу повідомлень у Godot"
 
-#, fuzzy
 msgid ""
 "To register a messages file as a translation in a project, open the "
 "**Project Settings**, then go to the **Localization** tab. In "
@@ -263,8 +260,8 @@ msgstr ""
 "Щоб зареєструвати файл повідомлень як переклад у проекті, відкрийте "
 "**Параметри проекту**, а потім перейдіть на вкладку **Локалізація**. У "
 "розділі **Переклади** натисніть кнопку **Додати...** і виберіть файл ``.po`` "
-"в файлі діалогів. Локаль буде виведена з властивості ``\"Language: "
-"<code>\\n\"`` у файлі повідомлень."
+"чи ``.mo`` в діалоговому вікні. Локалізація буде визначена на основі "
+"властивості ``\"Language: <code>\\n\"`` у файлі повідомлень."
 
 msgid ""
 "See :ref:`doc_internationalizing_games` for more information on importing "
@@ -331,7 +328,7 @@ msgstr ""
 "консолі. В іншому випадку ``msgfmt``, нічого не буде виводити."
 
 msgid "Using binary MO files (useful for large projects only)"
-msgstr ""
+msgstr "Використання бінарних файлів MO (корисно лише для великих проектів)"
 
 msgid ""
 "For large projects with several thousands of strings to translate or more, "
@@ -339,25 +336,37 @@ msgid ""
 "based PO files. Binary MO files are smaller and faster to read than the "
 "equivalent PO files."
 msgstr ""
+"У великих проектах, де потрібно перекласти кілька тисяч рядків або більше, "
+"замість текстових PO-файлів варто використовувати бінарні (скомпільовані) "
+"файли MO-повідомлень. Бінарні MO-файли мають менший розмір і швидше "
+"читаються, ніж еквівалентні PO-файли."
 
 msgid "You can generate a MO file with the command below:"
-msgstr ""
+msgstr "Ви можете згенерувати файл MO за допомогою команди нижче:"
 
 msgid ""
 "If the PO file is valid, this command will create a ``fr.mo`` file besides "
 "the PO file. This MO file can then be loaded in Godot as described below."
 msgstr ""
+"Якщо файл PO є правильним, ця команда створить файл ``fr.mo`` на додаток до "
+"файлу PO. Цей файл MO можна завантажити у Godot, як описано нижче."
 
 msgid ""
 "The original PO file should be kept in version control so you can update "
 "your translation in the future. In case you lose the original PO file and "
 "wish to decompile a MO file into a text-based PO file, you can do so with:"
 msgstr ""
+"Оригінальний PO-файл слід зберігати в системі керування версіями, щоб ви "
+"могли оновлювати свій переклад у майбутньому. Якщо ви втратите оригінальний "
+"PO-файл і захочете декомпілювати MO-файл у текстовий PO-файл, ви можете "
+"зробити це за допомогою:"
 
 msgid ""
 "The decompiled file will not include comments or fuzzy strings, as these are "
 "never compiled in the MO file in the first place."
 msgstr ""
+"Декомпільований файл не міститиме коментарів або нечітких рядків, оскільки "
+"вони ніколи не компілюються у файлі MO."
 
 msgid "Translation status"
 msgstr "Стан перекладу"

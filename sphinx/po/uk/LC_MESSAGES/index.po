@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "General"
-msgstr "Загальне"
+msgid "About"
+msgstr "Відомості"
 
 msgid "Getting started"
 msgstr "Перші кроки"
 
-msgid "Tutorials"
-msgstr "Посібники"
+#, fuzzy
+msgid "Manual"
+msgstr "Використання вручну"
 
 msgid "Development"
 msgstr "Розробка"
@@ -35,7 +36,8 @@ msgstr "Спільнота"
 msgid "Class reference"
 msgstr "Довідник з класів"
 
-msgid "Godot Docs – *3.5* branch"
+#, fuzzy
+msgid "Godot Docs – *3.6* branch"
 msgstr "Документація до Godot – версія *3.5*"
 
 msgid ""
@@ -46,9 +48,10 @@ msgstr ""
 "\"Прочитати документи\" в нижній частині бічної панелі, щоб переглянути "
 "список."
 
+#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
-"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "Ця документація перекладена з оригінальної англійської <https://docs."
@@ -65,10 +68,12 @@ msgstr ""
 "цілі сторінки, які все ще на англійській. Ви можете допомогти спільноті "
 "шляхом надання нових перекладів, або перевірки існуючих, на Weblate."
 
+#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
-"\"latest\" (development) branch, but should be suitable to learn how to use "
-"stable Godot releases nevertheless."
+"\"stable\" branch. You can still view the English documentation for other "
+"engine versions using the \"Read the Docs\" panel at the bottom of the "
+"sidebar."
 msgstr ""
 "На даний момент локалізовані переклади доступні лише для гілки "
 "\"latest\" (розробка), але вони повинні підходити для вивчення стабільних "
@@ -87,25 +92,18 @@ msgstr ""
 "`сторінкою введення <doc_about_intro>`, щоб оглянути те, що ця документація "
 "може запропонувати."
 
+#, fuzzy
 msgid ""
-"The table of contents below and in the sidebar should let you easily access "
-"the documentation for your topic of interest. You can also use the search "
-"function in the top left corner."
+"The table of contents in the sidebar should let you easily access the "
+"documentation for your topic of interest. You can also use the search "
+"function in the top-left corner."
 msgstr ""
 "Зміст, наведений нижче і на бічній панелі, повинен дозволити вам легко "
 "отримати доступ до документації з цікавої вам теми. Ви також можете "
 "використовувати функцію пошуку у верхньому лівому куті."
 
-msgid ""
-"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline reading (updated every Monday). Extract the ZIP archive then open "
-"the top-level ``index.html`` in a web browser."
+msgid "Get involved"
 msgstr ""
-"Ви також можете ` завантажити HTML-копію <https://nightly.link/godotengine/"
-"godot-docs/workflows/build_offline_docs/master/godot-docs-html-stable."
-"zip>`__ для читання в автономному режимі (оновлюється щопонеділка). "
-"Розпакуйте ZIP-архів, а потім відкрийте ``index.html`` у веббраузері."
 
 msgid ""
 "Godot Engine is an open source project developed by a community of "
@@ -140,6 +138,39 @@ msgstr "weblate_widget"
 msgid "Translation status"
 msgstr "Стан перекладу"
 
+#, fuzzy
+msgid "Offline documentation"
+msgstr "Організація документації"
+
 msgid ""
-"The main documentation for the site is organized into the following sections:"
-msgstr "Основна документація на сайті складається з наступних розділів:"
+"To browse the documentation offline, you can use the mirror of the "
+"documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
+"offline browsing on DevDocs, you need to:"
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Preferences**."
+msgstr ""
+
+msgid ""
+"Enable the desired version of the Godot documentation by checking the box "
+"next to it in the sidebar."
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Offline data**."
+msgstr ""
+
+#, fuzzy
+msgid "Click the **Install** link next to the Godot documentation."
+msgstr "Про документацію"
+
+#, fuzzy
+msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
+"offline reading (updated every Monday). Extract the ZIP archive then open "
+"the top-level ``index.html`` in a web browser."
+msgstr ""
+"Ви також можете ` завантажити HTML-копію <https://nightly.link/godotengine/"
+"godot-docs/workflows/build_offline_docs/master/godot-docs-html-stable."
+"zip>`__ для читання в автономному режимі (оновлюється щопонеділка). "
+"Розпакуйте ZIP-архів, а потім відкрийте ``index.html`` у веббраузері."

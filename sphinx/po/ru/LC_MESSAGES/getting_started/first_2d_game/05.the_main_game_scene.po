@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,13 +37,12 @@ msgstr ""
 "будет контейнером для обработки игровой логики. Это не требует именно "
 "двумерного функционала.)"
 
-#, fuzzy
 msgid ""
 "Click the **Instance** button (represented by a chain link icon) and select "
 "your saved ``Player.tscn``."
 msgstr ""
-"Нажмите на кнопку **Instance** (представленную в иконке ссылки) и выберите "
-"Ваш сохраненный ``Player.tscn``."
+"Нажмите на кнопку **Instance** (**Экземпляр**, представленную в иконке "
+"ссылки) и выберите Ваш сохраненный ``Player.tscn``."
 
 msgid ""
 "Now, add the following nodes as children of ``Main``, and name them as shown "
@@ -178,23 +177,22 @@ msgstr ""
 "чисел генерировал различные случайные числа каждый раз, когда запускается "
 "игра :"
 
-#, fuzzy
 msgid ""
 "Click the ``Main`` node and you will see the ``Mob Scene`` property in the "
 "Inspector under \"Script Variables\"."
 msgstr ""
-"Выберите узел ``Main`` и вы увидите свойство ``Mob`` в окне Инспектора под "
-"\"Script Variables\"."
+"Выберите узел ``Main`` и вы увидите свойство ``MobScene`` в окне Инспектора "
+"под \"Script Variables\"."
 
 msgid "You can assign this property's value in two ways:"
 msgstr "Значение этого свойства можно присвоить двумя способами:"
 
-#, fuzzy
 msgid ""
 "Drag ``Mob.tscn`` from the \"FileSystem\" dock and drop it in the **Mob "
 "Scene** property."
 msgstr ""
-"Перетащите ``Mob.tscn`` из панели \"Файловая система\" в свойство ``Mob``."
+"Перетащите ``Mob.tscn`` из панели \"Файловая система\" в свойство **Mob "
+"Scene**."
 
 msgid ""
 "Click the down arrow next to \"[empty]\" and choose \"Load\". Select ``Mob."
@@ -242,7 +240,6 @@ msgstr ""
 "``StartTimer`` запустит два других таймера. ``ScoreTimer`` будет увеличивать "
 "счет на 1."
 
-#, fuzzy
 msgid ""
 "In ``_on_MobTimer_timeout()``, we will create a mob instance, pick a random "
 "starting location along the ``Path2D``, and set the mob in motion. The "
@@ -256,7 +253,9 @@ msgstr ""
 "случайное начальное местоположение вдоль ``Path2D`` и приведем его в "
 "движение. Узел ``PathFollow2D`` будет автоматически поворачивать его по "
 "направлению пути, поэтому мы воспользуемся этим, чтобы выбрать направление "
-"моба и его позицию."
+"моба и его позицию. Когда мы создаем моба, получаем случайное значение от "
+"``150.0`` до ``250.0`` - это определяет скорость движения моба (было бы "
+"скучно, если бы они все двигались с одинаковой скоростью)."
 
 msgid ""
 "Note that a new instance must be added to the scene using ``add_child()``."
@@ -296,14 +295,14 @@ msgstr ""
 "которая запускается автоматически при запуске игры. Нажмите кнопку \"Play\" "
 "и выберите ``Main.tscn`` при появлении запроса."
 
-#, fuzzy
 msgid ""
 "If you had already set another scene as the \"Main Scene\", you can right "
 "click ``Main.tscn`` in the FileSystem dock and select \"Set As Main Scene\"."
 msgstr ""
-"Если Вы уже настроили другую сцену как \"Главную Сцену\", Вы можете нажать "
-"правой кнопкой мыши на ``Main.tscn``в панели Файловой системы и выбрать "
-"\"Установить в качестве Главной Сцены\"."
+"Если Вы уже настроили другую сцену как \"Главную Сцену\" (\"Main Scene\"), "
+"Вы можете нажать правой кнопкой мыши на ``Main.tscn``в панели Файловой "
+"системы и выбрать \"Установить в качестве Главной Сцены\" (\"Set As Main "
+"Scene\")."
 
 msgid ""
 "You should be able to move the player around, see mobs spawning, and see the "

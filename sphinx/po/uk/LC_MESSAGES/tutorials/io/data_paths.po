@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "File paths in Godot projects"
 msgstr "Шляхи до файлів у проектах Godot"
 
-#, fuzzy
 msgid ""
 "This page explains how file paths work inside Godot projects. You will learn "
 "how to access paths in your projects using the ``res://`` and ``user://`` "
@@ -29,44 +28,49 @@ msgid ""
 msgstr ""
 "На цій сторінці пояснюється, як працюють шляхи до файлів у проектах Godot. "
 "Ви дізнаєтеся, як отримати доступ до шляхів у ваших проектах за допомогою "
-"приміток ``res://`` і ``user://``, і де Godot зберігає файли користувачів на "
-"жорсткому диску."
+"приміток ``res://`` і ``user://``, і де Godot зберігає файли проектів і "
+"редакторів у ваших системах і системах ваших користувачів."
 
 msgid "Path separators"
 msgstr "Роздільники шляху"
 
-#, fuzzy
 msgid ""
 "To make supporting multiple platforms easier, Godot uses **UNIX-style path "
 "separators** (forward slash ``/``). These work on all platforms, **including "
 "Windows**."
 msgstr ""
-"Для підтримки якомога більшої кількості платформ, Godot приймає лише "
-"роздільники у стилі UNIX (``/``). Вони працюють на всіх платформах, "
-"включаючи Windows."
+"Для підтримки якомога більшої кількості платформ, Godot використовує "
+"**роздільники шляхів у стилі UNIX** (``/``). Вони працюють на всіх "
+"платформах, **включаючи Windows**."
 
-#, fuzzy
 msgid ""
 "Instead of writing paths like ``C:\\Projects\\Game``, in Godot, you should "
 "write ``C:/Projects/Game``."
 msgstr ""
-"Замість писати ``C:\\Projects``, в Godot, ви повинні писати ``C:/Projects``."
+"Замість того, щоб писати шляхи в стилі ``C:\\Projects\\Game``, в Godot вам "
+"слід написати ``C:/Projects/Game``."
 
 msgid ""
 "Windows-style path separators (backward slash ``\\``) are also supported in "
 "some path-related methods, but they need to be doubled (``\\\\``), as ``\\`` "
 "is normally used as an escape for characters with a special meaning."
 msgstr ""
+"Роздільники шляхів у стилі Windows (зворотний слеш ``\\``) також "
+"підтримуються в деяких методах, пов’язаних із шляхом, але їх потрібно "
+"подвоювати (``\\\\``), оскільки одне ``\\`` зазвичай використовується для "
+"виділення символів з особливим значенням."
 
 msgid ""
 "This makes it possible to work with paths returned by other Windows "
 "applications. We still recommend using only forward slashes in your own code "
 "to guarantee that everything will work as intended."
 msgstr ""
+"Це дає змогу працювати зі шляхами, які повертаються іншими програмами "
+"Windows. Ми все ж рекомендуємо використовувати лише скісні риски у вашому "
+"коді, щоб гарантувати, що все працюватиме належним чином."
 
-#, fuzzy
 msgid "Accessing files in the project folder (``res://``)"
-msgstr "Доступ до файлів у теці проекту"
+msgstr "Доступ до файлів у теці проекту (``res://``)"
 
 msgid ""
 "Godot considers that a project exists in any folder that contains a "
@@ -89,9 +93,8 @@ msgstr ""
 "розташованого в кореневій папці проекту з коду за таким шляхом: ``res://"
 "some_texture.png``."
 
-#, fuzzy
 msgid "Accessing persistent user data (``user://``)"
-msgstr "Доступ до постійних даних користувача"
+msgstr "Доступ до постійних даних користувача (``user://``)"
 
 msgid ""
 "To store persistent data files, like the player's save or settings, you want "
@@ -104,7 +107,6 @@ msgstr ""
 "тим, що під час запуску гри файлова система проекту, швидше за все, буде "
 "доступна лише для читання."
 
-#, fuzzy
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
 "Unlike ``res://``, the directory pointed at by ``user://`` is created "
@@ -112,13 +114,16 @@ msgid ""
 "project."
 msgstr ""
 "Приставка ``user://`` вказує на інший каталог на пристрої користувача. На "
-"відміну від ``res://``, цей каталог, гарантовано буде *доступний* навіть для "
-"експортованого проекту."
+"відміну від ``res://``, каталог, на який вказує ``user://``, створюється "
+"автоматично, і *гарантовано* доступний для запису навіть в експортованих "
+"проектах."
 
 msgid ""
 "The location of the ``user://`` folder depends on what is configured in the "
 "Project Settings:"
 msgstr ""
+"Розташування теки ``user://`` залежить від того, що встановлено у Параметрах "
+"проекту:"
 
 msgid ""
 "By default, the ``user://`` folder is created within Godot's :ref:`editor "
@@ -126,6 +131,10 @@ msgid ""
 "[project_name]`` folder. This is the default so that prototypes and test "
 "projects stay self-contained within Godot's data folder."
 msgstr ""
+"За замовчуванням, тека ``user://`` створюється у :ref:`шляху до даних "
+"редактора Godot <doc_data_paths_editor_data_paths>` у теці ``app_userdata/"
+"[project_name]``. Це налаштування за замовчуванням, щоб прототипи та тестові "
+"проекти залишалися автономними у теці даних Godot."
 
 msgid ""
 "If :ref:`application/config/use_custom_user_dir "
@@ -134,6 +143,11 @@ msgid ""
 "to** Godot's editor data path, i.e. in the standard location for "
 "applications data."
 msgstr ""
+"Якщо у Параметрах проекту увімкнено :ref:`application/config/"
+"use_custom_user_dir <class_ProjectSettings_property_application/config/"
+"use_custom_user_dir>`, то буде створено теку ``user://`` **поруч зі** шляхом "
+"до даних редактора Godot , тобто у стандартному розташуванні для даних "
+"програми."
 
 msgid ""
 "By default, the folder name will be inferred from the project name, but it "
@@ -142,6 +156,12 @@ msgid ""
 "This path can contain path separators, so you can use it e.g. to group "
 "projects of a given studio with a ``Studio Name/Game Name`` structure."
 msgstr ""
+"За замовчуванням назву теки буде виведено з назви проекту, але її можна "
+"додатково налаштувати за допомогою :ref:`application/config/"
+"custom_user_dir_name <class_ProjectSettings_property_application/config/"
+"custom_user_dir_name>`. Цей шлях може містити роздільники шляхів, тому ви "
+"можете використовувати його, наприклад, для групування проектів певної "
+"студії за структурою ``Studio Name/Game Name``."
 
 msgid "On desktop platforms, the actual directory paths for ``user://`` are:"
 msgstr "На настільних платформах фактичні шляхи каталогів для ``user://`` є:"
@@ -152,9 +172,8 @@ msgstr "Тип"
 msgid "Location"
 msgstr "Розташування"
 
-#, fuzzy
 msgid "Default"
-msgstr "Типові можливості"
+msgstr "Типовий"
 
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
 msgstr "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
@@ -167,9 +186,8 @@ msgstr ""
 msgid "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
 msgstr "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
 
-#, fuzzy
 msgid "Custom dir"
-msgstr "Нетипові можливості"
+msgstr "Власний каталог"
 
 msgid "Windows: ``%APPDATA%\\[project_name]``"
 msgstr "Windows: ``%APPDATA%\\[project_name]``"
@@ -180,21 +198,17 @@ msgstr "macOS: ``~/Library/Application Support/[project_name]``"
 msgid "Linux: ``~/.local/share/[project_name]``"
 msgstr ""
 
-#, fuzzy
 msgid "Custom dir and name"
-msgstr "Власне малювання в 2D"
+msgstr "Власний каталог і ім'я"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[custom_user_dir_name]``"
-msgstr "Windows: ``%APPDATA%\\[project_name]``"
+msgstr "Windows: ``%APPDATA%\\[custom_user_dir_name]``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/[custom_user_dir_name]``"
-msgstr "macOS: ``~/Library/Application Support/[project_name]``"
+msgstr "macOS: ``~/Library/Application Support/[custom_user_dir_name]``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/[custom_user_dir_name]``"
-msgstr "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
+msgstr "Linux: ``~/.local/share/[custom_user_dir_name]``"
 
 msgid ""
 "``[project_name]`` is based on the application name defined in the Project "
@@ -223,7 +237,7 @@ msgstr ""
 "<class_JavaScript>`.)"
 
 msgid "Converting paths to absolute paths or \"local\" paths"
-msgstr ""
+msgstr "Перетворення шляхів на абсолютні або \"локальні\" шляхи"
 
 msgid ""
 "You can use :ref:`ProjectSettings.globalize_path() "
@@ -234,6 +248,14 @@ msgid ""
 "paths in the OS file manager using :ref:`OS.shell_open() "
 "<class_OS_method_shell_open>` since it only accepts native OS paths."
 msgstr ""
+"Ви можете використовувати :ref:`ProjectSettings.globalize_path() "
+"<class_ProjectSettings_method_globalize_path>` для перетворення "
+"\"локального\" шляху на кшталт ``res://path/to/file.txt`` в абсолютний шлях "
+"ОС. Наприклад, :ref:`ProjectSettings.globalize_path() "
+"<class_ProjectSettings_method_globalize_path>` можна використовувати для "
+"відкриття \"локальних\" шляхів у файловому менеджері ОС за допомогою :ref:"
+"`OS.shell_open() <class_OS_method_shell_open>`, оскільки він приймає тільки "
+"власні шляхи ОС."
 
 msgid ""
 "To convert an absolute OS path to a \"local\" path starting with ``res://`` "
@@ -242,22 +264,24 @@ msgid ""
 "paths that point to files or folders in your project's root or ``user://`` "
 "folders."
 msgstr ""
+"Щоб перетворити абсолютний шлях ОС на \"локальний\", що починається з "
+"``res://`` чи ``user://``, використовуйте :ref:`ProjectSettings."
+"localize_path() <class_ProjectSettings_method_localize_path>`. Це працює "
+"лише для абсолютних шляхів, які вказують на файли або теки в корені вашого "
+"проекту або теках ``user://``."
 
 msgid "Editor data paths"
 msgstr "Шляхи до даних редактора"
 
-#, fuzzy
 msgid ""
 "The editor uses different paths for editor data, editor settings, and cache, "
 "depending on the platform. By default, these paths are:"
 msgstr ""
-"Редактор використовує різні шляхи для даних користувача, параметрів "
-"користувача та кешу, залежно від платформи. За замовчуванням такими шляхами "
-"є:"
+"Редактор використовує різні шляхи для даних редактора, параметрів редактора "
+"та кешу, залежно від платформи. За замовчуванням ці шляхи такі:"
 
-#, fuzzy
 msgid "Editor data"
-msgstr "Шляхи до даних редактора"
+msgstr "Дані редактора"
 
 msgid "Windows: ``%APPDATA%\\Godot\\``"
 msgstr ""
@@ -269,7 +293,6 @@ msgstr ""
 msgid "Linux: ``~/.local/share/godot/``"
 msgstr "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
 
-#, fuzzy
 msgid "Editor settings"
 msgstr "Параметри редактора"
 
@@ -288,25 +311,25 @@ msgstr ""
 msgid "Linux: ``~/.cache/godot/``"
 msgstr ""
 
-#, fuzzy
 msgid "**Editor data** contains export templates and project-specific data."
 msgstr ""
-"**Дані користувача** містять шаблони експорту та дані для конкретних "
-"проектів."
+"**Дані редактора** містять шаблони експорту та дані для конкретних проектів."
 
 msgid ""
 "**Editor settings** contains the main editor settings configuration file as "
 "well as various other user-specific customizations (editor layouts, feature "
 "profiles, script templates, etc.)."
 msgstr ""
+"**Параметри редактора** містять основний конфігураційний файл налаштувань "
+"редактора, а також різні інші користувацькі налаштування (макети редактора, "
+"профілі функцій, шаблони скриптів тощо)."
 
-#, fuzzy
 msgid ""
 "**Cache** contains data generated by the editor, or stored temporarily. It "
 "can safely be removed when Godot is closed."
 msgstr ""
-"**Кеш** містить тимчасові дані. Його можна безпечно очистити, коли Godot "
-"закритий."
+"**Кеш** містить дані, згенеровані редактором або тимчасово збережені. Його "
+"можна безпечно очистити, коли Godot закритий."
 
 msgid ""
 "Godot complies with the `XDG Base Directory Specification <https://"
@@ -331,7 +354,6 @@ msgstr ""
 msgid "Self-contained mode"
 msgstr "Автономний режим"
 
-#, fuzzy
 msgid ""
 "If you create a file called ``._sc_`` or ``_sc_`` in the same directory as "
 "the editor binary (or in `MacOS/Contents/` for a macOS editor .app bundle), "
@@ -341,10 +363,11 @@ msgid ""
 "installation of the editor."
 msgstr ""
 "Якщо ви створите файл під назвою ``._sc_``, чи ``_sc_`` в тому ж каталозі, "
-"що і бінарник редактора, Godot увімкне *автономний режим*. Цей режим змушує "
-"Godot записувати всі дані користувача в каталог під назвою ``editor_data/`` "
-"в тому ж каталозі, що і бінарник редактора. Ви можете використовувати його "
-"для створення портативного інсталятора редактора."
+"що і бінарник редактора (або в `MacOS/Contents/` для пакета .app редактора "
+"macOS), Godot увімкне *автономний режим*. Цей режим змушує Godot записувати "
+"всі дані, параметри та кеш в каталог під назвою ``editor_data/`` в тому ж "
+"каталозі, що і бінарник редактора. Ви можете використовувати його для "
+"створення портативного інсталятора редактора."
 
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "

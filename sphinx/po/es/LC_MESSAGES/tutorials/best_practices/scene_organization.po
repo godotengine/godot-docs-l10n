@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,7 +321,7 @@ msgstr ""
 "maneje los menues y widgets que necesita el proyecto."
 
 msgid "Node2D/Spatial \"World\" (game_world.gd)"
-msgstr "Node2D/Spatial \"World\" (game_world.gd)"
+msgstr "Node2D/Spatial \"Mundo\" (game_world.gd)"
 
 msgid "Control \"GUI\" (gui.gd)"
 msgstr "Control \"GUI\" (gui.gd)"
@@ -381,7 +381,6 @@ msgstr ""
 "\"World\", o agregadas manualmente como hijas de la raíz. De otro modo, los "
 "nodos GUI podrían borrarse a si mismos durante escenas de transición."
 
-#, fuzzy
 msgid ""
 "If one has systems that modify other systems' data, one should define those "
 "as their own scripts or scenes rather than autoloads. For more information "
@@ -562,7 +561,6 @@ msgstr ""
 "\"mundo\" puede simplificar la administración de las conexiones del juego "
 "entre otras cosas."
 
-#, fuzzy
 msgid ""
 "The key to scene organization is to consider the SceneTree in relational "
 "terms rather than spatial terms. Are the nodes dependent on their parent's "

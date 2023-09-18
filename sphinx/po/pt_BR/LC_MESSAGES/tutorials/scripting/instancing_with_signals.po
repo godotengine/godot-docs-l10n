@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,8 @@ msgstr ""
 msgid "Signal"
 msgstr "Sinal"
 
-#, fuzzy
 msgid "Instancing with signals"
-msgstr "Criando instâncias de cenas"
+msgstr "Instanciando com sinais"
 
 msgid ""
 "Signals provide a way to decouple game objects, allowing you to avoid "
@@ -40,16 +39,14 @@ msgstr ""
 msgid "Shooting example"
 msgstr "Exemplo de Disparo"
 
-#, fuzzy
 msgid ""
 "Consider a player character that can rotate and shoot towards the mouse. "
 "Every time the mouse button is clicked, we create an instance of the bullet "
 "at the player's location. See :ref:`doc_instancing` for details."
 msgstr ""
-"Um outro exemplo de uso de sinal, vamos considerar um personagem que pode "
-"girar e atirar na direção do mouse. Toda vez que o botão do mouse é clicado, "
-"nós criamos uma instância da bala na posição do player. Veja:ref:"
-"`doc_instancing` para mais detalhes."
+"Considere um personagem de jogador que possa girar e atirar em direção ao "
+"mouse. Toda vez que o botão do mouse é clicado, criamos uma instância do "
+"projétil no local do jogador. Veja :ref:`doc_instancing` para detalhes."
 
 msgid ""
 "We'll use an ``Area2D`` for the bullet, which moves in a straight line at a "
@@ -78,11 +75,10 @@ msgstr ""
 "adicionar as balas como filha da cena \"principal\" do jogo, a qual deve ser "
 "o nó pai do jogador ou em uma hierarquia mais alta."
 
-#, fuzzy
 msgid "You could do this by adding the bullet to the main scene directly:"
-msgstr "Você pode fazer isso adicionando a bala diretamente:"
+msgstr ""
+"Você poderia fazer isso adicionando a bala diretamente à cena principal:"
 
-#, fuzzy
 msgid ""
 "However, this will lead to a different problem. Now if you try to test your "
 "\"Player\" scene independently, it will crash on shooting, because there is "
@@ -91,12 +87,12 @@ msgid ""
 "scene's node structure, the player's parent may no longer be the appropriate "
 "node to receive the bullets."
 msgstr ""
-"Entretanto, com isso virá um outro problema. Agora se você testar de forma "
-"isolada a cena \"Jogador\", haverá um crash ao atirar, pois não há um nó pai "
-"para acessar. Isso faz ficar muito mais difícil testar o seu código do "
-"player de forma isolada e isso também significa que se você quiser mudar a "
-"estrutura da sua cena principal, o pai do jogador poderá não ser mais um nó "
-"capaz de receber as balas."
+"No entanto, isto levará a um problema diferente. Agora, se você tentar "
+"testar sua cena \"Player\" de forma independente, ela cairá ao disparar, "
+"porque não há um nó pai para acessar. Isto torna muito mais difícil testar "
+"seu código de jogador independentemente e também significa que se você "
+"decidir mudar a estrutura do nó principal de sua cena, o nó pai do jogador "
+"pode não ser mais o nó apropriado para receber as balas."
 
 msgid ""
 "The solution to this is to use a signal to \"emit\" the bullets from the "
@@ -127,4 +123,4 @@ msgstr ""
 "jogador:"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

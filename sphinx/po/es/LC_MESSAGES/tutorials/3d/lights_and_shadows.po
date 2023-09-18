@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgid "Ambient Light in the :ref:`Environment <class_Environment>`."
 msgstr "Luz Ambiental en :ref:`Environment <class_Environment>`."
 
 msgid "Baked Light (read :ref:`doc_baked_lightmaps`)."
-msgstr "Baked Light (read :ref:`doc_baked_lightmaps`)."
+msgstr "Luz Horneada (read :ref:`doc_baked_lightmaps`)."
 
 msgid ""
 "The emission color is a material property. You can read more about it in "
@@ -162,12 +162,11 @@ msgstr ""
 "reducir el hueco generado por el Bias. Esto sólo está disponible cuando se "
 "usa el backend GLES3."
 
-#, fuzzy
 msgid ""
 "**Reverse Cull Face**: Some scenes work better when shadow mapping is "
 "rendered with face-culling inverted."
 msgstr ""
-"**Reverse Cull Faces**: Algunas escenas funcionan mejor cuando el mapeo de "
+"**Reverse Cull Face**: Algunas escenas funcionan mejor cuando el mapeo de "
 "sombras se representa con el face-culling invertido."
 
 msgid ""
@@ -178,27 +177,27 @@ msgstr ""
 "valores predeterminados funcionan para la mayoría de los casos, pero en "
 "general depende del tamaño y la complejidad de la geometría."
 
-#, fuzzy
 msgid ""
 "Finally, if gaps can't be solved, the **Contact** option can help (at a "
 "performance cost):"
 msgstr ""
 "Finalmente, si las grietas no se pueden solucionar, la opción **Contact** "
-"puede ayudar:"
+"puede ayudar (en consto de desempeño):"
 
-#, fuzzy
 msgid ""
 "Any sort of bias issues can always be fixed by increasing the shadow map "
 "resolution, although that may lead to decreased performance."
 msgstr ""
-"Cualquier problema producido por el bias puede ser arreglado incrementando "
-"la resolución del mapa de sombras, aunque esto puede producir una pérdida de "
-"rendimiento en hardware de gama baja."
+"Cualquier problema relacionado con el sesgo (bias) en las sombras siempre se "
+"puede solucionar aumentando la resolución del mapa de sombras (shadow map), "
+"aunque esto puede llevar a una disminución del rendimiento."
 
 msgid ""
 "If shadow biasing is a problem in your scene, the following settings are a "
 "good starting point:"
 msgstr ""
+"Si el sesgo en las sombras es un problema en tu escena, la siguiente "
+"configuración es un buen punto de partida:"
 
 msgid ""
 "Enable **Reverse Cull Face**. This reduces shadow peter-panning "
@@ -208,18 +207,32 @@ msgid ""
 "to **Disabled** or MeshInstances with Cast Shadow set to **Double-Sided** "
 "may exhibit shadow acne."
 msgstr ""
+"Habilitar la opción **Reverse Cull Face** puede reducir significativamente "
+"el efecto de \"peter-panning\" en las sombras y evitar que las luces "
+"muestren \"shadow acne\" en ángulos rasantes. El principal inconveniente es "
+"que esto puede provocar fugas de iluminación en algunas esquinas. Otro "
+"inconveniente es que los materiales que tienen su modo de culling "
+"establecido en **Disabled** o MeshInstances con la opción de sombra activada "
+"en **Double-Sided** pueden mostrar \"shadow acne\"."
 
 msgid ""
 "Set **Bias** to ``-0.01``. The bias should be a negative value when "
 "**Reverse Cull Face** is enabled, but it should be a positive value when "
 "it's disabled."
 msgstr ""
+"Establece **Bias** en ``-0.01``. El sesgo (bias) debe ser un valor negativo "
+"cuando se habilita **Reverse Cull Face**, pero debe ser un valor positivo "
+"cuando está deshabilitado."
 
 msgid ""
 "For DirectionalLight, set the directional shadow **Normal Bias** to ``0.0`` "
 "and **Bias Split Scale** to ``0.0``. Depending on your scene, you may also "
 "want to further decrease **Bias** to a value between ``-0.05`` and ``-0.1``."
 msgstr ""
+"Para una luz direccional (DirectionalLight), establece el **Normal Bias** de "
+"las sombras direccionales en ``0.0`` y el **Bias Split Scale** en ``0.0``. "
+"Dependiendo de tu escena, es posible que también desees disminuir aún más el "
+"**Bias** a un valor entre ``-0.05`` y ``-0.1``."
 
 msgid ""
 "Following the above tips should make it possible to avoid gaps in shadows "
@@ -227,6 +240,11 @@ msgid ""
 "If shadow acne is still visible after performing the above tweaks, try "
 "subdividing your meshes further in your 3D modeling software."
 msgstr ""
+"Siguiendo los consejos anteriores, debería ser posible evitar brechas en las "
+"sombras sin recurrir a las sombras de contacto (que tienen sus propios "
+"problemas). Si el \"shadow acne\" sigue siendo visible después de realizar "
+"los ajustes anteriores, prueba a subdividir aún más tus mallas en tu "
+"software de modelado 3D."
 
 msgid "Directional light"
 msgstr "Directional light (Luz direccional)"
@@ -498,7 +516,7 @@ msgstr ""
 "omnidireccionales."
 
 msgid "Shadow atlas"
-msgstr "Shadow atlas (atlas de sombra)"
+msgstr "Atlas de sombras"
 
 msgid ""
 "Unlike Directional lights, which have their own shadow texture, Omni and "

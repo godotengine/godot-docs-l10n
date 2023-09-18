@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,30 +74,15 @@ msgstr ""
 "débogage. Les binaires officiels n'incluent pas les symboles de débogage, "
 "car ceux-ci augmenteraient considérablement la taille du téléchargement."
 
+#, fuzzy
 msgid ""
-"To get profiling data that best matches the production environment, you "
-"should compile binaries with the following SCons options:"
+"To get profiling data that best matches the production environment (but with "
+"debugging symbols), you should compile binaries with the ``production=yes "
+"debug_symbols=yes`` SCons options."
 msgstr ""
 "Pour obtenir des données de profilage qui correspondent le mieux à "
 "l'environnement de production, vous devez compiler les binaires avec les "
 "options SCons suivantes :"
-
-msgid "For editor binaries: ``target=release_debug use_lto=yes``"
-msgstr "Pour les binaires de l'éditeur : ``target=release_debug use_lto=yes``"
-
-msgid "For debug export templates: ``target=release_debug use_lto=yes``"
-msgstr ""
-"Pour les modèles d'exportation de débogage : ``target=release_debug "
-"use_lto=yes``"
-
-msgid ""
-"For release export templates: ``tools=no target=release debug_symbols=yes`` "
-"- ``debug_symbols=yes`` is required as export templates are stripped from "
-"debugging symbols by default."
-msgstr ""
-"Pour les modèles d'exportation de version : ``tools=no target=release "
-"debug_symbols=yes`` - ``debug_symbols=yes`` est nécessaire car les modèles "
-"d'exportation sont dépourvus de symboles de débogage par défaut."
 
 msgid ""
 "It is possible to run a profiler on less optimized builds (e.g. "

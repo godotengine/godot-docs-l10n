@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,14 +40,12 @@ msgstr ""
 "<class_Node2D> `) рисовать пользовательские команды. Также это "
 "*действительно* легко сделать."
 
-#, fuzzy
 msgid ""
 "Custom drawing in a 2D node is *really* useful. Here are some use cases:"
 msgstr ""
-"Пользовательское рисование вручную в узле *действительно* полезно. Вот "
-"несколько примеров, почему:"
+"Пользовательский рисунок в 2D узле *действительно* полезен.Вот несколько "
+"примеров, почему:"
 
-#, fuzzy
 msgid ""
 "Drawing shapes or logic that existing nodes can't do, such as an image with "
 "trails or a special animated polygon."
@@ -64,24 +62,23 @@ msgstr ""
 "тетрисом для рисования блоков используется пользовательская функция "
 "рисования блоков.)"
 
-#, fuzzy
 msgid ""
 "Drawing a large number of simple objects. Custom drawing avoids the overhead "
 "of using a large number of nodes, possibly lowering memory usage and "
 "improving performance."
 msgstr ""
-"Рисование большого количества простых предметов. Пользовательское рисование "
-"позволяет избежать накладных расходов на использование узлов, что делает его "
-"менее затратным по памяти и потенциально более быстрым."
+"Рисование большого количества простых объектов. Пользовательское рисование "
+"позволяет избежать накладных расходов при использовании большого количества "
+"узлов, что может снизить использование памяти и улучшить производительность."
 
-#, fuzzy
 msgid ""
 "Making a custom UI control. There are plenty of controls available, but when "
 "you have unusual needs, you will likely need a custom control."
 msgstr ""
-"Создание настраиваемого элемента управления пользовательского интерфейса. "
-"Доступно множество элементов управления, но легко столкнуться с "
-"необходимостью создать новый, настраиваемый."
+"Создание пользовательского элемента управления пользовательского интерфейса "
+"(UI). Существует множество доступных элементов управления, но когда у вас "
+"есть нестандартные требования, вероятно, вам потребуется создать собственный "
+"элемент управления."
 
 msgid "Drawing"
 msgstr "Отрисовка"
@@ -112,15 +109,14 @@ msgstr ""
 "Функция ``_draw ()`` вызывается только один раз, а затем команды рисования "
 "кэшируются и запоминаются, поэтому дальнейшие вызовы не нужны."
 
-#, fuzzy
 msgid ""
 "If re-drawing is required because a state or something else changed, call :"
 "ref:`CanvasItem.update() <class_CanvasItem_method_update>` in that same node "
 "and a new ``_draw()`` call will happen."
 msgstr ""
-"Если требуется повторная отрисовка из-за того, что состояние или что-то еще "
+"Если требуется повторная отрисовка из-за того, что состояние или что-то ещё "
 "изменилось, просто вызовите :ref:`CanvasItem.update () "
-"<class_CanvasItem_method_update>` в том же узле, и произойдет новый вызов "
+"<class_CanvasItem_method_update>` в том же узле, и произойдёт новый вызов "
 "``_draw ()``."
 
 msgid ""
@@ -398,9 +394,8 @@ msgstr ""
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr "Давайте снова запустим! На этот раз вращение отображается правильно!"
 
-#, fuzzy
 msgid "Antialiased drawing"
-msgstr "**Сглаживание:**"
+msgstr "**Сглаживание**"
 
 msgid ""
 "Godot offers method parameters in :ref:"
@@ -432,15 +427,15 @@ msgstr ""
 msgid "Tools"
 msgstr "Инструменты"
 
-#, fuzzy
 msgid ""
 "Drawing your own nodes might also be desired while running them in the "
 "editor. This can be used as a preview or visualization of some feature or "
 "behavior. See :ref:`doc_running_code_in_the_editor` for more information."
 msgstr ""
-"Рисование ваших собственных узлов также может быть желательно во время их "
-"запуска в редакторе, чтобы использовать их в качестве предварительного "
-"просмотра или визуализации какой-либо функции или поведения."
+"Рисование собственных узлов может также быть желательным при их выполнении в "
+"редакторе. Это может использоваться в качестве предварительного просмотра "
+"или визуализации некоторой функциональности, или поведения. Дополнительную "
+"информацию смотрите в разделе :ref:`doc_running_code_in_the_editor`."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

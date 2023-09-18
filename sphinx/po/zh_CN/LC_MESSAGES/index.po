@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "General"
-msgstr "综述"
+msgid "About"
+msgstr "关于"
 
 msgid "Getting started"
 msgstr "入门"
 
-msgid "Tutorials"
-msgstr "教程"
+#, fuzzy
+msgid "Manual"
+msgstr "手动使用"
 
 msgid "Development"
 msgstr "开发"
@@ -35,7 +36,8 @@ msgstr "社区"
 msgid "Class reference"
 msgstr "类参考"
 
-msgid "Godot Docs – *3.5* branch"
+#, fuzzy
+msgid "Godot Docs – *3.6* branch"
 msgstr "Godot 文档 – *3.5* 分支"
 
 msgid ""
@@ -44,9 +46,10 @@ msgid ""
 msgstr ""
 "Godot 有不同语言和版本的文档。展开侧栏底部的“Read the Docs”面板以查看该列表。"
 
+#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
-"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "本文档由社区成员从\\ `Weblate <https://hosted.weblate.org/projects/godot-"
@@ -62,10 +65,12 @@ msgstr ""
 "根据翻译工作的完成度，您可能会发现部分段落、甚至整个页面都还是英文的。您可以"
 "在 Weblate 上进行翻译或者校对已有内容，来帮助社区。"
 
+#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
-"\"latest\" (development) branch, but should be suitable to learn how to use "
-"stable Godot releases nevertheless."
+"\"stable\" branch. You can still view the English documentation for other "
+"engine versions using the \"Read the Docs\" panel at the bottom of the "
+"sidebar."
 msgstr ""
 "目前，本地化翻译仅能用于“latest”（开发）分支，但也应当适用于稳定版 Godot 的使"
 "用学习。"
@@ -78,28 +83,21 @@ msgid ""
 "documentation has to offer."
 msgstr ""
 "欢迎来到 `Godot 引擎 <https://godotengine.org>`_\\ 的官方文档，Godot 引擎是一"
-"款免费、由开源社区驱动的 2D 和 3D 游戏引擎！如果您初次阅读本文档，我们建议您"
+"款自由开源、由社区驱动的 2D 和 3D 游戏引擎！如果您初次阅读本文档，我们建议您"
 "读一下\\ :ref:`简介页面 <doc_about_intro>`\\ ，以对本文档的内容有一个整体的了"
 "解。"
 
+#, fuzzy
 msgid ""
-"The table of contents below and in the sidebar should let you easily access "
-"the documentation for your topic of interest. You can also use the search "
-"function in the top left corner."
+"The table of contents in the sidebar should let you easily access the "
+"documentation for your topic of interest. You can also use the search "
+"function in the top-left corner."
 msgstr ""
 "使用下方及侧边栏中的目录可以方便地找到你感兴趣的主题文档，搜索功能位于左上"
 "角。"
 
-msgid ""
-"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline reading (updated every Monday). Extract the ZIP archive then open "
-"the top-level ``index.html`` in a web browser."
+msgid "Get involved"
 msgstr ""
-"您也可以\\ `下载 HTML 副本 <https://nightly.link/godotengine/godot-docs/"
-"workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__\\ 进行离线"
-"阅读（每周一更新）。将该 ZIP 压缩包解压，用网页浏览器打开顶层的 ``index."
-"html`` 即可。"
 
 msgid ""
 "Godot Engine is an open source project developed by a community of "
@@ -131,6 +129,39 @@ msgstr "weblate_widget"
 msgid "Translation status"
 msgstr "翻译状态"
 
+#, fuzzy
+msgid "Offline documentation"
+msgstr "在线文档（RST）"
+
 msgid ""
-"The main documentation for the site is organized into the following sections:"
-msgstr "本站点的主要文档分为以下几个部分："
+"To browse the documentation offline, you can use the mirror of the "
+"documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
+"offline browsing on DevDocs, you need to:"
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Preferences**."
+msgstr ""
+
+msgid ""
+"Enable the desired version of the Godot documentation by checking the box "
+"next to it in the sidebar."
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Offline data**."
+msgstr ""
+
+#, fuzzy
+msgid "Click the **Install** link next to the Godot documentation."
+msgstr "Godot 文档是什么"
+
+#, fuzzy
+msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
+"offline reading (updated every Monday). Extract the ZIP archive then open "
+"the top-level ``index.html`` in a web browser."
+msgstr ""
+"您也可以\\ `下载 HTML 副本 <https://nightly.link/godotengine/godot-docs/"
+"workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__\\ 进行离线"
+"阅读（每周一更新）。将该 ZIP 压缩包解压，用网页浏览器打开顶层的 ``index."
+"html`` 即可。"

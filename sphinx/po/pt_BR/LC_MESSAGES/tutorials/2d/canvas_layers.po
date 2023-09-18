@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,6 @@ msgstr "Camadas de canvas"
 msgid "Viewport and Canvas items"
 msgstr "Janela de Exibição e itens de Canvas"
 
-#, fuzzy
 msgid ""
 ":ref:`CanvasItem <class_CanvasItem>` is the base for all 2D nodes, be it "
 "regular 2D nodes, such as :ref:`Node2D <class_Node2D>`, or :ref:`Control "
@@ -37,7 +36,6 @@ msgstr ""
 "Cada item herdará a transformação de seu pai. Isso significa que quando o "
 "pai é movido, os filhos também se movem."
 
-#, fuzzy
 msgid ""
 "CanvasItem nodes, and nodes inheriting from them, are direct or indirect "
 "children of a :ref:`Viewport <class_Viewport>`, that display them."
@@ -45,7 +43,6 @@ msgstr ""
 "Os nós CanvasItem, e nós herdados deles, são filhos diretos ou indiretos de "
 "uma :ref:`Viewport <class_Viewport>`, e serão exibidos através dela."
 
-#, fuzzy
 msgid ""
 "A Viewport has the property :ref:`Viewport.canvas_transform "
 "<class_Viewport_property_canvas_transform>`, allows to apply a custom :ref:"
@@ -59,17 +56,14 @@ msgstr ""
 "hierarquia CanvasItem que a contém. Nós como :ref:`Camera2D "
 "<class_Camera2D>` funcionam alterando essa transformação."
 
-#, fuzzy
 msgid ""
 "To achieve effects like scrolling, manipulating the canvas transform "
 "property is more efficient than moving the root canvas item and the entire "
 "scene with it."
 msgstr ""
-"Efeitos como rolagem são melhor alcançados manipulando a propriedade de "
-"transformação do canvas. Essa abordagem é mais eficiente do que mover o item "
-"do canvas raiz (e, portanto, toda a cena)."
+"Para obter efeitos como rolagem, manipular a propriedade de transformação da "
+"tela é mais eficiente do que mover o item de lona raiz e toda a cena com ela."
 
-#, fuzzy
 msgid ""
 "Usually though, we don't want *everything* in the game or app to be subject "
 "to the canvas transform. For example:"
@@ -106,7 +100,7 @@ msgid "How can these problems be solved in a single scene tree?"
 msgstr "Como esses problemas podem ser resolvidos em uma única árvore de cena?"
 
 msgid "CanvasLayers"
-msgstr ""
+msgstr "CanvasLayers"
 
 msgid ""
 "The answer is :ref:`CanvasLayer <class_CanvasLayer>`, which is a node that "
@@ -136,7 +130,7 @@ msgstr ""
 "botão de pausa também pode ser criada na camada \"1\"."
 
 msgid "Here's a diagram of how it looks:"
-msgstr ""
+msgstr "Aqui está um diagrama de como ele se parece:"
 
 msgid ""
 "CanvasLayers are independent of tree order, and they only depend on their "
@@ -163,4 +157,4 @@ msgstr ""
 "`Node2D.z_index <class_Node2D_property_z_index>`)."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

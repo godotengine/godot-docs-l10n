@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Running Godot apps on macOS"
-msgstr "Запуск додатків Godot на macOS"
+msgstr "Запуск застосунків Godot на macOS"
 
 msgid ""
 "This page covers running Godot projects on macOS. If you haven't exported "
@@ -30,7 +30,7 @@ msgstr ""
 msgid ""
 "By default, macOS will run only applications that are signed and notarized."
 msgstr ""
-"За замовчуванням macOS буде запускати тільки додатки, які підписані і "
+"За замовчуванням macOS буде запускати тільки застосунки, які підписані і "
 "нотаріально завірені."
 
 msgid ""
@@ -42,34 +42,37 @@ msgstr ""
 
 msgid "App is signed, notarized and distributed via App Store"
 msgstr ""
-"Додаток підписаний, нотаріально завірений та розповсюджується через App Store"
+"Застосунок підписаний, нотаріально завірений та розповсюджується через App "
+"Store"
 
 msgid ""
 "App developers need to join the Apple Developer Program, and configure "
 "signing and notarization options during export, then upload the app to the "
 "App Store."
 msgstr ""
-"Розробники додатків повинні приєднатися до Програми розробників Apple, а "
+"Розробники застосунків повинні приєднатися до Програми розробників Apple, а "
 "також налаштувати параметри підписання та нотаріального засвідчення під час "
-"експорту, а потім завантажити додаток в App Store."
+"експорту, а потім завантажити застосунок в App Store."
 
 msgid ""
 "The app should run out of the box, without extra user interaction required."
 msgstr ""
-"Додаток повинен вийти з коробки, без додаткової взаємодії з користувачем."
+"Застосунок повинен вийти з коробки, без додаткової взаємодії з користувачем."
 
 msgid "App is signed, notarized and distributed outside App Store"
 msgstr ""
-"Додаток підписаний, нотаріально завірений і поширюється за межами App Store"
+"Застосунок підписаний, нотаріально завірений і поширюється за межами App "
+"Store"
 
 msgid ""
 "App developers need to join the Apple Developer Program, and configure "
 "signing and notarization options during export, then distribute the app as "
 "\".DMG\" or \".ZIP\" archive."
 msgstr ""
-"Розробникам додатків необхідно приєднатися до Програми розробників Apple, а "
-"також налаштувати параметри підписання та нотаріального засвідчення під час "
-"експорту, а потім розповсюдити додаток як \". DMG\", або \".ZIP\", архів."
+"Розробникам застосунків необхідно приєднатися до Програми розробників Apple, "
+"а також налаштувати параметри підписання та нотаріального засвідчення під "
+"час експорту, а потім розповсюдити застосунок як \". DMG\", або \".ZIP\", "
+"архів."
 
 msgid ""
 "When you run the app for the first time, the following dialog is displayed:"
@@ -98,8 +101,8 @@ msgstr ""
 
 msgid "App is signed (including ad-hoc signatures) but not notarized"
 msgstr ""
-"Додаток підписаний (включаючи підписи без точок доступу), але нотаріально не "
-"завірений"
+"Застосунок підписаний (включаючи підписи без точок доступу), але нотаріально "
+"не завірений"
 
 msgid ""
 "App developer used self-signed certificate or ad-hoc signing (default Godot "
@@ -134,12 +137,12 @@ msgid "Enter your password if you're prompted."
 msgstr "Введіть пароль, якщо з'явиться відповідний запит."
 
 msgid "App is not-signed, executable is linker-signed"
-msgstr "Додаток не підписаний, виконуваний файл підписаний комп'ютером"
+msgstr "Застосунок не підписаний, виконуваний файл підписаний комп'ютером"
 
 msgid "App is built using official export templates, but it is not signed."
 msgstr ""
-"Додаток побудований з використанням офіційних шаблонів експорту, але він не "
-"підписаний."
+"Застосунок побудований з використанням офіційних шаблонів експорту, але він "
+"не підписаний."
 
 msgid ""
 "To run this app, you should remove the quarantine extended file attribute "
@@ -169,23 +172,22 @@ msgstr ""
 "Запустіть команду ``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` "
 "(з лапками та розширенням ``.app``)."
 
-#, fuzzy
 msgid ""
 "Neither app nor executable is signed (relevant for Apple Silicon macs only)"
 msgstr ""
-"Жоден додаток, який не є виконуваним файлом, не підписаний (актуально лише "
-"для mac Apple Silicon)"
+"Ані застосунок, ані виконуваний файл не підписуються (актуально лише для "
+"комп'ютерів Apple Silicon Mac)"
 
 msgid ""
 "App is built using custom export templates, compiled using OSXCross, and it "
 "is not signed at all."
 msgstr ""
-"Додаток побудований з використанням користувацьких шаблонів експорту, "
+"Застосунок побудований з використанням користувацьких шаблонів експорту, "
 "скомпільований за допомогою OSXCross, і він взагалі не підписаний."
 
 msgid "To run this app, you can ad-hoc sign it yourself:"
 msgstr ""
-"Щоб запустити цей додаток, ви можете підписати його без точок доступу "
+"Щоб запустити цей застосунок, ви можете підписати його без точок доступу "
 "самостійно:"
 
 msgid ""

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,10 @@ msgid ""
 "benefits and drawbacks, so it is best to understand each one and how it can "
 "be useful in a given situation."
 msgstr ""
+"Existen muchas formas de generar geometría de manera procedural en Godot. En "
+"esta serie de tutoriales exploraremos algunas de ellas. Cada técnica tiene "
+"sus propias ventajas y desventajas, por lo que es mejor comprender cada una "
+"y cómo puede ser útil en una situación determinada."
 
 msgid "What is geometry?"
 msgstr "¿Qué es geometría?"
@@ -71,7 +75,6 @@ msgstr ""
 "que se dibuje en diferentes partes de tu escena con diferentes materiales o "
 "transformaciones (escala, rotación, posición, etc.)."
 
-#, fuzzy
 msgid ""
 "If you are going to draw the same object many times, it can be helpful to "
 "use a MultiMesh with a MultiMeshInstance. MultiMeshInstances draw meshes "
@@ -110,21 +113,20 @@ msgstr ""
 msgid "Surfaces"
 msgstr "Caras"
 
-#, fuzzy
 msgid ""
 "Each surface has its own material. Alternatively, you can override the "
 "material for all surfaces in the Mesh when you use a MeshInstance using the :"
 "ref:`material_override <class_GeometryInstance_property_material_override>` "
 "property."
 msgstr ""
-"Cada superficie tiene su propio material. También puedes anular el material "
-"para todas las superficies del Mesh cuando utilices una MeshInstance usando "
-"``MeshInstance.override_material``."
+"Cada superficie tiene su propio material. Alternativamente, puedes "
+"sobrescribir el material para todas las superficies en la malla cuando "
+"utilizas una instancia de malla (MeshInstance) utilizando la propiedad :ref:"
+"`material_override <class_GeometryInstance_property_material_override>`."
 
 msgid "Surface array"
 msgstr "Array de las caras"
 
-#, fuzzy
 msgid ""
 "The surface array is an array of length ``ArrayMesh.ARRAY_MAX``. Each "
 "position in the array is filled with a sub-array containing per-vertex "
@@ -132,12 +134,13 @@ msgid ""
 "a :ref:`PoolVector3Array <class_PoolVector3Array>` of vertex normals. See :"
 "ref:`Mesh.ArrayType <enum_Mesh_ArrayType>` for more information."
 msgstr ""
-"El array de superficie es un array de longitud ``ArrayMesh.ARRAY_MAX``. Cada "
-"posición en el array está llena de un sub-array que contiene información por "
-"vértice. Por ejemplo, el array situado en ``ArrayMesh.ARRAY_NORMAL`` es un :"
-"ref:`PoolVector3Array <class_PoolVector3Array>` de vértices normales."
+"El arreglo de superficies (surface array) es un arreglo de longitud "
+"``ArrayMesh.ARRAY_MAX``. Cada posición en el arreglo está llenada con un sub-"
+"array que contiene información por vértice. Por ejemplo, el array ubicado en "
+"``ArrayMesh.ARRAY_NORMAL`` es un :ref:`PoolVector3Array "
+"<class_PoolVector3Array>` de normales de vértices. Consulta :ref:`Mesh."
+"ArrayType <enum_Mesh_ArrayType>` para obtener más información."
 
-#, fuzzy
 msgid ""
 "The surface array can be indexed or non-indexed. Creating a non-indexed "
 "array is as easy as not assigning an array at the index ``ArrayMesh."
@@ -169,11 +172,13 @@ msgid ""
 "Godot provides different ways of accessing and working with geometry. More "
 "information on each will be provided in the following tutorials."
 msgstr ""
+"Godot ofrece diferentes formas de acceder y trabajar con geometría. Se "
+"proporcionará más información sobre cada una de ellas en los siguientes "
+"tutoriales."
 
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#, fuzzy
 msgid ""
 "The ArrayMesh resource extends Mesh to add a few different quality of life "
 "functions and, most importantly, the ability to construct a Mesh surface "
@@ -191,7 +196,7 @@ msgstr ""
 "<doc_arraymesh>`."
 
 msgid "MeshDataTool"
-msgstr ""
+msgstr "MeshDataTool"
 
 msgid ""
 "The MeshDataTool is a resource that converts Mesh data into arrays of "
@@ -208,12 +213,14 @@ msgstr ""
 "<doc_meshdatatool>`."
 
 msgid "SurfaceTool"
-msgstr ""
+msgstr "SurfaceTool"
 
 msgid ""
 "The SurfaceTool allows the creation of Meshes using an OpenGL 1.x immediate "
 "mode style interface."
 msgstr ""
+"La clase SurfaceTool permite la creación de mallas utilizando una interfaz "
+"estilo \"OpenGL 1.x immediate mode\"."
 
 msgid ""
 "For more information about the SurfaceTool, please see the :ref:`SurfaceTool "
@@ -233,6 +240,12 @@ msgid ""
 "SurfaceTool generates a Mesh that needs to be added to a MeshInstance to be "
 "seen."
 msgstr ""
+"ImmediateGeometry es un nodo que utiliza una interfaz de estilo \"modo "
+"inmediato\" (al igual que SurfaceTool) para dibujar objetos. La diferencia "
+"entre ImmediateGeometry y SurfaceTool es que ImmediateGeometry es un nodo en "
+"sí mismo que se puede agregar al árbol de escena y se dibuja directamente "
+"desde el código, mientras que SurfaceTool genera una malla que debe "
+"agregarse a una instancia de malla (MeshInstance) para poder verse."
 
 msgid ""
 "ImmediateGeometry is useful for prototyping because of its straightforward "
@@ -240,6 +253,10 @@ msgid ""
 "useful for adding simple geometry for visual debugging (e.g. by drawing "
 "lines to visualize physics raycasts etc.)."
 msgstr ""
+"ImmediateGeometry es útil para prototipos debido a su API directa, pero es "
+"lento porque la geometría se reconstruye en cada cuadro. Es especialmente "
+"útil para agregar geometría simple para depuración visual (por ejemplo, al "
+"dibujar líneas para visualizar raycasts de físicas, etc.)."
 
 msgid ""
 "For more information about ImmediateGeometry, please see the :ref:"
@@ -255,6 +272,8 @@ msgid ""
 "Which approach you use depends on what you are trying to do and what kind of "
 "procedure you are comfortable with."
 msgstr ""
+"El enfoque que elijas depende de lo que estés tratando de hacer y de qué "
+"tipo de procedimiento te sientas más cómodo."
 
 msgid ""
 "Both SurfaceTool and ArrayMesh are excellent for generating static geometry "
@@ -263,7 +282,6 @@ msgstr ""
 "Tanto SurfaceTool como ArrayMesh son excelentes para generar geometría "
 "estática (meshes) que no cambian con el tiempo."
 
-#, fuzzy
 msgid ""
 "Using an ArrayMesh is slightly faster than using a SurfaceTool, but the API "
 "is a little more challenging. Additionally, SurfaceTool has a few quality of "
@@ -273,7 +291,6 @@ msgstr ""
 "la API es más desafiante. Además, SurfaceTool tiene algunos métodos de "
 "calidad de vida como ``generate_normals()`` e ``index()``."
 
-#, fuzzy
 msgid ""
 "ImmediateGeometry regenerates the mesh every frame, so it is much slower "
 "than ArrayMesh or SurfaceTool. However, if you need the geometry to change "
@@ -286,7 +303,6 @@ msgstr ""
 "fácil que puede ser incluso un poco más rápida que la generación de un "
 "ArrayMesh en cada cuadro."
 
-#, fuzzy
 msgid ""
 "The MeshDataTool is not fast, but it gives you access to all kinds of "
 "properties of the mesh that you don't get with the others (edges, faces, "

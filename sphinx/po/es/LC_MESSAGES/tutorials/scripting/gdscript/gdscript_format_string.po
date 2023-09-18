@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,7 +38,6 @@ msgstr ""
 "pueden reemplazar fácilmente por parámetros entregados a la cadena de "
 "formato."
 
-#, fuzzy
 msgid ""
 "As an example, with ``%s`` as a placeholder, the format string ``\"Hello %s, "
 "how are you?\"`` can easily be changed to ``\"Hello World, how are you?\"``. "
@@ -239,15 +238,14 @@ msgstr "En especificadores numéricos, **muestra el signo +** si es positivo."
 msgid "Integer"
 msgstr "Entero"
 
-#, fuzzy
 msgid ""
 "Set **padding**. Padded with spaces or with zeroes if integer starts with "
 "``0`` in an integer or real number placeholder. The leading ``0`` is ignored "
 "if ``-`` is present. When used after ``.``, see ``.``."
 msgstr ""
-"Define el relleno o **padding**. Rellenado con espacios o ceros si el entero "
-"comienza con ``0`` en un parámetro entero. Cuando se utiliza después de ``."
-"``, ver ``.``."
+"Define el **padding**. Rellenado con espacios o ceros si el entero comienza "
+"con ``0`` en un parámetro entero. Cuando se utiliza después de ``.``, ver ``."
+"``."
 
 msgid "``.``"
 msgstr "``.``"

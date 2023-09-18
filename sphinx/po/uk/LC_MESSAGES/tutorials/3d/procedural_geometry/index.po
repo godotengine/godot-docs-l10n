@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,7 +74,6 @@ msgstr ""
 "щоб намалювати його в різних частинах вашої сцени з різними матеріалами, або "
 "перетвореннями (масштаб, обертання, положення і т. д.)."
 
-#, fuzzy
 msgid ""
 "If you are going to draw the same object many times, it can be helpful to "
 "use a MultiMesh with a MultiMeshInstance. MultiMeshInstances draw meshes "
@@ -85,13 +84,12 @@ msgid ""
 "all the instances of each surface use the same material."
 msgstr ""
 "Якщо ви збираєтеся малювати один і той же об'єкт багато разів, може бути "
-"корисно використовувати MultiMesh з MultiMeshInstance. Вузол "
-"MultiMeshInstance малює меші тисячі разів з легкістю. Він використовує "
-"апаратне забезпечення для того, щоб зробити це. Недоліком використання "
-"MultiMeshInstance є те, що ви обмежені одним матеріалом для всіх "
-"екземплярів. Він використовує масив екземплярів для зберігання різних "
-"кольорів і перетворень для кожного екземпляра, але всі екземпляри "
-"використовують один і той же матеріал."
+"корисно використовувати MultiMesh з MultiMeshInstance. Вузли "
+"MultiMeshInstance малюють меші тисячі разів з легкістю використовуючи для "
+"цього апаратне забезпечення. Недоліком використання MultiMeshInstance є те, "
+"що ви обмежені одним матеріалом для всіх екземплярів. Він використовує масив "
+"екземплярів для зберігання різних кольорів і перетворень для кожного "
+"екземпляра, але всі екземпляри використовують один і той же матеріал."
 
 msgid "What a Mesh is"
 msgstr "Чим є Меш"
@@ -114,7 +112,6 @@ msgstr ""
 msgid "Surfaces"
 msgstr "Поверхні"
 
-#, fuzzy
 msgid ""
 "Each surface has its own material. Alternatively, you can override the "
 "material for all surfaces in the Mesh when you use a MeshInstance using the :"
@@ -123,12 +120,12 @@ msgid ""
 msgstr ""
 "Кожна поверхня має свій матеріал. Крім того, ви можете перевизначити "
 "матеріал для всіх поверхонь Меша коли використовуєте MeshInstance за "
-"допомогою ``MeshInstance.override_material``."
+"допомогою властивості :ref:`material_override "
+"<class_GeometryInstance_property_material_override>`."
 
 msgid "Surface array"
 msgstr "Масив поверхні"
 
-#, fuzzy
 msgid ""
 "The surface array is an array of length ``ArrayMesh.ARRAY_MAX``. Each "
 "position in the array is filled with a sub-array containing per-vertex "
@@ -139,8 +136,9 @@ msgstr ""
 "Масив поверхні являє собою масив довжиною ``ArrayMesh.ARRAY_MAX``. Кожна "
 "позиція в масиві заповнюється під-масивом, що містить інформацію про "
 "вершину. Наприклад, масив, розташований за адресою ``ArrayMesh."
-"ARRAY_NORMAL`` є :ref:`PoolVector3Array-м <class_PoolVector3Array>` нормалей "
-"вершини."
+"ARRAY_NORMAL`` це :ref:`PoolVector3Array <class_PoolVector3Array>` нормалей "
+"вершини. Дивіться :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`, щоб отримати "
+"більше інформації."
 
 msgid ""
 "The surface array can be indexed or non-indexed. Creating a non-indexed "
@@ -179,7 +177,6 @@ msgstr ""
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#, fuzzy
 msgid ""
 "The ArrayMesh resource extends Mesh to add a few different quality of life "
 "functions and, most importantly, the ability to construct a Mesh surface "
@@ -232,7 +229,6 @@ msgstr ""
 msgid "ImmediateGeometry"
 msgstr "ImmediateGeometry (Безпосередня Геометрія)"
 
-#, fuzzy
 msgid ""
 "ImmediateGeometry is a node that uses an immediate mode style interface "
 "(like SurfaceTool) to draw objects. The difference between ImmediateGeometry "
@@ -244,19 +240,18 @@ msgstr ""
 "ImmediateGeometry — це вузол, який використовує інтерфейс стилю негайного "
 "режиму (наприклад, SurfaceTool) для малювання об'єктів. Різниця між "
 "ImmediateGeometry і SurfaceTool полягає в тому, що ImmediateGeometry - це "
-"сам вузол, який можна додати до дерева сцени і витягти безпосередньо з коду. "
+"вузол, який можна додати до дерева сцени і витягти безпосередньо з коду. "
 "SurfaceTool генерує меш, який ще треба додати в MeshInstance, щоб побачити."
 
-#, fuzzy
 msgid ""
 "ImmediateGeometry is useful for prototyping because of its straightforward "
 "API, but it is slow because the geometry is rebuilt every frame. It is most "
 "useful for adding simple geometry for visual debugging (e.g. by drawing "
 "lines to visualize physics raycasts etc.)."
 msgstr ""
-"ImmediateGeometry корисна для прототипування через простий API, але вона "
-"повільна, оскільки геометрія перебудовується в кожному кадрі. Вона найбільш "
-"корисна для швидкого додавання простої геометрії для налагодження "
+"ImmediateGeometry корисний для створення прототипів завдяки простому API, "
+"але він повільний, оскільки геометрія перебудовується в кожному кадрі. Він "
+"найбільш корисний для швидкого додавання простої геометрії для налагодження "
 "візуальності (наприклад, шляхом малювання ліній для візуалізації фізичних "
 "променів тощо)."
 
@@ -270,12 +265,11 @@ msgstr ""
 msgid "Which one should I use?"
 msgstr "Який з них я повинен використовувати?"
 
-#, fuzzy
 msgid ""
 "Which approach you use depends on what you are trying to do and what kind of "
 "procedure you are comfortable with."
 msgstr ""
-"Який метод використовувати, залежить від того, що ви намагаєтеся зробити і "
+"Який підхід використовувати, залежить від того, що ви намагаєтеся зробити і "
 "який варіант вам зручніший."
 
 msgid ""
@@ -306,7 +300,6 @@ msgstr ""
 "який може бути навіть трохи швидшим, ніж генерування ArrayMesh-а кожного "
 "кадру."
 
-#, fuzzy
 msgid ""
 "The MeshDataTool is not fast, but it gives you access to all kinds of "
 "properties of the mesh that you don't get with the others (edges, faces, "

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,63 +24,75 @@ msgid ""
 "`KDevelop <https://www.kdevelop.org>`_ is a free, open source IDE for all "
 "desktop platforms."
 msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_ es un IDE gratuito y de código "
+"abierto disponible para todas las plataformas de escritorio."
 
 msgid "Importing the project"
 msgstr "Importando el proyecto"
 
 msgid "From the KDevelop's main screen select **Open Project**."
 msgstr ""
+"Desde la pantalla principal de KDevelop, selecciona **Abrir Proyecto**."
 
 msgid "KDevelop's main screen."
-msgstr ""
+msgstr "Pantalla principal de KDevelop."
 
 msgid "Navigate to the Godot root folder and select it."
-msgstr ""
+msgstr "Navega hasta la carpeta raíz de Godot y selecciónala."
 
 msgid ""
 "On the next screen, choose **Custom Build System** for the **Project "
 "Manager**."
 msgstr ""
+"En la siguiente pantalla, elige **Custom Build System** para el **Gestor de "
+"Proyectos**."
 
 msgid ""
 "After the project has been imported, open the project configuration by right-"
 "clicking on it in the **Projects** panel and selecting **Open Configuration.."
 "** option."
 msgstr ""
+"Después de que el proyecto haya sido importado, abre la configuración del "
+"proyecto haciendo clic derecho sobre él en el panel de **Proyectos** y "
+"seleccionando la opción **Abrir Configuración...**."
 
 msgid ""
 "Under **Language Support** open the **Includes/Imports** tab and add the "
 "following paths:"
 msgstr ""
+"Bajo **Soporte de Lenguaje**, abre la pestaña **Inclusiones/Importaciones** "
+"y agrega las siguientes rutas:"
 
 msgid "Apply the changes."
-msgstr ""
+msgstr "Aplicar los cambios."
 
 msgid ""
 "Under **Custom Build System** add a new build configuration with the "
 "following settings:"
 msgstr ""
+"Bajo **Sistema de Construcción Personalizado**, agrega una nueva "
+"configuración de compilación con la siguiente configuración:"
 
 msgid "Build Directory"
-msgstr ""
+msgstr "Directorio de Construcción"
 
 msgid "*blank*"
-msgstr ""
+msgstr "*blank*"
 
 msgid "Enable"
 msgstr "Activar"
 
 msgid "**True**"
-msgstr ""
+msgstr "**True**"
 
 msgid "Executable"
-msgstr ""
+msgstr "Ejecutable"
 
 msgid "**scons**"
-msgstr ""
+msgstr "**scons**"
 
 msgid "Arguments"
-msgstr ""
+msgstr "Argumentos"
 
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
@@ -89,16 +101,17 @@ msgstr ""
 "parámetros."
 
 msgid "Apply the changes and close the configuration window."
-msgstr ""
+msgstr "Aplica los cambios y cierra la ventana de configuración."
 
 msgid "Debugging the project"
 msgstr "Depurando el proyecto"
 
 msgid "Select **Run > Configure Launches...** from the top menu."
-msgstr ""
+msgstr "Selecciona **Run > Configure Launches...** en el menú superior."
 
 msgid "Click **Add** to create a new launch configuration."
 msgstr ""
+"Haz clic en **Agregar** para crear una nueva configuración de lanzamiento."
 
 msgid ""
 "Select **Executable** option and specify the path to your executable located "
@@ -106,6 +119,10 @@ msgid ""
 "configuration, e.g. ``godot.x11.tools.64`` for 64-bit X11 platform with "
 "``tools`` enabled."
 msgstr ""
+"Selecciona la opción **Ejecutable** y especifica la ruta a tu ejecutable "
+"ubicado en la carpeta ``<directorio raíz de Godot>/bin``. El nombre depende "
+"de tu configuración de compilación, por ejemplo, ``godot.x11.tools.64`` para "
+"la plataforma X11 de 64 bits con las ``herramientas`` habilitadas."
 
 msgid ""
 "If you run into any issues, ask for help in one of `Godot's community "

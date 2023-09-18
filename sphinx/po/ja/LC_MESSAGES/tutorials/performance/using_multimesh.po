@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,8 +63,8 @@ msgstr ""
 "唯一の欠点は、個々のインスタンスに対して *screen* または *frustum* カリングが"
 "できないことです。これは、MultiMesh全体の可視性に応じて、何百万ものオブジェク"
 "トが\\ *常に*\\ または\\ *決して*\\ 描画されないことを意味します。それらにカ"
-"スタムの可視性rectを提供することは可能ですが、常に *all-or-none* の可視性にな"
-"ります。"
+"スタムの可視領域矩形 (Visibility Rect)を提供することは可能ですが、常に *all-"
+"or-none* の可視性になります。"
 
 msgid ""
 "If the objects are simple enough (just a couple of vertices), this is "

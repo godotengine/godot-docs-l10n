@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -270,72 +270,71 @@ msgstr ""
 msgid "Official plugins and resources"
 msgstr "Plugins oficiales y recursos"
 
-#, fuzzy
 msgid ""
 "As mentioned earlier, Godot does not support the various VR and AR SDKs out "
 "of the box, you need a plugin for the specific SDK you want to use. There "
 "are several official plugins available in the `GodotVR Repository <https://"
 "github.com/GodotVR>`__."
 msgstr ""
-"Como se mencionó anteriormente, Godot no soporta los diferentes SDKs de RV y "
-"AR fuera de la caja, necesitas un plugin para el SDK específico que quieras "
-"usar. Hay varios plugins oficiales disponibles en el `GodotVR Repository "
+"Como se mencionó anteriormente, Godot no admite de forma nativa las "
+"diferentes SDK de realidad virtual (VR) y realidad aumentada (AR); necesitas "
+"un complemento (plugin) para el SDK específico que deseas utilizar. Hay "
+"varios complementos oficiales disponibles en el repositorio `GodotVR "
 "<https://github.com/GodotVR>`__."
 
-#, fuzzy
 msgid ""
 "`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_: This is the "
 "**official XR plugin** starting with Godot **3.4**. It supports OpenXR, an "
 "open standard for designing and building cross-platform VR and AR software. "
 "Tested with SteamVR, Monada and Oculus OpenXR (desktop and mobile) runtimes."
 msgstr ""
-"`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_ soporta OpenXR, un "
-"estándar abierto para software de RV y AR. Este plugin está en una fase "
-"temprana de desarrollo, sólo soporta Linux y requiere una configuración "
-"extra descrita en el repositorio."
+"`Godot OpenXR <https://github.com/GodotVR/godot_openxr>`_: Este es el "
+"**complemento oficial de XR** que comienza con Godot **3.4**. Admite OpenXR, "
+"un estándar abierto para diseñar y crear software de realidad virtual (VR) y "
+"realidad aumentada (AR) multiplataforma. Ha sido probado con las plataformas "
+"de ejecución de SteamVR, Monada y Oculus OpenXR (tanto en escritorio como en "
+"dispositivos móviles)."
 
 msgid "See :ref:`doc_openxr_introduction`."
 msgstr "Ver :ref:`doc_openxr_introduction`."
 
-#, fuzzy
 msgid ""
 "`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_ "
 "provides :ref:`support for the Meta Quest <doc_developing_for_oculus_quest>`."
 msgstr ""
 "`Godot Oculus Mobile <https://github.com/GodotVR/godot_oculus_mobile>`_ "
-"proporciona soporte para Oculus Go y Oculus Quest. La búsqueda requerirá una "
-"configuración adicional documentada en :ref:"
-"`doc_developing_for_oculus_quest`."
+"ofrece :ref:`soporte para el Oculus Quest <doc_developing_for_oculus_quest>` "
+"de Meta."
 
 msgid ""
 "**Note**: This plugin has been deprecated starting with Godot 3.4. We "
 "recommend migrating to the `Godot OpenXR <https://github.com/GodotVR/"
 "godot_openxr>`_ plugin instead."
 msgstr ""
+"**Nota**: Este complemento ha sido declarado obsoleto a partir de Godot 3.4. "
+"Recomendamos migrar al complemento `Godot OpenXR <https://github.com/GodotVR/"
+"godot_openxr>`_ en su lugar."
 
-#, fuzzy
 msgid ""
 "`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (not to be "
 "confused with OpenXR) supports the OpenVR SDK used by Steam."
 msgstr ""
 "`Godot OpenVR <https://github.com/GodotVR/godot_openvr>`_ (no confundir con "
-"OpenXR) soporta el SDK de OpenVR usado por Steam."
+"OpenXR) es compatible con el SDK OpenVR utilizado por Steam."
 
-#, fuzzy
 msgid ""
 "`Godot Oculus <https://github.com/GodotVR/godot_oculus>`__ supports the "
 "Oculus SDK (desktop headsets only)."
 msgstr ""
-"`Godot Oculus <https://github.com/GodotVR/godot_oculus>`_ soporta el SDK de "
-"Oculus (sólo auriculares de escritorio)."
+"`Godot Oculus <https://github.com/GodotVR/godot_oculus>`__ admite el SDK de "
+"Oculus (solo para cascos de escritorio)."
 
-#, fuzzy
 msgid ""
 "`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ supports "
 "OpenHMD, an open source API and drivers for headsets."
 msgstr ""
-"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ soporta OpenHMD, "
-"una API de código abierto y drivers para auriculares."
+"`Godot OpenHMD <https://github.com/GodotVR/godot_openhmd>`_ admite OpenHMD, "
+"una API y controladores de código abierto para cascos de realidad virtual."
 
 msgid "These plugins can be downloaded from GitHub or the Godot Asset Library."
 msgstr ""
@@ -345,26 +344,23 @@ msgstr ""
 msgid "In addition to the plugins, there are several official demos."
 msgstr "Además de los plugins, hay varias demostraciones oficiales."
 
-#, fuzzy
 msgid "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`__."
-msgstr "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`_."
+msgstr "`Godot Oculus Demo <https://github.com/GodotVR/godot-oculus-demo>`__."
 
-#, fuzzy
 msgid ""
 "`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`__ (the "
 "tutorial for this project is :ref:`doc_vr_starter_tutorial_part_one`)."
 msgstr ""
-"`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`_ (el "
-"tutorial de este proyecto es :ref:`doc_vr_starter_tutorial_part_one`)."
+"`Godot OpenVR FPS <https://github.com/GodotVR/godot_openvr_fps>`__ (el "
+"tutorial para este proyecto se encuentra en :ref:"
+"`doc_vr_starter_tutorial_part_one`)."
 
-#, fuzzy
 msgid ""
 "`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`__, which shows "
 "implementations for VR features such as movement and picking up objects."
 msgstr ""
-"`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`_, que muestra "
-"implementaciones de características de RV como el movimiento y la recogida "
-"de objetos."
+"`Godot XR tools <https://github.com/GodotVR/godot-xr-tools>`__, que muestra "
+"implementaciones de características de VR como movimiento y recoger objetos."
 
 msgid "Other things to consider"
 msgstr "Otras cosas a considerar"

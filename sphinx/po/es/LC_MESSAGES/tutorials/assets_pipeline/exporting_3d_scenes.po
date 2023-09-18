@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Exporting 3D scenes"
-msgstr "Importando escenas 3D"
+msgstr "Exportando escenas 3D"
 
 msgid "Overview"
 msgstr "Sinopsis"
@@ -31,13 +30,22 @@ msgid ""
 "such as a CSG mesh blockout for a level, export it to clean it up in a "
 "program such as Blender, and then bring it back into Godot."
 msgstr ""
+"En Godot es posible exportar escenas 3D como archivos glTF 2.0. Puedes "
+"exportarlos como un archivo binario glTF (``.glb``) o como glTF incrustado "
+"con texturas (``gltf`` + ``.bin`` + texturas). Esto te permite crear escenas "
+"en Godot, como un bloqueo de malla CSG para un nivel, exportarlo para "
+"editarlo en un programa como Blender, y luego volver a importarlo en Godot."
 
 msgid "Only Blender 2.83 and newer can import glTF files exported by Godot."
 msgstr ""
+"Solo Blender 2.83 y versiones más recientes pueden importar archivos glTF "
+"exportados por Godot."
 
 msgid ""
 "To export a scene in the editor go to **Project > Tools > Export GLTF...**"
 msgstr ""
+"Para exportar una escena en el editor, ve a **Proyecto > Herramientas > "
+"Exportar GLTF...**"
 
 msgid "Limitations"
 msgstr "Limitaciones"
@@ -49,16 +57,17 @@ msgid ""
 "No support for exporting particles since their implementation varies across "
 "engines."
 msgstr ""
+"No hay soporte para exportar partículas ya que su implementación varía entre "
+"motores de juego."
 
 msgid "ShaderMaterials cannot be exported."
-msgstr ""
+msgstr "No es posible exportar ShaderMaterials."
 
-#, fuzzy
 msgid "No support for exporting 2D scenes."
-msgstr "Sin soporte para editores de scripts externos."
+msgstr "Sin soporte para exportar escenas 2D."
 
 msgid "Only supported in editor builds (``tools=yes``)."
-msgstr ""
+msgstr "Solo es compatible con compilaciones del editor (``tools=yes``)."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

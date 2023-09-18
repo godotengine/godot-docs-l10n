@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,13 +201,13 @@ msgstr ""
 "создаёт пакет. Существует 3 различных режима экспорта:"
 
 msgid "Export all resources in the project"
-msgstr "Экспортировать все ресурсы проекта"
+msgstr "Экспорт всех ресурсов проекта"
 
 msgid "Export selected scenes (and dependencies)"
-msgstr "Экспортировать выбранные сцены (включая зависимости)"
+msgstr "Экспорт выбранных сцен (включая зависимости)"
 
 msgid "Export selected resources (and dependencies)"
-msgstr "Экспортировать выбранные ресурсы (включая зависимости)"
+msgstr "Экспорт выбранных ресурсов (включая зависимости)"
 
 msgid ""
 "**Export all resources in the project** will export every resource in the "
@@ -226,6 +226,9 @@ msgid ""
 "the exported project. This is done to prevent version control folders like "
 "``.git`` from being included in the exported PCK file."
 msgstr ""
+"Файлы и папки, название которых начинается с точки, никогда не будут "
+"включены в экспортируемый проект. Это сделано для того, чтобы папки контроля "
+"версий типа ``.git`` не были включены в экспортируемый файл PCK."
 
 msgid ""
 "Below the list of resources are two filters that can be setup. The first "
@@ -234,6 +237,11 @@ msgid ""
 "file of a certain type without manually deselecting every one. For example, "
 "``.png`` files."
 msgstr ""
+"Ниже списка ресурсов находятся два фильтра, которые можно настроить. Первый "
+"позволяет экспортировать вместе с проектом файлы, не относящиеся к ресурсам, "
+"такие как ``.txt``,``.json`` и ``.csv``. Второй фильтр может быть "
+"использован для исключения всех файлов определенного типа без необходимости "
+"вручную отменять выбор каждого из них. Например, ``.png`` файлы."
 
 msgid "Exporting from the command line"
 msgstr "Экспорт из командной строки"
@@ -266,30 +274,37 @@ msgid ""
 "The output file extension should match the one used by the Godot export "
 "process:"
 msgstr ""
+"Расширение выходного файла должно соответствовать расширению, используемому "
+"в процессе экспорта Godot:"
 
 #, fuzzy
 msgid "Windows: ``.exe``"
-msgstr "Другой пример:"
+msgstr "Windows: ``.exe``"
 
 msgid ""
 "macOS: ``.zip`` (from all platforms) or ``.dmg`` (only when exporting *from* "
 "macOS). ``.app`` is not supported directly, although the generated ZIP "
 "archive contains an ``.app`` bundle."
 msgstr ""
+"macOS: ``.zip`` (со всех платформ) или ``.dmg`` (только при экспорте *из* "
+"macOS). ``.app`` не поддерживается напрямую, хотя сгенерированный ZIP-архив "
+"содержит пакет ``.app``."
 
 msgid ""
 "Linux: Any extension (including none). ``.x86_64`` is typically used for 64-"
 "bit x86 binaries."
 msgstr ""
+"Linux: Любое расширение (включая отсутствие). ``.x86_64`` обычно "
+"используется для 64-битных двоичных файлов x86."
 
 msgid "HTML5: ``.zip``"
-msgstr ""
+msgstr "HTML5: ``.zip``"
 
 msgid "Android: ``.apk``"
-msgstr ""
+msgstr "Android: ``.apk``"
 
 msgid "iOS: ``.zip``"
-msgstr ""
+msgstr "iOS: ``.zip``"
 
 msgid ""
 "You can also configure it to export *only* the PCK or ZIP file, allowing a "
@@ -316,6 +331,8 @@ msgid ""
 "See :ref:`doc_command_line_tutorial` for more information about using Godot "
 "from the command line."
 msgstr ""
+"Смотрите :ref:`doc_command_line_tutorial` для получения дополнительной "
+"информации об использовании Godot из командной строки."
 
 msgid "PCK versus ZIP pack file formats"
 msgstr "PCK по сравнению с форматами файлов ZIP Pack"

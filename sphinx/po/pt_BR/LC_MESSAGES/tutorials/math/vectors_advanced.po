@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Advanced vector math"
-msgstr ""
+msgstr "Matemática vetorial avançada"
 
 msgid "Planes"
-msgstr ""
+msgstr "Planos"
 
 msgid ""
 "The dot product has another interesting property with unit vectors. Imagine "
@@ -50,7 +50,7 @@ msgid ""
 msgstr ""
 
 msgid "Distance to plane"
-msgstr ""
+msgstr "Distância do plano"
 
 msgid ""
 "Now that it's clear what a plane is, let's go back to the dot product. The "
@@ -135,7 +135,7 @@ msgid ""
 msgstr ""
 
 msgid "Constructing a plane in 2D"
-msgstr ""
+msgstr "Construindo um plano em 2D"
 
 msgid ""
 "Planes clearly don't come out of nowhere, so they must be built. "
@@ -166,9 +166,10 @@ msgid ""
 "Doing the same in 3D is a little more complex and will be explained further "
 "down."
 msgstr ""
+"Fazer o mesmo em 3D é um pouco mais complexo e será explicado mais adiante."
 
 msgid "Some examples of planes"
-msgstr ""
+msgstr "Alguns exemplos de planos"
 
 msgid ""
 "Here is a simple example of what planes are useful for. Imagine you have a "
@@ -176,12 +177,19 @@ msgid ""
 "example, a rectangle, a trapezoid, a triangle, or just any polygon where no "
 "faces bend inwards."
 msgstr ""
+"Aqui está um exemplo simples de como os planos são úteis. Imagine que você "
+"tem um polígono `convexo <https://www.mathsisfun.com/definitions/convex."
+"html>`__ . Por exemplo, um retângulo, um trapézio, um triângulo ou qualquer "
+"polígono onde nenhuma face se dobra para dentro."
 
 msgid ""
 "For every segment of the polygon, we compute the plane that passes by that "
 "segment. Once we have the list of planes, we can do neat things, for example "
 "checking if a point is inside the polygon."
 msgstr ""
+"Para cada segmento do polígono, calculamos o plano que passa por esse "
+"segmento. Assim que tivermos a lista de planos, podemos fazer coisas legais, "
+"por exemplo, verificar se um ponto está dentro do polígono."
 
 msgid ""
 "We go through all planes, if we can find a plane where the distance to the "
@@ -190,7 +198,7 @@ msgid ""
 msgstr ""
 
 msgid "Code should be something like this:"
-msgstr ""
+msgstr "O código deve ser algo assim:"
 
 msgid ""
 "Pretty cool, huh? But this gets much better! With a little more effort, "
@@ -259,9 +267,8 @@ msgstr ""
 msgid "So the final algorithm is something like:"
 msgstr ""
 
-#, fuzzy
 msgid "More information"
-msgstr "Animação por Sprites"
+msgstr "Mais informações"
 
 msgid ""
 "For more information on using vector math in Godot, see the following "
@@ -269,7 +276,7 @@ msgid ""
 msgstr ""
 
 msgid ":ref:`doc_matrices_and_transforms`"
-msgstr ""
+msgstr ":ref:`doc_matrices_and_transforms`"
 
 msgid ""
 "If you would like additional explanation, you should check out 3Blue1Brown's "
@@ -278,4 +285,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Import plugins"
-msgstr ""
+msgstr "Импорт плагинов"
 
 msgid ""
 "This tutorial assumes you already know how to make generic plugins. If in "
@@ -69,6 +69,14 @@ msgid ""
 "plugin is deactivated to clean up the memory and let the editor know the "
 "import plugin isn't available anymore."
 msgstr ""
+"Когда этот плагин активируется, он создаст новый экземпляр плагина импорта "
+"(который мы скоро сделаем) и добавит его в редактор с помощью метода :ref:"
+"`add_import_plugin() <class_EditorPlugin_method_add_import_plugin>`. Мы "
+"храним ссылку на него в члене класса ``import_plugin``, чтобы впоследствии "
+"ссылаться на него при удалении. Метод :ref:`remove_import_plugin() "
+"<class_EditorPlugin_method_remove_import_plugin>` вызывается при деактивации "
+"плагина, чтобы очистить память и сообщить редактору, что плагин импорта "
+"больше не доступен."
 
 msgid ""
 "Note that the import plugin is a reference type, so it doesn't need to be "
@@ -250,6 +258,8 @@ msgid ""
 "One of the :ref:`PropertyHint <enum_@GlobalScope_PropertyHint>` values to "
 "use as hint."
 msgstr ""
+"Одно из значений :ref:`PropertyHint <enum_@GlobalScope_PropertyHint>` для "
+"использования в качестве подсказки."
 
 msgid "``hint_string``"
 msgstr "``hint_string``"
@@ -266,6 +276,8 @@ msgid ""
 "One of the :ref:`PropertyUsageFlags <enum_@GlobalScope_PropertyUsageFlags>` "
 "values to define the usage."
 msgstr ""
+"Одно из значений :ref:`PropertyUsageFlags "
+"<enum_@GlobalScope_PropertyUsageFlags>` для определения использования."
 
 msgid ""
 "The ``name`` and ``default_value`` keys are **mandatory**, the rest are "
@@ -345,6 +357,13 @@ msgid ""
 "<doc_gdscript_printf>`. For this we call the ``get_save_extension`` method "
 "that we defined earlier, so we can be sure that they won't get out of sync."
 msgstr ""
+"Это последняя часть и довольно важная, потому что здесь мы сохраняем "
+"созданный ресурс на диск. Путь к сохраненному файлу генерируется и "
+"сообщается редактором через параметр ``save_path``. Обратите внимание, что "
+"он передается **без** расширения, поэтому мы добавляем его с помощью :ref:"
+"`строкового форматирования <doc_gdscript_printf>`. Для этого мы вызываем "
+"метод ``get_save_extension``, который мы определили ранее, так что мы можем "
+"быть уверены, что они не рассинхронизируются."
 
 msgid ""
 "We also return the result from the :ref:`ResourceSaver.save() "

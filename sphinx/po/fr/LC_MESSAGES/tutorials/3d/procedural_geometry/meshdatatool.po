@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,7 +54,6 @@ msgstr ""
 "MeshDataTool ne peut être utilisé que sur les maillages qui utilisent le "
 "PrimitiveType ``Mesh.PRIMITIVE_TRIANGLES``."
 
-#, fuzzy
 msgid ""
 "We initialize the MeshDataTool from an ArrayMesh by calling "
 "``create_from_surface()``. If there is already data initialized in the "
@@ -62,11 +61,10 @@ msgid ""
 "Alternatively, you can call ``clear()`` yourself before re-using the "
 "MeshDataTool."
 msgstr ""
-"Supposons que le maillage soit stocké dans un ArrayMesh appelé ``mesh``. "
-"Nous initialisons alors le MeshDataTool à partir de ``mesh`` en appelant "
+"Nous initialisons le MeshDataTool à partir d'un ArrayMesh en appelant "
 "``create_from_surface()``. S'il y a déjà des données initialisées dans le "
-"MeshDataTool, appeller ``create_from_surface()`` les effacera pour vous. "
-"Vous pouvez aussi appeler vous-même ``clear()`` avant de réutiliser le "
+"MeshDataTool, appeler ``create_from_surface()`` les effacera pour vous. "
+"Sinon, vous pouvez appeler vous-même ``clear()`` avant de réutiliser le "
 "MeshDataTool."
 
 msgid ""
@@ -74,6 +72,9 @@ msgid ""
 "created. See :ref:`ArrayMesh tutorial <doc_arraymesh>` for an example of "
 "mesh generation."
 msgstr ""
+"Dans les exemples ci-dessous, assumons qu'une ArrayMesh appelée ``mesh`` a "
+"déjà été créée. Voir :ref:`ArrayMesh tutorial <doc_arraymesh>` pour un "
+"exemple de génération de maillage."
 
 #, fuzzy
 msgid ""
@@ -127,23 +128,28 @@ msgstr ""
 "d'utilisation courant consiste à parcourir tous les sommets et à les "
 "transformer d'une manière ou d'une autre :"
 
-#, fuzzy
 msgid ""
 "These modifications are not done in place on the ArrayMesh. If you are "
 "dynamically updating an existing ArrayMesh, first delete the existing "
 "surface before adding a new one using :ref:`commit_to_surface() "
 "<class_meshdatatool_method_commit_to_surface>`:"
 msgstr ""
-"Enfin, ``commit_to_surface()`` ajoute une nouvelle surface à l'ArrayMesh. "
-"Donc si vous mettez à jour dynamiquement un ArrayMesh existant, supprimez "
-"d'abord la surface existante avant d'en ajouter une nouvelle."
+"Ces modifications ne sont pas effectuées sur l'ArrayMesh. Si vous mettez à "
+"jour dynamiquement un ArrayMesh existant, supprimez d'abord la surface "
+"existante avant d'en ajouter une nouvelle en utilisant :ref:"
+"`commit_to_surface() <class_meshdatatool_method_commit_to_surface>` :"
 
+#, fuzzy
 msgid ""
 "Below is a complete example that turns a spherical mesh called ``mesh`` into "
 "a randomly deformed blob complete with updated normals and vertex colors. "
 "See :ref:`ArrayMesh tutorial <doc_arraymesh>` for how to generate the base "
 "mesh."
 msgstr ""
+"Ci-dessous est un exemple complet qui transforme un maillage sphérique "
+"appelé ``mesh`` en un blob aléatoirement déformé avec les normales et les "
+"couleurs du sommet mises à jour. Voir :ref:`ArrayMesh tutorial "
+"<doc_arraymesh>` pour apprendre à générer un maillage de base."
 
 msgid "Translation status"
 msgstr "État de la traduction"

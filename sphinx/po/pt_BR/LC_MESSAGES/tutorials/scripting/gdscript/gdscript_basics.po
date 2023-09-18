@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,7 @@ msgstr ""
 "criação e integração de conteúdo."
 
 msgid "History"
-msgstr "História"
+msgstr "Histórico"
 
 msgid ""
 "Documentation about GDScript's history has been moved to the :ref:"
@@ -68,7 +68,7 @@ msgstr ""
 "é aconselhado que leia este tutorial: :ref:`doc_gdscript_more_efficiently`."
 
 msgid "Language"
-msgstr "Linguagem"
+msgstr "Idioma/Dialeto"
 
 msgid ""
 "In the following, an overview is given to GDScript. Details, such as which "
@@ -423,16 +423,16 @@ msgstr "``*`` ``/`` ``%``"
 msgid "Multiplication / Division / Remainder"
 msgstr "Multiplicação / Divisão / Resto"
 
-#, fuzzy
 msgid ""
 "These operators have the same behavior as C++. Integer division is truncated "
 "rather than returning a fractional number, and the % operator is only "
 "available for ints (\"fmod\" for floats), and is additionally used for "
 "Format Strings"
 msgstr ""
-"Esses operadores têm o mesmo comportamento que o C ++. A divisão inteira é "
-"truncada em vez de retornar um número fracionário, e o operador% está "
-"disponível apenas para ints (\"fmod\" para floats)"
+"Estes operadores têm o mesmo comportamento que a C++. A divisão inteira é "
+"truncada ao invés de devolver um número fracionário, e o operador % só está "
+"disponível para ints (\"fmod\" para flutuadores), e é usado adicionalmente "
+"para formatar Strings"
 
 msgid "``+``"
 msgstr "``+``"
@@ -485,6 +485,10 @@ msgid ""
 "used to iterate though the contents of a string, list, range, dictionary or "
 "node."
 msgstr ""
+"Quando usado com a palavra-chave ``if``, ele verifica se um valor está "
+"dentro de uma string, lista, intervalo, dicionário ou nó. Quando usado com a "
+"palavra-chave ``for``, é usado para iterar o conteúdo de uma string, lista, "
+"intervalo, dicionário ou nó."
 
 msgid "``!`` ``not``"
 msgstr "``!`` ``not``"
@@ -516,9 +520,8 @@ msgstr "``as``"
 msgid "Type casting"
 msgstr "Conversão de tipo"
 
-#, fuzzy
 msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
-msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
 
 msgid "Assignment (lowest priority)"
 msgstr "Atribuição (menor prioridade)"
@@ -707,7 +710,7 @@ msgid "``\\b``"
 msgstr "``\\b``"
 
 msgid "Backspace"
-msgstr "Backspace"
+msgstr "Retroceder"
 
 msgid "``\\f``"
 msgstr "``\\f``"
@@ -1320,10 +1323,16 @@ msgid ""
 "use an ``if`` statement combined with the ``in`` operator to accomplish "
 "this::"
 msgstr ""
+"Você também pode querer verificar se um valor está contido em algo. Você "
+"pode usar uma instrução ``if`` combinada com o operador ``in`` para fazer "
+"isso:"
 
+#, fuzzy
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
-"using ``break`` or continued using ``continue``:"
+"using ``break`` or continued using ``continue`` (i.e. skipping to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
 msgstr ""
 "Laços simples são criados utilizando a sintaxe ``while``. Laços podem ser "
 "interrompidos utilizando ``break`` ou continuados utilizando ``continue``:"
@@ -1511,9 +1520,8 @@ msgstr ""
 "um caminho relativo como um absoluto. Por exemplo, se você nomear um arquivo "
 "de script ``character.gd``::"
 
-#, fuzzy
 msgid "Registering named classes"
-msgstr "Registrar scripts como classes"
+msgstr "Registrando classes nomeadas"
 
 #, fuzzy
 msgid ""
@@ -2123,4 +2131,4 @@ msgstr ""
 "sera pausado."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

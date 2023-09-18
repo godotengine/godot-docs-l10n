@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -165,9 +165,9 @@ msgid ""
 "adding the ``direction`` to it, we get a position to look at that's one "
 "meter away from the *Player*."
 msgstr ""
-"In 3D ist die Eigenschaft die die Position einer Node enthält, "
-"``translation``. Wenn man ``direction`` hinzufügt, erhält man eine Position "
-"zum Anschauen die einen Meter vom Spieler entfernt ist."
+"In 3D ist die Eigenschaft die Position einer Node enthält, ``translation``. "
+"Wenn man ``direction`` hinzufügt, erhält man eine Position zum Anschauen die "
+"einen Meter vom Spieler entfernt ist."
 
 msgid ""
 "Then, we update the velocity. We have to calculate the ground velocity and "
@@ -388,9 +388,10 @@ msgstr "|image7|"
 msgid "image7"
 msgstr "|image7|"
 
+#, fuzzy
 msgid ""
 "Here's where the magic happens. Select the *CameraPivot* and rotate it "
-"``45`` degrees around the X axis (using the red circle). You'll see the "
+"``-45`` degrees around the X axis (using the red circle). You'll see the "
 "camera move as if it was attached to a crane."
 msgstr ""
 "Jetzt kommt der Clou. Wählen Sie den *CameraPivot* und drehen Sie ihn um "

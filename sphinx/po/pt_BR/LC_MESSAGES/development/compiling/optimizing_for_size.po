@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,11 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Optimizing a build for size"
-msgstr ""
+msgstr "Otimizando uma compilação para o tamanho"
 
-#, fuzzy
 msgid "Rationale"
-msgstr "Rotation"
+msgstr "Fundamentos"
 
 msgid ""
 "Sometimes, it is desired to optimize a build for size rather than speed. "
@@ -49,7 +48,7 @@ msgid "**Space savings:** Very high"
 msgstr ""
 
 msgid "**Difficulty:** Easy"
-msgstr ""
+msgstr "**Dificuldade:** Fácil"
 
 msgid "**Performed in official builds:** Yes"
 msgstr ""
@@ -81,7 +80,7 @@ msgid "Optimizing for size instead of speed"
 msgstr ""
 
 msgid "**Space savings:** High"
-msgstr ""
+msgstr "**Economia de espaço:** Alta"
 
 msgid "**Performed in official builds:** Yes, but only for HTML5"
 msgstr ""
@@ -120,10 +119,10 @@ msgid ""
 msgstr ""
 
 msgid "Disabling 3D"
-msgstr ""
+msgstr "Desativando 3D"
 
 msgid "**Space savings:** Moderate"
-msgstr ""
+msgstr "**Economia de espaço:** Moderada"
 
 msgid "**Performed in official builds:** No"
 msgstr ""
@@ -139,9 +138,8 @@ msgid ""
 "reduced by about 15%."
 msgstr ""
 
-#, fuzzy
 msgid "Disabling advanced GUI objects"
-msgstr "Desativando objetos específicos"
+msgstr "Desabilitando objetos GUI avançados"
 
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
@@ -151,88 +149,74 @@ msgstr ""
 msgid "This is everything that will be disabled:"
 msgstr ""
 
-#, fuzzy
 msgid "FileDialog"
-msgstr "Caixa de Diálogo de Arquivo"
+msgstr "FileDialog"
 
 msgid "PopupMenu"
-msgstr ""
+msgstr "PopupMenu"
 
-#, fuzzy
 msgid "Tree"
-msgstr "SceneTree"
+msgstr "Árvore"
 
-#, fuzzy
 msgid "TextEdit"
-msgstr "Editor de texto"
+msgstr "TextEdit"
 
 msgid "TreeItem"
-msgstr ""
+msgstr "TreeItem"
 
-#, fuzzy
 msgid "OptionButton"
-msgstr "Otimização"
+msgstr "OptionButton (Botão de Opção)"
 
 msgid "SpinBox"
-msgstr ""
+msgstr "SpinBox"
 
-#, fuzzy
 msgid "ColorPicker"
-msgstr "Cor"
+msgstr "ColorPicker (Seletor de Cores)"
 
 msgid "ColorPickerButton"
-msgstr ""
+msgstr "ColorPickerButton"
 
-#, fuzzy
 msgid "RichTextLabel"
-msgstr "ScoreLabel"
+msgstr "RichTextLabel"
 
 msgid "RichTextEffect"
-msgstr ""
+msgstr "RichTextEffect"
 
-#, fuzzy
 msgid "CharFXTransform"
-msgstr "Limpar Transformação"
+msgstr "CharFXTransform"
 
 msgid "PopupDialog"
-msgstr ""
+msgstr "PopupDialog"
 
-#, fuzzy
 msgid "WindowDialog"
-msgstr "Windows"
+msgstr "WindowDialog"
 
-#, fuzzy
 msgid "AcceptDialog"
-msgstr "Caixa de Diálogo de Arquivo"
+msgstr "AcceptDialog"
 
-#, fuzzy
 msgid "ConfirmationDialog"
-msgstr "Considerações"
+msgstr "ConfirmationDialog (Caixa de diálogo de confirmação)"
 
-#, fuzzy
 msgid "MarginContainer"
-msgstr "Criando nós"
+msgstr "MarginContainer (Contêiner de margem)"
 
-#, fuzzy
 msgid "ViewportContainer"
-msgstr "Viewports"
+msgstr "ViewportContainer"
 
-#, fuzzy
 msgid "SplitContainer"
-msgstr "Viewports"
+msgstr "SplitContainer (Contêiner de divisão)"
 
-#, fuzzy
 msgid "HSplitContainer"
-msgstr "Viewports"
+msgstr "HSplitContainer (Contêiner de divisão horizontal)"
 
 msgid "GraphNode"
-msgstr ""
+msgstr "GraphNode"
 
 msgid "GraphEdit"
-msgstr ""
+msgstr "GraphEdit"
 
 msgid "Disabling unwanted modules"
-msgstr ""
+msgstr "Desativando módulos indesejados"
 
 msgid "**Space savings:** Very low to moderate depending on modules"
 msgstr ""
@@ -268,4 +252,4 @@ msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_overriding_build_options`."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

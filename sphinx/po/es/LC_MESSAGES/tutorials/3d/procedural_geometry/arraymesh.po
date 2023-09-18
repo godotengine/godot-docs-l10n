@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,13 +20,12 @@ msgstr ""
 msgid "Using the ArrayMesh"
 msgstr "Usando ArrayMesh"
 
-#, fuzzy
 msgid ""
 "This tutorial will present the basics of using an :ref:`ArrayMesh "
 "<class_arraymesh>`."
 msgstr ""
 "Este tutorial presentará los fundamentos del uso de un :ref:`ArrayMesh "
-"<class_arraymesh>`"
+"<class_arraymesh>`."
 
 msgid ""
 "To do so, we will use the function :ref:`add_surface_from_arrays() "
@@ -44,8 +43,12 @@ msgid ""
 "i.e. whether they represent triangles, lines, points, etc. See :ref:`Mesh."
 "PrimitiveType <enum_Mesh_PrimitiveType>` for the options available."
 msgstr ""
+"El primer parámetro es el ``PrimitiveType``, un concepto de OpenGL que "
+"instruye a la GPU cómo organizar el primitivo basado en los vértices "
+"proporcionados, es decir, si representan triángulos, líneas, puntos, etc. "
+"Consulta :ref:`Mesh.PrimitiveType <enum_Mesh_PrimitiveType>` para ver las "
+"opciones disponibles."
 
-#, fuzzy
 msgid ""
 "The second parameter, ``arrays``, is the actual Array that stores the mesh "
 "information. The array is a normal Godot array that is constructed with "
@@ -56,140 +59,137 @@ msgstr ""
 "El segundo es el Array actual que almacena la información del mesh. El array "
 "es un array normal de Godot que se construye con los corchetes vacíos "
 "``[]``. Almacena un ``Pool**Array`` (por ejemplo, PoolVector3Array, "
-"PoolIntArray, etc.) para cada tipo de información."
+"PoolIntArray, etc.) para cada tipo de información que se usará para contruir "
+"la superficie."
 
 msgid ""
 "The possible elements of ``arrays`` are listed below, together with the "
 "position they must have within ``arrays``. See also :ref:`Mesh.ArrayType "
 "<enum_Mesh_ArrayType>`."
 msgstr ""
+"Los posibles elementos de \"arrays\" se enumeran a continuación, junto con "
+"la posición que deben tener dentro de \"arrays\". Consulta también :ref:"
+"`Mesh.ArrayType <enum_Mesh_ArrayType>`."
 
 msgid "Index"
 msgstr "Index"
 
 msgid "Mesh.ArrayType Enum"
-msgstr ""
+msgstr "Mesh.ArrayType Enum"
 
-#, fuzzy
 msgid "Array type"
-msgstr "Patrón de matriz"
+msgstr "Tipo de array"
 
 msgid "0"
-msgstr ""
+msgstr "0"
 
 msgid "``ARRAY_VERTEX``"
-msgstr ""
+msgstr "``ARRAY_VERTEX``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>` or :ref:`PoolVector2Array "
 "<class_PoolVector2Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`: Un array de objetos :ref:"
-"`Vector2 <class_Vector2>`."
+":ref:`PoolVector3Array <clase_PoolVector3Array>` o :ref:`PoolVector2Array "
+"<clase_PoolVector2Array>`"
 
 msgid "1"
-msgstr ""
+msgstr "1"
 
 msgid "``ARRAY_NORMAL``"
-msgstr ""
+msgstr "``ARRAY_NORMAL``"
 
-#, fuzzy
 msgid ":ref:`PoolVector3Array <class_PoolVector3Array>`"
-msgstr ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`PoolVector3Array <class_PoolVector3Array>`"
 
 msgid "2"
 msgstr "2"
 
 msgid "``ARRAY_TANGENT``"
-msgstr ""
+msgstr "``ARRAY_TANGENT``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. First 3 "
 "floats determine the tangent, and the last the binormal direction as -1 or 1."
 msgstr ""
-"``ARRAY_TANGENT`` = 2 | PoolRealArray de grupos de 4 floats. Los primeros 3 "
-"floats determinan la tangente, y el último la dirección binormal como -1 o 1."
+"Un :ref:`PoolRealArray <class_PoolRealArray>` de grupos de 4 números en coma "
+"flotante. Los primeros 3 números determinan la tangente y el último número "
+"indica la dirección de la binormal como -1 o 1."
 
 msgid "3"
 msgstr "3"
 
 msgid "``ARRAY_COLOR``"
-msgstr ""
+msgstr "``ARRAY_COLOR``"
 
-#, fuzzy
 msgid ":ref:`PoolColorArray <class_PoolColorArray>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`PoolColorArray <class_PoolColorArray>`"
 
 msgid "4"
 msgstr "4"
 
 msgid "``ARRAY_TEX_UV``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>` or :ref:`PoolVector3Array "
 "<class_PoolVector3Array>`"
 msgstr ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`: Un array de objetos :ref:"
-"`Vector2 <class_Vector2>`."
+":ref:`PoolVector2Array <class_PoolVector2Array>` o :ref:`PoolVector3Array "
+"<class_PoolVector3Array>`"
 
 msgid "5"
 msgstr "5"
 
 msgid "``ARRAY_TEX_UV2``"
-msgstr ""
+msgstr "``ARRAY_TEX_UV2``"
 
 msgid "6"
 msgstr "6"
 
 msgid "``ARRAY_BONES``"
-msgstr ""
+msgstr "``ARRAY_BONES``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats or :ref:"
 "`PoolIntArray <class_PoolIntArray>` of groups of 4 ints. Each group lists "
 "indexes of 4 bones that affects a given vertex."
 msgstr ""
-"``ARRAY_BONES`` = 6 | PoolRealArray de grupos de 4 floats o PoolIntArray de "
-"grupos de 4 ints"
+":ref:`PoolRealArray <clase_PoolRealArray>` de grupos de 4 floats o :ref:"
+"`PoolIntArray <clase_PoolIntArray>` de grupos de 4 ints. Cada grupo lista "
+"los índices de 4 huesos que afectan a un vértice dado."
 
 msgid "7"
 msgstr "7"
 
 msgid "``ARRAY_WEIGHTS``"
-msgstr ""
+msgstr "``ARRAY_WEIGHTS``"
 
-#, fuzzy
 msgid ""
 ":ref:`PoolRealArray <class_PoolRealArray>` of groups of 4 floats. Each float "
 "lists the amount of weight an determined bone on ``ARRAY_BONES`` has on a "
 "given vertex."
 msgstr ""
-"``ARRAY_TANGENT`` = 2 | PoolRealArray de grupos de 4 floats. Los primeros 3 "
-"floats determinan la tangente, y el último la dirección binormal como -1 o 1."
+"Un :ref:`PoolRealArray <class_PoolRealArray>` de grupos de 4 números en coma "
+"flotante. Cada número representa el peso que un hueso determinado en "
+"\"ARRAY_BONES\" tiene en un vértice dado."
 
 msgid "8"
 msgstr "8"
 
-#, fuzzy
 msgid "``ARRAY_INDEX``"
-msgstr "``ARRAY_INDEX`` = 8 | PoolIntArray"
+msgstr "``ARRAY_INDEX``"
 
-#, fuzzy
 msgid ":ref:`PoolIntArray <class_PoolIntArray>`"
-msgstr ":ref:`Array <class_Array>`"
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`"
 
-#, fuzzy
 msgid ""
 "The array of vertices (at index 0) is always required. The index array is "
 "optional and will only be used if included. We won't use it in this tutorial."
 msgstr ""
-"El Array de vértices siempre es requerido. Todos los demás son opcionales y "
-"sólo se usarán si se incluyen."
+"El arreglo de vértices (en el índice 0) siempre es requerido. El arreglo de "
+"índices es opcional y solo se utilizará si se incluye. En este tutorial no "
+"lo utilizaremos."
 
 msgid ""
 "All the other arrays carry information about the vertices. They are also "
@@ -199,29 +199,35 @@ msgid ""
 "g. ``ARRAY_TANGENT``) use four entries to describe a single vertex. These "
 "must be exactly four times larger than the vertex array."
 msgstr ""
+"Todos los demás arreglos contienen información sobre los vértices. También "
+"son opcionales y solo se utilizarán si se incluyen. Algunos de estos "
+"arreglos (por ejemplo, ``ARRAY_COLOR``) utilizan una entrada por vértice "
+"para proporcionar información adicional sobre los vértices. Deben tener el "
+"mismo tamaño que el arreglo de vértices. Otros arreglos (por ejemplo, "
+"``ARRAY_TANGENT``) utilizan cuatro entradas para describir un solo vértice. "
+"Estos deben ser exactamente cuatro veces más grandes que el arreglo de "
+"vértices."
 
-#, fuzzy
 msgid ""
 "For normal usage, the last two parameters in :ref:`add_surface_from_arrays() "
 "<class_arraymesh_method_add_surface_from_arrays>` are typically left empty."
 msgstr ""
-"Para ello, utilizaremos la función :ref:`add_surface_from_arrays() "
-"<class_ArrayMesh_method_add_surface_from_arrays>`, que toma hasta cuatro "
-"parámetros. Los dos primeros son obligatorios, mientras que los dos segundos "
-"son opcionales."
+"Para un uso normal, los últimos dos parámetros en :ref:"
+"`add_surface_from_arrays() <class_arraymesh_method_add_surface_from_arrays>` "
+"generalmente se dejan vacíos."
 
 msgid "ArrayMesh"
 msgstr "ArrayMesh"
 
-#, fuzzy
 msgid ""
 "In the editor, create a :ref:`MeshInstance <class_meshinstance>` and add an :"
 "ref:`ArrayMesh <class_arraymesh>` to it in the Inspector. Normally, adding "
 "an ArrayMesh in the editor is not useful, but in this case it allows us to "
 "access the ArrayMesh from code without creating one."
 msgstr ""
-"Añade un :ref:`ArrayMesh <class_arraymesh>` a un MeshInstance. Normalmente, "
-"añadir un ArrayMesh en el editor no es útil, pero en este caso permite como "
+"En el editor, crea un :ref:`MeshInstance <class_meshinstance>` y agrega un :"
+"ref:`ArrayMesh <class_arraymesh>` a través del Inspector. Normalmente, "
+"agregar un ArrayMesh en el editor no es útil, pero en este caso nos permite "
 "acceder al ArrayMesh desde el código sin crear uno."
 
 msgid "Next, add a script to the MeshInstance."
@@ -235,29 +241,40 @@ msgid ""
 "hold all the arrays of data that the surface needs. Godot will expect it to "
 "be of size ``Mesh.ARRAY_MAX``, so resize it accordingly."
 msgstr ""
+"Este será el arreglo en el que guardaremos la información de la superficie; "
+"contendrá todos los arrays de datos que la superficie necesita. Godot espera "
+"que tenga un tamaño de ``Mesh.ARRAY_MAX``, así que redimensiona el arreglo "
+"en consecuencia."
 
 msgid "Next create the arrays for each data type you will use."
 msgstr ""
+"A continuación, crea los arreglos para cada tipo de datos que utilizarás."
 
 msgid ""
 "Once you have filled your data arrays with your geometry you can create a "
 "mesh by adding each array to ``surface_array`` and then committing to the "
 "mesh."
 msgstr ""
+"Una vez que hayas llenado tus arreglos de datos con tu geometría, puedes "
+"crear una malla agregando cada arreglo a ``surface_array`` y luego "
+"comprometiéndolo a la malla."
 
 msgid ""
 "In this example, we used ``Mesh.PRIMITIVE_TRIANGLES``, but you can use any "
 "primitive type available from mesh."
 msgstr ""
+"En este ejemplo, utilizamos ``Mesh.PRIMITIVE_TRIANGLES``, pero puedes "
+"utilizar cualquier tipo de primitiva disponible en la malla."
 
-#, fuzzy
 msgid "Put together, the full code looks like:"
-msgstr "Y ahora el planeta se ve como:"
+msgstr "A continuación se muestra el código completo:"
 
 msgid ""
 "The code that goes in the middle can be whatever you want. Below we will "
 "present some example code for generating a sphere."
 msgstr ""
+"El código que se coloca en el medio puede ser el que desees. A continuación, "
+"presentaremos un ejemplo de código para generar una esfera."
 
 msgid "Generating geometry"
 msgstr "Generando geometría"
@@ -270,15 +287,26 @@ msgid ""
 "are having trouble understanding it or want to learn more about procedural "
 "geometry in general, you can use any tutorial that you find online."
 msgstr ""
+"Aquí tienes un ejemplo de código para generar una esfera. Aunque el código "
+"está presentado en GDScript, no hay nada específico de Godot en el enfoque "
+"para generarlo. Esta implementación no tiene nada en particular que ver con "
+"ArrayMeshes y es simplemente un enfoque genérico para generar una esfera. Si "
+"tienes dificultades para entenderlo o quieres aprender más sobre geometría "
+"procedural en general, puedes utilizar cualquier tutorial que encuentres en "
+"línea."
 
 msgid "Saving"
-msgstr ""
+msgstr "Guardando"
 
 msgid ""
 "Finally, we can use the :ref:`ResourceSaver <class_resourcesaver>` class to "
 "save the ArrayMesh. This is useful when you want to generate a mesh and then "
 "use it later without having to re-generate it."
 msgstr ""
+"Finalmente, podemos utilizar la clase :ref:`ResourceSaver "
+"<class_resourcesaver>` para guardar la ArrayMesh. Esto es útil cuando "
+"queremos generar una malla y luego utilizarla posteriormente sin tener que "
+"volver a generarla."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,6 @@ msgstr ""
 "Ce tutoriel explique la plupart des paramètres présents dans "
 "``SpatialMaterial``."
 
-#, fuzzy
 msgid ""
 "There are 4 ways to add a ``SpatialMaterial`` to an object. It can be added "
 "in the *Material* property of the mesh. It can be added in the *Material* "
@@ -48,11 +47,11 @@ msgid ""
 "*Material Override* property of the node using the mesh, and the *Material "
 "Overlay*."
 msgstr ""
-"Il existe trois façons d'ajouter un ``SpatialMaterial`` à un objet. Il peut "
+"Il existe quatre façons d'ajouter un ``SpatialMaterial`` à un objet. Il peut "
 "être ajouté dans la propriété *Material* du maillage. Il peut être ajouté "
 "dans la propriété *Material* du nœud qui utilise le maillage (tel qu'un nœud "
-"MeshInstance), ou dans la propriété *Material Override* du nœud qui utilise "
-"le maillage."
+"MeshInstance), dans la propriété *Material Override* du nœud qui utilise le "
+"maillage et dans la propriété *Material Overlay*."
 
 msgid ""
 "If you add a material to the mesh itself, every time that mesh is used it "
@@ -76,6 +75,9 @@ msgid ""
 "one being used by the mesh. As an example, this can be used to put a "
 "transparent shield effect on a mesh."
 msgstr ""
+"La propriété *Material Overlay* va rendre un matériau **par-dessus** le "
+"matériau actuellement utilisé par le maillage. Par exemple, cela peut être "
+"utilisé pour appliquer un effet de bouclier transparent sur le maillage."
 
 msgid "Flags"
 msgstr "Paramètres"
@@ -891,6 +893,44 @@ msgstr ""
 "tente de récupérer les informations derrière l'objet rendu. Cela permet de "
 "déformer la transparence d'une manière similaire à la réfraction dans la vie "
 "réelle."
+
+msgid ""
+"Remember to use a transparent albedo texture (or reduce the albedo color's "
+"alpha channel) to make refraction visible, as refraction relies on "
+"transparency to have a visible effect."
+msgstr ""
+
+msgid ""
+"A normal map can optionally be specified in the **Refraction Texture** "
+"property to allow distorting the refraction's direction on a per-pixel basis."
+msgstr ""
+
+msgid ""
+"Refraction is implemented as a screen-space effect and forces the material "
+"to be transparent. This makes the effect relatively fast, but this results "
+"in some limitations:"
+msgstr ""
+
+msgid ""
+":ref:`Transparency sorting "
+"<doc_3d_rendering_limitations_transparency_sorting>` issues may occur."
+msgstr ""
+
+msgid ""
+"The refractive material cannot refract onto itself, or onto other "
+"transparent materials. A refractive material behind another transparent "
+"material will be invisible."
+msgstr ""
+
+msgid ""
+"Off-screen objects cannot appear in the refraction. This is most noticeable "
+"with high refraction strength values."
+msgstr ""
+
+msgid ""
+"Opaque materials in front of the refractive material will appear to have "
+"\"refracted\" edges, even though they shouldn't."
+msgstr ""
 
 msgid "Detail"
 msgstr "Détail"

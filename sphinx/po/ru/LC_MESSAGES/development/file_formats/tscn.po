@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,6 @@ msgstr ""
 "импорта файлы TSCN компилируются в двоичные файлы ``.scn``, хранящиеся в "
 "папке .import. Это уменьшает размер данных и ускоряет загрузку."
 
-#, fuzzy
 msgid ""
 "The ESCN (exported scene) file format is identical to the TSCN file format, "
 "but is used to indicate to Godot that the file has been exported from "
@@ -44,7 +43,10 @@ msgid ""
 msgstr ""
 "Формат файла ESCN (экспортированная сцена) идентичен формату файла TSCN, но "
 "используется для указания Godot, что файл был экспортирован из другой "
-"программы и не должен редактироваться пользователем внутри Godot."
+"программы и не должен редактироваться пользователем внутри Godot. В отличие "
+"от файлов SCN и TSCN, при импорте файлы ESCN компилируются в двоичные файлы "
+"SCN, хранящиеся в папке ``.import/``. Это уменьшает размер данных и ускоряет "
+"загрузку, так как двоичные форматы загружаются быстрее, чем текстовые."
 
 msgid ""
 "For those looking for a complete description, the parsing is handled in the "
@@ -78,7 +80,6 @@ msgstr "Узлы"
 msgid "Connections"
 msgstr "Соединения"
 
-#, fuzzy
 msgid ""
 "The file descriptor looks like ``[gd_scene load_steps=3 format=2]`` and "
 "should be the first entry in the file. The ``load_steps`` parameter is equal "
@@ -88,11 +89,12 @@ msgid ""
 "but this will affect loading bars and any other piece of code relying on "
 "that value."
 msgstr ""
-"Дескриптор файла выглядит следующим образом ``[gd_scene load_steps=1 "
-"format=2]`` и должен располагаться в начале файла. Дескриптор имеет "
-"несколько параметров. Первый параметр - ``load_steps``. Теоретически, он "
-"должен отображать количество ресурсов внутри файла, однако, на практике, он "
-"ни на что не влияет."
+"Дескриптор файла имеет вид ``[gd_scene load_steps=3 format=2]`` и должен "
+"быть первой записью в файле. Параметр ``load_steps`` равен общему количеству "
+"ресурсов (внутренних и внешних) плюс один (для самого файла). Если файл не "
+"имеет ресурсов, то ``load_steps`` опускается. Движок все равно загрузит файл "
+"правильно, если ``load_steps`` неверно, но это повлияет на загрузочные "
+"полосы и любой другой код, полагающийся на это значение."
 
 msgid ""
 "These sections should appear in order, but it can be hard to distinguish "
@@ -168,6 +170,8 @@ msgid ""
 "``index`` (sets the order of appearance in the tree. If absent, inherited "
 "nodes will take precedence over plain ones)"
 msgstr ""
+"``index`` (задает порядок появления в дереве. Если отсутствует, наследуемые "
+"узлы будут иметь приоритет над простыми)"
 
 #, fuzzy
 msgid "``groups``"
@@ -200,7 +204,7 @@ msgstr ""
 "сохранить файл с этим узлом. Примерами узлов являются:"
 
 msgid "NodePath"
-msgstr "NodePath"
+msgstr "NоdePath"
 
 msgid ""
 "A tree structure is not enough to represent the whole scene. Godot uses a "
@@ -289,7 +293,7 @@ msgstr ""
 "Пример одного MeshInstance, родительского по отношению к кости в Skeleton:"
 
 msgid "AnimationPlayer"
-msgstr "AnimationPlayer"
+msgstr "АnimationPlayer"
 
 msgid ""
 "AnimationPlayer works as an animation library. It stores animations listed "
@@ -398,7 +402,7 @@ msgstr ""
 "найти, только просмотрев исходный текст Godot."
 
 msgid "ArrayMesh"
-msgstr "ArrayMesh"
+msgstr "ArrayMеsh"
 
 msgid ""
 "ArrayMesh consists of several surfaces, each in the format "

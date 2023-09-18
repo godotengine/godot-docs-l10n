@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "C# API differences to GDScript"
-msgstr "Diferenças da API para o GDScript"
+msgstr "Diferenças da API C# para GDScript"
 
 msgid "This is a (incomplete) list of API differences between C# and GDScript."
 msgstr ""
@@ -58,9 +57,8 @@ msgstr ""
 "As constantes globais foram movidas para seus próprios enums. Por exemplo, "
 "constantes ``ERR_*`` foram movidas para o enum ``Error``."
 
-#, fuzzy
 msgid "Special cases:"
-msgstr "Utilize o tempo pretérito:"
+msgstr "Casos especiais:"
 
 msgid "GDScript"
 msgstr "GDScript"
@@ -86,9 +84,8 @@ msgstr "``OP_*``"
 msgid "``Variant.Operator`` enum"
 msgstr "``Variant.Operator`` enum"
 
-#, fuzzy
 msgid "Math functions"
-msgstr "Funções estáticas"
+msgstr "Funções matemáticas"
 
 msgid ""
 "Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
@@ -100,29 +97,25 @@ msgstr ""
 "``Atan`` and ``Atan2``. A constante ``PI`` pode ser encontrada como ``Mathf."
 "Pi``."
 
-#, fuzzy
 msgid "Random functions"
-msgstr "Funções estáticas"
+msgstr "Funções aleatórias"
 
-#, fuzzy
 msgid ""
 "Random global functions, like ``rand_range`` and ``rand_seed``, are located "
 "under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
 msgstr ""
-"Funções aleatórias como ``rand_range`` e ``rand_seed`` estão localizadas sob "
-"``Random``, então use ``Random.RandRange`` ao invés de ``rand_range``."
+"Funções globais aleatórias, como ``rand_range`` e ``rand_seed``, estão "
+"localizadas em ``GD``. Exemplo: ``GD.RandRange`` e ``GD.RandSeed``."
 
-#, fuzzy
 msgid "Other functions"
-msgstr "Funções estáticas"
+msgstr "Outras funções"
 
-#, fuzzy
 msgid ""
 "Many other global functions like ``print`` and ``var2str`` are located under "
 "``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
 msgstr ""
-"Funções globais como ``print``, ``var2str`` e ``weakref`` estão localizadas "
-"sob ``GD`` em C#."
+"Muitas outras funções globais como ``print`` e ``var2str`` estão localizadas "
+"em ``GD``. Exemplo: ``GD.Print`` e ``GD.Var2Str``."
 
 msgid "Exceptions:"
 msgstr "Exceções:"
@@ -171,15 +164,14 @@ msgstr ""
 msgid "Signal keyword"
 msgstr "A palavra-chave Signal"
 
-#, fuzzy
 msgid ""
 "Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
 "name signature will be used to define the signal."
 msgstr ""
-"Use o atributo ``[Signal]`` em vez da palavra-chave ``signal`` do GDScript. "
-"Este atributo deve ser usado em um 'delegate', cuja assinatura de nome será "
-"usada para definir o sinal."
+"Utilize o atributo ``[Signal]`` para declarar um sinal em vez da palavra-"
+"chave GDScript ``signal``. Este atributo deve ser utilizado em um "
+"`delegate', cuja assinatura de nome será utilizada para definir o sinal."
 
 msgid "See also: :ref:`doc_c_sharp_signals`."
 msgstr "Veja também: :ref:`doc_c_sharp_signals`."
@@ -238,11 +230,9 @@ msgstr ""
 "Use ``System.String`` (``string``). Quase todos os métodos Godot String são "
 "fornecidos pela classe ``StringExtensions`` como métodos de extensão."
 
-#, fuzzy
 msgid "There are a few differences, though:"
-msgstr "Existem algumas diferenças:"
+msgstr "Existem algumas diferenças, no entanto:"
 
-#, fuzzy
 msgid ""
 "``erase``: Strings are immutable in C#, so we cannot modify the string "
 "passed to the extension method. For this reason, ``Erase`` was added as an "
@@ -254,17 +244,15 @@ msgstr ""
 "adicionado como um método de extensão de ``StringBuilder`` em vez de string. "
 "Alternativamente, você pode usar o ``string.Remove``."
 
-#, fuzzy
 msgid ""
 "``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
 "which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
 "specify case sensitivity:"
 msgstr ""
-"``IsSubsequenceOf``/ ``IsSubsequenceOfi``: Um método adicional é fornecido, "
-"que é uma sobrecarga de ``IsSubsequenceOf``, permitindo você especificar "
-"explicitamente a distinção entre maiúsculas e minúsculas:"
+"``IsSubsequenceOf``/``IsSubsequenceOfi``: É fornecido um método adicional, "
+"que é uma sobrecarga de ``IsSubsequenceOf``, permitindo que você especifique "
+"explicitamente a sensibilidade ao caso:"
 
-#, fuzzy
 msgid ""
 "``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
 "``Match`` and ``Matchn``, which allows you to explicitly specify case "
@@ -275,7 +263,7 @@ msgstr ""
 "distinção entre maiúsculas e minúsculas:"
 
 msgid "Basis"
-msgstr "Basis"
+msgstr "Base"
 
 #, fuzzy
 msgid ""
@@ -287,19 +275,15 @@ msgstr ""
 "Basis ()`` inicializa todos os membros primitivos com seu valor padrão. Use "
 "``Basis.Identity`` para o equivalente a ``Basis ()`` em GDScript e C++."
 
-#, fuzzy
 msgid "The following method was converted to a property with a different name:"
 msgstr ""
-"Os seguintes métodos foram convertidos em propriedades com seus respectivos "
-"nomes alterados:"
+"O método a seguir foi convertido em uma propriedade com um nome diferente:"
 
-#, fuzzy
 msgid "``get_scale()``"
-msgstr "get_scale()"
+msgstr "``get_scale()``"
 
-#, fuzzy
 msgid "``Scale``"
-msgstr "Scale"
+msgstr "``Scale``"
 
 msgid "Transform2D"
 msgstr "Transform2D"
@@ -323,43 +307,37 @@ msgstr ""
 "Os seguintes métodos foram convertidos em propriedades com seus respectivos "
 "nomes alterados:"
 
-#, fuzzy
 msgid "``get_rotation()``"
-msgstr "get_rotation()"
+msgstr "``get_rotation()``"
 
-#, fuzzy
 msgid "``Rotation``"
-msgstr "Rotation"
+msgstr "``Rotation``"
 
 msgid "Plane"
 msgstr "Plano"
 
-#, fuzzy
 msgid ""
 "The following method was converted to a property with a *slightly* different "
 "name:"
 msgstr ""
-"Os seguintes métodos foram convertidos em propriedades com seus respectivos "
-"nomes alterados:"
+"O método a seguir foi convertido em uma propriedade com um nome "
+"*ligeiramente* diferente:"
 
-#, fuzzy
 msgid "``center()``"
-msgstr "center()"
+msgstr "``center()``"
 
-#, fuzzy
 msgid "``Center``"
-msgstr "Center"
+msgstr "``Center``"
 
 msgid "Rect2"
 msgstr "Rect2"
 
-#, fuzzy
 msgid ""
 "The following field was converted to a property with a *slightly* different "
 "name:"
 msgstr ""
-"Os seguintes campos foram convertidos em propriedades com seus respectivos "
-"nomes alterados:"
+"O campo a seguir foi convertido em uma propriedade com um nome "
+"*ligeiramente* diferente:"
 
 msgid "``end``"
 msgstr "``end``"
@@ -367,13 +345,11 @@ msgstr "``end``"
 msgid "``End``"
 msgstr "``End``"
 
-#, fuzzy
 msgid "``get_area()``"
-msgstr "get_area()"
+msgstr "``get_area()``"
 
-#, fuzzy
 msgid "``Area``"
-msgstr "Area"
+msgstr "``Area``"
 
 msgid "Quat"
 msgstr "Quat"
@@ -389,19 +365,17 @@ msgstr ""
 "favor use ``Quat.Identity`` para o equivalente a ``Quat()`` em GDScript e C+"
 "+."
 
-#, fuzzy
 msgid ""
 "The following methods were converted to a property with a different name:"
 msgstr ""
-"Os seguintes métodos foram convertidos em propriedades com seus respectivos "
-"nomes alterados:"
+"Os seguintes métodos foram convertidos para uma propriedade com um nome "
+"diferente:"
 
 msgid "``length()``"
 msgstr "``length()``"
 
-#, fuzzy
 msgid "``Length``"
-msgstr "Caminho do Recurso"
+msgstr "``Length``"
 
 msgid "``length_squared()``"
 msgstr "``length_squared()``"
@@ -412,46 +386,36 @@ msgstr "``LengthSquared``"
 msgid "Array"
 msgstr "Vetor"
 
-#, fuzzy
 msgid ""
 "*This is temporary. PoolArrays will need their own types to be used the way "
 "they are meant to.*"
 msgstr ""
-"*Isto é temporário. Array é ref-counted, então ele precisará do seu próprio "
-"tipo que envolve o lado nativo. O PoolArrays também precisará do seu próprio "
-"tipo para ser usado da maneira que deve.*"
+"*Isso é temporário. Os PoolArrays precisarão que seus próprios tipos sejam "
+"usados da maneira que devem ser.*"
 
-#, fuzzy
 msgid "``Array``"
-msgstr "Vetor"
+msgstr "``Array``"
 
-#, fuzzy
 msgid "``Godot.Collections.Array``"
-msgstr "``Godot.Array``"
+msgstr "``Godot.Collections.Array``"
 
-#, fuzzy
 msgid "``PoolIntArray``"
-msgstr "PoolIntArray"
+msgstr "``PoolIntArray``"
 
-#, fuzzy
 msgid "``int[]``"
-msgstr "``in``"
+msgstr "``int[]``"
 
-#, fuzzy
 msgid "``PoolByteArray``"
-msgstr "PoolByteArray"
+msgstr "``PoolByteArray``"
 
-#, fuzzy
 msgid "``byte[]``"
-msgstr "byte[]"
+msgstr "``byte[]``"
 
-#, fuzzy
 msgid "``PoolFloatArray``"
-msgstr "PoolFloatArray"
+msgstr "``PoolFloatArray``"
 
-#, fuzzy
 msgid "``float[]``"
-msgstr "float[]"
+msgstr "``float[]``"
 
 msgid "``PoolStringArray``"
 msgstr "``PoolStringArray``"
@@ -477,23 +441,21 @@ msgstr "``PoolVector3Array``"
 msgid "``Vector3[]``"
 msgstr "``Vector3[]``"
 
-#, fuzzy
 msgid ""
 "``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot."
 "Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
 "Array)`` constructor to create one."
 msgstr ""
-"``Godot.Array <T> `` é um wrapper de tipo seguro em torno de ``Godot."
-"Array``. Use o construtor ``Godot.Array <T> (Godot.Array) `` para criar um."
+"``Godot.Collections.Array<T>`` é um wrapper de tipo seguro em torno de "
+"``Godot.Collections.Array``. Use o construtor ``Godot.Collections."
+"Array<T>(Godot.Collections.Array)`` para criar um."
 
 msgid "Dictionary"
 msgstr "Dicionário"
 
-#, fuzzy
 msgid "Use ``Godot.Collections.Dictionary``."
-msgstr "Use ``Dictionary<object, object>``."
+msgstr "Use ``Godot.Collections.Dictionary``."
 
-#, fuzzy
 msgid ""
 "``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
 "Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
@@ -506,7 +468,6 @@ msgstr ""
 msgid "Variant"
 msgstr "Variante"
 
-#, fuzzy
 msgid "``System.Object`` (``object``) is used instead of ``Variant``."
 msgstr "``System.Object`` (``object``) é usado no lugar de ``Variant``."
 
@@ -549,41 +510,32 @@ msgstr ""
 msgid "Other differences:"
 msgstr "Outras diferenças:"
 
-#, fuzzy
 msgid "``Color8``"
-msgstr "Color8"
+msgstr "``Color8``"
 
-#, fuzzy
 msgid "``Color.Color8``"
-msgstr "Color.Color8"
+msgstr "``Color.Color8``"
 
-#, fuzzy
 msgid "``is_inf``"
-msgstr "is_inf"
+msgstr "``is_inf``"
 
-#, fuzzy
 msgid "``float.IsInfinity``"
-msgstr "float.IsInfinity"
+msgstr "``float.IsInfinity``"
 
-#, fuzzy
 msgid "``is_nan``"
-msgstr "is_nan"
+msgstr "``is_nan``"
 
-#, fuzzy
 msgid "``float.IsNaN``"
-msgstr "float.IsNaN"
+msgstr "``float.IsNaN``"
 
-#, fuzzy
 msgid "``dict2inst``"
-msgstr "dict2inst"
+msgstr "``dict2inst``"
 
-#, fuzzy
 msgid "TODO"
-msgstr "? TODO"
+msgstr "TODO"
 
-#, fuzzy
 msgid "``inst2dict``"
-msgstr "inst2dict"
+msgstr "``inst2dict``"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,8 @@ msgstr ""
 msgid "Godot's design philosophy"
 msgstr "Godot의 디자인 철학"
 
-#, fuzzy
 msgid "Now that you've gotten your feet wet, let's talk about Godot's design."
-msgstr ""
-"이제 여러분은 손에 땀이 날 지경이니, Godot의 디자인 철학에 대해 이야기해 보겠"
-"습니다."
+msgstr "슬슬 Godot에 익숙해졌으니 Godot이 어떻게 디자인 되었는지 얘기해봅시다."
 
 msgid ""
 "**Every game engine is different and fits different needs.** Not only do "
@@ -49,13 +46,12 @@ msgstr ""
 "는 문서도 아닙니다. 프로젝트에 적합한 엔진이 있는지 확인하려면 여러분 스스로 "
 "시도하고 엔진의 디자인과 한계를 이해해야 합니다."
 
-#, fuzzy
 msgid ""
 "Please watch `Godot explained in 5 minutes <https://www.youtube.com/watch?"
 "v=KjX5llYZ5eQ>`_ if you're looking for an overview of the engine's features."
 msgstr ""
-"엔진의 기능에 관한 개요를 보고 싶다면 `Discover Godot 3, the Free game "
-"engine <https://youtu.be/4v3qge-3CqQ>`_\\ 을 보세요."
+"이 엔진의 전체 특징을 보고싶다면 `Godot explained in 5 minutes <https://www."
+"youtube.com/watch?v=KjX5llYZ5eQ>`_ 이 영상을 시청해주세요."
 
 msgid "Object-oriented design and composition"
 msgstr "객체 지향 디자인과 구성"
@@ -111,11 +107,9 @@ msgstr ""
 msgid "|image0|"
 msgstr "|image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "|image0|"
+msgstr "image0"
 
-#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
@@ -123,31 +117,32 @@ msgid ""
 "some nodes like collision shapes that a parent physics body will use, most "
 "nodes work independently from one another."
 msgstr ""
-"또한 Godot는 각각 특정 목적을 가진 노드라고 하는 다양한 타입의 오브젝트를 제"
-"공합니다. 노드는 트리의 일부이며 항상 부모로부터 노드 클래스까지 상속합니다. "
-"엔진에는 콜리전 모양과 같은 구성 요소가 있지만 예외일 뿐 표준은 아닙니다."
+"또한 Godot은 노드라고 불리는 다양한 형태의 오브젝트를 제공한다는 것을 기억하"
+"세요. 각각 특정한 목적으로 쓰이는 노드는 트리의 파트이며, 언제나 노드 클래스"
+"라고 하는 부모에게 상속되어 있습니다. 그러므로 충돌을 구현할 때 쓰이는 콜리전"
+"과 같은 특정 노드라도 다른 노드들과는 분리되어 작동합니다."
 
 msgid ""
 "In other words, Godot's nodes do not work like components in some other game "
 "engines."
 msgstr ""
+"다시말해, Godot에서의 노드는 다른 일부 게임 엔진에서의 요소와는 조금 다르게 "
+"작동합니다."
 
 msgid "|image1|"
 msgstr "|image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "|image1|"
+msgstr "image1"
 
-#, fuzzy
 msgid ""
 "Sprite is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
-"Sprite는 Node2D, CanvasItem 및 Node입니다. transform, 커스텀 모양을 그리기, "
-"커스텀 셰이더로 렌더링하기 등과 같이 세 가지 상위 클래스의 모든 속성과 기능"
-"이 있습니다."
+"스프라이트는 Node2D, CanvasItem, 그리고 노드로 이루어집니다. 이러한 노드는 "
+"세 부모 클래스가 가지는 변환, 모형 생성, 커스텀 셰이더의 렌더와 같은 속성과 "
+"특징을 그대로 가집니다."
 
 msgid "All-inclusive package"
 msgstr "올인원 패키지"
@@ -165,9 +160,8 @@ msgstr ""
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "|image2|"
+msgstr "image2"
 
 msgid ""
 "The goal is to offer a full package to create games and a continuous user "
@@ -180,28 +174,24 @@ msgstr ""
 "습니다. 또는 `Tiled Map Importer <https://github.com/vnen/godot-tiled-"
 "importer>`__\\ 처럼 여러분이 하나를 만들 수도 있습니다."
 
-#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming languages GDScript "
 "and VisualScript, along with C#. They're designed for the needs of game "
 "developers and game designers, and they're tightly integrated in the engine "
 "and the editor."
 msgstr ""
-"이것이 Godot가 C#과 함께 자체 프로그래밍 언어인 GDscript 및 VisualScript를 제"
+"이것이 Godot이 C#과 함께 자체 프로그래밍 언어인 GDscript 및 VisualScript를 제"
 "공하는 이유이기도 합니다. 게임 개발자와 게임 디자이너의 요구에 맞게 설계되었"
-"으며 엔진과 에디터에 긴밀하게 통합되어 있습니다."
+"으며, 게임 엔진과 에디터가 하나인 것 처럼 실행됩니다."
 
-#, fuzzy
 msgid ""
 "GDScript lets you write code using an indentation-based syntax, yet it "
 "detects types and offers a static language's quality of auto-completion. It "
 "is also optimized for gameplay code with built-in types like Vectors and "
 "Colors."
 msgstr ""
-"GDScript를 사용하면 Python과 유사한 구문을 사용해 간단한 코드를 작성할 수 있"
-"지만 GDScript는 타입을 감지하고 정적 언어의 자동 완성 품질을 제공합니다. 또"
-"한 벡터 및 색상과 같은 내장 타입이 있는 게임플레이 코드에 최적화되어 있습니"
-"다."
+"GDScript는 들여쓰기 기반의 문장과 자동 완성, 데이터 타입 감지도 제공합니다. "
+"이는 벡터나 색과 같은 빌트인 타입의 코드에도 최적화되어있습니다."
 
 msgid ""
 "Note that with GDNative, you can write high-performance code using compiled "
@@ -215,9 +205,8 @@ msgstr ""
 msgid "|image3|"
 msgstr "|image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "|image3|"
+msgstr "image3"
 
 msgid ""
 "*VisualScript is a node-based programming language that integrates well in "
@@ -243,9 +232,8 @@ msgstr ""
 msgid "|image4|"
 msgstr "|image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "|image4|"
+msgstr "image4"
 
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
@@ -261,12 +249,20 @@ msgid ""
 "Future Godot 4.x releases may have VisualScript reimplemented as an "
 "extension."
 msgstr ""
+"`Godot 4.0은 비주얼스크립트를 완전히 제거할 것입니다. <https://godotengine."
+"org/article/godot-4-will-discontinue-visual-scripting>`__ 결과적으로, Godot에"
+"서 비주얼 스크립팅을 사용하는 새로운 프로젝트를 만드는 것은 권장되지 않습니"
+"다. 추후의 Godot 4.x 릴리즈는 비주얼스크립트를 재구현하는 확장을 포함할 수도 "
+"있습니다."
 
 msgid ""
 "While Godot 3.x will keep VisualScript supported, we recommend :ref:`trying "
 "out GDScript <toc-learn-scripting-gdscript>` instead, especially if you "
 "intend to migrate your project to Godot 4."
 msgstr ""
+"Godot 3.x 는 비주얼스크립트를 계속 지원하지만, 저희는 그 대안으로 :ref:"
+"`GDScript를 시도해보는 것을 <toc-learn-scripting-gdscript>` (특히 여러분이 자"
+"신의 프로젝트를 Godot 4로 마이그레이션할 생각이 있으시다면) 권장합니다."
 
 msgid "Open source"
 msgstr "오픈 소스"
@@ -358,9 +354,8 @@ msgstr ""
 msgid "|image5|"
 msgstr "|image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "|image5|"
+msgstr "image5"
 
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI "
@@ -386,6 +381,9 @@ msgid ""
 "binary. This means you can't import it as a typical project that would have "
 "a ``project.godot`` file."
 msgstr ""
+"Godot 편집기는 완전히 C++로 작성되었으며 바이너리 실행 파일에 정적"
+"(statically)으로 컴파일됩니다. 이는 일반적인 ``project.godot`` 파일이 있는 프"
+"로젝트처럼 가져올 수 없음을 의미합니다."
 
 msgid "Separate 2D and 3D engines"
 msgstr "2D 와 3D 엔진을 분리"

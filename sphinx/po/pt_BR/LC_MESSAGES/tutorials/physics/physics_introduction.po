@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -64,7 +64,6 @@ msgstr ""
 "de colisão 2D tem seu equivalente direto em 3D e, na maioria dos casos, "
 "funcionam exatamente da mesma forma."
 
-#, fuzzy
 msgid "Collision objects"
 msgstr "Objetos de Colisão"
 
@@ -78,19 +77,17 @@ msgstr ""
 msgid ":ref:`Area2D <class_Area2D>`"
 msgstr ":ref:`Area2D <class_Area2D>`"
 
-#, fuzzy
 msgid ""
 "``Area2D`` nodes provide **detection** and **influence**. They can detect "
 "when objects overlap and can emit signals when bodies enter or exit. An "
 "``Area2D`` can also be used to override physics properties, such as gravity "
 "or damping, in a defined area."
 msgstr ""
-"Nós ``Area2D`` fornecem **detecção** e **influência**. Eles podem detectar "
-"quando objetos os sobrepõem e podem emitir sinais quando corpos entram ou "
-"saem. Um ``Area2D`` também pode ser usado para sobrescrever as propriedades "
-"físicas como gravidade ou amortecimento em uma área definida."
+"Os nós ``Area2D`` fornecem **detecção** e **influência**. Eles podem "
+"detectar quando os objetos se sobrepõem e podem emitir sinais quando os "
+"corpos entram ou saem. Uma ``Area2D`` também pode ser usado para substituir "
+"propriedades físicas, como gravidade ou amortecimento, em uma área definida."
 
-#, fuzzy
 msgid ""
 "The other three bodies extend :ref:`PhysicsBody2D <class_PhysicsBody2D>`:"
 msgstr ""
@@ -135,9 +132,8 @@ msgstr ""
 "Um corpo que provê detecção de colisão, mas nenhuma física. Todos os "
 "movimentos e respostas a colisões devem ser implementados em código."
 
-#, fuzzy
 msgid "Physics material"
-msgstr "Propriedades Físicas"
+msgstr "Material físico"
 
 msgid ""
 "Static bodies and rigid bodies can be configured to use a :ref:`physics "
@@ -145,7 +141,6 @@ msgid ""
 "bounce of an object, and set if it's absorbent and/or rough."
 msgstr ""
 
-#, fuzzy
 msgid "Collision shapes"
 msgstr "Formas de colisão"
 
@@ -176,7 +171,6 @@ msgstr ""
 "<class_CollisionPolygon2D>` como filho do objeto. Esses nós lhe permitem "
 "desenhar o formato diretamente no espaço de trabalho do editor."
 
-#, fuzzy
 msgid ""
 "Be careful to never scale your collision shapes in the editor. The \"Scale\" "
 "property in the Inspector should remain ``(1, 1)``. When changing the size "
@@ -184,11 +178,11 @@ msgid ""
 "``Node2D`` scale handles. Scaling a shape can result in unexpected collision "
 "behavior."
 msgstr ""
-"Cuidado para nunca escalar suas formas de colisão no editor. A propriedade "
-"\"Escala\" (Scale) no Inspetor deve permanecer ``(1, 1)``. Ao alterar as "
-"dimensões da forma de colisão, você deve sempre usar os manípulos de "
-"tamanho, e **não** os manípulos de escala de ``Node2D``. Escalar uma forma "
-"pode resultar em um comportamento inesperado de colisão."
+"Tenha cuidado para nunca escalar suas formas de colisão no editor. A "
+"propriedade \"Escala\" no Inspetor deve permanecer ``(1, 1)``. Ao alterar o "
+"tamanho da forma da colisão, você deve sempre utilizar os manipuladores de "
+"tamanho, e ** não** os manipuladores de escala ``Node2D``. A escala de uma "
+"forma pode resultar em um comportamento de colisão inesperado."
 
 msgid "Physics process callback"
 msgstr "Chamadas de retorno do processamento da física"
@@ -204,7 +198,6 @@ msgstr ""
 "disso, o valor das variáveis de estado de um corpo como ``posição`` ou "
 "``velocidade linear`` pode não estar preciso para o quadro atual."
 
-#, fuzzy
 msgid ""
 "In order to avoid this inaccuracy, any code that needs to access a body's "
 "properties should be run in the :ref:`Node._physics_process() "
@@ -215,11 +208,14 @@ msgid ""
 "the default 60 Hz physics update rate, it will typically be equal to "
 "``0.01666...`` (but not always, see below)."
 msgstr ""
-"Para evitar essa imprecisão, qualquer código que necessite acessar as "
-"propriedades de um corpo deveria ser executado na chamada de retorno :ref:"
-"`Node._physics_process() <class_Node_method__physics_process>`, que é "
-"chamada antes de cada passo da física a uma taxa constante (60 vezes por "
-"segundo, por padrão)."
+"Para evitar esta imprecisão, qualquer código que precise acessar as "
+"propriedades de um corpo deve ser executado na chamada de retorno :ref:`Node."
+"_physics_process() <class_Node_method__physics_process>`, que é chamado "
+"antes de cada passo físico a uma taxa de quadros constante (60 vezes por "
+"segundo por padrão). Este método será passado um parâmetro ``delta``, que é "
+"um número de ponto flutuante igual ao tempo passado em *segundos* desde o "
+"último passo. Ao utilizar a taxa de atualização física padrão de 60 Hz, ela "
+"será normalmente igual a ``0.01666...`` (mas nem sempre, veja abaixo)."
 
 msgid ""
 "It's recommended to always use the ``delta`` parameter when relevant in your "
@@ -227,7 +223,6 @@ msgid ""
 "physics update rate or if the player's device can't keep up."
 msgstr ""
 
-#, fuzzy
 msgid "Collision layers and masks"
 msgstr "Camadas e Máscaras de colisão"
 
@@ -285,9 +280,8 @@ msgstr ""
 "difícil. Então, pode ser útil atribuir nomes às camadas em uso. Você pode "
 "nomeá-las nas Configurações do Projeto -> Nomes das Camadas."
 
-#, fuzzy
 msgid "GUI example"
-msgstr "Eventos de entrada"
+msgstr "Exemplo de GUI"
 
 msgid ""
 "You have four node types in your game: Walls, Player, Enemy, and Coin. Both "
@@ -313,9 +307,8 @@ msgstr ""
 "interagir. Por exemplo, as configurações do Jogador (Player) deveriam se "
 "parecer com isto:"
 
-#, fuzzy
 msgid "Code example"
-msgstr "Alguns exemplos"
+msgstr "Exemplo de código"
 
 msgid ""
 "In function calls, layers are specified as a bitmask. Where a function "
@@ -332,24 +325,23 @@ msgstr ""
 msgid "Area2D"
 msgstr "Area2D"
 
-#, fuzzy
 msgid ""
 "Area nodes provide **detection** and **influence**. They can detect when "
 "objects overlap and emit signals when bodies enter or exit. Areas can also "
 "be used to override physics properties, such as gravity or damping, in a "
 "defined area."
 msgstr ""
-"Nós ``Area`` fornecem **detecção** e **influência**. Eles podem detectar "
-"quando objetos os sobrepõem e podem emitir sinais quando corpos entram ou "
-"saem dele. Um ``Area`` também pode ser usado para sobrescrever as "
-"propriedades físicas como gravidade ou amortecimento em uma área definida."
+"Os nós de área fornecem **detecção** e **influência**. Eles podem detectar "
+"quando os objetos se sobrepõem e emitir sinais quando os corpos entram ou "
+"saem. As áreas também podem ser usadas para anular propriedades físicas, "
+"tais como gravidade ou amortecimento, em uma área definida."
 
 msgid "There are three main uses for :ref:`Area2D <class_Area2D>`:"
 msgstr "Existem três usos principais para :ref:`Area2D <class_Area2D>`:"
 
-#, fuzzy
 msgid "Overriding physics parameters (such as gravity) in a given region."
-msgstr "Substituição das grandezas físicas como gravidade em uma dada região."
+msgstr ""
+"Substituição dos parâmetros físicos (como gravidade) em uma dada região."
 
 msgid ""
 "Detecting when other bodies enter or exit a region or what bodies are "
@@ -403,7 +395,6 @@ msgstr "Paredes e outros obstáculos"
 msgid "RigidBody2D"
 msgstr "RigidBody2D"
 
-#, fuzzy
 msgid ""
 "This is the node that implements simulated 2D physics. You do not control a :"
 "ref:`RigidBody2D <class_RigidBody2D>` directly. Instead, you apply forces to "
@@ -417,7 +408,6 @@ msgstr ""
 "colisões com outros corpos, além de respostas a colisões como quicar, girar, "
 "etc."
 
-#, fuzzy
 msgid ""
 "You can modify a rigid body's behavior via properties such as \"Mass\", "
 "\"Friction\", or \"Bounce\", which can be set in the Inspector."
@@ -435,7 +425,6 @@ msgstr ""
 "definidas em `Configurações de projeto -> Física`, ou entrando em uma :ref:"
 "`Area2D <class_Area2D>` que sobrepõe as propriedades da física global."
 
-#, fuzzy
 msgid ""
 "When a rigid body is at rest and hasn't moved for a while, it goes to sleep. "
 "A sleeping body acts like a static body, and its forces are not calculated "
@@ -468,7 +457,6 @@ msgstr ""
 "**Estático** (`Static`) - O corpo se comporta como um ref:`StaticBody2D "
 "<class_StaticBody2D>` e não se move."
 
-#, fuzzy
 msgid "**Character** - Similar to \"Rigid\" mode, but the body cannot rotate."
 msgstr ""
 "**Personagem** (`Character`) - Similar ao modo \"Rigid\", mas o corpo não "
@@ -535,7 +523,6 @@ msgstr ""
 "(impulso) e ``torque``) ao corpo, e deixando o motor de física calcular o "
 "movimento resultante."
 
-#, fuzzy
 msgid ""
 "When a rigid body goes to sleep, the ``_integrate_forces()`` function will "
 "not be called. To override this behavior, you will need to keep the body "
@@ -572,7 +559,6 @@ msgstr ""
 "<class_Physics2DDirectBodyState_method_get_contact_count>` e funções "
 "relacionadas."
 
-#, fuzzy
 msgid ""
 "Contact monitoring via signals can be enabled via the :ref:`contact_monitor "
 "<class_RigidBody2D_property_contact_monitor>` property. See :ref:"
@@ -621,9 +607,9 @@ msgid ""
 "KinematicBody2D."
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
-msgstr ":ref:`KinematicBody2D <class_KinematicBody2D>`"
+msgstr ""
+":ref:`move_and_collide <class_KinematicBody2D_method_move_and_collide>`"
 
 msgid ""
 "When using ``move_and_collide()``, the function returns a :ref:"
@@ -640,9 +626,8 @@ msgstr ""
 msgid "Or to bounce off of the colliding object:"
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
-msgstr ":ref:`KinematicBody2D <class_KinematicBody2D>`"
+msgstr ":ref:`move_and_slide <class_KinematicBody2D_method_move_and_slide>`"
 
 msgid ""
 "Sliding is a common collision response; imagine a player moving along walls "
@@ -668,4 +653,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

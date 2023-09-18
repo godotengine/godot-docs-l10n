@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,12 +25,18 @@ msgid ""
 "How do we incorporate physics interpolation into a Godot game? Are there any "
 "caveats?"
 msgstr ""
+"Comment incorporons-nous l'interpolation physique dans un jeu Godot ? Existe-"
+"t-il des mises en garde ?"
 
 msgid ""
 "We have tried to make the system as easy to use as possible, and many "
 "existing games will work with few changes. That said there are some "
 "situations which require special treatment, and these will be described."
 msgstr ""
+"Nous avons essayé de faire en sorte que le système soit le plus facile à "
+"utiliser que possible, et plusieurs jeux vidéos existants fonctionneront "
+"avec peu de modifications. Ceci était dit, certaines situations nécessitent "
+"un traitement spécial, et celles-ci seront décrites."
 
 #, fuzzy
 msgid "Turn on the physics interpolation setting"
@@ -41,12 +47,20 @@ msgid ""
 "physics/common/physics_interpolation<class_ProjectSettings_property_physics/"
 "common/physics_interpolation>`. You can now run your game."
 msgstr ""
+"La première étape est d'activer l'interpolation physique dans :ref:"
+"`ProjectSettings.physics/common/physics/common/"
+"physics_interpolation<class_ProjectSettings_property_physics/common/"
+"physics_interpolation>`. Vous pouvez maintenant lancer votre jeu."
 
+#, fuzzy
 msgid ""
 "It is likely that nothing looks hugely different, particularly if you are "
 "running physics at 60 TPS or a multiple of it. However, quite a bit more is "
 "happening behind the scenes."
 msgstr ""
+"Il est probable que vous ne voyez rien de notablement différent, plus "
+"particulièrement si vous faites tourner le moteur physique à 60 TPS ou un de "
+"ses multiples. Cependant, il se passe plus de choses derrière les coulisses."
 
 msgid ""
 "To convert an existing game to use interpolation, it is highly recommended "

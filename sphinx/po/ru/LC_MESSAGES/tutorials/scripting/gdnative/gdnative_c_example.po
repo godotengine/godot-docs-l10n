@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -120,7 +120,6 @@ msgstr ""
 "Если вы планируете использовать Git для своего проекта GDNative, вы также "
 "можете добавить ``godot-headers`` в качестве подмодуля Git."
 
-#, fuzzy
 msgid ""
 "The ``godot-headers`` repository has different branches. As Godot evolves, "
 "so does GDNative. While we try to preserve compatibility between version, "
@@ -130,13 +129,13 @@ msgid ""
 "Godot headers *may* work with newer versions of the engine, but not the "
 "other way around."
 msgstr ""
-"Репозиторий ``godot-headers`` имеет различные ветви. По мере развития Godot "
+"Репозиторий ``godot-headers`` имеет разные ветки. По мере развития Godot "
 "развивается и GDNative. Хотя мы стараемся сохранять совместимость между "
 "версиями, вы всегда должны собирать свой GDNative модуль на основе "
-"заголовков, соответствующих стабильной ветке Godot (например, ``3.1``) и, в "
-"идеале, актуальному релизу (например, ``3.1.1-stable``), который вы "
-"используете. Модули GDNative, созданные на основе старых версий заголовков "
-"Godot, *могут* работать с более новыми версиями движка, но не наоборот."
+"заголовков, соответствующих стабильной ветке Godot (например, ``3.4``) и, в "
+"идеале, актуальному релизу (например, ``3.4.4-stable``), который вы "
+"используете. Модули GDNative, собранные на основе старых версий заголовков "
+"Godot *, могут* работать с более новыми версиями движка, но не наоборот."
 
 msgid ""
 "The ``master`` branch of the ``godot-headers`` repository is kept in line "
@@ -426,7 +425,6 @@ msgstr ""
 "Наш деструктор вызывается, когда Godot завершает работу с нашим объектом, и "
 "мы освобождаем данные-члены нашего экземпляра."
 
-#, fuzzy
 msgid ""
 "And finally, we implement our ``get_data`` function. Data is always sent and "
 "returned as variants so in order to return our data, which is a string, we "
@@ -434,10 +432,10 @@ msgid ""
 "that string object into the variant we are returning."
 msgstr ""
 "И, наконец, мы реализуем нашу функцию ``get_data``. Данные всегда "
-"отправляются и возвращаются в виде параметров, поэтому для того, чтобы "
-"вернуть наши данные, которые являются строкой, нам сначала нужно "
-"преобразовать нашу строку C в строковый объект Godot, а затем скопировать "
-"этот строковый объект в возвращаемый параметр."
+"отправляются и возвращаются в виде вариантов, поэтому, чтобы вернуть наши "
+"данные, которые являются строкой, нам сначала нужно преобразовать нашу "
+"строку C в строковый объект Godot, а затем скопировать этот строковый объект "
+"в вариант, который мы возвращаем."
 
 msgid ""
 "Strings are heap-allocated in Godot, so they have a destructor which frees "

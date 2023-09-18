@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,6 +95,10 @@ msgid ""
 "``generate_tangents()``. This method requires that each vertex have UVs and "
 "normals set already."
 msgstr ""
+"你可能发现了，在生成的网格上，法线贴图或者其他一些材质属性看上去不对劲。这是"
+"因为对法线贴图而言，\\ **必需**\\ 的是\\ *切线*\\ ，这和\\ *法线*\\ 是两码"
+"事。有两种解决方法，手动添加切线信息，或者使用 ``generate_tangents()`` 自动生"
+"成。这个方法要求每个顶点都已经具有 UV 和法线。"
 
 msgid ""
 "By default, when generating normals, they will be calculated on a per-face "

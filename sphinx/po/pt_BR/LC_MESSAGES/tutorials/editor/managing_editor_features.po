@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Managing editor features"
-msgstr "Aprendendo novas funcionalidades"
+msgstr "Gerenciando recursos do editor"
 
 msgid "Introduction"
 msgstr "Introdução"
@@ -30,6 +29,11 @@ msgid ""
 "need to see 3D features, or an educator slowly introducing features to "
 "students. Godot has a built in system called \"feature profiles\" to do this."
 msgstr ""
+"Em certas situações, pode ser desejável limitar quais recursos podem ser "
+"usados no editor Godot. Por exemplo, um designer de interface do usuário em "
+"uma equipe que não precisa ver recursos 3D ou um educador apresentando "
+"recursos aos alunos aos poucos. Godot tem um sistema integrado chamado "
+"\"perfis de funcionalidades\" para fazer isso."
 
 msgid ""
 "With feature profiles, major features and nodes can be hidden from the "
@@ -39,10 +43,15 @@ msgid ""
 "optimization technique. For information on how to optimize Godot see :ref:"
 "`doc_optimization`."
 msgstr ""
+"Com perfis de recursos, os principais recursos e nós podem ser ocultados do "
+"editor. Isso apenas oculta partes da interface e não remove o suporte para "
+"esses recursos, portanto, cenas e scripts que dependem desses recursos ainda "
+"funcionarão bem. Isso também significa que os perfis de recursos não são uma "
+"técnica de otimização. Para informações sobre como otimizar o Godot veja :"
+"ref:`doc_optimization`."
 
-#, fuzzy
 msgid "Creating a profile"
-msgstr "Criando um Script"
+msgstr "Criando um perfil"
 
 msgid ""
 "To manage editor features go to **Editor > Manage Editor Features**. This "
@@ -50,9 +59,15 @@ msgid ""
 "will be no profile. Click on **Create Profile** and give it a name. You will "
 "then see a list of all the features in the Godot editor."
 msgstr ""
+"Para gerenciar os recursos do editor, vá para **Editor > Gerenciar "
+"funcionalidades do editor**. Isso abrirá a janela **Gerenciar perfis de "
+"funcionalidades do editor**. Por padrão, não haverá perfil. Clique em "
+"**Criar perfil** e dê um nome a ele. Você verá uma lista de todos os "
+"recursos no editor Godot."
 
+#, fuzzy
 msgid "..img:: img/configure_profile.png"
-msgstr ""
+msgstr "..img:: img/configure_profile.png"
 
 msgid ""
 "The first section allows major editor features to be removed, such as the 3D "
@@ -61,13 +76,19 @@ msgid ""
 "properties and options will be listed in the **Extra Items** box, these can "
 "all be individually disabled."
 msgstr ""
-
-msgid "..img:: img/node_features.png"
-msgstr ""
+"A primeira seção permite que as principais funcionalidades do editor sejam "
+"removidas, como o editor 3D ou o editor de scripts. Abaixo das "
+"funcionalidades principais estão todas as classes e nós do Godot, que também "
+"podem ser desabilitados. Clique em um nó e todas as suas propriedades e "
+"opções serão listadas na caixa **Extra Items**, podendo ser desabilitadas "
+"individualmente."
 
 #, fuzzy
+msgid "..img:: img/node_features.png"
+msgstr "..img:: img/node_features.png"
+
 msgid "Sharing a profile"
-msgstr "Usando Espaços"
+msgstr "Compartilhando um perfil"
 
 msgid ""
 "To share profiles between editors click on the **Export** button. Save the "
@@ -75,6 +96,11 @@ msgid ""
 "editor open that editor's **Manage Editor Feature Profiles** window and "
 "click import, then select the ``.profile`` file."
 msgstr ""
+"Para compartilhar perfis entre editores, clique no botão **Exportar**. Salve "
+"o perfil personalizado em algum lugar como um arquivo ``.profile``. Para "
+"usar isso em outro editor, abra a janela **Gerenciar perfis de "
+"funcionalidade do editor** desse editor e clique em importar, então "
+"selecione o arquivo ``.profile``."
 
 msgid ""
 "This process is potentially cumbersome however if a large amount of "
@@ -83,6 +109,11 @@ msgid ""
 "the same folder as the editor binary. See :ref:"
 "`doc_data_paths_self_contained_mode` for details."
 msgstr ""
+"Este processo é potencialmente complicado, se uma grande quantidade de "
+"computadores precisar de perfis personalizados. Como alternativa, você pode "
+"habilitar o modo independente para Godot, que permite colocar toda a "
+"configuração do editor na mesma pasta que o binário do editor. Veja :ref:"
+"`doc_data_paths_self_contained_mode` para detalhes."
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

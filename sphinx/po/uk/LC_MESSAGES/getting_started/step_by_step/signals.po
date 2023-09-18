@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,13 +137,13 @@ msgstr ""
 msgid "Your scene tree and viewport should look like this."
 msgstr "Ваше дерево сцени та область перегляду мають виглядати так."
 
-#, fuzzy
 msgid ""
 "Save your newly created scene. You can then run it with :kbd:`F6`. At the "
 "moment, the button will be visible, but nothing will happen if you press it."
 msgstr ""
 "Збережіть вашу новостворену сцену. Ви можете її запустити натиснувши :kbd:"
-"`F6`."
+"`F6`. В даний момент кнопку буде видно, проте якщо ви натиснете її, то "
+"нічого не відбудеться."
 
 msgid "Connecting a signal in the editor"
 msgstr "Підключення сигналів в редакторі"
@@ -194,7 +194,6 @@ msgstr ""
 "два режими. Простий дозволяє підключатися лише до вузлів, до яких приєднано "
 "скрипт, і створює в них нову функцію зворотного виклику."
 
-#, fuzzy
 msgid ""
 "The advanced view lets you connect to any node and any built-in function, "
 "add arguments to the callback, and set options. You can toggle the mode in "
@@ -203,9 +202,8 @@ msgstr ""
 "Розширений перегляд дозволяє підключатися до будь-якого вузла та будь-якої "
 "вбудованої функції, додавати аргументи до зворотного виклику та "
 "встановлювати параметри. Ви можете змінити режим у правому нижньому кутку "
-"вікна, натиснувши перемикач."
+"вікна, натиснувши кнопку \"Додатково\"."
 
-#, fuzzy
 msgid ""
 "Click the Connect button to complete the signal connection and jump to the "
 "Script workspace. You should see the new method with a connection icon in "

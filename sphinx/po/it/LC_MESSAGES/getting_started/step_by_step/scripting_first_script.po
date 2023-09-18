@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,15 +27,23 @@ msgid ""
 "learn-introduction>`, we assume you have programming foundations. The "
 "equivalent C# code has been included in another tab for convenience."
 msgstr ""
+"In questa lezione, si creerà il primo script per far girare in cerchio "
+"l'icona di Godot utilizzando GDScript. Come abbiamo detto :ref:` "
+"nell'introduzione <toc-learn-introduction>`, si presuppone che abbiate delle "
+"basi di programmazione. Per comodità, il codice C# equivalente è stato "
+"incluso in un'altra scheda."
 
 msgid ""
 "To learn more about GDScript, its keywords, and its syntax, head to the :ref:"
 "`GDScript reference<doc_gdscript>`."
 msgstr ""
+"Per saperne di più su GDScript, le sue parole chiavi e la sua sintassi, "
+"consultare il :ref:`GDScript reference<doc_gdscript>`."
 
 msgid ""
 "To learn more about C#, head to the :ref:`C# basics <doc_c_sharp>` page."
 msgstr ""
+"Per saperne di più su C#, vai alla pagina :ref:`basi di C# <doc_c_sharp>`."
 
 msgid "Project setup"
 msgstr "Impostazione del progetto"
@@ -45,19 +53,26 @@ msgid ""
 "contain one picture: the Godot icon, which we often use for prototyping in "
 "the community."
 msgstr ""
+"Si prega di creare un nuovo progetto per iniziare da zero. Il progetto deve "
+"contenere un'immagine: l'icona di Godot, che usiamo spesso per la "
+"prototipazione nella comunità."
 
 msgid ""
 "We need to create a Sprite node to display it in the game. In the Scene "
 "dock, click the Other Node button."
 msgstr ""
+"È necessario creare un nodo Sprite per visualizzarlo nel gioco. Nel dock "
+"Scena, fare clic sul pulsante Altro nodo."
 
 msgid ""
 "Type \"Sprite\" in the search bar to filter nodes and double-click on Sprite "
 "to create the node."
 msgstr ""
+"Scrivi \"Sprite\" nella barra di ricerca per filtrare i nodi e premi due "
+"volte su Sprite per creare il nodo."
 
 msgid "Your Scene tab should now only have a Sprite node."
-msgstr ""
+msgstr "La scheda Scena dovrebbe ora contenere solo un nodo Sprite."
 
 msgid ""
 "A Sprite node needs a texture to display. In the Inspector on the right, you "
@@ -65,6 +80,10 @@ msgid ""
 "icon, click and drag the file ``icon.png`` from the FileSystem dock onto the "
 "Texture slot."
 msgstr ""
+"Un nodo Sprite ha bisogno di una texture per essere visualizzato. "
+"Nell'Inspector a destra, si può vedere che la proprietà Texture dice "
+"\"[empty]\". Per visualizzare l'icona di Godot, fate clic e trascinate il "
+"file ``icon.png`` dal dock FileSystem allo slot Texture."
 
 msgid ""
 "You can create Sprite nodes automatically by dragging and dropping images on "
@@ -143,10 +162,11 @@ msgid ""
 "Our script currently doesn't do anything. Let's make it print the text "
 "\"Hello, world!\" to the Output bottom panel to get started."
 msgstr ""
+"Il nostro script al momento non fa nulla. Facciamogli stampare il testo "
+"\"Hello, world\" nel pannello inferiore del output per iniziare."
 
-#, fuzzy
 msgid "Add the following code to your script:"
-msgstr "Aggiungere il seguente codice:"
+msgstr "Aggiungi il seguente codice al tuo script:"
 
 msgid ""
 "Let's break it down. The ``func`` keyword defines a new function named "
@@ -167,11 +187,16 @@ msgid ""
 "on macOS) to run it. Look at the **Output** bottom panel that expands. It "
 "should display \"Hello, world!\"."
 msgstr ""
+"Salva la scena se non l'hai già fatto, poi premi :kdb:`F6` (:kbd:`Cmd + R` "
+"su macOS) per eseguirla. Guarda il pannello inferiore **Output** che si "
+"espande. Dovrebbe mostrare \"Hello, world!\"."
 
 msgid ""
 "Delete the ``_init()`` function, so you're only left with the line ``extends "
 "Sprite``."
 msgstr ""
+"Elimina la funzione ``_init()``, in modo da avere solo la riga ``extends "
+"Sprite``."
 
 #, fuzzy
 msgid "Turning around"

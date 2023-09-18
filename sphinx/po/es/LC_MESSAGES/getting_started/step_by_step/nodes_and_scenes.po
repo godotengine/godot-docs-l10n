@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,7 +142,6 @@ msgstr ""
 "deberá crear un nuevo proyecto. Después de abrir el proyecto, debería ver un "
 "editor vacío."
 
-#, fuzzy
 msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a Node2D node, \"3D Scene\" adds a "
@@ -153,12 +152,14 @@ msgid ""
 "Scene dock, which usually adds a new node as a child of the currently "
 "selected node."
 msgstr ""
-"En una escena vacía (sin nodo raíz), el panel de escena de la izquierda "
-"muestra varias opciones para agregar un nodo raíz rápidamente. \"Escena 2D\" "
-"añade un nodo Node2D, \"Escena 3D\" añade un nodo Espacial, \"Interfaz de "
-"Usuario\" añade un nodo de Control, y \"Otro nodo\" que permite seleccionar "
-"cualquier nodo. Esto equivale a pulsar el botón \"Añadir nodo hijo\". Estos "
-"ajustes preestablecidos están aquí por conveniencia; no son obligatorios."
+"En una escena vacía, el dock Escena de la izquierda muestra varias opciones "
+"para añadir un nodo raíz rápidamente. \"Escena 2D\" añade un nodo Nodo2D, "
+"\"Escena 3D\" añade un nodo Espacial e \"Interfaz de usuario\" añade un nodo "
+"de Control. Estos preajustes están aquí por comodidad; no son obligatorios. "
+"\"Otro nodo\" permite seleccionar cualquier nodo como nodo raíz. En una "
+"escena vacía, \"Otro nodo\" equivale a pulsar el botón \"Añadir nodo hijo\" "
+"en la parte superior izquierda de la ventana de Escena, que normalmente "
+"añade un nuevo nodo como hijo del nodo actualmente seleccionado."
 
 msgid ""
 "We're going to add a single Label node to our scene. Its function is to draw "
@@ -240,7 +241,6 @@ msgstr ""
 msgid "Running the scene"
 msgstr "Ejecutar la escena"
 
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the Play Scene button in the top-"
 "right of the screen or press :kbd:`F6` (:kbd:`Cmd + R` on macOS)."
@@ -297,7 +297,6 @@ msgstr ""
 msgid "Setting the main scene"
 msgstr "Configurando la escena principal"
 
-#, fuzzy
 msgid ""
 "To run our test scene, we used the Play Scene button. Another button next to "
 "it allows you to set and run the project's main scene. You can press :kbd:"

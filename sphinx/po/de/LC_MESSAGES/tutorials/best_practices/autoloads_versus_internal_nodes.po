@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,7 +164,6 @@ msgstr ""
 "dieselbe Methode oder dieselben Daten für viele Szenen wiederverwenden "
 "möchten."
 
-#, fuzzy
 msgid ""
 "In the case of functions, you can create a new type of ``Node`` that "
 "provides that feature for an individual scene using the :ref:`class_name "
@@ -172,8 +171,8 @@ msgid ""
 msgstr ""
 "Im Fall von Funktionen können Sie einen neuen Typ von ``Node`` erstellen, "
 "der diese Funktion für eine einzelne Szene bereitstellt, indem Sie das "
-"Schlüsselwort :ref:`class_name <doc_scripting_continued_class_name>` in "
-"GDScript verwenden."
+"Schlüsselwort :ref:`class_name <doc_gdscript_basics_class_name>` in GDScript "
+"verwenden."
 
 msgid "When it comes to data, you can either:"
 msgstr "Wenn es um Daten geht, können Sie entweder:"
@@ -181,15 +180,15 @@ msgstr "Wenn es um Daten geht, können Sie entweder:"
 msgid ""
 "Create a new type of :ref:`Resource <class_Resource>` to share the data."
 msgstr ""
-"einen neuen Typ :ref:`Resource <class_Resource>` erstellen, um die Daten "
+"Einen neuen Typ :ref:`Resource <class_Resource>` erstellen, um die Daten "
 "gemeinsam zu nutzen."
 
 msgid ""
 "Store the data in an object to which each node has access, for example using "
 "the ``owner`` property to access the scene's root node."
 msgstr ""
-"die Daten in einem Objekt speichern, auf das jeder Node Zugriff hat, z.B. "
-"mithilfe der Eigenschaft ``owner``, um auf den Stamm-Node der Szene "
+"Die Daten in einem Objekt speichern, auf das jeder Node Zugriff hat, z.B. "
+"mithilfe der ``owner``-Eigenschaft, um auf den Stamm-Node der Szene "
 "zuzugreifen."
 
 msgid "When you should use an Autoload"

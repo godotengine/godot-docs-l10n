@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,14 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "General"
-msgstr "일반"
+msgid "About"
+msgstr "정보"
 
 msgid "Getting started"
 msgstr "시작하기"
 
-msgid "Tutorials"
-msgstr "튜토리얼"
+msgid "Manual"
+msgstr ""
 
 msgid "Development"
 msgstr "개발"
@@ -35,7 +35,8 @@ msgstr "커뮤니티"
 msgid "Class reference"
 msgstr "클래스 레퍼런스"
 
-msgid "Godot Docs – *3.5* branch"
+#, fuzzy
+msgid "Godot Docs – *3.6* branch"
 msgstr "Godot 문서 – *3.5* 브랜치"
 
 msgid ""
@@ -45,9 +46,10 @@ msgstr ""
 "다양한 언어와 버전으로 Godot 문서를 볼 수 있습니다. 사이드바의 아래쪽 \"Read "
 "the Docs\" 패널에서 언어 목록을 확인해보세요."
 
+#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
-"docs.godotengine.org/en/latest>`_ by community members on `Weblate <https://"
+"docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "이 문서는 `Weblate <https://hosted.weblate.org/projects/godot-engine/godot-"
@@ -64,10 +66,12 @@ msgstr ""
 "인이 영어에 자신 있다면 Weblate에서 문서를 새로 번역하거나 기존의 번역을 검토"
 "하여 커뮤니티에 기여해주세요."
 
+#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
-"\"latest\" (development) branch, but should be suitable to learn how to use "
-"stable Godot releases nevertheless."
+"\"stable\" branch. You can still view the English documentation for other "
+"engine versions using the \"Read the Docs\" panel at the bottom of the "
+"sidebar."
 msgstr ""
 "당분간 현지화된 번역은 \"latest\" (개발) 브랜치에서만 이용할 수 있지만 "
 "stable Godot 릴리스를 사용하는 법을 배우기에 적당합니다."
@@ -83,24 +87,17 @@ msgstr ""
 "godotengine.org>`__\\ 의 공식 문서에 오신 것을 환영합니다! 이 문서를 처음 보"
 "신다면 :ref:`소개 페이지 <doc_about_intro>`\\ 에서 문서의 개요를 읽어보세요."
 
+#, fuzzy
 msgid ""
-"The table of contents below and in the sidebar should let you easily access "
-"the documentation for your topic of interest. You can also use the search "
-"function in the top left corner."
+"The table of contents in the sidebar should let you easily access the "
+"documentation for your topic of interest. You can also use the search "
+"function in the top-left corner."
 msgstr ""
 "아래 목차와 사이드바에서 원하는 주제의 문서를 쉽게 찾을 수 있습니다. 왼쪽 위 "
 "검색창에서 원하는 내용을 검색할 수도 있습니다."
 
-msgid ""
-"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
-"docs/workflows/build_offline_docs/master/godot-docs-html-stable.zip>`__ for "
-"offline reading (updated every Monday). Extract the ZIP archive then open "
-"the top-level ``index.html`` in a web browser."
+msgid "Get involved"
 msgstr ""
-"오프라인으로 읽을 수 있는 `HTML 복사본을 다운로드받을 수도 있습니다 <https://"
-"nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/"
-"godot-docs-html-stable.zip>`\\ (매주 월요일 업데이트). ZIP 파일의 압축을 풀"
-"고 웹브라우저에서 ``index.html``\\ 을 여세요."
 
 msgid ""
 "Godot Engine is an open source project developed by a community of "
@@ -133,6 +130,39 @@ msgstr "weblate_widget"
 msgid "Translation status"
 msgstr "번역 상태"
 
+#, fuzzy
+msgid "Offline documentation"
+msgstr "문서의 구조"
+
 msgid ""
-"The main documentation for the site is organized into the following sections:"
-msgstr "이 사이트의 주요 문서는 다음 섹션으로 구성되어 있습니다:"
+"To browse the documentation offline, you can use the mirror of the "
+"documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
+"offline browsing on DevDocs, you need to:"
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Preferences**."
+msgstr ""
+
+msgid ""
+"Enable the desired version of the Godot documentation by checking the box "
+"next to it in the sidebar."
+msgstr ""
+
+msgid "Click the three dots in the top-left corner, choose **Offline data**."
+msgstr ""
+
+#, fuzzy
+msgid "Click the **Install** link next to the Godot documentation."
+msgstr "문서에 대하여"
+
+#, fuzzy
+msgid ""
+"You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
+"docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
+"offline reading (updated every Monday). Extract the ZIP archive then open "
+"the top-level ``index.html`` in a web browser."
+msgstr ""
+"오프라인으로 읽을 수 있는 `HTML 복사본을 다운로드받을 수도 있습니다 <https://"
+"nightly.link/godotengine/godot-docs/workflows/build_offline_docs/master/"
+"godot-docs-html-stable.zip>`\\ (매주 월요일 업데이트). ZIP 파일의 압축을 풀"
+"고 웹브라우저에서 ``index.html``\\ 을 여세요."

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,7 +39,6 @@ msgstr ""
 "Этот урок объясняет большинство параметров представленных в "
 "``SpatialMaterial``."
 
-#, fuzzy
 msgid ""
 "There are 4 ways to add a ``SpatialMaterial`` to an object. It can be added "
 "in the *Material* property of the mesh. It can be added in the *Material* "
@@ -47,10 +46,11 @@ msgid ""
 "*Material Override* property of the node using the mesh, and the *Material "
 "Overlay*."
 msgstr ""
-"Есть три способа добавить к объекту ``SpatialMaterial``. Его можно добавить "
-"в свойства *Material* mesh. . Его можно добавить в свойства *Material* ноды, "
-"использующей mesh(например, к ноде MeshInstance), или в property *Material "
-"Override* ноды, использующей mesh."
+"Существует 4 способа добавить ``SpatialMaterial`` к объекту. Его можно "
+"добавить в свойстве *Material* сетки. Его можно добавить в свойстве "
+"*Material* узла, использующего сетку (например, узла MeshInstance), в "
+"свойстве *Material Override* узла, использующего сетку, и в свойстве "
+"*Material Overlay*."
 
 msgid ""
 "If you add a material to the mesh itself, every time that mesh is used it "
@@ -279,13 +279,13 @@ msgstr "Исправляет нормали при использовании н
 msgid "Vertex Color"
 msgstr "Цвет вершин"
 
-#, fuzzy
 msgid ""
 "This setting allows choosing what is done by default to vertex colors that "
 "come from your 3D modelling application. By default, they are ignored."
 msgstr ""
-"Эта настройка позволяет выбрать цвет для вершин которые будут взяты из вашей "
-"3D модели. По умолчанию эти цвета отбрасываются."
+"Этот параметр позволяет выбрать, что будет сделано по-умолчанию с цветами "
+"вершин, которые поступают из приложения для 3D-моделирования. По-умолчанию "
+"они игнорируются."
 
 msgid "Use as Albedo"
 msgstr "Использовать как Альбедо"
@@ -702,18 +702,16 @@ msgstr ""
 "только угол падения света. В Godot используются только красный и зеленый "
 "каналы карт нормалей для лучшего сжатия и более широкой совместимости."
 
-#, fuzzy
 msgid ""
 "Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is "
 "known as OpenGL style. If you've imported a material made to be used with "
 "another engine it may be DirectX style, in which case the normal map needs "
 "to be converted so its Y axis is flipped."
 msgstr ""
-"Godot требует, чтобы карта нормалей использовала координаты X+, Y- и Z+. "
-"Другими словами, если вы импортировали материал, предназначенный для "
-"использования с другим движком, вам, возможно, придется преобразовать карту "
-"нормалей, чтобы ее ось Y была перевернута. В противном случае направление "
-"карты нормалей может показаться инвертированным по оси Y."
+"Godot требует, чтобы карта нормалей использовала координаты X+, Y+ и Z+, это "
+"известно как стиль OpenGL. Если вы импортировали материал, созданный для "
+"использования в другом движке, он может быть в стиле DirectX, в этом случае "
+"карту нормалей нужно преобразовать так, чтобы ось Y была перевернута."
 
 msgid ""
 "More information about normal maps (including a coordinate order table for "
@@ -855,9 +853,8 @@ msgstr ""
 "для тонких объектов, таких как листья растений, трава, человеческие уши и т. "
 "д."
 
-#, fuzzy
 msgid "Refraction"
-msgstr "Преломление"
+msgstr "Преломление (рефрацкция)"
 
 msgid ""
 "When refraction is enabled, it supersedes alpha blending, and Godot attempts "
@@ -869,6 +866,44 @@ msgstr ""
 "этого Godot пытается извлечь информацию из-за визуализируемого объекта. Это "
 "позволяет искажать прозрачность способом, аналогичным преломлению в реальной "
 "жизни."
+
+msgid ""
+"Remember to use a transparent albedo texture (or reduce the albedo color's "
+"alpha channel) to make refraction visible, as refraction relies on "
+"transparency to have a visible effect."
+msgstr ""
+
+msgid ""
+"A normal map can optionally be specified in the **Refraction Texture** "
+"property to allow distorting the refraction's direction on a per-pixel basis."
+msgstr ""
+
+msgid ""
+"Refraction is implemented as a screen-space effect and forces the material "
+"to be transparent. This makes the effect relatively fast, but this results "
+"in some limitations:"
+msgstr ""
+
+msgid ""
+":ref:`Transparency sorting "
+"<doc_3d_rendering_limitations_transparency_sorting>` issues may occur."
+msgstr ""
+
+msgid ""
+"The refractive material cannot refract onto itself, or onto other "
+"transparent materials. A refractive material behind another transparent "
+"material will be invisible."
+msgstr ""
+
+msgid ""
+"Off-screen objects cannot appear in the refraction. This is most noticeable "
+"with high refraction strength values."
+msgstr ""
+
+msgid ""
+"Opaque materials in front of the refractive material will appear to have "
+"\"refracted\" edges, even though they shouldn't."
+msgstr ""
 
 msgid "Detail"
 msgstr "Деталь"
@@ -993,9 +1028,8 @@ msgstr ""
 "На изображении ниже видно, что все примитивы имеют один и тот же материал с "
 "мировым трипланаром, поэтому текстура кирпича плавно переходит между ними."
 
-#, fuzzy
 msgid "Proximity and distance fade"
-msgstr "Близость и затухание расстояние"
+msgstr "Приближение и отдаление"
 
 msgid ""
 "Godot allows materials to fade by proximity to each other as well as "

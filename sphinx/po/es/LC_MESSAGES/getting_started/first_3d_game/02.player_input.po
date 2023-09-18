@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -58,13 +58,12 @@ msgstr ""
 "características únicas del nodo cuando codificamos las mecánicas de salto y "
 "aplastamiento."
 
-#, fuzzy
 msgid ""
 "To learn more about the different physics node types, see the :ref:"
 "`doc_physics_introduction`."
 msgstr ""
-"Este documento asume que los varios cuerpos físicos de Godot te son "
-"familiares. Por favor lee primero :ref:`doc_physics_introduction`."
+"Para obtener más información sobre los diferentes tipos de nodos de física, "
+"consulta :ref:`doc_physics_introduction`."
 
 msgid ""
 "For now, we're going to create a basic rig for our character's 3D model. "
@@ -88,7 +87,6 @@ msgstr ""
 msgid "|image1|"
 msgstr "|image1|"
 
-#, fuzzy
 msgid "image1"
 msgstr "|image1|"
 
@@ -102,9 +100,8 @@ msgstr ""
 msgid "|image2|"
 msgstr "|image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "|image2|"
+msgstr "image2"
 
 msgid ""
 "The ``.glb`` files contain 3D scene data based on the open-source GLTF 2.0 "
@@ -134,7 +131,6 @@ msgstr ""
 msgid "|image3|"
 msgstr "|image3|"
 
-#, fuzzy
 msgid "image3"
 msgstr "|image3|"
 
@@ -158,9 +154,8 @@ msgstr ""
 msgid "|image4|"
 msgstr "|image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "|image4|"
+msgstr "image4"
 
 msgid ""
 "You can toggle the model's visibility by clicking the eye icon next to the "
@@ -172,13 +167,11 @@ msgstr ""
 msgid "|image5|"
 msgstr "|image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "|image5|"
+msgstr "image5"
 
-#, fuzzy
 msgid "Save the scene as ``Player.tscn``."
-msgstr "Por ahora abramos ``Player.tscn``."
+msgstr "Guarde la escena como ``Player.tscn``."
 
 msgid ""
 "With the nodes ready, we can almost get coding. But first, we need to define "
@@ -187,9 +180,8 @@ msgstr ""
 "Con los nodos listos, casi podemos comenzar a codificar. Pero primero, "
 "necesitamos definir algunas acciones de entrada."
 
-#, fuzzy
 msgid "Creating input actions"
-msgstr "Creando iconos"
+msgstr "Creando acciones de entrada"
 
 msgid ""
 "To move the character, we will listen to the player's input, like pressing "
@@ -213,9 +205,8 @@ msgstr ""
 msgid "|image6|"
 msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "|image6|"
+msgstr "image6"
 
 msgid ""
 "At the top, there are multiple tabs. Click on *Input Map*. This window "
@@ -229,9 +220,8 @@ msgstr ""
 msgid "|image7|"
 msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "|image7|"
+msgstr "image7"
 
 msgid ""
 "Godot projects come with some predefined actions designed for user interface "
@@ -257,9 +247,8 @@ msgstr ""
 msgid "|image8|"
 msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "|image8|"
+msgstr "image8"
 
 msgid ""
 "Create the five actions. Your window should have them all listed at the "
@@ -271,9 +260,8 @@ msgstr ""
 msgid "|image9|"
 msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "|image9|"
+msgstr "image9"
 
 msgid ""
 "To bind a key or button to an action, click the \"+\" button to its right. "
@@ -286,9 +274,8 @@ msgstr ""
 msgid "|image10|"
 msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "|image10|"
+msgstr "image10"
 
 msgid ""
 "This option allows you to add a keyboard input. A popup appears and waits "
@@ -301,9 +288,8 @@ msgstr ""
 msgid "|image11|"
 msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "|image11|"
+msgstr "image11"
 
 msgid "Do the same for the A key."
 msgstr "Haz lo mismo para la tecla A."
@@ -311,9 +297,8 @@ msgstr "Haz lo mismo para la tecla A."
 msgid "|image12|"
 msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "|image12|"
+msgstr "image12"
 
 msgid ""
 "Let's now add support for a gamepad's left joystick. Click the \"+\" button "
@@ -325,9 +310,8 @@ msgstr ""
 msgid "|image13|"
 msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "|image13|"
+msgstr "image13"
 
 msgid ""
 "The popup gives you two drop-down menus. On the left, you can select a "
@@ -346,9 +330,8 @@ msgstr ""
 msgid "|image14|"
 msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "|image14|"
+msgstr "image14"
 
 msgid ""
 "Do the same for the other input actions. For example, bind the right arrow, "
@@ -359,13 +342,11 @@ msgstr ""
 "derecha, D y el eje derecho del joystick izquierdo a ``move_right``. Después "
 "de vincular todas las teclas, su interfaz debería verse así."
 
-#, fuzzy
 msgid "|image15|"
-msgstr "|image1|"
+msgstr "|image15|"
 
-#, fuzzy
 msgid "image15"
-msgstr "|image1|"
+msgstr "image15"
 
 msgid ""
 "We have the ``jump`` action left to set up. Bind the Space key and the "
@@ -376,36 +357,30 @@ msgstr ""
 "el botón A del mando. Para vincular un botón de un mando, selecciona la "
 "opción *Botón del mando* en el menú desplegable."
 
-#, fuzzy
 msgid "|image16|"
-msgstr "|image1|"
+msgstr "|image16|"
 
-#, fuzzy
 msgid "image16"
-msgstr "|image1|"
+msgstr "image16"
 
 msgid "Leave the default values and click the *Add* button."
 msgstr ""
 "Deje los valores predeterminados y haga clic en el botón *Add* o *añadir*."
 
-#, fuzzy
 msgid "|image17|"
-msgstr "|image1|"
+msgstr "|image17|"
 
-#, fuzzy
 msgid "image17"
-msgstr "|image1|"
+msgstr "image17"
 
 msgid "Your jump input action should look like this."
 msgstr "Tu acción de entrada jump debería verse así."
 
-#, fuzzy
 msgid "|image18|"
-msgstr "|image1|"
+msgstr "|image18|"
 
-#, fuzzy
 msgid "image18"
-msgstr "|image1|"
+msgstr "image18"
 
 msgid ""
 "That's all the actions we need for this game. You can use this menu to label "

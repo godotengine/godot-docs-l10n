@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Compiling with Mono"
-msgstr ""
+msgstr "Compilando com Mono"
 
 msgid "Requirements"
 msgstr "Requisitos"
@@ -27,10 +27,10 @@ msgid "Mono 6.12.0 or greater"
 msgstr ""
 
 msgid "MSBuild"
-msgstr ""
+msgstr "MSBuild"
 
 msgid "NuGet"
-msgstr ""
+msgstr "NuGet"
 
 msgid "**On Linux/macOS only:** pkg-config"
 msgstr ""
@@ -56,9 +56,8 @@ msgid ""
 "may not work correctly::"
 msgstr ""
 
-#, fuzzy
 msgid "Environment variables"
-msgstr "Funções e Variáveis"
+msgstr "Variáveis de ambiente"
 
 msgid ""
 "By default, SCons will try to find Mono in the Windows Registry on Windows "
@@ -117,7 +116,7 @@ msgid ""
 msgstr ""
 
 msgid "Notes"
-msgstr ""
+msgstr "Notas"
 
 msgid ""
 "**Do not build your final binaries with** ``mono_glue=no``. This disables C# "
@@ -175,12 +174,11 @@ msgstr "Exemplos"
 msgid "Example (Windows)"
 msgstr "Exemplos (Windows)"
 
-#, fuzzy
 msgid "Example (X11)"
-msgstr "Exemplo"
+msgstr "Exemplo (X11)"
 
 msgid "Data directory"
-msgstr ""
+msgstr "Diretório de dados"
 
 msgid ""
 "The data directory is a dependency for Godot binaries built with the Mono "
@@ -218,16 +216,16 @@ msgid ""
 msgstr ""
 
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/lib``"
-msgstr ""
+msgstr "``bin/data.mono.<platform>.<bits>.<target>/Mono/lib``"
 
 msgid "``/osx_template.app/Contents/Frameworks/GodotSharp/Mono/lib``"
-msgstr ""
+msgstr "``/osx_template.app/Contents/Frameworks/GodotSharp/Mono/lib``"
 
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Mono/etc``"
-msgstr ""
+msgstr "``bin/data.mono.<platform>.<bits>.<target>/Mono/etc``"
 
 msgid "``/osx_template.app/Contents/Resources/GodotSharp/Mono/etc``"
-msgstr ""
+msgstr "``/osx_template.app/Contents/Resources/GodotSharp/Mono/etc``"
 
 msgid "Editor"
 msgstr "Editor"
@@ -253,22 +251,22 @@ msgid ""
 msgstr ""
 
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Api``"
-msgstr ""
+msgstr "``bin/data.mono.<platform>.<bits>.<target>/Api``"
 
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Api``"
-msgstr ""
+msgstr "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Api``"
 
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Mono/lib``"
-msgstr ""
+msgstr "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Mono/lib``"
 
 msgid "``<bundle_name>.app/Contents/Resources/GodotSharp/Mono/etc``"
-msgstr ""
+msgstr "``<bundle_name>.app/Contents/Resources/GodotSharp/Mono/etc``"
 
 msgid "``bin/data.mono.<platform>.<bits>.<target>/Tools``"
-msgstr ""
+msgstr "``bin/data.mono.<platform>.<bits>.<target>/Tools``"
 
 msgid "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Tools``"
-msgstr ""
+msgstr "``<bundle_name>.app/Contents/Frameworks/GodotSharp/Tools``"
 
 msgid ""
 "The ``Mono`` subdirectory is optional. It will be needed when distributing "
@@ -283,9 +281,8 @@ msgid ""
 "``GodotTools`` assemblies and its dependencies."
 msgstr ""
 
-#, fuzzy
 msgid "Building the Mono runtime"
-msgstr "Criando um script C#"
+msgstr "Construindo o tempo de execução do Mono"
 
 msgid ""
 "When building Godot for the desktop, you will likely use the pre-built Mono "
@@ -301,7 +298,6 @@ msgid ""
 "above for instructions on how to use the scripts."
 msgstr ""
 
-#, fuzzy
 msgid "Targeting Android"
 msgstr "Exportando para Android"
 
@@ -322,9 +318,8 @@ msgid ""
 "may be different on your system)."
 msgstr ""
 
-#, fuzzy
 msgid "Targeting iOS"
-msgstr "Exportando para Android"
+msgstr "Exportando para iOS"
 
 msgid ""
 "Once you've built Mono, you can proceed to build Godot with the instructions "
@@ -361,9 +356,8 @@ msgid ""
 "iphone-mono-libs/lib<name>.iphone.fat.a``."
 msgstr ""
 
-#, fuzzy
 msgid "Targeting WebAssembly"
-msgstr "**Web:** WebAssembly"
+msgstr "Exportando para o WebAssembly"
 
 msgid ""
 "Building for WebAssembly currently involves the same process regardless of "
@@ -379,9 +373,8 @@ msgid ""
 "different on your system)."
 msgstr ""
 
-#, fuzzy
 msgid "Base Class Library"
-msgstr "Biblioteca de Assets"
+msgstr "Biblioteca de Classe Base"
 
 msgid ""
 "The export templates must also include the BCL (Base Class Library) for each "
@@ -398,33 +391,31 @@ msgid "Android"
 msgstr "Android"
 
 msgid "``<templates>/bcl/monodroid``"
-msgstr ""
+msgstr "``<templates>/bcl/monodroid``"
 
 msgid "iOS"
 msgstr "iOS"
 
 msgid "``<templates>/bcl/monotouch``"
-msgstr ""
+msgstr "``<templates>/bcl/monotouch``"
 
-#, fuzzy
 msgid "WebAssembly"
-msgstr "**Web:** WebAssembly"
+msgstr "WebAssembly"
 
 msgid "``<templates>/bcl/wasm``"
-msgstr ""
+msgstr "``<templates>/bcl/wasm``"
 
-#, fuzzy
 msgid "Linux and macOS"
-msgstr "Executando no macOS"
+msgstr "Linux e macOS"
 
 msgid "``<templates>/bcl/net_4_x``"
-msgstr ""
+msgstr "``<templates>/bcl/net_4_x``"
 
 msgid "Windows"
 msgstr "Windows"
 
 msgid "``<templates>/bcl/net_4_x_win``"
-msgstr ""
+msgstr "``<templates>/bcl/net_4_x_win``"
 
 msgid ""
 "As of now, we're assuming the same BCL profile can be used for both Linux "
@@ -456,14 +447,12 @@ msgid ""
 "``."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "In order to build the cross-compilers we recommend using these `build "
 "scripts <https://github.com/godotengine/godot-mono-builds>`_."
 msgstr ""
-"Além desta documentação, você também pode querer dar uma olhada nos vários "
-"`Projetos de demonstração do Godot <https://github.com/godotengine/godot-"
-"demo-projects>`_."
+"Para construir os compiladores entre plataformas, recomendamos o uso desses "
+"`scripts de construção <https://github.com/godotengine/godot-mono-builds>`_."
 
 msgid ""
 "After building them, copy the executable to the Godot AOT compilers "
@@ -471,9 +460,8 @@ msgid ""
 "apple-darwin-mono-sgen``."
 msgstr ""
 
-#, fuzzy
 msgid "Command-line options"
-msgstr "Tutorial de linha de comando"
+msgstr "Opções de linha de comando"
 
 msgid ""
 "The following is the list of command-line options available when building "
@@ -495,7 +483,7 @@ msgid ""
 msgstr ""
 
 msgid "**mono_prefix**\\ =path"
-msgstr ""
+msgstr "**mono_prefix**\\ =path"
 
 msgid ""
 "Path to the Mono installation directory for the target platform and "
@@ -521,4 +509,4 @@ msgid ""
 msgstr ""
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using Area2D"
-msgstr "Area2D"
+msgstr "Usando Area2D"
 
 msgid "Introduction"
 msgstr "Introdução"
 
-#, fuzzy
 msgid ""
 "Godot offers a number of collision objects to provide both collision "
 "detection and response. Trying to decide which one to use for your project "
@@ -33,11 +31,12 @@ msgid ""
 "tutorial, we'll look at the :ref:`Area2D <class_Area2D>` node and show some "
 "examples of how it can be used."
 msgstr ""
-"Godot oferece uma variedade de objetos de colisão em 2D e 3D para prover "
-"tanto detecção de quanto resposta a colisões. Tentar decidir qual usar em "
+"A Godot oferece uma série de objetos de colisão para proporcionar tanto a "
+"detecção de colisão quanto a resposta. Tentar decidir qual deles usar para "
 "seu projeto pode ser confuso. Você pode evitar problemas e simplificar o "
-"desenvolvimento se entender como cada um funciona e quais são suas vantagens "
-"e desvantagens."
+"desenvolvimento se entender como cada um deles funciona e quais são seus "
+"prós e contras. Neste tutorial, veremos o nó :ref:`Area2D <class_Area2D>` e "
+"mostraremos alguns exemplos de como ele pode ser utilizado."
 
 msgid ""
 "This document assumes you're familiar with Godot's various physics bodies. "
@@ -54,9 +53,8 @@ msgid ""
 "properties. We'll explore each of these functions below."
 msgstr ""
 
-#, fuzzy
 msgid "Area properties"
-msgstr "Propriedades do Node"
+msgstr "Propriedades da área"
 
 msgid "Areas have many properties you can use to customize their behavior."
 msgstr ""
@@ -85,9 +83,8 @@ msgid ""
 "``input_pickable``."
 msgstr ""
 
-#, fuzzy
 msgid "Overlap detection"
-msgstr "Funções substituíveis"
+msgstr "Detecção de sobreposição"
 
 msgid ""
 "Perhaps the most common use of Area2D nodes is for contact and overlap "
@@ -120,9 +117,8 @@ msgstr ""
 msgid "Now our player can collect the coins!"
 msgstr ""
 
-#, fuzzy
 msgid "Some other usage examples:"
-msgstr "Alguns exemplos:"
+msgstr "Alguns outros exemplos de uso:"
 
 msgid ""
 "Areas are great for bullets and other projectiles that hit and deal damage, "
@@ -139,15 +135,15 @@ msgid ""
 "to each camera and activate them when the player enters."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "See the :ref:`doc_your_first_2d_game` for an example of using Area2D in a "
 "game."
 msgstr ""
-"Veja :ref:`doc_2d_movement` para exemplos de implementação de movimento 2D."
+"Veja o :ref:`doc_your_first_2d_game` para um exemplo de utilização da Area2D "
+"em um jogo."
 
 msgid "Area influence"
-msgstr ""
+msgstr "Área de influência"
 
 msgid ""
 "The second major use for area nodes is to alter physics. By default, the "
@@ -203,7 +199,7 @@ msgid ""
 msgstr ""
 
 msgid "Point gravity"
-msgstr ""
+msgstr "Ponto de gravidade"
 
 msgid ""
 "The *Gravity Point* property allows you to create an \"attractor\". Gravity "
@@ -228,4 +224,4 @@ msgstr ""
 "using_area_2d.zip>`"
 
 msgid "Translation status"
-msgstr "Estado da Tradução"
+msgstr "Progresso da Tradução"

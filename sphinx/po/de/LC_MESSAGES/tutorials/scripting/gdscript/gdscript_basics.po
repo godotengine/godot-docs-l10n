@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,7 @@ msgstr ""
 "ermöglichen."
 
 msgid "History"
-msgstr "Geschichte"
+msgstr "Verlauf"
 
 msgid ""
 "Documentation about GDScript's history has been moved to the :ref:"
@@ -186,7 +186,7 @@ msgid "Returns a value from a function."
 msgstr "Gibt einen Wert aus einer Funktion zurück."
 
 msgid "class"
-msgstr "class"
+msgstr "Klasse"
 
 msgid "Defines an inner class."
 msgstr "Definiert eine innere Klasse."
@@ -717,7 +717,7 @@ msgid "``\\b``"
 msgstr "``\\b``"
 
 msgid "Backspace"
-msgstr "Backspace (Rückschritt)"
+msgstr "Rücktaste"
 
 msgid "``\\f``"
 msgstr "``\\f``"
@@ -735,13 +735,13 @@ msgid "``\\\"``"
 msgstr "``\\\"``"
 
 msgid "Double quote"
-msgstr "doppelte Anführungszeichen"
+msgstr "Doppelte Anführungszeichen"
 
 msgid "``\\'``"
 msgstr "``\\'``"
 
 msgid "Single quote"
-msgstr "einfaches Anführungszeichen"
+msgstr "Einfaches Anführungszeichen"
 
 msgid "``\\\\``"
 msgstr "``\\\\``"
@@ -1048,7 +1048,7 @@ msgstr ""
 "definierten Typ hat, andernfalls wird ein Fehler ausgelöst."
 
 msgid "Valid types are:"
-msgstr "gültige Typen sind:"
+msgstr "Gültige Typen sind:"
 
 msgid "Built-in types (Array, Vector2, int, String, etc.)."
 msgstr "eingebaute Typen (Array, Vector2, int, String, etc.)."
@@ -1349,9 +1349,12 @@ msgid ""
 "this::"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
-"using ``break`` or continued using ``continue``:"
+"using ``break`` or continued using ``continue`` (i.e. skipping to the next "
+"iteration of the loop without executing any further code in the current "
+"iteration):"
 msgstr ""
 "Einfache Schleifen werden mit dem ``while`` Syntax erstellt. Schleifen kann "
 "man mit ``break`` abbrechen, oder mit ``continue`` in den nächsten Durchlauf "
@@ -1655,7 +1658,7 @@ msgid ""
 "automatically when inheriting a class. So, there is usually no need to call "
 "``._init()`` explicitly."
 msgstr ""
-"Der Klassenkonstruktor, der bei der Klasseninstantiierung aufgerufen wird, "
+"Der Klassenkonstruktor, der bei der Klasseninstanziierung aufgerufen wird, "
 "heißt ``_init``. Wie bereits erwähnt, werden die Konstruktoren von "
 "Elternklassen bei der Vererbung einer Klasse automatisch aufgerufen. Es "
 "besteht also normalerweise keine Notwendigkeit, ``._init()`` explizit "

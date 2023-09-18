@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,7 +61,6 @@ msgstr ""
 "No olvides marcar los hijos para que no se puedan seleccionar, como hiciste "
 "con la escena Player."
 
-#, fuzzy
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
 "Scale`` to ``0``, so the mob will not fall downward. In addition, under the :"
@@ -69,11 +68,11 @@ msgid ""
 "``Mask`` property and uncheck the first box. This will ensure the mobs do "
 "not collide with each other."
 msgstr ""
-"En las propiedades de :ref:`RigidBody2D <class_RigidBody2D>`, ajustar "
-"``Gravity Scale`` a ``0``, así los enemigos no caerán hacia abajo. Además, "
-"dentro de la sección ``PhysicsBody2D``, haz clic en la propiedad ``Mask`` y "
-"desmarca el primer cuadro, para asegurarse que los enemigos no colisionen "
-"entre sí."
+"En las propiedades :ref:`RigidBody2D <class_RigidBody2D>`, establece "
+"``Gravity Scale`` a ``0``, para que el mob no caiga hacia abajo. Además, en "
+"la sección :ref:`CollisionObject2D <class_CollisionObject2D>`, haz clic en "
+"la propiedad ``Mask`` y desmarca la primera casilla. Esto asegurará que los "
+"mobs no colisionen entre sí."
 
 msgid ""
 "Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
@@ -87,9 +86,8 @@ msgstr ""
 msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
 msgstr "Ajusta la \"Speed (FPS)\" a ``3`` para todas las animaciones."
 
-#, fuzzy
 msgid "Set the ``Playing`` property in the Inspector to \"On\"."
-msgstr "Marca la propiedad ``Playing`` como \"Activado\" en el inspector."
+msgstr "Ajuste la propiedad ``Playing`` en el Inspector a \"On\"."
 
 msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
@@ -98,13 +96,13 @@ msgstr ""
 "Nosotros seleccionamos una de estas animaciones al azar así los mobs tendrán "
 "algo de variedad."
 
-#, fuzzy
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
-"Como las imágenes del jugador, la de los enemigos deberán escalarse. Ajusta "
-"la propiedad ``Scale`` de ``AnimatedSprite`` a ``(0.75, 0.75)``."
+"Al igual que las imágenes de los jugadores, estas imágenes de los enemigos "
+"necesitan ser reducidas. Establece la propiedad ``Scale`` de "
+"``AnimatedSprite`` en ``(0.75, 0.75)``."
 
 msgid ""
 "As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
@@ -122,29 +120,24 @@ msgstr "Guarda la escena."
 msgid "Enemy script"
 msgstr "Script del enemigo"
 
-#, fuzzy
 msgid "Add a script to the ``Mob`` like this:"
-msgstr ""
-"Añade un script al nodo ``Mob`` y luego añade las siguientes variables "
-"miembro:"
+msgstr "Añade un script al ``Mob`` de esta manera:"
 
-#, fuzzy
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
 msgstr ""
-"Ahora veamos el resto del script. En ``_ready()`` seleccionaremos al azar "
-"una de las tres animaciones:"
+"Ahora veamos el resto del script. En ``_ready()`` reproducimos la animación "
+"y elegimos aleatoriamente uno de los tres tipos de animación:"
 
-#, fuzzy
 msgid ""
 "First, we get the list of animation names from the AnimatedSprite's "
 "``frames`` property. This returns an Array containing all three animation "
 "names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
-"Primero, obtenemos la lista de nombres de animación de la propiedad "
-"``frames`` del AnimatedSprite. Esto devuelve un Array que contiene los tres "
-"nombres de las animaciones: ``[\"walk\", \"swim\", \"fly\"]``."
+"En primer lugar, obtenemos la lista de nombres de animación de la propiedad "
+"``frames`` de AnimatedSprite. Esto devuelve un array que contiene los tres "
+"nombres de animación: ``[\"walk\", \"swim\", \"fly\"]``."
 
 msgid ""
 "We then need to pick a random number between ``0`` and ``2`` to select one "

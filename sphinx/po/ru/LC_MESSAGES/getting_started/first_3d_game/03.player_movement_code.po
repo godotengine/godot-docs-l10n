@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,17 +97,16 @@ msgstr ""
 "Для получения дополнительной информации о разнице между ``_process()`` и "
 "``_physics_process()``, прочитайте :ref:`doc_idle_and_physics_processing`."
 
-#, fuzzy
 msgid ""
 "We start by initializing a ``direction`` variable to ``Vector3.ZERO``. Then, "
 "we check if the player is pressing one or more of the ``move_*`` inputs and "
 "update the vector's ``x`` and ``z`` components accordingly. These correspond "
 "to the ground plane's axes."
 msgstr ""
-"Мы начинаем с инициализации переменной ``direction`` к переменной ``Vector3."
-"ZERO``. После этого мы проверяем, вводит ли игрок одну или больше функций "
-"``move_*`` и обновляет ли он компоненты векторов ``x`` и ``z`` "
-"соответственно. Они соответствуют осям опорной плоскости."
+"Сперва инициализируем переменную ``direction`` со значением ``Vector3."
+"ZERO``. После этого мы проверяем, использует ли игрок один или больше вводов "
+"``move_*`` и обновляем ``x`` и ``z`` векторов. Они соответствуют осям "
+"опорной плоскости."
 
 msgid ""
 "These four conditions give us eight possibilities and eight possible "
@@ -127,22 +126,20 @@ msgstr ""
 "вектор будет иметь длину ``1``. Мы хотим, чтобы длина вектора была "
 "неизменной. Чтобы сделать это, мы можем вызвать его метод ``normalize()``."
 
-#, fuzzy
 msgid ""
 "Here, we only normalize the vector if the direction has a length greater "
 "than zero, which means the player is pressing a direction key."
 msgstr ""
 "Здесь мы нормализуем вектор, только если направление имеет длину больше "
-"нуля, а это означает, что игрок нажимает клавишу направления."
+"нуля, что означает, что игрок нажимает клавишу направления."
 
-#, fuzzy
 msgid ""
 "In this case, we also get the *Pivot* node and call its ``look_at()`` "
 "method. This method takes a position in space to look at in global "
 "coordinates and the up direction. In this case, we can use the ``Vector3."
 "UP`` constant."
 msgstr ""
-"В этом случае мы также получаем узел *Pivot* и вызываем его метод "
+"В этом случае, мы также получаем узел *Pivot* и вызываем его метод "
 "``look_at()``. Этот метод занимает место в пространстве так, чтобы можно "
 "было рассмотреть глобальные координаты и верхнее направление. В данном "
 "случае мы можем использовать константу ``Vector3.UP``."
@@ -156,15 +153,14 @@ msgstr ""
 "родительскими константами. Глобальные координаты схожи с главными осями "
 "мира, которые вы наоборот можете видеть в окне просмотра."
 
-#, fuzzy
 msgid ""
 "In 3D, the property that contains a node's position is ``translation``. By "
 "adding the ``direction`` to it, we get a position to look at that's one "
 "meter away from the *Player*."
 msgstr ""
-"``translation`` является свойством в 3D, которое содержит в себе позицию "
-"узла. Добавив к нему ``direction``, мы получаем точку обзора в метре от "
-"*Player*."
+"В 3D свойством, содержащим позицию узла, является ``translation``. Добавив к "
+"нему ``direction``, мы получим позицию, которая находится на расстоянии "
+"одного метра от *игрока*."
 
 msgid ""
 "Then, we update the velocity. We have to calculate the ground velocity and "
@@ -296,9 +292,8 @@ msgstr ""
 "Во всплывающем окне двойным щелчком нажмите на *Player.tscn*. Персонаж "
 "должен появиться в центре окна просмотра."
 
-#, fuzzy
 msgid "Adding a camera"
-msgstr "Добавление трека"
+msgstr "Добавление камеры"
 
 msgid ""
 "Let's add the camera next. Like we did with our *Player*\\ 's *Pivot*, we're "
@@ -380,9 +375,10 @@ msgstr "|image7|"
 msgid "image7"
 msgstr "image7"
 
+#, fuzzy
 msgid ""
 "Here's where the magic happens. Select the *CameraPivot* and rotate it "
-"``45`` degrees around the X axis (using the red circle). You'll see the "
+"``-45`` degrees around the X axis (using the red circle). You'll see the "
 "camera move as if it was attached to a crane."
 msgstr ""
 "Вот где происходит волшебство. Выберите *CameraPivot* и поверните его на "

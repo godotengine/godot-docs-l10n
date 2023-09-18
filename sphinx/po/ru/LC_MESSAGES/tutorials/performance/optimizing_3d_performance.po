@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -101,7 +101,7 @@ msgid ""
 "In some cases, you can adapt your level design to add more occlusion "
 "opportunities. For example, you can add more walls to prevent the player "
 "from seeing too far away, which would decrease performance due to the lost "
-"opportunies for occlusion culling."
+"opportunities for occlusion culling."
 msgstr ""
 
 msgid "Other occlusion techniques"
@@ -158,6 +158,13 @@ msgid ""
 "into fill rate (for more information on fill rate, see :ref:"
 "`doc_gpu_optimization`)."
 msgstr ""
+"Самый простой вариант использования прозрачности для работы с LOD - это "
+"рекламные щиты. Например, вы можете использовать один прозрачный квадрат для "
+"представления дерева на расстоянии. Это может быть очень дешёво для "
+"рендеринга, если, конечно, нет большого количества деревьев друг напротив "
+"друга. В этом случае прозрачность может начать съедать коэффициент "
+"заполнения (подробнее о коэффициенте заполнения см. в :ref:"
+"`doc_gpu_optimization`)."
 
 msgid ""
 "An alternative is to render not just one tree, but a number of trees "
@@ -173,6 +180,12 @@ msgid ""
 "change significantly. This can be complex to get working, but may be worth "
 "it depending on the type of project you are making."
 msgstr ""
+"Вы можете создавать самозванцев, предварительно рендерингуя виды объекта под "
+"разными углами. Можно даже пойти еще дальше и периодически перерисовывать "
+"вид объекта на текстуру, которая будет использоваться в качестве самозванца. "
+"На расстоянии необходимо переместить зрителя на значительное расстояние, "
+"чтобы угол обзора существенно изменился. Это может быть сложным для работы, "
+"но может стоить того в зависимости от типа проекта, который вы делаете."
 
 msgid "Use instancing (MultiMesh)"
 msgstr ""

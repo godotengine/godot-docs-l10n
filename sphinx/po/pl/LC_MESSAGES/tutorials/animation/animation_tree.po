@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -372,6 +372,14 @@ msgid ""
 "reuse nodes with a complex layout (such as a state machine or blend space) "
 "in different animation trees."
 msgstr ""
+"Pamiętaj, że węzły animacji są tylko zasobami, i jako takie, są dzielone "
+"między wszystkie instancje, które ich używają. Bezpośrednie ustawianie "
+"wartości w węzłach zadziała na wszystkie instancje sceny która używa tego "
+"drzewa (``AnimationTree``). To jest ogólnie niepożądane, ale pozwala użyć "
+"tej techniki na ciekawe sposoby, np. można skopiować i wkleić fragmenty "
+"Twojego drzewa animacji, lub użyć ponownie węzłów w złożonych układach "
+"(layout) sceny (takich jak state machine lub blend space) w innych drzewach "
+"animacji."
 
 msgid ""
 "The actual animation data is contained in the ``AnimationTree`` node and is "
@@ -379,20 +387,30 @@ msgid ""
 "``AnimationTree`` node to see all the parameters that can be modified in "
 "real-time:"
 msgstr ""
+"Właściwe dane o animacji są przechowywane w węźle ``AnimationTree`` i są "
+"dostępne przy użyciu właściwości. Sprawdź sekcję \"Parameters\" należącą do "
+"węzła ``AnimationTree``, by zobaczyć wszystkie parametry, które mogą być "
+"zmodyfikowane w czasie wykonywania kodu (real-time):"
 
 msgid ""
 "This is handy because it makes it possible to animate them from an "
 "``AnimationPlayer``, or even the ``AnimationTree`` itself, allowing the "
 "realization of very complex animation logic."
 msgstr ""
+"To jest pomocne, ponieważ umożliwia animowanie ich przy pomocy "
+"``AnimationPlayer``, lub nawet samego ``AnimationTree``, pozwalając na "
+"stworzenie bardzo skomplikowanej logiki animacji."
 
 msgid ""
 "To modify these values from code, the property path must be obtained. This "
 "is done easily by hovering the mouse over any of the parameters:"
 msgstr ""
+"By zmodyfikować te wartości z kodu, Ścieżka właściwości (property) musi być "
+"uzyskana. To jest łatwo zrobione przez ustawienie myszki nad jednym z tych "
+"parametrów:"
 
 msgid "Which allows setting them or reading them:"
-msgstr ""
+msgstr "Co pozwala ustawiać i odczytywać je:"
 
 msgid "State machine travel"
 msgstr ""

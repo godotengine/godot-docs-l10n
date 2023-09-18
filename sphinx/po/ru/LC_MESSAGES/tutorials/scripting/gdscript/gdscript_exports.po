@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "GDScript exports"
-msgstr "Экспортирование в GDScript"
+msgstr "Экспорты GDScript"
 
 msgid "Introduction to exports"
 msgstr "Введение в экспорт"
@@ -218,9 +218,8 @@ msgid ""
 "enum."
 msgstr ""
 
-#, fuzzy
 msgid "Attaching variables to properties"
-msgstr "Доступ к локальным переменным или свойствам:"
+msgstr "Присоединение переменных к свойствам"
 
 msgid ""
 "To attach variables to properties (allowing the value of the property to be "
@@ -231,9 +230,8 @@ msgid ""
 "to a property also gives you the ability to give it a default state. ::"
 msgstr ""
 
-#, fuzzy
 msgid "Adding default values for properties"
-msgstr "Доступ к локальным переменным или свойствам:"
+msgstr "Добавление значений по умолчанию для свойств"
 
 msgid ""
 "To define default values for advanced exports, you need to override the "
@@ -254,15 +252,15 @@ msgstr ""
 msgid "Adding script categories"
 msgstr "Добавление категорий скриптов"
 
-#, fuzzy
 msgid ""
 "For better visual distinguishing of properties, a special script category "
 "can be embedded into the inspector to act as a separator. ``Script "
 "Variables`` is one example of a built-in category. ::"
 msgstr ""
-"Для лучшего визуального различения свойств в Инспектор (Inspector) может "
-"быть встроена специальная категория скрипта, выполняющая роль разделителя. "
-"``Script Variables`` - это один из примеров встроенной категории."
+"Для лучшего визуального различения свойств в инспектор можно внедрить "
+"специальную категорию скрипта, которая будет действовать как разделитель. "
+"``Script Variables`` (переменные скрипта) — это один из примеров встроенной "
+"категории. ::"
 
 msgid "``name`` is the name of a category to be added to the inspector;"
 msgstr "``name`` это название категории, которая будет добавлена в инспектор;"
@@ -286,9 +284,8 @@ msgstr ""
 msgid "Grouping properties"
 msgstr "Свойства группировки"
 
-#, fuzzy
 msgid "A list of properties with similar names can be grouped. ::"
-msgstr "Список свойств с похожими именами можно сгруппировать."
+msgstr "Список свойств с похожими именами можно сгруппировать. ::"
 
 msgid ""
 "``name`` is the name of a group which is going to be displayed as "

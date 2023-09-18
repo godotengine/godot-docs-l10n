@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -83,12 +83,12 @@ msgstr ""
 msgid "Array vs. Dictionary vs. Object"
 msgstr "数组、字典、对象"
 
+#, fuzzy
 msgid ""
-"Godot stores all variables in the scripting API in the `Variant <https://"
-"docs.godotengine.org/en/latest/development/cpp/variant_class.html>`_ class. "
-"Variants can store Variant-compatible data structures such as :ref:`Array "
-"<class_Array>` and :ref:`Dictionary <class_Dictionary>` as well as :ref:"
-"`Object <class_Object>` s."
+"Godot stores all variables in the scripting API in the :ref:`Variant "
+"<doc_variant_class>` class. class. Variants can store Variant-compatible "
+"data structures such as :ref:`Array <class_Array>` and :ref:`Dictionary "
+"<class_Dictionary>` as well as :ref:`Object <class_Object>` s."
 msgstr ""
 "Godot 把脚本 API 中的所有变量都存储在 `Variant <https://docs.godotengine.org/"
 "zh_CN/latest/development/cpp/variant_class.html>`_ 类中。变体（Variant）本身"
@@ -111,7 +111,7 @@ msgid ""
 "for example, a :ref:`PoolStringArray <class_PoolStringArray>` would be "
 "something like a ``Vector<String>``."
 msgstr ""
-"如果你不熟悉 C++ 的话，这里的 Vector 是传统 C++ 库中熟组对象的名称，是个“模"
+"如果你不熟悉 C++ 的话，这里的 Vector 是传统 C++ 库中数组对象的名称，是个“模"
 "板”类型，也就是说它只能存储特定类型的数据（用尖括号表示）。所以举例来说，\\ :"
 "ref:`PoolStringArray <class_PoolStringArray>` 其实就类似于 "
 "``Vector<String>``\\ 。"
