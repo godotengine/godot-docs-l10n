@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -80,35 +80,35 @@ msgstr ""
 msgid "As the editor parses the object, it calls the ``parse_category()`` and ``parse_property()`` methods. There, in addition to ``add_custom_control()``, you can call both ``add_property_editor()`` and ``add_property_editor_for_multiple_properties()``. Use these last two methods to specifically add :ref:`class_EditorProperty`-based controls."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:172
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:171
 msgid "Adding an interface to edit properties"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:174
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:173
 msgid "The :ref:`class_EditorProperty` class is a special type of :ref:`class_Control` that can interact with the inspector dock's edited objects. It doesn't display anything but can house any other control nodes, including complex scenes."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:178
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:177
 msgid "There are three essential parts to the script extending :ref:`class_EditorProperty`:"
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:181
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:180
 msgid "You must define the ``_init()`` method to set up the control nodes' structure."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:184
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:183
 msgid "You should implement the ``update_property()`` to handle changes to the data from the outside."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:187
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:186
 msgid "A signal must be emitted at some point to inform the inspector that the control has changed the property using ``emit_changed``."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:190
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:189
 msgid "You can display your custom widget in two ways. Use just the default ``add_child()`` method to display it to the right of the property name, and use ``add_child()`` followed by ``set_bottom_editor()`` to position it below the name."
 msgstr ""
 
-#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:309
+#: ../../docs/tutorials/plugins/editor/inspector_plugins.rst:307
 msgid "Using the example code above you should be able to make a custom widget that replaces the default :ref:`class_SpinBox` control for integers with a :ref:`class_Button` that generates random values."
 msgstr ""
 

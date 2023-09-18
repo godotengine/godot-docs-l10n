@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -572,87 +572,115 @@ msgstr ""
 msgid "When refraction is enabled, it supersedes alpha blending, and Godot attempts to fetch information from behind the object being rendered instead. This allows distorting the transparency in a way similar to refraction in real life."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:490
-msgid "Detail"
+#: ../../docs/tutorials/3d/spatial_material.rst:487
+msgid "Remember to use a transparent albedo texture (or reduce the albedo color's alpha channel) to make refraction visible, as refraction relies on transparency to have a visible effect."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:492
-msgid "Godot allows using secondary albedo and normal maps to generate a detail texture, which can be blended in many ways. By combining this with secondary UV or triplanar modes, many interesting textures can be achieved."
+#: ../../docs/tutorials/3d/spatial_material.rst:491
+msgid "A normal map can optionally be specified in the **Refraction Texture** property to allow distorting the refraction's direction on a per-pixel basis."
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:498
-msgid "There are several settings that control how detail is used."
+msgid "Refraction is implemented as a screen-space effect and forces the material to be transparent. This makes the effect relatively fast, but this results in some limitations:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:500
-msgid "Mask: The detail mask is a black and white image used to control where the blending takes place on a texture. White is for the detail textures, Black is for the regular material textures, different shades of gray are for partial blending of the material textures and detail textures."
+#: ../../docs/tutorials/3d/spatial_material.rst:502
+msgid ":ref:`Transparency sorting <doc_3d_rendering_limitations_transparency_sorting>` issues may occur."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:505
-msgid "Blend Mode: These four modes control how the textures are blended together."
+#: ../../docs/tutorials/3d/spatial_material.rst:504
+msgid "The refractive material cannot refract onto itself, or onto other transparent materials. A refractive material behind another transparent material will be invisible."
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:507
-msgid "Mix: Combines pixel values of both textures. At black, only show the material texture, at white, only show the detail texture. Values of gray create a smooth blend between the two."
+msgid "Off-screen objects cannot appear in the refraction. This is most noticeable with high refraction strength values."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:511
-msgid "Add: Adds pixel values of one Texture with the other. Unlike mix mode both textures are completely mixed at white parts of a mask and not at gray parts. The original texture is mostly unchanged at black"
+#: ../../docs/tutorials/3d/spatial_material.rst:509
+msgid "Opaque materials in front of the refractive material will appear to have \"refracted\" edges, even though they shouldn't."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:513
+msgid "Detail"
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:515
-msgid "Sub: Subtracts pixel values of one texture with the other. The second texture is completely subtracted at white parts of a mask with only a little subtraction in black parts, gray parts being different levels of subtraction based on the exact texture."
+msgid "Godot allows using secondary albedo and normal maps to generate a detail texture, which can be blended in many ways. By combining this with secondary UV or triplanar modes, many interesting textures can be achieved."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:520
-msgid "Mul: Multiplies the RGB channel numbers for each pixel from the top texture with the values for the corresponding pixel from the bottom texture."
+#: ../../docs/tutorials/3d/spatial_material.rst:521
+msgid "There are several settings that control how detail is used."
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:523
-msgid "Albedo: This is where you put an albedo texture you want to blend. If nothing is in this slot it will be interpreted as white by default."
+msgid "Mask: The detail mask is a black and white image used to control where the blending takes place on a texture. White is for the detail textures, Black is for the regular material textures, different shades of gray are for partial blending of the material textures and detail textures."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:526
-msgid "Normal: This is where you put a normal texture you want to blend. If nothing is in this slot it will be interpreted as a flat normal map. This can still be used even if the material does not have normal map enabled."
+#: ../../docs/tutorials/3d/spatial_material.rst:528
+msgid "Blend Mode: These four modes control how the textures are blended together."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:531
-msgid "UV1 and UV2"
+#: ../../docs/tutorials/3d/spatial_material.rst:530
+msgid "Mix: Combines pixel values of both textures. At black, only show the material texture, at white, only show the detail texture. Values of gray create a smooth blend between the two."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:533
-msgid "Godot supports two UV channels per material. Secondary UV is often useful for ambient occlusion or emission (baked light). UVs can be scaled and offset, which is useful when using repeating textures."
+#: ../../docs/tutorials/3d/spatial_material.rst:534
+msgid "Add: Adds pixel values of one Texture with the other. Unlike mix mode both textures are completely mixed at white parts of a mask and not at gray parts. The original texture is mostly unchanged at black"
 msgstr ""
 
 #: ../../docs/tutorials/3d/spatial_material.rst:538
+msgid "Sub: Subtracts pixel values of one texture with the other. The second texture is completely subtracted at white parts of a mask with only a little subtraction in black parts, gray parts being different levels of subtraction based on the exact texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:543
+msgid "Mul: Multiplies the RGB channel numbers for each pixel from the top texture with the values for the corresponding pixel from the bottom texture."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:546
+msgid "Albedo: This is where you put an albedo texture you want to blend. If nothing is in this slot it will be interpreted as white by default."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:549
+msgid "Normal: This is where you put a normal texture you want to blend. If nothing is in this slot it will be interpreted as a flat normal map. This can still be used even if the material does not have normal map enabled."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:554
+msgid "UV1 and UV2"
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:556
+msgid "Godot supports two UV channels per material. Secondary UV is often useful for ambient occlusion or emission (baked light). UVs can be scaled and offset, which is useful when using repeating textures."
+msgstr ""
+
+#: ../../docs/tutorials/3d/spatial_material.rst:561
 msgid "Triplanar Mapping"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:540
+#: ../../docs/tutorials/3d/spatial_material.rst:563
 msgid "Triplanar mapping is supported for both UV1 and UV2. This is an alternative way to obtain texture coordinates, sometimes called \"Autotexture\". Textures are sampled in X, Y and Z and blended by the normal. Triplanar mapping can be performed in either world space or object space."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:545
+#: ../../docs/tutorials/3d/spatial_material.rst:568
 msgid "In the image below, you can see how all primitives share the same material with world triplanar, so the brick texture continues smoothly between them."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:551
+#: ../../docs/tutorials/3d/spatial_material.rst:574
 msgid "Proximity and distance fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:553
+#: ../../docs/tutorials/3d/spatial_material.rst:576
 msgid "Godot allows materials to fade by proximity to each other as well as depending on the distance from the viewer. Proximity fade is useful for effects such as soft particles or a mass of water with a smooth blending to the shores. Distance fade is useful for light shafts or indicators that are only present after a given distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:559
+#: ../../docs/tutorials/3d/spatial_material.rst:582
 msgid "Keep in mind enabling these enables alpha blending, so abusing them for an entire scene is usually not a good idea."
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:565
+#: ../../docs/tutorials/3d/spatial_material.rst:588
 msgid "Render priority"
 msgstr ""
 
-#: ../../docs/tutorials/3d/spatial_material.rst:567
+#: ../../docs/tutorials/3d/spatial_material.rst:590
 msgid "The rendering order of objects can be changed, although this is mostly useful for transparent objects (or opaque objects that perform depth draw but no color draw, such as cracks on the floor)."
 msgstr ""
 

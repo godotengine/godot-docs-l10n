@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC-BY 3.0)
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
 # This file is distributed under the same license as the Godot Engine package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.5\n"
+"Project-Id-Version: Godot Engine 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-20 14:58+0100\n"
+"POT-Creation-Date: 2023-09-18 14:02+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "See :ref:`doc_using_the_web_editor` for caveats specific to the HTML5 ver
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:14
-msgid "Everything I do in the editor or project manager appears delayed by one frame."
+msgid "Everything I do in the editor or project manager appears delayed by one frame"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:16
@@ -41,7 +41,7 @@ msgid "You should use the graphics driver provided by Intel rather than the one 
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:25
-msgid "The grid disappears and meshes turn black when I rotate the 3D camera in the editor."
+msgid "The grid disappears and meshes turn black when I rotate the 3D camera in the editor"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:27
@@ -57,7 +57,7 @@ msgid "If you use a computer allowing you to switch your graphics card, like NVI
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:37
-msgid "The editor or project takes a very long time to start."
+msgid "The editor or project takes a very long time to start"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:39
@@ -65,7 +65,7 @@ msgid "This is a `known bug <https://github.com/godotengine/godot/issues/20566>`
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:47
-msgid "Editor tooltips in the Inspector and Node docks blink when they're displayed."
+msgid "Editor tooltips in the Inspector and Node docks blink when they're displayed"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:49
@@ -73,7 +73,7 @@ msgid "This is a `known issue <https://github.com/godotengine/godot/issues/32990
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:54
-msgid "The Godot editor appears frozen after clicking the system console."
+msgid "The Godot editor appears frozen after clicking the system console"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:56
@@ -85,7 +85,7 @@ msgid "To solve this, select the system console window and press Enter to leave 
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:65
-msgid "Some text such as \"NO DC\" appears in the top-left corner of the project manager and editor window."
+msgid "Some text such as \"NO DC\" appears in the top-left corner of the project manager and editor window"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:67
@@ -101,7 +101,7 @@ msgid "To disable this overlay on Linux, open ``nvidia-settings``, go to **X Scr
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:76
-msgid "The project window appears blurry, unlike the editor."
+msgid "The project window appears blurry, unlike the editor"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:78
@@ -113,7 +113,7 @@ msgid "To resolve this, open **Project > Project Settings** and enable **Display
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:87
-msgid "The project window doesn't appear centered when I run the project."
+msgid "The project window doesn't appear centered when I run the project"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:89
@@ -121,14 +121,30 @@ msgid "This is a `known bug <https://github.com/godotengine/godot/issues/13017>`
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:95
-msgid "The project works when run from the editor, but fails to load some files when running from an exported copy."
+msgid "The editor/project freezes or displays glitched visuals after resuming the PC from suspend"
 msgstr ""
 
 #: ../../docs/about/troubleshooting.rst:97
+msgid "This is a known issue on Linux with NVIDIA graphics when using the proprietary driver. There is no definitive fix yet, as suspend on Linux + NVIDIA is often buggy when OpenGL is involved."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:101
+msgid "The NVIDIA driver offers an *experimental* `option to preserve video memory after suspend <https://wiki.archlinux.org/title/NVIDIA/Tips_and_tricks#Preserve_video_memory_after_suspend>`__ which may resolve this issue. This option has been reported to work better with more recent NVIDIA driver versions."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:106
+msgid "To avoid losing work, save scenes in the editor before putting the PC to sleep."
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:109
+msgid "The project works when run from the editor, but fails to load some files when running from an exported copy"
+msgstr ""
+
+#: ../../docs/about/troubleshooting.rst:111
 msgid "This is usually caused by forgetting to specify a filter for non-resource files in the Export dialog. By default, Godot will only include actual *resources* into the PCK file. Some files commonly used, such as JSON files, are not considered resources. For example, if you load ``test.json`` in the exported project, you need to specify ``*.json`` in the non-resource export filter. See :ref:`doc_exporting_projects_export_mode` for more information."
 msgstr ""
 
-#: ../../docs/about/troubleshooting.rst:104
+#: ../../docs/about/troubleshooting.rst:118
 msgid "On Windows, this can also be due to :ref:`case sensitivity <doc_project_organization_case_sensitivity>` issues. If you reference a resource in your script with a different case than on the filesystem, loading will fail once you export the project. This is because the virtual PCK filesystem is case-sensitive, while Windows's filesystem is case-insensitive by default."
 msgstr ""
 
