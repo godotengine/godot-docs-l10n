@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,18 @@ msgid ""
 msgstr ""
 "За замовчуванням macOS буде запускати тільки застосунки, які підписані і "
 "нотаріально завірені."
+
+msgid ""
+"When running an app from the Downloads folder or when still in quarantine, "
+"Gatekeeper will perform *path randomization* as a security measure. This "
+"breaks access to relative paths from the app, which the app relies upon to "
+"work. To resolve this issue, move the app to the ``/Applications`` folder."
+msgstr ""
+
+msgid ""
+"In general, macOS apps should avoid relying on relative paths from the "
+"application folder."
+msgstr ""
 
 msgid ""
 "Depending on the way a macOS app is signed and distributed, the following "
@@ -136,7 +148,18 @@ msgstr "Потім клацніть ``Open`` у діалоговому вікн�
 msgid "Enter your password if you're prompted."
 msgstr "Введіть пароль, якщо з'явиться відповідний запит."
 
-msgid "App is not-signed, executable is linker-signed"
+msgid ""
+"Another option is to disable Gatekeeper entirely. Note that this does "
+"decrease the security of your computer by allowing you to run any software "
+"you want. To do this, run ``sudo spctl --master-disable`` in the Terminal, "
+"enter your password, and then the **Anywhere** option will be available:"
+msgstr ""
+
+msgid "Note that Gatekeeper will re-enable itself when macOS updates."
+msgstr ""
+
+#, fuzzy
+msgid "App is not signed, executable is linker-signed"
 msgstr "Застосунок не підписаний, виконуваний файл підписаний комп'ютером"
 
 msgid "App is built using official export templates, but it is not signed."
@@ -151,7 +174,9 @@ msgstr ""
 "Щоб запустити цю програму, слід видалити атрибут розширеного файлу карантину "
 "вручну:"
 
-msgid "Open ``Terminal.app`` (press ``Cmd + Space``, and enter ``Terminal``)."
+#, fuzzy
+msgid ""
+"Open ``Terminal.app`` (press :kbd:`Cmd + Space` and enter ``Terminal``)."
 msgstr ""
 "Відкрити ``Terminal.app`` (натисніть ``Cmd + Space`` і введіть ``Terminal``)."
 
@@ -172,8 +197,9 @@ msgstr ""
 "Запустіть команду ``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` "
 "(з лапками та розширенням ``.app``)."
 
+#, fuzzy
 msgid ""
-"Neither app nor executable is signed (relevant for Apple Silicon macs only)"
+"Neither app nor executable is signed (relevant for Apple Silicon Macs only)"
 msgstr ""
 "Ані застосунок, ані виконуваний файл не підписуються (актуально лише для "
 "комп'ютерів Apple Silicon Mac)"

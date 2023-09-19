@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compiling for the Web"
+msgstr "为 Web 平台编译"
+
+msgid ""
+"This page describes how to compile HTML5 editor and export template binaries "
+"from source. If you're looking to export your project to HTML5 instead, "
+"read :ref:`doc_exporting_for_web`."
+msgstr ""
+"这个页面描述的是如何从源码编译 HTML5 编辑器和导出模板二进制文件。如果你要找的"
+"是导出项目到 HTML5，请阅读 :ref:`doc_exporting_for_web`\\ 。"
+
+msgid "Requirements"
+msgstr "需求"
+
+msgid "To compile export templates for the Web, the following is required:"
+msgstr "编译 Web 的导出模板需要以下内容："
+
+msgid "`Emscripten 1.39.9+ <https://emscripten.org>`__."
+msgstr "`Emscripten 1.39.9+ <https://emscripten.org>`__\\ 。"
+
+#, fuzzy
+msgid "`Python 3.6+ <https://www.python.org/>`__."
+msgstr "`Python 3.5+ <https://www.python.org/>`__\\ 。"
+
+#, fuzzy
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`__ build system."
+msgstr "`SCons 3.0+ <https://scons.org/pages/download.html>`_ 构建系统."
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr "要获取编译所需的 Godot 源码，请参阅 :ref:`doc_getting_source`\\ 。"
+
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+"有关 Godot 的 SCons 用法的一般概述，请参阅 :ref:"
+"`doc_introduction_to_the_buildsystem`。"
+
+msgid "Building export templates"
+msgstr "构建导出模板"
+
+msgid ""
+"Before starting, confirm that ``emcc`` is available in your PATH. This is "
+"usually configured by the Emscripten SDK, e.g. when invoking ``emsdk "
+"activate`` and ``source ./emsdk_env.sh``/``emsdk_env.bat``."
+msgstr ""
+"在开始之前，确认 ``emcc`` 在你的 PATH 中是可用的。这通常是由 Emscripten SDK "
+"配置的，例如在调用 ``emsdk activate`` 和 ``source ./emsdk_env.sh``/"
+"``emsdk_env.bat`` 时。"
+
+#, fuzzy
+msgid ""
+"Open a terminal and navigate to the root directory of the engine source "
+"code. Then instruct SCons to build the Web platform. Specify ``target`` as "
+"either ``template_release`` for a release build or ``template_debug`` for a "
+"debug build::"
+msgstr ""
+"打开终端并导航到引擎源代码的根目录。然后指示 SCons 构建 JavaScript 平台。为发"
+"布版本将 ``target`` 指定 ``release``\\ ，或为调试版本将 ``target`` 指定 "
+"``release_debug``\\ ： ::"
+
+msgid ""
+"By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
+"built into the engine. Official export templates also have the JavaScript "
+"singleton enabled. Since ``eval()`` calls can be a security concern, the "
+"``javascript_eval`` option can be used to build without the singleton::"
+msgstr ""
+"默认情况下，\\ :ref:`JavaScript singleton <doc_javascript_eval>` 将被内置到引"
+"擎中，官方导出模板也启用了 JavaScript 单例。由于 ``eval()`` 调用可能是一个安"
+"全问题，\\ ``javascript_eval`` 选项可以用来构建，而无需单例： ::"
+
+#, fuzzy
+msgid ""
+"The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
+"the resulting file will be placed in the ``bin`` subdirectory. Its name is "
+"``godot.web.opt.wasm32.zip`` for release or ``godot.web.opt.debug.wasm32."
+"zip`` for debug."
+msgstr ""
+"现在，引擎将由 Emscripten 编译为 WebAssembly。完成后，生成的文件将放在 "
+"``bin`` 子目录中。针对发布版本的名字是 ``godot.javascript.opt.zip``\\ ，或针"
+"对调试版本的是 ``godot.javascript.opt.debug.zip``\\ 。"
+
+#, fuzzy
+msgid ""
+"Finally, rename the zip archive to ``web_release.zip`` for the release "
+"template::"
+msgstr ""
+"最后，将 zip 存档重命名为 ``webassembly_release.zip`` 以获取发布版本的模"
+"板： ::"
+
+#, fuzzy
+msgid "And ``web_debug.zip`` for the debug template::"
+msgstr "调试模板的 ``webassembly_debug.zip``\\ ： ::"
+
+msgid "GDExtension"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The default export templates do not include GDExtension support for "
+"performance and compatibility reasons. See the :ref:`export page "
+"<doc_javascript_export_options>` for more info."
+msgstr ""
+"由于性能和兼容性的原因，默认的导出模板不包括线程和 GDNative 支持。更多信息见"
+"\\ :ref:`导出页面 <doc_javascript_export_options>`。"
+
+#, fuzzy
+msgid ""
+"You can build the export templates using the option ``dlink_enabled=yes`` to "
+"enable GDExtension support::"
+msgstr ""
+"你可以使用选项 ``threads_enabled=yes`` 或 ``gdnative_enabled=yes`` 构建导出模"
+"板，以启用线程或 GDNative 支持： ::"
+
+#, fuzzy
+msgid ""
+"Once finished, the resulting file will be placed in the ``bin`` "
+"subdirectory. Its name will have ``_dlink`` added."
+msgstr ""
+"一旦完成，生成的文件将被放置在 ``bin`` 子目录下，名称带有 ``.threads`` 或 ``."
+"gdnative`` 后缀。"
+
+#, fuzzy
+msgid ""
+"Finally, rename the zip archives to ``web_dlink_release.zip`` and "
+"``web_dlink_release.zip`` for the release template::"
+msgstr ""
+"最后，将压缩文件重命名为 ``webassembly_release_threads.zip`` 和 "
+"``webassembly_release_gdnative.zip`` ，用于发布模板： ::"
+
+#, fuzzy
+msgid "Building the editor"
+msgstr "构建编辑器"
+
+#, fuzzy
+msgid ""
+"It is also possible to build a version of the Godot editor that can run in "
+"the browser. The editor version is not recommended over the native build. "
+"You can build the editor with::"
+msgstr ""
+"也可以建立一个可以在浏览器中运行的 Godot 编辑器版本。编辑器版本需要线程支持，"
+"不推荐使用本地构建。你可以用以下方法构建编辑器： ::"
+
+#, fuzzy
+msgid ""
+"Once finished, the resulting file will be placed in the ``bin`` "
+"subdirectory. Its name will be ``godot.web.opt.tools.wasm32.zip``. You can "
+"upload the zip content to your web server and visit it with your browser to "
+"use the editor."
+msgstr ""
+"一旦完成，生成的文件将被放置在 ``bin`` 子目录下。它的名字将是 ``godot."
+"javascript.opt.tools.threads.zip``\\ 。你可以将 zip 内容上传到你的网络服务器"
+"上，然后用浏览器访问它来使用编辑器。"
+
+msgid ""
+"Refer to the :ref:`export page <doc_javascript_export_options>` for the web "
+"server requirements."
+msgstr ""
+"关于网络服务器的要求，请参考\\ :ref:`导出页面 "
+"<doc_javascript_export_options>`。"
+
+msgid ""
+"The Godot repository includes a `Python script to host a local web server "
+"<https://raw.githubusercontent.com/godotengine/godot/master/platform/web/"
+"serve.py>`__. This can be used to test the web editor locally."
+msgstr ""
+
+msgid ""
+"After compiling the editor, extract the ZIP archive that was created in the "
+"``bin/`` folder, then run the following command in the Godot repository root:"
+msgstr ""
+
+msgid ""
+"This will serve the contents of the ``bin/`` folder and open the default web "
+"browser automatically. In the page that opens, access ``godot.tools.html`` "
+"and you should be able to test the web editor this way."
+msgstr ""
+
+msgid ""
+"Note that for production use cases, this Python-based web server should not "
+"be used. Instead, you should use an established web server such as Apache or "
+"nginx."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻译状态"

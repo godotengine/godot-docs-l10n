@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,13 +45,11 @@ msgstr ""
 "dados**. Eles não fazem nada sozinhos: ao invés disso, os nós usam os dados "
 "contidos em recursos."
 
+#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
-"tscn`` or an ``.scn`` file), an image, a script... Here are some "
-"``Resource`` examples: :ref:`Texture <class_Texture>`, :ref:`Script "
-"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
-"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
-"<class_Font>`, :ref:`Translation <class_Translation>`."
+"tscn`` or an ``.scn`` file), an image, a script... Here are some :ref:"
+"`Resource <class_Resource>` examples:"
 msgstr ""
 "Qualquer coisa que o Godot salva ou carrega do disco é um recurso, seja ele "
 "uma cena (um arquivo ``.tscn`` or ``.scn``), uma imagem, um script... "
@@ -59,6 +57,34 @@ msgstr ""
 "<class_Script>`, :ref:`Malha <class_Mesh>`, :ref:`Animação "
 "<class_Animation>`, :ref:`Fluxo de áudio <class_AudioStream>`, :ref:`Fonte "
 "<class_Font>`, :ref:`Tradução <class_Translation>`..."
+
+#, fuzzy
+msgid ":ref:`Texture <class_Texture>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+#, fuzzy
+msgid ":ref:`Script <class_Script>`"
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+#, fuzzy
+msgid ":ref:`Mesh <class_Mesh>`"
+msgstr ":ref:`CSGMesh <class_CSGMesh>`"
+
+#, fuzzy
+msgid ":ref:`Animation <class_Animation>`"
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+
+#, fuzzy
+msgid ":ref:`AudioStream <class_AudioStream>`"
+msgstr ":ref:`Area2D <class_Area2D>`"
+
+#, fuzzy
+msgid ":ref:`Font <class_Font>`"
+msgstr ":ref:`int <class_int>`"
+
+#, fuzzy
+msgid ":ref:`Translation <class_Translation>`"
+msgstr ":ref:`Transform <class_Transform>`"
 
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
@@ -98,16 +124,17 @@ msgstr ""
 "**Embutido**, salvo dentro do arquivo ``.tscn`` ou ``.scn`` ao qual estão "
 "anexados."
 
+#, fuzzy
 msgid ""
-"To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
-"`Sprite <class_Sprite>` node:"
+"To be more specific, here's a :ref:`Texture2D <class_Texture2D>` in a :ref:"
+"`Sprite2D <class_Sprite2D>` node:"
 msgstr ""
 "Para ser mais específico, aqui está uma :ref:`Textura <class_Texture>` em um "
 "nó :ref:`Sprite <class_Sprite>`:"
 
+#, fuzzy
 msgid ""
-"Clicking the resource preview allows us to view and edit the resource's "
-"properties."
+"Clicking the resource preview allows us to view the resource's properties."
 msgstr "Clicar no recurso permite que você veja e edite suas propriedades."
 
 msgid ""
@@ -147,10 +174,11 @@ msgstr ""
 "Existem duas maneiras de carregar recursos por código. Primeiro, você pode "
 "usar a função ``load()`` a qualquer momento:"
 
+#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
-"preload with a variable path: you need to use a constant string."
+"``preload`` with a variable path: you need to use a constant string."
 msgstr ""
 "Você pode também ``precarregar`` recursos. Diferente de ``load``, essa "
 "função vai ler o arquivo do disco e carregá-lo ao compilar. Como resultado, "
@@ -160,18 +188,20 @@ msgstr ""
 msgid "Loading scenes"
 msgstr "Carregando cenas"
 
+#, fuzzy
 msgid ""
 "Scenes are also resources, but there is a catch. Scenes saved to disk are "
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
-"packed inside a resource."
+"packed inside a :ref:`Resource <class_Resource>`."
 msgstr ""
 "Cenas também são recursos, mas há um detalhe. Cenas salvas no disco são "
 "recursos do tipo :ref:`PackedScene <class_PackedScene>`. Isso significa que "
 "a cena é compactada dentro de um recurso."
 
+#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
-"instance() <class_PackedScene_method_instance>` method."
+"instantiate() <class_PackedScene_method_instantiate>` method."
 msgstr ""
 "Para obter uma instância da cena, o método :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` deve ser usado."
@@ -184,9 +214,10 @@ msgstr ""
 "Esse método cria os nós na hierarquia da cena, configura-os, e retorna o nó "
 "raiz da cena, que pode ser adicionado como filho de qualquer outro nó."
 
+#, fuzzy
 msgid ""
-"The approach has several advantages. As the :ref:`PackedScene.instance() "
-"<class_PackedScene_method_instance>` function is fast, you can create new "
+"The approach has several advantages. As the :ref:`PackedScene.instantiate() "
+"<class_PackedScene_method_instantiate>` function is fast, you can create new "
 "enemies, bullets, effects, etc. without having to load them again from disk "
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
@@ -201,11 +232,12 @@ msgstr ""
 msgid "Freeing resources"
 msgstr "Liberando recursos"
 
+#, fuzzy
 msgid ""
-"When a ``Resource`` is no longer in use, it will automatically free itself. "
-"Since, in most cases, Resources are contained in Nodes, when you free a "
-"node, the engine frees all the resources it owns as well if no other node "
-"uses them."
+"When a :ref:`Resource <class_Resource>` is no longer in use, it will "
+"automatically free itself. Since, in most cases, Resources are contained in "
+"Nodes, when you free a node, the engine frees all the resources it owns as "
+"well if no other node uses them."
 msgstr ""
 "Quando um ``Recurso`` não estiver mais em uso, ele será liberado "
 "automaticamente. Como na maioria dos casos os recursos estão contidos em "
@@ -227,13 +259,14 @@ msgstr ""
 "tres, \\*.res). Eles também herdam o gerenciamento de memória de contagem de "
 "referência do tipo de referência."
 
+#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
-"as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`File "
-"<class_File>` to parse. What sets Resources apart is their inheritance of :"
-"ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
-"`Resource <class_Resource>` features:"
+"as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`FileAccess "
+"<class_FileAccess>` to parse. What sets Resources apart is their inheritance "
+"of :ref:`Object <class_Object>`, :ref:`RefCounted <class_RefCounted>`, and :"
+"ref:`Resource <class_Resource>` features:"
 msgstr ""
 "Isto apresenta várias vantagens distintas sobre estruturas de dados "
 "alternativas como JSON, CSV ou arquivos TXT personalizados. Os usuários só "
@@ -355,8 +388,26 @@ msgstr ""
 "do Inspetor. Isso adicionará automaticamente seu script ao objeto Resource "
 "criado por você."
 
-msgid "Let's see some examples."
-msgstr "Vamos ver alguns exemplos."
+msgid ""
+"Let's see some examples. Create a :ref:`Resource <class_Resource>` and name "
+"it ``bot_stats``. It should appear in your file tab with the full name "
+"``bot_stats.tres``. Without a script, it's useless, so let's add some data "
+"and logic! Attach a script to it named ``bot_stats.gd`` (or just create a "
+"new script, and then drag it to it)."
+msgstr ""
+
+msgid ""
+"Now, create a :ref:`CharacterBody3D <class_CharacterBody3D>`, name it "
+"``Bot``, and add the following script to it:"
+msgstr ""
+
+msgid ""
+"Now, select the :ref:`CharacterBody3D <class_CharacterBody3D>` node which we "
+"named ``bot``, and drag&drop the ``bot_stats.tres`` resource onto the "
+"Inspector. It should print 10! Obviously, this setup can be used for more "
+"advanced features than this, but as long you really understand *how* it all "
+"worked, you should figure out everything else related to Resources."
+msgstr ""
 
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
@@ -371,8 +422,9 @@ msgstr ""
 "Control e combiná-los com um: ref: `EditorPlugin <class_EditorPlugin>` para "
 "criar visualizações e editores personalizados para seus dados."
 
+#, fuzzy
 msgid ""
-"Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
+"Unreal Engine's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
@@ -381,23 +433,25 @@ msgstr ""
 "estrutura personalizada, semelhante a um dicionário que mapeia uma String "
 "para um script de recurso personalizado secundário."
 
+#, fuzzy
 msgid ""
-"Instead of just inlining the Dictionary values, one could also, "
-"alternatively..."
+"Instead of inlining the Dictionary values, one could also, alternatively:"
 msgstr ""
 "Em vez de apenas inlining os valores do dicionário, um poderia também, "
 "alternativamente ..."
 
+#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
-"pairs, or..."
+"pairs."
 msgstr ""
 "Importe uma tabela de valores de uma planilha e gere esses pares de valores-"
 "chave ou ..."
 
+#, fuzzy
 msgid ""
-"Design a visualization within the editor and create a simple plugin that "
-"adds it to the Inspector when you open these types of Resources."
+"Design a visualization within the editor and create a plugin that adds it to "
+"the Inspector when you open these types of Resources."
 msgstr ""
 "Projete uma visualização no editor e crie um plug-in simples que a adicione "
 "ao Inspector ao abrir esses tipos de recursos."

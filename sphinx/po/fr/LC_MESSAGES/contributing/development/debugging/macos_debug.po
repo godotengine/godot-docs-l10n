@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Debugging on macOS"
+msgstr "Débogage sur macOS"
+
+msgid "Debugging Godot editor"
+msgstr "Débogage de l'éditeur Godot"
+
+msgid ""
+"Attaching a debugger to the signed macOS process requires the \"com.apple."
+"security.get-task-allow\" entitlement, which is not enabled by default, "
+"since apps can't be notarized as long as it is enabled. If you want to debug "
+"an official build of the editor it should be re-signed with the proper "
+"entitlements."
+msgstr ""
+"Attacher un débogueur au processus signé de macOS nécessite le droit \"com."
+"apple.security.get-task-allow\", qui n'est pas activé par défaut, puisque "
+"les applications ne peuvent pas être notariées tant qu'il est activé. Si "
+"vous voulez déboguer une version officielle de l'éditeur, elle doit être re-"
+"signée avec les droits appropriés."
+
+msgid ""
+"Create an ``editor.entitlements`` text file with the following contents:"
+msgstr ""
+"Créez un fichier texte \"editor.entitlements\" avec le contenu suivant :"
+
+msgid "Then use the following command to re-sign the editor::"
+msgstr "Utilisez ensuite la commande suivante pour re-signer l'éditeur :"
+
+msgid "Debugging exported project"
+msgstr "Débogage du projet exporté"
+
+msgid ""
+"To allow debugging, select the ``codesign\\debugging`` (``com.apple.security."
+"get-task-allow``) entitlement during the export. When it is selected, "
+"notarization is not supported and should be disabled."
+msgstr ""
+"Pour autoriser le débogage, sélectionnez le ``codesign\\debugging`` (com."
+"apple.security.get-task-allow) pendant l'exportation. Lorsqu'il est "
+"sélectionné, la notarisation n'est pas prise en charge et doit être "
+"désactivée."
+
+msgid "Translation status"
+msgstr "État de la traduction"

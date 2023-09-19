@@ -1,0 +1,408 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Variable rate shading"
+msgstr "Casting de variable"
+
+#, fuzzy
+msgid "What is variable rate shading?"
+msgstr "Qu'est-ce que le Visual Scripting"
+
+msgid ""
+"In modern 3D rendering engines, shaders are much more complex compared to "
+"before. The advent of physically-based rendering, real-time global "
+"illumination and screen-space effects has increased the number of *per-"
+"pixel* shading that must be performed to render each frame. Additionally, "
+"screen resolutions also have increased a lot, with 1440p and 4K now being "
+"common target resolutions. As a result, the total shading cost in scene "
+"rendering usually represents a significant amount of the time taken to "
+"render each frame."
+msgstr ""
+
+msgid ""
+"Variable rate shading (VRS) is a method of decreasing this shading cost by "
+"reducing the resolution of *per-pixel* shading (also called *fragment* "
+"shading), while keeping the original resolution for rendering geometry. This "
+"means geometry edges remain as sharp as they would without VRS. VRS can be "
+"combined with any :ref:`doc_3d_antialiasing` technique (MSAA, FXAA, TAA, "
+"SSAA)."
+msgstr ""
+
+msgid ""
+"VRS allows specifying the shading quality in a local manner, which makes it "
+"possible to have certain parts of the viewport receive more detailed shading "
+"than others. This is particularly useful in virtual reality (VR) to achieve "
+"*foveated rendering*, where the center of the viewport is more detailed than "
+"the edges."
+msgstr ""
+
+msgid ""
+"Here's a scene rendered with rate shading disabled then enabled, using the "
+"density map linked at the bottom of this page:"
+msgstr ""
+
+msgid "Variable rate shading disabled in textured scene"
+msgstr ""
+
+msgid ""
+"Variable rate shading enabled in textured scene (lower quality but higher "
+"performance)"
+msgstr ""
+
+msgid ""
+"When used in scenes with low-frequency detail (such as scenes with a "
+"stylized/low-poly aesthetic), it's possible to achieve similar performance "
+"gains but with less reduction in visual quality:"
+msgstr ""
+
+msgid "Variable rate shading disabled in untextured scene"
+msgstr ""
+
+msgid ""
+"Variable rate shading enabled in untextured scene (lower quality but higher "
+"performance)"
+msgstr ""
+
+#, fuzzy
+msgid "Hardware support"
+msgstr "Support des navigateurs"
+
+msgid "Variable rate shading is only supported on specific GPUs:"
+msgstr ""
+
+#, fuzzy
+msgid "**Desktop:**"
+msgstr "**Description**"
+
+msgid "NVIDIA Turing and newer (including GTX 1600 series)"
+msgstr ""
+
+msgid ""
+"AMD RDNA2 and newer (both integrated and dedicated GPUs – including Steam "
+"Deck)"
+msgstr ""
+
+msgid "Intel Arc Alchemist and newer **(dedicated GPUs only)**"
+msgstr ""
+
+msgid "Intel integrated graphics do not support variable rate shading."
+msgstr ""
+
+#, fuzzy
+msgid "**Mobile SoCs:**"
+msgstr "**mobile**"
+
+msgid "Snapdragon 888 and newer"
+msgstr ""
+
+msgid "MediaTek Dimensity 9000 and newer"
+msgstr ""
+
+msgid "ARM Mali-G615 and newer"
+msgstr ""
+
+msgid ""
+"As of January 2023, Apple and Raspberry Pi GPUs do not support variable rate "
+"shading."
+msgstr ""
+
+#, fuzzy
+msgid "Using variable rate shading in Godot"
+msgstr "Utilisation des packages Nuget dans Godot"
+
+msgid ""
+"Both Forward Plus and Forward Mobile rendering methods support variable rate "
+"shading. VRS can be used in both pancake (non-XR) and XR display modes."
+msgstr ""
+
+msgid ""
+"The Compatibility rendering method does **not** support variable rate "
+"shading."
+msgstr ""
+
+msgid ""
+"In the advanced Project Settings, the **Rendering > VRS** section offers "
+"settings to control variable rate shading on the root viewport:"
+msgstr ""
+
+msgid ""
+"**Mode:** Controls the variable rate shading mode. **Disabled** disables "
+"variable rate shading. **Texture** uses a manually authored texture to set "
+"shading density (see the property below). **XR** automatically generates a "
+"texture suited for foveated rendering in virtual/augmented reality."
+msgstr ""
+
+msgid ""
+"**Texture:** The texture to use to control shading density on the root "
+"viewport. Only used if **Mode** is **Texture**."
+msgstr ""
+
+msgid ""
+"For custom viewports, the VRS mode and texture must be set manually to the :"
+"ref:`class_Viewport` node."
+msgstr ""
+
+msgid ""
+"On unsupported hardware, there is no visual difference when variable rate "
+"shading is enabled. You can check whether hardware supports variable rate "
+"shading by running the editor or project with the ``--verbose`` :ref:"
+"`command line argument <doc_command_line_tutorial>`."
+msgstr ""
+
+#, fuzzy
+msgid "Creating a VRS density map"
+msgstr "Créer une position de repos"
+
+msgid ""
+"If using the **Texture** VRS mode, you *must* set a texture to be used as a "
+"density map. Otherwise, no effect will be visible."
+msgstr ""
+
+msgid ""
+"You can create your own VRS density map manually using an image editor, or "
+"generate it using another method (e.g. on the CPU using the Image class, or "
+"on the GPU using a shader). However, beware of performance implications when "
+"generating a VRS image dynamically. If opting for dynamic generation, make "
+"sure the VRS image generation process is fast enough to avoid outweighing "
+"the performance gains from VRS."
+msgstr ""
+
+#, fuzzy
+msgid "The texture must follow these rules:"
+msgstr "Ce texte se lit comme suit :"
+
+msgid ""
+"The texture *must* use a lossless compression format so that colors can be "
+"matched precisely."
+msgstr ""
+
+msgid ""
+"The following VRS densities are mapped to various colors, with brighter "
+"colors representing a lower level of shading precision:"
+msgstr ""
+
+msgid "Density"
+msgstr ""
+
+msgid "Color"
+msgstr "Couleur"
+
+msgid "Comment"
+msgstr "Commentaire"
+
+#, fuzzy
+msgid "1×1 (highest detail)"
+msgstr "1 (le plus élevé)"
+
+msgid "``rgb(0, 0, 0) - #000000``"
+msgstr ""
+
+#, fuzzy
+msgid "1×2"
+msgstr "12"
+
+msgid "``rgb(0, 85, 0) - #005500``"
+msgstr ""
+
+#, fuzzy
+msgid "2×1"
+msgstr "21"
+
+msgid "``rgb(85, 0, 0) - #550000``"
+msgstr ""
+
+#, fuzzy
+msgid "2×2"
+msgstr "22"
+
+msgid "``rgb(85, 85, 0) - #555500``"
+msgstr ""
+
+#, fuzzy
+msgid "2×4"
+msgstr "24"
+
+msgid "``rgb(85, 170, 0) - #55aa00``"
+msgstr ""
+
+msgid "4×2"
+msgstr ""
+
+msgid "``rgb(170, 85, 0) - #aa5500``"
+msgstr ""
+
+#, fuzzy
+msgid "4×4"
+msgstr "44"
+
+msgid "``rgb(170, 170, 0) - #aaaa00``"
+msgstr ""
+
+#, fuzzy
+msgid "4×8"
+msgstr "48"
+
+msgid "``rgb(170, 255, 0) - #aaff00``"
+msgstr ""
+
+msgid "Not supported on most hardware."
+msgstr ""
+
+msgid "8×4"
+msgstr ""
+
+msgid "``rgb(255, 170, 0) - #ffaa00``"
+msgstr ""
+
+msgid "8×8 (lowest detail)"
+msgstr ""
+
+msgid "``rgb(255, 255, 0) - #ffff00``"
+msgstr ""
+
+msgid ""
+"For example, this VRS density texture provides the highest shading density "
+"in the center of the viewport, and the lowest shading density in the corners:"
+msgstr ""
+
+msgid "Example VRS density map texture, simulating foveated rendering"
+msgstr ""
+
+msgid ""
+"There are no size or aspect ratio requirements for the VRS density texture. "
+"However, there is no benefit to using a VRS density map that is larger than "
+"the viewport resolution divided by the GPU's *tile size*. The tile size is "
+"what determines the smallest area of pixels where the shading density can be "
+"changed separately from other tiles. On most GPUs, this tile size is 8×8 "
+"pixels. You can view the tile size by running Godot with the ``--verbose`` "
+"command line argument, as it's printed in the VRS debugging information."
+msgstr ""
+
+msgid ""
+"Therefore, sticking to a relatively low resolution such as 256×256 (square) "
+"or 480×270 (16:9) is recommended. Depending on your use cases, a square "
+"texture may be more suited compared to a texture that matches the most "
+"common viewport aspect ratio in your project (such as 16:9)."
+msgstr ""
+
+msgid ""
+"When using variable rate shading, you can use a negative :ref:`texture "
+"mipmap LOD bias <doc_resolution_scaling_mipmap_bias>` to reduce blurriness "
+"in areas with reduced shading rate."
+msgstr ""
+
+msgid ""
+"Note that the texture LOD bias is set globally, so this will also affect "
+"areas of the viewport with full shading rate. Don't use values that are too "
+"low, or textures will appear grainy."
+msgstr ""
+
+#, fuzzy
+msgid "Performance comparison"
+msgstr "Mises en garde relatives aux performances"
+
+msgid ""
+"To give an idea of how much VRS can improve performance in theory, here's a "
+"performance comparison with the textured example scene shown at the top of "
+"this page. The VRS density map example present on this page is used."
+msgstr ""
+
+msgid ""
+"Results were captured on a GeForce RTX 4090 with the NVIDIA 525.60.11 driver."
+msgstr ""
+
+#, fuzzy
+msgid "Resolution"
+msgstr "iResolution"
+
+#, fuzzy
+msgid "VRS disabled"
+msgstr "Désactivé"
+
+#, fuzzy
+msgid "VRS enabled"
+msgstr "Activé"
+
+#, fuzzy
+msgid "Performance improvement"
+msgstr "Mises en garde relatives aux performances"
+
+msgid "1920×1080 (Full HD)"
+msgstr ""
+
+msgid "2832 FPS"
+msgstr ""
+
+msgid "3136 FPS"
+msgstr ""
+
+msgid "+10.7%"
+msgstr ""
+
+msgid "2560×1440 (QHD)"
+msgstr ""
+
+msgid "2008 FPS"
+msgstr ""
+
+msgid "2256 FPS"
+msgstr ""
+
+msgid "+12.3%"
+msgstr ""
+
+msgid "3840×2160 (4K)"
+msgstr ""
+
+msgid "1236 FPS"
+msgstr ""
+
+msgid "1436 FPS"
+msgstr ""
+
+msgid "+16.2%"
+msgstr ""
+
+msgid "7680×4320 (8K)"
+msgstr ""
+
+msgid "384 FPS"
+msgstr ""
+
+msgid "473 FPS"
+msgstr ""
+
+msgid "+23.1%"
+msgstr ""
+
+msgid ""
+"In terms of performance improvements, variable rate shading is more "
+"beneficial at higher target resolutions. The reduction in visual quality is "
+"also less noticeable at high resolutions."
+msgstr ""
+
+msgid ""
+"For non-VR games, you will probably have to use a less aggressive VRS "
+"texture than what was used in this example. As a result, the effective "
+"performance gains will be lower."
+msgstr ""
+
+msgid "Translation status"
+msgstr "État de la traduction"

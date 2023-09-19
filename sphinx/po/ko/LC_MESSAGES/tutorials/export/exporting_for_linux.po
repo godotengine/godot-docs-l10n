@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgstr "iOS로 내보내기"
 msgid ""
 "This page describes how to export a Godot project to Linux. If you're "
 "looking to compile editor or export template binaries from source instead, "
-"read :ref:`doc_compiling_for_x11`."
+"read :ref:`doc_compiling_for_linuxbsd`."
 msgstr ""
 
 #, fuzzy
@@ -49,6 +49,32 @@ msgstr ""
 "니다. PC로 내보낼 때 (Linux, Windows, macOS), 내보내기는 모든 프로젝트 파일"
 "을 가지고 ``data.pck`` 파일을 만듭니다. 이 파일은 특별히 최적화된 이진으로 묶"
 "여있어, 더 작고 빠르며, 편집기와 디버거를 포함하지 않습니다."
+
+msgid "Environment variables"
+msgstr ""
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+
+msgid "Linux export environment variables"
+msgstr ""
+
+#, fuzzy
+msgid "Export option"
+msgstr "내보내기 설정"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "환경 옵션"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
 
 msgid "Translation status"
 msgstr "번역 상태"

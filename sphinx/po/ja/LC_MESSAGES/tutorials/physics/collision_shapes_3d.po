@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,10 +41,10 @@ msgid ""
 msgstr ""
 
 msgid ""
-"You can define the shape of a :ref:`class_PhysicsBody` by adding one or "
-"more :ref:`CollisionShapes <class_CollisionShape>` as child nodes. Note that "
-"you must add a :ref:`class_Shape` *resource* to collision shape nodes in the "
-"Inspector dock."
+"You can define the shape of a :ref:`class_PhysicsBody3D` by adding one or "
+"more :ref:`CollisionShape3Ds <class_CollisionShape3D>` as child nodes. Note "
+"that you must add a :ref:`class_Shape3D` *resource* to collision shape nodes "
+"in the Inspector dock."
 msgstr ""
 
 msgid ""
@@ -61,19 +61,19 @@ msgid "Godot provides the following primitive collision shape types:"
 msgstr "Godotは、次の画像形式をインポートできます:"
 
 #, fuzzy
-msgid ":ref:`class_BoxShape`"
+msgid ":ref:`class_BoxShape3D`"
 msgstr "\\ :ref:`Sprite <class_Sprite>`"
 
 #, fuzzy
-msgid ":ref:`class_SphereShape`"
+msgid ":ref:`class_SphereShape3D`"
 msgstr ":ref:`CSGSphere <class_CSGSphere>`"
 
 #, fuzzy
-msgid ":ref:`class_CapsuleShape`"
+msgid ":ref:`class_CapsuleShape3D`"
 msgstr "\\ 9: :ref:`Plane<class_plane>`"
 
 #, fuzzy
-msgid ":ref:`class_CylinderShape`"
+msgid ":ref:`class_CylinderShape3D`"
 msgstr "\\ 9: :ref:`Plane<class_plane>`"
 
 msgid ""
@@ -94,7 +94,7 @@ msgid "Convex collision shapes"
 msgstr "コリジョン形状"
 
 msgid ""
-":ref:`Convex collision shapes <class_ConvexPolygonShape>` are a compromise "
+":ref:`Convex collision shapes <class_ConvexPolygonShape3D>` are a compromise "
 "between primitive collision shapes and concave collision shapes. They can "
 "represent shapes of any complexity, but with an important caveat. As their "
 "name implies, an individual shape can only represent a *convex* shape. For "
@@ -114,7 +114,7 @@ msgstr ""
 
 msgid ""
 "You can generate one or several convex collision shapes from the editor by "
-"selecting a MeshInstance and using the **Mesh** menu at the top of the 3D "
+"selecting a MeshInstance3D and using the **Mesh** menu at the top of the 3D "
 "viewport. The editor exposes two generation modes:"
 msgstr ""
 
@@ -138,7 +138,7 @@ msgid "Concave or trimesh collision shapes"
 msgstr "コリジョン形状"
 
 msgid ""
-":ref:`Concave collision shapes <class_ConcavePolygonShape>`, also called "
+":ref:`Concave collision shapes <class_ConcavePolygonShape3D>`, also called "
 "trimesh collision shapes, can take any form, from a few triangles to "
 "thousands of triangles. Concave shapes are the slowest option but are also "
 "the most accurate in Godot. **You can only use concave shapes within "
@@ -168,8 +168,8 @@ msgstr ""
 
 msgid ""
 "You can generate a concave collision shape from the editor by selecting a "
-"MeshInstance and using the **Mesh** menu at the top of the 3D viewport. The "
-"editor exposes two options:"
+"MeshInstance3D and using the **Mesh** menu at the top of the 3D viewport. "
+"The editor exposes two options:"
 msgstr ""
 
 msgid ""
@@ -197,9 +197,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Godot can generate collision shapes for your imported 3D scenes "
-"automatically. See :ref:`doc_importing_scenes_import_hints` in the "
-"documentation for more information."
+"See :ref:`doc_importing_3d_scenes` for information on how to export models "
+"for Godot and automatically generate collision shapes on import."
 msgstr ""
 
 #, fuzzy

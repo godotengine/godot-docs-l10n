@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,11 +24,27 @@ msgid "Introduction"
 msgstr "Johdanto"
 
 msgid ""
-"Godot has a simple serialization API based on Variant. It's used for "
-"converting data types to an array of bytes efficiently. This API is used in "
-"the functions ``get_var`` and ``store_var`` of :ref:`class_File` as well as "
-"the packet APIs for :ref:`class_PacketPeer`. This format is *not* used for "
-"binary scenes and resources."
+"Godot has a serialization API based on Variant. It's used for converting "
+"data types to an array of bytes efficiently. This API is exposed via the "
+"global :ref:`bytes_to_var() <class_@GlobalScope_method_bytes_to_var>` and :"
+"ref:`var_to_bytes() <class_@GlobalScope_method_var_to_bytes>` functions, but "
+"it is also used in the ``get_var`` and ``store_var`` methods of :ref:"
+"`class_FileAccess` as well as the packet APIs for :ref:`class_PacketPeer`. "
+"This format is *not* used for binary scenes and resources."
+msgstr ""
+
+msgid "Full Objects vs Object instance IDs"
+msgstr ""
+
+msgid ""
+"If a variable is serialized with ``full_objects = true``, then any Objects "
+"contained in the variable will be serialized and included in the result. "
+"This is recursive."
+msgstr ""
+
+msgid ""
+"If ``full_objects = false``, then only the instance IDs will be serialized "
+"for any Objects contained in the variable."
 msgstr ""
 
 msgid "Packet specification"
@@ -114,7 +130,7 @@ msgstr ""
 msgid "10"
 msgstr "10"
 
-msgid "quat"
+msgid "quaternion"
 msgstr ""
 
 msgid "11"
@@ -132,8 +148,9 @@ msgstr ""
 msgid "13"
 msgstr ""
 
-msgid "transform"
-msgstr ""
+#, fuzzy
+msgid "transform3d"
+msgstr "Muunna"
 
 msgid "14"
 msgstr ""
@@ -180,40 +197,56 @@ msgstr ""
 msgid "21"
 msgstr ""
 
-msgid "int array"
-msgstr ""
+#, fuzzy
+msgid "int32 array"
+msgstr "käännä taulukon järjestys."
 
 msgid "22"
 msgstr ""
 
-msgid "real array"
-msgstr ""
+#, fuzzy
+msgid "int64 array"
+msgstr "käännä taulukon järjestys."
 
 msgid "23"
+msgstr ""
+
+#, fuzzy
+msgid "float32 array"
+msgstr "Paikalliset taulukot"
+
+msgid "24"
+msgstr ""
+
+#, fuzzy
+msgid "float64 array"
+msgstr "Paikalliset taulukot"
+
+msgid "25"
 msgstr ""
 
 msgid "string array"
 msgstr ""
 
-msgid "24"
+msgid "26"
 msgstr ""
 
 msgid "vector2 array"
 msgstr ""
 
-msgid "25"
+msgid "27"
 msgstr ""
 
 msgid "vector3 array"
 msgstr ""
 
-msgid "26"
+msgid "28"
 msgstr ""
 
 msgid "color array"
 msgstr ""
 
-msgid "27"
+msgid "29"
 msgstr ""
 
 msgid "max"
@@ -371,8 +404,9 @@ msgstr ""
 msgid "Distance"
 msgstr ""
 
-msgid "10: :ref:`Quat<class_quat>`"
-msgstr ""
+#, fuzzy
+msgid "10: :ref:`Quaternion<class_quaternion>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 msgid "Imaginary X"
 msgstr ""
@@ -401,9 +435,6 @@ msgstr ""
 msgid "The Z component of the Y column vector, accessed via [1][2]"
 msgstr ""
 
-msgid "28"
-msgstr ""
-
 msgid "The X component of the Z column vector, accessed via [2][0]"
 msgstr ""
 
@@ -419,8 +450,9 @@ msgstr ""
 msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr ""
 
-msgid "13: :ref:`Transform<class_transform>`"
-msgstr ""
+#, fuzzy
+msgid "13: :ref:`Transform3D<class_transform3d>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 msgid "40"
 msgstr ""
@@ -496,7 +528,88 @@ msgstr ""
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
 msgstr ""
 
-msgid "17: :ref:`Object<class_object>` (unsupported)"
+#, fuzzy
+msgid "17: :ref:`Object<class_object>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
+
+msgid ""
+"An Object could be serialized in three different ways: as a null value, with "
+"``full_objects = false``, or with ``full_objects = true``."
+msgstr ""
+
+msgid "A null value"
+msgstr ""
+
+msgid "Zero (32-bit signed integer)"
+msgstr ""
+
+msgid "``full_objects`` disabled"
+msgstr ""
+
+msgid "The Object instance ID (64-bit signed integer)"
+msgstr ""
+
+msgid "``full_objects`` enabled"
+msgstr ""
+
+#, fuzzy
+msgid "Class name (String length)"
+msgstr "length"
+
+msgid "Class name (UTF-8 encoded string)"
+msgstr ""
+
+msgid "X+8"
+msgstr ""
+
+#, fuzzy
+msgid "The number of properties that are serialized"
+msgstr "Kuvioita on kuutta eri tyyppiä:"
+
+#, fuzzy
+msgid "For each property:"
+msgstr "Alueen ominaisuudet"
+
+msgid "Y"
+msgstr ""
+
+#, fuzzy
+msgid "Property name (String length)"
+msgstr "length"
+
+msgid "Y+4"
+msgstr ""
+
+msgid "Z"
+msgstr ""
+
+msgid "Property name (UTF-8 encoded string)"
+msgstr ""
+
+msgid "Y+4+Z"
+msgstr ""
+
+msgid "W"
+msgstr ""
+
+#, fuzzy
+msgid "<variable>"
+msgstr "Muuttuja"
+
+msgid "Property value, using this same format"
+msgstr ""
+
+msgid ""
+"Not all properties are included. Only properties that are configured with "
+"the :ref:"
+"`PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` "
+"flag set will be serialized. You can add a new usage flag to a property by "
+"overriding the :ref:"
+"`_get_property_list<class_Object_method__get_property_list>` method in your "
+"class. You can also check how property usage is configured by calling "
+"``Object._get_property_list`` See :ref:"
+"`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` for the possible "
+"usage flags."
 msgstr ""
 
 msgid "18: :ref:`Dictionary<class_dictionary>`"
@@ -518,8 +631,9 @@ msgid ""
 "other, using this same format."
 msgstr ""
 
-msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
-msgstr ""
+#, fuzzy
+msgid "20: :ref:`PackedByteArray<class_PackedByteArray>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 msgid "Array length (Bytes)"
 msgstr ""
@@ -536,8 +650,9 @@ msgstr ""
 msgid "The array data is padded to 4 bytes."
 msgstr ""
 
-msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
-msgstr ""
+#, fuzzy
+msgid "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 msgid "Array length (Integers)"
 msgstr ""
@@ -545,17 +660,33 @@ msgstr ""
 msgid "8..8+length\\*4"
 msgstr ""
 
-msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
+#, fuzzy
+msgid "22: :ref:`PackedInt64Array<class_PackedInt64Array>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
+
+msgid "8..8+length\\*8"
 msgstr ""
+
+#, fuzzy
+msgid "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 msgid "Array length (Floats)"
 msgstr ""
 
-msgid "32-bits IEEE 754 float"
+msgid "32-bit IEEE 754 single-precision float"
 msgstr ""
 
-msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
+#, fuzzy
+msgid "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
+
+msgid "64-bit IEEE 754 double-precision float"
 msgstr ""
+
+#, fuzzy
+msgid "25: :ref:`PackedStringArray<class_PackedStringArray>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 msgid "Array length (Strings)"
 msgstr ""
@@ -566,21 +697,20 @@ msgstr ""
 msgid "Every string is padded to 4 bytes."
 msgstr ""
 
-msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
-msgstr ""
+#, fuzzy
+msgid "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 #, fuzzy
 msgid "Array length"
 msgstr "ArrayMesh"
 
-msgid "8..8+length\\*8"
-msgstr ""
-
 msgid "8..12+length\\*8"
 msgstr ""
 
-msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
-msgstr ""
+#, fuzzy
+msgid "27: :ref:`PackedVector3Array<class_PackedVector3Array>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 msgid "8..8+length\\*12"
 msgstr ""
@@ -591,8 +721,9 @@ msgstr ""
 msgid "8..16+length\\*12"
 msgstr ""
 
-msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
-msgstr ""
+#, fuzzy
+msgid "28: :ref:`PackedColorArray<class_PackedColorArray>`"
+msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
 
 msgid "8..8+length\\*16"
 msgstr ""

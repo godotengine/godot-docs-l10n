@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -90,92 +90,86 @@ msgstr ""
 "节点的默认字体很小，不能很好地缩放。游戏资产包中有一个叫作“Xolonium-Regular."
 "ttf”的字体文件。 使用此字体需要执行以下操作："
 
+#, fuzzy
 msgid ""
-"Under **Theme overrides > Fonts** click on the empty box and select \"New "
-"DynamicFont\""
-msgstr ""
-"在 **Theme Overrides > Fonts** 中，点击空白内容并选择“新建 DynamicFont”"
-
-msgid ""
-"Click on the \"DynamicFont\" you added, and under **Font > FontData**, "
-"choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
+"Under \"Theme Overrides > Fonts\", choose \"Load\" and select the \"Xolonium-"
+"Regular.ttf\" file."
 msgstr ""
 "点击您添加的“DynamicFont”，然后在 **Font > Font Data** 的下拉选项中选择“加"
 "载”并选择“Xolonium-Regular.ttf”文件。"
 
-msgid "Set the \"Size\" property under ``Settings``, ``64`` works well."
-msgstr "设置 ``Settings`` 下的“Size”属性，设成 ``64`` 就可以。"
-
 msgid ""
-"Once you've done this on the ``ScoreLabel``, you can click the down arrow "
-"next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
-"place on the other two Control nodes."
+"The font size is still too small, increase it to ``64`` under \"Theme "
+"Overrides > Font Sizes\". Once you've done this with the ``ScoreLabel``, "
+"repeat the changes for the ``Message`` and ``StartButton`` nodes."
 msgstr ""
-"在 ``ScoreLabel`` 上完成此操作后，可以单击 Font 属性旁边向下的箭头，然后选"
-"择“复制”，然后将其“粘贴”到其他两个 Control 节点的相同位置。"
 
+#, fuzzy
 msgid ""
-"**Anchors and Margins:** ``Control`` nodes have a position and size, but "
-"they also have anchors and margins. Anchors define the origin - the "
-"reference point for the edges of the node. Margins update automatically when "
-"you move or resize a control node. They represent the distance from the "
-"control node's edges to its anchor."
+"**Anchors:** ``Control`` nodes have a position and size, but they also have "
+"anchors. Anchors define the origin - the reference point for the edges of "
+"the node."
 msgstr ""
 "**锚点和边距：**\\ ``Control`` 节点具有位置和大小，但它也有锚点（Anchor）和边"
 "距（Margin）。锚点定义的是原点——节点边缘的参考点。移动或调整控件节点大小时，"
 "边距会自动更新。边距表示的是控件节点的边缘与锚点的距离。"
 
+#, fuzzy
 msgid ""
-"Arrange the nodes as shown below. Click the \"Layout\" button to set a "
-"Control node's layout:"
-msgstr "按如下图所示排列节点。点击“布局”按钮以设置 Control 节点的布局："
-
-msgid ""
-"You can drag the nodes to place them manually, or for more precise "
-"placement, use the following settings:"
+"Arrange the nodes as shown below. You can drag the nodes to place them "
+"manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr "你可以拖动节点以手动放置它们，或者要进行更精确的放置，请使用以下设置："
 
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-msgid "*Layout* : \"Top Wide\""
-msgstr "*布局*\\ ：“顶部全幅”"
+msgid "Add the text ``0``."
+msgstr ""
 
-msgid "*Text* : ``0``"
-msgstr "*Text*\\ ：\\ ``0``"
+msgid ""
+"Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
+msgstr ""
 
-msgid "*Align* : \"Center\""
-msgstr "*Align*\\ ：“Center”"
+msgid "Choose the \"Anchor Preset\" ``Center Top``."
+msgstr ""
 
 msgid "Message"
 msgstr "Message"
 
-msgid "*Layout* : \"HCenter Wide\""
-msgstr "*布局*\\ ：“水平居中全幅”"
-
-msgid "*Text* : ``Dodge the Creeps!``"
+#, fuzzy
+msgid "Add the text ``Dodge the creeps!``."
 msgstr "*Text*\\ ：\\ ``Dodge the Creeps!``"
 
-msgid "*Autowrap* : \"On\""
-msgstr "*Autowrap*\\ ：“启用”"
+msgid ""
+"Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
+"line."
+msgstr ""
+
+msgid ""
+"Under \"Control - Layout/Transform\" set \"Size X\"  to ``480`` to use the "
+"entire width of the screen."
+msgstr ""
+
+msgid "Choose the \"Anchor Preset\" ``Center``."
+msgstr ""
 
 msgid "StartButton"
 msgstr "StartButton"
 
-msgid "*Text* : ``Start``"
+#, fuzzy
+msgid "Add the text ``Start``."
 msgstr "*Text*\\ ：\\ ``Start``"
 
-msgid "*Layout* : \"Center Bottom\""
-msgstr "*布局*\\ ：“底部居中”"
+msgid ""
+"Under \"Control - Layout/Transform\", set \"Size X\" to ``200`` and \"Size "
+"Y\" to ``100`` to add a little bit more padding between the border and text."
+msgstr ""
 
-msgid "*Margin* :"
-msgstr "*Margin*\\ ："
+msgid "Choose the \"Anchor Preset\" ``Center Bottom``."
+msgstr ""
 
-msgid "Top: ``-200``"
-msgstr "Top：\\ ``-200``"
-
-msgid "Bottom: ``-100``"
-msgstr "Bottom：\\ ``-100``"
+msgid "Under \"Control - Layout/Transform\", set \"Position Y\" to ``580``."
+msgstr ""
 
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
@@ -187,15 +181,20 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr "现将这个脚本添加到 ``HUD``\\ ："
 
+#, fuzzy
 msgid ""
-"The ``start_game`` signal tells the ``Main`` node that the button has been "
-"pressed."
-msgstr "``start_game`` 信号通知 ``Main`` 节点，按钮已经被按下。"
-
-msgid ""
-"This function is called when we want to display a message temporarily, such "
-"as \"Get Ready\"."
+"We now want to display a message temporarily, such as \"Get Ready\", so we "
+"add the following code"
 msgstr "当想显示一条临时消息时，比如“Get Ready”，就会调用这个函数。"
+
+#, fuzzy
+msgid ""
+"We also need to process what happens when the player loses. The code below "
+"will show \"Game Over\" for 2 seconds, then return to the title screen and, "
+"after a brief pause, show the \"Start\" button."
+msgstr ""
+"当玩家死亡时调用这个函数。将显示“Game Over”2 秒，然后返回标题屏幕并显"
+"示“Start”按钮。"
 
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
@@ -215,12 +214,13 @@ msgstr ""
 "使用 ``Timer`` 节点。这对于延迟非常有用，例如在上述代码中，在这里我们需要在显"
 "示“开始”按钮前等待片刻。"
 
-msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "每当分数改变，这个函数会被 ``Main`` 调用。"
+msgid "Add the code below to ``HUD`` to update the score"
+msgstr ""
 
+#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
-"signal of ``StartButton`` and add the following code to the new functions:"
+"signal of ``StartButton``, and add the following code to the new functions:"
 msgstr ""
 "连接 ``MessageTimer`` 的 ``timeout()`` 信号和 ``StartButton`` 的 "
 "``pressed()`` 信号并添加以下代码到新函数中："
@@ -244,15 +244,21 @@ msgstr ""
 "现在我们需要将 ``HUD`` 功能与我们的 ``Main`` 脚本连接起来。这需要在 ``Main`` "
 "场景中添加一些内容："
 
+#, fuzzy
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
-"``new_game()`` function of the Main node by typing \"new_game\" in the "
-"\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
+"``new_game()`` function of the Main node by clicking the \"Pick\" button in "
+"the \"Connect a Signal\" window and selecting the ``new_game()`` method or "
+"type \"new_game\" below \"Receiver Method\" in the window. Verify that the "
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
 "在节点选项卡中，通过在“连接信号”窗口的“接收方法”中键入 ``new_game``\\ ，将 "
 "HUD 的 ``start_game`` 信号连接到主节点的 ``new_game()`` 函数。观察绿色的连接"
 "图标现在是否在脚本中的 ``func new_game()`` 左边出现。"
+
+#, fuzzy
+msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
+msgstr "当你确定一切正常时，在 ``_ready()`` 中移除对 ``new_game()`` 的调用。"
 
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
@@ -263,15 +269,22 @@ msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "在 ``game_over()`` 中我们需要调用相应的 ``HUD`` 函数："
 
 msgid ""
-"Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
+"Just a reminder: we don't want to start the new game automatically, so "
+"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
 "最后，将下面的代码添加到 ``_on_ScoreTimer_timeout()`` 以保持不断变化的分数的"
 "同步显示："
 
+#, fuzzy
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
-"asked to select a main scene, so choose ``Main.tscn``."
+"asked to select a main scene, so choose ``main.tscn``."
 msgstr ""
 "现在你可以开始游戏了！点击“运行项目”按钮。将要求你选择一个主场景，因此选择 "
 "``Main.tscn``\\ 。"

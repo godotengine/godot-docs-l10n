@@ -1,0 +1,316 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Optimizing a build for size"
+msgstr "ビルドのサイズを最適化する"
+
+msgid "Rationale"
+msgstr "理由"
+
+msgid ""
+"Sometimes, it is desired to optimize a build for size rather than speed. "
+"This means not compiling unused functions from the engine, as well as using "
+"specific compiler flags to aid on decreasing build size. Common situations "
+"include creating builds for mobile and Web platforms."
+msgstr ""
+"時として、速度よりもサイズを重視して最適化したいこともあります。それには、エ"
+"ンジンの不必要な機能をコンパイルしないようにしたり、サイズ縮小に役立つ特定の"
+"コンパイラ フラグを用いることです。主に、モバイルやWebプラットフォーム向けの"
+"ビルドをする場合が想定されます。"
+
+msgid ""
+"This tutorial aims to give an overview on different methods to create a "
+"smaller binary. Before continuing, it is recommended to read the previous "
+"tutorials on compiling Godot for each platform."
+msgstr ""
+"このチュートリアルでは、より小さなバイナリを作るための複数の方法を紹介してい"
+"きます。先にすすむ前にまず、Godotをそれぞれのプラットフォームにコンパイルする"
+"ことについてのチュートリアルを読むことをおすすめします。"
+
+msgid ""
+"The options below are listed from the most important (greatest size savings) "
+"to the least important (lowest size savings)."
+msgstr ""
+
+msgid "Stripping binaries"
+msgstr "バイナリの除去"
+
+msgid "**Space savings:** Very high"
+msgstr ""
+
+msgid "**Difficulty:** Easy"
+msgstr ""
+
+msgid "**Performed in official builds:** Yes"
+msgstr ""
+
+msgid ""
+"If you build Windows (MinGW), Linux or macOS binaries from source, remember "
+"to strip debug symbols from binaries by installing the ``strip`` package "
+"from your distribution then running:"
+msgstr ""
+
+msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
+msgstr ""
+
+msgid ""
+"This will reduce the size of compiled binaries by a factor between 5× and "
+"10×. The downside is that crash backtraces will no longer provide accurate "
+"information (which is useful for troubleshooting the cause of a crash). :ref:"
+"`C++ profilers <doc_using_cpp_profilers>` will also no longer be able to "
+"display function names (this does not affect the built-in GDScript profiler)."
+msgstr ""
+
+msgid ""
+"The above command will not work on Windows binaries compiled with MSVC and "
+"platforms such as Android and HTML5. Instead, pass ``debug_symbols=no`` on "
+"the SCons command line when compiling."
+msgstr ""
+
+msgid "Optimizing for size instead of speed"
+msgstr "スピードの代わりにサイズを最適化する"
+
+msgid "**Space savings:** High"
+msgstr ""
+
+msgid "**Performed in official builds:** Yes, but only for HTML5"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+"Godot 3.1以降では、サイズ最適化にてコンパイルすることができます。これを有効に"
+"するには、\\ ``size`` にて ``optimize`` フラグを指定するだけです。"
+
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr ""
+"WebAssemblyのようないくつかのプラットフォームでは、標準でこのモードが有効に"
+"なっています。"
+
+msgid "Compiling with link-time optimization"
+msgstr "リンク時最適化を使用したコンパイル"
+
+msgid ""
+"Enabling link-time optimization produces more efficient binaries, both in "
+"terms of performance and file size. It works by eliminating duplicate "
+"template functions and unused code. It can currently be used with the GCC "
+"and MSVC compilers:"
+msgstr ""
+"リンク時最適化を有効にすると、パフォーマンスとファイルサイズの両方の点で、よ"
+"り効率的なバイナリが生成されます。重複するテンプレート関数と未使用のコードを"
+"排除することで機能します。現在、GCCおよびMSVCコンパイラで使用できます。"
+
+#, fuzzy
+msgid ""
+"Linking becomes much slower and more RAM-consuming with this option, so it "
+"should be used only for release builds:"
+msgstr ""
+"このオプションではリンクが非常に遅くなるため、リリースビルドにのみ使用する必"
+"要があります。"
+
+msgid ""
+"When compiling the ``master`` branch, you need to have at least 8 GB of RAM "
+"available for successful linking with LTO enabled."
+msgstr ""
+
+msgid ""
+"When compiling the ``3.x`` branch, you need to have at least 6 GB of RAM "
+"available for successful linking with LTO enabled."
+msgstr ""
+
+msgid "Disabling 3D"
+msgstr "3Dの無効化"
+
+msgid "**Space savings:** Moderate"
+msgstr ""
+
+msgid "**Performed in official builds:** No"
+msgstr ""
+
+msgid ""
+"For 2D games, having the whole 3D engine available usually makes no sense. "
+"Because of this, there is a build flag to disable it:"
+msgstr ""
+"2Dゲームに3Dエンジン全体を持たせることは、通常あまり意味はありません。そのた"
+"め、これを無効化するビルド フラグがあります:"
+
+msgid ""
+"Tools must be disabled in order to use this flag, as the editor is not "
+"designed to operate without 3D support. Without it, the binary size can be "
+"reduced by about 15%."
+msgstr ""
+"エディタは3Dサポート無しで動くようには設計されていないため、このフラグを使う"
+"には、まず tools を無効にする必要があります。3Dの無効化により、バイナリのサイ"
+"ズはおよそ15%減ります。"
+
+#, fuzzy
+msgid "Disabling advanced GUI objects"
+msgstr "高度なGUIノードの無効化"
+
+#, fuzzy
+msgid ""
+"Most small games don't require complex GUI controls such as Tree, ItemList, "
+"TextEdit or GraphEdit. They can be disabled using a build flag:"
+msgstr ""
+"ほとんどの小規模ゲームは、Tree、ItemList、TextEditorやGraphEditなどの複雑な"
+"GUIコントロールは必要としません。これらは、このビルド フラグにより無効化でき"
+"ます:"
+
+msgid "This is everything that will be disabled:"
+msgstr ""
+
+#, fuzzy
+msgid "FileDialog"
+msgstr "ファイルダイアログ"
+
+msgid "PopupMenu"
+msgstr ""
+
+#, fuzzy
+msgid "Tree"
+msgstr "シーンツリー"
+
+#, fuzzy
+msgid "TextEdit"
+msgstr "テキストエディタ"
+
+#, fuzzy
+msgid "CodeEdit"
+msgstr "テキストエディタ"
+
+msgid "SyntaxHighlighter"
+msgstr ""
+
+#, fuzzy
+msgid "CodeHighlighter"
+msgstr ""
+"HighPassFilter、HighShelfFilter(ハイパスフィルタ、ハイシェルフフィルタ)"
+
+msgid "TreeItem"
+msgstr ""
+
+#, fuzzy
+msgid "OptionButton"
+msgstr "最適化"
+
+msgid "SpinBox"
+msgstr ""
+
+#, fuzzy
+msgid "ColorPicker"
+msgstr "色空間"
+
+msgid "ColorPickerButton"
+msgstr ""
+
+#, fuzzy
+msgid "RichTextlabel"
+msgstr "RichTextLabelのBBCode"
+
+#, fuzzy
+msgid "RichTextEffect"
+msgstr "効果"
+
+#, fuzzy
+msgid "CharFXTransform"
+msgstr "トランスフォームをクリア"
+
+#, fuzzy
+msgid "AcceptDialog"
+msgstr "ファイルダイアログ"
+
+#, fuzzy
+msgid "ConfirmationDialog"
+msgstr "構成"
+
+#, fuzzy
+msgid "MarginContainer"
+msgstr "マージンコンテナ"
+
+#, fuzzy
+msgid "SubViewportContainer"
+msgstr "ビューポートコンテナ"
+
+#, fuzzy
+msgid "SplitContainer"
+msgstr "分割コンテナ"
+
+#, fuzzy
+msgid "HSplitContainer"
+msgstr "分割コンテナ"
+
+#, fuzzy
+msgid "VSplitContainer"
+msgstr "分割コンテナ"
+
+msgid "GraphNode"
+msgstr ""
+
+msgid "GraphEdit"
+msgstr ""
+
+msgid "Disabling unwanted modules"
+msgstr "不要なモジュールの無効化"
+
+msgid "**Space savings:** Very low to moderate depending on modules"
+msgstr ""
+
+msgid "**Difficulty:** Medium to hard depending on modules"
+msgstr ""
+
+msgid ""
+"A lot of Godot's functions are offered as modules. You can see a list of "
+"modules with the following command:"
+msgstr ""
+"Godotの機能の多くはモジュールとして提供されています。モジュールのリストを見る"
+"には、次のコマンドを使います:"
+
+msgid ""
+"The list of modules that can be disabled will appear, together with all "
+"build options. If you are working on a simple 2D game, you could disable a "
+"lot of them:"
+msgstr ""
+"無効にできるモジュールのリストが、ビルドオプションと共に表示されます。シンプ"
+"ルな2Dゲームであれば、このうちの多くを無効にできます:"
+
+#, fuzzy
+msgid ""
+"If this proves not to work for your use case, you should review the list of "
+"modules and see which ones you actually still need for your game (e.g. you "
+"might want to keep networking-related modules, regex support, or theora to "
+"play videos)."
+msgstr ""
+"これがあなたの事例に合わなかった場合、もういちどモジュールのリストを見直し"
+"て、どれがまだゲームに必要なのか確認してください (たとえば、ネットワーク関連"
+"のモジュールや、正規表現サポート、あるいはビデオ再生のためにtheora/webmを残し"
+"ておきたいかもしれません)。"
+
+msgid ""
+"Alternatively, you can supply a list of disabled modules by creating "
+"``custom.py`` at the root of the source, with the contents similar to the "
+"following:"
+msgstr ""
+
+msgid ":ref:`doc_overriding_build_options`."
+msgstr ":ref:'doc_overriding_build_options'。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

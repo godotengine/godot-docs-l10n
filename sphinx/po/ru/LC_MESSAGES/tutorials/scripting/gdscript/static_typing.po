@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,9 +44,6 @@ msgid ""
 msgstr ""
 "Статические типы могут использоваться для переменных, констант, функций, "
 "параметров и возвращаемых типов."
-
-msgid "Typed GDScript is available since Godot 3.1."
-msgstr "Типизированный GDScript доступен начиная с Godot 3.1."
 
 msgid "A brief look at static typing"
 msgstr "Краткий обзор статической типизации"
@@ -204,9 +201,10 @@ msgstr ""
 "предварительно загрузить скрипт, который вы хотите использовать в качестве "
 "типа константы:"
 
+#, fuzzy
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
-"the example above, your Rifle.gd would look like this:"
+"the example above, your rifle.gd would look like this:"
 msgstr ""
 "Второй метод заключается в использовании ключевого слова ``class_name`` при "
 "создании. Для приведенного выше примера ваш Rifle.gd будет выглядеть так:"
@@ -230,9 +228,10 @@ msgstr ""
 "Приведение типов является ключевым понятием в типизированных языках. "
 "Приведение - это преобразование значения из одного типа в другой."
 
+#, fuzzy
 msgid ""
 "Imagine an Enemy in your game, that ``extends Area2D``. You want it to "
-"collide with the Player, a ``KinematicBody2D`` with a script called "
+"collide with the Player, a ``CharacterBody2D`` with a script called "
 "``PlayerController`` attached to it. You use the ``on_body_entered`` signal "
 "to detect the collision. With typed code, the body you detect is going to be "
 "a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
@@ -308,9 +307,10 @@ msgstr ""
 "динамическом GDScript вы также не заботитесь о типе узла, если у него есть "
 "необходимые вам методы для вызова."
 
+#, fuzzy
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
-"``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
+"``($Timer as Timer)``, ``($Player as CharacterBody2D)``, etc. Godot will "
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
@@ -353,6 +353,31 @@ msgid "You can also use your own nodes as return types:"
 msgstr ""
 "Вы также можете использовать свои собственные узлы в качестве возвращаемых "
 "типов:"
+
+#, fuzzy
+msgid "Define the element type of an Array"
+msgstr "Определите тип возвращаемого значения функции с помощью стрелки ->"
+
+msgid "To define the type of an Array, enclose the type name in ``[]``."
+msgstr ""
+
+msgid ""
+"An array's type applies to ``for`` loop variables, as well as some operators "
+"like ``[]``, ``[]=``, and ``+``. Array methods (such as ``push_back``) and "
+"other operators (such as ``==``) are still untyped. Primitive types, builtin "
+"classes, and custom classes may be used as types. Nested array types are not "
+"supported."
+msgstr ""
+
+msgid ""
+"Since Godot 4.2, you can also specify a type for the loop variable in a "
+"``for`` loop. For instance, you can write:"
+msgstr ""
+
+msgid ""
+"The array will remain untyped, but the ``name`` variable within the ``for`` "
+"loop will always be of String type."
+msgstr ""
 
 msgid "Typed or dynamic: stick to one style"
 msgstr "Типизированный или динамичный: придерживайтесь одного стиля"
@@ -421,46 +446,33 @@ msgstr ""
 "Документация о системе предупреждений GDScript была перемещена в :ref:"
 "`doc_gdscript_warning_system`."
 
-msgid "Cases where you can't specify types"
+#, fuzzy
+msgid "A case where you can't specify types"
 msgstr "Случаи, когда вы не можете указывать типы"
 
+#, fuzzy
 msgid ""
-"To wrap up this introduction, let's cover a few cases where you can't use "
-"type hints. All the examples below **will trigger errors**."
+"To wrap up this introduction, let's mention a case where you can't use type "
+"hints. This will trigger a **syntax error**."
 msgstr ""
 "Чтобы завершить это введение, давайте рассмотрим несколько случаев, когда вы "
 "не можете использовать типовые подсказки. Все приведенные ниже примеры "
 "**вызовут ошибки**."
 
-msgid "You can't use Enums as types:"
-msgstr "Вы не можете использовать Перечисления как типы:"
-
-msgid ""
-"You can't specify the type of individual members in an array. This will give "
-"you an error:"
+#, fuzzy
+msgid "You can't specify the type of individual members in an array:"
 msgstr ""
 "Вы не можете указать тип отдельных членов в массиве. Это приведет к ошибке:"
-
-msgid ""
-"You can't force the assignment of types in a ``for`` loop, as each element "
-"the ``for`` keyword loops over already has a different type. So you "
-"**cannot** write:"
-msgstr ""
-"Вы не можете принудительно присваивать типы в цикле ``for``, так как каждый "
-"элемент, по которому проходит ключевое слово ``for``, уже имеет свой тип. "
-"Таким образом, вы **не можете** написать:"
-
-msgid "Two scripts can't depend on each other in a cyclic fashion:"
-msgstr "Два скрипта не могут циклически зависеть друг от друга:"
 
 msgid "Summary"
 msgstr "Подведение итогов"
 
+#, fuzzy
 msgid ""
-"Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
-"helps you write more structured code, avoid common errors, and create "
-"scalable systems. In the future, static types will also bring you a nice "
-"performance boost thanks to upcoming compiler optimizations."
+"Typed GDScript is a powerful tool. It helps you write more structured code, "
+"avoid common errors, and create scalable systems. In the future, static "
+"types will also bring you a nice performance boost thanks to upcoming "
+"compiler optimizations."
 msgstr ""
 "Типизированный GDScript - это мощный инструмент. Доступный начиная с версии "
 "3.1 Godot, он помогает вам писать более структурированный код, избегать "

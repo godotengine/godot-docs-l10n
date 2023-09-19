@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54,6 +54,12 @@ msgstr ""
 msgid "Features can be queried at run-time from the singleton API by calling:"
 msgstr ""
 
+msgid ""
+"OS feature tags are used by GDExtension to determine which libraries to "
+"load. For example, a library for ``linux.debug.editor.x86_64`` will be "
+"loaded only on a debug editor build for Linux x86_64."
+msgstr ""
+
 msgid "Default features"
 msgstr ""
 
@@ -68,58 +74,54 @@ msgstr "**Ominaisuusmerkintä**"
 msgid "**Description**"
 msgstr "**Kuvaus**"
 
-msgid "**Android**"
+#, fuzzy
+msgid "**android**"
+msgstr "Android"
+
+msgid "Running on Android (but not within a Web browser)"
 msgstr ""
 
-msgid "Running on Android"
+msgid "**bsd**"
 msgstr ""
 
-msgid "**HTML5**"
+msgid "Running on \\*BSD (but not within a Web browser)"
 msgstr ""
 
-msgid "Running on HTML5"
+msgid "**linux**"
 msgstr ""
 
-msgid "**JavaScript**"
+msgid "Running on Linux (but not within a Web browser)"
 msgstr ""
 
-msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
+msgid "**macos**"
 msgstr ""
 
-msgid "**OSX**"
+msgid "Running on macOS (but not within a Web browser)"
 msgstr ""
 
-msgid "Running on macOS"
+msgid "**ios**"
 msgstr ""
 
-msgid "**iOS**"
+msgid "Running on iOS (but not within a Web browser)"
 msgstr ""
 
-msgid "Running on iOS"
+msgid "**uwp**"
 msgstr ""
 
-msgid "**UWP**"
+msgid "Running on UWP (but not within a Web browser)"
 msgstr ""
 
-msgid "Running on UWP"
-msgstr ""
-
-msgid "**Windows**"
-msgstr ""
+#, fuzzy
+msgid "**windows**"
+msgstr "Windows"
 
 msgid "Running on Windows"
 msgstr ""
 
-msgid "**X11**"
+msgid "**linuxbsd**"
 msgstr ""
 
-msgid "Running on X11 (Linux/BSD desktop)"
-msgstr ""
-
-msgid "**Server**"
-msgstr ""
-
-msgid "Running on the headless server platform"
+msgid "Running on Linux or \\*BSD"
 msgstr ""
 
 msgid "**debug**"
@@ -140,10 +142,22 @@ msgstr "**editor**"
 msgid "Running on an editor build"
 msgstr ""
 
-msgid "**standalone**"
+msgid "**template**"
 msgstr ""
 
-msgid "Running on a non-editor build"
+msgid "Running on a non-editor (export template) build"
+msgstr ""
+
+msgid "**double**"
+msgstr ""
+
+msgid "Running on a double-precision build"
+msgstr ""
+
+msgid "**single**"
+msgstr ""
+
+msgid "Running on a single-precision build"
 msgstr ""
 
 msgid "**64**"
@@ -164,10 +178,16 @@ msgstr ""
 msgid "Running on a 64-bit x86 build"
 msgstr ""
 
-msgid "**x86**"
+msgid "**x86_32**"
 msgstr ""
 
 msgid "Running on a 32-bit x86 build"
+msgstr ""
+
+msgid "**x86**"
+msgstr ""
+
+msgid "Running on an x86 build (any bitness)"
 msgstr ""
 
 msgid "**arm64**"
@@ -176,10 +196,64 @@ msgstr ""
 msgid "Running on a 64-bit ARM build"
 msgstr ""
 
-msgid "**arm**"
+msgid "**arm32**"
 msgstr ""
 
 msgid "Running on a 32-bit ARM build"
+msgstr ""
+
+msgid "**arm**"
+msgstr ""
+
+msgid "Running on an ARM build (any bitness)"
+msgstr ""
+
+msgid "**rv64**"
+msgstr ""
+
+msgid "Running on a 64-bit RISC-V build"
+msgstr ""
+
+msgid "**riscv**"
+msgstr ""
+
+msgid "Running on a RISC-V build (any bitness)"
+msgstr ""
+
+msgid "**ppc64**"
+msgstr ""
+
+msgid "Running on a 64-bit PowerPC build"
+msgstr ""
+
+msgid "**ppc32**"
+msgstr ""
+
+msgid "Running on a 32-bit PowerPC build"
+msgstr ""
+
+msgid "**ppc**"
+msgstr ""
+
+msgid "Running on a PowerPC build (any bitness)"
+msgstr ""
+
+msgid "**wasm64**"
+msgstr ""
+
+msgid "Running on a 64-bit WebAssembly build (not yet possible)"
+msgstr ""
+
+msgid "**wasm32**"
+msgstr ""
+
+msgid "Running on a 32-bit WebAssembly build"
+msgstr ""
+
+msgid "**wasm**"
+msgstr ""
+
+msgid "Running on a WebAssembly build (any bitness)"
 msgstr ""
 
 msgid "**mobile**"
@@ -200,6 +274,36 @@ msgstr ""
 msgid "Host OS is a Web browser"
 msgstr ""
 
+msgid "**web_android**"
+msgstr ""
+
+msgid "Host OS is a Web browser running on Android"
+msgstr ""
+
+msgid "**web_ios**"
+msgstr ""
+
+msgid "Host OS is a Web browser running on iOS"
+msgstr ""
+
+msgid "**web_linuxbsd**"
+msgstr ""
+
+msgid "Host OS is a Web browser running on Linux or \\*BSD"
+msgstr ""
+
+msgid "**web_macos**"
+msgstr ""
+
+msgid "Host OS is a Web browser running on macOS"
+msgstr ""
+
+msgid "**web_windows**"
+msgstr ""
+
+msgid "Host OS is a Web browser running on Windows"
+msgstr ""
+
 msgid "**etc**"
 msgstr ""
 
@@ -218,17 +322,18 @@ msgstr ""
 msgid "Textures using S3TC (DXT/BC) compression are supported"
 msgstr ""
 
-msgid "**pvrtc**"
+msgid "**movie**"
 msgstr ""
 
-msgid "Textures using PVRTC compression are supported"
+msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
 msgstr ""
 
 msgid ""
-"With the exception of texture compression feature tags, default feature tags "
-"are **immutable**. This means that they will *not* change depending on run-"
-"time conditions. For example, ``OS.has_feature(\"mobile\")`` will return "
-"``false`` when running a project exported to HTML5 on a mobile device."
+"With the exception of texture compression and ``movie`` feature tags, "
+"default feature tags are **immutable**. This means that they will *not* "
+"change depending on run-time conditions. For example, ``OS."
+"has_feature(\"mobile\")`` will return ``false`` when running a project "
+"exported to HTML5 on a mobile device."
 msgstr ""
 
 msgid ""
@@ -292,7 +397,7 @@ msgstr ""
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "
-"is loaded and exported in **GDNative**."
+"is loaded and exported in **GDExtension**."
 msgstr ""
 
 msgid "Translation status"

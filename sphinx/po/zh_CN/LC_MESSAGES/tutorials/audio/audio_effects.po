@@ -1,0 +1,316 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Audio effects"
+msgstr "添加特效"
+
+msgid ""
+"Godot includes several audio effects that can be added to an audio bus to "
+"alter every sound file that goes through that bus."
+msgstr ""
+
+msgid ""
+"Try them all out to get a sense of how they alter sound. Here follows a "
+"short description of the available effects:"
+msgstr "全部试一试, 感受声音的改变. 下面是对以上效果的简短描述:"
+
+msgid "Amplify"
+msgstr "增幅(Amplify)"
+
+msgid ""
+"Amplify changes the amplitude of the signal. Some care needs to be taken. "
+"Setting the level too high can make the sound clip, which is usually "
+"undesirable."
+msgstr ""
+"增幅改变信号的振幅. 使用时要小心. 把电平调得太高的话, 声音就会被削波, 这通常"
+"是不可取的."
+
+msgid "BandLimit and BandPass"
+msgstr "带限和带通(BandLimit and BandPass)"
+
+msgid ""
+"These are resonant filters which block frequencies around the *Cutoff* "
+"point. BandPass can be used to simulate sound passing through an old "
+"telephone line or megaphone. Modulating the BandPass frequency can simulate "
+"the sound of a wah-wah guitar pedal, think of the guitar in Jimi Hendrix's "
+"*Voodoo Child (Slight Return)*."
+msgstr ""
+"它们是共振滤波器, 在 *截断* (Cutoff)点附近阻断频率. 带通滤波器可以用来模拟旧"
+"电话线路或扩音器传出的声音. 调节带通滤波器的频率, 可以模拟吉他哇音(wah-wah)踏"
+"板的声音, 想想吉米·亨德里克斯在 *Voodoo Child (Slight Return)* 中使用的吉他"
+"吧."
+
+msgid "Capture"
+msgstr "Capture（捕获）"
+
+msgid ""
+"The Capture effect copies the audio frames of the audio bus that it is on "
+"into an internal buffer. This can be used to capture data from the "
+"microphone or to transmit audio over the network in real-time."
+msgstr ""
+"Capture（采集）效果器会将其所在音频总线的音频帧复制到内部缓冲区中。可用于从麦"
+"克风获取音频或通过网络实时传输音频。"
+
+msgid "Chorus"
+msgstr "和声(Chorus)"
+
+msgid ""
+"The Chorus effect duplicates the incoming audio, delays the duplicate "
+"slightly and uses an LFO to continuously modulate the pitch of the "
+"duplicated signal before mixing the duplicated signal(s) and the original "
+"together again. This creates a shimmering effect and adds stereo width to "
+"the sound."
+msgstr ""
+"和声效果器会复制传入的音频, 稍微延迟重复信号, 并使用低频振荡器连续调节重复信"
+"号的音高, 然后再将重复信号(一个或多个)和原始信号混合在一起. 这就产生了一种微"
+"光效果, 并增加了声音的立体声宽度."
+
+msgid "Compressor"
+msgstr "压缩(Compressor)"
+
+msgid ""
+"A dynamic range compressor automatically attenuates the level of the "
+"incoming signal when its amplitude exceeds a certain threshold. The level of "
+"attenuation applied is proportional to how far the incoming audio exceeds "
+"the threshold. The compressor's Ratio parameter controls the degree of "
+"attenuation. One of the main uses of a compressor is to reduce the dynamic "
+"range of signals with very loud and quiet parts. Reducing the dynamic range "
+"of a signal can make it easier to mix."
+msgstr ""
+"当输入信号的幅度超过某一阈值时, 动态范围压缩器会自动衰减该信号的电平. 衰减的"
+"程度与传入的音频超过阈值的程度成正比. 压缩器的 \"比例\" 参数控制衰减的系数. "
+"压缩器的主要用途之一是, 一个信号具有非常大声和小声的部分时, 压缩器可以用于降"
+"低动态范围. 降低信号的动态范围会更方便混音."
+
+msgid "The compressor has many uses. For example:"
+msgstr "压缩器有很多用途. 例如:"
+
+msgid "It can be used in the Master bus to compress the whole output."
+msgstr "它可以在主总线中用于压缩整体输出."
+
+msgid ""
+"It can be used in voice channels to ensure they sound as even as possible."
+msgstr "它可以在人声通道中使用, 使它们听起来尽可能均匀."
+
+msgid ""
+"It can be *sidechained*. This means it can reduce the sound level of one "
+"signal using the level of another audio bus for threshold detection. This "
+"technique is very common in video game mixing to \"duck\" the level of music "
+"or sound effects when voices need to be heard."
+msgstr ""
+"它可以是 *Sidechained* . 也就是说, 它可以利用另一个音频总线的电平来降低一个信"
+"号的电平, 进行阈值检测. 这种技术在电子游戏混音中非常常见. 在出现语音时, 音乐"
+"或音效的电平会被 \"降低\"."
+
+msgid ""
+"It can accentuate transients by using a slower attack. This can make sound "
+"effects more punchy."
+msgstr "它可以通过较慢的启动(attack)来强调瞬态. 让音效听起来更有力."
+
+msgid ""
+"If your goal is to prevent a signal from exceeding a given amplitude "
+"altogether, rather than to reduce the dynamic range of the signal, a :ref:"
+"`limiter <doc_audio_buses_limiter>` is likely a better choice than a "
+"compressor."
+msgstr ""
+"如果你的目标是防止信号总体超过某个振幅限制, 而不是减少信号的动态范围……那么, :"
+"ref:`限幅器 (limiter)<doc_audio_buses_limiter>` 可能是比压缩器更好的选择."
+
+msgid "Delay"
+msgstr "延迟(Delay)"
+
+msgid ""
+"Adds an \"echo\" effect with a feedback loop. It can be used together with "
+"*Reverb* to simulate wide rooms, canyons, etc. where sound bounces are far "
+"apart."
+msgstr ""
+"通过反馈回路添加 \"回音\" 效果. 它可以与 *混响* (Reverb)一起使用, 模拟宽阔的"
+"房间, 峡谷等声音从远处反弹回来的地方."
+
+msgid "Distortion"
+msgstr "失真(Distortion)"
+
+msgid ""
+"Makes the sound distorted. Godot offers several types of distortion: "
+"*overdrive*, *tan* and *bit crushing*. Distortion can be used to simulate "
+"sound coming through a low-quality speaker or device."
+msgstr ""
+"使声音失真.Godot提供几种类型的失真: *overdrive* , *tan* 和 *bit crushing* . "
+"失真可以用来模拟通过低质量扬声器或设备发出的声音."
+
+msgid "EQ"
+msgstr "均衡器(EQ)"
+
+#, fuzzy
+msgid ""
+"EQ is what all other equalizers inherit from. It can be extended with Custom "
+"scripts to create an equalizer with a custom number of bands."
+msgstr ""
+"所有其他均衡器都从EQ继承而来. 它可以通过自定义脚本来扩展成一个具有自定义频段"
+"数的均衡器."
+
+msgid "EQ6, EQ10, EQ21"
+msgstr "EQ6, EQ10, EQ21"
+
+msgid ""
+"Godot provides three equalizers with different numbers of bands. An "
+"equalizer on the Master bus can be useful to cut frequencies that the "
+"device's speakers can't reproduce well (e.g. a mobile phone's speakers won't "
+"reproduce bass content well). The equalizer effect can be disabled when "
+"headphones are plugged in."
+msgstr ""
+"Godot提供三个具有不同频带数的均衡器. 主总线上的均衡器可以有效地削减设备扬声器"
+"不能很好地再现的频率(例如, 手机扬声器不能很好地再现低音部分). 插入耳机时可以"
+"禁用均衡器效果."
+
+msgid "Filter"
+msgstr "过滤器"
+
+msgid ""
+"Filter is what all other filters inherit from and should not be used "
+"directly."
+msgstr "滤波器是所有其他处理器继承自的效果, 不能直接使用."
+
+msgid "HighPassFilter"
+msgstr "高通滤波器( HighPassFilter)"
+
+msgid ""
+"Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used "
+"to reduce the bass content of a signal."
+msgstr ""
+"这些滤波器削减低于特定 *截断* 频率的频率. 高通滤波器用于降低信号的低音含量."
+
+msgid "HighShelfFilter"
+msgstr "高架滤波器(HighShelfFilter)"
+
+msgid "Reduces all frequencies above a specific *Cutoff* frequency."
+msgstr "减少所有高于特定 *截断* 值的频率."
+
+msgid "Limiter"
+msgstr "限幅器(Limiter)"
+
+msgid ""
+"A limiter is similar to a compressor, but it's less flexible and designed to "
+"prevent a signal's amplitude exceeding a given dB threshold. Adding a "
+"limiter to the Master bus is a safeguard against clipping."
+msgstr ""
+"限幅器类似于压缩器, 但灵活性较差, 功能是限制声音不能超过给定的dB阈值. 在主总"
+"线上添加一个限制器是防止削波的防护措施."
+
+msgid "LowPassFilter"
+msgstr "低通滤波器(LowPassFilter)"
+
+msgid ""
+"Cuts frequencies above a specific *Cutoff* frequency and can also resonate "
+"(boost frequencies close to the *Cutoff* frequency). Low pass filters can be "
+"used to simulate \"muffled\" sound. For instance, underwater sounds, sounds "
+"blocked by walls, or distant sounds."
+msgstr ""
+"削减高于特定 *截断* 频率的频率, 也可以产生共振(加强接近 *截断* 频率的频率). "
+"低通滤波器可以用来模拟 \"沉闷\" 的声音. 例如, 水下的声音, 墙后的声音或遥远的"
+"声音."
+
+msgid "LowShelfFilter"
+msgstr "低架过滤器(LowShelfFilter)"
+
+msgid "Reduces all frequencies below a specific *Cutoff* frequency."
+msgstr "削减所有低于特定 *截断* 值的频率."
+
+msgid "NotchFilter"
+msgstr "陷波滤波器(NotchFilter)"
+
+msgid ""
+"The opposite of the BandPassFilter, it removes a band of sound from the "
+"frequency spectrum at a given *Cutoff* frequency."
+msgstr "与带通滤波器相反, 它从频谱中的给定的 *截断* 处移除一个频段的声音."
+
+msgid "Panner"
+msgstr "声像(Panner)"
+
+msgid ""
+"The Panner allows the stereo balance of a signal to be adjusted between the "
+"left and right channels (wear headphones to audition this effect)."
+msgstr "声像效果允许在左右通道之间调整信号的立体声平衡(戴上耳机试听这个效果)."
+
+msgid "Phaser"
+msgstr "移相器(Phaser)"
+
+msgid ""
+"It probably does not make much sense to explain that this effect is formed "
+"by two signals being dephased and cancelling each other out. You can make a "
+"Darth Vader voice with it, or jet-like sounds."
+msgstr ""
+"这种效果是由两个信号移相后互相抵消产生的, 但光这么解释并不直观. 你可以用它制"
+"作达斯 · 维德的声音, 或类似喷射的声音."
+
+msgid "PitchShift"
+msgstr "移调(PitchShift)"
+
+msgid ""
+"This effect allows the adjustment of the signal's pitch independently of its "
+"speed. All frequencies can be increased/decreased with minimal effect on "
+"transients. PitchShift can be useful to create unusually high or deep voices."
+msgstr ""
+"这种效果允许在不改变速度的前提下改变音调. 可以用对瞬态的影响最小的方式增/减所"
+"有频率. 移调可以用来创作特别尖锐或低沉的声音."
+
+msgid "Record"
+msgstr "录制(Record)"
+
+msgid "The Record effect allows the user to record sound from a microphone."
+msgstr "Record 效果允许用户录制麦克风中的声音。"
+
+msgid "Reverb"
+msgstr "混响(Reverb)"
+
+#, fuzzy
+msgid ""
+"Reverb simulates rooms of different sizes. It has adjustable parameters that "
+"can be tweaked to obtain the sound of a specific room. Reverb is commonly "
+"outputted from :ref:`Area3Ds <class_Area3D>` (see :ref:`Reverb buses "
+"<doc_audio_streams_reverb_buses>`), or to apply a \"chamber\" feel to all "
+"sounds."
+msgstr ""
+"混响可以模拟不同大小的房间. 可以调整各种参数以获得特定房间的声效. 混响通常"
+"从 :ref:`Areas <class_Area>` 输出(见 :ref:`Reverb buses "
+"<doc_audio_streams_reverb_buses>`), 或对所有声音施加一个 \"室内\" 的感觉."
+
+msgid "SpectrumAnalyzer"
+msgstr "频谱分析仪(SpectrumAnalyzer)"
+
+msgid ""
+"This effect doesn't alter audio, instead, you add this effect to buses you "
+"want a spectrum analysis of. This would typically be used for audio "
+"visualization. A demo project using this can be found `here <https://github."
+"com/godotengine/godot-demo-projects/tree/master/audio/spectrum>`__."
+msgstr ""
+"这个效果并不会改变音频, 你可以把这个效果添加到你想要分析频谱的总线上. 通常被"
+"用于音频可视化. 使用了这个效果的演示项目可在 `这里 <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/audio/spectrum>`__ 找到."
+
+msgid "StereoEnhance"
+msgstr "立体声增强(StereoEnhance)"
+
+msgid ""
+"This effect uses a few algorithms to enhance a signal's stereo spectrum."
+msgstr "这种效果使用一些算法来增强信号的立体声频谱."
+
+msgid "Translation status"
+msgstr "翻译状态"

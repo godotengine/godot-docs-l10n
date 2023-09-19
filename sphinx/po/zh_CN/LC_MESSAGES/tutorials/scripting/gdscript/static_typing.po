@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,9 +41,6 @@ msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
 msgstr "静态类型可用于变量、常量、函数、参数、返回类型。"
-
-msgid "Typed GDScript is available since Godot 3.1."
-msgstr "从 Godot 3.1 开始，可以使用类型化的 GDScript。"
 
 msgid "A brief look at static typing"
 msgstr "静态类型简介"
@@ -179,9 +176,10 @@ msgstr ""
 "您可以将任何类(包括您的自定义类)用作类型. 有两种在脚本中使用它们的方法. 第一"
 "种方法是将要用作类型的脚本预加载为常量:"
 
+#, fuzzy
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
-"the example above, your Rifle.gd would look like this:"
+"the example above, your rifle.gd would look like this:"
 msgstr ""
 "第二种方法是在创建时使用 ``class_name`` 关键字. 对于上面的示例, 您的 ``Rifle."
 "gd`` 看起来就像这样:"
@@ -202,9 +200,10 @@ msgid ""
 "of a value from one type to another."
 msgstr "类型转换是类型语言的关键概念. 转换是将值从一种类型转换为另一种类型."
 
+#, fuzzy
 msgid ""
 "Imagine an Enemy in your game, that ``extends Area2D``. You want it to "
-"collide with the Player, a ``KinematicBody2D`` with a script called "
+"collide with the Player, a ``CharacterBody2D`` with a script called "
 "``PlayerController`` attached to it. You use the ``on_body_entered`` signal "
 "to detect the collision. With typed code, the body you detect is going to be "
 "a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
@@ -269,9 +268,10 @@ msgstr ""
 "了 ``Node`` 和 ``Object`` 这两个类。使用动态 GDScript，只要节点具有您需要调用"
 "的方法，您也不必关心节点的类型。"
 
+#, fuzzy
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
-"``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
+"``($Timer as Timer)``, ``($Player as CharacterBody2D)``, etc. Godot will "
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
@@ -306,6 +306,31 @@ msgstr "类型 ``void`` 表示函数不返回任何内容. 您可以使用任何
 
 msgid "You can also use your own nodes as return types:"
 msgstr "您还可以使用自己的节点作为返回类型:"
+
+#, fuzzy
+msgid "Define the element type of an Array"
+msgstr "使用箭头 ``->`` 定义函数的返回类型"
+
+msgid "To define the type of an Array, enclose the type name in ``[]``."
+msgstr ""
+
+msgid ""
+"An array's type applies to ``for`` loop variables, as well as some operators "
+"like ``[]``, ``[]=``, and ``+``. Array methods (such as ``push_back``) and "
+"other operators (such as ``==``) are still untyped. Primitive types, builtin "
+"classes, and custom classes may be used as types. Nested array types are not "
+"supported."
+msgstr ""
+
+msgid ""
+"Since Godot 4.2, you can also specify a type for the loop variable in a "
+"``for`` loop. For instance, you can write:"
+msgstr ""
+
+msgid ""
+"The array will remain untyped, but the ``name`` variable within the ``for`` "
+"loop will always be of String type."
+msgstr ""
 
 msgid "Typed or dynamic: stick to one style"
 msgstr "静态还是动态：坚持一种风格"
@@ -367,43 +392,31 @@ msgid ""
 "`doc_gdscript_warning_system`."
 msgstr "关于GDScript警告系统的文档已移至 :ref:`doc_gdscript_warning_system`."
 
-msgid "Cases where you can't specify types"
+#, fuzzy
+msgid "A case where you can't specify types"
 msgstr "无法指定类型的情况"
 
+#, fuzzy
 msgid ""
-"To wrap up this introduction, let's cover a few cases where you can't use "
-"type hints. All the examples below **will trigger errors**."
+"To wrap up this introduction, let's mention a case where you can't use type "
+"hints. This will trigger a **syntax error**."
 msgstr ""
 "为了总结这个介绍, 我们将介绍一些不能使用类型提示的情况. 以下所有示例 **都会触"
 "发错误** ."
 
-msgid "You can't use Enums as types:"
-msgstr "您不能将枚举作为类型:"
-
-msgid ""
-"You can't specify the type of individual members in an array. This will give "
-"you an error:"
+#, fuzzy
+msgid "You can't specify the type of individual members in an array:"
 msgstr "您无法指定数组中单个成员的类型. 这会给您一个错误:"
-
-msgid ""
-"You can't force the assignment of types in a ``for`` loop, as each element "
-"the ``for`` keyword loops over already has a different type. So you "
-"**cannot** write:"
-msgstr ""
-"您不能在 ``for`` 循环中强制指定类型, 因为 ``for`` 关键字循环中每个元素已经有"
-"不同的类型. 所以您 **不能** 指定类型:"
-
-msgid "Two scripts can't depend on each other in a cyclic fashion:"
-msgstr "两个脚本不能循环依赖:"
 
 msgid "Summary"
 msgstr "总结"
 
+#, fuzzy
 msgid ""
-"Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
-"helps you write more structured code, avoid common errors, and create "
-"scalable systems. In the future, static types will also bring you a nice "
-"performance boost thanks to upcoming compiler optimizations."
+"Typed GDScript is a powerful tool. It helps you write more structured code, "
+"avoid common errors, and create scalable systems. In the future, static "
+"types will also bring you a nice performance boost thanks to upcoming "
+"compiler optimizations."
 msgstr ""
 "类型化的GDScript是一个强大的工具. 从Godot 3.1版开始可用, 它可以帮助您编写更多"
 "结构化的代码, 避免常见错误, 以及创建可伸缩的系统. 将来, 由于即将进行的编译器"

@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Navigation Debug Tools"
+msgstr "Modo Navegação"
+
+msgid ""
+"The debug tools, properties and functions are only available in Godot debug "
+"builds. Do not use any of them in code that will be part of a release build."
+msgstr ""
+
+#, fuzzy
+msgid "Enabling debug navigation"
+msgstr "``--debug-navigation``"
+
+msgid ""
+"The navigation debug visualization is enabled by default inside the Editor. "
+"To visualize navigation meshes and connections also at runtime enable the "
+"option ``Visible Navigation`` in the editor debug menu."
+msgstr ""
+
+msgid ""
+"In Godot debug builds the navigation debug can also be toggled on the "
+"NavigationServers from scripts."
+msgstr ""
+
+#, fuzzy
+msgid "Debug navigation settings"
+msgstr "Configurações de depuração do projeto"
+
+msgid ""
+"The appearance of navigation debug can be change in the ProjectSettings "
+"under ``debug/shapes/navigation``. Certain debug features can also be "
+"enabled or disabled at will but may require a scene restart to apply."
+msgstr ""
+
+#, fuzzy
+msgid "Debug navigation mesh polygons"
+msgstr "Criando os polígonos"
+
+msgid ""
+"If ``enable_edge_lines`` is enabled the edges of navigation mesh polygons "
+"will be highlighted. If ``enable_edge_lines_xray`` is also enabled the edges "
+"of navigationmeshes will be visible through geometry."
+msgstr ""
+
+msgid ""
+"if ``enable_geometry_face_random_color`` is enabled each navigation mesh "
+"face receives a random color that is mixed with the main color from "
+"``geometry_face_color``."
+msgstr ""
+
+#, fuzzy
+msgid "Debug edge connections"
+msgstr "Opções do menu de depuração"
+
+msgid ""
+"Different navigation meshes connected within ``edge_connection_margin`` "
+"distance are overlaid. The color of the overlay is controlled with the "
+"navigation debug ``edge_connection_color``. The connections can be made "
+"visible through geometry with the navigation debug "
+"``enable_edge_connections_xray`` property."
+msgstr ""
+
+msgid "Edge connections are only visible when the NavigationServer is active."
+msgstr ""
+
+#, fuzzy
+msgid "Debug Performance"
+msgstr "Desempenho"
+
+msgid ""
+"To measure NavigationServer performance a dedicated monitor exists that can "
+"be found within the Editor Debugger under `Debugger->Monitors-"
+">NavigationProcess`."
+msgstr ""
+
+msgid ""
+"NavigationProcess shows how long the NavigationServer spends updating its "
+"internals this update frame in milliseconds. NavigationProcess works similar "
+"to Process for visual frame rendering and PhysicsProcess for collision and "
+"fixed updates."
+msgstr ""
+
+msgid ""
+"NavigationProcess accounts for all updates to ``navigation maps``, "
+"``navigation regions`` and ``navigation agents`` as well as all the "
+"``avoidance calculations`` for the update frame."
+msgstr ""
+
+msgid ""
+"NavigationProcess does NOT include pathfinding performance cause pathfinding "
+"operates on the navigation map data independently from the server process "
+"update."
+msgstr ""
+
+msgid ""
+"NavigationProcess should be in general kept as low and as stable as possible "
+"for runtime performance to avoid frame rate issues. Note that since the "
+"NavigationServer process update happens in the middle of the physics update "
+"an increase in NavigationProcess will automatically increase PhysicsProcess "
+"by the same amount."
+msgstr ""
+
+msgid ""
+"Navigation also provides more detailed statistics about the current "
+"navigation related objects and navigation map composition on the "
+"NavigationServer."
+msgstr ""
+
+msgid ""
+"Navigation statistics shown here can not be judged as good or bad for "
+"performance as it depends entirely on the project what can be considered as "
+"reasonable or horribly excessive."
+msgstr ""
+
+msgid ""
+"Navigation statistics help with identifying performance bottlenecks that are "
+"less obvious because the source might not always have a visible "
+"representation. E.g. pathfinding performance issues created by overly "
+"detailed navigation meshes with thousand of edges / polygons or problems "
+"caused by procedural navigation gone wrong."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Progresso da Tradução"

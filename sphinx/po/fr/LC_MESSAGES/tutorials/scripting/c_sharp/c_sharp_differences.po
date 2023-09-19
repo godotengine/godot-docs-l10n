@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,16 @@ msgid "Constants"
 msgstr "Constantes"
 
 msgid ""
-"Global constants were moved to their own enums. For example, ``ERR_*`` "
+"In C#, only primitive types can be constant. For example, the ``TAU`` "
+"constant is replaced by the ``Mathf.Tau`` constant, but the ``Vector2."
+"RIGHT`` constant is replaced by the ``Vector2.Right`` read-only property. "
+"This behaves similarly to a constant, but can't be used in some contexts "
+"like ``switch`` statements."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Global enum constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
 "Les constantes globales ont été déplacées dans leurs propres énumérations. "
@@ -67,12 +76,6 @@ msgstr "GDScript"
 
 msgid "C#"
 msgstr "C#"
-
-msgid "``SPKEY``"
-msgstr "``SPKEY``"
-
-msgid "``GD.SpKey``"
-msgstr "``GD.SpKey``"
 
 msgid "``TYPE_*``"
 msgstr "``TYPE_*``"
@@ -99,6 +102,11 @@ msgstr ""
 "``Atan`` and ``Atan2``. La constante ``PI`` peut être trouvée dans ``Mathf."
 "PI``."
 
+msgid ""
+"C# also provides static `System.Math`_ and `System.MathF`_ classes that may "
+"contain other useful mathematical operations."
+msgstr ""
+
 msgid "Random functions"
 msgstr "Fonctions aléatoires"
 
@@ -109,12 +117,18 @@ msgstr ""
 "Les fonctions globales aléatoires, comme ``rand_range`` et ``rand_seed``, se "
 "trouvent sous ``GD``. Exemple : ``GD.RandRange`` et ``GD.RandSeed``."
 
+msgid ""
+"Consider using `System.Random`_ or, if you need cryptographically strong "
+"randomness, `System.Security.Cryptography.RandomNumberGenerator`_."
+msgstr ""
+
 msgid "Other functions"
 msgstr "Autres fonctions"
 
+#, fuzzy
 msgid ""
-"Many other global functions like ``print`` and ``var2str`` are located under "
-"``GD``. Example: ``GD.Print`` and ``GD.Var2Str``."
+"Many other global functions like ``print`` and ``var_to_str`` are located "
+"under ``GD``. Example: ``GD.Print`` and ``GD.VarToStr``."
 msgstr ""
 "Beaucoup d'autres fonctions globales comme ``print`` et ``var2str`` se "
 "trouvent sous ``GD``. Exemple : ``GD.Print`` et ``GD.Var2Str``."
@@ -125,13 +139,31 @@ msgstr "Exceptions :"
 msgid "``weakref(obj)``"
 msgstr "``weakref(obj)``"
 
-msgid "``Object.WeakRef(obj)``"
+#, fuzzy
+msgid "``GodotObject.WeakRef(obj)``"
 msgstr "``Object.WeakRef(obj)``"
+
+#, fuzzy
+msgid "``instance_from_id(id)``"
+msgstr "``is_instance_valid(obj)``"
+
+#, fuzzy
+msgid "``GodotObject.InstanceFromId(id)``"
+msgstr "``Object.IsInstanceValid(obj)``"
+
+#, fuzzy
+msgid "``is_instance_id_valid(id)``"
+msgstr "``is_instance_valid(obj)``"
+
+#, fuzzy
+msgid "``GodotObject.IsInstanceIdValid(id)``"
+msgstr "``Object.IsInstanceValid(obj)``"
 
 msgid "``is_instance_valid(obj)``"
 msgstr "``is_instance_valid(obj)``"
 
-msgid "``Object.IsInstanceValid(obj)``"
+#, fuzzy
+msgid "``GodotObject.IsInstanceValid(obj)``"
 msgstr "``Object.IsInstanceValid(obj)``"
 
 msgid "Tips"
@@ -149,12 +181,738 @@ msgstr ""
 msgid "Example:"
 msgstr "Exemple :"
 
-msgid "Export keyword"
-msgstr "Mot-clé d'exportation"
+#, fuzzy
+msgid "Full list of equivalences"
+msgstr "Liste complète des définitions"
+
+msgid "List of Godot's global scope functions and their equivalent in C#:"
+msgstr ""
+
+#, fuzzy
+msgid "abs"
+msgstr "as"
+
+#, fuzzy
+msgid "Mathf.Abs"
+msgstr "Maths"
+
+msgid "absf"
+msgstr ""
+
+msgid "absi"
+msgstr ""
+
+msgid "acos"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Acos"
+msgstr "Fonctions mathématiques"
+
+msgid "asin"
+msgstr ""
+
+msgid "Mathf.Asin"
+msgstr ""
+
+msgid "atan"
+msgstr ""
+
+msgid "Mathf.Atan"
+msgstr ""
+
+msgid "atan2"
+msgstr ""
+
+msgid "Mathf.Atan2"
+msgstr ""
+
+msgid "bezier_derivative"
+msgstr ""
+
+msgid "Mathf.BezierDerivative"
+msgstr ""
+
+#, fuzzy
+msgid "bezier_interpolate"
+msgstr "Interpolation linéaire"
+
+#, fuzzy
+msgid "Mathf.BezierInterpolate"
+msgstr "Interpolation linéaire"
+
+msgid "bytes_to_var"
+msgstr ""
+
+msgid "GD.BytesToVar"
+msgstr ""
+
+msgid "bytes_to_var_with_objects"
+msgstr ""
+
+msgid "GD.BytesToVarWithObjects"
+msgstr ""
+
+msgid "ceil"
+msgstr ""
+
+msgid "Mathf.Ceil"
+msgstr ""
+
+msgid "ceilf"
+msgstr ""
+
+msgid "ceili"
+msgstr ""
+
+msgid "Mathf.CeilToInt"
+msgstr ""
+
+#, fuzzy
+msgid "clamp"
+msgstr "une lampe,"
+
+msgid "Mathf.Clamp"
+msgstr ""
+
+#, fuzzy
+msgid "clampf"
+msgstr "une lampe,"
+
+#, fuzzy
+msgid "clampi"
+msgstr "Amortissement"
+
+#, fuzzy
+msgid "cos"
+msgstr "cs"
+
+#, fuzzy
+msgid "Mathf.Cos"
+msgstr "Maths"
+
+msgid "cosh"
+msgstr ""
+
+msgid "Mathf.Cosh"
+msgstr ""
+
+#, fuzzy
+msgid "cubic_interpolate"
+msgstr "Interpolation linéaire"
+
+#, fuzzy
+msgid "Mathf.CubicInterpolate"
+msgstr "Introduction à la physique"
+
+msgid "cubic_interpoalte_angle"
+msgstr ""
+
+msgid "Mathf.CubicInterpolateAngle"
+msgstr ""
+
+msgid "cubic_interpolate_angle_in_time"
+msgstr ""
+
+msgid "Mathf.CubicInterpolateInTime"
+msgstr ""
+
+msgid "cubic_interpolate_in_time"
+msgstr ""
+
+msgid "Mathf.CubicInterpolateAngleInTime"
+msgstr ""
+
+msgid "db_to_linear"
+msgstr ""
+
+msgid "Mathf.DbToLinear"
+msgstr ""
+
+msgid "deg_to_rad"
+msgstr ""
+
+msgid "Mathf.DegToRad"
+msgstr ""
+
+msgid "ease"
+msgstr ""
+
+msgid "Mathf.Ease"
+msgstr ""
+
+#, fuzzy
+msgid "error_string"
+msgstr "chaîne"
+
+#, fuzzy
+msgid "Error.ToString"
+msgstr "Chaîne de caractères"
+
+#, fuzzy
+msgid "exp"
+msgstr "export"
+
+#, fuzzy
+msgid "Mathf.Exp"
+msgstr "Maths"
+
+#, fuzzy
+msgid "floor"
+msgstr "Plancher"
+
+#, fuzzy
+msgid "Mathf.Floor"
+msgstr "Plancher"
+
+#, fuzzy
+msgid "floorf"
+msgstr "Plancher"
+
+#, fuzzy
+msgid "floori"
+msgstr "Plancher"
+
+msgid "Mathf.FloorToInt"
+msgstr ""
+
+msgid "fmod"
+msgstr ""
+
+#, fuzzy
+msgid "operator %"
+msgstr "Opérateur"
+
+msgid "fposmod"
+msgstr ""
+
+msgid "Mathf.PosMod"
+msgstr ""
+
+msgid "hash"
+msgstr ""
+
+msgid "GD.Hash"
+msgstr ""
+
+msgid "instance_from_id"
+msgstr ""
+
+msgid "GodotObject.InstanceFromId"
+msgstr ""
+
+msgid "inverse_lerp"
+msgstr ""
+
+msgid "Mathf.InverseLerp"
+msgstr ""
+
+msgid "is_equal_approx"
+msgstr ""
+
+msgid "Mathf.IsEqualApprox"
+msgstr ""
+
+msgid "is_finite"
+msgstr ""
+
+msgid "Mathf.IsFinite or `float.IsFinite`_ or `double.IsFinite`_"
+msgstr ""
+
+#, fuzzy
+msgid "is_inf"
+msgstr "``is_inf``"
+
+msgid "Mathf.IsInf or `float.IsInfinity`_ or `double.IsInfinity`_"
+msgstr ""
+
+#, fuzzy
+msgid "is_instance_id_valid"
+msgstr "``is_instance_valid(obj)``"
+
+#, fuzzy
+msgid "GodotObject.IsInstanceIdValid"
+msgstr "``Object.IsInstanceValid(obj)``"
+
+#, fuzzy
+msgid "is_instance_valid"
+msgstr "``is_instance_valid(obj)``"
+
+#, fuzzy
+msgid "GodotObject.IsInstanceValid"
+msgstr "``Object.IsInstanceValid(obj)``"
+
+#, fuzzy
+msgid "is_nan"
+msgstr "``is_nan``"
+
+msgid "Mathf.IsNaN or `float.IsNaN`_ or `double.IsNaN`_"
+msgstr ""
+
+msgid "is_same"
+msgstr ""
+
+msgid "operator == or `object.ReferenceEquals`_"
+msgstr ""
+
+msgid "is_zero_approx"
+msgstr ""
+
+msgid "Mathf.IsZeroApprox"
+msgstr ""
+
+msgid "lerp"
+msgstr ""
+
+msgid "Mathf.Lerp"
+msgstr ""
+
+msgid "lerp_angle"
+msgstr ""
+
+msgid "Mathf.LerpAngle"
+msgstr ""
+
+msgid "lerpf"
+msgstr ""
+
+msgid "linear_to_db"
+msgstr ""
+
+msgid "Mathf.LinearToDb"
+msgstr ""
+
+#, fuzzy
+msgid "log"
+msgstr "Brouillard"
+
+#, fuzzy
+msgid "Mathf.Log"
+msgstr "Maths"
+
+msgid "max"
+msgstr "max"
+
+#, fuzzy
+msgid "Mathf.Max"
+msgstr "Maths"
+
+msgid "maxf"
+msgstr ""
+
+msgid "maxi"
+msgstr ""
+
+#, fuzzy
+msgid "min"
+msgstr "mi"
+
+#, fuzzy
+msgid "Mathf.Min"
+msgstr "Maths"
+
+msgid "minf"
+msgstr ""
+
+msgid "mini"
+msgstr ""
+
+msgid "move_toward"
+msgstr ""
+
+msgid "Mathf.MoveToward"
+msgstr ""
+
+msgid "nearest_po2"
+msgstr ""
+
+msgid "Mathf.NearestPo2"
+msgstr ""
+
+msgid "pingpong"
+msgstr ""
+
+msgid "Mathf.PingPong"
+msgstr ""
+
+msgid "posmod"
+msgstr ""
+
+msgid "pow"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Pow"
+msgstr "Maths"
+
+msgid "print"
+msgstr ""
+
+msgid "GD.Print"
+msgstr ""
+
+msgid "print_rich"
+msgstr ""
+
+msgid "GD.PrintRich"
+msgstr ""
+
+msgid "print_verbose"
+msgstr ""
+
+msgid "Use OS.IsStdoutVerbose and GD.Print"
+msgstr ""
+
+#, fuzzy
+msgid "printerr"
+msgstr "Entier"
+
+msgid "GD.PrintErr"
+msgstr ""
+
+msgid "printraw"
+msgstr ""
+
+msgid "GD.PrintRaw"
+msgstr ""
+
+#, fuzzy
+msgid "prints"
+msgstr "Conseils pour l'importation"
+
+msgid "GD.PrintS"
+msgstr ""
+
+#, fuzzy
+msgid "printt"
+msgstr "Imprimer du texte"
+
+msgid "GD.PrintT"
+msgstr ""
+
+msgid "push_error"
+msgstr ""
+
+msgid "GD.PushError"
+msgstr ""
+
+msgid "push_warning"
+msgstr ""
+
+msgid "GD.PushWarning"
+msgstr ""
+
+msgid "rad_to_deg"
+msgstr ""
+
+msgid "Mathf.RadToDeg"
+msgstr ""
+
+msgid "rand_from_seed"
+msgstr ""
+
+msgid "GD.RandFromSeed"
+msgstr ""
+
+msgid "randf"
+msgstr ""
+
+msgid "GD.Randf"
+msgstr ""
+
+msgid "randf_range"
+msgstr ""
+
+msgid "GD.RandRange"
+msgstr ""
+
+msgid "randfn"
+msgstr ""
+
+msgid "GD.Randfn"
+msgstr ""
+
+msgid "randi"
+msgstr ""
+
+msgid "GD.Randi"
+msgstr ""
+
+msgid "randi_range"
+msgstr ""
+
+#, fuzzy
+msgid "randomize"
+msgstr "Bruit aléatoire"
+
+#, fuzzy
+msgid "GD.Randomize"
+msgstr "Bruit aléatoire"
+
+#, fuzzy
+msgid "remap"
+msgstr "Tonemap"
+
+msgid "Mathf.Remap"
+msgstr ""
+
+msgid "rid_allocate_id"
+msgstr ""
+
+#, fuzzy
+msgid "N/A"
+msgstr "NAN"
+
+msgid "rid_from_int64"
+msgstr ""
+
+#, fuzzy
+msgid "round"
+msgstr "Arrondi"
+
+#, fuzzy
+msgid "Mathf.Round"
+msgstr "Arrondi"
+
+#, fuzzy
+msgid "roundf"
+msgstr "Arrondi"
+
+#, fuzzy
+msgid "roundi"
+msgstr "Arrondi"
+
+#, fuzzy
+msgid "Mathf.RoundToInt"
+msgstr "Fonctions mathématiques"
+
+msgid "seed"
+msgstr ""
+
+msgid "GD.Seed"
+msgstr ""
+
+#, fuzzy
+msgid "sign"
+msgstr "signal"
+
+msgid "Mathf.Sign"
+msgstr ""
+
+#, fuzzy
+msgid "signf"
+msgstr "signal"
+
+#, fuzzy
+msgid "signi"
+msgstr "signal"
+
+#, fuzzy
+msgid "sin"
+msgstr "si"
+
+#, fuzzy
+msgid "Mathf.Sin"
+msgstr "Maths"
+
+msgid "sinh"
+msgstr ""
+
+msgid "Mathf.Sinh"
+msgstr ""
+
+#, fuzzy
+msgid "smoothstep"
+msgstr "**smooth**"
+
+msgid "Mathf.SmoothStep"
+msgstr ""
+
+msgid "snapped"
+msgstr ""
+
+msgid "Mathf.Snapped"
+msgstr ""
+
+msgid "snappedf"
+msgstr ""
+
+msgid "snappedi"
+msgstr ""
+
+msgid "sqrt"
+msgstr ""
+
+msgid "Mathf.Sqrt"
+msgstr ""
+
+msgid "step_decimals"
+msgstr ""
+
+msgid "Mathf.StepDecimals"
+msgstr ""
+
+#, fuzzy
+msgid "str"
+msgstr "sr"
+
+#, fuzzy
+msgid "Use `$ string interpolation`_"
+msgstr "Interpolation vectorielle"
+
+msgid "str_to_var"
+msgstr ""
+
+msgid "GD.StrToVar"
+msgstr ""
+
+#, fuzzy
+msgid "tan"
+msgstr "ta"
+
+#, fuzzy
+msgid "Mathf.Tan"
+msgstr "Maths"
+
+msgid "tanh"
+msgstr ""
+
+msgid "Mathf.Tanh"
+msgstr ""
+
+#, fuzzy
+msgid "typeof"
+msgstr "Type"
+
+#, fuzzy
+msgid "Variant.VariantType"
+msgstr "``Variant.Type`` enum"
+
+msgid "var_to_bytes"
+msgstr ""
+
+msgid "GD.VarToBytes"
+msgstr ""
+
+msgid "var_to_bytes_with_objects"
+msgstr ""
+
+msgid "GD.VarToBytesWithObjects"
+msgstr ""
+
+msgid "var_to_str"
+msgstr ""
+
+msgid "GD.VarToStr"
+msgstr ""
+
+#, fuzzy
+msgid "weakref"
+msgstr "Ajustements"
+
+#, fuzzy
+msgid "GodotObject.WeakRef"
+msgstr "``Object.WeakRef(obj)``"
+
+msgid "wrap"
+msgstr ""
+
+msgid "Mathf.Wrap"
+msgstr ""
+
+msgid "wrapf"
+msgstr ""
+
+msgid "wrapi"
+msgstr ""
+
+msgid "List of GDScript utility functions and their equivalent in C#:"
+msgstr ""
+
+msgid "assert"
+msgstr "assert"
+
+msgid "`System.Diagnostics.Debug.Assert`_"
+msgstr ""
+
+msgid "char"
+msgstr ""
+
+msgid "Use explicit conversion: ``(char)65``"
+msgstr ""
+
+msgid "convert"
+msgstr ""
+
+msgid "GD.Convert"
+msgstr ""
+
+#, fuzzy
+msgid "dict_to_inst"
+msgstr "``dict2inst``"
+
+msgid "get_stack"
+msgstr ""
+
+msgid "`System.Environment.StackTrace`_"
+msgstr ""
+
+#, fuzzy
+msgid "inst_to_dict"
+msgstr "``inst2dict``"
+
+#, fuzzy
+msgid "len"
+msgstr "en"
+
+#, fuzzy
+msgid "load"
+msgstr "preload"
+
+msgid "GD.Load"
+msgstr ""
+
+msgid "preload"
+msgstr "preload"
+
+msgid "print_debug"
+msgstr ""
+
+#, fuzzy
+msgid "print_stack"
+msgstr "hint_black"
+
+msgid "GD.Print(`System.Environment.StackTrace`_)"
+msgstr ""
+
+#, fuzzy
+msgid "range"
+msgstr "Modifications"
+
+msgid "GD.Range or `System.Linq.Enumerable.Range`_"
+msgstr ""
+
+msgid "type_exists"
+msgstr ""
+
+msgid "ClassDB.ClassExists(type)"
+msgstr ""
 
 msgid ""
-"Use the ``[Export]`` attribute instead of the GDScript ``export`` keyword. "
-"This attribute can also be provided with optional :ref:"
+"``preload``, as it works in GDScript, is not available in C#. Use ``GD."
+"Load`` or ``ResourceLoader.Load`` instead."
+msgstr ""
+"``preload``, comme il fonctionne en GDScript, n'est pas disponible en C#. "
+"Utilisez ``GD.Load`` ou ``ResourceLoader.Load`` à la place."
+
+#, fuzzy
+msgid "``@export`` annotation"
+msgstr "Options d'exportation"
+
+#, fuzzy
+msgid ""
+"Use the ``[Export]`` attribute instead of the GDScript ``@export`` "
+"annotation. This attribute can also be provided with optional :ref:"
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
 "parameters. Default values can be set by assigning a value."
 msgstr ""
@@ -163,13 +921,22 @@ msgstr ""
 "`PropertyHint<enum_@GlobalScope_PropertyHint>` et ``hintString``. La valeur "
 "par défaut peut être réglée en assignant une valeur."
 
-msgid "Signal keyword"
+#, fuzzy
+msgid "See also: :ref:`doc_c_sharp_exports`."
+msgstr "Voir aussi : :ref:`doc_c_sharp_signals`."
+
+#, fuzzy
+msgid "``signal`` keyword"
 msgstr "Mot-clé de signal"
 
+#, fuzzy
 msgid ""
 "Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
-"name signature will be used to define the signal."
+"name signature will be used to define the signal. The `delegate` must have "
+"the ``EventHandler`` suffix, an `event` will be generated in the class with "
+"the same name but without the suffix, use that event's name with "
+"``EmitSignal``."
 msgstr ""
 "Utilisez l'attribut ``[Signal]`` pour déclarer un signal au lieu du mot-clé "
 "GDScript ``signal``. Cet attribut doit être utilisé sur un `delegate`, dont "
@@ -178,13 +945,14 @@ msgstr ""
 msgid "See also: :ref:`doc_c_sharp_signals`."
 msgstr "Voir aussi : :ref:`doc_c_sharp_signals`."
 
-msgid "`onready` keyword"
-msgstr "Mot-clé `onready`"
+msgid "`@onready` annotation"
+msgstr ""
 
+#, fuzzy
 msgid ""
 "GDScript has the ability to defer the initialization of a member variable "
-"until the ready function is called with `onready` (cf. :ref:"
-"`doc_gdscript_onready_keyword`). For example:"
+"until the ready function is called with `@onready` (cf. :ref:"
+"`doc_gdscript_onready_annotation`). For example:"
 msgstr ""
 "GDScript a la possibilité de différer l'initialisation d'une variable membre "
 "jusqu'à ce que la fonction ready soit appelée avec `onready` (cf. :ref:"
@@ -209,12 +977,13 @@ msgstr ""
 "patron singleton. C'est pour rendre le code moins verbeux qu'il ne le serait "
 "avec une propriété ``Instance``."
 
+#, fuzzy
 msgid ""
 "However, in some very rare cases this is not enough. For example, you may "
-"want to access a member from the base class ``Godot.Object``, like "
+"want to access a member from the base class ``GodotObject``, like "
 "``Connect``. For such use cases we provide a static property named "
 "``Singleton`` that returns the singleton instance. The type of this instance "
-"is ``Godot.Object``."
+"is ``GodotObject``."
 msgstr ""
 "Cependant, dans certains cas très rares, ce n'est pas suffisant. Par "
 "exemple, vous pouvez accéder à un membre de la classe de base ``Godot."
@@ -225,46 +994,858 @@ msgstr ""
 msgid "String"
 msgstr "Chaîne de caractères"
 
+#, fuzzy
 msgid ""
-"Use ``System.String`` (``string``). Most of Godot's String methods are "
-"provided by the ``StringExtensions`` class as extension methods."
+"Use ``System.String`` (``string``). Most of Godot's String methods have an "
+"equivalent in ``System.String`` or are provided by the ``StringExtensions`` "
+"class as extension methods."
 msgstr ""
 "Utilisez ``System.String`` (``string``). La plupart des méthodes String de "
 "Godot sont fournies par la classe ``StringExtensions`` comme méthodes "
 "d'extension."
 
-msgid "There are a few differences, though:"
-msgstr "Il y a cependant quelques différences :"
+msgid ""
+"Strings are immutable in .NET, so all methods that manipulate a string don't "
+"modify the original string and return a newly created string with the "
+"modifications applied. To avoid creating multiple string allocations "
+"consider using a `StringBuilder`_."
+msgstr ""
+
+msgid "List of Godot's String methods and their equivalent in C#:"
+msgstr ""
+
+msgid "begins_with"
+msgstr ""
+
+msgid "`string.StartsWith`_"
+msgstr ""
+
+msgid "bigrams"
+msgstr ""
+
+msgid "StringExtensions.Bigrams"
+msgstr ""
+
+msgid "bin_to_int"
+msgstr ""
+
+msgid "StringExtensions.BinToInt"
+msgstr ""
+
+msgid "c_escape"
+msgstr ""
+
+msgid "StringExtensions.CEscape"
+msgstr ""
+
+msgid "c_unescape"
+msgstr ""
+
+msgid "StringExtensions.CUnescape"
+msgstr ""
+
+#, fuzzy
+msgid "capitalize"
+msgstr "Majuscule à chaque mot"
+
+msgid "StringExtensions.Capitalize"
+msgstr ""
+
+msgid "casecmp_to"
+msgstr ""
 
 msgid ""
-"``erase``: Strings are immutable in C#, so we cannot modify the string "
-"passed to the extension method. For this reason, ``Erase`` was added as an "
-"extension method of ``StringBuilder`` instead of string. Alternatively, you "
-"can use ``string.Remove``."
+"StringExtensions.CasecmpTo or StringExtensions.CompareTo (Consider using "
+"`string.Equals`_ or `string.Compare`_)"
 msgstr ""
-"``erase`` : les chaînes de caractères sont immuables en C#, nous ne pouvons "
-"donc pas modifier la chaîne passée à la méthode d'extension. Pour cette "
-"raison, ``Erase`` a été ajoutée comme méthode d'extension de "
-"``StringBuilder`` au lieu de string. Alternativement, vous pouvez utiliser "
-"``string.Remove``."
+
+#, fuzzy
+msgid "chr"
+msgstr "hr"
+
+#, fuzzy
+msgid "contains"
+msgstr "Conteneurs"
+
+#, fuzzy
+msgid "`string.Contains`_"
+msgstr "Utilisation de Containers"
+
+#, fuzzy
+msgid "count"
+msgstr "Quantité"
+
+msgid "StringExtensions.Count (Consider using `RegEx`_)"
+msgstr ""
+
+#, fuzzy
+msgid "countn"
+msgstr "Quantité"
+
+msgid "StringExtensions.CountN (Consider using `RegEx`_)"
+msgstr ""
+
+msgid "dedent"
+msgstr ""
+
+msgid "StringExtensions.Dedent"
+msgstr ""
+
+msgid "ends_with"
+msgstr ""
+
+msgid "`string.EndsWith`_"
+msgstr ""
+
+#, fuzzy
+msgid "erase"
+msgstr "Caméras"
 
 msgid ""
-"``IsSubsequenceOf``/``IsSubsequenceOfi``: An additional method is provided, "
-"which is an overload of ``IsSubsequenceOf``, allowing you to explicitly "
-"specify case sensitivity:"
+"`string.Remove`_ (Consider using `StringBuilder`_ to manipulate strings)"
 msgstr ""
-"``IsSubsequenceOf``/``IsSubsequenceOfi`` : Une méthode supplémentaire est "
-"fournie, qui est une surcharge de ``IsSubsequenceOf`` permettant de "
-"spécifier explicitement la sensibilité à la casse :"
+
+msgid "find"
+msgstr ""
 
 msgid ""
-"``Match``/``Matchn``/``ExprMatch``: An additional method is provided besides "
-"``Match`` and ``Matchn``, which allows you to explicitly specify case "
-"sensitivity:"
+"StringExtensions.Find (Consider using `string.IndexOf`_ or `string."
+"IndexOfAny`_)"
 msgstr ""
-"``Match``/``Matchn``/``ExprMatch`` : Une méthode supplémentaire est fournie "
-"en plus de ``Match`` et ``Matchn``, qui permet de spécifier explicitement la "
-"sensibilité à la casse :"
+
+msgid "findn"
+msgstr ""
+
+msgid ""
+"StringExtensions.FindN (Consider using `string.IndexOf`_ or `string."
+"IndexOfAny`_)"
+msgstr ""
+
+#, fuzzy
+msgid "format"
+msgstr "Format"
+
+msgid "get_base_dir"
+msgstr ""
+
+msgid "StringExtensions.GetBaseDir"
+msgstr ""
+
+msgid "get_basename"
+msgstr ""
+
+msgid "StringExtensions.GetBaseName"
+msgstr ""
+
+#, fuzzy
+msgid "get_extension"
+msgstr "extends"
+
+msgid "StringExtensions.GetExtension"
+msgstr ""
+
+msgid "get_file"
+msgstr ""
+
+msgid "StringExtensions.GetFile"
+msgstr ""
+
+msgid "get_slice"
+msgstr ""
+
+msgid "get_slice_count"
+msgstr ""
+
+msgid "get_slicec"
+msgstr ""
+
+msgid ""
+"StringExtensions.Hash (Consider using `object.GetHashCode`_ unless you need "
+"to guarantee the same behavior as in GDScript)"
+msgstr ""
+
+msgid "hex_decode"
+msgstr ""
+
+msgid ""
+"StringExtensions.HexDecode (Consider using `System.Convert.FromHexString`_)"
+msgstr ""
+
+msgid "hex_to_int"
+msgstr ""
+
+msgid ""
+"StringExtensions.HexToInt (Consider using `int.Parse`_ or `long.Parse`_ with "
+"`System.Globalization.NumberStyles.HexNumber`_)"
+msgstr ""
+
+msgid "humanize_size"
+msgstr ""
+
+#, fuzzy
+msgid "indent"
+msgstr "**indenter**"
+
+msgid "StringExtensions.Indent"
+msgstr ""
+
+#, fuzzy
+msgid "insert"
+msgstr "assert"
+
+msgid ""
+"`string.Insert`_ (Consider using `StringBuilder`_ to manipulate strings)"
+msgstr ""
+
+msgid "is_absolute_path"
+msgstr ""
+
+msgid "StringExtensions.IsAbsolutePath"
+msgstr ""
+
+msgid "is_empty"
+msgstr ""
+
+msgid "`string.IsNullOrEmpty`_ or `string.IsNullOrWhiteSpace`_"
+msgstr ""
+
+msgid "is_relative_path"
+msgstr ""
+
+msgid "StringExtensions.IsRelativePath"
+msgstr ""
+
+msgid "is_subsequence_of"
+msgstr ""
+
+msgid "StringExtensions.IsSubsequenceOf"
+msgstr ""
+
+msgid "is_subsequence_ofn"
+msgstr ""
+
+msgid "StringExtensions.IsSubsequenceOfN"
+msgstr ""
+
+msgid "is_valid_filename"
+msgstr ""
+
+msgid "StringExtensions.IsValidFileName"
+msgstr ""
+
+msgid "is_valid_float"
+msgstr ""
+
+msgid ""
+"StringExtensions.IsValidFloat (Consider using `float.TryParse`_ or `double."
+"TryParse`_)"
+msgstr ""
+
+msgid "is_valid_hex_number"
+msgstr ""
+
+msgid "StringExtensions.IsValidHexNumber"
+msgstr ""
+
+msgid "is_valid_html_color"
+msgstr ""
+
+msgid "StringExtensions.IsValidHtmlColor"
+msgstr ""
+
+#, fuzzy
+msgid "is_valid_identifier"
+msgstr "Identifiants"
+
+msgid "StringExtensions.IsValidIdentifier"
+msgstr ""
+
+msgid "is_valid_int"
+msgstr ""
+
+msgid ""
+"StringExtensions.IsValidInt (Consider using `int.TryParse`_ or `long."
+"TryParse`_)"
+msgstr ""
+
+msgid "is_valid_ip_address"
+msgstr ""
+
+msgid "StringExtensions.IsValidIPAddress"
+msgstr ""
+
+msgid "join"
+msgstr ""
+
+#, fuzzy
+msgid "`string.Join`_"
+msgstr "chaîne"
+
+msgid "json_escape"
+msgstr ""
+
+msgid "StringExtensions.JSONEscape"
+msgstr ""
+
+msgid "left"
+msgstr ""
+
+msgid ""
+"StringExtensions.Left (Consider using `string.Substring`_ or `string."
+"AsSpan`_)"
+msgstr ""
+
+#, fuzzy
+msgid "length"
+msgstr "8..8+length"
+
+#, fuzzy
+msgid "`string.Length`_"
+msgstr "Longueur de chaîne de caractère"
+
+msgid "lpad"
+msgstr ""
+
+msgid "`string.PadLeft`_"
+msgstr ""
+
+#, fuzzy
+msgid "lstrip"
+msgstr "chaîne"
+
+msgid "`string.TrimStart`_"
+msgstr ""
+
+msgid "match"
+msgstr "match"
+
+msgid "StringExtensions.Match (Consider using `RegEx`_)"
+msgstr ""
+
+#, fuzzy
+msgid "matchn"
+msgstr "match"
+
+msgid "StringExtensions.MatchN (Consider using `RegEx`_)"
+msgstr ""
+
+msgid "md5_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.Md5Buffer (Consider using `System.Security.Cryptography.MD5."
+"HashData`_)"
+msgstr ""
+
+msgid "md5_text"
+msgstr ""
+
+msgid ""
+"StringExtensions.Md5Text (Consider using `System.Security.Cryptography.MD5."
+"HashData`_ with StringExtensions.HexEncode)"
+msgstr ""
+
+msgid "naturalnocasecmp_to"
+msgstr ""
+
+msgid "N/A (Consider using `string.Equals`_ or `string.Compare`_)"
+msgstr ""
+
+msgid "nocasecmp_to"
+msgstr ""
+
+msgid ""
+"StringExtensions.NocasecmpTo or StringExtensions.CompareTo (Consider using "
+"`string.Equals`_ or `string.Compare`_)"
+msgstr ""
+
+#, fuzzy
+msgid "num"
+msgstr "enum"
+
+msgid "`float.ToString`_ or `double.ToString`_"
+msgstr ""
+
+msgid "num_int64"
+msgstr ""
+
+msgid "`int.ToString`_ or `long.ToString`_"
+msgstr ""
+
+msgid "num_scientific"
+msgstr ""
+
+msgid "num_uint64"
+msgstr ""
+
+msgid "`uint.ToString`_ or `ulong.ToString`_"
+msgstr ""
+
+msgid "pad_decimals"
+msgstr ""
+
+msgid "StringExtensions.PadDecimals"
+msgstr ""
+
+msgid "pad_zeros"
+msgstr ""
+
+msgid "StringExtensions.PadZeros"
+msgstr ""
+
+msgid "path_join"
+msgstr ""
+
+msgid "StringExtensions.PathJoin"
+msgstr ""
+
+#, fuzzy
+msgid "repeat"
+msgstr "Répéter"
+
+msgid "Use `string constructor`_ or a `StringBuilder`_"
+msgstr ""
+
+#, fuzzy
+msgid "replace"
+msgstr "Remplacer"
+
+msgid "`string.Replace`_ or `RegEx`_"
+msgstr ""
+
+#, fuzzy
+msgid "replacen"
+msgstr "Remplacer"
+
+msgid ""
+"StringExtensions.ReplaceN (Consider using `string.Replace`_ or `RegEx`_)"
+msgstr ""
+
+msgid "rfind"
+msgstr ""
+
+msgid ""
+"StringExtensions.RFind (Consider using `string.LastIndexOf`_ or `string."
+"LastIndexOfAny`_)"
+msgstr ""
+
+msgid "rfindn"
+msgstr ""
+
+msgid ""
+"StringExtensions.RFindN (Consider using `string.LastIndexOf`_ or `string."
+"LastIndexOfAny`_)"
+msgstr ""
+
+#, fuzzy
+msgid "right"
+msgstr "Lumières"
+
+msgid ""
+"StringExtensions.Right (Consider using `string.Substring`_ or `string."
+"AsSpan`_)"
+msgstr ""
+
+msgid "rpad"
+msgstr ""
+
+msgid "`string.PadRight`_"
+msgstr ""
+
+msgid "rsplit"
+msgstr ""
+
+#, fuzzy
+msgid "rstrip"
+msgstr "chaîne"
+
+msgid "`string.TrimEnd`_"
+msgstr ""
+
+msgid "sha1_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.Sha1Buffer (Consider using `System.Security.Cryptography."
+"SHA1.HashData`_)"
+msgstr ""
+
+msgid "sha1_text"
+msgstr ""
+
+msgid ""
+"StringExtensions.Sha1Text (Consider using `System.Security.Cryptography.SHA1."
+"HashData`_ with StringExtensions.HexEncode)"
+msgstr ""
+
+msgid "sha256_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.Sha256Buffer (Consider using `System.Security.Cryptography."
+"SHA256.HashData`_)"
+msgstr ""
+
+msgid "sha256_text"
+msgstr ""
+
+msgid ""
+"StringExtensions.Sha256Text (Consider using `System.Security.Cryptography."
+"SHA256.HashData`_ with StringExtensions.HexEncode)"
+msgstr ""
+
+msgid "similarity"
+msgstr ""
+
+msgid "StringExtensions.Similarity"
+msgstr ""
+
+#, fuzzy
+msgid "simplify_path"
+msgstr "Amplifier (Amplify)"
+
+msgid "StringExtensions.SimplifyPath"
+msgstr ""
+
+msgid "split"
+msgstr ""
+
+msgid "StringExtensions.Split (Consider using `string.Split`_)"
+msgstr ""
+
+msgid "split_floats"
+msgstr ""
+
+msgid "StringExtensions.SplitFloat"
+msgstr ""
+
+msgid "strip_edges"
+msgstr ""
+
+msgid ""
+"StringExtensions.StripEdges (Consider using `string.Trim`_, `string."
+"TrimStart`_ or `string.TrimEnd`_)"
+msgstr ""
+
+msgid "strip_escapes"
+msgstr ""
+
+msgid "StringExtensions.StripEscapes"
+msgstr ""
+
+msgid "substr"
+msgstr ""
+
+msgid ""
+"StringExtensions.Substr (Consider using `string.Substring`_ or `string."
+"AsSpan`_)"
+msgstr ""
+
+msgid "to_ascii_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToAsciiBuffer (Consider using `System.Text.Encoding.ASCII."
+"GetBytes`_)"
+msgstr ""
+
+msgid "to_camel_case"
+msgstr ""
+
+msgid "StringExtensions.ToCamelCase"
+msgstr ""
+
+#, fuzzy
+msgid "to_float"
+msgstr "flottant"
+
+msgid ""
+"StringExtensions.ToFloat (Consider using `float.TryParse`_ or `double."
+"TryParse`_)"
+msgstr ""
+
+msgid "to_int"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToInt (Consider using `int.TryParse`_ or `long.TryParse`_)"
+msgstr ""
+
+msgid "to_lower"
+msgstr ""
+
+msgid "`string.ToLower`_"
+msgstr ""
+
+msgid "to_pascal_case"
+msgstr ""
+
+msgid "StringExtensions.ToPascalCase"
+msgstr ""
+
+msgid "to_snake_case"
+msgstr ""
+
+msgid "StringExtensions.ToSnakeCase"
+msgstr ""
+
+msgid "to_upper"
+msgstr ""
+
+msgid "`string.ToUpper`_"
+msgstr ""
+
+msgid "to_utf16_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToUtf16Buffer (Consider using `System.Text.Encoding.UTF16."
+"GetBytes`_)"
+msgstr ""
+
+msgid "to_utf32_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToUtf32Buffer (Consider using `System.Text.Encoding.UTF32."
+"GetBytes`_)"
+msgstr ""
+
+msgid "to_utf8_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToUtf8Buffer (Consider using `System.Text.Encoding.UTF8."
+"GetBytes`_)"
+msgstr ""
+
+msgid "to_wchar_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToUtf16Buffer in Windows and StringExtensiont.ToUtf32Buffer "
+"in other platforms"
+msgstr ""
+
+msgid "trim_prefix"
+msgstr ""
+
+msgid "StringExtensions.TrimPrefix"
+msgstr ""
+
+msgid "trim_suffix"
+msgstr ""
+
+msgid "StringExtensions.TrimSuffix"
+msgstr ""
+
+msgid "unicode_at"
+msgstr ""
+
+msgid "`string[int]`_ indexer"
+msgstr ""
+
+msgid "uri_decode"
+msgstr ""
+
+msgid ""
+"StringExtensions.URIDecode (Consider using `System.Uri.UnescapeDataString`_)"
+msgstr ""
+
+#, fuzzy
+msgid "uri_encode"
+msgstr "En utilisant le code"
+
+msgid ""
+"StringExtensions.URIEncode (Consider using `System.Uri.EscapeDataString`_)"
+msgstr ""
+
+msgid "validate_node_name"
+msgstr ""
+
+msgid "StringExtensions.ValidateNodeName"
+msgstr ""
+
+msgid "xml_escape"
+msgstr ""
+
+msgid "StringExtensions.XMLEscape"
+msgstr ""
+
+msgid "xml_unescape"
+msgstr ""
+
+msgid "StringExtensions.XMLUnescape"
+msgstr ""
+
+msgid ""
+"List of Godot's PackedByteArray methods that create a String and their C# "
+"equivalent:"
+msgstr ""
+
+msgid "get_string_from_ascii"
+msgstr ""
+
+msgid ""
+"StringExtensions.GetStringFromAscii (Consider using `System.Text.Encoding."
+"ASCII.GetString`_)"
+msgstr ""
+
+msgid "get_string_from_utf16"
+msgstr ""
+
+msgid ""
+"StringExtensions.GetStringFromUtf16 (Consider using `System.Text.Encoding."
+"UTF16.GetString`_)"
+msgstr ""
+
+msgid "get_string_from_utf32"
+msgstr ""
+
+msgid ""
+"StringExtensions.GetStringFromUtf32 (Consider using `System.Text.Encoding."
+"UTF32.GetString`_)"
+msgstr ""
+
+msgid "get_string_from_utf8"
+msgstr ""
+
+msgid ""
+"StringExtensions.GetStringFromUtf8 (Consider using `System.Text.Encoding."
+"UTF8.GetString`_)"
+msgstr ""
+
+msgid "hex_encode"
+msgstr ""
+
+msgid ""
+"StringExtensions.HexEncode (Consider using `System.Convert.ToHexString`_)"
+msgstr ""
+
+msgid ""
+".NET contains many path utility methods available under the `System.IO."
+"Path`_ class that can be used when not dealing with Godot paths (paths that "
+"start with ``res://`` or ``user://``)"
+msgstr ""
+
+msgid "NodePath"
+msgstr "NodePath"
+
+msgid "The following method was converted to a property with a different name:"
+msgstr ""
+"La méthode suivante a été convertie en une propriété avec un nom différent :"
+
+#, fuzzy
+msgid "``is_empty()``"
+msgstr "``center()``"
+
+msgid "``IsEmpty``"
+msgstr ""
+
+msgid "Signal"
+msgstr "Signaux"
+
+msgid ""
+"The following methods were converted to properties with their respective "
+"names changed:"
+msgstr ""
+"Les méthodes suivantes ont été converties en propriétés avec leurs noms "
+"respectifs modifiés :"
+
+#, fuzzy
+msgid "``get_name()``"
+msgstr "``get_area()``"
+
+#, fuzzy
+msgid "``Name``"
+msgstr "``name``"
+
+#, fuzzy
+msgid "``get_object()``"
+msgstr "``get_area()``"
+
+#, fuzzy
+msgid "``Owner``"
+msgstr "``owner``"
+
+msgid ""
+"The ``Signal`` type implements the awaitable pattern which means it can be "
+"used with the ``await`` keyword. See :ref:`doc_c_sharp_differences_await`."
+msgstr ""
+
+msgid ""
+"Instead of using the ``Signal`` type, the recommended way to use Godot "
+"signals in C# is to use the generated C# events. See :ref:"
+"`doc_c_sharp_signals`."
+msgstr ""
+
+#, fuzzy
+msgid "Callable"
+msgstr "Call"
+
+#, fuzzy
+msgid "``Target``"
+msgstr "Cible"
+
+#, fuzzy
+msgid "``get_method()``"
+msgstr "``method``"
+
+#, fuzzy
+msgid "``Method``"
+msgstr "``method``"
+
+msgid "Currently C# supports ``Callable`` if one of the following holds:"
+msgstr ""
+
+msgid "``Callable`` was created using the C# ``Callable`` type."
+msgstr ""
+
+msgid ""
+"``Callable`` is a basic version of the engine's ``Callable``. Custom "
+"``Callable``\\ s are unsupported. A ``Callable`` is custom when any of the "
+"following holds:"
+msgstr ""
+
+msgid ""
+"``Callable`` has bound information (``Callable``\\ s created with ``bind``/"
+"``unbind`` are unsupported)."
+msgstr ""
+
+msgid ""
+"``Callable`` was created from other languages through the GDExtension API."
+msgstr ""
+
+msgid ""
+"Some methods such as ``bind`` and ``unbind`` are not implemented, use "
+"lambdas instead:"
+msgstr ""
+
+msgid ""
+"The lambda captures the ``name`` variable so it can be bound to the "
+"``SayHello`` method."
+msgstr ""
+
+msgid "RID"
+msgstr "RID"
+
+#, fuzzy
+msgid "This type is named ``Rid`` in C# to follow the .NET naming convention."
+msgstr "Pour ce projet, nous suivrons les conventions de nommage de Godot."
+
+#, fuzzy
+msgid "``get_id()``"
+msgstr "``get_area()``"
+
+msgid "``Id``"
+msgstr ""
+
+#, fuzzy
+msgid "``is_valid()``"
+msgstr "``is_instance_valid(obj)``"
+
+msgid "``IsValid``"
+msgstr ""
 
 msgid "Basis"
 msgstr "Basis"
@@ -278,10 +1859,6 @@ msgstr ""
 "c'est pourquoi ``new Basis()`` initialise tous les membres primitifs à leur "
 "valeur par défaut. Utilisez ``Basis.Identity`` pour l'équivalent de "
 "``Basis()`` en GDScript et C++."
-
-msgid "The following method was converted to a property with a different name:"
-msgstr ""
-"La méthode suivante a été convertie en une propriété avec un nom différent :"
 
 msgid "``get_scale()``"
 msgstr "``get_scale()``"
@@ -303,34 +1880,34 @@ msgstr ""
 "leur valeur par défaut. Veuillez utiliser ``Transform2D.Identity`` pour "
 "l'équivalent de ``Transform2D()`` en GDScript et C++."
 
-msgid ""
-"The following methods were converted to properties with their respective "
-"names changed:"
-msgstr ""
-"Les méthodes suivantes ont été converties en propriétés avec leurs noms "
-"respectifs modifiés :"
-
 msgid "``get_rotation()``"
 msgstr "``get_rotation()``"
 
 msgid "``Rotation``"
 msgstr "``Rotation``"
 
-msgid "Plane"
-msgstr "Plan"
+#, fuzzy
+msgid "``get_skew()``"
+msgstr "``get_scale()``"
 
-msgid ""
-"The following method was converted to a property with a *slightly* different "
-"name:"
+msgid "``Skew``"
 msgstr ""
-"La méthode suivante a été convertie en une propriété avec un nom légèrement "
-"différent :"
 
-msgid "``center()``"
-msgstr "``center()``"
+#, fuzzy
+msgid "Transform3D"
+msgstr "Transform2D"
 
-msgid "``Center``"
-msgstr "``Center``"
+#, fuzzy
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Transform3D()`` initializes all primitive members to their default value. "
+"Please use ``Transform3D.Identity`` for the equivalent of ``Transform3D()`` "
+"in GDScript and C++."
+msgstr ""
+"Les Structs ne peuvent pas avoir de constructeurs sans paramètres en C#, "
+"c'est pourquoi ``new Transform2D()`` initialise tous les membres primitifs à "
+"leur valeur par défaut. Veuillez utiliser ``Transform2D.Identity`` pour "
+"l'équivalent de ``Transform2D()`` en GDScript et C++."
 
 msgid "Rect2"
 msgstr "Rect2"
@@ -354,13 +1931,69 @@ msgstr "``get_area()``"
 msgid "``Area``"
 msgstr "``Area``"
 
-msgid "Quat"
-msgstr "Quat"
+#, fuzzy
+msgid "Rect2i"
+msgstr "Rect2"
 
 msgid ""
+"This type is named ``Rect2I`` in C# to follow the .NET naming convention."
+msgstr ""
+
+msgid "AABB"
+msgstr ""
+
+#, fuzzy
+msgid "This type is named ``Aabb`` in C# to follow the .NET naming convention."
+msgstr "Pour ce projet, nous suivrons les conventions de nommage de Godot."
+
+#, fuzzy
+msgid "``get_volume()``"
+msgstr "``get_scale()``"
+
+#, fuzzy
+msgid "``Volume``"
+msgstr "``name``"
+
+msgid "Quaternion"
+msgstr ""
+
+#, fuzzy
+msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
-"Quat()`` initializes all primitive members to their default value. Please "
-"use ``Quat.Identity`` for the equivalent of ``Quat()`` in GDScript and C++."
+"Quaternion()`` initializes all primitive members to their default value. "
+"Please use ``Quaternion.Identity`` for the equivalent of ``Quaternion()`` in "
+"GDScript and C++."
+msgstr ""
+"Les Structs ne peuvent pas avoir de constructeurs sans paramètres en C#, "
+"c'est pourquoi ``new Quat()`` initialise tous les membres primitifs à leur "
+"valeur par défaut. Veuillez utiliser ``Quat.Identity`` pour l'équivalent de "
+"``Quat()`` en GDScript et C++."
+
+#, fuzzy
+msgid "Projection"
+msgstr "Direction"
+
+#, fuzzy
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Projection()`` initializes all primitive members to their default value. "
+"Please use ``Projection.Identity`` for the equivalent of ``Projection()`` in "
+"GDScript and C++."
+msgstr ""
+"Les Structs ne peuvent pas avoir de constructeurs sans paramètres en C#, "
+"c'est pourquoi ``new Quat()`` initialise tous les membres primitifs à leur "
+"valeur par défaut. Veuillez utiliser ``Quat.Identity`` pour l'équivalent de "
+"``Quat()`` en GDScript et C++."
+
+msgid "Color"
+msgstr "Couleur"
+
+#, fuzzy
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Color()`` initializes all primitive members to their default value (which "
+"represents the transparent black color). Please use ``Colors.Black`` for the "
+"equivalent of ``Color()`` in GDScript and C++."
 msgstr ""
 "Les Structs ne peuvent pas avoir de constructeurs sans paramètres en C#, "
 "c'est pourquoi ``new Quat()`` initialise tous les membres primitifs à leur "
@@ -368,110 +2001,106 @@ msgstr ""
 "``Quat()`` en GDScript et C++."
 
 msgid ""
-"The following methods were converted to a property with a different name:"
+"The global ``Color8`` method to construct a Color from bytes is available as "
+"a static method in the Color type."
 msgstr ""
-"Les méthodes suivantes ont été converties en une propriété avec un nom "
-"différent :"
 
-msgid "``length()``"
-msgstr "``length()``"
+msgid ""
+"The Color constants are available in the ``Colors`` static class as readonly "
+"properties."
+msgstr ""
 
-msgid "``Length``"
-msgstr "``Length``"
+#, fuzzy
+msgid "``get_luminance()``"
+msgstr "``get_area()``"
 
-msgid "``length_squared()``"
-msgstr "``length_squared()``"
+#, fuzzy
+msgid "``Luminance``"
+msgstr "``instance``"
 
-msgid "``LengthSquared``"
-msgstr "``LengthSquared``"
+#, fuzzy
+msgid "The following method was converted to a method with a different name:"
+msgstr ""
+"La méthode suivante a été convertie en une propriété avec un nom différent :"
+
+#, fuzzy
+msgid "``html(String)``"
+msgstr "``String[]``"
+
+msgid "``FromHtml(ReadOnlySpan<char>)``"
+msgstr ""
+
+#, fuzzy
+msgid "The following methods are available as constructors:"
+msgstr "Les méthodes suivantes sont disponibles et documentées ci-dessous :"
+
+msgid "``hex(int)``"
+msgstr ""
+
+#, fuzzy
+msgid "``Color(uint)``"
+msgstr "``Color8``"
+
+msgid "``hex64(int)``"
+msgstr ""
+
+#, fuzzy
+msgid "``Color(ulong)``"
+msgstr "``Color8``"
 
 msgid "Array"
 msgstr "Tableau"
 
-msgid ""
-"*This is temporary. PoolArrays will need their own types to be used the way "
-"they are meant to.*"
+msgid "The equivalent of packed arrays are ``System.Array``."
 msgstr ""
-"*C'est temporaire. Les PoolArrays auront besoin de leurs propres types pour "
-"être utilisés de la manière à laquelle ils sont destinés.*"
-
-msgid "``Array``"
-msgstr "``Array``"
-
-msgid "``Godot.Collections.Array``"
-msgstr "``Godot.Collections.Array``"
-
-msgid "``PoolIntArray``"
-msgstr "``PoolIntArray``"
-
-msgid "``int[]``"
-msgstr "``int[]``"
-
-msgid "``PoolByteArray``"
-msgstr "``PoolByteArray``"
-
-msgid "``byte[]``"
-msgstr "``byte[]``"
-
-msgid "``PoolFloatArray``"
-msgstr "``PoolFloatArray``"
-
-msgid "``float[]``"
-msgstr "``float[]``"
-
-msgid "``PoolStringArray``"
-msgstr "``PoolStringArray``"
-
-msgid "``String[]``"
-msgstr "``String[]``"
-
-msgid "``PoolColorArray``"
-msgstr "``PoolColorArray``"
-
-msgid "``Color[]``"
-msgstr "``Color[]``"
-
-msgid "``PoolVector2Array``"
-msgstr "``PoolVector2Array``"
-
-msgid "``Vector2[]``"
-msgstr "``Vector2[]``"
-
-msgid "``PoolVector3Array``"
-msgstr "``PoolVector3Array``"
-
-msgid "``Vector3[]``"
-msgstr "``Vector3[]``"
 
 msgid ""
-"``Godot.Collections.Array<T>`` is a type-safe wrapper around ``Godot."
-"Collections.Array``. Use the ``Godot.Collections.Array<T>(Godot.Collections."
-"Array)`` constructor to create one."
+"See also :ref:`PackedArray in C# <doc_c_sharp_collections_packedarray>`."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Use ``Godot.Collections.Array`` for an untyped ``Variant`` array. ``Godot."
+"Collections.Array<T>`` is a type-safe wrapper around ``Godot.Collections."
+"Array``."
 msgstr ""
 "``Godot.Collections.Array<T>`` est une encapsule de type sécurisé autour de "
 "``Godot.Collections.Array``. Utilisez le constructeur ``Godot.Collections."
 "Array<T>(Godot.Array)`` pour en créer une."
 
+#, fuzzy
+msgid "See also :ref:`Array in C# <doc_c_sharp_collections_array>`."
+msgstr "Voir aussi : :ref:`doc_c_sharp_signals`."
+
 msgid "Dictionary"
 msgstr "Dictionnaire"
 
-msgid "Use ``Godot.Collections.Dictionary``."
-msgstr "Utilisez ``Godot.Collections.Dictionary``."
-
+#, fuzzy
 msgid ""
-"``Godot.Collections.Dictionary<T>`` is a type-safe wrapper around ``Godot."
-"Collections.Dictionary``. Use the ``Godot.Collections.Dictionary<T>(Godot."
-"Collections.Dictionary)`` constructor to create one."
+"Use ``Godot.Collections.Dictionary`` for an untyped ``Variant`` dictionary. "
+"``Godot.Colelctions.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
+"``Godot.Collections.Dictionary``."
 msgstr ""
 "``Godot.Collections.Dictionary <T>`` est une encapsule de type sécurisé "
 "``Godot.Collections.Dictionary``. Utilisez le constructeur ``Godot."
 "Collections.Dictionary <T>(Godot.Dictionary)`` pour en créer un."
 
+#, fuzzy
+msgid "See also :ref:`Dictionary in C# <doc_c_sharp_collections_dictionary>`."
+msgstr "18 : :ref:`Dictionary<class_dictionary>`"
+
 msgid "Variant"
 msgstr "Variant"
 
-msgid "``System.Object`` (``object``) is used instead of ``Variant``."
-msgstr "``System.Object`` (``object``) est utilisé à la place de ``Variant``."
+msgid ""
+"``Godot.Variant`` is used to represent Godot's native :ref:`Variant "
+"<class_Variant>` type. Any Variant-compatible type can be converted from/to "
+"it."
+msgstr ""
+
+#, fuzzy
+msgid "See also: :ref:`doc_c_sharp_variant`."
+msgstr "Voir aussi : :ref:`doc_c_sharp_signals`."
 
 msgid "Communicating with other scripting languages"
 msgstr "Communiquer avec d'autres langages de script"
@@ -479,64 +2108,62 @@ msgstr "Communiquer avec d'autres langages de script"
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
 msgstr "Ceci est expliqué en détail dans :ref:`doc_cross_language_scripting`."
 
-msgid "Yield"
-msgstr "Yield"
+#, fuzzy
+msgid "``await`` keyword"
+msgstr "Mot-clé ``auto``"
 
+#, fuzzy
 msgid ""
-"Something similar to GDScript's ``yield`` with a single parameter can be "
-"achieved with C#'s `yield keyword <https://docs.microsoft.com/en-US/dotnet/"
-"csharp/language-reference/keywords/yield>`_."
+"Something similar to GDScript's ``await`` keyword can be achieved with C#'s "
+"`await keyword <https://docs.microsoft.com/en-US/dotnet/csharp/language-"
+"reference/keywords/await>`_."
 msgstr ""
 "Quelque chose de similaire à ``yield`` de GDScript avec un seul paramètre "
 "peut être réalisé avec le mot-clé `yield <https://docs.microsoft.com/en-US/"
 "dotnet/csharp/language-reference/keywords/yield>`_ de C#."
 
 msgid ""
-"The equivalent of yield on signal can be achieved with async/await and "
-"``Godot.Object.ToSignal``."
+"The ``await`` keyword in C# can be used with any awaitable expression. It's "
+"commonly used with operands of the types `Task`_, `Task<TResult>`_, "
+"`ValueTask`_, or `ValueTask<TResult>`_."
+msgstr ""
+
+#, fuzzy
+msgid "An expression ``t`` is awaitable if one of the following holds:"
+msgstr ""
+"Les événements de réponse seront des dictionnaires avec les champs suivants :"
+
+msgid "``t`` is of compile-time type ``dynamic``."
+msgstr ""
+
+msgid ""
+"``t`` has an accessible instance or extension method called ``GetAwaiter`` "
+"with no parameters and no type parameters, and a return type ``A`` for which "
+"all of the following hold:"
+msgstr ""
+
+msgid ""
+"``A`` implements the interface ``System.Runtime.CompilerServices."
+"INotifyCompletion``."
+msgstr ""
+
+msgid ""
+"``A`` has an accessible, readable instance property ``IsCompleted`` of type "
+"``bool``."
+msgstr ""
+
+msgid ""
+"``A`` has an accessible instance method ``GetResult`` with no parameters and "
+"no type parameters."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"An equivalent of awaiting a signal in GDScript can be achieved with the "
+"``await`` keyword and ``GodotObject.ToSignal``."
 msgstr ""
 "L'équivalent de yield sur un signal peut être obtenu avec async/await et "
 "``Godot.Object.ToSignal``."
-
-msgid "Other differences"
-msgstr "Autres différences"
-
-msgid ""
-"``preload``, as it works in GDScript, is not available in C#. Use ``GD."
-"Load`` or ``ResourceLoader.Load`` instead."
-msgstr ""
-"``preload``, comme il fonctionne en GDScript, n'est pas disponible en C#. "
-"Utilisez ``GD.Load`` ou ``ResourceLoader.Load`` à la place."
-
-msgid "Other differences:"
-msgstr "Autres différences :"
-
-msgid "``Color8``"
-msgstr "``Color8``"
-
-msgid "``Color.Color8``"
-msgstr "``Color.Color8``"
-
-msgid "``is_inf``"
-msgstr "``is_inf``"
-
-msgid "``float.IsInfinity``"
-msgstr "``float.IsInfinity``"
-
-msgid "``is_nan``"
-msgstr "``is_nan``"
-
-msgid "``float.IsNaN``"
-msgstr "``float.IsNaN``"
-
-msgid "``dict2inst``"
-msgstr "``dict2inst``"
-
-msgid "TODO"
-msgstr "TODO"
-
-msgid "``inst2dict``"
-msgstr "``inst2dict``"
 
 msgid "Translation status"
 msgstr "État de la traduction"

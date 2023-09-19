@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Building the manual with Sphinx"
+msgstr "使用 Sphinx 构建手册"
+
+msgid ""
+"This page explains how to build a local copy of the Godot manual using the "
+"Sphinx docs engine. This allows you to have local HTML files and build the "
+"documentation as a PDF, EPUB, or LaTeX file, for example."
+msgstr ""
+"本页面描述使用 Sphinx 文档引擎构建本地 Godot 手册的方法。你可以用它来获得本地"
+"的 HTML 文件以及诸如 PDF、EPUB、LaTeX 形式的文档。"
+
+msgid "Before you get started, make sure that you have:"
+msgstr ""
+
+#, fuzzy
+msgid "`Git <https://git-scm.com/>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`_"
+
+msgid ""
+"`make <https://www.gnu.org/software/make/>`_ (unless you're using Windows)"
+msgstr ""
+
+#, fuzzy
+msgid "`Python <https://www.python.org/>`_ 3"
+msgstr "`Python 3.5+ <https://www.python.org/>`__\\ 。"
+
+#, fuzzy
+msgid ""
+"Python 3 should come with the ``pip3`` command. You may need to write "
+"``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) instead of ``pip3``. "
+"If both approaches fail, `make sure that you have pip3 installed <https://"
+"pip.pypa.io/en/stable/installation/>`__."
+msgstr ""
+"你可能需要写 ``python3 -m pip``\\ （Unix）或 ``py -m pip``\\ （Windows）而不"
+"是 ``pip3`` 。如果这两种方法都失败了，\\ `请检查是否安装了 pip3 <https://pip."
+"pypa.io/en/stable/installation/>`__\\ 。"
+
+msgid ""
+"*(Optional)* Set up a virtual environment. Virtual environments prevent "
+"potential conflicts between the Python packages in ``requirements.txt`` and "
+"other Python packages that are installed on your system."
+msgstr ""
+
+#, fuzzy
+msgid "Create the virtual environment:"
+msgstr "设置自定义构建环境"
+
+msgid "Windows"
+msgstr "Windows"
+
+#, fuzzy
+msgid "Other platforms"
+msgstr "支持的平台"
+
+#, fuzzy
+msgid "Activate the virtual environment:"
+msgstr "设置自定义构建环境"
+
+msgid "*(Optional)* Update pre-installed packages:"
+msgstr ""
+
+#, fuzzy
+msgid "Clone the docs repo:"
+msgstr "计分。"
+
+msgid "Change directory into the docs repo:"
+msgstr ""
+
+#, fuzzy
+msgid "Install the required packages:"
+msgstr "安装包"
+
+#, fuzzy
+msgid "Build the docs:"
+msgstr "构建编辑器"
+
+msgid ""
+"On Windows, that command will run ``make.bat`` instead of GNU Make (or an "
+"alternative)."
+msgstr ""
+
+msgid ""
+"Alternatively, you can build the documentation by running the sphinx-build "
+"program manually:"
+msgstr "或者你也可以手动调用 sphinx-build 程序来构建文档："
+
+#, fuzzy
+msgid ""
+"The compilation will take some time as the ``classes/`` folder contains "
+"hundreds of files. See :ref:`doc_building_the_manual:performance`."
+msgstr ""
+"因为 ``classes/`` 文件夹里包含了上百个文件，所以编译的过程会花上一些时间。"
+
+msgid ""
+"You can then browse the documentation by opening ``_build/html/index.html`` "
+"in your web browser."
+msgstr "完成后就可以在网页浏览器里打开 ``_build/html/index.html`` 查看文档了。"
+
+#, fuzzy
+msgid "Dealing with errors"
+msgstr "用顶点颜色绘制"
+
+msgid "If you run into errors, you may try the following command:"
+msgstr "如果你遇到了错误，可以试试以下命令："
+
+#, fuzzy
+msgid ""
+"If you get a ``MemoryError`` or ``EOFError``, you can remove the ``classes/"
+"`` folder and run ``make`` again. This will drop the class references from "
+"the final HTML documentation but will keep the rest intact."
+msgstr ""
+"如果你遇到了 ``MemoryError`` 或者 ``EOFError``\\ ，可以把 ``classes/`` 文件夹"
+"删除然后重新执行 ``make``\\ 。这样会在最终的 HTML 文档中删除类参考文档，其它"
+"内容还是一致的。"
+
+msgid ""
+"If you delete the ``classes/`` folder, do not use ``git add .`` when working "
+"on a pull request or the whole ``classes/`` folder will be removed when you "
+"commit. See `#3157 <https://github.com/godotengine/godot-docs/"
+"issues/3157>`__ for more detail."
+msgstr ""
+"一旦删除 ``classes/`` 文件夹，在处理 Pull Request（拉取请求）时请勿使用 "
+"``git add .``\\ ，否则整个 ``classes/`` 文件夹的删除都会记录进你的提交之中。"
+"详情见 `#3157 <https://github.com/godotengine/godot-docs/issues/3157>`\\ 。"
+
+#, fuzzy
+msgid "Hints for performance"
+msgstr "灯光性能"
+
+#, fuzzy
+msgid "RAM usage"
+msgstr "手动使用"
+
+msgid ""
+"Building the documentation requires at least 8 GB of RAM to run without disk "
+"swapping, which slows it down. If you have at least 16 GB of RAM, you can "
+"speed up compilation by running:"
+msgstr ""
+"磁盘交换会拖慢文档构建的速度，关闭后需要至少 8 GB 的内存。如果你有至少 16 GB "
+"的内存，可以这样加速编译："
+
+msgid ""
+"You can use ``-j auto`` to use all available CPU threads, but this can use a "
+"lot of RAM if you have a lot of CPU threads. For instance, on a system with "
+"32 CPU threads, ``-j auto`` (which corresponds to ``-j 32`` here) can "
+"require 20+ GB of RAM for Sphinx alone."
+msgstr ""
+
+#, fuzzy
+msgid "Specifying a list of files"
+msgstr "提供文件"
+
+#, fuzzy
+msgid ""
+"You can specify a list of files to build, which can greatly speed up "
+"compilation:"
+msgstr "你也可以指定需要构建的文件列表，大幅加速编译："
+
+msgid "Translation status"
+msgstr "翻译状态"

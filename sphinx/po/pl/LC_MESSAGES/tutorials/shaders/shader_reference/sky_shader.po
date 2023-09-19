@@ -1,0 +1,315 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Sky shaders"
+msgstr "shadery"
+
+msgid ""
+"Sky shaders are a special type of shader used for drawing sky backgrounds "
+"and for updating radiance cubemaps which are used for image-based lighting "
+"(IBL). Sky shaders only have one processing function, the ``sky()`` function."
+msgstr ""
+
+msgid "There are three places the sky shader is used."
+msgstr ""
+
+msgid ""
+"First the sky shader is used to draw the sky when you have selected to use a "
+"Sky as the background in your scene."
+msgstr ""
+
+msgid ""
+"Second, the sky shader is used to update the radiance cubemap when using the "
+"Sky for ambient color or reflections."
+msgstr ""
+
+msgid ""
+"Third, the sky shader is used to draw the lower res subpasses which can be "
+"used in the high-res background or cubemap pass."
+msgstr ""
+
+msgid ""
+"In total, this means the sky shader can run up to six times per frame, "
+"however, in practice it will be much less than that because the radiance "
+"cubemap does not need to be updated every frame, and not all subpasses will "
+"be used. You can change the behavior of the shader based on where it is "
+"called by checking the ``AT_*_PASS`` booleans. For example:"
+msgstr ""
+
+msgid ""
+"When using the sky shader to draw a background, the shader will be called "
+"for all non-occluded fragments on the screen. However, for the background's "
+"subpasses, the shader will be called for every pixel of the subpass."
+msgstr ""
+
+msgid ""
+"When using the sky shader to update the radiance cubemap, the sky shader "
+"will be called for every pixel in the cubemap. On the other hand, the shader "
+"will only be called when the radiance cubemap needs to be updated. The "
+"radiance cubemap needs to be updated when any of the shader parameters are "
+"updated. For example, if ``TIME`` is used in the shader, then the radiance "
+"cubemap will update every frame. The following list of changes force an "
+"update of the radiance cubemap:"
+msgstr ""
+
+msgid "``TIME`` is used."
+msgstr ""
+
+msgid "``POSITION`` is used and the camera position changes."
+msgstr ""
+
+msgid ""
+"If any ``LIGHTX_*`` properties are used and any :ref:`DirectionalLight3D "
+"<class_DirectionalLight3D>` changes."
+msgstr ""
+
+msgid "If any uniform is changed in the shader."
+msgstr ""
+
+msgid "If the screen is resized and either of the subpasses are used."
+msgstr ""
+
+msgid ""
+"Try to avoid updating the radiance cubemap needlessly. If you do need to "
+"update the radiance cubemap each frame, make sure your :ref:`Sky process "
+"mode <class_Sky_property_process_mode>` is set to :ref:`REALTIME "
+"<class_Sky_constant_PROCESS_MODE_REALTIME>`."
+msgstr ""
+
+#, fuzzy
+msgid "Render modes"
+msgstr "Tryby renderowania"
+
+msgid ""
+"Subpasses allow you to do more expensive calculations at a lower resolution "
+"to speed up your shaders. For example the following code renders clouds at a "
+"lower resolution than the rest of the sky:"
+msgstr ""
+
+msgid "Render mode"
+msgstr "Tryb renderowania"
+
+msgid "Description"
+msgstr "Opis"
+
+msgid "**use_half_res_pass**"
+msgstr ""
+
+msgid "Allows the shader to write to and access the half resolution pass."
+msgstr ""
+
+msgid "**use_quarter_res_pass**"
+msgstr ""
+
+msgid "Allows the shader to write to and access the quarter resolution pass."
+msgstr ""
+
+#, fuzzy
+msgid "**disable_fog**"
+msgstr "**disable_force**"
+
+msgid "If used, fog will not affect the sky."
+msgstr ""
+
+#, fuzzy
+msgid "Built-ins"
+msgstr "Typy wbudowane"
+
+msgid ""
+"Values marked as \"in\" are read-only. Values marked as \"out\" are for "
+"optional writing and will not necessarily contain sensible values. Samplers "
+"cannot be written to so they are not marked."
+msgstr ""
+
+#, fuzzy
+msgid "Global built-ins"
+msgstr "Wbudowane typy wektorowe"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr ""
+
+msgid ""
+"There are 4 ``LIGHTX`` lights, accessed as ``LIGHT0``, ``LIGHT1``, "
+"``LIGHT2``, and ``LIGHT3``."
+msgstr ""
+
+msgid "Built-in"
+msgstr "Wbudowany"
+
+msgid "in float **TIME**"
+msgstr ""
+
+msgid "Global time, in seconds."
+msgstr "Czas globalny ,w sekundach."
+
+msgid "in vec3 **POSITION**"
+msgstr ""
+
+#, fuzzy
+msgid "Camera position in world space"
+msgstr "Znormalizowany wektor."
+
+#, fuzzy
+msgid "samplerCube **RADIANCE**"
+msgstr "**samplerCube**"
+
+msgid ""
+"Radiance cubemap. Can only be read from during background pass. Check ``!"
+"AT_CUBEMAP_PASS`` before using."
+msgstr ""
+
+msgid "in bool **AT_HALF_RES_PASS**"
+msgstr ""
+
+msgid "Currently rendering to half resolution pass."
+msgstr ""
+
+msgid "in bool **AT_QUARTER_RES_PASS**"
+msgstr ""
+
+msgid "Currently rendering to quarter resolution pass."
+msgstr ""
+
+msgid "in bool **AT_CUBEMAP_PASS**"
+msgstr ""
+
+msgid "Currently rendering to radiance cubemap."
+msgstr ""
+
+msgid "in bool **LIGHTX_ENABLED**"
+msgstr ""
+
+msgid ""
+"``LightX`` is visible and in the scene. If ``false``, other light properties "
+"may be garbage."
+msgstr ""
+
+msgid "in float **LIGHTX_ENERGY**"
+msgstr ""
+
+msgid "Energy multiplier for ``LIGHTX``."
+msgstr ""
+
+msgid "in vec3 **LIGHTX_DIRECTION**"
+msgstr ""
+
+msgid "Direction that ``LIGHTX`` is facing."
+msgstr ""
+
+msgid "in vec3 **LIGHTX_COLOR**"
+msgstr ""
+
+msgid "Color of ``LIGHTX``."
+msgstr ""
+
+msgid "in float **LIGHTX_SIZE**"
+msgstr ""
+
+msgid ""
+"Angular diameter of ``LIGHTX`` in the sky. Expressed in degrees. For "
+"reference, the sun from earth is about 0.5 degrees."
+msgstr ""
+
+msgid "in float **PI**"
+msgstr ""
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ratio of a circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr ""
+
+msgid "in float **TAU**"
+msgstr ""
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **E**"
+msgstr "**float**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
+
+#, fuzzy
+msgid "Sky built-ins"
+msgstr "Typy wbudowane"
+
+msgid "in vec3 **EYEDIR**"
+msgstr ""
+
+msgid ""
+"Normalized direction of current pixel. Use this as your basic direction for "
+"procedural effects."
+msgstr ""
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr ""
+
+msgid ""
+"Screen UV coordinate for current pixel. Used to map a texture to the full "
+"screen."
+msgstr ""
+
+msgid "in vec2 **SKY_COORDS**"
+msgstr ""
+
+msgid "Sphere UV. Used to map a panorama texture to the sky."
+msgstr ""
+
+msgid "in vec4 **HALF_RES_COLOR**"
+msgstr ""
+
+msgid ""
+"Color value of corresponding pixel from half resolution pass. Uses linear "
+"filter."
+msgstr ""
+
+msgid "in vec4 **QUARTER_RES_COLOR**"
+msgstr ""
+
+msgid ""
+"Color value of corresponding pixel from quarter resolution pass. Uses linear "
+"filter."
+msgstr ""
+
+msgid "out vec3 **COLOR**"
+msgstr ""
+
+#, fuzzy
+msgid "Output color."
+msgstr "Dziennik na wyjściu aplikacji (output log)"
+
+msgid "out float **ALPHA**"
+msgstr ""
+
+msgid "Output alpha value, can only be used in subpasses."
+msgstr ""
+
+msgid "out vec4 **FOG**"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Status tłumaczenia"

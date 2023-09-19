@@ -1,0 +1,187 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+msgid ""
+"`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-"
+"platform code editor by `Microsoft <https://microsoft.com>`_ (not to be "
+"confused with :ref:`doc_configuring_an_ide_vs`)."
+msgstr ""
+"`Visual Studio Code <https://code.visualstudio.com>`_ est un éditeur de code "
+"multiplateforme gratuit de `Microsoft <https://microsoft.com>`_ (à ne pas "
+"confondre avec :ref:`doc_configuring_an_ide_vs`)."
+
+msgid "Importing the project"
+msgstr "Importation du projet"
+
+#, fuzzy
+msgid ""
+"Make sure the C/C++ extension is installed. You can find instructions in the "
+"`official documentation <https://code.visualstudio.com/docs/languages/"
+"cpp>`_. Alternatively, `clangd <https://open-vsx.org/extension/llvm-vs-code-"
+"extensions/vscode-clangd>`_ can be used instead."
+msgstr ""
+"Assurez-vous que l'extension C/C++ est installée. Vous pouvez trouver les "
+"instructions dans la `documentation officielle <https://code.visualstudio."
+"com/docs/languages/cpp>`_."
+
+msgid "When using the clangd extension, run ``scons compiledb=yes``."
+msgstr ""
+"Lorsque vous utilisez l'extension glangd, lancer ``scons compiledb=yes``."
+
+msgid ""
+"From the Visual Studio Code's main screen open the Godot root folder with "
+"**File > Open Folder...**."
+msgstr ""
+"Depuis l'écran principal du Visual Studio Code, ouvrez le dossier racine de "
+"Godot avec **File > Open Folder...**."
+
+msgid ""
+"Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
+"*Configure Task*."
+msgstr ""
+"Appuyez sur :kbd:`Ctrl + Shift + P` pour ouvrir la fenêtre d'invite de "
+"commande et entrez *Configure Task*."
+
+msgid "Select the **Create tasks.json file from template** option."
+msgstr "Sélectionnez l'option **Create tasks.json file from template**."
+
+msgid "Then select **Others**."
+msgstr "Sélectionnez ensuite **Others**."
+
+msgid ""
+"If there is no such option as **Create tasks.json file from template** "
+"available, either delete the file if it already exists in your folder or "
+"create a ``.vscode/tasks.json`` file manually. See `Tasks in Visual Studio "
+"Code <https://code.visualstudio.com/docs/editor/tasks#_custom-tasks>`_ for "
+"more details on tasks."
+msgstr ""
+
+msgid ""
+"Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
+"section to it:"
+msgstr ""
+"Dans le fichier ``tasks.json``, trouvez le tableau ``\"tasks\"`` et ajoutez-"
+"y une nouvelle section :"
+
+msgid "An example of a filled out ``tasks.json``."
+msgstr "Un exemple de ``tasks.json`` rempli."
+
+msgid ""
+"Arguments can be different based on your own setup and needs. See :ref:"
+"`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+"Les arguments peuvent être différents selon votre propre configuration et "
+"vos besoins. Voir :ref:`doc_introduction_to_the_buildsystem` pour une liste "
+"complète des arguments."
+
+msgid "Debugging the project"
+msgstr "Débogage du projet"
+
+msgid ""
+"To run and debug the project you need to create a new configuration in the "
+"``launch.json`` file."
+msgstr ""
+"Pour exécuter et déboguer le projet, vous devez créer une nouvelle "
+"configuration dans le fichier ``launch.json``."
+
+msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
+msgstr "Appuyez sur :kbd:`Ctrl + Shift + D` pour ouvrir le panneau Run."
+
+msgid ""
+"If ``launch.json`` file is missing you will be prompted to create a new one."
+msgstr ""
+"Si le fichier ``launch.json`` est manquant, vous serez invité à en créer un "
+"nouveau."
+
+msgid ""
+"Select **C++ (GDB/LLDB)**. There may be another platform specific option "
+"here. If selected, adjust the configuration example provided accordingly."
+msgstr ""
+"Sélectionnez **C++ (GDB/LLDB)**. Il peut y avoir une autre option spécifique "
+"à la plate-forme ici. Si elle est sélectionnée, adaptez l'exemple de "
+"configuration fourni en conséquence."
+
+msgid ""
+"Within the ``launch.json`` file find the ``\"configurations\"`` array and "
+"add a new section to it:"
+msgstr ""
+"Dans le fichier ``launch.json``, trouvez le tableau ``\"configurations\"`` "
+"et ajoutez-y une nouvelle section :"
+
+msgid "An example of a filled out ``launch.json``."
+msgstr "Un exemple de ``launch.json`` rempli."
+
+msgid ""
+"Due to sporadic performance issues, it is recommended to use LLDB over GDB "
+"on Unix-based systems. Make sure that the `CodeLLDB extension <https://"
+"marketplace.visualstudio.com/items?itemName=vadimcn.vscode-lldb>`_ is "
+"installed."
+msgstr ""
+"En raison de problèmes de performances sporadiques, il est recommandé "
+"d'utiliser LLDB plutôt que GDB sur les systèmes basés sur Unix. Assurez-vous "
+"que l'extension `CodeLLDB <https://marketplace.visualstudio.com/items?"
+"itemName=vadimcn.vscode-lldb>`_ est installée."
+
+#, fuzzy
+msgid ""
+"If you encounter issues with lldb, you may consider using gdb (see the "
+"LinuxBSD_gdb configuration)."
+msgstr ""
+"Si vous rencontrez des problèmes avec lldb, vous pouvez envisager d'utiliser "
+"gdb (voir la configuration X11_gdb)."
+
+#, fuzzy
+msgid ""
+"Do note that lldb may work better with LLVM-based builds. See :ref:"
+"`doc_compiling_for_linuxbsd` for further information."
+msgstr ""
+"Notez que lldb peut mieux fonctionner avec les compilations basées sur llvm. "
+"Voir :ref:`doc_compiling_for_x11` pour plus d'informations."
+
+#, fuzzy
+msgid ""
+"The name under ``program`` depends on your build configuration, e.g. ``godot."
+"linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD platform with "
+"``platform=editor`` and ``dev_build=yes``."
+msgstr ""
+"Le nom sous ``program`` dépend de la configuration de votre compilation, par "
+"exemple ``godot.x11.tools.64`` pour une plate-forme X11 64 bits avec "
+"``tools`` activé."
+
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"Si vous rencontrez des problèmes, demandez de l'aide sur l'un des `canaux "
+"communautaires de Godot <https://godotengine.org/community>`__."
+
+#, fuzzy
+msgid ""
+"To get linting on class reference XML files, install the `vscode-xml "
+"extension <https://marketplace.visualstudio.com/items?itemName=redhat.vscode-"
+"xml>`__."
+msgstr ""
+"Installez l'extension `Mono Debug <https://marketplace.visualstudio.com/"
+"items?itemName=ms-vscode.mono-debug>`__."
+
+msgid "Translation status"
+msgstr "État de la traduction"

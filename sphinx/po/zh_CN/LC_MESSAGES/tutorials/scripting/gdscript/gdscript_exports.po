@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,20 +23,28 @@ msgstr "GDScript 导出"
 msgid "Introduction to exports"
 msgstr "导出简介"
 
+#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
-"editor. Exporting is done by using the ``export`` keyword::"
+"editor. Exporting is done by using the ``@export`` annotation."
 msgstr ""
 "在 Godot 中可以导出类成员。这意味着它们的值会与它们所附加的资源（例如\\ :ref:"
 "`场景 <class_PackedScene>`\\ ）一起保存。它们也可以在属性编辑器中进行编辑。导"
 "出使用关键字 ``export`` 来完成： ::"
 
 msgid ""
-"An exported variable must be initialized to a constant expression or have an "
-"export hint in the form of an argument to the ``export`` keyword (see the "
-"*Examples* section below)."
+"In that example the value ``5`` will be saved and visible in the property "
+"editor."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"An exported variable must be initialized to a constant expression or have a "
+"type specifier in the variable. Some of the export annotations have a "
+"specific type and don't need the variable to be typed (see the *Examples* "
+"section below)."
 msgstr ""
 "导出的变量必须使用常量表达式初始化，或者用 ``export`` 关键字参数的形式提供导"
 "出提示（请参见下面的\\ *示例*\\ 部分）。"
@@ -51,13 +59,162 @@ msgstr ""
 "设计师可以修改值, 这些值以后会影响程序的运行方式. 为此, 提供了一种特殊的导出"
 "语法."
 
+#, fuzzy
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
-"syntax varies depending on the language."
+"syntax varies depending on the language. See :ref:`doc_c_sharp_exports` for "
+"information on C# exports."
 msgstr "C# 等其他语言也可以进行属性的导出。不同的语言有不同的语法。"
 
-msgid "Examples"
-msgstr "示例"
+#, fuzzy
+msgid "Basic use"
+msgstr "基本用法"
+
+msgid ""
+"If the exported value assigns a constant or constant expression, the type "
+"will be inferred and used in the editor."
+msgstr ""
+
+msgid "If there's no default value, you can add a type to the variable."
+msgstr ""
+
+#, fuzzy
+msgid "Resources and nodes can be exported."
+msgstr "无法导出 ShaderMaterial。"
+
+#, fuzzy
+msgid "Grouping Exports"
+msgstr "对属性进行分组"
+
+msgid ""
+"It is possible to group your exported properties inside the Inspector with "
+"the :ref:`@export_group <class_@GDScript_annotation_@export_group>` "
+"annotation. Every exported property after this annotation will be added to "
+"the group. Start a new group or use ``@export_group(\"\")`` to break out."
+msgstr ""
+
+msgid ""
+"The second argument of the annotation can be used to only group properties "
+"with the specified prefix."
+msgstr ""
+
+msgid ""
+"Groups cannot be nested, use :ref:`@export_subgroup "
+"<class_@GDScript_annotation_@export_subgroup>` to create subgroups within a "
+"group."
+msgstr ""
+
+msgid ""
+"You can also change the name of your main category, or create additional "
+"categories in the property list with the :ref:`@export_category "
+"<class_@GDScript_annotation_@export_category>` annotation."
+msgstr ""
+
+msgid ""
+"The list of properties is organized based on the class inheritance and new "
+"categories break that expectation. Use them carefully, especially when "
+"creating projects for public use."
+msgstr ""
+
+#, fuzzy
+msgid "Strings as paths"
+msgstr "字符串长度"
+
+#, fuzzy
+msgid "String as a path to a file."
+msgstr "分享配置"
+
+msgid "String as a path to a directory."
+msgstr ""
+
+msgid "String as a path to a file, custom filter provided as hint."
+msgstr ""
+
+msgid ""
+"Using paths in the global filesystem is also possible, but only in scripts "
+"in tool mode."
+msgstr ""
+
+msgid "String as a path to a PNG file in the global filesystem."
+msgstr ""
+
+msgid "String as a path to a directory in the global filesystem."
+msgstr ""
+
+msgid ""
+"The multiline annotation tells the editor to show a large input field for "
+"editing over multiple lines."
+msgstr ""
+
+#, fuzzy
+msgid "Limiting editor input ranges"
+msgstr "编辑现有页面"
+
+msgid "Allow integer values from 0 to 20."
+msgstr ""
+
+msgid "Allow integer values from -10 to 20."
+msgstr ""
+
+msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
+msgstr ""
+
+msgid ""
+"The limits can be only for the slider if you add the hints \"or_greater\" "
+"and/or \"or_less\"."
+msgstr ""
+
+msgid "Floats with easing hint"
+msgstr ""
+
+msgid "Display a visual representation of the 'ease()' function when editing."
+msgstr ""
+
+#, fuzzy
+msgid "Colors"
+msgstr "颜色"
+
+msgid "Regular color given as red-green-blue-alpha value."
+msgstr ""
+
+msgid "Color given as red-green-blue value (alpha will always be 1)."
+msgstr ""
+
+msgid "Nodes"
+msgstr "节点"
+
+msgid ""
+"Since Godot 4.0, nodes can be directly exported as properties in a script "
+"without having to use NodePaths:"
+msgstr ""
+
+msgid ""
+"Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
+msgstr ""
+
+msgid ""
+"If you want to limit the types of nodes for NodePaths, you can use the :ref:"
+"`@export_node_path<class_@GDScript_annotation_@export_node_path>` annotation:"
+msgstr ""
+
+msgid "Resources"
+msgstr "资源"
+
+msgid ""
+"In the Inspector, you can then drag and drop a resource file from the "
+"FileSystem dock into the variable slot."
+msgstr ""
+
+msgid ""
+"Opening the inspector dropdown may result in an extremely long list of "
+"possible classes to create, however. Therefore, if you specify an extension "
+"of Resource such as:"
+msgstr ""
+
+msgid ""
+"The drop-down menu will be limited to AnimationNode and all its inherited "
+"classes."
+msgstr ""
 
 msgid ""
 "It must be noted that even if the script is not being run while in the "
@@ -70,10 +227,11 @@ msgstr ""
 msgid "Exporting bit flags"
 msgstr "导出位标志"
 
+#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
-"values in one property. By using the export hint ``int, FLAGS, ...``, they "
-"can be set from the editor::"
+"values in one property. By using the ``@export_flags`` annotation, they can "
+"be set from the editor::"
 msgstr ""
 "用作位标志的整数可以在一个属性中存储多个 ``true``/ ``false``\\ （布尔）值。通"
 "过使用导出提示 ``int, FLAGS, ...``\\ ，可以在编辑器中设置它们： ::"
@@ -88,15 +246,52 @@ msgstr ""
 "``Water`` 的值是 2，\\ ``Earth`` 的值是 4，\\ ``Wind`` 对应的值是 8。通常，应"
 "相应地定义常量（例如 ``const ELEMENT_WIND = 8`` 等等）。"
 
+msgid "You can add explicit values using a colon::"
+msgstr ""
+
 msgid ""
-"Export hints are also provided for the physics and render layers defined in "
-"the project settings::"
+"Only power of 2 values are valid as bit flags options. The lowest allowed "
+"value is 1, as 0 means that nothing is selected. You can also add options "
+"that are a combination of other flags::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Export annotations are also provided for the physics, render, and navigation "
+"layers defined in the project settings::"
 msgstr "也可以为项目设置中定义的物理层和渲染层提供导出提示： ::"
 
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr "使用位标志需要对位操作有一定的了解. 如果有疑问, 请使用布尔变量代替."
+
+#, fuzzy
+msgid "Exporting enums"
+msgstr "导出菜单"
+
+msgid ""
+"Properties can be exported with a type hint referencing an enum to limit "
+"their values to the values of the enumeration. The editor will create a "
+"widget in the Inspector, enumerating the following as \"Thing 1\", \"Thing "
+"2\", \"Another Thing\". The value will be stored as an integer."
+msgstr ""
+
+msgid ""
+"Integer and string properties can also be limited to a specific list of "
+"values using the :ref:`@export_enum "
+"<class_@GDScript_annotation_@export_enum>` annotation. The editor will "
+"create a widget in the Inspector, enumerating the following as Warrior, "
+"Magician, Thief. The value will be stored as an integer, corresponding to "
+"the index of the selected option (i.e. ``0``, ``1``,  or ``2``)."
+msgstr ""
+
+#, fuzzy
+msgid "If the type is String, the value will be stored as a string."
+msgstr "如果是 ``string`` , 文件将从该路径加载."
+
+msgid "If you want to set an initial value, you must specify it explicitly::"
+msgstr ""
 
 msgid "Exporting arrays"
 msgstr "导出数组"
@@ -113,14 +308,38 @@ msgstr ""
 "如果导出的数组指定了从 Resource 继承的类型，则可以通过一次从文件系统面板中拖"
 "放多个文件来在检查器中设置数组值。"
 
+#, fuzzy
+msgid "The default value **must** be a constant expression."
+msgstr "此预设的选项的默认值."
+
+msgid "Exported arrays can specify type (using the same hints as before)."
+msgstr ""
+
+msgid ""
+"You can omit the default value, but it would then be ``null`` if not "
+"assigned."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Arrays with specified types which inherit from resource can be set by drag-"
+"and-dropping multiple files from the FileSystem dock."
+msgstr ""
+"如果导出的数组指定了从 Resource 继承的类型，则可以通过一次从文件系统面板中拖"
+"放多个文件来在检查器中设置数组值。"
+
+msgid "Packed type arrays also work, but only initialized empty:"
+msgstr ""
+
 msgid "Setting exported variables from a tool script"
 msgstr "从工具脚本设置导出变量"
 
+#, fuzzy
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
-"automatically. To update it, call :ref:`property_list_changed_notify() "
-"<class_Object_method_property_list_changed_notify>` after setting the "
+"automatically. To update it, call :ref:`notify_property_list_changed() "
+"<class_Object_method_notify_property_list_changed>` after setting the "
 "exported variable's value."
 msgstr ""
 "在 :ref:`doc_gdscript_tool_mode` 下的脚本中更改一个导出变量的值时，检查器中对"
@@ -139,13 +358,13 @@ msgstr ""
 "为了避免不必要的复杂设计，不是所有导出类型都在语言层面上提供。下面将说明一些"
 "能用底层 API 实现的，较为常见的导出方法。"
 
+#, fuzzy
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
-"<class_Object_method__get_property_list>`, :ref:`_get() "
-"<class_Object_method__get_property_list>`, and :ref:`_get_property_list() "
-"<class_Object_method__get_property_list>` methods as described in :ref:"
-"`doc_accessing_data_or_logic_from_object`."
+"<class_Object_method__set>`, :ref:`_get() <class_Object_method__get>`, and :"
+"ref:`_get_property_list() <class_Object_method__get_property_list>` methods "
+"as described in :ref:`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 "在进一步阅读前，你需要熟悉属性的运作方式以及它们是如何通过 :ref:`_set() "
 "<class_Object_method__get_property_list>`\\ 、\\ :ref:`_get() "
@@ -164,136 +383,6 @@ msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
 msgstr "脚本必须在 ``tool`` 模式运行，上述方法才能在编辑器内运行。"
-
-msgid "Properties"
-msgstr "属性"
-
-msgid ""
-"To understand how to better use the sections below, you should understand "
-"how to make properties with advanced exports."
-msgstr "为了更好地理解后续章节，你应该理解如何使用高级导出来制作属性。"
-
-msgid ""
-"The ``_get_property_list()`` function gets called by the inspector. You can "
-"override it for more advanced exports. You must return an ``Array`` with the "
-"contents of the properties for the function to work."
-msgstr ""
-"检查器会调用 ``_get_property_list()`` 函数。你可以对它进行覆盖，进行高级导"
-"出。要让这个函数正常工作，你必须返回一个包含属性内容的 ``Array``\\ 。"
-
-msgid "``name`` is the name of the property"
-msgstr "``name`` 是该属性的名称"
-
-msgid "``type`` is the type of the property from ``Variant.Type``."
-msgstr "``type`` 是该属性的类型，\\ 使用 ``Variant.Type``\\ 。"
-
-msgid ""
-"The ``float`` type is called a real (``TYPE_REAL``) in the ``Variant.Type`` "
-"enum."
-msgstr ""
-"浮点数类型 ``float`` 在 ``Variant.Type`` 枚举中叫作实数（\\ "
-"``TYPE_REAL``\\ ）。"
-
-msgid "Attaching variables to properties"
-msgstr "将变量与属性关联"
-
-msgid ""
-"To attach variables to properties (allowing the value of the property to be "
-"used in scripts), you need to create a variable with the exact same name as "
-"the property or else you may need to override the :ref:`_set() "
-"<class_Object_method__get_property_list>` and :ref:`_get() "
-"<class_Object_method__get_property_list>` methods. Attaching a variable to "
-"to a property also gives you the ability to give it a default state. ::"
-msgstr ""
-"要将变量与属性关联起来（让属性的值可以在脚本中使用），你需要创建一个与该属性"
-"同名的变量，否则就需要覆盖 :ref:`_set() "
-"<class_Object_method__get_property_list>` 和 :ref:`_get() "
-"<class_Object_method__get_property_list>` 方法。将变量与属性关联后，你还可以"
-"给它设置默认状态。\\ ::"
-
-msgid "Adding default values for properties"
-msgstr "为属性添加默认值"
-
-msgid ""
-"To define default values for advanced exports, you need to override the "
-"``property_can_revert()`` and ``property_get_revert()`` methods."
-msgstr ""
-"要为高级导出定义默认值，你需要覆盖 ``property_can_revert()`` 和 "
-"``property_get_revert()`` 方法。"
-
-msgid ""
-"The ``property_can_revert()`` method takes the name of a property and must "
-"return ``true`` if the property can be reverted. This will enable the Revert "
-"button next to the property in the inspector."
-msgstr ""
-"``property_can_revert()`` 方法接受属性的名称，必须在该属性能够复原时返回 "
-"``true``\\ 。这样就可以启用检查器中该属性旁的“恢复”按钮。"
-
-msgid ""
-"The ``property_get_revert()`` method takes the name of a property and must "
-"return the default value for that property."
-msgstr "``property_get_revert()`` 方法接受属性的名称，必须返回该属性的默认值。"
-
-msgid "Adding script categories"
-msgstr "添加脚本分类"
-
-msgid ""
-"For better visual distinguishing of properties, a special script category "
-"can be embedded into the inspector to act as a separator. ``Script "
-"Variables`` is one example of a built-in category. ::"
-msgstr ""
-"为了在视觉上更好区分各个属性，可以将特殊的脚本分类作为分隔线嵌入检查器。\\ "
-"``Script Variables`` 就是一种内建分类。\\ ::"
-
-msgid "``name`` is the name of a category to be added to the inspector;"
-msgstr "``name`` 是要加入检查器中的分类的名字；"
-
-msgid ""
-"Every following property added after the category definition will be a part "
-"of the category."
-msgstr "定义分类后，添加的所有属性都会成为该分类的一部分。"
-
-msgid ""
-"``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
-"a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
-"it won't be actually used for the scripting logic, yet it must be defined "
-"anyway."
-msgstr ""
-"``PROPERTY_USAGE_CATEGORY`` 表明了该属性应被视为一个脚本分类，因此可以忽略 "
-"``TYPE_NIL`` 这个类型，因为它其实并没有被脚本逻辑所处理。不过你还是必须在这儿"
-"定义它。"
-
-msgid "Grouping properties"
-msgstr "对属性进行分组"
-
-msgid "A list of properties with similar names can be grouped. ::"
-msgstr "名称类似的属性可以合为一组。\\ ::"
-
-msgid ""
-"``name`` is the name of a group which is going to be displayed as "
-"collapsible list of properties;"
-msgstr "``name`` 是包含了一组属性的可折叠群组的名称;"
-
-msgid ""
-"Every following property added after the group property with the prefix "
-"(which determined by ``hint_string``) will be shortened. For instance, "
-"``rotate_speed`` is going to be shortened to ``speed`` in this case. "
-"However, ``movement_speed`` won't be a part of the group and will not be "
-"shortened."
-msgstr ""
-"在分组属性之后添加的属性，如果带有相同前缀（由 ``hint_string`` 决定）就会被缩"
-"短。例如，这里的 ``rotate_speed`` 会被缩短为 ``speed``\\ 。不过，\\ "
-"``movement_speed`` 不会成为该组的一部分，也不会被缩短。"
-
-msgid ""
-"``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
-"script group specifically, so the type ``TYPE_NIL`` can be ignored as it "
-"won't be actually used for the scripting logic, yet it must be defined "
-"anyway."
-msgstr ""
-"``PROPERTY_USAGE_GROUP`` 表明了该属性应被视为一个脚本分类, 因此可以忽略 "
-"``TYPE_NIL`` 这个类型, 因为它其实并没有被脚本逻辑所处理. 但无论如何, 你还是要"
-"在这儿定义它."
 
 msgid "Translation status"
 msgstr "翻译状态"

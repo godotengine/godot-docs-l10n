@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,12 +23,15 @@ msgstr "Binäre Serialisierungs-API"
 msgid "Introduction"
 msgstr "Einführung"
 
+#, fuzzy
 msgid ""
-"Godot has a simple serialization API based on Variant. It's used for "
-"converting data types to an array of bytes efficiently. This API is used in "
-"the functions ``get_var`` and ``store_var`` of :ref:`class_File` as well as "
-"the packet APIs for :ref:`class_PacketPeer`. This format is *not* used for "
-"binary scenes and resources."
+"Godot has a serialization API based on Variant. It's used for converting "
+"data types to an array of bytes efficiently. This API is exposed via the "
+"global :ref:`bytes_to_var() <class_@GlobalScope_method_bytes_to_var>` and :"
+"ref:`var_to_bytes() <class_@GlobalScope_method_var_to_bytes>` functions, but "
+"it is also used in the ``get_var`` and ``store_var`` methods of :ref:"
+"`class_FileAccess` as well as the packet APIs for :ref:`class_PacketPeer`. "
+"This format is *not* used for binary scenes and resources."
 msgstr ""
 "Godot verfügt über eine einfache Serialisierungs-API, die auf Variant "
 "basiert. Sie wird verwendet um Datentypen effizient in ein Array von Bytes "
@@ -36,6 +39,20 @@ msgstr ""
 "``store_var`` von :ref:`class_File` sowie in den Paket-APIs für :ref:"
 "`class_PacketPeer` verwendet. Dieses Format wird *nicht* für binäre Szenen "
 "und Ressourcen verwendet."
+
+msgid "Full Objects vs Object instance IDs"
+msgstr ""
+
+msgid ""
+"If a variable is serialized with ``full_objects = true``, then any Objects "
+"contained in the variable will be serialized and included in the result. "
+"This is recursive."
+msgstr ""
+
+msgid ""
+"If ``full_objects = false``, then only the instance IDs will be serialized "
+"for any Objects contained in the variable."
+msgstr ""
 
 msgid "Packet specification"
 msgstr "Paketspezifikation"
@@ -124,8 +141,8 @@ msgstr "plane"
 msgid "10"
 msgstr "10"
 
-msgid "quat"
-msgstr "quat"
+msgid "quaternion"
+msgstr ""
 
 msgid "11"
 msgstr "11"
@@ -142,8 +159,9 @@ msgstr "basis"
 msgid "13"
 msgstr "13"
 
-msgid "transform"
-msgstr "transform"
+#, fuzzy
+msgid "transform3d"
+msgstr "transform2d"
 
 msgid "14"
 msgstr "14"
@@ -190,41 +208,58 @@ msgstr "raw array"
 msgid "21"
 msgstr "21"
 
-msgid "int array"
+#, fuzzy
+msgid "int32 array"
 msgstr "int array"
 
 msgid "22"
 msgstr "22"
 
-msgid "real array"
-msgstr "real array"
+#, fuzzy
+msgid "int64 array"
+msgstr "int array"
 
 msgid "23"
 msgstr "23"
 
-msgid "string array"
-msgstr "string array"
+#, fuzzy
+msgid "float32 array"
+msgstr "Farb-Array"
 
 msgid "24"
 msgstr "24"
 
-msgid "vector2 array"
-msgstr "vector2 array"
+#, fuzzy
+msgid "float64 array"
+msgstr "Farb-Array"
 
 msgid "25"
 msgstr "25"
 
-msgid "vector3 array"
-msgstr "vector3 array"
+msgid "string array"
+msgstr "string array"
 
 msgid "26"
 msgstr "26"
 
-msgid "color array"
-msgstr "Farb-Array"
+msgid "vector2 array"
+msgstr "vector2 array"
 
 msgid "27"
 msgstr "27"
+
+msgid "vector3 array"
+msgstr "vector3 array"
+
+msgid "28"
+msgstr "28"
+
+msgid "color array"
+msgstr "Farb-Array"
+
+#, fuzzy
+msgid "29"
+msgstr "2"
 
 msgid "max"
 msgstr "max"
@@ -388,7 +423,8 @@ msgstr "Normal Z"
 msgid "Distance"
 msgstr "Distanz"
 
-msgid "10: :ref:`Quat<class_quat>`"
+#, fuzzy
+msgid "10: :ref:`Quaternion<class_quaternion>`"
 msgstr "10: :ref:`Quat<class_quat>`"
 
 msgid "Imaginary X"
@@ -420,9 +456,6 @@ msgid "The Z component of the Y column vector, accessed via [1][2]"
 msgstr ""
 "Die Z-Komponente des Y-Spaltenvektors, auf die über [1][2] zugegriffen wird"
 
-msgid "28"
-msgstr "28"
-
 msgid "The X component of the Z column vector, accessed via [2][0]"
 msgstr ""
 "Die X-Komponente des Z-Spaltenvektors, auf die über [2][0] zugegriffen wird"
@@ -441,7 +474,8 @@ msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr ""
 "Die Z-Komponente des Z-Spaltenvektors, auf die über [2][2] zugegriffen wird"
 
-msgid "13: :ref:`Transform<class_transform>`"
+#, fuzzy
+msgid "13: :ref:`Transform3D<class_transform3d>`"
 msgstr "13: :ref:`Transform<class_transform>`"
 
 msgid "40"
@@ -519,8 +553,96 @@ msgstr "Jede Namenszeichenfolge wird auf 4 Bytes aufgefüllt."
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
 msgstr "16: :ref:`RID<class_rid>` (nicht unterstützt)"
 
-msgid "17: :ref:`Object<class_object>` (unsupported)"
-msgstr "17: :ref:`Object<class_object>` (nicht unterstützt)"
+#, fuzzy
+msgid "17: :ref:`Object<class_object>`"
+msgstr ":ref:`Object <class_Object>`"
+
+msgid ""
+"An Object could be serialized in three different ways: as a null value, with "
+"``full_objects = false``, or with ``full_objects = true``."
+msgstr ""
+
+#, fuzzy
+msgid "A null value"
+msgstr "Aufzählungswert"
+
+#, fuzzy
+msgid "Zero (32-bit signed integer)"
+msgstr "32-bit signed integer (Vorzeichen behaftet)"
+
+msgid "``full_objects`` disabled"
+msgstr ""
+
+#, fuzzy
+msgid "The Object instance ID (64-bit signed integer)"
+msgstr "64-Bit-Ganzzahl mit Vorzeichen"
+
+msgid "``full_objects`` enabled"
+msgstr ""
+
+#, fuzzy
+msgid "Class name (String length)"
+msgstr "Zeichenketten Länge"
+
+#, fuzzy
+msgid "Class name (UTF-8 encoded string)"
+msgstr "UTF-8-codierte Zeichenfolge"
+
+#, fuzzy
+msgid "X+8"
+msgstr "X+0"
+
+#, fuzzy
+msgid "The number of properties that are serialized"
+msgstr "Es gibt 6 Arten von Mustern:"
+
+#, fuzzy
+msgid "For each property:"
+msgstr "Bereichs-Eigenschaften"
+
+msgid "Y"
+msgstr ""
+
+#, fuzzy
+msgid "Property name (String length)"
+msgstr "Zeichenketten Länge"
+
+#, fuzzy
+msgid "Y+4"
+msgstr "X+4"
+
+msgid "Z"
+msgstr ""
+
+#, fuzzy
+msgid "Property name (UTF-8 encoded string)"
+msgstr "UTF-8-codierte Zeichenfolge"
+
+msgid "Y+4+Z"
+msgstr ""
+
+msgid "W"
+msgstr ""
+
+#, fuzzy
+msgid "<variable>"
+msgstr "Variable"
+
+msgid "Property value, using this same format"
+msgstr ""
+
+msgid ""
+"Not all properties are included. Only properties that are configured with "
+"the :ref:"
+"`PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` "
+"flag set will be serialized. You can add a new usage flag to a property by "
+"overriding the :ref:"
+"`_get_property_list<class_Object_method__get_property_list>` method in your "
+"class. You can also check how property usage is configured by calling "
+"``Object._get_property_list`` See :ref:"
+"`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` for the possible "
+"usage flags."
+msgstr ""
 
 msgid "18: :ref:`Dictionary<class_dictionary>`"
 msgstr "18: :ref:`Dictionary<class_dictionary>`"
@@ -541,7 +663,8 @@ msgid ""
 "other, using this same format."
 msgstr ""
 
-msgid "20: :ref:`PoolByteArray<class_poolbytearray>`"
+#, fuzzy
+msgid "20: :ref:`PackedByteArray<class_PackedByteArray>`"
 msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
 
 msgid "Array length (Bytes)"
@@ -559,7 +682,8 @@ msgstr "Byte (0..255)"
 msgid "The array data is padded to 4 bytes."
 msgstr "Die Array-Daten werden auf 4 Byte aufgefüllt."
 
-msgid "21: :ref:`PoolIntArray<class_poolintarray>`"
+#, fuzzy
+msgid "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
 msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
 
 msgid "Array length (Integers)"
@@ -568,16 +692,34 @@ msgstr "Feld Länge (Integer)"
 msgid "8..8+length\\*4"
 msgstr "8..8+Länge\\*4"
 
-msgid "22: :ref:`PoolRealArray<class_poolrealarray>`"
-msgstr "22: :ref:`PoolRealArray<class_poolrealarray>`"
+#, fuzzy
+msgid "22: :ref:`PackedInt64Array<class_PackedInt64Array>`"
+msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
+
+msgid "8..8+length\\*8"
+msgstr "8..8+Länge\\*8"
+
+#, fuzzy
+msgid "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
+msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
 msgid "Array length (Floats)"
 msgstr "Array Länge (Fließkomma)"
 
-msgid "32-bits IEEE 754 float"
-msgstr "32-bit IEEE 754 Fließkomma"
+#, fuzzy
+msgid "32-bit IEEE 754 single-precision float"
+msgstr "IEEE 754 Fließkommazahl mit einfacher Genauigkeit"
 
-msgid "23: :ref:`PoolStringArray<class_poolstringarray>`"
+#, fuzzy
+msgid "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
+msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
+
+#, fuzzy
+msgid "64-bit IEEE 754 double-precision float"
+msgstr "IEEE 754 Fließkommazahl mit doppelter Genauigkeit"
+
+#, fuzzy
+msgid "25: :ref:`PackedStringArray<class_PackedStringArray>`"
 msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
 
 msgid "Array length (Strings)"
@@ -589,19 +731,18 @@ msgstr "für jede Zeichenkette:"
 msgid "Every string is padded to 4 bytes."
 msgstr "Jede Zeichenkette wird auf 4 Bytes aufgefüllt."
 
-msgid "24: :ref:`PoolVector2Array<class_poolvector2array>`"
+#, fuzzy
+msgid "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
 msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
 
 msgid "Array length"
 msgstr "Array Länge"
 
-msgid "8..8+length\\*8"
-msgstr "8..8+Länge\\*8"
-
 msgid "8..12+length\\*8"
 msgstr "8..12+Länge\\*8"
 
-msgid "25: :ref:`PoolVector3Array<class_poolvector3array>`"
+#, fuzzy
+msgid "27: :ref:`PackedVector3Array<class_PackedVector3Array>`"
 msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
 
 msgid "8..8+length\\*12"
@@ -613,7 +754,8 @@ msgstr "8..12+Länge\\*12"
 msgid "8..16+length\\*12"
 msgstr "8..16+Länge\\*12"
 
-msgid "26: :ref:`PoolColorArray<class_poolcolorarray>`"
+#, fuzzy
+msgid "28: :ref:`PackedColorArray<class_PackedColorArray>`"
 msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
 
 msgid "8..8+length\\*16"

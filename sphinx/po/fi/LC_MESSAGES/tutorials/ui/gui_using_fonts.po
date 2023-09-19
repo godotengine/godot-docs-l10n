@@ -1,0 +1,1180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Using Fonts"
+msgstr "Mukautettujen Container-tyyppien luonti"
+
+msgid "Godot allows you to set specific fonts for different UI nodes."
+msgstr ""
+
+msgid ""
+"There are three different places where you can setup font usage. The first "
+"is the theme editor. Choose the node you want to set the font for and select "
+"the font tab. The second is in the inspector for control nodes under **Theme "
+"Overrides > Fonts**. Lastly, in the inspector settings for themes under "
+"**Default Font**."
+msgstr ""
+
+msgid ""
+"If no font override is specified anywhere, `Open Sans <https://fonts.google."
+"com/specimen/Open+Sans>`__ SemiBold is used as the default project font."
+msgstr ""
+
+msgid ""
+"Since Godot 4.0, font sizes are no longer defined in the font itself but are "
+"instead defined in the node that uses the font. This is done in the **Theme "
+"Overrides > Font Sizes** section of the inspector."
+msgstr ""
+
+msgid ""
+"This allows changing the font size without having to duplicate the font "
+"resource for every different font size."
+msgstr ""
+
+msgid ""
+"There are 2 kinds of font files: *dynamic* (TTF/OTF/WOFF/WOFF2 formats) and "
+"*bitmap* (BMFont ``.fnt`` format or monospaced image). Dynamic fonts are the "
+"most commonly used option, as they can be resized and still look crisp at "
+"higher sizes. Thanks to their vector-based nature, they can also contain a "
+"lot more glyphs while keeping a reasonable file size compared to bitmap "
+"fonts. Dynamic fonts also support some advanced features that bitmap fonts "
+"cannot support, such as *ligatures* (several characters transforming into a "
+"single different design)."
+msgstr ""
+
+msgid ""
+"You can find freely licensed font files on websites such as `Google Fonts "
+"<https://fonts.google.com/>`__ and `Font Library <https://fontlibrary.org/"
+">`__."
+msgstr ""
+
+msgid ""
+"Fonts are covered by copyright. Double-check the license of a font before "
+"using it, as not all fonts allow commercial use without purchasing a license."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can see how fonts work in action using the `BiDI and Font Features demo "
+"project <https://github.com/godotengine/godot-demo-projects/tree/master/gui/"
+"bidi_and_font_features>`__."
+msgstr ""
+"Tämän dokumentaation lisäksi voit myös katsoa erilaisia Godot demoprojekteja "
+"<https://github.com/godotengine/godot-demo-projects>`_."
+
+msgid "Dynamic fonts"
+msgstr ""
+
+#, fuzzy
+msgid "Godot supports the following dynamic font formats:"
+msgstr "Heijastusnäyttö näyttää seuraavat tiedot:"
+
+msgid "TrueType Font or Collection (``.ttf``, ``.ttc``)"
+msgstr ""
+
+msgid "OpenType Font or Collection (``.otf``, ``.otc``)"
+msgstr ""
+
+msgid "Web Open Font Format 1 (``.woff``)"
+msgstr ""
+
+msgid "Web Open Font Format 2 (``.woff2``, since Godot 3.5)"
+msgstr ""
+
+msgid ""
+"While ``.woff`` and especially ``.woff2`` tend to result in smaller file "
+"sizes, there is no universally \"better\" font format. In most situations, "
+"it's recommended to use the font format that was shipped on the font "
+"developer's website."
+msgstr ""
+
+msgid "Bitmap fonts"
+msgstr ""
+
+msgid ""
+"Godot supports the BMFont (``.fnt``) bitmap font format. This is a format "
+"created by the `BMFont <https://www.angelcode.com/products/bmfont/>`__ "
+"program. Many BMFont-compatible programs also exist, like `BMGlyph <https://"
+"www.bmglyph.com/>`__."
+msgstr ""
+
+msgid ""
+"Alternatively, you can import any image to be used as a bitmap font. This is "
+"only supported for **monospaced** fonts (fonts where each character has the "
+"same width). To do so, select the image in the FileSystem dock, go to the "
+"Import dock, change its import type to **Font Data (Monospace Image Font)** "
+"then click **Reimport**:"
+msgstr ""
+
+msgid "Changing import type to Font Data (Monospace Image Font)"
+msgstr ""
+
+msgid "Changing import type to **Font Data (Monospace Image Font)**"
+msgstr ""
+
+msgid ""
+"The font's character set layout can be in any order, but orders that match "
+"standard Unicode are recommended as they'll require far less configuration "
+"to import. For example, the bitmap font below contains `ASCII <https://en."
+"wikipedia.org/wiki/ASCII>`__ characters and follows standard ASCII ordering:"
+msgstr ""
+
+#, fuzzy
+msgid "Bitmap font example"
+msgstr "Minimaalinen asiakasohjelman esimerkki"
+
+msgid ""
+"Credit: `LibreQuake <https://github.com/MissLav/LibreQuake/blob/master/lq1/"
+"gfx-wad/CONCHARS.png>`__ (scaled and cropped to exclude extended range)"
+msgstr ""
+
+msgid ""
+"The following import options can be used to import the above font image "
+"successfully:"
+msgstr ""
+
+msgid "Import options to use for the above example font"
+msgstr ""
+
+msgid ""
+"The **Character Ranges** option is an array that maps each position on the "
+"image (in tile coordinates, not pixels). The font atlas is traversed from "
+"left to right and top to bottom. Characters can be specified with decimal "
+"numbers (``127``), hexadecimal numbers (``0x007f``) or between *single* "
+"quotes (``'~'``). Ranges can be specified with a hyphen between characters."
+msgstr ""
+
+msgid ""
+"For instance, ``0-127`` (or ``0x0000-0x007f``) denotes the full ASCII range. "
+"As another example, ``' '-'~'`` is equivalent to ``32-127`` and denotes the "
+"range of *printable* (visible) ASCII characters."
+msgstr ""
+
+msgid ""
+"Make sure the **Character Ranges** option doesn't exceed the number of "
+"**Columns** × **Rows** defined. Otherwise, the font will fail to import."
+msgstr ""
+
+msgid ""
+"If your font image contains margins not used for font glyphs (such as "
+"attribution information), try adjusting **Image Margin**. This is a margin "
+"applied only once around the whole image."
+msgstr ""
+
+msgid ""
+"If your font image contains guides (in the form of lines between glyphs) or "
+"if spacing between characters appears incorrect, try adjusting **Character "
+"Margin**. This margin is applied for every imported glyph."
+msgstr ""
+
+#, fuzzy
+msgid "Loading a font file"
+msgstr "Välilyöntien käyttö"
+
+msgid ""
+"To load a font file (dynamic or bitmap), use the resource dropdown's **Quick "
+"Load** or **Load** option next to a font property, then navigate to the font "
+"file in question:"
+msgstr ""
+
+msgid ""
+"You can also drag-and-drop a font file from the FileSystem dock to the "
+"inspector property that accepts a Font resource."
+msgstr ""
+
+msgid ""
+"In Godot 4.0 and later, texture filter and repeat properties are defined in "
+"the location where the texture is used, rather than on the texture itself. "
+"This also applies to fonts (both dynamic fonts and bitmap fonts)."
+msgstr ""
+
+msgid ""
+"Fonts that have a pixel art appearance should have bilinear filtering "
+"disabled by changing the **Rendering > Textures > Canvas Textures > Default "
+"Texture Filter** project setting to **Nearest**."
+msgstr ""
+
+msgid ""
+"The font size must also be an integer multiple of the design size (which "
+"varies on a per-font basis), and the Control node using the font must be "
+"scaled by an integer multiple as well. Otherwise, the font may look blurry. "
+"Font sizes in Godot are specified in pixels (px), not points (pt). Keep this "
+"in mind when comparing font sizes across different software."
+msgstr ""
+
+msgid ""
+"The texture filter mode can also be set on individual nodes that inherit "
+"from CanvasItem by setting :ref:`CanvasItem.texture_filter "
+"<class_CanvasItem_property_texture_filter>`."
+msgstr ""
+
+#, fuzzy
+msgid "Advanced font features"
+msgstr "Ominaisuudet"
+
+msgid "Antialiasing"
+msgstr ""
+
+msgid ""
+"You can adjust how the font should be smoothed out when rendering by "
+"adjusting *antialiasing* and *hinting*. These are different properties, with "
+"different use cases."
+msgstr ""
+
+msgid ""
+"Antialiasing controls how glyph edges should be smoothed out when "
+"rasterizing the font. The default antialiasing method (**Grayscale**) works "
+"well on every display technology. However, at small sizes, grayscale "
+"antialiasing may result in fonts looking blurry."
+msgstr ""
+
+msgid ""
+"The antialiasing sharpness can be improved by using LCD subpixel "
+"optimization, which exploits the subpixel patterns of most LCD displays by "
+"offsetting the font antialiasing on a per-channel basis (red/green/blue). "
+"The downside is that this can introduce \"fringing\" on edges, especially on "
+"display technologies that don't use standard RGB subpixels (such as OLED "
+"displays)."
+msgstr ""
+
+msgid ""
+"In most games, it's recommended to stick to the default **Grayscale** "
+"antialiasing. For non-game applications, LCD subpixel optimization is worth "
+"exploring."
+msgstr ""
+
+#, fuzzy
+msgid "Font antialiasing comparison"
+msgstr "Visuaalinen vertailu"
+
+msgid "From top to bottom: Disabled, Grayscale, LCD Subpixel (RGB)"
+msgstr ""
+
+msgid ""
+"Antialiasing cannot be changed on :ref:`MSDF-rendered fonts "
+"<doc_using_fonts_msdf>` – these are always rendered with grayscale "
+"antialiasing."
+msgstr ""
+
+#, fuzzy
+msgid "Hinting"
+msgstr "Valon valmismuuttujat"
+
+msgid ""
+"Hinting controls how aggressively glyph edges should be snapped to pixels "
+"when rasterizing the font. **None** results in the smoothest appearance, "
+"which can make the font look blurry at small sizes. **Light** (default) is "
+"sharper by snapping glyph edges to pixels on the Y axis only, while **Full** "
+"is even sharper by snapping glyph edges to pixels on both X and Y axes. "
+"Depending on personal preference, you may prefer using one hinting mode over "
+"the other."
+msgstr ""
+
+#, fuzzy
+msgid "Font hinting comparison"
+msgstr "Visuaalinen vertailu"
+
+msgid "From top to bottom: None, Light, Full hinting"
+msgstr ""
+
+msgid ""
+"If changing the hinting mode has no visible effect after clicking "
+"**Reimport**, it's usually because the font doesn't include hinting "
+"instructions. This can be resolved by looking for a version of the font file "
+"that includes hinting instructions, or enabling **Force Autohinter** in the "
+"Import dock. This will use `FreeType <https://freetype.org/>`__'s autohinter "
+"to automatically add hinting instructions to the imported font."
+msgstr ""
+
+msgid "Subpixel positioning"
+msgstr ""
+
+msgid ""
+"Subpixel positioning can be adjusted. This is a `FreeType <https://freetype."
+"org/>`__ feature that allows glyphs to be rendered more closely to their "
+"intended form. The default setting of **Auto** automatically enables "
+"subpixel positioning at small sizes, but disables it at large font sizes to "
+"improve rasterization performance."
+msgstr ""
+
+msgid ""
+"You can force the subpixel positioning mode to **Disabled**, **One half of a "
+"pixel** or **One quarter of a pixel**. **One quarter of a pixel** provides "
+"the best quality, at the cost of longer rasterization times."
+msgstr ""
+
+msgid ""
+"Changing antialiasing, hinting and subpixel positioning has the most visible "
+"effect at smaller font sizes."
+msgstr ""
+
+msgid ""
+"Fonts that have a pixel art appearance should have their subpixel "
+"positioning mode set to **Disabled**. Otherwise, the font may appear to have "
+"uneven pixel sizes."
+msgstr ""
+
+msgid ""
+"This step is not required for bitmap fonts, as subpixel positioning is only "
+"relevant for dynamic fonts (which are usually made of vector elements)."
+msgstr ""
+
+msgid "Mipmaps"
+msgstr ""
+
+msgid ""
+"By default, fonts do not have mipmaps generated to reduce memory usage and "
+"speed up rasterization. However, this can cause downscaled fonts to become "
+"grainy. This can be especially noticeable with :ref:`doc_3d_text` that "
+"doesn't have **Fixed Size** enabled. This can also occur when displaying "
+"text with a traditional rasterized (non-:ref:`MSDF <doc_using_fonts_msdf>`) "
+"font in a Control node that has its scale lower than ``(1, 1)``."
+msgstr ""
+
+msgid ""
+"After selecting a font in the FileSystem dock, you can enable the "
+"**Mipmaps** in the Import dock to improve downscaled font rendering "
+"appearance."
+msgstr ""
+
+msgid ""
+"Mipmaps can be enabled on MSDF fonts as well. This can improve font "
+"rencering quality a little at smaller-than-default sizes, but MSDF fonts are "
+"already resistant to graininess out of the box."
+msgstr ""
+
+msgid "MSDF font rendering"
+msgstr ""
+
+msgid ""
+"Multi-channel signed distance field (MSDF) font rendering allows rendering "
+"fonts at any size, without having to re-rasterize them when their size "
+"changes."
+msgstr ""
+
+msgid ""
+"MSDF font rendering has 2 upsides over traditional font rasterization, which "
+"Godot uses by default:"
+msgstr ""
+
+msgid "The font will always look crisp, even at huge sizes."
+msgstr ""
+
+msgid ""
+"There is less stuttering when rendering characters *at large font sizes* for "
+"the first time, as there is no rasterization performed."
+msgstr ""
+
+#, fuzzy
+msgid "The downsides of MSDF font rendering are:"
+msgstr "``GIProbe`` keskeisimmät haittapuolet ovat:"
+
+msgid ""
+"Higher baseline cost for font rendering. This is usually not noticeable on "
+"desktop platforms, but it can have an impact on low-end mobile devices."
+msgstr ""
+
+msgid ""
+"Fonts at small sizes will not look as clear as rasterized fonts, due to the "
+"lack of hinting."
+msgstr ""
+
+msgid ""
+"Rendering new glyphs for the first time *at small font sizes* may be more "
+"expensive compared to traditional rasterized fonts. :ref:"
+"`doc_using_fonts_font_prerendering` can be used to alleviate this."
+msgstr ""
+
+msgid "LCD subpixel optimization cannot be enabled for MSDF fonts."
+msgstr ""
+
+msgid ""
+"Fonts with self-intersecting outlines will not render correctly in MSDF "
+"mode. If you notice rendering issues on fonts downloaded from websites such "
+"as `Google Fonts <https://fonts.google.com>`__, try downloading the font "
+"from the font author's official website instead."
+msgstr ""
+
+#, fuzzy
+msgid "Using emoji"
+msgstr "Välilyöntien käyttö"
+
+msgid "Godot has limited support for emoji fonts:"
+msgstr ""
+
+msgid "CBDT/CBLC (embedded PNGs) and SVG emoji fonts are supported."
+msgstr ""
+
+msgid "COLR/CPAL emoji fonts (custom vector format) are **not** supported."
+msgstr ""
+
+msgid ""
+"EMJC bitmap image compression (used by iOS' system emoji font) is **not** "
+"supported. This means that to support emoji on iOS, you must use a custom "
+"font that uses SVG or PNG bitmap compression instead."
+msgstr ""
+
+msgid ""
+"For Godot to be able to display emoji, the font used (or one of its :ref:"
+"`fallbacks <doc_using_fonts_font_fallbacks>`) needs to include them. "
+"Otherwise, emoji won't be displayed and placeholder \"tofu\" characters will "
+"appear instead:"
+msgstr ""
+
+msgid "Default appearance when trying to use emoji in a label"
+msgstr ""
+
+msgid ""
+"After adding a font to display emoji such as `Noto Color Emoji <https://"
+"fonts.google.com/noto/specimen/Noto+Color+Emoji>`__, you get the expected "
+"result:"
+msgstr ""
+
+msgid "Correct appearance after adding an emoji font to the label"
+msgstr ""
+
+msgid ""
+"To use a regular font alongside emoji, it's recommended to specify a :ref:"
+"`fallback font <doc_using_fonts_font_fallbacks>` that points to the emoji "
+"font in the regular font's advanced import options. If you wish to use the "
+"default project font while displaying emoji, leave the **Base Font** "
+"property in FontVariation empty while adding a font fallback pointing to the "
+"emoji font:"
+msgstr ""
+
+msgid ""
+"Emoji fonts are quite large in size, so you may want to :ref:`load a system "
+"font <doc_using_fonts_system_fonts>` to provide emoji glyphs rather than "
+"bundling it with your project. This allows providing full emoji support in "
+"your project without increasing the size of its exported PCK. The downside "
+"is that emoji will look different depending on the platform, and loading "
+"system fonts is not supported on all platforms."
+msgstr ""
+
+#, fuzzy
+msgid "It's possible to use a system font as a fallback font too."
+msgstr ""
+"Onko mahdollista käyttää Godotin pelimoottoria itsenäisesti luokkakirjastona?"
+
+#, fuzzy
+msgid "Using icon fonts"
+msgstr "Ohjauspisteiden lisäys"
+
+msgid ""
+"Tools like `Fontello <https://fontello.com/>`__ can be used to generate font "
+"files containing vectors imported from SVG files. This can be used to render "
+"custom vector elements as part of your text, or to create extruded 3D icons "
+"with :ref:`doc_3d_text` and TextMesh."
+msgstr ""
+
+msgid ""
+"Fontello currently does not support creating multicolored fonts (which Godot "
+"can render). As of November 2022, support for multicolored fonts in icon "
+"font generation tools remains scarce."
+msgstr ""
+
+msgid ""
+"Depending on your use cases, this may lead to better results compared to "
+"using the ``img`` tag in :ref:`RichTextLabel <doc_bbcode_in_richtextlabel>`. "
+"Unlike bitmap images (including SVGs which are rasterized on import by "
+"Godot), true vector data can be resized to any size without losing quality."
+msgstr ""
+
+msgid ""
+"After downloading the generated font file, load it in your Godot project "
+"then specify it as a custom font for a Label, RichTextLabel or Label3D node. "
+"Switch over to the Fontello web interface, then copy the character by "
+"selecting it then pressing :kbd:`Ctrl + C` (:kbd:`Cmd + C` on macOS). Paste "
+"the character in the **Text** property of your Label node. The character "
+"will appear as a placeholder glyph in the inspector, but it should appear "
+"correctly in the 2D/3D viewport."
+msgstr ""
+
+msgid ""
+"To use an icon font alongside a traditional font in the same Control, you "
+"can specify the icon font as a :ref:`fallback "
+"<doc_using_fonts_font_fallbacks>`. This works because icon fonts use the "
+"Unicode *private use area*, which is reserved for use by custom fonts and "
+"doesn't contain standard glyphs by design."
+msgstr ""
+
+msgid ""
+"Several modern icon fonts such as `Font Awesome 6 <https://fontawesome.com/"
+"download>`__ have a desktop variant that uses *ligatures* to specify icons. "
+"This allows you to specify icons by entering their name directly in the "
+"**Text** property of any node that can display fonts. Once the icon's name "
+"is fully entered as text (such as ``house``), it will be replaced by the "
+"icon."
+msgstr ""
+
+msgid ""
+"While easier to use, this approach cannot be used with font fallbacks as the "
+"main font's characters will take priority over the fallback font's ligatures."
+msgstr ""
+
+msgid "Font fallbacks"
+msgstr ""
+
+msgid ""
+"Godot supports defining one or more fallbacks when the main font lacks a "
+"glyph to be displayed. There are 2 main use cases for defining font "
+"fallbacks:"
+msgstr ""
+
+msgid ""
+"Use a font that only supports Latin character sets, but use another font to "
+"be able to display text another character set such as Cyrillic."
+msgstr ""
+
+msgid "Use a font to render text, and another font to render emoji or icons."
+msgstr ""
+
+msgid ""
+"Open the Advanced Import Settings dialog by double-clicking the font file in "
+"the FileSystem dock. You can also select the font in the FileSystem dock, go "
+"to the Import dock then choose **Advanced…** at the bottom:"
+msgstr ""
+
+#, fuzzy
+msgid "Import dock"
+msgstr "Tuo"
+
+msgid ""
+"In the dialog that appears, look for **Fallbacks** section on the sidebar on "
+"the right, click the **Array[Font] (size 0)** text to expand the property, "
+"then click **Add Element**:"
+msgstr ""
+
+msgid "Adding font fallback"
+msgstr ""
+
+msgid ""
+"Click the dropdown arrow on the new element, then choose a font file using "
+"the **Quick Load** or **Load** options:"
+msgstr ""
+
+msgid "Loading font fallback"
+msgstr ""
+
+msgid ""
+"It is possible to add fallback fonts while using the default project font. "
+"To do so, leave the **Base Font** property empty while adding one or more "
+"font fallbacks."
+msgstr ""
+
+msgid ""
+"Font fallbacks can also be defined on a local basis similar to :ref:"
+"`doc_using_fonts_opentype_font_features`, but this is not covered here for "
+"brevity reasons."
+msgstr ""
+
+#, fuzzy
+msgid "Variable fonts"
+msgstr "Muuttuja"
+
+msgid ""
+"Godot has full support for `variable fonts <https://variablefonts.io/>`__, "
+"which allow you to use a single font file to represent various font weights "
+"and styles (regular, bold, italic, …). This must be supported by the font "
+"file you're using."
+msgstr ""
+
+msgid ""
+"To use a variable font, create a :ref:`class_FontVariation` resource in the "
+"location where you intend to use the font, then load a font file within the "
+"FontVariation resource:"
+msgstr ""
+
+#, fuzzy
+msgid "Creating a FontVariation resource"
+msgstr "Omien resurssiesi luonti"
+
+msgid "Loading a font file into the FontVariation resource"
+msgstr ""
+
+msgid ""
+"Scroll down to the FontVariation's **Variation** section, then click the "
+"**Variation Coordinates** text to expand the list of axes that can be "
+"adjusted:"
+msgstr ""
+
+#, fuzzy
+msgid "List of variation axes"
+msgstr "Ominaisuudet"
+
+msgid ""
+"The set of axes you can adjust depends on the font loaded. Some variable "
+"fonts only support one axis of adjustment (typically *weight* or *slant*), "
+"while others may support multiple axes of adjustment."
+msgstr ""
+
+msgid ""
+"For example, here's the `Inter V <https://rsms.me/inter/>`__ font with a "
+"*weight* of ``900`` and a *slant* of ``-10``:"
+msgstr ""
+
+msgid "Variable font example (Inter V)"
+msgstr ""
+
+msgid ""
+"While variable font axis names and scales aren't standardized, some common "
+"conventions are usually followed by font designers. For instance, the "
+"*weight* axis typically uses ``400`` as the \"regular\" font weight and "
+"``700`` as the \"bold\" font weight."
+msgstr ""
+
+msgid ""
+"You can save the FontVariation to a ``.tres`` resource file to reuse it in "
+"other places:"
+msgstr ""
+
+msgid "Saving FontVariation to an external resource file"
+msgstr ""
+
+msgid "Faux bold and italic"
+msgstr ""
+
+msgid ""
+"When writing text in bold or italic, using font variants specifically "
+"designed for this looks better. Spacing between glyphs will be more "
+"consistent when using a bold font, and certain glyphs' shapes may change "
+"entirely in italic variants (compare \"a\" and *\"a\"*)."
+msgstr ""
+
+msgid ""
+"However, real bold and italic fonts require shipping more font files, which "
+"increases distribution size. A single :ref:`variable font "
+"<doc_using_fonts_variable_fonts>` file can also be used, but this file will "
+"be larger than a single non-variable font. While file size is usually not an "
+"issue for desktop projects, it can be a concern for mobile/web projects that "
+"strive to keep distribution size as low as possible."
+msgstr ""
+
+msgid ""
+"To allow bold and italic fonts to be displayed without having to ship "
+"additional fonts (or use a variable font that is larger in size), Godot "
+"supports *faux* bold and italic."
+msgstr ""
+
+msgid ""
+"Faux bold/italic (top), real bold/italic (bottom). Normal font used: Open "
+"Sans SemiBold"
+msgstr ""
+
+msgid ""
+"Faux bold and italic is automatically used in :ref:`class_RichTextLabel`'s "
+"bold and italic tags if no custom fonts are provided for bold and/or italic."
+msgstr ""
+
+msgid ""
+"To use faux bold, create a FontVariation resource in a property where a Font "
+"resource is expected. Set **Variation > Embolden** to a positive value to "
+"make a font bolder, or to a negative value to make it less bold. Recommended "
+"values are between ``0.5`` and ``1.2`` depending on the font."
+msgstr ""
+
+msgid ""
+"Faux italic is created by skewing the text, which is done by modifying the "
+"per-character transform. This is also provided in FontVariation using the "
+"**Variation > Transform** property. Setting the ``yx`` component of the "
+"character transform to a positive value will italicize the text. Recommended "
+"values are between ``0.2`` and ``0.4`` depending on the font."
+msgstr ""
+
+#, fuzzy
+msgid "Adjusting font spacing"
+msgstr "Ohjauspisteiden lisäys"
+
+msgid ""
+"For stylistic purposes or for better readability, you may want to adjust how "
+"a font is presented in Godot."
+msgstr ""
+
+msgid ""
+"Create a FontVariation resource in a property where a Font resource is "
+"expected. There are 4 properties available in the **Variation > Extra "
+"Spacing** section, which accept positive and negative values:"
+msgstr ""
+
+msgid "**Glyph:** Additional spacing between every glyph."
+msgstr ""
+
+msgid "**Space:** Additional spacing between words."
+msgstr ""
+
+msgid ""
+"**Top:** Additional spacing above glyphs. This is used for multiline text, "
+"but also to calculate the minimum size of controls such as :ref:"
+"`class_Label` and :ref:`class_Button`."
+msgstr ""
+
+msgid ""
+"**Top:** Additional spacing below glyphs. This is used for multiline text, "
+"but also to calculate the minimum size of controls such as :ref:"
+"`class_Label` and :ref:`class_Button`."
+msgstr ""
+
+msgid ""
+"The **Variation > Transform** property can also be adjusted to stretch "
+"characters horizontally or vertically. This is specifically done by "
+"adjusting the ``xx`` (horizontal scale) and ``yy`` (vertical scale) "
+"components. Remember to adjust glyph spacing to account for any changes, as "
+"glyph transform doesn't affect how much space each glyph takes in the text. "
+"Non-uniform scaling of this kind should be used sparingly, as fonts are "
+"generally not designed to be displayed with stretching."
+msgstr ""
+
+#, fuzzy
+msgid "OpenType font features"
+msgstr "Ominaisuudet"
+
+msgid ""
+"Godot supports enabling OpenType font features, which are a standardized way "
+"to define alternate characters that can be toggled without having to swap "
+"font files entirely. Despite being named OpenType font features, these are "
+"also supported in TrueType (``.ttf``) and WOFF/WOFF2 font files."
+msgstr ""
+
+msgid ""
+"Support for OpenType features highly depends on the font used. Some fonts "
+"don't support any OpenType features, while other fonts can support dozens of "
+"toggleable features."
+msgstr ""
+
+#, fuzzy
+msgid "There are 2 ways to use OpenType font featutres:"
+msgstr "On kaksi tapaa tehdä tämä:"
+
+msgid "**Globally on a font file**"
+msgstr ""
+
+msgid ""
+"In the dialog that appears, look for the **Metadata Overrides > OpenType "
+"Features** section on the sidebar on the right, click the **Features (0 of N "
+"set)** text to expand the property, then click **Add Feature**:"
+msgstr ""
+
+msgid "OpenType feature overrides in Advanced Import Settings"
+msgstr ""
+
+msgid "**In a specific font usage (FontVariation)**"
+msgstr ""
+
+msgid ""
+"To use a font feature, create a FontVariation resource like you would do for "
+"a :ref:`variable font <doc_using_fonts_variable_fonts>`, then load a font "
+"file within the FontVariation resource:"
+msgstr ""
+
+msgid "Loading a font file into a FontVariation resource"
+msgstr ""
+
+msgid ""
+"Scroll down to the FontVariation's **OpenType Features** section, click the "
+"**Features (0 of N set)** text to expand the property, then click **Add "
+"Feature** and select the desired feature in the dropdown:"
+msgstr ""
+
+msgid "Specifying OpenType features in a FontVariation resource"
+msgstr ""
+
+msgid ""
+"For example, here's the `Inter <https://rsms.me/inter/>`__ font without the "
+"*Slashed Zero* feature (top), then with the *Slashed Zero* OpenType feature "
+"enabled (bottom):"
+msgstr ""
+
+msgid "OpenType feature comparison (Inter)"
+msgstr ""
+
+msgid ""
+"You can disable ligatures and/or kerning for a specific font by adding "
+"OpenType features, then unchecking them in the inspector:"
+msgstr ""
+
+msgid "Disabling ligatures and kerning for a font"
+msgstr ""
+
+msgid "System fonts"
+msgstr ""
+
+msgid ""
+"Loading system fonts is only supported on Windows, macOS, Linux, Android and "
+"iOS."
+msgstr ""
+
+msgid ""
+"System fonts are a different type of resource compared to imported fonts. "
+"They are never actually imported into the project, but are loaded at run-"
+"time. This has 2 benefits:"
+msgstr ""
+
+msgid ""
+"The fonts are not included within the exported PCK file, leading to a "
+"smaller file size for the exported project."
+msgstr ""
+
+msgid ""
+"Since fonts are not included with the exported project, this avoids "
+"licensing issues that would occur if proprietary system fonts were "
+"distributed alongside the project."
+msgstr ""
+
+msgid ""
+"The engine automatically uses system fonts as fallback fonts, which makes it "
+"possible to display CJK characters and emoji without having to load a custom "
+"font. There are some restrictions that apply though, as mentioned in the :"
+"ref:`Using emoji <doc_using_fonts_emoji>` section."
+msgstr ""
+
+msgid ""
+"Create a SystemFont resource in the location where you desire to use the "
+"system font:"
+msgstr ""
+
+#, fuzzy
+msgid "Creating a SystemFont resource"
+msgstr "Omien resurssiesi luonti"
+
+msgid "Specifying a font name to use in a SystemFont resource"
+msgstr ""
+
+msgid ""
+"You can either specify one or more font names explicitly (such as "
+"``Arial``), or specify the name of a font *alias* that maps to a "
+"\"standard\" default font for the system:"
+msgstr ""
+
+#, fuzzy
+msgid "Font alias"
+msgstr "Etunäkymä"
+
+msgid "Windows"
+msgstr "Windows"
+
+#, fuzzy
+msgid "macOS/iOS"
+msgstr "macOS"
+
+msgid "Linux"
+msgstr ""
+
+msgid "Android"
+msgstr "Android"
+
+msgid "``sans-serif``"
+msgstr ""
+
+msgid "Arial"
+msgstr ""
+
+msgid "Helvetica"
+msgstr ""
+
+msgid "*Handled by fontconfig*"
+msgstr ""
+
+msgid "Roboto / Noto Sans"
+msgstr ""
+
+msgid "``serif``"
+msgstr ""
+
+msgid "Times New Roman"
+msgstr ""
+
+msgid "Times"
+msgstr ""
+
+msgid "Noto Serif"
+msgstr ""
+
+#, fuzzy
+msgid "``monospace``"
+msgstr "``instance`` (ilmentymä)"
+
+msgid "Courier New"
+msgstr ""
+
+msgid "Courier"
+msgstr ""
+
+msgid "Droid Sans Mono"
+msgstr ""
+
+#, fuzzy
+msgid "``cursive``"
+msgstr "``primitive``"
+
+msgid "Comic Sans MS"
+msgstr ""
+
+msgid "Apple Chancery"
+msgstr ""
+
+#, fuzzy
+msgid "Dancing Script"
+msgstr "Pääskripti"
+
+#, fuzzy
+msgid "``fantasy``"
+msgstr "``pose``"
+
+msgid "Gabriola"
+msgstr ""
+
+msgid "Papyrus"
+msgstr ""
+
+msgid ""
+"On Android, Roboto is used for Latin/Cyrillic text and Noto Sans is used for "
+"other languages' glyphs such as CJK. On third-party Android distributions, "
+"the exact font selection may differ."
+msgstr ""
+
+msgid ""
+"If specifying more than one font, the first font that is found on the system "
+"will be used (from top to bottom). Font names and aliases are case-"
+"insensitive on all platforms."
+msgstr ""
+
+msgid ""
+"Like for font variations, you can save the SystemFont arrangement to a "
+"resource file to reuse it in other places."
+msgstr ""
+
+msgid ""
+"Remember that different system fonts have different metrics, which means "
+"that text that can fit within a rectangle on one platform may not be doing "
+"so on another platform. Always reserve some additional space during "
+"development so that labels can extend further if needed."
+msgstr ""
+
+msgid ""
+"Unlike Windows and macOS/iOS, the set of default fonts shipped on Linux "
+"depends on the distribution. This means that on different Linux "
+"distributions, different fonts may be displayed for a given system font name "
+"or alias."
+msgstr ""
+
+msgid "Font prerendering"
+msgstr ""
+
+msgid ""
+"When using traditional rasterized fonts, Godot caches glyphs on a per-font "
+"and per-size basis. This reduces stuttering, but it can still occur the "
+"first time a glyph is displayed when running the project. This can be "
+"especially noticeable at higher font sizes or on mobile devices."
+msgstr ""
+
+msgid ""
+"When using MSDF fonts, they only need to be rasterized once to a special "
+"signed distance field texture. This means caching can be done purely on a "
+"per-font basis, without taking the font size into consideration. However, "
+"the initial rendering of MSDF fonts is slower compared to a traditional "
+"rasterized font at a medium size."
+msgstr ""
+
+msgid ""
+"To avoid stuttering issues related to font rendering, it is possible to "
+"*prerender* certain glyphs. This can be done for all glyphs you intend to "
+"use (for optimal results), or only for common glyphs that are most likely to "
+"appear during gameplay (to reduce file size). Glyphs that aren't pre-"
+"rendered will be rasterized on-the-fly as usual."
+msgstr ""
+
+msgid ""
+"In both cases (traditional and MSDF), font rasterization is done on the CPU. "
+"This means that the GPU performance doesn't affect how long it takes for "
+"fonts to be rasterized."
+msgstr ""
+
+msgid ""
+"Move to the **Pre-render Configurations** tab of the Advanced Import "
+"Settings dialog, then add a configuration by clicking the \"plus\" symbol:"
+msgstr ""
+
+msgid ""
+"Adding a new prerendering configuration in the Advanced Import Settings "
+"dialog"
+msgstr ""
+
+msgid ""
+"After adding a configuration, make sure it is selected by clicking its name "
+"once. You can also rename the configuration by double-clicking it."
+msgstr ""
+
+msgid ""
+"There are 2 ways to add glyphs to be prerendered to a given configuration. "
+"It is possible to use both approaches in a cumulative manner:"
+msgstr ""
+
+#, fuzzy
+msgid "**Using text from translations**"
+msgstr "Animaation ohjaaminen"
+
+msgid ""
+"For most projects, this approach is the most convenient to use, as it "
+"automatically sources text from your language translations. The downside is "
+"that it can only be used if your project supports :ref:`internationalization "
+"<doc_internationalizing_games>`. Otherwise, stick to the \"Using custom "
+"text\" approach described below."
+msgstr ""
+
+msgid ""
+"After adding translations to the Project Settings, use the **Glyphs from the "
+"Translations** tab to check translations by double-clicking them, then click "
+"**Shape All Strings in the Translations and Add Glyphs** at the bottom:"
+msgstr ""
+
+msgid ""
+"Enabling prerendering in the Advanced Import Settings dialog with the Glyphs "
+"from the Translations tab"
+msgstr ""
+
+msgid ""
+"Enabling prerendering in the Advanced Import Settings dialog with the "
+"**Glyphs from the Translations** tab"
+msgstr ""
+
+msgid ""
+"The list of prerendered glyphs is not automatically updated when "
+"translations are updated, so you need to repeat this process if your "
+"translations have changed significantly."
+msgstr ""
+
+msgid "**Using custom text**"
+msgstr ""
+
+msgid ""
+"While it requires manually specifying text that will appear in the game, "
+"this is the most efficient approach for games which don't feature user text "
+"input. This approach is worth exploring for mobile games to reduce the file "
+"size of the distributed app."
+msgstr ""
+
+msgid ""
+"To use existing text as a baseline for prerendering, go to the **Glyphs from "
+"the Text** sub-tab of the Advanced Import Settings dialog, enter text in the "
+"window on the right, then click **Shape Text and Add Glyphs** at the bottom "
+"of the dialog:"
+msgstr ""
+
+msgid ""
+"Enabling prerendering in the Advanced Import Settings dialog, Glyphs from "
+"the Text tab"
+msgstr ""
+
+msgid ""
+"Enabling prerendering in the Advanced Import Settings dialog with the "
+"**Glyphs from the Text** tab"
+msgstr ""
+
+msgid ""
+"If your project supports :ref:`internationalization "
+"<doc_internationalizing_games>`, you can paste the contents of your CSV or "
+"PO files in the above box to quickly prerender all possible characters that "
+"may be rendered during gameplay (excluding user-provided or non-translatable "
+"strings)."
+msgstr ""
+
+msgid "**By enabling character sets**"
+msgstr ""
+
+msgid ""
+"The second method requires less configuration and fewer updates if your "
+"game's text changes, and is more suited to text-heavy games or multiplayer "
+"games with chat. On the other hand, it may cause glyphs that never show up "
+"in the game to be prerendered, which is less efficient in terms of file size."
+msgstr ""
+
+msgid ""
+"To use existing text as a baseline for prerendering, go to the **Glyphs from "
+"the Character Map** sub-tab of the Advanced Import Settings dialog, then "
+"*dobule-click* character sets to be enabled on the right:"
+msgstr ""
+
+msgid ""
+"Enabling prerendering in the Advanced Import Settings dialog, Glyphs from "
+"the Character Map tab"
+msgstr ""
+
+msgid ""
+"Enabling prerendering in the Advanced Import Settings dialog with the "
+"**Glyphs from the Character Map** tab"
+msgstr ""
+
+msgid ""
+"To ensure full prerendering, the character sets you need to enable depend on "
+"which languages are supported in your game. For English, only **Basic "
+"Latin** needs to be enabled. Enabling **Latin-1 Supplement** as well allows "
+"fully covering many more languages, such as French, German and Spanish. For "
+"Russian, **Cyrillic** needs to be enabled, and so on."
+msgstr ""
+
+#, fuzzy
+msgid "Default project font properties"
+msgstr "Ominaisuuksien lisääminen"
+
+msgid ""
+"In the **GUI > Theme** section of the advanced Project Settings, you can "
+"choose how the default font should be rendered:"
+msgstr ""
+
+msgid ""
+"**Default Font Antialiasing:** Controls the :ref:`antialiasing "
+"<doc_using_fonts_antialiasing>` method used for the default project font."
+msgstr ""
+
+msgid ""
+"**Default Font Hinting:** Controls the :ref:`hinting "
+"<doc_using_fonts_hinting>` method used for the default project font."
+msgstr ""
+
+msgid ""
+"**Default Font Subpixel Positioning:** Controls the :ref:`subpixel "
+"positioning <doc_using_fonts_subpixel_positioning>` method for the default "
+"project font."
+msgstr ""
+
+msgid ""
+"**Default Font Multichannel Signed Distance Field:** If ``true``, makes the "
+"default project font use :ref:`MSDF font rendering <doc_using_fonts_msdf>` "
+"instead of traditional rasterization."
+msgstr ""
+
+msgid ""
+"**Default Font Generate Mipmaps:** If ``true``, enables :ref:`mipmap "
+"<doc_using_fonts_mipmaps>` generation and usage for the default project font."
+msgstr ""
+
+msgid ""
+"These project settings *only* affect the default project font (the one that "
+"is hardcoded in the engine binary)."
+msgstr ""
+
+msgid ""
+"Custom fonts' properties are governed by their respective import options "
+"instead. You can use the **Import Defaults** section of the Project Settings "
+"dialog to override default import options for custom fonts."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Käännöksen tila"

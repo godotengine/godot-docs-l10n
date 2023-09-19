@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,11 +104,12 @@ msgstr ""
 "Присоединение скрипта к вашему объекту расширяет методы, свойства и сигналы, "
 "доступные из ``ClassDB``."
 
+#, fuzzy
 msgid ""
 "Even scripts that don't use the ``extends`` keyword implicitly inherit from "
-"the engine's base :ref:`Reference <class_Reference>` class. As a result, you "
-"can instantiate scripts without the ``extends`` keyword from code. Since "
-"they extend ``Reference`` though, you cannot attach them to a :ref:`Node "
+"the engine's base :ref:`RefCounted <class_RefCounted>` class. As a result, "
+"you can instantiate scripts without the ``extends`` keyword from code. Since "
+"they extend ``RefCounted`` though, you cannot attach them to a :ref:`Node "
 "<class_Node>`."
 msgstr ""
 "Даже скрипты, которые не наследуются от встроенного типа, то есть скрипты, "
@@ -133,10 +134,11 @@ msgstr ""
 "который создает узлы и добавляет их как дочерние элементы с помощью "
 "``add_child()``."
 
+#, fuzzy
 msgid ""
 "We often pair a scene with a scripted root node that makes use of the "
-"scene's nodes. As such, the scene is often an extension of the script's "
-"declarative code."
+"scene's nodes. As such, the script extends the scene by adding behavior "
+"through imperative code."
 msgstr ""
 "Почему все это важно для организации сцены? Потому что сцены *являются* "
 "объектами. Вы обычно объединяете в пару сцену и корневой сценарный "
@@ -146,16 +148,20 @@ msgstr ""
 msgid "The content of a scene helps to define:"
 msgstr "Содержание сцены позволяет определить:"
 
-msgid "What nodes are available to the script"
+#, fuzzy
+msgid "What nodes are available to the script."
 msgstr "Какие узлы доступны сценарию (скрипту)"
 
-msgid "How they are organized"
+#, fuzzy
+msgid "How they are organized."
 msgstr "Как они организованы"
 
-msgid "How they are initialized"
+#, fuzzy
+msgid "How they are initialized."
 msgstr "Как они инициализированы"
 
-msgid "What signal connections they have with each other"
+#, fuzzy
+msgid "What signal connections they have with each other."
 msgstr "Какие сигнальные связи они имеют друг с другом"
 
 msgid ""

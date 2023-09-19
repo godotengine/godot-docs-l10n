@@ -1,0 +1,502 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Code style guidelines"
+msgstr "コードスタイルガイドライン"
+
+msgid ""
+"When contributing to Godot's source code, you will be expected to follow the "
+"style guidelines outlined below. Some of them are checked via the Continuous "
+"Integration process and reviewers will ask you to fix potential issues, so "
+"best setup your system as outlined below to ensure all your commits follow "
+"the guidelines."
+msgstr ""
+"Godotのソースコードに投稿する場合は、以下に示すスタイルガイドラインに従ってく"
+"ださい。一部のインテグレーションプロセスを介してチェックされ、レビュー担当者"
+"から潜在的な問題の修正を求める質問が表示されますので、以下に示すようにシステ"
+"ムをセットアップして、すべてのコミットがガイドラインに従うようにします。"
+
+msgid "C++ and Objective-C"
+msgstr "C++およびObjective-C"
+
+#, fuzzy
+msgid ""
+"There are no written guidelines, but the code style agreed upon by the "
+"developers is enforced via the `clang-format <https://clang.llvm.org/docs/"
+"ClangFormat.html>`__ code beautifier, which takes care for you of all our "
+"conventions. To name a few:"
+msgstr ""
+"文書化されたガイドラインはありませんが、開発者によって合意されたコードスタイ"
+"ルは、\\ `clang形式 <http://clang.llvm.org/docs/ClangFormat.html>`_\\ のコー"
+"ドビューティファイヤを介して適用されます。 いくつか例を挙げると:"
+
+msgid ""
+"Indentation and alignment are both tab based (respectively one and two tabs)"
+msgstr "インデントと配置は両方ともタブベースです(それぞれ1つと2つのタブ)"
+
+msgid "One space around math and assignments operators as well as after commas"
+msgstr "コンマの後だけでなく、数学演算子と代入演算子の周りに1つのスペース"
+
+msgid ""
+"Pointer and reference operators are affixed to the variable identifier, not "
+"to the type name"
+msgstr "ポインタ演算子と参照演算子は、型名ではなく変数識別子に貼り付けられます"
+
+msgid "See further down regarding header includes"
+msgstr "ヘッダーのインクルードに関する詳細を参照してください"
+
+msgid ""
+"The rules used by clang-format are outlined in the `.clang-format <https://"
+"github.com/godotengine/godot/blob/master/.clang-format>`__ file of the Godot "
+"repository."
+msgstr ""
+"\\ clang形式で使用されるルールは、Godotリポジトリの\\ `.clang形式 <https://"
+"github.com/godotengine/godot/blob/master/.clang-format>`_\\ ファイルで概説さ"
+"れています。"
+
+msgid ""
+"As long as you ensure that your style matches the surrounding code and that "
+"you not introducing trailing whitespace or space-based indentation, you "
+"should be fine. If you plan to contribute regularly however, we strongly "
+"advise that you setup clang-format locally to check and automatically fix "
+"all your commits."
+msgstr ""
+"スタイルが周囲のコードと一致し、末尾の空白やスペースベースのインデントを導入"
+"しない限り、問題ありません。ただし、定期的に投稿する場合は、すべてのコミット"
+"をチェックして自動的に修正するために、clang形式をローカルに設定することを強く"
+"お勧めします。"
+
+#, fuzzy
+msgid ""
+"Godot's code style should *not* be applied to third-party code, i.e. that is "
+"included in Godot's source tree but was not written specifically for our "
+"project. Such code usually come from different upstream projects with their "
+"own style guides (or lack thereof), and don't want to introduce differences "
+"that would make syncing with upstream repositories harder."
+msgstr ""
+"Godotのコードスタイルをサードパーティのコードに適用してはいけません。つまり、"
+"Godotのソースツリーには含まれていますが、私たちのプロジェクト用に特別に書かれ"
+"たものではありません。そのようなコードは通常、独自のスタイルガイド(若しくはそ"
+"の欠如)を持つ異なる上流プロジェクトから来ており、上流リポジトリとの同期を難し"
+"くするような違いを導入したくありません。"
+
+#, fuzzy
+msgid ""
+"Third-party code is usually included in the ``thirdparty/`` folder and can "
+"thus easily be excluded from formatting scripts. For the rare cases where a "
+"third-party code snippet needs to be included directly within a Godot file, "
+"you can use ``/* clang-format off */`` and ``/* clang-format on */`` to tell "
+"clang-format to ignore a chunk of code."
+msgstr ""
+"通常、サードパーティのコードは ``thirdparty/`` フォルダに含まれているため、"
+"フォーマットスクリプトから簡単に除外できます。 サードパーティのコードスニペッ"
+"トをGodotファイル内に直接含める必要があるまれなケースでは、 ``/*clang-format "
+"off*/`` および ``/*clang-format on*/`` を使用してclang-formatにコードのチャン"
+"クを無視させることができます。"
+
+msgid ""
+"These guidelines only cover code formatting. See :ref:"
+"`doc_cpp_usage_guidelines` for a list of language features that are "
+"permitted in pull requests."
+msgstr ""
+
+msgid "Using clang-format locally"
+msgstr "\\ clang形式をローカルで使用する"
+
+#, fuzzy
+msgid ""
+"First of all, you will need to install clang-format. As of now, you need to "
+"use **clang-format 13** to be compatible with Godot's format. Later versions "
+"might be suitable, but previous versions may not support all used options, "
+"or format some things differently, leading to style issues in pull requests."
+msgstr ""
+"まず、clang-formatをインストールする必要があります。現時点では、Godotのフォー"
+"マットと互換性を保つために **clang-format 8.x** を使用する必要があります。後"
+"のバージョンが適している場合がありますが、以前のバージョンにはバグがあり、現"
+"在のコードベースのフォーマットが変更される可能性があります。"
+
+msgid "Installation"
+msgstr "インストール手順"
+
+msgid "Here's how to install clang-format:"
+msgstr "\\ clang形式をインストールする方法は次のとおりです:"
+
+#, fuzzy
+msgid ""
+"Linux: It will usually be available out-of-the-box with the clang toolchain "
+"packaged by your distribution. If your distro version is not the required "
+"one, you can download a pre-compiled version from the `LLVM website <https://"
+"releases.llvm.org/download.html>`__, or if you are on a Debian derivative, "
+"use the `upstream repos <https://apt.llvm.org/>`__."
+msgstr ""
+"Linux: 通常、ディストリビューションによってパッケージ化されたclangツール"
+"チェーンですぐに使用できます。ディストリビューションのバージョンが必要なバー"
+"ジョンではない場合、コンパイル済みのバージョンを `LLVMウェブサイト<http://"
+"releases.llvm.org/download.html>`__からダウンロードできます。または、Debian派"
+"生物を使用している場合は、\\ `upstream repos <http://apt.llvm.org/>`__を使用"
+"します。"
+
+#, fuzzy
+msgid ""
+"macOS and Windows: You can download precompiled binaries from the `LLVM "
+"website <https://releases.llvm.org/download.html>`__. You may need to add "
+"the path to the binary's folder to your system's ``PATH`` environment "
+"variable to be able to call ``clang-format`` out of the box."
+msgstr ""
+"macOSおよびWindows: プリコンパイルされたバイナリは、 `LLVM Webサイト<http://"
+"releases.llvm.org/download.html>`__からダウンロードできます。バイナリのフォル"
+"ダへのパスをシステムの ``PATH`` 環境変数に追加して、\\ ``clang-format`` をす"
+"ぐに呼び出せるようにする必要があります。"
+
+msgid ""
+"You then have different possibilities to apply clang-format to your changes:"
+msgstr "変更にclang-formatを適用する方法はいくつかあります:"
+
+msgid "Manual usage"
+msgstr "手動使用"
+
+msgid ""
+"You can apply clang-format manually one or more files with the following "
+"command:"
+msgstr ""
+"次のコマンドを使用して、clang形式の1つ以上のファイルを手動で適用できます:"
+
+msgid ""
+"``-i`` means that the changes should be written directly to the file (by "
+"default clang-format would only output the fixed version to the terminal)."
+msgstr ""
+"``-i`` は、変更をファイルに直接書き込む必要があることを意味します(デフォルト"
+"ではclang形式では、固定バージョンは端末にのみ出力されます)。"
+
+msgid ""
+"The path can point to several files, either one after the other or using "
+"wildcards like in a typical Unix shell. Be careful when globbing so that you "
+"don't run clang-format on compiled objects (.o and .a files) that are in "
+"Godot's tree. So better use ``core/*.{cpp,h}`` than ``core/*``."
+msgstr ""
+"パスは、次々に、または典型的なUnixシェルのようにワイルドカードを使用して、複"
+"数のファイルを指すことができます。 グロブするときは、Godotのツリーにあるコン"
+"パイル済みオブジェクト(.oおよび.aファイル)でclang-formatを実行しないように注"
+"意してください。 そのため、 ``core/*`` よりも ``core/*.{cpp,h}`` を使用する方"
+"が適切です。"
+
+msgid "Pre-commit hook"
+msgstr "プレコミット フック"
+
+msgid ""
+"For ease of use, we provide a pre-commit hook for Git that will run clang-"
+"format automatically on all your commits to check them, and let you apply "
+"its changes in the final commit."
+msgstr ""
+"使いやすさのために、Gitのプレコミットフックを提供し、すべてのコミットで自動的"
+"にclang形式を実行してチェックし、最終的なコミットでその変更を適用できるように"
+"します。"
+
+msgid ""
+"This \"hook\" is a script which can be found in ``misc/hooks``, refer to "
+"that folder's README.md for installation instructions."
+msgstr ""
+"この「フック」は ``misc/hooks`` で見つけることができるスクリプトであり、イン"
+"ストール手順については、そのフォルダのREADME.mdを参照してください。"
+
+msgid ""
+"If your clang-format is not in the ``PATH``, you may have to edit the ``pre-"
+"commit-clang-format`` to point to the correct binary for it to work. The "
+"hook was tested on Linux and macOS, but should also work in the Git Shell on "
+"Windows."
+msgstr ""
+"あなたのclang-formatが `` PATH`` にない場合、動作するために正しいバイナリを指"
+"すように ``pre-commit-clang-format`` を編集する必要があるかもしれません。 こ"
+"のフックはLinuxおよびmacOSでテストされましたが、WindowsのGitシェルでも動作す"
+"るはずです。"
+
+msgid "IDE plugin"
+msgstr "IDEプラグイン"
+
+msgid ""
+"Most IDEs or code editors have beautifier plugins that can be configured to "
+"run clang-format automatically, for example each time you save a file."
+msgstr ""
+"ほとんどのIDEまたはコードエディタには、ファイルを保存するたびに、clang形式を"
+"自動的に実行するように構成できる美しいプラグインがあります。"
+
+msgid "Here is a non-exhaustive list of beautifier plugins for some IDEs:"
+msgstr "一部のIDE用の美しいプラグインの非網羅的なリストを以下に示します:"
+
+#, fuzzy
+msgid ""
+"Qt Creator: `Beautifier plugin <https://doc.qt.io/qtcreator/creator-"
+"beautifier.html>`__"
+msgstr ""
+"Qtクリエイター:\\ `ビューティフィア・プラグイン <http://doc.qt.io/qtcreator/"
+"creator-beautifier.html>`_"
+
+msgid ""
+"Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
+"items?itemName=xaver.clang-format>`__"
+msgstr ""
+"Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
+"items?itemName=xaver.clang-format>`_"
+
+msgid ""
+"Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
+"itemName=LLVMExtensions.ClangFormat>`__"
+msgstr ""
+"Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
+"itemName=LLVMExtensions.ClangFormat>`_"
+
+msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
+msgstr "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`_"
+
+msgid ""
+"CLion: Starting from version ``2019.1``, no plugin is required. Instead, "
+"enable `ClangFormat <https://www.jetbrains.com/help/clion/clangformat-as-"
+"alternative-formatter.html#clion-support>`__"
+msgstr ""
+
+msgid "(Pull requests welcome to extend this list with tested plugins.)"
+msgstr ""
+"(プルリクエストは、テストされたプラグインでこのリストを拡張することを歓迎しま"
+"す。)"
+
+msgid "Header includes"
+msgstr "ヘッダーのインクルード"
+
+msgid ""
+"When adding new C++ or Objective-C files or including new headers in "
+"existing ones, the following rules should be followed:"
+msgstr ""
+"新しいC++またはObjective-Cファイルを追加するとき、または既存のファイルに新し"
+"いヘッダーを含めるときは、次の規則に従う必要があります:"
+
+msgid ""
+"The first lines in the file should be Godot's copyright header and MIT "
+"license, copy-pasted from another file. Make sure to adjust the filename."
+msgstr ""
+"ファイルの最初の行は、別のファイルからコピーアンドペーストされたGodotの著作権"
+"ヘッダーとMITライセンスでなければなりません。必ずファイル名を調整してくださ"
+"い。"
+
+msgid ""
+"In a ``.h`` header, include guards should be used with the form "
+"``FILENAME_H``."
+msgstr ""
+"``.h`` ヘッダーでは、インクルードガードを ``FILENAME_H`` の形式で使用する必要"
+"があります。"
+
+msgid ""
+"In a ``.cpp`` file (e.g. ``filename.cpp``), the first include should be the "
+"one where the class is declared (e.g. ``#include \"filename.h\"``), followed "
+"by an empty line for separation."
+msgstr ""
+"``.cpp`` ファイル(たとえば ``filename.cpp``)では、最初のインクルードはクラス"
+"が宣言されているもの(たとえば ``#include \"filename.h\"``)で、その後に分離の"
+"ための空白行が続く必要があります。"
+
+msgid ""
+"Then come headers from Godot's own code base, included in alphabetical order "
+"(enforced by ``clang-format``) with paths relative to the root folder. Those "
+"includes should be done with quotes, e.g. ``#include \"core/object.h\"``. "
+"The block of Godot header includes should then be followed by an empty line "
+"for separation."
+msgstr ""
+"次に、Godot独自のコードベースからヘッダーを取得します。このヘッダーは、アル"
+"ファベット順(``clang-format`` で強制)に含まれ、ルートフォルダからの相対パスを"
+"持ちます。これらのインクルードは引用符で行う必要があります。\\ ``#include "
+"\"core/object.h\"``\\ 。 Godotヘッダーのインクルードブロックの後には、分離の"
+"ために空白行が続く必要があります。"
+
+#, fuzzy
+msgid ""
+"Finally, third-party headers (either from ``thirdparty`` or from the "
+"system's include paths) come next and should be included with the < and > "
+"symbols, e.g. ``#include <png.h>``. The block of third-party headers should "
+"also be followed by an empty line for separation."
+msgstr ""
+"最後に、サードパーティのヘッダー(``サードパーティ`` またはシステムのインク"
+"ルードパスのいずれか)が次に来るので、< と > をシンボルに含める必要がありま"
+"す。例: ``#include <png.h>``\\ 。サードパーティヘッダーのブロックの後には、分"
+"離のために空白行が続く必要があります。"
+
+#, fuzzy
+msgid ""
+"Godot and third-party headers should be included in the file that requires "
+"them, i.e. in the `.h` header if used in the declarative code or in the `."
+"cpp` if used only in the imperative code."
+msgstr ""
+"Godotおよびサードパーティのヘッダーは、それらを必要とするファイルに含める必要"
+"があります。つまり、宣言型コードで使用する場合は `.h` ヘッダーに、命令型コー"
+"ドでのみ使用する場合は ` .cpp` に含める必要があります。"
+
+msgid "Example:"
+msgstr "例:"
+
+msgid "Java"
+msgstr "Java"
+
+#, fuzzy
+msgid ""
+"Godot's Java code (mostly in ``platform/android``) is also enforced via "
+"``clang-format``, so see the instructions above to set it up. Keep in mind "
+"that this style guide only applies to code written and maintained by Godot, "
+"not third-party code such as the ``java/src/com/google`` subfolder."
+msgstr ""
+"GodotのJavaコード(ほとんどが ``platform/android`` にあります)も ``clang-"
+"format`` を介して適用されるため、上記の手順を参照して設定してください。このス"
+"タイルガイドはGodotによって記述および管理されるコードにのみ適用され、\\ "
+"``java/src/com/google`` サブフォルダなどのサードパーティコードには適用されな"
+"いことに注意してください。"
+
+msgid "Python"
+msgstr "Python"
+
+msgid ""
+"Godot's SCons buildsystem is written in Python, and various scripts included "
+"in the source tree are also using Python."
+msgstr ""
+"GodotのSConsビルドシステムはPythonで書かれており、ソースツリーに含まれる様々"
+"なスクリプトもPythonを使用しています。"
+
+msgid ""
+"For those, we follow the `Black style guide <https://github.com/psf/"
+"black#the-black-code-style>`__. Blacken your Python changes using `Black "
+"<https://pypi.org/project/black/>`__."
+msgstr ""
+
+#, fuzzy
+msgid "Using black locally"
+msgstr "\\ clang形式をローカルで使用する"
+
+msgid ""
+"First of all, you will need to install Black. Black requires Python 3.7+ to "
+"run."
+msgstr ""
+
+#, fuzzy
+msgid "Here's how to install black:"
+msgstr "\\ clang形式をインストールする方法は次のとおりです:"
+
+#, fuzzy
+msgid "You then have different possibilities to apply black to your changes:"
+msgstr "変更にclang-formatを適用する方法はいくつかあります:"
+
+#, fuzzy
+msgid ""
+"You can apply ``black`` manually to one or more files with the following "
+"command:"
+msgstr ""
+"次のコマンドを使用して、clang形式の1つ以上のファイルを手動で適用できます:"
+
+msgid ""
+"``-l 120`` means that the allowed number of characters per line is 120. This "
+"number was agreed upon by the developers."
+msgstr ""
+
+msgid ""
+"The path can point to several files, either one after the other or using "
+"wildcards like in a typical Unix shell."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For ease of use, we provide a pre-commit hook for Git that will run black "
+"automatically on all your commits to check them, and let you apply its "
+"changes in the final commit."
+msgstr ""
+"使いやすさのために、Gitのプレコミットフックを提供し、すべてのコミットで自動的"
+"にclang形式を実行してチェックし、最終的なコミットでその変更を適用できるように"
+"します。"
+
+#, fuzzy
+msgid ""
+"This \"hook\" is a script which can be found in ``misc/hooks``. Refer to "
+"that folder's ``README.md`` for installation instructions."
+msgstr ""
+"この「フック」は ``misc/hooks`` で見つけることができるスクリプトであり、イン"
+"ストール手順については、そのフォルダのREADME.mdを参照してください。"
+
+#, fuzzy
+msgid "Editor integration"
+msgstr "ベクトル補間"
+
+#, fuzzy
+msgid ""
+"Many IDEs or code editors have beautifier plugins that can be configured to "
+"run black automatically, for example each time you save a file. For details "
+"you can check `Black editor integration <https://github.com/psf/black#editor-"
+"integration>`__."
+msgstr ""
+"ほとんどのIDEまたはコードエディタには、ファイルを保存するたびに、clang形式を"
+"自動的に実行するように構成できる美しいプラグインがあります。"
+
+#, fuzzy
+msgid "Comment style guide"
+msgstr "C#スタイルガイド"
+
+msgid ""
+"This comment style guide applies to all programming languages used within "
+"Godot's codebase."
+msgstr ""
+
+msgid ""
+"Begin comments with a space character to distinguish them from disabled code."
+msgstr ""
+
+msgid ""
+"Use sentence case for comments. Begin comments with an uppercase character "
+"and always end them with a period."
+msgstr ""
+
+msgid "Reference variable/function names and values using backticks."
+msgstr ""
+
+msgid "Wrap comments to ~100 characters."
+msgstr ""
+
+msgid ""
+"You can use ``TODO:``, ``FIXME:``, ``NOTE:``, or ``HACK:`` as admonitions "
+"when needed."
+msgstr ""
+
+msgid "**Example:**"
+msgstr "**例:**"
+
+msgid ""
+"Don't repeat what the code says in a comment. Explain the *why* rather than "
+"*how*."
+msgstr ""
+
+#, fuzzy
+msgid "**Bad:**"
+msgstr "**悪い例**:"
+
+msgid ""
+"You can use Javadoc-style comments above function or macro definitions. It's "
+"recommended to use Javadoc-style comments *only* for methods which are not "
+"exposed to scripting. This is because exposed methods should be documented "
+"in the :ref:`class reference XML <doc_updating_the_class_reference>` instead."
+msgstr ""
+
+msgid ""
+"For member variables, don't use Javadoc-style comments but use single-line "
+"comments instead:"
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

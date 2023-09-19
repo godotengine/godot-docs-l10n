@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,19 +39,22 @@ msgstr ""
 msgid "Node setup"
 msgstr "設定節點"
 
-msgid "Click Scene -> New Scene and add the following nodes:"
+#, fuzzy
+msgid "Click Scene -> New Scene from the top menu and add the following nodes:"
 msgstr "點擊 [場景] -> [新增場景]，然後新增下列節點："
 
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
 msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (設定名稱為 ``Mob`` )"
 
-msgid ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+#, fuzzy
+msgid ":ref:`AnimatedSprite2D <class_AnimatedSprite2D>`"
 msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
-msgid ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
+#, fuzzy
+msgid ":ref:`VisibleOnScreenNotifier2D <class_VisibleOnScreenNotifier2D>`"
 msgstr ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
 
 msgid ""
@@ -63,29 +66,33 @@ msgstr "別忘了把子節點設定成無法選擇，跟剛剛在 Player 場景�
 msgid ""
 "In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
 "Scale`` to ``0``, so the mob will not fall downward. In addition, under the :"
-"ref:`CollisionObject2D <class_CollisionObject2D>` section, click the "
-"``Mask`` property and uncheck the first box. This will ensure the mobs do "
-"not collide with each other."
+"ref:`CollisionObject2D <class_CollisionObject2D>` section, uncheck the ``1`` "
+"inside the ``Mask`` property. This will ensure the mobs do not collide with "
+"each other."
 msgstr ""
 "將 :ref:`RigidBody2D <class_RigidBody2D>` 的 ``Gravity Scale`` (重力量級) 設"
 "為 ``0`` ，讓怪物不會下墜。另外，在 ``PhysicsBody2D`` 中，點擊 ``Mask`` (遮"
 "罩) 屬性並取消選擇第一個勾選框，就可以確保怪物不會互相碰撞。"
 
+#, fuzzy
 msgid ""
-"Set up the :ref:`AnimatedSprite <class_AnimatedSprite>` like you did for the "
-"player. This time, we have 3 animations: ``fly``, ``swim``, and ``walk``. "
-"There are two images for each animation in the art folder."
+"Set up the :ref:`AnimatedSprite2D <class_AnimatedSprite2D>` like you did for "
+"the player. This time, we have 3 animations: ``fly``, ``swim``, and "
+"``walk``. There are two images for each animation in the art folder."
 msgstr ""
 "接著像剛才設定玩家那樣，設定 :ref:`AnimatedSprite <class_AnimatedSprite>` 。"
 "這次有三種動畫： ``fly`` (飛行)、 ``swim`` (游泳) 與 ``walk`` (行走)。每個動"
 "畫都有兩個圖片，放在 art 資料夾中。"
 
-msgid "Adjust the \"Speed (FPS)\" to ``3`` for all animations."
-msgstr "將所有動畫的「速度 (FPS)」調整為 ``3`` 。"
+msgid ""
+"The ``Animation Speed`` property has to be set for each individual "
+"animation. Adjust it to ``3`` for all 3 animations."
+msgstr ""
 
-#, fuzzy
-msgid "Set the ``Playing`` property in the Inspector to \"On\"."
-msgstr "在屬性面板中勾選 ``Playing`` (播放) 屬性為「開啟」。"
+msgid ""
+"You can use the \"Play Animation\" buttons on the right of the ``Animation "
+"Speed`` input field to preview your animations."
+msgstr ""
 
 msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
@@ -96,7 +103,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
-"``AnimatedSprite``'s ``Scale`` property to ``(0.75, 0.75)``."
+"``AnimatedSprite2D``'s ``Scale`` property to ``(0.75, 0.75)``."
 msgstr ""
 "就像玩家的圖片一樣，這些怪物的圖片也需要縮小。將 ``AnimatedSprite`` 的 "
 "``Scale`` (縮放) 屬性設為 ``(0.75, 0.75)`` 。"
@@ -129,7 +136,7 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"First, we get the list of animation names from the AnimatedSprite's "
+"First, we get the list of animation names from the AnimatedSprite2D's "
 "``frames`` property. This returns an Array containing all three animation "
 "names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
@@ -146,19 +153,11 @@ msgstr ""
 "列的索引從 ``0`` 開始）。 使用 ``randi() % n`` 可以從 ``0`` 到 ``n - 1`` 之間"
 "隨機選擇一個整數。"
 
-msgid ""
-"You must use ``randomize()`` if you want your sequence of \"random\" numbers "
-"to be different every time you run the scene. We're going to use "
-"``randomize()`` in our ``Main`` scene, so we won't need it here."
-msgstr ""
-"要讓「隨機」產生的數字在每次執行場景的時候都不同的話，需要呼叫 "
-"``randomize()`` 。我們之後會在 ``Main`` 場景中呼叫 ``randomize()`` 的，現在還"
-"不需要他。"
-
+#, fuzzy
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the "
-"``VisibilityNotifier2D`` node and add this code:"
+"``VisibleOnScreenNotifier2D`` node to the ``Mob`` and add this code:"
 msgstr ""
 "最後我們來讓怪物在離開畫面後刪除自己。連接 ``VisibilityNotifier2D`` 節點的 "
 "``screen_exited()`` 訊號，並新增這段程式碼："

@@ -1,0 +1,579 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Writing guidelines"
+msgstr "說明文件撰寫方針"
+
+msgid ""
+"The Godot community is rich and international. Users come from all around "
+"the world. Some of them are young, and many aren't native English speakers. "
+"That's why we must all write using a clear and a common language. For the "
+"class reference, the goal is to make it easy to read for everyone and "
+"precise."
+msgstr ""
+"Godot 的社群很多元且國際化。有許多來自世界各處的使用者。其中，有些使用者很年"
+"輕，而很多使用者也並非英語母語者。這就是我們應使用清晰明瞭且通用語言的原因。"
+"對於類別參照文件，撰寫目標應為讓所有人都能輕鬆閱讀且內容準確。"
+
+msgid "In summary, always try to:"
+msgstr "總之，請儘量："
+
+#, fuzzy
+msgid "Use the active voice"
+msgstr "使用直觀的語調"
+
+msgid "Use precise action verbs"
+msgstr "使用精準的動作動詞"
+
+msgid "Avoid verbs that end in -ing"
+msgstr "避免以 -ing 結尾的動詞"
+
+msgid "Remove unnecessary adverbs and adjectives."
+msgstr "移除不必要的副詞與形容詞。"
+
+msgid ""
+"Ban these 8 words: obvious, simple, basic, easy, actual, just, clear, and "
+"however"
+msgstr ""
+"不得使用這 8 個單詞：obvious, simple, basic, easy, actual, just, clear 與 "
+"however"
+
+msgid "Use explicit references"
+msgstr "使用明顯引用"
+
+msgid "Use 's to show possession"
+msgstr "使用「's」來標示擁有關係"
+
+msgid "Use the Oxford comma"
+msgstr "使用牛津逗號 (Oxford comma)"
+
+msgid "There are 3 rules to describe classes:"
+msgstr "下列 3 個規則用於描述類別："
+
+msgid "Give an overview of the node in the brief description"
+msgstr "以簡單扼要的描述說明節點"
+
+msgid "Mention what methods return if it's useful"
+msgstr "若方法的回傳值有功能的話，應提及其回傳值"
+
+msgid "Use \"if true\" to describe booleans"
+msgstr "使用「if true」來描述布林值"
+
+msgid ""
+"A technical writer's job is to pack as much information as possible into the "
+"smallest and clearest sentences possible. These guidelines will help you "
+"work towards that goal."
+msgstr ""
+"技術性作家的工作就是儘量將多個資訊以最少且最清晰的句子提供。這些方針有助於讓"
+"你達到此一目標。"
+
+msgid ""
+"See the :ref:`content guidelines <doc_content_guidelines>` for information "
+"on the types of documentation you can write in the official documentation."
+msgstr ""
+
+msgid "7 rules for clear English"
+msgstr "讓英語清晰明瞭的 7 個規則"
+
+#, fuzzy
+msgid ""
+"Use the active voice when possible. Take the classes, methods, and constants "
+"you describe as the subject. It's natural to write using the passive voice, "
+"but it's harder to read and produces longer sentences."
+msgstr ""
+"儘量使用直觀的語調。以要說明的類別、方法與常數作為句子的主詞。雖然使用被動語"
+"態來撰寫比較自然，但這樣也讓句子難以閱讀且讓句子變長。"
+
+msgid "Passive:"
+msgstr "被動句："
+
+msgid "Active:"
+msgstr "主動句："
+
+msgid "**Don't** use the passive voice:"
+msgstr "**不要** 使用被動語態："
+
+msgid "**Do** use the node's name as a noun:"
+msgstr "**使用** 節點的名稱作為名詞："
+
+msgid ""
+"Favor precise yet common verbs over generic ones like ``make``, ``set``, and "
+"any expression you can replace with a single word."
+msgstr ""
+"優先使用描述較精準而常見的動詞，而不要使用太通用的如 ``make``, ``set`` 等動詞"
+"以及任何可以用單一單詞替換的句子。"
+
+msgid ""
+"**Don't** repeat the method's name. It already states it sets the pivot "
+"value to a new one:"
+msgstr ""
+"**不要** 重複方法的名稱。方法名稱已經說了是將樞紐值設為新值 (Set the pivot "
+"value to a new one)："
+
+msgid ""
+"**Do** explain what's the consequence of this \"set\": use precise verbs "
+"like ``place``, ``position``, ``rotate``, ``fade``, etc."
+msgstr ""
+"**說明** 這裡「set」這個詞造成的結果是什麼：使用如 ``place``, ``position``, "
+"``rotate``, ``fate``…等的精準描述的動詞。"
+
+msgid ""
+"The progressive forms describe continuous actions. E.g. \"is calling\", \"is "
+"moving\"."
+msgstr ""
+"進行式是用來描述持續動作的，如「is calling (正在呼叫)」、「is moving (正在移"
+"動)」。"
+
+msgid "**Don't** use the progressive form for instant changes."
+msgstr "**不要** 在發生立即性改動時使用進行式。"
+
+#, fuzzy
+msgid "**Do** use simple present, past, or future."
+msgstr "**使用** 簡單的現在、過去、或未來式。"
+
+msgid ""
+"Exception: If the subject is not clear, replacing \"ing\" verbs is not an "
+"improvement. For example, in the previous sentence, \"it replaces\" would "
+"not make much sense where \"replacing\" currently is."
+msgstr ""
+"例外：當主詞不清楚時，就沒辦法通過換掉「ing」動詞來讓句子更清楚。舉例來說，前"
+"一句話的原文「If the subject is not clear, replacing \"ing\" verbs is not an "
+"improvement.」裡，用「is replaces」取代「replacing」並沒有讓句子比較好讀。"
+
+msgid ""
+"You may use the progressive tense to describe actions that are continuous in "
+"time. Anything like animation or coroutines."
+msgstr ""
+"要描述隨著時間持續發生的動作時，可以使用進行式。如動畫或協同程式 "
+"(Coroutine)。"
+
+msgid ""
+"Verbs can turn into adjectival nouns with -ing. This is not a conjugation, "
+"so you may use them: ``the remaining movement``, ``the missing file``, etc."
+msgstr ""
+"動詞可以通過加上 -ing 來轉成形容詞。這種做法並不是時態變化，所以這種情況可以"
+"加上 -ing：``the remaining movement``, ``the missing file``…等。"
+
+msgid "Remove unnecessary adverbs and adjectives"
+msgstr "移除不必要的副詞與形容詞"
+
+msgid ""
+"Write as few adjectives and adverbs as possible. Only use them if they add "
+"key information to the description."
+msgstr ""
+"儘量少寫一點副詞與形容詞。只有當這些副詞與形容詞對於目前描述的內容提供了足夠"
+"關鍵的資訊才能使用。"
+
+msgid ""
+"**Don't** use redundant or meaningless adverbs. Words that lengthen the "
+"documentation but don't add any information:"
+msgstr ""
+"**不要** 使用不必要或無意義的副詞。這些單詞會讓說明文件變長，而並沒有加上太多"
+"資訊："
+
+msgid "**Do** write short sentences in a simple, descriptive language:"
+msgstr "**使用** 較短的句子，以簡單、描述性的話語來撰寫："
+
+msgid "Ban these 8 words"
+msgstr "禁止使用這 8 個單詞"
+
+msgid "**Don't** ever use these 8 banned words:"
+msgstr "**不準** 使用這 8 個禁用詞："
+
+msgid "obvious"
+msgstr "\\ obvious"
+
+msgid "simple"
+msgstr "\\ simple"
+
+msgid "basic"
+msgstr "\\ basic"
+
+msgid "easy"
+msgstr "\\ easy"
+
+msgid "actual"
+msgstr "\\ actual"
+
+msgid "just"
+msgstr "\\ just"
+
+msgid "clear"
+msgstr "\\ clear"
+
+msgid "however (some uses)"
+msgstr "however (某些情況)"
+
+msgid ""
+"Game creation and programming aren't simple, and nothing's easy to someone "
+"learning to use the API for the first time. Other words in the list, like "
+"``just`` or ``actual`` won't add any info to the sentence. Don't use "
+"corresponding adverbs either: obviously, simply, basically, easily, "
+"actually, clearly."
+msgstr ""
+"創造遊戲與程式設計並不簡單，而對於初次學習使用 API 的人來說也是如此。列表上的"
+"其他單詞，如 ``just`` 與 ``actial`` 等並沒有給句子加上其他意思。也不要使用這"
+"些單詞對應的副詞：obviously, simply, basically, easily, actually, clearly。"
+
+msgid ""
+"**Don't** example. The banned words lengthen the description and take "
+"attention away from the most important info:"
+msgstr ""
+"**錯誤** 範例。這些禁用詞會讓描述句子變得更長，且會讓注意力無法集中在最重要的"
+"資訊上："
+
+msgid "**Do** remove them:"
+msgstr "**移除** 這些單詞："
+
+msgid ""
+"\"Simple\" never helps. Remember, for other users, anything could be complex "
+"or frustrate them. There's nothing like a good old *it's simple* to make you "
+"cringe. Here's the old brief description, the first sentence on the Timer "
+"node's page:"
+msgstr ""
+"用「Simple」根本沒用。請記得，對於其他使用者來說，任何東西都可能很複雜且讓使"
+"用者挫敗。沒有比 **is't simple** (這很簡單) 還能讓你更挫折的了。下列為以前在 "
+"Timer 節點頁上簡介的第一句話："
+
+msgid "**Do** explain what the node does instead:"
+msgstr "**應** 解釋該節點做了什麼："
+
+msgid "**Don't** use \"basic\", it is too vague:"
+msgstr "**不要** 使用「Basic」，太模糊了："
+
+msgid "**Do** use the brief description to offer an overview of the node:"
+msgstr "**使用** 描述該節點的簡要說明："
+
+msgid "Favor explicit references over implicit ones."
+msgstr "優先使用明顯參照而非隱含參照。"
+
+msgid ""
+"**Don't** use words like \"the former\", \"the latter\", etc. They're not "
+"the most common in English, and they require you to check the reference."
+msgstr ""
+"**不要** 使用如「the former (前者)」、「the latter (後者)」等詞。這些字在英語"
+"中並不常見，在閱讀上會需要參考是在引述什麼。"
+
+msgid "**Do** repeat words. They remove all ambiguity:"
+msgstr "**直接重複** 單詞。這樣一來也能避免歧義："
+
+msgid ""
+"If you need to repeat the same variable name 3 or 4 times, you probably need "
+"to rephrase your description."
+msgstr ""
+"如果某個變數名稱需要重複講 3、4 次的話，那可能代表這個句子需要重新架構。"
+
+msgid ""
+"Avoid \"The milk **of** the cow\". It feels unnatural in English. Write "
+"\"The cow's milk\" instead."
+msgstr ""
+"避免「The milk **of** the cow」這樣的句子。這些句子在英語裡感覺並不自然，請改"
+"寫為「The cow's milk」。"
+
+msgid "**Don't** write \"of the X\":"
+msgstr "**不要** 寫成「of the X」："
+
+msgid ""
+"**Do** use ``'s``. It lets you put the main subject at the start of the "
+"sentence, and keep it short:"
+msgstr "**寫成** ``'s`` 。這樣可以讓主詞保持在句子的最前面，並縮短句子："
+
+msgid "Use the Oxford comma to enumerate anything"
+msgstr "在列舉任何東西時，使用牛津逗號"
+
+msgid "From the Oxford dictionary:"
+msgstr "引用自牛津詞典："
+
+msgid ""
+"The 'Oxford comma' is an optional comma before the word 'and' at the end of "
+"a list: *We sell books, videos, and magazines.*"
+msgstr ""
+"「牛津逗號」是在列表結尾單詞「and」前可選的逗號： **We sell books, videos, "
+"and magazines.**"
+
+msgid ""
+"[...] Not all writers and publishers use it, but it can clarify the meaning "
+"of a sentence when the items in a list are not single words: *These items "
+"are available in black and white, red and yellow, and blue and green.*"
+msgstr ""
+"[...] 並非所有作家與出版社都使用牛津逗號，但使用牛津逗號可以在當列表內的項目"
+"並非完整單詞時說清楚句子的意思： **These items are available in black and "
+"white, red and yellow, and blue and green.**"
+
+msgid "**Don't** leave the last element of a list without a comma:"
+msgstr "**不要** 忘記在列表中最後一個元素前加上逗號："
+
+msgid ""
+"**Do** add a comma before `and` or `or`, for the last element of a list with "
+"more than two elements."
+msgstr ""
+"**應** 在當列表有超過兩個元素時，在最後一個元素的 **and** 或 **or** 之前加上"
+"逗號。"
+
+msgid "How to write methods and classes"
+msgstr "如何撰寫方法與類別"
+
+msgid "Dynamic vs static typing"
+msgstr "動態 v.s. 靜態型別"
+
+msgid ""
+"The code examples in the documentation should follow a consistent style not "
+"to confuse users. As static type hints are an optional feature of GDScript, "
+"we chose to stick to writing dynamic code. This leads to writing GDScript "
+"that is concise and accessible."
+msgstr ""
+"說明文件中的程式碼範例應該要遵從一貫的風格，以免造成使用者混淆。由於靜態型別"
+"是 GDScript 可選的功能，因此我們可以選擇固定撰寫動態程式碼。這樣也可以讓我們"
+"寫出簡潔且存取性更好的 GDScript 程式碼。"
+
+msgid "The exception is topics that explain static typing concepts to users."
+msgstr "向使用者說明靜態型別的主題時為此規則的例外。"
+
+msgid "**Don't** add a type hint with a colon or by casting:"
+msgstr "**不要** 使用分號或型別轉換來加上型別提示："
+
+msgid "**Do** write constants and variables with dynamic typing:"
+msgstr "**使用** 靜態型別來撰寫常數與變數："
+
+msgid "**Don't** write functions with inferred arguments or return types:"
+msgstr "**不要** 以推斷印數或回傳型別的方式撰寫函式："
+
+msgid "**Do** write functions using dynamic typing:"
+msgstr "**用** 動態型別來撰寫函式："
+
+msgid "Use real-world code examples where appropriate"
+msgstr "在適當的時候使用真實案例"
+
+msgid ""
+"Real-world examples are more accessible to beginners than abstract ``foos`` "
+"and ``bars``. You can also copy them directly from your game projects, "
+"ensuring that any code snippet compiles without errors."
+msgstr ""
+"真實案例對於使用者來說比起抽象的 ``foo`` 與 ``bar`` 來說更好理解。也可以直接"
+"從你的遊戲專案裡直接複製貼上範例程式碼，並請確保這些程式碼片段在編譯的時候不"
+"會出現問題。"
+
+msgid ""
+"Writing ``var speed = 10`` rather than ``var my_var = 10`` allows beginners "
+"to understand code better. It gives them a frame of reference as to where "
+"they could use the code snippets in a live project."
+msgstr ""
+"使用 ``var speed = 10`` 而不是 ``var my_var = 10`` ，讓初學者更容易理解程式"
+"碼。這樣也能讓使用者能理解在實際的專案裡這些程式碼片端可以怎麼使用。"
+
+msgid "**Don't** write made-up examples:"
+msgstr "**不要** 寫出架空的範例："
+
+msgid "**Do** write concrete examples:"
+msgstr "**使用** 具體的例子："
+
+msgid ""
+"Of course, there are times when using real-world examples is impractical. In "
+"those situations, you should still avoid using names such as ``my_var``, "
+"``foo()`` or ``my_func()`` and consider more meaningful names for your "
+"examples."
+msgstr ""
+"當然，在很多時候使用真實案例來當作例子很不實際。這種情況下，也應該要避免使用"
+"如 ``my_var``, ``foo()`` 或 ``my_func()`` 這類的名稱，並考慮在範例中使用更有"
+"意義的名稱。"
+
+msgid ""
+"The brief description is the reference's most important sentence. It's the "
+"user's first contact with a node:"
+msgstr "在參照文件中，簡要說明是最重要的句子。也是使用者對節點的第一次接觸："
+
+msgid "It's the only description in the \"Create New Node\" dialog."
+msgstr "該簡介是「建立新節點」對話框中唯一的描述。"
+
+msgid "It's at the top of every page in the reference"
+msgstr "該簡介也是所有參照說明文件最上方的內容"
+
+msgid ""
+"The brief description should explain the node's role and its functionality, "
+"in up to 200 characters."
+msgstr "簡介說明應解釋節點的職責與其功能，並限制在 200 個字元內。"
+
+msgid "**Don't** write tiny and vague summaries:"
+msgstr "**不要** 撰寫太短且模糊的摘要："
+
+msgid "**Do** give an overview of the node's functionality:"
+msgstr "**寫出** 節點功能的概覽："
+
+msgid ""
+"Use the node's full description to provide more information, and a code "
+"example, if possible."
+msgstr "儘可能使用節點的完整說明來提供更多資訊與程式碼範例。"
+
+msgid ""
+"Some methods return important values. Describe them at the end of the "
+"description, ideally on a new line. No need to mention the return values for "
+"any method whose name starts with ``set`` or ``get``."
+msgstr ""
+"有寫方法會回傳重要的值。請在說明的最後放對這些回傳值作出說明，最好是在新的一"
+"行內說明。任何以 ``set`` 或 ``get`` 開頭的方法則不需要提到回傳值。"
+
+msgid "**Do** always use \"Returns\"."
+msgstr "**必須** 使用「Returns」。"
+
+msgid ""
+"Notice the exception to the \"direct voice\" rule: with the move method, an "
+"external collider can influence the method and the body that calls ``move``. "
+"In this case, you can use the passive voice."
+msgstr ""
+"請注意「直接語調」的例外規則：with the move method, an external collider can "
+"influence the method and the body that calls ``move``. 在這個例子中，可以使用"
+"被動語態。"
+
+msgid ""
+"For boolean member variables, always use ``if true`` and/or ``if false``, to "
+"stay explicit. ``Controls whether or not`` may be ambiguous and won't work "
+"for every member variable."
+msgstr ""
+"對於布林成員變數，應使用 ``if true`` 與／或 ``if false`` 來明確表達。"
+"``Controls whether or not`` 這樣的句子可能不夠明確，且並非所有成員變數都適"
+"用。"
+
+msgid ""
+"Also, surround boolean values, variable names and methods with ``[code][/"
+"code]``."
+msgstr "另外，請以 ``[code][/code]`` 來包住布林變數、變數名稱與方法。"
+
+msgid "**Do** start with \"if true\":"
+msgstr "**請** 以「if true」開頭："
+
+msgid "Use ``[code]`` around arguments"
+msgstr "使用 ``[code]`` 來包住引數"
+
+msgid ""
+"In the class reference, always surround arguments with ``[code][/code]``. In "
+"the documentation and in Godot, it will display like ``this``. When you edit "
+"XML files in the Godot repository, replace existing arguments written like "
+"'this' or \\`this\\` with ``[code]this[/code]``."
+msgstr ""
+"在類別參照文件中，請以 ``[code][/code]`` 來包住引數。在說明文件與 Godot 中，"
+"這個語法會想 ``這樣`` 顯示。在 Godot 儲存庫中編輯 XML 檔案時，請將如 'this' "
+"或 \\`this\\` 這樣寫的現有引數替換為 ``[code]this[/code]`` 。"
+
+msgid "Common vocabulary to use in Godot's documentation"
+msgstr "在 Godot 說明文件中常用的詞彙"
+
+msgid ""
+"The developers chose some specific words to refer to areas of the interface. "
+"They're used in the sources, in the documentation, and you should always use "
+"them instead of synonyms, so the users know what you're talking about."
+msgstr ""
+"Godot 開發人員選擇了一些特定的語詞來描述界面上不同的區域。這些詞彙會使用在原"
+"始碼與說明文件當中，且在撰寫時應使用這些固定詞彙而非使用其他同義詞，這樣使用"
+"者才知道你在講什麼。"
+
+msgid "Overview of the interface and common vocabulary"
+msgstr "界面概覽與常用詞彙"
+
+msgid ""
+"In the top left corner of the editor lie the ``main menus``. In the center, "
+"the buttons change the ``workspace``. And together the buttons in the top "
+"right are the ``playtest buttons``. The area in the center, that displays "
+"the 2D or the 3D space, is the ``viewport``. At its top, you find a list of "
+"``tools`` inside the ``toolbar``."
+msgstr ""
+"編輯器左上角的是 ``Main Menus (主選單)``。中間由按鈕改變的是 ``Workspace (工"
+"作區)`` 。與按鈕一起放在右上角的是 ``Playtest Buttons (執行測試按鈕)``。在中"
+"間顯示 2D 或 3D 空間的區域是 ``Viewport (檢視區)`` 。在檢視區上方，則是一列"
+"在 ``Toolbar (工具列)`` 中的 ``Tools (工具)``。"
+
+msgid ""
+"The tabs or dockable panels on either side of the viewport are ``docks``. "
+"You have the ``FileSystem dock``, the ``Scene dock`` that contains your "
+"scene tree, the ``Import dock``, the ``Node dock``, and the ``Inspector`` or "
+"``Inspector dock``. With the default layout you may call the tabbed docks "
+"``tabs``: the ``Scene tab``, the ``Node tab``..."
+msgstr ""
+"在檢視區兩側的分頁或可停駐的面板是 ``Docks (停駐列)``。這裡有 ``FileSystem "
+"Dock (檔案系統停駐列)`` 、含有場景樹的 ``Scene Dock (場景停駐列)`` 、"
+"``Import Dock (匯入停駐列)`` 、``Node Dock (節點停駐列)`` 與 ``Inspector (屬"
+"性面板)`` 或 ``Inspector Dock (屬性面板停駐列)`` 。使用預設配置時，這些放在分"
+"頁內的停駐列為 ``Tabs (分頁)`` ：``Scene Tab (場景分頁)`` 、``Node Tab (節點"
+"分頁)`` ..."
+
+msgid ""
+"The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. "
+"Together they make up the ``bottom panels``."
+msgstr ""
+"動畫、除錯工具…等放在檢視區下方的是 ``Panel (面板)`` 。這些面板組合在一起稱"
+"為 ``Bottom Panel (底部面板)`` 。"
+
+#, fuzzy
+msgid ""
+"Foldable areas of the Inspector are ``sections``. The node's parent class "
+"names, which you can't fold, are ``Classes`` e.g. the ``CharacterBody2D "
+"class``. And individual lines with key-value pairs are ``properties``. E.g. "
+"``position`` or ``modulate color`` are both ``properties``."
+msgstr ""
+"屬性面板中可摺疊的區域為 ``Sections (段落)`` 。可摺疊的母節點名稱為 "
+"``Classes (類別)`` ，如 ``KinematicBody2D 類別`` 。每行獨立的索引鍵／值組為 "
+"``Properties (屬性)`` 。如 ``positon`` 或 ``modulate color`` 都是 "
+"``Properties (屬性)`` 。"
+
+msgid "Keyboard shortcut guidelines"
+msgstr "鍵盤快捷鍵方針"
+
+msgid ""
+"Keyboard and mouse shortcuts should make use of the ``:kbd:`` tag, which "
+"allows shortcuts to stand out from the rest of the text and inline code. Use "
+"the compact form for modifier keys (:kbd:`Ctrl`/:kbd:`Cmd`) instead of their "
+"spelled out form (:kbd:`Control`/:kbd:`Command`). For combinations, use the "
+"``+`` symbol with a space on either side of the symbol."
+msgstr ""
+"鍵盤與滑鼠快捷鍵應使用 ``:kbd:`` 標籤，使用該標籤可以區分出快捷鍵與其他文字、"
+"行內程式碼的不同。請使用簡寫形式的按鍵名稱 (:kbd:`Ctrl` / :kbd:`Cmd`) 而不要"
+"寫出全名 (:kbd:`Control` / :kbd:`Command`) 。組合快捷鍵請使用 ``+`` 符號，並"
+"在該符號左右兩次加上空格。"
+
+msgid ""
+"Make sure to mention shortcuts that differ on macOS compared to other "
+"platforms. On macOS, ``Cmd`` often replaces ``Ctrl`` in keyboard shortcuts."
+msgstr ""
+"請確保當快捷鍵在 macOS 上不同時應特別提及。在 macOS 上的鍵盤快捷鍵通常使用 "
+"``Cmd`` 來取代 ``Ctrl`` 。"
+
+msgid ""
+"Try to integrate the shortcut into sentences the best you can. Here are some "
+"examples with the ``:kbd:`` tag left as-is for better visibility:"
+msgstr ""
+"請儘量將快捷鍵整合到句子裡。下列為一些將 ``:kbd:`` 標籤直接放在句子裡提升可見"
+"性的例子："
+
+msgid ""
+"Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + "
+"T``` on macOS)."
+msgstr ""
+"按 ``:kbd:`Ctrl + Alt + T``` 來開啟或關閉面板 (macOS 上為 ``:kbd:`Cmd + Alt "
+"+ T```)。"
+
+msgid ""
+"Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D "
+"editor."
+msgstr "按 ``:kbd:`空白鍵``` 並按住滑鼠左鍵以平移 2D 編輯器。"
+
+msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
+msgstr "按 ``:kbd:`Shift + 上方向鍵``` 來將節點向上移動 8 像素。"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

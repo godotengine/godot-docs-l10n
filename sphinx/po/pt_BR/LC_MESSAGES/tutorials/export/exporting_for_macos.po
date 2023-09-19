@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,7 +24,7 @@ msgstr "Exportando para macOS"
 msgid ""
 "This page describes how to export a Godot project to macOS. If you're "
 "looking to compile editor or export template binaries from source instead, "
-"read :ref:`doc_compiling_for_osx`."
+"read :ref:`doc_compiling_for_macos`."
 msgstr ""
 "Esta página descreve como exportar um projeto Godot para o macOS. Se você "
 "está procurando compilar editor ou exportar binários de modelo de origem, "
@@ -44,20 +44,6 @@ msgstr ""
 
 msgid "Requirements"
 msgstr "Requisitos"
-
-msgid ""
-"To enable code signing with Apple Developer ID and notarization, you must "
-"export from a computer running macOS with Xcode command line tools installed."
-msgstr ""
-"Para habilitar a assinatura do código com o ID do Desenvolvedor Apple e a "
-"autenticação, você deve exportar de um computador rodando MacOS com as "
-"ferramentas de linha de comando Xcode instaladas."
-
-msgid ""
-"Ad-hoc code signing is supported on all platforms, without additional tools."
-msgstr ""
-"A assinatura de código ad-hoc é suportada em todas as plataformas, sem "
-"ferramentas adicionais."
 
 msgid ""
 "Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
@@ -108,33 +94,41 @@ msgstr ""
 "identificação de desenvolvedor da Apple <https://developer.apple.com/>`__ "
 "válido."
 
-msgid "If you have an Apple Developer ID Certificate"
+#, fuzzy
+msgid "If you have an Apple Developer ID Certificate and exporting from macOS"
 msgstr "Se você tiver um certificado de ID de desenvolvedor da Apple"
 
 msgid ""
-"Export your project from a computer running macOS with Xcode command line "
-"tools installed."
+"Install `Xcode <https://developer.apple.com/xcode/>`__ command line tools "
+"and open Xcode at least once or run the ``sudo xcodebuild -license accept`` "
+"command to accept license agreement."
 msgstr ""
-"Exporte seu projeto de um computador rodando MacOS com as ferramentas de "
-"linha de comando Xcode instaladas."
 
-#, fuzzy
-msgid ""
-"Enable ``Code Signing``, ``Notarization``, ``Hardened Runtime`` and "
-"``Timestamp`` and disable the ``Debug`` entitlement."
+msgid "To sign exported app"
 msgstr ""
-"Habilite ``Code Signing``, ``Notarization``, ``Hardened Runtime`` e "
-"``Timestamp`` e desabilite o direito ``Debug``."
 
-msgid "Provide valid Apple ID credentials and certificate identity."
-msgstr "Forneça credenciais de ID Apple válidas e identidade de certificado."
+msgid "Select ``Xcode codesign`` in the ``Code Signing > Codesign`` option."
+msgstr ""
 
 msgid ""
-"If ``Notarization`` is enabled, Godot will automatically upload the exported "
-"project for notarization."
+"Set valid Apple ID certificate identity (certificate \"Common Name\") in the "
+"``Code Signing > Identity`` section."
 msgstr ""
-"Se ``Notarization`` estiver ativado, o Godot carregará automaticamente o "
-"projeto exportado para notarização."
+
+msgid "To notarize exported app"
+msgstr ""
+
+msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
+msgstr ""
+
+msgid "Disable the ``Debugging`` entitlement."
+msgstr ""
+
+msgid ""
+"Set valid Apple ID login / app. specific password or `App Store Connect "
+"<https://developer.apple.com/documentation/appstoreconnectapi>`__ API UUID / "
+"Key in the ``Notarization`` section."
+msgstr ""
 
 msgid ""
 "You can use the ``xcrun notarytool history`` command to check notarization "
@@ -166,15 +160,62 @@ msgstr ""
 "notarizing_macos_software_before_distribution/"
 "customizing_the_notarization_workflow>`__ no projeto exportado."
 
+#, fuzzy
+msgid ""
+"If you have an Apple Developer ID Certificate and exporting from Linux or "
+"Windows"
+msgstr "Se você tiver um certificado de ID de desenvolvedor da Apple"
+
+msgid ""
+"Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
+"tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the "
+"``Editor Settings > Export > macOS > rcodesign``."
+msgstr ""
+
+msgid ""
+"Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
+msgstr ""
+
+msgid ""
+"Set valid Apple ID PKCS #12 certificate file and password in the ``Code "
+"Signing`` section."
+msgstr ""
+
+msgid ""
+"Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` "
+"option."
+msgstr ""
+
+msgid ""
+"Set valid `App Store Connect <https://developer.apple.com/documentation/"
+"appstoreconnectapi>`__ API UUID / Key in the ``Notarization`` section."
+msgstr ""
+
+msgid ""
+"You can use the ``rcodesign notary-log`` command to check notarization "
+"status."
+msgstr ""
+
+msgid ""
+"After notarization is completed, use the ``rcodesign staple`` command to "
+"staple the ticket to the exported project."
+msgstr ""
+
 msgid "If you do not have an Apple Developer ID Certificate"
 msgstr "Se você não tiver um certificado de ID de desenvolvedor da Apple"
 
 msgid ""
-"Keep ``Code Signing`` enabled and leave the ``Identity`` option empty (when "
-"exporting from a computer running macOS, on other platforms this option is "
-"hidden). In this case Godot will use a ad-hoc signature, which will make "
-"running an exported app easier for the end users, see the :ref:`Running "
-"Godot apps on macOS <doc_running_on_macos>` page for more information."
+"Select ``Built-in (ad-hoc only)`` in the ``Code Signing > Codesign`` option."
+msgstr ""
+
+msgid "Select ``Disabled`` in the ``Notarization > Notarization`` option."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In this case Godot will use a ad-hoc signature, which will make running an "
+"exported app easier for the end users, see the :ref:`Running Godot apps on "
+"macOS <doc_running_on_macos>` page for more information."
 msgstr ""
 "Mantenha ``Code Signing`` habilitado e deixe a opção ``Identity`` vazia (ao "
 "exportar de um computador rodando macOS, em outras plataformas esta opção "
@@ -192,90 +233,80 @@ msgstr "Opção"
 msgid "Description"
 msgstr "Descrição"
 
-msgid "Enable"
-msgstr "Habilitar"
+#, fuzzy
+msgid "Codesign"
+msgstr "Nós"
 
-msgid "Enables code signing."
+#, fuzzy
+msgid "Tool to use for code signing."
 msgstr "Habilita a assinatura de código."
 
 msgid "Identity"
 msgstr "Identidade"
 
+#, fuzzy
 msgid ""
 "The \"Full Name\" or \"Common Name\" of the signing identity, store in the "
-"macOS keychain. [1]_ [2]_"
+"macOS keychain. [1]_"
 msgstr ""
 "O \"Nome completo\" ou \"Nome comum\" da identidade de assinatura, armazene "
 "nas chaves do macOS. [1]_ [2]_"
 
-msgid "Timestamp"
-msgstr "Registro do Tempo"
+#, fuzzy
+msgid "Certificate File"
+msgstr "Certificados SSL"
 
-msgid ""
-"Requests a timestamp server to authenticate the time of signing. Required "
-"for notarization. [2]_"
+msgid "The PKCS #12 certificate file. [2]_"
 msgstr ""
-"Solicita um servidor de carimbo de data/hora para autenticar a hora da "
-"assinatura. Necessário para notarização. [2]_"
-
-msgid "Hardened Runtime"
-msgstr "Tempo de execução reforçado"
-
-msgid "Enables \"Hardened Runtime\". Required for notarization. [2]_"
-msgstr "Ativa o \"Hardened Runtime\". Necessário para notarização. [2]_"
-
-msgid "Replace Existing Signature"
-msgstr "Substituir Assinatura Existente"
-
-msgid ""
-"Replaces existing signatures of the GDNative libraries and embedded helper "
-"executables."
-msgstr ""
-"Substitui as assinaturas existentes das bibliotecas GDNative e executáveis "
-"auxiliares integrados."
-
-msgid ""
-"To notarize an app, you must enable the ``Hardened Runtime`` and "
-"``Timestamp``."
-msgstr ""
-"Para autenticar um aplicativo, você deve habilitar o ``Hardened Runtime`` e "
-"``Timestamp``."
 
 #, fuzzy
-msgid ""
-"The ``Hardened Runtime`` and ``Timestamp`` options are incompatible with ad-"
-"hoc signing and will be ignored."
+msgid "Certificate Password"
+msgstr "Certificados SSL"
+
+msgid "Password for the certificate file. [2]_"
 msgstr ""
-"As opções ``Hardened Runtime`` e ``Timestamp`` são incompatíveis com a "
-"assinatura ad-hoc e serão ignoradas."
 
-msgid "Leave ``Identity`` option empty to use ad-hoc signature."
-msgstr "Deixe a opção ``Identity`` vazia para usar a assinatura ad-hoc."
+#, fuzzy
+msgid "Custom Options"
+msgstr "Sinais personalizados"
 
-msgid ""
-"This option is visible only when exporting from a computer running macOS."
+msgid "Array of command line arguments passed to the code signing tool."
+msgstr ""
+
+#, fuzzy
+msgid "This option is visible only when signing with Xcode codesign."
 msgstr ""
 "Esta opção é visível apenas ao exportar de um computador executando o macOS."
+
+msgid "These options are visible only when signing with PyOxidizer rcodesign."
+msgstr ""
 
 msgid "Notarization Options"
 msgstr "Opções de Notarização"
 
-msgid "Enables automatic upload for notarization."
+#, fuzzy
+msgid "Notarization"
+msgstr "Normalização"
+
+#, fuzzy
+msgid "Tool to use for notarization."
 msgstr "Permite upload automático para notarização."
 
 msgid "Apple ID Name"
 msgstr "Nome Apple ID"
 
-msgid "Apple ID account name (email address)"
+#, fuzzy
+msgid "Apple ID account name (email address). [3]_"
 msgstr "Nome da conta Apple ID (endereço de e-mail)"
 
 msgid "Apple ID Password"
 msgstr "Senha Apple ID"
 
+#, fuzzy
 msgid ""
 "Apple ID app-specific password. See `Using app-specific passwords <https://"
 "support.apple.com/en-us/HT204397>`__ to enable two-factor authentication and "
-"create app password."
+"create app password. [3]_"
 msgstr ""
 "Senha específica do aplicativo Apple ID. Consulte `Usando senhas específicas "
 "do aplicativo <https://support.apple.com/en-us/HT204397>`__ para habilitar a "
@@ -284,8 +315,37 @@ msgstr ""
 msgid "Apple Team ID"
 msgstr "ID Apple Team"
 
-msgid "Team ID, if your Apple ID belongs to multiple teams"
+#, fuzzy
+msgid ""
+"Team ID (\"Organization Unit\"), if your Apple ID belongs to multiple teams "
+"(optional). [3]_"
 msgstr "ID da equipe, se o seu Apple ID pertencer a várias equipes"
+
+msgid "API UUID"
+msgstr ""
+
+msgid ""
+"Apple `App Store Connect <https://developer.apple.com/documentation/"
+"appstoreconnectapi>`__ API issuer UUID."
+msgstr ""
+
+msgid "API Key"
+msgstr ""
+
+msgid ""
+"Apple `App Store Connect <https://developer.apple.com/documentation/"
+"appstoreconnectapi>`__ API key."
+msgstr ""
+
+msgid ""
+"You should set either Apple ID Name/Password or App Store Connect API UUID/"
+"Key."
+msgstr ""
+
+#, fuzzy
+msgid "These options are visible only when notarizing with Xcode altool."
+msgstr ""
+"Esta opção é visível apenas ao exportar de um computador executando o macOS."
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://developer.apple."
@@ -296,13 +356,6 @@ msgstr ""
 "apple.com/documentation/security/"
 "notarizing_macos_software_before_distribution?language=objc>`__ para obter "
 "mais informações."
-
-msgid ""
-"Notarization is supported when exporting from a computer running macOS, "
-"these options are hidden on other platforms."
-msgstr ""
-"Notarização é suportada ao exportar de um computador executando o macOS, "
-"essas opções estão ocultas em outras plataformas."
 
 msgid "Entitlements"
 msgstr "Direitos"
@@ -326,7 +379,8 @@ msgstr ""
 msgid "Entitlement"
 msgstr "Entitlement"
 
-msgid "Allow JIT Code Execution [3]_"
+#, fuzzy
+msgid "Allow JIT Code Execution [4]_"
 msgstr "Permitir a execução de código JIT [3]_"
 
 msgid ""
@@ -336,7 +390,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Allow Unsigned Executable Memory [3]_"
+msgid "Allow Unsigned Executable Memory [4]_"
 msgstr "Permitir memória executável sem assinatura [3]_"
 
 msgid ""
@@ -345,11 +399,12 @@ msgid ""
 "them according to the add-on documentation."
 msgstr ""
 
-msgid "Allow DYLD Environment Variables [3]_"
+#, fuzzy
+msgid "Allow DYLD Environment Variables [4]_"
 msgstr "Permitir variáveis de ambiente DYLD [3]_"
 
 msgid ""
-"Allows app to uss dynamic linker environment variables to inject code.  f "
+"Allows app to uss dynamic linker environment variables to inject code. If "
 "you are using add-ons with dynamic or self-modifying native code, enable "
 "them according to the add-on documentation."
 msgstr ""
@@ -359,8 +414,8 @@ msgstr "Desativar Validação da Biblioteca"
 
 #, fuzzy
 msgid ""
-"Allows app to load arbitrary libraries and frameworks. Enabled it if you are "
-"using GDNative add-ons and ad-hoc signature, or want to support user-"
+"Allows app to load arbitrary libraries and frameworks. Enable it if you are "
+"using GDExtension add-ons or ad-hoc signing, or want to support user-"
 "provided external add-ons."
 msgstr ""
 "Permite que o aplicativo carregue bibliotecas e frameworks arbitrários. "
@@ -406,8 +461,9 @@ msgstr ""
 msgid "Address Book"
 msgstr "Contatos"
 
+#, fuzzy
 msgid ""
-"[4]_ Enable to allow access contacts in the user's address book, if it's "
+"[5]_ Enable to allow access contacts in the user's address book, if it's "
 "enabled you should also provide usage message in the `privacy/"
 "address_book_usage_description` option."
 msgstr ""
@@ -418,8 +474,9 @@ msgstr ""
 msgid "Calendars"
 msgstr "Calendários"
 
+#, fuzzy
 msgid ""
-"[4]_ Enable to allow access to the user's calendar, if it's enabled you "
+"[5]_ Enable to allow access to the user's calendar, if it's enabled you "
 "should also provide usage message in the `privacy/"
 "calendar_usage_description` option."
 msgstr ""
@@ -432,7 +489,7 @@ msgstr "Biblioteca de Fotos"
 
 #, fuzzy
 msgid ""
-"[4]_ Enable to allow access to the user's Photos library, if it's enabled "
+"[5]_ Enable to allow access to the user's Photos library, if it's enabled "
 "you should also provide usage message in the `privacy/"
 "photos_library_usage_description` option."
 msgstr ""
@@ -443,7 +500,8 @@ msgstr ""
 msgid "Apple Events"
 msgstr "Eventos Apple"
 
-msgid "[4]_ Enable to allow app to send Apple events to other apps."
+#, fuzzy
+msgid "[5]_ Enable to allow app to send Apple events to other apps."
 msgstr ""
 "[4]_ Habilite para permitir que o aplicativo envie eventos da Apple para "
 "outros aplicativos."
@@ -453,7 +511,7 @@ msgstr "Depuração"
 
 #, fuzzy
 msgid ""
-"[5]_ You can temporarily enable this entitlement to use native debugger "
+"[6]_ You can temporarily enable this entitlement to use native debugger "
 "(GDB, LLDB) with the exported app. This entitlement should be disabled for "
 "production export."
 msgstr ""
@@ -525,31 +583,36 @@ msgid ""
 "required to use wireless controllers."
 msgstr ""
 
-msgid "Files Downloads [6]_"
-msgstr ""
+#, fuzzy
+msgid "Files Downloads [7]_"
+msgstr "Arquivos Filmes [6]_"
 
 msgid "Allows read or write access to the user's \"Downloads\" folder."
 msgstr ""
 
-msgid "Files Pictures [6]_"
+#, fuzzy
+msgid "Files Pictures [7]_"
 msgstr "Arquivos de imagens [6]_"
 
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr ""
 
-msgid "Files Music [6]_"
+#, fuzzy
+msgid "Files Music [7]_"
 msgstr "Arquivos de música [6]_"
 
 msgid "Allows read or write access to the user's \"Music\" folder."
 msgstr ""
 
-msgid "Files Movies [6]_"
+#, fuzzy
+msgid "Files Movies [7]_"
 msgstr "Arquivos Filmes [6]_"
 
 msgid "Allows read or write access to the user's \"Movies\" folder."
 msgstr ""
 
-msgid "Files User Selected [6]_"
+#, fuzzy
+msgid "Files User Selected [7]_"
 msgstr "Arquivos selecionados pelo usuário [6]_"
 
 msgid ""
@@ -573,6 +636,81 @@ msgstr ""
 msgid ""
 "You can override default entitlements by selecting custom entitlements file, "
 "in this case all other entitlement are ignored."
+msgstr ""
+
+msgid "Environment variables"
+msgstr "Variáveis de ambiente"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+
+#, fuzzy
+msgid "macOS export environment variables"
+msgstr "Variáveis de ambiente"
+
+#, fuzzy
+msgid "Export option"
+msgstr "Opções de exportação"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "Variáveis de ambiente"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
+
+msgid "Options / Codesign / Certificate File"
+msgstr ""
+
+msgid "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
+msgstr ""
+
+msgid "Options / Codesign / Certificate Password"
+msgstr ""
+
+msgid "GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD"
+msgstr ""
+
+msgid "Options / Codesign / Provisioning Profile"
+msgstr ""
+
+msgid "GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE"
+msgstr ""
+
+msgid "Options / Notarization / API UUID"
+msgstr ""
+
+msgid "GODOT_MACOS_NOTARIZATION_API_UUID"
+msgstr ""
+
+msgid "Options / Notarization / API Key"
+msgstr ""
+
+msgid "GODOT_MACOS_NOTARIZATION_API_KEY"
+msgstr ""
+
+msgid "Options / Notarization / API Key ID"
+msgstr ""
+
+msgid "GODOT_MACOS_NOTARIZATION_API_KEY_ID"
+msgstr ""
+
+msgid "Options / Notarization / Apple ID Name"
+msgstr ""
+
+msgid "GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME"
+msgstr ""
+
+msgid "Options / Notarization / Apple ID Password"
+msgstr ""
+
+msgid "GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD"
 msgstr ""
 
 msgid "Translation status"

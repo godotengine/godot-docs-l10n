@@ -1,0 +1,524 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "HTML5 shell class reference"
+msgstr "HTML5 Shell Klassenreferenz"
+
+msgid ""
+"Projects exported for the Web expose the :js:class:`Engine` class to the "
+"JavaScript environment, that allows fine control over the engine's start-up "
+"process."
+msgstr ""
+
+msgid ""
+"This API is built in an asynchronous manner and requires basic understanding "
+"of `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/"
+"Using_promises>`__."
+msgstr ""
+
+msgid "Engine"
+msgstr "Über die Godot Engine"
+
+msgid ""
+"The ``Engine`` class provides methods for loading and starting exported "
+"projects on the Web. For default export settings, this is already part of "
+"the exported HTML page. To understand practical use of the ``Engine`` class, "
+"see :ref:`Custom HTML page for Web export <doc_customizing_html5_shell>`."
+msgstr ""
+
+msgid "Static Methods"
+msgstr "Statische Methoden"
+
+msgid "Promise"
+msgstr "Promise"
+
+msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
+msgstr ":js:attr:`load <Engine.load>` **(** string basisPfad **)**"
+
+msgid "void"
+msgstr "void"
+
+msgid ":js:attr:`unload <Engine.unload>` **(** **)**"
+msgstr "Attribut :js:attr:`unload <Engine.unload>` **(** **)**"
+
+msgid "boolean"
+msgstr "boolean"
+
+msgid ""
+":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
+"majorVersion=1 ]* **)**"
+msgstr ""
+":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ Zahl "
+"majorVersion=1 ]* **)**)**"
+
+msgid "Instance Methods"
+msgstr "Instanzmethoden"
+
+msgid ""
+":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
+msgstr ""
+":js:attr:`init <Engine.prototype.init>` **(** *[ string basisPfad ]* **)**"
+
+msgid ""
+":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
+"ArrayBuffer file *[, string path ]* **)**"
+msgstr ""
+":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
+"ArrayBuffer file *[, string Pfad ]* **)**"
+
+msgid ""
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
+msgstr ""
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig "
+"überschreibe**)**"
+
+msgid ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
+"override **)**"
+msgstr ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
+"überschreibe**)**"
+
+msgid ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
+"ArrayBuffer buffer **)**"
+msgstr ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** Zeichenfolgenpfad, "
+"ArrayBuffer buffer **)**"
+
+msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
+msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
+
+msgid "Create a new Engine instance with the given configuration."
+msgstr "Erzeugt eine neue Engine-Instanz mit der angegebenen Konfiguration."
+
+msgid "Arguments"
+msgstr "Argumente"
+
+msgid "The initial config for this instance."
+msgstr "Die anfängliche Konfiguration für diese Instanz."
+
+msgid "**Static Methods**"
+msgstr "**Statische Methoden**"
+
+msgid "Load the engine from the specified base path."
+msgstr "Laden Sie die Engine vom angegebenen Basispfad."
+
+msgid "Base path of the engine to load."
+msgstr "Basispfad der zu ladenden Engine."
+
+msgid "Returns"
+msgstr "Rückgabe"
+
+msgid "A Promise that resolves once the engine is loaded."
+msgstr "Ein Versprechen, das sich einlöst, sobald die Engine geladen ist."
+
+msgid "Return type"
+msgstr "Rückgabetyp"
+
+msgid "Unload the engine to free memory."
+msgstr "Entladen Sie die Engine, um Speicher freizugeben."
+
+msgid ""
+"This method will be called automatically depending on the configuration. "
+"See :js:attr:`unloadAfterInit`."
+msgstr ""
+"Diese Methode wird je nach Konfiguration automatisch aufgerufen. Siehe :js:"
+"attr:`unloadAfterInit`."
+
+msgid ""
+"Check whether WebGL is available. Optionally, specify a particular version "
+"of WebGL to check for."
+msgstr ""
+
+msgid "The major WebGL version to check for."
+msgstr ""
+"Die zu prüfende WebGL-Hauptversion. Standardeinstellung ist ``1`` für *WebGL "
+"1.0*."
+
+msgid "If the given major version of WebGL is available."
+msgstr "Wenn die angegebene Hauptversion von WebGL verfügbar ist."
+
+msgid "**Instance Methods**"
+msgstr "**Instanzmethoden**"
+
+msgid ""
+"Initialize the engine instance. Optionally, pass the base path to the engine "
+"to load it, if it hasn't been loaded yet. See :js:meth:`Engine.load`."
+msgstr ""
+
+msgid "A ``Promise`` that resolves once the engine is loaded and initialized."
+msgstr ""
+"Ein ``Promise``, das sich einlöst, sobald der Motor geladen und "
+"initialisiert ist."
+
+msgid ""
+"Load a file so it is available in the instance's file system once it runs. "
+"Must be called **before** starting the instance."
+msgstr ""
+
+msgid ""
+"If not provided, the ``path`` is derived from the URL of the loaded file."
+msgstr ""
+
+msgid ""
+"The file to preload.  If a ``string`` the file will be loaded from that "
+"path.  If an ``ArrayBuffer`` or a view on one, the buffer will used as the "
+"content of the file."
+msgstr ""
+
+msgid "The file to preload."
+msgstr "Die Datei, die vorab geladen werden soll."
+
+msgid "If a ``string`` the file will be loaded from that path."
+msgstr ""
+"Wenn eine ``Zeichenkette`` angegeben wird, dann wird die Datei aus diesem "
+"Pfad geladen."
+
+msgid ""
+"If an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
+"of the file."
+msgstr ""
+
+msgid ""
+"Path by which the file will be accessible. Required, if ``file`` is not a "
+"string."
+msgstr ""
+
+msgid "A Promise that resolves once the file is loaded."
+msgstr "Dieses Versprechen löst sich ein, sobald die Engine geladen ist."
+
+msgid ""
+"Start the engine instance using the given override configuration (if any). :"
+"js:meth:`startGame <Engine.prototype.startGame>` can be used in typical "
+"cases instead."
+msgstr ""
+
+msgid ""
+"This will initialize the instance if it is not initialized. For manual "
+"initialization, see :js:meth:`init <Engine.prototype.init>`. The engine must "
+"be loaded beforehand."
+msgstr ""
+
+msgid ""
+"Fails if a canvas cannot be found on the page, or not specified in the "
+"configuration."
+msgstr ""
+"Schlägt fehl, wenn ein Canvas auf der Seite nicht gefunden werden kann oder "
+"nicht in der Konfiguration angegeben ist."
+
+msgid "An optional configuration override."
+msgstr "Eine optionale Konfiguration überschreiben."
+
+msgid "Promise that resolves once the engine started."
+msgstr "Dieses Versprechen löst sich ein, sobald die Engine gestartet ist."
+
+msgid ""
+"Start the game instance using the given configuration override (if any)."
+msgstr ""
+"Startet die Spielinstanz mit dem angegebenen Konfigurations-Override (falls "
+"vorhanden)."
+
+msgid ""
+"This will initialize the instance if it is not initialized. For manual "
+"initialization, see :js:meth:`init <Engine.prototype.init>`."
+msgstr ""
+
+msgid ""
+"This will load the engine if it is not loaded, and preload the main pck."
+msgstr ""
+
+msgid ""
+"This method expects the initial config (or the override) to have both the :"
+"js:attr:`executable` and :js:attr:`mainPack` properties set (normally done "
+"by the editor during export)."
+msgstr ""
+
+msgid "Promise that resolves once the game started."
+msgstr "Dieses Versprechen löst sich ein, sobald das Spiel gestartet ist."
+
+msgid ""
+"Create a file at the specified ``path`` with the passed as ``buffer`` in the "
+"instance's file system."
+msgstr ""
+
+msgid "The location where the file will be created."
+msgstr "Der Ort, an dem die Datei erstellt werden soll."
+
+msgid "The content of the file."
+msgstr "Der Inhalt der Datei."
+
+msgid "Request that the current instance quit."
+msgstr "Anforderung, dass die aktuelle Instanz beendet wird."
+
+msgid ""
+"This is akin the user pressing the close button in the window manager, and "
+"will have no effect if the engine has crashed, or is stuck in a loop."
+msgstr ""
+
+msgid "Engine configuration"
+msgstr "Konfiguration"
+
+msgid ""
+"An object used to configure the Engine instance based on godot export "
+"options, and to override those in custom HTML templates if needed."
+msgstr ""
+
+msgid "Properties"
+msgstr "Eigenschaften"
+
+msgid "type"
+msgstr "Typ"
+
+msgid "name"
+msgstr "Name"
+
+msgid ":js:attr:`unloadAfterInit`"
+msgstr ":js:attr:`unloadAfterInit`"
+
+msgid "HTMLCanvasElement"
+msgstr "HTMLCanvasElement"
+
+msgid ":js:attr:`canvas`"
+msgstr ":js:attr:`canvas`"
+
+msgid "string"
+msgstr "Zeichenkette"
+
+msgid ":js:attr:`executable`"
+msgstr ":js:attr:`executable`"
+
+msgid ":js:attr:`mainPack`"
+msgstr ":js:attr:`mainPack`"
+
+msgid ":js:attr:`locale`"
+msgstr ":js:attr:`locale`"
+
+msgid "number"
+msgstr "number"
+
+msgid ":js:attr:`canvasResizePolicy`"
+msgstr ":js:attr:`canvasResizePolicy`"
+
+msgid "Array.<string>"
+msgstr "Array.<String>"
+
+msgid ":js:attr:`args`"
+msgstr ":js:attr:`args`"
+
+msgid "function"
+msgstr "Funktion"
+
+msgid ":js:attr:`onExecute`"
+msgstr ":js:attr:`onExecute`"
+
+msgid ":js:attr:`onExit`"
+msgstr ":js:attr:`onExit`"
+
+msgid ":js:attr:`onProgress`"
+msgstr ":js:attr:`onProgress`"
+
+msgid ":js:attr:`onPrint`"
+msgstr ":js:attr:`onPrint`"
+
+msgid ":js:attr:`onPrintError`"
+msgstr ":js:attr:`onPrintError`"
+
+msgid ""
+"The Engine configuration object. This is just a typedef, create it like a "
+"regular object, e.g.:"
+msgstr ""
+
+msgid "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
+msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
+
+msgid "**Property Descriptions**"
+msgstr "**Eigenschaftsbeschreibungen**"
+
+msgid ""
+"Whether the unload the engine automatically after the instance is "
+"initialized."
+msgstr ""
+
+msgid "value"
+msgstr "Wert"
+
+msgid "``true``"
+msgstr "``true``"
+
+msgid "The HTML DOM Canvas object to use."
+msgstr "Das zu verwendende HTML DOM Canvas-Objekt."
+
+msgid ""
+"By default, the first canvas element in the document will be used is none is "
+"specified."
+msgstr ""
+
+msgid "``null``"
+msgstr "``null``"
+
+msgid ""
+"The name of the WASM file without the extension. (Set by Godot Editor export "
+"process)."
+msgstr ""
+
+msgid "``\"\"``"
+msgstr "``\"\"``"
+
+msgid ""
+"An alternative name for the game pck to load. The executable name is used "
+"otherwise."
+msgstr ""
+
+msgid "Specify a language code to select the proper localization for the game."
+msgstr ""
+"Geben Sie einen Sprachcode an, um die richtige Lokalisierung für das Spiel "
+"auszuwählen."
+
+msgid ""
+"The browser locale will be used if none is specified. See complete list of :"
+"ref:`supported locales <doc_locales>`."
+msgstr ""
+"Die Browser-Sprachumgebung wird verwendet, wenn keine angegeben ist. Siehe "
+"vollständige Liste der :ref:`unterstützten Gebietsschemata <doc_locales>`."
+
+msgid ""
+"The canvas resize policy determines how the canvas should be resized by "
+"Godot."
+msgstr ""
+
+msgid ""
+"``0`` means Godot won't do any resizing. This is useful if you want to "
+"control the canvas size from javascript code in your template."
+msgstr ""
+
+msgid ""
+"``1`` means Godot will resize the canvas on start, and when changing window "
+"size via engine functions."
+msgstr ""
+
+msgid ""
+"``2`` means Godot will adapt the canvas size to match the whole browser "
+"window."
+msgstr ""
+
+msgid "``2``"
+msgstr "``2``"
+
+#, fuzzy
+msgid "The arguments to be passed as command line arguments on startup."
+msgstr "Kommandozeilenparameter parsen."
+
+#, fuzzy
+msgid "See :ref:`command line tutorial <doc_command_line_tutorial>`."
+msgstr ""
+"Weitere Informationen zu Befehlszeilenargumenten finden Sie in der :ref:"
+"`Befehlszeilen-Anleitung <doc_command_line_tutorial>`."
+
+msgid ""
+"**Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add "
+"the ``--main-pack`` argument."
+msgstr ""
+"**Beachte**: :js:meth:`startGame <Engine.prototype.startGame>` wird immer "
+"das Argument ``--main-pack`` hinzufügen."
+
+msgid "``[]``"
+msgstr "``[]``"
+
+msgid "A callback function for handling Godot's ``OS.execute`` calls."
+msgstr ""
+
+msgid ""
+"This is for example used in the Web Editor template to switch between "
+"Project Manager and editor, and for running the game."
+msgstr ""
+
+msgid "The path that Godot's wants executed."
+msgstr "Der Pfad, den Godot ausführen möchte."
+
+msgid "The arguments of the \"command\" to execute."
+msgstr "Die Argumente des auszuführenden \"Befehls\"."
+
+msgid "A callback function for being notified when the Godot instance quits."
+msgstr ""
+
+msgid ""
+"**Note**: This function will not be called if the engine crashes or become "
+"unresponsive."
+msgstr ""
+
+msgid "The status code returned by Godot on exit."
+msgstr "Der von Godot beim Beenden zurückgegebene Statuscode."
+
+msgid "A callback function for displaying download progress."
+msgstr "Eine Rückruffunktion zur Anzeige des Download-Fortschritts."
+
+msgid ""
+"The function is called once per frame while downloading files, so the usage "
+"of ``requestAnimationFrame()`` is not necessary."
+msgstr ""
+
+msgid ""
+"If the callback function receives a total amount of bytes as 0, this means "
+"that it is impossible to calculate. Possible reasons include:"
+msgstr ""
+
+msgid "Files are delivered with server-side chunked compression"
+msgstr "Dateien werden mit serverseitiger Blockkomprimierung geliefert"
+
+msgid "Files are delivered with server-side compression on Chromium"
+msgstr "Dateien werden mit serverseitiger Komprimierung auf Chromium geliefert"
+
+msgid ""
+"Not all file downloads have started yet (usually on servers without multi-"
+"threading)"
+msgstr ""
+"Es wurden noch nicht alle Dateidownloads gestartet (normalerweise auf "
+"Servern ohne Multithreading)"
+
+msgid "The current amount of downloaded bytes so far."
+msgstr "Die aktuelle Anzahl der bisher heruntergeladenen Bytes."
+
+msgid "The total amount of bytes to be downloaded."
+msgstr "Die Gesamtmenge der herunterzuladenden Bytes."
+
+msgid ""
+"A callback function for handling the standard output stream. This method "
+"should usually only be used in debug pages."
+msgstr ""
+
+msgid "By default, ``console.log()`` is used."
+msgstr "Standardmäßig wird ``console.log()`` verwendet."
+
+msgid "A variadic number of arguments to be printed."
+msgstr ""
+
+msgid ""
+"A callback function for handling the standard error stream. This method "
+"should usually only be used in debug pages."
+msgstr ""
+
+msgid "By default, ``console.error()`` is used."
+msgstr "Standardmäßig wird ``console.error()`` verwendet."
+
+msgid "A variadic number of arguments to be printed as errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

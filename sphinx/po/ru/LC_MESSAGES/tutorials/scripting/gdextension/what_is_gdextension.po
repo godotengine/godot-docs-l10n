@@ -1,0 +1,211 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "What is GDExtension?"
+msgstr "Что это?"
+
+msgid "Introduction"
+msgstr "Введение"
+
+#, fuzzy
+msgid ""
+"**GDExtension** is a Godot-specific technology that lets the engine interact "
+"with native `shared libraries <https://en.wikipedia.org/wiki/"
+"Library_(computing)#Shared_libraries>`__ at run-time. You can use it to run "
+"native code without compiling it with the engine."
+msgstr ""
+"**GDNative** - это специфическая для Godot технология, позволяющая движку "
+"взаимодействовать с нативными библиотеками <https://en.wikipedia.org/wiki/"
+"Library_(computing)#Shared_libraries>`__ во время выполнения. Вы можете "
+"использовать ее для запуска нативного кода без компиляции в движке."
+
+#, fuzzy
+msgid ""
+"GDExtension is *not* a scripting language and has no relation to :ref:"
+"`GDScript <doc_gdscript>`."
+msgstr ""
+"GDNative *не* является скриптовым языком и не имеет отношения к :ref:"
+"`GDScript <doc_gdscript>`."
+
+#, fuzzy
+msgid "Differences between GDExtension and C++ modules"
+msgstr "Различия между GDNative и модулями C++"
+
+#, fuzzy
+msgid ""
+"You can use both GDExtension and :ref:`C++ modules "
+"<doc_custom_modules_in_cpp>` to run C or C++ code in a Godot project."
+msgstr ""
+"Вы можете использовать как GDNative, так и :ref:`C++ модули "
+"<doc_custom_modules_in_c++>` для запуска C или C++ кода в проекте Godot."
+
+msgid ""
+"They also both allow you to integrate third-party libraries into Godot. The "
+"one you should choose depends on your needs."
+msgstr ""
+"Они также позволяют интегрировать в Godot библиотеки сторонних "
+"разработчиков. Выбор того или иного варианта зависит от ваших потребностей."
+
+msgid ""
+"If you notice that specific systems are not accessible via GDExtension but "
+"are via custom modules feel free to open an issue on the `godot-cpp "
+"repository <https://github.com/godotengine/godot-cpp>`__ to discuss "
+"implementation options to expose the missing functionality."
+msgstr ""
+
+#, fuzzy
+msgid "Advantages of GDExtension"
+msgstr "Преимущества GDNative"
+
+#, fuzzy
+msgid ""
+"Unlike modules, GDExtension doesn't require compiling the engine's source "
+"code, making it easier to distribute your work. It gives you access to most "
+"of the API available to GDScript and C#, allowing you to code game logic "
+"with full control regarding performance. It's ideal if you need high-"
+"performance code you'd like to distribute as an add-on in the :ref:`asset "
+"library <doc_what_is_assetlib>`."
+msgstr ""
+"В отличие от модулей, GDNative не требует компиляции исходного кода движка, "
+"что облегчает распространение вашей работы. Он дает вам доступ к большинству "
+"API, доступных для GDScript C#, позволяя вам разрабатывать игровую логику с "
+"полным контролем над производительностью. Это идеальный вариант, если вам "
+"нужен высокопроизводительный код, который вы хотели бы распространять в "
+"качестве дополнения в :ref:`библиотеке ассетов <doc_what_is_assetlib>`."
+
+msgid "Also:"
+msgstr "А также:"
+
+#, fuzzy
+msgid ""
+"GDExtension is not limited to C and C++. Thanks to :ref:`third-party "
+"bindings <doc_what_is_gdnative_third_party_bindings>`, you can use it with "
+"many other languages."
+msgstr ""
+"GDNative не ограничивается C и C++. Благодаря :ref:` "
+"биндингам<doc_what_is_gdnative_third_party_bindings>`, вы можете "
+"использовать его со множеством других языков."
+
+#, fuzzy
+msgid ""
+"You can use the same compiled GDExtension library in the editor and exported "
+"project. With C++ modules, you have to recompile all the export templates "
+"you plan to use if you require its functionality at run-time."
+msgstr ""
+"Вы можете использовать одну и ту же скомпилированную библиотеку GDNative в "
+"редакторе и экспортируемом проекте. С модулями C++ вам придется "
+"перекомпилировать все шаблоны экспорта, которые вы планируете использовать, "
+"если вам потребуется их функциональность во время выполнения."
+
+#, fuzzy
+msgid ""
+"GDExtension only requires you to compile your library, not the whole engine. "
+"That's unlike C++ modules, which are statically compiled into the engine. "
+"Every time you change a module, you need to recompile the engine. Even with "
+"incremental builds, this process is slower than using GDExtension."
+msgstr ""
+"GDNative требует компиляции только вашей библиотеки, а не всего движка. Это "
+"отличается от модулей C++, которые статически компилируются в движок. Каждый "
+"раз, когда вы изменяете модуль, вам нужно перекомпилировать движок. Даже при "
+"инкрементных сборках этот процесс происходит медленнее, чем при "
+"использовании GDNative."
+
+msgid "Advantages of C++ modules"
+msgstr "Преимущества модулей C++"
+
+#, fuzzy
+msgid ""
+"We recommend :ref:`C++ modules <doc_custom_modules_in_cpp>` in cases where "
+"GDExtension isn't enough:"
+msgstr ""
+"Мы рекомендуем использовать :ref:`C++ модули <doc_custom_modules_in_c++>` в "
+"случаях, когда GDNative недостаточно':"
+
+#, fuzzy
+msgid ""
+"C++ modules provide deeper integration into the engine. GDExtension's access "
+"is not as deep as static modules"
+msgstr ""
+"Модули C++ обеспечивают более глубокую интеграцию в движок. Доступ GDNative "
+"ограничен тем, что предоставляет API для сценариев."
+
+msgid ""
+"You can use C++ modules to provide additional features in a project without "
+"carrying native library files around. This extends to exported projects."
+msgstr ""
+"Вы можете использовать модули C++ для предоставления дополнительных "
+"возможностей в проекте, не таская с собой файлы родной библиотеки. Это "
+"распространяется и на экспортируемые проекты."
+
+msgid "Supported languages"
+msgstr "Поддерживаемые языки"
+
+#, fuzzy
+msgid ""
+"The Godot developers officially support the following language bindings for "
+"GDExtension:"
+msgstr ""
+"Разработчики Godot официально поддерживают следующие языковые привязки для "
+"GDNative:"
+
+#, fuzzy
+msgid "C++ :ref:`(tutorial) <doc_gdextension_cpp_example>`"
+msgstr "C++ :ref:`(tutorial) <doc_gdnative_cpp_example>`"
+
+#, fuzzy
+msgid ""
+"There are no plans to support additional languages with GDExtension "
+"officially. That said, the community offers several bindings for other "
+"languages (see below)."
+msgstr ""
+"Официальная поддержка дополнительных языков в GDNative не планируется. Тем "
+"не менее, сообщество предлагает несколько привязок для других языков (см. "
+"ниже)."
+
+msgid "The bindings below are developed and maintained by the community:"
+msgstr "Приведенные ниже привязки разработаны и поддерживаются сообществом:"
+
+#, fuzzy
+msgid "`Rust <https://github.com/godot-rust/gdextension>`__"
+msgstr "`Rust <https://github.com/godot-rust/godоt-rust>`__"
+
+msgid ""
+"Not all bindings mentioned here may be production-ready. Make sure to "
+"research options thoroughly before starting a project with one of those. "
+"Also, double-check whether the binding is compatible with the Godot version "
+"you're using."
+msgstr ""
+"Не все упомянутые здесь привязки могут быть готовыми для использования в "
+"продакшене. Прежде чем начинать проект с одним из них, тщательно изучите "
+"возможные варианты. Также проверьте, совместима ли привязка с версией Godot, "
+"которую вы используете."
+
+msgid "Version compatibility"
+msgstr ""
+
+msgid ""
+"GDExtension add-ons compiled for a given Godot version are only guaranteed "
+"to work with the same minor release series. For example, a GDExtension add-"
+"on compiled for Godot 4.0 will only work with Godot 4.0, 4.0.1, 4.0.2. In "
+"addition, GDExtension is not compatible with Godot 3.x."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Translation status (статус перевода)"

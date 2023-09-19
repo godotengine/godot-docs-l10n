@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,28 +26,24 @@ msgid ""
 msgstr ""
 "在第一部分中，我们将设置游戏区域。让我们从导入初始资产、设置游戏场景入手。"
 
+#, fuzzy
 msgid ""
 "We've prepared a Godot project with the 3D models and sounds we'll use for "
 "this tutorial, linked in the index page. If you haven't done so yet, you can "
 "download the archive here: `Squash the Creeps assets <https://github.com/"
-"GDQuest/godot-3d-dodge-the-creeps/releases/tag/1.0.0>`__."
+"godotengine/godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
 msgstr ""
 "我们为这个教程准备了一个带有 3D 模型和音效的 Godot 项目，链接在索引页。如果你"
 "还没有下载，可以下载这个压缩包：\\ `Squash the Creeps 资产 <https://github."
 "com/GDQuest/godot-3d-dodge-the-creeps/releases/tag/1.0.0>`__\\ 。"
 
+#, fuzzy
 msgid ""
 "Once you downloaded it, extract the .zip archive on your computer. Open the "
-"Godot project manager and click the *Import* button."
+"Godot Project Manager and click the *Import* button."
 msgstr ""
 "下载完成之后，将 .zip 压缩包解压到你的电脑上。打开 Godot 项目管理器，然后点击"
 "\\ *导入*\\ 按钮。"
-
-msgid "|image1|"
-msgstr "|image1|"
-
-msgid "image1"
-msgstr "image1"
 
 msgid ""
 "In the import popup, enter the full path to the freshly created directory "
@@ -59,20 +55,8 @@ msgstr ""
 "你也可以点击右侧的\\ *浏览*\\ 按钮，打开文件浏览器并找到该文件夹所包含的 "
 "``project.godot`` 文件。"
 
-msgid "|image2|"
-msgstr "|image2|"
-
-msgid "image2"
-msgstr "image2"
-
 msgid "Click *Import & Edit* to open the project in the editor."
 msgstr "点击\\ *导入并编辑*\\ 在编辑器中打开该项目。"
-
-msgid "|image3|"
-msgstr "|image3|"
-
-msgid "image3"
-msgstr "image3"
 
 msgid ""
 "The start project contains an icon and two folders: ``art/`` and ``fonts/``. "
@@ -80,12 +64,6 @@ msgid ""
 msgstr ""
 "起始项目中包含一个图标和两个文件夹：\\ ``art/`` 和 ``fonts/``\\ 。你可以在里"
 "面找到游戏中我们会用到的艺术资产和音乐。"
-
-msgid "|image4|"
-msgstr "|image4|"
-
-msgid "image4"
-msgstr "image4"
 
 msgid ""
 "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that "
@@ -97,76 +75,65 @@ msgstr ""
 msgid "Setting up the playable area"
 msgstr "设置游玩区域"
 
+#, fuzzy
 msgid ""
-"We're going to create our main scene with a plain *Node* as its root. In the "
-"*Scene* dock, click the *Add Node* button represented by a \"+\" icon in the "
-"top-left and double-click on *Node*. Name the node \"Main\". Alternatively, "
-"to add a node to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` "
-"on macOS)."
+"We're going to create our main scene with a plain :ref:`Node <class_Node>` "
+"as its root. In the *Scene* dock, click the *Add Child Node* button "
+"represented by a \"+\" icon in the top-left and double-click on *Node*. Name "
+"the node ``Main``. An alternate method to rename the node is to right-click "
+"on *Node* and choose *Rename* (or :kbd:`F2`). Alternatively, to add a node "
+"to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` on macOS)."
 msgstr ""
 "我们将以普通的 *Node* 作为其根创建主场景。在\\ *场景*\\ 面板中，单击左上角"
 "由“+”图标表示的\\ *添加节点*\\ 按钮，然后双击 *Node*\\ 。将节点命名为“Main”。"
 "或者，要将节点添加到场景中，可以按 :kbd:`Ctrl + a` （或在 macOS 上按 :kbd:"
 "`Cmd + a`\\ ）。"
 
-msgid "|image5|"
-msgstr "|image5|"
-
-msgid "image5"
-msgstr "image5"
-
+#, fuzzy
 msgid ""
-"Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
+"Save the scene as ``main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
 "on macOS)."
 msgstr ""
 "按 :kbd:`Ctrl + s` 将场景保存为 ``Main.tscn``\\ （在 macOS 上则是按 :kbd:"
 "`Cmd + s`\\ ）。"
 
+#, fuzzy
 msgid ""
 "We'll start by adding a floor that'll prevent the characters from falling. "
-"To create static colliders like the floor, walls, or ceilings, you can use "
-"*StaticBody* nodes. They require *CollisionShape* child nodes to define the "
-"collision area. With the *Main* node selected, add a *StaticBody* node, then "
-"a *CollisionShape*. Rename the *StaticBody* as *Ground*."
+"To create static colliders like the floor, walls, or ceilings, you can use :"
+"ref:`StaticBody3D <class_StaticBody3D>` nodes. They require :ref:"
+"`CollisionShape3D <class_CollisionShape3D>` child nodes to define the "
+"collision area. With the ``Main`` node selected, add a :ref:`StaticBody3D "
+"<class_StaticBody3D>` node, then a :ref:`CollisionShape3D "
+"<class_CollisionShape3D>`. Rename the :ref:`StaticBody3D "
+"<class_StaticBody3D>` to ``Ground``."
 msgstr ""
 "我们先添加一个地板，以防止角色掉落。要创建静态碰撞体（如地板、墙壁或天花"
 "板），可以使用 *StaticBody* 节点。它们需要 *CollisionShape* 子节点来定义碰撞"
 "区域。选择 *Main* 节点后，添加 *StaticBody* 节点，然后添加 "
 "*CollisionShape*\\ 。将 *StaticBody* 重命名为 *Ground*\\ 。"
 
-msgid "|image6|"
-msgstr "|image6|"
+#, fuzzy
+msgid "Your scene tree should look like this"
+msgstr "您的场景应如下所示:"
 
-msgid "image6"
-msgstr "image6"
-
+#, fuzzy
 msgid ""
-"A warning sign next to the *CollisionShape* appears because we haven't "
-"defined its shape. If you click the icon, a popup appears to give you more "
-"information."
+"A warning sign next to the :ref:`CollisionShape3D <class_CollisionShape3D>` "
+"appears because we haven't defined its shape. If you click the icon, a popup "
+"appears to give you more information."
 msgstr ""
 "在 *CollisionShape* 旁边会出现一个警告标志，因为我们还没有定义它的形状。如果"
 "你点击这个图标，就会出现一个弹出窗口，为你提供更多信息。"
 
-msgid "|image7|"
-msgstr "|image7|"
-
-msgid "image7"
-msgstr "image7"
-
+#, fuzzy
 msgid ""
-"To create a shape, with the *CollisionShape* selected, head to the "
-"*Inspector* and click the *[empty]* field next to the *Shape* property. "
-"Create a new *Box Shape*."
+"To create a shape, select the :ref:`CollisionShape3D "
+"<class_CollisionShape3D>` node, head to the *Inspector* and click the "
+"*<empty>* field next to the *Shape* property. Create a new *BoxShape3D*."
 msgstr ""
 "要创建形状，请在选中 *CollisionShape* 后，转到\\ *检查器*\\ ，然后单击 "
 "*Shape* 属性旁边的 *[空]* 字段。创建新的 *Box Shape*\\ 。"
-
-msgid "|image8|"
-msgstr "|image8|"
-
-msgid "image8"
-msgstr "image8"
 
 msgid ""
 "The box shape is perfect for flat ground and walls. Its thickness makes it "
@@ -175,97 +142,59 @@ msgstr ""
 "盒子形状非常适合平坦的地面和墙壁。它的厚度使它能够可靠地阻挡甚至快速移动的物"
 "体。"
 
+#, fuzzy
 msgid ""
 "A box's wireframe appears in the viewport with three orange dots. You can "
 "click and drag these to edit the shape's extents interactively. We can also "
-"precisely set the size in the inspector. Click on the *BoxShape* to expand "
-"the resource. Set its *Extents* to ``30`` on the X axis, ``1`` for the Y "
-"axis, and ``30`` for the Z axis."
+"precisely set the size in the inspector. Click on the :ref:`BoxShape3D "
+"<class_BoxShape3D>` to expand the resource. Set its *Size* to ``60`` on the "
+"X axis, ``2`` for the Y axis, and ``60`` for the Z axis."
 msgstr ""
 "一个盒子的线框会在视口中出现三个橙色的小点。你可以点击并拖动这些点来交互地编"
 "辑形状的范围。我们也可以在检查器中精确设置尺寸。点击 *BoxShape* 来展开资源。"
 "将它的 *Extents* 设置为 X 轴上的 ``30``\\ ，Y 轴的 ``1`` 和 Z 轴上的 "
 "``30``\\ 。"
 
-msgid "|image9|"
-msgstr "|image9|"
-
-msgid "image9"
-msgstr "image9"
-
-msgid ""
-"In 3D, translation and size units are in meters. The box's total size is "
-"twice its extents: ``60`` by ``60`` meters on the ground plane and ``2`` "
-"units tall. The ground plane is defined by the X and Z axes, while the Y "
-"axis represents the height."
-msgstr ""
-"在 3D 模式下，平移和大小单位以米为单位。盒子的总尺寸是其范围的两倍：\\ "
-"``60``\\ ×\\ ``60`` 米在地平面上，高 ``2`` 单位。接地平面由 X 轴和 Z 轴定义，"
-"而 Y 轴表示高度。"
-
+#, fuzzy
 msgid ""
 "Collision shapes are invisible. We need to add a visual floor that goes "
-"along with it. Select the *Ground* node and add a *MeshInstance* as its "
-"child."
+"along with it. Select the ``Ground`` node and add a :ref:`MeshInstance3D "
+"<class_MeshInstance3D>` as its child."
 msgstr ""
 "碰撞形状是不可见的。我们需要添加一个与之配套的视觉地板。选择 *Ground* 节点并"
 "添加一个 *MeshInstance* 作为其子节点。"
 
-msgid "|image10|"
-msgstr "|image10|"
-
-msgid "image10"
-msgstr "image10"
-
+#, fuzzy
 msgid ""
-"In the *Inspector*, click on the field next to *Mesh* and create a "
-"*CubeMesh* resource to create a visible cube."
+"In the *Inspector*, click on the field next to *Mesh* and create a :ref:"
+"`BoxMesh <class_BoxMesh>` resource to create a visible box."
 msgstr ""
 "在\\ *检查器*\\ 中，点击 *Mesh* 旁边的字段，创建一个 *CubeMesh* 资源，创建一"
 "个可见的立方体。"
 
-msgid "|image11|"
-msgstr "|image11|"
-
-msgid "image11"
-msgstr "image11"
-
+#, fuzzy
 msgid ""
-"Once again, it's too small by default. Click the cube icon to expand the "
-"resource and set its *Size* to ``60``, ``2``, and ``60``. As the cube "
-"resource works with a size rather than extents, we need to use these values "
-"so it matches our collision shape."
+"Once again, it's too small by default. Click the box icon to expand the "
+"resource and set its *Size* to ``60``, ``2``, and ``60``."
 msgstr ""
 "再次设置大小，点击立方体图标展开资源，并将其 *Size* 设置为 ``60``\\ 、\\ "
 "``2``\\ 、\\ ``60``\\ 。由于立方体资源使用的是大小（size）而不是范围"
 "（extents），我们需要使用这些值，以便它与我们的碰撞形状相匹配。"
-
-msgid "|image12|"
-msgstr "|image12|"
-
-msgid "image12"
-msgstr "image12"
 
 msgid ""
 "You should see a wide grey slab that covers the grid and blue and red axes "
 "in the viewport."
 msgstr "您应该会在视口中看到一个覆盖网格以及蓝色和红色轴的宽灰色平板。"
 
+#, fuzzy
 msgid ""
 "We're going to move the ground down so we can see the floor grid. Select the "
-"*Ground* node, hold the :kbd:`Ctrl` key down to turn on grid snapping (:kbd:"
-"`Cmd` on macOS), and click and drag down on the Y axis. It's the green arrow "
-"in the move gizmo."
+"``Ground`` node, hold the :kbd:`Ctrl` key down to turn on grid snapping, and "
+"click and drag down on the Y axis. It's the green arrow in the move gizmo."
 msgstr ""
 "我们要把地面往下移一点，这样才能看到地板网格。选中 *Ground* 节点，按住 :kbd:"
 "`Ctrl` 键启用网格吸附（macOS 上则是 :kbd:`Cmd`\\ ），然后单击并拖拽 Y 轴，也"
 "就是移动小工具里的绿色箭头。"
-
-msgid "|image13|"
-msgstr "|image13|"
-
-msgid "image13"
-msgstr "image13"
 
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
@@ -274,36 +203,37 @@ msgstr ""
 "如果你没有看到如上图所示的 3D 对象操作器，请确保已激活视图上方工具栏中的\\ *"
 "选择模式*\\ 。"
 
-msgid "|image14|"
-msgstr "|image14|"
-
-msgid "image14"
-msgstr "image14"
-
+#, fuzzy
 msgid ""
-"Move the ground down ``1`` meter. A label in the bottom-left corner of the "
-"viewport tells you how much you're translating the node."
+"Move the ground down ``1`` meter, in order to have a visible editor grid. A "
+"label in the bottom-left corner of the viewport tells you how much you're "
+"translating the node."
 msgstr "将地面往下移动 ``1`` 米。视口左下角的标签会显示你将该节点平移了多远。"
 
-msgid "|image15|"
-msgstr "|image15|"
-
-msgid "image15"
-msgstr "image15"
-
+#, fuzzy
 msgid ""
 "Moving the *Ground* node down moves both children along with it. Ensure you "
-"move the *Ground* node, **not** the *MeshInstance* or the *CollisionShape*."
+"move the *Ground* node, **not** the *MeshInstance3D* or the "
+"*CollisionShape3D*."
 msgstr ""
 "子节点会跟随 *Ground* 节点一起往下移动。请确保你移动的是 *Ground* 节点，而\\ "
 "*不是* *MeshInstance* 和 *CollisionShape*\\ 。"
 
+msgid "Ultimately, ``Ground``'s transform.position.y should be -1"
+msgstr ""
+
 msgid ""
-"Let's add a directional light so our scene isn't all grey. Select the *Main* "
-"node and add a *DirectionalLight* as a child of it. We need to move it and "
-"rotate it. Move it up by clicking and dragging on the manipulator's green "
-"arrow and click and drag on the red arc to rotate it around the X axis, "
-"until the ground is lit."
+"Let's add a directional light so our scene isn't all grey. Select the "
+"``Main`` node and add a child node :ref:`DirectionalLight3D "
+"<class_DirectionalLight3D>`."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"We need to move and rotate the :ref:`DirectionalLight3D "
+"<class_DirectionalLight3D>` node. Move it up by clicking and dragging on the "
+"manipulator's green arrow and click and drag on the red arc to rotate it "
+"around the X axis, until the ground is lit."
 msgstr ""
 "让我们添加一个平行光，这样我们的场景就不会全是灰色的。选择 *Main* 节点，并添"
 "加 *DirectionalLight* 作为其子节点。我们需要移动它并旋转它。通过单击并拖动操"
@@ -314,20 +244,8 @@ msgid ""
 "In the *Inspector*, turn on *Shadow -> Enabled* by clicking the checkbox."
 msgstr "在\\ *检查器*\\ 中，勾选复选框打开\\ *Shadow -> Enabled*\\ 。"
 
-msgid "|image16|"
-msgstr "|image16|"
-
-msgid "image16"
-msgstr "image16"
-
 msgid "At this point, your project should look like this."
 msgstr "项目此时看起来是这个样子。"
-
-msgid "|image17|"
-msgstr "|image17|"
-
-msgid "image17"
-msgstr "image17"
 
 msgid ""
 "That's our starting point. In the next part, we will work on the player "

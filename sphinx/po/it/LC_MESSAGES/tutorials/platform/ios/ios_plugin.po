@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,6 +63,11 @@ msgid ""
 "get_singleton()``::"
 msgstr ""
 
+msgid ""
+"The plugin's files have to be in the ``res://ios/plugins/`` directory or a "
+"subdirectory, otherwise the Godot editor will not automatically detect them."
+msgstr ""
+
 #, fuzzy
 msgid "Creating an iOS plugin"
 msgstr "Creazione di un plugin per la schermata principale"
@@ -91,8 +96,7 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
-"Godot iOS plugins."
+"The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_."
 msgstr ""
 "I `Plugin iOS di Godot <https://github.com/godotengine/godot-ios-plugins>`_."
 
@@ -274,7 +278,7 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"If ``raw`` type is used value for coresponding key will be stored in ``Info."
+"If ``raw`` type is used value for corresponding key will be stored in ``Info."
 "plist`` as is."
 msgstr ""
 "Se viene usato il tipo ``raw`` il valore per la chiave corrispondente sarà "

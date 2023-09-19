@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,35 +102,24 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Under **Theme overrides > Fonts** click on the empty box and select \"New "
-"DynamicFont\""
-msgstr "\"Custom Fonts\" alla, valitse \"New DynamicFont\""
-
-#, fuzzy
-msgid ""
-"Click on the \"DynamicFont\" you added, and under **Font > FontData**, "
-"choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
+"Under \"Theme Overrides > Fonts\", choose \"Load\" and select the \"Xolonium-"
+"Regular.ttf\" file."
 msgstr ""
 "Napsauta lisäämääsi \"DynamicFont\" kirjasinta, valitse \"Font Data\" alta "
 "\"Load\" ja valitse \"Xolonium-Regular.ttf\" tiedosto. Sinun täytyy myös "
 "asettaa kirjasimen koko ``Size`` ominaisuudesta. Asetus ``64`` toimii hyvin."
 
-msgid "Set the \"Size\" property under ``Settings``, ``64`` works well."
-msgstr ""
-
 msgid ""
-"Once you've done this on the ``ScoreLabel``, you can click the down arrow "
-"next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
-"place on the other two Control nodes."
+"The font size is still too small, increase it to ``64`` under \"Theme "
+"Overrides > Font Sizes\". Once you've done this with the ``ScoreLabel``, "
+"repeat the changes for the ``Message`` and ``StartButton`` nodes."
 msgstr ""
 
 #, fuzzy
 msgid ""
-"**Anchors and Margins:** ``Control`` nodes have a position and size, but "
-"they also have anchors and margins. Anchors define the origin - the "
-"reference point for the edges of the node. Margins update automatically when "
-"you move or resize a control node. They represent the distance from the "
-"control node's edges to its anchor."
+"**Anchors:** ``Control`` nodes have a position and size, but they also have "
+"anchors. Anchors define the origin - the reference point for the edges of "
+"the node."
 msgstr ""
 "**Ankkurit ja marginaalit:** ``Control`` solmuilla täytyy olla sijainti ja "
 "koko, mutta niillä on myös ankkurit ja marginaalit. Ankkurit määrittävät "
@@ -141,15 +130,8 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Arrange the nodes as shown below. Click the \"Layout\" button to set a "
-"Control node's layout:"
-msgstr ""
-"Järjestä solmut alla esitetyllä tavalla. Napsauta \"Anchor\" painiketta "
-"asettaaksesi Control solmun ankkurin:"
-
-msgid ""
-"You can drag the nodes to place them manually, or for more precise "
-"placement, use the following settings:"
+"Arrange the nodes as shown below. You can drag the nodes to place them "
+"manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr ""
 "Voit kiskoa solmuja asettaaksesi ne manuaalisesti, tai tarkempaa sijoittelua "
 "varten, voit käyttää seuraavia asetuksia:"
@@ -157,45 +139,54 @@ msgstr ""
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-msgid "*Layout* : \"Top Wide\""
+msgid "Add the text ``0``."
 msgstr ""
 
-msgid "*Text* : ``0``"
-msgstr "*Text* : ``0``"
+msgid ""
+"Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
+msgstr ""
 
-msgid "*Align* : \"Center\""
+msgid "Choose the \"Anchor Preset\" ``Center Top``."
 msgstr ""
 
 #, fuzzy
 msgid "Message"
 msgstr "MessageLabel"
 
-msgid "*Layout* : \"HCenter Wide\""
-msgstr "*Layout* : \"HCenter Wide\""
-
-msgid "*Text* : ``Dodge the Creeps!``"
+#, fuzzy
+msgid "Add the text ``Dodge the creeps!``."
 msgstr "*Text* : ``Dodge the Creeps!``"
 
-msgid "*Autowrap* : \"On\""
+msgid ""
+"Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
+"line."
+msgstr ""
+
+msgid ""
+"Under \"Control - Layout/Transform\" set \"Size X\"  to ``480`` to use the "
+"entire width of the screen."
+msgstr ""
+
+msgid "Choose the \"Anchor Preset\" ``Center``."
 msgstr ""
 
 msgid "StartButton"
 msgstr "StartButton"
 
-msgid "*Text* : ``Start``"
+#, fuzzy
+msgid "Add the text ``Start``."
 msgstr "*Text* : ``Start``"
 
-msgid "*Layout* : \"Center Bottom\""
-msgstr "*Layout* : \"Center Bottom\""
+msgid ""
+"Under \"Control - Layout/Transform\", set \"Size X\" to ``200`` and \"Size "
+"Y\" to ``100`` to add a little bit more padding between the border and text."
+msgstr ""
 
-msgid "*Margin* :"
-msgstr "*Margin* :"
+msgid "Choose the \"Anchor Preset\" ``Center Bottom``."
+msgstr ""
 
-msgid "Top: ``-200``"
-msgstr "Top: ``-200``"
-
-msgid "Bottom: ``-100``"
-msgstr "Bottom: ``-100``"
+msgid "Under \"Control - Layout/Transform\", set \"Position Y\" to ``580``."
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -209,21 +200,24 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr "Lisää nyt tämä skripti ``HUD`` solmulle:"
 
-msgid ""
-"The ``start_game`` signal tells the ``Main`` node that the button has been "
-"pressed."
-msgstr ""
-"``start_game`` signaali kertoo ``Main`` solmulle, että painiketta on "
-"painettu."
-
 #, fuzzy
 msgid ""
-"This function is called when we want to display a message temporarily, such "
-"as \"Get Ready\"."
+"We now want to display a message temporarily, such as \"Get Ready\", so we "
+"add the following code"
 msgstr ""
 "Tätä funktiota kutsutaan, kun haluamme näyttää väliaikaisen viestin, kuten "
 "\"Get Ready\". Aseta ``MessageTimer`` solmussa ``Wait Time`` arvoksi ``2`` "
 "ja aseta ``One Shot`` ominaisuudeksi \"On\"."
+
+#, fuzzy
+msgid ""
+"We also need to process what happens when the player loses. The code below "
+"will show \"Game Over\" for 2 seconds, then return to the title screen and, "
+"after a brief pause, show the \"Start\" button."
+msgstr ""
+"Tätä funktiota kutsutaan kun pelaaja häviää. Se näyttää \"Game Over\" kahden "
+"sekunnin ajan, ja palaa sitten alkuruutuun ja näyttää \"Start\" painikkeen "
+"lyhyen tauon jälkeen."
 
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
@@ -245,13 +239,13 @@ msgstr ""
 "luomaan viiveitä kuten ylläolevassa koodissa, missä me haluamme odottaa "
 "hetken ennenkuin näytämme \"Start\" painikkeen."
 
-msgid "This function is called by ``Main`` whenever the score changes."
+msgid "Add the code below to ``HUD`` to update the score"
 msgstr ""
-"Tätä funktiota kutsutaan ``Main`` solmussa aina kun pistemäärä muuttuu."
 
+#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
-"signal of ``StartButton`` and add the following code to the new functions:"
+"signal of ``StartButton``, and add the following code to the new functions:"
 msgstr ""
 "Yhdistä ``MessageTimer`` solmun ``timeout()`` signaali ja ``StartButton`` "
 "solmun ``pressed()`` signaali, ja lisää seuraava koodi uusiin funktioihin:"
@@ -280,9 +274,13 @@ msgstr ""
 
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
-"``new_game()`` function of the Main node by typing \"new_game\" in the "
-"\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
+"``new_game()`` function of the Main node by clicking the \"Pick\" button in "
+"the \"Connect a Signal\" window and selecting the ``new_game()`` method or "
+"type \"new_game\" below \"Receiver Method\" in the window. Verify that the "
 "green connection icon now appears next to ``func new_game()`` in the script."
+msgstr ""
+
+msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
 msgstr ""
 
 msgid ""
@@ -296,15 +294,22 @@ msgstr ""
 "``game_over()`` funktiossa meidän täytyy kutsua vastaavaa ``HUD`` funktiota:"
 
 msgid ""
-"Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
+"Just a reminder: we don't want to start the new game automatically, so "
+"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
 "Lopuksi, lisää tämä ``_on_ScoreTimer_timeout()`` funktioon pitääksesi näytön "
 "synkassa muuttuvan pistemäärän kanssa:"
 
+#, fuzzy
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
-"asked to select a main scene, so choose ``Main.tscn``."
+"asked to select a main scene, so choose ``main.tscn``."
 msgstr ""
 "Nyt olet valmis pelaamaan! Napsauta \"Pelaa\" painiketta. Sinua pyydetään "
 "valitsemaan pääskene, joten valitse ``Main.tscn``."

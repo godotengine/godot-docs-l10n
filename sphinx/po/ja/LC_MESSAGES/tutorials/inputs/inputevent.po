@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,13 +70,12 @@ msgstr ""
 msgid "How does it work?"
 msgstr "どのように機能しますか？"
 
+#, fuzzy
 msgid ""
 "Every input event is originated from the user/player (though it's possible "
 "to generate an InputEvent and feed them back to the engine, which is useful "
-"for gestures). The OS object for each platform will read events from the "
-"device, then feed them to MainLoop. As :ref:`SceneTree <class_SceneTree>` is "
-"the default MainLoop implementation, events are fed to it. Godot provides a "
-"function to get the current SceneTree object : **get_tree()**."
+"for gestures). The DisplayServer for each platform will read events from the "
+"operating system, then feed them to the root :ref:`Window <class_Window>`."
 msgstr ""
 "すべての入力イベントはユーザー/プレイヤーから発生します(ただし、InputEventを"
 "生成してエンジンにフィードバックすることが可能で、ジェスチャーに役立ちます)。"
@@ -86,26 +85,37 @@ msgstr ""
 "SceneTree オブジェクトを取得する、\\ **get_tree()**\\ 関数が用意されていま"
 "す。"
 
+#, fuzzy
 msgid ""
-"But SceneTree does not know what to do with the event, so it will give it to "
-"the viewports, starting by the \"root\" :ref:`Viewport <class_Viewport>` "
-"(the first node of the scene tree). Viewport does quite a lot of stuff with "
+"The window's :ref:`Viewport <class_Viewport>` does quite a lot of stuff with "
 "the received input, in order:"
 msgstr ""
-"しかしSceneTreeはイベントをどう処理するか分からないので、\"root\" :ref:"
-"`Viewport <class_Viewport>` (シーン ツリーの最初のノード)から始まるビューポー"
-"トにそれを渡します。ビューポートは、受信した入力に対して次のような非常に多く"
-"のことを行います:"
+":ref:`Viewports <class_Viewport>` には、次のようなさまざまなユースケースがあ"
+"ります:"
 
+msgid ""
+"If the Viewport is embedding Windows, the Viewport tries to interpret the "
+"event in its capability as a Window-Manager (e.g. for resizing or moving "
+"Windows)."
+msgstr ""
+
+msgid ""
+"Next if an embedded Window is focused, the event is sent to that Window and "
+"processed in the Windows Viewport and afterwards treated as handled. If no "
+"embedded Window is focused, the event is sent to the nodes of the current "
+"viewport in the following order."
+msgstr ""
+
+#, fuzzy
 msgid ""
 "First of all, the standard :ref:`Node._input() <class_Node_method__input>` "
 "function will be called in any node that overrides it (and hasn't disabled "
 "input processing with :ref:`Node.set_process_input() "
 "<class_Node_method_set_process_input>`). If any function consumes the event, "
-"it can call :ref:`SceneTree.set_input_as_handled() "
-"<class_SceneTree_method_set_input_as_handled>`, and the event will not "
-"spread any more. This ensures that you can filter all events of interest, "
-"even before the GUI. For gameplay input, :ref:`Node._unhandled_input() "
+"it can call :ref:`Viewport.set_input_as_handled() "
+"<class_Viewport_method_set_input_as_handled>`, and the event will not spread "
+"any more. This ensures that you can filter all events of interest, even "
+"before the GUI. For gameplay input, :ref:`Node._unhandled_input() "
 "<class_Node_method__unhandled_input>` is generally a better fit, because it "
 "allows the GUI to intercept the events."
 msgstr ""
@@ -147,15 +157,19 @@ msgstr ""
 "ベントを通知されるかどうか、およびこれらのイベントがさらに伝播されるかどうか"
 "を制御します。"
 
+#, fuzzy
 msgid ""
-"If so far no one consumed the event, the unhandled input callback will be "
-"called if overridden (and not disabled with :ref:`Node."
-"set_process_unhandled_input() "
-"<class_Node_method_set_process_unhandled_input>`). If any function consumes "
-"the event, it can call :ref:`SceneTree.set_input_as_handled() "
-"<class_SceneTree_method_set_input_as_handled>`, and the event will not "
-"spread any more. The unhandled input callback is ideal for full-screen "
-"gameplay events, so they are not received when a GUI is active."
+"If so far no one consumed the event, the :ref:`Node._shortcut_input() "
+"<class_Node_method__shortcut_input>` callback will be called if overridden "
+"(and not disabled with :ref:`Node.set_process_shortcut_input() "
+"<class_Node_method_set_process_shortcut_input>`). This happens only for :ref:"
+"`InputEventKey <class_InputEventKey>`, :ref:`InputEventShortcut "
+"<class_InputEventShortcut>` and :ref:`InputEventJoypadButton "
+"<class_InputEventJoypadButton>`. If any function consumes the event, it can "
+"call :ref:`Viewport.set_input_as_handled() "
+"<class_Viewport_method_set_input_as_handled>`, and the event will not spread "
+"any more. The shortcut input callback is ideal for treating events that are "
+"intended as shortcuts."
 msgstr ""
 "これまでに誰もイベントを消費しなかった場合、未処理入力コールバックがオーバー"
 "ライドされていれば、それが呼び出されます(そして 、\\ :ref:`Node."
@@ -168,16 +182,61 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"If no one wanted the event so far, and a :ref:`Camera <class_Camera>` is "
-"assigned to the Viewport with :ref:`Object Picking "
-"<class_viewport_property_physics_object_picking>` turned on, a ray to the "
-"physics world (in the ray direction from the click) will be cast. (For the "
-"root viewport, this can also be enabled in :ref:`Project Settings "
-"<class_ProjectSettings_property_physics/common/enable_object_picking>`) If "
-"this ray hits an object, it will call the :ref:`CollisionObject."
-"_input_event() <class_CollisionObject_method__input_event>` function in the "
-"relevant physics object (bodies receive this callback by default, but areas "
-"do not. This can be configured through :ref:`Area <class_Area>` properties)."
+"If so far no one consumed the event, the :ref:`Node._unhandled_key_input() "
+"<class_Node_method__unhandled_key_input>` callback will be called if "
+"overridden (and not disabled with :ref:`Node."
+"set_process_unhandled_key_input() "
+"<class_Node_method_set_process_unhandled_key_input>`). This happens only if "
+"the event is a :ref:`InputEventKey <class_InputEventKey>`. If any function "
+"consumes the event, it can call :ref:`Viewport.set_input_as_handled() "
+"<class_Viewport_method_set_input_as_handled>`, and the event will not spread "
+"any more. The unhandled key input callback is ideal for key events."
+msgstr ""
+"これまでに誰もイベントを消費しなかった場合、未処理入力コールバックがオーバー"
+"ライドされていれば、それが呼び出されます(そして 、\\ :ref:`Node."
+"set_process_unhandled_input() "
+"<class_Node_method_set_process_unhandled_input>` で無効化していないなら)。関"
+"数がイベントを消費する場合、\\ :ref:`SceneTree.set_input_as_handled() "
+"<class_SceneTree_method_set_input_as_handled>` を呼び出すことができ、イベント"
+"はそれ以上拡散しません。未処理入力コールバックは、フルスクリーンのゲームプレ"
+"イイベントに最適であるため、GUIがアクティブな場合は受信されません。"
+
+#, fuzzy
+msgid ""
+"If so far no one consumed the event, the :ref:`Node._unhandled_input() "
+"<class_Node_method__unhandled_input>` callback will be called if overridden "
+"(and not disabled with :ref:`Node.set_process_unhandled_input() "
+"<class_Node_method_set_process_unhandled_input>`). If any function consumes "
+"the event, it can call :ref:`Viewport.set_input_as_handled() "
+"<class_Viewport_method_set_input_as_handled>`, and the event will not spread "
+"any more. The unhandled input callback is ideal for full-screen gameplay "
+"events, so they are not received when a GUI is active."
+msgstr ""
+"これまでに誰もイベントを消費しなかった場合、未処理入力コールバックがオーバー"
+"ライドされていれば、それが呼び出されます(そして 、\\ :ref:`Node."
+"set_process_unhandled_input() "
+"<class_Node_method_set_process_unhandled_input>` で無効化していないなら)。関"
+"数がイベントを消費する場合、\\ :ref:`SceneTree.set_input_as_handled() "
+"<class_SceneTree_method_set_input_as_handled>` を呼び出すことができ、イベント"
+"はそれ以上拡散しません。未処理入力コールバックは、フルスクリーンのゲームプレ"
+"イイベントに最適であるため、GUIがアクティブな場合は受信されません。"
+
+#, fuzzy
+msgid ""
+"If no one wanted the event so far, and :ref:`Object Picking "
+"<class_viewport_property_physics_object_picking>` is turned on, the event is "
+"used for object picking. For the root viewport, this can also be enabled in :"
+"ref:`Project Settings <class_ProjectSettings_property_physics/common/"
+"enable_object_picking>`. In the case of a 3D scene if a :ref:`Camera3D "
+"<class_Camera3D>` is assigned to the Viewport, a ray to the physics world "
+"(in the ray direction from the click) will be cast. If this ray hits an "
+"object, it will call the :ref:`CollisionObject3D._input_event() "
+"<class_CollisionObject3D_method__input_event>` function in the relevant "
+"physics object (bodies receive this callback by default, but areas do not. "
+"This can be configured through :ref:`Area3D <class_Area3D>` properties). In "
+"the case of a 2D scene, conceptually the same happens with :ref:"
+"`CollisionObject2D._input_event() "
+"<class_CollisionObject2D_method__input_event>`."
 msgstr ""
 "これまで誰もイベントを望んでおらず :ref:`Camera <class_Camera>` がビューポー"
 "トに割り当てられている場合、物理処理を行う世界への光線(光線の方向はクリックし"
@@ -188,21 +247,40 @@ msgstr ""
 "ref:`Area <class_Area>` プロパティで設定できます)。(訳注: 要するに画面内のオ"
 "ブジェクトにタッチできるという話です)。"
 
+#, fuzzy
 msgid ""
-"Finally, if the event was unhandled, it will be passed to the next Viewport "
-"in the tree, otherwise it will be ignored."
-msgstr ""
-"最後に、イベントが処理されなかった場合、ツリー内の次のビューポートに渡されま"
-"す。それ以外の場合は無視されます。"
-
-msgid ""
-"When sending events to all listening nodes within a scene, the viewport will "
-"do so in a reverse depth-first order: Starting with the node at the bottom "
-"of the scene tree, and ending at the root node:"
+"When sending events to its child and descendant nodes, the viewport will do "
+"so, as depicted in the following graphic, in a reverse depth-first order, "
+"starting with the node at the bottom of the scene tree, and ending at the "
+"root node. Excluded from this process are Windows and SubViewports."
 msgstr ""
 "シーン内のすべてのリスニングノードにイベントを送信する場合、ビューポートは逆"
 "の深さ優先順で送信します。シーンツリーの一番下のノードから始まり、ルートノー"
 "ドで終わります:"
+
+#, fuzzy
+msgid ""
+"This order doesn't apply to :ref:`Control._gui_input() "
+"<class_Control_method__gui_input>`, which uses a different method based on "
+"event location or focused Control."
+msgstr ""
+"この関数は\\ :ref:`Control._gui_input() <class_Control_method__gui_input>` で"
+"す。コントロールで単にオーバーライドします。処理を設定する必要はありません。"
+
+msgid ""
+"Since Viewports don't send events to other :ref:`SubViewports "
+"<class_SubViewport>`, one of the following methods has to be used:"
+msgstr ""
+
+msgid ""
+"Use a :ref:`SubViewportContainer <class_SubViewportContainer>`, which "
+"automatically sends events to its child :ref:`SubViewports "
+"<class_SubViewport>` after :ref:`Node._input() <class_Node_method__input>` "
+"or :ref:`Control._gui_input() <class_Control_method__gui_input>`."
+msgstr ""
+
+msgid "Implement event propagation based on the individual requirements."
+msgstr ""
 
 msgid ""
 "GUI events also travel up the scene tree but, since these events target "
@@ -244,17 +322,11 @@ msgstr "InputEventにはいくつかの特殊なタイプがあり、次の表�
 msgid "Event"
 msgstr "イベント"
 
-msgid "Type Index"
-msgstr "型インデックス"
-
 msgid "Description"
 msgstr "説明"
 
 msgid ":ref:`InputEvent <class_InputEvent>`"
 msgstr "\\ :ref:`InputEvent <class_InputEvent>`"
-
-msgid "NONE"
-msgstr "\\ NONE"
 
 msgid "Empty Input Event."
 msgstr "空の入力イベント。"
@@ -262,11 +334,8 @@ msgstr "空の入力イベント。"
 msgid ":ref:`InputEventKey <class_InputEventKey>`"
 msgstr "\\ :ref:`InputEventKey <class_InputEventKey>`"
 
-msgid "KEY"
-msgstr "\\ KEY"
-
 #, fuzzy
-msgid "Contains a scancode and Unicode value, as well as modifiers."
+msgid "Contains a keycode and Unicode value, as well as modifiers."
 msgstr ""
 "スキャンコードとユニコードの値、および(Ctrl、Shiftなどの)モディファイヤが含ま"
 "れています。"
@@ -274,27 +343,20 @@ msgstr ""
 msgid ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 msgstr "\\ :ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 
-msgid "MOUSE_BUTTON"
-msgstr "\\ MOUSE_BUTTON"
-
 msgid "Contains click information, such as button, modifiers, etc."
 msgstr "ボタン、モディファイヤなどのクリック情報が含まれます。"
 
 msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 msgstr "\\ :ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 
-msgid "MOUSE_MOTION"
-msgstr "\\ MOUSE_MOTION"
-
+#, fuzzy
 msgid ""
-"Contains motion information, such as relative, absolute positions and speed."
+"Contains motion information, such as relative and absolute positions and "
+"speed."
 msgstr "相対位置、絶対位置、速度などのモーション情報が含まれます。"
 
 msgid ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 msgstr "\\ :ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
-
-msgid "JOYSTICK_MOTION"
-msgstr "\\ JOYSTICK_MOTION"
 
 msgid "Contains Joystick/Joypad analog axis information."
 msgstr "ジョイスティック/ジョイパッドのアナログ軸情報が含まれています。"
@@ -302,17 +364,11 @@ msgstr "ジョイスティック/ジョイパッドのアナログ軸情報が�
 msgid ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 msgstr "\\ :ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 
-msgid "JOYSTICK_BUTTON"
-msgstr "\\ JOYSTICK_BUTTON"
-
 msgid "Contains Joystick/Joypad button information."
 msgstr "ジョイスティック/ジョイパッドのボタン情報が含まれます。"
 
 msgid ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
 msgstr "\\ :ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
-
-msgid "SCREEN_TOUCH"
-msgstr "\\ SCREEN_TOUCH"
 
 msgid ""
 "Contains multi-touch press/release information. (only available on mobile "
@@ -324,19 +380,49 @@ msgstr ""
 msgid ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 msgstr "\\ :ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 
-msgid "SCREEN_DRAG"
-msgstr "\\ SCREEN_DRAG"
-
 msgid ""
 "Contains multi-touch drag information. (only available on mobile devices)"
 msgstr ""
 "マルチタッチドラッグ情報が含まれています。(モバイルデバイスでのみ使用可能)"
 
+#, fuzzy
+msgid ":ref:`InputEventMagnifyGesture <class_InputEventMagnifyGesture>`"
+msgstr "\\ :ref:`InputEvent <class_InputEvent>`"
+
+#, fuzzy
+msgid "Contains a position, a factor as well as modifiers."
+msgstr ""
+"スキャンコードとユニコードの値、および(Ctrl、Shiftなどの)モディファイヤが含ま"
+"れています。"
+
+#, fuzzy
+msgid ":ref:`InputEventPanGesture <class_InputEventPanGesture>`"
+msgstr "\\ :ref:`InputEvent <class_InputEvent>`"
+
+#, fuzzy
+msgid "Contains a position, a delta as well as modifiers."
+msgstr ""
+"スキャンコードとユニコードの値、および(Ctrl、Shiftなどの)モディファイヤが含ま"
+"れています。"
+
+#, fuzzy
+msgid ":ref:`InputEventMIDI <class_InputEventMIDI>`"
+msgstr "\\ :ref:`InputEvent <class_InputEvent>`"
+
+#, fuzzy
+msgid "Contains MIDI-related information."
+msgstr "ジョイスティック/ジョイパッドのボタン情報が含まれます。"
+
+#, fuzzy
+msgid ":ref:`InputEventShortcut <class_InputEventShortcut>`"
+msgstr "\\ :ref:`InputEvent <class_InputEvent>`"
+
+#, fuzzy
+msgid "Contains a shortcut."
+msgstr "コンテナのレイアウト"
+
 msgid ":ref:`InputEventAction <class_InputEventAction>`"
 msgstr "\\ :ref:`InputEventAction <class_InputEventAction>`"
-
-msgid "SCREEN_ACTION"
-msgstr "\\ SCREEN_ACTION"
 
 msgid ""
 "Contains a generic action. These events are often generated by the "
@@ -349,13 +435,16 @@ msgid "Actions"
 msgstr "アクション"
 
 msgid ""
-"An InputEvent may or may not represent a pre-defined action. Actions are "
-"useful because they abstract the input device when programming the game "
-"logic. This allows for:"
+"Actions are a grouping of zero or more InputEvents into a commonly "
+"understood title (for example, the default \"ui_left\" action grouping both "
+"joypad-left input and a keyboard's left arrow key). They are not required to "
+"represent an InputEvent but are useful because they abstract various inputs "
+"when programming the game logic."
 msgstr ""
-"InputEventは、事前定義されたアクションを表す場合と表さない場合があります。ア"
-"クションは、ゲームロジックをプログラミングするときに入力デバイスを抽象化する"
-"ので便利です。次の機能が可能になります:"
+
+#, fuzzy
+msgid "This allows for:"
+msgstr "このアプローチにはいくつかの利点があります:"
 
 msgid ""
 "The same code to work on different devices with different inputs (e.g., "
@@ -367,8 +456,14 @@ msgstr ""
 msgid "Input to be reconfigured at run-time."
 msgstr "実行時に再構成される入力。"
 
+#, fuzzy
+msgid "Actions to be triggered programmatically at run-time."
+msgstr "実行時に再構成される入力。"
+
+#, fuzzy
 msgid ""
-"Actions can be created from the Project Settings menu in the Actions tab."
+"Actions can be created from the Project Settings menu in the **Input Map** "
+"tab and assigned input events."
 msgstr ""
 "アクションは、[プロジェクト設定]メニューの[アクション]タブから作成できます。"
 

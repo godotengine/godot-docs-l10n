@@ -1,0 +1,364 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Shader preprocessor"
+msgstr "Вершинный процессор"
+
+msgid "Why use a shader preprocessor?"
+msgstr ""
+
+msgid ""
+"In programming languages, a *preprocessor* allows changing the code before "
+"the compiler reads it. Unlike the compiler, the preprocessor does not care "
+"about whether the syntax of the preprocessed code is valid. The preprocessor "
+"always performs what the *directives* tell it to do. A directive is a "
+"statement starting with a hash symbol (``#``). It is not a *keyword* of the "
+"shader language (such as ``if`` or ``for``), but a special kind of token "
+"within the language."
+msgstr ""
+
+msgid ""
+"From Godot 4.0 onwards, you can use a shader preprocessor within text-based "
+"shaders. The syntax is similar to what most GLSL shader compilers support "
+"(which in turn is similar to the C/C++ preprocessor)."
+msgstr ""
+
+msgid ""
+"The shader preprocessor is not available in :ref:`visual shaders "
+"<doc_visual_shaders>`. If you need to introduce preprocessor statements to a "
+"visual shader, you can convert it to a text-based shader using the **Convert "
+"to Shader** option in the VisualShader inspector resource dropdown. This "
+"conversion is a one-way operation; text shaders cannot be converted back to "
+"visual shaders."
+msgstr ""
+
+#, fuzzy
+msgid "Directives"
+msgstr "Направление"
+
+#, fuzzy
+msgid "General syntax"
+msgstr "Общее определение"
+
+msgid ""
+"Preprocessor directives do not use brackets (``{}``), but can use "
+"parentheses."
+msgstr ""
+
+msgid ""
+"Preprocessor directives **never** end with semicolons (with the exception of "
+"``#define``, where this is allowed but potentially dangerous)."
+msgstr ""
+
+msgid ""
+"Preprocessor directives can span several lines by ending each line with a "
+"backslash (``\\``). The first line break *not* featuring a backslash will "
+"end the preprocessor statement."
+msgstr ""
+
+msgid "#define"
+msgstr ""
+
+msgid "**Syntax:** ``#define <identifier> [replacement_code]``."
+msgstr ""
+
+msgid ""
+"Defines the identifier after that directive as a macro, and replaces all "
+"successive occurrences of it with the replacement code given in the shader. "
+"Replacement is performed on a \"whole words\" basis, which means no "
+"replacement is performed if the string is part of another string (without "
+"any spaces separating it)."
+msgstr ""
+
+msgid ""
+"Defines with replacements may also have one or more *arguments*, which can "
+"then be passed when referencing the define (similar to a function call)."
+msgstr ""
+
+msgid ""
+"If the replacement code is not defined, the identifier may only be used with "
+"``#ifdef`` or ``#ifndef`` directives."
+msgstr ""
+
+msgid ""
+"Compared to constants (``const CONSTANT = value;``), ``#define`` can be used "
+"anywhere within the shader (including in uniform hints). ``#define`` can "
+"also be used to insert arbitrary shader code at any location, while "
+"constants can't do that."
+msgstr ""
+
+msgid ""
+"Defining a ``#define`` for an identifier that is already defined results in "
+"an error. To prevent this, use ``#undef <identifier>``."
+msgstr ""
+
+msgid "#undef"
+msgstr ""
+
+msgid "**Syntax:** ``#undef identifier``"
+msgstr ""
+
+msgid ""
+"The ``#undef`` directive may be used to cancel a previously defined "
+"``#define`` directive:"
+msgstr ""
+
+msgid ""
+"Without ``#undef`` in the above example, there would be a macro redefinition "
+"error."
+msgstr ""
+
+#, fuzzy
+msgid "#if"
+msgstr "if"
+
+msgid "**Syntax:** ``#if <condition>``"
+msgstr ""
+
+msgid ""
+"The ``#if`` directive checks whether the ``condition`` passed. If it "
+"evaluates to a non-zero value, the code block is included, otherwise it is "
+"skipped."
+msgstr ""
+
+msgid ""
+"To evaluate correctly, the condition must be an expression giving a simple "
+"floating-point, integer or boolean result. There may be multiple condition "
+"blocks connected by ``&&`` (AND) or ``||`` (OR) operators. It may be "
+"continued by a ``#else`` block, but **must** be ended with the ``#endif`` "
+"directive."
+msgstr ""
+
+msgid ""
+"Using the ``defined()`` *preprocessor function*, you can check whether the "
+"passed identifier is defined a by ``#define`` placed above that directive. "
+"This is useful for creating multiple shader versions in the same file. It "
+"may be continued by a ``#else`` block, but must be ended with the ``#endif`` "
+"directive."
+msgstr ""
+
+msgid ""
+"The ``defined()`` function's result can be negated by using the ``!`` "
+"(boolean NOT) symbol in front of it. This can be used to check whether a "
+"define is *not* set."
+msgstr ""
+
+msgid ""
+"Be careful, as ``defined()`` must only wrap a single identifier within "
+"parentheses, never more:"
+msgstr ""
+
+msgid ""
+"In the shader editor, preprocessor branches that evaluate to ``false`` (and "
+"are therefore excluded from the final compiled shader) will appear grayed "
+"out. This does not apply to run-time ``if`` statements."
+msgstr ""
+
+msgid "**#if preprocessor versus if statement: Performance caveats**"
+msgstr ""
+
+msgid ""
+"The :ref:`shading language <doc_shading_language>` supports run-time ``if`` "
+"statements:"
+msgstr ""
+
+msgid ""
+"If the uniform is never changed, this behaves identical to the following "
+"usage of the ``#if`` preprocessor statement:"
+msgstr ""
+
+msgid ""
+"However, the ``#if`` variant can be faster in certain scenarios. This is "
+"because all run-time branches in a shader are still compiled and variables "
+"within those branches may still take up register space, even if they are "
+"never run in practice."
+msgstr ""
+
+msgid ""
+"Modern GPUs are `quite effective <https://medium.com/@jasonbooth_86226/"
+"branching-on-a-gpu-18bfc83694f2>`__ at performing \"static\" branching. "
+"\"Static\" branching refers to ``if`` statements where *all* pixels/vertices "
+"evaluate to the same result in a given shader invocation. However, high "
+"amounts of :abbr:`VGPRs (Vector General-Purpose Register)` (which can be "
+"caused by having too many branches) can still slow down shader execution "
+"significantly."
+msgstr ""
+
+#, fuzzy
+msgid "#elif"
+msgstr "еlif"
+
+msgid ""
+"The ``#elif`` directive stands for \"else if\" and checks the condition "
+"passed if the above ``#if`` evaluated to ``false``. ``#elif`` can only be "
+"used within an ``#if`` block. It is possible to use several ``#elif`` "
+"statements after an ``#if`` statement."
+msgstr ""
+
+msgid "Like with ``#if``, the ``defined()`` preprocessor function can be used:"
+msgstr ""
+
+msgid "#ifdef"
+msgstr ""
+
+msgid "**Syntax:** ``#ifdef <identifier>``"
+msgstr ""
+
+msgid ""
+"This is a shorthand for ``#if defined(...)``. Checks whether the passed "
+"identifier is defined by ``#define`` placed above that directive. This is "
+"useful for creating multiple shader versions in the same file. It may be "
+"continued by a ``#else`` block, but must be ended with the ``#endif`` "
+"directive."
+msgstr ""
+
+msgid ""
+"The processor does *not* support ``#elifdef`` as a shortcut for ``#elif "
+"defined(...)``. Instead, use the following series of ``#ifdef`` and "
+"``#else`` when you need more than two branches:"
+msgstr ""
+
+msgid "#ifndef"
+msgstr ""
+
+msgid "**Syntax:** ``#ifndef <identifier>``"
+msgstr ""
+
+msgid ""
+"This is a shorthand for ``#if !defined(...)``. Similar to ``#ifdef``, but "
+"checks whether the passed identifier is **not** defined by ``#define`` "
+"before that directive."
+msgstr ""
+
+msgid ""
+"This is the exact opposite of ``#ifdef``; it will always match in situations "
+"where ``#ifdef`` would never match, and vice versa."
+msgstr ""
+
+#, fuzzy
+msgid "#else"
+msgstr "elsе"
+
+msgid "**Syntax:** ``#else``"
+msgstr ""
+
+msgid ""
+"Defines the optional block which is included when the previously defined "
+"``#if``, ``#elif``, ``#ifdef`` or ``#ifndef`` directive evaluates to false."
+msgstr ""
+
+msgid "#endif"
+msgstr ""
+
+msgid "**Syntax:** ``#endif``"
+msgstr ""
+
+msgid ""
+"Used as terminator for the ``#if``, ``#ifdef``, ``#ifndef`` or subsequent "
+"``#else`` directives."
+msgstr ""
+
+msgid "#include"
+msgstr ""
+
+msgid "**Syntax:** ``#include \"path\"``"
+msgstr ""
+
+msgid ""
+"The ``#include`` directive includes the *entire* content of a shader include "
+"file in a shader. ``\"path\"`` can be an absolute ``res://`` path or "
+"relative to the current shader file. Relative paths are only allowed in "
+"shaders that are saved to ``.gdshader`` or ``.gdshaderinc`` files, while "
+"absolute paths can be used in shaders that are built into a scene/resource "
+"file."
+msgstr ""
+
+msgid ""
+"You can create new shader includes by using the **File > Create Shader "
+"Include** menu option of the shader editor, or by creating a new :ref:"
+"`ShaderInclude<class_ShaderInclude>` resource in the FileSystem dock."
+msgstr ""
+
+msgid ""
+"Shader includes can be included from within any shader, or other shader "
+"include, at any point in the file."
+msgstr ""
+
+msgid ""
+"When including shader includes in the global scope of a shader, it is "
+"recommended to do this after the initial ``shader_type`` statement."
+msgstr ""
+
+msgid ""
+"You can also include shader includes from within the body a function. Please "
+"note that the shader editor is likely going to report errors for your shader "
+"include's code, as it may not be valid outside of the context that it was "
+"written for. You can either choose to ignore these errors (the shader will "
+"still compile fine), or you can wrap the include in an ``#ifdef`` block that "
+"checks for a define from your shader."
+msgstr ""
+
+msgid ""
+"``#include`` is useful for creating libraries of helper functions (or "
+"macros) and reducing code duplication. When using ``#include``, be careful "
+"about naming collisions, as redefining functions or macros is not allowed."
+msgstr ""
+
+msgid "``#include`` is subject to several restrictions:"
+msgstr ""
+
+msgid ""
+"Only shader include resources (ending with ``.gdshaderinc``) can be "
+"included. ``.gdshader`` files cannot be included by another shader, but a ``."
+"gdshaderinc`` file can include other ``.gdshaderinc`` files."
+msgstr ""
+
+msgid "Cyclic dependencies are **not** allowed and will result in an error."
+msgstr ""
+
+msgid "To avoid infinite recursion, include depth is limited to 25 steps."
+msgstr ""
+
+#, fuzzy
+msgid "Example shader include file:"
+msgstr "Примеры этого включают..."
+
+msgid "Example base shader (using the include file we created above):"
+msgstr ""
+
+msgid "#pragma"
+msgstr ""
+
+msgid "**Syntax:** ``#pragma value``"
+msgstr ""
+
+msgid ""
+"The ``#pragma`` directive provides additional information to the "
+"preprocessor or compiler."
+msgstr ""
+
+msgid ""
+"Currently, it may have only one value: ``disable_preprocessor``. If you "
+"don't need the preprocessor, use that directive to speed up shader "
+"compilation by excluding the preprocessor step."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Translation status (статус перевода)"

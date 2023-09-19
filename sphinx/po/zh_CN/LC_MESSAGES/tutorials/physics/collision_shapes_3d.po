@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,12 @@ msgid ""
 "and accuracy tradeoffs."
 msgstr "Godot提供多种碰撞形状, 具有不同的性能和精度权衡."
 
+#, fuzzy
 msgid ""
-"You can define the shape of a :ref:`class_PhysicsBody` by adding one or "
-"more :ref:`CollisionShapes <class_CollisionShape>` as child nodes. Note that "
-"you must add a :ref:`class_Shape` *resource* to collision shape nodes in the "
-"Inspector dock."
+"You can define the shape of a :ref:`class_PhysicsBody3D` by adding one or "
+"more :ref:`CollisionShape3Ds <class_CollisionShape3D>` as child nodes. Note "
+"that you must add a :ref:`class_Shape3D` *resource* to collision shape nodes "
+"in the Inspector dock."
 msgstr ""
 "您可以通过添加一个或多个 :ref:`class_PhysicsBody` 作为子节点来定义 :ref:"
 "`CollisionShapes <class_CollisionShape>` 的形状。请注意，你必须在检查器面板中"
@@ -60,16 +61,20 @@ msgstr "基本碰撞形状"
 msgid "Godot provides the following primitive collision shape types:"
 msgstr "Godot提供了以下基本碰撞形状类型:"
 
-msgid ":ref:`class_BoxShape`"
+#, fuzzy
+msgid ":ref:`class_BoxShape3D`"
 msgstr ":ref:`class_BoxShape`"
 
-msgid ":ref:`class_SphereShape`"
+#, fuzzy
+msgid ":ref:`class_SphereShape3D`"
 msgstr ":ref:`class_SphereShape`"
 
-msgid ":ref:`class_CapsuleShape`"
+#, fuzzy
+msgid ":ref:`class_CapsuleShape3D`"
 msgstr ":ref:`class_CapsuleShape`"
 
-msgid ":ref:`class_CylinderShape`"
+#, fuzzy
+msgid ":ref:`class_CylinderShape3D`"
 msgstr ":ref:`class_CylinderShape`"
 
 msgid ""
@@ -92,8 +97,9 @@ msgstr ""
 msgid "Convex collision shapes"
 msgstr "凸型碰撞形状"
 
+#, fuzzy
 msgid ""
-":ref:`Convex collision shapes <class_ConvexPolygonShape>` are a compromise "
+":ref:`Convex collision shapes <class_ConvexPolygonShape3D>` are a compromise "
 "between primitive collision shapes and concave collision shapes. They can "
 "represent shapes of any complexity, but with an important caveat. As their "
 "name implies, an individual shape can only represent a *convex* shape. For "
@@ -119,9 +125,10 @@ msgstr ""
 "量的凸形之后, 就没有了这种性能优势, 对于大而复杂的对象, 如整个关卡, 建议使用"
 "凹形代替."
 
+#, fuzzy
 msgid ""
 "You can generate one or several convex collision shapes from the editor by "
-"selecting a MeshInstance and using the **Mesh** menu at the top of the 3D "
+"selecting a MeshInstance3D and using the **Mesh** menu at the top of the 3D "
 "viewport. The editor exposes two generation modes:"
 msgstr ""
 "您可以通过选择一个网格实例, 并使用3D视图顶部的 **网格** 菜单从编辑器中生成一"
@@ -151,8 +158,9 @@ msgstr ""
 msgid "Concave or trimesh collision shapes"
 msgstr "凹面或三面体碰撞形状"
 
+#, fuzzy
 msgid ""
-":ref:`Concave collision shapes <class_ConcavePolygonShape>`, also called "
+":ref:`Concave collision shapes <class_ConcavePolygonShape3D>`, also called "
 "trimesh collision shapes, can take any form, from a few triangles to "
 "thousands of triangles. Concave shapes are the slowest option but are also "
 "the most accurate in Godot. **You can only use concave shapes within "
@@ -189,10 +197,11 @@ msgstr ""
 "请注意, 与基础形状和凸形状不同, 凹形碰撞形状没有实际的 \"体积\", 既可以将对象"
 "放置在形状的 *外侧*, 也可以放置在 *内侧*."
 
+#, fuzzy
 msgid ""
 "You can generate a concave collision shape from the editor by selecting a "
-"MeshInstance and using the **Mesh** menu at the top of the 3D viewport. The "
-"editor exposes two options:"
+"MeshInstance3D and using the **Mesh** menu at the top of the 3D viewport. "
+"The editor exposes two options:"
 msgstr ""
 "选中一个网格实例，然后使用 3D 视口顶部的\\ **网格**\\ 菜单就可以在编辑器中生"
 "成一个凹形碰撞形状。编辑器提供了两个选项："
@@ -232,12 +241,9 @@ msgstr ""
 "转. 这样,RigidBody(刚体)应该在StaticBody(静态物体)上完美地滑动."
 
 msgid ""
-"Godot can generate collision shapes for your imported 3D scenes "
-"automatically. See :ref:`doc_importing_scenes_import_hints` in the "
-"documentation for more information."
+"See :ref:`doc_importing_3d_scenes` for information on how to export models "
+"for Godot and automatically generate collision shapes on import."
 msgstr ""
-"Godot可以为导入的3D场景自动生成碰撞形状. 请参阅文档中的 :ref:"
-"`doc_importing_scenes_import_hints`."
 
 msgid "Performance caveats"
 msgstr "性能方面的注意事项"

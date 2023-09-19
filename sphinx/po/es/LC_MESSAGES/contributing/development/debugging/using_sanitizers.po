@@ -1,0 +1,256 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Using sanitizers"
+msgstr "Usando Containers"
+
+#, fuzzy
+msgid "What are sanitizers?"
+msgstr "¿Qué son las licencias?"
+
+msgid ""
+"Sanitizers are static instrumentation tools that help find bugs that "
+"traditional debuggers usually cannot catch. This is particularly useful when "
+"combined with :ref:`doc_unit_testing` in continuous integration."
+msgstr ""
+
+msgid ""
+"Sanitizers can be used on Windows, macOS and Linux by using the Clang "
+"(LLVM), GCC or Visual Studio compilers. :ref:`Certain platforms "
+"<doc_using_sanitizers_platform_specific_sanitizers>` may also have their own "
+"sanitizers available. In situations where a single sanitizer is provided by "
+"several different compilers, remember that their output and behavior will "
+"differ slightly."
+msgstr ""
+
+#, fuzzy
+msgid "Using sanitizers on Godot"
+msgstr "Usando WebRTC en Godot"
+
+msgid ""
+"Sanitizers **require** recompiling the binary. This means you cannot use "
+"official Godot binaries to run sanitizers."
+msgstr ""
+
+msgid ""
+"When :ref:`compiling <toc-devel-compiling>` with any of the sanitizers "
+"enabled, the resulting binary will have the ``.san`` suffix added to its "
+"name to distinguish it from a binary without sanitizers."
+msgstr ""
+
+msgid ""
+"There is a performance impact as many additional runtime checks need to be "
+"performed. Memory utilization will also increase. It is possible to enable "
+"certain combinations of multiple sanitizers in a single build. Beware of the "
+"performance impact when using multiple sanitizers at once though, as the "
+"resulting binary may be excessively slow."
+msgstr ""
+
+msgid ""
+"Certain options can be passed to sanitizers without having to recompile the "
+"binary using environment variables."
+msgstr ""
+
+msgid "Address sanitizer (ASAN)"
+msgstr ""
+
+#, fuzzy
+msgid "Available in Clang and GCC."
+msgstr "Lenguajes de scripting disponibles"
+
+msgid "**Supported platforms:** Linux, macOS, Windows (Visual Studio), Web"
+msgstr ""
+
+msgid ""
+"`Clang ASAN documentation <https://clang.llvm.org/docs/AddressSanitizer."
+"html>`__"
+msgstr ""
+
+msgid ""
+"The address sanitizer is generally the most frequently used sanitizer. It "
+"can diagnose issues such as buffer overruns and out-of-bounds access. If the "
+"engine crashes with a message such as ``free(): invalid pointer``, this is "
+"typically the result of a buffer overrun. (This message is printed by the C "
+"runtime, not Godot.)"
+msgstr ""
+
+msgid ""
+"In certain situations (such as detecting uninitialized memory reads), the "
+"address sanitizer doesn't suffice. The :ref:"
+"`doc_using_sanitizers_memory_sanitizer` should be used instead."
+msgstr ""
+
+msgid ""
+"It is also possible to detect use-after-return situations by specifying the "
+"``ASAN_OPTIONS=detect_stack_use_after_return=1`` environment variable before "
+"*running* Godot (not when compiling it). This increases the address "
+"sanitizer's runtime overhead, so only enable this feature when you actually "
+"need it."
+msgstr ""
+
+msgid ""
+"To enable the address sanitizer in a Godot build, pass the ``use_asan=yes`` "
+"SCons option when compiling. Enabling ASAN generally makes the resulting "
+"binary about 2× slower."
+msgstr ""
+
+msgid ""
+"Due to a `design decision <https://stackoverflow.com/questions/36971902/why-"
+"cant-clang-enable-all-sanitizers/>`__, the address, memory and thread "
+"sanitizers are mutually exclusive. This means you can only use one of those "
+"sanitizers in a given binary."
+msgstr ""
+
+msgid "Leak sanitizer (LSAN)"
+msgstr ""
+
+#, fuzzy
+msgid "**Supported platforms:** Linux, Web"
+msgstr "Plataformas compatibles"
+
+msgid ""
+"`Clang LSAN documentation <https://clang.llvm.org/docs/LeakSanitizer.html>`__"
+msgstr ""
+
+msgid ""
+"The leak sanitizer can detect memory leaks, which are situations where "
+"memory that is no longer in use is never freed by the running program. This "
+"can potentially lead to out-of-memory situations if the program runs for "
+"long enough. Since Godot may run on :ref:`dedicated servers "
+"<doc_exporting_for_dedicated_servers>` for months or even years without a "
+"restart, it's important to fix memory leaks when they occur."
+msgstr ""
+
+msgid ""
+"To enable the leak sanitizer in a Godot build, pass the ``use_lsan=yes`` "
+"SCons option when compiling. Enabling LSAN only has a small performance "
+"overhead, but the program will be much slower to exit as leak detection "
+"occurs when the program exits."
+msgstr ""
+
+msgid "Memory sanitizer (MSAN)"
+msgstr ""
+
+msgid "Available in Clang only, not GCC."
+msgstr ""
+
+#, fuzzy
+msgid "**Supported platforms:** Linux"
+msgstr "Plataformas compatibles"
+
+msgid ""
+"`Clang MSAN documentation <https://clang.llvm.org/docs/MemorySanitizer."
+"html>`__"
+msgstr ""
+
+msgid ""
+"The memory sanitizer complements the :ref:"
+"`doc_using_sanitizers_address_sanitizer`. Unlike the address sanitizer, the "
+"memory sanitizer can detect uninitialized memory reads."
+msgstr ""
+
+msgid ""
+"To enable the memory sanitizer in a Godot build, pass the ``use_msan=yes`` "
+"SCons option when compiling. Enabling MSAN generally makes the resulting "
+"binary about 3× slower."
+msgstr ""
+
+msgid "Thread sanitizer (TSAN)"
+msgstr ""
+
+#, fuzzy
+msgid "**Supported platforms:** Linux, macOS"
+msgstr "Plataformas compatibles"
+
+msgid ""
+"`Clang TSAN documentation <https://clang.llvm.org/docs/ThreadSanitizer."
+"html>`__"
+msgstr ""
+
+msgid ""
+"The thread sanitizer is used to track down race conditions related to "
+"multithreading. A race condition is when multiple threads try to modify the "
+"same data at the same time. Since thread scheduling can be ordered in any "
+"fashion by the operating system, this leads to incorrect behavior that only "
+"occurs occasionally (and can be difficult to track as a result). To prevent "
+"a race condition, you need to add a lock to ensure only one thread can "
+"access the shared data at a given time."
+msgstr ""
+
+msgid ""
+"To enable the thread sanitizer in a Godot build, pass the ``use_tsan=yes`` "
+"SCons option when compiling. Enabling TSAN generally makes the resulting "
+"binary 10× slower, while also multiplying memory usage by an approximately "
+"8× factor."
+msgstr ""
+
+msgid "Undefined behavior sanitizer (UBSAN)"
+msgstr ""
+
+#, fuzzy
+msgid "**Supported platforms:** Linux, macOS, Web"
+msgstr "Plataformas compatibles"
+
+msgid ""
+"`Clang UBSAN documentation <https://clang.llvm.org/docs/"
+"UndefinedBehaviorSanitizer.html>`__"
+msgstr ""
+
+msgid ""
+"The undefined behavior sanitizer is used to track down situations where the "
+"program exhibits random and unpredictable behavior. This is due to C/C++ "
+"code that is accepted by the compiler, but is not *correct*. Compiling with "
+"a different set of optimizations can also change the observed results of "
+"undefined behavior."
+msgstr ""
+
+msgid ""
+"To enable the undefined behavior sanitizer in a Godot build, pass the "
+"``use_ubsan=yes`` SCons option when compiling. Enabling UBSAN only has a "
+"small performance overhead."
+msgstr ""
+
+#, fuzzy
+msgid "Platform-specific sanitizers"
+msgstr "Específico de plataformas"
+
+msgid "Web"
+msgstr "Web"
+
+msgid ""
+"When :ref:`compiling for the Web <doc_compiling_for_web>`, there are 2 "
+"additional sanitizer SCons options available:"
+msgstr ""
+
+msgid ""
+"``use_assertions=yes`` enables runtime Emscripten assertions, which can "
+"catch various issues."
+msgstr ""
+
+msgid ""
+"``use_safe_heap=yes`` enables `Emscripten's SAFE_HEAP sanitizer <https://"
+"emscripten.org/docs/debugging/Sanitizers.html>`__. It provides similar "
+"functionality to ASAN, but it focuses on issues that are specific to "
+"WebAssembly. ``SAFE_HEAP`` is not guaranteed to be compatible with ASAN and "
+"UBSAN in the same binary, so you may have to build it separately."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Estado de traducción"

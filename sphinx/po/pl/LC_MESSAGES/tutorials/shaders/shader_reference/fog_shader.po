@@ -1,0 +1,174 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Fog shaders"
+msgstr "shadery"
+
+msgid ""
+"Fog shaders are used to define how fog is added (or subtracted) from a scene "
+"in a given area. Fog shaders are always used together with :ref:`FogVolumes "
+"<class_FogVolume>` and volumetric fog. Fog shaders only have one processing "
+"function, the ``fog()`` function."
+msgstr ""
+
+msgid ""
+"The resolution of the fog shaders depends on the resolution of the "
+"volumetric fog froxel grid. Accordingly, the level of detail that a fog "
+"shader can add depends on how close the :ref:`FogVolume <class_FogVolume>` "
+"is to the camera."
+msgstr ""
+
+msgid ""
+"Fog shaders are a special form of compute shader that is called once for "
+"every froxel that is touched by an axis aligned bounding box of the "
+"associated :ref:`FogVolume <class_FogVolume>`. This means that froxels that "
+"just barely touch a given :ref:`FogVolume <class_FogVolume>` will still be "
+"used."
+msgstr ""
+
+#, fuzzy
+msgid "Built-ins"
+msgstr "Typy wbudowane"
+
+msgid ""
+"Values marked as \"in\" are read-only. Values marked as \"out\" are for "
+"optional writing and will not necessarily contain sensible values. Samplers "
+"cannot be written to so they are not marked."
+msgstr ""
+
+#, fuzzy
+msgid "Global built-ins"
+msgstr "Wbudowane typy wektorowe"
+
+msgid ""
+"Global built-ins are available everywhere, including in custom functions."
+msgstr ""
+
+msgid "Built-in"
+msgstr "Wbudowany"
+
+msgid "Description"
+msgstr "Opis"
+
+msgid "in float **TIME**"
+msgstr ""
+
+msgid "Global time, in seconds."
+msgstr "Czas globalny ,w sekundach."
+
+msgid "in float **PI**"
+msgstr ""
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ratio of a circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr ""
+
+msgid "in float **TAU**"
+msgstr ""
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **E**"
+msgstr "**float**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
+
+#, fuzzy
+msgid "Fog built-ins"
+msgstr "Wbudowane światło"
+
+msgid ""
+"All of the output values of fog volumes overlap one another. This allows :"
+"ref:`FogVolumes <class_FogVolume>` to be rendered efficiently as they can "
+"all be drawn at once."
+msgstr ""
+
+msgid "in vec3 **WORLD_POSITION**"
+msgstr ""
+
+msgid "Position of current froxel cell in world space."
+msgstr ""
+
+msgid "in vec3 **OBJECT_POSITION**"
+msgstr ""
+
+msgid ""
+"Position of the center of the current :ref:`FogVolume <class_FogVolume>` in "
+"world space."
+msgstr ""
+
+msgid "in vec3 **UVW**"
+msgstr ""
+
+msgid ""
+"3-dimensional uv, used to map a 3D texture to the current :ref:`FogVolume "
+"<class_FogVolume>`."
+msgstr ""
+
+msgid "in vec3 **SIZE**"
+msgstr ""
+
+msgid ""
+"Size of the current :ref:`FogVolume <class_FogVolume>` when its :ref:"
+"`shape<class_FogVolume_property_shape>` has a size."
+msgstr ""
+
+msgid "in vec3 **SDF**"
+msgstr ""
+
+msgid ""
+"Signed distance field to the surface of the :ref:`FogVolume "
+"<class_FogVolume>`. Negative if inside volume, positive otherwise."
+msgstr ""
+
+msgid "out vec3 **ALBEDO**"
+msgstr ""
+
+msgid ""
+"Output base color value, interacts with light to produce final color. Only "
+"written to fog volume if used."
+msgstr ""
+
+msgid "out float **DENSITY**"
+msgstr ""
+
+msgid ""
+"Output density value. Can be negative to allow subtracting one volume from "
+"another. Density must be used for fog shader to write anything at all."
+msgstr ""
+
+msgid "out vec3 **EMISSION**"
+msgstr ""
+
+msgid ""
+"Output emission color value, added to color during light pass to produce "
+"final color. Only written to fog volume if used."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Status tłumaczenia"

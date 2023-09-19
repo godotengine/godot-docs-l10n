@@ -1,0 +1,499 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Compiling for Linux, \\*BSD"
+msgstr "X11のコンパイル (Linux、\\*BSD)"
+
+msgid ""
+"This page describes how to compile Linux editor and export template binaries "
+"from source. If you're looking to export your project to Linux instead, "
+"read :ref:`doc_exporting_for_linux`."
+msgstr ""
+
+msgid "Requirements"
+msgstr "必要条件"
+
+msgid ""
+"For compiling under Linux or other Unix variants, the following is required:"
+msgstr ""
+"Linux またはその他の Unix バリアントでコンパイルするには、次のことが必要です:"
+
+msgid "GCC 7+ or Clang 6+."
+msgstr "GCC 7以降 または Clang 6以降。"
+
+#, fuzzy
+msgid "`Python 3.6+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.5 以降 <https://www.python.org/downloads/>`_\\ 。"
+
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
+msgstr ""
+"`3.0以降のSCons <https://scons.org/pages/download.html>`_ ビルドシステム。"
+
+msgid ""
+"If your distribution uses Python 2 by default, or you are using a version of "
+"SCons prior to 3.1.2, you will need to change the version of Python that "
+"SCons uses by changing the shebang (the first line) of the SCons script file "
+"to ``#! /usr/bin/python3``. Use the command ``which scons`` to find the "
+"location of the SCons script file."
+msgstr ""
+
+#, fuzzy
+msgid "pkg-config (used to detect the development libraries listed below)."
+msgstr "pkg-config (以下の依存関係を検出するために使用)。"
+
+#, fuzzy
+msgid "Development libraries:"
+msgstr "ALSA開発用ライブラリ。"
+
+#, fuzzy
+msgid "X11, Xcursor, Xinerama, Xi and XRandR."
+msgstr "X11、Xcursor、Xinerama、XiおよびXRandR開発用ライブラリ。"
+
+msgid "MesaGL."
+msgstr ""
+
+msgid "ALSA."
+msgstr ""
+
+#, fuzzy
+msgid "PulseAudio."
+msgstr "オーディオ"
+
+msgid "*Optional* - libudev (build with ``udev=yes``)."
+msgstr "*任意* - libudev (``udev=yes`` でのビルドに)。"
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr ""
+
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+"Godotにおける基本的なSconsの使い方については、\\ :ref:"
+"`doc_introduction_to_the_buildsystem`\\ を参照してください。"
+
+msgid "Distro-specific one-liners"
+msgstr "ディストリビューション固有のワンライナー"
+
+#, fuzzy
+msgid "Alpine Linux"
+msgstr "\\ **Alpine Linux**"
+
+#, fuzzy
+msgid "Arch Linux"
+msgstr "\\ **Arch Linux**"
+
+#, fuzzy
+msgid "Debian/Ubuntu"
+msgstr "**Debian** / **Ubuntu**"
+
+#, fuzzy
+msgid "Fedora"
+msgstr "**Fedora**"
+
+#, fuzzy
+msgid "FreeBSD"
+msgstr "\\ **FreeBSD**"
+
+#, fuzzy
+msgid "Gentoo"
+msgstr "**Gentoo**"
+
+#, fuzzy
+msgid "Mageia"
+msgstr "\\ **Mageia**"
+
+#, fuzzy
+msgid "OpenBSD"
+msgstr "\\ **OpenBSD**"
+
+#, fuzzy
+msgid "openSUSE"
+msgstr "**openSUSE**"
+
+#, fuzzy
+msgid "NetBSD"
+msgstr "**FreeBSD**"
+
+msgid "For audio support, you can optionally install ``pulseaudio``."
+msgstr ""
+
+#, fuzzy
+msgid "Solus"
+msgstr "\\ **Solus**"
+
+msgid "Compiling"
+msgstr "コンパイル"
+
+msgid ""
+"Start a terminal, go to the root dir of the engine source code and type:"
+msgstr ""
+"ターミナルを起動し、エンジンソースコードのルートディレクトリに移動し、次のよ"
+"うに入力します:"
+
+msgid ""
+"Prior to Godot 4.0, the Linux/\\*BSD target was called ``x11`` instead of "
+"``linuxbsd``. If you are looking to compile Godot 3.x, make sure to use the "
+"`3.x branch of this documentation <https://docs.godotengine.org/en/3.6/"
+"development/compiling/compiling_for_x11.html>`__."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If all goes well, the resulting binary executable will be placed in the "
+"\"bin\" subdirectory. This executable file contains the whole engine and "
+"runs without any dependencies. Executing it will bring up the Project "
+"Manager."
+msgstr ""
+"すべてがうまくいけば、結果として得られるバイナリ実行可能ファイルは「bin」サブ"
+"ディレクトリに配置されます。この実行可能ファイルにはエンジン全体が含まれてお"
+"り、依存関係なしで実行されます。実行すると、プロジェクトマネージャが呼び出さ"
+"れます。"
+
+msgid "If you wish to compile using Clang rather than GCC, use this command:"
+msgstr ""
+"GCCではなくClangを使用してコンパイルする場合は、次のコマンドを使用します:"
+
+msgid ""
+"Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
+"not build."
+msgstr ""
+"Clangを使うことはOpenBSDの要件のようで、そうしないとフォントが作れません。"
+
+#, fuzzy
+msgid ""
+"If you are compiling Godot for production use, then you can make the final "
+"executable smaller and faster by adding the SCons options "
+"``target=template_release production=yes``."
+msgstr ""
+"制作に使うGodotをコンパイルするなら、SConsのオプション "
+"``target=release_debug`` を追加すれば、より小さくて高速な実行ファイルにするこ"
+"とができます。"
+
+#, fuzzy
+msgid ""
+"If you are compiling Godot with GCC, you can make the binary even smaller "
+"and faster by adding the SCons option ``lto=full``. As link-time "
+"optimization is a memory-intensive process, this will require about 7 GB of "
+"available RAM while compiling."
+msgstr ""
+"GCCでGodotをコンパイルしている場合、SConsオプション ``use_lto=yes`` を追加す"
+"ることにより、バイナリをさらに小さく高速化できます。リンク時最適化はメモリを"
+"集中的に使用するプロセスであるため、コンパイルには約3GBの使用可能なRAMが必要"
+"です。"
+
+msgid ""
+"If you want to use separate editor settings for your own Godot builds and "
+"official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
+"by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
+msgstr ""
+
+#, fuzzy
+msgid "Running a headless/server build"
+msgstr "リリースビルドで実行"
+
+msgid ""
+"To run in *headless* mode which provides editor functionality to export "
+"projects in an automated manner, use the normal build::"
+msgstr ""
+
+msgid "And then use the ``--headless`` command line argument::"
+msgstr ""
+
+msgid ""
+"To compile a debug *server* build which can be used with :ref:`remote "
+"debugging tools <doc_command_line_tutorial>`, use::"
+msgstr ""
+
+msgid ""
+"To compile a *server* build which is optimized to run dedicated game "
+"servers, use::"
+msgstr ""
+
+msgid "Building export templates"
+msgstr "エクスポートテンプレートの構築"
+
+msgid ""
+"Linux binaries usually won't run on distributions that are older than the "
+"distribution they were built on. If you wish to distribute binaries that "
+"work on most distributions, you should build them on an old distribution "
+"such as Ubuntu 16.04. You can use a virtual machine or a container to set up "
+"a suitable build environment."
+msgstr ""
+"Linuxのバイナリは通常、ビルドしたディストリビューションより古いディストリ"
+"ビューションでは動きません。もし大抵のディストリビューションで動作するバイナ"
+"リを配布したいなら、Ubuntu 16.04のような古いディストリビューションでビルドす"
+"るべきでしょう。バーチャルマシンやコンテナを使えば、適切なビルド環境をセット"
+"アップできます。"
+
+#, fuzzy
+msgid ""
+"To build Linux or \\*BSD export templates, run the build system with the "
+"following parameters:"
+msgstr ""
+"X11(Linux、\\*BSD)エクスポートテンプレートをビルドするには、次のパラメーター"
+"を使用してビルド システムを実行します:"
+
+msgid "(32 bits)"
+msgstr "(32ビット)"
+
+msgid "(64 bits)"
+msgstr "(64ビット)"
+
+msgid ""
+"Note that cross-compiling for the opposite bits (64/32) as your host "
+"platform is not always straight-forward and might need a chroot environment."
+msgstr ""
+"注意点として、現在のホスト プラットフォームの反対のビット(64/32)へのクロスコ"
+"ンパイルは、簡単にいくとは限らず、chroot環境が必要になるかもしれません。"
+
+#, fuzzy
+msgid ""
+"To create standard export templates, the resulting files in the ``bin/`` "
+"folder must be copied to:"
+msgstr ""
+"標準のエクスポート テンプレートを作成するには、結果のファイルを次の場所にコ"
+"ピーする必要があります:"
+
+#, fuzzy
+msgid ""
+"and named like this (even for \\*BSD which is seen as \"Linux/X11\" by "
+"Godot):"
+msgstr ""
+"そして、このように命名されます (Godotでは\\*BSD の場合も「Linux X11」と見なさ"
+"れます):"
+
+msgid ""
+"However, if you are writing your custom modules or custom C++ code, you "
+"might instead want to configure your binaries as custom export templates "
+"here:"
+msgstr ""
+"ただし、カスタムモジュールまたはカスタムC++ コードを作成する場合は、ここでカ"
+"スタムエクスポート テンプレートとしてバイナリを構成する必要があります:"
+
+msgid ""
+"You don't even need to copy them, you can just reference the resulting files "
+"in the ``bin/`` directory of your Godot source folder, so the next time you "
+"build, you automatically have the custom templates referenced."
+msgstr ""
+"この場合はコピーする必要はなく、Godotのソースフォルダ内にある ``bin\\`` ディ"
+"レクトリに出力されたファイルを指定するだけです。こうすれば、次にビルドした時"
+"も、自動的にカスタム テンプレートを参照するようになります。"
+
+msgid "Using Clang and LLD for faster development"
+msgstr "ClangとLLDを使用して開発を高速化する"
+
+msgid ""
+"You can also use Clang and LLD to build Godot. This has two upsides compared "
+"to the default GCC + GNU ld setup:"
+msgstr ""
+"ClangとLLDを使用してGodotを構築することもできます。これには、デフォルトのGCC "
+"+ GNU ldセットアップと比較して2つの利点があります:"
+
+msgid ""
+"LLD links Godot significantly faster compared to GNU ld or gold. This leads "
+"to faster iteration times."
+msgstr ""
+"LLDは、GNU ldまたはgoldと比較してGodotを大幅に高速にリンクします。これによ"
+"り、反復時間が短縮されます。"
+
+msgid "Clang tends to give more useful error messages compared to GCC."
+msgstr "Clangは、GCCよりも有用なエラーメッセージを提供する傾向があります。"
+
+msgid ""
+"To do so, install Clang and the ``lld`` package from your distribution's "
+"package manager then use the following SCons command::"
+msgstr ""
+"これを行うには、ディストリビューションのパッケージマネージャーからClangと "
+"``lld`` パッケージをインストールし、次のSConsコマンドを使用します:"
+
+msgid ""
+"After the build is completed, a new binary with a ``.llvm`` suffix will be "
+"created in the ``bin/`` folder."
+msgstr ""
+
+msgid ""
+"It's still recommended to use GCC for production builds as they can be "
+"compiled using link-time optimization, making the resulting binaries smaller "
+"and faster."
+msgstr ""
+"リンク時最適化を使用してコンパイルし、結果のバイナリをより小さく、より高速に"
+"することができるため、プロダクションビルドにはGCCを使用することをお勧めしま"
+"す。"
+
+msgid "If this error occurs::"
+msgstr ""
+
+#, fuzzy
+msgid "There are two solutions:"
+msgstr "これを行うには、次の 2 つの方法があります:"
+
+msgid "In your SCons command, add the parameter ``use_static_cpp=no``."
+msgstr ""
+
+msgid ""
+"Follow `these instructions <https://github.com/ivmai/"
+"libatomic_ops#installation-and-usage>`__ to configure, build, and install "
+"``libatomic_ops``. Then, copy ``/usr/lib/libatomic_ops.a`` to ``/usr/lib/"
+"libatomic.a``."
+msgstr ""
+
+#, fuzzy
+msgid "Using mold for faster development"
+msgstr "ClangとLLDを使用して開発を高速化する"
+
+msgid ""
+"For even faster linking compared to LLD, you can use `mold <https://github."
+"com/rui314/mold>`__. mold can be used with either GCC or Clang."
+msgstr ""
+
+msgid ""
+"As of January 2023, mold is not readily available in Linux distribution "
+"repositories, so you will have to install its binaries manually."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Download mold binaries from its `releases page <https://github.com/rui314/"
+"mold/releases/latest>`__."
+msgstr ""
+"`godot-cppリポジトリ <https://github.com/GodotNativeTools/godot-cpp>`__\\ の"
+"コピー。"
+
+msgid ""
+"Extract the ``.tar.gz`` file, then move the extraced folder to a location "
+"such as ``.local/share/mold``."
+msgstr ""
+
+msgid ""
+"Add ``$HOME/.local/share/mold/bin`` to your user's ``PATH`` environment "
+"variable. For example, you can add the following line at the end of your "
+"``$HOME/.bash_profile`` file:"
+msgstr ""
+
+msgid ""
+"Open a new terminal (or run ``source \"$HOME/.bash_profile\"``), then use "
+"the following SCons command when compiling Godot::"
+msgstr ""
+
+#, fuzzy
+msgid "Using system libraries for faster development"
+msgstr "ClangとLLDを使用して開発を高速化する"
+
+msgid ""
+"`Godot bundles the source code of various third-party libraries. <https://"
+"github.com/godotengine/godot/tree/master/thirdparty>`__ You can choose to "
+"use system versions of third-party libraries instead. This makes the Godot "
+"binary faster to link, as third-party libraries are dynamically linked. "
+"Therefore, they don't need to be statically linked every time you build the "
+"engine (even on small incremental changes)."
+msgstr ""
+
+msgid ""
+"However, not all Linux distributions have packages for third-party libraries "
+"available (or they may not be up-to-date)."
+msgstr ""
+
+msgid ""
+"Moving to system libraries can reduce linking times by several seconds on "
+"slow CPUs, but it requires manual testing depending on your Linux "
+"distribution. Also, you may not be able to use system libraries for "
+"everything due to bugs in the system library packages (or in the build "
+"system, as this feature is less tested)."
+msgstr ""
+
+msgid ""
+"To compile Godot with system libraries, install these dependencies *on top* "
+"of the ones listed in the :ref:`doc_compiling_for_linuxbsd_oneliners`:"
+msgstr ""
+
+msgid "**Fedora**"
+msgstr "**Fedora**"
+
+msgid ""
+"After installing all required packages, use the following command to build "
+"Godot:"
+msgstr ""
+
+msgid ""
+"You can view a list of all built-in libraries that have system alternatives "
+"by running ``scons -h``, then looking for options starting with ``builtin_``."
+msgstr ""
+
+msgid ""
+"When using system libraries, the resulting library is **not** portable "
+"across Linux distributions anymore. Do not use this approach for creating "
+"binaries you intend to distribute to others, unless you're creating a "
+"package for a Linux distribution."
+msgstr ""
+
+#, fuzzy
+msgid "Using Pyston for faster development"
+msgstr "ClangとLLDを使用して開発を高速化する"
+
+msgid ""
+"You can use `Pyston <https://www.pyston.org/>`__ to run SCons. Pyston is a "
+"JIT-enabled implementation of the Python language (which SCons is written "
+"in). It is currently only compatible with Linux. Pyston can speed up "
+"incremental builds significantly, often by a factor between 1.5× and 2×. "
+"Pyston can be combined with Clang and LLD to get even faster builds."
+msgstr ""
+
+msgid ""
+"Download the `latest portable Pyston release <https://github.com/pyston/"
+"pyston/releases/latest>`__."
+msgstr ""
+
+msgid ""
+"Extract the portable ``.tar.gz`` to a set location, such as ``$HOME/.local/"
+"opt/pyston/`` (create folders as needed)."
+msgstr ""
+
+msgid ""
+"Use ``cd`` to reach the extracted Pyston folder from a terminal, then run "
+"``./pyston -m pip install scons`` to install SCons within Pyston."
+msgstr ""
+
+msgid ""
+"To make SCons via Pyston easier to run, create a symbolic link of its "
+"wrapper script to a location in your ``PATH`` environment variable::"
+msgstr ""
+
+msgid ""
+"Instead of running ``scons <build arguments>``, run ``pyston-scons <build "
+"arguments>`` to compile Godot."
+msgstr ""
+
+msgid ""
+"If you can't run ``pyston-scons`` after creating the symbolic link, make "
+"sure ``$HOME/.local/bin/`` is part of your user's ``PATH`` environment "
+"variable."
+msgstr ""
+
+msgid ""
+"Alternatively, you can run ``python -m pip install pyston_lite_autoload`` "
+"then run SCons as usual. This will automatically load a subset of Pyston's "
+"optimizations in any Python program you run. However, this won't bring as "
+"much of a performance improvement compared to installing \"full\" Pyston."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

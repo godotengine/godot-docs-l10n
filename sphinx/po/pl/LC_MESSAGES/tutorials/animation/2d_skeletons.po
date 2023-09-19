@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -87,7 +87,7 @@ msgstr "Tworzenie wtyczki"
 
 msgid ""
 "Create a new scene for your model (if it's going to be an animated "
-"character, you may want to use a ``KinematicBody2D``). For ease of use, an "
+"character, you may want to use a ``CharacterBody2D``). For ease of use, an "
 "empty 2D node is created as a root for the polygons."
 msgstr ""
 
@@ -123,8 +123,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"After moving the polygon, remember to update the UV by selecting Edit -> "
-"\"Polygon -> UV\" in the Polygon 2D UV Editor."
+"After moving the polygon, remember to update the UV by selecting **Edit > "
+"Copy Polygon to UV** in the Polygon 2D UV Editor."
 msgstr ""
 
 msgid "Keep doing this until you mapped all pieces."

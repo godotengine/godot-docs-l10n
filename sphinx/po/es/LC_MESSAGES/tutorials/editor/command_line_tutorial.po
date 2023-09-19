@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,38 @@ msgstr ""
 msgid "Command line reference"
 msgstr "Referencia de la línea de comandos"
 
+#, fuzzy
+msgid "release"
+msgstr "**versión**"
+
+#, fuzzy
+msgid "debug"
+msgstr "Depurar"
+
+#, fuzzy
+msgid "editor"
+msgstr "Editor"
+
+msgid "**Legend**"
+msgstr ""
+
+msgid ""
+"|release| Available in editor builds, debug export templates and release "
+"export templates."
+msgstr ""
+
+msgid "|debug| Available in editor builds and debug export templates only."
+msgstr ""
+
+msgid "|editor| Only available in editor builds."
+msgstr ""
+
+msgid ""
+"Note that unknown command line arguments have no effect whatsoever. The "
+"engine will **not** warn you when using a command line argument that doesn't "
+"exist with a given build type."
+msgstr ""
+
 msgid "**General options**"
 msgstr "**Opciones generales**"
 
@@ -70,28 +102,35 @@ msgstr "Comando"
 msgid "Description"
 msgstr "Descripción"
 
-msgid "``-h``, ``--help``, ``/?``"
+#, fuzzy
+msgid "``-h``, ``--help``"
 msgstr "``-h``, ``--help``, ``/?``"
 
-msgid "Display the list of command line options."
+#, fuzzy
+msgid "|release| Display the list of command line options."
 msgstr "Muestra la lista de opciones de línea de comandos."
 
 msgid "``--version``"
 msgstr "``--version``"
 
-msgid "Display the version string."
+#, fuzzy
+msgid "|release| Display the version string."
 msgstr "Muestra una cadena con la versión."
 
 msgid "``-v``, ``--verbose``"
 msgstr "``-v``, ``--verbose``"
 
-msgid "Use verbose stdout mode."
+#, fuzzy
+msgid "|release| Use verbose stdout mode."
 msgstr "Usa el modo stdout verboso."
 
-msgid "``--quiet``"
-msgstr "``--quiet``"
+#, fuzzy
+msgid "``-q``, ``--quiet``"
+msgstr "``-q``, ``--quit``"
 
-msgid "Quiet mode, silences stdout messages. Errors are still displayed."
+#, fuzzy
+msgid ""
+"|release| Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
 "Modo silencioso, silencia los mensajes de stdout. Los errores seguirán "
 "siendo mostrados."
@@ -99,69 +138,95 @@ msgstr ""
 msgid "**Run options**"
 msgstr "**Opciones de ejecución**"
 
+#, fuzzy
+msgid "``--``, ``++``"
+msgstr "``-q``, ``--quit``"
+
+msgid ""
+"|release| Separator for user-provided arguments. Following arguments are not "
+"used by the engine, but can be read from ``OS.get_cmdline_user_args()``."
+msgstr ""
+
 msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
 
-msgid ""
-"Start the editor instead of running the scene (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgid "|editor| Start the editor instead of running the scene."
 msgstr ""
-"Inicia el editor en lugar de ejecutar la escena (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` debe estar habilitado)."
 
 msgid "``-p``, ``--project-manager``"
 msgstr "``-p``, ``--project-manager``"
 
-msgid ""
-"Start the project manager, even if a project is auto-detected (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgid "|editor| Start the Project Manager, even if a project is auto-detected."
 msgstr ""
-"Inicie el administrador de proyectos, incluso si un proyecto se detecta "
-"automáticamente (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` "
-"debe estar habilitado)."
 
-msgid "``-q``, ``--quit``"
-msgstr "``-q``, ``--quit``"
+#, fuzzy
+msgid "``--debug-server <uri>``"
+msgstr "``--video-driver <driver>``"
 
-msgid "Quit after the first iteration."
+msgid ""
+"|editor| Start the editor debug server (``<protocol>://<host/IP>[:<port>]``, "
+"e.g. ``tcp://127.0.0.1:6007``)"
+msgstr ""
+
+#, fuzzy
+msgid "``--quit``"
+msgstr "``--quiet``"
+
+#, fuzzy
+msgid "|release| Quit after the first iteration."
 msgstr "Salir después de la primera iteración."
 
-msgid "``-l <locale>``, ``--language <locale>``"
+#, fuzzy
+msgid "``--quit-after``"
+msgstr "``--quiet``"
+
+msgid ""
+"|release| Quit after the given number of iterations. Set to 0 to disable."
+msgstr ""
+
+#, fuzzy
+msgid "``-l``, ``--language <locale>``"
 msgstr "``-l <locale>``, ``--language <locale>``"
 
 msgid ""
-"Use a specific locale (<locale> being a two-letter code). See :ref:"
-"`doc_locales` for more details."
+"|release| Use a specific locale. ``<locale>`` follows the format "
+"``language_Script_COUNTRY_VARIANT`` where language is a 2 or 3-letter "
+"language code in lowercase and the rest is optional. See :ref:`doc_locales` "
+"for more details."
 msgstr ""
-"Usa una configuración de región específica (<locale> es un código de dos "
-"letras). Ver :ref:`doc_locales`para más detalles."
 
 msgid "``--path <directory>``"
 msgstr "``--path <directorio>``"
 
-msgid "Path to a project (<directory> must contain a 'project.godot' file)."
+#, fuzzy
+msgid ""
+"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
+"file)."
 msgstr ""
 "La ruta a un proyecto (<directory> debe contener un archivo 'project.godot')."
 
 msgid "``-u``, ``--upwards``"
 msgstr "``-u``, ``--upwards``"
 
-msgid "Scan folders upwards for 'project.godot' file."
+#, fuzzy
+msgid "|release| Scan folders upwards for 'project.godot' file."
 msgstr "Buscar en las carpetas superiores el archivo 'project.godot'."
 
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <archivo>``"
 
-msgid "Path to a pack (.pck) file to load."
+#, fuzzy
+msgid "|release| Path to a pack (.pck) file to load."
 msgstr "Ruta a un archivo de paquete (.pck) a cargar."
 
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <modo>``"
 
+#, fuzzy
 msgid ""
-"Render thread mode ('unsafe', 'safe', 'separate'). See :ref:`Thread Model "
-"<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
-"details."
+"|release| Render thread mode ('unsafe', 'safe', 'separate'). See :ref:"
+"`Thread Model <class_ProjectSettings_property_rendering/driver/threads/"
+"thread_model>` for more details."
 msgstr ""
 "Modo de renderizado del hilo ('unsafe', 'safe', 'separate'). Ver :ref:"
 "`Thread Model <class_ProjectSettings_property_rendering/threads/"
@@ -170,26 +235,101 @@ msgstr ""
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <dirección>``"
 
-msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
+#, fuzzy
+msgid "|release| Remote filesystem (``<host/IP>[:<port>]`` address)."
 msgstr "Sistema de archivos remoto (``<host/IP>[:<port>]`` dirección)."
+
+#, fuzzy
+msgid "``--remote-fs-password <password>``"
+msgstr "``--remote-fs <dirección>``"
+
+msgid "|release| Password for remote filesystem."
+msgstr ""
 
 msgid "``--audio-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
+#, fuzzy
 msgid ""
-"Audio driver. Use ``--help`` first to display the list of available drivers."
+"|release| Audio driver. Use ``--help`` first to display the list of "
+"available drivers."
 msgstr ""
 "Controlador de audio. Usa ``--help`` primero para mostrar la lista de "
 "controladores disponibles."
 
-msgid "``--video-driver <driver>``"
-msgstr "``--video-driver <driver>``"
+#, fuzzy
+msgid "``--display-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
 
+#, fuzzy
 msgid ""
-"Video driver. Use ``--help`` first to display the list of available drivers."
+"|release| Display driver (and rendering driver). Use ``--help`` first to "
+"display the list of available drivers."
 msgstr ""
 "Controlador de video. Usa ``--help`` primero para mostrar la lista de "
 "controladores disponibles."
+
+#, fuzzy
+msgid "``--rendering-method <renderer>``"
+msgstr "``--render-thread <modo>``"
+
+msgid "|release| Renderer name. Requires driver support."
+msgstr ""
+
+#, fuzzy
+msgid "``--rendering-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
+
+#, fuzzy
+msgid ""
+"|release| Rendering driver (depends on display driver). Use ``--help`` first "
+"to display the list of available drivers."
+msgstr ""
+"Controlador de video. Usa ``--help`` primero para mostrar la lista de "
+"controladores disponibles."
+
+msgid "``--gpu-index <device_index>``"
+msgstr ""
+
+msgid ""
+"|release| Use a specific GPU (run with ``--verbose`` to get available device "
+"list)."
+msgstr ""
+
+#, fuzzy
+msgid "``--text-driver <driver>``"
+msgstr "``--video-driver <driver>``"
+
+msgid "|release| Text driver (Fonts, BiDi, shaping)."
+msgstr ""
+
+#, fuzzy
+msgid "``--tablet-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
+
+msgid "|release| Pen tablet input driver."
+msgstr ""
+
+#, fuzzy
+msgid "``--headless``"
+msgstr "``--remote-fs <dirección>``"
+
+msgid ""
+"|release| Enable headless mode (``--display-driver headless --audio-driver "
+"Dummy``). Useful for servers and with ``--script``."
+msgstr ""
+
+#, fuzzy
+msgid "``--write-movie <file>``"
+msgstr "``--main-pack <archivo>``"
+
+msgid ""
+"|release| Run the engine in a way that a movie is written (usually with .avi "
+"or .png extension). ``--fixed-fps`` is forced when enabled, but can be used "
+"to change movie FPS. ``--disable-vsync`` can speed up movie writing but "
+"makes interaction more difficult. ``--quit-after`` can be used to specify "
+"the number of frames to write."
+msgstr ""
 
 msgid "**Display options**"
 msgstr "**Opciones de visualización**"
@@ -197,76 +337,84 @@ msgstr "**Opciones de visualización**"
 msgid "``-f``, ``--fullscreen``"
 msgstr "``-f``, ``--fullscreen``"
 
-msgid "Request fullscreen mode."
+#, fuzzy
+msgid "|release| Request fullscreen mode."
 msgstr "Solicitar modo de pantalla completa."
 
 msgid "``-m``, ``--maximized``"
 msgstr "``-m``, ``--maximized``"
 
-msgid "Request a maximized window."
+#, fuzzy
+msgid "|release| Request a maximized window."
 msgstr "Solicitar una ventana maximizada."
 
 msgid "``-w``, ``--windowed``"
 msgstr "``-w``, ``--windowed``"
 
-msgid "Request windowed mode."
+#, fuzzy
+msgid "|release| Request windowed mode."
 msgstr "Solicitar modo ventana."
 
 msgid "``-t``, ``--always-on-top``"
 msgstr "``-t``, ``--always-on-top``"
 
-msgid "Request an always-on-top window."
+#, fuzzy
+msgid "|release| Request an always-on-top window."
 msgstr "Solicita una ventana siempre en la cima."
 
 msgid "``--resolution <W>x<H>``"
 msgstr "``--resolution <W>x<H>``"
 
-msgid "Request window resolution."
+#, fuzzy
+msgid "|release| Request window resolution."
 msgstr "Solicitar resolución de ventana."
 
 msgid "``--position <X>,<Y>``"
 msgstr "``--position <X>,<Y>``"
 
-msgid "Request window position."
+#, fuzzy
+msgid "|release| Request window position."
 msgstr "Solicitar posición de la ventana."
 
-msgid "``--low-dpi``"
-msgstr "``--low-dpi``"
+#, fuzzy
+msgid "``--screen <N>``"
+msgstr "``--frame-delay <ms>``"
 
-msgid "Force low-DPI mode (macOS and Windows only)."
-msgstr "Forzar el modo de bajo DPI (sólo macOS y Windows)."
+#, fuzzy
+msgid "|release| Request window screen."
+msgstr "Solicitar resolución de ventana."
 
-msgid "``--no-window``"
+#, fuzzy
+msgid "``--single-window``"
 msgstr "``--no-window``"
 
-msgid "Run with invisible window. Useful together with ``--script``."
-msgstr "Ejecutar con ventana invisible. Útil junto con ``--script``."
+msgid "|release| Use a single window (no separate subwindows)."
+msgstr ""
+
+#, fuzzy
+msgid "``--xr-mode <mode>``"
+msgstr "``--render-thread <modo>``"
+
+msgid "|release| Select XR mode ('default', 'off', 'on')."
+msgstr ""
 
 msgid "**Debug options**"
 msgstr "**Opciones de depuración**"
 
-msgid ""
-"Debug options are only available in the editor and debug export templates "
-"(they require ``debug`` or ``release_debug`` build targets, see :ref:"
-"`doc_introduction_to_the_buildsystem_target` for more details)."
-msgstr ""
-"Las opciones de depuración sólo están disponibles en el editor y el "
-"depurador de plantillas de exportación (estas requieren ``debug`` o "
-"``release_debug``, ver :ref:`doc_introduction_to_the_buildsystem_target`para "
-"más detalles)."
-
 msgid "``-d``, ``--debug``"
 msgstr "``-d``, ``--debug``"
 
-msgid "Debug (local stdout debugger)."
+#, fuzzy
+msgid "|release| Debug (local stdout debugger)."
 msgstr "Depurar (depurador stdout local)."
 
 msgid "``-b``, ``--breakpoints``"
 msgstr "``-b``, ``--breakpoints``"
 
+#, fuzzy
 msgid ""
-"Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
-"instead)."
+"|release| Breakpoint list as source::line comma-separated pairs, no spaces "
+"(use ``%20`` instead)."
 msgstr ""
 "Lista de puntos de interrupción como fuente::pares separados por comas, sin "
 "espacios (usar %%20 en su lugar)."
@@ -274,48 +422,128 @@ msgstr ""
 msgid "``--profiling``"
 msgstr "``--profiling``"
 
-msgid "Enable profiling in the script debugger."
+#, fuzzy
+msgid "|release| Enable profiling in the script debugger."
 msgstr "Habilite la creación de perfiles en el depurador de scripts."
 
-msgid "``--remote-debug <address>``"
+#, fuzzy
+msgid "``--gpu-profile``"
+msgstr "``--profiling``"
+
+msgid ""
+"|release| Show a GPU profile of the tasks that took the most time during "
+"frame rendering."
+msgstr ""
+
+#, fuzzy
+msgid "``--gpu-validation``"
+msgstr "``--debug-navigation``"
+
+msgid ""
+"|release| Enable graphics API :ref:`validation layers "
+"<doc_vulkan_validation_layers>` for debugging."
+msgstr ""
+
+#, fuzzy
+msgid "``--gpu-abort``"
+msgstr "``--quiet``"
+
+msgid ""
+"|debug| Abort on GPU errors (usually validation layer errors), may help see "
+"the problem if your system freezes."
+msgstr ""
+
+#, fuzzy
+msgid "``--remote-debug <uri>``"
 msgstr "``--remote-debug <dirección>``"
 
-msgid "Remote debug (``<host/IP>:<port>`` address)."
-msgstr "Depurado remoto (``<host/IP>:<port>`` dirección)."
+msgid ""
+"|release| Remote debug (``<protocol>://<host/IP>[:<port>]``, e.g. "
+"``tcp://127.0.0.1:6007``)."
+msgstr ""
+
+#, fuzzy
+msgid "``--single-threaded-scene``"
+msgstr "``--render-thread <modo>``"
+
+msgid ""
+"|release| Scene tree runs in single-threaded mode. Sub-thread groups are "
+"disabled and run on the main thread."
+msgstr ""
 
 msgid "``--debug-collisions``"
 msgstr "``--debug-collisions``"
 
-msgid "Show collision shapes when running the scene."
+#, fuzzy
+msgid "|debug| Show collision shapes when running the scene."
+msgstr "Mostrar la forma de la colisión mientras se ejecuta la escena."
+
+#, fuzzy
+msgid "``--debug-paths``"
+msgstr "``--debug-navigation``"
+
+#, fuzzy
+msgid "|debug| Show path lines when running the scene."
 msgstr "Mostrar la forma de la colisión mientras se ejecuta la escena."
 
 msgid "``--debug-navigation``"
 msgstr "``--debug-navigation``"
 
-msgid "Show navigation polygons when running the scene."
+#, fuzzy
+msgid "|debug| Show navigation polygons when running the scene."
 msgstr "Mostrar polígonos de navegación mientras se ejecuta la escena."
+
+#, fuzzy
+msgid "``--debug-avoidance``"
+msgstr "``--debug-navigation``"
+
+#, fuzzy
+msgid "|debug| Show navigation avoidance debug visuals when running the scene."
+msgstr "Mostrar polígonos de navegación mientras se ejecuta la escena."
+
+#, fuzzy
+msgid "``--debug-stringnames``"
+msgstr "``--debug-collisions``"
+
+msgid ""
+"|debug| Print all StringName allocations to stdout when the engine quits."
+msgstr ""
 
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
+#, fuzzy
+msgid ""
+"|release| Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr ""
 "Simular una alta carga de CPU (retrasar cada fotograma <ms> milisegundos)."
 
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <escala>``"
 
-msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
+#, fuzzy
+msgid ""
+"|release| Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
 "Forzar la escala de tiempo (los valores altos son más rápidos, 1.0 es la "
 "velocidad normal)."
 
+#, fuzzy
+msgid "``--disable-vsync``"
+msgstr "``--disable-crash-handler``"
+
+msgid ""
+"|release| Forces disabling of vertical synchronization, even if enabled in "
+"the project settings. Does not override driver-level V-Sync enforcement."
+msgstr ""
+
 msgid "``--disable-render-loop``"
 msgstr "``--disable-render-loop``"
 
+#, fuzzy
 msgid ""
-"Disable render loop so rendering only occurs when called explicitly from "
-"script."
+"|release| Disable render loop so rendering only occurs when called "
+"explicitly from script."
 msgstr ""
 "Deshabilite el bucle de renderizado para que el renderizado solo ocurra "
 "cuando se llama explícitamente desde el script."
@@ -323,7 +551,8 @@ msgstr ""
 msgid "``--disable-crash-handler``"
 msgstr "``--disable-crash-handler``"
 
-msgid "Disable crash handler when supported by the platform code."
+#, fuzzy
+msgid "|release| Disable crash handler when supported by the platform code."
 msgstr ""
 "Deshabilite el controlador de fallas cuando sea compatible con el código de "
 "la plataforma."
@@ -331,63 +560,101 @@ msgstr ""
 msgid "``--fixed-fps <fps>``"
 msgstr "``--fixed-fps <fps>``"
 
+#, fuzzy
 msgid ""
-"Force a fixed number of frames per second. This setting disables real-time "
-"synchronization."
+"|release| Force a fixed number of frames per second. This setting disables "
+"real-time synchronization."
 msgstr ""
 "Forzar un número fijo de fotogramas por segundo. Esta configuración "
 "deshabilita la sincronización en tiempo real."
 
+msgid "``--delta-smoothing <enable>``"
+msgstr ""
+
+msgid ""
+"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
+msgstr ""
+
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
-msgid "Print the frames per second to the stdout."
+#, fuzzy
+msgid "|release| Print the frames per second to the stdout."
 msgstr "Imprime los fotogramas por segundo en la stdout."
 
 msgid "**Standalone tools**"
 msgstr "**Herramientas independientes**"
 
-msgid "``-s <script>``, ``--script <script>``"
+#, fuzzy
+msgid "``-s``, ``--script <script>``"
 msgstr "``-s <script>``, ``--script <script>``"
 
-msgid "Run a script."
+#, fuzzy
+msgid "|release| Run a script."
 msgstr "Ejecutar un script."
 
 msgid "``--check-only``"
 msgstr "``--check-only``"
 
-msgid "Only parse for errors and quit (use with ``--script``)."
+#, fuzzy
+msgid "|release| Only parse for errors and quit (use with ``--script``)."
 msgstr "Analizar solo los errores y salir (usar con `` --script``)."
 
-msgid "``--export <target>``"
-msgstr "``--export <target>``"
+#, fuzzy
+msgid "``--export-release <preset> <path>``"
+msgstr "``--export-pack <preestablecido> <ruta>``"
 
 msgid ""
-"Export the project using the given export target. Export only main pack if "
-"path ends with .pck or .zip (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Export the project using the given preset and matching release "
+"template. The preset name should match one defined in export_presets.cfg. "
+"``<path>`` should be absolute or relative to the project directory, and "
+"include the filename for the binary (e.g. 'builds/game.exe'). The target "
+"directory should exist."
 msgstr ""
-"Exporta el proyecto usando el objetivo de exportación indicado. Exporta sólo "
-"el paquete principal si termina con .pck o .zip (tiene que tener habilitado :"
-"ref:`tools <doc_introduction_to_the_buildsystem_tools>`)."
 
-msgid "``--export-debug <target>``"
-msgstr "``--export-debug <target>``"
+#, fuzzy
+msgid "``--export-debug <preset> <path>``"
+msgstr "``--export-pack <preestablecido> <ruta>``"
+
+msgid "|editor| Like ``--export-release``, but use debug template."
+msgstr ""
+
+msgid "``--export-pack <preset> <path>``"
+msgstr "``--export-pack <preestablecido> <ruta>``"
+
+#, fuzzy
+msgid ""
+"|editor| Like ``--export-release``, but only export the game pack for the "
+"given preset. The ``<path>`` extension determines whether it will be in PCK "
+"or ZIP format."
+msgstr ""
+"Como el parametro ``--export``, solo exporta el paquete del juego con el "
+"ajuste preestablecido ya dado. La extensión <path> determina si estará en "
+"formato PCK o ZIP. (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` "
+"deben estar habilitadas para funcionar correctamente)."
+
+msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
+msgstr ""
+
+msgid "|editor| Convert project from Godot 3.x to Godot 4.x."
+msgstr ""
+
+msgid "``--validate-conversion-3to4 [<max_file_kb>] [<max_line_size>]``"
+msgstr ""
 
 msgid ""
-"Like ``--export``, but use debug template (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Show what elements will be renamed when converting project from "
+"Godot 3.x to Godot 4.x."
 msgstr ""
-"Como ``--export``, pero use la plantilla de depuración (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` debe estar habilitada)."
 
-msgid "``--doctool <path>``"
+#, fuzzy
+msgid "``--doctool [<path>]``"
 msgstr "``--doctool <ruta>``"
 
+#, fuzzy
 msgid ""
-"Dump the engine API reference to the given <path> in XML format, merging if "
-"existing files are found (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Dump the engine API reference to the given ``<path>`` in XML "
+"format, merging if existing files are found."
 msgstr ""
 "Volcar la referencia de la API del motor a la <ruta> en formato XML, "
 "fusionando si se encuentran archivos existentes (:ref:`tools "
@@ -396,71 +663,91 @@ msgstr ""
 msgid "``--no-docbase``"
 msgstr "``--no-docbase``"
 
-msgid ""
-"Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgid "|editor| Disallow dumping the base types (used with ``--doctool``)."
 msgstr ""
-"Anular el volcado de tipos base (utilizados con ``--doctool``, :ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` debe estar habilitado)."
+
+#, fuzzy
+msgid "``--gdscript-docs <path>``"
+msgstr "``--doctool <ruta>``"
+
+msgid ""
+"|editor| Rather than dumping the engine API, generate API reference from the "
+"inline documentation in the GDScript files found in <path> (used with ``--"
+"doctool``)."
+msgstr ""
 
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
 msgid ""
-"Build the scripting solutions (e.g. for C# projects, :ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Build the scripting solutions (e.g. for C# projects). Implies ``--"
+"editor`` and requires a valid project to edit."
 msgstr ""
-"Cree las soluciones de secuencias de comandos (por ejemplo, para proyectos "
-"de C#, :ref:`tools <doc_introduction_to_the_buildsystem_tools>` debe estar "
-"habilitado)."
 
-msgid "``--gdnative-generate-json-api``"
+msgid "``--dump-gdextension-interface``"
+msgstr ""
+
+msgid ""
+"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
+"current folder. This file is the base file required to implement a "
+"GDExtension."
+msgstr ""
+
+#, fuzzy
+msgid "``--dump-extension-api``"
 msgstr "``--gdnative-generate-json-api``"
 
 msgid ""
-"Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
+"'extension_api.json' in the current folder."
 msgstr ""
-"Genere un volcado en JSON de la API de Godot para enlaces de GDNative (:ref:"
-"`tools <doc_introduction_to_the_buildsystem_tools>` debe estar habilitado)."
 
-msgid "``--test <test>``"
-msgstr "``--test <test>``"
+#, fuzzy
+msgid "``--validate-extension-api <path>``"
+msgstr "``--gdnative-generate-json-api``"
 
 msgid ""
-"Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
-"`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Validate an extension API file dumped (with the option above) from "
+"a previous version of the engine to ensure API compatibility. If "
+"incompatibilities or errors are detected, the return code will be non-zero."
 msgstr ""
-"Ejecute una prueba unitaria. Usar``--help`` primero para mostrar la lista de "
-"pruebas. (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` debe "
-"estar habilitado)."
 
-msgid "``--export-pack <preset> <path>``"
-msgstr "``--export-pack <preestablecido> <ruta>``"
+msgid "``--benchmark``"
+msgstr ""
+
+msgid "|editor| Benchmark the run time and print it to console."
+msgstr ""
+
+#, fuzzy
+msgid "``--benchmark-file <path>``"
+msgstr "``--doctool <ruta>``"
 
 msgid ""
-"Like ``--export``, but only export the game pack for the given preset. The "
-"<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
-"`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Benchmark the run time and save it to a given file in JSON format. "
+"The path should be absolute."
 msgstr ""
-"Como el parametro ``--export``, solo exporta el paquete del juego con el "
-"ajuste preestablecido ya dado. La extensión <path> determina si estará en "
-"formato PCK o ZIP. (:ref:`tools <doc_introduction_to_the_buildsystem_tools>` "
-"deben estar habilitadas para funcionar correctamente)."
 
 msgid "Path"
 msgstr "Ruta"
 
+#, fuzzy
 msgid ""
-"It is recommended that your Godot binary be in your PATH environment "
-"variable, so it can be executed easily from any place by typing ``godot``. "
-"You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
-"making sure it is called ``godot``."
+"It is recommended to place your Godot editor binary in your ``PATH`` "
+"environment variable, so it can be executed easily from any place by typing "
+"``godot``. You can do so on Linux by placing the Godot binary in ``/usr/"
+"local/bin`` and making sure it is called ``godot`` (case-sensitive)."
 msgstr ""
 "Se recomienda que el binario de godot se encuentre en la variable de entorno "
 "PATH, para que pueda ejecutarse fácilmente desde cualquier lugar escribiendo "
 "``godot``. Puedes hacerlo en Linux colocando el binario de Godot en ``/usr/"
 "local/bin`` y asegurándote de que se llame ``godot``."
+
+msgid ""
+"To achieve this on Windows or macOS easily, you can install Godot using "
+"`Scoop <https://scoop.sh>`__ (on Windows) or `Homebrew <https://brew.sh>`__ "
+"(on macOS). This will automatically make the copy of Godot installed "
+"available in the ``PATH``:"
+msgstr ""
 
 msgid "Setting the project path"
 msgstr "Configuración de la ruta del proyecto"
@@ -495,9 +782,10 @@ msgstr ""
 msgid "Creating a project"
 msgstr "Creación de un proyecto"
 
+#, fuzzy
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
-"to the desired place and making a project.godot file."
+"to the desired place and making a ``project.godot`` file."
 msgstr ""
 "Para crear un proyecto desde la línea de comandos, navega hasta el lugar "
 "deseado y crea un archivo project.godot vacío."
@@ -508,10 +796,11 @@ msgstr "El proyecto ahora puede abrirse con Godot."
 msgid "Running the editor"
 msgstr "Ejecutar el editor"
 
+#, fuzzy
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
-"the command is ignored and the project manager appears."
+"the command is ignored and the Project Manager appears."
 msgstr ""
 "El editor se abre ejecutando Godot con el parámetro ``-e``. Esto debe "
 "hacerse desde el directorio del proyecto, o desde un subdirectorio, de lo "
@@ -527,10 +816,11 @@ msgstr ""
 msgid "Erasing a scene"
 msgstr "Borrar una escena"
 
+#, fuzzy
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
-"scene or else an error will be thrown upon opening."
+"scene. Otherwise, an error will be thrown upon opening the project."
 msgstr ""
 "Godot es amigo de tu sistema de archivos, y no creará archivos de metadatos "
 "adicionales, simplemente usa ``rm`` para borrar un archivo. Asegúrate de que "
@@ -557,10 +847,11 @@ msgstr ""
 msgid "Debugging"
 msgstr "Depuración"
 
+#, fuzzy
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
-"just fly by. For this, a command line debugger is provided by adding ``-d``. "
-"It works for running either the game or a simple scene."
+"scroll quickly. For this, a command line debugger is provided by adding ``-"
+"d``. It works for running either the game or a single scene."
 msgstr ""
 "Capturar errores en línea de comandos puede ser una tarea difícil porque "
 "simplemente pasan uno tras otro. Para esto, se proporciona un depurador de "
@@ -570,14 +861,21 @@ msgstr ""
 msgid "Exporting"
 msgstr "Exportar"
 
+#, fuzzy
 msgid ""
 "Exporting the project from the command line is also supported. This is "
-"especially useful for continuous integration setups. The version of Godot "
-"that is headless (server build, no video) is ideal for this."
+"especially useful for continuous integration setups."
 msgstr ""
 "También se puede exportar el proyecto desde la línea de comandos. Esto es "
 "especialmente útil para configuraciones de integración continua. La versión "
 "de Godot que es headless (server build, no video) es ideal para esto."
+
+msgid ""
+"Using the ``--headless`` command line argument is **required** on platforms "
+"that do not have GPU access (such as continuous integration). On platforms "
+"with GPU access, ``--headless`` prevents a window from spawning while the "
+"project is exporting."
+msgstr ""
 
 msgid ""
 "The preset name must match the name of an export preset defined in the "
@@ -590,29 +888,32 @@ msgstr ""
 "el nombre predeterminado contiene espacios o caracteres especiales (como "
 "\"Escritorio de Windows\"), debe estar entre comillas."
 
+#, fuzzy
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
-"instead of ``--export``. Their parameters and usage are the same."
+"instead of ``--export-release``. Their parameters and usage are the same."
 msgstr ""
 "Para exportar una versión de depuración del juego, utiliza la opción ``--"
 "export-debug`` en lugar de ``--export``. Sus parámetros y uso son los mismos."
 
+#, fuzzy
 msgid ""
 "To export only a PCK file, use the ``--export-pack`` option followed by the "
-"preset name and output path, with the file extension, instead of ``--"
-"export``. The output path extension determines the package's format, either "
-"PCK or ZIP."
+"preset name and output path, with the file extension, instead of ``--export-"
+"release`` or ``--export-debug``. The output path extension determines the "
+"package's format, either PCK or ZIP."
 msgstr ""
 "Para exportar sólo un archivo PCK, utilice la opción ``--export-pack`` "
 "seguida del nombre y la ruta de salida preestablecidos, con la extensión del "
 "archivo, en lugar de ``--export``. La extensión de la ruta de salida "
 "determina el formato del paquete, ya sea PCK o ZIP."
 
+#, fuzzy
 msgid ""
-"When specifying a relative path as the path for `--export`, `--export-debug` "
-"or `--export-pack`, the path will be relative to the directory containing "
-"the ``project.godot`` file, **not** relative to the current working "
-"directory."
+"When specifying a relative path as the path for ``--export-release``, ``--"
+"export-debug`` or ``--export-pack``, the path will be relative to the "
+"directory containing the ``project.godot`` file, **not** relative to the "
+"current working directory."
 msgstr ""
 "Al especificar una ruta relativa como ruta para `--export`,` --export-debug` "
 "o `--export-pack`, la ruta será relativa al directorio que contiene el "
@@ -621,10 +922,11 @@ msgstr ""
 msgid "Running a script"
 msgstr "Ejecutar un script"
 
+#, fuzzy
 msgid ""
-"It is possible to run a simple ``.gd`` script from the command line. This "
-"feature is especially useful in large projects, e.g. for batch conversion of "
-"assets or custom import/export."
+"It is possible to run a ``.gd`` script from the command line. This feature "
+"is especially useful in large projects, e.g. for batch conversion of assets "
+"or custom import/export."
 msgstr ""
 "Es posible ejecutar un script ``.gd`` desde línea de comandos. Esta función "
 "es especialmente útil en proyectos de gran envergadura, para la conversión "
@@ -633,7 +935,8 @@ msgstr ""
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "El script debe heredar de ``SceneTree`` o ``MainLoop``."
 
-msgid "Here is a simple ``sayhello.gd`` example of how it works:"
+#, fuzzy
+msgid "Here is an example ``sayhello.gd``, showing how it works:"
 msgstr "He aquí un ejemplo simple del funcionamiento de ``sayhello.gd`` :"
 
 msgid "And how to run it:"

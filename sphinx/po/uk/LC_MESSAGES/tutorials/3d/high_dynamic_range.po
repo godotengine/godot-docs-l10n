@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,11 +23,12 @@ msgstr "Освітлення з високим динамічним діапаз
 msgid "Introduction"
 msgstr "Вступ"
 
+#, fuzzy
 msgid ""
 "Normally, an artist does all the 3D modelling, then all the texturing, looks "
-"at their awesome looking model in the 3D DCC and says \"looks fantastic, "
-"ready for integration!\" then goes into the game, lighting is setup and the "
-"game runs."
+"at their awesome looking model in the 3D modeling software and says \"looks "
+"fantastic, ready for integration!\" then goes into the game, lighting is "
+"setup and the game runs."
 msgstr ""
 "Зазвичай художник виконує все 3D-моделювання, потім усе текстурування, "
 "дивиться на свою чудову модель у 3D DCC і каже: «Виглядає приголомшливо, "
@@ -157,8 +158,9 @@ msgstr ""
 msgid "Scene linear & asset pipelines"
 msgstr "Лінійні сцени та канали активів"
 
+#, fuzzy
 msgid ""
-"Working in scene-linear sRGB is not as simple as just pressing a switch. "
+"Working in scene-linear sRGB is more complex than pressing a single switch. "
 "First, imported image assets must be converted to linear light ratios on "
 "import. Even when linearized, those assets may not be perfectly well-suited "
 "for use as textures, depending on how they were generated."

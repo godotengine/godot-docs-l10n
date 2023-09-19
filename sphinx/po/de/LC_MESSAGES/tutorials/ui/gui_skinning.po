@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,12 +159,22 @@ msgstr ""
 "für die Textdarstellung, mit Ausnahme von Größe und Farbe. Darüber hinaus "
 "werden Ausrichtung und Textrichtung von einzelnen Steuerelementen gesteuert."
 
+#, fuzzy
+msgid "**Font size**"
+msgstr "**Font**"
+
+msgid ""
+"An integer value, which is used alongside a font to determine the size at "
+"which the text should be displayed."
+msgstr ""
+
 msgid "**Icon**"
 msgstr "**Icon**"
 
+#, fuzzy
 msgid ""
-"A :ref:`texture <class_Texture>` resource, which is normally used to display "
-"an icon (on a :ref:`Button <class_Button>`, for example)."
+"A :ref:`texture <class_Texture2D>` resource, which is normally used to "
+"display an icon (on a :ref:`Button <class_Button>`, for example)."
 msgstr ""
 "Eine :ref:`texture <class_Texture>`-Ressource, die normalerweise verwendet "
 "wird, um ein Symbol darzustellen (zum Beispiel auf einem :ref:`Button "
@@ -432,7 +442,8 @@ msgstr ""
 msgid "Check for local overrides of the same data type and name."
 msgstr "Prüfung auf lokale Überschreibungen desselben Datentyps und Namens."
 
-msgid "Using control's class name and parent class names:"
+#, fuzzy
+msgid "Using control's type variation, class name and parent class names:"
 msgstr ""
 "Verwendung des Klassennamens des Steuerelements und der Namen der "
 "übergeordneten Klassen:"
@@ -465,13 +476,18 @@ msgstr ""
 "Die Schritte a-c wiederholen, bis die Wurzel des Baums erreicht ist oder ein "
 "Nicht-Kontroll-Node erreicht ist."
 
+#, fuzzy
 msgid ""
-"Using control's class name check the project-wide theme, if it's present."
+"Using control's type variation, class name and parent class names check the "
+"project-wide theme, if it's present."
 msgstr ""
 "Verwenden Sie den Klassennamen des Steuerelements, um das projektweite Thema "
 "zu überprüfen, falls es vorhanden ist."
 
-msgid "Using control's class name check the default theme."
+#, fuzzy
+msgid ""
+"Using control's type variation, class name and parent class names check the "
+"default theme."
 msgstr ""
 "Verwenden Sie den Klassennamen des Steuerelements, um das Standardthema zu "
 "überprüfen."

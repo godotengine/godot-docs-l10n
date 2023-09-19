@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,46 +20,48 @@ msgstr ""
 msgid "Particle shaders"
 msgstr "粒子着色器"
 
+#, fuzzy
 msgid ""
-"Particle shaders are a special type of vertex shader that runs before the "
-"object is drawn. They are used for calculating material properties such as "
-"color, position, and rotation. They are drawn with any regular material for "
+"Particle shaders are a special type of shader that runs before the object is "
+"drawn. They are used for calculating material properties such as color, "
+"position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
 "粒子着色器是一种特殊类型的顶点着色器, 在物体被绘制之前运行. 它们用于计算材质"
 "属性, 如颜色, 位置和旋转. 它们与CanvasItem或Spatial的任何常规材质一起绘制, 这"
 "取决于它们是2D还是3D."
 
+#, fuzzy
 msgid ""
 "Particle shaders are unique because they are not used to draw the object "
 "itself; they are used to calculate particle properties, which are then used "
-"by the CanvasItem of Spatial shader. They contain only a vertex processor "
-"function that outputs multiple properties (see built-ins below)."
+"by the CanvasItem of Spatial shader. They contain two processor functions: "
+"``start()`` and ``process()``."
 msgstr ""
 "粒子着色器是独特的, 因为它们不用于绘制对象本身；被用来计算粒子的性质, 然后由"
 "空间着色器的画布组件使用. 它们只包含一个顶点处理器函数, 输出多个属性的内置函"
 "数(见下文)."
 
 msgid ""
-"Particle shaders use a transform feedback shader, which is a special type of "
-"vertex shader that runs on its own. It takes in data in a buffer like a "
-"regular vertex shader does, but it also outputs to data buffers instead of "
-"outputting to the fragment shader for pixel-processing. Because of this, "
-"transform feedback shaders can build on themselves each run, unlike other "
-"shaders that discard the data they have calculated once they draw to the "
-"frame buffer."
+"Unlike other shader types, particle shaders keep the data that was output "
+"the previous frame. Therefore, particle shaders can be used for complex "
+"effects that take place over multiple frames."
 msgstr ""
-"粒子着色器使用转换反馈着色器, 这是一种单独运行的特殊类型的顶点着色器. 它像普"
-"通顶点着色器那样在缓冲区中接受数据, 但是也输出到数据缓冲区, 而不是输出到片段"
-"着色器进行像素处理. 正因为如此, 转换反馈着色器可以在每次运行时自行构建, 与其"
-"他着色器不同, 其他着色器一旦绘制到帧缓冲区, 就会丢弃它们计算的数据."
 
+#, fuzzy
 msgid ""
-"Particle shaders are only available in the GLES3 backend. If you need "
-"particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
+"Particle shaders are only available with GPU-based particle nodes (:ref:"
+"`class_GPUParticles2D` and :ref:`class_GPUParticles3D`)."
 msgstr ""
 "粒子着色器仅在 GLES3 后端中可用。如果您需要在 GLES2 中使用粒子系统，请使用 :"
 "ref:`CPUParticles <class_CPUParticles>`\\ 。"
+
+msgid ""
+"CPU-based particle nodes (:ref:`class_CPUParticles2D` and :ref:"
+"`class_CPUParticles3D`) are *rendered* on the GPU (which means they can use "
+"custom CanvasItem or Spatial shaders), but their motion is *simulated* on "
+"the CPU."
+msgstr ""
 
 msgid "Render modes"
 msgstr "渲染模式"
@@ -79,8 +81,8 @@ msgstr "不要在重启时清除以前的数据."
 msgid "**disable_force**"
 msgstr "**disable_force**"
 
-msgid "Disable attractor force. (Not currently implemented in 3.1)"
-msgstr "禁用吸引力。（目前在 3.1 版本中未实现）"
+msgid "Disable attractor force."
+msgstr ""
 
 msgid "**disable_velocity**"
 msgstr "**disable_velocity**"
@@ -116,60 +118,39 @@ msgstr "in float **TIME**"
 msgid "Global time, in seconds."
 msgstr "全球时间, 以秒为单位."
 
-msgid "Vertex built-ins"
+#, fuzzy
+msgid "in float **PI**"
+msgstr "in float **TIME**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **TAU**"
+msgstr "in float **DELTA**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **E**"
+msgstr "in float **TIME**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
+
+#, fuzzy
+msgid "Start and Process built-ins"
 msgstr "顶点内置"
 
-msgid ""
-"In order to use the ``COLOR`` variable in a SpatialMaterial, set "
-"``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
-"the ``COLOR`` variable."
-msgstr ""
-"为了在SpatialMaterial中使用 ``COLOR`` 变量, 将 ``use_vertex_as_albedo`` 设置"
-"为 ``true`` . 在ShaderMaterial中, 用 ``COLOR`` 变量访问它."
-
-msgid "inout vec4 **COLOR**"
-msgstr "inout vec4 **COLOR**"
-
-msgid ""
-"Particle color, can be written to and accessed in mesh's vertex function."
-msgstr "粒子的颜色, 可以写入Mesh的顶点函数中, 也可以访问."
-
-msgid "inout vec3 **VELOCITY**"
-msgstr "inout vec3 **VELOCITY**"
-
-msgid "Particle velocity, can be modified."
-msgstr "粒子速度, 可以修改."
-
-msgid "out float **MASS**"
-msgstr "out float **MASS**"
-
-msgid "Particle mass, use for attractors (not implemented in 3.1)."
-msgstr "粒子质量, 用于吸引器(在3.1中没有实现)."
-
-msgid "inout bool **ACTIVE**"
-msgstr "inout bool **ACTIVE**"
-
-msgid "``true`` when Particle is active, can be set to ``false``."
-msgstr "当粒子被激活时为 ``true`` , 可以设置为 ``false`` ."
-
-msgid "in bool **RESTART**"
-msgstr "in bool **RESTART**"
-
-msgid "``true`` when particle must restart (lifetime cycled)."
-msgstr "``true`` 当粒子必须重新启动时(生命周期循环)."
-
-msgid "inout vec4 **CUSTOM**"
-msgstr "inout vec4 **CUSTOM**"
-
-msgid ""
-"Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
-msgstr "自定义粒子数据。网格的着色器可以使用 **INSTANCE_CUSTOM** 访问。"
-
-msgid "inout mat4 **TRANSFORM**"
-msgstr "inout mat4 **TRANSFORM**"
-
-msgid "Particle transform."
-msgstr "粒子变换。"
+msgid "Function"
+msgstr "函数"
 
 msgid "in float **LIFETIME**"
 msgstr "in float **LIFETIME**"
@@ -189,7 +170,8 @@ msgstr "in uint **NUMBER**"
 msgid "Unique number since emission start."
 msgstr "发射开始后的唯一编号。"
 
-msgid "in int **INDEX**"
+#, fuzzy
+msgid "in uint **INDEX**"
 msgstr "in int **INDEX**"
 
 msgid "Particle index (from total particles)."
@@ -206,6 +188,192 @@ msgstr "in uint **RANDOM_SEED**"
 
 msgid "Random seed used as base for random."
 msgstr "随机种子，是随机的基础。"
+
+msgid "inout bool **ACTIVE**"
+msgstr "inout bool **ACTIVE**"
+
+#, fuzzy
+msgid "``true`` when the particle is active, can be set ``false``."
+msgstr "当粒子被激活时为 ``true`` , 可以设置为 ``false`` ."
+
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **COLOR**"
+
+msgid ""
+"Particle color, can be written to and accessed in mesh's vertex function."
+msgstr "粒子的颜色, 可以写入Mesh的顶点函数中, 也可以访问."
+
+msgid "inout vec3 **VELOCITY**"
+msgstr "inout vec3 **VELOCITY**"
+
+msgid "Particle velocity, can be modified."
+msgstr "粒子速度, 可以修改."
+
+msgid "inout mat4 **TRANSFORM**"
+msgstr "inout mat4 **TRANSFORM**"
+
+msgid "Particle transform."
+msgstr "粒子变换。"
+
+msgid "inout vec4 **CUSTOM**"
+msgstr "inout vec4 **CUSTOM**"
+
+msgid ""
+"Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
+msgstr "自定义粒子数据。网格的着色器可以使用 **INSTANCE_CUSTOM** 访问。"
+
+#, fuzzy
+msgid "inout float **MASS**"
+msgstr "out float **MASS**"
+
+msgid ""
+"Particle mass, intended to be used with attractors. Equals ``1.0`` by "
+"default."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In order to use the ``COLOR`` variable in a StandardMaterial3D, set "
+"``vertex_color_use_as_albedo`` to ``true``. In a ShaderMaterial, access it "
+"with the ``COLOR`` variable."
+msgstr ""
+"为了在SpatialMaterial中使用 ``COLOR`` 变量, 将 ``use_vertex_as_albedo`` 设置"
+"为 ``true`` . 在ShaderMaterial中, 用 ``COLOR`` 变量访问它."
+
+#, fuzzy
+msgid "Start built-ins"
+msgstr "顶点内置"
+
+#, fuzzy
+msgid "in bool **RESTART_POSITION**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "in bool **RESTART_ROT_SCALE**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "in bool **RESTART_VELOCITY**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "in bool **RESTART_COLOR**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "in bool **RESTART_CUSTOM**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "Process built-ins"
+msgstr "顶点内置"
+
+msgid "in bool **RESTART**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "``true`` if the current process frame is first for the particle."
+msgstr "``true`` , 如果当前面是正面."
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_POSITION**"
+msgstr "in uint **RANDOM_SEED**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign a position to a new particle's transform."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_ROT_SCALE**"
+msgstr "in uint **RANDOM_SEED**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign the rotation and scale to a new particle's transform."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_VELOCITY**"
+msgstr "inout vec3 **VELOCITY**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign a velocity to a new particle."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_COLOR**"
+msgstr "in vec3 **LIGHT_COLOR**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign a color to a new particle."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_CUSTOM**"
+msgstr "in uint **RANDOM_SEED**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign a custom data vector to a new particle."
+msgstr ""
+
+#, fuzzy
+msgid "in bool **COLLIDED**"
+msgstr "inout bool **ACTIVE**"
+
+#, fuzzy
+msgid "``true`` when the particle has collided with a particle collider."
+msgstr "``true`` 当粒子必须重新启动时(生命周期循环)."
+
+#, fuzzy
+msgid "in vec3 **COLLISION_NORMAL**"
+msgstr "in vec3 **NORMAL**"
+
+msgid ""
+"A normal of the last collision. If there is no collision detected it is "
+"equal to ``vec3(0.0)``."
+msgstr ""
+
+#, fuzzy
+msgid "in float **COLLISION_DEPTH**"
+msgstr "inout float **NORMALMAP_DEPTH**"
+
+msgid ""
+"A length of normal of the last collision. If there is no collision detected "
+"it is equal to ``0.0``."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **ATTRACTOR_FORCE**"
+msgstr "in vec3 **ATTENUATION**"
+
+msgid "A combined force of the attractors at the moment on that particle."
+msgstr ""
+
+#, fuzzy
+msgid "in vec4 **USERDATAX**"
+msgstr "in vec3 **VERTEX**"
+
+msgid ""
+"Vector that enables the integration of supplementary user-defined data into "
+"the particle process shader. ``USERDATAX`` are six built-ins identified by "
+"number, ``X`` can be numbers between 1 and 6."
+msgstr ""
+
+#, fuzzy
+msgid "Process functions"
+msgstr "处理器函数"
+
+msgid ""
+"bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 "
+"custom, uint flags)"
+msgstr ""
+
+msgid "Forces to emit a particle from a sub-emitter."
+msgstr ""
 
 msgid "Translation status"
 msgstr "翻译状态"

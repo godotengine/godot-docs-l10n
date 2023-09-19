@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,29 +21,384 @@ msgid "Documentation changelog"
 msgstr "Dokumentaation muutosloki"
 
 msgid ""
-"The documentation is continually being improved. The release of version 3.2 "
-"includes many new tutorials, many fixes and updates for old tutorials, and "
-"many updates to the :ref:`class reference <doc_class_reference>`. Below is a "
-"list of new tutorials added since version 3.1."
+"The documentation is continually being improved. New releases include new "
+"pages, fixes and updates to existing pages, and many updates to the :ref:"
+"`class reference <doc_class_reference>`. Below is a list of new pages added "
+"since version 3.0."
 msgstr ""
 
 msgid ""
-"This document only contains new tutorials so not all changes are reflected, "
-"many tutorials have been substantially updated but are not reflected in this "
-"document."
+"This document only contains new pages so not all changes are reflected, many "
+"pages have been substantially updated but are not reflected in this document."
 msgstr ""
 
-msgid "New tutorials since version 3.1"
+#, fuzzy
+msgid "New pages since version 4.0"
+msgstr "Uudet oppaat versiosta 3.0 lähtien"
+
+msgid "Development"
+msgstr "Kehitys"
+
+#, fuzzy
+msgid ":ref:`doc_internal_rendering_architecture`"
+msgstr ":ref:`doc_beziers_and_curves`"
+
+#, fuzzy
+msgid ":ref:`doc_using_sanitizers`"
+msgstr ":ref:`doc_using_servers`"
+
+#, fuzzy
+msgid "Migrating"
+msgstr "Valon valmismuuttujat"
+
+#, fuzzy
+msgid ":ref:`doc_upgrading_to_godot_4.1`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "Physics"
+msgstr "Fysiikkamallinnus"
+
+#, fuzzy
+msgid ":ref:`doc_troubleshooting_physics_issues`"
+msgstr ":ref:`doc_webrtc`"
+
+#, fuzzy
+msgid "New pages since version 3.6"
+msgstr "Uudet oppaat versiosta 3.0 lähtien"
+
+msgid "2D"
+msgstr "2D"
+
+#, fuzzy
+msgid ":ref:`doc_2d_antialiasing`"
+msgstr ":ref:`doc_2d_sprite_animation`"
+
+msgid "3D"
+msgstr "3D"
+
+#, fuzzy
+msgid ":ref:`doc_3d_antialiasing`"
+msgstr ":ref:`doc_godot_notifications`"
+
+#, fuzzy
+msgid ":ref:`doc_faking_global_illumination`"
+msgstr ":ref:`doc_interpolation`"
+
+#, fuzzy
+msgid ":ref:`doc_introduction_to_global_illumination`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+#, fuzzy
+msgid ":ref:`doc_mesh_lod`"
+msgstr ":ref:`doc_2d_meshes`"
+
+#, fuzzy
+msgid ":ref:`doc_occlusion_culling`"
+msgstr ":ref:`doc_using_multimesh`"
+
+#, fuzzy
+msgid ":ref:`doc_using_sdfgi`"
+msgstr ":ref:`doc_using_servers`"
+
+#, fuzzy
+msgid ":ref:`doc_using_decals`"
+msgstr ":ref:`doc_signals`"
+
+#, fuzzy
+msgid ":ref:`doc_visibility_ranges`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+#, fuzzy
+msgid ":ref:`doc_volumetric_fog`"
+msgstr ":ref:`doc_webrtc`"
+
+#, fuzzy
+msgid ":ref:`doc_variable_rate_shading`"
+msgstr ":ref:`doc_particle_shader`"
+
+#, fuzzy
+msgid ":ref:`doc_physical_light_and_camera_units`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "Animation"
+msgstr "Animaatio"
+
+#, fuzzy
+msgid ":ref:`doc_creating_movies`"
+msgstr ":ref:`doc_making_trees`"
+
+msgid "Assets pipeline"
 msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_retargeting_3d_skeletons`"
+msgstr ":ref:`doc_making_trees`"
+
+#, fuzzy
+msgid ":ref:`doc_custom_platform_ports`"
+msgstr ":ref:`doc_using_multimesh`"
+
+#, fuzzy
+msgid ":ref:`doc_upgrading_to_godot_4`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+#, fuzzy
+msgid ":ref:`doc_large_world_coordinates`"
+msgstr ":ref:`doc_godot_interfaces`"
+
+msgid "Scripting"
+msgstr "Skriptaus"
+
+#, fuzzy
+msgid ":ref:`doc_custom_performance_monitors`"
+msgstr ":ref:`doc_data_preferences`"
+
+#, fuzzy
+msgid ":ref:`doc_c_sharp_collections`"
+msgstr ":ref:`doc_interpolation`"
+
+#, fuzzy
+msgid ":ref:`doc_c_sharp_global_classes`"
+msgstr "Katso myös: :ref:`doc_c_sharp_signals`."
+
+#, fuzzy
+msgid ":ref:`doc_c_sharp_variant`"
+msgstr ":ref:`doc_2d_sprite_animation`"
+
+msgid "Shaders"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_compute_shaders`"
+msgstr ":ref:`doc_particle_shader`"
+
+msgid "Workflow"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_pr_review_guidelines`"
+msgstr ":ref:`doc_data_preferences`"
+
+msgid "XR"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_introducing_xr_tools`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+#, fuzzy
+msgid ":ref:`doc_xr_action_map`"
+msgstr ":ref:`doc_interpolation`"
+
+#, fuzzy
+msgid ":ref:`doc_deploying_to_android`"
+msgstr ":ref:`doc_webrtc`"
+
+#, fuzzy
+msgid "New pages since version 3.5"
+msgstr "Uudet oppaat versiosta 3.0 lähtien"
+
+msgid "None."
+msgstr ""
+
+#, fuzzy
+msgid "New pages since version 3.4"
+msgstr "Uudet oppaat versiosta 3.0 lähtien"
+
+#, fuzzy
+msgid ":ref:`doc_3d_text`"
+msgstr ":ref:`doc_webrtc`"
+
+#, fuzzy
+msgid ":ref:`doc_playing_videos`"
+msgstr ":ref:`doc_making_trees`"
+
+msgid "Editor"
+msgstr "Editori"
+
+#, fuzzy
+msgid ":ref:`doc_managing_editor_features`"
+msgstr ":ref:`doc_making_trees`"
+
+#, fuzzy
+msgid "New pages since version 3.3"
+msgstr "Uudet oppaat versiosta 3.0 lähtien"
+
+msgid "C++"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_cpp_usage_guidelines`"
+msgstr ":ref:`doc_using_multimesh`"
+
+msgid "GDScript"
+msgstr "GDScript"
+
+#, fuzzy
+msgid ":ref:`doc_gdscript_documentation_comments`"
+msgstr ":ref:`doc_gui_containers`"
+
+#, fuzzy
+msgid "New pages since version 3.2"
+msgstr "Uudet oppaat versiosta 3.0 lähtien"
+
+#, fuzzy
+msgid ":ref:`doc_3d_rendering_limitations`"
+msgstr ":ref:`doc_2d_sprite_animation`"
+
+msgid "About"
+msgstr "Tietoja"
+
+#, fuzzy
+msgid ":ref:`doc_troubleshooting`"
+msgstr ":ref:`doc_interpolation`"
+
+#, fuzzy
+msgid ":ref:`doc_list_of_features`"
+msgstr ":ref:`doc_input_examples`"
+
+#, fuzzy
+msgid ":ref:`doc_release_policy`"
+msgstr ":ref:`doc_surfacetool`"
+
+msgid "Best practices"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_version_control_systems`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+msgid "Community"
+msgstr "Yhteisö"
+
+#, fuzzy
+msgid ":ref:`doc_best_practices_for_engine_contributors`"
+msgstr "Katso :ref:`doc_ways_to_contribute`."
+
+#, fuzzy
+msgid ":ref:`doc_bisecting_regressions`"
+msgstr ":ref:`doc_using_servers`"
+
+#, fuzzy
+msgid ":ref:`doc_editor_and_docs_localization`"
+msgstr "Katso :ref:`doc_instancing` oppiaksesi enemmän ilmentymistä."
+
+#, fuzzy
+msgid ":ref:`doc_introduction_to_editor_development`"
+msgstr "Johdanto vienteihin"
+
+#, fuzzy
+msgid ":ref:`doc_editor_style_guide`"
+msgstr ":ref:`doc_inspector_plugins`"
+
+#, fuzzy
+msgid ":ref:`doc_common_engine_methods_and_macros`"
+msgstr ":ref:`doc_beziers_and_curves`"
+
+#, fuzzy
+msgid ":ref:`doc_vulkan_validation_layers`"
+msgstr ":ref:`doc_animation_tree`"
+
+#, fuzzy
+msgid ":ref:`doc_gdscript_grammar`"
+msgstr ":ref:`doc_2d_sprite_animation`"
+
+msgid "Configuring an IDE: :ref:`doc_configuring_an_ide_code_blocks`"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_default_key_mapping`"
+msgstr ":ref:`doc_2d_sprite_animation`"
+
+#, fuzzy
+msgid ":ref:`doc_using_the_web_editor`"
+msgstr ":ref:`doc_using_servers`"
+
+msgid "Export"
+msgstr "Vie"
+
+#, fuzzy
+msgid ":ref:`doc_exporting_for_dedicated_servers`"
+msgstr "Vienti Google Play -kauppaan"
+
+msgid "Input"
+msgstr "Syöte"
+
+msgid ":ref:`doc_controllers_gamepads_joysticks`"
+msgstr ""
+
+msgid "Math"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_random_number_generation`"
+msgstr "Satunnaisfunktiot"
+
+msgid "Platform-specific"
+msgstr "Alustakohtaista"
+
+#, fuzzy
+msgid ":ref:`doc_plugins_for_ios`"
+msgstr ":ref:`doc_inspector_plugins`"
+
+#, fuzzy
+msgid ":ref:`doc_ios_plugin`"
+msgstr ":ref:`doc_android_plugin`"
+
+#, fuzzy
+msgid ":ref:`doc_html5_shell_classref`"
+msgstr ":ref:`doc_spatial_shader`"
+
+#, fuzzy
+msgid ":ref:`doc_collision_shapes_2d`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+#, fuzzy
+msgid ":ref:`doc_collision_shapes_3d`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+#, fuzzy
+msgid ":ref:`doc_shaders_style_guide`"
+msgstr ":ref:`doc_particle_shader`"
+
+#, fuzzy
+msgid ":ref:`doc_debugger_panel`"
+msgstr "GDScript :ref:`debuggeri <doc_debugger_panel>`."
+
+#, fuzzy
+msgid ":ref:`doc_creating_script_templates`"
+msgstr "Skriptin luonti"
+
+#, fuzzy
+msgid ":ref:`doc_evaluating_expressions`"
+msgstr "Laske valinnan tulos"
+
+#, fuzzy
+msgid ":ref:`doc_what_is_gdextension`"
+msgstr ":ref:`doc_making_trees`"
+
+msgid ""
+":ref:`doc_gdscript_warning_system` (split from :ref:"
+"`doc_gdscript_static_typing`)"
+msgstr ""
+
+#, fuzzy
+msgid "User Interface (UI)"
+msgstr "Godotin käyttöliittymät"
+
+#, fuzzy
+msgid ":ref:`doc_control_node_gallery`"
+msgstr ":ref:`doc_visual_shader_plugins`"
+
+#, fuzzy
+msgid "New pages since version 3.1"
+msgstr "Uudet oppaat versiosta 3.0 lähtien"
 
 msgid "Project workflow"
 msgstr "Projektin työnkulku"
 
 msgid ":ref:`doc_android_custom_build`"
 msgstr ""
-
-msgid "2D"
-msgstr "2D"
 
 msgid ":ref:`doc_2d_sprite_animation`"
 msgstr ":ref:`doc_2d_sprite_animation`"
@@ -57,9 +412,6 @@ msgstr ":ref:`doc_complying_with_licenses`"
 
 msgid ":ref:`doc_sync_with_audio`"
 msgstr ":ref:`doc_sync_with_audio`"
-
-msgid "Math"
-msgstr ""
 
 msgid ":ref:`doc_beziers_and_curves`"
 msgstr ":ref:`doc_beziers_and_curves`"
@@ -108,17 +460,6 @@ msgstr ""
 msgid ":ref:`doc_webrtc`"
 msgstr ":ref:`doc_webrtc`"
 
-msgid "VR"
-msgstr "Virtuaalitodellisuus, VR"
-
-#, fuzzy
-msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`doc_2d_sprite_animation`"
-
-#, fuzzy
-msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ":ref:`doc_spatial_shader`"
-
 msgid "Plugins"
 msgstr "Liitännäiset"
 
@@ -155,7 +496,8 @@ msgstr ":ref:`doc_surfacetool`"
 msgid ":ref:`doc_meshdatatool`"
 msgstr ":ref:`doc_meshdatatool`"
 
-msgid ":ref:`doc_immediategeometry`"
+#, fuzzy
+msgid ":ref:`doc_immediatemesh`"
 msgstr ":ref:`doc_immediategeometry`"
 
 msgid "Optimization"
@@ -173,7 +515,8 @@ msgstr "Laillinen"
 msgid ":ref:`doc_complying_with_licenses`"
 msgstr ":ref:`doc_complying_with_licenses`"
 
-msgid "New tutorials since version 3.0"
+#, fuzzy
+msgid "New pages since version 3.0"
 msgstr "Uudet oppaat versiosta 3.0 lähtien"
 
 msgid "Step by step"
@@ -182,12 +525,8 @@ msgstr "Kohta kohdalta"
 msgid ":ref:`doc_signals`"
 msgstr ":ref:`doc_signals`"
 
-#, fuzzy
-msgid ":ref:`doc_exporting_basics`"
-msgstr ":ref:`doc_webrtc`"
-
-msgid "Scripting"
-msgstr "Skriptaus"
+msgid "Exporting"
+msgstr "Vienti"
 
 msgid ":ref:`doc_gdscript_static_typing`"
 msgstr ""
@@ -231,9 +570,6 @@ msgstr ""
 msgid ":ref:`doc_2d_meshes`"
 msgstr ":ref:`doc_2d_meshes`"
 
-msgid "3D"
-msgstr "3D"
-
 msgid ":ref:`doc_csg_tools`"
 msgstr ""
 
@@ -243,17 +579,11 @@ msgstr ":ref:`doc_animating_thousands_of_fish`"
 msgid ":ref:`doc_controlling_thousands_of_fish`"
 msgstr ""
 
-msgid "Physics"
-msgstr "Fysiikkamallinnus"
-
 msgid ":ref:`doc_ragdoll_system`"
 msgstr ""
 
 msgid ":ref:`doc_soft_body`"
 msgstr ""
-
-msgid "Animation"
-msgstr "Animaatio"
 
 msgid ":ref:`doc_2d_skeletons`"
 msgstr ""
@@ -301,11 +631,9 @@ msgstr ":ref:`doc_particle_shader`"
 msgid ":ref:`doc_making_main_screen_plugins`"
 msgstr ":ref:`doc_making_main_screen_plugins`"
 
-msgid ":ref:`doc_spatial_gizmo_plugins`"
+#, fuzzy
+msgid ":ref:`doc_3d_gizmo_plugins`"
 msgstr ":ref:`doc_spatial_gizmo_plugins`"
-
-msgid "Platform-specific"
-msgstr "Alustakohtaista"
 
 msgid ":ref:`doc_customizing_html5_shell`"
 msgstr ""
@@ -326,9 +654,6 @@ msgid ":ref:`doc_running_code_in_the_editor`"
 msgstr ""
 
 msgid ":ref:`doc_change_scenes_manually`"
-msgstr ""
-
-msgid ":ref:`doc_gles2_gles3_differences`"
 msgstr ""
 
 msgid "Compiling"

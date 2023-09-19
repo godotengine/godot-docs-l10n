@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,19 +23,27 @@ msgstr "Usando um editor de texto externo"
 msgid "This page explains how to code using an external text editor."
 msgstr "Esta página explica como codificar usando um editor de texto externo."
 
+#, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
-"Visual Studio Code. Browse to the relevant editor settings: ``Editor -> "
-"Editor Settings -> Text Editor -> External``"
+"Visual Studio Code. Browse to the relevant editor settings: **Editor > "
+"Editor Settings > Text Editor > External**"
 msgstr ""
 "Godot pode ser usado com um editor de texto externo, como Sublime Text ou "
 "Visual Studio Code. Para ativar um editor de texto externo, vá para: "
 "``Editor -> Configurações do Editor -> Text Editor -> External``"
 
+msgid "Text Editor > External section of the Editor Settings"
+msgstr ""
+
+msgid "**Text Editor > External** section of the Editor Settings"
+msgstr ""
+
+#, fuzzy
 msgid ""
-"There are two fields: the executable path and command-line flags. The flags "
-"allow you to integrate the editor with Godot, passing it the file path to "
-"open and other relevant arguments. Godot will replace the following "
+"There are two text fields: the executable path and command-line flags. The "
+"flags allow you to integrate the editor with Godot, passing it the file path "
+"to open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
 "Existem dois campos: o caminho do executável e os sinalizadores da linha de "
@@ -74,7 +82,8 @@ msgstr "``{linha}``"
 msgid "The line number of the error"
 msgstr "O número da linha do erro"
 
-msgid "Some example Exec Flags for various editors include:"
+#, fuzzy
+msgid "Some example **Exec Flags** for various editors include:"
 msgstr "Alguns exemplos de Exec Flags para vários editores incluem:"
 
 msgid "Editor"
@@ -89,8 +98,8 @@ msgstr "Geany/Kate"
 msgid "``{file} --line {line} --column {col}``"
 msgstr "``{arquivo} --linha {linha} --coluna {coluna}``"
 
-msgid "Atom/Sublime Text"
-msgstr "Atom/Sublime Text"
+msgid "Atom"
+msgstr ""
 
 msgid "``{file}:{line}``"
 msgstr "``{arquivo}:{linha}``"
@@ -120,14 +129,37 @@ msgstr "Emacs"
 msgid "``emacs +{line}:{col} {file}``"
 msgstr "``\"+call cursor({linha}, {coluna})\" {arquivo}``"
 
+#, fuzzy
+msgid "Sublime Text"
+msgstr "Atom/Sublime Text"
+
+#, fuzzy
+msgid "``{project} {file}:{line}:{column}``"
+msgstr "``{projeto} --goto {arquivo}:{linha}:{coluna}``"
+
 msgid ""
-"For Visual Studio Code, you will have to point to the ``code.cmd`` file. For "
-"Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
+"For Visual Studio Code on Windows, you will have to point to the ``code."
+"cmd`` file."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
 "server mode."
 msgstr ""
 "Para o Visual Studio Code, você terá que apontar para o arquivo ``code."
 "cmd``. Para o Emacs, você pode chamar ``emacsclient`` ao invés de ``emacs`` "
 "se você utilizar o modo servidor."
+
+#, fuzzy
+msgid "Using External Editor in Debugger"
+msgstr "Usando um editor de texto externo"
+
+msgid ""
+"Using external editor in debugger is determined by a separate option in "
+"settings. For details, see :ref:`Script editor debug tools and options "
+"<doc_debugger_tools_and_options>`."
+msgstr ""
 
 msgid "Official editor plugins"
 msgstr "Editor oficial de plugins"

@@ -1,0 +1,470 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Large world coordinates"
+msgstr "Tangente in lokalen Koordinaten."
+
+msgid ""
+"Large world coordinates are mainly useful in 3D projects; they are rarely "
+"required in 2D projects. Also, unlike 3D rendering, 2D rendering currently "
+"doesn't benefit from increased precision when large world coordinates are "
+"enabled."
+msgstr ""
+
+#, fuzzy
+msgid "Why use large world coordinates?"
+msgstr "Maus und Eingabe Koordinaten"
+
+msgid ""
+"In Godot, physics simulation and rendering both rely on *floating-point* "
+"numbers. However, in computing, floating-point numbers have **limited "
+"precision and range**. This can be a problem for games with huge worlds, "
+"such as space or planetary-scale simulation games."
+msgstr ""
+
+msgid ""
+"Precision is the greatest when the value is close to ``0.0``. Precision "
+"becomes gradually lower as the value increases or decreases away from "
+"``0.0``. This occurs every time the floating-point number's *exponent* "
+"increases, which happens when the floating-point number surpasses a power of "
+"2 value (2, 4, 8, 16, …). Every time this occurs, the number's minimum step "
+"will *increase*, resulting in a loss of precision."
+msgstr ""
+
+msgid ""
+"In practice, this means that as the player moves away from the world origin "
+"(``Vector2(0, 0)`` in 2D games or ``Vector3(0, 0, 0)`` in 3D games), "
+"precision will decrease."
+msgstr ""
+
+msgid ""
+"This loss of precision can result in objects appearing to \"vibrate\" when "
+"far away from the world origin, as the model's position will snap to the "
+"nearest value that can be represented in a floating-point number. This can "
+"also result in physics glitches that only occur when the player is far from "
+"the world origin."
+msgstr ""
+
+msgid ""
+"The range determines the minimum and maximum values that can be stored in "
+"the number. If the player tries to move past this range, they will simply "
+"not be able to. However, in practice, floating-point precision almost always "
+"becomes a problem before the range does."
+msgstr ""
+
+msgid ""
+"The range and precision (minimum step between two exponent intervals) are "
+"determined by the floating-point number type. The *theoretical* range allows "
+"extremely high values to be stored in single-precision floats, but with very "
+"low precision. In practice, a floating-point type that cannot represent all "
+"integer values is not very useful. At extreme values, precision becomes so "
+"low that the number cannot even distinguish two separate *integer* values "
+"from each other."
+msgstr ""
+
+msgid ""
+"This is the range where individual integer values can be represented in a "
+"floating-point number:"
+msgstr ""
+
+msgid ""
+"**Single-precision float range (represent all integers):** Between "
+"-16,777,216 and 16,777,216"
+msgstr ""
+
+msgid ""
+"**Double-precision float range (represent all integers):** Between -9 "
+"quadrillon and 9 quadrillon"
+msgstr ""
+
+#, fuzzy
+msgid "Range"
+msgstr "Veränderungen"
+
+#, fuzzy
+msgid "Single step"
+msgstr "Einfaches Anführungszeichen"
+
+#, fuzzy
+msgid "Double step"
+msgstr "Doppelte Anführungszeichen"
+
+msgid "Comment"
+msgstr "Kommentar"
+
+msgid "[1; 2]"
+msgstr ""
+
+msgid "~0.0000001"
+msgstr ""
+
+msgid "~1e-15"
+msgstr ""
+
+msgid "Precision becomes greater near 0.0 (this table is abbreviated)."
+msgstr ""
+
+msgid "[2; 4]"
+msgstr ""
+
+msgid "~0.0000002"
+msgstr ""
+
+msgid "[4; 8]"
+msgstr ""
+
+msgid "~0.0000005"
+msgstr ""
+
+msgid "[8; 16]"
+msgstr ""
+
+msgid "~0.000001"
+msgstr ""
+
+msgid "~1e-14"
+msgstr ""
+
+msgid "[16; 32]"
+msgstr ""
+
+msgid "~0.000002"
+msgstr ""
+
+msgid "[32; 64]"
+msgstr ""
+
+msgid "~0.000004"
+msgstr ""
+
+msgid "[64; 128]"
+msgstr ""
+
+msgid "~0.000008"
+msgstr ""
+
+msgid "~1e-13"
+msgstr ""
+
+msgid "[128; 256]"
+msgstr ""
+
+msgid "~0.000015"
+msgstr ""
+
+msgid "[256; 512]"
+msgstr ""
+
+msgid "~0.00003"
+msgstr ""
+
+msgid "[512; 1024]"
+msgstr ""
+
+msgid "~0.00006"
+msgstr ""
+
+msgid "~1e-12"
+msgstr ""
+
+msgid "[1024; 2048]"
+msgstr ""
+
+msgid "~0.0001"
+msgstr ""
+
+msgid "[2048; 4096]"
+msgstr ""
+
+msgid "~0.0002"
+msgstr ""
+
+msgid ""
+"Maximum *recommended* single-precision range for a first-person 3D game "
+"without rendering artifacts or physics glitches."
+msgstr ""
+
+msgid "[4096; 8192]"
+msgstr ""
+
+msgid "~0.0005"
+msgstr ""
+
+msgid ""
+"Maximum *recommended* single-precision range for a third-person 3D game "
+"without rendering artifacts or physics glitches."
+msgstr ""
+
+msgid "[8192; 16384]"
+msgstr ""
+
+msgid "~0.001"
+msgstr ""
+
+msgid "[16384; 32768]"
+msgstr ""
+
+msgid "~0.0019"
+msgstr ""
+
+msgid "~1e-11"
+msgstr ""
+
+msgid ""
+"Maximum *recommended* single-precision range for a top-down 3D game without "
+"rendering artifacts or physics glitches."
+msgstr ""
+
+msgid "[32768; 65536]"
+msgstr ""
+
+msgid "~0.0039"
+msgstr ""
+
+msgid ""
+"Maximum *recommended* single-precision range for any 3D game. Double "
+"precision (large world coordinates) is usually required past this point."
+msgstr ""
+
+msgid "[65536; 131072]"
+msgstr ""
+
+msgid "~0.0078"
+msgstr ""
+
+msgid "[131072; 262144]"
+msgstr ""
+
+msgid "~0.0156"
+msgstr ""
+
+msgid "~1e-10"
+msgstr ""
+
+msgid "> 262144"
+msgstr ""
+
+msgid "> ~0.0313"
+msgstr ""
+
+msgid "~1e-10 (0.0000000001)"
+msgstr ""
+
+msgid ""
+"Double-precision remains far more precise than single-precision past this "
+"value."
+msgstr ""
+
+msgid ""
+"When using single-precision floats, it is possible to go past the suggested "
+"ranges, but more visible artifacting will occur and physics glitches will be "
+"more common (such as the player not walking straight in certain directions)."
+msgstr ""
+
+msgid ""
+"See the `Demystifying Floating Point Precision <https://blog.demofox."
+"org/2017/11/21/>`__ article for more information."
+msgstr ""
+
+#, fuzzy
+msgid "How large world coordinates work"
+msgstr "Hardware-Anzeigekoordinaten"
+
+msgid ""
+"Large world coordinates (also known as **double-precision physics**) "
+"increase the precision level of all floating-point computations within the "
+"engine."
+msgstr ""
+
+msgid ""
+"By default, :ref:`class_float` is 64-bit in GDScript, but :ref:"
+"`class_Vector2`, :ref:`class_Vector3` and :ref:`class_Vector4` are 32-bit. "
+"This means that the precision of vector types is much more limited. To "
+"resolve this, we can increase the number of bits used to represent a "
+"floating-point number in a Vector type. This results in an *exponential* "
+"increase in precision, which means the final value is not just twice as "
+"precise, but potentially thousands of times more precise at high values. The "
+"maximum value that can be represented is also greatly increased by going "
+"from a single-precision float to a double-precision float."
+msgstr ""
+
+msgid ""
+"To avoid model snapping issues when far away from the world origin, Godot's "
+"3D rendering engine will increase its precision for rendering operations "
+"when large world coordinates are enabled. The shaders do not use double-"
+"precision floats for performance reasons, but an `alternative solution "
+"<https://github.com/godotengine/godot/pull/66178>`__ is used to emulate "
+"double precision for rendering using single-precision floats."
+msgstr ""
+
+msgid ""
+"Enabling large world coordinates comes with a performance and memory usage "
+"penalty, especially on 32-bit CPUs. Only enable large world coordinates if "
+"you actually need them."
+msgstr ""
+
+msgid ""
+"This feature is tailored towards mid-range/high-end desktop platforms. Large "
+"world coordinates may not perform well on low-end mobile devices, unless you "
+"take steps to reduce CPU usage with other means (such as decreasing the "
+"number of physics ticks per second)."
+msgstr ""
+
+msgid ""
+"On low-end platforms, an *origin shifting* approach can be used instead to "
+"allow for large worlds without using double-precision physics and rendering. "
+"Origin shifting works with single-precision floats, but it introduces more "
+"complexity to game logic, especially in multiplayer games. Therefore, origin "
+"shifting is not detailed on this page."
+msgstr ""
+
+msgid "Who are large world coordinates for?"
+msgstr ""
+
+msgid ""
+"Large world coordinates are typically required for 3D space or planetary-"
+"scale simulation games. This extends to games that require supporting *very* "
+"fast movement speeds, but also very slow *and* precise movements at times."
+msgstr ""
+
+msgid ""
+"On the other hand, it's important to only use large world coordinates when "
+"actually required (for performance reasons). Large world coordinates are "
+"usually **not** required for:"
+msgstr ""
+
+msgid "2D games, as precision issues are usually less noticeable."
+msgstr ""
+
+msgid "Games with small-scale or medium-scale worlds."
+msgstr ""
+
+msgid ""
+"Games with large worlds, but split into different levels with loading "
+"sequences in between. You can center each level portion around the world "
+"origin to avoid precision issues without a performance penalty."
+msgstr ""
+
+msgid ""
+"Open world games with a *playable on-foot area* not exceeding 8192×8192 "
+"meters (centered around the world origin). As shown in the above table, the "
+"level of precision remains acceptable within that range, even for a first-"
+"person game."
+msgstr ""
+
+msgid ""
+"**If in doubt**, you probably don't need to use large world coordinates in "
+"your project. For reference, most modern AAA open world titles don't use a "
+"large world coordinates system and still rely on single-precision floats for "
+"both rendering and physics."
+msgstr ""
+
+#, fuzzy
+msgid "Enabling large world coordinates"
+msgstr "Binormal in lokalen Koordinaten."
+
+msgid ""
+"This process requires recompiling the editor and all export template "
+"binaries you intend to use. If you only intend to export your project in "
+"release mode, you can skip the compilation of debug export templates. In any "
+"case, you'll need to compile an editor build so you can test your large "
+"precision world without having to export the project every time."
+msgstr ""
+
+msgid ""
+"See the :ref:`Compiling <toc-devel-compiling>` section for compiling "
+"instructions for each target platform. You will need to add the "
+"``precision=double`` SCons option when compiling the editor and export "
+"templates."
+msgstr ""
+
+msgid ""
+"The resulting binaries will be named with a ``.double`` suffix to "
+"distinguish them from single-precision binaries (which lack any precision "
+"suffix). You can then specify the binaries as custom export templates in "
+"your project's export presets in the Export dialog."
+msgstr ""
+
+msgid "Compatibility between single-precision and double-precision builds"
+msgstr ""
+
+msgid ""
+"When saving a *binary* resource using the :ref:`class_ResourceSaver` "
+"singleton, a special flag is stored in the file if the resource was saved "
+"using a build that uses double-precision numbers. As a result, all binary "
+"resources will change on disk when you switch to a double-precision build "
+"and save over them."
+msgstr ""
+
+msgid ""
+"Both single-precision and double-precision builds support using the :ref:"
+"`class_ResourceLoader` singleton on resources that use this special flag. "
+"This means single-precision builds can load resources saved using double-"
+"precision builds and vice versa. Text-based resources don't store a double-"
+"precision flag, as they don't require such a flag for correct reading."
+msgstr ""
+
+msgid "Known incompatibilities"
+msgstr ""
+
+msgid ""
+"In a networked multiplayer game, the server and all clients should be using "
+"the same build type to ensure precision remains consistent across clients. "
+"Using different build types *may* work, but various issues can occur."
+msgstr ""
+
+msgid ""
+"The GDExtension API changes in an incompatible way in double-precision "
+"builds. This means extensions **must** be rebuilt to work with double-"
+"precision builds. On the extension developer's end, the ``REAL_T_IS_DOUBLE`` "
+"define is enabled when building a GDExtension with ``precision=double``. "
+"``real_t`` can be used as an alias for ``float`` in single-precision builds, "
+"and ``double`` in double-precision builds."
+msgstr ""
+
+msgid "Limitations"
+msgstr "Limitierungen"
+
+msgid ""
+"Since 3D rendering shaders don't actually use double-precision floats, there "
+"are some limitations when it comes to 3D rendering precision:"
+msgstr ""
+
+msgid ""
+"Shaders using the ``skip_vertex_transform`` or ``world_vertex_coords`` don't "
+"benefit from increased precision."
+msgstr ""
+
+msgid ""
+":ref:`Triplanar mapping <doc_standard_material_3d_triplanar_mapping>` "
+"doesn't benefit from increased precision. Materials using triplanar mapping "
+"will exhibit visible jittering when far away from the world origin."
+msgstr ""
+
+msgid ""
+"2D rendering currently doesn't benefit from increased precision when large "
+"world coordinates are enabled. This can cause visible model snapping to "
+"occur when far away from the world origin (starting from a few million "
+"pixels at typical zoom levels). 2D physics calculations will still benefit "
+"from increased precision though."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

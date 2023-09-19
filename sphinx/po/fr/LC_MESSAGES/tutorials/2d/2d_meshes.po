@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,9 +52,10 @@ msgstr ""
 "expérimenter de les créer vous-même en utilisant ``SurfaceTool`` à partir du "
 "code et les afficher dans un nœud ``MeshInstance2D``."
 
+#, fuzzy
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
-"importing an OBJ file as a mesh, or converting it from a Sprite."
+"importing an OBJ file as a mesh, or converting it from a Sprite2D."
 msgstr ""
 "Actuellement, la seule façon de générer un maillage 2D dans l'éditeur est "
 "soit d'importer un fichier OBJ en tant que maillage, soit de le convertir "
@@ -92,19 +93,23 @@ msgstr ""
 "La conversion en maillage garantit que seules les parties opaques seront "
 "dessinées et que le reste sera ignoré."
 
-msgid "Converting Sprites to 2D meshes"
+#, fuzzy
+msgid "Converting Sprite2Ds to 2D meshes"
 msgstr "Conversion de Sprites en maillages 2D"
 
+#, fuzzy
 msgid ""
-"You can take advantage of this optimization by converting a ``Sprite`` to a "
-"``MeshInstance2D``. Start with an image that contains large amounts of "
+"You can take advantage of this optimization by converting a ``Sprite2D`` to "
+"a ``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
 "Vous pouvez profiter de cette optimisation en convertissant un ``Sprite`` en "
 "``MeshInstance2D``. Commencez par une image qui contient beaucoup de "
 "transparence sur les bords, comme cet arbre :"
 
-msgid "Put it in a ``Sprite`` and select \"Convert to 2D Mesh\" from the menu:"
+#, fuzzy
+msgid ""
+"Put it in a ``Sprite2D`` and select \"Convert to 2D Mesh\" from the menu:"
 msgstr ""
 "Mettez-le dans un ``Sprite`` et sélectionnez \"Convert to 2D Mesh\" dans le "
 "menu :"
@@ -123,8 +128,9 @@ msgstr ""
 "pouvez modifier la croissance et la simplification en fonction de vos "
 "besoins :"
 
+#, fuzzy
 msgid ""
-"Finally, push the ``Convert 2D Mesh`` button and your Sprite will be "
+"Finally, push the ``Convert 2D Mesh`` button and your Sprite2D will be "
 "replaced:"
 msgstr ""
 "Finalement, appuyez sur le bouton \"Convert 2D Mesh\" et votre Sprite sera "

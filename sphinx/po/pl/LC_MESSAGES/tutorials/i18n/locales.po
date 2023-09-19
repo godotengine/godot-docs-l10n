@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "Locales"
-msgstr "Języki"
+#, fuzzy
+msgid "Locale codes"
+msgstr "Lokalne koordynaty"
 
 msgid ""
-"This is the list of supported locales and variants in the engine. It's based "
-"on the Unix standard locale strings:"
+"Locale code has the following format: ``language_Script_COUNTRY_VARIANT``, "
+"where:"
 msgstr ""
 
-msgid "Locale"
-msgstr "Ustawienia regionalne"
+msgid "``language`` - 2 or 3-letter language code, in lower case."
+msgstr ""
 
-msgid "Language and Variant"
-msgstr "Języki i ich rodzaje"
+msgid "``Script`` - optional, 4-letter script code, in title case."
+msgstr ""
+
+msgid "``COUNTRY`` - optional, 2-letter country code, in upper case."
+msgstr ""
+
+msgid ""
+"``VARIANT`` - optional, language variant, region and, sort order. A variant "
+"can have any number of underscored keywords."
+msgstr ""
+
+#, fuzzy
+msgid "List of supported language codes"
+msgstr "Animacja Sprita"
+
+#, fuzzy
+msgid "Language code"
+msgstr "Język"
+
+#, fuzzy
+msgid "Name"
+msgstr "Nazwa korzenia"
 
 msgid "aa"
 msgstr "aa"
@@ -37,23 +58,55 @@ msgstr "aa"
 msgid "Afar"
 msgstr "Afar"
 
-msgid "aa_DJ"
-msgstr "aa_DJ"
+#, fuzzy
+msgid "ab"
+msgstr "aabb"
 
-msgid "Afar (Djibouti)"
-msgstr "afar (Dżibuti)"
+msgid "Abkhazian"
+msgstr ""
 
-msgid "aa_ER"
-msgstr "aa_ER"
+#, fuzzy
+msgid "ace"
+msgstr "Przestrzeń"
 
-msgid "Afar (Eritrea)"
-msgstr "afar (Erytrea)"
+#, fuzzy
+msgid "Achinese"
+msgstr "chiński"
 
-msgid "aa_ET"
-msgstr "aa_ET"
+#, fuzzy
+msgid "ach"
+msgstr "match"
 
-msgid "Afar (Ethiopia)"
-msgstr "afar (Etiopia)"
+msgid "Acoli"
+msgstr ""
+
+#, fuzzy
+msgid "ada"
+msgstr "aa"
+
+msgid "Adangme"
+msgstr ""
+
+#, fuzzy
+msgid "ady"
+msgstr "i"
+
+msgid "Adyghe"
+msgstr ""
+
+#, fuzzy
+msgid "ae"
+msgstr "Zapisz"
+
+msgid "Avestan"
+msgstr ""
+
+#, fuzzy
+msgid "aeb"
+msgstr "Web"
+
+msgid "Tunisian Arabic"
+msgstr ""
 
 msgid "af"
 msgstr "af"
@@ -61,40 +114,105 @@ msgstr "af"
 msgid "Afrikaans"
 msgstr "afrykanerski"
 
-msgid "af_ZA"
-msgstr "af_ZA"
+#, fuzzy
+msgid "afh"
+msgstr "af"
 
-msgid "Afrikaans (South Africa)"
-msgstr "afrykanerski (Republika Południowej Afryki)"
+msgid "Afrihili"
+msgstr ""
 
-msgid "agr_PE"
-msgstr "agr_PE"
+#, fuzzy
+msgid "agq"
+msgstr "Tag"
 
-msgid "Aguaruna (Peru)"
+msgid "Aghem"
+msgstr ""
+
+#, fuzzy
+msgid "ain"
+msgstr "Main"
+
+msgid "Ainu"
+msgstr ""
+
+#, fuzzy
+msgid "agr"
+msgstr "ar"
+
+#, fuzzy
+msgid "Aguaruna"
 msgstr "aguaruna (Peru)"
 
-msgid "ak_GH"
-msgstr "ak_GH"
+msgid "ak"
+msgstr ""
 
-msgid "Akan (Ghana)"
-msgstr "akan (Ghana)"
+msgid "Akan"
+msgstr ""
 
-msgid "am_ET"
-msgstr "am_ET"
+msgid "akk"
+msgstr ""
 
-msgid "Amharic (Ethiopia)"
-msgstr "amharski (Etiopia)"
+msgid "Akkadian"
+msgstr ""
 
-msgid "an_ES"
-msgstr "an_ES"
+msgid "akz"
+msgstr ""
 
-msgid "Aragonese (Spain)"
+msgid "Alabama"
+msgstr ""
+
+#, fuzzy
+msgid "ale"
+msgstr "Skala"
+
+msgid "Aleut"
+msgstr ""
+
+#, fuzzy
+msgid "aln"
+msgstr "i"
+
+#, fuzzy
+msgid "Gheg Albanian"
+msgstr "albański"
+
+#, fuzzy
+msgid "alt"
+msgstr "lt"
+
+#, fuzzy
+msgid "Southern Altai"
+msgstr "Połudiowe aymara (Peru)"
+
+#, fuzzy
+msgid "am"
+msgstr "``name``"
+
+msgid "Amharic"
+msgstr ""
+
+#, fuzzy
+msgid "an"
+msgstr "i"
+
+#, fuzzy
+msgid "Aragonese"
 msgstr "aragoński (Hiszpania)"
 
-msgid "anp_IN"
-msgstr "anp_IN"
+#, fuzzy
+msgid "ang"
+msgstr "i"
 
-msgid "Angika (India)"
+#, fuzzy
+msgid "Old English"
+msgstr "angielski"
+
+#, fuzzy
+msgid "anp"
+msgstr "pap"
+
+#, fuzzy
+msgid "Angika"
 msgstr "angika (Indie)"
 
 msgid "ar"
@@ -103,145 +221,201 @@ msgstr "ar"
 msgid "Arabic"
 msgstr "arabski"
 
-msgid "ar_AE"
-msgstr "ar_AE"
+#, fuzzy
+msgid "arc"
+msgstr "ar"
 
-msgid "Arabic (United Arab Emirates)"
-msgstr "arabski (Zjednoczone Emiraty Arabskie)"
-
-msgid "ar_BH"
-msgstr "ar_BH"
-
-msgid "Arabic (Bahrain)"
-msgstr "arabski (Bahrajn)"
-
-msgid "ar_DZ"
-msgstr "ar_DZ"
-
-msgid "Arabic (Algeria)"
-msgstr "arabski (Algeria)"
-
-msgid "ar_EG"
-msgstr "ar_EG"
-
-msgid "Arabic (Egypt)"
-msgstr "arabski (Egipt)"
-
-msgid "ar_IQ"
-msgstr "ar_IQ"
-
-msgid "Arabic (Iraq)"
-msgstr "arabski (Irak)"
-
-msgid "ar_JO"
-msgstr "ar_JO"
-
-msgid "Arabic (Jordan)"
-msgstr "arabski (Jordan)"
-
-msgid "ar_KW"
-msgstr "ar_KW"
-
-msgid "Arabic (Kuwait)"
-msgstr "arabski (Kuwejt)"
-
-msgid "ar_LB"
-msgstr "ar_LB"
-
-msgid "Arabic (Lebanon)"
-msgstr "arabski (Liban)"
-
-msgid "ar_LY"
-msgstr "ar_LY"
-
-msgid "Arabic (Libya)"
-msgstr "arabski (Libia)"
-
-msgid "ar_MA"
-msgstr "ar_MA"
-
-msgid "Arabic (Morocco)"
-msgstr "arabski (Maroko)"
-
-msgid "ar_OM"
-msgstr "ar_OM"
-
-msgid "Arabic (Oman)"
-msgstr "arabski (Oman)"
-
-msgid "ar_QA"
-msgstr "ar_QA"
-
-msgid "Arabic (Qatar)"
-msgstr "arabski (Katar)"
-
-msgid "ar_SA"
-msgstr "ar_SA"
-
-msgid "Arabic (Saudi Arabia)"
-msgstr "arabski (Arabia Saudyjska)"
-
-msgid "ar_SD"
-msgstr "ar_SD"
-
-msgid "Arabic (Sudan)"
-msgstr "arabski ()"
+msgid "Aramaic"
+msgstr ""
 
 #, fuzzy
-msgid "ar_SS"
-msgstr "ar_SA"
+msgid "arn"
+msgstr "ar"
+
+msgid "Mapudungun"
+msgstr ""
 
 #, fuzzy
-msgid "Arabic (South Sudan)"
-msgstr "arabski ()"
+msgid "aro"
+msgstr "ar"
 
-msgid "ar_SY"
-msgstr "ar_SY"
+msgid "Araona"
+msgstr ""
 
-msgid "Arabic (Syria)"
-msgstr "arabski (Syria)"
+#, fuzzy
+msgid "arp"
+msgstr "ar"
 
-msgid "ar_TN"
-msgstr "ar_TN"
+msgid "Arapaho"
+msgstr ""
 
-msgid "Arabic (Tunisia)"
-msgstr "arabski (Tunezja)"
+#, fuzzy
+msgid "arq"
+msgstr "ar"
 
-msgid "ar_YE"
-msgstr "ar_YE"
+msgid "Algerian Arabic"
+msgstr ""
 
-msgid "Arabic (Yemen)"
-msgstr "arabski (Jemen)"
+#, fuzzy
+msgid "ars"
+msgstr "ar"
 
-msgid "as_IN"
-msgstr "as_IN"
+#, fuzzy
+msgid "Najdi Arabic"
+msgstr "arabski"
 
-msgid "Assamese (India)"
+#, fuzzy
+msgid "arw"
+msgstr "ar"
+
+msgid "Arawak"
+msgstr ""
+
+#, fuzzy
+msgid "ary"
+msgstr "ar"
+
+msgid "Moroccan Arabic"
+msgstr ""
+
+#, fuzzy
+msgid "arz"
+msgstr "ar"
+
+msgid "Egyptian Arabic"
+msgstr ""
+
+#, fuzzy
+msgid "as"
+msgstr "case"
+
+#, fuzzy
+msgid "Assamese"
 msgstr "asamski (Indie)"
 
-msgid "ast_ES"
-msgstr "ast_ES"
+#, fuzzy
+msgid "asa"
+msgstr "aa"
 
-msgid "Asturian (Spain)"
+#, fuzzy
+msgid "Asu"
+msgstr "Reklamy"
+
+#, fuzzy
+msgid "ase"
+msgstr "case"
+
+#, fuzzy
+msgid "American Sign Language"
+msgstr "Języki Shaderów"
+
+#, fuzzy
+msgid "ast"
+msgstr "case"
+
+#, fuzzy
+msgid "Asturian"
 msgstr "asturian (Hiszpania)"
 
-msgid "ayc_PE"
+#, fuzzy
+msgid "av"
+msgstr "Zapisz"
+
+msgid "Avaric"
+msgstr ""
+
+msgid "avk"
+msgstr ""
+
+msgid "Kotava"
+msgstr ""
+
+#, fuzzy
+msgid "awa"
+msgstr "aa"
+
+msgid "Awadhi"
+msgstr ""
+
+#, fuzzy
+msgid "ayc"
 msgstr "ayc_PE"
 
-msgid "Southern Aymara (Peru)"
+#, fuzzy
+msgid "Southern Aymara"
 msgstr "Połudiowe aymara (Peru)"
 
-msgid "ay_PE"
-msgstr "ay_PE"
+#, fuzzy
+msgid "ay"
+msgstr "Uruchom"
 
-msgid "Aymara (Peru)"
+#, fuzzy
+msgid "Aymara"
 msgstr "aymara (Peru)"
 
-msgid "az_AZ"
-msgstr "az_AZ"
+msgid "az"
+msgstr ""
 
-msgid "Azerbaijani (Azerbaijan)"
+#, fuzzy
+msgid "Azerbaijani"
 msgstr "azerbejdżański (Azejberdżan)"
+
+#, fuzzy
+msgid "ba"
+msgstr "i"
+
+msgid "Bashkir"
+msgstr ""
+
+#, fuzzy
+msgid "bal"
+msgstr "i"
+
+msgid "Baluchi"
+msgstr ""
+
+#, fuzzy
+msgid "ban"
+msgstr "bn"
+
+#, fuzzy
+msgid "Balinese"
+msgstr "Puste wiersze"
+
+#, fuzzy
+msgid "bar"
+msgstr "ar"
+
+#, fuzzy
+msgid "Bavarian"
+msgstr "bułgarski"
+
+#, fuzzy
+msgid "bas"
+msgstr "case"
+
+msgid "Bassa"
+msgstr ""
+
+#, fuzzy
+msgid "bax"
+msgstr "i"
+
+msgid "Bamun"
+msgstr ""
+
+msgid "bbc"
+msgstr ""
+
+msgid "Batak Toba"
+msgstr ""
+
+msgid "bbj"
+msgstr ""
+
+#, fuzzy
+msgid "Ghomala"
+msgstr "somalijski"
 
 msgid "be"
 msgstr "be"
@@ -249,29 +423,53 @@ msgstr "be"
 msgid "Belarusian"
 msgstr "białoruski"
 
-msgid "be_BY"
-msgstr "be_BY"
+#, fuzzy
+msgid "bej"
+msgstr "be"
 
-msgid "Belarusian (Belarus)"
-msgstr "białoruski (Białoruś)"
+msgid "Beja"
+msgstr ""
 
-msgid "bem_ZM"
-msgstr "bem_ZM"
+#, fuzzy
+msgid "bem"
+msgstr "be"
 
-msgid "Bemba (Zambia)"
-msgstr "bemba (Zambia)"
+msgid "Bemba"
+msgstr ""
 
-msgid "ber_DZ"
-msgstr "ber_DZ"
+#, fuzzy
+msgid "ber"
+msgstr "be"
 
-msgid "Berber languages (Algeria)"
-msgstr "Języki berberyjskie (Algeria)"
+msgid "Berber"
+msgstr ""
 
-msgid "ber_MA"
-msgstr "ber_MA"
+#, fuzzy
+msgid "bew"
+msgstr "be"
 
-msgid "Berber languages (Morocco)"
-msgstr "Języki berberyjskie (Maroko)"
+msgid "Betawi"
+msgstr ""
+
+#, fuzzy
+msgid "bez"
+msgstr "be"
+
+msgid "Bena"
+msgstr ""
+
+#, fuzzy
+msgid "bfd"
+msgstr "i"
+
+msgid "Bafut"
+msgstr ""
+
+msgid "bfq"
+msgstr ""
+
+msgid "Badaga"
+msgstr ""
 
 msgid "bg"
 msgstr "bg"
@@ -279,29 +477,74 @@ msgstr "bg"
 msgid "Bulgarian"
 msgstr "bułgarski"
 
-msgid "bg_BG"
-msgstr "bg_BG"
-
-msgid "Bulgarian (Bulgaria)"
-msgstr "bułgarski (Bułgaria)"
-
-msgid "bhb_IN"
+#, fuzzy
+msgid "bhb"
 msgstr "bhb_IN"
 
-msgid "Bhili (India)"
-msgstr "bhili (Indie)"
+msgid "Bhili"
+msgstr ""
 
-msgid "bho_IN"
-msgstr "bho_IN"
+#, fuzzy
+msgid "bgn"
+msgstr "bg"
 
-msgid "Bhojpuri (India)"
+msgid "Western Balochi"
+msgstr ""
+
+#, fuzzy
+msgid "bho"
+msgstr "bo"
+
+#, fuzzy
+msgid "Bhojpuri"
 msgstr "bhojpuri (Indie)"
 
-msgid "bi_TV"
-msgstr "bi_TV"
+msgid "bi"
+msgstr ""
 
-msgid "Bislama (Tuvalu)"
+#, fuzzy
+msgid "Bislama"
 msgstr "bislama (Tuvalu)"
+
+msgid "bik"
+msgstr ""
+
+msgid "Bikol"
+msgstr ""
+
+#, fuzzy
+msgid "bin"
+msgstr "bn"
+
+msgid "Bini"
+msgstr ""
+
+#, fuzzy
+msgid "bjn"
+msgstr "bn"
+
+msgid "Banjar"
+msgstr ""
+
+msgid "bkm"
+msgstr ""
+
+#, fuzzy
+msgid "Kom"
+msgstr "om"
+
+#, fuzzy
+msgid "bla"
+msgstr "black"
+
+msgid "Siksika"
+msgstr ""
+
+msgid "bm"
+msgstr ""
+
+msgid "Bambara"
+msgstr ""
 
 msgid "bn"
 msgstr "bn"
@@ -309,59 +552,89 @@ msgstr "bn"
 msgid "Bengali"
 msgstr "bengalski"
 
-msgid "bn_BD"
-msgstr "bn_BD"
-
-msgid "Bengali (Bangladesh)"
-msgstr "bengalski (Bangladesz)"
-
-msgid "bn_IN"
-msgstr "bn_IN"
-
-msgid "Bengali (India)"
-msgstr "bengalski (Indie)"
-
 msgid "bo"
 msgstr "bo"
 
 msgid "Tibetan"
 msgstr "tybetański"
 
-msgid "bo_CN"
-msgstr "bo_CN"
+msgid "bpy"
+msgstr ""
 
-msgid "Tibetan (China)"
-msgstr "tybetański (Chiny)"
+msgid "Bishnupriya"
+msgstr ""
 
-msgid "bo_IN"
-msgstr "bo_IN"
+msgid "bqi"
+msgstr ""
 
-msgid "Tibetan (India)"
-msgstr "tybetański (Indie)"
+msgid "Bakhtiari"
+msgstr ""
 
-msgid "br_FR"
-msgstr "br_FR"
+msgid "br"
+msgstr ""
 
-msgid "Breton (France)"
-msgstr "bretoński (Francja)"
+msgid "Breton"
+msgstr ""
 
-msgid "brx_IN"
+msgid "brh"
+msgstr ""
+
+msgid "Brahui"
+msgstr ""
+
+#, fuzzy
+msgid "brx"
 msgstr "brx_IN"
 
-msgid "Bodo (India)"
-msgstr "bodo (Indie)"
+msgid "Bodo"
+msgstr ""
 
-msgid "bs_BA"
-msgstr "bs_BA"
+msgid "bs"
+msgstr ""
 
-msgid "Bosnian (Bosnia and Herzegovina)"
-msgstr "bośniacki (Bośnia i Hercegowina)"
+#, fuzzy
+msgid "Bosnian"
+msgstr "estoński"
 
-msgid "byn_ER"
-msgstr "byn_ER"
+msgid "bss"
+msgstr ""
 
-msgid "Bilin (Eritrea)"
-msgstr "bilin (Erytrea)"
+msgid "Akoose"
+msgstr ""
+
+#, fuzzy
+msgid "bua"
+msgstr "i"
+
+msgid "Buriat"
+msgstr ""
+
+#, fuzzy
+msgid "bug"
+msgstr "bg"
+
+#, fuzzy
+msgid "Buginese"
+msgstr "chiński"
+
+msgid "bum"
+msgstr ""
+
+msgid "Bulu"
+msgstr ""
+
+#, fuzzy
+msgid "byn"
+msgstr "bn"
+
+msgid "Bilin"
+msgstr ""
+
+msgid "byv"
+msgstr ""
+
+msgid "Medumba"
+msgstr ""
 
 msgid "ca"
 msgstr "ca"
@@ -369,59 +642,191 @@ msgstr "ca"
 msgid "Catalan"
 msgstr "kataloński"
 
-msgid "ca_AD"
-msgstr "ca_AD"
+#, fuzzy
+msgid "cad"
+msgstr "ca"
 
-msgid "Catalan (Andorra)"
-msgstr "kataloński (Andora)"
+msgid "Caddo"
+msgstr ""
 
-msgid "ca_ES"
-msgstr "ca_ES"
+#, fuzzy
+msgid "car"
+msgstr "ar"
 
-msgid "Catalan (Spain)"
-msgstr "kataloński (Hiszpania)"
+msgid "Carib"
+msgstr ""
 
-msgid "ca_FR"
-msgstr "ca_FR"
+#, fuzzy
+msgid "cay"
+msgstr "ca"
 
-msgid "Catalan (France)"
-msgstr "kataloński (Francja)"
+msgid "Cayuga"
+msgstr ""
 
-msgid "ca_IT"
-msgstr "ca_IT"
+msgid "cch"
+msgstr ""
 
-msgid "Catalan (Italy)"
-msgstr "kataloński (Włochy)"
+msgid "Atsam"
+msgstr ""
 
-msgid "ce_RU"
-msgstr "ce_RU"
+msgid "ccp"
+msgstr ""
 
-msgid "Chechen (Russia)"
+msgid "Chakma"
+msgstr ""
+
+msgid "ce"
+msgstr ""
+
+#, fuzzy
+msgid "Chechen"
 msgstr "czeczeński (Rosja)"
 
-msgid "chr_US"
-msgstr "chr_US"
+#, fuzzy
+msgid "ceb"
+msgstr "Web"
 
-msgid "Cherokee (United States)"
-msgstr "Cherokee (Stany Zjednoczone)"
+msgid "Cebuano"
+msgstr ""
 
-msgid "cmn_TW"
+msgid "cgg"
+msgstr ""
+
+msgid "Chiga"
+msgstr ""
+
+msgid "ch"
+msgstr ""
+
+msgid "Chamorro"
+msgstr ""
+
+msgid "chb"
+msgstr ""
+
+msgid "Chibcha"
+msgstr ""
+
+msgid "chg"
+msgstr ""
+
+msgid "Chagatai"
+msgstr ""
+
+msgid "chk"
+msgstr ""
+
+msgid "Chuukese"
+msgstr ""
+
+msgid "chm"
+msgstr ""
+
+msgid "Mari"
+msgstr ""
+
+msgid "chn"
+msgstr ""
+
+msgid "Chinook Jargon"
+msgstr ""
+
+#, fuzzy
+msgid "cho"
+msgstr "sco"
+
+msgid "Choctaw"
+msgstr ""
+
+msgid "chp"
+msgstr ""
+
+msgid "Chipewyan"
+msgstr ""
+
+#, fuzzy
+msgid "chr"
+msgstr "hr"
+
+msgid "Cherokee"
+msgstr ""
+
+msgid "chy"
+msgstr ""
+
+msgid "Cheyenne"
+msgstr ""
+
+msgid "cic"
+msgstr ""
+
+msgid "Chickasaw"
+msgstr ""
+
+msgid "ckb"
+msgstr ""
+
+#, fuzzy
+msgid "Central Kurdish"
+msgstr "kurdyjski"
+
+#, fuzzy
+msgid "csb"
+msgstr "cs_CZ"
+
+#, fuzzy
+msgid "Kashubian"
+msgstr "kaszubski (Polska)"
+
+#, fuzzy
+msgid "cmn"
 msgstr "cmn_TW"
 
-msgid "Mandarin Chinese (Taiwan)"
+#, fuzzy
+msgid "Mandarin Chinese"
 msgstr "chiński mandaryński (Taiwan)"
 
-msgid "crh_UA"
+#, fuzzy
+msgid "co"
+msgstr "sco"
+
+msgid "Corsican"
+msgstr ""
+
+#, fuzzy
+msgid "cop"
+msgstr "sco"
+
+msgid "Coptic"
+msgstr ""
+
+#, fuzzy
+msgid "cps"
+msgstr "cs_CZ"
+
+msgid "Capiznon"
+msgstr ""
+
+msgid "cr"
+msgstr ""
+
+msgid "Cree"
+msgstr ""
+
+#, fuzzy
+msgid "crh"
 msgstr "crh_UA"
 
-msgid "Crimean Tatar (Ukraine)"
+#, fuzzy
+msgid "Crimean Tatar"
 msgstr "krymskotatarski (Ukraina)"
 
-msgid "csb_PL"
-msgstr "csb_PL"
+#, fuzzy
+msgid "crs"
+msgstr "cs_CZ"
 
-msgid "Kashubian (Poland)"
-msgstr "kaszubski (Polska)"
+msgid "Seselwa Creole French"
+msgstr ""
 
 msgid "cs"
 msgstr "cs_CZ"
@@ -429,23 +834,24 @@ msgstr "cs_CZ"
 msgid "Czech"
 msgstr "czeski"
 
-msgid "cs_CZ"
-msgstr "cs_CZ"
+msgid "cu"
+msgstr ""
 
-msgid "Czech (Czech Republic)"
-msgstr "czeski (Czechy)"
+msgid "Church Slavic"
+msgstr ""
 
-msgid "cv_RU"
-msgstr "cv_RU"
+msgid "cv"
+msgstr ""
 
-msgid "Chuvash (Russia)"
+#, fuzzy
+msgid "Chuvash"
 msgstr "czuwaski (Rosja)"
 
-msgid "cy_GB"
-msgstr "cy_GB"
+msgid "cy"
+msgstr ""
 
-msgid "Welsh (United Kingdom)"
-msgstr "walijski (Zjednoczone Krówestwo)"
+msgid "Welsh"
+msgstr ""
 
 msgid "da"
 msgstr "da"
@@ -453,11 +859,26 @@ msgstr "da"
 msgid "Danish"
 msgstr "duński"
 
-msgid "da_DK"
-msgstr "da_DK"
+#, fuzzy
+msgid "dak"
+msgstr "da"
 
-msgid "Danish (Denmark)"
-msgstr "duński (Dania)"
+msgid "Dakota"
+msgstr ""
+
+#, fuzzy
+msgid "dar"
+msgstr "ar"
+
+msgid "Dargwa"
+msgstr ""
+
+#, fuzzy
+msgid "dav"
+msgstr "da"
+
+msgid "Taita"
+msgstr ""
 
 msgid "de"
 msgstr "de"
@@ -465,59 +886,146 @@ msgstr "de"
 msgid "German"
 msgstr "niemiecki"
 
-msgid "de_AT"
-msgstr "de_AT"
+#, fuzzy
+msgid "del"
+msgstr "de"
 
-msgid "German (Austria)"
-msgstr "niemiecki (Austria)"
+#, fuzzy
+msgid "Delaware"
+msgstr "Opóźnianie"
 
-msgid "de_BE"
-msgstr "de_BE"
+#, fuzzy
+msgid "den"
+msgstr "en"
 
-msgid "German (Belgium)"
-msgstr "niemiecki (Belgia)"
+msgid "Slave"
+msgstr ""
 
-msgid "de_CH"
-msgstr "de_CH"
+msgid "dgr"
+msgstr ""
 
-msgid "German (Switzerland)"
-msgstr "niemiecki (Szwajcaria)"
+msgid "Dogrib"
+msgstr ""
 
-msgid "de_DE"
-msgstr "de_DE"
+#, fuzzy
+msgid "din"
+msgstr "Shadery"
 
-msgid "German (Germany)"
-msgstr "niemiecki (Niemcy)"
+msgid "Dinka"
+msgstr ""
 
-msgid "de_IT"
-msgstr "de_IT"
+#, fuzzy
+msgid "dje"
+msgstr "de"
 
-msgid "German (Italy)"
-msgstr "niemiecki (Włochy)"
+msgid "Zarma"
+msgstr ""
 
-msgid "de_LU"
-msgstr "de_LU"
-
-msgid "German (Luxembourg)"
-msgstr "niemiecki (Luksemburg)"
-
-msgid "doi_IN"
+#, fuzzy
+msgid "doi"
 msgstr "doi_IN"
 
-msgid "Dogri (India)"
-msgstr "dogri (Indie)"
+msgid "Dogri"
+msgstr ""
 
-msgid "dv_MV"
-msgstr "dv_MV"
+#, fuzzy
+msgid "dsb"
+msgstr "Reklamy"
 
-msgid "Dhivehi (Maldives)"
-msgstr "dhivehi (Malediwy)"
+#, fuzzy
+msgid "Lower Sorbian"
+msgstr "serbski"
 
-msgid "dz_BT"
-msgstr "dz_BT"
+msgid "dtp"
+msgstr ""
 
-msgid "Dzongkha (Bhutan)"
+msgid "Central Dusun"
+msgstr ""
+
+#, fuzzy
+msgid "dua"
+msgstr "da"
+
+msgid "Duala"
+msgstr ""
+
+msgid "dum"
+msgstr ""
+
+msgid "Middle Dutch"
+msgstr ""
+
+msgid "dv"
+msgstr ""
+
+msgid "Dhivehi"
+msgstr ""
+
+msgid "dyo"
+msgstr ""
+
+msgid "Jola-Fonyi"
+msgstr ""
+
+msgid "dyu"
+msgstr ""
+
+msgid "Dyula"
+msgstr ""
+
+msgid "dz"
+msgstr ""
+
+#, fuzzy
+msgid "Dzongkha"
 msgstr "dzongkha (Bhutan)"
+
+msgid "dzg"
+msgstr ""
+
+msgid "Dazaga"
+msgstr ""
+
+#, fuzzy
+msgid "ebu"
+msgstr "eu"
+
+msgid "Embu"
+msgstr ""
+
+#, fuzzy
+msgid "ee"
+msgstr "else"
+
+msgid "Ewe"
+msgstr ""
+
+#, fuzzy
+msgid "efi"
+msgstr "fi"
+
+msgid "Efik"
+msgstr ""
+
+#, fuzzy
+msgid "egl"
+msgstr "el"
+
+msgid "Emilian"
+msgstr ""
+
+#, fuzzy
+msgid "egy"
+msgstr "Klucz"
+
+msgid "Ancient Egyptian"
+msgstr ""
+
+msgid "eka"
+msgstr ""
+
+msgid "Ekajuk"
+msgstr ""
 
 msgid "el"
 msgstr "el"
@@ -525,17 +1033,12 @@ msgstr "el"
 msgid "Greek"
 msgstr "grecki"
 
-msgid "el_CY"
-msgstr "el_CY"
+#, fuzzy
+msgid "elx"
+msgstr "el"
 
-msgid "Greek (Cyprus)"
-msgstr "grecki (Cypr)"
-
-msgid "el_GR"
-msgstr "el_GR"
-
-msgid "Greek (Greece)"
-msgstr "grecki (Grecja)"
+msgid "Elamite"
+msgstr ""
 
 msgid "en"
 msgstr "en"
@@ -543,113 +1046,13 @@ msgstr "en"
 msgid "English"
 msgstr "angielski"
 
-msgid "en_AG"
-msgstr "en_AG"
+#, fuzzy
+msgid "enm"
+msgstr "enum"
 
-msgid "English (Antigua and Barbuda)"
-msgstr "angielski (Antigua i Barbuda)"
-
-msgid "en_AU"
-msgstr "en_AU"
-
-msgid "English (Australia)"
-msgstr "angielski (Australia)"
-
-msgid "en_BW"
-msgstr "en_BW"
-
-msgid "English (Botswana)"
-msgstr "angielski (Botswana)"
-
-msgid "en_CA"
-msgstr "en_CA"
-
-msgid "English (Canada)"
-msgstr "angielski (Kanada)"
-
-msgid "en_DK"
-msgstr "en_DK"
-
-msgid "English (Denmark)"
-msgstr "angielski (Dania)"
-
-msgid "en_GB"
-msgstr "en_GB"
-
-msgid "English (United Kingdom)"
-msgstr "angielski (Zjednoczone Królestwo)"
-
-msgid "en_HK"
-msgstr "en_HK"
-
-msgid "English (Hong Kong)"
-msgstr "angielski (Hong Kong)"
-
-msgid "en_IE"
-msgstr "en_IE"
-
-msgid "English (Ireland)"
-msgstr "angielski (Irlandia)"
-
-msgid "en_IL"
-msgstr "en_IL"
-
-msgid "English (Israel)"
-msgstr "angielski (Izrael)"
-
-msgid "en_IN"
-msgstr "en_IN"
-
-msgid "English (India)"
-msgstr "angielski (Indie)"
-
-msgid "en_NG"
-msgstr "en_NG"
-
-msgid "English (Nigeria)"
-msgstr "angielski (Nigeria)"
-
-msgid "en_NZ"
-msgstr "en_NZ"
-
-msgid "English (New Zealand)"
-msgstr "angielski (Nowa Zelandia)"
-
-msgid "en_PH"
-msgstr "en_PH"
-
-msgid "English (Philippines)"
-msgstr "angielski (Filipiny)"
-
-msgid "en_SG"
-msgstr "en_SG"
-
-msgid "English (Singapore)"
-msgstr "angielski (Singapur)"
-
-msgid "en_US"
-msgstr "en_US"
-
-msgid "English (United States)"
-msgstr "angielski (Stany Zjednoczone)"
-
-msgid "en_ZA"
-msgstr "en_ZA"
-
-msgid "English (South Africa)"
-msgstr "angielski (Republika Południowej Afryki)"
-
-msgid "en_ZM"
-msgstr "en_ZM"
-
-msgid "English (Zambia)"
-msgstr "angielski (Zambia)"
-
-msgid "en_ZW"
-msgstr "en_ZW"
-
-msgid "English (Zimbabwe)"
-msgstr "angielski (Zimbabwe)"
+#, fuzzy
+msgid "Middle English"
+msgstr "angielski"
 
 msgid "eo"
 msgstr "eo"
@@ -663,132 +1066,12 @@ msgstr "es"
 msgid "Spanish"
 msgstr "hiszpański"
 
-msgid "es_AR"
-msgstr "es_AR"
-
-msgid "Spanish (Argentina)"
-msgstr "hiszpański (Argentyna)"
-
-msgid "es_BO"
-msgstr "es_BO"
-
-msgid "Spanish (Bolivia)"
-msgstr "hiszpański (Boliwia)"
-
-msgid "es_CL"
-msgstr "es_CL"
-
-msgid "Spanish (Chile)"
-msgstr "hiszpański (Chile)"
-
-msgid "es_CO"
-msgstr "es_CO"
-
-msgid "Spanish (Colombia)"
-msgstr "hiszpański (Kolumbia)"
-
-msgid "es_CR"
-msgstr "es_CR"
-
-msgid "Spanish (Costa Rica)"
-msgstr "hiszpański (Kostaryka)"
-
 #, fuzzy
-msgid "es_CU"
-msgstr "es_CL"
+msgid "esu"
+msgstr "es"
 
-msgid "Spanish (Cuba)"
-msgstr "hiszpański (Kuba)"
-
-msgid "es_DO"
-msgstr "es_DO"
-
-msgid "Spanish (Dominican Republic)"
-msgstr "hiszpański (Dominikana)"
-
-msgid "es_EC"
-msgstr "es_EC"
-
-msgid "Spanish (Ecuador)"
-msgstr "hiszpański (Ekwador)"
-
-msgid "es_ES"
-msgstr "es_ES"
-
-msgid "Spanish (Spain)"
-msgstr "hiszpański (Hiszpania)"
-
-msgid "es_GT"
-msgstr "es_GT"
-
-msgid "Spanish (Guatemala)"
-msgstr "hiszpański (Gwatemala)"
-
-msgid "es_HN"
-msgstr "es_HN"
-
-msgid "Spanish (Honduras)"
-msgstr "hiszpański (Honduras)"
-
-msgid "es_MX"
-msgstr "es_MX"
-
-msgid "Spanish (Mexico)"
-msgstr "hiszpański (Meksyk)"
-
-msgid "es_NI"
-msgstr "es_NI"
-
-msgid "Spanish (Nicaragua)"
-msgstr "hiszpański (Nikaragua)"
-
-msgid "es_PA"
-msgstr "es_PA"
-
-msgid "Spanish (Panama)"
-msgstr "hiszpański (Panama)"
-
-msgid "es_PE"
-msgstr "es_PE"
-
-msgid "Spanish (Peru)"
-msgstr "hiszpański (Peru)"
-
-msgid "es_PR"
-msgstr "es_PR"
-
-msgid "Spanish (Puerto Rico)"
-msgstr "hiszpański (Portoryko)"
-
-msgid "es_PY"
-msgstr "es_PY"
-
-msgid "Spanish (Paraguay)"
-msgstr "hiszpański (Paragwaj)"
-
-msgid "es_SV"
-msgstr "es_SV"
-
-msgid "Spanish (El Salvador)"
-msgstr "hiszpański (Salvador)"
-
-msgid "es_US"
-msgstr "es_US"
-
-msgid "Spanish (United States)"
-msgstr "hiszpański (Stany Zjednoczone)"
-
-msgid "es_UY"
-msgstr "es_UY"
-
-msgid "Spanish (Uruguay)"
-msgstr "hiszpański (Urugwaj)"
-
-msgid "es_VE"
-msgstr "es_VE"
-
-msgid "Spanish (Venezuela)"
-msgstr "hiszpański (Wenezuela)"
+msgid "Central Yupik"
+msgstr ""
 
 msgid "et"
 msgstr "et"
@@ -796,23 +1079,25 @@ msgstr "et"
 msgid "Estonian"
 msgstr "estoński"
 
-msgid "et_EE"
-msgstr "et_EE"
-
-msgid "Estonian (Estonia)"
-msgstr "estoński (Estonia)"
-
 msgid "eu"
 msgstr "eu"
 
 msgid "Basque"
 msgstr "baskijski"
 
-msgid "eu_ES"
-msgstr "eu_ES"
+#, fuzzy
+msgid "ewo"
+msgstr "eo"
 
-msgid "Basque (Spain)"
-msgstr "baskijski (Hiszpania)"
+msgid "Ewondo"
+msgstr ""
+
+#, fuzzy
+msgid "ext"
+msgstr "et"
+
+msgid "Extremaduran"
+msgstr ""
 
 msgid "fa"
 msgstr "fa"
@@ -820,29 +1105,31 @@ msgstr "fa"
 msgid "Persian"
 msgstr "Perski"
 
-msgid "fa_IR"
-msgstr "fa_IR"
+#, fuzzy
+msgid "fan"
+msgstr "fa"
 
-msgid "Persian (Iran)"
-msgstr "perski (Iran)"
+msgid "Fang"
+msgstr ""
 
-msgid "ff_SN"
-msgstr "ff_SN"
+#, fuzzy
+msgid "fat"
+msgstr "fa"
 
-msgid "Fulah (Senegal)"
-msgstr "fulani (Senegal)"
+msgid "Fanti"
+msgstr ""
+
+msgid "ff"
+msgstr ""
+
+msgid "Fulah"
+msgstr ""
 
 msgid "fi"
 msgstr "fi"
 
 msgid "Finnish"
 msgstr "fiński"
-
-msgid "fi_FI"
-msgstr "fi_FI"
-
-msgid "Finnish (Finland)"
-msgstr "fiński (Finlandia)"
 
 #, fuzzy
 msgid "fil"
@@ -851,17 +1138,33 @@ msgstr "fi"
 msgid "Filipino"
 msgstr ""
 
-msgid "fil_PH"
-msgstr "fil_PH"
+#, fuzzy
+msgid "fit"
+msgstr "fi"
 
-msgid "Filipino (Philippines)"
-msgstr "filipiński (Filipiny)"
+msgid "Tornedalen Finnish"
+msgstr ""
 
-msgid "fo_FO"
-msgstr "fo_FO"
+msgid "fj"
+msgstr ""
 
-msgid "Faroese (Faroe Islands)"
-msgstr "farerski (Wyspy Owcze)"
+msgid "Fijian"
+msgstr ""
+
+#, fuzzy
+msgid "fo"
+msgstr "for"
+
+msgid "Faroese"
+msgstr ""
+
+#, fuzzy
+msgid "fon"
+msgstr "for"
+
+#, fuzzy
+msgid "Fon"
+msgstr "Mgła"
 
 msgid "fr"
 msgstr "fr"
@@ -869,53 +1172,66 @@ msgstr "fr"
 msgid "French"
 msgstr "francuski"
 
-msgid "fr_BE"
-msgstr "fr_BE"
+#, fuzzy
+msgid "frc"
+msgstr "fr"
 
-msgid "French (Belgium)"
-msgstr "francuski (Belgia)"
+#, fuzzy
+msgid "Cajun French"
+msgstr "francuski"
 
-msgid "fr_CA"
-msgstr "fr_CA"
+#, fuzzy
+msgid "frm"
+msgstr "fr"
 
-msgid "French (Canada)"
-msgstr "francuski (Kanada)"
+#, fuzzy
+msgid "Middle French"
+msgstr "francuski"
 
-msgid "fr_CH"
-msgstr "fr_CH"
+#, fuzzy
+msgid "fro"
+msgstr "fr"
 
-msgid "French (Switzerland)"
-msgstr "francuski (Szwajcaria)"
+#, fuzzy
+msgid "Old French"
+msgstr "francuski"
 
-msgid "fr_FR"
-msgstr "fr_FR"
+#, fuzzy
+msgid "frp"
+msgstr "fr"
 
-msgid "French (France)"
-msgstr "francuski (Francja)"
+msgid "Arpitan"
+msgstr ""
 
-msgid "fr_LU"
-msgstr "fr_LU"
+#, fuzzy
+msgid "frr"
+msgstr "fr"
 
-msgid "French (Luxembourg)"
-msgstr "francuski (Luksemburg)"
+msgid "Northern Frisian"
+msgstr ""
 
-msgid "fur_IT"
-msgstr "fur_IT"
+#, fuzzy
+msgid "frs"
+msgstr "fr"
 
-msgid "Friulian (Italy)"
+#, fuzzy
+msgid "Eastern Frisian"
+msgstr "wschodnia mari (Rosja)"
+
+#, fuzzy
+msgid "fur"
+msgstr "fr"
+
+#, fuzzy
+msgid "Friulian"
 msgstr "francuski (Włochy)"
 
-msgid "fy_DE"
-msgstr "fy_DE"
+msgid "fy"
+msgstr ""
 
-msgid "Western Frisian (Germany)"
+#, fuzzy
+msgid "Western Frisian"
 msgstr "zachodnio fryzyjski (Niemcy)"
-
-msgid "fy_NL"
-msgstr "fy_NL"
-
-msgid "Western Frisian (Netherlands)"
-msgstr "zachodnio fryzyjski (Holandia)"
 
 msgid "ga"
 msgstr "ga"
@@ -923,71 +1239,217 @@ msgstr "ga"
 msgid "Irish"
 msgstr "irlandzki"
 
-msgid "ga_IE"
-msgstr "ga_IE"
+#, fuzzy
+msgid "gaa"
+msgstr "aa"
 
-msgid "Irish (Ireland)"
-msgstr "irlandzki (Irlandia)"
+msgid "Ga"
+msgstr ""
 
-msgid "gd_GB"
-msgstr "gd_GB"
+#, fuzzy
+msgid "gag"
+msgstr "ga"
 
-msgid "Scottish Gaelic (United Kingdom)"
+msgid "Gagauz"
+msgstr ""
+
+#, fuzzy
+msgid "gan"
+msgstr "ga"
+
+#, fuzzy
+msgid "Gan Chinese"
+msgstr "chiński"
+
+#, fuzzy
+msgid "gay"
+msgstr "szary"
+
+msgid "Gayo"
+msgstr ""
+
+#, fuzzy
+msgid "gba"
+msgstr "ga"
+
+msgid "Gbaya"
+msgstr ""
+
+msgid "gbz"
+msgstr ""
+
+msgid "Zoroastrian Dari"
+msgstr ""
+
+msgid "gd"
+msgstr ""
+
+#, fuzzy
+msgid "Scottish Gaelic"
 msgstr "szkocki gaelicki (Zjednoczone Królestwo)"
 
-msgid "gez_ER"
+#, fuzzy
+msgid "gez"
 msgstr "gez_ER"
 
-msgid "Geez (Eritrea)"
-msgstr "geez (Erytrea)"
+msgid "Geez"
+msgstr ""
 
-msgid "gez_ET"
-msgstr "gez_ET"
+#, fuzzy
+msgid "gil"
+msgstr "fi"
 
-msgid "Geez (Ethiopia)"
-msgstr "geez (Etiopia)"
+msgid "Gilbertese"
+msgstr ""
 
-msgid "gl_ES"
-msgstr "gl_ES"
+msgid "gl"
+msgstr ""
 
-msgid "Galician (Spain)"
+#, fuzzy
+msgid "Galician"
 msgstr "galicyjski (Hiszpania)"
 
-msgid "gu_IN"
-msgstr "gu_IN"
+msgid "glk"
+msgstr ""
 
-msgid "Gujarati (India)"
+msgid "Gilaki"
+msgstr ""
+
+msgid "gmh"
+msgstr ""
+
+msgid "Middle High German"
+msgstr ""
+
+msgid "gn"
+msgstr ""
+
+msgid "Guarani"
+msgstr ""
+
+msgid "goh"
+msgstr ""
+
+msgid "Old High German"
+msgstr ""
+
+#, fuzzy
+msgid "gom"
+msgstr "om"
+
+msgid "Goan Konkani"
+msgstr ""
+
+msgid "gon"
+msgstr ""
+
+msgid "Gondi"
+msgstr ""
+
+#, fuzzy
+msgid "gor"
+msgstr "for"
+
+msgid "Gorontalo"
+msgstr ""
+
+msgid "got"
+msgstr ""
+
+msgid "Gothic"
+msgstr ""
+
+msgid "grb"
+msgstr ""
+
+msgid "Grebo"
+msgstr ""
+
+msgid "grc"
+msgstr ""
+
+msgid "Ancient Greek"
+msgstr ""
+
+msgid "gsw"
+msgstr ""
+
+#, fuzzy
+msgid "Swiss German"
+msgstr "niemiecki"
+
+msgid "gu"
+msgstr ""
+
+#, fuzzy
+msgid "Gujarati"
 msgstr "gudżarati (Indie)"
 
-msgid "gv_GB"
-msgstr "gv_GB"
+msgid "guc"
+msgstr ""
 
-msgid "Manx (United Kingdom)"
-msgstr "manx (Zjednoczone Królestwo)"
+msgid "Wayuu"
+msgstr ""
 
-msgid "hak_TW"
+#, fuzzy
+msgid "gur"
+msgstr "ur"
+
+msgid "Frafra"
+msgstr ""
+
+#, fuzzy
+msgid "guz"
+msgstr "uz"
+
+msgid "Gusii"
+msgstr ""
+
+msgid "gv"
+msgstr ""
+
+msgid "Manx"
+msgstr ""
+
+msgid "gwi"
+msgstr ""
+
+msgid "Gwichʼin"
+msgstr ""
+
+#, fuzzy
+msgid "ha"
+msgstr "tajski"
+
+msgid "Hausa"
+msgstr ""
+
+#, fuzzy
+msgid "hai"
+msgstr "tajski"
+
+msgid "Haida"
+msgstr ""
+
+#, fuzzy
+msgid "hak"
 msgstr "hak_TW"
 
-msgid "Hakka Chinese (Taiwan)"
+#, fuzzy
+msgid "Hakka Chinese"
 msgstr "chiński hakka (Taiwan)"
 
-msgid "ha_NG"
-msgstr "ha_NG"
+msgid "haw"
+msgstr ""
 
-msgid "Hausa (Nigeria)"
-msgstr "hausa (Nigeria)"
+msgid "Hawaiian"
+msgstr ""
 
-msgid "he"
-msgstr "he"
+msgid "he, iw"
+msgstr ""
 
 msgid "Hebrew"
 msgstr "hebrajski"
-
-msgid "he_IL"
-msgstr "he_IL"
-
-msgid "Hebrew (Israel)"
-msgstr "hebrajski (Izrael)"
 
 msgid "hi"
 msgstr "hi"
@@ -995,16 +1457,46 @@ msgstr "hi"
 msgid "Hindi"
 msgstr "hinduski"
 
-msgid "hi_IN"
-msgstr "hi_IN"
+#, fuzzy
+msgid "hif"
+msgstr "hi"
 
-msgid "Hindi (India)"
-msgstr "hinduski (Indie)"
+#, fuzzy
+msgid "Fiji Hindi"
+msgstr "hinduski"
 
-msgid "hne_IN"
-msgstr "hne_IN"
+#, fuzzy
+msgid "hil"
+msgstr "hi"
 
-msgid "Chhattisgarhi (India)"
+msgid "Hiligaynon"
+msgstr ""
+
+#, fuzzy
+msgid "hit"
+msgstr "hi"
+
+msgid "Hittite"
+msgstr ""
+
+msgid "hmn"
+msgstr ""
+
+msgid "Hmong"
+msgstr ""
+
+msgid "ho"
+msgstr ""
+
+msgid "Hiri Motu"
+msgstr ""
+
+#, fuzzy
+msgid "hne"
+msgstr "he"
+
+#, fuzzy
+msgid "Chhattisgarhi"
 msgstr "chhattisgarhi (Indie)"
 
 msgid "hr"
@@ -1013,23 +1505,27 @@ msgstr "hr"
 msgid "Croatian"
 msgstr "chorwacki"
 
-msgid "hr_HR"
-msgstr "hr_HR"
-
-msgid "Croatian (Croatia)"
-msgstr "chorwacki (Chorwacja)"
-
-msgid "hsb_DE"
+#, fuzzy
+msgid "hsb"
 msgstr "hsb_DE"
 
-msgid "Upper Sorbian (Germany)"
+#, fuzzy
+msgid "Upper Sorbian"
 msgstr "górnołużycki (Niemcy)"
 
-msgid "ht_HT"
-msgstr "ht_HT"
+msgid "hsn"
+msgstr ""
 
-msgid "Haitian (Haiti)"
-msgstr "haitański (Haiti)"
+#, fuzzy
+msgid "Xiang Chinese"
+msgstr "chiński"
+
+msgid "ht"
+msgstr ""
+
+#, fuzzy
+msgid "Haitian"
+msgstr "chorwacki"
 
 msgid "hu"
 msgstr "hu"
@@ -1037,53 +1533,107 @@ msgstr "hu"
 msgid "Hungarian"
 msgstr "węgierski"
 
-msgid "hu_HU"
-msgstr "hu_HU"
+#, fuzzy
+msgid "hup"
+msgstr "hu"
 
-msgid "Hungarian (Hungary)"
-msgstr "węgierski (Węgry)"
+msgid "Hupa"
+msgstr ""
 
-msgid "hus_MX"
-msgstr "hus_MX"
+#, fuzzy
+msgid "hus"
+msgstr "hu"
 
-msgid "Huastec (Mexico)"
-msgstr "huastec (Meksyk)"
+#, fuzzy
+msgid "Huastec"
+msgstr "Wklej"
 
-msgid "hy_AM"
-msgstr "hy_AM"
+msgid "hy"
+msgstr ""
 
-msgid "Armenian (Armenia)"
-msgstr "armeński (Armenia)"
+#, fuzzy
+msgid "Armenian"
+msgstr "rumuński"
 
-msgid "ia_FR"
-msgstr "ia_FR"
+msgid "hz"
+msgstr ""
 
-msgid "Interlingua (France)"
+msgid "Herero"
+msgstr ""
+
+msgid "ia"
+msgstr ""
+
+#, fuzzy
+msgid "Interlingua"
 msgstr "interlingua (Francja)"
 
-msgid "id"
-msgstr "id"
+#, fuzzy
+msgid "iba"
+msgstr "i"
+
+msgid "Iban"
+msgstr ""
+
+msgid "ibb"
+msgstr ""
+
+msgid "Ibibio"
+msgstr ""
+
+msgid "id, in"
+msgstr ""
 
 msgid "Indonesian"
 msgstr "indonezyjski"
 
-msgid "id_ID"
-msgstr "id_ID"
+#, fuzzy
+msgid "ie"
+msgstr "Sinus"
 
-msgid "Indonesian (Indonesia)"
-msgstr "indonezyjski"
+#, fuzzy
+msgid "Interlingue"
+msgstr "interlingua (Francja)"
 
-msgid "ig_NG"
-msgstr "ig_NG"
+msgid "ig"
+msgstr ""
 
-msgid "Igbo (Nigeria)"
-msgstr "igbo (Nigeria)"
+msgid "Igbo"
+msgstr ""
 
-msgid "ik_CA"
-msgstr "ik_CA"
+msgid "ii"
+msgstr ""
 
-msgid "Inupiaq (Canada)"
+#, fuzzy
+msgid "Sichuan Yi"
+msgstr "litewski"
+
+msgid "ik"
+msgstr ""
+
+#, fuzzy
+msgid "Inupiaq"
 msgstr "inupiaq (Kanada)"
+
+#, fuzzy
+msgid "ilo"
+msgstr "fi"
+
+msgid "Iloko"
+msgstr ""
+
+#, fuzzy
+msgid "inh"
+msgstr "fiński"
+
+msgid "Ingush"
+msgstr ""
+
+msgid "io"
+msgstr ""
+
+msgid "Ido"
+msgstr ""
 
 msgid "is"
 msgstr "is"
@@ -1091,35 +1641,26 @@ msgstr "is"
 msgid "Icelandic"
 msgstr "islandzki"
 
-msgid "is_IS"
-msgstr "is_IS"
-
-msgid "Icelandic (Iceland)"
-msgstr "islandzki (Islandia)"
-
 msgid "it"
 msgstr "it"
 
 msgid "Italian"
 msgstr "włoski"
 
-msgid "it_CH"
-msgstr "it_CH"
+msgid "iu"
+msgstr ""
 
-msgid "Italian (Switzerland)"
-msgstr "włoski (Szwajcaria)"
-
-msgid "it_IT"
-msgstr "it_IT"
-
-msgid "Italian (Italy)"
-msgstr "włoski (Włochy)"
-
-msgid "iu_CA"
-msgstr "iu_CA"
-
-msgid "Inuktitut (Canada)"
+#, fuzzy
+msgid "Inuktitut"
 msgstr "inuktitut (Kanada)"
+
+#, fuzzy
+msgid "izh"
+msgstr "zh"
+
+#, fuzzy
+msgid "Ingrian"
+msgstr "węgierski"
 
 msgid "ja"
 msgstr "ja"
@@ -1127,17 +1668,60 @@ msgstr "ja"
 msgid "Japanese"
 msgstr "japoński"
 
-msgid "ja_JP"
-msgstr "ja_JP"
+#, fuzzy
+msgid "jam"
+msgstr "ja"
 
-msgid "Japanese (Japan)"
-msgstr "japoński (Japonia)"
+msgid "Jamaican Creole English"
+msgstr ""
 
-msgid "kab_DZ"
-msgstr "kab_DZ"
+#, fuzzy
+msgid "jbo"
+msgstr "bo"
 
-msgid "Kabyle (Algeria)"
-msgstr "kabyle (Algeria)"
+msgid "Lojban"
+msgstr ""
+
+msgid "jgo"
+msgstr ""
+
+msgid "Ngomba"
+msgstr ""
+
+msgid "jmc"
+msgstr ""
+
+msgid "Machame"
+msgstr ""
+
+#, fuzzy
+msgid "jpr"
+msgstr "pr"
+
+#, fuzzy
+msgid "Judeo-Persian"
+msgstr "Perski"
+
+msgid "jrb"
+msgstr ""
+
+#, fuzzy
+msgid "Judeo-Arabic"
+msgstr "arabski"
+
+#, fuzzy
+msgid "jut"
+msgstr "właśnie"
+
+msgid "Jutish"
+msgstr ""
+
+msgid "jv"
+msgstr ""
+
+#, fuzzy
+msgid "Javanese"
+msgstr "japoński"
 
 msgid "ka"
 msgstr ""
@@ -1146,41 +1730,193 @@ msgstr ""
 msgid "Georgian"
 msgstr "norweski"
 
-msgid "ka_GE"
-msgstr "ka_GE"
+#, fuzzy
+msgid "kaa"
+msgstr "aa"
 
-msgid "Georgian (Georgia)"
-msgstr "gruziński (Gruzja)"
+msgid "Kara-Kalpak"
+msgstr ""
 
-msgid "kk_KZ"
-msgstr "kk_KZ"
+#, fuzzy
+msgid "kab"
+msgstr "kab_DZ"
 
-msgid "Kazakh (Kazakhstan)"
-msgstr "kazachski (Kazachstan)"
+msgid "Kabyle"
+msgstr ""
 
-msgid "kl_GL"
-msgstr "kl_GL"
+msgid "kac"
+msgstr ""
 
-msgid "Kalaallisut (Greenland)"
+#, fuzzy
+msgid "Kachin"
+msgstr "Tworzenie gałęzi"
+
+msgid "kaj"
+msgstr ""
+
+msgid "Jju"
+msgstr ""
+
+msgid "kam"
+msgstr ""
+
+msgid "Kamba"
+msgstr ""
+
+msgid "kaw"
+msgstr ""
+
+msgid "Kawi"
+msgstr ""
+
+#, fuzzy
+msgid "kbd"
+msgstr "i"
+
+msgid "Kabardian"
+msgstr ""
+
+msgid "kbl"
+msgstr ""
+
+msgid "Kanembu"
+msgstr ""
+
+msgid "kcg"
+msgstr ""
+
+msgid "Tyap"
+msgstr ""
+
+#, fuzzy
+msgid "kde"
+msgstr "de"
+
+msgid "Makonde"
+msgstr ""
+
+#, fuzzy
+msgid "kea"
+msgstr "klucz"
+
+msgid "Kabuverdianu"
+msgstr ""
+
+#, fuzzy
+msgid "ken"
+msgstr "en"
+
+msgid "Kenyang"
+msgstr ""
+
+#, fuzzy
+msgid "kfo"
+msgstr "ko"
+
+msgid "Koro"
+msgstr ""
+
+msgid "kg"
+msgstr ""
+
+msgid "Kongo"
+msgstr ""
+
+msgid "kgp"
+msgstr ""
+
+msgid "Kaingang"
+msgstr ""
+
+msgid "kha"
+msgstr ""
+
+msgid "Khasi"
+msgstr ""
+
+#, fuzzy
+msgid "kho"
+msgstr "ko"
+
+#, fuzzy
+msgid "Khotanese"
+msgstr "chiński"
+
+msgid "khq"
+msgstr ""
+
+msgid "Koyra Chiini"
+msgstr ""
+
+msgid "khw"
+msgstr ""
+
+msgid "Khowar"
+msgstr ""
+
+msgid "ki"
+msgstr ""
+
+msgid "Kikuyu"
+msgstr ""
+
+#, fuzzy
+msgid "kiu"
+msgstr "ku"
+
+msgid "Kirmanjki"
+msgstr ""
+
+msgid "kj"
+msgstr ""
+
+msgid "Kuanyama"
+msgstr ""
+
+msgid "kk"
+msgstr ""
+
+msgid "Kazakh"
+msgstr ""
+
+msgid "kkj"
+msgstr ""
+
+msgid "Kako"
+msgstr ""
+
+msgid "kl"
+msgstr ""
+
+#, fuzzy
+msgid "Kalaallisut"
 msgstr "kalaallisut (Grenlandia)"
 
-msgid "km_KH"
-msgstr "km_KH"
+msgid "kln"
+msgstr ""
 
-msgid "Central Khmer (Cambodia)"
+msgid "Kalenjin"
+msgstr ""
+
+msgid "km"
+msgstr ""
+
+#, fuzzy
+msgid "Central Khmer"
 msgstr "środkowo khmerski (Kambodża)"
 
-msgid "kn_IN"
-msgstr "kn_IN"
+msgid "kmb"
+msgstr ""
 
-msgid "Kannada (India)"
+msgid "Kimbundu"
+msgstr ""
+
+msgid "kn"
+msgstr ""
+
+#, fuzzy
+msgid "Kannada"
 msgstr "kannada (Indie)"
-
-msgid "kok_IN"
-msgstr "kok_IN"
-
-msgid "Konkani (India)"
-msgstr "konkani (Indie)"
 
 msgid "ko"
 msgstr "ko"
@@ -1188,17 +1924,99 @@ msgstr "ko"
 msgid "Korean"
 msgstr "koreański"
 
-msgid "ko_KR"
-msgstr "ko_KR"
+#, fuzzy
+msgid "koi"
+msgstr "ko"
 
-msgid "Korean (South Korea)"
-msgstr "koreański (Południowa Korea)"
+msgid "Komi-Permyak"
+msgstr ""
 
-msgid "ks_IN"
-msgstr "ks_IN"
+#, fuzzy
+msgid "kok"
+msgstr "ko"
 
-msgid "Kashmiri (India)"
+#, fuzzy
+msgid "Konkani"
+msgstr "konkani (Indie)"
+
+#, fuzzy
+msgid "kos"
+msgstr "ko"
+
+msgid "Kosraean"
+msgstr ""
+
+#, fuzzy
+msgid "kpe"
+msgstr "klucz"
+
+msgid "Kpelle"
+msgstr ""
+
+msgid "kr"
+msgstr ""
+
+msgid "Kanuri"
+msgstr ""
+
+msgid "krc"
+msgstr ""
+
+msgid "Karachay-Balkar"
+msgstr ""
+
+msgid "kri"
+msgstr ""
+
+msgid "Krio"
+msgstr ""
+
+msgid "krj"
+msgstr ""
+
+msgid "Kinaray-a"
+msgstr ""
+
+msgid "krl"
+msgstr ""
+
+#, fuzzy
+msgid "Karelian"
+msgstr "włoski"
+
+#, fuzzy
+msgid "kru"
+msgstr "ku"
+
+msgid "Kurukh"
+msgstr ""
+
+msgid "ks"
+msgstr ""
+
+#, fuzzy
+msgid "Kashmiri"
 msgstr "kasmiri (Indie)"
+
+msgid "ksb"
+msgstr ""
+
+msgid "Shambala"
+msgstr ""
+
+msgid "ksf"
+msgstr ""
+
+msgid "Bafia"
+msgstr ""
+
+#, fuzzy
+msgid "ksh"
+msgstr "turecki"
+
+#, fuzzy
+msgid "Colognian"
+msgstr "słoweński"
 
 msgid "ku"
 msgstr "ku"
@@ -1206,65 +2024,176 @@ msgstr "ku"
 msgid "Kurdish"
 msgstr "kurdyjski"
 
-msgid "ku_TR"
-msgstr "ku_TR"
+#, fuzzy
+msgid "kum"
+msgstr "ku"
 
-msgid "Kurdish (Turkey)"
-msgstr "kurdyjski (Turcja)"
+msgid "Kumyk"
+msgstr ""
 
-msgid "kw_GB"
-msgstr "kw_GB"
+#, fuzzy
+msgid "kut"
+msgstr "ku"
 
-msgid "Cornish (United Kingdom)"
-msgstr "korwalijski (Zjednoczone Królestwo)"
+msgid "Kutenai"
+msgstr ""
 
-msgid "ky_KG"
-msgstr "ky_KG"
+msgid "kv"
+msgstr ""
 
-msgid "Kirghiz (Kyrgyzstan)"
-msgstr "kirgizski (Kirgistan)"
+msgid "Komi"
+msgstr ""
 
-msgid "lb_LU"
-msgstr "lb_LU"
+msgid "kw"
+msgstr ""
 
-msgid "Luxembourgish (Luxembourg)"
+#, fuzzy
+msgid "Cornish"
+msgstr "duński"
+
+#, fuzzy
+msgid "ky"
+msgstr "klucz"
+
+msgid "Kirghiz"
+msgstr ""
+
+#, fuzzy
+msgid "lag"
+msgstr "Flagi"
+
+#, fuzzy
+msgid "Langi"
+msgstr "Język"
+
+#, fuzzy
+msgid "la"
+msgstr "Uruchom"
+
+#, fuzzy
+msgid "Latin"
+msgstr "Aktualizowanie"
+
+#, fuzzy
+msgid "lad"
+msgstr "i"
+
+#, fuzzy
+msgid "Ladino"
+msgstr "Shadery"
+
+msgid "lah"
+msgstr ""
+
+msgid "Lahnda"
+msgstr ""
+
+msgid "lam"
+msgstr ""
+
+msgid "Lamba"
+msgstr ""
+
+msgid "lb"
+msgstr ""
+
+#, fuzzy
+msgid "Luxembourgish"
 msgstr "luksemburski (Luksemburg)"
 
-msgid "lg_UG"
-msgstr "lg_UG"
+msgid "lez"
+msgstr ""
 
-msgid "Ganda (Uganda)"
-msgstr "ganda (Uganda)"
+msgid "Lezghian"
+msgstr ""
 
-msgid "li_BE"
-msgstr "li_BE"
+msgid "lfn"
+msgstr ""
 
-msgid "Limburgan (Belgium)"
+msgid "Lingua Franca Nova"
+msgstr ""
+
+msgid "lg"
+msgstr ""
+
+msgid "Ganda"
+msgstr ""
+
+#, fuzzy
+msgid "li"
+msgstr "elif"
+
+#, fuzzy
+msgid "Limburgan"
 msgstr "Limburgan (Belgia)"
 
-msgid "li_NL"
-msgstr "li_NL"
-
-msgid "Limburgan (Netherlands)"
-msgstr "limburian (Holenderski)"
-
-msgid "lij_IT"
+#, fuzzy
+msgid "lij"
 msgstr "lij_IT"
 
-msgid "Ligurian (Italy)"
+#, fuzzy
+msgid "Ligurian"
 msgstr "liguryjski (Włochy)"
 
-msgid "ln_CD"
-msgstr "ln_CD"
+#, fuzzy
+msgid "liv"
+msgstr "lv"
 
-msgid "Lingala (Congo)"
+#, fuzzy
+msgid "Livonian"
+msgstr "litewski"
+
+#, fuzzy
+msgid "lkt"
+msgstr "lt"
+
+msgid "Lakota"
+msgstr ""
+
+msgid "lmo"
+msgstr ""
+
+msgid "Lombard"
+msgstr ""
+
+msgid "ln"
+msgstr ""
+
+#, fuzzy
+msgid "Lingala"
 msgstr "lingala (Kongo)"
 
-msgid "lo_LA"
-msgstr "lo_LA"
+#, fuzzy
+msgid "lo"
+msgstr "Blask"
 
-msgid "Lao (Laos)"
-msgstr "lao (Laos)"
+msgid "Lao"
+msgstr ""
+
+#, fuzzy
+msgid "lol"
+msgstr "el"
+
+msgid "Mongo"
+msgstr ""
+
+msgid "lou"
+msgstr ""
+
+msgid "Louisiana Creole"
+msgstr ""
+
+msgid "loz"
+msgstr ""
+
+msgid "Lozi"
+msgstr ""
+
+msgid "lrc"
+msgstr ""
+
+msgid "Northern Luri"
+msgstr ""
 
 msgid "lt"
 msgstr "lt"
@@ -1272,11 +2201,59 @@ msgstr "lt"
 msgid "Lithuanian"
 msgstr "litewski"
 
-msgid "lt_LT"
-msgstr "lt_LT"
+#, fuzzy
+msgid "ltg"
+msgstr "lt"
 
-msgid "Lithuanian (Lithuania)"
-msgstr "litewski (Litwa)"
+#, fuzzy
+msgid "Latgalian"
+msgstr "włoski"
+
+#, fuzzy
+msgid "lu"
+msgstr "niebieski"
+
+msgid "Luba-Katanga"
+msgstr ""
+
+msgid "lua"
+msgstr ""
+
+msgid "Luba-Lulua"
+msgstr ""
+
+#, fuzzy
+msgid "lui"
+msgstr "Wtyczki"
+
+msgid "Luiseno"
+msgstr ""
+
+#, fuzzy
+msgid "lun"
+msgstr "Uruchom"
+
+msgid "Lunda"
+msgstr ""
+
+msgid "luo"
+msgstr ""
+
+msgid "Luo"
+msgstr ""
+
+#, fuzzy
+msgid "lus"
+msgstr "Wtyczki"
+
+msgid "Mizo"
+msgstr ""
+
+msgid "luy"
+msgstr ""
+
+msgid "Luyia"
+msgstr ""
 
 msgid "lv"
 msgstr "lv"
@@ -1284,78 +2261,190 @@ msgstr "lv"
 msgid "Latvian"
 msgstr "łotewski"
 
-msgid "lv_LV"
-msgstr "lv_LV"
+#, fuzzy
+msgid "lzh"
+msgstr "zh"
 
-msgid "Latvian (Latvia)"
-msgstr "łotewski (Łotwa)"
-
-msgid "lzh_TW"
-msgstr "lzh_TW"
-
-msgid "Literary Chinese (Taiwan)"
+#, fuzzy
+msgid "Literary Chinese"
 msgstr "literacki chiński (Tajwan)"
 
-msgid "mag_IN"
-msgstr "mag_IN"
+msgid "lzz"
+msgstr ""
 
-msgid "Magahi (India)"
+msgid "Laz"
+msgstr ""
+
+#, fuzzy
+msgid "mad"
+msgstr "i"
+
+#, fuzzy
+msgid "Madurese"
+msgstr "Funkcje"
+
+#, fuzzy
+msgid "maf"
+msgstr "af"
+
+msgid "Mafa"
+msgstr ""
+
+#, fuzzy
+msgid "mag"
+msgstr "max"
+
+#, fuzzy
+msgid "Magahi"
 msgstr "magahi (Indie)"
 
-msgid "mai_IN"
-msgstr "mai_IN"
+#, fuzzy
+msgid "mai"
+msgstr "max"
 
-msgid "Maithili (India)"
+#, fuzzy
+msgid "Maithili"
 msgstr "maithili (Indie)"
 
-msgid "mg_MG"
-msgstr "mg_MG"
+#, fuzzy
+msgid "mak"
+msgstr "mk"
 
-msgid "Malagasy (Madagascar)"
-msgstr "malgaski (Madagaskar)"
+msgid "Makasar"
+msgstr ""
 
-msgid "mh_MH"
-msgstr "mh_MH"
+#, fuzzy
+msgid "man"
+msgstr "max"
 
-msgid "Marshallese (Marshall Islands)"
-msgstr "marshallese (Wyspy Marshalla)"
+#, fuzzy
+msgid "Mandingo"
+msgstr "Shadery"
 
-msgid "mhr_RU"
-msgstr "mhr_RU"
+#, fuzzy
+msgid "mas"
+msgstr "ms"
 
-msgid "Eastern Mari (Russia)"
+msgid "Masai"
+msgstr ""
+
+#, fuzzy
+msgid "mde"
+msgstr "de"
+
+msgid "Maba"
+msgstr ""
+
+msgid "mdf"
+msgstr ""
+
+msgid "Moksha"
+msgstr ""
+
+msgid "mdr"
+msgstr ""
+
+msgid "Mandar"
+msgstr ""
+
+#, fuzzy
+msgid "men"
+msgstr "en"
+
+msgid "Mende"
+msgstr ""
+
+#, fuzzy
+msgid "mer"
+msgstr "Kamery"
+
+msgid "Meru"
+msgstr ""
+
+msgid "mfe"
+msgstr ""
+
+msgid "Morisyen"
+msgstr ""
+
+msgid "mg"
+msgstr ""
+
+#, fuzzy
+msgid "Malagasy"
+msgstr "malajski"
+
+#, fuzzy
+msgid "mga"
+msgstr "ga"
+
+msgid "Middle Irish"
+msgstr ""
+
+msgid "mgh"
+msgstr ""
+
+msgid "Makhuwa-Meetto"
+msgstr ""
+
+msgid "mgo"
+msgstr ""
+
+msgid "Metaʼ"
+msgstr ""
+
+msgid "mh"
+msgstr ""
+
+msgid "Marshallese"
+msgstr ""
+
+#, fuzzy
+msgid "mhr"
+msgstr "hr"
+
+#, fuzzy
+msgid "Eastern Mari"
 msgstr "wschodnia mari (Rosja)"
 
 msgid "mi"
 msgstr ""
 
-msgid "Maori"
+msgid "Māori"
 msgstr ""
 
-msgid "mi_NZ"
-msgstr "mi_NZ"
+#, fuzzy
+msgid "mic"
+msgstr "połączyć"
 
-msgid "Maori (New Zealand)"
-msgstr "mao (Nowa Zelandia)"
-
-msgid "miq_NI"
-msgstr "miq_NI"
+msgid "Mi'kmaq"
+msgstr ""
 
 #, fuzzy
-msgid "Mískito (Nicaragua)"
-msgstr "miskito (Nikaragua)"
+msgid "min"
+msgstr "połączyć"
+
+msgid "Minangkabau"
+msgstr ""
+
+#, fuzzy
+msgid "miq"
+msgstr "połączyć"
+
+msgid "Mískito"
+msgstr ""
+
+msgid "mjw"
+msgstr ""
+
+msgid "Karbi"
+msgstr ""
 
 msgid "mk"
 msgstr "mk"
 
 msgid "Macedonian"
 msgstr "macedoński"
-
-msgid "mk_MK"
-msgstr "mk_MK"
-
-msgid "Macedonian (Macedonia)"
-msgstr "macedoński (Macedonia)"
 
 msgid "ml"
 msgstr ""
@@ -1364,29 +2453,59 @@ msgstr ""
 msgid "Malayalam"
 msgstr "malajski"
 
-msgid "ml_IN"
-msgstr "ml_IN"
+msgid "mn"
+msgstr ""
 
-msgid "Malayalam (India)"
-msgstr "malajalam (Indie)"
-
-msgid "mni_IN"
-msgstr "mni_IN"
-
-msgid "Manipuri (India)"
-msgstr "manipuri (Indie)"
-
-msgid "mn_MN"
-msgstr "mn_MN"
-
-msgid "Mongolian (Mongolia)"
+#, fuzzy
+msgid "Mongolian"
 msgstr "mongolski (Mongolia)"
 
-msgid "mr_IN"
-msgstr "mr_IN"
+msgid "mnc"
+msgstr ""
 
-msgid "Marathi (India)"
+msgid "Manchu"
+msgstr ""
+
+#, fuzzy
+msgid "mni"
+msgstr "połączyć"
+
+#, fuzzy
+msgid "Manipuri"
+msgstr "manipuri (Indie)"
+
+msgid "mnw"
+msgstr ""
+
+msgid "Mon"
+msgstr ""
+
+#, fuzzy
+msgid "mos"
+msgstr "ms"
+
+msgid "Mossi"
+msgstr ""
+
+msgid "moh"
+msgstr ""
+
+msgid "Mohawk"
+msgstr ""
+
+msgid "mr"
+msgstr ""
+
+#, fuzzy
+msgid "Marathi"
 msgstr "marathi (Indie)"
+
+msgid "mrj"
+msgstr ""
+
+#, fuzzy
+msgid "Western Mari"
+msgstr "wschodnia mari (Rosja)"
 
 msgid "ms"
 msgstr "ms"
@@ -1394,96 +2513,172 @@ msgstr "ms"
 msgid "Malay"
 msgstr "malajski"
 
-msgid "ms_MY"
-msgstr "ms_MY"
-
-msgid "Malay (Malaysia)"
-msgstr "malajski (Malezja)"
-
 msgid "mt"
 msgstr "mt"
 
 msgid "Maltese"
 msgstr "maltański"
 
-msgid "mt_MT"
-msgstr "mt_MT"
+#, fuzzy
+msgid "mua"
+msgstr "max"
 
-msgid "Maltese (Malta)"
-msgstr "maltański (Malta)"
-
-msgid "my_MM"
-msgstr "my_MM"
-
-msgid "Burmese (Myanmar)"
-msgstr "birmański (Birma)"
-
-msgid "myv_RU"
-msgstr "myv_RU"
+msgid "Mundang"
+msgstr ""
 
 #, fuzzy
-msgid "Erzya (Russia)"
-msgstr "erzya (Rosja)"
+msgid "mus"
+msgstr "ms"
 
-msgid "nah_MX"
+msgid "Muscogee"
+msgstr ""
+
+msgid "mwl"
+msgstr ""
+
+msgid "Mirandese"
+msgstr ""
+
+msgid "mwr"
+msgstr ""
+
+msgid "Marwari"
+msgstr ""
+
+msgid "mwv"
+msgstr ""
+
+msgid "Mentawai"
+msgstr ""
+
+msgid "my"
+msgstr ""
+
+msgid "Burmese"
+msgstr ""
+
+msgid "mye"
+msgstr ""
+
+msgid "Myene"
+msgstr ""
+
+#, fuzzy
+msgid "myv"
+msgstr "myv_RU"
+
+msgid "Erzya"
+msgstr ""
+
+msgid "mzn"
+msgstr ""
+
+msgid "Mazanderani"
+msgstr ""
+
+#, fuzzy
+msgid "na"
+msgstr "``name``"
+
+msgid "Nauru"
+msgstr ""
+
+#, fuzzy
+msgid "nah"
 msgstr "nah_MX"
 
-msgid "Nahuatl languages (Mexico)"
-msgstr "języki nahuatl (Meksyk)"
+msgid "Nahuatl"
+msgstr ""
 
-msgid "nan_TW"
-msgstr "nan_TW"
+#, fuzzy
+msgid "nan"
+msgstr "nn"
 
-msgid "Min Nan Chinese (Taiwan)"
+#, fuzzy
+msgid "Min Nan Chinese"
 msgstr "min nan chiński (Taiwan)"
 
-msgid "nb"
-msgstr "nb"
+#, fuzzy
+msgid "nap"
+msgstr "pap"
+
+msgid "Neapolitan"
+msgstr ""
+
+msgid "naq"
+msgstr ""
+
+msgid "Nama"
+msgstr ""
+
+msgid "nb, no"
+msgstr ""
 
 msgid "Norwegian Bokmål"
 msgstr "norweski Bokmål"
 
-msgid "nb_NO"
-msgstr "nb_NO"
+#, fuzzy
+msgid "nd"
+msgstr "i"
 
-msgid "Norwegian Bokmål (Norway)"
-msgstr "norweski Bokmål (Norwegia)"
+msgid "North Ndebele"
+msgstr ""
 
-msgid "nds_DE"
-msgstr "nds_DE"
+#, fuzzy
+msgid "nds"
+msgstr "i"
 
-msgid "Low German (Germany)"
-msgstr "dolnosaksoński (Niemcy)"
+#, fuzzy
+msgid "Low German"
+msgstr "niemiecki"
 
-msgid "nds_NL"
-msgstr "nds_NL"
+#, fuzzy
+msgid "ne"
+msgstr "``name``"
 
-msgid "Low German (Netherlands)"
-msgstr "dolnosaksoński (Holandia)"
-
-msgid "ne_NP"
-msgstr "ne_NP"
-
-msgid "Nepali (Nepal)"
+#, fuzzy
+msgid "Nepali"
 msgstr "nepalski (Nepal)"
 
-msgid "nhn_MX"
-msgstr "nhn_MX"
+msgid "new"
+msgstr ""
 
-msgid "Central Nahuatl (Mexico)"
+msgid "Newari"
+msgstr ""
+
+#, fuzzy
+msgid "nhn"
+msgstr "nn"
+
+#, fuzzy
+msgid "Central Nahuatl"
 msgstr "środkowy nahuatl (Meksyk)"
 
-msgid "niu_NU"
+msgid "ng"
+msgstr ""
+
+msgid "Ndonga"
+msgstr ""
+
+msgid "nia"
+msgstr ""
+
+msgid "Nias"
+msgstr ""
+
+#, fuzzy
+msgid "niu"
 msgstr "niu_NU"
 
-msgid "Niuean (Niue)"
+#, fuzzy
+msgid "Niuean"
 msgstr "niuean (Niue)"
 
-msgid "niu_NZ"
-msgstr "niu_NZ"
+msgid "njo"
+msgstr ""
 
-msgid "Niuean (New Zealand)"
-msgstr "niuean (Nowa Zelandia)"
+msgid "Ao Naga"
+msgstr ""
 
 msgid "nl"
 msgstr "nl"
@@ -1491,23 +2686,11 @@ msgstr "nl"
 msgid "Dutch"
 msgstr "duński"
 
-msgid "nl_AW"
-msgstr "nl_AW"
+msgid "nmg"
+msgstr ""
 
-msgid "Dutch (Aruba)"
-msgstr "duński (Aruba)"
-
-msgid "nl_BE"
-msgstr "nl_BE"
-
-msgid "Dutch (Belgium)"
-msgstr "duński (Belgia)"
-
-msgid "nl_NL"
-msgstr "nl_NL"
-
-msgid "Dutch (Netherlands)"
-msgstr "duński (Holandia)"
+msgid "Kwasio"
+msgstr ""
 
 msgid "nn"
 msgstr "nn"
@@ -1515,29 +2698,120 @@ msgstr "nn"
 msgid "Norwegian Nynorsk"
 msgstr "norweski nynorsk"
 
-msgid "nn_NO"
-msgstr "nn_NO"
+#, fuzzy
+msgid "nnh"
+msgstr "nn"
 
-msgid "Norwegian Nynorsk (Norway)"
-msgstr "norweski nynorsk (Norwegia)"
+msgid "Ngiemboon"
+msgstr ""
 
-msgid "nr_ZA"
-msgstr "nr_ZA"
+#, fuzzy
+msgid "nog"
+msgstr "Mgła"
 
-msgid "South Ndebele (South Africa)"
+msgid "Nogai"
+msgstr ""
+
+#, fuzzy
+msgid "non"
+msgstr "nn"
+
+msgid "Old Norse"
+msgstr ""
+
+msgid "nov"
+msgstr ""
+
+msgid "Novial"
+msgstr ""
+
+msgid "nqo"
+msgstr ""
+
+msgid "N'ko"
+msgstr ""
+
+msgid "nr"
+msgstr ""
+
+#, fuzzy
+msgid "South Ndebele"
 msgstr "południowe nbedele (Republika Południowej Afryki)"
 
-msgid "nso_ZA"
-msgstr "nso_ZA"
+#, fuzzy
+msgid "nso"
+msgstr "so"
 
-msgid "Pedi (South Africa)"
-msgstr "pedi (Republika Południowej Afryki)"
+msgid "Pedi"
+msgstr ""
 
-msgid "oc_FR"
-msgstr "oc_FR"
+#, fuzzy
+msgid "nus"
+msgstr "Typy wyliczeniowe"
 
-msgid "Occitan (France)"
+msgid "Nuer"
+msgstr ""
+
+#, fuzzy
+msgid "nv"
+msgstr "granatowy"
+
+msgid "Navajo"
+msgstr ""
+
+msgid "nwc"
+msgstr ""
+
+#, fuzzy
+msgid "Classical Newari"
+msgstr "Deklaracja klasy"
+
+#, fuzzy
+msgid "ny"
+msgstr "Jakikolwiek"
+
+msgid "Nyanja"
+msgstr ""
+
+#, fuzzy
+msgid "nym"
+msgstr "Jakikolwiek"
+
+msgid "Nyamwezi"
+msgstr ""
+
+#, fuzzy
+msgid "nyn"
+msgstr "nn"
+
+msgid "Nyankole"
+msgstr ""
+
+#, fuzzy
+msgid "nyo"
+msgstr "Jakikolwiek"
+
+msgid "Nyoro"
+msgstr ""
+
+msgid "nzi"
+msgstr ""
+
+msgid "Nzima"
+msgstr ""
+
+msgid "oc"
+msgstr ""
+
+#, fuzzy
+msgid "Occitan"
 msgstr "prowansalski (Francja)"
+
+msgid "oj"
+msgstr ""
+
+msgid "Ojibwa"
+msgstr ""
 
 msgid "om"
 msgstr "om"
@@ -1545,41 +2819,62 @@ msgstr "om"
 msgid "Oromo"
 msgstr "oromski"
 
-msgid "om_ET"
-msgstr "om_ET"
+#, fuzzy
+msgid "or"
+msgstr "for"
 
-msgid "Oromo (Ethiopia)"
-msgstr "oromski"
+msgid "Odia"
+msgstr ""
 
-msgid "om_KE"
-msgstr "om_KE"
+msgid "os"
+msgstr ""
 
-msgid "Oromo (Kenya)"
-msgstr "oromski (Kenia)"
+msgid "Ossetic"
+msgstr ""
 
-msgid "or_IN"
-msgstr "or_IN"
+msgid "osa"
+msgstr ""
 
-msgid "Oriya (India)"
-msgstr "oriya (Indie)"
+#, fuzzy
+msgid "Osage"
+msgstr "Użycie"
 
-msgid "os_RU"
-msgstr "os_RU"
+#, fuzzy
+msgid "ota"
+msgstr "ta"
 
-msgid "Ossetian (Russia)"
-msgstr "osetyjski (Rosja)"
+#, fuzzy
+msgid "Ottoman Turkish"
+msgstr "turecki"
 
-msgid "pa_IN"
-msgstr "pa_IN"
+#, fuzzy
+msgid "pa"
+msgstr "pap"
 
-msgid "Panjabi (India)"
+#, fuzzy
+msgid "Panjabi"
 msgstr "panjabi (Indie)"
 
-msgid "pa_PK"
-msgstr "pa_PK"
+#, fuzzy
+msgid "pag"
+msgstr "pap"
 
-msgid "Panjabi (Pakistan)"
-msgstr "panjabi (Pakistan)"
+msgid "Pangasinan"
+msgstr ""
+
+#, fuzzy
+msgid "pal"
+msgstr "pl"
+
+msgid "Pahlavi"
+msgstr ""
+
+#, fuzzy
+msgid "pam"
+msgstr "pap"
+
+msgid "Pampanga"
+msgstr ""
 
 msgid "pap"
 msgstr "pap"
@@ -1587,23 +2882,66 @@ msgstr "pap"
 msgid "Papiamento"
 msgstr "papiamento"
 
-msgid "pap_AN"
-msgstr "pap_AN"
+#, fuzzy
+msgid "pau"
+msgstr "pap"
 
-msgid "Papiamento (Netherlands Antilles)"
-msgstr "papiamento (Holenderskie Antyle)"
+msgid "Palauan"
+msgstr ""
 
-msgid "pap_AW"
-msgstr "pap_AW"
+msgid "pcd"
+msgstr ""
 
-msgid "Papiamento (Aruba)"
-msgstr "papiamento (Aruba)"
+#, fuzzy
+msgid "Picard"
+msgstr "stały wzorzec"
 
-msgid "pap_CW"
-msgstr "pap_CW"
+msgid "pcm"
+msgstr ""
 
-msgid "Papiamento (Curaçao)"
-msgstr "papiamento (Curaçao)"
+msgid "Nigerian Pidgin"
+msgstr ""
+
+msgid "pdc"
+msgstr ""
+
+msgid "Pennsylvania German"
+msgstr ""
+
+#, fuzzy
+msgid "pdt"
+msgstr "pt"
+
+msgid "Plautdietsch"
+msgstr ""
+
+#, fuzzy
+msgid "peo"
+msgstr "eo"
+
+#, fuzzy
+msgid "Old Persian"
+msgstr "Perski"
+
+#, fuzzy
+msgid "pfl"
+msgstr "pl"
+
+#, fuzzy
+msgid "Palatine German"
+msgstr "Format tłumaczenia"
+
+msgid "phn"
+msgstr ""
+
+msgid "Phoenician"
+msgstr ""
+
+msgid "pi"
+msgstr ""
+
+msgid "Pali"
+msgstr ""
 
 msgid "pl"
 msgstr "pl"
@@ -1611,11 +2949,26 @@ msgstr "pl"
 msgid "Polish"
 msgstr "polski"
 
-msgid "pl_PL"
-msgstr "pl_PL"
+#, fuzzy
+msgid "pms"
+msgstr "ms"
 
-msgid "Polish (Poland)"
-msgstr "polski (Polska)"
+msgid "Piedmontese"
+msgstr ""
+
+#, fuzzy
+msgid "pnt"
+msgstr "pt"
+
+msgid "Pontic"
+msgstr ""
+
+#, fuzzy
+msgid "pon"
+msgstr "Optymalizacja"
+
+msgid "Pohnpeian"
+msgstr ""
 
 msgid "pr"
 msgstr "pr"
@@ -1623,11 +2976,34 @@ msgstr "pr"
 msgid "Pirate"
 msgstr "piracki"
 
-msgid "ps_AF"
-msgstr "ps_AF"
+#, fuzzy
+msgid "prg"
+msgstr "pr"
 
-msgid "Pushto (Afghanistan)"
-msgstr "pushto (Afganistan)"
+#, fuzzy
+msgid "Prussian"
+msgstr "rosyjski"
+
+#, fuzzy
+msgid "pro"
+msgstr "pr"
+
+msgid "Old Provençal"
+msgstr ""
+
+#, fuzzy
+msgid "prs"
+msgstr "pr"
+
+msgid "Dari"
+msgstr ""
+
+#, fuzzy
+msgid "ps"
+msgstr "pass"
+
+msgid "Pushto"
+msgstr ""
 
 msgid "pt"
 msgstr "pt"
@@ -1635,35 +3011,89 @@ msgstr "pt"
 msgid "Portuguese"
 msgstr "portugalski"
 
-msgid "pt_BR"
-msgstr "pt_BR"
+#, fuzzy
+msgid "qu"
+msgstr "aqua"
 
-msgid "Portuguese (Brazil)"
-msgstr "portugalski (Brazylia)"
+msgid "Quechua"
+msgstr ""
 
-msgid "pt_PT"
-msgstr "pt_PT"
+msgid "quc"
+msgstr ""
 
-msgid "Portuguese (Portugal)"
-msgstr "portugalski (Portugalia)"
+msgid "K'iche"
+msgstr ""
 
-msgid "quy_PE"
+msgid "qug"
+msgstr ""
+
+msgid "Chimborazo Highland Quichua"
+msgstr ""
+
+#, fuzzy
+msgid "quy"
 msgstr "quy_PE"
 
-msgid "Ayacucho Quechua (Peru)"
+#, fuzzy
+msgid "Ayacucho Quechua"
 msgstr "ayacucho quechua (Peru)"
 
-msgid "quz_PE"
-msgstr "quz_PE"
+#, fuzzy
+msgid "quz"
+msgstr "uz"
 
-msgid "Cusco Quechua (Peru)"
+#, fuzzy
+msgid "Cusco Quechua"
 msgstr "cusco quechua (Peru)"
 
-msgid "raj_IN"
+#, fuzzy
+msgid "raj"
 msgstr "raj_IN"
 
-msgid "Rajasthani (India)"
+#, fuzzy
+msgid "Rajasthani"
 msgstr "Radżasthani (Indie)"
+
+#, fuzzy
+msgid "rap"
+msgstr "pap"
+
+msgid "Rapanui"
+msgstr ""
+
+#, fuzzy
+msgid "rar"
+msgstr "ar"
+
+msgid "Rarotongan"
+msgstr ""
+
+msgid "rgn"
+msgstr ""
+
+#, fuzzy
+msgid "Romagnol"
+msgstr "rumuński"
+
+#, fuzzy
+msgid "rif"
+msgstr "if"
+
+msgid "Riffian"
+msgstr ""
+
+msgid "rm"
+msgstr ""
+
+#, fuzzy
+msgid "Romansh"
+msgstr "rumuński"
+
+msgid "rn"
+msgstr ""
+
+msgid "Rundi"
+msgstr ""
 
 msgid "ro"
 msgstr "ro"
@@ -1671,11 +3101,26 @@ msgstr "ro"
 msgid "Romanian"
 msgstr "rumuński"
 
-msgid "ro_RO"
-msgstr "ro_RO"
+#, fuzzy
+msgid "rof"
+msgstr "ro"
 
-msgid "Romanian (Romania)"
-msgstr "rumuński (Rumunia)"
+msgid "Rombo"
+msgstr ""
+
+#, fuzzy
+msgid "rom"
+msgstr "om"
+
+#, fuzzy
+msgid "Romany"
+msgstr "rumuński"
+
+msgid "rtm"
+msgstr ""
+
+msgid "Rotuman"
+msgstr ""
 
 msgid "ru"
 msgstr "ru"
@@ -1683,41 +3128,123 @@ msgstr "ru"
 msgid "Russian"
 msgstr "rosyjski"
 
-msgid "ru_RU"
-msgstr "ru_RU"
+#, fuzzy
+msgid "rue"
+msgstr "ru"
 
-msgid "Russian (Russia)"
-msgstr "rosyjski (Rosja)"
+msgid "Rusyn"
+msgstr ""
 
-msgid "ru_UA"
-msgstr "ru_UA"
+#, fuzzy
+msgid "rug"
+msgstr "ru"
 
-msgid "Russian (Ukraine)"
-msgstr "rosyjski (Ukraina)"
+msgid "Roviana"
+msgstr ""
 
-msgid "rw_RW"
-msgstr "rw_RW"
+#, fuzzy
+msgid "rup"
+msgstr "ru"
 
-msgid "Kinyarwanda (Rwanda)"
+#, fuzzy
+msgid "Aromanian"
+msgstr "rumuński"
+
+msgid "rw"
+msgstr ""
+
+#, fuzzy
+msgid "Kinyarwanda"
 msgstr "kinyarwanda (Rwanda)"
 
-msgid "sa_IN"
-msgstr "sa_IN"
+msgid "rwk"
+msgstr ""
 
-msgid "Sanskrit (India)"
+msgid "Rwa"
+msgstr ""
+
+msgid "sa"
+msgstr ""
+
+#, fuzzy
+msgid "Sanskrit"
 msgstr "sanskrycki (Indie)"
 
-msgid "sat_IN"
+#, fuzzy
+msgid "sad"
+msgstr "i"
+
+msgid "Sandawe"
+msgstr ""
+
+msgid "sah"
+msgstr ""
+
+msgid "Sakha"
+msgstr ""
+
+msgid "sam"
+msgstr ""
+
+msgid "Samaritan Aramaic"
+msgstr ""
+
+#, fuzzy
+msgid "saq"
+msgstr "sq"
+
+msgid "Samburu"
+msgstr ""
+
+#, fuzzy
+msgid "sas"
+msgstr "case"
+
+msgid "Sasak"
+msgstr ""
+
+#, fuzzy
+msgid "sat"
 msgstr "sat_IN"
 
-msgid "Santali (India)"
+#, fuzzy
+msgid "Santali"
 msgstr "santali (Indie)"
 
-msgid "sc_IT"
-msgstr "sc_IT"
+msgid "saz"
+msgstr ""
 
-msgid "Sardinian (Italy)"
+msgid "Saurashtra"
+msgstr ""
+
+#, fuzzy
+msgid "sba"
+msgstr "i"
+
+msgid "Ngambay"
+msgstr ""
+
+msgid "sbp"
+msgstr ""
+
+#, fuzzy
+msgid "Sangu"
+msgstr "Język"
+
+#, fuzzy
+msgid "sc"
+msgstr "sco"
+
+#, fuzzy
+msgid "Sardinian"
 msgstr "sardyński (Włochy)"
+
+#, fuzzy
+msgid "scn"
+msgstr "sco"
+
+msgid "Sicilian"
+msgstr ""
 
 msgid "sco"
 msgstr "sco"
@@ -1725,35 +3252,126 @@ msgstr "sco"
 msgid "Scots"
 msgstr "szkocki"
 
-msgid "sd_IN"
-msgstr "sd_IN"
+msgid "sd"
+msgstr ""
 
-msgid "Sindhi (India)"
+#, fuzzy
+msgid "Sindhi"
 msgstr "sindhi (Indie)"
 
-msgid "se_NO"
-msgstr "se_NO"
+#, fuzzy
+msgid "sdc"
+msgstr "sco"
 
-msgid "Northern Sami (Norway)"
+msgid "Sassarese Sardinian"
+msgstr ""
+
+msgid "sdh"
+msgstr ""
+
+#, fuzzy
+msgid "Southern Kurdish"
+msgstr "kurdyjski"
+
+#, fuzzy
+msgid "se"
+msgstr "else"
+
+#, fuzzy
+msgid "Northern Sami"
 msgstr "północne sami (Norwegia)"
 
-msgid "sgs_LT"
+#, fuzzy
+msgid "see"
+msgstr "Sceny"
+
+msgid "Seneca"
+msgstr ""
+
+msgid "seh"
+msgstr ""
+
+msgid "Sena"
+msgstr ""
+
+msgid "sei"
+msgstr ""
+
+msgid "Seri"
+msgstr ""
+
+#, fuzzy
+msgid "sel"
+msgstr "self"
+
+msgid "Selkup"
+msgstr ""
+
+#, fuzzy
+msgid "ses"
+msgstr "es"
+
+msgid "Koyraboro Senni"
+msgstr ""
+
+msgid "sg"
+msgstr ""
+
+msgid "Sango"
+msgstr ""
+
+#, fuzzy
+msgid "sga"
+msgstr "ga"
+
+#, fuzzy
+msgid "Old Irish"
+msgstr "irlandzki"
+
+#, fuzzy
+msgid "sgs"
 msgstr "sgs_LT"
 
-msgid "Samogitian (Lithuania)"
+#, fuzzy
+msgid "Samogitian"
 msgstr "żmudzki"
 
-msgid "shs_CA"
-msgstr "shs_CA"
+#, fuzzy
+msgid "sh"
+msgstr "Mesh"
 
-msgid "Shuswap (Canada)"
+#, fuzzy
+msgid "Serbo-Croatian"
+msgstr "chorwacki"
+
+#, fuzzy
+msgid "shi"
+msgstr "hi"
+
+msgid "Tachelhit"
+msgstr ""
+
+msgid "shn"
+msgstr ""
+
+msgid "Shan"
+msgstr ""
+
+#, fuzzy
+msgid "shs"
+msgstr "Siatki"
+
+#, fuzzy
+msgid "Shuswap"
 msgstr "shuswap (Kanada)"
 
-msgid "sid_ET"
-msgstr "sid_ET"
+#, fuzzy
+msgid "shu"
+msgstr "hu"
 
-msgid "Sidamo (Ethiopia)"
-msgstr "Sidamo (Etiopia)"
+#, fuzzy
+msgid "Chadian Arabic"
+msgstr "arabski"
 
 msgid "si"
 msgstr ""
@@ -1761,11 +3379,12 @@ msgstr ""
 msgid "Sinhala"
 msgstr ""
 
-msgid "si_LK"
-msgstr "si_LK"
+#, fuzzy
+msgid "sid"
+msgstr "id"
 
-msgid "Sinhala (Sri Lanka)"
-msgstr "Sinhala (Sri Lanka)"
+msgid "Sidamo"
+msgstr ""
 
 msgid "sk"
 msgstr "sk"
@@ -1773,24 +3392,72 @@ msgstr "sk"
 msgid "Slovak"
 msgstr "słowacki"
 
-msgid "sk_SK"
-msgstr "sk_SK"
-
-msgid "Slovak (Slovakia)"
-msgstr "słowacki (Słowacja)"
-
 msgid "sl"
 msgstr "sl"
 
 msgid "Slovenian"
 msgstr "słoweński"
 
-msgid "sl_SI"
+#, fuzzy
+msgid "sli"
+msgstr "sl"
+
+msgid "Lower Silesian"
 msgstr ""
 
 #, fuzzy
-msgid "Slovenian (Slovenia)"
-msgstr "słowacki (Słowacja)"
+msgid "sly"
+msgstr "sl"
+
+#, fuzzy
+msgid "Selayar"
+msgstr "Opóźnianie"
+
+msgid "sm"
+msgstr ""
+
+msgid "Samoan"
+msgstr ""
+
+#, fuzzy
+msgid "sma"
+msgstr "max"
+
+#, fuzzy
+msgid "Southern Sami"
+msgstr "północne sami (Norwegia)"
+
+msgid "smj"
+msgstr ""
+
+msgid "Lule Sami"
+msgstr ""
+
+msgid "smn"
+msgstr ""
+
+msgid "Inari Sami"
+msgstr ""
+
+#, fuzzy
+msgid "sms"
+msgstr "ms"
+
+msgid "Skolt Sami"
+msgstr ""
+
+msgid "sn"
+msgstr ""
+
+msgid "Shona"
+msgstr ""
+
+#, fuzzy
+msgid "snk"
+msgstr "sk"
+
+msgid "Soninke"
+msgstr ""
 
 msgid "so"
 msgstr "so"
@@ -1798,59 +3465,25 @@ msgstr "so"
 msgid "Somali"
 msgstr "somalijski"
 
-msgid "so_DJ"
-msgstr "so_DJ"
+#, fuzzy
+msgid "sog"
+msgstr "so"
 
-msgid "Somali (Djibouti)"
-msgstr "somalijski (Dżibuti)"
+msgid "Sogdien"
+msgstr ""
 
-msgid "so_ET"
-msgstr "so_ET"
+#, fuzzy
+msgid "son"
+msgstr "so"
 
-msgid "Somali (Ethiopia)"
-msgstr "somalijski (Etiopia)"
-
-msgid "so_KE"
-msgstr "so_KE"
-
-msgid "Somali (Kenya)"
-msgstr "somalijski (Kenia)"
-
-msgid "so_SO"
-msgstr "so_SO"
-
-msgid "Somali (Somalia)"
-msgstr "somalijski (Somalia)"
-
-msgid "son_ML"
-msgstr "son_ML"
-
-msgid "Songhai languages (Mali)"
-msgstr "języki songhai (Mali)"
+msgid "Songhai"
+msgstr ""
 
 msgid "sq"
 msgstr "sq"
 
 msgid "Albanian"
 msgstr "albański"
-
-msgid "sq_AL"
-msgstr "sq_AL"
-
-msgid "Albanian (Albania)"
-msgstr "albański (Albania)"
-
-msgid "sq_KV"
-msgstr "sq_KV"
-
-msgid "Albanian (Kosovo)"
-msgstr "albański (Kosovo)"
-
-msgid "sq_MK"
-msgstr "sq_MK"
-
-msgid "Albanian (Macedonia)"
-msgstr "albański (Macedonia)"
 
 msgid "sr"
 msgstr "sr"
@@ -1859,43 +3492,71 @@ msgid "Serbian"
 msgstr "serbski"
 
 #, fuzzy
-msgid "sr_Cyrl"
-msgstr "sr_CS"
+msgid "srn"
+msgstr "sr"
 
-#, fuzzy
-msgid "Serbian (Cyrillic)"
-msgstr "serbski (Serbia)"
-
-msgid "sr_Latn"
+msgid "Sranan Tongo"
 msgstr ""
 
 #, fuzzy
-msgid "Serbian (Latin)"
-msgstr "serbski (Serbia)"
+msgid "srr"
+msgstr "sr"
 
-msgid "sr_ME"
-msgstr "sr_ME"
+msgid "Serer"
+msgstr ""
 
-msgid "Serbian (Montenegro)"
-msgstr "serbski (Czarnogóra)"
+#, fuzzy
+msgid "ss"
+msgstr "pass"
 
-msgid "sr_RS"
-msgstr "sr_RS"
+msgid "Swati"
+msgstr ""
 
-msgid "Serbian (Serbia)"
-msgstr "serbski (Serbia)"
+msgid "ssy"
+msgstr ""
 
-msgid "ss_ZA"
-msgstr "ss_ZA"
+msgid "Saho"
+msgstr ""
 
-msgid "Swati (South Africa)"
-msgstr "swati (Republika Południowej Afryki)"
+#, fuzzy
+msgid "st"
+msgstr "List"
 
-msgid "st_ZA"
-msgstr "st_ZA"
-
-msgid "Southern Sotho (South Africa)"
+#, fuzzy
+msgid "Southern Sotho"
 msgstr "południowe sotho (Republika Południowej Afryki)"
+
+#, fuzzy
+msgid "stq"
+msgstr "sq"
+
+msgid "Saterland Frisian"
+msgstr ""
+
+msgid "su"
+msgstr ""
+
+msgid "Sundanese"
+msgstr ""
+
+#, fuzzy
+msgid "suk"
+msgstr "sk"
+
+msgid "Sukuma"
+msgstr ""
+
+msgid "sus"
+msgstr ""
+
+msgid "Susu"
+msgstr ""
+
+msgid "sux"
+msgstr ""
+
+msgid "Sumerian"
+msgstr ""
 
 msgid "sv"
 msgstr "sv"
@@ -1903,35 +3564,48 @@ msgstr "sv"
 msgid "Swedish"
 msgstr "szwedzki"
 
-msgid "sv_FI"
-msgstr "sv_FI"
+msgid "sw"
+msgstr ""
 
-msgid "Swedish (Finland)"
-msgstr "szwedzki (Finlandia)"
-
-msgid "sv_SE"
-msgstr "sv_SE"
-
-msgid "Swedish (Sweden)"
-msgstr "szwedzki (Szwecja)"
-
-msgid "sw_KE"
-msgstr "sw_KE"
-
-msgid "Swahili (Kenya)"
+#, fuzzy
+msgid "Swahili"
 msgstr "suahili (Kenia)"
 
-msgid "sw_TZ"
-msgstr "sw_TZ"
+msgid "swb"
+msgstr ""
 
-msgid "Swahili (Tanzania)"
-msgstr "suahili (Tanzania)"
+msgid "Comorian"
+msgstr ""
 
-msgid "szl_PL"
-msgstr "szl_PL"
+#, fuzzy
+msgid "swc"
+msgstr "sco"
 
-msgid "Silesian (Poland)"
-msgstr "Śląski (Polska)"
+msgid "Congo Swahili"
+msgstr ""
+
+#, fuzzy
+msgid "syc"
+msgstr "sco"
+
+#, fuzzy
+msgid "Classical Syriac"
+msgstr "arabski (Syria)"
+
+#, fuzzy
+msgid "syr"
+msgstr "sr"
+
+msgid "Syriac"
+msgstr ""
+
+#, fuzzy
+msgid "szl"
+msgstr "sl"
+
+#, fuzzy
+msgid "Silesian"
+msgstr "Perski"
 
 msgid "ta"
 msgstr "ta"
@@ -1939,23 +3613,12 @@ msgstr "ta"
 msgid "Tamil"
 msgstr "tamil"
 
-msgid "ta_IN"
-msgstr "ta_IN"
-
-msgid "Tamil (India)"
-msgstr "tamil (Indie)"
-
-msgid "ta_LK"
-msgstr "ta_LK"
-
-msgid "Tamil (Sri Lanka)"
-msgstr "tamil (sri lanka)"
-
-msgid "tcy_IN"
+#, fuzzy
+msgid "tcy"
 msgstr "tcy_IN"
 
-msgid "Tulu (India)"
-msgstr "tulu (Indie)"
+msgid "Tulu"
+msgstr ""
 
 #, fuzzy
 msgid "te"
@@ -1965,23 +3628,39 @@ msgstr "morski"
 msgid "Telugu"
 msgstr "telugu (Indie)"
 
-msgid "te_IN"
-msgstr "te_IN"
+#, fuzzy
+msgid "tem"
+msgstr "morski"
 
-msgid "Telugu (India)"
-msgstr "telugu (Indie)"
+msgid "Timne"
+msgstr ""
 
-msgid "tg_TJ"
-msgstr "tg_TJ"
+#, fuzzy
+msgid "teo"
+msgstr "eo"
 
-msgid "Tajik (Tajikistan)"
-msgstr "tadżycki (Tadżykistan)"
+msgid "Teso"
+msgstr ""
 
-msgid "the_NP"
-msgstr "the_NP"
+#, fuzzy
+msgid "ter"
+msgstr "morski"
 
-msgid "Chitwania Tharu (Nepal)"
-msgstr "chitwania tharu (Nepal)"
+msgid "Tereno"
+msgstr ""
+
+#, fuzzy
+msgid "tet"
+msgstr "et"
+
+msgid "Tetum"
+msgstr ""
+
+msgid "tg"
+msgstr ""
+
+msgid "Tajik"
+msgstr ""
 
 msgid "th"
 msgstr "th"
@@ -1989,11 +3668,13 @@ msgstr "th"
 msgid "Thai"
 msgstr "tajski"
 
-msgid "th_TH"
-msgstr "th_TH"
+#, fuzzy
+msgid "the"
+msgstr "he"
 
-msgid "Thai (Thailand)"
-msgstr "tajski (Tajlandia)"
+#, fuzzy
+msgid "Chitwania Tharu"
+msgstr "chitwania tharu (Nepal)"
 
 msgid "ti"
 msgstr "ti"
@@ -2001,41 +3682,100 @@ msgstr "ti"
 msgid "Tigrinya"
 msgstr "tigrinya"
 
-msgid "ti_ER"
-msgstr "ti_ER"
+#, fuzzy
+msgid "tig"
+msgstr "ti"
 
-msgid "Tigrinya (Eritrea)"
-msgstr "tigrinya Erytrea"
+#, fuzzy
+msgid "Tigre"
+msgstr "tigrinya"
 
-msgid "ti_ET"
-msgstr "ti_ET"
+#, fuzzy
+msgid "tiv"
+msgstr "ti"
 
-msgid "Tigrinya (Ethiopia)"
-msgstr "tigrinya Etiopia"
+msgid "Tiv"
+msgstr ""
 
-msgid "tig_ER"
-msgstr "tig_ER"
+msgid "tk"
+msgstr ""
 
-msgid "Tigre (Eritrea)"
-msgstr "tigre (Erytrea)"
+msgid "Turkmen"
+msgstr ""
 
-msgid "tk_TM"
-msgstr "tk_TM"
+msgid "tkl"
+msgstr ""
 
-msgid "Turkmen (Turkmenistan)"
-msgstr "turkmeński (Turkmenistan)"
+msgid "Tokelau"
+msgstr ""
 
-msgid "tl_PH"
-msgstr "tl_PH"
+#, fuzzy
+msgid "tkr"
+msgstr "tr"
 
-msgid "Tagalog (Philippines)"
-msgstr "tagalog Filipiny"
+msgid "Tsakhur"
+msgstr ""
 
-msgid "tn_ZA"
-msgstr "tn_ZA"
+#, fuzzy
+msgid "tl"
+msgstr "tool"
 
-msgid "Tswana (South Africa)"
-msgstr "tswana (Republika Południowej Afryki)"
+msgid "Tagalog"
+msgstr ""
+
+#, fuzzy
+msgid "tlh"
+msgstr "th"
+
+msgid "Klingon"
+msgstr ""
+
+#, fuzzy
+msgid "tli"
+msgstr "ti"
+
+msgid "Tlingit"
+msgstr ""
+
+msgid "tly"
+msgstr ""
+
+msgid "Talysh"
+msgstr ""
+
+#, fuzzy
+msgid "tmh"
+msgstr "th"
+
+msgid "Tamashek"
+msgstr ""
+
+msgid "tn"
+msgstr ""
+
+msgid "Tswana"
+msgstr ""
+
+#, fuzzy
+msgid "to"
+msgstr "Stop"
+
+msgid "Tongan"
+msgstr ""
+
+#, fuzzy
+msgid "tog"
+msgstr "Mgła"
+
+msgid "Nyasa Tonga"
+msgstr ""
+
+#, fuzzy
+msgid "tpi"
+msgstr "ti"
+
+msgid "Tok Pisin"
+msgstr ""
 
 msgid "tr"
 msgstr "tr"
@@ -2043,35 +3783,116 @@ msgstr "tr"
 msgid "Turkish"
 msgstr "turecki"
 
-msgid "tr_CY"
-msgstr "tr_CY"
+#, fuzzy
+msgid "tru"
+msgstr "ru"
 
-msgid "Turkish (Cyprus)"
-msgstr "Turecki (Cypr)"
+msgid "Turoyo"
+msgstr ""
 
-msgid "tr_TR"
-msgstr "tr_TR"
+#, fuzzy
+msgid "trv"
+msgstr "tr"
 
-msgid "Turkish (Turkey)"
-msgstr "turecki (Turcja)"
+msgid "Taroko"
+msgstr ""
 
-msgid "ts_ZA"
-msgstr "ts_ZA"
+#, fuzzy
+msgid "ts"
+msgstr "Bity"
 
-msgid "Tsonga (South Africa)"
-msgstr "tsonga (Republika Południowej Afryki)"
+msgid "Tsonga"
+msgstr ""
 
-msgid "tt_RU"
-msgstr "tt_RU"
+msgid "tsd"
+msgstr ""
 
-msgid "Tatar (Russia)"
-msgstr "tatarski (Rosja)"
+#, fuzzy
+msgid "Tsakonian"
+msgstr "estoński"
 
-msgid "ug_CN"
-msgstr "ug_CN"
+#, fuzzy
+msgid "tsi"
+msgstr "ti"
 
-msgid "Uighur (China)"
-msgstr "ujgur (Chiny)"
+msgid "Tsimshian"
+msgstr ""
+
+msgid "tt"
+msgstr ""
+
+msgid "Tatar"
+msgstr ""
+
+msgid "ttt"
+msgstr ""
+
+msgid "Muslim Tat"
+msgstr ""
+
+msgid "tum"
+msgstr ""
+
+msgid "Tumbuka"
+msgstr ""
+
+msgid "tvl"
+msgstr ""
+
+#, fuzzy
+msgid "Tuvalu"
+msgstr "wartość"
+
+msgid "tw"
+msgstr ""
+
+msgid "Twi"
+msgstr ""
+
+msgid "twq"
+msgstr ""
+
+msgid "Tasawaq"
+msgstr ""
+
+#, fuzzy
+msgid "ty"
+msgstr "Typ"
+
+#, fuzzy
+msgid "Tahitian"
+msgstr "chorwacki"
+
+msgid "tyv"
+msgstr ""
+
+msgid "Tuvinian"
+msgstr ""
+
+msgid "tzm"
+msgstr ""
+
+msgid "Central Atlas Tamazight"
+msgstr ""
+
+msgid "udm"
+msgstr ""
+
+msgid "Udmurt"
+msgstr ""
+
+msgid "ug"
+msgstr ""
+
+msgid "Uyghur"
+msgstr ""
+
+#, fuzzy
+msgid "uga"
+msgstr "ga"
+
+msgid "Ugaritic"
+msgstr ""
 
 msgid "uk"
 msgstr "uk"
@@ -2079,17 +3900,20 @@ msgstr "uk"
 msgid "Ukrainian"
 msgstr "ukraiński"
 
-msgid "uk_UA"
-msgstr "uk_UA"
+#, fuzzy
+msgid "umb"
+msgstr "Członkowie"
 
-msgid "Ukrainian (Ukraine)"
-msgstr "ukraiński (Ukraina)"
+msgid "Umbundu"
+msgstr ""
 
-msgid "unm_US"
-msgstr "unm_US"
+#, fuzzy
+msgid "unm"
+msgstr "Uruchom"
 
-msgid "Unami (United States)"
-msgstr "unami (Stany Zjednoczone)"
+#, fuzzy
+msgid "Unami"
+msgstr "Dynamiczny:"
 
 msgid "ur"
 msgstr "ur"
@@ -2097,35 +3921,40 @@ msgstr "ur"
 msgid "Urdu"
 msgstr "urgu"
 
-msgid "ur_IN"
-msgstr "ur_IN"
-
-msgid "Urdu (India)"
-msgstr "urdu (Indie)"
-
-msgid "ur_PK"
-msgstr "ur_PK"
-
-msgid "Urdu (Pakistan)"
-msgstr "urdu (Pakistan)"
-
 msgid "uz"
 msgstr "uz"
 
 msgid "Uzbek"
 msgstr "uzbecki"
 
-msgid "uz_UZ"
-msgstr "uz_UZ"
+#, fuzzy
+msgid "vai"
+msgstr "vi"
 
-msgid "Uzbek (Uzbekistan)"
-msgstr "uzbecki (Uzbekistan)"
+#, fuzzy
+msgid "Vai"
+msgstr "Wariant"
 
-msgid "ve_ZA"
-msgstr "ve_ZA"
+#, fuzzy
+msgid "ve"
+msgstr "Zapisz"
 
-msgid "Venda (South Africa)"
-msgstr "venda (Republika Południowej Afryki)"
+msgid "Venda"
+msgstr ""
+
+#, fuzzy
+msgid "vec"
+msgstr "vec4"
+
+msgid "Venetian"
+msgstr ""
+
+#, fuzzy
+msgid "vep"
+msgstr "Przesuń w górę"
+
+msgid "Veps"
+msgstr ""
 
 msgid "vi"
 msgstr "vi"
@@ -2133,59 +3962,223 @@ msgstr "vi"
 msgid "Vietnamese"
 msgstr "wietnamski"
 
-msgid "vi_VN"
-msgstr "vi_VN"
+#, fuzzy
+msgid "vls"
+msgstr "Devlogi"
 
-msgid "Vietnamese (Vietnam)"
-msgstr "wietnamski (Wietnam)"
+msgid "West Flemish"
+msgstr ""
 
-msgid "wa_BE"
-msgstr "wa_BE"
+msgid "vmf"
+msgstr ""
 
-msgid "Walloon (Belgium)"
-msgstr "waloński (Belgia)"
+#, fuzzy
+msgid "Main-Franconian"
+msgstr "macedoński"
 
-msgid "wae_CH"
+#, fuzzy
+msgid "vo"
+msgstr "**void**"
+
+msgid "Volapük"
+msgstr ""
+
+msgid "vot"
+msgstr ""
+
+msgid "Votic"
+msgstr ""
+
+#, fuzzy
+msgid "vro"
+msgstr "ro"
+
+msgid "Võro"
+msgstr ""
+
+#, fuzzy
+msgid "vun"
+msgstr "Uruchom"
+
+msgid "Vunjo"
+msgstr ""
+
+msgid "wa"
+msgstr ""
+
+msgid "Walloon"
+msgstr ""
+
+#, fuzzy
+msgid "wae"
 msgstr "wae_CH"
 
-msgid "Walser (Switzerland)"
-msgstr "walser (Szwajceria)"
+msgid "Walser"
+msgstr ""
 
-msgid "wal_ET"
+#, fuzzy
+msgid "wal"
 msgstr "wal_ET"
 
-msgid "Wolaytta (Ethiopia)"
-msgstr "wolaytta (Etiopia)"
+msgid "Wolaytta"
+msgstr ""
 
-msgid "wo_SN"
-msgstr "wo_SN"
+#, fuzzy
+msgid "war"
+msgstr "ar"
 
-msgid "Wolof (Senegal)"
-msgstr "wolof (Senegal)"
+msgid "Waray"
+msgstr ""
 
-msgid "xh_ZA"
-msgstr "xh_ZA"
+#, fuzzy
+msgid "was"
+msgstr "case"
 
-msgid "Xhosa (South Africa)"
-msgstr "xhosa (Republika Południowej Afryki)"
+msgid "Washo"
+msgstr ""
 
-msgid "yi_US"
-msgstr "yi_US"
+msgid "wbp"
+msgstr ""
 
-msgid "Yiddish (United States)"
-msgstr "jidysz (Stany Zjednoczone)"
+msgid "Warlpiri"
+msgstr ""
 
-msgid "yo_NG"
-msgstr "yo_NG"
+msgid "wo"
+msgstr ""
 
-msgid "Yoruba (Nigeria)"
-msgstr "yoruba (Nigeria)"
+msgid "Wolof"
+msgstr ""
 
-msgid "yue_HK"
+msgid "wuu"
+msgstr ""
+
+#, fuzzy
+msgid "Wu Chinese"
+msgstr "chiński"
+
+#, fuzzy
+msgid "xal"
+msgstr "Przykład"
+
+msgid "Kalmyk"
+msgstr ""
+
+msgid "xh"
+msgstr ""
+
+msgid "Xhosa"
+msgstr ""
+
+msgid "xmf"
+msgstr ""
+
+msgid "Mingrelian"
+msgstr ""
+
+#, fuzzy
+msgid "xog"
+msgstr "Mgła"
+
+msgid "Soga"
+msgstr ""
+
+msgid "yao"
+msgstr ""
+
+msgid "Yao"
+msgstr ""
+
+#, fuzzy
+msgid "yap"
+msgstr "pap"
+
+msgid "Yapese"
+msgstr ""
+
+msgid "yav"
+msgstr ""
+
+msgid "Yangben"
+msgstr ""
+
+msgid "ybb"
+msgstr ""
+
+msgid "Yemba"
+msgstr ""
+
+msgid "yi"
+msgstr ""
+
+msgid "Yiddish"
+msgstr ""
+
+msgid "yo"
+msgstr ""
+
+msgid "Yoruba"
+msgstr ""
+
+#, fuzzy
+msgid "yrl"
+msgstr "sr_CS"
+
+msgid "Nheengatu"
+msgstr ""
+
+#, fuzzy
+msgid "yue"
 msgstr "yue_HK"
 
-msgid "Yue Chinese (Hong Kong)"
-msgstr "chiński yue"
+#, fuzzy
+msgid "Yue Chinese"
+msgstr "chiński"
+
+msgid "yuw"
+msgstr ""
+
+msgid "Papua New Guinea"
+msgstr ""
+
+msgid "za"
+msgstr ""
+
+msgid "Zhuang"
+msgstr ""
+
+#, fuzzy
+msgid "zap"
+msgstr "pap"
+
+msgid "Zapotec"
+msgstr ""
+
+msgid "zbl"
+msgstr ""
+
+msgid "Blissymbols"
+msgstr ""
+
+msgid "zea"
+msgstr ""
+
+#, fuzzy
+msgid "Zeelandic"
+msgstr "islandzki"
+
+#, fuzzy
+msgid "zen"
+msgstr "en"
+
+msgid "Zenaga"
+msgstr ""
+
+#, fuzzy
+msgid "zgh"
+msgstr "zh"
+
+msgid "Standard Moroccan Tamazight"
+msgstr ""
 
 msgid "zh"
 msgstr "zh"
@@ -2193,35 +4186,2760 @@ msgstr "zh"
 msgid "Chinese"
 msgstr "chiński"
 
-msgid "zh_CN"
-msgstr "zh_CN"
+msgid "zu"
+msgstr ""
 
-msgid "Chinese (China)"
-msgstr "chiński (Chiny)"
+msgid "Zulu"
+msgstr ""
 
-msgid "zh_HK"
-msgstr "zh_HK"
+#, fuzzy
+msgid "zun"
+msgstr "Uruchom"
 
-msgid "Chinese (Hong Kong)"
-msgstr "chiński (Hong Kong)"
+msgid "Zuni"
+msgstr ""
 
-msgid "zh_SG"
-msgstr "zh_SG"
+msgid "zza"
+msgstr ""
 
-msgid "Chinese (Singapore)"
-msgstr "chiński (Singapur)"
+msgid "Zaza"
+msgstr ""
 
-msgid "zh_TW"
-msgstr "zh_TW"
+msgid "List of supported script codes"
+msgstr ""
 
-msgid "Chinese (Taiwan)"
-msgstr "chiński (Taiwan)"
+#, fuzzy
+msgid "Script code"
+msgstr "Edytor skryptów"
 
-msgid "zu_ZA"
-msgstr "zu_ZA"
+msgid "Adlm"
+msgstr ""
 
-msgid "Zulu (South Africa)"
-msgstr "zulu (Republika Południowej Afryki)"
+msgid "Adlam"
+msgstr ""
+
+msgid "Afak"
+msgstr ""
+
+msgid "Afaka"
+msgstr ""
+
+msgid "Aghb"
+msgstr ""
+
+#, fuzzy
+msgid "Caucasian Albanian"
+msgstr "albański (Albania)"
+
+msgid "Ahom"
+msgstr ""
+
+#, fuzzy
+msgid "Arab"
+msgstr "arabski"
+
+msgid "Armi"
+msgstr ""
+
+msgid "Imperial Aramaic"
+msgstr ""
+
+msgid "Armn"
+msgstr ""
+
+msgid "Avst"
+msgstr ""
+
+msgid "Bali"
+msgstr ""
+
+msgid "Bamu"
+msgstr ""
+
+msgid "Bamum"
+msgstr ""
+
+msgid "Bass"
+msgstr ""
+
+msgid "Bassa Vah"
+msgstr ""
+
+msgid "Batk"
+msgstr ""
+
+msgid "Batak"
+msgstr ""
+
+#, fuzzy
+msgid "Beng"
+msgstr "bengalski"
+
+msgid "Bhks"
+msgstr ""
+
+msgid "Bhaiksuki"
+msgstr ""
+
+msgid "Blis"
+msgstr ""
+
+msgid "Bopo"
+msgstr ""
+
+msgid "Bopomofo"
+msgstr ""
+
+msgid "Brah"
+msgstr ""
+
+msgid "Brahmi"
+msgstr ""
+
+msgid "Brai"
+msgstr ""
+
+msgid "Braille"
+msgstr ""
+
+msgid "Bugi"
+msgstr ""
+
+msgid "Buhd"
+msgstr ""
+
+msgid "Buhid"
+msgstr ""
+
+msgid "Cakm"
+msgstr ""
+
+msgid "Cans"
+msgstr ""
+
+msgid "Unified Canadian Aboriginal"
+msgstr ""
+
+msgid "Cari"
+msgstr ""
+
+#, fuzzy
+msgid "Carian"
+msgstr "Wariant"
+
+msgid "Cham"
+msgstr ""
+
+msgid "Cher"
+msgstr ""
+
+msgid "Chrs"
+msgstr ""
+
+msgid "Chorasmian"
+msgstr ""
+
+msgid "Cirt"
+msgstr ""
+
+msgid "Cirth"
+msgstr ""
+
+msgid "Copt"
+msgstr ""
+
+msgid "Cpmn"
+msgstr ""
+
+msgid "Cypro-Minoan"
+msgstr ""
+
+msgid "Cprt"
+msgstr ""
+
+msgid "Cypriot"
+msgstr ""
+
+#, fuzzy
+msgid "Cyrl"
+msgstr "sr_CS"
+
+#, fuzzy
+msgid "Cyrillic"
+msgstr "serbski (Serbia)"
+
+msgid "Deva"
+msgstr ""
+
+msgid "Devanagari"
+msgstr ""
+
+msgid "Diak"
+msgstr ""
+
+msgid "Dives Akuru"
+msgstr ""
+
+msgid "Dogr"
+msgstr ""
+
+msgid "Dogra"
+msgstr ""
+
+msgid "Dsrt"
+msgstr ""
+
+msgid "Deseret"
+msgstr ""
+
+#, fuzzy
+msgid "Dupl"
+msgstr "Duplikuj"
+
+msgid "Duployan"
+msgstr ""
+
+msgid "Egyd"
+msgstr ""
+
+msgid "Egyptian demotic"
+msgstr ""
+
+msgid "Egyh"
+msgstr ""
+
+msgid "Egyptian hieratic"
+msgstr ""
+
+msgid "Egyp"
+msgstr ""
+
+msgid "Egyptian hieroglyphs"
+msgstr ""
+
+msgid "Elba"
+msgstr ""
+
+msgid "Elbasan"
+msgstr ""
+
+msgid "Elym"
+msgstr ""
+
+msgid "Elymaic"
+msgstr ""
+
+msgid "Ethi"
+msgstr ""
+
+#, fuzzy
+msgid "Ethiopic"
+msgstr "afar (Etiopia)"
+
+msgid "Geok"
+msgstr ""
+
+msgid "Khutsuri"
+msgstr ""
+
+#, fuzzy
+msgid "Geor"
+msgstr "norweski"
+
+msgid "Glag"
+msgstr ""
+
+msgid "Glagolitic"
+msgstr ""
+
+msgid "Gong"
+msgstr ""
+
+msgid "Gunjala Gondi"
+msgstr ""
+
+msgid "Gonm"
+msgstr ""
+
+msgid "Masaram Gondi"
+msgstr ""
+
+msgid "Goth"
+msgstr ""
+
+msgid "Gran"
+msgstr ""
+
+msgid "Grantha"
+msgstr ""
+
+msgid "Grek"
+msgstr ""
+
+msgid "Gujr"
+msgstr ""
+
+msgid "Guru"
+msgstr ""
+
+msgid "Gurmukhi"
+msgstr ""
+
+msgid "Hang"
+msgstr ""
+
+msgid "Hangul"
+msgstr ""
+
+msgid "Hani"
+msgstr ""
+
+#, fuzzy
+msgid "Han"
+msgstr "i"
+
+msgid "Hano"
+msgstr ""
+
+msgid "Hanunoo"
+msgstr ""
+
+msgid "Hans"
+msgstr ""
+
+#, fuzzy
+msgid "Simplified"
+msgstr "prosty"
+
+msgid "Hant"
+msgstr ""
+
+#, fuzzy
+msgid "Traditional"
+msgstr "relacyjny"
+
+msgid "Hatr"
+msgstr ""
+
+msgid "Hatran"
+msgstr ""
+
+#, fuzzy
+msgid "Hebr"
+msgstr "hebrajski"
+
+msgid "Hira"
+msgstr ""
+
+msgid "Hiragana"
+msgstr ""
+
+msgid "Hluw"
+msgstr ""
+
+msgid "Anatolian Hieroglyphs"
+msgstr ""
+
+msgid "Hmng"
+msgstr ""
+
+msgid "Pahawh Hmong"
+msgstr ""
+
+msgid "Hmnp"
+msgstr ""
+
+msgid "Nyiakeng Puachue Hmong"
+msgstr ""
+
+#, fuzzy
+msgid "Hung"
+msgstr "węgierski"
+
+#, fuzzy
+msgid "Old Hungarian"
+msgstr "węgierski"
+
+msgid "Inds"
+msgstr ""
+
+msgid "Indus"
+msgstr ""
+
+#, fuzzy
+msgid "Ital"
+msgstr "Kursywa"
+
+#, fuzzy
+msgid "Old Italic"
+msgstr "Kursywa"
+
+msgid "Java"
+msgstr "Java"
+
+msgid "Jurc"
+msgstr ""
+
+msgid "Jurchen"
+msgstr ""
+
+msgid "Kali"
+msgstr ""
+
+msgid "Kayah Li"
+msgstr ""
+
+msgid "Kana"
+msgstr ""
+
+msgid "Katakana"
+msgstr ""
+
+msgid "Khar"
+msgstr ""
+
+msgid "Kharoshthi"
+msgstr ""
+
+msgid "Khmr"
+msgstr ""
+
+msgid "Khmer"
+msgstr ""
+
+msgid "Khoj"
+msgstr ""
+
+msgid "Khojki"
+msgstr ""
+
+msgid "Kitl"
+msgstr ""
+
+#, fuzzy
+msgid "Khitan large script"
+msgstr "Używanie skryptu"
+
+msgid "Kits"
+msgstr ""
+
+#, fuzzy
+msgid "Khitan small script"
+msgstr "Używanie skryptu"
+
+msgid "Knda"
+msgstr ""
+
+msgid "Kpel"
+msgstr ""
+
+msgid "Kthi"
+msgstr ""
+
+msgid "Kaithi"
+msgstr ""
+
+msgid "Lana"
+msgstr ""
+
+msgid "Tai Tham"
+msgstr ""
+
+msgid "Laoo"
+msgstr ""
+
+msgid "Latn"
+msgstr ""
+
+msgid "Leke"
+msgstr ""
+
+msgid "Lepc"
+msgstr ""
+
+msgid "Lepcha"
+msgstr ""
+
+msgid "Limb"
+msgstr ""
+
+msgid "Limbu"
+msgstr ""
+
+msgid "Lina"
+msgstr ""
+
+msgid "Linear A"
+msgstr ""
+
+msgid "Linb"
+msgstr ""
+
+msgid "Linear B"
+msgstr ""
+
+msgid "Lisu"
+msgstr ""
+
+msgid "Loma"
+msgstr ""
+
+msgid "Lyci"
+msgstr ""
+
+msgid "Lycian"
+msgstr ""
+
+msgid "Lydi"
+msgstr ""
+
+msgid "Lydian"
+msgstr ""
+
+msgid "Mahj"
+msgstr ""
+
+msgid "Mahajani"
+msgstr ""
+
+msgid "Maka"
+msgstr ""
+
+msgid "Mand"
+msgstr ""
+
+msgid "Mandaic"
+msgstr ""
+
+msgid "Mani"
+msgstr ""
+
+msgid "Manichaean"
+msgstr ""
+
+msgid "Marc"
+msgstr ""
+
+#, fuzzy
+msgid "Marchen"
+msgstr "Szukanie"
+
+msgid "Maya"
+msgstr ""
+
+msgid "Mayan Hieroglyphs"
+msgstr ""
+
+msgid "Medf"
+msgstr ""
+
+msgid "Medefaidrin"
+msgstr ""
+
+msgid "Mend"
+msgstr ""
+
+msgid "Mende Kikakui"
+msgstr ""
+
+msgid "Merc"
+msgstr ""
+
+msgid "Meroitic Cursive"
+msgstr ""
+
+msgid "Mero"
+msgstr ""
+
+msgid "Meroitic Hieroglyphs"
+msgstr ""
+
+msgid "Mlym"
+msgstr ""
+
+#, fuzzy
+msgid "Modi"
+msgstr "Identyfikatory"
+
+msgid "Mong"
+msgstr ""
+
+msgid "Moon"
+msgstr ""
+
+msgid "Mroo"
+msgstr ""
+
+#, fuzzy
+msgid "Mro"
+msgstr "ro"
+
+msgid "Mtei"
+msgstr ""
+
+msgid "Meitei Mayek"
+msgstr ""
+
+msgid "Mult"
+msgstr ""
+
+msgid "Multani"
+msgstr ""
+
+msgid "Mymr"
+msgstr ""
+
+msgid "Myanmar (Burmese)"
+msgstr ""
+
+msgid "Nand"
+msgstr ""
+
+msgid "Nandinagari"
+msgstr ""
+
+msgid "Narb"
+msgstr ""
+
+msgid "Old North Arabian"
+msgstr ""
+
+msgid "Nbat"
+msgstr ""
+
+msgid "Nabataean"
+msgstr ""
+
+msgid "Newa"
+msgstr ""
+
+msgid "Nkdb"
+msgstr ""
+
+msgid "Naxi Dongba"
+msgstr ""
+
+msgid "Nkgb"
+msgstr ""
+
+msgid "Nakhi Geba"
+msgstr ""
+
+msgid "Nkoo"
+msgstr ""
+
+msgid "Nshu"
+msgstr ""
+
+msgid "Nüshu"
+msgstr ""
+
+msgid "Ogam"
+msgstr ""
+
+msgid "Ogham"
+msgstr ""
+
+msgid "Olck"
+msgstr ""
+
+msgid "Ol Chiki"
+msgstr ""
+
+msgid "Orkh"
+msgstr ""
+
+msgid "Old Turkic"
+msgstr ""
+
+msgid "Orya"
+msgstr ""
+
+msgid "Oriya"
+msgstr ""
+
+msgid "Osge"
+msgstr ""
+
+msgid "Osma"
+msgstr ""
+
+msgid "Osmanya"
+msgstr ""
+
+msgid "Ougr"
+msgstr ""
+
+msgid "Old Uyghur"
+msgstr ""
+
+msgid "Palm"
+msgstr ""
+
+msgid "Palmyrene"
+msgstr ""
+
+msgid "Pauc"
+msgstr ""
+
+msgid "Pau Cin Hau"
+msgstr ""
+
+msgid "Pcun"
+msgstr ""
+
+msgid "Proto-Cuneiform"
+msgstr ""
+
+msgid "Pelm"
+msgstr ""
+
+msgid "Proto-Elamite"
+msgstr ""
+
+msgid "Perm"
+msgstr ""
+
+msgid "Old Permic"
+msgstr ""
+
+msgid "Phag"
+msgstr ""
+
+msgid "Phags-pa"
+msgstr ""
+
+msgid "Phli"
+msgstr ""
+
+msgid "Inscriptional Pahlavi"
+msgstr ""
+
+msgid "Phlp"
+msgstr ""
+
+msgid "Psalter Pahlavi"
+msgstr ""
+
+msgid "Phlv"
+msgstr ""
+
+msgid "Book Pahlavi"
+msgstr ""
+
+msgid "Phnx"
+msgstr ""
+
+msgid "Piqd"
+msgstr ""
+
+msgid "Plrd"
+msgstr ""
+
+msgid "Miao"
+msgstr ""
+
+msgid "Prti"
+msgstr ""
+
+#, fuzzy
+msgid "Inscriptional Parthian"
+msgstr "Internacjonalizacja"
+
+msgid "Psin"
+msgstr ""
+
+msgid "Proto-Sinaitic"
+msgstr ""
+
+msgid "Ranj"
+msgstr ""
+
+msgid "Ranjana"
+msgstr ""
+
+msgid "Rjng"
+msgstr ""
+
+msgid "Rejang"
+msgstr ""
+
+msgid "Rohg"
+msgstr ""
+
+msgid "Hanifi Rohingya"
+msgstr ""
+
+msgid "Roro"
+msgstr ""
+
+msgid "Rongorongo"
+msgstr ""
+
+msgid "Runr"
+msgstr ""
+
+msgid "Runic"
+msgstr ""
+
+msgid "Samr"
+msgstr ""
+
+msgid "Samaritan"
+msgstr ""
+
+msgid "Sara"
+msgstr ""
+
+msgid "Sarati"
+msgstr ""
+
+msgid "Sarb"
+msgstr ""
+
+#, fuzzy
+msgid "Old South Arabian"
+msgstr "pedi (Republika Południowej Afryki)"
+
+msgid "Saur"
+msgstr ""
+
+msgid "Sgnw"
+msgstr ""
+
+#, fuzzy
+msgid "SignWriting"
+msgstr "Programowanie"
+
+msgid "Shaw"
+msgstr ""
+
+#, fuzzy
+msgid "Shavian"
+msgstr "łotewski"
+
+msgid "Shrd"
+msgstr ""
+
+msgid "Sharada"
+msgstr ""
+
+msgid "Shui"
+msgstr ""
+
+msgid "Shuishu"
+msgstr ""
+
+msgid "Sidd"
+msgstr ""
+
+msgid "Siddham"
+msgstr ""
+
+msgid "Sind"
+msgstr ""
+
+msgid "Khudawadi"
+msgstr ""
+
+msgid "Sinh"
+msgstr ""
+
+msgid "Sogd"
+msgstr ""
+
+msgid "Sogdian"
+msgstr ""
+
+msgid "Sogo"
+msgstr ""
+
+msgid "Old Sogdian"
+msgstr ""
+
+msgid "Sora"
+msgstr ""
+
+msgid "Sora Sompeng"
+msgstr ""
+
+msgid "Soyo"
+msgstr ""
+
+msgid "Soyombo"
+msgstr ""
+
+msgid "Sund"
+msgstr ""
+
+msgid "Sylo"
+msgstr ""
+
+msgid "Syloti Nagri"
+msgstr ""
+
+msgid "Syrc"
+msgstr ""
+
+msgid "Tagb"
+msgstr ""
+
+msgid "Tagbanwa"
+msgstr ""
+
+msgid "Takr"
+msgstr ""
+
+msgid "Takri"
+msgstr ""
+
+msgid "Tale"
+msgstr ""
+
+msgid "Tai Le"
+msgstr ""
+
+msgid "Talu"
+msgstr ""
+
+msgid "New Tai Lue"
+msgstr ""
+
+msgid "Taml"
+msgstr ""
+
+#, fuzzy
+msgid "Tang"
+msgstr "Tangens"
+
+#, fuzzy
+msgid "Tangut"
+msgstr "Tangens"
+
+msgid "Tavt"
+msgstr ""
+
+#, fuzzy
+msgid "Tai Viet"
+msgstr "Przesuń widok"
+
+#, fuzzy
+msgid "Telu"
+msgstr "telugu (Indie)"
+
+msgid "Teng"
+msgstr ""
+
+msgid "Tengwar"
+msgstr ""
+
+msgid "Tfng"
+msgstr ""
+
+msgid "Tifinagh"
+msgstr ""
+
+msgid "Tglg"
+msgstr ""
+
+msgid "Thaa"
+msgstr ""
+
+msgid "Thaana"
+msgstr ""
+
+msgid "Tibt"
+msgstr ""
+
+msgid "Tirh"
+msgstr ""
+
+msgid "Tirhuta"
+msgstr ""
+
+msgid "Tnsa"
+msgstr ""
+
+#, fuzzy
+msgid "Tangsa"
+msgstr "Tangens"
+
+msgid "Toto"
+msgstr ""
+
+msgid "Ugar"
+msgstr ""
+
+msgid "Vaii"
+msgstr ""
+
+msgid "Visp"
+msgstr ""
+
+#, fuzzy
+msgid "Visible Speech"
+msgstr "Prostokąt widoczności"
+
+msgid "Vith"
+msgstr ""
+
+msgid "Vithkuqi"
+msgstr ""
+
+msgid "Wara"
+msgstr ""
+
+msgid "Warang Citi"
+msgstr ""
+
+msgid "Wcho"
+msgstr ""
+
+msgid "Wancho"
+msgstr ""
+
+msgid "Wole"
+msgstr ""
+
+#, fuzzy
+msgid "Woleai"
+msgstr "bool"
+
+msgid "Xpeo"
+msgstr ""
+
+msgid "Xsux"
+msgstr ""
+
+msgid "Cuneiform"
+msgstr ""
+
+msgid "Yezi"
+msgstr ""
+
+msgid "Yezidi"
+msgstr ""
+
+msgid "Yiii"
+msgstr ""
+
+msgid "Yi"
+msgstr ""
+
+msgid "Zanb"
+msgstr ""
+
+msgid "Zanabazar Square"
+msgstr ""
+
+msgid "List of supported country codes"
+msgstr ""
+
+#, fuzzy
+msgid "Country code"
+msgstr "Pisanie kodu silnika"
+
+msgid "AC"
+msgstr ""
+
+msgid "Ascension Island"
+msgstr ""
+
+msgid "AD"
+msgstr ""
+
+msgid "Andorra"
+msgstr ""
+
+msgid "AE"
+msgstr ""
+
+#, fuzzy
+msgid "United Arab Emirates"
+msgstr "arabski (Zjednoczone Emiraty Arabskie)"
+
+msgid "AF"
+msgstr ""
+
+#, fuzzy
+msgid "Afghanistan"
+msgstr "pushto (Afganistan)"
+
+msgid "AG"
+msgstr ""
+
+#, fuzzy
+msgid "Antigua and Barbuda"
+msgstr "angielski (Antigua i Barbuda)"
+
+msgid "AI"
+msgstr ""
+
+msgid "Anguilla"
+msgstr ""
+
+msgid "AL"
+msgstr ""
+
+#, fuzzy
+msgid "Albania"
+msgstr "albański"
+
+msgid "AM"
+msgstr ""
+
+msgid "Armenia"
+msgstr ""
+
+#, fuzzy
+msgid "AN"
+msgstr "NAN"
+
+#, fuzzy
+msgid "Netherlands Antilles"
+msgstr "papiamento (Holenderskie Antyle)"
+
+msgid "AO"
+msgstr ""
+
+msgid "Angola"
+msgstr ""
+
+#, fuzzy
+msgid "AQ"
+msgstr "FAQ"
+
+msgid "Antarctica"
+msgstr ""
+
+msgid "AR"
+msgstr ""
+
+#, fuzzy
+msgid "Argentina"
+msgstr "hiszpański (Argentyna)"
+
+#, fuzzy
+msgid "AS"
+msgstr "ASK"
+
+msgid "American Samoa"
+msgstr ""
+
+msgid "AT"
+msgstr ""
+
+#, fuzzy
+msgid "Austria"
+msgstr "string"
+
+#, fuzzy
+msgid "AU"
+msgstr "TAU"
+
+#, fuzzy
+msgid "Australia"
+msgstr "angielski (Australia)"
+
+msgid "AW"
+msgstr ""
+
+msgid "Aruba"
+msgstr ""
+
+#, fuzzy
+msgid "AX"
+msgstr "X"
+
+#, fuzzy
+msgid "Åland Islands"
+msgstr "islandzki (Islandia)"
+
+msgid "AZ"
+msgstr ""
+
+msgid "Azerbaijan"
+msgstr ""
+
+msgid "BA"
+msgstr ""
+
+#, fuzzy
+msgid "Bosnia and Herzegovina"
+msgstr "bośniacki (Bośnia i Hercegowina)"
+
+msgid "BB"
+msgstr ""
+
+msgid "Barbados"
+msgstr ""
+
+msgid "BD"
+msgstr ""
+
+#, fuzzy
+msgid "Bangladesh"
+msgstr "bengalski (Bangladesz)"
+
+#, fuzzy
+msgid "BE"
+msgstr "BYE"
+
+#, fuzzy
+msgid "Belgium"
+msgstr "duński (Belgia)"
+
+msgid "BF"
+msgstr ""
+
+msgid "Burkina Faso"
+msgstr ""
+
+msgid "BG"
+msgstr ""
+
+#, fuzzy
+msgid "Bulgaria"
+msgstr "bułgarski"
+
+msgid "BH"
+msgstr ""
+
+#, fuzzy
+msgid "Bahrain"
+msgstr "arabski (Bahrajn)"
+
+msgid "BI"
+msgstr ""
+
+msgid "Burundi"
+msgstr ""
+
+msgid "BJ"
+msgstr ""
+
+msgid "Benin"
+msgstr ""
+
+msgid "BL"
+msgstr ""
+
+msgid "St. Barthélemy"
+msgstr ""
+
+msgid "BM"
+msgstr ""
+
+msgid "Bermuda"
+msgstr ""
+
+msgid "BN"
+msgstr ""
+
+msgid "Brunei"
+msgstr ""
+
+msgid "BO"
+msgstr ""
+
+msgid "Bolivia"
+msgstr ""
+
+msgid "BQ"
+msgstr ""
+
+#, fuzzy
+msgid "Caribbean Netherlands"
+msgstr "limburian (Holenderski)"
+
+msgid "BR"
+msgstr ""
+
+msgid "Brazil"
+msgstr ""
+
+msgid "BS"
+msgstr ""
+
+msgid "Bahamas"
+msgstr ""
+
+msgid "BT"
+msgstr ""
+
+msgid "Bhutan"
+msgstr ""
+
+msgid "BV"
+msgstr ""
+
+msgid "Bouvet Island"
+msgstr ""
+
+msgid "BW"
+msgstr ""
+
+#, fuzzy
+msgid "Botswana"
+msgstr "angielski (Botswana)"
+
+#, fuzzy
+msgid "BY"
+msgstr "BYE"
+
+#, fuzzy
+msgid "Belarus"
+msgstr "białoruski"
+
+msgid "BZ"
+msgstr ""
+
+msgid "Belize"
+msgstr ""
+
+msgid "CA"
+msgstr ""
+
+msgid "Canada"
+msgstr ""
+
+msgid "CC"
+msgstr ""
+
+msgid "Cocos (Keeling) Islands"
+msgstr ""
+
+msgid "CD"
+msgstr ""
+
+msgid "Congo - Kinshasa"
+msgstr ""
+
+msgid "CF"
+msgstr ""
+
+msgid "Central African Republic"
+msgstr ""
+
+msgid "CG"
+msgstr ""
+
+msgid "Congo - Brazzaville"
+msgstr ""
+
+msgid "CH"
+msgstr ""
+
+#, fuzzy
+msgid "Switzerland"
+msgstr "niemiecki (Szwajcaria)"
+
+msgid "CI"
+msgstr ""
+
+msgid "Côte d'Ivoire"
+msgstr ""
+
+msgid "CK"
+msgstr ""
+
+msgid "Cook Islands"
+msgstr ""
+
+msgid "CL"
+msgstr ""
+
+#, fuzzy
+msgid "Chile"
+msgstr "while"
+
+msgid "CM"
+msgstr ""
+
+#, fuzzy
+msgid "Cameroon"
+msgstr "Kamery"
+
+msgid "CN"
+msgstr ""
+
+#, fuzzy
+msgid "China"
+msgstr "chiński"
+
+msgid "CO"
+msgstr ""
+
+#, fuzzy
+msgid "Colombia"
+msgstr "hiszpański (Kolumbia)"
+
+#, fuzzy
+msgid "CP"
+msgstr "CPU"
+
+msgid "Clipperton Island"
+msgstr ""
+
+msgid "CR"
+msgstr ""
+
+#, fuzzy
+msgid "Costa Rica"
+msgstr "hiszpański (Kostaryka)"
+
+msgid "CQ"
+msgstr ""
+
+msgid "Island of Sark"
+msgstr ""
+
+#, fuzzy
+msgid "CU"
+msgstr "CPU"
+
+msgid "Cuba"
+msgstr ""
+
+msgid "CV"
+msgstr ""
+
+msgid "Cabo Verde"
+msgstr ""
+
+msgid "CW"
+msgstr ""
+
+msgid "Curaçao"
+msgstr ""
+
+#, fuzzy
+msgid "CX"
+msgstr "X"
+
+msgid "Christmas Island"
+msgstr ""
+
+msgid "CY"
+msgstr ""
+
+#, fuzzy
+msgid "Cyprus"
+msgstr "grecki (Cypr)"
+
+msgid "CZ"
+msgstr ""
+
+#, fuzzy
+msgid "Czechia"
+msgstr "czeski"
+
+msgid "DE"
+msgstr ""
+
+#, fuzzy
+msgid "Germany"
+msgstr "niemiecki"
+
+msgid "DG"
+msgstr ""
+
+msgid "Diego Garcia"
+msgstr ""
+
+msgid "DJ"
+msgstr ""
+
+#, fuzzy
+msgid "Djibouti"
+msgstr "afar (Dżibuti)"
+
+msgid "DK"
+msgstr ""
+
+#, fuzzy
+msgid "Denmark"
+msgstr "duński (Dania)"
+
+msgid "DM"
+msgstr ""
+
+msgid "Dominica"
+msgstr ""
+
+#, fuzzy
+msgid "DO"
+msgstr "TODO"
+
+#, fuzzy
+msgid "Dominican Republic"
+msgstr "hiszpański (Dominikana)"
+
+msgid "DZ"
+msgstr ""
+
+#, fuzzy
+msgid "Algeria"
+msgstr "arabski (Algeria)"
+
+msgid "EA"
+msgstr ""
+
+msgid "Ceuta and Melilla"
+msgstr ""
+
+msgid "EC"
+msgstr ""
+
+msgid "Ecuador"
+msgstr ""
+
+msgid "EE"
+msgstr ""
+
+#, fuzzy
+msgid "Estonia"
+msgstr "estoński"
+
+msgid "EG"
+msgstr ""
+
+msgid "Egypt"
+msgstr ""
+
+msgid "EH"
+msgstr ""
+
+msgid "Western Sahara"
+msgstr ""
+
+msgid "ER"
+msgstr ""
+
+#, fuzzy
+msgid "Eritrea"
+msgstr "afar (Erytrea)"
+
+msgid "ES"
+msgstr ""
+
+msgid "Spain"
+msgstr ""
+
+msgid "ET"
+msgstr ""
+
+#, fuzzy
+msgid "Ethiopia"
+msgstr "afar (Etiopia)"
+
+msgid "EU"
+msgstr ""
+
+msgid "European Union"
+msgstr ""
+
+msgid "EZ"
+msgstr ""
+
+msgid "Eurozone"
+msgstr ""
+
+msgid "FI"
+msgstr ""
+
+msgid "Finland"
+msgstr ""
+
+msgid "FJ"
+msgstr ""
+
+msgid "Fiji"
+msgstr ""
+
+msgid "FK"
+msgstr ""
+
+msgid "Falkland Islands"
+msgstr ""
+
+msgid "FM"
+msgstr ""
+
+#, fuzzy
+msgid "Micronesia"
+msgstr "indonezyjski"
+
+msgid "FO"
+msgstr ""
+
+#, fuzzy
+msgid "Faroe Islands"
+msgstr "farerski (Wyspy Owcze)"
+
+msgid "FR"
+msgstr ""
+
+msgid "France"
+msgstr ""
+
+#, fuzzy
+msgid "FX"
+msgstr "X"
+
+msgid "France, Metropolitan"
+msgstr ""
+
+msgid "GA"
+msgstr ""
+
+msgid "Gabon"
+msgstr ""
+
+msgid "GB, UK"
+msgstr ""
+
+#, fuzzy
+msgid "United Kingdom"
+msgstr "manx (Zjednoczone Królestwo)"
+
+msgid "GD"
+msgstr ""
+
+msgid "Grenada"
+msgstr ""
+
+msgid "GE"
+msgstr ""
+
+#, fuzzy
+msgid "Georgia"
+msgstr "norweski"
+
+msgid "GF"
+msgstr ""
+
+#, fuzzy
+msgid "French Guiana"
+msgstr "francuski (Kanada)"
+
+msgid "GG"
+msgstr ""
+
+msgid "Guernsey"
+msgstr ""
+
+msgid "GH"
+msgstr ""
+
+msgid "Ghana"
+msgstr ""
+
+#, fuzzy
+msgid "GI"
+msgstr "GUI"
+
+msgid "Gibraltar"
+msgstr ""
+
+#, fuzzy
+msgid "GL"
+msgstr "GLSL"
+
+msgid "Greenland"
+msgstr ""
+
+msgid "GM"
+msgstr ""
+
+msgid "Gambia"
+msgstr ""
+
+msgid "GN"
+msgstr ""
+
+msgid "Guinea"
+msgstr ""
+
+#, fuzzy
+msgid "GP"
+msgstr "procesor graficzny"
+
+msgid "Guadeloupe"
+msgstr ""
+
+msgid "GQ"
+msgstr ""
+
+msgid "Equatorial Guinea"
+msgstr ""
+
+msgid "GR"
+msgstr ""
+
+#, fuzzy
+msgid "Greece"
+msgstr "grecki"
+
+#, fuzzy
+msgid "GS"
+msgstr "GLSL"
+
+msgid "South Georgia and South Sandwich Islands"
+msgstr ""
+
+msgid "GT"
+msgstr ""
+
+#, fuzzy
+msgid "Guatemala"
+msgstr "hiszpański (Gwatemala)"
+
+#, fuzzy
+msgid "GU"
+msgstr "GUI"
+
+msgid "Guam"
+msgstr ""
+
+msgid "GW"
+msgstr ""
+
+msgid "Guinea-Bissau"
+msgstr ""
+
+msgid "GY"
+msgstr ""
+
+msgid "Guyana"
+msgstr ""
+
+msgid "HK"
+msgstr ""
+
+#, fuzzy
+msgid "Hong Kong"
+msgstr "angielski (Hong Kong)"
+
+msgid "HM"
+msgstr ""
+
+msgid "Heard Island and McDonald Islands"
+msgstr ""
+
+msgid "HN"
+msgstr ""
+
+#, fuzzy
+msgid "Honduras"
+msgstr "hiszpański (Honduras)"
+
+#, fuzzy
+msgid "HR"
+msgstr "HUD"
+
+#, fuzzy
+msgid "Croatia"
+msgstr "chorwacki"
+
+msgid "HT"
+msgstr ""
+
+msgid "Haiti"
+msgstr ""
+
+msgid "HU"
+msgstr ""
+
+#, fuzzy
+msgid "Hungary"
+msgstr "węgierski"
+
+msgid "IC"
+msgstr ""
+
+msgid "Canary Islands"
+msgstr ""
+
+#, fuzzy
+msgid "ID"
+msgstr "Pozbądź się"
+
+#, fuzzy
+msgid "Indonesia"
+msgstr "indonezyjski"
+
+msgid "IE"
+msgstr ""
+
+#, fuzzy
+msgid "Ireland"
+msgstr "islandzki"
+
+msgid "IL"
+msgstr ""
+
+msgid "Israel"
+msgstr ""
+
+msgid "IM"
+msgstr ""
+
+msgid "Isle of Man"
+msgstr ""
+
+#, fuzzy
+msgid "IN"
+msgstr "INF"
+
+msgid "India"
+msgstr ""
+
+msgid "IO"
+msgstr ""
+
+msgid "British Indian Ocean Territory"
+msgstr ""
+
+msgid "IQ"
+msgstr ""
+
+msgid "Iraq"
+msgstr ""
+
+msgid "IR"
+msgstr ""
+
+msgid "Iran"
+msgstr ""
+
+msgid "IS"
+msgstr ""
+
+#, fuzzy
+msgid "Iceland"
+msgstr "islandzki"
+
+msgid "IT"
+msgstr ""
+
+#, fuzzy
+msgid "Italy"
+msgstr "Kursywa"
+
+msgid "JE"
+msgstr ""
+
+msgid "Jersey"
+msgstr ""
+
+msgid "JM"
+msgstr ""
+
+msgid "Jamaica"
+msgstr ""
+
+msgid "JO"
+msgstr ""
+
+msgid "Jordan"
+msgstr ""
+
+msgid "JP"
+msgstr ""
+
+#, fuzzy
+msgid "Japan"
+msgstr "japoński"
+
+#, fuzzy
+msgid "KE"
+msgstr "KLUCZ"
+
+msgid "Kenya"
+msgstr ""
+
+msgid "KG"
+msgstr ""
+
+#, fuzzy
+msgid "Kyrgyzstan"
+msgstr "kirgizski (Kirgistan)"
+
+msgid "KH"
+msgstr ""
+
+msgid "Cambodia"
+msgstr ""
+
+msgid "KI"
+msgstr ""
+
+msgid "Kiribati"
+msgstr ""
+
+msgid "KM"
+msgstr ""
+
+msgid "Comoros"
+msgstr ""
+
+#, fuzzy
+msgid "KN"
+msgstr "KEYN"
+
+msgid "St. Kitts and Nevis"
+msgstr ""
+
+msgid "KP"
+msgstr ""
+
+#, fuzzy
+msgid "North Korea"
+msgstr "koreański (Południowa Korea)"
+
+msgid "KR"
+msgstr ""
+
+#, fuzzy
+msgid "South Korea"
+msgstr "koreański (Południowa Korea)"
+
+msgid "KW"
+msgstr ""
+
+msgid "Kuwait"
+msgstr ""
+
+#, fuzzy
+msgid "KY"
+msgstr "KLUCZ"
+
+msgid "Cayman Islands"
+msgstr ""
+
+msgid "KZ"
+msgstr ""
+
+#, fuzzy
+msgid "Kazakhstan"
+msgstr "kazachski (Kazachstan)"
+
+msgid "LA"
+msgstr ""
+
+msgid "Laos"
+msgstr ""
+
+msgid "LB"
+msgstr ""
+
+#, fuzzy
+msgid "Lebanon"
+msgstr "arabski (Liban)"
+
+msgid "LC"
+msgstr ""
+
+msgid "St. Lucia"
+msgstr ""
+
+msgid "LI"
+msgstr ""
+
+msgid "Liechtenstein"
+msgstr ""
+
+msgid "LK"
+msgstr ""
+
+#, fuzzy
+msgid "Sri Lanka"
+msgstr "tamil (sri lanka)"
+
+msgid "LR"
+msgstr ""
+
+msgid "Liberia"
+msgstr ""
+
+#, fuzzy
+msgid "LS"
+msgstr "GLSL"
+
+msgid "Lesotho"
+msgstr ""
+
+msgid "LT"
+msgstr ""
+
+#, fuzzy
+msgid "Lithuania"
+msgstr "litewski"
+
+msgid "LU"
+msgstr ""
+
+#, fuzzy
+msgid "Luxembourg"
+msgstr "niemiecki (Luksemburg)"
+
+msgid "LV"
+msgstr ""
+
+#, fuzzy
+msgid "Latvia"
+msgstr "łotewski"
+
+msgid "LY"
+msgstr ""
+
+msgid "Libya"
+msgstr ""
+
+msgid "MA"
+msgstr ""
+
+#, fuzzy
+msgid "Morocco"
+msgstr "arabski (Maroko)"
+
+msgid "MC"
+msgstr ""
+
+msgid "Monaco"
+msgstr ""
+
+msgid "MD"
+msgstr ""
+
+msgid "Moldova"
+msgstr ""
+
+msgid "ME"
+msgstr ""
+
+#, fuzzy
+msgid "Montenegro"
+msgstr "serbski (Czarnogóra)"
+
+msgid "MF"
+msgstr ""
+
+#, fuzzy
+msgid "St. Martin"
+msgstr "Konfigurowanie"
+
+msgid "MG"
+msgstr ""
+
+#, fuzzy
+msgid "Madagascar"
+msgstr "malgaski (Madagaskar)"
+
+msgid "MH"
+msgstr ""
+
+#, fuzzy
+msgid "Marshall Islands"
+msgstr "marshallese (Wyspy Marshalla)"
+
+msgid "MK"
+msgstr ""
+
+#, fuzzy
+msgid "North Macedonia"
+msgstr "macedoński"
+
+msgid "ML"
+msgstr ""
+
+msgid "Mali"
+msgstr ""
+
+msgid "MM, BU"
+msgstr ""
+
+msgid "Myanmar"
+msgstr ""
+
+msgid "MN"
+msgstr ""
+
+msgid "Mongolia"
+msgstr ""
+
+msgid "MO"
+msgstr ""
+
+msgid "Macao"
+msgstr ""
+
+#, fuzzy
+msgid "MP"
+msgstr "MP3."
+
+msgid "Northern Mariana Islands"
+msgstr ""
+
+msgid "MQ"
+msgstr ""
+
+msgid "Martinique"
+msgstr ""
+
+msgid "MR"
+msgstr ""
+
+#, fuzzy
+msgid "Mauritania"
+msgstr "litewski"
+
+msgid "MS"
+msgstr ""
+
+msgid "Montserrat"
+msgstr ""
+
+msgid "MT"
+msgstr ""
+
+#, fuzzy
+msgid "Malta"
+msgstr "maltański"
+
+msgid "MU"
+msgstr ""
+
+msgid "Mauritius"
+msgstr ""
+
+msgid "MV"
+msgstr ""
+
+#, fuzzy
+msgid "Maldives"
+msgstr "dhivehi (Malediwy)"
+
+msgid "MW"
+msgstr ""
+
+#, fuzzy
+msgid "Malawi"
+msgstr "malajski"
+
+#, fuzzy
+msgid "MX"
+msgstr "X"
+
+msgid "Mexico"
+msgstr ""
+
+msgid "MY"
+msgstr ""
+
+#, fuzzy
+msgid "Malaysia"
+msgstr "malajski"
+
+msgid "MZ"
+msgstr ""
+
+msgid "Mozambique"
+msgstr ""
+
+#, fuzzy
+msgid "NA"
+msgstr "NAN"
+
+msgid "Namibia"
+msgstr ""
+
+msgid "NC"
+msgstr ""
+
+#, fuzzy
+msgid "New Caledonia"
+msgstr "macedoński"
+
+#, fuzzy
+msgid "NE"
+msgstr "NIC"
+
+msgid "Niger"
+msgstr ""
+
+#, fuzzy
+msgid "NF"
+msgstr "INF"
+
+msgid "Norfolk Island"
+msgstr ""
+
+msgid "NG"
+msgstr ""
+
+#, fuzzy
+msgid "Nigeria"
+msgstr "igbo (Nigeria)"
+
+msgid "NI"
+msgstr ""
+
+#, fuzzy
+msgid "Nicaragua"
+msgstr "hiszpański (Nikaragua)"
+
+msgid "NL"
+msgstr ""
+
+#, fuzzy
+msgid "Netherlands"
+msgstr "duński (Holandia)"
+
+#, fuzzy
+msgid "NO"
+msgstr "NIC"
+
+msgid "Norway"
+msgstr ""
+
+msgid "NP"
+msgstr ""
+
+msgid "Nepal"
+msgstr ""
+
+msgid "NR"
+msgstr ""
+
+msgid "NU"
+msgstr ""
+
+msgid "Niue"
+msgstr ""
+
+msgid "NZ"
+msgstr ""
+
+#, fuzzy
+msgid "New Zealand"
+msgstr "mao (Nowa Zelandia)"
+
+msgid "OM"
+msgstr ""
+
+msgid "Oman"
+msgstr ""
+
+msgid "PA"
+msgstr ""
+
+msgid "Panama"
+msgstr ""
+
+msgid "PE"
+msgstr ""
+
+msgid "Peru"
+msgstr ""
+
+msgid "PF"
+msgstr ""
+
+msgid "French Polynesia"
+msgstr ""
+
+msgid "PG"
+msgstr ""
+
+msgid "PH"
+msgstr ""
+
+#, fuzzy
+msgid "Philippines"
+msgstr "angielski (Filipiny)"
+
+msgid "PK"
+msgstr ""
+
+#, fuzzy
+msgid "Pakistan"
+msgstr "urdu (Pakistan)"
+
+msgid "PL"
+msgstr ""
+
+msgid "Poland"
+msgstr ""
+
+msgid "PM"
+msgstr ""
+
+msgid "St. Pierre and Miquelon"
+msgstr ""
+
+msgid "PN"
+msgstr ""
+
+msgid "Pitcairn Islands"
+msgstr ""
+
+msgid "PR"
+msgstr ""
+
+#, fuzzy
+msgid "Puerto Rico"
+msgstr "hiszpański (Portoryko)"
+
+#, fuzzy
+msgid "PS"
+msgstr "FPS"
+
+#, fuzzy
+msgid "Palestine"
+msgstr "Kamienie Milowe"
+
+msgid "PT"
+msgstr ""
+
+#, fuzzy
+msgid "Portugal"
+msgstr "Porty"
+
+msgid "PW"
+msgstr ""
+
+msgid "Palau"
+msgstr ""
+
+msgid "PY"
+msgstr ""
+
+#, fuzzy
+msgid "Paraguay"
+msgstr "hiszpański (Paragwaj)"
+
+#, fuzzy
+msgid "QA"
+msgstr "Pytania i odpowiedzi"
+
+msgid "Qatar"
+msgstr ""
+
+msgid "RE"
+msgstr ""
+
+msgid "Réunion"
+msgstr ""
+
+msgid "RO"
+msgstr ""
+
+#, fuzzy
+msgid "Romania"
+msgstr "rumuński"
+
+msgid "RS"
+msgstr ""
+
+#, fuzzy
+msgid "Serbia"
+msgstr "serbski"
+
+msgid "RU"
+msgstr ""
+
+#, fuzzy
+msgid "Russia"
+msgstr "rosyjski"
+
+msgid "RW"
+msgstr ""
+
+msgid "Rwanda"
+msgstr ""
+
+msgid "SA"
+msgstr ""
+
+#, fuzzy
+msgid "Saudi Arabia"
+msgstr "arabski (Arabia Saudyjska)"
+
+msgid "SB"
+msgstr ""
+
+msgid "Solomon Islands"
+msgstr ""
+
+msgid "SC"
+msgstr ""
+
+msgid "Seychelles"
+msgstr ""
+
+msgid "SD"
+msgstr ""
+
+msgid "Sudan"
+msgstr ""
+
+msgid "SE"
+msgstr ""
+
+#, fuzzy
+msgid "Sweden"
+msgstr "szwedzki"
+
+msgid "SG"
+msgstr ""
+
+#, fuzzy
+msgid "Singapore"
+msgstr "angielski (Singapur)"
+
+msgid "SH"
+msgstr ""
+
+msgid "St. Helena, Ascension and Tristan da Cunha"
+msgstr ""
+
+msgid "SI"
+msgstr ""
+
+#, fuzzy
+msgid "Slovenia"
+msgstr "słoweński"
+
+msgid "SJ"
+msgstr ""
+
+msgid "Svalbard and Jan Mayen"
+msgstr ""
+
+#, fuzzy
+msgid "SK"
+msgstr "ASK"
+
+#, fuzzy
+msgid "Slovakia"
+msgstr "słowacki"
+
+#, fuzzy
+msgid "SL"
+msgstr "GLSL"
+
+msgid "Sierra Leone"
+msgstr ""
+
+msgid "SM"
+msgstr ""
+
+msgid "San Marino"
+msgstr ""
+
+msgid "SN"
+msgstr ""
+
+#, fuzzy
+msgid "Senegal"
+msgstr "Informacje prawne"
+
+msgid "SO"
+msgstr ""
+
+#, fuzzy
+msgid "Somalia"
+msgstr "somalijski"
+
+msgid "SR"
+msgstr ""
+
+#, fuzzy
+msgid "Suriname"
+msgstr "``name``"
+
+msgid "SS"
+msgstr ""
+
+#, fuzzy
+msgid "South Sudan"
+msgstr "arabski ()"
+
+msgid "ST"
+msgstr ""
+
+msgid "Sao Tome and Principe"
+msgstr ""
+
+msgid "SV"
+msgstr ""
+
+#, fuzzy
+msgid "El Salvador"
+msgstr "hiszpański (Salvador)"
+
+#, fuzzy
+msgid "SX"
+msgstr "X"
+
+msgid "Sint Maarten"
+msgstr ""
+
+msgid "SY"
+msgstr ""
+
+msgid "Syria"
+msgstr ""
+
+msgid "SZ"
+msgstr ""
+
+msgid "Eswatini"
+msgstr ""
+
+#, fuzzy
+msgid "TA"
+msgstr "TAU"
+
+msgid "Tristan da Cunha"
+msgstr ""
+
+msgid "TC"
+msgstr ""
+
+msgid "Turks and Caicos Islands"
+msgstr ""
+
+#, fuzzy
+msgid "TD"
+msgstr "TODO"
+
+msgid "Chad"
+msgstr ""
+
+msgid "TF"
+msgstr ""
+
+msgid "French Southern Territories"
+msgstr ""
+
+msgid "TG"
+msgstr ""
+
+msgid "Togo"
+msgstr ""
+
+msgid "TH"
+msgstr ""
+
+#, fuzzy
+msgid "Thailand"
+msgstr "tajski (Tajlandia)"
+
+msgid "TJ"
+msgstr ""
+
+#, fuzzy
+msgid "Tajikistan"
+msgstr "tadżycki (Tadżykistan)"
+
+msgid "TK"
+msgstr ""
+
+msgid "TL, TP"
+msgstr ""
+
+msgid "Timor-Leste"
+msgstr ""
+
+msgid "TM"
+msgstr ""
+
+#, fuzzy
+msgid "Turkmenistan"
+msgstr "turkmeński (Turkmenistan)"
+
+msgid "TN"
+msgstr ""
+
+#, fuzzy
+msgid "Tunisia"
+msgstr "arabski (Tunezja)"
+
+#, fuzzy
+msgid "TO"
+msgstr "TODO"
+
+msgid "Tonga"
+msgstr ""
+
+msgid "TR"
+msgstr ""
+
+#, fuzzy
+msgid "Turkey"
+msgstr "turecki"
+
+msgid "TT"
+msgstr ""
+
+msgid "Trinidad and Tobago"
+msgstr ""
+
+msgid "TV"
+msgstr ""
+
+msgid "TW"
+msgstr ""
+
+msgid "Taiwan"
+msgstr ""
+
+msgid "TZ"
+msgstr ""
+
+#, fuzzy
+msgid "Tanzania"
+msgstr "suahili (Tanzania)"
+
+msgid "UA"
+msgstr ""
+
+#, fuzzy
+msgid "Ukraine"
+msgstr "ukraiński"
+
+msgid "UG"
+msgstr ""
+
+#, fuzzy
+msgid "Uganda"
+msgstr "ganda (Uganda)"
+
+msgid "UM"
+msgstr ""
+
+msgid "U.S. Outlying Islands"
+msgstr ""
+
+msgid "US"
+msgstr ""
+
+msgid "United States of America"
+msgstr ""
+
+msgid "UY"
+msgstr ""
+
+msgid "Uruguay"
+msgstr ""
+
+msgid "UZ"
+msgstr ""
+
+#, fuzzy
+msgid "Uzbekistan"
+msgstr "uzbecki (Uzbekistan)"
+
+msgid "VA"
+msgstr ""
+
+msgid "Holy See"
+msgstr ""
+
+msgid "VC"
+msgstr ""
+
+msgid "St. Vincent and the Grenadines"
+msgstr ""
+
+msgid "VE"
+msgstr ""
+
+#, fuzzy
+msgid "Venezuela"
+msgstr "hiszpański (Wenezuela)"
+
+msgid "VG"
+msgstr ""
+
+msgid "British Virgin Islands"
+msgstr ""
+
+msgid "VI"
+msgstr ""
+
+msgid "U.S. Virgin Islands"
+msgstr ""
+
+msgid "VN"
+msgstr ""
+
+#, fuzzy
+msgid "Viet Nam"
+msgstr "wietnamski"
+
+msgid "VU"
+msgstr ""
+
+#, fuzzy
+msgid "Vanuatu"
+msgstr "Ręczne użycie"
+
+msgid "WF"
+msgstr ""
+
+msgid "Wallis and Futuna"
+msgstr ""
+
+msgid "WS"
+msgstr ""
+
+msgid "Samoa"
+msgstr ""
+
+msgid "XK, KV"
+msgstr ""
+
+msgid "Kosovo"
+msgstr ""
+
+#, fuzzy
+msgid "YE"
+msgstr "BYE"
+
+#, fuzzy
+msgid "Yemen"
+msgstr "Ruch"
+
+msgid "YT"
+msgstr ""
+
+msgid "Mayotte"
+msgstr ""
+
+msgid "ZA"
+msgstr ""
+
+#, fuzzy
+msgid "South Africa"
+msgstr "pedi (Republika Południowej Afryki)"
+
+msgid "ZM"
+msgstr ""
+
+#, fuzzy
+msgid "Zambia"
+msgstr "bemba (Zambia)"
+
+msgid "ZW"
+msgstr ""
+
+#, fuzzy
+msgid "Zimbabwe"
+msgstr "angielski (Zimbabwe)"
 
 msgid "Translation status"
 msgstr "Status tłumaczenia"

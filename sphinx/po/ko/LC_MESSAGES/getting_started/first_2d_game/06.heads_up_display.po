@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,39 +94,24 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Under **Theme overrides > Fonts** click on the empty box and select \"New "
-"DynamicFont\""
-msgstr "\"Custom Fonts\" 에서, \"새 DynamicFont\"를 선택하세요"
-
-#, fuzzy
-msgid ""
-"Click on the \"DynamicFont\" you added, and under **Font > FontData**, "
-"choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
+"Under \"Theme Overrides > Fonts\", choose \"Load\" and select the \"Xolonium-"
+"Regular.ttf\" file."
 msgstr ""
 "추가한 \"DynamicFont\"를 클릭하고, \"Font/Font Data\" 아래에서, \"불러오기"
 "(Load)\"를 눌러서 \"Xolonium-Regular.ttf\" 파일을 선택하세요. 또한 폰트의 "
 "``Size``\\ 도 설정해야 합니다. ``64`` 정도가 좋습니다."
 
-msgid "Set the \"Size\" property under ``Settings``, ``64`` works well."
+msgid ""
+"The font size is still too small, increase it to ``64`` under \"Theme "
+"Overrides > Font Sizes\". Once you've done this with the ``ScoreLabel``, "
+"repeat the changes for the ``Message`` and ``StartButton`` nodes."
 msgstr ""
 
 #, fuzzy
 msgid ""
-"Once you've done this on the ``ScoreLabel``, you can click the down arrow "
-"next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
-"place on the other two Control nodes."
-msgstr ""
-"``ScoreLabel``\\ 에서 이 작업을 수행하고 나면 DynamicFont 속성 옆에 있는 아래"
-"쪽 화살표를 클릭하고 \"복사(Copy)\"를 선택한 다음 다른 두 Control 노드의 같"
-"은 위치에 \"붙여넣기(Paste)\"를 할 수 있습니다."
-
-#, fuzzy
-msgid ""
-"**Anchors and Margins:** ``Control`` nodes have a position and size, but "
-"they also have anchors and margins. Anchors define the origin - the "
-"reference point for the edges of the node. Margins update automatically when "
-"you move or resize a control node. They represent the distance from the "
-"control node's edges to its anchor."
+"**Anchors:** ``Control`` nodes have a position and size, but they also have "
+"anchors. Anchors define the origin - the reference point for the edges of "
+"the node."
 msgstr ""
 "**앵커(Anchors)와 마진(Margins):** ``Control`` 노드는 위치와 크기를 가지고 있"
 "고, 앵커와 마진 또한 가지고 있습니다. 앵커는 노드의 가장자리에 대한 참조점인 "
@@ -135,16 +120,10 @@ msgstr ""
 "는 지를 나타냅니다. 더 자세한 설명은 :ref:"
 "`doc_design_interfaces_with_the_control_nodes`\\ 를 참고하세요."
 
+#, fuzzy
 msgid ""
-"Arrange the nodes as shown below. Click the \"Layout\" button to set a "
-"Control node's layout:"
-msgstr ""
-"아래에 보이는 대로 노드를 배열하세요. \"레이아웃(Layout)\" 버튼을 클릭해서 "
-"Control 노드의 레이아웃을 설정하세요:"
-
-msgid ""
-"You can drag the nodes to place them manually, or for more precise "
-"placement, use the following settings:"
+"Arrange the nodes as shown below. You can drag the nodes to place them "
+"manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr ""
 "여러분은 노드를 드래그해서 수동으로 놓을 수도 있지만 더 정확하게 하고 싶다면 "
 "다음 설정을 사용하세요:"
@@ -152,44 +131,53 @@ msgstr ""
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-msgid "*Layout* : \"Top Wide\""
-msgstr "*레이아웃(Layout)* : \"위쪽 넓게(Top Wide)\""
+msgid "Add the text ``0``."
+msgstr ""
 
-msgid "*Text* : ``0``"
-msgstr "*Text* : ``0``"
+msgid ""
+"Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
+msgstr ""
 
-msgid "*Align* : \"Center\""
-msgstr "*Align* : \"Center\""
+msgid "Choose the \"Anchor Preset\" ``Center Top``."
+msgstr ""
 
 msgid "Message"
 msgstr "메시지"
 
-msgid "*Layout* : \"HCenter Wide\""
-msgstr "*레이아웃(Layout)* : \"수평선 중앙 넓게(HCenter Wide)\""
-
-msgid "*Text* : ``Dodge the Creeps!``"
+#, fuzzy
+msgid "Add the text ``Dodge the creeps!``."
 msgstr "*Text* : ``Dodge the Creeps!``"
 
-msgid "*Autowrap* : \"On\""
-msgstr "*Autowrap* : \"On\""
+msgid ""
+"Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
+"line."
+msgstr ""
+
+msgid ""
+"Under \"Control - Layout/Transform\" set \"Size X\"  to ``480`` to use the "
+"entire width of the screen."
+msgstr ""
+
+msgid "Choose the \"Anchor Preset\" ``Center``."
+msgstr ""
 
 msgid "StartButton"
 msgstr "StartButton"
 
-msgid "*Text* : ``Start``"
+#, fuzzy
+msgid "Add the text ``Start``."
 msgstr "*Text* : ``Start``"
 
-msgid "*Layout* : \"Center Bottom\""
-msgstr "*레이아웃(Layout)* : \"아래쪽 중앙(Center Bottom)\""
+msgid ""
+"Under \"Control - Layout/Transform\", set \"Size X\" to ``200`` and \"Size "
+"Y\" to ``100`` to add a little bit more padding between the border and text."
+msgstr ""
 
-msgid "*Margin* :"
-msgstr "*Margin* :"
+msgid "Choose the \"Anchor Preset\" ``Center Bottom``."
+msgstr ""
 
-msgid "Top: ``-200``"
-msgstr "Top: ``-200``"
-
-msgid "Bottom: ``-100``"
-msgstr "Bottom: ``-100``"
+msgid "Under \"Control - Layout/Transform\", set \"Position Y\" to ``580``."
+msgstr ""
 
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
@@ -201,17 +189,23 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr "이제 ``HUD``\\ 에 이 스크립트를 추가하세요:"
 
+#, fuzzy
 msgid ""
-"The ``start_game`` signal tells the ``Main`` node that the button has been "
-"pressed."
-msgstr "``start_game`` 시그널은 ``Main`` 노드에게 버튼이 눌려졌음을 알립니다."
-
-msgid ""
-"This function is called when we want to display a message temporarily, such "
-"as \"Get Ready\"."
+"We now want to display a message temporarily, such as \"Get Ready\", so we "
+"add the following code"
 msgstr ""
 "이 함수는 \"Get Ready\"와 같은 메시지를 일시적으로 표시하고 싶을 때 호출됩니"
 "다."
+
+#, fuzzy
+msgid ""
+"We also need to process what happens when the player loses. The code below "
+"will show \"Game Over\" for 2 seconds, then return to the title screen and, "
+"after a brief pause, show the \"Start\" button."
+msgstr ""
+"이 함수는 플레이어가 패배했을 때 호출됩니다. 이 함수는 2초동안 \"Game "
+"Over\"를 보여주고, 타이틀 화면으로 돌아와서, 잠깐 일시정지한 후 \"Start\" 버"
+"튼을 보여줍니다."
 
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
@@ -233,12 +227,13 @@ msgstr ""
 "표시하기 전에 잠시 기다려야 하는 위의 코드와 같이 지연을 추가하는 데 매우 유"
 "용할 수 있습니다."
 
-msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "이 함수는 점수가 변경될 때마다 ``Main``\\ 에 의해서 호출됩니다."
+msgid "Add the code below to ``HUD`` to update the score"
+msgstr ""
 
+#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
-"signal of ``StartButton`` and add the following code to the new functions:"
+"signal of ``StartButton``, and add the following code to the new functions:"
 msgstr ""
 "``MessageTimer``\\ 의 ``timeout()`` 시그널과 ``StartButton``\\ 의 "
 "``pressed()`` 시그널을 연결하고 다음 코드를 새 함수에 추가하세요:"
@@ -263,16 +258,24 @@ msgstr ""
 "이제 ``HUD`` 기능을 ``Main`` 스크립트에 연결할 것입니다. 여기에는 ``Main`` 씬"
 "에 추가적인 것들이 요구됩니다:"
 
+#, fuzzy
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
-"``new_game()`` function of the Main node by typing \"new_game\" in the "
-"\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
+"``new_game()`` function of the Main node by clicking the \"Pick\" button in "
+"the \"Connect a Signal\" window and selecting the ``new_game()`` method or "
+"type \"new_game\" below \"Receiver Method\" in the window. Verify that the "
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
 "Node 탭에서 \"시그널을 메서드에 연결(Connect a Signal to a Method)\" 창의 "
 "\"받는 메서드(Receiver Method)\"에 \"new_game\"을 입력해 HUD의 "
 "``start_game`` 신호를 Main 노드의 ``new_game()`` 함수에 연결하세요. 이제 스크"
 "립트의 ``func new_game()`` 옆에 녹색 연결 아이콘이 나타나는지 확인하세요."
+
+#, fuzzy
+msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
+msgstr ""
+"모든 것이 제대로 작동한다고 확신한다면 '_ready()'에서 ``new_game()`` 함수 호"
+"출을 제거하세요."
 
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
@@ -285,15 +288,22 @@ msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "``game_over()``\\ 에서는, 해당 ``HUD`` 함수를 호출해야 합니다:"
 
 msgid ""
-"Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
+"Just a reminder: we don't want to start the new game automatically, so "
+"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
 "마지막으로, ``_on_ScoreTimer_timeout()``\\ 을 추가해서 점수가 바뀌면 화면과 "
 "일치하도록 합니다:"
 
+#, fuzzy
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
-"asked to select a main scene, so choose ``Main.tscn``."
+"asked to select a main scene, so choose ``main.tscn``."
 msgstr ""
 "이제 실행할 준비가 끝났습니다! \"프로젝트 실행\" 버튼을 누르세요. 메인 씬을 "
 "선택하라고 물어보면 ``Main.tscn``\\ 을 골라줍시다."

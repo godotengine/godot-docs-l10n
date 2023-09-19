@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,9 +41,6 @@ msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
 "return types."
 msgstr "靜態型別可以在變數、常數、函式、參數、與回傳型別上使用。"
-
-msgid "Typed GDScript is available since Godot 3.1."
-msgstr "有型別的 GDScript 自 Godot 3.1 版後提供。"
 
 msgid "A brief look at static typing"
 msgstr "靜態型別簡介"
@@ -177,9 +174,10 @@ msgstr ""
 "可以使用任何類別來作為型別，也包含自定類別。在腳本中使用類別作為型別有兩種方"
 "法，第一種方法是將要作為型別的腳本預先載入到常數中："
 
+#, fuzzy
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
-"the example above, your Rifle.gd would look like this:"
+"the example above, your rifle.gd would look like this:"
 msgstr ""
 "而第二種方法則是在建立類別時使用 ``class_name`` 關鍵字。如在上方的範例中，"
 "Rifle.gd 會變成這樣："
@@ -201,9 +199,10 @@ msgid ""
 msgstr ""
 "型別轉換是型別語言的重要概念。型別轉換即為將數值從一種型別轉換至另一種型別。"
 
+#, fuzzy
 msgid ""
 "Imagine an Enemy in your game, that ``extends Area2D``. You want it to "
-"collide with the Player, a ``KinematicBody2D`` with a script called "
+"collide with the Player, a ``CharacterBody2D`` with a script called "
 "``PlayerController`` attached to it. You use the ``on_body_entered`` signal "
 "to detect the collision. With typed code, the body you detect is going to be "
 "a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
@@ -269,9 +268,10 @@ msgstr ""
 "Timer 同時也會是其繼承的 ``Node`` 與 ``Object`` 兩個類別。使用動態 GDScript "
 "時，只要節點上有我們需要的方法，就不需要去在意節點是什麼型別。"
 
+#, fuzzy
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
-"``($Timer as Timer)``, ``($Player as KinematicBody2D)``, etc. Godot will "
+"``($Timer as Timer)``, ``($Player as CharacterBody2D)``, etc. Godot will "
 "ensure the type works and if so, the line number will turn green at the left "
 "of the script editor."
 msgstr ""
@@ -306,6 +306,31 @@ msgstr "型別 ``void`` 表示函式不回傳任何東西。與變數一樣，�
 
 msgid "You can also use your own nodes as return types:"
 msgstr "也可以使用自定節點來作為回傳型別："
+
+#, fuzzy
+msgid "Define the element type of an Array"
+msgstr "使用箭頭 -> 來定義函式的回傳值型別"
+
+msgid "To define the type of an Array, enclose the type name in ``[]``."
+msgstr ""
+
+msgid ""
+"An array's type applies to ``for`` loop variables, as well as some operators "
+"like ``[]``, ``[]=``, and ``+``. Array methods (such as ``push_back``) and "
+"other operators (such as ``==``) are still untyped. Primitive types, builtin "
+"classes, and custom classes may be used as types. Nested array types are not "
+"supported."
+msgstr ""
+
+msgid ""
+"Since Godot 4.2, you can also specify a type for the loop variable in a "
+"``for`` loop. For instance, you can write:"
+msgstr ""
+
+msgid ""
+"The array will remain untyped, but the ``name`` variable within the ``for`` "
+"loop will always be of String type."
+msgstr ""
 
 msgid "Typed or dynamic: stick to one style"
 msgstr "靜態或動態：只選擇一種風格"
@@ -368,43 +393,31 @@ msgid ""
 msgstr ""
 "有關 GDScript 警告系統的文件已移至 :ref:`doc_gdscript_warning_system` 。"
 
-msgid "Cases where you can't specify types"
+#, fuzzy
+msgid "A case where you can't specify types"
 msgstr "無法指定型別的情況"
 
+#, fuzzy
 msgid ""
-"To wrap up this introduction, let's cover a few cases where you can't use "
-"type hints. All the examples below **will trigger errors**."
+"To wrap up this introduction, let's mention a case where you can't use type "
+"hints. This will trigger a **syntax error**."
 msgstr ""
 "在結束這篇教學前，我們再來說說無法使用型別定義的一些情況。接下來所有的例子都"
 "會 **觸發錯誤** 。"
 
-msgid "You can't use Enums as types:"
-msgstr "列舉類型不能作為型別定義："
-
-msgid ""
-"You can't specify the type of individual members in an array. This will give "
-"you an error:"
+#, fuzzy
+msgid "You can't specify the type of individual members in an array:"
 msgstr "無法為陣列中個別成員指定型別。下列例子會產生錯誤："
-
-msgid ""
-"You can't force the assignment of types in a ``for`` loop, as each element "
-"the ``for`` keyword loops over already has a different type. So you "
-"**cannot** write:"
-msgstr ""
-"無法強制在 ``for`` 迴圈上指定型別，因為 ``for`` 關鍵字迴圈上的每個元素都有不"
-"同的型別。也就是說， **不能** 這樣寫："
-
-msgid "Two scripts can't depend on each other in a cyclic fashion:"
-msgstr "兩個腳本不能互相依賴，會導致循環："
 
 msgid "Summary"
 msgstr "總結"
 
+#, fuzzy
 msgid ""
-"Typed GDScript is a powerful tool. Available as of version 3.1 of Godot, it "
-"helps you write more structured code, avoid common errors, and create "
-"scalable systems. In the future, static types will also bring you a nice "
-"performance boost thanks to upcoming compiler optimizations."
+"Typed GDScript is a powerful tool. It helps you write more structured code, "
+"avoid common errors, and create scalable systems. In the future, static "
+"types will also bring you a nice performance boost thanks to upcoming "
+"compiler optimizations."
 msgstr ""
 "型別定義的 GDScript 是強力的工具。自 Godot 3.1 版起提供，型別定義能讓使用者撰"
 "寫更有結構的程式碼、避免場景錯誤以及能建立延展性更高的系統。在未來，靜態型別"

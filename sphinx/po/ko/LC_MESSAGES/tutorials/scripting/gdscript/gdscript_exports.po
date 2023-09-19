@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,11 +23,12 @@ msgstr "GDScript 내보내기"
 msgid "Introduction to exports"
 msgstr "내보내기 소개"
 
+#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
-"editor. Exporting is done by using the ``export`` keyword::"
+"editor. Exporting is done by using the ``@export`` annotation."
 msgstr ""
 "Godot에서 클래스 멤버는 내보낼 수 있습니다. 즉, 멤버의 값은 (:ref:`씬 "
 "<class_PackedScene>`\\ 처럼) 붙어있는 리소스와 함께 저장됩니다. 그리고 속성"
@@ -35,9 +36,16 @@ msgstr ""
 "합니다::"
 
 msgid ""
-"An exported variable must be initialized to a constant expression or have an "
-"export hint in the form of an argument to the ``export`` keyword (see the "
-"*Examples* section below)."
+"In that example the value ``5`` will be saved and visible in the property "
+"editor."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"An exported variable must be initialized to a constant expression or have a "
+"type specifier in the variable. Some of the export annotations have a "
+"specific type and don't need the variable to be typed (see the *Examples* "
+"section below)."
 msgstr ""
 "내보낸 변수는 상수 표현식으로 초기화되거나 ``export`` 키워드에 대한 인수 형식"
 "의 내보내기 힌트가 있어야 합니다(아래 *예제* 섹션을 참고하세요)."
@@ -56,13 +64,161 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
-"syntax varies depending on the language."
+"syntax varies depending on the language. See :ref:`doc_c_sharp_exports` for "
+"information on C# exports."
 msgstr ""
 "속성 내보내기는 C#과 같은 다른 언어에서도 가능합니다. 구문은 언어에 따라 다릅"
 "니다. C# 내보내기에 대한 정보는 :ref:`doc_c_sharp_exports`\\ 를 참고하세요."
 
-msgid "Examples"
-msgstr "예제"
+#, fuzzy
+msgid "Basic use"
+msgstr "기초적인 사용법"
+
+msgid ""
+"If the exported value assigns a constant or constant expression, the type "
+"will be inferred and used in the editor."
+msgstr ""
+
+msgid "If there's no default value, you can add a type to the variable."
+msgstr ""
+
+#, fuzzy
+msgid "Resources and nodes can be exported."
+msgstr "Shadermaterials는 내보낼 수 없습니다."
+
+#, fuzzy
+msgid "Grouping Exports"
+msgstr "속성 그루핑(Grouping)"
+
+msgid ""
+"It is possible to group your exported properties inside the Inspector with "
+"the :ref:`@export_group <class_@GDScript_annotation_@export_group>` "
+"annotation. Every exported property after this annotation will be added to "
+"the group. Start a new group or use ``@export_group(\"\")`` to break out."
+msgstr ""
+
+msgid ""
+"The second argument of the annotation can be used to only group properties "
+"with the specified prefix."
+msgstr ""
+
+msgid ""
+"Groups cannot be nested, use :ref:`@export_subgroup "
+"<class_@GDScript_annotation_@export_subgroup>` to create subgroups within a "
+"group."
+msgstr ""
+
+msgid ""
+"You can also change the name of your main category, or create additional "
+"categories in the property list with the :ref:`@export_category "
+"<class_@GDScript_annotation_@export_category>` annotation."
+msgstr ""
+
+msgid ""
+"The list of properties is organized based on the class inheritance and new "
+"categories break that expectation. Use them carefully, especially when "
+"creating projects for public use."
+msgstr ""
+
+#, fuzzy
+msgid "Strings as paths"
+msgstr "줄 길이"
+
+#, fuzzy
+msgid "String as a path to a file."
+msgstr "타일맵 사용하기"
+
+msgid "String as a path to a directory."
+msgstr ""
+
+msgid "String as a path to a file, custom filter provided as hint."
+msgstr ""
+
+msgid ""
+"Using paths in the global filesystem is also possible, but only in scripts "
+"in tool mode."
+msgstr ""
+
+msgid "String as a path to a PNG file in the global filesystem."
+msgstr ""
+
+msgid "String as a path to a directory in the global filesystem."
+msgstr ""
+
+msgid ""
+"The multiline annotation tells the editor to show a large input field for "
+"editing over multiple lines."
+msgstr ""
+
+#, fuzzy
+msgid "Limiting editor input ranges"
+msgstr "인스턴스 편집하기"
+
+msgid "Allow integer values from 0 to 20."
+msgstr ""
+
+msgid "Allow integer values from -10 to 20."
+msgstr ""
+
+msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
+msgstr ""
+
+msgid ""
+"The limits can be only for the slider if you add the hints \"or_greater\" "
+"and/or \"or_less\"."
+msgstr ""
+
+msgid "Floats with easing hint"
+msgstr ""
+
+msgid "Display a visual representation of the 'ease()' function when editing."
+msgstr ""
+
+#, fuzzy
+msgid "Colors"
+msgstr "색상"
+
+msgid "Regular color given as red-green-blue-alpha value."
+msgstr ""
+
+msgid "Color given as red-green-blue value (alpha will always be 1)."
+msgstr ""
+
+msgid "Nodes"
+msgstr "노드"
+
+msgid ""
+"Since Godot 4.0, nodes can be directly exported as properties in a script "
+"without having to use NodePaths:"
+msgstr ""
+
+msgid ""
+"Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
+msgstr ""
+
+msgid ""
+"If you want to limit the types of nodes for NodePaths, you can use the :ref:"
+"`@export_node_path<class_@GDScript_annotation_@export_node_path>` annotation:"
+msgstr ""
+
+msgid "Resources"
+msgstr "리소스"
+
+msgid ""
+"In the Inspector, you can then drag and drop a resource file from the "
+"FileSystem dock into the variable slot."
+msgstr ""
+
+msgid ""
+"Opening the inspector dropdown may result in an extremely long list of "
+"possible classes to create, however. Therefore, if you specify an extension "
+"of Resource such as:"
+msgstr ""
+
+msgid ""
+"The drop-down menu will be limited to AnimationNode and all its inherited "
+"classes."
+msgstr ""
 
 msgid ""
 "It must be noted that even if the script is not being run while in the "
@@ -76,10 +232,11 @@ msgstr ""
 msgid "Exporting bit flags"
 msgstr "비트 플래그(bit flags) 내보내기"
 
+#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
-"values in one property. By using the export hint ``int, FLAGS, ...``, they "
-"can be set from the editor::"
+"values in one property. By using the ``@export_flags`` annotation, they can "
+"be set from the editor::"
 msgstr ""
 "비트 플래그로 사용되는 정수는 하나의 속성에 여러 ``true``/``false``\\ (불리"
 "언) 값을 저장할 수 있습니다. 다음과 같이 내보내기 힌트 ``int, FLAGS, ...``\\ "
@@ -96,9 +253,19 @@ msgstr ""
 "다. 일반적으로 상수는 이에 따라 정의되어야 합니다(예: ``const ELEMENT_WIND = "
 "8`` 등등)."
 
+msgid "You can add explicit values using a colon::"
+msgstr ""
+
 msgid ""
-"Export hints are also provided for the physics and render layers defined in "
-"the project settings::"
+"Only power of 2 values are valid as bit flags options. The lowest allowed "
+"value is 1, as 0 means that nothing is selected. You can also add options "
+"that are a combination of other flags::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Export annotations are also provided for the physics, render, and navigation "
+"layers defined in the project settings::"
 msgstr ""
 "프로젝트 설정에 정의된 물리 및 렌더 레이어에 대한 내보내기 힌트도 제공됩니"
 "다::"
@@ -109,6 +276,32 @@ msgid ""
 msgstr ""
 "비트 플래그를 사용하려면 비트 연산에 대한 이해가 필요합니다. 확실하지 않은 경"
 "우 대신 boolean 변수를 사용하세요."
+
+#, fuzzy
+msgid "Exporting enums"
+msgstr "내보내기 메뉴"
+
+msgid ""
+"Properties can be exported with a type hint referencing an enum to limit "
+"their values to the values of the enumeration. The editor will create a "
+"widget in the Inspector, enumerating the following as \"Thing 1\", \"Thing "
+"2\", \"Another Thing\". The value will be stored as an integer."
+msgstr ""
+
+msgid ""
+"Integer and string properties can also be limited to a specific list of "
+"values using the :ref:`@export_enum "
+"<class_@GDScript_annotation_@export_enum>` annotation. The editor will "
+"create a widget in the Inspector, enumerating the following as Warrior, "
+"Magician, Thief. The value will be stored as an integer, corresponding to "
+"the index of the selected option (i.e. ``0``, ``1``,  or ``2``)."
+msgstr ""
+
+msgid "If the type is String, the value will be stored as a string."
+msgstr ""
+
+msgid "If you want to set an initial value, you must specify it explicitly::"
+msgstr ""
 
 msgid "Exporting arrays"
 msgstr "배열 내보내기"
@@ -126,14 +319,38 @@ msgstr ""
 "(FileSystem) 독에서 여러 파일을 한 번에 끌어다 놓으면 인스펙터(Inspector)에"
 "서 배열 값을 설정할 수 있습니다."
 
+msgid "The default value **must** be a constant expression."
+msgstr ""
+
+msgid "Exported arrays can specify type (using the same hints as before)."
+msgstr ""
+
+msgid ""
+"You can omit the default value, but it would then be ``null`` if not "
+"assigned."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Arrays with specified types which inherit from resource can be set by drag-"
+"and-dropping multiple files from the FileSystem dock."
+msgstr ""
+"내보낸 배열이 Resource를 상속받는 타입을 지정하는 경우 파일시스템"
+"(FileSystem) 독에서 여러 파일을 한 번에 끌어다 놓으면 인스펙터(Inspector)에"
+"서 배열 값을 설정할 수 있습니다."
+
+msgid "Packed type arrays also work, but only initialized empty:"
+msgstr ""
+
 msgid "Setting exported variables from a tool script"
 msgstr "툴 스크립트에서 내보낸 변수 설정"
 
+#, fuzzy
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
-"automatically. To update it, call :ref:`property_list_changed_notify() "
-"<class_Object_method_property_list_changed_notify>` after setting the "
+"automatically. To update it, call :ref:`notify_property_list_changed() "
+"<class_Object_method_notify_property_list_changed>` after setting the "
 "exported variable's value."
 msgstr ""
 ":ref:`doc_gdscript_tool_mode` 스크립트에서 내보낸 변수의 값을 변경할 때 인스"
@@ -153,13 +370,13 @@ msgstr ""
 "서 제공할 수 있는 것은 아닙니다. 다음은 로우 레벨 API로 구현할 수 있는 다소 "
 "일반적인 내보내기 기능에 대해 설명합니다."
 
+#, fuzzy
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
-"<class_Object_method__get_property_list>`, :ref:`_get() "
-"<class_Object_method__get_property_list>`, and :ref:`_get_property_list() "
-"<class_Object_method__get_property_list>` methods as described in :ref:"
-"`doc_accessing_data_or_logic_from_object`."
+"<class_Object_method__set>`, :ref:`_get() <class_Object_method__get>`, and :"
+"ref:`_get_property_list() <class_Object_method__get_property_list>` methods "
+"as described in :ref:`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 "더 읽기 전에 속성이 처리되는 방식과 :ref:"
 "`doc_accessing_data_or_logic_from_object`에 설명된 대로 :ref:`_set() "
@@ -181,131 +398,6 @@ msgid ""
 msgstr ""
 "위의 방법이 에디터 안에서 작동할 수 있도록 스크립트는 ``툴(tool)`` 모드에서 "
 "작동해야 합니다."
-
-#, fuzzy
-msgid "Properties"
-msgstr "속성"
-
-msgid ""
-"To understand how to better use the sections below, you should understand "
-"how to make properties with advanced exports."
-msgstr ""
-
-msgid ""
-"The ``_get_property_list()`` function gets called by the inspector. You can "
-"override it for more advanced exports. You must return an ``Array`` with the "
-"contents of the properties for the function to work."
-msgstr ""
-
-#, fuzzy
-msgid "``name`` is the name of the property"
-msgstr "``name``\\ 은 인스펙터(Inspector)에 추가할 카테고리의 이름입니다."
-
-msgid "``type`` is the type of the property from ``Variant.Type``."
-msgstr ""
-
-msgid ""
-"The ``float`` type is called a real (``TYPE_REAL``) in the ``Variant.Type`` "
-"enum."
-msgstr ""
-
-#, fuzzy
-msgid "Attaching variables to properties"
-msgstr "지역 변수나 속성을 접근:"
-
-msgid ""
-"To attach variables to properties (allowing the value of the property to be "
-"used in scripts), you need to create a variable with the exact same name as "
-"the property or else you may need to override the :ref:`_set() "
-"<class_Object_method__get_property_list>` and :ref:`_get() "
-"<class_Object_method__get_property_list>` methods. Attaching a variable to "
-"to a property also gives you the ability to give it a default state. ::"
-msgstr ""
-
-#, fuzzy
-msgid "Adding default values for properties"
-msgstr "지역 변수나 속성을 접근:"
-
-msgid ""
-"To define default values for advanced exports, you need to override the "
-"``property_can_revert()`` and ``property_get_revert()`` methods."
-msgstr ""
-
-msgid ""
-"The ``property_can_revert()`` method takes the name of a property and must "
-"return ``true`` if the property can be reverted. This will enable the Revert "
-"button next to the property in the inspector."
-msgstr ""
-
-msgid ""
-"The ``property_get_revert()`` method takes the name of a property and must "
-"return the default value for that property."
-msgstr ""
-
-msgid "Adding script categories"
-msgstr "스크립트 카테고리 추가"
-
-#, fuzzy
-msgid ""
-"For better visual distinguishing of properties, a special script category "
-"can be embedded into the inspector to act as a separator. ``Script "
-"Variables`` is one example of a built-in category. ::"
-msgstr ""
-"속성을 시각적으로 더 잘 구별하기 위해 특수한 스크립트 카테고리를 인스펙터"
-"(Inspector)에 삽입해서 구분자 역할을 할 수 있습니다. ``스크립트 변수(Script "
-"Variables)``\\ 는 기본 제공 카테고리의 한 예시입니다."
-
-msgid "``name`` is the name of a category to be added to the inspector;"
-msgstr "``name``\\ 은 인스펙터(Inspector)에 추가할 카테고리의 이름입니다."
-
-msgid ""
-"Every following property added after the category definition will be a part "
-"of the category."
-msgstr ""
-
-msgid ""
-"``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
-"a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
-"it won't be actually used for the scripting logic, yet it must be defined "
-"anyway."
-msgstr ""
-"``PROPERTY_USAGE_CATEGORY``\\ 는 속성을 스크립트 카테고리로 구체적으로 처리해"
-"야 함을 명시하므로 실제로 스크립팅 로직에 사용되지 않는 ``TYPE_NIL`` 타입은 "
-"무시할 수 있지만 어쨌든 정의해야 합니다."
-
-msgid "Grouping properties"
-msgstr "속성 그루핑(Grouping)"
-
-#, fuzzy
-msgid "A list of properties with similar names can be grouped. ::"
-msgstr "유사한 이름을 가진 속성 목록을 그룹화할 수 있습니다."
-
-msgid ""
-"``name`` is the name of a group which is going to be displayed as "
-"collapsible list of properties;"
-msgstr "``name``\\ 은 축소 가능한 속성 목록으로 표시될 그룹의 이름입니다."
-
-#, fuzzy
-msgid ""
-"Every following property added after the group property with the prefix "
-"(which determined by ``hint_string``) will be shortened. For instance, "
-"``rotate_speed`` is going to be shortened to ``speed`` in this case. "
-"However, ``movement_speed`` won't be a part of the group and will not be "
-"shortened."
-msgstr ""
-"그룹 속성 뒤에 추가되는 모든 연속(successive) 속성은 ``hint_string`` 키를 통"
-"해 정의된 접두사에 따라 축소되고 단축됩니다. 예를 들어 위의 경우 "
-"``rotate_speed``\\ 는 ``speed``\\ 로 단축됩니다."
-
-msgid ""
-"``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
-"script group specifically, so the type ``TYPE_NIL`` can be ignored as it "
-"won't be actually used for the scripting logic, yet it must be defined "
-"anyway."
-msgstr ""
-"``PROPERTY_USAGE_GROUP``\\ 은 속성이 특히 스크립트 그룹으로 처리되어야 함을 "
-"나타냅니다. 따라서 ``TYPE_NIL`` 타입은 실제로 스크립팅 로직에 사용되지 않기 "
-"때문에 무시할 수 있지만 어쨌든 정의해야 합니다."
 
 msgid "Translation status"
 msgstr "번역 상태"

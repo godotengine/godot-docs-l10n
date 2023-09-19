@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Rider"
+msgstr "在Rider中:"
+
+#, fuzzy
+msgid ""
+"`Rider <https://www.jetbrains.com/rider/>`_ is a commercial `JetBrains "
+"<https://www.jetbrains.com/>`_ IDE for C# and C++ that uses the same "
+"solution system as Visual Studio."
+msgstr ""
+"`CLion <https://www.jetbrains.com/clion/>`_ 是一个商业化的 `JetBrains "
+"<https://www.jetbrains.com/>`_ C++ IDE。"
+
+msgid "Importing the project"
+msgstr "导入项目"
+
+msgid ""
+"If you already use Visual Studio as your main IDE, you can use the same "
+"solution file in Rider. Rider and Visual Studio use the same solution "
+"format, so you can switch between the two IDEs without rebuilding the "
+"solution file. Debug configurations need to be changed when going from one "
+"IDE to another."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Rider requires a solution file to work on a project. While Godot does not "
+"come with the solution file, it can be generated using SCons."
+msgstr ""
+"Visual Studio需要一个解决方案文件来处理一个项目. 虽然Godot没有附带解决方案文"
+"件, 但可以使用SCons生成."
+
+msgid ""
+"Navigate to the Godot root folder and open a Command Prompt or PowerShell "
+"window."
+msgstr "导航到Godot根文件夹, 打开命令提示符或PowerShell窗口."
+
+msgid "Copy, paste and run the next command to generate the solution."
+msgstr ""
+
+msgid ""
+"The ``vsproj`` parameter signals that you want Visual Studio solution "
+"generated. The ``dev_build`` parameter makes sure the debug symbols are "
+"included, allowing to e.g. step through code using breakpoints."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If you have Rider setup as your main IDE for .sln, you can now open the "
+"project by double-clicking on the ``godot.sln`` in the project root or by "
+"using the **Open** option inside of Rider."
+msgstr ""
+"现在您可以通过双击项目根目录下的 ``godot.sln`` 或使用Visual Studio中的 **打开"
+"项目或解决方案** 选项来打开项目."
+
+msgid ""
+"Rider could fail to build the first time you open the project. If that is "
+"the case, you can close Rider and open the solution in Visual Studio, build "
+"it, close Visual Studio, and open the solution in Rider again. You are now "
+"able to build the project from Rider."
+msgstr ""
+
+#, fuzzy
+msgid "Compiling and debugging the project"
+msgstr "调试项目"
+
+msgid ""
+"Rider comes with a built-in debugger that can be used to debug the Godot "
+"project. You can launch the debugger by pressing the **Debug** icon at the "
+"top of the screen, this only works for the Project manager, if you want to "
+"debug the editor, you need to configure the debugger first."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Click on the **Godot > Edit Configurations** option at the top of the screen."
+msgstr "点击 Label 节点将其选中，然后点击窗口底部的“创建”按钮。"
+
+msgid ""
+"Delete what is under **Program arguments** and paste the following line:"
+msgstr ""
+
+msgid ""
+"This will tell the executable to debug the specified project without using "
+"the project manager. Use the root path to the project folder, not ``project."
+"godot`` file path."
+msgstr ""
+
+msgid "Finally click on apply and ok to save the changes."
+msgstr ""
+
+msgid ""
+"You can now launch the debugger by pressing the **Debug** icon at the top of "
+"the screen and it will open the project to debug."
+msgstr ""
+
+msgid ""
+"Alternatively you can use **Run > Attach to Process** to attach the debugger "
+"to a running Godot instance."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻译状态"

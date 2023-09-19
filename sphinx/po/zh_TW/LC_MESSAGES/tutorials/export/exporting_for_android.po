@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,6 +35,11 @@ msgstr ""
 "匯出至 Android 的需求比為 Android 編譯 Godot 還來得少。下列為設定 SDK 與 "
 "Godot 所需的詳細步驟。"
 
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to "
+"Android. To use C# on Android, use Godot 3 instead."
+msgstr ""
+
 #, fuzzy
 msgid "Install OpenJDK 11"
 msgstr "安裝 OpenJDK"
@@ -53,8 +58,8 @@ msgstr "下載與安裝 Android SDK。"
 
 #, fuzzy
 msgid ""
-"You can install it using `Android Studio version 4.1 or later <https://"
-"developer.android.com/studio/>`__."
+"You can install the Android SDK using `Android Studio version 4.1 or later "
+"<https://developer.android.com/studio/>`__."
 msgstr ""
 "可以從 `Android Studio <https://developer.android.com/studio/>`__ 上下載並安"
 "裝 Android Studio。"
@@ -76,11 +81,11 @@ msgstr ""
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
 msgstr ""
 
-msgid "Android SDK Build-Tools version 30.0.3"
+msgid "Android SDK Build-Tools version 33.0.2"
 msgstr ""
 
 #, fuzzy
-msgid "Android SDK Platform 31"
+msgid "Android SDK Platform 33"
 msgstr "\\ Android SDK Platform"
 
 #, fuzzy
@@ -93,9 +98,10 @@ msgstr ""
 msgid "NDK version r23c (23.2.8568313)"
 msgstr ""
 
+#, fuzzy
 msgid ""
-"You can install it using the `command line tools <https://developer.android."
-"com/studio/#command-tools>`__."
+"Alternatively, you can install the Android SDK using the `command line tools "
+"<https://developer.android.com/studio/#command-tools>`__."
 msgstr ""
 "可以通過 `命令行工具 <https://developer.android.com/studio/#command-"
 "tools>`__ 來安裝。"
@@ -144,6 +150,12 @@ msgstr ""
 "記的位置，如 ``%USERPROFILE%\\.android\\`` 等，因為接下來的步驟會需要用到這個"
 "路徑。更多關於 ``keystore`` 使用的說明，請參考 `這篇 Q&A 文章 (英文) "
 "<https://godotengine.org/qa/21349/jdk-android-file-missing>`__ 。"
+
+msgid ""
+"It is important that the password is the same for the keystore and the key. "
+"This is a `known Android studio issue <https://developer.android.com/studio/"
+"known-issues#ki-key-keystore-warning>`__ that also affects Godot projects."
+msgstr ""
 
 msgid "Setting it up in Godot"
 msgstr "在 Godot 中設定"
@@ -316,14 +328,6 @@ msgstr ""
 "**Release Password：** 金鑰密碼，請注意，目前金鑰儲存區密碼與金鑰的密碼必須相"
 "同。"
 
-msgid ""
-"**Your export_presets.cfg file now contains sensitive information.** If you "
-"use a version control system, you should remove it from public repositories "
-"and add it to your ``.gitignore`` file or equivalent."
-msgstr ""
-"**現在 export_presets.cfg 檔案會包含機敏資訊。** 若使用版本控制系統，請確保將"
-"該檔案從公開儲存庫中移除，並將其加入 ``.gitignore`` 檔案或同等檔案中。"
-
 #, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
@@ -369,19 +373,67 @@ msgstr ""
 "還可以進一步通過編譯只有所需功能的 Android 匯出樣板來進一步最佳化大小。更多資"
 "訊請參考 :ref:`doc_optimizing_for_size` 。"
 
-#, fuzzy
-msgid "Troubleshooting rendering issues"
-msgstr "測試與回報問題"
+msgid "Environment variables"
+msgstr "環境變數"
 
 msgid ""
-"To improve out-of-the-box performance on mobile devices, Godot automatically "
-"uses low-end-friendly settings by default on both Android and iOS."
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
 msgstr ""
 
-msgid ""
-"This can cause rendering issues that do not occur when running the project "
-"on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more "
-"information."
+#, fuzzy
+msgid "Android export environment variables"
+msgstr "環境變數"
+
+#, fuzzy
+msgid "Export option"
+msgstr "匯出選項"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "環境變數"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
+
+msgid "Options / Keystore / Debug"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
+msgstr ""
+
+msgid "Options / Keystore / Debug User"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
+msgstr ""
+
+msgid "Options / Keystore / Debug Password"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
+msgstr ""
+
+msgid "Options / Keystore / Release"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
+msgstr ""
+
+msgid "Options / Keystore / Release User"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
+msgstr ""
+
+msgid "Options / Keystore / Release Password"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
 msgstr ""
 
 msgid "Translation status"

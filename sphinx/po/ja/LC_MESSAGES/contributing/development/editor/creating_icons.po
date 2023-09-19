@@ -1,0 +1,194 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Editor icons"
+msgstr "エディタアイコン"
+
+#, fuzzy
+msgid ""
+"When a new class is created and exposed to scripting, the editor's interface "
+"will display it with a default icon representing the base class it inherits "
+"from. In most cases, it's still recommended to create icons for new classes "
+"to improve the user experience."
+msgstr ""
+"新しいクラスが作成され、スクリプトに公開されると、エディタのインターフェイス"
+"は、継承元の基本クラスを表すデフォルトのアイコンでそれを表示します。しかし、"
+"ほとんどの場合、ユーザーエクスペリエンスを向上させるために、新しいクラスのア"
+"イコンを作成することをお勧めします。"
+
+msgid "Creating icons"
+msgstr "アイコンの作成"
+
+#, fuzzy
+msgid ""
+"To create new icons, you first need a vector graphics editor installed. For "
+"instance, you can use the open source `Inkscape <https://inkscape.org/>`_ "
+"editor."
+msgstr ""
+"新しいアイコンを作成するには、まずベクターグラフィックエディタをインストール"
+"する必要があります。たとえば、オープンソースの `Inkscape <https://inkscape."
+"org/>`_ エディタを使用できます。"
+
+#, fuzzy
+msgid "Clone the ``godot`` repository containing all the editor icons:"
+msgstr ""
+"すべての元のエディタアイコンを含む ``godot-design`` リポジトリのクローンを作"
+"成します:"
+
+#, fuzzy
+msgid ""
+"The icons must be created in a vector graphics editor in SVG format. There "
+"are two main requirements to follow:"
+msgstr ""
+"アイコンは、ベクターグラフィックエディタで ``svg`` 形式で作成する必要がありま"
+"す。デフォルトのアイコンプロパティがすでに設定されている ``engine/icons/"
+"inkscape_template.svg`` を使用できます。"
+
+msgid ""
+"Icons must be 16×16. In Inkscape, you can configure the document size in "
+"**File > Document Properties**."
+msgstr ""
+
+msgid ""
+"Lines should be snapped to pixels whenever possible to remain crisp at lower "
+"DPI. You can create a 16×16 grid in Inkscape to make this easier."
+msgstr ""
+
+msgid ""
+"Once you're satisfied with the icon's design, save the icon in the cloned "
+"repository's ``editor/icons`` folder. The icon name should match the "
+"intended name in a case-sensitive manner. For example, to create an icon for "
+"CPUParticles2D, name the file ``CPUParticles2D.svg``."
+msgstr ""
+
+msgid "Color conversion for light editor themes"
+msgstr ""
+
+msgid ""
+"If the user has configured their editor to use a light theme, Godot will "
+"convert the icon's colors based on a `set of predefined color mappings "
+"<https://github.com/godotengine/godot/blob/4.0.2-stable/editor/editor_themes."
+"cpp#L60-L160>`__. This is to ensure the icon always displays with a "
+"sufficient contrast rate. Try to restrict your icon's color palette to "
+"colors found in the list above. Otherwise, your icon may become difficult to "
+"read on a light background."
+msgstr ""
+
+msgid "Icon optimization"
+msgstr "アイコンの最適化"
+
+#, fuzzy
+msgid ""
+"Because the editor renders SVGs once at load time, they need to be small in "
+"size so they can be efficiently parsed. Editor icons must be first optimized "
+"before being added to the engine, to do so:"
+msgstr ""
+"エディタは実行時に ``svg`` をレンダリングするので、効率的に解析できるようにサ"
+"イズを小さくする必要があります。エディタアイコンは、エンジンに追加する前にま"
+"ず最適化をする必要があります:"
+
+msgid ""
+"Install `svgcleaner <https://github.com/RazrFalcon/svgcleaner>`__ by "
+"downloading a binary from its `Releases tab <https://github.com/RazrFalcon/"
+"svgcleaner/releases/latest>`__ and placing it into a location in your "
+"``PATH`` environment variable."
+msgstr ""
+
+msgid ""
+"Run the command below, replacing ``svg_source.svg`` with the path to your "
+"SVG file (which can be a relative or absolute path):"
+msgstr ""
+
+msgid ""
+"The ``--multipass`` switch improves compression, so make sure to include it. "
+"The optimized icon will be saved to ``svg_optimized.svg``. You can also "
+"change the destination parameter to any relative or absolute path you'd like."
+msgstr ""
+
+msgid ""
+"While this optimization step won't impact the icon's quality noticeably, it "
+"will still remove editor-only information such as guides. Therefore, it's "
+"recommended to keep the source SVG around if you need to make further "
+"changes."
+msgstr ""
+
+msgid "Integrating and sharing the icons"
+msgstr "アイコンの統合と共有"
+
+#, fuzzy
+msgid ""
+"If you're contributing to the engine itself, you should make a pull request "
+"to add optimized icons to ``editor/icons`` in the main repository. Recompile "
+"the engine to make it pick up new icons for classes."
+msgstr ""
+"エンジン自体に貢献している場合は、プルリクエストを行って、メインリポジトリの "
+"``godot/editor/icons`` に最適化されたアイコンを追加する必要があります。エンジ"
+"ンを再コンパイルして、クラスの新しいアイコンが選択されるようにします。マージ"
+"したら、アイコンの元のバージョンを ``godot-design`` リポジトリに追加して、他"
+"の貢献者がアイコンを改善できるようにすることを忘れないでください。"
+
+msgid ""
+"It's also possible to create custom icons within a module. If you're "
+"creating your own module and don't plan to integrate it with Godot, you "
+"don't need to make a separate pull request for your icons to be available "
+"within the editor as they can be self-contained."
+msgstr ""
+"モジュール内にカスタムアイコンを作成することもできます。独自のモジュールを作"
+"成していて、それをGodotと統合する予定がない場合は、アイコンが自己完結型である"
+"ため、エディタ内でアイコンを使用可能にするために別のプルリクエストを行う必要"
+"はありません。"
+
+msgid ""
+"For specific instructions on how to create module icons, refer to :ref:"
+"`Creating custom module icons<doc_custom_module_icons>`."
+msgstr ""
+"モジュールアイコンの作成方法に関する具体的な手順については、\\ :ref:`カスタム"
+"モジュールアイコンの作成 <doc_custom_module_icons>` を参照してください。"
+
+msgid "Troubleshooting"
+msgstr "トラブルシューティング"
+
+#, fuzzy
+msgid "If icons don't appear in the editor, make sure that:"
+msgstr "エディタにアイコンが表示されない場合は、次のことを確認してください:"
+
+msgid ""
+"Each icon's filename matches the naming requirement as described previously."
+msgstr "各アイコンのファイル名は、前述の命名要件に一致しているか。"
+
+#, fuzzy
+msgid ""
+"``modules/svg`` is enabled (it should be enabled by default). Without it, "
+"icons won't appear in the editor at all."
+msgstr ""
+"``modules/svg`` は有効になっているか(デフォルトでは有効になっているはずで"
+"す)。それなしでは、アイコンはエディタにまったく表示されません。"
+
+msgid "References"
+msgstr "参照"
+
+msgid ""
+"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
+"icons>`__"
+msgstr ""
+"\\ `editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
+"icons>`__"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

@@ -1,0 +1,137 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Variant class"
+msgstr "Variant 類別"
+
+msgid "About"
+msgstr "關於"
+
+msgid ""
+"Variant is the most important datatype of Godot, it's the most important "
+"class in the engine. A Variant takes up only 20 bytes and can store almost "
+"any engine datatype inside of it. Variants are rarely used to hold "
+"information for long periods of time, instead they are used mainly for "
+"communication, editing, serialization and generally moving data around."
+msgstr ""
+"Variant 是 Godot 中最重要的一個資料型別，同時也是引擎中最重要的類別。一個只"
+"佔 20 位元組的 Variant 可以用來儲存幾乎所有的引擎資料型別。Variant 很少用來長"
+"時間儲存資料，主要都是用來進行通訊、編輯、序列化以移動資料。"
+
+msgid "A Variant can:"
+msgstr "Variant 可以："
+
+msgid "Store almost any datatype"
+msgstr "保存幾乎所有資料型別"
+
+msgid ""
+"Perform operations between many variants (GDScript uses Variant as its "
+"atomic/native datatype)."
+msgstr ""
+"在多個 Variant 進行操作 (GDScript 使用 Variant 作為其不可部分完成與原生的資料"
+"型別)。"
+
+msgid "Be hashed, so it can be compared quickly to other variants"
+msgstr "可雜湊，這樣一來便能快速與其他 Variant 進行比對"
+
+msgid "Be used to convert safely between datatypes"
+msgstr "在各個資料型別間安全地轉換"
+
+msgid ""
+"Be used to abstract calling methods and their arguments (Godot exports all "
+"its functions through variants)"
+msgstr "用來抽象呼叫方法以及其引數 (Godot 以 Variant 來匯出其所有的方法)"
+
+msgid "Be used to defer calls or move data between threads."
+msgstr "用來延遲呼叫或在執行緒間移動資料。"
+
+msgid "Be serialized as binary and stored to disk, or transferred via network."
+msgstr "可序列化為二進位，並儲存於硬碟上或經由網路傳輸。"
+
+msgid ""
+"Be serialized to text and use it for printing values and editable settings."
+msgstr "可序列化為文字，並用來印出數值或作為可編輯的設定。"
+
+msgid "Work as an exported property, so the editor can edit it universally."
+msgstr "可當作匯出的屬性使用，這樣編輯器便能進行一般地編輯。"
+
+msgid "Be used for dictionaries, arrays, parsers, etc."
+msgstr "可用於字典、陣列、剖析器…等。"
+
+msgid ""
+"Basically, thanks to the Variant class, writing Godot itself was a much, "
+"much easier task, as it allows for highly dynamic constructs not common of C+"
+"+ with little effort. Become a friend of Variant today."
+msgstr ""
+"基本上，多虧有了 Variant，撰寫 Godot 本身便容易得多，因為使用 Variant 就能輕"
+"鬆地完成 C++ 中所不常見的高度動態結構。馬上就來熟悉熟悉 Variant 吧。"
+
+msgid "References:"
+msgstr "參考資料："
+
+#, fuzzy
+msgid ""
+"`core/variant/variant.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/variant.h>`__"
+msgstr ""
+"\\ `core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`__"
+
+msgid "Containers: Dictionary and Array"
+msgstr "容器：字典 (Dictionary) 與陣列 (Array)"
+
+msgid ""
+"Both are implemented using variants. A Dictionary can match any datatype "
+"used as key to any other datatype. An Array just holds an array of Variants. "
+"Of course, a Variant can also hold a Dictionary and an Array inside, making "
+"it even more flexible."
+msgstr ""
+"這兩種容器都是通過 Variant 來實作的。Dictionary 可以將所有作為索引鍵使用的資"
+"料型別與另一個資料型別做比對。Array 內則儲存的時 Variant 的陣列。當然，"
+"Variant 內也可以再儲存另一個 Dictionary 與 Array，來達到更佳的靈活性。"
+
+msgid ""
+"Modifications to a container will modify all references to it. A Mutex "
+"should be created to lock it if multi threaded access is desired."
+msgstr ""
+"修改容器也會修改所有該容器的參照。當有需要多執行緒存取時則應該新增 Mutex 來進"
+"行鎖定。"
+
+msgid ""
+"Copy-on-write (COW) mode support for containers was dropped with Godot 3.0."
+msgstr "自 Godot 3.0 起，已刪除容器的寫入時複製 (COW, Copy-on-Write) 模式。"
+
+#, fuzzy
+msgid ""
+"`core/variant/dictionary.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/dictionary.h>`__"
+msgstr ""
+"\\ `core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"dictionary.h>`__"
+
+#, fuzzy
+msgid ""
+"`core/variant/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant/array.h>`__"
+msgstr ""
+"\\ `core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`__"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

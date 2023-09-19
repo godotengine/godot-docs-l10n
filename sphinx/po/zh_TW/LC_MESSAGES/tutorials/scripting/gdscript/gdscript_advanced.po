@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,8 @@ msgid ""
 "that:"
 msgstr "GDScript 是動態型別語言。因此，GDScript 有下列優點："
 
-msgid "The language is simple and easy to learn."
+#, fuzzy
+msgid "The language is easy to get started with."
 msgstr "GDScript 簡單易學。"
 
 msgid "Most code can be written and changed quickly and without hassle."
@@ -57,8 +58,8 @@ msgstr "可以方便地撰寫或修改大部分程式碼。"
 msgid "Less code written means less errors & mistakes to fix."
 msgstr "寫更少的程式碼，代表需要修正的錯誤與失誤更少。"
 
-msgid "Easier to read the code (less clutter)."
-msgstr "更容易閱讀程式碼（混亂的部分更少）。"
+msgid "The code is easy to read (little clutter)."
+msgstr ""
 
 msgid "No compilation is required to test."
 msgstr "要測試時不需要編譯。"
@@ -66,7 +67,8 @@ msgstr "要測試時不需要編譯。"
 msgid "Runtime is tiny."
 msgstr "執行環境很小。"
 
-msgid "Duck-typing and polymorphism by nature."
+#, fuzzy
+msgid "It has duck-typing and polymorphism by nature."
 msgstr "具有鴨子型別與多型。"
 
 msgid "While the main disadvantages are:"
@@ -75,7 +77,8 @@ msgstr "而主要缺點如下："
 msgid "Less performance than statically typed languages."
 msgstr "與靜態型別相比效能較差。"
 
-msgid "More difficult to refactor (symbols can't be traced)"
+#, fuzzy
+msgid "More difficult to refactor (symbols can't be traced)."
 msgstr "比較難進行重構（無法追蹤符號）"
 
 msgid ""
@@ -91,11 +94,12 @@ msgid ""
 "run-time)."
 msgstr "程式碼自動補全的靈活讀比較低（某些變數型別只有在執行時才可知）。"
 
+#, fuzzy
 msgid ""
-"This, translated to reality, means that Godot+GDScript are a combination "
-"designed to create games quickly and efficiently. For games that are very "
-"computationally intensive and can't benefit from the engine built-in tools "
-"(such as the Vector types, Physics Engine, Math library, etc), the "
+"This, translated to reality, means that Godot used with GDScript is a "
+"combination designed to create games quickly and efficiently. For games that "
+"are very computationally intensive and can't benefit from the engine built-"
+"in tools (such as the Vector types, Physics Engine, Math library, etc), the "
 "possibility of using C++ is present too. This allows you to still create "
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
@@ -163,10 +167,10 @@ msgstr "GDScript："
 
 #, fuzzy
 msgid ""
-"In GDScript, only base types (int, float, String and PoolArray types) are "
+"In GDScript, only base types (int, float, string and the vector types) are "
 "passed by value to functions (value is copied). Everything else (instances, "
-"Arrays, Dictionaries, etc) is passed as reference. Classes that inherit :ref:"
-"`class_Reference` (the default if nothing is specified) will be freed when "
+"arrays, dictionaries, etc) is passed as reference. Classes that inherit :ref:"
+"`class_RefCounted` (the default if nothing is specified) will be freed when "
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
 msgstr ""
@@ -174,32 +178,6 @@ msgstr ""
 "給函式 (會複製其值)。其他的型別 (實體、陣列、字典…等) 則會以參照傳遞。繼承"
 "了 :ref:`class_Reference` 的類別 (若未指定則預設繼承) 則會在不再使用後被釋"
 "放，但也可以手動繼承 :ref:`class_Object` 來手動管理記憶體。"
-
-msgid ""
-"A value is **passed by value** when it is copied every time it's specified "
-"as a function parameter. One consequence of this is that the function cannot "
-"modify the parameter in a way that is visible from outside the function::"
-msgstr ""
-
-msgid ""
-"A value is **passed by reference** when it is *not* copied every time it's "
-"specified as a function parameter. This allows modifying a function "
-"parameter within a function body (and having the modified value accessible "
-"outside the function). The downside is that the data passed as a function "
-"parameter is no longer guaranteed to be immutable, which can cause difficult-"
-"to-track bugs if not done carefully::"
-msgstr ""
-
-msgid ""
-"Compared to passing by value, passing by reference can perform better when "
-"using large objects since copying large objects in memory can be slow."
-msgstr ""
-
-msgid ""
-"Additionally, in Godot, base types such as String are **immutable**. This "
-"means that modifying them will *always* return a copy of the original value, "
-"rather than modifying the value in-place."
-msgstr ""
 
 msgid "Arrays"
 msgstr "陣列"
@@ -256,9 +234,10 @@ msgid ""
 "little cost:"
 msgstr "字典也是動態的，索引鍵可以在任何時候新增或移除，而不需花費太多力氣："
 
+#, fuzzy
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
-"with dictionaries. Here's a simple battleship game example:"
+"with dictionaries. Here's a battleship game example:"
 msgstr ""
 "大多數情況下，我們可以通過字典來更輕鬆地實作二維陣列。下面這個例子演示了一個"
 "簡單的戰艦遊戲："
@@ -275,11 +254,16 @@ msgstr ""
 msgid "For & while"
 msgstr "For 與 While"
 
-msgid "Iterating in some statically typed languages can be quite complex:"
+#, fuzzy
+msgid ""
+"Iterating using the C-style for loop in C-derived languages can be quite "
+"complex:"
 msgstr "在某些靜態型別語言中迭代可能很困難："
 
-msgid "This is usually greatly simplified in dynamically typed languages:"
-msgstr "而在動態型別語言中，迭代便非常簡單："
+msgid ""
+"Because of this, GDScript makes the opinionated decision to have a for-in "
+"loop over iterables instead:"
+msgstr ""
 
 msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
@@ -292,13 +276,14 @@ msgstr "也可以迭代索引："
 msgid "The range() function can take 3 arguments:"
 msgstr "range() 函式有三個引數："
 
-msgid "Some statically typed programming language examples:"
-msgstr "這些靜態型別語言的例子："
+msgid "Some examples involving C-style for loops:"
+msgstr ""
 
 msgid "Translate to:"
 msgstr "可以轉換為："
 
-msgid "And backwards looping is done through a negative counter:"
+#, fuzzy
+msgid "And backwards looping done through a negative counter:"
 msgstr "而反向循環可以使用負數計數器來完成："
 
 msgid "Becomes:"

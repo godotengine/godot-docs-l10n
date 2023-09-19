@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -30,6 +30,18 @@ msgstr ""
 msgid ""
 "By default, macOS will run only applications that are signed and notarized."
 msgstr "默认情况下，macOS 只会运行签名并公证后的应用程序。"
+
+msgid ""
+"When running an app from the Downloads folder or when still in quarantine, "
+"Gatekeeper will perform *path randomization* as a security measure. This "
+"breaks access to relative paths from the app, which the app relies upon to "
+"work. To resolve this issue, move the app to the ``/Applications`` folder."
+msgstr ""
+
+msgid ""
+"In general, macOS apps should avoid relying on relative paths from the "
+"application folder."
+msgstr ""
 
 msgid ""
 "Depending on the way a macOS app is signed and distributed, the following "
@@ -115,7 +127,18 @@ msgstr "然后在确认对话框中单击 ``打开``\\ 。"
 msgid "Enter your password if you're prompted."
 msgstr "如出现提示就输入密码。"
 
-msgid "App is not-signed, executable is linker-signed"
+msgid ""
+"Another option is to disable Gatekeeper entirely. Note that this does "
+"decrease the security of your computer by allowing you to run any software "
+"you want. To do this, run ``sudo spctl --master-disable`` in the Terminal, "
+"enter your password, and then the **Anywhere** option will be available:"
+msgstr ""
+
+msgid "Note that Gatekeeper will re-enable itself when macOS updates."
+msgstr ""
+
+#, fuzzy
+msgid "App is not signed, executable is linker-signed"
 msgstr "App 未签名，可执行文件由链接器签名"
 
 msgid "App is built using official export templates, but it is not signed."
@@ -126,7 +149,9 @@ msgid ""
 "manually:"
 msgstr "要运行这个 App，你应该手动移除“隔离”（quarantine）扩展文件属性："
 
-msgid "Open ``Terminal.app`` (press ``Cmd + Space``, and enter ``Terminal``)."
+#, fuzzy
+msgid ""
+"Open ``Terminal.app`` (press :kbd:`Cmd + Space` and enter ``Terminal``)."
 msgstr ""
 "打开 ``Terminal.app``\\ （按 ``Cmd + 空格``\\ ，输入 ``Terminal``\\ ）。"
 
@@ -147,8 +172,9 @@ msgstr ""
 "执行命令 ``xattr -dr com.apple.quarantine \"未签名游戏.app\"``\\ （包括引号"
 "和“.app”扩展名）。"
 
+#, fuzzy
 msgid ""
-"Neither app nor executable is signed (relevant for Apple Silicon macs only)"
+"Neither app nor executable is signed (relevant for Apple Silicon Macs only)"
 msgstr "App 和可执行文件都没有签名（仅适用于 Apple Slilicon 的 mac）"
 
 msgid ""

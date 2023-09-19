@@ -1,0 +1,560 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "HTML5 shell class reference"
+msgstr "クラスリファレンスの書き方"
+
+msgid ""
+"Projects exported for the Web expose the :js:class:`Engine` class to the "
+"JavaScript environment, that allows fine control over the engine's start-up "
+"process."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This API is built in an asynchronous manner and requires basic understanding "
+"of `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/"
+"Using_promises>`__."
+msgstr ""
+"このAPIは、\\ `Promises <https://developer.mozilla.org/en-US/docs/Web/"
+"JavaScript/Guide/Using_promises>`__に基づいており、それに関する基本的な理解が"
+"必要です。"
+
+#, fuzzy
+msgid "Engine"
+msgstr "Godot Engine について"
+
+msgid ""
+"The ``Engine`` class provides methods for loading and starting exported "
+"projects on the Web. For default export settings, this is already part of "
+"the exported HTML page. To understand practical use of the ``Engine`` class, "
+"see :ref:`Custom HTML page for Web export <doc_customizing_html5_shell>`."
+msgstr ""
+
+#, fuzzy
+msgid "Static Methods"
+msgstr "静的関数"
+
+msgid "Promise"
+msgstr ""
+
+msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
+msgstr ""
+
+#, fuzzy
+msgid "void"
+msgstr "\\ **void**"
+
+msgid ":js:attr:`unload <Engine.unload>` **(** **)**"
+msgstr ""
+
+#, fuzzy
+msgid "boolean"
+msgstr "\\ bool"
+
+msgid ""
+":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
+"majorVersion=1 ]* **)**"
+msgstr ""
+
+msgid "Instance Methods"
+msgstr "インタンス メソッド"
+
+msgid ""
+":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
+msgstr ""
+
+msgid ""
+":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
+"ArrayBuffer file *[, string path ]* **)**"
+msgstr ""
+
+msgid ""
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
+msgstr ""
+
+msgid ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
+"override **)**"
+msgstr ""
+
+msgid ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
+"ArrayBuffer buffer **)**"
+msgstr ""
+
+msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
+msgstr ""
+
+#, fuzzy
+msgid "Create a new Engine instance with the given configuration."
+msgstr "その基本型のインスタンスを作成します。"
+
+msgid "Arguments"
+msgstr "引数"
+
+msgid "The initial config for this instance."
+msgstr ""
+
+#, fuzzy
+msgid "**Static Methods**"
+msgstr "静的関数"
+
+#, fuzzy
+msgid "Load the engine from the specified base path."
+msgstr "渡されたベースパスからエンジンをロードします。"
+
+msgid "Base path of the engine to load."
+msgstr "ロードするエンジンのベースパス。"
+
+msgid "Returns"
+msgstr "戻り値"
+
+#, fuzzy
+msgid "A Promise that resolves once the engine is loaded."
+msgstr "ファイルがプリロードされると得られるPormise。"
+
+#, fuzzy
+msgid "Return type"
+msgstr "リターン(Return)"
+
+msgid "Unload the engine to free memory."
+msgstr "エンジンをアンロードしてメモリを解放します。"
+
+#, fuzzy
+msgid ""
+"This method will be called automatically depending on the configuration. "
+"See :js:attr:`unloadAfterInit`."
+msgstr ""
+"これは、\\ :js:func:`engine.setUnloadAfterInit` を使用して明示的に無効にしな"
+"い限り、エンジンが開始されると自動的に呼び出されます。"
+
+msgid ""
+"Check whether WebGL is available. Optionally, specify a particular version "
+"of WebGL to check for."
+msgstr ""
+
+#, fuzzy
+msgid "The major WebGL version to check for."
+msgstr ""
+"WebGLのメジャーバージョンのチェック。\\ *WebGL 1.0* のデフォルトは1です。"
+
+#, fuzzy
+msgid "If the given major version of WebGL is available."
+msgstr ""
+"指定されたメジャーバージョンのWebGLが利用可能な場合は ``true``\\ 、そうでない"
+"場合は ``false``\\ 。"
+
+#, fuzzy
+msgid "**Instance Methods**"
+msgstr "インタンス メソッド"
+
+msgid ""
+"Initialize the engine instance. Optionally, pass the base path to the engine "
+"to load it, if it hasn't been loaded yet. See :js:meth:`Engine.load`."
+msgstr ""
+
+#, fuzzy
+msgid "A ``Promise`` that resolves once the engine is loaded and initialized."
+msgstr "エンジンがロードされ初期化されると得られるPromise。"
+
+#, fuzzy
+msgid ""
+"Load a file so it is available in the instance's file system once it runs. "
+"Must be called **before** starting the instance."
+msgstr ""
+"インスタンスを実行したら、ファイルシステムで使用できるようにファイルをロード"
+"します。インスタンスを開始する **前** に呼び出す必要があります。"
+
+msgid ""
+"If not provided, the ``path`` is derived from the URL of the loaded file."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The file to preload.  If a ``string`` the file will be loaded from that "
+"path.  If an ``ArrayBuffer`` or a view on one, the buffer will used as the "
+"content of the file."
+msgstr ""
+"タイプが文字列の場合、ファイルはそのパスからロードされます。 タイプが "
+"``ArrayBuffer`` またはそのビューである場合、バッファはファイルのコンテンツと"
+"して使用されます。"
+
+msgid "The file to preload."
+msgstr "ファイルのプリロード(事前読み込み)。"
+
+#, fuzzy
+msgid "If a ``string`` the file will be loaded from that path."
+msgstr "タイプが文字列の場合、ファイルはそのパスからロードされます。"
+
+#, fuzzy
+msgid ""
+"If an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
+"of the file."
+msgstr ""
+"タイプが ``ArrayBuffer`` またはそのビューである場合、バッファはファイルのコン"
+"テンツとして使用されます。"
+
+#, fuzzy
+msgid ""
+"Path by which the file will be accessible. Required, if ``file`` is not a "
+"string."
+msgstr ""
+"ファイルを使用できるパス。\\ ``file`` が文字列でない場合は必須です。渡されな"
+"い場合、パスはロードされたファイルのURLから派生します。"
+
+#, fuzzy
+msgid "A Promise that resolves once the file is loaded."
+msgstr "ファイルがプリロードされると得られるPormise。"
+
+#, fuzzy
+msgid ""
+"Start the engine instance using the given override configuration (if any). :"
+"js:meth:`startGame <Engine.prototype.startGame>` can be used in typical "
+"cases instead."
+msgstr ""
+"渡された文字列をコマンドライン引数として使用して、エンジンのインスタンスを開"
+"始します。これにより、エンジンの起動方法を細かく制御できますが、通常 "
+"``engine.start`` で始まる他のメソッドはより単純であり、代わりにそちらを使用す"
+"る必要があります。"
+
+msgid ""
+"This will initialize the instance if it is not initialized. For manual "
+"initialization, see :js:meth:`init <Engine.prototype.init>`. The engine must "
+"be loaded beforehand."
+msgstr ""
+
+msgid ""
+"Fails if a canvas cannot be found on the page, or not specified in the "
+"configuration."
+msgstr ""
+
+msgid "An optional configuration override."
+msgstr ""
+
+msgid "Promise that resolves once the engine started."
+msgstr "エンジンが起動すると得られるPromise。"
+
+msgid ""
+"Start the game instance using the given configuration override (if any)."
+msgstr ""
+
+msgid ""
+"This will initialize the instance if it is not initialized. For manual "
+"initialization, see :js:meth:`init <Engine.prototype.init>`."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This will load the engine if it is not loaded, and preload the main pck."
+msgstr ""
+"エンジンがまだロードされていない場合、渡された実行可能ファイル名のベースパス"
+"がエンジンのロードに使用されます。"
+
+msgid ""
+"This method expects the initial config (or the override) to have both the :"
+"js:attr:`executable` and :js:attr:`mainPack` properties set (normally done "
+"by the editor during export)."
+msgstr ""
+
+msgid "Promise that resolves once the game started."
+msgstr "ゲームが開始すると得られるPromise。"
+
+msgid ""
+"Create a file at the specified ``path`` with the passed as ``buffer`` in the "
+"instance's file system."
+msgstr ""
+
+msgid "The location where the file will be created."
+msgstr ""
+
+msgid "The content of the file."
+msgstr "ファイルの内容。"
+
+#, fuzzy
+msgid "Request that the current instance quit."
+msgstr "現在のクラスインスタンスを参照します。"
+
+msgid ""
+"This is akin the user pressing the close button in the window manager, and "
+"will have no effect if the engine has crashed, or is stuck in a loop."
+msgstr ""
+
+#, fuzzy
+msgid "Engine configuration"
+msgstr "構成の実行:"
+
+msgid ""
+"An object used to configure the Engine instance based on godot export "
+"options, and to override those in custom HTML templates if needed."
+msgstr ""
+
+msgid "Properties"
+msgstr "プロパティ"
+
+#, fuzzy
+msgid "type"
+msgstr "\\ ``type``"
+
+#, fuzzy
+msgid "name"
+msgstr "``name``"
+
+msgid ":js:attr:`unloadAfterInit`"
+msgstr ""
+
+msgid "HTMLCanvasElement"
+msgstr ""
+
+msgid ":js:attr:`canvas`"
+msgstr ""
+
+msgid "string"
+msgstr "\\ string"
+
+msgid ":js:attr:`executable`"
+msgstr ""
+
+msgid ":js:attr:`mainPack`"
+msgstr ""
+
+msgid ":js:attr:`locale`"
+msgstr ""
+
+#, fuzzy
+msgid "number"
+msgstr "メンバー"
+
+msgid ":js:attr:`canvasResizePolicy`"
+msgstr ""
+
+#, fuzzy
+msgid "Array.<string>"
+msgstr "\\ string"
+
+msgid ":js:attr:`args`"
+msgstr ""
+
+#, fuzzy
+msgid "function"
+msgstr "関数"
+
+msgid ":js:attr:`onExecute`"
+msgstr ""
+
+msgid ":js:attr:`onExit`"
+msgstr ""
+
+msgid ":js:attr:`onProgress`"
+msgstr ""
+
+msgid ":js:attr:`onPrint`"
+msgstr ""
+
+msgid ":js:attr:`onPrintError`"
+msgstr ""
+
+msgid ""
+"The Engine configuration object. This is just a typedef, create it like a "
+"regular object, e.g.:"
+msgstr ""
+
+msgid "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
+msgstr ""
+
+#, fuzzy
+msgid "**Property Descriptions**"
+msgstr "**説明**"
+
+#, fuzzy
+msgid ""
+"Whether the unload the engine automatically after the instance is "
+"initialized."
+msgstr ""
+"インスタンスの初期化後にエンジンを自動的にアンロードするかどうかを指定しま"
+"す。"
+
+msgid "value"
+msgstr "値"
+
+#, fuzzy
+msgid "``true``"
+msgstr "\\ ``value``"
+
+#, fuzzy
+msgid "The HTML DOM Canvas object to use."
+msgstr "使用するcanvas。"
+
+msgid ""
+"By default, the first canvas element in the document will be used is none is "
+"specified."
+msgstr ""
+
+#, fuzzy
+msgid "``null``"
+msgstr "null"
+
+msgid ""
+"The name of the WASM file without the extension. (Set by Godot Editor export "
+"process)."
+msgstr ""
+
+msgid "``\"\"``"
+msgstr ""
+
+msgid ""
+"An alternative name for the game pck to load. The executable name is used "
+"otherwise."
+msgstr ""
+
+msgid "Specify a language code to select the proper localization for the game."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The browser locale will be used if none is specified. See complete list of :"
+"ref:`supported locales <doc_locales>`."
+msgstr ":ref:`ロケール <doc_locales>` のリスト。"
+
+msgid ""
+"The canvas resize policy determines how the canvas should be resized by "
+"Godot."
+msgstr ""
+
+msgid ""
+"``0`` means Godot won't do any resizing. This is useful if you want to "
+"control the canvas size from javascript code in your template."
+msgstr ""
+
+msgid ""
+"``1`` means Godot will resize the canvas on start, and when changing window "
+"size via engine functions."
+msgstr ""
+
+msgid ""
+"``2`` means Godot will adapt the canvas size to match the whole browser "
+"window."
+msgstr ""
+
+msgid "``2``"
+msgstr ""
+
+#, fuzzy
+msgid "The arguments to be passed as command line arguments on startup."
+msgstr "カスタムのコマンドライン引数をパース。"
+
+msgid "See :ref:`command line tutorial <doc_command_line_tutorial>`."
+msgstr ""
+
+msgid ""
+"**Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add "
+"the ``--main-pack`` argument."
+msgstr ""
+
+#, fuzzy
+msgid "``[]``"
+msgstr "\\ ``int[]``"
+
+msgid "A callback function for handling Godot's ``OS.execute`` calls."
+msgstr ""
+
+msgid ""
+"This is for example used in the Web Editor template to switch between "
+"Project Manager and editor, and for running the game."
+msgstr ""
+
+msgid "The path that Godot's wants executed."
+msgstr ""
+
+msgid "The arguments of the \"command\" to execute."
+msgstr ""
+
+msgid "A callback function for being notified when the Godot instance quits."
+msgstr ""
+
+msgid ""
+"**Note**: This function will not be called if the engine crashes or become "
+"unresponsive."
+msgstr ""
+
+msgid "The status code returned by Godot on exit."
+msgstr ""
+
+#, fuzzy
+msgid "A callback function for displaying download progress."
+msgstr "ダウンロードの進行状況を表示するためのコールバックを設定します。"
+
+#, fuzzy
+msgid ""
+"The function is called once per frame while downloading files, so the usage "
+"of ``requestAnimationFrame()`` is not necessary."
+msgstr ""
+"使いやすさを目的として、コールバックはフレームごとに1回だけ呼び出されるの"
+"で、\\ ``requestAnimationFrame()`` を使用する必要はありません。"
+
+msgid ""
+"If the callback function receives a total amount of bytes as 0, this means "
+"that it is impossible to calculate. Possible reasons include:"
+msgstr ""
+
+msgid "Files are delivered with server-side chunked compression"
+msgstr "ファイルは、サーバー側のチャンク圧縮で配信されます"
+
+msgid "Files are delivered with server-side compression on Chromium"
+msgstr "ファイルはChromium上のサーバー側の圧縮で配信されます"
+
+msgid ""
+"Not all file downloads have started yet (usually on servers without multi-"
+"threading)"
+msgstr ""
+"すべてのファイルのダウンロードがまだ開始されていません(通常はマルチスレッドを"
+"使用しないサーバー)"
+
+msgid "The current amount of downloaded bytes so far."
+msgstr ""
+
+msgid "The total amount of bytes to be downloaded."
+msgstr ""
+
+msgid ""
+"A callback function for handling the standard output stream. This method "
+"should usually only be used in debug pages."
+msgstr ""
+
+msgid "By default, ``console.log()`` is used."
+msgstr "デフォルトでは ``console.log()`` が使用されます。"
+
+msgid "A variadic number of arguments to be printed."
+msgstr ""
+
+msgid ""
+"A callback function for handling the standard error stream. This method "
+"should usually only be used in debug pages."
+msgstr ""
+
+#, fuzzy
+msgid "By default, ``console.error()`` is used."
+msgstr "デフォルトでは ``console.log()`` が使用されます。"
+
+msgid "A variadic number of arguments to be printed as errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

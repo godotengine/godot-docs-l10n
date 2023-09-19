@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using multiple threads"
+msgstr "使用多线程"
+
+msgid "Threads"
+msgstr "线程"
+
+msgid ""
+"Threads allow simultaneous execution of code. It allows off-loading work "
+"from the main thread."
+msgstr "线程允许同时执行代码。它允许从主线程卸载工作。"
+
+msgid "Godot supports threads and provides many handy functions to use them."
+msgstr "Godot 支持线程，并提供了许多方便使用的功能。"
+
+msgid ""
+"If using other languages (C#, C++), it may be easier to use the threading "
+"classes they support."
+msgstr "如果使用其他语言（C#、C++），它们支持的线程类可能会更容易使用。"
+
+msgid ""
+"Before using a built-in class in a thread, read :ref:`doc_thread_safe_apis` "
+"first to check whether it can be safely used in a thread."
+msgstr ""
+"在线程中使用内置类之前，请先阅读 :ref:`doc_thread_safe_apis`\\ ，检查在线程中"
+"使用是否安全。"
+
+msgid "Creating a Thread"
+msgstr "创建线程"
+
+#, fuzzy
+msgid "To create a thread, use the following code:"
+msgstr "要启用接口, 请执行以下代码:"
+
+msgid ""
+"Your function will, then, run in a separate thread until it returns. Even if "
+"the function has returned already, the thread must collect it, so call :ref:"
+"`Thread.wait_to_finish()<class_Thread_method_wait_to_finish>`, which will "
+"wait until the thread is done (if not done yet), then properly dispose of it."
+msgstr ""
+"然后, 你的函数将在一个单独的线程中运行, 直到它返回. 即使函数已经返回, 线程也"
+"必须收集它, 所以调用 :ref:`Thread."
+"wait_to_finish()<class_Thread_method_wait_to_finish>` , 它将等待线程完成(如果"
+"还没有完成), 然后妥善处理它."
+
+msgid ""
+"Creating threads at run-time is slow on Windows and should be avoided to "
+"prevent stuttering. Semaphores, explained later on this page, should be used "
+"instead."
+msgstr ""
+
+msgid "Mutexes"
+msgstr "Mutex"
+
+msgid ""
+"Accessing objects or data from multiple threads is not always supported (if "
+"you do it, it will cause unexpected behaviors or crashes). Read the :ref:"
+"`doc_thread_safe_apis` documentation to understand which engine APIs support "
+"multiple thread access."
+msgstr ""
+"并不总是支持从多个线程访问对象或数据(如果你这样做, 会导致意外行为或崩溃). 请"
+"阅读 :ref:`doc_thread_safe_apis` 文档, 了解哪些引擎API支持多线程访问."
+
+msgid ""
+"When processing your own data or calling your own functions, as a rule, try "
+"to avoid accessing the same data directly from different threads. You may "
+"run into synchronization problems, as the data is not always updated between "
+"CPU cores when modified. Always use a :ref:`Mutex<class_Mutex>` when "
+"accessing a piece of data from different threads."
+msgstr ""
+"在处理自己的数据或调用自己的函数时, 通常情况下, 尽量避免从不同的线程直接访问"
+"相同的数据. 你可能会遇到同步问题, 因为数据被修改后,CPU核之间并不总是更新. 当"
+"从不同线程访问一个数据时, 一定要使用 :ref:`Mutex<class_Mutex>` ."
+
+msgid ""
+"When calling :ref:`Mutex.lock()<class_Mutex_method_lock>`, a thread ensures "
+"that all other threads will be blocked (put on suspended state) if they try "
+"to *lock* the same mutex. When the mutex is unlocked by calling :ref:`Mutex."
+"unlock()<class_Mutex_method_unlock>`, the other threads will be allowed to "
+"proceed with the lock (but only one at a time)."
+msgstr ""
+"当调用 :ref:`Mutex.lock()<class_Mutex_method_lock>` 时, 一个线程确保所有其他"
+"线程如果试图 *锁* 同一个mutex, 就会被阻塞(进入暂停状态). 当通过调用 :ref:"
+"`Mutex.unlock()<class_Mutex_method_unlock>` 来解锁该mutex时, 其他线程将被允许"
+"继续锁定(但每次只能锁定一个)."
+
+msgid "Here is an example of using a Mutex:"
+msgstr "下面是一个使用 Mutex 的例子:"
+
+msgid "Semaphores"
+msgstr "Semaphore"
+
+msgid ""
+"Sometimes you want your thread to work *\"on demand\"*. In other words, tell "
+"it when to work and let it suspend when it isn't doing anything. For this, :"
+"ref:`Semaphores<class_Semaphore>` are used. The function :ref:`Semaphore."
+"wait()<class_Semaphore_method_wait>` is used in the thread to suspend it "
+"until some data arrives."
+msgstr ""
+"有时你希望你的线程能“按需”工作。换句话说，告诉它什么时候工作，让它在不工作的"
+"时候暂停。为此，可以使用信号量 :ref:`Semaphore <class_Semaphore>`\\ 。线程中"
+"使用函数 :ref:`Semaphore.wait()<class_Semaphore_method_wait>` 来暂停它的工"
+"作，直到有数据到达。"
+
+msgid ""
+"The main thread, instead, uses :ref:`Semaphore."
+"post()<class_Semaphore_method_post>` to signal that data is ready to be "
+"processed:"
+msgstr ""
+"而主线程则使用 :ref:`Semaphore.post()<class_Semaphore_method_post>` 来表示数"
+"据已经准备好被处理:"
+
+msgid "Translation status"
+msgstr "翻译状态"

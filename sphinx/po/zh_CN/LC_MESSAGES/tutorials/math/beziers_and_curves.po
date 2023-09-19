@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,9 +160,10 @@ msgstr ""
 "有两个对象包含曲线 :ref:`Curve3D <class_Curve3D>` 和 :ref:`Curve2D "
 "<class_Curve2D>`\\ （分别代表 3D 和 2D）。"
 
+#, fuzzy
 msgid ""
 "They can contain several points, allowing for longer paths. It is also "
-"possible to set them to nodes: :ref:`Path <class_Path>` and :ref:`Path2D "
+"possible to set them to nodes: :ref:`Path3D <class_Path3D>` and :ref:`Path2D "
 "<class_Path2D>` (also for 3D and 2D respectively):"
 msgstr ""
 "它们可以包含几个点，允许更长的路径。也可以将它们设置为节点：\\ :ref:`Path "
@@ -176,8 +177,9 @@ msgstr "然而它们的使用方法可能不是很直观，下面是对贝塞尔
 msgid "Evaluating"
 msgstr "估值"
 
+#, fuzzy
 msgid ""
-"Just evaluating them may be an option, but in most cases it's not very "
+"Only evaluating them may be an option, but in most cases it's not very "
 "useful. The big drawback with Bezier curves is that if you traverse them at "
 "constant speed, from ``t = 0`` to ``t = 1``, the actual interpolation will "
 "*not* move at constant speed. The speed is also an interpolation between the "
@@ -190,7 +192,8 @@ msgstr ""
 "``p2``\\ 、\\ ``p3`` 之间距离插值出来的，无法使用简单的数学方法以恒定的速度通"
 "过曲线。"
 
-msgid "Let's do a simple example with the following pseudocode:"
+#, fuzzy
+msgid "Let's do an example with the following pseudocode:"
 msgstr "让我们用下面的伪代码举个简单的例子："
 
 msgid ""
@@ -253,11 +256,12 @@ msgid ""
 "was mentioned before regarding constant speed, this is also difficult."
 msgstr "最后曲线最常见的用例是遍历. 因为之前提到关于匀速的内容, 这也是困难的."
 
+#, fuzzy
 msgid ""
 "To make this easier, the curves need to be *baked* into equidistant points. "
 "This way, they can be approximated with regular interpolation (which can be "
-"improved further with a cubic option). To do this, just use the :ref:`Curve."
-"interpolate_baked()<class_Curve_method_interpolate_baked>` method together "
+"improved further with a cubic option). To do this, just use the :ref:"
+"`Curve3D.sample_baked()<class_Curve3D_method_sample_baked>` method together "
 "with :ref:`Curve2D."
 "get_baked_length()<class_Curve2D_method_get_baked_length>`. The first call "
 "to either of them will bake the curve internally."

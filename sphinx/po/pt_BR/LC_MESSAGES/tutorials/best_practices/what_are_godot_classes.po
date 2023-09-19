@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,11 +103,12 @@ msgstr ""
 "Anexar um :ref:`Script <class_Script>` ao seu objeto estende os métodos, "
 "propriedades e sinais disponíveis da ``ClassDB``."
 
+#, fuzzy
 msgid ""
 "Even scripts that don't use the ``extends`` keyword implicitly inherit from "
-"the engine's base :ref:`Reference <class_Reference>` class. As a result, you "
-"can instantiate scripts without the ``extends`` keyword from code. Since "
-"they extend ``Reference`` though, you cannot attach them to a :ref:`Node "
+"the engine's base :ref:`RefCounted <class_RefCounted>` class. As a result, "
+"you can instantiate scripts without the ``extends`` keyword from code. Since "
+"they extend ``RefCounted`` though, you cannot attach them to a :ref:`Node "
 "<class_Node>`."
 msgstr ""
 "Mesmo os scripts que não usam a palavra-chave ``extends`` herdam "
@@ -130,10 +131,11 @@ msgstr ""
 "reutilizáveis, instanciados e herdáveis. Criar uma cena é semelhante a ter "
 "um script que cria nós e os adiciona como filhos usando ``add_child()``."
 
+#, fuzzy
 msgid ""
 "We often pair a scene with a scripted root node that makes use of the "
-"scene's nodes. As such, the scene is often an extension of the script's "
-"declarative code."
+"scene's nodes. As such, the script extends the scene by adding behavior "
+"through imperative code."
 msgstr ""
 "Muitas vezes emparelhamos uma cena com um nó raiz com script que faz uso dos "
 "nós da cena. Como tal, a cena é muitas vezes uma extensão do código "
@@ -142,16 +144,20 @@ msgstr ""
 msgid "The content of a scene helps to define:"
 msgstr "O conteúdo de uma cena ajuda a definir:"
 
-msgid "What nodes are available to the script"
+#, fuzzy
+msgid "What nodes are available to the script."
 msgstr "Quais nós estão disponíveis para o script"
 
-msgid "How they are organized"
+#, fuzzy
+msgid "How they are organized."
 msgstr "Como eles são organizados"
 
-msgid "How they are initialized"
+#, fuzzy
+msgid "How they are initialized."
 msgstr "Como eles são inicializados"
 
-msgid "What signal connections they have with each other"
+#, fuzzy
+msgid "What signal connections they have with each other."
 msgstr "Que conexões de sinal eles têm uns com os outros"
 
 msgid ""

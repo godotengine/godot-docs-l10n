@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,13 +35,14 @@ msgstr ""
 "recursos aos alunos aos poucos. Godot tem um sistema integrado chamado "
 "\"perfis de funcionalidades\" para fazer isso."
 
+#, fuzzy
 msgid ""
 "With feature profiles, major features and nodes can be hidden from the "
 "editor. This only hides parts of the interface and does not actually remove "
 "support for these features, so scenes and scripts relying on those features "
 "will still work fine. This also means feature profiles are not an "
 "optimization technique. For information on how to optimize Godot see :ref:"
-"`doc_optimization`."
+"`doc_performance`."
 msgstr ""
 "Com perfis de recursos, os principais recursos e nós podem ser ocultados do "
 "editor. Isso apenas oculta partes da interface e não remove o suporte para "
@@ -65,10 +66,6 @@ msgstr ""
 "**Criar perfil** e dê um nome a ele. Você verá uma lista de todos os "
 "recursos no editor Godot."
 
-#, fuzzy
-msgid "..img:: img/configure_profile.png"
-msgstr "..img:: img/configure_profile.png"
-
 msgid ""
 "The first section allows major editor features to be removed, such as the 3D "
 "editor or scripting editor. Below the main features is every class and node "
@@ -82,10 +79,6 @@ msgstr ""
 "podem ser desabilitados. Clique em um nó e todas as suas propriedades e "
 "opções serão listadas na caixa **Extra Items**, podendo ser desabilitadas "
 "individualmente."
-
-#, fuzzy
-msgid "..img:: img/node_features.png"
-msgstr "..img:: img/node_features.png"
 
 msgid "Sharing a profile"
 msgstr "Compartilhando um perfil"

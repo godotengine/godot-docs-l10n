@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,8 +46,8 @@ msgstr ""
 
 msgid ""
 "Unlike 2D nodes, \"size\" is important with controls, as it helps to "
-"organize them in proper layouts. For this, the :ref:`Control.rect_size "
-"<class_Control_property_rect_size>` property is provided. Checking it during "
+"organize them in proper layouts. For this, the :ref:`Control.size "
+"<class_Control_property_size>` property is provided. Checking it during "
 "``_draw()`` is vital to ensure everything is kept in-bounds."
 msgstr ""
 
@@ -80,8 +80,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"To provide this callback, just override :ref:`Control.get_minimum_size() "
-"<class_Control_method_get_minimum_size>`, for example:"
+"To provide this callback, just override :ref:`Control._get_minimum_size() "
+"<class_Control_method__get_minimum_size>`, for example:"
 msgstr ""
 
 msgid "Alternatively, set it using a function:"

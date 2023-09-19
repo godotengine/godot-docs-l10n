@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,30 +88,39 @@ msgstr "**depth_draw_never**"
 msgid "Never draw depth."
 msgstr "Ne rend jamais la profondeur."
 
-msgid "**depth_draw_alpha_prepass**"
-msgstr "**depth_draw_alpha_prepass**"
+#, fuzzy
+msgid "**depth_prepass_alpha**"
+msgstr "**depth_draw_always**"
 
 msgid "Do opaque depth pre-pass for transparent geometry."
 msgstr ""
 "Fait un pré-passage de profondeur opaque pour les géométries transparentes."
 
-msgid "**depth_test_disable**"
+#, fuzzy
+msgid "**depth_test_disabled**"
 msgstr "**depth_test_disable**"
 
 msgid "Disable depth testing."
 msgstr "Désactive le test de profondeur."
 
-msgid "**cull_front**"
-msgstr "**cull_front**"
+msgid "**sss_mode_skin**"
+msgstr ""
 
-msgid "Cull front-faces."
-msgstr "Élimine les faces avant."
+#, fuzzy
+msgid "Subsurface Scattering mode for skin."
+msgstr "Transluminescence"
 
 msgid "**cull_back**"
 msgstr "**cull_back**"
 
 msgid "Cull back-faces (default)."
 msgstr "Élimine les faces arrière (par défaut)."
+
+msgid "**cull_front**"
+msgstr "**cull_front**"
+
+msgid "Cull front-faces."
+msgstr "Élimine les faces avant."
 
 msgid "**cull_disabled**"
 msgstr "**cull_disabled**"
@@ -127,6 +136,12 @@ msgstr ""
 "Le résultat est juste l'albedo. Pas d'éclairage/d'ombres n'a lieu dans le "
 "matériau."
 
+msgid "**wireframe**"
+msgstr ""
+
+msgid "Geometry draws using lines."
+msgstr ""
+
 msgid "**diffuse_lambert**"
 msgstr "**diffuse_lambert**"
 
@@ -138,12 +153,6 @@ msgstr "**diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr "Emballage Lambert (dépendant de la rugosité) pour la diffuse."
-
-msgid "**diffuse_oren_nayar**"
-msgstr "**diffuse_oren_nayar**"
-
-msgid "Oren Nayar for diffuse."
-msgstr "Oren Nayar pour la diffuse."
 
 msgid "**diffuse_burley**"
 msgstr "**diffuse_burley**"
@@ -209,12 +218,6 @@ msgstr "**ensure_correct_normals**"
 msgid "Use when non-uniform scale is applied to mesh."
 msgstr "À utiliser lorsqu'une échelle non uniforme est appliquée au maillage."
 
-msgid "**vertex_lighting**"
-msgstr "**vertex_lighting**"
-
-msgid "Use vertex-based lighting."
-msgstr "Utilise un éclairage basé sur les sommets."
-
 msgid "**shadows_disabled**"
 msgstr "**shadows_disabled**"
 
@@ -240,6 +243,41 @@ msgstr ""
 "soient opaques et les zones non ombrées soient transparentes. Cela peut "
 "servir à surimposer des ombres sur des images fournie par une caméra en "
 "réalité augmentée."
+
+msgid "**vertex_lighting**"
+msgstr "**vertex_lighting**"
+
+msgid "Use vertex-based lighting."
+msgstr "Utilise un éclairage basé sur les sommets."
+
+#, fuzzy
+msgid "**particle_trails**"
+msgstr "**Particules :**"
+
+msgid "Enables the trails when used on particles geometry."
+msgstr ""
+
+msgid "**alpha_to_coverage**"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Alpha antialiasing mode, see `here <https://github.com/godotengine/godot/"
+"pull/40364>`_ for more."
+msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
+
+msgid "**alpha_to_coverage_and_one**"
+msgstr ""
+
+#, fuzzy
+msgid "**fog_disabled**"
+msgstr "**cull_disabled**"
+
+msgid ""
+"Disable receiving depth-based or volumetric fog. Useful for blend_add "
+"materials like particles."
+msgstr ""
 
 msgid "Built-ins"
 msgstr "Variables intégrées"
@@ -273,6 +311,33 @@ msgstr "in float **TIME**"
 
 msgid "Global time, in seconds."
 msgstr "Temps global, en secondes."
+
+#, fuzzy
+msgid "in float **PI**"
+msgstr "in float **TIME**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **TAU**"
+msgstr "in float **DELTA**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **E**"
+msgstr "in float **TIME**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
 
 msgid "Vertex built-ins"
 msgstr "Variables intégrées de sommet"
@@ -355,40 +420,22 @@ msgstr "in vec2 **VIEWPORT_SIZE**"
 msgid "Size of viewport (in pixels)."
 msgstr "Taille de la fenêtre d'affichage (en pixels)."
 
-msgid "inout mat4 **WORLD_MATRIX**"
-msgstr "inout mat4 **WORLD_MATRIX**"
-
-msgid "Model space to world space transform."
-msgstr "Transformation de l'espace de modèle à l'espace global."
-
-msgid "in mat4 **INV_CAMERA_MATRIX**"
-msgstr "in mat4 **INV_CAMERA_MATRIX**"
+#, fuzzy
+msgid "in mat4 **VIEW_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
 
 msgid "World space to view space transform."
 msgstr "Transformation de l'espace global à l'espace de vue."
 
-msgid "inout mat4 **PROJECTION_MATRIX**"
-msgstr "inout mat4 **PROJECTION_MATRIX**"
-
-msgid "View space to clip space transform."
-msgstr "Transformation de l'espace de vue à l'espace de découpage."
-
-msgid "in mat4 **CAMERA_MATRIX**"
-msgstr "in mat4 **CAMERA_MATRIX**"
+#, fuzzy
+msgid "in mat4 **INV_VIEW_MATRIX**"
+msgstr "in mat4 **INV_CAMERA_MATRIX**"
 
 msgid "View space to world space transform."
 msgstr "Transformation de l'espace de vue à l'espace global."
 
-msgid "inout mat4 **MODELVIEW_MATRIX**"
-msgstr "inout mat4 **MODELVIEW_MATRIX**"
-
-msgid "Model space to view space transform (use if possible)."
-msgstr ""
-"Transformation de l'espace de modèle à l'espace de vue (à utiliser si "
-"possible)."
-
-msgid "inout mat4 **INV_PROJECTION_MATRIX**"
-msgstr "inout mat4 **INV_PROJECTION_MATRIX**"
+msgid "in mat4 **INV_PROJECTION_MATRIX**"
+msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 
 msgid "Clip space to view space transform."
 msgstr "Transformation de l'espace de découpage à l'espace de vue."
@@ -398,31 +445,87 @@ msgid "in vec3 **NODE_POSITION_WORLD**"
 msgstr "in vec2 **POINT_COORD**"
 
 #, fuzzy
-msgid "Node position, in world space."
-msgstr "Position de la souris en coordonnées de pixel."
+msgid "Node world space position."
+msgstr "Récupérer la position du joueur."
 
 #, fuzzy
 msgid "in vec3 **NODE_POSITION_VIEW**"
 msgstr "in vec3 **VIEW**"
 
 #, fuzzy
-msgid "Node position, in view space."
-msgstr "Vecteur Normal, dans l'espace de vue."
+msgid "Node view space position."
+msgstr "Récupérer la position du joueur."
 
 #, fuzzy
 msgid "in vec3 **CAMERA_POSITION_WORLD**"
 msgstr "in vec3 **ATTENUATION**"
 
-msgid "Camera position, in world space."
-msgstr ""
+#, fuzzy
+msgid "Camera world space position."
+msgstr "La position du panneau d'animation"
 
 #, fuzzy
 msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
 msgstr "in vec3 **ATTENUATION**"
 
+msgid "Camera world space direction."
+msgstr ""
+
+msgid "in bool **OUTPUT_IS_SRGB**"
+msgstr "in bool **OUTPUT_IS_SRGB**"
+
 #, fuzzy
-msgid "Camera direction, in world space."
-msgstr "Vecteur Normal, dans l'espace de vue."
+msgid ""
+"``true`` when output is in sRGB color space (this is ``true`` in the "
+"Compatibility renderer, ``false`` in Forward+ and Forward Mobile)."
+msgstr ""
+"``true`` lorsque les calculs ont lieu dans l'espace colorimétrique sRGB "
+"(``true`` dans GLES2, ``false`` dans GLES3)."
+
+msgid "in int **INSTANCE_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "Identifiant de l'instance pour l'instanciation."
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "in vec4 **INSTANCE_CUSTOM**"
+
+msgid "Instance custom data (for particles, mostly)."
+msgstr ""
+"Données personnalisées de l'instance (pour les particules, principalement)."
+
+#, fuzzy
+msgid "in int **VIEW_INDEX**"
+msgstr "in int **INDEX**"
+
+msgid ""
+"The view that we are rendering. ``VIEW_MONO_LEFT`` (``0``) for Mono (not "
+"multiview) or left eye, ``VIEW_RIGHT`` (``1``) for right eye."
+msgstr ""
+
+#, fuzzy
+msgid "in int **VIEW_MONO_LEFT**"
+msgstr "in int **INDEX**"
+
+msgid "Constant for Mono or left eye, always ``0``."
+msgstr ""
+
+#, fuzzy
+msgid "in int **VIEW_RIGHT**"
+msgstr "in int **INDEX**"
+
+msgid "Constant for right eye, always ``1``."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **EYE_OFFSET**"
+msgstr "in vec3 **VERTEX**"
+
+msgid ""
+"Position offset for the eye being rendered. Only applicable for multiview "
+"rendering."
+msgstr ""
 
 msgid "inout vec3 **VERTEX**"
 msgstr "inout vec3 **VERTEX**"
@@ -431,11 +534,11 @@ msgid "Vertex in local coordinates."
 msgstr "Sommet en coordonnées locales."
 
 #, fuzzy
-msgid "out vec4 **POSITION**"
-msgstr "out vec4  **POSITION**"
+msgid "in int **VERTEX_ID**"
+msgstr "in int **INSTANCE_ID**"
 
-msgid "If written to, overrides final vertex position."
-msgstr "Si réécrit, remplace la position finale du sommet."
+msgid "The index of the current vertex in the vertex buffer."
+msgstr ""
 
 msgid "inout vec3 **NORMAL**"
 msgstr "inout vec3 **NORMAL**"
@@ -455,11 +558,12 @@ msgstr "inout vec3 **BINORMAL**"
 msgid "Binormal in local coordinates."
 msgstr "Binormale en coordonnées locales."
 
-msgid "out float **ROUGHNESS**"
-msgstr "out float **ROUGHNESS**"
+#, fuzzy
+msgid "out vec4 **POSITION**"
+msgstr "out vec4  **POSITION**"
 
-msgid "Roughness for vertex lighting."
-msgstr "Rugosité pour l'éclairage du sommet."
+msgid "If written to, overrides final vertex position."
+msgstr "Si réécrit, remplace la position finale du sommet."
 
 msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
@@ -473,21 +577,17 @@ msgstr "inout vec2 **UV2**"
 msgid "UV secondary channel."
 msgstr "Canal UV secondaire."
 
-msgid "in bool **OUTPUT_IS_SRGB**"
-msgstr "in bool **OUTPUT_IS_SRGB**"
-
-msgid ""
-"``true`` when calculations happen in sRGB color space (``true`` in GLES2, "
-"``false`` in GLES3)."
-msgstr ""
-"``true`` lorsque les calculs ont lieu dans l'espace colorimétrique sRGB "
-"(``true`` dans GLES2, ``false`` dans GLES3)."
-
 msgid "inout vec4 **COLOR**"
 msgstr "inout vec4 **COLOR**"
 
 msgid "Color from vertices."
 msgstr "Couleur des sommets."
+
+msgid "out float **ROUGHNESS**"
+msgstr "out float **ROUGHNESS**"
+
+msgid "Roughness for vertex lighting."
+msgstr "Rugosité pour l'éclairage du sommet."
 
 msgid "inout float **POINT_SIZE**"
 msgstr "inout float **POINT_SIZE**"
@@ -495,25 +595,64 @@ msgstr "inout float **POINT_SIZE**"
 msgid "Point size for point rendering."
 msgstr "Taille des points pour le rendu en points."
 
-msgid "in int **INSTANCE_ID**"
-msgstr "in int **INSTANCE_ID**"
+msgid "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
 
-msgid "Instance ID for instancing."
-msgstr "Identifiant de l'instance pour l'instanciation."
-
-msgid "in vec4 **INSTANCE_CUSTOM**"
-msgstr "in vec4 **INSTANCE_CUSTOM**"
-
-msgid "Instance custom data (for particles, mostly)."
+msgid "Model space to view space transform (use if possible)."
 msgstr ""
-"Données personnalisées de l'instance (pour les particules, principalement)."
+"Transformation de l'espace de modèle à l'espace de vue (à utiliser si "
+"possible)."
+
+#, fuzzy
+msgid "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
+
+#, fuzzy
+msgid "inout mat4 **MODEL_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
+
+msgid "Model space to world space transform."
+msgstr "Transformation de l'espace de modèle à l'espace global."
+
+#, fuzzy
+msgid "inout mat3 **MODEL_NORMAL_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
+
+msgid "inout mat4 **PROJECTION_MATRIX**"
+msgstr "inout mat4 **PROJECTION_MATRIX**"
+
+msgid "View space to clip space transform."
+msgstr "Transformation de l'espace de vue à l'espace de découpage."
+
+#, fuzzy
+msgid "inout uvec4 **BONE_INDICES**"
+msgstr "inout vec4 **CUSTOM**"
+
+#, fuzzy
+msgid "inout vec4 **BONE_WEIGHTS**"
+msgstr "inout vec4 **LIGHT**"
+
+#, fuzzy
+msgid "in vec4 **CUSTOM0**"
+msgstr "inout vec4 **CUSTOM**"
+
+#, fuzzy
+msgid "in vec4 **CUSTOM1**"
+msgstr "inout vec4 **CUSTOM**"
+
+#, fuzzy
+msgid "in vec4 **CUSTOM2**"
+msgstr "inout vec4 **CUSTOM**"
+
+#, fuzzy
+msgid "in vec4 **CUSTOM3**"
+msgstr "inout vec4 **CUSTOM**"
 
 msgid ""
-"``MODELVIEW_MATRIX`` combines both the ``WORLD_MATRIX`` and "
-"``INV_CAMERA_MATRIX`` and is better suited when floating point issues may "
-"arise. For example, if the object is very far away from the world origin, "
-"you may run into floating point issues when using the seperated "
-"``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``."
+"``MODELVIEW_MATRIX`` combines both the ``MODEL_MATRIX`` and ``VIEW_MATRIX`` "
+"and is better suited when floating point issues may arise. For example, if "
+"the object is very far away from the world origin, you may run into floating "
+"point issues when using the separated ``MODEL_MATRIX`` and ``VIEW_MATRIX``."
 msgstr ""
 
 msgid "Fragment built-ins"
@@ -536,81 +675,27 @@ msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
 msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies  position in "
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
-"Coordonnées du centre du pixel dans l'espace d'écran. ``xy`` spécifie la "
-"position dans la fenêtre, ``z`` spécifie la profondeur du fragment si "
+"Coordonnées du centre du pixel dans l'espace de l'écran. ``xy`` indique la "
+"position dans la fenêtre, ``z`` indique la profondeur du fragment si "
 "``DEPTH`` n'est pas utilisé. L'origine est en bas à gauche."
-
-msgid "in mat4 **WORLD_MATRIX**"
-msgstr "dans mat4 **WORLD_MATRIX**"
-
-msgid "in mat4 **PROJECTION_MATRIX**"
-msgstr "in mat4 **PROJECTION_MATRIX**"
-
-msgid "in mat4 **INV_PROJECTION_MATRIX**"
-msgstr "in mat4 **INV_PROJECTION_MATRIX**"
-
-#, fuzzy
-msgid "Node world space position."
-msgstr "Récupérer la position du joueur."
-
-#, fuzzy
-msgid "Node view space position."
-msgstr "Récupérer la position du joueur."
-
-#, fuzzy
-msgid "Camera world space position."
-msgstr "La position du panneau d'animation"
-
-msgid "Camera world space direction."
-msgstr ""
-
-msgid "in vec3 **VERTEX**"
-msgstr "in vec3 **VERTEX**"
-
-msgid "Vertex that comes from vertex function (default, in view space)."
-msgstr ""
-"Vertex qui provient de la fonction vertex (par défaut, dans l'espace de vue)."
-
-msgid "in vec3 **VIEW**"
-msgstr "in vec3 **VIEW**"
-
-msgid "Vector from camera to fragment position (in view space)."
-msgstr "Vecteur de la caméra à la position du fragment (dans l'espace de vue)."
 
 msgid "in bool **FRONT_FACING**"
 msgstr "in bool **FRONT_FACING**"
 
-msgid "``true`` if current face is front face."
+#, fuzzy
+msgid "``true`` if current face if front face."
 msgstr "``true`` si la face actuelle est la face avant."
 
-msgid "Normal that comes from vertex function (default, in view space)."
-msgstr ""
-"Normale qui provient de la fonction de sommet (par défaut, dans l'espace de "
-"vue)."
+msgid "in vec3 **VIEW**"
+msgstr "in vec3 **VIEW**"
 
-msgid "Tangent that comes from vertex function."
-msgstr "Tangente qui provient de la fonction de sommet."
-
-msgid "Binormal that comes from vertex function."
-msgstr "Binormale qui provient de la fonction de sommet."
-
-msgid "out vec3 **NORMALMAP**"
-msgstr "out vec3 **NORMALMAP**"
-
-msgid "Set normal here if reading normal from a texture instead of NORMAL."
-msgstr ""
-"Réglez la normale ici si vous lisez la normale à partir d'une texture au "
-"lieu de NORMAL."
-
-msgid "out float **NORMALMAP_DEPTH**"
-msgstr "out float **NORMALMAP_DEPTH**"
-
-msgid "Depth from variable above. Defaults to 1.0."
-msgstr "Profondeur de la variable du dessus. Par défaut 1.0."
+#, fuzzy
+msgid "Normalized vector from fragment position to camera (in view space)."
+msgstr "Vecteur de la caméra à la position du fragment (dans l'espace de vue)."
 
 msgid "in vec2 **UV**"
 msgstr "in vec2 **UV**"
@@ -630,6 +715,105 @@ msgstr "in vec4 **COLOR**"
 msgid "COLOR that comes from vertex function."
 msgstr "COLOR qui provient de la fonction de sommet."
 
+msgid "in vec2 **POINT_COORD**"
+msgstr "in vec2 **POINT_COORD**"
+
+msgid "Point Coordinate for drawing points with POINT_SIZE."
+msgstr "Coordonnées de point pour dessiner des points avec POINT_SIZE."
+
+#, fuzzy
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "dans mat4 **WORLD_MATRIX**"
+
+#, fuzzy
+msgid "in mat3 **MODEL_NORMAL_MATRIX**"
+msgstr "in mat4 **CAMERA_MATRIX**"
+
+msgid "in mat4 **PROJECTION_MATRIX**"
+msgstr "in mat4 **PROJECTION_MATRIX**"
+
+#, fuzzy
+msgid "Node position, in world space."
+msgstr "Position de la souris en coordonnées de pixel."
+
+#, fuzzy
+msgid "Node position, in view space."
+msgstr "Vecteur Normal, dans l'espace de vue."
+
+msgid "Camera position, in world space."
+msgstr ""
+
+#, fuzzy
+msgid "Camera direction, in world space."
+msgstr "Vecteur Normal, dans l'espace de vue."
+
+msgid "in vec3 **VERTEX**"
+msgstr "in vec3 **VERTEX**"
+
+msgid "Vertex that comes from vertex function (default, in view space)."
+msgstr ""
+"Vertex qui provient de la fonction vertex (par défaut, dans l'espace de vue)."
+
+msgid "sampler2D **SCREEN_TEXTURE**"
+msgstr "sampler2D **SCREEN_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
+msgstr ""
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "in vec2 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for current pixel."
+msgstr "Coordonnées UV de l'écran pour le pixel actuel."
+
+msgid "sampler2D **DEPTH_TEXTURE**"
+msgstr "sampler2D **DEPTH_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_depth_texture`` instead."
+msgstr ""
+
+msgid "out float **DEPTH**"
+msgstr "out float **DEPTH**"
+
+msgid ""
+"Custom depth value (0..1). If ``DEPTH`` is being written to in any shader "
+"branch, then you are responsible for setting the ``DEPTH`` for **all** other "
+"branches. Otherwise, the graphics API will leave them uninitialized."
+msgstr ""
+"Valeur de profondeur personnalisée (0..1). Si ``DEPTH`` est écrit dans une "
+"branche de shader, alors vous êtes responsable de la mise en place de "
+"``DEPTH`` pour **toutes** les autres branches. Sinon, l'API graphique les "
+"laissera non initialisées."
+
+msgid "Normal that comes from vertex function (default, in view space)."
+msgstr ""
+"Normale qui provient de la fonction de sommet (par défaut, dans l'espace de "
+"vue)."
+
+msgid "Tangent that comes from vertex function."
+msgstr "Tangente qui provient de la fonction de sommet."
+
+msgid "Binormal that comes from vertex function."
+msgstr "Binormale qui provient de la fonction de sommet."
+
+#, fuzzy
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "out vec3 **NORMALMAP**"
+
+msgid "Set normal here if reading normal from a texture instead of NORMAL."
+msgstr ""
+"Réglez la normale ici si vous lisez la normale à partir d'une texture au "
+"lieu de NORMAL."
+
+#, fuzzy
+msgid "out float **NORMAL_MAP_DEPTH**"
+msgstr "out float **NORMALMAP_DEPTH**"
+
+msgid "Depth from variable above. Defaults to 1.0."
+msgstr "Profondeur de la variable du dessus. Par défaut 1.0."
+
 msgid "out vec3 **ALBEDO**"
 msgstr "out vec3 **ALBEDO**"
 
@@ -646,13 +830,26 @@ msgstr ""
 "Alpha (0..1). En cas d'écriture, le matériau passera dans le processus de "
 "transparence."
 
-msgid "out float **ALPHA_SCISSOR**"
+#, fuzzy
+msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "out float **ALPHA_SCISSOR**"
 
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr ""
 "En cas d'écriture, les valeurs inférieures à une certaine quantité d'alpha "
 "sont rejetées."
+
+#, fuzzy
+msgid "out float **ALPHA_HASH_SCALE**"
+msgstr "out float **ALPHA**"
+
+#, fuzzy
+msgid "out float **ALPHA_ANTIALIASING_EDGE**"
+msgstr "out float **ALPHA_SCISSOR**"
+
+#, fuzzy
+msgid "out vec2 **ALPHA_TEXTURE_COORDINATE**"
+msgstr "inout vec4 **LIGHT_COLOR**"
 
 msgid "out float **METALLIC**"
 msgstr "out float **METALLIC**"
@@ -727,21 +924,21 @@ msgstr ""
 "Force de la Transluminescence. Si elle est utilisée, la Transluminescence "
 "sera appliquée à l'objet."
 
-msgid "out vec3 **TRANSMISSION**"
-msgstr "out vec3 **TRANSMISSION**"
+#, fuzzy
+msgid "out vec4 **SSS_TRANSMITTANCE_COLOR**"
+msgstr "out vec4 **SHADOW_COLOR**"
 
-msgid ""
-"Transmission mask (default 0,0,0). Allows light to pass through object. Only "
-"applied if used."
-msgstr ""
-"Masque de transmission (par défaut 0,0,0). Permet à la lumière de traverser "
-"l'objet. Appliqué uniquement s'il est utilisé."
+#, fuzzy
+msgid "out float **SSS_TRANSMITTANCE_DEPTH**"
+msgstr "out float **SSS_STRENGTH**"
 
-msgid "out vec3 **EMISSION**"
-msgstr "out vec3 **EMISSION**"
+#, fuzzy
+msgid "out float **SSS_TRANSMITTANCE_BOOST**"
+msgstr "out float **SSS_STRENGTH**"
 
-msgid "Emission color (can go over 1,1,1 for HDR)."
-msgstr "Couleur d'émission (peut aller au-delà de 1,1,1 pour le HDR)."
+#, fuzzy
+msgid "inout vec3 **BACKLIGHT**"
+msgstr "inout vec4 **LIGHT**"
 
 msgid "out float **AO**"
 msgstr "out float **AO**"
@@ -758,50 +955,36 @@ msgid "How much AO affects lights (0..1; default 0)."
 msgstr ""
 "Combien l'occlusion ambiante affecte les lumières (0..1, par défaut 0)."
 
-msgid "sampler2D **SCREEN_TEXTURE**"
-msgstr "sampler2D **SCREEN_TEXTURE**"
+msgid "out vec3 **EMISSION**"
+msgstr "out vec3 **EMISSION**"
+
+msgid "Emission color (can go over 1,1,1 for HDR)."
+msgstr "Couleur d'émission (peut aller au-delà de 1,1,1 pour le HDR)."
+
+#, fuzzy
+msgid "out vec4 **FOG**"
+msgstr "inout vec4 **COLOR**"
+
+msgid "If written to, blends final pixel color with FOG.rgb based on FOG.a."
+msgstr ""
+
+#, fuzzy
+msgid "out vec4 **RADIANCE**"
+msgstr "out vec4  **POSITION**"
 
 msgid ""
-"Built-in Texture for reading from the screen. Mipmaps contain increasingly "
-"blurred copies."
+"If written to, blends environment map radiance with RADIANCE.rgb based on "
+"RADIANCE.a."
 msgstr ""
-"Texture intégrée pour lire depuis l'écran. Les mipmaps contiennent des "
-"copies de plus en plus floues."
 
-msgid "sampler2D **DEPTH_TEXTURE**"
-msgstr "sampler2D **DEPTH_TEXTURE**"
+#, fuzzy
+msgid "out vec4 **IRRADIANCE**"
+msgstr "out vec4  **POSITION**"
 
 msgid ""
-"Built-in Texture for reading depth from the screen. Must convert to linear "
-"using INV_PROJECTION."
+"If written to, blends environment map IRRADIANCE with IRRADIANCE.rgb based "
+"on IRRADIANCE.a."
 msgstr ""
-"Texture intégrée pour lire la profondeur depuis l'écran. Doit être converti "
-"en linéaire en utilisant INV_PROJECTION."
-
-msgid "out float **DEPTH**"
-msgstr "out float **DEPTH**"
-
-msgid ""
-"Custom depth value (0..1). If ``DEPTH`` is being written to in any shader "
-"branch, then you are responsible for setting the ``DEPTH`` for **all** other "
-"branches. Otherwise, the graphics API will leave them uninitialized."
-msgstr ""
-"Valeur de profondeur personnalisée (0..1). Si ``DEPTH`` est écrit dans une "
-"branche de shader, alors vous êtes responsable de la mise en place de "
-"``DEPTH`` pour **toutes** les autres branches. Sinon, l'API graphique les "
-"laissera non initialisées."
-
-msgid "in vec2 **SCREEN_UV**"
-msgstr "in vec2 **SCREEN_UV**"
-
-msgid "Screen UV coordinate for current pixel."
-msgstr "Coordonnées UV de l'écran pour le pixel actuel."
-
-msgid "in vec2 **POINT_COORD**"
-msgstr "in vec2 **POINT_COORD**"
-
-msgid "Point Coordinate for drawing points with POINT_SIZE."
-msgstr "Coordonnées de point pour dessiner des points avec POINT_SIZE."
 
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
@@ -862,15 +1045,6 @@ msgstr ""
 "la lumière à ``DIFFUSE_LIGHT`` en utilisant ``+=``, plutôt que de l'écraser."
 
 msgid ""
-"In GLES2, lights will always be added together even if you override "
-"``DIFFUSE_LIGHT`` using ``=``. This is due to lighting being computed in "
-"multiple passes (one for each light), unlike GLES3."
-msgstr ""
-"En GLES2, les lumières seront toujours additionnées, même si vous remplacez "
-"``DIFFUSE_LIGHT`` par ``=``. Cela est dû au fait que l'éclairage est calculé "
-"en plusieurs passes (une pour chaque lumière), contrairement à GLES3."
-
-msgid ""
 "The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
 "is enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** "
 "is enabled in the Project Settings. (It's enabled by default on mobile "
@@ -880,18 +1054,6 @@ msgstr ""
 "``vertex_lighting`` est activé, ou si **Rendering > Quality > Shading > "
 "Force Vertex Shading** est activé dans les paramètres du projet. (C'est "
 "activée par défaut sur les plateformes mobiles.)"
-
-msgid "Elapsed total time in seconds."
-msgstr "Temps total écoulé en secondes."
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
-msgstr ""
-"Coordonnées du centre du pixel dans l'espace de l'écran. ``xy`` indique la "
-"position dans la fenêtre, ``z`` indique la profondeur du fragment si "
-"``DEPTH`` n'est pas utilisé. L'origine est en bas à gauche."
 
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
@@ -908,7 +1070,34 @@ msgstr "in vec3 **LIGHT**"
 msgid "Light Vector, in view space."
 msgstr "Vecteur Lumière, dans l'espace de vue."
 
-msgid "in vec3 **ATTENUATION**"
+msgid "in vec3 **LIGHT_COLOR**"
+msgstr "in vec3 **LIGHT_COLOR**"
+
+msgid ""
+"Color of light multiplied by ``energy * PI``. The ``PI`` multiplication is "
+"present because physically-based lighting models include a division by "
+"``PI``."
+msgstr ""
+
+#, fuzzy
+msgid "in float **SPECULAR_AMOUNT**"
+msgstr "out float **SPECULAR**"
+
+msgid ""
+"2.0 * ``light_specular`` property for ``OmniLight3D`` and ``SpotLight3D``. "
+"1.0 for ``DirectionalLight3D``."
+msgstr ""
+
+#, fuzzy
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "in bool **AT_LIGHT_PASS**"
+
+#, fuzzy
+msgid "``true`` if this pass is a ``DirectionalLight3D``."
+msgstr "``true`` s'il s'agit d'une passe de calcul de la lumière."
+
+#, fuzzy
+msgid "in float **ATTENUATION**"
 msgstr "in vec3 **ATTENUATION**"
 
 msgid "Attenuation based on distance or shadow."
@@ -920,26 +1109,23 @@ msgstr "in vec3 **ALBEDO**"
 msgid "Base albedo."
 msgstr "Albédo de base."
 
-msgid "in vec3 **LIGHT_COLOR**"
-msgstr "in vec3 **LIGHT_COLOR**"
+#, fuzzy
+msgid "in vec3 **BACKLIGHT**"
+msgstr "in vec3 **LIGHT**"
 
-msgid ""
-"Color of light multiplied by ``energy * PI``. The ``PI`` multiplication is "
-"present because physically-based lighting models include a division by "
-"``PI``."
-msgstr ""
+#, fuzzy
+msgid "in float **METALLIC**"
+msgstr "out float **METALLIC**"
+
+#, fuzzy
+msgid "Metallic."
+msgstr "Métallique"
 
 msgid "in float **ROUGHNESS**"
 msgstr "in float **ROUGHNESS**"
 
 msgid "Roughness."
 msgstr "Rugosité."
-
-msgid "in vec3 **TRANSMISSION**"
-msgstr "in vec3 **TRANSMISSION**"
-
-msgid "Transmission mask from fragment function."
-msgstr "Masque de transmission de la fonction fragment."
 
 msgid "out vec3 **DIFFUSE_LIGHT**"
 msgstr "out vec3 **DIFFUSE_LIGHT**"
@@ -952,6 +1138,15 @@ msgstr "out vec3 **SPECULAR_LIGHT**"
 
 msgid "Specular light result."
 msgstr "Résultat de la lumière spéculaire."
+
+msgid ""
+"Transparent materials also cannot cast shadows or appear in "
+"``hint_screen_texture`` and ``hint_depth_texture`` uniforms. This in turn "
+"prevents those materials from appearing in screen-space reflections or "
+"refraction. :ref:`SDFGI <doc_using_sdfgi>` sharp reflections are not visible "
+"on transparent materials (only rough reflections are visible on transparent "
+"materials)."
+msgstr ""
 
 msgid "Translation status"
 msgstr "État de la traduction"

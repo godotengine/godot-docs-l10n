@@ -1,0 +1,979 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Standard Material 3D and ORM Material 3D"
+msgstr ""
+
+msgid "Introduction"
+msgstr "前言"
+
+#, fuzzy
+msgid ""
+"``StandardMaterial3D`` and ``ORMMaterial3D`` (Occlusion, Roughness, "
+"Metallic) are default 3D materials that aim to provide most of the features "
+"artists look for in a material, without the need for writing shader code. "
+"However, they can be converted to shader code if additional functionality is "
+"needed."
+msgstr ""
+"``SpatialMaterial`` 是一种默认的3D材质, 旨在提供艺术家在材质中寻找的大部分功"
+"能, 而无需编写着色器代码. 但是, 如果需要其他功能, 可以将其转换为着色器代码."
+
+#, fuzzy
+msgid "This tutorial explains the parameters present in both materials."
+msgstr "本教程会解释 ``SpatialMaterial`` 中出现的大多数参数。"
+
+#, fuzzy
+msgid ""
+"There are 4 ways to add these materials to an object. A material can be "
+"added in the *Material* property of the mesh. It can be added in the "
+"*Material* property of the node using the mesh (such as a MeshInstance3D "
+"node), the *Material Override* property of the node using the mesh, and the "
+"*Material Overlay*."
+msgstr ""
+"将 ``SpatialMaterial`` 添加到对象有 4 种方法。可以在网格的 *Material*\\ （材"
+"质）属性中添加。可以在使用该网格的节点（比如 MeshInstance 节点）的 "
+"*Material* 属性中添加，可以使用该网格的节点的 *Material Override*\\ （材质覆"
+"盖）属性中添加，也可以是 *Material Overlay*\\ （材质覆盖层）属性。"
+
+msgid ""
+"If you add a material to the mesh itself, every time that mesh is used it "
+"will have that material. If you add a material to the node using the mesh, "
+"the material will only be used by that node, it will also override the "
+"material property of the mesh. If a material is added in the *Material "
+"Override* property of the node, it will only be used by that node. It will "
+"also override the regular material property of the node and the material "
+"property of the mesh."
+msgstr ""
+"如果你把材质加到网格本身上, 每次那个网格被使用的时候都会有那个材质. 如果你用"
+"网格向一个节点添加材质, 那个材质仅会被那个节点使用, 也会覆盖网格的材质属性. "
+"如果材质被添加到了节点的 *Material Override(材质覆盖)* 属性上, 它仅会被那个节"
+"点使用, 它也会覆盖那个节点的常规材质属性和网格的材质属性."
+
+msgid ""
+"The *Material Overlay* property will render a material **over** the current "
+"one being used by the mesh. As an example, this can be used to put a "
+"transparent shield effect on a mesh."
+msgstr ""
+"*Material Overlay*\\ （材质覆盖层）属性会在该网格所使用的当前材质\\ **上方"
+"**\\ 再渲染一个材质。例如，可以用来在网格上放置半透明护盾效果。"
+
+#, fuzzy
+msgid "BaseMaterial 3D settings"
+msgstr "ParticlesMaterial(粒子材质)设置"
+
+msgid ""
+"StandardMaterial3D has many settings that determine the look of a material. "
+"All of these are under the BaseMaterial3D category"
+msgstr ""
+
+msgid ""
+"ORM materials are almost exactly the same with one difference. Instead of "
+"separate settings and textures for occlusion, roughness, and metallic, there "
+"is a single ORM texture. The different color channels of that texture are "
+"used for each parameter. Programs such as Substance Painter and Armor Paint "
+"will give you the option to export in this format, for these two programs "
+"it's with the export preset for unreal engine, which also uses ORM textures."
+msgstr ""
+
+#, fuzzy
+msgid "Transparency"
+msgstr "透明"
+
+msgid ""
+"In Godot, materials are not transparent unless specifically configured to "
+"be. The main reason behind this is that transparent materials are rendered "
+"using a different technique (sorted from back to front and rendered in "
+"order)."
+msgstr ""
+"在Godot中, 除非特别配置, 否则材质不透明. 这背后的主要原因是透明材质使用一种不"
+"同的渲染技术(从后到前排序并按顺序渲染)."
+
+msgid ""
+"This technique is less efficient (many state changes happen) and makes the "
+"materials unusable with many mid- and post-processing effects (such as SSAO, "
+"SSR, etc.) that require perfectly opaque geometry."
+msgstr ""
+"这种技术效率较低(会发生许多状态变化), 并且使得材质无法用于许多需要完全不透明"
+"几何形状的处理中/处理后效果(例如SSAO,SSR等)."
+
+msgid ""
+"For this reason, materials in Godot are assumed opaque unless specified "
+"otherwise. The main settings that enable transparency are:"
+msgstr ""
+"因此, 除非另有说明, 否则Godot中的材质是不透明的. 启用透明度的主要设置是:"
+
+#, fuzzy
+msgid "Transparency (this one)"
+msgstr "透明标记(这一个)"
+
+msgid "Blend mode set to other than \"Mix\""
+msgstr "混合模式设置为“Mix”（混合）以外的模式"
+
+msgid "Enabling distance or proximity fade"
+msgstr "启用距离或接近淡入淡出"
+
+#, fuzzy
+msgid ""
+"When transparency other than ``0`` or ``1`` is not needed, it's possible to "
+"set a threshold to prevent the object from rendering semi-transparent pixels "
+"using the alpha scissor option."
+msgstr ""
+"当不需要 ``0`` 或 ``1`` 以外的透明度时，可以设置阈值以防止对象渲染半透明像"
+"素。"
+
+#, fuzzy
+msgid ""
+"This renders the object via the opaque pipeline when opaque pre-pass is on, "
+"which is faster and allows it to use mid- and post-process effects such as "
+"SSAO, SSR, etc."
+msgstr ""
+"这通过不透明管道渲染对象, 这更快, 并允许它使用处理中/处理后效果, 如SSAO,SSR"
+"等."
+
+msgid "Blend Mode"
+msgstr "Blend Mode（混合模式）"
+
+msgid ""
+"Controls the blend mode for the material. Keep in mind that any mode other "
+"than *Mix* forces the object to go through the transparent pipeline."
+msgstr ""
+"控制材质的混合模式。请记住，\\ *Mix* 以外的任何模式都会强制对象通过透明管道。"
+
+msgid ""
+"**Mix:** Default blend mode, alpha controls how much the object is visible."
+msgstr "**Mix：**\\ （混合）默认混合模式，Alpha 控制对象可见的程度。"
+
+#, fuzzy
+msgid ""
+"**Add:** The final color of the object is added to the color of the screen, "
+"nice for flares or some fire-like effects."
+msgstr ""
+"**Add：**\\ （添加）对象会进行添加性的混合，非常适合耀斑或类似火焰的效果。"
+
+msgid ""
+"**Sub:** The final color of the object is subtracted from the color of the "
+"screen."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"**Mul:** The final color of the object is multiplied with the color of the "
+"screen."
+msgstr "**Front:** 当不可见时, 物体的正面被剔除."
+
+msgid "Cull Mode"
+msgstr "Cull Mode（剔除模式）"
+
+msgid ""
+"Determines which side of the object is not drawn when backfaces are rendered:"
+msgstr "确定渲染背面时不绘制对象的哪一侧:"
+
+msgid "**Back:** The back of the object is culled when not visible (default)."
+msgstr "**Back:** 当不可见时, 对象的背面被剔除(默认)."
+
+msgid "**Front:** The front of the object is culled when not visible."
+msgstr "**Front:** 当不可见时, 物体的正面被剔除."
+
+msgid ""
+"**Disabled:** Used for objects that are double-sided (no culling is "
+"performed)."
+msgstr "**Disabled:** 用于双面对象(不进行剔除)."
+
+msgid ""
+"By default, Blender has backface culling disabled on materials and will "
+"export materials to match how they render in Blender. This means that "
+"materials in Godot will have their cull mode set to **Disabled**. This can "
+"decrease performance since backfaces will be rendered, even when they are "
+"being culled by other faces. To resolve this, enable **Backface Culling** in "
+"Blender's Materials tab, then export the scene to glTF again."
+msgstr ""
+"默认情况下，Blender 在材质上禁用背面剔除，导出材质时匹配其在 Blender 中的渲染"
+"方式。这意味着 Godot 中的材质会将其剔除模式设置为 **Disabled**\\ 。这会降低性"
+"能，因为背面将被渲染，即使它们不可见。要解决此问题，请在 Blender 的材质选项卡"
+"中启用 **Backface Culling** ，然后再次将场景导出为 glTF。"
+
+msgid "Depth Draw Mode"
+msgstr "Depth Draw Mode(深度绘制模式)"
+
+msgid "Specifies when depth rendering must take place."
+msgstr "指定何时必须进行深度渲染."
+
+msgid "**Opaque Only (default):** Depth is only drawn for opaque objects."
+msgstr "**Opaque Only(仅限不透明, 默认):** 仅为不透明对象绘制深度."
+
+msgid ""
+"**Always:** Depth draw is drawn for both opaque and transparent objects."
+msgstr "**Always(始终):** 为不透明和透明对象深度绘制."
+
+#, fuzzy
+msgid ""
+"**Never:** No depth draw takes place (do not confuse this with the No Depth "
+"Test option below)."
+msgstr ""
+"**Never(从不):** 不进行深度抽取(不要将其与上面的No Depth Test(无深度测试)选项"
+"混淆)."
+
+msgid ""
+"**Depth Pre-Pass:** For transparent objects, an opaque pass is made first "
+"with the opaque parts, then transparency is drawn above. Use this option "
+"with transparent grass or tree foliage."
+msgstr ""
+"**Depth Pre-Pass(深度预通过):** 对于透明物体, 首先使用不透明部分进行不透明的"
+"通过, 然后在上方绘制透明度. 将此选项与透明草或树叶一起使用."
+
+msgid "No Depth Test"
+msgstr "No Depth Test(无深度测试)"
+
+msgid ""
+"In order for close objects to appear over far away objects, depth testing is "
+"performed. Disabling it has the result of objects appearing over (or under) "
+"everything else."
+msgstr ""
+"为了使近距离物体出现在远处的物体上, 进行深度测试. 禁用它会导致对象出现在其他"
+"所有内容之上(或之下)."
+
+msgid ""
+"Disabling this makes the most sense for drawing indicators in world space, "
+"and works very well with the *Render Priority* property of Material (see the "
+"bottom of this page)."
+msgstr ""
+"禁用此选项对于在世界空间中绘制指标最有意义, 并且与Material的 *Render "
+"Priority* 属性一起效果很好(请参阅本页底部)."
+
+msgid "Shading"
+msgstr "着色"
+
+#, fuzzy
+msgid "Shading mode"
+msgstr "着色"
+
+msgid ""
+"Godot has a more or less uniform cost per pixel thanks to depth pre-pass. "
+"All lighting calculations are made by running the lighting shader on every "
+"pixel."
+msgstr ""
+"由于depth pre-pass (深度预通过),Godot的每像素成本或多或少是一致的. 所有照明计"
+"算都是通过在每个像素上运行照明着色器来完成的."
+
+msgid ""
+"As these calculations are costly, performance can be brought down "
+"considerably in some corner cases such as drawing several layers of "
+"transparency (which is common in particle systems). Switching to per-vertex "
+"lighting may help in these cases."
+msgstr ""
+"由于这些计算成本很高, 因此在某些极端情况下可以大大降低性能, 例如绘制几层透明"
+"度(这在粒子系统中很常见). 在这些情况下, 切换到每顶点光照可能会有所帮助."
+
+msgid ""
+"Additionally, on low-end or mobile devices, switching to vertex lighting can "
+"considerably increase rendering performance."
+msgstr "此外, 在低端或移动设备上, 切换到顶点照明可以显着提高渲染性能."
+
+msgid ""
+"Keep in mind that when vertex lighting is enabled, only directional lighting "
+"can produce shadows (for performance reasons)."
+msgstr "请记住，启用顶点照明时，只有平行光会产生阴影（出于性能原因）。"
+
+#, fuzzy
+msgid ""
+"However, in some cases you might want to show just the albedo (color) and "
+"ignore the rest. To do this you can set the shading mode to unshaded"
+msgstr ""
+"但是，在某些情况下，您可能只想显示反照率（颜色）而忽略其余部分。切换此标志将"
+"删除所有阴影并显示纯净，未光照的颜色。"
+
+msgid "Diffuse Mode"
+msgstr "Diffuse Mode(漫反射模式)"
+
+msgid ""
+"Specifies the algorithm used by diffuse scattering of light when hitting the "
+"object. The default is *Burley*. Other modes are also available:"
+msgstr ""
+"指定击中对象时漫反射光散射所使用的算法. 默认为 *Burley*. 也有其他模式可用:"
+
+msgid ""
+"**Burley:** Default mode, the original Disney Principled PBS diffuse "
+"algorithm."
+msgstr "**Burley：**\\ 默认模式，原始的 Disney Principled PBS 漫反射算法。"
+
+msgid "**Lambert:** Is not affected by roughness."
+msgstr "**Lambert：**\\ 不受粗糙度的影响。"
+
+msgid ""
+"**Lambert Wrap:** Extends Lambert to cover more than 90 degrees when "
+"roughness increases. Works great for hair and simulating cheap subsurface "
+"scattering. This implementation is energy conserving."
+msgstr ""
+"**Lambert Wrap：**\\ 当粗糙度增加时，将 Lambert 拓展至覆盖 90 度以上。适用于"
+"头发和模拟廉价的次表面散射。这种实现是节能的。"
+
+msgid ""
+"**Oren Nayar:** This implementation aims to take microsurfacing into account "
+"(via roughness). Works well for clay-like materials and some types of cloth."
+msgstr ""
+"**Oren Nayar：**\\ 此实现旨在将微表面考虑在内（通过粗糙度）。适用于粘土类材质"
+"和某些类型的布料。"
+
+#, fuzzy
+msgid ""
+"**Toon:** Provides a hard cut for lighting, with smoothing affected by "
+"roughness. It is recommended you disable sky contribution from your "
+"environment's ambient light settings or disable ambient light in the "
+"StandardMaterial3D to achieve a better effect."
+msgstr ""
+"**Toon:** 为照明提供硬边缘, 光滑度受粗糙度的影响. 建议您从环境的环境光设置中"
+"禁用sky contribution(天空补偿), 或禁用空间材质中的环境光以获得更好的效果."
+
+msgid "Specular Mode"
+msgstr "Specular Mode（镜面反射模式）"
+
+msgid ""
+"Specifies how the specular blob will be rendered. The specular blob "
+"represents the shape of a light source reflected in the object."
+msgstr "指定镜面反射斑点的呈现方式。镜面反射斑点是在对象中反射的光源的形状。"
+
+#, fuzzy
+msgid "**SchlickGGX:** The most common blob used by PBR 3D engines nowadays."
+msgstr "** ShlickGGX:** 现在PBR 3D引擎使用的最常见的blob."
+
+msgid ""
+"**Blinn:** Common in previous-generation engines. Not worth using nowadays, "
+"but left here for the sake of compatibility."
+msgstr ""
+"**Blinn:** 在上一代引擎中很常见. 现在不值得使用, 但为了兼容性而留在这里."
+
+msgid "**Phong:** Same as above."
+msgstr "** Phong:** 同上."
+
+msgid ""
+"**Toon:** Creates a toon blob, which changes size depending on roughness."
+msgstr "**Toon:** 创建一个toon blob, 根据粗糙度改变大小."
+
+msgid "**Disabled:** Sometimes the blob gets in the way. Begone!"
+msgstr "**禁用:** 有时候blob很烦人. 消失吧！"
+
+msgid "Disable Ambient Light"
+msgstr "Disable Ambient Light（禁用环境光）"
+
+msgid ""
+"Makes the object not receive any kind of ambient lighting that would "
+"otherwise light it."
+msgstr "使物体不会接收任何会照亮它的环境光。"
+
+#, fuzzy
+msgid "Disable Fog"
+msgstr "Disabled（禁用）"
+
+msgid ""
+"Makes the object unaffected by depth-based or volumetric fog. This is useful "
+"for particles or other additively blended materials that would otherwise "
+"show the shape of the mesh (even in places where it would be invisible "
+"without the fog)."
+msgstr ""
+
+msgid "Vertex Color"
+msgstr "Vertex Color(顶点颜色)"
+
+msgid ""
+"This setting allows choosing what is done by default to vertex colors that "
+"come from your 3D modelling application. By default, they are ignored."
+msgstr ""
+"此设置允许选择默认情况下如何处理来自 3D 建模应用程序的顶点颜色, 默认情况下, "
+"它们会被忽略."
+
+msgid "Use as Albedo"
+msgstr "Use as Albedo（用作反照率）"
+
+msgid "Choosing this option means vertex color is used as albedo color."
+msgstr "选择此选项意味着用顶点颜色作为反射颜色."
+
+msgid "Is sRGB"
+msgstr "Is sRGB(是sRGB)"
+
+#, fuzzy
+msgid ""
+"Most 3D modeling software will likely export vertex colors as sRGB, so "
+"toggling this option on will help them look correct."
+msgstr ""
+"大多数3D DCC可能会将顶点颜色导出为sRGB, 因此切换此选项将有助于它们看起来正确."
+
+msgid "Albedo"
+msgstr "Albedo（反照率）"
+
+msgid ""
+"*Albedo* is the base color for the material, on which all the other settings "
+"operate. When set to *Unshaded*, this is the only color that is visible. In "
+"previous versions of Godot, this channel was named *Diffuse*. The change of "
+"name mainly happened because, in PBR (Physically Based Rendering), this "
+"color affects many more calculations than just the diffuse lighting path."
+msgstr ""
+"*Albedo* 是材质的基色, 所有其他设置都在其上运行. 设置为 *Unshaded* 时, 这是唯"
+"一可见的颜色. 在以前版本的Godot中, 这个通道被命名为 *Diffuse* . 名称的改变主"
+"要是因为在PBR(Physically Based Rendering, 基于物理渲染)中, 这种颜色影响的计算"
+"远不止漫射光照路径."
+
+msgid "Albedo color and texture can be used together as they are multiplied."
+msgstr "反照率颜色（Albedo Color）可以和纹理一起使用，因为它们会被相乘。"
+
+msgid ""
+"*Alpha channel* in albedo color and texture is also used for the object "
+"transparency. If you use a color or texture with *alpha channel*, make sure "
+"to either enable transparency or *alpha scissoring* for it to work."
+msgstr ""
+"反照率颜色和纹理的 *Alpha通道* 也用于对象透明度. 如果你使用带 *alpha通道* 的"
+"颜色或纹理, 请确保启用透明度或 *alpha scissoring* 以使其正常工作."
+
+msgid "Metallic"
+msgstr "Metallic(金属)"
+
+msgid ""
+"Godot uses a metallic model over competing models due to its simplicity. "
+"This parameter defines how reflective the material is. The more reflective, "
+"the less diffuse/ambient light affects the material and the more light is "
+"reflected. This model is called \"energy-conserving\"."
+msgstr ""
+"由于其简单性,Godot使用金属模型而不是别的模型. 此参数定义材质的反射程度. 反射"
+"越多, 漫射/环境光的影响越小, 反射的光越多. 这种模型被称为 \"能量守恒(energy-"
+"conserving)\"."
+
+msgid ""
+"The *Specular* parameter is a general amount for the reflectivity (unlike "
+"*Metallic*, this is not energy-conserving, so leave it at ``0.5`` and don't "
+"touch it unless you need to)."
+msgstr ""
+"*Specular* 参数是反射率的一般数量（与 *Metallic* 不同，能量不守恒，因此请将其"
+"保留为 ``0.5`` 并且除非你需要，否则不要碰它）。"
+
+msgid ""
+"The minimum internal reflectivity is ``0.04``, so it's impossible to make a "
+"material completely unreflective, just like in real life."
+msgstr ""
+"最小的内部反射率是 ``0.04``\\ ，因此不可能使材质完全不产生反射，就像在现实生"
+"活中一样。"
+
+msgid "Roughness"
+msgstr "Roughness(粗糙度)"
+
+msgid ""
+"*Roughness* affects the way reflection happens. A value of ``0`` makes it a "
+"perfect mirror while a value of ``1`` completely blurs the reflection "
+"(simulating natural microsurfacing). Most common types of materials can be "
+"achieved with the right combination of *Metallic* and *Roughness*."
+msgstr ""
+"*粗糙度* 会影响反射的发生方式. 值 ``0`` 使其成为完美的镜子, 而 ``1`` 的值完全"
+"模糊了反射(模拟自然微表面). 最常见的材质类型可以通过 *Metallic* 和 "
+"*Roughness* 的正确组合来实现."
+
+msgid "Emission"
+msgstr "Emission(发射)"
+
+#, fuzzy
+msgid ""
+"*Emission* specifies how much light is emitted by the material (keep in mind "
+"this does not include light surrounding geometry unless :ref:`VoxelGI "
+"<doc_using_voxel_gi>` or :ref:`SDFGI <doc_using_sdfgi>` are used). This "
+"value is added to the resulting final image and is not affected by other "
+"lighting in the scene."
+msgstr ""
+"*发射* 指定材质发出的光量(请记住, 这不包括环绕几何体的光, 除非使用 :ref:"
+"`doc_gi_probes` ). 此值将添加到生成的最终图像中, 并且不受场景中其他光照的影"
+"响."
+
+msgid "Normal map"
+msgstr "法线贴图"
+
+msgid ""
+"Normal mapping allows you to set a texture that represents finer shape "
+"detail. This does not modify geometry, only the incident angle for light. In "
+"Godot, only the red and green channels of normal maps are used for better "
+"compression and wider compatibility."
+msgstr ""
+"法线贴图允许你设置一个代表更精细形状细节的纹理, 这不会修改几何体, 只会修改光"
+"的入射角. 在Godot中, 为了更好的压缩和更广泛的兼容性, 只使用了法线贴图的红色和"
+"绿色通道."
+
+msgid ""
+"Godot requires the normal map to use the X+, Y+ and Z+ coordinates, this is "
+"known as OpenGL style. If you've imported a material made to be used with "
+"another engine it may be DirectX style, in which case the normal map needs "
+"to be converted so its Y axis is flipped."
+msgstr ""
+"Godot 需要法线贴图使用 X+、Y+、Z+ 坐标，即 OpenGL 风格。如果你导入了用于其他"
+"引擎的材质，它可能使用的是 DirectX 风格，那么就需要对法线贴图的进行转换，翻"
+"转 Y 轴。"
+
+msgid ""
+"More information about normal maps (including a coordinate order table for "
+"popular engines) can be found `here <http://wiki.polycount.com/wiki/"
+"Normal_Map_Technical_Details>`__."
+msgstr ""
+"可以在 `这里 <http://wiki.polycount.com/wiki/"
+"Normal_Map_Technical_Details>`__ 找到关于法线贴图(包括常见引擎的坐标顺序表)的"
+"更多信息."
+
+msgid "Rim"
+msgstr "Rim(边缘)"
+
+msgid ""
+"Some fabrics have small micro-fur that causes light to scatter around it. "
+"Godot emulates this with the *Rim* parameter. Unlike other rim lighting "
+"implementations, which just use the emission channel, this one actually "
+"takes light into account (no light means no rim). This makes the effect "
+"considerably more believable."
+msgstr ""
+"一些织物具有小的微毛, 导致光在其周围散射. Godot使用 *Rim* 参数模拟它. 与仅使"
+"用发射通道的其他边缘照明实施方式不同, 这实际上考虑了光(没有光意味着没有边"
+"缘). 这使得效果显著地更加可信."
+
+msgid ""
+"Rim size depends on roughness, and there is a special parameter to specify "
+"how it must be colored. If *Tint* is ``0``, the color of the light is used "
+"for the rim. If *Tint* is ``1``, then the albedo of the material is used. "
+"Using intermediate values generally works best."
+msgstr ""
+"边缘大小取决于粗糙度, 并且有一个特殊参数来指定它必须如何着色. 如果 *Tint* 为 "
+"``0``, 则灯光的颜色用于边缘. 如果 *Tint* 是 ``1``, 则使用材质的反照率. 使用中"
+"间的值通常效果最佳."
+
+msgid "Clearcoat"
+msgstr "Clearcoat（清漆）"
+
+msgid ""
+"The *Clearcoat* parameter is used to add a secondary pass of transparent "
+"coat to the material. This is common in car paint and toys. In practice, "
+"it's a smaller specular blob added on top of the existing material."
+msgstr ""
+"*Clearcoat* 参数用于为材质添加辅助的透明涂层。这在汽车油漆和玩具中很常见。在"
+"实践中，它是在现有材质之上添加的较小的镜面反射斑点。"
+
+msgid "Anisotropy"
+msgstr "Anisotropy（各向异性）"
+
+msgid ""
+"This changes the shape of the specular blob and aligns it to tangent space. "
+"Anisotropy is commonly used with hair, or to make materials such as brushed "
+"aluminum more realistic. It works especially well when combined with "
+"flowmaps."
+msgstr ""
+"这会更改镜面反射斑点的形状并将其与切线空间对齐。各向异性通常与头发一起使用，"
+"或使诸如拉丝铝之类的材质更加逼真。与流向贴图结合使用时效果特别好。"
+
+msgid "Ambient Occlusion"
+msgstr "Ambient Occlusion（环境光遮蔽）"
+
+msgid ""
+"It is possible to specify a baked ambient occlusion map. This map affects "
+"how much ambient light reaches each surface of the object (it does not "
+"affect direct light by default). While it is possible to use Screen-Space "
+"Ambient Occlusion (SSAO) to generate ambient occlusion, nothing beats the "
+"quality of a well-baked AO map. It is recommended to bake ambient occlusion "
+"whenever possible."
+msgstr ""
+"可以指定烘焙的环境遮挡贴图. 此贴图会影响有多少环境光到达物体每个表面(默认情况"
+"下它不会影响直接光). 虽然可以使用屏幕空间环境遮挡(Screen-Space Ambient "
+"Occlusion, SSAO)来生成环境遮挡, 但没有什么能比良好烘焙的AO贴图的质量更好. 建"
+"议尽可能烘焙环境遮挡."
+
+#, fuzzy
+msgid "Height"
+msgstr "灯光"
+
+msgid ""
+"Setting a depth map on a material produces a ray-marched search to emulate "
+"the proper displacement of cavities along the view direction. This is not "
+"real added geometry, but an illusion of depth. It may not work for complex "
+"objects, but it produces a realistic depth effect for textures. For best "
+"results, *Depth* should be used together with normal mapping."
+msgstr ""
+"在材质上设置深度贴图会做一个ray-marching搜索, 以模拟沿视图方向的空穴的正确位"
+"移. 这不是真正增加的几何, 而是一种深度的幻觉. 它可能不适用于复杂的对象, 但它"
+"会为纹理产生逼真的深度效果. 为获得最佳效果,*Depth* 应与法线贴图一起使用."
+
+msgid "Subsurface Scattering"
+msgstr "Subsurface Scattering（次表面散射）"
+
+msgid ""
+"This effect emulates light that penetrates an object's surface, is "
+"scattered, and then comes out. It is useful to create realistic skin, "
+"marble, colored liquids, etc."
+msgstr ""
+"此效果模拟穿透物体表面, 散射然后散出的光. 创造逼真的皮肤, 大理石, 有色液体等"
+"有用."
+
+#, fuzzy
+msgid "Back Lighting"
+msgstr "烘焙照明"
+
+msgid ""
+"This controls how much light from the lit side (visible to light) is "
+"transferred to the dark side (opposite from the light). This works well for "
+"thin objects such as plant leaves, grass, human ears, etc."
+msgstr ""
+"这可以控制有多少光从被点亮的一侧(正对灯光)传输到暗侧(背对灯光). 这适用于植物"
+"叶子, 草, 人耳等薄物体."
+
+msgid "Refraction"
+msgstr "Refraction(折射)"
+
+msgid ""
+"When refraction is enabled, it supersedes alpha blending, and Godot attempts "
+"to fetch information from behind the object being rendered instead. This "
+"allows distorting the transparency in a way similar to refraction in real "
+"life."
+msgstr ""
+"当启用折射时, 它会取代alpha混合, 而Godot会尝试从正在渲染的对象后面获取信息. "
+"这允许以类似于现实生活中的折射的方式扭曲透明度."
+
+msgid ""
+"Remember to use a transparent albedo texture (or reduce the albedo color's "
+"alpha channel) to make refraction visible, as refraction relies on "
+"transparency to have a visible effect."
+msgstr ""
+
+msgid ""
+"A normal map can optionally be specified in the **Refraction Texture** "
+"property to allow distorting the refraction's direction on a per-pixel basis."
+msgstr ""
+
+msgid ""
+"Refraction is implemented as a screen-space effect and forces the material "
+"to be transparent. This makes the effect relatively fast, but this results "
+"in some limitations:"
+msgstr ""
+
+msgid ""
+":ref:`Transparency sorting "
+"<doc_3d_rendering_limitations_transparency_sorting>` issues may occur."
+msgstr ""
+
+msgid ""
+"The refractive material cannot refract onto itself, or onto other "
+"transparent materials. A refractive material behind another transparent "
+"material will be invisible."
+msgstr ""
+
+msgid ""
+"Off-screen objects cannot appear in the refraction. This is most noticeable "
+"with high refraction strength values."
+msgstr ""
+
+msgid ""
+"Opaque materials in front of the refractive material will appear to have "
+"\"refracted\" edges, even though they shouldn't."
+msgstr ""
+
+msgid "Detail"
+msgstr "Detail(细节)"
+
+msgid ""
+"Godot allows using secondary albedo and normal maps to generate a detail "
+"texture, which can be blended in many ways. By combining this with secondary "
+"UV or triplanar modes, many interesting textures can be achieved."
+msgstr ""
+"Godot允许使用辅助反射和法线贴图生成细节纹理, 可以通过多种方式进行混合. 通过将"
+"其与二级UV或三平面模式相结合, 可以实现许多有趣的纹理."
+
+msgid "There are several settings that control how detail is used."
+msgstr "有几种设置可以控制细节的使用方式."
+
+msgid ""
+"Mask: The detail mask is a black and white image used to control where the "
+"blending takes place on a texture. White is for the detail textures, Black "
+"is for the regular material textures, different shades of gray are for "
+"partial blending of the material textures and detail textures."
+msgstr ""
+"Mask(遮罩): 细节遮罩是一个黑白图像, 用来控制纹理的混合位置. 白色为细节纹理, "
+"黑色为常规材质纹理, 不同深浅的灰色用于材质纹理和细节纹理的部分混合."
+
+msgid ""
+"Blend Mode: These four modes control how the textures are blended together."
+msgstr "混合模式: 有四种模式控制纹理的混合方式."
+
+msgid ""
+"Mix: Combines pixel values of both textures. At black, only show the "
+"material texture, at white, only show the detail texture. Values of gray "
+"create a smooth blend between the two."
+msgstr ""
+"融合: 合并两个纹理的像素值. 黑色时, 仅显示材质纹理；白色时, 仅显示细节纹理. "
+"灰色的值在两者之间创建一个平滑的混合."
+
+msgid ""
+"Add: Adds pixel values of one Texture with the other. Unlike mix mode both "
+"textures are completely mixed at white parts of a mask and not at gray "
+"parts. The original texture is mostly unchanged at black"
+msgstr ""
+"相加: 将一个纹理与另一个纹理的像素值相加. 与融合模式不同的是, 两个纹理在蒙板"
+"的白色部分而不是灰色部分完全混合. 原始纹理在黑色部分基本没有变化"
+
+msgid ""
+"Sub: Subtracts pixel values of one texture with the other. The second "
+"texture is completely subtracted at white parts of a mask with only a little "
+"subtraction in black parts, gray parts being different levels of subtraction "
+"based on the exact texture."
+msgstr ""
+"相减: 将一个纹理的像素值与另一个纹理的像素值相减. 第二种纹理在蒙版的白色部分"
+"被完全减去, 在黑色部分只被减去一点, 灰色部分根据具体实际纹理减去不同的程度."
+
+msgid ""
+"Mul: Multiplies the RGB channel numbers for each pixel from the top texture "
+"with the values for the corresponding pixel from the bottom texture."
+msgstr "相乘: 将上方纹理中每个像素的 RGB 通道数与下方纹理中相应像素的值相乘."
+
+msgid ""
+"Albedo: This is where you put an albedo texture you want to blend. If "
+"nothing is in this slot it will be interpreted as white by default."
+msgstr ""
+"Albedo: 在此处放置要混合的反射纹理. 如果此插槽中没有任何内容, 则默认情况下将"
+"其解释为纯白."
+
+msgid ""
+"Normal: This is where you put a normal texture you want to blend. If nothing "
+"is in this slot it will be interpreted as a flat normal map. This can still "
+"be used even if the material does not have normal map enabled."
+msgstr ""
+"法线: 在此处放置需要混合的法线纹理. 如果这个槽中没有任何东西, 它将被解释为一"
+"个平坦的法线贴图. 即使材质未启用法线贴图也可以使用这个槽."
+
+msgid "UV1 and UV2"
+msgstr "UV1和UV2"
+
+msgid ""
+"Godot supports two UV channels per material. Secondary UV is often useful "
+"for ambient occlusion or emission (baked light). UVs can be scaled and "
+"offset, which is useful when using repeating textures."
+msgstr ""
+"Godot每种材质支持两个UV通道. 二级UV通常可用于环境遮挡或发射(烘焙的光照). UV可"
+"以缩放和偏移, 这在使用重复纹理时很有用."
+
+msgid "Triplanar Mapping"
+msgstr "Triplanar Mapping(三平面映射)"
+
+msgid ""
+"Triplanar mapping is supported for both UV1 and UV2. This is an alternative "
+"way to obtain texture coordinates, sometimes called \"Autotexture\". "
+"Textures are sampled in X, Y and Z and blended by the normal. Triplanar "
+"mapping can be performed in either world space or object space."
+msgstr ""
+"UV1和UV2都支持三平面映射. 这是获得纹理坐标的另一种方法, 有时称为 \"自动纹理"
+"\". 纹理在X,Y和Z中采样, 并由法线混合. 可以在世界空间或对象空间中执行三平面映"
+"射."
+
+msgid ""
+"In the image below, you can see how all primitives share the same material "
+"with world triplanar, so the brick texture continues smoothly between them."
+msgstr ""
+"在下图中，你可以看到所有图元如何与世界三平面共享相同的材质，因此砖纹理在它们"
+"之间平滑地继续。"
+
+msgid "World Triplanar"
+msgstr "World Triplanar(世界三平面)"
+
+#, fuzzy
+msgid ""
+"When using triplanar mapping, it is computed in object local space. This "
+"option makes it use world space instead."
+msgstr ""
+"使用三平面映射时(见下文, 在UV1和UV2设置中), 在对象局部空间中计算三平面. 此选"
+"项使triplanar在世界空间中工作."
+
+#, fuzzy
+msgid "Sampling"
+msgstr "重采样"
+
+msgid "Filter"
+msgstr "过滤器"
+
+msgid ""
+"The filtering method for the textures used by the material. See :ref:`this "
+"page<class_BaseMaterial3D_property_texture_filter>` for a full list of "
+"options and their description."
+msgstr ""
+
+msgid "Repeat"
+msgstr "重复"
+
+msgid ""
+"if the textures used by the material repeat, and how they repeat. See :ref:"
+"`this page<class_BaseMaterial3D_property_texture_repeat>` for a full list of "
+"options and their description."
+msgstr ""
+
+msgid "Shadows"
+msgstr "阴影"
+
+msgid "Do Not Receive Shadows"
+msgstr "Do Not Receive Shadows(不接受阴影)"
+
+msgid ""
+"Makes the object not receive any kind of shadow that would otherwise be cast "
+"onto it."
+msgstr "使对象不会接收任何可能会被投射到其上的阴影."
+
+msgid "Use Shadow to Opacity"
+msgstr "Use Shadow to Opacity(使用阴影转为不透明度)"
+
+msgid ""
+"Lighting modifies the alpha so shadowed areas are opaque and non-shadowed "
+"areas are transparent. Useful for overlaying shadows onto a camera feed in "
+"AR."
+msgstr ""
+"光照会改变alpha值, 阴影部分是不透明的, 而没有阴影的地方是透明的. 对于AR中将阴"
+"影堆叠到一个照相机反馈中很有用."
+
+#, fuzzy
+msgid "Billboard"
+msgstr "Billboard Mode(广告牌模式)"
+
+msgid "Billboard Mode"
+msgstr "Billboard Mode(广告牌模式)"
+
+msgid ""
+"Enables billboard mode for drawing materials. This controls how the object "
+"faces the camera:"
+msgstr "为绘图材质启用广告牌模式. 这会控制物体面向摄像头的方式:"
+
+msgid "**Disabled:** Billboard mode is disabled."
+msgstr "**Disabled:** 禁用广告牌模式."
+
+msgid ""
+"**Enabled:** Billboard mode is enabled, the object's -Z axis will always "
+"face the camera."
+msgstr "**Enabled:** 启用广告牌模式, 对象的-Z轴将始终面向摄像机."
+
+msgid ""
+"**Y-Billboard:** The object's X axis will always be aligned with the camera."
+msgstr "** Y-Billboard:** 物体的X轴会始终与相机对齐."
+
+msgid ""
+"**Particles:** Most suited for particle systems, because it allows "
+"specifying animation options."
+msgstr "**Particles:** 最适合粒子系统, 因为它允许指定动画选项."
+
+msgid "The above options are only enabled for Particle Billboard."
+msgstr "以上选项仅适用于Particle Billboard."
+
+msgid "Billboard Keep Scale"
+msgstr "Billboard Keep Scale(广告牌保持缩放)"
+
+msgid "Enables scaling a mesh in billboard mode."
+msgstr "启用在广告牌模式下缩放网格."
+
+msgid "Grow"
+msgstr "Grow(增长)"
+
+msgid "Grows the object vertices in the direction pointed by their normals:"
+msgstr "沿法线指向的方向增长对象顶点:"
+
+msgid ""
+"This is commonly used to create cheap outlines. Add a second material pass, "
+"make it black and unshaded, reverse culling (Cull Front), and add some grow:"
+msgstr ""
+"这通常用于创建廉价的轮廓. 添加第二个material pass, 使其变为黑色, 无阴影"
+"(unshaded), 反向剔除(Cull Front), 并添加一些增长:"
+
+msgid "Transform"
+msgstr "变换"
+
+msgid "Fixed Size"
+msgstr "Fixed Size(固定大小)"
+
+msgid ""
+"This causes the object to be rendered at the same size no matter the "
+"distance. This is useful mostly for indicators (no depth test and high "
+"render priority) and some types of billboards."
+msgstr ""
+"这使得无论距离如何, 对象都以相同的大小呈现. 这主要用于指示物(无深度测试和高渲"
+"染优先级)和某些类型的广告牌."
+
+msgid "Use Point Size"
+msgstr "Use Point Size(使用点大小)"
+
+#, fuzzy
+msgid ""
+"This option is only effective when the geometry rendered is made of points "
+"(generally it's made of triangles when imported from 3D modeling software). "
+"If so, then those points can be resized (see below)."
+msgstr ""
+"此选项仅在渲染的几何体由点组成时有效(通常从3D DCC导入时由三角形组成). 如果是"
+"这样, 那么这些点可以被调整大小(见下文)."
+
+msgid "Point Size"
+msgstr "Point Size(点大小)"
+
+msgid "When drawing points, specify the point size in pixels."
+msgstr "绘制点时，指定点的大小，单位为像素。"
+
+msgid "Transmission"
+msgstr "Transmission(传输)"
+
+#, fuzzy
+msgid "Proximity and Distance Fade"
+msgstr "Proximity and distance fade(接近和距离渐隐)"
+
+#, fuzzy
+msgid ""
+"Godot allows materials to fade by proximity to each other as well as "
+"depending on the distance from the viewer. Proximity fade is useful for "
+"effects such as soft particles or a mass of water with a smooth blending to "
+"the shores."
+msgstr ""
+"Godot允许材质通过彼此接近以及取决于与观察者的距离而隐去. 接近隐去对于诸如软粒"
+"子或大量水平滑地过渡到海岸是有用的. 距离渐隐对于仅在给定距离之后存在的光轴或"
+"指示物是有用的."
+
+msgid ""
+"Distance fade is useful for light shafts or indicators that are only present "
+"after a given distance."
+msgstr ""
+
+msgid ""
+"Keep in mind enabling proximity fade or distance fade with **Pixel Alpha** "
+"mode enables alpha blending. Alpha blending is more GPU-intensive and can "
+"cause transparency sorting issues. Alpha blending also disables many "
+"material features such as the ability to cast shadows. To hide a character "
+"when they get too close to the camera, consider using **Pixel Dither** or "
+"better, **Object Dither** (which is even faster than **Pixel Dither**)."
+msgstr ""
+
+#, fuzzy
+msgid "Material Settings"
+msgstr "ParticlesMaterial(粒子材质)设置"
+
+msgid "Render priority"
+msgstr "Render priority(渲染优先级)"
+
+msgid ""
+"The rendering order of objects can be changed, although this is mostly "
+"useful for transparent objects (or opaque objects that perform depth draw "
+"but no color draw, such as cracks on the floor)."
+msgstr ""
+"可以更改对象的渲染顺序, 尽管这对于透明对象有用(或执行深度绘制但没有颜色绘制的"
+"不透明对象, 例如地板上的裂缝)."
+
+#, fuzzy
+msgid "Next Pass"
+msgstr "下一步"
+
+msgid ""
+"Sets the material to be used for the next pass. This renders the object "
+"again with a different material."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻译状态"

@@ -1,0 +1,180 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Code::Blocks"
+msgstr "Code::Blocks"
+
+msgid ""
+"`Code::Blocks <https://codeblocks.org/>`_ is a free, open source, cross "
+"platform IDE."
+msgstr ""
+"`Code::Blocks <https://codeblocks.org/>`_ è un IDE gratuito, open source e "
+"cross platform."
+
+msgid "Creating a new project"
+msgstr "Creare un nuovo progetto"
+
+msgid ""
+"From Code::Blocks' main screen, click **Create a new project** or select "
+"**File > New > Project...**."
+msgstr ""
+
+msgid ""
+"In the **New from template** window, from **Projects**, select **Empty "
+"project**, and click **Go**."
+msgstr ""
+
+msgid "Click Next, to pass the welcome to the new empty project wizard."
+msgstr ""
+
+msgid ""
+"The project file should be created in the root of the cloned project folder. "
+"To achieve this, first, ensure that the **Project title** is the same as the "
+"folder name that Godot was cloned into. Unless you cloned the project into a "
+"folder with a different name, this will be ``godot``."
+msgstr ""
+
+msgid ""
+"Second, ensure that the **Folder to create project in** is the folder you "
+"ran the Git clone command from, not the ``godot`` project folder. Confirm "
+"that the **Resulting filename** field will create the project file in the "
+"root of the cloned project folder."
+msgstr ""
+
+msgid ""
+"The compiler and configuration settings are managed through **SCons** and "
+"will be configured later. However, it's worth deselecting the **Create "
+"\"Release\" configuration** option; so only a single build target is created "
+"before clicking **Finish**."
+msgstr ""
+
+#, fuzzy
+msgid "Configuring the build"
+msgstr "Configurazione della costruzione"
+
+msgid ""
+"The first step is to change the project properties. Right-click on the new "
+"project and select **Properties...**."
+msgstr ""
+
+msgid ""
+"Check the **This is a custom Makefile** property. Click OK to save the "
+"changes."
+msgstr ""
+
+msgid ""
+"The next step is to change the build options. Right-click on the new project "
+"and select **Build Options...**."
+msgstr ""
+
+msgid ""
+"Select the **\"Make\" commands** tab and remove all the existing commands "
+"for all the build targets. For each build target enter the **SCons** command "
+"for creating the desired build in the **Build project/target** field. The "
+"minimum is ``scons``. For details on the **SCons** build options, see :ref:"
+"`doc_introduction_to_the_buildsystem`. It's also useful to add the ``scons --"
+"clean`` command in the **Clean project/target** field to the project's "
+"default commands."
+msgstr ""
+
+msgid ""
+"If you're using Windows, all the commands need to be preceded with ``cmd /"
+"c`` to initialize the command interpreter."
+msgstr ""
+
+msgid "Windows example:"
+msgstr "Esempio Windows:"
+
+msgid ""
+"Code::Blocks should now be configured to build Godot; so either select "
+"**Build > Build**, click the gear button, or press :kbd:`Ctrl + F9`."
+msgstr ""
+
+#, fuzzy
+msgid "Configuring the run"
+msgstr "Configurazione dell'eseguibile"
+
+msgid ""
+"Once **SCons** has successfully built the desired target, reopen the project "
+"**Properties...** and select the **Build targets** tab. In the **Output "
+"filename** field, browse to the ``bin`` folder and select the compiled file."
+msgstr ""
+
+msgid ""
+"Deselect the **Auto-generate filename prefix** and **Auto-generate filename "
+"extension** options."
+msgstr ""
+
+msgid ""
+"Code::Blocks should now be configured to run your compiled Godot executable; "
+"so either select **Build > Run**, click the green arrow button, or press :"
+"kbd:`Ctrl + F10`."
+msgstr ""
+
+msgid ""
+"There are two additional points worth noting. First, if required, the "
+"**Execution working dir** field can be used to test specific projects, by "
+"setting it to the folder containing the ``project.godot`` file. Second, the "
+"**Build targets** tab can be used to add and remove build targets for "
+"working with and creating different builds."
+msgstr ""
+
+msgid "Adding files to the project"
+msgstr "Aggiungere dei file al progetto"
+
+msgid ""
+"To add all the Godot code files to the project, right-click on the new "
+"project and select **Add files recursively...**."
+msgstr ""
+
+msgid ""
+"It should automatically select the project folder; so simply click **Open**. "
+"By default, all code files are included, so simply click **OK**."
+msgstr ""
+
+msgid "Code style configuration"
+msgstr ""
+
+msgid ""
+"Before editing any files, remember that all code needs to comply with the :"
+"ref:`doc_code_style_guidelines`. One important difference with Godot is the "
+"use of tabs for indents. Therefore, the key default editor setting that "
+"needs to be changed in Code::Blocks is to enable tabs for indents. This "
+"setting can be found by selecting **Settings > Editor**."
+msgstr ""
+
+msgid ""
+"Under **General Settings**, on the **Editor Settings** tab, under **Tab "
+"Options** check **Use TAB character**."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"That's it. You're ready to start contributing to Godot using the Code::"
+"Blocks IDE. Remember to save the project file and the **Workspace**. If you "
+"run into any issues, ask for help in one of `Godot's community channels "
+"<https://godotengine.org/community>`__."
+msgstr ""
+"Questo è tutto. Si è pronti per contribuire a Godot usando l'IDE Code::"
+"Blocks. Ricordare di salvare il file di progetto e lo **Spazio di lavoro**. "
+"Se ci si imbatte in qualche problema, chiedere aiuto in uno dei `Canali "
+"della comunità di Godot <https://godotengine.org/community>`_."
+
+msgid "Translation status"
+msgstr "Stato della traduzione"

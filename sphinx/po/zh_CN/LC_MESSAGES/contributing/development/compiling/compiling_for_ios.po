@@ -1,0 +1,140 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compiling for iOS"
+msgstr "为 iOS 平台编译"
+
+msgid ""
+"This page describes how to compile iOS export template binaries from source. "
+"If you're looking to export your project to iOS instead, read :ref:"
+"`doc_exporting_for_ios`."
+msgstr ""
+"这个页面描述的是如何从源码编译 iOS 导出模板二进制。如果你想要找的是导出项目"
+"到 iOS，请阅读 :ref:`doc_exporting_for_ios`\\ 。"
+
+msgid "Requirements"
+msgstr "需求"
+
+#, fuzzy
+msgid "`Python 3.6+ <https://www.python.org/downloads/macos/>`_."
+msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_."
+
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
+msgstr "`SCons 3.0+ <https://scons.org/pages/download.html>`_ 构建系统."
+
+msgid ""
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
+"lightweight Command Line Tools for Xcode)."
+msgstr ""
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_\\ （或更轻量的 "
+"Xcode 命令行工具）。"
+
+#, fuzzy
+msgid "If you are building the ``master`` branch:"
+msgstr "如果您想回到 ``master`` 分支, 您会使用:"
+
+msgid ""
+"Download and follow README instructions to build a static ``.xcframework`` "
+"from the `MoltenVK SDK <https://github.com/KhronosGroup/MoltenVK#fetching-"
+"moltenvk-source-code>`__."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
+"SCons using the following command::"
+msgstr ""
+"如果你安装了 `Homebrew <https://brew.sh/>`_\\ ，你可以使用以下命令轻松地安装 "
+"SCons 和 yasm： ::"
+
+msgid ""
+"Installing Homebrew will also fetch the Command Line Tools for Xcode "
+"automatically if you don't have them already."
+msgstr "如果你还没有 Xcode 命令行工具，安装 Homebrew 也会自动进行获取。"
+
+#, fuzzy
+msgid ""
+"Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
+"you can easily install SCons using the following command::"
+msgstr ""
+"同样，如果你安装了 `MacPorts <https://www.macports.org/>`_\\ ，你可以使用以下"
+"命令轻松安装 SCons 和 yasm： ::"
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr "要获取编译所需的 Godot 源码，请参阅 :ref:`doc_getting_source`\\ 。"
+
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+"有关 Godot 的 SCons 用法的一般概述，请参阅 :ref:"
+"`doc_introduction_to_the_buildsystem`。"
+
+msgid "Compiling"
+msgstr "编译"
+
+msgid "Open a Terminal, go to the root dir of the engine source code and type:"
+msgstr "打开终端, 转到引擎源代码的根目录并键入:"
+
+msgid "for a debug build, or:"
+msgstr "针对调试版本, 或:"
+
+#, fuzzy
+msgid ""
+"for a release build (check ``platform/ios/detect.py`` for the compiler flags "
+"used for each configuration)."
+msgstr ""
+"对于发布版本(检查 ``platform/iphone/detect.py`` 以获取用于每种配置的编译器标"
+"志)."
+
+msgid "Alternatively, you can run"
+msgstr "或者, 你可以运行"
+
+#, fuzzy
+msgid "for a Simulator libraries."
+msgstr "用于模拟器可执行文件."
+
+#, fuzzy
+msgid ""
+"To create an Xcode project like in the official builds, you need to use the "
+"template located in ``misc/dist/ios_xcode``. The release and debug libraries "
+"should be placed in ``libgodot.ios.debug.xcframework`` and ``libgodot.ios."
+"release.xcframework`` respectively."
+msgstr ""
+"要创建一个像官方构建的 ``.app`` 捆绑包，你需要使用位于 ``misc/dist/osx_tools."
+"app`` 的模板。通常，对于用 ``target=release_debug'`` 构建的优化编辑器可执行文"
+"件： ::"
+
+msgid ""
+"The MoltenVK static ``.xcframework`` folder must also be placed in the "
+"``ios_xcode`` folder once it has been created."
+msgstr ""
+
+msgid "Run"
+msgstr "运行"
+
+msgid ""
+"To run on a device or simulator, follow these instructions: :ref:"
+"`doc_exporting_for_ios`."
+msgstr ""
+"要在设备或模拟器上运行, 请按照以下说明操作: :ref:`doc_exporting_for_ios`."
+
+msgid "Translation status"
+msgstr "翻译状态"

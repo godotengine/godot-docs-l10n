@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,48 @@ msgstr ""
 
 msgid "Console support in Godot"
 msgstr "Supporto console in Godot"
+
+#, fuzzy
+msgid "Console porting process"
+msgstr "Supporto console in Godot"
+
+msgid ""
+"In order to develop for consoles in Godot, you need access to the console "
+"SDK and export templates for it. These export templates need to be developed "
+"either by yourself or someone hired to do it, or provided by a third party "
+"company."
+msgstr ""
+
+msgid ""
+"Currently, the only console Godot officially supports is Steam Deck (through "
+"the official Linux export templates)."
+msgstr ""
+
+msgid "The reason other consoles are not officially supported are:"
+msgstr ""
+
+msgid ""
+"To develop for consoles, one must be licensed as a company. As an open "
+"source project, Godot has no legal structure to provide console ports."
+msgstr ""
+
+msgid ""
+"Console SDKs are secret and covered by non-disclosure agreements. Even if we "
+"could get access to them, we could not publish the platform-specific code "
+"under an open source license."
+msgstr ""
+
+msgid ""
+"As explained, however, it is possible to port your games to consoles thanks "
+"to services provided by third-party companies."
+msgstr ""
+
+msgid ""
+"In practice, the process is quite similar to Unity and Unreal Engine. In "
+"other words, there is no engine that is legally allowed to distribute "
+"console export templates without requiring the user to prove that they are a "
+"licensed console developer."
+msgstr ""
 
 msgid "Console publishing process"
 msgstr ""
@@ -52,54 +94,21 @@ msgstr ""
 
 msgid ""
 "To be published, your game needs to be rated in the regions you'd like to "
-"sell it in. For example, in North America, the `ESRB <https://www.esrb.org/"
-">`__ handles game ratings. In Europe, this is done by `PEGI <https://pegi."
-"info/>`__. Indie developers can generally get a rating for cheaper compared "
-"to more established developers."
+"sell it in. For example, game ratings are handled by `ESRB <https://www.esrb."
+"org/>`__ in North America, and `PEGI <https://pegi.info/>`__ in Europe. "
+"Indie developers can generally get a rating for cheaper compared to more "
+"established developers."
 msgstr ""
 
 msgid ""
-"Due to the complexity of the process, the budget to publish a game by "
-"yourself on a single console often exceeds $1,000 (this is a rough figure)."
-msgstr ""
-
-#, fuzzy
-msgid "Official support"
-msgstr "Supporto ufficiale"
-
-msgid ""
-"Godot supports the Linux-based Steam Deck. The reason other consoles are not "
-"officially supported are:"
+"Due to the complexity of the process, many studios and developers prefer to "
+"outsource console porting."
 msgstr ""
 
 msgid ""
-"To develop for consoles, one must be licensed as a company. As an open "
-"source project, Godot does not have such a legal figure."
-msgstr ""
-
-msgid ""
-"Console SDKs are secret and covered by non-disclosure agreements. Even if we "
-"could get access to them, we could not publish the platform-specific code "
-"under an open source license."
-msgstr ""
-
-msgid ""
-"Consoles require specialized hardware to develop for, so regular individuals "
-"can't create games for them anyway."
-msgstr ""
-
-msgid ""
-"However, it is still possible to port your games to consoles thanks to "
-"services provided by third-party companies."
-msgstr ""
-
-msgid ""
-"In practice, the process is quite similar to Unity and Unreal Engine, except "
-"that you need to contact a third-party developer to handle the porting "
-"process. In other words, there is no engine that is legally allowed to "
-"distribute console export templates without requiring the user to prove that "
-"they are a licensed console developer. Doing so would violate the console "
-"manufacturer's NDA."
+"You can read more about the console publishing process in this article: "
+"`Godot and consoles, all you need to know <https://godotengine.org/article/"
+"godot-consoles-all-you-need-know/>`__"
 msgstr ""
 
 #, fuzzy
@@ -116,8 +125,8 @@ msgid "Following is the list of providers:"
 msgstr ""
 
 msgid ""
-"`Lone Wolf Technology <http://www.lonewolftechnology.com/>`_ offers Switch "
-"and PS4 porting and publishing of Godot games."
+"`Lone Wolf Technology <https://www.lonewolftechnology.com/>`_ offers Switch "
+"and Playstation 4 porting and publishing of Godot games."
 msgstr ""
 
 msgid ""
@@ -133,6 +142,16 @@ msgstr ""
 msgid ""
 "`mazette! games <https://mazette.games/>`_ offers Switch, Xbox One and Xbox "
 "Series X/S porting and publishing of Godot games."
+msgstr ""
+
+msgid ""
+"`Olde Sküül <https://oldeskuul.com/>` offers Switch, Xbox One, Playstation 4 "
+"& Playstation 5 porting and publishing of Godot games."
+msgstr ""
+
+msgid ""
+"`Tuanisapps <https://www.tuanisapps.com/>`_ offers Switch porting and "
+"publishing of Godot games."
 msgstr ""
 
 msgid ""

@@ -1,0 +1,491 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Class reference primer"
+msgstr "類別參照手冊"
+
+msgid ""
+"This page explains how to write the class reference. You will learn where to "
+"write new descriptions for the classes, methods, and properties for Godot's "
+"built-in node types."
+msgstr ""
+
+msgid ""
+"To learn to submit your changes to the Godot project using the Git version "
+"control system, see :ref:`doc_updating_the_class_reference`."
+msgstr ""
+
+msgid ""
+"The reference for each class is contained in an XML file like the one below:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"It starts with brief and long descriptions. In the generated docs, the brief "
+"description is always at the top of the page, while the long description "
+"lies below the list of methods, variables, and constants. You can find "
+"methods, member variables, constants, and signals in separate XML nodes."
+msgstr ""
+"各個類別都有一個簡短說明與長說明。簡短說明位於頁面頂部，而完整的長說明則位於"
+"方法、變數與常數列表下方。方法、成員變數、常數與訊號都放在個別分類或不同 XML "
+"節點內。請從 Godot 的原始碼中瞭解這些功能各自如何運作，並填寫相應的 "
+"<descrioption>。"
+
+msgid ""
+"For each, you want to learn how they work in Godot's source code. Then, fill "
+"their documentation by completing or improving the text in these tags:"
+msgstr ""
+
+#, fuzzy
+msgid "`<brief_description>`"
+msgstr "\\ <brief_description></brief_description>"
+
+#, fuzzy
+msgid "`<description>`"
+msgstr "說明"
+
+#, fuzzy
+msgid "`<constant>`"
+msgstr "PI（圓周率）常數。"
+
+msgid ""
+"`<method>` (in its `<description>` tag; return types and arguments don't "
+"take separate documentation strings)"
+msgstr ""
+
+msgid "`<member>`"
+msgstr ""
+
+msgid ""
+"`<signal>` (in its `<description>` tag; arguments don't take separate "
+"documentation strings)"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Write in a clear and simple language. Always follow the :ref:`writing "
+"guidelines <doc_docs_writing_guidelines>` to keep your descriptions short "
+"and easy to read. **Do not leave empty lines** in the descriptions: each "
+"line in the XML file will result in a new paragraph, even if it is empty."
+msgstr ""
+"請以清晰明瞭的文字撰寫。務必遵守 :ref:`撰寫方針 "
+"<doc_docs_writing_guidelines>` 以保持說明簡短且容易閱讀。在簡介中 **請不要保"
+"留空行** ：在 XML 檔中每一行都會開新段落。"
+
+msgid "How to edit class XML"
+msgstr "如果編輯類別 XML"
+
+#, fuzzy
+msgid ""
+"Edit the file for your chosen class in ``doc/classes/`` to update the class "
+"reference. The folder contains an XML file for each class. The XML lists the "
+"constants and methods you will find in the class reference. Godot generates "
+"and updates the XML automatically."
+msgstr ""
+"請編輯 ``doc/classes/`` 內所選類別的檔案來更新類別參照文件。該資料夾包含了用"
+"於各個類別的 XML 檔。這些 XML 中列出了可在類別參照文件中找到的常數與方法。"
+"Godot 會自動產生並更新 XML 檔。"
+
+msgid ""
+"For some modules in the engine's source code, you'll find the XML files in "
+"the ``modules/<module_name>/doc_classes/`` directory instead."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Edit it using your favorite text editor. If you use a code editor, make sure "
+"that it doesn't change the indent style: you should use tabs for the XML and "
+"four spaces inside BBCode-style blocks. More on that below."
+msgstr ""
+"使用慣用的編輯器開啟 XML 檔。若使用程式碼編輯器，請確保不要更改到縮排樣式："
+"XML 使用 Tab 資源，BBCode 風格的區塊中則使用 4 個空格。詳情見下方說明。"
+
+msgid ""
+"To check that the modifications you've made are correct in the generated "
+"documentation, navigate to the ``doc/`` folder and run the command ``make "
+"rst``. This will convert the XML files to the online documentation's format "
+"and output errors if anything's wrong."
+msgstr ""
+
+msgid ""
+"Alternatively, you can build Godot and open the modified page in the built-"
+"in code reference. To learn how to compile the engine, read the :ref:"
+"`compilation guide <toc-devel-compiling>`."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"We recommend using a code editor that supports XML files like Vim, Atom, "
+"Visual Studio Code, Notepad++, or another to comfortably edit the file. You "
+"can also use their search feature to find classes and properties quickly."
+msgstr ""
+"請使用 Vim, Atom, Code, Notepad++ 或其他類似的編輯器來快速編輯檔案。可使用搜"
+"尋功能來快速找到類別。"
+
+msgid ""
+"If you use Visual Studio Code, you can install the `vscode-xml extension "
+"<https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml>`__ "
+"to get linting for class reference XML files."
+msgstr ""
+
+msgid "Improve formatting with BBCode style tags"
+msgstr "使用 BBCode 風格的標籤來增強格式"
+
+msgid ""
+"Godot's XML class reference supports BBCode-like tags for linking as well as "
+"formatting text and code. In the tables below you can find the available "
+"tags, usage examples and the results after conversion to reStructuredText."
+msgstr ""
+
+#, fuzzy
+msgid "Linking"
+msgstr "光照烘焙"
+
+msgid ""
+"Whenever you link to a member of another class, you need to specify the "
+"class name. For links to the same class, the class name is optional and can "
+"be omitted."
+msgstr ""
+
+#, fuzzy
+msgid "Tag and Description"
+msgstr "說明"
+
+msgid "Example"
+msgstr "範例"
+
+msgid "Result"
+msgstr "結果"
+
+#, fuzzy
+msgid "``[Class]``"
+msgstr "\\ [Class]"
+
+#, fuzzy
+msgid "Link to class"
+msgstr "類別連結"
+
+#, fuzzy
+msgid "``Move the [Sprite2D].``"
+msgstr "移動 [Sprite]。"
+
+#, fuzzy
+msgid "Move the :ref:`class_Sprite2D`."
+msgstr "移動 :ref:`class_sprite`。"
+
+msgid "``[annotation Class.name]``"
+msgstr ""
+
+#, fuzzy
+msgid "Link to annotation"
+msgstr "另一個類別的方法連結"
+
+msgid "``See [annotation @GDScript.@export].``"
+msgstr ""
+
+msgid "See :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`."
+msgstr ""
+
+#, fuzzy
+msgid "``[constant Class.name]``"
+msgstr "[signal 類別.訊號名稱]"
+
+#, fuzzy
+msgid "Link to constant"
+msgstr "定義一個常數。"
+
+msgid "``See [constant @GlobalScope.KEY_F1].``"
+msgstr ""
+
+msgid "See :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`."
+msgstr ""
+
+#, fuzzy
+msgid "``[enum Class.name]``"
+msgstr "[member 類別.成員名稱]"
+
+#, fuzzy
+msgid "Link to enum"
+msgstr "同意授權條款"
+
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr ""
+
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr ""
+
+#, fuzzy
+msgid "``[method Class.name]``"
+msgstr "[method 類別.方法名稱]"
+
+#, fuzzy
+msgid "Link to method"
+msgstr "繫結方法"
+
+#, fuzzy
+msgid "``Call [method Node3D.hide].``"
+msgstr "呼叫 [method hide]。"
+
+#, fuzzy
+msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
+msgstr "參考 :ref:`hide <class_spatial_method_hide>` 。"
+
+#, fuzzy
+msgid "``[member Class.name]``"
+msgstr "[member 類別.成員名稱]"
+
+#, fuzzy
+msgid "Link to member"
+msgstr "編輯成員"
+
+#, fuzzy
+msgid "``Get [member Node2D.scale].``"
+msgstr "取得 [member Node2D.scale]。"
+
+#, fuzzy
+msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
+msgstr "取得 :ref:`scale <class_node2d_property_scale>` 。"
+
+#, fuzzy
+msgid "``[signal Class.name]``"
+msgstr "[signal 類別.訊號名稱]"
+
+#, fuzzy
+msgid "Link to signal"
+msgstr "繫結訊號"
+
+#, fuzzy
+msgid "``Emit [signal Node.renamed].``"
+msgstr "發送 [signal Node.renamed]。"
+
+#, fuzzy
+msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
+msgstr "發送 :ref:`renamed <class_node_signal_renamed>`。"
+
+#, fuzzy
+msgid "``[theme_item Class.name]``"
+msgstr "[method 類別.方法名稱]"
+
+#, fuzzy
+msgid "Link to theme item"
+msgstr "同意授權條款"
+
+msgid "``See [theme_item Label.font].``"
+msgstr ""
+
+msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
+msgstr ""
+
+msgid "Currently only :ref:`class_@GDScript` has annotations."
+msgstr ""
+
+#, fuzzy
+msgid "Formatting text"
+msgstr "格式"
+
+msgid "``[param name]``"
+msgstr ""
+
+msgid "Formats a parameter name (as code)"
+msgstr ""
+
+msgid "``Takes [param size] for the size.``"
+msgstr ""
+
+msgid "Takes ``size`` for the size."
+msgstr ""
+
+msgid "``[br]``"
+msgstr ""
+
+#, fuzzy
+msgid "Line break"
+msgstr "break"
+
+msgid "``Line 1.[br]``"
+msgstr ""
+
+msgid "``Line 2.``"
+msgstr ""
+
+msgid "Line 1."
+msgstr ""
+
+msgid "Line 2."
+msgstr ""
+
+#, fuzzy
+msgid "``[b]`` ``[/b]``"
+msgstr "\\ [b] [/b]"
+
+msgid "Bold"
+msgstr "粗體"
+
+#, fuzzy
+msgid "``Some [b]bold[/b] text.``"
+msgstr "普通的 [b]粗體[/b] 文字。"
+
+msgid "Some **bold** text."
+msgstr "普通的 **粗體** 文字。"
+
+#, fuzzy
+msgid "``[i]`` ``[/i]``"
+msgstr "\\ [i] [/i]"
+
+msgid "Italic"
+msgstr "斜體"
+
+#, fuzzy
+msgid "``Some [i]italic[/i] text.``"
+msgstr "普通的 [i]斜體[/i] 文字。"
+
+msgid "Some *italic* text."
+msgstr "普通的 *斜體* 文字。"
+
+#, fuzzy
+msgid "``[kbd]`` ``[/kbd]``"
+msgstr "\\ [kbd] [/kbd]"
+
+msgid "Keyboard/mouse shortcut"
+msgstr "鍵盤或滑鼠快捷鍵"
+
+#, fuzzy
+msgid "``Some [kbd]Ctrl + C[/kbd] key.``"
+msgstr "普通的 [kbd]Ctrl + C[/kbd] 按鍵。"
+
+msgid "Some :kbd:`Ctrl + C` key."
+msgstr "普通的 :kbd:`Ctrl + C` 按鍵。"
+
+#, fuzzy
+msgid "Formatting code"
+msgstr "格式"
+
+#, fuzzy
+msgid "``[code]`` ``[/code]``"
+msgstr "\\ [code] [/code]"
+
+msgid "Monospace"
+msgstr "等寬字體"
+
+#, fuzzy
+msgid "``Some [code]monospace[/code] text.``"
+msgstr "普通的 [code]等寬字體 (Monospace)[/code] 文字。"
+
+msgid "Some ``monospace`` text."
+msgstr "普通的 ``等寬字體 (Monospace)`` 文字。"
+
+#, fuzzy
+msgid "``[codeblock]`` ``[/codeblock]``"
+msgstr "\\ [codeblock] [/codeblock]"
+
+msgid "Multiline preformatted block"
+msgstr "多行預格式化區塊"
+
+msgid "*See below.*"
+msgstr "**參見下方。**"
+
+#, fuzzy
+msgid "``[codeblocks]`` ``[/codeblocks]``"
+msgstr "\\ [codeblock] [/codeblock]"
+
+msgid "Codeblock for multiple languages"
+msgstr ""
+
+#, fuzzy
+msgid "``[gdscript]`` ``[/gdscript]``"
+msgstr "\\ <description></description>"
+
+#, fuzzy
+msgid "GDScript codeblock tab in codeblocks"
+msgstr "\\ [codeblock] [/codeblock]"
+
+msgid "``[csharp]`` ``[/csharp]``"
+msgstr ""
+
+#, fuzzy
+msgid "C# codeblock tab in codeblocks"
+msgstr "\\ [codeblock] [/codeblock]"
+
+msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+msgstr ""
+
+msgid ""
+"``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
+"always use **four spaces** for indentation. The parser will delete tabs."
+msgstr ""
+"使用 ``[codeblock]`` 來標記預先格式化的程式碼區塊。在 ``[codeblock]`` 中，請"
+"務必使用 **四個空格** 來進行縮排 (剖析器會移除 Tab 字元)。例如："
+
+msgid "For example:"
+msgstr "如："
+
+msgid "Will display as:"
+msgstr "會顯示為："
+
+msgid ""
+"If you need to have different code version in GDScript and C#, use "
+"``[codeblocks]`` instead. If you use ``[codeblocks]``, you also need to have "
+"at least one of the language-specific tags, ``[gdscript]`` and ``[csharp]``."
+msgstr ""
+
+msgid ""
+"Always write GDScript code examples first! You can use this `experimental "
+"code translation tool <https://github.com/HaSa1002/codetranslator>`_ to "
+"speed up your workflow."
+msgstr ""
+
+#, fuzzy
+msgid "The above will display as:"
+msgstr "會顯示為："
+
+msgid ""
+"To denote important information, add a paragraph starting with \"[b]Note:[/"
+"b]\" at the end of the description:"
+msgstr "若要標記出重要的資訊，可在說明最後新增以「[b]Note:[/b]」開頭的段落："
+
+msgid ""
+"To denote crucial information that could cause security issues or loss of "
+"data if not followed carefully, add a paragraph starting with \"[b]Warning:[/"
+"b]\" at the end of the description:"
+msgstr ""
+"若要標記出未多加留意可能導致安全性問題或遺失資料的警示資訊，請在說明最後加上"
+"以「[b]Warning:[/b]」開頭的段落："
+
+msgid ""
+"For deprecated properties, add a paragraph starting with \"[i]Deprecated.[/"
+"i]\". Notice the use of italics instead of bold:"
+msgstr ""
+"而已停止維護的屬性，請加上以「[i]Deprecated.[/i]」開頭的段落。請注意，這裡使"
+"用的是斜體而非粗體："
+
+msgid ""
+"In all the paragraphs described above, make sure the punctuation is part of "
+"the BBCode tags for consistency."
+msgstr ""
+"請注意，上面描述的所有段落中，標點符號都是 BBCode 標籤中的一部分，請保持一致"
+"性。"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

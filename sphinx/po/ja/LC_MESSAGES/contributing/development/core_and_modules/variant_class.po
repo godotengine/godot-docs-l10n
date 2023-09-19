@@ -1,0 +1,150 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Variant class"
+msgstr "バリアントクラス"
+
+msgid "About"
+msgstr "概要"
+
+msgid ""
+"Variant is the most important datatype of Godot, it's the most important "
+"class in the engine. A Variant takes up only 20 bytes and can store almost "
+"any engine datatype inside of it. Variants are rarely used to hold "
+"information for long periods of time, instead they are used mainly for "
+"communication, editing, serialization and generally moving data around."
+msgstr ""
+"バリアントはGodotの最も重要なデータ型であり、エンジンで最も重要なクラスで"
+"す。 バリアント型は20バイトしか使用せず、その中にほぼすべてのエンジンデータ型"
+"を格納できます。 バリアントは、情報を長期間保持するために使用されることはほと"
+"んどなく、代わりに主に通信、編集、シリアル化、および一般的なデータの移動に使"
+"用されます。"
+
+msgid "A Variant can:"
+msgstr "バリアントは次のことができます:"
+
+msgid "Store almost any datatype"
+msgstr "ほぼすべてのデータ型を格納する"
+
+msgid ""
+"Perform operations between many variants (GDScript uses Variant as its "
+"atomic/native datatype)."
+msgstr ""
+"多くのバリアント間で操作を実行します (GDScript はバリアントをアトミック/ネイ"
+"ティブデータ型として使用します)。"
+
+msgid "Be hashed, so it can be compared quickly to other variants"
+msgstr "ハッシュ化して、他のバリアントとすばやく比較できます"
+
+msgid "Be used to convert safely between datatypes"
+msgstr "データ型間の安全な変換に使用します"
+
+msgid ""
+"Be used to abstract calling methods and their arguments (Godot exports all "
+"its functions through variants)"
+msgstr ""
+"呼び出しメソッドとその引数を抽象化するために使用されます(Godot はバリアントを"
+"介してすべての関数をエクスポートします)"
+
+msgid "Be used to defer calls or move data between threads."
+msgstr ""
+"呼び出しを延期したり、スレッド間でデータを移動したりするために使用します。"
+
+msgid "Be serialized as binary and stored to disk, or transferred via network."
+msgstr ""
+"バイナリとしてシリアル化され、ディスクに保存されるか、ネットワーク経由で転送"
+"されます。"
+
+msgid ""
+"Be serialized to text and use it for printing values and editable settings."
+msgstr "テキストにシリアル化し、値と編集可能な設定を印刷するために使用します。"
+
+msgid "Work as an exported property, so the editor can edit it universally."
+msgstr ""
+"エクスポートされたプロパティとして機能し、エディタがユニバーサルに編集できる"
+"ようにします。"
+
+msgid "Be used for dictionaries, arrays, parsers, etc."
+msgstr "辞書、配列、パーサーなどに使用できます。"
+
+msgid ""
+"Basically, thanks to the Variant class, writing Godot itself was a much, "
+"much easier task, as it allows for highly dynamic constructs not common of C+"
+"+ with little effort. Become a friend of Variant today."
+msgstr ""
+"基本的に、Variantクラスのおかげで、Godot自体を書くのは、C++には一般的ではない"
+"非常に動的な構成体を簡単に作成できるので、ずっと簡単な作業でした。今日は"
+"Variantの友達になってください。"
+
+msgid "References:"
+msgstr "リファレンス:"
+
+#, fuzzy
+msgid ""
+"`core/variant/variant.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/variant.h>`__"
+msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`_"
+
+msgid "Containers: Dictionary and Array"
+msgstr "コンテナ: 辞書(Dictionary )と配列(Array)"
+
+msgid ""
+"Both are implemented using variants. A Dictionary can match any datatype "
+"used as key to any other datatype. An Array just holds an array of Variants. "
+"Of course, a Variant can also hold a Dictionary and an Array inside, making "
+"it even more flexible."
+msgstr ""
+"どちらもバリアントを使用して実装されます。辞書は、キーとして使用される任意の"
+"データ型を他の任意のデータ型に一致させることができます。配列には、バリアント"
+"型の配列だけが格納されます。もちろん、バリアント型にはDictionaryとArrayを格納"
+"できるため、より柔軟性があります。"
+
+msgid ""
+"Modifications to a container will modify all references to it. A Mutex "
+"should be created to lock it if multi threaded access is desired."
+msgstr ""
+"コンテナを変更すると、コンテナへのすべての参照が変更されます。マルチスレッド"
+"アクセスが必要な場合は、Mutexを作成してロックする必要があります。"
+
+msgid ""
+"Copy-on-write (COW) mode support for containers was dropped with Godot 3.0."
+msgstr ""
+"Godot 3.0 では、コンテナの書き込みコピー(COW)モードのサポートが削除されまし"
+"た。"
+
+#, fuzzy
+msgid ""
+"`core/variant/dictionary.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/dictionary.h>`__"
+msgstr ""
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/master/core/"
+"dictionary.h>`_"
+
+#, fuzzy
+msgid ""
+"`core/variant/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant/array.h>`__"
+msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant.h>`_"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

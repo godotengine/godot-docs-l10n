@@ -1,0 +1,514 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Using CharacterBody2D/3D"
+msgstr "使用 KinematicBody2D"
+
+msgid "Introduction"
+msgstr "前言"
+
+#, fuzzy
+msgid ""
+"Godot offers several collision objects to provide both collision detection "
+"and response. Trying to decide which one to use for your project can be "
+"confusing. You can avoid problems and simplify development if you understand "
+"how each of them works and what their pros and cons are. In this tutorial, "
+"we'll look at the :ref:`CharacterBody2D <class_CharacterBody2D>` node and "
+"show some examples of how to use it."
+msgstr ""
+"Godot提供了几种碰撞对象来提供碰撞检测和响应. 试图决定在你的项目中使用哪一个可"
+"能会让你感到困惑. 如果你了解它们中的每一个是如何工作的, 以及它们的优点和缺点"
+"是什么, 你就可以避免问题并简化开发. 在本教程中, 我们将查看 :ref:"
+"`KinematicBody2D <class_KinematicBody2D>` 节点, 并展示一些如何使用它的例子."
+
+msgid ""
+"While this document uses ``CharacterBody2D`` in its examples, the same "
+"concepts apply in 3D as well."
+msgstr ""
+
+#, fuzzy
+msgid "What is a character body?"
+msgstr "什么是刚体？"
+
+#, fuzzy
+msgid ""
+"``CharacterBody2D`` is for implementing bodies that are controlled via code. "
+"Character bodies detect collisions with other bodies when moving, but are "
+"not affected by engine physics properties, like gravity or friction. While "
+"this means that you have to write some code to create their behavior, it "
+"also means you have more precise control over how they move and react."
+msgstr ""
+"``KinematicBody2D`` 用于实现通过代码控制的物体. 运动体在移动时可以检测到与其"
+"他物体的碰撞, 但不受引擎物理属性的影响, 比如重力或摩擦. 虽然这意味着你必须编"
+"写一些代码来创建它们的行为, 但这也意味着你可以更精确地控制它们如何移动和反应."
+
+#, fuzzy
+msgid ""
+"This document assumes you're familiar with Godot's various physics bodies. "
+"Please read :ref:`doc_physics_introduction` first, for an overview of the "
+"physics options."
+msgstr ""
+"本文假设您熟悉Godot中的各种物理体. 否则请先阅读 :ref:"
+"`doc_physics_introduction` ."
+
+#, fuzzy
+msgid ""
+"A `CharacterBody2D` can be affected by gravity and other forces, but you "
+"must calculate the movement in code. The physics engine will not move a "
+"`CharacterBody2D`."
+msgstr ""
+"`KinematicBody2D` 可以受到重力和其他力的影响, 但您必须在代码中计算它的运动. "
+"物理引擎不会移动 `KinematicBody2D`."
+
+msgid "Movement and collision"
+msgstr "运动与碰撞"
+
+#, fuzzy
+msgid ""
+"When moving a ``CharacterBody2D``, you should not set its ``position`` "
+"property directly. Instead, you use the ``move_and_collide()`` or "
+"``move_and_slide()`` methods. These methods move the body along a given "
+"vector and detect collisions."
+msgstr ""
+"当移动一个 ``KinematicBody2D`` 时, 你不应该直接设置它的 ``position`` 属性, 而"
+"是使用 ``move_and_collide()`` 或 ``move_and_slide()`` 方法. 这些方法沿着给定"
+"的向量移动物体, 如果检测到与另一个体发生碰撞, 则立即停止. 在KinematicBody2D发"
+"生碰撞后, 任何 *碰撞响应* 必须手动编码."
+
+#, fuzzy
+msgid ""
+"You should handle physics body movement in the ``_physics_process()`` "
+"callback."
+msgstr "你应该只在 ``_physics_process()`` 回调中做Kinematic物体运动."
+
+msgid ""
+"The two movement methods serve different purposes, and later in this "
+"tutorial, you'll see examples of how they work."
+msgstr ""
+"这两种运动方法有不同的作用, 在后面的教程中, 你会看到它们如何工作的例子."
+
+#, fuzzy
+msgid "move_and_collide"
+msgstr "``move_and_collide``"
+
+#, fuzzy
+msgid ""
+"This method takes one required parameter: a :ref:`Vector2 <class_Vector2>` "
+"indicating the body's relative movement. Typically, this is your velocity "
+"vector multiplied by the frame timestep (``delta``). If the engine detects a "
+"collision anywhere along this vector, the body will immediately stop moving. "
+"If this happens, the method will return a :ref:`KinematicCollision2D "
+"<class_KinematicCollision2D>` object."
+msgstr ""
+"这个方法有一个 :ref:`Vector2 <class_Vector2>` 参数以表示物体的相对运动. 通"
+"常, 这是您的速度向量乘以帧时间步长( ``delta`` ). 如果在沿着此向量方向的任何位"
+"置, 引擎检测到碰撞, 则物体将立即停止移动. 如果发生这种情况, 该方法将返回 :"
+"ref:`KinematicCollision2D <class_KinematicCollision2D>` 对象."
+
+msgid ""
+"``KinematicCollision2D`` is an object containing data about the collision "
+"and the colliding object. Using this data, you can calculate your collision "
+"response."
+msgstr ""
+"``KinematicCollision2D`` 是一个包含碰撞和碰撞对象数据的对象. 使用这些数据, 你"
+"可以计算出你的碰撞响应."
+
+msgid ""
+"``move_and_collide`` is most useful when you just want to move the body and "
+"detect collision, but don't need any automatic collision response. For "
+"example, if you need a bullet that ricochets off a wall, you can directly "
+"change the angle of the velocity when you detect a collision. See below for "
+"an example."
+msgstr ""
+
+#, fuzzy
+msgid "move_and_slide"
+msgstr "``move_and_slide``"
+
+msgid ""
+"The ``move_and_slide()`` method is intended to simplify the collision "
+"response in the common case where you want one body to slide along the "
+"other. It is especially useful in platformers or top-down games, for example."
+msgstr ""
+"``move_and_slide()`` 方法旨在简化常见情况下的碰撞响应, 即你希望一个物体沿着另"
+"一个物体滑动. 例如, 在平台游戏或自上而下的游戏中, 它特别有用."
+
+msgid ""
+"When calling ``move_and_slide()``, the function uses a number of node "
+"properties to calculate its slide behavior. These properties can be found in "
+"the Inspector, or set in code."
+msgstr ""
+
+#, fuzzy
+msgid "``velocity`` - *default value:* ``Vector2( 0, 0 )``"
+msgstr "``up_direction`` - *默认值:* ``Vector2( 0, 0 )``"
+
+msgid ""
+"This property represents the body's velocity vector in pixels per second. "
+"``move_and_slide()`` will modify this value automatically when colliding."
+msgstr ""
+
+#, fuzzy
+msgid "``motion_mode`` - *default value:* ``MOTION_MODE_GROUNDED``"
+msgstr "``max_slides`` - *默认值:* ``4``"
+
+#, fuzzy
+msgid ""
+"This property is typically used to distinguish between side-scrolling and "
+"top-down movement. When using the default value, you can use the "
+"``is_on_floor()``, ``is_on_wall()``, and ``is_on_ceiling()`` methods to "
+"detect what type of surface the body is in contact with, and the body will "
+"interact with slopes. When using ``MOTION_MODE_FLOATING``, all collisions "
+"will be considered \"walls\"."
+msgstr ""
+"这个参数允许你定义哪些表面应该被引擎视为地板. 设置这个参数可以让你使用 "
+"``is_on_floor()`` , ``is_on_wall()`` 和 ``is_on_ceiling()`` 方法来检测物体接"
+"触的表面类型. 默认值意味着所有的表面都被认为是墙壁."
+
+#, fuzzy
+msgid "``up_direction`` - *default value:* ``Vector2( 0, -1 )``"
+msgstr "``up_direction`` - *默认值:* ``Vector2( 0, 0 )``"
+
+#, fuzzy
+msgid ""
+"This property allows you to define what surfaces the engine should consider "
+"being the floor. Its value lets you use the ``is_on_floor()``, "
+"``is_on_wall()``, and ``is_on_ceiling()`` methods to detect what type of "
+"surface the body is in contact with. The default value means that the top "
+"side of horizontal surfaces will be considered \"ground\"."
+msgstr ""
+"这个参数允许你定义哪些表面应该被引擎视为地板. 设置这个参数可以让你使用 "
+"``is_on_floor()`` , ``is_on_wall()`` 和 ``is_on_ceiling()`` 方法来检测物体接"
+"触的表面类型. 默认值意味着所有的表面都被认为是墙壁."
+
+#, fuzzy
+msgid "``floor_stop_on_slope`` - *default value:* ``true``"
+msgstr "``stop_on_slope`` - *默认值:* ``false``"
+
+msgid ""
+"This parameter prevents a body from sliding down slopes when standing still."
+msgstr "该参数可以防止物体站立不动时从斜坡上滑落."
+
+#, fuzzy
+msgid ""
+"``wall_min_slide_angle`` - *default value:* ``0.261799`` (in radians, "
+"equivalent to ``15`` degrees)"
+msgstr ""
+"``floor_max_angle`` - *默认值:* ``0.785398`` (以弧度表示, 相当于 ``45`` 度)"
+
+msgid ""
+"This is the minimum angle where the body is allowed to slide when it hits a "
+"slope."
+msgstr ""
+
+msgid ""
+"``floor_max_angle`` - *default value:* ``0.785398`` (in radians, equivalent "
+"to ``45`` degrees)"
+msgstr ""
+"``floor_max_angle`` - *默认值:* ``0.785398`` (以弧度表示, 相当于 ``45`` 度)"
+
+msgid ""
+"This parameter is the maximum angle before a surface is no longer considered "
+"a \"floor.\""
+msgstr "这是表面不再被视为 \"地板\" 之前的最大角度"
+
+msgid ""
+"There are many other properties that can be used to modify the body's "
+"behavior under specific circumstances. See the :ref:`CharacterBody2D "
+"<class_CharacterBody2D>` docs for full details."
+msgstr ""
+
+msgid "Detecting collisions"
+msgstr "检测碰撞"
+
+msgid ""
+"When using ``move_and_collide()`` the function returns a "
+"``KinematicCollision2D`` directly, and you can use this in your code."
+msgstr ""
+"当使用 ``move_and_collide()`` 时, 函数直接返回一个 "
+"``KinematicCollision2D`` , 你可以在代码中使用这个."
+
+#, fuzzy
+msgid ""
+"When using ``move_and_slide()`` it's possible to have multiple collisions "
+"occur, as the slide response is calculated. To process these collisions, use "
+"``get_slide_collision_count()`` and ``get_slide_collision()``:"
+msgstr ""
+"当使用 ``move_and_slide()`` 时, 有可能发生多次碰撞, 因为滑动响应是计算出来"
+"的. 要处理这些碰撞, 使用 ``get_slide_count()`` 和 ``get_slide_collision()``:"
+
+#, fuzzy
+msgid ""
+"`get_slide_collision_count()` only counts times the body has collided and "
+"changed direction."
+msgstr "`get_slide_count()` 只计算物体碰撞和改变方向的次数."
+
+msgid ""
+"See :ref:`KinematicCollision2D <class_KinematicCollision2D>` for details on "
+"what collision data is returned."
+msgstr ""
+"关于返回哪些碰撞数据, 请参见 :ref:`KinematicCollision2D "
+"<class_KinematicCollision2D>` ."
+
+msgid "Which movement method to use?"
+msgstr "使用哪种运动方式？"
+
+#, fuzzy
+msgid ""
+"A common question from new Godot users is: \"How do you decide which "
+"movement function to use?\" Often, the response is to use "
+"``move_and_slide()`` because it seems simpler, but this is not necessarily "
+"the case. One way to think of it is that ``move_and_slide()`` is a special "
+"case, and ``move_and_collide()`` is more general. For example, the following "
+"two code snippets result in the same collision response:"
+msgstr ""
+"Godot新用户的一个常见问题是:\"你如何决定使用哪个移动函数？\" 通常, 回答是使"
+"用 ``move_and_slide()`` , 因为它 \"更简单\" , 但情况不一定如此. 有一种思路"
+"是, ``move_and_slide()`` 是一种特殊情况, 而 ``move_and_collide()`` 更通用. 例"
+"如, 下面两个代码片段的结果是相同的碰撞响应:"
+
+msgid ""
+"Anything you do with ``move_and_slide()`` can also be done with "
+"``move_and_collide()``, but it might take a little more code. However, as "
+"we'll see in the examples below, there are cases where ``move_and_slide()`` "
+"doesn't provide the response you want."
+msgstr ""
+"您用 ``move_and_slide()`` 做的任何事情都可以用 ``move_and_collide()`` 来完"
+"成, 但它可能需要更多的代码. 但是, 正如我们在下面的示例中将看到的, 有些情况下 "
+"``move_and_slide()`` 不能提供您想要的响应."
+
+#, fuzzy
+msgid ""
+"In the example above, ``move_and_slide()`` automatically alters the "
+"``velocity`` variable. This is because when the character collides with the "
+"environment, the function recalculates the speed internally to reflect the "
+"slowdown."
+msgstr ""
+"在上面的例子中, 我们将 ``move_and_slide()`` 返回的速度赋值给 ``velocity`` 变"
+"量. 这是因为当角色与环境发生碰撞时, 函数会在内部重新计算速度, 以反映减速的情"
+"况."
+
+msgid ""
+"For example, if your character fell on the floor, you don't want it to "
+"accumulate vertical speed due to the effect of gravity. Instead, you want "
+"its vertical speed to reset to zero."
+msgstr ""
+"例如, 如果角色倒在地上, 不希望它因为重力的影响而积累垂直速度, 而希望它的垂直"
+"速度重置为零."
+
+#, fuzzy
+msgid ""
+"``move_and_slide()`` may also recalculate the kinematic body's velocity "
+"several times in a loop as, to produce a smooth motion, it moves the "
+"character and collides up to five times by default. At the end of the "
+"process, the character's new velocity is available for use on the next frame."
+msgstr ""
+"``move_and_slide()`` 还可以在循环中多次重新计算运动体的速度, 为了产生一个平滑"
+"的运动, 它默认会移动角色, 并碰撞5次, 在这个过程结束时, 函数返回角色的新速度, "
+"可以将其存储在 ``velocity`` 变量中, 并在下一帧中使用."
+
+msgid "Examples"
+msgstr "示例"
+
+msgid ""
+"To see these examples in action, download the sample project: "
+"`character_body_2d_starter.zip <https://github.com/godotengine/godot-docs-"
+"project-starters/releases/download/latest-4.x/character_body_2d_starter."
+"zip>`_"
+msgstr ""
+
+msgid "Movement and walls"
+msgstr "移动和墙壁"
+
+#, fuzzy
+msgid ""
+"If you've downloaded the sample project, this example is in \"basic_movement."
+"tscn\"."
+msgstr "如果你已经下载了示例项目, 这个例子在 \"BasicMovement.tscn\" 中."
+
+#, fuzzy
+msgid ""
+"For this example, add a ``CharacterBody2D`` with two children: a "
+"``Sprite2D`` and a ``CollisionShape2D``. Use the Godot \"icon.svg\" as the "
+"Sprite2D's texture (drag it from the Filesystem dock to the *Texture* "
+"property of the ``Sprite2D``). In the ``CollisionShape2D``'s *Shape* "
+"property, select \"New RectangleShape2D\" and size the rectangle to fit over "
+"the sprite image."
+msgstr ""
+"在这个例子中, 添加一个 ``KinematicBody2D`` , 有两个子级: ``Sprite`` 和 "
+"``CollisionShape2D`` . 使用Godot \"icon.png\" 作为Sprite的纹理, 将其从文件系"
+"统栏拖到 ``Sprite`` 的 *Texture* 属性. 在 ``CollisionShape2D`` 的 *Shape* 属"
+"性中, 选择 \"New RectangleShape2D\" , 并将矩形的大小调整到适合sprite图像的大"
+"小."
+
+msgid ""
+"See :ref:`doc_2d_movement` for examples of implementing 2D movement schemes."
+msgstr "有关实现2D移动方案的示例, 请参阅 :ref:`doc_2d_movement` ."
+
+#, fuzzy
+msgid "Attach a script to the CharacterBody2D and add the following code:"
+msgstr "将脚本附加到KinematicBody2D并添加以下代码:"
+
+#, fuzzy
+msgid ""
+"Run this scene and you'll see that ``move_and_collide()`` works as expected, "
+"moving the body along the velocity vector. Now let's see what happens when "
+"you add some obstacles. Add a :ref:`StaticBody2D <class_StaticBody2D>` with "
+"a rectangular collision shape. For visibility, you can use a Sprite2D, a "
+"Polygon2D, or turn on \"Visible Collision Shapes\" from the \"Debug\" menu."
+msgstr ""
+"运行这个场景, 您会看到 ``move_and_collide()`` 按预期工作, 沿着速度向量方向移"
+"动物体. 现在让我们看看当您添加一些障碍时会发生什么. 添加一个具有矩形碰撞形状"
+"的 :ref:`StaticBody2D <class_StaticBody2D>` . 为了可见性, 您可以使用精灵,"
+"Polygon2D, 或从 \"调试\" 菜单中打开 \"可见碰撞形状\"."
+
+#, fuzzy
+msgid ""
+"Run the scene again and try moving into the obstacle. You'll see that the "
+"``CharacterBody2D`` can't penetrate the obstacle. However, try moving into "
+"the obstacle at an angle and you'll find that the obstacle acts like glue - "
+"it feels like the body gets stuck."
+msgstr ""
+"再次运行场景并尝试移动到障碍物中. 您会看到 ``KinematicBody2D`` 无法穿透障碍"
+"物. 但是, 尝试以某个角度进入障碍物, 您会发现障碍物就像胶水一样 - 感觉物体被卡"
+"住了."
+
+msgid ""
+"This happens because there is no *collision response*. "
+"``move_and_collide()`` stops the body's movement when a collision occurs. We "
+"need to code whatever response we want from the collision."
+msgstr ""
+"发生这种情况是因为没有 *碰撞响应* . ``move_and_collide()`` 在碰撞发生时停止物"
+"体的运动. 我们需要编写我们想要的碰撞响应."
+
+#, fuzzy
+msgid "Try changing the function to ``move_and_slide()`` and running again."
+msgstr ""
+"尝试将函数更改为 ``move_and_slide(velocity)`` 并再次运行. 请注意, 我们从速度"
+"计算中删除了 \"delta\"."
+
+msgid ""
+"``move_and_slide()`` provides a default collision response of sliding the "
+"body along the collision object. This is useful for a great many game types, "
+"and may be all you need to get the behavior you want."
+msgstr ""
+"``move_and_slide()`` 提供了一个沿碰撞对象滑动物体的默认碰撞响应. 这对于许多游"
+"戏类型都很有用, 并且可能是获得所需行为所需的全部内容."
+
+msgid "Bouncing/reflecting"
+msgstr "弹跳/反射"
+
+#, fuzzy
+msgid ""
+"What if you don't want a sliding collision response? For this example "
+"(\"bounce_and_collide.tscn\" in the sample project), we have a character "
+"shooting bullets and we want the bullets to bounce off the walls."
+msgstr ""
+"如果您不想要滑动碰撞响应怎么办？ 对于这个示例(示例项目中的 "
+"\"BounceandCollide.tscn\"), 我们有一个角色射击子弹, 我们希望子弹从墙上反弹."
+
+msgid ""
+"This example uses three scenes. The main scene contains the Player and "
+"Walls. The Bullet and Wall are separate scenes so that they can be instanced."
+msgstr ""
+"此示例使用三个场景. 主场景包含游戏角色和墙壁. 子弹和墙是单独的场景, 以便它们"
+"可以实例化."
+
+#, fuzzy
+msgid ""
+"The Player is controlled by the ``w`` and ``s`` keys for forward and back. "
+"Aiming uses the mouse pointer. Here is the code for the Player, using "
+"``move_and_slide()``:"
+msgstr ""
+"游戏角色由 `w` 和 `s` 键控制前进和后退. 瞄准使用鼠标指针. 这是游戏角色的代"
+"码, 使用 ``move_and_slide()`` :"
+
+msgid "And the code for the Bullet:"
+msgstr "子弹的代码:"
+
+#, fuzzy
+msgid ""
+"The action happens in ``_physics_process()``. After using "
+"``move_and_collide()``, if a collision occurs, a ``KinematicCollision2D`` "
+"object is returned (otherwise, the return is ``null``)."
+msgstr ""
+"动作发生在 ``_physics_process()`` 中. 在使用 ``move_and_collide()`` 后, 如果"
+"发生碰撞, 将返回一个 ``KinematicCollision2D`` 对象, 否则, 返回 ``Nil`` ."
+
+msgid ""
+"If there is a returned collision, we use the ``normal`` of the collision to "
+"reflect the bullet's ``velocity`` with the ``Vector2.bounce()`` method."
+msgstr ""
+"如果有一个返回的碰撞, 我们使用碰撞的 ``normal`` 来反映子弹的 ``velocity`` 和 "
+"``Vector2.bounce()`` 方法."
+
+msgid ""
+"If the colliding object (``collider``) has a ``hit`` method, we also call "
+"it. In the example project, we've added a flashing color effect to the Wall "
+"to demonstrate this."
+msgstr ""
+"如果碰撞对象( ``collider`` )有一个 ``hit`` 方法, 我们也调用它. 在示例项目中, "
+"我们为墙壁添加了一个颜色闪烁效果来演示这一点."
+
+msgid "Platformer movement"
+msgstr "平台运动"
+
+#, fuzzy
+msgid ""
+"Let's try one more popular example: the 2D platformer. ``move_and_slide()`` "
+"is ideal for quickly getting a functional character controller up and "
+"running. If you've downloaded the sample project, you can find this in "
+"\"platformer.tscn\"."
+msgstr ""
+"让我们尝试一个更流行的示例:2D平台游戏. ``move_and_slide()`` 非常适合快速启动"
+"和运行功能字符控制器. 如果您已下载示例项目, 可以在 \"Platformer.tscn\" 中找到"
+"它."
+
+#, fuzzy
+msgid ""
+"For this example, we'll assume you have a level made of one or more "
+"``StaticBody2D`` objects. They can be any shape and size. In the sample "
+"project, we're using :ref:`Polygon2D <class_Polygon2D>` to create the "
+"platform shapes."
+msgstr ""
+"对于这个示例, 我们假设您有一个由 ``StaticBody2D`` 对象构成的级别. 它们可以是"
+"任何形状和大小. 在示例项目中, 我们使用 :ref:`Polygon2D <class_Polygon2D>` 来"
+"创建平台形状."
+
+msgid "Here's the code for the player body:"
+msgstr "这是游戏角色物体的代码:"
+
+msgid ""
+"In this code we're using ``move_and_slide()`` as described above - to move "
+"the body along its velocity vector, sliding along any collision surfaces "
+"such as the ground or a platform. We're also using ``is_on_floor()`` to "
+"check if a jump should be allowed. Without this, you'd be able to \"jump\" "
+"in midair; great if you're making Flappy Bird, but not for a platformer game."
+msgstr ""
+
+msgid ""
+"There is a lot more that goes into a complete platformer character: "
+"acceleration, double-jumps, coyote-time, and many more. The code above is "
+"just a starting point. You can use it as a base to expand into whatever "
+"movement behavior you need for your own projects."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻译状态"

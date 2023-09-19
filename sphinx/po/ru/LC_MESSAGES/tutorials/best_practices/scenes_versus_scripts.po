@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,11 +27,12 @@ msgstr ""
 "Мы уже рассмотрели, чем отличаются сцены и скрипты. Скрипты определяют "
 "расширение класса движка с императивным кодом, сцены - с декларативным кодом."
 
+#, fuzzy
 msgid ""
 "Each system's capabilities are different as a result. Scenes can define how "
 "an extended class initializes, but not what its behavior actually is. Scenes "
-"are often used in conjunction with a script so that the scene acts as an "
-"extension of the scripts declarative code."
+"are often used in conjunction with a script, the scene declaring a "
+"composition of nodes, and the script adding behaviour with imperative code."
 msgstr ""
 "В результате возможности каждой системы различны. Сцены могут определять, "
 "как инициализируется расширенный класс, но не его поведение на самом деле. "
@@ -71,11 +72,12 @@ msgstr ""
 msgid "Named types"
 msgstr "Именованные типы"
 
+#, fuzzy
 msgid ""
-"In some cases, a user can register a script as a new type within the editor "
-"itself. This displays it as a new type in the node or resource creation "
-"dialog with an optional icon. In these cases, the user's ability to use the "
-"script is much more streamlined. Rather than having to..."
+"Scripts can be registered as a new type within the editor itself. This "
+"displays it as a new type in the node or resource creation dialog with an "
+"optional icon. This way, the user's ability to use the script is much more "
+"streamlined. Rather than having to..."
 msgstr ""
 "В некоторых случаях пользователь может зарегистрировать скрипт как новый тип "
 "в самом редакторе. Это отобразит его как новый тип в диалоговом окне "
@@ -92,43 +94,19 @@ msgstr "Создайте экземпляр этого базового типа
 msgid "Add the script to the node."
 msgstr "Добавьте скрипт в узел."
 
-msgid "(Drag-n-drop method)"
-msgstr "(Метод Drag-n-drop)"
-
-msgid "Find the script in the FileSystem dock."
-msgstr "Найдите скрипт в панели FileSystem."
-
-msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr "Перетащите скрипт на ноду, в панели Scene."
-
-msgid "(Property method)"
-msgstr "(Метод свойства)"
-
-msgid ""
-"Scroll down to the bottom of the Inspector to find the ``script`` property "
-"and select it."
-msgstr ""
-"Прокрутите вниз до нижней части инспектора, найдите свойство ``script`` и "
-"выберите его."
-
-msgid "Select \"Load\" from the dropdown."
-msgstr "В раскрывающемся списке выберите \"Load\" (Загрузить)."
-
-msgid "Select the script from the file dialog."
-msgstr "Выберите скрипт в диалоге выбора файлов."
-
+#, fuzzy
 msgid ""
 "With a registered script, the scripted type instead becomes a creation "
-"option like the other nodes and resources in the system. One need not do any "
-"of the above work. The creation dialog even has a search bar to look up the "
-"type by name."
+"option like the other nodes and resources in the system. The creation dialog "
+"even has a search bar to look up the type by name."
 msgstr ""
 "При наличии зарегистрированного скрипта, тип сценария вместо этого "
 "становится вариантом создания, как и другие узлы и ресурсы в системе. Ничего "
 "из вышеперечисленного делать не нужно. В диалоговом окне создания даже есть "
 "строка поиска для поиска типа по имени."
 
-msgid "There are two systems for registering types..."
+#, fuzzy
+msgid "There are two systems for registering types:"
 msgstr "Существует две системы регистрации типов..."
 
 msgid ":ref:`Custom Types <doc_making_plugins>`"
@@ -319,10 +297,11 @@ msgstr ""
 "должна быть сцена. Сцены легче отслеживать/редактировать и обеспечивают "
 "большую безопасность, чем скрипты."
 
+#, fuzzy
 msgid ""
 "If one would like to give a name to a scene, then they can still sort of do "
-"this in 3.1 by declaring a script class and giving it a scene as a constant. "
-"The script becomes, in effect, a namespace:"
+"this by declaring a script class and giving it a scene as a constant. The "
+"script becomes, in effect, a namespace:"
 msgstr ""
 "Если кто-то хочет дать сцене имя, то он все равно может сделать это в 3.1, "
 "объявив класс скрипта и дав ему сцену в качестве константы. Скрипт "

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,6 +57,38 @@ msgstr ""
 msgid "Command line reference"
 msgstr "명령줄 참조"
 
+#, fuzzy
+msgid "release"
+msgstr "**release**"
+
+#, fuzzy
+msgid "debug"
+msgstr "디버그"
+
+#, fuzzy
+msgid "editor"
+msgstr "에디터"
+
+msgid "**Legend**"
+msgstr ""
+
+msgid ""
+"|release| Available in editor builds, debug export templates and release "
+"export templates."
+msgstr ""
+
+msgid "|debug| Available in editor builds and debug export templates only."
+msgstr ""
+
+msgid "|editor| Only available in editor builds."
+msgstr ""
+
+msgid ""
+"Note that unknown command line arguments have no effect whatsoever. The "
+"engine will **not** warn you when using a command line argument that doesn't "
+"exist with a given build type."
+msgstr ""
+
 msgid "**General options**"
 msgstr "**일반 옵션**"
 
@@ -66,28 +98,35 @@ msgstr "명령"
 msgid "Description"
 msgstr "설명"
 
-msgid "``-h``, ``--help``, ``/?``"
+#, fuzzy
+msgid "``-h``, ``--help``"
 msgstr "``-h``, ``--help``, ``/?``"
 
-msgid "Display the list of command line options."
+#, fuzzy
+msgid "|release| Display the list of command line options."
 msgstr "명령줄 옵션 목록을 표시합니다."
 
 msgid "``--version``"
 msgstr "``--version``"
 
-msgid "Display the version string."
+#, fuzzy
+msgid "|release| Display the version string."
 msgstr "버전 문자열을 표시합니다."
 
 msgid "``-v``, ``--verbose``"
 msgstr "``-v``, ``--verbose``"
 
-msgid "Use verbose stdout mode."
+#, fuzzy
+msgid "|release| Use verbose stdout mode."
 msgstr "Verbose 표준 출력 모드를 사용합니다."
 
-msgid "``--quiet``"
-msgstr "``--quiet``"
+#, fuzzy
+msgid "``-q``, ``--quiet``"
+msgstr "``-q``, ``--quit``"
 
-msgid "Quiet mode, silences stdout messages. Errors are still displayed."
+#, fuzzy
+msgid ""
+"|release| Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr ""
 "조용한 모드. 표준 출력으로 메시지를 출력하지 않습니다. 오류는 계속 표시됩니"
 "다."
@@ -95,68 +134,95 @@ msgstr ""
 msgid "**Run options**"
 msgstr "**실행 설정**"
 
+#, fuzzy
+msgid "``--``, ``++``"
+msgstr "``-q``, ``--quit``"
+
+msgid ""
+"|release| Separator for user-provided arguments. Following arguments are not "
+"used by the engine, but can be read from ``OS.get_cmdline_user_args()``."
+msgstr ""
+
 msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
 
-msgid ""
-"Start the editor instead of running the scene (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgid "|editor| Start the editor instead of running the scene."
 msgstr ""
-"씬을 실행하는 대신 에디터를 시작합니다 (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어야 합니다)."
 
 msgid "``-p``, ``--project-manager``"
 msgstr "``-p``, ``--project-manager``"
 
-msgid ""
-"Start the project manager, even if a project is auto-detected (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgid "|editor| Start the Project Manager, even if a project is auto-detected."
 msgstr ""
-"프로젝트가 자동으로 감지되어도, 프로젝트 매니저를 먼저 시작합니다. (:ref:"
-"`tools <doc_introduction_to_the_buildsystem_tools>`\\ 이 켜져 있어야 합니다)."
 
-msgid "``-q``, ``--quit``"
-msgstr "``-q``, ``--quit``"
+#, fuzzy
+msgid "``--debug-server <uri>``"
+msgstr "``--video-driver <driver>``"
 
-msgid "Quit after the first iteration."
+msgid ""
+"|editor| Start the editor debug server (``<protocol>://<host/IP>[:<port>]``, "
+"e.g. ``tcp://127.0.0.1:6007``)"
+msgstr ""
+
+#, fuzzy
+msgid "``--quit``"
+msgstr "``--quiet``"
+
+#, fuzzy
+msgid "|release| Quit after the first iteration."
 msgstr "첫 반복 이후에 종료합니다."
 
-msgid "``-l <locale>``, ``--language <locale>``"
+#, fuzzy
+msgid "``--quit-after``"
+msgstr "``--quiet``"
+
+msgid ""
+"|release| Quit after the given number of iterations. Set to 0 to disable."
+msgstr ""
+
+#, fuzzy
+msgid "``-l``, ``--language <locale>``"
 msgstr "``-l <locale>``, ``--language <locale>``"
 
 msgid ""
-"Use a specific locale (<locale> being a two-letter code). See :ref:"
-"`doc_locales` for more details."
+"|release| Use a specific locale. ``<locale>`` follows the format "
+"``language_Script_COUNTRY_VARIANT`` where language is a 2 or 3-letter "
+"language code in lowercase and the rest is optional. See :ref:`doc_locales` "
+"for more details."
 msgstr ""
-"특정 로케일(두_단어 코드의 <locale>)을 사용합니다. 더 자세한 정보는 :ref:"
-"`doc_locales`\\ 을 참고하세요."
 
 msgid "``--path <directory>``"
 msgstr "``--path <directory>``"
 
-msgid "Path to a project (<directory> must contain a 'project.godot' file)."
+#, fuzzy
+msgid ""
+"|release| Path to a project (``<directory>`` must contain a 'project.godot' "
+"file)."
 msgstr ""
 "프로젝트의 경로 (<directory>에는 'project.godot' 파일이 있어야 합니다)."
 
 msgid "``-u``, ``--upwards``"
 msgstr "``-u``, ``--upwards``"
 
-msgid "Scan folders upwards for 'project.godot' file."
+#, fuzzy
+msgid "|release| Scan folders upwards for 'project.godot' file."
 msgstr "'project.godot' 파일을 찾기 위해 위로 폴더를 스캔합니다."
 
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-msgid "Path to a pack (.pck) file to load."
+#, fuzzy
+msgid "|release| Path to a pack (.pck) file to load."
 msgstr "불러올 팩 (.pck) 파일의 경로."
 
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
 
+#, fuzzy
 msgid ""
-"Render thread mode ('unsafe', 'safe', 'separate'). See :ref:`Thread Model "
-"<class_ProjectSettings_property_rendering/threads/thread_model>` for more "
-"details."
+"|release| Render thread mode ('unsafe', 'safe', 'separate'). See :ref:"
+"`Thread Model <class_ProjectSettings_property_rendering/driver/threads/"
+"thread_model>` for more details."
 msgstr ""
 "렌더 스레드 모드 ('unsafe', 'safe', 'separate'). 더 자세한 정보는 :ref:"
 "`Thread Model <class_ProjectSettings_property_rendering/threads/"
@@ -165,26 +231,101 @@ msgstr ""
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
 
-msgid "Remote filesystem (``<host/IP>[:<port>]`` address)."
+#, fuzzy
+msgid "|release| Remote filesystem (``<host/IP>[:<port>]`` address)."
 msgstr "원격 파일 시스템 (``<host/IP>[:<port>]`` 주소)."
+
+#, fuzzy
+msgid "``--remote-fs-password <password>``"
+msgstr "``--remote-fs <address>``"
+
+msgid "|release| Password for remote filesystem."
+msgstr ""
 
 msgid "``--audio-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
+#, fuzzy
 msgid ""
-"Audio driver. Use ``--help`` first to display the list of available drivers."
+"|release| Audio driver. Use ``--help`` first to display the list of "
+"available drivers."
 msgstr ""
 "오디오 드라이버. 사용할 수 있는 드라이버 목록을 표시하려면 먼저 ``--help``\\ "
 "를 입력하세요."
 
-msgid "``--video-driver <driver>``"
-msgstr "``--video-driver <driver>``"
+#, fuzzy
+msgid "``--display-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
 
+#, fuzzy
 msgid ""
-"Video driver. Use ``--help`` first to display the list of available drivers."
+"|release| Display driver (and rendering driver). Use ``--help`` first to "
+"display the list of available drivers."
 msgstr ""
 "비디오 드라이버. 사용할 수 있는 드라이버 목록을 표시하려면 먼저 ``--help``\\ "
 "를 입력하세요."
+
+#, fuzzy
+msgid "``--rendering-method <renderer>``"
+msgstr "``--render-thread <mode>``"
+
+msgid "|release| Renderer name. Requires driver support."
+msgstr ""
+
+#, fuzzy
+msgid "``--rendering-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
+
+#, fuzzy
+msgid ""
+"|release| Rendering driver (depends on display driver). Use ``--help`` first "
+"to display the list of available drivers."
+msgstr ""
+"비디오 드라이버. 사용할 수 있는 드라이버 목록을 표시하려면 먼저 ``--help``\\ "
+"를 입력하세요."
+
+msgid "``--gpu-index <device_index>``"
+msgstr ""
+
+msgid ""
+"|release| Use a specific GPU (run with ``--verbose`` to get available device "
+"list)."
+msgstr ""
+
+#, fuzzy
+msgid "``--text-driver <driver>``"
+msgstr "``--video-driver <driver>``"
+
+msgid "|release| Text driver (Fonts, BiDi, shaping)."
+msgstr ""
+
+#, fuzzy
+msgid "``--tablet-driver <driver>``"
+msgstr "``--audio-driver <driver>``"
+
+msgid "|release| Pen tablet input driver."
+msgstr ""
+
+#, fuzzy
+msgid "``--headless``"
+msgstr "``--remote-fs <address>``"
+
+msgid ""
+"|release| Enable headless mode (``--display-driver headless --audio-driver "
+"Dummy``). Useful for servers and with ``--script``."
+msgstr ""
+
+#, fuzzy
+msgid "``--write-movie <file>``"
+msgstr "``--main-pack <file>``"
+
+msgid ""
+"|release| Run the engine in a way that a movie is written (usually with .avi "
+"or .png extension). ``--fixed-fps`` is forced when enabled, but can be used "
+"to change movie FPS. ``--disable-vsync`` can speed up movie writing but "
+"makes interaction more difficult. ``--quit-after`` can be used to specify "
+"the number of frames to write."
+msgstr ""
 
 msgid "**Display options**"
 msgstr "**디스플레이 설정**"
@@ -192,75 +333,84 @@ msgstr "**디스플레이 설정**"
 msgid "``-f``, ``--fullscreen``"
 msgstr "``-f``, ``--fullscreen``"
 
-msgid "Request fullscreen mode."
+#, fuzzy
+msgid "|release| Request fullscreen mode."
 msgstr "전체화면 모드를 요청합니다."
 
 msgid "``-m``, ``--maximized``"
 msgstr "``-m``, ``--maximized``"
 
-msgid "Request a maximized window."
+#, fuzzy
+msgid "|release| Request a maximized window."
 msgstr "최대화된 창을 요청합니다."
 
 msgid "``-w``, ``--windowed``"
 msgstr "``-w``, ``--windowed``"
 
-msgid "Request windowed mode."
+#, fuzzy
+msgid "|release| Request windowed mode."
 msgstr "창모드를 요청합니다."
 
 msgid "``-t``, ``--always-on-top``"
 msgstr "``-t``, ``--always-on-top``"
 
-msgid "Request an always-on-top window."
+#, fuzzy
+msgid "|release| Request an always-on-top window."
 msgstr "항상 화면 위에 고정된(always-on-top) 창을 요청합니다."
 
 msgid "``--resolution <W>x<H>``"
 msgstr "``--resolution <W>x<H>``"
 
-msgid "Request window resolution."
+#, fuzzy
+msgid "|release| Request window resolution."
 msgstr "창 해상도를 요청합니다."
 
 msgid "``--position <X>,<Y>``"
 msgstr "``--position <X>,<Y>``"
 
-msgid "Request window position."
+#, fuzzy
+msgid "|release| Request window position."
 msgstr "창 위치를 요청합니다."
 
-msgid "``--low-dpi``"
-msgstr "``--low-dpi``"
+#, fuzzy
+msgid "``--screen <N>``"
+msgstr "``--frame-delay <ms>``"
 
-msgid "Force low-DPI mode (macOS and Windows only)."
-msgstr "낮은 DPI 모드를 강제합니다 (macOS와 Windows만 가능)."
+#, fuzzy
+msgid "|release| Request window screen."
+msgstr "창 해상도를 요청합니다."
 
-msgid "``--no-window``"
+#, fuzzy
+msgid "``--single-window``"
 msgstr "``--no-window``"
 
-msgid "Run with invisible window. Useful together with ``--script``."
-msgstr "창이 보이지 않도록 합니다. ``--script``\\ 와 함께 쓰면 유용합니다."
+msgid "|release| Use a single window (no separate subwindows)."
+msgstr ""
+
+#, fuzzy
+msgid "``--xr-mode <mode>``"
+msgstr "``--render-thread <mode>``"
+
+msgid "|release| Select XR mode ('default', 'off', 'on')."
+msgstr ""
 
 msgid "**Debug options**"
 msgstr "**디버그 설정**"
 
-msgid ""
-"Debug options are only available in the editor and debug export templates "
-"(they require ``debug`` or ``release_debug`` build targets, see :ref:"
-"`doc_introduction_to_the_buildsystem_target` for more details)."
-msgstr ""
-"디버그 설정은 에디터와 디버그 내보내기 템플릿에서만 사용할 수 있습니다 "
-"(``debug`` 또는 ``release_debug`` 빌드 대상이 필요합니다. 더 자세한 정보는 :"
-"ref:`doc_introduction_to_the_buildsystem_target`\\ 을 참고하세요)."
-
 msgid "``-d``, ``--debug``"
 msgstr "``-d``, ``--debug``"
 
-msgid "Debug (local stdout debugger)."
+#, fuzzy
+msgid "|release| Debug (local stdout debugger)."
 msgstr "디버그 (로컬 표준 출력 디버거)."
 
 msgid "``-b``, ``--breakpoints``"
 msgstr "``-b``, ``--breakpoints``"
 
+#, fuzzy
 msgid ""
-"Breakpoint list as source::line comma-separated pairs, no spaces (use %%20 "
-"instead)."
+"|release| Breakpoint list as source::line comma-separated pairs, no spaces "
+"(use ``%20`` instead)."
 msgstr ""
 "브레이크포인트 목록. 소스::라인 형태로 쉼표로 구분되며, 공백이 없습니다 (공"
 "백 대신 %%20을 사용합니다)."
@@ -268,48 +418,128 @@ msgstr ""
 msgid "``--profiling``"
 msgstr "``--profiling``"
 
-msgid "Enable profiling in the script debugger."
+#, fuzzy
+msgid "|release| Enable profiling in the script debugger."
 msgstr "스크립트 디버거에서 프로파일링을 켭니다."
 
-msgid "``--remote-debug <address>``"
+#, fuzzy
+msgid "``--gpu-profile``"
+msgstr "``--profiling``"
+
+msgid ""
+"|release| Show a GPU profile of the tasks that took the most time during "
+"frame rendering."
+msgstr ""
+
+#, fuzzy
+msgid "``--gpu-validation``"
+msgstr "``--debug-navigation``"
+
+msgid ""
+"|release| Enable graphics API :ref:`validation layers "
+"<doc_vulkan_validation_layers>` for debugging."
+msgstr ""
+
+#, fuzzy
+msgid "``--gpu-abort``"
+msgstr "``--quiet``"
+
+msgid ""
+"|debug| Abort on GPU errors (usually validation layer errors), may help see "
+"the problem if your system freezes."
+msgstr ""
+
+#, fuzzy
+msgid "``--remote-debug <uri>``"
 msgstr "``--remote-debug <address>``"
 
-msgid "Remote debug (``<host/IP>:<port>`` address)."
-msgstr "원격 디버그 (``<host/IP>:<port>`` 주소)."
+msgid ""
+"|release| Remote debug (``<protocol>://<host/IP>[:<port>]``, e.g. "
+"``tcp://127.0.0.1:6007``)."
+msgstr ""
+
+#, fuzzy
+msgid "``--single-threaded-scene``"
+msgstr "``--render-thread <mode>``"
+
+msgid ""
+"|release| Scene tree runs in single-threaded mode. Sub-thread groups are "
+"disabled and run on the main thread."
+msgstr ""
 
 msgid "``--debug-collisions``"
 msgstr "``--debug-collisions``"
 
-msgid "Show collision shapes when running the scene."
+#, fuzzy
+msgid "|debug| Show collision shapes when running the scene."
+msgstr "씬을 실행할 때 콜리전 모양을 보여줍니다."
+
+#, fuzzy
+msgid "``--debug-paths``"
+msgstr "``--debug-navigation``"
+
+#, fuzzy
+msgid "|debug| Show path lines when running the scene."
 msgstr "씬을 실행할 때 콜리전 모양을 보여줍니다."
 
 msgid "``--debug-navigation``"
 msgstr "``--debug-navigation``"
 
-msgid "Show navigation polygons when running the scene."
+#, fuzzy
+msgid "|debug| Show navigation polygons when running the scene."
 msgstr "씬을 실행할 때 내비게이션 폴리곤을 보여줍니다."
+
+#, fuzzy
+msgid "``--debug-avoidance``"
+msgstr "``--debug-navigation``"
+
+#, fuzzy
+msgid "|debug| Show navigation avoidance debug visuals when running the scene."
+msgstr "씬을 실행할 때 내비게이션 폴리곤을 보여줍니다."
+
+#, fuzzy
+msgid "``--debug-stringnames``"
+msgstr "``--debug-collisions``"
+
+msgid ""
+"|debug| Print all StringName allocations to stdout when the engine quits."
+msgstr ""
 
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-msgid "Simulate high CPU load (delay each frame by <ms> milliseconds)."
+#, fuzzy
+msgid ""
+"|release| Simulate high CPU load (delay each frame by <ms> milliseconds)."
 msgstr ""
 "높은 CPU 점유율을 시뮬레이션합니다 (각 프레임을 <ms> 밀리초만큼 지연합니다)."
 
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <scale>``"
 
-msgid "Force time scale (higher values are faster, 1.0 is normal speed)."
+#, fuzzy
+msgid ""
+"|release| Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr ""
 "실행 시간 규모를 제한합니다 (1.0이 기본 속도이며, 높은 값일 수록 더 빠릅니"
 "다)."
 
+#, fuzzy
+msgid "``--disable-vsync``"
+msgstr "``--disable-crash-handler``"
+
+msgid ""
+"|release| Forces disabling of vertical synchronization, even if enabled in "
+"the project settings. Does not override driver-level V-Sync enforcement."
+msgstr ""
+
 msgid "``--disable-render-loop``"
 msgstr "``--disable-render-loop``"
 
+#, fuzzy
 msgid ""
-"Disable render loop so rendering only occurs when called explicitly from "
-"script."
+"|release| Disable render loop so rendering only occurs when called "
+"explicitly from script."
 msgstr ""
 "렌더 루프를 끕니다. 따라서 스크립트에서 명시적으로 호출할 때만 렌더링을 합니"
 "다."
@@ -317,69 +547,108 @@ msgstr ""
 msgid "``--disable-crash-handler``"
 msgstr "``--disable-crash-handler``"
 
-msgid "Disable crash handler when supported by the platform code."
+#, fuzzy
+msgid "|release| Disable crash handler when supported by the platform code."
 msgstr "플랫폼 코드가 지원하는 경우 충돌 핸들러를 끕니다."
 
 msgid "``--fixed-fps <fps>``"
 msgstr "``--fixed-fps <fps>``"
 
+#, fuzzy
 msgid ""
-"Force a fixed number of frames per second. This setting disables real-time "
-"synchronization."
+"|release| Force a fixed number of frames per second. This setting disables "
+"real-time synchronization."
 msgstr ""
 "FPS(초당 프레임)을 고정된 숫자로 제한합니다. 이 설정은 실시간 동기화를 끕니"
 "다."
 
+msgid "``--delta-smoothing <enable>``"
+msgstr ""
+
+msgid ""
+"|release| Enable or disable frame delta smoothing ('enable', 'disable')."
+msgstr ""
+
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
-msgid "Print the frames per second to the stdout."
+#, fuzzy
+msgid "|release| Print the frames per second to the stdout."
 msgstr "표준 출력에 FPS(초당 프레임)를 프린트합니다."
 
 msgid "**Standalone tools**"
 msgstr "**독립형 툴**"
 
-msgid "``-s <script>``, ``--script <script>``"
+#, fuzzy
+msgid "``-s``, ``--script <script>``"
 msgstr "``-s <script>``, ``--script <script>``"
 
-msgid "Run a script."
+#, fuzzy
+msgid "|release| Run a script."
 msgstr "스크립트를 실행합니다."
 
 msgid "``--check-only``"
 msgstr "``--check-only``"
 
-msgid "Only parse for errors and quit (use with ``--script``)."
+#, fuzzy
+msgid "|release| Only parse for errors and quit (use with ``--script``)."
 msgstr "오류만 구문 분석하고 종료합니다 (``--script``\\ 와 함께 사용합니다)."
 
-msgid "``--export <target>``"
-msgstr "``--export <target>``"
+#, fuzzy
+msgid "``--export-release <preset> <path>``"
+msgstr "``--export-pack <preset> <path>``"
 
 msgid ""
-"Export the project using the given export target. Export only main pack if "
-"path ends with .pck or .zip (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Export the project using the given preset and matching release "
+"template. The preset name should match one defined in export_presets.cfg. "
+"``<path>`` should be absolute or relative to the project directory, and "
+"include the filename for the binary (e.g. 'builds/game.exe'). The target "
+"directory should exist."
 msgstr ""
-"주어진 내보내기 대상을 사용해서 프로젝트를 내보냅니다. 경로가 .pck나 .zip으"
-"로 확장자 이름으로 끝나는 경우, 메인 팩만 내보냅니다 (:ref:`tools(툴) "
-"<doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어야 합니다)."
 
-msgid "``--export-debug <target>``"
-msgstr "``--export-debug <target>``"
+#, fuzzy
+msgid "``--export-debug <preset> <path>``"
+msgstr "``--export-pack <preset> <path>``"
+
+msgid "|editor| Like ``--export-release``, but use debug template."
+msgstr ""
+
+msgid "``--export-pack <preset> <path>``"
+msgstr "``--export-pack <preset> <path>``"
+
+#, fuzzy
+msgid ""
+"|editor| Like ``--export-release``, but only export the game pack for the "
+"given preset. The ``<path>`` extension determines whether it will be in PCK "
+"or ZIP format."
+msgstr ""
+"``--export``\\ 와 비슷하지만 주어진 사전 설정에 대한 게임 팩만 내보냅니다. "
+"<path> 확장자는 PCK 형식인지 ZIP 형식인지 여부를 결정합니다. (:ref:"
+"`tools(툴) <doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어"
+"야 합니다)."
+
+msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
+msgstr ""
+
+msgid "|editor| Convert project from Godot 3.x to Godot 4.x."
+msgstr ""
+
+msgid "``--validate-conversion-3to4 [<max_file_kb>] [<max_line_size>]``"
+msgstr ""
 
 msgid ""
-"Like ``--export``, but use debug template (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Show what elements will be renamed when converting project from "
+"Godot 3.x to Godot 4.x."
 msgstr ""
-"``--export``\\ 와 비슷하지만 디버그 템플릿을 사용합니다 (:ref:`tools(툴) "
-"<doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어야 합니다)."
 
-msgid "``--doctool <path>``"
+#, fuzzy
+msgid "``--doctool [<path>]``"
 msgstr "``--doctool <path>``"
 
+#, fuzzy
 msgid ""
-"Dump the engine API reference to the given <path> in XML format, merging if "
-"existing files are found (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Dump the engine API reference to the given ``<path>`` in XML "
+"format, merging if existing files are found."
 msgstr ""
 "엔진 API 참조를 주어진 <경로>에 XML 형식으로 덤프합니다. 이미 해당 파일이 있"
 "다면 병합합니다. (:ref:`tools(툴) "
@@ -388,71 +657,91 @@ msgstr ""
 msgid "``--no-docbase``"
 msgstr "``--no-docbase``"
 
-msgid ""
-"Disallow dumping the base types (used with ``--doctool``, :ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+msgid "|editor| Disallow dumping the base types (used with ``--doctool``)."
 msgstr ""
-"기본 유형을 덤프하는 것을 허가하지 않습니다 (``--doctool``\\ 과 함께 쓰며, :"
-"ref:`tools(툴) <doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 "
-"있어야 합니다)."
+
+#, fuzzy
+msgid "``--gdscript-docs <path>``"
+msgstr "``--doctool <path>``"
+
+msgid ""
+"|editor| Rather than dumping the engine API, generate API reference from the "
+"inline documentation in the GDScript files found in <path> (used with ``--"
+"doctool``)."
+msgstr ""
 
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
 
 msgid ""
-"Build the scripting solutions (e.g. for C# projects, :ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Build the scripting solutions (e.g. for C# projects). Implies ``--"
+"editor`` and requires a valid project to edit."
 msgstr ""
-"스크립팅 솔루션을 빌드합니다 (예: C# 프로젝트 용. :ref:`tools(툴) "
-"<doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어야 합니다)."
 
-msgid "``--gdnative-generate-json-api``"
+msgid "``--dump-gdextension-interface``"
+msgstr ""
+
+msgid ""
+"|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
+"current folder. This file is the base file required to implement a "
+"GDExtension."
+msgstr ""
+
+#, fuzzy
+msgid "``--dump-extension-api``"
 msgstr "``--gdnative-generate-json-api``"
 
 msgid ""
-"Generate JSON dump of the Godot API for GDNative bindings (:ref:`tools "
-"<doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
+"'extension_api.json' in the current folder."
 msgstr ""
-"GDNative 바인딩을 위해 Godot API의 JSON 덤프를 만듭니다 (:ref:`tools(툴) "
-"<doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어야 합니다)."
 
-msgid "``--test <test>``"
-msgstr "``--test <test>``"
+#, fuzzy
+msgid "``--validate-extension-api <path>``"
+msgstr "``--gdnative-generate-json-api``"
 
 msgid ""
-"Run a unit test. Use ``--help`` first to display the list of tests. (:ref:"
-"`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Validate an extension API file dumped (with the option above) from "
+"a previous version of the engine to ensure API compatibility. If "
+"incompatibilities or errors are detected, the return code will be non-zero."
 msgstr ""
-"단위 테스트를 실행합니다. 테스트 목록을 표시하려면 ``--help``\\ 를 먼저 사용"
-"하세요. (:ref:`tools(툴) <doc_introduction_to_the_buildsystem_tools>`\\ 이 활"
-"성화되어 있어야 합니다)."
 
-msgid "``--export-pack <preset> <path>``"
-msgstr "``--export-pack <preset> <path>``"
+msgid "``--benchmark``"
+msgstr ""
+
+msgid "|editor| Benchmark the run time and print it to console."
+msgstr ""
+
+#, fuzzy
+msgid "``--benchmark-file <path>``"
+msgstr "``--doctool <path>``"
 
 msgid ""
-"Like ``--export``, but only export the game pack for the given preset. The "
-"<path> extension determines whether it will be in PCK or ZIP format. (:ref:"
-"`tools <doc_introduction_to_the_buildsystem_tools>` must be enabled)."
+"|editor| Benchmark the run time and save it to a given file in JSON format. "
+"The path should be absolute."
 msgstr ""
-"``--export``\\ 와 비슷하지만 주어진 사전 설정에 대한 게임 팩만 내보냅니다. "
-"<path> 확장자는 PCK 형식인지 ZIP 형식인지 여부를 결정합니다. (:ref:"
-"`tools(툴) <doc_introduction_to_the_buildsystem_tools>`\\ 이 활성화되어 있어"
-"야 합니다)."
 
 msgid "Path"
 msgstr "경로"
 
+#, fuzzy
 msgid ""
-"It is recommended that your Godot binary be in your PATH environment "
-"variable, so it can be executed easily from any place by typing ``godot``. "
-"You can do so on Linux by placing the Godot binary in ``/usr/local/bin`` and "
-"making sure it is called ``godot``."
+"It is recommended to place your Godot editor binary in your ``PATH`` "
+"environment variable, so it can be executed easily from any place by typing "
+"``godot``. You can do so on Linux by placing the Godot binary in ``/usr/"
+"local/bin`` and making sure it is called ``godot`` (case-sensitive)."
 msgstr ""
 "Godot 바이너리의 경로를 PATH 환경 변수에 넣어서 ``godot``\\ 를 입력하면 어느 "
 "곳에서든지 쉽게 실행하는 것을 권장합니다. Linux에서는 Godot 바이너리를 ``/"
 "usr/local/bin``\\ 에 배치해서 ``godot``\\ 를 입력하면 실행되게 할 수 있습니"
 "다."
+
+msgid ""
+"To achieve this on Windows or macOS easily, you can install Godot using "
+"`Scoop <https://scoop.sh>`__ (on Windows) or `Homebrew <https://brew.sh>`__ "
+"(on macOS). This will automatically make the copy of Godot installed "
+"available in the ``PATH``:"
+msgstr ""
 
 msgid "Setting the project path"
 msgstr "프로젝트 경로 설정하기"
@@ -485,9 +774,10 @@ msgstr ""
 msgid "Creating a project"
 msgstr "프로젝트 생성하기"
 
+#, fuzzy
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
-"to the desired place and making a project.godot file."
+"to the desired place and making a ``project.godot`` file."
 msgstr ""
 "명령줄에서 프로젝트를 생성하려면 셸을 원하는 위치로 이동하고 project.godot 파"
 "일을 만드세요."
@@ -498,10 +788,11 @@ msgstr "프로젝트는 이제 Godot로 열 수 있습니다."
 msgid "Running the editor"
 msgstr "에디터 실행하기"
 
+#, fuzzy
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
-"the command is ignored and the project manager appears."
+"the command is ignored and the Project Manager appears."
 msgstr ""
 "Godot를 ``-e`` 플래그로 실행하면 에디터가 실행됩니다. 이 작업은 프로젝트 디렉"
 "토리 또는 하위 디렉토리에서 수행해야 합니다, 그렇지 않으면 명령이 무시되고 프"
@@ -517,10 +808,11 @@ msgstr ""
 msgid "Erasing a scene"
 msgstr "씬 지우기"
 
+#, fuzzy
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
-"scene or else an error will be thrown upon opening."
+"scene. Otherwise, an error will be thrown upon opening the project."
 msgstr ""
 "Godot는 여러분의 파일 시스템에 친화적이고 추가적인 메타데이터 파일을 만들지 "
 "않습니다. 씬 파일을 지우려면 ``rm``\\ 을 사용하세요. 지울 씬을 참조하는 게 있"
@@ -544,10 +836,11 @@ msgstr "특정 씬을 테스트해야 하는 경우 씬을 명령줄로 전달�
 msgid "Debugging"
 msgstr "디버깅"
 
+#, fuzzy
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
-"just fly by. For this, a command line debugger is provided by adding ``-d``. "
-"It works for running either the game or a simple scene."
+"scroll quickly. For this, a command line debugger is provided by adding ``-"
+"d``. It works for running either the game or a single scene."
 msgstr ""
 "명령줄에서는 오류가 기록되지 않기 때문에 오류를 잡는 것이 어려운 작업이 될 "
 "수 있습니다. 이를 위해 명령줄은 ``d``\\ 옵션을 통해 디버거를 제공합니다. 게임"
@@ -556,14 +849,21 @@ msgstr ""
 msgid "Exporting"
 msgstr "내보내기(Exporting)"
 
+#, fuzzy
 msgid ""
 "Exporting the project from the command line is also supported. This is "
-"especially useful for continuous integration setups. The version of Godot "
-"that is headless (server build, no video) is ideal for this."
+"especially useful for continuous integration setups."
 msgstr ""
 "명령줄에서 프로젝트를 내보내는 것도 지원됩니다. 특히 연속적인 통합(CI: "
 "Continuous Integration) 설정에 유용합니다. Godot의 헤드리스 버전(서버 빌드, "
 "비디오 없음)은 이런 점에서 이상적입니다."
+
+msgid ""
+"Using the ``--headless`` command line argument is **required** on platforms "
+"that do not have GPU access (such as continuous integration). On platforms "
+"with GPU access, ``--headless`` prevents a window from spawning while the "
+"project is exporting."
+msgstr ""
 
 msgid ""
 "The preset name must match the name of an export preset defined in the "
@@ -575,28 +875,31 @@ msgstr ""
 "의 이름과 일치해야 합니다. 프리셋 이름에 공백이나 특수 문자(예: \"Windows 바"
 "탕화면\")가 포함된 경우 따옴표로 묶어야 합니다."
 
+#, fuzzy
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
-"instead of ``--export``. Their parameters and usage are the same."
+"instead of ``--export-release``. Their parameters and usage are the same."
 msgstr ""
 "게임의 디버그 버전을 내보내기 위해, ``--export`` 대신 ``--export-debug`` 스위"
 "치를 사용하세요. 매개 변수와 사용법은 동일합니다."
 
+#, fuzzy
 msgid ""
 "To export only a PCK file, use the ``--export-pack`` option followed by the "
-"preset name and output path, with the file extension, instead of ``--"
-"export``. The output path extension determines the package's format, either "
-"PCK or ZIP."
+"preset name and output path, with the file extension, instead of ``--export-"
+"release`` or ``--export-debug``. The output path extension determines the "
+"package's format, either PCK or ZIP."
 msgstr ""
 "PCK 파일만 내보내려면 내보내기 경로, 프리셋 이름, 파일 확장자 앞에 ``--"
 "export`` 대신 ``--export-pack`` 옵션을 사용하세요. 내보내기 경로 확장자는 패"
 "키지의 형식(PCK 또는 ZIP)을 결정합니다."
 
+#, fuzzy
 msgid ""
-"When specifying a relative path as the path for `--export`, `--export-debug` "
-"or `--export-pack`, the path will be relative to the directory containing "
-"the ``project.godot`` file, **not** relative to the current working "
-"directory."
+"When specifying a relative path as the path for ``--export-release``, ``--"
+"export-debug`` or ``--export-pack``, the path will be relative to the "
+"directory containing the ``project.godot`` file, **not** relative to the "
+"current working directory."
 msgstr ""
 "`--export`, `--export-debug` 또는 `--export-pack`\\ 의 경로로 상대 경로를 지"
 "정할 때 경로는 ``project.godot`` 파일이 포함된 디렉토리에 상대적이므로, 현재 "
@@ -605,10 +908,11 @@ msgstr ""
 msgid "Running a script"
 msgstr "스크립트 실행하기"
 
+#, fuzzy
 msgid ""
-"It is possible to run a simple ``.gd`` script from the command line. This "
-"feature is especially useful in large projects, e.g. for batch conversion of "
-"assets or custom import/export."
+"It is possible to run a ``.gd`` script from the command line. This feature "
+"is especially useful in large projects, e.g. for batch conversion of assets "
+"or custom import/export."
 msgstr ""
 "명령줄에서 .gd 스크립트를 간단하게 실행할 수 있습니다.특히 일괄 변환 또는 커"
 "스텀 불러오기/내보내기를 위한, 큰 프로젝트에서 유용합니다."
@@ -616,7 +920,8 @@ msgstr ""
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "스크립트는 ``SceneTree`` 또는 ``MainLoop``\\ 를 상속받아야 합니다."
 
-msgid "Here is a simple ``sayhello.gd`` example of how it works:"
+#, fuzzy
+msgid "Here is an example ``sayhello.gd``, showing how it works:"
 msgstr "다음은 작동 방식에 대한 간단한 ``sayhello.gd`` 예제입니다:"
 
 msgid "And how to run it:"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,11 @@ msgstr ""
 "pour Android. Les étapes suivantes détaillent ce qui est nécessaire pour "
 "configurer le SDK Android et le moteur."
 
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to "
+"Android. To use C# on Android, use Godot 3 instead."
+msgstr ""
+
 msgid "Install OpenJDK 11"
 msgstr "Installer OpenJDK 11"
 
@@ -54,9 +59,10 @@ msgstr "Télécharger le SDK Android"
 msgid "Download and install the Android SDK."
 msgstr "Télécharger et installer le SDK Android."
 
+#, fuzzy
 msgid ""
-"You can install it using `Android Studio version 4.1 or later <https://"
-"developer.android.com/studio/>`__."
+"You can install the Android SDK using `Android Studio version 4.1 or later "
+"<https://developer.android.com/studio/>`__."
 msgstr ""
 "Vous pouvez l'installer en utilisant `Android Studio version 4.1 ou "
 "ultérieure <https://developer.android.com/studio/>`__."
@@ -79,11 +85,12 @@ msgstr ""
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
 msgstr "Android SDK Platform-Tools version 30.0.5 ou supérieure"
 
-msgid "Android SDK Build-Tools version 30.0.3"
+#, fuzzy
+msgid "Android SDK Build-Tools version 33.0.2"
 msgstr "Android SDK Build-Tools version 30.0.3"
 
 #, fuzzy
-msgid "Android SDK Platform 31"
+msgid "Android SDK Platform 33"
 msgstr "Android SDK Platform 29"
 
 msgid "Android SDK Command-line Tools (latest)"
@@ -95,9 +102,10 @@ msgstr "CMake version 3.10.2.4988404"
 msgid "NDK version r23c (23.2.8568313)"
 msgstr "Version NDK r23c (23.2.8568313)"
 
+#, fuzzy
 msgid ""
-"You can install it using the `command line tools <https://developer.android."
-"com/studio/#command-tools>`__."
+"Alternatively, you can install the Android SDK using the `command line tools "
+"<https://developer.android.com/studio/#command-tools>`__."
 msgstr ""
 "Vous pouvez l'installer à l'aide des `outils en ligne de commande <https://"
 "developer.android.com/studio/#command-tools>`__."
@@ -154,6 +162,12 @@ msgstr ""
 "ultérieure. Pour plus d'informations sur l'utilisation de ``keytool``, voir "
 "`this Q&A article <https://godotengine.org/qa/21349/jdk-android-file-"
 "missing>`__."
+
+msgid ""
+"It is important that the password is the same for the keystore and the key. "
+"This is a `known Android studio issue <https://developer.android.com/studio/"
+"known-issues#ki-key-keystore-warning>`__ that also affects Godot projects."
+msgstr ""
 
 msgid "Setting it up in Godot"
 msgstr "La mise en place dans Godot"
@@ -357,16 +371,6 @@ msgstr ""
 "keystore et le mot de passe de la clé doivent actuellement être les mêmes."
 
 msgid ""
-"**Your export_presets.cfg file now contains sensitive information.** If you "
-"use a version control system, you should remove it from public repositories "
-"and add it to your ``.gitignore`` file or equivalent."
-msgstr ""
-"**Votre fichier export_presets.cfg contient maintenant des informations "
-"sensibles.** Si vous utilisez un système de contrôle de version, vous devez "
-"le supprimer des dépôts publics et l'ajouter à votre fichier ``.gitignore`` "
-"ou équivalent."
-
-msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr ""
 "N'oubliez pas de décocher la case **Export With Debug** lorsque vous "
@@ -417,25 +421,68 @@ msgstr ""
 "modèle d'export Android qui ne contient que les fonctionnalités que vous "
 "utilisez. Voir :ref:`doc_optimizing_for_size` pour plus d'informations."
 
-msgid "Troubleshooting rendering issues"
-msgstr "Diagnostiquer les problèmes de rendu"
+msgid "Environment variables"
+msgstr "Variables d'environnement"
 
 msgid ""
-"To improve out-of-the-box performance on mobile devices, Godot automatically "
-"uses low-end-friendly settings by default on both Android and iOS."
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
 msgstr ""
-"Pour améliorer les performances sur mobile, Godot utilise automatiquement "
-"les paramètres adaptés aux appareils bas de gamme par défaut pour Android et "
-"iOS."
 
-msgid ""
-"This can cause rendering issues that do not occur when running the project "
-"on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more "
-"information."
+#, fuzzy
+msgid "Android export environment variables"
+msgstr "Variables d'environnement"
+
+#, fuzzy
+msgid "Export option"
+msgstr "Options d'exportation"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "Variables d'environnement"
+
+msgid "Encryption / Encryption Key"
 msgstr ""
-"Cela peut causes des problèmes de rendu qui ne se produisent pas lorsque le "
-"projet est lancé depuis un ordinateur. Pour plus de détails, voir :ref:"
-"`doc_mobile_rendering_limitations`."
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
+
+msgid "Options / Keystore / Debug"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
+msgstr ""
+
+msgid "Options / Keystore / Debug User"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
+msgstr ""
+
+msgid "Options / Keystore / Debug Password"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
+msgstr ""
+
+msgid "Options / Keystore / Release"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
+msgstr ""
+
+msgid "Options / Keystore / Release User"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
+msgstr ""
+
+msgid "Options / Keystore / Release Password"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
+msgstr ""
 
 msgid "Translation status"
 msgstr "État de la traduction"

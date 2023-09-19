@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Cross-compiling for iOS on Linux"
+msgstr "Compilation croisée pour iOS sur Linux"
+
+#, fuzzy
+msgid ""
+"The procedure for this is somewhat complex and requires a lot of steps, but "
+"once you have the environment properly configured you can compile Godot for "
+"iOS anytime you want."
+msgstr ""
+"La procédure pour cela est quelque peu complexe et nécessite de nombreuses "
+"étapes, mais une fois que vous aurez correctement configuré l'environnement, "
+"il sera facile de compiler Godot pour iOS à tout moment."
+
+msgid "Disclaimer"
+msgstr "Avertissement"
+
+#, fuzzy
+msgid ""
+"While it is possible to compile for iOS on a Linux environment, Apple is "
+"very restrictive about the tools to be used (especially hardware-wise), "
+"allowing pretty much only their products to be used for development. So this "
+"is **not official**. However, in 2010 Apple said they relaxed some of the "
+"`App Store review guidelines <https://developer.apple.com/app-store/review/"
+"guidelines/>`__ to allow any tool to be used, as long as the resulting "
+"binary does not download any code, which means it should be OK to use the "
+"procedure described here and cross-compiling the binary."
+msgstr ""
+"Bien qu'il soit possible de compiler pour iOS dans un environnement Linux, "
+"Apple est très restrictif quant aux outils à utiliser (surtout sur le plan "
+"hardware), ne permettant pratiquement que l'utilisation de ses produits pour "
+"le développement. Ce n'est donc **pas officiel**. Cependant, une "
+"`déclaration d'Apple en 2010 <http://www.apple.com/pr/"
+"library/2010/09/09Statement-by-Apple-on-App-Store-Review-Guidelines.html>`__ "
+"dit qu'ils ont assoupli certaines des `directives de révision de l'App Store "
+"<https://developer.apple.com/app-store/review/guidelines/>`__ pour permettre "
+"à n'importe quel outil d'être utilisé, tant que le binaire résultant ne "
+"télécharge pas de code, ce qui signifie qu'il devrait être OK d'utiliser la "
+"procédure décrite ici et la compilation croisée du binaire."
+
+msgid "Requirements"
+msgstr "Pré-requis"
+
+#, fuzzy
+msgid ""
+"`XCode with the iOS SDK <https://developer.apple.com/xcode/download>`__ (a "
+"dmg image, for newer versions a **xip** file is going to be downloaded.)"
+msgstr ""
+"`XCode avec le SDK iOS <https://developer.apple.com/xcode/download>`__ (une "
+"image dmg)"
+
+#, fuzzy
+msgid ""
+"`Clang >= 3.5 <https://clang.llvm.org>`__ for your development machine "
+"installed and in the ``PATH``. It has to be version >= 3.5 to target "
+"``arm64`` architecture."
+msgstr ""
+"`Clang >= 3.5 <http://clang.llvm.org>`__ pour votre machine de développement "
+"installée et dans le ``PATH``. Il doit être de version >= 3.5 pour cibler "
+"l'architecture ``arm64``."
+
+#, fuzzy
+msgid ""
+"`Fuse <https://github.com/libfuse/libfuse>`__ for mounting and unmounting "
+"the dmg image."
+msgstr ""
+"`Fuse <https://github.com/libfuse/libfuse>`__ pour le montage et le "
+"démontage de l'image dmg."
+
+msgid ""
+"`darling-dmg <https://github.com/darlinghq/darling-dmg>`__, which needs to "
+"be built from source. The procedure for that is explained below."
+msgstr ""
+"`darling-dmg <https://github.com/darlinghq/darling-dmg>`__, qui doit être "
+"construit à partir des sources. La procédure pour cela est expliquée ci-"
+"dessous."
+
+msgid ""
+"For newer versions you should download `xar <https://mackyle.github.io/xar/"
+">`__ and `pbzx <https://github.com/NiklasRosenstein/pbzx>`__."
+msgstr ""
+
+msgid ""
+"For building darling-dmg, you'll need the development packages of the "
+"following libraries: fuse, icu, openssl, zlib, bzip2."
+msgstr ""
+"Pour construire darling-dmg, vous aurez besoin des paquets de développement "
+"des bibliothèques suivantes : fuse, icu, openssl, zlib, bzip2."
+
+msgid ""
+"For building xar and pbzx you may want to follow `this guide <https://gist."
+"github.com/phracker/1944ce190e01963c550566b749bd2b54>`__."
+msgstr ""
+
+msgid ""
+"`cctools-port <https://github.com/tpoechtrager/cctools-port>`__ for the "
+"needed build tools. The procedure for building is quite peculiar and is "
+"described below."
+msgstr ""
+"`cctools-port <https://github.com/tpoechtrager/cctools-port>`__ pour les "
+"outils de construction nécessaires. La procédure de construction est assez "
+"particulière et est décrite ci-dessous."
+
+msgid "This also has some extra dependencies: automake, autogen, libtool."
+msgstr ""
+"Cela a également des dépendances supplémentaires : automake, autogen, "
+"libtool."
+
+msgid "Configuring the environment"
+msgstr "Configurer l'environnement"
+
+msgid "darling-dmg"
+msgstr "darling-dmg"
+
+msgid "Clone the repository on your machine:"
+msgstr "Clonez le dépôt sur votre machine :"
+
+msgid "Build it:"
+msgstr "Construisez-le :"
+
+msgid "Preparing the SDK"
+msgstr "Préparation du SDK"
+
+msgid "Mount the XCode image:"
+msgstr "Montez l'image XCode :"
+
+msgid "For newer versions you should extract the **xip** file:"
+msgstr ""
+
+msgid ""
+"Note that for the commands below, you may need to replace the version (`X."
+"x`) with whatever iOS SDK version you're using."
+msgstr ""
+
+msgid "Extract the iOS SDK:"
+msgstr "Extraire le SDK iOS :"
+
+msgid "Pack the SDK:"
+msgstr "Empaquetez le SDK :"
+
+msgid "Toolchain"
+msgstr "Toolchain"
+
+msgid "Build cctools:"
+msgstr "Construire cctools :"
+
+msgid ""
+"Copy the tools to a nicer place. Note that the SCons scripts for building "
+"will look under ``usr/bin`` inside the directory you provide for the "
+"toolchain binaries, so you must copy to such subdirectory, akin to the "
+"following commands:"
+msgstr ""
+"Copiez les outils à un endroit plus approprié. Notez que les scripts SCons "
+"pour la construction regarderont à l'intérieur du répertoire ``usr/bin`` "
+"pour vous fournir les binaires de la chaîne d'outils, vous devez donc copier "
+"dans ce sous-répertoire, comme pour les commandes suivantes :"
+
+msgid ""
+"Now you should have the iOS toolchain binaries in ``/home/user/iostoolchain/"
+"usr/bin``."
+msgstr ""
+"Maintenant vous devez avoir les binaires de la chaîne d'outils iOS dans ``/"
+"home/user/iostoolchain/usr/bin``."
+
+msgid "Compiling Godot for iPhone"
+msgstr "Compilation de Godot pour iPhone"
+
+msgid ""
+"Once you've done the above steps, you should keep two things in your "
+"environment: the built toolchain and the iPhoneOS SDK directory. Those can "
+"stay anywhere you want since you have to provide their paths to the SCons "
+"build command."
+msgstr ""
+"Une fois que vous avez effectué les étapes ci-dessous, vous devez conserver "
+"deux choses dans votre environnement : la chaîne d'outils construite et le "
+"répertoire SDK pour iPhoneOS. Ceux-ci peuvent rester n'importe-où ou vous "
+"voulez car vous devez fournir leurs chemins à la commande de construction "
+"SCons."
+
+msgid ""
+"For the iPhone platform to be detected, you need the ``OSXCROSS_IOS`` "
+"environment variable defined to anything."
+msgstr ""
+"Pour que la plate-forme iPhone soit détectée, vous avez besoin de la "
+"variable d'environnement ``OSXCROSS_IOS`` définie à n'importe quoi."
+
+msgid ""
+"Now you can compile for iPhone using SCons like the standard Godot way, with "
+"some additional arguments to provide the correct paths:"
+msgstr ""
+"Vous pouvez maintenant compiler pour iPhone en utilisant SCons comme la "
+"méthode standard de Godot, avec quelques arguments supplémentaires pour "
+"fournir les chemins corrects :"
+
+msgid "Translation status"
+msgstr "État de la traduction"

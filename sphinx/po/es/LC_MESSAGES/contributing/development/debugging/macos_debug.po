@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Debugging on macOS"
+msgstr "Depurando en macOS"
+
+msgid "Debugging Godot editor"
+msgstr "Depurando el editor de Godot"
+
+msgid ""
+"Attaching a debugger to the signed macOS process requires the \"com.apple."
+"security.get-task-allow\" entitlement, which is not enabled by default, "
+"since apps can't be notarized as long as it is enabled. If you want to debug "
+"an official build of the editor it should be re-signed with the proper "
+"entitlements."
+msgstr ""
+"Adjuntar un depurador (debugger) al proceso firmado de macOS requiere el "
+"permiso \"com.apple.security.get-task-allow\", que no está habilitado de "
+"forma predeterminada, ya que las aplicaciones no pueden ser notarizadas "
+"(notarized) mientras esté habilitado. Si deseas depurar una compilación "
+"oficial del editor, debes volver a firmarla con los permisos adecuados."
+
+msgid ""
+"Create an ``editor.entitlements`` text file with the following contents:"
+msgstr ""
+"Crea un archivo de texto llamado \"editor.entitlements\" con el siguiente "
+"contenido:"
+
+msgid "Then use the following command to re-sign the editor::"
+msgstr "Luego, usa el siguiente comando para volver a firmar el editor::"
+
+msgid "Debugging exported project"
+msgstr "Depurando un proyecto exportado"
+
+msgid ""
+"To allow debugging, select the ``codesign\\debugging`` (``com.apple.security."
+"get-task-allow``) entitlement during the export. When it is selected, "
+"notarization is not supported and should be disabled."
+msgstr ""
+"Para permitir la depuración, selecciona el permiso ``codesign\\debugging`` "
+"(``com.apple.security.get-task-allow``) durante la exportación. Cuando esté "
+"seleccionado, la notarización no es compatible y debería estar desactivada."
+
+msgid "Translation status"
+msgstr "Estado de traducción"

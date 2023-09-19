@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,13 +43,11 @@ msgstr ""
 "** 則是一個 **資料容器** 。資源本身並不會做任何事，反而是節點會使用放入了資料"
 "的資源。"
 
+#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
-"tscn`` or an ``.scn`` file), an image, a script... Here are some "
-"``Resource`` examples: :ref:`Texture <class_Texture>`, :ref:`Script "
-"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
-"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
-"<class_Font>`, :ref:`Translation <class_Translation>`."
+"tscn`` or an ``.scn`` file), an image, a script... Here are some :ref:"
+"`Resource <class_Resource>` examples:"
 msgstr ""
 "任何 Godot 從硬碟中保存或讀取的都是資源。無論是場景（ ``.tscn`` 或 ``.scn`` "
 "檔）、圖片、腳本…等。這裡有一些 ``Resource`` 的例子： :ref:`Texture "
@@ -57,6 +55,34 @@ msgstr ""
 "<class_Mesh>` 、 :ref:`Animation <class_Animation>` 、 :ref:`AudioStream "
 "<class_AudioStream>` 、 :ref:`Font <class_Font>` 、 :ref:`Translation "
 "<class_Translation>` 。"
+
+#, fuzzy
+msgid ":ref:`Texture <class_Texture>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+#, fuzzy
+msgid ":ref:`Script <class_Script>`"
+msgstr ":ref:`int <class_int>`"
+
+#, fuzzy
+msgid ":ref:`Mesh <class_Mesh>`"
+msgstr ":ref:`Rect2 <class_Rect2>`"
+
+#, fuzzy
+msgid ":ref:`Animation <class_Animation>`"
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+
+#, fuzzy
+msgid ":ref:`AudioStream <class_AudioStream>`"
+msgstr ":ref:`Array <class_Array>`"
+
+#, fuzzy
+msgid ":ref:`Font <class_Font>`"
+msgstr ":ref:`int <class_int>`"
+
+#, fuzzy
+msgid ":ref:`Translation <class_Translation>`"
+msgstr ":ref:`Transform <class_Transform>`"
 
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
@@ -92,16 +118,17 @@ msgid ""
 "attached to."
 msgstr "**內建** ，將資源保存在所附加的 ``.tscn`` 或是 ``.scn`` 檔內。"
 
+#, fuzzy
 msgid ""
-"To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
-"`Sprite <class_Sprite>` node:"
+"To be more specific, here's a :ref:`Texture2D <class_Texture2D>` in a :ref:"
+"`Sprite2D <class_Sprite2D>` node:"
 msgstr ""
 "更具體來講，假設在 :ref:`Sprite <class_Sprite>` 節點中有一個 :ref:`Texture "
 "<class_Texture>` ："
 
+#, fuzzy
 msgid ""
-"Clicking the resource preview allows us to view and edit the resource's "
-"properties."
+"Clicking the resource preview allows us to view the resource's properties."
 msgstr "點擊資源預覽可以讓我們檢視並編輯資源的屬性。"
 
 msgid ""
@@ -138,10 +165,11 @@ msgstr ""
 "要從程式碼中載入資源有兩種方法。第一種方法是使用 ``load()`` 函式，可以在任何"
 "時候使用："
 
+#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
-"preload with a variable path: you need to use a constant string."
+"``preload`` with a variable path: you need to use a constant string."
 msgstr ""
 "另外也可以 ``preload`` （預載）資源。與 ``load`` 不同的是，這個函式會從硬碟中"
 "讀取檔案並在編譯時期載入。因此，這種方法無法使用保存在變數內的路徑而必須使用"
@@ -150,17 +178,19 @@ msgstr ""
 msgid "Loading scenes"
 msgstr "載入場景"
 
+#, fuzzy
 msgid ""
 "Scenes are also resources, but there is a catch. Scenes saved to disk are "
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
-"packed inside a resource."
+"packed inside a :ref:`Resource <class_Resource>`."
 msgstr ""
 "場景也是資源，但有一點需要注意。保存在硬碟上的場景是 :ref:`PackedScene "
 "<class_PackedScene>` 型別的資源。這種場景是被打包在資源內的。"
 
+#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
-"instance() <class_PackedScene_method_instance>` method."
+"instantiate() <class_PackedScene_method_instantiate>` method."
 msgstr ""
 "要取得場景的實體，則必須使用 :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` 方法。"
@@ -173,9 +203,10 @@ msgstr ""
 "這個方法會在場景結構中建立節點並對節點進行組態設定，最後回傳場景的根節點。接"
 "著便能將其新增為其他節點的子節點。"
 
+#, fuzzy
 msgid ""
-"The approach has several advantages. As the :ref:`PackedScene.instance() "
-"<class_PackedScene_method_instance>` function is fast, you can create new "
+"The approach has several advantages. As the :ref:`PackedScene.instantiate() "
+"<class_PackedScene_method_instantiate>` function is fast, you can create new "
 "enemies, bullets, effects, etc. without having to load them again from disk "
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
@@ -188,11 +219,12 @@ msgstr ""
 msgid "Freeing resources"
 msgstr "釋放資源"
 
+#, fuzzy
 msgid ""
-"When a ``Resource`` is no longer in use, it will automatically free itself. "
-"Since, in most cases, Resources are contained in Nodes, when you free a "
-"node, the engine frees all the resources it owns as well if no other node "
-"uses them."
+"When a :ref:`Resource <class_Resource>` is no longer in use, it will "
+"automatically free itself. Since, in most cases, Resources are contained in "
+"Nodes, when you free a node, the engine frees all the resources it owns as "
+"well if no other node uses them."
 msgstr ""
 "當不需要再使用一個 ``Resource`` 時，資源會自動釋放自己。由於在大多數情況下，"
 "資源都包含在節點中，所以當釋放節點後引擎就會自動釋放所有沒有任何節點用到的資"
@@ -211,13 +243,14 @@ msgstr ""
 "件屬性、序列化文字、與二進位資料 (\\*.tres、\\*.res) 間自由轉換的能力。資源也"
 "從 Reference 型別上繼承了引用計數的記憶體管理。"
 
+#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
-"as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`File "
-"<class_File>` to parse. What sets Resources apart is their inheritance of :"
-"ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
-"`Resource <class_Resource>` features:"
+"as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`FileAccess "
+"<class_FileAccess>` to parse. What sets Resources apart is their inheritance "
+"of :ref:`Object <class_Object>`, :ref:`RefCounted <class_RefCounted>`, and :"
+"ref:`Resource <class_Resource>` features:"
 msgstr ""
 "這比起其他替代類型的資料結構如 JSON、CSV、或是自定 TXT 檔多了許多直接的優點。"
 "使用者只能將這些資源匯入為 :ref:`Dictionary <class_Dictionary>` (JSON) 或是匯"
@@ -318,8 +351,26 @@ msgstr ""
 "本的名稱，就會將類別新增到屬性面板的建立對話框中，如此一來會自動將腳本新增至"
 "建立的資源物件中。"
 
-msgid "Let's see some examples."
-msgstr "來看看一些例子。"
+msgid ""
+"Let's see some examples. Create a :ref:`Resource <class_Resource>` and name "
+"it ``bot_stats``. It should appear in your file tab with the full name "
+"``bot_stats.tres``. Without a script, it's useless, so let's add some data "
+"and logic! Attach a script to it named ``bot_stats.gd`` (or just create a "
+"new script, and then drag it to it)."
+msgstr ""
+
+msgid ""
+"Now, create a :ref:`CharacterBody3D <class_CharacterBody3D>`, name it "
+"``Bot``, and add the following script to it:"
+msgstr ""
+
+msgid ""
+"Now, select the :ref:`CharacterBody3D <class_CharacterBody3D>` node which we "
+"named ``bot``, and drag&drop the ``bot_stats.tres`` resource onto the "
+"Inspector. It should print 10! Obviously, this setup can be used for more "
+"advanced features than this, but as long you really understand *how* it all "
+"worked, you should figure out everything else related to Resources."
+msgstr ""
 
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
@@ -333,8 +384,9 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>` 結合使用來為資源的資料建立自定的視覺界面"
 "與編輯器。"
 
+#, fuzzy
 msgid ""
-"Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
+"Unreal Engine's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
@@ -342,19 +394,21 @@ msgstr ""
 "DataTable 就是映射到自定結構的字串，與 Dictionary 映射字串到一個第二層自定資"
 "源腳本的做法類似。"
 
+#, fuzzy
 msgid ""
-"Instead of just inlining the Dictionary values, one could also, "
-"alternatively..."
+"Instead of inlining the Dictionary values, one could also, alternatively:"
 msgstr "除了直接在行內寫上字典值，也可以…"
 
+#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
-"pairs, or..."
+"pairs."
 msgstr "從試算表中匯入整張表的值並產生索引鍵/值組，或…"
 
+#, fuzzy
 msgid ""
-"Design a visualization within the editor and create a simple plugin that "
-"adds it to the Inspector when you open these types of Resources."
+"Design a visualization within the editor and create a plugin that adds it to "
+"the Inspector when you open these types of Resources."
 msgstr ""
 "在編輯器中設計視覺界面並製作一個簡單的插件來在開啟這類資源型別的時候顯示在屬"
 "性面板中。"

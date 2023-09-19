@@ -1,0 +1,156 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Variant class"
+msgstr "Clase variant"
+
+msgid "About"
+msgstr "Acerca de"
+
+msgid ""
+"Variant is the most important datatype of Godot, it's the most important "
+"class in the engine. A Variant takes up only 20 bytes and can store almost "
+"any engine datatype inside of it. Variants are rarely used to hold "
+"information for long periods of time, instead they are used mainly for "
+"communication, editing, serialization and generally moving data around."
+msgstr ""
+"La variante (variant) es el tipo de datos más importante de Godot, es la "
+"clase más importante del motor. Una variante ocupa solo 20 bytes y puede "
+"almacenar casi cualquier tipo de datos del motor dentro de ella. Las "
+"variantes rara vez se utilizan para almacenar información durante largos "
+"períodos de tiempo, sino que se utilizan principalmente para la "
+"comunicación, la edición, la serialización y, en general, el movimiento de "
+"datos."
+
+msgid "A Variant can:"
+msgstr "Una variante puede:"
+
+msgid "Store almost any datatype"
+msgstr "Almacenar casi cualquier tipo de dato"
+
+msgid ""
+"Perform operations between many variants (GDScript uses Variant as its "
+"atomic/native datatype)."
+msgstr ""
+"Realiza operaciones entre muchas variantes (GDScript utiliza Variant como su "
+"tipo de dato atómico/nativo)."
+
+msgid "Be hashed, so it can be compared quickly to other variants"
+msgstr ""
+"Ser hasheado, de modo que pueda compararse rápidamente con otras variantes"
+
+msgid "Be used to convert safely between datatypes"
+msgstr "Es utilizado para convertir de forma segura entre tipos de datos"
+
+msgid ""
+"Be used to abstract calling methods and their arguments (Godot exports all "
+"its functions through variants)"
+msgstr ""
+"Es utilizado para abstraer métodos de llamada y sus argumentos (Godot "
+"exporta todas sus funciones a través de variantes)"
+
+msgid "Be used to defer calls or move data between threads."
+msgstr "Se usa para aplazar llamadas o mover datos entre hilos."
+
+msgid "Be serialized as binary and stored to disk, or transferred via network."
+msgstr ""
+"Es serializado como binario y almacenado en disco, o transferido a través de "
+"la red."
+
+msgid ""
+"Be serialized to text and use it for printing values and editable settings."
+msgstr ""
+"Puede ser serializado a texto y utilizado para imprimir valores y "
+"configuraciones editables."
+
+msgid "Work as an exported property, so the editor can edit it universally."
+msgstr ""
+"Funciona como una propiedad exportada, por lo que el editor puede editarla "
+"universalmente."
+
+msgid "Be used for dictionaries, arrays, parsers, etc."
+msgstr "Puede ser utilizado para diccionarios, arreglos, analizadores, etc."
+
+msgid ""
+"Basically, thanks to the Variant class, writing Godot itself was a much, "
+"much easier task, as it allows for highly dynamic constructs not common of C+"
+"+ with little effort. Become a friend of Variant today."
+msgstr ""
+"Básicamente, gracias a la clase Variant, escribir Godot en sí fue una tarea "
+"mucho, mucho más fácil, ya que permite construcciones altamente dinámicas "
+"que no son comunes en C++ con poco esfuerzo. Conviértete en amigo de Variant "
+"hoy mismo."
+
+msgid "References:"
+msgstr "Referencias:"
+
+#, fuzzy
+msgid ""
+"`core/variant/variant.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/variant.h>`__"
+msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/3.x/core/variant."
+"h>`__"
+
+msgid "Containers: Dictionary and Array"
+msgstr "Contenedores: Diccionario y Arreglo"
+
+msgid ""
+"Both are implemented using variants. A Dictionary can match any datatype "
+"used as key to any other datatype. An Array just holds an array of Variants. "
+"Of course, a Variant can also hold a Dictionary and an Array inside, making "
+"it even more flexible."
+msgstr ""
+"Ambos están implementados usando variantes. Un Diccionario puede asociar "
+"cualquier tipo de dato utilizado como clave con cualquier otro tipo de dato. "
+"Un Arreglo simplemente contiene una serie de Variantes. Por supuesto, una "
+"Variante también puede contener un Diccionario y un Arreglo dentro de ella, "
+"lo que la hace aún más flexible."
+
+msgid ""
+"Modifications to a container will modify all references to it. A Mutex "
+"should be created to lock it if multi threaded access is desired."
+msgstr ""
+"Las modificaciones a un container modificarán todas las referencias al "
+"mismo. Se debe crear un Mutex para bloquearlo si se desea un acceso "
+"multihilo."
+
+msgid ""
+"Copy-on-write (COW) mode support for containers was dropped with Godot 3.0."
+msgstr ""
+"Desde Godot 3.0, no permite el modo Copy-on-write (COW) para containers."
+
+#, fuzzy
+msgid ""
+"`core/variant/dictionary.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/dictionary.h>`__"
+msgstr ""
+"`core/dictionary.h <https://github.com/godotengine/godot/blob/3.x/core/"
+"dictionary.h>`__"
+
+#, fuzzy
+msgid ""
+"`core/variant/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant/array.h>`__"
+msgstr ""
+"`core/variant.h <https://github.com/godotengine/godot/blob/3.x/core/variant."
+"h>`__"
+
+msgid "Translation status"
+msgstr "Estado de traducción"

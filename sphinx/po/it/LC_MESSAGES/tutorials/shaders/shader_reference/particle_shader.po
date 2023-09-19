@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,32 +21,35 @@ msgid "Particle shaders"
 msgstr ""
 
 msgid ""
-"Particle shaders are a special type of vertex shader that runs before the "
-"object is drawn. They are used for calculating material properties such as "
-"color, position, and rotation. They are drawn with any regular material for "
+"Particle shaders are a special type of shader that runs before the object is "
+"drawn. They are used for calculating material properties such as color, "
+"position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
 
 msgid ""
 "Particle shaders are unique because they are not used to draw the object "
 "itself; they are used to calculate particle properties, which are then used "
-"by the CanvasItem of Spatial shader. They contain only a vertex processor "
-"function that outputs multiple properties (see built-ins below)."
+"by the CanvasItem of Spatial shader. They contain two processor functions: "
+"``start()`` and ``process()``."
 msgstr ""
 
 msgid ""
-"Particle shaders use a transform feedback shader, which is a special type of "
-"vertex shader that runs on its own. It takes in data in a buffer like a "
-"regular vertex shader does, but it also outputs to data buffers instead of "
-"outputting to the fragment shader for pixel-processing. Because of this, "
-"transform feedback shaders can build on themselves each run, unlike other "
-"shaders that discard the data they have calculated once they draw to the "
-"frame buffer."
+"Unlike other shader types, particle shaders keep the data that was output "
+"the previous frame. Therefore, particle shaders can be used for complex "
+"effects that take place over multiple frames."
 msgstr ""
 
 msgid ""
-"Particle shaders are only available in the GLES3 backend. If you need "
-"particles in GLES2, use :ref:`CPUParticles <class_CPUParticles>`."
+"Particle shaders are only available with GPU-based particle nodes (:ref:"
+"`class_GPUParticles2D` and :ref:`class_GPUParticles3D`)."
+msgstr ""
+
+msgid ""
+"CPU-based particle nodes (:ref:`class_CPUParticles2D` and :ref:"
+"`class_CPUParticles3D`) are *rendered* on the GPU (which means they can use "
+"custom CanvasItem or Spatial shaders), but their motion is *simulated* on "
+"the CPU."
 msgstr ""
 
 #, fuzzy
@@ -70,7 +73,7 @@ msgstr "Non cancellare i dati precedenti al riavvio."
 msgid "**disable_force**"
 msgstr "**disable_force**"
 
-msgid "Disable attractor force. (Not currently implemented in 3.1)"
+msgid "Disable attractor force."
 msgstr ""
 
 msgid "**disable_velocity**"
@@ -107,60 +110,38 @@ msgstr "in float **TIME**"
 msgid "Global time, in seconds."
 msgstr ""
 
-msgid "Vertex built-ins"
-msgstr ""
+#, fuzzy
+msgid "in float **PI**"
+msgstr "in float **TIME**"
 
 msgid ""
-"In order to use the ``COLOR`` variable in a SpatialMaterial, set "
-"``use_vertex_as_albedo`` to ``true``. In a ShaderMaterial, access it with "
-"the ``COLOR`` variable."
+"A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
+"diameter and amount of radians in half turn."
 msgstr ""
 
 #, fuzzy
-msgid "inout vec4 **COLOR**"
-msgstr "inout vec4 **COLOR**"
+msgid "in float **TAU**"
+msgstr "in float **DELTA**"
 
 msgid ""
-"Particle color, can be written to and accessed in mesh's vertex function."
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
 msgstr ""
-
-msgid "inout vec3 **VELOCITY**"
-msgstr "inout vec3 **VELOCITY**"
-
-msgid "Particle velocity, can be modified."
-msgstr ""
-
-msgid "out float **MASS**"
-msgstr "out float **MASS**"
-
-msgid "Particle mass, use for attractors (not implemented in 3.1)."
-msgstr ""
-
-msgid "inout bool **ACTIVE**"
-msgstr "inout bool **ACTIVE**"
-
-msgid "``true`` when Particle is active, can be set to ``false``."
-msgstr ""
-
-msgid "in bool **RESTART**"
-msgstr "in bool **RESTART**"
-
-msgid "``true`` when particle must restart (lifetime cycled)."
-msgstr ""
-
-msgid "inout vec4 **CUSTOM**"
-msgstr "inout vec4 **CUSTOM**"
-
-msgid ""
-"Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
-msgstr ""
-
-msgid "inout mat4 **TRANSFORM**"
-msgstr "inout mat4 **TRANSFORM**"
 
 #, fuzzy
-msgid "Particle transform."
-msgstr "Trasformazione delle particelle."
+msgid "in float **E**"
+msgstr "in float **TIME**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
+
+msgid "Start and Process built-ins"
+msgstr ""
+
+msgid "Function"
+msgstr "Funzioni"
 
 msgid "in float **LIFETIME**"
 msgstr "in float **LIFETIME**"
@@ -181,7 +162,8 @@ msgstr "in uint **NUMBER**"
 msgid "Unique number since emission start."
 msgstr ""
 
-msgid "in int **INDEX**"
+#, fuzzy
+msgid "in uint **INDEX**"
 msgstr "in int **INDEX**"
 
 msgid "Particle index (from total particles)."
@@ -197,6 +179,188 @@ msgid "in uint **RANDOM_SEED**"
 msgstr "in uint **RANDOM_SEED**"
 
 msgid "Random seed used as base for random."
+msgstr ""
+
+msgid "inout bool **ACTIVE**"
+msgstr "inout bool **ACTIVE**"
+
+msgid "``true`` when the particle is active, can be set ``false``."
+msgstr ""
+
+#, fuzzy
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **COLOR**"
+
+msgid ""
+"Particle color, can be written to and accessed in mesh's vertex function."
+msgstr ""
+
+msgid "inout vec3 **VELOCITY**"
+msgstr "inout vec3 **VELOCITY**"
+
+msgid "Particle velocity, can be modified."
+msgstr ""
+
+msgid "inout mat4 **TRANSFORM**"
+msgstr "inout mat4 **TRANSFORM**"
+
+#, fuzzy
+msgid "Particle transform."
+msgstr "Trasformazione delle particelle."
+
+msgid "inout vec4 **CUSTOM**"
+msgstr "inout vec4 **CUSTOM**"
+
+msgid ""
+"Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
+msgstr ""
+
+#, fuzzy
+msgid "inout float **MASS**"
+msgstr "out float **MASS**"
+
+msgid ""
+"Particle mass, intended to be used with attractors. Equals ``1.0`` by "
+"default."
+msgstr ""
+
+msgid ""
+"In order to use the ``COLOR`` variable in a StandardMaterial3D, set "
+"``vertex_color_use_as_albedo`` to ``true``. In a ShaderMaterial, access it "
+"with the ``COLOR`` variable."
+msgstr ""
+
+#, fuzzy
+msgid "Start built-ins"
+msgstr "Costanti"
+
+#, fuzzy
+msgid "in bool **RESTART_POSITION**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "in bool **RESTART_ROT_SCALE**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "in bool **RESTART_VELOCITY**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "in bool **RESTART_COLOR**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "in bool **RESTART_CUSTOM**"
+msgstr "in bool **RESTART**"
+
+#, fuzzy
+msgid "Process built-ins"
+msgstr "Funzioni del processore"
+
+msgid "in bool **RESTART**"
+msgstr "in bool **RESTART**"
+
+msgid "``true`` if the current process frame is first for the particle."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_POSITION**"
+msgstr "in uint **RANDOM_SEED**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign a position to a new particle's transform."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_ROT_SCALE**"
+msgstr "in uint **RANDOM_SEED**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign the rotation and scale to a new particle's transform."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_VELOCITY**"
+msgstr "inout vec3 **VELOCITY**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign a velocity to a new particle."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_COLOR**"
+msgstr "in vec3 **LIGHT_COLOR**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign a color to a new particle."
+msgstr ""
+
+#, fuzzy
+msgid "in uint **FLAG_EMIT_CUSTOM**"
+msgstr "in uint **RANDOM_SEED**"
+
+msgid ""
+"A flag for using on the last argument of ``emit_subparticle`` function to "
+"assign a custom data vector to a new particle."
+msgstr ""
+
+#, fuzzy
+msgid "in bool **COLLIDED**"
+msgstr "inout bool **ACTIVE**"
+
+msgid "``true`` when the particle has collided with a particle collider."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **COLLISION_NORMAL**"
+msgstr "in vec3 **NORMAL**"
+
+msgid ""
+"A normal of the last collision. If there is no collision detected it is "
+"equal to ``vec3(0.0)``."
+msgstr ""
+
+#, fuzzy
+msgid "in float **COLLISION_DEPTH**"
+msgstr "inout float **NORMALMAP_DEPTH**"
+
+msgid ""
+"A length of normal of the last collision. If there is no collision detected "
+"it is equal to ``0.0``."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **ATTRACTOR_FORCE**"
+msgstr "in vec3 **ATTENUATION**"
+
+msgid "A combined force of the attractors at the moment on that particle."
+msgstr ""
+
+#, fuzzy
+msgid "in vec4 **USERDATAX**"
+msgstr "in vec3 **VERTEX**"
+
+msgid ""
+"Vector that enables the integration of supplementary user-defined data into "
+"the particle process shader. ``USERDATAX`` are six built-ins identified by "
+"number, ``X`` can be numbers between 1 and 6."
+msgstr ""
+
+#, fuzzy
+msgid "Process functions"
+msgstr "Funzioni del processore"
+
+msgid ""
+"bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 "
+"custom, uint flags)"
+msgstr ""
+
+msgid "Forces to emit a particle from a sub-emitter."
 msgstr ""
 
 msgid "Translation status"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,29 +27,25 @@ msgstr ""
 "この最初のパートでは、ゲームエリアを設定します。さっそく、スタートアセットを"
 "インポートして、ゲームシーンを設定しましょう。"
 
+#, fuzzy
 msgid ""
 "We've prepared a Godot project with the 3D models and sounds we'll use for "
 "this tutorial, linked in the index page. If you haven't done so yet, you can "
 "download the archive here: `Squash the Creeps assets <https://github.com/"
-"GDQuest/godot-3d-dodge-the-creeps/releases/tag/1.0.0>`__."
+"godotengine/godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
 msgstr ""
 "このチュートリアルで使用する 3D モデルとサウンドを含む Godot プロジェクトを用"
 "意し、インデックスページにリンクしています。まだの方は`Squash the Creeps "
 "assets <https://github.com/GDQuest/godot-3d-dodge-the-creeps/releases/"
 "tag/1.0.0>`からアーカイブをダウンロードしてください。"
 
+#, fuzzy
 msgid ""
 "Once you downloaded it, extract the .zip archive on your computer. Open the "
-"Godot project manager and click the *Import* button."
+"Godot Project Manager and click the *Import* button."
 msgstr ""
 "ダウンロードしたら、.zip アーカイブをコンピュータで解凍します。Godotプロジェ"
 "クト・マネージャーを開き、\\ *Import*\\ ボタンをクリックします。"
-
-msgid "|image1|"
-msgstr "\\ |image1|"
-
-msgid "image1"
-msgstr "image1"
 
 msgid ""
 "In the import popup, enter the full path to the freshly created directory "
@@ -62,22 +58,10 @@ msgstr ""
 "(Browse)*\\ ボタンをクリックしてファイル ブラウザを開き、フォルダに含まれる"
 "\\ ``project.godot``\\ ファイルに移動することも可能です。"
 
-msgid "|image2|"
-msgstr "\\ |image2|"
-
-msgid "image2"
-msgstr "image2"
-
 msgid "Click *Import & Edit* to open the project in the editor."
 msgstr ""
 "\\ *インポートして編集(Install & Edit)*\\ をクリックすると、エディタのプロ"
 "ジェクトが開きます。"
-
-msgid "|image3|"
-msgstr "\\ |image3|"
-
-msgid "image3"
-msgstr "image3"
 
 msgid ""
 "The start project contains an icon and two folders: ``art/`` and ``fonts/``. "
@@ -86,12 +70,6 @@ msgstr ""
 "スタート プロジェクトには、アイコンと 2 つのフォルダー\\ ``art/``\\ と\\ "
 "``fonts/``\\ があります。そこには、ゲーム内で使用するアートアセットと音楽があ"
 "ります。"
-
-msgid "|image4|"
-msgstr "\\ |image4|"
-
-msgid "image4"
-msgstr "image4"
 
 msgid ""
 "There are two 3D models, ``player.glb`` and ``mob.glb``, some materials that "
@@ -103,12 +81,14 @@ msgstr ""
 msgid "Setting up the playable area"
 msgstr "プレイ可能エリアの設定"
 
+#, fuzzy
 msgid ""
-"We're going to create our main scene with a plain *Node* as its root. In the "
-"*Scene* dock, click the *Add Node* button represented by a \"+\" icon in the "
-"top-left and double-click on *Node*. Name the node \"Main\". Alternatively, "
-"to add a node to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` "
-"on macOS)."
+"We're going to create our main scene with a plain :ref:`Node <class_Node>` "
+"as its root. In the *Scene* dock, click the *Add Child Node* button "
+"represented by a \"+\" icon in the top-left and double-click on *Node*. Name "
+"the node ``Main``. An alternate method to rename the node is to right-click "
+"on *Node* and choose *Rename* (or :kbd:`F2`). Alternatively, to add a node "
+"to the scene, you can press :kbd:`Ctrl + a` (or :kbd:`Cmd + a` on macOS)."
 msgstr ""
 "プレーンな\\ *Node*\\ をルートとして、メイン シーンを作成します。\\ *シーン"
 "*\\ (Scene)ドックで、左上の \"+\" で表される \\ *子ノードを追加*\\ (Add Node)"
@@ -116,25 +96,24 @@ msgstr ""
 "\"Main\"という名前を付けます。また、ノードをシーンに追加するには、 :kbd:"
 "`Ctrl + a` (macOSでは :kbd:`Cmd + a`) を押すことも可能です。"
 
-msgid "|image5|"
-msgstr "\\ |image5|"
-
-msgid "image5"
-msgstr "image5"
-
+#, fuzzy
 msgid ""
-"Save the scene as ``Main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
+"Save the scene as ``main.tscn`` by pressing :kbd:`Ctrl + s` (:kbd:`Cmd + s` "
 "on macOS)."
 msgstr ""
 "シーンを\\ ``Main.tscn``\\ として保存します。 :kbd:`Ctrl + s` (macOS では :"
 "kbd:`Cmd + s`) を押してしてください。"
 
+#, fuzzy
 msgid ""
 "We'll start by adding a floor that'll prevent the characters from falling. "
-"To create static colliders like the floor, walls, or ceilings, you can use "
-"*StaticBody* nodes. They require *CollisionShape* child nodes to define the "
-"collision area. With the *Main* node selected, add a *StaticBody* node, then "
-"a *CollisionShape*. Rename the *StaticBody* as *Ground*."
+"To create static colliders like the floor, walls, or ceilings, you can use :"
+"ref:`StaticBody3D <class_StaticBody3D>` nodes. They require :ref:"
+"`CollisionShape3D <class_CollisionShape3D>` child nodes to define the "
+"collision area. With the ``Main`` node selected, add a :ref:`StaticBody3D "
+"<class_StaticBody3D>` node, then a :ref:`CollisionShape3D "
+"<class_CollisionShape3D>`. Rename the :ref:`StaticBody3D "
+"<class_StaticBody3D>` to ``Ground``."
 msgstr ""
 "まず、キャラクターの落下を防ぐための床を追加します。床、壁、天井のような静的"
 "な衝突物(コライダー\"collider\")を作成するには、\\ *StaticBody*\\ ノードを使"
@@ -143,41 +122,29 @@ msgstr ""
 "*StaticBody*\\ ノード、\\ *CollisionShape*\\ を追加してください。そして\\ "
 "*StaticBody*\\ の名前を\\ *Ground*\\ に変更します。"
 
-msgid "|image6|"
-msgstr "|image6|"
+#, fuzzy
+msgid "Your scene tree should look like this"
+msgstr "シーンは次のようになります:"
 
-msgid "image6"
-msgstr "\\ image6"
-
+#, fuzzy
 msgid ""
-"A warning sign next to the *CollisionShape* appears because we haven't "
-"defined its shape. If you click the icon, a popup appears to give you more "
-"information."
+"A warning sign next to the :ref:`CollisionShape3D <class_CollisionShape3D>` "
+"appears because we haven't defined its shape. If you click the icon, a popup "
+"appears to give you more information."
 msgstr ""
 "\\ *CollisionShape*\\ の横に警告サインが表示されているのは、その形状を定義し"
 "ていないためです。このアイコンをクリックすると、詳細情報を提供するポップアッ"
 "プが表示されます。"
 
-msgid "|image7|"
-msgstr "\\ |image7|"
-
-msgid "image7"
-msgstr "\\ image7"
-
+#, fuzzy
 msgid ""
-"To create a shape, with the *CollisionShape* selected, head to the "
-"*Inspector* and click the *[empty]* field next to the *Shape* property. "
-"Create a new *Box Shape*."
+"To create a shape, select the :ref:`CollisionShape3D "
+"<class_CollisionShape3D>` node, head to the *Inspector* and click the "
+"*<empty>* field next to the *Shape* property. Create a new *BoxShape3D*."
 msgstr ""
 "シェイプを作成するには、\\ *CollisionShape*\\ を選択して、\\ *インスペクター"
 "*\\ (Inspector)に移動し、\\ *Shape*\\ プロパティの隣にある\\ *[空]*\\ "
 "([empty])フィールドをクリックします。新規\\ *Box Shape*\\ を作成します。"
-
-msgid "|image8|"
-msgstr "\\ |image8|"
-
-msgid "image8"
-msgstr "\\ image8"
 
 msgid ""
 "The box shape is perfect for flat ground and walls. Its thickness makes it "
@@ -186,12 +153,13 @@ msgstr ""
 "ボックスの形状は、平らな地面や壁に最適です。その厚さによって、動きの速い物体"
 "でも確実にブロックできます。"
 
+#, fuzzy
 msgid ""
 "A box's wireframe appears in the viewport with three orange dots. You can "
 "click and drag these to edit the shape's extents interactively. We can also "
-"precisely set the size in the inspector. Click on the *BoxShape* to expand "
-"the resource. Set its *Extents* to ``30`` on the X axis, ``1`` for the Y "
-"axis, and ``30`` for the Z axis."
+"precisely set the size in the inspector. Click on the :ref:`BoxShape3D "
+"<class_BoxShape3D>` to expand the resource. Set its *Size* to ``60`` on the "
+"X axis, ``2`` for the Y axis, and ``60`` for the Z axis."
 msgstr ""
 "ボックスのワイヤフレームが、ビューポートに3つのオレンジ色の点で表示されます。"
 "これらをクリック＆ドラッグして、形状の大きさをインタラクティブに編集できま"
@@ -199,67 +167,33 @@ msgstr ""
 "*BoxShape*\\ をクリックし、リソースを展開します。その *Extents* で X 軸に \\ "
 "``30``\\ 、Y軸に\\ ``1``\\ 、Z軸に\\ ``30``\\ を指定します。"
 
-msgid "|image9|"
-msgstr "\\ |image9|"
-
-msgid "image9"
-msgstr "\\ image9"
-
-msgid ""
-"In 3D, translation and size units are in meters. The box's total size is "
-"twice its extents: ``60`` by ``60`` meters on the ground plane and ``2`` "
-"units tall. The ground plane is defined by the X and Z axes, while the Y "
-"axis represents the height."
-msgstr ""
-"3Dでは、移動とサイズの単位はメートルです。ボックスの合計サイズは、その範囲の "
-"2 倍です。地面の平面は\\ ``60``\\ メートル掛ける\\ ``60``\\ メートルで、高さ"
-"は\\ ``2``\\ メートルです。地面の平面はX軸とZ軸で定義され、Y軸は高さを表しま"
-"す。"
-
+#, fuzzy
 msgid ""
 "Collision shapes are invisible. We need to add a visual floor that goes "
-"along with it. Select the *Ground* node and add a *MeshInstance* as its "
-"child."
+"along with it. Select the ``Ground`` node and add a :ref:`MeshInstance3D "
+"<class_MeshInstance3D>` as its child."
 msgstr ""
 "衝突形状は目に見えません。それに付随する視覚的な床を追加する必要がありま"
 "す。\\ *Ground*\\ ノードを選択し、\\ *MeshInstance*\\ をその子として追加して"
 "ください。"
 
-msgid "|image10|"
-msgstr "\\ |image10|"
-
-msgid "image10"
-msgstr "\\ image10"
-
+#, fuzzy
 msgid ""
-"In the *Inspector*, click on the field next to *Mesh* and create a "
-"*CubeMesh* resource to create a visible cube."
+"In the *Inspector*, click on the field next to *Mesh* and create a :ref:"
+"`BoxMesh <class_BoxMesh>` resource to create a visible box."
 msgstr ""
 "\\ *インスペクター*\\ (Inspector)で、\\ *Mesh*\\ の隣のフィールドをクリック"
 "し、\\ *CubeMesh*\\ リソースで可視キューブを作成します。"
 
-msgid "|image11|"
-msgstr "\\ |image11|"
-
-msgid "image11"
-msgstr "\\ image11"
-
+#, fuzzy
 msgid ""
-"Once again, it's too small by default. Click the cube icon to expand the "
-"resource and set its *Size* to ``60``, ``2``, and ``60``. As the cube "
-"resource works with a size rather than extents, we need to use these values "
-"so it matches our collision shape."
+"Once again, it's too small by default. Click the box icon to expand the "
+"resource and set its *Size* to ``60``, ``2``, and ``60``."
 msgstr ""
 "もう一度言いますが、デフォルトでは小さすぎます。キューブ アイコンをクリックし"
 "てリソースを展開し、\\ *Size*\\ を \\ ``60``\\ 、\\ ``2``\\ 、\\ ``60``\\ に"
 "します。キューブ リソースは extents ではなく size で動作するため、これらの値"
 "を使用して、コリジョン形状に一致させる必要があります。"
-
-msgid "|image12|"
-msgstr "\\ |image12|"
-
-msgid "image12"
-msgstr "\\ image12"
 
 msgid ""
 "You should see a wide grey slab that covers the grid and blue and red axes "
@@ -267,22 +201,16 @@ msgid ""
 msgstr ""
 "ビューポートにグリッドを覆う広い灰色の壁と、青と赤の軸が表示されるはずです。"
 
+#, fuzzy
 msgid ""
 "We're going to move the ground down so we can see the floor grid. Select the "
-"*Ground* node, hold the :kbd:`Ctrl` key down to turn on grid snapping (:kbd:"
-"`Cmd` on macOS), and click and drag down on the Y axis. It's the green arrow "
-"in the move gizmo."
+"``Ground`` node, hold the :kbd:`Ctrl` key down to turn on grid snapping, and "
+"click and drag down on the Y axis. It's the green arrow in the move gizmo."
 msgstr ""
 "床のグリッドを見ることができるように、地面を下に移動させます。\\ *Ground*\\ "
 "ノードを選択し、 :kbd:`Ctrl` キーを押しながらグリッド スナップをオンにして "
 "(macOS では :kbd:`Cmd`) 、Y 軸をクリックして下にドラッグしてください。移動ギ"
 "ズモにある緑色の矢印がそれです。"
-
-msgid "|image13|"
-msgstr "\\ |image13|"
-
-msgid "image13"
-msgstr "\\ image13"
 
 msgid ""
 "If you can't see the 3D object manipulator like on the image above, ensure "
@@ -292,39 +220,40 @@ msgstr ""
 "の上のツールバーで *選択モード(Select Mode)* がアクティブになっていることを確"
 "認してください。"
 
-msgid "|image14|"
-msgstr "\\ |image14|"
-
-msgid "image14"
-msgstr "\\ image14"
-
+#, fuzzy
 msgid ""
-"Move the ground down ``1`` meter. A label in the bottom-left corner of the "
-"viewport tells you how much you're translating the node."
+"Move the ground down ``1`` meter, in order to have a visible editor grid. A "
+"label in the bottom-left corner of the viewport tells you how much you're "
+"translating the node."
 msgstr ""
 "地面を\\ ``1``\\ メートル下に移動させます。ビューポートの左下隅にあるラベル"
 "は、ノードをどれだけ平行移動させたかを示しています。"
 
-msgid "|image15|"
-msgstr "\\ |image15|"
-
-msgid "image15"
-msgstr "\\ image15"
-
+#, fuzzy
 msgid ""
 "Moving the *Ground* node down moves both children along with it. Ensure you "
-"move the *Ground* node, **not** the *MeshInstance* or the *CollisionShape*."
+"move the *Ground* node, **not** the *MeshInstance3D* or the "
+"*CollisionShape3D*."
 msgstr ""
 "\\ *Ground*\\ ノードを下に動かすと、両方の子ノードも一緒に移動します。\\ "
 "*MeshInstance*\\ または \\ *CollisionShape*\\ **ではなく**\\ *Ground*\\ ノー"
 "ドを移動していることを確認してください。"
 
+msgid "Ultimately, ``Ground``'s transform.position.y should be -1"
+msgstr ""
+
 msgid ""
-"Let's add a directional light so our scene isn't all grey. Select the *Main* "
-"node and add a *DirectionalLight* as a child of it. We need to move it and "
-"rotate it. Move it up by clicking and dragging on the manipulator's green "
-"arrow and click and drag on the red arc to rotate it around the X axis, "
-"until the ground is lit."
+"Let's add a directional light so our scene isn't all grey. Select the "
+"``Main`` node and add a child node :ref:`DirectionalLight3D "
+"<class_DirectionalLight3D>`."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"We need to move and rotate the :ref:`DirectionalLight3D "
+"<class_DirectionalLight3D>` node. Move it up by clicking and dragging on the "
+"manipulator's green arrow and click and drag on the red arc to rotate it "
+"around the X axis, until the ground is lit."
 msgstr ""
 "指向性ライト(directional light)を追加して、シーンがグレー一色にならないように"
 "しましょう。\\ *Main*\\ ノードを選択し、\\ *DirectionalLight*\\ をその子とし"
@@ -338,20 +267,8 @@ msgstr ""
 "\\ *インスペクター*\\ (Inspector)で、\\ *Shadow -> Enabled*\\ にチェックを入"
 "れて、オンにします。"
 
-msgid "|image16|"
-msgstr "\\ |image16|"
-
-msgid "image16"
-msgstr "\\ image16"
-
 msgid "At this point, your project should look like this."
 msgstr "ここまでで、プロジェクトは次のようになっているはずです。"
-
-msgid "|image17|"
-msgstr "\\ |image17|"
-
-msgid "image17"
-msgstr "\\ image17"
 
 msgid ""
 "That's our starting point. In the next part, we will work on the player "

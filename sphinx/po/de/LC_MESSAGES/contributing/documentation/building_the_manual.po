@@ -1,0 +1,189 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Building the manual with Sphinx"
+msgstr "Erstellen des Handbuchs mit Sphinx"
+
+msgid ""
+"This page explains how to build a local copy of the Godot manual using the "
+"Sphinx docs engine. This allows you to have local HTML files and build the "
+"documentation as a PDF, EPUB, or LaTeX file, for example."
+msgstr ""
+"Auf dieser Seite wird erklärt, wie Sie eine lokale Kopie des Godot-Handbuchs "
+"mithilfe der Sphinx docs-Engine erstellen können. Dies ermöglicht Ihnen, "
+"lokale HTML-Dateien zu haben und die Dokumentation z. B. als PDF-, EPUB- "
+"oder LaTeX-Datei zu erstellen."
+
+msgid "Before you get started, make sure that you have:"
+msgstr ""
+
+#, fuzzy
+msgid "`Git <https://git-scm.com/>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`__"
+
+msgid ""
+"`make <https://www.gnu.org/software/make/>`_ (unless you're using Windows)"
+msgstr ""
+
+#, fuzzy
+msgid "`Python <https://www.python.org/>`_ 3"
+msgstr "`Python 3.5+ <https://www.python.org/>`__."
+
+#, fuzzy
+msgid ""
+"Python 3 should come with the ``pip3`` command. You may need to write "
+"``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) instead of ``pip3``. "
+"If both approaches fail, `make sure that you have pip3 installed <https://"
+"pip.pypa.io/en/stable/installation/>`__."
+msgstr ""
+"Möglicherweise müssen Sie anstelle von  ``pip3`` ``python3 -m pip`` (Unix) "
+"bzw. ``py -m pip`` (Windows) schreiben. Schlagen beide Ansätze fehlt, so "
+"überprüfen Sie bitte, ob Sie pip3 installiert haben <https://pip.pypa.io/en/"
+"stable/installation/>`__."
+
+msgid ""
+"*(Optional)* Set up a virtual environment. Virtual environments prevent "
+"potential conflicts between the Python packages in ``requirements.txt`` and "
+"other Python packages that are installed on your system."
+msgstr ""
+
+#, fuzzy
+msgid "Create the virtual environment:"
+msgstr "Einrichten der benutzerdefinierten Buildumgebung"
+
+msgid "Windows"
+msgstr "Windows"
+
+#, fuzzy
+msgid "Other platforms"
+msgstr "Unterstützte Plattformen"
+
+#, fuzzy
+msgid "Activate the virtual environment:"
+msgstr "Einrichten der benutzerdefinierten Buildumgebung"
+
+msgid "*(Optional)* Update pre-installed packages:"
+msgstr ""
+
+#, fuzzy
+msgid "Clone the docs repo:"
+msgstr "Zähle die Punkte."
+
+msgid "Change directory into the docs repo:"
+msgstr ""
+
+#, fuzzy
+msgid "Install the required packages:"
+msgstr "Paket installieren"
+
+#, fuzzy
+msgid "Build the docs:"
+msgstr "Erstellen des Editors"
+
+msgid ""
+"On Windows, that command will run ``make.bat`` instead of GNU Make (or an "
+"alternative)."
+msgstr ""
+
+msgid ""
+"Alternatively, you can build the documentation by running the sphinx-build "
+"program manually:"
+msgstr ""
+"Alternativ können Sie die Dokumentation auch erstellen, indem Sie das "
+"Programm sphinx-build manuell ausführen:"
+
+#, fuzzy
+msgid ""
+"The compilation will take some time as the ``classes/`` folder contains "
+"hundreds of files. See :ref:`doc_building_the_manual:performance`."
+msgstr ""
+"Die Kompilierung wird einige Zeit dauern, da der Ordner ``classes/`` "
+"hunderte von Dateien enthält."
+
+msgid ""
+"You can then browse the documentation by opening ``_build/html/index.html`` "
+"in your web browser."
+msgstr ""
+"Sie können dann die Dokumentation durchsuchen, indem Sie ``_build/html/index."
+"html`` in Ihrem Webbrowser öffnen."
+
+#, fuzzy
+msgid "Dealing with errors"
+msgstr "Malen mit Vertex-Farben"
+
+msgid "If you run into errors, you may try the following command:"
+msgstr "Wenn Sie auf Fehler stoßen, können Sie den folgenden Befehl versuchen:"
+
+#, fuzzy
+msgid ""
+"If you get a ``MemoryError`` or ``EOFError``, you can remove the ``classes/"
+"`` folder and run ``make`` again. This will drop the class references from "
+"the final HTML documentation but will keep the rest intact."
+msgstr ""
+"Falls Sie einen ``MemoryError`` oder ``EOFError`` erhalten, können Sie den "
+"Ordner ``classes/`` entfernen und ``make`` erneut ausführen. Dadurch werden "
+"die Klassenreferenzen aus der endgültigen HTML-Dokumentation entfernt, aber "
+"der Rest bleibt intakt."
+
+msgid ""
+"If you delete the ``classes/`` folder, do not use ``git add .`` when working "
+"on a pull request or the whole ``classes/`` folder will be removed when you "
+"commit. See `#3157 <https://github.com/godotengine/godot-docs/"
+"issues/3157>`__ for more detail."
+msgstr ""
+"Wenn Sie den Ordner ``classes/`` löschen, verwenden Sie nicht ``git add``, "
+"wenn Sie an einer Pull-Request arbeiten, sonst wird der gesamte Ordner "
+"``classes/`` beim Commit entfernt. Siehe `#3157 <https://github.com/"
+"godotengine/godot-docs/issues/3157>`__ für weitere Details."
+
+#, fuzzy
+msgid "Hints for performance"
+msgstr "Lichtleistung"
+
+#, fuzzy
+msgid "RAM usage"
+msgstr "Manuelle Verwendung"
+
+msgid ""
+"Building the documentation requires at least 8 GB of RAM to run without disk "
+"swapping, which slows it down. If you have at least 16 GB of RAM, you can "
+"speed up compilation by running:"
+msgstr ""
+"Das Erstellen der Dokumentation erfordert mindestens 8 GB RAM, um ohne "
+"Festplattenswapping zu laufen, was es verlangsamt. Wenn Sie mindestens 16 GB "
+"RAM haben, können Sie die Kompilierung beschleunigen, indem Sie ausführen:"
+
+msgid ""
+"You can use ``-j auto`` to use all available CPU threads, but this can use a "
+"lot of RAM if you have a lot of CPU threads. For instance, on a system with "
+"32 CPU threads, ``-j auto`` (which corresponds to ``-j 32`` here) can "
+"require 20+ GB of RAM for Sphinx alone."
+msgstr ""
+
+#, fuzzy
+msgid "Specifying a list of files"
+msgstr "Dateien bereitstellen"
+
+msgid ""
+"You can specify a list of files to build, which can greatly speed up "
+"compilation:"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

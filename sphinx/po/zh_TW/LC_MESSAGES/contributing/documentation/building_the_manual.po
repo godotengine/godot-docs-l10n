@@ -1,0 +1,162 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Building the manual with Sphinx"
+msgstr "建置 Mono 執行環境"
+
+msgid ""
+"This page explains how to build a local copy of the Godot manual using the "
+"Sphinx docs engine. This allows you to have local HTML files and build the "
+"documentation as a PDF, EPUB, or LaTeX file, for example."
+msgstr ""
+
+msgid "Before you get started, make sure that you have:"
+msgstr ""
+
+#, fuzzy
+msgid "`Git <https://git-scm.com/>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`_"
+
+msgid ""
+"`make <https://www.gnu.org/software/make/>`_ (unless you're using Windows)"
+msgstr ""
+
+#, fuzzy
+msgid "`Python <https://www.python.org/>`_ 3"
+msgstr "`Python 3.5+ <https://www.python.org/>`__ 。"
+
+msgid ""
+"Python 3 should come with the ``pip3`` command. You may need to write "
+"``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) instead of ``pip3``. "
+"If both approaches fail, `make sure that you have pip3 installed <https://"
+"pip.pypa.io/en/stable/installation/>`__."
+msgstr ""
+
+msgid ""
+"*(Optional)* Set up a virtual environment. Virtual environments prevent "
+"potential conflicts between the Python packages in ``requirements.txt`` and "
+"other Python packages that are installed on your system."
+msgstr ""
+
+#, fuzzy
+msgid "Create the virtual environment:"
+msgstr "設定自定建置環境"
+
+msgid "Windows"
+msgstr "Windows"
+
+#, fuzzy
+msgid "Other platforms"
+msgstr "支援所有平台。"
+
+#, fuzzy
+msgid "Activate the virtual environment:"
+msgstr "設定自定建置環境"
+
+msgid "*(Optional)* Update pre-installed packages:"
+msgstr ""
+
+msgid "Clone the docs repo:"
+msgstr ""
+
+msgid "Change directory into the docs repo:"
+msgstr ""
+
+#, fuzzy
+msgid "Install the required packages:"
+msgstr "安裝套件"
+
+#, fuzzy
+msgid "Build the docs:"
+msgstr "內建主題編輯器。"
+
+msgid ""
+"On Windows, that command will run ``make.bat`` instead of GNU Make (or an "
+"alternative)."
+msgstr ""
+
+msgid ""
+"Alternatively, you can build the documentation by running the sphinx-build "
+"program manually:"
+msgstr ""
+
+msgid ""
+"The compilation will take some time as the ``classes/`` folder contains "
+"hundreds of files. See :ref:`doc_building_the_manual:performance`."
+msgstr ""
+
+msgid ""
+"You can then browse the documentation by opening ``_build/html/index.html`` "
+"in your web browser."
+msgstr ""
+
+#, fuzzy
+msgid "Dealing with errors"
+msgstr "設定為錯誤的警告"
+
+#, fuzzy
+msgid "If you run into errors, you may try the following command:"
+msgstr "若要從 GitHub 上 Clone 你的 Fork，請使用下列指令："
+
+msgid ""
+"If you get a ``MemoryError`` or ``EOFError``, you can remove the ``classes/"
+"`` folder and run ``make`` again. This will drop the class references from "
+"the final HTML documentation but will keep the rest intact."
+msgstr ""
+
+msgid ""
+"If you delete the ``classes/`` folder, do not use ``git add .`` when working "
+"on a pull request or the whole ``classes/`` folder will be removed when you "
+"commit. See `#3157 <https://github.com/godotengine/godot-docs/"
+"issues/3157>`__ for more detail."
+msgstr ""
+
+#, fuzzy
+msgid "Hints for performance"
+msgstr "屬性目標中的效能提示"
+
+#, fuzzy
+msgid "RAM usage"
+msgstr "手動使用"
+
+msgid ""
+"Building the documentation requires at least 8 GB of RAM to run without disk "
+"swapping, which slows it down. If you have at least 16 GB of RAM, you can "
+"speed up compilation by running:"
+msgstr ""
+
+msgid ""
+"You can use ``-j auto`` to use all available CPU threads, but this can use a "
+"lot of RAM if you have a lot of CPU threads. For instance, on a system with "
+"32 CPU threads, ``-j auto`` (which corresponds to ``-j 32`` here) can "
+"require 20+ GB of RAM for Sphinx alone."
+msgstr ""
+
+#, fuzzy
+msgid "Specifying a list of files"
+msgstr "提供檔案"
+
+msgid ""
+"You can specify a list of files to build, which can greatly speed up "
+"compilation:"
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻譯狀態"

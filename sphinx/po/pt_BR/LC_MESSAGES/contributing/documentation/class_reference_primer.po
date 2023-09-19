@@ -1,0 +1,453 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Class reference primer"
+msgstr "Referência de classe"
+
+msgid ""
+"This page explains how to write the class reference. You will learn where to "
+"write new descriptions for the classes, methods, and properties for Godot's "
+"built-in node types."
+msgstr ""
+
+msgid ""
+"To learn to submit your changes to the Godot project using the Git version "
+"control system, see :ref:`doc_updating_the_class_reference`."
+msgstr ""
+
+msgid ""
+"The reference for each class is contained in an XML file like the one below:"
+msgstr ""
+
+msgid ""
+"It starts with brief and long descriptions. In the generated docs, the brief "
+"description is always at the top of the page, while the long description "
+"lies below the list of methods, variables, and constants. You can find "
+"methods, member variables, constants, and signals in separate XML nodes."
+msgstr ""
+
+msgid ""
+"For each, you want to learn how they work in Godot's source code. Then, fill "
+"their documentation by completing or improving the text in these tags:"
+msgstr ""
+
+#, fuzzy
+msgid "`<brief_description>`"
+msgstr "Descrição"
+
+#, fuzzy
+msgid "`<description>`"
+msgstr "Descrição"
+
+msgid "`<constant>`"
+msgstr "'<constant>'"
+
+msgid ""
+"`<method>` (in its `<description>` tag; return types and arguments don't "
+"take separate documentation strings)"
+msgstr ""
+
+msgid "`<member>`"
+msgstr "`<member>`"
+
+msgid ""
+"`<signal>` (in its `<description>` tag; arguments don't take separate "
+"documentation strings)"
+msgstr ""
+
+msgid ""
+"Write in a clear and simple language. Always follow the :ref:`writing "
+"guidelines <doc_docs_writing_guidelines>` to keep your descriptions short "
+"and easy to read. **Do not leave empty lines** in the descriptions: each "
+"line in the XML file will result in a new paragraph, even if it is empty."
+msgstr ""
+
+msgid "How to edit class XML"
+msgstr ""
+
+msgid ""
+"Edit the file for your chosen class in ``doc/classes/`` to update the class "
+"reference. The folder contains an XML file for each class. The XML lists the "
+"constants and methods you will find in the class reference. Godot generates "
+"and updates the XML automatically."
+msgstr ""
+
+msgid ""
+"For some modules in the engine's source code, you'll find the XML files in "
+"the ``modules/<module_name>/doc_classes/`` directory instead."
+msgstr ""
+
+msgid ""
+"Edit it using your favorite text editor. If you use a code editor, make sure "
+"that it doesn't change the indent style: you should use tabs for the XML and "
+"four spaces inside BBCode-style blocks. More on that below."
+msgstr ""
+
+msgid ""
+"To check that the modifications you've made are correct in the generated "
+"documentation, navigate to the ``doc/`` folder and run the command ``make "
+"rst``. This will convert the XML files to the online documentation's format "
+"and output errors if anything's wrong."
+msgstr ""
+
+msgid ""
+"Alternatively, you can build Godot and open the modified page in the built-"
+"in code reference. To learn how to compile the engine, read the :ref:"
+"`compilation guide <toc-devel-compiling>`."
+msgstr ""
+
+msgid ""
+"We recommend using a code editor that supports XML files like Vim, Atom, "
+"Visual Studio Code, Notepad++, or another to comfortably edit the file. You "
+"can also use their search feature to find classes and properties quickly."
+msgstr ""
+
+msgid ""
+"If you use Visual Studio Code, you can install the `vscode-xml extension "
+"<https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml>`__ "
+"to get linting for class reference XML files."
+msgstr ""
+
+msgid "Improve formatting with BBCode style tags"
+msgstr ""
+
+msgid ""
+"Godot's XML class reference supports BBCode-like tags for linking as well as "
+"formatting text and code. In the tables below you can find the available "
+"tags, usage examples and the results after conversion to reStructuredText."
+msgstr ""
+
+#, fuzzy
+msgid "Linking"
+msgstr "Bake de Mapa de Luz"
+
+msgid ""
+"Whenever you link to a member of another class, you need to specify the "
+"class name. For links to the same class, the class name is optional and can "
+"be omitted."
+msgstr ""
+
+#, fuzzy
+msgid "Tag and Description"
+msgstr "Descrição"
+
+msgid "Example"
+msgstr "Exemplo"
+
+msgid "Result"
+msgstr "Resultado"
+
+#, fuzzy
+msgid "``[Class]``"
+msgstr "[Class]"
+
+#, fuzzy
+msgid "Link to class"
+msgstr "Classe Variant"
+
+#, fuzzy
+msgid "``Move the [Sprite2D].``"
+msgstr "Mova o [Sprite]."
+
+#, fuzzy
+msgid "Move the :ref:`class_Sprite2D`."
+msgstr "Mova o :ref:`class_Sprite`."
+
+msgid "``[annotation Class.name]``"
+msgstr ""
+
+#, fuzzy
+msgid "Link to annotation"
+msgstr "Reproduzir a animação"
+
+msgid "``See [annotation @GDScript.@export].``"
+msgstr ""
+
+msgid "See :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`."
+msgstr ""
+
+msgid "``[constant Class.name]``"
+msgstr ""
+
+#, fuzzy
+msgid "Link to constant"
+msgstr "Define uma constante."
+
+msgid "``See [constant @GlobalScope.KEY_F1].``"
+msgstr ""
+
+msgid "See :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`."
+msgstr ""
+
+msgid "``[enum Class.name]``"
+msgstr ""
+
+#, fuzzy
+msgid "Link to enum"
+msgstr "Link para a licença"
+
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr ""
+
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr ""
+
+#, fuzzy
+msgid "``[method Class.name]``"
+msgstr "[method methodname] ([método nome do método])"
+
+#, fuzzy
+msgid "Link to method"
+msgstr "Vincular métodos"
+
+msgid "``Call [method Node3D.hide].``"
+msgstr ""
+
+#, fuzzy
+msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
+msgstr "Veja :ref:`hide <class_spatial_method_hide>`."
+
+msgid "``[member Class.name]``"
+msgstr ""
+
+#, fuzzy
+msgid "Link to member"
+msgstr "Editar Membro"
+
+msgid "``Get [member Node2D.scale].``"
+msgstr ""
+
+#, fuzzy
+msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
+msgstr "Get :ref:`scale <class_Node2D_property_scale>`."
+
+msgid "``[signal Class.name]``"
+msgstr ""
+
+#, fuzzy
+msgid "Link to signal"
+msgstr "Usando sinais"
+
+msgid "``Emit [signal Node.renamed].``"
+msgstr ""
+
+#, fuzzy
+msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
+msgstr "Emit :ref:`renamed <class_Node_signal_renamed>`."
+
+msgid "``[theme_item Class.name]``"
+msgstr ""
+
+#, fuzzy
+msgid "Link to theme item"
+msgstr "Link para a licença"
+
+msgid "``See [theme_item Label.font].``"
+msgstr ""
+
+msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
+msgstr ""
+
+msgid "Currently only :ref:`class_@GDScript` has annotations."
+msgstr ""
+
+#, fuzzy
+msgid "Formatting text"
+msgstr "Formatação"
+
+#, fuzzy
+msgid "``[param name]``"
+msgstr "``name``"
+
+msgid "Formats a parameter name (as code)"
+msgstr ""
+
+msgid "``Takes [param size] for the size.``"
+msgstr ""
+
+msgid "Takes ``size`` for the size."
+msgstr ""
+
+msgid "``[br]``"
+msgstr ""
+
+#, fuzzy
+msgid "Line break"
+msgstr "break"
+
+msgid "``Line 1.[br]``"
+msgstr ""
+
+msgid "``Line 2.``"
+msgstr ""
+
+msgid "Line 1."
+msgstr ""
+
+msgid "Line 2."
+msgstr ""
+
+#, fuzzy
+msgid "``[b]`` ``[/b]``"
+msgstr "``[b]{text}[/b]``"
+
+msgid "Bold"
+msgstr "Negrito"
+
+#, fuzzy
+msgid "``Some [b]bold[/b] text.``"
+msgstr "Um texto em [b]negrito[/b]."
+
+msgid "Some **bold** text."
+msgstr "Algum texto **negrito**."
+
+#, fuzzy
+msgid "``[i]`` ``[/i]``"
+msgstr "``[i]{text}[/i]``"
+
+msgid "Italic"
+msgstr "Itálico"
+
+#, fuzzy
+msgid "``Some [i]italic[/i] text.``"
+msgstr "Algum texto em [i]itálico[/i]."
+
+msgid "Some *italic* text."
+msgstr "Algum texto em *itálico*."
+
+msgid "``[kbd]`` ``[/kbd]``"
+msgstr ""
+
+#, fuzzy
+msgid "Keyboard/mouse shortcut"
+msgstr "Atalho do teclado"
+
+#, fuzzy
+msgid "``Some [kbd]Ctrl + C[/kbd] key.``"
+msgstr "Alguma tecla :kbd:`Ctrl + C`."
+
+msgid "Some :kbd:`Ctrl + C` key."
+msgstr "Alguma tecla :kbd:`Ctrl + C`."
+
+#, fuzzy
+msgid "Formatting code"
+msgstr "Formatação"
+
+#, fuzzy
+msgid "``[code]`` ``[/code]``"
+msgstr "``[code]{text}[/code]``"
+
+msgid "Monospace"
+msgstr "Monoespaço"
+
+#, fuzzy
+msgid "``Some [code]monospace[/code] text.``"
+msgstr "``[code]{text}[/code]``"
+
+msgid "Some ``monospace`` text."
+msgstr ""
+
+#, fuzzy
+msgid "``[codeblock]`` ``[/codeblock]``"
+msgstr "``[code]{text}[/code]``"
+
+msgid "Multiline preformatted block"
+msgstr ""
+
+msgid "*See below.*"
+msgstr ""
+
+msgid "``[codeblocks]`` ``[/codeblocks]``"
+msgstr ""
+
+#, fuzzy
+msgid "Codeblock for multiple languages"
+msgstr "[codeblock] para vários idiomas"
+
+#, fuzzy
+msgid "``[gdscript]`` ``[/gdscript]``"
+msgstr "``-s <script>``, ``--script <script>``"
+
+msgid "GDScript codeblock tab in codeblocks"
+msgstr ""
+
+#, fuzzy
+msgid "``[csharp]`` ``[/csharp]``"
+msgstr "[csharp] [/csharp]"
+
+msgid "C# codeblock tab in codeblocks"
+msgstr ""
+
+msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+msgstr ""
+
+msgid ""
+"``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+msgstr ""
+
+msgid ""
+"Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
+"always use **four spaces** for indentation. The parser will delete tabs."
+msgstr ""
+
+msgid "For example:"
+msgstr "Por exemplo:"
+
+msgid "Will display as:"
+msgstr ""
+
+msgid ""
+"If you need to have different code version in GDScript and C#, use "
+"``[codeblocks]`` instead. If you use ``[codeblocks]``, you also need to have "
+"at least one of the language-specific tags, ``[gdscript]`` and ``[csharp]``."
+msgstr ""
+
+msgid ""
+"Always write GDScript code examples first! You can use this `experimental "
+"code translation tool <https://github.com/HaSa1002/codetranslator>`_ to "
+"speed up your workflow."
+msgstr ""
+
+msgid "The above will display as:"
+msgstr ""
+
+msgid ""
+"To denote important information, add a paragraph starting with \"[b]Note:[/"
+"b]\" at the end of the description:"
+msgstr ""
+
+msgid ""
+"To denote crucial information that could cause security issues or loss of "
+"data if not followed carefully, add a paragraph starting with \"[b]Warning:[/"
+"b]\" at the end of the description:"
+msgstr ""
+
+msgid ""
+"For deprecated properties, add a paragraph starting with \"[i]Deprecated.[/"
+"i]\". Notice the use of italics instead of bold:"
+msgstr ""
+
+msgid ""
+"In all the paragraphs described above, make sure the punctuation is part of "
+"the BBCode tags for consistency."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Progresso da Tradução"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,10 +21,12 @@ msgid "Android in-app purchases"
 msgstr ""
 
 msgid ""
-"Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin since "
-"Godot 3.2.2. The new plugin uses the `Google Play Billing library <https://"
-"developer.android.com/google/play/billing>`__ instead of the now deprecated "
-"AIDL IAP implementation."
+"Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin "
+"compatible with Godot 3.2.2 and higher. This plugin uses the `Google Play "
+"Billing library <https://developer.android.com/google/play/billing>`__ "
+"instead of the now deprecated AIDL IAP implementation. For details of how to "
+"migrate from the older ``GodotPaymentsV3``, see the migration guide: "
+"`Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)`_."
 msgstr ""
 
 msgid ""
@@ -35,6 +37,258 @@ msgstr ""
 "Pokud vám při učení vyhovují více příklady, můžete se také podívat na různé "
 "\"Godot demo projekty <https://github.com/godotengine/godot-demo-"
 "projects\"'_."
+
+msgid "Usage"
+msgstr "Používání"
+
+msgid "Getting started"
+msgstr "Začínáme"
+
+msgid ""
+"Make sure you have enabled and successfully set up :ref:`Android Custom "
+"Builds <doc_android_custom_build>`. Follow the compiling instructions on the "
+"``GodotGooglePlayBilling`` `github page <https://github.com/godotengine/"
+"godot-google-play-billing>`__."
+msgstr ""
+
+msgid ""
+"If you use a custom build you possibly have to put your own `godot-lib.***."
+"release.aar` file in the `./godot-google-play-billing/libs/` folder."
+msgstr ""
+
+msgid ""
+"Then put the files `./godot-google-play-billing/build/outputs/aar/"
+"GodotGooglePlayBilling.***.release.aar` and `./GodotGooglePlayBilling.gdap` "
+"into your project in the `res://android/plugins` folder."
+msgstr ""
+
+msgid ""
+"The plugin should now show up in the Android export settings, where you can "
+"enable it."
+msgstr ""
+
+#, fuzzy
+msgid "Initialize the plugin"
+msgstr "Instalace doplňku"
+
+msgid "To use the ``GodotGooglePlayBilling`` API:"
+msgstr ""
+
+msgid "Obtain a reference to the ``GodotGooglePlayBilling`` singleton"
+msgstr ""
+
+msgid "Connect handlers for the plugin signals"
+msgstr ""
+
+#, fuzzy
+msgid "Call ``startConnection``"
+msgstr "``připojení``"
+
+#, fuzzy
+msgid "Initialization example:"
+msgstr "Příklad vnitřní místnosti"
+
+msgid ""
+"The API must be in a connected state prior to use. The ``connected`` signal "
+"is sent when the connection process succeeds. You can also use ``isReady()`` "
+"to determine if the plugin is ready for use. The ``getConnectionState()`` "
+"function returns the current connection state of the plugin."
+msgstr ""
+
+msgid "Return values for ``getConnectionState()``:"
+msgstr ""
+
+#, fuzzy
+msgid "Query available items"
+msgstr "Zde jsou dostupné typy:"
+
+msgid ""
+"Once the API has connected, query SKUs using ``querySkuDetails()``. You must "
+"successfully complete a SKU query before calling the ``purchase()`` or "
+"``queryPurchases()`` functions, or they will return an error. "
+"``querySkuDetails()`` takes two parameters: an array of SKU name strings, "
+"and a string specifying the type of SKU being queried. The SKU type string "
+"should be ``\"inapp\"`` for normal in-app purchases or ``\"subs\"`` for "
+"subscriptions. The name strings in the array should match the SKU product "
+"ids defined in the Google Play Console entry for your app."
+msgstr ""
+
+msgid "Example use of ``querySkuDetails()``:"
+msgstr ""
+
+msgid "Query user purchases"
+msgstr ""
+
+msgid ""
+"To retrieve a user's purchases, call the ``queryPurchases()`` function "
+"passing a string with the type of SKU to query. The SKU type string should "
+"be ``\"inapp\"`` for normal in-app purchases or ``\"subs\"`` for "
+"subscriptions. The ``query_purchases_response`` signal is sent with the "
+"result. The signal has a single parameter: a :ref:`Dictionary "
+"<class_Dictionary>` with a status code and either an array of purchases or "
+"an error message. Only active subscriptions and non-consumed one-time "
+"purchases are included in the purchase array."
+msgstr ""
+
+msgid "Example use of ``queryPurchases()``:"
+msgstr ""
+
+msgid ""
+"You should query purchases during startup after successfully retrieving SKU "
+"details. Since the user may make a purchase or resolve a pending transaction "
+"from outside your app, you should recheck for purchases when resuming from "
+"the background. To accomplish this, you can use the ``billing_resume`` "
+"signal."
+msgstr ""
+
+msgid "Example use of ``billing_resume``:"
+msgstr ""
+
+msgid ""
+"For more information on processing the purchase items returned by "
+"``queryPurchases()``, see `Processing a purchase item`_"
+msgstr ""
+
+msgid "Purchase an item"
+msgstr ""
+
+msgid ""
+"To initiate the purchase flow for an item, call ``purchase()`` passing the "
+"product id string of the SKU you wish to purchase. Reminder: you **must** "
+"query the SKU details for an item before you can pass it to ``purchase()``."
+msgstr ""
+
+msgid "Example use of ``purchase()``:"
+msgstr ""
+
+msgid ""
+"The payment flow will send a ``purchases_updated`` signal on success or a "
+"``purchase_error`` signal on failure."
+msgstr ""
+
+#, fuzzy
+msgid "Processing a purchase item"
+msgstr "Vytvoření spritu"
+
+msgid ""
+"The ``query_purchases_response`` and ``purchases_updated`` signals provide "
+"an array of purchases in :ref:`Dictionary <class_Dictionary>` format. The "
+"purchase Dictionary includes keys that map to values of the Google Play "
+"Billing `Purchase <https://developer.android.com/reference/com/android/"
+"billingclient/api/Purchase>`_ class."
+msgstr ""
+
+msgid "Purchase fields:"
+msgstr ""
+
+msgid "Check purchase state"
+msgstr ""
+
+msgid ""
+"Check the ``purchase_state`` value of a purchase to determine if a purchase "
+"was completed or is still pending."
+msgstr ""
+
+msgid "PurchaseState values:"
+msgstr ""
+
+msgid ""
+"If a purchase is in a ``PENDING`` state, you should not award the contents "
+"of the purchase or do any further processing of the purchase until it "
+"reaches the ``PURCHASED`` state. If you have a store interface, you may wish "
+"to display information about pending purchases needing to be completed in "
+"the Google Play Store. For more details on pending purchases, see `Handling "
+"pending transactions <https://developer.android.com/google/play/billing/"
+"integrate#pending>`_ in the Google Play Billing Library documentation."
+msgstr ""
+
+msgid "Consumables"
+msgstr "Spotřebovatelné předměty"
+
+msgid ""
+"If your in-app item is not a one-time purchase but a consumable item (e.g. "
+"coins) which can be purchased multiple times, you can consume an item by "
+"calling ``consumePurchase()`` passing the ``purchase_token`` value from the "
+"purchase dictionary. Calling ``consumePurchase()`` automatically "
+"acknowledges a purchase. Consuming a product allows the user to purchase it "
+"again, it will no longer appear in subsequent ``queryPurchases()`` calls "
+"unless it is repurchased."
+msgstr ""
+
+msgid "Example use of ``consumePurchase()``:"
+msgstr ""
+
+msgid "Acknowledging purchases"
+msgstr ""
+
+msgid ""
+"If your in-app item is a one-time purchase, you must acknowledge the "
+"purchase by calling the ``acknowledgePurchase()`` function, passing the "
+"``purchase_token`` value from the purchase dictionary. If you do not "
+"acknowledge a purchase within three days, the user automatically receives a "
+"refund, and Google Play revokes the purchase. If you are calling "
+"``comsumePurchase()`` it automatically acknowledges the purchase and you do "
+"not need to call ``acknowledgePurchase()``."
+msgstr ""
+
+msgid "Example use of ``acknowledgePurchase()``:"
+msgstr ""
+
+msgid "Subscriptions"
+msgstr "Předplatné"
+
+msgid ""
+"Subscriptions work mostly like regular in-app items. Use ``\"subs\"`` as the "
+"second argument to ``querySkuDetails()`` to get subscription details. Pass "
+"``\"subs\"`` to ``queryPurchases()`` to get subscription purchase details."
+msgstr ""
+
+msgid ""
+"You can check ``is_auto_renewing`` in the a subscription purchase returned "
+"from ``queryPurchases()`` to see if a user has cancelled an auto-renewing "
+"subscription."
+msgstr ""
+
+msgid ""
+"You need to acknowledge new subscription purchases, but not automatic "
+"subscription renewals."
+msgstr ""
+
+msgid ""
+"If you support upgrading or downgrading between different subscription "
+"levels, you should use ``updateSubscription()`` to use the subscription "
+"update flow to change an active subscription. Like ``purchase()``, results "
+"are returned by the ``purchases_updated`` and ``purchase_error`` signals. "
+"There are three parameters to ``updateSubscription()``:"
+msgstr ""
+
+msgid "The purchase token of the currently active subscription"
+msgstr ""
+
+msgid "The product id string of the subscription SKU to change to"
+msgstr ""
+
+msgid "The proration mode to apply to the subscription."
+msgstr ""
+
+msgid "The proration values are defined as:"
+msgstr ""
+
+msgid "Default behavior is ``IMMEDIATE_WITH_TIME_PRORATION``."
+msgstr ""
+
+msgid "Example use of ``updateSubscription``:"
+msgstr ""
+
+msgid ""
+"The ``confirmPriceChange()`` function can be used to launch price change "
+"confirmation flow for a subscription. Pass the product id of the "
+"subscription SKU subject to the price change. The result will be sent by the "
+"``price_change_acknowledged`` signal."
+msgstr ""
+
+msgid "Example use of ``confirmPriceChange()``:"
+msgstr ""
 
 msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
 msgstr ""
@@ -64,89 +318,6 @@ msgid "Support for subscriptions"
 msgstr "Podpora předplatného"
 
 msgid "Signals (no polling or callback objects)"
-msgstr ""
-
-msgid "Usage"
-msgstr "Používání"
-
-msgid "Getting started"
-msgstr "Začínáme"
-
-msgid ""
-"If not already done, make sure you have enabled and successfully set up :ref:"
-"`Android Custom Builds <doc_android_custom_build>`. Grab "
-"the``GodotGooglePlayBilling`` plugin binary and config from the `releases "
-"page <https://github.com/godotengine/godot-google-play-billing/releases>`__ "
-"and put both into `res://android/plugins`. The plugin should now show up in "
-"the Android export settings, where you can enable it."
-msgstr ""
-
-msgid ""
-"To use the ``GodotGooglePlayBilling`` API you first have to get the "
-"``GodotGooglePlayBilling`` singleton and start the connection:"
-msgstr ""
-
-msgid ""
-"All API methods only work if the API is connected. You can use ``payment."
-"isReady()`` to check the connection status."
-msgstr ""
-
-msgid "Querying available items"
-msgstr ""
-
-msgid ""
-"As soon as the API is connected, you can query SKUs using "
-"``querySkuDetails``."
-msgstr ""
-
-msgid "Full example:"
-msgstr ""
-
-msgid "Purchase an item"
-msgstr ""
-
-msgid ""
-"To initiate the purchase flow for an item, call ``purchase``. You **must** "
-"query the SKU details for an item before you can initiate the purchase flow "
-"for it."
-msgstr ""
-
-msgid ""
-"Then, wait for the ``_on_purchases_updated`` callback and handle the "
-"purchase result:"
-msgstr ""
-
-msgid "Check if the user purchased an item"
-msgstr ""
-
-msgid ""
-"To get all purchases, call ``queryPurchases``. Unlike most of the other "
-"functions, ``queryPurchases`` is a synchronous operation and returns a :ref:"
-"`Dictionary <class_Dictionary>` with a status code and either an array of "
-"purchases or an error message. Only active subscriptions and non-consumed "
-"one-time purchases are returned."
-msgstr ""
-
-msgid "Consumables"
-msgstr "Spotřebovatelné předměty"
-
-msgid ""
-"If your in-app item is not a one-time purchase but a consumable item (e.g. "
-"coins) which can be purchased multiple times, you can consume an item by "
-"calling ``consumePurchase`` with a purchase token. Call ``queryPurchases`` "
-"to get the purchase token. Calling ``consumePurchase`` automatically "
-"acknowledges a purchase. Consuming a product allows the user to purchase it "
-"again, and removes it from appearing in subsequent ``queryPurchases`` calls."
-msgstr ""
-
-msgid "Subscriptions"
-msgstr "Předplatné"
-
-msgid ""
-"Subscriptions don't work much different from regular in-app items. Just use "
-"``\"subs\"`` as second argument to ``querySkuDetails`` to get subscription "
-"details. Check ``is_auto_renewing`` in the results of ``queryPurchases()`` "
-"to see if a user has cancelled an auto-renewing subscription"
 msgstr ""
 
 msgid "Translation status"

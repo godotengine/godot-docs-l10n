@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,6 +38,11 @@ msgstr ""
 "compilar e implementar en un dispositivo iOS, compilar una versión de "
 "distribución para la App Store y todo lo que normalmente puede hacerse con "
 "Xcode."
+
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to iOS. To "
+"use C# on iOS, use Godot 3 instead."
+msgstr ""
 
 msgid "Requirements"
 msgstr "Requerimientos"
@@ -73,6 +78,29 @@ msgstr ""
 "Las opciones **App Store Team ID** e **Identifier** de la categoría "
 "**Application** son obligatorias. Si se dejan en blanco, el exportador "
 "generará un error."
+
+msgid "If you encounter an error during export similar to"
+msgstr ""
+
+msgid ""
+"``JSON text did not start with array or object and option to allow fragments "
+"not set``"
+msgstr ""
+
+msgid "then it might be due to a malformated **App Store Team ID**!"
+msgstr ""
+
+msgid ""
+"The exporter expects a (10 characters long) code like ``ABCDE12XYZ`` and "
+"not, e.g., your name as Xcode likes to display in the *Signing & "
+"Capabilities* tab."
+msgstr ""
+
+msgid ""
+"You can find the code over at `developer.apple.com <https://developer.apple."
+"com/account/resources/certificates/list>`_ next to your name in the top "
+"right corner."
+msgstr ""
 
 msgid ""
 "After you click **Export Project**, there are still two important options "
@@ -216,25 +244,44 @@ msgstr ""
 "Se pueden utilizar complementos especiales de iOS en Godot. Consulta la "
 "página :ref:`doc_plugins_for_ios` para obtener más información."
 
-msgid "Troubleshooting rendering issues"
-msgstr "Solución de Problemas de renderizado"
+msgid "Environment variables"
+msgstr "Variables de entorno"
 
 msgid ""
-"To improve out-of-the-box performance on mobile devices, Godot automatically "
-"uses low-end-friendly settings by default on both Android and iOS."
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
 msgstr ""
-"Para mejorar el rendimiento de manera predeterminada en dispositivos "
-"móviles, Godot utiliza automáticamente configuraciones amigables para "
-"dispositivos de gama baja en Android e iOS."
 
-msgid ""
-"This can cause rendering issues that do not occur when running the project "
-"on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more "
-"information."
+#, fuzzy
+msgid "iOS export environment variables"
+msgstr "Variables de entorno"
+
+#, fuzzy
+msgid "Export option"
+msgstr "Opciones de exportación"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "Variables de entorno"
+
+msgid "Encryption / Encryption Key"
 msgstr ""
-"Esto puede provocar problemas de renderizado que no ocurren al ejecutar el "
-"proyecto en una plataforma de escritorio. Consulta :ref:"
-"`doc_mobile_rendering_limitations` para obtener más información."
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
+
+msgid "Options / Application / Provisioning Profile UUID Debug"
+msgstr ""
+
+msgid "GODOT_IOS_PROVISIONING_PROFILE_UUID_DEBUG"
+msgstr ""
+
+msgid "Options / Application / Provisioning Profile UUID Release"
+msgstr ""
+
+msgid "GODOT_IOS_PROVISIONING_PROFILE_UUID_RELEASE"
+msgstr ""
 
 msgid "Translation status"
 msgstr "Estado de traducción"

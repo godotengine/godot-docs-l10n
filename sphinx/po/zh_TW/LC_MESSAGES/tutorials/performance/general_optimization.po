@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,20 +104,31 @@ msgid "Putting a start/stop timer around code of interest."
 msgstr ""
 
 #, fuzzy
-msgid "Using the Godot profiler."
+msgid "Using the :ref:`Godot profiler <doc_the_profiler>`."
 msgstr "使用現有的 Godot 材質"
 
-#, fuzzy
-msgid "Using external third-party CPU profilers."
-msgstr "External Files - 外部檔案"
-
-msgid ""
-"Using GPU profilers/debuggers such as `NVIDIA Nsight Graphics <https://"
-"developer.nvidia.com/nsight-graphics>`__ or `apitrace <https://apitrace."
-"github.io/>`__."
+msgid "Using :ref:`external CPU profilers <doc_using_cpp_profilers>`."
 msgstr ""
 
-msgid "Checking the frame rate (with V-Sync disabled)."
+msgid ""
+"Using external GPU profilers/debuggers such as `NVIDIA Nsight Graphics "
+"<https://developer.nvidia.com/nsight-graphics>`__, `Radeon GPU Profiler "
+"<https://gpuopen.com/rgp/>`__ or `Intel Graphics Performance Analyzers "
+"<https://www.intel.com/content/www/us/en/developer/tools/graphics-"
+"performance-analyzers/overview.html>`__."
+msgstr ""
+
+msgid ""
+"Checking the frame rate (with V-Sync disabled). Third-party utilities such "
+"as `RivaTuner Statistics Server <https://www.guru3d.com/files-details/rtss-"
+"rivatuner-statistics-server-download.html>`__ (Windows) or `MangoHud "
+"<https://github.com/flightlessmango/MangoHud>`__ (Linux) can also be useful "
+"here."
+msgstr ""
+
+msgid ""
+"Using an unofficial `debug menu add-on <https://github.com/godot-extended-"
+"libraries/godot-debug-menu>`__."
 msgstr ""
 
 msgid ""
@@ -227,7 +238,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "For more info about using Godot's built-in profiler, see :ref:"
-"`doc_debugger_panel`."
+"`doc_the_profiler`."
 msgstr "更多有關光照烘焙的資訊，請參考 :ref:`doc_baked_lightmaps` 。"
 
 msgid "Principles"

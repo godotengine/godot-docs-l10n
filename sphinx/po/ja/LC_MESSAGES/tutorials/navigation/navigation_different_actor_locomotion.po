@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Support different actor locomotion"
+msgstr ""
+
+msgid ""
+"To support different actor locomotion like crouching and crawling, a similar "
+"map setup as supporting :ref:`doc_navigation_different_actor_types` is "
+"required."
+msgstr ""
+
+msgid ""
+"Bake different navigation meshes with an appropriate height for crouched or "
+"crawling actors so they can find paths through those narrow sections in your "
+"game world."
+msgstr ""
+
+msgid ""
+"When an actor changes locomotion state, e.g. stands up, starts crouching or "
+"crawling, query the appropriate map for a path."
+msgstr ""
+
+msgid ""
+"If the avoidance behavior should also change with the locomotion e.g. only "
+"avoid while standing or only avoid other agents in the same locomotion "
+"state, switch the actors's avoidance agent to another avoidance map with "
+"each locomotion change."
+msgstr ""
+
+msgid ""
+"While a path query can be execute immediately for multiple maps, the "
+"avoidance agent map switch will only take effect after the next server "
+"synchronization."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

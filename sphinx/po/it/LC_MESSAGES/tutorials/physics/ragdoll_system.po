@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,8 +49,8 @@ msgstr "Creare ossa fisiche"
 
 msgid ""
 "Like many other features in the engine, there is a node to set up a ragdoll: "
-"the :ref:`PhysicalBone <class_PhysicalBone>` node. To simplify the setup, "
-"you can generate ``PhysicalBone`` nodes with the \"Create physical "
+"the :ref:`PhysicalBone3D <class_PhysicalBone3D>` node. To simplify the "
+"setup, you can generate ``PhysicalBone`` nodes with the \"Create physical "
 "skeleton\" feature in the skeleton node."
 msgstr ""
 
@@ -139,7 +139,8 @@ msgstr ""
 
 msgid ""
 "Make sure to set up your collision layers and masks properly so the "
-"``KinematicBody``'s capsule doesn't get in the way of the physics simulation:"
+"``CharacterBody3D``'s capsule doesn't get in the way of the physics "
+"simulation:"
 msgstr ""
 
 #, fuzzy

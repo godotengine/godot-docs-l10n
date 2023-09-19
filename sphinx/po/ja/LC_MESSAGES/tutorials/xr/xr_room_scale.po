@@ -1,0 +1,339 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Room scale in XR"
+msgstr "ルートのスケール"
+
+msgid ""
+"One of the staples of XR projects is the ability to walk around freely in a "
+"large space. This space is often constrained by the room the player is "
+"physically in with tracking sensors placed within this space. With the "
+"advent of inside out tracking however ever larger play spaces are possible."
+msgstr ""
+
+msgid ""
+"As a developer this introduces a number of interesting challenges. In this "
+"document we will look at a number of the challenges you may face and outline "
+"some solutions. We'll discuss the issues and challenges for seated XR games "
+"in another document."
+msgstr ""
+
+msgid ""
+"In traditional first person games a player is represented by a :ref:"
+"`CharacterBody3D <class_characterbody3d>` node. This node is moved by "
+"processing traditional controller, mouse or keyboard input. A camera is "
+"attached to this node at a location roughly where the player's head will be."
+msgstr ""
+
+msgid ""
+"Applying this model to the XR setup, we add an :ref:`XROrigin3D "
+"<class_xrorigin3d>` node as a child of the character body, and add a :ref:"
+"`XRCamera3D <class_xrcamera3d>` as a child of the origin node. At face value "
+"this seems to work. However, upon closer examination this model does not "
+"take into account that there are two forms of movement in XR. The movement "
+"through controller input, and the physical movement of the player in the "
+"real world."
+msgstr ""
+
+msgid ""
+"As a result, the origin node does not represent the position of the player. "
+"It represents the center, or start of, the tracking space in which the "
+"player can physically move. As the player moves around their room this "
+"movement is represented through the tracking of the players headset. In game "
+"this translates to the camera node's position being updated accordingly. For "
+"all intents and purposes, we are tracking a disembodied head. Unless body "
+"tracking is available, we have no knowledge of the position or orientation "
+"of the player's body."
+msgstr ""
+
+msgid ""
+"The first problem this causes is fairly obvious. When the player moves with "
+"controller input, we can use the same approach in normal games and move the "
+"player in a forward direction. However the player isn't where we think they "
+"are and as we move forward we're checking collisions in the wrong location."
+msgstr ""
+
+msgid ""
+"The second problem really shows itself when the player walks further away "
+"from the center of the tracking space and uses controller input to turn. If "
+"we rotate our character body, the player will be moved around the room in a "
+"circular fashion."
+msgstr ""
+
+msgid ""
+"If we fix the above issues, we will find a third issue. When the path for "
+"the player is blocked in the virtual world, the player can still physically "
+"move forward."
+msgstr ""
+
+msgid ""
+"We will look at solving the first two problem with two separate solutions, "
+"and then discuss dealing with the third."
+msgstr ""
+
+msgid "Origin centric solution"
+msgstr ""
+
+msgid ""
+"Looking at the first approach for solving this we are going to change our "
+"structure. This is the approach currently implemented in XR Tools."
+msgstr ""
+
+msgid ""
+"In this setup we mark the character body as top level so it does not move "
+"with the origin."
+msgstr ""
+
+msgid ""
+"We also have a helper node that tells us where our neck joint is in relation "
+"to our camera. We use this to determine where our body center is."
+msgstr ""
+
+msgid "Processing our character movement is now done in three steps."
+msgstr ""
+
+#, fuzzy
+msgid "Step 1"
+msgstr "ステップイン"
+
+msgid ""
+"In the first step we're going to process the physical movement of the "
+"player. We determine where the player is right now, and attempt to move our "
+"character body there."
+msgstr ""
+
+msgid ""
+"Note that we're returning ``true`` from our "
+"``_process_on_physical_movement`` function when we couldn't move our player "
+"all the way."
+msgstr ""
+
+#, fuzzy
+msgid "Step 2"
+msgstr "ステップイン"
+
+msgid ""
+"The second step is to handle rotation of the player as a result of user "
+"input."
+msgstr ""
+
+msgid ""
+"As the input used can differ based on your needs we are simply calling the "
+"function ``_get_rotational_input``. This function should obtain the "
+"necessary input and return the rotational speed in radians per second."
+msgstr ""
+
+#, fuzzy
+msgid "Step 3"
+msgstr "ステップイン"
+
+msgid ""
+"The third and final step is moving the player forwards, backwards or "
+"sideways as a result of user input."
+msgstr ""
+
+msgid ""
+"Just like with the rotation the inputs differ from project to project so we "
+"are simply calling the function ``_get_movement_input``. This function "
+"should obtain the necessary input and return a directional vector scaled to "
+"the required velocity."
+msgstr ""
+
+#, fuzzy
+msgid "Character body centric solution"
+msgstr "アニメーション"
+
+msgid ""
+"In this setup we are going to keep our character body as our root node and "
+"as such is easier to combine with traditional game mechanics."
+msgstr ""
+
+msgid ""
+"Here we have a standard character body with collision shape, and our XR "
+"origin node and camera as normal children. We also have our neck helper node."
+msgstr ""
+
+msgid ""
+"Processing our character movement is done in the same three steps but "
+"implemented slightly differently."
+msgstr ""
+
+msgid ""
+"In this approach step 1 is where all the magic happens. Just like with our "
+"previous approach we will be applying our physical movement to the character "
+"body, but we will counter that movement on the origin node."
+msgstr ""
+
+msgid ""
+"This will ensure that the players location stays in sync with the character "
+"body's location."
+msgstr ""
+
+msgid ""
+"In essence the code above will move the character body to where the player "
+"is, and then move the origin node back in equal amounts. The result is that "
+"the player stays centered above the character body."
+msgstr ""
+
+msgid ""
+"We start with applying the rotation. The character body should be facing "
+"where the player was looking the previous frame. We calculate our camera "
+"orientation in the space of the character body. We can now calculate the "
+"angle by which the player has rotated their head. We rotate our character "
+"body by the same amount so our character body faces the same direction as "
+"the player. And then we reverse the rotation on the origin node so the "
+"camera ends up aligned with the player again."
+msgstr ""
+
+msgid ""
+"For the movement we do much the same. The character body should be where the "
+"player was standing the previous frame. We calculate by how much the player "
+"has moved from this location. Then we attempt to move the character body to "
+"this location."
+msgstr ""
+
+msgid ""
+"As the player may hit a collision body and be stopped, we only move the "
+"origin point back by the amount we actually moved the character body. The "
+"player may thus move away from this location but that will be reflected in "
+"the positioning of the player."
+msgstr ""
+
+msgid "As with our previous solution we return true if this is the case."
+msgstr ""
+
+msgid ""
+"In this step we again apply the rotation based on controller input. However "
+"in this case the code is nearly identical to how one would implement this in "
+"a normal first person game."
+msgstr ""
+
+msgid ""
+"For step three we again apply the movement based on controller input. "
+"However just like at step 2, we can now implement this as we would in a "
+"normal first person game."
+msgstr ""
+
+#, fuzzy
+msgid "When the player walks to somewhere they shouldn't"
+msgstr "プレイヤーをツリー内の別の場所に移動します。"
+
+msgid ""
+"Think of a situation where the player is outside a locked room. You don't "
+"want the player to go into that room until the door is unlocked. You also "
+"don't want the player to see what is in this room."
+msgstr ""
+
+msgid ""
+"The logic for moving the player through controller input nicely prevents "
+"this. The player encounters a static body, and the code prevents the player "
+"from moving into the room."
+msgstr ""
+
+msgid ""
+"However with XR, nothing is preventing the player from taking a real step "
+"forward."
+msgstr ""
+
+msgid ""
+"With both the approaches worked out up above we will prevent the character "
+"body from moving where the player can't go. As the player has physically "
+"moved to this location, the camera will now have moved into the room."
+msgstr ""
+
+msgid ""
+"The logical solution would be to prevent the movement altogether and adjust "
+"the placement of the XR origin point so the player stays outside of the room."
+msgstr ""
+
+msgid ""
+"The problem with this approach is that physical movement is now not "
+"replicated in the virtual space. This will cause nausea for the player."
+msgstr ""
+
+msgid ""
+"What many XR games do instead, is to measure the distance between where the "
+"player physically is, and where the players virtual body has been left "
+"behind. As this distance increases, usually to a distance of a few "
+"centimeters, the screen slowly blacks out."
+msgstr ""
+
+msgid ""
+"Our solutions up above would allow us to add this logic into the code at the "
+"end of step 1."
+msgstr ""
+
+msgid "Further improvements to the code presented could be:"
+msgstr ""
+
+msgid "allowing controller input as long as this distance is still small,"
+msgstr ""
+
+msgid ""
+"still applying gravity to the player even when controller input is disabled."
+msgstr ""
+
+msgid "Further suggestions for improvements"
+msgstr ""
+
+msgid ""
+"The above provides two good options as starting points for implementing room "
+"scale XR games."
+msgstr ""
+
+msgid ""
+"A few more things that are worth pointing out that you will likely want to "
+"implement:"
+msgstr ""
+
+msgid ""
+"The height of the camera can be used to detect whether the player is "
+"standing up, crouching, jumping or lying down. You can adjust the size and "
+"orientation of the collision shape accordingly. Extra bonus points for "
+"adding multiple collision shapes so the head and body have their own, more "
+"accurately sized, shapes."
+msgstr ""
+
+msgid ""
+"When a scene first loads, the player may be far away from the center of the "
+"tracking space. This could result in the player spawning into a different "
+"room than our origin point. The game will now attempt, and fail, to move the "
+"player body from the starting point to where the player is standing. You "
+"should implement a reset function that moves the origin point so the player "
+"is in the correct starting position."
+msgstr ""
+
+msgid ""
+"Both of the above improvements require the player to be ready and standing "
+"up straight. There is no guarantee as the player may still be putting their "
+"headset on."
+msgstr ""
+
+msgid ""
+"Many games, including XR Tools, solve this by introducing an intro screen or "
+"loading screen where the player must press a button when they are ready. "
+"This starting environment is often a large location where the positioning of "
+"the player has little impact on what the player sees. When the player is "
+"ready, and presses the button, this is the moment you record the position "
+"and height of the camera."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

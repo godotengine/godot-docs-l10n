@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -159,12 +159,22 @@ msgstr ""
 "`BoxContainer`, o para activar o desactivar indicadores booleanos, como el "
 "dibujado de líneas de relación en un `Tree`."
 
+#, fuzzy
+msgid "**Font size**"
+msgstr "**Fuente**"
+
+msgid ""
+"An integer value, which is used alongside a font to determine the size at "
+"which the text should be displayed."
+msgstr ""
+
 msgid "**Icon**"
 msgstr "**Icon**"
 
+#, fuzzy
 msgid ""
-"A :ref:`texture <class_Texture>` resource, which is normally used to display "
-"an icon (on a :ref:`Button <class_Button>`, for example)."
+"A :ref:`texture <class_Texture2D>` resource, which is normally used to "
+"display an icon (on a :ref:`Button <class_Button>`, for example)."
 msgstr ""
 "Un recurso de :ref:`Textura<class_Texture>`, que normalmente se utiliza para "
 "mostrar un icono (en un :ref:`Button <class_Button>`, por ejemplo)."
@@ -443,7 +453,8 @@ msgstr ""
 msgid "Check for local overrides of the same data type and name."
 msgstr "Verifica las anulaciones locales del mismo tipo de dato y nombre."
 
-msgid "Using control's class name and parent class names:"
+#, fuzzy
+msgid "Using control's type variation, class name and parent class names:"
 msgstr ""
 "Utilizando el nombre de la clase del control y los nombres de las clases "
 "padre:"
@@ -476,13 +487,18 @@ msgstr ""
 "Repite los pasos a-c hasta que se llegue a la raíz del árbol, o hasta que se "
 "alcance un nodo que no sea un control."
 
+#, fuzzy
 msgid ""
-"Using control's class name check the project-wide theme, if it's present."
+"Using control's type variation, class name and parent class names check the "
+"project-wide theme, if it's present."
 msgstr ""
 "Usando el nombre de la clase del control, verifica el tema de todo el "
 "proyecto, si está presente."
 
-msgid "Using control's class name check the default theme."
+#, fuzzy
+msgid ""
+"Using control's type variation, class name and parent class names check the "
+"default theme."
 msgstr ""
 "Usando el nombre de la clase del control, verifica el tema predeterminado."
 

@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Bisecting regressions"
+msgstr ""
+
+msgid ""
+"Bisecting is a way to find regressions in software. After reporting a bug on "
+"the `Godot repository on GitHub <https://github.com/godotengine/godot>`__, "
+"you may be asked by a contributor to *bisect* the issue. Bisecting makes it "
+"possible for contributors to fix bugs faster, as they can know in advance "
+"which commit caused the regression. Your effort will be widely appreciated :)"
+msgstr ""
+
+msgid "The guide below explains how to find a regression by bisecting."
+msgstr ""
+
+#, fuzzy
+msgid "What is bisecting?"
+msgstr "Co to jest?"
+
+msgid ""
+"Godot developers use the `Git <https://git-scm.com/>`__ version control "
+"system. In the context of Git, bisecting is the process of performing a "
+"manual `binary search <https://en.wikipedia.org/wiki/"
+"Binary_search_algorithm>`__ to determine when a regression appeared. While "
+"it's typically used for bugs, it can also be used to find other kinds of "
+"unexpected changes such as performance regressions."
+msgstr ""
+
+msgid "Using official builds to speed up bisecting"
+msgstr ""
+
+msgid ""
+"Before using Git's ``bisect`` command, we strongly recommend trying to "
+"reproduce the bug with an older (or newer) official release. This greatly "
+"reduces the range of commits that potentially need to be built from source "
+"and tested. You can find binaries of official releases, as well as alphas, "
+"betas, and release candidates `here <https://downloads.tuxfamily.org/"
+"godotengine/>`__."
+msgstr ""
+
+msgid ""
+"If you have experience with Godot 3.x and can reproduce an issue with Godot "
+"4.0, we recommend trying to reproduce the issue in the latest Godot 3.x "
+"version (if the feature exhibiting the bug is present in 3.x). This can be "
+"used to check whether the issue is a regression in 4.0 or not."
+msgstr ""
+
+msgid ""
+"If the issue **is present** in 3.x, then you'll need to check whether the "
+"issue occurs in older 3.x versions as well."
+msgstr ""
+
+msgid ""
+"If the issue is **not present** in 3.x, then you can try older 4.0 alphas "
+"and betas to determine when the regression started."
+msgstr ""
+
+msgid ""
+"Project files may be incompatible between Godot versions. **Make a backup of "
+"your project** before starting the bisection process."
+msgstr ""
+
+msgid ""
+"Going from the oldest to the newest build generally reduces the risk of the "
+"project not being able to successfully open in the editor, thanks to "
+"backwards compatibility. Try to reduce your project to the smallest "
+"repeatable example too. The more minimal the project is, the more likely "
+"you'll be able to open it without compatibility issues in newer engine "
+"versions."
+msgstr ""
+
+msgid "The Git bisect command"
+msgstr ""
+
+msgid ""
+"If you've found a build that didn't exhibit the bug in the above testing "
+"process, you can now start bisecting the regression. The Git version control "
+"system offers a built-in command for this: ``git bisect``. This makes the "
+"process semi-automated as you only have to build the engine, run it and try "
+"to reproduce the bug."
+msgstr ""
+
+msgid ""
+"Before bisecting a regression, you need to set up a build environment to "
+"compile Godot from source. To do so, read the :ref:`Compiling <toc-devel-"
+"compiling>` page for your target platform. (Compiling Godot from source "
+"doesn't require C++ programming knowledge.)"
+msgstr ""
+
+msgid ""
+"Note that compiling Godot can take a while on slow hardware (up an hour for "
+"each full rebuild on a slow dual-core CPU). This means the full process can "
+"take up to several hours. If your hardware is too slow, you may want to stop "
+"there and report the results of your \"pre-bisecting\" on the GitHub issue "
+"so another contributor can continue bisecting from there."
+msgstr ""
+
+msgid "Determine the commit hashes"
+msgstr ""
+
+msgid ""
+"To start bisecting, you must first determine the commit hashes (identifiers) "
+"of the \"bad\" and \"good\" build. \"bad\" refers to the build that exhibits "
+"the bug, whereas \"good\" refers to the version that doesn't exhibit the "
+"bug. If you're using a pre-release build as the \"good\" or \"bad\" build, "
+"browse the `download mirror <https://downloads.tuxfamily.org/godotengine/"
+">`__, go to the folder that contains the pre-release you downloaded and look "
+"for the ``README.txt`` file. The commit hash is written inside that file."
+msgstr ""
+
+msgid ""
+"If you're using a stable release as the \"good\" or \"bad\" build, use one "
+"of the following commit hashes depending on the version:"
+msgstr ""
+
+msgid ""
+"You can also use this Bash function to retrieve the Git commit hash of a pre-"
+"release build (add it to your ``$HOME/.bashrc`` or similar):"
+msgstr ""
+
+#, fuzzy
+msgid "Example usage:"
+msgstr "Przykłady:"
+
+msgid ""
+"To refer to the latest state of the master branch, you can use ``master`` "
+"instead of a commit hash. Note that unlike tagged releases or snapshot "
+"commit hashes, ``master`` is a perpetually moving target."
+msgstr ""
+
+#, fuzzy
+msgid "Build the engine"
+msgstr "Za kulisami"
+
+msgid ""
+":ref:`Get Godot's source code using Git <doc_getting_source>`. Once this is "
+"done, in the terminal window, use ``cd`` to reach the Godot repository "
+"folder and enter the following command:"
+msgstr ""
+
+msgid "Compile Godot. This assumes you've set up a build environment:"
+msgstr ""
+
+#, fuzzy
+msgid "Run the engine"
+msgstr "Uruchamianie gry"
+
+msgid ""
+"Run the binary located in the ``bin/`` folder and try to reproduce the bug."
+msgstr ""
+
+msgid ""
+":ref:`Double-check the output file name "
+"<doc_introduction_to_the_buildsystem_resulting_binary>` in ``bin/`` to make "
+"sure you're actually running the binary you've just compiled. Different "
+"Godot versions will output binaries with different names."
+msgstr ""
+
+msgid "If the build **still** exhibits the bug, run the following command:"
+msgstr ""
+
+msgid "If the build **does not** exhibit the bug, run the following command:"
+msgstr ""
+
+msgid ""
+"After entering one of the commands above, Git will switch to a different "
+"commit. You should now build Godot again, try to reproduce the bug, then "
+"enter ``git bisect good`` or ``git bisect bad`` depending on the result. "
+"You'll have to repeat this several times. The longer the commit range, the "
+"more steps will be required. 5 to 10 steps are usually sufficient to find "
+"most regressions; Git will remind you of the number of steps remaining (in "
+"the worst case scenario)."
+msgstr ""
+
+msgid ""
+"Once you've completed enough steps, Git will display the commit hash where "
+"the regression appeared. Write this commit hash as a comment to the GitHub "
+"issue you've bisected. This will help in solving the issue. Thanks again for "
+"contributing to Godot :)"
+msgstr ""
+
+msgid ""
+"You can read the full documentation on ``git bisect`` `here <https://git-scm."
+"com/docs/git-bisect>`__."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Status tłumaczenia"

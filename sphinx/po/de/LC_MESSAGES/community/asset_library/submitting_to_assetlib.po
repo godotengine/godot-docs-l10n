@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -131,6 +131,14 @@ msgstr ""
 "Sie jedoch diese Empfehlungen befolgen, können Sie dazu beitragen, die "
 "Bestandsbibliothek für alle Benutzer zu einem besseren Ort zu machen."
 
+msgid ""
+"When creating non-project assets, it is common practice to place your files "
+"inside of an **addons/asset_name/** folder. Do this to avoid having your "
+"files clash with other assets, or with the files of users installing your "
+"asset. This folder will **not** be automatically generated when a user "
+"installs your asset."
+msgstr ""
+
 #, fuzzy
 msgid ""
 "Fix or suppress all script **warnings**. The warning system is there to help "
@@ -199,14 +207,6 @@ msgid ""
 "keep with their project, so a copy ensures they always have those files "
 "handy (and helps them fulfill your licensing terms)."
 msgstr ""
-
-#, fuzzy
-msgid ""
-"The **icon** should be a square, its aspect ratio should be 1:1. It should "
-"also ideally have a minimum resolution of 64x64 pixels."
-msgstr ""
-"Das Symbol sollte ein Quadrat mit einem Seitenverhältnis 1: 1 sein. "
-"Idealerweise sollte es auch eine Mindestauflösung von 64 x 64 Pixel haben."
 
 #, fuzzy
 msgid ""
@@ -371,12 +371,21 @@ msgstr ""
 "Suchergebnissen und auf der Seite des Assets verwendet wird) sollte ein Bild "
 "im PNG oder JPG Format sein."
 
+#, fuzzy
+msgid ""
+"The **icon** must be square (1:1 aspect ratio). It should have a minimum "
+"resolution of 128×128 pixels."
+msgstr ""
+"Das Symbol sollte ein Quadrat mit einem Seitenverhältnis 1: 1 sein. "
+"Idealerweise sollte es auch eine Mindestauflösung von 64 x 64 Pixel haben."
+
 msgid "**License**:"
 msgstr "**License**:"
 
+#, fuzzy
 msgid ""
 "The license under which you are distributing the asset. The list includes a "
-"variety of free and open-source software licenses, such as GPL (v2 and v3), "
+"variety of free and open source software licenses, such as GPL (v2 and v3), "
 "MIT, BSD and Boost Software License. You can visit `OpenSource.org <https://"
 "opensource.org>`_ for a detailed description of each of the listed licenses."
 msgstr ""

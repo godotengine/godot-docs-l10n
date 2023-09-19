@@ -1,0 +1,148 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Binding to external libraries"
+msgstr "绑定到外部库"
+
+msgid "Modules"
+msgstr "模块"
+
+#, fuzzy
+msgid ""
+"The Summator example in :ref:`doc_custom_modules_in_cpp` is great for small, "
+"custom modules, but what if you want to use a larger, external library? "
+"Let's look at an example using `Festival <https://www.cstr.ed.ac.uk/projects/"
+"festival/>`_, a speech synthesis (text-to-speech) library written in C++."
+msgstr ""
+":ref:`doc_custom_modules_in_c++` 中的Summator例子对于小型自定义的模块来说是非"
+"常好, 但是如果想使用一个更大的外部库呢？来看一个使用 `Festival <http://www."
+"cstr.ed.ac.uk/projects/festival/>`_ 的例子, 这是一个用C++编写的语音合成库(文"
+"本到语音)."
+
+msgid ""
+"To bind to an external library, set up a module directory similar to the "
+"Summator example:"
+msgstr "要绑定到外部库, 请设置类似于Summator示例的模块目录:"
+
+#, fuzzy
+msgid "Next, you will create a header file with a TTS class:"
+msgstr "接下来, 您将使用简单的TTS类创建头文件:"
+
+msgid "And then you'll add the cpp file."
+msgstr "然后您将添加cpp文件."
+
+msgid ""
+"Just as before, the new class needs to be registered somehow, so two more "
+"files need to be created:"
+msgstr "和以前一样, 需要以某种方式注册新类, 因此还需要创建两个文件:"
+
+msgid ""
+"These files must be in the top-level folder of your module (next to your "
+"``SCsub`` and ``config.py`` files) for the module to be registered properly."
+msgstr ""
+"这些文件必须在您的模块的顶层文件夹中( ``SCsub`` 和 ``config.py`` 文件旁边), "
+"这样模块才能被正确注册."
+
+msgid "These files should contain the following:"
+msgstr "这些文件应包含以下内容:"
+
+msgid ""
+"Next, you need to create a ``SCsub`` file so the build system compiles this "
+"module:"
+msgstr "接下来, 需要创建一个 ``SCsub`` 文件, 以便构建系统编译此模块:"
+
+msgid ""
+"You'll need to install the external library on your machine to get the .a "
+"library files. See the library's official documentation for specific "
+"instructions on how to do this for your operation system. We've included the "
+"installation commands for Linux below, for reference."
+msgstr ""
+"你需要在自己的机器上安装该外部库才能获取 .a 库文件。至于如何在你的操作系统中"
+"一步步安装，请参考该库的官方文档。作为参考，我们这里包含了用来在 Linux 下安装"
+"命令。"
+
+msgid ""
+"The voices that Festival uses (and any other potential external/3rd-party "
+"resource) all have varying licenses and terms of use; some (if not most) of "
+"them may be be problematic with Godot, even if the Festival Library itself "
+"is MIT License compatible. Please be sure to check the licenses and terms of "
+"use."
+msgstr ""
+"Festival使用的声音(以及任何其他潜在的外部/第三方资源)都有不同的许可证和使用条"
+"款；其中一些(如果不是大多数)可能会对Godot产生问题, 即使Festival库本身是与MIT"
+"许可证兼容. 请务必检查许可证和使用条款."
+
+msgid ""
+"The external library will also need to be installed inside your module to "
+"make the source files accessible to the compiler, while also keeping the "
+"module code self-contained. The festival and speech_tools libraries can be "
+"installed from the modules/tts/ directory via git using the following "
+"commands:"
+msgstr ""
+"外部库也需要被安装到你的模块之中，这样编译器就可以访问到源代码，保持模块独立"
+"于外界环境。可以使用如下的 git 命令从 modules/tts/ 目录安装 festival 和 "
+"speech_tools："
+
+msgid ""
+"If you don't want the external repository source files committed to your "
+"repository, you can link to them instead by adding them as submodules (from "
+"within the modules/tts/ directory), as seen below:"
+msgstr ""
+"如果不希望将外部仓库的源文件提交到您的仓库中，您可以通过将它们添加为子模块"
+"（从 ``modules/tts/`` 目录中）来链接它们，如下所示："
+
+#, fuzzy
+msgid ""
+"Please note that Git submodules are not used in the Godot repository. If you "
+"are developing a module to be merged into the main Godot repository, you "
+"should not use submodules. If your module doesn't get merged in, you can "
+"always try to implement the external library as a GDExtension."
+msgstr ""
+"请注意，Godot 仓库中不使用 Git 的子模块（submodule）功能。如果你希望让自己开"
+"发的模块合并入 Godot 主仓库，请不要使用子模块。如果你的模块没法合并进主仓库，"
+"那么还是可以尝试把它实现为 GDNative C++ 插件。"
+
+msgid ""
+"To add include directories for the compiler to look at you can append it to "
+"the environment's paths:"
+msgstr "要添加供编译器查看的包含目录, 可以将其追加到环境的路径中:"
+
+msgid ""
+"If you want to add custom compiler flags when building your module, you need "
+"to clone `env` first, so it won't add those flags to whole Godot build "
+"(which can cause errors). Example `SCsub` with custom flags:"
+msgstr ""
+"如果要在构建模块时添加自定义编译器标志, 则需要首先克隆 `env`, 这样它就不会将"
+"这些标志添加到整个Godot构建中(这可能会导致错误). 带有自定义标志的示例 "
+"`SCsub`:"
+
+msgid "The final module should look like this:"
+msgstr "最终模块应如下所示:"
+
+msgid "Using the module"
+msgstr "使用模块"
+
+msgid "You can now use your newly created module from any script:"
+msgstr "现在, 您可以通过任何脚本使用新创建的模块:"
+
+msgid "And the output will be ``is_spoken: True`` if the text is spoken."
+msgstr "如果说出文本, 输出将是 ``is_spoken:True`` ."
+
+msgid "Translation status"
+msgstr "翻译状态"

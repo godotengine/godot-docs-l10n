@@ -1,0 +1,601 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Writing guidelines"
+msgstr "ドキュメント作成ガイドライン"
+
+msgid ""
+"The Godot community is rich and international. Users come from all around "
+"the world. Some of them are young, and many aren't native English speakers. "
+"That's why we must all write using a clear and a common language. For the "
+"class reference, the goal is to make it easy to read for everyone and "
+"precise."
+msgstr ""
+"Godotコミュニティは豊かで国際的です。ユーザーは世界中から来ています。若い人も"
+"いれば、英語を母国語としない人もいます。だからこそ、私たちは皆、明確で共通の"
+"言語を使って書かなければならないのです。クラス参照の場合、目標は、すべての人"
+"にとって読みやすく、正確に読みやすくすることです。"
+
+msgid "In summary, always try to:"
+msgstr "要約すると、常に次のように努めます:"
+
+#, fuzzy
+msgid "Use the active voice"
+msgstr "直接的な表現を使用する"
+
+msgid "Use precise action verbs"
+msgstr "正確なアクション動詞を使用する"
+
+msgid "Avoid verbs that end in -ing"
+msgstr "「-ing」で終わる動詞は避けてください"
+
+msgid "Remove unnecessary adverbs and adjectives."
+msgstr "不要な副詞や形容詞を削除します。"
+
+msgid ""
+"Ban these 8 words: obvious, simple, basic, easy, actual, just, clear, and "
+"however"
+msgstr ""
+"これらの8つの単語を禁止: 明白な、シンプル、基本的な、簡単、実際、ちょうど、明"
+"確、および"
+
+msgid "Use explicit references"
+msgstr "明示的な参照を使用する"
+
+msgid "Use 's to show possession"
+msgstr "「's」を使用して所有物を表示する"
+
+msgid "Use the Oxford comma"
+msgstr "オックスフォードコンマを使用する"
+
+msgid "There are 3 rules to describe classes:"
+msgstr "クラスを記述する3つのルールがあります:"
+
+msgid "Give an overview of the node in the brief description"
+msgstr "簡単な説明でノードの概要を説明する"
+
+msgid "Mention what methods return if it's useful"
+msgstr "役に立つ場合に返すメソッドについて言及する"
+
+msgid "Use \"if true\" to describe booleans"
+msgstr "「if true」を使用してブール値を記述する"
+
+msgid ""
+"A technical writer's job is to pack as much information as possible into the "
+"smallest and clearest sentences possible. These guidelines will help you "
+"work towards that goal."
+msgstr ""
+"テクニカルライターの仕事は、可能な限り多くの情報を可能な限り小さく、最も明確"
+"な文章に詰め込むことです。これらのガイドラインは、その目標に向かって取り組む"
+"のに役立ちます。"
+
+msgid ""
+"See the :ref:`content guidelines <doc_content_guidelines>` for information "
+"on the types of documentation you can write in the official documentation."
+msgstr ""
+
+msgid "7 rules for clear English"
+msgstr "明確な英語のためのルール７つ"
+
+#, fuzzy
+msgid ""
+"Use the active voice when possible. Take the classes, methods, and constants "
+"you describe as the subject. It's natural to write using the passive voice, "
+"but it's harder to read and produces longer sentences."
+msgstr ""
+"可能な場合は能動態を使用してください。 説明するクラス、メソッド、および定数を"
+"主題として取り上げます。 受動態を使用して書くのは自然ですが、読みにくく、長い"
+"文章を作成します。"
+
+msgid "Passive:"
+msgstr "受動態:"
+
+msgid "Active:"
+msgstr "能動態:"
+
+msgid "**Don't** use the passive voice:"
+msgstr "受動態を\\ **使用しないでください** \\:"
+
+msgid "**Do** use the node's name as a noun:"
+msgstr "ノードの名前を名詞として\\ **使用してください**\\ :"
+
+msgid ""
+"Favor precise yet common verbs over generic ones like ``make``, ``set``, and "
+"any expression you can replace with a single word."
+msgstr ""
+"``make`` や ``set`` などの一般的な動詞や、1 つの単語で置き換えることができる"
+"式よりも、正確で一般的な動詞を優先します。"
+
+msgid ""
+"**Don't** repeat the method's name. It already states it sets the pivot "
+"value to a new one:"
+msgstr ""
+"メソッドの名前を\\ **繰り返さないで下さい**\\ 。ピボット値を新しいピボット値"
+"に設定済みと指定しています:"
+
+msgid ""
+"**Do** explain what's the consequence of this \"set\": use precise verbs "
+"like ``place``, ``position``, ``rotate``, ``fade``, etc."
+msgstr ""
+"この「セット」の結果について説明してください。 ``place`` 、 ``position`` 、 "
+"``rotate`` 、 ``fade`` などの正確な動詞を使用します。"
+
+msgid ""
+"The progressive forms describe continuous actions. E.g. \"is calling\", \"is "
+"moving\"."
+msgstr ""
+"進行形は、連続的なアクションを記述します。例えば「呼び出し中」、「移動中」な"
+"どです。"
+
+msgid "**Don't** use the progressive form for instant changes."
+msgstr "すぐにされる変更には進行形を\\ **使用しないでください**\\ 。"
+
+#, fuzzy
+msgid "**Do** use simple present, past, or future."
+msgstr "単純な現在形、過去分詞形、または未来を\\ **使用してください**\\ 。"
+
+msgid ""
+"Exception: If the subject is not clear, replacing \"ing\" verbs is not an "
+"improvement. For example, in the previous sentence, \"it replaces\" would "
+"not make much sense where \"replacing\" currently is."
+msgstr ""
+
+msgid ""
+"You may use the progressive tense to describe actions that are continuous in "
+"time. Anything like animation or coroutines."
+msgstr ""
+"進行時制を使用して、時間的に連続するアクションを記述することができます。 アニ"
+"メーションやコルーチンなど。"
+
+msgid ""
+"Verbs can turn into adjectival nouns with -ing. This is not a conjugation, "
+"so you may use them: ``the remaining movement``, ``the missing file``, etc."
+msgstr ""
+"動詞は-ingで形容詞的名詞になります。これは活用ではないので、 ``the remaining "
+"movement`` 、 ``the missing file`` などのように使用できます。"
+
+msgid "Remove unnecessary adverbs and adjectives"
+msgstr "不要な副詞や形容詞を削除する"
+
+msgid ""
+"Write as few adjectives and adverbs as possible. Only use them if they add "
+"key information to the description."
+msgstr ""
+"形容詞や副詞をできるだけ少なく書いてください。説明に重要な情報を追加する場合"
+"にのみ使用してください。"
+
+msgid ""
+"**Don't** use redundant or meaningless adverbs. Words that lengthen the "
+"documentation but don't add any information:"
+msgstr ""
+"冗長または無意味な副詞を\\ **使用しないでください**\\ 。ドキュメントを長くす"
+"るが、情報を追加しない単語:"
+
+msgid "**Do** write short sentences in a simple, descriptive language:"
+msgstr "簡単で説明的な言語で短い文章を\\ **書いて下さい**\\ :"
+
+msgid "Ban these 8 words"
+msgstr "これらの8つの単語を禁止"
+
+msgid "**Don't** ever use these 8 banned words:"
+msgstr "これらの8つの禁止単語を\\ **使用しないでください**\\ :"
+
+msgid "obvious"
+msgstr "明らかな"
+
+msgid "simple"
+msgstr "シンプルな"
+
+msgid "basic"
+msgstr "基本的な"
+
+msgid "easy"
+msgstr "簡単な"
+
+msgid "actual"
+msgstr "実際の"
+
+msgid "just"
+msgstr "ちょうどの"
+
+msgid "clear"
+msgstr "はっきりとした"
+
+msgid "however (some uses)"
+msgstr "しかし(一部の用途)"
+
+msgid ""
+"Game creation and programming aren't simple, and nothing's easy to someone "
+"learning to use the API for the first time. Other words in the list, like "
+"``just`` or ``actual`` won't add any info to the sentence. Don't use "
+"corresponding adverbs either: obviously, simply, basically, easily, "
+"actually, clearly."
+msgstr ""
+"ゲームの作成とプログラミングは簡単ではありませんし、初めてAPIを使用することを"
+"学ぶ人にとって簡単なことではありません。リスト内の他の単語 ( ``just`` や "
+"``actual`` など)は、文章に情報を追加しません。対応する副詞も使用しないでくだ"
+"さい:明らかに、基本的に、簡単に、実際には、はっきりと。"
+
+msgid ""
+"**Don't** example. The banned words lengthen the description and take "
+"attention away from the most important info:"
+msgstr ""
+"例を\\ **挙げないでください**\\ 。 禁止された言葉は説明を長くし、最も重要な情"
+"報から注意をそらします:"
+
+msgid "**Do** remove them:"
+msgstr "それら\\ **を削除します**\\ :"
+
+msgid ""
+"\"Simple\" never helps. Remember, for other users, anything could be complex "
+"or frustrate them. There's nothing like a good old *it's simple* to make you "
+"cringe. Here's the old brief description, the first sentence on the Timer "
+"node's page:"
+msgstr ""
+"「シンプル」は決して役に立ちません。 他のユーザーにとっては、複雑なものやイラ"
+"イラするものがあります。 古き良き時代のようなものはありません。 古い簡単な説"
+"明は、タイマーノードのページの最初の文です:"
+
+msgid "**Do** explain what the node does instead:"
+msgstr "ノードが代わりに何を行うかを\\ **説明してください**\\ :"
+
+msgid "**Don't** use \"basic\", it is too vague:"
+msgstr ""
+"「基本」を\\ **使用しないでください**\\ 、それはあまりにもあいまいです:"
+
+msgid "**Do** use the brief description to offer an overview of the node:"
+msgstr "簡単な説明を使用して、ノードの概要を\\ **説明してください**\\ :"
+
+msgid "Favor explicit references over implicit ones."
+msgstr "暗黙的な参照よりも明示的な参照を優先します。"
+
+msgid ""
+"**Don't** use words like \"the former\", \"the latter\", etc. They're not "
+"the most common in English, and they require you to check the reference."
+msgstr ""
+"「前者」、「後者」などの言葉を\\ **使用しないでください**\\ 。これらは英語で"
+"は最も一般的ではなく、リファレンスを確認する必要があります。"
+
+msgid "**Do** repeat words. They remove all ambiguity:"
+msgstr ""
+"言葉を\\ **繰り返してください**\\ 。 それらはすべての曖昧さを取り除きます:"
+
+msgid ""
+"If you need to repeat the same variable name 3 or 4 times, you probably need "
+"to rephrase your description."
+msgstr ""
+"同じ変数名を3回または4回繰り返す必要がある場合は、説明を書き換える必要があり"
+"ます。"
+
+msgid ""
+"Avoid \"The milk **of** the cow\". It feels unnatural in English. Write "
+"\"The cow's milk\" instead."
+msgstr ""
+"「The milk **of** the cow」を避けてください。 英語では不自然に感じます。 代わ"
+"りに「The cow's milk」と書いてください。"
+
+msgid "**Don't** write \"of the X\":"
+msgstr "「of the X」とは\\ **書かないでください**\\ :"
+
+msgid ""
+"**Do** use ``'s``. It lets you put the main subject at the start of the "
+"sentence, and keep it short:"
+msgstr ""
+"所有格の ``'s`` を\\ **使用してください**\\ 。文の先頭に主語を置き、短くする"
+"ことができます:"
+
+msgid "Use the Oxford comma to enumerate anything"
+msgstr "オックスフォードコンマを使用して何かを列挙する"
+
+msgid "From the Oxford dictionary:"
+msgstr "オックスフォード辞書から:"
+
+msgid ""
+"The 'Oxford comma' is an optional comma before the word 'and' at the end of "
+"a list: *We sell books, videos, and magazines.*"
+msgstr ""
+"「オックスフォードコンマ」は、リストの最後にある「and」という語の前にあるオプ"
+"ションのコンマです。\\ *書籍、ビデオ、雑誌を販売しています。*"
+
+msgid ""
+"[...] Not all writers and publishers use it, but it can clarify the meaning "
+"of a sentence when the items in a list are not single words: *These items "
+"are available in black and white, red and yellow, and blue and green.*"
+msgstr ""
+"[...] 全ての作家や出版社が使っているわけではありませんが、リストの中の項目が"
+"単一の単語ではない場合、文章の意味を明確にすることができます:\\ *これらの項目"
+"は白黒、赤と黄色、青と緑で利用できます。*"
+
+msgid "**Don't** leave the last element of a list without a comma:"
+msgstr "コンマなしでリストの最後の要素を\\ **残さないでください**\\ :"
+
+msgid ""
+"**Do** add a comma before `and` or `or`, for the last element of a list with "
+"more than two elements."
+msgstr ""
+"2つ以上の要素を持つリストの最後の要素に `and` または `or` の前にコンマを\\ **"
+"追加してください**\\ 。"
+
+msgid "How to write methods and classes"
+msgstr "メソッドとクラスの記述方法"
+
+msgid "Dynamic vs static typing"
+msgstr "動的な型指定と静的な型指定"
+
+msgid ""
+"The code examples in the documentation should follow a consistent style not "
+"to confuse users. As static type hints are an optional feature of GDScript, "
+"we chose to stick to writing dynamic code. This leads to writing GDScript "
+"that is concise and accessible."
+msgstr ""
+"ドキュメントのコード例は、ユーザーを混乱させないために一貫したスタイルに従う"
+"必要があります。静的型ヒントはGDScriptのオプション機能であるため、動的コード"
+"の記述に固執することにしました。これにより、簡潔でアクセス可能なGDScriptを作"
+"成できます。"
+
+msgid "The exception is topics that explain static typing concepts to users."
+msgstr "例外は、静的型付けの概念をユーザーに説明するトピックです。"
+
+msgid "**Don't** add a type hint with a colon or by casting:"
+msgstr ""
+"型ヒントを、コロンで追加したりキャストしたり\\ **しないで**\\ ください:"
+
+#, fuzzy
+msgid "**Do** write constants and variables with dynamic typing:"
+msgstr "動的型付けを\\ **使用して**\\ 定数変数を記述します:"
+
+msgid "**Don't** write functions with inferred arguments or return types:"
+msgstr ""
+"推論された引数または戻り値の型を持つ関数を記述\\ **しない**\\ でください:"
+
+msgid "**Do** write functions using dynamic typing:"
+msgstr "動的型付けを使用して関数を作成\\ **する**\\ :"
+
+msgid "Use real-world code examples where appropriate"
+msgstr "必要に応じて、実際のコード例を使用します"
+
+msgid ""
+"Real-world examples are more accessible to beginners than abstract ``foos`` "
+"and ``bars``. You can also copy them directly from your game projects, "
+"ensuring that any code snippet compiles without errors."
+msgstr ""
+"実世界の例は、抽象的な ``foos`` および ``bars`` よりも初心者にとってアクセス"
+"しやすいです。また、ゲームプロジェクトから直接コピーして、コードスニペットが"
+"エラーなしでコンパイルされるようにすることもできます。"
+
+msgid ""
+"Writing ``var speed = 10`` rather than ``var my_var = 10`` allows beginners "
+"to understand code better. It gives them a frame of reference as to where "
+"they could use the code snippets in a live project."
+msgstr ""
+"``var my_var = 10`` ではなく ``var speed = 10`` と書くと、初心者はコードをよ"
+"りよく理解できます。ライブプロジェクトでコードスニペットを使用できる場所に関"
+"する参照フレームを提供します。"
+
+msgid "**Don't** write made-up examples:"
+msgstr "作成例を書か\\ **ない**\\ でください:"
+
+msgid "**Do** write concrete examples:"
+msgstr "具体的な例を書き\\ **ます**\\ :"
+
+msgid ""
+"Of course, there are times when using real-world examples is impractical. In "
+"those situations, you should still avoid using names such as ``my_var``, "
+"``foo()`` or ``my_func()`` and consider more meaningful names for your "
+"examples."
+msgstr ""
+"もちろん、実際の例を使用するのは実用的でない場合があります。これらの状況で"
+"は、\\ ``my_var``\\ 、\\ ``foo() ``\\ 、または ``my_func()`` などの名前の使用"
+"を避け、例にとってより意味のある名前を検討する必要があります。"
+
+msgid ""
+"The brief description is the reference's most important sentence. It's the "
+"user's first contact with a node:"
+msgstr ""
+"簡単な説明は、参照の最も重要な文です。これは、ユーザーがノードと最初に接触し"
+"た場合です:"
+
+msgid "It's the only description in the \"Create New Node\" dialog."
+msgstr "これは、「新しいノードを作成」ダイアログボックスの唯一の説明です。"
+
+msgid "It's at the top of every page in the reference"
+msgstr "参照内のすべてのページの一番上に表示されます"
+
+msgid ""
+"The brief description should explain the node's role and its functionality, "
+"in up to 200 characters."
+msgstr ""
+"簡単な説明では、ノードの役割とその機能を最大200文字で説明する必要があります。"
+
+msgid "**Don't** write tiny and vague summaries:"
+msgstr "小さくてあいまいな要約を\\ **書かないで下さい**\\ :"
+
+msgid "**Do** give an overview of the node's functionality:"
+msgstr "ノードの機能の概要を\\ **説明してください**\\ :"
+
+msgid ""
+"Use the node's full description to provide more information, and a code "
+"example, if possible."
+msgstr ""
+"ノードの完全な説明を使用して、詳細情報とコード例を提供します(可能であれば)。"
+
+msgid ""
+"Some methods return important values. Describe them at the end of the "
+"description, ideally on a new line. No need to mention the return values for "
+"any method whose name starts with ``set`` or ``get``."
+msgstr ""
+"重要な値を返すメソッドもあります。説明の最後に、理想的には新しい行でそれらを"
+"説明します。名前が ``set`` または ``get`` で始まるメソッドの戻り値を言及する"
+"必要はありません。"
+
+msgid "**Do** always use \"Returns\"."
+msgstr "常に「Returns」を\\ **使用してください**\\ 。"
+
+msgid ""
+"Notice the exception to the \"direct voice\" rule: with the move method, an "
+"external collider can influence the method and the body that calls ``move``. "
+"In this case, you can use the passive voice."
+msgstr ""
+"「能動態」ルールの例外に注意してください: moveメソッドを使用すると、外部コラ"
+"イダがメソッドと ``move`` を呼び出す本文に影響を与える可能性があります。この"
+"場合、受動態を使用できます。"
+
+msgid ""
+"For boolean member variables, always use ``if true`` and/or ``if false``, to "
+"stay explicit. ``Controls whether or not`` may be ambiguous and won't work "
+"for every member variable."
+msgstr ""
+"ブールメンバ変数の場合は、常に `` if true`` および/または `` if false`` を使"
+"用して明示的にしてください。 「コントロールするかどうか」はあいまいである可能"
+"性があり、すべてのメンバー変数に対して機能しません。"
+
+#, fuzzy
+msgid ""
+"Also, surround boolean values, variable names and methods with ``[code][/"
+"code]``."
+msgstr ""
+"また、ブール値、変数名、およびメソッドを ``[code][/code]`` で囲みます。"
+
+msgid "**Do** start with \"if true\":"
+msgstr "\"if true\" から\\ **始めてください**\\ :"
+
+msgid "Use ``[code]`` around arguments"
+msgstr "引数の周りに ``[code]`` を使用する"
+
+msgid ""
+"In the class reference, always surround arguments with ``[code][/code]``. In "
+"the documentation and in Godot, it will display like ``this``. When you edit "
+"XML files in the Godot repository, replace existing arguments written like "
+"'this' or \\`this\\` with ``[code]this[/code]``."
+msgstr ""
+"クラス参照では、引数を常に ``[code][/code]`` で囲みます。ドキュメントとGodot"
+"では、\\ ``このよう`` に表示されます。 GodotリポジトリでXMLファイルを編集する"
+"ときは、\\ 'this' や \\`this\\` などの既存の引数を ``[code]this[/code]`` に置"
+"き換えます。"
+
+msgid "Common vocabulary to use in Godot's documentation"
+msgstr "Godotのドキュメントで使用する一般的な語彙"
+
+msgid ""
+"The developers chose some specific words to refer to areas of the interface. "
+"They're used in the sources, in the documentation, and you should always use "
+"them instead of synonyms, so the users know what you're talking about."
+msgstr ""
+"開発者は、インターフェイスの領域を指す特定の単語を選択しました。 それらはソー"
+"スやドキュメントで使用されており、同義語の代わりに常に使用する必要がありま"
+"す。そうすれば、ユーザーはあなたが何を話しているのかを知ることができます。"
+
+msgid "Overview of the interface and common vocabulary"
+msgstr "インターフェイスと一般的な語彙の概要"
+
+msgid ""
+"In the top left corner of the editor lie the ``main menus``. In the center, "
+"the buttons change the ``workspace``. And together the buttons in the top "
+"right are the ``playtest buttons``. The area in the center, that displays "
+"the 2D or the 3D space, is the ``viewport``. At its top, you find a list of "
+"``tools`` inside the ``toolbar``."
+msgstr ""
+"エディタの左上隅に ``main menus`` があります。中央のボタンで ``workspace`` が"
+"変更されます。そして、右上のボタンは ``playtest buttons`` です。2Dまたは3D空"
+"間を表示する中央の領域は ``viewport`` です。上部には、 ``toolbar`` 内の "
+"``tools`` のリストがあります。"
+
+msgid ""
+"The tabs or dockable panels on either side of the viewport are ``docks``. "
+"You have the ``FileSystem dock``, the ``Scene dock`` that contains your "
+"scene tree, the ``Import dock``, the ``Node dock``, and the ``Inspector`` or "
+"``Inspector dock``. With the default layout you may call the tabbed docks "
+"``tabs``: the ``Scene tab``, the ``Node tab``..."
+msgstr ""
+"ビューポートの両側のタブまたはドッキング可能なパネルは ``docks`` です。 "
+"``FileSystem dock`` 、シーンツリーを含む ``Scene dock`` 、 ``Import "
+"dock`` 、 ``Node dock`` 、 ``Inspector`` または ``Inspector dock`` がありま"
+"す。 デフォルトのレイアウトでは、タブ付きドックを ``tabs`` と呼ぶことができま"
+"す: ``Scene tab`` 、 ``Node tab`` ..."
+
+msgid ""
+"The Animation, Debugger, etc. at the bottom of the viewport are ``panels``. "
+"Together they make up the ``bottom panels``."
+msgstr ""
+"ビューポートの下部にあるアニメーション、デバッガなどは ``panels``です。彼らは"
+"一緒に ``bottom panels`` を構成します。"
+
+#, fuzzy
+msgid ""
+"Foldable areas of the Inspector are ``sections``. The node's parent class "
+"names, which you can't fold, are ``Classes`` e.g. the ``CharacterBody2D "
+"class``. And individual lines with key-value pairs are ``properties``. E.g. "
+"``position`` or ``modulate color`` are both ``properties``."
+msgstr ""
+"インスペクタの折りたたみ可能な領域は ``sections`` です。折りたたむことができ"
+"ないノードの親クラス名は、 ``Classes`` など ``KinematicBody2D class`` です。"
+"また、キーと値のペアを持つ個々の行は ``properties`` です。例えば "
+"``position`` や ``modulate color`` はどちらも ``properties`` です。"
+
+msgid "Keyboard shortcut guidelines"
+msgstr "キーボードショートカットのガイドライン"
+
+msgid ""
+"Keyboard and mouse shortcuts should make use of the ``:kbd:`` tag, which "
+"allows shortcuts to stand out from the rest of the text and inline code. Use "
+"the compact form for modifier keys (:kbd:`Ctrl`/:kbd:`Cmd`) instead of their "
+"spelled out form (:kbd:`Control`/:kbd:`Command`). For combinations, use the "
+"``+`` symbol with a space on either side of the symbol."
+msgstr ""
+"キーボードとマウスのショートカットは ``:kbd:`` タグを使用する必要があります。"
+"これにより、ショートカットを残りのテキストやインラインコードから際立たせるこ"
+"とができます。修飾キー(:kbd:`Ctrl`/:kbd:`Cmd`)のスペルチェックされた形式(:"
+"kbd:`Control`/:kbd:`Command`)ではなく、コンパクトキーを使用します。組み合わせ"
+"の場合は、シンボルの両側にスペースがある ``+`` シンボルを使用します。"
+
+msgid ""
+"Make sure to mention shortcuts that differ on macOS compared to other "
+"platforms. On macOS, ``Cmd`` often replaces ``Ctrl`` in keyboard shortcuts."
+msgstr ""
+"他のプラットフォームと比較してmacOSでは異なるショートカットを必ず記載してくだ"
+"さい。macOSでは、キーボードショートカットの ``Ctrl`` が ``Cmd`` に置き換えら"
+"れることがよくあります。"
+
+msgid ""
+"Try to integrate the shortcut into sentences the best you can. Here are some "
+"examples with the ``:kbd:`` tag left as-is for better visibility:"
+msgstr ""
+"ショートカットを可能な限り文章に組み込むようにしてください。わかりやすくする"
+"ために ``:kbd:`` タグをそのまま残した例をいくつか示します:"
+
+msgid ""
+"Press ``:kbd:`Ctrl + Alt + T``` to toggle the panel (``:kbd:`Cmd + Alt + "
+"T``` on macOS)."
+msgstr ""
+"``:kbd:`Ctrl + Alt + T``` を押してパネルを切り替えます(macOSでは ``:kbd:`Cmd "
+"+ Alt + T```)。"
+
+msgid ""
+"Press ``:kbd:`Space``` and hold the left mouse button to pan in the 2D "
+"editor."
+msgstr ""
+"``:kbd:`Space``` を押し、マウスの左ボタンを押したままにして2Dエディタでパンし"
+"ます。"
+
+msgid "Press ``:kbd:`Shift + Up Arrow``` to move the node upwards by 8 pixels."
+msgstr "``:kbd:`Shift + 上矢印``` を押して、ノードを8ピクセル上に移動します。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

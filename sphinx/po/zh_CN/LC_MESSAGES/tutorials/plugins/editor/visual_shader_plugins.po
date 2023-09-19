@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -46,17 +46,19 @@ msgstr ""
 "件 <https://github.com/curly-brace/Godot-3.0-Noise-Shaders/blob/master/"
 "assets/gpu_noise_shaders/classic_perlin3d.tres>`_\\ 。"
 
+#, fuzzy
 msgid ""
-"Create a Sprite and assign a :ref:`class_ShaderMaterial` to its material "
+"Create a Sprite2D and assign a :ref:`class_ShaderMaterial` to its material "
 "slot:"
 msgstr "创建一个Sprite并为其材质插槽分配一个 :ref:`class_ShaderMaterial`:"
 
 msgid "Assign :ref:`class_VisualShader` to the shader slot of the material:"
 msgstr "将 :ref:`class_VisualShader` 给着色器材质的插槽："
 
+#, fuzzy
 msgid ""
 "Don't forget to change its mode to \"CanvasItem\" (if you are using a "
-"Sprite):"
+"Sprite2D):"
 msgstr "不要忘记将其模式改为 \"CanvasItem\"(如果你使用的是Sprite):"
 
 msgid ""
@@ -66,10 +68,11 @@ msgstr ""
 "创建一个从 :ref:`class_VisualShaderNodeCustom` 派生的脚本. 这是你初始化你的插"
 "件所需要的全部内容."
 
+#, fuzzy
 msgid ""
 "Save it and open the Visual Shader. You should see your new node type within "
-"the member's dialog (if you can't see your new node, try restarting the "
-"editor):"
+"the member's dialog under the Addons category (if you can't see your new "
+"node, try restarting the editor):"
 msgstr ""
 "保存它并打开Visual Shader. 你应该可以在成员对话框中看到你的新节点类型(如果你"
 "看不到你的新节点, 请尝试重新启动编辑器):"

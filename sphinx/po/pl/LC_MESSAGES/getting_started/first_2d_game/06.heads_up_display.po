@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,38 +98,25 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Under **Theme overrides > Fonts** click on the empty box and select \"New "
-"DynamicFont\""
-msgstr ""
-"W zakładce \"Czcionki niestandardowe\" wybierz opcję \"Nowa czcionka "
-"dynamiczna\""
-
-#, fuzzy
-msgid ""
-"Click on the \"DynamicFont\" you added, and under **Font > FontData**, "
-"choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
+"Under \"Theme Overrides > Fonts\", choose \"Load\" and select the \"Xolonium-"
+"Regular.ttf\" file."
 msgstr ""
 "Kliknij na dodaną \"Dynamiczna czcionka\", a następnie w polu \"Ustawienia "
 "Czcionki\" wybierz \"Załaduj\" i wybierz plik \"Xolonium-Regular.ttf\". "
 "Należy również ustawić ``Rozmiar`` czcionki. Ustawienie ``64`` powinno "
 "działać dobrze."
 
-msgid "Set the \"Size\" property under ``Settings``, ``64`` works well."
-msgstr ""
-
 msgid ""
-"Once you've done this on the ``ScoreLabel``, you can click the down arrow "
-"next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
-"place on the other two Control nodes."
+"The font size is still too small, increase it to ``64`` under \"Theme "
+"Overrides > Font Sizes\". Once you've done this with the ``ScoreLabel``, "
+"repeat the changes for the ``Message`` and ``StartButton`` nodes."
 msgstr ""
 
 #, fuzzy
 msgid ""
-"**Anchors and Margins:** ``Control`` nodes have a position and size, but "
-"they also have anchors and margins. Anchors define the origin - the "
-"reference point for the edges of the node. Margins update automatically when "
-"you move or resize a control node. They represent the distance from the "
-"control node's edges to its anchor."
+"**Anchors:** ``Control`` nodes have a position and size, but they also have "
+"anchors. Anchors define the origin - the reference point for the edges of "
+"the node."
 msgstr ""
 "**Kotwice i marginesy:** Węzły ``Control`` mają położenie i wielkość, ale "
 "także kotwice i margiesy. Kotwice określają początek - punkt odniesienia dla "
@@ -138,16 +125,10 @@ msgstr ""
 "węzła control do jego punktu zakotwiczenia. Więcej informacji na ten temat "
 "można znaleźć w temacie :ref:`doc_design_interfaces_with_the_control_nodes`."
 
+#, fuzzy
 msgid ""
-"Arrange the nodes as shown below. Click the \"Layout\" button to set a "
-"Control node's layout:"
-msgstr ""
-"Uporządkuj węzły w sposób pokazany poniżej. Kliknąć przycisk \"Układ\", aby "
-"ustawić dla węzła Control układ:"
-
-msgid ""
-"You can drag the nodes to place them manually, or for more precise "
-"placement, use the following settings:"
+"Arrange the nodes as shown below. You can drag the nodes to place them "
+"manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr ""
 "Węzły można przeciągnąć ręcznie lub, aby uzyskać bardziej precyzyjne "
 "rozmieszczenie, należy użyć następujących ustawień:"
@@ -155,44 +136,53 @@ msgstr ""
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
-msgid "*Layout* : \"Top Wide\""
+msgid "Add the text ``0``."
 msgstr ""
 
-msgid "*Text* : ``0``"
-msgstr "Tekst: ``0``"
+msgid ""
+"Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
+msgstr ""
 
-msgid "*Align* : \"Center\""
-msgstr "*Wyrównanie*: \"Wyśrodkowany\""
+msgid "Choose the \"Anchor Preset\" ``Center Top``."
+msgstr ""
 
 msgid "Message"
 msgstr "Wiadomość"
 
-msgid "*Layout* : \"HCenter Wide\""
-msgstr "*Układ* : \"Środek\""
-
-msgid "*Text* : ``Dodge the Creeps!``"
+#, fuzzy
+msgid "Add the text ``Dodge the creeps!``."
 msgstr "*Tekst* : ``Dodge the Creeps!``"
 
-msgid "*Autowrap* : \"On\""
+msgid ""
+"Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
+"line."
+msgstr ""
+
+msgid ""
+"Under \"Control - Layout/Transform\" set \"Size X\"  to ``480`` to use the "
+"entire width of the screen."
+msgstr ""
+
+msgid "Choose the \"Anchor Preset\" ``Center``."
 msgstr ""
 
 msgid "StartButton"
 msgstr "StartButton"
 
-msgid "*Text* : ``Start``"
+#, fuzzy
+msgid "Add the text ``Start``."
 msgstr "Tekst: ``Start``"
 
-msgid "*Layout* : \"Center Bottom\""
-msgstr "Układ: \"Środek Dół\""
+msgid ""
+"Under \"Control - Layout/Transform\", set \"Size X\" to ``200`` and \"Size "
+"Y\" to ``100`` to add a little bit more padding between the border and text."
+msgstr ""
 
-msgid "*Margin* :"
-msgstr "Margines:"
+msgid "Choose the \"Anchor Preset\" ``Center Bottom``."
+msgstr ""
 
-msgid "Top: ``-200``"
-msgstr "Góra: ``-200``"
-
-msgid "Bottom: ``-100``"
-msgstr "Dół: ``-100``"
+msgid "Under \"Control - Layout/Transform\", set \"Position Y\" to ``580``."
+msgstr ""
 
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
@@ -205,19 +195,24 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr "Teraz dodaj ten skrypt do ``HUD``:"
 
+#, fuzzy
 msgid ""
-"The ``start_game`` signal tells the ``Main`` node that the button has been "
-"pressed."
-msgstr ""
-"Sygnał ``start_game`` informuje węzeł ``Main`` o naciśnięciu przycisku."
-
-msgid ""
-"This function is called when we want to display a message temporarily, such "
-"as \"Get Ready\"."
+"We now want to display a message temporarily, such as \"Get Ready\", so we "
+"add the following code"
 msgstr ""
 "Ta funkcja jest wywoływana, gdy chcemy tymczasowo wyświetlić komunikat, taki "
 "jak \"Przygotuj się\". W ``MessageTimer`` ustaw ``Czas oczekiwania`` na "
 "``2`` i ustaw właściwość ``Jednokrotny`` na \"Włączone\"."
+
+#, fuzzy
+msgid ""
+"We also need to process what happens when the player loses. The code below "
+"will show \"Game Over\" for 2 seconds, then return to the title screen and, "
+"after a brief pause, show the \"Start\" button."
+msgstr ""
+"Ta funkcja jest wywoływana, gdy gracz przegrywa. Przez 2 sekundy na ekranie "
+"będzie wyświetlał się napis \"Game Over\" (Koniec Gry), następnie powróci do "
+"ekranu tytułowego i pojawi się przycisk \"Start\"."
 
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
@@ -235,12 +230,13 @@ msgid ""
 "time before showing the \"Start\" button."
 msgstr ""
 
-msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "Funkcja ta jest wywoływana w ``Main`` przy każdej zmianie wyniku."
+msgid "Add the code below to ``HUD`` to update the score"
+msgstr ""
 
+#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
-"signal of ``StartButton`` and add the following code to the new functions:"
+"signal of ``StartButton``, and add the following code to the new functions:"
 msgstr ""
 "Podłącz ``timeout()`` do sygnału ``MessageTimer`` i ``pressed()`` do sygnału "
 "``StartButton`` i dodaj następujący kod do nowej funkcji:"
@@ -267,10 +263,17 @@ msgstr ""
 
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
-"``new_game()`` function of the Main node by typing \"new_game\" in the "
-"\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
+"``new_game()`` function of the Main node by clicking the \"Pick\" button in "
+"the \"Connect a Signal\" window and selecting the ``new_game()`` method or "
+"type \"new_game\" below \"Receiver Method\" in the window. Verify that the "
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
+
+#, fuzzy
+msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
+msgstr ""
+"Jeśli jesteś pewien, że wszystko działa tak, jak powinno, usuń wywołanie "
+"metody ``new_game()`` z ``_ready()``."
 
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
@@ -283,15 +286,22 @@ msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "W ``game_over()`` musimy wywołać odpowiednią funkcję w ``HUD``:"
 
 msgid ""
-"Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
+"Just a reminder: we don't want to start the new game automatically, so "
+"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
 "Na koniec dodaj to do ``on_on_ScoreTimer_timeout()``, aby wyświetlacz był "
 "zsynchronizowany ze zmieniającym się wynikiem:"
 
+#, fuzzy
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
-"asked to select a main scene, so choose ``Main.tscn``."
+"asked to select a main scene, so choose ``main.tscn``."
 msgstr ""
 "Teraz jesteś gotowy do gry! Kliknąć przycisk \"Uruchom projekt\". Zostaniesz "
 "poproszony o wybranie głównej sceny, więc wybierz ``Main.tscn``."

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,6 +32,18 @@ msgid ""
 msgstr ""
 "De forma predeterminada, macOS solo ejecutará aplicaciones que estén "
 "firmadas y notarizadas."
+
+msgid ""
+"When running an app from the Downloads folder or when still in quarantine, "
+"Gatekeeper will perform *path randomization* as a security measure. This "
+"breaks access to relative paths from the app, which the app relies upon to "
+"work. To resolve this issue, move the app to the ``/Applications`` folder."
+msgstr ""
+
+msgid ""
+"In general, macOS apps should avoid relying on relative paths from the "
+"application folder."
+msgstr ""
 
 msgid ""
 "Depending on the way a macOS app is signed and distributed, the following "
@@ -133,7 +145,18 @@ msgstr "Después hacer clic en ``Open`` dentro del dialogo de confirmación."
 msgid "Enter your password if you're prompted."
 msgstr "Ingresa tu contraseña si se te solicita."
 
-msgid "App is not-signed, executable is linker-signed"
+msgid ""
+"Another option is to disable Gatekeeper entirely. Note that this does "
+"decrease the security of your computer by allowing you to run any software "
+"you want. To do this, run ``sudo spctl --master-disable`` in the Terminal, "
+"enter your password, and then the **Anywhere** option will be available:"
+msgstr ""
+
+msgid "Note that Gatekeeper will re-enable itself when macOS updates."
+msgstr ""
+
+#, fuzzy
+msgid "App is not signed, executable is linker-signed"
 msgstr ""
 "La aplicación no está firmada, pero el ejecutable está firmado por el "
 "enlazador (linker-signed)"
@@ -150,7 +173,9 @@ msgstr ""
 "Para ejecutar esta aplicación, debes eliminar manualmente el atributo "
 "extendido de cuarentena del archivo:"
 
-msgid "Open ``Terminal.app`` (press ``Cmd + Space``, and enter ``Terminal``)."
+#, fuzzy
+msgid ""
+"Open ``Terminal.app`` (press :kbd:`Cmd + Space` and enter ``Terminal``)."
 msgstr ""
 "Abre ``Terminal.app`` (presiona ``Cmd + Espacio`` y escribe ``Terminal``)."
 
@@ -171,8 +196,9 @@ msgstr ""
 "Ejecuta el comando ``xattr -dr com.apple.quarantine \"Unsigned Game.app\"`` "
 "(incluyendo las comillas y la extensión ``.app``)."
 
+#, fuzzy
 msgid ""
-"Neither app nor executable is signed (relevant for Apple Silicon macs only)"
+"Neither app nor executable is signed (relevant for Apple Silicon Macs only)"
 msgstr ""
 "Ni la aplicación ni el ejecutable están firmados (relevante solo para Mac "
 "con Apple Silicon)"

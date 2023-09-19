@@ -1,0 +1,165 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Binding to external libraries"
+msgstr "Связывание внешних библиотек"
+
+msgid "Modules"
+msgstr "Модули"
+
+#, fuzzy
+msgid ""
+"The Summator example in :ref:`doc_custom_modules_in_cpp` is great for small, "
+"custom modules, but what if you want to use a larger, external library? "
+"Let's look at an example using `Festival <https://www.cstr.ed.ac.uk/projects/"
+"festival/>`_, a speech synthesis (text-to-speech) library written in C++."
+msgstr ""
+"Пример Summator в :ref:`doc_custom_modules_in_c++` хорош для маленьких, "
+"ручных модулей, но если вы хотите использовать большую, внешнюю библиотеку? "
+"Давайте посмотрим на пример использования Festival, библиотеки синтезации "
+"голоса (текс-в-речь) написанную на C++."
+
+msgid ""
+"To bind to an external library, set up a module directory similar to the "
+"Summator example:"
+msgstr ""
+"Для связки внешней библиотеки, установить директорию модуля подобно примеру "
+"с Summator :"
+
+#, fuzzy
+msgid "Next, you will create a header file with a TTS class:"
+msgstr "Далее, вы должны создать заголовочный файл с простым классом TTS:"
+
+msgid "And then you'll add the cpp file."
+msgstr "И затем вы добавляете файл cpp."
+
+msgid ""
+"Just as before, the new class needs to be registered somehow, so two more "
+"files need to be created:"
+msgstr ""
+"Также как и ранее, новый класс нуждается в регистрации, так что нужно "
+"добавить ещё два файла:"
+
+msgid ""
+"These files must be in the top-level folder of your module (next to your "
+"``SCsub`` and ``config.py`` files) for the module to be registered properly."
+msgstr ""
+
+#, fuzzy
+msgid "These files should contain the following:"
+msgstr "Сцена Моба будет использовать следующие узлы:"
+
+msgid ""
+"Next, you need to create a ``SCsub`` file so the build system compiles this "
+"module:"
+msgstr ""
+"Далее, вы должны создать файл ``SCsub`` чтобы система сборки скомпилировала "
+"модуль:"
+
+#, fuzzy
+msgid ""
+"You'll need to install the external library on your machine to get the .a "
+"library files. See the library's official documentation for specific "
+"instructions on how to do this for your operation system. We've included the "
+"installation commands for Linux below, for reference."
+msgstr ""
+"Вам нужно установить внешнюю библиотеку на ваш компьютер чтобы получить "
+"библиотечные файлы .a. Посмотрите в официальную документацию библиотеки для "
+"инструкций о том как получить их для вашей операционной системы. Мы включили "
+"команды установки для Linux ниже, для справки."
+
+#, fuzzy
+msgid ""
+"The voices that Festival uses (and any other potential external/3rd-party "
+"resource) all have varying licenses and terms of use; some (if not most) of "
+"them may be be problematic with Godot, even if the Festival Library itself "
+"is MIT License compatible. Please be sure to check the licenses and terms of "
+"use."
+msgstr ""
+"**Важно:** Голоса которые использует Festival (а также потенциально другие "
+"внешние/чужие ресурсы) могут иметь различные лицензии и правила "
+"использования; некоторые (если не большинство) из них проблематично "
+"использовать с Godot, даже если сама библиотека Festival лицензирована под "
+"Лицензией MIT. Проверяйте лицензии и правила использования."
+
+#, fuzzy
+msgid ""
+"The external library will also need to be installed inside your module to "
+"make the source files accessible to the compiler, while also keeping the "
+"module code self-contained. The festival and speech_tools libraries can be "
+"installed from the modules/tts/ directory via git using the following "
+"commands:"
+msgstr ""
+"Внешнюю библиотеке нужно также установить внутри вашего модуля чтобы сделать "
+"файлы исходного кода доступными для компилятора, а также сохраняя код модуля "
+"самодостаточным. Библиотеки festival и speech_tools могут быть установлены "
+"из папки modules/tts/ через git используя следующие команды:"
+
+msgid ""
+"If you don't want the external repository source files committed to your "
+"repository, you can link to them instead by adding them as submodules (from "
+"within the modules/tts/ directory), as seen below:"
+msgstr ""
+"Если вы не хотите чтобы внешние кодовые файлы репозитория соединились с "
+"вашим репозиторием, вы может связаться с ними вместо добавления их как под-"
+"модулей (внутри папки modules/tts/), как показано ниже:"
+
+#, fuzzy
+msgid ""
+"Please note that Git submodules are not used in the Godot repository. If you "
+"are developing a module to be merged into the main Godot repository, you "
+"should not use submodules. If your module doesn't get merged in, you can "
+"always try to implement the external library as a GDExtension."
+msgstr ""
+"**Важно:** Пожалуйста имейте ввиду что под-модули Git не используются в "
+"репозитории Godot. Если вы разрабатываете модуль чтобы слить его в основной "
+"репозиторий Godot, вы не должны использовать под-модули. Если ваш модуль не "
+"может быть слит, вы всегда можете попытаться сделать его через внешнюю "
+"библиотеку такую как плагин GDNative C++."
+
+msgid ""
+"To add include directories for the compiler to look at you can append it to "
+"the environment's paths:"
+msgstr ""
+"Чтобы добавить директории включения(include) для компилятора, вы может "
+"добавить их в пути переменных сред:"
+
+msgid ""
+"If you want to add custom compiler flags when building your module, you need "
+"to clone `env` first, so it won't add those flags to whole Godot build "
+"(which can cause errors). Example `SCsub` with custom flags:"
+msgstr ""
+"Если вы желаете добавить собственные флаги компиляции когда строите модуль, "
+"вы должны сначала клонировать `env`, чтобы он не добавлял флаги целиком в "
+"Godot (что вызовет ошибки). К примеру `SCsub` с собственными флагами:"
+
+msgid "The final module should look like this:"
+msgstr "В итоге скрипт должен выглядеть так:"
+
+msgid "Using the module"
+msgstr "Использование модуля"
+
+msgid "You can now use your newly created module from any script:"
+msgstr "Теперь вы можете использовать ваш новый модуль из любого скрипта:"
+
+msgid "And the output will be ``is_spoken: True`` if the text is spoken."
+msgstr "А вывод будет ``is_spoken: True`` если текст будет произнесён."
+
+msgid "Translation status"
+msgstr "Translation status (статус перевода)"

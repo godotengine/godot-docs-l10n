@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,26 +22,391 @@ msgstr "Alterações da Documentação"
 
 #, fuzzy
 msgid ""
-"The documentation is continually being improved. The release of version 3.2 "
-"includes many new tutorials, many fixes and updates for old tutorials, and "
-"many updates to the :ref:`class reference <doc_class_reference>`. Below is a "
-"list of new tutorials added since version 3.1."
+"The documentation is continually being improved. New releases include new "
+"pages, fixes and updates to existing pages, and many updates to the :ref:"
+"`class reference <doc_class_reference>`. Below is a list of new pages added "
+"since version 3.0."
 msgstr ""
 "Esta documentação está sendo continuamente melhorada. O lançamento da versão "
 "3.2 inclui muitos novos tutoriais, muitas correções e atualizações de "
 "antigos tutoriais, e muitas atualizações das referências de classes. Abaixo "
 "está uma lista dos novos tutoriais adicionados desde a versão 3.1."
 
+#, fuzzy
 msgid ""
-"This document only contains new tutorials so not all changes are reflected, "
-"many tutorials have been substantially updated but are not reflected in this "
-"document."
+"This document only contains new pages so not all changes are reflected, many "
+"pages have been substantially updated but are not reflected in this document."
 msgstr ""
 "Este documento contém apenas novos tutoriais, portanto, nem todas as "
 "alterações estão refletidas, muitos tutoriais foram substancialmente "
 "atualizados, mas não estão refletidos neste documento."
 
-msgid "New tutorials since version 3.1"
+#, fuzzy
+msgid "New pages since version 4.0"
+msgstr "Novos tutoriais desde a versão 3.0"
+
+msgid "Development"
+msgstr "Desenvolvimento"
+
+#, fuzzy
+msgid ":ref:`doc_internal_rendering_architecture`"
+msgstr ":ref:`doc_beziers_and_curves`"
+
+#, fuzzy
+msgid ":ref:`doc_using_sanitizers`"
+msgstr ":ref:`Usando servidores <doc_using_servers>`"
+
+#, fuzzy
+msgid "Migrating"
+msgstr "Iluminação"
+
+#, fuzzy
+msgid ":ref:`doc_upgrading_to_godot_4.1`"
+msgstr ":ref:`doc_converting_glsl_to_godot_shaders`"
+
+msgid "Physics"
+msgstr "Física"
+
+#, fuzzy
+msgid ":ref:`doc_troubleshooting_physics_issues`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid "New pages since version 3.6"
+msgstr "Novos tutoriais desde a versão 3.1"
+
+msgid "2D"
+msgstr "2D"
+
+#, fuzzy
+msgid ":ref:`doc_2d_antialiasing`"
+msgstr ":ref:`doc_2d_sprite_animation`"
+
+msgid "3D"
+msgstr "3D"
+
+#, fuzzy
+msgid ":ref:`doc_3d_antialiasing`"
+msgstr ":ref:`Notificações Godot <doc_godot_notifications>`"
+
+#, fuzzy
+msgid ":ref:`doc_faking_global_illumination`"
+msgstr ":ref:`doc_interpolation`"
+
+#, fuzzy
+msgid ":ref:`doc_introduction_to_global_illumination`"
+msgstr ":ref:`doc_introduction_to_shaders`"
+
+#, fuzzy
+msgid ":ref:`doc_mesh_lod`"
+msgstr ":ref:`Malhas 2D <doc_2d_meshes>`"
+
+#, fuzzy
+msgid ":ref:`doc_occlusion_culling`"
+msgstr ":ref:`Utilizando MultiMesh <doc_using_multimesh>`"
+
+#, fuzzy
+msgid ":ref:`doc_using_sdfgi`"
+msgstr ":ref:`Usando servidores <doc_using_servers>`"
+
+#, fuzzy
+msgid ":ref:`doc_using_decals`"
+msgstr ":ref:`Sinais <doc_signals>`"
+
+#, fuzzy
+msgid ":ref:`doc_visibility_ranges`"
+msgstr ":ref:`doc_visual_shaders`"
+
+#, fuzzy
+msgid ":ref:`doc_volumetric_fog`"
+msgstr ":ref:`doc_webrtc`"
+
+#, fuzzy
+msgid ":ref:`doc_variable_rate_shading`"
+msgstr ":ref:`Shading de particulas <doc_shading_language>`"
+
+#, fuzzy
+msgid ":ref:`doc_physical_light_and_camera_units`"
+msgstr ":ref:`Luzes e sombras 2D <doc_2d_lights_and_shadows>`"
+
+msgid "Animation"
+msgstr "Animação"
+
+#, fuzzy
+msgid ":ref:`doc_creating_movies`"
+msgstr ":ref:`Criando árvores <doc_making_trees>`"
+
+msgid "Assets pipeline"
+msgstr "Pipeline de assets"
+
+#, fuzzy
+msgid ":ref:`doc_retargeting_3d_skeletons`"
+msgstr ":ref:`Esqueletos 2D <doc_2d_skeletons>`"
+
+#, fuzzy
+msgid ":ref:`doc_custom_platform_ports`"
+msgstr ":ref:`Personalizar pós-processamento <doc_custom_postprocessing>`"
+
+#, fuzzy
+msgid ":ref:`doc_upgrading_to_godot_4`"
+msgstr ":ref:`doc_converting_glsl_to_godot_shaders`"
+
+#, fuzzy
+msgid ":ref:`doc_large_world_coordinates`"
+msgstr ":ref: `O que são as classes Godot <doc_what_are_godot_classes>`"
+
+msgid "Scripting"
+msgstr "Scripting"
+
+#, fuzzy
+msgid ":ref:`doc_custom_performance_monitors`"
+msgstr ":ref:`Personalizar pós-processamento <doc_custom_postprocessing>`"
+
+#, fuzzy
+msgid ":ref:`doc_c_sharp_collections`"
+msgstr ":ref:`Esqueletos 2D <doc_2d_skeletons>`"
+
+#, fuzzy
+msgid ":ref:`doc_c_sharp_global_classes`"
+msgstr ":ref: `O que são as classes Godot <doc_what_are_godot_classes>`"
+
+#, fuzzy
+msgid ":ref:`doc_c_sharp_variant`"
+msgstr ":ref:`doc_2d_sprite_animation`"
+
+msgid "Shaders"
+msgstr "Shaders"
+
+#, fuzzy
+msgid ":ref:`doc_compute_shaders`"
+msgstr ":ref:`Shading de particulas <doc_shading_language>`"
+
+msgid "Workflow"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_pr_review_guidelines`"
+msgstr "Leia nosso :ref:`doc_content_guidelines`."
+
+#, fuzzy
+msgid "XR"
+msgstr "X"
+
+#, fuzzy
+msgid ":ref:`doc_introducing_xr_tools`"
+msgstr ":ref:`doc_introduction_to_shaders`"
+
+#, fuzzy
+msgid ":ref:`doc_xr_action_map`"
+msgstr ":ref:`doc_interpolation`"
+
+#, fuzzy
+msgid ":ref:`doc_deploying_to_android`"
+msgstr ":ref:`doc_exporting_basics`"
+
+#, fuzzy
+msgid "New pages since version 3.5"
+msgstr "Novos tutoriais desde a versão 3.1"
+
+msgid "None."
+msgstr ""
+
+#, fuzzy
+msgid "New pages since version 3.4"
+msgstr "Novos tutoriais desde a versão 3.1"
+
+#, fuzzy
+msgid ":ref:`doc_3d_text`"
+msgstr ":ref:`doc_webrtc`"
+
+#, fuzzy
+msgid ":ref:`doc_playing_videos`"
+msgstr ":ref:`Criando árvores <doc_making_trees>`"
+
+msgid "Editor"
+msgstr "Editor"
+
+#, fuzzy
+msgid ":ref:`doc_managing_editor_features`"
+msgstr ":ref:`Criando árvores <doc_making_trees>`"
+
+#, fuzzy
+msgid "New pages since version 3.3"
+msgstr "Novos tutoriais desde a versão 3.1"
+
+msgid "C++"
+msgstr "C++"
+
+#, fuzzy
+msgid ":ref:`doc_cpp_usage_guidelines`"
+msgstr ":ref:`Utilizando MultiMesh <doc_using_multimesh>`"
+
+msgid "GDScript"
+msgstr "GDScript"
+
+#, fuzzy
+msgid ":ref:`doc_gdscript_documentation_comments`"
+msgstr ":ref:`GDscript estaticamente tipado <doc_gdscript_static_typing>`"
+
+#, fuzzy
+msgid "New pages since version 3.2"
+msgstr "Novos tutoriais desde a versão 3.1"
+
+#, fuzzy
+msgid ":ref:`doc_3d_rendering_limitations`"
+msgstr "Limitações da renderização 3D"
+
+msgid "About"
+msgstr "Sobre"
+
+#, fuzzy
+msgid ":ref:`doc_troubleshooting`"
+msgstr ":ref:`doc_interpolation`"
+
+#, fuzzy
+msgid ":ref:`doc_list_of_features`"
+msgstr ""
+":ref:`Usando uma Janela de exibição (Viewport) como uma textura "
+"<doc_viewport_as_texture>`"
+
+#, fuzzy
+msgid ":ref:`doc_release_policy`"
+msgstr ":ref:`doc_thread_safe_apis`"
+
+msgid "Best practices"
+msgstr "Boas práticas"
+
+#, fuzzy
+msgid ":ref:`doc_version_control_systems`"
+msgstr ":ref:`Sistema Ragdoll <doc_ragdoll_system>`"
+
+msgid "Community"
+msgstr "Comunidade"
+
+#, fuzzy
+msgid ":ref:`doc_best_practices_for_engine_contributors`"
+msgstr "Veja :ref:`doc_ways_to_contribute`."
+
+#, fuzzy
+msgid ":ref:`doc_bisecting_regressions`"
+msgstr ":ref:`Usando servidores <doc_using_servers>`"
+
+#, fuzzy
+msgid ":ref:`doc_editor_and_docs_localization`"
+msgstr ""
+"Veja :ref:`Executando código no editor <doc_running_code_in_the_editor>` "
+"para mais informações."
+
+#, fuzzy
+msgid ":ref:`doc_introduction_to_editor_development`"
+msgstr "Introdução ao desenvolvimento do editor"
+
+#, fuzzy
+msgid ":ref:`doc_editor_style_guide`"
+msgstr ":ref:`Consertando jitter e stutter <doc_jitter_stutter>`"
+
+#, fuzzy
+msgid ":ref:`doc_common_engine_methods_and_macros`"
+msgstr ""
+":ref:`Controlando milhares de peixes <doc_controlling_thousands_of_fish>`"
+
+#, fuzzy
+msgid ":ref:`doc_vulkan_validation_layers`"
+msgstr ":ref:`Árvore de Animações <doc_animation_tree>`"
+
+#, fuzzy
+msgid ":ref:`doc_gdscript_grammar`"
+msgstr ":ref:`doc_2d_sprite_animation`"
+
+msgid "Configuring an IDE: :ref:`doc_configuring_an_ide_code_blocks`"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_default_key_mapping`"
+msgstr ":ref:`doc_thread_safe_apis`"
+
+#, fuzzy
+msgid ":ref:`doc_using_the_web_editor`"
+msgstr ":ref: `Web <doc_using_the_web_editor>`"
+
+msgid "Export"
+msgstr "Exportar"
+
+#, fuzzy
+msgid ":ref:`doc_exporting_for_dedicated_servers`"
+msgstr "Exportando para servidores dedicados"
+
+msgid "Input"
+msgstr "Entrada"
+
+#, fuzzy
+msgid ":ref:`doc_controllers_gamepads_joysticks`"
+msgstr "Controles, gamepads e joysticks"
+
+msgid "Math"
+msgstr "Matemática"
+
+#, fuzzy
+msgid ":ref:`doc_random_number_generation`"
+msgstr "Geração de números aleatórios"
+
+msgid "Platform-specific"
+msgstr "Específico da plataforma"
+
+#, fuzzy
+msgid ":ref:`doc_plugins_for_ios`"
+msgstr ":ref: `doc_optimizing_for_size`"
+
+#, fuzzy
+msgid ":ref:`doc_ios_plugin`"
+msgstr ":ref:`doc_android_plugin`"
+
+#, fuzzy
+msgid ":ref:`doc_html5_shell_classref`"
+msgstr ":ref: `O que são as classes Godot <doc_what_are_godot_classes>`"
+
+#, fuzzy
+msgid ":ref:`doc_collision_shapes_2d`"
+msgstr ":ref:`doc_visual_shaders`"
+
+#, fuzzy
+msgid ":ref:`doc_collision_shapes_3d`"
+msgstr ":ref:`doc_visual_shaders`"
+
+#, fuzzy
+msgid ":ref:`doc_shaders_style_guide`"
+msgstr ":ref:`Linguagem de shaders <doc_shading_language>`"
+
+#, fuzzy
+msgid ":ref:`doc_debugger_panel`"
+msgstr "GDScript :ref:`depurador <doc_debugger_panel>`."
+
+#, fuzzy
+msgid ":ref:`doc_creating_script_templates`"
+msgstr "Criando modelos de script"
+
+#, fuzzy
+msgid ":ref:`doc_evaluating_expressions`"
+msgstr "Avaliando as expressões"
+
+#, fuzzy
+msgid ":ref:`doc_what_is_gdextension`"
+msgstr ":ref: `O que são as classes Godot <doc_what_are_godot_classes>`"
+
+msgid ""
+":ref:`doc_gdscript_warning_system` (split from :ref:"
+"`doc_gdscript_static_typing`)"
+msgstr ""
+
+msgid "User Interface (UI)"
+msgstr "Interface de Usuário (UI)"
+
+#, fuzzy
+msgid ":ref:`doc_control_node_gallery`"
+msgstr ":ref:`Alternativas de nós <doc_node_alternatives>`"
+
+#, fuzzy
+msgid "New pages since version 3.1"
 msgstr "Novos tutoriais desde a versão 3.1"
 
 msgid "Project workflow"
@@ -49,9 +414,6 @@ msgstr "Fluxo de trabalho do projeto"
 
 msgid ":ref:`doc_android_custom_build`"
 msgstr ":ref:`doc_android_custom_build`"
-
-msgid "2D"
-msgstr "2D"
 
 msgid ":ref:`doc_2d_sprite_animation`"
 msgstr ":ref:`doc_2d_sprite_animation`"
@@ -64,9 +426,6 @@ msgstr ":ref:`doc_recording_with_microphone`"
 
 msgid ":ref:`doc_sync_with_audio`"
 msgstr ":ref:`doc_sync_with_audio`"
-
-msgid "Math"
-msgstr "Matemática"
 
 msgid ":ref:`doc_beziers_and_curves`"
 msgstr ":ref:`doc_beziers_and_curves`"
@@ -113,15 +472,6 @@ msgstr "Trabalho em rede"
 msgid ":ref:`doc_webrtc`"
 msgstr ":ref:`doc_webrtc`"
 
-msgid "VR"
-msgstr "VR"
-
-msgid ":ref:`doc_vr_starter_tutorial_part_one`"
-msgstr ":ref:`doc_vr_starter_tutorial_part_one`"
-
-msgid ":ref:`doc_vr_starter_tutorial_part_two`"
-msgstr ":ref:`doc_vr_starter_tutorial_part_two`"
-
 msgid "Plugins"
 msgstr "Plugins"
 
@@ -158,7 +508,8 @@ msgstr ":ref:`Ferramenta de superfície <doc_surfacetool>`"
 msgid ":ref:`doc_meshdatatool`"
 msgstr ":ref:`Ferramenta de dados de malha <doc_meshdatatool>`"
 
-msgid ":ref:`doc_immediategeometry`"
+#, fuzzy
+msgid ":ref:`doc_immediatemesh`"
 msgstr ":ref:`Geometria imediata <doc_immediategeometry>`"
 
 msgid "Optimization"
@@ -176,7 +527,8 @@ msgstr "Jurídico"
 msgid ":ref:`doc_complying_with_licenses`"
 msgstr ":ref:`doc_complying_with_licenses`"
 
-msgid "New tutorials since version 3.0"
+#, fuzzy
+msgid "New pages since version 3.0"
 msgstr "Novos tutoriais desde a versão 3.0"
 
 msgid "Step by step"
@@ -185,11 +537,8 @@ msgstr "Passo a passo"
 msgid ":ref:`doc_signals`"
 msgstr ":ref:`Sinais <doc_signals>`"
 
-msgid ":ref:`doc_exporting_basics`"
-msgstr ":ref:`doc_exporting_basics`"
-
-msgid "Scripting"
-msgstr "Scripting"
+msgid "Exporting"
+msgstr "Exportando"
 
 msgid ":ref:`doc_gdscript_static_typing`"
 msgstr ":ref:`GDscript estaticamente tipado <doc_gdscript_static_typing>`"
@@ -235,9 +584,6 @@ msgstr ":ref:`Luzes e sombras 2D <doc_2d_lights_and_shadows>`"
 msgid ":ref:`doc_2d_meshes`"
 msgstr ":ref:`Malhas 2D <doc_2d_meshes>`"
 
-msgid "3D"
-msgstr "3D"
-
 msgid ":ref:`doc_csg_tools`"
 msgstr ":ref:`Ferramentas CSG <doc_csg_tools>`"
 
@@ -248,17 +594,11 @@ msgid ":ref:`doc_controlling_thousands_of_fish`"
 msgstr ""
 ":ref:`Controlando milhares de peixes <doc_controlling_thousands_of_fish>`"
 
-msgid "Physics"
-msgstr "Física"
-
 msgid ":ref:`doc_ragdoll_system`"
 msgstr ":ref:`Sistema Ragdoll <doc_ragdoll_system>`"
 
 msgid ":ref:`doc_soft_body`"
 msgstr ":ref:`Softbody <doc_soft_body>`"
-
-msgid "Animation"
-msgstr "Animação"
 
 msgid ":ref:`doc_2d_skeletons`"
 msgstr ":ref:`Esqueletos 2D <doc_2d_skeletons>`"
@@ -308,11 +648,9 @@ msgid ":ref:`doc_making_main_screen_plugins`"
 msgstr ""
 ":ref:`Fazendo plugins para a cena principal <doc_making_main_screen_plugins>`"
 
-msgid ":ref:`doc_spatial_gizmo_plugins`"
+#, fuzzy
+msgid ":ref:`doc_3d_gizmo_plugins`"
 msgstr ":ref:`Plugins de gizmo espacial <doc_spatial_gizmo_plugins>`"
-
-msgid "Platform-specific"
-msgstr "Específico da plataforma"
 
 msgid ":ref:`doc_customizing_html5_shell`"
 msgstr ":ref:`doc_customizing_html5_shell`"
@@ -334,9 +672,6 @@ msgstr ":ref: `doc_running_code_in_the_editor`"
 
 msgid ":ref:`doc_change_scenes_manually`"
 msgstr ":ref:`<doc_change_scenes_manually>`"
-
-msgid ":ref:`doc_gles2_gles3_differences`"
-msgstr ":ref:`doc_gles2_gles3_differences`"
 
 msgid "Compiling"
 msgstr "Compilando"

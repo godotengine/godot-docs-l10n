@@ -1,0 +1,184 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "3D gizmo plugins"
+msgstr "Spatialギズモプラグイン"
+
+msgid "Introduction"
+msgstr "はじめに"
+
+#, fuzzy
+msgid ""
+"3D gizmo plugins are used by the editor and custom plugins to define the "
+"gizmos attached to any kind of Node3D node."
+msgstr ""
+"Spatialギズモプラグインは、あらゆる種類のSpatialノードにアタッチされたギズモ"
+"を定義するためにエディタおよびカスタムプラグインによって使用されます。"
+
+#, fuzzy
+msgid ""
+"This tutorial shows the two main approaches to defining your own custom "
+"gizmos. The first option works well for simple gizmos and creates less "
+"clutter in your plugin structure, and the second one will let you store some "
+"per-gizmo data."
+msgstr ""
+"このチュートリアルでは、独自のカスタムギズモを定義するための2つの主なアプロー"
+"チを示します。最初のオプションはシンプルなギズモに適しており、プラグイン構造"
+"の混乱を減らします。2番目のオプションでは、ギズモごとのデータを保存できます。"
+
+msgid ""
+"This tutorial assumes you already know how to make generic plugins. If in "
+"doubt, refer to the :ref:`doc_making_plugins` page."
+msgstr ""
+"このチュートリアルは、一般的なプラグインの作成方法を既に知っていることを前提"
+"としています。疑わしい場合は、\\ :ref:`doc_making_plugins` ページを参照してく"
+"ださい。"
+
+#, fuzzy
+msgid "The EditorNode3DGizmoPlugin"
+msgstr "EditorSpatialGizmoPlugin"
+
+#, fuzzy
+msgid ""
+"Regardless of the approach we choose, we will need to create a new :ref:"
+"`EditorNode3DGizmoPlugin <class_EditorNode3DGizmoPlugin>`. This will allow "
+"us to set a name for the new gizmo type and define other behaviors such as "
+"whether the gizmo can be hidden or not."
+msgstr ""
+"選択するアプローチに関係なく、新しい :ref:`EditorSpatialGizmoPlugin "
+"<class_EditorSpatialGizmoPlugin>` を作成する必要があります。これにより、新し"
+"いギズモタイプの名前を設定し、ギズモを非表示にするかどうかなど、他の動作を定"
+"義できます。"
+
+msgid "This would be a basic setup:"
+msgstr "これは基本的なセットアップです:"
+
+#, fuzzy
+msgid ""
+"For simple gizmos, inheriting :ref:`EditorNode3DGizmoPlugin "
+"<class_EditorNode3DGizmoPlugin>` is enough. If you want to store some per-"
+"gizmo data or you are porting a Godot 3.0 gizmo to 3.1+, you should go with "
+"the second approach."
+msgstr ""
+"シンプルなギズモの場合、\\ :ref:`EditorSpatialGizmoPlugin "
+"<class_EditorSpatialGizmoPlugin>` を継承するだけで十分です。ギズモごとのデー"
+"タを保存する場合、またはGodot 3.0ギズモを3.1+に移植する場合は、2番目のアプ"
+"ローチを使用する必要があります。"
+
+msgid "Simple approach"
+msgstr "シンプルなアプローチ"
+
+#, fuzzy
+msgid ""
+"The first step is to, in our custom gizmo plugin, override the :ref:"
+"`_has_gizmo()<class_EditorNode3DGizmoPlugin_method__has_gizmo>` method so "
+"that it returns ``true`` when the node parameter is of our target type."
+msgstr ""
+"最初のステップは、カスタムギズモプラグインで、\\ :ref:`has_gizmo() "
+"<class_EditorSpatialGizmoPlugin_method_has_gizmo>` メソッドをオーバーライドし"
+"て、spatialパラメーターがターゲットタイプの場合に ``true`` を返すようにするこ"
+"とです。"
+
+#, fuzzy
+msgid ""
+"Then we can override methods like :ref:"
+"`_redraw()<class_EditorNode3DGizmoPlugin_method__redraw>` or all the handle "
+"related ones."
+msgstr ""
+"次に、\\ :ref:`redraw() <class_EditorSpatialGizmoPlugin_method_redraw>` のよ"
+"うなメソッドまたはすべてのハンドル関連のメソッドをオーバーライドできます。"
+
+#, fuzzy
+msgid ""
+"Note that we created a material in the `_init` method, and retrieved it in "
+"the `_redraw` method using :ref:"
+"`get_material()<class_EditorNode3DGizmoPlugin_method_get_material>`. This "
+"method retrieves one of the material's variants depending on the state of "
+"the gizmo (selected and/or editable)."
+msgstr ""
+"`_init` メソッドでマテリアルを作成し、\\ :ref:`get_material() "
+"<class_EditorSpatialGizmoPlugin_method_get_material> ` を使用して `redraw` メ"
+"ソッドで取得したことに注意してください。このメソッドは、ギズモの状態(選択また"
+"は編集可能、またはその両方)に応じて、マテリアルのバリアントの1つを取得しま"
+"す。"
+
+msgid "So the final plugin would look somewhat like this:"
+msgstr "したがって、最終的なプラグインは次のようになります:"
+
+#, fuzzy
+msgid ""
+"Note that we just added some handles in the `_redraw` method, but we still "
+"need to implement the rest of handle-related callbacks in :ref:"
+"`EditorNode3DGizmoPlugin <class_EditorNode3DGizmoPlugin>` to get properly "
+"working handles."
+msgstr ""
+"redrawメソッドにいくつかのハンドルを追加しただけですが、ハンドルが適切に機能"
+"するようにするには、残りのハンドル関連のコールバックを :ref:"
+"`EditorSpatialGizmoPlugin <class_EditorSpatialGizmoPlugin>` に実装する必要が"
+"あります。"
+
+msgid "Alternative approach"
+msgstr "代替アプローチ"
+
+#, fuzzy
+msgid ""
+"In some cases we want to provide our own implementation of :ref:"
+"`EditorNode3DGizmo<class_EditorNode3DGizmo>`, maybe because we want to have "
+"some state stored in each gizmo or because we are porting an old gizmo "
+"plugin and we don't want to go through the rewriting process."
+msgstr ""
+"場合によっては、\\ :ref:`EditorSpatialGizmo <class_EditorSpatialGizmo>`の独自"
+"の実装を提供したいこともあります。これには、各ギズモに状態を保存したい場合"
+"や、古いギズモプラグインを移植しているため、書き換えプロセスを行わない場合な"
+"どがあります。"
+
+#, fuzzy
+msgid ""
+"In these cases all we need to do is, in our new gizmo plugin, override :ref:"
+"`_create_gizmo()<class_EditorNode3DGizmoPlugin_method__create_gizmo>`, so it "
+"returns our custom gizmo implementation for the Node3D nodes we want to "
+"target."
+msgstr ""
+"これらの場合、行う必要があるのは、新しいギズモプラグインで :ref:"
+"`create_gizmo() <class_EditorSpatialGizmoPlugin_method_create_gizmo>` をオー"
+"バーライドするだけです。したがって、ターゲットにするSpatialノードのカスタムギ"
+"ズモ実装を返します。"
+
+#, fuzzy
+msgid ""
+"This way all the gizmo logic and drawing methods can be implemented in a new "
+"class extending :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>`, like so:"
+msgstr ""
+"このように、すべてのギズモロジックと描画メソッドは、次のように :ref:"
+"`EditorSpatialGizmo <class_EditorSpatialGizmo>` を拡張する新しいクラスに実装"
+"できます:"
+
+#, fuzzy
+msgid ""
+"Note that we just added some handles in the `_redraw` method, but we still "
+"need to implement the rest of handle-related callbacks in :ref:"
+"`EditorNode3DGizmo<class_EditorNode3DGizmo>` to get properly working handles."
+msgstr ""
+"redrawメソッドにいくつかのハンドルを追加しただけですが、ハンドルが正しく機能"
+"するようにするには、残りのハンドル関連のコールバックを :ref:"
+"`EditorSpatialGizmo <class_EditorSpatialGizmo>` に実装する必要があります。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

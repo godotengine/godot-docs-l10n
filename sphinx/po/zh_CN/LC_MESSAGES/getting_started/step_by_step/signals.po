@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,9 +42,10 @@ msgstr ""
 "%E8%80%A6%E5%90%88%E6%80%A7_(%E8%A8%88%E7%AE%97%E6%A9%9F%E7%A7%91%E5%AD%B8)>`_\\ ，"
 "并保持代码的灵活性。"
 
+#, fuzzy
 msgid ""
 "For example, you might have a life bar on the screen that represents the "
-"player’s health. When the player takes damage or uses a healing potion, you "
+"player's health. When the player takes damage or uses a healing potion, you "
 "want the bar to reflect the change. To do so, in Godot, you would use "
 "signals."
 msgstr ""
@@ -69,10 +70,11 @@ msgstr ""
 msgid "Scene setup"
 msgstr "场景设置"
 
+#, fuzzy
 msgid ""
-"To add a button to our game, we will create a new \"main\" scene which will "
-"include both a button and the ``Sprite.tscn`` scene that we scripted in "
-"previous lessons."
+"To add a button to our game, we will create a new main scene which will "
+"include both a :ref:`Button <class_button>` and the ``sprite_2d.tscn`` scene "
+"we created in the :ref:`doc_scripting_first_script` lesson."
 msgstr ""
 "要为我们的游戏添加按钮，我们需要新建一个“主”场景，包含一个按钮以及之前课程编"
 "写的 ``Sprite.tscn`` 场景。"
@@ -80,26 +82,30 @@ msgstr ""
 msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr "通过转到菜单“场景 -> 新建场景”来创建新场景。"
 
+#, fuzzy
 msgid ""
-"In the Scene dock, click the 2D Scene button. This will add a Node2D as our "
-"root."
+"In the Scene dock, click the 2D Scene button. This will add a :ref:`Node2D "
+"<class_Node2D>` as our root."
 msgstr "在场景停靠栏中，单击 2D 场景按钮。这将添加一个 Node2D 作为我们的根。"
 
+#, fuzzy
 msgid ""
-"In the FileSystem dock, click and drag the ``Sprite.tscn`` file you saved "
+"In the FileSystem dock, click and drag the ``sprite_2d.tscn`` file you saved "
 "previously onto the Node2D to instantiate it."
 msgstr ""
 "在文件系统停靠栏中，单击之前保存的 ``Sprite.tscn`` 文件并将其拖动到 Node2D 上"
 "以对其进行实例化。"
 
+#, fuzzy
 msgid ""
-"We want to add another node as a sibling of the Sprite. To do so, right-"
+"We want to add another node as a sibling of the Sprite2D. To do so, right-"
 "click on Node2D and select Add Child Node."
 msgstr ""
 "我们想要添加另一个节点作为 Sprite 的同级节点。为此，请右键单击 Node2D，然后选"
 "择“添加子节点”。"
 
-msgid "Search for the Button node type and add it."
+#, fuzzy
+msgid "Search for the :ref:`Button <class_button>` node and add it."
 msgstr "寻找并添加 Button 节点类型。"
 
 msgid ""
@@ -115,9 +121,10 @@ msgstr "如果看不到手柄，请确保工具栏中的选择工具处于活动
 msgid "Click and drag on the button itself to move it closer to the sprite."
 msgstr "点击并拖拽按钮使其更接近精灵。"
 
+#, fuzzy
 msgid ""
 "You can also write a label on the Button by editing its Text property in the "
-"Inspector. Enter \"Toggle motion\"."
+"Inspector. Enter ``Toggle motion``."
 msgstr ""
 "你也可以通过在检查器中编辑 Text 属性在 Button 上写一个标签。请输入“Toggle "
 "motion”。"
@@ -125,9 +132,11 @@ msgstr ""
 msgid "Your scene tree and viewport should look like this."
 msgstr "您的场景树和视口应该是类似这样的。"
 
+#, fuzzy
 msgid ""
-"Save your newly created scene. You can then run it with :kbd:`F6`. At the "
-"moment, the button will be visible, but nothing will happen if you press it."
+"Save your newly created scene as ``node_2d.tscn``, if you haven't already. "
+"You can then run it with :kbd:`F6` (:kbd:`Cmd + R` on macOS). At the moment, "
+"the button will be visible, but nothing will happen if you press it."
 msgstr ""
 "保存新建的场景。然后你就可以使用 :kbd:`F6` 来运行。此时按钮是可见的，但是按下"
 "之后不会有任何反应。"
@@ -135,10 +144,11 @@ msgstr ""
 msgid "Connecting a signal in the editor"
 msgstr "在编辑器中连接信号"
 
+#, fuzzy
 msgid ""
-"Here, we want to connect the Button's \"pressed\" signal to our Sprite, and "
-"we want to call a new function that will toggle its motion on and off. We "
-"need to have a script attached to the Sprite node, which we do from the "
+"Here, we want to connect the Button's \"pressed\" signal to our Sprite2D, "
+"and we want to call a new function that will toggle its motion on and off. "
+"We need to have a script attached to the Sprite2D node, which we do from the "
 "previous lesson."
 msgstr ""
 "在这里，我们希望将按钮的“pressed”信号连接到我们的 Sprite，并且我们想要调用一"
@@ -159,12 +169,13 @@ msgstr "停靠栏显示所选节点上可用的信号列表。"
 msgid "Double-click the \"pressed\" signal to open the node connection window."
 msgstr "双击“pressed”信号，打开节点连接窗口。"
 
+#, fuzzy
 msgid ""
-"There, you can connect the signal to the Sprite node. The node needs a "
+"There, you can connect the signal to the Sprite2D node. The node needs a "
 "receiver method, a function that Godot will call when the Button emits the "
 "signal. The editor generates one for you. By convention, we name these "
-"callback methods \"_on_NodeName_signal_name\". Here, it'll be "
-"\"_on_Button_pressed\"."
+"callback methods \"_on_node_name_signal_name\". Here, it'll be "
+"\"_on_button_pressed\"."
 msgstr ""
 "在那里，您可以将信号连接到 Sprite 节点。节点需要一个接收器方法，当按钮发出信"
 "号时，Godot 将调用该函数。编辑器会为您生成一个。按照惯例，我们将这些回调方法"
@@ -207,8 +218,9 @@ msgid ""
 "the node's motion."
 msgstr "让我们用代码替换带有 ``pass`` 关键字的一行，以切换节点的运动。"
 
+#, fuzzy
 msgid ""
-"Our Sprite moves thanks to code in the ``_process()`` function. Godot "
+"Our Sprite2D moves thanks to code in the ``_process()`` function. Godot "
 "provides a method to toggle processing on and off: :ref:`Node.set_process() "
 "<class_Node_method_set_process>`. Another method of the Node class, "
 "``is_processing()``, returns ``true`` if idle processing is active. We can "
@@ -233,7 +245,8 @@ msgstr ""
 "在尝试游戏之前，我们需要简化 ``_process()`` 函数，以自动移动节点，而不是等待"
 "用户输入。将其替换为以下代码，这是我们在两课前看到的代码："
 
-msgid "Your complete ``Sprite.gd`` code should look like the following."
+#, fuzzy
+msgid "Your complete ``sprite_2d.gd`` code should look like the following."
 msgstr "你的完整的 ``Sprite.gd`` 代码应该是类似下面这样的。"
 
 msgid ""
@@ -264,35 +277,42 @@ msgstr ""
 "回到 2D 工作区。你可以点击窗口顶部的“2D”文字，或者按 :kbd:`Ctrl + F1`\\ "
 "（macOS 上则是 :kbd:`Alt + 1`）。"
 
+#, fuzzy
 msgid ""
-"In the Scene dock, right-click on the Sprite node and add a new child node. "
-"Search for Timer and add the corresponding node. Your scene should now look "
-"like this."
+"In the Scene dock, right-click on the Sprite2D node and add a new child "
+"node. Search for Timer and add the corresponding node. Your scene should now "
+"look like this."
 msgstr ""
 "在“场景”面板中，右键点击 Sprite 节点并添加新节点。搜索 Timer 并添加对应节点。"
 "你的场景现在应该类似这样。"
 
+#, fuzzy
 msgid ""
-"With the Timer node selected, go to the Inspector and check the "
+"With the Timer node selected, go to the Inspector and enable the "
 "**Autostart** property."
 msgstr "选中 Timer 节点，在“检查器”中勾选 **Autostart**\\ （自动开启）属性。"
 
+#, fuzzy
 msgid ""
-"Click the script icon next to Sprite to jump back to the scripting workspace."
+"Click the script icon next to Sprite2D to jump back to the scripting "
+"workspace."
 msgstr "点击 Sprite 旁的脚本图标，返回脚本工作区。"
 
 msgid "We need to do two operations to connect the nodes via code:"
 msgstr "我们需要执行两个操作来通过代码连接节点："
 
-msgid "Get a reference to the Timer from the Sprite."
+#, fuzzy
+msgid "Get a reference to the Timer from the Sprite2D."
 msgstr "从 Sprite 获取 Timer 的引用。"
 
-msgid "Call the Timer's ``connect()`` method."
+#, fuzzy
+msgid "Call the ``connect()`` method on the Timer's \"timeout\" signal."
 msgstr "调用 Timer 的 ``connect()`` 方法。"
 
+#, fuzzy
 msgid ""
 "To connect to a signal via code, you need to call the ``connect()`` method "
-"of the node you want to listen to. In this case, we want to listen to the "
+"of the signal you want to listen to. In this case, we want to listen to the "
 "Timer's \"timeout\" signal."
 msgstr ""
 "要使用代码来连接信号，你需要调用所需监听节点的 ``connect()`` 方法。这里我们要"
@@ -316,31 +336,40 @@ msgstr ""
 "为了获取相对于当前节点的引用，我们使用方法 :ref:`Node.get_node() "
 "<class_Node_method_get_node>`\\ 。我们可以将引用存储在变量中。"
 
+#, fuzzy
 msgid ""
-"The function ``get_node()`` looks at the Sprite's children and gets nodes by "
-"their name. For example, if you renamed the Timer node to \"BlinkingTimer\" "
-"in the editor, you would have to change the call to "
+"The function ``get_node()`` looks at the Sprite2D's children and gets nodes "
+"by their name. For example, if you renamed the Timer node to "
+"\"BlinkingTimer\" in the editor, you would have to change the call to "
 "``get_node(\"BlinkingTimer\")``."
 msgstr ""
 "``get_node()`` 函数会查看 Sprite 的子节点，并按节点的名称获取节点。例如，如果"
 "在编辑器中将 Timer 节点重命名为“BlinkingTimer”，则必须将调用更改为 "
 "``get_node(\"BlinkingTimer\")``\\ 。"
 
+#, fuzzy
 msgid ""
-"We can now connect the Timer to the Sprite in the ``_ready()`` function."
+"We can now connect the Timer to the Sprite2D in the ``_ready()`` function."
 msgstr "现在，我们可以在 ``_ready()`` 函数中将计时器连接到精灵。"
 
+#, fuzzy
 msgid ""
 "The line reads like so: we connect the Timer's \"timeout\" signal to the "
-"node to which the script is attached (``self``). When the Timer emits "
-"\"timeout\", we want to call the function \"_on_Timer_timeout\", that we "
-"need to define. Let's add it at the bottom of our script and use it to "
-"toggle our sprite's visibility."
+"node to which the script is attached. When the Timer emits ``timeout``, we "
+"want to call the function ``_on_timer_timeout()``, that we need to define. "
+"Let's add it at the bottom of our script and use it to toggle our sprite's "
+"visibility."
 msgstr ""
 "该行读起来是这样的：我们将计时器的“timeout”信号连接到脚本附加到的节点"
 "（ ``self`` ）。当计时器发出“timeout”时，我们要调用我们需要定义的函"
 "数“_on_Timer_timeout”。让我们将其添加到脚本的底部，并使用它来切换精灵的可见"
 "性。"
+
+msgid ""
+"By convention, we name these callback methods in GDScript as "
+"\"_on_node_name_signal_name\" and in C# as \"OnNodeNameSignalName\". Here, "
+"it'll be \"_on_timer_timeout\" for GDScript and OnTimerTimeout() for C#."
+msgstr ""
 
 msgid ""
 "The ``visible`` property is a boolean that controls the visibility of our "
@@ -359,9 +388,10 @@ msgstr "如果你现在运行场景，就会看到精灵在闪啊闪的，间隔
 msgid "Complete script"
 msgstr "完整脚本"
 
+#, fuzzy
 msgid ""
 "That's it for our little moving and blinking Godot icon demo! Here is the "
-"complete ``Sprite.gd`` file for reference."
+"complete ``sprite_2d.gd`` file for reference."
 msgstr ""
 "这就是我们小小的 Godot 图标移动闪烁演示了！这是完整的 ``Sprite.gd`` 文件，仅"
 "供参考。"
@@ -396,7 +426,8 @@ msgstr ""
 "自定义信号的工作方式与内置信号相同：它们显示在“节点”选项卡中，您可以像连接其"
 "他信号一样连接到它们。"
 
-msgid "To emit a signal in your scripts, call ``emit_signal()``."
+#, fuzzy
+msgid "To emit a signal in your scripts, call ``emit()`` on the signal."
 msgstr "要通过代码发出信号，请调用 ``emit_signal()``\\ 。"
 
 msgid ""
@@ -414,9 +445,10 @@ msgstr ""
 "数。但是，发出信号时仍然可以发出任意数量的参数；所以由你来决定是否发出正确的"
 "值。"
 
+#, fuzzy
 msgid ""
 "To emit values along with the signal, add them as extra arguments to the "
-"``emit_signal()`` function:"
+"``emit()`` function:"
 msgstr ""
 "要在发出信号的同时传值，请将它们添加为 ``emit_signal()`` 函数的额外参数："
 

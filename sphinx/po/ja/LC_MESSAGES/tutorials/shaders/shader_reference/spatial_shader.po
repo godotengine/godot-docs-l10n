@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -86,29 +86,38 @@ msgstr "\\ **depth_draw_never**"
 msgid "Never draw depth."
 msgstr "深度の描画をしません。"
 
-msgid "**depth_draw_alpha_prepass**"
-msgstr "\\ **depth_draw_alpha_prepass**"
+#, fuzzy
+msgid "**depth_prepass_alpha**"
+msgstr "\\ **depth_draw_always**"
 
 msgid "Do opaque depth pre-pass for transparent geometry."
 msgstr "透明なジオメトリの不透明な深さの事前パスを行います。"
 
-msgid "**depth_test_disable**"
+#, fuzzy
+msgid "**depth_test_disabled**"
 msgstr "\\ **depth_test_disable**"
 
 msgid "Disable depth testing."
 msgstr "深度テストを無効にします。"
 
-msgid "**cull_front**"
-msgstr "\\ **cull_front**"
+msgid "**sss_mode_skin**"
+msgstr ""
 
-msgid "Cull front-faces."
-msgstr "前面(法線が視点の方向に向いている)を間引きます。"
+#, fuzzy
+msgid "Subsurface Scattering mode for skin."
+msgstr "サブサーフェススキャタリング"
 
 msgid "**cull_back**"
 msgstr "\\ **cull_back**"
 
 msgid "Cull back-faces (default)."
 msgstr "背面(法線が視点と逆方向に向いている)を間引きます(デフォルト)。"
+
+msgid "**cull_front**"
+msgstr "\\ **cull_front**"
+
+msgid "Cull front-faces."
+msgstr "前面(法線が視点の方向に向いている)を間引きます。"
 
 msgid "**cull_disabled**"
 msgstr "\\ **cull_disabled**"
@@ -124,6 +133,12 @@ msgstr ""
 "結果は単なるアルベドです。マテリアルではライティング/シェーディングは発生しま"
 "せん。"
 
+msgid "**wireframe**"
+msgstr ""
+
+msgid "Geometry draws using lines."
+msgstr ""
+
 msgid "**diffuse_lambert**"
 msgstr "\\ **diffuse_lambert**"
 
@@ -135,12 +150,6 @@ msgstr "\\ **diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr "拡散をランバートラッピングに(回り込みはroughnessに依存)。"
-
-msgid "**diffuse_oren_nayar**"
-msgstr "\\ **diffuse_oren_nayar**"
-
-msgid "Oren Nayar for diffuse."
-msgstr "拡散をオーレン・ネイヤーに。"
 
 msgid "**diffuse_burley**"
 msgstr "\\ **diffuse_burley**"
@@ -202,12 +211,6 @@ msgstr "\\ **ensure_correct_normals**"
 msgid "Use when non-uniform scale is applied to mesh."
 msgstr "メッシュにuniformではないスケールを適用する場合に使用します。"
 
-msgid "**vertex_lighting**"
-msgstr "\\ **vertex_lighting**"
-
-msgid "Use vertex-based lighting."
-msgstr "頂点ベースの照明を使用します。"
-
 msgid "**shadows_disabled**"
 msgstr "\\ **shadows_disabled**"
 
@@ -230,6 +233,41 @@ msgid ""
 msgstr ""
 "ライティングはアルファを修正し、影のある領域は不透明になり、影のない領域は透"
 "明になります。 ARのカメラフィードに影を重ねるのに便利です。"
+
+msgid "**vertex_lighting**"
+msgstr "\\ **vertex_lighting**"
+
+msgid "Use vertex-based lighting."
+msgstr "頂点ベースの照明を使用します。"
+
+#, fuzzy
+msgid "**particle_trails**"
+msgstr "**パーティクル:**"
+
+msgid "Enables the trails when used on particles geometry."
+msgstr ""
+
+msgid "**alpha_to_coverage**"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Alpha antialiasing mode, see `here <https://github.com/godotengine/godot/"
+"pull/40364>`_ for more."
+msgstr ""
+"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`_"
+
+msgid "**alpha_to_coverage_and_one**"
+msgstr ""
+
+#, fuzzy
+msgid "**fog_disabled**"
+msgstr "\\ **cull_disabled**"
+
+msgid ""
+"Disable receiving depth-based or volumetric fog. Useful for blend_add "
+"materials like particles."
+msgstr ""
 
 #, fuzzy
 msgid "Built-ins"
@@ -261,6 +299,33 @@ msgstr "\\ in float **TIME**"
 
 msgid "Global time, in seconds."
 msgstr "秒単位のグローバル時間。"
+
+#, fuzzy
+msgid "in float **PI**"
+msgstr "\\ in float **TIME**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **TAU**"
+msgstr "\\ in float **DELTA**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr ""
+
+#, fuzzy
+msgid "in float **E**"
+msgstr "\\ in float **TIME**"
+
+msgid ""
+"A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr ""
 
 msgid "Vertex built-ins"
 msgstr "頂点用ビルトイン"
@@ -338,38 +403,22 @@ msgstr "\\ in vec2 **VIEWPORT_SIZE**"
 msgid "Size of viewport (in pixels)."
 msgstr "ビューポートのサイズ (ピクセル単位)。"
 
-msgid "inout mat4 **WORLD_MATRIX**"
-msgstr "\\ inout mat4 **WORLD_MATRIX**"
-
-msgid "Model space to world space transform."
-msgstr "モデル空間からワールド空間への変換。"
-
-msgid "in mat4 **INV_CAMERA_MATRIX**"
-msgstr "\\ in mat4 **INV_CAMERA_MATRIX**"
+#, fuzzy
+msgid "in mat4 **VIEW_MATRIX**"
+msgstr "\\ inout mat4 **MODELVIEW_MATRIX**"
 
 msgid "World space to view space transform."
 msgstr "ワールド空間からビュー空間への変換。"
 
-msgid "inout mat4 **PROJECTION_MATRIX**"
-msgstr "\\ inout mat4 **PROJECTION_MATRIX**"
-
-msgid "View space to clip space transform."
-msgstr "ビュー空間からクリップ空間への変換。"
-
-msgid "in mat4 **CAMERA_MATRIX**"
-msgstr "\\ in mat4 **CAMERA_MATRIX**"
+#, fuzzy
+msgid "in mat4 **INV_VIEW_MATRIX**"
+msgstr "\\ in mat4 **INV_CAMERA_MATRIX**"
 
 msgid "View space to world space transform."
 msgstr "ビュー空間からワールド空間への変換。"
 
-msgid "inout mat4 **MODELVIEW_MATRIX**"
-msgstr "\\ inout mat4 **MODELVIEW_MATRIX**"
-
-msgid "Model space to view space transform (use if possible)."
-msgstr "モデル空間からビュー空間への変換(可能な場合は使用)。"
-
-msgid "inout mat4 **INV_PROJECTION_MATRIX**"
-msgstr "\\ inout mat4 **INV_PROJECTION_MATRIX**"
+msgid "in mat4 **INV_PROJECTION_MATRIX**"
+msgstr "\\ in mat4 **INV_PROJECTION_MATRIX**"
 
 msgid "Clip space to view space transform."
 msgstr "クリップ空間からビュー空間への変換。"
@@ -379,31 +428,86 @@ msgid "in vec3 **NODE_POSITION_WORLD**"
 msgstr "\\ in vec2 **POINT_COORD**"
 
 #, fuzzy
-msgid "Node position, in world space."
-msgstr "ピクセル座標でのマウスの位置。"
+msgid "Node world space position."
+msgstr "モデル空間からワールド空間への変換。"
 
 #, fuzzy
 msgid "in vec3 **NODE_POSITION_VIEW**"
 msgstr "\\ in vec3 **VIEW**"
 
 #, fuzzy
-msgid "Node position, in view space."
-msgstr "ビュー空間内の法線ベクトル。"
+msgid "Node view space position."
+msgstr "アニメーションパネルの位置"
 
 #, fuzzy
 msgid "in vec3 **CAMERA_POSITION_WORLD**"
 msgstr "\\ in vec3 **ATTENUATION**"
 
-msgid "Camera position, in world space."
-msgstr ""
+#, fuzzy
+msgid "Camera world space position."
+msgstr "アニメーションパネルの位置"
 
 #, fuzzy
 msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
 msgstr "\\ in vec3 **ATTENUATION**"
 
+msgid "Camera world space direction."
+msgstr ""
+
+msgid "in bool **OUTPUT_IS_SRGB**"
+msgstr "\\ in bool **OUTPUT_IS_SRGB**"
+
 #, fuzzy
-msgid "Camera direction, in world space."
-msgstr "ビュー空間内の法線ベクトル。"
+msgid ""
+"``true`` when output is in sRGB color space (this is ``true`` in the "
+"Compatibility renderer, ``false`` in Forward+ and Forward Mobile)."
+msgstr ""
+"計算がsRGB色空間で行われる場合は ``true``(GLES2では ``true``\\ 、\\ GLES3で"
+"は ``false``)。"
+
+msgid "in int **INSTANCE_ID**"
+msgstr "\\ in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "インスタンス化のためのインスタンスID。"
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "\\ in vec4 **INSTANCE_CUSTOM**"
+
+msgid "Instance custom data (for particles, mostly)."
+msgstr "インスタンスのカスタムデータ(主にパーティクル用)。"
+
+#, fuzzy
+msgid "in int **VIEW_INDEX**"
+msgstr "\\ in int **INDEX**"
+
+msgid ""
+"The view that we are rendering. ``VIEW_MONO_LEFT`` (``0``) for Mono (not "
+"multiview) or left eye, ``VIEW_RIGHT`` (``1``) for right eye."
+msgstr ""
+
+#, fuzzy
+msgid "in int **VIEW_MONO_LEFT**"
+msgstr "\\ in int **INDEX**"
+
+msgid "Constant for Mono or left eye, always ``0``."
+msgstr ""
+
+#, fuzzy
+msgid "in int **VIEW_RIGHT**"
+msgstr "\\ in int **INDEX**"
+
+msgid "Constant for right eye, always ``1``."
+msgstr ""
+
+#, fuzzy
+msgid "in vec3 **EYE_OFFSET**"
+msgstr "\\ in vec3 **VERTEX**"
+
+msgid ""
+"Position offset for the eye being rendered. Only applicable for multiview "
+"rendering."
+msgstr ""
 
 msgid "inout vec3 **VERTEX**"
 msgstr "\\ inout vec3 **VERTEX**"
@@ -412,11 +516,11 @@ msgid "Vertex in local coordinates."
 msgstr "ローカル座標の頂点。"
 
 #, fuzzy
-msgid "out vec4 **POSITION**"
-msgstr "\\ out vec4 **POSITION**"
+msgid "in int **VERTEX_ID**"
+msgstr "\\ in int **INSTANCE_ID**"
 
-msgid "If written to, overrides final vertex position."
-msgstr "書き込まれた場合、最終的な頂点の位置をオーバーライドします。"
+msgid "The index of the current vertex in the vertex buffer."
+msgstr ""
 
 msgid "inout vec3 **NORMAL**"
 msgstr "\\ inout vec3 **NORMAL**"
@@ -436,11 +540,12 @@ msgstr "\\ inout vec3 **BINORMAL**"
 msgid "Binormal in local coordinates."
 msgstr "ローカル座標の従法線。"
 
-msgid "out float **ROUGHNESS**"
-msgstr "\\ out float **ROUGHNESS**"
+#, fuzzy
+msgid "out vec4 **POSITION**"
+msgstr "\\ out vec4 **POSITION**"
 
-msgid "Roughness for vertex lighting."
-msgstr "頂点ライティング用の粗さ。"
+msgid "If written to, overrides final vertex position."
+msgstr "書き込まれた場合、最終的な頂点の位置をオーバーライドします。"
 
 msgid "inout vec2 **UV**"
 msgstr "\\ inout vec2 **UV**"
@@ -454,21 +559,17 @@ msgstr "\\ inout vec2 **UV2**"
 msgid "UV secondary channel."
 msgstr "UVセカンダリチャネル。"
 
-msgid "in bool **OUTPUT_IS_SRGB**"
-msgstr "\\ in bool **OUTPUT_IS_SRGB**"
-
-msgid ""
-"``true`` when calculations happen in sRGB color space (``true`` in GLES2, "
-"``false`` in GLES3)."
-msgstr ""
-"計算がsRGB色空間で行われる場合は ``true``(GLES2では ``true``\\ 、\\ GLES3で"
-"は ``false``)。"
-
 msgid "inout vec4 **COLOR**"
 msgstr "\\ inout vec4 **COLOR**"
 
 msgid "Color from vertices."
 msgstr "頂点からの色。"
+
+msgid "out float **ROUGHNESS**"
+msgstr "\\ out float **ROUGHNESS**"
+
+msgid "Roughness for vertex lighting."
+msgstr "頂点ライティング用の粗さ。"
 
 msgid "inout float **POINT_SIZE**"
 msgstr "\\ inout float **POINT_SIZE**"
@@ -476,24 +577,62 @@ msgstr "\\ inout float **POINT_SIZE**"
 msgid "Point size for point rendering."
 msgstr "ポイントレンダリングのポイントサイズ。"
 
-msgid "in int **INSTANCE_ID**"
-msgstr "\\ in int **INSTANCE_ID**"
+msgid "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "\\ inout mat4 **MODELVIEW_MATRIX**"
 
-msgid "Instance ID for instancing."
-msgstr "インスタンス化のためのインスタンスID。"
+msgid "Model space to view space transform (use if possible)."
+msgstr "モデル空間からビュー空間への変換(可能な場合は使用)。"
 
-msgid "in vec4 **INSTANCE_CUSTOM**"
-msgstr "\\ in vec4 **INSTANCE_CUSTOM**"
+#, fuzzy
+msgid "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
+msgstr "\\ inout mat4 **MODELVIEW_MATRIX**"
 
-msgid "Instance custom data (for particles, mostly)."
-msgstr "インスタンスのカスタムデータ(主にパーティクル用)。"
+#, fuzzy
+msgid "inout mat4 **MODEL_MATRIX**"
+msgstr "\\ inout mat4 **MODELVIEW_MATRIX**"
+
+msgid "Model space to world space transform."
+msgstr "モデル空間からワールド空間への変換。"
+
+#, fuzzy
+msgid "inout mat3 **MODEL_NORMAL_MATRIX**"
+msgstr "\\ inout mat4 **MODELVIEW_MATRIX**"
+
+msgid "inout mat4 **PROJECTION_MATRIX**"
+msgstr "\\ inout mat4 **PROJECTION_MATRIX**"
+
+msgid "View space to clip space transform."
+msgstr "ビュー空間からクリップ空間への変換。"
+
+#, fuzzy
+msgid "inout uvec4 **BONE_INDICES**"
+msgstr "\\ inout vec4 **CUSTOM**"
+
+#, fuzzy
+msgid "inout vec4 **BONE_WEIGHTS**"
+msgstr "\\ inout vec4 **LIGHT**"
+
+#, fuzzy
+msgid "in vec4 **CUSTOM0**"
+msgstr "\\ inout vec4 **CUSTOM**"
+
+#, fuzzy
+msgid "in vec4 **CUSTOM1**"
+msgstr "\\ inout vec4 **CUSTOM**"
+
+#, fuzzy
+msgid "in vec4 **CUSTOM2**"
+msgstr "\\ inout vec4 **CUSTOM**"
+
+#, fuzzy
+msgid "in vec4 **CUSTOM3**"
+msgstr "\\ inout vec4 **CUSTOM**"
 
 msgid ""
-"``MODELVIEW_MATRIX`` combines both the ``WORLD_MATRIX`` and "
-"``INV_CAMERA_MATRIX`` and is better suited when floating point issues may "
-"arise. For example, if the object is very far away from the world origin, "
-"you may run into floating point issues when using the seperated "
-"``WORLD_MATRIX`` and ``INV_CAMERA_MATRIX``."
+"``MODELVIEW_MATRIX`` combines both the ``MODEL_MATRIX`` and ``VIEW_MATRIX`` "
+"and is better suited when floating point issues may arise. For example, if "
+"the object is very far away from the world origin, you may run into floating "
+"point issues when using the separated ``MODEL_MATRIX`` and ``VIEW_MATRIX``."
 msgstr ""
 
 msgid "Fragment built-ins"
@@ -515,77 +654,27 @@ msgid "in vec4 **FRAGCOORD**"
 msgstr "\\ in vec4 **FRAGCOORD**"
 
 msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies  position in "
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
 "画面空間のピクセル中心の座標。\\ ``xy`` はウィンドウ内の位置を指定し、\\ "
-"``z`` は \\ ``DEPTH`` を使用しない場合のフラグメントの深さを指定します。原点"
-"は左下です。"
-
-msgid "in mat4 **WORLD_MATRIX**"
-msgstr "\\ in mat4 **WORLD_MATRIX**"
-
-msgid "in mat4 **PROJECTION_MATRIX**"
-msgstr "\\ in mat4 **PROJECTION_MATRIX**"
-
-msgid "in mat4 **INV_PROJECTION_MATRIX**"
-msgstr "\\ in mat4 **INV_PROJECTION_MATRIX**"
-
-#, fuzzy
-msgid "Node world space position."
-msgstr "モデル空間からワールド空間への変換。"
-
-#, fuzzy
-msgid "Node view space position."
-msgstr "アニメーションパネルの位置"
-
-#, fuzzy
-msgid "Camera world space position."
-msgstr "アニメーションパネルの位置"
-
-msgid "Camera world space direction."
-msgstr ""
-
-msgid "in vec3 **VERTEX**"
-msgstr "\\ in vec3 **VERTEX**"
-
-msgid "Vertex that comes from vertex function (default, in view space)."
-msgstr "頂点関数からの頂点(デフォルト、ビュー空間内)。"
-
-msgid "in vec3 **VIEW**"
-msgstr "\\ in vec3 **VIEW**"
-
-msgid "Vector from camera to fragment position (in view space)."
-msgstr "カメラからフラグメント位置へのベクトル(ビュー空間内)。"
+"``z`` は ``DEPTH`` を使用しない場合のフラグメントの深さを指定します。原点は左"
+"下です。"
 
 msgid "in bool **FRONT_FACING**"
 msgstr "\\ in bool **FRONT_FACING**"
 
-msgid "``true`` if current face is front face."
+#, fuzzy
+msgid "``true`` if current face if front face."
 msgstr "現在の面が前面(面の法線がこちらを向いている)の場合は ``true``。"
 
-msgid "Normal that comes from vertex function (default, in view space)."
-msgstr "頂点関数からやって来る法線(デフォルト、ビュース空間内)。"
+msgid "in vec3 **VIEW**"
+msgstr "\\ in vec3 **VIEW**"
 
-msgid "Tangent that comes from vertex function."
-msgstr "頂点関数からやって来る接線。"
-
-msgid "Binormal that comes from vertex function."
-msgstr "頂点関数からやって来る従法線。"
-
-msgid "out vec3 **NORMALMAP**"
-msgstr "\\ out vec3 **NORMALMAP**"
-
-msgid "Set normal here if reading normal from a texture instead of NORMAL."
-msgstr ""
-"NORMALではなくテクスチャから法線を読み取る場合は、ここで法線を設定します。"
-
-msgid "out float **NORMALMAP_DEPTH**"
-msgstr "\\ out float **NORMALMAP_DEPTH**"
-
-msgid "Depth from variable above. Defaults to 1.0."
-msgstr "上記の変数からの深さ。デフォルトは1.0です。"
+#, fuzzy
+msgid "Normalized vector from fragment position to camera (in view space)."
+msgstr "カメラからフラグメント位置へのベクトル(ビュー空間内)。"
 
 msgid "in vec2 **UV**"
 msgstr "\\ in vec2 **UV**"
@@ -605,6 +694,97 @@ msgstr "\\ in vec4 **COLOR**"
 msgid "COLOR that comes from vertex function."
 msgstr "頂点関数からやって来るCOLOR。"
 
+msgid "in vec2 **POINT_COORD**"
+msgstr "\\ in vec2 **POINT_COORD**"
+
+msgid "Point Coordinate for drawing points with POINT_SIZE."
+msgstr "POINT_SIZEでポイントを描画するためのポイント座標。"
+
+#, fuzzy
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "\\ in mat4 **WORLD_MATRIX**"
+
+#, fuzzy
+msgid "in mat3 **MODEL_NORMAL_MATRIX**"
+msgstr "\\ in mat4 **CAMERA_MATRIX**"
+
+msgid "in mat4 **PROJECTION_MATRIX**"
+msgstr "\\ in mat4 **PROJECTION_MATRIX**"
+
+#, fuzzy
+msgid "Node position, in world space."
+msgstr "ピクセル座標でのマウスの位置。"
+
+#, fuzzy
+msgid "Node position, in view space."
+msgstr "ビュー空間内の法線ベクトル。"
+
+msgid "Camera position, in world space."
+msgstr ""
+
+#, fuzzy
+msgid "Camera direction, in world space."
+msgstr "ビュー空間内の法線ベクトル。"
+
+msgid "in vec3 **VERTEX**"
+msgstr "\\ in vec3 **VERTEX**"
+
+msgid "Vertex that comes from vertex function (default, in view space)."
+msgstr "頂点関数からの頂点(デフォルト、ビュー空間内)。"
+
+msgid "sampler2D **SCREEN_TEXTURE**"
+msgstr "\\ sampler2D **SCREEN_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
+msgstr ""
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "\\ in vec2 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for current pixel."
+msgstr "現在のピクセルのスクリーンUV座標。"
+
+msgid "sampler2D **DEPTH_TEXTURE**"
+msgstr "\\ sampler2D **DEPTH_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_depth_texture`` instead."
+msgstr ""
+
+msgid "out float **DEPTH**"
+msgstr "\\ out float **DEPTH**"
+
+msgid ""
+"Custom depth value (0..1). If ``DEPTH`` is being written to in any shader "
+"branch, then you are responsible for setting the ``DEPTH`` for **all** other "
+"branches. Otherwise, the graphics API will leave them uninitialized."
+msgstr ""
+
+msgid "Normal that comes from vertex function (default, in view space)."
+msgstr "頂点関数からやって来る法線(デフォルト、ビュース空間内)。"
+
+msgid "Tangent that comes from vertex function."
+msgstr "頂点関数からやって来る接線。"
+
+msgid "Binormal that comes from vertex function."
+msgstr "頂点関数からやって来る従法線。"
+
+#, fuzzy
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "\\ out vec3 **NORMALMAP**"
+
+msgid "Set normal here if reading normal from a texture instead of NORMAL."
+msgstr ""
+"NORMALではなくテクスチャから法線を読み取る場合は、ここで法線を設定します。"
+
+#, fuzzy
+msgid "out float **NORMAL_MAP_DEPTH**"
+msgstr "\\ out float **NORMALMAP_DEPTH**"
+
+msgid "Depth from variable above. Defaults to 1.0."
+msgstr "上記の変数からの深さ。デフォルトは1.0です。"
+
 msgid "out vec3 **ALBEDO**"
 msgstr "\\ out vec3 **ALBEDO**"
 
@@ -621,11 +801,24 @@ msgstr ""
 "アルファ(0..1); 書き込まれた場合、マテリアルはtransparentパイプラインに送られ"
 "ます。"
 
-msgid "out float **ALPHA_SCISSOR**"
+#, fuzzy
+msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
 msgstr "\\ out float **ALPHA_SCISSOR**"
 
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr "書き込まれた場合、一定量のアルファ以下の値は破棄されます。"
+
+#, fuzzy
+msgid "out float **ALPHA_HASH_SCALE**"
+msgstr "\\ out float **ALPHA**"
+
+#, fuzzy
+msgid "out float **ALPHA_ANTIALIASING_EDGE**"
+msgstr "\\ out float **ALPHA_SCISSOR**"
+
+#, fuzzy
+msgid "out vec2 **ALPHA_TEXTURE_COORDINATE**"
+msgstr "\\ inout vec4 **LIGHT_COLOR**"
 
 msgid "out float **METALLIC**"
 msgstr "\\ out float **METALLIC**"
@@ -696,21 +889,21 @@ msgstr ""
 "サブサーフェススキャッタリングの強度。使用すると、サブサーフェススキャッタリ"
 "ングがオブジェクトに適用されます。"
 
-msgid "out vec3 **TRANSMISSION**"
-msgstr "\\ out vec3 **TRANSMISSION**"
+#, fuzzy
+msgid "out vec4 **SSS_TRANSMITTANCE_COLOR**"
+msgstr "\\ out vec4 **SHADOW_COLOR**"
 
-msgid ""
-"Transmission mask (default 0,0,0). Allows light to pass through object. Only "
-"applied if used."
-msgstr ""
-"トランスミッションマスク(デフォルトは0,0,0)。光がオブジェクトを通過できるよう"
-"にします。使用する場合にのみ適用されます。"
+#, fuzzy
+msgid "out float **SSS_TRANSMITTANCE_DEPTH**"
+msgstr "\\ out float **SSS_STRENGTH**"
 
-msgid "out vec3 **EMISSION**"
-msgstr "\\ out vec3 **EMISSION**"
+#, fuzzy
+msgid "out float **SSS_TRANSMITTANCE_BOOST**"
+msgstr "\\ out float **SSS_STRENGTH**"
 
-msgid "Emission color (can go over 1,1,1 for HDR)."
-msgstr "発光色(HDRの場合は1,1,1を超えることができます)。"
+#, fuzzy
+msgid "inout vec3 **BACKLIGHT**"
+msgstr "\\ inout vec4 **LIGHT**"
 
 msgid "out float **AO**"
 msgstr "\\ out float **AO**"
@@ -724,46 +917,36 @@ msgstr "\\ out float **AO_LIGHT_AFFECT**"
 msgid "How much AO affects lights (0..1; default 0)."
 msgstr "ライトに影響するAOの量(0..1; デフォルトは0)。"
 
-msgid "sampler2D **SCREEN_TEXTURE**"
-msgstr "\\ sampler2D **SCREEN_TEXTURE**"
+msgid "out vec3 **EMISSION**"
+msgstr "\\ out vec3 **EMISSION**"
 
-msgid ""
-"Built-in Texture for reading from the screen. Mipmaps contain increasingly "
-"blurred copies."
-msgstr ""
-"画面から読み取るための組み込みのテクスチャ。ミップマップには、だんだんとぼや"
-"けて行くコピーが含まれます。"
+msgid "Emission color (can go over 1,1,1 for HDR)."
+msgstr "発光色(HDRの場合は1,1,1を超えることができます)。"
 
-msgid "sampler2D **DEPTH_TEXTURE**"
-msgstr "\\ sampler2D **DEPTH_TEXTURE**"
+#, fuzzy
+msgid "out vec4 **FOG**"
+msgstr "\\ inout vec4 **COLOR**"
 
-msgid ""
-"Built-in Texture for reading depth from the screen. Must convert to linear "
-"using INV_PROJECTION."
-msgstr ""
-"画面から深度を読み取るための組み込みテクスチャ。 INV_PROJECTIONを使用して線形"
-"に変換する必要があります。"
-
-msgid "out float **DEPTH**"
-msgstr "\\ out float **DEPTH**"
-
-msgid ""
-"Custom depth value (0..1). If ``DEPTH`` is being written to in any shader "
-"branch, then you are responsible for setting the ``DEPTH`` for **all** other "
-"branches. Otherwise, the graphics API will leave them uninitialized."
+msgid "If written to, blends final pixel color with FOG.rgb based on FOG.a."
 msgstr ""
 
-msgid "in vec2 **SCREEN_UV**"
-msgstr "\\ in vec2 **SCREEN_UV**"
+#, fuzzy
+msgid "out vec4 **RADIANCE**"
+msgstr "\\ out vec4 **POSITION**"
 
-msgid "Screen UV coordinate for current pixel."
-msgstr "現在のピクセルのスクリーンUV座標。"
+msgid ""
+"If written to, blends environment map radiance with RADIANCE.rgb based on "
+"RADIANCE.a."
+msgstr ""
 
-msgid "in vec2 **POINT_COORD**"
-msgstr "\\ in vec2 **POINT_COORD**"
+#, fuzzy
+msgid "out vec4 **IRRADIANCE**"
+msgstr "\\ out vec4 **POSITION**"
 
-msgid "Point Coordinate for drawing points with POINT_SIZE."
-msgstr "POINT_SIZEでポイントを描画するためのポイント座標。"
+msgid ""
+"If written to, blends environment map IRRADIANCE with IRRADIANCE.rgb based "
+"on IRRADIANCE.a."
+msgstr ""
 
 msgid ""
 "Shaders going through the transparent pipeline when ``ALPHA`` is written to "
@@ -816,29 +999,11 @@ msgstr ""
 "``DIFFUSE_LIGHT`` にライトの関与を追加します。"
 
 msgid ""
-"In GLES2, lights will always be added together even if you override "
-"``DIFFUSE_LIGHT`` using ``=``. This is due to lighting being computed in "
-"multiple passes (one for each light), unlike GLES3."
-msgstr ""
-
-msgid ""
 "The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
 "is enabled, or if **Rendering > Quality > Shading > Force Vertex Shading** "
 "is enabled in the Project Settings. (It's enabled by default on mobile "
 "platforms.)"
 msgstr ""
-
-msgid "Elapsed total time in seconds."
-msgstr "経過した合計時間(秒単位)。"
-
-msgid ""
-"Coordinate of pixel center in screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
-msgstr ""
-"画面空間のピクセル中心の座標。\\ ``xy`` はウィンドウ内の位置を指定し、\\ "
-"``z`` は ``DEPTH`` を使用しない場合のフラグメントの深さを指定します。原点は左"
-"下です。"
 
 msgid "in vec3 **NORMAL**"
 msgstr "\\ in vec3 **NORMAL**"
@@ -855,7 +1020,34 @@ msgstr "\\ in vec3 **LIGHT**"
 msgid "Light Vector, in view space."
 msgstr "ビュー空間内のライトベクトル。"
 
-msgid "in vec3 **ATTENUATION**"
+msgid "in vec3 **LIGHT_COLOR**"
+msgstr "\\ in vec3 **LIGHT_COLOR**"
+
+msgid ""
+"Color of light multiplied by ``energy * PI``. The ``PI`` multiplication is "
+"present because physically-based lighting models include a division by "
+"``PI``."
+msgstr ""
+
+#, fuzzy
+msgid "in float **SPECULAR_AMOUNT**"
+msgstr "\\ out float **SPECULAR**"
+
+msgid ""
+"2.0 * ``light_specular`` property for ``OmniLight3D`` and ``SpotLight3D``. "
+"1.0 for ``DirectionalLight3D``."
+msgstr ""
+
+#, fuzzy
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "\\ in bool **AT_LIGHT_PASS**"
+
+#, fuzzy
+msgid "``true`` if this pass is a ``DirectionalLight3D``."
+msgstr "ライトパスの場合はこれが ``true``。"
+
+#, fuzzy
+msgid "in float **ATTENUATION**"
 msgstr "\\ in vec3 **ATTENUATION**"
 
 msgid "Attenuation based on distance or shadow."
@@ -867,26 +1059,23 @@ msgstr "\\ in vec3 **ALBEDO**"
 msgid "Base albedo."
 msgstr "ベースアルベド。"
 
-msgid "in vec3 **LIGHT_COLOR**"
-msgstr "\\ in vec3 **LIGHT_COLOR**"
+#, fuzzy
+msgid "in vec3 **BACKLIGHT**"
+msgstr "\\ in vec3 **LIGHT**"
 
-msgid ""
-"Color of light multiplied by ``energy * PI``. The ``PI`` multiplication is "
-"present because physically-based lighting models include a division by "
-"``PI``."
-msgstr ""
+#, fuzzy
+msgid "in float **METALLIC**"
+msgstr "\\ out float **METALLIC**"
+
+#, fuzzy
+msgid "Metallic."
+msgstr "Metallic(メタリック)"
 
 msgid "in float **ROUGHNESS**"
 msgstr "\\ in float **ROUGHNESS**"
 
 msgid "Roughness."
 msgstr "粗さ。"
-
-msgid "in vec3 **TRANSMISSION**"
-msgstr "\\ in vec3 **TRANSMISSION**"
-
-msgid "Transmission mask from fragment function."
-msgstr "フラグメント関数からのトランスミッションマスク(チャンネルマスク)。"
 
 msgid "out vec3 **DIFFUSE_LIGHT**"
 msgstr "\\ out vec3 **DIFFUSE_LIGHT**"
@@ -899,6 +1088,15 @@ msgstr "\\ out vec3 **SPECULAR_LIGHT**"
 
 msgid "Specular light result."
 msgstr "スペキュラー光の結果。"
+
+msgid ""
+"Transparent materials also cannot cast shadows or appear in "
+"``hint_screen_texture`` and ``hint_depth_texture`` uniforms. This in turn "
+"prevents those materials from appearing in screen-space reflections or "
+"refraction. :ref:`SDFGI <doc_using_sdfgi>` sharp reflections are not visible "
+"on transparent materials (only rough reflections are visible on transparent "
+"materials)."
+msgstr ""
 
 msgid "Translation status"
 msgstr "翻訳ステータス"

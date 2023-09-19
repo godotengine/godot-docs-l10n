@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,13 +61,12 @@ msgstr ""
 msgid "How does it work?"
 msgstr "工作原理是怎样的？"
 
+#, fuzzy
 msgid ""
 "Every input event is originated from the user/player (though it's possible "
 "to generate an InputEvent and feed them back to the engine, which is useful "
-"for gestures). The OS object for each platform will read events from the "
-"device, then feed them to MainLoop. As :ref:`SceneTree <class_SceneTree>` is "
-"the default MainLoop implementation, events are fed to it. Godot provides a "
-"function to get the current SceneTree object : **get_tree()**."
+"for gestures). The DisplayServer for each platform will read events from the "
+"operating system, then feed them to the root :ref:`Window <class_Window>`."
 msgstr ""
 "每个输入事件都来源于用户/角色（尽管可以生成一个 InputEvent 并将其反馈给引擎，"
 "这在手势操作中非常有用）。每个平台的操作对象都将从设备读取事件，然后将它们发"
@@ -75,25 +74,35 @@ msgstr ""
 "现，所以事件会被提交给它。Godot 提供了一个获取当前 SceneTree 对象的函数：\\ "
 "**get_tree()**\\ 。"
 
+#, fuzzy
 msgid ""
-"But SceneTree does not know what to do with the event, so it will give it to "
-"the viewports, starting by the \"root\" :ref:`Viewport <class_Viewport>` "
-"(the first node of the scene tree). Viewport does quite a lot of stuff with "
+"The window's :ref:`Viewport <class_Viewport>` does quite a lot of stuff with "
 "the received input, in order:"
-msgstr ""
-"但是 SceneTree 不知道如何处理这个事件，所以 SceneTree 把它交给视口，"
-"从“根”\\ :ref:`Viewport <class_Viewport>`\\ （场景树的第一个节点）开始查找。"
-"Viewport 会对接收到的输入做很多事情，依次为:"
+msgstr ":ref:`Viewport <class_Viewport>` 有多种使用情况, 包括:"
 
+msgid ""
+"If the Viewport is embedding Windows, the Viewport tries to interpret the "
+"event in its capability as a Window-Manager (e.g. for resizing or moving "
+"Windows)."
+msgstr ""
+
+msgid ""
+"Next if an embedded Window is focused, the event is sent to that Window and "
+"processed in the Windows Viewport and afterwards treated as handled. If no "
+"embedded Window is focused, the event is sent to the nodes of the current "
+"viewport in the following order."
+msgstr ""
+
+#, fuzzy
 msgid ""
 "First of all, the standard :ref:`Node._input() <class_Node_method__input>` "
 "function will be called in any node that overrides it (and hasn't disabled "
 "input processing with :ref:`Node.set_process_input() "
 "<class_Node_method_set_process_input>`). If any function consumes the event, "
-"it can call :ref:`SceneTree.set_input_as_handled() "
-"<class_SceneTree_method_set_input_as_handled>`, and the event will not "
-"spread any more. This ensures that you can filter all events of interest, "
-"even before the GUI. For gameplay input, :ref:`Node._unhandled_input() "
+"it can call :ref:`Viewport.set_input_as_handled() "
+"<class_Viewport_method_set_input_as_handled>`, and the event will not spread "
+"any more. This ensures that you can filter all events of interest, even "
+"before the GUI. For gameplay input, :ref:`Node._unhandled_input() "
 "<class_Node_method__unhandled_input>` is generally a better fit, because it "
 "allows the GUI to intercept the events."
 msgstr ""
@@ -130,15 +139,19 @@ msgstr ""
 "<class_Control_method__gui_input>` 回调接收鼠标事件的通知，以及是否进一步传播"
 "这些事件。"
 
+#, fuzzy
 msgid ""
-"If so far no one consumed the event, the unhandled input callback will be "
-"called if overridden (and not disabled with :ref:`Node."
-"set_process_unhandled_input() "
-"<class_Node_method_set_process_unhandled_input>`). If any function consumes "
-"the event, it can call :ref:`SceneTree.set_input_as_handled() "
-"<class_SceneTree_method_set_input_as_handled>`, and the event will not "
-"spread any more. The unhandled input callback is ideal for full-screen "
-"gameplay events, so they are not received when a GUI is active."
+"If so far no one consumed the event, the :ref:`Node._shortcut_input() "
+"<class_Node_method__shortcut_input>` callback will be called if overridden "
+"(and not disabled with :ref:`Node.set_process_shortcut_input() "
+"<class_Node_method_set_process_shortcut_input>`). This happens only for :ref:"
+"`InputEventKey <class_InputEventKey>`, :ref:`InputEventShortcut "
+"<class_InputEventShortcut>` and :ref:`InputEventJoypadButton "
+"<class_InputEventJoypadButton>`. If any function consumes the event, it can "
+"call :ref:`Viewport.set_input_as_handled() "
+"<class_Viewport_method_set_input_as_handled>`, and the event will not spread "
+"any more. The shortcut input callback is ideal for treating events that are "
+"intended as shortcuts."
 msgstr ""
 "如果到目前为止没有函数消耗该事件，则在被覆盖时将调用未处理回调（并且未通过 :"
 "ref:`Node."
@@ -148,17 +161,61 @@ msgstr ""
 "经处理了该事件，它就将不再传播。未处理的输入回调是全屏游戏事件的理想选择，因"
 "为当 GUI 处于激活状态时不会收到它们。"
 
+#, fuzzy
 msgid ""
-"If no one wanted the event so far, and a :ref:`Camera <class_Camera>` is "
-"assigned to the Viewport with :ref:`Object Picking "
-"<class_viewport_property_physics_object_picking>` turned on, a ray to the "
-"physics world (in the ray direction from the click) will be cast. (For the "
-"root viewport, this can also be enabled in :ref:`Project Settings "
-"<class_ProjectSettings_property_physics/common/enable_object_picking>`) If "
-"this ray hits an object, it will call the :ref:`CollisionObject."
-"_input_event() <class_CollisionObject_method__input_event>` function in the "
-"relevant physics object (bodies receive this callback by default, but areas "
-"do not. This can be configured through :ref:`Area <class_Area>` properties)."
+"If so far no one consumed the event, the :ref:`Node._unhandled_key_input() "
+"<class_Node_method__unhandled_key_input>` callback will be called if "
+"overridden (and not disabled with :ref:`Node."
+"set_process_unhandled_key_input() "
+"<class_Node_method_set_process_unhandled_key_input>`). This happens only if "
+"the event is a :ref:`InputEventKey <class_InputEventKey>`. If any function "
+"consumes the event, it can call :ref:`Viewport.set_input_as_handled() "
+"<class_Viewport_method_set_input_as_handled>`, and the event will not spread "
+"any more. The unhandled key input callback is ideal for key events."
+msgstr ""
+"如果到目前为止没有函数消耗该事件，则在被覆盖时将调用未处理回调（并且未通过 :"
+"ref:`Node."
+"set_process_unhandled_input()<class_Node_method_set_process_unhandled_input>` "
+"禁用）。如果任何函数消耗了该事件，它可以调用 :ref:`SceneTree."
+"set_input_as_handled()<class_SceneTree_method_set_input_as_handled>` 来设置已"
+"经处理了该事件，它就将不再传播。未处理的输入回调是全屏游戏事件的理想选择，因"
+"为当 GUI 处于激活状态时不会收到它们。"
+
+#, fuzzy
+msgid ""
+"If so far no one consumed the event, the :ref:`Node._unhandled_input() "
+"<class_Node_method__unhandled_input>` callback will be called if overridden "
+"(and not disabled with :ref:`Node.set_process_unhandled_input() "
+"<class_Node_method_set_process_unhandled_input>`). If any function consumes "
+"the event, it can call :ref:`Viewport.set_input_as_handled() "
+"<class_Viewport_method_set_input_as_handled>`, and the event will not spread "
+"any more. The unhandled input callback is ideal for full-screen gameplay "
+"events, so they are not received when a GUI is active."
+msgstr ""
+"如果到目前为止没有函数消耗该事件，则在被覆盖时将调用未处理回调（并且未通过 :"
+"ref:`Node."
+"set_process_unhandled_input()<class_Node_method_set_process_unhandled_input>` "
+"禁用）。如果任何函数消耗了该事件，它可以调用 :ref:`SceneTree."
+"set_input_as_handled()<class_SceneTree_method_set_input_as_handled>` 来设置已"
+"经处理了该事件，它就将不再传播。未处理的输入回调是全屏游戏事件的理想选择，因"
+"为当 GUI 处于激活状态时不会收到它们。"
+
+#, fuzzy
+msgid ""
+"If no one wanted the event so far, and :ref:`Object Picking "
+"<class_viewport_property_physics_object_picking>` is turned on, the event is "
+"used for object picking. For the root viewport, this can also be enabled in :"
+"ref:`Project Settings <class_ProjectSettings_property_physics/common/"
+"enable_object_picking>`. In the case of a 3D scene if a :ref:`Camera3D "
+"<class_Camera3D>` is assigned to the Viewport, a ray to the physics world "
+"(in the ray direction from the click) will be cast. If this ray hits an "
+"object, it will call the :ref:`CollisionObject3D._input_event() "
+"<class_CollisionObject3D_method__input_event>` function in the relevant "
+"physics object (bodies receive this callback by default, but areas do not. "
+"This can be configured through :ref:`Area3D <class_Area3D>` properties). In "
+"the case of a 2D scene, conceptually the same happens with :ref:"
+"`CollisionObject2D._input_event() "
+"<class_CollisionObject2D_method__input_event>`."
 msgstr ""
 "如果到目前为止没有人想要这个事件，并且 Viewport 中分配的 :ref:`Camera "
 "<class_Camera>` 启用了\\ :ref:`对象拾取 "
@@ -170,19 +227,39 @@ msgstr ""
 "函数（物理实体默认接受这个回调，区域则不会。可以使用 :ref:`Area "
 "<class_Area>` 的属性进行设置）。"
 
+#, fuzzy
 msgid ""
-"Finally, if the event was unhandled, it will be passed to the next Viewport "
-"in the tree, otherwise it will be ignored."
-msgstr ""
-"最后，如果事件未被处理，它将被传递给树中的下一个 Viewport，否则将被忽略。"
-
-msgid ""
-"When sending events to all listening nodes within a scene, the viewport will "
-"do so in a reverse depth-first order: Starting with the node at the bottom "
-"of the scene tree, and ending at the root node:"
+"When sending events to its child and descendant nodes, the viewport will do "
+"so, as depicted in the following graphic, in a reverse depth-first order, "
+"starting with the node at the bottom of the scene tree, and ending at the "
+"root node. Excluded from this process are Windows and SubViewports."
 msgstr ""
 "将事件发送到场景中的所有侦听节点时, 视口将以反向深度优先顺序执行: 从场景树底"
 "部的节点开始, 到根节点结束:"
+
+#, fuzzy
+msgid ""
+"This order doesn't apply to :ref:`Control._gui_input() "
+"<class_Control_method__gui_input>`, which uses a different method based on "
+"event location or focused Control."
+msgstr ""
+"这个函数 :ref:`Control._gui_input() <class_Control_method__gui_input>` . 只需"
+"在你的控件中重写它. 不需要设置处理."
+
+msgid ""
+"Since Viewports don't send events to other :ref:`SubViewports "
+"<class_SubViewport>`, one of the following methods has to be used:"
+msgstr ""
+
+msgid ""
+"Use a :ref:`SubViewportContainer <class_SubViewportContainer>`, which "
+"automatically sends events to its child :ref:`SubViewports "
+"<class_SubViewport>` after :ref:`Node._input() <class_Node_method__input>` "
+"or :ref:`Control._gui_input() <class_Control_method__gui_input>`."
+msgstr ""
+
+msgid "Implement event propagation based on the individual requirements."
+msgstr ""
 
 msgid ""
 "GUI events also travel up the scene tree but, since these events target "
@@ -219,17 +296,11 @@ msgstr "InputEvent有几种专门的类型, 如下表所述:"
 msgid "Event"
 msgstr "事件"
 
-msgid "Type Index"
-msgstr "类型索引"
-
 msgid "Description"
 msgstr "描述"
 
 msgid ":ref:`InputEvent <class_InputEvent>`"
 msgstr ":ref:`InputEvent <class_InputEvent>`"
-
-msgid "NONE"
-msgstr "NONE"
 
 msgid "Empty Input Event."
 msgstr "空输入事件."
@@ -237,17 +308,12 @@ msgstr "空输入事件."
 msgid ":ref:`InputEventKey <class_InputEventKey>`"
 msgstr ":ref:`InputEventKey <class_InputEventKey>`"
 
-msgid "KEY"
-msgstr "键"
-
-msgid "Contains a scancode and Unicode value, as well as modifiers."
+#, fuzzy
+msgid "Contains a keycode and Unicode value, as well as modifiers."
 msgstr "包含一个键盘扫描码和Unicode值, 以及修饰键."
 
 msgid ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
 msgstr ":ref:`InputEventMouseButton <class_InputEventMouseButton>`"
-
-msgid "MOUSE_BUTTON"
-msgstr "MOUSE_BUTTON"
 
 msgid "Contains click information, such as button, modifiers, etc."
 msgstr "包含点击信息, 例如按钮, 修饰键等."
@@ -255,18 +321,14 @@ msgstr "包含点击信息, 例如按钮, 修饰键等."
 msgid ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 msgstr ":ref:`InputEventMouseMotion <class_InputEventMouseMotion>`"
 
-msgid "MOUSE_MOTION"
-msgstr "MOUSE_MOTION"
-
+#, fuzzy
 msgid ""
-"Contains motion information, such as relative, absolute positions and speed."
+"Contains motion information, such as relative and absolute positions and "
+"speed."
 msgstr "包含运动信息, 例如相对位置, 绝对位置和速度."
 
 msgid ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
 msgstr ":ref:`InputEventJoypadMotion <class_InputEventJoypadMotion>`"
-
-msgid "JOYSTICK_MOTION"
-msgstr "JOYSTICK_MOTION"
 
 msgid "Contains Joystick/Joypad analog axis information."
 msgstr "包含操纵杆/ Joypad模拟轴信息."
@@ -274,17 +336,11 @@ msgstr "包含操纵杆/ Joypad模拟轴信息."
 msgid ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 msgstr ":ref:`InputEventJoypadButton <class_InputEventJoypadButton>`"
 
-msgid "JOYSTICK_BUTTON"
-msgstr "JOYSTICK_BUTTON"
-
 msgid "Contains Joystick/Joypad button information."
 msgstr "包含操纵杆/ Joypad按钮信息."
 
 msgid ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
 msgstr ":ref:`InputEventScreenTouch <class_InputEventScreenTouch>`"
-
-msgid "SCREEN_TOUCH"
-msgstr "SCREEN_TOUCH"
 
 msgid ""
 "Contains multi-touch press/release information. (only available on mobile "
@@ -294,18 +350,44 @@ msgstr "包含多点触控按下/释放信息. (仅适用于移动设备)"
 msgid ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 msgstr ":ref:`InputEventScreenDrag <class_InputEventScreenDrag>`"
 
-msgid "SCREEN_DRAG"
-msgstr "SCREEN_DRAG"
-
 msgid ""
 "Contains multi-touch drag information. (only available on mobile devices)"
 msgstr "包含多点触控拖动信息. (仅适用于移动设备)"
 
+#, fuzzy
+msgid ":ref:`InputEventMagnifyGesture <class_InputEventMagnifyGesture>`"
+msgstr ":ref:`InputEvent <class_InputEvent>`"
+
+#, fuzzy
+msgid "Contains a position, a factor as well as modifiers."
+msgstr "包含一个键盘扫描码和Unicode值, 以及修饰键."
+
+#, fuzzy
+msgid ":ref:`InputEventPanGesture <class_InputEventPanGesture>`"
+msgstr ":ref:`InputEvent <class_InputEvent>`"
+
+#, fuzzy
+msgid "Contains a position, a delta as well as modifiers."
+msgstr "包含一个键盘扫描码和Unicode值, 以及修饰键."
+
+#, fuzzy
+msgid ":ref:`InputEventMIDI <class_InputEventMIDI>`"
+msgstr ":ref:`InputEvent <class_InputEvent>`"
+
+#, fuzzy
+msgid "Contains MIDI-related information."
+msgstr "包含操纵杆/ Joypad按钮信息."
+
+#, fuzzy
+msgid ":ref:`InputEventShortcut <class_InputEventShortcut>`"
+msgstr ":ref:`InputEvent <class_InputEvent>`"
+
+#, fuzzy
+msgid "Contains a shortcut."
+msgstr "容器布局"
+
 msgid ":ref:`InputEventAction <class_InputEventAction>`"
 msgstr ":ref:`InputEventAction <class_InputEventAction>`"
-
-msgid "SCREEN_ACTION"
-msgstr "SCREEN_ACTION"
 
 msgid ""
 "Contains a generic action. These events are often generated by the "
@@ -316,12 +398,16 @@ msgid "Actions"
 msgstr "动作"
 
 msgid ""
-"An InputEvent may or may not represent a pre-defined action. Actions are "
-"useful because they abstract the input device when programming the game "
-"logic. This allows for:"
+"Actions are a grouping of zero or more InputEvents into a commonly "
+"understood title (for example, the default \"ui_left\" action grouping both "
+"joypad-left input and a keyboard's left arrow key). They are not required to "
+"represent an InputEvent but are useful because they abstract various inputs "
+"when programming the game logic."
 msgstr ""
-"InputEvent可能代表也可能不代表预定义的动作. 动作很有用, 因为它们在编写游戏逻"
-"辑时抽象输入设备. 这允许:"
+
+#, fuzzy
+msgid "This allows for:"
+msgstr "可以用来实现许多功能："
 
 msgid ""
 "The same code to work on different devices with different inputs (e.g., "
@@ -333,8 +419,14 @@ msgstr ""
 msgid "Input to be reconfigured at run-time."
 msgstr "输入要在运行时重新配置."
 
+#, fuzzy
+msgid "Actions to be triggered programmatically at run-time."
+msgstr "输入要在运行时重新配置."
+
+#, fuzzy
 msgid ""
-"Actions can be created from the Project Settings menu in the Actions tab."
+"Actions can be created from the Project Settings menu in the **Input Map** "
+"tab and assigned input events."
 msgstr "动作可以在“项目设置”菜单的“动作”选项卡中创建。"
 
 msgid ""

@@ -1,0 +1,204 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Custom resource format loaders"
+msgstr "カスタムリソース形式のローダー"
+
+msgid "Introduction"
+msgstr "はじめに"
+
+msgid ""
+"ResourceFormatLoader is a factory interface for loading file assets. "
+"Resources are primary containers. When load is called on the same file path "
+"again, the previous loaded Resource will be referenced. Naturally, loaded "
+"resources must be stateless."
+msgstr ""
+"ResourceFormatLoaderは、ファイルアセットを読み込むファクトリインターフェイス"
+"です。リソースはプライマリコンテナです。同じファイル パスで再度読み込みが呼び"
+"出されると、以前に読み込まれたリソースが参照されます。当然のことながら、読み"
+"込まれたリソースはステートレスである必要があります。"
+
+#, fuzzy
+msgid ""
+"This guide assumes the reader knows how to create C++ modules and Godot data "
+"types. If not, refer to this guide: :ref:`doc_custom_modules_in_cpp`"
+msgstr ""
+"このガイドは、読者がC++モジュールとGodotデータ型を作成する方法を知っているこ"
+"とを前提としています。そうでない場合は、このガイド :ref:"
+"`doc_custom_modules_in_c++` を参照してください。"
+
+msgid "References"
+msgstr "参照"
+
+msgid ":ref:`ResourceLoader<class_resourceloader>`"
+msgstr "\\ :ref:`ResourceLoader<class_resourceloader>`"
+
+msgid ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
+msgstr ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
+
+msgid "What for?"
+msgstr "何のために？"
+
+msgid "Adding new support for many file formats"
+msgstr "多くのファイル形式に対する新しいサポートの追加"
+
+msgid "Audio formats"
+msgstr "オーディオフォーマット"
+
+msgid "Video formats"
+msgstr "ビデオフォーマット"
+
+msgid "Machine learning models"
+msgstr "機械学習モデル"
+
+msgid "What not?"
+msgstr "だめなんですか？"
+
+msgid "Raster images"
+msgstr "ラスター画像"
+
+msgid "ImageFormatLoader should be used to load images."
+msgstr "ImageFormatLoaderを使用してイメージを読み込む必要があります。"
+
+msgid ""
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
+msgstr ""
+"\\ `core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
+
+msgid "Creating a ResourceFormatLoader"
+msgstr "ResourceFormatLoaderの作成"
+
+msgid ""
+"Each file format consist of a data container and a ``ResourceFormatLoader``."
+msgstr ""
+"各ファイル形式は、データコンテナと ``ResourceFormatLoader`` で構成されていま"
+"す。"
+
+#, fuzzy
+msgid ""
+"ResourceFormatLoaders are classes which return all the necessary metadata "
+"for supporting new extensions in Godot. The class must return the format "
+"name and the extension string."
+msgstr ""
+"ResourceFormatLoadersは通常、Godotで新しい拡張機能をサポートするために必要な"
+"すべてのメタデータを返す単純なクラスです。クラスは、書式名と拡張文字列を返す"
+"必要があります。"
+
+msgid ""
+"In addition, ResourceFormatLoaders must convert file paths into resources "
+"with the ``load`` function. To load a resource, ``load`` must read and "
+"handle data serialization."
+msgstr ""
+"さらに、ResourceFormatLoadersは ``load`` 機能を持つファイルパスをリソースに変"
+"換する必要があります。リソースを読み込むには、 ``load`` はデータのシリアル化"
+"を読み取り、処理する必要があります。"
+
+msgid "Creating a ResourceFormatSaver"
+msgstr "ResourceFormatSaverの作成"
+
+msgid ""
+"If you'd like to be able to edit and save a resource, you can implement a "
+"``ResourceFormatSaver``:"
+msgstr ""
+"リソースを編集して保存できるようにしたい場合は、\\ ``ResourceFormatSaver`` を"
+"実装できます:"
+
+msgid "Creating custom data types"
+msgstr "カスタムデータ型の作成"
+
+msgid ""
+"Godot may not have a proper substitute within its :ref:`doc_core_types` or "
+"managed resources. Godot needs a new registered data type to understand "
+"additional binary formats such as machine learning models."
+msgstr ""
+"Godotの\\ :ref:`doc_core_types`\\ または管理対象リソース内に適切な代替物がな"
+"い場合があります。 Godotには、機械学習モデルなどの追加のバイナリ形式を理解す"
+"るために、新しい登録データ型が必要です。"
+
+msgid "Here is an example of creating a custom datatype:"
+msgstr "カスタムデータ型を作成する例を次に示します:"
+
+msgid "Considerations"
+msgstr "考慮事項"
+
+msgid ""
+"Some libraries may not define certain common routines such as IO handling. "
+"Therefore, Godot call translations are required."
+msgstr ""
+"一部のライブラリは、IO処理などの特定の一般的なルーチンを定義しない場合があり"
+"ます。したがって、Godot呼び出しの翻訳が必要です。"
+
+msgid ""
+"For example, here is the code for translating ``FileAccess`` calls into "
+"``std::istream``."
+msgstr ""
+"たとえば、 ``FileAccess`` 呼び出しを ``std::istream`` に変換するためのコード"
+"を次に示します。"
+
+#, fuzzy
+msgid "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+msgstr "\\ `istream <http://www.cplusplus.com/reference/istream/istream/>`_"
+
+#, fuzzy
+msgid ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+msgstr ""
+"\\ `streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+
+#, fuzzy
+msgid ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/os/file_access.h>`_"
+msgstr ""
+"\\ `core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/"
+"core/os/file_access.h>`_"
+
+msgid "Registering the new file format"
+msgstr "新しいファイル形式の登録"
+
+msgid ""
+"Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
+"The handler selects the proper loader automatically when ``load`` is called."
+msgstr ""
+"Godotは ``ResourceFormatLoader`` を ``ResourceLoader`` ハンドラで登録します。"
+"ハンドラは ``load`` が呼び出されると、適切なローダーを自動的に選択します。"
+
+msgid "Loading it on GDScript"
+msgstr "GDScriptに読み込む"
+
+msgid ""
+"Save a file called ``demo.json`` with the following contents and place it in "
+"the project's root folder:"
+msgstr ""
+"``demo.json`` というファイルを次の内容で保存し、プロジェクトのルートフォルダ"
+"に配置します:"
+
+msgid "Then attach the following script to any node::"
+msgstr "次に、次のスクリプトを任意のノードにアタッチします:"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

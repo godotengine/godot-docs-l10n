@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,6 +74,11 @@ msgid ""
 msgstr ""
 "当插件处于活动状态时，您可以使用 ``Engine.get_singleton()`` 访问插件： ::"
 
+msgid ""
+"The plugin's files have to be in the ``res://ios/plugins/`` directory or a "
+"subdirectory, otherwise the Godot editor will not automatically detect them."
+msgstr ""
+
 msgid "Creating an iOS plugin"
 msgstr "创建iOS插件"
 
@@ -105,9 +110,9 @@ msgstr ""
 "下面是开始开发插件的步骤. 我们建议使用 `Xcode <https://developer.apple.com/"
 "develop/>`_ 作为你的开发环境."
 
+#, fuzzy
 msgid ""
-"The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_ "
-"Godot iOS plugins."
+"The `Godot iOS Plugins <https://github.com/godotengine/godot-ios-plugins>`_."
 msgstr "`Godot iOS 插件 <https://github.com/godotengine/godot-ios-plugins>`_ ."
 
 msgid ""
@@ -307,8 +312,9 @@ msgid ""
 msgstr ""
 "如果没有使用类型，例如: ``KeyName=\"KeyValue\"`` ，将使用 ``string`` 类型。"
 
+#, fuzzy
 msgid ""
-"If ``raw`` type is used value for coresponding key will be stored in ``Info."
+"If ``raw`` type is used value for corresponding key will be stored in ``Info."
 "plist`` as is."
 msgstr "如果使用 ``raw`` 类型，对应键的值将按原样存储在 ``Info.plist`` 中。"
 

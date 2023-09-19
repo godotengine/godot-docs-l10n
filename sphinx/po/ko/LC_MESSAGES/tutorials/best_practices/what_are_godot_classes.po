@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -104,11 +104,12 @@ msgstr ""
 ":ref:`Script <class_Script>`를 오브젝트에 붙이면 ``ClassDB`` 에 있는 메서드, "
 "속성(property) 및 시그널을 상속합니다."
 
+#, fuzzy
 msgid ""
 "Even scripts that don't use the ``extends`` keyword implicitly inherit from "
-"the engine's base :ref:`Reference <class_Reference>` class. As a result, you "
-"can instantiate scripts without the ``extends`` keyword from code. Since "
-"they extend ``Reference`` though, you cannot attach them to a :ref:`Node "
+"the engine's base :ref:`RefCounted <class_RefCounted>` class. As a result, "
+"you can instantiate scripts without the ``extends`` keyword from code. Since "
+"they extend ``RefCounted`` though, you cannot attach them to a :ref:`Node "
 "<class_Node>`."
 msgstr ""
 "``extends`` 키워드를 사용하지 않는 스크립트도 묵시적으로 엔진의 기본 :ref:"
@@ -131,10 +132,11 @@ msgstr ""
 "들의 집합입니다. 씬을 생성하는 것은 스크립트가 노드를 생성한 후 이를 "
 "``add_child()`` 를 사용해 자식으로 추가하는 것과 유사합니다."
 
+#, fuzzy
 msgid ""
 "We often pair a scene with a scripted root node that makes use of the "
-"scene's nodes. As such, the scene is often an extension of the script's "
-"declarative code."
+"scene's nodes. As such, the script extends the scene by adding behavior "
+"through imperative code."
 msgstr ""
 "종종 씬과 씬의 노드들을 사용하는 스크립트가 붙은 루트 노드를 짝지어 생각해볼 "
 "수 있는 경우가 있습니다. 이런 관점에서 씬은 스크립트의 코드를 상속하는 것처"
@@ -143,16 +145,20 @@ msgstr ""
 msgid "The content of a scene helps to define:"
 msgstr "씬의 구성물은 다음을 정의하는데 도움이 됩니다:"
 
-msgid "What nodes are available to the script"
+#, fuzzy
+msgid "What nodes are available to the script."
 msgstr "어떤 노드를 스크립트에서 사용할 수 있는가"
 
-msgid "How they are organized"
+#, fuzzy
+msgid "How they are organized."
 msgstr "어떻게 그들이 조직되어 있는지"
 
-msgid "How they are initialized"
+#, fuzzy
+msgid "How they are initialized."
 msgstr "어떻게 그들이 초기화되는지"
 
-msgid "What signal connections they have with each other"
+#, fuzzy
+msgid "What signal connections they have with each other."
 msgstr "서로 어떤 시그널 연결을 갖고 있는지"
 
 msgid ""

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,6 +36,11 @@ msgstr ""
 "导出Android的要求比编译Android的Godot要少. 下面的步骤详细介绍了设置Android "
 "SDK和引擎所需的内容."
 
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to "
+"Android. To use C# on Android, use Godot 3 instead."
+msgstr ""
+
 msgid "Install OpenJDK 11"
 msgstr "安装 OpenJDK 11"
 
@@ -50,9 +55,10 @@ msgstr "下载 Android SDK"
 msgid "Download and install the Android SDK."
 msgstr "下载并安装 Android SDK."
 
+#, fuzzy
 msgid ""
-"You can install it using `Android Studio version 4.1 or later <https://"
-"developer.android.com/studio/>`__."
+"You can install the Android SDK using `Android Studio version 4.1 or later "
+"<https://developer.android.com/studio/>`__."
 msgstr ""
 "你可以使用 `Android Studio 4.1或更高版本 <https://developer.android.com/"
 "studio/>`__ 进行安装."
@@ -74,10 +80,12 @@ msgstr ""
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
 msgstr "Android SDK Platform-Tools 30.0.5 或更高版本"
 
-msgid "Android SDK Build-Tools version 30.0.3"
+#, fuzzy
+msgid "Android SDK Build-Tools version 33.0.2"
 msgstr "Android SDK Build-Tools 版本 30.0.3"
 
-msgid "Android SDK Platform 31"
+#, fuzzy
+msgid "Android SDK Platform 33"
 msgstr "Android SDK Platform 31"
 
 msgid "Android SDK Command-line Tools (latest)"
@@ -89,9 +97,10 @@ msgstr "CMake 版本 3.10.2.4988404"
 msgid "NDK version r23c (23.2.8568313)"
 msgstr "NDK 版本 r23c（23.2.8568313）"
 
+#, fuzzy
 msgid ""
-"You can install it using the `command line tools <https://developer.android."
-"com/studio/#command-tools>`__."
+"Alternatively, you can install the Android SDK using the `command line tools "
+"<https://developer.android.com/studio/#command-tools>`__."
 msgstr ""
 "你可以使用\\ `命令行工具 <https://developer.android.com/studio/#command-"
 "tools>`__\\ 安装。"
@@ -141,6 +150,12 @@ msgstr ""
 "置，比如 ``%USERPROFILE%\\.android\\``\\ ，因为后续步骤会需要这个位置。\\ "
 "``keytool`` 用法的更多信息请查看\\ `这个 Q&A 文章 <https://godotengine.org/"
 "qa/21349/jdk-android-file-missing>`__\\ 。"
+
+msgid ""
+"It is important that the password is the same for the keystore and the key. "
+"This is a `known Android studio issue <https://developer.android.com/studio/"
+"known-issues#ki-key-keystore-warning>`__ that also affects Godot projects."
+msgstr ""
 
 msgid "Setting it up in Godot"
 msgstr "在 Godot 中进行设置"
@@ -313,14 +328,6 @@ msgid ""
 msgstr "**发布密码：**\\ 密钥密码。请注意，密钥库密码和密钥密码当前必须相同。"
 
 msgid ""
-"**Your export_presets.cfg file now contains sensitive information.** If you "
-"use a version control system, you should remove it from public repositories "
-"and add it to your ``.gitignore`` file or equivalent."
-msgstr ""
-"**您的 export_presets.cfg 文件现在包含有敏感信息。**\\ 如果使用版本控制系统，"
-"则应将其从公共仓库中删除，并将其添加到 ``.gitignore`` 文件或等效文件中。"
-
-msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr "在导出时，不要忘记取消勾选\\ **使用调试导出**\\ 。"
 
@@ -363,23 +370,68 @@ msgstr ""
 "您可以通过仅编译具有所需功能的Android导出模板来进一步优化大小. 有关更多信息, "
 "请参见 :ref:`doc_optimizing_for_size`."
 
-msgid "Troubleshooting rendering issues"
-msgstr "渲染故障排除"
+msgid "Environment variables"
+msgstr "环境变量"
 
 msgid ""
-"To improve out-of-the-box performance on mobile devices, Godot automatically "
-"uses low-end-friendly settings by default on both Android and iOS."
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
 msgstr ""
-"为了在移动设备上提升初始性能，Godot 在 Android 和 iOS 上默认会自动使用对低端"
-"设备友好的设置。"
 
-msgid ""
-"This can cause rendering issues that do not occur when running the project "
-"on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more "
-"information."
+#, fuzzy
+msgid "Android export environment variables"
+msgstr "环境变量"
+
+#, fuzzy
+msgid "Export option"
+msgstr "导出选项"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "环境变量"
+
+msgid "Encryption / Encryption Key"
 msgstr ""
-"这样可能造成在桌面平台上运行项目时不会发生的渲染问题。详情请参阅 :ref:"
-"`doc_mobile_rendering_limitations`\\ 。"
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
+
+msgid "Options / Keystore / Debug"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
+msgstr ""
+
+msgid "Options / Keystore / Debug User"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
+msgstr ""
+
+msgid "Options / Keystore / Debug Password"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
+msgstr ""
+
+msgid "Options / Keystore / Release"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
+msgstr ""
+
+msgid "Options / Keystore / Release User"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
+msgstr ""
+
+msgid "Options / Keystore / Release Password"
+msgstr ""
+
+msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
+msgstr ""
 
 msgid "Translation status"
 msgstr "翻译状态"

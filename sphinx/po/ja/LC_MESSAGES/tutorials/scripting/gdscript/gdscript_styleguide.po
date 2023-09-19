@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -233,6 +233,10 @@ msgstr "``&&`` の代わりに ``and`` を使用します。"
 msgid "Use ``or`` instead of ``||``."
 msgstr "``||`` の代わりに ``or`` を使用します。"
 
+#, fuzzy
+msgid "Use ``not`` instead of ``!``."
+msgstr "``||`` の代わりに ``or`` を使用します。"
+
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
@@ -292,14 +296,6 @@ msgid ""
 "Otherwise, this makes them less readable and harder to distinguish from "
 "integers at a glance."
 msgstr ""
-
-#, fuzzy
-msgid "**Good**::"
-msgstr "**良い例**:"
-
-#, fuzzy
-msgid "**Bad**::"
-msgstr "**悪い例**:"
 
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
@@ -427,31 +423,36 @@ msgstr ""
 msgid "Class declaration"
 msgstr "クラス宣言"
 
+#, fuzzy
 msgid ""
-"If the code is meant to run in the editor, place the ``tool`` keyword on the "
-"first line of the script."
+"If the code is meant to run in the editor, place the ``@tool`` annotation on "
+"the first line of the script."
 msgstr ""
 "コードがエディタで実行されることを意図している場合、スクリプトの最初の行に "
 "``tool`` キーワードを置きます。"
 
+#, fuzzy
 msgid ""
-"Follow with the `class_name` if necessary. You can turn a GDScript file into "
-"a global type in your project using this feature. For more information, see :"
-"ref:`doc_gdscript`."
+"Follow with the ``class_name`` if necessary. You can turn a GDScript file "
+"into a global type in your project using this feature. For more information, "
+"see :ref:`doc_gdscript`."
 msgstr ""
 "必要に応じて、\\ `class_name` を続けます。この機能を使用して、プロジェクト内"
 "でGDScriptファイルをグローバルタイプに変換できます。詳細については、\\ :ref:"
 "`doc_gdscript` を参照してください。"
 
-msgid "Then, add the `extends` keyword if the class extends a built-in type."
+#, fuzzy
+msgid "Then, add the ``extends`` keyword if the class extends a built-in type."
 msgstr ""
 "次に、クラスが組み込み型を拡張する場合は、\\ `extends` キーワードを追加しま"
 "す。"
 
+#, fuzzy
 msgid ""
-"Following that, you should have the class's optional docstring as comments. "
-"You can use that to explain the role of your class to your teammates, how it "
-"works, and how other developers should use it, for example."
+"Following that, you should have the class's optional :ref:`documentation "
+"comments <doc_gdscript_documentation_comments>`. You can use that to explain "
+"the role of your class to your teammates, how it works, and how other "
+"developers should use it, for example."
 msgstr ""
 "それに続いて、クラスに関する追加ドキュメントをコメントとして指定する必要があ"
 "ります。これを使用して、クラスの役割をチームメイトに説明したり、それがどのよ"
@@ -573,15 +574,21 @@ msgstr "関数の戻り値の定義をするには、``-> <type>``を使って�
 msgid "Inferred types"
 msgstr "コアタイプ"
 
-#, fuzzy
-msgid "In most cases you can let the compiler infer the type, using ``:=``:"
+msgid ""
+"In most cases you can let the compiler infer the type, using ``:=``. Prefer "
+"``:=`` when the type is written on the same line as the assignment, "
+"otherwise prefer writing the type explicitly."
 msgstr ""
-"コンパイラにタイプヒントを推測させる場合、コロンとイコールは一緒に書いて下さ"
-"い: ``:=``。"
 
 msgid ""
-"However, in a few cases when context is missing, the compiler falls back to "
-"the function's return type. For example, ``get_node()`` cannot infer a type "
+"Include the type hint when the type is ambiguous, and omit the type hint "
+"when it's redundant."
+msgstr ""
+
+msgid ""
+"In some cases, the type must be stated explicitly, otherwise the behavior "
+"will not be as expected because the compiler will only be able to use the "
+"function's return type. For example, ``get_node()`` cannot infer a type "
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""

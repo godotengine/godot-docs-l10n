@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,45 +20,51 @@ msgstr ""
 msgid "Import process"
 msgstr "匯入流程"
 
-msgid "Importing assets in Godot 3.0+"
+#, fuzzy
+msgid "Importing assets in Godot"
 msgstr "於 Godot 3.0+ 匯入素材"
 
 msgid ""
-"Previously, importing assets in Godot 2.x required manual maintenance of a "
-"separate directory with source assets. Without doing this, it was impossible "
-"to specify how to convert and change import flags for textures, audio files, "
-"scenes, etc."
+"To import assets in Godot, place your assets (image files, scenes, audio "
+"files, fonts, etc) directly in the project folder. There are 2 ways to "
+"achieve this:"
 msgstr ""
-"以前，在 Godot 2.x 版中匯入素材會需要手動管理保存原始素材的單獨目錄。若不這樣"
-"做，則無法指定如何轉換及修改紋理、音訊檔、場景的匯入旗標。"
+
+msgid ""
+"**For any file type:** Copy files manually with your operating system's file "
+"manager."
+msgstr ""
+
+msgid ""
+"**For file types that can be imported by Godot:** Drag-and-drop files from "
+"the operating system's file manager to the editor's FileSystem dock. This "
+"only works with *resource* file types (i.e. file types that Godot can "
+"import)."
+msgstr ""
+
+msgid ""
+"Godot will automatically import these files internally and keep the imported "
+"resources hidden in a ``res://.godot/imported/`` folder."
+msgstr ""
 
 #, fuzzy
 msgid ""
-"In Godot 3.0+, we use a more modern approach to importing: Simply drop your "
-"assets (image files, scenes, audio files, fonts, etc) directly in the "
-"project folder (copy them manually with your OS file explorer). Godot will "
-"automatically import these files internally and keep the imported resources "
-"hidden in a ``res://.import`` folder."
-msgstr ""
-"自 Godot 3.0+ 以來，我們使用了更現代的匯入方法：只需直接將素材 (圖片、場景、"
-"音訊檔、字體…等) 拖放至專案資料夾 (於作業系統的檔案總管手動複製)。Godot 會自"
-"動於內部匯入這些檔案， 並將匯入的資源保存在 res://.import 資料夾中。"
-
-msgid ""
-"This means that when trying to access imported assets through code you need "
+"This means that when trying to access imported assets through code, you need "
 "to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
 "automatically take into account where the internal files are saved. If you "
-"try and access an imported asset using the :ref:`File <class_File>` class it "
-"will work in the editor, but break in the exported project."
+"try and access an imported asset using the :ref:`FileAccess "
+"<class_FileAccess>` class, it will work in the editor, but **it will break "
+"in the exported project**."
 msgstr ""
 "這表示，要在程式碼中存取匯入的素材，就必須使用 :ref:"
 "`ResourceLoader<class_ResourceLoader>` ，因為 ResourceLoader 會自己處理要在內"
 "部將檔案存在哪裡。若使用 :ref:`File <class_File>` 來存取匯入的素材，則只能在"
 "編輯器中正常運作，而匯出的專案中則會出問題。"
 
+#, fuzzy
 msgid ""
-"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non "
-"imported files, only the :ref:`File <class_File>` class can."
+"However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non-"
+"imported files. Only the :ref:`FileAccess <class_FileAccess>` class can."
 msgstr ""
 "然而，:ref:`ResourceLoader<class_ResourceLoader>` 無法存取非匯入的檔案，只"
 "有 :ref:`File <class_File>` 可以存取。"
@@ -67,19 +73,26 @@ msgid "Changing import parameters"
 msgstr "更改匯入參數"
 
 msgid ""
-"To change the import parameters of an asset in Godot (again, keep in mind "
-"import parameters are only present in non-native Godot resource types) "
-"select the relevant resource in the filesystem dock:"
+"Import parameters are only present in *non-native* Godot resource types. "
+"This means Godot's own scene and resource file formats (``.tscn``, ``.scn``, "
+"``.tres``, ``.res``) don't have import options you can select in the Import "
+"dock."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"To change the import parameters of an asset in Godot, select the relevant "
+"resource in the FileSystem dock:"
 msgstr ""
 "若要在 Godot 中更改素材的匯入參數，於檔案系統 Dock 中選擇相應的資源即可 (但請"
 "記得只有非原生 Godot 資源類型有匯入參數)。："
 
 msgid ""
-"Then, after adjusting the parameters, press \"Reimport\". These parameters "
-"will only be used for this asset and on future reimports."
+"After adjusting the parameters, click **Reimport**. Be careful: if you "
+"select another file in the FileSystem dock before clicking **Reimport**, "
+"changes will be discarded. After clicking **Reimport**, the chosen "
+"parameters will only be used for this asset and on future reimports."
 msgstr ""
-"接著，調整參數後，按下 [重新匯入]。這些參數只對該素材或之後重新匯入時才有作"
-"用。"
 
 msgid ""
 "Changing the import parameters of several assets at the same time is also "
@@ -128,35 +141,47 @@ msgstr "產生的檔案"
 
 #, fuzzy
 msgid ""
-"Importing will add an extra ``<asset>.import`` file, containing the import "
-"configuration. Make sure to commit these to your version control system!"
+"Importing will add an extra ``<asset>.import`` file next to the source file, "
+"containing the import configuration."
 msgstr ""
 "匯入過程會產生一個額外的 <asset>.import 檔案，其中包含了匯入組態設定。請確認"
 "有在版本控制系統中簽入這些檔案！"
 
+msgid ""
+"**Make sure to commit these files to your version control system**, as these "
+"files contain important metadata."
+msgstr ""
+
 #, fuzzy
 msgid ""
-"Additionally, extra assets will be preset in the hidden ``res://.import`` "
-"folder:"
+"Additionally, extra assets will be present in the hidden ``res://.godot/"
+"imported/`` folder:"
 msgstr "另外，``res://.import`` 隱藏資料夾中也包含了額外的素材："
 
+#, fuzzy
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
-"this folder to the version control system is optional. It can shorten "
-"reimporting time when checking out on another computer, but it takes "
-"considerably more space and transfer time. Pick your poison!"
+"the ``.godot/`` folder to the version control system is not recommended. "
+"While committing this folder can shorten reimporting time when checking out "
+"on another computer, it requires considerably more space and bandwidth."
 msgstr ""
 "若刪除該資料夾中的檔案 (或整個資料夾)，則素材會被自動重新匯入。因此，不一定要"
 "將該資料夾簽入版本控制系統中。有該資料夾可加速在其他電腦上簽出專案後重新匯入"
 "的時間，但就需要更多空間與傳輸時間。可自行選擇！"
 
+msgid ""
+"The default version control metadata that can be generated on project "
+"creation will automatically ignore the ``.godot/`` folder."
+msgstr ""
+
 msgid "Changing import resource type"
 msgstr "更改匯入資源類型"
 
+#, fuzzy
 msgid ""
 "Some source assets can be imported as different types of resources. For "
-"this, select the relevant type of resource desired and press \"Reimport\":"
+"this, select the relevant type of resource desired then click **Reimport**:"
 msgstr ""
 "有些素材可以匯入為不同類型的資源。若要匯入為不同類型，選擇需要的資源類型並點"
 "擊 [重新匯入]："
@@ -164,29 +189,55 @@ msgstr ""
 msgid "Changing default import parameters"
 msgstr "更改預設匯入參數"
 
+#, fuzzy
 msgid ""
-"Different types of games might require different defaults. Changing the "
-"defaults per project can be achieved by using the \"Preset..\" Menu. Besides "
-"some resource types offering presets, the default setting can be saved and "
-"cleared too:"
+"Different types of projects might require different defaults. Changing the "
+"import options to a predefined set of options can be achieved by using the "
+"**Preset...** Menu. Besides some resource types offering presets, the "
+"default settings can be saved and cleared too:"
 msgstr ""
 "依據遊戲類型的不同可能需要不同預設值。可以使用 [預設設定...] 選單來設定各專案"
 "的預設值。除了某些預設提供的資源類型，也可以保存或清除預設設定："
 
-msgid "Simplicity is key!"
-msgstr "簡單是關鍵！"
-
 msgid ""
-"This is a very simple workflow which should take very little time to get "
-"used to. It also enforces a more correct way to deal with resources."
+"The default import parameters for a given resource type can be changed "
+"project-wide using the **Import Defaults** tab of the Project Settings "
+"dialog:"
+msgstr ""
+
+#, fuzzy
+msgid "Further reading"
+msgstr "多執行緒"
+
+#, fuzzy
+msgid ""
+"This workflow takes a little time to get used to, but it enforces a more "
+"correct way to deal with resources."
 msgstr ""
 "這個工作流程很簡短，要習慣應該不需要花上太多時間。此外，本工作流程也能強制以"
 "更正確的方式來處理資源。"
 
+#, fuzzy
 msgid ""
-"There are many types of assets available for import, so please continue "
-"reading to understand how to work with all of them!"
+"There are many types of assets available for import. Continue reading to "
+"understand how to work with all of them:"
 msgstr "也有許多可匯入的素材類型，請繼續閱讀以瞭解如何處理這些素材！"
+
+#, fuzzy
+msgid ":ref:`doc_importing_images`"
+msgstr ":ref:`doc_exporting`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_audio_samples`"
+msgstr ":ref:`doc_exporting`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_3d_scenes`"
+msgstr ":ref:`doc_exporting`"
+
+#, fuzzy
+msgid ":ref:`doc_importing_translations`"
+msgstr ":ref:`doc_exporting`"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

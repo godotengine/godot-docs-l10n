@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,11 +32,12 @@ msgstr ""
 "tutoriels. Nous espérons que cela encourage le développement d'outil auto-"
 "formatage."
 
+#, fuzzy
 msgid ""
 "Since the Godot shader language is close to C-style languages and GLSL, this "
 "guide is inspired by Godot's own GLSL formatting. You can view an example of "
 "a GLSL file in Godot's source code `here <https://github.com/godotengine/"
-"godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
+"godot/blob/master/drivers/gles3/shaders/copy.glsl>`__."
 msgstr ""
 "Comme le langage de shader Godot est proche des langages de type C et de "
 "GLSL, ce guide s'inspire du formatage GLSL propre à Godot. Vous pouvez voir "
@@ -274,6 +275,22 @@ msgid ""
 msgstr ""
 "Écrivez les constantes avec CONSTANT\\_CASE, c'est-à-dire en majuscules avec "
 "un trait de soulignement (\\_) pour séparer les mots :"
+
+#, fuzzy
+msgid "Preprocessor directives"
+msgstr "Définition Préprocesseur"
+
+msgid ""
+":ref:`doc_shader_preprocessor` directives should be written in "
+"CONSTANT__CASE. Directives should be written without any indentation before "
+"them, even if nested within a function."
+msgstr ""
+
+msgid ""
+"To preserve the natural flow of indentation when shader errors are printed "
+"to the console, extra indentation should **not** be added within ``#if``, "
+"``#ifdef`` or ``#ifndef`` blocks:"
+msgstr ""
 
 msgid "Code order"
 msgstr "Ordre du code"

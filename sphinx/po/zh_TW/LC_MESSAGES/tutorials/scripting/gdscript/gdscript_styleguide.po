@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -215,6 +215,10 @@ msgstr "使用 ``and`` 而不是 ``&&`` 。"
 msgid "Use ``or`` instead of ``||``."
 msgstr "使用 ``or`` 而不是 ``||`` 。"
 
+#, fuzzy
+msgid "Use ``not`` instead of ``!``."
+msgstr "使用 ``or`` 而不是 ``||`` 。"
+
 msgid ""
 "You may also use parentheses around boolean operators to clear any "
 "ambiguity. This can make long expressions easier to read."
@@ -271,12 +275,6 @@ msgid ""
 msgstr ""
 "不要忽略浮點數中的前置或後置 0。以免降低數字的可讀性，並難以一眼區分與整數的"
 "不同。"
-
-msgid "**Good**::"
-msgstr "\\ **Good**::"
-
-msgid "**Bad**::"
-msgstr "\\ **Bad**::"
 
 msgid ""
 "Use lowercase for letters in hexadecimal numbers, as their lower height "
@@ -403,26 +401,31 @@ msgstr ""
 msgid "Class declaration"
 msgstr "類別宣告"
 
+#, fuzzy
 msgid ""
-"If the code is meant to run in the editor, place the ``tool`` keyword on the "
-"first line of the script."
+"If the code is meant to run in the editor, place the ``@tool`` annotation on "
+"the first line of the script."
 msgstr "若程式碼是要在編輯器中執行的，請在腳本的第一行加上 ``tool`` 關鍵字。"
 
+#, fuzzy
 msgid ""
-"Follow with the `class_name` if necessary. You can turn a GDScript file into "
-"a global type in your project using this feature. For more information, see :"
-"ref:`doc_gdscript`."
+"Follow with the ``class_name`` if necessary. You can turn a GDScript file "
+"into a global type in your project using this feature. For more information, "
+"see :ref:`doc_gdscript`."
 msgstr ""
 "接著若有必要，加上 ``class_name`` 。可以使用這個功能來將 GDScript 檔案轉為專"
 "案中的全域型別。更多資訊請參考 :ref:`doc_gdscript` 。"
 
-msgid "Then, add the `extends` keyword if the class extends a built-in type."
+#, fuzzy
+msgid "Then, add the ``extends`` keyword if the class extends a built-in type."
 msgstr "接著，若類別繼承內建型別，加上 ``extends`` 關鍵字。"
 
+#, fuzzy
 msgid ""
-"Following that, you should have the class's optional docstring as comments. "
-"You can use that to explain the role of your class to your teammates, how it "
-"works, and how other developers should use it, for example."
+"Following that, you should have the class's optional :ref:`documentation "
+"comments <doc_gdscript_documentation_comments>`. You can use that to explain "
+"the role of your class to your teammates, how it works, and how other "
+"developers should use it, for example."
 msgstr ""
 "接下來則是可選擇性地加上 DocString 註解。DocString 註解可以用來向團隊成員解釋"
 "這個類別的是什麼角色以及其他開發者該如何使用這個類別…等。"
@@ -531,12 +534,22 @@ msgstr "若要宣告函數的回傳型別，請使用 ``-> <型別>`` ："
 msgid "Inferred types"
 msgstr "推斷型別"
 
-msgid "In most cases you can let the compiler infer the type, using ``:=``:"
-msgstr "大多數情況下，我們都直接使用 ``:=`` 來讓編輯器推斷型別："
+msgid ""
+"In most cases you can let the compiler infer the type, using ``:=``. Prefer "
+"``:=`` when the type is written on the same line as the assignment, "
+"otherwise prefer writing the type explicitly."
+msgstr ""
 
 msgid ""
-"However, in a few cases when context is missing, the compiler falls back to "
-"the function's return type. For example, ``get_node()`` cannot infer a type "
+"Include the type hint when the type is ambiguous, and omit the type hint "
+"when it's redundant."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In some cases, the type must be stated explicitly, otherwise the behavior "
+"will not be as expected because the compiler will only be able to use the "
+"function's return type. For example, ``get_node()`` cannot infer a type "
 "unless the scene or file of the node is loaded in memory. In this case, you "
 "should set the type explicitly."
 msgstr ""

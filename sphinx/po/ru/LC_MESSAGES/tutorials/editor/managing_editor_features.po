@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -36,13 +36,14 @@ msgstr ""
 "постепенно добавляет функции для студентов. Godot имеет встроенную в систему "
 "под названием «профили пользователя», для управления ограничениями."
 
+#, fuzzy
 msgid ""
 "With feature profiles, major features and nodes can be hidden from the "
 "editor. This only hides parts of the interface and does not actually remove "
 "support for these features, so scenes and scripts relying on those features "
 "will still work fine. This also means feature profiles are not an "
 "optimization technique. For information on how to optimize Godot see :ref:"
-"`doc_optimization`."
+"`doc_performance`."
 msgstr ""
 "С профилями пользователя основные функции и узлы могут быть скрыты в "
 "редакторе. Это только скрывает части интерфейса и на самом деле не удаляет "
@@ -62,18 +63,12 @@ msgid ""
 "then see a list of all the features in the Godot editor."
 msgstr ""
 
-msgid "..img:: img/configure_profile.png"
-msgstr ""
-
 msgid ""
 "The first section allows major editor features to be removed, such as the 3D "
 "editor or scripting editor. Below the main features is every class and node "
 "in Godot, which can be disabled as well. Click on a node and all of its "
 "properties and options will be listed in the **Extra Items** box, these can "
 "all be individually disabled."
-msgstr ""
-
-msgid "..img:: img/node_features.png"
 msgstr ""
 
 #, fuzzy

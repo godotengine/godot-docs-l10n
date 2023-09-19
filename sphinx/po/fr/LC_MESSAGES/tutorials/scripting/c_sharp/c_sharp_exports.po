@@ -1,0 +1,454 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "C# exports"
+msgstr "export"
+
+msgid "Introduction to exports"
+msgstr "Introduction aux exports GDScript"
+
+#, fuzzy
+msgid ""
+"In Godot, class members can be exported. This means their value gets saved "
+"along with the resource (such as the :ref:`scene <class_PackedScene>`) "
+"they're attached to. They will also be available for editing in the property "
+"editor. Exporting is done by using the ``[Export]`` attribute."
+msgstr ""
+"Dans Godot, les membres de classe peuvent être exportés. Cela signifie que "
+"leur valeur est sauvegardée avec la ressource (par exemple la :ref:`scene "
+"<class_PackedScene>`) à laquelle ils sont attachés. Ils seront également "
+"disponibles pour l'édition dans l'éditeur de propriétés. L'exportation se "
+"fait en utilisant le mot clé ``export`` :"
+
+msgid ""
+"In that example the value ``5`` will be saved, and after building the "
+"current project it will be visible in the property editor."
+msgstr ""
+
+msgid ""
+"One of the fundamental benefits of exporting member variables is to have "
+"them visible and editable in the editor. This way, artists and game "
+"designers can modify values that later influence how the program runs. For "
+"this, a special export syntax is provided."
+msgstr ""
+"L'un des avantages fondamentaux de l'exportation des variables membres est "
+"de les rendre visibles et modifiables dans l'éditeur. De cette façon, les "
+"artistes et les game designers peuvent modifier les valeurs qui "
+"influenceront plus tard le fonctionnement du programme. Pour cela, une "
+"syntaxe spéciale d'exportation est fournie."
+
+msgid ""
+"Exporting can only be done with :ref:`Variant-compatible "
+"<doc_c_sharp_variant>` types."
+msgstr ""
+
+msgid ""
+"Exporting properties can also be done in GDScript, for information on that "
+"see :ref:`doc_gdscript_exports`."
+msgstr ""
+
+#, fuzzy
+msgid "Basic use"
+msgstr "Utilisation de base"
+
+#, fuzzy
+msgid "Exporting can work with fields and properties."
+msgstr "Exporter des packs, des patchs, et des mods"
+
+msgid ""
+"Exported members can specify a default value; otherwise, the `default value "
+"of the type <https://learn.microsoft.com/en-us/dotnet/csharp/language-"
+"reference/builtin-types/default-values>`_ is used instead."
+msgstr ""
+
+#, fuzzy
+msgid "Resources and nodes can be exported."
+msgstr "Les ShaderMaterials ne peuvent pas être exportés."
+
+#, fuzzy
+msgid "Grouping exports"
+msgstr "Groupement des propriétés"
+
+msgid ""
+"It is possible to group your exported properties inside the Inspector with "
+"the ``[ExportGroup]`` attribute. Every exported property after this "
+"attribute will be added to the group. Start a new group or use "
+"``[ExportGroup(\"\")]`` to break out."
+msgstr ""
+
+msgid ""
+"The second argument of the attribute can be used to only group properties "
+"with the specified prefix."
+msgstr ""
+
+msgid ""
+"Groups cannot be nested, use ``[ExportSubgroup]`` to create subgroups within "
+"a group."
+msgstr ""
+
+msgid ""
+"You can also change the name of your main category, or create additional "
+"categories in the property list with the ``[ExportCategory]`` attribute."
+msgstr ""
+
+msgid ""
+"The list of properties is organized based on the class inheritance, and new "
+"categories break that expectation. Use them carefully, especially when "
+"creating projects for public use."
+msgstr ""
+
+#, fuzzy
+msgid "Strings as paths"
+msgstr "Longueur de chaîne de caractère"
+
+msgid "Property hints can be used to export strings as paths"
+msgstr ""
+
+#, fuzzy
+msgid "String as a path to a file."
+msgstr "Partager un profil"
+
+msgid "String as a path to a directory."
+msgstr ""
+
+msgid "String as a path to a file, custom filter provided as hint."
+msgstr ""
+
+msgid ""
+"Using paths in the global filesystem is also possible, but only in scripts "
+"in tool mode."
+msgstr ""
+
+msgid "String as a path to a PNG file in the global filesystem."
+msgstr ""
+
+msgid "String as a path to a directory in the global filesystem."
+msgstr ""
+
+msgid ""
+"The multiline annotation tells the editor to show a large input field for "
+"editing over multiple lines."
+msgstr ""
+
+#, fuzzy
+msgid "Limiting editor input ranges"
+msgstr "Modifier des pages existantes"
+
+msgid ""
+"Using the range property hint allows you to limit what can be input as a "
+"value using the editor."
+msgstr ""
+
+msgid "Allow integer values from 0 to 20."
+msgstr ""
+
+msgid "Allow integer values from -10 to 20."
+msgstr ""
+
+msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
+msgstr ""
+
+msgid ""
+"If you add the hints \"or_greater\" and/or \"or_less\" you can go above or "
+"below the limits when adjusting the value by typing it instead of using the "
+"slider."
+msgstr ""
+
+msgid "Floats with easing hint"
+msgstr ""
+
+msgid "Display a visual representation of the 'ease()' function when editing."
+msgstr ""
+
+#, fuzzy
+msgid "Colors"
+msgstr "Couleur"
+
+msgid "Regular color given as red-green-blue-alpha value."
+msgstr ""
+
+msgid "Color given as red-green-blue value (alpha will always be 1)."
+msgstr ""
+
+msgid "Nodes"
+msgstr "Nœuds"
+
+msgid ""
+"Since Godot 4.0, nodes can be directly exported without having to use "
+"NodePaths."
+msgstr ""
+
+msgid ""
+"Custom node classes can also be used, see :ref:`doc_c_sharp_global_classes`."
+msgstr ""
+
+msgid ""
+"Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
+msgstr ""
+
+msgid "Resources"
+msgstr "Ressources"
+
+msgid ""
+"In the Inspector, you can then drag and drop a resource file from the "
+"FileSystem dock into the variable slot."
+msgstr ""
+
+msgid ""
+"Opening the inspector dropdown may result in an extremely long list of "
+"possible classes to create, however. Therefore, if you specify a type "
+"derived from Resource such as:"
+msgstr ""
+
+msgid ""
+"The drop-down menu will be limited to AnimationNode and all its inherited "
+"classes. Custom resource classes can also be used, see :ref:"
+"`doc_c_sharp_global_classes`."
+msgstr ""
+
+msgid ""
+"It must be noted that even if the script is not being run while in the "
+"editor, the exported properties are still editable. This can be used in "
+"conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
+msgstr ""
+"Il faut noter que même si le script n'est pas exécuté pendant qu'il est dans "
+"l'éditeur, les propriétés exportées sont toujours modifiables. Ceci peut "
+"être utilisé en conjonction avec un script :ref:`en mode \"tool\" "
+"<doc_gdscript_tool_mode>`."
+
+msgid "Exporting bit flags"
+msgstr "Exportation bit flags"
+
+msgid ""
+"Members whose type is an enum with the ``[Flags]`` attribute can be exported "
+"and their values are limited to the members of the enum type. The editor "
+"will create a widget in the Inspector, allowing to select none, one, or "
+"multiple of the enum members. The value will be stored as an integer."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
+"values in one property. By using the ``Flags`` property hint, they can be "
+"set from the editor."
+msgstr ""
+"Les nombres entiers utilisés comme bit flags peuvent stocker plusieurs "
+"valeurs ``true``/``false`` (booléen) dans une propriété. En utilisant "
+"l'indication d'exportation ``int, FLAGS, ...``, ils peuvent être réglés "
+"depuis l'éditeur :"
+
+#, fuzzy
+msgid ""
+"You must provide a string description for each flag. In this example, "
+"``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
+"``Wind`` corresponds to value 8. Usually, constants should be defined "
+"accordingly (e.g. ``private const int ElementWind = 8`` and so on)."
+msgstr ""
+"Vous devez fournir une description sous forme de chaîne de caractère pour "
+"chaque flag. Dans cet exemple, ``Feu`` a la valeur 1, ``Eau`` a la valeur 2, "
+"``Terre`` a la valeur 4 et ``Vent`` correspond à la valeur 8. Généralement, "
+"les constantes doivent être définies en conséquence (p. ex. ``const "
+"ELEMENT_VENT = 8`` et ainsi de suite)."
+
+msgid "You can add explicit values using a colon:"
+msgstr ""
+
+msgid ""
+"Only power of 2 values are valid as bit flags options. The lowest allowed "
+"value is 1, as 0 means that nothing is selected. You can also add options "
+"that are a combination of other flags:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Export annotations are also provided for the physics and render layers "
+"defined in the project settings."
+msgstr ""
+"Des indices d'exportation sont également fournis pour les couches physiques "
+"et de rendu définies dans les paramètres du projet :"
+
+msgid ""
+"Using bit flags requires some understanding of bitwise operations. If in "
+"doubt, use boolean variables instead."
+msgstr ""
+"L'utilisation de bit flags nécessite une certaine compréhension des "
+"opérations sur les bits. En cas de doute, utilisez des variables booléennes "
+"à la place."
+
+#, fuzzy
+msgid "Exporting enums"
+msgstr "Menu d'exportation"
+
+msgid ""
+"Members whose type is an enum can be exported and their values are limited "
+"to the members of the enum type. The editor will create a widget in the "
+"Inspector, enumerating the following as \"Thing 1\", \"Thing 2\", \"Another "
+"Thing\". The value will be stored as an integer."
+msgstr ""
+
+msgid ""
+"Integer and string members can also be limited to a specific list of values "
+"using the ``[Export]`` annotation with the ``PropertyHint.Enum`` hint. The "
+"editor will create a widget in the Inspector, enumerating the following as "
+"Warrior, Magician, Thief. The value will be stored as an integer, "
+"corresponding to the index of the selected option (i.e. ``0``, ``1``, or "
+"``2``)."
+msgstr ""
+
+#, fuzzy
+msgid "If the type is ``string``, the value will be stored as a string."
+msgstr ""
+"Si une chaîne de caractères (``string``) est fournie, le fichier sera chargé "
+"depuis ce chemin."
+
+msgid "If you want to set an initial value, you must specify it explicitly:"
+msgstr ""
+
+#, fuzzy
+msgid "Exporting collections"
+msgstr "Considérations relatives à l'exportation"
+
+msgid ""
+"As explained in the :ref:`C# Variant <doc_c_sharp_variant>` documentation, "
+"only certain C# arrays and the collection types defined in the ``Godot."
+"Collections`` namespace are Variant-compatible, therefore, only those types "
+"can be exported."
+msgstr ""
+
+#, fuzzy
+msgid "Exporting Godot arrays"
+msgstr "Exportation de tableaux"
+
+msgid ""
+"Using the generic ``Godot.Collections.Array<T>`` allows to specify the type "
+"of the array elements which will be used as a hint for the editor. The "
+"Inspector will restrict the elements to the specified type."
+msgstr ""
+
+msgid ""
+"The default value of Godot arrays is null, a different default can be "
+"specified:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Arrays with specified types which inherit from resource can be set by drag-"
+"and-dropping multiple files from the FileSystem dock."
+msgstr ""
+"Si le tableau exporté spécifie un type qui hérite de Resource, les valeurs "
+"du tableau peuvent être définies dans l'inspecteur en glissant et déposant "
+"plusieurs fichiers du dock système de fichiers en même temps."
+
+#, fuzzy
+msgid "Exporting Godot dictionaries"
+msgstr "Considérations relatives à l'exportation"
+
+msgid ""
+"Using the generic ``Godot.Collections.Dictionary<TKey, TValue>`` allows to "
+"specify the type of the key and value elements of the dictionary."
+msgstr ""
+
+msgid ""
+"Typed dictionaries are currently unsupported in the Godot editor, so the "
+"Inspector will not restrict the types that can be assigned, potentially "
+"resulting in runtime exceptions."
+msgstr ""
+
+msgid ""
+"The default value of Godot dictionaries is null, a different default can be "
+"specified:"
+msgstr ""
+
+#, fuzzy
+msgid "Exporting C# arrays"
+msgstr "Exportation de tableaux"
+
+msgid ""
+"C# arrays can exported as long as the element type is a :ref:`Variant-"
+"compatible <doc_c_sharp_variant>` type."
+msgstr ""
+
+msgid ""
+"The default value of C# arrays is null, a different default can be specified:"
+msgstr ""
+
+msgid "Setting exported variables from a tool script"
+msgstr "Définition des variables exportées à partir d'un script tool(outil)"
+
+#, fuzzy
+msgid ""
+"When changing an exported variable's value from a script in :ref:"
+"`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
+"automatically. To update it, call :ref:`NotifyPropertyListChanged() "
+"<class_Object_method_notify_property_list_changed>` after setting the "
+"exported variable's value."
+msgstr ""
+"Quand la valeur d'une variable exportée depuis un script :ref:"
+"`doc_gdscript_tool_mode` est modifiée, la valeur dans l'inspecteur ne sera "
+"pas mise-à-jour automatiquement. Pour la mettre-à-jour, appelez :ref:"
+"`property_list_changed_notify() "
+"<class_Object_method_property_list_changed_notify>` après avoir défini la "
+"valeur de la variable exportée."
+
+msgid "Advanced exports"
+msgstr "Exportations avancées"
+
+msgid ""
+"Not every type of export can be provided on the level of the language itself "
+"to avoid unnecessary design complexity. The following describes some more or "
+"less common exporting features which can be implemented with a low-level API."
+msgstr ""
+"Tous les types d'exportation ne peuvent pas être fournis au niveau du "
+"langage lui-même pour éviter une complexité de conception inutile. Ce qui "
+"suit décrit quelques fonctions d'exportation plus ou moins courantes qui "
+"peuvent être mises en œuvre avec une API de bas niveau."
+
+#, fuzzy
+msgid ""
+"Before reading further, you should get familiar with the way properties are "
+"handled and how they can be customized with :ref:`_Set() "
+"<class_Object_method__set>`, :ref:`_Get() <class_Object_method__get>`, and :"
+"ref:`_GetPropertyList() <class_Object_method__get_property_list>` methods as "
+"described in :ref:`doc_accessing_data_or_logic_from_object`."
+msgstr ""
+"Avant de poursuivre la lecture, vous devriez vous familiariser avec la "
+"manière dont les propriétés sont gérées et comment elles peuvent être "
+"personnalisées avec les méthodes :ref:`_set() "
+"<class_Object_method__get_property_list>` , :ref:`_get() "
+"<class_Object_method__get_property_list>` et :ref:` _get_property_list() "
+"<class_Object_method__get_property_list> `comme décrit dans :ref:"
+"`doc_accessing_data_or_logic_from_object`."
+
+msgid ""
+"For binding properties using the above methods in C++, see :ref:"
+"`doc_binding_properties_using_set_get_property_list`."
+msgstr ""
+"Pour les propriétés de liaison utilisant les méthodes ci-dessus en C++, "
+"voir :ref:`doc_binding_properties_using_set_get_property_list`."
+
+msgid ""
+"The script must operate in the ``tool`` mode so the above methods can work "
+"from within the editor."
+msgstr ""
+"Le script doit fonctionner en mode ``tool`` pour que les méthodes ci-dessus "
+"puissent fonctionner dans l'éditeur."
+
+msgid "Translation status"
+msgstr "État de la traduction"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -49,20 +49,18 @@ msgstr ""
 "案。該檔案會內涵一個特別最佳化過的二進位，這個二進位檔更小、更快，而且不包含"
 "編輯器與除錯工具。"
 
-msgid "Requirements"
-msgstr "系統需求"
-
-msgid ""
-"To enable code signing, you must have the ``Windows 10 SDK`` (on Windows) or "
-"`osslsigncode <https://github.com/mtrojnar/osslsigncode>`__ (on any other "
-"OS) installed."
-msgstr ""
-
 #, fuzzy
+msgid "Code signing"
+msgstr "Godot 版本"
+
 msgid ""
-"Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
-"Export Templates``."
-msgstr "下載 Godot 匯出樣板。使用 Godot 選單：[編輯器] > [管理匯出樣板]"
+"Godot is capable of automatic code signing on export. To do this you must "
+"have the ``Windows SDK`` (on Windows) or `osslsigncode <https://github.com/"
+"mtrojnar/osslsigncode>`__ (on any other OS) installed. You will also need a "
+"package signing certificate, information on creating one can be found `here "
+"<https://docs.microsoft.com/en-us/windows/win32/appxpkg/how-to-create-a-"
+"package-signing-certificate?redirectedfrom=MSDN>`__."
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -75,6 +73,73 @@ msgid ""
 "antivirus programs. Therefore, it's recommended to avoid using it unless "
 "you're distributing your project via Steam as it bypasses code signing and "
 "antivirus checks."
+msgstr ""
+
+msgid "Setup"
+msgstr ""
+
+msgid ""
+"Settings need to be changed in two places. First, in the editor settings, "
+"under **Export > Windows**. Click on the folder next to the ``Sign Tool`` "
+"setting, if you're using Windows navigate to and select ``SignTool.exe``, if "
+"you're on a different OS select ``osslsigncode``."
+msgstr ""
+
+msgid ""
+"The second location is the Windows export preset, which can be found in "
+"**Project > Export...**. Add a windows desktop preset if you haven't "
+"already. Under options there is a code signing category."
+msgstr ""
+
+msgid ""
+"``Enabled`` must be set to true, and ``Identity`` must be set to the signing "
+"certificate. The other settings can be adjusted as needed. Once this is Done "
+"Godot will sign your project on export."
+msgstr ""
+
+msgid "Environment variables"
+msgstr "環境變數"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+
+#, fuzzy
+msgid "Windows export environment variables"
+msgstr "環境變數"
+
+#, fuzzy
+msgid "Export option"
+msgstr "匯出選項"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "環境變數"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
+
+msgid "Options / Codesign / Identity Type"
+msgstr ""
+
+msgid "GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE"
+msgstr ""
+
+msgid "Options / Codesign / Identity"
+msgstr ""
+
+msgid "GODOT_WINDOWS_CODESIGN_IDENTITY"
+msgstr ""
+
+msgid "Options / Codesign / Password"
+msgstr ""
+
+msgid "GODOT_WINDOWS_CODESIGN_PASSWORD"
 msgstr ""
 
 msgid "Translation status"

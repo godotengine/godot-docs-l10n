@@ -1,0 +1,609 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Custom modules in C++"
+msgstr "Módulos personalizados em C++"
+
+msgid "Modules"
+msgstr "Módulos"
+
+msgid ""
+"Godot allows extending the engine in a modular way. New modules can be "
+"created and then enabled/disabled. This allows for adding new engine "
+"functionality at every level without modifying the core, which can be split "
+"for use and reuse in different modules."
+msgstr ""
+"O Godot permite estender a engine de uma forma modular. Novos módulos podem "
+"ser criados e então habilitado/desativado. Isto permite adicionar novas "
+"funcionalidades no mesmo nível da engine sem modificá-la, que pode ser "
+"separada para uso e reutilização em diferentes módulos."
+
+msgid ""
+"Modules are located in the ``modules/`` subdirectory of the build system. By "
+"default, dozens of modules are enabled, such as GDScript (which, yes, is not "
+"part of the base engine), the Mono runtime, a regular expressions module, "
+"and others. As many new modules as desired can be created and combined. The "
+"SCons build system will take care of it transparently."
+msgstr ""
+"Módulos são localizados no subdiretório ``modules/`` do sistema de "
+"compilação. Por padrão, dezenas de módulos são habilitados, como GDScript "
+"(que, sim, não faz parte da engine básica), o tempo de execução (runtime) do "
+"Mono, um módulo de expressões regulares, dentre outros. Podem ser criados e "
+"combinados quantos módulos novos desejar. O sistema de compilação SCons vai "
+"cuidar disso de forma transparente."
+
+msgid "What for?"
+msgstr "Para que serve?"
+
+msgid ""
+"While it's recommended that most of a game be written in scripting (as it is "
+"an enormous time saver), it's perfectly possible to use C++ instead. Adding "
+"C++ modules can be useful in the following scenarios:"
+msgstr ""
+"Embora seja recomendado que a maior parte do jogo seja escrito em script (já "
+"que economiza muito tempo), é perfeitamente possível usar C++ em seu lugar. "
+"Adicionar módulos C++ pode ser útil nos seguintes cenários:"
+
+msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
+msgstr "Vincular uma biblioteca externa no Godot (como PhysX, FMOD, etc)."
+
+msgid "Optimize critical parts of a game."
+msgstr "Otimizar partes críticas de um jogo."
+
+msgid "Adding new functionality to the engine and/or editor."
+msgstr "Adicionar novas funcionalidades para a engine e/ou editor."
+
+#, fuzzy
+msgid "Porting an existing game to Godot."
+msgstr "Portar um jogo existente."
+
+msgid "Write a whole, new game in C++ because you can't live without C++."
+msgstr ""
+"Escrever um jogo totalmente novo em C++ porque você não pode viver sem C++."
+
+msgid "Creating a new module"
+msgstr "Criando um novo módulo"
+
+msgid ""
+"Before creating a module, make sure to :ref:`download the source code of "
+"Godot and compile it <toc-devel-compiling>`."
+msgstr ""
+"Antes de criar um módulo, certifique-se de :ref:`baixar o código fonte do "
+"Godot e compilá-lo <toc-devel-compilação>`."
+
+msgid ""
+"To create a new module, the first step is creating a directory inside "
+"``modules/``. If you want to maintain the module separately, you can "
+"checkout a different VCS into modules and use it."
+msgstr ""
+"Para criar um módulo, a primeira etapa é criar um diretório dentro de "
+"``modules/``. Se você deseja manter o módulo separado, você pode criar um "
+"checkout de um VCS diferente em ``modules/`` e usá-lo."
+
+msgid ""
+"The example module will be called \"summator\" (``godot/modules/summator``). "
+"Inside we will create a summator class:"
+msgstr ""
+
+msgid "And then the cpp file."
+msgstr ""
+
+msgid ""
+"Then, the new class needs to be registered somehow, so two more files need "
+"to be created:"
+msgstr ""
+"Então, a nova classe precisa ser registrada de alguma forma, então mais dois "
+"arquivos precisam ser criados:"
+
+msgid ""
+"These files must be in the top-level folder of your module (next to your "
+"``SCsub`` and ``config.py`` files) for the module to be registered properly."
+msgstr ""
+
+msgid "These files should contain the following:"
+msgstr "Esses arquivos devem conter o seguinte:"
+
+msgid ""
+"Next, we need to create a ``SCsub`` file so the build system compiles this "
+"module:"
+msgstr ""
+"Em seguida, precisamos criar um arquivo``SCsub`` para que o sistema de "
+"compilação compile o módulo:"
+
+msgid ""
+"With multiple sources, you can also add each file individually to a Python "
+"string list:"
+msgstr ""
+"Com múltiplas fontes, você também pode adicionar cada arquivo "
+"individualmente à uma lista de strings Python:"
+
+msgid ""
+"This allows for powerful possibilities using Python to construct the file "
+"list using loops and logic statements. Look at some modules that ship with "
+"Godot by default for examples."
+msgstr ""
+
+msgid ""
+"To add include directories for the compiler to look at you can append it to "
+"the environment's paths:"
+msgstr ""
+
+msgid ""
+"If you want to add custom compiler flags when building your module, you need "
+"to clone ``env`` first, so it won't add those flags to whole Godot build "
+"(which can cause errors). Example ``SCsub`` with custom flags:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"And finally, the configuration file for the module, this is a Python script "
+"that must be named ``config.py``:"
+msgstr ""
+"E finalmente, o arquivo de configuração para o módulo, é um simples script "
+"python que deve ser nomeado ``config.py``:"
+
+msgid ""
+"The module is asked if it's OK to build for the specific platform (in this "
+"case, ``True`` means it will build for every platform)."
+msgstr ""
+
+msgid ""
+"And that's it. Hope it was not too complex! Your module should look like "
+"this:"
+msgstr ""
+"E é isso. Espero que não tenha sido complexo demais! Seu módulo deveria ser "
+"parecer assim:"
+
+msgid ""
+"You can then zip it and share the module with everyone else. When building "
+"for every platform (instructions in the previous sections), your module will "
+"be included."
+msgstr ""
+"Você pode zipar (compactar em ZIP) e compartilhar o módulo com todo mundo. "
+"Quando gerando para cada plataforma (instruções na seção anterior), seu "
+"módulo deve ser incluído."
+
+msgid ""
+"There is a parameter limit of 5 in C++ modules for things such as "
+"subclasses. This can be raised to 13 by including the header file ``core/"
+"method_bind_ext.gen.inc``."
+msgstr ""
+
+msgid "Using the module"
+msgstr "Usando o módulo"
+
+msgid "You can now use your newly created module from any script:"
+msgstr ""
+
+msgid "The output will be ``60``."
+msgstr ""
+
+msgid ""
+"The previous Summator example is great for small, custom modules, but what "
+"if you want to use a larger, external library? Refer to :ref:"
+"`doc_binding_to_external_libraries` for details about binding to external "
+"libraries."
+msgstr ""
+
+msgid ""
+"If your module is meant to be accessed from the running project (not just "
+"from the editor), you must also recompile every export template you plan to "
+"use, then specify the path to the custom template in each export preset. "
+"Otherwise, you'll get errors when running the project as the module isn't "
+"compiled in the export template. See the :ref:`Compiling <toc-devel-"
+"compiling>` pages for more information."
+msgstr ""
+
+msgid "Compiling a module externally"
+msgstr ""
+
+msgid ""
+"Compiling a module involves moving the module's sources directly under the "
+"engine's ``modules/`` directory. While this is the most straightforward way "
+"to compile a module, there are a couple of reasons as to why this might not "
+"be a practical thing to do:"
+msgstr ""
+
+msgid ""
+"Having to manually copy modules sources every time you want to compile the "
+"engine with or without the module, or taking additional steps needed to "
+"manually disable a module during compilation with a build option similar to "
+"``module_summator_enabled=no``. Creating symbolic links may also be a "
+"solution, but you may additionally need to overcome OS restrictions like "
+"needing the symbolic link privilege if doing this via script."
+msgstr ""
+
+msgid ""
+"Depending on whether you have to work with the engine's source code, the "
+"module files added directly to ``modules/`` changes the working tree to the "
+"point where using a VCS (like ``git``) proves to be cumbersome as you need "
+"to make sure that only the engine-related code is committed by filtering "
+"changes."
+msgstr ""
+
+msgid ""
+"So if you feel like the independent structure of custom modules is needed, "
+"lets take our \"summator\" module and move it to the engine's parent "
+"directory:"
+msgstr ""
+
+msgid ""
+"Compile the engine with our module by providing ``custom_modules`` build "
+"option which accepts a comma-separated list of directory paths containing "
+"custom C++ modules, similar to the following:"
+msgstr ""
+
+msgid ""
+"The build system shall detect all modules under the ``../modules`` directory "
+"and compile them accordingly, including our \"summator\" module."
+msgstr ""
+
+msgid ""
+"Any path passed to ``custom_modules`` will be converted to an absolute path "
+"internally as a way to distinguish between custom and built-in modules. It "
+"means that things like generating module documentation may rely on a "
+"specific path structure on your machine."
+msgstr ""
+
+msgid ""
+":ref:`Introduction to the buildsystem - Custom modules build option "
+"<doc_buildsystem_custom_modules>`."
+msgstr ""
+
+#, fuzzy
+msgid "Customizing module types initialization"
+msgstr "Personalizando a apresentação"
+
+msgid ""
+"Modules can interact with other built-in engine classes during runtime and "
+"even affect the way core types are initialized. So far, we've been using "
+"``register_summator_types`` as a way to bring in module classes to be "
+"available within the engine."
+msgstr ""
+
+msgid ""
+"A crude order of the engine setup can be summarized as a list of the "
+"following type registration methods:"
+msgstr ""
+
+msgid ""
+"Our ``Summator`` class is initialized during the ``register_module_types()`` "
+"call. Imagine that we need to satisfy some common module run-time dependency "
+"(like singletons), or allow us to override existing engine method callbacks "
+"before they can be assigned by the engine itself. In that case, we want to "
+"ensure that our module classes are registered *before* any other built-in "
+"type."
+msgstr ""
+
+msgid ""
+"This is where we can define an optional ``preregister_summator_types()`` "
+"method which will be called before anything else during the "
+"``preregister_module_types()`` engine setup stage."
+msgstr ""
+
+msgid ""
+"We now need to add this method to ``register_types`` header and source files:"
+msgstr ""
+
+msgid ""
+"Unlike other register methods, we have to explicitly define "
+"``MODULE_SUMMATOR_HAS_PREREGISTER`` to let the build system know what "
+"relevant method calls to include at compile time. The module's name has to "
+"be converted to uppercase as well."
+msgstr ""
+
+msgid "Improving the build system for development"
+msgstr "Melhorando o sistema de build para desenvolvimento"
+
+msgid ""
+"This shared library support is not designed to support distributing a module "
+"to other users without recompiling the engine. For that purpose, use a "
+"GDExtension instead."
+msgstr ""
+
+msgid ""
+"So far, we defined a clean SCsub that allows us to add the sources of our "
+"new module as part of the Godot binary."
+msgstr ""
+"Até agora, definimos um SCsub limpo que nos permite acrescentar as fontes de "
+"nosso novo módulo como parte do binário Godot."
+
+msgid ""
+"This static approach is fine when we want to build a release version of our "
+"game, given we want all the modules in a single binary."
+msgstr ""
+"Essa estratégia estática é ótima quando nós queremos gerar uma versão de "
+"lançamento de nosso jogo, dado que queremos todos os módulos em um binário "
+"único."
+
+msgid ""
+"However, the trade-off is that every single change requires a full "
+"recompilation of the game. Even though SCons is able to detect and recompile "
+"only the file that was changed, finding such files and eventually linking "
+"the final binary takes a long time."
+msgstr ""
+
+msgid ""
+"The solution to avoid such a cost is to build our own module as a shared "
+"library that will be dynamically loaded when starting our game's binary."
+msgstr ""
+"A solução para evitar tal custo é gerar build de nossos próprios módulos "
+"como uma biblioteca compartilhada que será dinamicamente carregada quando "
+"iniciar o binário de nosso jogo."
+
+msgid ""
+"Once compiled, we should end up with a ``bin`` directory containing both the "
+"``godot*`` binary and our ``libsummator*.so``. However given the .so is not "
+"in a standard directory (like ``/usr/lib``), we have to help our binary find "
+"it during runtime with the ``LD_LIBRARY_PATH`` environment variable:"
+msgstr ""
+
+msgid ""
+"You have to ``export`` the environment variable. Otherwise, you won't be "
+"able to run your project from the editor."
+msgstr ""
+
+msgid ""
+"On top of that, it would be nice to be able to select whether to compile our "
+"module as shared library (for development) or as a part of the Godot binary "
+"(for release). To do that we can define a custom flag to be passed to SCons "
+"using the ``ARGUMENT`` command:"
+msgstr ""
+
+msgid ""
+"Now by default ``scons`` command will build our module as part of Godot's "
+"binary and as a shared library when passing ``summator_shared=yes``."
+msgstr ""
+
+msgid ""
+"Finally, you can even speed up the build further by explicitly specifying "
+"your shared module as target in the SCons command:"
+msgstr ""
+
+msgid "Writing custom documentation"
+msgstr "Escrevendo documentação personalizada"
+
+#, fuzzy
+msgid ""
+"Writing documentation may seem like a boring task, but it is highly "
+"recommended to document your newly created module to make it easier for "
+"users to benefit from it. Not to mention that the code you've written one "
+"year ago may become indistinguishable from the code that was written by "
+"someone else, so be kind to your future self!"
+msgstr ""
+"Escrever documentação pode parecer uma tarefa enfadonha, mas é altamente "
+"recomendável documentar seu módulo recém-criado para tornar mais fácil "
+"outros usuários se beneficiarem dele. Sem mencionar que o código que você "
+"escreveu há um ano pode se tornar indistinguível do código que foi escrito "
+"por outra pessoa, então seja gentil com você mesmo quando ler no futuro!"
+
+msgid "There are several steps in order to setup custom docs for the module:"
+msgstr ""
+"Existem várias etapas para configurar documentos personalizados para o "
+"módulo:"
+
+msgid ""
+"Make a new directory in the root of the module. The directory name can be "
+"anything, but we'll be using the ``doc_classes`` name throughout this "
+"section."
+msgstr ""
+"Crie um novo diretório na raiz do módulo. O nome do diretório pode ser "
+"qualquer um, mas usaremos o nome ``doc_classes`` em toda esta seção."
+
+msgid "Now, we need to edit ``config.py``, add the following snippet:"
+msgstr "Agora, precisamos editar ``config.py``, acrescente o seguinte trecho:"
+
+msgid ""
+"The ``get_doc_path()`` function is used by the build system to determine the "
+"location of the docs. In this case, they will be located in the ``modules/"
+"summator/doc_classes`` directory. If you don't define this, the doc path for "
+"your module will fall back to the main ``doc/classes`` directory."
+msgstr ""
+
+msgid ""
+"The ``get_doc_classes()`` method is necessary for the build system to know "
+"which registered classes belong to the module. You need to list all of your "
+"classes here. The classes that you don't list will end up in the main ``doc/"
+"classes`` directory."
+msgstr ""
+
+msgid ""
+"You can use Git to check if you have missed some of your classes by checking "
+"the untracked files with ``git status``. For example::"
+msgstr ""
+
+msgid "Example output::"
+msgstr "Exemplo de saída:"
+
+msgid "Now we can generate the documentation:"
+msgstr "Agora podemos gerar a documentação:"
+
+msgid ""
+"We can do this via running Godot's doctool i.e. ``godot --doctool <path>``, "
+"which will dump the engine API reference to the given ``<path>`` in XML "
+"format."
+msgstr ""
+
+msgid ""
+"In our case we'll point it to the root of the cloned repository. You can "
+"point it to an another folder, and just copy over the files that you need."
+msgstr ""
+
+msgid "Run command:"
+msgstr "Execute o comando:"
+
+msgid ""
+"Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will "
+"see that it contains a ``Summator.xml`` file, or any other classes, that you "
+"referenced in your ``get_doc_classes`` function."
+msgstr ""
+
+msgid ""
+"Edit the file(s) following :ref:`doc_class_reference_primer` and recompile "
+"the engine."
+msgstr ""
+
+msgid ""
+"Once the compilation process is finished, the docs will become accessible "
+"within the engine's built-in documentation system."
+msgstr ""
+
+msgid ""
+"In order to keep documentation up-to-date, all you'll have to do is simply "
+"modify one of the XML files and recompile the engine from now on."
+msgstr ""
+
+msgid ""
+"If you change your module's API, you can also re-extract the docs, they will "
+"contain the things that you previously added. Of course if you point it to "
+"your godot folder, make sure you don't lose work by extracting older docs "
+"from an older engine build on top of the newer ones."
+msgstr ""
+
+msgid ""
+"Note that if you don't have write access rights to your supplied ``<path>``, "
+"you might encounter an error similar to the following:"
+msgstr ""
+
+#, fuzzy
+msgid "Writing custom unit tests"
+msgstr "Escrevendo documentação personalizada"
+
+msgid ""
+"It's possible to write self-contained unit tests as part of a C++ module. If "
+"you are not familiar with the unit testing process in Godot yet, please "
+"refer to :ref:`doc_unit_testing`."
+msgstr ""
+
+#, fuzzy
+msgid "The procedure is the following:"
+msgstr "Existem as seguintes ressalvas:"
+
+msgid "Create a new directory named ``tests/`` under your module's root:"
+msgstr ""
+
+msgid ""
+"Create a new test suite: ``test_summator.h``. The header must be prefixed "
+"with ``test_`` so that the build system can collect it and include it as "
+"part of the ``tests/test_main.cpp`` where the tests are run."
+msgstr ""
+
+msgid "Write some test cases. Here's an example:"
+msgstr ""
+
+msgid ""
+"Compile the engine with ``scons tests=yes``, and run the tests with the "
+"following command:"
+msgstr ""
+
+msgid "You should see the passing assertions now."
+msgstr ""
+
+msgid "Adding custom editor icons"
+msgstr "Adicionando ícones personalizados do editor"
+
+msgid ""
+"Similarly to how you can write self-contained documentation within a module, "
+"you can also create your own custom icons for classes to appear in the "
+"editor."
+msgstr ""
+
+msgid ""
+"For the actual process of creating editor icons to be integrated within the "
+"engine, please refer to :ref:`doc_editor_icons` first."
+msgstr ""
+
+msgid "Once you've created your icon(s), proceed with the following steps:"
+msgstr ""
+
+msgid ""
+"Make a new directory in the root of the module named ``icons``. This is the "
+"default path for the engine to look for module's editor icons."
+msgstr ""
+
+msgid ""
+"Move your newly created ``svg`` icons (optimized or not) into that folder."
+msgstr ""
+
+msgid ""
+"Recompile the engine and run the editor. Now the icon(s) will appear in "
+"editor's interface where appropriate."
+msgstr ""
+
+msgid ""
+"If you'd like to store your icons somewhere else within your module, add the "
+"following code snippet to ``config.py`` to override the default path:"
+msgstr ""
+
+msgid "Summing up"
+msgstr "Resumindo"
+
+msgid "Remember to:"
+msgstr "Lembre-se de:"
+
+#, fuzzy
+msgid "Use ``GDCLASS`` macro for inheritance, so Godot can wrap it."
+msgstr "Use macro ``GDCLASS`` para herança, então Godot pode embrulhá-la"
+
+#, fuzzy
+msgid ""
+"Use ``_bind_methods`` to bind your functions to scripting, and to allow them "
+"to work as callbacks for signals."
+msgstr ""
+"use `` _bind_methods`` para vincular suas funções ao script e permitir que "
+"funcionem como callbacks para os sinais."
+
+msgid ""
+"**Avoid multiple inheritance for classes exposed to Godot**, as ``GDCLASS`` "
+"doesn't support this. You can still use multiple inheritance in your own "
+"classes as long as they're not exposed to Godot's scripting API."
+msgstr ""
+
+msgid ""
+"But this is not all, depending what you do, you will be greeted with some "
+"(hopefully positive) surprises."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If you inherit from :ref:`class_Node` (or any derived node type, such as "
+"Sprite2D), your new class will appear in the editor, in the inheritance tree "
+"in the \"Add Node\" dialog."
+msgstr ""
+"Se você herdar de: ref: `class_Node` (ou qualquer tipo de nó derivado, como "
+"Sprite), sua nova classe aparecerá no editor, na árvore de herança na caixa "
+"de diálogo \"Adicionar Nó \"."
+
+msgid ""
+"If you inherit from :ref:`class_Resource`, it will appear in the resource "
+"list, and all the exposed properties can be serialized when saved/loaded."
+msgstr ""
+"Se você herdar de: ref: `class_Resource`, ele aparecerá na lista de "
+"recursos, e todas as propriedades expostas podem ser serializadas quando "
+"salvas / carregadas."
+
+msgid ""
+"By this same logic, you can extend the Editor and almost any area of the "
+"engine."
+msgstr ""
+"Por esta mesma lógica, você pode estender o Editor e quase qualquer área da "
+"engine."
+
+msgid "Translation status"
+msgstr "Progresso da Tradução"

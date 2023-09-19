@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -256,7 +256,17 @@ msgstr ""
 msgid "**samplerCube**"
 msgstr "\\ **samplerCube**"
 
-msgid "Sampler type for binding Cubemaps, which are read as floats."
+#, fuzzy
+msgid "Sampler type for binding Cubemaps, which are read as float."
+msgstr ""
+"Cubemapsをバインドするためのサンプラータイプ。floatとして読み込まれます。"
+
+#, fuzzy
+msgid "**samplerCubeArray**"
+msgstr "\\ **samplerCube**"
+
+#, fuzzy
+msgid "Sampler type for binding Cubemap arrays, which are read as float."
 msgstr ""
 "Cubemapsをバインドするためのサンプラータイプ。floatとして読み込まれます。"
 
@@ -323,10 +333,15 @@ msgstr ""
 
 msgid ""
 "Matrices can also be built from a matrix of another dimension. There are two "
-"rules : If a larger matrix is constructed from a smaller matrix, the "
-"additional rows and columns are set to the values they would have in an "
-"identity matrix. If a smaller matrix is constructed from a larger matrix, "
-"the top, left submatrix of the larger matrix is used."
+"rules:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"1. If a larger matrix is constructed from a smaller matrix, the additional "
+"rows and columns are set to the values they would have in an identity "
+"matrix. 2. If a smaller matrix is constructed from a larger matrix, the top, "
+"left submatrix of the larger matrix is used."
 msgstr ""
 "行列は、別の次元の行列から構築することもできます。次の2つのルールがあります。"
 "小さいマトリックスから大きいマトリックスを作成する場合、追加の行と列は単位マ"
@@ -383,9 +398,8 @@ msgstr ""
 msgid "Arrays"
 msgstr "配列"
 
-msgid ""
-"Arrays are containers for multiple variables of a similar type. Note: As of "
-"Godot 3.2, only local and varying arrays have been implemented."
+#, fuzzy
+msgid "Arrays are containers for multiple variables of a similar type."
 msgstr ""
 "配列は、類似したタイプの複数の変数のコンテナです。注: Godot 3.2では、ローカル"
 "配列と可変配列のみが実装されています。"
@@ -424,12 +438,12 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"If you use an index below 0 or greater than array size - the shader will "
-"crash and break rendering. To prevent this, use ``length()``, ``if``, or "
-"``clamp()`` functions to ensure the index is between 0 and the array's "
+"If you use an index either below 0 or greater than array size - the shader "
+"will crash and break rendering. To prevent this, use ``length()``, ``if``, "
+"or ``clamp()`` functions to ensure the index is between 0 and the array's "
 "length. Always carefully test and check your code. If you pass a constant "
-"expression or a simple number, the editor will check its bounds to prevent "
-"this crash."
+"expression or a number, the editor will check its bounds to prevent this "
+"crash."
 msgstr ""
 "注: 0未満または配列サイズより大きいインデックスを使用すると、シェーダーがク"
 "ラッシュしてレンダリングが中断します。これを防ぐには、\\ ``length()``\\ 、\\ "
@@ -437,6 +451,18 @@ msgstr ""
 "ることを確認してください。コードは常に慎重にテストおよびチェックしてくださ"
 "い。定数式または単純な数値を渡すと、エディタはその境界をチェックしてこのク"
 "ラッシュを防ぎます。"
+
+#, fuzzy
+msgid "Global arrays"
+msgstr "ローカル配列"
+
+msgid "You can declare arrays at global space like:"
+msgstr ""
+
+msgid ""
+"Global arrays have to be declared as global constants, otherwise they can be "
+"declared the same as local arrays."
+msgstr ""
 
 msgid "Constants"
 msgstr "定数"
@@ -475,6 +501,42 @@ msgstr ""
 "す。グローバル定数は、変更する必要のないシェーダー全体の値にアクセスする場合"
 "に役立ちます。ユニフォームと同様に、グローバル定数はすべてのシェーダーステー"
 "ジ間で共有されますが、シェーダーの外部からはアクセスできません。"
+
+msgid ""
+"Constants of the ``float`` type must be initialized using ``.`` notation "
+"after the decimal part or by using the scientific notation. The optional "
+"``f`` post-suffix is also supported."
+msgstr ""
+
+msgid ""
+"Constants of the ``uint`` (unsigned int) type must have a ``u`` suffix to "
+"differentiate them from signed integers. Alternatively, this can be done by "
+"using the ``uint(x)`` built-in conversion function."
+msgstr ""
+
+#, fuzzy
+msgid "Structs"
+msgstr "定数"
+
+msgid ""
+"Structs are compound types which can be used for better abstraction of "
+"shader code. You can declare them at the global scope like:"
+msgstr ""
+
+msgid "After declaration, you can instantiate and initialize them like:"
+msgstr ""
+
+msgid "Or use struct constructor for same purpose:"
+msgstr ""
+
+msgid ""
+"Structs may contain other struct or array, you can also instance them as "
+"global constant:"
+msgstr ""
+
+#, fuzzy
+msgid "You can also pass them to functions:"
+msgstr "コードで同じ結果を得ることができます:"
 
 msgid "Operators"
 msgstr "オペレーター"
@@ -615,8 +677,9 @@ msgid "Godot Shading language supports the most common types of flow control:"
 msgstr ""
 "Godotシェーディング言語は、最も一般的なタイプの構文制御をサポートしています:"
 
+#, fuzzy
 msgid ""
-"Keep in mind that, in modern GPUs, an infinite loop can exist and can freeze "
+"Keep in mind that in modern GPUs, an infinite loop can exist and can freeze "
 "your application (including editor). Godot can't protect you from this, so "
 "be careful not to make this mistake!"
 msgstr ""
@@ -625,19 +688,50 @@ msgstr ""
 "きないので、この間違いをしないように注意してください！"
 
 msgid ""
-"When exporting a GLES2 project to HTML5, WebGL 1.0 will be used. WebGL 1.0 "
-"doesn't support dynamic loops, so shaders using those won't work there."
+"Also, when comparing floating-point values against a number, make sure to "
+"compare them against a *range* instead of an exact number."
+msgstr ""
+
+msgid ""
+"A comparison like ``if (value == 0.3)`` may not evaluate to ``true``. "
+"Floating-point math is often approximate and can defy expectations. It can "
+"also behave differently depending on the hardware."
+msgstr ""
+
+#, fuzzy
+msgid "**Don't** do this."
+msgstr "「of the X」とは\\ **書かないでください**\\ :"
+
+msgid ""
+"Instead, always perform a range comparison with an epsilon value. The larger "
+"the floating-point number (and the less precise the floating-point number), "
+"the larger the epsilon value should be."
+msgstr ""
+
+msgid ""
+"See `floating-point-gui.de <https://floating-point-gui.de/>`__ for more "
+"information."
 msgstr ""
 
 msgid "Discarding"
 msgstr "廃棄"
 
+#, fuzzy
 msgid ""
-"Fragment and light functions can use the **discard** keyword. If used, the "
+"Fragment and light functions can use the ``discard`` keyword. If used, the "
 "fragment is discarded and nothing is written."
 msgstr ""
 "フラグメントおよびライト関数では、\\ **discard** キーワードを使用できます。使"
 "用すると、フラグメントは破棄され、何も書き込まれません。"
+
+msgid ""
+"Beware that ``discard`` has a performance cost when used, as it will prevent "
+"the depth prepass from being effective on any surfaces using the shader. "
+"Also, a discarded pixel still needs to be rendered in the vertex shader, "
+"which means a shader that uses ``discard`` on all of its pixels is still "
+"more expensive to render compared to not rendering any object in the first "
+"place."
+msgstr ""
 
 msgid "Functions"
 msgstr "関数"
@@ -647,9 +741,12 @@ msgid ""
 "syntax:"
 msgstr "Godotシェーダーで関数を定義することが可能です。次の構文を使用します:"
 
+#, fuzzy
 msgid ""
 "You can only use functions that have been defined above (higher in the "
-"editor) the function from which you are calling them."
+"editor) the function from which you are calling them. Redefining a function "
+"that has already been defined above (or is a built-in function name) will "
+"cause an error."
 msgstr ""
 "呼び出し元の関数から見て上記(エディタの上方)で定義された関数のみを使用できま"
 "す。"
@@ -666,8 +763,21 @@ msgstr "**out**: 引数が書き込み専用であることを意味します。
 msgid "**inout**: Means the argument is fully passed via reference."
 msgstr "**inout**: 引数が参照を介して完全に渡されることを意味します。"
 
+msgid ""
+"**const**: Means the argument is a constant and cannot be changed, may be "
+"combined with **in** qualifier."
+msgstr ""
+
 msgid "Example below:"
 msgstr "以下はその例です:"
+
+msgid ""
+"Unlike GLSL, Godot's shader language does **not** support function "
+"overloading. This means that a function cannot be defined several times with "
+"different argument types or numbers of arguments. As a workaround, use "
+"different names for functions that accept a different number of arguments or "
+"arguments of different types."
+msgstr ""
 
 msgid "Varyings"
 msgstr "Varying(可変)"
@@ -754,10 +864,11 @@ msgstr ""
 "マテリアルのエディタでuniformを設定できます。または、GDScriptを使用して設定で"
 "きます:"
 
+#, fuzzy
 msgid ""
-"The first argument to ``set_shader_param`` is the name of the uniform in the "
-"shader. It must match *exactly* to the name of the uniform in the shader or "
-"else it will not be recognized."
+"The first argument to ``set_shader_parameter`` is the name of the uniform in "
+"the shader. It must match *exactly* to the name of the uniform in the shader "
+"or else it will not be recognized."
 msgstr ""
 "``set_shader_param`` の最初の引数はシェーダーのuniformの名前です。シェーダー"
 "のuniformの名前と\\ *完全に*\\ 一致する必要があります。一致しない場合、認識さ"
@@ -776,7 +887,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "It's important to understand that textures that are supplied as color "
-"require hints for proper sRGB->linear conversion (i.e. ``hint_albedo``), as "
+"require hints for proper sRGB->linear conversion (i.e. ``source_color``), as "
 "Godot's 3D engine renders in linear color space."
 msgstr ""
 "Godotの3Dエンジンは線形色空間でレンダリングするため、色として提供されるテクス"
@@ -789,8 +900,12 @@ msgstr "以下のヒントの完全なリスト:"
 msgid "Hint"
 msgstr "ヒント"
 
-msgid "hint_color"
-msgstr "\\ hint_color"
+#, fuzzy
+msgid "**vec3, vec4**"
+msgstr "\\ **vec4**"
+
+msgid "source_color"
+msgstr ""
 
 #, fuzzy
 msgid "Used as color."
@@ -807,19 +922,9 @@ msgstr "\\ hint_range(min,max [,step] )"
 msgid "Restricted to values in a range (with min/max/step)."
 msgstr "範囲として使用(最小/最大/ステップあり)"
 
-msgid "hint_albedo"
-msgstr "\\ hint_albedo"
-
 #, fuzzy
-msgid "Used as albedo color, default white."
-msgstr "アルベド色として使用、デフォルトは白"
-
-msgid "hint_black_albedo"
-msgstr "\\ hint_black_albedo"
-
-#, fuzzy
-msgid "Used as albedo color, default black."
-msgstr "アルベド色として使用、デフォルトは黒"
+msgid "Used as albedo color."
+msgstr "色として使用"
 
 msgid "hint_normal"
 msgstr "\\ hint_normal"
@@ -828,23 +933,75 @@ msgstr "\\ hint_normal"
 msgid "Used as normalmap."
 msgstr "法線マップとして使用"
 
-msgid "hint_white"
+#, fuzzy
+msgid "hint_default_white"
 msgstr "\\ hint_white"
 
-msgid "As value, default to white."
-msgstr "値として、デフォルトは白です。"
+#, fuzzy
+msgid "As value or albedo color, default to opaque white."
+msgstr "アルベド色として使用、デフォルトは白"
 
-msgid "hint_black"
+#, fuzzy
+msgid "hint_default_black"
 msgstr "\\ hint_black"
 
-msgid "As value, default to black"
-msgstr "値として、デフォルトは黒です。"
+#, fuzzy
+msgid "As value or albedo color, default to opaque black."
+msgstr "アルベド色として使用、デフォルトは黒"
 
-msgid "hint_aniso"
+msgid "hint_default_transparent"
+msgstr ""
+
+#, fuzzy
+msgid "As value or albedo color, default to transparent black."
+msgstr "アルベド色として使用、デフォルトは黒"
+
+#, fuzzy
+msgid "hint_anisotropy"
 msgstr "\\ hint_aniso"
 
 msgid "As flowmap, default to right."
 msgstr "フローマップとして、デフォルトは右です。"
+
+msgid "hint_roughness[_r, _g, _b, _a, _normal, _gray]"
+msgstr ""
+
+msgid ""
+"Used for roughness limiter on import (attempts reducing specular aliasing). "
+"``_normal`` is a normal map that guides the roughness limiter, with "
+"roughness increasing in areas that have high-frequency detail."
+msgstr ""
+
+msgid "filter[_nearest, _linear][_mipmap][_anisotropic]"
+msgstr ""
+
+msgid "Enabled specified texture filtering."
+msgstr ""
+
+msgid "repeat[_enable, _disable]"
+msgstr ""
+
+msgid "Enabled texture repeating."
+msgstr ""
+
+msgid "hint_screen_texture"
+msgstr ""
+
+msgid "Texture is the screen texture."
+msgstr ""
+
+#, fuzzy
+msgid "hint_depth_texture"
+msgstr "深度テクスチャ"
+
+msgid "Texture is the depth texture."
+msgstr ""
+
+msgid "hint_normal_roughness_texture"
+msgstr ""
+
+msgid "Texture is the normal roughness texture."
+msgstr ""
 
 msgid ""
 "GDScript uses different variable types than GLSL does, so when passing "
@@ -855,26 +1012,96 @@ msgstr ""
 "数を渡すと、Godotはタイプを自動的に変換します。以下は、対応するタイプの表で"
 "す:"
 
+msgid "GLSL type"
+msgstr "GLSL型"
+
 msgid "GDScript type"
 msgstr "GDScript型"
 
-msgid "GLSL type"
-msgstr "GLSL型"
+msgid "Notes"
+msgstr "備考"
+
+msgid "Bitwise packed int where bit 0 (LSB) corresponds to x."
+msgstr ""
+
+msgid "For example, a bvec2 of (bx, by) could be created in the following way:"
+msgstr ""
+
+#, fuzzy
+msgid "**Vector2i**"
+msgstr "\\ **Vector2**"
+
+#, fuzzy
+msgid "**Vector3i**"
+msgstr "\\ **Vector3**"
+
+#, fuzzy
+msgid "**Vector4i**"
+msgstr "\\ **Vector2**"
 
 msgid "**Vector2**"
 msgstr "\\ **Vector2**"
 
-msgid "**Vector3**"
+#, fuzzy
+msgid "**Vector3**, **Color**"
 msgstr "\\ **Vector3**"
 
-msgid "**Color**"
-msgstr "\\ **Color**"
+msgid "When Color is used, it will be interpreted as (r, g, b)."
+msgstr ""
 
-msgid "**Transform**"
-msgstr "\\ **Transform**"
+msgid "**Vector4**, **Color**, **Rect2**, **Plane**, **Quaternion**"
+msgstr ""
+
+msgid "When Color is used, it will be interpreted as (r, g, b, a)."
+msgstr ""
+
+msgid ""
+"When Rect2 is used, it will be interpreted as (position.x, position.y, size."
+"x, size.y)."
+msgstr ""
+
+msgid ""
+"When Plane is used it will be interpreted as (normal.x, normal.y, normal.z, "
+"d)."
+msgstr ""
 
 msgid "**Transform2D**"
 msgstr "\\ **Transform2D**"
+
+#, fuzzy
+msgid "**Basis**"
+msgstr "Basis(基底)"
+
+#, fuzzy
+msgid "**mat4** **mat4**"
+msgstr "\\ **mat4**"
+
+#, fuzzy
+msgid "**Projection**, **Transform3D**"
+msgstr "\\ **Transform2D**"
+
+msgid "When a Transform3D is used, the w Vector is set to the identity."
+msgstr ""
+
+#, fuzzy
+msgid "**Texture2D**"
+msgstr "テクスチャ"
+
+#, fuzzy
+msgid "**Texture2DArray**"
+msgstr "\\ **sampler2DArray**"
+
+#, fuzzy
+msgid "**Texture3D**"
+msgstr "テクスチャ"
+
+#, fuzzy
+msgid "**Cubemap**"
+msgstr "\\ **samplerCube**"
+
+#, fuzzy
+msgid "**CubemapArray**"
+msgstr "\\ **usampler2DArray**"
 
 #, fuzzy
 msgid ""
@@ -888,6 +1115,168 @@ msgstr ""
 msgid "Uniforms can also be assigned default values:"
 msgstr "Uniformにはデフォルト値を割り当てることもできます:"
 
+msgid ""
+"If you need to make multiple uniforms to be grouped in the specific category "
+"of an inspector, you can use a `group_uniform` keyword like:"
+msgstr ""
+
+#, fuzzy
+msgid "You can close the group by using:"
+msgstr "コードで同じ結果を得ることができます:"
+
+msgid ""
+"The syntax also supports subgroups (it's not mandatory to declare the base "
+"group before this):"
+msgstr ""
+
+#, fuzzy
+msgid "Global uniforms"
+msgstr "フラグメント用ビルトイン"
+
+msgid ""
+"Sometimes, you want to modify a parameter in many different shaders at once. "
+"With a regular uniform, this takes a lot of work as all these shaders need "
+"to be tracked and the uniform needs to be set for each of them. Global "
+"uniforms allow you to create and update uniforms that will be available in "
+"all shaders, in every shader type (``canvas_item``, ``spatial``, "
+"``particles``, ``sky`` and ``fog``)."
+msgstr ""
+
+msgid ""
+"Global uniforms are especially useful for environmental effects that affect "
+"many objects in a scene, like having foliage bend when the player is nearby, "
+"or having objects move with the wind."
+msgstr ""
+
+msgid ""
+"To create a global uniform, open the **Project Settings** then go to the "
+"**Shader Globals** tab. Specify a name for the uniform (case-sensitive) and "
+"a type, then click **Add** in the top-right corner of the dialog. You can "
+"then edit the value assigned to the uniform by clicking the value in the "
+"list of uniforms:"
+msgstr ""
+
+msgid ""
+"Adding a global uniform in the Shader Globals tab of the Project Settings"
+msgstr ""
+
+msgid "After creating a global uniform, you can use it in a shader as follows:"
+msgstr ""
+
+msgid ""
+"Note that the global uniform *must* exist in the Project Settings at the "
+"time the shader is saved, or compilation will fail. While you can assign a "
+"default value using ``global uniform vec4 my_color = ...`` in the shader "
+"code, it will be ignored as the global uniform must always be defined in the "
+"Project Settings anyway."
+msgstr ""
+
+msgid ""
+"To change the value of a global uniform at run-time, use the :ref:"
+"`RenderingServer.global_shader_parameter_set "
+"<class_RenderingServer_method_global_shader_parameter_set>` method in a "
+"script:"
+msgstr ""
+
+msgid ""
+"Assigning global uniform values can be done as many times as desired without "
+"impacting performance, as setting data doesn't require synchronization "
+"between the CPU and GPU."
+msgstr ""
+
+#, fuzzy
+msgid "You can also add or remove global uniforms at run-time:"
+msgstr "独自のノードを戻り値の型として使用することもできます:"
+
+msgid ""
+"Adding or removing global uniforms at run-time has a performance cost, "
+"although it's not as pronounced compared to getting global uniform values "
+"from a script (see the warning below)."
+msgstr ""
+
+msgid ""
+"While you *can* query the value of a global uniform at run-time in a script "
+"using ``RenderingServer.global_shader_parameter_get(\"uniform_name\")``, "
+"this has a large performance penalty as the rendering thread needs to "
+"synchronize with the calling thread."
+msgstr ""
+
+msgid ""
+"Therefore, it's not recommended to read global shader uniform values "
+"continuously in a script. If you need to read values in a script after "
+"setting them, consider creating an :ref:`autoload <doc_singletons_autoload>` "
+"where you store the values you need to query at the same time you're setting "
+"them as global uniforms."
+msgstr ""
+
+msgid "Per-instance uniforms"
+msgstr ""
+
+msgid "Per-instance uniforms are only available in ``spatial`` (3D) shaders."
+msgstr ""
+
+msgid ""
+"Sometimes, you want to modify a parameter on each node using the material. "
+"As an example, in a forest full of trees, when you want each tree to have a "
+"slightly different color that is editable by hand. Without per-instance "
+"uniforms, this requires creating a unique material for each tree (each with "
+"a slightly different hue). This makes material management more complex, and "
+"also has a performance overhead due to the scene requiring more unique "
+"material instances. Vertex colors could also be used here, but they'd "
+"require creating unique copies of the mesh for each different color, which "
+"also has a performance overhead."
+msgstr ""
+
+msgid ""
+"Per-instance uniforms are set on each GeometryInstance3D, rather than on "
+"each Material instance. Take this into account when working with meshes that "
+"have multiple materials assigned to them, or MultiMesh setups."
+msgstr ""
+
+msgid ""
+"After saving the shader, you can change the per-instance uniform's value "
+"using the inspector:"
+msgstr ""
+
+msgid ""
+"Setting a per-instance uniform's value in the GeometryInstance3D section of "
+"the inspector"
+msgstr ""
+
+msgid ""
+"Per-instance uniform values can also be set at run-time using "
+"`set_instance_shader_parameter<class_GeometryInstance3D_method_set_instance_shader_parameter>` "
+"method on a node that inherits from :ref:`class_GeometryInstance3D`:"
+msgstr ""
+
+msgid ""
+"When using per-instance uniforms, there are some restrictions you should be "
+"aware of:"
+msgstr ""
+
+msgid ""
+"**Per-instance uniforms do not support textures**, only regular scalar and "
+"vector types. As a workaround, you can pass a texture array as a regular "
+"uniform, then pass the index of the texture to be drawn using a per-instance "
+"uniform."
+msgstr ""
+
+msgid "There is a practical maximum limit of 16 instance uniforms per shader."
+msgstr ""
+
+msgid ""
+"If your mesh uses multiple materials, the parameters for the first mesh "
+"material found will \"win\" over the subsequent ones, unless they have the "
+"same name, index *and* type. In this case, all parameters are affected "
+"correctly."
+msgstr ""
+
+msgid ""
+"If you run into the above situation, you can avoid clashes by manually "
+"specifying the index (0-15) of the instance uniform by using the "
+"``instance_index`` hint:"
+msgstr ""
+
 #, fuzzy
 msgid "Built-in variables"
 msgstr "インスタンスの編集"
@@ -896,7 +1285,7 @@ msgid ""
 "A large number of built-in variables are available, like ``UV``, ``COLOR`` "
 "and ``VERTEX``. What variables are available depends on the type of shader "
 "(``spatial``, ``canvas_item`` or ``particle``) and the function used "
-"(``vertex``, ``fragment`` or ``light``). For a list of the build-in "
+"(``vertex``, ``fragment`` or ``light``). For a list of the built-in "
 "variables that are available, please see the corresponding pages:"
 msgstr ""
 
@@ -911,6 +1300,14 @@ msgstr ":ref:`キャンバスアイテムシェーダ <doc_canvas_item_shader>`"
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
 msgstr "\\ :ref:`doc_particle_shader`"
 
+#, fuzzy
+msgid ":ref:`Sky shaders <doc_sky_shader>`"
+msgstr "\\ :ref:`doc_spatial_shader`"
+
+#, fuzzy
+msgid ":ref:`Fog shaders <doc_fog_shader>`"
+msgstr "\\ :ref:`doc_spatial_shader`"
+
 msgid "Built-in functions"
 msgstr "組み込み関数"
 
@@ -923,51 +1320,50 @@ msgstr ""
 "vec_type(float)、vec_int_type、vec_uint_type、vec_bool_type 命名法を使用する"
 "場合、スカラーまたはベクトルを使用できます。"
 
-msgid ""
-"For a list of the functions that are not available in the GLES2 backend, "
-"please see the :ref:`Differences between GLES2 and GLES3 doc "
-"<doc_gles2_gles3_differences>`."
-msgstr ""
-"GLES2バックエンドで使用できない関数のリストについては、\\ :ref:`Differences "
-"between GLES2 and GLES3 doc <doc_gles2_gles3_differences>` を参照してくださ"
-"い。"
-
 msgid "Function"
 msgstr "関数"
+
+msgid "Description / Return value"
+msgstr ""
 
 #, fuzzy
 msgid "vec_type **radians** (vec_type degrees)"
 msgstr "vec_type **radians** ( vec_type 度 )"
 
-msgid "Convert degrees to radians"
+#, fuzzy
+msgid "Convert degrees to radians."
 msgstr "度をラジアンに変換する"
 
 #, fuzzy
 msgid "vec_type **degrees** (vec_type radians)"
 msgstr "vec_type **degrees** ( vec_type ラジアン )"
 
-msgid "Convert radians to degrees"
+#, fuzzy
+msgid "Convert radians to degrees."
 msgstr "ラジアンを度に変換"
 
 #, fuzzy
 msgid "vec_type **sin** (vec_type x)"
 msgstr "\\ vec_type **sin** ( vec_type x )"
 
-msgid "Sine"
+#, fuzzy
+msgid "Sine."
 msgstr "サイン(正弦)"
 
 #, fuzzy
 msgid "vec_type **cos** (vec_type x)"
 msgstr "\\ vec_type **cos** ( vec_type x )"
 
-msgid "Cosine"
+#, fuzzy
+msgid "Cosine."
 msgstr "コサイン(余弦)"
 
 #, fuzzy
 msgid "vec_type **tan** (vec_type x)"
 msgstr "\\ vec_type **tan** ( vec_type x )"
 
-msgid "Tangent"
+#, fuzzy
+msgid "Tangent."
 msgstr "タンジェント(正接)"
 
 #, fuzzy
@@ -975,7 +1371,7 @@ msgid "vec_type **asin** (vec_type x)"
 msgstr "\\ vec_type **asin** ( vec_type x )"
 
 #, fuzzy
-msgid "Arcsine"
+msgid "Arcsine."
 msgstr "アークコサイン(逆余弦)"
 
 #, fuzzy
@@ -983,7 +1379,7 @@ msgid "vec_type **acos** (vec_type x)"
 msgstr "\\ vec_type **acos** ( vec_type x )"
 
 #, fuzzy
-msgid "Arccosine"
+msgid "Arccosine."
 msgstr "アークコサイン(逆余弦)"
 
 #, fuzzy
@@ -991,7 +1387,7 @@ msgid "vec_type **atan** (vec_type y_over_x)"
 msgstr "\\ vec_type **atan** ( vec_type y_over_x )"
 
 #, fuzzy
-msgid "Arctangent"
+msgid "Arctangent."
 msgstr "アークタンジェント(逆正接)"
 
 #, fuzzy
@@ -999,15 +1395,11 @@ msgid "vec_type **atan** (vec_type y, vec_type x)"
 msgstr "\\ vec_type **atan** ( vec_type y, vec_type x )"
 
 #, fuzzy
-msgid "Arctangent to convert vector to angle"
-msgstr "ベクトルを角度に変換するアークタンジェント"
-
-#, fuzzy
 msgid "vec_type **sinh** (vec_type x)"
 msgstr "\\ vec_type **sinh** ( vec_type x )"
 
 #, fuzzy
-msgid "Hyperbolic sine"
+msgid "Hyperbolic sine."
 msgstr "双曲線コサイン"
 
 #, fuzzy
@@ -1015,7 +1407,7 @@ msgid "vec_type **cosh** (vec_type x)"
 msgstr "\\ vec_type **cosh** ( vec_type x )"
 
 #, fuzzy
-msgid "Hyperbolic cosine"
+msgid "Hyperbolic cosine."
 msgstr "双曲線コサイン"
 
 #, fuzzy
@@ -1023,7 +1415,7 @@ msgid "vec_type **tanh** (vec_type x)"
 msgstr "\\ vec_type **tanh** ( vec_type x )"
 
 #, fuzzy
-msgid "Hyperbolic tangent"
+msgid "Hyperbolic tangent."
 msgstr "双曲線タンジェント"
 
 #, fuzzy
@@ -1031,7 +1423,7 @@ msgid "vec_type **asinh** (vec_type x)"
 msgstr "\\ vec_type **asinh** ( vec_type x )"
 
 #, fuzzy
-msgid "Inverse hyperbolic sine"
+msgid "Inverse hyperbolic sine."
 msgstr "双曲線アークコサイン"
 
 #, fuzzy
@@ -1039,7 +1431,7 @@ msgid "vec_type **acosh** (vec_type x)"
 msgstr "\\ vec_type **acosh** ( vec_type x )"
 
 #, fuzzy
-msgid "Inverse hyperbolic cosine"
+msgid "Inverse hyperbolic cosine."
 msgstr "双曲線アークコサイン"
 
 #, fuzzy
@@ -1047,14 +1439,14 @@ msgid "vec_type **atanh** (vec_type x)"
 msgstr "\\ vec_type **atanh** ( vec_type x )"
 
 #, fuzzy
-msgid "Inverse hyperbolic tangent"
+msgid "Inverse hyperbolic tangent."
 msgstr "双曲線アークタンジェント"
 
 #, fuzzy
 msgid "vec_type **pow** (vec_type x, vec_type y)"
 msgstr "\\ vec_type **pow** ( vec_type x, vec_type y )"
 
-msgid "Power (undefined if ``x`` < 0 or if ``x`` = 0 and ``y`` <= 0)"
+msgid "Power (undefined if ``x`` < 0 or if ``x`` == 0 and ``y`` <= 0)."
 msgstr ""
 
 #, fuzzy
@@ -1062,7 +1454,7 @@ msgid "vec_type **exp** (vec_type x)"
 msgstr "\\ vec_type **exp** ( vec_type x )"
 
 #, fuzzy
-msgid "Base-e exponential"
+msgid "Base-e exponential."
 msgstr "eを底とする指数"
 
 #, fuzzy
@@ -1070,7 +1462,7 @@ msgid "vec_type **exp2** (vec_type x)"
 msgstr "\\ vec_type **exp2** ( vec_type x )"
 
 #, fuzzy
-msgid "Base-2 exponential"
+msgid "Base-2 exponential."
 msgstr "2を底とする指数"
 
 #, fuzzy
@@ -1078,7 +1470,7 @@ msgid "vec_type **log** (vec_type x)"
 msgstr "\\ vec_type **log** ( vec_type x )"
 
 #, fuzzy
-msgid "Natural logarithm"
+msgid "Natural logarithm."
 msgstr "自然対数"
 
 #, fuzzy
@@ -1086,7 +1478,7 @@ msgid "vec_type **log2** (vec_type x)"
 msgstr "\\ vec_type **log2** ( vec_type x )"
 
 #, fuzzy
-msgid "Base-2 logarithm"
+msgid "Base-2 logarithm."
 msgstr "2を底とする対数"
 
 #, fuzzy
@@ -1094,7 +1486,7 @@ msgid "vec_type **sqrt** (vec_type x)"
 msgstr "\\ vec_type **sqrt** ( vec_type x )"
 
 #, fuzzy
-msgid "Square root"
+msgid "Square root."
 msgstr "平方根"
 
 #, fuzzy
@@ -1102,159 +1494,161 @@ msgid "vec_type **inversesqrt** (vec_type x)"
 msgstr "\\ vec_type **inversesqrt** ( vec_type x )"
 
 #, fuzzy
-msgid "Inverse square root"
+msgid "Inverse square root."
 msgstr "逆平方根"
 
 #, fuzzy
 msgid "vec_type **abs** (vec_type x)"
 msgstr "\\ vec_type **abs** ( vec_type x )"
 
-msgid "Absolute"
-msgstr "絶対値"
-
 #, fuzzy
 msgid "ivec_type **abs** (ivec_type x)"
 msgstr "\\ ivec_type **abs** ( ivec_type x )"
+
+msgid "Absolute value (returns positive value if negative)."
+msgstr ""
 
 #, fuzzy
 msgid "vec_type **sign** (vec_type x)"
 msgstr "\\ vec_type **sign** ( vec_type x )"
 
-msgid "Sign"
-msgstr "符号"
-
 #, fuzzy
 msgid "ivec_type **sign** (ivec_type x)"
 msgstr "\\ ivec_type **sign** ( ivec_type x )"
+
+msgid ""
+"Sign (returns ``1.0`` if positive, ``-1.0`` if negative, ``0.0`` if zero)."
+msgstr ""
 
 #, fuzzy
 msgid "vec_type **floor** (vec_type x)"
 msgstr "\\ vec_type **floor** ( vec_type x )"
 
-msgid "Floor"
-msgstr "フロア(床関数)"
+#, fuzzy
+msgid "Round to the integer below."
+msgstr "最も近い偶数にラウンド"
 
 #, fuzzy
 msgid "vec_type **round** (vec_type x)"
 msgstr "\\ vec_type **round** ( vec_type x )"
 
-msgid "Round"
-msgstr "ラウンド(四捨五入)"
+#, fuzzy
+msgid "Round to the nearest integer."
+msgstr "最も近い偶数にラウンド"
 
 #, fuzzy
 msgid "vec_type **roundEven** (vec_type x)"
 msgstr "\\ vec_type **roundEven** ( vec_type x )"
 
 #, fuzzy
-msgid "Round to the nearest even number"
+msgid "Round to the nearest even integer."
 msgstr "最も近い偶数にラウンド"
 
 #, fuzzy
 msgid "vec_type **trunc** (vec_type x)"
 msgstr "\\ vec_type **trunc** ( vec_type x )"
 
-msgid "Truncation"
+#, fuzzy
+msgid "Truncation."
 msgstr "小数点切り捨て"
 
 #, fuzzy
 msgid "vec_type **ceil** (vec_type x)"
 msgstr "\\ vec_type **ceil** ( vec_type x )"
 
-msgid "Ceil"
-msgstr "シィール(天井関数)"
+#, fuzzy
+msgid "Round to the integer above."
+msgstr "最も近い偶数にラウンド"
 
 #, fuzzy
 msgid "vec_type **fract** (vec_type x)"
 msgstr "\\ vec_type **fract** ( vec_type x )"
 
-msgid "Fractional"
-msgstr "小数部"
+msgid "Fractional (returns ``x - floor(x)``)."
+msgstr ""
 
 #, fuzzy
 msgid "vec_type **mod** (vec_type x, vec_type y)"
 msgstr "\\ vec_type **mod** ( vec_type x, vec_type y )"
 
-msgid "Remainder"
-msgstr "余剰"
+#, fuzzy
+msgid "vec_type **mod** (vec_type x, float y)"
+msgstr "\\ vec_type **mod** ( vec_type x , float y )"
 
 #, fuzzy
-msgid "vec_type **mod** (vec_type x , float y)"
-msgstr "\\ vec_type **mod** ( vec_type x , float y )"
+msgid "Modulo (division remainder)."
+msgstr "乗算/除算/剰余"
 
 #, fuzzy
 msgid "vec_type **modf** (vec_type x, out vec_type i)"
 msgstr "\\ vec_type **modf** ( vec_type x, out vec_type i )"
 
 #, fuzzy
-msgid "Fractional of ``x``, with ``i`` as integer part"
+msgid "Fractional of ``x``, with ``i`` as integer part."
 msgstr "xの小数部、iに整数部分が入る"
 
 #, fuzzy
 msgid "vec_type  **min** (vec_type a, vec_type b)"
 msgstr "\\ vec_type **min** ( vec_type a, vec_type b )"
 
-msgid "Minimum"
-msgstr "小さい方の値"
+#, fuzzy
+msgid "Lowest value between ``a`` and ``b``."
+msgstr "xとyの絶対微分の合計"
 
 #, fuzzy
 msgid "vec_type  **max** (vec_type a, vec_type b)"
 msgstr "\\ vec_type **max** ( vec_type a, vec_type b )"
 
-msgid "Maximum"
-msgstr "大きい方の値"
+#, fuzzy
+msgid "Highest value between ``a`` and ``b``."
+msgstr ""
+"これにより、各魚に ``2`` と ``10`` の間のユニークな速度が与えられます。"
 
 #, fuzzy
 msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
 msgstr "\\ vec_type **clamp** ( vec_type x, vec_type min, vec_type max )"
 
-#, fuzzy
-msgid "Clamp to ``min..max``"
-msgstr "MinとMaxの間にクランプ"
+msgid "Clamp ``x`` between ``min`` and ``max`` (inclusive)."
+msgstr ""
 
 #, fuzzy
 msgid "float **mix** (float a, float b, float c)"
 msgstr "\\ vec_type **mix** ( float a, float b, float c )"
 
 #, fuzzy
-msgid "Linear interpolate"
-msgstr "aとbをcの比率で線形補間"
-
-#, fuzzy
 msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
 msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, float c )"
-
-#, fuzzy
-msgid "Linear interpolate (scalar coefficient)"
-msgstr "aとbのベクトルをc(スカラー)の比率で線形補完"
-
-#, fuzzy
-msgid "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
-msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
-
-#, fuzzy
-msgid "Linear interpolate (vector coefficient)"
-msgstr "aとbのベクトルをc(ベクトル)の比率で線形補完"
 
 #, fuzzy
 msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, bvec_type c )"
 
+msgid "Linear interpolate between ``a`` and ``b`` by ``c``."
+msgstr ""
+
 #, fuzzy
-msgid "Linear interpolate (boolean-vector selection)"
-msgstr "aとbをc(ブールベクトル選択)で線形補間"
+msgid "vec_type **fma** (vec_type a, vec_type b, vec_type c)"
+msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
+
+msgid ""
+"Performs a fused multiply-add operation: ``(a * b + c)`` (faster than doing "
+"it manually)."
+msgstr ""
 
 #, fuzzy
 msgid "vec_type **step** (vec_type a, vec_type b)"
 msgstr "\\ vec_type **step** ( vec_type a, vec_type b )"
 
-msgid "``b[i] < a[i] ? 0.0 : 1.0``"
+#, fuzzy
+msgid "``b[i] < a[i] ? 0.0 : 1.0``."
 msgstr "\\ ``b[i] < a[i] ? 0.0 : 1.0``"
 
 #, fuzzy
 msgid "vec_type **step** (float a, vec_type b)"
 msgstr "\\ vec_type **step** ( float a, vec_type b)"
 
-msgid "``b[i] < a ? 0.0 : 1.0``"
+#, fuzzy
+msgid "``b[i] < a ? 0.0 : 1.0``."
 msgstr "\\ ``b[i] < a ? 0.0 : 1.0``"
 
 #, fuzzy
@@ -1262,19 +1656,18 @@ msgid "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
 msgstr "\\ vec_type **smoothstep** ( vec_type a, vec_type b, vec_type c )"
 
 #, fuzzy
-msgid "Hermite interpolate"
-msgstr "エルミート補間"
-
-#, fuzzy
 msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
 msgstr "\\ vec_type **smoothstep** ( float a, float b, vec_type c )"
+
+msgid "Hermite interpolate between ``a`` and ``b`` by ``c``."
+msgstr ""
 
 #, fuzzy
 msgid "bvec_type **isnan** (vec_type x)"
 msgstr "\\ bvec_type **isnan** ( vec_type x )"
 
 #, fuzzy
-msgid "Returns ``true`` if scalar or vector component is ``NaN``"
+msgid "Returns ``true`` if scalar or vector component is ``NaN``."
 msgstr "スカラー、またはベクトル要素がNaNである"
 
 #, fuzzy
@@ -1282,34 +1675,38 @@ msgid "bvec_type **isinf** (vec_type x)"
 msgstr "\\ bvec_type **isinf** ( vec_type x )"
 
 #, fuzzy
-msgid "Returns ``true`` if scalar or vector component is ``INF``"
+msgid "Returns ``true`` if scalar or vector component is ``INF``."
 msgstr "スカラー、またはベクトル要素が INF である"
 
 #, fuzzy
 msgid "ivec_type **floatBitsToInt** (vec_type x)"
 msgstr "\\ ivec_type **floatBitsToInt** ( vec_type x )"
 
-msgid "Float->Int bit copying, no conversion"
+#, fuzzy
+msgid "Float->Int bit copying, no conversion."
 msgstr "浮動小数点数->Int ビットコピー、変換なし"
 
 #, fuzzy
 msgid "uvec_type **floatBitsToUint** (vec_type x)"
 msgstr "\\ uvec_type **floatBitsToUint** ( vec_type x )"
 
-msgid "Float->UInt bit copying, no conversion"
+#, fuzzy
+msgid "Float->UInt bit copying, no conversion."
 msgstr "浮動小数点数->UInt ビットコピー、変換なし"
 
 #, fuzzy
 msgid "vec_type **intBitsToFloat** (ivec_type x)"
 msgstr "\\ vec_type **intBitsToFloat** ( ivec_type x )"
 
-msgid "Int->Float bit copying, no conversion"
+#, fuzzy
+msgid "Int->Float bit copying, no conversion."
 msgstr "Int->浮動小数点 ビットコピー、変換なし"
 
 msgid "vec_type **uintBitsToFloat** (uvec_type x)"
 msgstr "\\ vec_type **uintBitsToFloat** (uvec_type x)"
 
-msgid "UInt->Float bit copying, no conversion"
+#, fuzzy
+msgid "UInt->Float bit copying, no conversion."
 msgstr "UInt->浮動小数点 ビットコピー、変換なし"
 
 #, fuzzy
@@ -1317,49 +1714,55 @@ msgid "float **length** (vec_type x)"
 msgstr "\\ float **length** ( vec_type x )"
 
 #, fuzzy
-msgid "Vector length"
+msgid "Vector length."
 msgstr "ベクトルの長さ"
 
 #, fuzzy
 msgid "float **distance** (vec_type a, vec_type b)"
 msgstr "\\ float **distance** ( vec_type a, vec_type b )"
 
-msgid "Distance between vectors i.e ``length(a - b)``"
+#, fuzzy
+msgid "Distance between vectors i.e ``length(a - b)``."
 msgstr "ベクトル間の距離、つまり ``length(a-b)``"
 
 #, fuzzy
 msgid "float **dot** (vec_type a, vec_type b)"
 msgstr "\\ float **dot** ( vec_type a, vec_type b )"
 
-msgid "Dot product"
+#, fuzzy
+msgid "Dot product."
 msgstr "内積 (ドット積)"
 
 #, fuzzy
 msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr "\\ vec3 **cross** ( vec3 a, vec3 b )"
 
-msgid "Cross product"
+#, fuzzy
+msgid "Cross product."
 msgstr "外積 (クロス積)"
 
 #, fuzzy
 msgid "vec_type **normalize** (vec_type x)"
 msgstr "\\ vec_type **normalize** ( vec_type x )"
 
-msgid "Normalize to unit length"
+#, fuzzy
+msgid "Normalize to unit length."
 msgstr "単位長に正規化"
 
 #, fuzzy
 msgid "vec3 **reflect** (vec3 I, vec3 N)"
 msgstr "\\ vec3 **reflect** ( vec3 I, vec3 N )"
 
-msgid "Reflect"
+#, fuzzy
+msgid "Reflect."
 msgstr "反射"
 
 #, fuzzy
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
 msgstr "\\ vec3 **refract** ( vec3 I, vec3 N, float eta )"
 
-msgid "Refract"
+#, fuzzy
+msgid "Refract."
 msgstr "屈折"
 
 #, fuzzy
@@ -1367,7 +1770,7 @@ msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 msgstr "\\ vec_type **faceforward** ( vec_type N, vec_type I, vec_type Nref )"
 
 #, fuzzy
-msgid "If ``dot(Nref, I)`` < 0, return N, otherwise –N"
+msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
 msgstr ""
 "もしも dot(Nref, I) < 0 なら Nを返し、そうでなければ –Nを返す (訳注: 視線に対"
 "して面の法線の表裏を揃える時などに使用)"
@@ -1377,7 +1780,7 @@ msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 msgstr "\\ mat_type **matrixCompMult** ( mat_type x, mat_type y )"
 
 #, fuzzy
-msgid "Matrix component multiplication"
+msgid "Matrix component multiplication."
 msgstr "行列要素の乗算"
 
 #, fuzzy
@@ -1385,7 +1788,7 @@ msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
 msgstr "\\ mat_type **outerProduct** ( vec_type column, vec_type row )"
 
 #, fuzzy
-msgid "Matrix outer product"
+msgid "Matrix outer product."
 msgstr "行列の外積"
 
 #, fuzzy
@@ -1393,7 +1796,7 @@ msgid "mat_type **transpose** (mat_type m)"
 msgstr "\\ mat_type **transpose** ( mat_type m )"
 
 #, fuzzy
-msgid "Transpose matrix"
+msgid "Transpose matrix."
 msgstr "転置行列"
 
 #, fuzzy
@@ -1401,7 +1804,7 @@ msgid "float **determinant** (mat_type m)"
 msgstr "\\ float **determinant** ( mat_type m )"
 
 #, fuzzy
-msgid "Matrix determinant"
+msgid "Matrix determinant."
 msgstr "行列式"
 
 #, fuzzy
@@ -1409,7 +1812,7 @@ msgid "mat_type **inverse** (mat_type m)"
 msgstr "\\ mat_type **inverse** ( mat_type m )"
 
 #, fuzzy
-msgid "Inverse matrix"
+msgid "Inverse matrix."
 msgstr "逆行列"
 
 #, fuzzy
@@ -1417,7 +1820,7 @@ msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
 msgstr "\\ bvec_type **lessThan** ( vec_type x, vec_type y )"
 
 #, fuzzy
-msgid "Bool vector comparison on < int/uint/float vectors"
+msgid "Bool vector comparison on < int/uint/float vectors."
 msgstr ""
 "int/uint/floatベクトルの各要素を比較(x < y)した結果をBoolベクトルとして返す"
 
@@ -1426,7 +1829,7 @@ msgid "bvec_type **greaterThan** (vec_type x, vec_type y)"
 msgstr "\\ bvec_type **greaterThan** ( vec_type x, vec_type y )"
 
 #, fuzzy
-msgid "Bool vector comparison on > int/uint/float vectors"
+msgid "Bool vector comparison on > int/uint/float vectors."
 msgstr ""
 "int/uint/floatベクトルの各要素を比較(x > y)した結果をBoolベクトルとして返す"
 
@@ -1435,7 +1838,7 @@ msgid "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
 msgstr "\\ bvec_type **lessThanEqual** ( vec_type x, vec_type y )"
 
 #, fuzzy
-msgid "Bool vector comparison on <= int/uint/float vectors"
+msgid "Bool vector comparison on <= int/uint/float vectors."
 msgstr ""
 "int/uint/floatベクトルの各要素を比較(x <= y)した結果をBoolベクトルとして返す"
 
@@ -1444,7 +1847,7 @@ msgid "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
 msgstr "\\ bvec_type **greaterThanEqual** ( vec_type x, vec_type y )"
 
 #, fuzzy
-msgid "Bool vector comparison on >= int/uint/float vectors"
+msgid "Bool vector comparison on >= int/uint/float vectors."
 msgstr ""
 "int/uint/floatベクトルの各要素を比較(x >= y)した結果をBoolベクトルとして返す"
 
@@ -1453,7 +1856,7 @@ msgid "bvec_type **equal** (vec_type x, vec_type y)"
 msgstr "\\ bvec_type **equal** ( vec_type x, vec_type y )"
 
 #, fuzzy
-msgid "Bool vector comparison on == int/uint/float vectors"
+msgid "Bool vector comparison on == int/uint/float vectors."
 msgstr ""
 "int/uint/floatベクトルの各要素を比較(x == y)した結果をBoolベクトルとして返す"
 
@@ -1462,7 +1865,7 @@ msgid "bvec_type **notEqual** (vec_type x, vec_type y)"
 msgstr "\\ bvec_type **notEqual** ( vec_type x, vec_type y )"
 
 #, fuzzy
-msgid "Bool vector comparison on != int/uint/float vectors"
+msgid "Bool vector comparison on != int/uint/float vectors."
 msgstr ""
 "int/uint/floatベクトルの各要素を比較(x != y)した結果をBoolベクトルとして返す"
 
@@ -1470,192 +1873,566 @@ msgstr ""
 msgid "bool **any** (bvec_type x)"
 msgstr "\\ bool **any** ( bvec_type x )"
 
-msgid "Any component is ``true``"
-msgstr "任意の要素が ``true``"
+msgid "``true`` if any component is ``true``, ``false`` otherwise."
+msgstr ""
 
 #, fuzzy
 msgid "bool **all** (bvec_type x)"
 msgstr "\\ bool **all** ( bvec_type x )"
 
-msgid "All components are ``true``"
-msgstr "全ての要素が ``true``"
+msgid "``true`` if all components are ``true``, ``false`` otherwise."
+msgstr ""
 
 #, fuzzy
 msgid "bvec_type **not** (bvec_type x)"
 msgstr "\\ bvec_type **not** ( bvec_type x )"
 
-msgid "Invert boolean vector"
+#, fuzzy
+msgid "Invert boolean vector."
 msgstr "ブールベクトルの反転"
 
 #, fuzzy
-msgid "ivec2 **textureSize** (sampler2D_type s, int lod)"
-msgstr "\\ ivec2 **textureSize** ( sampler2D_type s, int lod )"
-
-msgid "Get the size of a 2D texture"
-msgstr "2Dテクスチャのサイズを取得する"
-
-#, fuzzy
-msgid "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
-msgstr "\\ ivec3 **textureSize** ( sampler2DArray_type s, int lod )"
-
-msgid "Get the size of a 2D texture array"
-msgstr "2Dテクスチャ配列のサイズを取得する"
-
-#, fuzzy
-msgid "ivec3 **textureSize** (sampler3D s, int lod)"
+msgid "ivec2 **textureSize** (gsampler2D s, int lod)"
 msgstr "\\ ivec3 **textureSize** ( sampler3D s, int lod )"
 
-msgid "Get the size of a 3D texture"
-msgstr "3Dテクスチャのサイズを取得する"
+#, fuzzy
+msgid "ivec3 **textureSize** (gsampler2DArray s, int lod)"
+msgstr "\\ ivec3 **textureSize** ( sampler2DArray_type s, int lod )"
+
+#, fuzzy
+msgid "ivec3 **textureSize** (gsampler3D s, int lod)"
+msgstr "\\ ivec3 **textureSize** ( sampler3D s, int lod )"
 
 #, fuzzy
 msgid "ivec2 **textureSize** (samplerCube s, int lod)"
 msgstr "\\ ivec2 **textureSize** ( samplerCube s, int lod )"
 
 #, fuzzy
-msgid "Get the size of a cubemap texture"
+msgid "ivec2 **textureSize** (samplerCubeArray s, int lod)"
+msgstr "\\ ivec2 **textureSize** ( samplerCube s, int lod )"
+
+#, fuzzy
+msgid "Get the size of a texture."
+msgstr "2Dテクスチャのサイズを取得する"
+
+msgid ""
+"The LOD defines which mipmap level is used. An LOD value of ``0`` will use "
+"the full resolution texture."
+msgstr ""
+
+#, fuzzy
+msgid "vec2 **textureQueryLod** (gsampler2D s, vec2 p)"
+msgstr "\\ vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
+
+#, fuzzy
+msgid "vec3 **textureQueryLod** (gsampler2DArray s, vec2 p)"
+msgstr "\\ ivec3 **textureSize** ( sampler2DArray_type s, int lod )"
+
+#, fuzzy
+msgid "vec2 **textureQueryLod** (gsampler3D s, vec3 p)"
+msgstr "\\ vec4 **textureLod** ( samplerCube s, vec3 uv, float lod )"
+
+#, fuzzy
+msgid "vec2 **textureQueryLod** (samplerCube s, vec3 p)"
+msgstr "\\ vec4 **textureLod** ( samplerCube s, vec3 uv, float lod )"
+
+msgid ""
+"Compute the level-of-detail that would be used to sample from a texture. The "
+"``x`` component of the resulted value is the mipmap array that would be "
+"accessed. The ``y`` component is computed level-of-detail relative to the "
+"base level (regardless of the mipmap levels of the texture)."
+msgstr ""
+
+#, fuzzy
+msgid "int **textureQueryLevels** (gsampler2D s)"
+msgstr "\\ ivec3 **textureSize** ( sampler3D s, int lod )"
+
+#, fuzzy
+msgid "int **textureQueryLevels** (gsampler2DArray s)"
+msgstr "\\ ivec3 **textureSize** ( sampler2DArray_type s, int lod )"
+
+#, fuzzy
+msgid "int **textureQueryLevels** (gsampler3D s)"
+msgstr "\\ ivec3 **textureSize** ( sampler3D s, int lod )"
+
+#, fuzzy
+msgid "int **textureQueryLevels** (samplerCube s)"
+msgstr "\\ ivec2 **textureSize** ( samplerCube s, int lod )"
+
+#, fuzzy
+msgid "Get the number of accessible mipmap levels of a texture."
 msgstr "キューブテクスチャのサイズを取得する"
 
+msgid "If the texture is unassigned to a sampler, ``0`` is returned."
+msgstr ""
+
 #, fuzzy
-msgid "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
+msgid "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
 msgstr "\\ vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
 
-msgid "Perform a 2D texture read"
-msgstr "2Dテクスチャの読み取りを実行する"
-
 #, fuzzy
-msgid "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
+msgid "gvec4_type **texture** (gsampler2DArray s, vec3 p [, float bias])"
 msgstr ""
 "\\ vec4_type  **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
 
-msgid "Perform a 2D texture array read"
-msgstr "2D テクスチャ配列の読み取りを実行する"
-
 #, fuzzy
-msgid "vec4_type  **texture** (sampler3D_type s, vec3 uv [, float bias])"
+msgid "gvec4_type **texture** (gsampler3D s, vec3 p [, float bias])"
 msgstr "\\ vec4_type  **texture** ( sampler3D_type s, vec3 uv [, float bias] )"
 
-msgid "Perform a 3D texture read"
-msgstr "3Dテクスチャの読み取りを実行する"
-
 #, fuzzy
-msgid "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
+msgid "vec4 **texture** (samplerCube s, vec3 p [, float bias])"
 msgstr "\\ vec4 **texture** ( samplerCube s, vec3 uv [, float bias] )"
 
 #, fuzzy
-msgid "Perform a cubemap texture read"
-msgstr "キューブテクスチャの読み取りを実行する"
+msgid "vec4 **texture** (samplerCubeArray s, vec4 p [, float bias])"
+msgstr "\\ vec4 **texture** ( samplerCube s, vec3 uv [, float bias] )"
 
 #, fuzzy
-msgid "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
+msgid "Perform a texture read."
+msgstr "2Dテクスチャの読み取りを実行する"
+
+#, fuzzy
+msgid "gvec4_type **textureProj** (gsampler2D s, vec3 p [, float bias])"
 msgstr ""
 "\\ vec4_type **textureProj** ( sampler2D_type s, vec3 uv [, float bias] )"
 
-msgid "Perform a 2D texture read with projection"
-msgstr "投影を使用して2Dテクスチャの読み取りを実行する"
-
 #, fuzzy
-msgid "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
+msgid "gvec4_type **textureProj** (gsampler2D s, vec4 p [, float bias])"
 msgstr ""
 "\\ vec4_type **textureProj** ( sampler2D_type s, vec4 uv [, float bias] )"
 
 #, fuzzy
-msgid "vec4_type  **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
+msgid "gvec4_type **textureProj** (gsampler3D s, vec4 p [, float bias])"
 msgstr ""
 "\\ vec4_type  **textureProj** ( sampler3D_type s, vec4 uv [, float bias] )"
 
-msgid "Perform a 3D texture read with projection"
-msgstr "投影を使用して3Dテクスチャの読み取りを実行する"
+#, fuzzy
+msgid "Perform a texture read with projection."
+msgstr "投影を使用して2Dテクスチャの読み取りを実行する"
 
 #, fuzzy
-msgid "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
+msgid "gvec4_type **textureLod** (gsampler2D s, vec2 p, float lod)"
 msgstr "\\ vec4_type **textureLod** ( sampler2D_type s, vec2 uv, float lod )"
 
-msgid "Perform a 2D texture read at custom mipmap"
-msgstr "カスタムミップマップで2Dテクスチャの読み取りを実行する"
-
 #, fuzzy
-msgid "vec4_type **textureLod** (sampler2DArray_type s, vec3 uv, float lod)"
+msgid "gvec4_type **textureLod** (gsampler2DArray s, vec3 p, float lod)"
 msgstr ""
 "\\ vec4_type **textureLod** ( sampler2DArray_type s, vec3 uv, float lod )"
 
-msgid "Perform a 2D texture array read at custom mipmap"
-msgstr "カスタムミップマップで2Dテクスチャ配列の読み取りを実行します"
-
 #, fuzzy
-msgid "vec4_type **textureLod** (sampler3D_type s, vec3 uv, float lod)"
+msgid "gvec4_type **textureLod** (gsampler3D s, vec3 p, float lod)"
 msgstr "\\ vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
 
-msgid "Perform a 3D texture read at custom mipmap"
-msgstr "カスタムミップマップで3Dテクスチャの読み取りを実行する"
-
 #, fuzzy
-msgid "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
+msgid "vec4 **textureLod** (samplerCube s, vec3 p, float lod)"
 msgstr "\\ vec4 **textureLod** ( samplerCube s, vec3 uv, float lod )"
 
 #, fuzzy
-msgid "vec4_type **textureProjLod** (sampler2D_type s, vec3 uv, float lod)"
+msgid "vec4 **textureLod** (samplerCubeArray s, vec4 p, float lod)"
+msgstr "\\ vec4 **textureLod** ( samplerCube s, vec3 uv, float lod )"
+
+#, fuzzy
+msgid "Perform a texture read at custom mipmap."
+msgstr "カスタムミップマップで2Dテクスチャの読み取りを実行する"
+
+msgid ""
+"The LOD defines which mipmap level is used. An LOD value of ``0.0`` will use "
+"the full resolution texture."
+msgstr ""
+
+#, fuzzy
+msgid "gvec4_type **textureProjLod** (gsampler2D s, vec3 p, float lod)"
 msgstr ""
 "\\ vec4_type **textureProjLod** ( sampler2D_type s, vec3 uv, float lod )"
 
 #, fuzzy
-msgid "Perform a 2D texture read with projection/LOD"
-msgstr "投影を使用して2Dテクスチャの読み取りを実行する"
-
-#, fuzzy
-msgid "vec4_type **textureProjLod** (sampler2D_type s, vec4 uv, float lod)"
+msgid "gvec4_type **textureProjLod** (gsampler2D s, vec4 p, float lod)"
 msgstr ""
 "\\ vec4_type **textureProjLod** ( sampler2D_type s, vec4 uv, float lod )"
 
 #, fuzzy
-msgid "vec4_type **textureProjLod** (sampler3D_type s, vec4 uv, float lod)"
+msgid "gvec4_type **textureProjLod** (gsampler3D s, vec4 p, float lod)"
 msgstr ""
 "\\ vec4_type **textureProjLod** ( sampler3D_type s, vec4 uv, float lod )"
 
 #, fuzzy
-msgid "Perform a 3D texture read with projection/LOD"
-msgstr "投影を使用して3Dテクスチャの読み取りを実行する"
+msgid "Performs a texture read with projection/LOD."
+msgstr "投影を使用して2Dテクスチャの読み取りを実行する"
 
 #, fuzzy
-msgid "vec4_type **texelFetch** (sampler2D_type s, ivec2 uv, int lod)"
+msgid "gvec4_type **textureGrad** (gsampler2D s, vec2 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
+
+#, fuzzy
+msgid ""
+"gvec4_type **textureGrad** (gsampler2DArray s, vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
+
+#, fuzzy
+msgid "gvec4_type **textureGrad** (gsampler3D s, vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
+
+#, fuzzy
+msgid "vec4 **textureGrad** (samplerCube s, vec3 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+"\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
+
+#, fuzzy
+msgid "vec4 **textureGrad** (samplerCubeArray s, vec3 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+"\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
+
+#, fuzzy
+msgid "Performs a texture read with explicit gradients."
+msgstr "投影を使用して2Dテクスチャの読み取りを実行する"
+
+#, fuzzy
+msgid ""
+"gvec4_type **textureProjGrad** (gsampler2D s, vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
+
+#, fuzzy
+msgid ""
+"gvec4_type **textureProjGrad** (gsampler2D s, vec4 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+"\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
+
+#, fuzzy
+msgid ""
+"gvec4_type **textureProjGrad** (gsampler3D s, vec4 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+"\\ vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
+"vec_type dPdy)"
+
+#, fuzzy
+msgid "Performs a texture read with projection/LOD and with explcit gradients."
+msgstr "投影を使用して2Dテクスチャの読み取りを実行する"
+
+#, fuzzy
+msgid "gvec4_type **texelFetch** (gsampler2D s, ivec2 p, int lod)"
 msgstr "\\ vec4_type **texelFetch** ( sampler2D_type s, ivec2 uv, int lod )"
 
 #, fuzzy
-msgid "Fetch a single texel using integer coordinates"
-msgstr "整数座標を使用して単一のテクセルを取得する"
-
-#, fuzzy
-msgid "vec4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
+msgid "gvec4_type **texelFetch** (gsampler2DArray s, ivec3 p, int lod)"
 msgstr ""
 "\\ vec4_type **texelFetch** ( sampler2DArray_type s, ivec3 uv, int lod )"
 
 #, fuzzy
-msgid "vec4_type **texelFetch** (sampler3D_type s, ivec3 uv, int lod)"
+msgid "gvec4_type **texelFetch** (gsampler3D s, ivec3 p, int lod)"
 msgstr "\\ vec4_type **texelFetch** ( sampler3D_type s, ivec3 uv, int lod )"
+
+#, fuzzy
+msgid "Fetches a single texel using integer coordinates."
+msgstr "整数座標を使用して単一のテクセルを取得する"
+
+#, fuzzy
+msgid "gvec4_type **textureGather** (gsampler2D s, vec2 p [, int comps])"
+msgstr "\\ vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
+
+#, fuzzy
+msgid "gvec4_type **textureGather** (gsampler2DArray s, vec3 p [, int comps])"
+msgstr ""
+"\\ vec4_type  **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
+
+#, fuzzy
+msgid "vec4 **textureGather** (samplerCube s, vec3 p [, int comps])"
+msgstr "\\ vec4 **texture** ( samplerCube s, vec3 uv [, float bias] )"
+
+msgid ""
+"Gathers four texels from a texture. Use ``comps`` within range of 0..3 to "
+"define which component (x, y, z, w) is returned. If ``comps`` is not "
+"provided: 0 (or x-component) is used."
+msgstr ""
 
 #, fuzzy
 msgid "vec_type **dFdx** (vec_type p)"
 msgstr "\\ vec_type **dFdx** ( vec_type p )"
 
+msgid ""
+"Derivative in ``x`` using local differencing. Internally, can use either "
+"``dFdxCoarse`` or ``dFdxFine``, but the decision for which to use is made by "
+"the GPU driver."
+msgstr ""
+
 #, fuzzy
-msgid "Derivative in ``x`` using local differencing"
-msgstr "ローカル差分を使用したxの微分"
+msgid "vec_type **dFdxCoarse** (vec_type p)"
+msgstr "\\ vec_type **dFdx** ( vec_type p )"
+
+msgid ""
+"Calculates derivative with respect to ``x`` window coordinate using local "
+"differencing based on the value of ``p`` for the current fragment "
+"neighbour(s), and will possibly, but not necessarily, include the value for "
+"the current fragment. This function is not available on ``gl_compatibility`` "
+"profile."
+msgstr ""
+
+#, fuzzy
+msgid "vec_type **dFdxFine** (vec_type p)"
+msgstr "\\ vec_type **dFdx** ( vec_type p )"
+
+msgid ""
+"Calculates derivative with respect to ``x`` window coordinate using local "
+"differencing based on the value of ``p`` for the current fragment and its "
+"immediate neighbour(s). This function is not available on "
+"``gl_compatibility`` profile."
+msgstr ""
 
 #, fuzzy
 msgid "vec_type **dFdy** (vec_type p)"
 msgstr "\\ vec_type **dFdy** ( vec_type p )"
 
+msgid ""
+"Derivative in ``y`` using local differencing. Internally, can use either "
+"``dFdyCoarse`` or ``dFdyFine``, but the decision for which to use is made by "
+"the GPU driver."
+msgstr ""
+
 #, fuzzy
-msgid "Derivative in ``y`` using local differencing"
-msgstr "ローカル差分を使用したyの微分"
+msgid "vec_type **dFdyCoarse** (vec_type p)"
+msgstr "\\ vec_type **dFdy** ( vec_type p )"
+
+msgid ""
+"Calculates derivative with respect to ``y`` window coordinate using local "
+"differencing based on the value of ``p`` for the current fragment "
+"neighbour(s), and will possibly, but not necessarily, include the value for "
+"the current fragment. This function is not available on ``gl_compatibility`` "
+"profile."
+msgstr ""
+
+#, fuzzy
+msgid "vec_type **dFdyFine** (vec_type p)"
+msgstr "\\ vec_type **dFdy** ( vec_type p )"
+
+msgid ""
+"Calculates derivative with respect to ``y`` window coordinate using local "
+"differencing based on the value of ``p`` for the current fragment and its "
+"immediate neighbour(s). This function is not available on "
+"``gl_compatibility`` profile."
+msgstr ""
 
 #, fuzzy
 msgid "vec_type **fwidth** (vec_type p)"
 msgstr "\\ vec_type **fwidth** ( vec_type p )"
 
+msgid ""
+"Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
+"using ``abs(dFdx(p)) + abs(dFdy(p))``."
+msgstr ""
+
 #, fuzzy
-msgid "Sum of absolute derivative in ``x`` and ``y``"
-msgstr "xとyの絶対微分の合計"
+msgid "vec_type **fwidthCoarse** (vec_type p)"
+msgstr "\\ vec_type **fwidth** ( vec_type p )"
+
+msgid ""
+"Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
+"using ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``. This function is not "
+"available on ``gl_compatibility`` profile."
+msgstr ""
+
+#, fuzzy
+msgid "vec_type **fwidthFine** (vec_type p)"
+msgstr "\\ vec_type **fwidth** ( vec_type p )"
+
+msgid ""
+"Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
+"using ``abs(dFdxFine(p)) + abs(dFdyFine(p))``. This function is not "
+"available on ``gl_compatibility`` profile."
+msgstr ""
+
+msgid "uint **packHalf2x16** (vec2 v)"
+msgstr ""
+
+msgid "vec2 **unpackHalf2x16** (uint v)"
+msgstr ""
+
+msgid ""
+"Convert two 32-bit floating-point numbers into 16-bit and pack them into a "
+"32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "uint **packUnorm2x16** (vec2 v)"
+msgstr ""
+
+msgid "vec2 **unpackUnorm2x16** (uint v)"
+msgstr ""
+
+msgid ""
+"Convert two 32-bit floating-point numbers (clamped within 0..1 range) into "
+"16-bit and pack them into a 32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "uint **packSnorm2x16** (vec2 v)"
+msgstr ""
+
+msgid "vec2 **unpackSnorm2x16** (uint v)"
+msgstr ""
+
+msgid ""
+"Convert two 32-bit floating-point numbers (clamped within -1..1 range) into "
+"16-bit and pack them into a 32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "uint **packUnorm4x8** (vec4 v)"
+msgstr ""
+
+msgid "vec4 **unpackUnorm4x8** (uint v)"
+msgstr ""
+
+msgid ""
+"Convert four 32-bit floating-point numbers (clamped within 0..1 range) into "
+"8-bit and pack them into a 32-bit unsigned integer and vice-versa."
+msgstr ""
+
+msgid "uint **packSnorm4x8** (vec4 v)"
+msgstr ""
+
+msgid "vec4 **unpackSnorm4x8** (uint v)"
+msgstr ""
+
+msgid ""
+"Convert four 32-bit floating-point numbers (clamped within -1..1 range) into "
+"8-bit and pack them into a 32-bit unsigned integer and vice-versa."
+msgstr ""
+
+#, fuzzy
+msgid "ivec_type **bitfieldExtract** (ivec_type value, int offset, int bits)"
+msgstr "\\ vec_type **step** ( vec_type a, vec_type b )"
+
+#, fuzzy
+msgid "uvec_type **bitfieldExtract** (uvec_type value, int offset, int bits)"
+msgstr "\\ vec_type **step** ( vec_type a, vec_type b )"
+
+msgid "Extracts a range of bits from an integer."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"ivec_type **bitfieldInsert** (ivec_type base, ivec_type insert, int offset, "
+"int bits)"
+msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, float c )"
+
+#, fuzzy
+msgid ""
+"uvec_type **bitfieldInsert** (uvec_type base, uvec_type insert, int offset, "
+"int bits)"
+msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, float c )"
+
+msgid "Insert a range of bits into an integer."
+msgstr ""
+
+#, fuzzy
+msgid "ivec_type **bitfieldReverse** (ivec_type value)"
+msgstr "\\ ivec_type **abs** ( ivec_type x )"
+
+#, fuzzy
+msgid "uvec_type **bitfieldReverse** (uvec_type value)"
+msgstr "\\ vec_type **inversesqrt** ( vec_type x )"
+
+msgid "Reverse the order of bits in an integer."
+msgstr ""
+
+#, fuzzy
+msgid "ivec_type **bitCount** (ivec_type value)"
+msgstr "\\ ivec_type **sign** ( ivec_type x )"
+
+#, fuzzy
+msgid "uvec_type **bitCount** (uvec_type value)"
+msgstr "\\ vec_type **round** ( vec_type x )"
+
+msgid "Counts the number of 1 bits in an integer."
+msgstr ""
+
+#, fuzzy
+msgid "ivec_type **findLSB** (ivec_type value)"
+msgstr "\\ ivec_type **sign** ( ivec_type x )"
+
+#, fuzzy
+msgid "uvec_type **findLSB** (uvec_type value)"
+msgstr "\\ vec_type **sin** ( vec_type x )"
+
+msgid "Find the index of the least significant bit set to 1 in an integer."
+msgstr ""
+
+#, fuzzy
+msgid "ivec_type **findMSB** (ivec_type value)"
+msgstr "\\ ivec_type **sign** ( ivec_type x )"
+
+#, fuzzy
+msgid "uvec_type **findMSB** (uvec_type value)"
+msgstr "\\ vec_type **sin** ( vec_type x )"
+
+msgid "Find the index of the most significant bit set to 1 in an integer."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"void **imulExtended** (ivec_type x, ivec_type y, out ivec_type msb, out "
+"ivec_type lsb)"
+msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
+
+#, fuzzy
+msgid ""
+"void **umulExtended** (uvec_type x, uvec_type y, out uvec_type msb, out "
+"uvec_type lsb)"
+msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
+
+msgid ""
+"Multiplies two 32-bit numbers and produce a 64-bit result. ``x`` - the first "
+"number. ``y`` - the second number. ``msb`` - will contain the most "
+"significant bits. ``lsb`` - will contain the least significant bits."
+msgstr ""
+
+#, fuzzy
+msgid "uvec_type **uaddCarry** (uvec_type x, uvec_type y, out uvec_type carry)"
+msgstr "\\ vec_type **mix** ( vec_type a, vec_type b, vec_type c )"
+
+msgid "Adds two unsigned integers and generates carry."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"uvec_type **usubBorrow** (uvec_type x, uvec_type y, out uvec_type borrow)"
+msgstr "\\ vec_type **smoothstep** ( vec_type a, vec_type b, vec_type c )"
+
+msgid "Subtracts two unsigned integers and generates borrow."
+msgstr ""
+
+#, fuzzy
+msgid "vec_type **ldexp** (vec_type x, out ivec_type exp)"
+msgstr "\\ vec_type **modf** ( vec_type x, out vec_type i )"
+
+msgid "Assemble a floating-point number from a value and exponent."
+msgstr ""
+
+msgid ""
+"If this product is too large to be represented in the floating-point type "
+"the result is undefined."
+msgstr ""
+
+#, fuzzy
+msgid "vec_type **frexp** (vec_type x, out ivec_type exp)"
+msgstr "\\ vec_type **modf** ( vec_type x, out vec_type i )"
+
+msgid ""
+"Splits a floating-point number(``x``) into significand (in the range of "
+"[0.5, 1.0]) and an integral exponent."
+msgstr ""
+
+msgid ""
+"For ``x`` equals zero the significand and exponent are both zero. For ``x`` "
+"of infinity or NaN, the results are undefined."
+msgstr ""
 
 msgid "Translation status"
 msgstr "翻訳ステータス"

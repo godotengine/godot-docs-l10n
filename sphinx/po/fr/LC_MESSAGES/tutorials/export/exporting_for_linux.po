@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,10 +20,11 @@ msgstr ""
 msgid "Exporting for Linux"
 msgstr "Exportation pour Linux"
 
+#, fuzzy
 msgid ""
 "This page describes how to export a Godot project to Linux. If you're "
 "looking to compile editor or export template binaries from source instead, "
-"read :ref:`doc_compiling_for_x11`."
+"read :ref:`doc_compiling_for_linuxbsd`."
 msgstr ""
 "Cette page explique comment exporter un projet Godot vers Linux. Si vous "
 "cherchez à compiler l’éditeur ou les binaires du modèle d'exportation depuis "
@@ -50,6 +51,33 @@ msgstr ""
 "l'exportateur prend tous les fichiers du projet et crée un fichier ``data."
 "pck``. Ce fichier est accompagné d'un binaire spécialement optimisé qui est "
 "plus petit, plus rapide et ne contient pas l'éditeur et le débogueur."
+
+msgid "Environment variables"
+msgstr "Variables d'environnement"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+
+#, fuzzy
+msgid "Linux export environment variables"
+msgstr "Variables d'environnement"
+
+#, fuzzy
+msgid "Export option"
+msgstr "Options d'exportation"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "Variables d'environnement"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
 
 msgid "Translation status"
 msgstr "État de la traduction"

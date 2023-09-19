@@ -1,0 +1,51 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "C# global classes"
+msgstr "Globaali luokka."
+
+msgid ""
+"Global classes (also known as named scripts) are types registered in Godot's "
+"editor so they can be used more conveniently. These classes show up in the "
+"*Add Node* and *Create Resource* dialogs, and :ref:`exported properties "
+"<doc_c_sharp_exports>` are restricted to instances of the global class or "
+"derived classes. Global classes are registered with the ``[GlobalClass]`` "
+"attribute."
+msgstr ""
+
+msgid ""
+"The ``MyNode`` type will be registered as a global class with the same name "
+"as the type's name."
+msgstr ""
+
+msgid ""
+"The ``[Icon]`` attribute also allows to provide the path to an icon so it "
+"can be used as the class' icon in the editor."
+msgstr ""
+
+msgid ""
+"The ``Stats`` class is a custom resource registered as a global class. :ref:"
+"`Exporting properties <doc_c_sharp_exports>` of the type ``Stats`` will only "
+"allow instances of this resource type to be assigned, and the inspector will "
+"let you create and load instances of this type easily."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Käännöksen tila"

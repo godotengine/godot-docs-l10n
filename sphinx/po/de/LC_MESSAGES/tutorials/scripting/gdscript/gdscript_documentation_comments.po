@@ -1,0 +1,480 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "GDScript documentation comments"
+msgstr "Benutzerdefinierte Dokumentation schreiben"
+
+msgid ""
+"In GDScript, comments can be used to document your code and add descriptions "
+"to the members of a script. There are two differences between a normal "
+"comment and a documentation comment. Firstly, a documentation comment should "
+"start with double hash symbols ``##``. Secondly, it must immediately precede "
+"a script member, or for script descriptions, be placed at the top of the "
+"script. If an exported variable is documented, its description is used as a "
+"tooltip in the editor. This documentation can be generated as XML files by "
+"the editor."
+msgstr ""
+
+#, fuzzy
+msgid "Documenting a script"
+msgstr "Ein Skript ausführen"
+
+msgid ""
+"Comments documenting a script must come before any member documentation. A "
+"suggested format for script documentation can be divided into three parts."
+msgstr ""
+
+#, fuzzy
+msgid "A brief description of the script."
+msgstr "Eine Textbeschreibung des Assets."
+
+#, fuzzy
+msgid "Detailed description."
+msgstr "Beschreibung"
+
+msgid "Tutorials and deprecated/experimental marks."
+msgstr ""
+
+msgid ""
+"To separate these from each other, the documentation comments use special "
+"tags. The tag must be at the beginning of a line (ignoring preceding white "
+"space) and must have the format ``@``, followed by the keyword."
+msgstr ""
+
+msgid "Tags"
+msgstr ""
+
+#, fuzzy
+msgid "Brief description"
+msgstr "<brief_description></brief_description>"
+
+msgid "No tag. Lives at the very beginning of the documentation section."
+msgstr ""
+
+msgid "Description"
+msgstr "Beschreibung"
+
+msgid "No tag. Use one blank line to separate the description from the brief."
+msgstr ""
+
+#, fuzzy
+msgid "Tutorial"
+msgstr "Text-Anleitungen"
+
+msgid "``@tutorial:``"
+msgstr ""
+
+msgid "``@tutorial(The Title Here):``"
+msgstr ""
+
+#, fuzzy
+msgid "Deprecated"
+msgstr "Duplizieren"
+
+#, fuzzy
+msgid "``@deprecated``"
+msgstr "``imported``"
+
+#, fuzzy
+msgid "Experimental"
+msgstr "Android (experimentell)"
+
+#, fuzzy
+msgid "``@experimental``"
+msgstr "Android (experimentell)"
+
+#, fuzzy
+msgid "For example::"
+msgstr "Zum Beispiel:"
+
+msgid ""
+"If there is any space in between the tag name and colon, for example "
+"``@tutorial  :``, it won't be treated as a valid tag and will be ignored."
+msgstr ""
+
+msgid ""
+"When the description spans multiple lines, the preceding and trailing white "
+"spaces will be stripped and joined with a single space. To preserve the line "
+"break use ``[br]``. See also `BBCode and class reference`_ below."
+msgstr ""
+
+#, fuzzy
+msgid "Documenting script members"
+msgstr "Erstellen von Skript-Vorlagen"
+
+msgid "Members that are applicable for documentation:"
+msgstr ""
+
+#, fuzzy
+msgid "Inner class"
+msgstr "Innere Klassen"
+
+#, fuzzy
+msgid "Constant"
+msgstr "Konstanten"
+
+msgid "Function"
+msgstr "Funktion"
+
+msgid "Signal"
+msgstr "Ereignis"
+
+msgid "Variable"
+msgstr "Variable"
+
+#, fuzzy
+msgid "Enum"
+msgstr "Enumeratoren (Aufzählungen)"
+
+msgid "Enum value"
+msgstr "Aufzählungswert"
+
+msgid ""
+"Documentation of a script member must immediately precede the member or its "
+"annotations if it has any. The description can have more than one line but "
+"every line must start with the double hash symbol ``##`` to be considered as "
+"part of the documentation."
+msgstr ""
+
+msgid "No tag."
+msgstr ""
+
+msgid ""
+"Variables, constants, signals, and enum values support inline documentation "
+"comments. Note that inline comments do not support tags."
+msgstr ""
+
+msgid ""
+"The script documentation will update in the editor help window every time "
+"the script is updated. If any member variable or function name starts with "
+"an underscore, it will be treated as private. It will not appear in the "
+"documentation and will be ignored in the help window."
+msgstr ""
+
+#, fuzzy
+msgid "Complete script example"
+msgstr "Vollständiges Skript"
+
+msgid "``@deprecated`` and ``@experimental`` tags"
+msgstr ""
+
+msgid ""
+"You can mark a class or any of its members as deprecated or experimental. "
+"This will add the corresponding indicator in the built-in documentation "
+"viewer. This can be especially useful for plugin and library creators."
+msgstr ""
+
+msgid ""
+"**Deprecated** marks a non-recommended API that is subject to removal or "
+"incompatible change in a future major release. Usually the API is kept for "
+"backwards compatibility."
+msgstr ""
+
+msgid ""
+"**Experimental** marks a new unstable API that may be changed or removed in "
+"the current major branch. Using this API is not recommended in production "
+"code."
+msgstr ""
+
+msgid ""
+"While technically you can use both ``@deprecated`` and ``@experimental`` "
+"tags on the same class/member, this is not recommended as it is against "
+"common conventions."
+msgstr ""
+
+#, fuzzy
+msgid "BBCode and class reference"
+msgstr "Klassenreferenz"
+
+msgid ""
+"The editor help window which renders the documentation supports :ref:`bbcode "
+"<doc_bbcode_in_richtextlabel>`. As a result it's possible to align and "
+"format the documentation. Color texts, images, fonts, tables, URLs, "
+"animation effects, etc. can be added with the :ref:`bbcode "
+"<doc_bbcode_in_richtextlabel>`."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Godot's class reference supports BBCode-like tags. They add nice formatting "
+"to the text which could also be used in the documentation. See also :ref:"
+"`class reference bbcode <doc_class_reference_bbcode>`."
+msgstr ""
+"Godots Klassenreferenz unterstützt BBCode-ähnliche Tags. Sie fügen dem Text "
+"eine schöne Formatierung hinzu. Hier ist die Liste der verfügbaren Tags:"
+
+msgid ""
+"Whenever you link to a member of another class, you need to specify the "
+"class name. For links to the same class, the class name is optional and can "
+"be omitted."
+msgstr ""
+
+#, fuzzy
+msgid "Here's the list of available tags:"
+msgstr "Es gibt 6 Arten von Mustern:"
+
+#, fuzzy
+msgid "Tag and Description"
+msgstr "Beschreibung"
+
+msgid "Example"
+msgstr "Beispiel"
+
+msgid "Result"
+msgstr "Ergebnis"
+
+#, fuzzy
+msgid "``[Class]``"
+msgstr "[Class]"
+
+#, fuzzy
+msgid "Link to class"
+msgstr "Eine Klasse verlinken"
+
+#, fuzzy
+msgid "``Move the [Sprite2D].``"
+msgstr "Bewege das [Sprite]."
+
+#, fuzzy
+msgid "Move the :ref:`class_Sprite2D`."
+msgstr "Bewege das :ref:`class_Sprite`."
+
+msgid "``[annotation Class.name]``"
+msgstr ""
+
+#, fuzzy
+msgid "Link to annotation"
+msgstr "Die Animation starten"
+
+msgid "``See [annotation @GDScript.@export].``"
+msgstr ""
+
+msgid "See :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`."
+msgstr ""
+
+#, fuzzy
+msgid "``[constant Class.name]``"
+msgstr "[signal Class.signalname]"
+
+#, fuzzy
+msgid "Link to constant"
+msgstr "Definiert eine Konstante."
+
+msgid "``See [constant @GlobalScope.KEY_F1].``"
+msgstr ""
+
+msgid "See :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`."
+msgstr ""
+
+#, fuzzy
+msgid "``[enum Class.name]``"
+msgstr "[member Class.membername]"
+
+#, fuzzy
+msgid "Link to enum"
+msgstr "Ein Link zur Lizenz"
+
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr ""
+
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr ""
+
+#, fuzzy
+msgid "``[method Class.name]``"
+msgstr "[method Class.methodname]"
+
+#, fuzzy
+msgid "Link to method"
+msgstr "Bindungsmethoden"
+
+#, fuzzy
+msgid "``Call [method Node3D.hide].``"
+msgstr "Rufe [method hide] auf."
+
+#, fuzzy
+msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
+msgstr "Siehe :ref:`hide <class_spatial_method_hide>`."
+
+#, fuzzy
+msgid "``[member Class.name]``"
+msgstr "[member Class.membername]"
+
+#, fuzzy
+msgid "Link to member"
+msgstr "Mitglied bearbeiten"
+
+#, fuzzy
+msgid "``Get [member Node2D.scale].``"
+msgstr "Rufe [member Node2D.scale] ab."
+
+#, fuzzy
+msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
+msgstr "Hole :ref:`scale <class_node2d_property_scale>`."
+
+#, fuzzy
+msgid "``[signal Class.name]``"
+msgstr "[signal Class.signalname]"
+
+#, fuzzy
+msgid "Link to signal"
+msgstr "Signale nutzen"
+
+#, fuzzy
+msgid "``Emit [signal Node.renamed].``"
+msgstr "Sende [signal Node.renamed]."
+
+#, fuzzy
+msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
+msgstr "Sende :ref:`renamed <class_node_signal_renamed>`."
+
+#, fuzzy
+msgid "``[theme_item Class.name]``"
+msgstr "[method Class.methodname]"
+
+#, fuzzy
+msgid "Link to theme item"
+msgstr "Ein Link zur Lizenz"
+
+msgid "``See [theme_item Label.font].``"
+msgstr ""
+
+msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
+msgstr ""
+
+#, fuzzy
+msgid "``[param name]``"
+msgstr "``name``"
+
+msgid "Formats a parameter name (as code)"
+msgstr ""
+
+msgid "``Takes [param size] for the size.``"
+msgstr ""
+
+msgid "Takes ``size`` for the size."
+msgstr ""
+
+msgid "``[br]``"
+msgstr ""
+
+#, fuzzy
+msgid "Line break"
+msgstr "break"
+
+msgid "``Line 1.[br]``"
+msgstr ""
+
+msgid "``Line 2.``"
+msgstr ""
+
+msgid "Line 1."
+msgstr ""
+
+msgid "Line 2."
+msgstr ""
+
+#, fuzzy
+msgid "``[b]`` ``[/b]``"
+msgstr "``[b]{text}[/b]``"
+
+msgid "Bold"
+msgstr "Fett"
+
+#, fuzzy
+msgid "``Some [b]bold[/b] text.``"
+msgstr "Ein [b]fetter[/b] Text."
+
+msgid "Some **bold** text."
+msgstr "Ein **fetter** Text."
+
+#, fuzzy
+msgid "``[i]`` ``[/i]``"
+msgstr "``[i]{text}[/i]``"
+
+msgid "Italic"
+msgstr "Kursiv"
+
+#, fuzzy
+msgid "``Some [i]italic[/i] text.``"
+msgstr "Ein [i]kursiver[/i] Text."
+
+msgid "Some *italic* text."
+msgstr "Ein *kursiver* Text."
+
+#, fuzzy
+msgid "``[kbd]`` ``[/kbd]``"
+msgstr "[kbd] [/kbd]"
+
+msgid "Keyboard/mouse shortcut"
+msgstr "Tastatur/Maus Kürzel"
+
+#, fuzzy
+msgid "``Some [kbd]Ctrl + C[/kbd] key.``"
+msgstr "Eine [kbd]Ctrl + C[/kbd] Taste."
+
+msgid "Some :kbd:`Ctrl + C` key."
+msgstr "Eine :kbd:`Ctrl + C` Taste."
+
+#, fuzzy
+msgid "``[code]`` ``[/code]``"
+msgstr "[code] [/code]"
+
+msgid "Monospace"
+msgstr "Monospace"
+
+#, fuzzy
+msgid "``Some [code]monospace[/code] text.``"
+msgstr "Ein [code]monospace[/code] Text."
+
+msgid "Some ``monospace`` text."
+msgstr "Ein ``monospace`` Text."
+
+#, fuzzy
+msgid "``[codeblock]`` ``[/codeblock]``"
+msgstr "[codeblock] [/codeblock]"
+
+msgid "Multiline preformatted block"
+msgstr "Mehrzeiliger vorformatierter Block"
+
+msgid "*See below.*"
+msgstr "*siehe unten*"
+
+msgid "Currently only :ref:`class_@GDScript` has annotations."
+msgstr ""
+
+msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+msgstr ""
+
+msgid ""
+"``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
+"always use **four spaces** for indentation (the parser will delete tabs)."
+msgstr ""
+"Verwenden Sie ``[Codeblock]`` für vorformatierte Codeblöcke. Verwenden Sie "
+"in ``[Codeblock]`` immer **vier Leerzeichen** zum Einrücken (der Parser "
+"löscht Tabulatoren). Beispiel:"
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

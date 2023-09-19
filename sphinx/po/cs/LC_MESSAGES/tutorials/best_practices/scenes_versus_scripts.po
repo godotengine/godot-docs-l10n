@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,8 +28,8 @@ msgstr ""
 msgid ""
 "Each system's capabilities are different as a result. Scenes can define how "
 "an extended class initializes, but not what its behavior actually is. Scenes "
-"are often used in conjunction with a script so that the scene acts as an "
-"extension of the scripts declarative code."
+"are often used in conjunction with a script, the scene declaring a "
+"composition of nodes, and the script adding behaviour with imperative code."
 msgstr ""
 
 msgid "Anonymous types"
@@ -57,10 +57,10 @@ msgid "Named types"
 msgstr "Pojmenované typy"
 
 msgid ""
-"In some cases, a user can register a script as a new type within the editor "
-"itself. This displays it as a new type in the node or resource creation "
-"dialog with an optional icon. In these cases, the user's ability to use the "
-"script is much more streamlined. Rather than having to..."
+"Scripts can be registered as a new type within the editor itself. This "
+"displays it as a new type in the node or resource creation dialog with an "
+"optional icon. This way, the user's ability to use the script is much more "
+"streamlined. Rather than having to..."
 msgstr ""
 
 msgid "Know the base type of the script they would like to use."
@@ -72,38 +72,15 @@ msgstr ""
 msgid "Add the script to the node."
 msgstr ""
 
-msgid "(Drag-n-drop method)"
-msgstr ""
-
-msgid "Find the script in the FileSystem dock."
-msgstr ""
-
-msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr ""
-
-msgid "(Property method)"
-msgstr ""
-
-msgid ""
-"Scroll down to the bottom of the Inspector to find the ``script`` property "
-"and select it."
-msgstr ""
-
-msgid "Select \"Load\" from the dropdown."
-msgstr ""
-
-msgid "Select the script from the file dialog."
-msgstr ""
-
 msgid ""
 "With a registered script, the scripted type instead becomes a creation "
-"option like the other nodes and resources in the system. One need not do any "
-"of the above work. The creation dialog even has a search bar to look up the "
-"type by name."
+"option like the other nodes and resources in the system. The creation dialog "
+"even has a search bar to look up the type by name."
 msgstr ""
 
-msgid "There are two systems for registering types..."
-msgstr ""
+#, fuzzy
+msgid "There are two systems for registering types:"
+msgstr "Existují dva způsoby přidávání/odebírání uzlů do skupin:"
 
 msgid ":ref:`Custom Types <doc_making_plugins>`"
 msgstr ""
@@ -242,8 +219,8 @@ msgstr ""
 
 msgid ""
 "If one would like to give a name to a scene, then they can still sort of do "
-"this in 3.1 by declaring a script class and giving it a scene as a constant. "
-"The script becomes, in effect, a namespace:"
+"this by declaring a script class and giving it a scene as a constant. The "
+"script becomes, in effect, a namespace:"
 msgstr ""
 
 msgid "Translation status"

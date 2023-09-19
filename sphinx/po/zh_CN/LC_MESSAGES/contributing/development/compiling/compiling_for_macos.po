@@ -1,0 +1,308 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compiling for macOS"
+msgstr "为 macOS 平台编译"
+
+msgid ""
+"This page describes how to compile macOS editor and export template binaries "
+"from source. If you're looking to export your project to macOS instead, "
+"read :ref:`doc_exporting_for_macos`."
+msgstr ""
+"这个页面描述的是如何从源码编译 macOS 编辑器和导出模板二进制文件。如果你要找的"
+"是导出项目到 macOS，请阅读 :ref:`doc_exporting_for_macos`\\ 。"
+
+msgid "Requirements"
+msgstr "需求"
+
+msgid "For compiling under macOS, the following is required:"
+msgstr "在 macOS 下编译时，需要以下条件："
+
+#, fuzzy
+msgid "`Python 3.6+ <https://www.python.org/downloads/macos/>`_."
+msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_."
+
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
+msgstr "`SCons 3.0+ <https://scons.org/pages/download.html>`_ 构建系统."
+
+msgid ""
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (or the more "
+"lightweight Command Line Tools for Xcode)."
+msgstr ""
+"`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_\\ （或更轻量的 "
+"Xcode 命令行工具）。"
+
+msgid ""
+"`Vulkan SDK <https://sdk.lunarg.com/sdk/download/latest/mac/vulkan-sdk."
+"dmg>`_ for MoltenVK (macOS doesn't support Vulkan out of the box)."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
+"SCons using the following command::"
+msgstr ""
+"如果你安装了 `Homebrew <https://brew.sh/>`_\\ ，你可以使用以下命令轻松地安装 "
+"SCons 和 yasm： ::"
+
+msgid ""
+"Installing Homebrew will also fetch the Command Line Tools for Xcode "
+"automatically if you don't have them already."
+msgstr "如果你还没有 Xcode 命令行工具，安装 Homebrew 也会自动进行获取。"
+
+#, fuzzy
+msgid ""
+"Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
+"you can easily install SCons using the following command::"
+msgstr ""
+"同样，如果你安装了 `MacPorts <https://www.macports.org/>`_\\ ，你可以使用以下"
+"命令轻松安装 SCons 和 yasm： ::"
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr "要获取编译所需的 Godot 源码，请参阅 :ref:`doc_getting_source`\\ 。"
+
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+"有关 Godot 的 SCons 用法的一般概述，请参阅 :ref:"
+"`doc_introduction_to_the_buildsystem`。"
+
+msgid "Compiling"
+msgstr "编译"
+
+msgid "Start a terminal, go to the root directory of the engine source code."
+msgstr "启动终端, 进入引擎源代码的根目录."
+
+msgid "To compile for Intel (x86-64) powered Macs, use::"
+msgstr "若要为英特尔（x86-64）架构的 Mac 编译，请使用： ::"
+
+msgid "To compile for Apple Silicon (ARM64) powered Macs, use::"
+msgstr "要为 Apple Silicon（ARM64）驱动的 Mac 编译，请使用： ::"
+
+msgid ""
+"To support both architectures in a single \"Universal 2\" binary, run the "
+"above two commands and then use ``lipo`` to bundle them together::"
+msgstr ""
+"如果要通过“Universal 2”二进制来同时支持这两种架构，请运行上述两个命令，然后使"
+"用 ``lipo`` 将它们打包在一起： ::"
+
+#, fuzzy
+msgid ""
+"If all goes well, the resulting binary executable will be placed in the "
+"``bin/`` subdirectory. This executable file contains the whole engine and "
+"runs without any dependencies. Executing it will bring up the Project "
+"Manager."
+msgstr ""
+"如果一切顺利, 产生的二进制可执行文件将被放置在 ``bin/`` 子目录中. 这个可执行"
+"文件包含整个引擎, 运行时没有任何依赖性. 执行它将会弹出项目管理器."
+
+msgid ""
+"If you want to use separate editor settings for your own Godot builds and "
+"official releases, you can enable :ref:`doc_data_paths_self_contained_mode` "
+"by creating a file called ``._sc_`` or ``_sc_`` in the ``bin/`` folder."
+msgstr ""
+"如果你想为自己的 Godot 构建和官方发布使用单独的编辑器设置，你可以通过在 "
+"``bin/`` 文件夹中创建一个名为 ``._sc_`` 或 ``_sc_`` 的文件来启用 :ref:"
+"`doc_data_paths_self_contained_mode`\\ 。"
+
+#, fuzzy
+msgid ""
+"To create an ``.app`` bundle like in the official builds, you need to use "
+"the template located in ``misc/dist/macos_tools.app``. Typically, for an "
+"optimized editor binary built with ``target=release_debug``::"
+msgstr ""
+"要创建一个像官方构建的 ``.app`` 捆绑包，你需要使用位于 ``misc/dist/osx_tools."
+"app`` 的模板。通常，对于用 ``target=release_debug'`` 构建的优化编辑器可执行文"
+"件： ::"
+
+msgid ""
+"If you are building the ``master`` branch, you also need to include support "
+"for the MoltenVK Vulkan portability library. By default, it will be linked "
+"statically from your installation of the Vulkan SDK for macOS. You can also "
+"choose to link it dynamically by passing ``use_volk=yes`` and including the "
+"dynamic library in your ``.app`` bundle::"
+msgstr ""
+
+#, fuzzy
+msgid "Running a headless/server build"
+msgstr "编译无头/服务器构建"
+
+#, fuzzy
+msgid ""
+"To run in *headless* mode which provides editor functionality to export "
+"projects in an automated manner, use the normal build::"
+msgstr "要编译\\ *无头*\\ 构建，支持编辑器的自动化导出项目功能，请使用： ::"
+
+msgid "And then use the ``--headless`` command line argument::"
+msgstr ""
+
+msgid ""
+"To compile a debug *server* build which can be used with :ref:`remote "
+"debugging tools <doc_command_line_tutorial>`, use::"
+msgstr ""
+"如果要编译调试版本的\\ *服务器*\\ ，支持\\ :ref:`远程调试工具 "
+"<doc_command_line_tutorial>`\\ ，那么请使用： ::"
+
+msgid ""
+"To compile a release *server* build which is optimized to run dedicated game "
+"servers, use::"
+msgstr ""
+"如果要编译发布版本的\\ *服务器*\\ ，针对运行专门的游戏服务器进行优化，那么请"
+"使用： ::"
+
+msgid "Building export templates"
+msgstr "构建导出模板"
+
+#, fuzzy
+msgid ""
+"To build macOS export templates, you have to compile using the targets "
+"without the editor: ``target=template_release`` (release template) and "
+"``target=template_debug``."
+msgstr ""
+"要建立macOS的导出模板，你必须用 ``tools=no`` （无编辑器）进行编译，并分别为 "
+"``target=release`` （发布模板）和 ``target=release_debug``."
+
+msgid ""
+"Official templates are universal binaries which support both Intel x86_64 "
+"and ARM64 architectures. You can also create export templates that support "
+"only one of those two architectures by leaving out the ``lipo`` step below."
+msgstr ""
+"官方模板是通用的二进制文件，同时支持英特尔x86_64和ARM64架构。你也可以通过省略"
+"下面的 ``lipo`` 步骤，创建只支持架构中的一种的导出模板。"
+
+msgid "For Intel x86_64::"
+msgstr "对于英特尔 x86_64： ::"
+
+msgid "For ARM64 (Apple M1)::"
+msgstr "对于 ARM64（Apple M1）： ::"
+
+msgid ""
+"To support both architectures in a single \"Universal 2\" binary, run the "
+"above two commands blocks and then use ``lipo`` to bundle them together::"
+msgstr ""
+"要使用“Universal 2”二进制来同时支持这两种架构，请运行上述两个命令块，然后使"
+"用 ``lipo`` 将它们捆绑在一起： ::"
+
+#, fuzzy
+msgid ""
+"To create an ``.app`` bundle like in the official builds, you need to use "
+"the template located in ``misc/dist/macos_template.app``. The release and "
+"debug builds should be placed in ``macos_template.app/Contents/MacOS`` with "
+"the names ``godot_macos_release.64`` and ``godot_macos_debug.64`` "
+"respectively. You can do so with the following commands (assuming a "
+"universal build, otherwise replace the ``.universal`` extension with the one "
+"of your arch-specific binaries)::"
+msgstr ""
+"要创建一个像官方构建的 ``.app`` 捆绑包，你需要使用位于 ``misc/dist/"
+"osx_template.app`` 的模板。发布版和调试版应该放在 ``osx_template.app/"
+"Contents/MacOS`` 里，名称分别为 ``godot_osx_release.64`` 和 "
+"``godot_osx_debug.64``\\ 。你可以用下面的命令来做（假设是通用构建，否则将 ``."
+"universal`` 扩展名替换为你的特定档案的二进制文件）： ::"
+
+#, fuzzy
+msgid ""
+"You can then zip the ``macos_template.app`` folder to reproduce the ``macos."
+"zip`` template from the official Godot distribution::"
+msgstr ""
+"然后你可以压缩 ``osx_template.app`` 文件夹来复制 Godot 官方发行的 ``osx."
+"zip`` 模板： ::"
+
+msgid "Using Pyston for faster development"
+msgstr "使用 Pyston 加快开发速度"
+
+#, fuzzy
+msgid ""
+"You can use `Pyston <https://www.pyston.org/>`__ to run SCons. Pyston is a "
+"JIT-enabled implementation of the Python language (which SCons is written "
+"in). Its \"full\" version is currently only compatible with Linux, but "
+"Pyston-lite is also compatible with macOS (both x86 and ARM). Pyston can "
+"speed up incremental builds significantly, often by a factor between 1.5× "
+"and 2×. Pyston can be combined with alternative linkers such as LLD or Mold "
+"to get even faster builds."
+msgstr ""
+"你可以使用 `Pyston <https://www.pyston.org/>`__ 来运行 SCons。Pyston 是一种利"
+"用了 JIT 的 Python 语言实现（SCons 就是使用 Python 编写的）。目前它只兼容 "
+"Linux。Pyston 可以显著加速增量构建，经常可以达到 1.5× 和 2× 倍。可以将 "
+"Pyston 与 Clang 和 LLD 组合，进行更快的构建。"
+
+msgid ""
+"To install Pyston-lite, run ``python -m pip install pyston_lite_autoload`` "
+"then run SCons as usual. This will automatically load a subset of Pyston's "
+"optimizations in any Python program you run. However, this won't bring as "
+"much of a performance improvement compared to installing \"full\" Pyston "
+"(which currently can't be done on macOS)."
+msgstr ""
+
+msgid "Cross-compiling for macOS from Linux"
+msgstr "从 Linux 交叉编译 macOS"
+
+msgid ""
+"It is possible to compile for macOS in a Linux environment (and maybe also "
+"in Windows using the Windows Subsystem for Linux). For that, you'll need to "
+"install `OSXCross <https://github.com/tpoechtrager/osxcross>`__ to be able "
+"to use macOS as a target. First, follow the instructions to install it:"
+msgstr ""
+"在Linux环境下为macOS进行编译是可行的(也许也可以在Windows中使用Windows "
+"Subsystem for Linux). 为此, 你需要安装 `OSXCross <https://github.com/"
+"tpoechtrager/osxcross>`__ , 以便能够使用macOS作为目标. 首先, 按照说明来安装"
+"它:"
+
+msgid ""
+"Clone the `OSXCross repository <https://github.com/tpoechtrager/osxcross>`__ "
+"somewhere on your machine (or download a ZIP file and extract it somewhere), "
+"e.g.::"
+msgstr ""
+"在你的机器上某处克隆 `OSXCross 资源库 <https://github.com/tpoechtrager/"
+"osxcross>`__\\ （或者下载一个 ZIP 文件并解压缩），例如： ::"
+
+msgid ""
+"Follow the instructions to package the SDK: https://github.com/tpoechtrager/"
+"osxcross#packaging-the-sdk"
+msgstr ""
+"按照说明打包SDK:https://github.com/tpoechtrager/osxcross#packaging-the-sdk"
+
+msgid ""
+"Follow the instructions to install OSXCross: https://github.com/tpoechtrager/"
+"osxcross#installation"
+msgstr ""
+"按照说明安装OSXCross:https://github.com/tpoechtrager/osxcross#installation"
+
+msgid ""
+"After that, you will need to define the ``OSXCROSS_ROOT`` as the path to the "
+"OSXCross installation (the same place where you cloned the repository/"
+"extracted the zip), e.g.::"
+msgstr ""
+"然后，你需要将 ``OSXCROSS_ROOT`` 定义为 OSXCross 的安装路径（与你克隆软件库/"
+"提取压缩包的地方相同），例如： ::"
+
+msgid "Now you can compile with SCons like you normally would::"
+msgstr "现在你可以像平时一样用 SCons 进行编译： ::"
+
+msgid ""
+"If you have an OSXCross SDK version different from the one expected by the "
+"SCons buildsystem, you can specify a custom one with the ``osxcross_sdk`` "
+"argument::"
+msgstr ""
+"如果你的 OSXCross SDK 版本与 SCons 构建系统所期望的不同，你可以用 "
+"``osxcross_sdk`` 参数指定一个自定义的版本： ::"
+
+msgid "Translation status"
+msgstr "翻译状态"

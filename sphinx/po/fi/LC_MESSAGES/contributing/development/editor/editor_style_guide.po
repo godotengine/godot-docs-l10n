@@ -1,0 +1,178 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Editor style guide"
+msgstr "Editorin ikonit"
+
+msgid "Introduction"
+msgstr "Johdanto"
+
+msgid "Thanks for your interest in contributing to the Godot editor!"
+msgstr ""
+
+msgid ""
+"This page describes the grammar and writing style used throughout the Godot "
+"editor. Following this style guide will help your contribution get merged "
+"faster since there will be fewer review steps required."
+msgstr ""
+
+#, fuzzy
+msgid "Writing style"
+msgstr "Varoitusjärjestelmä"
+
+msgid ""
+"**Write messages (errors, warnings, ...) as full sentences.** They should "
+"start with an uppercase letter and end with a period."
+msgstr ""
+
+msgid ""
+"**Try to keep sentences short.** This makes it more likely that their "
+"translations will be short as well, which is a good thing to avoid UI bugs."
+msgstr ""
+
+msgid ""
+"**Use contractions.** For example, use \"isn't\" instead of \"is not\". An "
+"exception to this rule can be made when you specifically want to emphasize "
+"one of the contraction's words."
+msgstr ""
+
+msgid ""
+"**Use double quotes in messages** (``\"\"``) instead of single quotes "
+"(``''``). Double quotes should be used to quote user input, file paths and "
+"possibly other things depending on the context."
+msgstr ""
+
+msgid ""
+"Try to follow the :ref:`doc_docs_writing_guidelines` in addition to the "
+"guidelines outlined above."
+msgstr ""
+
+msgid "Button and menu texts"
+msgstr ""
+
+msgid "Capitalize text in buttons and menu actions:"
+msgstr ""
+
+msgid "**Good:** *Open Editor Data Folder*"
+msgstr ""
+
+msgid "**Bad:** *Open editor data folder*"
+msgstr ""
+
+msgid ""
+"If a menu action opens a modal dialog, suffix it with an ellipsis (``...``)."
+msgstr ""
+
+msgid "**Good:** *Editor Settings...*"
+msgstr ""
+
+#, fuzzy
+msgid "**Bad:** *Editor Settings*"
+msgstr "Editorin ikonit"
+
+#, fuzzy
+msgid "Inspector sections"
+msgstr ":ref:`doc_inspector_plugins`"
+
+msgid ""
+"In general, don't create sections that contain less than 3 items. Sections "
+"that contain few items make it difficult to navigate the inspector, while "
+"missing the benefits of using sections such as folding."
+msgstr ""
+
+msgid ""
+"There are some valid exceptions for this, such as material features in :ref:"
+"`class_StandardMaterial3D`."
+msgstr ""
+
+msgid "This advice also applies to the Project Settings and Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Inspector performance hints"
+msgstr ":ref:`doc_inspector_plugins`"
+
+msgid ""
+"Enum properties that noticeably impact performance should have a performance "
+"hint associated. The hint should refer to the *absolute* performance impact, "
+"rather than being relative to the other options provided in the enum. Here "
+"are some examples taken from the Godot editor:"
+msgstr ""
+
+msgid "**Screen-space antialiasing:** *Disabled (Fastest), FXAA (Fast)*"
+msgstr ""
+
+msgid ""
+"**MSAA quality:** *Disabled (Fastest), 2x (Fast), 4x (Average), 8x (Slow), "
+"16x (Slower)*"
+msgstr ""
+
+msgid ""
+"**DirectionalLight mode:** *Orthogonal (Fast), PSSM 2 Splits (Average), PSSM "
+"4 Splits (Slow)*"
+msgstr ""
+
+msgid ""
+"For consistency, try to stick to the terms below (from fastest to slowest):"
+msgstr ""
+
+msgid "*Fastest, Faster, Fast, Average, Slow, Slower, Slowest*"
+msgstr ""
+
+msgid ""
+"Their usage doesn't have to be contiguous. For example, you can use only "
+"\"Fast\" and \"Slow\" from the list above."
+msgstr ""
+
+msgid ""
+"If you're adding a new enum, its values should be ordered from the fastest "
+"option to the slowest option."
+msgstr ""
+
+#, fuzzy
+msgid "Tooltips"
+msgstr "Työkalut"
+
+msgid ""
+"Consider adding tooltips whenever the action performed by a button or menu "
+"action isn't obvious. You can also provide additional context or highlight "
+"caveats in the tooltip."
+msgstr ""
+
+msgid ""
+"You can do this by calling ``set_tooltip(TTR(\"Text here.\"))`` on the "
+"Control-based node in question. If the tooltip is particularly long (more "
+"than ~80 characters), wrap it over several lines by adding line breaks using "
+"``\\n``."
+msgstr ""
+
+msgid ""
+"Tooltips should follow the writing style described above. In addition to "
+"this, use indicative mood instead of imperative mood:"
+msgstr ""
+
+msgid "**Good:** *Computes global illumination for the selected GIProbe.*"
+msgstr ""
+
+msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Käännöksen tila"

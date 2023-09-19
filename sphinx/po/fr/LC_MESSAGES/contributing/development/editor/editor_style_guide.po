@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Editor style guide"
+msgstr "Guide de style de l'éditeur"
+
+msgid "Introduction"
+msgstr "Introduction"
+
+msgid "Thanks for your interest in contributing to the Godot editor!"
+msgstr "Merci de votre intérêt à la contribution à l'éditeur de Godot !"
+
+msgid ""
+"This page describes the grammar and writing style used throughout the Godot "
+"editor. Following this style guide will help your contribution get merged "
+"faster since there will be fewer review steps required."
+msgstr ""
+"Cette page décrit la grammaire et le style d'écriture utilisés dans "
+"l'éditeur Godot. Suivre ce guide de style, aidera votre contribution a être "
+"fusionnée plus rapidement, car les étapes de révision seront moins "
+"nombreuses."
+
+msgid "Writing style"
+msgstr "Style d'écriture"
+
+msgid ""
+"**Write messages (errors, warnings, ...) as full sentences.** They should "
+"start with an uppercase letter and end with a period."
+msgstr ""
+"**Écrivez les messages (erreurs, avertissements, ...) sous forme de phrases "
+"complètes** Elles doivent commencer par une lettre majuscule et se terminer "
+"par un point."
+
+msgid ""
+"**Try to keep sentences short.** This makes it more likely that their "
+"translations will be short as well, which is a good thing to avoid UI bugs."
+msgstr ""
+"**Essayez de garder les phrases courtes.** Cela rend plus probable que leurs "
+"traductions soient également courtes, ce qui est une bonne chose pour éviter "
+"les bogues de l'interface utilisateur."
+
+msgid ""
+"**Use contractions.** For example, use \"isn't\" instead of \"is not\". An "
+"exception to this rule can be made when you specifically want to emphasize "
+"one of the contraction's words."
+msgstr ""
+"**Utilisez des contractions.** Par exemple, utilisez \"isn't\" au lieu de "
+"\"is not\". Une exception à cette règle peut être faite lorsque vous "
+"souhaitez spécifiquement souligner l'un des mots de la contraction."
+
+msgid ""
+"**Use double quotes in messages** (``\"\"``) instead of single quotes "
+"(``''``). Double quotes should be used to quote user input, file paths and "
+"possibly other things depending on the context."
+msgstr ""
+"**Utilisez des guillemets doubles dans les messages** (``\"\"``) au lieu de "
+"guillemets simples (``''``). Les guillemets doubles doivent être utilisés "
+"pour citer les entrées de l'utilisateur, les chemins d'accès aux fichiers et "
+"éventuellement d'autres choses selon le contexte."
+
+msgid ""
+"Try to follow the :ref:`doc_docs_writing_guidelines` in addition to the "
+"guidelines outlined above."
+msgstr ""
+"Essayez de suivre les lignes directrices :ref:`doc_docs_writing_guidelines` "
+"en plus des lignes directrices décrites ci-dessus."
+
+msgid "Button and menu texts"
+msgstr "Textes des boutons et des menus"
+
+msgid "Capitalize text in buttons and menu actions:"
+msgstr "Mettez le texte en majuscule dans les boutons et les actions de menu :"
+
+msgid "**Good:** *Open Editor Data Folder*"
+msgstr "**Bien :** *Open Editor Data Folder*"
+
+msgid "**Bad:** *Open editor data folder*"
+msgstr "**Mauvais :** *Open editor data folder*"
+
+msgid ""
+"If a menu action opens a modal dialog, suffix it with an ellipsis (``...``)."
+msgstr ""
+"Si une action de menu ouvre un dialogue modal, suffixez-le par une ellipse "
+"(``...``)."
+
+msgid "**Good:** *Editor Settings...*"
+msgstr "**Bon :** *Editor Settings...*"
+
+msgid "**Bad:** *Editor Settings*"
+msgstr "**Mauvais :** *Editor Settings*"
+
+msgid "Inspector sections"
+msgstr "Sections de l'inspecteur"
+
+msgid ""
+"In general, don't create sections that contain less than 3 items. Sections "
+"that contain few items make it difficult to navigate the inspector, while "
+"missing the benefits of using sections such as folding."
+msgstr ""
+"En général, ne créez pas de sections qui contiennent moins de 3 éléments. "
+"Les sections qui contiennent peu d'éléments rendent la navigation dans "
+"l'inspecteur difficile, tout en ne bénéficiant pas des avantages de "
+"l'utilisation de sections telles que le pliage."
+
+#, fuzzy
+msgid ""
+"There are some valid exceptions for this, such as material features in :ref:"
+"`class_StandardMaterial3D`."
+msgstr ""
+"Il y a quelques exceptions valables, telles que les caractéristiques "
+"matérielles dans :ref:`class_SpatialMaterial`."
+
+msgid "This advice also applies to the Project Settings and Editor Settings."
+msgstr ""
+"Ces conseils s'appliquent également aux paramètres du projet et de l'éditeur."
+
+msgid "Inspector performance hints"
+msgstr "Indices de performance de l'inspecteur"
+
+msgid ""
+"Enum properties that noticeably impact performance should have a performance "
+"hint associated. The hint should refer to the *absolute* performance impact, "
+"rather than being relative to the other options provided in the enum. Here "
+"are some examples taken from the Godot editor:"
+msgstr ""
+"Les propriétés énumérées qui ont un impact notable sur les performances "
+"devrait être associé à un indice de performance. L'indice doit faire "
+"référence à l'impact *absolu* sur les performances, plutôt que d'être "
+"relatif aux autres options fournies dans l'énumération. Voici quelques "
+"exemples tirés de l'éditeur Godot :"
+
+msgid "**Screen-space antialiasing:** *Disabled (Fastest), FXAA (Fast)*"
+msgstr "**Screen-space antialiasing:** *Disabled (Fastest), FXAA (Fast)*"
+
+msgid ""
+"**MSAA quality:** *Disabled (Fastest), 2x (Fast), 4x (Average), 8x (Slow), "
+"16x (Slower)*"
+msgstr ""
+"**MSAA quality:** *Disabled (Fastest), 2x (Fast), 4x (Average), 8x (Slow), "
+"16x (Slower)*"
+
+msgid ""
+"**DirectionalLight mode:** *Orthogonal (Fast), PSSM 2 Splits (Average), PSSM "
+"4 Splits (Slow)*"
+msgstr ""
+"**DirectionalLight mode:** *Orthogonal (Fast), PSSM 2 Splits (Average), PSSM "
+"4 Splits (Slow)*"
+
+msgid ""
+"For consistency, try to stick to the terms below (from fastest to slowest):"
+msgstr ""
+"Par souci de cohérence, essayez de vous en tenir aux termes ci-dessous (de "
+"fastest à slowest) :"
+
+msgid "*Fastest, Faster, Fast, Average, Slow, Slower, Slowest*"
+msgstr "*Fastest, Faster, Fast, Average, Slow, Slower, Slowest*"
+
+msgid ""
+"Their usage doesn't have to be contiguous. For example, you can use only "
+"\"Fast\" and \"Slow\" from the list above."
+msgstr ""
+"Leur utilisation n'a pas besoin d'être contiguë. Par exemple, vous pouvez "
+"utiliser uniquement \"Fast\" et \"Slow\" dans la liste ci-dessus."
+
+msgid ""
+"If you're adding a new enum, its values should be ordered from the fastest "
+"option to the slowest option."
+msgstr ""
+"Si vous ajoutez une nouvelle énumération, ses valeurs doivent être classées "
+"de l'option la plus rapide à l'option la plus lente."
+
+msgid "Tooltips"
+msgstr "Info-bulles"
+
+msgid ""
+"Consider adding tooltips whenever the action performed by a button or menu "
+"action isn't obvious. You can also provide additional context or highlight "
+"caveats in the tooltip."
+msgstr ""
+"Envisagez d'ajouter des infobulles chaque fois que l'action effectuée par un "
+"bouton ou une action de menu n'est pas évidente. Vous pouvez également "
+"fournir un contexte supplémentaire ou mettre en évidence des avertissements "
+"dans l'infobulle."
+
+msgid ""
+"You can do this by calling ``set_tooltip(TTR(\"Text here.\"))`` on the "
+"Control-based node in question. If the tooltip is particularly long (more "
+"than ~80 characters), wrap it over several lines by adding line breaks using "
+"``\\n``."
+msgstr ""
+"Vous pouvez le faire en appelant ``set_tooltip(TTR(\"Text here.\"))`` sur le "
+"nœud basé sur Control en question. Si l'info-bulle est particulièrement "
+"longue (plus de ~80 caractères), vous pouvez l'encapsuler sur plusieurs "
+"lignes en ajoutant des sauts de ligne en utilisant ``\\n``."
+
+msgid ""
+"Tooltips should follow the writing style described above. In addition to "
+"this, use indicative mood instead of imperative mood:"
+msgstr ""
+"Les infobulles doivent suivre le style d'écriture décrit ci-dessus. En "
+"outre, utilisez un ton indicatif au lieu d'un ton impératif :"
+
+msgid "**Good:** *Computes global illumination for the selected GIProbe.*"
+msgstr "**Bon :** *Computes global illumination for the selected GIProbe.*"
+
+msgid "**Bad:** *Compute global illumination for the selected GIProbe.*"
+msgstr "**Mauvais :** *Compute global illumination for the selected GIProbe.*"
+
+msgid "Translation status"
+msgstr "État de la traduction"

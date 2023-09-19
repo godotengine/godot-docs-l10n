@@ -1,0 +1,687 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Custom modules in C++"
+msgstr "C++のカスタムモジュール"
+
+msgid "Modules"
+msgstr "モジュール"
+
+msgid ""
+"Godot allows extending the engine in a modular way. New modules can be "
+"created and then enabled/disabled. This allows for adding new engine "
+"functionality at every level without modifying the core, which can be split "
+"for use and reuse in different modules."
+msgstr ""
+"Godotでは、モジュール方式でエンジンを拡張できます。新しいモジュールを作成して"
+"から、有効/無効にすることができます。これにより、コアを変更せずにすべてのレベ"
+"ルで新しいエンジン機能を追加できます。コアは別のモジュールで使用および再利用"
+"するために分割できます。"
+
+#, fuzzy
+msgid ""
+"Modules are located in the ``modules/`` subdirectory of the build system. By "
+"default, dozens of modules are enabled, such as GDScript (which, yes, is not "
+"part of the base engine), the Mono runtime, a regular expressions module, "
+"and others. As many new modules as desired can be created and combined. The "
+"SCons build system will take care of it transparently."
+msgstr ""
+"モジュールは、ビルド システムの ``modules/`` サブディレクトリにあります。デ"
+"フォルトでは、GDScript(これは基本エンジンの一部ではない)、Mono ランタイム、正"
+"規表現モジュールなど、多くの異なるモジュールが存在します。必要に応じて多くの"
+"新しいモジュールを作成して組み合わせることができ、SConsビルドシステムが透過的"
+"に使用します。"
+
+msgid "What for?"
+msgstr "何のために？"
+
+msgid ""
+"While it's recommended that most of a game be written in scripting (as it is "
+"an enormous time saver), it's perfectly possible to use C++ instead. Adding "
+"C++ modules can be useful in the following scenarios:"
+msgstr ""
+"ゲームの大部分はスクリプトで記述することをお勧めしますが(時間を大幅に節約でき"
+"るため)、代わりに完全にC++を使用することも可能です。 C++モジュールの追加は、"
+"次のシナリオで役立ちます:"
+
+msgid "Binding an external library to Godot (like PhysX, FMOD, etc)."
+msgstr "外部ライブラリをGodot にバインドする(PhysX、FMODなど)。"
+
+msgid "Optimize critical parts of a game."
+msgstr "ゲームの重要な部分を最適化します。"
+
+msgid "Adding new functionality to the engine and/or editor."
+msgstr "エンジンまたはエディタに新しい機能を追加します。"
+
+#, fuzzy
+msgid "Porting an existing game to Godot."
+msgstr "既存のゲームを移植します。"
+
+msgid "Write a whole, new game in C++ because you can't live without C++."
+msgstr "C++なしでは生きていけないので、C++で新しいゲームを書きます。"
+
+msgid "Creating a new module"
+msgstr "新しいモジュールの作成"
+
+#, fuzzy
+msgid ""
+"Before creating a module, make sure to :ref:`download the source code of "
+"Godot and compile it <toc-devel-compiling>`."
+msgstr ""
+"モジュールを作成する前に、Godot のソースコードをダウンロードし、コンパイルに"
+"成功してください。このドキュメントにはチュートリアルがあります。"
+
+msgid ""
+"To create a new module, the first step is creating a directory inside "
+"``modules/``. If you want to maintain the module separately, you can "
+"checkout a different VCS into modules and use it."
+msgstr ""
+"新しいモジュールを作成するには、最初のステップは ``modules/`` 内にディレクト"
+"リを作成することです。モジュールを個別に保守する場合は、別のVCSをモジュールに"
+"チェックアウトして使用できます。"
+
+msgid ""
+"The example module will be called \"summator\" (``godot/modules/summator``). "
+"Inside we will create a summator class:"
+msgstr ""
+
+msgid "And then the cpp file."
+msgstr "それからcppファイル。"
+
+msgid ""
+"Then, the new class needs to be registered somehow, so two more files need "
+"to be created:"
+msgstr ""
+"次に、新しいクラスを何らかの方法で登録する必要があるので、さらに2つのファイル"
+"を作成する必要があります:"
+
+msgid ""
+"These files must be in the top-level folder of your module (next to your "
+"``SCsub`` and ``config.py`` files) for the module to be registered properly."
+msgstr ""
+
+#, fuzzy
+msgid "These files should contain the following:"
+msgstr "このコードは、次の動作を提供します:"
+
+msgid ""
+"Next, we need to create a ``SCsub`` file so the build system compiles this "
+"module:"
+msgstr ""
+"次に、ビルドシステムがこのモジュールをコンパイルできるように ``SCsub`` ファイ"
+"ルを作成する必要があります:"
+
+msgid ""
+"With multiple sources, you can also add each file individually to a Python "
+"string list:"
+msgstr ""
+"複数のソースを使用して、各ファイルをPython文字列リストに個別に追加することも"
+"できます:"
+
+#, fuzzy
+msgid ""
+"This allows for powerful possibilities using Python to construct the file "
+"list using loops and logic statements. Look at some modules that ship with "
+"Godot by default for examples."
+msgstr ""
+"これにより、Pythonを使ってループと論理ステートメントを利用してファイルリスト"
+"を作成できる強力な可能性が実現されます。例として、デフォルトでGodotに同梱され"
+"ている他のモジュールをいくつか見てください。"
+
+msgid ""
+"To add include directories for the compiler to look at you can append it to "
+"the environment's paths:"
+msgstr ""
+"コンパイラが見るインクルードディレクトリを追加するには、環境のパスに追加しま"
+"す:"
+
+#, fuzzy
+msgid ""
+"If you want to add custom compiler flags when building your module, you need "
+"to clone ``env`` first, so it won't add those flags to whole Godot build "
+"(which can cause errors). Example ``SCsub`` with custom flags:"
+msgstr ""
+"モジュールのビルド時にカスタムコンパイラフラグを追加する場合は、最初に `env` "
+"のクローンを作成する必要があるので、これらのフラグはGodotビルド全体に追加され"
+"ません(エラーが発生する可能性があります)。カスタムフラグを使用した `SCsub` の"
+"例:"
+
+#, fuzzy
+msgid ""
+"And finally, the configuration file for the module, this is a Python script "
+"that must be named ``config.py``:"
+msgstr ""
+"最後に、モジュールの構成ファイルは、 ``config.py`` という名前を付けなければな"
+"らない単純なPythonスクリプトです:"
+
+msgid ""
+"The module is asked if it's OK to build for the specific platform (in this "
+"case, ``True`` means it will build for every platform)."
+msgstr ""
+"モジュールは、特定のプラットフォーム用にビルドしてもよいかどうかを尋ねられま"
+"す(この場合、\\ ``True`` はすべてのプラットフォーム用にビルドすることを意味し"
+"ます)。"
+
+msgid ""
+"And that's it. Hope it was not too complex! Your module should look like "
+"this:"
+msgstr ""
+"以上です。あまり複雑でなければいいのですが。モジュールは次のようになります:"
+
+msgid ""
+"You can then zip it and share the module with everyone else. When building "
+"for every platform (instructions in the previous sections), your module will "
+"be included."
+msgstr ""
+"その後、それを圧縮し、他の人とモジュールを共有することができます。すべてのプ"
+"ラットフォーム (前のセクションの手順)を構築する場合は、モジュールが含まれま"
+"す。"
+
+msgid ""
+"There is a parameter limit of 5 in C++ modules for things such as "
+"subclasses. This can be raised to 13 by including the header file ``core/"
+"method_bind_ext.gen.inc``."
+msgstr ""
+"サブクラスなどのC++モジュールには、パラメーター数が5までの制限があります。こ"
+"れは、ヘッダーファイル ``core/method_bind_ext.gen.inc`` を含めることで13に上"
+"げることができます。"
+
+msgid "Using the module"
+msgstr "モジュールの使用"
+
+msgid "You can now use your newly created module from any script:"
+msgstr "これで、任意のスクリプトから新しく作成したモジュールを使用できます:"
+
+msgid "The output will be ``60``."
+msgstr "出力は ``60`` になります。"
+
+msgid ""
+"The previous Summator example is great for small, custom modules, but what "
+"if you want to use a larger, external library? Refer to :ref:"
+"`doc_binding_to_external_libraries` for details about binding to external "
+"libraries."
+msgstr ""
+"前のSummatorの例は、小さなカスタムモジュールに最適ですが、より大きな外部ライ"
+"ブラリを使用する場合はどうでしょうか。外部ライブラリへのバインドの詳細につい"
+"ては、\\ :ref:`doc_binding_to_external_libraries` を参照してください。"
+
+msgid ""
+"If your module is meant to be accessed from the running project (not just "
+"from the editor), you must also recompile every export template you plan to "
+"use, then specify the path to the custom template in each export preset. "
+"Otherwise, you'll get errors when running the project as the module isn't "
+"compiled in the export template. See the :ref:`Compiling <toc-devel-"
+"compiling>` pages for more information."
+msgstr ""
+"モジュールが(エディタからだけでなく)実行中のプロジェクトからアクセスされる場"
+"合、使用する予定のすべてのエクスポートテンプレートを再コンパイルし、各エクス"
+"ポートプリセットでカスタムテンプレートへのパスを指定する必要があります。そう"
+"しないと、モジュールがエクスポートテンプレートでコンパイルされないため、プロ"
+"ジェクトの実行時にエラーが発生します。詳細については、\\ :ref:`Compiling "
+"<toc-devel-compiling>` ページを参照してください。"
+
+msgid "Compiling a module externally"
+msgstr ""
+
+msgid ""
+"Compiling a module involves moving the module's sources directly under the "
+"engine's ``modules/`` directory. While this is the most straightforward way "
+"to compile a module, there are a couple of reasons as to why this might not "
+"be a practical thing to do:"
+msgstr ""
+
+msgid ""
+"Having to manually copy modules sources every time you want to compile the "
+"engine with or without the module, or taking additional steps needed to "
+"manually disable a module during compilation with a build option similar to "
+"``module_summator_enabled=no``. Creating symbolic links may also be a "
+"solution, but you may additionally need to overcome OS restrictions like "
+"needing the symbolic link privilege if doing this via script."
+msgstr ""
+
+msgid ""
+"Depending on whether you have to work with the engine's source code, the "
+"module files added directly to ``modules/`` changes the working tree to the "
+"point where using a VCS (like ``git``) proves to be cumbersome as you need "
+"to make sure that only the engine-related code is committed by filtering "
+"changes."
+msgstr ""
+
+msgid ""
+"So if you feel like the independent structure of custom modules is needed, "
+"lets take our \"summator\" module and move it to the engine's parent "
+"directory:"
+msgstr ""
+
+msgid ""
+"Compile the engine with our module by providing ``custom_modules`` build "
+"option which accepts a comma-separated list of directory paths containing "
+"custom C++ modules, similar to the following:"
+msgstr ""
+
+msgid ""
+"The build system shall detect all modules under the ``../modules`` directory "
+"and compile them accordingly, including our \"summator\" module."
+msgstr ""
+
+msgid ""
+"Any path passed to ``custom_modules`` will be converted to an absolute path "
+"internally as a way to distinguish between custom and built-in modules. It "
+"means that things like generating module documentation may rely on a "
+"specific path structure on your machine."
+msgstr ""
+
+msgid ""
+":ref:`Introduction to the buildsystem - Custom modules build option "
+"<doc_buildsystem_custom_modules>`."
+msgstr ""
+
+#, fuzzy
+msgid "Customizing module types initialization"
+msgstr "プレゼンテーションのカスタマイズ"
+
+msgid ""
+"Modules can interact with other built-in engine classes during runtime and "
+"even affect the way core types are initialized. So far, we've been using "
+"``register_summator_types`` as a way to bring in module classes to be "
+"available within the engine."
+msgstr ""
+
+msgid ""
+"A crude order of the engine setup can be summarized as a list of the "
+"following type registration methods:"
+msgstr ""
+
+msgid ""
+"Our ``Summator`` class is initialized during the ``register_module_types()`` "
+"call. Imagine that we need to satisfy some common module run-time dependency "
+"(like singletons), or allow us to override existing engine method callbacks "
+"before they can be assigned by the engine itself. In that case, we want to "
+"ensure that our module classes are registered *before* any other built-in "
+"type."
+msgstr ""
+
+msgid ""
+"This is where we can define an optional ``preregister_summator_types()`` "
+"method which will be called before anything else during the "
+"``preregister_module_types()`` engine setup stage."
+msgstr ""
+
+msgid ""
+"We now need to add this method to ``register_types`` header and source files:"
+msgstr ""
+
+msgid ""
+"Unlike other register methods, we have to explicitly define "
+"``MODULE_SUMMATOR_HAS_PREREGISTER`` to let the build system know what "
+"relevant method calls to include at compile time. The module's name has to "
+"be converted to uppercase as well."
+msgstr ""
+
+msgid "Improving the build system for development"
+msgstr "開発のためのビルドシステムの改善"
+
+msgid ""
+"This shared library support is not designed to support distributing a module "
+"to other users without recompiling the engine. For that purpose, use a "
+"GDExtension instead."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"So far, we defined a clean SCsub that allows us to add the sources of our "
+"new module as part of the Godot binary."
+msgstr ""
+"ここまでは、Godotバイナリの一部として新しいモジュールのソースを追加できるク"
+"リーンでシンプルなSCsubを定義しました。"
+
+#, fuzzy
+msgid ""
+"This static approach is fine when we want to build a release version of our "
+"game, given we want all the modules in a single binary."
+msgstr ""
+"この静的なアプローチは、すべてのモジュールを1つのバイナリにしたい場合に、ゲー"
+"ムのリリースバージョンを構築したいときに適しています。"
+
+#, fuzzy
+msgid ""
+"However, the trade-off is that every single change requires a full "
+"recompilation of the game. Even though SCons is able to detect and recompile "
+"only the file that was changed, finding such files and eventually linking "
+"the final binary takes a long time."
+msgstr ""
+"ただし、トレードオフは、すべての変更がゲームの完全な再コンパイルを意味するこ"
+"とです。 SConsが変更されたファイルのみを検出して再コンパイルできたとしても、"
+"そのようなファイルを見つけて最終的に最終的なバイナリをリンクすることは長くて"
+"コストのかかる部分です。"
+
+msgid ""
+"The solution to avoid such a cost is to build our own module as a shared "
+"library that will be dynamically loaded when starting our game's binary."
+msgstr ""
+"このようなコストを回避するソリューションは、ゲームのバイナリを起動するときに"
+"動的に読み込まれる共有ライブラリとして独自のモジュールを構築することです。"
+
+#, fuzzy
+msgid ""
+"Once compiled, we should end up with a ``bin`` directory containing both the "
+"``godot*`` binary and our ``libsummator*.so``. However given the .so is not "
+"in a standard directory (like ``/usr/lib``), we have to help our binary find "
+"it during runtime with the ``LD_LIBRARY_PATH`` environment variable:"
+msgstr ""
+"コンパイルしたら、 ``godot*`` バイナリと ``libsummator* .so`` の両方を含む "
+"``bin`` ディレクトリになります。 ただし、「.so」が標準ディレクトリ( ``/usr/"
+"lib`` など)にない場合、 ``LD_LIBRARY_PATH`` 環境変数を使用して、実行時にバイ"
+"ナリを見つける必要があります:"
+
+#, fuzzy
+msgid ""
+"You have to ``export`` the environment variable. Otherwise, you won't be "
+"able to run your project from the editor."
+msgstr ""
+"**注**: environ変数を ``export`` する必要があることに注意してください。そうし"
+"ないと、エディタ内からプロジェクトを再生できなくなります。"
+
+#, fuzzy
+msgid ""
+"On top of that, it would be nice to be able to select whether to compile our "
+"module as shared library (for development) or as a part of the Godot binary "
+"(for release). To do that we can define a custom flag to be passed to SCons "
+"using the ``ARGUMENT`` command:"
+msgstr ""
+"さらに、モジュールを共有ライブラリとして(開発用)コンパイルするか、Godotバイナ"
+"リの一部として(リリース用)コンパイルするかを選択できると便利です。それに"
+"は、\\ `ARGUMENT` コマンドを使用してSConsに渡すカスタムフラグを定義できます:"
+
+msgid ""
+"Now by default ``scons`` command will build our module as part of Godot's "
+"binary and as a shared library when passing ``summator_shared=yes``."
+msgstr ""
+"現在、デフォルトで ``scons`` コマンドは、モジュールをGodotのバイナリの一部と"
+"して、そして ``summator_shared = yes`` を渡すときに共有ライブラリとしてビルド"
+"します。"
+
+#, fuzzy
+msgid ""
+"Finally, you can even speed up the build further by explicitly specifying "
+"your shared module as target in the SCons command:"
+msgstr ""
+"最後に、共有モジュールを scons コマンドのターゲットとして明示的に指定すること"
+"で、ビルドをさらに高速化することもできます:"
+
+msgid "Writing custom documentation"
+msgstr "カスタムドキュメントの作成"
+
+#, fuzzy
+msgid ""
+"Writing documentation may seem like a boring task, but it is highly "
+"recommended to document your newly created module to make it easier for "
+"users to benefit from it. Not to mention that the code you've written one "
+"year ago may become indistinguishable from the code that was written by "
+"someone else, so be kind to your future self!"
+msgstr ""
+"ドキュメントを書くのは退屈な作業のように思えるかもしれませんが、ユーザーが役"
+"立てやすくするために、新しく作成したモジュールを文書化することを強くお勧めし"
+"ます。1年前に書いたコードは、他の人が書いたコードと区別がつかないかもしれない"
+"ので、将来の自分に親切にしてください!"
+
+msgid "There are several steps in order to setup custom docs for the module:"
+msgstr ""
+"モジュールのカスタムドキュメントをセットアップするには、いくつかの手順があり"
+"ます:"
+
+msgid ""
+"Make a new directory in the root of the module. The directory name can be "
+"anything, but we'll be using the ``doc_classes`` name throughout this "
+"section."
+msgstr ""
+"モジュールのルートに新しいディレクトリを作成します。ディレクトリ名は何でもか"
+"まいませんが、このセクションでは ``doc_classes`` という名前を使用します。"
+
+#, fuzzy
+msgid "Now, we need to edit ``config.py``, add the following snippet:"
+msgstr ""
+"``_process_input`` にコードを追加する必要があります ``_process_input`` に以下"
+"を追加します:"
+
+#, fuzzy
+msgid ""
+"The ``get_doc_path()`` function is used by the build system to determine the "
+"location of the docs. In this case, they will be located in the ``modules/"
+"summator/doc_classes`` directory. If you don't define this, the doc path for "
+"your module will fall back to the main ``doc/classes`` directory."
+msgstr ""
+"``get_doc_path()`` メソッドは、ドキュメントの場所を決定するためにビルド シス"
+"テムで使用されます。この例では、 ``doc_classes`` ディレクトリに配置されます。"
+
+#, fuzzy
+msgid ""
+"The ``get_doc_classes()`` method is necessary for the build system to know "
+"which registered classes belong to the module. You need to list all of your "
+"classes here. The classes that you don't list will end up in the main ``doc/"
+"classes`` directory."
+msgstr ""
+"``get_doc_path()`` メソッドは、ドキュメントの場所を決定するためにビルド シス"
+"テムで使用されます。この例では、 ``doc_classes`` ディレクトリに配置されます。"
+
+msgid ""
+"You can use Git to check if you have missed some of your classes by checking "
+"the untracked files with ``git status``. For example::"
+msgstr ""
+
+#, fuzzy
+msgid "Example output::"
+msgstr "以下はその例です:"
+
+msgid "Now we can generate the documentation:"
+msgstr "これで、ドキュメントを生成できます:"
+
+msgid ""
+"We can do this via running Godot's doctool i.e. ``godot --doctool <path>``, "
+"which will dump the engine API reference to the given ``<path>`` in XML "
+"format."
+msgstr ""
+
+msgid ""
+"In our case we'll point it to the root of the cloned repository. You can "
+"point it to an another folder, and just copy over the files that you need."
+msgstr ""
+
+msgid "Run command:"
+msgstr "コマンドの実行:"
+
+msgid ""
+"Now if you go to the ``godot/modules/summator/doc_classes`` folder, you will "
+"see that it contains a ``Summator.xml`` file, or any other classes, that you "
+"referenced in your ``get_doc_classes`` function."
+msgstr ""
+
+msgid ""
+"Edit the file(s) following :ref:`doc_class_reference_primer` and recompile "
+"the engine."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Once the compilation process is finished, the docs will become accessible "
+"within the engine's built-in documentation system."
+msgstr ""
+"ビルドシステムは、 ``doc_classes`` ディレクトリからドキュメントファイルを"
+"フェッチし、基本型とマージします。コンパイルプロセスが完了すると、ドキュメン"
+"トはエンジンの組み込みドキュメントシステム内でアクセスできるようになります。"
+
+#, fuzzy
+msgid ""
+"In order to keep documentation up-to-date, all you'll have to do is simply "
+"modify one of the XML files and recompile the engine from now on."
+msgstr ""
+"ドキュメントを最新の状態に保つために必要なことは、単に ``ClassName.xml`` ファ"
+"イルの1つを変更し、エンジンを再コンパイルすることだけです。"
+
+msgid ""
+"If you change your module's API, you can also re-extract the docs, they will "
+"contain the things that you previously added. Of course if you point it to "
+"your godot folder, make sure you don't lose work by extracting older docs "
+"from an older engine build on top of the newer ones."
+msgstr ""
+
+msgid ""
+"Note that if you don't have write access rights to your supplied ``<path>``, "
+"you might encounter an error similar to the following:"
+msgstr ""
+
+#, fuzzy
+msgid "Writing custom unit tests"
+msgstr "カスタムドキュメントの作成"
+
+msgid ""
+"It's possible to write self-contained unit tests as part of a C++ module. If "
+"you are not familiar with the unit testing process in Godot yet, please "
+"refer to :ref:`doc_unit_testing`."
+msgstr ""
+
+#, fuzzy
+msgid "The procedure is the following:"
+msgstr "次の注意事項があります:"
+
+msgid "Create a new directory named ``tests/`` under your module's root:"
+msgstr ""
+
+msgid ""
+"Create a new test suite: ``test_summator.h``. The header must be prefixed "
+"with ``test_`` so that the build system can collect it and include it as "
+"part of the ``tests/test_main.cpp`` where the tests are run."
+msgstr ""
+
+msgid "Write some test cases. Here's an example:"
+msgstr ""
+
+msgid ""
+"Compile the engine with ``scons tests=yes``, and run the tests with the "
+"following command:"
+msgstr ""
+
+msgid "You should see the passing assertions now."
+msgstr ""
+
+msgid "Adding custom editor icons"
+msgstr "カスタムエディタアイコンの追加"
+
+msgid ""
+"Similarly to how you can write self-contained documentation within a module, "
+"you can also create your own custom icons for classes to appear in the "
+"editor."
+msgstr ""
+"モジュール内で自己完結型のドキュメントを作成する方法と同様に、エディタに表示"
+"されるクラスの独自のカスタムアイコンを作成することもできます。"
+
+msgid ""
+"For the actual process of creating editor icons to be integrated within the "
+"engine, please refer to :ref:`doc_editor_icons` first."
+msgstr ""
+"エンジン内に統合されるエディタアイコンを作成する実際のプロセスについては、最"
+"初に :ref:`doc_editor_icons` を参照してください。"
+
+msgid "Once you've created your icon(s), proceed with the following steps:"
+msgstr "アイコンを作成したら、次の手順に進みます:"
+
+msgid ""
+"Make a new directory in the root of the module named ``icons``. This is the "
+"default path for the engine to look for module's editor icons."
+msgstr ""
+"``icons`` という名前のモジュールのルートに新しいディレクトリを作成します。こ"
+"れは、モジュールのエディタアイコンを検索するエンジンのデフォルトパスです。"
+
+msgid ""
+"Move your newly created ``svg`` icons (optimized or not) into that folder."
+msgstr ""
+"新しく作成した ``svg`` アイコン(最適化されているかどうかに関係なく)をそのフォ"
+"ルダに移動します。"
+
+msgid ""
+"Recompile the engine and run the editor. Now the icon(s) will appear in "
+"editor's interface where appropriate."
+msgstr ""
+"エンジンを再コンパイルし、エディタを実行します。必要に応じて、エディタのイン"
+"ターフェースにアイコンが表示されます。"
+
+msgid ""
+"If you'd like to store your icons somewhere else within your module, add the "
+"following code snippet to ``config.py`` to override the default path:"
+msgstr ""
+"モジュール内の別の場所にアイコンを保存したい場合は、次のコードスニペットを "
+"``config.py`` に追加してデフォルトパスをオーバーライドします:"
+
+msgid "Summing up"
+msgstr "まとめ"
+
+msgid "Remember to:"
+msgstr "覚えておいてください:"
+
+#, fuzzy
+msgid "Use ``GDCLASS`` macro for inheritance, so Godot can wrap it."
+msgstr "継承に ``GDCLASS`` マクロを使用するので、Godotはそれをラップできます"
+
+#, fuzzy
+msgid ""
+"Use ``_bind_methods`` to bind your functions to scripting, and to allow them "
+"to work as callbacks for signals."
+msgstr ""
+"関数をスクリプトにバインドし、シグナルのコールバックとして機能できるようにす"
+"るには、 ``_bind_methods`` を使用します。"
+
+msgid ""
+"**Avoid multiple inheritance for classes exposed to Godot**, as ``GDCLASS`` "
+"doesn't support this. You can still use multiple inheritance in your own "
+"classes as long as they're not exposed to Godot's scripting API."
+msgstr ""
+
+msgid ""
+"But this is not all, depending what you do, you will be greeted with some "
+"(hopefully positive) surprises."
+msgstr ""
+"しかし、これはすべてではありません、あなたが何をするかに応じて、いくつかの(う"
+"まくいけば肯定的な)驚きで迎えられます。"
+
+#, fuzzy
+msgid ""
+"If you inherit from :ref:`class_Node` (or any derived node type, such as "
+"Sprite2D), your new class will appear in the editor, in the inheritance tree "
+"in the \"Add Node\" dialog."
+msgstr ""
+":ref:`class_Node` (またはSpriteなどの派生ノードタイプ) から継承すると、新しい"
+"クラスがエディタに表示され、「ノードの追加」ダイアログボックスの継承ツリーに"
+"表示されます。"
+
+msgid ""
+"If you inherit from :ref:`class_Resource`, it will appear in the resource "
+"list, and all the exposed properties can be serialized when saved/loaded."
+msgstr ""
+":ref:`class_Resource`\\ から継承すると、リソース リストに表示され、公開されて"
+"いるすべてのプロパティは、保存/読み込み時にシリアル化できます。"
+
+msgid ""
+"By this same logic, you can extend the Editor and almost any area of the "
+"engine."
+msgstr ""
+"この同じロジックによって、エディタとエンジンのほぼすべての領域を拡張できま"
+"す。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

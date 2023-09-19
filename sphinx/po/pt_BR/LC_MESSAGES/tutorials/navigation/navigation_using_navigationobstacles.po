@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Using NavigationObstacles"
+msgstr "NavigationObstacle3D"
+
+msgid ""
+"NavigationObstacles can be used either as static or dynamic obstacles to "
+"affect avoidance controlled agents."
+msgstr ""
+
+msgid ""
+"When used statically NavigationObstacles constrain avoidance controlled "
+"agents outside or inside a polygon defined area."
+msgstr ""
+
+msgid ""
+"When used dynamically NavigationObstacles push away avoidance controlled "
+"agents in a radius around them."
+msgstr ""
+
+msgid ""
+"2D and 3D versions of NavigationObstacles nodes are available as :ref:"
+"`NavigationObstacle2D<class_NavigationObstacle2D>` and :ref:"
+"`NavigationObstacle3D<class_NavigationObstacle3D>`  respectively."
+msgstr ""
+
+msgid ""
+"NavigationObstacles do not change or influence the pathfinding in any way. "
+"NavigationObstacles only affect the avoidance velocities of agents "
+"controlled by avoidance."
+msgstr ""
+
+#, fuzzy
+msgid "Static obstacles"
+msgstr "Corpos estáticos."
+
+msgid ""
+"A NavigationObstacle is considered static when its ``vertices`` property is "
+"populated with an outline array of positions to form a polygon."
+msgstr ""
+
+msgid ""
+"Static obstacles act as hard do-not-cross boundaries for avoidance using "
+"agents, e.g. similar to physics collision but for avoidance."
+msgstr ""
+
+msgid ""
+"Static obstacles define their boundaries with an array of outline "
+"``vertices`` (positions), and in case of 3D with an additional ``height`` "
+"property."
+msgstr ""
+
+msgid "Static obstacles only work for agents that use the 2D avoidance mode."
+msgstr ""
+
+msgid ""
+"Static obstacles define through winding order of the vertices if agents are "
+"pushed out or sucked in."
+msgstr ""
+
+msgid ""
+"Static obstacles can not change their position. They can only be warped to a "
+"new position and rebuild from scratch. Static obstacles as a result are ill-"
+"suited for usages where the position is changed every frame as the constant "
+"rebuild has a high performance cost."
+msgstr ""
+
+msgid ""
+"Static obstacles that are warped to another position can not be predicted by "
+"agents. This creates the risk of getting agents stuck should a static "
+"obstacle be warped on top of agents."
+msgstr ""
+
+msgid ""
+"When the 2D avoidance is used in 3D the y-axis of Vector3 vertices is "
+"ignored. Instead, the global y-axis position of the obstacle is used as the "
+"elevation level. Agents will ignore static obstacles in 3D that are below or "
+"above them. This is automatically determined by global y-axis position of "
+"both obstacle and agent as the elevation level as well as their respective "
+"height properties."
+msgstr ""
+
+#, fuzzy
+msgid "Dynamic obstacles"
+msgstr "Objetos dinâmicos"
+
+msgid ""
+"A NavigationObstacle is considered dynamic when its ``radius`` property is "
+"greater than zero."
+msgstr ""
+
+msgid ""
+"Dynamic obstacles act as a soft please-move-away-from-me object for "
+"avoidance using agents, e.g. similar to how they avoid other agents."
+msgstr ""
+
+msgid ""
+"Dynamic obstacles define their boundaries with a single ``radius`` for a 2D "
+"circle, or in case of 3D avoidance a sphere shape."
+msgstr ""
+
+msgid ""
+"Dynamic obstacles can change their position every frame without additional "
+"performance cost."
+msgstr ""
+
+msgid ""
+"Dynamic obstacles with a set velocity can be predicted in their movement by "
+"agents."
+msgstr ""
+
+msgid ""
+"Dynamic obstacles are not a reliable way to constrain agents in crowded or "
+"narrow spaces."
+msgstr ""
+
+msgid ""
+"While both static and dynamic properties can be active at the same time on "
+"the same obstacle this is not recommended for performance. Ideally when an "
+"obstacle is moving the static vertices are removed and instead the radius "
+"activated. When the obstacle reaches the new final position it should "
+"gradually enlarge its radius to push all other agents away. With enough "
+"created save space around the obstacle it should add the static vertices "
+"again and remove the radius. This helps to avoid getting agents stuck in the "
+"suddenly appearing static obstacle when the rebuild static boundary is "
+"finished."
+msgstr ""
+
+msgid ""
+"Similar to agents the obstacles can make use of the ``avoidance_layers`` "
+"bitmask. All agents with a matching bit on their own avoidance mask will "
+"avoid the obstacle."
+msgstr ""
+
+#, fuzzy
+msgid "Procedual obstacles"
+msgstr "Céu procedural."
+
+msgid ""
+"New obstacles can be created without a Node directly on the NavigationServer."
+msgstr ""
+
+msgid ""
+"Obstacles created with scripts require at least a ``map`` and a "
+"``position``. For dynamic use a ``radius`` is required. For static use an "
+"array of ``vertices`` is required."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Progresso da Tradução"

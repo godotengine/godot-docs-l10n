@@ -1,0 +1,737 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "GDExtension C++ example"
+msgstr "GDNative C++の例"
+
+msgid "Introduction"
+msgstr "はじめに"
+
+#, fuzzy
+msgid ""
+"The C++ bindings for GDExtension are built on top of the C GDExtension API "
+"and provide a nicer way to \"extend\" nodes and other built-in classes in "
+"Godot using C++. This new system allows the extension of Godot to nearly the "
+"same level as statically linked C++ modules."
+msgstr ""
+"GDNativeのC++バインディングはNativeScript GDNative APIの上に構築されており、"
+"C++を使用してGodotでノードを「拡張」するためのより良い方法を提供します。これ"
+"は、GDScriptでスクリプトを記述するのと同じですが、代わりにC++で記述します。"
+
+#, fuzzy
+msgid ""
+"You can download the included example in the test folder of the godot-cpp "
+"repository `on GitHub <https://github.com/godotengine/godot-cpp>`__."
+msgstr ""
+"`godot-cppリポジトリ <https://github.com/GodotNativeTools/godot-cpp>`__\\ の"
+"コピー。"
+
+msgid "Setting up the project"
+msgstr "プロジェクトの設定"
+
+msgid "There are a few prerequisites you'll need:"
+msgstr "必要な前提条件がいくつかあります:"
+
+#, fuzzy
+msgid "a Godot 4 executable,"
+msgstr "Godot 3.x実行可能ファイル、"
+
+msgid "a C++ compiler,"
+msgstr "C++コンパイラ、"
+
+msgid "SCons as a build tool,"
+msgstr "ビルドツールとしてのSCons、"
+
+#, fuzzy
+msgid ""
+"a copy of the `godot-cpp repository <https://github.com/godotengine/godot-"
+"cpp>`__."
+msgstr ""
+"`godot-cppリポジトリ <https://github.com/GodotNativeTools/godot-cpp>`__\\ の"
+"コピー。"
+
+msgid ""
+"See also :ref:`Compiling <toc-devel-compiling>` as the build tools are "
+"identical to the ones you need to compile Godot from source."
+msgstr ""
+":ref:`コンパイル <toc-devel-compiling>`\\ も参照してください。ビルドツール"
+"は、ソースからGodotをコンパイルするために必要なツールと同じです。"
+
+#, fuzzy
+msgid ""
+"You can download the `godot-cpp repository <https://github.com/godotengine/"
+"godot-cpp>`__ from GitHub or let Git do the work for you. Note that this "
+"repository has different branches for different versions of Godot. "
+"GDExtensions will not work in older versions of Godot (only Godot 4 and up) "
+"and vice versa, so make sure you download the correct branch."
+msgstr ""
+"これらのリポジトリをGitHubからダウンロードすることも、Gitに作業を任せることが"
+"できます。これらのリポジトリには、Godotのバージョンごとに異なるブランチがある"
+"ことに注意してください。 Godotの以前のバージョン用に書かれたGDNativeモジュー"
+"ルは、(3.0と3.1の間のARVRインターフェースの１つの重大な変更を除いて)新しい"
+"バージョンでも機能します。また、 ``api.json`` の生成に使用するGodotのバージョ"
+"ンが最小のバージョンになることに注意してください。"
+
+msgid ""
+"To use `GDExtension <https://godotengine.org/article/introducing-gd-"
+"extensions>`__ you need to use the godot-cpp branch that matches the version "
+"of Godot that you are targeting. For example, if you're targeting Godot 4.1, "
+"use the ``4.1`` branch, which is what is shown through out this tutorial."
+msgstr ""
+
+msgid ""
+"The ``master`` branch is the development branch which is updated regularly "
+"to work with Godot's ``master`` branch."
+msgstr ""
+
+msgid ""
+"Our long-term goal is that GDExtensions targeting an earlier version of "
+"Godot will work in later minor versions, but not vice-versa. For example, a "
+"GDExtension targeting Godot 4.2 should work just fine in Godot 4.3, but one "
+"targeting Godot 4.3 won't work in Godot 4.2."
+msgstr ""
+
+msgid ""
+"However, GDExtension is currently *experimental*, which means that we may "
+"break compatibility in order to fix major bugs or include critical features. "
+"For example, GDExtensions created for Godot 4.0 aren't compatible with Godot "
+"4.1 (see :ref:`updating_your_gdextension_for_godot_4_1`)."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If you are versioning your project using Git, it is recommended to add it as "
+"a Git submodule:"
+msgstr ""
+"Git を使用してプロジェクトをバージョン管理する場合は、Git サブモジュールとし"
+"て追加することをお勧めします:"
+
+msgid "Alternatively, you can also clone it to the project folder:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If you decide to download the repository or clone it into your folder, make "
+"sure to keep the folder layout the same as we've setup here. Much of the "
+"code we'll be showcasing here assumes the project has this layout."
+msgstr ""
+"リポジトリを単にダウンロードするか、プロジェクトフォルダに複製する場合は、"
+"フォルダのレイアウトをここで説明したものと同じにしてください。ここで紹介する"
+"コードの多くは、プロジェクトがこのレイアウトに従うことを前提としています。"
+
+msgid ""
+"If you cloned the example from the link specified in the introduction, the "
+"submodules are not automatically initialized. You will need to execute the "
+"following commands:"
+msgstr ""
+"概要で指定したリンクからサンプルを複製した場合、サブモジュールは自動的に初期"
+"化されません。次のコマンドを実行する必要があります。"
+
+#, fuzzy
+msgid "This will initialize the repository in your project folder."
+msgstr ""
+"これにより、これら2つのリポジトリがプロジェクトフォルダに複製されます。"
+
+msgid "Building the C++ bindings"
+msgstr "C++バインディングのビルド"
+
+msgid ""
+"Now that we've downloaded our prerequisites, it is time to build the C++ "
+"bindings."
+msgstr ""
+"前提条件に書かれた物をダウンロードしたので、C++バインディングを作成します。"
+
+msgid ""
+"The repository contains a copy of the metadata for the current Godot "
+"release, but if you need to build these bindings for a newer version of "
+"Godot, simply call the Godot executable:"
+msgstr ""
+"リポジトリには、現在のGodotリリースのメタデータのコピーが含まれていますが、新"
+"しいバージョンのGodot用にこれらのバインディングをビルドする必要がある場合は、"
+"下記のオプションでGodot実行可能ファイルを呼び出します:"
+
+#, fuzzy
+msgid ""
+"Place the resulting ``extension_api.json`` file in the project folder and "
+"add ``custom_api_file=<PATH_TO_FILE>`` to the scons command below."
+msgstr ""
+"結果として得られた ``api.json`` ファイルをプロジェクトフォルダに配置し、\\ "
+"``use_custom_api_file=yes custom_api_file=../api.json`` を、以下のバインディ"
+"ング生成用のsconsコマンドに追加します。"
+
+#, fuzzy
+msgid ""
+"To generate and compile the bindings, use this command (replacing "
+"``<platform>`` with ``windows``, ``linux`` or ``macos`` depending on your "
+"OS):"
+msgstr ""
+"バインディングを生成してコンパイルするには、次のコマンドを使用します(OSに応じ"
+"て ``<platform>`` を ``windows``\\ 、\\ ``linux`` または ``osx`` に置き換えま"
+"す):"
+
+#, fuzzy
+msgid ""
+"To speed up compilation, add ``-jN`` at the end of the SCons command line "
+"where ``N`` is the number of CPU threads you have on your system. The "
+"example below uses 4 threads."
+msgstr ""
+"コンパイルを高速化するには、SConsコマンドラインの最後に `-jN` を追加しま"
+"す。\\ `N` はシステムにあるCPUスレッドの数です。以下の例では4つのスレッドを使"
+"用しています。"
+
+msgid ""
+"This step will take a while. When it is completed, you should have static "
+"libraries that can be compiled into your project stored in ``godot-cpp/bin/"
+"``."
+msgstr ""
+"この手順にはしばらく時間がかかります。完了後、プロジェクト内の \\ ``godot-"
+"cpp/bin/`` に、コンパイルされた静的ライブラリが格納されているはずです。"
+
+#, fuzzy
+msgid "You may need to add ``bits=64`` to the command on Windows or Linux."
+msgstr ""
+"Windows または Linux のコマンドに ``bits=64`` を追加する必要がある場合があり"
+"ます。我々は自動検出の改善に引き続き取り組んでいます。"
+
+msgid "Creating a simple plugin"
+msgstr "シンプルなプラグインの作成"
+
+msgid ""
+"Now it's time to build an actual plugin. We'll start by creating an empty "
+"Godot project in which we'll place a few files."
+msgstr ""
+"次に、実際のプラグインを作成します。まず、空のGodotプロジェクトを作成し、そこ"
+"にいくつかのファイルを配置します。"
+
+#, fuzzy
+msgid ""
+"Open Godot and create a new project. For this example, we will place it in a "
+"folder called ``demo`` inside our GDExtension's folder structure."
+msgstr ""
+"Godotを開き、新しいプロジェクトを作成します。この例では、GDNativeモジュールの"
+"フォルダ構造内に ``demo`` という名前のフォルダを配置します。"
+
+msgid ""
+"In our demo project, we'll create a scene containing a Node called \"Main\" "
+"and we'll save it as ``main.tscn``. We'll come back to that later."
+msgstr ""
+"デモプロジェクトでは、\"Main\" というノードを含むシーンを作成し、\\ ``main."
+"tscn`` として保存します。それについては後で説明します。"
+
+#, fuzzy
+msgid ""
+"Back in the top-level GDExtension module folder, we're also going to create "
+"a subfolder called ``src`` in which we'll place our source files."
+msgstr ""
+"最上位の GDNativeモジュールフォルダに戻り、ソース ファイルを配置する ``src`` "
+"というサブフォルダも作成します。"
+
+#, fuzzy
+msgid ""
+"You should now have ``demo``, ``godot-cpp``, and ``src`` directories in your "
+"GDExtension module."
+msgstr ""
+"これで、GDNativeモジュールに ``demo``\\ 、\\ ``godot-cpp``\\ 、\\ "
+"``godot_headers``\\ および ``src`` ディレクトリが含まれるはずです。"
+
+#, fuzzy
+msgid "Your folder structure should now look like this:"
+msgstr "シーンは次のようになります:"
+
+#, fuzzy
+msgid ""
+"In the ``src`` folder, we'll start with creating our header file for the "
+"GDExtension node we'll be creating. We will name it ``gdexample.h``:"
+msgstr ""
+"作成するGDNativeノードのヘッダーファイルを、\\ ``src``\\ フォルダ内に作成する"
+"ことから始めます。\\ ``gdexample.h`` という名前を付けます:"
+
+#, fuzzy
+msgid ""
+"There are a few things of note to the above. We include ``sprite2d.hpp`` "
+"which contains bindings to the Sprite2D class. We'll be extending this class "
+"in our module."
+msgstr ""
+"上記にはいくつかの注意事項があります。まず、すべての基本的な定義を含む "
+"``Godot.hpp`` を含めています。その後、Spriteクラスへのバインディングを含む "
+"``Sprite.hpp`` を含めます。このクラスが作成するモジュールで拡張されます。"
+
+#, fuzzy
+msgid ""
+"We're using the namespace ``godot``, since everything in GDExtension is "
+"defined within this namespace."
+msgstr ""
+"GDNativeのすべてがこの名前空間内で定義されているため、namespace ``godot`` を"
+"使用しています。"
+
+#, fuzzy
+msgid ""
+"Then we have our class definition, which inherits from our Sprite2D through "
+"a container class. We'll see a few side effects of this later on. The "
+"``GDCLASS`` macro sets up a few internal things for us."
+msgstr ""
+"次に、コンテナ クラスを通じてSpriteから継承するクラス定義を作成します。これに"
+"ついては、後でいくつかの副作用が表示されます。\\ ``GODOT_CLASS`` マクロはいく"
+"つかの内部的なものをセットアップします。"
+
+msgid "After that, we declare a single member variable called ``time_passed``."
+msgstr "その後、\\ ``time_passed`` という単一のメンバー変数を宣言します。"
+
+#, fuzzy
+msgid ""
+"In the next block we're defining our methods, we have our constructor and "
+"destructor defined, but there are two other functions that will likely look "
+"familiar to some, and one new method."
+msgstr ""
+"メソッドを定義する次のブロックでは、明示的にコンストラクターとデストラクター"
+"が定義されています。その他の関数のうち2つのは見慣れたものですが、新しいメソッ"
+"ドが1つあります。"
+
+#, fuzzy
+msgid ""
+"The first is ``_bind_methods``, which is a static function that Godot will "
+"call to find out which methods can be called and which properties it "
+"exposes. The second is our ``_process`` function, which will work exactly "
+"the same as the ``_process`` function you're used to in GDScript."
+msgstr ""
+"最初は ``_register_methods`` で、これはGodotがNativeScriptで呼び出すことがで"
+"きるメソッドと、それが公開するプロパティを調べるために呼び出す静的関数です。2"
+"つ目は ``_process`` 関数で、GDScriptで慣れている ``_process`` 関数とまったく"
+"同じように機能します。3つ目は、Godotがオブジェクトを適切に設定した後に呼び出"
+"される ``_init`` 関数です。コードを配置しなくても存在する必要があります。"
+
+msgid "Let's implement our functions by creating our ``gdexample.cpp`` file:"
+msgstr "``gdexample.cpp`` ファイルを作成して関数を実装してみましょう:"
+
+msgid ""
+"This one should be straightforward. We're implementing each method of our "
+"class that we defined in our header file."
+msgstr ""
+
+msgid ""
+"Note our ``_process`` function, which keeps track of how much time has "
+"passed and calculates a new position for our sprite using a sine and cosine "
+"function."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"There is one more C++ file we need; we'll name it ``register_types.cpp``. "
+"Our GDExtension plugin can contain multiple classes, each with their own "
+"header and source file like we've implemented ``GDExample`` up above. What "
+"we need now is a small bit of code that tells Godot about all the classes in "
+"our GDExtension plugin."
+msgstr ""
+"必要なC++ファイルがもう1つあるので、それには ``gdlibrary.cpp`` という名前を付"
+"けます。 GDNativeプラグインには複数のNativeScriptを含めることができ、上記の "
+"``GDExample`` を実装したように、それぞれに独自のヘッダーとソースファイルがあ"
+"ります。今必要なのは、GDNativeプラグイン内のすべてのNativeScriptについてGodot"
+"に伝える小さなコードです。"
+
+#, fuzzy
+msgid ""
+"The ``initialize_example_module`` and ``uninitialize_example_module`` "
+"functions get called respectively when Godot loads our plugin and when it "
+"unloads it. All we're doing here is parse through the functions in our "
+"bindings module to initialize them, but you might have to set up more things "
+"depending on your needs. We call the function ``register_class`` for each of "
+"our classes in our library."
+msgstr ""
+"``godot_gdnative_init`` および ``godot_gdnative_terminate`` 関数は、Godotがプ"
+"ラグインをロードするときとアンロードするときにそれぞれ呼び出されます。ここで"
+"行っているのは、バインディングモジュールの関数を解析してそれらを初期化するこ"
+"とだけですが、必要に応じてより多くのことを設定する必要がある場合があります。"
+
+#, fuzzy
+msgid ""
+"The important function is the third function called "
+"``example_library_init``. We first call a function in our bindings library "
+"that creates an initialization object. This object registrates the "
+"initialization and termination functions of the GDExtension. Furthermore, it "
+"sets the level of initialization (core, servers, scene, editor, level)."
+msgstr ""
+"重要な関数は ``godot_nativescript_init`` と呼ばれる3番目の関数です。まず、通"
+"常の処理を行うバインディングライブラリの関数を呼び出します。その後、ライブラ"
+"リの各クラスに対して関数 ``register_class`` を呼び出します。"
+
+msgid ""
+"At last, we need the header file for the ``register_types.cpp`` named "
+"``register_types.h``."
+msgstr ""
+
+msgid "Compiling the plugin"
+msgstr "プラグインのコンパイル"
+
+msgid ""
+"We cannot easily write by hand a ``SConstruct`` file that SCons would use "
+"for building. For the purpose of this example, just use :download:`this "
+"hardcoded SConstruct file <files/cpp_example/SConstruct>` we've prepared. "
+"We'll cover a more customizable, detailed example on how to use these build "
+"files in a subsequent tutorial."
+msgstr ""
+"SConsがビルドに使用する ``SConstruct`` ファイルを手で簡単に書くことはできませ"
+"ん。この例では、準備されている :download:`his hardcoded SConstruct file "
+"<cpp_example/SConstruct>` を使用します。以降のチュートリアルでは、これらのビ"
+"ルドファイルの使用方法について、よりカスタマイズ可能で詳細な例を取り上げま"
+"す。"
+
+#, fuzzy
+msgid ""
+"This ``SConstruct`` file was written to be used with the latest ``godot-"
+"cpp`` master, you may need to make small changes using it with older "
+"versions or refer to the ``SConstruct`` file in the Godot 4.0 documentation."
+msgstr ""
+"この ``SConstruct`` ファイルは、最新の ``godot-cpp`` マスターで使用するために"
+"作成されました。古いバージョンで使用するときは必要に応じて小さな変更を加える"
+"か、Godot 3.0 のドキュメント内の ``SConstruct`` ファイルを参照する必要があり"
+"ます。"
+
+#, fuzzy
+msgid ""
+"Once you've downloaded the ``SConstruct`` file, place it in your GDExtension "
+"folder structure alongside ``godot-cpp``, ``src`` and ``demo``, then run:"
+msgstr ""
+"``SConstruct`` ファイルをダウンロードしたら、\\ ``godot-cpp``\\ 、\\ "
+"``godot_headers``\\ 、\\ ``demo`` 以外のGDNativeモジュールフォルダに配置し、"
+"次を実行します:"
+
+msgid "You should now be able to find the module in ``demo/bin/<platform>``."
+msgstr ""
+"これで ``demo/bin/<platform> `` 内でモジュールを見つけることができるはずで"
+"す。"
+
+#, fuzzy
+msgid ""
+"Here, we've compiled both godot-cpp and our gdexample library as debug "
+"builds. For optimized builds, you should compile them using the "
+"``target=template_release`` switch."
+msgstr ""
+"ここでは、godot-cpp と gdexample ライブラリの両方を、デバッグビルドとしてコン"
+"パイルしました。最適化されたビルドの場合は、\\ ``target=release`` スイッチを"
+"使用してコンパイルする必要があります。"
+
+#, fuzzy
+msgid "Using the GDExtension module"
+msgstr "GDNativeモジュールの使用"
+
+#, fuzzy
+msgid ""
+"Before we jump back into Godot, we need to create one more file in ``demo/"
+"bin/``."
+msgstr ""
+"Godotに戻る前に、\\ ``demo/bin/`` にさらに2つのファイルを作成する必要がありま"
+"す。どちらもGodotエディタを使用して作成できますが、直接作成する方が高速な場合"
+"があります。"
+
+#, fuzzy
+msgid ""
+"This file lets Godot know what dynamic libraries should be loaded for each "
+"platform and the entry function for the module. It is called ``gdexample."
+"gdextension``."
+msgstr ""
+"1つ目は、プラットフォーム別に読み込む必要があるダイナミック ライブラリをGodot"
+"に知らせるファイルで、\\ ``gdexample.gdnlib`` と呼ばれます。"
+
+msgid ""
+"This file contains a ``configuration`` section that controls the entry "
+"function of the module. You should also set the minimum compatible Godot "
+"version with ``compatability_minimum``, which prevents older version of "
+"Godot from trying to load your extension."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The ``libraries`` section is the important bit: it tells Godot the location "
+"of the dynamic library in the project's filesystem for each supported "
+"platform. It will also result in *just* that file being exported when you "
+"export the project, which means the data pack won't contain libraries that "
+"are incompatible with the target platform."
+msgstr ""
+"``entry`` セクションは重要な要素です: サポートされている各プラットフォームの"
+"プロジェクトのファイルシステム内の動的ライブラリの場所をGodotに指示します。ま"
+"た、プロジェクトをエクスポートするときにそのファイル\\ *だけが*\\ エクスポー"
+"トされるため、データパックにはターゲットプラットフォームと互換性のないライブ"
+"ラリは含まれません。"
+
+#, fuzzy
+msgid ""
+"Finally, the ``dependencies`` section allows you to name additional dynamic "
+"libraries that should be included as well. This is important when your "
+"GDExtension plugin implements someone else's library and requires you to "
+"supply a third-party dynamic library with your project."
+msgstr ""
+"最後に、\\ ``dependencies``(依存関係)セクションでは、組み込みを許可する必要が"
+"ある追加の動的ライブラリの名前を記載します。これは、GDNativeプラグインが他の"
+"ユーザーのライブラリを実装し、サードパーティの動的ライブラリをプロジェクトに"
+"提供する必要がある場合に重要です。"
+
+msgid "Here is another overview to check the correct file structure:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Time to jump back into Godot. We load up the main scene we created way back "
+"in the beginning and now add a newly available GDExample node to the scene:"
+msgstr ""
+"Godotに戻る時間です。最初に作成したメインシーンを読み込み、シーンにスプライト"
+"を追加します:"
+
+#, fuzzy
+msgid ""
+"We're going to assign the Godot logo to this node as our texture, disable "
+"the ``centered`` property:"
+msgstr ""
+"このスプライトに Godot ロゴをテクスチャとして割り当て、\\ ``Centered`` プロパ"
+"ティを無効にし、\\ ``gdexample.gdns`` ファイルをスプライトの ``Script`` プロ"
+"パティにドラッグします。"
+
+msgid "We're finally ready to run the project:"
+msgstr "プロジェクトを実行する準備ができました:"
+
+#, fuzzy
+msgid "Custom editor icon"
+msgstr "カスタムエディタアイコンの追加"
+
+msgid ""
+"By default, Godot uses the node icon in the scene dock for GDExtension "
+"nodes. The custom icon can be added via the ``gdextension`` file. The node's "
+"icon is set by reference to its name and resource path of an SVG file."
+msgstr ""
+
+msgid "For example:"
+msgstr "例:"
+
+msgid ""
+"The path should point to a 16 by 16 pixel SVG image. Read the guide for :ref:"
+"`creating icons <doc_editor_icons>` for more information."
+msgstr ""
+
+msgid "Adding properties"
+msgstr "プロパティの追加"
+
+#, fuzzy
+msgid ""
+"GDScript allows you to add properties to your script using the ``export`` "
+"keyword. In GDExtension you have to register the properties with a getter "
+"and setter function or directly implement the ``_get_property_list``, "
+"``_get`` and ``_set`` methods of an object (but that goes far beyond the "
+"scope of this tutorial)."
+msgstr ""
+"第3のオプションもあります。GDScriptと同様に、オブジェクトの "
+"``_get_property_list``\\ 、\\ ``_get`` および ``_set`` メソッドを直接実装でき"
+"ますが、このチュートリアルの範囲をはるかに超えています。"
+
+#, fuzzy
+msgid ""
+"Lets add a property that allows us to control the amplitude of our wave."
+msgstr ""
+"直接バインドする方法から始めて両方を調べます。波の振幅を制御できるプロパティ"
+"を追加しましょう。"
+
+#, fuzzy
+msgid ""
+"In our ``gdexample.h`` file we need to add a member variable and getter and "
+"setter functions:"
+msgstr ""
+"``gdexample.h`` ファイルでは、次のようなメンバー変数を追加するだけです:"
+
+msgid ""
+"In our ``gdexample.cpp`` file we need to make a number of changes, we will "
+"only show the methods we end up changing, don't remove the lines we're "
+"omitting:"
+msgstr ""
+"``gdexample.cpp`` ファイルでは、いくつかの変更を行う必要があります。変更する"
+"メソッドのみを表示しているので、省略されている行は削除しないでください:"
+
+#, fuzzy
+msgid ""
+"Once you compile the module with these changes in place, you will see that a "
+"property has been added to our interface. You can now change this property "
+"and when you run your project, you will see that our Godot icon travels "
+"along a larger figure."
+msgstr ""
+"これらの変更を加えてモジュールをコンパイルすると、インターフェイスにプロパ"
+"ティが追加されていることがわかります。これでこのプロパティを変更できるように"
+"なったため、プロジェクトを実行すると、Godotアイコンが大きな図に沿って移動する"
+"ことがわかります。"
+
+#, fuzzy
+msgid ""
+"Let's do the same but for the speed of our animation and use a setter and "
+"getter function. Our ``gdexample.h`` header file again only needs a few more "
+"lines of code:"
+msgstr ""
+"同じようなことを、アニメーションの速度のために、セッターとゲッター関数を使用"
+"しておこないます。\\ ``gdexample.h`` ヘッダーファイルには、さらに数行のコード"
+"追加しか必要ありません:"
+
+msgid ""
+"This requires a few more changes to our ``gdexample.cpp`` file, again we're "
+"only showing the methods that have changed so don't remove anything we're "
+"omitting:"
+msgstr ""
+"このために ``gdexample.cpp`` ファイルにさらにいくつかの変更を行う必要がありま"
+"すが、ここでも変更されたメソッドのみを表示しているため、省略されているものを"
+"削除しないでください:"
+
+#, fuzzy
+msgid ""
+"Now when the project is compiled, we'll see another property called speed. "
+"Changing its value will make the animation go faster or slower. Furthermore, "
+"we added a property range which describes in which range the value can be. "
+"The first two arguments are the minimum and maximum value and the third is "
+"the step size."
+msgstr ""
+"プロジェクトがコンパイルされると、speedという別のプロパティが表示されます。値"
+"を変更すると、アニメーションが速くなったり遅くなったりします。"
+
+#, fuzzy
+msgid ""
+"For simplicity, we've only used the hint_range of the property method. There "
+"are a lot more options to choose from. These can be used to further "
+"configure how properties are displayed and set on the Godot side."
+msgstr ""
+"わかりやすくするために、register_property <class, type>メソッド呼び出しのオプ"
+"ションパラメータは省略しました。これらのパラメータは ``rpc_mode``\\ 、\\ "
+"``usage``\\ 、\\ ``hint`` および ``hint_string`` です。これらを使用して、"
+"Godot側でのプロパティの表示方法と設定方法をさらに構成できます。"
+
+msgid "Signals"
+msgstr "シグナル"
+
+#, fuzzy
+msgid ""
+"Last but not least, signals fully work in GDExtension as well. Having your "
+"extension react to a signal given out by another object requires you to call "
+"``connect`` on that object. We can't think of a good example for our "
+"wobbling Godot icon, we would need to showcase a far more complete example."
+msgstr ""
+"最後に、シグナルはGDNativeでも完全に機能します。モジュールが別のオブジェクト"
+"によって与えられたシグナルに反応するには、そのオブジェクトに対して "
+"``connect`` を呼び出す必要があります。揺れるゴドーのアイコンのための良い例を"
+"考えることができませんので、もっと完全な例を紹介する必要があります。"
+
+#, fuzzy
+msgid "This is the required syntax:"
+msgstr "まず、これは必須の構文です:"
+
+#, fuzzy
+msgid ""
+"Note that you can only call ``my_method`` if you've previously registered it "
+"in your ``_bind_methods`` method."
+msgstr ""
+"``_register_methods`` メソッドで事前に登録した場合にのみ ``my_method`` を呼び"
+"出すことができることに注意してください。"
+
+#, fuzzy
+msgid ""
+"Having your object sending out signals is more common. For our wobbling "
+"Godot icon, we'll do something silly just to show how it works. We're going "
+"to emit a signal every time a second has passed and pass the new location "
+"along."
+msgstr ""
+"オブジェクトがシグナルを送信する方がはるかに一般的です。揺れるゴドーのアイコ"
+"ンのために、それがどのように機能するかを示す目的であまり意味の無いことをしま"
+"す。1秒が経過するたびにシグナルを発信し、新しい位置を伝達します。"
+
+#, fuzzy
+msgid ""
+"In our ``gdexample.h`` header file, we need to define a new member "
+"``time_emit``:"
+msgstr ""
+"``gdexample.h`` ヘッダーファイルでは、新しいメンバー ``time_emit`` を定義する"
+"だけです:"
+
+msgid ""
+"This time, the changes in ``gdexample.cpp`` are more elaborate. First, "
+"you'll need to set ``time_emit = 0.0;`` in either our ``_init`` method or in "
+"our constructor. We'll look at the other 2 needed changes one by one."
+msgstr ""
+"``gdexample.cpp`` の変更は今回はもう少し複雑です。まず、\\ ``_init`` メソッド"
+"またはコンストラクターで ``time_emit = 0.0;`` を設定する必要があります。です"
+"が、他の2つは、必要な変更を1つずつ見ていきます。"
+
+#, fuzzy
+msgid ""
+"In our ``_bind_methods`` method, we need to declare our signal. This is done "
+"as follows:"
+msgstr ""
+"``_register_methods`` メソッドでシグナルを宣言する必要があり、これを次のよう"
+"に行います:"
+
+msgid ""
+"Here, our ``ADD_SIGNAL`` macro can be a single call with a ``MethodInfo`` "
+"argument. ``MethodInfo``'s first parameter will be the signal's name, and "
+"its remaining parameters are ``PropertyInfo`` types which describe the "
+"essentials of each of the method's parameters. ``PropertyInfo`` parameters "
+"are defined with the data type of the parameter, and then the name that the "
+"parameter will have by default."
+msgstr ""
+
+msgid ""
+"So here, we add a signal, with a ``MethodInfo`` which names the signal "
+"\"position_changed\". The ``PropertyInfo`` parameters describe two esential "
+"arguments, one of type ``Object``, the other of type ``Vector2``, "
+"respectively named \"node\" and \"new_pos\"."
+msgstr ""
+
+#, fuzzy
+msgid "Next, we'll need to change our ``_process`` method:"
+msgstr "次に ``_process`` メソッドを変更する必要があります:"
+
+#, fuzzy
+msgid ""
+"After a second has passed, we emit our signal and reset our counter. We can "
+"add our parameter values directly to ``emit_signal``."
+msgstr ""
+"1秒が経過した後、シグナルを発信し、カウンターをリセットします。godot-cppの新"
+"しいバージョンでは、パラメータ値を ``emit_signal`` に直接追加できます。 "
+"NativeScript 1.0では、最初に値の配列を作成してから ``emit_signal`` を呼び出し"
+"ます。"
+
+#, fuzzy
+msgid ""
+"Once the GDExtension library is compiled, we can go into Godot and select "
+"our sprite node. In the **Node** dock, we can find our new signal and link "
+"it up by pressing the **Connect** button or double-clicking the signal. "
+"We've added a script on our main node and implemented our signal like this:"
+msgstr ""
+"コンパイルしたら、Godotに移動してスプライトノードを選択できます。\\ ``ノード"
+"`` タブで新しいシグナルを見つけ、接続を押してリンクします。メインノードにスク"
+"リプトを追加し、次のようにシグナルを実装しました:"
+
+#, fuzzy
+msgid "Every second, we output our position to the console."
+msgstr "毎秒、単に自分の位置をコンソールに出力します。"
+
+msgid "Next steps"
+msgstr "次のステップ"
+
+#, fuzzy
+msgid ""
+"We hope the above example showed you the basics. You can build upon this "
+"example to create full-fledged scripts to control nodes in Godot using C++."
+msgstr ""
+"上記は簡単な例にすぎませんが、基本を示してくれることを願っています。この例を"
+"基にして、C++を使用してGodotのノードを制御する本格的なスクリプトを作成できま"
+"す。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

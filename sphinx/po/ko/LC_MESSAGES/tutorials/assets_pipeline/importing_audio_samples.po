@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,17 +20,19 @@ msgstr ""
 msgid "Importing audio samples"
 msgstr "오디오 샘플 가져오기"
 
-msgid "Supported files"
-msgstr "지원되는 파일"
+#, fuzzy
+msgid "Supported audio formats"
+msgstr "지원되는 이미지 포맷"
 
+#, fuzzy
 msgid ""
-"Godot provides three options to import your audio data: WAV, Ogg Vorbis and "
-"MP3."
+"Godot provides 3 options to import your audio data: WAV, Ogg Vorbis and MP3."
 msgstr ""
 "Godot는 오디오 데이터를 가져오기 위해 세 가지 옵션을 제공합니다: WAV, OGG "
 "Vorbis 및 MP3."
 
-msgid "Each has different advantages."
+#, fuzzy
+msgid "Each format has different advantages:"
 msgstr "각각에는 서로 다른 장점이 있습니다."
 
 msgid ""
@@ -49,13 +51,12 @@ msgstr ""
 "Ogg Vorbis 파일은 높은 압축률로 압축해 사용해 파일의 용량이 작습니다. 하지만 "
 "재생에 CPU를 상당히 많이 사용합니다."
 
+#, fuzzy
 msgid ""
 "MP3 files use better compression than WAV with IMA-ADPCM, but worse than Ogg "
 "Vorbis. This means that a MP3 file with roughly equal quality to Ogg Vorbis "
 "will be significantly larger. On the bright side, MP3 requires less CPU "
-"usage to play back compared to Ogg Vorbis. This makes MP3 useful for mobile "
-"and HTML5 projects where CPU resources are limited, especially when playing "
-"multiple compressed sounds at the same time (such as long ambient sounds)."
+"usage to play back compared to Ogg Vorbis."
 msgstr ""
 "MP3 파일은 WAV의 IMA-ADPCM보다는 압축률이 높지만 Ogg Vorbis보다는 압축률이 작"
 "습니다. 따라서 MP3는 Ogg Vorbis보다 용량은 크면서 음질은 거의 비슷합니다. 하"
@@ -63,8 +64,17 @@ msgstr ""
 "문에 MP3는 CPU 자원이 한정되어 있는 모바일 및 HTML5 프로젝트에서 유용하며 이 "
 "점은 배경음처럼 압축된 오디오 여러개를 재생해야 할 때 더 두드러집니다."
 
-msgid "Here is a comparative chart."
-msgstr "장단점을 비교한 차트입니다."
+msgid ""
+"If you've compiled the Godot editor from source with specific modules "
+"disabled, some formats may not be available."
+msgstr ""
+"만약 특정 모듈을 비활성화 한 채로 Godot 에디터를 직접 컴파일했다면, 몇몇 포맷"
+"을 사용할 수 없을 수 있습니다."
+
+msgid ""
+"Here is a comparative chart representing the file size of 1 second of audio "
+"with each format:"
+msgstr ""
 
 msgid "Format"
 msgstr "형식"
@@ -111,63 +121,366 @@ msgid "12 KB"
 msgstr ""
 
 msgid ""
-"Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
-"for music, speech, and long sound effects."
+"Note that the MP3 and Ogg Vorbis figures can vary depending on the encoding "
+"type. The above figures use :abbr:`CBR (Constant Bit Rate)` encoding for "
+"simplicity, but most Ogg Vorbis and MP3 files you can find online are "
+"encoded with :abbr:`VBR (Variable Bit Rate)` encoding which is more "
+"efficient. VBR encoding makes the effective audio file size depend on how "
+"\"complex\" the source audio is."
 msgstr ""
-"짧고 여러 번 재생되는 음향 효과에는 WAV를 사용하고, 음악, 대사, 그리고 긴 음"
-"향 효과에는 OGG를 사용하는 것을 고려하십시오."
+
+#, fuzzy
+msgid ""
+"Consider using WAV for short and repetitive sound effects, and Ogg Vorbis "
+"for music, speech, and long sound effects. MP3 is useful for mobile and web "
+"projects where CPU resources are limited, especially when playing multiple "
+"compressed sounds at the same time (such as long ambient sounds)."
+msgstr ""
+"MP3 파일은 WAV의 IMA-ADPCM보다는 압축률이 높지만 Ogg Vorbis보다는 압축률이 작"
+"습니다. 따라서 MP3는 Ogg Vorbis보다 용량은 크면서 음질은 거의 비슷합니다. 하"
+"지만 MP3는 Ogg Vorbis보다 CPU를 더 적게 사용한다는 장점이 있습니다. 이 점 때"
+"문에 MP3는 CPU 자원이 한정되어 있는 모바일 및 HTML5 프로젝트에서 유용하며 이 "
+"점은 배경음처럼 압축된 오디오 여러개를 재생해야 할 때 더 두드러집니다."
+
+msgid ""
+"Several options are available in the Import dock after selecting a WAV file "
+"in the FileSystem dock:"
+msgstr ""
+
+msgid ""
+"Import options in the Import dock after selecting a WAV file in the "
+"FileSystem dock"
+msgstr ""
+
+msgid ""
+"The set of options available after selecting a Ogg Vorbis or MP3 file is "
+"different:"
+msgstr ""
+
+msgid ""
+"Import options in the Import dock after selecting a MP3 file in the "
+"FileSystem dock"
+msgstr ""
+
+msgid ""
+"Import options in the Import dock after selecting a MP3 file in the "
+"FileSystem dock. Options are identical for Ogg Vorbis files."
+msgstr ""
+
+msgid ""
+"After importing a sound, you can play it back using the AudioStreamPlayer, "
+"AudioStreamPlayer2D or AudioStreamPlayer3D nodes. See :ref:"
+"`doc_audio_streams` for more information."
+msgstr ""
+
+#, fuzzy
+msgid "Import options (WAV)"
+msgstr "옵션 가져오기"
+
+msgid "Force > 8 Bit"
+msgstr ""
+
+msgid ""
+"If enabled, forces the imported audio to use 8-bit quantization if the "
+"source file is 16-bit or higher."
+msgstr ""
+
+msgid ""
+"Enabling this is generally not recommended, as 8-bit quantization decreases "
+"audio quality significantly. If you need smaller file sizes, consider using "
+"Ogg Vorbis or MP3 audio instead."
+msgstr ""
+
+msgid "Force > Mono"
+msgstr ""
+
+msgid ""
+"If enabled, forces the imported audio to be mono if the source file is "
+"stereo. This decreases the file size by 50% by merging the two channels into "
+"one."
+msgstr ""
+
+msgid "Force > Max Rate"
+msgstr ""
+
+msgid ""
+"If set to a value greater than ``0``, forces the audio's sample rate to be "
+"reduced to a value lower than or equal to the value specified here."
+msgstr ""
+
+msgid ""
+"This can decrease file size noticeably on certain sounds, without impacting "
+"quality depending on the actual sound's contents. See :ref:"
+"`doc_importing_audio_samples_best_practices` for more information."
+msgstr ""
+
+msgid "Edit > Trim"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The source audio file may contain long silences at the beginning and/or the "
+"end. These silences are inserted by :abbr:`DAWs (Digital Audio "
+"Workstations)` when saving to a waveform, which increases their size "
+"unnecessarily and add latency to the moment they are played back."
+msgstr ""
+"종종 발생하는 문제로 파형을 내보낼 때 시작과 끝에 긴 묵음이 있는 것입니다. 이"
+"것은 파형을 저장할 때 DAW에 의해 삽입되며, 불필요하게 파일 크기를 키우면서 재"
+"생하는 순간 대기 시간이 추가됩니다."
+
+msgid ""
+"Enabling **Trim** will automatically trim the beginning and end of the audio "
+"if it's lower than -50 dB *after* normalization (see **Edit > Normalize** "
+"below). A fade-in/fade-out period of 500 samples is also used during "
+"trimming to avoid audible pops."
+msgstr ""
+
+#, fuzzy
+msgid "Edit > Normalize"
+msgstr "에디터 매뉴얼"
+
+msgid ""
+"If enabled, audio volume will be *normalized* so that its peak volume is "
+"equal to 0 dB. When enabled, normalization will make audio sound louder "
+"depending on its original peak volume."
+msgstr ""
+
+msgid "Edit > Loop Mode"
+msgstr ""
+
+msgid ""
+"Unlike Ogg Vorbis and MP3, WAV files can contain metadata to indicate "
+"whether they're looping (in addition to loop points). By default, Godot will "
+"follow this metadata, but you can choose to apply a specific loop mode:"
+msgstr ""
+
+msgid ""
+"**Disabled:** Don't loop audio, even if metadata indicates the file should "
+"be played back looping."
+msgstr ""
+
+msgid "**Forward:** Standard audio looping."
+msgstr ""
+
+msgid ""
+"**Ping-Pong:** Play audio forward until it's done playing, then play it "
+"backward and repeat. This is similar to mirrored texture repeat, but for "
+"audio."
+msgstr ""
+
+msgid ""
+"**Backward:** Play audio in reverse and loop back to the end when done "
+"playing."
+msgstr ""
+
+msgid ""
+"When choosing one of the **Forward**, **Ping-Pong** or **Backward** loop "
+"modes, loop points can also be defined to make only a specific part of the "
+"sound loop. **Loop Begin** is set in seconds after the beginning of the "
+"audio file. **Loop End** is also set in seconds after the beginning of the "
+"audio file, but will use the end of the audio file if set to ``-1``."
+msgstr ""
+
+msgid ""
+"In AudioStreamPlayer, the ``finished`` signal won't be emitted for looping "
+"audio when it reaches the end of the audio file, as the audio will keep "
+"playing indefinitely."
+msgstr ""
+
+#, fuzzy
+msgid "Compress > Mode"
+msgstr "압축 모드"
+
+msgid ""
+"Two compression modes can be chosen for WAV files: **Disabled** (default) or "
+"**RAM (Ima-ADPCM)**. **RAM (Ima-ADPCM)** reduces file size and memory usage "
+"a little, at the cost of decreasing quality in an audible manner."
+msgstr ""
+
+msgid ""
+"Ogg Vorbis and MP3 don't decrease quality as much and can provide greater "
+"file size reductions, at the cost of higher CPU usage during playback. This "
+"higher CPU usage is usually not a problem (especially with MP3), unless "
+"playing dozens of compressed sounds at the same time on mobile/web platforms."
+msgstr ""
+
+#, fuzzy
+msgid "Import options (Ogg Vorbis and MP3)"
+msgstr "가져오기 설정은 거대합니다:"
+
+#, fuzzy
+msgid "Loop"
+msgstr "루핑(Looping)"
+
+msgid ""
+"If enabled, the audio will begin playing at the beginning after playback "
+"ends by reaching the end of the audio."
+msgstr ""
+
+#, fuzzy
+msgid "Loop Offset"
+msgstr "오프셋"
+
+msgid ""
+"The loop offset determines where audio will start to loop after playback "
+"reaches the end of the audio. This can be used to only loop a part of the "
+"audio file, which is useful for some ambient sounds or music. The value is "
+"determined in seconds relative to the beginning of the audio, so ``0`` will "
+"loop the entire audio file."
+msgstr ""
+
+msgid "Only has an effect if **Loop** is enabled."
+msgstr ""
+
+msgid ""
+"A more convenient editor for **Loop Offset** is provided in the :ref:"
+"`Advanced import settings "
+"<doc_importing_audio_samples_advanced_import_settings>` dialog, as it lets "
+"you preview your changes without having to reimport the audio."
+msgstr ""
+
+msgid "BPM"
+msgstr ""
+
+msgid ""
+"The Beats Per Minute of the audio track. This should match the BPM measure "
+"that was used to compose the track. This is only relevant for music that "
+"wishes to make use of interactive music functionality (not implemented yet), "
+"not sound effects."
+msgstr ""
+
+msgid ""
+"A more convenient editor for **BPM** is provided in the :ref:`Advanced "
+"import settings <doc_importing_audio_samples_advanced_import_settings>` "
+"dialog, as it lets you preview your changes without having to reimport the "
+"audio."
+msgstr ""
+
+msgid "Beat Count"
+msgstr ""
+
+msgid ""
+"The beat count of the audio track. This is only relevant for music that "
+"wishes to make use of interactive music functionality (not implemented yet), "
+"not sound effects."
+msgstr ""
+
+msgid ""
+"A more convenient editor for **Beat Count** is provided in the :ref:"
+"`Advanced import settings "
+"<doc_importing_audio_samples_advanced_import_settings>` dialog, as it lets "
+"you preview your changes without having to reimport the audio."
+msgstr ""
+
+msgid "Bar Beats"
+msgstr ""
+
+msgid ""
+"The number of bars within a single beat in the audio track. This is only "
+"relevant for music that wishes to make use of interactive music "
+"functionality (not implemented yet), not sound effects."
+msgstr ""
+
+msgid ""
+"A more convenient editor for **Bar Beats** is provided in the :ref:`Advanced "
+"import settings <doc_importing_audio_samples_advanced_import_settings>` "
+"dialog, as it lets you preview your changes without having to reimport the "
+"audio."
+msgstr ""
+
+msgid "Advanced import settings (Ogg Vorbis and MP3)"
+msgstr ""
+
+msgid ""
+"If you double-click an Ogg Vorbis or MP3 file in the FileSystem dock (or "
+"choose **Advanced…** in the Import dock), you will see a dialog appear:"
+msgstr ""
+
+msgid ""
+"Advanced dialog when double-clicking a Ogg Vorbis or MP3 file in the "
+"FileSystem dock"
+msgstr ""
+
+msgid ""
+"This dialog allows you to edit the audio's loop point with a real-time "
+"preview, in addition to the :abbr:`BPM (Beats Per Minute)`, beat count and "
+"bar beats. These 3 settings are currently unused, but they will be used in "
+"the future for interactive music support (which allows smoothly "
+"transitioning between different music tracks)."
+msgstr ""
+
+msgid ""
+"Unlike WAV files, Ogg Vorbis and MP3 only support a \"loop begin\" loop "
+"point, not a \"loop end\" point. Looping can also be only be standard "
+"forward looping, not ping-pong or backward."
+msgstr ""
 
 msgid "Best practices"
 msgstr "모범 사례"
 
+#, fuzzy
+msgid "Use appropriate quality settings"
+msgstr "프로젝트 설정 재정의하기"
+
+msgid ""
+"While keeping pristine-quality audio sources is important if you're "
+"performing editing, using the same quality in the exported project is not "
+"necessary. For WAV files, Godot offers several import options to reduce the "
+"final file size without modifying the source file on disk."
+msgstr ""
+
+msgid ""
+"To reduce memory usage and file size, choose an appropriate quantization, "
+"sample rate and number of channels for your audio:"
+msgstr ""
+
+msgid ""
+"There's no *audible* benefit to using 24-bit audio, especially in a game "
+"where several sounds are often playing at the same time (which makes it "
+"harder to appreciate individual sounds)."
+msgstr ""
+
+msgid ""
+"Unless you are slowing down the audio at run-time, there's no *audible* "
+"benefit to using a sample rate greater than 48 kHz. If you wish to keep a "
+"source with a higher sample rate for editing, use the **Force > Max Rate** "
+"import option to limit the sample rate of the imported sound (only available "
+"for WAV files)."
+msgstr ""
+
+msgid ""
+"Many sound effects can generally be converted to mono as opposed to stereo. "
+"If you wish to keep a source with stereo for editing, use the **Force > "
+"Mono** import option to convert the imported sound to mono (only available "
+"for WAV files)."
+msgstr ""
+
+msgid ""
+"Voices can generally be converted to mono, but can also have their sample "
+"rate reduced to 22 kHz without a noticeable loss in quality (unless the "
+"voice is very high-pitched). This is because most human voices never go past "
+"11 kHz."
+msgstr ""
+
+msgid "Use real-time audio effects to reduce file size"
+msgstr ""
+
+#, fuzzy
 msgid ""
 "Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
 "effects. This saves SFX artists the need to add reverb to the sound effects, "
-"reducing their size greatly and ensuring correct trimming. Say no to SFX "
-"with baked reverb!"
+"reducing their size greatly and ensuring correct trimming."
 msgstr ""
 "Godot은 내장(built-in) 효과를 가진 :ref:`광역 버스 시스템 <doc_audio_buses>` "
 "을 갖고 있습니다. 이걸로 SFX 아티스트가 음향 효과에 울림(reverb)을 추가하는 "
 "번거로움을 줄여주며, 파일 크기를 크게 줄이고 올바른 트리밍을 보장합니다. SFX"
 "에서 울림 베이킹은 이제 그만!"
 
-msgid "As you can see above, sound effects become huge with reverb added."
+#, fuzzy
+msgid ""
+"As you can see above, sound effects become much larger in file size with "
+"reverb added."
 msgstr "위에서 볼 수 있듯이, reverb가 추가되면서 음향 효과는 거대해졌습니다."
-
-msgid "Trimming"
-msgstr "트리밍"
-
-msgid ""
-"One issue that happens often is that the waveform is exported with long "
-"silences at the beginning and at the end. These are inserted by DAWs when "
-"saving to a waveform, increase their size unnecessarily and add latency to "
-"the moment they are played back."
-msgstr ""
-"종종 발생하는 문제로 파형을 내보낼 때 시작과 끝에 긴 묵음이 있는 것입니다. 이"
-"것은 파형을 저장할 때 DAW에 의해 삽입되며, 불필요하게 파일 크기를 키우면서 재"
-"생하는 순간 대기 시간이 추가됩니다."
-
-msgid "Importing as WAV with the **Trimming** option enabled solves this."
-msgstr "**Trimming** 설정이 활성화된 상태로 WAV 포맷으로 가져오면 해결됩니다."
-
-msgid "Looping"
-msgstr "루핑(Looping)"
-
-msgid ""
-"Godot supports looping in the samples (tools such as Sound Forge or Audition "
-"can add loop points to WAV files). This is useful for sound effects, such as "
-"engines, machine guns etc. Ping-pong looping is also supported."
-msgstr ""
-"Godot는 샘플에서의 반복을 지원합니다 (Sound Forge나 Audition같은 툴은 WAV 파"
-"일에 반복 포인트를 추가할 수 있습니다). 이것은 엔진, 기관총 같은 음향 효과에 "
-"유용합니다. 핑퐁 루핑 역시 지원합니다."
-
-msgid ""
-"As an alternative, the Import dock has a **Loop** option that enables "
-"looping for the entire sample when importing."
-msgstr ""
-"대안으로, 가져오기 독은 전체 샘플을 가져올 때 루프(loop)를 활성화할 수 있는 "
-"**Loop** 설정을 갖고 있습니다."
 
 msgid "Translation status"
 msgstr "번역 상태"

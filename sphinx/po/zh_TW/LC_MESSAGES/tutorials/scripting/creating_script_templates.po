@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,22 @@ msgid ""
 msgstr ""
 "Godot 中能使用腳本樣板，該功能可以在建立新腳本的 ``[腳本建立視窗]`` 中看到："
 
+#, fuzzy
 msgid ""
-"A set of default script templates is provided by default, but it's also "
-"possible to modify existing and create new ones, both per project and the "
-"editor."
+"A set of built-in script templates are provided with the editor, but it is "
+"also possible to create new ones and set them by default, both per project "
+"and at editor scope."
 msgstr ""
 "預設有提供一系列的預設腳本樣板，但也可以修改現有樣板或建立新的樣板。設定樣板"
 "時可以只為單一專案設定或為編輯器設定。"
+
+msgid ""
+"Templates are linked to a specific node type, so when you create a script "
+"you will only see the templates corresponding to that particular node, or "
+"one of its parent types. For example, if you are creating a script for a "
+"CharacterBody3D, you will only see templates defined for CharacterBody3Ds, "
+"Node3Ds or Nodes."
+msgstr ""
 
 msgid "Locating the templates"
 msgstr "放置樣板"
@@ -84,17 +93,82 @@ msgid ""
 "ignored."
 msgstr "若在專案中未找到 ``script_templates`` 資料夾，則會直接忽略。"
 
-msgid "Language support and overriding behavior"
-msgstr "語言支援與覆寫行為"
+#, fuzzy
+msgid "Template organization and naming"
+msgstr "型別轉換"
 
 msgid ""
-"Depending on whether a particular language implements a way to generate "
-"scripts out of templates, it's possible to create a template which can be "
-"recognized by that language according to template's file extension. For "
-"GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
+"Both editor and project defined templates are organized in the following way:"
 msgstr ""
-"依據特定語言是否有實作產生腳本為樣板的功能，也可以建立依據樣板檔副檔名來讓語"
-"言能識別的樣板。GDScript 與 C# 的副檔名則必須為 ``gd`` 與 ``cs`` 。"
+
+msgid "where:"
+msgstr ""
+
+msgid ""
+"``template_path`` is one of the 2 locations discussed in the previous two "
+"sections"
+msgstr ""
+
+msgid ""
+"``node_type`` is the node it will apply to (for example, :ref:`Node "
+"<class_Node>`, or :ref:`CharacterBody3D <class_CharacterBody3D>`)"
+msgstr ""
+
+msgid ""
+"``file`` is the custom name you can chose for the template (for example: "
+"``platformer_movement`` or ``smooth_camera``)"
+msgstr ""
+
+msgid ""
+"``extension``: will indicate which language the template will apply to (it "
+"should be ``gd`` for GDScript or ``cs`` for C#)"
+msgstr ""
+
+msgid "For example:"
+msgstr "如："
+
+msgid "``template_scripts/Node/smooth_camera.gd``"
+msgstr ""
+
+msgid "``template_scripts/CharacterBody3D/platformer_movement.gd``"
+msgstr ""
+
+msgid "Default behaviour and overriding it"
+msgstr ""
+
+#, fuzzy
+msgid "By default:"
+msgstr "預設"
+
+msgid ""
+"the template's name is the same as the file name (minus the extension, "
+"prettyfied)"
+msgstr ""
+
+msgid "the description is empty"
+msgstr ""
+
+msgid "the space indent is set to 4"
+msgstr ""
+
+#, fuzzy
+msgid "the template will not be set as the default for the given node"
+msgstr "在本示範專案中，可將所有選項保留為預設值。"
+
+msgid ""
+"It is possible to customize this behaviour by adding meta headers at the "
+"start of your file, like this:"
+msgstr ""
+
+msgid ""
+"In this case, the name will be set to \"Platformer movement\", with the "
+"given custom description, and it will be set as the default template for the "
+"node in which directory it has been saved."
+msgstr ""
+
+msgid ""
+"This is an example of utilizing custom templates at editor and project level:"
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -111,20 +185,48 @@ msgstr ""
 "文字編輯器來開啟。"
 
 msgid ""
-"The built-in editor templates are automatically shadowed by the project-"
-"specific templates given both scripts have the same filename."
-msgstr "當腳本檔名相同時，則會優先使用各專案特定的樣板而非內建編輯器樣板。"
+"By default, every C# file inside the project directory is included in the "
+"compilation. Script templates must be manually excluded from the C# project "
+"to avoid build errors. See `Exclude files from the build <https://learn."
+"microsoft.com/en-us/visualstudio/msbuild/how-to-exclude-files-from-the-"
+"build>`_ in the Microsoft documentation."
+msgstr ""
+
+msgid ""
+"It is possible to create editor-level templates that have the same level as "
+"a project-specific templates, and also that have the same name as a built-in "
+"one, all will be shown on the new script dialog."
+msgstr ""
 
 msgid "Default template"
 msgstr "預設樣板"
 
 msgid ""
-"The ``Default`` template is always generated dynamically per language and "
-"cannot be configured nor overridden, but you can use these as the base for "
-"creating other templates."
+"To override the default template, create a custom template at editor or "
+"project level inside a ``Node`` directory (or a more specific type, if only "
+"a subtype wants to be overridden) and start the file with the ``meta-"
+"default: true`` header."
+msgstr ""
+
+msgid ""
+"Only one template can be set as default at the same time for the same node "
+"type."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The ``Default`` templates for basic Nodes, for both GDScript and C#, are "
+"shown here so you can use these as the base for creating other templates:"
 msgstr ""
 "``Default`` 預設樣板會依各語言自動產生，且無法設定或覆寫。但這些樣板可以用來"
 "當作建立其他樣板的基底。"
+
+msgid ""
+"The Godot editor provides a set of useful built-in node-specific templates, "
+"such as ``basic_movement`` for both :ref:`CharacterBody2D "
+"<class_CharacterBody2D>` and :ref:`CharacterBody3D <class_CharacterBody3D>` "
+"and ``plugin`` for :ref:`EditorPlugin <class_EditorPlugin>`."
+msgstr ""
 
 msgid "List of template placeholders"
 msgstr "樣板預留位置列表"
@@ -143,26 +245,37 @@ msgstr "預留位置"
 msgid "Description"
 msgstr "說明"
 
-msgid "``%CLASS%``"
+msgid "``_BINDINGS_NAMESPACE_``"
+msgstr ""
+
+#, fuzzy
+msgid "The name of the Godot namespace (used in C# only)."
+msgstr "新類別的名稱 (僅於 C# 中使用)。"
+
+#, fuzzy
+msgid "``_CLASS_``"
 msgstr "``%CLASS%``"
 
 msgid "The name of the new class (used in C# only)."
 msgstr "新類別的名稱 (僅於 C# 中使用)。"
 
-msgid "``%BASE%``"
+#, fuzzy
+msgid "``_BASE_``"
 msgstr "``%BASE%``"
 
 msgid "The base type a new script inherits from."
 msgstr "新腳本所繼承的基礎型別。"
 
-msgid "``%TS%``"
-msgstr "``%TS%``"
+msgid "``_TS_``"
+msgstr ""
 
+#, fuzzy
 msgid ""
 "Indentation placeholder. The exact type and number of whitespace characters "
 "used for indentation is determined by the ``text_editor/indent/type`` and "
 "``text_editor/indent/size`` settings in the :ref:`EditorSettings "
-"<class_EditorSettings>` respectively."
+"<class_EditorSettings>` respectively. Can be overridden by the ``meta-space-"
+"indent`` header on the template."
 msgstr ""
 "縮排預留位置。依據 :ref:`編輯器設定 <class_EditorSettings>` 中 ``text_editor/"
 "indent/type`` 與 ``text_editor/indent/size`` 判斷的正確縮排，會依據設定來使用"
@@ -172,41 +285,40 @@ msgid "Type placeholders"
 msgstr "型別預留位置"
 
 msgid ""
-"These are only relevant for GDScript with static typing. Whether these "
-"placeholders are actually replaced is determined by the ``text_editor/"
-"completion/add_type_hints`` setting in the :ref:`EditorSettings "
-"<class_EditorSettings>`."
+"There used to be, in Godot 3.x, placeholders for GDScript type hints that "
+"would get replaced whenever a template was used to create a new script, such "
+"as: ``%INT_TYPE%``, ``%STRING_TYPE%``, ``%FLOAT_TYPE%`` or ``%VOID_RETURN%``."
 msgstr ""
-"這些預留位置只與靜態型別 GDScript 相關。這些預留位置實際上要放在哪裡是由 :"
-"ref:`編輯器設定 <class_EditorSettings>` 中的 ``text_editor/completion/"
-"add_type_hints`` 設定所判斷的。"
 
-msgid "Value"
-msgstr "值"
+msgid ""
+"The placeholders no longer work for Godot 4.x, but if the setting "
+"``text_editor/completion/add_type_hints`` from :ref:`EditorSettings "
+"<class_EditorSettings>` is disabled, type hints for parameters and return "
+"types will be automatically removed for a few base types:"
+msgstr ""
 
-msgid "``%INT_TYPE%``"
-msgstr "``%INT_TYPE%``"
+#, fuzzy
+msgid "``int``"
+msgstr "``in``"
 
-msgid "``: int``"
-msgstr "``: int``"
+#, fuzzy
+msgid "``String``"
+msgstr "``String[]``"
 
-msgid "``%STRING_TYPE%``"
-msgstr "``%STRING_TYPE%``"
+#, fuzzy
+msgid "``Array[String]``"
+msgstr "``String[]``"
 
-msgid "``: String``"
-msgstr "``: String``"
+#, fuzzy
+msgid "``float``"
+msgstr "``float[]``"
 
-msgid "``%FLOAT_TYPE%``"
-msgstr "``%FLOAT_TYPE%``"
-
-msgid "``: float``"
-msgstr "``: float``"
-
-msgid "``%VOID_RETURN%``"
-msgstr "``%VOID_RETURN%``"
-
-msgid "``-> void``"
+#, fuzzy
+msgid "``void``"
 msgstr "``-> void``"
+
+msgid "``:=`` will be transformed into ``=``"
+msgstr ""
 
 msgid "Translation status"
 msgstr "翻譯狀態"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,11 +39,12 @@ msgstr ""
 "Godot proporciona muchos tipos de formas de colisión, con diferentes "
 "equilibrios de rendimiento y precisión."
 
+#, fuzzy
 msgid ""
-"You can define the shape of a :ref:`class_PhysicsBody` by adding one or "
-"more :ref:`CollisionShapes <class_CollisionShape>` as child nodes. Note that "
-"you must add a :ref:`class_Shape` *resource* to collision shape nodes in the "
-"Inspector dock."
+"You can define the shape of a :ref:`class_PhysicsBody3D` by adding one or "
+"more :ref:`CollisionShape3Ds <class_CollisionShape3D>` as child nodes. Note "
+"that you must add a :ref:`class_Shape3D` *resource* to collision shape nodes "
+"in the Inspector dock."
 msgstr ""
 "Puedes definir la forma de un :ref:`class_PhysicsBody` añadiendo uno o más :"
 "ref:`CollisionShapes <class_CollisionShape>` como nodos hijos. Ten en cuenta "
@@ -64,16 +65,20 @@ msgid "Godot provides the following primitive collision shape types:"
 msgstr ""
 "Godot proporciona los siguientes tipos de formas de colisión primitivas:"
 
-msgid ":ref:`class_BoxShape`"
+#, fuzzy
+msgid ":ref:`class_BoxShape3D`"
 msgstr ":ref:`class_BoxShape`"
 
-msgid ":ref:`class_SphereShape`"
+#, fuzzy
+msgid ":ref:`class_SphereShape3D`"
 msgstr ":ref:`class_SphereShape`"
 
-msgid ":ref:`class_CapsuleShape`"
+#, fuzzy
+msgid ":ref:`class_CapsuleShape3D`"
 msgstr ":ref:`class_CapsuleShape`"
 
-msgid ":ref:`class_CylinderShape`"
+#, fuzzy
+msgid ":ref:`class_CylinderShape3D`"
 msgstr ":ref:`class_CylinderShape`"
 
 msgid ""
@@ -99,8 +104,9 @@ msgstr ""
 msgid "Convex collision shapes"
 msgstr "Formas de colisión convexas"
 
+#, fuzzy
 msgid ""
-":ref:`Convex collision shapes <class_ConvexPolygonShape>` are a compromise "
+":ref:`Convex collision shapes <class_ConvexPolygonShape3D>` are a compromise "
 "between primitive collision shapes and concave collision shapes. They can "
 "represent shapes of any complexity, but with an important caveat. As their "
 "name implies, an individual shape can only represent a *convex* shape. For "
@@ -132,9 +138,10 @@ msgstr ""
 "cierta cantidad de formas convexas. Para objetos grandes y complejos como un "
 "nivel completo, recomendamos usar formas cóncavas en su lugar."
 
+#, fuzzy
 msgid ""
 "You can generate one or several convex collision shapes from the editor by "
-"selecting a MeshInstance and using the **Mesh** menu at the top of the 3D "
+"selecting a MeshInstance3D and using the **Mesh** menu at the top of the 3D "
 "viewport. The editor exposes two generation modes:"
 msgstr ""
 "Puedes generar una o varias formas de colisión convexas desde el editor "
@@ -168,8 +175,9 @@ msgstr ""
 msgid "Concave or trimesh collision shapes"
 msgstr "Formas de colisión cóncavas o trimestrales"
 
+#, fuzzy
 msgid ""
-":ref:`Concave collision shapes <class_ConcavePolygonShape>`, also called "
+":ref:`Concave collision shapes <class_ConcavePolygonShape3D>`, also called "
 "trimesh collision shapes, can take any form, from a few triangles to "
 "thousands of triangles. Concave shapes are the slowest option but are also "
 "the most accurate in Godot. **You can only use concave shapes within "
@@ -215,10 +223,11 @@ msgstr ""
 "colisión cóncava no tiene un \"volumen\" real. Puedes colocar objetos tanto "
 "*fuera* de la forma como *dentro*."
 
+#, fuzzy
 msgid ""
 "You can generate a concave collision shape from the editor by selecting a "
-"MeshInstance and using the **Mesh** menu at the top of the 3D viewport. The "
-"editor exposes two options:"
+"MeshInstance3D and using the **Mesh** menu at the top of the 3D viewport. "
+"The editor exposes two options:"
 msgstr ""
 "Puedes generar una forma de colisión cóncava desde el editor seleccionando "
 "una \"Malla\" y usando el menú \"Malla\" en la parte superior de la vista "
@@ -262,13 +271,9 @@ msgstr ""
 "perfectamente sobre el StaticBody."
 
 msgid ""
-"Godot can generate collision shapes for your imported 3D scenes "
-"automatically. See :ref:`doc_importing_scenes_import_hints` in the "
-"documentation for more information."
+"See :ref:`doc_importing_3d_scenes` for information on how to export models "
+"for Godot and automatically generate collision shapes on import."
 msgstr ""
-"Godot puede generar formas de colisión para sus escenas 3D importadas "
-"automáticamente. Ver :ref:`doc_importing_scenes_import_hints` en la "
-"documentación para más información."
 
 msgid "Performance caveats"
 msgstr "Advertencias de rendimiento"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,40 +92,24 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Under **Theme overrides > Fonts** click on the empty box and select \"New "
-"DynamicFont\""
-msgstr ""
-"在「Custom Fonts」（自定義字體）中，選擇「New DynamicFont」（新增 "
-"DynamicFont 格式的字體）"
-
-#, fuzzy
-msgid ""
-"Click on the \"DynamicFont\" you added, and under **Font > FontData**, "
-"choose \"Load\" and select the \"Xolonium-Regular.ttf\" file."
+"Under \"Theme Overrides > Fonts\", choose \"Load\" and select the \"Xolonium-"
+"Regular.ttf\" file."
 msgstr ""
 "點擊新增的「DynamicFont」，並點擊「Font/Font Data」（字體與字體資料）中的「載"
 "入」，接著選擇「Xolonium-Regular.ttf」檔案。另外也必須設定字體的 ``Size`` "
 "（大小）。可以設定為 ``64``。"
 
-msgid "Set the \"Size\" property under ``Settings``, ``64`` works well."
+msgid ""
+"The font size is still too small, increase it to ``64`` under \"Theme "
+"Overrides > Font Sizes\". Once you've done this with the ``ScoreLabel``, "
+"repeat the changes for the ``Message`` and ``StartButton`` nodes."
 msgstr ""
 
 #, fuzzy
 msgid ""
-"Once you've done this on the ``ScoreLabel``, you can click the down arrow "
-"next to the Font property and choose \"Copy\", then \"Paste\" it in the same "
-"place on the other two Control nodes."
-msgstr ""
-"完成 ``ScoreLabel`` 的設定後，點擊 DynamicFont 屬性旁邊的下拉箭頭，並選擇"
-"「Copy」（複製），接著在另外兩個 Control 節點上相同的地方「Paste」（貼上）。"
-
-#, fuzzy
-msgid ""
-"**Anchors and Margins:** ``Control`` nodes have a position and size, but "
-"they also have anchors and margins. Anchors define the origin - the "
-"reference point for the edges of the node. Margins update automatically when "
-"you move or resize a control node. They represent the distance from the "
-"control node's edges to its anchor."
+"**Anchors:** ``Control`` nodes have a position and size, but they also have "
+"anchors. Anchors define the origin - the reference point for the edges of "
+"the node."
 msgstr ""
 "**錨點與外邊距：** ``Control`` 節點除了位置與大小之外，也可以設定錨點 "
 "(Anchor) 與外邊距 (Margin)。錨點定義原點（相對於節點邊緣的參考點）。外邊距則"
@@ -133,57 +117,62 @@ msgstr ""
 "到錨點的距離。詳細說明請參考 :ref:"
 "`doc_design_interfaces_with_the_control_nodes` 。"
 
+#, fuzzy
 msgid ""
-"Arrange the nodes as shown below. Click the \"Layout\" button to set a "
-"Control node's layout:"
-msgstr "依照下圖排列節點。點擊「畫面配置」按鈕來設定 Control 節點的配置："
-
-msgid ""
-"You can drag the nodes to place them manually, or for more precise "
-"placement, use the following settings:"
+"Arrange the nodes as shown below. You can drag the nodes to place them "
+"manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr "可以拖移節點來手動排列，或是使用下列設定來更精確地排放："
 
 msgid "ScoreLabel"
 msgstr "\\ ScoreLabel"
 
-msgid "*Layout* : \"Top Wide\""
-msgstr "**畫面配置** ：「上延伸」"
+msgid "Add the text ``0``."
+msgstr ""
 
-msgid "*Text* : ``0``"
-msgstr "**Text** ： ``0``"
+msgid ""
+"Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
+msgstr ""
 
-msgid "*Align* : \"Center\""
-msgstr "**Align** ：「Center」"
+msgid "Choose the \"Anchor Preset\" ``Center Top``."
+msgstr ""
 
 msgid "Message"
 msgstr "訊息"
 
-msgid "*Layout* : \"HCenter Wide\""
-msgstr "**畫面配置** ：「水平中央延長」"
-
-msgid "*Text* : ``Dodge the Creeps!``"
+#, fuzzy
+msgid "Add the text ``Dodge the creeps!``."
 msgstr "**Text** ： ``Dodge the Creeps!``"
 
-msgid "*Autowrap* : \"On\""
-msgstr "**Autostrap** ： 「開啟」"
+msgid ""
+"Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
+"line."
+msgstr ""
+
+msgid ""
+"Under \"Control - Layout/Transform\" set \"Size X\"  to ``480`` to use the "
+"entire width of the screen."
+msgstr ""
+
+msgid "Choose the \"Anchor Preset\" ``Center``."
+msgstr ""
 
 msgid "StartButton"
 msgstr "\\ StartButton"
 
-msgid "*Text* : ``Start``"
+#, fuzzy
+msgid "Add the text ``Start``."
 msgstr "**Text** ： ``Start``"
 
-msgid "*Layout* : \"Center Bottom\""
-msgstr "**畫面配置** ：「中下」"
+msgid ""
+"Under \"Control - Layout/Transform\", set \"Size X\" to ``200`` and \"Size "
+"Y\" to ``100`` to add a little bit more padding between the border and text."
+msgstr ""
 
-msgid "*Margin* :"
-msgstr "**Margin** ："
+msgid "Choose the \"Anchor Preset\" ``Center Bottom``."
+msgstr ""
 
-msgid "Top: ``-200``"
-msgstr "Top： ``-200``"
-
-msgid "Bottom: ``-100``"
-msgstr "Bottom： ``-100``"
+msgid "Under \"Control - Layout/Transform\", set \"Position Y\" to ``580``."
+msgstr ""
 
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
@@ -195,15 +184,20 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr "現在將這個腳本新增至 ``HUD`` ："
 
+#, fuzzy
 msgid ""
-"The ``start_game`` signal tells the ``Main`` node that the button has been "
-"pressed."
-msgstr "``start_game`` 訊號會告訴 ``Main`` 節點按鈕被按下。"
-
-msgid ""
-"This function is called when we want to display a message temporarily, such "
-"as \"Get Ready\"."
+"We now want to display a message temporarily, such as \"Get Ready\", so we "
+"add the following code"
 msgstr "當我們想要暫時顯示訊息（如「Get Ready」）時可以呼叫這個函式。"
+
+#, fuzzy
+msgid ""
+"We also need to process what happens when the player loses. The code below "
+"will show \"Game Over\" for 2 seconds, then return to the title screen and, "
+"after a brief pause, show the \"Start\" button."
+msgstr ""
+"當玩家輸了之後會呼叫這個函式。會在畫面上顯示 2 秒「Game Over」，然後回到標題"
+"畫面、暫停一下，最後顯示「Start」按鈕。"
 
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
@@ -223,12 +217,13 @@ msgstr ""
 "``create_timer()`` 函式。當需要像上面的程式碼一樣新增一點延遲的時候很有用，上"
 "面的例子中我們用它來在顯示「Start」按鈕前增加一點點等待時間。"
 
-msgid "This function is called by ``Main`` whenever the score changes."
-msgstr "這個函式會由 ``Main`` 在分數改動的時候呼叫。"
+msgid "Add the code below to ``HUD`` to update the score"
+msgstr ""
 
+#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
-"signal of ``StartButton`` and add the following code to the new functions:"
+"signal of ``StartButton``, and add the following code to the new functions:"
 msgstr ""
 "連接 ``MessageTimer`` 的 ``timeout() 訊號與 ``StartButton`` 的 ``pressed()`` "
 "訊號，並新增下列程式碼到新函式當中："
@@ -252,15 +247,23 @@ msgstr ""
 "我們現在需要把 ``HUD`` 的功能連接到 ``Main`` 腳本。所以我們需要在 ``Main`` 場"
 "景內新增一點點東西："
 
+#, fuzzy
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
-"``new_game()`` function of the Main node by typing \"new_game\" in the "
-"\"Receiver Method\" in the \"Connect a Signal\" window. Verify that the "
+"``new_game()`` function of the Main node by clicking the \"Pick\" button in "
+"the \"Connect a Signal\" window and selecting the ``new_game()`` method or "
+"type \"new_game\" below \"Receiver Method\" in the window. Verify that the "
 "green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
 "在節點分頁中，設定 HUD 的 ``start_game`` 訊號的連接，在「連接訊號」視窗中將"
 "「Receiver 方法」設為「new_game」來將訊號連接到 Main 節點的 ``new_game()`` 函"
 "式。之後檢查看看腳本中的 ``func new_game()``旁邊有沒有出現綠色的連線圖示。"
+
+#, fuzzy
+msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
+msgstr ""
+"確定好了所有東西都正常後，將呼叫 ``new_game()`` 的程式碼從 ``_ready()`` 裡刪"
+"除。"
 
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
@@ -271,15 +274,22 @@ msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "``game_over()`` 中我們需要呼叫對應的 ``HUD`` 函式："
 
 msgid ""
-"Finally, add this to ``_on_ScoreTimer_timeout()`` to keep the display in "
+"Just a reminder: we don't want to start the new game automatically, so "
+"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
 "最後，將這段程式碼加到 ``_on_ScoreTimer_timeout()`` 來讓分數改變的時候能同步"
 "顯示："
 
+#, fuzzy
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
-"asked to select a main scene, so choose ``Main.tscn``."
+"asked to select a main scene, so choose ``main.tscn``."
 msgstr ""
 "現在已經可以執行遊戲了！點擊「執行專案」按鈕。接著會被要求選擇一個主場景，這"
 "裡我們選 ``Main.tscn`` 。"

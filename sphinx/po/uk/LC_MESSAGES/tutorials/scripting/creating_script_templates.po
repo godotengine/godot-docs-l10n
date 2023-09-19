@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,13 +27,22 @@ msgstr ""
 "Godot надає спосіб використання скриптових шаблонів, як це видно в ``Script "
 "Create Dialog`` під час створення нового скрипта:"
 
+#, fuzzy
 msgid ""
-"A set of default script templates is provided by default, but it's also "
-"possible to modify existing and create new ones, both per project and the "
-"editor."
+"A set of built-in script templates are provided with the editor, but it is "
+"also possible to create new ones and set them by default, both per project "
+"and at editor scope."
 msgstr ""
 "Набір шаблонів скриптів надається за замовчуванням, але також можна "
 "змінювати існуючі та створювати нові, як для проєкту, так і для редактора."
+
+msgid ""
+"Templates are linked to a specific node type, so when you create a script "
+"you will only see the templates corresponding to that particular node, or "
+"one of its parent types. For example, if you are creating a script for a "
+"CharacterBody3D, you will only see templates defined for CharacterBody3Ds, "
+"Node3Ds or Nodes."
+msgstr ""
 
 msgid "Locating the templates"
 msgstr "Розташування шаблонів"
@@ -91,19 +100,83 @@ msgstr ""
 "Якщо в проєкті не знайдено каталог ``script_templates``, то він просто "
 "ігнорується."
 
-msgid "Language support and overriding behavior"
-msgstr "Підтримка мов та визначаюча поведінка"
+#, fuzzy
+msgid "Template organization and naming"
+msgstr "Перетворення типів і кастинг"
 
 msgid ""
-"Depending on whether a particular language implements a way to generate "
-"scripts out of templates, it's possible to create a template which can be "
-"recognized by that language according to template's file extension. For "
-"GDScript and C#, the extensions must be ``gd`` and ``cs`` respectively."
+"Both editor and project defined templates are organized in the following way:"
 msgstr ""
-"Залежно від того, чи реалізує певна мова спосіб генерації скриптів із "
-"шаблонів, можна створити шаблон, який може розпізнаватися цією мовою "
-"відповідно до розширення файлу шаблону. Для GDScript та C# розширення "
-"повинні бути ``gd`` і ``cs`` відповідно."
+
+msgid "where:"
+msgstr ""
+
+msgid ""
+"``template_path`` is one of the 2 locations discussed in the previous two "
+"sections"
+msgstr ""
+
+msgid ""
+"``node_type`` is the node it will apply to (for example, :ref:`Node "
+"<class_Node>`, or :ref:`CharacterBody3D <class_CharacterBody3D>`)"
+msgstr ""
+
+msgid ""
+"``file`` is the custom name you can chose for the template (for example: "
+"``platformer_movement`` or ``smooth_camera``)"
+msgstr ""
+
+msgid ""
+"``extension``: will indicate which language the template will apply to (it "
+"should be ``gd`` for GDScript or ``cs`` for C#)"
+msgstr ""
+
+msgid "For example:"
+msgstr "Приклад:"
+
+msgid "``template_scripts/Node/smooth_camera.gd``"
+msgstr ""
+
+msgid "``template_scripts/CharacterBody3D/platformer_movement.gd``"
+msgstr ""
+
+msgid "Default behaviour and overriding it"
+msgstr ""
+
+#, fuzzy
+msgid "By default:"
+msgstr "Типовий"
+
+msgid ""
+"the template's name is the same as the file name (minus the extension, "
+"prettyfied)"
+msgstr ""
+
+msgid "the description is empty"
+msgstr ""
+
+msgid "the space indent is set to 4"
+msgstr ""
+
+#, fuzzy
+msgid "the template will not be set as the default for the given node"
+msgstr ""
+"Усі ці параметри можна залишити за замовчуванням для цієї демонстрації."
+
+msgid ""
+"It is possible to customize this behaviour by adding meta headers at the "
+"start of your file, like this:"
+msgstr ""
+
+msgid ""
+"In this case, the name will be set to \"Platformer movement\", with the "
+"given custom description, and it will be set as the default template for the "
+"node in which directory it has been saved."
+msgstr ""
+
+msgid ""
+"This is an example of utilizing custom templates at editor and project level:"
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -122,23 +195,49 @@ msgstr ""
 "бути змінені зовнішнім текстовим редактором у будь-який час."
 
 msgid ""
-"The built-in editor templates are automatically shadowed by the project-"
-"specific templates given both scripts have the same filename."
+"By default, every C# file inside the project directory is included in the "
+"compilation. Script templates must be manually excluded from the C# project "
+"to avoid build errors. See `Exclude files from the build <https://learn."
+"microsoft.com/en-us/visualstudio/msbuild/how-to-exclude-files-from-the-"
+"build>`_ in the Microsoft documentation."
 msgstr ""
-"Вбудовані шаблони редактора автоматично перекриваються шаблонами для "
-"конкретного проєкта, оскільки обидва скрипти мають однакову назву файлу."
+
+msgid ""
+"It is possible to create editor-level templates that have the same level as "
+"a project-specific templates, and also that have the same name as a built-in "
+"one, all will be shown on the new script dialog."
+msgstr ""
 
 msgid "Default template"
 msgstr "Шаблон Default (за замовчуванням)"
 
 msgid ""
-"The ``Default`` template is always generated dynamically per language and "
-"cannot be configured nor overridden, but you can use these as the base for "
-"creating other templates."
+"To override the default template, create a custom template at editor or "
+"project level inside a ``Node`` directory (or a more specific type, if only "
+"a subtype wants to be overridden) and start the file with the ``meta-"
+"default: true`` header."
+msgstr ""
+
+msgid ""
+"Only one template can be set as default at the same time for the same node "
+"type."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The ``Default`` templates for basic Nodes, for both GDScript and C#, are "
+"shown here so you can use these as the base for creating other templates:"
 msgstr ""
 "Шаблон ``Default`` завжди генерується динамічно для кожної мови і не може "
 "бути налаштований і перевизначений, але ви можете використовувати його в "
 "якості основи для створення інших шаблонів."
+
+msgid ""
+"The Godot editor provides a set of useful built-in node-specific templates, "
+"such as ``basic_movement`` for both :ref:`CharacterBody2D "
+"<class_CharacterBody2D>` and :ref:`CharacterBody3D <class_CharacterBody3D>` "
+"and ``plugin`` for :ref:`EditorPlugin <class_EditorPlugin>`."
+msgstr ""
 
 msgid "List of template placeholders"
 msgstr "Список заповнювачів шаблону"
@@ -159,26 +258,37 @@ msgstr "Проміжний"
 msgid "Description"
 msgstr "Опис"
 
-msgid "``%CLASS%``"
+msgid "``_BINDINGS_NAMESPACE_``"
+msgstr ""
+
+#, fuzzy
+msgid "The name of the Godot namespace (used in C# only)."
+msgstr "Назва нового класу (використовується лише в C#)."
+
+#, fuzzy
+msgid "``_CLASS_``"
 msgstr "``%CLASS%``"
 
 msgid "The name of the new class (used in C# only)."
 msgstr "Назва нового класу (використовується лише в C#)."
 
-msgid "``%BASE%``"
+#, fuzzy
+msgid "``_BASE_``"
 msgstr "``%BASE%``"
 
 msgid "The base type a new script inherits from."
 msgstr "Базовий тип, який успадковує новий скрипт."
 
-msgid "``%TS%``"
-msgstr "``%TS%``"
+msgid "``_TS_``"
+msgstr ""
 
+#, fuzzy
 msgid ""
 "Indentation placeholder. The exact type and number of whitespace characters "
 "used for indentation is determined by the ``text_editor/indent/type`` and "
 "``text_editor/indent/size`` settings in the :ref:`EditorSettings "
-"<class_EditorSettings>` respectively."
+"<class_EditorSettings>` respectively. Can be overridden by the ``meta-space-"
+"indent`` header on the template."
 msgstr ""
 "Заповнення відступу. Точний тип та кількість пробілів, що використовуються "
 "для відступу, визначається відповідно параметрами ``text_editor/indent/"
@@ -189,41 +299,40 @@ msgid "Type placeholders"
 msgstr "Типи заповнювачів"
 
 msgid ""
-"These are only relevant for GDScript with static typing. Whether these "
-"placeholders are actually replaced is determined by the ``text_editor/"
-"completion/add_type_hints`` setting in the :ref:`EditorSettings "
-"<class_EditorSettings>`."
+"There used to be, in Godot 3.x, placeholders for GDScript type hints that "
+"would get replaced whenever a template was used to create a new script, such "
+"as: ``%INT_TYPE%``, ``%STRING_TYPE%``, ``%FLOAT_TYPE%`` or ``%VOID_RETURN%``."
 msgstr ""
-"Вони стосуються лише GDScript із статичною типізацією. Чи будуть ці "
-"заповнювачі фактично замінені, визначається параметром ``text_editor/"
-"completion/add_type_hints`` в :ref:`EditorSettings <class_EditorSettings>`."
 
-msgid "Value"
-msgstr "Значення"
+msgid ""
+"The placeholders no longer work for Godot 4.x, but if the setting "
+"``text_editor/completion/add_type_hints`` from :ref:`EditorSettings "
+"<class_EditorSettings>` is disabled, type hints for parameters and return "
+"types will be automatically removed for a few base types:"
+msgstr ""
 
-msgid "``%INT_TYPE%``"
-msgstr "``%INT_TYPE%``"
+#, fuzzy
+msgid "``int``"
+msgstr "``in``"
 
-msgid "``: int``"
-msgstr "``: int``"
+#, fuzzy
+msgid "``String``"
+msgstr "``String[]``"
 
-msgid "``%STRING_TYPE%``"
-msgstr "``%STRING_TYPE%``"
+#, fuzzy
+msgid "``Array[String]``"
+msgstr "``String[]``"
 
-msgid "``: String``"
-msgstr "``: String``"
+#, fuzzy
+msgid "``float``"
+msgstr "``float[]``"
 
-msgid "``%FLOAT_TYPE%``"
-msgstr "``%FLOAT_TYPE%``"
-
-msgid "``: float``"
-msgstr "``: float``"
-
-msgid "``%VOID_RETURN%``"
-msgstr "``%VOID_RETURN%``"
-
-msgid "``-> void``"
+#, fuzzy
+msgid "``void``"
 msgstr "``-> void``"
+
+msgid "``:=`` will be transformed into ``=``"
+msgstr ""
 
 msgid "Translation status"
 msgstr "Стан перекладу"

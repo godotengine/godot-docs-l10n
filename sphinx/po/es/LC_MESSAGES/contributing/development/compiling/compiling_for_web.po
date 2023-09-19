@@ -1,0 +1,226 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compiling for the Web"
+msgstr "Compilando para la Web"
+
+msgid ""
+"This page describes how to compile HTML5 editor and export template binaries "
+"from source. If you're looking to export your project to HTML5 instead, "
+"read :ref:`doc_exporting_for_web`."
+msgstr ""
+"Esta página describe cómo compilar el editor y las plantillas de exportación "
+"para HTML5 desde el código fuente. Si estás buscando exportar tu proyecto a "
+"HTML5, lee :ref:`doc_exporting_for_web`."
+
+msgid "Requirements"
+msgstr "Requerimientos"
+
+msgid "To compile export templates for the Web, the following is required:"
+msgstr ""
+"Para compilar las plantillas de exportación para la Web, se requiere lo "
+"siguiente:"
+
+msgid "`Emscripten 1.39.9+ <https://emscripten.org>`__."
+msgstr "`Emscripten 1.39.9+ <https://emscripten.org>`__."
+
+#, fuzzy
+msgid "`Python 3.6+ <https://www.python.org/>`__."
+msgstr "`Python 3.5+ <https://www.python.org/>`__."
+
+#, fuzzy
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`__ build system."
+msgstr ""
+"El sistema de construcción `SCons 3.0+ <https://scons.org/pages/download."
+"html>`_."
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr ""
+"Para obtener el código fuente de Godot para compilarlo, consulta la sección :"
+"ref:`doc_getting_source`."
+
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+"Para obtener una visión general del uso de SCons para Godot, consulta la "
+"sección :ref:`doc_introduction_to_the_buildsystem`."
+
+msgid "Building export templates"
+msgstr "Construyendo plantillas de exportación"
+
+msgid ""
+"Before starting, confirm that ``emcc`` is available in your PATH. This is "
+"usually configured by the Emscripten SDK, e.g. when invoking ``emsdk "
+"activate`` and ``source ./emsdk_env.sh``/``emsdk_env.bat``."
+msgstr ""
+"Antes de comenzar, asegúrate de que ``emcc`` esté disponible en tu PATH. "
+"Esto suele estar configurado por el SDK de Emscripten, por ejemplo, al "
+"invocar ``emsdk activate`` y ``source ./emsdk_env.sh``/``emsdk_env.bat``."
+
+#, fuzzy
+msgid ""
+"Open a terminal and navigate to the root directory of the engine source "
+"code. Then instruct SCons to build the Web platform. Specify ``target`` as "
+"either ``template_release`` for a release build or ``template_debug`` for a "
+"debug build::"
+msgstr ""
+"Abre una terminal y navega hasta el directorio raíz del código fuente del "
+"motor. Luego, instruye a SCons para que compile la plataforma JavaScript. "
+"Especifica ``target`` como ``release`` para una compilación de versión final "
+"o ``release_debug`` para una compilación de depuración::"
+
+msgid ""
+"By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
+"built into the engine. Official export templates also have the JavaScript "
+"singleton enabled. Since ``eval()`` calls can be a security concern, the "
+"``javascript_eval`` option can be used to build without the singleton::"
+msgstr ""
+"Por defecto, el :ref:`JavaScript singleton <doc_javascript_eval>` se "
+"integrará en el motor. Las plantillas de exportación oficiales también "
+"tienen habilitado el singleton de JavaScript. Dado que las llamadas a ``eval "
+"()`` pueden ser un problema de seguridad, la opción ``javascript_eval`` se "
+"puede usar para construir sin el singleton::"
+
+#, fuzzy
+msgid ""
+"The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
+"the resulting file will be placed in the ``bin`` subdirectory. Its name is "
+"``godot.web.opt.wasm32.zip`` for release or ``godot.web.opt.debug.wasm32."
+"zip`` for debug."
+msgstr ""
+"El motor se compilará ahora a WebAssembly mediante Emscripten. Una vez que "
+"haya terminado, el archivo resultante se colocará en el subdirectorio "
+"``bin``. Su nombre será ``godot.javascript.opt.zip`` para la versión final o "
+"``godot.javascript.opt.debug.zip`` para la versión de depuración."
+
+#, fuzzy
+msgid ""
+"Finally, rename the zip archive to ``web_release.zip`` for the release "
+"template::"
+msgstr ""
+"Finalmente, renombra el archivo zip a ``webassembly_release.zip`` para la "
+"plantilla de versión final::"
+
+#, fuzzy
+msgid "And ``web_debug.zip`` for the debug template::"
+msgstr "Y ``webassembly_debug.zip`` para la plantilla de depuración::"
+
+msgid "GDExtension"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The default export templates do not include GDExtension support for "
+"performance and compatibility reasons. See the :ref:`export page "
+"<doc_javascript_export_options>` for more info."
+msgstr ""
+"Las plantillas de exportación predeterminadas no incluyen soporte para hilos "
+"(threads) y GDNative por razones de rendimiento y compatibilidad. Consulta "
+"la :ref:`página de exportación <doc_javascript_export_options>` para obtener "
+"más información al respecto."
+
+#, fuzzy
+msgid ""
+"You can build the export templates using the option ``dlink_enabled=yes`` to "
+"enable GDExtension support::"
+msgstr ""
+"Puedes compilar las plantillas de exportación usando la opción "
+"``threads_enabled=yes`` o ``gdnative_enabled=yes`` para habilitar el soporte "
+"para hilos (threads) o GDNative respectivamente::"
+
+#, fuzzy
+msgid ""
+"Once finished, the resulting file will be placed in the ``bin`` "
+"subdirectory. Its name will have ``_dlink`` added."
+msgstr ""
+"Una vez finalizado, el archivo resultante se colocará en el subdirectorio "
+"``bin``. Su nombre tendrá el sufijo ``.threads`` o ``.gdnative`` según la "
+"opción que hayas habilitado."
+
+#, fuzzy
+msgid ""
+"Finally, rename the zip archives to ``web_dlink_release.zip`` and "
+"``web_dlink_release.zip`` for the release template::"
+msgstr ""
+"Finalmente, renombra los archivos zip a ``webassembly_release_threads.zip`` "
+"y ``webassembly_release_gdnative.zip`` para la plantilla de versión final "
+"con hilos (threads) y GDNative respectivamente::"
+
+#, fuzzy
+msgid "Building the editor"
+msgstr "Editor de temas integrado"
+
+#, fuzzy
+msgid ""
+"It is also possible to build a version of the Godot editor that can run in "
+"the browser. The editor version is not recommended over the native build. "
+"You can build the editor with::"
+msgstr ""
+"También es posible compilar una versión del editor de Godot que puede "
+"ejecutarse en el navegador. La versión del editor requiere el soporte de "
+"hilos (threads) y no se recomienda sobre la compilación nativa. Puedes "
+"construir el editor con el siguiente comando::"
+
+#, fuzzy
+msgid ""
+"Once finished, the resulting file will be placed in the ``bin`` "
+"subdirectory. Its name will be ``godot.web.opt.tools.wasm32.zip``. You can "
+"upload the zip content to your web server and visit it with your browser to "
+"use the editor."
+msgstr ""
+"Una vez terminado, el archivo resultante se ubicará en el subdirectorio "
+"``bin``. Su nombre será ``godot.javascript.opt.tools.threads.zip``. Puedes "
+"cargar el contenido del archivo zip en tu servidor web y visitarlo con tu "
+"navegador para usar el editor."
+
+msgid ""
+"Refer to the :ref:`export page <doc_javascript_export_options>` for the web "
+"server requirements."
+msgstr ""
+"Consulta la (:ref:`página de exportación <doc_javascript_export_options>`) "
+"para obtener los requisitos del servidor web en la sección de exportación "
+"para web."
+
+msgid ""
+"The Godot repository includes a `Python script to host a local web server "
+"<https://raw.githubusercontent.com/godotengine/godot/master/platform/web/"
+"serve.py>`__. This can be used to test the web editor locally."
+msgstr ""
+
+msgid ""
+"After compiling the editor, extract the ZIP archive that was created in the "
+"``bin/`` folder, then run the following command in the Godot repository root:"
+msgstr ""
+
+msgid ""
+"This will serve the contents of the ``bin/`` folder and open the default web "
+"browser automatically. In the page that opens, access ``godot.tools.html`` "
+"and you should be able to test the web editor this way."
+msgstr ""
+
+msgid ""
+"Note that for production use cases, this Python-based web server should not "
+"be used. Instead, you should use an established web server such as Apache or "
+"nginx."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Estado de traducción"

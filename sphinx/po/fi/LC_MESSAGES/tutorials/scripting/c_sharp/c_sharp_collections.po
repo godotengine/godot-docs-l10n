@@ -1,0 +1,629 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "C# collections"
+msgstr "Leikkaa valinta"
+
+msgid ""
+"The .NET base class library contains multiple collection types that can be "
+"used to store and manipulate data. Godot also provide some collection types "
+"that are tightly integrated with the rest of the engine."
+msgstr ""
+
+#, fuzzy
+msgid "Choose a collection"
+msgstr "Portit ja yhteydet"
+
+msgid ""
+"The main difference between the `.NET collections <https://learn.microsoft."
+"com/en-us/dotnet/standard/collections/>`_ and the Godot collections is that "
+"the .NET collections are implemented in C# while the Godot collections are "
+"implemented in C++ and the Godot C# API is a wrapper over it, this is an "
+"important distinction since it means every operation on a Godot collection "
+"requires marshaling which can be expensive especially inside a loop."
+msgstr ""
+
+msgid ""
+"Due to the performance implications, using Godot collections is only "
+"recommended when absolutely necessary (such as interacting with the Godot "
+"API). Godot only understands its own collection types, so it's required to "
+"use them when talking to the engine."
+msgstr ""
+
+msgid ""
+"If you have a collection of elements that don't need to be passed to a Godot "
+"API, using a .NET collection would be more performant."
+msgstr ""
+
+msgid ""
+"It's also possible to convert between .NET collections and Godot "
+"collections. The Godot collections contain constructors from generic .NET "
+"collection interfaces that copy their elements, and the Godot collections "
+"can be used with the `LINQ <https://learn.microsoft.com/en-us/dotnet/"
+"standard/linq>`_ ``ToList``, ``ToArray`` and ``ToDictionary`` methods. But "
+"keep in mind this conversion requires marshaling every element in the "
+"collection and copies it to a new collection so it can be expensive."
+msgstr ""
+
+msgid ""
+"Despite this, the Godot collections are optimized to try and avoid "
+"unnecessary marshaling, so methods like ``Sort`` or ``Reverse`` are "
+"implemented with a single interop call and don't need to marshal every "
+"element. Keep an eye out for generic APIs that take collection interfaces "
+"like `LINQ <https://learn.microsoft.com/en-us/dotnet/standard/linq>`_ "
+"because every method requires iterating the collection and, therefore, "
+"marshaling every element. Prefer using the instance methods of the Godot "
+"collections when possible."
+msgstr ""
+
+msgid ""
+"To choose which collection type to use for each situation, consider the "
+"following questions:"
+msgstr ""
+
+msgid ""
+"Does your collection need to interact with the Godot engine? (e.g.: the type "
+"of an exported property, calling a Godot method)."
+msgstr ""
+
+msgid ""
+"If yes, since Godot only supports :ref:`Variant-compatible "
+"<doc_c_sharp_variant>` types, use a Godot collection."
+msgstr ""
+
+msgid ""
+"If not, consider `choosing an appropriate .NET collection <https://learn."
+"microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-"
+"class>`_."
+msgstr ""
+
+msgid ""
+"Do you need a Godot collection that represents a list or sequential set of "
+"data?"
+msgstr ""
+
+msgid ""
+"Godot :ref:`arrays <doc_c_sharp_collections_array>` are similar to the C# "
+"collection ``List<T>``."
+msgstr ""
+
+msgid ""
+"Godot :ref:`packed arrays <doc_c_sharp_collections_packedarray>` are more "
+"memory-efficient arrays, in C# use one of the supported ``System.Array`` "
+"types."
+msgstr ""
+
+msgid ""
+"Do you need a Godot collection that maps a set of keys to a set of values?"
+msgstr ""
+
+msgid ""
+"Godot :ref:`dictionaries <doc_c_sharp_collections_dictionary>` store pairs "
+"of keys and values and allow easy access to the values by their associated "
+"key."
+msgstr ""
+
+#, fuzzy
+msgid "Godot collections"
+msgstr "Godot-ilmoitukset"
+
+msgid "PackedArray"
+msgstr ""
+
+msgid ""
+"Godot packed arrays are implemented as an array of a specific type, allowing "
+"it to be more tightly packed as each element has the size of the specific "
+"type, not ``Variant``."
+msgstr ""
+
+msgid "In C#, packed arrays are replaced by ``System.Array``:"
+msgstr ""
+
+msgid "GDScript"
+msgstr "GDScript"
+
+msgid "C#"
+msgstr ""
+
+#, fuzzy
+msgid "``PackedInt32Array``"
+msgstr "``arrays``"
+
+msgid "``int[]``"
+msgstr ""
+
+#, fuzzy
+msgid "``PackedInt64Array``"
+msgstr "``arrays``"
+
+#, fuzzy
+msgid "``long[]``"
+msgstr "``Color[]``"
+
+#, fuzzy
+msgid "``PackedByteArray``"
+msgstr "``arrays``"
+
+msgid "``byte[]``"
+msgstr ""
+
+msgid "``PackedFloat32Array``"
+msgstr ""
+
+msgid "``float[]``"
+msgstr ""
+
+msgid "``PackedFloat64Array``"
+msgstr ""
+
+#, fuzzy
+msgid "``double[]``"
+msgstr "``Color[]``"
+
+msgid "``PackedStringArray``"
+msgstr ""
+
+#, fuzzy
+msgid "``string[]``"
+msgstr "``Color[]``"
+
+#, fuzzy
+msgid "``PackedColorArray``"
+msgstr "``Color8``"
+
+msgid "``Color[]``"
+msgstr "``Color[]``"
+
+msgid "``PackedVector2Array``"
+msgstr ""
+
+msgid "``Vector2[]``"
+msgstr ""
+
+msgid "``PackedVector3Array``"
+msgstr ""
+
+msgid "``Vector3[]``"
+msgstr ""
+
+msgid ""
+"Other C# arrays are not supported by the Godot C# API since a packed array "
+"equivalent does not exist. See :ref:`Variant <doc_c_sharp_variant>` for a "
+"list of all the compatible types."
+msgstr ""
+
+msgid "Array"
+msgstr ""
+
+msgid ""
+"Godot arrays are implemented as an array of ``Variant`` and can contain "
+"several elements of any type. In C#, the equivalent type is ``Godot."
+"Collections.Array``."
+msgstr ""
+
+msgid ""
+"The generic ``Godot.Collections.Array<T>`` type allows restricting the "
+"element type to a :ref:`Variant-compatible <doc_c_sharp_variant>` type."
+msgstr ""
+
+msgid ""
+"An untyped ``Godot.Collections.Array`` can be converted to a typed array "
+"using the ``Godot.Collections.Array<T>(Godot.Collections.Array)`` "
+"constructor."
+msgstr ""
+
+msgid ""
+"Despite the name, Godot arrays are more similar to the C# collection "
+"``List<T>`` than ``System.Array``. Their size is not fixed and can grow or "
+"shrink as elements are added/removed from the collection."
+msgstr ""
+
+msgid "List of Godot's Array methods and their equivalent in C#:"
+msgstr ""
+
+#, fuzzy
+msgid "all"
+msgstr "Kutsu"
+
+msgid "`System.Linq.Enumerable.All`_"
+msgstr ""
+
+msgid "any"
+msgstr ""
+
+msgid "`System.Linq.Enumerable.Any`_"
+msgstr ""
+
+msgid "append"
+msgstr ""
+
+#, fuzzy
+msgid "Add"
+msgstr "Android"
+
+#, fuzzy
+msgid "append_array"
+msgstr "Taulukko tangentteja"
+
+msgid "AddRange"
+msgstr ""
+
+msgid "assign"
+msgstr ""
+
+msgid "Clear and AddRange"
+msgstr ""
+
+msgid "back"
+msgstr ""
+
+msgid ""
+"``Array[^1]`` or `System.Linq.Enumerable.Last`_ or `System.Linq.Enumerable."
+"LastOrDefault`_"
+msgstr ""
+
+msgid "bsearch"
+msgstr ""
+
+msgid "BinarySearch"
+msgstr ""
+
+msgid "bsearch_custom"
+msgstr ""
+
+msgid "N/A"
+msgstr ""
+
+msgid "clear"
+msgstr ""
+
+#, fuzzy
+msgid "Clear"
+msgstr "Tyhjennä asento"
+
+msgid "count"
+msgstr ""
+
+msgid "`System.Linq.Enumerable.Count`_"
+msgstr ""
+
+#, fuzzy
+msgid "duplicate"
+msgstr "Monista"
+
+msgid "Duplicate"
+msgstr "Monista"
+
+msgid "erase"
+msgstr ""
+
+msgid "Remove"
+msgstr ""
+
+msgid "fill"
+msgstr ""
+
+msgid "Fill"
+msgstr ""
+
+msgid "filter"
+msgstr ""
+
+msgid "Use `System.Linq.Enumerable.Where`_"
+msgstr ""
+
+msgid "find"
+msgstr ""
+
+#, fuzzy
+msgid "IndexOf"
+msgstr "Indeksi"
+
+msgid "front"
+msgstr ""
+
+msgid ""
+"``Array[0]`` or `System.Linq.Enumerable.First`_ or `System.Linq.Enumerable."
+"FirstOrDefault`_"
+msgstr ""
+
+#, fuzzy
+msgid "get_typed_builtin"
+msgstr "Kärkipisteen valmismuuttujat"
+
+msgid "get_typed_class_name"
+msgstr ""
+
+msgid "get_typed_script"
+msgstr ""
+
+#, fuzzy
+msgid "has"
+msgstr "varjostin"
+
+#, fuzzy
+msgid "Contains"
+msgstr "Sisältötesti"
+
+msgid "hash"
+msgstr ""
+
+msgid "GD.Hash"
+msgstr ""
+
+#, fuzzy
+msgid "insert"
+msgstr "Lisää avainruutu"
+
+#, fuzzy
+msgid "Insert"
+msgstr "Lisää avainruutu"
+
+msgid "is_empty"
+msgstr ""
+
+msgid "Use ``Count == 0``"
+msgstr ""
+
+msgid "is_read_only"
+msgstr ""
+
+msgid "IsReadOnly"
+msgstr ""
+
+msgid "is_same_typed"
+msgstr ""
+
+#, fuzzy
+msgid "is_typed"
+msgstr "Tyyppi (\"type\")"
+
+msgid "make_read_only"
+msgstr ""
+
+msgid "MakeReadOnly"
+msgstr ""
+
+msgid "map"
+msgstr ""
+
+msgid "`System.Linq.Enumerable.Select`_"
+msgstr ""
+
+msgid "max"
+msgstr ""
+
+msgid "Max"
+msgstr ""
+
+msgid "min"
+msgstr ""
+
+msgid "Min"
+msgstr ""
+
+msgid "pick_random"
+msgstr ""
+
+msgid "PickRandom (Consider using `System.Random`_)"
+msgstr ""
+
+msgid "pop_at"
+msgstr ""
+
+msgid "``Array[i]`` with ``RemoveAt(i)``"
+msgstr ""
+
+msgid "pop_back"
+msgstr ""
+
+msgid "``Array[^1]`` with ``RemoveAt(Count - 1)``"
+msgstr ""
+
+msgid "pop_front"
+msgstr ""
+
+msgid "``Array[0]`` with ``RemoveAt(0)``"
+msgstr ""
+
+msgid "push_back"
+msgstr ""
+
+msgid "``Insert(Count, item)``"
+msgstr ""
+
+msgid "push_front"
+msgstr ""
+
+msgid "``Insert(0, item)``"
+msgstr ""
+
+msgid "reduce"
+msgstr ""
+
+msgid "`System.Linq.Enumerable.Aggregate`_"
+msgstr ""
+
+msgid "remove_at"
+msgstr ""
+
+msgid "RemoveAt"
+msgstr ""
+
+msgid "resize"
+msgstr ""
+
+msgid "Resize"
+msgstr ""
+
+msgid "reverse"
+msgstr ""
+
+msgid "Reverse"
+msgstr ""
+
+msgid "rfind"
+msgstr ""
+
+#, fuzzy
+msgid "LastIndexOf"
+msgstr "Indeksi"
+
+msgid "shuffle"
+msgstr ""
+
+msgid "Shuffle"
+msgstr ""
+
+msgid "size"
+msgstr ""
+
+msgid "Count"
+msgstr ""
+
+msgid "slice"
+msgstr ""
+
+msgid "Slice"
+msgstr ""
+
+msgid "sort"
+msgstr ""
+
+msgid "Sort"
+msgstr ""
+
+msgid "sort_custom"
+msgstr ""
+
+msgid "`System.Linq.Enumerable.OrderBy`_"
+msgstr ""
+
+#, fuzzy
+msgid "operator !="
+msgstr "Operaattori"
+
+msgid "!RecursiveEqual"
+msgstr ""
+
+#, fuzzy
+msgid "operator +"
+msgstr "Operaattori"
+
+#, fuzzy
+msgid "operator <"
+msgstr "Operaattori"
+
+#, fuzzy
+msgid "operator <="
+msgstr "Operaattori"
+
+#, fuzzy
+msgid "operator =="
+msgstr "Operaattori"
+
+msgid "RecursiveEqual"
+msgstr ""
+
+#, fuzzy
+msgid "operator >"
+msgstr "Operaattori"
+
+#, fuzzy
+msgid "operator >="
+msgstr "Operaattori"
+
+#, fuzzy
+msgid "operator []"
+msgstr "Operaattori"
+
+msgid "Array[int] indexer"
+msgstr ""
+
+msgid "Dictionary"
+msgstr ""
+
+msgid ""
+"Godot dictionaries are implemented as a dictionary with ``Variant`` keys and "
+"values. In C#, the equivalent type is ``Godot.Collections.Dictionary``."
+msgstr ""
+
+msgid ""
+"The generic ``Godot.Collections.Dictionary<TKey, TValue>`` type allows "
+"restricting the key and value types to a :ref:`Variant-compatible "
+"<doc_c_sharp_variant>` type."
+msgstr ""
+
+msgid ""
+"An untyped ``Godot.Collections.Dictionary`` can be converted to a typed "
+"dictionary using the ``Godot.Collections.Dictionary<TKey, TValue>(Godot."
+"Collections.Dictionary)`` constructor."
+msgstr ""
+
+msgid ""
+"If you need a dictionary where the key is typed but not the value, use "
+"``Variant`` as the ``TValue`` generic parameter of the typed dictionary."
+msgstr ""
+
+msgid "List of Godot's Dictionary methods and their equivalent in C#:"
+msgstr ""
+
+msgid "find_key"
+msgstr ""
+
+#, fuzzy
+msgid "get"
+msgstr "Aseta"
+
+msgid "Dictionary[Variant] indexer or TryGetValue"
+msgstr ""
+
+#, fuzzy
+msgid "ContainsKey"
+msgstr "Jatka"
+
+msgid "has_all"
+msgstr ""
+
+msgid "keys"
+msgstr "keys (avainruudut)"
+
+msgid "Keys"
+msgstr ""
+
+msgid "merge"
+msgstr ""
+
+msgid "Merge"
+msgstr ""
+
+#, fuzzy
+msgid "values"
+msgstr "arvo"
+
+#, fuzzy
+msgid "Values"
+msgstr "Arvo"
+
+msgid "Dictionary[Variant] indexer, Add or TryGetValue"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Käännöksen tila"

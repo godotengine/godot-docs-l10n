@@ -1,0 +1,91 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Connecting NavigationMeshes"
+msgstr "Навигационные сетки"
+
+msgid ""
+"Different NavigationMeshes are automatically merged by the NavigationServer "
+"when at least two vertex positions of one edge exactly overlap."
+msgstr ""
+
+msgid ""
+"To connect over arbitrary distances see :ref:"
+"`doc_navigation_using_navigationlinks`."
+msgstr ""
+
+msgid ""
+"The same is true for multiple NavigationPolygon resources. As long as their "
+"outline points overlap exactly the NavigationServer will merge them. "
+"NavigationPolygon outlines must be from different NavigationPolygon "
+"resources to connect."
+msgstr ""
+
+msgid ""
+"Overlapping or intersecting outlines on the same NavigationPolygon will fail "
+"the navigation mesh creation. Overlapping or intersecting outlines from "
+"different NavigationPolygons will often fail to create the navigation region "
+"edge connections on the NavigationServer and should be avoided."
+msgstr ""
+
+msgid ""
+"Exactly means exactly for the vertex position merge. Small float errors that "
+"happen quite regularly with imported meshes will prevent a successful vertex "
+"merge."
+msgstr ""
+
+msgid ""
+"Alternatively ``NavigationMesh``s are not merged but still considered as "
+"``connected`` by the NavigationServer when their edges are nearly parallel "
+"and within distance to each other. The connection distance is defined by "
+"the  ``edge_connection_margin`` for each navigation map. In many cases "
+"NavigationMesh edges cannot properly connect when they partly overlap. "
+"Better avoid any navigation mesh overlap at all time for a consistent merge "
+"behavior."
+msgstr ""
+
+msgid ""
+"If navigation debug is enabled and the NavigationServer active the "
+"established navigation mesh connections will be visualized. See :ref:"
+"`doc_navigation_debug_tools` for more info about navigation debug options."
+msgstr ""
+
+msgid ""
+"The default 2D ``edge_connection_margin`` can be changed in the "
+"ProjectSettings under ``navigation/2d/default_edge_connection_margin``."
+msgstr ""
+
+msgid ""
+"The default 3D ``edge_connection_margin`` can be changed in the "
+"ProjectSettings under ``navigation/3d/default_edge_connection_margin``."
+msgstr ""
+
+msgid ""
+"The edge connection margin value of any navigation map can also be changed "
+"at runtime with the NavigationServer API."
+msgstr ""
+
+msgid ""
+"Changing the edge connection margin will trigger a full update of all "
+"navigation mesh connections on the NavigationServer."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Translation status (статус перевода)"

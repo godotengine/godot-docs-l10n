@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Lokalisointi gettext avulla"
 msgid ""
 "In addition to :ref:`doc_importing_translations` in CSV format, Godot also "
 "supports loading translation files written in the GNU gettext format (text-"
-"based ``.po`` and compiled ``.mo`` since Godot 3.5)."
+"based ``.po`` and compiled ``.mo`` since Godot 4.0)."
 msgstr ""
 
 msgid ""
@@ -72,15 +72,6 @@ msgid ""
 "tools."
 msgstr ""
 
-msgid "Caveats"
-msgstr ""
-
-msgid ""
-"As Godot uses its own PO file parser behind the scenes (which is more "
-"limited than the reference GNU gettext implementation), some features such "
-"as pluralization aren't supported."
-msgstr ""
-
 msgid "Installing gettext tools"
 msgstr ""
 
@@ -108,18 +99,69 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Creating the PO template (POT) manually"
-msgstr "PO-pohjan luonti"
+msgid "Creating the PO template"
+msgstr "Pelaajan liikuttaminen"
+
+#, fuzzy
+msgid "Automatic generation using the editor"
+msgstr "Signaalien yhdistäminen koodin kautta"
 
 msgid ""
-"Godot currently doesn't support extracting source strings using "
-"``xgettext``, so the ``.pot`` file must be created manually. This file can "
-"be placed anywhere in the project directory, but it's recommended to keep it "
-"in a subdirectory, as each locale will be defined in its own file."
+"Since Godot 4.0, the editor can generate a PO template automatically from "
+"specified scene and script files. This POT generation also supports "
+"translation contexts and pluralization if used in a script, with the "
+"optional second argument of ``tr()`` and the ``tr_n()`` method."
 msgstr ""
 
 msgid ""
-"Create a directory named `locale` in the project directory. In this "
+"Open the Project Settings' **Localization > POT Generation** tab, then use "
+"the **Add…** button to specify the path to your project's scenes and scripts "
+"that contain localizable strings:"
+msgstr ""
+
+msgid ""
+"Creating a PO template in the Localization > POT Generation tab of the "
+"Project Settings"
+msgstr ""
+
+msgid ""
+"Creating a PO template in the **Localization > POT Generation** tab of the "
+"Project Settings"
+msgstr ""
+
+msgid ""
+"After adding at least one scene or script, click **Generate POT** in the top-"
+"right corner, then specify the path to the output file. This file can be "
+"placed anywhere in the project directory, but it's recommended to keep it in "
+"a subdirectory such as ``locale``, as each locale will be defined in its own "
+"file."
+msgstr ""
+
+msgid ""
+"You can then move over to :ref:`creating a messages file from a PO template "
+"<doc_localization_using_gettext_messages_file>`."
+msgstr ""
+
+msgid ""
+"Remember to regenerate the PO template after making any changes to "
+"localizable strings, or after adding new scenes or scripts. Otherwise, newly "
+"added strings will not be localizable and translators won't be able to "
+"update translations for outdated strings."
+msgstr ""
+
+#, fuzzy
+msgid "Manual creation"
+msgstr "Vektorin interpolointi"
+
+msgid ""
+"If the automatic generation approach doesn't work out for your needs, you "
+"can create a PO template by hand in a text editor. This file can be placed "
+"anywhere in the project directory, but it's recommended to keep it in a "
+"subdirectory, as each locale will be defined in its own file."
+msgstr ""
+
+msgid ""
+"Create a directory named ``locale`` in the project directory. In this "
 "directory, save a file named ``messages.pot`` with the following contents:"
 msgstr ""
 
@@ -132,35 +174,6 @@ msgstr ""
 msgid ""
 "The ``msgstr`` value in PO template files (``.pot``) should **always** be "
 "empty. Localization will be done in the generated ``.po`` files instead."
-msgstr ""
-
-#, fuzzy
-msgid "Creating the PO template (POT) using pybabel"
-msgstr "PO-pohjan luonti"
-
-msgid ""
-"The Python tool pybabel has support for Godot and can be used to "
-"automatically create and update the POT file from your scene files and "
-"scripts."
-msgstr ""
-
-msgid "After installing ``babel`` and ``babel-godot``, for example using pip:"
-msgstr ""
-
-msgid ""
-"Write a mapping file (for example ``babelrc``) which will indicate which "
-"files pybabel needs to process (note that we process GDScript as Python, "
-"which is generally sufficient):"
-msgstr ""
-
-msgid "You can then run pybabel like so:"
-msgstr ""
-
-msgid ""
-"Use the ``-k`` option to specify what needs to be extracted. In this case, "
-"arguments to :ref:`tr() <class_Object_method_tr>` will be translated, as "
-"well as properties named \"text\" (commonly used by Control nodes) and "
-"LineEdit's \"placeholder_text\" property."
 msgstr ""
 
 msgid "Creating a messages file from a PO template"
@@ -254,7 +267,7 @@ msgstr ""
 
 msgid ""
 "If the PO file is valid, this command will create a ``fr.mo`` file besides "
-"the PO file. This MO file can then be loaded in Godot as described below."
+"the PO file. This MO file can then be loaded in Godot as described above."
 msgstr ""
 
 msgid ""

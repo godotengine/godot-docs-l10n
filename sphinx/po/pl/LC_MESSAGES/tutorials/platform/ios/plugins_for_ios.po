@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -197,7 +197,7 @@ msgstr ""
 "`core/rid.h <https://github.com/godotengine/godot/blob/master/core/rid.h>`__."
 
 msgid ""
-"The Game Center API is available through the \"GameCenter\" singleton. It "
+"The Game Center API is available through the ``GameCenter`` singleton. It "
 "has the following methods:"
 msgstr ""
 
@@ -307,19 +307,6 @@ msgid "Examples:"
 msgstr "Przykłady:"
 
 msgid "On close:"
-msgstr ""
-
-msgid "Multi-platform games"
-msgstr "Gra wielo platformowa"
-
-msgid ""
-"When working on a multi-platform game, you won't always have the "
-"\"GameCenter\" singleton available (for example when running on PC or "
-"Android). Because the gdscript compiler looks up the singletons at compile "
-"time, you can't just query the singletons to see and use what you need "
-"inside a conditional block, you need to also define them as valid "
-"identifiers (local variable or class member). This is an example of how to "
-"work around this in a class:"
 msgstr ""
 
 msgid "Translation status"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,22 +111,36 @@ msgstr "有几种衡量性能的方法, 包括:"
 msgid "Putting a start/stop timer around code of interest."
 msgstr "在感兴趣的代码周围放置一个 开启/停止 的计时器."
 
-msgid "Using the Godot profiler."
+#, fuzzy
+msgid "Using the :ref:`Godot profiler <doc_the_profiler>`."
 msgstr "使用Godot分析器."
 
-msgid "Using external third-party CPU profilers."
-msgstr "使用外部第三方CPU分析器."
+msgid "Using :ref:`external CPU profilers <doc_using_cpp_profilers>`."
+msgstr ""
 
+#, fuzzy
 msgid ""
-"Using GPU profilers/debuggers such as `NVIDIA Nsight Graphics <https://"
-"developer.nvidia.com/nsight-graphics>`__ or `apitrace <https://apitrace."
-"github.io/>`__."
+"Using external GPU profilers/debuggers such as `NVIDIA Nsight Graphics "
+"<https://developer.nvidia.com/nsight-graphics>`__, `Radeon GPU Profiler "
+"<https://gpuopen.com/rgp/>`__ or `Intel Graphics Performance Analyzers "
+"<https://www.intel.com/content/www/us/en/developer/tools/graphics-"
+"performance-analyzers/overview.html>`__."
 msgstr ""
 "使用GPU分析器和调试器, 如 `NVIDIA Nsight Graphics <https://developer.nvidia."
 "com/nsight-graphics>`__ 或 `apitrace <https://apitrace.github.io/>`__ ."
 
-msgid "Checking the frame rate (with V-Sync disabled)."
-msgstr "检查帧速率(禁用垂直同步)."
+msgid ""
+"Checking the frame rate (with V-Sync disabled). Third-party utilities such "
+"as `RivaTuner Statistics Server <https://www.guru3d.com/files-details/rtss-"
+"rivatuner-statistics-server-download.html>`__ (Windows) or `MangoHud "
+"<https://github.com/flightlessmango/MangoHud>`__ (Linux) can also be useful "
+"here."
+msgstr ""
+
+msgid ""
+"Using an unofficial `debug menu add-on <https://github.com/godot-extended-"
+"libraries/godot-debug-menu>`__."
+msgstr ""
 
 msgid ""
 "Be very aware that the relative performance of different areas can vary on "
@@ -242,9 +256,10 @@ msgstr ""
 "这对于确定瓶颈和衡量改进的结果都非常有用. 有时, 改善性能的尝试可能会适得其"
 "反, 导致性能变慢. **始终使用分析器和时长来指导您的工作**"
 
+#, fuzzy
 msgid ""
 "For more info about using Godot's built-in profiler, see :ref:"
-"`doc_debugger_panel`."
+"`doc_the_profiler`."
 msgstr "有关使用Godot内置分析器的更多信息, 请参阅: :ref:`doc_debugger_panel`."
 
 msgid "Principles"

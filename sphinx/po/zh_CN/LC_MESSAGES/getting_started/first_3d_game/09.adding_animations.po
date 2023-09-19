@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,9 +47,10 @@ msgstr ""
 "该引擎自带的工具可以在编辑器中编写动画。然后你可以在运行时使用代码来播放和控"
 "制它们。"
 
+#, fuzzy
 msgid ""
-"Open the player scene, select the player node, and add an *AnimationPlayer* "
-"node."
+"Open the player scene, select the ``Player`` node, and add an :ref:"
+"`AnimationPlayer <class_AnimationPlayer>` node."
 msgstr "打开玩家场景，选中玩家节点，然后添加一个 *AnimationPlayer* 节点。"
 
 msgid "The *Animation* dock appears in the bottom panel."
@@ -87,8 +88,9 @@ msgstr "|image3|"
 msgid "image3"
 msgstr "image3"
 
+#, fuzzy
 msgid ""
-"Once you created the animation, the timeline appears with numbers "
+"Once you've created the animation, the timeline appears with numbers "
 "representing time in seconds."
 msgstr "创建完动画后，就会出现一条时间线，上面的数字代表时间，单位为秒。"
 
@@ -176,16 +178,18 @@ msgstr ""
 "检查器*\\ 中属性旁的钥匙图标。在上面单击就可以创建一个关键帧，即对应属性的一"
 "对时间与值。关键帧会被插入到时间线上的时间光标处。"
 
+#, fuzzy
 msgid ""
-"Let's insert our first keys. Here, we will animate both the translation and "
-"the rotation of the *Character* node."
+"Let's insert our first keys. Here, we will animate both the position and the "
+"rotation of the ``Character`` node."
 msgstr ""
 "让我们来开始插入关键帧吧。这里，我们要为 *Character* 节点的平移"
 "（translation）和旋转（rotation）做动画。"
 
+#, fuzzy
 msgid ""
-"Select the *Character* and click the key icon next to *Translation* in the "
-"*Inspector*. Do the same for *Rotation Degrees*."
+"Select the ``Character`` and in the *Inspector* expand the *Transform* "
+"section. Click the key icon next to *Position*, and *Rotation*."
 msgstr ""
 "选中 *Character* 并单击\\ *检查器*\\ 中 *Translation* 旁的钥匙图标。\\ "
 "*Rotation Degrees* 也同样如此操作。"
@@ -195,6 +199,10 @@ msgstr "|image10|"
 
 msgid "image10"
 msgstr "image10"
+
+msgid ""
+"For this tutorial, just create RESET Track(s) which is the default choice"
+msgstr ""
 
 msgid ""
 "Two tracks appear in the editor with a diamond icon representing each "
@@ -207,9 +215,10 @@ msgstr "|image11|"
 msgid "image11"
 msgstr "image11"
 
+#, fuzzy
 msgid ""
 "You can click and drag on the diamonds to move them in time. Move the "
-"translation key to ``0.2`` seconds and the rotation key to ``0.1`` seconds."
+"position key to ``0.2`` seconds and the rotation key to ``0.1`` seconds."
 msgstr ""
 "单击并拖动这些菱形就可以改变它们的时间。将平移（translation）关键帧移动到 "
 "``0.2`` 秒的位置，将旋转（rotation）关键帧移动到 ``0.1`` 秒的位置。"
@@ -222,8 +231,13 @@ msgstr "image12"
 
 msgid ""
 "Move the time cursor to ``0.5`` seconds by clicking and dragging on the gray "
-"timeline. In the *Inspector*, set the *Translation*'s *Y* axis to about "
-"``0.65`` meters and the *Rotation Degrees*' *X* axis to ``8``."
+"timeline."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"In the *Inspector*, set the *Position*'s *Y* axis to ``0.65`` meters and the "
+"*Rotation*' *X* axis to ``8``."
 msgstr ""
 "单击灰色的时间线并拖动，将时间光标移动到 ``0.5`` 秒的位置。在\\ *检查器*\\ 中"
 "将 *Translation* 的 *Y* 轴设为约 ``0.65`` 米，将 *Rotation Degrees* 的 *X* 轴"
@@ -235,9 +249,14 @@ msgstr "|image13|"
 msgid "image13"
 msgstr "image13"
 
+#, fuzzy
+msgid "Create a keyframe for both properties"
+msgstr "其他属性的关键帧"
+
+#, fuzzy
 msgid ""
-"Create a keyframe for both properties and shift the translation key to "
-"``0.7`` seconds by dragging it on the timeline."
+"Now, move the position keyframe to ``0.7`` seconds by dragging it on the "
+"timeline."
 msgstr ""
 "为这两个属性分别创建一个关键帧，然后在时间线上拖动，将平移的关键帧移动到 "
 "``0.7`` 秒。"
@@ -259,10 +278,11 @@ msgstr ""
 "间。取而代之的是，动画师使用时间和间隔，这两个核心动画原则。您希望让它们存在"
 "一定的偏移，在角色的运动中产生对比，以使他们感觉生动。"
 
+#, fuzzy
 msgid ""
 "Move the time cursor to the end of the animation, at ``1.2`` seconds. Set "
-"the Y translation to about ``0.35`` and the X rotation to ``-9`` degrees. "
-"Once again, create a key for both properties."
+"the Y position to about ``0.35`` and the X rotation to ``-9`` degrees. Once "
+"again, create a key for both properties."
 msgstr ""
 "将时间光标移动到动画结尾，即 ``1.2`` 秒。将 Y 平移量设为约 ``0.35``\\ 、X 旋"
 "转量设为 ``-9`` 度。再次为这两个属性添加关键帧。"
@@ -344,9 +364,9 @@ msgstr "|image19|"
 msgid "image19"
 msgstr "image19"
 
+#, fuzzy
 msgid ""
-"Do the opposite for the second translation keyframe, dragging it to the "
-"right."
+"Do the opposite for the second position keyframe, dragging it to the right."
 msgstr "对第二个平移关键帧执行相反操作，将其拖动到右侧。"
 
 msgid "|image20|"
@@ -379,9 +399,10 @@ msgstr ""
 msgid "If you play the game, the player's creature will now float!"
 msgstr "如果你运行游戏，玩家的生物就会漂浮起来！"
 
+#, fuzzy
 msgid ""
-"If the creature is a little too close to the floor, you can move the *Pivot* "
-"up to offset it."
+"If the creature is a little too close to the floor, you can move the "
+"``Pivot`` up to offset it."
 msgstr "如果这个生物离地面太近了，你可以将 *Pivot* 向上移动，达成偏移的目的。"
 
 msgid "Controlling the animation in code"
@@ -394,7 +415,8 @@ msgstr ""
 "我们可以使用代码来根据玩家的输入控制动画的播放。让我们在角色移动时修改动画的"
 "速度吧。"
 
-msgid "Open the *Player*'s script by clicking the script icon next to it."
+#, fuzzy
+msgid "Open the ``Player``'s script by clicking the script icon next to it."
 msgstr "点击 *Player* 旁的脚本图标打开其脚本。"
 
 msgid "|image22|"
@@ -416,10 +438,11 @@ msgstr ""
 "这段代码的作用是让玩家在移动时将播放速度乘以 ``4``\\ 。在停止移动时将其恢复原"
 "状。"
 
+#, fuzzy
 msgid ""
-"We mentioned that the pivot could layer transforms on top of the animation. "
-"We can make the character arc when jumping using the following line of code. "
-"Add it at the end of ``_physics_process()``."
+"We mentioned that the ``Pivot`` could layer transforms on top of the "
+"animation. We can make the character arc when jumping using the following "
+"line of code. Add it at the end of ``_physics_process()``."
 msgstr ""
 "我们提到 Pivot（轴心）可以在动画之上叠加变换。我们可以用下面这行代码使角色在"
 "跳跃时产生弧线。把它加在 ``_physics_process()`` 的最后。"
@@ -434,18 +457,23 @@ msgstr ""
 "在 Godot 中还有一个很好的动画技巧：只要你使用类似的节点结构，你就可以把它们复"
 "制到不同的场景中。"
 
+#, fuzzy
 msgid ""
-"For example, both the *Mob* and the *Player* scenes have a *Pivot* and a "
-"*Character* node, so we can reuse animations between them."
+"For example, both the ``Mob`` and the ``Player`` scenes have a ``Pivot`` and "
+"a ``Character`` node, so we can reuse animations between them."
 msgstr ""
 "例如，\\ *Mob* 和 *Player* 场景都有 *Pivot* 和 *Character* 节点，所以我们可以"
 "在它们之间复用动画。"
 
+#, fuzzy
 msgid ""
-"Open the *Player* scene, select the animation player node and open the "
-"\"float\" animation. Next, click on **Animation > Copy**. Then open ``Mob."
-"tscn`` and open its animation player. Click **Animation > Paste**. That's "
-"it; all monsters will now play the float animation."
+"Open the *Player* scene, select the AnimationPlayer node and open the "
+"\"float\" animation. Next, click on **Animation > Copy**. Then open ``mob."
+"tscn``, create an AnimationPlayer child node and select it. Click "
+"**Animation > Paste** and make sure that the button with an \"A+\" icon "
+"(Autoplay on Load) and the looping arrows (Animation looping) are also "
+"turned on in the animation editor in the bottom panel. That's it; all "
+"monsters will now play the float animation."
 msgstr ""
 "打开 *Player* 场景，选中动画播放器节点，打开浮动动画。然后点击\\ *动画 -> 复"
 "制*\\ 。然后打开 ``Mob.tscn`` 并打开其中的动画播放器。点击\\ *动画 -> 粘贴"

@@ -1,0 +1,268 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "2D Navigation Overview"
+msgstr "Tryb nawigacji"
+
+msgid ""
+"Godot provides multiple objects, classes and servers to facilitate grid-"
+"based or mesh-based navigation and pathfinding for 2D and 3D games. The "
+"following section provides a quick overview over all available navigation "
+"related objects in Godot for 2D scenes and their primary use."
+msgstr ""
+
+#, fuzzy
+msgid "Godot provides the following objects and classes for 2D navigation:"
+msgstr "Godot wspiera następujące *formaty plików scen* 3D:"
+
+#, fuzzy
+msgid ":ref:`Astar2D<class_Astar2D>`"
+msgstr ":ref:`Area2D <class_Area2D>`"
+
+msgid ""
+"``Astar2D`` objects provide an option to find the shortest path in a graph "
+"of weighted **points**."
+msgstr ""
+
+msgid ""
+"The AStar2D class is best suited for cellbased 2D gameplay that does not "
+"require actors to reach any possible position within an area but only "
+"predefined, distinct positions."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`NavigationServer2D<class_NavigationServer2D>`"
+msgstr ":ref:`String <class_String>`"
+
+msgid ""
+"``NavigationServer2D`` provides a powerful server API to find the shortest "
+"path between two positions on a area defined by a navigation mesh."
+msgstr ""
+
+msgid ""
+"The NavigationServer is best suited for 2D realtime gameplay that does "
+"require actors to reach any possible position within an navmesh defined "
+"area. Meshbased navigation scales well with large gameworlds as a large area "
+"can often be defined with a single polygon when it would require many, many "
+"grid cells."
+msgstr ""
+
+msgid ""
+"The NavigationServer holds different navigation maps that each consist of "
+"regions that hold navigation mesh data. Agents can be placed on a map for "
+"avoidance calculation. RIDs are used to reference the internal maps, regions "
+"and agents when communicating with the server."
+msgstr ""
+
+msgid "The following NavigationServer RID types are available."
+msgstr ""
+
+msgid "NavMap RID"
+msgstr ""
+
+msgid ""
+"Reference to a specific navigation map that holds regions and agents. The "
+"map will attempt to join changed navigation meshes of regions by proximity. "
+"The map will synchronize regions and agents each physics frame."
+msgstr ""
+
+msgid "NavRegion RID"
+msgstr ""
+
+msgid ""
+"Reference to a specific navigation region that can hold navigation mesh "
+"data. The region can be enabled / disabled or the use restricted with a "
+"navigationlayer bitmask."
+msgstr ""
+
+msgid "NavLink RID"
+msgstr ""
+
+msgid ""
+"Reference to a specific navigation link that connects two navigation mesh "
+"positions over arbitrary distances."
+msgstr ""
+
+msgid "NavAgent RID"
+msgstr ""
+
+msgid ""
+"Reference to a specific avoidance agent with a radius value use solely in "
+"avoidance."
+msgstr ""
+
+msgid ""
+"The following SceneTree Nodes are available as helpers to work with the "
+"NavigationServer2D API."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`NavigationRegion2D<class_NavigationRegion2D>` Node"
+msgstr ":ref:`String <class_String>`"
+
+msgid ""
+"A Node that holds a NavigationPolygon resource that defines a navigation "
+"mesh for the NavigationServer2D."
+msgstr ""
+
+msgid "The region can be enabled / disabled."
+msgstr ""
+
+msgid ""
+"The use in pathfinding can be further restricted through the "
+"navigationlayers bitmask."
+msgstr ""
+
+msgid ""
+"Regions can join their navigation meshes by proximity for a combined "
+"navigation mesh."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`NavigationLink2D<class_NavigationLink2D>` Node"
+msgstr ":ref:`String <class_String>`"
+
+msgid ""
+"A Node that connects two positions on navigation mesh over arbitrary "
+"distances for pathfinding."
+msgstr ""
+
+msgid "The link can be enabled / disabled."
+msgstr ""
+
+msgid "The link can be made one-way or bidirectional."
+msgstr ""
+
+msgid ""
+"Links tell the pathfinding that a connection exists and at what cost. The "
+"actual agent handling and movement needs to happen in custom scripts."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`NavigationAgent2D<class_NavigationAgent2D>` Node"
+msgstr ":ref:`String <class_String>`"
+
+msgid ""
+"An optional helper Node to facilitate common NavigationServer2D API calls "
+"for pathfinding and avoidance for a Node2D inheriting parent Node."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`NavigationObstacle2D<class_NavigationObstacle2D>` Node"
+msgstr ":ref:`Słownik <class_Dictionary>`"
+
+msgid ""
+"A Node that acts as an agent with avoidance radius, to work it needs to be "
+"added under a Node2D inheriting parent Node. Obstacles are intended as a "
+"last resort option for constantly moving objects that cannot be re(baked) to "
+"a navigation mesh efficiently. This node also only works if RVO processing "
+"is being used."
+msgstr ""
+
+#, fuzzy
+msgid "The 2D navigation meshes are defined with the following resources:"
+msgstr "Scena Mob będzie korzystać z następujących węzłów:"
+
+#, fuzzy
+msgid ":ref:`NavigationPolygon<class_NavigationPolygon>` Resource"
+msgstr ":ref:`String <class_String>`"
+
+msgid ""
+"A resource that holds 2D navigation mesh data and provides polygon drawtools "
+"to define navigation areas inside the Editor as well as at runtime."
+msgstr ""
+
+msgid ""
+"The NavigationRegion2D Node uses this resource to define its navigation area."
+msgstr ""
+
+msgid ""
+"The NavigationServer2D uses this resource to update navmesh of individual "
+"regions."
+msgstr ""
+
+msgid ""
+"The TileSet Editor creates and uses this resource internally when defining "
+"tile navigation areas."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can see how 2D navigation works in action using the `2D Navigation "
+"Polygon <https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
+"navigation>`__ and `Grid-based Navigation with AStarGrid2D <https://github."
+"com/godotengine/godot-demo-projects/tree/master/2d/navigation_astar>`__ demo "
+"projects."
+msgstr ""
+"Dla przykładu jak to działa zobacz projekty demonstracyjne `3D w 2D <https://"
+"github.com/godotengine/godot-demo-projects/tree/master/viewport/3d_in_2d>`_ "
+"oraz `2D w 3D <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/viewport/2d_in_3d>`_."
+
+#, fuzzy
+msgid "Setup for 2D scene"
+msgstr "Ustawianie sceny"
+
+msgid ""
+"The following steps show the basic setup for a minimum viable navigation in "
+"2D that uses the NavigationServer2D and a NavigationAgent2D for path "
+"movement."
+msgstr ""
+
+msgid "Add a NavigationRegion2D Node to the scene."
+msgstr ""
+
+msgid ""
+"Click on the region node and add a new NavigationPolygon Resource to the "
+"region node."
+msgstr ""
+
+msgid ""
+"Define the moveable navigation area with the NavigationPolygon draw tool."
+msgstr ""
+
+msgid ""
+"The navigation mesh defines the area where an actor can stand and move with "
+"its center. Leave enough margin between the navpolygon edges and collision "
+"objects to not get path following actors repeatedly stuck on collision."
+msgstr ""
+
+msgid ""
+"Add a CharacterBody2D node in the scene with a basic collision shape and a "
+"sprite or mesh for visuals."
+msgstr ""
+
+msgid "Add a NavigationAgent2D node below the character node."
+msgstr ""
+
+msgid ""
+"Add the following script to the CharacterBody2D node. We make sure to set a "
+"movement target after the scene has fully loaded and the NavigationServer "
+"had time to sync."
+msgstr ""
+
+msgid ""
+"On the first frame the NavigationServer map has not synchronized region data "
+"and any path query will return empty. Await one frame to pause scripts until "
+"the NavigationServer had time to sync."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Status tłumaczenia"

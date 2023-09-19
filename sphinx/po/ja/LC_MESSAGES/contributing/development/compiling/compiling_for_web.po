@@ -1,0 +1,195 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compiling for the Web"
+msgstr "Web用のコンパイル"
+
+msgid ""
+"This page describes how to compile HTML5 editor and export template binaries "
+"from source. If you're looking to export your project to HTML5 instead, "
+"read :ref:`doc_exporting_for_web`."
+msgstr ""
+
+msgid "Requirements"
+msgstr "必要条件"
+
+msgid "To compile export templates for the Web, the following is required:"
+msgstr "Webのエクスポートテンプレートをコンパイルするには、次のことが必要です:"
+
+#, fuzzy
+msgid "`Emscripten 1.39.9+ <https://emscripten.org>`__."
+msgstr "`Python 3.5 以降 <https://www.python.org/>`_\\ 。"
+
+#, fuzzy
+msgid "`Python 3.6+ <https://www.python.org/>`__."
+msgstr "`Python 3.5 以降 <https://www.python.org/>`_\\ 。"
+
+#, fuzzy
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`__ build system."
+msgstr ""
+"`3.0以降のSCons <https://scons.org/pages/download.html>`_ ビルドシステム。"
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr ""
+
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+"Godotにおける基本的なSconsの使い方については、\\ :ref:"
+"`doc_introduction_to_the_buildsystem`\\ を参照してください。"
+
+msgid "Building export templates"
+msgstr "エクスポートテンプレートの構築"
+
+msgid ""
+"Before starting, confirm that ``emcc`` is available in your PATH. This is "
+"usually configured by the Emscripten SDK, e.g. when invoking ``emsdk "
+"activate`` and ``source ./emsdk_env.sh``/``emsdk_env.bat``."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Open a terminal and navigate to the root directory of the engine source "
+"code. Then instruct SCons to build the Web platform. Specify ``target`` as "
+"either ``template_release`` for a release build or ``template_debug`` for a "
+"debug build::"
+msgstr ""
+"ターミナルを開き、エンジンソース コードのルートディレクトリに移動します。次"
+"に、SConsにJavaScriptプラットフォームの構築を指示します。 ``target`` をリリー"
+"ス ビルドの ``release`` またはデバッグ ビルドの ``release_debug`` として指定"
+"します:"
+
+#, fuzzy
+msgid ""
+"By default, the :ref:`JavaScript singleton <doc_javascript_eval>` will be "
+"built into the engine. Official export templates also have the JavaScript "
+"singleton enabled. Since ``eval()`` calls can be a security concern, the "
+"``javascript_eval`` option can be used to build without the singleton::"
+msgstr ""
+"デフォルトでは、\\ :ref:`JavaScriptシングルトン <doc_javascript_eval>`\\ がエ"
+"ンジンに組み込まれます。 ``eval()`` '呼び出しはセキュリティ上の問題になる可能"
+"性があるため、 ``javascript_eval`` オプションを使用してシングルトンなしでビル"
+"ドできます:"
+
+#, fuzzy
+msgid ""
+"The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
+"the resulting file will be placed in the ``bin`` subdirectory. Its name is "
+"``godot.web.opt.wasm32.zip`` for release or ``godot.web.opt.debug.wasm32."
+"zip`` for debug."
+msgstr ""
+"これで、エンジンはEmscriptenによってWebAssemblyにコンパイルされます。完了する"
+"と、結果のファイルは ``bin`` サブディレクトリに配置されます。名前は ``godot."
+"javascript.opt.zip`` (リリース用)か、``godot.javascript.opt.debug.zip``(デ"
+"バッグ用)です。"
+
+#, fuzzy
+msgid ""
+"Finally, rename the zip archive to ``web_release.zip`` for the release "
+"template::"
+msgstr ""
+"最後に、リリース テンプレートのzipアーカイブの名前を ``webassembly_release."
+"zip`` に変更します:"
+
+#, fuzzy
+msgid "And ``web_debug.zip`` for the debug template::"
+msgstr "デバッグテンプレートの ``webassembly_debug.zip`` :"
+
+msgid "GDExtension"
+msgstr ""
+
+msgid ""
+"The default export templates do not include GDExtension support for "
+"performance and compatibility reasons. See the :ref:`export page "
+"<doc_javascript_export_options>` for more info."
+msgstr ""
+
+msgid ""
+"You can build the export templates using the option ``dlink_enabled=yes`` to "
+"enable GDExtension support::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Once finished, the resulting file will be placed in the ``bin`` "
+"subdirectory. Its name will have ``_dlink`` added."
+msgstr ""
+"結果のファイルは副ディレクトリの\\ ``bin/``\\ に、 ``.threads`` もしくは ``."
+"gdnative`` の拡張子で保存されます。"
+
+#, fuzzy
+msgid ""
+"Finally, rename the zip archives to ``web_dlink_release.zip`` and "
+"``web_dlink_release.zip`` for the release template::"
+msgstr ""
+"最後に、リリース テンプレートのzipアーカイブの名前を ``webassembly_release."
+"zip`` に変更します:"
+
+#, fuzzy
+msgid "Building the editor"
+msgstr "エディタのビルド"
+
+msgid ""
+"It is also possible to build a version of the Godot editor that can run in "
+"the browser. The editor version is not recommended over the native build. "
+"You can build the editor with::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Once finished, the resulting file will be placed in the ``bin`` "
+"subdirectory. Its name will be ``godot.web.opt.tools.wasm32.zip``. You can "
+"upload the zip content to your web server and visit it with your browser to "
+"use the editor."
+msgstr ""
+"結果のファイルは副ディレクトリの\\ ``bin/``\\ に、 ``.threads`` もしくは ``."
+"gdnative`` の拡張子で保存されます。"
+
+msgid ""
+"Refer to the :ref:`export page <doc_javascript_export_options>` for the web "
+"server requirements."
+msgstr ""
+
+msgid ""
+"The Godot repository includes a `Python script to host a local web server "
+"<https://raw.githubusercontent.com/godotengine/godot/master/platform/web/"
+"serve.py>`__. This can be used to test the web editor locally."
+msgstr ""
+
+msgid ""
+"After compiling the editor, extract the ZIP archive that was created in the "
+"``bin/`` folder, then run the following command in the Godot repository root:"
+msgstr ""
+
+msgid ""
+"This will serve the contents of the ``bin/`` folder and open the default web "
+"browser automatically. In the page that opens, access ``godot.tools.html`` "
+"and you should be able to test the web editor this way."
+msgstr ""
+
+msgid ""
+"Note that for production use cases, this Python-based web server should not "
+"be used. Instead, you should use an established web server such as Apache or "
+"nginx."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

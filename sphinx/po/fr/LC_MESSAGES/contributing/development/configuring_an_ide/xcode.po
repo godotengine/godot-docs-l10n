@@ -1,0 +1,212 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Xcode"
+msgstr "Xcode"
+
+msgid ""
+"`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
+"can download it from the Mac App Store."
+msgstr ""
+"`Xcode <https://developer.apple.com/xcode>`_ est un IDE gratuit pour "
+"uniquement macOS. Vous pouvez le télécharger sur le Mac App Store."
+
+msgid "Importing the project"
+msgstr "Importation du projet"
+
+msgid ""
+"From Xcode's main screen create a new project using the **Other > External "
+"Build System** template."
+msgstr ""
+"Depuis l'écran principal de Xcode, créez un nouveau projet en utilisant le "
+"modèle **Other > External Build System**."
+
+msgid ""
+"Now choose a name for your project and set the path to scons executable in "
+"build tool (to find the path you can type ``where scons`` in a terminal)."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Open the main target from the **Targets** section and select the **Info** "
+"tab."
+msgstr ""
+"Ouvrez vos cibles de compilation à partir de la section **Targets** et "
+"sélectionnez l'onglet **Info**."
+
+msgid "Fill out the form with the following settings:"
+msgstr "Remplissez le formulaire avec les paramètres suivants :"
+
+msgid "Arguments"
+msgstr "Arguments"
+
+msgid ""
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+"Voir :ref:`doc_introduction_to_the_buildsystem` pour une liste complète des "
+"arguments."
+
+msgid "Directory"
+msgstr "Directory"
+
+msgid "A full path to the Godot root folder"
+msgstr "Un chemin complet vers le dossier racine de Godot"
+
+msgid ""
+"Add a Command Line Tool target which will be used for indexing the project "
+"by choosing **File > New > Target...**."
+msgstr ""
+"Ajoutez une cible pour l'outil en ligne de commande qui sera utilisée pour "
+"l'indexation du projet en choisissant **File > New > Target...**."
+
+#, fuzzy
+msgid "Select **macOS > Application > Command Line Tool**."
+msgstr "Sélectionnez **OS X > Application > Command Line Tool**."
+
+msgid ""
+"Name it something so you know not to compile with this target (e.g. "
+"``GodotXcodeIndex``)."
+msgstr ""
+"Donnez-lui un nom pour que vous sachiez qu'il ne faut pas compiler avec "
+"cette cible (e.g. ``GodotXcodeIndex``)."
+
+msgid ""
+"For this target open the **Build Settings** tab and look for **Header Search "
+"Paths**."
+msgstr ""
+"Pour cette cible, ouvrez l'onglet **Build Settings** et cherchez **Header "
+"Search Paths**."
+
+msgid ""
+"Set **Header Search Paths** to the absolute path to the Godot root folder. "
+"You need to include subdirectories as well. To achieve that, add two two "
+"asterisks (``**``) to the end of the path, e.g. ``/Users/me/repos/godot-"
+"source/**``."
+msgstr ""
+"Définissez **Header Search Paths** sur le chemin absolu vers le dossier "
+"racine de Godot. Vous devez également inclure les sous-répertoires. Pour "
+"cela, ajoutez deux astérisques (``**``) à la fin du chemin, par exemple ``/"
+"Users/me/repos/godot-source/**``."
+
+msgid ""
+"Add the Godot source to the project by dragging and dropping it into the "
+"project file browser."
+msgstr ""
+"Ajoutez la source Godot au projet en la faisant glisser dans le navigateur "
+"de fichiers du projet."
+
+#, fuzzy
+msgid ""
+"Select **Create groups** for the **Added folders** option and check *only* "
+"your command line indexing target in the **Add to targets** section."
+msgstr ""
+"Ensuite, sélectionnez **Create groups** pour l'option **Added folders** et "
+"cochez *seulement* votre cible d'indexation de ligne de commande dans la "
+"section **Add to targets**."
+
+msgid "Xcode will now index the files. This may take a few minutes."
+msgstr ""
+"Xcode va maintenant indexer les fichiers. Cela peut prendre quelques minutes."
+
+msgid ""
+"Once Xcode is done indexing, you should have jump-to-definition, "
+"autocompletion, and full syntax highlighting."
+msgstr ""
+"Une fois l'indexation de Xcode terminée, vous devriez avoir le saut à la "
+"définition, l'autocomplétion et la mise en évidence syntaxique complète."
+
+msgid "Debugging the project"
+msgstr "Débogage du projet"
+
+msgid ""
+"To enable debugging support you need to edit the external build target's "
+"build and run schemes."
+msgstr ""
+"Pour activer le support de débogage, vous devez modifier les schémas de "
+"compilation et d’exécution de la cible de compilation externe."
+
+msgid "Open the scheme editor of the external build target."
+msgstr "Ouvrez l'éditeur de schéma de la cible de compilation externe."
+
+msgid "Locate the **Build > Post Actions** section."
+msgstr "Localisez la section **Build > Post Actions**."
+
+msgid "Add a new script run action"
+msgstr "Ajouter un nouveau script d'action exécution"
+
+msgid ""
+"Under **Provide build settings from** select your project. This allows to "
+"reference the project directory within the script."
+msgstr ""
+"Sous **Provide build settings from**, sélectionnez votre projet. Cela permet "
+"de référencer le répertoire du projet dans le script."
+
+msgid ""
+"Create a script that will give the binary a name that Xcode can recognize, e."
+"g.:"
+msgstr ""
+"Créer un script qui donnera au binaire un nom que Xcode pourra reconnaître, "
+"par exemple :"
+
+msgid "Build the external build target."
+msgstr "Compiler la cible de compilation externe."
+
+msgid "Open the scheme editor again and select **Run**."
+msgstr "Ouvrez à nouveau l'éditeur de schéma et sélectionnez **Run**."
+
+msgid ""
+"Set the **Executable** to the file you linked in your post-build action "
+"script."
+msgstr ""
+"Définissez l'**Executable** au fichier que vous avez lié dans votre script "
+"d'action post-compilation."
+
+msgid "Check **Debug executable**."
+msgstr "Cochez **Debug executable**."
+
+#, fuzzy
+msgid ""
+"You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
+"the editor instead of the Project Manager, and the ``--path`` argument tells "
+"the executable to open the specified project (must be provided as an "
+"*absolute* path to the project root, not the ``project.godot`` file)."
+msgstr ""
+"Vous pouvez ajouter deux arguments dans l'onglet **Arguments** : le drapeau "
+"``-e`` ouvre l'éditeur au lieu du gestionnaire de projet, et l'argument ``--"
+"path`` indique à l'exécutable d'ouvrir le projet spécifié (doit être fourni "
+"comme un chemin *absolu* vers la racine du projet, et non le fichier "
+"``project.godot``)."
+
+#, fuzzy
+msgid ""
+"To check that everything is working, put a breakpoint in ``platform/macos/"
+"godot_main_macos.mm`` and run the project."
+msgstr ""
+"Pour vérifier que tout fonctionne, mettez un breakpoint dans ``platform/osx/"
+"godot_main_osx.mm`` et lancez le projet."
+
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"Si vous rencontrez des problèmes, demandez de l'aide sur l'un des `canaux "
+"communautaires de Godot <https://godotengine.org/community>`__."
+
+msgid "Translation status"
+msgstr "État de la traduction"

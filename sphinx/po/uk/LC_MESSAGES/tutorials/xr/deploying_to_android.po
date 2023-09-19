@@ -1,0 +1,220 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Deploying to Android"
+msgstr "Експорт на Android"
+
+msgid "Setup"
+msgstr "Налаштування"
+
+msgid ""
+"Most standalone headsets run on Android and OpenXR support is making its way "
+"to these platforms."
+msgstr ""
+
+msgid ""
+"Before following the OpenXR-specific instructions here, you'll need to first "
+"setup your system to export to Android in general, including:"
+msgstr ""
+
+#, fuzzy
+msgid "Installing OpenJDK 11"
+msgstr "Встановлення OpenJDK 11"
+
+#, fuzzy
+msgid "Installing Android Studio"
+msgstr "Android"
+
+#, fuzzy
+msgid "Creating a debug.keystore"
+msgstr "Створіть debug.keystore"
+
+msgid "Configuring the location of the Android SDK and debug.keystore in Godot"
+msgstr ""
+
+msgid ""
+"See :ref:`doc_exporting_for_android` for the full details, and return here "
+"when you've finished these steps."
+msgstr ""
+
+#, fuzzy
+msgid "Custom Android build"
+msgstr "Нетипові можливості"
+
+msgid ""
+"Official support for the Android platform wasn't added to the OpenXR "
+"specification initially resulting in various vendors creating custom loaders "
+"to make OpenXR available on their headsets. While the long term expectation "
+"is that all vendors will adopt the official OpenXR loader, for now these "
+"loaders need to be added to your project."
+msgstr ""
+
+msgid ""
+"In order to include the vendor-specific OpenXR loader into your project, you "
+"will need to setup a custom Android build."
+msgstr ""
+
+msgid "Select **Install Android Build Template...** from the **Project** menu:"
+msgstr ""
+
+msgid ""
+"This will create a folder called **android** inside of your project that "
+"contains all the runtime files needed on Android. You can now customize this "
+"installation. Godot won't show this in the editor but you can find it with a "
+"file browser."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can read more about custom builds here: :ref:`doc_android_custom_build`."
+msgstr ""
+"Ви можете дізнатися більше про форматування рядків тут: :ref:"
+"`doc_gdscript_printf`."
+
+#, fuzzy
+msgid "Installing the loader plugins"
+msgstr "Компіляція нашого додатка"
+
+msgid ""
+"The Android plugin structure has been restructured in Godot 4.2, if you've "
+"previously installed the loader plugin you need to delete it from the "
+"`android/plugins` folder. The loader plugin available in the asset library "
+"is still the old one, it will be updated to the new one after 4.2 is "
+"released."
+msgstr ""
+
+msgid ""
+"The loaders can be downloaded from the asset library, search for OpenXR "
+"Loaders and install the plugin:"
+msgstr ""
+
+msgid "You will find the installed files inside the **addons** folder."
+msgstr ""
+
+msgid ""
+"Alternatively you can manually install the loader plugin by downloading the "
+"v2.x version of the plugin `from the release page here <https://github.com/"
+"GodotVR/godot_openxr_loaders/releases>`__."
+msgstr ""
+
+msgid ""
+"You will need to copy the `assets/addons/godotopenxr` folder from the zip "
+"file into your projects `assets/addons` folder."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can find the main repository of the loader plugin `here <https://github."
+"com/GodotVR/godot_openxr_loaders>`__."
+msgstr ""
+"Якщо хочете взяти участь у написанні документації, сховище її коду "
+"розташовано `тут <https://github.com/godotengine/godot-docs>`_."
+
+#, fuzzy
+msgid "Creating the export presets"
+msgstr "Створення простого додатка"
+
+msgid ""
+"You will need to setup a separate export preset for each device, as each "
+"device will need its own loader included."
+msgstr ""
+
+msgid ""
+"Open **Project** and select **Export..**. Click on **Add..** and select "
+"**Android**. Next change the name of the export preset for the device you're "
+"setting this up for, say **Meta Quest**. And enable **Use Gradle Build**. If "
+"you want to use one-click deploy (described below), ensure that **Runnable** "
+"is enabled."
+msgstr ""
+
+msgid ""
+"If the loader plugins were installed correctly you should find entries for "
+"the different headsets, select the entry for meta:"
+msgstr ""
+
+msgid "Also change the **XR Mode** to **OpenXR**."
+msgstr ""
+
+msgid ""
+"Scroll to the bottom of the list and you'll find additional XR feature "
+"sections, currently only **Meta XR Features** is available. The hand "
+"tracking and passthrough settings here currently only work for the Meta "
+"Quest and you will need to select the appropriate settings if you wish to "
+"use these features."
+msgstr ""
+
+#, fuzzy
+msgid "Now you can repeat the same process for the other devices."
+msgstr ""
+"Ви можете повторювати цей процес, поки у сцені не з’явиться кілька м'ячів."
+
+msgid ""
+"There are separate loaders for the Meta Quest, Pico and Lynx R1 headsets."
+msgstr ""
+
+msgid ""
+"The fourth option is the official Khronos (KHR) loader, in due time all "
+"headsets should work with this loader. At the moment this loader has been "
+"tested with the Magic Leap 2 and standalone HTC headsets."
+msgstr ""
+
+msgid ""
+"While the Mobile Vulkan renderer has many optimizations targeted at mobile "
+"devices, we're still working out the kinks. It is highly advisable to use "
+"the OpenGL renderer for the time being when targeting Android based XR "
+"devices."
+msgstr ""
+
+msgid ""
+"Note that we are awaiting driver updates on various devices before Vulkan "
+"support will work on these."
+msgstr ""
+
+#, fuzzy
+msgid "Running on your device from the Godot editor"
+msgstr "Працюємо у 32-бітовій збірці"
+
+msgid ""
+"If you've setup your export settings as described above, and your headset is "
+"connected to your computer and correctly recognized, you can launch it "
+"directly from the Godot editor using :ref:`doc_one-click_deploy`:"
+msgstr ""
+
+msgid ""
+"For some devices on some platforms, you may need to perform some extra steps "
+"in order for your device to be recognized correctly, so be sure to check the "
+"developer documentation from your headset vendor."
+msgstr ""
+
+msgid ""
+"For example, with the Meta Quest 2, you need to enable developer mode on the "
+"headset, and if you're on Windows, you'll need to install special ADB "
+"drivers. See the `official Meta Quest developer documentation <https://"
+"developer.oculus.com/documentation/native/android/mobile-device-setup/>`_ "
+"for more details."
+msgstr ""
+
+msgid ""
+"If you're having any issues with one-click deploy, check the :ref:"
+"`Troubleshooting section <doc_one-click_deploy_troubleshooting>`."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Стан перекладу"

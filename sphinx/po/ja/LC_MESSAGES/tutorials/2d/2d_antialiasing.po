@@ -1,0 +1,141 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "2D antialiasing"
+msgstr "**アンチエイリアシング:**"
+
+msgid ""
+"Godot also supports antialiasing in 3D rendering. This is covered on the :"
+"ref:`doc_3d_antialiasing` page."
+msgstr ""
+
+msgid "Introduction"
+msgstr "はじめに"
+
+msgid ""
+"Due to their limited resolution, scenes rendered in 2D can exhibit aliasing "
+"artifacts. These artifacts usually manifest in the form of a \"staircase\" "
+"effect on geometry edges, and are most noticeable when using nodes such as :"
+"ref:`class_Line2D`, :ref:`class_Polygon2D` or :ref:"
+"`class_TextureProgressBar`. :ref:`doc_custom_drawing_in_2d` can also have "
+"aliasing artifacts for methods that don't support antialiasing."
+msgstr ""
+
+msgid ""
+"In the example below, you can notice how edges have a blocky appearance:"
+msgstr ""
+
+msgid ""
+"Image is scaled by 2× with nearest-neighbor filtering to make aliasing more "
+"noticeable."
+msgstr ""
+
+msgid ""
+"To combat this, Godot supports several methods of enabling antialiasing on "
+"2D rendering."
+msgstr ""
+
+msgid "Antialiasing property in Line2D and custom drawing"
+msgstr ""
+
+msgid ""
+"This is the recommended method, as it has a lower performance impact in most "
+"cases."
+msgstr ""
+
+msgid ""
+"Line2D has an **Antialiased** property which you can enable in the "
+"inspector. Also, several methods for :ref:`doc_custom_drawing_in_2d` support "
+"an optional ``antialiased`` parameter, which can be set to ``true`` when "
+"calling the function."
+msgstr ""
+
+msgid ""
+"These methods do not require MSAA to be enabled, which makes their "
+"*baseline* performance cost low. In other words, there is no permanent added "
+"cost if you're not drawing any antialiased geometry at some point."
+msgstr ""
+
+msgid ""
+"The downside of these antialiasing methods is that they work by generating "
+"additional geometry. If you're generating complex 2D geometry that's updated "
+"every frame, this may be a bottleneck. Also, Polygon2D, TextureProgressBar, "
+"and several custom drawing methods don't feature an antialiased property. "
+"For these nodes, you can use 2D multisample antialiasing instead."
+msgstr ""
+
+#, fuzzy
+msgid "Multisample antialiasing (MSAA)"
+msgstr "マルチサンプル アンチエイリアシング (MSAA)。"
+
+msgid ""
+"Before enabling MSAA in 2D, it's important to understand what MSAA will "
+"operate on. MSAA in 2D follows similar restrictions as in 3D. While it does "
+"not introduce any blurriness, its scope of application is limited. The main "
+"applications of 2D MSAA are:"
+msgstr ""
+
+msgid "Geometry edges, such as line and polygon drawing."
+msgstr ""
+
+msgid ""
+"Sprite edges *only for pixels touching one of the texture's edges*. This "
+"works for both linear and nearest-neighbor filtering. Sprite edges created "
+"using transparency on the image are not affected by MSAA."
+msgstr ""
+
+msgid ""
+"The downside of MSAA is that it only operates on edges. This is because MSAA "
+"increases the number of *coverage* samples, but not the number of *color* "
+"samples. However, since the number of color samples did not increase, "
+"fragment shaders are still run for each pixel only once. As a result, MSAA "
+"will **not affect** the following kinds of aliasing in any way:"
+msgstr ""
+
+msgid "Aliasing *within* nearest-neighbor filtered textures (pixel art)."
+msgstr ""
+
+msgid "Aliasing caused by custom 2D shaders."
+msgstr ""
+
+msgid "Specular aliasing when using Light2D."
+msgstr ""
+
+#, fuzzy
+msgid "Aliasing in font rendering."
+msgstr "ポイントレンダリングのポイントサイズ。"
+
+msgid ""
+"MSAA can be enabled in the Project Settings by changing the value of the "
+"**Rendering > Anti Aliasing > Quality > MSAA 2D** setting. It's important to "
+"change the value of the **MSAA 2D** setting and not **MSAA 3D**, as these "
+"are entirely separate settings."
+msgstr ""
+
+msgid ""
+"Comparison between no antialiasing (left) and various MSAA levels (right). "
+"The top-left corner contains a Line2D node, the top-right corner contains 2 "
+"TextureProgressBar nodes. The bottom contains 8 pixel art sprites, with 4 of "
+"them touching the edges (green background) and 4 of them not touching the "
+"edges (Godot logo):"
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

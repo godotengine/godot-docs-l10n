@@ -1,0 +1,577 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Introduction to the buildsystem"
+msgstr "ビルドシステムの説明"
+
+msgid "Setup"
+msgstr "セットアップ"
+
+msgid ""
+":ref:`Godot uses the SCons build system. <doc_faq_why_scons>` Please refer "
+"to the documentation for:"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_compiling_for_android`"
+msgstr "\\ :ref:`doc_optimizing_for_size`"
+
+#, fuzzy
+msgid ":ref:`doc_compiling_for_ios`"
+msgstr "\\ :ref:`doc_optimizing_for_size`"
+
+#, fuzzy
+msgid ":ref:`doc_compiling_for_linuxbsd`"
+msgstr "\\ :ref:`doc_complying_with_licenses`"
+
+#, fuzzy
+msgid ":ref:`doc_compiling_for_macos`"
+msgstr "\\ :ref:`doc_optimizing_for_size`"
+
+#, fuzzy
+msgid ":ref:`doc_compiling_for_uwp`"
+msgstr "\\ :ref:`doc_optimizing_for_size`"
+
+#, fuzzy
+msgid ":ref:`doc_compiling_for_web`"
+msgstr "\\ :ref:`doc_optimizing_for_size`"
+
+#, fuzzy
+msgid ":ref:`doc_compiling_for_windows`"
+msgstr "\\ :ref:`doc_optimizing_for_size`"
+
+msgid "Platform selection"
+msgstr "プラットフォームの選択"
+
+msgid ""
+"Godot's build system will begin by detecting the platforms it can build for. "
+"If not detected, the platform will simply not appear on the list of "
+"available platforms. The build requirements for each platform are described "
+"in the rest of this tutorial section."
+msgstr ""
+"Godot のビルドシステムは、ビルド可能なプラットフォームを検出することによって"
+"開始されます。検出されない場合、使用可能なプラットフォームの一覧に表示されま"
+"せん。各プラットフォームのビルド要件については、このチュートリアルの残りの部"
+"分で説明します。"
+
+msgid ""
+"SCons is invoked by just calling ``scons``. If no platform is specified, "
+"SCons will detect the target platform automatically based on the host "
+"platform. It will then start building for the target platform right away."
+msgstr ""
+"SCons は\\ ``scons``\\ を呼ぶだけで起動します。もしプラットフォームが指定され"
+"なければ、SConsはホスト プラットフォームを自動的に検出してターゲット プラット"
+"フォームとします。それからすぐにターゲット プラットフォームへのビルドを開始し"
+"ます。"
+
+msgid "To list the available target platforms, use ``scons platform=list``::"
+msgstr ""
+"利用可能なターゲット プラットフォームのリストを得るには、\\ ``scons "
+"platform=list``\\ を使います:"
+
+#, fuzzy
+msgid ""
+"To build for a platform (for example, ``linuxbsd``), run with the "
+"``platform=`` (or ``p=`` to make it short) argument:"
+msgstr ""
+"特定のプラットフォーム (たとえばX11) にビルドするには、引数として\\ "
+"``platform=`` (あるいはその短縮形\\ ``p=``\\ ) を付けて実行します:"
+
+msgid ""
+"This will start the build process, which will take a while. By default, "
+"Godot's SCons setup is configured to use all CPU threads but one (to keep "
+"the system responsive during compilation). If you want to adjust how many "
+"CPU threads SCons will use, use the ``-j <threads>`` parameter to specify "
+"how many threads will be used for the build."
+msgstr ""
+
+#, fuzzy
+msgid "Example for using 4 threads:"
+msgstr "4つのコアを使用する例:"
+
+msgid "Resulting binary"
+msgstr "結果のバイナリ"
+
+msgid ""
+"The resulting binaries will be placed in the ``bin/`` subdirectory, "
+"generally with this naming convention::"
+msgstr ""
+"結果のバイナリは副ディレクトリの\\ ``bin/``\\ に、通常は以下の命名規則に沿っ"
+"て保存されます:"
+
+msgid "For the previous build attempt, the result would look like this::"
+msgstr "前記のビルドを試みると、結果は次のようになります:"
+
+#, fuzzy
+msgid ""
+"This means that the binary is for Linux *or* \\*BSD (*not* both), is not "
+"optimized, has the whole editor compiled in, and is meant for 64 bits."
+msgstr ""
+"これは、バイナリがX11用であり、最適化されておらず、ツール(エディタ全体)が組み"
+"込まれており、64ビット用であることを意味します。"
+
+#, fuzzy
+msgid "A Windows binary with the same configuration will look like this:"
+msgstr "同じ設定のWindowsバイナリは次のようになります::"
+
+#, fuzzy
+msgid ""
+"Copy that binary to any location you like, as it contains the Project "
+"Manager, editor and all means to execute the game. However, it lacks the "
+"data to export it to the different platforms. For that the export templates "
+"are needed (which can be either downloaded from `godotengine.org <https://"
+"godotengine.org/>`__, or you can build them yourself)."
+msgstr ""
+"このバイナリには、プロジェクト マネージャ、エディタ、そしてゲームの実行に必要"
+"なものすべてが含まれているので、好きな場所にコピーしてください。しかしこのバ"
+"イナリには、他のプラットフォームへエクスポートするためのデータは含まれませ"
+"ん。それには、エクスポート テンプレートが必要になります (\\ `godotengine.org "
+"<https://godotengine.org/>`__ からダウンロードするか、または自身でビルドして"
+"ください)。"
+
+msgid ""
+"Aside from that, there are a few standard options that can be set in all "
+"build targets, and which will be explained below."
+msgstr ""
+"それとは別に、すべてのビルドターゲットで設定できるいくつかの標準オプションが"
+"あり、以下で説明します。"
+
+msgid "Target"
+msgstr "ターゲット"
+
+#, fuzzy
+msgid ""
+"Target controls if the editor is contained and debug flags are used. All "
+"builds are optimized. Each mode means:"
+msgstr ""
+"ターゲットは最適化フラグとデバッグフラグを制御します。各モードの意味は次のと"
+"おりです:"
+
+msgid ""
+"**editor**: Build with editor, optimized, with debugging code (defines: "
+"``TOOLS_ENABLED``, ``DEBUG_ENABLED``, ``-O2``/``/O2``)"
+msgstr ""
+
+msgid ""
+"**template_debug**: Build with C++ debugging symbols (defines: "
+"``DEBUG_ENABLED``, ``-O2``/``/O2``)"
+msgstr ""
+
+msgid "**template_release**: Build without symbols (defines: ``-O3``/``/O2``)"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"The editor is enabled by default in all PC targets (Linux, Windows, macOS), "
+"disabled for everything else. Disabling the editor produces a binary that "
+"can run projects but does not include the editor or the Project Manager."
+msgstr ""
+"ツールは、すべてのPCターゲット(Linux、Windows、macOS)でデフォルトで有効になっ"
+"ています。ツールを無効にすると、プロジェクトを実行できるバイナリが生成されま"
+"すが、編集者やプロジェクト マネージャは含まれません。"
+
+#, fuzzy
+msgid "Development and production aliases"
+msgstr "開発"
+
+msgid ""
+"When creating builds for development (running debugging/:ref:`profiling "
+"<doc_using_cpp_profilers>` tools), you often have different goals compared "
+"to production builds (making binaries as fast and small as possible)."
+msgstr ""
+
+#, fuzzy
+msgid "Godot provides two aliases for this purpose:"
+msgstr "Godot には、一般的なコンテナのセットも用意されています:"
+
+msgid ""
+"``dev_mode=yes`` is an alias for ``verbose=yes warnings=extra werror=yes "
+"tests=yes``. This enables warnings-as-errors behavior (similar to Godot's "
+"continuous integration setup) and also builds :ref:`unit tests "
+"<doc_unit_testing>` so you can run them locally."
+msgstr ""
+
+msgid ""
+"``production=yes`` is an alias for ``use_static_cpp=yes debug_symbols=no "
+"lto=auto``. Statically linking libstdc++ allows for better binary "
+"portability when compiling for Linux. This alias also enables link-time "
+"optimization when compiling for Linux, Web and Windows with MinGW, but keeps "
+"LTO disabled when compiling for macOS, iOS or Windows with MSVC. This is "
+"because LTO on those platforms is very slow to link or has issues with the "
+"generated code."
+msgstr ""
+
+msgid ""
+"You can manually override options from those aliases by specifying them on "
+"the same command line with different values. For example, you can use "
+"``scons production=yes debug_symbols=yes`` to create production-optimized "
+"binaries with debugging symbols included."
+msgstr ""
+
+msgid "Dev build"
+msgstr ""
+
+msgid ""
+"``dev_build`` should **not** be confused with ``dev_mode``, which is an "
+"alias for several development-related options (see above)."
+msgstr ""
+
+msgid ""
+"When doing engine development the ``dev_build`` option can be used together "
+"with ``target`` to enable dev-specific code. ``dev_build`` defines "
+"``DEV_ENABLED``, disables optimization (``-O0``/``/0d``), enables generating "
+"debug symbols, and does not define ``NDEBUG`` (so ``assert()`` works in "
+"thirdparty libraries)."
+msgstr ""
+
+msgid ""
+"This flag appends the ``.dev`` suffix (for development) to the generated "
+"binary name."
+msgstr ""
+
+msgid ""
+"There are additional SCons options to enable *sanitizers*, which are tools "
+"you can enable at compile-time to better debug certain engine issues. See :"
+"ref:`doc_using_sanitizers` for more information."
+msgstr ""
+
+#, fuzzy
+msgid "Debugging symbols"
+msgstr "デバッグ"
+
+msgid ""
+"By default, ``debug_symbols=no`` is used, which means **no** debugging "
+"symbols are included in compiled binaries. Use ``debug_symbols=yes`` to "
+"include debug symbols within compiled binaries, which allows debuggers and "
+"profilers to work correctly. Debugging symbols are also required for Godot's "
+"crash stacktraces to display with references to source code files and lines."
+msgstr ""
+
+msgid ""
+"The downside is that debugging symbols are large files (significantly larger "
+"than the binaries themselves). As a result, official binaries currently do "
+"not include debugging symbols. This means you need to compile Godot yourself "
+"to have access to debugging symbols."
+msgstr ""
+
+msgid ""
+"When using ``debug_symbols=yes``, you can also use "
+"``separate_debug_symbols=yes`` to put debug information in a separate file "
+"with a ``.debug`` suffix. This allows distributing both files independently. "
+"Note that on Windows, when compiling with MSVC, debugging information is "
+"*always* written to a separate ``.pdb`` file regardless of "
+"``separate_debug_symbols``."
+msgstr ""
+
+msgid ""
+"Use the ``strip <path/to/binary>`` command to remove debugging symbols from "
+"a binary you've already compiled."
+msgstr ""
+
+#, fuzzy
+msgid "Optimization level"
+msgstr "最適化"
+
+msgid "Several compiler optimization levels can be chosen from:"
+msgstr ""
+
+msgid ""
+"``optimize=speed_trace`` *(default when targeting non-Web platforms)*: "
+"Favors execution speed at the cost of larger binary size. Optimizations may "
+"sometimes negatively impact debugger usage (stack traces may be less "
+"accurate. If this occurs to you, use ``optimize=debug`` instead."
+msgstr ""
+
+msgid ""
+"``optimize=speed``: Favors even more execution speed, at the cost of even "
+"larger binary size compared to ``optimize=speed_trace``. Even less friendly "
+"to debugging compared to ``optimize=debug``, as this uses the most "
+"aggressive optimizations available."
+msgstr ""
+
+msgid ""
+"``optimize=size`` *(default when targeting the Web platform)*: Favors small "
+"binaries at the cost of slower execution speed."
+msgstr ""
+
+msgid ""
+"``optimize=debug``: Only enables optimizations that do not impact debugging "
+"in any way. This results in faster binaries than ``optimize=none``, but "
+"slower binaries than ``optimize=speed_trace``."
+msgstr ""
+
+msgid ""
+"``optimize=none``: Do not perform any optimization. This provides the "
+"fastest build times, but the slowest execution times."
+msgstr ""
+
+msgid ""
+"``optimize=custom`` *(advanced users only)*: Do not pass optimization "
+"arguments to the C/C++ compilers. You will have to pass arguments manually "
+"using the ``CFLAGS``, ``CCFLAGS`` and ``CXXFLAGS`` SCons options."
+msgstr ""
+
+#, fuzzy
+msgid "Architecture"
+msgstr "アーキテクチャ図"
+
+#, fuzzy
+msgid ""
+"The ``arch`` option is meant to control the CPU or OS version intended to "
+"run the binaries. It is focused mostly on desktop platforms and ignored "
+"everywhere else."
+msgstr ""
+"ビットは、バイナリを実行するCPUまたはOSのバージョンを制御するためのものです。"
+"主にデスクトッププラットフォームに焦点が当てられており、それ以外の場所では無"
+"視されています。"
+
+msgid ""
+"Supported values for the ``arch`` option are **auto**, **x86_32**, "
+"**x86_64**, **arm32**, **arm64**, **rv64**, **ppc32**, **ppc64** and "
+"**wasm32**."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"This flag appends the value of ``arch`` to resulting binaries when "
+"relevant.  The default value ``arch=auto`` detects the architecture that "
+"matches the host platform."
+msgstr ""
+"このフラグは、出力されたバイナリの名前に\\ ``.32``\\ あるいは\\ ``.64``\\ を"
+"対象によって加えます。もし\\ ``bits=default``\\ の場合には、検出されたアーキ"
+"テクチャに適したほうを追加します。"
+
+#, fuzzy
+msgid "Custom modules"
+msgstr "C++のカスタムモジュール"
+
+msgid ""
+"It's possible to compile modules residing outside of Godot's directory tree, "
+"along with the built-in modules."
+msgstr ""
+
+msgid ""
+"A ``custom_modules`` build option can be passed to the command line before "
+"compiling. The option represents a comma-separated list of directory paths "
+"containing a collection of independent C++ modules that can be seen as C++ "
+"packages, just like the built-in ``modules/`` directory."
+msgstr ""
+
+msgid ""
+"For instance, it's possible to provide both relative, absolute, and user "
+"directory paths containing such modules:"
+msgstr ""
+
+msgid ""
+"If there's any custom module with the exact directory name as a built-in "
+"module, the engine will only compile the custom one. This logic can be used "
+"to override built-in module implementations."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_custom_modules_in_cpp`"
+msgstr "\\ :ref:`doc_custom_postprocessing`"
+
+#, fuzzy
+msgid "Cleaning generated files"
+msgstr "エクスポートテンプレートのクリーニング"
+
+msgid ""
+"Sometimes, you may encounter an error due to generated files being present. "
+"You can remove them by using ``scons --clean <options>``, where "
+"``<options>`` is the list of build options you've used to build Godot "
+"previously."
+msgstr ""
+
+msgid ""
+"Alternatively, you can use ``git clean -fixd`` which will clean build "
+"artifacts for all platforms and configurations. Beware, as this will remove "
+"all untracked and ignored files in the repository. Don't run this command if "
+"you have uncommitted work!"
+msgstr ""
+
+msgid "Other build options"
+msgstr "その他のビルドオプション"
+
+msgid ""
+"There are several other build options that you can use to configure the way "
+"Godot should be built (compiler, debug options, etc.) as well as the "
+"features to include/disable."
+msgstr ""
+"Godotのビルド方法 (コンパイラ、デバッグ オプションなど)と、インクルード/無効"
+"化する機能を構成するために使用できるビルドオプションは他にもいくつかありま"
+"す。"
+
+msgid ""
+"Check the output of ``scons --help`` for details about each option for the "
+"version you are willing to compile."
+msgstr ""
+"コンパイルするバージョンの各オプションの詳細については、 ``scons --help`` の"
+"出力を確認してください。"
+
+#, fuzzy
+msgid "Overriding the build options"
+msgstr "その他のビルドオプション"
+
+#, fuzzy
+msgid "Using a file"
+msgstr "スクリプトを使用する"
+
+msgid ""
+"The default ``custom.py`` file can be created at the root of the Godot "
+"Engine source to initialize any SCons build options passed via the command "
+"line:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can also disable some of the builtin modules before compiling, saving "
+"some time it takes to build the engine. See :ref:`doc_optimizing_for_size` "
+"page for more details."
+msgstr ""
+"必要な機能のみを使用してAndroidエクスポートテンプレートをコンパイルすることに"
+"より、サイズをさらに最適化できます。詳細については、\\ :ref:"
+"`doc_optimizing_for_size` を参照してください。"
+
+msgid ""
+"You can use the online `Godot build options generator <https://godot-build-"
+"options-generator.github.io/>`__ to generate a ``custom.py`` file containing "
+"SCons options. You can then save this file and place it at the root of your "
+"Godot source directory."
+msgstr ""
+
+msgid ""
+"Another custom file can be specified explicitly with the ``profile`` command "
+"line option, both overriding the default build configuration:"
+msgstr ""
+
+msgid ""
+"Build options set from the file can be overridden by the command line "
+"options."
+msgstr ""
+
+msgid "It's also possible to override the options conditionally:"
+msgstr "条件に応じてオプションをオーバーライドすることもできます:"
+
+msgid "Using the SCONSFLAGS"
+msgstr ""
+
+msgid ""
+"``SCONSFLAGS`` is an environment variable which is used by the SCons to set "
+"the options automatically without having to supply them via the command line."
+msgstr ""
+
+msgid ""
+"For instance, you may want to force a number of CPU threads with the "
+"aforementioned ``-j`` option for all future builds:"
+msgstr ""
+
+msgid "SCU (single compilation unit) build"
+msgstr ""
+
+msgid ""
+"Regular builds tend to be bottlenecked by including large numbers of headers "
+"in each compilation translation unit. Primarily to speed up development "
+"(rather than for production builds), Godot offers a \"single compilation "
+"unit\" build (aka \"Unity / Jumbo\" build)."
+msgstr ""
+
+msgid ""
+"For the folders accelerated by this option, multiple ``.cpp`` files are "
+"compiled in each translation unit, so headers can be shared between multiple "
+"files, which can dramatically decrease build times."
+msgstr ""
+
+msgid "To make a SCU build, use the ``scu_build=yes`` SCons option."
+msgstr ""
+
+msgid ""
+"When developing a Pull Request using SCU builds, be sure to make a regular "
+"build prior to submitting the PR. This is because SCU builds by nature "
+"include headers from earlier ``.cpp`` files in the translation unit, "
+"therefore won't catch all the includes you will need in a regular build. The "
+"CI will catch these errors but it will usually be faster to catch them on a "
+"local build on your machine."
+msgstr ""
+
+msgid "Export templates"
+msgstr "エクスポートテンプレート"
+
+msgid ""
+"Official export templates are downloaded from the Godot Engine site: "
+"`godotengine.org <https://godotengine.org/>`__. However, you might want to "
+"build them yourself (in case you want newer ones, you are using custom "
+"modules, or simply don't trust your own shadow)."
+msgstr ""
+"公式エクスポートテンプレートは、Godot Engineサイトからダウンロードできます: "
+"`godotengine.org <https://godotengine.org/>`_\\ 。ただし、新しいモジュールが"
+"必要な場合、カスタム モジュールを使用している場合、または単に自身の影すらも信"
+"用しない主義であるなら、自分でビルドすることもできます。"
+
+msgid ""
+"If you download the official export templates package and unzip it, you will "
+"notice that most files are optimized binaries or packages for each platform:"
+msgstr ""
+"公式のエクスポート テンプレートのパッケージをダウンロードして解凍すれば、その"
+"ほとんどのファイルは、最適化されたバイナリかパッケージであることに気づくで"
+"しょう:"
+
+msgid ""
+"To create those yourself, follow the instructions detailed for each platform "
+"in this same tutorial section. Each platform explains how to create its own "
+"template."
+msgstr ""
+"これらを自分で作るには、このチュートリアル セクションにある、それぞれのプラッ"
+"トフォーム用の解説をお読みください。それぞれのプラットフォームにて、エクス"
+"ポート テンプレートの作成法が書かれています。"
+
+msgid ""
+"The ``version.txt`` file should contain the corresponding Godot version "
+"identifier. This file is used to install export templates in a version-"
+"specific directory to avoid conflicts. For instance, if you are building "
+"export templates for Godot 3.1.1, ``version.txt`` should contain ``3.1.1."
+"stable`` on the first line (and nothing else). This version identifier is "
+"based on the ``major``, ``minor``, ``patch`` (if present) and ``status`` "
+"lines of the `version.py file in the Godot Git repository <https://github."
+"com/godotengine/godot/blob/master/version.py>`__."
+msgstr ""
+"\\ ``version.txt`` ファイルには、対応する Godot のバージョン識別子を含める必"
+"要があります。このファイルは、バージョン専用のディレクトリにエクスポート テン"
+"プレートをインストールして、名前の衝突を避けるためにあります。一例として、も"
+"し Godot 3.1.1 用のエクスポート テンプレートをビルドするなら、\\ ``version."
+"txt``\\ の最初の行に\\ ``3.1.1.stable``\\ と書きます (それ以外は不要)。この"
+"バージョン識別子を構成するのは、\\ ``メジャー``\\ 、\\ ``マイナー``\\ 、\\ ``"
+"パッチ(ある場合)``\\ 、そして\\ `Godot の Git レポジトリにある version.py "
+"<https://github.com/godotengine/godot/blob/master/version.py>`_\\ ファイルの"
+"\\ ``status``\\ ラインです。"
+
+msgid ""
+"If you are developing for multiple platforms, macOS is definitely the most "
+"convenient host platform for cross-compilation, since you can cross-compile "
+"for almost every target (except for UWP). Linux and Windows come in second "
+"place, but Linux has the advantage of being the easier platform to set this "
+"up."
+msgstr ""
+"もし複数のプラットフォームに向けて開発するなら、間違いなく macOS が一番実用的"
+"なクロスコンパイルのためのホスト プラットフォームでしょう。ほぼ全てのターゲッ"
+"ト (UWPを除く) にクロスコンパイルできます。Linux と Windows がその次に来ます"
+"が、しかし、Linux にはセットアップが容易であるという利点があります。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

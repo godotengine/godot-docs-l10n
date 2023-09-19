@@ -1,0 +1,559 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "TSCN file format"
+msgstr ""
+
+msgid ""
+"The TSCN (text scene) file format represents a single scene tree inside "
+"Godot. Unlike binary SCN files, TSCN files have the advantage of being "
+"mostly human-readable and easy for version control systems to manage."
+msgstr ""
+
+msgid ""
+"The ESCN (exported scene) file format is identical to the TSCN file format, "
+"but is used to indicate to Godot that the file has been exported from "
+"another program and should not be edited by the user from within Godot. "
+"Unlike SCN and TSCN files, during import, ESCN files are compiled to binary "
+"SCN files stored inside the ``.godot/imported/`` folder. This reduces the "
+"data size and speeds up loading, as binary formats are faster to load "
+"compared to text-based formats."
+msgstr ""
+
+msgid ""
+"To make files more compact, properties equal to the default value are not "
+"stored in scene/resource files. It is possible to write them manually, but "
+"they will be discarded when saving the file."
+msgstr ""
+
+msgid ""
+"For those looking for a complete description, the parsing is handled in the "
+"file `resource_format_text.cpp <https://github.com/godotengine/godot/blob/"
+"master/scene/resources/resource_format_text.cpp>`_ in the "
+"``ResourceFormatLoaderText`` class."
+msgstr ""
+
+msgid ""
+"The scene and resource file formats have changed significantly in Godot 4, "
+"with the introduction of string-based UIDs to replace incremental integer "
+"IDs."
+msgstr ""
+
+msgid ""
+"Mesh, skeleton and animation data is also stored differently compared to "
+"Godot 3. You can read about some of the changes in this article: `Animation "
+"data rework for 4.0 <https://godotengine.org/article/animation-data-"
+"redesign-40/>`__"
+msgstr ""
+
+msgid ""
+"Scenes and resources saved with Godot 4.x contain ``format=3`` in their "
+"header, whereas Godot 3.x uses ``format=2`` instead."
+msgstr ""
+
+msgid "File structure"
+msgstr "Struktura souborů"
+
+msgid "There are five main sections inside the TSCN file:"
+msgstr ""
+
+#, fuzzy
+msgid "File descriptor"
+msgstr "Skript filtru"
+
+msgid "External resources"
+msgstr ""
+
+msgid "Internal resources"
+msgstr ""
+
+msgid "Nodes"
+msgstr "Uzly"
+
+msgid "Connections"
+msgstr ""
+
+msgid ""
+"The file descriptor looks like ``[gd_scene load_steps=4 format=3 uid=\"uid://"
+"cecaux1sm7mo0\"]`` and should be the first entry in the file. The "
+"``load_steps`` parameter is equal to the total amount of resources (internal "
+"and external) plus one (for the file itself). If the file has no resources, "
+"``load_steps`` is omitted. The engine will still load the file correctly if "
+"``load_steps`` is incorrect, but this will affect loading bars and any other "
+"piece of code relying on that value."
+msgstr ""
+
+msgid ""
+"``uid`` is an unique string-based identifier representing the scene. This is "
+"used by the engine to track files that are moved around, even while the "
+"editor is closed. Scripts can also load UID-based resources using the "
+"``uid://`` path prefix to avoid relying on filesystem paths. This makes it "
+"possible to move around a file in the project, but still be able to load it "
+"in scripts without having to modify the script. Godot does not use external "
+"files to keep track of IDs, which means no central metadata storage location "
+"is required within the project. See `this pull request <https://github.com/"
+"godotengine/godot/pull/50786>`__ for detailed information."
+msgstr ""
+
+msgid ""
+"These sections should appear in order, but it can be hard to distinguish "
+"them. The only difference between them is the first element in the heading "
+"for all of the items in the section. For example, the heading of all "
+"external resources should start with ``[ext_resource ...]``."
+msgstr ""
+
+msgid ""
+"A TSCN file may contain single-line comments starting with a semicolon (``;"
+"``). However, comments will be discarded when saving the file using the "
+"Godot editor. Whitespace within a TSCN file is not significant (except "
+"within strings), but extraneous whitespace will be discarded when saving the "
+"file."
+msgstr ""
+
+msgid "Entries inside the file"
+msgstr ""
+
+msgid ""
+"A heading looks like ``[<resource_type> key1=value1 key2=value2 "
+"key3=value3 ...]`` where resource_type is one of:"
+msgstr ""
+
+msgid "``ext_resource``"
+msgstr ""
+
+msgid "``sub_resource``"
+msgstr ""
+
+msgid "``node``"
+msgstr ""
+
+msgid "``connection``"
+msgstr "``připojení``"
+
+msgid ""
+"Below every heading comes zero or more ``key = value`` pairs. The values can "
+"be complex datatypes such as Arrays, Transforms, Colors, and so on. For "
+"example, a Node3D looks like:"
+msgstr ""
+
+msgid "The scene tree"
+msgstr "Stromová struktura scén"
+
+msgid ""
+"The scene tree is made up of… nodes! The heading of each node consists of "
+"its name, parent and (most of the time) a type. For example: ``[node "
+"name=\"PlayerCamera\" type=\"Camera\" parent=\"Player/Head\"]``"
+msgstr ""
+
+msgid "Other valid keywords include:"
+msgstr ""
+
+msgid "``instance``"
+msgstr ""
+
+msgid "``instance_placeholder``"
+msgstr ""
+
+msgid "``owner``"
+msgstr ""
+
+msgid ""
+"``index`` (sets the order of appearance in the tree; if absent, inherited "
+"nodes will take precedence over plain ones)"
+msgstr ""
+
+msgid "``groups``"
+msgstr "``skupiny``"
+
+msgid ""
+"The first node in the file, which is also the scene root, must **not** have "
+"a ``parent=\"Path/To/Node\"`` entry in its heading. All scene files should "
+"have exactly *one* scene root. If it doesn't, Godot will fail to import the "
+"file. The parent path of other nodes should be absolute, but shouldn't "
+"contain the scene root's name. If the node is a direct child of the scene "
+"root, the path should be ``\".\"``. Here is an example scene tree (but "
+"without any node content):"
+msgstr ""
+
+msgid ""
+"To make the file structure easier to grasp, you can saving a file with any "
+"given node or resource then inspect it yourself in an external editor. You "
+"can also make incremental changes in the Godot editor, and keep an external "
+"text editor open on the ``.tscn`` or ``.tres`` file with auto-reload enabled "
+"to see what changes."
+msgstr ""
+
+msgid ""
+"Here is an example of a scene containing a RigidBody3D-based ball with "
+"collision, visuals (mesh + light) and a camera parented to the RigidBody3D:"
+msgstr ""
+
+msgid "NodePath"
+msgstr ""
+
+msgid ""
+"A tree structure is not enough to represent the whole scene. Godot uses a "
+"``NodePath(Path/To/Node)`` structure to refer to another node or attribute "
+"of the node anywhere in the scene tree. Paths are relative to the current "
+"node, with ``NodePath(\".\")`` pointing to the current node and "
+"``NodePath(\"\")`` pointing to no node at all."
+msgstr ""
+
+msgid ""
+"For instance, MeshInstance3D uses ``NodePath()`` to point to its skeleton. "
+"Likewise, Animation tracks use ``NodePath()`` to point to node properties to "
+"animate."
+msgstr ""
+
+msgid ""
+"NodePath can also point to a property using a ``:property_name`` suffix, and "
+"even point to a specific component for vector, transform and color types. "
+"This is used by Animation resources to point to specific properties to "
+"animate. For example, ``NodePath(\"MeshInstance3D:scale.x\")`` points to the "
+"``x`` component of the ``scale`` Vector3 property in MeshInstance3D."
+msgstr ""
+
+msgid ""
+"For example, the ``skeleton`` property in the MeshInstance3D node called "
+"``mesh`` points to its parent, ``Armature01``:"
+msgstr ""
+
+#, fuzzy
+msgid "Skeleton3D"
+msgstr "Kostra"
+
+msgid ""
+"The :ref:`class_Skeleton3D` node inherits the Node3D node, but may alsohave "
+"a list of bones described in key-value pairs in the format ``bones/<id>/"
+"<attribute> = value``. The bone attributes consist of:"
+msgstr ""
+
+msgid "``position``: Vector3"
+msgstr ""
+
+#, fuzzy
+msgid "``rotation``: Quaternion"
+msgstr "``Rotace``"
+
+msgid "``scale``: Vector3"
+msgstr ""
+
+msgid ""
+"These attributes are all optional. For instance, a bone may only define "
+"``position`` or ``rotation`` without defining the other properties."
+msgstr ""
+
+msgid "Here's an example of a skeleton node with two bones:"
+msgstr ""
+
+#, fuzzy
+msgid "BoneAttachment3D"
+msgstr "Upevnění kostí"
+
+msgid ""
+"The :ref:`class_BoneAttachment3D` node is an intermediate node to describe "
+"some node being parented to a single bone in a Skeleton node. The "
+"BoneAttachment has a ``bone_name = \"name of bone\"`` property, as well as a "
+"property for the matching bone index."
+msgstr ""
+
+msgid ""
+"An example of a :ref:`class_Marker3D` node parented to a bone in Skeleton:"
+msgstr ""
+
+msgid "AnimationPlayer"
+msgstr "AnimationPlayer"
+
+msgid ""
+"The :ref:`class_AnimationPlayer` node works with one or more animation "
+"libraries stored in :ref:`class_AnimationLibrary` resources. An animation "
+"library is a collection of individual :ref:`class_Animation` resources, "
+"whose structure is documented :ref:`here <doc_tscn_animation>`."
+msgstr ""
+
+msgid ""
+"This split between animations themselves and animation libraries was done in "
+"Godot 4, so that animations can be imported separately from 3D meshes, which "
+"is a common workflow in 3D animation software. See the `original pull "
+"request <https://github.com/godotengine/godot/pull/59980>`__ for details."
+msgstr ""
+
+msgid ""
+"If the library name is empty, then it acts acts the unique source of "
+"animations for this AnimationPlayer. This allows using ``<animation_name>`` "
+"directly to play animations from script. If you name the library, then you "
+"must play it as ``<library_name>/<animation_name>``. This ensures backwards "
+"compatibility and keeps the existing workflow if you don't want to use "
+"multiple animation libraries."
+msgstr ""
+
+msgid "Resources"
+msgstr "Zdroje"
+
+msgid ""
+"Resources are components that make up the nodes. For example, a "
+"MeshInstance3D node will have an accompanying ArrayMesh resource. The "
+"ArrayMesh resource may be either internal or external to the TSCN file."
+msgstr ""
+
+msgid ""
+"References to the resources are handled by unique string-based IDs in the "
+"resource's heading. This is different from the ``uid`` property, which each "
+"external resource also has (but subresources don't)."
+msgstr ""
+
+msgid ""
+"External resources and internal resources are referred to with "
+"``ExtResource(\"id\")`` and ``SubResource(\"id\")``, respectively. Because "
+"there have different methods to refer to internal and external resources, "
+"you can have the same ID for both an internal and external resource."
+msgstr ""
+
+msgid ""
+"For example, to refer to the resource ``[ext_resource type=\"Material\" "
+"uid=\"uid://c4cp0al3ljsjv\" path=\"res://material.tres\" id=\"1_7bt6s\"]``, "
+"you would use ``ExtResource(\"1_7bt6s\")``."
+msgstr ""
+
+msgid ""
+"External resources are links to resources not contained within the TSCN file "
+"itself. An external resource consists of a path, a type, an UID (used to map "
+"its filesystem location to an unique identifier) and an ID (used to refer to "
+"the resource in the scene file)."
+msgstr ""
+
+msgid ""
+"Godot always generates absolute paths relative to the resource directory and "
+"thus prefixed with ``res://``, but paths relative to the TSCN file's "
+"location are also valid."
+msgstr ""
+
+msgid "Some example external resources are:"
+msgstr ""
+
+msgid ""
+"Like TSCN files, a TRES file may contain single-line comments starting with "
+"a semicolon (``;``). However, comments will be discarded when saving the "
+"resource using the Godot editor. Whitespace within a TRES file is not "
+"significant (except within strings), but extraneous whitespace will be "
+"discarded when saving the file."
+msgstr ""
+
+msgid ""
+"A TSCN file can contain meshes, materials and other data. These are "
+"contained in the *internal resources* section of the file. The heading for "
+"an internal resource looks similar to those of external resources, except "
+"that it doesn't have a path. Internal resources also have ``key=value`` "
+"pairs under each heading. For example, a capsule collision shape looks like:"
+msgstr ""
+
+msgid ""
+"Some internal resources contain links to other internal resources (such as a "
+"mesh having a material). In this case, the referring resource must appear "
+"*before* the reference to it. This means that order matters in the file's "
+"internal resources section."
+msgstr ""
+
+msgid "ArrayMesh"
+msgstr ""
+
+msgid ""
+"An ArrayMesh consists of several surfaces contained in the ``_surfaces`` "
+"array (notice the leading underscore). Each surface's data is stored in a "
+"dictionary with the following keys:"
+msgstr ""
+
+msgid ""
+"``aabb``: The computed axis-aligned bounding box for visibility. ``Mesh."
+"PrimitiveType`` Godot enum. ``0`` = points, ``1`` = lines, ``2`` = line "
+"strip, ``3`` = triangles (most common), ``4`` = triangle strip."
+msgstr ""
+
+msgid ""
+"``attribute_data``: Vertex attribute data, such as normals, tangents, vertex "
+"colors, UV1, UV2 and custom vertex data."
+msgstr ""
+
+msgid ""
+"``bone_aabbs``: The axis-aligned bounding box of each bone for visibility."
+msgstr ""
+
+msgid "``format``: The surface's buffer format."
+msgstr ""
+
+msgid ""
+"``index_count``: The number of indices in the surface. This must match "
+"``index_data``'s size."
+msgstr ""
+
+msgid ""
+"``index_data``: The index data, which determines which vertices from "
+"``vertex_data`` are drawn."
+msgstr ""
+
+msgid ""
+"``lods``: Level of detail variations, stored as an array. Each LOD level "
+"represents two values in the array. The first value is the percentage of "
+"screen space the LOD level is most suited for (edge length); the second "
+"value is the list of indices that should be drawn for the given LOD level."
+msgstr ""
+
+msgid "``material``: The material used when drawing the surface."
+msgstr ""
+
+msgid ""
+"``name``: The surface's name. This can be used in scripts and is imported "
+"from 3D DCCs."
+msgstr ""
+
+msgid "``primitive``: The surface's primitive type, matching the"
+msgstr ""
+
+msgid "``skin_data``: Bone weight data."
+msgstr ""
+
+msgid ""
+"``vertex_count``: Number of vertices in the surface. This must match "
+"``vertex_data``'s size."
+msgstr ""
+
+msgid "``vertex_data``: The vertex position data."
+msgstr ""
+
+msgid ""
+"Here's an example of an ArrayMesh saved to its own ``.tres`` file. Some "
+"fields were shortened with ``...`` for brevity:"
+msgstr ""
+
+msgid "Animation"
+msgstr "Animace"
+
+#, fuzzy
+msgid "Each animation has the following properties:"
+msgstr "To znamená, že můžeme použít následující názvy portálů:"
+
+msgid ""
+"``length``: The animation's length in seconds. Note that keyframes may be "
+"placed outside the ``[0; length]`` interval, but they may have no effect "
+"depending on the interpolation mode chosen."
+msgstr ""
+
+msgid ""
+"``loop_mode``: ``0`` = no looping, ``1`` = wrap-around looping, ``2`` = "
+"clamped looping."
+msgstr ""
+
+msgid ""
+"``step``: The step size to use when editing this animation in the editor. "
+"This is only used in the editor; it doesn't affect animation playback in any "
+"way."
+msgstr ""
+
+msgid ""
+"Each track is described by a list of key-value pairs in the format ``tracks/"
+"<id>/<attribute>``. Each track includes:"
+msgstr ""
+
+msgid ""
+"``type``: The track's type. This defines what kind of properties may be "
+"animated by this track, and how it'll be exposed to the user in the editor. "
+"Valid types are ``value`` (generic property track), ``position_3d``, "
+"``rotation_3d``, ``scale_3d``, ``blend_shape`` (optimized 3D animation "
+"tracks), ``method`` (method call tracks), ``bezier`` (Bezier curve tracks), "
+"``audio`` (audio playback tracks), ``animation`` (tracks that play other "
+"animations)."
+msgstr ""
+
+msgid ""
+"``imported``: ``true`` if the track was created from an imported 3D scene, "
+"``false`` if it was manually created by the user in the Godot editor or "
+"using a script."
+msgstr ""
+
+msgid ""
+"``enabled``: ``true`` if the track is effective, ``false`` if it was "
+"disabled in the editor."
+msgstr ""
+
+msgid ""
+"``path``: Path to the node property that will be affected by the track. The "
+"property is written after the node path with a ``:`` separator."
+msgstr ""
+
+msgid ""
+"``interp``: The interpolation mode to use. ``0`` = nearest, ``1`` = linear, "
+"``2`` = cubic, ``3`` = linear angle, ``4`` = cubic angle."
+msgstr ""
+
+msgid ""
+"``loop_wrap``: ``true`` if the track is designed to wrap around when the "
+"animation is looping, ``false`` if the track clamps to the first/last "
+"keyframes."
+msgstr ""
+
+msgid ""
+"``keys``: The animation track's values. This attribute's structure depends "
+"on the ``type``."
+msgstr ""
+
+msgid ""
+"Here is a scene containing an AnimationPlayer that scales down a cube over "
+"time using a generic property track. The AnimationLibrary workflow was not "
+"used, so the animation library has an empty name (but the animation is still "
+"given a ``scale_down`` name). Note that the ``RESET`` track was not created "
+"in this AnimationPlayer for brevity:"
+msgstr ""
+
+msgid ""
+"For generic property ``value`` tracks, ``keys`` is a dictionary containing 3 "
+"arrays with positions in ``times`` (PackedFloat32Array), easing values in "
+"``transitions`` (PackedFloat32Array) and values in ``values`` (Array). There "
+"is an additional ``update`` property, which is an integer with the values "
+"``0`` = continuous, ``1`` = discrete, ``2`` = capture."
+msgstr ""
+
+msgid ""
+"Here is a second Animation resource that makes use of the 3D Position and 3D "
+"Rotation tracks. These tracks (in addition to the 3D Scale track) replace "
+"Transform tracks from Godot 3. They are optimized for fast playback and can "
+"optionally be compressed."
+msgstr ""
+
+msgid ""
+"The downside of these optimized track types is that they can't use custom "
+"easing values. Instead, all keyframes use linear interpolation. That said, "
+"you can still opt for using nearest or cubic interpolation for all keyframes "
+"in a given track by changing the track's interpolation mode."
+msgstr ""
+
+msgid ""
+"For 3D position, rotation and scale tracks, ``keys`` is a PackedFloat32Array "
+"with all values stored in a sequence."
+msgstr ""
+
+msgid ""
+"In the visual guide below, ``T`` is the keyframe's time in seconds since the "
+"start of the animation, ``E`` is the keyframe's transition (currently always "
+"``1``). For 3D position and scale tracks, ``X``, ``Y``, ``Z`` are the "
+"Vector3's coordinates. For 3D rotation tracks, ``X``, ``Y``, ``Z`` and ``W`` "
+"are the Quaternion's coordinates."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stav překladu"

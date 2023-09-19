@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,7 @@ msgid ""
 "Since the Godot shader language is close to C-style languages and GLSL, this "
 "guide is inspired by Godot's own GLSL formatting. You can view an example of "
 "a GLSL file in Godot's source code `here <https://github.com/godotengine/"
-"godot/blob/master/drivers/gles2/shaders/copy.glsl>`__."
+"godot/blob/master/drivers/gles3/shaders/copy.glsl>`__."
 msgstr ""
 
 msgid ""
@@ -256,6 +256,22 @@ msgid ""
 msgstr ""
 "상수\\_표기법(CONSTANT\\_CASE)으로 상수를 작성하세요. 다시 말해, 모든 단어는 "
 "대문자로 하고 띄어쓰기 대신 밑줄 (\\_)을 사용하세요:"
+
+#, fuzzy
+msgid "Preprocessor directives"
+msgstr "전처리기 지시문"
+
+msgid ""
+":ref:`doc_shader_preprocessor` directives should be written in "
+"CONSTANT__CASE. Directives should be written without any indentation before "
+"them, even if nested within a function."
+msgstr ""
+
+msgid ""
+"To preserve the natural flow of indentation when shader errors are printed "
+"to the console, extra indentation should **not** be added within ``#if``, "
+"``#ifdef`` or ``#ifndef`` blocks:"
+msgstr ""
 
 msgid "Code order"
 msgstr "코드 순서"

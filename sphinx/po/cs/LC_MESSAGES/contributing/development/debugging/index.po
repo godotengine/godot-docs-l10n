@@ -1,0 +1,61 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Debugging and profiling"
+msgstr "Ladění a profilování"
+
+msgid ""
+"This section contains pages that provide guidance if you're looking at the "
+"engine code trying to find an underlying issue or an optimization "
+"possibility."
+msgstr ""
+
+#, fuzzy
+msgid "Debugging the editor"
+msgstr "Ladění editoru Godot"
+
+msgid ""
+"When working on the Godot editor keep in mind that by default the executable "
+"will start in the Project Manager mode. Opening a project from the Project "
+"Manager spawns a new process, which stops the debugging session. To avoid "
+"that you should launch directly into the project using ``-e`` and ``--path`` "
+"launch options."
+msgstr ""
+
+msgid "For example, using ``gdb`` directly, you may do this:"
+msgstr ""
+
+msgid ""
+"You can also run the editor directly from your project's folder. In that "
+"case, only the ``-e`` option is required."
+msgstr ""
+
+msgid ""
+"You can learn more about these launch options and other command line "
+"arguments in the :ref:`command line tutorial <doc_command_line_tutorial>`."
+msgstr ""
+
+msgid ""
+"If you're using a code editor or an IDE to debug Godot, check out our :ref:"
+"`configuration guides <doc_configuring_an_ide>`, which cover the setup "
+"process for building and debugging with your particular editor."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stav překladu"

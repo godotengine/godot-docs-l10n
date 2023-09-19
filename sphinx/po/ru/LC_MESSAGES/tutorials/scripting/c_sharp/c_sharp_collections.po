@@ -1,0 +1,664 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "C# collections"
+msgstr "Соединения"
+
+msgid ""
+"The .NET base class library contains multiple collection types that can be "
+"used to store and manipulate data. Godot also provide some collection types "
+"that are tightly integrated with the rest of the engine."
+msgstr ""
+
+#, fuzzy
+msgid "Choose a collection"
+msgstr "Порты и соединения"
+
+msgid ""
+"The main difference between the `.NET collections <https://learn.microsoft."
+"com/en-us/dotnet/standard/collections/>`_ and the Godot collections is that "
+"the .NET collections are implemented in C# while the Godot collections are "
+"implemented in C++ and the Godot C# API is a wrapper over it, this is an "
+"important distinction since it means every operation on a Godot collection "
+"requires marshaling which can be expensive especially inside a loop."
+msgstr ""
+
+msgid ""
+"Due to the performance implications, using Godot collections is only "
+"recommended when absolutely necessary (such as interacting with the Godot "
+"API). Godot only understands its own collection types, so it's required to "
+"use them when talking to the engine."
+msgstr ""
+
+msgid ""
+"If you have a collection of elements that don't need to be passed to a Godot "
+"API, using a .NET collection would be more performant."
+msgstr ""
+
+msgid ""
+"It's also possible to convert between .NET collections and Godot "
+"collections. The Godot collections contain constructors from generic .NET "
+"collection interfaces that copy their elements, and the Godot collections "
+"can be used with the `LINQ <https://learn.microsoft.com/en-us/dotnet/"
+"standard/linq>`_ ``ToList``, ``ToArray`` and ``ToDictionary`` methods. But "
+"keep in mind this conversion requires marshaling every element in the "
+"collection and copies it to a new collection so it can be expensive."
+msgstr ""
+
+msgid ""
+"Despite this, the Godot collections are optimized to try and avoid "
+"unnecessary marshaling, so methods like ``Sort`` or ``Reverse`` are "
+"implemented with a single interop call and don't need to marshal every "
+"element. Keep an eye out for generic APIs that take collection interfaces "
+"like `LINQ <https://learn.microsoft.com/en-us/dotnet/standard/linq>`_ "
+"because every method requires iterating the collection and, therefore, "
+"marshaling every element. Prefer using the instance methods of the Godot "
+"collections when possible."
+msgstr ""
+
+msgid ""
+"To choose which collection type to use for each situation, consider the "
+"following questions:"
+msgstr ""
+
+msgid ""
+"Does your collection need to interact with the Godot engine? (e.g.: the type "
+"of an exported property, calling a Godot method)."
+msgstr ""
+
+msgid ""
+"If yes, since Godot only supports :ref:`Variant-compatible "
+"<doc_c_sharp_variant>` types, use a Godot collection."
+msgstr ""
+
+msgid ""
+"If not, consider `choosing an appropriate .NET collection <https://learn."
+"microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-"
+"class>`_."
+msgstr ""
+
+msgid ""
+"Do you need a Godot collection that represents a list or sequential set of "
+"data?"
+msgstr ""
+
+msgid ""
+"Godot :ref:`arrays <doc_c_sharp_collections_array>` are similar to the C# "
+"collection ``List<T>``."
+msgstr ""
+
+msgid ""
+"Godot :ref:`packed arrays <doc_c_sharp_collections_packedarray>` are more "
+"memory-efficient arrays, in C# use one of the supported ``System.Array`` "
+"types."
+msgstr ""
+
+msgid ""
+"Do you need a Godot collection that maps a set of keys to a set of values?"
+msgstr ""
+
+msgid ""
+"Godot :ref:`dictionaries <doc_c_sharp_collections_dictionary>` store pairs "
+"of keys and values and allow easy access to the values by their associated "
+"key."
+msgstr ""
+
+#, fuzzy
+msgid "Godot collections"
+msgstr "Уведомления Godot"
+
+#, fuzzy
+msgid "PackedArray"
+msgstr "Массив"
+
+msgid ""
+"Godot packed arrays are implemented as an array of a specific type, allowing "
+"it to be more tightly packed as each element has the size of the specific "
+"type, not ``Variant``."
+msgstr ""
+
+msgid "In C#, packed arrays are replaced by ``System.Array``:"
+msgstr ""
+
+msgid "GDScript"
+msgstr "GDScript код"
+
+msgid "C#"
+msgstr "C#"
+
+#, fuzzy
+msgid "``PackedInt32Array``"
+msgstr "``PoolIntArray``"
+
+msgid "``int[]``"
+msgstr "``int[]``"
+
+#, fuzzy
+msgid "``PackedInt64Array``"
+msgstr "``PoolIntArray``"
+
+#, fuzzy
+msgid "``long[]``"
+msgstr "``float[]``"
+
+#, fuzzy
+msgid "``PackedByteArray``"
+msgstr "``PoolByteArray``"
+
+msgid "``byte[]``"
+msgstr "``byte[]``"
+
+#, fuzzy
+msgid "``PackedFloat32Array``"
+msgstr "``PoolFloatArray``"
+
+msgid "``float[]``"
+msgstr "``float[]``"
+
+#, fuzzy
+msgid "``PackedFloat64Array``"
+msgstr "``PoolFloatArray``"
+
+#, fuzzy
+msgid "``double[]``"
+msgstr "``byte[]``"
+
+#, fuzzy
+msgid "``PackedStringArray``"
+msgstr "``PoolStringArray``"
+
+#, fuzzy
+msgid "``string[]``"
+msgstr "``String[]``"
+
+#, fuzzy
+msgid "``PackedColorArray``"
+msgstr "``PoolColorArray``"
+
+msgid "``Color[]``"
+msgstr "``Color[]``"
+
+#, fuzzy
+msgid "``PackedVector2Array``"
+msgstr "``PoolVector2Array``"
+
+msgid "``Vector2[]``"
+msgstr "``Vector2[]``"
+
+#, fuzzy
+msgid "``PackedVector3Array``"
+msgstr "``PoolVector3Array``"
+
+msgid "``Vector3[]``"
+msgstr "``Vector3[]``"
+
+msgid ""
+"Other C# arrays are not supported by the Godot C# API since a packed array "
+"equivalent does not exist. See :ref:`Variant <doc_c_sharp_variant>` for a "
+"list of all the compatible types."
+msgstr ""
+
+msgid "Array"
+msgstr "Массив"
+
+msgid ""
+"Godot arrays are implemented as an array of ``Variant`` and can contain "
+"several elements of any type. In C#, the equivalent type is ``Godot."
+"Collections.Array``."
+msgstr ""
+
+msgid ""
+"The generic ``Godot.Collections.Array<T>`` type allows restricting the "
+"element type to a :ref:`Variant-compatible <doc_c_sharp_variant>` type."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"An untyped ``Godot.Collections.Array`` can be converted to a typed array "
+"using the ``Godot.Collections.Array<T>(Godot.Collections.Array)`` "
+"constructor."
+msgstr ""
+"``Godot.Collections.Array <T> `` является типобезопасной оболочкой для "
+"``Godot.Collections.Array``. Используйте конструктор ``Godot.Collections."
+"Array <T> (Godot.Collections.Array)`` для его создания."
+
+msgid ""
+"Despite the name, Godot arrays are more similar to the C# collection "
+"``List<T>`` than ``System.Array``. Their size is not fixed and can grow or "
+"shrink as elements are added/removed from the collection."
+msgstr ""
+
+msgid "List of Godot's Array methods and their equivalent in C#:"
+msgstr ""
+
+#, fuzzy
+msgid "all"
+msgstr "Вызов"
+
+msgid "`System.Linq.Enumerable.All`_"
+msgstr ""
+
+#, fuzzy
+msgid "any"
+msgstr "и"
+
+msgid "`System.Linq.Enumerable.Any`_"
+msgstr ""
+
+#, fuzzy
+msgid "append"
+msgstr "*Приложение*"
+
+#, fuzzy
+msgid "Add"
+msgstr "Объявления"
+
+#, fuzzy
+msgid "append_array"
+msgstr "Массив касательных"
+
+msgid "AddRange"
+msgstr ""
+
+#, fuzzy
+msgid "assign"
+msgstr "signаl"
+
+msgid "Clear and AddRange"
+msgstr ""
+
+#, fuzzy
+msgid "back"
+msgstr "Недостатки"
+
+msgid ""
+"``Array[^1]`` or `System.Linq.Enumerable.Last`_ or `System.Linq.Enumerable."
+"LastOrDefault`_"
+msgstr ""
+
+#, fuzzy
+msgid "bsearch"
+msgstr "Поиск"
+
+#, fuzzy
+msgid "BinarySearch"
+msgstr "Бинарный поиск"
+
+msgid "bsearch_custom"
+msgstr ""
+
+#, fuzzy
+msgid "N/A"
+msgstr "NAN"
+
+msgid "clear"
+msgstr "чисто"
+
+#, fuzzy
+msgid "Clear"
+msgstr "чисто"
+
+#, fuzzy
+msgid "count"
+msgstr "Количество"
+
+msgid "`System.Linq.Enumerable.Count`_"
+msgstr ""
+
+#, fuzzy
+msgid "duplicate"
+msgstr "Дублировать"
+
+msgid "Duplicate"
+msgstr "Дублировать"
+
+#, fuzzy
+msgid "erase"
+msgstr "Камеры"
+
+msgid "Remove"
+msgstr ""
+
+msgid "fill"
+msgstr ""
+
+msgid "Fill"
+msgstr ""
+
+#, fuzzy
+msgid "filter"
+msgstr "Фильтр"
+
+msgid "Use `System.Linq.Enumerable.Where`_"
+msgstr ""
+
+msgid "find"
+msgstr ""
+
+#, fuzzy
+msgid "IndexOf"
+msgstr "Индекс"
+
+msgid "front"
+msgstr ""
+
+msgid ""
+"``Array[0]`` or `System.Linq.Enumerable.First`_ or `System.Linq.Enumerable."
+"FirstOrDefault`_"
+msgstr ""
+
+#, fuzzy
+msgid "get_typed_builtin"
+msgstr "Векторные встроенные типы"
+
+#, fuzzy
+msgid "get_typed_class_name"
+msgstr "clаss_name"
+
+msgid "get_typed_script"
+msgstr ""
+
+#, fuzzy
+msgid "has"
+msgstr "as"
+
+#, fuzzy
+msgid "Contains"
+msgstr "Контейнеры"
+
+msgid "hash"
+msgstr ""
+
+msgid "GD.Hash"
+msgstr ""
+
+#, fuzzy
+msgid "insert"
+msgstr "assеrt"
+
+#, fuzzy
+msgid "Insert"
+msgstr "Вставить ключ"
+
+msgid "is_empty"
+msgstr ""
+
+msgid "Use ``Count == 0``"
+msgstr ""
+
+msgid "is_read_only"
+msgstr ""
+
+msgid "IsReadOnly"
+msgstr ""
+
+msgid "is_same_typed"
+msgstr ""
+
+#, fuzzy
+msgid "is_typed"
+msgstr "тип"
+
+msgid "make_read_only"
+msgstr ""
+
+msgid "MakeReadOnly"
+msgstr ""
+
+#, fuzzy
+msgid "map"
+msgstr "pаp"
+
+msgid "`System.Linq.Enumerable.Select`_"
+msgstr ""
+
+msgid "max"
+msgstr "max"
+
+#, fuzzy
+msgid "Max"
+msgstr "max"
+
+#, fuzzy
+msgid "min"
+msgstr "Сочетание"
+
+#, fuzzy
+msgid "Min"
+msgstr "Главная"
+
+msgid "pick_random"
+msgstr ""
+
+msgid "PickRandom (Consider using `System.Random`_)"
+msgstr ""
+
+msgid "pop_at"
+msgstr ""
+
+msgid "``Array[i]`` with ``RemoveAt(i)``"
+msgstr ""
+
+msgid "pop_back"
+msgstr ""
+
+msgid "``Array[^1]`` with ``RemoveAt(Count - 1)``"
+msgstr ""
+
+msgid "pop_front"
+msgstr ""
+
+msgid "``Array[0]`` with ``RemoveAt(0)``"
+msgstr ""
+
+msgid "push_back"
+msgstr ""
+
+msgid "``Insert(Count, item)``"
+msgstr ""
+
+msgid "push_front"
+msgstr ""
+
+msgid "``Insert(0, item)``"
+msgstr ""
+
+msgid "reduce"
+msgstr ""
+
+msgid "`System.Linq.Enumerable.Aggregate`_"
+msgstr ""
+
+#, fuzzy
+msgid "remove_at"
+msgstr "rеmote"
+
+msgid "RemoveAt"
+msgstr ""
+
+msgid "resize"
+msgstr ""
+
+#, fuzzy
+msgid "Resize"
+msgstr "Изменение размера"
+
+#, fuzzy
+msgid "reverse"
+msgstr "Сервера"
+
+#, fuzzy
+msgid "Reverse"
+msgstr "Реверберация"
+
+msgid "rfind"
+msgstr ""
+
+#, fuzzy
+msgid "LastIndexOf"
+msgstr "Индекс"
+
+msgid "shuffle"
+msgstr ""
+
+msgid "Shuffle"
+msgstr ""
+
+msgid "size"
+msgstr ""
+
+#, fuzzy
+msgid "Count"
+msgstr "Количество"
+
+msgid "slice"
+msgstr ""
+
+msgid "Slice"
+msgstr ""
+
+msgid "sort"
+msgstr ""
+
+#, fuzzy
+msgid "Sort"
+msgstr "``Y Sort``"
+
+msgid "sort_custom"
+msgstr ""
+
+msgid "`System.Linq.Enumerable.OrderBy`_"
+msgstr ""
+
+#, fuzzy
+msgid "operator !="
+msgstr "Оператор"
+
+msgid "!RecursiveEqual"
+msgstr ""
+
+#, fuzzy
+msgid "operator +"
+msgstr "Оператор"
+
+#, fuzzy
+msgid "operator <"
+msgstr "Оператор"
+
+#, fuzzy
+msgid "operator <="
+msgstr "Оператор"
+
+#, fuzzy
+msgid "operator =="
+msgstr "Оператор"
+
+msgid "RecursiveEqual"
+msgstr ""
+
+#, fuzzy
+msgid "operator >"
+msgstr "Оператор"
+
+#, fuzzy
+msgid "operator >="
+msgstr "Оператор"
+
+#, fuzzy
+msgid "operator []"
+msgstr "Оператор"
+
+msgid "Array[int] indexer"
+msgstr ""
+
+msgid "Dictionary"
+msgstr "Словарь"
+
+msgid ""
+"Godot dictionaries are implemented as a dictionary with ``Variant`` keys and "
+"values. In C#, the equivalent type is ``Godot.Collections.Dictionary``."
+msgstr ""
+
+msgid ""
+"The generic ``Godot.Collections.Dictionary<TKey, TValue>`` type allows "
+"restricting the key and value types to a :ref:`Variant-compatible "
+"<doc_c_sharp_variant>` type."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"An untyped ``Godot.Collections.Dictionary`` can be converted to a typed "
+"dictionary using the ``Godot.Collections.Dictionary<TKey, TValue>(Godot."
+"Collections.Dictionary)`` constructor."
+msgstr ""
+"``Godot.Collections.Dictionary <T> `` является типобезопасной оболочкой "
+"вокруг ``Godot.Collections.Dictionary``. Используйте конструктор ``Godot."
+"Collections.Dictionary <T> (Godot.Collections.Dictionary)`` для его создания."
+
+msgid ""
+"If you need a dictionary where the key is typed but not the value, use "
+"``Variant`` as the ``TValue`` generic parameter of the typed dictionary."
+msgstr ""
+
+msgid "List of Godot's Dictionary methods and their equivalent in C#:"
+msgstr ""
+
+msgid "find_key"
+msgstr ""
+
+#, fuzzy
+msgid "get"
+msgstr "et"
+
+msgid "Dictionary[Variant] indexer or TryGetValue"
+msgstr ""
+
+#, fuzzy
+msgid "ContainsKey"
+msgstr "Контейнеры"
+
+msgid "has_all"
+msgstr ""
+
+msgid "keys"
+msgstr "ключи"
+
+msgid "Keys"
+msgstr ""
+
+msgid "merge"
+msgstr ""
+
+msgid "Merge"
+msgstr ""
+
+#, fuzzy
+msgid "values"
+msgstr "значение"
+
+#, fuzzy
+msgid "Values"
+msgstr "Значение"
+
+msgid "Dictionary[Variant] indexer, Add or TryGetValue"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Translation status (статус перевода)"

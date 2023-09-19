@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,6 +103,10 @@ msgstr ""
 "作用を安定させるために、可能な限り固定時間間隔(デフォルトでは毎秒60回)で呼び"
 "出されます。この間隔は、プロジェクト設定の Physics -> Common-> Physics Fps で"
 "変更できます。"
+
+#, fuzzy
+msgid "The engine calls this method before every physics step:"
+msgstr "エンジンはフレームを描画するたびに以下のメソッドを呼び出します:"
 
 msgid ""
 "The function ``_process()`` is not synchronized with physics. Its rate "

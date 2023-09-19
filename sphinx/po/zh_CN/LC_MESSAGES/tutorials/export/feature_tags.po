@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -56,6 +56,12 @@ msgstr "其他更多的东西。"
 msgid "Features can be queried at run-time from the singleton API by calling:"
 msgstr "可以在运行时通过调用以下功能从单例 API 查询功能："
 
+msgid ""
+"OS feature tags are used by GDExtension to determine which libraries to "
+"load. For example, a library for ``linux.debug.editor.x86_64`` will be "
+"loaded only on a debug editor build for Linux x86_64."
+msgstr ""
+
 msgid "Default features"
 msgstr "默认功能"
 
@@ -70,59 +76,59 @@ msgstr "**功能标签**"
 msgid "**Description**"
 msgstr "**描述**"
 
-msgid "**Android**"
+#, fuzzy
+msgid "**android**"
 msgstr "**Android**"
 
-msgid "Running on Android"
-msgstr "在 Android 上运行"
+msgid "Running on Android (but not within a Web browser)"
+msgstr ""
 
-msgid "**HTML5**"
-msgstr "**HTML5**"
+msgid "**bsd**"
+msgstr ""
 
-msgid "Running on HTML5"
-msgstr "在 HTML5 上运行"
+msgid "Running on \\*BSD (but not within a Web browser)"
+msgstr ""
 
-msgid "**JavaScript**"
-msgstr "**JavaScript**"
+#, fuzzy
+msgid "**linux**"
+msgstr "**Alpine Linux**"
 
-msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
-msgstr ":ref:`JavaScript 单例 <doc_javascript_eval>`\\ 可用"
+msgid "Running on Linux (but not within a Web browser)"
+msgstr ""
 
-msgid "**OSX**"
-msgstr "**OSX**"
+#, fuzzy
+msgid "**macos**"
+msgstr "**macOS**"
 
-msgid "Running on macOS"
-msgstr "在 macOS 上运行"
+msgid "Running on macOS (but not within a Web browser)"
+msgstr ""
 
-msgid "**iOS**"
-msgstr "**iOS**"
+msgid "**ios**"
+msgstr ""
 
-msgid "Running on iOS"
-msgstr "在 iOS 上运行"
+msgid "Running on iOS (but not within a Web browser)"
+msgstr ""
 
-msgid "**UWP**"
-msgstr "**UWP**"
+msgid "**uwp**"
+msgstr ""
 
-msgid "Running on UWP"
-msgstr "在 UWP 上运行"
+msgid "Running on UWP (but not within a Web browser)"
+msgstr ""
 
-msgid "**Windows**"
+#, fuzzy
+msgid "**windows**"
 msgstr "**Windows**"
 
 msgid "Running on Windows"
 msgstr "在 Windows 上运行"
 
-msgid "**X11**"
-msgstr "**X11**"
+#, fuzzy
+msgid "**linuxbsd**"
+msgstr "**Alpine Linux**"
 
-msgid "Running on X11 (Linux/BSD desktop)"
-msgstr "在 X11 上运行（Linux/BSD 桌面）"
-
-msgid "**Server**"
-msgstr "**Server**"
-
-msgid "Running on the headless server platform"
-msgstr "在无头服务器平台上运行"
+#, fuzzy
+msgid "Running on Linux or \\*BSD"
+msgstr "在 iOS 上运行"
 
 msgid "**debug**"
 msgstr "**debug**"
@@ -142,10 +148,28 @@ msgstr "**editor**"
 msgid "Running on an editor build"
 msgstr "在编辑器构建上运行"
 
-msgid "**standalone**"
-msgstr "**standalone**"
+#, fuzzy
+msgid "**template**"
+msgstr "**发布日期**"
 
-msgid "Running on a non-editor build"
+#, fuzzy
+msgid "Running on a non-editor (export template) build"
+msgstr "在无编辑器构建上运行"
+
+#, fuzzy
+msgid "**double**"
+msgstr "**mobile**"
+
+#, fuzzy
+msgid "Running on a double-precision build"
+msgstr "在无编辑器构建上运行"
+
+#, fuzzy
+msgid "**single**"
+msgstr "**mobile**"
+
+#, fuzzy
+msgid "Running on a single-precision build"
 msgstr "在无编辑器构建上运行"
 
 msgid "**64**"
@@ -166,11 +190,19 @@ msgstr "**x86_64**"
 msgid "Running on a 64-bit x86 build"
 msgstr "在 64 位 x86 架构构建上运行"
 
-msgid "**x86**"
+#, fuzzy
+msgid "**x86_32**"
 msgstr "**x86**"
 
 msgid "Running on a 32-bit x86 build"
 msgstr "在 32 位 x86 架构构建上运行"
+
+msgid "**x86**"
+msgstr "**x86**"
+
+#, fuzzy
+msgid "Running on an x86 build (any bitness)"
+msgstr "在 64 位构建上运行（不限架构）"
 
 msgid "**arm64**"
 msgstr "**arm64**"
@@ -178,11 +210,82 @@ msgstr "**arm64**"
 msgid "Running on a 64-bit ARM build"
 msgstr "在 64 位 ARM 架构构建上运行"
 
-msgid "**arm**"
+#, fuzzy
+msgid "**arm32**"
 msgstr "**arm**"
 
 msgid "Running on a 32-bit ARM build"
 msgstr "在 32 位 ARM 架构构建上运行"
+
+msgid "**arm**"
+msgstr "**arm**"
+
+#, fuzzy
+msgid "Running on an ARM build (any bitness)"
+msgstr "在 64 位构建上运行（不限架构）"
+
+#, fuzzy
+msgid "**rv64**"
+msgstr "**64**"
+
+#, fuzzy
+msgid "Running on a 64-bit RISC-V build"
+msgstr "在 64 位 ARM 架构构建上运行"
+
+#, fuzzy
+msgid "**riscv**"
+msgstr "**右对齐**"
+
+#, fuzzy
+msgid "Running on a RISC-V build (any bitness)"
+msgstr "在 64 位构建上运行（不限架构）"
+
+#, fuzzy
+msgid "**ppc64**"
+msgstr "**64**"
+
+#, fuzzy
+msgid "Running on a 64-bit PowerPC build"
+msgstr "在 64 位 x86 架构构建上运行"
+
+#, fuzzy
+msgid "**ppc32**"
+msgstr "**32**"
+
+#, fuzzy
+msgid "Running on a 32-bit PowerPC build"
+msgstr "在 32 位 x86 架构构建上运行"
+
+#, fuzzy
+msgid "**ppc**"
+msgstr "**pc**"
+
+#, fuzzy
+msgid "Running on a PowerPC build (any bitness)"
+msgstr "在 64 位构建上运行（不限架构）"
+
+#, fuzzy
+msgid "**wasm64**"
+msgstr "**arm64**"
+
+#, fuzzy
+msgid "Running on a 64-bit WebAssembly build (not yet possible)"
+msgstr "在 64 位构建上运行（不限架构）"
+
+#, fuzzy
+msgid "**wasm32**"
+msgstr "**32**"
+
+#, fuzzy
+msgid "Running on a 32-bit WebAssembly build"
+msgstr "在 32 位 ARM 架构构建上运行"
+
+msgid "**wasm**"
+msgstr ""
+
+#, fuzzy
+msgid "Running on a WebAssembly build (any bitness)"
+msgstr "在 64 位构建上运行（不限架构）"
 
 msgid "**mobile**"
 msgstr "**mobile**"
@@ -200,6 +303,46 @@ msgid "**web**"
 msgstr "**web**"
 
 msgid "Host OS is a Web browser"
+msgstr "宿主操作系统是网页浏览器"
+
+#, fuzzy
+msgid "**web_android**"
+msgstr "**Android**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Android"
+msgstr "宿主操作系统是网页浏览器"
+
+#, fuzzy
+msgid "**web_ios**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on iOS"
+msgstr "宿主操作系统是网页浏览器"
+
+#, fuzzy
+msgid "**web_linuxbsd**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Linux or \\*BSD"
+msgstr "宿主操作系统是网页浏览器"
+
+#, fuzzy
+msgid "**web_macos**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on macOS"
+msgstr "宿主操作系统是网页浏览器"
+
+#, fuzzy
+msgid "**web_windows**"
+msgstr "**Windows**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Windows"
 msgstr "宿主操作系统是网页浏览器"
 
 msgid "**etc**"
@@ -220,17 +363,20 @@ msgstr "**s3tc**"
 msgid "Textures using S3TC (DXT/BC) compression are supported"
 msgstr "支持使用 S3TC（DXT/BC）压缩的纹理"
 
-msgid "**pvrtc**"
-msgstr "**pvrtc**"
+#, fuzzy
+msgid "**movie**"
+msgstr "**mobile**"
 
-msgid "Textures using PVRTC compression are supported"
-msgstr "支持使用 PVRTC 压缩的纹理"
+msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
+msgstr ""
 
+#, fuzzy
 msgid ""
-"With the exception of texture compression feature tags, default feature tags "
-"are **immutable**. This means that they will *not* change depending on run-"
-"time conditions. For example, ``OS.has_feature(\"mobile\")`` will return "
-"``false`` when running a project exported to HTML5 on a mobile device."
+"With the exception of texture compression and ``movie`` feature tags, "
+"default feature tags are **immutable**. This means that they will *not* "
+"change depending on run-time conditions. For example, ``OS."
+"has_feature(\"mobile\")`` will return ``false`` when running a project "
+"exported to HTML5 on a mobile device."
 msgstr ""
 "除了纹理压缩特性标签之外，默认的特性标签都是\\ **不可修改**\\ 的。这意味着它"
 "们\\ *不会*\\ 根据运行时的情况变化。例如，在移动设备上运行导出为 HTML5 的项目"
@@ -306,10 +452,11 @@ msgstr "默认情况下, 已有很多覆盖的设置；它们可以在项目设�
 msgid "Customizing the build"
 msgstr "自定义构建"
 
+#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "
-"is loaded and exported in **GDNative**."
+"is loaded and exported in **GDExtension**."
 msgstr ""
 "通过编写自定义 **ExportPlugin**\\ ，功能标签也可以用于自定义构建过程。它们还"
 "用于指定在 **GDNative** 中加载和导出哪个共享库。"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,11 +23,12 @@ msgstr "Экспорты GDScript"
 msgid "Introduction to exports"
 msgstr "Введение в экспорт"
 
+#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
-"editor. Exporting is done by using the ``export`` keyword::"
+"editor. Exporting is done by using the ``@export`` annotation."
 msgstr ""
 "В Godot, члены класса (переменные и т.д.) могут быть экспортированы. Это "
 "означает, что их значение сохраняется вместе с ресурсом (например, :ref:"
@@ -36,9 +37,16 @@ msgstr ""
 "помощью ключевого слова ``export``::"
 
 msgid ""
-"An exported variable must be initialized to a constant expression or have an "
-"export hint in the form of an argument to the ``export`` keyword (see the "
-"*Examples* section below)."
+"In that example the value ``5`` will be saved and visible in the property "
+"editor."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"An exported variable must be initialized to a constant expression or have a "
+"type specifier in the variable. Some of the export annotations have a "
+"specific type and don't need the variable to be typed (see the *Examples* "
+"section below)."
 msgstr ""
 "Экспортируемая переменная должна быть инициализирована в постоянное "
 "выражение (Константу) или иметь подсказку на экспорт в виде аргумента к "
@@ -59,14 +67,162 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
-"syntax varies depending on the language."
+"syntax varies depending on the language. See :ref:`doc_c_sharp_exports` for "
+"information on C# exports."
 msgstr ""
 "Экспорт свойств также можно выполнить на других языках, например C#. "
 "Синтаксис зависит от языка. См . :ref:`doc_c_sharp_exports` для получения "
 "информации об экспорте C#."
 
-msgid "Examples"
-msgstr "Примеры"
+#, fuzzy
+msgid "Basic use"
+msgstr "Основное использование"
+
+msgid ""
+"If the exported value assigns a constant or constant expression, the type "
+"will be inferred and used in the editor."
+msgstr ""
+
+msgid "If there's no default value, you can add a type to the variable."
+msgstr ""
+
+#, fuzzy
+msgid "Resources and nodes can be exported."
+msgstr "ShaderMaterials не может быть экспортирован."
+
+#, fuzzy
+msgid "Grouping Exports"
+msgstr "Свойства группировки"
+
+msgid ""
+"It is possible to group your exported properties inside the Inspector with "
+"the :ref:`@export_group <class_@GDScript_annotation_@export_group>` "
+"annotation. Every exported property after this annotation will be added to "
+"the group. Start a new group or use ``@export_group(\"\")`` to break out."
+msgstr ""
+
+msgid ""
+"The second argument of the annotation can be used to only group properties "
+"with the specified prefix."
+msgstr ""
+
+msgid ""
+"Groups cannot be nested, use :ref:`@export_subgroup "
+"<class_@GDScript_annotation_@export_subgroup>` to create subgroups within a "
+"group."
+msgstr ""
+
+msgid ""
+"You can also change the name of your main category, or create additional "
+"categories in the property list with the :ref:`@export_category "
+"<class_@GDScript_annotation_@export_category>` annotation."
+msgstr ""
+
+msgid ""
+"The list of properties is organized based on the class inheritance and new "
+"categories break that expectation. Use them carefully, especially when "
+"creating projects for public use."
+msgstr ""
+
+#, fuzzy
+msgid "Strings as paths"
+msgstr "Длина строки"
+
+#, fuzzy
+msgid "String as a path to a file."
+msgstr "Использование карт тайлов"
+
+msgid "String as a path to a directory."
+msgstr ""
+
+msgid "String as a path to a file, custom filter provided as hint."
+msgstr ""
+
+msgid ""
+"Using paths in the global filesystem is also possible, but only in scripts "
+"in tool mode."
+msgstr ""
+
+msgid "String as a path to a PNG file in the global filesystem."
+msgstr ""
+
+msgid "String as a path to a directory in the global filesystem."
+msgstr ""
+
+msgid ""
+"The multiline annotation tells the editor to show a large input field for "
+"editing over multiple lines."
+msgstr ""
+
+#, fuzzy
+msgid "Limiting editor input ranges"
+msgstr "Перевод существующих страниц"
+
+msgid "Allow integer values from 0 to 20."
+msgstr ""
+
+msgid "Allow integer values from -10 to 20."
+msgstr ""
+
+msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
+msgstr ""
+
+msgid ""
+"The limits can be only for the slider if you add the hints \"or_greater\" "
+"and/or \"or_less\"."
+msgstr ""
+
+msgid "Floats with easing hint"
+msgstr ""
+
+msgid "Display a visual representation of the 'ease()' function when editing."
+msgstr ""
+
+#, fuzzy
+msgid "Colors"
+msgstr "Цвет"
+
+msgid "Regular color given as red-green-blue-alpha value."
+msgstr ""
+
+msgid "Color given as red-green-blue value (alpha will always be 1)."
+msgstr ""
+
+msgid "Nodes"
+msgstr "Узлы"
+
+msgid ""
+"Since Godot 4.0, nodes can be directly exported as properties in a script "
+"without having to use NodePaths:"
+msgstr ""
+
+msgid ""
+"Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
+msgstr ""
+
+msgid ""
+"If you want to limit the types of nodes for NodePaths, you can use the :ref:"
+"`@export_node_path<class_@GDScript_annotation_@export_node_path>` annotation:"
+msgstr ""
+
+msgid "Resources"
+msgstr "Ресурсы"
+
+msgid ""
+"In the Inspector, you can then drag and drop a resource file from the "
+"FileSystem dock into the variable slot."
+msgstr ""
+
+msgid ""
+"Opening the inspector dropdown may result in an extremely long list of "
+"possible classes to create, however. Therefore, if you specify an extension "
+"of Resource such as:"
+msgstr ""
+
+msgid ""
+"The drop-down menu will be limited to AnimationNode and all its inherited "
+"classes."
+msgstr ""
 
 msgid ""
 "It must be noted that even if the script is not being run while in the "
@@ -81,10 +237,11 @@ msgstr ""
 msgid "Exporting bit flags"
 msgstr "Экспорт битовых флагов"
 
+#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
-"values in one property. By using the export hint ``int, FLAGS, ...``, they "
-"can be set from the editor::"
+"values in one property. By using the ``@export_flags`` annotation, they can "
+"be set from the editor::"
 msgstr ""
 "Целые числа, используемые в качестве битовых флагов, могут хранить несколько "
 "``true``/``false`` (булевых) значений в одном свойстве. Используя подсказку "
@@ -101,9 +258,19 @@ msgstr ""
 "Обычно константы должны быть определены соответствующим образом (например, "
 "``const ELEMENT_WIND = 8`` и так далее)."
 
+msgid "You can add explicit values using a colon::"
+msgstr ""
+
 msgid ""
-"Export hints are also provided for the physics and render layers defined in "
-"the project settings::"
+"Only power of 2 values are valid as bit flags options. The lowest allowed "
+"value is 1, as 0 means that nothing is selected. You can also add options "
+"that are a combination of other flags::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Export annotations are also provided for the physics, render, and navigation "
+"layers defined in the project settings::"
 msgstr ""
 "Подсказки по экспорту также предоставляются для слоев физики и визуализации, "
 "определенных в настройках проекта::"
@@ -115,6 +282,32 @@ msgstr ""
 "Использование бинарных флагов требует некоторого понимания побитовых "
 "операций. Если вы сомневаетесь, вместо этого следует экспортировать "
 "логические переменные."
+
+#, fuzzy
+msgid "Exporting enums"
+msgstr "Export menu (меню экспорта)"
+
+msgid ""
+"Properties can be exported with a type hint referencing an enum to limit "
+"their values to the values of the enumeration. The editor will create a "
+"widget in the Inspector, enumerating the following as \"Thing 1\", \"Thing "
+"2\", \"Another Thing\". The value will be stored as an integer."
+msgstr ""
+
+msgid ""
+"Integer and string properties can also be limited to a specific list of "
+"values using the :ref:`@export_enum "
+"<class_@GDScript_annotation_@export_enum>` annotation. The editor will "
+"create a widget in the Inspector, enumerating the following as Warrior, "
+"Magician, Thief. The value will be stored as an integer, corresponding to "
+"the index of the selected option (i.e. ``0``, ``1``,  or ``2``)."
+msgstr ""
+
+msgid "If the type is String, the value will be stored as a string."
+msgstr ""
+
+msgid "If you want to set an initial value, you must specify it explicitly::"
+msgstr ""
 
 msgid "Exporting arrays"
 msgstr "Экспорт массивов"
@@ -134,14 +327,38 @@ msgstr ""
 "значения массива можно задать в инспекторе (Inspector), перетаскивая "
 "несколько файлов из файловой системы (FileSystem) одновременно."
 
+msgid "The default value **must** be a constant expression."
+msgstr ""
+
+msgid "Exported arrays can specify type (using the same hints as before)."
+msgstr ""
+
+msgid ""
+"You can omit the default value, but it would then be ``null`` if not "
+"assigned."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Arrays with specified types which inherit from resource can be set by drag-"
+"and-dropping multiple files from the FileSystem dock."
+msgstr ""
+"Если экспортируемый массив указывает тип, который наследуется от Ресурса, "
+"значения массива можно задать в инспекторе (Inspector), перетаскивая "
+"несколько файлов из файловой системы (FileSystem) одновременно."
+
+msgid "Packed type arrays also work, but only initialized empty:"
+msgstr ""
+
 msgid "Setting exported variables from a tool script"
 msgstr "Установка экспортированных переменных из скрипта инструмента"
 
+#, fuzzy
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
-"automatically. To update it, call :ref:`property_list_changed_notify() "
-"<class_Object_method_property_list_changed_notify>` after setting the "
+"automatically. To update it, call :ref:`notify_property_list_changed() "
+"<class_Object_method_notify_property_list_changed>` after setting the "
 "exported variable's value."
 msgstr ""
 "При изменении значения экспортируемой переменной из скрипта в :ref:"
@@ -164,13 +381,13 @@ msgstr ""
 "или менее распространенные функции экспорта, которые могут быть реализованы "
 "с помощью низкоуровневого API."
 
+#, fuzzy
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
-"<class_Object_method__get_property_list>`, :ref:`_get() "
-"<class_Object_method__get_property_list>`, and :ref:`_get_property_list() "
-"<class_Object_method__get_property_list>` methods as described in :ref:"
-"`doc_accessing_data_or_logic_from_object`."
+"<class_Object_method__set>`, :ref:`_get() <class_Object_method__get>`, and :"
+"ref:`_get_property_list() <class_Object_method__get_property_list>` methods "
+"as described in :ref:`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 "Прежде чем читать дальше, вы должны ознакомиться с тем, как свойства "
 "обрабатываются и как они могут быть настроены с помощью методов :ref:`_set() "
@@ -192,131 +409,6 @@ msgid ""
 msgstr ""
 "Скрипт должен работать в режиме ``tool``, чтобы вышеперечисленные методы "
 "могли работать из редактора."
-
-msgid "Properties"
-msgstr "Свойства"
-
-msgid ""
-"To understand how to better use the sections below, you should understand "
-"how to make properties with advanced exports."
-msgstr ""
-
-msgid ""
-"The ``_get_property_list()`` function gets called by the inspector. You can "
-"override it for more advanced exports. You must return an ``Array`` with the "
-"contents of the properties for the function to work."
-msgstr ""
-
-msgid "``name`` is the name of the property"
-msgstr "``name`` это имя свойства"
-
-msgid "``type`` is the type of the property from ``Variant.Type``."
-msgstr ""
-
-msgid ""
-"The ``float`` type is called a real (``TYPE_REAL``) in the ``Variant.Type`` "
-"enum."
-msgstr ""
-
-msgid "Attaching variables to properties"
-msgstr "Присоединение переменных к свойствам"
-
-msgid ""
-"To attach variables to properties (allowing the value of the property to be "
-"used in scripts), you need to create a variable with the exact same name as "
-"the property or else you may need to override the :ref:`_set() "
-"<class_Object_method__get_property_list>` and :ref:`_get() "
-"<class_Object_method__get_property_list>` methods. Attaching a variable to "
-"to a property also gives you the ability to give it a default state. ::"
-msgstr ""
-
-msgid "Adding default values for properties"
-msgstr "Добавление значений по умолчанию для свойств"
-
-msgid ""
-"To define default values for advanced exports, you need to override the "
-"``property_can_revert()`` and ``property_get_revert()`` methods."
-msgstr ""
-
-msgid ""
-"The ``property_can_revert()`` method takes the name of a property and must "
-"return ``true`` if the property can be reverted. This will enable the Revert "
-"button next to the property in the inspector."
-msgstr ""
-
-msgid ""
-"The ``property_get_revert()`` method takes the name of a property and must "
-"return the default value for that property."
-msgstr ""
-
-msgid "Adding script categories"
-msgstr "Добавление категорий скриптов"
-
-msgid ""
-"For better visual distinguishing of properties, a special script category "
-"can be embedded into the inspector to act as a separator. ``Script "
-"Variables`` is one example of a built-in category. ::"
-msgstr ""
-"Для лучшего визуального различения свойств в инспектор можно внедрить "
-"специальную категорию скрипта, которая будет действовать как разделитель. "
-"``Script Variables`` (переменные скрипта) — это один из примеров встроенной "
-"категории. ::"
-
-msgid "``name`` is the name of a category to be added to the inspector;"
-msgstr "``name`` это название категории, которая будет добавлена в инспектор;"
-
-msgid ""
-"Every following property added after the category definition will be a part "
-"of the category."
-msgstr ""
-
-msgid ""
-"``PROPERTY_USAGE_CATEGORY`` indicates that the property should be treated as "
-"a script category specifically, so the type ``TYPE_NIL`` can be ignored as "
-"it won't be actually used for the scripting logic, yet it must be defined "
-"anyway."
-msgstr ""
-"``PROPERTY_USAGE_CATEGORY`` указывает, что свойство должно рассматриваться "
-"именно как категория скрипта, поэтому тип ``TYPE_NIL`` можно игнорировать, "
-"поскольку он фактически не будет использоваться для логики скрипта, но все "
-"равно должен быть определен."
-
-msgid "Grouping properties"
-msgstr "Свойства группировки"
-
-msgid "A list of properties with similar names can be grouped. ::"
-msgstr "Список свойств с похожими именами можно сгруппировать. ::"
-
-msgid ""
-"``name`` is the name of a group which is going to be displayed as "
-"collapsible list of properties;"
-msgstr ""
-"``name`` - это имя группы, которая будет отображаться в виде складываемого "
-"списка свойств;"
-
-#, fuzzy
-msgid ""
-"Every following property added after the group property with the prefix "
-"(which determined by ``hint_string``) will be shortened. For instance, "
-"``rotate_speed`` is going to be shortened to ``speed`` in this case. "
-"However, ``movement_speed`` won't be a part of the group and will not be "
-"shortened."
-msgstr ""
-"каждое последующее свойство, добавленное после свойства группы, будет "
-"свернуто и сокращено в соответствии с префиксом, определенным с помощью "
-"ключа ``hint_string``. Например, в этом случае``rotate_speed`` будет "
-"сокращен до ``speed``."
-
-msgid ""
-"``PROPERTY_USAGE_GROUP`` indicates that the property should be treated as a "
-"script group specifically, so the type ``TYPE_NIL`` can be ignored as it "
-"won't be actually used for the scripting logic, yet it must be defined "
-"anyway."
-msgstr ""
-"``PROPERTY_USAGE_GROUP`` указывает, что свойство должно рассматриваться "
-"именно как группа сценариев, поэтому тип ``TYPE_NIL`` можно игнорировать, "
-"поскольку он фактически не будет использоваться для логики сценариев, но он "
-"все равно должен быть определен."
 
 msgid "Translation status"
 msgstr "Translation status (статус перевода)"

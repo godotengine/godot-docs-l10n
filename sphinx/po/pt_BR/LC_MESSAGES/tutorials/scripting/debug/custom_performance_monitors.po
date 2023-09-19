@@ -1,0 +1,118 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Custom performance monitors"
+msgstr ":ref:`Dicas de desempenho do inspetor <doc_inspector_plugins>`"
+
+msgid "Introduction"
+msgstr "Introdução"
+
+msgid ""
+"As explained in the :ref:`doc_debugger_panel` documentation, Godot features "
+"a **Debugger > Monitor** bottom panel that allows tracking various values "
+"with graphs showing their evolution over time. The data for those graphs is "
+"sourced from the engine's :ref:`class_Performance` singleton."
+msgstr ""
+
+msgid ""
+"Since Godot 4.0, you can declare custom values to be displayed in this "
+"Monitor tab. Example use cases for custom performance monitors include:"
+msgstr ""
+
+msgid ""
+"Displaying performance metrics that are specific to your project. For "
+"instance, in a voxel game, you could create a performance monitor to track "
+"the number of chunks that are loaded every second."
+msgstr ""
+
+msgid ""
+"Displaying in-game metrics that are not strictly related to performance, but "
+"are still useful to graph for debugging purposes. For instance, you could "
+"track the number of enemies present in the game to make sure your spawning "
+"mechanic works as intended."
+msgstr ""
+
+#, fuzzy
+msgid "Creating a custom performance monitor"
+msgstr "Criando um nó personalizado"
+
+msgid ""
+"In this example, we'll create a custom performance monitor to track how many "
+"enemies are present in the currently running project."
+msgstr ""
+
+msgid ""
+"The main scene features a :ref:`class_Timer` node with the following script "
+"attached:"
+msgstr ""
+
+msgid ""
+"The second parameter of ref:`Performance."
+"add_custom_monitor<class_Performance_method_add_custom_monitor>` is a :ref:"
+"`class_Callable`."
+msgstr ""
+
+msgid ""
+"``enemy.tscn`` is a scene with a Node2D root node and Timer child node. The "
+"Node2D has the following script attached:"
+msgstr ""
+
+msgid ""
+"In this example, since we spawn 20 enemies per second, and each enemy "
+"despawns 2.5 seconds after they spawn, we expect the number of enemies "
+"present in the scene to stabilize to 50. We can make sure about this by "
+"looking at the graph."
+msgstr ""
+
+msgid ""
+"To visualize the graph created from this custom performance monitor, run the "
+"project, switch to the editor while the project is running and open "
+"**Debugger > Monitors** at the bottom of the editor window. Scroll down to "
+"the newly available **Game** section and check **Enemies**. You should see a "
+"graph appearing as follows:"
+msgstr ""
+
+msgid ""
+"The performance monitor handling code doesn't have to live in the same "
+"script as the nodes themselves. You may choose to move the performance "
+"monitor registration and getter function to an :ref:`autoload "
+"<doc_singletons_autoload>` instead."
+msgstr ""
+
+#, fuzzy
+msgid "Querying a performance monitor in a project"
+msgstr "Ferramentas de monitoramento de desempenho."
+
+msgid ""
+"If you wish to display the value of the performance monitor in the running "
+"project's window (rather than the editor), use ``Performance."
+"get_custom_monitor(\"category/name\")`` to fetch the value of the custom "
+"monitor. You can display the value using a :ref:`class_Label`, :ref:"
+"`class_RichTextLabel`, :ref:`doc_custom_drawing_in_2d`, :ref:`doc_3d_text`, "
+"etc."
+msgstr ""
+
+msgid ""
+"This method can be used in exported projects as well (debug and release "
+"mode), which allows you to create visualizations outside the editor."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Progresso da Tradução"

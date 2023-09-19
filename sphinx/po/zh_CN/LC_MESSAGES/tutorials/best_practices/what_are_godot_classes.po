@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,11 +95,12 @@ msgstr ""
 "将 :ref:`Script <class_Script>` 附加到你的对象中, 可以扩展 ``ClassDB`` 中的方"
 "法, 属性和信号."
 
+#, fuzzy
 msgid ""
 "Even scripts that don't use the ``extends`` keyword implicitly inherit from "
-"the engine's base :ref:`Reference <class_Reference>` class. As a result, you "
-"can instantiate scripts without the ``extends`` keyword from code. Since "
-"they extend ``Reference`` though, you cannot attach them to a :ref:`Node "
+"the engine's base :ref:`RefCounted <class_RefCounted>` class. As a result, "
+"you can instantiate scripts without the ``extends`` keyword from code. Since "
+"they extend ``RefCounted`` though, you cannot attach them to a :ref:`Node "
 "<class_Node>`."
 msgstr ""
 "脚本即使没有使用 ``extends`` 关键字，也会隐式地继承引擎的基础 :ref:"
@@ -120,10 +121,11 @@ msgstr ""
 "可实例化, 可继承的节点组. 创建场景类似于有一个脚本, 创建节点并使用 "
 "``add_child()`` 将其添加为子节点."
 
+#, fuzzy
 msgid ""
 "We often pair a scene with a scripted root node that makes use of the "
-"scene's nodes. As such, the scene is often an extension of the script's "
-"declarative code."
+"scene's nodes. As such, the script extends the scene by adding behavior "
+"through imperative code."
 msgstr ""
 "我们经常将场景与使用场景节点的脚本根节点配对. 因此, 场景通常是脚本声明性代码"
 "的扩展."
@@ -131,16 +133,20 @@ msgstr ""
 msgid "The content of a scene helps to define:"
 msgstr "场景的内容有助于定义："
 
-msgid "What nodes are available to the script"
+#, fuzzy
+msgid "What nodes are available to the script."
 msgstr "脚本可使用哪些节点"
 
-msgid "How they are organized"
+#, fuzzy
+msgid "How they are organized."
 msgstr "它们是如何组织的"
 
-msgid "How they are initialized"
+#, fuzzy
+msgid "How they are initialized."
 msgstr "它们是如何初始化的"
 
-msgid "What signal connections they have with each other"
+#, fuzzy
+msgid "What signal connections they have with each other."
 msgstr "它们彼此之间有什么信号连接"
 
 msgid ""

@@ -1,0 +1,122 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Compiling with PCK encryption key"
+msgstr "以腳本加密密鑰進行編譯"
+
+#, fuzzy
+msgid ""
+"The export dialog gives you the option to encrypt your PCK file with a 256-"
+"bit AES key when releasing your project. This will make sure your scenes, "
+"scripts and other resources are not stored in plain text and can not easily "
+"be ripped by some script kiddie."
+msgstr ""
+"在釋出遊戲時，匯出對話框中有可以使用 256 位元 AES 密鑰加密腳本的選項。通過該"
+"選項可以確保腳本不以純文字形式保存，且無法輕易地被一些腳本小子 (Script "
+"Kiddie) 輕鬆取得。當然，金鑰必須要保存在二進位檔中，但經過編譯、最佳化、並移"
+"除符號後，就需要花一點時間才能找到密鑰。"
+
+msgid ""
+"Of course, the key needs to be stored in the binary, but if it's compiled, "
+"optimized and without symbols, it would take some effort to find it."
+msgstr ""
+
+msgid ""
+"For this to work, you need to build the export templates from source, with "
+"that same key."
+msgstr "要加密腳本，需要以同一組密鑰來從原始碼編譯匯出腳本。"
+
+msgid ""
+"This will **not** work if you use official, precompiled export templates. It "
+"is absolutely **required** to compile your own export templates to use PCK "
+"encryption."
+msgstr ""
+
+msgid ""
+"By default, Android exports store assets directly in the APK file and aren't "
+"affected by PCK encryption. To use PCK encryption on Android, enable **APK "
+"expansion** in the export options."
+msgstr ""
+
+msgid "Step by step"
+msgstr "按部就班"
+
+#, fuzzy
+msgid ""
+"Generate a 256-bit AES key in hexadecimal format. You can use the aes-256-"
+"cbc variant from `this service <https://asecuritysite.com/encryption/"
+"keygen>`_."
+msgstr ""
+"產生十六進位格式的 256 位元 AES 密鑰。可以使用 `這個服務 <https://"
+"asecuritysite.com/encryption/keygen>`_ 中的 AES-256-CBC 變體。"
+
+#, fuzzy
+msgid ""
+"Alternatively, you can generate it yourself using `OpenSSL <https://www."
+"openssl.org/>`__ command-line tools:"
+msgstr "或者，也可以通過 OpenSSL 來自行產生："
+
+msgid "The output in ``godot.gdkey`` should be similar to:"
+msgstr ""
+
+msgid ""
+"You can generate the key without redirecting the output to a file, but that "
+"way you can minimize the risk of exposing the key."
+msgstr ""
+"產生密鑰時可以不將輸出重新導向輸出至檔案，這樣可以最小化密鑰暴露的風險。"
+
+msgid ""
+"Set this key as environment variable in the console that you will use to "
+"compile Godot, like this:"
+msgstr "將該密鑰在用來編譯 Godot 的主控台中設為環境變數，如："
+
+msgid ""
+"Compile Godot export templates and set them as custom export templates in "
+"the export preset options."
+msgstr "編譯 Godot 匯出樣板，並將該匯出樣板在匯出預設設定中設為自定匯出樣板。"
+
+#, fuzzy
+msgid "Set the encryption key in the **Encryption** tab of the export preset:"
+msgstr "在匯出預設設定中的 ``腳本`` 分頁設定加密密鑰："
+
+msgid ""
+"Add filters for the files/folders to encrypt. **By default**, include "
+"filters are empty and **nothing will be encrypted**."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Export the project. The project should run with the files encrypted now."
+msgstr "匯出專案。該遊戲現在應該會使用加密腳本來執行。"
+
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+#, fuzzy
+msgid ""
+"If you get an error like below, it means the key wasn't properly included in "
+"your Godot build. Godot is encrypting PCK file during export, but can't read "
+"it at runtime."
+msgstr ""
+"若遇到類似下方的錯誤，這代表加密密鑰沒有被正確包含到 Godot 建置中。這代表 "
+"Godot 在匯出時有加密腳本，但執行階段無法讀取。"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

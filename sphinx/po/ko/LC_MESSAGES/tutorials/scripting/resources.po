@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,13 +44,11 @@ msgstr ""
 "다. 리소스 자체적으로는 아무 것도 하지 않습니다. 대신 노드는 리소스에 포함된 "
 "데이터를 사용합니다."
 
+#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
-"tscn`` or an ``.scn`` file), an image, a script... Here are some "
-"``Resource`` examples: :ref:`Texture <class_Texture>`, :ref:`Script "
-"<class_Script>`, :ref:`Mesh <class_Mesh>`, :ref:`Animation "
-"<class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :ref:`Font "
-"<class_Font>`, :ref:`Translation <class_Translation>`."
+"tscn`` or an ``.scn`` file), an image, a script... Here are some :ref:"
+"`Resource <class_Resource>` examples:"
 msgstr ""
 "Godot가 디스크에 저장하거나 디스크에서 불러오는 모든 것은 리소스입니다. 씬"
 "(``.tscn`` 또는 ``.scn`` 파일), 이미지, 스크립트 등이 있습니다. 다음은 몇 가"
@@ -59,6 +57,34 @@ msgstr ""
 "메이션(Animation) <class_Animation>`, :ref:`오디오스트림(AudioStream) "
 "<class_AudioStream>`, :ref:`폰트(Font) <class_Font>` , :ref:`번역"
 "(Translation) <class_Translation>`."
+
+#, fuzzy
+msgid ":ref:`Texture <class_Texture>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+#, fuzzy
+msgid ":ref:`Script <class_Script>`"
+msgstr ":ref:`Sprite <class_Sprite>`"
+
+#, fuzzy
+msgid ":ref:`Mesh <class_Mesh>`"
+msgstr ":ref:`CSGMesh <class_CSGMesh>`"
+
+#, fuzzy
+msgid ":ref:`Animation <class_Animation>`"
+msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+
+#, fuzzy
+msgid ":ref:`AudioStream <class_AudioStream>`"
+msgstr ":ref:`Area2D <class_Area2D>`"
+
+#, fuzzy
+msgid ":ref:`Font <class_Font>`"
+msgstr ":ref:`int <class_int>`"
+
+#, fuzzy
+msgid ":ref:`Translation <class_Translation>`"
+msgstr ":ref:`Transform <class_Transform>`"
 
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
@@ -96,16 +122,17 @@ msgid ""
 "attached to."
 msgstr "``.tscn``\\ 이나 ``.scn`` 파일 안에 **내장**\\ 된 채로 저장."
 
+#, fuzzy
 msgid ""
-"To be more specific, here's a :ref:`Texture <class_Texture>` in a :ref:"
-"`Sprite <class_Sprite>` node:"
+"To be more specific, here's a :ref:`Texture2D <class_Texture2D>` in a :ref:"
+"`Sprite2D <class_Sprite2D>` node:"
 msgstr ""
 "좀 더 구체적으로 말하면, 다음은 :ref:`Sprite <class_Sprite>` 노드의 :ref:"
 "`Texture <class_Texture>`\\ 입니다:"
 
+#, fuzzy
 msgid ""
-"Clicking the resource preview allows us to view and edit the resource's "
-"properties."
+"Clicking the resource preview allows us to view the resource's properties."
 msgstr "리소스 미리보기를 클릭해서 리소스를 보고 속성을 편집할 수 있습니다."
 
 msgid ""
@@ -144,10 +171,11 @@ msgstr ""
 "코드에서 리소스를 불러오는 방법은 두 가지가 있습니다. 첫 번째로, 언제든지 "
 "``load()`` 함수를 사용해 불러올 수 있습니다:"
 
+#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
-"preload with a variable path: you need to use a constant string."
+"``preload`` with a variable path: you need to use a constant string."
 msgstr ""
 "리소스를 ``미리 불러올(preload)``\\ 수도 있습니다. ``load``\\ 와는 다르게, "
 "이 함수는 디스크에서 파일을 읽고 컴파일 시간에 파일을 불러옵니다. 결과적으"
@@ -157,18 +185,20 @@ msgstr ""
 msgid "Loading scenes"
 msgstr "씬 불러오기"
 
+#, fuzzy
 msgid ""
 "Scenes are also resources, but there is a catch. Scenes saved to disk are "
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
-"packed inside a resource."
+"packed inside a :ref:`Resource <class_Resource>`."
 msgstr ""
 "씬도 리소스이지만 함정이 있습니다. 씬은 디스크에 :ref:`PackedScene "
 "<class_PackedScene>` 타입 리소스로 저장됩니다. 씬은 리소스 안에 압축되어 있습"
 "니다."
 
+#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
-"instance() <class_PackedScene_method_instance>` method."
+"instantiate() <class_PackedScene_method_instantiate>` method."
 msgstr ""
 "씬의 인스턴스를 얻으려면 :ref:`PackedScene.instance() "
 "<class_PackedScene_method_instance>` 메서드를 사용해야 합니다."
@@ -181,9 +211,10 @@ msgstr ""
 "이 메서드는 씬의 계층 구조에 노드를 만들고, 구성하고, 씬의 루트 노드를 반환합"
 "니다. 그런 다음 이것을 다른 노드의 자식으로 추가할 수 있습니다."
 
+#, fuzzy
 msgid ""
-"The approach has several advantages. As the :ref:`PackedScene.instance() "
-"<class_PackedScene_method_instance>` function is fast, you can create new "
+"The approach has several advantages. As the :ref:`PackedScene.instantiate() "
+"<class_PackedScene_method_instantiate>` function is fast, you can create new "
 "enemies, bullets, effects, etc. without having to load them again from disk "
 "each time. Remember that, as always, images, meshes, etc. are all shared "
 "between the scene instances."
@@ -196,11 +227,12 @@ msgstr ""
 msgid "Freeing resources"
 msgstr "리소스 해제(Free)하기"
 
+#, fuzzy
 msgid ""
-"When a ``Resource`` is no longer in use, it will automatically free itself. "
-"Since, in most cases, Resources are contained in Nodes, when you free a "
-"node, the engine frees all the resources it owns as well if no other node "
-"uses them."
+"When a :ref:`Resource <class_Resource>` is no longer in use, it will "
+"automatically free itself. Since, in most cases, Resources are contained in "
+"Nodes, when you free a node, the engine frees all the resources it owns as "
+"well if no other node uses them."
 msgstr ""
 "``리소스``\\ 가 더 이상 사용되지 않으면 자동으로 해제됩니다. 대부분의 경우 리"
 "소스는 노드에 포함되어 있기 때문에 노드가 소유한 리소스를 다른 노드에서 사용"
@@ -220,13 +252,14 @@ msgstr ""
 "tres, /*.res) 간에 자유롭게 변환하는 기능을 상속받습니다. 또한 참조 타입으로"
 "부터 참조 카운팅(reference-counting) 메모리 관리를 상속받습니다."
 
+#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
-"as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`File "
-"<class_File>` to parse. What sets Resources apart is their inheritance of :"
-"ref:`Object <class_Object>`, :ref:`Reference <class_Reference>`, and :ref:"
-"`Resource <class_Resource>` features:"
+"as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`FileAccess "
+"<class_FileAccess>` to parse. What sets Resources apart is their inheritance "
+"of :ref:`Object <class_Object>`, :ref:`RefCounted <class_RefCounted>`, and :"
+"ref:`Resource <class_Resource>` features:"
 msgstr ""
 "이는 JSON, CSV 또는 커스텀 TXT 파일과 같은 대체 데이터 구조에 비해 많은 뚜렷"
 "한 이점이 있습니다. 사용자는 이러한 애셋을 구문 분석(parse)하기 위해 :ref:"
@@ -345,8 +378,26 @@ msgstr ""
 "니다. 스크립트 이름만 정의하면 인스펙터(Inspector)의 생성 대화 상자에 추가됩"
 "니다. 이렇게 하면 생성한 리소스 오브젝트에 스크립트가 자동으로 추가됩니다."
 
-msgid "Let's see some examples."
-msgstr "몇 가지 예를 살펴보겠습니다."
+msgid ""
+"Let's see some examples. Create a :ref:`Resource <class_Resource>` and name "
+"it ``bot_stats``. It should appear in your file tab with the full name "
+"``bot_stats.tres``. Without a script, it's useless, so let's add some data "
+"and logic! Attach a script to it named ``bot_stats.gd`` (or just create a "
+"new script, and then drag it to it)."
+msgstr ""
+
+msgid ""
+"Now, create a :ref:`CharacterBody3D <class_CharacterBody3D>`, name it "
+"``Bot``, and add the following script to it:"
+msgstr ""
+
+msgid ""
+"Now, select the :ref:`CharacterBody3D <class_CharacterBody3D>` node which we "
+"named ``bot``, and drag&drop the ``bot_stats.tres`` resource onto the "
+"Inspector. It should print 10! Obviously, this setup can be used for more "
+"advanced features than this, but as long you really understand *how* it all "
+"worked, you should figure out everything else related to Resources."
+msgstr ""
 
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
@@ -361,8 +412,9 @@ msgstr ""
 "<class_EditorPlugin>`\\ 과 결합해서 데이터에 대한 커스텀 시각화 및 에디터를 "
 "만들 수도 있습니다."
 
+#, fuzzy
 msgid ""
-"Unreal Engine 4's DataTables and CurveTables are also easy to recreate with "
+"Unreal Engine's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
@@ -370,20 +422,22 @@ msgstr ""
 "시 만들 수 있습니다. DataTables은 커스텀 구조체에 매핑된 문자열로, 이차적인 "
 "커스텀 리소스 스크립트에 문자열을 매핑하는 딕셔너리와 유사합니다."
 
+#, fuzzy
 msgid ""
-"Instead of just inlining the Dictionary values, one could also, "
-"alternatively..."
+"Instead of inlining the Dictionary values, one could also, alternatively:"
 msgstr "딕셔너리 값을 인라이닝(inlining)하는 대신에..."
 
+#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
-"pairs, or..."
+"pairs."
 msgstr ""
 "스프레드시트에서 테이블 값을 가져와서 키 값 쌍을 생성할 수 있습니다. 또는..."
 
+#, fuzzy
 msgid ""
-"Design a visualization within the editor and create a simple plugin that "
-"adds it to the Inspector when you open these types of Resources."
+"Design a visualization within the editor and create a plugin that adds it to "
+"the Inspector when you open these types of Resources."
 msgstr ""
 "에디터 안에서 시각화를 설계하고 해당 타입 리소스를 열 때 인스펙터(Inspecter)"
 "에 리소스를 추가하는 간단한 플러그인을 제작할 수 있습니다."

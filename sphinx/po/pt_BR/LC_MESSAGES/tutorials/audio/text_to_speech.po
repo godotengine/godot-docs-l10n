@@ -1,0 +1,143 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Text to speech"
+msgstr "Malha de texto"
+
+#, fuzzy
+msgid "Basic Usage"
+msgstr "Uso básico"
+
+msgid "Basic usage of text-to-speech involves the following one-time steps:"
+msgstr ""
+
+msgid "Query the system for a list of usable voices"
+msgstr ""
+
+msgid "Store the ID of the voice you want to use"
+msgstr ""
+
+msgid "Once you have the voice ID, you can use it to speak some text:"
+msgstr ""
+
+#, fuzzy
+msgid "Requirements for functionality"
+msgstr "Funções de transformação"
+
+msgid ""
+"Godot includes text-to-speech functionality. You can find these under the :"
+"ref:`DisplayServer class <class_DisplayServer>`."
+msgstr ""
+
+msgid ""
+"Godot depends on system libraries for text-to-speech functionality. These "
+"libraries are installed by default on Windows and macOS, but not on all "
+"Linux distributions. If they are not present, text-to-speech functionality "
+"will not work. Specifically, the ``tts_get_voices()`` method will return an "
+"empty list, indicating that there are no usable voices."
+msgstr ""
+
+msgid ""
+"Both Godot users on Linux and end-users on Linux running Godot games need to "
+"ensure that their system includes the system libraries for text-to-speech to "
+"work. Please consult the table below or your own distibution's documentation "
+"to determine what libraries you need to install."
+msgstr ""
+
+msgid "Distro-specific one-liners"
+msgstr ""
+
+msgid "**Arch Linux**"
+msgstr "**Arch Linux**"
+
+msgid "Best practices"
+msgstr "Boas práticas"
+
+msgid ""
+"The best practices for text-to-speech, in terms of the ideal player "
+"experience for blind players, is to send output to the player's screen "
+"reader. This preserves the choice of language, speed, pitch, etc. that the "
+"user set, as well as allows advanced features like allowing players to "
+"scroll backward and forward through text. As of now, Godot doesn't provide "
+"this level of integration."
+msgstr ""
+
+msgid ""
+"With the current state of the Godot text-to-speech APIs, best practices "
+"include:"
+msgstr ""
+
+msgid ""
+"Develop the game with text-to-speech enabled, and ensure that everything "
+"sounds correct"
+msgstr ""
+
+msgid ""
+"Allow players to control which voice to use, and save/persist that selection "
+"across game sessions"
+msgstr ""
+
+msgid ""
+"Allow players to control the speech rate, and save/persist that selection "
+"across game sessions"
+msgstr ""
+
+msgid ""
+"This provides your blind players with the most flexibility and comfort "
+"available when not using a screen reader, and minimizes the chance of "
+"frustrating and alienating them."
+msgstr ""
+
+#, fuzzy
+msgid "Caveats and Other Information"
+msgstr "Jogos e internacionalização"
+
+msgid ""
+"Expect delays when you call `tts_speak` and `tts_stop`. The actual delay "
+"time varies depending on both the OS and on your machine's specifications. "
+"This is especially critical on Android and Web, where some of the voices "
+"depend on web services, and the actual time to playback depends on server "
+"load, network latency, and other factors."
+msgstr ""
+
+msgid ""
+"Non-English text works if the correct voices are installed and used. On "
+"Windows, you can consult the instructions in `this article`_ to enable "
+"additional language voices on Windows."
+msgstr ""
+
+msgid ""
+"Non-ASCII characters, such as umlaut, are pronounced correctly if you select "
+"the correct voice."
+msgstr ""
+
+msgid ""
+"Blind players use a number of screen readers, including JAWS, NVDA, "
+"VoiceOver, Narrator, and more."
+msgstr ""
+
+msgid ""
+"Windows text-to-speech APIs generally perform better than their equivalents "
+"on other systems (e.g. `tts_stop` followed by `tts_speak` immediately speaks "
+"the new message)."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Progresso da Tradução"

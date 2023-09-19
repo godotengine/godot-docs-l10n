@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,20 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "GDScript basics"
-msgstr "GDScript Grundlagen"
+#, fuzzy
+msgid "GDScript reference"
+msgstr "Dateneinstellungen"
 
-msgid "Introduction"
-msgstr "Einführung"
-
+#, fuzzy
 msgid ""
-"*GDScript* is a high-level, dynamically typed programming language used to "
-"create content. It uses a syntax similar to `Python <https://en.wikipedia."
-"org/wiki/Python_%28programming_language%29>`_ (blocks are indent-based and "
-"many keywords are similar). Its goal is to be optimized for and tightly "
-"integrated with Godot Engine, allowing great flexibility for content "
-"creation and integration."
+":ref:`GDScript<doc_gdscript>` is a high-level, `object-oriented <https://en."
+"wikipedia.org/wiki/Object-oriented_programming>`_, `imperative <https://en."
+"wikipedia.org/wiki/Imperative_programming>`_, and `gradually typed <https://"
+"en.wikipedia.org/wiki/Gradual_typing>`_ programming language built for "
+"Godot. It uses an indentation-based syntax similar to languages like `Python "
+"<https://en.wikipedia.org/wiki/Python_%28programming_language%29>`_. Its "
+"goal is to be optimized for and tightly integrated with Godot Engine, "
+"allowing great flexibility for content creation and integration."
 msgstr ""
 "*GDScript* ist eine high-level, dynamisch typisierte Programmiersprache zum "
 "Erstellen von Inhalten. Es verwendet eine ähnliche Syntax wie `Python "
@@ -38,6 +39,9 @@ msgstr ""
 "auf eine Optimierung und enge Integration mit der Godot Engine ab, um große "
 "Flexibilität bei der Erstellung von Inhalten und deren Integration zu "
 "ermöglichen."
+
+msgid "GDScript is entirely independent from Python and is not based on it."
+msgstr ""
 
 msgid "History"
 msgstr "Verlauf"
@@ -52,9 +56,10 @@ msgstr ""
 msgid "Example of GDScript"
 msgstr "Beispiel von GDScript"
 
+#, fuzzy
 msgid ""
-"Some people can learn better by taking a look at the syntax, so here's a "
-"simple example of how GDScript looks."
+"Some people can learn better by taking a look at the syntax, so here's an "
+"example of how GDScript looks."
 msgstr ""
 "Manche Leute lernen besser, indem sie einfach die Syntax betrachten, deshalb "
 "hier ein Beispiel wie GDScript aussieht."
@@ -94,6 +99,14 @@ msgstr ""
 "gültiger Bezeichner. Zusätzlich dürfen Bezeichner nicht mit einer Ziffer "
 "beginnen. Bei Bezeichner wird Groß- und Kleinschreibung beachtet (``foo`` "
 "unterscheidet sich von ``FOO``)."
+
+msgid ""
+"Identifiers may also contain most Unicode characters part of `UAX#31 "
+"<https://www.unicode.org/reports/tr31/>`__. This allows you to use "
+"identifier names written in languages other than English. Unicode characters "
+"that are considered \"confusable\" for ASCII characters and emoji are not "
+"allowed in identifiers."
+msgstr ""
 
 msgid "Keywords"
 msgstr "Schlüsselwörter"
@@ -188,14 +201,16 @@ msgstr "Gibt einen Wert aus einer Funktion zurück."
 msgid "class"
 msgstr "Klasse"
 
-msgid "Defines an inner class."
+#, fuzzy
+msgid "Defines a class."
 msgstr "Definiert eine innere Klasse."
 
 msgid "class_name"
 msgstr "class_name"
 
-msgid "Defines a class name and optional icon for your script."
-msgstr "Definiert einen Klassennamen und ein optionales Symbol für Ihr Skript."
+msgid ""
+"Defines the script as a globally accessible class with the specified name."
+msgstr ""
 
 msgid "extends"
 msgstr "extends"
@@ -214,6 +229,15 @@ msgstr ""
 "Testet, ob eine Variable von einer gegeben Klasse abgeleitet ist oder einem "
 "gegebenen eingebauten Typen entspricht."
 
+#, fuzzy
+msgid "in"
+msgstr "Finde"
+
+msgid ""
+"Tests whether a value is within a string, list, range, dictionary, or node. "
+"When used with ``for``, it iterates through them instead of testing."
+msgstr ""
+
 msgid "as"
 msgstr "as"
 
@@ -225,12 +249,6 @@ msgstr "self"
 
 msgid "Refers to current class instance."
 msgstr "Bezieht sich auf die aktuelle Klassen Instanz."
-
-msgid "tool"
-msgstr "tool"
-
-msgid "Executes the script in the editor."
-msgstr "Führt ein Skript im Editor aus."
 
 msgid "signal"
 msgstr "signal"
@@ -247,7 +265,8 @@ msgstr "Definiert eine Funktion."
 msgid "static"
 msgstr "static"
 
-msgid "Defines a static function. Static member variables are not allowed."
+#, fuzzy
+msgid "Defines a static function or a static member variable."
 msgstr ""
 "Definiert eine statische Funktion. Statische Member-Variablen sind nicht "
 "erlaubt."
@@ -270,37 +289,14 @@ msgstr "var"
 msgid "Defines a variable."
 msgstr "Definiert eine Variable."
 
-msgid "onready"
-msgstr "onready"
-
-msgid ""
-"Initializes a variable once the Node the script is attached to and its "
-"children are part of the scene tree."
-msgstr ""
-"Initialisiert eine Variable sobald das Node, an dem das Skript angehängt "
-"wurde, und ihre Unterobjekte Teil des Szenenbaums sind."
-
-msgid "export"
-msgstr "export"
-
-msgid ""
-"Saves a variable along with the resource it's attached to and makes it "
-"visible and modifiable in the editor."
-msgstr ""
-"Speichert eine Variable zusammen mit der Ressource, an der sie hängt, und "
-"macht sie im Editor sicht- und modifizierbar."
-
-msgid "setget"
-msgstr "setget"
-
-msgid "Defines setter and getter functions for a variable."
-msgstr "Definiert setter und getter Funktionen für eine Variable."
-
 msgid "breakpoint"
 msgstr "breakpoint"
 
-msgid "Editor helper for debugger breakpoints."
-msgstr "Helfer für den Editor für Haltepunkte des Debuggers."
+msgid ""
+"Editor helper for debugger breakpoints. Unlike breakpoints created by "
+"clicking in the gutter, ``breakpoint`` is stored in the script itself. This "
+"makes it persistent across different machines when using version control."
+msgstr ""
 
 msgid "preload"
 msgstr "preload"
@@ -309,11 +305,19 @@ msgid "Preloads a class or variable. See `Classes as resources`_."
 msgstr ""
 "Lädt eine Variable oder Klasse im Voraus, siehe `Classes as resources`_."
 
+msgid "await"
+msgstr ""
+
+msgid ""
+"Waits for a signal or a coroutine to finish. See `Awaiting for signals or "
+"coroutines`_."
+msgstr ""
+
 msgid "yield"
 msgstr "yield"
 
-msgid "Coroutine support. See `Coroutines with yield`_."
-msgstr "Coprogramm Unterstützung, siehe `Coroutines with yield`_."
+msgid "Previously used for coroutines. Kept as keyword for transition."
+msgstr ""
 
 msgid "assert"
 msgstr "assert"
@@ -325,30 +329,11 @@ msgstr ""
 "Aktiviert eine Bedingung und protokolliert Fehler . Wird bei Nicht-Debug-"
 "Builds ignoriert. Siehe `Assert keyword`_."
 
-msgid "remote"
-msgstr "remote"
+msgid "void"
+msgstr "void"
 
-msgid ""
-"Networking RPC annotation. See :ref:`high-level multiplayer docs "
-"<doc_high_level_multiplayer>`."
+msgid "Used to represent that a function does not return any value."
 msgstr ""
-"Anmerkungen zu RPC Netzwerke, siehe :ref:`High-Level Mehrspieler "
-"Dokumentation <doc_high_level_multiplayer>`."
-
-msgid "master"
-msgstr "master"
-
-msgid "puppet"
-msgstr "puppet"
-
-msgid "remotesync"
-msgstr "remotesync"
-
-msgid "mastersync"
-msgstr "mastersync"
-
-msgid "puppetsync"
-msgstr "puppetsync"
 
 msgid "PI"
 msgstr "PI"
@@ -365,13 +350,16 @@ msgstr "TAU-Konstante."
 msgid "INF"
 msgstr "INF"
 
-msgid "Infinity constant. Used for comparisons."
+#, fuzzy
+msgid "Infinity constant. Used for comparisons and as result of calculations."
 msgstr "Konstante \"Unendlichkeit\". Wird für Vergleiche genutzt."
 
 msgid "NAN"
 msgstr "NAN"
 
-msgid "NAN (not a number) constant. Used for comparisons."
+#, fuzzy
+msgid ""
+"NAN (not a number) constant. Used as impossible result from calculations."
 msgstr ""
 "Konstante \"NAN\" (not a number - Keine Zahl). Wird für Vergleiche genutzt."
 
@@ -389,11 +377,25 @@ msgstr "**Operator**"
 msgid "**Description**"
 msgstr "**Beschreibung**"
 
+#, fuzzy
+msgid "``(`` ``)``"
+msgstr "``<<`` ``>>``"
+
+#, fuzzy
+msgid "Grouping (highest priority)"
+msgstr "Indexierung (höchste Priorität)"
+
+msgid ""
+"Parentheses are not really an operator, but allow you to explicitly specify "
+"the precedence of an operation."
+msgstr ""
+
 msgid "``x[index]``"
 msgstr "``x[index]``"
 
-msgid "Subscription (highest priority)"
-msgstr "Indexierung (höchste Priorität)"
+#, fuzzy
+msgid "Subscription"
+msgstr "Abonnements"
 
 msgid "``x.attribute``"
 msgstr "``x.attribute``"
@@ -407,129 +409,283 @@ msgstr "``foo()``"
 msgid "Function call"
 msgstr "Funktionsaufruf"
 
-msgid "``is``"
-msgstr "``is``"
+msgid "``await x``"
+msgstr ""
 
-msgid "Instance type checker"
-msgstr "Prüfung des Instanztyps"
+msgid "`Awaiting for signals or coroutines`_"
+msgstr ""
 
-msgid "``~``"
-msgstr "``~``"
+#, fuzzy
+msgid "``x is Node``"
+msgstr "``node``"
+
+#, fuzzy
+msgid "Type checking"
+msgstr "Typumwandlung"
+
+msgid ""
+"See also :ref:`is_instance_of() <class_@GDScript_method_is_instance_of>` "
+"function."
+msgstr ""
+
+msgid "``x ** y``"
+msgstr ""
+
+msgid "Power"
+msgstr ""
+
+msgid ""
+"Multiplies ``x`` by itself ``y`` times, similar to calling :ref:`pow() "
+"<class_@GlobalScope_method_pow>` function."
+msgstr ""
+
+msgid ""
+"**Note:** In GDScript, the ``**`` operator is `left-associative <https://en."
+"wikipedia.org/wiki/Operator_associativity>`_. See a detailed note after the "
+"table."
+msgstr ""
+
+msgid "``~x``"
+msgstr ""
 
 msgid "Bitwise NOT"
 msgstr "Bitweise Negation"
 
+msgid "``+x``"
+msgstr ""
+
 msgid "``-x``"
 msgstr "``-x``"
 
-msgid "Negative / Unary negation"
-msgstr "Negative / Unäre Negation"
+#, fuzzy
+msgid "Identity / Negation"
+msgstr "Einrückung"
 
-msgid "``*`` ``/`` ``%``"
-msgstr "``*`` ``/`` ``%``"
+msgid "``x * y``"
+msgstr ""
+
+msgid "``x / y``"
+msgstr ""
+
+msgid "``x % y``"
+msgstr ""
 
 msgid "Multiplication / Division / Remainder"
 msgstr "Multiplikation / Division / Modulus (Restbetrag)"
 
-#, fuzzy
 msgid ""
-"These operators have the same behavior as C++. Integer division is truncated "
-"rather than returning a fractional number, and the % operator is only "
-"available for ints (\"fmod\" for floats), and is additionally used for "
-"Format Strings"
+"The ``%`` operator is additionally used for :ref:`format strings "
+"<doc_gdscript_printf>`."
 msgstr ""
-"Diese Operatoren verhalten sich wie in C++. Eine Ganzzahl-Division wird "
-"abgeschnitten anstelle eine gebrochener Zahl zu liefern und der % Operator "
-"ist nur verfügbar für Ganzzahlen (\"fmod\" für Fließkomma)"
 
-msgid "``+``"
-msgstr "``+``"
+msgid ""
+"**Note:** These operators have the same behavior as C++, which may be "
+"unexpected for users coming from Python, JavaScript, etc. See a detailed "
+"note after the table."
+msgstr ""
 
-msgid "Addition / Concatenation of arrays"
+msgid "``x + y``"
+msgstr ""
+
+msgid "``x - y``"
+msgstr ""
+
+#, fuzzy
+msgid "Addition (or Concatenation) / Subtraction"
 msgstr "Addition / Verkettung von Arrays"
 
-msgid "``-``"
-msgstr "``-``"
+msgid "``x << y``"
+msgstr ""
 
-msgid "Subtraction"
-msgstr "Subtraktion"
-
-msgid "``<<`` ``>>``"
-msgstr "``<<`` ``>>``"
+msgid "``x >> y``"
+msgstr ""
 
 msgid "Bit shifting"
 msgstr "Bit-Schieben"
 
-msgid "``&``"
-msgstr "``&``"
+msgid "``x & y``"
+msgstr ""
 
 msgid "Bitwise AND"
 msgstr "Bitweises UND"
 
-msgid "``^``"
-msgstr "``^``"
+msgid "``x ^ y``"
+msgstr ""
 
 msgid "Bitwise XOR"
 msgstr "Bitweises exklusiv-ODER (XOR)"
 
-msgid "``|``"
-msgstr "``|``"
+msgid "``x | y``"
+msgstr ""
 
 msgid "Bitwise OR"
 msgstr "Bitweises (inklusiv-) ODER"
 
-msgid "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
-msgstr "``<`` ``>`` ``==`` ``!=`` ``>=`` ``<=``"
-
-msgid "Comparisons"
-msgstr "Vergleiche"
-
-msgid "``in``"
-msgstr "``in``"
-
-msgid ""
-"When used with the ``if`` keyword it checks if a value is within a string, "
-"list, range, dictionary, or node. When used with the ``for`` keyword it is "
-"used to iterate though the contents of a string, list, range, dictionary or "
-"node."
+msgid "``x == y``"
 msgstr ""
 
-msgid "``!`` ``not``"
-msgstr "``!`` ``not``"
+msgid "``x != y``"
+msgstr ""
 
-msgid "Boolean NOT"
-msgstr "Boolesches NICHT"
+msgid "``x < y``"
+msgstr ""
 
-msgid "``and`` ``&&``"
-msgstr "``and`` ``&&``"
+msgid "``x > y``"
+msgstr ""
 
-msgid "Boolean AND"
-msgstr "Boolesches UND"
+msgid "``x <= y``"
+msgstr ""
 
-msgid "``or`` ``||``"
-msgstr "``or`` ``||``"
+msgid "``x >= y``"
+msgstr ""
 
-msgid "Boolean OR"
-msgstr "Boolesches ODER"
+#, fuzzy
+msgid "Comparison"
+msgstr "Vergleiche"
 
-msgid "``if x else``"
-msgstr "``if x else``"
+msgid "See a detailed note after the table."
+msgstr ""
+
+msgid "``x in y``"
+msgstr ""
+
+msgid "``x not in y``"
+msgstr ""
+
+#, fuzzy
+msgid "Inclusion checking"
+msgstr "Umgebungsverdeckung"
+
+msgid "``in`` is also used with the for_ keyword as part of the syntax."
+msgstr ""
+
+#, fuzzy
+msgid "``not x``"
+msgstr "``node``"
+
+msgid "``!x``"
+msgstr ""
+
+msgid "Boolean NOT and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``x and y``"
+msgstr ""
+
+msgid "``x && y``"
+msgstr ""
+
+msgid "Boolean AND and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``x or y``"
+msgstr ""
+
+msgid "``x || y``"
+msgstr ""
+
+msgid "Boolean OR and its :ref:`unrecommended <boolean_operators>` alias"
+msgstr ""
+
+msgid "``true_expr if cond else false_expr``"
+msgstr ""
 
 msgid "Ternary if/else"
 msgstr "Bedingte (ternäre) if/else Anweisung"
 
-msgid "``as``"
-msgstr "``as``"
-
-msgid "Type casting"
-msgstr "Typumwandlung"
+#, fuzzy
+msgid "``x as Node``"
+msgstr "``node``"
 
 #, fuzzy
-msgid "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=`` ``<<=`` ``>>=``"
-msgstr "``=`` ``+=`` ``-=`` ``*=`` ``/=`` ``%=`` ``&=`` ``|=``"
+msgid "`Type casting <casting_>`_"
+msgstr "Typumwandlung und Casting"
+
+msgid "``x = y``"
+msgstr ""
+
+msgid "``x += y``"
+msgstr ""
+
+msgid "``x -= y``"
+msgstr ""
+
+msgid "``x *= y``"
+msgstr ""
+
+msgid "``x /= y``"
+msgstr ""
+
+msgid "``x **= y``"
+msgstr ""
+
+msgid "``x %= y``"
+msgstr ""
+
+msgid "``x &= y``"
+msgstr ""
+
+msgid "``x |= y``"
+msgstr ""
+
+msgid "``x ^= y``"
+msgstr ""
+
+msgid "``x <<= y``"
+msgstr ""
+
+msgid "``x >>= y``"
+msgstr ""
 
 msgid "Assignment (lowest priority)"
 msgstr "Zuweisung (niedrigste Priorität)"
+
+msgid "You cannot use an assignment operator inside an expression."
+msgstr ""
+
+msgid "The behavior of some operators may differ from what you expect:"
+msgstr ""
+
+msgid ""
+"If both operands of the ``/`` operator are :ref:`int <class_int>`, then "
+"integer division is performed instead of fractional. For example ``5 / 2 == "
+"2``, not ``2.5``. If this is not desired, use at least one :ref:`float "
+"<class_float>` literal (``x / 2.0``), cast (``float(x) / y``), or multiply "
+"by ``1.0`` (``x * 1.0 / y``)."
+msgstr ""
+
+msgid ""
+"The ``%`` operator is only available for ints, for floats use the :ref:"
+"`fmod() <class_@GlobalScope_method_fmod>` function."
+msgstr ""
+
+msgid ""
+"For negative values, the ``%`` operator and ``fmod()`` use `truncation "
+"<https://en.wikipedia.org/wiki/Truncation>`_ instead of rounding towards "
+"negative infinity. This means that the remainder has a sign. If you need the "
+"remainder in a mathematical sense, use the :ref:`posmod() "
+"<class_@GlobalScope_method_posmod>` and :ref:`fposmod() "
+"<class_@GlobalScope_method_fposmod>` functions instead."
+msgstr ""
+
+msgid ""
+"The ``**`` operator is `left-associative <https://en.wikipedia.org/wiki/"
+"Operator_associativity>`_. This means that ``2 ** 2 ** 3`` is equal to ``(2 "
+"** 2) ** 3``. Use parentheses to explicitly specify precedence you need, for "
+"example ``2 ** (2 ** 3)``."
+msgstr ""
+
+msgid ""
+"The ``==`` and ``!=`` operators sometimes allow you to compare values of "
+"different types (for example, ``1 == 1.0`` is true), but in other cases it "
+"can cause a runtime error. If you're not sure about the types of the "
+"operands, you can safely use the :ref:`is_same() "
+"<class_@GlobalScope_method_is_same>` function (but note that it is more "
+"strict about types and references). To compare floats, use the :ref:"
+"`is_equal_approx() <class_@GlobalScope_method_is_equal_approx>` and :ref:"
+"`is_zero_approx() <class_@GlobalScope_method_is_zero_approx>` functions "
+"instead."
+msgstr ""
 
 msgid "Literals"
 msgstr "Literale"
@@ -564,7 +720,8 @@ msgstr "``3.14``, ``58.1e-10``"
 msgid "Floating-point number (real)"
 msgstr "Fließkommazahl (reell)"
 
-msgid "``\"Hello\"``, ``\"Hi\"``"
+#, fuzzy
+msgid "``\"Hello\"``, ``'Hi'``"
 msgstr "``\"Hallo\"``, ``\"Hey\"``"
 
 msgid "Strings"
@@ -576,16 +733,33 @@ msgstr "``\"\"\"Hallo\"\"\"``"
 msgid "Multiline string"
 msgstr "Mehrzeilige Zeichenkette"
 
-msgid "``@\"Node/Label\"``"
+#, fuzzy
+msgid "``&\"name\"``"
+msgstr "``name``"
+
+#, fuzzy
+msgid ":ref:`StringName <class_StringName>`"
+msgstr ":ref:`String <class_String>`"
+
+#, fuzzy
+msgid "``^\"Node/Label\"``"
 msgstr "``@\"Node/Label\"``"
 
-msgid ":ref:`class_NodePath` or StringName"
-msgstr ":ref:`class_NodePath` oder StringName"
+msgid ":ref:`NodePath <class_NodePath>`"
+msgstr ":ref:`NodePath <class_NodePath>`"
 
 msgid "``$NodePath``"
 msgstr "``$NodeWeg``"
 
 msgid "Shorthand for ``get_node(\"NodePath\")``"
+msgstr "Kurzform für ``get_node(\"NodePath\")``"
+
+#, fuzzy
+msgid "``%UniqueNode``"
+msgstr "``node``"
+
+#, fuzzy
+msgid "Shorthand for ``get_node(\"%UniqueNode\")``"
 msgstr "Kurzform für ``get_node(\"NodePath\")``"
 
 msgid ""
@@ -595,6 +769,87 @@ msgstr ""
 "Ganzzahlen und Gleitkommazahlen können durch ``_`` getrennt werden um die "
 "Lesbarkeit zu verbessern. Die folgenden Möglichkeiten zum Schreiben von "
 "Zahlen sind alle gültig:"
+
+#, fuzzy
+msgid "Annotations"
+msgstr "Einrückung"
+
+msgid ""
+"There are some special tokens in GDScript that act like keywords but are "
+"not, they are *annotations* instead. Every annotation start with the ``@`` "
+"character and is specified by a name. A detailed description and example for "
+"each annotation can be found inside the :ref:`GDScript class reference "
+"<class_@GDScript>`."
+msgstr ""
+
+msgid ""
+"Annotations affect how the script is treated by external tools and usually "
+"don't change the behavior."
+msgstr ""
+
+msgid "For instance, you can use it to export a value to the editor::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"For more information about exporting properties, read the :ref:`GDScript "
+"exports <doc_gdscript_exports>` article."
+msgstr ""
+"Für mehr Informationen zur Arbeitsweise von ``Viewport``-Nodes, siehe dazu "
+"die :ref:`Viewports<doc_viewports>`-Anleitung."
+
+msgid ""
+"Any constant expression compatible with the required argument type can be "
+"passed as an annotation argument value::"
+msgstr ""
+
+msgid ""
+"Annotations can be specified one per line or all in the same line. They "
+"affect the next statement that isn't an annotation. Annotations can have "
+"arguments sent between parentheses and separated by commas."
+msgstr ""
+
+msgid "Both of these are the same::"
+msgstr ""
+
+msgid "``@onready`` annotation"
+msgstr ""
+
+msgid ""
+"When using nodes, it's common to desire to keep references to parts of the "
+"scene in a variable. As scenes are only warranted to be configured when "
+"entering the active scene tree, the sub-nodes can only be obtained when a "
+"call to ``Node._ready()`` is made."
+msgstr ""
+"Bei der Verwendung von Nodes ist es üblich, Verweise auf Teile der Szene in "
+"einer Variablen zu behalten. Da Szenen nur beim Aufrufen des aktiven "
+"Szenenbaums konfiguriert werden müssen, können die Unterknoten nur abgerufen "
+"werden, wenn ein Aufruf von \"Node._ready()\" erfolgt."
+
+#, fuzzy
+msgid ""
+"This can get a little cumbersome, especially when nodes and external "
+"references pile up. For this, GDScript has the ``@onready`` annotation, that "
+"defers initialization of a member variable until ``_ready()`` is called. It "
+"can replace the above code with a single line::"
+msgstr ""
+"Dies kann etwas umständlich werden, insbesondere wenn sich Nodes und externe "
+"Referenzen häufen. Zu diesem Zweck hat GDScript das Schlüsselwort "
+"\"onready\", das die Initialisierung einer Mitgliedsvariablen verzögert, bis "
+"\"_ready()\" \"aufgerufen wird. Es kann den obigen Code durch eine einzelne "
+"Zeile ersetzen :"
+
+msgid ""
+"Applying ``@onready`` and any ``@export`` annotation to the same variable "
+"doesn't work as you might expect. The ``@onready`` annotation will cause the "
+"default value to be set after the ``@export`` takes effect and will override "
+"it::"
+msgstr ""
+
+msgid ""
+"Therefore, the ``ONREADY_WITH_EXPORT`` warning is generated, which is "
+"treated as an error by default. We do not recommend disabling or ignoring it."
+msgstr ""
 
 msgid "Comments"
 msgstr "Kommentare"
@@ -606,15 +861,30 @@ msgstr ""
 "Alles ab einem ``#`` bis zum Ende der Zeile wird ignoriert und als Kommentar "
 "aufgefasst."
 
+#, fuzzy
+msgid "Line continuation"
+msgstr "Konfiguration"
+
+msgid ""
+"A line of code in GDScript can be continued on the next line by using a "
+"backslash (``\\``). Add one at the end of a line and the code on the next "
+"line will act like it's where the backslash is. Here is an example:"
+msgstr ""
+
+msgid "A line can be continued multiple times like this:"
+msgstr ""
+
 msgid "Built-in types"
 msgstr "Eingebaute Typen"
 
+#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
-"functions. The only exceptions are ``Array``\\ s and ``Dictionaries``, which "
-"are passed by reference so they are shared. (Pooled arrays such as "
-"``PoolByteArray`` are still passed as values.)"
+"functions. The exceptions are ``Object``, ``Array``, ``Dictionary``, and "
+"packed arrays (such as ``PackedByteArray``), which are passed by reference "
+"so they are shared. All arrays, ``Dictionary``, and some objects (``Node``, "
+"``Resource``) have a ``duplicate()`` method that allows you to make a copy."
 msgstr ""
 "Eingebaute Typen werden stapelweise zugewiesen. Sie werden als Werte "
 "übergeben. Dies bedeutet, dass bei jeder Zuweisung oder bei der Übergabe als "
@@ -651,9 +921,10 @@ msgstr ""
 msgid ":ref:`int <class_int>`"
 msgstr ":ref:`int <class_int>`"
 
+#, fuzzy
 msgid ""
 "Short for \"integer\", it stores whole numbers (positive and negative). It "
-"is stored as a 64-bit value, equivalent to \"int64_t\" in C++."
+"is stored as a 64-bit value, equivalent to ``int64_t`` in C++."
 msgstr ""
 "Kurz für \"Integer\" (Ganzzahl): es kann eine Ganzzahl (positiv oder "
 "negativ) als 64-Bit Wert gespeichert werden, gleichbedeutend mit \"int64_t\" "
@@ -662,11 +933,12 @@ msgstr ""
 msgid ":ref:`float <class_float>`"
 msgstr ":ref:`float <class_float>`"
 
+#, fuzzy
 msgid ""
 "Stores real numbers, including decimals, using floating-point values. It is "
-"stored as a 64-bit value, equivalent to \"double\" in C++. Note: Currently, "
-"data structures such as Vector2, Vector3, and PoolRealArray store 32-bit "
-"single-precision \"float\" values."
+"stored as a 64-bit value, equivalent to ``double`` in C++. Note: Currently, "
+"data structures such as ``Vector2``, ``Vector3``, and ``PackedFloat32Array`` "
+"store 32-bit single-precision ``float`` values."
 msgstr ""
 "Speichert eine reelle Zahl (Fließkommazahl) als 64-Bit Wert (doppelte "
 "Genauigkeit), gleichbedeutend mit \"double\" in C++. Anmerkung: "
@@ -676,9 +948,10 @@ msgstr ""
 msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
+#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
-"Unicode>`_. Strings can contain the following escape sequences:"
+"Unicode>`_. String literals can contain the following escape sequences:"
 msgstr ""
 "Eine Folge von Zeichen im `Unicode-Format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Zeichenketten können die folgenden Escape-Sequenzen enthalten:"
@@ -752,13 +1025,58 @@ msgstr "Backslash (Rückstrich oder umgekehrter Schrägstrich)"
 msgid "``\\uXXXX``"
 msgstr "``\\uXXXX``"
 
-msgid "Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+#, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
 msgstr ""
 "Unicode Codepoint ``XXXX`` (Hexadezimal, Case-Insensitive = Groß/"
 "Kleinschreibung ist egal)"
 
-msgid "GDScript also supports :ref:`doc_gdscript_printf`."
+#, fuzzy
+msgid "``\\UXXXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr ""
+"Unicode Codepoint ``XXXX`` (Hexadezimal, Case-Insensitive = Groß/"
+"Kleinschreibung ist egal)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above 0xFFFF:"
+msgstr ""
+"Es gibt zwei Möglichkeiten, ein Projekt für einen Server zu exportieren:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
 msgstr "GDScript unterstützt auch :ref:`doc_gdscript_printf`."
+
+msgid ""
+"An immutable string that allows only one instance of each name. They are "
+"slower to create and may result in waiting for locks when multithreading. In "
+"exchange, they're very fast to compare, which makes them good candidates for "
+"dictionary keys."
+msgstr ""
+
+msgid ""
+"A pre-parsed path to a node or a node property.  It can be easily assigned "
+"to, and from, a String. They are useful to interact with the tree to get a "
+"node, or affecting properties like with :ref:`Tweens <class_Tween>`."
+msgstr ""
 
 msgid "Vector built-in types"
 msgstr "eingebaute Vektor-Typen"
@@ -772,6 +1090,15 @@ msgid ""
 msgstr ""
 "2D Vektor-Typ bestehend aus ``x`` und ``y``. Zugriff kann auch als Feld "
 "erfolgen."
+
+#, fuzzy
+msgid ":ref:`Vector2i <class_Vector2i>`"
+msgstr ":ref:`Vector2 <class_Vector2>`"
+
+msgid ""
+"Same as a Vector2 but the components are integers. Useful for representing "
+"items in a 2D grid."
+msgstr ""
 
 msgid ":ref:`Rect2 <class_Rect2>`"
 msgstr ":ref:`Rect2 <class_Rect2>`"
@@ -793,6 +1120,15 @@ msgstr ""
 "3D Vektor Typ besitzt ``x``, ``y`` und ``z`` Felder. Diese können auch als "
 "Array aufgerufen werden."
 
+#, fuzzy
+msgid ":ref:`Vector3i <class_Vector3i>`"
+msgstr ":ref:`Vector3 <class_Vector3>`"
+
+msgid ""
+"Same as Vector3 but the components are integers. Can be use for indexing "
+"items in a 3D grid."
+msgstr ""
+
 msgid ":ref:`Transform2D <class_Transform2D>`"
 msgstr ":ref:`Transform2D <class_Transform2D>`"
 
@@ -809,7 +1145,8 @@ msgstr ""
 "3D Ebenentyp in normalisierter Form, welcher ein ``normal`` Vektorfeld und "
 "eine skalare Distanz ``d`` besitzt."
 
-msgid ":ref:`Quat <class_Quat>`"
+#, fuzzy
+msgid ":ref:`Quaternion <class_Quaternion>`"
 msgstr ":ref:`Quat <class_Quat>`"
 
 msgid ""
@@ -843,8 +1180,9 @@ msgstr ""
 "besitzt drei Vektorfelder (``x``, ``y`` und ``z``) und kann auch als Array "
 "von 3D Vektoren aufgerufen werden."
 
-msgid ":ref:`Transform <class_Transform>`"
-msgstr ":ref:`Transform <class_Transform>`"
+#, fuzzy
+msgid ":ref:`Transform3D <class_Transform3D>`"
+msgstr ":ref:`Transform2D <class_Transform2D>`"
 
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
@@ -865,16 +1203,6 @@ msgstr ""
 "Der Color Datentyp besitzt jeweils ein ``r``-, ``g``-, ``b``- und ``a``-"
 "Feld. Der Zugriff kann auch über ``h``, ``s`` und ``v`` erfolgen, was für "
 "hue (Farbwert)/saturation (Sättigung)/value (Dunkelstufe) steht."
-
-msgid ":ref:`NodePath <class_NodePath>`"
-msgstr ":ref:`NodePath <class_NodePath>`"
-
-msgid ""
-"Compiled path to a node used mainly in the scene system. It can be easily "
-"assigned to, and from, a String."
-msgstr ""
-"Hauptsächlich im Szenen-System genutzter kompilierter Pfad zu einem Node. "
-"Zuweisung kann einfach zu und von einer Zeichenkette erfolgen."
 
 msgid ":ref:`RID <class_RID>`"
 msgstr ":ref:`RID <class_RID>`"
@@ -906,6 +1234,50 @@ msgstr ""
 "geändert werden. Arrays werden ausgehend vom Index ``0`` indiziert. Negative "
 "Indizes zählen vom Ende an."
 
+#, fuzzy
+msgid "Typed arrays"
+msgstr "real array"
+
+msgid ""
+"Godot 4.0 added support for typed arrays. On write operations, Godot checks "
+"that element values match the specified type, so the array cannot contain "
+"invalid values. The GDScript static analyzer takes typed arrays into "
+"account, however array methods like ``front()`` and ``back()`` still have "
+"the ``Variant`` return type."
+msgstr ""
+
+msgid ""
+"Typed arrays have the syntax ``Array[Type]``, where ``Type`` can be any "
+"``Variant`` type, native or user class, or enum. Nested array types (like "
+"``Array[Array[int]]``) are not supported."
+msgstr ""
+
+msgid "``Array`` and ``Array[Variant]`` are the same thing."
+msgstr ""
+
+msgid ""
+"Arrays are passed by reference, so the array element type is also an "
+"attribute of the in-memory structure referenced by a variable in runtime. "
+"The static type of a variable restricts the structures that it can reference "
+"to. Therefore, you **cannot** assign an array with a different element type, "
+"even if the type is a subtype of the required type."
+msgstr ""
+
+msgid ""
+"If you want to *convert* a typed array, you can create a new array and use "
+"the :ref:`Array.assign() <class_Array_method_assign>` method::"
+msgstr ""
+
+msgid ""
+"The only exception was made for the ``Array`` (``Array[Variant]``) type, for "
+"user convenience and compatibility with old code. However, operations on "
+"untyped arrays are considered unsafe."
+msgstr ""
+
+#, fuzzy
+msgid "Packed arrays"
+msgstr "Oberflächen-Array"
+
 msgid ""
 "GDScript arrays are allocated linearly in memory for speed. Large arrays "
 "(more than tens of thousands of elements) may however cause memory "
@@ -922,41 +1294,66 @@ msgstr ""
 "weniger Speicher, sind jedoch atomar und laufen tendenziell langsamer als "
 "generische Arrays. Sie werden daher nur für große Datenmengen empfohlen:"
 
+#, fuzzy
 msgid ""
-":ref:`PoolByteArray <class_PoolByteArray>`: An array of bytes (integers from "
-"0 to 255)."
+":ref:`PackedByteArray <class_PackedByteArray>`: An array of bytes (integers "
+"from 0 to 255)."
 msgstr ""
 ":ref:`PoolByteArray <class_PoolByteArray>`: Ein Array aus Bytes (Integer von "
 "0 bis 255)."
 
-msgid ":ref:`PoolIntArray <class_PoolIntArray>`: An array of integers."
+#, fuzzy
+msgid ""
+":ref:`PackedInt32Array <class_PackedInt32Array>`: An array of 32-bit "
+"integers."
 msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: Ein Array aus ganzen Zahlen."
 
-msgid ":ref:`PoolRealArray <class_PoolRealArray>`: An array of floats."
+#, fuzzy
+msgid ""
+":ref:`PackedInt64Array <class_PackedInt64Array>`: An array of 64-bit "
+"integers."
+msgstr ":ref:`PoolIntArray <class_PoolIntArray>`: Ein Array aus ganzen Zahlen."
+
+#, fuzzy
+msgid ""
+":ref:`PackedFloat32Array <class_PackedFloat32Array>`: An array of 32-bit "
+"floats."
 msgstr ""
 ":ref:`PoolRealArray <class_PoolRealArray>`: Ein Array aus Fließkommazahlen."
 
-msgid ":ref:`PoolStringArray <class_PoolStringArray>`: An array of strings."
+#, fuzzy
+msgid ""
+":ref:`PackedFloat64Array <class_PackedFloat64Array>`: An array of 64-bit "
+"floats."
+msgstr ""
+":ref:`PoolRealArray <class_PoolRealArray>`: Ein Array aus Fließkommazahlen."
+
+#, fuzzy
+msgid ""
+":ref:`PackedStringArray <class_PackedStringArray>`: An array of strings."
 msgstr ""
 ":ref:`PoolStringArray <class_PoolStringArray>`: Ein Array aus Zeichenketten."
 
+#, fuzzy
 msgid ""
-":ref:`PoolVector2Array <class_PoolVector2Array>`: An array of :ref:`Vector2 "
-"<class_Vector2>` objects."
+":ref:`PackedVector2Array <class_PackedVector2Array>`: An array of :ref:"
+"`Vector2 <class_Vector2>` values."
 msgstr ""
 ":ref:`PoolVector2Array <class_PoolVector2Array>`: Ein Array aus :ref:"
 "`Vector2 <class_Vector2>` Objekten."
 
+#, fuzzy
 msgid ""
-":ref:`PoolVector3Array <class_PoolVector3Array>`: An array of :ref:`Vector3 "
-"<class_Vector3>` objects."
+":ref:`PackedVector3Array <class_PackedVector3Array>`: An array of :ref:"
+"`Vector3 <class_Vector3>` values."
 msgstr ""
 ":ref:`PoolVector3Array <class_PoolVector3Array>`: Ein Array aus :ref:"
 "`Vector3 <class_Vector3>` Objekten."
 
+#, fuzzy
 msgid ""
-":ref:`PoolColorArray <class_PoolColorArray>`: An array of :ref:`Color "
-"<class_Color>` objects."
+":ref:`PackedColorArray <class_PackedColorArray>`: An array of :ref:`Color "
+"<class_Color>` values."
 msgstr ""
 ":ref:`PoolColorArray <class_PoolColorArray>`: Ein Array aus :ref:`Color "
 "<class_Color>` Objekten."
@@ -1001,6 +1398,38 @@ msgstr ""
 "Skriptfehler auftritt. Um dies zu vermeiden, verwenden Sie stattdessen die "
 "Methoden :ref:`Object.get() <class_Object_method_get>` und :ref:`Object."
 "set() <class_Object_method_set>`."
+
+#, fuzzy
+msgid ":ref:`Signal <class_Signal>`"
+msgstr ":ref:`int <class_int>`"
+
+msgid ""
+"A signal is a message that can be emitted by an object to those who want to "
+"listen to it. The Signal type can be used for passing the emitter around."
+msgstr ""
+
+msgid ""
+"Signals are better used by getting them from actual objects, e.g. ``$Button."
+"button_up``."
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Callable <class_Callable>`"
+msgstr ":ref:`Plane <class_Plane>`"
+
+msgid ""
+"Contains an object and a function, which is useful for passing functions as "
+"values (e.g. when connecting to signals)."
+msgstr ""
+
+msgid ""
+"Getting a method as a member returns a callable. ``var x = $Sprite2D."
+"rotate`` will set the value of ``x`` to a callable with ``$Sprite2D`` as the "
+"object and ``rotate`` as the method."
+msgstr ""
+
+msgid "You can call it using the ``call`` method: ``x.call(PI)``."
+msgstr ""
 
 msgid "Data"
 msgstr "Daten"
@@ -1078,6 +1507,92 @@ msgid "Script classes declared with the ``class_name`` keyword."
 msgstr ""
 "Skriptklassen, die mit dem Schlüsselwort ``class_name`` deklariert wurden."
 
+msgid "Autoloads registered as singletons."
+msgstr ""
+
+msgid ""
+"While ``Variant`` is a valid type specification, it's not an actual type. It "
+"only means there's no set type and is equivalent to not having a static type "
+"at all. Therefore, inference is not allowed by default for ``Variant``, "
+"since it's likely a mistake."
+msgstr ""
+
+msgid ""
+"You can turn off this check, or make it only a warning, by changing it in "
+"the project settings. See :ref:`doc_gdscript_warning_system` for details."
+msgstr ""
+
+#, fuzzy
+msgid "Static variables"
+msgstr "Variablen bearbeiten"
+
+msgid "A class member variable can be declared static::"
+msgstr ""
+
+msgid ""
+"Static variables belong to the class, not instances. This means that static "
+"variables share values between multiple instances, unlike regular member "
+"variables."
+msgstr ""
+
+msgid ""
+"From inside a class, you can access static variables from any function, both "
+"static and non-static. From outside the class, you can access static "
+"variables using the class or an instance (the second is not recommended as "
+"it is less readable)."
+msgstr ""
+
+msgid ""
+"The ``@export`` and ``@onready`` annotations cannot be applied to a static "
+"variable. Local variables cannot be static."
+msgstr ""
+
+msgid ""
+"The following example defines a ``Person`` class with a static variable "
+"named ``max_id``. We increment the ``max_id`` in the ``_init()`` function. "
+"This makes it easy to keep track of the number of ``Person`` instances in "
+"our game."
+msgstr ""
+
+msgid ""
+"In this code, we create two instances of our ``Person`` class and check that "
+"the class and every instance have the same ``max_id`` value, because the "
+"variable is static and accessible to every instance."
+msgstr ""
+
+msgid "Static variables can have type hints, setters and getters::"
+msgstr ""
+
+msgid "A base class static variable can also be accessed via a child class::"
+msgstr ""
+
+msgid "``@static_unload`` annotation"
+msgstr ""
+
+msgid ""
+"Since GDScript classes are resources, having static variables in a script "
+"prevents it from being unloaded even if there are no more instances of that "
+"class and no other references left. This can be important if static "
+"variables store large amounts of data or hold references to other project "
+"resources, such as scenes. You should clean up this data manually, or use "
+"the :ref:`@static_unload <class_@GDScript_annotation_@static_unload>` "
+"annotation if static variables don't store important data and can be reset."
+msgstr ""
+
+msgid ""
+"Currently, due to a bug, scripts are never freed, even if ``@static_unload`` "
+"annotation is used."
+msgstr ""
+
+msgid ""
+"Note that ``@static_unload`` applies to the entire script (including inner "
+"classes) and must be placed at the top of the script, before ``class_name`` "
+"and ``extends``::"
+msgstr ""
+
+msgid "See also `Static functions`_ and `Static constructor`_."
+msgstr ""
+
 msgid "Casting"
 msgstr "Casting (Typumwandlung)"
 
@@ -1151,9 +1666,15 @@ msgstr ""
 "Das Zuweisen eines Werts eines inkompatiblen Typs führt zu einem Fehler."
 
 msgid ""
-"Since arrays and dictionaries are passed by reference, constants are "
-"\"flat\". This means that if you declare a constant array or dictionary, it "
-"can still be modified afterwards. They can't be reassigned with another "
+"You can also create constants inside a function, which is useful to name "
+"local magic values."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Since objects, arrays and dictionaries are passed by reference, constants "
+"are \"flat\". This means that if you declare a constant array or dictionary, "
+"it can still be modified afterwards. They can't be reassigned with another "
 "value though."
 msgstr ""
 "Da Arrays und Dictionaries als Referenz übergeben werden, sind Konstanten "
@@ -1171,17 +1692,19 @@ msgstr ""
 "Enumeratoren sind im Grunde ein Kürzel für Konstanten und sind nützlich, "
 "wenn aufeinanderfolgende Ganzzahlen Kontanten zugeordnet werden sollen."
 
+#, fuzzy
 msgid ""
-"If you pass a name to the enum, it will put all the keys inside a constant "
-"dictionary of that name."
+"If you pass a name to the enum, it will put all the keys inside a constant :"
+"ref:`Dictionary <class_Dictionary>` of that name. This means all constant "
+"methods of a dictionary can also be used with a named enum."
 msgstr ""
 "Wenn Sie der Aufzählung einen Namen übergeben, werden alle Schlüssel in ein "
 "konstantes Dictionary dieses Namens aufgenommen."
 
+#, fuzzy
 msgid ""
-"In Godot 3.1 and later, keys in a named enum are not registered as global "
-"constants. They should be accessed prefixed by the enum's name (``Name."
-"KEY``); see an example below."
+"Keys in a named enum are not registered as global constants. They should be "
+"accessed prefixed by the enum's name (``Name.KEY``)."
 msgstr ""
 "In Godot 3.1 und höher werden Schlüssel in einer benannten Aufzählung nicht "
 "als globale Konstanten registriert. Auf sie sollte vor dem Namen der "
@@ -1209,6 +1732,10 @@ msgid ""
 msgstr ""
 "Eine Funktion kann jederzeit ``zurückkehren``. Der Standard-Rückgabewert ist "
 "``null``."
+
+msgid ""
+"If a function contains only one line of code, it can be written on one line::"
+msgstr ""
 
 msgid ""
 "Functions can also have type specification for the arguments and for the "
@@ -1261,37 +1788,63 @@ msgid "Referencing functions"
 msgstr "Funktionen referenzieren"
 
 msgid ""
-"Contrary to Python, functions are *not* first-class objects in GDScript. "
-"This means they cannot be stored in variables, passed as an argument to "
-"another function or be returned from other functions. This is for "
-"performance reasons."
+"Functions are first-class items in terms of the :ref:`Callable "
+"<class_Callable>` object. Referencing a function by name without calling it "
+"will automatically generate the proper callable. This can be used to pass "
+"functions as arguments."
 msgstr ""
-"Im Gegensatz zu Python sind Funktionen *keine* erste Klasse Objekte in "
-"GDScript. Das bedeutet, sie können nicht in Variablen gespeichert werden, "
-"als Argument für eine andere Funktion übergeben werden oder von anderen "
-"Funktionen zurückgegeben werden – aus Gründen der Geschwindigkeit."
 
 msgid ""
-"To reference a function by name at run-time, (e.g. to store it in a "
-"variable, or pass it to another function as an argument) one must use the "
-"``call`` or ``funcref`` helpers::"
+"Callables **must** be called with the ``call`` method. You cannot use the "
+"``()`` operator directly. This behavior is implemented to avoid performance "
+"issues on direct function calls."
 msgstr ""
-"Um eine Funktion zur Laufzeit namentlich zu referenzieren (z.B. um sie in "
-"einer Variablen zu speichern oder als Argument an eine andere Funktion zu "
-"übergeben), müssen die Helfer ``call`` oder ``funcref`` verwendet werden:"
+
+#, fuzzy
+msgid "Lambda functions"
+msgstr "Zufallsfunktionen"
+
+msgid ""
+"Lambda functions allow you to declare functions that do not belong to a "
+"class. Instead a :ref:`Callable <class_Callable>` object is created and "
+"assigned to a variable directly. This can be useful to create Callables to "
+"pass around without polluting the class scope."
+msgstr ""
+
+msgid "Lambda functions can be named for debugging purposes::"
+msgstr ""
+
+msgid ""
+"Lambda functions capture the local environment. Local variables are passed "
+"by value, so they won't be updated in the lambda if changed in the local "
+"function::"
+msgstr ""
+
+msgid ""
+"The values of the outer scope behave like constants. Therefore, if you "
+"declare an array or dictionary, it can still be modified afterwards."
+msgstr ""
 
 msgid "Static functions"
 msgstr "Statische Funktionen"
 
+#, fuzzy
 msgid ""
 "A function can be declared static. When a function is static, it has no "
-"access to the instance member variables or ``self``. This is mainly useful "
-"to make libraries of helper functions::"
+"access to the instance member variables or ``self``. A static function has "
+"access to static variables. Also static functions are useful to make "
+"libraries of helper functions::"
 msgstr ""
 "Eine Funktion kann als statisch deklariert werden. Wenn eine Funktion "
 "statisch ist, hat sie keinen Zugriff auf die Member der Instanz oder "
 "``self``. Dies ist vor allem nützlich um Bibliotheken mit Hilfsfunktionen zu "
 "erzeugen:"
+
+msgid "Lambdas cannot be declared static."
+msgstr ""
+
+msgid "See also `Static variables`_ and `Static constructor`_."
+msgstr ""
 
 msgid "Statements and control flow"
 msgstr "Anweisungen und Kontrollstrukturen"
@@ -1304,6 +1857,32 @@ msgstr ""
 "Ausdrücke sind Standard und können Zuweisungen sein, Funktionsaufrufe, "
 "Flußkontrollstrukturen, usw. (siehe unten). ``;``als Trennzeichen zwischen "
 "Ausdrücken ist optional."
+
+#, fuzzy
+msgid "Expressions"
+msgstr "Ausdrucks-Node"
+
+msgid ""
+"Expressions are sequences of operators and their operands in orderly "
+"fashion. An expression by itself can be a statement too, though only calls "
+"are reasonable to use as statements since other expressions don't have side "
+"effects."
+msgstr ""
+
+msgid ""
+"Expressions return values that can be assigned to valid targets. Operands to "
+"some operator can be another expression. An assignment is not an expression "
+"and thus does not return any value."
+msgstr ""
+
+#, fuzzy
+msgid "Here are some examples of expressions::"
+msgstr "Hier sind einige Beispiele eigener Effekte:"
+
+msgid ""
+"Identifiers, attributes, and subscripts are valid assignment targets. Other "
+"expressions cannot be on the left side of an assignment."
+msgstr ""
 
 msgid "if/else/elif"
 msgstr "if/else/elif"
@@ -1352,7 +1931,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Simple loops are created by using ``while`` syntax. Loops can be broken "
-"using ``break`` or continued using ``continue`` (i.e. skipping to the next "
+"using ``break`` or continued using ``continue`` (which skips to the next "
 "iteration of the loop without executing any further code in the current "
 "iteration):"
 msgstr ""
@@ -1372,6 +1951,17 @@ msgstr ""
 "Dictionary wird der *Schlüssel* in der Schleifenvariablen gespeichert."
 
 msgid ""
+"If you want to assign values on an array as it is being iterated through, it "
+"is best to use ``for i in array.size()``."
+msgstr ""
+
+msgid ""
+"The loop variable is local to the for-loop and assigning to it will not "
+"change the value on the array. Objects passed by reference (such as nodes) "
+"can still be manipulated by calling methods on the loop variable."
+msgstr ""
+
+msgid ""
 "A ``match`` statement is used to branch execution of a program. It's the "
 "equivalent of the ``switch`` statement found in many other languages, but "
 "offers some additional features."
@@ -1384,6 +1974,13 @@ msgstr ""
 msgid "Basic syntax::"
 msgstr "Grundlegende Syntax:"
 
+msgid ""
+"``match`` is more type strict than the ``==`` operator. For example ``1`` "
+"will **not** match ``1.0``. The only exception is ``String`` vs "
+"``StringName`` matching: for example, the String ``\"hello\"`` is considered "
+"equal to the StringName ``&\"hello\"``."
+msgstr ""
+
 msgid "**Crash-course for people who are familiar with switch statements**:"
 msgstr "**Crashkurs für jene, die mit switch-Anweisungen vertraut sind**:"
 
@@ -1393,12 +1990,9 @@ msgstr "Ersetze ``switch`` mit ``match``."
 msgid "Remove ``case``."
 msgstr "Entferne ``case``."
 
-msgid ""
-"Remove any ``break``\\ s. If you don't want to ``break`` by default, you can "
-"use ``continue`` for a fallthrough."
-msgstr ""
-"Entfernt jedes ``break``\\ s. Sollte das standardmäßige ``break`` "
-"ungewünscht sein, so kann durch ``continue`` ein Fortfahren erzielt werden."
+#, fuzzy
+msgid "Remove any ``break``\\ s."
+msgstr "Entferne ``case``."
 
 msgid "Change ``default`` to a single underscore."
 msgstr "Ändere ``default`` zu einem einzelnen Unterstrich."
@@ -1406,17 +2000,22 @@ msgstr "Ändere ``default`` zu einem einzelnen Unterstrich."
 msgid "**Control flow**:"
 msgstr "**Kontrollfluss**:"
 
+#, fuzzy
 msgid ""
 "The patterns are matched from top to bottom. If a pattern matches, the first "
 "corresponding block will be executed. After that, the execution continues "
-"below the ``match`` statement. You can use ``continue`` to stop execution in "
-"the current block and check for an additional match in the patterns below it."
+"below the ``match`` statement."
 msgstr ""
 "Die Muster werden von oben nach unten abgeglichen. Wenn ein Muster passt, "
 "wird der entsprechende Block ausgeführt. Danach setzt die Ausführung unter "
 "der ``match``-Anweisung fort. Wenn stattdessen ein Durchrutschen "
 "(Fallthrough) gewünscht ist, kann ein ``continue`` benutzt werden, um die "
 "Ausführung im aktuellen Block anzuhalten und in die Folgenden zu springen."
+
+msgid ""
+"The special ``continue`` behavior in ``match`` supported in 3.x was removed "
+"in Godot 4.0."
+msgstr ""
 
 msgid "There are 6 pattern types:"
 msgstr "Es gibt 6 Arten von Mustern:"
@@ -1549,11 +2148,12 @@ msgstr ""
 msgid "Registering named classes"
 msgstr "Skripte als Klassen registrieren"
 
+#, fuzzy
 msgid ""
 "You can give your class a name to register it as a new type in Godot's "
-"editor. For that, you use the ``class_name`` keyword. You can optionally add "
-"a comma followed by a path to an image, to use it as an icon. Your class "
-"will then appear with its new icon in the editor::"
+"editor. For that, you use the ``class_name`` keyword. You can optionally use "
+"the ``@icon`` annotation with a path to an image, to use it as an icon. Your "
+"class will then appear with its new icon in the editor::"
 msgstr ""
 "Sie könne Ihrer Klasse einen Name geben, um sie als neuen Typ im Godot-"
 "Editor zu registrieren. Dazu verwenden Sie das Schlüsselwort ``class_name``. "
@@ -1561,27 +2161,19 @@ msgstr ""
 "hinzufügen, um es als Icon zu verwenden. Ihre Klasse wird dann mit ihrem "
 "neuen Icon im Editor erscheinen::"
 
-msgid ""
-"If the script is located in the ``res://addons/`` directory, ``class_name`` "
-"will only cause the node to show up in the **Create New Node** dialog if the "
-"script is part of an *enabled* editor plugin. See :ref:`doc_making_plugins` "
-"for more information."
-msgstr ""
-"Wenn sich das Skript im Verzeichnis ``res://addons/`` befindet, bewirkt "
-"``class_name`` nur dann, dass das Node im Dialog **Neues Node erstellen** "
-"angezeigt wird, wenn das Skript Teil eines *aktivierten* Editor-Plugins ist. "
-"Siehe :ref:`doc_making_plugins` für weitere Informationen."
-
 msgid "Here's a class file example:"
 msgstr "Hier ist ein Beispiel für eine Klassendatei:"
 
 msgid ""
-"Godot's class syntax is compact: it can only contain member variables or "
-"functions. You can use static functions, but not static member variables. In "
-"the same way, the engine initializes variables every time you create an "
-"instance, and this includes arrays and dictionaries. This is in the spirit "
-"of thread safety, since scripts can be initialized in separate threads "
-"without the user knowing."
+"If you want to use ``extends`` too, you can keep both on the same line::"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Godot initializes non-static variables every time you create an instance, "
+"and this includes arrays and dictionaries. This is in the spirit of thread "
+"safety, since scripts can be initialized in separate threads without the "
+"user knowing."
 msgstr ""
 "Die Klassensyntax von Godot ist kompakt: Sie kann nur Mitgliedsvariablen "
 "oder Funktionen enthalten. Sie können statische Funktionen verwenden, jedoch "
@@ -1613,25 +2205,31 @@ msgid "Inheritance uses the ``extends`` keyword::"
 msgstr "Vererbung benutzt das Schlüsselwort ``extends``:"
 
 msgid ""
+"If inheritance is not explicitly defined, the class will default to "
+"inheriting :ref:`class_RefCounted`."
+msgstr ""
+
+msgid ""
 "To check if a given instance inherits from a given class, the ``is`` keyword "
 "can be used::"
 msgstr ""
 "Um zu prüfen, ob eine gegebene Instanz von einer gegebenen Klasse erbt, "
 "verwendet man das Schlüsselwort ``is``:"
 
+#, fuzzy
 msgid ""
-"To call a function in a *parent class* (i.e. one ``extend``-ed in your "
-"current class), prepend ``.`` to the function name::"
+"To call a function in a *super class* (i.e. one ``extend``-ed in your "
+"current class), use the ``super`` keyword::"
 msgstr ""
 "Um eine Funktion in einer *übergeordneten Klasse* aufzurufen (d.h. eine "
 "``extend``-ed in Ihrer aktuellen Klasse), stellen Sie dem Funktionsnamen ein "
 "``.`` vor:"
 
+#, fuzzy
 msgid ""
 "This is especially useful because functions in extending classes replace "
-"functions with the same name in their parent classes. If you still want to "
-"call them, you can prefix them with ``.`` (like the ``super`` keyword in "
-"other languages)::"
+"functions with the same name in their super classes. If you still want to "
+"call them, you can use ``super``::"
 msgstr ""
 "Dies ist besonders nützlich, da Funktionen in erweiterten Klassen andere "
 "Funktionen mit demselben Namen in ihren übergeordneten Klassen ersetzen. "
@@ -1639,39 +2237,47 @@ msgstr ""
 "voranstellen (wie das Schlüsselwort ``super`` in anderen Sprachen):"
 
 msgid ""
-"Default functions like  ``_init``, and most notifications such as "
-"``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
-"are called in all parent classes automatically. There is no need to call "
-"them explicitly when overloading them."
+"If you need to call a different function from the super class, you can "
+"specify the function name with the attribute operator::"
 msgstr ""
-"Standardfunktionen wie ``_init``, und die meisten Benachrichtigungen wie "
-"``_enter_tree``, ``_exit_tree``, ``_process``, ``_physics_process``, etc. "
-"werden in allen Elternklassen automatisch aufgerufen. Es besteht keine "
-"Notwendigkeit, sie beim Überladen explizit aufzurufen."
+
+msgid ""
+"One of the common misconceptions is trying to override *non-virtual* engine "
+"methods such as ``get_class()``, ``queue_free()``, etc. This is not "
+"supported for technical reasons."
+msgstr ""
+
+msgid ""
+"In Godot 3, you can *shadow* engine methods in GDScript, and it will work if "
+"you call this method in GDScript. However, the engine will **not** execute "
+"your code if the method is called inside the engine on some event."
+msgstr ""
+
+msgid ""
+"In Godot 4, even shadowing may not always work, as GDScript optimizes native "
+"method calls. Therefore, we added the ``NATIVE_METHOD_OVERRIDE`` warning, "
+"which is treated as an error by default. We strongly advise against "
+"disabling or ignoring the warning."
+msgstr ""
+
+msgid ""
+"Note that this does not apply to virtual methods such as ``_ready()``, "
+"``_process()`` and others (marked with the ``virtual`` qualifier in the "
+"documentation and the names start with an underscore). These methods are "
+"specifically for customizing engine behavior and can be overridden in "
+"GDScript. Signals and notifications can also be useful for these purposes."
+msgstr ""
 
 msgid "Class constructor"
 msgstr "Klassen-Konstruktor"
 
 msgid ""
-"The class constructor, called on class instantiation, is named ``_init``. As "
-"mentioned earlier, the constructors of parent classes are called "
-"automatically when inheriting a class. So, there is usually no need to call "
-"``._init()`` explicitly."
+"The class constructor, called on class instantiation, is named ``_init``. If "
+"you want to call the base class constructor, you can also use the ``super`` "
+"syntax. Note that every class has an implicit constructor that it's always "
+"called (defining the default values of class variables). ``super`` is used "
+"to call the explicit constructor::"
 msgstr ""
-"Der Klassenkonstruktor, der bei der Klasseninstanziierung aufgerufen wird, "
-"heißt ``_init``. Wie bereits erwähnt, werden die Konstruktoren von "
-"Elternklassen bei der Vererbung einer Klasse automatisch aufgerufen. Es "
-"besteht also normalerweise keine Notwendigkeit, ``._init()`` explizit "
-"aufzurufen."
-
-msgid ""
-"Unlike the call of a regular function, like in the above example with ``."
-"some_func``, if the constructor from the inherited class takes arguments, "
-"they are passed like this::"
-msgstr ""
-"Anders als beim Aufruf einer regulären Funktion, wie im obigen Beispiel mit "
-"``.some_func``, werden Argumente, wenn der Konstruktor aus der geerbten "
-"Klasse Argumente entgegennimmt, wie folgt übergeben:"
 
 msgid "This is better explained through examples. Consider this scenario::"
 msgstr ""
@@ -1681,41 +2287,59 @@ msgstr ""
 msgid "There are a few things to keep in mind here:"
 msgstr "Hier müssen ein paar Sachen berücksichtigt werden:"
 
+#, fuzzy
 msgid ""
-"If the inherited class (``State.gd``) defines a ``_init`` constructor that "
-"takes arguments (``e`` in this case), then the inheriting class (``Idle."
+"If the inherited class (``state.gd``) defines a ``_init`` constructor that "
+"takes arguments (``e`` in this case), then the inheriting class (``idle."
 "gd``) *must* define ``_init`` as well and pass appropriate parameters to "
-"``_init`` from ``State.gd``."
+"``_init`` from ``state.gd``."
 msgstr ""
 "Wenn die geerbte Klasse (``State.gd``) einen ``_init``-Konstruktor "
 "definiert, der Argumente übernimmt (``e`` in diesem Fall), dann *muss* die "
 "vererbende Klasse (``Idle.gd``) ebenfalls ``_init`` definieren und passende "
 "Parameter an ``_init`` von ``State.gd`` übergeben."
 
+#, fuzzy
 msgid ""
-"``Idle.gd`` can have a different number of arguments than the parent class "
-"``State.gd``."
+"``idle.gd`` can have a different number of arguments than the base class "
+"``state.gd``."
 msgstr ""
 "``Idle.gd`` kann eine andere Anzahl an Argumenten besitzen als die "
 "Basisklasse ``State.gd``."
 
+#, fuzzy
 msgid ""
-"In the example above, ``e`` passed to the ``State.gd`` constructor is the "
-"same ``e`` passed in to ``Idle.gd``."
+"In the example above, ``e`` passed to the ``state.gd`` constructor is the "
+"same ``e`` passed in to ``idle.gd``."
 msgstr ""
 "Im obigen Beispiel ist das ``e`` im Konstruktor von ``State.gd`` das gleiche "
 "wie das ``e`` in ``Idle.gd``."
 
+#, fuzzy
 msgid ""
-"If ``Idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
-"pass some value to the ``State.gd`` parent class, even if it does nothing. "
-"This brings us to the fact that you can pass literals in the base "
+"If ``idle.gd``'s ``_init`` constructor takes 0 arguments, it still needs to "
+"pass some value to the ``state.gd`` base class, even if it does nothing. "
+"This brings us to the fact that you can pass expressions to the base "
 "constructor as well, not just variables, e.g.::"
 msgstr ""
 "Wenn der ``Idle.gd``'s ``_init`` Konstruktor 0 Argumente annimmt, muss er "
 "immer noch irgendeinen Wert an die ```State.gd`` Elternklasse übergeben, "
 "selbst wenn sie nichts tut. Das bringt uns zu der Tatsache, dass man auch im "
 "Basiskonstruktor Literale übergeben kann, nicht nur Variablen. z.B.:"
+
+#, fuzzy
+msgid "Static constructor"
+msgstr "Klassen-Konstruktor"
+
+msgid ""
+"A static constructor is a static function ``_static_init`` that is called "
+"automatically when the class is loaded, after the static variables have been "
+"initialized::"
+msgstr ""
+
+msgid ""
+"A static constructor cannot take arguments and must not return any value."
+msgstr ""
 
 msgid "Inner classes"
 msgstr "Innere Klassen"
@@ -1754,69 +2378,69 @@ msgstr ""
 "Die Dokumentation über Exportieren wurde nach :ref:`doc_gdscript_exports` "
 "verschoben."
 
-msgid "Setters/getters"
-msgstr "Setter/Getter"
+#, fuzzy
+msgid "Properties (setters and getters)"
+msgstr "Eigenschaften (set/get)"
 
+#, fuzzy
 msgid ""
-"It is often useful to know when a class' member variable changes for "
-"whatever reason. It may also be desired to encapsulate its access in some "
-"way."
+"Sometimes, you want a class' member variable to do more than just hold data "
+"and actually perform some validation or computation whenever its value "
+"changes. It may also be desired to encapsulate its access in some way."
 msgstr ""
 "Es ist oft hilfreich zu wissen, ob sich eine Variable einer Klasse "
 "verändert, aus welchen Gründen auch immer. Es ist vielleicht auch "
 "wünschenswert sie auf eine gewisse Art vor Zugriffen zu schützen."
 
 msgid ""
-"For this, GDScript provides a *setter/getter* syntax using the ``setget`` "
-"keyword. It is used directly after a variable definition:"
+"For this, GDScript provides a special syntax to define properties using the "
+"``set`` and ``get`` keywords after a variable declaration. Then you can "
+"define a code block that will be executed when the variable is accessed or "
+"assigned."
 msgstr ""
-"Dafür bietet GDScript einen *setter/getter* Syntax mit dem ``setget`` "
-"Schlüsselwort. Es wird direkt nach der Definition einer Variable genutzt:"
+
+#, fuzzy
+msgid "Example::"
+msgstr "Beispiel:"
 
 msgid ""
-"Whenever the value of ``variable`` is modified by an *external* source (i.e. "
-"not from local usage in the class), the *setter* function (``setterfunc`` "
-"above) will be called. This happens *before* the value is changed. The "
-"*setter* must decide what to do with the new value. Vice versa, when "
-"``variable`` is accessed, the *getter* function (``getterfunc`` above) must "
-"``return`` the desired value. Below is an example::"
+"Using the variable's name to set it inside its own setter or to get it "
+"inside its own getter will directly access the underlying member, so it "
+"won't generate infinite recursion and saves you from explicitly declaring "
+"another variable::"
 msgstr ""
-"Wann immer der Wert von ``variable`` durch eine *externe* Quelle modifiziert "
-"wird (d.h. nicht aus dem lokalen Gebrauch in der Klasse), wird die *setter* "
-"Funktion (oben ``setterfunc``) aufgerufen. Dies geschieht *bevor* der Wert "
-"geändert wird. Der *setter* muß entscheiden, was mit dem neuen Wert "
-"geschehen soll. Umgekehrt, wenn auf ``variable`` zugegriffen wird, muß die "
-"*getter*-Funktion (``getterfunc`` oben) den gewünschten Wert zurückgeben. "
-"Unten ist ein Beispiel:"
 
-msgid "Either of the *setter* or *getter* functions can be omitted::"
-msgstr "Eine der Funktionen *setter* oder *getter* kann weggelassen werden :"
+msgid "This backing member variable is not created if you don't use it."
+msgstr ""
 
 msgid ""
-"Setters and getters are useful when :ref:`exporting variables "
-"<doc_gdscript_exports>` to the editor in tool scripts or plugins, for "
-"validating input."
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called, even when accessed inside the same class (with "
+"or without prefixing with ``self.``). This makes the behavior consistent. If "
+"you need direct access to the value, use another variable for direct access "
+"and make the property code use that name."
 msgstr ""
-"Setter und Getter sind nützlich, wenn :ref:`Variablen "
-"<doc_gdscript_exports>` in Skripten oder Plugins zum Editor exportiert "
-"werden, um Eingaben zu validieren."
 
 msgid ""
-"As said, *local* access will *not* trigger the setter and getter. Here is an "
-"illustration of this:"
+"In case you want to split the code from the variable declaration or you need "
+"to share the code across multiple properties, you can use a different "
+"notation to use existing class functions::"
 msgstr ""
-"Wie gesagt, *lokaler* Zugriff wird *nicht* den Setter und Getter auslösen. "
-"Hier ist eine Veranschaulichung dafür:"
+
+#, fuzzy
+msgid "This can also be done in the same line."
+msgstr "Füllen Sie das Formular mit den folgenden Einstellungen aus:"
 
 msgid "Tool mode"
 msgstr "Werkzeug-Modus"
 
+#, fuzzy
 msgid ""
 "By default, scripts don't run inside the editor and only the exported "
 "properties can be changed. In some cases, it is desired that they do run "
 "inside the editor (as long as they don't execute game code or manually avoid "
-"doing so). For this, the ``tool`` keyword exists and must be placed at the "
-"top of the file::"
+"doing so). For this, the ``@tool`` annotation exists and must be placed at "
+"the top of the file::"
 msgstr ""
 "Standardmäßig werden Skripte nicht innerhalb des Editors ausgeführt und nur "
 "die exportierten Eigenschaften können geändert werden. In einigen Fällen ist "
@@ -1841,22 +2465,27 @@ msgid "Memory management"
 msgstr "Speicher-Management"
 
 msgid ""
-"If a class inherits from :ref:`class_Reference`, then instances will be "
-"freed when no longer in use. No garbage collector exists, just reference "
-"counting. By default, all classes that don't define inheritance extend "
-"**Reference**. If this is not desired, then a class must inherit :ref:"
-"`class_Object` manually and must call ``instance.free()``. To avoid "
-"reference cycles that can't be freed, a :ref:`class_WeakRef` function is "
-"provided for creating weak references. Here is an example:"
+"Godot implements reference counting to free certain instances that are no "
+"longer used, instead of a garbage collector, or requiring purely manual "
+"management. Any instance of the :ref:`class_RefCounted` class (or any class "
+"that inherits it, such as :ref:`class_Resource`) will be freed automatically "
+"when no longer in use. For an instance of any class that is not a :ref:"
+"`class_RefCounted` (such as :ref:`class_Node` or the base :ref:"
+"`class_Object` type), it will remain in memory until it is deleted with "
+"``free()`` (or ``queue_free()`` for Nodes)."
 msgstr ""
-"Wenn eine Klasse von :ref:`class_Reference` erbt, werden nicht mehr "
-"verwendete Instanzen freigegeben. Es gibt keinen Garbage Collector, nur "
-"Referenzzählung. Standardmäßig erweitern alle Klassen **Referenz**, die "
-"keine Vererbung definieren. Wenn dies nicht erwünscht ist, muss eine Klasse :"
-"ref:`class_Object` manuell erben und ``instance.free()`` aufrufen. Um "
-"Referenzzyklen zu vermeiden, die nicht freigegeben werden können, wird eine "
-"Funktion ``weakref`` zum Erstellen schwacher Referenzen bereitgestellt. Hier "
-"ist ein Beispiel:"
+
+msgid ""
+"If a :ref:`class_Node` is deleted via ``free()`` or ``queue_free()``, all of "
+"its children will also recursively be deleted."
+msgstr ""
+
+msgid ""
+"To avoid reference cycles that can't be freed, a :ref:`class_WeakRef` "
+"function is provided for creating weak references, which allow access to the "
+"object without preventing a :ref:`class_RefCounted` from freeing. Here is an "
+"example:"
+msgstr ""
 
 msgid ""
 "Alternatively, when not using references, the "
@@ -1892,18 +2521,20 @@ msgstr ""
 "gameprogrammingpatterns.com/observer.html>` _ im eBook "
 "Spielprogrammiermuster."
 
+#, fuzzy
 msgid ""
 "You can connect these signals to methods the same way you connect built-in "
-"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody`."
+"signals of nodes like :ref:`class_Button` or :ref:`class_RigidBody3D`."
 msgstr ""
 "Sie können diese Signale auf dieselbe Weise mit Methoden verbinden, wie Sie "
 "integrierte Signale von Nodes wie :ref:`class_Button` oder :ref:` "
 "class_RigidBody` verbinden."
 
+#, fuzzy
 msgid ""
 "In the example below, we connect the ``health_depleted`` signal from a "
 "``Character`` node to a ``Game`` node. When the ``Character`` node emits the "
-"signal, the game node's ``_on_Character_health_depleted`` is called::"
+"signal, the game node's ``_on_character_health_depleted`` is called::"
 msgstr ""
 "Im folgenden Beispiel verbinden wir das Signal \"health_depleted\" von einem "
 "\"Character\" -Node mit einem \"Game\" -Node. Wenn der ``Character``-Node "
@@ -1925,26 +2556,18 @@ msgstr ""
 "Gesundheitsänderungen reagiert, aber wir möchten in unserem Szenenbaum die "
 "Benutzeroberfläche vom Spieler getrennt halten."
 
+#, fuzzy
 msgid ""
-"In our ``Character.gd`` script, we define a ``health_changed`` signal and "
-"emit it with :ref:`Object.emit_signal() <class_Object_method_emit_signal>`, "
-"and from a ``Game`` node higher up our scene tree, we connect it to the "
-"``Lifebar`` using the :ref:`Object.connect() <class_Object_method_connect>` "
-"method::"
+"In our ``character.gd`` script, we define a ``health_changed`` signal and "
+"emit it with :ref:`Signal.emit() <class_Signal_method_emit>`, and from a "
+"``Game`` node higher up our scene tree, we connect it to the ``Lifebar`` "
+"using the :ref:`Signal.connect() <class_Signal_method_connect>` method::"
 msgstr ""
 "In unserem ``Character.gd`` -Skript definieren wir ein ``health_changed`` "
 "Signal und senden es mit :ref:`Object.emit_signal() "
 "<class_Object_method_emit_signal>` und von einem ``Game`` Node weiter oben "
 "im Szenenbaum, wir verbinden ihn mit der ``Lebensleiste`` mit der :ref:"
 "`Object.connect() <class_Object_method_connect>` Methode:"
-
-msgid ""
-"To use signals, your class has to extend the ``Object`` class or any type "
-"extending it like ``Node``, ``KinematicBody``, ``Control``..."
-msgstr ""
-"Um Signale zu verwenden, muss Ihre Klasse die ``Objekt``-Klasse oder einen "
-"beliebigen Typ erweitern, wie zum Beispiel ``Node``, ``KinematicBody``, "
-"``Control`` ..."
 
 msgid ""
 "In the ``Game`` node, we get both the ``Character`` and ``Lifebar`` nodes, "
@@ -2021,127 +2644,57 @@ msgstr ""
 "Unser ``BattleLog`` -Node empfängt jedes Element im Binds-Array als "
 "zusätzliches Argument :"
 
-msgid "Coroutines with yield"
-msgstr "Co-Routinen mit yield"
+#, fuzzy
+msgid "Awaiting for signals or coroutines"
+msgstr "Originalinhalt suchen"
 
 msgid ""
-"GDScript offers support for `coroutines <https://en.wikipedia.org/wiki/"
-"Coroutine>`_ via the :ref:`yield<class_@GDScript_method_yield>` built-in "
-"function. Calling ``yield()`` will immediately return from the current "
-"function, with the current frozen state of the same function as the return "
-"value. Calling ``resume()`` on this resulting object will continue execution "
-"and return whatever the function returns. Once resumed, the state object "
-"becomes invalid. Here is an example::"
+"The ``await`` keyword can be used to create `coroutines <https://en."
+"wikipedia.org/wiki/Coroutine>`_ which wait until a signal is emitted before "
+"continuing execution. Using the ``await`` keyword with a signal or a call to "
+"a function that is also a coroutine will immediately return the control to "
+"the caller. When the signal is emitted (or the called coroutine finishes), "
+"it will resume execution from the point on where it stopped."
 msgstr ""
-"GDScript bietet Unterstützung für die integrierte Funktion "
-"`Coroutinen<https://en.wikipedia.org/wiki/Coroutine>` _ über die integrierte "
-"Funktion :ref:`yield <class_ @ GDScript_method_yield>`. Das Aufrufen von "
-"``Yield()`` kehrt sofort von der aktuellen Funktion zurück, wobei der "
-"aktuelle eingefrorene Zustand dieselbe Funktion wie der Rückgabewert hat. "
-"Wenn Sie für dieses resultierende Objekt ``resume()`` aufrufen, wird die "
-"Ausführung fortgesetzt und alles zurückgegeben, was die Funktion zurückgibt. "
-"Nach der Wiederaufnahme wird das Statusobjekt ungültig. Hier ist ein "
-"Beispiel:"
-
-msgid "Will print::"
-msgstr "Ausgabe:"
 
 msgid ""
-"It is also possible to pass values between ``yield()`` and ``resume()``, for "
-"example::"
+"For example, to stop execution until the user presses a button, you can do "
+"something like this::"
 msgstr ""
-"Es ist auch möglich Werte zwischen ``yield()`` und ``resume()`` zu "
-"übergeben, zum Beispiel:"
 
 msgid ""
-"Remember to save the new function state, when using multiple ``yield``\\s::"
+"In this case, the ``wait_confirmation`` becomes a coroutine, which means "
+"that the caller also needs to await for it::"
 msgstr ""
-"Denken Sie daran, den neuen Funktionsstatus zu speichern, wenn Sie mehrere "
-"``yield``\\s verwenden:"
-
-msgid "Coroutines & signals"
-msgstr "Co-Routinen & Signale"
 
 msgid ""
-"The real strength of using ``yield`` is when combined with signals. "
-"``yield`` can accept two arguments, an object and a signal. When the signal "
-"is received, execution will recommence. Here are some examples::"
+"Note that requesting a coroutine's return value without ``await`` will "
+"trigger an error::"
 msgstr ""
-"Die wahre Stärke der Verwendung von ``yield`` liegt in der Kombination mit "
-"Signalen. ``yield`` kann zwei Argumente akzeptieren, ein Objekt und ein "
-"Signal. Wenn das Signal empfangen wird, beginnt die Ausführung erneut. Hier "
-"sind einige Beispiele:"
 
 msgid ""
-"Coroutines themselves use the ``completed`` signal when they transition into "
-"an invalid state, for example::"
+"However, if you don't depend on the result, you can just call it "
+"asynchronously, which won't stop execution and won't make the current "
+"function a coroutine::"
 msgstr ""
-"Koroutinen selbst verwenden das Signal ``completed``, wenn sie in einen "
-"ungültigen Zustand übergehen, zum Beispiel:"
 
 msgid ""
-"``my_func`` will only continue execution once both buttons have been pressed."
+"If you use await with an expression that isn't a signal nor a coroutine, the "
+"value will be returned immediately and the function won't give the control "
+"back to the caller::"
 msgstr ""
-"``my_func`` wird erst weiter ausgeführt, sobald beide Buttons gedrückt "
-"wurden."
-
-msgid "You can also get the signal's argument once it's emitted by an object:"
-msgstr ""
-"Sie können das Argument des Signals auch abfragen, sobald es von einem "
-"Objekt ausgegeben wird:"
 
 msgid ""
-"If there is more than one argument, ``yield`` returns an array containing "
-"the arguments::"
+"This also means that returning a signal from a function that isn't a "
+"coroutine will make the caller await on that signal::"
 msgstr ""
-"Wenn mehr als ein Argument angegeben wird, gibt ``yield`` ein Array zurück, "
-"das diese Argumente enthält:"
 
 msgid ""
-"If you're unsure whether a function may yield or not, or whether it may "
-"yield multiple times, you can yield to the ``completed`` signal "
-"conditionally:"
+"Unlike ``yield`` in previous Godot versions, you cannot obtain the function "
+"state object. This is done to ensure type safety. With this type safety in "
+"place, a function cannot say that it returns an ``int`` while it actually "
+"returns a function state object during runtime."
 msgstr ""
-"Sollten Sie sich unsicher sein, ob eine Funktion nachgibt oder nicht, oder "
-"ob sie mehrfach nachgeben kann, können Sie bedingt bis zum ``completed`` "
-"Signal nachgeben:"
-
-msgid ""
-"This ensures that the function returns whatever it was supposed to return "
-"regardless of whether coroutines were used internally. Note that using "
-"``while`` would be redundant here as the ``completed`` signal is only "
-"emitted when the function didn't yield anymore."
-msgstr ""
-"Dies stellt sicher, dass die Funktion alles zurückgibt, was sie zurückgeben "
-"sollte, unabhängig davon, ob Coroutinen intern verwendet wurden. Beachten "
-"Sie, dass die Verwendung von ``während`` hier redundant wäre, da das Signal "
-"``abgeschlossen`` nur ausgegeben wird, wenn die Funktion nicht mehr nachgibt."
-
-msgid "`onready` keyword"
-msgstr "`onready` Schlüsselwort"
-
-msgid ""
-"When using nodes, it's common to desire to keep references to parts of the "
-"scene in a variable. As scenes are only warranted to be configured when "
-"entering the active scene tree, the sub-nodes can only be obtained when a "
-"call to ``Node._ready()`` is made."
-msgstr ""
-"Bei der Verwendung von Nodes ist es üblich, Verweise auf Teile der Szene in "
-"einer Variablen zu behalten. Da Szenen nur beim Aufrufen des aktiven "
-"Szenenbaums konfiguriert werden müssen, können die Unterknoten nur abgerufen "
-"werden, wenn ein Aufruf von \"Node._ready()\" erfolgt."
-
-msgid ""
-"This can get a little cumbersome, especially when nodes and external "
-"references pile up. For this, GDScript has the ``onready`` keyword, that "
-"defers initialization of a member variable until ``_ready()`` is called. It "
-"can replace the above code with a single line::"
-msgstr ""
-"Dies kann etwas umständlich werden, insbesondere wenn sich Nodes und externe "
-"Referenzen häufen. Zu diesem Zweck hat GDScript das Schlüsselwort "
-"\"onready\", das die Initialisierung einer Mitgliedsvariablen verzögert, bis "
-"\"_ready()\" \"aufgerufen wird. Es kann den obigen Code durch eine einzelne "
-"Zeile ersetzen :"
 
 msgid "Assert keyword"
 msgstr "Assert Schlüsselwort"
@@ -2168,6 +2721,11 @@ msgid ""
 msgstr ""
 "Wenn Sie ein Projekt über den Editor ausführen, wird das Projekt angehalten, "
 "wenn ein Behauptung Fehler auftritt."
+
+msgid ""
+"You can optionally pass a custom error message to be shown if the assertion "
+"fails::"
+msgstr ""
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

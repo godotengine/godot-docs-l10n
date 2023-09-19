@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Custom AudioStreams"
+msgstr "カスタムAudioStream"
+
+msgid "Introduction"
+msgstr "はじめに"
+
+msgid ""
+"AudioStream is the base class of all audio emitting objects. "
+"AudioStreamPlayer binds onto an AudioStream to emit PCM data into an "
+"AudioServer which manages audio drivers."
+msgstr ""
+"AudioStream は、すべてのオーディオ放出オブジェクトの基本クラスです。"
+"AudioStreamPlayerはAudioStreamにバインドされ、オーディオドライバを管理する"
+"AudioServerにPCMデータを放出します。"
+
+msgid ""
+"All audio resources require two audio based classes: AudioStream and "
+"AudioStreamPlayback. As a data container, AudioStream contains the resource "
+"and exposes itself to GDScript. AudioStream references its own internal "
+"custom AudioStreamPlayback which translates AudioStream into PCM data."
+msgstr ""
+"すべてのオーディオリソースには、オーディオストリームとオーディオストリーム再"
+"生の2つのオーディオベースのクラスが必要です。データコンテナとして、"
+"AudioStreamにはリソースが含まれ、GDScriptに公開されます。AudioStreamは、オー"
+"ディオストリームをPCMデータに変換する独自の内部カスタムAudioStream再生を参照"
+"します。"
+
+#, fuzzy
+msgid ""
+"This guide assumes the reader knows how to create C++ modules. If not, refer "
+"to this guide :ref:`doc_custom_modules_in_cpp`."
+msgstr ""
+"このガイドでは、読者がC++モジュールの作成方法を理解していることを前提としてい"
+"ます。そうでない場合は、このガイドを参照してください\\ :ref:"
+"`doc_custom_modules_in_c++`\\ 。"
+
+msgid "References:"
+msgstr "リファレンス:"
+
+msgid ""
+"`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
+"master/servers/audio/audio_stream.h>`__"
+msgstr ""
+"`servers/audio/audio_stream.h <https://github.com/godotengine/godot/blob/"
+"master/servers/audio/audio_stream.h>`_"
+
+msgid ""
+"`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
+"master/scene/audio/audio_player.cpp>`__"
+msgstr ""
+"`scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
+"master/scene/audio/audio_player.cpp>`_"
+
+msgid "What for?"
+msgstr "何のために？"
+
+msgid "Binding external libraries (like Wwise, FMOD, etc)."
+msgstr "外部ライブラリ(Wwise、FMOD など)をバインドします。"
+
+msgid "Adding custom audio queues"
+msgstr "カスタムオーディオキューの追加"
+
+msgid "Adding support for more audio formats"
+msgstr "より多くのオーディオフォーマットのサポートを追加する"
+
+msgid "Create an AudioStream"
+msgstr "オーディオストリームを作成する"
+
+msgid ""
+"An AudioStream consists of three components: data container, stream name, "
+"and an AudioStreamPlayback friend class generator. Audio data can be loaded "
+"in a number of ways such as with an internal counter for a tone generator, "
+"internal/external buffer, or a file reference."
+msgstr ""
+"AudioStreamは、データコンテナ、ストリーム名、およびAudioStreamPlaybackフレン"
+"ドクラス ジェネレータの3つのコンポーネントで構成されます。オーディオ データ"
+"は、トーンジェネレータの内部カウンタ、内部/外部バッファ、ファイル参照など、さ"
+"まざまな方法で読み込むことができます。"
+
+#, fuzzy
+msgid ""
+"Some AudioStreams need to be stateless such as objects loaded from "
+"ResourceLoader. ResourceLoader loads once and references the same object "
+"regardless how many times ``load`` is called on a specific resource. "
+"Therefore, playback state must be self-contained in AudioStreamPlayback."
+msgstr ""
+"一部のAudioStreamは、ResourceLoaderから読み込まれたオブジェクトなど、ステート"
+"レスである必要があります。ResourceLoaderは、特定のリソースで ``load`` が呼び"
+"出された回数に関係なく、同じオブジェクトを1回読み込み、同じオブジェクトを参照"
+"します。したがって、再生状態はAudioStreamPlaybackに自己完結している必要があり"
+"ます。"
+
+msgid "Create an AudioStreamPlayback"
+msgstr "オーディオストリームPlaybackを作成する"
+
+msgid ""
+"AudioStreamPlayer uses ``mix`` callback to obtain PCM data. The callback "
+"must match sample rate and fill the buffer."
+msgstr ""
+"AudioStreamPlayerは、PCMデータを取得するために ``mix`` コールバックを使用しま"
+"す。コールバックはサンプルレートと一致し、バッファを満たす必要があります。"
+
+msgid ""
+"Since AudioStreamPlayback is controlled by the audio thread, i/o and dynamic "
+"memory allocation are forbidden."
+msgstr ""
+"AudioStreamPlaybackはオーディオスレッドによって制御されるので、i/o および動的"
+"メモリの割り当ては禁止されています。"
+
+msgid "Resampling"
+msgstr "リサンプリング"
+
+#, fuzzy
+msgid ""
+"Godot's AudioServer currently uses 44100 Hz sample rate. When other sample "
+"rates are needed such as 48000, either provide one or use "
+"AudioStreamPlaybackResampled. Godot provides cubic interpolation for audio "
+"resampling."
+msgstr ""
+"GodotのAudioServerは現在44100Hzのサンプルレートを使用しています。48000Hzなど"
+"の他のサンプルレートが必要な場合は、1つを提供するか、"
+"AudioStreamPlaybackResampledを使用します。Godotは、オーディオリサンプリング用"
+"の立方体補間を提供します。"
+
+msgid ""
+"Instead of overloading ``mix``, AudioStreamPlaybackResampled uses "
+"``_mix_internal`` to query AudioFrames and ``get_stream_sampling_rate`` to "
+"query current mix rate."
+msgstr ""
+"``mix`` をオーバーロードする代わりに、AudioStreamPlaybackResampleサンプリング"
+"では、オーディオフレームを照会するために ``_mix_internal`` を使用し、現在の"
+"ミックスレートを照会するために ``get_stream_sampling_rate`` を使用します。"
+
+msgid ""
+"`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
+"core/math/audio_frame.h>`__"
+msgstr ""
+"`core/math/audio_frame.h <https://github.com/godotengine/godot/blob/master/"
+"core/math/audio_frame.h>`_"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

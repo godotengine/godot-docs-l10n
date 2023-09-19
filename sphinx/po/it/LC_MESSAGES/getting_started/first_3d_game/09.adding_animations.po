@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,8 +47,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Open the player scene, select the player node, and add an *AnimationPlayer* "
-"node."
+"Open the player scene, select the ``Player`` node, and add an :ref:"
+"`AnimationPlayer <class_AnimationPlayer>` node."
 msgstr ""
 
 msgid "The *Animation* dock appears in the bottom panel."
@@ -86,7 +86,7 @@ msgid "image3"
 msgstr "image3"
 
 msgid ""
-"Once you created the animation, the timeline appears with numbers "
+"Once you've created the animation, the timeline appears with numbers "
 "representing time in seconds."
 msgstr ""
 
@@ -169,13 +169,13 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Let's insert our first keys. Here, we will animate both the translation and "
-"the rotation of the *Character* node."
+"Let's insert our first keys. Here, we will animate both the position and the "
+"rotation of the ``Character`` node."
 msgstr ""
 
 msgid ""
-"Select the *Character* and click the key icon next to *Translation* in the "
-"*Inspector*. Do the same for *Rotation Degrees*."
+"Select the ``Character`` and in the *Inspector* expand the *Transform* "
+"section. Click the key icon next to *Position*, and *Rotation*."
 msgstr ""
 
 msgid "|image10|"
@@ -183,6 +183,10 @@ msgstr "|image10|"
 
 msgid "image10"
 msgstr "image10"
+
+msgid ""
+"For this tutorial, just create RESET Track(s) which is the default choice"
+msgstr ""
 
 msgid ""
 "Two tracks appear in the editor with a diamond icon representing each "
@@ -197,7 +201,7 @@ msgstr "image11"
 
 msgid ""
 "You can click and drag on the diamonds to move them in time. Move the "
-"translation key to ``0.2`` seconds and the rotation key to ``0.1`` seconds."
+"position key to ``0.2`` seconds and the rotation key to ``0.1`` seconds."
 msgstr ""
 
 msgid "|image12|"
@@ -208,8 +212,12 @@ msgstr "image12"
 
 msgid ""
 "Move the time cursor to ``0.5`` seconds by clicking and dragging on the gray "
-"timeline. In the *Inspector*, set the *Translation*'s *Y* axis to about "
-"``0.65`` meters and the *Rotation Degrees*' *X* axis to ``8``."
+"timeline."
+msgstr ""
+
+msgid ""
+"In the *Inspector*, set the *Position*'s *Y* axis to ``0.65`` meters and the "
+"*Rotation*' *X* axis to ``8``."
 msgstr ""
 
 msgid "|image13|"
@@ -218,9 +226,12 @@ msgstr "|image13|"
 msgid "image13"
 msgstr "image13"
 
+msgid "Create a keyframe for both properties"
+msgstr ""
+
 msgid ""
-"Create a keyframe for both properties and shift the translation key to "
-"``0.7`` seconds by dragging it on the timeline."
+"Now, move the position keyframe to ``0.7`` seconds by dragging it on the "
+"timeline."
 msgstr ""
 
 msgid "|image14|"
@@ -239,8 +250,8 @@ msgstr ""
 
 msgid ""
 "Move the time cursor to the end of the animation, at ``1.2`` seconds. Set "
-"the Y translation to about ``0.35`` and the X rotation to ``-9`` degrees. "
-"Once again, create a key for both properties."
+"the Y position to about ``0.35`` and the X rotation to ``-9`` degrees. Once "
+"again, create a key for both properties."
 msgstr ""
 
 msgid ""
@@ -312,8 +323,7 @@ msgid "image19"
 msgstr "image19"
 
 msgid ""
-"Do the opposite for the second translation keyframe, dragging it to the "
-"right."
+"Do the opposite for the second position keyframe, dragging it to the right."
 msgstr ""
 
 msgid "|image20|"
@@ -344,8 +354,8 @@ msgid "If you play the game, the player's creature will now float!"
 msgstr ""
 
 msgid ""
-"If the creature is a little too close to the floor, you can move the *Pivot* "
-"up to offset it."
+"If the creature is a little too close to the floor, you can move the "
+"``Pivot`` up to offset it."
 msgstr ""
 
 #, fuzzy
@@ -357,7 +367,7 @@ msgid ""
 "input. Let's change the animation speed when the character is moving."
 msgstr ""
 
-msgid "Open the *Player*'s script by clicking the script icon next to it."
+msgid "Open the ``Player``'s script by clicking the script icon next to it."
 msgstr ""
 
 msgid "|image22|"
@@ -377,9 +387,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"We mentioned that the pivot could layer transforms on top of the animation. "
-"We can make the character arc when jumping using the following line of code. "
-"Add it at the end of ``_physics_process()``."
+"We mentioned that the ``Pivot`` could layer transforms on top of the "
+"animation. We can make the character arc when jumping using the following "
+"line of code. Add it at the end of ``_physics_process()``."
 msgstr ""
 
 #, fuzzy
@@ -392,15 +402,18 @@ msgid ""
 msgstr ""
 
 msgid ""
-"For example, both the *Mob* and the *Player* scenes have a *Pivot* and a "
-"*Character* node, so we can reuse animations between them."
+"For example, both the ``Mob`` and the ``Player`` scenes have a ``Pivot`` and "
+"a ``Character`` node, so we can reuse animations between them."
 msgstr ""
 
 msgid ""
-"Open the *Player* scene, select the animation player node and open the "
-"\"float\" animation. Next, click on **Animation > Copy**. Then open ``Mob."
-"tscn`` and open its animation player. Click **Animation > Paste**. That's "
-"it; all monsters will now play the float animation."
+"Open the *Player* scene, select the AnimationPlayer node and open the "
+"\"float\" animation. Next, click on **Animation > Copy**. Then open ``mob."
+"tscn``, create an AnimationPlayer child node and select it. Click "
+"**Animation > Paste** and make sure that the button with an \"A+\" icon "
+"(Autoplay on Load) and the looping arrows (Animation looping) are also "
+"turned on in the animation editor in the bottom panel. That's it; all "
+"monsters will now play the float animation."
 msgstr ""
 
 msgid ""

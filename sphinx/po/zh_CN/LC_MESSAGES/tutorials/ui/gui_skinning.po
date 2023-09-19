@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,12 +136,22 @@ msgstr ""
 "字体包含了许多渲染设置，像字体的大小和颜色。之后呢，用另一个单独的控件来控制"
 "对齐属性和文字方向。"
 
+#, fuzzy
+msgid "**Font size**"
+msgstr "**字体**"
+
+msgid ""
+"An integer value, which is used alongside a font to determine the size at "
+"which the text should be displayed."
+msgstr ""
+
 msgid "**Icon**"
 msgstr "**图标**"
 
+#, fuzzy
 msgid ""
-"A :ref:`texture <class_Texture>` resource, which is normally used to display "
-"an icon (on a :ref:`Button <class_Button>`, for example)."
+"A :ref:`texture <class_Texture2D>` resource, which is normally used to "
+"display an icon (on a :ref:`Button <class_Button>`, for example)."
 msgstr ""
 "一个材质资源（\\ :ref:`texture <class_Texture>`\\ ），通常用于显示一个图标或"
 "者图片（例如在按钮中 :ref:`Button <class_Button>`\\ ）。"
@@ -373,7 +383,8 @@ msgstr "综上所述，对于任意控件，其主题项的查找会是这样的
 msgid "Check for local overrides of the same data type and name."
 msgstr "检查相同数据类型和名称的本地重写。"
 
-msgid "Using control's class name and parent class names:"
+#, fuzzy
+msgid "Using control's type variation, class name and parent class names:"
 msgstr "使用控件的类名和父类名："
 
 msgid ""
@@ -396,11 +407,16 @@ msgid ""
 "node is reached."
 msgstr "重复步骤 a 至 c，到场景树的根节点或者非控件节点为止。"
 
+#, fuzzy
 msgid ""
-"Using control's class name check the project-wide theme, if it's present."
+"Using control's type variation, class name and parent class names check the "
+"project-wide theme, if it's present."
 msgstr "如果存在项目范围的主题，就在这个主题中查找控件的类名。"
 
-msgid "Using control's class name check the default theme."
+#, fuzzy
+msgid ""
+"Using control's type variation, class name and parent class names check the "
+"default theme."
 msgstr "在默认主题中查找控件的类名。"
 
 msgid ""

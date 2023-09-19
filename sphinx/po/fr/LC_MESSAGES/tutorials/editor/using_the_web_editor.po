@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,13 +73,9 @@ msgid "**Mobile browsers are currently not supported.**"
 msgstr "**Les navigateurs mobiles ne sont actuellement pas pris en charge.**"
 
 msgid ""
-"The web editor supports both the GLES3 and GLES2 renderers, although GLES2 "
-"is recommended for better performance and compatibility with old/low-end "
-"hardware."
+"The web editor only supports the Compatibility rendering method, as there is "
+"no stable way to run Vulkan applications on the web yet."
 msgstr ""
-"L'éditeur Web prend en charge les moteurs de rendu GLES3 et GLES2, bien que "
-"GLES2 soit recommandé pour de meilleures performances et une meilleure "
-"compatibilité avec le matériel ancien / bas de gamme."
 
 msgid ""
 "If you use Linux, due to `poor Firefox WebGL performance <https://bugzilla."
@@ -103,7 +99,8 @@ msgstr ""
 msgid "No C#/Mono support."
 msgstr "Pas de support C#/Mono."
 
-msgid "No GDNative support."
+#, fuzzy
+msgid "No GDExtension support."
 msgstr "GDNative non supporté."
 
 msgid ""
@@ -178,8 +175,9 @@ msgstr ""
 "Spécifiez un fichier ZIP à précharger sur le système de fichiers HTML5 à "
 "l'aide de l'entrée **Préchargement du projet ZIP**."
 
+#, fuzzy
 msgid ""
-"Run the editor by clicking **Start Godot editor**. The Godot project manager "
+"Run the editor by clicking **Start Godot editor**. The Godot Project Manager "
 "should appear after 10-20 seconds. On slower machines or connections, "
 "loading may take up to a minute."
 msgstr ""

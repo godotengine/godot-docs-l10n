@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,7 +52,7 @@ msgstr ""
 "principali vantaggi sono che:"
 
 #, fuzzy
-msgid "The language is simple and easy to learn."
+msgid "The language is easy to get started with."
 msgstr "Il linguaggio è semplice e facile da imparare."
 
 #, fuzzy
@@ -65,9 +65,8 @@ msgstr ""
 msgid "Less code written means less errors & mistakes to fix."
 msgstr "Meno codice scritto significa meno errori ed errori da correggere."
 
-#, fuzzy
-msgid "Easier to read the code (less clutter)."
-msgstr "Più facile leggere il codice (meno disordine)."
+msgid "The code is easy to read (little clutter)."
+msgstr ""
 
 #, fuzzy
 msgid "No compilation is required to test."
@@ -77,7 +76,7 @@ msgstr "Non è richiesta alcuna compilazione per il test."
 msgid "Runtime is tiny."
 msgstr "Il tempo di esecuzione è minuscolo."
 
-msgid "Duck-typing and polymorphism by nature."
+msgid "It has duck-typing and polymorphism by nature."
 msgstr ""
 
 #, fuzzy
@@ -89,7 +88,7 @@ msgid "Less performance than statically typed languages."
 msgstr "Meno prestazioni rispetto ai linguaggi tipizzati staticamente."
 
 #, fuzzy
-msgid "More difficult to refactor (symbols can't be traced)"
+msgid "More difficult to refactor (symbols can't be traced)."
 msgstr ""
 "Più difficile da rifattorizzare (i simboli non possono essere tracciati)"
 
@@ -105,10 +104,10 @@ msgid ""
 msgstr ""
 
 msgid ""
-"This, translated to reality, means that Godot+GDScript are a combination "
-"designed to create games quickly and efficiently. For games that are very "
-"computationally intensive and can't benefit from the engine built-in tools "
-"(such as the Vector types, Physics Engine, Math library, etc), the "
+"This, translated to reality, means that Godot used with GDScript is a "
+"combination designed to create games quickly and efficiently. For games that "
+"are very computationally intensive and can't benefit from the engine built-"
+"in tools (such as the Vector types, Physics Engine, Math library, etc), the "
 "possibility of using C++ is present too. This allows you to still create "
 "most of the game in GDScript and add small bits of C++ in the areas that "
 "need a performance boost."
@@ -165,38 +164,12 @@ msgid "GDScript:"
 msgstr "GDScript:"
 
 msgid ""
-"In GDScript, only base types (int, float, String and PoolArray types) are "
+"In GDScript, only base types (int, float, string and the vector types) are "
 "passed by value to functions (value is copied). Everything else (instances, "
-"Arrays, Dictionaries, etc) is passed as reference. Classes that inherit :ref:"
-"`class_Reference` (the default if nothing is specified) will be freed when "
+"arrays, dictionaries, etc) is passed as reference. Classes that inherit :ref:"
+"`class_RefCounted` (the default if nothing is specified) will be freed when "
 "not used, but manual memory management is allowed too if inheriting manually "
 "from :ref:`class_Object`."
-msgstr ""
-
-msgid ""
-"A value is **passed by value** when it is copied every time it's specified "
-"as a function parameter. One consequence of this is that the function cannot "
-"modify the parameter in a way that is visible from outside the function::"
-msgstr ""
-
-msgid ""
-"A value is **passed by reference** when it is *not* copied every time it's "
-"specified as a function parameter. This allows modifying a function "
-"parameter within a function body (and having the modified value accessible "
-"outside the function). The downside is that the data passed as a function "
-"parameter is no longer guaranteed to be immutable, which can cause difficult-"
-"to-track bugs if not done carefully::"
-msgstr ""
-
-msgid ""
-"Compared to passing by value, passing by reference can perform better when "
-"using large objects since copying large objects in memory can be slow."
-msgstr ""
-
-msgid ""
-"Additionally, in Godot, base types such as String are **immutable**. This "
-"means that modifying them will *always* return a copy of the original value, "
-"rather than modifying the value in-place."
 msgstr ""
 
 #, fuzzy
@@ -249,7 +222,7 @@ msgstr ""
 
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
-"with dictionaries. Here's a simple battleship game example:"
+"with dictionaries. Here's a battleship game example:"
 msgstr ""
 
 msgid ""
@@ -262,10 +235,14 @@ msgstr ""
 msgid "For & while"
 msgstr "For e while"
 
-msgid "Iterating in some statically typed languages can be quite complex:"
+msgid ""
+"Iterating using the C-style for loop in C-derived languages can be quite "
+"complex:"
 msgstr ""
 
-msgid "This is usually greatly simplified in dynamically typed languages:"
+msgid ""
+"Because of this, GDScript makes the opinionated decision to have a for-in "
+"loop over iterables instead:"
 msgstr ""
 
 msgid ""
@@ -279,14 +256,14 @@ msgstr ""
 msgid "The range() function can take 3 arguments:"
 msgstr ""
 
-msgid "Some statically typed programming language examples:"
+msgid "Some examples involving C-style for loops:"
 msgstr ""
 
 #, fuzzy
 msgid "Translate to:"
 msgstr "Traduci in:"
 
-msgid "And backwards looping is done through a negative counter:"
+msgid "And backwards looping done through a negative counter:"
 msgstr ""
 
 msgid "Becomes:"

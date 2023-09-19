@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,11 @@ msgstr ""
 "Xcode에 Godot 프로젝트를 불러오려면 몇 가지 과정이 필요합니다. 이렇게 하면 "
 "iOS 기기에 빌드하고 배포할 수 있고, App Store에 출시할 수 있으며, Xcode에서 "
 "하는 다른 것도 정상적으로 할 수 있습니다."
+
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to iOS. To "
+"use C# on iOS, use Godot 3 instead."
+msgstr ""
 
 msgid "Requirements"
 msgstr "요구사항"
@@ -67,6 +72,29 @@ msgid ""
 msgstr ""
 "다음 내보내기 설정은 필수입니다. 하나라도 공백으로 둔다면 내보내기는 오류가 "
 "발생할 것입니다:"
+
+msgid "If you encounter an error during export similar to"
+msgstr ""
+
+msgid ""
+"``JSON text did not start with array or object and option to allow fragments "
+"not set``"
+msgstr ""
+
+msgid "then it might be due to a malformated **App Store Team ID**!"
+msgstr ""
+
+msgid ""
+"The exporter expects a (10 characters long) code like ``ABCDE12XYZ`` and "
+"not, e.g., your name as Xcode likes to display in the *Signing & "
+"Capabilities* tab."
+msgstr ""
+
+msgid ""
+"You can find the code over at `developer.apple.com <https://developer.apple."
+"com/account/resources/certificates/list>`_ next to your name in the top "
+"right corner."
+msgstr ""
 
 msgid ""
 "After you click **Export Project**, there are still two important options "
@@ -201,19 +229,42 @@ msgstr ""
 "Godot에서는 특수한 iOS 플러그인을 사용할 수 있습니다. :ref:"
 "`doc_plugins_for_ios` 페이지를 확인하십시오."
 
-#, fuzzy
-msgid "Troubleshooting rendering issues"
-msgstr "문제 해결"
-
-msgid ""
-"To improve out-of-the-box performance on mobile devices, Godot automatically "
-"uses low-end-friendly settings by default on both Android and iOS."
+msgid "Environment variables"
 msgstr ""
 
 msgid ""
-"This can cause rendering issues that do not occur when running the project "
-"on a desktop platform. See :ref:`doc_mobile_rendering_limitations` for more "
-"information."
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+
+msgid "iOS export environment variables"
+msgstr ""
+
+#, fuzzy
+msgid "Export option"
+msgstr "내보내기 설정"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "환경 옵션"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr ""
+
+msgid "Options / Application / Provisioning Profile UUID Debug"
+msgstr ""
+
+msgid "GODOT_IOS_PROVISIONING_PROFILE_UUID_DEBUG"
+msgstr ""
+
+msgid "Options / Application / Provisioning Profile UUID Release"
+msgstr ""
+
+msgid "GODOT_IOS_PROVISIONING_PROFILE_UUID_RELEASE"
 msgstr ""
 
 msgid "Translation status"

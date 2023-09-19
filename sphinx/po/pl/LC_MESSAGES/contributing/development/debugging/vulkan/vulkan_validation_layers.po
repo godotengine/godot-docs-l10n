@@ -1,0 +1,205 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Validation layers"
+msgstr "collision_layer"
+
+msgid ""
+"Validation layers enable developers to verify their application's correct "
+"use of the Vulkan API. Validation layers can be enabled in both debug and "
+"release builds, including in exported projects."
+msgstr ""
+
+msgid ""
+"Enabling validation layers has a performance impact, so only enable them "
+"when you actually need the output to debug the application."
+msgstr ""
+
+msgid "Windows"
+msgstr "Windows"
+
+msgid ""
+"Install the Vulkan SDK `<https://vulkan.lunarg.com/sdk/home>`__, which "
+"contains validation layers as part of its default installation. No need to "
+"enable any optional features in the installer; installing the core Vulkan "
+"SDK suffices. You don't need to reboot after installing the SDK, but you may "
+"need to close and reopen your current terminal."
+msgstr ""
+
+msgid ""
+"After installing the Vulkan SDK, run Godot with the ``--gpu-validation`` :"
+"ref:`command line argument <doc_command_line_tutorial>`. You can also "
+"specify ``--gpu-abort`` which will make Godot quit as soon as a validation "
+"error happens. This can prevent your system from freezing if a validation "
+"error occurs."
+msgstr ""
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid ""
+"Official Godot macOS builds do **not** support validation layers, as these "
+"are statically linked against the Vulkan SDK. Dynamic linking must be used "
+"instead."
+msgstr ""
+
+msgid ""
+"In practice, this means that using validation layers on macOS **requires** "
+"you to use a Godot build compiled with the ``use_volk=yes`` SCons option. :"
+"ref:`doc_compiling_for_macos`. If testing validation layers on an exported "
+"project, you must recompile the export template and specify it as a custom "
+"export template in your project's macOS export preset."
+msgstr ""
+
+msgid ""
+"After installing the Vulkan SDK, run a Godot binary that was compiled with "
+"``use_volk=yes`` SCons option. Specify the ``--gpu-validation`` :ref:"
+"`command line argument <doc_command_line_tutorial>`. You can also specify "
+"``--gpu-abort`` which will make Godot quit as soon as a validation error "
+"happens. This can prevent your system from freezing if a validation error "
+"occurs."
+msgstr ""
+
+#, fuzzy
+msgid "Linux, \\*BSD"
+msgstr "X11 (Linux, \\*BSD)"
+
+msgid "Install Vulkan validation layers from your distribution's repositories:"
+msgstr ""
+
+#, fuzzy
+msgid "Alpine Linux"
+msgstr "**Arch**"
+
+#, fuzzy
+msgid "Arch Linux"
+msgstr "**Arch**"
+
+#, fuzzy
+msgid "Debian/Ubuntu"
+msgstr "**Debian** / **Ubuntu**"
+
+#, fuzzy
+msgid "Fedora"
+msgstr "**Fedora**"
+
+#, fuzzy
+msgid "FreeBSD"
+msgstr "**FreeBSD**"
+
+#, fuzzy
+msgid "Gentoo"
+msgstr "**Gentoo**"
+
+#, fuzzy
+msgid "Mageia"
+msgstr "**Mageia**"
+
+#, fuzzy
+msgid "OpenBSD"
+msgstr "**OpenBSD**"
+
+#, fuzzy
+msgid "openSUSE"
+msgstr "**openSUSE**"
+
+#, fuzzy
+msgid "Solus"
+msgstr "**Solus**"
+
+msgid ""
+"You don't need to reboot after installing the validation layers, but you may "
+"need to close and reopen your current terminal."
+msgstr ""
+
+msgid ""
+"After installing the package, run Godot with the ``--gpu-validation`` :ref:"
+"`command line argument <doc_command_line_tutorial>`. You can also specify "
+"``--gpu-abort`` which will make Godot quit as soon as a validation error "
+"happens. This can prevent your system from freezing if a validation error "
+"occurs."
+msgstr ""
+
+msgid "Android"
+msgstr "Android"
+
+msgid ""
+"After enabling validation layers on Android, a developer can see errors and "
+"warning messages in the ``adb logcat`` output."
+msgstr ""
+
+msgid "iOS"
+msgstr "iOS"
+
+msgid "Validation layers are currently **not** supported on iOS."
+msgstr ""
+
+msgid "Web"
+msgstr "Web"
+
+msgid ""
+"Validation layers are **not** supported on the web platform, as there is no "
+"support for Vulkan there."
+msgstr ""
+
+#, fuzzy
+msgid "Enabling validation layers"
+msgstr "Tworzenie wtyczki"
+
+msgid "Build validation layers from official sources"
+msgstr ""
+
+msgid ""
+"To build Android libraries, follow the instructions on `Khronos' repository  "
+"<https://github.com/KhronosGroup/Vulkan-ValidationLayers/blob/master/BUILD."
+"md#building-on-android>`__. After a successful build, the libraries will be "
+"located in ``Vulkan-ValidationLayers/build-android/libs``."
+msgstr ""
+
+#, fuzzy
+msgid "Copy libraries"
+msgstr "Nazwa platformy"
+
+msgid ""
+"Copy libraries from ``Vulkan-ValidationLayers/build-android/libs`` to "
+"``godot/platform/android/java/app/libs/debug/vulkan_validation_layers``."
+msgstr ""
+
+msgid ""
+"Your Godot source directory tree should look like on the example below::"
+msgstr ""
+
+msgid ""
+"If the subdirectory ``libs/debug/vulkan_validation_layers`` doesn't exist, "
+"create it."
+msgstr ""
+
+#, fuzzy
+msgid "Compile and run the Android app"
+msgstr "Kompilowanie dla Androida"
+
+msgid ""
+"Linked validation layers are automatically loaded and enabled in Android "
+"debug builds. You can use Godot's :ref:`doc_one-click_deploy` feature to "
+"quickly test your project with the validation layers enabled."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Status tłumaczenia"

@@ -1,0 +1,320 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "3D antialiasing"
+msgstr "**Anti-Aliasing:**"
+
+msgid ""
+"Godot also supports antialiasing in 2D rendering. This is covered on the :"
+"ref:`doc_2d_antialiasing` page."
+msgstr ""
+
+msgid "Introduction"
+msgstr "Einführung"
+
+msgid ""
+"Due to their limited resolution, scenes rendered in 3D can exhibit aliasing "
+"artifacts. These artifacts commonly manifest as a \"staircase\" effect on "
+"surface edges (edge aliasing) and as flickering and/or sparkles on "
+"reflective surfaces (specular aliasing)."
+msgstr ""
+
+msgid ""
+"In the example below, you can notice how edges have a blocky appearance. The "
+"vegetation is also flickering in and out, and thin lines on top of the box "
+"have almost disappeared:"
+msgstr ""
+
+msgid ""
+"Image is scaled by 2× with nearest-neighbor filtering to make aliasing more "
+"noticeable."
+msgstr ""
+
+msgid ""
+"To combat this, various antialiasing techniques can be used in Godot. These "
+"are detailed below."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can compare antialiasing algorithms in action using the `3D Antialiasing "
+"demo project <https://github.com/godotengine/godot-demo-projects/tree/"
+"master/3d/antialiasing>`__."
+msgstr ""
+"Wenn Sie anhand eines Beispiels besser lernen, finden Sie das Demo-Projekt "
+"`hier <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
+"android_iap>`__."
+
+#, fuzzy
+msgid "Multisample antialiasing (MSAA)"
+msgstr "Multi-Sample Antialiasing (MSAA)."
+
+msgid ""
+"This technique is the \"historical\" way of dealing with aliasing. MSAA is "
+"very effective on geometry edges (especially at higher levels). MSAA does "
+"not introduce any blurriness whatsoever."
+msgstr ""
+
+msgid ""
+"MSAA is available in 3 levels: 2×, 4×, 8×. Higher levels are more effective "
+"at antialiasing edges, but are significantly more demanding. In games with "
+"modern visuals, sticking to 2× or 4× MSAA is highly recommended as 8× MSAA "
+"is usually too demanding."
+msgstr ""
+
+msgid ""
+"The downside of MSAA is that it only operates on edges. This is because MSAA "
+"increases the number of *coverage* samples, but not the number of *color* "
+"samples. However, since the number of color samples did not increase, "
+"fragment shaders are still run for each pixel only once. Therefore, MSAA "
+"does not reduce transparency aliasing for materials using the **Alpha "
+"Scissor** transparency mode (1-bit transparency). MSAA is also ineffective "
+"on specular aliasing."
+msgstr ""
+
+msgid ""
+"To mitigate aliasing on alpha scissor materials, alpha antialiasing (also "
+"called *alpha to coverage*) can be enabled on specific materials in the "
+"StandardMaterial3D or ORMMaterial3D properties. This only has an effect when "
+"MSAA is used (with any level). Alpha to coverage has a moderate performance "
+"cost, but it's very effective at reducing aliasing on transparent materials "
+"without introducing any blurriness."
+msgstr ""
+
+msgid ""
+"MSAA can be enabled in the Project Settings by changing the value of the "
+"**Rendering > Anti Aliasing > Quality > MSAA 3D** setting. It's important to "
+"change the value of the **MSAA 3D** setting and not **MSAA 2D**, as these "
+"are entirely separate settings."
+msgstr ""
+
+msgid ""
+"Comparison between no antialiasing (left) and various MSAA levels (right). "
+"Note that alpha antialiasing is not used here:"
+msgstr ""
+
+#, fuzzy
+msgid "Temporal antialiasing (TAA)"
+msgstr "Multi-Sample Antialiasing (MSAA)."
+
+msgid ""
+"*This is only available in the Clustered Forward backend, not the Forward "
+"Mobile or Compatibility backends.*"
+msgstr ""
+
+msgid ""
+"Temporal antialiasing works by *converging* the result of previously "
+"rendered frames into a single, high-quality frame. This is a continuous "
+"process that works by jittering the position of all vertices in the scene "
+"every frame. This jittering is done to capture sub-pixel detail and should "
+"be unnoticeable except in extreme situations."
+msgstr ""
+
+msgid ""
+"This technique is commonly used in modern games, as it provides the most "
+"effective form of antialiasing against specular aliasing and other shader-"
+"induced artifacts. TAA also provides full support for transparency "
+"antialiasing."
+msgstr ""
+
+msgid ""
+"TAA introduces a small amount of blur when enabled in still scenes, but this "
+"blurring effect becomes more pronounced when the camera is moving. Another "
+"downside of TAA is that it can exhibit *ghosting* artifacts behind moving "
+"objects. Rendering at a higher framerate will allow TAA to converge faster, "
+"therefore making those ghosting artifacts less visible."
+msgstr ""
+
+msgid ""
+"Temporal antialiasing can be enabled in the Project Settings by changing the "
+"value of the **Rendering > Anti Aliasing > Quality > Use Taa** setting."
+msgstr ""
+
+msgid "Comparison between no antialiasing (left) and TAA (right):"
+msgstr ""
+
+#, fuzzy
+msgid "Fast approximate antialiasing (FXAA)"
+msgstr "Multi-Sample Antialiasing (MSAA)."
+
+msgid ""
+"*This is only available in the Clustered Forward and Forward Mobile "
+"backends, not the Compatibility backend.*"
+msgstr ""
+
+msgid ""
+"Fast approximate antialiasing is a post-processing antialiasing solution. It "
+"is faster to run than any other antialiasing technique and also supports "
+"antialiasing transparency. However, since it lacks temporal information, it "
+"will not do much against specular aliasing."
+msgstr ""
+
+msgid ""
+"This technique is still sometimes used in mobile games. However, on desktop "
+"platforms, FXAA generally fell out of fashion in favor of temporal "
+"antialiasing, which is much more effective against specular aliasing. "
+"Nonetheless, exposing FXAA as an in-game option may still be worthwhile for "
+"players with low-end GPUs."
+msgstr ""
+
+msgid ""
+"FXAA introduces a moderate amount of blur when enabled (more than TAA when "
+"still, but less than TAA when the camera is moving)."
+msgstr ""
+
+msgid ""
+"FXAA can be enabled in the Project Settings by changing the value of the "
+"**Rendering > Anti Aliasing > Quality > Screen Space AA** setting to "
+"**FXAA**."
+msgstr ""
+
+msgid "Comparison between no antialiasing (left) and FXAA (right):"
+msgstr ""
+
+#, fuzzy
+msgid "Supersample antialiasing (SSAA)"
+msgstr "Multi-Sample Antialiasing (MSAA)."
+
+msgid ""
+"Supersampling provides the highest quality of antialiasing possible, but "
+"it's also the most expensive. It works by shading every pixel in the scene "
+"multiple times. This allows SSAA to antialias edges, transparency *and* "
+"specular aliasing at the same time, without introducing potential ghosting "
+"artifacts."
+msgstr ""
+
+msgid ""
+"The downside of SSAA is its *extremely* high cost. This cost generally makes "
+"SSAA difficult to use for game purposes, but you may still find "
+"supersampling useful for :ref:`offline rendering <doc_creating_movies>`."
+msgstr ""
+
+msgid ""
+"Supersample antialiasing is performed by increasing the **Rendering > "
+"Scaling 3D > Scale** advanced project setting above ``1.0`` while ensuring "
+"**Rendering > Scaling 3D > Mode** is set to **Bilinear** (the default). "
+"Since the scale factor is defined per-axis, a scale factor of ``1.5`` will "
+"result in 2.25× SSAA while a scale factor of ``2.0`` will result in 4× SSAA."
+msgstr ""
+
+msgid ""
+"Comparison between no antialiasing (left) and various SSAA levels (right):"
+msgstr ""
+
+msgid ""
+"Supersampling also has high video RAM requirements, since it needs to render "
+"in the target resolution then *downscale* to the window size. For example, "
+"displaying a project in 3840×2160 (4K resolution) with 4× SSAA will require "
+"rendering the scene in 7680×4320 (8K resolution), which is 4 times more "
+"pixels."
+msgstr ""
+
+msgid ""
+"If you are using a high window size such as 4K, you may find that increasing "
+"the resolution scale past a certain value will cause a heavy slowdown (or "
+"even a crash) due to running out of VRAM."
+msgstr ""
+
+msgid "Screen-space roughness limiter"
+msgstr ""
+
+msgid ""
+"This is not an edge antialiasing method, but it is a way of reducing "
+"specular aliasing in 3D."
+msgstr ""
+
+msgid ""
+"The screen-space roughness limiter works best on detailed geometry. While it "
+"has an effect on roughness map rendering itself, its impact is limited there."
+msgstr ""
+
+msgid ""
+"The screen-space roughness limiter is enabled by default; it doesn't require "
+"any manual setup. It has a small performance impact, so consider disabling "
+"it if your project isn't affected by specular aliasing much."
+msgstr ""
+
+msgid "Texture roughness limiter on import"
+msgstr ""
+
+msgid ""
+"Like the screen-space roughness limiter, this is not an edge antialiasing "
+"method, but it is a way of reducing specular aliasing in 3D."
+msgstr ""
+
+msgid ""
+"Roughness limiting on import works by specifying a normal map to use as a "
+"guide for limiting roughness. This is done by selecting the roughness map in "
+"the FileSystem dock, then going to the Import dock and setting **Roughness > "
+"Mode** to the color channel the roughness map is stored in (typically "
+"**Green**), then setting the path to the material's normal map. Remember to "
+"click **Reimport** at the bottom of the Import dock after setting the path "
+"to the normal map."
+msgstr ""
+
+msgid ""
+"Since this processing occurs purely on import, it has no performance cost "
+"whatsoever. However, its visual impact is limited. Limiting roughness on "
+"import only helps reduce specular aliasing within textures, not the aliasing "
+"that occurs on geometry edges on detailed meshes."
+msgstr ""
+
+#, fuzzy
+msgid "Which antialiasing technique should I use?"
+msgstr "Welche Sprache soll verwendet werden?"
+
+msgid ""
+"**There is no \"one size fits all\" antialiasing technique.** Since "
+"antialiasing is often demanding on the GPU or can introduce unwanted "
+"blurriness, you'll want to add a setting to allow players to disable "
+"antialiasing."
+msgstr ""
+
+msgid ""
+"For projects with a photorealistic art direction, TAA is generally the most "
+"suitable option. While TAA can introduce ghosting artifacts, there is no "
+"other technique that combats specular aliasing as well as TAA does. The "
+"screen-space roughness limiter helps a little, but is far less effective "
+"against specular aliasing overall."
+msgstr ""
+
+msgid ""
+"For projects with a low amount of reflective surfaces (such as a cartoon "
+"artstyle), MSAA can work well. MSAA is also a good option if avoiding "
+"blurriness and temporal artifacts is important, such as in competitive games."
+msgstr ""
+
+msgid ""
+"When targeting low-end platforms such as mobile or integrated graphics, FXAA "
+"is usually the only viable option. 2× MSAA may be usable in some "
+"circumstances, but higher MSAA levels are unlikely to run smoothly on mobile "
+"GPUs."
+msgstr ""
+
+msgid ""
+"Godot allows using multiple antialiasing techniques at the same time. This "
+"is usually unnecessary, but it can provide better visuals on high-end GPUs "
+"or for :ref:`non-real-time rendering <doc_creating_movies>`. For example, to "
+"make moving edges look better when TAA is enabled, you can also enable MSAA "
+"at the same time."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

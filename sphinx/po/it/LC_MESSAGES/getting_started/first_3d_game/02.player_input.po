@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgstr ""
 
 msgid ""
 "Create a new scene by going to the Scene menu in the top-left and clicking "
-"*New Scene*. Create a *KinematicBody* node as the root and name it *Player*."
+"*New Scene*."
 msgstr ""
 
 msgid "|image0|"
@@ -39,9 +39,14 @@ msgid "image0"
 msgstr "image0"
 
 msgid ""
-"Kinematic bodies are complementary to the area and rigid bodies used in the "
+"Create a :ref:`CharacterBody3D <class_CharacterBody3D>` node as the root"
+msgstr ""
+
+msgid ""
+"Name the :ref:`CharacterBody3D <class_CharacterBody3D>` to ``Player``. "
+"Character bodies are complementary to the area and rigid bodies used in the "
 "2D game tutorial. Like rigid bodies, they can move and collide with the "
-"environment, but instead of being controlled by the physics engine, you "
+"environment, but instead of being controlled by the physics engine, **you** "
 "dictate their movement. You will see how we use the node's unique features "
 "when we code the jump and squash mechanics."
 msgstr ""
@@ -58,9 +63,13 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Add a *Spatial* node as a child of *Player* and name it *Pivot*. Then, in "
-"the FileSystem dock, expand the ``art/`` folder by double-clicking it and "
-"drag and drop ``player.glb`` onto the *Pivot* node."
+"Add a :ref:`Node3D <class_Node3D>` node as a child of ``Player`` and name it "
+"``Pivot``"
+msgstr ""
+
+msgid ""
+"Then, in the FileSystem dock, expand the ``art/`` folder by double-clicking "
+"it and drag and drop ``player.glb`` onto ``Pivot``."
 msgstr ""
 
 msgid "|image1|"
@@ -70,8 +79,8 @@ msgid "image1"
 msgstr "image1"
 
 msgid ""
-"This should instantiate the model as a child of *Pivot*. You can rename it "
-"to *Character*."
+"This should instantiate the model as a child of ``Pivot``. You can rename it "
+"to ``Character``."
 msgstr ""
 
 msgid "|image2|"
@@ -81,7 +90,7 @@ msgid "image2"
 msgstr "image2"
 
 msgid ""
-"The ``.glb`` files contain 3D scene data based on the open-source GLTF 2.0 "
+"The ``.glb`` files contain 3D scene data based on the open source GLTF 2.0 "
 "specification. They're a modern and powerful alternative to a proprietary "
 "format like FBX, which Godot also supports. To produce these files, we "
 "designed the model in `Blender 3D <https://www.blender.org/>`__ and exported "
@@ -90,9 +99,13 @@ msgstr ""
 
 msgid ""
 "As with all kinds of physics nodes, we need a collision shape for our "
-"character to collide with the environment. Select the *Player* node again "
-"and add a *CollisionShape*. In the *Inspector*, assign a *SphereShape* to "
-"the *Shape* property. The sphere's wireframe appears below the character."
+"character to collide with the environment. Select the ``Player`` node again "
+"and add a child node :ref:`CollisionShape3D <class_CollisionShape3D>`. In "
+"the *Inspector*, on the *Shape* property, add a new :ref:`SphereShape3D "
+"<class_SphereShape3D>`."
+msgstr ""
+
+msgid "The sphere's wireframe appears below the character."
 msgstr ""
 
 msgid "|image3|"
@@ -120,7 +133,7 @@ msgstr "image4"
 
 msgid ""
 "You can toggle the model's visibility by clicking the eye icon next to the "
-"*Character* or the *Pivot* nodes."
+"``Character`` or the ``Pivot`` nodes."
 msgstr ""
 
 msgid "|image5|"
@@ -130,7 +143,7 @@ msgid "image5"
 msgstr "image5"
 
 #, fuzzy
-msgid "Save the scene as ``Player.tscn``."
+msgid "Save the scene as ``player.tscn``"
 msgstr "Infine, salva la scena con un nome come ``sayhello.tscn``."
 
 msgid ""
@@ -151,7 +164,7 @@ msgstr ""
 
 msgid ""
 "This system is the Input Map. To access its editor, head to the *Project* "
-"menu and select *Project Settings…*."
+"menu and select *Project Settings*."
 msgstr ""
 
 msgid "|image6|"
@@ -192,10 +205,9 @@ msgstr "|image8|"
 msgid "image8"
 msgstr "image8"
 
-msgid ""
-"Create the five actions. Your window should have them all listed at the "
-"bottom."
-msgstr ""
+#, fuzzy
+msgid "Create the following five actions:"
+msgstr "Aggiungere il seguente codice:"
 
 msgid "|image9|"
 msgstr "|image9|"
@@ -205,29 +217,11 @@ msgstr "image9"
 
 msgid ""
 "To bind a key or button to an action, click the \"+\" button to its right. "
-"Do this for ``move_left`` and in the drop-down menu, click *Key*."
+"Do this for ``move_left``. Press the left arrow key and click *OK*."
 msgstr ""
 
-msgid "|image10|"
-msgstr "|image10|"
-
-msgid "image10"
-msgstr "image10"
-
-msgid ""
-"This option allows you to add a keyboard input. A popup appears and waits "
-"for you to press a key. Press the left arrow key and click *OK*."
+msgid "Bind also the :kbd:`A` key, onto the action ``move_left``."
 msgstr ""
-
-msgid "|image11|"
-msgstr "|image11|"
-
-msgid "image11"
-msgstr "image11"
-
-#, fuzzy
-msgid "Do the same for the A key."
-msgstr "Fare lo stesso per il nodo **Walls**."
 
 msgid "|image12|"
 msgstr "|image12|"
@@ -237,33 +231,26 @@ msgstr "image12"
 
 msgid ""
 "Let's now add support for a gamepad's left joystick. Click the \"+\" button "
-"again but this time, select *Joy Axis*."
+"again but this time, select *Manual Selection -> Joypad Axes*."
 msgstr ""
 
-msgid "|image13|"
-msgstr "|image13|"
+msgid "Select the negative X axis of the left joystick."
+msgstr ""
 
-msgid "image13"
-msgstr "image13"
+msgid "Leave the other values as default and press *OK*"
+msgstr ""
 
 msgid ""
-"The popup gives you two drop-down menus. On the left, you can select a "
-"gamepad by index. *Device 0* corresponds to the first plugged gamepad, "
-"*Device 1* corresponds to the second, and so on. You can select the joystick "
-"and direction you want to bind to the input action on the right. Leave the "
-"default values and press the *Add* button."
+"If you want controllers to have different input actions, you should use the "
+"Devices option in Additional Options. Device 0 corresponds to the first "
+"plugged gamepad, Device 1 corresponds to the second plugged gamepad, and so "
+"on."
 msgstr ""
-
-msgid "|image14|"
-msgstr "|image14|"
-
-msgid "image14"
-msgstr "image14"
 
 msgid ""
 "Do the same for the other input actions. For example, bind the right arrow, "
-"D, and the left joystick's right axis to ``move_right``. After binding all "
-"keys, your interface should look like this."
+"D, and the left joystick's positive axis to ``move_right``. After binding "
+"all keys, your interface should look like this."
 msgstr ""
 
 msgid "|image15|"
@@ -273,9 +260,8 @@ msgid "image15"
 msgstr "image15"
 
 msgid ""
-"We have the ``jump`` action left to set up. Bind the Space key and the "
-"gamepad's A button. To bind a gamepad's button, select the *Joy Button* "
-"option in the menu."
+"The final action to set up is the ``jump`` action. Bind the Space key and "
+"the gamepad's A button."
 msgstr ""
 
 msgid "|image16|"
@@ -283,15 +269,6 @@ msgstr "|image16|"
 
 msgid "image16"
 msgstr "image16"
-
-msgid "Leave the default values and click the *Add* button."
-msgstr ""
-
-msgid "|image17|"
-msgstr "|image17|"
-
-msgid "image17"
-msgstr "image17"
 
 #, fuzzy
 msgid "Your jump input action should look like this."
@@ -310,6 +287,12 @@ msgstr ""
 
 msgid "In the next part, we'll code and test the player's movement."
 msgstr ""
+
+msgid "image11"
+msgstr "image11"
+
+msgid "image17"
+msgstr "image17"
 
 msgid "Translation status"
 msgstr "Stato della traduzione"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,11 +27,12 @@ msgstr ""
 "我們已經解釋了場景與腳本有什麼不同。腳本通過了指令式程式碼定義了引擎類別的延"
 "伸，而場景則是用宣告性程式碼定義。"
 
+#, fuzzy
 msgid ""
 "Each system's capabilities are different as a result. Scenes can define how "
 "an extended class initializes, but not what its behavior actually is. Scenes "
-"are often used in conjunction with a script so that the scene acts as an "
-"extension of the scripts declarative code."
+"are often used in conjunction with a script, the scene declaring a "
+"composition of nodes, and the script adding behaviour with imperative code."
 msgstr ""
 "因此，每個系統的能力都不同。場景可以定義要如何擴充類別初始化，而不是類別實際"
 "的行為。場景通常與腳本一起結合使用，這樣場景就可以作為腳本中宣告性程式碼的擴"
@@ -67,11 +68,12 @@ msgstr ""
 msgid "Named types"
 msgstr "有名稱的型別"
 
+#, fuzzy
 msgid ""
-"In some cases, a user can register a script as a new type within the editor "
-"itself. This displays it as a new type in the node or resource creation "
-"dialog with an optional icon. In these cases, the user's ability to use the "
-"script is much more streamlined. Rather than having to..."
+"Scripts can be registered as a new type within the editor itself. This "
+"displays it as a new type in the node or resource creation dialog with an "
+"optional icon. This way, the user's ability to use the script is much more "
+"streamlined. Rather than having to..."
 msgstr ""
 "有些情況下，使用者可以在編輯器中將腳本註冊為新型別。這樣在節點或資源建立視窗"
 "中就可以顯示該腳本為新型別，並帶有一個可選的圖示。這些時候，使用者能對腳本做"
@@ -86,40 +88,18 @@ msgstr "建立該基礎型別的實體。"
 msgid "Add the script to the node."
 msgstr "將腳本附加到節點。"
 
-msgid "(Drag-n-drop method)"
-msgstr "(拖放方法)"
-
-msgid "Find the script in the FileSystem dock."
-msgstr "在檔案系統 Dock 中找到腳本。"
-
-msgid "Drag and drop the script onto the node in the Scene dock."
-msgstr "將腳本拖放到場景 Dock 中的節點。"
-
-msgid "(Property method)"
-msgstr "(屬性方法)"
-
-msgid ""
-"Scroll down to the bottom of the Inspector to find the ``script`` property "
-"and select it."
-msgstr "下拉到屬性面板底部，並找到 ``script`` 屬性並選擇。"
-
-msgid "Select \"Load\" from the dropdown."
-msgstr "從下拉選單中點擊 [讀取]。"
-
-msgid "Select the script from the file dialog."
-msgstr "從檔案對話框中選擇腳本。"
-
+#, fuzzy
 msgid ""
 "With a registered script, the scripted type instead becomes a creation "
-"option like the other nodes and resources in the system. One need not do any "
-"of the above work. The creation dialog even has a search bar to look up the "
-"type by name."
+"option like the other nodes and resources in the system. The creation dialog "
+"even has a search bar to look up the type by name."
 msgstr ""
 "使用已註冊的腳本，則腳本型別就會與其他系統內的節點與資源一樣變成建立選項。我"
 "們就不需要再進行上述步驟了。建立對話框中甚至還有一個搜尋框可以按名稱搜尋型"
 "別。"
 
-msgid "There are two systems for registering types..."
+#, fuzzy
+msgid "There are two systems for registering types:"
 msgstr "有兩種系統可以註冊型別..."
 
 msgid ":ref:`Custom Types <doc_making_plugins>`"
@@ -281,10 +261,11 @@ msgstr ""
 "如果想建立專屬於自己的遊戲的概念，則應該使用場景。場景比較好追蹤與編輯，並且"
 "比起腳本提供更多安全性。"
 
+#, fuzzy
 msgid ""
 "If one would like to give a name to a scene, then they can still sort of do "
-"this in 3.1 by declaring a script class and giving it a scene as a constant. "
-"The script becomes, in effect, a namespace:"
+"this by declaring a script class and giving it a scene as a constant. The "
+"script becomes, in effect, a namespace:"
 msgstr ""
 "如果想為場景起名，則還是可以在 3.1 版中通過宣告腳本類別並以常數來指定場景來實"
 "現類似的目的。該腳本就有了命名空間的效果："

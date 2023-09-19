@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,6 +63,12 @@ msgstr ""
 "Las funciones pueden consultarse en tiempo de ejecución desde llamadas a la "
 "API del singleton haciendo:"
 
+msgid ""
+"OS feature tags are used by GDExtension to determine which libraries to "
+"load. For example, a library for ``linux.debug.editor.x86_64`` will be "
+"loaded only on a debug editor build for Linux x86_64."
+msgstr ""
+
 msgid "Default features"
 msgstr "Características por defecto"
 
@@ -79,59 +85,59 @@ msgstr "**Etiquetas de características**"
 msgid "**Description**"
 msgstr "**Descripción**"
 
-msgid "**Android**"
+#, fuzzy
+msgid "**android**"
 msgstr "**Android**"
 
-msgid "Running on Android"
-msgstr "Ejecución en Android"
+msgid "Running on Android (but not within a Web browser)"
+msgstr ""
 
-msgid "**HTML5**"
-msgstr "**HTML5**"
+msgid "**bsd**"
+msgstr ""
 
-msgid "Running on HTML5"
-msgstr "Ejecución en HTML5"
+msgid "Running on \\*BSD (but not within a Web browser)"
+msgstr ""
 
-msgid "**JavaScript**"
-msgstr "**JavaScript**"
+#, fuzzy
+msgid "**linux**"
+msgstr "**Alpine Linux**"
 
-msgid ":ref:`JavaScript singleton <doc_javascript_eval>` is available"
-msgstr "El :ref:`singleton JavaScript <doc_javascript_eval>` está disponible"
+msgid "Running on Linux (but not within a Web browser)"
+msgstr ""
 
-msgid "**OSX**"
-msgstr "**OSX**"
+#, fuzzy
+msgid "**macos**"
+msgstr "**macOS**"
 
-msgid "Running on macOS"
-msgstr "Ejecución en macOS"
+msgid "Running on macOS (but not within a Web browser)"
+msgstr ""
 
-msgid "**iOS**"
-msgstr "**iOS**"
+msgid "**ios**"
+msgstr ""
 
-msgid "Running on iOS"
-msgstr "Ejecución en iOS"
+msgid "Running on iOS (but not within a Web browser)"
+msgstr ""
 
-msgid "**UWP**"
-msgstr "**UWP**"
+msgid "**uwp**"
+msgstr ""
 
-msgid "Running on UWP"
-msgstr "Ejecución en UWP"
+msgid "Running on UWP (but not within a Web browser)"
+msgstr ""
 
-msgid "**Windows**"
+#, fuzzy
+msgid "**windows**"
 msgstr "**Windows**"
 
 msgid "Running on Windows"
 msgstr "Ejecución en Windows"
 
-msgid "**X11**"
-msgstr "**X11**"
+#, fuzzy
+msgid "**linuxbsd**"
+msgstr "**Alpine Linux**"
 
-msgid "Running on X11 (Linux/BSD desktop)"
-msgstr "Corriendo sobre X11 (Linux/BSD en escritorio)"
-
-msgid "**Server**"
-msgstr "**Server**"
-
-msgid "Running on the headless server platform"
-msgstr "Ejecución en la plataforma de servidor sin interfaz gráfica"
+#, fuzzy
+msgid "Running on Linux or \\*BSD"
+msgstr "Ejecución en iOS"
 
 msgid "**debug**"
 msgstr "**debug**"
@@ -151,10 +157,28 @@ msgstr "**editor**"
 msgid "Running on an editor build"
 msgstr "Ejecutando en una compilación con editor"
 
-msgid "**standalone**"
-msgstr "**independiente**"
+#, fuzzy
+msgid "**template**"
+msgstr "**Fecha de publicación*"
 
-msgid "Running on a non-editor build"
+#, fuzzy
+msgid "Running on a non-editor (export template) build"
+msgstr "Ejecutando en una compilación sin editor"
+
+#, fuzzy
+msgid "**double**"
+msgstr "**móvil**"
+
+#, fuzzy
+msgid "Running on a double-precision build"
+msgstr "Ejecutando en una compilación sin editor"
+
+#, fuzzy
+msgid "**single**"
+msgstr "**móvil**"
+
+#, fuzzy
+msgid "Running on a single-precision build"
 msgstr "Ejecutando en una compilación sin editor"
 
 msgid "**64**"
@@ -175,11 +199,19 @@ msgstr "**x86_64**"
 msgid "Running on a 64-bit x86 build"
 msgstr "Ejecutando en una compilación de 64 bits"
 
-msgid "**x86**"
+#, fuzzy
+msgid "**x86_32**"
 msgstr "**x86**"
 
 msgid "Running on a 32-bit x86 build"
 msgstr "Ejecutando en una compilación de 32 bits x86"
+
+msgid "**x86**"
+msgstr "**x86**"
+
+#, fuzzy
+msgid "Running on an x86 build (any bitness)"
+msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
 
 msgid "**arm64**"
 msgstr "**arm64**"
@@ -187,11 +219,82 @@ msgstr "**arm64**"
 msgid "Running on a 64-bit ARM build"
 msgstr "Ejecutando en una versión de 64 bits ARM"
 
-msgid "**arm**"
+#, fuzzy
+msgid "**arm32**"
 msgstr "**arm**"
 
 msgid "Running on a 32-bit ARM build"
 msgstr "Ejecutando en una versión de 32 bits ARM"
+
+msgid "**arm**"
+msgstr "**arm**"
+
+#, fuzzy
+msgid "Running on an ARM build (any bitness)"
+msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
+
+#, fuzzy
+msgid "**rv64**"
+msgstr "**64**"
+
+#, fuzzy
+msgid "Running on a 64-bit RISC-V build"
+msgstr "Ejecutando en una versión de 64 bits ARM"
+
+#, fuzzy
+msgid "**riscv**"
+msgstr "**derecho**"
+
+#, fuzzy
+msgid "Running on a RISC-V build (any bitness)"
+msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
+
+#, fuzzy
+msgid "**ppc64**"
+msgstr "**64**"
+
+#, fuzzy
+msgid "Running on a 64-bit PowerPC build"
+msgstr "Ejecutando en una compilación de 64 bits"
+
+#, fuzzy
+msgid "**ppc32**"
+msgstr "**32**"
+
+#, fuzzy
+msgid "Running on a 32-bit PowerPC build"
+msgstr "Ejecutando en una compilación de 32 bits x86"
+
+#, fuzzy
+msgid "**ppc**"
+msgstr "**pc**"
+
+#, fuzzy
+msgid "Running on a PowerPC build (any bitness)"
+msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
+
+#, fuzzy
+msgid "**wasm64**"
+msgstr "**arm64**"
+
+#, fuzzy
+msgid "Running on a 64-bit WebAssembly build (not yet possible)"
+msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
+
+#, fuzzy
+msgid "**wasm32**"
+msgstr "**32**"
+
+#, fuzzy
+msgid "Running on a 32-bit WebAssembly build"
+msgstr "Ejecutando en una versión de 32 bits ARM"
+
+msgid "**wasm**"
+msgstr ""
+
+#, fuzzy
+msgid "Running on a WebAssembly build (any bitness)"
+msgstr "Ejecutando en una versión de 64 bits (cualquier arquitectura)"
 
 msgid "**mobile**"
 msgstr "**móvil**"
@@ -209,6 +312,46 @@ msgid "**web**"
 msgstr "**web**"
 
 msgid "Host OS is a Web browser"
+msgstr "El sistema operativo anfitrión es un navegador Web"
+
+#, fuzzy
+msgid "**web_android**"
+msgstr "**Android**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Android"
+msgstr "El sistema operativo anfitrión es un navegador Web"
+
+#, fuzzy
+msgid "**web_ios**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on iOS"
+msgstr "El sistema operativo anfitrión es un navegador Web"
+
+#, fuzzy
+msgid "**web_linuxbsd**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Linux or \\*BSD"
+msgstr "El sistema operativo anfitrión es un navegador Web"
+
+#, fuzzy
+msgid "**web_macos**"
+msgstr "**web**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on macOS"
+msgstr "El sistema operativo anfitrión es un navegador Web"
+
+#, fuzzy
+msgid "**web_windows**"
+msgstr "**Windows**"
+
+#, fuzzy
+msgid "Host OS is a Web browser running on Windows"
 msgstr "El sistema operativo anfitrión es un navegador Web"
 
 msgid "**etc**"
@@ -229,17 +372,20 @@ msgstr "**s3tc**"
 msgid "Textures using S3TC (DXT/BC) compression are supported"
 msgstr "Las texturas que utilizan una compresión S3TC (DXT/BC) son soportadas"
 
-msgid "**pvrtc**"
-msgstr "**pvrtc**"
+#, fuzzy
+msgid "**movie**"
+msgstr "**móvil**"
 
-msgid "Textures using PVRTC compression are supported"
-msgstr "Las texturas que utilizan una compresión PVRTC son soportadas"
+msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
+msgstr ""
 
+#, fuzzy
 msgid ""
-"With the exception of texture compression feature tags, default feature tags "
-"are **immutable**. This means that they will *not* change depending on run-"
-"time conditions. For example, ``OS.has_feature(\"mobile\")`` will return "
-"``false`` when running a project exported to HTML5 on a mobile device."
+"With the exception of texture compression and ``movie`` feature tags, "
+"default feature tags are **immutable**. This means that they will *not* "
+"change depending on run-time conditions. For example, ``OS."
+"has_feature(\"mobile\")`` will return ``false`` when running a project "
+"exported to HTML5 on a mobile device."
 msgstr ""
 "Con la excepción de las etiquetas de características de compresión de "
 "texturas, las etiquetas de características predeterminadas son "
@@ -332,10 +478,11 @@ msgstr ""
 msgid "Customizing the build"
 msgstr "Personalización de la Compilación"
 
+#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "
-"is loaded and exported in **GDNative**."
+"is loaded and exported in **GDExtension**."
 msgstr ""
 "Las etiquetas de características pueden ser usadas para personalizar el "
 "proceso de compilación, escribiendo un **ExportPlugin** personalizado. "

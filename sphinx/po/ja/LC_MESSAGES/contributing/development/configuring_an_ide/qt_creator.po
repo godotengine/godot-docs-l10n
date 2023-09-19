@@ -1,0 +1,185 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ja\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Qt Creator"
+msgstr "\\ Qt Creator"
+
+#, fuzzy
+msgid ""
+"`Qt Creator <https://doc.qt.io/qtcreator/index.html>`_ is a free, open "
+"source IDE for all desktop platforms."
+msgstr ""
+"`KDevelop <https://www.kdevelop.org>`_ は、すべてのデスクトッププラットフォー"
+"ム向けの無料のオープンソースIDEです。"
+
+msgid "Importing the project"
+msgstr "プロジェクトのインポート"
+
+#, fuzzy
+msgid ""
+"From the Qt Creator's main screen select **New Project > Import Project > "
+"Import Existing Project**."
+msgstr ""
+"*新しいプロジェクト* → *プロジェクトのインポート* → *既存プロジェクトのイン"
+"ポートを* を選択します。"
+
+msgid "Under **Location** select the Godot root folder."
+msgstr "**ロケーション** でGodotのルートフォルダを選択してください。"
+
+#, fuzzy
+msgid ""
+"Next, you can choose which folders and files will be visible to the project. "
+"While C/C++ files are added automatically, other extensions can be "
+"potentially useful: ``*.glsl`` for shader files, ``*.py`` for buildsystem "
+"files, ``*.java`` for Android platform development, ``*.mm`` for macOS "
+"platform development."
+msgstr ""
+"ここでは、プロジェクトに表示するフォルダとファイルを選択できます。C/C++ファイ"
+"ルは自動的に追加されます。利用可能な拡張子: ビルドシステムファイルの \\*.py、"
+"Android 開発用 \\*.java、macOS用 \\*.mm。[次へ] をクリックします。"
+
+msgid ""
+"You can change this configuration later by right-clicking on your project "
+"and selecting the **Edit Files...** option."
+msgstr ""
+
+msgid "Finish the import."
+msgstr ""
+
+msgid ""
+"Open the ``project_name.includes`` file and add a line containing ``.`` to "
+"it to correctly enable the code completion."
+msgstr ""
+
+#, fuzzy
+msgid "From the left-side menu select **Projects** and open the **Build** tab."
+msgstr "*プロジェクト*\\ をクリックし、\\ *ビルド*\\ タブを開きます。"
+
+#, fuzzy
+msgid "Delete the predefined ``make`` build step."
+msgstr "定義済みの ``make`` ビルド ステップを削除します。"
+
+msgid ""
+"Click **Add Build Step > Custom Process Step** to add a new build step with "
+"the following settings:"
+msgstr ""
+"新しいビルドステップを次のような設定で追加するには **ビルドステップを追加 -> "
+"カスタムプロセスステップ** をクリックします:"
+
+msgid "Command"
+msgstr "Command"
+
+msgid "**scons**"
+msgstr ""
+
+msgid "Arguments"
+msgstr "引数"
+
+#, fuzzy
+msgid ""
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+"GodotのUIシステムの仕組みを知るには、まず\\ :doc:"
+"`ui_introduction_to_the_ui_system`\\ を見て下さい。"
+
+#, fuzzy
+msgid ""
+"If the build fails with ``Could not start process \"scons\"``, it can mean "
+"that ``scons`` is not in your ``PATH`` environment variable. In this case, "
+"you'll have to specify the full path to the SCons binary."
+msgstr ""
+"*Command* フィールドに ``scons`` と入力します。\\ ``Could not start process "
+"\"scons\"`` で失敗した場合、\\ ``scons`` が ``PATH`` 環境変数にないため、"
+"SConsバイナリへのフルパスを使用しなければならない可能性があります。"
+
+#, fuzzy
+msgid "Debugging the project"
+msgstr "プロジェクトの準備"
+
+#, fuzzy
+msgid "From the left-side menu select **Projects** and open the **Run** tab."
+msgstr "*プロジェクト*\\ をクリックし、\\ *ビルド*\\ タブを開きます。"
+
+msgid ""
+"Under **Executable** specify the path to your executable located in the "
+"``<Godot root directory>/bin`` folder. The name depends on your build "
+"configuration, e.g. ``godot.linuxbsd.editor.dev.x86_64`` for 64-bit LinuxBSD "
+"platform with ``platform=editor`` and ``dev_build=yes``. You can use "
+"``%{buildDir}`` to reference the project root, e.g: ``%{buildDir}/bin/godot."
+"linuxbsd.editor.dev.x86_64``."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"If you want to run a specific project, specify its root folder under "
+"**Working directory**."
+msgstr ""
+"特定のゲームまたはプロジェクトを実行する場合は、\\ *作業ディレクトリ*\\ を"
+"ゲームディレクトリに指定します。"
+
+#, fuzzy
+msgid ""
+"If you want to run the editor, add ``-e`` to the **Command line arguments** "
+"field."
+msgstr ""
+"エディタを実行する場合は、\\ *コマンドライン引数*\\ フィールドに ``-e`` を追"
+"加します。"
+
+msgid ""
+"To learn more about command line arguments, refer to the :ref:`command line "
+"tutorial <doc_command_line_tutorial>`."
+msgstr ""
+
+msgid "Code style configuration"
+msgstr "コードスタイル設定"
+
+#, fuzzy
+msgid ""
+"Developers must follow the project's :ref:`code style "
+"<doc_code_style_guidelines>` and the IDE should help them follow it. By "
+"default, Qt Creator uses spaces for indentation which doesn't match the "
+"Godot code style guidelines. You can change this behavior by changing the "
+"**Code Style** in **Tools > Options > C++**."
+msgstr ""
+"開発者はプロジェクトの :ref:`コードスタイル<doc_code_style_guidelines>` に従"
+"う必要があり、IDEはそれを支援する必要があります。デフォルトでは、Qt Creatorは"
+"インデントにスペースを使用しますが、これはGodotプロジェクトでは正しくありませ"
+"ん。この動作を変更するには、\\ *オプション* → *C++* の「コードスタイル」を変"
+"更します。"
+
+#, fuzzy
+msgid ""
+"Click on **Edit** to change the current settings, then click on **Copy Built-"
+"in Code Style** button to set a new code style. Set a name for it (e.g. "
+"Godot) and change the Tab policy to be **Tabs Only**."
+msgstr ""
+"[編集]をクリックして現在の設定を変更し、[ビルトイン コードスタイルをコピー]ボ"
+"タンをクリックして新しいコードスタイルを設定します。名前を設定し(例: Godot)、"
+"タブポリシーを *タブのみ* に変更します。"
+
+#, fuzzy
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"これらのチャネルやその他のチャネルの概要は、`Godotウェブサイト <https://"
+"godotengine.org/community>`_\\ でもご覧いただけます。"
+
+msgid "Translation status"
+msgstr "翻訳ステータス"

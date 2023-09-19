@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -108,12 +108,21 @@ msgid ""
 "individual controls."
 msgstr ""
 
+#, fuzzy
+msgid "**Font size**"
+msgstr "**Fonte**"
+
+msgid ""
+"An integer value, which is used alongside a font to determine the size at "
+"which the text should be displayed."
+msgstr ""
+
 msgid "**Icon**"
 msgstr "**Icon**"
 
 msgid ""
-"A :ref:`texture <class_Texture>` resource, which is normally used to display "
-"an icon (on a :ref:`Button <class_Button>`, for example)."
+"A :ref:`texture <class_Texture2D>` resource, which is normally used to "
+"display an icon (on a :ref:`Button <class_Button>`, for example)."
 msgstr ""
 
 msgid "**StyleBox**"
@@ -281,7 +290,7 @@ msgstr ""
 msgid "Check for local overrides of the same data type and name."
 msgstr ""
 
-msgid "Using control's class name and parent class names:"
+msgid "Using control's type variation, class name and parent class names:"
 msgstr ""
 
 msgid ""
@@ -305,10 +314,13 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Using control's class name check the project-wide theme, if it's present."
+"Using control's type variation, class name and parent class names check the "
+"project-wide theme, if it's present."
 msgstr ""
 
-msgid "Using control's class name check the default theme."
+msgid ""
+"Using control's type variation, class name and parent class names check the "
+"default theme."
 msgstr ""
 
 msgid ""

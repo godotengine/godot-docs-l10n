@@ -1,0 +1,230 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Custom Godot servers"
+msgstr "Serveurs Godot personnalisés"
+
+msgid "Introduction"
+msgstr "Introduction"
+
+msgid ""
+"Godot implements multi-threading as servers. Servers are daemons which "
+"manage data, process it, and push the result. Servers implement the mediator "
+"pattern which interprets resource ID and process data for the engine and "
+"other modules. In addition, the server claims ownership for its RID "
+"allocations."
+msgstr ""
+"Godot implemente le multithreading en tant que serveurs. Les serveurs sont "
+"des processus en arrière-plan qui gèrent les données, les traitent et "
+"poussent le résultat. Les serveurs implémentent le patron de conception "
+"mediator qui interprète l'identification des ID ressources et traite les "
+"données pour le moteur et les autres modules. De plus, le serveur revendique "
+"la propriété de ses allocations RID."
+
+#, fuzzy
+msgid ""
+"This guide assumes the reader knows how to create C++ modules and Godot data "
+"types. If not, refer to :ref:`doc_custom_modules_in_cpp`."
+msgstr ""
+"Ce guide part du principe que le lecteur sait comment créer des modules C++ "
+"et des types de données Godot. Si ce n'est pas le cas, voir :ref:"
+"`doc_custom_modules_in_c++`."
+
+msgid "References"
+msgstr "References"
+
+msgid ""
+"`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-"
+"does-godot-use-servers-and-rids>`__"
+msgstr ""
+"`Pourquoi Godot utilise-t-il des serveurs et des RID ? <https://godotengine."
+"org/article/why-does-godot-use-servers-and-rids>`__"
+
+msgid "`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
+msgstr ""
+"`Singleton pattern <https://en.wikipedia.org/wiki/Singleton_pattern>`__"
+
+msgid "`Mediator pattern <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+msgstr "`Motif médiateur <https://en.wikipedia.org/wiki/Mediator_pattern>`__"
+
+msgid "What for?"
+msgstr "Pourquoi ?"
+
+msgid "Adding artificial intelligence."
+msgstr "Ajouter une intelligence artificielle."
+
+msgid "Adding custom asynchronous threads."
+msgstr "Ajouter des threads asynchrones personnalisés."
+
+msgid "Adding support for a new input device."
+msgstr "Ajouter la prise en charge d'un nouveau périphérique d'entrées."
+
+msgid "Adding writing threads."
+msgstr "Ajout de threads d'écriture."
+
+msgid "Adding a custom VoIP protocol."
+msgstr "Ajouter un protocole de VoIP personnalisé."
+
+msgid "And more..."
+msgstr "Et plus..."
+
+msgid "Creating a Godot server"
+msgstr "Créer un serveur Godot"
+
+msgid ""
+"At minimum, a server must have a static instance, a sleep timer, a thread "
+"loop, an initialization state and a cleanup procedure."
+msgstr ""
+"Au minimum, un serveur doit avoir une instance statique, un minuteur de "
+"sommeil, une boucle d’exécution, un état d'initialisation et une procédure "
+"de nettoyage."
+
+msgid "Custom managed resource data"
+msgstr "Données de ressources gérées sur mesure"
+
+msgid ""
+"Godot servers implement a mediator pattern. All data types inherit "
+"``RID_Data``. ``RID_Owner<MyRID_Data>`` owns the object when ``make_rid`` is "
+"called. During debug mode only, RID_Owner maintains a list of RIDs. In "
+"practice, RIDs are similar to writing object-oriented C code."
+msgstr ""
+"Les serveurs Godot mettent en œuvre un modèle médiateur. Tous les types de "
+"données héritent de ``RID_Data``. ``RID_Owner<MyRID_Data>`` possède l'objet "
+"lorsque ``make_rid`` est appelé. En mode de débogage uniquement, RID_Owner "
+"maintient une liste de RIDs. En pratique, les RIDs sont similaires à "
+"l'écriture de code C orienté objet."
+
+msgid ":ref:`RID<class_rid>`"
+msgstr ":ref:`RID<class_rid>`"
+
+#, fuzzy
+msgid ""
+"`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/"
+"templates/rid.h>`__"
+msgstr ""
+"`core/rid.h <https://github.com/godotengine/godot/blob/3.x/core/rid.h>`__"
+
+msgid "Registering the class in GDScript"
+msgstr "Enregistrement de la classe dans GDScript"
+
+msgid ""
+"Servers are allocated in ``register_types.cpp``. The constructor sets the "
+"static instance and ``init()`` creates the managed thread; "
+"``unregister_types.cpp`` cleans up the server."
+msgstr ""
+"Les serveurs sont alloués dans ``register_types.cpp``. Le constructeur "
+"définit l'instance statique et ``init()`` créé le thread associé ; "
+"``unregister_types.cpp`` nettoie le serveur."
+
+msgid ""
+"Since a Godot server class creates an instance and binds it to a static "
+"singleton, binding the class might not reference the correct instance. "
+"Therefore, a dummy class must be created to reference the proper Godot "
+"server."
+msgstr ""
+"Puisqu'une classe serveur Godot créée une instance et la lie à un singleton "
+"statique, lier la classe pourrait ne pas faire référence à la bonne "
+"instance. Toutefois, une classe factice doit être créée pour référencer le "
+"serveur Godot approprié."
+
+msgid ""
+"In ``register_server_types()``, ``Engine::get_singleton()->add_singleton`` "
+"is used to register the dummy class in GDScript."
+msgstr ""
+"Dans ``register_server_types()``, ``Engine::get_singleton()->add_singleton`` "
+"est utilisé pour enregistrer la classe factice dans GDScript."
+
+msgid ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
+msgstr ""
+"`servers/register_server_types.cpp <https://github.com/godotengine/godot/"
+"blob/master/servers/register_server_types.cpp>`__"
+
+msgid "Bind methods"
+msgstr "Méthodes liées"
+
+msgid ""
+"The dummy class binds singleton methods to GDScript. In most cases, the "
+"dummy class methods wraps around."
+msgstr ""
+"La classe factice lie les méthodes singleton au GDScript. Dans la plupart "
+"des cas, les méthodes de la classe factices sont englobées."
+
+msgid "Binding Signals"
+msgstr "Signaux de liaison"
+
+msgid ""
+"It is possible to emit signals to GDScript by calling the GDScript dummy "
+"object."
+msgstr ""
+"Il est possible d'émettre des signaux vers GDScript en appelant l'objet "
+"factice GDScript."
+
+msgid "MessageQueue"
+msgstr "MessageQueue"
+
+msgid ""
+"In order to send commands into SceneTree, MessageQueue is a thread-safe "
+"buffer to queue set and call methods for other threads. To queue a command, "
+"obtain the target object RID and use either ``push_call``, ``push_set``, or "
+"``push_notification`` to execute the desired behavior. The queue will be "
+"flushed whenever either ``SceneTree::idle`` or ``SceneTree::iteration`` is "
+"executed."
+msgstr ""
+"Afin d'envoyer des commandes dans SceneTree, MessageQueue est un tampon "
+"thread-safe qui permet de mettre en file d'attente et d'appeler des méthodes "
+"pour d'autres threads. Pour mettre une commande en file d'attente, obtenez "
+"le RID de l'objet cible et utilisez soit ``push_call``, ``push_set``, ou "
+"``push_notification`` pour exécuter le comportement souhaité. La file "
+"d'attente sera vidée à chaque fois que soit ``SceneTree::idle`` soit "
+"``SceneTree::iteration`` sera exécuté."
+
+msgid "References:"
+msgstr "Références :"
+
+#, fuzzy
+msgid ""
+"`core/object/message_queue.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/object/message_queue.cpp>`__"
+msgstr ""
+"`core/message_queue.cpp <https://github.com/godotengine/godot/blob/3.x/core/"
+"message_queue.cpp>`__"
+
+msgid "Summing it up"
+msgstr "En résumé"
+
+msgid "Here is the GDScript sample code:"
+msgstr "Voici un exemple de code en GDScript :"
+
+msgid "Notes"
+msgstr "Notes"
+
+msgid ""
+"The actual `Hilbert Hotel <https://en.wikipedia.org/wiki/"
+"Hilbert%27s_paradox_of_the_Grand_Hotel>`__ is impossible."
+msgstr ""
+"Le véritable `Hilbert Hotel <https://en.wikipedia.org/wiki/"
+"Hilbert%27s_paradox_of_the_Grand_Hotel>`__ est impossible."
+
+msgid "Connecting signal example code is pretty hacky."
+msgstr "Le code d'exemple de connexion de signal est assez hacky."
+
+msgid "Translation status"
+msgstr "État de la traduction"

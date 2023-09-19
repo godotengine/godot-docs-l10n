@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,6 +45,13 @@ msgstr ""
 "проектов, в том числе игр, разработанных при помощи ПО). Ваша игра или "
 "проект могут иметь иную лицензию, но она должна быть совместима с "
 "изначальной."
+
+msgid ""
+"This section covers compliance with licenses from a user perspective. If you "
+"are interested in licence compliance as a contributor, you can find "
+"guidelines :ref:`here "
+"<doc_best_practices_for_engine_contributors_license_compliance>`."
+msgstr ""
 
 msgid ""
 "In your project's credits screen, remember to also list third-party notices "
@@ -151,6 +158,52 @@ msgstr ""
 "образом. Это наиболее распространённые подходы (необходимо реализовать "
 "только один из них, не все)."
 
+msgid ""
+"Godot provides several methods to get license information in the Engine "
+"singleton. This allows you to source the license information directly from "
+"the engine binary, which prevents the information from becoming outdated if "
+"you update engine versions."
+msgstr ""
+
+msgid "For the engine itself:"
+msgstr ""
+
+msgid ":ref:`Engine.get_license_text<class_Engine_method_get_license_text>`"
+msgstr ""
+
+msgid "For third-party components used by the engine:"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Engine.get_license_info<class_Engine_method_get_license_info>`"
+msgstr ""
+":ref:`CanvasItem.get_canvas_transform() "
+"<class_CanvasItem_method_get_canvas_transform>`"
+
+#, fuzzy
+msgid ""
+":ref:`Engine.get_copyright_info<class_Engine_method_get_copyright_info>`"
+msgstr ""
+":ref:`CanvasItem.get_viewport_transform() "
+"<class_CanvasItem_method_get_viewport_transform>`"
+
+msgid ""
+"For miscellaneous engine contributor information. You don't have to include "
+"these ones in your project, but they're listed here for reference:"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`Engine.get_author_info<class_Engine_method_get_author_info>`"
+msgstr ""
+":ref:`CanvasItem.get_global_transform() "
+"<class_CanvasItem_method_get_global_transform>`"
+
+#, fuzzy
+msgid ":ref:`Engine.get_donor_info<class_Engine_method_get_donor_info>`"
+msgstr ""
+":ref:`CanvasItem.get_viewport_transform() "
+"<class_CanvasItem_method_get_viewport_transform>`"
+
 msgid "Credits screen"
 msgstr "Титры"
 
@@ -167,18 +220,19 @@ msgid "Licenses screen"
 msgstr "Экран лицензий"
 
 msgid ""
-"Some games have a special menu (often in the settings) to display licenses."
+"Some games have a special menu (often in the settings) to display licenses. "
+"This menu is typically accessed with a button called **Third-party "
+"Licenses** or **Open Source Licenses**."
 msgstr ""
-"В некоторых играх есть специальное меню (обычно в настройках) где отображена "
-"лицензия."
 
 msgid "Output log"
 msgstr "Лог вывода"
 
+#, fuzzy
 msgid ""
-"Just printing the licensing text using the :ref:`print() "
-"<class_@GDScript_method_print>` function may be enough on platforms where a "
-"global output log is readable. This is the case on desktop platforms, "
+"Printing the licensing text using the :ref:`print() "
+"<class_@GlobalScope_method_print>` function may be enough on platforms where "
+"a global output log is readable. This is the case on desktop platforms, "
 "Android and HTML5 (but not iOS and UWP)."
 msgstr ""
 "Простого вывода текста лицензии с использованием функции :ref:`print() "

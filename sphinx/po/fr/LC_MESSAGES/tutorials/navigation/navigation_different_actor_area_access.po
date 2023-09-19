@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Support different actor area access"
+msgstr ""
+
+msgid ""
+"A typical example for different area access in gameplay are doors that "
+"connect rooms with different navigation meshes and are not accessible by all "
+"actors all the time."
+msgstr ""
+
+msgid ""
+"Add a NavigationRegion at the door position. Add an appropriated "
+"navigationmesh the size of the door that can connect with the surrounding "
+"navigationmeshes. In order to control access enable / disable navigation "
+"layer bits so path queries that use the same navigation layer bits can find "
+"a path through the \"door\" navigationmesh."
+msgstr ""
+
+msgid ""
+"The bitmask can act as a set of door keys or abilities and only actors with "
+"at least one matching and enabled bit layer in their pathfinding query will "
+"find a path through this region. See :ref:"
+"`doc_navigation_advanced_using_navigationlayers` for more information on how "
+"to work with navigation layers and the bitmask."
+msgstr ""
+
+msgid ""
+"The entire \"door\" region can also be enabled / disable if required but if "
+"disabled will block access for all path queries."
+msgstr ""
+
+msgid ""
+"Prefer working with navigation layers in path queries whenever possible as "
+"enabling or disabling navigation layers on a region triggers a performance "
+"costly recalculation of the navigation map connections."
+msgstr ""
+
+msgid ""
+"Changing navigation layers will only affect new path queries but not "
+"automatically update existing paths."
+msgstr ""
+
+msgid "Translation status"
+msgstr "État de la traduction"

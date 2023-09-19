@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine 3.6\n"
+"Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 14:02+0200\n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,14 +39,11 @@ msgstr ""
 msgid "Create a simple animation"
 msgstr "Crea una semplice animazione"
 
-msgid "Call functions with the powerful Call Function Tracks"
-msgstr ""
-
 msgid ""
 "In Godot, you can animate anything available in the Inspector, such as Node "
 "transforms, sprites, UI elements, particles, visibility and color of "
 "materials, and so on. You can also modify values of script variables and "
-"call any function."
+"even call functions."
 msgstr ""
 
 msgid "Create an AnimationPlayer node"
@@ -59,7 +56,7 @@ msgstr ""
 
 msgid ""
 "The AnimationPlayer node type is the data container for your animations. One "
-"AnimationPlayer node can hold multiple animations, that can automatically "
+"AnimationPlayer node can hold multiple animations, which can automatically "
 "transition to one another."
 msgstr ""
 
@@ -68,15 +65,16 @@ msgid "The AnimationPlayer node"
 msgstr "Il nodo AnimationPlayer"
 
 msgid ""
-"After creating one click on the AnimationPlayer node in the Node tab to open "
-"the Animation Panel at the bottom of the viewport."
+"After you create an AnimationPlayer node, click on it to open the Animation "
+"Panel at the bottom of the viewport."
 msgstr ""
 
 msgid "The animation panel position"
 msgstr ""
 
-msgid "It consists of four parts:"
-msgstr ""
+#, fuzzy
+msgid "The animation panel consists of four parts:"
+msgstr "Il pannello di animazione"
 
 #, fuzzy
 msgid "The animation panel"
@@ -93,52 +91,54 @@ msgstr ""
 
 msgid ""
 "The timeline and track controls, where you can zoom the timeline and edit "
-"tracks for example."
+"tracks, for example."
 msgstr ""
 
 msgid "Computer animation relies on keyframes"
 msgstr ""
 
-msgid "A keyframe defines the value of a property at a certain point in time."
+msgid "A keyframe defines the value of a property at a point in time."
 msgstr ""
 
 msgid ""
 "Diamond shapes represent keyframes in the timeline. A line between two "
-"keyframes indicates that the value hasn't changed."
+"keyframes indicates that the value doesn't change between them."
 msgstr ""
 
 msgid "Keyframes in Godot"
 msgstr ""
 
 msgid ""
-"The engine interpolates values between keyframes, resulting in a gradual "
-"change in values over time."
+"You set values of a node's properties and create animation keyframes for "
+"them. When the animation runs, the engine will interpolate the values "
+"between the keyframes, resulting in them gradually changing over time."
 msgstr ""
 
 msgid "Two keyframes are all it takes to obtain a smooth motion"
 msgstr ""
 
 msgid ""
-"The timeline lets you insert keyframes and change their timing. It also "
-"defines how long the animation is."
+"The timeline defines how long the animation will take. You can insert "
+"keyframes at various points, and change their timing."
 msgstr ""
 
 msgid "The timeline in the animation panel"
 msgstr ""
 
 msgid ""
-"Each line of the Animation Panel is an animation track. Normal and Transform "
-"tracks reference node properties. Their name or id is a path to the node and "
-"the affected property."
+"Each line in the Animation Panel is an animation track that references a "
+"Normal or Transform property of a node. Each track stores a path to a node "
+"and its affected property. For example, the position track in the "
+"illustration refers to the ``position`` property of the Sprite2D node."
 msgstr ""
 
 msgid "Example of Normal animation tracks"
 msgstr ""
 
 msgid ""
-"If you animate the wrong property, you can edit a track's path anytime. "
-"Double click on it and type the new path. Play the animation using the "
-"\"Play from beginning\" button |Play from beginning| (or pressing :kbd:"
+"If you animate the wrong property, you can edit a track's path at any time "
+"by double-clicking on it and typing the new path. Play the animation using "
+"the \"Play from beginning\" button |Play from beginning| (or pressing :kbd:"
 "`Shift + D` on keyboard) to see the changes instantly."
 msgstr ""
 
@@ -161,7 +161,7 @@ msgid "Our scene setup"
 msgstr "La nostra impostazione della scena"
 
 msgid ""
-"AnimationPlayer inherits from Node instead of Node2D or Spatial, which means "
+"AnimationPlayer inherits from Node instead of Node2D or Node3D, which means "
 "that the child nodes will not inherit the transform from the parent nodes "
 "due to a bare Node being present in the hierarchy."
 msgstr ""
@@ -172,16 +172,19 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The sprite holds an image texture. We animate that sprite to move between "
-"two points on the screen. For this tutorial, use the default Godot icon as "
-"the sprite's texture. As a starting point, move the sprite to a left "
-"position on the screen."
+"The sprite holds an image texture. For this tutorial, select the Sprite2D "
+"node, click Texture in the Inspector, and then click Load. Select the "
+"default Godot icon for the sprite's texture."
 msgstr ""
 
+#, fuzzy
+msgid "Adding an animation"
+msgstr "Animazione"
+
 msgid ""
-"Select the AnimationPlayer node, then click the \"Animation\" button in the "
-"animation editor. From the list select \"New\" (|Add Animation|) to add a "
-"new animation. And Enter a name for the animation in the dialog box."
+"Select the AnimationPlayer node and click the \"Animation\" button in the "
+"animation editor. From the list, select \"New\" (|Add Animation|) to add a "
+"new animation. Enter a name for the animation in the dialog box."
 msgstr ""
 
 #, fuzzy
@@ -192,11 +195,34 @@ msgid "Add a new animation"
 msgstr ""
 
 #, fuzzy
+msgid "Manage an animation libraries"
+msgstr "Proprietà generali"
+
+msgid ""
+"For reusability, the animation is registered in a list in the animation "
+"library resource. If you add an animation to AnimationPlayer without "
+"specifying any particular settings, the animation will be registered in the "
+"[Global] animation library that AnimationPlayer has by default."
+msgstr ""
+
+#, fuzzy
+msgid "Manage animations"
+msgstr "L'animazione"
+
+msgid ""
+"If there are multiple animation libraries and you try to add an animation, a "
+"dialog box will appear with options."
+msgstr ""
+
+msgid "Add a new animation with library option"
+msgstr ""
+
+#, fuzzy
 msgid "Adding a track"
 msgstr "Aggiungere una traccia"
 
 msgid ""
-"To add a new track for our sprite, select it and take a look in the toolbar:"
+"To add a new track for our sprite, select it and take a look at the toolbar:"
 msgstr ""
 
 #, fuzzy
@@ -205,22 +231,20 @@ msgstr "Pulsanti di convenienza"
 
 msgid ""
 "These switches and buttons allow you to add keyframes for the selected "
-"node's location, rotation, and scale respectively."
+"node's location, rotation, and scale. Since we are only animating the "
+"sprite's position, make sure that only the location switch is selected. The "
+"selected switches are blue."
 msgstr ""
 
 msgid ""
-"Deselect rotation, because we are only interested in the location of our "
-"sprite for this tutorial and click on the key button."
+"Click on the key button to create the first keyframe. Since we don't have a "
+"track set up for the Position property yet, Godot will offer to create it "
+"for us. Click **Create**."
 msgstr ""
 
 msgid ""
-"As we don't have a track already set up for the transform/location property, "
-"Godot asks whether it should set it up for us. Click **Create**."
-msgstr ""
-
-msgid ""
-"This creates a new track and our first keyframe at the beginning of the "
-"timeline:"
+"Godot will create a new track and insert our first keyframe at the beginning "
+"of the timeline:"
 msgstr ""
 
 msgid "The sprite track"
@@ -230,26 +254,28 @@ msgid "The second keyframe"
 msgstr ""
 
 msgid ""
-"Now we need to set the destination where our sprite should be headed and how "
-"much time it takes to get there."
+"We need to set our sprite's end location and how long it will take for it to "
+"get there."
 msgstr ""
 
 msgid ""
-"Let's say, we want it to take 2 seconds to go to the other point. By default "
-"the animation is set to last only 1 second, so change this in the timeline "
-"controls in animation panel's lower panel to 2."
+"Let's say we want it to take two seconds to move between the points. By "
+"default, the animation is set to last only one second, so change the "
+"animation length to 2 in the controls on the right side of the animation "
+"panel's timeline header."
 msgstr ""
 
 msgid "Animation length"
 msgstr "Lunghezza dell'animazione"
 
 msgid ""
-"Click on the timeline header near the 2-second mark and move the sprite to "
-"the target destination on the right side."
+"Now, move the sprite right, to its final position. You can use the *Move "
+"tool* in the toolbar or set the *Position*'s X value in the *Inspector*."
 msgstr ""
 
 msgid ""
-"Again, click the key button in the toolbar. This creates our second keyframe."
+"Click on the timeline header near the two-second mark in the animation panel "
+"and then click the key button in the toolbar to create the second keyframe."
 msgstr ""
 
 #, fuzzy
@@ -271,9 +297,15 @@ msgid "Back and forth"
 msgstr "Avanti e indietro"
 
 msgid ""
-"Godot has an additional feature here. Like said before, Godot always "
-"calculates the frames between two keyframes. In a loop, the first keyframe "
-"is also the last keyframe, if no keyframe is specified at the end."
+"Godot has an interesting feature that we can use in animations. When "
+"Animation Looping is set but there's no keyframe specified at the end of the "
+"animation, the first keyframe is also the last."
+msgstr ""
+
+msgid ""
+"This means we can extend the animation length to four seconds now, and Godot "
+"will also calculate the frames from the last keyframe to the first, moving "
+"our sprite back and forth."
 msgstr ""
 
 #, fuzzy
@@ -281,9 +313,8 @@ msgid "Animation loop"
 msgstr "Ciclo di animazione"
 
 msgid ""
-"If you set the animation length to 4 seconds now, the animation moves back "
-"and forth. You can change this behavior if you change the track's loop mode. "
-"This is covered in the next chapter."
+"You can change this behavior by changing the track's loop mode. This is "
+"covered in the next chapter."
 msgstr ""
 
 #, fuzzy
@@ -291,8 +322,8 @@ msgid "Track settings"
 msgstr "Impostazioni traccia"
 
 msgid ""
-"Each track has a settings panel at the end, where you can set the update "
-"mode, the track interpolation, and the loop mode."
+"Each track has a settings panel at the end, where you can set its update "
+"mode, track interpolation, and loop mode."
 msgstr ""
 
 msgid ""
@@ -300,20 +331,14 @@ msgid ""
 "This can be:"
 msgstr ""
 
-msgid "**Continuous:** Update the property on each frame."
+msgid "**Continuous:** Update the property on each frame"
 msgstr ""
 
-msgid "**Discrete:** Only update the property on keyframes."
-msgstr ""
-
-msgid ""
-"**Trigger:** Only update the property on keyframes or triggers. Triggers are "
-"a type of keyframe used by the ``current_animation`` property of a :ref:"
-"`class_AnimationPlayer`, and Animation Playback tracks."
+msgid "**Discrete:** Only update the property on keyframes"
 msgstr ""
 
 msgid ""
-"**Capture:** If the first keyframe's time is greater than ``0.0``, the "
+"**Capture:** if the first keyframe's time is greater than ``0.0``, the "
 "current value of the property will be remembered and will be blended with "
 "the first animation key. For example, you could use the Capture mode to move "
 "a node that's located anywhere to a specific location."
@@ -324,12 +349,12 @@ msgid "Track mode"
 msgstr "Modalità traccia"
 
 msgid ""
-"In normal animations, you usually use \"Continuous\". The other types are "
-"used to script complex animations."
+"You will usually use \"Continuous\" mode. The other types are used to script "
+"complex animations."
 msgstr ""
 
 msgid ""
-"The interpolation tells Godot how to calculate the frame values between the "
+"Track interpolation tells Godot how to calculate the frame values between "
 "keyframes. These interpolation modes are supported:"
 msgstr ""
 
@@ -346,18 +371,29 @@ msgid ""
 "keyframes"
 msgstr ""
 
+msgid ""
+"Linear Angle (Only appears in rotation property): Linear mode with shortest "
+"path rotation"
+msgstr ""
+
+msgid ""
+"Cubic Angle (Only appears in rotation property): Cubic mode with shortest "
+"path rotation"
+msgstr ""
+
 #, fuzzy
 msgid "Track interpolation"
 msgstr "Interpolazione traccia"
 
 msgid ""
-"Cubic interpolation leads to a more natural movement, where the animation is "
-"slower at a keyframe and faster between keyframes. This is usually used for "
-"character animation. Linear interpolation creates more of a robotic movement."
+"With Cubic interpolation, animation is slower at keyframes and faster "
+"between them, which leads to more natural movement. Cubic interpolation is "
+"commonly used for character animation. Linear interpolation animates changes "
+"at a fixed pace, resulting in a more robotic effect."
 msgstr ""
 
 msgid ""
-"Godot supports two loop modes, which affect the animation if it's set to "
+"Godot supports two loop modes, which affect the animation when it's set to "
 "loop:"
 msgstr ""
 
@@ -381,14 +417,15 @@ msgid "Keyframes for other properties"
 msgstr ""
 
 msgid ""
-"Godot doesn't restrict you to only edit transform properties. Every property "
-"can be used as a track where you can set keyframes."
+"Godot's animation system isn't restricted to position, rotation, and scale. "
+"You can animate any property."
 msgstr ""
 
 msgid ""
-"If you select your sprite while the animation panel is visible, you get a "
-"small keyframe button for all the sprite's properties. Click on this button "
-"and Godot automatically adds a track and keyframe to the current animation."
+"If you select your sprite while the animation panel is visible, Godot will "
+"display a small keyframe button in the *Inspector* for each of the sprite's "
+"properties. Click on one of these buttons to add a track and keyframe to the "
+"current animation."
 msgstr ""
 
 #, fuzzy
@@ -396,95 +433,21 @@ msgid "Edit keyframes"
 msgstr "Modifica fotogrammi chiave"
 
 msgid ""
-"For advanced use and to edit keyframes in detail, You can click on them to "
-"bring up the keyframe editor in the inspector. You can use this to directly "
-"edit its values."
+"You can click on a keyframe in the animation timeline to display and edit "
+"its value in the *Inspector*."
 msgstr ""
 
 msgid "Keyframe editor editing a key"
 msgstr ""
 
 msgid ""
-"Additionally, you can also edit the easing value for this keyframe by "
-"clicking and dragging the easing setting. This tells Godot, how to change "
-"the property values when it reaches this keyframe."
+"You can also edit the easing value for a keyframe here by clicking and "
+"dragging its easing curve. This tells Godot how to interpolate the animated "
+"property when it reaches this keyframe."
 msgstr ""
 
 msgid ""
-"You usually tweak your animations this way, when the movement doesn't \"look "
-"right\"."
-msgstr ""
-
-msgid "Advanced: Call Method tracks"
-msgstr ""
-
-msgid ""
-"Godot's animation engine doesn't stop here. If you're already comfortable "
-"with Godot's scripting language :ref:`doc_gdscript` and :doc:`/classes/"
-"index` you know that each node type is a class and has a bunch of callable "
-"methods."
-msgstr ""
-
-msgid ""
-"For example, the :ref:`class_AudioStreamPlayer` node type has a method to "
-"play an audio stream."
-msgstr ""
-
-msgid ""
-"Wouldn't it be great to use a method at a specific keyframe in an animation? "
-"This is where \"Call Method Tracks\" come in handy. These tracks reference a "
-"node again, this time without a reference to a property. Instead, a keyframe "
-"holds the name and arguments of a method, that Godot should call when it "
-"reaches this keyframe."
-msgstr ""
-
-msgid ""
-"To demonstrate, we're going to use a call method track to play audio at a "
-"specific keyframe. Normally to play audio you should use an audio track, but "
-"for the sake of demonstrating methods we're going to do it this way."
-msgstr ""
-
-msgid ""
-"Add a :ref:`class_AudioStreamPlayer` to the Scene Tree and setup a stream "
-"using an audio file you put in your project."
-msgstr ""
-
-msgid ""
-"Click on \"Add track\" (|Add track|) on the animation panel's track controls."
-msgstr ""
-
-#, fuzzy
-msgid "Add track"
-msgstr "Aggiungere una traccia"
-
-msgid "Select \"Add Call Method Track\" from the list of possible track types."
-msgstr ""
-
-msgid "Add Call Method Track"
-msgstr ""
-
-msgid ""
-"Select the :ref:`class_AudioStreamPlayer` node in the selection window. "
-"Godot adds the track with the reference to the node."
-msgstr ""
-
-msgid "Select AudioStreamPlayer"
-msgstr "Seleziona AudioStreamPlayer"
-
-msgid ""
-"Right click the timeline where Godot should play the sample and click the "
-"\"Insert Key\" option. This will bring up a list of methods that can be "
-"called for the AudioStreamPlayer node. Select the first one."
-msgstr ""
-
-msgid ""
-"When Godot reaches the keyframe, Godot calls the :ref:"
-"`class_AudioStreamPlayer` node's \"play\" function and the stream plays."
-msgstr ""
-
-msgid ""
-"You can change its position by dragging it on the timeline, you can also "
-"click on the keyframe and use the keyframe settings in the inspector."
+"You can tweak your animations this way until the movement \"looks right.\""
 msgstr ""
 
 #, fuzzy
@@ -514,7 +477,7 @@ msgstr ""
 msgid ""
 "If you want to reset the tracks in the editor, select the AnimationPlayer "
 "node, open the **Animation** bottom panel then choose **Apply Reset** in the "
-"animation editor's **Animation** dropdown menu."
+"animation editor's **Edit** dropdown menu."
 msgstr ""
 
 msgid ""
@@ -522,6 +485,11 @@ msgid ""
 "automatically create a RESET track when using the keyframe icon next to a "
 "property in the inspector. This does not apply on tracks created with Godot "
 "versions prior to 3.4, as the animation reset track feature was added in 3.4."
+msgstr ""
+
+msgid ""
+"RESET tracks is also used as a reference value for blending. See also `For "
+"better blending <../animation/animation_tree.html#for-better-blending>`__."
 msgstr ""
 
 msgid "Translation status"

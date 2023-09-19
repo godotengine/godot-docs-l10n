@@ -1,0 +1,335 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compiling for Android"
+msgstr ""
+
+msgid ""
+"This page describes how to compile Android export template binaries from "
+"source. If you're looking to export your project to Android instead, read :"
+"ref:`doc_exporting_for_android`."
+msgstr ""
+
+msgid "Note"
+msgstr ""
+
+msgid ""
+"In most cases, using the built-in deployer and export templates is good "
+"enough. Compiling the Android APK manually is mostly useful for custom "
+"builds or custom packages for the deployer."
+msgstr ""
+
+msgid ""
+"Also, you still need to follow the steps mentioned in the :ref:"
+"`doc_exporting_for_android` tutorial before attempting to build a custom "
+"export template."
+msgstr ""
+
+#, fuzzy
+msgid "Requirements"
+msgstr "Nároky"
+
+msgid "For compiling under Windows, Linux or macOS, the following is required:"
+msgstr ""
+
+msgid "`Python 3.6+ <https://www.python.org/downloads/>`_."
+msgstr ""
+
+msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
+msgstr ""
+
+msgid ""
+"`Android SDK <https://developer.android.com/studio/#command-tools>`_ "
+"(command-line tools are sufficient)."
+msgstr ""
+
+msgid "Required SDK components will be automatically installed."
+msgstr ""
+
+#, fuzzy
+msgid "On Linux,"
+msgstr "Linux"
+
+msgid ""
+"**do not use an Android SDK provided by your distribution's repositories as "
+"it will often be outdated**."
+msgstr ""
+
+msgid "Gradle (will be downloaded and installed automatically if missing)."
+msgstr ""
+
+msgid "JDK 11 (either OpenJDK or Oracle JDK)."
+msgstr ""
+
+msgid ""
+"You can download a build from `ojdkbuild <https://github.com/ojdkbuild/"
+"ojdkbuild>`_."
+msgstr ""
+
+msgid ""
+"To get the Godot source code for compiling, see :ref:`doc_getting_source`."
+msgstr ""
+
+msgid ""
+"For a general overview of SCons usage for Godot, see :ref:"
+"`doc_introduction_to_the_buildsystem`."
+msgstr ""
+
+msgid "Setting up the buildsystem"
+msgstr ""
+
+msgid ""
+"Set the environment variable ``ANDROID_SDK_ROOT`` to point to the Android "
+"SDK. If you downloaded the Android command-line tools, this would be the "
+"folder where you extracted the contents of the ZIP archive."
+msgstr ""
+
+msgid "Install the necessary SDK components in this folder:"
+msgstr ""
+
+msgid ""
+"Accept the SDK component licenses by running the following command where "
+"``android_sdk_path`` is the path to the Android SDK, then answering all the "
+"prompts with ``y``:"
+msgstr ""
+
+msgid ""
+"Complete setup by running the following command where ``android_sdk_path`` "
+"is the path to the Android SDK."
+msgstr ""
+
+msgid ""
+"To set the environment variable on Windows, press :kbd:`Windows + R`, type "
+"\"control system\", then click on **Advanced system settings** in the left "
+"pane, then click on **Environment variables** on the window that appears."
+msgstr ""
+
+msgid ""
+"To set the environment variable on Linux or macOS, use ``export "
+"ANDROID_SDK_ROOT=/path/to/android-sdk`` where ``/path/to/android-sdk`` "
+"points to the root of the SDK directories."
+msgstr ""
+
+msgid "Building the export templates"
+msgstr ""
+
+msgid ""
+"Godot needs two export templates for Android: the optimized \"release\" "
+"template (``android_release.apk``) and the debug template (``android_debug."
+"apk``). As Google will require all APKs to include ARMv8 (64-bit) libraries "
+"starting from August 2019, the commands below will build an APK containing "
+"both ARMv7 and ARMv8 libraries."
+msgstr ""
+
+msgid ""
+"Compiling the standard export templates is done by calling SCons from the "
+"Godot root directory with the following arguments:"
+msgstr ""
+
+msgid ""
+"Release template (used when exporting with **Debugging Enabled** unchecked)"
+msgstr ""
+
+msgid "The resulting APK will be located at ``bin/android_release.apk``."
+msgstr ""
+
+msgid "Debug template (used when exporting with **Debugging Enabled** checked)"
+msgstr ""
+
+msgid "The resulting APK will be located at ``bin/android_debug.apk``."
+msgstr ""
+
+msgid ""
+"If you want to enable Vulkan validation layers, see :ref:`Vulkan validation "
+"layers on Android <doc_vulkan_validation_layers_android>`."
+msgstr ""
+
+msgid "Adding support for x86 devices"
+msgstr ""
+
+msgid ""
+"If you also want to include support for x86 and x86-64 devices, run the "
+"SCons command a third and fourth time with the ``arch=x86_32``, and "
+"``arch=x86_64`` arguments before building the APK with Gradle. For example, "
+"for the release template:"
+msgstr ""
+
+msgid ""
+"This will create a fat binary that works on all platforms. The final APK "
+"size of exported projects will depend on the platforms you choose to support "
+"when exporting; in other words, unused platforms will be removed from the "
+"APK."
+msgstr ""
+
+msgid "Cleaning the generated export templates"
+msgstr "Čištění vygenerovaných šablon exportu"
+
+msgid ""
+"You can use the following commands to remove the generated export templates:"
+msgstr ""
+
+msgid "Using the export templates"
+msgstr ""
+
+msgid ""
+"Godot needs release and debug APKs that were compiled against the same "
+"version/commit as the editor. If you are using official binaries for the "
+"editor, make sure to install the matching export templates, or build your "
+"own from the same version."
+msgstr ""
+
+msgid ""
+"When exporting your game, Godot opens the APK, changes a few things inside "
+"and adds your files."
+msgstr ""
+
+msgid "Installing the templates"
+msgstr ""
+
+msgid ""
+"The newly-compiled templates (``android_debug.apk`` and ``android_release."
+"apk``) must be copied to Godot's templates folder with their respective "
+"names. The templates folder can be located in:"
+msgstr ""
+
+msgid "Windows: ``%APPDATA%\\Godot\\export_templates\\<version>\\``"
+msgstr ""
+
+msgid "Linux: ``$HOME/.local/share/godot/export_templates/<version>/``"
+msgstr ""
+
+msgid ""
+"macOS: ``$HOME/Library/Application Support/Godot/export_templates/<version>/"
+"``"
+msgstr ""
+
+msgid ""
+"``<version>`` is of the form ``major.minor[.patch].status`` using values "
+"from ``version.py`` in your Godot source repository (e.g. ``3.0.5.stable`` "
+"or ``3.1.dev``). You also need to write this same version string to a "
+"``version.txt`` file located next to your export templates."
+msgstr ""
+
+msgid ""
+"However, if you are writing your custom modules or custom C++ code, you "
+"might instead want to configure your APKs as custom export templates here:"
+msgstr ""
+
+msgid ""
+"You don't even need to copy them, you can just reference the resulting file "
+"in the ``bin\\`` directory of your Godot source folder, so that the next "
+"time you build you will automatically have the custom templates referenced."
+msgstr ""
+
+#, fuzzy
+msgid "Building the Godot editor"
+msgstr "Vestavěný editor motivů"
+
+msgid ""
+"Compiling the editor is done by calling SCons from the Godot root directory "
+"with the following arguments:"
+msgstr ""
+
+msgid "The resulting APK will be located at ``bin/android_editor.apk``."
+msgstr ""
+
+#, fuzzy
+msgid "Removing the Editor templates"
+msgstr "Vyhledání šablon"
+
+msgid ""
+"You can use the following commands to remove the generated editor templates:"
+msgstr ""
+
+#, fuzzy
+msgid "Installing the Godot editor"
+msgstr "Použití editoru motivů"
+
+msgid ""
+"With an Android device with Developer Options enabled, connect the Android "
+"device to your computer via its charging cable to a USB/USB-C port. Open up "
+"a Terminal/Command Prompt and run the following commands from the root "
+"directory with the following arguments:"
+msgstr ""
+
+msgid "Troubleshooting"
+msgstr "Odstraňování problémů"
+
+msgid "Platform doesn't appear in SCons"
+msgstr ""
+
+msgid ""
+"Double-check that you've set the ``ANDROID_SDK_ROOT`` environment variable. "
+"This is required for the platform to appear in SCons' list of detected "
+"platforms. See :ref:`Setting up the buildsystem "
+"<doc_android_setting_up_the_buildsystem>` for more information."
+msgstr ""
+
+msgid "Application not installed"
+msgstr ""
+
+msgid ""
+"Android might complain the application is not correctly installed. If so:"
+msgstr ""
+
+msgid "Check that the debug keystore is properly generated."
+msgstr ""
+
+msgid "Check that the jarsigner executable is from JDK 8."
+msgstr ""
+
+msgid ""
+"If it still fails, open a command line and run `logcat <https://developer."
+"android.com/studio/command-line/logcat>`_:"
+msgstr ""
+
+msgid ""
+"Then check the output while the application is installed; the error message "
+"should be presented there. Seek assistance if you can't figure it out."
+msgstr ""
+
+msgid "Application exits immediately"
+msgstr ""
+
+msgid ""
+"If the application runs but exits immediately, this might be due to one of "
+"the following reasons:"
+msgstr ""
+
+msgid ""
+"Make sure to use export templates that match your editor version; if you use "
+"a new Godot version, you *have* to update the templates too."
+msgstr ""
+
+msgid ""
+"``libgodot_android.so`` is not in ``libs/<arch>/`` where ``<arch>`` is the "
+"device's architecture."
+msgstr ""
+
+msgid ""
+"The device's architecture does not match the exported one(s). Make sure your "
+"templates were built for that device's architecture, and that the export "
+"settings included support for that architecture."
+msgstr ""
+
+msgid "In any case, ``adb logcat`` should also show the cause of the error."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stav překladu"
