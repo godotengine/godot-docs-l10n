@@ -10,14 +10,14 @@
 ENetMultiplayerPeer
 ===================
 
-**Inherits:** :ref:`MultiplayerPeer<class_MultiplayerPeer>` **<** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`MultiplayerPeer<class_MultiplayerPeer>` **<** :ref:`PacketPeer<class_PacketPeer>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 使用 `ENet <http://enet.bespin.org/index.html>`__ 库实现的 MultiplayerPeer。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 MultiplayerPeer 的一种实现，应该在初始化为客户端、服务器或网格之后传递给 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>`\ 。然后就可以通过连接到 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的信号来处理事件。有关 ENet 库包装的更多信息，请参见 :ref:`ENetConnection<class_ENetConnection>`\ 。
 
@@ -25,8 +25,8 @@ MultiplayerPeer 的一种实现，应该在初始化为客户端、服务器或�
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`高级多人游戏 <../tutorials/networking/high_level_multiplayer>`
 
@@ -34,8 +34,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ENetMultiplayerPeer_property_host:
 
@@ -93,8 +93,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ENetMultiplayerPeer_method_add_mesh_peer:
 
@@ -166,10 +166,10 @@ void **set_bind_ip** **(** :ref:`String<class_String>` ip **)**
 
 创建服务器时使用的 IP。默认情况下，这被设置为通配符 ``"*"``\ ，它绑定到所有可用的接口。给定的 IP 地址格式需要是 IPv4 或 IPv6，例如：\ ``"192.168.1.1"``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

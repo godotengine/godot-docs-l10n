@@ -10,14 +10,14 @@
 Theme
 =====
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于样式化/皮肤化 :ref:`Control<class_Control>` 和 :ref:`Window<class_Window>` 的资源。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于样式化/皮肤化 :ref:`Control<class_Control>` 和 :ref:`Window<class_Window>` 节点的资源。控件可以使用本地的主题覆盖项进行单独的风格化（见 :ref:`Control.add_theme_color_override<class_Control_method_add_theme_color_override>`\ ），而主题资源则能够存储这些设置，在所有同类型的控件之间实现共享（例如将所有 :ref:`Button<class_Button>` 都设置为相同的风格）。主题资源可以在整个项目上使用，但你也可以为单独的一个控件节点分支设置不同的主题资源。为某个控件节点分配的主题资源不仅会对它自己生效，也会对它的所有直接和间接子节点生效（只要控件链没有中断）。
 
@@ -27,8 +27,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`GUI 皮肤 <../tutorials/ui/gui_skinning>`
 
@@ -36,8 +36,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -52,8 +52,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -190,8 +190,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Theme_DataType:
 
@@ -261,8 +261,8 @@ enum **DataType**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Theme_property_default_base_scale:
 
@@ -323,8 +323,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Theme_method_add_type:
 
@@ -1158,10 +1158,10 @@ void **set_type_variation** **(** :ref:`StringName<class_StringName>` theme_type
 
 \ **注意：**\ 仅当该主题资源被设置为项目的默认主题时才会显示建议。参见 :ref:`ProjectSettings.gui/theme/custom<class_ProjectSettings_property_gui/theme/custom>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

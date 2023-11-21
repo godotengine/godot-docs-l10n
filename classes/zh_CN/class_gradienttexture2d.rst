@@ -10,21 +10,21 @@
 GradientTexture2D
 =================
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 2D texture that creates a pattern with colors obtained from a :ref:`Gradient<class_Gradient>`.
+使用从 :ref:`Gradient<class_Gradient>` 获得的颜色创建图案的 2D 纹理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A 2D texture that obtains colors from a :ref:`Gradient<class_Gradient>` to fill the texture data. This texture is able to transform a color transition into different patterns such as a linear or a radial gradient. The gradient is sampled individually for each pixel so it does not necessarily represent an exact copy of the gradient(see :ref:`width<class_GradientTexture2D_property_width>` and :ref:`height<class_GradientTexture2D_property_height>`). See also :ref:`GradientTexture1D<class_GradientTexture1D>`, :ref:`CurveTexture<class_CurveTexture>` and :ref:`CurveXYZTexture<class_CurveXYZTexture>`.
+2D纹理，从一个 :ref:`Gradient<class_Gradient>` 中获取颜色来填充纹理数据。该纹理能够将颜色过渡转换为不同的图案，例如线性或径向渐变。渐变是针对每个像素单独采样的，因此它不一定代表渐变的精确副本（请参阅 :ref:`width<class_GradientTexture2D_property_width>` 和 :ref:`height<class_GradientTexture2D_property_height>`\ ）。另见 :ref:`GradientTexture1D<class_GradientTexture1D>`\ 、\ :ref:`CurveTexture<class_CurveTexture>` 和 :ref:`CurveXYZTexture<class_CurveXYZTexture>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_GradientTexture2D_Fill:
 
@@ -128,8 +128,8 @@ enum **Repeat**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GradientTexture2D_property_fill:
 
@@ -263,10 +263,10 @@ Property Descriptions
 
 从 :ref:`Gradient<class_Gradient>` 上获取的水平颜色采样数，也表示纹理的宽度。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

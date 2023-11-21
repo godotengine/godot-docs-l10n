@@ -10,21 +10,21 @@
 Polygon2D
 =========
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 2D 多边形。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 Polygon2D 由一组点定义。每个点都连接到下一个点，最后一个点连接到第一个点，从而形成一个封闭的多边形。Polygon2D 可以填充颜色（纯色或渐变），也可以填充给定的纹理。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -95,8 +95,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Polygon2D_property_antialiased:
 
@@ -138,7 +138,7 @@ Property Descriptions
 - void **set_color** **(** :ref:`Color<class_Color>` value **)**
 - :ref:`Color<class_Color>` **get_color** **(** **)**
 
-多边形的填充颜色.如果定义了\ ``texture``\ (贴图),它将乘以该颜色.对于\ ``vertex_colors``\ 中未设置的顶点,它也将是默认颜色.
+该多边形的填充颜色。如果设置了 :ref:`texture<class_Polygon2D_property_texture>`\ ，它将乘以该颜色。它也将是未在 :ref:`vertex_colors<class_Polygon2D_property_vertex_colors>` 中设置的顶点的默认颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -276,7 +276,7 @@ Property Descriptions
 - void **set_texture** **(** :ref:`Texture2D<class_Texture2D>` value **)**
 - :ref:`Texture2D<class_Texture2D>` **get_texture** **(** **)**
 
-多边形的填充纹理。使用 ``uv`` 设置纹理坐标。
+该多边形的填充纹理。使用 :ref:`uv<class_Polygon2D_property_uv>` 设置纹理坐标。
 
 .. rst-class:: classref-item-separator
 
@@ -293,7 +293,7 @@ Property Descriptions
 - void **set_texture_offset** **(** :ref:`Vector2<class_Vector2>` value **)**
 - :ref:`Vector2<class_Vector2>` **get_texture_offset** **(** **)**
 
-多边形 ``texture`` 纹理的偏移量。如果为 ``(0, 0)``\ ，则纹理的原点（其左上角）将放置在多边形的 ``position`` 处。
+多边形的 :ref:`texture<class_Polygon2D_property_texture>` 纹理的偏移量。如果设置为 ``Vector2(0, 0)``\ ，则纹理的原点（其左上角）将放置在该多边形的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -327,7 +327,7 @@ Property Descriptions
 - void **set_texture_scale** **(** :ref:`Vector2<class_Vector2>` value **)**
 - :ref:`Vector2<class_Vector2>` **get_texture_scale** **(** **)**
 
-使用 ``texture`` 纹理时乘以 ``uv`` 坐标的值。值越大，纹理越小，反之亦然。
+使用 :ref:`texture<class_Polygon2D_property_texture>` 时乘以 :ref:`uv<class_Polygon2D_property_uv>` 坐标的量。值越大，纹理越小，反之亦然。
 
 .. rst-class:: classref-item-separator
 
@@ -344,7 +344,7 @@ Property Descriptions
 - void **set_uv** **(** :ref:`PackedVector2Array<class_PackedVector2Array>` value **)**
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_uv** **(** **)**
 
-多边形每个顶点的纹理坐标。每个多边形顶点应该有一个 ``uv``\ 。如果数量少，则未定义的顶点将使用 ``(0, 0)``\ 。
+多边形每个顶点的纹理坐标。每个多边形顶点应该有一个 UV 值。如果数量少，则未定义的顶点将使用 ``Vector2(0, 0)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ Property Descriptions
 - void **set_vertex_colors** **(** :ref:`PackedColorArray<class_PackedColorArray>` value **)**
 - :ref:`PackedColorArray<class_PackedColorArray>` **get_vertex_colors** **(** **)**
 
-每个顶点的颜色.颜色在顶点之间插值,从而获得平滑的渐变.每个多边形顶点应有一个.如果数量少,则未定义的顶点将使用\ ``color``.
+每个顶点的颜色。颜色在顶点之间插值，从而产生平滑的渐变。每个多边形顶点应该有一个。如果数量较少，则未定义的顶点将使用 :ref:`color<class_Polygon2D_property_color>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -369,8 +369,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Polygon2D_method_add_bone:
 
@@ -464,10 +464,10 @@ void **set_bone_weights** **(** :ref:`int<class_int>` index, :ref:`PackedFloat32
 
 设置指定骨骼的权重值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

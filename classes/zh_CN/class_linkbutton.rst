@@ -10,14 +10,14 @@
 LinkButton
 ==========
 
-**Inherits:** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 代表链接的按钮。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 代表链接的按钮。这种按钮主要用于与按钮的交互引起上下文变化时（如链接到网页）。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,33 +53,37 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
 
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_color<class_LinkButton_theme_color_font_color>`                  | ``Color(0.875, 0.875, 0.875, 1)`` |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_focus_color<class_LinkButton_theme_color_font_focus_color>`      | ``Color(0.95, 0.95, 0.95, 1)``    |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_hover_color<class_LinkButton_theme_color_font_hover_color>`      | ``Color(0.95, 0.95, 0.95, 1)``    |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_outline_color<class_LinkButton_theme_color_font_outline_color>`  | ``Color(1, 1, 1, 1)``             |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_pressed_color<class_LinkButton_theme_color_font_pressed_color>`  | ``Color(1, 1, 1, 1)``             |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`int<class_int>`           | :ref:`outline_size<class_LinkButton_theme_constant_outline_size>`           | ``0``                             |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`int<class_int>`           | :ref:`underline_spacing<class_LinkButton_theme_constant_underline_spacing>` | ``2``                             |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`Font<class_Font>`         | :ref:`font<class_LinkButton_theme_font_font>`                               |                                   |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`int<class_int>`           | :ref:`font_size<class_LinkButton_theme_font_size_font_size>`                |                                   |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>` | :ref:`focus<class_LinkButton_theme_style_focus>`                            |                                   |
-   +---------------------------------+-----------------------------------------------------------------------------+-----------------------------------+
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`       | :ref:`font_color<class_LinkButton_theme_color_font_color>`                             | ``Color(0.875, 0.875, 0.875, 1)`` |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`       | :ref:`font_disabled_color<class_LinkButton_theme_color_font_disabled_color>`           | ``Color(0, 0, 0, 1)``             |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`       | :ref:`font_focus_color<class_LinkButton_theme_color_font_focus_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``    |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`       | :ref:`font_hover_color<class_LinkButton_theme_color_font_hover_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``    |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`       | :ref:`font_hover_pressed_color<class_LinkButton_theme_color_font_hover_pressed_color>` | ``Color(0, 0, 0, 1)``             |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`       | :ref:`font_outline_color<class_LinkButton_theme_color_font_outline_color>`             | ``Color(1, 1, 1, 1)``             |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`       | :ref:`font_pressed_color<class_LinkButton_theme_color_font_pressed_color>`             | ``Color(1, 1, 1, 1)``             |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`           | :ref:`outline_size<class_LinkButton_theme_constant_outline_size>`                      | ``0``                             |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`           | :ref:`underline_spacing<class_LinkButton_theme_constant_underline_spacing>`            | ``2``                             |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Font<class_Font>`         | :ref:`font<class_LinkButton_theme_font_font>`                                          |                                   |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`           | :ref:`font_size<class_LinkButton_theme_font_size_font_size>`                           |                                   |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
+   | :ref:`StyleBox<class_StyleBox>` | :ref:`focus<class_LinkButton_theme_style_focus>`                                       |                                   |
+   +---------------------------------+----------------------------------------------------------------------------------------+-----------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -87,8 +91,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_LinkButton_UnderlineMode:
 
@@ -126,8 +130,8 @@ LinkButton 永远不会在其文本底部显示下划线。
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_LinkButton_property_language:
 
@@ -269,8 +273,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_LinkButton_theme_color_font_color:
 
@@ -279,6 +283,18 @@ Theme Property Descriptions
 :ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)``
 
 **LinkButton** 默认的字体颜色 :ref:`Color<class_Color>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LinkButton_theme_color_font_disabled_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **font_disabled_color** = ``Color(0, 0, 0, 1)``
+
+该 **LinkButton** 处于禁用状态时，使用的文本 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -303,6 +319,18 @@ Theme Property Descriptions
 :ref:`Color<class_Color>` **font_hover_color** = ``Color(0.95, 0.95, 0.95, 1)``
 
 当 **LinkButton** 被悬停时使用的文本颜色 :ref:`Color<class_Color>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LinkButton_theme_color_font_hover_pressed_color:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Color<class_Color>` **font_hover_pressed_color** = ``Color(0, 0, 0, 1)``
+
+该 **LinkButton** 处于悬停并按下状态时，使用的文本 :ref:`Color<class_Color>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -388,12 +416,12 @@ Theme Property Descriptions
 
 :ref:`StyleBox<class_StyleBox>` **focus**
 
-该 **LinkButton** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ ``focus`` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+该 **LinkButton** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`focus<class_LinkButton_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

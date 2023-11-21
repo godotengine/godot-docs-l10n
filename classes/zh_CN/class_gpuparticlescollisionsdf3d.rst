@@ -10,31 +10,31 @@
 GPUParticlesCollisionSDF3D
 ==========================
 
-**Inherits:** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A baked signed distance field 3D particle collision shape affecting :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
+影响 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的烘焙的带符号距离场 3D 粒子碰撞形状。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A baked signed distance field 3D particle collision shape affecting :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
+影响 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的烘焙的带符号距离场 3D 粒子碰撞形状。
 
-Signed distance fields (SDF) allow for efficiently representing approximate collision shapes for convex and concave objects of any shape. This is more flexible than :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>`, but it requires a baking step.
+有符号的距离场（SDF）允许有效地表示任何形状的凸面和凹面对象的近似碰撞形状。它比 :ref:`GPUParticlesCollisionHeightField3D<class_GPUParticlesCollisionHeightField3D>` 更灵活，但需要一个烘焙步骤。
 
-\ **Baking:** The signed distance field texture can be baked by selecting the **GPUParticlesCollisionSDF3D** node in the editor, then clicking **Bake SDF** at the top of the 3D viewport. Any *visible* :ref:`MeshInstance3D<class_MeshInstance3D>`\ s within the :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` will be taken into account for baking, regardless of their :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>`.
+\ **烘焙：**\ 可以通过在编辑器中选择 **GPUParticlesCollisionSDF3D** 节点，然后点击 3D 视口顶部的\ **烘焙 SDF**\ ，来烘焙有符号的距离场纹理。\ :ref:`size<class_GPUParticlesCollisionSDF3D_property_size>` 内的任何\ *可见* :ref:`MeshInstance3D<class_MeshInstance3D>`\ ，无论它们的 :ref:`GeometryInstance3D.gi_mode<class_GeometryInstance3D_property_gi_mode>` 如何，都将被考虑用于烘焙。
 
-\ **Note:** Baking a **GPUParticlesCollisionSDF3D**'s :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` is only possible within the editor, as there is no bake method exposed for use in exported projects. However, it's still possible to load pre-baked :ref:`Texture3D<class_Texture3D>`\ s into its :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` property in an exported project.
+\ **注意：**\ 烘焙 **GPUParticlesCollisionSDF3D** 的 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 只能在编辑器中进行，因为没有公开的烘焙方法可用于导出的游戏项目中。但是，在导出的游戏项目中，仍然可以将预先烘焙的 :ref:`Texture3D<class_Texture3D>` 加载到 :ref:`texture<class_GPUParticlesCollisionSDF3D_property_texture>` 属性中。
 
-\ **Note:** :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` must be :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` or :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` on the :ref:`GPUParticles3D<class_GPUParticles3D>`'s process material for collision to work.
+\ **注意：**\ 在 :ref:`GPUParticles3D<class_GPUParticles3D>` 的处理材质上，\ :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 必须是 :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` 或 :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>`\ ，才能使碰撞生效。
 
-\ **Note:** Particle collision only affects :ref:`GPUParticles3D<class_GPUParticles3D>`, not :ref:`CPUParticles3D<class_CPUParticles3D>`.
+\ **注意：**\ 粒子碰撞只影响 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，不影响 :ref:`CPUParticles3D<class_CPUParticles3D>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_GPUParticlesCollisionSDF3D_Resolution:
 
@@ -142,8 +142,8 @@ enum **Resolution**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GPUParticlesCollisionSDF3D_property_bake_mask:
 
@@ -232,8 +232,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_GPUParticlesCollisionSDF3D_method_get_bake_mask_value:
 
@@ -255,10 +255,10 @@ void **set_bake_mask_value** **(** :ref:`int<class_int>` layer_number, :ref:`boo
 
 基于 ``value``\ ，启用或禁用 :ref:`bake_mask<class_GPUParticlesCollisionSDF3D_property_bake_mask>` 中的指定层，该层由给定的一个介于 1 和 32 之间的 ``layer_number`` 指定。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

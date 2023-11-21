@@ -10,27 +10,27 @@
 Noise
 =====
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`FastNoiseLite<class_FastNoiseLite>`
+**派生：** :ref:`FastNoiseLite<class_FastNoiseLite>`
 
 噪声生成器的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This class defines the interface for noise generation libraries to inherit from.
+该类定义了噪声生成库要继承的接口。
 
-A default :ref:`get_seamless_image<class_Noise_method_get_seamless_image>` implementation is provided for libraries that do not provide seamless noise. This function requests a larger image from the :ref:`get_image<class_Noise_method_get_image>` method, reverses the quadrants of the image, then uses the strips of extra width to blend over the seams.
+为不提供无缝噪声的库提供一个默认的 :ref:`get_seamless_image<class_Noise_method_get_seamless_image>` 实现。该函数从 :ref:`get_image<class_Noise_method_get_image>` 请求更大的图像，反转该图像的象限，然后使用额外宽度的条带在接缝处混合。
 
-Inheriting noise classes can optionally override this function to provide a more optimal algorithm.
+继承的噪声类可以选择性地覆盖该函数，以提供更优化的算法。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Noise_method_get_image:
 
@@ -176,10 +176,10 @@ Method Descriptions
 
 \ **注意：**\ ``normalize`` 为 ``false`` 时，默认实现要求噪声生成器返回 ``-1.0`` 到 ``1.0`` 之间的值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

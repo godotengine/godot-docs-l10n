@@ -10,21 +10,21 @@
 IP
 ==
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 网际协议（IP）支持函数，如 DNS 解析。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 IP 包含网际协议（IP）的支持函数。TCP/IP 的支持在其他类中（请参阅 :ref:`StreamPeerTCP<class_StreamPeerTCP>` 和 :ref:`TCPServer<class_TCPServer>`\ ）。IP 提供 DNS 主机名解析支持，包括阻塞式和线程式。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_IP_ResolverStatus:
 
@@ -146,8 +146,8 @@ enum **Type**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_IP_constant_RESOLVER_MAX_QUERIES:
 
@@ -171,8 +171,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_IP_method_clear_cache:
 
@@ -301,10 +301,10 @@ void **erase_resolve_item** **(** :ref:`int<class_int>` id **)**
 
 创建一个队列项目，根据 :ref:`Type<enum_IP_Type>` 常量 ``ip_type``\ ，将主机名解析为 IPv4 或 IPv6 地址。如果成功，则返回队列 ID，否则返回 :ref:`RESOLVER_INVALID_ID<class_IP_constant_RESOLVER_INVALID_ID>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

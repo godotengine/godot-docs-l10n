@@ -10,27 +10,41 @@
 ImporterMeshInstance3D
 ======================
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 .. container:: contribute
 
-	There is currently no description for this class. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个类的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
-   +-----------------------------------------+---------------------------------------------------------------------------+------------------+
-   | :ref:`ImporterMesh<class_ImporterMesh>` | :ref:`mesh<class_ImporterMeshInstance3D_property_mesh>`                   |                  |
-   +-----------------------------------------+---------------------------------------------------------------------------+------------------+
-   | :ref:`NodePath<class_NodePath>`         | :ref:`skeleton_path<class_ImporterMeshInstance3D_property_skeleton_path>` | ``NodePath("")`` |
-   +-----------------------------------------+---------------------------------------------------------------------------+------------------+
-   | :ref:`Skin<class_Skin>`                 | :ref:`skin<class_ImporterMeshInstance3D_property_skin>`                   |                  |
-   +-----------------------------------------+---------------------------------------------------------------------------+------------------+
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>`       | :ref:`cast_shadow<class_ImporterMeshInstance3D_property_cast_shadow>`                                     | ``1``            |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`int<class_int>`                                                           | :ref:`layer_mask<class_ImporterMeshInstance3D_property_layer_mask>`                                       | ``1``            |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`ImporterMesh<class_ImporterMesh>`                                         | :ref:`mesh<class_ImporterMeshInstance3D_property_mesh>`                                                   |                  |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`NodePath<class_NodePath>`                                                 | :ref:`skeleton_path<class_ImporterMeshInstance3D_property_skeleton_path>`                                 | ``NodePath("")`` |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`Skin<class_Skin>`                                                         | :ref:`skin<class_ImporterMeshInstance3D_property_skin>`                                                   |                  |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`float<class_float>`                                                       | :ref:`visibility_range_begin<class_ImporterMeshInstance3D_property_visibility_range_begin>`               | ``0.0``          |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`float<class_float>`                                                       | :ref:`visibility_range_begin_margin<class_ImporterMeshInstance3D_property_visibility_range_begin_margin>` | ``0.0``          |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`float<class_float>`                                                       | :ref:`visibility_range_end<class_ImporterMeshInstance3D_property_visibility_range_end>`                   | ``0.0``          |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`float<class_float>`                                                       | :ref:`visibility_range_end_margin<class_ImporterMeshInstance3D_property_visibility_range_end_margin>`     | ``0.0``          |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
+   | :ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>` | :ref:`visibility_range_fade_mode<class_ImporterMeshInstance3D_property_visibility_range_fade_mode>`       | ``0``            |
+   +---------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------+------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -38,8 +52,46 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
+
+.. _class_ImporterMeshInstance3D_property_cast_shadow:
+
+.. rst-class:: classref-property
+
+:ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>` **cast_shadow** = ``1``
+
+.. rst-class:: classref-property-setget
+
+- void **set_cast_shadows_setting** **(** :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>` value **)**
+- :ref:`ShadowCastingSetting<enum_GeometryInstance3D_ShadowCastingSetting>` **get_cast_shadows_setting** **(** **)**
+
+.. container:: contribute
+
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ImporterMeshInstance3D_property_layer_mask:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **layer_mask** = ``1``
+
+.. rst-class:: classref-property-setget
+
+- void **set_layer_mask** **(** :ref:`int<class_int>` value **)**
+- :ref:`int<class_int>` **get_layer_mask** **(** **)**
+
+.. container:: contribute
+
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_ImporterMeshInstance3D_property_mesh:
 
@@ -54,7 +106,7 @@ Property Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -73,7 +125,7 @@ Property Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -92,12 +144,107 @@ Property Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ImporterMeshInstance3D_property_visibility_range_begin:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **visibility_range_begin** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_visibility_range_begin** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_visibility_range_begin** **(** **)**
+
+.. container:: contribute
+
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ImporterMeshInstance3D_property_visibility_range_begin_margin:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **visibility_range_begin_margin** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_visibility_range_begin_margin** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_visibility_range_begin_margin** **(** **)**
+
+.. container:: contribute
+
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ImporterMeshInstance3D_property_visibility_range_end:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **visibility_range_end** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_visibility_range_end** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_visibility_range_end** **(** **)**
+
+.. container:: contribute
+
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ImporterMeshInstance3D_property_visibility_range_end_margin:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **visibility_range_end_margin** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_visibility_range_end_margin** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_visibility_range_end_margin** **(** **)**
+
+.. container:: contribute
+
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ImporterMeshInstance3D_property_visibility_range_fade_mode:
+
+.. rst-class:: classref-property
+
+:ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>` **visibility_range_fade_mode** = ``0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_visibility_range_fade_mode** **(** :ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>` value **)**
+- :ref:`VisibilityRangeFadeMode<enum_GeometryInstance3D_VisibilityRangeFadeMode>` **get_visibility_range_fade_mode** **(** **)**
+
+.. container:: contribute
+
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

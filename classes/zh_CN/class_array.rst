@@ -14,8 +14,8 @@ Array
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 通用数组，可以包含任意类型的多个元素，可以通过从 0 开始的数字索引进行访问。负数索引可以用来从后面数起，就像在 Python 中一样（-1 是最后一个元素、-2 是倒数第二，以此类推）。
 
@@ -70,12 +70,12 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -108,8 +108,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -210,8 +210,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -240,8 +240,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Array_constructor_Array:
 
@@ -367,8 +367,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Array_method_all:
 
@@ -565,13 +565,13 @@ void **clear** **(** **)**
 
 void **erase** **(** :ref:`Variant<class_Variant>` value **)**
 
-Removes the first occurrence of a value from the array. If the value does not exist in the array, nothing happens. To remove an element by index, use :ref:`remove_at<class_Array_method_remove_at>` instead.
+从数组中移除第一个匹配的值。如果数组中不存在该值，则什么也不会发生。要通过索引移除元素，请改用 :ref:`remove_at<class_Array_method_remove_at>`\ 。
 
-\ **Note:** This method acts in-place and doesn't return a modified array.
+\ **注意：**\ 这个方法是就地操作的，不返回修改后的数组。
 
-\ **Note:** On large arrays, this method will be slower if the removed element is close to the beginning of the array (index 0). This is because all elements placed after the removed element have to be reindexed.
+\ **注意：**\ 在大型数组上，如果移除的元素靠近数组的开头（索引 0），则此方法会较慢。这是因为所有放置在移除元素之后的元素都必须重新索引。
 
-\ **Note:** Do not erase entries while iterating over the array.
+\ **注意：**\ 在遍历数组时不要移除条目。
 
 .. rst-class:: classref-item-separator
 
@@ -770,11 +770,11 @@ void **fill** **(** :ref:`Variant<class_Variant>` value **)**
 
 :ref:`int<class_int>` **insert** **(** :ref:`int<class_int>` position, :ref:`Variant<class_Variant>` value **)**
 
-Inserts a new element at a given position in the array. The position must be valid, or at the end of the array (``pos == size()``). Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+在给定的数组位置插入一个新值。位置必须合法，或者是在数组末尾（\ ``pos == size()``\ ）。操作成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，而如果操作失败则返回其他任意一个 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
-\ **Note:** This method acts in-place and doesn't return a modified array.
+\ **注意：**\ 该方法在原地执行，不会返回修改过的数组。
 
-\ **Note:** On large arrays, this method will be slower if the inserted element is close to the beginning of the array (index 0). This is because all elements placed after the newly inserted element have to be reindexed.
+\ **注意：**\ 在较大的数组中，如果插入值的位置在数组偏前的位置，这个方法的运行速度会比较慢，因为在插入值后面所有的元素都要被重新索引。
 
 .. rst-class:: classref-item-separator
 
@@ -909,7 +909,7 @@ void **make_read_only** **(** **)**
 
 :ref:`Variant<class_Variant>` **pick_random** **(** **)** |const|
 
-Returns a random value from the target array. Prints an error and returns ``null`` if the array is empty.
+从目标数组中返回一个随机值。如果数组为空，则打印一个错误并返回 ``null``\ 。
 
 
 .. tabs::
@@ -917,12 +917,12 @@ Returns a random value from the target array. Prints an error and returns ``null
  .. code-tab:: gdscript
 
     var array: Array[int] = [1, 2, 3, 4]
-    print(array.pick_random())  # Prints either of the four numbers.
+    print(array.pick_random())  # 打印四个数字中的任何一个。
 
  .. code-tab:: csharp
 
     var array = new Godot.Collections.Array { 1, 2, 3, 4 };
-    GD.Print(array.PickRandom()); // Prints either of the four numbers.
+    GD.Print(array.PickRandom()); // 打印四个数字中的任何一个。
 
 
 
@@ -1027,13 +1027,13 @@ void **push_front** **(** :ref:`Variant<class_Variant>` value **)**
 
 void **remove_at** **(** :ref:`int<class_int>` position **)**
 
-Removes an element from the array by index. If the index does not exist in the array, nothing happens. To remove an element by searching for its value, use :ref:`erase<class_Array_method_erase>` instead.
+通过索引从数组中移除元素。如果索引在数组中不存在，则什么也不会发生。要通过搜索一个元素的值来移除，请改用 :ref:`erase<class_Array_method_erase>`\ 。
 
-\ **Note:** This method acts in-place and doesn't return a modified array.
+\ **注意：**\ 这个方法是就地操作的，不返回修改后的数组。
 
-\ **Note:** On large arrays, this method will be slower if the removed element is close to the beginning of the array (index 0). This is because all elements placed after the removed element have to be reindexed.
+\ **注意：**\ 在大数组中，如果被删除的元素靠近数组的开头（索引 0），这个方法会比较慢。这是因为所有放置在被移除元素之后的元素都要被重新索引。
 
-\ **Note:** ``position`` cannot be negative. To remove an element relative to the end of the array, use ``arr.remove_at(arr.size() - (i + 1))``. To remove the last element from the array without returning the value, use ``arr.resize(arr.size() - 1)``.
+\ **注意：**\ ``position`` 不能为负。要移除数组末尾的元素，请使用 ``arr.remove_at(arr.size() - (i + 1))``\ 。要移除数组末尾的元素并不返回值，请使用 ``arr.resize(arr.size() - 1)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1045,9 +1045,9 @@ Removes an element from the array by index. If the index does not exist in the a
 
 :ref:`int<class_int>` **resize** **(** :ref:`int<class_int>` size **)**
 
-Resizes the array to contain a different number of elements. If the array size is smaller, elements are cleared, if bigger, new elements are ``null``. Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, or one of the other :ref:`Error<enum_@GlobalScope_Error>` values if the operation failed.
+调整数组的大小，让包含的元素数量发生变化。如果数组变小则清除多余元素，变大则新元素为 ``null``\ 。成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
-\ **Note:** This method acts in-place and doesn't return a modified array.
+\ **注意：**\ 这个方法是就地操作的，不返回修改后的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -1107,17 +1107,17 @@ void **shuffle** **(** **)**
 
 :ref:`Array<class_Array>` **slice** **(** :ref:`int<class_int>` begin, :ref:`int<class_int>` end=2147483647, :ref:`int<class_int>` step=1, :ref:`bool<class_bool>` deep=false **)** |const|
 
-Returns the slice of the **Array**, from ``begin`` (inclusive) to ``end`` (exclusive), as a new **Array**.
+返回该 **Array** 的切片，是从 ``begin``\ （含）到 ``end``\ （不含）的全新 **Array**\ 。
 
-The absolute value of ``begin`` and ``end`` will be clamped to the array size, so the default value for ``end`` makes it slice to the size of the array by default (i.e. ``arr.slice(1)`` is a shorthand for ``arr.slice(1, arr.size())``).
+\ ``begin`` 和 ``end`` 的绝对值会按数组大小进行限制，所以 ``end`` 的默认值会切到数组大小为止（即 ``arr.slice(1)`` 是 ``arr.slice(1, arr.size())`` 的简写）。
 
-If either ``begin`` or ``end`` are negative, they will be relative to the end of the array (i.e. ``arr.slice(0, -2)`` is a shorthand for ``arr.slice(0, arr.size() - 2)``).
+如果 ``begin`` 或 ``end`` 为负，则表示相对于数组的末尾（即 ``arr.slice(0, -2)`` 是 ``arr.slice(0, arr.size() - 2)`` 的简写）。
 
-If specified, ``step`` is the relative index between source elements. It can be negative, then ``begin`` must be higher than ``end``. For example, ``[0, 1, 2, 3, 4, 5].slice(5, 1, -2)`` returns ``[5, 3]``.
+如果指定了 ``step``\ ，则会用作原始元素的索引间距。这个参数可以为负，此时 ``begin`` 必须大于 ``end``\ 。例如，\ ``[0, 1, 2, 3, 4, 5].slice(5, 1, -2)`` 会返回 ``[5, 3]``\ 。
 
-If ``deep`` is true, each element will be copied by value rather than by reference.
+如果 ``deep`` 为 true，则每个元素都会按值复制，而不是按引用复制。
 
-\ **Note:** To include the first element when ``step`` is negative, use ``arr.slice(begin, -arr.size() - 1, step)`` (i.e. ``[0, 1, 2].slice(1, -4, -1)`` returns ``[1, 0]``).
+\ **注意：**\ 要在 ``step`` 为负时包含第一个元素，请使用 ``arr.slice(begin, -arr.size() - 1, step)``\ （即 ``[0, 1, 2].slice(1, -4, -1)`` 返回 ``[1, 0]``\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1207,8 +1207,8 @@ void **sort_custom** **(** :ref:`Callable<class_Callable>` func **)**
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Array_operator_neq_Array:
 
@@ -1302,10 +1302,10 @@ Operator Descriptions
 
 该函数返回指定位置的 :ref:`Variant<class_Variant>` 类型元素的引用。数组从索引0开始。 ``index`` 可以是一个从头开始的零或正值，也可以是一个从末尾开始的负值。访问越界的数组会导致运行时错误，这将导致在编辑器中运行时打印错误并暂停项目执行。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

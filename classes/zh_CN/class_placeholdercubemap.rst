@@ -10,27 +10,27 @@
 PlaceholderCubemap
 ==================
 
-**Inherits:** :ref:`PlaceholderTextureLayered<class_PlaceholderTextureLayered>` **<** :ref:`TextureLayered<class_TextureLayered>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`PlaceholderTextureLayered<class_PlaceholderTextureLayered>` **<** :ref:`TextureLayered<class_TextureLayered>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A :ref:`Cubemap<class_Cubemap>` without image data.
+没有图像数据的 :ref:`Cubemap<class_Cubemap>` 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This class replaces a :ref:`Cubemap<class_Cubemap>` or a :ref:`Cubemap<class_Cubemap>`-derived class in 2 conditions:
+该类在以下两种情况下替换 :ref:`Cubemap<class_Cubemap>` 或 :ref:`Cubemap<class_Cubemap>` 派生类：
 
-- In dedicated server mode, where the image data shouldn't affect game logic. This allows reducing the exported PCK's size significantly.
+- 在专用服务器模式下，图像数据不应影响游戏逻辑。这样能够显著减小导出的 PCK 的大小。
 
-- When the :ref:`Cubemap<class_Cubemap>`-derived class is missing, for example when using a different engine version.
+- 当 :ref:`Cubemap<class_Cubemap>` 派生类丢失时，例如使用不同的引擎版本时。
 
-\ **Note:** This class is not intended for rendering or for use in shaders. Operations like calculating UV are not guaranteed to work.
+\ **注意：**\ 该类不适用于渲染或在着色器中使用。不保证计算 UV 之类的操作有效。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

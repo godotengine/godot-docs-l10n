@@ -14,8 +14,8 @@ Callable
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 可调用体 **Callable** 是内置的 :ref:`Variant<class_Variant>` 类型，代表某个函数。可以是 :ref:`Object<class_Object>` 实例中的某个方法，也可以是与对象无关的独立函数，比如 lambda 函数。和所有 :ref:`Variant<class_Variant>` 类型一样可以保存在变量里，传递给其他函数。最常用于信号回调。
 
@@ -83,12 +83,12 @@ GDScript 中可以在方法里创建 lambda 函数。Lambda 函数是自定义�
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -103,8 +103,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -149,8 +149,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -167,8 +167,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Callable_constructor_Callable:
 
@@ -204,8 +204,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Callable_method_bind:
 
@@ -308,7 +308,7 @@ void **call_deferred** **(** ... **)** |vararg| |const|
 
 :ref:`StringName<class_StringName>` **get_method** **(** **)** |const|
 
-Returns the name of the method represented by this **Callable**. If the callable is a GDScript lambda function, returns the function's name or ``"<anonymous lambda>"``.
+返回该 **Callable** 所代表的方法的名称。如果该可调用体是 GDScript lambda 函数，则返回该函数的名称或 ``"<anonymous lambda>"``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -446,8 +446,8 @@ void **rpc_id** **(** :ref:`int<class_int>` peer_id, ... **)** |vararg| |const|
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Callable_operator_neq_Callable:
 
@@ -469,10 +469,10 @@ Operator Descriptions
 
 如果两个 **Callable** 调用的自定义目标相同，则返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

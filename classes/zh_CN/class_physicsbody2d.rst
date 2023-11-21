@@ -10,30 +10,30 @@
 PhysicsBody2D
 =============
 
-**Inherits:** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CharacterBody2D<class_CharacterBody2D>`, :ref:`RigidBody2D<class_RigidBody2D>`, :ref:`StaticBody2D<class_StaticBody2D>`
+**派生：** :ref:`CharacterBody2D<class_CharacterBody2D>`, :ref:`RigidBody2D<class_RigidBody2D>`, :ref:`StaticBody2D<class_StaticBody2D>`
 
 受物理影响的 2D 游戏对象的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **PhysicsBody2D** 与受物理影响的 2D 游戏对象的抽象基类。所有 2D 物理体都继承自这个类。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`物理介绍 <../tutorials/physics/physics_introduction>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -44,8 +44,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PhysicsBody2D_method_add_collision_exception_with:
 
@@ -101,7 +101,7 @@ void **add_collision_exception_with** **(** :ref:`Node<class_Node>` body **)**
 
 :ref:`KinematicCollision2D<class_KinematicCollision2D>` **move_and_collide** **(** :ref:`Vector2<class_Vector2>` motion, :ref:`bool<class_bool>` test_only=false, :ref:`float<class_float>` safe_margin=0.08, :ref:`bool<class_bool>` recovery_as_collision=false **)**
 
-沿着运动向量 ``motion`` 移动该物体。为了在 :ref:`Node._physics_process<class_Node_method__physics_process>` 和 :ref:`Node._process<class_Node_method__process>` 中不依赖帧速率，\ ``motion`` 应该使用 ``delta`` 计算。
+沿着运动向量 ``motion`` 移动该物体。为了在 :ref:`Node._physics_process<class_Node_private_method__physics_process>` 和 :ref:`Node._process<class_Node_private_method__process>` 中不依赖帧速率，\ ``motion`` 应该使用 ``delta`` 计算。
 
 返回 :ref:`KinematicCollision2D<class_KinematicCollision2D>`\ ，包含停止时的碰撞信息，或者沿运动向量接触到其他物体时的碰撞信息。
 
@@ -133,7 +133,7 @@ void **remove_collision_exception_with** **(** :ref:`Node<class_Node>` body **)*
 
 :ref:`bool<class_bool>` **test_move** **(** :ref:`Transform2D<class_Transform2D>` from, :ref:`Vector2<class_Vector2>` motion, :ref:`KinematicCollision2D<class_KinematicCollision2D>` collision=null, :ref:`float<class_float>` safe_margin=0.08, :ref:`bool<class_bool>` recovery_as_collision=false **)**
 
-在不移动实体的情况下检查碰撞。为了在 :ref:`Node._physics_process<class_Node_method__physics_process>` 或 :ref:`Node._process<class_Node_method__process>` 中独立于帧速率，\ ``motion`` 应该使用 ``delta`` 来计算。
+在不移动实体的情况下检查碰撞。为了在 :ref:`Node._physics_process<class_Node_private_method__physics_process>` 或 :ref:`Node._process<class_Node_private_method__process>` 中独立于帧速率，\ ``motion`` 应该使用 ``delta`` 来计算。
 
 实际上是将节点的位置、缩放和旋转设置为给定 :ref:`Transform2D<class_Transform2D>` 的位置、缩放和旋转，然后尝试沿向量 ``motion`` 移动实体。如果碰撞会阻止实体沿整个路径移动，则返回 ``true``\ 。
 
@@ -143,10 +143,10 @@ void **remove_collision_exception_with** **(** :ref:`Node<class_Node>` body **)*
 
 如果 ``recovery_as_collision`` 为 ``true``\ ，恢复阶段的任何穿透也将被报告为碰撞；这对于检查该实体是否会\ *接触*\ 其他任意实体很有用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

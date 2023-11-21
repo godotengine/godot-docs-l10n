@@ -10,21 +10,21 @@
 VSlider
 =======
 
-**Inherits:** :ref:`Slider<class_Slider>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Slider<class_Slider>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 从下（最小）到上（最大）的垂直滚动条。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 垂直滚动条，可用通过沿着垂直轴移动抓取器来调整取值。这个控件继承自 :ref:`Range<class_Range>`\ ，从下（最小）到上（最大）滚动。注意这个方向和 :ref:`VScrollBar<class_VScrollBar>` 的方向是相反的。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -35,151 +35,10 @@ Properties
    | |bitfield|\<:ref:`SizeFlags<enum_Control_SizeFlags>`\> | size_flags_vertical   | ``1`` (overrides :ref:`Control<class_Control_property_size_flags_vertical>`)   |
    +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
 
-.. rst-class:: classref-reftable-group
-
-Theme Properties
-----------------
-
-.. table::
-   :widths: auto
-
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`center_grabber<class_VSlider_theme_constant_center_grabber>`              | ``0`` |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`int<class_int>`             | :ref:`grabber_offset<class_VSlider_theme_constant_grabber_offset>`              | ``0`` |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber<class_VSlider_theme_icon_grabber>`                                |       |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber_disabled<class_VSlider_theme_icon_grabber_disabled>`              |       |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber_highlight<class_VSlider_theme_icon_grabber_highlight>`            |       |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`tick<class_VSlider_theme_icon_tick>`                                      |       |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_area<class_VSlider_theme_style_grabber_area>`                     |       |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_area_highlight<class_VSlider_theme_style_grabber_area_highlight>` |       |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`slider<class_VSlider_theme_style_slider>`                                 |       |
-   +-----------------------------------+---------------------------------------------------------------------------------+-------+
-
-.. rst-class:: classref-section-separator
-
-----
-
-.. rst-class:: classref-descriptions-group
-
-Theme Property Descriptions
----------------------------
-
-.. _class_VSlider_theme_constant_center_grabber:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`int<class_int>` **center_grabber** = ``0``
-
-布尔常量。如果为 ``1``\ ，则会忽略抓取器纹理的大小，根据其中心位置将其缩放到滚动条的边界。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VSlider_theme_constant_grabber_offset:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`int<class_int>` **grabber_offset** = ``0``
-
-抓取器的水平偏移量。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VSlider_theme_icon_grabber:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **grabber**
-
-用作拖动条的纹理（可拖动的元素）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VSlider_theme_icon_grabber_disabled:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **grabber_disabled**
-
-抓取器禁用时的材质。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VSlider_theme_icon_grabber_highlight:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **grabber_highlight**
-
-抓取器获得焦点时的材质。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VSlider_theme_icon_tick:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **tick**
-
-刻度的纹理。当 :ref:`Slider.tick_count<class_Slider_property_tick_count>` 大于 0 时可见。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VSlider_theme_style_grabber_area:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **grabber_area**
-
-抓取器下方区域的背景。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VSlider_theme_style_grabber_area_highlight:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **grabber_area_highlight**
-
-抓取器下方区域的背景，在悬停或聚焦状态显示。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VSlider_theme_style_slider:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **slider**
-
-整个滑动条的背景。决定了 ``grabber_area`` 的宽度。
-
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

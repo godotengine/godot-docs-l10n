@@ -10,21 +10,21 @@
 PhysicalBone3D
 ==============
 
-**Inherits:** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于让 :ref:`Skeleton3D<class_Skeleton3D>` 中的骨骼对物理作出反应的物理体。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **PhysicalBone3D** 节点是一种能够让 :ref:`Skeleton3D<class_Skeleton3D>` 中的骨骼对物理作出反应的物理体。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -65,25 +65,25 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                    | :ref:`_integrate_forces<class_PhysicalBone3D_method__integrate_forces>` **(** :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` state **)** |virtual|        |
-   +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                    | :ref:`apply_central_impulse<class_PhysicalBone3D_method_apply_central_impulse>` **(** :ref:`Vector3<class_Vector3>` impulse **)**                                          |
-   +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                    | :ref:`apply_impulse<class_PhysicalBone3D_method_apply_impulse>` **(** :ref:`Vector3<class_Vector3>` impulse, :ref:`Vector3<class_Vector3>` position=Vector3(0, 0, 0) **)** |
-   +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`   | :ref:`get_bone_id<class_PhysicalBone3D_method_get_bone_id>` **(** **)** |const|                                                                                            |
-   +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`get_simulate_physics<class_PhysicalBone3D_method_get_simulate_physics>` **(** **)**                                                                                  |
-   +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`is_simulating_physics<class_PhysicalBone3D_method_is_simulating_physics>` **(** **)**                                                                                |
-   +-------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                    | :ref:`_integrate_forces<class_PhysicalBone3D_private_method__integrate_forces>` **(** :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` state **)** |virtual| |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                    | :ref:`apply_central_impulse<class_PhysicalBone3D_method_apply_central_impulse>` **(** :ref:`Vector3<class_Vector3>` impulse **)**                                           |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                    | :ref:`apply_impulse<class_PhysicalBone3D_method_apply_impulse>` **(** :ref:`Vector3<class_Vector3>` impulse, :ref:`Vector3<class_Vector3>` position=Vector3(0, 0, 0) **)**  |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`   | :ref:`get_bone_id<class_PhysicalBone3D_method_get_bone_id>` **(** **)** |const|                                                                                             |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`get_simulate_physics<class_PhysicalBone3D_method_get_simulate_physics>` **(** **)**                                                                                   |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`is_simulating_physics<class_PhysicalBone3D_method_is_simulating_physics>` **(** **)**                                                                                 |
+   +-------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -91,8 +91,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_PhysicalBone3D_DampMode:
 
@@ -180,8 +180,8 @@ enum **JointType**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_PhysicalBone3D_property_angular_damp:
 
@@ -213,7 +213,7 @@ Property Descriptions
 - void **set_angular_damp_mode** **(** :ref:`DampMode<enum_PhysicalBone3D_DampMode>` value **)**
 - :ref:`DampMode<enum_PhysicalBone3D_DampMode>` **get_angular_damp_mode** **(** **)**
 
-定义如何应用 :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>`\ 。有关可能的值，请参见 :ref:`DampMode<enum_PhysicalBone3D_DampMode>`\ 。
+定义如何应用 :ref:`angular_damp<class_PhysicalBone3D_property_angular_damp>`\ 。可能的取值见 :ref:`DampMode<enum_PhysicalBone3D_DampMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ Property Descriptions
 - void **set_use_custom_integrator** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_using_custom_integrator** **(** **)**
 
-如果为 ``true``\ ，则该物体的内力积分将被禁用（如重力或空气摩擦）。除了碰撞响应之外，物体将仅根据 :ref:`_integrate_forces<class_PhysicalBone3D_method__integrate_forces>` 函数确定的方式移动（如果已定义）。
+如果为 ``true``\ ，则该物体的内力积分将被禁用（如重力或空气摩擦）。除了碰撞响应之外，物体将仅根据 :ref:`_integrate_forces<class_PhysicalBone3D_private_method__integrate_forces>` 函数确定的方式移动（如果已定义）。
 
 .. rst-class:: classref-item-separator
 
@@ -436,7 +436,7 @@ Property Descriptions
 - void **set_linear_velocity** **(** :ref:`Vector3<class_Vector3>` value **)**
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity** **(** **)**
 
-物体的线速度，单位为单位每秒。可以偶尔使用，但是\ **不要每一帧都设置它**\ ，因为物理可能在另一个线程中运行，并且以不同的间隔。使用 :ref:`_integrate_forces<class_PhysicalBone3D_method__integrate_forces>` 作为你的进程循环，以精确控制物体状态。
+物体的线速度，单位为单位每秒。可以偶尔使用，但是\ **不要每一帧都设置它**\ ，因为物理可能在另一个线程中运行，并且以不同的间隔。使用 :ref:`_integrate_forces<class_PhysicalBone3D_private_method__integrate_forces>` 作为你的进程循环，以精确控制物体状态。
 
 .. rst-class:: classref-item-separator
 
@@ -461,10 +461,10 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_PhysicalBone3D_method__integrate_forces:
+.. _class_PhysicalBone3D_private_method__integrate_forces:
 
 .. rst-class:: classref-method
 
@@ -484,7 +484,7 @@ void **apply_central_impulse** **(** :ref:`Vector3<class_Vector3>` impulse **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -498,7 +498,7 @@ void **apply_impulse** **(** :ref:`Vector3<class_Vector3>` impulse, :ref:`Vector
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -512,7 +512,7 @@ void **apply_impulse** **(** :ref:`Vector3<class_Vector3>` impulse, :ref:`Vector
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -526,7 +526,7 @@ void **apply_impulse** **(** :ref:`Vector3<class_Vector3>` impulse, :ref:`Vector
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -540,12 +540,12 @@ void **apply_impulse** **(** :ref:`Vector3<class_Vector3>` impulse, :ref:`Vector
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

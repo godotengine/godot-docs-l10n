@@ -14,52 +14,52 @@ NodePath
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A pre-parsed relative or absolute path in a scene tree, for use with :ref:`Node.get_node<class_Node_method_get_node>` and similar functions. It can reference a node, a resource within a node, or a property of a node or resource. For example, ``"Path2D/PathFollow2D/Sprite2D:texture:size"`` would refer to the ``size`` property of the ``texture`` resource on the node named ``"Sprite2D"``, which is a child of the other named nodes in the path.
+场景树中预先解析的相对或绝对路径，用于 :ref:`Node.get_node<class_Node_method_get_node>` 和类似函数。它可以引用节点、节点内的资源、或节点或资源的属性。例如，\ ``"Path2D/PathFollow2D/Sprite2D:texture:size"`` 将引用名为 ``"Sprite2D"`` 节点上的 ``texture`` 资源的 ``size`` 属性，该节点是路径中其他命名节点的一个子节点。
 
-You will usually just pass a string to :ref:`Node.get_node<class_Node_method_get_node>` and it will be automatically converted, but you may occasionally want to parse a path ahead of time with **NodePath** or the literal syntax ``^"path"``. Exporting a **NodePath** variable will give you a node selection widget in the properties panel of the editor, which can often be useful.
+通常只需将一个字符串传递给 :ref:`Node.get_node<class_Node_method_get_node>`\ ，它将会被自动转换，但可能偶尔想要使用 **NodePath** 或文字语法 ``^"path"`` 提前解析路径。导出 **NodePath** 变量会在编辑器的属性面板中，为你提供一个节点选择小部件，这通常很有用。
 
-A **NodePath** is composed of a list of slash-separated node names (like a filesystem path) and an optional colon-separated list of "subnames" which can be resources or properties.
+\ **NodePath** 由斜线分隔的节点名称列表（如文件系统路径）和可选的冒号分隔的“子名称”列表组成，这些“子名称”可以是资源或属性。
 
-Some examples of NodePaths include the following:
+NodePath 的一些示例包括：
 
 ::
 
-    # No leading slash means it is relative to the current node.
-    ^"A" # Immediate child A
-    ^"A/B" # A's child B
-    ^"." # The current node.
-    ^".." # The parent node.
-    ^"../C" # A sibling node C.
-    ^"../.." # The grandparent node.
-    # A leading slash means it is absolute from the SceneTree.
-    ^"/root" # Equivalent to get_tree().get_root().
-    ^"/root/Main" # If your main scene's root node were named "Main".
-    ^"/root/MyAutoload" # If you have an autoloaded node or scene.
+    # 没有前导斜杠意味着它是相对于当前节点的。
+    ^"A" # 直接子节点 A
+    ^"A/B" # A 的子节点 B
+    ^"." # 当前节点。
+    ^".." # 父节点。
+    ^"../C" # 兄弟节点 C。
+    ^"../.." # 祖父节点。
+    # 前导斜杠意味着它是来自 SceneTree 的绝对路径。
+    ^"/root" # 等同于 get_tree().get_root()。
+    ^"/root/Main" # 如果你的主场景的根节点被命名为“Main”。
+    ^"/root/MyAutoload" # 如果你有一个自动加载的节点或场景。
 
-See also :ref:`StringName<class_StringName>`, which is a similar concept for general-purpose string interning.
+另见 :ref:`StringName<class_StringName>`\ ，它是通用字符串的类似概念。
 
-\ **Note:** In the editor, **NodePath** properties are automatically updated when moving, renaming or deleting a node in the scene tree, but they are never updated at runtime.
+\ **注意：**\ 在编辑器中，\ **NodePath** 属性在场景树中移动、重命名或删除节点时会自动更新，但它们不会在运行时更新。
 
-\ **Note:** In a boolean context, a **NodePath** will evaluate to ``false`` if it is empty (``NodePath("")``). Otherwise, a **NodePath** will always evaluate to ``true``.
+\ **注意：**\ 在布尔上下文中，如果 **NodePath** 为空（\ ``NodePath("")``\ ），则它将评估为 ``false``\ 。否则，\ **NodePath** 将始终评估为 ``true``\ 。
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `2D 角色扮演游戏演示 <https://godotengine.org/asset-library/asset/520>`__
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -104,8 +104,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_NodePath_constructor_NodePath:
 
@@ -178,8 +178,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NodePath_method_get_as_property_path:
 
@@ -232,7 +232,7 @@ Method Descriptions
 
 :ref:`StringName<class_StringName>` **get_concatenated_subnames** **(** **)** |const|
 
-Returns all subnames concatenated with a colon character (``:``) as separator, i.e. the right side of the first colon in a node path.
+返回所有以冒号字符（\ ``:``\ ）作为分隔符连接的子名称，即节点路径中第一个冒号的右侧。
 
 
 .. tabs::
@@ -379,8 +379,8 @@ Returns all subnames concatenated with a colon character (``:``) as separator, i
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_NodePath_operator_neq_NodePath:
 
@@ -402,10 +402,10 @@ Operator Descriptions
 
 如果两个节点路径相等，即路径中的所有节点名称都相同且顺序一致，则返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

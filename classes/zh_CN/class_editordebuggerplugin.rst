@@ -10,20 +10,20 @@
 EditorDebuggerPlugin
 ====================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 实现调试器插件的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 编辑器调试器插件 **EditorDebuggerPlugin** 提供了与调试器的编辑器端相关的函数。
 
 要与调试器交互，必须将这个类的实例通过 :ref:`EditorPlugin.add_debugger_plugin<class_EditorPlugin_method_add_debugger_plugin>` 添加至编辑器。
 
-添加完成后，会针对该插件可用的每一个编辑器调试器会话 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 回调一次 :ref:`_setup_session<class_EditorDebuggerPlugin_method__setup_session>`\ ，后续有新的会话也会进行回调（这些会话在此阶段可能尚未激活）。
+添加完成后，会针对该插件可用的每一个编辑器调试器会话 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 回调一次 :ref:`_setup_session<class_EditorDebuggerPlugin_private_method__setup_session>`\ ，后续有新的会话也会进行回调（这些会话在此阶段可能尚未激活）。
 
 你可以通过 :ref:`get_sessions<class_EditorDebuggerPlugin_method_get_sessions>` 获取所有可用的 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>`\ ，也可以通过 :ref:`get_session<class_EditorDebuggerPlugin_method_get_session>` 获取特定的会话。
 
@@ -68,23 +68,23 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                   | :ref:`_capture<class_EditorDebuggerPlugin_method__capture>` **(** :ref:`String<class_String>` message, :ref:`Array<class_Array>` data, :ref:`int<class_int>` session_id **)** |virtual| |
-   +-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                                   | :ref:`_has_capture<class_EditorDebuggerPlugin_method__has_capture>` **(** :ref:`String<class_String>` capture **)** |virtual| |const|                                                   |
-   +-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                      | :ref:`_setup_session<class_EditorDebuggerPlugin_method__setup_session>` **(** :ref:`int<class_int>` session_id **)** |virtual|                                                          |
-   +-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` | :ref:`get_session<class_EditorDebuggerPlugin_method_get_session>` **(** :ref:`int<class_int>` id **)**                                                                                  |
-   +-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Array<class_Array>`                                 | :ref:`get_sessions<class_EditorDebuggerPlugin_method_get_sessions>` **(** **)**                                                                                                         |
-   +-----------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                   | :ref:`_capture<class_EditorDebuggerPlugin_private_method__capture>` **(** :ref:`String<class_String>` message, :ref:`Array<class_Array>` data, :ref:`int<class_int>` session_id **)** |virtual| |
+   +-----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                   | :ref:`_has_capture<class_EditorDebuggerPlugin_private_method__has_capture>` **(** :ref:`String<class_String>` capture **)** |virtual| |const|                                                   |
+   +-----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                      | :ref:`_setup_session<class_EditorDebuggerPlugin_private_method__setup_session>` **(** :ref:`int<class_int>` session_id **)** |virtual|                                                          |
+   +-----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` | :ref:`get_session<class_EditorDebuggerPlugin_method_get_session>` **(** :ref:`int<class_int>` id **)**                                                                                          |
+   +-----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Array<class_Array>`                                 | :ref:`get_sessions<class_EditorDebuggerPlugin_method_get_sessions>` **(** **)**                                                                                                                 |
+   +-----------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -92,10 +92,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EditorDebuggerPlugin_method__capture:
+.. _class_EditorDebuggerPlugin_private_method__capture:
 
 .. rst-class:: classref-method
 
@@ -107,19 +107,19 @@ Method Descriptions
 
 ----
 
-.. _class_EditorDebuggerPlugin_method__has_capture:
+.. _class_EditorDebuggerPlugin_private_method__has_capture:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_has_capture** **(** :ref:`String<class_String>` capture **)** |virtual| |const|
 
-覆盖此方法以启用从调试器接收消息。如果\ ``capture``\ 是"my_message"，那么以"my_message:"开头的消息将会传递到\ :ref:`_capture<class_EditorDebuggerPlugin_method__capture>`\ 方法。
+覆盖此方法以启用从调试器接收消息。如果\ ``capture``\ 是"my_message"，那么以"my_message:"开头的消息将会传递到\ :ref:`_capture<class_EditorDebuggerPlugin_private_method__capture>`\ 方法。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_EditorDebuggerPlugin_method__setup_session:
+.. _class_EditorDebuggerPlugin_private_method__setup_session:
 
 .. rst-class:: classref-method
 
@@ -149,14 +149,14 @@ void **_setup_session** **(** :ref:`int<class_int>` session_id **)** |virtual|
 
 :ref:`Array<class_Array>` **get_sessions** **(** **)**
 
-Returns an array of :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` currently available to this debugger plugin.
+返回该调试器插件当前可用的 :ref:`EditorDebuggerSession<class_EditorDebuggerSession>` 数组。
 
-\ **Note:** Sessions in the array may be inactive, check their state via :ref:`EditorDebuggerSession.is_active<class_EditorDebuggerSession_method_is_active>`.
+\ **注意：**\ 数组中的会话可能处于非活动状态，请通过 :ref:`EditorDebuggerSession.is_active<class_EditorDebuggerSession_method_is_active>` 检查它们的状态。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

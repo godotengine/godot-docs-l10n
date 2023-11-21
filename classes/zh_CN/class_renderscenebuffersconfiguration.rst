@@ -10,21 +10,21 @@
 RenderSceneBuffersConfiguration
 ===============================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Configuration object used to setup a :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` object.
+用于设置 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` 对象的配置对象。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This configuration object is created and populated by the render engine on a viewport change and used to (re)configure a :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` object.
+该配置对象由渲染引擎在视口更改时创建和填充，并用于（重新）配置 :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` 对象。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RenderSceneBuffersConfiguration_property_fsr_sharpness:
 
@@ -69,7 +69,7 @@ Property Descriptions
 - void **set_fsr_sharpness** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_fsr_sharpness** **(** **)**
 
-FSR Sharpness applicable if FSR upscaling is used.
+如果使用 FSR 放大，则 FSR 锐度适用。
 
 .. rst-class:: classref-item-separator
 
@@ -86,7 +86,7 @@ FSR Sharpness applicable if FSR upscaling is used.
 - void **set_internal_size** **(** :ref:`Vector2i<class_Vector2i>` value **)**
 - :ref:`Vector2i<class_Vector2i>` **get_internal_size** **(** **)**
 
-The size of the 3D render buffer used for rendering.
+用于渲染的 3D 渲染缓冲区的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ The size of the 3D render buffer used for rendering.
 - void **set_msaa_3d** **(** :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` value **)**
 - :ref:`ViewportMSAA<enum_RenderingServer_ViewportMSAA>` **get_msaa_3d** **(** **)**
 
-The MSAA mode we're using for 3D rendering.
+用于 3D 渲染的 MSAA 模式。
 
 .. rst-class:: classref-item-separator
 
@@ -120,7 +120,7 @@ The MSAA mode we're using for 3D rendering.
 - void **set_render_target** **(** :ref:`RID<class_RID>` value **)**
 - :ref:`RID<class_RID>` **get_render_target** **(** **)**
 
-The render target associated with these buffer.
+与这些缓冲区关联的渲染目标。
 
 .. rst-class:: classref-item-separator
 
@@ -137,7 +137,7 @@ The render target associated with these buffer.
 - void **set_scaling_3d_mode** **(** :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` value **)**
 - :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **get_scaling_3d_mode** **(** **)**
 
-The requested scaling mode with which we upscale/downscale if :ref:`internal_size<class_RenderSceneBuffersConfiguration_property_internal_size>` and :ref:`target_size<class_RenderSceneBuffersConfiguration_property_target_size>` are not equal.
+如果 :ref:`internal_size<class_RenderSceneBuffersConfiguration_property_internal_size>` 和 :ref:`target_size<class_RenderSceneBuffersConfiguration_property_target_size>` 不相等，则将使用所请求的缩放模式进行放大/缩小。
 
 .. rst-class:: classref-item-separator
 
@@ -154,7 +154,7 @@ The requested scaling mode with which we upscale/downscale if :ref:`internal_siz
 - void **set_screen_space_aa** **(** :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` value **)**
 - :ref:`ViewportScreenSpaceAA<enum_RenderingServer_ViewportScreenSpaceAA>` **get_screen_space_aa** **(** **)**
 
-The requested screen space AA applied in post processing.
+请求在后期处理中应用的屏幕空间抗锯齿。
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ The requested screen space AA applied in post processing.
 - void **set_target_size** **(** :ref:`Vector2i<class_Vector2i>` value **)**
 - :ref:`Vector2i<class_Vector2i>` **get_target_size** **(** **)**
 
-The target (upscale) size if scaling is used.
+使用缩放时的目标（放大）大小。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ The target (upscale) size if scaling is used.
 - void **set_texture_mipmap_bias** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_texture_mipmap_bias** **(** **)**
 
-Bias applied to mipmaps.
+应用于 mipmap 的偏置。
 
 .. rst-class:: classref-item-separator
 
@@ -205,12 +205,12 @@ Bias applied to mipmaps.
 - void **set_view_count** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_view_count** **(** **)**
 
-The number of views we're rendering.
+渲染的视图数。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

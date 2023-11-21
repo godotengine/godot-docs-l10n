@@ -14,8 +14,8 @@
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 GDScript 专用的实用函数及注解列表，可在任何脚本中访问。
 
@@ -23,15 +23,15 @@ GDScript 专用的实用函数及注解列表，可在任何脚本中访问。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`GDScript的导出 <../tutorials/scripting/gdscript/gdscript_exports>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_@GDScript_constant_PI:
 
@@ -126,14 +126,41 @@ Annotations
 
 **@export** **(** **)**
 
-将以下属性标记为导出的（可在检查器窗口中进行编辑并保存到磁盘）。使用类型提示控制导出属性的类型。
+将后续的属性标记为导出属性（可以在检查器面板中编辑并保存至磁盘）。要控制导出属性的类型，请使用类型提示标记。
 
 ::
 
+    extends Node
+    
+    enum Direction {LEFT, RIGHT, UP, DOWN}
+    
+    # 内置类型。
     @export var string = ""
     @export var int_number = 5
     @export var float_number: float = 5
-    @export var image : Image
+    
+    # 枚举。
+    @export var type: Variant.Type
+    @export var format: Image.Format
+    @export var direction: Direction
+    
+    # 资源。
+    @export var image: Image
+    @export var custom_resource: CustomResource
+    
+    # 节点。
+    @export var node: Node
+    @export var custom_node: CustomNode
+    
+    # 类型数组。
+    @export var int_array: Array[int]
+    @export var direction_array: Array[Direction]
+    @export var image_array: Array[Image]
+    @export var node_array: Array[Node]
+
+\ **注意：**\ 自定义资源和自定义节点必须使用 ``class_name`` 注册为全局类。
+
+\ **注意：**\ 节点的导出只有派生自 :ref:`Node<class_Node>` 的类才支持，并且还有一些其他限制。
 
 .. rst-class:: classref-item-separator
 
@@ -145,17 +172,17 @@ Annotations
 
 **@export_category** **(** :ref:`String<class_String>` name **)**
 
-为以下导出的属性定义一个新类别。这有助于在检查器面板中组织属性。
+为后续导出属性定义一个新类别。方便在检查器面板中组织属性。
 
-另请参见 :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_constant_PROPERTY_USAGE_CATEGORY>`\ 。
+另见 :ref:`@GlobalScope.PROPERTY_USAGE_CATEGORY<class_@GlobalScope_constant_PROPERTY_USAGE_CATEGORY>`\ 。
 
 ::
 
-    @export_category("My Properties")
-    @export var number = 3
-    @export var string = ""
+    @export_category("Statistics")
+    @export var hp = 30
+    @export var speed = 1.25
 
-\ **注意：**\ 检查器面板中的列表通常会按类别将来自不同类（如Node、Node2D、Sprite等）的属性分隔开来。详情请参阅 :ref:`@export_group<class_@GDScript_annotation_@export_group>` 和 :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>`\ 。
+\ **注意：**\ 检查器面板中的列表通常会按类别将来自不同类（如 Node、Node2D、Sprite 等）的属性分隔开来。为了更明确，推荐改用 :ref:`@export_group<class_@GDScript_annotation_@export_group>` 和 :ref:`@export_subgroup<class_@GDScript_annotation_@export_subgroup>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -185,9 +212,9 @@ Annotations
 
 **@export_dir** **(** **)**
 
-将 :ref:`String<class_String>` 属性作为目录路径导出。该路径仅限于项目文件夹及其子文件夹。请参阅 :ref:`@export_global_dir<class_@GDScript_annotation_@export_global_dir>`\ ，以允许从整个文件系统中进行选择。
+将 :ref:`String<class_String>` 属性作为目录路径导出。该路径仅限于项目文件夹及其子文件夹。要允许在整个文件系统中进行选择，见 :ref:`@export_global_dir<class_@GDScript_annotation_@export_global_dir>`\ 。
 
-另请参见 :ref:`@GlobalScope.PROPERTY_HINT_DIR<class_@GlobalScope_constant_PROPERTY_HINT_DIR>`\ 。
+另见 :ref:`@GlobalScope.PROPERTY_HINT_DIR<class_@GlobalScope_constant_PROPERTY_HINT_DIR>`\ 。
 
 ::
 
@@ -460,11 +487,11 @@ Annotations
 
 **@export_global_file** **(** :ref:`String<class_String>` filter="", ... **)** |vararg|
 
-将 :ref:`String<class_String>` 属性作为文件路径导出。该路径可以从整个文件系统中选择。请参阅 :ref:`@export_file<class_@GDScript_annotation_@export_file>`\ ，以将其限制为项目文件夹及其子文件夹。
+将 :ref:`String<class_String>` 属性作为文件路径导出。该路径可以在整个文件系统中进行选择。要将其限制为项目文件夹及其子文件夹，见 :ref:`@export_file<class_@GDScript_annotation_@export_file>`\ 。
 
 如果提供了 ``filter``\ ，则只有匹配的文件可供选择。
 
-另请参见 :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE<class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_FILE>`\ 。
+另见 :ref:`@GlobalScope.PROPERTY_HINT_GLOBAL_FILE<class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_FILE>`\ 。
 
 ::
 
@@ -530,15 +557,15 @@ Annotations
 
 **@export_node_path** **(** :ref:`String<class_String>` type="", ... **)** |vararg|
 
-Export a :ref:`NodePath<class_NodePath>` property with a filter for allowed node types.
+导出具有过滤器，并允许节点类型为 :ref:`NodePath<class_NodePath>` 的属性。
 
-See also :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_VALID_TYPES>`.
+参见 :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_VALID_TYPES>`\ 。
 
 ::
 
     @export_node_path("Button", "TouchScreenButton") var some_button
 
-\ **Note:** The type must be a native class or a globally registered script (using the ``class_name`` keyword) that inherits :ref:`Node<class_Node>`.
+\ **注意:** 类型必须是本地类或全局注册的脚本（使用\ ``[class_name]``\ 关键字）且继承自 :ref:`Node<class_Node>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -568,11 +595,11 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@GlobalSco
 
 **@export_range** **(** :ref:`float<class_float>` min, :ref:`float<class_float>` max, :ref:`float<class_float>` step=1.0, :ref:`String<class_String>` extra_hints="", ... **)** |vararg|
 
-将一个\ :ref:`int<class_int>`\ 或\ :ref:`float<class_float>`\ 属性导出为一个范围值。范围必须由 ``min`` 和 ``max`` 定义，以及一个可选的 ``step`` 和各种额外的提示。对于整数属性，\ ``step`` 的默认值是 ``1`` 。对于浮点数，这个值取决于你的 ``EditorSettings.interface/inspector/default_float_step`` 设置。
+将 :ref:`int<class_int>` 或 :ref:`float<class_float>` 属性导出为范围值。范围必须由 ``min`` 和 ``max`` 定义，还有一个可选的 ``step`` 和各种额外的提示。对于整数属性，\ ``step`` 的默认值是 ``1`` 。对于浮点数，这个值取决于你的 ``EditorSettings.interface/inspector/default_float_step`` 设置。
 
 如果提供了提示 ``"or_greater"`` 和 ``"or_less"`` ，那么编辑器部件将不会在范围边界处对数值进行限制。\ ``"exp"`` 提示将使范围内的编辑值以指数形式变化。\ ``"hide_slider"`` 提示将隐藏编辑器部件中的滑块。
 
-提示还允许指示编辑的值的单位。使用 ``"radians"`` ，你可以指定实际值以弧度为单位，但在检查器中会以角度为单位显示。\ ``"degrees"`` 允许添加一个角度符号作为单位后缀。最后，可以使用 ``"suffix:单位"`` 提供一个自定义后缀，其中“单位”可以是任何字符串。
+提示还允许指示编辑的值的单位。使用 ``"radians_as_degrees"`` ，你可以指定实际值以弧度为单位，但在检查器中会以角度为单位显示（范围值也使用度数）。\ ``"degrees"`` 允许添加一个角度符号作为单位后缀。最后，可以使用 ``"suffix:单位"`` 提供一个自定义后缀，其中“单位”可以是任何字符串。
 
 另见 :ref:`@GlobalScope.PROPERTY_HINT_RANGE<class_@GlobalScope_constant_PROPERTY_HINT_RANGE>`\ 。
 
@@ -585,9 +612,9 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@GlobalSco
     @export_range(0, 100, 1, "or_greater") var power_percent
     @export_range(0, 100, 1, "or_greater", "or_less") var health_delta
     
-    @export_range(-3.14, 3.14, 0.001, "radians") var angle_radians
+    @export_range(-3.14, 3.14, 0.001, "radians_as_degrees") var angle_radians
     @export_range(0, 360, 1, "degrees") var angle_degrees
-    @export_range(-8, 8, 2, "suffix:像素") var target_offset
+    @export_range(-8, 8, 2, "suffix:px") var target_offset
 
 .. rst-class:: classref-item-separator
 
@@ -625,17 +652,17 @@ See also :ref:`@GlobalScope.PROPERTY_HINT_NODE_PATH_VALID_TYPES<class_@GlobalSco
 
 **@icon** **(** :ref:`String<class_String>` icon_path **)**
 
-Add a custom icon to the current script. The icon specified at ``icon_path`` is displayed in the Scene dock for every node of that class, as well as in various editor dialogs.
+为当前脚本添加自定义图标。\ ``icon_path`` 所指定的图标会在“场景”面板中该类的所有节点上显示，也会显示在各种编辑器对话框中。
 
 ::
 
     @icon("res://path/to/class/icon.svg")
 
-\ **Note:** Only the script can have a custom icon. Inner classes are not supported.
+\ **注意：**\ 只有脚本可以有自定义的图标。不支持内部类。
 
-\ **Note:** As annotations describe their subject, the ``@icon`` annotation must be placed before the class definition and inheritance.
+\ **注意：**\ 由于注解描述的是它们的对象，\ :ref:`@icon<class_@GDScript_annotation_@icon>` 注解必须放在类定义和继承之前。
 
-\ **Note:** Unlike other annotations, the argument of the ``@icon`` annotation must be a string literal (constant expressions are not supported).
+\ **注意：**\ 不同于其他注解，\ :ref:`@icon<class_@GDScript_annotation_@icon>` 注解的参数必须是字符串字面量（不支持常量表达式）。
 
 .. rst-class:: classref-item-separator
 
@@ -647,7 +674,7 @@ Add a custom icon to the current script. The icon specified at ``icon_path`` is 
 
 **@onready** **(** **)**
 
-标记后续属性会在 :ref:`Node<class_Node>` 的就绪状态时赋值。节点初始化（\ :ref:`Object._init<class_Object_method__init>`\ ）时不会立即对这些属性赋值，而是会在即将调用 :ref:`Node._ready<class_Node_method__ready>` 之前进行计算和保存。
+标记后续属性会在 :ref:`Node<class_Node>` 的就绪状态时赋值。节点初始化（\ :ref:`Object._init<class_Object_private_method__init>`\ ）时不会立即对这些属性赋值，而是会在即将调用 :ref:`Node._ready<class_Node_private_method__ready>` 之前进行计算和保存。
 
 ::
 
@@ -663,17 +690,17 @@ Add a custom icon to the current script. The icon specified at ``icon_path`` is 
 
 **@rpc** **(** :ref:`String<class_String>` mode="authority", :ref:`String<class_String>` sync="call_remote", :ref:`String<class_String>` transfer_mode="unreliable", :ref:`int<class_int>` transfer_channel=0 **)**
 
-Mark the following method for remote procedure calls. See :doc:`High-level multiplayer <../tutorials/networking/high_level_multiplayer>`.
+将后续方法标记为远程过程调用。见\ :doc:`《高阶多人游戏》 <../tutorials/networking/high_level_multiplayer>`\ 。
 
-If ``mode`` is set as ``"any_peer"``, allows any peer to call this RPC function. Otherwise, only the authority peer is allowed to call it and ``mode`` should be kept as ``"authority"``. When configuring functions as RPCs with :ref:`Node.rpc_config<class_Node_method_rpc_config>`, each of these modes respectively corresponds to the :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` and :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>` RPC modes. See :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`. If a peer that is not the authority tries to call a function that is only allowed for the authority, the function will not be executed. If the error can be detected locally (when the RPC configuration is consistent between the local and the remote peer), an error message will be displayed on the sender peer. Otherwise, the remote peer will detect the error and print an error there.
+如果将 ``mode`` 设为 ``"any_peer"``\ ，则会允许所有对等体调用该 RPC 函数。否则就只允许该对等体的控制方调用，此时应该让 ``mode`` 保持为 ``"authority"``\ 。使用 :ref:`Node.rpc_config<class_Node_method_rpc_config>` 将函数配置为 RPC 时，这些模式对应的是 RPC 模式 :ref:`MultiplayerAPI.RPC_MODE_AUTHORITY<class_MultiplayerAPI_constant_RPC_MODE_AUTHORITY>` 和 :ref:`MultiplayerAPI.RPC_MODE_ANY_PEER<class_MultiplayerAPI_constant_RPC_MODE_ANY_PEER>`\ 。如果非控制方的对等体尝试调用仅限控制方调用的函数，则不会执行该函数。如果本地能够检测到错误（本地与远程对等体的 RPC 配置一致），则发送方对等体会显示错误消息。否则远程对等体会检测到该错误并输出错误。
 
-If ``sync`` is set as ``"call_remote"``, the function will only be executed on the remote peer, but not locally. To run this function locally too, set ``sync`` to ``"call_local"``. When configuring functions as RPCs with :ref:`Node.rpc_config<class_Node_method_rpc_config>`, this is equivalent to setting ``call_local`` to ``true``.
+如果将 ``sync`` 设为 ``"call_remote"``\ ，则该函数只会在远程对等体上执行，不会在本地执行。要让这个函数在本地也执行，请将 ``sync`` 设置为 ``"call_local"``\ 。使用 :ref:`Node.rpc_config<class_Node_method_rpc_config>` 将函数配置为 RPC 时，等价于将 ``call_local`` 设置为 ``true``\ 。
 
-The ``transfer_mode`` accepted values are ``"unreliable"``, ``"unreliable_ordered"``, or ``"reliable"``. It sets the transfer mode of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`.
+\ ``transfer_mode`` 能够接受的值为 ``"unreliable"``\ 、\ ``"unreliable_ordered"``\ 、\ ``"reliable"``\ ，会设置底层 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的传输模式。见 :ref:`MultiplayerPeer.transfer_mode<class_MultiplayerPeer_property_transfer_mode>`\ 。
 
-The ``transfer_channel`` defines the channel of the underlying :ref:`MultiplayerPeer<class_MultiplayerPeer>`. See :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`.
+\ ``transfer_channel`` 定义的是底层 :ref:`MultiplayerPeer<class_MultiplayerPeer>` 的通道。见 :ref:`MultiplayerPeer.transfer_channel<class_MultiplayerPeer_property_transfer_channel>`\ 。
 
-The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but values related to the same argument must not be used more than once. ``transfer_channel`` always has to be the 4th argument (you must specify 3 preceding arguments).
+\ ``mode``\ 、\ ``sync`` 和 ``transfer_mode`` 的顺序是无关的，但是相同参数的取值不能出现多次。\ ``transfer_channel`` 必须始终为第四个参数（前三个参数必须指定）。
 
 ::
 
@@ -683,7 +710,7 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
     @rpc("any_peer", "unreliable_ordered")
     func fn_update_pos(): pass
     
-    @rpc("authority", "call_remote", "unreliable", 0) # Equivalent to @rpc
+    @rpc("authority", "call_remote", "unreliable", 0) # 等价于 @rpc
     func fn_default(): pass
 
 .. rst-class:: classref-item-separator
@@ -715,7 +742,7 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
     @tool
     extends Node
 
-\ **注意：**\ 因为注解描述对象的关系，必须把 ``@tool`` 注解放在类定义和继承之前。
+\ **注意：**\ 因为注解描述对象的关系，必须把 :ref:`@tool<class_@GDScript_annotation_@tool>` 注解放在类定义和继承之前。
 
 .. rst-class:: classref-item-separator
 
@@ -743,8 +770,8 @@ The order of ``mode``, ``sync`` and ``transfer_mode`` does not matter, but value
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_@GDScript_method_Color8:
 
@@ -815,18 +842,18 @@ void **assert** **(** :ref:`bool<class_bool>` condition, :ref:`String<class_Stri
 
 :ref:`Variant<class_Variant>` **convert** **(** :ref:`Variant<class_Variant>` what, :ref:`int<class_int>` type **)**
 
-*Deprecated.* Use :ref:`@GlobalScope.type_convert<class_@GlobalScope_method_type_convert>` instead.
+*已弃用。*\ 请改用 :ref:`@GlobalScope.type_convert<class_@GlobalScope_method_type_convert>`\ 。
 
-Converts ``what`` to ``type`` in the best way possible. The ``type`` uses the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values.
+在可能的情况下将 ``what`` 转换为 ``type`` 。 ``type`` 使用 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 值。
 
 ::
 
     var a = [4, 2.5, 1.2]
-    print(a is Array) # Prints true
+    print(a is Array) # 输出 true
     
     var b = convert(a, TYPE_PACKED_BYTE_ARRAY)
-    print(b)          # Prints [4, 2, 1]
-    print(b is Array) # Prints false
+    print(b)          # 输出 [4, 2, 1]
+    print(b is Array) # 输出 false
 
 .. rst-class:: classref-item-separator
 
@@ -1123,10 +1150,10 @@ void **print_stack** **(** **)**
     type_exists("Sprite2D") # 返回 true
     type_exists("NonExistentClass") # 返回 false
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

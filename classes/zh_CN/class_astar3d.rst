@@ -10,20 +10,20 @@
 AStar3D
 =======
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 A\* 的一种实现，用于寻找 3D 空间中连接图中的两个顶点之间的最短路径。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A\*（A 星）是一种计算机算法，用于寻路和图遍历，是通过一组给定的边（线段），在顶点（点）之间绘制短路径的过程。由于其性能和准确性，它被广泛使用。Godot 的 A\* 实现默认使用 3D 空间中的点和欧几里得距离。
+A\*（A 星）是一种计算机算法，用于寻路和图遍历，即穿过一组给定的边（线段），在顶点（点）之间绘制短路径的过程。由于其性能和准确性，它被广泛使用。Godot 的 A\* 实现默认使用 3D 空间中的点和欧几里德距离。
 
 你需要使用 :ref:`add_point<class_AStar3D_method_add_point>` 手动添加点，并使用 :ref:`connect_points<class_AStar3D_method_connect_points>` 手动创建线段。完成后，可以使用 :ref:`are_points_connected<class_AStar3D_method_are_points_connected>` 函数，测试两点之间是否存在路径，通过 :ref:`get_id_path<class_AStar3D_method_get_id_path>` 获取包含索引的路径，或使用 :ref:`get_point_path<class_AStar3D_method_get_point_path>` 获取包含实际坐标的路径。
 
-也可以使用非欧几里得距离。为此，创建一个扩展 ``AStar3D`` 的类，并覆盖方法 :ref:`_compute_cost<class_AStar3D_method__compute_cost>` 和 :ref:`_estimate_cost<class_AStar3D_method__estimate_cost>`\ 。两者都接受两个索引并返回一个长度，如以下示例所示。
+也可以使用非欧几里德距离。为此，创建一个扩展 **AStar3D** 的类，并覆盖方法 :ref:`_compute_cost<class_AStar3D_private_method__compute_cost>` 和 :ref:`_estimate_cost<class_AStar3D_private_method__estimate_cost>`\ 。两者都接受两个索引并返回一个长度，如以下示例所示。
 
 
 .. tabs::
@@ -56,22 +56,22 @@ A\*（A 星）是一种计算机算法，用于寻路和图遍历，是通过一
 
 
 
-\ :ref:`_estimate_cost<class_AStar3D_method__estimate_cost>` 应该返回距离的下限，即 ``_estimate_cost(u, v) <= _compute_cost(u, v)``\ 。这可以作为算法的提示，因为自定义 ``_compute_cost`` 可能计算量很大。如果不是这种情况，请使 :ref:`_estimate_cost<class_AStar3D_method__estimate_cost>` 返回与 :ref:`_compute_cost<class_AStar3D_method__compute_cost>` 相同的值，以便为算法提供最准确的信息。
+\ :ref:`_estimate_cost<class_AStar3D_private_method__estimate_cost>` 应该返回距离的下限，即 ``_estimate_cost(u, v) <= _compute_cost(u, v)``\ 。这可以作为算法的提示，因为自定义 :ref:`_compute_cost<class_AStar3D_private_method__compute_cost>` 可能计算量很大。如果不是这种情况，请使 :ref:`_estimate_cost<class_AStar3D_private_method__estimate_cost>` 返回与 :ref:`_compute_cost<class_AStar3D_private_method__compute_cost>` 相同的值，以便为算法提供最准确的信息。
 
-如果使用默认的 :ref:`_estimate_cost<class_AStar3D_method__estimate_cost>` 和 :ref:`_compute_cost<class_AStar3D_method__compute_cost>` 方法，或者如果提供的 :ref:`_estimate_cost<class_AStar3D_method__estimate_cost>` 方法返回成本的下限，则 A\* 返回的路径将是成本最低的路径。这里，路径的代价等于路径中所有段的 :ref:`_compute_cost<class_AStar3D_method__compute_cost>` 结果乘以各个段端点的权重 ``weight_scale`` 之和。如果使用默认方法，并且所有点的 ``weight_scale`` 设置为 ``1.0``\ ，则这等于路径中所有段的欧几里得距离之和。
+如果使用默认的 :ref:`_estimate_cost<class_AStar3D_private_method__estimate_cost>` 和 :ref:`_compute_cost<class_AStar3D_private_method__compute_cost>` 方法，或者如果提供的 :ref:`_estimate_cost<class_AStar3D_private_method__estimate_cost>` 方法返回成本的下限，则 A\* 返回的路径将是成本最低的路径。这里，路径的代价等于路径中所有段的 :ref:`_compute_cost<class_AStar3D_private_method__compute_cost>` 结果乘以各个段端点的权重 ``weight_scale`` 之和。如果使用默认方法，并且所有点的 ``weight_scale`` 设置为 ``1.0``\ ，则这等于路径中所有段的欧几里德距离之和。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                           | :ref:`_compute_cost<class_AStar3D_method__compute_cost>` **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|                                            |
+   | :ref:`float<class_float>`                           | :ref:`_compute_cost<class_AStar3D_private_method__compute_cost>` **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|                                    |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                           | :ref:`_estimate_cost<class_AStar3D_method__estimate_cost>` **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|                                          |
+   | :ref:`float<class_float>`                           | :ref:`_estimate_cost<class_AStar3D_private_method__estimate_cost>` **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|                                  |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                | :ref:`add_point<class_AStar3D_method_add_point>` **(** :ref:`int<class_int>` id, :ref:`Vector3<class_Vector3>` position, :ref:`float<class_float>` weight_scale=1.0 **)**                    |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -126,32 +126,32 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_AStar3D_method__compute_cost:
+.. _class_AStar3D_private_method__compute_cost:
 
 .. rst-class:: classref-method
 
 :ref:`float<class_float>` **_compute_cost** **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|
 
-在计算两个连接点之间的成本时调用。
+计算两个连接点之间的成本时调用。
 
-请注意，此函数隐藏在默认的 ``AStar3D`` 类中。
+注意这个函数隐藏在默认的 **AStar3D** 类中。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AStar3D_method__estimate_cost:
+.. _class_AStar3D_private_method__estimate_cost:
 
 .. rst-class:: classref-method
 
 :ref:`float<class_float>` **_estimate_cost** **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|
 
-在估算一个点和路径终点之间的成本时调用。
+估计一个点和路径终点之间的成本时调用。
 
-请注意，此函数隐藏在默认的 ``AStar3D`` 类中。
+注意这个函数隐藏在默认的 **AStar3D** 类中。
 
 .. rst-class:: classref-item-separator
 
@@ -165,7 +165,7 @@ void **add_point** **(** :ref:`int<class_int>` id, :ref:`Vector3<class_Vector3>`
 
 在给定的位置添加一个新的点，并使用给定的标识符。\ ``id`` 必须大于等于 0，\ ``weight_scale`` 必须大于等于 0.0。
 
-在确定从邻点到此点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost<class_AStar3D_method__compute_cost>` 的结果。因此，在其他条件相同的情况下，算法优先选择 ``weight_scale`` 较低的点来形成路径。
+在确定从邻点到此点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost<class_AStar3D_private_method__compute_cost>` 的结果。因此，在其他条件相同的情况下，算法优先选择 ``weight_scale`` 较低的点来形成路径。
 
 
 .. tabs::
@@ -369,7 +369,7 @@ void **disconnect_points** **(** :ref:`int<class_int>` id, :ref:`int<class_int>`
 
 :ref:`int<class_int>` **get_point_capacity** **(** **)** |const|
 
-返回支持点的结构的容量，与 ``reserve_space`` 配合使用。
+该函数返回支持点的数据结构的容量，可以与 :ref:`reserve_space<class_AStar3D_method_reserve_space>` 方法一起使用。
 
 .. rst-class:: classref-item-separator
 
@@ -557,12 +557,12 @@ void **set_point_position** **(** :ref:`int<class_int>` id, :ref:`Vector3<class_
 
 void **set_point_weight_scale** **(** :ref:`int<class_int>` id, :ref:`float<class_float>` weight_scale **)**
 
-为给定的 ``id`` 的点设置 ``weight_scale``\ 。在确定从邻接点到这个点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost<class_AStar3D_method__compute_cost>` 的结果。
+为给定的 ``id`` 的点设置 ``weight_scale``\ 。在确定从邻接点到这个点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost<class_AStar3D_private_method__compute_cost>` 的结果。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

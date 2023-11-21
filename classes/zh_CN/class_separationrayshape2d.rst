@@ -10,21 +10,21 @@
 SeparationRayShape2D
 ====================
 
-**Inherits:** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于物理碰撞的 2D 射线形状，会尝试将自己与其他碰撞体分开。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-2D 射线形状，旨在用于物理。通常用来为 :ref:`CollisionShape2D<class_CollisionShape2D>` 提供形状。\ **SeparationRayShape2D** 与某个对象发生碰撞时，会尝试将其端点移动至碰撞点，将自己与该对象分离。示例用法是充当从天上落下的长矛。
+2D 射线形状，旨在用于物理。通常用来为 :ref:`CollisionShape2D<class_CollisionShape2D>` 提供形状。\ **SeparationRayShape2D** 与某个对象发生碰撞时，会尝试将其端点移动至碰撞点，来将自己与该对象分离。例如，角色旁边的 **SeparationRayShape2D** 可以让角色在接触楼梯时立即向上移动。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_SeparationRayShape2D_property_length:
 
@@ -76,10 +76,10 @@ Property Descriptions
 
 如果为 ``true``\ ，则该形状可以返回正确的法线，并在任何方向上分离，允许在斜坡上滑动。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

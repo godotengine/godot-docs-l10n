@@ -10,20 +10,20 @@
 EditorSettings
 ==============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 保存编辑器设置的对象，这些设置与项目无关。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Object that holds the project-independent editor settings. These settings are generally visible in the **Editor > Editor Settings** menu.
+保存编辑器设置的对象，这些设置与项目无关，通常在\ **编辑器 > 编辑器设置**\ 菜单中可见。
 
-Property names use slash delimiters to distinguish sections. Setting values can be of any :ref:`Variant<class_Variant>` type. It's recommended to use ``snake_case`` for editor settings to be consistent with the Godot editor itself.
+属性名称中使用斜线分隔符来区分不同的部分。设置的值可以是任何 :ref:`Variant<class_Variant>` 类型。编辑器设置的名称建议使用 ``snake_case`` 形式，与 Godot 编辑器本身保持一致。
 
-Accessing the settings can be done using the following methods, such as:
+可以使用以下方法访问设置，例如：
 
 
 .. tabs::
@@ -31,29 +31,29 @@ Accessing the settings can be done using the following methods, such as:
  .. code-tab:: gdscript
 
     var settings = EditorInterface.get_editor_settings()
-    # `settings.set("some/property", 10)` also works as this class overrides `_set()` internally.
+    # 也可以写 `settings.set("some/property", 10)`，因为这个类内部覆盖了 `_set()`。
     settings.set_setting("some/property", 10)
-    # `settings.get("some/property")` also works as this class overrides `_get()` internally.
+    # 也可以写 `settings.get("some/property")` ，因为这个类内部覆盖了 `_get()`。
     settings.get_setting("some/property")
     var list_of_settings = settings.get_property_list()
 
  .. code-tab:: csharp
 
     EditorSettings settings = EditorInterface.Singleton.GetEditorSettings();
-    // `settings.set("some/property", value)` also works as this class overrides `_set()` internally.
+    // 也可以写 `settings.set("some/property", 10)`，因为这个类内部覆盖了 `_set()`。
     settings.SetSetting("some/property", Value);
-    // `settings.get("some/property", value)` also works as this class overrides `_get()` internally.
+    // 也可以写 `settings.get("some/property")` ，因为这个类内部覆盖了 `_get()`。
     settings.GetSetting("some/property");
     Godot.Collections.Array<Godot.Collections.Dictionary> listOfSettings = settings.GetPropertyList();
 
 
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton using :ref:`EditorInterface.get_editor_settings<class_EditorInterface_method_get_editor_settings>`.
+\ **注意：**\ 不能直接实例化这个类。请改用 :ref:`EditorInterface.get_editor_settings<class_EditorInterface_method_get_editor_settings>` 访问单例。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -250,6 +250,8 @@ Properties
    | :ref:`bool<class_bool>`       | :ref:`filesystem/on_save/compress_binary_resources<class_EditorSettings_property_filesystem/on_save/compress_binary_resources>`                                                     |
    +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`       | :ref:`filesystem/on_save/safe_save_on_backup_then_rename<class_EditorSettings_property_filesystem/on_save/safe_save_on_backup_then_rename>`                                         |
+   +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`   | :ref:`filesystem/tools/oidn/oidn_denoise_path<class_EditorSettings_property_filesystem/tools/oidn/oidn_denoise_path>`                                                               |
    +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`         | :ref:`interface/editor/accept_dialog_cancel_ok_buttons<class_EditorSettings_property_interface/editor/accept_dialog_cancel_ok_buttons>`                                             |
    +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -527,6 +529,8 @@ Properties
    +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`     | :ref:`text_editor/theme/highlighting/current_line_color<class_EditorSettings_property_text_editor/theme/highlighting/current_line_color>`                                           |
    +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Color<class_Color>`     | :ref:`text_editor/theme/highlighting/doc_comment_color<class_EditorSettings_property_text_editor/theme/highlighting/doc_comment_color>`                                             |
+   +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`     | :ref:`text_editor/theme/highlighting/engine_type_color<class_EditorSettings_property_text_editor/theme/highlighting/engine_type_color>`                                             |
    +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Color<class_Color>`     | :ref:`text_editor/theme/highlighting/executing_line_color<class_EditorSettings_property_text_editor/theme/highlighting/executing_line_color>`                                       |
@@ -570,8 +574,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -616,8 +620,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_EditorSettings_signal_settings_changed:
 
@@ -633,8 +637,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_EditorSettings_constant_NOTIFICATION_EDITOR_SETTINGS_CHANGED:
 
@@ -650,8 +654,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorSettings_property_debugger/auto_switch_to_remote_scene_tree:
 
@@ -855,9 +859,9 @@ Property Descriptions
 
 :ref:`float<class_float>` **editors/2d/bone_outline_size**
 
-The outline size in the 2D skeleton editor (in pixels). See also :ref:`editors/2d/bone_width<class_EditorSettings_property_editors/2d/bone_width>`.
+2D 骨架编辑器中轮廓的大小（单位为像素）。另见 :ref:`editors/2d/bone_width<class_EditorSettings_property_editors/2d/bone_width>`\ 。
 
-\ **Note:** Changes to this value only apply after modifying a :ref:`Bone2D<class_Bone2D>` node in any way, or closing and reopening the scene.
+\ **注意：**\ 对此值的更改只有在以任何方式修改 :ref:`Bone2D<class_Bone2D>` 节点，或者关闭并重新打开场景后才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -881,9 +885,9 @@ The outline size in the 2D skeleton editor (in pixels). See also :ref:`editors/2
 
 :ref:`float<class_float>` **editors/2d/bone_width**
 
-The bone width in the 2D skeleton editor (in pixels). See also :ref:`editors/2d/bone_outline_size<class_EditorSettings_property_editors/2d/bone_outline_size>`.
+2D 骨架编辑器中的骨骼宽度（单位为像素）。另见 :ref:`editors/2d/bone_outline_size<class_EditorSettings_property_editors/2d/bone_outline_size>`\ 。
 
-\ **Note:** Changes to this value only apply after modifying a :ref:`Bone2D<class_Bone2D>` node in any way, or closing and reopening the scene.
+\ **注意：**\ 对此值的更改只有在以任何方式修改 :ref:`Bone2D<class_Bone2D>` 节点，或者关闭并重新打开场景后才会生效。
 
 .. rst-class:: classref-item-separator
 
@@ -931,7 +935,7 @@ The bone width in the 2D skeleton editor (in pixels). See also :ref:`editors/2d/
 
 :ref:`bool<class_bool>` **editors/2d/use_integer_zoom_by_default**
 
-If ``true``, the 2D editor will snap to integer zoom values while not holding the :kbd:`Alt` key and powers of two while holding it. If ``false``, this behavior is swapped.
+如果为 ``true``\ ，2D 编辑器将在不按住 :kbd:`Alt` 键的情况下吸附到整数缩放值，并在按住时吸附到 2 的幂。如果为 ``false``\ ，则交换这种行为。
 
 .. rst-class:: classref-item-separator
 
@@ -1087,7 +1091,7 @@ If ``true``, the 2D editor will snap to integer zoom values while not holding th
 
 :ref:`int<class_int>` **editors/3d/grid_division_level_max**
 
-The largest grid division to use in the 3D editor. Together with :ref:`editors/3d/primary_grid_steps<class_EditorSettings_property_editors/3d/primary_grid_steps>`, this determines how large the grid divisions can be. The grid divisions will not be able to get larger than ``primary_grid_steps ^ grid_division_level_max`` units. By default, when :ref:`editors/3d/primary_grid_steps<class_EditorSettings_property_editors/3d/primary_grid_steps>` is ``8``, this means grid divisions cannot get larger than ``64`` units each (so primary grid lines are ``512`` units apart), no matter how far away the camera is from the grid.
+在 3D 编辑器中使用的最大栅格划分。这个属性与 :ref:`editors/3d/primary_grid_steps<class_EditorSettings_property_editors/3d/primary_grid_steps>` 一同决定栅格划分的大小。栅格不能大于 ``primary_grid_steps ^ grid_division_level_max`` 个单位。默认情况下 :ref:`editors/3d/primary_grid_steps<class_EditorSettings_property_editors/3d/primary_grid_steps>` 为 ``8``\ ，这意味着无论相机离栅格有多远，每个栅格划分都不能大于 ``64`` 个单位（因此主栅格线之间相距 ``512`` 个单位）。
 
 .. rst-class:: classref-item-separator
 
@@ -1789,9 +1793,9 @@ The largest grid division to use in the 3D editor. Together with :ref:`editors/3
 
 :ref:`String<class_String>` **filesystem/import/blender/blender3_path**
 
-The path to the directory containing the Blender executable used for converting the Blender 3D scene files ``.blend`` to glTF 2.0 format during import. Blender 3.0 or later is required.
+包含 Blender 可执行文件的目录，导入时会使用 Blender 将 Blender 3D 场景文件 ``.blend`` 转换为 glTF 2.0 格式。需要 Blender 3.0 及更高版本。
 
-To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`.
+要为指定项目启用这个功能，请使用 :ref:`ProjectSettings.filesystem/import/blender/enabled<class_ProjectSettings_property_filesystem/import/blender/enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1803,9 +1807,9 @@ To enable this feature for your specific project, use :ref:`ProjectSettings.file
 
 :ref:`int<class_int>` **filesystem/import/blender/rpc_port**
 
-The port number used for Remote Procedure Call (RPC) communication with Godot's created process of the blender executable.
+用于与 Godot 创建的 Blender 可执行文件进程进行远程过程调用（RPC）通信的端口号。
 
-Setting this to 0 effectively disables communication with Godot and the blender process, making performance slower.
+将其设置为 0 会有效禁用与 Godot 的通信和 Blender 进程，从而降低性能。
 
 .. rst-class:: classref-item-separator
 
@@ -1817,9 +1821,9 @@ Setting this to 0 effectively disables communication with Godot and the blender 
 
 :ref:`float<class_float>` **filesystem/import/blender/rpc_server_uptime**
 
-The maximum idle uptime (in seconds) of the Blender process.
+Blender 进程的最大空闲运行时间（单位为秒）。
 
-This prevents Godot from having to create a new process for each import within the given seconds.
+能够在给定的秒数内，防止 Godot 每次导入都创建一个新的进程。
 
 .. rst-class:: classref-item-separator
 
@@ -1831,9 +1835,9 @@ This prevents Godot from having to create a new process for each import within t
 
 :ref:`String<class_String>` **filesystem/import/fbx/fbx2gltf_path**
 
-The path to the FBX2glTF executable used for converting Autodesk FBX 3D scene files ``.fbx`` to glTF 2.0 format during import.
+包含 FBX2glTF 可执行文件的目录，导入时会使用 FBX2glTF 将 Autodesk FBX 3D 场景文件 ``.fbx`` 转换为 glTF 2.0 格式。
 
-To enable this feature for your specific project, use :ref:`ProjectSettings.filesystem/import/fbx/enabled<class_ProjectSettings_property_filesystem/import/fbx/enabled>`.
+要为指定项目启用这个功能，请使用 :ref:`ProjectSettings.filesystem/import/fbx/enabled<class_ProjectSettings_property_filesystem/import/fbx/enabled>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1860,6 +1864,20 @@ To enable this feature for your specific project, use :ref:`ProjectSettings.file
 如果为 ``true``\ ，当保存文件时，编辑器会将旧文件重命名为不同的名称，保存一个新文件，然后只有在新文件保存后，才删除旧文件。如果编辑器或操作系统在保存时意外退出（例如，由于崩溃或断电），这会降低数据丢失的可能性。
 
 \ **注意：**\ 在 Windows 上，该功能可能会与某些防病毒程序产生负面的交互。在这种情况下，可能必须将其设置为 ``false``\ ，以防止出现文件锁定问题。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorSettings_property_filesystem/tools/oidn/oidn_denoise_path:
+
+.. rst-class:: classref-property
+
+:ref:`String<class_String>` **filesystem/tools/oidn/oidn_denoise_path**
+
+包含开放图像去噪（OIDN）可执行文件的目录路径，可选择用于去噪光照贴图。它可以从 `openimagedenoise.org <https://www.openimagedenoise.org/downloads.html>`__ 下载。
+
+要为特定项目启用该功能，请使用 :ref:`ProjectSettings.rendering/lightmapping/denoising/denoiser<class_ProjectSettings_property_rendering/lightmapping/denoising/denoiser>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3223,7 +3241,7 @@ FreeType 的字体抗锯齿模式，用于渲染编辑器字体。大多数字�
 
 :ref:`bool<class_bool>` **text_editor/completion/code_complete_enabled**
 
-If ``true``, code completion will be triggered automatically after :ref:`text_editor/completion/code_complete_delay<class_EditorSettings_property_text_editor/completion/code_complete_delay>`. If ``false``, you can still trigger completion manually by pressing :kbd:`Ctrl + Space` (:kbd:`Cmd + Space` on macOS).
+如果为 ``true``\ ，代码补全将在 :ref:`text_editor/completion/code_complete_delay<class_EditorSettings_property_text_editor/completion/code_complete_delay>` 之后自动触发。如果为 ``false``\ ，你仍然可以通过按 :kbd:`Ctrl + Space`\ （在 macOS 上为 :kbd:`Cmd + Space`\ ）手动触发补全。
 
 .. rst-class:: classref-item-separator
 
@@ -3235,7 +3253,7 @@ If ``true``, code completion will be triggered automatically after :ref:`text_ed
 
 :ref:`bool<class_bool>` **text_editor/completion/colorize_suggestions**
 
-If ``true`` enables the coloring for some items in the autocompletion suggestions, like vector components.
+如果为 ``true``\ ，则启用自动补全建议中某些项目的着色，例如向量分量。
 
 .. rst-class:: classref-item-separator
 
@@ -3599,6 +3617,18 @@ If ``true`` enables the coloring for some items in the autocompletion suggestion
 
 ----
 
+.. _class_EditorSettings_property_text_editor/theme/highlighting/doc_comment_color:
+
+.. rst-class:: classref-property
+
+:ref:`Color<class_Color>` **text_editor/theme/highlighting/doc_comment_color**
+
+脚本编辑器的文档注释颜色。在 GDScript 中，这被用于以 ``##`` 开头的注释。在 C# 中，这被用于以 ``///`` 或 ``/**`` 开头的注释。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_EditorSettings_property_text_editor/theme/highlighting/engine_type_color:
 
 .. rst-class:: classref-property
@@ -3629,7 +3659,7 @@ If ``true`` enables the coloring for some items in the autocompletion suggestion
 
 :ref:`Color<class_Color>` **text_editor/theme/highlighting/folded_code_region_color**
 
-The script editor's background line highlighting color for folded code region.
+脚本编辑器的背景行高亮颜色，用于折叠代码区块。
 
 .. rst-class:: classref-item-separator
 
@@ -3847,8 +3877,8 @@ The script editor's background line highlighting color for folded code region.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorSettings_method_add_property_info:
 
@@ -4080,10 +4110,10 @@ void **set_setting** **(** :ref:`String<class_String>` name, :ref:`Variant<class
 
 将由 ``name`` 指定的设置项设置为 ``value``\ 。等价于在 EditorSettings 实例上使用 :ref:`Object.set<class_Object_method_set>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

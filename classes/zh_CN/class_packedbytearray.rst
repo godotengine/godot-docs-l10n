@@ -14,8 +14,8 @@ PackedByteArray
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 专门设计用于存放字节的数组。数据是紧密存放的，因此能够在数组较大时节省内存。
 
@@ -23,12 +23,12 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -171,8 +171,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -193,8 +193,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_PackedByteArray_constructor_PackedByteArray:
 
@@ -230,8 +230,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PackedByteArray_method_append:
 
@@ -483,7 +483,7 @@ void **clear** **(** **)**
 
 返回新的 **PackedByteArray**\ ，其中的数据已解压。请将压缩模式设置为 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` 常量。\ **这个方法只接受 brotli、gzip 和 deflate 压缩模式。**\ 
 
-这个方法可能比 ``decompress`` 慢，因为在解压时可能需要多次重新分配输出缓冲区，而 ``decompress`` 则在一开始就知道输出缓冲区的大小。
+这个方法可能比 :ref:`decompress<class_PackedByteArray_method_decompress>` 慢，因为在解压时可能需要多次重新分配输出缓冲区，而 :ref:`decompress<class_PackedByteArray_method_decompress>` 则在一开始就知道输出缓冲区的大小。
 
 GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有可能解压出非常巨大的输出。为了防止这种情况，你可以通过 ``max_output_size`` 提供允许这个函数分配的最大字节数。传入 -1 则不限制输出。传入正数且解压超过该字节数时，会返回错误。
 
@@ -677,7 +677,7 @@ void **fill** **(** :ref:`int<class_int>` value **)**
 
 :ref:`String<class_String>` **get_string_from_ascii** **(** **)** |const|
 
-将 ASCII/Latin-1 编码的数组转换为 :ref:`String<class_String>`\ 。如果内容仅为 ASCII/Latin-1，则是比 :ref:`get_string_from_utf8<class_PackedByteArray_method_get_string_from_utf8>` 更快的选择。与 UTF-8 函数不同，这个函数会将数组中的每个字节都映射到一个字符。多字节序列无法正确解析。要解析用户的输入内容，请始终使用 :ref:`get_string_from_utf8<class_PackedByteArray_method_get_string_from_utf8>`\ 。
+将 ASCII/Latin-1 编码的数组转换为 :ref:`String<class_String>`\ 。如果内容仅为 ASCII/Latin-1，则是比 :ref:`get_string_from_utf8<class_PackedByteArray_method_get_string_from_utf8>` 更快的选择。与 UTF-8 函数不同，这个函数会将数组中的每个字节都映射到一个字符。多字节序列无法正确解析。要解析用户的输入内容，请始终使用 :ref:`get_string_from_utf8<class_PackedByteArray_method_get_string_from_utf8>`\ 。这是 :ref:`String.to_ascii_buffer<class_String_method_to_ascii_buffer>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -689,7 +689,7 @@ void **fill** **(** :ref:`int<class_int>` value **)**
 
 :ref:`String<class_String>` **get_string_from_utf8** **(** **)** |const|
 
-将 UTF-8 编码的数组转换为 :ref:`String<class_String>`\ 。比 :ref:`get_string_from_ascii<class_PackedByteArray_method_get_string_from_ascii>` 慢，但支持 UTF-8 编码的数据。不确定数据来源时请使用此函数。对于用户的输入内容，应始终首选此函数。如果源数组不是有效的 UTF-8 字符串，则返回空字符串。
+将 UTF-8 编码的数组转换为 :ref:`String<class_String>`\ 。比 :ref:`get_string_from_ascii<class_PackedByteArray_method_get_string_from_ascii>` 慢，但支持 UTF-8 编码的数据。不确定数据来源时请使用此函数。对于用户的输入内容，应始终首选此函数。如果源数组不是有效的 UTF-8 字符串，则返回空字符串。这是 :ref:`String.to_utf8_buffer<class_String_method_to_utf8_buffer>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -701,7 +701,7 @@ void **fill** **(** :ref:`int<class_int>` value **)**
 
 :ref:`String<class_String>` **get_string_from_utf16** **(** **)** |const|
 
-将 UTF-16 编码的数组转换为 :ref:`String<class_String>`\ 。如果缺少 BOM，则假定为系统字节序。如果源数组不是有效的 UTF-16 字符串，则返回空字符串。
+将 UTF-16 编码的数组转换为 :ref:`String<class_String>`\ 。如果缺少 BOM，则假定为系统字节序。如果源数组不是有效的 UTF-16 字符串，则返回空字符串。这是 :ref:`String.to_utf16_buffer<class_String_method_to_utf16_buffer>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -713,7 +713,7 @@ void **fill** **(** :ref:`int<class_int>` value **)**
 
 :ref:`String<class_String>` **get_string_from_utf32** **(** **)** |const|
 
-将 UTF-32 编码的数组转换为 :ref:`String<class_String>`\ 。假定为系统字节序。如果源数组不是有效的 UTF-32 字符串，则返回空字符串。
+将 UTF-32 编码的数组转换为 :ref:`String<class_String>`\ 。假定为系统字节序。如果源数组不是有效的 UTF-32 字符串，则返回空字符串。这是 :ref:`String.to_utf32_buffer<class_String_method_to_utf32_buffer>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -725,7 +725,7 @@ void **fill** **(** :ref:`int<class_int>` value **)**
 
 :ref:`String<class_String>` **get_string_from_wchar** **(** **)** |const|
 
-将宽字符（\ ``wchar_t``\ ，在 Windows 上为 UTF-16，在其他平台上为 UTF-32）编码的数组转换为 :ref:`String<class_String>`\ 。如果源数组不是有效的宽字符串，则返回空字符串。
+将宽字符（\ ``wchar_t``\ ，在 Windows 上为 UTF-16，在其他平台上为 UTF-32）编码的数组转换为 :ref:`String<class_String>`\ 。如果源数组不是有效的宽字符串，则返回空字符串。这是 :ref:`String.to_wchar_buffer<class_String_method_to_wchar_buffer>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -749,7 +749,7 @@ void **fill** **(** :ref:`int<class_int>` value **)**
 
 :ref:`bool<class_bool>` **has_encoded_var** **(** :ref:`int<class_int>` byte_offset, :ref:`bool<class_bool>` allow_objects=false **)** |const|
 
-Returns ``true`` if a valid :ref:`Variant<class_Variant>` value can be decoded at the ``byte_offset``. Returns ``false`` otherwise or when the value is :ref:`Object<class_Object>`-derived and ``allow_objects`` is ``false``.
+如果可以从字节偏移量 ``byte_offset`` 处解码出有效的 :ref:`Variant<class_Variant>`\ ，则返回 ``true``\ 。其他情况，或者当该值派生自 :ref:`Object<class_Object>` 而 ``allow_objects`` 为 ``false`` 时，则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -984,8 +984,8 @@ void **sort** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_PackedByteArray_operator_neq_PackedByteArray:
 
@@ -1033,10 +1033,10 @@ Operator Descriptions
 
 请注意，返回的字节是 64 位 :ref:`int<class_int>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

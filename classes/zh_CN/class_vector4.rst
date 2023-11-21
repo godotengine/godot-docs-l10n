@@ -14,8 +14,8 @@ Vector4
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 包含四个元素的结构体，可用于代表 4D 坐标或任何数值的四元组。
 
@@ -27,8 +27,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -125,8 +125,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -175,8 +175,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Vector4_constant_AXIS_X:
 
@@ -240,8 +240,8 @@ W 轴的枚举值。由 :ref:`max_axis_index<class_Vector4_method_max_axis_index
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Vector4_property_w:
 
@@ -293,8 +293,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Vector4_constructor_Vector4:
 
@@ -340,8 +340,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Vector4_method_abs:
 
@@ -399,7 +399,7 @@ Method Descriptions
 
 返回该向量和 ``b`` 之间进行三次插值 ``weight`` 处的结果，使用 ``pre_a`` 和 ``post_b`` 作为控制柄。\ ``weight`` 在 0.0 到 1.0 的范围内，代表插值的量。
 
-通过使用时间值，可以比 ``cubic_interpolate()`` 进行更平滑的插值。
+通过使用时间值，可以比 :ref:`cubic_interpolate<class_Vector4_method_cubic_interpolate>` 进行更平滑的插值。
 
 .. rst-class:: classref-item-separator
 
@@ -667,8 +667,8 @@ Method Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Vector4_operator_neq_Vector4:
 
@@ -692,7 +692,9 @@ Operator Descriptions
 
 :ref:`Vector4<class_Vector4>` **operator *** **(** :ref:`Projection<class_Projection>` right **)**
 
-使用给定的 :ref:`Projection<class_Projection>` 矩阵对该 **Vector4** 进行逆变换（相乘）。
+通过给定 :ref:`Projection<class_Projection>` 矩阵的转置变换（乘以）该 **Vector4**\ 。
+
+对于通过投影的逆进行的变换，可以使用 ``projection.inverse() * vector`` 代替。请参阅 :ref:`Projection.inverse<class_Projection_method_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -922,10 +924,10 @@ Operator Descriptions
 
 返回该 **Vector4** 的负值。和写 ``Vector4(-v.x, -v.y, -v.z, -v.w)`` 是一样的。该操作在保持相同幅度的同时，翻转向量的方向。对于浮点数，零也有正负两种。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

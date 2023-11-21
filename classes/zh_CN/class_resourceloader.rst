@@ -10,14 +10,14 @@
 ResourceLoader
 ==============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 用于加载资源文件的单例。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于从文件系统加载资源文件的单例。
 
@@ -27,15 +27,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `操作系统测试演示 <https://godotengine.org/asset-library/asset/677>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ResourceLoader_ThreadLoadStatus:
 
@@ -153,8 +153,8 @@ enum **CacheMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ResourceLoader_method_add_resource_format_loader:
 
@@ -162,9 +162,9 @@ Method Descriptions
 
 void **add_resource_format_loader** **(** :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` format_loader, :ref:`bool<class_bool>` at_front=false **)**
 
-注册一个新的\ :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ 。ResourceLoader将会按照\ :ref:`load<class_ResourceLoader_method_load>`\ 中的描述使用ResourceFormatLoader。
+注册一个新的 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ 。ResourceLoader 将会按照 :ref:`load<class_ResourceLoader_method_load>` 中的描述使用 ResourceFormatLoader。
 
-对于用GDScript编写的ResourceFormatLoader，此方法将隐式执行（有关详细信息，请参见\ :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ ）。
+对于用 GDScript 编写的 ResourceFormatLoader，此方法将隐式执行（详见 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -254,7 +254,7 @@ void **add_resource_format_loader** **(** :ref:`ResourceFormatLoader<class_Resou
 
 可选的 ``type_hint`` 可用于进一步指定 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 应处理的 :ref:`Resource<class_Resource>` 类型。任何继承自 :ref:`Resource<class_Resource>` 的东西都可以用作类型提示，例如 :ref:`Image<class_Image>`\ 。
 
-\ ``cache_mode`` 属性定义在加载资源时是否以及如何使用或更新缓存。有关详细信息，请参见 :ref:`CacheMode<enum_ResourceLoader_CacheMode>`\ 。
+\ ``cache_mode`` 属性定义在加载资源时是否以及如何使用或更新缓存。详情见 :ref:`CacheMode<enum_ResourceLoader_CacheMode>`\ 。
 
 如果没有 :ref:`ResourceFormatLoader<class_ResourceFormatLoader>` 可以处理该文件，则返回空资源。
 
@@ -286,7 +286,7 @@ GDScript 具有一个简化的 :ref:`@GDScript.load<class_@GDScript_method_load>
 
 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>` **load_threaded_get_status** **(** :ref:`String<class_String>` path, :ref:`Array<class_Array>` progress=[] **)**
 
-返回使用 :ref:`load_threaded_request<class_ResourceLoader_method_load_threaded_request>` 在 ``path`` 处启动的线程加载操作的状态。有关可能的返回值，请参见 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>`\ 。
+返回使用 :ref:`load_threaded_request<class_ResourceLoader_method_load_threaded_request>` 在 ``path`` 处启动的线程加载操作的状态。可能的返回值见 :ref:`ThreadLoadStatus<enum_ResourceLoader_ThreadLoadStatus>`\ 。
 
 可以通过 ``progress`` 可选地传递一个数组变量，并返回一个包含线程加载完成百分比的单元素的数组。
 
@@ -302,7 +302,7 @@ GDScript 具有一个简化的 :ref:`@GDScript.load<class_@GDScript_method_load>
 
 使用线程加载资源。如果 ``use_sub_threads`` 为 ``true``\ ，将使用多个线程来加载资源，这会使加载更快，但可能会影响主线程（从而导致游戏降速）。
 
-\ ``cache_mode`` 属性定义在加载资源时是否以及如何使用或更新缓存。有关详细信息，请参见 :ref:`CacheMode<enum_ResourceLoader_CacheMode>`\ 。
+\ ``cache_mode`` 属性定义在加载资源时是否以及如何使用或更新缓存。详情见 :ref:`CacheMode<enum_ResourceLoader_CacheMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -328,10 +328,10 @@ void **set_abort_on_missing_resources** **(** :ref:`bool<class_bool>` abort **)*
 
 更改缺少子资源时的行为。默认行为是中止加载。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

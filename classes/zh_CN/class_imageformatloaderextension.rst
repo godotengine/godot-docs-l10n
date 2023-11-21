@@ -10,14 +10,14 @@
 ImageFormatLoaderExtension
 ==========================
 
-**Inherits:** :ref:`ImageFormatLoader<class_ImageFormatLoader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`ImageFormatLoader<class_ImageFormatLoader>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于创建 :ref:`ImageFormatLoader<class_ImageFormatLoader>` 扩展的基类（添加对额外图像格式的支持）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该引擎支持多种开箱即用的图像格式（PNG、SVG、JPEG、WebP 等），但也可以选择通过扩展该类，来实现对其他图像格式的支持。
 
@@ -25,21 +25,21 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_recognized_extensions<class_ImageFormatLoaderExtension_method__get_recognized_extensions>` **(** **)** |virtual| |const|                                                                                                                                                        |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_load_image<class_ImageFormatLoaderExtension_method__load_image>` **(** :ref:`Image<class_Image>` image, :ref:`FileAccess<class_FileAccess>` fileaccess, |bitfield|\<:ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>`\> flags, :ref:`float<class_float>` scale **)** |virtual| |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`add_format_loader<class_ImageFormatLoaderExtension_method_add_format_loader>` **(** **)**                                                                                                                                                                                            |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`remove_format_loader<class_ImageFormatLoaderExtension_method_remove_format_loader>` **(** **)**                                                                                                                                                                                      |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_recognized_extensions<class_ImageFormatLoaderExtension_private_method__get_recognized_extensions>` **(** **)** |virtual| |const|                                                                                                                                                        |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_load_image<class_ImageFormatLoaderExtension_private_method__load_image>` **(** :ref:`Image<class_Image>` image, :ref:`FileAccess<class_FileAccess>` fileaccess, |bitfield|\<:ref:`LoaderFlags<enum_ImageFormatLoader_LoaderFlags>`\> flags, :ref:`float<class_float>` scale **)** |virtual| |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                              | :ref:`add_format_loader<class_ImageFormatLoaderExtension_method_add_format_loader>` **(** **)**                                                                                                                                                                                                    |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                              | :ref:`remove_format_loader<class_ImageFormatLoaderExtension_method_remove_format_loader>` **(** **)**                                                                                                                                                                                              |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -47,10 +47,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_ImageFormatLoaderExtension_method__get_recognized_extensions:
+.. _class_ImageFormatLoaderExtension_private_method__get_recognized_extensions:
 
 .. rst-class:: classref-method
 
@@ -62,7 +62,7 @@ Method Descriptions
 
 ----
 
-.. _class_ImageFormatLoaderExtension_method__load_image:
+.. _class_ImageFormatLoaderExtension_private_method__load_image:
 
 .. rst-class:: classref-method
 
@@ -80,7 +80,7 @@ Method Descriptions
 
 void **add_format_loader** **(** **)**
 
-将这个格式加载器添加至引擎，使其能够识别 :ref:`_get_recognized_extensions<class_ImageFormatLoaderExtension_method__get_recognized_extensions>` 返回的文件扩展名。
+将这个格式加载器添加至引擎，使其能够识别 :ref:`_get_recognized_extensions<class_ImageFormatLoaderExtension_private_method__get_recognized_extensions>` 返回的文件扩展名。
 
 .. rst-class:: classref-item-separator
 
@@ -94,10 +94,10 @@ void **remove_format_loader** **(** **)**
 
 从引擎中移除这个格式加载器。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

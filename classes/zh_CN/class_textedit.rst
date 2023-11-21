@@ -10,16 +10,16 @@
 TextEdit
 ========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CodeEdit<class_CodeEdit>`
+**派生：** :ref:`CodeEdit<class_CodeEdit>`
 
 多行文本编辑器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 多行文本编辑器。它还有少量用于编辑代码的功能，例如语法高亮支持。更多针对编辑代码的高阶功能见 :ref:`CodeEdit<class_CodeEdit>`\ 。
 
@@ -29,8 +29,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -117,24 +117,24 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_backspace<class_TextEdit_method__backspace>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                                                           |
+   | void                                              | :ref:`_backspace<class_TextEdit_private_method__backspace>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                                                   |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_copy<class_TextEdit_method__copy>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                                                                     |
+   | void                                              | :ref:`_copy<class_TextEdit_private_method__copy>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                                                             |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_cut<class_TextEdit_method__cut>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                                                                       |
+   | void                                              | :ref:`_cut<class_TextEdit_private_method__cut>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                                                               |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_handle_unicode_input<class_TextEdit_method__handle_unicode_input>` **(** :ref:`int<class_int>` unicode_char, :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                 |
+   | void                                              | :ref:`_handle_unicode_input<class_TextEdit_private_method__handle_unicode_input>` **(** :ref:`int<class_int>` unicode_char, :ref:`int<class_int>` caret_index **)** |virtual|                                                                                         |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_paste<class_TextEdit_method__paste>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                                                                   |
+   | void                                              | :ref:`_paste<class_TextEdit_private_method__paste>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                                                           |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_paste_primary_clipboard<class_TextEdit_method__paste_primary_clipboard>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                               |
+   | void                                              | :ref:`_paste_primary_clipboard<class_TextEdit_private_method__paste_primary_clipboard>` **(** :ref:`int<class_int>` caret_index **)** |virtual|                                                                                                                       |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`add_caret<class_TextEdit_method_add_caret>` **(** :ref:`int<class_int>` line, :ref:`int<class_int>` col **)**                                                                                                                                                   |
    +---------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -405,8 +405,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -465,8 +465,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_TextEdit_signal_caret_changed:
 
@@ -522,9 +522,9 @@ Signals
 
 **lines_edited_from** **(** :ref:`int<class_int>` from_line, :ref:`int<class_int>` to_line **)**
 
-Emitted immediately when the text changes.
+文本改变时立即发出。
 
-When text is added ``from_line`` will be less than ``to_line``. On a remove ``to_line`` will be less than ``from_line``.
+添加文本时 ``from_line`` 小于 ``to_line``\ 。移除文本时 ``to_line`` 小于 ``from_line``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -556,8 +556,8 @@ When text is added ``from_line`` will be less than ``to_line``. On a remove ``to
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TextEdit_MenuItems:
 
@@ -1031,8 +1031,8 @@ enum **GutterType**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TextEdit_property_autowrap_mode:
 
@@ -1673,10 +1673,10 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_TextEdit_method__backspace:
+.. _class_TextEdit_private_method__backspace:
 
 .. rst-class:: classref-method
 
@@ -1688,7 +1688,7 @@ void **_backspace** **(** :ref:`int<class_int>` caret_index **)** |virtual|
 
 ----
 
-.. _class_TextEdit_method__copy:
+.. _class_TextEdit_private_method__copy:
 
 .. rst-class:: classref-method
 
@@ -1700,7 +1700,7 @@ void **_copy** **(** :ref:`int<class_int>` caret_index **)** |virtual|
 
 ----
 
-.. _class_TextEdit_method__cut:
+.. _class_TextEdit_private_method__cut:
 
 .. rst-class:: classref-method
 
@@ -1712,7 +1712,7 @@ void **_cut** **(** :ref:`int<class_int>` caret_index **)** |virtual|
 
 ----
 
-.. _class_TextEdit_method__handle_unicode_input:
+.. _class_TextEdit_private_method__handle_unicode_input:
 
 .. rst-class:: classref-method
 
@@ -1724,7 +1724,7 @@ void **_handle_unicode_input** **(** :ref:`int<class_int>` unicode_char, :ref:`i
 
 ----
 
-.. _class_TextEdit_method__paste:
+.. _class_TextEdit_private_method__paste:
 
 .. rst-class:: classref-method
 
@@ -1736,7 +1736,7 @@ void **_paste** **(** :ref:`int<class_int>` caret_index **)** |virtual|
 
 ----
 
-.. _class_TextEdit_method__paste_primary_clipboard:
+.. _class_TextEdit_private_method__paste_primary_clipboard:
 
 .. rst-class:: classref-method
 
@@ -1828,7 +1828,7 @@ void **adjust_viewport_to_caret** **(** :ref:`int<class_int>` caret_index=0 **)*
 
 void **backspace** **(** :ref:`int<class_int>` caret_index=-1 **)**
 
-用户按下退格键时调用。可以用 :ref:`_backspace<class_TextEdit_method__backspace>` 覆盖。
+用户按下退格键时调用。可以用 :ref:`_backspace<class_TextEdit_private_method__backspace>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -1888,7 +1888,7 @@ void **clear_undo_history** **(** **)**
 
 void **copy** **(** :ref:`int<class_int>` caret_index=-1 **)**
 
-复制当前选区。可以使用 :ref:`_copy<class_TextEdit_method__copy>` 覆盖。
+复制当前选区。可以使用 :ref:`_copy<class_TextEdit_private_method__copy>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -1900,7 +1900,7 @@ void **copy** **(** :ref:`int<class_int>` caret_index=-1 **)**
 
 void **cut** **(** :ref:`int<class_int>` caret_index=-1 **)**
 
-剪切当前选区。可以使用 :ref:`_cut<class_TextEdit_method__cut>` 覆盖。
+剪切当前选区。可以使用 :ref:`_cut<class_TextEdit_private_method__cut>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -2927,7 +2927,7 @@ void **merge_overlapping_carets** **(** **)**
 
 void **paste** **(** :ref:`int<class_int>` caret_index=-1 **)**
 
-粘贴到当前位置。可以用 :ref:`_paste<class_TextEdit_method__paste>` 覆盖。
+粘贴到当前位置。可以用 :ref:`_paste<class_TextEdit_private_method__paste>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -3448,8 +3448,8 @@ void **undo** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_TextEdit_theme_color_background_color:
 
@@ -3699,7 +3699,7 @@ Theme Property Descriptions
 
 :ref:`StyleBox<class_StyleBox>` **focus**
 
-设置当获得焦点时的 :ref:`StyleBox<class_StyleBox>`\ 。该 ``focus`` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，因此应使用部分透明的 :ref:`StyleBox<class_StyleBox>` 以确保基础 :ref:`StyleBox<class_StyleBox>` 保持可见。表示轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 非常适合此目的。要禁用焦点视觉效果，请指定一个 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用焦点视觉效果会破坏键盘 / 控制器导航的可用性，出于可访问性原因，不建议这样做。
+设置当获得焦点时的 :ref:`StyleBox<class_StyleBox>`\ 。该 :ref:`focus<class_TextEdit_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，因此应使用部分透明的 :ref:`StyleBox<class_StyleBox>` 以确保基础 :ref:`StyleBox<class_StyleBox>` 保持可见。表示轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 非常适合此目的。要禁用焦点视觉效果，请指定一个 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用焦点视觉效果会破坏键盘 / 控制器导航的可用性，出于可访问性原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 
@@ -3725,10 +3725,10 @@ Theme Property Descriptions
 
 设置这个 **TextEdit** 在禁用 :ref:`editable<class_TextEdit_property_editable>` 时的 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

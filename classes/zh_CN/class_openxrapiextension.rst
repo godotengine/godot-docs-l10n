@@ -10,42 +10,42 @@
 OpenXRAPIExtension
 ==================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Makes the OpenXR API available for GDExtension.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**OpenXRAPIExtension** makes OpenXR available for GDExtension. It provides the OpenXR API to GDExtension through the :ref:`get_instance_proc_addr<class_OpenXRAPIExtension_method_get_instance_proc_addr>` method, and the OpenXR instance through :ref:`get_instance<class_OpenXRAPIExtension_method_get_instance>`.
-
-It also provides methods for querying the status of OpenXR initialization, and helper methods for ease of use of the API with GDExtension.
+为 GDExtension 提供 OpenXR API。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `XrResult documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__
+**OpenXRAPIExtension** 使 OpenXR 可用于 GDExtension。它通过 :ref:`get_instance_proc_addr<class_OpenXRAPIExtension_method_get_instance_proc_addr>` 方法向 GDExtension 提供 OpenXR API，并通过 :ref:`get_instance<class_OpenXRAPIExtension_method_get_instance>` 提供 OpenXR 实例。
 
-- `XrInstance documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__
+它还提供了用于查询 OpenXR 初始化状态的方法，以及便于通过 GDExtension 使用 API 的辅助方法。
 
-- `XrSpace documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__
+.. rst-class:: classref-introduction-group
 
-- `XrSession documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__
+教程
+----
 
-- `XrSystemId documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__
+- `XrResult 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__
 
-- `xrBeginSession documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__
+- `XrInstance 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__
 
-- `XrPosef documentation <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__
+- `XrSpace 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__
+
+- `XrSession 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__
+
+- `XrSystemId 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__
+
+- `xrBeginSession 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__
+
+- `XrPosef 文档 <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -86,8 +86,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_OpenXRAPIExtension_method_can_render:
 
@@ -95,7 +95,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **can_render** **(** **)**
 
-Returns ``true`` if OpenXR is initialized for rendering with an XR viewport.
+如果 OpenXR 已为使用 XR 视口进行渲染而初始化，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -107,7 +107,7 @@ Returns ``true`` if OpenXR is initialized for rendering with an XR viewport.
 
 :ref:`String<class_String>` **get_error_string** **(** :ref:`int<class_int>` result **)**
 
-Returns an error string for the given `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__.
+返回给定 `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ 对应的错误字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -119,7 +119,7 @@ Returns an error string for the given `XrResult <https://registry.khronos.org/Op
 
 :ref:`int<class_int>` **get_instance** **(** **)**
 
-Returns the `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__ created during the initialization of the OpenXR API.
+返回 OpenXR API 初始化过程中创建的 `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrInstance.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -131,9 +131,9 @@ Returns the `XrInstance <https://registry.khronos.org/OpenXR/specs/1.0/man/html/
 
 :ref:`int<class_int>` **get_instance_proc_addr** **(** :ref:`String<class_String>` name **)**
 
-Returns the function pointer of the OpenXR function with the specified name, cast to an integer. If the function with the given name does not exist, the method returns ``0``.
+返回具有指定名称的 OpenXR 函数的函数指针，转换为整数。如果给定名称的函数不存在，该方法返回 ``0``\ 。
 
-\ **Note:** ``openxr/util.h`` contains utility macros for acquiring OpenXR functions, e.g. ``GDEXTENSION_INIT_XR_FUNC_V(xrCreateAction)``.
+\ **注意：**\ ``openxr/util.h`` 包含用于获取 OpenXR 函数的实用宏，例如， ``GDEXTENSION_INIT_XR_FUNC_V(xrCreateAction)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ Returns the function pointer of the OpenXR function with the specified name, cas
 
 :ref:`int<class_int>` **get_next_frame_time** **(** **)**
 
-Returns the timing for the next frame.
+返回下一帧的时间。
 
 .. rst-class:: classref-item-separator
 
@@ -157,7 +157,7 @@ Returns the timing for the next frame.
 
 :ref:`int<class_int>` **get_play_space** **(** **)**
 
-Returns the play space, which is an `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__ cast to an integer.
+返回播放空间，它是一个被转换为整数的 `XrSpace <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSpace.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +169,7 @@ Returns the play space, which is an `XrSpace <https://registry.khronos.org/OpenX
 
 :ref:`int<class_int>` **get_session** **(** **)**
 
-Returns the OpenXR session, which is an `XrSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__ cast to an integer.
+返回该 OpenXR 会话，它是一个被转换为整数的 `XrSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSession.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -181,7 +181,7 @@ Returns the OpenXR session, which is an `XrSession <https://registry.khronos.org
 
 :ref:`String<class_String>` **get_swapchain_format_name** **(** :ref:`int<class_int>` swapchain_format **)**
 
-Returns the name of the specified swapchain format.
+返回指定交换链格式的名称。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Returns the name of the specified swapchain format.
 
 :ref:`int<class_int>` **get_system_id** **(** **)**
 
-Returns the id of the system, which is a `XrSystemId <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__ cast to an integer.
+返回系统的 id，它是一个被转换为整数的 `XrSystemId <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrSystemId.html>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ Returns the id of the system, which is a `XrSystemId <https://registry.khronos.o
 
 :ref:`bool<class_bool>` **is_initialized** **(** **)**
 
-Returns ``true`` if OpenXR is initialized.
+如果 OpenXR 已初始化，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -217,7 +217,7 @@ Returns ``true`` if OpenXR is initialized.
 
 :ref:`bool<class_bool>` **is_running** **(** **)**
 
-Returns ``true`` if OpenXR is running (`xrBeginSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__ was successfully called and the swapchains were created).
+如果 OpenXR 正在运行，则返回 ``true``\ （\ `xrBeginSession <https://registry.khronos.org/OpenXR/specs/1.0/man/html/xrBeginSession.html>`__ 已被成功调用并且交换链已被创建）。
 
 .. rst-class:: classref-item-separator
 
@@ -229,7 +229,7 @@ Returns ``true`` if OpenXR is running (`xrBeginSession <https://registry.khronos
 
 :ref:`bool<class_bool>` **openxr_is_enabled** **(** :ref:`bool<class_bool>` check_run_in_editor **)** |static|
 
-Returns ``true`` if OpenXR is enabled.
+如果启用 OpenXR，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -241,7 +241,7 @@ Returns ``true`` if OpenXR is enabled.
 
 :ref:`Transform3D<class_Transform3D>` **transform_from_pose** **(** const void* pose **)**
 
-Creates a :ref:`Transform3D<class_Transform3D>` from an `XrPosef <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__.
+从 `XrPosef <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrPosef.html>`__ 创建一个 :ref:`Transform3D<class_Transform3D>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -253,12 +253,12 @@ Creates a :ref:`Transform3D<class_Transform3D>` from an `XrPosef <https://regist
 
 :ref:`bool<class_bool>` **xr_result** **(** :ref:`int<class_int>` result, :ref:`String<class_String>` format, :ref:`Array<class_Array>` args **)**
 
-Returns ``true`` if the provided `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ (cast to an integer) is successful. Otherwise returns ``false`` and prints the `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ converted to a string, with the specified additional information.
+如果提供的 `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__\ （转换为整数）是成功的，则返回 ``true``\ 。否则返回 ``false`` 并打印被转换为字符串的 `XrResult <https://registry.khronos.org/OpenXR/specs/1.0/man/html/XrResult.html>`__ ，以及指定的附加信息。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

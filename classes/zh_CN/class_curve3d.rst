@@ -10,14 +10,14 @@
 Curve3D
 =======
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 描述 3D 空间的贝兹尔曲线。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该类描述了 3D 空间中的贝塞尔曲线。它主要用于给 :ref:`Path3D<class_Path3D>` 提供一个形状，但也可以手动采样以用于其他目的。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -103,8 +103,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Curve3D_property_bake_interval:
 
@@ -159,8 +159,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Curve3D_method_add_point:
 
@@ -346,9 +346,7 @@ void **remove_point** **(** :ref:`int<class_int>` idx **)**
 
 :ref:`Vector3<class_Vector3>` **sample_baked** **(** :ref:`float<class_float>` offset=0.0, :ref:`bool<class_bool>` cubic=false **)** |const|
 
-返回曲线内位于 ``offset`` 位置的一个点，其中 ``offset`` 为沿曲线的 3D 单位测量距离。
-
-为此，它会找到 ``offset`` 位于其间的两个缓存点，然后对值进行插值。如果 ``cubic`` 被设置为 ``true``\ ，则该插值是立方插值；如果被设置为 ``false``\ ，则该插值是线性插值。
+返回曲线内位于 ``offset`` 位置的一个点，其中 ``offset`` 为沿曲线的 3D 单位测量距离。为此，它会找到 ``offset`` 位于其间的两个缓存点，然后对值进行插值。如果 ``cubic`` 被设置为 ``true``\ ，则该插值是立方插值；如果被设置为 ``false``\ ，则该插值是线性插值。
 
 立方插值往往能更好地跟随曲线，但线性插值速度更快（而且通常足够精确）。
 
@@ -362,9 +360,7 @@ void **remove_point** **(** :ref:`int<class_int>` idx **)**
 
 :ref:`Vector3<class_Vector3>` **sample_baked_up_vector** **(** :ref:`float<class_float>` offset, :ref:`bool<class_bool>` apply_tilt=false **)** |const|
 
-返回曲线内位于 ``offset`` 位置的向上向量，其中 ``offset`` 为沿曲线的 3D 单位测量距离。
-
-为此，它会找到 ``offset`` 位于其间的两个缓存向上向量，然后对值进行插值。如果 ``apply_tilt`` 为 ``true``\ ，则对插值后的向上向量应用插值后的倾斜。
+返回曲线内位于 ``offset`` 位置的向上向量，其中 ``offset`` 为沿曲线的 3D 单位测量距离。为此，它会找到 ``offset`` 位于其间的两个缓存向上向量，然后对值进行插值。如果 ``apply_tilt`` 为 ``true``\ ，则对插值后的向上向量应用插值后的倾斜。
 
 如果曲线没有向上向量，则该函数将向控制台发送一个错误，并返回 ``(0, 1, 0)``\ 。
 
@@ -378,7 +374,7 @@ void **remove_point** **(** :ref:`int<class_int>` idx **)**
 
 :ref:`Transform3D<class_Transform3D>` **sample_baked_with_rotation** **(** :ref:`float<class_float>` offset=0.0, :ref:`bool<class_bool>` cubic=false, :ref:`bool<class_bool>` apply_tilt=false **)** |const|
 
-与 ``interpolate_baked()`` 类似。返回值为 ``Transform3D``\ ，其中 ``origin`` 作为点位置，\ ``basis.x`` 作为横向向量，\ ``basis.y`` 作为向上向量，\ ``basis.z`` 作为前向向量。当曲线长度为 0 时，将没有合理的方法来计算旋转，所有向量都会与全局空间轴对齐。
+返回一个 :ref:`Transform3D<class_Transform3D>`\ ，其中 ``origin`` 作为点位置，\ ``basis.x`` 作为横向向量，\ ``basis.y`` 作为向上向量，\ ``basis.z`` 作为前向向量。当曲线长度为 0 时，将没有合理的方法来计算旋转，所有向量都会与全局空间轴对齐。另请参见 :ref:`sample_baked<class_Curve3D_method_sample_baked>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -474,10 +470,10 @@ void **set_point_tilt** **(** :ref:`int<class_int>` idx, :ref:`float<class_float
 
 \ ``tolerance_length`` 控制在必须细分线段之前两个相邻点之间的最大距离。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

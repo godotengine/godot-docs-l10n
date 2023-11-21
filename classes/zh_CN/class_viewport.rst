@@ -10,16 +10,16 @@
 Viewport
 ========
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`SubViewport<class_SubViewport>`, :ref:`Window<class_Window>`
+**派生：** :ref:`SubViewport<class_SubViewport>`, :ref:`Window<class_Window>`
 
 视口的抽象基类。对绘图以及与游戏世界的交互进行了封装。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 Viewport（视口）会在屏幕中创建不同的视图，或是在其他视口中创建子视图。视口上会显示 2D 子节点，也会渲染 Camera3D 3D 子节点。
 
@@ -33,8 +33,8 @@ Viewport（视口）会在屏幕中创建不同的视图，或是在其他视口
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用视口 <../tutorials/rendering/viewports>`
 
@@ -54,8 +54,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -152,8 +152,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -222,8 +222,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Viewport_signal_gui_focus_changed:
 
@@ -251,8 +251,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Viewport_PositionalShadowAtlasQuadrantSubdiv:
 
@@ -350,11 +350,19 @@ enum **Scaling3DMode**:
 
 对该视口的 3D 缓冲区使用 AMD FidelityFX 超分辨率 1.0 升采样技术。缩放的程度可以使用 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置。小于 ``1.0`` 的值会使用 FSR 进行放大。不支持大于 ``1.0`` 的值，会改用双线性降采样。值为 ``1.0`` 时禁用缩放。
 
+.. _class_Viewport_constant_SCALING_3D_MODE_FSR2:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_FSR2** = ``2``
+
+对视口的 3D 缓冲区使用 AMD FidelityFX 超分辨率 2.2 放大。可以使用 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置缩放量。小于 ``1.0`` 的值将导致使用 FSR2 放大视口。不支持大于 ``1.0`` 的值，将改用双线性降采样。\ ``1.0`` 的值将使用原生分辨率下的 FSR2 作为 TAA 解决方案。
+
 .. _class_Viewport_constant_SCALING_3D_MODE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_MAX** = ``2``
+:ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` **SCALING_3D_MODE_MAX** = ``3``
 
 代表 :ref:`Scaling3DMode<enum_Viewport_Scaling3DMode>` 枚举的大小。
 
@@ -736,6 +744,14 @@ enum **DebugDraw**:
 
 
 
+.. _class_Viewport_constant_DEBUG_DRAW_INTERNAL_BUFFER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`DebugDraw<enum_Viewport_DebugDraw>` **DEBUG_DRAW_INTERNAL_BUFFER** = ``26``
+
+在应用后处理之前绘制场景的内部分辨率缓冲区。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -968,8 +984,8 @@ VRS 纹理由主 :ref:`XRInterface<class_XRInterface>` 提供。
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Viewport_property_audio_listener_enable_2d:
 
@@ -1298,9 +1314,9 @@ Property Descriptions
 - void **set_physics_object_picking** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_physics_object_picking** **(** **)**
 
-If ``true``, the objects rendered by viewport become subjects of mouse picking process.
+如果为 ``true``\ ，则视口中渲染的对象会成为鼠标拾取过程中的候选。
 
-\ **Note:** The number of simultaneously pickable objects is limited to 64 and they are selected in a non-deterministic order, which can be different in each picking process.
+\ **注意：**\ 同时能够被拾取的对象最多只有 64 个，选择的顺序是不确定的，每次拾取可能都不相同。
 
 .. rst-class:: classref-item-separator
 
@@ -1317,11 +1333,11 @@ If ``true``, the objects rendered by viewport become subjects of mouse picking p
 - void **set_physics_object_picking_sort** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_physics_object_picking_sort** **(** **)**
 
-If ``true``, objects receive mouse picking events sorted primarily by their :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` and secondarily by their position in the scene tree. If ``false``, the order is undetermined.
+如果为 ``true``\ ，则对象会按照固定的顺序接收鼠标拾取事件，首先会按各自的 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 排序，然后按它们在场景树中的位置排序。如果为 ``false``\ ，则顺序不确定。
 
-\ **Note:** This setting is disabled by default because of its potential expensive computational cost.
+\ **注意：**\ 默认情况下禁用此设置，因为它可能会产生昂贵的计算成本。
 
-\ **Note:** Sorting happens after selecting the pickable objects. Because of the limitation of 64 simultaneously pickable objects, it is not guaranteed that the object with the highest :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` receives the picking event.
+\ **注意：**\ 排序发生在选择可拾取对象之后。因为同时能够被拾取的对象最多只有 64 个，所以无法保证 :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 最大的对象能够接收到拾取事件。
 
 .. rst-class:: classref-item-separator
 
@@ -1501,7 +1517,7 @@ If ``true``, objects receive mouse picking events sorted primarily by their :ref
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1520,7 +1536,7 @@ If ``true``, objects receive mouse picking events sorted primarily by their :ref
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1539,7 +1555,7 @@ If ``true``, objects receive mouse picking events sorted primarily by their :ref
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1558,7 +1574,7 @@ If ``true``, objects receive mouse picking events sorted primarily by their :ref
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1575,13 +1591,13 @@ If ``true``, objects receive mouse picking events sorted primarily by their :ref
 - void **set_texture_mipmap_bias** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_texture_mipmap_bias** **(** **)**
 
-Affects the final texture sharpness by reading from a lower or higher mipmap (also called "texture LOD bias"). Negative values make mipmapped textures sharper but grainier when viewed at a distance, while positive values make mipmapped textures blurrier (even when up close).
+通过从更低或更高的 mipmap 中读取数据影响最终纹理的锐度（也叫“纹理 LOD 偏置”）。负值会让 mipmap 纹理更锐利，但从较远处观察时颗粒更明显，而正值会让 mipmap 纹理更模糊（即便凑近看也一样）。
 
-Enabling temporal antialiasing (:ref:`use_taa<class_Viewport_property_use_taa>`) will automatically apply a ``-0.5`` offset to this value, while enabling FXAA (:ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`) will automatically apply a ``-0.25`` offset to this value. If both TAA and FXAA are enabled at the same time, an offset of ``-0.75`` is applied to this value.
+启用时间抗锯齿（\ :ref:`use_taa<class_Viewport_property_use_taa>`\ ）会对这个值应用 ``-0.5`` 的偏移量，而启用 FXAA（\ :ref:`screen_space_aa<class_Viewport_property_screen_space_aa>`\ ）则会对这个值应用 ``-0.25`` 的偏移量。如果同时启用 TAA 和 FXAA，则会对这个值应用 ``-0.75`` 的偏移量。
 
-\ **Note:** If :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` is lower than ``1.0`` (exclusive), :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` is used to adjust the automatic mipmap bias which is calculated internally based on the scale factor. The formula for this is ``log2(scaling_3d_scale) + mipmap_bias``.
+\ **注意：**\ 如果 :ref:`scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 比 ``1.0`` 小（包含），则会使用 :ref:`texture_mipmap_bias<class_Viewport_property_texture_mipmap_bias>` 自动调整 mipmap 偏置，内部会根据缩放系数进行计算。公式为 ``log2(scaling_3d_scale) + mipmap_bias``\ 。
 
-To control this property on the root viewport, set the :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>` project setting.
+要在根视口上控制这个属性，请使用项目设置 :ref:`ProjectSettings.rendering/textures/default_filters/texture_mipmap_bias<class_ProjectSettings_property_rendering/textures/default_filters/texture_mipmap_bias>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1634,9 +1650,9 @@ To control this property on the root viewport, set the :ref:`ProjectSettings.ren
 - void **set_use_hdr_2d** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_using_hdr_2d** **(** **)**
 
-If ``true``, 2D rendering will use an high dynamic range (HDR) format framebuffer matching the bit depth of the 3D framebuffer. When using the Forward+ renderer this will be a ``RGBA16`` framebuffer, while when using the Mobile renderer it will be a ``RGB10_A2`` framebuffer. Additionally, 2D rendering will take place in linear color space and will be converted to sRGB space immediately before blitting to the screen (if the Viewport is attached to the screen). Practically speaking, this means that the end result of the Viewport will not be clamped into the ``0-1`` range and can be used in 3D rendering without color space adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients.
+如果为 ``true``\ ，则 2D 渲染会使用高动态范围格式的帧缓冲，与 3D 帧缓冲的位深度一致。使用 Forward+ 渲染器时为 ``RGBA16`` 帧缓冲，而使用 Mobile 渲染器时为 ``RGB10_A2`` 帧缓冲。另外，2D 渲染是发生在线性色彩空间的，会在传输至屏幕前转换至 sRGB 空间（如果 Viewport 与屏幕进行了关联）。这意味着在实际情况下，Viewport 的最终效果不会被限制在 ``0-1`` 的范围内，无需色彩空间调整就能够用于 3D 渲染。这样 2D 渲染就能够利用到需要高动态范围的效果（例如 2D 辉光），并且能够大幅提升需要大量细节内容的效果。
 
-\ **Note:** This setting will have no effect when using the GL Compatibility renderer as the GL Compatibility renderer always renders in low dynamic range for performance reasons.
+\ **注意：**\ 使用 GL Compatibility 渲染器时无效，因为 GL Compatibility 渲染器出于性能的原因始终使用低动态范围。
 
 .. rst-class:: classref-item-separator
 
@@ -1653,11 +1669,11 @@ If ``true``, 2D rendering will use an high dynamic range (HDR) format framebuffe
 - void **set_use_occlusion_culling** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_using_occlusion_culling** **(** **)**
 
-If ``true``, :ref:`OccluderInstance3D<class_OccluderInstance3D>` nodes will be usable for occlusion culling in 3D for this viewport. For the root viewport, :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` must be set to ``true`` instead.
+如果为 ``true``\ ，\ :ref:`OccluderInstance3D<class_OccluderInstance3D>` 节点将被用于该视口中的 3D 遮挡剔除。对于根视口，\ :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` 必须改为被设置为 ``true``\ 。
 
-\ **Note:** Enabling occlusion culling has a cost on the CPU. Only enable occlusion culling if you actually plan to use it, and think whether your scene can actually benefit from occlusion culling. Large, open scenes with few or no objects blocking the view will generally not benefit much from occlusion culling. Large open scenes generally benefit more from mesh LOD and visibility ranges (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` and :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) compared to occlusion culling.
+\ **注意：**\ 启用遮挡剔除会消耗一定的 CPU。仅当确实打算使用遮挡剔除时才启用它，并考虑场景是否真的可以从遮挡剔除中受益。具有很少或没有对象阻挡视图的大型开放场景，通常不会从遮挡剔除中受益更多。与遮挡剔除相比，大型开放场景通常从网格 LOD 和可见性范围（\ :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和 :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`\ ）中受益更多。
 
-\ **Note:** Due to memory constraints, occlusion culling is not supported by default in Web export templates. It can be enabled by compiling custom Web export templates with ``module_raycast_enabled=yes``.
+\ **注意：**\ 由于内存限制，Web 导出模板中默认不支持遮挡剔除。编译自定义 Web 导出模板时使用 ``module_raycast_enabled=yes`` 可以启用。
 
 .. rst-class:: classref-item-separator
 
@@ -1784,8 +1800,8 @@ If ``true``, :ref:`OccluderInstance3D<class_OccluderInstance3D>` nodes will be u
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Viewport_method_find_world_2d:
 
@@ -1853,9 +1869,9 @@ Method Descriptions
 
 :ref:`Window[]<class_Window>` **get_embedded_subwindows** **(** **)** |const|
 
-Returns a list of the visible embedded :ref:`Window<class_Window>`\ s inside the viewport.
+返回该视口内可见的嵌入 :ref:`Window<class_Window>` 的列表。
 
-\ **Note:** :ref:`Window<class_Window>`\ s inside other viewports will not be listed.
+\ **注意：**\ 其他视口内的 :ref:`Window<class_Window>` 不会被列出。
 
 .. rst-class:: classref-item-separator
 
@@ -1929,7 +1945,7 @@ Returns a list of the visible embedded :ref:`Window<class_Window>`\ s inside the
 
 返回该视口的纹理
 
-\ **注意：**\ 保存当前纹理时（例如保存到文件中），如果时机过早则可能是全黑或过时的图片，尤其是在 :ref:`Node._ready<class_Node_method__ready>` 等函数中使用时。要确保获得正确的纹理，你可以等待 :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` 信号。
+\ **注意：**\ 保存当前纹理时（例如保存到文件中），如果时机过早则可能是全黑或过时的图片，尤其是在 :ref:`Node._ready<class_Node_private_method__ready>` 等函数中使用时。要确保获得正确的纹理，你可以等待 :ref:`RenderingServer.frame_post_draw<class_RenderingServer_signal_frame_post_draw>` 信号。
 
 ::
 
@@ -1971,7 +1987,7 @@ Returns a list of the visible embedded :ref:`Window<class_Window>`\ s inside the
 
 :ref:`Variant<class_Variant>` **gui_get_drag_data** **(** **)** |const|
 
-返回 GUI 的拖动数据，该数据先前由 :ref:`Control._get_drag_data<class_Control_method__get_drag_data>` 返回。
+返回 GUI 的拖动数据，该数据先前由 :ref:`Control._get_drag_data<class_Control_private_method__get_drag_data>` 返回。
 
 .. rst-class:: classref-item-separator
 
@@ -2035,7 +2051,7 @@ void **gui_release_focus** **(** **)**
 
 返回当前的 :ref:`InputEvent<class_InputEvent>` 是否已被处理。在 :ref:`InputEvent<class_InputEvent>` 生命周期中调用 :ref:`set_input_as_handled<class_Viewport_method_set_input_as_handled>` 前，输入事件都处于未处理状态。
 
-通常作为 :ref:`Node._input<class_Node_method__input>`\ 、\ :ref:`Control._gui_input<class_Control_method__gui_input>` 等输入处理方法以及对应的信号处理函数的一部分来实现。
+通常作为 :ref:`Node._input<class_Node_private_method__input>`\ 、\ :ref:`Control._gui_input<class_Control_private_method__gui_input>` 等输入处理方法以及对应的信号处理函数的一部分来实现。
 
 如果 :ref:`handle_input_locally<class_Viewport_property_handle_input_locally>` 为 ``false``\ ，则这个方法会尝试查找第一个本地处理输入的父级视口，并返回该视口的 :ref:`is_input_handled<class_Viewport_method_is_input_handled>`\ 。
 
@@ -2049,27 +2065,27 @@ void **gui_release_focus** **(** **)**
 
 void **push_input** **(** :ref:`InputEvent<class_InputEvent>` event, :ref:`bool<class_bool>` in_local_coords=false **)**
 
-Triggers the given ``event`` in this **Viewport**. This can be used to pass an :ref:`InputEvent<class_InputEvent>` between viewports, or to locally apply inputs that were sent over the network or saved to a file.
+在该 **Viewport** 中触发给定的 ``event`` 事件。可用于在不同视口之间传递 :ref:`InputEvent<class_InputEvent>`\ ，或者在本地应用通过网络传输或保存在文件中的事件。
 
-If ``in_local_coords`` is ``false``, the event's position is in the embedder's coordinates and will be converted to viewport coordinates. If ``in_local_coords`` is ``true``, the event's position is in viewport coordinates.
+如果 ``in_local_coords`` 为 ``false``\ ，则该事件中的位置使用的是嵌入器坐标系，会被转换至视口坐标系。如果 ``in_local_coords`` 为 ``true``\ ，则该事件的位置使用的是视口坐标系。
 
-While this method serves a similar purpose as :ref:`Input.parse_input_event<class_Input_method_parse_input_event>`, it does not remap the specified ``event`` based on project settings like :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`.
+虽然这个方法的用途和 :ref:`Input.parse_input_event<class_Input_method_parse_input_event>` 类似，但不会根据 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 等项目设置对指定的 ``event`` 进行重映射。
 
-Calling this method will propagate calls to child nodes for following methods in the given order:
+调用这个方法会将调用传播至子节点，按照以下顺序调用：
 
-- :ref:`Node._input<class_Node_method__input>`\ 
+- :ref:`Node._input<class_Node_private_method__input>`\ 
 
-- :ref:`Control._gui_input<class_Control_method__gui_input>` for :ref:`Control<class_Control>` nodes
+- :ref:`Control._gui_input<class_Control_private_method__gui_input>` 仅用于 :ref:`Control<class_Control>` 节点
 
-- :ref:`Node._shortcut_input<class_Node_method__shortcut_input>`\ 
+- :ref:`Node._shortcut_input<class_Node_private_method__shortcut_input>`\ 
 
-- :ref:`Node._unhandled_key_input<class_Node_method__unhandled_key_input>`\ 
+- :ref:`Node._unhandled_key_input<class_Node_private_method__unhandled_key_input>`\ 
 
-- :ref:`Node._unhandled_input<class_Node_method__unhandled_input>`\ 
+- :ref:`Node._unhandled_input<class_Node_private_method__unhandled_input>`\ 
 
-If an earlier method marks the input as handled via :ref:`set_input_as_handled<class_Viewport_method_set_input_as_handled>`, any later method in this list will not be called.
+如果某个方法使用 :ref:`set_input_as_handled<class_Viewport_method_set_input_as_handled>` 将输入标记为已处理，则列表中的后续方法均不会被调用。
 
-If none of the methods handle the event and :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` is ``true``, the event is used for physics object picking.
+如果没有任何方法处理该事件，并且 :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` 为 ``true``\ ，则该事件将用于物理对象的拾取。
 
 .. rst-class:: classref-item-separator
 
@@ -2093,27 +2109,27 @@ void **push_text_input** **(** :ref:`String<class_String>` text **)**
 
 void **push_unhandled_input** **(** :ref:`InputEvent<class_InputEvent>` event, :ref:`bool<class_bool>` in_local_coords=false **)**
 
-Triggers the given :ref:`InputEvent<class_InputEvent>` in this **Viewport**. This can be used to pass input events between viewports, or to locally apply inputs that were sent over the network or saved to a file.
+在该 **Viewport** 中触发给定的 ``event`` 事件。可用于在不同视口之间传递 :ref:`InputEvent<class_InputEvent>`\ ，或者在本地应用通过网络传输或保存在文件中的事件。
 
-If ``in_local_coords`` is ``false``, the event's position is in the embedder's coordinates and will be converted to viewport coordinates. If ``in_local_coords`` is ``true``, the event's position is in viewport coordinates.
+如果 ``in_local_coords`` 为 ``false``\ ，则该事件中的位置使用的是嵌入器坐标系，会被转换至视口坐标系。如果 ``in_local_coords`` 为 ``true``\ ，则该事件的位置使用的是视口坐标系。
 
-While this method serves a similar purpose as :ref:`Input.parse_input_event<class_Input_method_parse_input_event>`, it does not remap the specified ``event`` based on project settings like :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>`.
+虽然这个方法的用途和 :ref:`Input.parse_input_event<class_Input_method_parse_input_event>` 类似，但不会根据 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 等项目设置对指定的 ``event`` 进行重映射。
 
-Calling this method will propagate calls to child nodes for following methods in the given order:
+调用这个方法会将调用传播至子节点，按照以下顺序调用：
 
-- :ref:`Node._shortcut_input<class_Node_method__shortcut_input>`\ 
+- :ref:`Node._shortcut_input<class_Node_private_method__shortcut_input>`\ 
 
-- :ref:`Node._unhandled_key_input<class_Node_method__unhandled_key_input>`\ 
+- :ref:`Node._unhandled_key_input<class_Node_private_method__unhandled_key_input>`\ 
 
-- :ref:`Node._unhandled_input<class_Node_method__unhandled_input>`\ 
+- :ref:`Node._unhandled_input<class_Node_private_method__unhandled_input>`\ 
 
-If an earlier method marks the input as handled via :ref:`set_input_as_handled<class_Viewport_method_set_input_as_handled>`, any later method in this list will not be called.
+如果某个方法使用 :ref:`set_input_as_handled<class_Viewport_method_set_input_as_handled>` 将输入标记为已处理，则列表中的后续方法均不会被调用。
 
-If none of the methods handle the event and :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` is ``true``, the event is used for physics object picking.
+如果上述方法均未处理事件，并且 :ref:`physics_object_picking<class_Viewport_property_physics_object_picking>` 为 ``true``\ ，则该事件将用于物理对象的拾取。
 
-\ **Note:** This method doesn't propagate input events to embedded :ref:`Window<class_Window>`\ s or :ref:`SubViewport<class_SubViewport>`\ s.
+\ **注意：**\ 这个方法不会将输入事件传播至嵌入的 :ref:`Window<class_Window>` 和 :ref:`SubViewport<class_SubViewport>`\ 。
 
-\ *Deprecated.* Use :ref:`push_input<class_Viewport_method_push_input>` instead.
+\ *已弃用。*\ 请改用 :ref:`push_input<class_Viewport_method_push_input>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2179,10 +2195,10 @@ void **warp_mouse** **(** :ref:`Vector2<class_Vector2>` position **)**
 
 \ **注意：**\ :ref:`warp_mouse<class_Viewport_method_warp_mouse>` 仅支持 Windows、macOS 和 Linux。它对 Android、iOS 和 Web 没有影响。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

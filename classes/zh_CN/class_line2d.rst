@@ -10,25 +10,25 @@
 Line2D
 ======
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 2D polyline that can optionally be textured.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This node draws a 2D polyline, i.e. a shape consisting of several points connected by segments. **Line2D** is not a mathematical polyline, i.e. the segments are not infinitely thin. It is intended for rendering and it can be colored and optionally textured.
-
-\ **Warning:** Certain configurations may be impossible to draw nicely, such as very sharp angles. In these situations, the node uses fallback drawing logic to look decent.
-
-\ **Note:** **Line2D** is drawn using a 2D mesh.
+可以选择设置纹理的 2D 折线。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
+
+该节点绘制一条 2D 折线，即由多个线段连接的点组成的形状。\ **Line2D** 不是数学折线，即线段不是无限细的。它用于渲染，且可以被着色，也可以选择纹理。
+
+\ **警告：**\ 某些配置可能无法很好地绘制，例如非常锐利的角度。在这些情况下，节点使用后备绘制逻辑来看起来不错。
+
+\ **注意：**\ **Line2D** 使用 2D 网格进行绘制。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
 
 - `矩阵变换演示 <https://godotengine.org/asset-library/asset/584>`__
 
@@ -36,8 +36,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -100,8 +100,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Line2D_LineJointMode:
 
@@ -115,7 +115,7 @@ enum **LineJointMode**:
 
 :ref:`LineJointMode<enum_Line2D_LineJointMode>` **LINE_JOINT_SHARP** = ``0``
 
-Makes the polyline's joints pointy, connecting the sides of the two segments by extending them until they intersect. If the rotation of a joint is too big (based on :ref:`sharp_limit<class_Line2D_property_sharp_limit>`), the joint falls back to :ref:`LINE_JOINT_BEVEL<class_Line2D_constant_LINE_JOINT_BEVEL>` to prevent very long miters.
+使该折线的接头变尖，通过延伸两条线段直至它们相交来连接它们的侧面。如果关节的旋转太大（基于 :ref:`sharp_limit<class_Line2D_property_sharp_limit>`\ ），关节将回落到 :ref:`LINE_JOINT_BEVEL<class_Line2D_constant_LINE_JOINT_BEVEL>` 以防止出现过长的斜角。
 
 .. _class_Line2D_constant_LINE_JOINT_BEVEL:
 
@@ -123,7 +123,7 @@ Makes the polyline's joints pointy, connecting the sides of the two segments by 
 
 :ref:`LineJointMode<enum_Line2D_LineJointMode>` **LINE_JOINT_BEVEL** = ``1``
 
-Makes the polyline's joints bevelled/chamfered, connecting the sides of the two segments with a simple line.
+使折线的接头倾斜/倒角，用一条简单的线连接两个线段的侧面。
 
 .. _class_Line2D_constant_LINE_JOINT_ROUND:
 
@@ -131,7 +131,7 @@ Makes the polyline's joints bevelled/chamfered, connecting the sides of the two 
 
 :ref:`LineJointMode<enum_Line2D_LineJointMode>` **LINE_JOINT_ROUND** = ``2``
 
-Makes the polyline's joints rounded, connecting the sides of the two segments with an arc. The detail of this arc depends on :ref:`round_precision<class_Line2D_property_round_precision>`.
+使该折线的接头变圆，用圆弧连接两条线段的侧面。该弧的细节取决于 :ref:`round_precision<class_Line2D_property_round_precision>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -149,7 +149,7 @@ enum **LineCapMode**:
 
 :ref:`LineCapMode<enum_Line2D_LineCapMode>` **LINE_CAP_NONE** = ``0``
 
-Draws no line cap.
+不绘制线条端点。
 
 .. _class_Line2D_constant_LINE_CAP_BOX:
 
@@ -157,7 +157,7 @@ Draws no line cap.
 
 :ref:`LineCapMode<enum_Line2D_LineCapMode>` **LINE_CAP_BOX** = ``1``
 
-Draws the line cap as a box, slightly extending the first/last segment.
+将线帽绘制为方框，稍微延伸第一段/最后一段。
 
 .. _class_Line2D_constant_LINE_CAP_ROUND:
 
@@ -165,7 +165,7 @@ Draws the line cap as a box, slightly extending the first/last segment.
 
 :ref:`LineCapMode<enum_Line2D_LineCapMode>` **LINE_CAP_ROUND** = ``2``
 
-Draws the line cap as a semicircle attached to the first/last segment.
+将线帽绘制为连接到第一条/最后一条线段的半圆。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +183,7 @@ enum **LineTextureMode**:
 
 :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` **LINE_TEXTURE_NONE** = ``0``
 
-Takes the left pixels of the texture and renders them over the whole polyline.
+获取纹理的左侧像素并将它们渲染在整条折线上。
 
 .. _class_Line2D_constant_LINE_TEXTURE_TILE:
 
@@ -191,7 +191,7 @@ Takes the left pixels of the texture and renders them over the whole polyline.
 
 :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` **LINE_TEXTURE_TILE** = ``1``
 
-Tiles the texture over the polyline. :ref:`CanvasItem.texture_repeat<class_CanvasItem_property_texture_repeat>` of the **Line2D** node must be :ref:`CanvasItem.TEXTURE_REPEAT_ENABLED<class_CanvasItem_constant_TEXTURE_REPEAT_ENABLED>` or :ref:`CanvasItem.TEXTURE_REPEAT_MIRROR<class_CanvasItem_constant_TEXTURE_REPEAT_MIRROR>` for it to work properly.
+将纹理平铺在该折线上。该 **Line2D** 节点的 :ref:`CanvasItem.texture_repeat<class_CanvasItem_property_texture_repeat>` 必须为 :ref:`CanvasItem.TEXTURE_REPEAT_ENABLED<class_CanvasItem_constant_TEXTURE_REPEAT_ENABLED>` 或 :ref:`CanvasItem.TEXTURE_REPEAT_MIRROR<class_CanvasItem_constant_TEXTURE_REPEAT_MIRROR>`\ ，才能正常工作。
 
 .. _class_Line2D_constant_LINE_TEXTURE_STRETCH:
 
@@ -199,7 +199,7 @@ Tiles the texture over the polyline. :ref:`CanvasItem.texture_repeat<class_Canva
 
 :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` **LINE_TEXTURE_STRETCH** = ``2``
 
-Stretches the texture across the polyline. :ref:`CanvasItem.texture_repeat<class_CanvasItem_property_texture_repeat>` of the **Line2D** node must be :ref:`CanvasItem.TEXTURE_REPEAT_DISABLED<class_CanvasItem_constant_TEXTURE_REPEAT_DISABLED>` for best results.
+沿该折线拉伸纹理。为了获得最佳效果，\ **Line2D** 节点的 :ref:`CanvasItem.texture_repeat<class_CanvasItem_property_texture_repeat>` 必须为 :ref:`CanvasItem.TEXTURE_REPEAT_DISABLED<class_CanvasItem_constant_TEXTURE_REPEAT_DISABLED>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -207,8 +207,8 @@ Stretches the texture across the polyline. :ref:`CanvasItem.texture_repeat<class
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Line2D_property_antialiased:
 
@@ -221,9 +221,9 @@ Property Descriptions
 - void **set_antialiased** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_antialiased** **(** **)**
 
-If ``true``, the polyline's border will be anti-aliased.
+如果为 ``true``\ ，则折线的边界将使用抗锯齿。
 
-\ **Note:** **Line2D** is not accelerated by batching when being anti-aliased.
+\ **注意：**\ **Line2D** 在使用抗锯齿时，不会通过批处理来加速。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ If ``true``, the polyline's border will be anti-aliased.
 - void **set_begin_cap_mode** **(** :ref:`LineCapMode<enum_Line2D_LineCapMode>` value **)**
 - :ref:`LineCapMode<enum_Line2D_LineCapMode>` **get_begin_cap_mode** **(** **)**
 
-The style of the beginning of the polyline, if :ref:`closed<class_Line2D_property_closed>` is ``false``. Use :ref:`LineCapMode<enum_Line2D_LineCapMode>` constants.
+:ref:`closed<class_Line2D_property_closed>` 为 ``false`` 时的折线开头样式。使用 :ref:`LineCapMode<enum_Line2D_LineCapMode>` 常量。
 
 .. rst-class:: classref-item-separator
 
@@ -257,11 +257,11 @@ The style of the beginning of the polyline, if :ref:`closed<class_Line2D_propert
 - void **set_closed** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_closed** **(** **)**
 
-If ``true`` and the polyline has more than 2 points, the last point and the first one will be connected by a segment.
+如果为 ``true`` 并且折线有超过2个点，则最后一个点和第一个点将通过线段连接。
 
-\ **Note:** The shape of the closing segment is not guaranteed to be seamless if a :ref:`width_curve<class_Line2D_property_width_curve>` is provided.
+\ **注意：**\ 如果提供了 :ref:`width_curve<class_Line2D_property_width_curve>`\ ，则不保证闭合线段的形状是无缝的。
 
-\ **Note:** The joint between the closing segment and the first segment is drawn first and it samples the :ref:`gradient<class_Line2D_property_gradient>` and the :ref:`width_curve<class_Line2D_property_width_curve>` at the beginning. This is an implementation detail that might change in a future version.
+\ **注意：**\ 首先绘制结束线段和第一条线段之间的连接点，并在开始时对 :ref:`gradient<class_Line2D_property_gradient>` 和 :ref:`width_curve<class_Line2D_property_width_curve>` 进行采样。这是在未来版本中可能会更改的实现细节。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ If ``true`` and the polyline has more than 2 points, the last point and the firs
 - void **set_default_color** **(** :ref:`Color<class_Color>` value **)**
 - :ref:`Color<class_Color>` **get_default_color** **(** **)**
 
-The color of the polyline. Will not be used if a gradient is set.
+折线的颜色。如果设置了渐变，则不会被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -295,7 +295,7 @@ The color of the polyline. Will not be used if a gradient is set.
 - void **set_end_cap_mode** **(** :ref:`LineCapMode<enum_Line2D_LineCapMode>` value **)**
 - :ref:`LineCapMode<enum_Line2D_LineCapMode>` **get_end_cap_mode** **(** **)**
 
-The style of the end of the polyline, if :ref:`closed<class_Line2D_property_closed>` is ``false``. Use :ref:`LineCapMode<enum_Line2D_LineCapMode>` constants.
+:ref:`closed<class_Line2D_property_closed>` 为 ``false`` 时的折线末端样式。使用 :ref:`LineCapMode<enum_Line2D_LineCapMode>` 常量。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ The style of the end of the polyline, if :ref:`closed<class_Line2D_property_clos
 - void **set_gradient** **(** :ref:`Gradient<class_Gradient>` value **)**
 - :ref:`Gradient<class_Gradient>` **get_gradient** **(** **)**
 
-The gradient is drawn through the whole line from start to finish. The :ref:`default_color<class_Line2D_property_default_color>` will not be used if this property is set.
+渐变是从头到尾贯穿整条线绘制的。如果该属性被设置，则 :ref:`default_color<class_Line2D_property_default_color>` 不会被使用。
 
 .. rst-class:: classref-item-separator
 
@@ -329,7 +329,7 @@ The gradient is drawn through the whole line from start to finish. The :ref:`def
 - void **set_joint_mode** **(** :ref:`LineJointMode<enum_Line2D_LineJointMode>` value **)**
 - :ref:`LineJointMode<enum_Line2D_LineJointMode>` **get_joint_mode** **(** **)**
 
-The style of the connections between segments of the polyline. Use :ref:`LineJointMode<enum_Line2D_LineJointMode>` constants.
+折线段之间的连接样式。使用 :ref:`LineJointMode<enum_Line2D_LineJointMode>` 常量。
 
 .. rst-class:: classref-item-separator
 
@@ -346,7 +346,7 @@ The style of the connections between segments of the polyline. Use :ref:`LineJoi
 - void **set_points** **(** :ref:`PackedVector2Array<class_PackedVector2Array>` value **)**
 - :ref:`PackedVector2Array<class_PackedVector2Array>` **get_points** **(** **)**
 
-The points of the polyline, interpreted in local 2D coordinates. Segments are drawn between the adjacent points in this array.
+折线的点，以局部 2D 坐标解释。在该数组中的相邻点之间绘制线段。
 
 .. rst-class:: classref-item-separator
 
@@ -363,7 +363,7 @@ The points of the polyline, interpreted in local 2D coordinates. Segments are dr
 - void **set_round_precision** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_round_precision** **(** **)**
 
-The smoothness used for rounded joints and caps. Higher values result in smoother corners, but are more demanding to render and update.
+用于圆形接头和端盖的光滑度。值越高，边角越平滑，但对渲染和更新的要求更高。
 
 .. rst-class:: classref-item-separator
 
@@ -380,7 +380,7 @@ The smoothness used for rounded joints and caps. Higher values result in smoothe
 - void **set_sharp_limit** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_sharp_limit** **(** **)**
 
-Determines the miter limit of the polyline. Normally, when :ref:`joint_mode<class_Line2D_property_joint_mode>` is set to :ref:`LINE_JOINT_SHARP<class_Line2D_constant_LINE_JOINT_SHARP>`, sharp angles fall back to using the logic of :ref:`LINE_JOINT_BEVEL<class_Line2D_constant_LINE_JOINT_BEVEL>` joints to prevent very long miters. Higher values of this property mean that the fallback to a bevel joint will happen at sharper angles.
+确定该折线的斜接限制。通常，当 :ref:`joint_mode<class_Line2D_property_joint_mode>` 被设置为 :ref:`LINE_JOINT_SHARP<class_Line2D_constant_LINE_JOINT_SHARP>` 时，锐角会回退到使用 :ref:`LINE_JOINT_BEVEL<class_Line2D_constant_LINE_JOINT_BEVEL>` 关节的逻辑来防止过长的斜接。该属性的值越高意味着倒角接头的回退将以更锐利的角度发生。
 
 .. rst-class:: classref-item-separator
 
@@ -397,7 +397,7 @@ Determines the miter limit of the polyline. Normally, when :ref:`joint_mode<clas
 - void **set_texture** **(** :ref:`Texture2D<class_Texture2D>` value **)**
 - :ref:`Texture2D<class_Texture2D>` **get_texture** **(** **)**
 
-The texture used for the polyline. Uses ``texture_mode`` for drawing style.
+用于折线的纹理。使用 :ref:`texture_mode<class_Line2D_property_texture_mode>` 作为绘图样式。
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +414,7 @@ The texture used for the polyline. Uses ``texture_mode`` for drawing style.
 - void **set_texture_mode** **(** :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` value **)**
 - :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` **get_texture_mode** **(** **)**
 
-The style to render the :ref:`texture<class_Line2D_property_texture>` of the polyline. Use :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` constants.
+渲染该折线的 :ref:`texture<class_Line2D_property_texture>` 的样式。使用 :ref:`LineTextureMode<enum_Line2D_LineTextureMode>` 常量。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ The style to render the :ref:`texture<class_Line2D_property_texture>` of the pol
 - void **set_width** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_width** **(** **)**
 
-The polyline's width.
+多边形的宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -448,7 +448,7 @@ The polyline's width.
 - void **set_curve** **(** :ref:`Curve<class_Curve>` value **)**
 - :ref:`Curve<class_Curve>` **get_curve** **(** **)**
 
-The polyline's width curve. The width of the polyline over its length will be equivalent to the value of the width curve over its domain.
+该折线的宽度曲线。该折线在其长度上的宽度将等于宽度曲线在其域上的值。
 
 .. rst-class:: classref-section-separator
 
@@ -456,8 +456,8 @@ The polyline's width curve. The width of the polyline over its length will be eq
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Line2D_method_add_point:
 
@@ -465,9 +465,9 @@ Method Descriptions
 
 void **add_point** **(** :ref:`Vector2<class_Vector2>` position, :ref:`int<class_int>` index=-1 **)**
 
-Adds a point with the specified ``position`` relative to the polyline's own position. If no ``index`` is provided, the new point will be added to the end of the points array.
+在指定的位置 ``position`` 添加一个点，该位置相对于该线段自身的位置。如果未提供 ``index``\ ，则新的点将被添加到点数组的末尾。
 
-If ``index`` is given, the new point is inserted before the existing point identified by index ``index``. The indices of the points after the new point get increased by 1. The provided ``index`` must not exceed the number of existing points in the polyline. See :ref:`get_point_count<class_Line2D_method_get_point_count>`.
+如果给出 ``index``\ ，则将新点插入到由索引 ``index`` 标识的已有点之前。该新点之后的点的索引增加 1。提供的 ``index`` 不得超过折线中已有点的数量。请参阅 :ref:`get_point_count<class_Line2D_method_get_point_count>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -479,7 +479,7 @@ If ``index`` is given, the new point is inserted before the existing point ident
 
 void **clear_points** **(** **)**
 
-Removes all points from the polyline, making it empty.
+从折线中移除所有点，使其为空。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +491,7 @@ Removes all points from the polyline, making it empty.
 
 :ref:`int<class_int>` **get_point_count** **(** **)** |const|
 
-Returns the number of points in the polyline.
+返回该折线中的点的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -515,7 +515,7 @@ Returns the number of points in the polyline.
 
 void **remove_point** **(** :ref:`int<class_int>` index **)**
 
-Removes the point at index ``index`` from the polyline.
+移除该折线中索引为 ``index`` 的点。
 
 .. rst-class:: classref-item-separator
 
@@ -527,12 +527,12 @@ Removes the point at index ``index`` from the polyline.
 
 void **set_point_position** **(** :ref:`int<class_int>` index, :ref:`Vector2<class_Vector2>` position **)**
 
-Overwrites the position of the point at the given ``index`` with the supplied ``position``.
+用提供的 ``position`` 覆盖给定索引 ``index`` 处的点的位置。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

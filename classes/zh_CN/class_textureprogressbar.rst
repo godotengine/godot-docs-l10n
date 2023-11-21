@@ -10,21 +10,21 @@
 TextureProgressBar
 ==================
 
-**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 基于纹理的进度条。适用于加载屏幕和生命或体力条。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 TextureProgressBar 的工作方式类似于 :ref:`ProgressBar<class_ProgressBar>`\ ，但最多使用 3 个纹理，不使用 Godot 的 :ref:`Theme<class_Theme>` 资源。可用于创建水平、垂直和径向进度条。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -71,8 +71,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -89,8 +89,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TextureProgressBar_FillMode:
 
@@ -176,8 +176,8 @@ enum **FillMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TextureProgressBar_property_fill_mode:
 
@@ -415,7 +415,7 @@ Property Descriptions
 - void **set_tint_over** **(** :ref:`Color<class_Color>` value **)**
 - :ref:`Color<class_Color>` **get_tint_over** **(** **)**
 
-将条形的 ``texture_over`` 纹理的颜色相乘。其效果类似于 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>` ，只是它只影响这个特定的纹理，而不是整个节点。
+将与该进度条的 :ref:`texture_over<class_TextureProgressBar_property_texture_over>` 纹理的颜色相乘。其效果类似于 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>` ，只是它只影响这个特定的纹理，而不是整个节点。
 
 .. rst-class:: classref-item-separator
 
@@ -432,7 +432,7 @@ Property Descriptions
 - void **set_tint_progress** **(** :ref:`Color<class_Color>` value **)**
 - :ref:`Color<class_Color>` **get_tint_progress** **(** **)**
 
-将条形的 ``texture_progress`` 纹理的颜色相乘。
+将与该进度条的 :ref:`texture_progress<class_TextureProgressBar_property_texture_progress>` 纹理的颜色相乘。
 
 .. rst-class:: classref-item-separator
 
@@ -449,7 +449,7 @@ Property Descriptions
 - void **set_tint_under** **(** :ref:`Color<class_Color>` value **)**
 - :ref:`Color<class_Color>` **get_tint_under** **(** **)**
 
-将条形的 ``texture_under`` 纹理的颜色相乘。
+将与该进度条的 :ref:`texture_under<class_TextureProgressBar_property_texture_under>` 纹理的颜色相乘。
 
 .. rst-class:: classref-section-separator
 
@@ -457,8 +457,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TextureProgressBar_method_get_stretch_margin:
 
@@ -480,10 +480,10 @@ void **set_stretch_margin** **(** :ref:`Side<enum_@GlobalScope_Side>` margin, :r
 
 设置给定索引的拉伸边距。见 :ref:`stretch_margin_bottom<class_TextureProgressBar_property_stretch_margin_bottom>` 及相关属性。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 MarginContainer
 ===============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 在子控件周围保留边距的容器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **MarginContainer** 会为子控件的各条边加上可调整的边距。是在所有子项周围添加边距，而不是在它们各自周围添加边距。要控制 **MarginContainer** 的边距，请使用下列 ``margin_*`` 主题属性。
 
@@ -48,15 +48,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -77,8 +77,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_MarginContainer_theme_constant_margin_bottom:
 
@@ -86,7 +86,7 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **margin_bottom** = ``0``
 
-所有 **MarginContainer** 的直接子节点将有 ``margin_bottom`` 像素的底边距。
+从底部向容器的内部直接子项偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +98,7 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **margin_left** = ``0``
 
-所有 **MarginContainer** 的直接子节点将有 ``margin_left`` 像素的左边距。
+从左侧向容器的内部直接子项偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -110,7 +110,7 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **margin_right** = ``0``
 
-所有 **MarginContainer** 的直接子节点将有 ``margin_right`` 像素的右边距。
+从右侧向容器的内部直接子项偏移一定量的像素。
 
 .. rst-class:: classref-item-separator
 
@@ -122,12 +122,12 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **margin_top** = ``0``
 
-所有 **MarginContainer** 的直接子节点将有 ``margin_top`` 像素的顶边距。
+从顶部向容器的内部直接子项偏移一定量的像素。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

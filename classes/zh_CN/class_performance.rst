@@ -10,14 +10,14 @@
 Performance
 ===========
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 公开与性能相关的数据。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该类提供对许多与性能相关的不同监视器的访问，例如内存使用情况、绘制调用、和 FPS。这些值与编辑器的\ **调试器**\ 面板中的\ **监视**\ 选项卡中显示的值相同。通过使用该类的 :ref:`get_monitor<class_Performance_method_get_monitor>` 方法，你可以从代码中访问该数据。
 
@@ -31,8 +31,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Performance_Monitor:
 
@@ -258,7 +258,7 @@ enum **Monitor**:
 
 :ref:`Monitor<enum_Performance_Monitor>` **AUDIO_OUTPUT_LATENCY** = ``23``
 
-Output latency of the :ref:`AudioServer<class_AudioServer>`. Equivalent to calling :ref:`AudioServer.get_output_latency<class_AudioServer_method_get_output_latency>`, it is not recommended to call this every frame.
+:ref:`AudioServer<class_AudioServer>` 的输出延迟。相当于调用 :ref:`AudioServer.get_output_latency<class_AudioServer_method_get_output_latency>`\ ，不建议每帧都调用该方法。
 
 .. _class_Performance_constant_NAVIGATION_ACTIVE_MAPS:
 
@@ -346,8 +346,8 @@ Output latency of the :ref:`AudioServer<class_AudioServer>`. Equivalent to calli
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Performance_method_add_custom_monitor:
 
@@ -500,10 +500,10 @@ void **remove_custom_monitor** **(** :ref:`StringName<class_StringName>` id **)*
 
 移除具有给定 ``id`` 的自定义监视器。如果给定的 ``id`` 已经不存在，则打印一个错误。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

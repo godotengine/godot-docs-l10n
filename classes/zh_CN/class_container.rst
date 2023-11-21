@@ -10,30 +10,30 @@
 Container
 =========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AspectRatioContainer<class_AspectRatioContainer>`, :ref:`BoxContainer<class_BoxContainer>`, :ref:`CenterContainer<class_CenterContainer>`, :ref:`EditorProperty<class_EditorProperty>`, :ref:`FlowContainer<class_FlowContainer>`, :ref:`GraphElement<class_GraphElement>`, :ref:`GridContainer<class_GridContainer>`, :ref:`MarginContainer<class_MarginContainer>`, :ref:`PanelContainer<class_PanelContainer>`, :ref:`ScrollContainer<class_ScrollContainer>`, :ref:`SplitContainer<class_SplitContainer>`, :ref:`SubViewportContainer<class_SubViewportContainer>`, :ref:`TabContainer<class_TabContainer>`
+**派生：** :ref:`AspectRatioContainer<class_AspectRatioContainer>`, :ref:`BoxContainer<class_BoxContainer>`, :ref:`CenterContainer<class_CenterContainer>`, :ref:`EditorProperty<class_EditorProperty>`, :ref:`FlowContainer<class_FlowContainer>`, :ref:`GraphElement<class_GraphElement>`, :ref:`GridContainer<class_GridContainer>`, :ref:`MarginContainer<class_MarginContainer>`, :ref:`PanelContainer<class_PanelContainer>`, :ref:`ScrollContainer<class_ScrollContainer>`, :ref:`SplitContainer<class_SplitContainer>`, :ref:`SubViewportContainer<class_SubViewportContainer>`, :ref:`TabContainer<class_TabContainer>`
 
 所有 GUI 容器的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 所有 GUI 容器的基础节点。\ **Container** 包含其他控件，并自动以某种方式排列它们。可以继承此类来生成自定义的容器类。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -44,16 +44,16 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedInt32Array<class_PackedInt32Array>` | :ref:`_get_allowed_size_flags_horizontal<class_Container_method__get_allowed_size_flags_horizontal>` **(** **)** |virtual| |const|                 |
+   | :ref:`PackedInt32Array<class_PackedInt32Array>` | :ref:`_get_allowed_size_flags_horizontal<class_Container_private_method__get_allowed_size_flags_horizontal>` **(** **)** |virtual| |const|         |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedInt32Array<class_PackedInt32Array>` | :ref:`_get_allowed_size_flags_vertical<class_Container_method__get_allowed_size_flags_vertical>` **(** **)** |virtual| |const|                     |
+   | :ref:`PackedInt32Array<class_PackedInt32Array>` | :ref:`_get_allowed_size_flags_vertical<class_Container_private_method__get_allowed_size_flags_vertical>` **(** **)** |virtual| |const|             |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                            | :ref:`fit_child_in_rect<class_Container_method_fit_child_in_rect>` **(** :ref:`Control<class_Control>` child, :ref:`Rect2<class_Rect2>` rect **)** |
    +-------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -66,8 +66,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Container_signal_pre_sort_children:
 
@@ -95,8 +95,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Container_constant_NOTIFICATION_PRE_SORT_CHILDREN:
 
@@ -120,10 +120,10 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Container_method__get_allowed_size_flags_horizontal:
+.. _class_Container_private_method__get_allowed_size_flags_horizontal:
 
 .. rst-class:: classref-method
 
@@ -137,7 +137,7 @@ Method Descriptions
 
 ----
 
-.. _class_Container_method__get_allowed_size_flags_vertical:
+.. _class_Container_private_method__get_allowed_size_flags_vertical:
 
 .. rst-class:: classref-method
 
@@ -171,10 +171,10 @@ void **queue_sort** **(** **)**
 
 将子节点的重排加入队列。虽然会被自动调用，但也可以在需要时手动调用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

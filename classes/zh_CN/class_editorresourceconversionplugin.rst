@@ -10,14 +10,14 @@
 EditorResourceConversionPlugin
 ==============================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于在编辑器资源选择器的上下文菜单中添加从一种资源格式到另一种资源格式的自定义转换器的插件；例如，将 :ref:`StandardMaterial3D<class_StandardMaterial3D>` 转换为 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 当编辑器检查器中的资源被调出上下文菜单时，\ **EditorResourceConversionPlugin** 被调用。相关的转换插件将作为菜单选项出现，以将给定的资源转换为目标类型。
 
@@ -47,19 +47,19 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Resource<class_Resource>` | :ref:`_convert<class_EditorResourceConversionPlugin_method__convert>` **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const| |
-   +---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`     | :ref:`_converts_to<class_EditorResourceConversionPlugin_method__converts_to>` **(** **)** |virtual| |const|                                  |
-   +---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`         | :ref:`_handles<class_EditorResourceConversionPlugin_method__handles>` **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const| |
-   +---------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Resource<class_Resource>` | :ref:`_convert<class_EditorResourceConversionPlugin_private_method__convert>` **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const| |
+   +---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`     | :ref:`_converts_to<class_EditorResourceConversionPlugin_private_method__converts_to>` **(** **)** |virtual| |const|                                  |
+   +---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`         | :ref:`_handles<class_EditorResourceConversionPlugin_private_method__handles>` **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const| |
+   +---------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -67,22 +67,22 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EditorResourceConversionPlugin_method__convert:
+.. _class_EditorResourceConversionPlugin_private_method__convert:
 
 .. rst-class:: classref-method
 
 :ref:`Resource<class_Resource>` **_convert** **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const|
 
-获取输入 :ref:`Resource<class_Resource>` 并将其转换为 :ref:`_converts_to<class_EditorResourceConversionPlugin_method__converts_to>` 中给定的类型。返回的 :ref:`Resource<class_Resource>` 是转换后的结果，输入的 :ref:`Resource<class_Resource>` 保持不变。
+获取输入 :ref:`Resource<class_Resource>` 并将其转换为 :ref:`_converts_to<class_EditorResourceConversionPlugin_private_method__converts_to>` 中给定的类型。返回的 :ref:`Resource<class_Resource>` 是转换后的结果，输入的 :ref:`Resource<class_Resource>` 保持不变。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_EditorResourceConversionPlugin_method__converts_to:
+.. _class_EditorResourceConversionPlugin_private_method__converts_to:
 
 .. rst-class:: classref-method
 
@@ -94,7 +94,7 @@ Method Descriptions
 
 ----
 
-.. _class_EditorResourceConversionPlugin_method__handles:
+.. _class_EditorResourceConversionPlugin_private_method__handles:
 
 .. rst-class:: classref-method
 
@@ -102,10 +102,10 @@ Method Descriptions
 
 调用以确定特定 :ref:`Resource<class_Resource>` 是否可以通过该插件转换为目标资源类型。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

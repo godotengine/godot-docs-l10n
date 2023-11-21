@@ -10,16 +10,16 @@
 Button
 ======
 
-**Inherits:** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CheckBox<class_CheckBox>`, :ref:`CheckButton<class_CheckButton>`, :ref:`ColorPickerButton<class_ColorPickerButton>`, :ref:`MenuButton<class_MenuButton>`, :ref:`OptionButton<class_OptionButton>`
+**派生：** :ref:`CheckBox<class_CheckBox>`, :ref:`CheckButton<class_CheckButton>`, :ref:`ColorPickerButton<class_ColorPickerButton>`, :ref:`MenuButton<class_MenuButton>`, :ref:`OptionButton<class_OptionButton>`
 
 按钮，支持主题，能够包含文本和图标。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **Button** 是标准的主题按钮，可以包含文字和图标，显示样式会根据当前的 :ref:`Theme<class_Theme>` 改变。
 
@@ -62,8 +62,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `2D Dodge The Creeps 演示 <https://godotengine.org/asset-library/asset/515>`__
 
@@ -71,8 +71,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -103,59 +103,73 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
 
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_color<class_Button_theme_color_font_color>`                             | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_disabled_color<class_Button_theme_color_font_disabled_color>`           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_focus_color<class_Button_theme_color_font_focus_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_hover_color<class_Button_theme_color_font_hover_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_hover_pressed_color<class_Button_theme_color_font_hover_pressed_color>` | ``Color(1, 1, 1, 1)``               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_outline_color<class_Button_theme_color_font_outline_color>`             | ``Color(1, 1, 1, 1)``               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`font_pressed_color<class_Button_theme_color_font_pressed_color>`             | ``Color(1, 1, 1, 1)``               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`icon_disabled_color<class_Button_theme_color_icon_disabled_color>`           | ``Color(1, 1, 1, 0.4)``             |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`icon_focus_color<class_Button_theme_color_icon_focus_color>`                 | ``Color(1, 1, 1, 1)``               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`icon_hover_color<class_Button_theme_color_icon_hover_color>`                 | ``Color(1, 1, 1, 1)``               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`icon_hover_pressed_color<class_Button_theme_color_icon_hover_pressed_color>` | ``Color(1, 1, 1, 1)``               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`icon_normal_color<class_Button_theme_color_icon_normal_color>`               | ``Color(1, 1, 1, 1)``               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`       | :ref:`icon_pressed_color<class_Button_theme_color_icon_pressed_color>`             | ``Color(1, 1, 1, 1)``               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`           | :ref:`h_separation<class_Button_theme_constant_h_separation>`                      | ``4``                               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`           | :ref:`icon_max_width<class_Button_theme_constant_icon_max_width>`                  | ``0``                               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`           | :ref:`outline_size<class_Button_theme_constant_outline_size>`                      | ``0``                               |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Font<class_Font>`         | :ref:`font<class_Button_theme_font_font>`                                          |                                     |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`           | :ref:`font_size<class_Button_theme_font_size_font_size>`                           |                                     |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>` | :ref:`disabled<class_Button_theme_style_disabled>`                                 |                                     |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>` | :ref:`focus<class_Button_theme_style_focus>`                                       |                                     |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>` | :ref:`hover<class_Button_theme_style_hover>`                                       |                                     |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>` | :ref:`normal<class_Button_theme_style_normal>`                                     |                                     |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>` | :ref:`pressed<class_Button_theme_style_pressed>`                                   |                                     |
-   +---------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`font_color<class_Button_theme_color_font_color>`                             | ``Color(0.875, 0.875, 0.875, 1)``   |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`font_disabled_color<class_Button_theme_color_font_disabled_color>`           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`font_focus_color<class_Button_theme_color_font_focus_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`font_hover_color<class_Button_theme_color_font_hover_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``      |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`font_hover_pressed_color<class_Button_theme_color_font_hover_pressed_color>` | ``Color(1, 1, 1, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`font_outline_color<class_Button_theme_color_font_outline_color>`             | ``Color(1, 1, 1, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`font_pressed_color<class_Button_theme_color_font_pressed_color>`             | ``Color(1, 1, 1, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`icon_disabled_color<class_Button_theme_color_icon_disabled_color>`           | ``Color(1, 1, 1, 0.4)``             |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`icon_focus_color<class_Button_theme_color_icon_focus_color>`                 | ``Color(1, 1, 1, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`icon_hover_color<class_Button_theme_color_icon_hover_color>`                 | ``Color(1, 1, 1, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`icon_hover_pressed_color<class_Button_theme_color_icon_hover_pressed_color>` | ``Color(1, 1, 1, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`icon_normal_color<class_Button_theme_color_icon_normal_color>`               | ``Color(1, 1, 1, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Color<class_Color>`         | :ref:`icon_pressed_color<class_Button_theme_color_icon_pressed_color>`             | ``Color(1, 1, 1, 1)``               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`             | :ref:`h_separation<class_Button_theme_constant_h_separation>`                      | ``4``                               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`             | :ref:`icon_max_width<class_Button_theme_constant_icon_max_width>`                  | ``0``                               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`             | :ref:`outline_size<class_Button_theme_constant_outline_size>`                      | ``0``                               |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Font<class_Font>`           | :ref:`font<class_Button_theme_font_font>`                                          |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`int<class_int>`             | :ref:`font_size<class_Button_theme_font_size_font_size>`                           |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`icon<class_Button_theme_icon_icon>`                                          |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`disabled<class_Button_theme_style_disabled>`                                 |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`disabled_mirrored<class_Button_theme_style_disabled_mirrored>`               |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_Button_theme_style_focus>`                                       |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`hover<class_Button_theme_style_hover>`                                       |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`hover_mirrored<class_Button_theme_style_hover_mirrored>`                     |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`hover_pressed<class_Button_theme_style_hover_pressed>`                       |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`hover_pressed_mirrored<class_Button_theme_style_hover_pressed_mirrored>`     |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`normal<class_Button_theme_style_normal>`                                     |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`normal_mirrored<class_Button_theme_style_normal_mirrored>`                   |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`pressed<class_Button_theme_style_pressed>`                                   |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`pressed_mirrored<class_Button_theme_style_pressed_mirrored>`                 |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -163,8 +177,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Button_property_alignment:
 
@@ -357,8 +371,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_Button_theme_color_font_color:
 
@@ -578,6 +592,18 @@ Theme Property Descriptions
 
 ----
 
+.. _class_Button_theme_icon_icon:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **icon**
+
+该 **Button** 的默认图标。仅在未指定 :ref:`icon<class_Button_property_icon>` 时显示。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Button_theme_style_disabled:
 
 .. rst-class:: classref-themeproperty
@@ -590,13 +616,25 @@ Theme Property Descriptions
 
 ----
 
+.. _class_Button_theme_style_disabled_mirrored:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **disabled_mirrored**
+
+该 **Button** 处于禁用状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Button_theme_style_focus:
 
 .. rst-class:: classref-themeproperty
 
 :ref:`StyleBox<class_StyleBox>` **focus**
 
-该 **Button** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ ``focus`` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+该 **Button** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`focus<class_Button_theme_style_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
 
 .. rst-class:: classref-item-separator
 
@@ -614,6 +652,42 @@ Theme Property Descriptions
 
 ----
 
+.. _class_Button_theme_style_hover_mirrored:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **hover_mirrored**
+
+该 **Button** 处于悬停状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Button_theme_style_hover_pressed:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **hover_pressed**
+
+该 **Button** 同时处于按下和悬停状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Button_theme_style_hover_pressed_mirrored:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **hover_pressed_mirrored**
+
+该 **Button** 同时处于按下和悬停状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Button_theme_style_normal:
 
 .. rst-class:: classref-themeproperty
@@ -621,6 +695,18 @@ Theme Property Descriptions
 :ref:`StyleBox<class_StyleBox>` **normal**
 
 该 **Button** 的默认 :ref:`StyleBox<class_StyleBox>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Button_theme_style_normal_mirrored:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **normal_mirrored**
+
+该 **Button** 的默认 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
 
 .. rst-class:: classref-item-separator
 
@@ -634,10 +720,22 @@ Theme Property Descriptions
 
 该 **Button** 处于按下状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Button_theme_style_pressed_mirrored:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **pressed_mirrored**
+
+该 **Button** 处于按下状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

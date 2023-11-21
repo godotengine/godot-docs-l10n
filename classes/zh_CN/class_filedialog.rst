@@ -10,21 +10,21 @@
 FileDialog
 ==========
 
-**Inherits:** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`ConfirmationDialog<class_ConfirmationDialog>` **<** :ref:`AcceptDialog<class_AcceptDialog>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于选择文件系统中的文件或目录的对话框。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **FileDialog** 是用来选择文件系统中文件和目录的预设对话框。支持过滤器掩码。\ **FileDialog** 会根据 :ref:`file_mode<class_FileDialog_property_file_mode>` 自动设置窗口的标题。如果你想使用自定义标题，请将 :ref:`mode_overrides_title<class_FileDialog_property_mode_overrides_title>` 设置为 ``false``\ ，禁用此功能。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -79,8 +79,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -113,8 +113,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_FileDialog_signal_dir_selected:
 
@@ -154,8 +154,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_FileDialog_FileMode:
 
@@ -243,8 +243,8 @@ enum **Access**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_FileDialog_property_access:
 
@@ -412,9 +412,9 @@ Property Descriptions
 - void **set_use_native_dialog** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_use_native_dialog** **(** **)**
 
-If ``true``, :ref:`access<class_FileDialog_property_access>` is set to :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`, and it is supported by the current :ref:`DisplayServer<class_DisplayServer>`, OS native dialog will be used instead of custom one.
+如果为 ``true``\ ，\ :ref:`access<class_FileDialog_property_access>` 被设置为\ :ref:`ACCESS_FILESYSTEM<class_FileDialog_constant_ACCESS_FILESYSTEM>`\ ，并且它被当前的 :ref:`DisplayServer<class_DisplayServer>` 支持，则将使用操作系统原生对话框而不是自定义对话框。
 
-\ **Note:** On macOS, sandboxed apps always use native dialogs to access host filesystem.
+\ **注意：**\ 在 macOS 上，沙盒应用程序始终使用原生对话框来访问主机文件系统。
 
 .. rst-class:: classref-section-separator
 
@@ -422,8 +422,8 @@ If ``true``, :ref:`access<class_FileDialog_property_access>` is set to :ref:`ACC
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_FileDialog_method_add_filter:
 
@@ -507,8 +507,8 @@ void **invalidate** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_FileDialog_theme_color_file_disabled_color:
 
@@ -626,10 +626,10 @@ Theme Property Descriptions
 
 切换隐藏按钮的自定义图标。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,32 +10,32 @@
 ResourceImporterOggVorbis
 =========================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports an Ogg Vorbis audio file for playback.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Ogg Vorbis is a lossy audio format, with better audio quality compared to :ref:`ResourceImporterMP3<class_ResourceImporterMP3>` at a given bitrate.
-
-In most cases, it's recommended to use Ogg Vorbis over MP3. However, if you're using a MP3 sound source with no higher quality source available, then it's recommended to use the MP3 file directly to avoid double lossy compression.
-
-Ogg Vorbis requires more CPU to decode than :ref:`ResourceImporterWAV<class_ResourceImporterWAV>`. If you need to play a lot of simultaneous sounds, it's recommended to use WAV for those sounds instead, especially if targeting low-end devices.
+导入 Ogg Vorbis 音频文件进行播放。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- :doc:`Importing audio samples <../tutorials/assets_pipeline/importing_audio_samples>`
+Ogg Vorbis 是一种有损音频格式，在给定比特率下，与 :ref:`ResourceImporterMP3<class_ResourceImporterMP3>` 相比具有更好的音频质量。
+
+在大多数情况下，建议使用 Ogg Vorbis 而不是 MP3。但是，如果你使用的 MP3 音源没有更高质量的可用音源，则建议直接使用 MP3 文件以避免两次有损压缩。
+
+Ogg Vorbis 比 :ref:`ResourceImporterWAV<class_ResourceImporterWAV>` 需要更多的 CPU 来解码。如果你需要同时播放很多声音，建议对这些声音使用 WAV，特别是针对低端设备。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`导入音频样本 <../tutorials/assets_pipeline/importing_audio_samples>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ResourceImporterOggVorbis_property_bar_beats:
 
@@ -81,9 +81,9 @@ Property Descriptions
 
 :ref:`int<class_int>` **bar_beats** = ``4``
 
-The number of bars within a single beat in the audio track. This is only relevant for music that wishes to make use of interactive music functionality (not implemented yet), not sound effects.
+音轨中单个节拍内的小节数。这仅与希望利用交互式音乐功能（尚未实现）的音乐相关，与声音效果无关。
 
-A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+\ **高级导入设置**\ 对话框中为 :ref:`bar_beats<class_ResourceImporterOggVorbis_property_bar_beats>` 提供了更方便的编辑器，因为它可以让你预览更改，且无需重新导入音频。
 
 .. rst-class:: classref-item-separator
 
@@ -95,9 +95,9 @@ A more convenient editor for :ref:`bar_beats<class_ResourceImporterOggVorbis_pro
 
 :ref:`int<class_int>` **beat_count** = ``0``
 
-The beat count of the audio track. This is only relevant for music that wishes to make use of interactive music functionality (not implemented yet), not sound effects.
+该音轨的节拍数。这仅与希望利用交互式音乐功能（尚未实现）的音乐相关，与声音效果无关。
 
-A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+\ **高级导入设置**\ 对话框中为 :ref:`beat_count<class_ResourceImporterOggVorbis_property_beat_count>` 提供了更方便的编辑器，因为它可以让你预览更改，且无需重新导入音频。
 
 .. rst-class:: classref-item-separator
 
@@ -109,9 +109,9 @@ A more convenient editor for :ref:`beat_count<class_ResourceImporterOggVorbis_pr
 
 :ref:`float<class_float>` **bpm** = ``0``
 
-The Beats Per Minute of the audio track. This should match the BPM measure that was used to compose the track. This is only relevant for music that wishes to make use of interactive music functionality (not implemented yet), not sound effects.
+音轨的每分钟节拍数。这应该与用于创作曲目的 BPM 测量相匹配。这仅与希望利用交互式音乐功能（尚未实现）的音乐相关，与声音效果无关。
 
-A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+\ **高级导入设置**\ 对话框中为 :ref:`bpm<class_ResourceImporterOggVorbis_property_bpm>` 提供了更方便的编辑器，因为它可以让你预览更改，且无需重新导入音频。
 
 .. rst-class:: classref-item-separator
 
@@ -123,9 +123,9 @@ A more convenient editor for :ref:`bpm<class_ResourceImporterOggVorbis_property_
 
 :ref:`bool<class_bool>` **loop** = ``false``
 
-If enabled, the audio will begin playing at the beginning after playback ends by reaching the end of the audio.
+如果启用，音频将在播放因到达音频末尾而结束后从头开始播放。
 
-\ **Note:** In :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, the :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` signal won't be emitted for looping audio when it reaches the end of the audio file, as the audio will keep playing indefinitely.
+\ **注意：**\ 在 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 中，当循环音频到达音频文件末尾时，不会发出 :ref:`AudioStreamPlayer.finished<class_AudioStreamPlayer_signal_finished>` 信号，因为音频将无限期地继续播放。
 
 .. rst-class:: classref-item-separator
 
@@ -137,11 +137,11 @@ If enabled, the audio will begin playing at the beginning after playback ends by
 
 :ref:`float<class_float>` **loop_offset** = ``0``
 
-Determines where audio will start to loop after playback reaches the end of the audio. This can be used to only loop a part of the audio file, which is useful for some ambient sounds or music. The value is determined in seconds relative to the beginning of the audio. A value of ``0.0`` will loop the entire audio file.
+确定播放到达音频结尾后音频将开始循环的位置。这可用于仅循环音频文件的一部分，这对于某些环境音或音乐很有用。该值以相对于音频开头的秒数确定。值为 ``0.0`` 将循环整个音频文件。
 
-Only has an effect if :ref:`loop<class_ResourceImporterOggVorbis_property_loop>` is ``true``.
+仅当 :ref:`loop<class_ResourceImporterOggVorbis_property_loop>` 为 ``true`` 时才有效。
 
-A more convenient editor for :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>` is provided in the **Advanced Import Settings** dialog, as it lets you preview your changes without having to reimport the audio.
+\ **高级导入设置**\ 对话框中为 :ref:`loop_offset<class_ResourceImporterOggVorbis_property_loop_offset>` 提供了更方便的编辑器，因为它可以让你预览更改，且无需重新导入音频。
 
 .. rst-class:: classref-section-separator
 
@@ -149,8 +149,8 @@ A more convenient editor for :ref:`loop_offset<class_ResourceImporterOggVorbis_p
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ResourceImporterOggVorbis_method_load_from_buffer:
 
@@ -158,7 +158,7 @@ Method Descriptions
 
 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` **load_from_buffer** **(** :ref:`PackedByteArray<class_PackedByteArray>` buffer **)** |static|
 
-This method loads audio data from a PackedByteArray buffer into an AudioStreamOggVorbis object.
+该方法将音频数据从 PackedByteArray 缓冲区加载到 AudioStreamOggVorbis 对象中。
 
 .. rst-class:: classref-item-separator
 
@@ -170,12 +170,12 @@ This method loads audio data from a PackedByteArray buffer into an AudioStreamOg
 
 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` **load_from_file** **(** :ref:`String<class_String>` path **)** |static|
 
-This method loads audio data from a file into an AudioStreamOggVorbis object. The file path is provided as a string.
+该方法将音频数据从文件加载到 AudioStreamOggVorbis 对象中。文件路径以字符串形式提供。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

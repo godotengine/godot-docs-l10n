@@ -10,25 +10,25 @@
 EditorExportPlatformAndroid
 ===========================
 
-**Inherits:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 适用于 Android 的导出器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`为 Android 导出 <../tutorials/export/exporting_for_android>`
 
-- :doc:`适用于 Android 的自定义构建 <../tutorials/export/android_custom_build>`
+- :doc:`适用于 Android 的 Gradle 构建 <../tutorials/export/android_gradle_build>`
 
-- :doc:`Android plugins documentation index <../tutorials/platform/index>`
+- :doc:`Android 插件文档索引 <../tutorials/platform/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -419,8 +419,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorExportPlatformAndroid_property_apk_expansion/SALT:
 
@@ -784,7 +784,7 @@ Play 商店的应用程序类别。
 
 :ref:`bool<class_bool>` **package/show_as_launcher_app**
 
-If ``true``, the user will be able to set this app as the system launcher in Android preferences.
+如果为 ``true``\ ，用户将能够在 Android 首选项中将该应用程序设置为系统启动器。
 
 .. rst-class:: classref-item-separator
 
@@ -796,7 +796,7 @@ If ``true``, the user will be able to set this app as the system launcher in And
 
 :ref:`bool<class_bool>` **package/show_in_android_tv**
 
-If ``true``, this app will show in Android TV launcher UI.
+如果为 ``true``\ ，该应用将显示在 Android TV 启动器 UI 中。
 
 .. rst-class:: classref-item-separator
 
@@ -808,9 +808,9 @@ If ``true``, this app will show in Android TV launcher UI.
 
 :ref:`bool<class_bool>` **package/show_in_app_library**
 
-If ``true``, this app will show in the device's app library.
+如果为 ``true``\ ，则该应用程序将显示在设备的应用程序库中。
 
-\ **Note:** This is ``true`` by default.
+\ **注意：**\ 默认情况下为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -978,7 +978,7 @@ If ``true``, this app will show in the device's app library.
 
 :ref:`bool<class_bool>` **permissions/battery_stats**
 
-Allows an application to collect battery statistics. See `BATTERY_STATS <https://developer.android.com/reference/android/Manifest.permission#BATTERY_STATS>`__.
+允许应用程序收集电池统计信息。见 `BATTERY_STATS <https://developer.android.com/reference/android/Manifest.permission#BATTERY_STATS>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2688,7 +2688,7 @@ API 级别 15 中废弃。
 
 :ref:`int<class_int>` **version/code**
 
-Machine-readable application version. This must be incremented for every new release pushed to the Play Store.
+机器可读的应用程序版本。每向 Play Store 推送一个新版本，该版本都必须递增。
 
 .. rst-class:: classref-item-separator
 
@@ -2700,7 +2700,7 @@ Machine-readable application version. This must be incremented for every new rel
 
 :ref:`String<class_String>` **version/name**
 
-Application version visible to the user. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
+用户可见的应用程序版本。如果留空，则将回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2714,12 +2714,12 @@ Application version visible to the user. Falls back to :ref:`ProjectSettings.app
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 EditorFeatureProfile
 ====================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 编辑器功能配置，可用于禁用特定功能。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 编辑器功能配置可以用来禁用 Godot 编辑器的特定功能。当禁用时，这些功能将不会出现在编辑器中，从而使编辑器不那么混乱。这个设置使编辑器更简洁，在团队中工作时。例如，游戏美术和关卡设计师可以使用禁用脚本编辑器的功能配置，以避免意外地对他们不应该编辑的文件进行更改。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_EditorFeatureProfile_Feature:
 
@@ -148,8 +148,8 @@ AssetLib 选项卡。如果禁用此功能，则不会显示 AssetLib 选项卡�
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorFeatureProfile_method_get_feature_name:
 
@@ -217,9 +217,9 @@ Method Descriptions
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_from_file** **(** :ref:`String<class_String>` path **)**
 
-Loads an editor feature profile from a file. The file must follow the JSON format obtained by using the feature profile manager's **Export** button or the :ref:`save_to_file<class_EditorFeatureProfile_method_save_to_file>` method.
+从文件加载编辑器功能配置文件。该文件必须遵循使用功能配置文件管理器的\ **导出**\ 按钮或 :ref:`save_to_file<class_EditorFeatureProfile_method_save_to_file>` 方法获取的 JSON 格式。
 
-\ **Note:** Feature profiles created via the user interface are loaded from the ``feature_profiles`` directory, as a file with the ``.profile`` extension. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir<class_EditorPaths_method_get_config_dir>`.
+\ **注意：**\ 通过用户界面创建的功能配置文件将从 ``feature_profiles`` 目录中的扩展名为 ``.profile`` 的文件加载。可以使用 :ref:`EditorPaths.get_config_dir<class_EditorPaths_method_get_config_dir>` 找到编辑器配置文件夹。
 
 .. rst-class:: classref-item-separator
 
@@ -231,9 +231,9 @@ Loads an editor feature profile from a file. The file must follow the JSON forma
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_to_file** **(** :ref:`String<class_String>` path **)**
 
-Saves the editor feature profile to a file in JSON format. It can then be imported using the feature profile manager's **Import** button or the :ref:`load_from_file<class_EditorFeatureProfile_method_load_from_file>` method.
+将编辑器功能配置文件保存到一个 JSON 格式的文件中。然后可以使用功能配置文件管理器的\ **导入**\ 按钮或 :ref:`load_from_file<class_EditorFeatureProfile_method_load_from_file>` 方法导入它。
 
-\ **Note:** Feature profiles created via the user interface are saved in the ``feature_profiles`` directory, as a file with the ``.profile`` extension. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir<class_EditorPaths_method_get_config_dir>`.
+\ **注意：**\ 通过用户界面创建的功能配置文件，将作为扩展名为 ``.profile`` 的文件，保存在 ``feature_profiles`` 目录中。可以使用 :ref:`EditorPaths.get_config_dir<class_EditorPaths_method_get_config_dir>` 找到编辑器配置文件夹。
 
 .. rst-class:: classref-item-separator
 
@@ -283,10 +283,10 @@ void **set_disable_feature** **(** :ref:`Feature<enum_EditorFeatureProfile_Featu
 
 如果 ``disable`` 为 ``true``\ ，则禁用 ``feature`` 中指定的编辑器功能。当一个功能被禁用时，它将从编辑器中完全消失。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

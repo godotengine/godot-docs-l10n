@@ -10,25 +10,27 @@
 ParticleProcessMaterial
 =======================
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Holds a particle configuration for :ref:`GPUParticles2D<class_GPUParticles2D>` or :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
+保存用于 :ref:`GPUParticles2D<class_GPUParticles2D>` 或 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的粒子配置。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**ParticleProcessMaterial** defines particle properties and behavior. It is used in the ``process_material`` of the :ref:`GPUParticles2D<class_GPUParticles2D>` and :ref:`GPUParticles3D<class_GPUParticles3D>` nodes. Some of this material's properties are applied to each particle when emitted, while others can have a :ref:`CurveTexture<class_CurveTexture>` or a :ref:`GradientTexture1D<class_GradientTexture1D>` applied to vary numerical or color values over the lifetime of the particle.
+**ParticleProcessMaterial** 定义了粒子的属性和行为。\ :ref:`GPUParticles3D<class_GPUParticles3D>` 和 :ref:`GPUParticles2D<class_GPUParticles2D>` 节点的 ``process_material`` 会使用这种材质。这种材质的有些属性是在粒子发射时应用的，有些则会应用 :ref:`CurveTexture<class_CurveTexture>` 或 :ref:`GradientTexture1D<class_GradientTexture1D>` 让数值或颜色值在粒子的生命周期中不断变化。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`alpha_curve<class_ParticleProcessMaterial_property_alpha_curve>`                                                 |                         |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`angle_curve<class_ParticleProcessMaterial_property_angle_curve>`                                                 |                         |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
@@ -78,9 +80,17 @@ Properties
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`Vector3<class_Vector3>`                                      | :ref:`direction<class_ParticleProcessMaterial_property_direction>`                                                     | ``Vector3(1, 0, 0)``    |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`directional_velocity_curve<class_ParticleProcessMaterial_property_directional_velocity_curve>`                   |                         |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`float<class_float>`                                          | :ref:`directional_velocity_max<class_ParticleProcessMaterial_property_directional_velocity_max>`                       |                         |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`float<class_float>`                                          | :ref:`directional_velocity_min<class_ParticleProcessMaterial_property_directional_velocity_min>`                       |                         |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`Vector3<class_Vector3>`                                      | :ref:`emission_box_extents<class_ParticleProcessMaterial_property_emission_box_extents>`                               |                         |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>`                           |                         |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`emission_curve<class_ParticleProcessMaterial_property_emission_curve>`                                           |                         |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`emission_normal_texture<class_ParticleProcessMaterial_property_emission_normal_texture>`                         |                         |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
@@ -98,6 +108,10 @@ Properties
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`EmissionShape<enum_ParticleProcessMaterial_EmissionShape>`   | :ref:`emission_shape<class_ParticleProcessMaterial_property_emission_shape>`                                           | ``0``                   |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Vector3<class_Vector3>`                                      | :ref:`emission_shape_offset<class_ParticleProcessMaterial_property_emission_shape_offset>`                             | ``Vector3(0, 0, 0)``    |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Vector3<class_Vector3>`                                      | :ref:`emission_shape_scale<class_ParticleProcessMaterial_property_emission_shape_scale>`                               | ``Vector3(1, 1, 1)``    |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`emission_sphere_radius<class_ParticleProcessMaterial_property_emission_sphere_radius>`                           |                         |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`flatness<class_ParticleProcessMaterial_property_flatness>`                                                       | ``0.0``                 |
@@ -109,6 +123,8 @@ Properties
    | :ref:`float<class_float>`                                          | :ref:`hue_variation_max<class_ParticleProcessMaterial_property_hue_variation_max>`                                     | ``0.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`hue_variation_min<class_ParticleProcessMaterial_property_hue_variation_min>`                                     | ``0.0``                 |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`float<class_float>`                                          | :ref:`inherit_velocity_ratio<class_ParticleProcessMaterial_property_inherit_velocity_ratio>`                           | ``0.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`initial_velocity_max<class_ParticleProcessMaterial_property_initial_velocity_max>`                               | ``0.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
@@ -124,11 +140,13 @@ Properties
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`orbit_velocity_curve<class_ParticleProcessMaterial_property_orbit_velocity_curve>`                               |                         |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
-   | :ref:`float<class_float>`                                          | :ref:`orbit_velocity_max<class_ParticleProcessMaterial_property_orbit_velocity_max>`                                   |                         |
+   | :ref:`float<class_float>`                                          | :ref:`orbit_velocity_max<class_ParticleProcessMaterial_property_orbit_velocity_max>`                                   | ``0.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
-   | :ref:`float<class_float>`                                          | :ref:`orbit_velocity_min<class_ParticleProcessMaterial_property_orbit_velocity_min>`                                   |                         |
+   | :ref:`float<class_float>`                                          | :ref:`orbit_velocity_min<class_ParticleProcessMaterial_property_orbit_velocity_min>`                                   | ``0.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`bool<class_bool>`                                            | :ref:`particle_flag_align_y<class_ParticleProcessMaterial_property_particle_flag_align_y>`                             | ``false``               |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`bool<class_bool>`                                            | :ref:`particle_flag_damping_as_friction<class_ParticleProcessMaterial_property_particle_flag_damping_as_friction>`     | ``false``               |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`bool<class_bool>`                                            | :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>`                         | ``false``               |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
@@ -140,11 +158,23 @@ Properties
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`radial_accel_min<class_ParticleProcessMaterial_property_radial_accel_min>`                                       | ``0.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`radial_velocity_curve<class_ParticleProcessMaterial_property_radial_velocity_curve>`                             |                         |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`float<class_float>`                                          | :ref:`radial_velocity_max<class_ParticleProcessMaterial_property_radial_velocity_max>`                                 | ``0.0``                 |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`float<class_float>`                                          | :ref:`radial_velocity_min<class_ParticleProcessMaterial_property_radial_velocity_min>`                                 | ``0.0``                 |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`scale_curve<class_ParticleProcessMaterial_property_scale_curve>`                                                 |                         |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`scale_max<class_ParticleProcessMaterial_property_scale_max>`                                                     | ``1.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`scale_min<class_ParticleProcessMaterial_property_scale_min>`                                                     | ``1.0``                 |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`scale_over_velocity_curve<class_ParticleProcessMaterial_property_scale_over_velocity_curve>`                     |                         |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`float<class_float>`                                          | :ref:`scale_over_velocity_max<class_ParticleProcessMaterial_property_scale_over_velocity_max>`                         | ``0.0``                 |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`float<class_float>`                                          | :ref:`scale_over_velocity_min<class_ParticleProcessMaterial_property_scale_over_velocity_min>`                         | ``0.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`spread<class_ParticleProcessMaterial_property_spread>`                                                           | ``45.0``                |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
@@ -184,11 +214,15 @@ Properties
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
    | :ref:`float<class_float>`                                          | :ref:`turbulence_noise_strength<class_ParticleProcessMaterial_property_turbulence_noise_strength>`                     | ``1.0``                 |
    +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Texture2D<class_Texture2D>`                                  | :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>`                               |                         |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
+   | :ref:`Vector3<class_Vector3>`                                      | :ref:`velocity_pivot<class_ParticleProcessMaterial_property_velocity_pivot>`                                           | ``Vector3(0, 0, 0)``    |
+   +--------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------+-------------------------+
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -217,8 +251,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ParticleProcessMaterial_Parameter:
 
@@ -322,11 +356,35 @@ enum **Parameter**:
 
 与 :ref:`set_param_min<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用，设置动画偏移属性。
 
+.. _class_ParticleProcessMaterial_constant_PARAM_RADIAL_VELOCITY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_RADIAL_VELOCITY** = ``15``
+
+与 :ref:`set_param_min<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用来设置径向速度属性。
+
+.. _class_ParticleProcessMaterial_constant_PARAM_DIRECTIONAL_VELOCITY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_DIRECTIONAL_VELOCITY** = ``16``
+
+与 :ref:`set_param_min<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用来设置定向速度属性。
+
+.. _class_ParticleProcessMaterial_constant_PARAM_SCALE_OVER_VELOCITY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_SCALE_OVER_VELOCITY** = ``17``
+
+与 :ref:`set_param_min<class_ParticleProcessMaterial_method_set_param_min>`\ 、\ :ref:`set_param_max<class_ParticleProcessMaterial_method_set_param_max>` 和 :ref:`set_param_texture<class_ParticleProcessMaterial_method_set_param_texture>` 一起使用来设置速度属性的缩放。
+
 .. _class_ParticleProcessMaterial_constant_PARAM_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_MAX** = ``15``
+:ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` **PARAM_MAX** = ``18``
 
 代表 :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` 枚举的大小。
 
@@ -388,11 +446,19 @@ enum **ParticleFlags**:
 
 与 :ref:`set_particle_flag<class_ParticleProcessMaterial_method_set_particle_flag>` 一起使用，设置\ :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>`\ 。
 
+.. _class_ParticleProcessMaterial_constant_PARTICLE_FLAG_DAMPING_AS_FRICTION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_DAMPING_AS_FRICTION** = ``3``
+
+
+
 .. _class_ParticleProcessMaterial_constant_PARTICLE_FLAG_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_MAX** = ``3``
+:ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` **PARTICLE_FLAG_MAX** = ``4``
 
 代表 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` 枚举的大小。
 
@@ -568,8 +634,25 @@ enum **CollisionMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
+
+.. _class_ParticleProcessMaterial_property_alpha_curve:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **alpha_curve**
+
+.. rst-class:: classref-property-setget
+
+- void **set_alpha_curve** **(** :ref:`Texture2D<class_Texture2D>` value **)**
+- :ref:`Texture2D<class_Texture2D>` **get_alpha_curve** **(** **)**
+
+每个粒子颜色的 alpha 值将在其生命周期内乘以该 :ref:`CurveTexture<class_CurveTexture>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
 
 .. _class_ParticleProcessMaterial_property_angle_curve:
 
@@ -792,7 +875,7 @@ Property Descriptions
 - void **set_attractor_interaction_enabled** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_attractor_interaction_enabled** **(** **)**
 
-如果启用了与粒子吸引器的交互，则为 true。
+如果为 ``true``\ ，则启用与粒子吸引器的交互。在 3D 中，吸引力仅发生在 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的 :ref:`GPUParticles3D.visibility_aabb<class_GPUParticles3D_property_visibility_aabb>` 定义的区域内。
 
 .. rst-class:: classref-item-separator
 
@@ -845,7 +928,7 @@ Property Descriptions
 
 粒子的碰撞模式。
 
-\ **注意：**\ 3D 粒子只能与 :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` 节点碰撞，无法与 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 节点碰撞。要使粒子与不同的物体碰撞，可以将 :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` 节点添加为 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 节点的子节点。
+\ **注意：**\ 3D 粒子只能与 :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` 节点碰撞，无法与 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 节点碰撞。要使粒子与不同的物体碰撞，可以将 :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` 节点添加为 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 节点的子节点。在 3D 中，碰撞仅发生在 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的 :ref:`GPUParticles3D.visibility_aabb<class_GPUParticles3D_property_visibility_aabb>` 定义的区域内。
 
 \ **注意：**\ 2D 粒子只能与 :ref:`LightOccluder2D<class_LightOccluder2D>` 节点碰撞，无法与 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 节点碰撞。
 
@@ -864,7 +947,7 @@ Property Descriptions
 - void **set_collision_use_scale** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_collision_using_scale** **(** **)**
 
-碰撞是否应该考虑缩放。
+如果为 ``true``\ ，\ :ref:`GPUParticles3D.collision_base_size<class_GPUParticles3D_property_collision_base_size>` 乘以粒子的有效缩放（请参阅 :ref:`scale_min<class_ParticleProcessMaterial_property_scale_min>`\ 、\ :ref:`scale_max<class_ParticleProcessMaterial_property_scale_max>`\ 、\ :ref:`scale_curve<class_ParticleProcessMaterial_property_scale_curve>`\ 、和 :ref:`scale_over_velocity_curve<class_ParticleProcessMaterial_property_scale_over_velocity_curve>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -995,6 +1078,63 @@ Property Descriptions
 
 ----
 
+.. _class_ParticleProcessMaterial_property_directional_velocity_curve:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **directional_velocity_curve**
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_texture** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`Texture2D<class_Texture2D>` texture **)**
+- :ref:`Texture2D<class_Texture2D>` **get_param_texture** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+一条曲线，指定粒子系统在其生命周期内沿每个轴的速度。
+
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_directional_velocity_max:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **directional_velocity_max**
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_max** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_param_max** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+最大方向速度值，乘以 :ref:`directional_velocity_curve<class_ParticleProcessMaterial_property_directional_velocity_curve>`\ 。
+
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_directional_velocity_min:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **directional_velocity_min**
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+最小方向速度值，乘以 :ref:`directional_velocity_curve<class_ParticleProcessMaterial_property_directional_velocity_curve>`\ 。
+
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ParticleProcessMaterial_property_emission_box_extents:
 
 .. rst-class:: classref-property
@@ -1006,7 +1146,7 @@ Property Descriptions
 - void **set_emission_box_extents** **(** :ref:`Vector3<class_Vector3>` value **)**
 - :ref:`Vector3<class_Vector3>` **get_emission_box_extents** **(** **)**
 
-``emission_shape`` 设置为 :ref:`EMISSION_SHAPE_BOX<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_BOX>` 时，该 Box 的范围。
+:ref:`emission_shape<class_ParticleProcessMaterial_property_emission_shape>` 被设置为 :ref:`EMISSION_SHAPE_BOX<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_BOX>` 时，该框的范围。
 
 .. rst-class:: classref-item-separator
 
@@ -1026,6 +1166,25 @@ Property Descriptions
 粒子颜色将被调制，调制使用的颜色将通过对该纹理在与 :ref:`emission_point_texture<class_ParticleProcessMaterial_property_emission_point_texture>` 相同的点处进行采样来确定。
 
 \ **注意：**\ :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>` 乘以粒子网格的顶点颜色。要在 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 上产生可见效果，\ :ref:`BaseMaterial3D.vertex_color_use_as_albedo<class_BaseMaterial3D_property_vertex_color_use_as_albedo>` *必须*\ 为 ``true``\ 。对于 :ref:`ShaderMaterial<class_ShaderMaterial>`\ ，必须在着色器的 ``fragment()`` 函数中插入 ``ALBEDO *= COLOR.rgb;``\ 。否则，\ :ref:`emission_color_texture<class_ParticleProcessMaterial_property_emission_color_texture>` 将没有可见效果。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_emission_curve:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **emission_curve**
+
+.. rst-class:: classref-property-setget
+
+- void **set_emission_curve** **(** :ref:`Texture2D<class_Texture2D>` value **)**
+- :ref:`Texture2D<class_Texture2D>` **get_emission_curve** **(** **)**
+
+每个粒子的颜色将在其生命周期内乘以该 :ref:`CurveTexture<class_CurveTexture>`\ 。
+
+\ **注意：**\ 除非渲染材质被标记为无阴影，否则该属性不会产生可见效果。
 
 .. rst-class:: classref-item-separator
 
@@ -1059,7 +1218,7 @@ Property Descriptions
 - void **set_emission_point_count** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_emission_point_count** **(** **)**
 
-``emission_shape`` 设置为 :ref:`EMISSION_SHAPE_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_POINTS>` 或 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 时，发射点的数量。
+:ref:`emission_shape<class_ParticleProcessMaterial_property_emission_shape>` 被设置为 :ref:`EMISSION_SHAPE_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_POINTS>` 或 :ref:`EMISSION_SHAPE_DIRECTED_POINTS<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_DIRECTED_POINTS>` 时，发射点的数量。
 
 .. rst-class:: classref-item-separator
 
@@ -1167,6 +1326,40 @@ Property Descriptions
 
 ----
 
+.. _class_ParticleProcessMaterial_property_emission_shape_offset:
+
+.. rst-class:: classref-property
+
+:ref:`Vector3<class_Vector3>` **emission_shape_offset** = ``Vector3(0, 0, 0)``
+
+.. rst-class:: classref-property-setget
+
+- void **set_emission_shape_offset** **(** :ref:`Vector3<class_Vector3>` value **)**
+- :ref:`Vector3<class_Vector3>` **get_emission_shape_offset** **(** **)**
+
+:ref:`emission_shape<class_ParticleProcessMaterial_property_emission_shape>` 在局部空间中的偏移量。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_emission_shape_scale:
+
+.. rst-class:: classref-property
+
+:ref:`Vector3<class_Vector3>` **emission_shape_scale** = ``Vector3(1, 1, 1)``
+
+.. rst-class:: classref-property-setget
+
+- void **set_emission_shape_scale** **(** :ref:`Vector3<class_Vector3>` value **)**
+- :ref:`Vector3<class_Vector3>` **get_emission_shape_scale** **(** **)**
+
+局部空间中 :ref:`emission_shape<class_ParticleProcessMaterial_property_emission_shape>` 的缩放。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ParticleProcessMaterial_property_emission_sphere_radius:
 
 .. rst-class:: classref-property
@@ -1178,7 +1371,7 @@ Property Descriptions
 - void **set_emission_sphere_radius** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_emission_sphere_radius** **(** **)**
 
-当\ ``emission_shape``\ 设置为\ :ref:`EMISSION_SHAPE_SPHERE<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_SPHERE>`\ 时，球体的半径。
+:ref:`emission_shape<class_ParticleProcessMaterial_property_emission_shape>` 被设置为 :ref:`EMISSION_SHAPE_SPHERE<class_ParticleProcessMaterial_constant_EMISSION_SHAPE_SPHERE>` 时，该球体的半径。
 
 .. rst-class:: classref-item-separator
 
@@ -1264,6 +1457,23 @@ Property Descriptions
 - :ref:`float<class_float>` **get_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
 
 :ref:`hue_variation_max<class_ParticleProcessMaterial_property_hue_variation_max>` 的对应最小值。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_inherit_velocity_ratio:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **inherit_velocity_ratio** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_inherit_velocity_ratio** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_inherit_velocity_ratio** **(** **)**
+
+每个粒子在生成时继承的相应 :ref:`GPUParticles2D<class_GPUParticles2D>` 或 :ref:`GPUParticles3D<class_GPUParticles3D>` 的速度百分比。
 
 .. rst-class:: classref-item-separator
 
@@ -1382,7 +1592,11 @@ Property Descriptions
 - void **set_param_texture** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`Texture2D<class_Texture2D>` texture **)**
 - :ref:`Texture2D<class_Texture2D>` **get_param_texture** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
 
-每个粒子的轨道速度将沿着这个 :ref:`CurveTexture<class_CurveTexture>` 变化。
+每个粒子的轨道速度将沿着该 :ref:`CurveTexture<class_CurveTexture>` 变化。
+
+\ **注意：**\ 对于 3D 轨道速度，请使用 :ref:`CurveXYZTexture<class_CurveXYZTexture>`\ 。
+
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
 
 .. rst-class:: classref-item-separator
 
@@ -1392,7 +1606,7 @@ Property Descriptions
 
 .. rst-class:: classref-property
 
-:ref:`float<class_float>` **orbit_velocity_max**
+:ref:`float<class_float>` **orbit_velocity_max** = ``0.0``
 
 .. rst-class:: classref-property-setget
 
@@ -1401,7 +1615,7 @@ Property Descriptions
 
 应用于每个粒子的最大轨道速度。使粒子围绕原点环绕。以每秒围绕原点的完整旋转次数指定。
 
-仅当 :ref:`particle_flag_disable_z<class_ParticleProcessMaterial_property_particle_flag_disable_z>` 为 ``true`` 时可用。
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
 
 .. rst-class:: classref-item-separator
 
@@ -1411,14 +1625,16 @@ Property Descriptions
 
 .. rst-class:: classref-property
 
-:ref:`float<class_float>` **orbit_velocity_min**
+:ref:`float<class_float>` **orbit_velocity_min** = ``0.0``
 
 .. rst-class:: classref-property-setget
 
 - void **set_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
 
-:ref:`orbit_velocity_max<class_ParticleProcessMaterial_property_orbit_velocity_max>` 的对应最小值。
+:ref:`orbit_velocity_max<class_ParticleProcessMaterial_property_orbit_velocity_max>` 的最小等效值。
+
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
 
 .. rst-class:: classref-item-separator
 
@@ -1436,6 +1652,23 @@ Property Descriptions
 - :ref:`bool<class_bool>` **get_particle_flag** **(** :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` particle_flag **)** |const|
 
 将粒子的 Y 轴与其速度方向对齐。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_particle_flag_damping_as_friction:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **particle_flag_damping_as_friction** = ``false``
+
+.. rst-class:: classref-property-setget
+
+- void **set_particle_flag** **(** :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` particle_flag, :ref:`bool<class_bool>` enable **)**
+- :ref:`bool<class_bool>` **get_particle_flag** **(** :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>` particle_flag **)** |const|
+
+将阻尼属性的行为从线性减速度更改为基于速度百分比的减速度。
 
 .. rst-class:: classref-item-separator
 
@@ -1526,6 +1759,63 @@ Property Descriptions
 
 ----
 
+.. _class_ParticleProcessMaterial_property_radial_velocity_curve:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **radial_velocity_curve**
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_texture** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`Texture2D<class_Texture2D>` texture **)**
+- :ref:`Texture2D<class_Texture2D>` **get_param_texture** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+一个 :ref:`CurveTexture<class_CurveTexture>`\ ，定义粒子生命周期中远离（或朝向）\ :ref:`velocity_pivot<class_ParticleProcessMaterial_property_velocity_pivot>` 的速度。
+
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_radial_velocity_max:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **radial_velocity_max** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_max** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_param_max** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+应用于每个粒子的最大径向速度。使粒子远离 :ref:`velocity_pivot<class_ParticleProcessMaterial_property_velocity_pivot>`\ ，如果为负则朝它移动。
+
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_radial_velocity_min:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **radial_velocity_min** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+应用于每个粒子的最小径向速度。使粒子远离 :ref:`velocity_pivot<class_ParticleProcessMaterial_property_velocity_pivot>`\ ，如果为负则朝它移动。
+
+\ **注意：**\ 动画速度不会受到阻尼的影响，请使用 :ref:`velocity_limit_curve<class_ParticleProcessMaterial_property_velocity_limit_curve>` 代替。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ParticleProcessMaterial_property_scale_curve:
 
 .. rst-class:: classref-property
@@ -1577,6 +1867,61 @@ Property Descriptions
 
 ----
 
+.. _class_ParticleProcessMaterial_property_scale_over_velocity_curve:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **scale_over_velocity_curve**
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_texture** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`Texture2D<class_Texture2D>` texture **)**
+- :ref:`Texture2D<class_Texture2D>` **get_param_texture** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+根据 :ref:`CurveTexture<class_CurveTexture>` 或 :ref:`CurveXYZTexture<class_CurveXYZTexture>` 缩放每个粒子的速度。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_scale_over_velocity_max:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **scale_over_velocity_max** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_max** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_param_max** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+:ref:`scale_over_velocity_curve<class_ParticleProcessMaterial_property_scale_over_velocity_curve>` 的最大速度参考值。
+
+\ :ref:`scale_over_velocity_curve<class_ParticleProcessMaterial_property_scale_over_velocity_curve>` 将在 :ref:`scale_over_velocity_min<class_ParticleProcessMaterial_property_scale_over_velocity_min>` 和 :ref:`scale_over_velocity_max<class_ParticleProcessMaterial_property_scale_over_velocity_max>` 之间插值。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_scale_over_velocity_min:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **scale_over_velocity_min** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param, :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_param_min** **(** :ref:`Parameter<enum_ParticleProcessMaterial_Parameter>` param **)** |const|
+
+:ref:`scale_over_velocity_curve<class_ParticleProcessMaterial_property_scale_over_velocity_curve>` 的最小速度参考值。
+
+\ :ref:`scale_over_velocity_curve<class_ParticleProcessMaterial_property_scale_over_velocity_curve>` 将在 :ref:`scale_over_velocity_min<class_ParticleProcessMaterial_property_scale_over_velocity_min>` 和 :ref:`scale_over_velocity_max<class_ParticleProcessMaterial_property_scale_over_velocity_max>` 之间插值。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_ParticleProcessMaterial_property_spread:
 
 .. rst-class:: classref-property
@@ -1605,9 +1950,9 @@ Property Descriptions
 - void **set_sub_emitter_amount_at_collision** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_sub_emitter_amount_at_collision** **(** **)**
 
-碰撞时子粒子的数量。
+发生碰撞时从子发射器节点生成的粒子数量。当与主要粒子材质上的 :ref:`COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` 结合使用时，可以用来实现雨滴撞击地面等效果。
 
-子粒子发射器中设置的最大数量。
+\ **注意：**\ 该值不应超过\ *子发射器节点*\ （不是主节点）上定义的 :ref:`GPUParticles2D.amount<class_GPUParticles2D_property_amount>` 或 :ref:`GPUParticles3D.amount<class_GPUParticles3D_property_amount>`\ ，相对于子发射器的粒子寿命。如果超过粒子数量，则在足够的粒子过期之前，不会从子发射器中产生新的粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -1624,9 +1969,9 @@ Property Descriptions
 - void **set_sub_emitter_amount_at_end** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_sub_emitter_amount_at_end** **(** **)**
 
-.. container:: contribute
+粒子过期时从子发射器节点生成的粒子数量。
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+\ **注意：**\ 该值不应超过\ *子发射器节点*\ （不是主节点）上定义的 :ref:`GPUParticles2D.amount<class_GPUParticles2D_property_amount>` 或 :ref:`GPUParticles3D.amount<class_GPUParticles3D_property_amount>`\ ，相对于子发射器的粒子寿命。如果超过粒子数量，则在足够的粒子过期之前，不会从子发射器中产生新的粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -1643,9 +1988,9 @@ Property Descriptions
 - void **set_sub_emitter_frequency** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_sub_emitter_frequency** **(** **)**
 
-.. container:: contribute
+从子发射器节点发射粒子的频率。每 :ref:`sub_emitter_frequency<class_ParticleProcessMaterial_property_sub_emitter_frequency>` 秒就会产生一个粒子。
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+\ **注意：**\ 该值不应超过\ *子发射器节点*\ （不是主节点）上定义的 :ref:`GPUParticles2D.amount<class_GPUParticles2D_property_amount>` 或 :ref:`GPUParticles3D.amount<class_GPUParticles3D_property_amount>`\ ，相对于子发射器的粒子寿命。如果超过粒子数量，则在足够的粒子过期之前，不会从子发射器中产生新的粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -1662,9 +2007,7 @@ Property Descriptions
 - void **set_sub_emitter_keep_velocity** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_sub_emitter_keep_velocity** **(** **)**
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+如果为 ``true``\ ，则子发射器在其生成时继承父粒子的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -1681,9 +2024,7 @@ Property Descriptions
 - void **set_sub_emitter_mode** **(** :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` value **)**
 - :ref:`SubEmitterMode<enum_ParticleProcessMaterial_SubEmitterMode>` **get_sub_emitter_mode** **(** **)**
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+粒子子发射器模式（参见 :ref:`GPUParticles2D.sub_emitter<class_GPUParticles2D_property_sub_emitter>` 和 :ref:`GPUParticles3D.sub_emitter<class_GPUParticles3D_property_sub_emitter>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1922,14 +2263,48 @@ Property Descriptions
 
 湍流噪声强度。增加此值将导致更强烈、对比度更高的噪声图案。
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_velocity_limit_curve:
+
+.. rst-class:: classref-property
+
+:ref:`Texture2D<class_Texture2D>` **velocity_limit_curve**
+
+.. rst-class:: classref-property-setget
+
+- void **set_velocity_limit_curve** **(** :ref:`Texture2D<class_Texture2D>` value **)**
+- :ref:`Texture2D<class_Texture2D>` **get_velocity_limit_curve** **(** **)**
+
+定义粒子在其生命周期内的最大速度的 :ref:`CurveTexture<class_CurveTexture>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ParticleProcessMaterial_property_velocity_pivot:
+
+.. rst-class:: classref-property
+
+:ref:`Vector3<class_Vector3>` **velocity_pivot** = ``Vector3(0, 0, 0)``
+
+.. rst-class:: classref-property-setget
+
+- void **set_velocity_pivot** **(** :ref:`Vector3<class_Vector3>` value **)**
+- :ref:`Vector3<class_Vector3>` **get_velocity_pivot** **(** **)**
+
+用于计算粒子的径向速度和轨道速度的轴心点。
+
 .. rst-class:: classref-section-separator
 
 ----
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ParticleProcessMaterial_method_get_param_max:
 
@@ -2023,10 +2398,10 @@ void **set_particle_flag** **(** :ref:`ParticleFlags<enum_ParticleProcessMateria
 
 如果为 ``true``\ ，则启用指定的粒子标志。选项见 :ref:`ParticleFlags<enum_ParticleProcessMaterial_ParticleFlags>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

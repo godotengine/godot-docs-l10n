@@ -10,14 +10,14 @@
 NavigationRegion3D
 ==================
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 可达的 3D 地区，\ :ref:`NavigationAgent3D<class_NavigationAgent3D>` 能够将其用于寻路。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 可达的 3D 地区，基于 :ref:`NavigationMesh<class_NavigationMesh>`\ ，\ :ref:`NavigationAgent3D<class_NavigationAgent3D>` 能够将其用于寻路。
 
@@ -35,15 +35,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 NavigationRegion <../tutorials/navigation/navigation_using_navigationregions>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -90,8 +90,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_NavigationRegion3D_signal_bake_finished:
 
@@ -119,8 +119,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_NavigationRegion3D_property_enabled:
 
@@ -150,7 +150,7 @@ Property Descriptions
 - void **set_enter_cost** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_enter_cost** **(** **)**
 
-当寻路从另一个区块的导航网格进入该区块的导航网格时，\ ``enter_cost`` 值将被加到路径距离，以确定最短路径。
+当寻路从另一个区块的导航网格进入该区块的导航网格时，\ :ref:`enter_cost<class_NavigationRegion3D_property_enter_cost>` 值将被加到路径距离，以确定最短路径。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ Property Descriptions
 - void **set_travel_cost** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_travel_cost** **(** **)**
 
-当寻路在该区块的导航网格内移动时，将行进距离乘以 ``travel_cost`` 以确定最短路径。
+当寻路在该区块的导航网格内移动时，将行进距离乘以 :ref:`travel_cost<class_NavigationRegion3D_property_travel_cost>` 以确定最短路径。
 
 .. rst-class:: classref-item-separator
 
@@ -226,8 +226,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationRegion3D_method_bake_navigation_mesh:
 
@@ -259,7 +259,7 @@ void **bake_navigation_mesh** **(** :ref:`bool<class_bool>` on_thread=true **)**
 
 :ref:`RID<class_RID>` **get_navigation_map** **(** **)** |const|
 
-Returns the current navigation map :ref:`RID<class_RID>` used by this region.
+返回该区块使用的当前导航地图 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -295,12 +295,12 @@ void **set_navigation_layer_value** **(** :ref:`int<class_int>` layer_number, :r
 
 void **set_navigation_map** **(** :ref:`RID<class_RID>` navigation_map **)**
 
-Sets the :ref:`RID<class_RID>` of the navigation map this region should use. By default the region will automatically join the :ref:`World3D<class_World3D>` default navigation map so this function is only required to override the default map.
+设置该区块应使用的导航地图的 :ref:`RID<class_RID>`\ 。默认情况下，该区块会自动加入 :ref:`World3D<class_World3D>` 默认导航地图，因此该函数只需要覆盖默认地图即可。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

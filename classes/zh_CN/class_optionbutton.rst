@@ -10,27 +10,27 @@
 OptionButton
 ============
 
-**Inherits:** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 按下时弹出下拉菜单的按钮。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**OptionButton** is a type of button that brings up a dropdown with selectable items when pressed. The item selected becomes the "current" item and is displayed as the button text.
+**OptionButton** 是一种按下时弹出下拉菜单的按钮。选中的菜单项会成为“当前”菜单项，作为按钮文本显示。
 
-See also :ref:`BaseButton<class_BaseButton>` which contains common properties and methods associated with this node.
+另见 :ref:`BaseButton<class_BaseButton>`\ ，其中包含与此节点相关联的通用属性和方法。
 
-\ **Note:** The ID values used for items are limited to 32 bits, not full 64 bits of :ref:`int<class_int>`. This has a range of ``-2^32`` to ``2^32 - 1``, i.e. ``-2147483648`` to ``2147483647``.
+\ **注意：**\ 菜单项的 ID 值有 32 位的限制，并不是完整的 64 位 :ref:`int<class_int>`\ 。取值范围为 ``-2^32`` 到 ``2^32 - 1``\ ，即 ``-2147483648`` 到 ``2147483647``\ 。
 
-\ **Note:** The :ref:`Button.text<class_Button_property_text>` and :ref:`Button.icon<class_Button_property_icon>` properties are set automatically based on the selected item. They shouldn't be changed manually.
+\ **注意：**\ :ref:`Button.text<class_Button_property_text>` 和 :ref:`Button.icon<class_Button_property_icon>` 属性会根据当前所选菜单项自动设置。不应该手动更改。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -117,59 +117,19 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
 
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_color<class_OptionButton_theme_color_font_color>`                             | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_disabled_color<class_OptionButton_theme_color_font_disabled_color>`           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_focus_color<class_OptionButton_theme_color_font_focus_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_hover_color<class_OptionButton_theme_color_font_hover_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_hover_pressed_color<class_OptionButton_theme_color_font_hover_pressed_color>` | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_outline_color<class_OptionButton_theme_color_font_outline_color>`             | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_pressed_color<class_OptionButton_theme_color_font_pressed_color>`             | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`arrow_margin<class_OptionButton_theme_constant_arrow_margin>`                      | ``4``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`h_separation<class_OptionButton_theme_constant_h_separation>`                      | ``4``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`modulate_arrow<class_OptionButton_theme_constant_modulate_arrow>`                  | ``0``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`outline_size<class_OptionButton_theme_constant_outline_size>`                      | ``0``                               |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Font<class_Font>`           | :ref:`font<class_OptionButton_theme_font_font>`                                          |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`font_size<class_OptionButton_theme_font_size_font_size>`                           |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`arrow<class_OptionButton_theme_icon_arrow>`                                        |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`disabled<class_OptionButton_theme_style_disabled>`                                 |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`disabled_mirrored<class_OptionButton_theme_style_disabled_mirrored>`               |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_OptionButton_theme_style_focus>`                                       |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`hover<class_OptionButton_theme_style_hover>`                                       |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`hover_mirrored<class_OptionButton_theme_style_hover_mirrored>`                     |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`normal<class_OptionButton_theme_style_normal>`                                     |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`normal_mirrored<class_OptionButton_theme_style_normal_mirrored>`                   |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`pressed<class_OptionButton_theme_style_pressed>`                                   |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`pressed_mirrored<class_OptionButton_theme_style_pressed_mirrored>`                 |                                     |
-   +-----------------------------------+------------------------------------------------------------------------------------------+-------------------------------------+
+   +-----------------------------------+-------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`             | :ref:`arrow_margin<class_OptionButton_theme_constant_arrow_margin>`     | ``4`` |
+   +-----------------------------------+-------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`             | :ref:`modulate_arrow<class_OptionButton_theme_constant_modulate_arrow>` | ``0`` |
+   +-----------------------------------+-------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`arrow<class_OptionButton_theme_icon_arrow>`                       |       |
+   +-----------------------------------+-------------------------------------------------------------------------+-------+
 
 .. rst-class:: classref-section-separator
 
@@ -177,8 +137,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_OptionButton_signal_item_focused:
 
@@ -208,8 +168,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_OptionButton_property_allow_reselect:
 
@@ -282,8 +242,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_OptionButton_method_add_icon_item:
 
@@ -619,92 +579,8 @@ void **show_popup** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
-
-.. _class_OptionButton_theme_color_font_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)``
-
-该 **OptionButton** 的默认文本 :ref:`Color<class_Color>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_color_font_disabled_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)``
-
-该 **OptionButton** 处于禁用状态时使用的文本 :ref:`Color<class_Color>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_color_font_focus_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)``
-
-该 **OptionButton** 处于聚焦状态时使用的文本 :ref:`Color<class_Color>`\ 。只替换按钮的正常文本颜色。禁用、悬停和按下状态优先于这个颜色。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_color_font_hover_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_hover_color** = ``Color(0.95, 0.95, 0.95, 1)``
-
-该 **OptionButton** 处于悬停状态时使用的文本 :ref:`Color<class_Color>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_color_font_hover_pressed_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_hover_pressed_color** = ``Color(1, 1, 1, 1)``
-
-该 **OptionButton** 处于悬停且按下状态时使用的文本 :ref:`Color<class_Color>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_color_font_outline_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_outline_color** = ``Color(1, 1, 1, 1)``
-
-该 **OptionButton** 的文本轮廓的色调。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_color_font_pressed_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_pressed_color** = ``Color(1, 1, 1, 1)``
-
-当 **OptionButton** 被按下时使用的文本 :ref:`Color<class_Color>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
+主题属性说明
+------------
 
 .. _class_OptionButton_theme_constant_arrow_margin:
 
@@ -713,18 +589,6 @@ Theme Property Descriptions
 :ref:`int<class_int>` **arrow_margin** = ``4``
 
 箭头图标和按钮的右边缘之间的水平空间。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_constant_h_separation:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`int<class_int>` **h_separation** = ``4``
-
-**OptionButton** 图标与文本之间的水平间距。负值会被当作 ``0`` 使用。
 
 .. rst-class:: classref-item-separator
 
@@ -742,44 +606,6 @@ Theme Property Descriptions
 
 ----
 
-.. _class_OptionButton_theme_constant_outline_size:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`int<class_int>` **outline_size** = ``0``
-
-文字轮廓的大小。
-
-\ **注意：**\ 如果使用启用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字体，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必须至少设置为 :ref:`outline_size<class_OptionButton_theme_constant_outline_size>` 的\ *两倍*\ ，轮廓渲染才能看起来正确。否则，轮廓可能会比预期的更早被切断。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_font_font:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Font<class_Font>` **font**
-
-该 **OptionButton** 文本的 :ref:`Font<class_Font>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_font_size_font_size:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`int<class_int>` **font_size**
-
-该 **OptionButton** 文本的字体大小。
-
-.. rst-class:: classref-item-separator
-
-----
-
 .. _class_OptionButton_theme_icon_arrow:
 
 .. rst-class:: classref-themeproperty
@@ -788,118 +614,10 @@ Theme Property Descriptions
 
 要绘制在按钮右侧的箭头图标。
 
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_disabled:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **disabled**
-
-该 **OptionButton** 处于禁用状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从左至右布局）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_disabled_mirrored:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **disabled_mirrored**
-
-该 **OptionButton** 处于禁用状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_focus:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **focus**
-
-该 **OptionButton** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ ``focus`` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_hover:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **hover**
-
-该 **OptionButton** 处于悬停状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从左至右布局）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_hover_mirrored:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **hover_mirrored**
-
-该 **OptionButton** 处于悬停状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_normal:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **normal**
-
-该 **OptionButton** 的默认 :ref:`StyleBox<class_StyleBox>`\ （用于从左至右布局）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_normal_mirrored:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **normal_mirrored**
-
-该 **OptionButton** 的默认 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_pressed:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **pressed**
-
-该 **OptionButton** 处于按下状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从左至右布局）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_OptionButton_theme_style_pressed_mirrored:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **pressed_mirrored**
-
-该 **OptionButton** 处于按下状态时使用的 :ref:`StyleBox<class_StyleBox>`\ （用于从右至左布局）。
-
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

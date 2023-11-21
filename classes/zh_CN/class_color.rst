@@ -14,25 +14,25 @@ Color
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A color represented in RGBA format by a red (:ref:`r<class_Color_property_r>`), green (:ref:`g<class_Color_property_g>`), blue (:ref:`b<class_Color_property_b>`), and alpha (:ref:`a<class_Color_property_a>`) component. Each component is a 16-bit floating-point value, usually ranging from ``0.0`` to ``1.0``. Some properties (such as :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`) may support values greater than ``1.0``, for overbright or HDR (High Dynamic Range) colors.
+由红（\ :ref:`r<class_Color_property_r>`\ ）、绿（\ :ref:`g<class_Color_property_g>`\ ）、蓝（\ :ref:`b<class_Color_property_b>`\ ）和 alpha（\ :ref:`a<class_Color_property_a>`\ ）分量表示的 RGBA 格式的颜色。每个分量都是一个 16 位浮点值，通常介于 ``0.0`` 到 ``1.0`` 之间。某些属性（例如 :ref:`CanvasItem.modulate<class_CanvasItem_property_modulate>`\ ）可能支持大于 ``1.0`` 的值，用于表示过亮或 HDR（High Dynamic Range，高动态范围）颜色。
 
-Colors can be created in various ways: By the various **Color** constructors, by static methods such as :ref:`from_hsv<class_Color_method_from_hsv>`, and by using a name from the set of standardized colors based on `X11 color names <https://en.wikipedia.org/wiki/X11_color_names>`__ with the addition of :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`. GDScript also provides :ref:`@GDScript.Color8<class_@GDScript_method_Color8>`, which uses integers from ``0`` to ``255`` and doesn't support overbright colors.
+创建颜色的方法有很多：可以使用 **Color** 的各种构造函数，\ :ref:`from_hsv<class_Color_method_from_hsv>` 等静态方法，以及使用基于 `X11 颜色名称 <https://en.wikipedia.org/wiki/X11_color_names>`__\ 的标准化颜色集外加 :ref:`TRANSPARENT<class_Color_constant_TRANSPARENT>`\ 。GDScript 还提供了 :ref:`@GDScript.Color8<class_@GDScript_method_Color8>`\ ，使用的是 ``0`` 到 ``255`` 之间的整数，且不支持过亮的颜色。
 
-\ **Note:** In a boolean context, a Color will evaluate to ``false`` if it is equal to ``Color(0, 0, 0, 1)`` (opaque black). Otherwise, a Color will always evaluate to ``true``.
+\ **注意：**\ 在布尔上下文中，等于 ``Color(0, 0, 0, 1)``\ （不透明的黑色）的 Color 将被评估为 ``false``\ 。否则，Color 将始终被评估为 ``true``\ 。
 
-\ `Color constants cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__
+\ `Color 常量速查表 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/color_constants.png>`__
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `2D GD 画图演示 <https://godotengine.org/asset-library/asset/517>`__
 
@@ -42,8 +42,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -98,8 +98,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -158,8 +158,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -198,8 +198,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Color_constant_ALICE_BLUE:
 
@@ -1375,8 +1375,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Color_property_a:
 
@@ -1512,8 +1512,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Color_constructor_Color:
 
@@ -1630,8 +1630,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Color_method_blend:
 
@@ -1871,30 +1871,30 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **html_is_valid** **(** :ref:`String<class_String>` color **)** |static|
 
-Returns ``true`` if ``color`` is a valid HTML hexadecimal color string. The string must be a hexadecimal value (case-insensitive) of either 3, 4, 6 or 8 digits, and may be prefixed by a hash sign (``#``). This method is identical to :ref:`String.is_valid_html_color<class_String_method_is_valid_html_color>`.
+如果 ``color`` 是一个有效的 HTML 十六进制颜色字符串，则返回 ``true``\ 。该字符串必须是一个由 3、4、6 或 8 位数字组成的十六进制值（不区分大小写），并且可以以井号 (``#``) 作为前缀。该方法与 :ref:`String.is_valid_html_color<class_String_method_is_valid_html_color>` 相同。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    Color.html_is_valid("#55aaFF")   # Returns true
-    Color.html_is_valid("#55AAFF20") # Returns true
-    Color.html_is_valid("55AAFF")    # Returns true
-    Color.html_is_valid("#F2C")      # Returns true
+    Color.html_is_valid("#55aaFF")   # 返回 true
+    Color.html_is_valid("#55AAFF20") # 返回 true
+    Color.html_is_valid("55AAFF")    # 返回 true
+    Color.html_is_valid("#F2C")      # 返回 true
     
-    Color.html_is_valid("#AABBC")    # Returns false
-    Color.html_is_valid("#55aaFF5")  # Returns false
+    Color.html_is_valid("#AABBC")     # 返回 false
+    Color.html_is_valid("#55aaFF5")  # 返回 false
 
  .. code-tab:: csharp
 
-    Color.HtmlIsValid("#55AAFF");   // Returns true
-    Color.HtmlIsValid("#55AAFF20"); // Returns true
-    Color.HtmlIsValid("55AAFF");    // Returns true
-    Color.HtmlIsValid("#F2C");      // Returns true
+    Color.HtmlIsValid("#55AAFF");   // 返回 true
+    Color.HtmlIsValid("#55AAFF20"); // 返回 true
+    Color.HtmlIsValid("55AAFF");    // 返回 true
+    Color.HtmlIsValid("#F2C");      // 返回 true
     
-    Color.HtmlIsValid("#AABBC");    // Returns false
-    Color.HtmlIsValid("#55aaFF5");  // Returns false
+    Color.HtmlIsValid("#AABBC");    // 返回 false
+    Color.HtmlIsValid("#55aaFF5");  // 返回 false
 
 
 
@@ -2224,8 +2224,8 @@ Returns ``true`` if ``color`` is a valid HTML hexadecimal color string. The stri
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Color_operator_neq_Color:
 
@@ -2383,10 +2383,10 @@ Operator Descriptions
 
 反转给定的颜色。这相当于 ``Color.WHITE - c`` 或 ``Color(1 - c.r, 1 - c.g, 1 - c.b, 1 - c.a)``\ 。与 :ref:`inverted<class_Color_method_inverted>` 不同，\ :ref:`a<class_Color_property_a>` 分量也将被反转。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

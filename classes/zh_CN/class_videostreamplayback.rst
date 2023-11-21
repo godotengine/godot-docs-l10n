@@ -10,51 +10,51 @@
 VideoStreamPlayback
 ===================
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 :ref:`VideoStream<class_VideoStream>` 使用的内部类，用于管理其在 :ref:`VideoStreamPlayer<class_VideoStreamPlayer>` 中的播放状态。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该类旨在被具有 :ref:`VideoStream<class_VideoStream>` 自定义实现的视频解码器扩展所覆盖。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`_get_channels<class_VideoStreamPlayback_method__get_channels>` **(** **)** |virtual| |const|                                                                                                                         |
+   | :ref:`int<class_int>`             | :ref:`_get_channels<class_VideoStreamPlayback_private_method__get_channels>` **(** **)** |virtual| |const|                                                                                                                 |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`         | :ref:`_get_length<class_VideoStreamPlayback_method__get_length>` **(** **)** |virtual| |const|                                                                                                                             |
+   | :ref:`float<class_float>`         | :ref:`_get_length<class_VideoStreamPlayback_private_method__get_length>` **(** **)** |virtual| |const|                                                                                                                     |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`_get_mix_rate<class_VideoStreamPlayback_method__get_mix_rate>` **(** **)** |virtual| |const|                                                                                                                         |
+   | :ref:`int<class_int>`             | :ref:`_get_mix_rate<class_VideoStreamPlayback_private_method__get_mix_rate>` **(** **)** |virtual| |const|                                                                                                                 |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`         | :ref:`_get_playback_position<class_VideoStreamPlayback_method__get_playback_position>` **(** **)** |virtual| |const|                                                                                                       |
+   | :ref:`float<class_float>`         | :ref:`_get_playback_position<class_VideoStreamPlayback_private_method__get_playback_position>` **(** **)** |virtual| |const|                                                                                               |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`_get_texture<class_VideoStreamPlayback_method__get_texture>` **(** **)** |virtual| |const|                                                                                                                           |
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`_get_texture<class_VideoStreamPlayback_private_method__get_texture>` **(** **)** |virtual| |const|                                                                                                                   |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`           | :ref:`_is_paused<class_VideoStreamPlayback_method__is_paused>` **(** **)** |virtual| |const|                                                                                                                               |
+   | :ref:`bool<class_bool>`           | :ref:`_is_paused<class_VideoStreamPlayback_private_method__is_paused>` **(** **)** |virtual| |const|                                                                                                                       |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`           | :ref:`_is_playing<class_VideoStreamPlayback_method__is_playing>` **(** **)** |virtual| |const|                                                                                                                             |
+   | :ref:`bool<class_bool>`           | :ref:`_is_playing<class_VideoStreamPlayback_private_method__is_playing>` **(** **)** |virtual| |const|                                                                                                                     |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                              | :ref:`_play<class_VideoStreamPlayback_method__play>` **(** **)** |virtual|                                                                                                                                                 |
+   | void                              | :ref:`_play<class_VideoStreamPlayback_private_method__play>` **(** **)** |virtual|                                                                                                                                         |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                              | :ref:`_seek<class_VideoStreamPlayback_method__seek>` **(** :ref:`float<class_float>` time **)** |virtual|                                                                                                                  |
+   | void                              | :ref:`_seek<class_VideoStreamPlayback_private_method__seek>` **(** :ref:`float<class_float>` time **)** |virtual|                                                                                                          |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                              | :ref:`_set_audio_track<class_VideoStreamPlayback_method__set_audio_track>` **(** :ref:`int<class_int>` idx **)** |virtual|                                                                                                 |
+   | void                              | :ref:`_set_audio_track<class_VideoStreamPlayback_private_method__set_audio_track>` **(** :ref:`int<class_int>` idx **)** |virtual|                                                                                         |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                              | :ref:`_set_paused<class_VideoStreamPlayback_method__set_paused>` **(** :ref:`bool<class_bool>` paused **)** |virtual|                                                                                                      |
+   | void                              | :ref:`_set_paused<class_VideoStreamPlayback_private_method__set_paused>` **(** :ref:`bool<class_bool>` paused **)** |virtual|                                                                                              |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                              | :ref:`_stop<class_VideoStreamPlayback_method__stop>` **(** **)** |virtual|                                                                                                                                                 |
+   | void                              | :ref:`_stop<class_VideoStreamPlayback_private_method__stop>` **(** **)** |virtual|                                                                                                                                         |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                              | :ref:`_update<class_VideoStreamPlayback_method__update>` **(** :ref:`float<class_float>` delta **)** |virtual|                                                                                                             |
+   | void                              | :ref:`_update<class_VideoStreamPlayback_private_method__update>` **(** :ref:`float<class_float>` delta **)** |virtual|                                                                                                     |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`             | :ref:`mix_audio<class_VideoStreamPlayback_method_mix_audio>` **(** :ref:`int<class_int>` num_frames, :ref:`PackedFloat32Array<class_PackedFloat32Array>` buffer=PackedFloat32Array(), :ref:`int<class_int>` offset=0 **)** |
    +-----------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -65,10 +65,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_VideoStreamPlayback_method__get_channels:
+.. _class_VideoStreamPlayback_private_method__get_channels:
 
 .. rst-class:: classref-method
 
@@ -80,7 +80,7 @@ Method Descriptions
 
 ----
 
-.. _class_VideoStreamPlayback_method__get_length:
+.. _class_VideoStreamPlayback_private_method__get_length:
 
 .. rst-class:: classref-method
 
@@ -92,7 +92,7 @@ Method Descriptions
 
 ----
 
-.. _class_VideoStreamPlayback_method__get_mix_rate:
+.. _class_VideoStreamPlayback_private_method__get_mix_rate:
 
 .. rst-class:: classref-method
 
@@ -104,7 +104,7 @@ Method Descriptions
 
 ----
 
-.. _class_VideoStreamPlayback_method__get_playback_position:
+.. _class_VideoStreamPlayback_private_method__get_playback_position:
 
 .. rst-class:: classref-method
 
@@ -116,7 +116,7 @@ Method Descriptions
 
 ----
 
-.. _class_VideoStreamPlayback_method__get_texture:
+.. _class_VideoStreamPlayback_private_method__get_texture:
 
 .. rst-class:: classref-method
 
@@ -128,43 +128,43 @@ Method Descriptions
 
 ----
 
-.. _class_VideoStreamPlayback_method__is_paused:
+.. _class_VideoStreamPlayback_private_method__is_paused:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_is_paused** **(** **)** |virtual| |const|
 
-返回暂停状态，由 :ref:`_set_paused<class_VideoStreamPlayback_method__set_paused>` 设置。
+返回暂停状态，由 :ref:`_set_paused<class_VideoStreamPlayback_private_method__set_paused>` 设置。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_VideoStreamPlayback_method__is_playing:
+.. _class_VideoStreamPlayback_private_method__is_playing:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_is_playing** **(** **)** |virtual| |const|
 
-返回由调用 :ref:`_play<class_VideoStreamPlayback_method__play>` 和 :ref:`_stop<class_VideoStreamPlayback_method__stop>` 决定的播放状态。
+返回由调用 :ref:`_play<class_VideoStreamPlayback_private_method__play>` 和 :ref:`_stop<class_VideoStreamPlayback_private_method__stop>` 决定的播放状态。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_VideoStreamPlayback_method__play:
+.. _class_VideoStreamPlayback_private_method__play:
 
 .. rst-class:: classref-method
 
 void **_play** **(** **)** |virtual|
 
-:ref:`VideoStreamPlayer.autoplay<class_VideoStreamPlayer_property_autoplay>` 或 :ref:`VideoStreamPlayer.play<class_VideoStreamPlayer_method_play>` 时会被调用。请注意，手动播放在这个方法被调用前也可能多次调用 :ref:`_stop<class_VideoStreamPlayback_method__stop>`\ 。开始播放后 :ref:`_is_playing<class_VideoStreamPlayback_method__is_playing>` 就应该返回 true。
+:ref:`VideoStreamPlayer.autoplay<class_VideoStreamPlayer_property_autoplay>` 或 :ref:`VideoStreamPlayer.play<class_VideoStreamPlayer_method_play>` 时会被调用。请注意，手动播放在这个方法被调用前也可能多次调用 :ref:`_stop<class_VideoStreamPlayback_private_method__stop>`\ 。开始播放后 :ref:`_is_playing<class_VideoStreamPlayback_private_method__is_playing>` 就应该返回 true。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_VideoStreamPlayback_method__seek:
+.. _class_VideoStreamPlayback_private_method__seek:
 
 .. rst-class:: classref-method
 
@@ -176,7 +176,7 @@ void **_seek** **(** :ref:`float<class_float>` time **)** |virtual|
 
 ----
 
-.. _class_VideoStreamPlayback_method__set_audio_track:
+.. _class_VideoStreamPlayback_private_method__set_audio_track:
 
 .. rst-class:: classref-method
 
@@ -188,37 +188,37 @@ void **_set_audio_track** **(** :ref:`int<class_int>` idx **)** |virtual|
 
 ----
 
-.. _class_VideoStreamPlayback_method__set_paused:
+.. _class_VideoStreamPlayback_private_method__set_paused:
 
 .. rst-class:: classref-method
 
 void **_set_paused** **(** :ref:`bool<class_bool>` paused **)** |virtual|
 
-设置视频播放的暂停状态。\ :ref:`_is_paused<class_VideoStreamPlayback_method__is_paused>` 必须返回 ``paused``\ 。设置 :ref:`VideoStreamPlayer.paused<class_VideoStreamPlayer_property_paused>` 时会被调用。
+设置视频播放的暂停状态。\ :ref:`_is_paused<class_VideoStreamPlayback_private_method__is_paused>` 必须返回 ``paused``\ 。设置 :ref:`VideoStreamPlayer.paused<class_VideoStreamPlayer_property_paused>` 时会被调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_VideoStreamPlayback_method__stop:
+.. _class_VideoStreamPlayback_private_method__stop:
 
 .. rst-class:: classref-method
 
 void **_stop** **(** **)** |virtual|
 
-停止播放。可能在 :ref:`_play<class_VideoStreamPlayback_method__play>` 多次调用，也可能与 :ref:`VideoStreamPlayer.stop<class_VideoStreamPlayer_method_stop>` 对应。停止后 :ref:`_is_playing<class_VideoStreamPlayback_method__is_playing>` 应返回 false。
+停止播放。可能在 :ref:`_play<class_VideoStreamPlayback_private_method__play>` 多次调用，也可能与 :ref:`VideoStreamPlayer.stop<class_VideoStreamPlayer_method_stop>` 对应。停止后 :ref:`_is_playing<class_VideoStreamPlayback_private_method__is_playing>` 应返回 false。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_VideoStreamPlayback_method__update:
+.. _class_VideoStreamPlayback_private_method__update:
 
 .. rst-class:: classref-method
 
 void **_update** **(** :ref:`float<class_float>` delta **)** |virtual|
 
-将视频播放推进 ``delta`` 秒。只要 :ref:`_is_paused<class_VideoStreamPlayback_method__is_paused>` 和 :ref:`_is_playing<class_VideoStreamPlayback_method__is_playing>` 返回 true，就会为每一帧调用。
+将视频播放推进 ``delta`` 秒。只要 :ref:`_is_paused<class_VideoStreamPlayback_private_method__is_paused>` 和 :ref:`_is_playing<class_VideoStreamPlayback_private_method__is_playing>` 返回 true，就会为每一帧调用。
 
 .. rst-class:: classref-item-separator
 
@@ -230,12 +230,12 @@ void **_update** **(** :ref:`float<class_float>` delta **)** |virtual|
 
 :ref:`int<class_int>` **mix_audio** **(** :ref:`int<class_int>` num_frames, :ref:`PackedFloat32Array<class_PackedFloat32Array>` buffer=PackedFloat32Array(), :ref:`int<class_int>` offset=0 **)**
 
-从数组中的索引 ``offset`` 开始，从 ``buffer`` 渲染 ``num_frames`` 个音频帧（每帧 :ref:`_get_channels<class_VideoStreamPlayback_method__get_channels>` 个浮点数）。返回渲染的音频帧数，如果出错则返回 -1。
+从数组中的索引 ``offset`` 开始，从 ``buffer`` 渲染 ``num_frames`` 个音频帧（每帧 :ref:`_get_channels<class_VideoStreamPlayback_private_method__get_channels>` 个浮点数）。返回渲染的音频帧数，如果出错则返回 -1。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

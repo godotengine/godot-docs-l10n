@@ -10,14 +10,14 @@
 PackedScene
 ===========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 对序列化场景的抽象。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 场景文件的简化接口。提供可以对场景资源本身进行的操作和检查。
 
@@ -46,7 +46,7 @@ Description
 
 
 
-\ **保存不同所有者的节点的示例：**\ 下面的粒子会创建 3 个对象：\ :ref:`Node2D<class_Node2D>`\ （\ ``node``\ ）、\ :ref:`RigidBody2D<class_RigidBody2D>`\ （\ ``body``\ ）、\ :ref:`CollisionObject2D<class_CollisionObject2D>`\ （\ ``collision``)）。\ ``node`` 的下一级是 ``body``\ ，再下一级是 ``collision``\ 。只有 ``body`` 被 ``node`` 拥有，因此 ``pack`` 只会保存两个节点，不会保存 ``collision``\ 。
+\ **保存不同所有者的节点的示例：**\ 下面的粒子会创建 3 个对象：\ :ref:`Node2D<class_Node2D>`\ （\ ``node``\ ）、\ :ref:`RigidBody2D<class_RigidBody2D>`\ （\ ``body``\ ）、\ :ref:`CollisionObject2D<class_CollisionObject2D>`\ （\ ``collision``)）。\ ``node`` 的下一级是 ``body``\ ，再下一级是 ``collision``\ 。只有 ``body`` 被 ``node`` 拥有，因此 :ref:`pack<class_PackedScene_method_pack>` 只会保存两个节点，不会保存 ``collision``\ 。
 
 
 .. tabs::
@@ -103,15 +103,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `2D 角色扮演游戏演示 <https://godotengine.org/asset-library/asset/520>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -144,8 +144,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_PackedScene_GenEditState:
 
@@ -197,8 +197,8 @@ enum **GenEditState**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_PackedScene_property__bundled:
 
@@ -216,8 +216,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PackedScene_method_can_instantiate:
 
@@ -237,7 +237,7 @@ Method Descriptions
 
 :ref:`SceneState<class_SceneState>` **get_state** **(** **)** |const|
 
-返回代表场景文件内容的 ``SceneState``\ 。
+返回代表场景文件内容的 :ref:`SceneState<class_SceneState>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -263,10 +263,10 @@ Method Descriptions
 
 包将忽略不属于给定节点的任何子节点。请参阅 :ref:`Node.owner<class_Node_property_owner>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 OS
 ==
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 提供对常见操作系统功能的访问。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 这个类封装了与主机操作系统通信的最常见功能，例如视频驱动、延时、环境变量、二进制文件的执行、命令行等。
 
@@ -25,15 +25,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `操作系统测试演示 <https://godotengine.org/asset-library/asset/677>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -190,8 +190,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_OS_RenderingDriver:
 
@@ -295,8 +295,8 @@ DCIM（数码相机图像）目录路径。
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_OS_property_delta_smoothing:
 
@@ -351,8 +351,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_OS_method_alert:
 
@@ -738,9 +738,9 @@ void **delay_usec** **(** :ref:`int<class_int>` usec **)** |const|
 
 :ref:`PackedStringArray<class_PackedStringArray>` **get_granted_permissions** **(** **)** |const|
 
-On Android devices: With this function, you can get the list of dangerous permissions that have been granted.
+在 Android 设备上：通过该功能，你可以获取已被授予的危险权限列表。
 
-On macOS (sandboxed applications only): This function returns the list of user selected folders accessible to the application. Use native file dialog to request folder access permission.
+在 macOS 上（仅限沙盒应用程序）：该函数返回应用程序可访问的用户选择的文件夹列表。使用原生文件对话框请求文件夹访问权限。
 
 .. rst-class:: classref-item-separator
 
@@ -850,23 +850,23 @@ On macOS (sandboxed applications only): This function returns the list of user s
 
 :ref:`String<class_String>` **get_name** **(** **)** |const|
 
-Returns the name of the host OS.
+返回主机操作系统的名称。
 
-On Windows, this is ``"Windows"``.
+在 Windows 上为 ``"Windows"``\ 。
 
-On macOS, this is ``"macOS"``.
+在 macOS 上为 ``"macOS"``\ 。
 
-On Linux-based operating systems, this is ``"Linux"``.
+在基于 Linux 的操作系统上为 ``"Linux"``\ 。
 
-On BSD-based operating systems, this is ``"FreeBSD"``, ``"NetBSD"``, ``"OpenBSD"``, or ``"BSD"`` as a fallback.
+在基于 BSD 的操作系统上为 ``"FreeBSD"``\ 、\ ``"NetBSD"``\ 、\ ``"OpenBSD"``, 会使用 ``"BSD"`` 作为回退方案。
 
-On Android, this is ``"Android"``.
+在 Android 上为 ``"Android"``\ 。
 
-On iOS, this is ``"iOS"``.
+在 iOS 上为 ``"iOS"``\ 。
 
-On the web, this is ``"Web"``.
+在 Web 上为 ``"Web"``\ 。
 
-\ **Note:** Custom builds of the engine may support additional platforms, such as consoles, yielding other return values.
+\ **注意：**\ 自定义构建的引擎可能支持其他平台，例如游戏主机，可能返回其他值。
 
 
 .. tabs::
@@ -900,7 +900,7 @@ On the web, this is ``"Web"``.
         case "Linux":
         case "FreeBSD":
         case "NetBSD":
-        case "OpenBSD"
+        case "OpenBSD":
         case "BSD":
             GD.Print("Linux/BSD");
             break;
@@ -953,9 +953,9 @@ On the web, this is ``"Web"``.
 
 :ref:`String<class_String>` **get_processor_name** **(** **)** |const|
 
-Returns the name of the CPU model on the host machine (e.g. "Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz").
+返回主机 CPU 型号的名称（例如 "Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz"）。
 
-\ **Note:** This method is only implemented on Windows, macOS, Linux and iOS. On Android and Web, :ref:`get_processor_name<class_OS_method_get_processor_name>` returns an empty string.
+\ **注意：**\ 该方法仅在 Windows、macOS、Linux 和 iOS 上实现。在 Android 和 Web 上，\ :ref:`get_processor_name<class_OS_method_get_processor_name>` 返回空字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -1085,11 +1085,11 @@ Returns the name of the CPU model on the host machine (e.g. "Intel(R) Core(TM) i
 
 :ref:`String<class_String>` **get_unique_id** **(** **)** |const|
 
-Returns a string that is unique to the device.
+返回特定于该设备的一个字符串。
 
-\ **Note:** This string may change without notice if the user reinstalls/upgrades their operating system or changes their hardware. This means it should generally not be used to encrypt persistent data as the data saved before an unexpected ID change would become inaccessible. The returned string may also be falsified using external programs, so do not rely on the string returned by :ref:`get_unique_id<class_OS_method_get_unique_id>` for security purposes.
+\ **注意：**\ 如果用户重新安装/升级他们的操作系统或更改他们的硬件，该字符串可能会更改，恕不另行通知。这意味着它通常不应用于加密持久数据，因为在意外的 ID 更改会使之前保存的数据将变得不可访问。返回的字符串也可能会被外部程序伪造，因此出于安全目的，不要依赖 :ref:`get_unique_id<class_OS_method_get_unique_id>` 返回的字符串。
 
-\ **Note:** Returns an empty string on Web, as this method isn't implemented on this platform yet.
+\ **注意：**\ 在 Web 上返回一个空字符串，因为该方法尚未在该平台上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1127,17 +1127,17 @@ Returns a string that is unique to the device.
 
 :ref:`String<class_String>` **get_version** **(** **)** |const|
 
-Returns the exact production and build version of the operating system. This is different from the branded version used in marketing. This helps to distinguish between different releases of operating systems, including minor versions, and insider and custom builds.
+返回操作系统的确切生产和构建版本。这与营销中使用的品牌版本不同。这有助于区分操作系统的不同版本，包括次要版本、内部版本和自定义版本。
 
-For Windows, the major and minor version are returned, as well as the build number. For example, the returned string can look like ``10.0.9926`` for a build of Windows 10, and it can look like ``6.1.7601`` for a build of Windows 7 SP1.
+对于 Windows，返回主要和次要版本，以及构建号。例如，对于 Windows 10 版本，返回的字符串可能看起来像 ``10.0.9926``\ ，对于 Windows 7 SP1 版本，它可能看起来像 ``6.1.7601``\ 。
 
-For rolling distributions, such as Arch Linux, an empty string is returned.
+对于滚动发行版，例如 Arch Linux，会返回一个空字符串。
 
-For macOS and iOS, the major and minor version are returned, as well as the patch number.
+对于 macOS 和 iOS，会返回主要和次要版本，以及补丁号。
 
-For Android, the SDK version and the incremental build number are returned. If it's a custom ROM, it attempts to return its version instead.
+对于 Android，会返回 SDK 版本和增量构建号。如果是自定义的 ROM，将会尝试返回其版本。
 
-\ **Note:** This method is not supported on the web platform. It returns an empty string.
+\ **注意：**\ 该方法在 web 平台上不被支持。它将返回一个空字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -1181,11 +1181,13 @@ For Android, the SDK version and the incremental build number are returned. If i
 
 :ref:`bool<class_bool>` **has_feature** **(** :ref:`String<class_String>` tag_name **)** |const|
 
-如果当前运行的实例支持给定功能标签的功能，则返回 ``true``\ ，具体取决于平台、构建等。可用于检查当前是否正在运行调试构建，是否在某个平台或架构上，等等。请参阅\ :doc:`《功能标签》 <../tutorials/export/feature_tags>`\ 文档以了解更多详细信息。
+如果当前运行的实例支持给定功能标签的功能，则返回 ``true``\ ，具体取决于平台、构建等。可用于检查当前是否正在运行调试构建，是否在某个平台或架构上，等等。详情见\ :doc:`《功能标签》 <../tutorials/export/feature_tags>`\ 文档。
 
 \ **注意：**\ 标签名称区分大小写。
 
 \ **注意：**\ 在 Web 平台上，会定义 ``web_android``\ 、\ ``web_ios``\ 、\ ``web_linuxbsd``\ 、\ ``web_macos``\ 、\ ``web_windows`` 的其中之一，表示宿主平台。
+
+\ **注意：**\ 在 iOS 模拟器中，还会定义 ``simulator`` 标签。
 
 .. rst-class:: classref-item-separator
 
@@ -1253,9 +1255,9 @@ For Android, the SDK version and the incremental build number are returned. If i
 
 :ref:`bool<class_bool>` **is_sandboxed** **(** **)** |const|
 
-Returns ``true`` if application is running in the sandbox.
+如果应用程序在沙箱中运行，则返回 ``true``\ 。
 
-\ **Note:** This method is implemented on macOS and Linux.
+\ **注意：**\ 该方法在 macOS 和 Linux 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1392,7 +1394,7 @@ void **open_midi_inputs** **(** **)**
 
 void **revoke_granted_permissions** **(** **)**
 
-On macOS (sandboxed applications only), this function clears list of user selected folders accessible to the application.
+在 macOS（仅限沙盒应用程序）上，该功能会清除应用程序可访问的用户选择的文件夹列表。
 
 .. rst-class:: classref-item-separator
 
@@ -1420,7 +1422,7 @@ void **set_restart_on_exit** **(** :ref:`bool<class_bool>` restart, :ref:`Packed
 
 如果 ``restart`` 为 ``true``\ ，则项目在使用 :ref:`SceneTree.quit<class_SceneTree_method_quit>` 或 :ref:`Node.NOTIFICATION_WM_CLOSE_REQUEST<class_Node_constant_NOTIFICATION_WM_CLOSE_REQUEST>` 退出时，会自动重新启动。可以提供命令行 ``arguments``\ 。要使用最初用于运行项目的命令行参数重新启动项目，请将 :ref:`get_cmdline_args<class_OS_method_get_cmdline_args>` 作为 ``arguments`` 的值传递。
 
-\ :ref:`set_restart_on_exit<class_OS_method_set_restart_on_exit>` 可用于应用需要重新启动的设置更改。另请参见 :ref:`is_restart_on_exit_set<class_OS_method_is_restart_on_exit_set>` 和 :ref:`get_restart_on_exit_arguments<class_OS_method_get_restart_on_exit_arguments>`\ 。
+\ :ref:`set_restart_on_exit<class_OS_method_set_restart_on_exit>` 可用于应用需要重新启动的设置更改。另见 :ref:`is_restart_on_exit_set<class_OS_method_is_restart_on_exit_set>` 和 :ref:`get_restart_on_exit_arguments<class_OS_method_get_restart_on_exit_arguments>`\ 。
 
 \ **注意：**\ 该方法只在桌面平台上有效，并且只在项目不是从编辑器启动时有效。不会影响移动和 Web 平台，或者当项目从编辑器启动时。
 
@@ -1506,10 +1508,10 @@ void **unset_environment** **(** :ref:`String<class_String>` variable **)** |con
 
 \ **注意：**\ 环境变量名称在除 Windows 以外的所有平台上都区分大小写。\ ``variable`` 名称不能为空或包含 ``=`` 字符。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

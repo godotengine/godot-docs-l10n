@@ -10,28 +10,28 @@
 NavigationLink3D
 ================
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 连接两个位于 :ref:`NavigationRegion3D<class_NavigationRegion3D>` 上的位置的链接，导航时能够让代理走这个链接。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 连接两个位于 :ref:`NavigationRegion3D<class_NavigationRegion3D>` 上的位置的链接，导航时能够让代理走这个链接。这两个位置可以在同一个 :ref:`NavigationRegion3D<class_NavigationRegion3D>` 上，也可以是在两个不同的区块上。链接可以用来表达沿着导航网格表面行进以外的导航方法，例如滑锁、传送、跳过沟壑等等。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 NavigationLink <../tutorials/navigation/navigation_using_navigationlinks>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -80,8 +80,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_NavigationLink3D_property_bidirectional:
 
@@ -212,8 +212,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationLink3D_method_get_global_end_position:
 
@@ -283,10 +283,10 @@ void **set_navigation_layer_value** **(** :ref:`int<class_int>` layer_number, :r
 
 根据 ``value``\ ，启用或禁用 :ref:`navigation_layers<class_NavigationLink3D_property_navigation_layers>` 位掩码中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 PopupMenu
 =========
 
-**Inherits:** :ref:`Popup<class_Popup>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Popup<class_Popup>` **<** :ref:`Window<class_Window>` **<** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于显示选项列表的模态窗口。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **PopupMenu** 是用于显示选项列表的模态窗口，常见于工具栏和上下文菜单。
 
@@ -31,8 +31,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -92,7 +92,7 @@ Methods
    +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                             | :ref:`add_submenu_item<class_PopupMenu_method_add_submenu_item>` **(** :ref:`String<class_String>` label, :ref:`String<class_String>` submenu, :ref:`int<class_int>` id=-1 **)**                                                                                                |
    +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                             | :ref:`clear<class_PopupMenu_method_clear>` **(** **)**                                                                                                                                                                                                                          |
+   | void                                             | :ref:`clear<class_PopupMenu_method_clear>` **(** :ref:`bool<class_bool>` free_submenus=false **)**                                                                                                                                                                              |
    +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                            | :ref:`get_focused_item<class_PopupMenu_method_get_focused_item>` **(** **)** |const|                                                                                                                                                                                            |
    +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -189,8 +189,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -260,10 +260,6 @@ Theme Properties
    +-----------------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`labeled_separator_right<class_PopupMenu_theme_style_labeled_separator_right>`           |                                   |
    +-----------------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel<class_PopupMenu_theme_style_panel>`                                               |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel_disabled<class_PopupMenu_theme_style_panel_disabled>`                             |                                   |
-   +-----------------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`separator<class_PopupMenu_theme_style_separator>`                                       |                                   |
    +-----------------------------------+-----------------------------------------------------------------------------------------------+-----------------------------------+
 
@@ -273,8 +269,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_PopupMenu_signal_id_focused:
 
@@ -328,8 +324,8 @@ ID 为 ``id`` 的菜单项被按下或者由快捷键激活时发出。
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_PopupMenu_property_allow_search:
 
@@ -435,8 +431,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PopupMenu_method_activate_item_by_event:
 
@@ -444,11 +440,11 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **activate_item_by_event** **(** :ref:`InputEvent<class_InputEvent>` event, :ref:`bool<class_bool>` for_global_only=false **)**
 
-Checks the provided ``event`` against the **PopupMenu**'s shortcuts and accelerators, and activates the first item with matching events. If ``for_global_only`` is ``true``, only shortcuts and accelerators with ``global`` set to ``true`` will be called.
+根据 **PopupMenu** 的快捷键和加速器检查提供的 ``event``\ ，并激活匹配事件的第一个项目。如果 ``for_global_only`` 为 ``true``\ ，则仅调用 ``global`` 被设置为 ``true`` 的快捷键和加速器。
 
-Returns ``true`` if an item was successfully activated.
+如果项目已成功激活，则返回 ``true``\ 。
 
-\ **Note:** Certain :ref:`Control<class_Control>`\ s, such as :ref:`MenuButton<class_MenuButton>`, will call this method automatically.
+\ **注意：**\ 某些 :ref:`Control<class_Control>`\ ，例如 :ref:`MenuButton<class_MenuButton>`\ ，会自动调用该方法。
 
 .. rst-class:: classref-item-separator
 
@@ -562,11 +558,11 @@ void **add_icon_radio_check_shortcut** **(** :ref:`Texture2D<class_Texture2D>` t
 
 void **add_icon_shortcut** **(** :ref:`Texture2D<class_Texture2D>` texture, :ref:`Shortcut<class_Shortcut>` shortcut, :ref:`int<class_int>` id=-1, :ref:`bool<class_bool>` global=false, :ref:`bool<class_bool>` allow_echo=false **)**
 
-Adds a new item and assigns the specified :ref:`Shortcut<class_Shortcut>` and icon ``texture`` to it. Sets the label of the checkbox to the :ref:`Shortcut<class_Shortcut>`'s name.
+添加新的菜单项，并为其分配指定的 :ref:`Shortcut<class_Shortcut>` 和图标 ``texture``\ 。复选框的标签会被设为 :ref:`Shortcut<class_Shortcut>` 的名称。
 
-An ``id`` can optionally be provided. If no ``id`` is provided, one will be created from the index.
+还可以提供 ``id``\ 。如果没有提供 ``id``\ ，则会根据索引来创建。
 
-If ``allow_echo`` is ``true``, the shortcut can be activated with echo events.
+如果 ``allow_echo`` 为 ``true``\ ，则快捷键可以被回响事件激活。
 
 .. rst-class:: classref-item-separator
 
@@ -656,11 +652,11 @@ void **add_separator** **(** :ref:`String<class_String>` label="", :ref:`int<cla
 
 void **add_shortcut** **(** :ref:`Shortcut<class_Shortcut>` shortcut, :ref:`int<class_int>` id=-1, :ref:`bool<class_bool>` global=false, :ref:`bool<class_bool>` allow_echo=false **)**
 
-Adds a :ref:`Shortcut<class_Shortcut>`.
+添加 :ref:`Shortcut<class_Shortcut>`\ 。
 
-An ``id`` can optionally be provided. If no ``id`` is provided, one will be created from the index.
+还可以提供 ``id``\ 。如果没有提供 ``id``\ ，则会根据索引来创建。
 
-If ``allow_echo`` is ``true``, the shortcut can be activated with echo events.
+如果 ``allow_echo`` 为 ``true``\ ，则快捷键可以被回响事件激活。
 
 .. rst-class:: classref-item-separator
 
@@ -672,7 +668,7 @@ If ``allow_echo`` is ``true``, the shortcut can be activated with echo events.
 
 void **add_submenu_item** **(** :ref:`String<class_String>` label, :ref:`String<class_String>` submenu, :ref:`int<class_int>` id=-1 **)**
 
-添加菜单项，点击时会作为父级 **PopupMenu** 节点的子菜单。\ ``submenu`` 参数为子 **PopupMenu** 节点的名称，会在点击菜单项时显示。
+添加菜单项，点击时会作为父级 **PopupMenu** 节点的子菜单。\ ``submenu`` 参数必须是已作为子节点添加到此节点的现有 **PopupMenu** 的名称。当点击该项目、悬停足够长的时间、或使用 ``ui_select`` 或 ``ui_right`` 输入操作激活该子菜单时，将显示该子菜单。
 
 还可以提供 ``id``\ 。如果没有提供 ``id``\ ，则会根据索引来创建。
 
@@ -684,9 +680,9 @@ void **add_submenu_item** **(** :ref:`String<class_String>` label, :ref:`String<
 
 .. rst-class:: classref-method
 
-void **clear** **(** **)**
+void **clear** **(** :ref:`bool<class_bool>` free_submenus=false **)**
 
-从该 **PopupMenu** 中移除所有项目。
+移除 **PopupMenu** 中的所有项目。如果 ``free_submenus`` 为 ``true``\ ，则自动释放子菜单节点。
 
 .. rst-class:: classref-item-separator
 
@@ -1260,8 +1256,8 @@ void **toggle_item_multistate** **(** :ref:`int<class_int>` index **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_PopupMenu_theme_color_font_accelerator_color:
 
@@ -1649,30 +1645,6 @@ Theme Property Descriptions
 
 ----
 
-.. _class_PopupMenu_theme_style_panel:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **panel**
-
-**PopupMenu** 菜单项的默认 :ref:`StyleBox<class_StyleBox>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_PopupMenu_theme_style_panel_disabled:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **panel_disabled**
-
-**PopupMenu** 菜单项被禁用时使用的 :ref:`StyleBox<class_StyleBox>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
 .. _class_PopupMenu_theme_style_separator:
 
 .. rst-class:: classref-themeproperty
@@ -1681,10 +1653,10 @@ Theme Property Descriptions
 
 用于分隔符的 :ref:`StyleBox<class_StyleBox>`\ 。请参阅 :ref:`add_separator<class_PopupMenu_method_add_separator>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

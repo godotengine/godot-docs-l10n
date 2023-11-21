@@ -10,18 +10,18 @@
 EditorScenePostImport
 =====================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 导入后对场景进行后处理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 通过将\ **自定义脚本**\ 导入属性设置为从此类继承的 ``tool`` 脚本，可以在导入后立即自动修改导入的场景。
 
-\ :ref:`_post_import<class_EditorScenePostImport_method__post_import>` 回调接收导入场景的根节点，并返回场景的修改版本。使用示例：
+\ :ref:`_post_import<class_EditorScenePostImport_private_method__post_import>` 回调接收导入场景的根节点，并返回场景的修改版本。使用示例：
 
 
 .. tabs::
@@ -77,24 +77,24 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- `导入 3D 场景：自定义脚本 <../tutorials/assets_pipeline/importing_scenes.html#custom-script>`__
+- `导入 3D 场景：配置：使用导入脚本进行自动化 <../tutorials/assets_pipeline/importing_3d_scenes/import_configuration.html#using-import-scripts-for-automation>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Object<class_Object>` | :ref:`_post_import<class_EditorScenePostImport_method__post_import>` **(** :ref:`Node<class_Node>` scene **)** |virtual| |
-   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>` | :ref:`get_source_file<class_EditorScenePostImport_method_get_source_file>` **(** **)** |const|                           |
-   +-----------------------------+--------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Object<class_Object>` | :ref:`_post_import<class_EditorScenePostImport_private_method__post_import>` **(** :ref:`Node<class_Node>` scene **)** |virtual| |
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>` | :ref:`get_source_file<class_EditorScenePostImport_method_get_source_file>` **(** **)** |const|                                   |
+   +-----------------------------+----------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -102,10 +102,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EditorScenePostImport_method__post_import:
+.. _class_EditorScenePostImport_private_method__post_import:
 
 .. rst-class:: classref-method
 
@@ -125,10 +125,10 @@ Method Descriptions
 
 返回导入的源文件路径（如\ ``res://scene.dae``\ ）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

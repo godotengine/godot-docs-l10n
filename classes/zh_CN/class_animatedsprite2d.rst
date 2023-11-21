@@ -10,21 +10,21 @@
 AnimatedSprite2D
 ================
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 包含多个纹理作为动画播放帧的 Sprite 节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **AnimatedSprite2D** 与 :ref:`Sprite2D<class_Sprite2D>` 节点类似，但是包含多张纹理，可用作动画帧。动画使用 :ref:`SpriteFrames<class_SpriteFrames>` 资源创建，可以导入图像文件（或包含此类文件的文件夹）为该精灵提供动画帧。可以在编辑器的“动画帧”底部面板中配置 :ref:`SpriteFrames<class_SpriteFrames>` 资源。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`2D 精灵动画 <../tutorials/2d/2d_sprite_animation>`
 
@@ -32,8 +32,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -90,8 +90,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_AnimatedSprite2D_signal_animation_changed:
 
@@ -155,8 +155,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AnimatedSprite2D_property_animation:
 
@@ -332,8 +332,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AnimatedSprite2D_method_get_playing_speed:
 
@@ -440,10 +440,10 @@ void **stop** **(** **)**
 
 停止当前正在播放的动画。会将动画的位置重置为 ``0``\ ，并将 ``custom_speed`` 重置为 ``1.0``\ 。另见 :ref:`pause<class_AnimatedSprite2D_method_pause>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

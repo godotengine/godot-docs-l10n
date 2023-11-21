@@ -10,21 +10,25 @@
 VisibleOnScreenEnabler2D
 ========================
 
-**Inherits:** :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-某个节点在屏幕上不可见时自动禁用该节点。
+二维空间的矩形区块，当在屏幕上可见时，启用目标节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-VisibleOnScreenEnabler2D 检测它何时在屏幕上可见（就像 :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>` 一样）并自动启用或禁用目标节点。当 **VisibleOnScreenEnabler2D** 在屏幕上不可见时（包括当 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 为 ``false`` 时），目标节点会被禁用；当该启动节点可见时，目标节点会被启用。禁用是通过更改 :ref:`Node.process_mode<class_Node_property_process_mode>` 来实现的。
+**VisibleOnScreenEnabler2D** 包含 2D 空间的矩形区块和目标节点。当该区块的任何部分在屏幕上可见时，目标节点将自动启用（通过其 :ref:`Node.process_mode<class_Node_property_process_mode>` 属性），否则将自动禁用。例如，这可以被用于仅在玩家接近敌人时激活敌人。
+
+如果你只想在该区块在屏幕上可见时收到通知，请参阅 :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`\ 。
+
+\ **注意：**\ **VisibleOnScreenEnabler2D** 使用渲染剔除代码来确定它在屏幕上是否可见，因此除非 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 被设置为 ``true``\ ，否则它不会起作用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +45,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_VisibleOnScreenEnabler2D_EnableMode:
 
@@ -80,8 +84,8 @@ enum **EnableMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisibleOnScreenEnabler2D_property_enable_mode:
 
@@ -94,7 +98,7 @@ Property Descriptions
 - void **set_enable_mode** **(** :ref:`EnableMode<enum_VisibleOnScreenEnabler2D_EnableMode>` value **)**
 - :ref:`EnableMode<enum_VisibleOnScreenEnabler2D_EnableMode>` **get_enable_mode** **(** **)**
 
-确定节点的启用方式。与 :ref:`ProcessMode<enum_Node_ProcessMode>` 对应。被禁用的节点使用 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
+确定如何启用目标节点。对应于 :ref:`ProcessMode<enum_Node_ProcessMode>`\ 。当该节点被禁用时，它始终使用 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -111,12 +115,12 @@ Property Descriptions
 - void **set_enable_node_path** **(** :ref:`NodePath<class_NodePath>` value **)**
 - :ref:`NodePath<class_NodePath>` **get_enable_node_path** **(** **)**
 
-目标节点的路径，相对于 **VisibleOnScreenEnabler2D**\ 。目标节点会被缓存；只有在设置这个属性时（\ **VisibleOnScreenEnabler2D** 位于场景树中），以及 **VisibleOnScreenEnabler2D** 进入场景树时会进行赋值。如果路径无效，则不会发生任何事情。
+目标节点的路径，相对于 **VisibleOnScreenEnabler2D**\ 。目标节点会被缓存；只有在设置这个属性时（\ **VisibleOnScreenEnabler2D** 位于场景树中），以及 **VisibleOnScreenEnabler2D** 进入场景树时会进行赋值。如果路径无效，在编辑器中将打印一条错误，并且不会影响任何节点。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 GLTFState
 =========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 代表 GLTF 文件中的所有数据。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 包含 GLTF 文件中的所有节点和资源。用于 :ref:`GLTFDocument<class_GLTFDocument>` 的数据存储，能够让 :ref:`GLTFDocument<class_GLTFDocument>` 和所有 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类保持无状态。
 
@@ -25,15 +25,17 @@ GLTFState 的填写可以通过 :ref:`GLTFDocument<class_GLTFDocument>` 读取�
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- `GLTF asset header schema <https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/schema/asset.schema.json">`__
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+
+- `GLTF 资产头的模式 <https://github.com/KhronosGroup/glTF/blob/main/specification/2.0/schema/asset.schema.json">`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -66,8 +68,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -158,8 +160,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_GLTFState_constant_HANDLE_BINARY_DISCARD_TEXTURES:
 
@@ -199,8 +201,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GLTFState_property_base_path:
 
@@ -213,7 +215,7 @@ Property Descriptions
 - void **set_base_path** **(** :ref:`String<class_String>` value **)**
 - :ref:`String<class_String>` **get_base_path** **(** **)**
 
-The folder path associated with this GLTF data. This is used to find other files the GLTF file references, like images or binary buffers. This will be set during import when appending from a file, and will be set during export when writing to a file.
+与该 GLTF 数据关联的文件夹路径。这用于查找该 GLTF 文件引用的其他文件，例如图像或二进制缓冲区。这将在导入期间从文件追加时设置，并将在导出期间写入文件时设置。
 
 .. rst-class:: classref-item-separator
 
@@ -232,7 +234,7 @@ The folder path associated with this GLTF data. This is used to find other files
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -249,7 +251,7 @@ The folder path associated with this GLTF data. This is used to find other files
 - void **set_copyright** **(** :ref:`String<class_String>` value **)**
 - :ref:`String<class_String>` **get_copyright** **(** **)**
 
-The copyright string in the asset header of the GLTF file. This is set during import if present and export if non-empty. See the GLTF asset header documentation for more information.
+该 GLTF 文件的资产标头中的版权字符串。如果存在，则在导入期间设置；如果非空则在导出期间设置。详见 GLTF 资产标头文档。
 
 .. rst-class:: classref-item-separator
 
@@ -268,7 +270,7 @@ The copyright string in the asset header of the GLTF file. This is set during im
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -285,7 +287,7 @@ The copyright string in the asset header of the GLTF file. This is set during im
 - void **set_filename** **(** :ref:`String<class_String>` value **)**
 - :ref:`String<class_String>` **get_filename** **(** **)**
 
-The file name associated with this GLTF data. If it ends with ``.gltf``, this is text-based GLTF, otherwise this is binary GLB. This will be set during import when appending from a file, and will be set during export when writing to a file. If writing to a buffer, this will be an empty string.
+与该 GLTF 数据关联的文件名。如果它以 ``.gltf`` 结尾，则这是基于文本的 GLTF，否则这是二进制 GLB。这将在导入期间从文件追加时设置，并将在导出期间写入文件时设置。如果写入到缓冲区，这将是一个空字符串。
 
 .. rst-class:: classref-item-separator
 
@@ -304,7 +306,7 @@ The file name associated with this GLTF data. If it ends with ``.gltf``, this is
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -323,7 +325,7 @@ The file name associated with this GLTF data. If it ends with ``.gltf``, this is
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -342,7 +344,7 @@ The file name associated with this GLTF data. If it ends with ``.gltf``, this is
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +363,7 @@ The file name associated with this GLTF data. If it ends with ``.gltf``, this is
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -414,7 +416,7 @@ GLTF 文件的根节点。通常，一个 GLTF 文件只有一个场景，因此
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-section-separator
 
@@ -422,8 +424,8 @@ GLTF 文件的根节点。通常，一个 GLTF 文件只有一个场景，因此
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_GLTFState_method_add_used_extension:
 
@@ -431,7 +433,7 @@ Method Descriptions
 
 void **add_used_extension** **(** :ref:`String<class_String>` extension_name, :ref:`bool<class_bool>` required **)**
 
-在序列化期间，将一个扩展名追加到该 GLTF 文件使用的扩展名列表在。如果 ``required`` 为 true，则该扩展名也将被添加到所需扩展名列表中。不要在 :ref:`GLTFDocumentExtension._export_post<class_GLTFDocumentExtension_method__export_post>` 中运行它，因为那个阶段已来不及添加扩展。最终的列表将按字母顺序排序。
+在序列化期间，将一个扩展名追加到该 GLTF 文件使用的扩展名列表在。如果 ``required`` 为 true，则该扩展名也将被添加到所需扩展名列表中。不要在 :ref:`GLTFDocumentExtension._export_post<class_GLTFDocumentExtension_private_method__export_post>` 中运行它，因为那个阶段已来不及添加扩展。最终的列表将按字母顺序排序。
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +447,7 @@ void **add_used_extension** **(** :ref:`String<class_String>` extension_name, :r
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -509,7 +511,7 @@ void **add_used_extension** **(** :ref:`String<class_String>` extension_name, :r
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -535,7 +537,7 @@ void **add_used_extension** **(** :ref:`String<class_String>` extension_name, :r
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -573,7 +575,7 @@ void **add_used_extension** **(** :ref:`String<class_String>` extension_name, :r
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +677,7 @@ void **add_used_extension** **(** :ref:`String<class_String>` extension_name, :r
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -713,7 +715,7 @@ void **set_accessors** **(** :ref:`GLTFAccessor[]<class_GLTFAccessor>` accessors
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -753,7 +755,7 @@ void **set_buffer_views** **(** :ref:`GLTFBufferView[]<class_GLTFBufferView>` bu
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -779,7 +781,7 @@ void **set_handle_binary_image** **(** :ref:`int<class_int>` method **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -817,7 +819,7 @@ void **set_materials** **(** :ref:`Material[]<class_Material>` materials **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -891,7 +893,7 @@ void **set_textures** **(** :ref:`GLTFTexture[]<class_GLTFTexture>` textures **)
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -917,10 +919,10 @@ void **set_unique_names** **(** :ref:`String[]<class_String>` unique_names **)**
 
 设置该状态中的唯一节点名称。这用于导入过程和导出过程。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

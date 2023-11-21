@@ -14,8 +14,8 @@ Vector3
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 包含三个元素的结构体，可用于代表 3D 坐标或任何数值的三元组。
 
@@ -27,8 +27,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`数学文档索引 <../tutorials/math/index>`
 
@@ -44,8 +44,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -172,8 +172,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -226,8 +226,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Vector3_constant_AXIS_X:
 
@@ -379,8 +379,8 @@ Z 轴的枚举值。由 :ref:`max_axis_index<class_Vector3_method_max_axis_index
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Vector3_property_x:
 
@@ -420,8 +420,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Vector3_constructor_Vector3:
 
@@ -467,8 +467,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Vector3_method_abs:
 
@@ -586,7 +586,7 @@ Method Descriptions
 
 返回该向量和 ``b`` 之间进行三次插值 ``weight`` 处的结果，使用 ``pre_a`` 和 ``post_b`` 作为控制柄。\ ``weight`` 在 0.0 到 1.0 的范围内，代表插值的量。
 
-通过使用时间值，可以比 ``cubic_interpolate()`` 进行更平滑的插值。
+通过使用时间值，可以比 :ref:`cubic_interpolate<class_Vector3_method_cubic_interpolate>` 进行更平滑的插值。
 
 .. rst-class:: classref-item-separator
 
@@ -998,8 +998,8 @@ Method Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Vector3_operator_neq_Vector3:
 
@@ -1023,7 +1023,11 @@ Operator Descriptions
 
 :ref:`Vector3<class_Vector3>` **operator *** **(** :ref:`Basis<class_Basis>` right **)**
 
-使用给定的 :ref:`Basis<class_Basis>` 矩阵逆变换（乘）该 **Vector3**\ 。
+假设该基是正交的（即旋转/反射可以，缩放/倾斜则不然），将 **Vector3** 逆向变换（乘以）给定的 :ref:`Basis<class_Basis>` 矩阵。
+
+\ ``vector * basis`` 性当于 ``basis.transposed() * vector``\ 。请参阅 :ref:`Basis.transposed<class_Basis_method_transposed>`\ 。
+
+对于通过非正交的基的逆进行的变换（例如使用缩放），可以使用 ``basis.inverse() * vector`` 代替。请参阅 :ref:`Basis.inverse<class_Basis_method_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1035,7 +1039,9 @@ Operator Descriptions
 
 :ref:`Vector3<class_Vector3>` **operator *** **(** :ref:`Quaternion<class_Quaternion>` right **)**
 
-使用给定的 :ref:`Quaternion<class_Quaternion>` 对该 **Vector3** 进行逆变换（做乘法）。
+将 **Vector3** 与给定的 :ref:`Quaternion<class_Quaternion>` 进行逆向变换（相乘）。
+
+\ ``vector * quaternion`` 相当于 ``quaternion.inverse() * vector``\ 。请参阅 :ref:`Quaternion.inverse<class_Quaternion_method_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1047,7 +1053,11 @@ Operator Descriptions
 
 :ref:`Vector3<class_Vector3>` **operator *** **(** :ref:`Transform3D<class_Transform3D>` right **)**
 
-使用给定的 :ref:`Transform3D<class_Transform3D>` 变换矩阵对该 **Vector3** 进行逆变换（做乘法）。
+假设该变换的基是正交的（即旋转/反射可以，缩放/倾斜不行），将 **Vector3** 逆向变换（乘以）给定的 :ref:`Transform3D<class_Transform3D>` 变换矩阵。
+
+\ ``vector * transform`` 相当于 ``transform.inverse() * vector``\ 。请参阅 :ref:`Transform3D.inverse<class_Transform3D_method_inverse>`\ 。
+
+对于通过仿射变换的逆进行的变换（例如缩放），可以使用 ``transform.affine_inverse() * vector`` 代替。请参阅 :ref:`Transform3D.affine_inverse<class_Transform3D_method_affine_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1269,10 +1279,10 @@ Operator Descriptions
 
 返回该 **Vector3** 的负值。和写 ``Vector3(-v.x, -v.y, -v.z)`` 是一样的。该操作在保持相同幅度的同时，翻转向量的方向。对于浮点数，零也有正负两种。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

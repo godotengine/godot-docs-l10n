@@ -10,34 +10,34 @@
 EditorResourceTooltipPlugin
 ===========================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 为处理的资源类型制作高阶工具提示的插件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 :ref:`FileSystemDock<class_FileSystemDock>` 使用的资源工具提示插件，能够为指定资源生成自定义工具提示。例如，\ :ref:`Texture2D<class_Texture2D>` 的工具提示会显示较大的预览和该纹理的尺寸。
 
-插件必须先使用 :ref:`FileSystemDock.add_resource_tooltip_plugin<class_FileSystemDock_method_add_resource_tooltip_plugin>` 注册。用户悬停在文件系统面板中该插件能够处理的资源上时，就会调用 :ref:`_make_tooltip_for_path<class_EditorResourceTooltipPlugin_method__make_tooltip_for_path>` 来创建工具提示。工作原理类似于 :ref:`Control._make_custom_tooltip<class_Control_method__make_custom_tooltip>`\ 。
+插件必须先使用 :ref:`FileSystemDock.add_resource_tooltip_plugin<class_FileSystemDock_method_add_resource_tooltip_plugin>` 注册。用户悬停在文件系统面板中该插件能够处理的资源上时，就会调用 :ref:`_make_tooltip_for_path<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` 来创建工具提示。工作原理类似于 :ref:`Control._make_custom_tooltip<class_Control_private_method__make_custom_tooltip>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`       | :ref:`_handles<class_EditorResourceTooltipPlugin_method__handles>` **(** :ref:`String<class_String>` type **)** |virtual| |const|                                                                                                               |
-   +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Control<class_Control>` | :ref:`_make_tooltip_for_path<class_EditorResourceTooltipPlugin_method__make_tooltip_for_path>` **(** :ref:`String<class_String>` path, :ref:`Dictionary<class_Dictionary>` metadata, :ref:`Control<class_Control>` base **)** |virtual| |const| |
-   +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                          | :ref:`request_thumbnail<class_EditorResourceTooltipPlugin_method_request_thumbnail>` **(** :ref:`String<class_String>` path, :ref:`TextureRect<class_TextureRect>` control **)** |const|                                                        |
-   +-------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`       | :ref:`_handles<class_EditorResourceTooltipPlugin_private_method__handles>` **(** :ref:`String<class_String>` type **)** |virtual| |const|                                                                                                               |
+   +-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Control<class_Control>` | :ref:`_make_tooltip_for_path<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` **(** :ref:`String<class_String>` path, :ref:`Dictionary<class_Dictionary>` metadata, :ref:`Control<class_Control>` base **)** |virtual| |const| |
+   +-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                          | :ref:`request_thumbnail<class_EditorResourceTooltipPlugin_method_request_thumbnail>` **(** :ref:`String<class_String>` path, :ref:`TextureRect<class_TextureRect>` control **)** |const|                                                                |
+   +-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -45,10 +45,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EditorResourceTooltipPlugin_method__handles:
+.. _class_EditorResourceTooltipPlugin_private_method__handles:
 
 .. rst-class:: classref-method
 
@@ -60,28 +60,28 @@ Method Descriptions
 
 ----
 
-.. _class_EditorResourceTooltipPlugin_method__make_tooltip_for_path:
+.. _class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path:
 
 .. rst-class:: classref-method
 
 :ref:`Control<class_Control>` **_make_tooltip_for_path** **(** :ref:`String<class_String>` path, :ref:`Dictionary<class_Dictionary>` metadata, :ref:`Control<class_Control>` base **)** |virtual| |const|
 
-Create and return a tooltip that will be displayed when the user hovers a resource under the given ``path`` in filesystem dock.
+创建并返回工具提示，会在用户悬停在文件系统面板上路径为 ``path`` 的资源上时显示。
 
-The ``metadata`` dictionary is provided by preview generator (see :ref:`EditorResourcePreviewGenerator._generate<class_EditorResourcePreviewGenerator_method__generate>`).
+元数据字典 ``metadata`` 由预览生成器提供（见 :ref:`EditorResourcePreviewGenerator._generate<class_EditorResourcePreviewGenerator_private_method__generate>`\ ）。
 
-\ ``base`` is the base default tooltip, which is a :ref:`VBoxContainer<class_VBoxContainer>` with a file name, type and size labels. If another plugin handled the same file type, ``base`` will be output from the previous plugin. For best result, make sure the base tooltip is part of the returned :ref:`Control<class_Control>`.
+\ ``base`` 是基础的默认工具提示，是一个包含文件名、类型、大小标签的 :ref:`VBoxContainer<class_VBoxContainer>`\ 。如果其他插件也能够处理相同的文件类型，那么 ``base`` 就是上一个插件的输出。为了达到最佳效果，请确保基础工具提示是返回的 :ref:`Control<class_Control>` 的一部分。
 
-\ **Note:** It's unadvised to use :ref:`ResourceLoader.load<class_ResourceLoader_method_load>`, especially with heavy resources like models or textures, because it will make the editor unresponsive when creating the tooltip. You can use :ref:`request_thumbnail<class_EditorResourceTooltipPlugin_method_request_thumbnail>` if you want to display a preview in your tooltip.
+\ **注意：**\ 不建议使用 :ref:`ResourceLoader.load<class_ResourceLoader_method_load>`\ ，尤其是模型、纹理等开销较大的资源，否则会在创建工具提示时让编辑器失去响应。如果想要在工具提示中显示预览，可以使用 :ref:`request_thumbnail<class_EditorResourceTooltipPlugin_method_request_thumbnail>`\ 。
 
-\ **Note:** If you decide to discard the ``base``, make sure to call :ref:`Node.queue_free<class_Node_method_queue_free>`, because it's not freed automatically.
+\ **注意：**\ 如果你决定要丢弃 ``base``\ ，请确保调用了 :ref:`Node.queue_free<class_Node_method_queue_free>`\ ，否则不会自动释放。
 
 ::
 
     func _make_tooltip_for_path(path, metadata, base):
         var t_rect = TextureRect.new()
         request_thumbnail(path, t_rect)
-        base.add_child(t_rect) # The TextureRect will appear at the bottom of the tooltip.
+        base.add_child(t_rect) # TextureRect 会出现在工具提示的底部。
         return base
 
 .. rst-class:: classref-item-separator
@@ -96,10 +96,10 @@ void **request_thumbnail** **(** :ref:`String<class_String>` path, :ref:`Texture
 
 为给定的 :ref:`TextureRect<class_TextureRect>` 请求缩略图。缩略图使用 :ref:`EditorResourcePreview<class_EditorResourcePreview>` 异步创建，会在可用时自动设置。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

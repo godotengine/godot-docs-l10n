@@ -10,21 +10,21 @@
 Engine
 ======
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 提供对引擎属性的访问。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **Engine** 单例使你可以查询和修改项目的运行时参数，例如每秒帧数，时间范围等。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -109,8 +109,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Engine_property_max_fps:
 
@@ -186,7 +186,7 @@ Property Descriptions
 - void **set_physics_ticks_per_second** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_physics_ticks_per_second** **(** **)**
 
-每秒执行的固定迭代次数。用于控制物理仿真和 :ref:`Node._physics_process<class_Node_method__physics_process>` 的执行频率。因为 Godot 不会进行物理步骤的插值，所以通常应该总是将其设成大于等于 ``60`` 的值。因此，如果值小于 ``60`` 就会看起来卡顿。提高该值可以让输入变得更加灵敏、也可以绕过碰撞隧道问题，但请记得这么做也会提升 CPU 的占用率。另请参阅 :ref:`max_fps<class_Engine_property_max_fps>` 和 :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ 。
+每秒执行的固定迭代次数。用于控制物理仿真和 :ref:`Node._physics_process<class_Node_private_method__physics_process>` 的执行频率。因为 Godot 不会进行物理步骤的插值，所以通常应该总是将其设成大于等于 ``60`` 的值。因此，如果值小于 ``60`` 就会看起来卡顿。提高该值可以让输入变得更加灵敏、也可以绕过碰撞隧道问题，但请记得这么做也会提升 CPU 的占用率。另请参阅 :ref:`max_fps<class_Engine_property_max_fps>` 和 :ref:`ProjectSettings.physics/common/physics_ticks_per_second<class_ProjectSettings_property_physics/common/physics_ticks_per_second>`\ 。
 
 \ **注意：**\ 每个渲染帧最多只能模拟 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 个物理周期。如果为了追赶渲染，需要在每个渲染帧中模拟更多物理周期，游戏看上去会是降速的（即便在物理计算中始终使用 ``delta``\ ）。因此，如果增大了 :ref:`physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>`\ ，而且远大于默认值，那么建议将 :ref:`max_physics_steps_per_frame<class_Engine_property_max_physics_steps_per_frame>` 也调大。
 
@@ -234,8 +234,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Engine_method_get_architecture_name:
 
@@ -700,10 +700,10 @@ void **unregister_singleton** **(** :ref:`StringName<class_StringName>` name **)
 
 将名称为 ``name`` 的单例解除注册。该单例对象不会被释放。仅能够对通过 :ref:`register_singleton<class_Engine_method_register_singleton>` 创建的用户定义单例使用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

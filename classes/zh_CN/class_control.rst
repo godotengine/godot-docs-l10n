@@ -10,16 +10,16 @@
 Control
 =======
 
-**Inherits:** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`
+**派生：** :ref:`BaseButton<class_BaseButton>`, :ref:`ColorRect<class_ColorRect>`, :ref:`Container<class_Container>`, :ref:`GraphEdit<class_GraphEdit>`, :ref:`ItemList<class_ItemList>`, :ref:`Label<class_Label>`, :ref:`LineEdit<class_LineEdit>`, :ref:`MenuBar<class_MenuBar>`, :ref:`NinePatchRect<class_NinePatchRect>`, :ref:`Panel<class_Panel>`, :ref:`Range<class_Range>`, :ref:`ReferenceRect<class_ReferenceRect>`, :ref:`RichTextLabel<class_RichTextLabel>`, :ref:`Separator<class_Separator>`, :ref:`TabBar<class_TabBar>`, :ref:`TextEdit<class_TextEdit>`, :ref:`TextureRect<class_TextureRect>`, :ref:`Tree<class_Tree>`, :ref:`VideoStreamPlayer<class_VideoStreamPlayer>`
 
 所有 GUI 控件的基类。根据其父控件调整其位置和大小。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 所有 UI 相关节点的基类。\ **Control** 具有定义其范围的边界矩形，相对于父控件或当前视口的锚点位置，以及相对于锚点的偏移。当节点、任何父节点或屏幕尺寸发生变化时，偏移就会自动更新。
 
@@ -29,9 +29,9 @@ Description
 
 Godot 使用视口来传播输入事件。视口负责将 :ref:`InputEvent<class_InputEvent>` 传播给它的子节点。因为 :ref:`SceneTree.root<class_SceneTree_property_root>` 是 :ref:`Window<class_Window>`\ ，所以游戏中的所有 UI 元素都会自动进行传播。
 
-输入事件通过调用 :ref:`Node._input<class_Node_method__input>` 在 :ref:`SceneTree<class_SceneTree>` 中传播，从根节点传播到所有子节点。对 UI 元素而言，覆盖的最好是 :ref:`_gui_input<class_Control_method__gui_input>`\ ，可以过滤掉无关的输入事件，例如它会对 Z 顺序、\ :ref:`mouse_filter<class_Control_property_mouse_filter>`\ 、焦点、事件是否在该控件的边界框内等条件进行检查。
+输入事件通过调用 :ref:`Node._input<class_Node_private_method__input>` 在 :ref:`SceneTree<class_SceneTree>` 中传播，从根节点传播到所有子节点。对 UI 元素而言，覆盖的最好是 :ref:`_gui_input<class_Control_private_method__gui_input>`\ ，可以过滤掉无关的输入事件，例如它会对 Z 顺序、\ :ref:`mouse_filter<class_Control_property_mouse_filter>`\ 、焦点、事件是否在该控件的边界框内等条件进行检查。
 
-请调用 :ref:`accept_event<class_Control_method_accept_event>`\ ，这样其他节点就不会收到该事件。输入被接受后，就会被标记为已处理，\ :ref:`Node._unhandled_input<class_Node_method__unhandled_input>` 不会对它进行处理。
+请调用 :ref:`accept_event<class_Control_method_accept_event>`\ ，这样其他节点就不会收到该事件。输入被接受后，就会被标记为已处理，\ :ref:`Node._unhandled_input<class_Node_private_method__unhandled_input>` 不会对它进行处理。
 
 只能有一个 **Control** 节点处于焦点。只有处于焦点的节点才会接收到事件。要获得焦点，请调用 :ref:`grab_focus<class_Control_method_grab_focus>`\ 。导致 **Control** 节点失去焦点的情况有：其他节点获得了焦点、隐藏了聚焦节点。
 
@@ -43,8 +43,8 @@ Godot 使用视口来传播输入事件。视口负责将 :ref:`InputEvent<class
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`GUI 文档索引 <../tutorials/ui/index>`
 
@@ -58,8 +58,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -146,30 +146,30 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                      | :ref:`_can_drop_data<class_Control_method__can_drop_data>` **(** :ref:`Vector2<class_Vector2>` at_position, :ref:`Variant<class_Variant>` data **)** |virtual| |const|                                                                                             |
+   | :ref:`bool<class_bool>`                      | :ref:`_can_drop_data<class_Control_private_method__can_drop_data>` **(** :ref:`Vector2<class_Vector2>` at_position, :ref:`Variant<class_Variant>` data **)** |virtual| |const|                                                                                     |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                         | :ref:`_drop_data<class_Control_method__drop_data>` **(** :ref:`Vector2<class_Vector2>` at_position, :ref:`Variant<class_Variant>` data **)** |virtual|                                                                                                             |
+   | void                                         | :ref:`_drop_data<class_Control_private_method__drop_data>` **(** :ref:`Vector2<class_Vector2>` at_position, :ref:`Variant<class_Variant>` data **)** |virtual|                                                                                                     |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Variant<class_Variant>`                | :ref:`_get_drag_data<class_Control_method__get_drag_data>` **(** :ref:`Vector2<class_Vector2>` at_position **)** |virtual|                                                                                                                                         |
+   | :ref:`Variant<class_Variant>`                | :ref:`_get_drag_data<class_Control_private_method__get_drag_data>` **(** :ref:`Vector2<class_Vector2>` at_position **)** |virtual|                                                                                                                                 |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Vector2<class_Vector2>`                | :ref:`_get_minimum_size<class_Control_method__get_minimum_size>` **(** **)** |virtual| |const|                                                                                                                                                                     |
+   | :ref:`Vector2<class_Vector2>`                | :ref:`_get_minimum_size<class_Control_private_method__get_minimum_size>` **(** **)** |virtual| |const|                                                                                                                                                             |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                  | :ref:`_get_tooltip<class_Control_method__get_tooltip>` **(** :ref:`Vector2<class_Vector2>` at_position **)** |virtual| |const|                                                                                                                                     |
+   | :ref:`String<class_String>`                  | :ref:`_get_tooltip<class_Control_private_method__get_tooltip>` **(** :ref:`Vector2<class_Vector2>` at_position **)** |virtual| |const|                                                                                                                             |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                         | :ref:`_gui_input<class_Control_method__gui_input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                                                                                 |
+   | void                                         | :ref:`_gui_input<class_Control_private_method__gui_input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                                                                         |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                      | :ref:`_has_point<class_Control_method__has_point>` **(** :ref:`Vector2<class_Vector2>` point **)** |virtual| |const|                                                                                                                                               |
+   | :ref:`bool<class_bool>`                      | :ref:`_has_point<class_Control_private_method__has_point>` **(** :ref:`Vector2<class_Vector2>` point **)** |virtual| |const|                                                                                                                                       |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Object<class_Object>`                  | :ref:`_make_custom_tooltip<class_Control_method__make_custom_tooltip>` **(** :ref:`String<class_String>` for_text **)** |virtual| |const|                                                                                                                          |
+   | :ref:`Object<class_Object>`                  | :ref:`_make_custom_tooltip<class_Control_private_method__make_custom_tooltip>` **(** :ref:`String<class_String>` for_text **)** |virtual| |const|                                                                                                                  |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Vector3i[]<class_Vector3i>`            | :ref:`_structured_text_parser<class_Control_method__structured_text_parser>` **(** :ref:`Array<class_Array>` args, :ref:`String<class_String>` text **)** |virtual| |const|                                                                                        |
+   | :ref:`Vector3i[]<class_Vector3i>`            | :ref:`_structured_text_parser<class_Control_private_method__structured_text_parser>` **(** :ref:`Array<class_Array>` args, :ref:`String<class_String>` text **)** |virtual| |const|                                                                                |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                         | :ref:`accept_event<class_Control_method_accept_event>` **(** **)**                                                                                                                                                                                                 |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -192,6 +192,8 @@ Methods
    | :ref:`Control<class_Control>`                | :ref:`find_next_valid_focus<class_Control_method_find_next_valid_focus>` **(** **)** |const|                                                                                                                                                                       |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Control<class_Control>`                | :ref:`find_prev_valid_focus<class_Control_method_find_prev_valid_focus>` **(** **)** |const|                                                                                                                                                                       |
+   +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Control<class_Control>`                | :ref:`find_valid_focus_neighbor<class_Control_method_find_valid_focus_neighbor>` **(** :ref:`Side<enum_@GlobalScope_Side>` side **)** |const|                                                                                                                      |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                         | :ref:`force_drag<class_Control_method_force_drag>` **(** :ref:`Variant<class_Variant>` data, :ref:`Control<class_Control>` preview **)**                                                                                                                           |
    +----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -330,8 +332,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Control_signal_focus_entered:
 
@@ -387,9 +389,9 @@ Signals
 
 **mouse_entered** **(** **)**
 
-Emitted when the mouse cursor enters the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+当鼠标光标进入控件（或任何子控件）的可见区域时发出，可见区域即未被其他 Control 和 Window 遮挡的区域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允许事件达到，与控件是否持有焦点无关。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect, which Control receives the signal.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影响哪个 Control 会收到信号。
 
 .. rst-class:: classref-item-separator
 
@@ -401,17 +403,17 @@ Emitted when the mouse cursor enters the control's visible area, that is not occ
 
 **mouse_exited** **(** **)**
 
-Emitted when the mouse cursor leaves the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+当鼠标光标离开控件（或任何子控件）的可见区域时发出，可见区域即未被其他 Control 和 Window 遮挡的区域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允许事件达到，与控件是否持有焦点无关。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect, which Control receives the signal.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影响哪个 Control 会收到信号。
 
-\ **Note:** If you want to check whether the mouse truly left the area, ignoring any top nodes, you can use code like this:
+\ **注意：**\ 如果要忽略任何顶部节点，检查鼠标是否真的离开了该区域，可以使用如下代码：
 
 ::
 
     func _on_mouse_exited():
         if not Rect2(Vector2(), size).has_point(get_local_mouse_position()):
-            # Not hovering over area.
+            # 未悬停在区域上。
 
 .. rst-class:: classref-item-separator
 
@@ -455,8 +457,8 @@ Emitted when the mouse cursor leaves the control's visible area, that is not occ
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Control_FocusMode:
 
@@ -890,7 +892,7 @@ enum **MouseFilter**:
 
 :ref:`MouseFilter<enum_Control_MouseFilter>` **MOUSE_FILTER_STOP** = ``0``
 
-The control will receive mouse movement input events and mouse button input events if clicked on through :ref:`_gui_input<class_Control_method__gui_input>`. And the control will receive the :ref:`mouse_entered<class_Control_signal_mouse_entered>` and :ref:`mouse_exited<class_Control_signal_mouse_exited>` signals. These events are automatically marked as handled, and they will not propagate further to other controls. This also results in blocking signals in other controls.
+在控件上点击时，将通过 :ref:`_gui_input<class_Control_private_method__gui_input>` 收到鼠标移动输入事件和鼠标按钮输入事件。控件能够接收到 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 信号。这些事件将自动被标记为已处理，不会进一步传播到其他控件。这也会导致其他控件中的信号被阻止。
 
 .. _class_Control_constant_MOUSE_FILTER_PASS:
 
@@ -898,7 +900,7 @@ The control will receive mouse movement input events and mouse button input even
 
 :ref:`MouseFilter<enum_Control_MouseFilter>` **MOUSE_FILTER_PASS** = ``1``
 
-The control will receive mouse movement input events and mouse button input events if clicked on through :ref:`_gui_input<class_Control_method__gui_input>`. And the control will receive the :ref:`mouse_entered<class_Control_signal_mouse_entered>` and :ref:`mouse_exited<class_Control_signal_mouse_exited>` signals. If this control does not handle the event, the parent control (if any) will be considered, and so on until there is no more parent control to potentially handle it. This also allows signals to fire in other controls. If no control handled it, the event will be passed to :ref:`Node._shortcut_input<class_Node_method__shortcut_input>` for further processing.
+在控件上点击时，将通过 :ref:`_gui_input<class_Control_private_method__gui_input>` 收到鼠标移动输入事件和鼠标按钮输入事件。并且控件能够接收到 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 信号。如果此控件不处理事件，则将考虑其父控件（如果有的话），依此类推，直到没有更多的父控件可以处理该事件。这也允许信号在其他控件中触发。如果没有控件处理它，该事件将被传递到 :ref:`Node._shortcut_input<class_Node_private_method__shortcut_input>` 进行进一步处理。
 
 .. _class_Control_constant_MOUSE_FILTER_IGNORE:
 
@@ -906,7 +908,9 @@ The control will receive mouse movement input events and mouse button input even
 
 :ref:`MouseFilter<enum_Control_MouseFilter>` **MOUSE_FILTER_IGNORE** = ``2``
 
-The control will not receive mouse movement input events and mouse button input events if clicked on through :ref:`_gui_input<class_Control_method__gui_input>`. The control will also not receive the :ref:`mouse_entered<class_Control_signal_mouse_entered>` nor :ref:`mouse_exited<class_Control_signal_mouse_exited>` signals. This will not block other controls from receiving these events or firing the signals. Ignored events will not be handled automatically.
+在控件上点击时，不会通过 :ref:`_gui_input<class_Control_private_method__gui_input>` 收到鼠标移动输入事件和鼠标按钮输入事件，也不会接收到 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 信号。这不会阻止其他控件接收这些事件或触发信号。被忽略的事件将不会被自动处理。
+
+\ **注意：**\ 如果控件已收到 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 但未收到 :ref:`mouse_exited<class_Control_signal_mouse_exited>`\ ，则将 :ref:`mouse_filter<class_Control_property_mouse_filter>` 更改为 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>` 将导致发出 :ref:`mouse_exited<class_Control_signal_mouse_exited>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1058,8 +1062,8 @@ enum **TextDirection**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Control_constant_NOTIFICATION_RESIZED:
 
@@ -1075,9 +1079,11 @@ Constants
 
 **NOTIFICATION_MOUSE_ENTER** = ``41``
 
-Sent when the mouse cursor enters the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+当鼠标光标进入控件（或任何子控件）的可见区域时发送，可见区域即未被其他 Control 和 Window 遮挡的区域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允许事件达到，与控件是否持有焦点无关。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect, which Control receives the notification.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影响哪个 Control 会收到该通知。
+
+另见 :ref:`NOTIFICATION_MOUSE_ENTER_SELF<class_Control_constant_NOTIFICATION_MOUSE_ENTER_SELF>`\ 。
 
 .. _class_Control_constant_NOTIFICATION_MOUSE_EXIT:
 
@@ -1085,9 +1091,35 @@ Sent when the mouse cursor enters the control's visible area, that is not occlud
 
 **NOTIFICATION_MOUSE_EXIT** = ``42``
 
-Sent when the mouse cursor leaves the control's visible area, that is not occluded behind other Controls or Windows, provided its :ref:`mouse_filter<class_Control_property_mouse_filter>` lets the event reach it and regardless if it's currently focused or not.
+当鼠标光标离开控件（以及所有子控件）的可见区域时发送，可见区域即未被其他 Control 和 Window 遮挡的区域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允许事件达到，与控件是否持有焦点无关。
 
-\ **Note:** :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` doesn't affect, which Control receives the notification.
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影响哪个 Control 会收到该通知。
+
+另见 :ref:`NOTIFICATION_MOUSE_EXIT_SELF<class_Control_constant_NOTIFICATION_MOUSE_EXIT_SELF>`\ 。
+
+.. _class_Control_constant_NOTIFICATION_MOUSE_ENTER_SELF:
+
+.. rst-class:: classref-constant
+
+**NOTIFICATION_MOUSE_ENTER_SELF** = ``60``
+
+当鼠标光标进入控件的可见区域时发送，可见区域即未被其他 Control 和 Window 遮挡的区域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允许事件达到，与控件是否持有焦点无关。
+
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影响哪个 Control 会收到该通知。
+
+另见 :ref:`NOTIFICATION_MOUSE_ENTER<class_Control_constant_NOTIFICATION_MOUSE_ENTER>`\ 。
+
+.. _class_Control_constant_NOTIFICATION_MOUSE_EXIT_SELF:
+
+.. rst-class:: classref-constant
+
+**NOTIFICATION_MOUSE_EXIT_SELF** = ``61``
+
+当鼠标光标离开控件的可见区域时发送，可见区域即未被其他 Control 和 Window 遮挡的区域，需要 :ref:`mouse_filter<class_Control_property_mouse_filter>` 允许事件达到，与控件是否持有焦点无关。
+
+\ **注意：**\ :ref:`CanvasItem.z_index<class_CanvasItem_property_z_index>` 不影响哪个 Control 会收到该通知。
+
+另见 :ref:`NOTIFICATION_MOUSE_EXIT<class_Control_constant_NOTIFICATION_MOUSE_EXIT>`\ 。
 
 .. _class_Control_constant_NOTIFICATION_FOCUS_ENTER:
 
@@ -1129,7 +1161,9 @@ Sent when the mouse cursor leaves the control's visible area, that is not occlud
 
 **NOTIFICATION_SCROLL_BEGIN** = ``47``
 
-当此节点在已开始滚动的 :ref:`ScrollContainer<class_ScrollContainer>` 内部时发送。
+当该节点位于 :ref:`ScrollContainer<class_ScrollContainer>` 内部时发送，该容器在通过\ *触摸事件*\ 拖动该可滚动区域时已开始滚动。通过拖动滚动条滚动、使用鼠标滚轮滚动、或使用键盘/游戏手柄事件滚动时，\ *不*\ 会发送该通知。
+
+\ **注意：**\ 该信号仅在在 Android 或 iOS 上、或当启用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 时的桌面/Web 平台上发出。
 
 .. _class_Control_constant_NOTIFICATION_SCROLL_END:
 
@@ -1137,7 +1171,9 @@ Sent when the mouse cursor leaves the control's visible area, that is not occlud
 
 **NOTIFICATION_SCROLL_END** = ``48``
 
-当此节点在已停止滚动的 :ref:`ScrollContainer<class_ScrollContainer>` 内部时发送。
+当该节点位于 :ref:`ScrollContainer<class_ScrollContainer>` 内部时发送，该容器在通过\ *触摸事件*\ 拖动该可滚动区域时已停止滚动。通过拖动滚动条滚动、使用鼠标滚轮滚动、或使用键盘/游戏手柄事件滚动时，\ *不*\ 会发送该通知。
+
+\ **注意：**\ 该信号仅在在 Android 或 iOS 上、或当启用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 时的桌面/Web 平台上发出。
 
 .. _class_Control_constant_NOTIFICATION_LAYOUT_DIRECTION_CHANGED:
 
@@ -1153,8 +1189,8 @@ Sent when the mouse cursor leaves the control's visible area, that is not occlud
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Control_property_anchor_bottom:
 
@@ -1512,7 +1548,7 @@ Property Descriptions
 - void **set_mouse_filter** **(** :ref:`MouseFilter<enum_Control_MouseFilter>` value **)**
 - :ref:`MouseFilter<enum_Control_MouseFilter>` **get_mouse_filter** **(** **)**
 
-控制控件是否能够通过 :ref:`_gui_input<class_Control_method__gui_input>` 接收鼠标按钮输入事件，以及如何处理这些事件。还控制控件是否能接收 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 信号。参阅常量来了解每个常量的作用。
+控制控件是否能够通过 :ref:`_gui_input<class_Control_private_method__gui_input>` 接收鼠标按钮输入事件，以及如何处理这些事件。还控制控件是否能接收 :ref:`mouse_entered<class_Control_signal_mouse_entered>` 和 :ref:`mouse_exited<class_Control_signal_mouse_exited>` 信号。参阅常量来了解每个常量的作用。
 
 .. rst-class:: classref-item-separator
 
@@ -1529,9 +1565,9 @@ Property Descriptions
 - void **set_force_pass_scroll_events** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_force_pass_scroll_events** **(** **)**
 
-启用后，即使 :ref:`mouse_filter<class_Control_property_mouse_filter>` 被设置为 :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>`\ ，由 :ref:`_gui_input<class_Control_method__gui_input>` 处理的滚轮事件也会被传递给父控件。由于它默认为“真”，这允许嵌套的可滚动容器可以开箱即用。
+启用后，即使 :ref:`mouse_filter<class_Control_property_mouse_filter>` 被设置为 :ref:`MOUSE_FILTER_STOP<class_Control_constant_MOUSE_FILTER_STOP>`\ ，由 :ref:`_gui_input<class_Control_private_method__gui_input>` 处理的滚轮事件也会被传递给父控件。由于它默认为“真”，这允许嵌套的可滚动容器可以开箱即用。
 
-如果不希望滚动事件进入 :ref:`Node._unhandled_input<class_Node_method__unhandled_input>` 处理，则应该在用户界面的根部禁用它。
+如果不希望滚动事件进入 :ref:`Node._unhandled_input<class_Node_private_method__unhandled_input>` 处理，则应该在用户界面的根部禁用它。
 
 .. rst-class:: classref-item-separator
 
@@ -1844,7 +1880,7 @@ Property Descriptions
 
 默认工具提示文本。如果 :ref:`mouse_filter<class_Control_property_mouse_filter>` 属性不是 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ ，则当用户的鼠标光标在此控件上停留片刻时，将出现工具提示。可以使用 :ref:`ProjectSettings.gui/timers/tooltip_delay_sec<class_ProjectSettings_property_gui/timers/tooltip_delay_sec>` 选项更改工具提示出现所需的时间。另见 :ref:`get_tooltip<class_Control_method_get_tooltip>`\ 。
 
-工具提示弹出窗口将使用默认实现，或者使用通过覆盖 :ref:`_make_custom_tooltip<class_Control_method__make_custom_tooltip>` 提供的自定义实现。默认工具提示包括一个 :ref:`PopupPanel<class_PopupPanel>` 和 :ref:`Label<class_Label>`\ ，其主题属性可以使用 :ref:`Theme<class_Theme>` 方法分别对 ``"TooltipPanel"`` 和 ``"TooltipLabel"`` 进行自定义。例如：
+工具提示弹出窗口将使用默认实现，或者使用通过覆盖 :ref:`_make_custom_tooltip<class_Control_private_method__make_custom_tooltip>` 提供的自定义实现。默认工具提示包括一个 :ref:`PopupPanel<class_PopupPanel>` 和 :ref:`Label<class_Label>`\ ，其主题属性可以使用 :ref:`Theme<class_Theme>` 方法分别对 ``"TooltipPanel"`` 和 ``"TooltipLabel"`` 进行自定义。例如：
 
 
 .. tabs::
@@ -1875,18 +1911,18 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Control_method__can_drop_data:
+.. _class_Control_private_method__can_drop_data:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_can_drop_data** **(** :ref:`Vector2<class_Vector2>` at_position, :ref:`Variant<class_Variant>` data **)** |virtual| |const|
 
-Godot 调用这个方法来检查是否能够将来自某个控件 :ref:`_get_drag_data<class_Control_method__get_drag_data>` 方法的 ``data`` 拖放到 ``at_position``\ 。\ ``at_position`` 使用的是这个控件的局部坐标系。
+Godot 调用这个方法来检查是否能够将来自某个控件 :ref:`_get_drag_data<class_Control_private_method__get_drag_data>` 方法的 ``data`` 拖放到 ``at_position``\ 。\ ``at_position`` 使用的是这个控件的局部坐标系。
 
-这个方法应该只用于检查数据。请在 :ref:`_drop_data<class_Control_method__drop_data>` 中处理数据。
+这个方法应该只用于检查数据。请在 :ref:`_drop_data<class_Control_private_method__drop_data>` 中处理数据。
 
 
 .. tabs::
@@ -1913,13 +1949,13 @@ Godot 调用这个方法来检查是否能够将来自某个控件 :ref:`_get_dr
 
 ----
 
-.. _class_Control_method__drop_data:
+.. _class_Control_private_method__drop_data:
 
 .. rst-class:: classref-method
 
 void **_drop_data** **(** :ref:`Vector2<class_Vector2>` at_position, :ref:`Variant<class_Variant>` data **)** |virtual|
 
-Godot 调用这个方法把 ``data`` 传给你，这是从某个控件的 :ref:`_get_drag_data<class_Control_method__get_drag_data>` 获得的结果。Godot 首先会调用 :ref:`_can_drop_data<class_Control_method__can_drop_data>` 来检查是否允许把 ``data`` 拖放到 ``at_position``\ ，这里的 ``at_position`` 使用的是这个控件的局部坐标系。
+Godot 调用这个方法把 ``data`` 传给你，这是从某个控件的 :ref:`_get_drag_data<class_Control_private_method__get_drag_data>` 获得的结果。Godot 首先会调用 :ref:`_can_drop_data<class_Control_private_method__can_drop_data>` 来检查是否允许把 ``data`` 拖放到 ``at_position``\ ，这里的 ``at_position`` 使用的是这个控件的局部坐标系。
 
 
 .. tabs::
@@ -1950,13 +1986,13 @@ Godot 调用这个方法把 ``data`` 传给你，这是从某个控件的 :ref:`
 
 ----
 
-.. _class_Control_method__get_drag_data:
+.. _class_Control_private_method__get_drag_data:
 
 .. rst-class:: classref-method
 
 :ref:`Variant<class_Variant>` **_get_drag_data** **(** :ref:`Vector2<class_Vector2>` at_position **)** |virtual|
 
-Godot 调用该方法来获取可以拖放到期望放置数据的控件上的数据。如果没有要拖动的数据，则返回 ``null``\ 。想要接收拖放数据的控件应该实现 :ref:`_can_drop_data<class_Control_method__can_drop_data>` 和 :ref:`_drop_data<class_Control_method__drop_data>`\ 。\ ``at_position`` 是该控件的局部位置。可以使用 :ref:`force_drag<class_Control_method_force_drag>` 强制拖动。
+Godot 调用该方法来获取可以拖放到期望放置数据的控件上的数据。如果没有要拖动的数据，则返回 ``null``\ 。想要接收拖放数据的控件应该实现 :ref:`_can_drop_data<class_Control_private_method__can_drop_data>` 和 :ref:`_drop_data<class_Control_private_method__drop_data>`\ 。\ ``at_position`` 是该控件的局部位置。可以使用 :ref:`force_drag<class_Control_method_force_drag>` 强制拖动。
 
 可以使用 :ref:`set_drag_preview<class_Control_method_set_drag_preview>` 设置跟随鼠标显示数据的预览。设置预览的好时机就是在这个方法中。
 
@@ -1985,7 +2021,7 @@ Godot 调用该方法来获取可以拖放到期望放置数据的控件上的�
 
 ----
 
-.. _class_Control_method__get_minimum_size:
+.. _class_Control_private_method__get_minimum_size:
 
 .. rst-class:: classref-method
 
@@ -2001,7 +2037,7 @@ Godot 调用该方法来获取可以拖放到期望放置数据的控件上的�
 
 ----
 
-.. _class_Control_method__get_tooltip:
+.. _class_Control_private_method__get_tooltip:
 
 .. rst-class:: classref-method
 
@@ -2015,7 +2051,7 @@ Godot 调用该方法来获取可以拖放到期望放置数据的控件上的�
 
 ----
 
-.. _class_Control_method__gui_input:
+.. _class_Control_private_method__gui_input:
 
 .. rst-class:: classref-method
 
@@ -2052,7 +2088,7 @@ void **_gui_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtu
 
 如果出现以下情况，则不会触发该事件：
 
-\* 在控件外点击（参阅\ :ref:`_has_point<class_Control_method__has_point>`\ ）；
+\* 在控件外点击（参阅\ :ref:`_has_point<class_Control_private_method__has_point>`\ ）；
 
 \* 控件将 :ref:`mouse_filter<class_Control_property_mouse_filter>` 设置为 :ref:`MOUSE_FILTER_IGNORE<class_Control_constant_MOUSE_FILTER_IGNORE>`\ ；
 
@@ -2068,7 +2104,7 @@ void **_gui_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtu
 
 ----
 
-.. _class_Control_method__has_point:
+.. _class_Control_private_method__has_point:
 
 .. rst-class:: classref-method
 
@@ -2084,7 +2120,7 @@ void **_gui_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtu
 
 ----
 
-.. _class_Control_method__make_custom_tooltip:
+.. _class_Control_private_method__make_custom_tooltip:
 
 .. rst-class:: classref-method
 
@@ -2150,7 +2186,7 @@ void **_gui_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtu
 
 ----
 
-.. _class_Control_method__structured_text_parser:
+.. _class_Control_private_method__structured_text_parser:
 
 .. rst-class:: classref-method
 
@@ -2170,7 +2206,7 @@ void **_gui_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtu
 
 void **accept_event** **(** **)**
 
-将输入事件标记为已处理。一旦接受输入事件，传播就会停止，不会再传播到正在侦听 :ref:`Node._unhandled_input<class_Node_method__unhandled_input>` 和 :ref:`Node._unhandled_key_input<class_Node_method__unhandled_key_input>` 的节点。
+将输入事件标记为已处理。一旦接受输入事件，传播就会停止，不会再传播到正在侦听 :ref:`Node._unhandled_input<class_Node_private_method__unhandled_input>` 和 :ref:`Node._unhandled_key_input<class_Node_private_method__unhandled_key_input>` 的节点。
 
 \ **注意：**\ 不会影响 :ref:`Input<class_Input>` 中的方法，只会影响事件的传播。
 
@@ -2366,15 +2402,29 @@ void **end_bulk_theme_override** **(** **)**
 
 ----
 
+.. _class_Control_method_find_valid_focus_neighbor:
+
+.. rst-class:: classref-method
+
+:ref:`Control<class_Control>` **find_valid_focus_neighbor** **(** :ref:`Side<enum_@GlobalScope_Side>` side **)** |const|
+
+查找指定 :ref:`Side<enum_@GlobalScope_Side>` 上可以接收焦点的下一个 **Control**\ 。
+
+\ **注意：**\ 这与 :ref:`get_focus_neighbor<class_Control_method_get_focus_neighbor>` 不同，后者返回指定焦点邻居的路径。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_Control_method_force_drag:
 
 .. rst-class:: classref-method
 
 void **force_drag** **(** :ref:`Variant<class_Variant>` data, :ref:`Control<class_Control>` preview **)**
 
-通过传递 ``data`` 和 ``preview`` 强制拖动并绕过 :ref:`_get_drag_data<class_Control_method__get_drag_data>` 和 :ref:`set_drag_preview<class_Control_method_set_drag_preview>`\ 。即使鼠标既没有在该控件悬停也没有在该控件上按下，拖动都将开始。
+通过传递 ``data`` 和 ``preview`` 强制拖动并绕过 :ref:`_get_drag_data<class_Control_private_method__get_drag_data>` 和 :ref:`set_drag_preview<class_Control_method_set_drag_preview>`\ 。即使鼠标既没有在该控件悬停也没有在该控件上按下，拖动都将开始。
 
-方法 :ref:`_can_drop_data<class_Control_method__can_drop_data>` 和 :ref:`_drop_data<class_Control_method__drop_data>` 必须在想要接收拖放数据的控件上实现。
+方法 :ref:`_can_drop_data<class_Control_private_method__can_drop_data>` 和 :ref:`_drop_data<class_Control_private_method__drop_data>` 必须在想要接收拖放数据的控件上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -2447,6 +2497,8 @@ void **force_drag** **(** :ref:`Variant<class_Variant>` data, :ref:`Control<clas
 :ref:`NodePath<class_NodePath>` **get_focus_neighbor** **(** :ref:`Side<enum_@GlobalScope_Side>` side **)** |const|
 
 返回指定 :ref:`Side<enum_@GlobalScope_Side>` 的焦点邻居。用于 :ref:`focus_neighbor_bottom<class_Control_property_focus_neighbor_bottom>`\ 、\ :ref:`focus_neighbor_left<class_Control_property_focus_neighbor_left>`\ 、\ :ref:`focus_neighbor_right<class_Control_property_focus_neighbor_right>`\ 、和 :ref:`focus_neighbor_top<class_Control_property_focus_neighbor_top>` 的取值方法。
+
+\ **注意：**\ 要查找特定 :ref:`Side<enum_@GlobalScope_Side>` 上的下一个 **Control**\ ，即使未指定邻居，也请使用 :ref:`find_valid_focus_neighbor<class_Control_method_find_valid_focus_neighbor>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2711,7 +2763,7 @@ void **force_drag** **(** :ref:`Variant<class_Variant>` data, :ref:`Control<clas
 
 返回位于该控件局部坐标系中 ``at_position`` 位置的工具提示文本，工具提示一般会在鼠标停留在该控件上时显示。默认情况下返回的是 :ref:`tooltip_text<class_Control_property_tooltip_text>`\ 。
 
-覆盖这个方法可以自定义行为。见 :ref:`_get_tooltip<class_Control_method__get_tooltip>`\ 。
+覆盖这个方法可以自定义行为。见 :ref:`_get_tooltip<class_Control_private_method__get_tooltip>`\ 。
 
 \ **注意：**\ 如果返回的是空 :ref:`String<class_String>`\ ，则不会显示工具提示。
 
@@ -2756,7 +2808,7 @@ void **grab_focus** **(** **)**
 
 从别的控件上窃取焦点，从而成为聚焦的控件（见 :ref:`focus_mode<class_Control_property_focus_mode>`\ ）。
 
-\ **注意：**\ 这个方法与 :ref:`Object.call_deferred<class_Object_method_call_deferred>` 配合使用会更加可靠，尤其是在 :ref:`Node._ready<class_Node_method__ready>` 中调用时。
+\ **注意：**\ 这个方法与 :ref:`Object.call_deferred<class_Object_method_call_deferred>` 配合使用会更加可靠，尤其是在 :ref:`Node._ready<class_Node_private_method__ready>` 中调用时。
 
 .. rst-class:: classref-item-separator
 
@@ -3136,7 +3188,7 @@ void **set_begin** **(** :ref:`Vector2<class_Vector2>` position **)**
 
 void **set_drag_forwarding** **(** :ref:`Callable<class_Callable>` drag_func, :ref:`Callable<class_Callable>` can_drop_func, :ref:`Callable<class_Callable>` drop_func **)**
 
-转发该控件的 :ref:`_get_drag_data<class_Control_method__get_drag_data>`\ 、\ :ref:`_can_drop_data<class_Control_method__can_drop_data>` 和 :ref:`_drop_data<class_Control_method__drop_data>` 虚函数的处理，以委托给可调用体。
+转发该控件的 :ref:`_get_drag_data<class_Control_private_method__get_drag_data>`\ 、\ :ref:`_can_drop_data<class_Control_private_method__can_drop_data>` 和 :ref:`_drop_data<class_Control_private_method__drop_data>` 虚函数的处理，以委托给可调用体。
 
 对于每个参数，如果不为空，则使用委托的可调用体，否则使用本地（虚）函数。
 
@@ -3152,7 +3204,7 @@ void **set_drag_forwarding** **(** :ref:`Callable<class_Callable>` drag_func, :r
 
 void **set_drag_preview** **(** :ref:`Control<class_Control>` control **)**
 
-在鼠标指针处显示给定的控件。调用此方法的好时机是在 :ref:`_get_drag_data<class_Control_method__get_drag_data>` 中。控件不得位于场景树中。你不应释放控件，也不应在拖动持续时间之外保留对控件的引用。拖拽结束后它会自动删除。
+在鼠标指针处显示给定的控件。调用此方法的好时机是在 :ref:`_get_drag_data<class_Control_private_method__get_drag_data>` 中。控件不得位于场景树中。你不应释放控件，也不应在拖动持续时间之外保留对控件的引用。拖拽结束后它会自动删除。
 
 
 .. tabs::
@@ -3306,10 +3358,10 @@ void **warp_mouse** **(** :ref:`Vector2<class_Vector2>` position **)**
 
 \ **注意：**\ :ref:`warp_mouse<class_Control_method_warp_mouse>` 仅在 Windows、macOS 和 Linux 上受支持。它在 Android、iOS 和 Web 上没有效果。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

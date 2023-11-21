@@ -10,34 +10,34 @@
 VisibleOnScreenNotifier2D
 =========================
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VisibleOnScreenEnabler2D<class_VisibleOnScreenEnabler2D>`
+**派生：** :ref:`VisibleOnScreenEnabler2D<class_VisibleOnScreenEnabler2D>`
 
-检测节点范围何时在屏幕上可见。
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-VisibleOnScreenNotifier2D 检测它何时在屏幕上可见。它还会在其边界矩形进入或退出屏幕或视口时发出通知。
-
-如果希望节点在退出屏幕时自动禁用，请改用 :ref:`VisibleOnScreenEnabler2D<class_VisibleOnScreenEnabler2D>`\ 。
-
-\ **注意：**\ VisibleOnScreenNotifier2D 使用渲染剔除代码来确定它是否在屏幕上可见，这也意味着它的 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 必须是 ``true`` 才能正常工作。
+2D 空间的矩形区域，用于检测其在屏幕上是否可见。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
+
+:ref:`VisibleOnScreenEnabler2D<class_VisibleOnScreenEnabler2D>` 表示 2D 空间的矩形区块。当该区块的任何部分在屏幕或视口中可见时，它将发出 :ref:`screen_entered<class_VisibleOnScreenNotifier2D_signal_screen_entered>` 信号，同样，当其任何部分都不可见时，它将发出 :ref:`screen_exited<class_VisibleOnScreenNotifier2D_signal_screen_exited>` 信号。
+
+如果希望当该区块在屏幕上可见时自动启用节点，请使用 :ref:`VisibleOnScreenEnabler2D<class_VisibleOnScreenEnabler2D>`\ 。
+
+\ **注意：**\ **VisibleOnScreenNotifier2D** 使用渲染剔除代码来确定它在屏幕上是否可见，因此除非 :ref:`CanvasItem.visible<class_CanvasItem_property_visible>` 被设置为 ``true``\ ，否则它不会起作用。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
 
 - `2D Dodge The Creeps 演示 <https://godotengine.org/asset-library/asset/515>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_VisibleOnScreenNotifier2D_signal_screen_entered:
 
@@ -93,8 +93,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisibleOnScreenNotifier2D_property_rect:
 
@@ -115,8 +115,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_VisibleOnScreenNotifier2D_method_is_on_screen:
 
@@ -126,12 +126,12 @@ Method Descriptions
 
 如果为 ``true``\ ，则边界矩形在屏幕上。
 
-\ **注意：**\ 一旦添加到场景树中，需要一帧来计算节点的可见性，所以这个方法将在它被实例化后立即返回 ``false``\ ，即使屏幕在绘制过程中。
+\ **注意：**\ **VisibleOnScreenNotifier2D** 被添加到场景树后需要一帧才能确定其可见性，因此该方法在它被实例化后，在绘制阶段之前，将始终返回 ``false`` 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

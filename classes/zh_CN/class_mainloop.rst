@@ -10,16 +10,16 @@
 MainLoop
 ========
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`SceneTree<class_SceneTree>`
+**派生：** :ref:`SceneTree<class_SceneTree>`
 
 游戏主循环的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **MainLoop** 是 Godot 项目中游戏循环的抽象基类。它被 :ref:`SceneTree<class_SceneTree>` 继承，\ :ref:`SceneTree<class_SceneTree>` 是 Godot 项目中使用的默认游戏循环的实现，不过也可以编写和使用自己的 **MainLoop** 子类，来代替场景树。
 
@@ -82,21 +82,21 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-------------------------+-----------------------------------------------------------------------------------------------------------------------+
-   | void                    | :ref:`_finalize<class_MainLoop_method__finalize>` **(** **)** |virtual|                                               |
-   +-------------------------+-----------------------------------------------------------------------------------------------------------------------+
-   | void                    | :ref:`_initialize<class_MainLoop_method__initialize>` **(** **)** |virtual|                                           |
-   +-------------------------+-----------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`_physics_process<class_MainLoop_method__physics_process>` **(** :ref:`float<class_float>` delta **)** |virtual| |
-   +-------------------------+-----------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>` | :ref:`_process<class_MainLoop_method__process>` **(** :ref:`float<class_float>` delta **)** |virtual|                 |
-   +-------------------------+-----------------------------------------------------------------------------------------------------------------------+
+   +-------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | void                    | :ref:`_finalize<class_MainLoop_private_method__finalize>` **(** **)** |virtual|                                               |
+   +-------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | void                    | :ref:`_initialize<class_MainLoop_private_method__initialize>` **(** **)** |virtual|                                           |
+   +-------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`_physics_process<class_MainLoop_private_method__physics_process>` **(** :ref:`float<class_float>` delta **)** |virtual| |
+   +-------------------------+-------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>` | :ref:`_process<class_MainLoop_private_method__process>` **(** :ref:`float<class_float>` delta **)** |virtual|                 |
+   +-------------------------+-------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -104,8 +104,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_MainLoop_signal_on_request_permissions_result:
 
@@ -121,8 +121,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_MainLoop_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
@@ -226,10 +226,10 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_MainLoop_method__finalize:
+.. _class_MainLoop_private_method__finalize:
 
 .. rst-class:: classref-method
 
@@ -241,7 +241,7 @@ void **_finalize** **(** **)** |virtual|
 
 ----
 
-.. _class_MainLoop_method__initialize:
+.. _class_MainLoop_private_method__initialize:
 
 .. rst-class:: classref-method
 
@@ -253,13 +253,13 @@ void **_initialize** **(** **)** |virtual|
 
 ----
 
-.. _class_MainLoop_method__physics_process:
+.. _class_MainLoop_private_method__physics_process:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_physics_process** **(** :ref:`float<class_float>` delta **)** |virtual|
 
-在每个物理帧中调用，并将自上一个物理帧以来的时间作为参数（\ ``delta``\ ，以秒为单位）。相当于\ :ref:`Node._physics_process<class_Node_method__physics_process>`\ 。
+在每个物理帧中调用，并将自上一个物理帧以来的时间作为参数（\ ``delta``\ ，以秒为单位）。相当于\ :ref:`Node._physics_process<class_Node_private_method__physics_process>`\ 。
 
 如果实现，该方法必须返回一个布尔值。\ ``true`` 会结束主循环，而 ``false`` 会让它继续下一帧。
 
@@ -267,20 +267,20 @@ void **_initialize** **(** **)** |virtual|
 
 ----
 
-.. _class_MainLoop_method__process:
+.. _class_MainLoop_private_method__process:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_process** **(** :ref:`float<class_float>` delta **)** |virtual|
 
-使用自上一个进程帧以来的时间作为参数（单位为秒），在每个进程（空闲）帧上被调用。相当于 :ref:`Node._process<class_Node_method__process>`\ 。
+使用自上一个进程帧以来的时间作为参数（单位为秒），在每个进程（空闲）帧上被调用。相当于 :ref:`Node._process<class_Node_private_method__process>`\ 。
 
 如果被实现，该方法必须返回一个布尔值。\ ``true`` 会结束主循环，而 ``false`` 会让它继续到下一帧。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

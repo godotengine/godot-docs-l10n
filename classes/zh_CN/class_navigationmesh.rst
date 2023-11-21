@@ -10,21 +10,21 @@
 NavigationMesh
 ==============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于定义可达区域和障碍物的导航网格。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 导航网格是多边形的集合，用于定义环境中的哪些区域是可以穿越的，帮助代理在复杂的空间中寻路。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 NavigationMesh <../tutorials/navigation/navigation_using_navigationmeshes>`
 
@@ -32,8 +32,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -88,8 +88,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_NavigationMesh_SamplePartitionType:
 
@@ -253,8 +253,8 @@ enum **SourceGeometryMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_NavigationMesh_property_agent_height:
 
@@ -426,9 +426,9 @@ Property Descriptions
 - void **set_edge_max_length** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_edge_max_length** **(** **)**
 
-The maximum allowed length for contour edges along the border of the mesh. A value of ``0.0`` disables this feature.
+沿网格边界的轮廓的最大允许长度。值为 ``0.0`` 将禁用该功能。
 
-\ **Note:** While baking, this value will be rounded up to the nearest multiple of :ref:`cell_size<class_NavigationMesh_property_cell_size>`.
+\ **注意：**\ 烘焙时，这个值会向上取整到最接近的 :ref:`cell_size<class_NavigationMesh_property_cell_size>` 的倍数。
 
 .. rst-class:: classref-item-separator
 
@@ -665,8 +665,8 @@ The maximum allowed length for contour edges along the border of the mesh. A val
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationMesh_method_add_polygon:
 
@@ -686,7 +686,7 @@ void **add_polygon** **(** :ref:`PackedInt32Array<class_PackedInt32Array>` polyg
 
 void **clear** **(** **)**
 
-Clears the internal arrays for vertices and polygon indices.
+清除顶点和多边形索引的内部数组。
 
 .. rst-class:: classref-item-separator
 
@@ -786,10 +786,10 @@ void **set_vertices** **(** :ref:`PackedVector3Array<class_PackedVector3Array>` 
 
 设置顶点，可以使用 :ref:`add_polygon<class_NavigationMesh_method_add_polygon>` 方法对其进行索引，创建多边形。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

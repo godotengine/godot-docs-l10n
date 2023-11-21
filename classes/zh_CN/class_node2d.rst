@@ -10,23 +10,23 @@
 Node2D
 ======
 
-**Inherits:** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AnimatedSprite2D<class_AnimatedSprite2D>`, :ref:`AudioListener2D<class_AudioListener2D>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, :ref:`BackBufferCopy<class_BackBufferCopy>`, :ref:`Bone2D<class_Bone2D>`, :ref:`Camera2D<class_Camera2D>`, :ref:`CanvasGroup<class_CanvasGroup>`, :ref:`CanvasModulate<class_CanvasModulate>`, :ref:`CollisionObject2D<class_CollisionObject2D>`, :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`, :ref:`CollisionShape2D<class_CollisionShape2D>`, :ref:`CPUParticles2D<class_CPUParticles2D>`, :ref:`GPUParticles2D<class_GPUParticles2D>`, :ref:`Joint2D<class_Joint2D>`, :ref:`Light2D<class_Light2D>`, :ref:`LightOccluder2D<class_LightOccluder2D>`, :ref:`Line2D<class_Line2D>`, :ref:`Marker2D<class_Marker2D>`, :ref:`MeshInstance2D<class_MeshInstance2D>`, :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`, :ref:`NavigationLink2D<class_NavigationLink2D>`, :ref:`NavigationObstacle2D<class_NavigationObstacle2D>`, :ref:`NavigationRegion2D<class_NavigationRegion2D>`, :ref:`ParallaxLayer<class_ParallaxLayer>`, :ref:`Path2D<class_Path2D>`, :ref:`PathFollow2D<class_PathFollow2D>`, :ref:`Polygon2D<class_Polygon2D>`, :ref:`RayCast2D<class_RayCast2D>`, :ref:`RemoteTransform2D<class_RemoteTransform2D>`, :ref:`ShapeCast2D<class_ShapeCast2D>`, :ref:`Skeleton2D<class_Skeleton2D>`, :ref:`Sprite2D<class_Sprite2D>`, :ref:`TileMap<class_TileMap>`, :ref:`TouchScreenButton<class_TouchScreenButton>`, :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`
+**派生：** :ref:`AnimatedSprite2D<class_AnimatedSprite2D>`, :ref:`AudioListener2D<class_AudioListener2D>`, :ref:`AudioStreamPlayer2D<class_AudioStreamPlayer2D>`, :ref:`BackBufferCopy<class_BackBufferCopy>`, :ref:`Bone2D<class_Bone2D>`, :ref:`Camera2D<class_Camera2D>`, :ref:`CanvasGroup<class_CanvasGroup>`, :ref:`CanvasModulate<class_CanvasModulate>`, :ref:`CollisionObject2D<class_CollisionObject2D>`, :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`, :ref:`CollisionShape2D<class_CollisionShape2D>`, :ref:`CPUParticles2D<class_CPUParticles2D>`, :ref:`GPUParticles2D<class_GPUParticles2D>`, :ref:`Joint2D<class_Joint2D>`, :ref:`Light2D<class_Light2D>`, :ref:`LightOccluder2D<class_LightOccluder2D>`, :ref:`Line2D<class_Line2D>`, :ref:`Marker2D<class_Marker2D>`, :ref:`MeshInstance2D<class_MeshInstance2D>`, :ref:`MultiMeshInstance2D<class_MultiMeshInstance2D>`, :ref:`NavigationLink2D<class_NavigationLink2D>`, :ref:`NavigationObstacle2D<class_NavigationObstacle2D>`, :ref:`NavigationRegion2D<class_NavigationRegion2D>`, :ref:`ParallaxLayer<class_ParallaxLayer>`, :ref:`Path2D<class_Path2D>`, :ref:`PathFollow2D<class_PathFollow2D>`, :ref:`Polygon2D<class_Polygon2D>`, :ref:`RayCast2D<class_RayCast2D>`, :ref:`RemoteTransform2D<class_RemoteTransform2D>`, :ref:`ShapeCast2D<class_ShapeCast2D>`, :ref:`Skeleton2D<class_Skeleton2D>`, :ref:`Sprite2D<class_Sprite2D>`, :ref:`TileMap<class_TileMap>`, :ref:`TouchScreenButton<class_TouchScreenButton>`, :ref:`VisibleOnScreenNotifier2D<class_VisibleOnScreenNotifier2D>`
 
 2D 游戏对象，被所有 2D 相关的节点继承。具有位置、旋转、缩放和 Z 索引。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 2D 游戏对象，具有变换（位置、旋转、缩放）。所有的 2D 节点，包括物理对象和精灵，都继承自 Node2D。使用 Node2D 作为父节点来移动、缩放和旋转 2D 项目中的子节点。还可以控制节点的渲染顺序。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`2D 中的自定义绘图 <../tutorials/2d/custom_drawing_in_2d>`
 
@@ -34,8 +34,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -104,8 +104,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Node2D_property_global_position:
 
@@ -237,7 +237,7 @@ Property Descriptions
 - void **set_rotation** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_rotation** **(** **)**
 
-以弧度为单位的旋转，相对于该节点的父节点。
+旋转，单位为弧度，相对于该节点的父节点。
 
 \ **注意：**\ 这个属性在检查器中是以度数编辑的。如果你想在脚本中使用度数，请使用 :ref:`rotation_degrees<class_Node2D_property_rotation_degrees>`\ 。
 
@@ -319,8 +319,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Node2D_method_apply_scale:
 
@@ -340,9 +340,9 @@ void **apply_scale** **(** :ref:`Vector2<class_Vector2>` ratio **)**
 
 :ref:`float<class_float>` **get_angle_to** **(** :ref:`Vector2<class_Vector2>` point **)** |const|
 
-Returns the angle between the node and the ``point`` in radians.
+返回该节点和 ``point`` 之间的夹角，单位为弧度。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
+\ `返回夹角的示意图。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/node2d_get_angle_to.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -390,7 +390,7 @@ void **look_at** **(** :ref:`Vector2<class_Vector2>` point **)**
 
 void **move_local_x** **(** :ref:`float<class_float>` delta, :ref:`bool<class_bool>` scaled=false **)**
 
-基于 :ref:`Node._process<class_Node_method__process>` 的 ``delta``\ ，在节点的 X 轴上应用局部平移。如果 ``scaled`` 为 ``false``\ ，则对移动进行归一化。
+基于 :ref:`Node._process<class_Node_private_method__process>` 的 ``delta``\ ，在节点的 X 轴上应用局部平移。如果 ``scaled`` 为 ``false``\ ，则对移动进行归一化。
 
 .. rst-class:: classref-item-separator
 
@@ -402,7 +402,7 @@ void **move_local_x** **(** :ref:`float<class_float>` delta, :ref:`bool<class_bo
 
 void **move_local_y** **(** :ref:`float<class_float>` delta, :ref:`bool<class_bool>` scaled=false **)**
 
-基于 :ref:`Node._process<class_Node_method__process>` 的 ``delta``\ ，在节点的 Y 轴上应用局部平移。如果 ``scaled`` 为 ``false``\ ，则对移动进行归一化。
+基于 :ref:`Node._process<class_Node_private_method__process>` 的 ``delta``\ ，在节点的 Y 轴上应用局部平移。如果 ``scaled`` 为 ``false``\ ，则对移动进行归一化。
 
 .. rst-class:: classref-item-separator
 
@@ -452,10 +452,10 @@ void **translate** **(** :ref:`Vector2<class_Vector2>` offset **)**
 
 在局部坐标系中，将该节点按给定的偏移量 ``offset`` 进行平移。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,21 +10,21 @@
 DampedSpringJoint2D
 ===================
 
-**Inherits:** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Joint2D<class_Joint2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 通过类似弹簧的力连接两个 2D 物理物体的物理关节。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 通过类似弹簧的力连接两个 2D 物理物体的物理关节。这就像一个总是想拉伸到给定长度的弹簧。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_DampedSpringJoint2D_property_damping:
 
@@ -59,7 +59,7 @@ Property Descriptions
 - void **set_damping** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_damping** **(** **)**
 
-弹簧关节的阻尼比。值在 ``0`` 和 ``1`` 之间。当两个机构移动到不同的方向时，系统会尝试将它们再次对准弹簧轴。高的 ``damping`` 值迫使连接的机构更快地对齐。
+弹簧关节的阻尼比。值在 ``0`` 和 ``1`` 之间。当两个实体移动到不同的方向时，系统会尝试将它们再次对准弹簧轴。高的 :ref:`damping<class_DampedSpringJoint2D_property_damping>` 值迫使连接的实体更快地对齐。
 
 .. rst-class:: classref-item-separator
 
@@ -112,10 +112,10 @@ Property Descriptions
 
 该值越大，连接在关节上的机构变形越小。关节对各机构施加一个相反的力，即刚度乘以与其静止长度的大小差的乘积。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -14,8 +14,8 @@ Dictionary
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 字典是关系容器，包含的值（Value）由唯一的键（Key）引用。添加新条目时，字典会保持插入顺序。在其他编程语言中，这种数据结构有时也称为哈希表或关联数组。
 
@@ -191,12 +191,12 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `GDScript 基础：字典 <../tutorials/scripting/gdscript/gdscript_basics.html#dictionary>`__
 
@@ -206,8 +206,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -220,8 +220,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -260,8 +260,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -280,8 +280,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Dictionary_constructor_Dictionary:
 
@@ -307,8 +307,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Dictionary_method_clear:
 
@@ -446,7 +446,7 @@ void **clear** **(** **)**
 
 :ref:`int<class_int>` **hash** **(** **)** |const|
 
-Returns a hashed 32-bit integer value representing the dictionary contents.
+返回代表该字典内容的 32 位整数哈希值。
 
 
 .. tabs::
@@ -456,21 +456,21 @@ Returns a hashed 32-bit integer value representing the dictionary contents.
     var dict1 = {"A": 10, "B": 2}
     var dict2 = {"A": 10, "B": 2}
     
-    print(dict1.hash() == dict2.hash()) # Prints true
+    print(dict1.hash() == dict2.hash()) # 输出 true
 
  .. code-tab:: csharp
 
     var dict1 = new Godot.Collections.Dictionary{{"A", 10}, {"B", 2}};
     var dict2 = new Godot.Collections.Dictionary{{"A", 10}, {"B", 2}};
     
-    // Godot.Collections.Dictionary has no Hash() method. Use GD.Hash() instead.
-    GD.Print(GD.Hash(dict1) == GD.Hash(dict2)); // Prints true
+    // Godot.Collections.Dictionary 没有 Hash() 方法。请改用 GD.Hash()。
+    GD.Print(GD.Hash(dict1) == GD.Hash(dict2)); // 输出 true
 
 
 
-\ **Note:** Dictionaries with the same entries but in a different order will not have the same hash.
+\ **注意：**\ 如果两个字典条目相同，但顺序不同，则哈希值也不同。
 
-\ **Note:** Dictionaries with equal hash values are *not* guaranteed to be the same, because of hash collisions. On the contrary, dictionaries with different hash values are guaranteed to be different.
+\ **注意：**\ 哈希值相同的字典\ *不保证*\ 相同，因为可能存在哈希碰撞。相对地，哈希值不同的字典保证不同。
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +530,49 @@ void **make_read_only** **(** **)**
 
 void **merge** **(** :ref:`Dictionary<class_Dictionary>` dictionary, :ref:`bool<class_bool>` overwrite=false **)**
 
-将 ``dictionary`` 中的条目添加到该字典中。默认不复制重复的键，除非 ``overwrite`` 为 ``true``\ 。
+将 ``dictionary`` 中的条目添加到该字典中。默认情况下，不会复制重复的键，除非 ``overwrite`` 为 ``true``\ 。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var dict = { "item": "sword", "quantity": 2 }
+    var other_dict = { "quantity": 15, "color": "silver" }
+    
+    # 默认情况下禁用覆盖已有键。
+    dict.merge(other_dict)
+    print(dict)  # { "item": "sword", "quantity": 2, "color": "silver" }
+    
+    # 启用覆盖已有键。
+    dict.merge(other_dict, true)
+    print(dict)  # { "item": "sword", "quantity": 15, "color": "silver" }
+
+ .. code-tab:: csharp
+
+    var dict = new Godot.Collections.Dictionary
+    {
+        ["item"] = "sword",
+        ["quantity"] = 2,
+    };
+    
+    var otherDict = new Godot.Collections.Dictionary
+    {
+        ["quantity"] = 15,
+        ["color"] = "silver",
+    };
+    
+    // 默认情况下禁用覆盖已有键。
+    dict.Merge(otherDict);
+    GD.Print(dict); // { "item": "sword", "quantity": 2, "color": "silver" }
+    
+    // 启用覆盖已有键。
+    dict.Merge(otherDict, true);
+    GD.Print(dict); // { "item": "sword", "quantity": 15, "color": "silver" }
+
+
+
+\ **注意：**\ :ref:`merge<class_Dictionary_method_merge>` *不*\ 是递归的。嵌套的字典是否可被视为键可以被覆盖，具体取决于 ``overwrite`` 的值，但它们永远不会被合并在一起。
 
 .. rst-class:: classref-item-separator
 
@@ -562,8 +604,8 @@ void **merge** **(** :ref:`Dictionary<class_Dictionary>` dictionary, :ref:`bool<
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Dictionary_operator_neq_Dictionary:
 
@@ -599,10 +641,10 @@ Operator Descriptions
 
 返回该字典中与给定的键 ``key`` 对应的值。如果条目不存在或者失败，则返回 ``null``\ 。为了更安全的访问，请使用 :ref:`get<class_Dictionary_method_get>` 或 :ref:`has<class_Dictionary_method_has>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

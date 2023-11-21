@@ -10,48 +10,52 @@
 GLTFDocument
 ============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Class for importing and exporting glTF files in and out of Godot.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-GLTFDocument supports reading data from a glTF file, buffer, or Godot scene. This data can then be written to the filesystem, buffer, or used to create a Godot scene.
-
-All of the data in a GLTF scene is stored in the :ref:`GLTFState<class_GLTFState>` class. GLTFDocument processes state objects, but does not contain any scene data itself. GLTFDocument has member variables to store export configuration settings such as the image format, but is otherwise stateless. Multiple scenes can be processed with the same settings using the same GLTFDocument object and different :ref:`GLTFState<class_GLTFState>` objects.
-
-GLTFDocument can be extended with arbitrary functionality by extending the :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` class and registering it with GLTFDocument via :ref:`register_gltf_document_extension<class_GLTFDocument_method_register_gltf_document_extension>`. This allows for custom data to be imported and exported.
+用于在 Godot 中导入和导出 glTF 文件的类。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `glTF 'What the duck?' guide <https://www.khronos.org/files/gltf20-reference-guide.pdf>`__
+GLTFDocument 支持从 glTF 文件、缓冲区、或 Godot 场景中读取数据。然后可以将该数据写入文件系统、缓冲区、或用于创建 Godot 场景。
 
-- `Khronos glTF specification <https://registry.khronos.org/glTF/>`__
+GLTF 场景中的所有数据都存储在 :ref:`GLTFState<class_GLTFState>` 类中。GLTFDocument 处理状态对象，但本身不包含任何场景数据。GLTFDocument 有成员变量来存储如图像格式等导出配置设置，但在其他方面是无状态的。可以使用相同的 GLTFDocument 对象和不同的 :ref:`GLTFState<class_GLTFState>` 对象以相同的设置处理多个场景。
+
+通过扩展 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类并通过 :ref:`register_gltf_document_extension<class_GLTFDocument_method_register_gltf_document_extension>` 将其注册到 GLTFDocument，则可以使用任意功能来扩展 GLTFDocument。这允许自定义数据被导入和导出。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+
+- `glTF '鸭子是什么？' 指南 <https://www.khronos.org/files/gltf20-reference-guide.pdf>`__
+
+- `Khronos glTF 规范 <https://registry.khronos.org/glTF/>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
-   +-----------------------------+-----------------------------------------------------------------+-----------+
-   | :ref:`String<class_String>` | :ref:`image_format<class_GLTFDocument_property_image_format>`   | ``"PNG"`` |
-   +-----------------------------+-----------------------------------------------------------------+-----------+
-   | :ref:`float<class_float>`   | :ref:`lossy_quality<class_GLTFDocument_property_lossy_quality>` | ``0.75``  |
-   +-----------------------------+-----------------------------------------------------------------+-----------+
+   +-----------------------------------------------------+-------------------------------------------------------------------+-----------+
+   | :ref:`String<class_String>`                         | :ref:`image_format<class_GLTFDocument_property_image_format>`     | ``"PNG"`` |
+   +-----------------------------------------------------+-------------------------------------------------------------------+-----------+
+   | :ref:`float<class_float>`                           | :ref:`lossy_quality<class_GLTFDocument_property_lossy_quality>`   | ``0.75``  |
+   +-----------------------------------------------------+-------------------------------------------------------------------+-----------+
+   | :ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>` | :ref:`root_node_mode<class_GLTFDocument_property_root_node_mode>` | ``0``     |
+   +-----------------------------------------------------+-------------------------------------------------------------------+-----------+
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -80,8 +84,47 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+枚举
+----
+
+.. _enum_GLTFDocument_RootNodeMode:
+
+.. rst-class:: classref-enumeration
+
+enum **RootNodeMode**:
+
+.. _class_GLTFDocument_constant_ROOT_NODE_MODE_SINGLE_ROOT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>` **ROOT_NODE_MODE_SINGLE_ROOT** = ``0``
+
+将 Godot 场景的根节点视为 glTF 文件的根节点，并通过 ``GODOT_single_root`` glTF 扩展将其标记为单根节点。如果实现不支持 ``GODOT_single_root``\ ，这将与 :ref:`ROOT_NODE_MODE_KEEP_ROOT<class_GLTFDocument_constant_ROOT_NODE_MODE_KEEP_ROOT>` 进行相同的解析。
+
+.. _class_GLTFDocument_constant_ROOT_NODE_MODE_KEEP_ROOT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>` **ROOT_NODE_MODE_KEEP_ROOT** = ``1``
+
+将 Godot 场景的根节点视为 glTF 文件的根节点，但不要将其标记为任何特殊的东西。导入 Godot 时会生成一个额外的根节点。这仅使用普通 glTF 功能。这相当于 Godot 4.1 及更早版本中的行为。
+
+.. _class_GLTFDocument_constant_ROOT_NODE_MODE_MULTI_ROOT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>` **ROOT_NODE_MODE_MULTI_ROOT** = ``2``
+
+将 Godot 场景的根节点视为 glTF 场景的名称，并将其所有子节点添加为 glTF 文件的根节点。这仅使用普通 glTF 功能。这避免了额外的根节点，但只会保留 Godot 场景根节点的名称，因为它不会被保存为节点。
+
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+属性说明
+--------
 
 .. _class_GLTFDocument_property_image_format:
 
@@ -94,9 +137,9 @@ Property Descriptions
 - void **set_image_format** **(** :ref:`String<class_String>` value **)**
 - :ref:`String<class_String>` **get_image_format** **(** **)**
 
-The user-friendly name of the export image format. This is used when exporting the GLTF file, including writing to a file and writing to a byte array.
+导出图像格式的用户友好名称。这被用于导出 GLTF 文件，包括写入文件和写入字节数组。
 
-By default, Godot allows the following options: "None", "PNG", "JPEG", "Lossless WebP", and "Lossy WebP". Support for more image formats can be added in :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` classes.
+默认情况下，Godot 允许以下选项：“无”、“PNG”、“JPEG”、“无损 WebP”、和“有损 WebP”。可以使用 :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>` 类添加对更多图像格式的支持。
 
 .. rst-class:: classref-item-separator
 
@@ -113,7 +156,26 @@ By default, Godot allows the following options: "None", "PNG", "JPEG", "Lossless
 - void **set_lossy_quality** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_lossy_quality** **(** **)**
 
-If :ref:`image_format<class_GLTFDocument_property_image_format>` is a lossy image format, this determines the lossy quality of the image. On a range of ``0.0`` to ``1.0``, where ``0.0`` is the lowest quality and ``1.0`` is the highest quality. A lossy quality of ``1.0`` is not the same as lossless.
+如果 :ref:`image_format<class_GLTFDocument_property_image_format>` 是有损图像格式，则这决定了该图像的有损质量。在 ``0.0`` 到 ``1.0`` 范围内，其中 ``0.0`` 是最低质量，\ ``1.0`` 是最高质量。\ ``1.0`` 的有损质量不同于无损质量。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GLTFDocument_property_root_node_mode:
+
+.. rst-class:: classref-property
+
+:ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>` **root_node_mode** = ``0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_root_node_mode** **(** :ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>` value **)**
+- :ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>` **get_root_node_mode** **(** **)**
+
+导出时如何处理根节点。详见 :ref:`RootNodeMode<enum_GLTFDocument_RootNodeMode>`\ 。默认和推荐值为 :ref:`ROOT_NODE_MODE_SINGLE_ROOT<class_GLTFDocument_constant_ROOT_NODE_MODE_SINGLE_ROOT>`\ 。
+
+\ **注意：**\ 无论 glTF 文件如何导出，导入时，根节点类型和名称都可以在场景导入设置选项卡中被覆盖。
 
 .. rst-class:: classref-section-separator
 
@@ -121,8 +183,8 @@ If :ref:`image_format<class_GLTFDocument_property_image_format>` is a lossy imag
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_GLTFDocument_method_append_from_buffer:
 
@@ -224,10 +286,10 @@ void **unregister_gltf_document_extension** **(** :ref:`GLTFDocumentExtension<cl
 
 \ **注意：**\ glTF 文件的扩展名决定了它是一个 .glb 二进制文件还是一个 .gltf 文件。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

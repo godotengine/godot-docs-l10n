@@ -10,33 +10,33 @@
 WebRTCPeerConnection
 ====================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`WebRTCPeerConnectionExtension<class_WebRTCPeerConnectionExtension>`
+**派生：** :ref:`WebRTCPeerConnectionExtension<class_WebRTCPeerConnectionExtension>`
 
 与 WebRTC 对等体连接的接口。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A WebRTC connection between the local computer and a remote peer. Provides an interface to connect, maintain and monitor the connection.
+本地计算机和远程对等体之间的 WebRTC 连接。提供一个接口来连接、维护和监控连接。
 
-Setting up a WebRTC connection between two peers may not seem a trivial task, but it can be broken down into 3 main steps:
+在两个对等体之间建立 WebRTC 连接看上去可能不是一项简单的任务，但它可以分解为 3 个主要步骤。
 
-- The peer that wants to initiate the connection (``A`` from now on) creates an offer and send it to the other peer (``B`` from now on).
+- 想要启动连接的对等体（\ ``A``\ 从现在开始）创建一个提交，并将其发送给另一个对等体（\ ``B``\ 从现在开始）。
 
-- ``B`` receives the offer, generate and answer, and sends it to ``A``).
+- ``B`` 收到要约，生成和回答，并将其发送给 ``A``\ ）。
 
-- ``A`` and ``B`` then generates and exchange ICE candidates with each other.
+- ``A`` 和 ``B`` 然后生成并相互交换 ICE 候选。
 
-After these steps, the connection should become connected. Keep on reading or look into the tutorial for more information.
+在这些步骤之后，连接应该成功建立。继续阅读或查看教程以了解更多信息。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_WebRTCPeerConnection_signal_data_channel_received:
 
@@ -116,8 +116,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_WebRTCPeerConnection_ConnectionState:
 
@@ -271,8 +271,8 @@ enum **SignalingState**:
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_WebRTCPeerConnection_method_add_ice_candidate:
 
@@ -417,7 +417,7 @@ void **close** **(** **)**
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll** **(** **)**
 
-经常调用这个方法以正确接收信号，例如在 :ref:`Node._process<class_Node_method__process>` 或 :ref:`Node._physics_process<class_Node_method__physics_process>` 中。
+经常调用这个方法以正确接收信号，例如在 :ref:`Node._process<class_Node_private_method__process>` 或 :ref:`Node._physics_process<class_Node_private_method__physics_process>` 中。
 
 .. rst-class:: classref-item-separator
 
@@ -461,10 +461,10 @@ void **set_default_extension** **(** :ref:`StringName<class_StringName>` extensi
 
 如果 ``type`` 为 ``"answer"``\ ，对等体将开始发出 :ref:`ice_candidate_created<class_WebRTCPeerConnection_signal_ice_candidate_created>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

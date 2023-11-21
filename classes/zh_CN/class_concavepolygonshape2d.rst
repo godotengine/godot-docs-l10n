@@ -10,29 +10,29 @@
 ConcavePolygonShape2D
 =====================
 
-**Inherits:** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Shape2D<class_Shape2D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于物理碰撞的 2D 多线段形状。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A 2D polyline shape, intended for use in physics. Used internally in :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` when it's in :ref:`CollisionPolygon2D.BUILD_SEGMENTS<class_CollisionPolygon2D_constant_BUILD_SEGMENTS>` mode.
+一种 2D 折线形状，用于物理运算。当 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 处于 :ref:`CollisionPolygon2D.BUILD_SEGMENTS<class_CollisionPolygon2D_constant_BUILD_SEGMENTS>` 模式时，会在其内部使用。
 
-Being just a collection of interconnected line segments, **ConcavePolygonShape2D** is the most freely configurable single 2D shape. It can be used to form polygons of any nature, or even shapes that don't enclose an area. However, :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` is *hollow* even if the interconnected line segments do enclose an area, which often makes it unsuitable for physics or detection.
+作为一组相互连接线段，\ **ConcavePolygonShape2D** 是最自由的可配置的单一 2D 形状。它可以用于形成任何性质的多边形，甚至是不封闭区域的形状。然而，即使相互连接的线段确实封闭了一个区域，\ **ConcavePolygonShape2D** 仍然是\ *中空的*\ ，这常常使其不适用于物理模拟或碰撞检测。
 
-\ **Note:** When used for collision, **ConcavePolygonShape2D** is intended to work with static :ref:`CollisionShape2D<class_CollisionShape2D>` nodes like :ref:`StaticBody2D<class_StaticBody2D>` and will likely not behave well for :ref:`CharacterBody2D<class_CharacterBody2D>`\ s or :ref:`RigidBody2D<class_RigidBody2D>`\ s in a mode other than Static.
+\ **注意：**\ 当用于碰撞计算时，\ **ConcavePolygonShape2D** 旨在与 :ref:`StaticBody2D<class_StaticBody2D>` 等静态 :ref:`CollisionShape2D<class_CollisionShape2D>` 节点一起使用，并且对于 :ref:`CharacterBody2D<class_CharacterBody2D>` 或 :ref:`RigidBody2D<class_RigidBody2D>`\ ，在除静态模式之外的其他模式下可能表现不佳。
 
-\ **Warning:** Physics bodies that are small have a chance to clip through this shape when moving fast. This happens because on one frame, the physics body may be on the "outside" of the shape, and on the next frame it may be "inside" it. **ConcavePolygonShape2D** is hollow, so it won't detect a collision.
+\ **警告：**\ 较小的物理物体在快速移动时有机会穿过该形状。发生这种情况是因为在一帧上，物理物体可能位于形状的“外部”，而在下一帧上，它可能位于形状的“内部”。由于\ **ConcavePolygonShape2D** 是中空的，因此它不会检测到碰撞。
 
-\ **Performance:** Due to its complexity, **ConcavePolygonShape2D** is the slowest 2D collision shape to check collisions against. Its use should generally be limited to level geometry. If the polyline is closed, :ref:`CollisionPolygon2D<class_CollisionPolygon2D>`'s :ref:`CollisionPolygon2D.BUILD_SOLIDS<class_CollisionPolygon2D_constant_BUILD_SOLIDS>` mode can be used, which decomposes the polygon into convex ones; see :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>`'s documentation for instructions.
+\ **性能：**\ 由于其复杂性， **ConcavePolygonShape2D** 是检测碰撞最慢的 2D 碰撞形状。它的使用一般仅限于关卡几何体。如果折线是闭合的，可以使用 :ref:`CollisionPolygon2D<class_CollisionPolygon2D>` 的 :ref:`CollisionPolygon2D.BUILD_SOLIDS<class_CollisionPolygon2D_constant_BUILD_SOLIDS>` 模式，它会将多边形分解成凸多边形；相关说明请参阅 :ref:`ConvexPolygonShape2D<class_ConvexPolygonShape2D>` 文档。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +47,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ConcavePolygonShape2D_property_segments:
 
@@ -63,10 +63,10 @@ Property Descriptions
 
 顶点数组，构成 **ConcavePolygonShape2D** 的线段。该（长度能被二整除的）数组自然两两分组（每组代表一条线段）；每组都由一条线段的起点和终点构成。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

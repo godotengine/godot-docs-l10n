@@ -10,14 +10,14 @@
 AStar2D
 =======
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 A\* 的一种实现，用于查找 2D 空间中连通图上两个顶点之间的最短路径。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 A\* 算法的一种实现，用于在 2D 空间中的连通图上找到两个顶点之间的最短路径。
 
@@ -25,16 +25,16 @@ A\* 算法的一种实现，用于在 2D 空间中的连通图上找到两个顶
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                           | :ref:`_compute_cost<class_AStar2D_method__compute_cost>` **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|                                            |
+   | :ref:`float<class_float>`                           | :ref:`_compute_cost<class_AStar2D_private_method__compute_cost>` **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|                                    |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                           | :ref:`_estimate_cost<class_AStar2D_method__estimate_cost>` **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|                                          |
+   | :ref:`float<class_float>`                           | :ref:`_estimate_cost<class_AStar2D_private_method__estimate_cost>` **(** :ref:`int<class_int>` from_id, :ref:`int<class_int>` to_id **)** |virtual| |const|                                  |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                | :ref:`add_point<class_AStar2D_method_add_point>` **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>` position, :ref:`float<class_float>` weight_scale=1.0 **)**                    |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -89,10 +89,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_AStar2D_method__compute_cost:
+.. _class_AStar2D_private_method__compute_cost:
 
 .. rst-class:: classref-method
 
@@ -106,7 +106,7 @@ Method Descriptions
 
 ----
 
-.. _class_AStar2D_method__estimate_cost:
+.. _class_AStar2D_private_method__estimate_cost:
 
 .. rst-class:: classref-method
 
@@ -128,7 +128,7 @@ void **add_point** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_Vector2>`
 
 在具有给定标识符的给定位置添加一个新点。\ ``id`` 必须为 0 或更大，\ ``weight_scale`` 必须为 0.0 或更大。
 
-在确定从相邻点到此点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost<class_AStar2D_method__compute_cost>` 的结果。因此，在其他条件相同的情况下，算法优先选择 ``weight_scale`` 较低的点来形成路径。
+在确定从相邻点到此点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost<class_AStar2D_private_method__compute_cost>` 的结果。因此，在其他条件相同的情况下，算法优先选择 ``weight_scale`` 较低的点来形成路径。
 
 
 .. tabs::
@@ -522,12 +522,12 @@ void **set_point_position** **(** :ref:`int<class_int>` id, :ref:`Vector2<class_
 
 void **set_point_weight_scale** **(** :ref:`int<class_int>` id, :ref:`float<class_float>` weight_scale **)**
 
-为给定的 ``id`` 的点设置 ``weight_scale``\ 。在确定从邻接点到这个点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost<class_AStar2D_method__compute_cost>` 的结果。
+为给定的 ``id`` 的点设置 ``weight_scale``\ 。在确定从邻接点到这个点的一段路程的总成本时，\ ``weight_scale`` 要乘以 :ref:`_compute_cost<class_AStar2D_private_method__compute_cost>` 的结果。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

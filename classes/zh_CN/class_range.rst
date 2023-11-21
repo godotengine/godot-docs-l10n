@@ -10,23 +10,23 @@
 Range
 =====
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`EditorSpinSlider<class_EditorSpinSlider>`, :ref:`ProgressBar<class_ProgressBar>`, :ref:`ScrollBar<class_ScrollBar>`, :ref:`Slider<class_Slider>`, :ref:`SpinBox<class_SpinBox>`, :ref:`TextureProgressBar<class_TextureProgressBar>`
+**派生：** :ref:`EditorSpinSlider<class_EditorSpinSlider>`, :ref:`ProgressBar<class_ProgressBar>`, :ref:`ScrollBar<class_ScrollBar>`, :ref:`Slider<class_Slider>`, :ref:`SpinBox<class_SpinBox>`, :ref:`TextureProgressBar<class_TextureProgressBar>`
 
 代表特定范围内数字的控件的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 Range 是代表特定范围内数字的控件的抽象基类，能够对步长 :ref:`step<class_Range_property_step>` 和分页大小 :ref:`page<class_Range_property_page>` 进行配置。使用 Range 的高阶节点示例请参考 :ref:`ScrollBar<class_ScrollBar>` 和 :ref:`Slider<class_Slider>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -57,21 +57,21 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +------+--------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`_value_changed<class_Range_method__value_changed>` **(** :ref:`float<class_float>` new_value **)** |virtual| |
-   +------+--------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`set_value_no_signal<class_Range_method_set_value_no_signal>` **(** :ref:`float<class_float>` value **)**     |
-   +------+--------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`share<class_Range_method_share>` **(** :ref:`Node<class_Node>` with **)**                                    |
-   +------+--------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`unshare<class_Range_method_unshare>` **(** **)**                                                             |
-   +------+--------------------------------------------------------------------------------------------------------------------+
+   +------+----------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`_value_changed<class_Range_private_method__value_changed>` **(** :ref:`float<class_float>` new_value **)** |virtual| |
+   +------+----------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`set_value_no_signal<class_Range_method_set_value_no_signal>` **(** :ref:`float<class_float>` value **)**             |
+   +------+----------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`share<class_Range_method_share>` **(** :ref:`Node<class_Node>` with **)**                                            |
+   +------+----------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`unshare<class_Range_method_unshare>` **(** **)**                                                                     |
+   +------+----------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -79,8 +79,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Range_signal_changed:
 
@@ -110,8 +110,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Range_property_allow_greater:
 
@@ -285,10 +285,10 @@ Range 的当前值。更改这个属性（即便是通过代码修改的）会�
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Range_method__value_changed:
+.. _class_Range_private_method__value_changed:
 
 .. rst-class:: classref-method
 
@@ -332,10 +332,10 @@ void **unshare** **(** **)**
 
 使该 **Range** 停止与任何其他 Range 共享其成员变量。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,25 +10,25 @@
 PanoramaSkyMaterial
 ===================
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material that provides a special texture to a :ref:`Sky<class_Sky>`, usually an HDR panorama.
+为 :ref:`Sky<class_Sky>` 提供特殊纹理的材质，通常是 HDR 全景图。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A resource referenced in a :ref:`Sky<class_Sky>` that is used to draw a background. **PanoramaSkyMaterial** functions similar to skyboxes in other engines, except it uses an equirectangular sky map instead of a :ref:`Cubemap<class_Cubemap>`.
+在 :ref:`Sky<class_Sky>` 中引用的用于绘制背景的资源。\ **PanoramaSkyMaterial** 的功能类似于其他引擎的天空盒，区别在于它使用的是等距圆柱投影的天空贴图而不是 :ref:`Cubemap<class_Cubemap>`\ 。
 
-Using an HDR panorama is strongly recommended for accurate, high-quality reflections. Godot supports the Radiance HDR (``.hdr``) and OpenEXR (``.exr``) image formats for this purpose.
+强烈建议使用 HDR 全景图，能够得到准确、高质量的反射。为此，Godot 支持 Radiance HDR（\ ``.hdr``\ ）和 OpenEXR（\ ``.exr``\ ）图像格式。
 
-You can use `this tool <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__ to convert a cubemap to an equirectangular sky map.
+你可以使用\ `这个工具 <https://danilw.github.io/GLSL-howto/cubemap_to_panorama_js/cubemap_to_panorama.html>`__\ 将立方体贴图转换为等距圆柱投影的天空贴图。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_PanoramaSkyMaterial_property_filter:
 
@@ -78,10 +78,10 @@ Property Descriptions
 
 应用于该 **PanoramaSkyMaterial** 的 :ref:`Texture2D<class_Texture2D>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

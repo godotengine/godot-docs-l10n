@@ -10,14 +10,14 @@
 LineEdit
 ========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 单行文本的输入字段。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **LineEdit** 提供了一个单行文本的输入字段，提供了许多始终可用的内置快捷键（此处的 :kbd:`Ctrl` 在 macOS 上会映射到 :kbd:`Cmd`\ ）：
 
@@ -65,8 +65,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -139,8 +139,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -179,8 +179,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -229,8 +229,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_LineEdit_signal_text_change_rejected:
 
@@ -270,8 +270,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_LineEdit_MenuItems:
 
@@ -611,8 +611,8 @@ enum **VirtualKeyboardType**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_LineEdit_property_alignment:
 
@@ -848,7 +848,7 @@ Property Descriptions
 - void **set_flat** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_flat** **(** **)**
 
-If ``true``, the **LineEdit** doesn't display decoration.
+如果为 ``true``\ ，则 **LineEdit** 不显示装饰。
 
 .. rst-class:: classref-item-separator
 
@@ -865,7 +865,7 @@ If ``true``, the **LineEdit** doesn't display decoration.
 - void **set_language** **(** :ref:`String<class_String>` value **)**
 - :ref:`String<class_String>` **get_language** **(** **)**
 
-Language code used for line-breaking and text shaping algorithms. If left empty, current locale is used instead.
+语言代码，用于断行和文本塑形算法。如果留空则使用当前区域设置。
 
 .. rst-class:: classref-item-separator
 
@@ -998,7 +998,7 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 - void **set_secret_character** **(** :ref:`String<class_String>` value **)**
 - :ref:`String<class_String>` **get_secret_character** **(** **)**
 
-用于掩盖秘密输入的字符（默认为“•”）。只能用一个字符作为秘密字符。
+用于掩盖秘密输入的字符。只能用单个字符作为秘密字符。如果长度超过一个字符，则仅使用第一个字符。如果为空，则使用空格代替。
 
 .. rst-class:: classref-item-separator
 
@@ -1161,8 +1161,8 @@ Language code used for line-breaking and text shaping algorithms. If left empty,
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_LineEdit_method_clear:
 
@@ -1412,8 +1412,8 @@ void **select_all** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_LineEdit_theme_color_caret_color:
 
@@ -1629,10 +1629,10 @@ Theme Property Descriptions
 
 该 **LineEdit** 处于只读模式时使用的背景（\ :ref:`editable<class_LineEdit_property_editable>` 为 ``false``\ ）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

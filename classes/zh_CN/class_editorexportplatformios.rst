@@ -10,23 +10,23 @@
 EditorExportPlatformIOS
 =======================
 
-**Inherits:** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 iOS 导出器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`为 iOS 导出 <../tutorials/export/exporting_for_ios>`
 
-- :doc:`iOS plugins documentation index <../tutorials/platform/ios/index>`
+- :doc:`iOS 插件文档索引 <../tutorials/platform/ios/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -153,8 +153,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorExportPlatformIOS_property_application/app_store_team_id:
 
@@ -234,7 +234,7 @@ Apple 团队 ID，唯一的 10 字符的字符串。要找到你的团队 ID，�
 
 :ref:`bool<class_bool>` **application/export_project_only**
 
-If ``true``, exports iOS project files without building an XCArchive or ``.ipa`` file. If ``false``, exports iOS project files and builds an XCArchive and ``.ipa`` file at the same time. When combining Godot with Fastlane or other build pipelines, you may want to set this to ``true``.
+如果为 ``true``\ ，则导出 iOS 项目文件而不构建一份 XCArchive 或 ``.ipa`` 文件。如果为 ``false``\ ，则导出 iOS 项目文件并同时构建一份 XCArchive 和 ``.ipa`` 文件。将 Godot 与 Fastlane 或其他构建管道结合使用时，你可能需要将其设置为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -298,7 +298,7 @@ If ``true``, exports iOS project files without building an XCArchive or ``.ipa``
 
 :ref:`String<class_String>` **application/short_version**
 
-Application version visible to the user, can only contain numeric characters (``0-9``) and periods (``.``). Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty.
+用户可见的应用程序版本，只能包含数字字符（\ ``0-9``\ ）和句点（\ ``.``\ ）。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -334,7 +334,7 @@ Application version visible to the user, can only contain numeric characters (``
 
 :ref:`String<class_String>` **application/version**
 
-Machine-readable application version, in the ``major.minor.patch`` format, can only contain numeric characters (``0-9``) and periods (``.``). This must be incremented on every new release pushed to the App Store.
+机器可读的应用程序版本，采用 ``major.minor.patch`` 格式，只能包含数字字符（\ ``0-9``\ ）和句点（\ ``.``\ ）。该值必须在被推送到 App Store 的每个新版本中递增。
 
 .. rst-class:: classref-item-separator
 
@@ -840,10 +840,10 @@ Storyboard 启动屏幕的自定义背景色。
 
 如果为 ``true``\ ，应用的“Documents”文件夹可以在 iTunes 文件共享中访问。见 `UIFileSharingEnabled <https://developer.apple.com/documentation/bundleresources/information_property_list/uifilesharingenabled>`__\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

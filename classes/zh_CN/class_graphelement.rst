@@ -10,23 +10,23 @@
 GraphElement
 ============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`GraphNode<class_GraphNode>`
+**派生：** :ref:`GraphNode<class_GraphNode>`
 
-A container that represents a basic element that can be placed inside a :ref:`GraphEdit<class_GraphEdit>` control.
+表示可以放置在 :ref:`GraphEdit<class_GraphEdit>` 控件内的基本元素的容器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**GraphElement** allows to create custom elements for a :ref:`GraphEdit<class_GraphEdit>` graph. By default such elements can be selected, resized, and repositioned, but they cannot be connected. For a graph element that allows for connections see :ref:`GraphNode<class_GraphNode>`.
+**GraphElement** 允许为 :ref:`GraphEdit<class_GraphEdit>` 图表创建自定义元素。默认情况下，可以此类元素可以被选择、调整大小、和重新定位，但它们无法被连接。对于允许连接的图形元素，请参阅 :ref:`GraphNode<class_GraphNode>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -43,22 +43,34 @@ Properties
    | :ref:`bool<class_bool>`       | :ref:`selected<class_GraphElement_property_selected>`               | ``false``         |
    +-------------------------------+---------------------------------------------------------------------+-------------------+
 
+.. rst-class:: classref-reftable-group
+
+主题属性
+--------
+
+.. table::
+   :widths: auto
+
+   +-----------------------------------+-------------------------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`resizer<class_GraphElement_theme_icon_resizer>` |
+   +-----------------------------------+-------------------------------------------------------+
+
 .. rst-class:: classref-section-separator
 
 ----
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
-.. _class_GraphElement_signal_close_request:
+.. _class_GraphElement_signal_delete_request:
 
 .. rst-class:: classref-signal
 
-**close_request** **(** **)**
+**delete_request** **(** **)**
 
-Emitted when closing the GraphElement is requested.
+请求删除 GraphElement 时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -70,7 +82,7 @@ Emitted when closing the GraphElement is requested.
 
 **dragged** **(** :ref:`Vector2<class_Vector2>` from, :ref:`Vector2<class_Vector2>` to **)**
 
-Emitted when the GraphElement is dragged.
+当 GraphElement 被拖动时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -82,7 +94,7 @@ Emitted when the GraphElement is dragged.
 
 **node_deselected** **(** **)**
 
-Emitted when the GraphElement is deselected.
+当 GraphElement 被取消选择时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -94,7 +106,7 @@ Emitted when the GraphElement is deselected.
 
 **node_selected** **(** **)**
 
-Emitted when the GraphElement is selected.
+当 GraphElement 被选中时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -106,7 +118,7 @@ Emitted when the GraphElement is selected.
 
 **position_offset_changed** **(** **)**
 
-Emitted when the GraphElement is moved.
+当 GraphElement 被移动时触发。
 
 .. rst-class:: classref-item-separator
 
@@ -118,7 +130,7 @@ Emitted when the GraphElement is moved.
 
 **raise_request** **(** **)**
 
-Emitted when displaying the GraphElement over other ones is requested. Happens on focusing (clicking into) the GraphElement.
+当 GraphElement 被要求显示在其他节点之上时触发。在 GraphElement 获得焦点（鼠标点击进入）时触发。
 
 .. rst-class:: classref-item-separator
 
@@ -130,7 +142,7 @@ Emitted when displaying the GraphElement over other ones is requested. Happens o
 
 **resize_request** **(** :ref:`Vector2<class_Vector2>` new_minsize **)**
 
-Emitted when resizing the GraphElement is requested. Happens on dragging the resizer handle (see :ref:`resizable<class_GraphElement_property_resizable>`).
+当 GraphElement 被要求调整大小时发出。在拖动调整器手柄时发生（见 :ref:`resizable<class_GraphElement_property_resizable>`\ ）。
 
 .. rst-class:: classref-section-separator
 
@@ -138,8 +150,8 @@ Emitted when resizing the GraphElement is requested. Happens on dragging the res
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GraphElement_property_draggable:
 
@@ -152,7 +164,7 @@ Property Descriptions
 - void **set_draggable** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_draggable** **(** **)**
 
-If ``true``, the user can drag the GraphElement.
+如果为 ``true``\ ，则用户能够拖动该 GraphElement。
 
 .. rst-class:: classref-item-separator
 
@@ -169,7 +181,7 @@ If ``true``, the user can drag the GraphElement.
 - void **set_position_offset** **(** :ref:`Vector2<class_Vector2>` value **)**
 - :ref:`Vector2<class_Vector2>` **get_position_offset** **(** **)**
 
-The offset of the GraphElement, relative to the scroll offset of the :ref:`GraphEdit<class_GraphEdit>`.
+GraphElement 的偏移量，相对于 :ref:`GraphEdit<class_GraphEdit>` 的滚动偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -186,9 +198,9 @@ The offset of the GraphElement, relative to the scroll offset of the :ref:`Graph
 - void **set_resizable** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_resizable** **(** **)**
 
-If ``true``, the user can resize the GraphElement.
+如果为 ``true``\ ，则用户可以调整 GraphElement 的大小。
 
-\ **Note:** Dragging the handle will only emit the :ref:`resize_request<class_GraphElement_signal_resize_request>` signal, the GraphElement needs to be resized manually.
+\ **注意：**\ 拖动手柄只会发出 :ref:`resize_request<class_GraphElement_signal_resize_request>` 信号，GraphElement 需要手动调整大小。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +217,7 @@ If ``true``, the user can resize the GraphElement.
 - void **set_selectable** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_selectable** **(** **)**
 
-If ``true``, the user can select the GraphElement.
+如果为 ``true``\ ，则用户能够选中该 GraphElement。
 
 .. rst-class:: classref-item-separator
 
@@ -222,12 +234,29 @@ If ``true``, the user can select the GraphElement.
 - void **set_selected** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_selected** **(** **)**
 
-If ``true``, the GraphElement is selected.
+如果为 ``true``\ ，则选中该 GraphElement 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+主题属性说明
+------------
+
+.. _class_GraphElement_theme_icon_resizer:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **resizer**
+
+用于调整大小的图标，在 :ref:`resizable<class_GraphElement_property_resizable>` 被启用时可见。
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

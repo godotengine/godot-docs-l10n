@@ -14,8 +14,8 @@ Quaternion
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 四元数与 :ref:`Basis<class_Basis>` 类似，实现的是旋转的矩阵表示。但 :ref:`Basis<class_Basis>` 存储了旋转、缩放、切变，四元数只存储旋转。
 
@@ -25,12 +25,12 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `使用 3D 变换 <../tutorials/3d/using_transforms.html#interpolating-with-quaternions>`__
 
@@ -38,8 +38,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -126,8 +126,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -166,8 +166,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Quaternion_constant_IDENTITY:
 
@@ -183,8 +183,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Quaternion_property_w:
 
@@ -244,8 +244,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Quaternion_constructor_Quaternion:
 
@@ -311,8 +311,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Quaternion_method_angle_to:
 
@@ -348,7 +348,7 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -374,7 +374,7 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -388,7 +388,7 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -486,7 +486,7 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -550,7 +550,7 @@ Method Descriptions
 
 在四元数 ``pre_a``\ 、该向量、\ ``b`` 和 ``post_b`` 之间，按给定量 ``weight`` 执行三次球面插值。
 
-它可以根据时间值执行比 ``spherical_cubic_interpolate()`` 更平滑的插值。
+它可以根据时间值执行比 :ref:`spherical_cubic_interpolate<class_Quaternion_method_spherical_cubic_interpolate>` 更平滑的插值。
 
 .. rst-class:: classref-section-separator
 
@@ -558,8 +558,8 @@ Method Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Quaternion_operator_neq_Quaternion:
 
@@ -717,10 +717,10 @@ Operator Descriptions
 
 返回该 **Quaternion** 的负值。和写 ``Quaternion(-q.x, -q.y, -q.z, -q.w)`` 相同。这个操作得到的是代表相同旋转的四元数。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

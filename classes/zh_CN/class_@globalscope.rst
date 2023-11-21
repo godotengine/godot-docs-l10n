@@ -14,8 +14,8 @@
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 全局范围的枚举常量和内置函数的列表。这是所有驻留在全局的，关于错误代码、键码、属性提示等的常量。
 
@@ -25,19 +25,19 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`随机数生成 <../tutorials/math/random_number_generation>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -120,8 +120,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -136,6 +136,8 @@ Methods
    | :ref:`float<class_float>`                       | :ref:`acos<class_@GlobalScope_method_acos>` **(** :ref:`float<class_float>` x **)**                                                                                                                                                                                                                                                                                            |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                       | :ref:`acosh<class_@GlobalScope_method_acosh>` **(** :ref:`float<class_float>` x **)**                                                                                                                                                                                                                                                                                          |
+   +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                       | :ref:`angle_difference<class_@GlobalScope_method_angle_difference>` **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to **)**                                                                                                                                                                                                                                   |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                       | :ref:`asin<class_@GlobalScope_method_asin>` **(** :ref:`float<class_float>` x **)**                                                                                                                                                                                                                                                                                            |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -293,6 +295,8 @@ Methods
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`RID<class_RID>`                           | :ref:`rid_from_int64<class_@GlobalScope_method_rid_from_int64>` **(** :ref:`int<class_int>` base **)**                                                                                                                                                                                                                                                                         |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                       | :ref:`rotate_toward<class_@GlobalScope_method_rotate_toward>` **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to, :ref:`float<class_float>` delta **)**                                                                                                                                                                                                        |
+   +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`                   | :ref:`round<class_@GlobalScope_method_round>` **(** :ref:`Variant<class_Variant>` x **)**                                                                                                                                                                                                                                                                                      |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                       | :ref:`roundf<class_@GlobalScope_method_roundf>` **(** :ref:`float<class_float>` x **)**                                                                                                                                                                                                                                                                                        |
@@ -333,6 +337,8 @@ Methods
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Variant<class_Variant>`                   | :ref:`type_convert<class_@GlobalScope_method_type_convert>` **(** :ref:`Variant<class_Variant>` variant, :ref:`int<class_int>` type **)**                                                                                                                                                                                                                                      |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                     | :ref:`type_string<class_@GlobalScope_method_type_string>` **(** :ref:`int<class_int>` type **)**                                                                                                                                                                                                                                                                               |
+   +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                           | :ref:`typeof<class_@GlobalScope_method_typeof>` **(** :ref:`Variant<class_Variant>` variable **)**                                                                                                                                                                                                                                                                             |
    +-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`PackedByteArray<class_PackedByteArray>`   | :ref:`var_to_bytes<class_@GlobalScope_method_var_to_bytes>` **(** :ref:`Variant<class_Variant>` variable **)**                                                                                                                                                                                                                                                                 |
@@ -356,8 +362,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_@GlobalScope_Side:
 
@@ -1707,7 +1713,7 @@ Mac / iPad 键盘上的“地球”键。
 
 :ref:`Key<enum_@GlobalScope_Key>` **KEY_KEYBOARD** = ``4194417``
 
-"On-screen keyboard" key on iPad keyboard.
+iPad 键盘上的“屏幕键盘”键。
 
 .. _class_@GlobalScope_constant_KEY_JIS_EISU:
 
@@ -2579,7 +2585,7 @@ enum **JoyButton**:
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_BACK** = ``4``
 
-游戏控制器 SDL back按钮。对应于 Sony Select、Xbox Back、Nintendo - 按钮。
+游戏控制器 SDL back 按钮。对应于 Sony Select、Xbox Back、Nintendo - 按钮。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_GUIDE:
 
@@ -2595,7 +2601,7 @@ enum **JoyButton**:
 
 :ref:`JoyButton<enum_@GlobalScope_JoyButton>` **JOY_BUTTON_START** = ``6``
 
-游戏控制器 SDL start 按钮。对应 Nintendo + 按钮。
+游戏控制器 SDL start 按钮。对应于 Sony Options、Xbox Menu、Nintendo + 按钮。
 
 .. _class_@GlobalScope_constant_JOY_BUTTON_LEFT_STICK:
 
@@ -3419,11 +3425,11 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_RANGE** = ``1``
 
-提示 :ref:`int<class_int>` 或 :ref:`float<class_float>` 属性应在提示字符串 ``"min,max"`` 或 ``"min,max,step"`` 指定的范围内。提示字符串可以选择包含 ``"or_greater"`` 和/或 ``"or_less"`` 以允许手动输入高于最大值或低于最小值的值。
+提示 :ref:`int<class_int>` 或 :ref:`float<class_float>` 属性应在提示字符串 ``"最小值,最大值"`` 或 ``"最小值,最大值,步长"`` 指定的范围内。提示字符串可以选择包含 ``"or_greater"`` 和/或 ``"or_less"``\ ，从而允许手动输入高于最大值或低于最小值的值。
 
 \ **示例：**\ ``"-360,360,1,or_greater,or_less"``\ 。
 
-此外，还可以包含其他关键字：\ ``"exp"`` 用于指数范围编辑，\ ``"radians"`` 用于以度数编辑弧度角，\ ``"degrees"`` 提示一个角度，以及 ``"hide_slider"`` 隐藏滑块。
+此外，还可以包含其他关键字：\ ``"exp"`` 用于指数范围编辑，\ ``"radians_as_degrees"`` 用于以度数编辑弧度角（范围的取值也使用度数），\ ``"degrees"`` 提示角度，\ ``"hide_slider"`` 则会隐藏滑块。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ENUM:
 
@@ -3609,7 +3615,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_OBJECT_ID** = ``22``
 
-
+提示该属性的值是一个被编码为对象 ID 的对象，其类型在提示字符串中指定。被用于调试器。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_TYPE_STRING:
 
@@ -3692,7 +3698,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NODE_PATH_TO_EDITED_NODE** = ``24``
 
-
+*已废弃。*\ 该提示未被用于任何地方，将来会被移除。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_OBJECT_TOO_BIG:
 
@@ -3700,7 +3706,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_OBJECT_TOO_BIG** = ``25``
 
-
+提示对象太大而无法通过调试器发送。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_NODE_PATH_VALID_TYPES:
 
@@ -3708,7 +3714,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NODE_PATH_VALID_TYPES** = ``26``
 
-
+提示该提示字符串为类型 :ref:`NodePath<class_NodePath>` 的属性指定有效的节点类型。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_SAVE_FILE:
 
@@ -3716,7 +3722,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_SAVE_FILE** = ``27``
 
-
+提示 :ref:`String<class_String>` 属性是文件的路径。编辑它将显示一个文件对话框，用于选择文件要保存的路径。该对话框可以访问项目的目录。该提示字符串可以是一组带有通配符的筛选器，例如 ``"*.png,*.jpg"``\ 。另请参阅 :ref:`FileDialog.filters<class_FileDialog_property_filters>`\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_GLOBAL_SAVE_FILE:
 
@@ -3724,7 +3730,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_GLOBAL_SAVE_FILE** = ``28``
 
-
+提示 :ref:`String<class_String>` 属性是文件的路径。编辑它将显示一个文件对话框，用于选择文件要保存的路径。该对话框可以访问整个文件系统。该提示字符串可以是一组带有通配符的筛选器，例如 ``"*.png,*.jpg"``\ 。另请参阅 :ref:`FileDialog.filters<class_FileDialog_property_filters>`\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_INT_IS_OBJECTID:
 
@@ -3732,7 +3738,9 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_INT_IS_OBJECTID** = ``29``
 
+提示 :ref:`int<class_int>` 属性是对象 ID。
 
+\ *已废弃。*\ 该提示不会用于任何地方，将来会被移除。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_INT_IS_POINTER:
 
@@ -3740,7 +3748,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_INT_IS_POINTER** = ``30``
 
-
+提示 :ref:`int<class_int>` 属性是一个指针。用于 GDExtension。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_ARRAY_TYPE:
 
@@ -3748,7 +3756,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_ARRAY_TYPE** = ``31``
 
-
+提示属性是一个 :ref:`Array<class_Array>`\ ，其存储类型在提示字符串中指定。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_LOCALE_ID:
 
@@ -3772,7 +3780,7 @@ enum **PropertyHint**:
 
 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` **PROPERTY_HINT_NODE_TYPE** = ``34``
 
-
+提示属性是 :ref:`Node<class_Node>` 派生类型的实例，可以选择通过提示字符串指定（例如 ``"Node2D"``\ ）。编辑它将显示一个用于从场景中选取节点的对话框。
 
 .. _class_@GlobalScope_constant_PROPERTY_HINT_HIDE_QUATERNION_EDIT:
 
@@ -3886,7 +3894,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_CLASS_IS_BITFIELD** = ``512``
 
-
+该属性是一个位字段，即它包含多个被表示为位的标志。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_NO_INSTANCE_STATE:
 
@@ -3918,7 +3926,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_STORE_IF_NULL** = ``8192``
 
-
+即使 :ref:`Object<class_Object>` 类型的属性值为 ``null``\ ，也会被存储。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_UPDATE_ALL_IF_MODIFIED:
 
@@ -3926,7 +3934,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_UPDATE_ALL_IF_MODIFIED** = ``16384``
 
-
+如果该属性被修改，则所有检查器字段都将被刷新。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_SCRIPT_DEFAULT_VALUE:
 
@@ -3934,7 +3942,9 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_SCRIPT_DEFAULT_VALUE** = ``32768``
 
+表示占位符脚本实例的默认值。
 
+\ *已废弃。*\ 该提示不会用于任何地方，将来会被移除。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_CLASS_IS_ENUM:
 
@@ -3942,7 +3952,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_CLASS_IS_ENUM** = ``65536``
 
-
+该属性是一个枚举，即它仅从其关联的枚举中获取被命名的整数常量。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_NIL_IS_VARIANT:
 
@@ -3950,7 +3960,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_NIL_IS_VARIANT** = ``131072``
 
-
+如果属性将 ``nil`` 作为默认值，则其类型将为 :ref:`Variant<class_Variant>`\ 。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_ARRAY:
 
@@ -3990,7 +4000,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_NODE_PATH_FROM_SCENE_ROOT** = ``4194304``
 
-
+:ref:`NodePath<class_NodePath>` 属性将始终相对于场景根。对于本地资源来说最有用。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_RESOURCE_NOT_PERSISTENT:
 
@@ -3998,7 +4008,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_RESOURCE_NOT_PERSISTENT** = ``8388608``
 
-
+在动态创建资源时使用，即 Getter 将始终返回一个不同的实例。\ :ref:`ResourceSaver<class_ResourceSaver>` 需要该信息来正确保存这种资源。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_KEYING_INCREMENTS:
 
@@ -4006,7 +4016,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_KEYING_INCREMENTS** = ``16777216``
 
-
+插入该属性的动画关键帧将自动增加该值，从而可以轻松地为一行中的多个值设置关键帧。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_DEFERRED_SET_RESOURCE:
 
@@ -4014,7 +4024,9 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_DEFERRED_SET_RESOURCE** = ``33554432``
 
+加载时，可以在加载结束时设置该属性的资源。
 
+\ *已废弃。*\ 该提示不会用于任何地方，将来会被移除。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR_INSTANTIATE_OBJECT:
 
@@ -4022,7 +4034,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_EDITOR_INSTANTIATE_OBJECT** = ``67108864``
 
-
+当该属性为 :ref:`Resource<class_Resource>` 且基础对象为 :ref:`Node<class_Node>` 时，则每当该节点是在编辑器中创建的，都会自动创建一个资源实例。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_EDITOR_BASIC_SETTING:
 
@@ -4030,7 +4042,7 @@ flags **PropertyUsageFlags**:
 
 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` **PROPERTY_USAGE_EDITOR_BASIC_SETTING** = ``134217728``
 
-
+该属性被视为基本设置，即使禁用高级模式时也会显现。用于项目设置。
 
 .. _class_@GlobalScope_constant_PROPERTY_USAGE_READ_ONLY:
 
@@ -4128,7 +4140,7 @@ flags **MethodFlags**:
 
 :ref:`MethodFlags<enum_@GlobalScope_MethodFlags>` **METHOD_FLAG_OBJECT_CORE** = ``64``
 
-内部使用。允许不将核心虚拟方法（例如 :ref:`Object._notification<class_Object_method__notification>`\ ）转储到 JSON API。
+内部使用。允许不将核心虚拟方法（例如 :ref:`Object._notification<class_Object_private_method__notification>`\ ）转储到 JSON API。
 
 .. _class_@GlobalScope_constant_METHOD_FLAGS_DEFAULT:
 
@@ -4684,8 +4696,8 @@ enum **Variant.Operator**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_@GlobalScope_property_AudioServer:
 
@@ -4741,9 +4753,9 @@ Property Descriptions
 
 :ref:`EditorInterface<class_EditorInterface>` **EditorInterface**
 
-The :ref:`EditorInterface<class_EditorInterface>` singleton.
+:ref:`EditorInterface<class_EditorInterface>` 单例。
 
-\ **Note:** Only available in editor builds.
+\ **注意：**\ 仅在编辑器构建中可用。
 
 .. rst-class:: classref-item-separator
 
@@ -5139,8 +5151,8 @@ The :ref:`EditorInterface<class_EditorInterface>` singleton.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_@GlobalScope_method_abs:
 
@@ -5233,14 +5245,26 @@ Method Descriptions
 
 :ref:`float<class_float>` **acosh** **(** :ref:`float<class_float>` x **)**
 
-Returns the hyperbolic arc (also called inverse) cosine of ``x``, returning a value in radians. Use it to get the angle from an angle's cosine in hyperbolic space if ``x`` is larger or equal to 1. For values of ``x`` lower than 1, it will return 0, in order to prevent :ref:`acosh<class_@GlobalScope_method_acosh>` from returning :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`.
+返回参数 x 的双曲弧（也称为反余弦），返回弧度值。使用它来获取在双曲空间中，如果参数 x 大于或等于 1 ，角的余弦的角度。对于参数 x 小于 1 的值，将返回 0 ，以防止 :ref:`acosh<class_@GlobalScope_method_acosh>` 返回 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` 。
 
 ::
 
-    var a = acosh(2) # Returns 1.31695789692482
-    cosh(a) # Returns 2
+    var a = acosh(2) # 返回 1.31695789692482
+    cosh(a) # 返回 2
     
-    var b = acosh(-1) # Returns 0
+    var b = acosh(-1) # 返回 0
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_@GlobalScope_method_angle_difference:
+
+.. rst-class:: classref-method
+
+:ref:`float<class_float>` **angle_difference** **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to **)**
+
+返回两个角度之间的差，范围为 ``[-PI, +PI]`` 。当 ``from`` 和 ``to`` 相反时，如果 ``from`` 小于 ``to``\ ，则返回 ``-PI`` ，否则返回 ``PI`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -5269,12 +5293,12 @@ Returns the hyperbolic arc (also called inverse) cosine of ``x``, returning a va
 
 :ref:`float<class_float>` **asinh** **(** :ref:`float<class_float>` x **)**
 
-Returns the hyperbolic arc (also called inverse) sine of ``x``, returning a value in radians. Use it to get the angle from an angle's sine in hyperbolic space.
+返回参数 x 的双曲弧（也称为反正弦），返回弧度值。使用它来获取在双曲空间中，角的正弦角度。
 
 ::
 
-    var a = asinh(0.9) # Returns 0.8088669356527824
-    sinh(a) # Returns 0.9
+    var a = asinh(0.9) # 返回 0.8088669356527824
+    sinh(a) # 返回 0.9
 
 .. rst-class:: classref-item-separator
 
@@ -5324,17 +5348,17 @@ Returns the hyperbolic arc (also called inverse) sine of ``x``, returning a valu
 
 :ref:`float<class_float>` **atanh** **(** :ref:`float<class_float>` x **)**
 
-Returns the hyperbolic arc (also called inverse) tangent of ``x``, returning a value in radians. Use it to get the angle from an angle's tangent in hyperbolic space if ``x`` is between -1 and 1 (non-inclusive).
+返回 ``x`` 的双曲弧（也称为反正切），以弧度为单位。如果 ``x`` 在 -1 和 1 之间（不包括 -1 和 1 ），则使用它从双曲空间中的角度的正切值获取角度。
 
-In mathematics, the inverse hyperbolic tangent is only defined for -1 < ``x`` < 1 in the real set, so values equal or lower to -1 for ``x`` return negative :ref:`@GDScript.INF<class_@GDScript_constant_INF>` and values equal or higher than 1 return positive :ref:`@GDScript.INF<class_@GDScript_constant_INF>` in order to prevent :ref:`atanh<class_@GlobalScope_method_atanh>` from returning :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>`.
+在数学中，只有在实数集中，-1 < ``x`` < 1 的情况下，双曲反正切才有意义。因此，为了预防 :ref:`atanh<class_@GlobalScope_method_atanh>` 返回 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` ，对于 ``x`` 等于或小于 -1 的值，返回负的 :ref:`@GDScript.NAN<class_@GDScript_constant_NAN>` ；对于\ ``x``\ 等于或大于 1 的值，返回正的 :ref:`@GDScript.INF<class_@GDScript_constant_INF>` 。
 
 ::
 
-    var a = atanh(0.9) # Returns 1.47221948958322
-    tanh(a) # Returns 0.9
+    var a = atanh(0.9) # 返回 1.47221948958322
+    tanh(a) # 返回 0.9
     
-    var b = atanh(-2) # Returns -inf
-    tanh(b) # Returns -1
+    var b = atanh(-2) # 返回 -inf
+    tanh(b) # 返回 -1
 
 .. rst-class:: classref-item-separator
 
@@ -5398,14 +5422,14 @@ In mathematics, the inverse hyperbolic tangent is only defined for -1 < ``x`` < 
 
 :ref:`Variant<class_Variant>` **ceil** **(** :ref:`Variant<class_Variant>` x **)**
 
-向上舍入 ``x``\ （朝正无穷大），返回不小于 ``x`` 的最小整数。支持的类型：\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector4<class_Vector4>`\ 。
+向上舍入 ``x``\ （朝正无穷大方向），返回不小于 ``x`` 的最小整数。支持的类型：\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector2i<class_Vector2i>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector3i<class_Vector3i>`\ 、\ :ref:`Vector4<class_Vector4>`\ 、\ :ref:`Vector4i<class_Vector4i>`\ 。
 
 ::
 
-    var i = ceil(1.45) # i 是 2.0
-    i = ceil(1.001)    # i 是 2.0
+    var i = ceil(1.45) # i 为 2.0
+    i = ceil(1.001)    # i 为 2.0
 
-另请参见 :ref:`floor<class_@GlobalScope_method_floor>`\ 、\ :ref:`round<class_@GlobalScope_method_round>`\ 、以及 :ref:`snapped<class_@GlobalScope_method_snapped>`\ 。
+另见 :ref:`floor<class_@GlobalScope_method_floor>`\ 、\ :ref:`round<class_@GlobalScope_method_round>`\ 、\ :ref:`snapped<class_@GlobalScope_method_snapped>`\ 。
 
 \ **注意：**\ 为了更好的类型安全，使用 :ref:`ceilf<class_@GlobalScope_method_ceilf>`\ 、\ :ref:`ceili<class_@GlobalScope_method_ceili>`\ 、\ :ref:`Vector2.ceil<class_Vector2_method_ceil>`\ 、\ :ref:`Vector3.ceil<class_Vector3_method_ceil>` 或 :ref:`Vector4.ceil<class_Vector4_method_ceil>`\ 。
 
@@ -5555,7 +5579,7 @@ In mathematics, the inverse hyperbolic tangent is only defined for -1 < ``x`` < 
 
 :ref:`float<class_float>` **cubic_interpolate** **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to, :ref:`float<class_float>` pre, :ref:`float<class_float>` post, :ref:`float<class_float>` weight **)**
 
-根据 ``weight`` 中定义的因子以及 ``pre`` 和 ``post`` 值，在两个值之间进行三次插值。
+根据 ``weight`` 定义的系数，以及 ``pre`` 和 ``post`` 值，在两个值之间进行三次插值。
 
 .. rst-class:: classref-item-separator
 
@@ -5567,7 +5591,7 @@ In mathematics, the inverse hyperbolic tangent is only defined for -1 < ``x`` < 
 
 :ref:`float<class_float>` **cubic_interpolate_angle** **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to, :ref:`float<class_float>` pre, :ref:`float<class_float>` post, :ref:`float<class_float>` weight **)**
 
-根据 ``weight`` 中定义的因子以及 ``pre`` 和 ``post`` 值，在具有最短路径的两个旋转值之间三次插值 。另见 :ref:`lerp_angle<class_@GlobalScope_method_lerp_angle>`\ 。
+根据 ``weight`` 定义的系数，以及 ``pre`` 和 ``post`` 值，在两个旋转值之间的最短路径进行三次插值 。另见 :ref:`lerp_angle<class_@GlobalScope_method_lerp_angle>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5579,9 +5603,9 @@ In mathematics, the inverse hyperbolic tangent is only defined for -1 < ``x`` < 
 
 :ref:`float<class_float>` **cubic_interpolate_angle_in_time** **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to, :ref:`float<class_float>` pre, :ref:`float<class_float>` post, :ref:`float<class_float>` weight, :ref:`float<class_float>` to_t, :ref:`float<class_float>` pre_t, :ref:`float<class_float>` post_t **)**
 
-根据 ``weight`` 中定义的因子以及 ``pre`` 和 ``post`` 值，在具有最短路径的两个旋转值之间进行三次插值。另见 :ref:`lerp_angle<class_@GlobalScope_method_lerp_angle>`\ 。
+根据 ``weight`` 定义的系数，以及 ``pre`` 和 ``post`` 值，在两个旋转值之间的最短路径进行三次插值。另见 :ref:`lerp_angle<class_@GlobalScope_method_lerp_angle>`\ 。
 
-它可以根据时间值执行比 ``cubic_interpolate()`` 更平滑的插值。
+它可以根据时间值执行比 :ref:`cubic_interpolate<class_@GlobalScope_method_cubic_interpolate>` 更平滑的插值。
 
 .. rst-class:: classref-item-separator
 
@@ -5593,7 +5617,7 @@ In mathematics, the inverse hyperbolic tangent is only defined for -1 < ``x`` < 
 
 :ref:`float<class_float>` **cubic_interpolate_in_time** **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to, :ref:`float<class_float>` pre, :ref:`float<class_float>` post, :ref:`float<class_float>` weight, :ref:`float<class_float>` to_t, :ref:`float<class_float>` pre_t, :ref:`float<class_float>` post_t **)**
 
-根据 ``weight`` 中定义的因子以及 ``pre`` 和 ``post`` 值，在两个值之间进行三次插值。
+根据 ``weight`` 定义的系数，以及 ``pre`` 和 ``post`` 值，在两个值之间进行三次插值。
 
 它可以根据时间值执行比 :ref:`cubic_interpolate<class_@GlobalScope_method_cubic_interpolate>` 更平滑的插值。
 
@@ -5635,21 +5659,21 @@ In mathematics, the inverse hyperbolic tangent is only defined for -1 < ``x`` < 
 
 :ref:`float<class_float>` **ease** **(** :ref:`float<class_float>` x, :ref:`float<class_float>` curve **)**
 
-Returns an "eased" value of ``x`` based on an easing function defined with ``curve``. This easing function is based on an exponent. The ``curve`` can be any floating-point number, with specific values leading to the following behaviors:
+基于用 ``curve`` 定义的缓动函数返回 ``x`` 的“缓动后”的值。该缓动函数是基于指数的。\ ``curve`` 可以是任意浮点数，具体数值会导致以下行为：
 
 ::
 
-    - Lower than -1.0 (exclusive): Ease in-out
-    - 1.0: Linear
-    - Between -1.0 and 0.0 (exclusive): Ease out-in
-    - 0.0: Constant
-    - Between 0.0 to 1.0 (exclusive): Ease out
-    - 1.0: Linear
-    - Greater than 1.0 (exclusive): Ease in
+    - 低于 -1.0（开区间）：缓入缓出
+    - -1.0：线性
+    - 在 -1.0 和 0.0 之间（开区间）：缓出缓入
+    - 0.0：恒定
+    - 在 0.0 到 1.0 之间（开区间）：缓出
+    - 1.0：线性
+    - 大于 1.0（开区间）：缓入
 
-\ `ease() curve values cheatsheet <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/ease_cheatsheet.png>`__\ 
+\ `ease() 曲线值速查表 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/ease_cheatsheet.png>`__\ 
 
-See also :ref:`smoothstep<class_@GlobalScope_method_smoothstep>`. If you need to perform more advanced transitions, use :ref:`Tween.interpolate_value<class_Tween_method_interpolate_value>`.
+另见 :ref:`smoothstep<class_@GlobalScope_method_smoothstep>`\ 。如果你需要执行更高级的过渡，请使用 :ref:`Tween.interpolate_value<class_Tween_method_interpolate_value>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5680,15 +5704,15 @@ See also :ref:`smoothstep<class_@GlobalScope_method_smoothstep>`. If you need to
 
 :ref:`float<class_float>` **exp** **(** :ref:`float<class_float>` x **)**
 
-The natural exponential function. It raises the mathematical constant *e* to the power of ``x`` and returns it.
+自然指数函数。计算数学常数 *e* 的 ``x`` 次方并返回它。
 
-\ *e* has an approximate value of 2.71828, and can be obtained with ``exp(1)``.
+\ *e* 的近似值为 2.71828，可以使用 ``exp(1)`` 获得。
 
-For exponents to other bases use the method :ref:`pow<class_@GlobalScope_method_pow>`.
+求其他底数的指数应使用 :ref:`pow<class_@GlobalScope_method_pow>` 方法。
 
 ::
 
-    var a = exp(2) # Approximately 7.39
+    var a = exp(2) # 大约是 7.39
 
 .. rst-class:: classref-item-separator
 
@@ -5700,14 +5724,14 @@ For exponents to other bases use the method :ref:`pow<class_@GlobalScope_method_
 
 :ref:`Variant<class_Variant>` **floor** **(** :ref:`Variant<class_Variant>` x **)**
 
-向下舍入 ``x``\ （朝负无穷大），返回不大于 ``x`` 的最大整数。支持的类型：\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector4<class_Vector4>`\ 。
+向下舍入 ``x``\ （朝负无穷大），返回不大于 ``x`` 的最大整数。支持的类型：\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector2i<class_Vector2i>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector3i<class_Vector3i>`\ 、\ :ref:`Vector4<class_Vector4>`\ 、\ :ref:`Vector4i<class_Vector4i>`\ 。
 
 ::
 
-    var a = floor(2.99) # a 是 2.0
-    a = floor(-2.99)    # a 是 -3.0
+    var a = floor(2.99) # a 为 2.0
+    a = floor(-2.99)    # a 为 -3.0
 
-另请参阅 :ref:`ceil<class_@GlobalScope_method_ceil>`\ 、\ :ref:`round<class_@GlobalScope_method_round>`\ 、以及 :ref:`snapped<class_@GlobalScope_method_snapped>`\ 。
+另见 :ref:`ceil<class_@GlobalScope_method_ceil>`\ 、\ :ref:`round<class_@GlobalScope_method_round>`\ 、\ :ref:`snapped<class_@GlobalScope_method_snapped>`\ 。
 
 \ **注意：**\ 为了更好的类型安全，请使用 :ref:`floorf<class_@GlobalScope_method_floorf>`\ 、\ :ref:`floori<class_@GlobalScope_method_floori>`\ 、\ :ref:`Vector2.floor<class_Vector2_method_floor>`\ 、\ :ref:`Vector3.floor<class_Vector3_method_floor>` 或 :ref:`Vector4.floor<class_Vector4_method_floor>`\ 。
 
@@ -6240,18 +6264,18 @@ For exponents to other bases use the method :ref:`pow<class_@GlobalScope_method_
 
 :ref:`int<class_int>` **nearest_po2** **(** :ref:`int<class_int>` value **)**
 
-Returns the smallest integer power of 2 that is greater than or equal to ``value``.
+返回大于等于 ``value`` 的最小的 2 的幂。
 
 ::
 
-    nearest_po2(3) # Returns 4
-    nearest_po2(4) # Returns 4
-    nearest_po2(5) # Returns 8
+    nearest_po2(3) # 返回 4
+    nearest_po2(4) # 返回 4
+    nearest_po2(5) # 返回 8
     
-    nearest_po2(0)  # Returns 0 (this may not be expected)
-    nearest_po2(-1) # Returns 0 (this may not be expected)
+    nearest_po2(0)  # 返回 0（可能出乎意料）
+    nearest_po2(-1) # 返回 0（可能出乎意料）
 
-\ **Warning:** Due to its implementation, this method returns ``0`` rather than ``1`` for values less than or equal to ``0``, with an exception for ``value`` being the smallest negative 64-bit integer (``-9223372036854775808``) in which case the ``value`` is returned unchanged.
+\ **警告：**\ 由于其实现方式，该函数会对小于等于 ``0`` 的值返回 ``0`` 而不是 ``1``\ ，例外是 ``value`` 为最小的负 64 位整数（\ ``-9223372036854775808``\ ）时，会将 ``value`` 原样返回。
 
 .. rst-class:: classref-item-separator
 
@@ -6785,13 +6809,29 @@ void **randomize** **(** **)**
 
 ----
 
+.. _class_@GlobalScope_method_rotate_toward:
+
+.. rst-class:: classref-method
+
+:ref:`float<class_float>` **rotate_toward** **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to, :ref:`float<class_float>` delta **)**
+
+将 ``from`` 朝 ``to`` 旋转，旋转的量为 ``delta``\ 。不会越过 ``to``\ 。
+
+与 :ref:`move_toward<class_@GlobalScope_method_move_toward>` 类似，但是能够让夹角正确绕过 :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>`\ 。
+
+如果 ``delta`` 为负，则该函数会进行远离 ``to`` 的旋转，朝向相反的角度，但不会越过该角度。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_@GlobalScope_method_round:
 
 .. rst-class:: classref-method
 
 :ref:`Variant<class_Variant>` **round** **(** :ref:`Variant<class_Variant>` x **)**
 
-将 ``x`` 舍入到最接近的整数，中间情况远离 0 舍入。支持的类型：\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector4<class_Vector4>`\ 。
+将 ``x`` 舍入到最接近的整数，中间情况远离 0 舍入。支持的类型：\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector2i<class_Vector2i>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector3i<class_Vector3i>`\ 、\ :ref:`Vector4<class_Vector4>`\ 、\ :ref:`Vector4i<class_Vector4i>`\ 。
 
 ::
 
@@ -6799,7 +6839,7 @@ void **randomize** **(** **)**
     round(2.5) # 返回 3
     round(2.6) # 返回 3
 
-另请参见 :ref:`floor<class_@GlobalScope_method_floor>`\ 、\ :ref:`ceil<class_@GlobalScope_method_ceil>` 和 :ref:`snapped<class_@GlobalScope_method_snapped>`\ 。
+另见 :ref:`floor<class_@GlobalScope_method_floor>`\ 、\ :ref:`ceil<class_@GlobalScope_method_ceil>`\ 、\ :ref:`snapped<class_@GlobalScope_method_snapped>`\ 。
 
 \ **注意：**\ 为了更好的类型安全，使用 :ref:`roundf<class_@GlobalScope_method_roundf>`\ 、\ :ref:`roundi<class_@GlobalScope_method_roundi>`\ 、\ :ref:`Vector2.round<class_Vector2_method_round>`\ 、\ :ref:`Vector3.round<class_Vector3_method_round>` 或 :ref:`Vector4.round<class_Vector4_method_round>`\ 。
 
@@ -6876,20 +6916,20 @@ void **seed** **(** :ref:`int<class_int>` base **)**
 
 :ref:`Variant<class_Variant>` **sign** **(** :ref:`Variant<class_Variant>` x **)**
 
-Returns the same type of :ref:`Variant<class_Variant>` as ``x``, with ``-1`` for negative values, ``1`` for positive values, and ``0`` for zeros. For ``nan`` values it returns 0.
+返回与 ``x`` 相同类型的 :ref:`Variant<class_Variant>`\ ，负值返回 ``-1``\ 、正值返回 ``1``\ ，零则返回 ``0``\ 。如果是 ``nan`` 则返回 0。
 
-Supported types: :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Vector2<class_Vector2>`, :ref:`Vector2i<class_Vector2i>`, :ref:`Vector3<class_Vector3>`, :ref:`Vector3i<class_Vector3i>`, :ref:`Vector4<class_Vector4>`, :ref:`Vector4i<class_Vector4i>`.
+支持的类型有：\ :ref:`int<class_int>`\ 、\ :ref:`float<class_float>`\ 、\ :ref:`Vector2<class_Vector2>`\ 、\ :ref:`Vector2i<class_Vector2i>`\ 、\ :ref:`Vector3<class_Vector3>`\ 、\ :ref:`Vector3i<class_Vector3i>`\ 、\ :ref:`Vector4<class_Vector4>`\ 、\ :ref:`Vector4i<class_Vector4i>`\ 。
 
 ::
 
-    sign(-6.0) # Returns -1
-    sign(0.0)  # Returns 0
-    sign(6.0)  # Returns 1
-    sign(NAN)  # Returns 0
+    sign(-6.0) # 返回 -1
+    sign(0.0)  # 返回 0
+    sign(6.0)  # 返回 1
+    sign(NAN)  # 返回 0
     
-    sign(Vector3(-6.0, 0.0, 6.0)) # Returns (-1, 0, 1)
+    sign(Vector3(-6.0, 0.0, 6.0)) # 返回 (-1, 0, 1)
 
-\ **Note:** For better type safety, use :ref:`signf<class_@GlobalScope_method_signf>`, :ref:`signi<class_@GlobalScope_method_signi>`, :ref:`Vector2.sign<class_Vector2_method_sign>`, :ref:`Vector2i.sign<class_Vector2i_method_sign>`, :ref:`Vector3.sign<class_Vector3_method_sign>`, :ref:`Vector3i.sign<class_Vector3i_method_sign>`, :ref:`Vector4.sign<class_Vector4_method_sign>`, or :ref:`Vector4i.sign<class_Vector4i_method_sign>`.
+\ **注意：**\ 为了更好的类型安全，请使用 :ref:`signf<class_@GlobalScope_method_signf>`\ 、\ :ref:`signi<class_@GlobalScope_method_signi>`\ 、\ :ref:`Vector2.sign<class_Vector2_method_sign>`\ 、\ :ref:`Vector2i.sign<class_Vector2i_method_sign>`\ 、\ :ref:`Vector3.sign<class_Vector3_method_sign>`\ 、\ :ref:`Vector3i.sign<class_Vector3i_method_sign>`\ 、\ :ref:`Vector4.sign<class_Vector4_method_sign>` 或 :ref:`Vector4i.sign<class_Vector4i_method_sign>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -6901,14 +6941,14 @@ Supported types: :ref:`int<class_int>`, :ref:`float<class_float>`, :ref:`Vector2
 
 :ref:`float<class_float>` **signf** **(** :ref:`float<class_float>` x **)**
 
-Returns ``-1.0`` if ``x`` is negative, ``1.0`` if ``x`` is positive, and ``0.0`` if ``x`` is zero. For ``nan`` values of ``x`` it returns 0.0.
+如果 ``x`` 为负，则返回 ``-1.0``\ ；如果 ``x`` 为正，则返回 ``1.0``\ ；如果 ``x`` 为零，则返回 ``0.0``\ 。如果 ``x`` 为 ``nan`` 则返回 0.0。
 
 ::
 
-    signf(-6.5) # Returns -1.0
-    signf(0.0)  # Returns 0.0
-    signf(6.5)  # Returns 1.0
-    signf(NAN)  # Returns 0.0
+    signf(-6.5) # 返回 -1.0
+    signf(0.0)  # 返回 0.0
+    signf(6.5)  # 返回 1.0
+    signf(NAN)  # 返回 0.0
 
 .. rst-class:: classref-item-separator
 
@@ -6972,22 +7012,22 @@ Returns ``-1.0`` if ``x`` is negative, ``1.0`` if ``x`` is positive, and ``0.0``
 
 :ref:`float<class_float>` **smoothstep** **(** :ref:`float<class_float>` from, :ref:`float<class_float>` to, :ref:`float<class_float>` x **)**
 
-Returns the result of smoothly interpolating the value of ``x`` between ``0`` and ``1``, based on the where ``x`` lies with respect to the edges ``from`` and ``to``.
+返回 ``x`` 在 ``0`` 和 ``1`` 之间平滑插值的结果，基于 ``x`` 相对于边 ``from`` 和 ``to`` 的位置。
 
-The return value is ``0`` if ``x <= from``, and ``1`` if ``x >= to``. If ``x`` lies between ``from`` and ``to``, the returned value follows an S-shaped curve that maps ``x`` between ``0`` and ``1``.
+如果 ``x <= from``\ ，则返回值为 ``0``\ ；如果 ``x >= to``\ ，则返回值为 ``1``\ 。如果 ``x`` 位于 ``from`` 和 ``to`` 之间，则返回值遵循一条将 ``x`` 映射到 ``0`` 和 ``1`` 之间的 S 形曲线。
 
-This S-shaped curve is the cubic Hermite interpolator, given by ``f(y) = 3*y^2 - 2*y^3`` where ``y = (x-from) / (to-from)``.
+这条 S 形曲线是三次 Hermite 插值器，由 ``f(y) = 3*y^2 - 2*y^3`` 给出，其中 ``y = (x-from) / (to-from)``\ 。
 
 ::
 
-    smoothstep(0, 2, -5.0) # Returns 0.0
-    smoothstep(0, 2, 0.5) # Returns 0.15625
-    smoothstep(0, 2, 1.0) # Returns 0.5
-    smoothstep(0, 2, 2.0) # Returns 1.0
+    smoothstep(0, 2, -5.0) # 返回 0.0
+    smoothstep(0, 2, 0.5) # 返回 0.15625
+    smoothstep(0, 2, 1.0) # 返回 0.5
+    smoothstep(0, 2, 2.0) # 返回 1.0
 
-Compared to :ref:`ease<class_@GlobalScope_method_ease>` with a curve value of ``-1.6521``, :ref:`smoothstep<class_@GlobalScope_method_smoothstep>` returns the smoothest possible curve with no sudden changes in the derivative. If you need to perform more advanced transitions, use :ref:`Tween<class_Tween>` or :ref:`AnimationPlayer<class_AnimationPlayer>`.
+与曲线值为 ``-1.6521`` 的 :ref:`ease<class_@GlobalScope_method_ease>` 相比，\ :ref:`smoothstep<class_@GlobalScope_method_smoothstep>` 返回最平滑的曲线，导数没有突然变化。如果需要执行更高级的过渡，请使用 :ref:`Tween<class_Tween>` 或 :ref:`AnimationPlayer<class_AnimationPlayer>`\ 。
 
-\ `Comparison between smoothstep() and ease(x, -1.6521) return values <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/smoothstep_ease_comparison.png>`__
+\ `smoothstep() 与 ease(x, -1.6521) 返回值的比较 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/smoothstep_ease_comparison.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -7181,19 +7221,39 @@ Compared to :ref:`ease<class_@GlobalScope_method_ease>` with a curve value of ``
 
 :ref:`Variant<class_Variant>` **type_convert** **(** :ref:`Variant<class_Variant>` variant, :ref:`int<class_int>` type **)**
 
-Converts the given ``variant`` to the given ``type``, using the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` values. This method is generous with how it handles types, it can automatically convert between array types, convert numeric :ref:`String<class_String>`\ s to :ref:`int<class_int>`, and converting most things to :ref:`String<class_String>`.
+使用 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 值将给定的 ``variant`` 转换为给定的 ``type``\ 。此方法对类型的处理十分宽松，可以在数组类型之间自动转换，将数值的 :ref:`String<class_String>` 转换为 :ref:`int<class_int>`\ ，也可以将大多数内容转换为 :ref:`String<class_String>`\ 。
 
-If the type conversion cannot be done, this method will return the default value for that type, for example converting :ref:`Rect2<class_Rect2>` to :ref:`Vector2<class_Vector2>` will always return ``Vector2.ZERO``. This method will never show error messages as long as ``type`` is a valid Variant type.
+如果无法完成类型转换，此方法将返回该类型的默认值，例如 :ref:`Rect2<class_Rect2>` 转换为 :ref:`Vector2<class_Vector2>` 时将总是返回 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`\ 。只要 ``type`` 是一个有效的 Variant 类型，此方法就永远不会显示错误消息。
 
-The returned value is a :ref:`Variant<class_Variant>`, but the data inside and the :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` will be the same as the requested type.
+返回的值是一个 :ref:`Variant<class_Variant>`\ ，但是其中的数据以及 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 将会与请求的类型相同。
 
 ::
 
-    type_convert("Hi!", TYPE_INT) # Returns 0
-    type_convert("123", TYPE_INT) # Returns 123
-    type_convert(123.4, TYPE_INT) # Returns 123
-    type_convert(5, TYPE_VECTOR2) # Returns (0, 0)
-    type_convert("Hi!", TYPE_NIL) # Returns null
+    type_convert("Hi!", TYPE_INT) # 返回 0
+    type_convert("123", TYPE_INT) # 返回 123
+    type_convert(123.4, TYPE_INT) # 返回 123
+    type_convert(5, TYPE_VECTOR2) # 返回 (0, 0)
+    type_convert("Hi!", TYPE_NIL) # 返回 null
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_@GlobalScope_method_type_string:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **type_string** **(** :ref:`int<class_int>` type **)**
+
+返回类型 ``type`` 的人类可读名称，参数使用 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 的值。
+
+::
+
+    print(TYPE_INT) # 输出 2。
+    print(type_string(TYPE_INT)) # 输出“int”。
+    print(type_string(TYPE_STRING)) # 输出“String”。
+
+另见 :ref:`typeof<class_@GlobalScope_method_typeof>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7205,7 +7265,7 @@ The returned value is a :ref:`Variant<class_Variant>`, but the data inside and t
 
 :ref:`int<class_int>` **typeof** **(** :ref:`Variant<class_Variant>` variable **)**
 
-使用 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 值返回给定 ``variable`` 的内部类型。
+返回变量 ``variable`` 的内部类型，使用的是 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>` 中的值。
 
 ::
 
@@ -7216,6 +7276,8 @@ The returned value is a :ref:`Variant<class_Variant>`, but the data inside and t
         print(result[0]) # 输出 a
     else:
         print("出乎意料的结果")
+
+另见 :ref:`type_string<class_@GlobalScope_method_type_string>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -7291,7 +7353,7 @@ The returned value is a :ref:`Variant<class_Variant>`, but the data inside and t
 
 :ref:`Variant<class_Variant>` **weakref** **(** :ref:`Variant<class_Variant>` obj **)**
 
-返回对某个对象的弱引用，如果 ``obj`` 无效，则返回 ``null``\ 。
+返回一个 :ref:`WeakRef<class_WeakRef>` 实例，其中包含对 ``obj`` 的弱引用。如果 ``obj`` 为 ``null``\ ，则返回空的 :ref:`WeakRef<class_WeakRef>` 实例。如果 ``obj`` 既不是 :ref:`Object<class_Object>` 派生实例，也不是 ``null``\ ，则打印错误并返回 ``null``\ 。
 
 对对象的弱引用不足以使对象保持存活：当对引用对象的剩余引用都是弱引用时，垃圾回收可以自由销毁该引用对象并将其内存重新用于其他用途。但是，在对象实际被销毁之前，弱引用可能会返回该对象，即使不存在对它的强引用也是如此。
 
@@ -7349,7 +7411,7 @@ The returned value is a :ref:`Variant<class_Variant>`, but the data inside and t
 
 \ **注意：**\ 如果 ``min`` 为 ``0``\ ，则相当于 :ref:`fposmod<class_@GlobalScope_method_fposmod>`\ ，因此请改用它。
 
-通过让用户控制最小值，\ ``wrapf`` 比使用 :ref:`fposmod<class_@GlobalScope_method_fposmod>` 方法更灵活。
+通过让用户控制最小值，\ :ref:`wrapf<class_@GlobalScope_method_wrapf>` 比使用 :ref:`fposmod<class_@GlobalScope_method_fposmod>` 方法更灵活。
 
 .. rst-class:: classref-item-separator
 
@@ -7373,10 +7435,10 @@ The returned value is a :ref:`Variant<class_Variant>`, but the data inside and t
     # result 是 -2
     var result = wrapi(-6, -5, -1)
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

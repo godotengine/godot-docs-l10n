@@ -10,14 +10,14 @@
 Input
 =====
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 用于处理输入的单例。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **Input** 是处理键盘按键、鼠标按钮及移动、游戏手柄、输入动作等的单例。动作以及对应的事件可以在\ **项目 > 项目设置**\ 的\ **输入映射**\ 选项卡中设置，也可以使用 :ref:`InputMap<class_InputMap>` 类设置。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`输入文档索引 <../tutorials/inputs/index>`
 
@@ -36,8 +36,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -154,8 +154,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Input_signal_joy_connection_changed:
 
@@ -171,8 +171,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Input_MouseMode:
 
@@ -376,8 +376,8 @@ I 形光标。通常用于指示点击鼠标后文本光标的位置。
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Input_property_mouse_mode:
 
@@ -419,8 +419,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Input_method_action_press:
 
@@ -432,7 +432,7 @@ void **action_press** **(** :ref:`StringName<class_StringName>` action, :ref:`fl
 
 强度可以用于非布尔运算的动作，它的范围在 0 到 1 之间，代表给定动作的力度。
 
-\ **注意：**\ 这个方法不会引起任何 :ref:`Node._input<class_Node_method__input>` 调用。它旨在与 :ref:`is_action_pressed<class_Input_method_is_action_pressed>` 和 :ref:`is_action_just_pressed<class_Input_method_is_action_just_pressed>` 一起使用。如果你想模拟 ``_input``\ ，请使用 :ref:`parse_input_event<class_Input_method_parse_input_event>` 代替。
+\ **注意：**\ 这个方法不会引起任何 :ref:`Node._input<class_Node_private_method__input>` 调用。它旨在与 :ref:`is_action_pressed<class_Input_method_is_action_pressed>` 和 :ref:`is_action_just_pressed<class_Input_method_is_action_just_pressed>` 一起使用。如果你想模拟 ``_input``\ ，请使用 :ref:`parse_input_event<class_Input_method_parse_input_event>` 代替。
 
 .. rst-class:: classref-item-separator
 
@@ -482,11 +482,11 @@ void **flush_buffered_events** **(** **)**
 
 :ref:`Vector3<class_Vector3>` **get_accelerometer** **(** **)** |const|
 
-Returns the acceleration in m/s² of the device's accelerometer sensor, if the device has one. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+如果设备有加速度计传感器，则返回该设备加速度计传感器的加速度，单位为 m/s²。否则，该方法返回 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。\
 
-Note this method returns an empty :ref:`Vector3<class_Vector3>` when running from the editor even when your device has an accelerometer. You must export your project to a supported device to read values from the accelerometer.
+请注意，即使你的设备具有一个加速度计，在从编辑器运行时，该方法也会返回一个空的 :ref:`Vector3<class_Vector3>`\ 。必须将项目导出到一个支持的设备上，才能从加速度计读取值。
 
-\ **Note:** This method only works on Android and iOS. On other platforms, it always returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+\ **注意：**\ 该方法仅适用于 Android 和 iOS。在其他平台上，它总是返回 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -616,21 +616,21 @@ Note this method returns an empty :ref:`Vector3<class_Vector3>` when running fro
 
 :ref:`Dictionary<class_Dictionary>` **get_joy_info** **(** :ref:`int<class_int>` device **)** |const|
 
-Returns a dictionary with extra platform-specific information about the device, e.g. the raw gamepad name from the OS or the Steam Input index.
+返回关于设备的额外平台相关信息字典，例如操作系统的原始游戏手柄名称，或者 Steam Input 索引。
 
-On Windows the dictionary contains the following fields:
+在 Windows 上，该字典包含如下字段：
 
-\ ``xinput_index``: The index of the controller in the XInput system.
+\ ``xinput_index``\ ：控制器在 XInput 系统中的索引。
 
-On Linux:
+在 Linux 上：
 
-\ ``raw_name``: The name of the controller as it came from the OS, before getting renamed by the godot controller database.
+\ ``raw_name``\ ：从操作系统获取的控制器名称，未经 Godot 控制器数据库重命名。
 
-\ ``vendor_id``: The USB vendor ID of the device.
+\ ``vendor_id``\ ：设备的 USB 供应商 ID。
 
-\ ``product_id``: The USB product ID of the device.
+\ ``product_id``\ ：设备的 USB 产品 ID。
 
-\ ``steam_input_index``: The Steam Input gamepad index, if the device is not a Steam Input device this key won't be present.
+\ ``steam_input_index``\ ：Steam Input 游戏手柄索引，如果该设备不是 Steam Input 设备则该字段不存在。
 
 .. rst-class:: classref-item-separator
 
@@ -690,9 +690,9 @@ On Linux:
 
 :ref:`Vector3<class_Vector3>` **get_magnetometer** **(** **)** |const|
 
-Returns the magnetic field strength in micro-Tesla for all axes of the device's magnetometer sensor, if the device has one. Otherwise, the method returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+如果设备有磁力传感器，则返回设备所有轴的磁场强度，单位为微特斯拉。否则，该方法返回 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
-\ **Note:** This method only works on Android and iOS. On other platforms, it always returns :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`.
+\ **注意：**\ 该方法仅适用于 Android 和 iOS。在其他平台上，它总是返回 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -742,6 +742,8 @@ Returns the magnetic field strength in micro-Tesla for all axes of the device's 
 
 \ **注意：**\ 由于键盘重影，即便该动作的某个键处于按下状态，\ :ref:`is_action_just_pressed<class_Input_method_is_action_just_pressed>` 仍可能会返回 ``false``\ 。详情见文档中的\ `《输入示例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
+\ **注意：**\ 在输入处理期间（例如 :ref:`Node._input<class_Node_private_method__input>`\ ），请使用 :ref:`InputEvent.is_action_pressed<class_InputEvent_method_is_action_pressed>` 来查询当前事件的动作状态。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -758,6 +760,8 @@ Returns the magnetic field strength in micro-Tesla for all axes of the device's 
 
 如果 ``exact_match`` 为 ``false``\ ，则会忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的额外输入修饰键，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
+\ **注意：**\ 在输入处理期间（例如 :ref:`Node._input<class_Node_private_method__input>`\ ），请使用 :ref:`InputEvent.is_action_released<class_InputEvent_method_is_action_released>` 来查询当前事件的动作状态。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -768,11 +772,11 @@ Returns the magnetic field strength in micro-Tesla for all axes of the device's 
 
 :ref:`bool<class_bool>` **is_action_pressed** **(** :ref:`StringName<class_StringName>` action, :ref:`bool<class_bool>` exact_match=false **)** |const|
 
-Returns ``true`` if you are pressing the action event.
+如果正在按下操作事件，则返回 ``true``\ 。
 
-If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:`InputEventKey<class_InputEventKey>` and :ref:`InputEventMouseButton<class_InputEventMouseButton>` events, and the direction for :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` events.
+如果 ``exact_match`` 为 ``false``\ ，则它会忽略 :ref:`InputEventKey<class_InputEventKey>` 和 :ref:`InputEventMouseButton<class_InputEventMouseButton>` 事件的额外输入修饰键，以及 :ref:`InputEventJoypadMotion<class_InputEventJoypadMotion>` 事件的方向。
 
-\ **Note:** Due to keyboard ghosting, :ref:`is_action_pressed<class_Input_method_is_action_pressed>` may return ``false`` even if one of the action's keys is pressed. See `Input examples <../tutorials/inputs/input_examples.html#keyboard-events>`__ in the documentation for more information.
+\ **注意：**\ 由于键盘重影，\ :ref:`is_action_pressed<class_Input_method_is_action_pressed>` 可能会返回 ``false``\ ，即使动作的某个键被按下时也是如此。有关详细信息，请参阅文档中的 `《输入示例》 <../tutorials/inputs/input_examples.html#keyboard-events>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -876,7 +880,7 @@ If ``exact_match`` is ``false``, it ignores additional input modifiers for :ref:
 
 void **parse_input_event** **(** :ref:`InputEvent<class_InputEvent>` event **)**
 
-向游戏提供一个 :ref:`InputEvent<class_InputEvent>`\ 。可用于从代码中人为地触发输入事件。也会产生 :ref:`Node._input<class_Node_method__input>` 调用。
+向游戏提供一个 :ref:`InputEvent<class_InputEvent>`\ 。可用于从代码中人为地触发输入事件。也会产生 :ref:`Node._input<class_Node_private_method__input>` 调用。
 
 \ **示例：**\ 
 
@@ -1015,9 +1019,9 @@ void **set_magnetometer** **(** :ref:`Vector3<class_Vector3>` value **)**
 
 :ref:`bool<class_bool>` **should_ignore_device** **(** :ref:`int<class_int>` vendor_id, :ref:`int<class_int>` product_id **)** |const|
 
-Queries whether an input device should be ignored or not. Devices can be ignored by setting the environment variable ``SDL_GAMECONTROLLER_IGNORE_DEVICES``. Read the `SDL documentation <https://wiki.libsdl.org/SDL2>`__ for more information.
+查询输入设备是否应被忽略。可以通过设置环境变量 ``SDL_GAMECONTROLLER_IGNORE_DEVICES`` 来忽略设备。请阅读 `SDL 文档 <https://wiki.libsdl.org/SDL2>`__\ 了解更多信息。
 
-\ **Note:** Some 3rd party tools can contribute to the list of ignored devices. For example, *SteamInput* creates virtual devices from physical devices for remapping purposes. To avoid handling the same input device twice, the original device is added to the ignore list.
+\ **注意：**\ 某些第三方工具可以添加忽略设备列表。例如，\ *SteamInput* 从物理设备创建虚拟设备以进行重新映射。为了避免两次处理相同的输入设备，原始设备被添加到忽略列表中。
 
 .. rst-class:: classref-item-separator
 
@@ -1081,10 +1085,10 @@ void **warp_mouse** **(** :ref:`Vector2<class_Vector2>` position **)**
 
 \ **注意：**\ :ref:`warp_mouse<class_Input_method_warp_mouse>` 仅支持 Windows、macOS 和 Linux。它对 Android、iOS 和 Web 没有影响。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

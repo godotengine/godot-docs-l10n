@@ -10,14 +10,14 @@
 RayCast2D
 =========
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 2D 空间中的射线，用于查找第一个相交的 :ref:`CollisionObject2D<class_CollisionObject2D>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_property_target_position>` 的射线，如果与碰撞对象相交，就能找到路径上距离最近的 :ref:`CollisionObject2D<class_CollisionObject2D>`\ 。可以用来做很多事情，例如
 
@@ -29,15 +29,15 @@ Raycast 代表的是从它的原点到 :ref:`target_position<class_RayCast2D_pro
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`发射射线 <../tutorials/physics/ray-casting>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -102,8 +102,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RayCast2D_property_collide_with_areas:
 
@@ -116,7 +116,7 @@ Property Descriptions
 - void **set_collide_with_areas** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_collide_with_areas_enabled** **(** **)**
 
-If ``true``, collisions with :ref:`Area2D<class_Area2D>`\ s will be reported.
+如果为 ``true``\ ，则会报告与 :ref:`Area2D<class_Area2D>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ If ``true``, collisions with :ref:`Area2D<class_Area2D>`\ s will be reported.
 - void **set_collide_with_bodies** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_collide_with_bodies_enabled** **(** **)**
 
-If ``true``, collisions with :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s will be reported.
+如果为 ``true``\ ，则会报告与 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 的碰撞。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +150,7 @@ If ``true``, collisions with :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s will b
 - void **set_collision_mask** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_collision_mask** **(** **)**
 
-光线的碰撞遮罩。只有在遮罩中启用至少一个碰撞层中物体，才会被检测到。有关更多信息，请参阅文档中的 `《碰撞层与掩码》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
+射线的碰撞遮罩。只能检测到至少启用了一个遮罩中碰撞层的对象。详情请参阅文档中的\ `《碰撞层与掩码》 <../tutorials/physics/physics_introduction.html#collision-layers-and-masks>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -218,7 +218,7 @@ If ``true``, collisions with :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s will b
 - void **set_target_position** **(** :ref:`Vector2<class_Vector2>` value **)**
 - :ref:`Vector2<class_Vector2>` **get_target_position** **(** **)**
 
-光线的目标点，相对于该 RayCast 的 ``position``\ 。
+射线的目标点，相对于该 RayCast 的 ``position``\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -226,8 +226,8 @@ If ``true``, collisions with :ref:`PhysicsBody2D<class_PhysicsBody2D>`\ s will b
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RayCast2D_method_add_exception:
 
@@ -271,9 +271,9 @@ void **clear_exceptions** **(** **)**
 
 void **force_raycast_update** **(** **)**
 
-Updates the collision information for the ray immediately, without waiting for the next ``_physics_process`` call. Use this method, for example, when the ray or its parent has changed state.
+立即更新射线的碰撞信息，不等待下一次的 ``_physics_process`` 调用。例如，请在射线或其父级更改状态后使用该方法。
 
-\ **Note:** :ref:`enabled<class_RayCast2D_property_enabled>` does not need to be ``true`` for this to work.
+\ **注意：**\ :ref:`enabled<class_RayCast2D_property_enabled>` 不需要为 ``true`` 即可生效。
 
 .. rst-class:: classref-item-separator
 
@@ -397,10 +397,10 @@ void **set_collision_mask_value** **(** :ref:`int<class_int>` layer_number, :ref
 
 根据 ``value``\ ，启用或禁用 :ref:`collision_mask<class_RayCast2D_property_collision_mask>` 中指定的层，给定的 ``layer_number`` 应在 1 和 32 之间。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

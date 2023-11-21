@@ -10,18 +10,18 @@
 EditorInterface
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 Godot 编辑器的界面。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**EditorInterface** gives you control over Godot editor's window. It allows customizing the window, saving and (re-)loading scenes, rendering mesh previews, inspecting and editing resources and objects, and provides access to :ref:`EditorSettings<class_EditorSettings>`, :ref:`EditorFileSystem<class_EditorFileSystem>`, :ref:`EditorResourcePreview<class_EditorResourcePreview>`, :ref:`ScriptEditor<class_ScriptEditor>`, the editor viewport, and information about scenes.
+**EditorInterface** 允许控制 Godot 编辑器的窗口，包括自定义窗口，保存和重新加载场景，渲染网格预览，检查和编辑资源和对象，并提供对 :ref:`EditorSettings<class_EditorSettings>` ， :ref:`EditorFileSystem<class_EditorFileSystem>` ， :ref:`EditorResourcePreview<class_EditorResourcePreview>` ， :ref:`ScriptEditor<class_ScriptEditor>` ，编辑器视口以及场景信息的访问。
 
-\ **Note:** This class shouldn't be instantiated directly. Instead, access the singleton directly by its name.
+\ **注意：** 这个类不应该被直接实例化。而是，直接通过名称访问单例。
 
 
 .. tabs::
@@ -32,15 +32,15 @@ Description
 
  .. code-tab:: csharp
 
-    // In C# you can access it via the static Singleton property.
+    // 在 C# 中，可以通过静态 Singleton 属性来访问。
     EditorSettings settings = EditorInterface.Singleton.GetEditorSettings();
 
 
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -87,6 +87,10 @@ Methods
    | :ref:`EditorSettings<class_EditorSettings>`               | :ref:`get_editor_settings<class_EditorInterface_method_get_editor_settings>` **(** **)** |const|                                                                                                                                                       |
    +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Theme<class_Theme>`                                 | :ref:`get_editor_theme<class_EditorInterface_method_get_editor_theme>` **(** **)** |const|                                                                                                                                                             |
+   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`SubViewport<class_SubViewport>`                     | :ref:`get_editor_viewport_2d<class_EditorInterface_method_get_editor_viewport_2d>` **(** **)** |const|                                                                                                                                                 |
+   +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`SubViewport<class_SubViewport>`                     | :ref:`get_editor_viewport_3d<class_EditorInterface_method_get_editor_viewport_3d>` **(** :ref:`int<class_int>` idx=0 **)** |const|                                                                                                                     |
    +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`FileSystemDock<class_FileSystemDock>`               | :ref:`get_file_system_dock<class_EditorInterface_method_get_file_system_dock>` **(** **)** |const|                                                                                                                                                     |
    +-----------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -159,8 +163,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorInterface_property_distraction_free_mode:
 
@@ -198,8 +202,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorInterface_method_edit_node:
 
@@ -259,7 +263,7 @@ void **edit_script** **(** :ref:`Script<class_Script>` script, :ref:`int<class_i
 
 返回编辑器的 :ref:`EditorCommandPalette<class_EditorCommandPalette>` 实例。
 
-\ **警告：** 删除和释放此节点，将使编辑器的一部分失去作用，并可能导致崩溃。
+\ **警告：**\ 删除和释放此节点，将使编辑器的一部分失去作用，并可能导致崩溃。
 
 .. rst-class:: classref-item-separator
 
@@ -283,11 +287,11 @@ void **edit_script** **(** :ref:`Script<class_Script>` script, :ref:`int<class_i
 
 :ref:`String<class_String>` **get_current_feature_profile** **(** **)** |const|
 
-Returns the name of the currently activated feature profile. If the default profile is currently active, an empty string is returned instead.
+返回当前激活的功能配置文件的名称。如果默认配置文件当前处于活动状态，则返回空字符串。
 
-In order to get a reference to the :ref:`EditorFeatureProfile<class_EditorFeatureProfile>`, you must load the feature profile using :ref:`EditorFeatureProfile.load_from_file<class_EditorFeatureProfile_method_load_from_file>`.
+为了获取对 :ref:`EditorFeatureProfile<class_EditorFeatureProfile>` 的引用，你必须使用 :ref:`EditorFeatureProfile.load_from_file<class_EditorFeatureProfile_method_load_from_file>` 加载该功能配置文件。
 
-\ **Note:** Feature profiles created via the user interface are loaded from the ``feature_profiles`` directory, as a file with the ``.profile`` extension. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir<class_EditorPaths_method_get_config_dir>`.
+\ **注意：**\ 通过用户界面创建的功能配置文件将从 ``feature_profiles`` 目录中的扩展名为 ``.profile`` 的文件加载。可以使用 :ref:`EditorPaths.get_config_dir<class_EditorPaths_method_get_config_dir>` 找到编辑器配置文件夹。
 
 .. rst-class:: classref-item-separator
 
@@ -323,9 +327,9 @@ In order to get a reference to the :ref:`EditorFeatureProfile<class_EditorFeatur
 
 :ref:`VBoxContainer<class_VBoxContainer>` **get_editor_main_screen** **(** **)** |const|
 
-返回负责主屏幕插件和工具的编辑器控件。将其与实现了 :ref:`EditorPlugin._has_main_screen<class_EditorPlugin_method__has_main_screen>` 的插件一起使用。
+返回负责主屏幕插件和工具的编辑器控件。将其与实现了 :ref:`EditorPlugin._has_main_screen<class_EditorPlugin_private_method__has_main_screen>` 的插件一起使用。
 
-\ **警告：** 移除和释放这个节点将使编辑器的一部分失去作用，并可能导致崩溃。
+\ **警告：**\ 移除和释放这个节点将使编辑器的一部分失去作用，并可能导致崩溃。
 
 .. rst-class:: classref-item-separator
 
@@ -375,9 +379,33 @@ In order to get a reference to the :ref:`EditorFeatureProfile<class_EditorFeatur
 
 :ref:`Theme<class_Theme>` **get_editor_theme** **(** **)** |const|
 
-Returns the editor's :ref:`Theme<class_Theme>`.
+返回编辑器的 :ref:`Theme<class_Theme>`\ 。
 
-\ **Note:** When creating custom editor UI, prefer accessing theme items directly from your GUI nodes using the ``get_theme_*`` methods.
+\ **注意：**\ 创建自定义编辑器 UI 时，请优先直接通过 GUI 节点的 ``get_theme_*`` 方法来访问主题项目。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorInterface_method_get_editor_viewport_2d:
+
+.. rst-class:: classref-method
+
+:ref:`SubViewport<class_SubViewport>` **get_editor_viewport_2d** **(** **)** |const|
+
+返回 2D 编辑器 :ref:`SubViewport<class_SubViewport>`\ 。视口中没有相机。视图是直接进行变换的，可以使用 :ref:`Viewport.global_canvas_transform<class_Viewport_property_global_canvas_transform>` 访问。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_EditorInterface_method_get_editor_viewport_3d:
+
+.. rst-class:: classref-method
+
+:ref:`SubViewport<class_SubViewport>` **get_editor_viewport_3d** **(** :ref:`int<class_int>` idx=0 **)** |const|
+
+返回指定的 3D 编辑器 :ref:`SubViewport<class_SubViewport>`\ ，编号从 ``0`` 到 ``3``\ 。可以通过 :ref:`Viewport.get_camera_3d<class_Viewport_method_get_camera_3d>` 访问视口中的活动编辑器相机。
 
 .. rst-class:: classref-item-separator
 
@@ -691,7 +719,7 @@ void **restart_editor** **(** :ref:`bool<class_bool>` save=true **)**
 
 void **save_all_scenes** **(** **)**
 
-Saves all opened scenes in the editor.
+保存编辑器中打开的所有场景。
 
 .. rst-class:: classref-item-separator
 
@@ -703,7 +731,7 @@ Saves all opened scenes in the editor.
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_scene** **(** **)**
 
-Saves the currently active scene. Returns either :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`.
+保存当前活动场景。返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` 或 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -715,7 +743,7 @@ Saves the currently active scene. Returns either :ref:`@GlobalScope.OK<class_@Gl
 
 void **save_scene_as** **(** :ref:`String<class_String>` path, :ref:`bool<class_bool>` with_preview=true **)**
 
-Saves the currently active scene as a file at ``path``.
+将当前活动场景保存为 ``path`` 处的文件。
 
 .. rst-class:: classref-item-separator
 
@@ -739,11 +767,11 @@ void **select_file** **(** :ref:`String<class_String>` file **)**
 
 void **set_current_feature_profile** **(** :ref:`String<class_String>` profile_name **)**
 
-Selects and activates the specified feature profile with the given ``profile_name``. Set ``profile_name`` to an empty string to reset to the default feature profile.
+使用给定的 ``profile_name`` 选择并激活指定的功能配置文件。将 ``profile_name`` 设置为空字符串以重置为默认功能配置文件。
 
-A feature profile can be created programmatically using the :ref:`EditorFeatureProfile<class_EditorFeatureProfile>` class.
+可以使用 :ref:`EditorFeatureProfile<class_EditorFeatureProfile>` 类以编程方式创建功能配置文件。
 
-\ **Note:** The feature profile that gets activated must be located in the ``feature_profiles`` directory, as a file with the ``.profile`` extension. If a profile could not be found, an error occurs. The editor configuration folder can be found by using :ref:`EditorPaths.get_config_dir<class_EditorPaths_method_get_config_dir>`.
+\ **注意：**\ 激活的功能配置文件必须位于 ``feature_profiles`` 目录中，且该文件的扩展名为 ``.profile``\ 。如果找不到配置文件，则会发生错误。可以使用 :ref:`EditorPaths.get_config_dir<class_EditorPaths_method_get_config_dir>` 找到编辑器配置文件夹。
 
 .. rst-class:: classref-item-separator
 
@@ -781,10 +809,10 @@ void **stop_playing_scene** **(** **)**
 
 停止当前正在播放的场景。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

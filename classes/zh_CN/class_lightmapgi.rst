@@ -10,14 +10,14 @@
 LightmapGI
 ==========
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 计算并存储烘焙光照贴图，以实现快速全局照明。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **LightmapGI** 节点用于计算和存储烘焙的光照贴图。光照贴图用于提供高质量的间接照明，并且漏光很少。如果启用 :ref:`directional<class_LightmapGI_property_directional>`\ ，\ **LightmapGI** 还可以使用球谐函数，以提供粗略的反射。由于\ *光照探针*\ ，动态物体可以接收间接光照，可以通过将 :ref:`generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>` 设置为 :ref:`GENERATE_PROBES_DISABLED<class_LightmapGI_constant_GENERATE_PROBES_DISABLED>` 以外的值，来自动放置光照探针。也可以通过创建 :ref:`LightmapProbe<class_LightmapProbe>` 节点，来添加额外的光照贴图探针。缺点是光照贴图是完全静态的，不能在导出的项目中烘焙。与 :ref:`VoxelGI<class_VoxelGI>` 相比，烘焙 **LightmapGI** 节点也更慢。
 
@@ -33,15 +33,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Using Lightmap global illumination <../tutorials/3d/global_illumination/using_lightmap_gi>`
+- :doc:`使用光照贴图全局光照 <../tutorials/3d/global_illumination/using_lightmap_gi>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -49,9 +49,13 @@ Properties
    +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
    | :ref:`float<class_float>`                               | :ref:`bias<class_LightmapGI_property_bias>`                                           | ``0.0005`` |
    +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
+   | :ref:`float<class_float>`                               | :ref:`bounce_indirect_energy<class_LightmapGI_property_bounce_indirect_energy>`       | ``1.0``    |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
    | :ref:`int<class_int>`                                   | :ref:`bounces<class_LightmapGI_property_bounces>`                                     | ``3``      |
    +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
    | :ref:`CameraAttributes<class_CameraAttributes>`         | :ref:`camera_attributes<class_LightmapGI_property_camera_attributes>`                 |            |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
+   | :ref:`float<class_float>`                               | :ref:`denoiser_strength<class_LightmapGI_property_denoiser_strength>`                 | ``0.1``    |
    +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
    | :ref:`bool<class_bool>`                                 | :ref:`directional<class_LightmapGI_property_directional>`                             | ``false``  |
    +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
@@ -75,6 +79,8 @@ Properties
    +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
    | :ref:`bool<class_bool>`                                 | :ref:`use_denoiser<class_LightmapGI_property_use_denoiser>`                           | ``true``   |
    +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
+   | :ref:`bool<class_bool>`                                 | :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>`     | ``true``   |
+   +---------------------------------------------------------+---------------------------------------------------------------------------------------+------------+
 
 .. rst-class:: classref-section-separator
 
@@ -82,8 +88,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_LightmapGI_BakeQuality:
 
@@ -261,7 +267,7 @@ enum **BakeError**:
 
 :ref:`BakeError<enum_LightmapGI_BakeError>` **BAKE_ERROR_TEXTURE_SIZE_TOO_SMALL** = ``9``
 
-Lightmap baking failed as the maximum texture size is too small to fit some of the meshes marked for baking.
+光照贴图烘焙失败，因为最大纹理尺寸太小，无法容纳某些被标记为烘焙的网格。
 
 .. rst-class:: classref-item-separator
 
@@ -313,8 +319,8 @@ enum **EnvironmentMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_LightmapGI_property_bias:
 
@@ -328,6 +334,25 @@ Property Descriptions
 - :ref:`float<class_float>` **get_bias** **(** **)**
 
 计算阴影时使用的偏置。增加 :ref:`bias<class_LightmapGI_property_bias>` 可以修复生成的烘焙光照贴图上的阴影失真，但会引入阴影悬浮（阴影未连接到其障碍物）。实时 :ref:`Light3D<class_Light3D>` 阴影不受该 :ref:`bias<class_LightmapGI_property_bias>` 属性的影响。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_LightmapGI_property_bounce_indirect_energy:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **bounce_indirect_energy** = ``1.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_bounce_indirect_energy** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_bounce_indirect_energy** **(** **)**
+
+每次反弹的能量乘数。较高的值将使间接照明更亮。值 ``1.0`` 代表物理上准确的行为，但较高的值可用于在使用少量反弹时使间接照明传播更明显。这可以通过减少 :ref:`bounces<class_LightmapGI_property_bounces>` 数量，然后增加 :ref:`bounce_indirect_energy<class_LightmapGI_property_bounce_indirect_energy>` 来加速烘焙时间。
+
+\ **注意：**\ :ref:`bounce_indirect_energy<class_LightmapGI_property_bounce_indirect_energy>` 仅在 :ref:`bounces<class_LightmapGI_property_bounces>` 被设置为大于或等于 ``1`` 的值时才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -367,6 +392,23 @@ Property Descriptions
 
 ----
 
+.. _class_LightmapGI_property_denoiser_strength:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **denoiser_strength** = ``0.1``
+
+.. rst-class:: classref-property-setget
+
+- void **set_denoiser_strength** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_denoiser_strength** **(** **)**
+
+应用于生成的光照贴图的去噪步骤的强度。仅当 :ref:`use_denoiser<class_LightmapGI_property_use_denoiser>` 为 ``true`` 且 :ref:`ProjectSettings.rendering/lightmapping/denoising/denoiser<class_ProjectSettings_property_rendering/lightmapping/denoising/denoiser>` 被设置为 JNLM 时有效。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_LightmapGI_property_directional:
 
 .. rst-class:: classref-property
@@ -378,7 +420,7 @@ Property Descriptions
 - void **set_directional** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_directional** **(** **)**
 
-如果为 ``true``\ ，烘焙光照贴图以包含作为球谐函数的方向信息。这会产生更逼真的光照外观，尤其是使用法线贴图材质和烘焙了直射光的灯光（\ :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 设置为 :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>`\ ）。方向信息还用于为静态和动态对象提供粗略的反射。这有一个小的运行时性能成本，因为着色器必须执行更多的工作，来解释来自光照贴图的方向信息。定向光照贴图也需要更长的时间来烘焙并产生更大的文件大小。
+如果为 ``true``\ ，烘焙光照贴图以包含作为球谐函数的方向信息。这会产生更逼真的光照外观，尤其是使用法线贴图材质和烘焙了直射光的灯光（\ :ref:`Light3D.light_bake_mode<class_Light3D_property_light_bake_mode>` 设置为 :ref:`Light3D.BAKE_STATIC<class_Light3D_constant_BAKE_STATIC>` 并将 :ref:`Light3D.editor_only<class_Light3D_property_editor_only>` 设置为 ``false``\ ）。方向信息还用于为静态和动态对象提供粗略的反射。这有一个小的运行时性能成本，因为着色器必须执行更多的工作，来解释来自光照贴图的方向信息。定向光照贴图也需要更长的时间来烘焙并产生更大的文件大小。
 
 \ **注意：**\ 属性的名称与 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 没有关系。\ :ref:`directional<class_LightmapGI_property_directional>` 适用于所有灯光类型。
 
@@ -556,14 +598,31 @@ Property Descriptions
 - void **set_use_denoiser** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_using_denoiser** **(** **)**
 
-如果为 ``true``\ ，则在生成的光照贴图上，使用基于 CPU 的降噪算法。这以更长的烘焙时间为代价，消除了生成的光照贴图中的大部分噪点。尽管无损压缩在压缩降噪图像方面可能做得更好，但使用降噪器通常不会显著影响文件大小。
+如果为 ``true``\ ，则在生成的光照贴图上，使用基于 GPU 的降噪算法。这以更长的烘焙时间为代价，消除了生成的光照贴图中的大部分噪点。尽管无损压缩在压缩降噪图像方面可能做得更好，但使用降噪器通常不会显著影响文件大小。
 
-\ **注意：**\ 在大场景中对光照贴图进行降噪时，内置降噪器（OpenImageDenoise）可能会崩溃。如果在光照贴图烘焙结束时遇到崩溃，请尝试禁用 :ref:`use_denoiser<class_LightmapGI_property_use_denoiser>`\ 。
+.. rst-class:: classref-item-separator
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+----
+
+.. _class_LightmapGI_property_use_texture_for_bounces:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **use_texture_for_bounces** = ``true``
+
+.. rst-class:: classref-property-setget
+
+- void **set_use_texture_for_bounces** **(** :ref:`bool<class_bool>` value **)**
+- :ref:`bool<class_bool>` **is_using_texture_for_bounces** **(** **)**
+
+如果为 ``true``\ ，将生成带有照明信息的纹理，以加快间接照明的生成速度，但会牺牲一定的精度。当使用低分辨率光照贴图或在表面上显著拉伸光照贴图的 UV 时，几何体可能会出现额外的漏光伪影。如果不确定，请将 :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` 保留为其默认值 ``true``\ 。
+
+\ **注意：**\ :ref:`use_texture_for_bounces<class_LightmapGI_property_use_texture_for_bounces>` 仅在 :ref:`bounces<class_LightmapGI_property_bounces>` 被设置为大于或等于 ``1`` 的值时才有效。
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

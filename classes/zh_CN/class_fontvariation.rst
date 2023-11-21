@@ -10,14 +10,14 @@
 FontVariation
 =============
 
-**Inherits:** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 字体的变体，提供额外的设置。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 提供 OpenType 变体，模拟的粗体/斜体，以及 OpenType 特性和额外间距等额外的字体设置。
 
@@ -55,8 +55,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -85,8 +85,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -101,8 +101,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_FontVariation_property_base_font:
 
@@ -255,7 +255,7 @@ Property Descriptions
 
 字体 OpenType 变体坐标。详见：\ `OpenType 变体标签 <https://docs.microsoft.com/en-us/typography/opentype/spec/dvaraxisreg>`__\ 。
 
-\ **注意：**\ 这个 :ref:`Dictionary<class_Dictionary>` 使用 OpenType 标签作为键。变体轴既可以用标签来标识（\ ``int``\ ），也可以用名称来标识（\ ``string``\ ）。有些轴可以通过多个名称来访问。例如，\ ``wght`` 和 ``weight`` 引用的是同一个轴。而标签则是唯一的。要在名称和标签之间转换，请使用 :ref:`TextServer.name_to_tag<class_TextServer_method_name_to_tag>` 和 :ref:`TextServer.tag_to_name<class_TextServer_method_tag_to_name>`\ 。
+\ **注意：**\ 这个 :ref:`Dictionary<class_Dictionary>` 使用 OpenType 标签作为键。变体轴既可以用标签来标识（\ :ref:`int<class_int>`\ ，例如 ``0x77678674``\ ），也可以用名称来标识（\ :ref:`String<class_String>`\ ，例如 ``wght``\ ）。有些轴可以通过多个名称来访问。例如，\ ``wght`` 和 ``weight`` 引用的是同一个轴。而标签则是唯一的。要在名称和标签之间转换，请使用 :ref:`TextServer.name_to_tag<class_TextServer_method_name_to_tag>` 和 :ref:`TextServer.tag_to_name<class_TextServer_method_tag_to_name>`\ 。
 
 \ **注意：**\ 要获取字体的可用变体轴，请使用 :ref:`Font.get_supported_variation_list<class_Font_method_get_supported_variation_list>`\ 。
 
@@ -284,8 +284,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_FontVariation_method_set_spacing:
 
@@ -293,12 +293,12 @@ Method Descriptions
 
 void **set_spacing** **(** :ref:`SpacingType<enum_TextServer_SpacingType>` spacing, :ref:`int<class_int>` value **)**
 
-Sets the spacing for ``spacing`` (see :ref:`SpacingType<enum_TextServer_SpacingType>`) to ``value`` in pixels (not relative to the font size).
+将 ``spacing`` 的间距（见 :ref:`SpacingType<enum_TextServer_SpacingType>`\ ）设置为 ``value``\ ，单位为像素（与字体大小无关）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

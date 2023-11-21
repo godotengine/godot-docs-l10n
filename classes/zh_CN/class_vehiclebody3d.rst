@@ -10,14 +10,14 @@
 VehicleBody3D
 =============
 
-**Inherits:** :ref:`RigidBody3D<class_RigidBody3D>` **<** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RigidBody3D<class_RigidBody3D>` **<** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 模拟汽车行为的 3D 物理体。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该节点实现了模拟汽车所需的所有物理逻辑。它基于物理引擎中常见的射线投射的车辆系统。除了需要为车身添加一个 :ref:`CollisionShape3D<class_CollisionShape3D>` 之外，你还必须为每个车轮添加一个 :ref:`VehicleWheel3D<class_VehicleWheel3D>` 节点。你还应该为车辆的 3D 模型的向这个节点添加一个 :ref:`MeshInstance3D<class_MeshInstance3D>`\ ，但该模型通常不应该包含车轮的网格。你可以使用 :ref:`brake<class_VehicleBody3D_property_brake>`\ 、\ :ref:`engine_force<class_VehicleBody3D_property_engine_force>` 和 :ref:`steering<class_VehicleBody3D_property_steering>` 属性来控制车辆。不应该直接更改该节点的位置和朝向。
 
@@ -27,15 +27,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `3D 货车镇演示 <https://godotengine.org/asset-library/asset/524>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VehicleBody3D_property_brake:
 
@@ -112,10 +112,10 @@ Property Descriptions
 
 \ **注意：**\ 该属性在检查器中以度为单位进行编辑。在代码中，该属性以弧度单位设置。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

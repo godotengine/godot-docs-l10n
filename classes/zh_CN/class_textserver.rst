@@ -10,29 +10,31 @@
 TextServer
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`TextServerExtension<class_TextServerExtension>`
+**派生：** :ref:`TextServerExtension<class_TextServerExtension>`
 
 字体管理和文本渲染的服务器接口。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **TextServer** 是用于管理字体和渲染文本的 API 后端。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`RID<class_RID>`                                           | :ref:`create_font<class_TextServer_method_create_font>` **(** **)**                                                                                                                                                                                                                                                                                                    |
+   +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`RID<class_RID>`                                           | :ref:`create_font_linked_variation<class_TextServer_method_create_font_linked_variation>` **(** :ref:`RID<class_RID>` font_rid **)**                                                                                                                                                                                                                                   |
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`RID<class_RID>`                                           | :ref:`create_shaped_text<class_TextServer_method_create_shaped_text>` **(** :ref:`Direction<enum_TextServer_Direction>` direction=0, :ref:`Orientation<enum_TextServer_Orientation>` orientation=0 **)**                                                                                                                                                               |
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -65,6 +67,8 @@ Methods
    | :ref:`int<class_int>`                                           | :ref:`font_get_face_index<class_TextServer_method_font_get_face_index>` **(** :ref:`RID<class_RID>` font_rid **)** |const|                                                                                                                                                                                                                                             |
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                           | :ref:`font_get_fixed_size<class_TextServer_method_font_get_fixed_size>` **(** :ref:`RID<class_RID>` font_rid **)** |const|                                                                                                                                                                                                                                             |
+   +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>`   | :ref:`font_get_fixed_size_scale_mode<class_TextServer_method_font_get_fixed_size_scale_mode>` **(** :ref:`RID<class_RID>` font_rid **)** |const|                                                                                                                                                                                                                       |
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                         | :ref:`font_get_generate_mipmaps<class_TextServer_method_font_get_generate_mipmaps>` **(** :ref:`RID<class_RID>` font_rid **)** |const|                                                                                                                                                                                                                                 |
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -191,6 +195,8 @@ Methods
    | void                                                            | :ref:`font_set_face_index<class_TextServer_method_font_set_face_index>` **(** :ref:`RID<class_RID>` font_rid, :ref:`int<class_int>` face_index **)**                                                                                                                                                                                                                   |
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                            | :ref:`font_set_fixed_size<class_TextServer_method_font_set_fixed_size>` **(** :ref:`RID<class_RID>` font_rid, :ref:`int<class_int>` fixed_size **)**                                                                                                                                                                                                                   |
+   +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                            | :ref:`font_set_fixed_size_scale_mode<class_TextServer_method_font_set_fixed_size_scale_mode>` **(** :ref:`RID<class_RID>` font_rid, :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` fixed_size_scale_mode **)**                                                                                                                                          |
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                            | :ref:`font_set_force_autohinter<class_TextServer_method_font_set_force_autohinter>` **(** :ref:`RID<class_RID>` font_rid, :ref:`bool<class_bool>` force_autohinter **)**                                                                                                                                                                                               |
    +-----------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -439,8 +445,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TextServer_FontAntialiasing:
 
@@ -1454,9 +1460,7 @@ URI 的 BiDi 覆盖。
 
 :ref:`StructuredTextParser<enum_TextServer_StructuredTextParser>` **STRUCTURED_TEXT_LIST** = ``4``
 
-列表的 BiDi 覆盖。
-
-结构化文本选项：列表分隔符 ``String``\ 。
+列表的 BiDi 覆盖。结构化文本选项：列表分隔符 :ref:`String<class_String>`\ 。
 
 .. _class_TextServer_constant_STRUCTURED_TEXT_GDSCRIPT:
 
@@ -1474,14 +1478,48 @@ GDScript 的 BiDi 覆盖。
 
 用户定义的结构化文本 BiDi 覆盖函数。
 
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_TextServer_FixedSizeScaleMode:
+
+.. rst-class:: classref-enumeration
+
+enum **FixedSizeScaleMode**:
+
+.. _class_TextServer_constant_FIXED_SIZE_SCALE_DISABLE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **FIXED_SIZE_SCALE_DISABLE** = ``0``
+
+位图字体未被缩放。
+
+.. _class_TextServer_constant_FIXED_SIZE_SCALE_INTEGER_ONLY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **FIXED_SIZE_SCALE_INTEGER_ONLY** = ``1``
+
+位图字体被缩放至字体固定大小的最接近整数倍。这是像素艺术字体的推荐选项。
+
+.. _class_TextServer_constant_FIXED_SIZE_SCALE_ENABLED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **FIXED_SIZE_SCALE_ENABLED** = ``2``
+
+位图字体被缩放为任意（分数）大小。这是非像素艺术字体的推荐选项。
+
 .. rst-class:: classref-section-separator
 
 ----
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TextServer_method_create_font:
 
@@ -1490,6 +1528,18 @@ Method Descriptions
 :ref:`RID<class_RID>` **create_font** **(** **)**
 
 新建空的字体缓存条目资源。要释放生成的资源，请使用 :ref:`free_rid<class_TextServer_method_free_rid>` 方法。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TextServer_method_create_font_linked_variation:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **create_font_linked_variation** **(** :ref:`RID<class_RID>` font_rid **)**
+
+创建一个新的已有的字体变体，该字体重用相同的字形缓存和字体数据。要释放生成的资源，请使用 :ref:`free_rid<class_TextServer_method_free_rid>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -1703,6 +1753,18 @@ void **font_draw_glyph_outline** **(** :ref:`RID<class_RID>` font_rid, :ref:`RID
 
 ----
 
+.. _class_TextServer_method_font_get_fixed_size_scale_mode:
+
+.. rst-class:: classref-method
+
+:ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **font_get_fixed_size_scale_mode** **(** :ref:`RID<class_RID>` font_rid **)** |const|
+
+返回位图字体的缩放模式。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TextServer_method_font_get_generate_mipmaps:
 
 .. rst-class:: classref-method
@@ -1747,7 +1809,7 @@ void **font_draw_glyph_outline** **(** :ref:`RID<class_RID>` font_rid, :ref:`RID
 
 :ref:`Dictionary<class_Dictionary>` **font_get_glyph_contours** **(** :ref:`RID<class_RID>` font, :ref:`int<class_int>` size, :ref:`int<class_int>` index **)** |const|
 
-将字形的轮廓线轮廓返回为具有以下内容的一个 ``Dictionary``\ ：
+将字形的轮廓线轮廓返回为具有以下内容的 :ref:`Dictionary<class_Dictionary>`\ ：
 
 \ ``points``         - :ref:`PackedVector3Array<class_PackedVector3Array>`\ ，包含轮廓点。\ ``x`` 和 ``y`` 是点坐标。\ ``z`` 是点的类型，使用 :ref:`ContourPointTag<enum_TextServer_ContourPointTag>` 值。
 
@@ -1765,7 +1827,7 @@ void **font_draw_glyph_outline** **(** :ref:`RID<class_RID>` font_rid, :ref:`RID
 
 :ref:`int<class_int>` **font_get_glyph_index** **(** :ref:`RID<class_RID>` font_rid, :ref:`int<class_int>` size, :ref:`int<class_int>` char, :ref:`int<class_int>` variation_selector **)** |const|
 
-Returns the glyph index of a ``char``, optionally modified by the ``variation_selector``. See :ref:`font_get_char_from_glyph_index<class_TextServer_method_font_get_char_from_glyph_index>`.
+返回 ``char`` 的字形索引，可以选择由 ``variation_selector`` 进行修改。见 :ref:`font_get_char_from_glyph_index<class_TextServer_method_font_get_char_from_glyph_index>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2033,7 +2095,7 @@ Returns the glyph index of a ``char``, optionally modified by the ``variation_se
 
 :ref:`Vector2i[]<class_Vector2i>` **font_get_size_cache_list** **(** :ref:`RID<class_RID>` font_rid **)** |const|
 
-返回缓存中字体大小的列表。每个大小都是由字体大小和轮廓大小组成的 ``Vector2i``\ 。
+返回缓存中字体大小的列表。每个大小都是由字体大小和轮廓大小组成的 :ref:`Vector2i<class_Vector2i>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2045,7 +2107,7 @@ Returns the glyph index of a ``char``, optionally modified by the ``variation_se
 
 :ref:`int<class_int>` **font_get_spacing** **(** :ref:`RID<class_RID>` font_rid, :ref:`SpacingType<enum_TextServer_SpacingType>` spacing **)** |const|
 
-Returns the spacing for ``spacing`` (see :ref:`SpacingType<enum_TextServer_SpacingType>`) in pixels (not relative to the font size).
+返回 ``spacing``\ （见 :ref:`SpacingType<enum_TextServer_SpacingType>`\ ）的间距，单位为像素（与字体大小无关）。
 
 .. rst-class:: classref-item-separator
 
@@ -2475,6 +2537,18 @@ void **font_set_fixed_size** **(** :ref:`RID<class_RID>` font_rid, :ref:`int<cla
 
 ----
 
+.. _class_TextServer_method_font_set_fixed_size_scale_mode:
+
+.. rst-class:: classref-method
+
+void **font_set_fixed_size_scale_mode** **(** :ref:`RID<class_RID>` font_rid, :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` fixed_size_scale_mode **)**
+
+设置位图字体缩放模式。仅当 ``fixed_size`` 大于零时才使用该属性。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TextServer_method_font_set_force_autohinter:
 
 .. rst-class:: classref-method
@@ -2715,7 +2789,7 @@ void **font_set_script_support_override** **(** :ref:`RID<class_RID>` font_rid, 
 
 void **font_set_spacing** **(** :ref:`RID<class_RID>` font_rid, :ref:`SpacingType<enum_TextServer_SpacingType>` spacing, :ref:`int<class_int>` value **)**
 
-Sets the spacing for ``spacing`` (see :ref:`SpacingType<enum_TextServer_SpacingType>`) to ``value`` in pixels (not relative to the font size).
+将 ``spacing`` 的间距（见 :ref:`SpacingType<enum_TextServer_SpacingType>`\ ）设置为 ``value``\ ，单位为像素（与字体大小无关）。
 
 .. rst-class:: classref-item-separator
 
@@ -3205,7 +3279,7 @@ void **shaped_text_clear** **(** :ref:`RID<class_RID>` rid **)**
 
 :ref:`int<class_int>` **shaped_text_closest_character_pos** **(** :ref:`RID<class_RID>` shaped, :ref:`int<class_int>` pos **)** |const|
 
-Returns composite character position closest to the ``pos``.
+返回距离 ``pos`` 最近的组合字符位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3279,7 +3353,7 @@ void **shaped_text_draw_outline** **(** :ref:`RID<class_RID>` shaped, :ref:`RID<
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **shaped_text_get_character_breaks** **(** :ref:`RID<class_RID>` shaped **)** |const|
 
-Returns array of the composite character boundaries.
+返回组合字符边界的数组。
 
 .. rst-class:: classref-item-separator
 
@@ -3631,7 +3705,7 @@ Returns array of the composite character boundaries.
 
 :ref:`bool<class_bool>` **shaped_text_has_visible_chars** **(** :ref:`RID<class_RID>` shaped **)** |const|
 
-Returns ``true`` if text buffer contains any visible characters.
+如果文本缓冲区存在可显示字符，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3691,7 +3765,7 @@ Returns ``true`` if text buffer contains any visible characters.
 
 :ref:`int<class_int>` **shaped_text_next_grapheme_pos** **(** :ref:`RID<class_RID>` shaped, :ref:`int<class_int>` pos **)** |const|
 
-Returns grapheme end position closest to the ``pos``.
+返回距离 ``pos`` 最近的字素结束位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3727,7 +3801,7 @@ void **shaped_text_overrun_trim_to_width** **(** :ref:`RID<class_RID>` shaped, :
 
 :ref:`int<class_int>` **shaped_text_prev_grapheme_pos** **(** :ref:`RID<class_RID>` shaped, :ref:`int<class_int>` pos **)** |const|
 
-Returns grapheme start position closest to the ``pos``.
+返回距离 ``pos`` 最近的字素开始位置。
 
 .. rst-class:: classref-item-separator
 
@@ -3905,12 +3979,12 @@ void **shaped_text_set_spacing** **(** :ref:`RID<class_RID>` shaped, :ref:`Spaci
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **string_get_character_breaks** **(** :ref:`String<class_String>` string, :ref:`String<class_String>` language="" **)** |const|
 
-Returns array of the composite character boundaries.
+返回组合字符边界的数组。
 
 ::
 
     var ts = TextServerManager.get_primary_interface()
-    print(ts.string_get_word_breaks("Test ❤️‍🔥 Test")) # Prints [1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 14]
+    print(ts.string_get_word_breaks("Test ❤️‍🔥 Test")) # 输出 [1, 2, 3, 4, 5, 9, 10, 11, 12, 13, 14]
 
 .. rst-class:: classref-item-separator
 
@@ -3990,10 +4064,10 @@ Returns array of the composite character boundaries.
 
 将 OpenType 标签转换为可读的特性、变体、文字或语言的名称。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,51 +10,51 @@
 AudioStreamPlayback
 ===================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>`, :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>`
+**派生：** :ref:`AudioStreamPlaybackPolyphonic<class_AudioStreamPlaybackPolyphonic>`, :ref:`AudioStreamPlaybackResampled<class_AudioStreamPlaybackResampled>`
 
 播放音频的元类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 可以播放、循环播放、暂停滚动播放音频。有关用法，请参阅 :ref:`AudioStream<class_AudioStream>` 和 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `音频生成器演示 <https://godotengine.org/asset-library/asset/526>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`     | :ref:`_get_loop_count<class_AudioStreamPlayback_method__get_loop_count>` **(** **)** |virtual| |const|                                                          |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>` | :ref:`_get_playback_position<class_AudioStreamPlayback_method__get_playback_position>` **(** **)** |virtual| |const|                                            |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`   | :ref:`_is_playing<class_AudioStreamPlayback_method__is_playing>` **(** **)** |virtual| |const|                                                                  |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`     | :ref:`_mix<class_AudioStreamPlayback_method__mix>` **(** AudioFrame* buffer, :ref:`float<class_float>` rate_scale, :ref:`int<class_int>` frames **)** |virtual| |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                      | :ref:`_seek<class_AudioStreamPlayback_method__seek>` **(** :ref:`float<class_float>` position **)** |virtual|                                                   |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                      | :ref:`_start<class_AudioStreamPlayback_method__start>` **(** :ref:`float<class_float>` from_pos **)** |virtual|                                                 |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                      | :ref:`_stop<class_AudioStreamPlayback_method__stop>` **(** **)** |virtual|                                                                                      |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                      | :ref:`_tag_used_streams<class_AudioStreamPlayback_method__tag_used_streams>` **(** **)** |virtual|                                                              |
-   +---------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`     | :ref:`_get_loop_count<class_AudioStreamPlayback_private_method__get_loop_count>` **(** **)** |virtual| |const|                                                          |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>` | :ref:`_get_playback_position<class_AudioStreamPlayback_private_method__get_playback_position>` **(** **)** |virtual| |const|                                            |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`   | :ref:`_is_playing<class_AudioStreamPlayback_private_method__is_playing>` **(** **)** |virtual| |const|                                                                  |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`     | :ref:`_mix<class_AudioStreamPlayback_private_method__mix>` **(** AudioFrame* buffer, :ref:`float<class_float>` rate_scale, :ref:`int<class_int>` frames **)** |virtual| |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                      | :ref:`_seek<class_AudioStreamPlayback_private_method__seek>` **(** :ref:`float<class_float>` position **)** |virtual|                                                   |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                      | :ref:`_start<class_AudioStreamPlayback_private_method__start>` **(** :ref:`float<class_float>` from_pos **)** |virtual|                                                 |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                      | :ref:`_stop<class_AudioStreamPlayback_private_method__stop>` **(** **)** |virtual|                                                                                      |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                      | :ref:`_tag_used_streams<class_AudioStreamPlayback_private_method__tag_used_streams>` **(** **)** |virtual|                                                              |
+   +---------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -62,10 +62,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_AudioStreamPlayback_method__get_loop_count:
+.. _class_AudioStreamPlayback_private_method__get_loop_count:
 
 .. rst-class:: classref-method
 
@@ -73,13 +73,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStreamPlayback_method__get_playback_position:
+.. _class_AudioStreamPlayback_private_method__get_playback_position:
 
 .. rst-class:: classref-method
 
@@ -87,13 +87,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStreamPlayback_method__is_playing:
+.. _class_AudioStreamPlayback_private_method__is_playing:
 
 .. rst-class:: classref-method
 
@@ -101,13 +101,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStreamPlayback_method__mix:
+.. _class_AudioStreamPlayback_private_method__mix:
 
 .. rst-class:: classref-method
 
@@ -115,13 +115,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStreamPlayback_method__seek:
+.. _class_AudioStreamPlayback_private_method__seek:
 
 .. rst-class:: classref-method
 
@@ -129,13 +129,13 @@ void **_seek** **(** :ref:`float<class_float>` position **)** |virtual|
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStreamPlayback_method__start:
+.. _class_AudioStreamPlayback_private_method__start:
 
 .. rst-class:: classref-method
 
@@ -143,13 +143,13 @@ void **_start** **(** :ref:`float<class_float>` from_pos **)** |virtual|
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStreamPlayback_method__stop:
+.. _class_AudioStreamPlayback_private_method__stop:
 
 .. rst-class:: classref-method
 
@@ -157,13 +157,13 @@ void **_stop** **(** **)** |virtual|
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStreamPlayback_method__tag_used_streams:
+.. _class_AudioStreamPlayback_private_method__tag_used_streams:
 
 .. rst-class:: classref-method
 
@@ -171,12 +171,12 @@ void **_tag_used_streams** **(** **)** |virtual|
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

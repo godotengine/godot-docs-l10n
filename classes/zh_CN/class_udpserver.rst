@@ -10,18 +10,18 @@
 UDPServer
 =========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于实现 UDP 服务器的辅助类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 简易服务器，会打开 UDP 套接字，并在收到新数据包时返回已连接的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ 。另见 :ref:`PacketPeerUDP.connect_to_host<class_PacketPeerUDP_method_connect_to_host>`\ 。
 
-服务器启动后（\ :ref:`listen<class_UDPServer_method_listen>`\ ），你需要调用 :ref:`poll<class_UDPServer_method_poll>` 按照一定的间隔轮询（例如在 :ref:`Node._process<class_Node_method__process>` 中）才能处理新数据包、将它们传递给合适的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ 、获取新连接。
+服务器启动后（\ :ref:`listen<class_UDPServer_method_listen>`\ ），你需要调用 :ref:`poll<class_UDPServer_method_poll>` 按照一定的间隔轮询（例如在 :ref:`Node._process<class_Node_private_method__process>` 中）才能处理新数据包、将它们传递给合适的 :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ 、获取新连接。
 
 下面是简单的用法示例：
 
@@ -151,8 +151,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -163,8 +163,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -191,8 +191,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_UDPServer_property_max_pending_connections:
 
@@ -213,8 +213,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_UDPServer_method_get_local_port:
 
@@ -270,7 +270,7 @@ Method Descriptions
 
 :ref:`Error<enum_@GlobalScope_Error>` **poll** **(** **)**
 
-定期调用这个方法，例如在\ :ref:`Node._process<class_Node_method__process>`\ 里面，来处理新数据包。来自已知地址及端口对的数据包，将被传递到相应的\ :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ ，任何从未知地址及端口对收到的数据包将被添加为一个待定连接，参阅\ :ref:`is_connection_available<class_UDPServer_method_is_connection_available>`, :ref:`take_connection<class_UDPServer_method_take_connection>`\ 。待定连接的最大数量通过\ :ref:`max_pending_connections<class_UDPServer_property_max_pending_connections>`\ 定义。
+定期调用这个方法，例如在\ :ref:`Node._process<class_Node_private_method__process>`\ 里面，来处理新数据包。来自已知地址及端口对的数据包，将被传递到相应的\ :ref:`PacketPeerUDP<class_PacketPeerUDP>`\ ，任何从未知地址及端口对收到的数据包将被添加为一个待定连接，参阅\ :ref:`is_connection_available<class_UDPServer_method_is_connection_available>`, :ref:`take_connection<class_UDPServer_method_take_connection>`\ 。待定连接的最大数量通过\ :ref:`max_pending_connections<class_UDPServer_property_max_pending_connections>`\ 定义。
 
 .. rst-class:: classref-item-separator
 
@@ -296,10 +296,10 @@ void **stop** **(** **)**
 
 返回第一个挂起的连接（连接到适当的地址及端口）。如果没有新的连接可用，将返回 ``null``\ 。另请参阅 :ref:`is_connection_available<class_UDPServer_method_is_connection_available>`\ 、\ :ref:`PacketPeerUDP.connect_to_host<class_PacketPeerUDP_method_connect_to_host>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

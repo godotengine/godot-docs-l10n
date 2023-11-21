@@ -10,24 +10,24 @@
 Object
 ======
 
-**Inherited By:** :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotSharp<class_GodotSharp>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapperExtension<class_OpenXRExtensionWrapperExtension>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`
+**派生：** :ref:`AudioServer<class_AudioServer>`, :ref:`CameraServer<class_CameraServer>`, :ref:`ClassDB<class_ClassDB>`, :ref:`DisplayServer<class_DisplayServer>`, :ref:`EditorFileSystemDirectory<class_EditorFileSystemDirectory>`, :ref:`EditorInterface<class_EditorInterface>`, :ref:`EditorPaths<class_EditorPaths>`, :ref:`EditorSelection<class_EditorSelection>`, :ref:`EditorUndoRedoManager<class_EditorUndoRedoManager>`, :ref:`EditorVCSInterface<class_EditorVCSInterface>`, :ref:`Engine<class_Engine>`, :ref:`EngineDebugger<class_EngineDebugger>`, :ref:`GDExtensionManager<class_GDExtensionManager>`, :ref:`Geometry2D<class_Geometry2D>`, :ref:`Geometry3D<class_Geometry3D>`, :ref:`GodotSharp<class_GodotSharp>`, :ref:`Input<class_Input>`, :ref:`InputMap<class_InputMap>`, :ref:`IP<class_IP>`, :ref:`JavaClassWrapper<class_JavaClassWrapper>`, :ref:`JavaScriptBridge<class_JavaScriptBridge>`, :ref:`JNISingleton<class_JNISingleton>`, :ref:`JSONRPC<class_JSONRPC>`, :ref:`MainLoop<class_MainLoop>`, :ref:`Marshalls<class_Marshalls>`, :ref:`MovieWriter<class_MovieWriter>`, :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>`, :ref:`NavigationServer2D<class_NavigationServer2D>`, :ref:`NavigationServer3D<class_NavigationServer3D>`, :ref:`Node<class_Node>`, :ref:`OpenXRExtensionWrapperExtension<class_OpenXRExtensionWrapperExtension>`, :ref:`OpenXRInteractionProfileMetadata<class_OpenXRInteractionProfileMetadata>`, :ref:`OS<class_OS>`, :ref:`Performance<class_Performance>`, :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>`, :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>`, :ref:`PhysicsDirectSpaceState2D<class_PhysicsDirectSpaceState2D>`, :ref:`PhysicsDirectSpaceState3D<class_PhysicsDirectSpaceState3D>`, :ref:`PhysicsServer2D<class_PhysicsServer2D>`, :ref:`PhysicsServer2DManager<class_PhysicsServer2DManager>`, :ref:`PhysicsServer3D<class_PhysicsServer3D>`, :ref:`PhysicsServer3DManager<class_PhysicsServer3DManager>`, :ref:`PhysicsServer3DRenderingServerHandler<class_PhysicsServer3DRenderingServerHandler>`, :ref:`ProjectSettings<class_ProjectSettings>`, :ref:`RefCounted<class_RefCounted>`, :ref:`RenderingDevice<class_RenderingDevice>`, :ref:`RenderingServer<class_RenderingServer>`, :ref:`ResourceLoader<class_ResourceLoader>`, :ref:`ResourceSaver<class_ResourceSaver>`, :ref:`ResourceUID<class_ResourceUID>`, :ref:`ScriptLanguage<class_ScriptLanguage>`, :ref:`TextServerManager<class_TextServerManager>`, :ref:`ThemeDB<class_ThemeDB>`, :ref:`TileData<class_TileData>`, :ref:`Time<class_Time>`, :ref:`TranslationServer<class_TranslationServer>`, :ref:`TreeItem<class_TreeItem>`, :ref:`UndoRedo<class_UndoRedo>`, :ref:`WorkerThreadPool<class_WorkerThreadPool>`, :ref:`XRServer<class_XRServer>`
 
 引擎中所有其他类的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 一种高级的 :ref:`Variant<class_Variant>` 类型。引擎中的所有类都继承自 Object。每个类都可以定义新的属性、方法或信号，并且这些对所有继承的类都可用。例如，一个 :ref:`Sprite2D<class_Sprite2D>` 实例能够调用 :ref:`Node.add_child<class_Node_method_add_child>` 因为它继承自 :ref:`Node<class_Node>`\ 。
 
-可以使用 GDScript 中的 ``Object.new()`` 或 C# 中的 ``new Object`` 来创建新实例。
+可以使用 GDScript 中的 ``Object.new()`` 或 C# 中的 ``new GodotObject`` 来创建新实例。
 
 要删除一个 Object 实例，请调用 :ref:`free<class_Object_method_free>`\ 。这对于大多数继承 Object 的类来说是必须的，因为它们本身并不管理内存，如果不调用该方法的话，在不再使用时会造成内存泄漏。有几个类会执行内存管理。例如，\ :ref:`RefCounted<class_RefCounted>`\ （以及扩展的 :ref:`Resource<class_Resource>`\ ）在不再被引用时删除自身，而 :ref:`Node<class_Node>` 在释放时会删除其子节点。
 
 对象可以附加一个 :ref:`Script<class_Script>`\ 。一旦该 :ref:`Script<class_Script>` 被实例化，它就有效地充当了基类的扩展，允许它定义和继承新的属性、方法和信号。
 
-在 :ref:`Script<class_Script>` 中，\ :ref:`_get_property_list<class_Object_method__get_property_list>` 可以被可以重写，以通过多种方式自定义属性。这允许它们对编辑器可用，显示为选项列表，细分为组，保存在磁盘上，等等。脚本语言提供更简单的方式来自定义属性，例如使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 注解。
+在 :ref:`Script<class_Script>` 中，\ :ref:`_get_property_list<class_Object_private_method__get_property_list>` 可以被可以重写，以通过多种方式自定义属性。这允许它们对编辑器可用，显示为选项列表，细分为组，保存在磁盘上，等等。脚本语言提供更简单的方式来自定义属性，例如使用 :ref:`@GDScript.@export<class_@GDScript_annotation_@export>` 注解。
 
 Godot 是非常动态的。一个对象的脚本，以及它的属性、方法和信号，都可以在运行时改变。正因为如此，可能会出现这样的情况，例如，一个方法所需的属性可能不存在。为了防止运行时出错，可以参考 :ref:`set<class_Object_method_set>`\ 、\ :ref:`get<class_Object_method_get>`\ 、\ :ref:`call<class_Object_method_call>`\ 、\ :ref:`has_method<class_Object_method_has_method>`\ 、\ :ref:`has_signal<class_Object_method_has_signal>` 等方法。请注意，这些方法比直接引用慢\ **得多**\ 。
 
@@ -41,7 +41,7 @@ Godot 是非常动态的。一个对象的脚本，以及它的属性、方法�
     print("tree_entered" in node) # 输出 true
     print("unknown" in node)      # 输出 false
 
-通知是 :ref:`int<class_int>` 常量，通常由对象发送和接收。例如，在每个渲染帧上，\ :ref:`SceneTree<class_SceneTree>` 使用 :ref:`Node.NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 通知树内的节点。节点收到它后，可以调用 :ref:`Node._process<class_Node_method__process>` 进行更新。要使用通知，请参阅 :ref:`notification<class_Object_method_notification>` 和 :ref:`_notification<class_Object_method__notification>`\ 。
+通知是 :ref:`int<class_int>` 常量，通常由对象发送和接收。例如，在每个渲染帧上，\ :ref:`SceneTree<class_SceneTree>` 使用 :ref:`Node.NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 通知树内的节点。节点收到它后，可以调用 :ref:`Node._process<class_Node_private_method__process>` 进行更新。要使用通知，请参阅 :ref:`notification<class_Object_method_notification>` 和 :ref:`_notification<class_Object_private_method__notification>`\ 。
 
 最后，每个对象还可以包含元数据（关于数据的数据）。\ :ref:`set_meta<class_Object_method_set_meta>` 可用于存储对象本身不依赖的信息。为了保持代码整洁，不鼓励过度使用元数据。
 
@@ -51,8 +51,8 @@ Godot 是非常动态的。一个对象的脚本，以及它的属性、方法�
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`Object 类介绍 <../contributing/development/core_and_modules/object_class>`
 
@@ -62,30 +62,30 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Variant<class_Variant>`         | :ref:`_get<class_Object_method__get>` **(** :ref:`StringName<class_StringName>` property **)** |virtual|                                                                                                                           |
+   | :ref:`Variant<class_Variant>`         | :ref:`_get<class_Object_private_method__get>` **(** :ref:`StringName<class_StringName>` property **)** |virtual|                                                                                                                   |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Dictionary[]<class_Dictionary>` | :ref:`_get_property_list<class_Object_method__get_property_list>` **(** **)** |virtual|                                                                                                                                            |
+   | :ref:`Dictionary[]<class_Dictionary>` | :ref:`_get_property_list<class_Object_private_method__get_property_list>` **(** **)** |virtual|                                                                                                                                    |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                  | :ref:`_init<class_Object_method__init>` **(** **)** |virtual|                                                                                                                                                                      |
+   | void                                  | :ref:`_init<class_Object_private_method__init>` **(** **)** |virtual|                                                                                                                                                              |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                  | :ref:`_notification<class_Object_method__notification>` **(** :ref:`int<class_int>` what **)** |virtual|                                                                                                                           |
+   | void                                  | :ref:`_notification<class_Object_private_method__notification>` **(** :ref:`int<class_int>` what **)** |virtual|                                                                                                                   |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`               | :ref:`_property_can_revert<class_Object_method__property_can_revert>` **(** :ref:`StringName<class_StringName>` property **)** |virtual|                                                                                           |
+   | :ref:`bool<class_bool>`               | :ref:`_property_can_revert<class_Object_private_method__property_can_revert>` **(** :ref:`StringName<class_StringName>` property **)** |virtual|                                                                                   |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Variant<class_Variant>`         | :ref:`_property_get_revert<class_Object_method__property_get_revert>` **(** :ref:`StringName<class_StringName>` property **)** |virtual|                                                                                           |
+   | :ref:`Variant<class_Variant>`         | :ref:`_property_get_revert<class_Object_private_method__property_get_revert>` **(** :ref:`StringName<class_StringName>` property **)** |virtual|                                                                                   |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`               | :ref:`_set<class_Object_method__set>` **(** :ref:`StringName<class_StringName>` property, :ref:`Variant<class_Variant>` value **)** |virtual|                                                                                      |
+   | :ref:`bool<class_bool>`               | :ref:`_set<class_Object_private_method__set>` **(** :ref:`StringName<class_StringName>` property, :ref:`Variant<class_Variant>` value **)** |virtual|                                                                              |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`           | :ref:`_to_string<class_Object_method__to_string>` **(** **)** |virtual|                                                                                                                                                            |
+   | :ref:`String<class_String>`           | :ref:`_to_string<class_Object_private_method__to_string>` **(** **)** |virtual|                                                                                                                                                    |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                  | :ref:`_validate_property<class_Object_method__validate_property>` **(** :ref:`Dictionary<class_Dictionary>` property **)** |virtual|                                                                                               |
+   | void                                  | :ref:`_validate_property<class_Object_private_method__validate_property>` **(** :ref:`Dictionary<class_Dictionary>` property **)** |virtual|                                                                                       |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                  | :ref:`add_user_signal<class_Object_method_add_user_signal>` **(** :ref:`String<class_String>` signal, :ref:`Array<class_Array>` arguments=[] **)**                                                                                 |
    +---------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -184,8 +184,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Object_signal_property_list_changed:
 
@@ -215,8 +215,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Object_ConnectFlags:
 
@@ -262,8 +262,8 @@ enum **ConnectFlags**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Object_constant_NOTIFICATION_POSTINITIALIZE:
 
@@ -287,18 +287,18 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Object_method__get:
+.. _class_Object_private_method__get:
 
 .. rst-class:: classref-method
 
 :ref:`Variant<class_Variant>` **_get** **(** :ref:`StringName<class_StringName>` property **)** |virtual|
 
-Override this method to customize the behavior of :ref:`get<class_Object_method_get>`. Should return the given ``property``'s value, or ``null`` if the ``property`` should be handled normally.
+覆盖该方法以自定义 :ref:`get<class_Object_method_get>` 的行为。应该返回给定的 ``property`` 的值，或者 ``property`` 应该被正常处理时返回 ``null``\ 。
 
-Combined with :ref:`_set<class_Object_method__set>` and :ref:`_get_property_list<class_Object_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins. Note that a property must be present in :ref:`get_property_list<class_Object_method_get_property_list>`, otherwise this method will not be called.
+结合 :ref:`_set<class_Object_private_method__set>` 和 :ref:`_get_property_list<class_Object_private_method__get_property_list>`\ ，该方法允许定义自定义属性，这对编辑器插件特别有用。请注意，属性必须存在于 :ref:`get_property_list<class_Object_method_get_property_list>` 中，否则该方法不会被调用。
 
 
 .. tabs::
@@ -307,7 +307,7 @@ Combined with :ref:`_set<class_Object_method__set>` and :ref:`_get_property_list
 
     func _get(property):
         if property == "fake_property":
-            print("Getting my property!")
+            print("正在获取我的属性！")
             return 4
     
     func _get_property_list():
@@ -321,7 +321,7 @@ Combined with :ref:`_set<class_Object_method__set>` and :ref:`_get_property_list
     {
         if (property == "FakeProperty")
         {
-            GD.Print("Getting my property!");
+            GD.Print("正在获取我的属性！");
             return 4;
         }
         return default;
@@ -345,7 +345,7 @@ Combined with :ref:`_set<class_Object_method__set>` and :ref:`_get_property_list
 
 ----
 
-.. _class_Object_method__get_property_list:
+.. _class_Object_private_method__get_property_list:
 
 .. rst-class:: classref-method
 
@@ -443,21 +443,21 @@ Combined with :ref:`_set<class_Object_method__set>` and :ref:`_get_property_list
 
 ----
 
-.. _class_Object_method__init:
+.. _class_Object_private_method__init:
 
 .. rst-class:: classref-method
 
 void **_init** **(** **)** |virtual|
 
-会在对象的脚本被实例化时调用，通常是在对象在内存中初始化之后（通过 GDScript 中的 ``Object.new()``\ ，或 C# 中的 ``new Object``\ ）。它也可以被定义为接受参数的形式。该方法类似于大多数编程语言中的构造函数。
+实例化对象的脚本时调用，通常是在对象在内存中初始化之后（通过 GDScript 中的 ``Object.new()`` 或 C# 中的 ``new GodotObject``\ ）。也可以将其定义为接受参数的形式。该方法类似于大多数编程语言中的构造函数。
 
-\ **注意：**\ 如果 :ref:`_init<class_Object_method__init>` 被定义了\ *必需的*\ 参数，则带脚本的 Object 只能被直接创建。如果使用任何其他方式（例如 :ref:`PackedScene.instantiate<class_PackedScene_method_instantiate>` 或 :ref:`Node.duplicate<class_Node_method_duplicate>`\ ）创建，则该脚本的初始化将失败。
+\ **注意：**\ 如果为 :ref:`_init<class_Object_private_method__init>` 定义了\ *必填的*\ 参数，则带脚本的 Object 只能直接创建。使用任何其他方式（例如 :ref:`PackedScene.instantiate<class_PackedScene_method_instantiate>` 或 :ref:`Node.duplicate<class_Node_method_duplicate>`\ ）创建时，该脚本的初始化都将失败。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_Object_method__notification:
+.. _class_Object_private_method__notification:
 
 .. rst-class:: classref-method
 
@@ -492,13 +492,13 @@ void **_notification** **(** :ref:`int<class_int>` what **)** |virtual|
 
 ----
 
-.. _class_Object_method__property_can_revert:
+.. _class_Object_private_method__property_can_revert:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_property_can_revert** **(** :ref:`StringName<class_StringName>` property **)** |virtual|
 
-覆盖该方法以自定义给定 ``property`` 的还原行为。如果 ``property`` 可以在检查器停靠面板中恢复，则应该返回 ``true``\ 。使用 :ref:`_property_get_revert<class_Object_method__property_get_revert>` 来指定 ``property`` 的默认值。
+覆盖该方法以自定义给定 ``property`` 的还原行为。如果 ``property`` 可以在检查器停靠面板中恢复，则应该返回 ``true``\ 。使用 :ref:`_property_get_revert<class_Object_private_method__property_get_revert>` 来指定 ``property`` 的默认值。
 
 \ **注意：**\ 无论 ``property`` 的当前值如何，该方法都必须始终如一地返回。
 
@@ -506,7 +506,7 @@ void **_notification** **(** :ref:`int<class_int>` what **)** |virtual|
 
 ----
 
-.. _class_Object_method__property_get_revert:
+.. _class_Object_private_method__property_get_revert:
 
 .. rst-class:: classref-method
 
@@ -514,21 +514,21 @@ void **_notification** **(** :ref:`int<class_int>` what **)** |virtual|
 
 覆盖该方法以自定义给定 ``property`` 的还原行为。应返回 ``property`` 的默认值。如果默认值与 ``property`` 的当前值不同，则检查器停靠面板中会显示一个还原图标。
 
-\ **注意：**\ :ref:`_property_can_revert<class_Object_method__property_can_revert>` 也必须被覆盖，该方法才能被调用。
+\ **注意：**\ :ref:`_property_can_revert<class_Object_private_method__property_can_revert>` 也必须被覆盖，该方法才能被调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_Object_method__set:
+.. _class_Object_private_method__set:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_set** **(** :ref:`StringName<class_StringName>` property, :ref:`Variant<class_Variant>` value **)** |virtual|
 
-Override this method to customize the behavior of :ref:`set<class_Object_method_set>`. Should set the ``property`` to ``value`` and return ``true``, or ``false`` if the ``property`` should be handled normally. The *exact* way to set the ``property`` is up to this method's implementation.
+覆盖该方法以自定义 :ref:`set<class_Object_method_set>` 的行为。应将 ``property`` 设置为 ``value`` 并返回 ``true``\ ，如果 ``property`` 正常处理则返回 ``false``\ 。设置 ``property`` 的\ *确切*\ 方式取决于该方法的实现。
 
-Combined with :ref:`_get<class_Object_method__get>` and :ref:`_get_property_list<class_Object_method__get_property_list>`, this method allows defining custom properties, which is particularly useful for editor plugins. Note that a property *must* be present in :ref:`get_property_list<class_Object_method_get_property_list>`, otherwise this method will not be called.
+结合 :ref:`_get<class_Object_private_method__get>` 和 :ref:`_get_property_list<class_Object_private_method__get_property_list>`\ ，该方法允许定义自定义属性，这对编辑器插件特别有用。注意属性\ *必须*\ 在 :ref:`get_property_list<class_Object_method_get_property_list>` 中存在，否则该方法将不会被调用。
 
 
 .. tabs::
@@ -539,9 +539,10 @@ Combined with :ref:`_get<class_Object_method__get>` and :ref:`_get_property_list
     
     func _set(property, value):
         if property == "fake_property":
-            # Storing the value in the fake property.
+            # 在冒牌属性中存值。
             internal_data["fake_property"] = value
             return true
+        return false
     
     func _get_property_list():
         return [
@@ -552,11 +553,11 @@ Combined with :ref:`_get<class_Object_method__get>` and :ref:`_get_property_list
 
     private Godot.Collections.Dictionary _internalData = new Godot.Collections.Dictionary();
     
-    public override void _Set(StringName property, Variant value)
+    public override bool _Set(StringName property, Variant value)
     {
         if (property == "FakeProperty")
         {
-            // Storing the value in the fake property.
+            // 在冒牌属性中存值。
             _internalData["FakeProperty"] = value;
             return true;
         }
@@ -582,7 +583,7 @@ Combined with :ref:`_get<class_Object_method__get>` and :ref:`_get_property_list
 
 ----
 
-.. _class_Object_method__to_string:
+.. _class_Object_private_method__to_string:
 
 .. rst-class:: classref-method
 
@@ -603,13 +604,13 @@ Combined with :ref:`_get<class_Object_method__get>` and :ref:`_get_property_list
 
 ----
 
-.. _class_Object_method__validate_property:
+.. _class_Object_private_method__validate_property:
 
 .. rst-class:: classref-method
 
 void **_validate_property** **(** :ref:`Dictionary<class_Dictionary>` property **)** |virtual|
 
-Override this method to customize existing properties. Every property info goes through this method. The dictionary contents is the same as in :ref:`_get_property_list<class_Object_method__get_property_list>`.
+覆盖该方法以自定义已有属性。每个属性信息都经过该方法。字典内容与 :ref:`_get_property_list<class_Object_private_method__get_property_list>` 中的相同。
 
 
 .. tabs::
@@ -1169,11 +1170,11 @@ void **free** **(** **)**
 
 :ref:`Variant<class_Variant>` **get_meta** **(** :ref:`StringName<class_StringName>` name, :ref:`Variant<class_Variant>` default=null **)** |const|
 
-Returns the object's metadata value for the given entry ``name``. If the entry does not exist, returns ``default``. If ``default`` is ``null``, an error is also generated.
+返回该对象的元数据中名称为 ``name`` 的条目。如果不存在该条目，则返回 ``default``\ 。如果 ``default`` 为 ``null``\ ，则还会生成错误。
 
-\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_identifier<class_StringName_method_is_valid_identifier>` method.
+\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier<class_StringName_method_is_valid_identifier>` 的有效标识符。
 
-\ **Note:** Metadata that has a name starting with an underscore (``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
+\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1223,21 +1224,21 @@ Returns the object's metadata value for the given entry ``name``. If the entry d
 
 :ref:`Dictionary[]<class_Dictionary>` **get_property_list** **(** **)** |const|
 
-Returns the object's property list as an :ref:`Array<class_Array>` of dictionaries. Each :ref:`Dictionary<class_Dictionary>` contains the following entries:
+以字典 :ref:`Array<class_Array>` 的形式返回该对象的属性列表。每个 :ref:`Dictionary<class_Dictionary>` 中都包含如下条目：
 
-- ``name`` is the property's name, as a :ref:`String<class_String>`;
+- ``name`` 是该属性的名称，类型为 :ref:`String<class_String>`\ ；
 
-- ``class_name`` is an empty :ref:`StringName<class_StringName>`, unless the property is :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>` and it inherits from a class;
+- ``class_name`` 为空 :ref:`StringName<class_StringName>`\ ，除非该属性为 :ref:`@GlobalScope.TYPE_OBJECT<class_@GlobalScope_constant_TYPE_OBJECT>` 并继承自某个类；
 
-- ``type`` is the property's type, as an :ref:`int<class_int>` (see :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`);
+- ``type`` 是该属性的类型，类型为 :ref:`int<class_int>`\ （见 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ）；
 
-- ``hint`` is *how* the property is meant to be edited (see :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`);
+- ``hint`` 是应当\ *如何*\ 编辑该属性（见 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`\ ）；
 
-- ``hint_string`` depends on the hint (see :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`);
+- ``hint_string`` 取决于 hint（见 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>`\ ）；
 
-- ``usage`` is a combination of :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>`.
+- ``usage`` 是 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` 的组合。
 
-\ **Note:** In GDScript, all class members are treated as properties. In C# and GDExtension, it may be necessary to explicitly mark class members as Godot properties using decorators or attributes.
+\ **注意：**\ 在 GDScript 中，类的所有成员都被视为属性。在 C# 和 GDExtension 中，则需要使用装饰器或特性将类的成员显式标记为 Godot 属性。
 
 .. rst-class:: classref-item-separator
 
@@ -1293,11 +1294,11 @@ Returns the object's property list as an :ref:`Array<class_Array>` of dictionari
 
 :ref:`bool<class_bool>` **has_meta** **(** :ref:`StringName<class_StringName>` name **)** |const|
 
-Returns ``true`` if a metadata entry is found with the given ``name``. See also :ref:`get_meta<class_Object_method_get_meta>`, :ref:`set_meta<class_Object_method_set_meta>` and :ref:`remove_meta<class_Object_method_remove_meta>`.
+如果找到名称为 ``name`` 的元数据条目，则返回 ``true``\ 。另请参阅 :ref:`get_meta<class_Object_method_get_meta>`\ 、\ :ref:`set_meta<class_Object_method_set_meta>` 和 :ref:`remove_meta<class_Object_method_remove_meta>`\ 。
 
-\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_identifier<class_StringName_method_is_valid_identifier>` method.
+\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier<class_StringName_method_is_valid_identifier>` 的有效标识符。
 
-\ **Note:** Metadata that has a name starting with an underscore (``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
+\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1420,7 +1421,7 @@ Returns ``true`` if a metadata entry is found with the given ``name``. See also 
 
 void **notification** **(** :ref:`int<class_int>` what, :ref:`bool<class_bool>` reversed=false **)**
 
-将给定的 ``what`` 通知发送给对象继承的所有类，触发对 :ref:`_notification<class_Object_method__notification>` 的调用，从最高祖先（\ **Object** 类）开始，向下一直到对象的脚本。
+将给定的 ``what`` 通知发送给对象继承的所有类，触发对 :ref:`_notification<class_Object_private_method__notification>` 的调用，从最高祖先（\ **Object** 类）开始，向下一直到对象的脚本。
 
 如果 ``reversed`` 为 ``true``\ ，则调用顺序会被颠倒。
 
@@ -1475,7 +1476,7 @@ void **notify_property_list_changed** **(** **)**
 
 如果给定的属性 ``property`` 有自定义的默认值，则返回 ``true``\ 。请使用 :ref:`property_get_revert<class_Object_method_property_get_revert>` 获取 ``property`` 的默认值。
 
-\ **注意：**\ “检查器”面板会使用这个方法来显示恢复图标。该对象必须实现 :ref:`_property_can_revert<class_Object_method__property_can_revert>` 来自定义默认值。如果未实现 :ref:`_property_can_revert<class_Object_method__property_can_revert>`\ ，则这个方法返回 ``false``\ 。
+\ **注意：**\ “检查器”面板会使用这个方法来显示恢复图标。该对象必须实现 :ref:`_property_can_revert<class_Object_private_method__property_can_revert>` 来自定义默认值。如果未实现 :ref:`_property_can_revert<class_Object_private_method__property_can_revert>`\ ，则这个方法返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1489,7 +1490,7 @@ void **notify_property_list_changed** **(** **)**
 
 返回给定的属性 ``property`` 的自定义默认值。请使用 :ref:`property_can_revert<class_Object_method_property_can_revert>` 检查 ``property`` 是否有自定义的默认值。
 
-\ **注意：**\ “检查器”面板会使用这个方法来显示恢复图标。该对象必须实现 :ref:`_property_get_revert<class_Object_method__property_get_revert>` 来自定义默认值。如果未实现 :ref:`_property_get_revert<class_Object_method__property_get_revert>`\ ，则这个方法返回 ``null``\ 。
+\ **注意：**\ “检查器”面板会使用这个方法来显示恢复图标。该对象必须实现 :ref:`_property_get_revert<class_Object_private_method__property_get_revert>` 来自定义默认值。如果未实现 :ref:`_property_get_revert<class_Object_private_method__property_get_revert>`\ ，则这个方法返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1501,11 +1502,11 @@ void **notify_property_list_changed** **(** **)**
 
 void **remove_meta** **(** :ref:`StringName<class_StringName>` name **)**
 
-Removes the given entry ``name`` from the object's metadata. See also :ref:`has_meta<class_Object_method_has_meta>`, :ref:`get_meta<class_Object_method_get_meta>` and :ref:`set_meta<class_Object_method_set_meta>`.
+从对象的元数据中移除名称为 ``name`` 的条目。另请参阅 :ref:`has_meta<class_Object_method_has_meta>`\ 、\ :ref:`get_meta<class_Object_method_get_meta>`\ 、和 :ref:`set_meta<class_Object_method_set_meta>`\ 。
 
-\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_identifier<class_StringName_method_is_valid_identifier>` method.
+\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier<class_StringName_method_is_valid_identifier>` 的有效标识符。
 
-\ **Note:** Metadata that has a name starting with an underscore (``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
+\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1646,13 +1647,13 @@ void **set_message_translation** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_meta** **(** :ref:`StringName<class_StringName>` name, :ref:`Variant<class_Variant>` value **)**
 
-Adds or changes the entry ``name`` inside the object's metadata. The metadata ``value`` can be any :ref:`Variant<class_Variant>`, although some types cannot be serialized correctly.
+添加或更改对象元数据中名称为 ``name`` 的条目。元数据值 ``value`` 可以是任何 :ref:`Variant<class_Variant>`\ ，尽管某些类型无法正确序列化。
 
-If ``value`` is ``null``, the entry is removed. This is the equivalent of using :ref:`remove_meta<class_Object_method_remove_meta>`. See also :ref:`has_meta<class_Object_method_has_meta>` and :ref:`get_meta<class_Object_method_get_meta>`.
+如果 ``value`` 为 ``null``\ ，则该条目被移除。等价于使用 :ref:`remove_meta<class_Object_method_remove_meta>`\ 。另见 :ref:`has_meta<class_Object_method_has_meta>` 和 :ref:`get_meta<class_Object_method_get_meta>`\ 。
 
-\ **Note:** A metadata's name must be a valid identifier as per :ref:`StringName.is_valid_identifier<class_StringName_method_is_valid_identifier>` method.
+\ **注意：**\ 元数据的名称必须是符合 :ref:`StringName.is_valid_identifier<class_StringName_method_is_valid_identifier>` 的有效标识符。
 
-\ **Note:** Metadata that has a name starting with an underscore (``_``) is considered editor-only. Editor-only metadata is not displayed in the Inspector and should not be edited, although it can still be found by this method.
+\ **注意：**\ 名称以下划线（\ ``_``\ ）开头的元数据仅供编辑器使用。仅供编辑器使用的元数据不会在“检查器”中显示，虽然仍然能够被这个方法找到，但是不应该进行编辑。
 
 .. rst-class:: classref-item-separator
 
@@ -1664,7 +1665,7 @@ If ``value`` is ``null``, the entry is removed. This is the equivalent of using 
 
 void **set_script** **(** :ref:`Variant<class_Variant>` script **)**
 
-将脚本 ``script`` 附加至该对象，并进行实例化。因此会调用该脚本的 :ref:`_init<class_Object_method__init>`\ 。\ :ref:`Script<class_Script>` 可用于扩展对象的功能。
+将脚本 ``script`` 附加至该对象，并进行实例化。因此会调用该脚本的 :ref:`_init<class_Object_private_method__init>`\ 。\ :ref:`Script<class_Script>` 可用于扩展对象的功能。
 
 如果已存在脚本，则该脚本的实例会被分离，其属性值和状态会丢失。仍会保留内置属性的值。
 
@@ -1678,7 +1679,7 @@ void **set_script** **(** :ref:`Variant<class_Variant>` script **)**
 
 :ref:`String<class_String>` **to_string** **(** **)**
 
-返回表示对象的 :ref:`String<class_String>`\ 。默认为 ``"<ClassName#RID>"``\ 。覆盖 :ref:`_to_string<class_Object_method__to_string>` 以自定义对象的字符串表示形式。
+返回表示对象的 :ref:`String<class_String>`\ 。默认为 ``"<ClassName#RID>"``\ 。覆盖 :ref:`_to_string<class_Object_private_method__to_string>` 以自定义对象的字符串表示形式。
 
 .. rst-class:: classref-item-separator
 
@@ -1716,10 +1717,10 @@ void **set_script** **(** :ref:`Variant<class_Variant>` script **)**
 
 \ **注意：**\ 负数和 :ref:`float<class_float>` 数字可能不适用于某些可数科目。建议使用 :ref:`tr<class_Object_method_tr>` 处理这些情况。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

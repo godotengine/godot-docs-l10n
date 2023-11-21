@@ -10,16 +10,16 @@
 Texture2D
 =========
 
-**Inherits:** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AnimatedTexture<class_AnimatedTexture>`, :ref:`AtlasTexture<class_AtlasTexture>`, :ref:`CameraTexture<class_CameraTexture>`, :ref:`CanvasTexture<class_CanvasTexture>`, :ref:`CompressedTexture2D<class_CompressedTexture2D>`, :ref:`CurveTexture<class_CurveTexture>`, :ref:`CurveXYZTexture<class_CurveXYZTexture>`, :ref:`GradientTexture1D<class_GradientTexture1D>`, :ref:`GradientTexture2D<class_GradientTexture2D>`, :ref:`ImageTexture<class_ImageTexture>`, :ref:`MeshTexture<class_MeshTexture>`, :ref:`NoiseTexture2D<class_NoiseTexture2D>`, :ref:`PlaceholderTexture2D<class_PlaceholderTexture2D>`, :ref:`PortableCompressedTexture2D<class_PortableCompressedTexture2D>`, :ref:`Texture2DRD<class_Texture2DRD>`, :ref:`ViewportTexture<class_ViewportTexture>`
+**派生：** :ref:`AnimatedTexture<class_AnimatedTexture>`, :ref:`AtlasTexture<class_AtlasTexture>`, :ref:`CameraTexture<class_CameraTexture>`, :ref:`CanvasTexture<class_CanvasTexture>`, :ref:`CompressedTexture2D<class_CompressedTexture2D>`, :ref:`CurveTexture<class_CurveTexture>`, :ref:`CurveXYZTexture<class_CurveXYZTexture>`, :ref:`GradientTexture1D<class_GradientTexture1D>`, :ref:`GradientTexture2D<class_GradientTexture2D>`, :ref:`ImageTexture<class_ImageTexture>`, :ref:`MeshTexture<class_MeshTexture>`, :ref:`NoiseTexture2D<class_NoiseTexture2D>`, :ref:`PlaceholderTexture2D<class_PlaceholderTexture2D>`, :ref:`PortableCompressedTexture2D<class_PortableCompressedTexture2D>`, :ref:`Texture2DRD<class_Texture2DRD>`, :ref:`ViewportTexture<class_ViewportTexture>`
 
 用于 2D 和 3D 的纹理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 纹理的工作原理是在视频硬件中注册图像，该图像在注册后就可以在 3D 模型、2D :ref:`Sprite2D<class_Sprite2D>`\ 、GUI :ref:`Control<class_Control>` 中使用。
 
@@ -31,26 +31,26 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                            | :ref:`_draw<class_Texture2D_method__draw>` **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Vector2<class_Vector2>` pos, :ref:`Color<class_Color>` modulate, :ref:`bool<class_bool>` transpose **)** |virtual| |const|                                                                                                         |
+   | void                            | :ref:`_draw<class_Texture2D_private_method__draw>` **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Vector2<class_Vector2>` pos, :ref:`Color<class_Color>` modulate, :ref:`bool<class_bool>` transpose **)** |virtual| |const|                                                                                                 |
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                            | :ref:`_draw_rect<class_Texture2D_method__draw_rect>` **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rect2<class_Rect2>` rect, :ref:`bool<class_bool>` tile, :ref:`Color<class_Color>` modulate, :ref:`bool<class_bool>` transpose **)** |virtual| |const|                                                                    |
+   | void                            | :ref:`_draw_rect<class_Texture2D_private_method__draw_rect>` **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rect2<class_Rect2>` rect, :ref:`bool<class_bool>` tile, :ref:`Color<class_Color>` modulate, :ref:`bool<class_bool>` transpose **)** |virtual| |const|                                                            |
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                            | :ref:`_draw_rect_region<class_Texture2D_method__draw_rect_region>` **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rect2<class_Rect2>` rect, :ref:`Rect2<class_Rect2>` src_rect, :ref:`Color<class_Color>` modulate, :ref:`bool<class_bool>` transpose, :ref:`bool<class_bool>` clip_uv **)** |virtual| |const|               |
+   | void                            | :ref:`_draw_rect_region<class_Texture2D_private_method__draw_rect_region>` **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rect2<class_Rect2>` rect, :ref:`Rect2<class_Rect2>` src_rect, :ref:`Color<class_Color>` modulate, :ref:`bool<class_bool>` transpose, :ref:`bool<class_bool>` clip_uv **)** |virtual| |const|       |
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`           | :ref:`_get_height<class_Texture2D_method__get_height>` **(** **)** |virtual| |const|                                                                                                                                                                                                                                            |
+   | :ref:`int<class_int>`           | :ref:`_get_height<class_Texture2D_private_method__get_height>` **(** **)** |virtual| |const|                                                                                                                                                                                                                                    |
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`           | :ref:`_get_width<class_Texture2D_method__get_width>` **(** **)** |virtual| |const|                                                                                                                                                                                                                                              |
+   | :ref:`int<class_int>`           | :ref:`_get_width<class_Texture2D_private_method__get_width>` **(** **)** |virtual| |const|                                                                                                                                                                                                                                      |
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`         | :ref:`_has_alpha<class_Texture2D_method__has_alpha>` **(** **)** |virtual| |const|                                                                                                                                                                                                                                              |
+   | :ref:`bool<class_bool>`         | :ref:`_has_alpha<class_Texture2D_private_method__has_alpha>` **(** **)** |virtual| |const|                                                                                                                                                                                                                                      |
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`         | :ref:`_is_pixel_opaque<class_Texture2D_method__is_pixel_opaque>` **(** :ref:`int<class_int>` x, :ref:`int<class_int>` y **)** |virtual| |const|                                                                                                                                                                                 |
+   | :ref:`bool<class_bool>`         | :ref:`_is_pixel_opaque<class_Texture2D_private_method__is_pixel_opaque>` **(** :ref:`int<class_int>` x, :ref:`int<class_int>` y **)** |virtual| |const|                                                                                                                                                                         |
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Resource<class_Resource>` | :ref:`create_placeholder<class_Texture2D_method_create_placeholder>` **(** **)** |const|                                                                                                                                                                                                                                        |
    +---------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -77,10 +77,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Texture2D_method__draw:
+.. _class_Texture2D_private_method__draw:
 
 .. rst-class:: classref-method
 
@@ -94,7 +94,7 @@ void **_draw** **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Vector2<class_V
 
 ----
 
-.. _class_Texture2D_method__draw_rect:
+.. _class_Texture2D_private_method__draw_rect:
 
 .. rst-class:: classref-method
 
@@ -108,7 +108,7 @@ void **_draw_rect** **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rect2<clas
 
 ----
 
-.. _class_Texture2D_method__draw_rect_region:
+.. _class_Texture2D_private_method__draw_rect_region:
 
 .. rst-class:: classref-method
 
@@ -122,7 +122,7 @@ void **_draw_rect_region** **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rec
 
 ----
 
-.. _class_Texture2D_method__get_height:
+.. _class_Texture2D_private_method__get_height:
 
 .. rst-class:: classref-method
 
@@ -134,7 +134,7 @@ void **_draw_rect_region** **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rec
 
 ----
 
-.. _class_Texture2D_method__get_width:
+.. _class_Texture2D_private_method__get_width:
 
 .. rst-class:: classref-method
 
@@ -146,7 +146,7 @@ void **_draw_rect_region** **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rec
 
 ----
 
-.. _class_Texture2D_method__has_alpha:
+.. _class_Texture2D_private_method__has_alpha:
 
 .. rst-class:: classref-method
 
@@ -158,7 +158,7 @@ void **_draw_rect_region** **(** :ref:`RID<class_RID>` to_canvas_item, :ref:`Rec
 
 ----
 
-.. _class_Texture2D_method__is_pixel_opaque:
+.. _class_Texture2D_private_method__is_pixel_opaque:
 
 .. rst-class:: classref-method
 
@@ -276,10 +276,10 @@ void **draw_rect_region** **(** :ref:`RID<class_RID>` canvas_item, :ref:`Rect2<c
 
 如果该 **Texture2D** 具有 Alpha 通道，则返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

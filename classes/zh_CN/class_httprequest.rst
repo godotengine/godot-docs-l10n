@@ -10,14 +10,14 @@
 HTTPRequest
 ===========
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 具有发送 HTTP(S) 请求能力的节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 一种具有发送 HTTP 请求能力的节点。内部使用 :ref:`HTTPClient<class_HTTPClient>`\ 。
 
@@ -185,8 +185,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`发出 HTTP 请求 <../tutorials/networking/http_request_class>`
 
@@ -194,8 +194,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -218,8 +218,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -250,8 +250,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_HTTPRequest_signal_request_completed:
 
@@ -267,8 +267,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_HTTPRequest_Result:
 
@@ -394,8 +394,8 @@ HTTPRequest 无法写入下载文件。
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_HTTPRequest_property_accept_gzip:
 
@@ -410,11 +410,11 @@ Property Descriptions
 
 如果为 ``true``\ ，这个报头会被添加到每个请求中：\ ``Accept-Encoding: gzip, deflate`` 告诉服务器可以压缩响应正文。
 
-任何声明 ``gzip`` 或 ``deflate`` 的 ``Content-Encoding`` 的响应正文，将被自动解压缩，并且未压缩的字节将通过 ``request_completed`` 被传递。
+任何声明 ``gzip`` 或 ``deflate`` 的 ``Content-Encoding`` 的响应正文，将被自动解压缩，并且未压缩的字节将通过 :ref:`request_completed<class_HTTPRequest_signal_request_completed>` 被传递。
 
-如果用户指定了自己的 ``Accept-Encoding`` 报头，那么无论 ``accept_gzip`` 是什么，都不会添加任何报头。
+如果用户指定了自己的 ``Accept-Encoding`` 报头，那么无论 :ref:`accept_gzip<class_HTTPRequest_property_accept_gzip>` 是什么，都不会添加任何报头。
 
-如果为 ``false``\ ，这将不会添加报头，并且不会对响应正文执行任何解压缩。响应正文的原始字节将通过 ``request_completed`` 返回。
+如果为 ``false``\ ，这将不会添加报头，并且不会对响应正文执行任何解压缩。响应正文的原始字节将通过 :ref:`request_completed<class_HTTPRequest_signal_request_completed>` 返回。
 
 .. rst-class:: classref-item-separator
 
@@ -526,8 +526,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_HTTPRequest_method_cancel_request:
 
@@ -589,7 +589,7 @@ void **cancel_request** **(** **)**
 
 如果成功创建请求，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ 。（并不意味着服务器已响应），如果不在树中，则返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果仍在处理先前的请求，则返回 :ref:`@GlobalScope.ERR_BUSY<class_@GlobalScope_constant_ERR_BUSY>`\ ；如果给定的字符串不是有效的 URL 格式，则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；或者如果不使用线程并且 :ref:`HTTPClient<class_HTTPClient>` 无法连接到主机，则返回 :ref:`@GlobalScope.ERR_CANT_CONNECT<class_@GlobalScope_constant_ERR_CANT_CONNECT>`\ 。
 
-\ **注意：**\ 当 ``method`` 为 :ref:`HTTPClient.METHOD_GET<class_HTTPClient_constant_METHOD_GET>` 时，通过 ``request_data`` 发送的有效载荷可能会被服务器忽略，甚至导致服务器拒绝请求（参阅 `RFC 7231 第 4.3.1 节 <https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1>`__\ 了解更多详情）。作为一种变通方法，可以在 URL 中将数据作为查询字符串发送（有关示例，请参见 :ref:`String.uri_encode<class_String_method_uri_encode>`\ ）。
+\ **注意：**\ 当 ``method`` 为 :ref:`HTTPClient.METHOD_GET<class_HTTPClient_constant_METHOD_GET>` 时，通过 ``request_data`` 发送的有效载荷可能会被服务器忽略，甚至导致服务器拒绝请求（见 `RFC 7231 第 4.3.1 节 <https://datatracker.ietf.org/doc/html/rfc7231#section-4.3.1>`__\ 了解更多详情）。作为一种变通方法，可以在 URL 中将数据作为查询字符串发送（有关示例，请参见 :ref:`String.uri_encode<class_String_method_uri_encode>`\ ）。
 
 \ **注意：**\ 建议使用传输加密（TLS）并避免在 HTTP GET URL 参数中发送敏感信息（例如登录凭据）。考虑改用 HTTP POST 请求或 HTTP 报头来获取此类信息。
 
@@ -647,10 +647,10 @@ void **set_tls_options** **(** :ref:`TLSOptions<class_TLSOptions>` client_option
 
 设置连接到 HTTPS 服务器时使用的 :ref:`TLSOptions<class_TLSOptions>`\ 。见 :ref:`TLSOptions.client<class_TLSOptions_method_client>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

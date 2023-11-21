@@ -10,14 +10,14 @@
 TileSetAtlasSource
 ==================
 
-**Inherits:** :ref:`TileSetSource<class_TileSetSource>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`TileSetSource<class_TileSetSource>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 以一组图块的形式向 :ref:`TileSet<class_TileSet>` 资源暴露 2D 图集纹理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 图集是在纹理上铺设的图块栅格。栅格中的每个图块都必须使用 :ref:`create_tile<class_TileSetAtlasSource_method_create_tile>` 公开。然后使用它们在栅格中的坐标，对这些图块进行索引。
 
@@ -31,8 +31,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -127,8 +127,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TileSetAtlasSource_TileAnimationMode:
 
@@ -142,7 +142,7 @@ enum **TileAnimationMode**:
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_DEFAULT** = ``0``
 
-Tile animations start at same time, looking identical.
+图块动画在相同的时间开始，外观一致。
 
 .. _class_TileSetAtlasSource_constant_TILE_ANIMATION_MODE_RANDOM_START_TIMES:
 
@@ -150,7 +150,7 @@ Tile animations start at same time, looking identical.
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_RANDOM_START_TIMES** = ``1``
 
-Tile animations start at random times, looking varied.
+图块动画在随机的时间开始，外观不同。
 
 .. _class_TileSetAtlasSource_constant_TILE_ANIMATION_MODE_MAX:
 
@@ -158,7 +158,7 @@ Tile animations start at random times, looking varied.
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **TILE_ANIMATION_MODE_MAX** = ``2``
 
-Represents the size of the :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` enum.
+代表 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` 枚举的大小。
 
 .. rst-class:: classref-section-separator
 
@@ -166,8 +166,8 @@ Represents the size of the :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileA
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H:
 
@@ -175,13 +175,13 @@ Constants
 
 **TRANSFORM_FLIP_H** = ``4096``
 
-Represents cell's horizontal flip flag. Should be used directly with :ref:`TileMap<class_TileMap>` to flip placed tiles by altering their alternative IDs.
+代表单元格的水平翻转标志。应该直接对 :ref:`TileMap<class_TileMap>` 使用，修改放置图块的备选 ID，将其进行翻转。
 
 ::
 
     var alternate_id = $TileMap.get_cell_alternative_tile(0, Vector2i(2, 2))
     if not alternate_id & TileSetAtlasSource.TRANSFORM_FLIP_H:
-        # If tile is not already flipped, flip it.
+        # 如果没有翻转过就进行翻转。
         $TileMap.set_cell(0, Vector2i(2, 2), source_id, atlas_coords, alternate_id | TileSetAtlasSource.TRANSFORM_FLIP_H)
 
 .. _class_TileSetAtlasSource_constant_TRANSFORM_FLIP_V:
@@ -190,7 +190,7 @@ Represents cell's horizontal flip flag. Should be used directly with :ref:`TileM
 
 **TRANSFORM_FLIP_V** = ``8192``
 
-Represents cell's vertical flip flag. See :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>` for usage.
+代表单元格的垂直翻转标志。用法见 :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>`\ 。
 
 .. _class_TileSetAtlasSource_constant_TRANSFORM_TRANSPOSE:
 
@@ -198,7 +198,7 @@ Represents cell's vertical flip flag. See :ref:`TRANSFORM_FLIP_H<class_TileSetAt
 
 **TRANSFORM_TRANSPOSE** = ``16384``
 
-Represents cell's transposed flag. See :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>` for usage.
+代表单元格的转置标志。用法见 :ref:`TRANSFORM_FLIP_H<class_TileSetAtlasSource_constant_TRANSFORM_FLIP_H>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -206,8 +206,8 @@ Represents cell's transposed flag. See :ref:`TRANSFORM_FLIP_H<class_TileSetAtlas
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TileSetAtlasSource_property_margins:
 
@@ -298,8 +298,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TileSetAtlasSource_method_clear_tiles_outside_texture:
 
@@ -307,7 +307,7 @@ Method Descriptions
 
 void **clear_tiles_outside_texture** **(** **)**
 
-Removes all tiles that don't fit the available texture area. This method iterates over all the source's tiles, so it's advised to use :ref:`has_tiles_outside_texture<class_TileSetAtlasSource_method_has_tiles_outside_texture>` beforehand.
+移除所有位于可用纹理区域之外的图块。这个方法会遍历所有源的图块，因此建议先使用 :ref:`has_tiles_outside_texture<class_TileSetAtlasSource_method_has_tiles_outside_texture>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -345,7 +345,7 @@ void **create_tile** **(** :ref:`Vector2i<class_Vector2i>` atlas_coords, :ref:`V
 
 :ref:`Vector2i<class_Vector2i>` **get_atlas_grid_size** **(** **)** |const|
 
-返回图集栅格大小，这取决于纹理中可以容纳多少个图块。因此，它取决于纹理的大小，该图集 ``margins``\ 、和该图块的 ``texture_region_size``\ 。
+返回图集栅格大小，这取决于纹理中可以容纳多少个图块。因此，它取决于 :ref:`texture<class_TileSetAtlasSource_property_texture>` 的大小，该图集的 :ref:`margins<class_TileSetAtlasSource_property_margins>`\ 、和该图块的 :ref:`texture_region_size<class_TileSetAtlasSource_property_texture_region_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -431,7 +431,7 @@ void **create_tile** **(** :ref:`Vector2i<class_Vector2i>` atlas_coords, :ref:`V
 
 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` **get_tile_animation_mode** **(** :ref:`Vector2i<class_Vector2i>` atlas_coords **)** |const|
 
-Returns the :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` of the tile at ``atlas_coords``. See also :ref:`set_tile_animation_mode<class_TileSetAtlasSource_method_set_tile_animation_mode>`.
+返回图集坐标为 ``atlas_coords`` 的图块的 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>`\ 。另见 :ref:`set_tile_animation_mode<class_TileSetAtlasSource_method_set_tile_animation_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -551,7 +551,7 @@ Returns the :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` 
 
 :ref:`bool<class_bool>` **has_tiles_outside_texture** **(** **)** |const|
 
-Checks if the source has any tiles that don't fit the texture area (either partially or completely).
+检查该源是否存在位于纹理区域之外的图块（无论是部分位于区域外还是完全位于区域外）。
 
 .. rst-class:: classref-item-separator
 
@@ -655,7 +655,7 @@ void **set_tile_animation_frames_count** **(** :ref:`Vector2i<class_Vector2i>` a
 
 void **set_tile_animation_mode** **(** :ref:`Vector2i<class_Vector2i>` atlas_coords, :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` mode **)**
 
-Sets the :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` of the tile at ``atlas_coords`` to ``mode``. See also :ref:`get_tile_animation_mode<class_TileSetAtlasSource_method_get_tile_animation_mode>`.
+将图集坐标为 ``atlas_coords`` 的图块的 :ref:`TileAnimationMode<enum_TileSetAtlasSource_TileAnimationMode>` 设置为 ``mode``\ 。另见 :ref:`get_tile_animation_mode<class_TileSetAtlasSource_method_get_tile_animation_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -681,10 +681,10 @@ void **set_tile_animation_speed** **(** :ref:`Vector2i<class_Vector2i>` atlas_co
 
 设置位于坐标 ``atlas_coords`` 的图块的动画速度。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

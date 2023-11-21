@@ -10,38 +10,38 @@
 OccluderInstance3D
 ==================
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 为 3D 节点提供遮挡剔除，可以提高封闭区域的性能。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Occlusion culling can improve rendering performance in closed/semi-open areas by hiding geometry that is occluded by other objects.
+遮挡剔除可以通过隐藏被其他对象遮挡的几何体，来提高封闭/半开放区域的渲染性能。
 
-The occlusion culling system is mostly static. **OccluderInstance3D**\ s can be moved or hidden at run-time, but doing so will trigger a background recomputation that can take several frames. It is recommended to only move **OccluderInstance3D**\ s sporadically (e.g. for procedural generation purposes), rather than doing so every frame.
+遮挡剔除系统大多是静态的。\ **OccluderInstance3D** 可以在运行时移动或隐藏，但这样做会触发可能需要几帧的背景重新计算。建议仅偶尔移动 **OccluderInstance3D**\ （例如，出于程序生成目的），而不是每帧都这样做。
 
-The occlusion culling system works by rendering the occluders on the CPU in parallel using `Embree <https://www.embree.org/>`__, drawing the result to a low-resolution buffer then using this to cull 3D nodes individually. In the 3D editor, you can preview the occlusion culling buffer by choosing **Perspective > Debug Advanced... > Occlusion Culling Buffer** in the top-left corner of the 3D viewport. The occlusion culling buffer quality can be adjusted in the Project Settings.
+遮挡剔除系统的工作原理是，使用 `Embree <https://www.embree.org/>`__ 在 CPU 上并行渲染遮挡物，将结果绘制到一个低分辨率缓冲区，然后使用它来单独剔除 3D 的节点。在 3D 编辑器中，可以通过选择 3D 视口左上角的\ **透视图 > 高级调试... > 遮挡剔除缓冲区**\ ，来预览遮挡剔除缓冲区。可以在项目设置中调整遮挡剔除缓冲区的质量。
 
-\ **Baking:** Select an **OccluderInstance3D** node, then use the **Bake Occluders** button at the top of the 3D editor. Only opaque materials will be taken into account; transparent materials (alpha-blended or alpha-tested) will be ignored by the occluder generation.
+\ **烘焙：**\ 选择一个 **OccluderInstance3D** 节点，然后使用 3D 编辑器顶部的\ **烘焙遮挡物**\ 按钮。只考虑不透明的材质；遮挡器生成将忽略透明材质（alpha 混合或 alpha 测试）。
 
-\ **Note:** Occlusion culling is only effective if :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` is ``true``. Enabling occlusion culling has a cost on the CPU. Only enable occlusion culling if you actually plan to use it. Large open scenes with few or no objects blocking the view will generally not benefit much from occlusion culling. Large open scenes generally benefit more from mesh LOD and visibility ranges (:ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` and :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`) compared to occlusion culling.
+\ **注意：**\ 遮挡剔除只有在 :ref:`ProjectSettings.rendering/occlusion_culling/use_occlusion_culling<class_ProjectSettings_property_rendering/occlusion_culling/use_occlusion_culling>` 为 ``true`` 时才有效。启用遮挡剔除会消耗一定的 CPU。仅当确实打算使用遮挡剔除时才启用它。具有很少或没有物体，将阻挡视口的大型开放场景，通常不会从遮挡剔除中受益更多。与遮挡剔除相比，大型开放场景通常从网格 LOD 和可见性范围（\ :ref:`GeometryInstance3D.visibility_range_begin<class_GeometryInstance3D_property_visibility_range_begin>` 和 :ref:`GeometryInstance3D.visibility_range_end<class_GeometryInstance3D_property_visibility_range_end>`\ ）中受益更多。
 
-\ **Note:** Due to memory constraints, occlusion culling is not supported by default in Web export templates. It can be enabled by compiling custom Web export templates with ``module_raycast_enabled=yes``.
+\ **注意：**\ 由于内存限制，Web 导出模板中默认不支持遮挡剔除。编译自定义 Web 导出模板时使用 ``module_raycast_enabled=yes`` 可以启用。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Occlusion culling <../tutorials/3d/occlusion_culling>`
+- :doc:`遮挡剔除 <../tutorials/3d/occlusion_culling>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_OccluderInstance3D_property_bake_mask:
 
@@ -142,8 +142,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_OccluderInstance3D_method_get_bake_mask_value:
 
@@ -165,10 +165,10 @@ void **set_bake_mask_value** **(** :ref:`int<class_int>` layer_number, :ref:`boo
 
 基于 ``value``\ ，启用或禁用 :ref:`bake_mask<class_OccluderInstance3D_property_bake_mask>` 中的指定层，该层由给定的一个介于 1 和 32 之间的 ``layer_number`` 指定。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

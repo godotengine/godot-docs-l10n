@@ -10,14 +10,14 @@
 EditorNode3DGizmoPlugin
 =======================
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 编辑器用来定义 Node3D 小工具类型的类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **EditorNode3DGizmoPlugin** 允许定义一种新的小工具类型。定义主要有两种方法：比较简单的小工具可以扩展 **EditorNode3DGizmoPlugin**\ ，否则可以创建新的 :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` 类型。有关详细信息，请参阅文档中的教程。
 
@@ -25,64 +25,64 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`Node3D 小工具插件 <../tutorials/plugins/editor/3d_gizmos>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`_can_be_hidden<class_EditorNode3DGizmoPlugin_method__can_be_hidden>` **(** **)** |virtual| |const|                                                                                                                                                                                                 |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_commit_handle<class_EditorNode3DGizmoPlugin_method__commit_handle>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary, :ref:`Variant<class_Variant>` restore, :ref:`bool<class_bool>` cancel **)** |virtual|      |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_commit_subgizmos<class_EditorNode3DGizmoPlugin_method__commit_subgizmos>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`PackedInt32Array<class_PackedInt32Array>` ids, :ref:`Transform3D[]<class_Transform3D>` restores, :ref:`bool<class_bool>` cancel **)** |virtual|    |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>`   | :ref:`_create_gizmo<class_EditorNode3DGizmoPlugin_method__create_gizmo>` **(** :ref:`Node3D<class_Node3D>` for_node_3d **)** |virtual| |const|                                                                                                                                                           |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                         | :ref:`_get_gizmo_name<class_EditorNode3DGizmoPlugin_method__get_gizmo_name>` **(** **)** |virtual| |const|                                                                                                                                                                                               |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                         | :ref:`_get_handle_name<class_EditorNode3DGizmoPlugin_method__get_handle_name>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary **)** |virtual| |const|                                                                 |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Variant<class_Variant>`                       | :ref:`_get_handle_value<class_EditorNode3DGizmoPlugin_method__get_handle_value>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary **)** |virtual| |const|                                                               |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                               | :ref:`_get_priority<class_EditorNode3DGizmoPlugin_method__get_priority>` **(** **)** |virtual| |const|                                                                                                                                                                                                   |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Transform3D<class_Transform3D>`               | :ref:`_get_subgizmo_transform<class_EditorNode3DGizmoPlugin_method__get_subgizmo_transform>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` subgizmo_id **)** |virtual| |const|                                                                                    |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`_has_gizmo<class_EditorNode3DGizmoPlugin_method__has_gizmo>` **(** :ref:`Node3D<class_Node3D>` for_node_3d **)** |virtual| |const|                                                                                                                                                                 |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`_is_handle_highlighted<class_EditorNode3DGizmoPlugin_method__is_handle_highlighted>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary **)** |virtual| |const|                                                     |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`_is_selectable_when_hidden<class_EditorNode3DGizmoPlugin_method__is_selectable_when_hidden>` **(** **)** |virtual| |const|                                                                                                                                                                         |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_redraw<class_EditorNode3DGizmoPlugin_method__redraw>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo **)** |virtual|                                                                                                                                                               |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_set_handle<class_EditorNode3DGizmoPlugin_method__set_handle>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary, :ref:`Camera3D<class_Camera3D>` camera, :ref:`Vector2<class_Vector2>` screen_pos **)** |virtual| |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_set_subgizmo_transform<class_EditorNode3DGizmoPlugin_method__set_subgizmo_transform>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` subgizmo_id, :ref:`Transform3D<class_Transform3D>` transform **)** |virtual|                                           |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedInt32Array<class_PackedInt32Array>`     | :ref:`_subgizmos_intersect_frustum<class_EditorNode3DGizmoPlugin_method__subgizmos_intersect_frustum>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`Camera3D<class_Camera3D>` camera, :ref:`Plane[]<class_Plane>` frustum_planes **)** |virtual| |const|                         |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                               | :ref:`_subgizmos_intersect_ray<class_EditorNode3DGizmoPlugin_method__subgizmos_intersect_ray>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`Camera3D<class_Camera3D>` camera, :ref:`Vector2<class_Vector2>` screen_pos **)** |virtual| |const|                                   |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`add_material<class_EditorNode3DGizmoPlugin_method_add_material>` **(** :ref:`String<class_String>` name, :ref:`StandardMaterial3D<class_StandardMaterial3D>` material **)**                                                                                                                        |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`create_handle_material<class_EditorNode3DGizmoPlugin_method_create_handle_material>` **(** :ref:`String<class_String>` name, :ref:`bool<class_bool>` billboard=false, :ref:`Texture2D<class_Texture2D>` texture=null **)**                                                                         |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`create_icon_material<class_EditorNode3DGizmoPlugin_method_create_icon_material>` **(** :ref:`String<class_String>` name, :ref:`Texture2D<class_Texture2D>` texture, :ref:`bool<class_bool>` on_top=false, :ref:`Color<class_Color>` color=Color(1, 1, 1, 1) **)**                                  |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`create_material<class_EditorNode3DGizmoPlugin_method_create_material>` **(** :ref:`String<class_String>` name, :ref:`Color<class_Color>` color, :ref:`bool<class_bool>` billboard=false, :ref:`bool<class_bool>` on_top=false, :ref:`bool<class_bool>` use_vertex_color=false **)**                |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`StandardMaterial3D<class_StandardMaterial3D>` | :ref:`get_material<class_EditorNode3DGizmoPlugin_method_get_material>` **(** :ref:`String<class_String>` name, :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo=null **)**                                                                                                                        |
-   +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`_can_be_hidden<class_EditorNode3DGizmoPlugin_private_method__can_be_hidden>` **(** **)** |virtual| |const|                                                                                                                                                                                                 |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_commit_handle<class_EditorNode3DGizmoPlugin_private_method__commit_handle>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary, :ref:`Variant<class_Variant>` restore, :ref:`bool<class_bool>` cancel **)** |virtual|      |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_commit_subgizmos<class_EditorNode3DGizmoPlugin_private_method__commit_subgizmos>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`PackedInt32Array<class_PackedInt32Array>` ids, :ref:`Transform3D[]<class_Transform3D>` restores, :ref:`bool<class_bool>` cancel **)** |virtual|    |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>`   | :ref:`_create_gizmo<class_EditorNode3DGizmoPlugin_private_method__create_gizmo>` **(** :ref:`Node3D<class_Node3D>` for_node_3d **)** |virtual| |const|                                                                                                                                                           |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                         | :ref:`_get_gizmo_name<class_EditorNode3DGizmoPlugin_private_method__get_gizmo_name>` **(** **)** |virtual| |const|                                                                                                                                                                                               |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                         | :ref:`_get_handle_name<class_EditorNode3DGizmoPlugin_private_method__get_handle_name>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary **)** |virtual| |const|                                                                 |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Variant<class_Variant>`                       | :ref:`_get_handle_value<class_EditorNode3DGizmoPlugin_private_method__get_handle_value>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary **)** |virtual| |const|                                                               |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                               | :ref:`_get_priority<class_EditorNode3DGizmoPlugin_private_method__get_priority>` **(** **)** |virtual| |const|                                                                                                                                                                                                   |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Transform3D<class_Transform3D>`               | :ref:`_get_subgizmo_transform<class_EditorNode3DGizmoPlugin_private_method__get_subgizmo_transform>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` subgizmo_id **)** |virtual| |const|                                                                                    |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`_has_gizmo<class_EditorNode3DGizmoPlugin_private_method__has_gizmo>` **(** :ref:`Node3D<class_Node3D>` for_node_3d **)** |virtual| |const|                                                                                                                                                                 |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`_is_handle_highlighted<class_EditorNode3DGizmoPlugin_private_method__is_handle_highlighted>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary **)** |virtual| |const|                                                     |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`_is_selectable_when_hidden<class_EditorNode3DGizmoPlugin_private_method__is_selectable_when_hidden>` **(** **)** |virtual| |const|                                                                                                                                                                         |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_redraw<class_EditorNode3DGizmoPlugin_private_method__redraw>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo **)** |virtual|                                                                                                                                                               |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_set_handle<class_EditorNode3DGizmoPlugin_private_method__set_handle>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary, :ref:`Camera3D<class_Camera3D>` camera, :ref:`Vector2<class_Vector2>` screen_pos **)** |virtual| |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_set_subgizmo_transform<class_EditorNode3DGizmoPlugin_private_method__set_subgizmo_transform>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` subgizmo_id, :ref:`Transform3D<class_Transform3D>` transform **)** |virtual|                                           |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedInt32Array<class_PackedInt32Array>`     | :ref:`_subgizmos_intersect_frustum<class_EditorNode3DGizmoPlugin_private_method__subgizmos_intersect_frustum>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`Camera3D<class_Camera3D>` camera, :ref:`Plane[]<class_Plane>` frustum_planes **)** |virtual| |const|                         |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                               | :ref:`_subgizmos_intersect_ray<class_EditorNode3DGizmoPlugin_private_method__subgizmos_intersect_ray>` **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`Camera3D<class_Camera3D>` camera, :ref:`Vector2<class_Vector2>` screen_pos **)** |virtual| |const|                                   |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`add_material<class_EditorNode3DGizmoPlugin_method_add_material>` **(** :ref:`String<class_String>` name, :ref:`StandardMaterial3D<class_StandardMaterial3D>` material **)**                                                                                                                                |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`create_handle_material<class_EditorNode3DGizmoPlugin_method_create_handle_material>` **(** :ref:`String<class_String>` name, :ref:`bool<class_bool>` billboard=false, :ref:`Texture2D<class_Texture2D>` texture=null **)**                                                                                 |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`create_icon_material<class_EditorNode3DGizmoPlugin_method_create_icon_material>` **(** :ref:`String<class_String>` name, :ref:`Texture2D<class_Texture2D>` texture, :ref:`bool<class_bool>` on_top=false, :ref:`Color<class_Color>` color=Color(1, 1, 1, 1) **)**                                          |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`create_material<class_EditorNode3DGizmoPlugin_method_create_material>` **(** :ref:`String<class_String>` name, :ref:`Color<class_Color>` color, :ref:`bool<class_bool>` billboard=false, :ref:`bool<class_bool>` on_top=false, :ref:`bool<class_bool>` use_vertex_color=false **)**                        |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`StandardMaterial3D<class_StandardMaterial3D>` | :ref:`get_material<class_EditorNode3DGizmoPlugin_method_get_material>` **(** :ref:`String<class_String>` name, :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo=null **)**                                                                                                                                |
+   +-----------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -90,10 +90,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EditorNode3DGizmoPlugin_method__can_be_hidden:
+.. _class_EditorNode3DGizmoPlugin_private_method__can_be_hidden:
 
 .. rst-class:: classref-method
 
@@ -105,13 +105,13 @@ Method Descriptions
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__commit_handle:
+.. _class_EditorNode3DGizmoPlugin_private_method__commit_handle:
 
 .. rst-class:: classref-method
 
 void **_commit_handle** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary, :ref:`Variant<class_Variant>` restore, :ref:`bool<class_bool>` cancel **)** |virtual|
 
-覆盖该方法，以提交正在编辑的控柄（控柄必须是先前在 :ref:`_redraw<class_EditorNode3DGizmoPlugin_method__redraw>` 期间通过 :ref:`EditorNode3DGizmo.add_handles<class_EditorNode3DGizmo_method_add_handles>` 添加的）。这通常意味着为该更改创建一个 :ref:`UndoRedo<class_UndoRedo>` 动作，将当前控柄值用作“做”，并将 ``restore`` 参数用作“撤销”。
+覆盖该方法，以提交正在编辑的控柄（控柄必须是先前在 :ref:`_redraw<class_EditorNode3DGizmoPlugin_private_method__redraw>` 期间通过 :ref:`EditorNode3DGizmo.add_handles<class_EditorNode3DGizmo_method_add_handles>` 添加的）。这通常意味着为该更改创建一个 :ref:`UndoRedo<class_UndoRedo>` 动作，将当前控柄值用作“做”，并将 ``restore`` 参数用作“撤销”。
 
 如果 ``cancel`` 参数为 ``true``\ ，则 ``restore`` 值应被直接设置，无需任何 :ref:`UndoRedo<class_UndoRedo>` 动作。
 
@@ -123,13 +123,13 @@ void **_commit_handle** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` 
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__commit_subgizmos:
+.. _class_EditorNode3DGizmoPlugin_private_method__commit_subgizmos:
 
 .. rst-class:: classref-method
 
 void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`PackedInt32Array<class_PackedInt32Array>` ids, :ref:`Transform3D[]<class_Transform3D>` restores, :ref:`bool<class_bool>` cancel **)** |virtual|
 
-覆盖该方法，以提交一组正在编辑的子小工具（参见 :ref:`_subgizmos_intersect_ray<class_EditorNode3DGizmoPlugin_method__subgizmos_intersect_ray>` 和 :ref:`_subgizmos_intersect_frustum<class_EditorNode3DGizmoPlugin_method__subgizmos_intersect_frustum>`\ ）。这通常意味着为该更改创建一个 :ref:`UndoRedo<class_UndoRedo>` 动作，将当前变换用作“做”，并将 ``restores`` 变换用作“撤消”。
+覆盖该方法，以提交一组正在编辑的子小工具（参见 :ref:`_subgizmos_intersect_ray<class_EditorNode3DGizmoPlugin_private_method__subgizmos_intersect_ray>` 和 :ref:`_subgizmos_intersect_frustum<class_EditorNode3DGizmoPlugin_private_method__subgizmos_intersect_frustum>`\ ）。这通常意味着为该更改创建一个 :ref:`UndoRedo<class_UndoRedo>` 动作，将当前变换用作“做”，并将 ``restores`` 变换用作“撤消”。
 
 如果 ``cancel`` 参数为 ``true``\ ，则 ``restores`` 变换应被直接设置，无需任何 :ref:`UndoRedo<class_UndoRedo>` 动作。对于所有子小工具方法，变换是在与小工具的 Node3D 相关的局部空间中给出的。为该插件的活动小工具而调用。
 
@@ -137,19 +137,19 @@ void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__create_gizmo:
+.. _class_EditorNode3DGizmoPlugin_private_method__create_gizmo:
 
 .. rst-class:: classref-method
 
 :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` **_create_gizmo** **(** :ref:`Node3D<class_Node3D>` for_node_3d **)** |virtual| |const|
 
-覆盖此方法，为选择的空间节点返回一个自定义的 :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>`\ ，为其余节点返回 ``null``\ 。另见 :ref:`_has_gizmo<class_EditorNode3DGizmoPlugin_method__has_gizmo>`\ 。
+覆盖此方法，为选择的空间节点返回一个自定义的 :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>`\ ，为其余节点返回 ``null``\ 。另见 :ref:`_has_gizmo<class_EditorNode3DGizmoPlugin_private_method__has_gizmo>`\ 。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__get_gizmo_name:
+.. _class_EditorNode3DGizmoPlugin_private_method__get_gizmo_name:
 
 .. rst-class:: classref-method
 
@@ -161,7 +161,7 @@ void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__get_handle_name:
+.. _class_EditorNode3DGizmoPlugin_private_method__get_handle_name:
 
 .. rst-class:: classref-method
 
@@ -173,13 +173,13 @@ void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__get_handle_value:
+.. _class_EditorNode3DGizmoPlugin_private_method__get_handle_value:
 
 .. rst-class:: classref-method
 
 :ref:`Variant<class_Variant>` **_get_handle_value** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` handle_id, :ref:`bool<class_bool>` secondary **)** |virtual| |const|
 
-覆盖该方法，以返回一个控柄的当前值。该值将在编辑开始时被请求，并用作 :ref:`_commit_handle<class_EditorNode3DGizmoPlugin_method__commit_handle>` 中的 ``restore`` 参数。
+覆盖该方法，以返回一个控柄的当前值。该值将在编辑开始时被请求，并用作 :ref:`_commit_handle<class_EditorNode3DGizmoPlugin_private_method__commit_handle>` 中的 ``restore`` 参数。
 
 当请求的控柄是次要控柄时，\ ``secondary`` 参数为 ``true``\ （有关更多信息，请参阅 :ref:`EditorNode3DGizmo.add_handles<class_EditorNode3DGizmo_method_add_handles>`\ ）。
 
@@ -189,7 +189,7 @@ void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__get_priority:
+.. _class_EditorNode3DGizmoPlugin_private_method__get_priority:
 
 .. rst-class:: classref-method
 
@@ -203,19 +203,19 @@ void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__get_subgizmo_transform:
+.. _class_EditorNode3DGizmoPlugin_private_method__get_subgizmo_transform:
 
 .. rst-class:: classref-method
 
 :ref:`Transform3D<class_Transform3D>` **_get_subgizmo_transform** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` subgizmo_id **)** |virtual| |const|
 
-覆盖该方法，以返回子小工具的当前变换。对于所有子小工具方法，变换应该在相对于小工具的 Node3D 的局部空间中。此变换将在编辑开始时被请求，并在 :ref:`_commit_subgizmos<class_EditorNode3DGizmoPlugin_method__commit_subgizmos>` 中的 ``restore`` 参数中使用。为该插件的活动小工具而调用。
+覆盖该方法，以返回子小工具的当前变换。对于所有子小工具方法，变换应该在相对于小工具的 Node3D 的局部空间中。此变换将在编辑开始时被请求，并在 :ref:`_commit_subgizmos<class_EditorNode3DGizmoPlugin_private_method__commit_subgizmos>` 中的 ``restore`` 参数中使用。为该插件的活动小工具而调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__has_gizmo:
+.. _class_EditorNode3DGizmoPlugin_private_method__has_gizmo:
 
 .. rst-class:: classref-method
 
@@ -227,7 +227,7 @@ void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__is_handle_highlighted:
+.. _class_EditorNode3DGizmoPlugin_private_method__is_handle_highlighted:
 
 .. rst-class:: classref-method
 
@@ -239,7 +239,7 @@ void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__is_selectable_when_hidden:
+.. _class_EditorNode3DGizmoPlugin_private_method__is_selectable_when_hidden:
 
 .. rst-class:: classref-method
 
@@ -251,7 +251,7 @@ void **_commit_subgizmos** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__redraw:
+.. _class_EditorNode3DGizmoPlugin_private_method__redraw:
 
 .. rst-class:: classref-method
 
@@ -263,7 +263,7 @@ void **_redraw** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo *
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__set_handle:
+.. _class_EditorNode3DGizmoPlugin_private_method__set_handle:
 
 .. rst-class:: classref-method
 
@@ -279,37 +279,37 @@ void **_set_handle** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` giz
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__set_subgizmo_transform:
+.. _class_EditorNode3DGizmoPlugin_private_method__set_subgizmo_transform:
 
 .. rst-class:: classref-method
 
 void **_set_subgizmo_transform** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`int<class_int>` subgizmo_id, :ref:`Transform3D<class_Transform3D>` transform **)** |virtual|
 
-覆盖该方法，以在子小工具编辑期间更新节点属性（参见 :ref:`_subgizmos_intersect_ray<class_EditorNode3DGizmoPlugin_method__subgizmos_intersect_ray>` 和 :ref:`_subgizmos_intersect_frustum<class_EditorNode3DGizmoPlugin_method__subgizmos_intersect_frustum>`\ ）。\ ``transform`` 在 Node3D 的局部坐标系中给出。为该插件的活动小工具而调用。
+覆盖该方法，以在子小工具编辑期间更新节点属性（参见 :ref:`_subgizmos_intersect_ray<class_EditorNode3DGizmoPlugin_private_method__subgizmos_intersect_ray>` 和 :ref:`_subgizmos_intersect_frustum<class_EditorNode3DGizmoPlugin_private_method__subgizmos_intersect_frustum>`\ ）。\ ``transform`` 在 Node3D 的局部坐标系中给出。为该插件的活动小工具而调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__subgizmos_intersect_frustum:
+.. _class_EditorNode3DGizmoPlugin_private_method__subgizmos_intersect_frustum:
 
 .. rst-class:: classref-method
 
 :ref:`PackedInt32Array<class_PackedInt32Array>` **_subgizmos_intersect_frustum** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`Camera3D<class_Camera3D>` camera, :ref:`Plane[]<class_Plane>` frustum_planes **)** |virtual| |const|
 
-覆盖该方法，以允许使用鼠标拖动框选来选择子小工具。给定一个 ``camera`` 和 ``frustum_planes``\ ，该方法应返回哪些子小工具包含在视锥体中。\ ``frustum_planes`` 参数由一个构成选择视锥体的所有 ``Plane`` 的\ ``Array`` 组成。返回的值应该包含一个唯一的子小工具标识符列表，这些标识符可以有任何非负值，并将用于其他虚方法，如 :ref:`_get_subgizmo_transform<class_EditorNode3DGizmoPlugin_method__get_subgizmo_transform>` 或 :ref:`_commit_subgizmos<class_EditorNode3DGizmoPlugin_method__commit_subgizmos>`\ 。为该插件的活动小工具而调用。
+覆盖该方法，以允许使用鼠标拖动框选来选择子小工具。给定一个 ``camera`` 和 ``frustum_planes``\ ，该方法应返回哪些子小工具包含在视锥体中。\ ``frustum_planes`` 参数由一个构成选择视锥体的所有 :ref:`Plane<class_Plane>` 的数组组成。返回的值应该包含一个唯一的子小工具标识符列表，这些标识符可以有任何非负值，并将用于其他虚方法，如 :ref:`_get_subgizmo_transform<class_EditorNode3DGizmoPlugin_private_method__get_subgizmo_transform>` 或 :ref:`_commit_subgizmos<class_EditorNode3DGizmoPlugin_private_method__commit_subgizmos>`\ 。为该插件的活动小工具而调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_EditorNode3DGizmoPlugin_method__subgizmos_intersect_ray:
+.. _class_EditorNode3DGizmoPlugin_private_method__subgizmos_intersect_ray:
 
 .. rst-class:: classref-method
 
 :ref:`int<class_int>` **_subgizmos_intersect_ray** **(** :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` gizmo, :ref:`Camera3D<class_Camera3D>` camera, :ref:`Vector2<class_Vector2>` screen_pos **)** |virtual| |const|
 
-覆盖该方法，以允许使用鼠标点击选择子小工具。给定屏幕坐标中的 ``camera`` 和 ``screen_pos`` 时，该方法应返回应选择哪个子小工具。返回值应该是一个唯一的子小工具标识符，它可以有任何非负值，并将用于其他虚方法，如 :ref:`_get_subgizmo_transform<class_EditorNode3DGizmoPlugin_method__get_subgizmo_transform>` 或 :ref:`_commit_subgizmos<class_EditorNode3DGizmoPlugin_method__commit_subgizmos>`\ 。为该插件的活动小工具而调用。
+覆盖该方法，以允许使用鼠标点击选择子小工具。给定屏幕坐标中的 ``camera`` 和 ``screen_pos`` 时，该方法应返回应选择哪个子小工具。返回值应该是一个唯一的子小工具标识符，它可以有任何非负值，并将用于其他虚方法，如 :ref:`_get_subgizmo_transform<class_EditorNode3DGizmoPlugin_private_method__get_subgizmo_transform>` 或 :ref:`_commit_subgizmos<class_EditorNode3DGizmoPlugin_private_method__commit_subgizmos>`\ 。为该插件的活动小工具而调用。
 
 .. rst-class:: classref-item-separator
 
@@ -373,10 +373,10 @@ void **create_material** **(** :ref:`String<class_String>` name, :ref:`Color<cla
 
 从内部材质列表中获取材质。如果提供了一个 :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>`\ ，它将尝试获取相应的变体（选定的和/或可编辑的）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

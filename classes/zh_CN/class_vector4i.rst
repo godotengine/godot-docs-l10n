@@ -14,8 +14,8 @@ Vector4i
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 包含四个元素的结构体，可用于代表 4D 坐标或任何整数的四元组。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -61,8 +61,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -87,8 +87,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -139,8 +139,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Vector4i_constant_AXIS_X:
 
@@ -196,7 +196,7 @@ W 轴的枚举值。由 :ref:`max_axis_index<class_Vector4i_method_max_axis_inde
 
 **MIN** = ``Vector4i(-2147483648, -2147483648, -2147483648, -2147483648)``
 
-Min vector, a vector with all components equal to ``INT32_MIN``. Can be used as a negative integer equivalent of :ref:`Vector4.INF<class_Vector4_constant_INF>`.
+最小向量，所有分量等于 ``INT32_MIN`` 的向量。可用作 :ref:`Vector4.INF<class_Vector4_constant_INF>` 的负整数等价物。
 
 .. _class_Vector4i_constant_MAX:
 
@@ -204,7 +204,7 @@ Min vector, a vector with all components equal to ``INT32_MIN``. Can be used as 
 
 **MAX** = ``Vector4i(2147483647, 2147483647, 2147483647, 2147483647)``
 
-Max vector, a vector with all components equal to ``INT32_MAX``. Can be used as an integer equivalent of :ref:`Vector4.INF<class_Vector4_constant_INF>`.
+最大向量，所有分量等于 ``INT32_MAX`` 的向量。可用作 :ref:`Vector4.INF<class_Vector4_constant_INF>` 的整数等价物。
 
 .. rst-class:: classref-section-separator
 
@@ -212,8 +212,8 @@ Max vector, a vector with all components equal to ``INT32_MAX``. Can be used as 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Vector4i_property_w:
 
@@ -265,8 +265,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Vector4i_constructor_Vector4i:
 
@@ -312,8 +312,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Vector4i_method_abs:
 
@@ -415,8 +415,8 @@ Method Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Vector4i_operator_neq_Vector4i:
 
@@ -678,10 +678,10 @@ Operator Descriptions
 
 返回该 **Vector4i** 的负值。和写 ``Vector4i(-v.x, -v.y, -v.z, -v.w)`` 是一样的。这个运算会翻转向量方向，同时保持长度不变。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

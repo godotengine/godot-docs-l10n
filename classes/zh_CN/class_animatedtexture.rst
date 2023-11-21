@@ -10,14 +10,14 @@
 AnimatedTexture
 ===============
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于简单帧动画的代理纹理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **AnimatedTexture** 是一种用于帧动画的资源格式，其中多个纹理可以自动链接，每个帧都有预定义的延迟。与 :ref:`AnimationPlayer<class_AnimationPlayer>` 或 :ref:`AnimatedSprite2D<class_AnimatedSprite2D>` 不同，它不是 :ref:`Node<class_Node>`\ ，但具有可在任何可以使用 :ref:`Texture2D<class_Texture2D>` 资源的地方使用的优势，例如在 :ref:`TileSet<class_TileSet>` 中。
 
@@ -33,8 +33,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -77,8 +77,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_AnimatedTexture_constant_MAX_FRAMES:
 
@@ -94,8 +94,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AnimatedTexture_property_current_frame:
 
@@ -184,8 +184,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AnimatedTexture_method_get_frame_duration:
 
@@ -233,10 +233,10 @@ void **set_frame_texture** **(** :ref:`int<class_int>` frame, :ref:`Texture2D<cl
 
 最多可以定义 :ref:`MAX_FRAMES<class_AnimatedTexture_constant_MAX_FRAMES>` 个纹理，但要记住，只有 0 到 :ref:`frames<class_AnimatedTexture_property_frames>` - 1 的帧会成为动画的一部分。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

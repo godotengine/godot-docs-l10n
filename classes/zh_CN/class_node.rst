@@ -10,30 +10,30 @@
 Node
 ====
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AnimationPlayer<class_AnimationPlayer>`, :ref:`AnimationTree<class_AnimationTree>`, :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`CanvasItem<class_CanvasItem>`, :ref:`CanvasLayer<class_CanvasLayer>`, :ref:`EditorFileSystem<class_EditorFileSystem>`, :ref:`EditorPlugin<class_EditorPlugin>`, :ref:`EditorResourcePreview<class_EditorResourcePreview>`, :ref:`HTTPRequest<class_HTTPRequest>`, :ref:`InstancePlaceholder<class_InstancePlaceholder>`, :ref:`MissingNode<class_MissingNode>`, :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`, :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`, :ref:`NavigationAgent2D<class_NavigationAgent2D>`, :ref:`NavigationAgent3D<class_NavigationAgent3D>`, :ref:`Node3D<class_Node3D>`, :ref:`ResourcePreloader<class_ResourcePreloader>`, :ref:`ShaderGlobalsOverride<class_ShaderGlobalsOverride>`, :ref:`SkeletonIK3D<class_SkeletonIK3D>`, :ref:`Timer<class_Timer>`, :ref:`Viewport<class_Viewport>`, :ref:`WorldEnvironment<class_WorldEnvironment>`
+**派生：** :ref:`AnimationMixer<class_AnimationMixer>`, :ref:`AudioStreamPlayer<class_AudioStreamPlayer>`, :ref:`CanvasItem<class_CanvasItem>`, :ref:`CanvasLayer<class_CanvasLayer>`, :ref:`EditorFileSystem<class_EditorFileSystem>`, :ref:`EditorPlugin<class_EditorPlugin>`, :ref:`EditorResourcePreview<class_EditorResourcePreview>`, :ref:`HTTPRequest<class_HTTPRequest>`, :ref:`InstancePlaceholder<class_InstancePlaceholder>`, :ref:`MissingNode<class_MissingNode>`, :ref:`MultiplayerSpawner<class_MultiplayerSpawner>`, :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`, :ref:`NavigationAgent2D<class_NavigationAgent2D>`, :ref:`NavigationAgent3D<class_NavigationAgent3D>`, :ref:`Node3D<class_Node3D>`, :ref:`ResourcePreloader<class_ResourcePreloader>`, :ref:`ShaderGlobalsOverride<class_ShaderGlobalsOverride>`, :ref:`SkeletonIK3D<class_SkeletonIK3D>`, :ref:`Timer<class_Timer>`, :ref:`Viewport<class_Viewport>`, :ref:`WorldEnvironment<class_WorldEnvironment>`
 
 所有场景对象的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 节点是 Godot 的构建模块。它们可以被指定为另一个节点的子节点，从而形成树状排列。一个给定的节点可以包含任意数量的节点作为子节点，要求所有的兄弟节点（即该节点的直接子节点）的名字唯一。
 
 节点树被称为\ *场景*\ 。场景可以被保存到磁盘上，然后被实例化到其他场景中。这使得 Godot 项目的架构和数据模型具有非常高的灵活性。
 
-\ **场景树：**\ :ref:`SceneTree<class_SceneTree>` 包含活动的节点树。当一个节点被添加到场景树中时，它将收到 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知，并触发其 :ref:`_enter_tree<class_Node_method__enter_tree>` 回调。子节点总是在其父节点\ *之后*\ 被添加，即父节点的 :ref:`_enter_tree<class_Node_method__enter_tree>` 回调将在其子节点的之前被触发。
+\ **场景树：**\ :ref:`SceneTree<class_SceneTree>` 包含活动的节点树。当一个节点被添加到场景树中时，它将收到 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知，并触发其 :ref:`_enter_tree<class_Node_private_method__enter_tree>` 回调。子节点总是在其父节点\ *之后*\ 被添加，即父节点的 :ref:`_enter_tree<class_Node_private_method__enter_tree>` 回调将在其子节点的之前被触发。
 
-一旦所有的节点被添加到场景树中，它们就会收到 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 通知，其各自的 :ref:`_ready<class_Node_method__ready>` 回调被触发。对于一组节点，\ :ref:`_ready<class_Node_method__ready>` 回调是按相反的顺序调用的，从子节点开始，向上移动到父节点。
+一旦所有的节点被添加到场景树中，它们就会收到 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 通知，其各自的 :ref:`_ready<class_Node_private_method__ready>` 回调被触发。对于一组节点，\ :ref:`_ready<class_Node_private_method__ready>` 回调是按相反的顺序调用的，从子节点开始，向上移动到父节点。
 
-这意味着，当把一个节点添加到场景树中时，将使用下面的顺序进行回调：父节点的 :ref:`_enter_tree<class_Node_method__enter_tree>`\ 、子节点的 :ref:`_enter_tree<class_Node_method__enter_tree>`\ 、子节点的 :ref:`_ready<class_Node_method__ready>`\ ，最后是父节点的 :ref:`_ready<class_Node_method__ready>`\ （对整个场景树进行递归）。
+这意味着，当把一个节点添加到场景树中时，将使用下面的顺序进行回调：父节点的 :ref:`_enter_tree<class_Node_private_method__enter_tree>`\ 、子节点的 :ref:`_enter_tree<class_Node_private_method__enter_tree>`\ 、子节点的 :ref:`_ready<class_Node_private_method__ready>`\ ，最后是父节点的 :ref:`_ready<class_Node_private_method__ready>`\ （对整个场景树进行递归）。
 
-\ **处理：**\ 节点可以覆盖“处理”状态，以便它们在每一帧上都收到回调，要求它们进行处理（做一些事情）。普通处理（回调 :ref:`_process<class_Node_method__process>`\ ，可以使用 :ref:`set_process<class_Node_method_set_process>` 开关）会尽可能快地发生，并且取决于帧率，所以处理时间 *delta*\ （单位为秒）会作为参数传入。物理处理（回调 :ref:`_physics_process<class_Node_method__physics_process>`\ ，可以使用 :ref:`set_physics_process<class_Node_method_set_physics_process>` 开关）每秒发生固定次数（默认为 60），对物理引擎相关的代码很有用。
+\ **处理：**\ 节点可以覆盖“处理”状态，以便它们在每一帧上都收到回调，要求它们进行处理（做一些事情）。普通处理（回调 :ref:`_process<class_Node_private_method__process>`\ ，可以使用 :ref:`set_process<class_Node_method_set_process>` 开关）会尽可能快地发生，并且取决于帧率，所以处理时间 *delta*\ （单位为秒）会作为参数传入。物理处理（回调 :ref:`_physics_process<class_Node_private_method__physics_process>`\ ，可以使用 :ref:`set_physics_process<class_Node_method_set_physics_process>` 开关）每秒发生固定次数（默认为 60），对物理引擎相关的代码很有用。
 
-节点也可以处理输入事件。存在 :ref:`_input<class_Node_method__input>` 函数时，程序每收到一次输入都会去调用它。在许多情况下，这么做是大材小用了（除非是用于简单的项目），用 :ref:`_unhandled_input<class_Node_method__unhandled_input>` 函数可能更合适；当输入事件没有被其他节点（通常是 GUI :ref:`Control<class_Control>` 节点）处理时，才会调用这个函数，可以确保节点只接收到它该收到的事件。
+节点也可以处理输入事件。存在 :ref:`_input<class_Node_private_method__input>` 函数时，程序每收到一次输入都会去调用它。在许多情况下，这么做是大材小用了（除非是用于简单的项目），用 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 函数可能更合适；当输入事件没有被其他节点（通常是 GUI :ref:`Control<class_Control>` 节点）处理时，才会调用这个函数，可以确保节点只接收到它该收到的事件。
 
 为了记录场景的层次结构（尤其是在将场景实例化到其他场景时）可以用 :ref:`owner<class_Node_property_owner>` 属性为节点设置一个“所有者”。它记录的是谁实例化了什么。这在编写编辑器和工具时非常有用。
 
@@ -47,8 +47,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`节点与场景 <../getting_started/step_by_step/nodes_and_scenes>`
 
@@ -56,8 +56,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -90,32 +90,32 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_enter_tree<class_Node_method__enter_tree>` **(** **)** |virtual|                                                                                                                                                        |
+   | void                                              | :ref:`_enter_tree<class_Node_private_method__enter_tree>` **(** **)** |virtual|                                                                                                                                                |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_exit_tree<class_Node_method__exit_tree>` **(** **)** |virtual|                                                                                                                                                          |
+   | void                                              | :ref:`_exit_tree<class_Node_private_method__exit_tree>` **(** **)** |virtual|                                                                                                                                                  |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_configuration_warnings<class_Node_method__get_configuration_warnings>` **(** **)** |virtual| |const|                                                                                                                |
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_configuration_warnings<class_Node_private_method__get_configuration_warnings>` **(** **)** |virtual| |const|                                                                                                        |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_input<class_Node_method__input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                                                        |
+   | void                                              | :ref:`_input<class_Node_private_method__input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                                                |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_physics_process<class_Node_method__physics_process>` **(** :ref:`float<class_float>` delta **)** |virtual|                                                                                                              |
+   | void                                              | :ref:`_physics_process<class_Node_private_method__physics_process>` **(** :ref:`float<class_float>` delta **)** |virtual|                                                                                                      |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_process<class_Node_method__process>` **(** :ref:`float<class_float>` delta **)** |virtual|                                                                                                                              |
+   | void                                              | :ref:`_process<class_Node_private_method__process>` **(** :ref:`float<class_float>` delta **)** |virtual|                                                                                                                      |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_ready<class_Node_method__ready>` **(** **)** |virtual|                                                                                                                                                                  |
+   | void                                              | :ref:`_ready<class_Node_private_method__ready>` **(** **)** |virtual|                                                                                                                                                          |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_shortcut_input<class_Node_method__shortcut_input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                                      |
+   | void                                              | :ref:`_shortcut_input<class_Node_private_method__shortcut_input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                              |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_unhandled_input<class_Node_method__unhandled_input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                                    |
+   | void                                              | :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                            |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_unhandled_key_input<class_Node_method__unhandled_key_input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                            |
+   | void                                              | :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|                                                                                    |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                              | :ref:`add_child<class_Node_method_add_child>` **(** :ref:`Node<class_Node>` node, :ref:`bool<class_bool>` force_readable_name=false, :ref:`InternalMode<enum_Node_InternalMode>` internal=0 **)**                              |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -172,6 +172,10 @@ Methods
    | :ref:`bool<class_bool>`                           | :ref:`get_scene_instance_load_placeholder<class_Node_method_get_scene_instance_load_placeholder>` **(** **)** |const|                                                                                                          |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`SceneTree<class_SceneTree>`                 | :ref:`get_tree<class_Node_method_get_tree>` **(** **)** |const|                                                                                                                                                                |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`get_tree_string<class_Node_method_get_tree_string>` **(** **)**                                                                                                                                                          |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`get_tree_string_pretty<class_Node_method_get_tree_string_pretty>` **(** **)**                                                                                                                                            |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Viewport<class_Viewport>`                   | :ref:`get_viewport<class_Node_method_get_viewport>` **(** **)** |const|                                                                                                                                                        |
    +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -284,8 +288,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Node_signal_child_entered_tree:
 
@@ -333,7 +337,7 @@ Signals
 
 **ready** **(** **)**
 
-当该节点就绪时发出。在 :ref:`_ready<class_Node_method__ready>` 回调之后发出，遵循相同的规则。
+当该节点就绪时发出。在 :ref:`_ready<class_Node_private_method__ready>` 回调之后发出，遵循相同的规则。
 
 .. rst-class:: classref-item-separator
 
@@ -407,8 +411,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Node_ProcessMode:
 
@@ -608,8 +612,8 @@ enum **InternalMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Node_constant_NOTIFICATION_ENTER_TREE:
 
@@ -645,7 +649,7 @@ Constants
 
 **NOTIFICATION_READY** = ``13``
 
-当该节点就绪时接收到通知。见 :ref:`_ready<class_Node_method__ready>`\ 。
+当该节点就绪时接收到通知。见 :ref:`_ready<class_Node_private_method__ready>`\ 。
 
 .. _class_Node_constant_NOTIFICATION_PAUSED:
 
@@ -713,7 +717,7 @@ Constants
 
 当拖拽操作开始时收到的通知。所有节点都会收到此通知，而不仅仅是被拖动的节点。
 
-可以通过拖动提供拖动数据的 :ref:`Control<class_Control>`\ （见 :ref:`Control._get_drag_data<class_Control_method__get_drag_data>`\ ），或使用 :ref:`Control.force_drag<class_Control_method_force_drag>` 来触发。
+可以通过拖动提供拖动数据的 :ref:`Control<class_Control>`\ （见 :ref:`Control._get_drag_data<class_Control_private_method__get_drag_data>`\ ），或使用 :ref:`Control.force_drag<class_Control_method_force_drag>` 来触发。
 
 请使用 :ref:`Viewport.gui_get_drag_data<class_Viewport_method_gui_get_drag_data>` 获取拖动数据。
 
@@ -783,14 +787,6 @@ Constants
 
 当该节点被禁用后又再次被启用时收到的通知。见 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
 
-.. _class_Node_constant_NOTIFICATION_NODE_RECACHE_REQUESTED:
-
-.. rst-class:: classref-constant
-
-**NOTIFICATION_NODE_RECACHE_REQUESTED** = ``30``
-
-当树中的其他节点可能已经被移除 / 替换，节点指针可能需要重新缓存时，会收到通知。
-
 .. _class_Node_constant_NOTIFICATION_EDITOR_PRE_SAVE:
 
 .. rst-class:: classref-constant
@@ -813,9 +809,9 @@ Constants
 
 **NOTIFICATION_WM_MOUSE_ENTER** = ``1002``
 
-Notification received when the mouse enters the window.
+鼠标进入窗口时收到的通知。
 
-Implemented for embedded windows and on desktop and web platforms.
+为内嵌窗口实现，并在桌面和 Web 平台上实现。
 
 .. _class_Node_constant_NOTIFICATION_WM_MOUSE_EXIT:
 
@@ -823,9 +819,9 @@ Implemented for embedded windows and on desktop and web platforms.
 
 **NOTIFICATION_WM_MOUSE_EXIT** = ``1003``
 
-Notification received when the mouse leaves the window.
+鼠标离开窗口时收到的通知。
 
-Implemented for embedded windows and on desktop and web platforms.
+为内嵌窗口实现，并在桌面和 Web 平台上实现。
 
 .. _class_Node_constant_NOTIFICATION_WM_WINDOW_FOCUS_IN:
 
@@ -889,7 +885,7 @@ Implemented for embedded windows and on desktop and web platforms.
 
 **NOTIFICATION_VP_MOUSE_ENTER** = ``1010``
 
-Notification received when the mouse cursor enters the :ref:`Viewport<class_Viewport>`'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or :ref:`Window<class_Window>`\ s, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
+当鼠标指针进入 :ref:`Viewport<class_Viewport>` 的可见区域时收到的通知，可见区域指没有被其他 :ref:`Control<class_Control>` 和 :ref:`Window<class_Window>` 遮挡的区域，并且需要 :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` 为 ``false``\ ，与当前是否持有焦点无关。
 
 .. _class_Node_constant_NOTIFICATION_VP_MOUSE_EXIT:
 
@@ -897,7 +893,7 @@ Notification received when the mouse cursor enters the :ref:`Viewport<class_View
 
 **NOTIFICATION_VP_MOUSE_EXIT** = ``1011``
 
-Notification received when the mouse cursor leaves the :ref:`Viewport<class_Viewport>`'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or :ref:`Window<class_Window>`\ s, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
+当鼠标指针离开 :ref:`Viewport<class_Viewport>` 的可见区域时收到的通知，可见区域指没有被其他 :ref:`Control<class_Control>` 和 :ref:`Window<class_Window>` 遮挡的区域，并且需要 :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` 为 ``false``\ ，与当前是否持有焦点无关。
 
 .. _class_Node_constant_NOTIFICATION_OS_MEMORY_WARNING:
 
@@ -1001,8 +997,8 @@ Notification received when the mouse cursor leaves the :ref:`Viewport<class_View
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Node_property_editor_description:
 
@@ -1031,7 +1027,9 @@ Property Descriptions
 
 - :ref:`MultiplayerAPI<class_MultiplayerAPI>` **get_multiplayer** **(** **)**
 
-与此节点关联的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 实例。参见 :ref:`SceneTree.get_multiplayer<class_SceneTree_method_get_multiplayer>`\ 。
+与该节点关联的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 实例。见 :ref:`SceneTree.get_multiplayer<class_SceneTree_method_get_multiplayer>`\ 。
+
+\ **注意：**\ 将节点重命名或者在树中移动都不会将 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 移动至新的路径，你需要手动进行更新。
 
 .. rst-class:: classref-item-separator
 
@@ -1103,7 +1101,7 @@ Property Descriptions
 - void **set_physics_process_priority** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_physics_process_priority** **(** **)**
 
-与 :ref:`process_priority<class_Node_property_process_priority>` 类似，但是作用于 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_physics_process<class_Node_method__physics_process>` 以及内部版本。
+与 :ref:`process_priority<class_Node_property_process_priority>` 类似，但是作用于 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_physics_process<class_Node_private_method__physics_process>` 以及内部版本。
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1135,7 @@ Property Descriptions
 - void **set_process_thread_group** **(** :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` value **)**
 - :ref:`ProcessThreadGroup<enum_Node_ProcessThreadGroup>` **get_process_thread_group** **(** **)**
 
-设置这个节点的处理线程组（基本上就是在主线程还是子线程中接收 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ 、\ :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_process<class_Node_method__process>`\ 、\ :ref:`_physics_process<class_Node_method__physics_process>` 以及这些回调的内部版本）。
+设置这个节点的处理线程组（基本上就是在主线程还是子线程中接收 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ 、\ :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_process<class_Node_private_method__process>`\ 、\ :ref:`_physics_process<class_Node_private_method__physics_process>` 以及这些回调的内部版本）。
 
 默认情况下线程组为 :ref:`PROCESS_THREAD_GROUP_INHERIT<class_Node_constant_PROCESS_THREAD_GROUP_INHERIT>`\ ，表示这个节点属于和父节点一样的线程组。同一线程组中的节点会一起处理，独立于其他线程组（由 :ref:`process_thread_group_order<class_Node_property_process_thread_group_order>` 决定）。如果设为 :ref:`PROCESS_THREAD_GROUP_SUB_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_SUB_THREAD>`\ ，则该线程组会在子线程（非主线程）中执行，否则设为 :ref:`PROCESS_THREAD_GROUP_MAIN_THREAD<class_Node_constant_PROCESS_THREAD_GROUP_MAIN_THREAD>` 就会在主线程中处理。如果父节点和先祖节点都没有设置为非继承，则该节点属于\ *默认线程组*\ 。默认分组在主线程中处理，分组顺序为 0。
 
@@ -1221,38 +1219,38 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Node_method__enter_tree:
+.. _class_Node_private_method__enter_tree:
 
 .. rst-class:: classref-method
 
 void **_enter_tree** **(** **)** |virtual|
 
-当节点进入 :ref:`SceneTree<class_SceneTree>` 时调用（例如实例化时，场景改变时，或者在脚本中调用 :ref:`add_child<class_Node_method_add_child>` 后）。如果节点有子节点，则首先调用它的 :ref:`_enter_tree<class_Node_method__enter_tree>` 回调函数，然后再调用子节点的回调函数。
+当节点进入 :ref:`SceneTree<class_SceneTree>` 时调用（例如实例化时，场景改变时，或者在脚本中调用 :ref:`add_child<class_Node_method_add_child>` 后）。如果节点有子节点，则首先调用它的 :ref:`_enter_tree<class_Node_private_method__enter_tree>` 回调函数，然后再调用子节点的回调函数。
 
-对应于 :ref:`Object._notification<class_Object_method__notification>` 中的 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知。
+对应于 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_Node_method__exit_tree:
+.. _class_Node_private_method__exit_tree:
 
 .. rst-class:: classref-method
 
 void **_exit_tree** **(** **)** |virtual|
 
-当节点即将离开 :ref:`SceneTree<class_SceneTree>` 时被调用（例如，在释放、场景改变或在脚本中调用 :ref:`remove_child<class_Node_method_remove_child>` 后）。如果该节点有子节点，它的 :ref:`_exit_tree<class_Node_method__exit_tree>` 回调将在所有子节点离开树后被最后调用。
+当节点即将离开 :ref:`SceneTree<class_SceneTree>` 时被调用（例如，在释放、场景改变或在脚本中调用 :ref:`remove_child<class_Node_method_remove_child>` 后）。如果该节点有子节点，它的 :ref:`_exit_tree<class_Node_private_method__exit_tree>` 回调将在所有子节点离开树后被最后调用。
 
-对应于 :ref:`Object._notification<class_Object_method__notification>` 中的 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` 通知和 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 信号。要在节点已经离开活动树时得到通知，请连接到 :ref:`tree_exited<class_Node_signal_tree_exited>`\ 。
+对应于 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` 通知和 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 信号。要在节点已经离开活动树时得到通知，请连接到 :ref:`tree_exited<class_Node_signal_tree_exited>`\ 。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_Node_method__get_configuration_warnings:
+.. _class_Node_private_method__get_configuration_warnings:
 
 .. rst-class:: classref-method
 
@@ -1281,7 +1279,7 @@ void **_exit_tree** **(** **)** |virtual|
 
 ----
 
-.. _class_Node_method__input:
+.. _class_Node_private_method__input:
 
 .. rst-class:: classref-method
 
@@ -1293,7 +1291,7 @@ void **_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|
 
 要消耗输入事件，阻止它进一步传播到其他节点，可以调用 :ref:`Viewport.set_input_as_handled<class_Viewport_method_set_input_as_handled>`\ 。
 
-对于游戏输入，\ :ref:`_unhandled_input<class_Node_method__unhandled_input>` 和 :ref:`_unhandled_key_input<class_Node_method__unhandled_key_input>` 通常更适合，因为它们允许 GUI 首先拦截事件。
+对于游戏输入，\ :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 和 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` 通常更适合，因为它们允许 GUI 首先拦截事件。
 
 \ **注意：**\ 仅当该节点存在于场景树中时（即不是孤立节点），此方法才会被调用。
 
@@ -1301,7 +1299,7 @@ void **_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|
 
 ----
 
-.. _class_Node_method__physics_process:
+.. _class_Node_private_method__physics_process:
 
 .. rst-class:: classref-method
 
@@ -1311,7 +1309,7 @@ void **_physics_process** **(** :ref:`float<class_float>` delta **)** |virtual|
 
 只有当物理处理被启用时才会被调用，如果这个方法被重写，就会自动被调用，并且可以使用 :ref:`set_physics_process<class_Node_method_set_physics_process>` 进行切换。
 
-对应于 :ref:`Object._notification<class_Object_method__notification>` 中的 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` 通知。
+对应于 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` 通知。
 
 \ **注意：**\ 这个方法只有在当节点存在于场景树中时才会被调用（也就是说，如果它不是“孤儿”）。
 
@@ -1319,7 +1317,7 @@ void **_physics_process** **(** :ref:`float<class_float>` delta **)** |virtual|
 
 ----
 
-.. _class_Node_method__process:
+.. _class_Node_private_method__process:
 
 .. rst-class:: classref-method
 
@@ -1329,7 +1327,7 @@ void **_process** **(** :ref:`float<class_float>` delta **)** |virtual|
 
 只有在启用处理的情况下才会被调用，如果这个方法被重写，会自动进行处理，可以用 :ref:`set_process<class_Node_method_set_process>` 来开关。
 
-对应于 :ref:`Object._notification<class_Object_method__notification>` 中的 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 通知。
+对应于 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 通知。
 
 \ **注意：**\ 这个方法只有在节点存在于场景树中时才会被调用（也就是说，如果它不是“孤儿”）。
 
@@ -1337,81 +1335,81 @@ void **_process** **(** :ref:`float<class_float>` delta **)** |virtual|
 
 ----
 
-.. _class_Node_method__ready:
+.. _class_Node_private_method__ready:
 
 .. rst-class:: classref-method
 
 void **_ready** **(** **)** |virtual|
 
-当节点“就绪”时被调用，即当节点及其子节点都已经进入场景树时。如果该节点有子节点，将首先触发子节点的 :ref:`_ready<class_Node_method__ready>` 回调，稍后父节点将收到就绪通知。
+当节点“就绪”时被调用，即当节点及其子节点都已经进入场景树时。如果该节点有子节点，将首先触发子节点的 :ref:`_ready<class_Node_private_method__ready>` 回调，稍后父节点将收到就绪通知。
 
-对应 :ref:`Object._notification<class_Object_method__notification>` 中的 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 通知。另请参阅用于变量的 ``@onready`` 注解。
+对应 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 通知。另请参阅用于变量的 ``@onready`` 注解。
 
-通常用于初始化。对于更早的初始化，可以使用 :ref:`Object._init<class_Object_method__init>`\ 。另见 :ref:`_enter_tree<class_Node_method__enter_tree>`\ 。
+通常用于初始化。对于更早的初始化，可以使用 :ref:`Object._init<class_Object_private_method__init>`\ 。另见 :ref:`_enter_tree<class_Node_private_method__enter_tree>`\ 。
 
-\ **注意：**\ 对于每个节点可能仅调用一次 :ref:`_ready<class_Node_method__ready>`\ 。从场景树中移除一个节点后，并再次添加该节点时，将不会第二次调用 ``_ready``\ 。这时可以通过使用 :ref:`request_ready<class_Node_method_request_ready>`\ ，它可以在再次添加节点之前的任何地方被调用。
+\ **注意：**\ 对于每个节点可能仅调用一次 :ref:`_ready<class_Node_private_method__ready>`\ 。从场景树中移除一个节点后，并再次添加该节点时，将不会第二次调用 :ref:`_ready<class_Node_private_method__ready>`\ 。这时可以通过使用 :ref:`request_ready<class_Node_method_request_ready>`\ ，它可以在再次添加节点之前的任何地方被调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_Node_method__shortcut_input:
+.. _class_Node_private_method__shortcut_input:
 
 .. rst-class:: classref-method
 
 void **_shortcut_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|
 
-Called when an :ref:`InputEventKey<class_InputEventKey>` or :ref:`InputEventShortcut<class_InputEventShortcut>` hasn't been consumed by :ref:`_input<class_Node_method__input>` or any GUI :ref:`Control<class_Control>` item. It is called before :ref:`_unhandled_key_input<class_Node_method__unhandled_key_input>` and :ref:`_unhandled_input<class_Node_method__unhandled_input>`. The input event propagates up through the node tree until a node consumes it.
+当一个 :ref:`InputEventKey<class_InputEventKey>` 或 :ref:`InputEventShortcut<class_InputEventShortcut>`\ ，尚未被 :ref:`_input<class_Node_private_method__input>` 或任何 GUI :ref:`Control<class_Control>` 项使用时调用。这是在 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` 和 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 之前调用的。输入事件通过节点树向上传播，直到一个节点消耗它。
 
-It is only called if shortcut processing is enabled, which is done automatically if this method is overridden, and can be toggled with :ref:`set_process_shortcut_input<class_Node_method_set_process_shortcut_input>`.
+它仅在启用快捷键处理时调用，如果此方法被覆盖，则会自动调用，并且可以使用 :ref:`set_process_shortcut_input<class_Node_method_set_process_shortcut_input>` 进行开关。
 
-To consume the input event and stop it propagating further to other nodes, :ref:`Viewport.set_input_as_handled<class_Viewport_method_set_input_as_handled>` can be called.
+要消耗输入事件，并阻止它进一步传播到其他节点，可以调用 :ref:`Viewport.set_input_as_handled<class_Viewport_method_set_input_as_handled>`\ 。
 
-This method can be used to handle shortcuts. For generic GUI events, use :ref:`_input<class_Node_method__input>` instead. Gameplay events should usually be handled with either :ref:`_unhandled_input<class_Node_method__unhandled_input>` or :ref:`_unhandled_key_input<class_Node_method__unhandled_key_input>`.
+此方法可用于处理快捷键。如果是常规的 GUI 事件，请改用 :ref:`_input<class_Node_private_method__input>`\ 。游戏事件通常应该使用 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 或 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` 处理。
 
-\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not orphan).
+\ **注意：**\ 仅当该节点存在于场景树中（即它不是一个孤儿节点）时，此方法才会被调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_Node_method__unhandled_input:
+.. _class_Node_private_method__unhandled_input:
 
 .. rst-class:: classref-method
 
 void **_unhandled_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|
 
-Called when an :ref:`InputEvent<class_InputEvent>` hasn't been consumed by :ref:`_input<class_Node_method__input>` or any GUI :ref:`Control<class_Control>` item. It is called after :ref:`_shortcut_input<class_Node_method__shortcut_input>` and after :ref:`_unhandled_key_input<class_Node_method__unhandled_key_input>`. The input event propagates up through the node tree until a node consumes it.
+当一个 :ref:`InputEvent<class_InputEvent>` 尚未被 :ref:`_input<class_Node_private_method__input>` 或任何 GUI :ref:`Control<class_Control>` 项消耗时调用。这是在 :ref:`_shortcut_input<class_Node_private_method__shortcut_input>` 和 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` 之后调用的。输入事件通过节点树向上传播，直到一个节点消耗它。
 
-It is only called if unhandled input processing is enabled, which is done automatically if this method is overridden, and can be toggled with :ref:`set_process_unhandled_input<class_Node_method_set_process_unhandled_input>`.
+只有在未处理的输入处理被启用时，才会被调用，如果该方法被重写，则会自动被调用，并且可以使用 :ref:`set_process_unhandled_input<class_Node_method_set_process_unhandled_input>` 进行切换。
 
-To consume the input event and stop it propagating further to other nodes, :ref:`Viewport.set_input_as_handled<class_Viewport_method_set_input_as_handled>` can be called.
+要消耗输入事件，并阻止它进一步传播到其他节点，可以调用 :ref:`Viewport.set_input_as_handled<class_Viewport_method_set_input_as_handled>`\ 。
 
-For gameplay input, this method is usually a better fit than :ref:`_input<class_Node_method__input>`, as GUI events need a higher priority. For keyboard shortcuts, consider using :ref:`_shortcut_input<class_Node_method__shortcut_input>` instead, as it is called before this method. Finally, to handle keyboard events, consider using :ref:`_unhandled_key_input<class_Node_method__unhandled_key_input>` for performance reasons.
+对于游戏输入，这个方法通常比 :ref:`_input<class_Node_private_method__input>` 更合适，因为 GUI 事件需要更高的优先级。对于键盘快捷键，请考虑改用 :ref:`_shortcut_input<class_Node_private_method__shortcut_input>`\ ，因为是在这个方法之前调用的。最后，如果要处理键盘事件，那么出于性能方面的原因请考虑使用 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>`\ 。
 
-\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).
+\ **注意：**\ 仅当该节点存在于场景树中（即不是孤儿节点）时，该方法才会被调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_Node_method__unhandled_key_input:
+.. _class_Node_private_method__unhandled_key_input:
 
 .. rst-class:: classref-method
 
 void **_unhandled_key_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |virtual|
 
-Called when an :ref:`InputEventKey<class_InputEventKey>` hasn't been consumed by :ref:`_input<class_Node_method__input>` or any GUI :ref:`Control<class_Control>` item. It is called after :ref:`_shortcut_input<class_Node_method__shortcut_input>` but before :ref:`_unhandled_input<class_Node_method__unhandled_input>`. The input event propagates up through the node tree until a node consumes it.
+当 :ref:`InputEventKey<class_InputEventKey>` 没有被 :ref:`_input<class_Node_private_method__input>` 或任何 GUI :ref:`Control<class_Control>` 项目消耗时调用。这是在 :ref:`_shortcut_input<class_Node_private_method__shortcut_input>` 之后、\ :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 之前调用的。输入事件通过节点树向上传播，直到某个节点将其消耗。
 
-It is only called if unhandled key input processing is enabled, which is done automatically if this method is overridden, and can be toggled with :ref:`set_process_unhandled_key_input<class_Node_method_set_process_unhandled_key_input>`.
+只有在启用了未处理按键输入处理时才会被调用，如果覆盖了这个方法就会自动启用，并且可以用 :ref:`set_process_unhandled_key_input<class_Node_method_set_process_unhandled_key_input>` 来开关。
 
-To consume the input event and stop it propagating further to other nodes, :ref:`Viewport.set_input_as_handled<class_Viewport_method_set_input_as_handled>` can be called.
+要消耗输入事件并阻止它进一步传播到其他节点，可以调用 :ref:`Viewport.set_input_as_handled<class_Viewport_method_set_input_as_handled>`\ 。
 
-This method can be used to handle Unicode character input with :kbd:`Alt`, :kbd:`Alt + Ctrl`, and :kbd:`Alt + Shift` modifiers, after shortcuts were handled.
+在处理快捷键后，此方法可用于使用 :kbd:`Alt`\ 、\ :kbd:`Alt + Ctrl` 和 :kbd:`Alt + Shift` 修饰符处理 Unicode 字符输入。
 
-For gameplay input, this and :ref:`_unhandled_input<class_Node_method__unhandled_input>` are usually a better fit than :ref:`_input<class_Node_method__input>`, as GUI events should be handled first. This method also performs better than :ref:`_unhandled_input<class_Node_method__unhandled_input>`, since unrelated events such as :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` are automatically filtered. For shortcuts, consider using :ref:`_shortcut_input<class_Node_method__shortcut_input>` instead.
+对于游戏输入，这和 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 通常比 :ref:`_input<class_Node_private_method__input>` 更适合，因为应该先处理 GUI 事件。该方法的性能也比 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 更好，因为 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 等无关事件会被自动过滤。
 
-\ **Note:** This method is only called if the node is present in the scene tree (i.e. if it's not an orphan).
+\ **注意：**\ 只有当节点存在于场景树中（即不是孤儿节点）时，该方法才会被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -1500,7 +1498,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Variant<class_Variant>` **call_deferred_thread_group** **(** :ref:`StringName<class_StringName>` method, ... **)** |vararg|
 
-这个函数类似于 :ref:`Object.call_deferred<class_Object_method_call_deferred>`\ ，但是会在处理节点线程组时进行调用。如果节点线程组在子线程中处理，那么调用就会在该线程中进行，时机为 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 和 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_process<class_Node_method__process>` 和 :ref:`_physics_process<class_Node_method__physics_process>`\ ，或者对应的内部版本之前。
+这个函数类似于 :ref:`Object.call_deferred<class_Object_method_call_deferred>`\ ，但是会在处理节点线程组时进行调用。如果节点线程组在子线程中处理，那么调用就会在该线程中进行，时机为 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 和 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 、\ :ref:`_process<class_Node_private_method__process>` 和 :ref:`_physics_process<class_Node_private_method__physics_process>`\ ，或者对应的内部版本之前。
 
 .. rst-class:: classref-item-separator
 
@@ -1567,7 +1565,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 可以使用 ``flags`` 微调该行为（请参阅 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`\ ）。
 
-\ **注意：**\ 如果节点包含一个带有构造参数的脚本（即需要向 :ref:`Object._init<class_Object_method__init>` 方法提供参数），它将无法正常工作。在这种情况下，节点将在没有脚本的情况下被复制。
+\ **注意：**\ 如果节点包含一个带有构造参数的脚本（即需要向 :ref:`Object._init<class_Object_private_method__init>` 方法提供参数），它将无法正常工作。在这种情况下，节点将在没有脚本的情况下被复制。
 
 .. rst-class:: classref-item-separator
 
@@ -1679,7 +1677,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 返回一组对节点子节点的引用。
 
-如果 ``include_internal`` 为 ``false``\ ，则返回的数组将不包含内部子节点（请参阅 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+如果 ``include_internal`` 为 ``false``\ ，则返回的数组将不包含内部子节点（见 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
 
 .. rst-class:: classref-item-separator
 
@@ -1732,7 +1730,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 返回节点在场景树分支中的顺序。例如，如果在第一个子节点上调用，则位置为 ``0``\ 。
 
-如果 ``include_internal`` 为 ``false``\ ，则索引将不会考虑内部子节点，即第一个非内部子节点的索引将为 0（请参阅 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+如果 ``include_internal`` 为 ``false``\ ，则索引将不会考虑内部子节点，即第一个非内部子节点的索引将为 0（见 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
 
 .. rst-class:: classref-item-separator
 
@@ -1873,7 +1871,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`NodePath<class_NodePath>` **get_path** **(** **)** |const|
 
-返回当前节点的绝对路径。这只在当前节点在场景树中起作用（请参阅 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ ）。
+返回当前节点的绝对路径。这只在当前节点在场景树中起作用（见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1901,7 +1899,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`float<class_float>` **get_physics_process_delta_time** **(** **)** |const|
 
-返回自上一个物理绑定帧以来经过的时间（单位为秒）（参见 :ref:`_physics_process<class_Node_method__physics_process>`\ ）。除非通过 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 更改每秒帧数，否则这在物理处理中始终是一个恒定值。
+返回自上一个物理绑定帧以来经过的时间（单位为秒）（见 :ref:`_physics_process<class_Node_private_method__physics_process>`\ ）。除非通过 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 更改每秒帧数，否则这在物理处理中始终是一个恒定值。
 
 .. rst-class:: classref-item-separator
 
@@ -1937,7 +1935,53 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`SceneTree<class_SceneTree>` **get_tree** **(** **)** |const|
 
-返回包含该节点的 :ref:`SceneTree<class_SceneTree>`\ 。
+返回包含该节点的 :ref:`SceneTree<class_SceneTree>`\ 。如果该节点不在场景树内，则返回 ``null`` 并打印错误。另见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Node_method_get_tree_string:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_tree_string** **(** **)**
+
+将树以 :ref:`String<class_String>` 的形式返回。主要用于调试。这个版本显示相对于当前节点的路径，适合复制/粘贴到 :ref:`get_node<class_Node_method_get_node>` 函数中。也可以用于游戏中的 UI/UX。
+
+\ **示例输出：**\ 
+
+::
+
+    TheGame
+    TheGame/Menu
+    TheGame/Menu/Label
+    TheGame/Menu/Camera2D
+    TheGame/SplashScreen
+    TheGame/SplashScreen/Camera2D
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Node_method_get_tree_string_pretty:
+
+.. rst-class:: classref-method
+
+:ref:`String<class_String>` **get_tree_string_pretty** **(** **)**
+
+类似于 :ref:`get_tree_string<class_Node_method_get_tree_string>`\ ，会将树以 :ref:`String<class_String>` 的形式返回。这个版本使用的是一种更加图形化的呈现方式，类似于在“场景”面板中显示的内容。非常适合检查较大的树。
+
+\ **输出示例：**\ 
+
+::
+
+     ┖╴TheGame
+        ┠╴Menu
+        ┃  ┠╴Label
+        ┃  ┖╴Camera2D
+        ┖╴SplashScreen
+           ┖╴Camera2D
 
 .. rst-class:: classref-item-separator
 
@@ -2387,7 +2431,7 @@ void **replace_by** **(** :ref:`Node<class_Node>` node, :ref:`bool<class_bool>` 
 
 void **request_ready** **(** **)**
 
-请求再次调用 ``_ready``\ 。注意，该方法不会被立即调用，而是被安排在该节点再次被添加到场景树时（见 :ref:`_ready<class_Node_method__ready>`\ ）。\ ``_ready`` 只为请求它的节点调用，这意味着如果你想让每个子节点也调用 ``_ready``\ ，你需要为它们请求 ready（在这种情况下，\ ``_ready`` 的调用顺序与正常情况下相同）。
+请求再次调用 :ref:`_ready<class_Node_private_method__ready>`\ 。注意，该方法不会被立即调用，而是被安排在该节点再次被添加到场景树时。只会为进行了请求的节点调用 :ref:`_ready<class_Node_private_method__ready>`\ ，也就是说，如果你想让每个子节点都调用 :ref:`_ready<class_Node_private_method__ready>`\ ，就需要为它们分别进行就绪请求（在这种情况下，\ :ref:`_ready<class_Node_private_method__ready>` 的调用顺序与正常情况下相同）。
 
 .. rst-class:: classref-item-separator
 
@@ -2484,9 +2528,9 @@ void **set_editable_instance** **(** :ref:`Node<class_Node>` node, :ref:`bool<cl
 
 void **set_multiplayer_authority** **(** :ref:`int<class_int>` id, :ref:`bool<class_bool>` recursive=true **)**
 
-Sets the node's multiplayer authority to the peer with the given peer ID. The multiplayer authority is the peer that has authority over the node on the network. Useful in conjunction with :ref:`rpc_config<class_Node_method_rpc_config>` and the :ref:`MultiplayerAPI<class_MultiplayerAPI>`. Defaults to peer ID 1 (the server). If ``recursive``, the given peer is recursively set as the authority for all children of this node.
+将该节点的多人游戏控制方设置为具有给定对等体 ID 的对等体。多人游戏控制方是对网络上的节点具有控制权限的对等体。可以与 :ref:`rpc_config<class_Node_method_rpc_config>` 和 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 结合使用。默认为对等体 ID 1（服务器）。如果 ``recursive``\ ，则给定的对等体会被递归设置为该节点所有子节点的控制方。
 
-\ **Warning:** This does **not** automatically replicate the new authority to other peers. It is developer's responsibility to do so. You can propagate the information about the new authority using :ref:`MultiplayerSpawner.spawn_function<class_MultiplayerSpawner_property_spawn_function>`, an RPC, or using a :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>`. Also, the parent's authority does **not** propagate to newly added children.
+\ **警告：**\ 这样做\ **不会**\ 自动将新的控制方复制给其他对等体。开发者需要自己负责。你可以使用 :ref:`MultiplayerSpawner.spawn_function<class_MultiplayerSpawner_property_spawn_function>`\ 、RPC、\ :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 等方法将这个信息传播出去。另外，父节点的控制方\ **不会**\ 传播给新添加的子节点。
 
 .. rst-class:: classref-item-separator
 
@@ -2498,7 +2542,7 @@ Sets the node's multiplayer authority to the peer with the given peer ID. The mu
 
 void **set_physics_process** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用物理（即固定帧率）处理。当一个节点正在被处理时，它会在一个固定的（通常是 60 FPS，参见 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 以更改）时间间隔，接收一个 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` （如果存在 :ref:`_physics_process<class_Node_method__physics_process>` 回调，该回调将被调用）。如果 :ref:`_physics_process<class_Node_method__physics_process>` 被重写，则自动被启用。在 :ref:`_ready<class_Node_method__ready>` 之前对该函数的任何调用，都将被忽略。
+启用或禁用物理（即固定帧率）处理。当一个节点正在被处理时，它会在一个固定的（通常是 60 FPS，参见 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 以更改）时间间隔，接收一个 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` （如果存在 :ref:`_physics_process<class_Node_private_method__physics_process>` 回调，该回调将被调用）。如果 :ref:`_physics_process<class_Node_private_method__physics_process>` 被重写，则自动被启用。在 :ref:`_ready<class_Node_private_method__ready>` 之前对该函数的任何调用，都将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2510,7 +2554,7 @@ void **set_physics_process** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_physics_process_internal** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用该节点的内部物理。内部物理处理与正常的 :ref:`_physics_process<class_Node_method__physics_process>` 调用隔离进行，并且由某些节点内部使用，以确保正常工作，即使节点暂停或物理处理因脚本而禁用（\ :ref:`set_physics_process<class_Node_method_set_physics_process>`\ ）。仅适用于用于操纵内置节点行为的高级用途。
+启用或禁用该节点的内部物理。内部物理处理与正常的 :ref:`_physics_process<class_Node_private_method__physics_process>` 调用隔离进行，并且由某些节点内部使用，以确保正常工作，即使节点暂停或物理处理因脚本而禁用（\ :ref:`set_physics_process<class_Node_method_set_physics_process>`\ ）。仅适用于用于操纵内置节点行为的高级用途。
 
 \ **警告：**\ 内置节点依靠内部处理来实现自己的逻辑，所以从你的代码中改变这个值可能会导致意外的行为。为特定的高级用途提供了对此内部逻辑的脚本访问，但不安全且不支持。
 
@@ -2524,7 +2568,7 @@ void **set_physics_process_internal** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用帧处理。当一个节点被处理时，它将在每个绘制的帧上收到一个\ :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ （如果存在，\ :ref:`_process<class_Node_method__process>`\ 回调将被调用）。如果\ :ref:`_process<class_Node_method__process>`\ 被重写，则自动启用。在 :ref:`_ready<class_Node_method__ready>` 之前对它的任何调用都将被忽略。
+启用或禁用帧处理。当一个节点被处理时，它将在每个绘制的帧上收到一个\ :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ （如果存在，\ :ref:`_process<class_Node_private_method__process>`\ 回调将被调用）。如果\ :ref:`_process<class_Node_private_method__process>`\ 被重写，则自动启用。在 :ref:`_ready<class_Node_private_method__ready>` 之前对它的任何调用都将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2536,7 +2580,7 @@ void **set_process** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_input** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用输入处理。对于 GUI 控件来说不是必需的。如果 :ref:`_input<class_Node_method__input>` 被覆盖，则自动启用。任何在 :ref:`_ready<class_Node_method__ready>` 之前对它的调用都将被忽略。
+启用或禁用输入处理。对于 GUI 控件来说不是必需的。如果 :ref:`_input<class_Node_private_method__input>` 被覆盖，则自动启用。任何在 :ref:`_ready<class_Node_private_method__ready>` 之前对它的调用都将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2548,7 +2592,7 @@ void **set_process_input** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_internal** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用此节点的内部处理。内部处理与正常的 :ref:`_process<class_Node_method__process>` 调用隔离进行，并且由某些节点内部使用，以确保正常工作，即使节点已暂停或处理因脚本而禁用（\ :ref:`set_process<class_Node_method_set_process>`\ ）。仅适用于操纵内置节点行为的高级用途。
+启用或禁用此节点的内部处理。内部处理与正常的 :ref:`_process<class_Node_private_method__process>` 调用隔离进行，并且由某些节点内部使用，以确保正常工作，即使节点已暂停或处理因脚本而禁用（\ :ref:`set_process<class_Node_method_set_process>`\ ）。仅适用于操纵内置节点行为的高级用途。
 
 \ **警告：**\ 内置节点依赖于内部处理来实现自己的逻辑，因此更改代码中的这个值可能会导致意外行为。为特定的高级用途提供了对此内部逻辑的脚本访问，但不安全且不支持。
 
@@ -2562,7 +2606,7 @@ void **set_process_internal** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_shortcut_input** **(** :ref:`bool<class_bool>` enable **)**
 
-启用快捷键处理。如果 :ref:`_shortcut_input<class_Node_method__shortcut_input>` 被覆盖，则自动启用。在 :ref:`_ready<class_Node_method__ready>` 之前对此的任何调用都将被忽略。
+启用快捷键处理。如果 :ref:`_shortcut_input<class_Node_private_method__shortcut_input>` 被覆盖，则自动启用。在 :ref:`_ready<class_Node_private_method__ready>` 之前对此的任何调用都将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2574,7 +2618,7 @@ void **set_process_shortcut_input** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_unhandled_input** **(** :ref:`bool<class_bool>` enable **)**
 
-启用未处理的输入处理。这对 GUI 控件来说是不需要的！它使节点能够接收所有以前没有处理的输入（通常是由 :ref:`Control<class_Control>` 处理的）。如果 :ref:`_unhandled_input<class_Node_method__unhandled_input>` 被覆盖，则自动启用。在 :ref:`_ready<class_Node_method__ready>` 之前对它的任何调用都将被忽略。
+启用未处理的输入处理。这对 GUI 控件来说是不需要的！它使节点能够接收所有以前没有处理的输入（通常是由 :ref:`Control<class_Control>` 处理的）。如果 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 被覆盖，则自动启用。在 :ref:`_ready<class_Node_private_method__ready>` 之前对它的任何调用都将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2586,7 +2630,7 @@ void **set_process_unhandled_input** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_unhandled_key_input** **(** :ref:`bool<class_bool>` enable **)**
 
-启用未处理的按键输入处理。如果 :ref:`_unhandled_key_input<class_Node_method__unhandled_key_input>` 被重写，则自动启用。任何在 :ref:`_ready<class_Node_method__ready>` 之前对它的调用都将被忽略。
+启用未处理的按键输入处理。如果 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` 被重写，则自动启用。任何在 :ref:`_ready<class_Node_private_method__ready>` 之前对它的调用都将被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -2624,12 +2668,12 @@ void **update_configuration_warnings** **(** **)**
 
 更新在场景面板中为该节点显示的警告。
 
-使用 :ref:`_get_configuration_warnings<class_Node_method__get_configuration_warnings>` 配置要显示的警告消息。
+使用 :ref:`_get_configuration_warnings<class_Node_private_method__get_configuration_warnings>` 配置要显示的警告消息。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 NavigationMeshGenerator
 =======================
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 对导航网格进行创建和清理的辅助类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该类负责创建和清除用作 :ref:`NavigationRegion3D<class_NavigationRegion3D>` 内的 :ref:`NavigationMesh<class_NavigationMesh>` 资源的 3D 导航网格。\ **NavigationMeshGenerator** 在 2D 中的用途非常有限，因为导航网格烘焙过程需要 3D 节点类型和 3D 源几何体来解析。
 
@@ -31,15 +31,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 NavigationMesh <../tutorials/navigation/navigation_using_navigationmeshes>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationMeshGenerator_method_bake:
 
@@ -111,10 +111,10 @@ void **parse_source_geometry_data** **(** :ref:`NavigationMesh<class_NavigationM
 
 \ **注意：**\ 从 :ref:`Mesh<class_Mesh>` 资源读取数据数组虽然很方便，但会对帧率造成负面影响。这些数据需要从 GPU 获取，卡住正在处理的 :ref:`RenderingServer<class_RenderingServer>`\ 。出于性能考量，请优先使用碰撞形状或在代码中创建完整的数据数组等方法。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

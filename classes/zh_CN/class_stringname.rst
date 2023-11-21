@@ -14,8 +14,8 @@ StringName
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **StringName** 是不可变的字符串，用于唯一名称的通用表示（也叫“字符串内嵌”）。值相同的两个 **StringName** 是同一个对象。进行比较时比普通 :ref:`String<class_String>` 要快很多。
 
@@ -29,8 +29,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -251,8 +251,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -287,8 +287,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_StringName_constructor_StringName:
 
@@ -324,8 +324,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_StringName_method_begins_with:
 
@@ -1309,7 +1309,7 @@ Method Descriptions
 
 :ref:`String<class_String>` **reverse** **(** **)** |const|
 
-Returns the copy of this string in reverse order.
+返回将这个字符串逆序后的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -1906,8 +1906,8 @@ Returns the copy of this string in reverse order.
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_StringName_operator_neq_String:
 
@@ -2041,10 +2041,10 @@ Operator Descriptions
 
 如果左侧的 **StringName** 的指针比 ``right`` 靠后或相同，则返回 ``true``\ 。注意，这与 `Unicode 顺序 <https://zh.wikipedia.org/wiki/Unicode%E5%AD%97%E7%AC%A6%E5%88%97%E8%A1%A8>`__\ 是不同的。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

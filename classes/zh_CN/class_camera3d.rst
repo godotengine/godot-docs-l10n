@@ -10,30 +10,30 @@
 Camera3D
 ========
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`XRCamera3D<class_XRCamera3D>`
+**派生：** :ref:`XRCamera3D<class_XRCamera3D>`
 
 相机节点，会从某个角度进行显示。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **Camera3D** 是一个特殊节点，用于显示从其当前位置可见的内容。相机在最近的 :ref:`Viewport<class_Viewport>` 节点中注册自己（当树上行）。每个视口中只能有一个激活的相机。如果在树上没有可用的视口，相机将在全局视口中注册。换句话说，相机只是用来为 :ref:`Viewport<class_Viewport>` 提供 3D 显示能力的，如果没有，则在该 :ref:`Viewport<class_Viewport>`\ （或更高层视口）中注册的场景无法显示。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `第三人称射击演示 <https://godotengine.org/asset-library/asset/678>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -70,8 +70,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -122,8 +122,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Camera3D_ProjectionType:
 
@@ -221,8 +221,8 @@ enum **DopplerTracking**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Camera3D_property_attributes:
 
@@ -345,7 +345,7 @@ Property Descriptions
 - void **set_fov** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_fov** **(** **)**
 
-相机的视野角度（单位为度）。仅适用于透视模式。由于 :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` 锁定一个轴，因此 ``fov`` 设置另一个轴的视角。
+相机的视野角度（单位为度）。仅适用于透视模式。由于 :ref:`keep_aspect<class_Camera3D_property_keep_aspect>` 锁定一个轴，因此 :ref:`fov<class_Camera3D_property_fov>` 设置另一个轴的视角。
 
 作为参考，默认的垂直视野值（\ ``70.0``\ ）相当于以下水平 FOV：
 
@@ -484,8 +484,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Camera3D_method_clear_current:
 
@@ -577,9 +577,9 @@ void **clear_current** **(** :ref:`bool<class_bool>` enable_next=true **)**
 
 :ref:`bool<class_bool>` **is_position_behind** **(** :ref:`Vector3<class_Vector3>` world_point **)** |const|
 
-Returns ``true`` if the given position is behind the camera (the blue part of the linked diagram). `See this diagram <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__ for an overview of position query methods.
+如果给定位置在相机后面（链接图的蓝色部分），则返回 ``true``\ 。\ `查看此图 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__\ 以了解位置查询方法的概述。
 
-\ **Note:** A position which returns ``false`` may still be outside the camera's field of view.
+\ **注意：**\ 返回 ``false`` 的位置可能仍然在相机的视野之外。
 
 .. rst-class:: classref-item-separator
 
@@ -591,7 +591,7 @@ Returns ``true`` if the given position is behind the camera (the blue part of th
 
 :ref:`bool<class_bool>` **is_position_in_frustum** **(** :ref:`Vector3<class_Vector3>` world_point **)** |const|
 
-Returns ``true`` if the given position is inside the camera's frustum (the green part of the linked diagram). `See this diagram <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__ for an overview of position query methods.
+如果给定位置在相机的视锥内（位于链接图中的绿色部分），则返回 ``true``\ 。\ `查看此图 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/camera3d_position_frustum.png>`__\ 以了解位置查询方法的概述。
 
 .. rst-class:: classref-item-separator
 
@@ -675,7 +675,7 @@ void **set_cull_mask_value** **(** :ref:`int<class_int>` layer_number, :ref:`boo
 
 void **set_frustum** **(** :ref:`float<class_float>` size, :ref:`Vector2<class_Vector2>` offset, :ref:`float<class_float>` z_near, :ref:`float<class_float>` z_far **)**
 
-通过指定的以世界空间单位为单位的 ``size``\ 、\ ``offset``\ 、以及 ``z_near`` 和 ``z_far`` 裁剪平面，将相机投影设置为视锥模式（参见 :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`\ ）。另请参见 :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`\ 。
+通过指定的以世界空间单位为单位的 ``size``\ 、\ ``offset``\ 、以及 ``z_near`` 和 ``z_far`` 裁剪平面，将相机投影设置为视锥模式（见 :ref:`PROJECTION_FRUSTUM<class_Camera3D_constant_PROJECTION_FRUSTUM>`\ ）。另见 :ref:`frustum_offset<class_Camera3D_property_frustum_offset>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -722,10 +722,10 @@ void **set_perspective** **(** :ref:`float<class_float>` fov, :ref:`float<class_
     control.visible = not get_viewport().get_camera_3d().is_position_behind(global_transform.origin)
     control.position = get_viewport().get_camera_3d().unproject_position(global_transform.origin)
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

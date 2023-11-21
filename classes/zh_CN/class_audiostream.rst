@@ -10,23 +10,23 @@
 AudioStream
 ===========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AudioStreamGenerator<class_AudioStreamGenerator>`, :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, :ref:`AudioStreamMP3<class_AudioStreamMP3>`, :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`, :ref:`AudioStreamPolyphonic<class_AudioStreamPolyphonic>`, :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`, :ref:`AudioStreamWAV<class_AudioStreamWAV>`
+**派生：** :ref:`AudioStreamGenerator<class_AudioStreamGenerator>`, :ref:`AudioStreamMicrophone<class_AudioStreamMicrophone>`, :ref:`AudioStreamMP3<class_AudioStreamMP3>`, :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`, :ref:`AudioStreamPolyphonic<class_AudioStreamPolyphonic>`, :ref:`AudioStreamRandomizer<class_AudioStreamRandomizer>`, :ref:`AudioStreamWAV<class_AudioStreamWAV>`
 
 音频流的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 音频流的基类。音频流用于播放音效和音乐，支持 WAV（通过 :ref:`AudioStreamWAV<class_AudioStreamWAV>`\ ）和 Ogg（通过 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>`\ ）文件格式。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`音频流 <../tutorials/audio/audio_streams>`
 
@@ -38,31 +38,31 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                                 | :ref:`_get_beat_count<class_AudioStream_method__get_beat_count>` **(** **)** |virtual| |const|             |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                             | :ref:`_get_bpm<class_AudioStream_method__get_bpm>` **(** **)** |virtual| |const|                           |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                             | :ref:`_get_length<class_AudioStream_method__get_length>` **(** **)** |virtual| |const|                     |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                           | :ref:`_get_stream_name<class_AudioStream_method__get_stream_name>` **(** **)** |virtual| |const|           |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` | :ref:`_instantiate_playback<class_AudioStream_method__instantiate_playback>` **(** **)** |virtual| |const| |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                               | :ref:`_is_monophonic<class_AudioStream_method__is_monophonic>` **(** **)** |virtual| |const|               |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`float<class_float>`                             | :ref:`get_length<class_AudioStream_method_get_length>` **(** **)** |const|                                 |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` | :ref:`instantiate_playback<class_AudioStream_method_instantiate_playback>` **(** **)**                     |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                               | :ref:`is_monophonic<class_AudioStream_method_is_monophonic>` **(** **)** |const|                           |
-   +-------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                 | :ref:`_get_beat_count<class_AudioStream_private_method__get_beat_count>` **(** **)** |virtual| |const|             |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                             | :ref:`_get_bpm<class_AudioStream_private_method__get_bpm>` **(** **)** |virtual| |const|                           |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                             | :ref:`_get_length<class_AudioStream_private_method__get_length>` **(** **)** |virtual| |const|                     |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                           | :ref:`_get_stream_name<class_AudioStream_private_method__get_stream_name>` **(** **)** |virtual| |const|           |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` | :ref:`_instantiate_playback<class_AudioStream_private_method__instantiate_playback>` **(** **)** |virtual| |const| |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                               | :ref:`_is_monophonic<class_AudioStream_private_method__is_monophonic>` **(** **)** |virtual| |const|               |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`float<class_float>`                             | :ref:`get_length<class_AudioStream_method_get_length>` **(** **)** |const|                                         |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` | :ref:`instantiate_playback<class_AudioStream_method_instantiate_playback>` **(** **)**                             |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                               | :ref:`is_monophonic<class_AudioStream_method_is_monophonic>` **(** **)** |const|                                   |
+   +-------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -70,10 +70,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_AudioStream_method__get_beat_count:
+.. _class_AudioStream_private_method__get_beat_count:
 
 .. rst-class:: classref-method
 
@@ -81,13 +81,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStream_method__get_bpm:
+.. _class_AudioStream_private_method__get_bpm:
 
 .. rst-class:: classref-method
 
@@ -95,13 +95,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStream_method__get_length:
+.. _class_AudioStream_private_method__get_length:
 
 .. rst-class:: classref-method
 
@@ -109,13 +109,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStream_method__get_stream_name:
+.. _class_AudioStream_private_method__get_stream_name:
 
 .. rst-class:: classref-method
 
@@ -123,13 +123,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStream_method__instantiate_playback:
+.. _class_AudioStream_private_method__instantiate_playback:
 
 .. rst-class:: classref-method
 
@@ -137,13 +137,13 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AudioStream_method__is_monophonic:
+.. _class_AudioStream_private_method__is_monophonic:
 
 .. rst-class:: classref-method
 
@@ -151,7 +151,7 @@ Method Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ Method Descriptions
 
 :ref:`AudioStreamPlayback<class_AudioStreamPlayback>` **instantiate_playback** **(** **)**
 
-返回一个 AudioStreamPlayback。当想要扩展 :ref:`_instantiate_playback<class_AudioStream_method__instantiate_playback>`\ ，但从一个内部持有的 AudioStream 子资源调用 :ref:`instantiate_playback<class_AudioStream_method_instantiate_playback>` 时很有用。在 ``AudioStreamRandomPitch::instantiate_playback`` 的源文件中可以找到这方面的示例。
+返回一个 AudioStreamPlayback。当想要扩展 :ref:`_instantiate_playback<class_AudioStream_private_method__instantiate_playback>`\ ，但从一个内部持有的 AudioStream 子资源调用 :ref:`instantiate_playback<class_AudioStream_method_instantiate_playback>` 时很有用。在 ``AudioStreamRandomPitch::instantiate_playback`` 的源文件中可以找到这方面的示例。
 
 .. rst-class:: classref-item-separator
 
@@ -189,10 +189,10 @@ Method Descriptions
 
 如果该音频流仅支持单声道播放，则返回 true；如果音频流支持复调，则返回 false。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

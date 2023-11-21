@@ -10,41 +10,43 @@
 ResourceImporterBMFont
 ======================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports a bitmap font in the BMFont (``.fnt``) format.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-The BMFont format is a format created by the `BMFont <https://www.angelcode.com/products/bmfont/>`__ program. Many BMFont-compatible programs also exist, like `BMGlyph <https://www.bmglyph.com/>`__.
-
-Compared to :ref:`ResourceImporterImageFont<class_ResourceImporterImageFont>`, **ResourceImporterBMFont** supports bitmap fonts with varying glyph widths/heights.
-
-See also :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`.
+导入 BMFont（\ ``.fnt``\ ）格式的位图字体。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `Bitmap fonts - Using fonts <../tutorials/ui/gui_using_fonts.html#bitmap-fonts>`__
+BMFont 格式是由 `BMFont <https://www.angelcode.com/products/bmfont/>`__ 程序创建的格式。也存在许多与 BMFont 兼容的程序，例如 `BMGlyph <https://www.bmglyph.com/>`__\ 。
+
+与 :ref:`ResourceImporterImageFont<class_ResourceImporterImageFont>` 相比，\ **ResourceImporterBMFont** 能够支持不同字形宽高的位图字体。
+
+另见 :ref:`ResourceImporterDynamicFont<class_ResourceImporterDynamicFont>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- `位图字体——使用字体 <../tutorials/ui/gui_using_fonts.html#bitmap-fonts>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
-   +---------------------------+-------------------------------------------------------------------+----------+
-   | :ref:`bool<class_bool>`   | :ref:`compress<class_ResourceImporterBMFont_property_compress>`   | ``true`` |
-   +---------------------------+-------------------------------------------------------------------+----------+
-   | :ref:`Array<class_Array>` | :ref:`fallbacks<class_ResourceImporterBMFont_property_fallbacks>` | ``[]``   |
-   +---------------------------+-------------------------------------------------------------------+----------+
+   +---------------------------+-------------------------------------------------------------------------+----------+
+   | :ref:`bool<class_bool>`   | :ref:`compress<class_ResourceImporterBMFont_property_compress>`         | ``true`` |
+   +---------------------------+-------------------------------------------------------------------------+----------+
+   | :ref:`Array<class_Array>` | :ref:`fallbacks<class_ResourceImporterBMFont_property_fallbacks>`       | ``[]``   |
+   +---------------------------+-------------------------------------------------------------------------+----------+
+   | :ref:`int<class_int>`     | :ref:`scaling_mode<class_ResourceImporterBMFont_property_scaling_mode>` | ``2``    |
+   +---------------------------+-------------------------------------------------------------------------+----------+
 
 .. rst-class:: classref-section-separator
 
@@ -52,8 +54,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ResourceImporterBMFont_property_compress:
 
@@ -61,7 +63,7 @@ Property Descriptions
 
 :ref:`bool<class_bool>` **compress** = ``true``
 
-If ``true``, uses lossless compression for the resulting font.
+如果为 ``true``\ ，则会对得到的字体使用无损压缩。
 
 .. rst-class:: classref-item-separator
 
@@ -73,12 +75,24 @@ If ``true``, uses lossless compression for the resulting font.
 
 :ref:`Array<class_Array>` **fallbacks** = ``[]``
 
-List of font fallbacks to use if a glyph isn't found in this bitmap font. Fonts at the beginning of the array are attempted first.
+回退字体列表，在这个位图字体中未找到某个字形时使用。优先尝试靠前的字体。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_ResourceImporterBMFont_property_scaling_mode:
+
+.. rst-class:: classref-property
+
+:ref:`int<class_int>` **scaling_mode** = ``2``
+
+字体缩放模式。
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

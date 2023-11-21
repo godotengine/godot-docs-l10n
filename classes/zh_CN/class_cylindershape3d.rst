@@ -10,25 +10,25 @@
 CylinderShape3D
 ===============
 
-**Inherits:** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于物理碰撞的 3D 圆柱体形状。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A 3D cylinder shape, intended for use in physics. Usually used to provide a shape for a :ref:`CollisionShape3D<class_CollisionShape3D>`.
+3D 圆柱体形状，旨在用于物理学。通常用于为 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形状。
 
-\ **Note:** There are several known bugs with cylinder collision shapes. Using :ref:`CapsuleShape3D<class_CapsuleShape3D>` or :ref:`BoxShape3D<class_BoxShape3D>` instead is recommended.
+\ **注意：**\ 圆柱体碰撞形状有若干已知的问题。建议改用 :ref:`CapsuleShape3D<class_CapsuleShape3D>` 或 :ref:`BoxShape3D<class_BoxShape3D>`\ 。
 
-\ **Performance:** **CylinderShape3D** is fast to check collisions against, but it is slower than :ref:`CapsuleShape3D<class_CapsuleShape3D>`, :ref:`BoxShape3D<class_BoxShape3D>`, and :ref:`SphereShape3D<class_SphereShape3D>`.
+\ **性能：**\ **CylinderShape3D** 可以快速检查碰撞，但比 :ref:`CapsuleShape3D<class_CapsuleShape3D>`\ 、\ :ref:`BoxShape3D<class_BoxShape3D>` 和 :ref:`SphereShape3D<class_SphereShape3D>` 慢。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `第三人称射击演示 <https://godotengine.org/asset-library/asset/678>`__
 
@@ -38,8 +38,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CylinderShape3D_property_height:
 
@@ -89,10 +89,10 @@ Property Descriptions
 
 圆柱体的半径。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

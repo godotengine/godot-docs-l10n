@@ -10,7 +10,7 @@
 AudioEffectDelay
 ================
 
-**Inherits:** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AudioEffect<class_AudioEffect>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 为音频总线添加延迟音频效果。在一段时间后回放输入信号。
 
@@ -18,22 +18,22 @@ AudioEffectDelay
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 在一段时间后回放输入信号。延迟的信号可以多次回放，以产生重复、衰减的回声。延迟效果的范围是从微弱回声效果到明显的以前声音和新声音的混合。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`音频总线 <../tutorials/audio/audio_buses>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AudioEffectDelay_property_dry:
 
@@ -137,7 +137,7 @@ Property Descriptions
 - void **set_feedback_level_db** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_feedback_level_db** **(** **)**
 
-Sound level for feedback.
+反馈的声级。
 
 .. rst-class:: classref-item-separator
 
@@ -171,7 +171,7 @@ Sound level for feedback.
 - void **set_tap1_active** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_tap1_active** **(** **)**
 
-If ``true``, the first tap will be enabled.
+如果为 ``true``\ ，将启用第一拍。
 
 .. rst-class:: classref-item-separator
 
@@ -188,7 +188,7 @@ If ``true``, the first tap will be enabled.
 - void **set_tap1_delay_ms** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_tap1_delay_ms** **(** **)**
 
-First tap delay time in milliseconds.
+第一拍延迟时间，单位为毫秒。
 
 .. rst-class:: classref-item-separator
 
@@ -205,7 +205,7 @@ First tap delay time in milliseconds.
 - void **set_tap1_level_db** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_tap1_level_db** **(** **)**
 
-Sound level for the first tap.
+第一拍的声级。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +222,7 @@ Sound level for the first tap.
 - void **set_tap1_pan** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_tap1_pan** **(** **)**
 
-Pan position for the first tap. Value can range from -1 (fully left) to 1 (fully right).
+第一拍的声像位置。取值范围为 -1（完全向左）到 1（完全向右）。
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ Pan position for the first tap. Value can range from -1 (fully left) to 1 (fully
 - void **set_tap2_active** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_tap2_active** **(** **)**
 
-If ``true``, the second tap will be enabled.
+如果为 ``true``\ ，将启用第二拍。
 
 .. rst-class:: classref-item-separator
 
@@ -256,7 +256,7 @@ If ``true``, the second tap will be enabled.
 - void **set_tap2_delay_ms** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_tap2_delay_ms** **(** **)**
 
-Second tap delay time in milliseconds.
+第二拍的延迟时间，单位为毫秒。
 
 .. rst-class:: classref-item-separator
 
@@ -273,7 +273,7 @@ Second tap delay time in milliseconds.
 - void **set_tap2_level_db** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_tap2_level_db** **(** **)**
 
-Sound level for the second tap.
+第二拍的声级。
 
 .. rst-class:: classref-item-separator
 
@@ -290,12 +290,12 @@ Sound level for the second tap.
 - void **set_tap2_pan** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_tap2_pan** **(** **)**
 
-Pan position for the second tap. Value can range from -1 (fully left) to 1 (fully right).
+第二拍的声像位置。取值范围为 -1（完全向左）到 1（完全向右）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

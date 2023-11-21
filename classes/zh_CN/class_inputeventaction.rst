@@ -10,23 +10,23 @@
 InputEventAction
 ================
 
-**Inherits:** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 动作的输入事件类型。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 包含一个通用动作，该动作可以被多种类型的输入作为目标。动作及其事件可以在\ **项目 > 项目设置**\ 的\ **输入映射**\ 选项卡中设置，也可以使用 :ref:`InputMap<class_InputMap>` 类设置。
 
-\ **注意：**\ 与映射到唯一物理事件的其他 :ref:`InputEvent<class_InputEvent>` 子类不同，这个虚拟事件不是由引擎发出的。这个类可以用来使用 :ref:`Input.parse_input_event<class_Input_method_parse_input_event>` 手动发出动作，这样就能够在 :ref:`Node._input<class_Node_method__input>` 中接收到这些动作。要检查物理事件是否与“输入映射”中的动作相匹配，请使用 :ref:`InputEvent.is_action<class_InputEvent_method_is_action>` 和 :ref:`InputEvent.is_action_pressed<class_InputEvent_method_is_action_pressed>`\ 。
+\ **注意：**\ 与映射到唯一物理事件的其他 :ref:`InputEvent<class_InputEvent>` 子类不同，这个虚拟事件不是由引擎发出的。这个类可以用来使用 :ref:`Input.parse_input_event<class_Input_method_parse_input_event>` 手动发出动作，这样就能够在 :ref:`Node._input<class_Node_private_method__input>` 中接收到这些动作。要检查物理事件是否与“输入映射”中的动作相匹配，请使用 :ref:`InputEvent.is_action<class_InputEvent_method_is_action>` 和 :ref:`InputEvent.is_action_pressed<class_InputEvent_method_is_action_pressed>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `使用 InputEvent：动作 <../tutorials/inputs/inputevent.html#actions>`__
 
@@ -36,8 +36,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_InputEventAction_property_action:
 
@@ -106,10 +106,10 @@ Property Descriptions
 
 动作的强度，介于 0 和 1 之间。当 pressed 为 ``false`` 时，该值被视为等于 0。通过将事件强度设置为手柄轴的弯曲或按压强度，可以仿造模拟手柄的移动事件。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

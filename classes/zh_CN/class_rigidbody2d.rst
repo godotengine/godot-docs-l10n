@@ -10,16 +10,16 @@
 RigidBody2D
 ===========
 
-**Inherits:** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`PhysicalBone2D<class_PhysicalBone2D>`
+**派生：** :ref:`PhysicalBone2D<class_PhysicalBone2D>`
 
 由物理仿真进行移动的 2D 物理体。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **RigidBody2D** 实现了完整的 2D 物理。这个物理体无法直接控制，必须对其施加力（重力、冲量等），物理仿真将计算由此产生的移动、旋转、对碰撞的反应以及对沿路其他物理体的影响等。
 
@@ -29,12 +29,12 @@ Description
 
 如果你需要覆盖默认的物理行为，你可以编写自定义的力整合函数。见 :ref:`custom_integrator<class_RigidBody2D_property_custom_integrator>`\ 。
 
-\ **注意：**\ 频繁修改 **RigidBody2D** 的 2D 变换或 :ref:`linear_velocity<class_RigidBody2D_property_linear_velocity>` 可能导致无法预期的行为。如果你需要直接影响物理体，请优先使用 :ref:`_integrate_forces<class_RigidBody2D_method__integrate_forces>`\ ，能够直接访问物理状态。
+\ **注意：**\ 频繁修改 **RigidBody2D** 的 2D 变换或 :ref:`linear_velocity<class_RigidBody2D_property_linear_velocity>` 可能导致无法预期的行为。如果你需要直接影响物理体，请优先使用 :ref:`_integrate_forces<class_RigidBody2D_private_method__integrate_forces>`\ ，能够直接访问物理状态。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `2D 物理平台跳跃演示 <https://godotengine.org/asset-library/asset/119>`__
 
@@ -42,8 +42,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -98,14 +98,14 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                          | :ref:`_integrate_forces<class_RigidBody2D_method__integrate_forces>` **(** :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` state **)** |virtual|             |
+   | void                          | :ref:`_integrate_forces<class_RigidBody2D_private_method__integrate_forces>` **(** :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` state **)** |virtual|     |
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                          | :ref:`add_constant_central_force<class_RigidBody2D_method_add_constant_central_force>` **(** :ref:`Vector2<class_Vector2>` force **)**                                       |
    +-------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -138,8 +138,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_RigidBody2D_signal_body_entered:
 
@@ -225,8 +225,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_RigidBody2D_FreezeMode:
 
@@ -342,8 +342,8 @@ enum **CCDMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RigidBody2D_property_angular_damp:
 
@@ -375,7 +375,7 @@ Property Descriptions
 - void **set_angular_damp_mode** **(** :ref:`DampMode<enum_RigidBody2D_DampMode>` value **)**
 - :ref:`DampMode<enum_RigidBody2D_DampMode>` **get_angular_damp_mode** **(** **)**
 
-定义如何应用 :ref:`angular_damp<class_RigidBody2D_property_angular_damp>`\ 。有关可能的值，请参见 :ref:`DampMode<enum_RigidBody2D_DampMode>`\ 。
+定义如何应用 :ref:`angular_damp<class_RigidBody2D_property_angular_damp>`\ 。可能的取值见 :ref:`DampMode<enum_RigidBody2D_DampMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -409,7 +409,7 @@ Property Descriptions
 - void **set_can_sleep** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_able_to_sleep** **(** **)**
 
-如果\ ``true``\ ，当未运动时，物体可以进入睡眠模式。请参见 :ref:`sleeping<class_RigidBody2D_property_sleeping>` 。
+如果为 ``true``\ ，则物体未运动时可以进入睡眠模式。见 :ref:`sleeping<class_RigidBody2D_property_sleeping>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -445,7 +445,7 @@ Property Descriptions
 - void **set_center_of_mass_mode** **(** :ref:`CenterOfMassMode<enum_RigidBody2D_CenterOfMassMode>` value **)**
 - :ref:`CenterOfMassMode<enum_RigidBody2D_CenterOfMassMode>` **get_center_of_mass_mode** **(** **)**
 
-定义设置物体质心的方式。请参见 :ref:`CenterOfMassMode<enum_RigidBody2D_CenterOfMassMode>` 以获取可能的值。
+定义设置物体质心的方式。可能的取值见 :ref:`CenterOfMassMode<enum_RigidBody2D_CenterOfMassMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -464,7 +464,7 @@ Property Descriptions
 
 在每个物理更新期间施加到物体的总恒定位置的力。
 
-请参见 :ref:`add_constant_force<class_RigidBody2D_method_add_constant_force>` 和 :ref:`add_constant_central_force<class_RigidBody2D_method_add_constant_central_force>` 。
+见 :ref:`add_constant_force<class_RigidBody2D_method_add_constant_force>` 和 :ref:`add_constant_central_force<class_RigidBody2D_method_add_constant_central_force>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -483,7 +483,7 @@ Property Descriptions
 
 在每个物理更新期间施加的物体的总恒定旋转力。
 
-请参见 :ref:`add_constant_torque<class_RigidBody2D_method_add_constant_torque>` 。
+见 :ref:`add_constant_torque<class_RigidBody2D_method_add_constant_torque>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -538,7 +538,7 @@ Property Descriptions
 - void **set_use_custom_integrator** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_using_custom_integrator** **(** **)**
 
-如果为 ``true``\ ，则禁用该物体的内力积分。除了碰撞响应，物体只会按照 :ref:`_integrate_forces<class_RigidBody2D_method__integrate_forces>` 函数确定的方式移动。
+如果为 ``true``\ ，则禁用该物体的内力积分。除了碰撞响应，物体只会按照 :ref:`_integrate_forces<class_RigidBody2D_private_method__integrate_forces>` 函数确定的方式移动。
 
 .. rst-class:: classref-item-separator
 
@@ -659,7 +659,7 @@ Property Descriptions
 - void **set_linear_damp** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_linear_damp** **(** **)**
 
-阻碍物体的运动。默认情况下，物体将使用 **项目 > 项目设置 > Physics > 2d** 中的 **默认线性阻尼（Default Linear Damp）**\ 、或物体所在的 :ref:`Area2D<class_Area2D>` 设置的任何值覆盖。取决于 :ref:`linear_damp_mode<class_RigidBody2D_property_linear_damp_mode>`\ ，你可以将 :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` 设置为添加或替换物体的阻尼值。
+阻碍物体的运动。默认情况下，物体将使用 **项目 > 项目设置 > 物理 > 2D** 中的 **默认线性阻尼**\ 或物体所在的 :ref:`Area2D<class_Area2D>` 设置的任何值覆盖。取决于 :ref:`linear_damp_mode<class_RigidBody2D_property_linear_damp_mode>`\ ，你可以将 :ref:`linear_damp<class_RigidBody2D_property_linear_damp>` 设置为添加或替换物体的阻尼值。
 
 有关阻尼的更多详细信息，请参见 :ref:`ProjectSettings.physics/2d/default_linear_damp<class_ProjectSettings_property_physics/2d/default_linear_damp>`\ 。
 
@@ -695,7 +695,7 @@ Property Descriptions
 - void **set_linear_velocity** **(** :ref:`Vector2<class_Vector2>` value **)**
 - :ref:`Vector2<class_Vector2>` **get_linear_velocity** **(** **)**
 
-该实体的线速度，单位为像素每秒。可以偶尔使用，但是\ **不要每一帧都去设置**\ ，因为物理可能在另一个线程中运行，并且以不同的间隔。使用 :ref:`_integrate_forces<class_RigidBody2D_method__integrate_forces>` 作为你的进程循环，以精确控制物体状态。
+该实体的线速度，单位为像素每秒。可以偶尔使用，但是\ **不要每一帧都去设置**\ ，因为物理可能在另一个线程中运行，并且以不同的间隔。使用 :ref:`_integrate_forces<class_RigidBody2D_private_method__integrate_forces>` 作为你的进程循环，以精确控制物体状态。
 
 .. rst-class:: classref-item-separator
 
@@ -792,16 +792,16 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_RigidBody2D_method__integrate_forces:
+.. _class_RigidBody2D_private_method__integrate_forces:
 
 .. rst-class:: classref-method
 
 void **_integrate_forces** **(** :ref:`PhysicsDirectBodyState2D<class_PhysicsDirectBodyState2D>` state **)** |virtual|
 
-允许你读取并安全地修改对象的模拟状态。如果你需要直接改变物体的 ``position`` 或其他物理属性，请使用它代替 :ref:`Node._physics_process<class_Node_method__physics_process>`\ 。默认情况下，它是在通常的物理行为之外工作的，但是 :ref:`custom_integrator<class_RigidBody2D_property_custom_integrator>` 允许你禁用默认行为并为一个物体编写自定义的合力。
+允许你读取并安全地修改对象的模拟状态。如果你需要直接改变物体的 ``position`` 或其他物理属性，请使用它代替 :ref:`Node._physics_process<class_Node_private_method__physics_process>`\ 。默认情况下，它是在通常的物理行为之外工作的，但是 :ref:`custom_integrator<class_RigidBody2D_property_custom_integrator>` 允许你禁用默认行为并为一个物体编写自定义的合力。
 
 .. rst-class:: classref-item-separator
 
@@ -957,7 +957,7 @@ void **apply_torque_impulse** **(** :ref:`float<class_float>` torque **)**
 
 :ref:`int<class_int>` **get_contact_count** **(** **)** |const|
 
-返回此物体与其他物体的接触数。默认情况下，除非配置监视接触的物体（请参见 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>`\ ），否则返回 0。
+返回此物体与其他物体的接触数。默认情况下，除非配置监视接触的物体（见 :ref:`contact_monitor<class_RigidBody2D_property_contact_monitor>`\ ），否则返回 0。
 
 \ **注意：**\ 要获取正在碰撞的物体，请使用 :ref:`get_colliding_bodies<class_RigidBody2D_method_get_colliding_bodies>`\ 。
 
@@ -973,10 +973,10 @@ void **set_axis_velocity** **(** :ref:`Vector2<class_Vector2>` axis_velocity **)
 
 设置物体在给定轴上的速度。给定矢量轴上的速度将设置为给定向量长度。这对于跳跃行为很有用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,25 +10,25 @@
 GPUParticles2D
 ==============
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A 2D particle emitter.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-2D particle node used to create a variety of particle systems and effects. **GPUParticles2D** features an emitter that generates some number of particles at a given rate.
-
-Use the :ref:`process_material<class_GPUParticles2D_property_process_material>` property to add a :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` to configure particle appearance and behavior. Alternatively, you can add a :ref:`ShaderMaterial<class_ShaderMaterial>` which will be applied to all particles.
-
-2D particles can optionally collide with :ref:`LightOccluder2D<class_LightOccluder2D>`, but they don't collide with :ref:`PhysicsBody2D<class_PhysicsBody2D>` nodes.
+2D 粒子发射器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
+
+2D 粒子节点，用于创建各种粒子系统和效果。\ **GPUParticles2D** 是一个发射器，特点是以给定的速度生成一定数量的粒子。
+
+使用 :ref:`process_material<class_GPUParticles2D_property_process_material>` 属性来添加一个配置粒子的外观和行为的 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>`\ 。或者，你可以添加一个应用于所有粒子的 :ref:`ShaderMaterial<class_ShaderMaterial>`\ 。
+
+2D 粒子可以选择与 :ref:`LightOccluder2D<class_LightOccluder2D>` 碰撞，但它们不会与 :ref:`PhysicsBody2D<class_PhysicsBody2D>` 节点碰撞。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
 
 - :doc:`粒子系统（2D） <../tutorials/2d/particle_systems_2d>`
 
@@ -38,14 +38,16 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
    +-------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------+
    | :ref:`int<class_int>`                           | :ref:`amount<class_GPUParticles2D_property_amount>`                                         | ``8``                           |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------+
+   | :ref:`float<class_float>`                       | :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>`                             | ``1.0``                         |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------+
    | :ref:`float<class_float>`                       | :ref:`collision_base_size<class_GPUParticles2D_property_collision_base_size>`               | ``1.0``                         |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------+
@@ -58,6 +60,8 @@ Properties
    | :ref:`int<class_int>`                           | :ref:`fixed_fps<class_GPUParticles2D_property_fixed_fps>`                                   | ``30``                          |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------+
    | :ref:`bool<class_bool>`                         | :ref:`fract_delta<class_GPUParticles2D_property_fract_delta>`                               | ``true``                        |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------+
+   | :ref:`float<class_float>`                       | :ref:`interp_to_end<class_GPUParticles2D_property_interp_to_end>`                           | ``0.0``                         |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------+
    | :ref:`bool<class_bool>`                         | :ref:`interpolate<class_GPUParticles2D_property_interpolate>`                               | ``true``                        |
    +-------------------------------------------------+---------------------------------------------------------------------------------------------+---------------------------------+
@@ -92,8 +96,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -114,8 +118,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_GPUParticles2D_signal_finished:
 
@@ -123,9 +127,9 @@ Signals
 
 **finished** **(** **)**
 
-Emitted when all active particles have finished processing. When :ref:`one_shot<class_GPUParticles2D_property_one_shot>` is disabled, particles will process continuously, so this is never emitted.
+当所有活动粒子完成处理时发出。当 :ref:`one_shot<class_GPUParticles2D_property_one_shot>` 被禁用时，粒子将连续处理，因此它永远不会发出。
 
-\ **Note:** Due to the particles being computed on the GPU there might be a delay before the signal gets emitted.
+\ **注意：**\ 由于粒子是在 GPU 上计算的，因此在该信号发出之前可能会有延迟。
 
 .. rst-class:: classref-section-separator
 
@@ -133,8 +137,8 @@ Emitted when all active particles have finished processing. When :ref:`one_shot<
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_GPUParticles2D_DrawOrder:
 
@@ -156,7 +160,7 @@ enum **DrawOrder**:
 
 :ref:`DrawOrder<enum_GPUParticles2D_DrawOrder>` **DRAW_ORDER_LIFETIME** = ``1``
 
-粒子按剩余寿命的顺序绘制。
+粒子按照剩余寿命的顺序绘制。换句话说，寿命最长的粒子被绘制在前面。
 
 .. _class_GPUParticles2D_constant_DRAW_ORDER_REVERSE_LIFETIME:
 
@@ -164,7 +168,7 @@ enum **DrawOrder**:
 
 :ref:`DrawOrder<enum_GPUParticles2D_DrawOrder>` **DRAW_ORDER_REVERSE_LIFETIME** = ``2``
 
-
+粒子按照剩余寿命的相反顺序绘制。换句话说，寿命最短的粒子被绘制在前面。
 
 .. rst-class:: classref-item-separator
 
@@ -222,8 +226,8 @@ enum **EmitFlags**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GPUParticles2D_property_amount:
 
@@ -236,7 +240,28 @@ Property Descriptions
 - void **set_amount** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_amount** **(** **)**
 
-单个发射周期内发射的粒子数。
+一个发射周期内发射的粒子数。有效发射速率为每秒 ``(amount * amount_ratio) / lifetime`` 个粒子。较高的值会增加 GPU 要求，即使在给定时间并非所有粒子都可见或 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 减少。
+
+\ **注意：**\ 更改该值将导致粒子系统重新启动。为了避免这种情况，请更改 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GPUParticles2D_property_amount_ratio:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **amount_ratio** = ``1.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_amount_ratio** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_amount_ratio** **(** **)**
+
+实际应该发射的粒子的比率。如果被设置为低于 ``1.0`` 的值，则会将整个生命周期内发射的粒子数量设置为 ``amount * amount_ratio``\ 。与更改 :ref:`amount<class_GPUParticles2D_property_amount>` 不同，发射时更改 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 不会影响已发射的粒子，也不会导致粒子系统重新启动。\ :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 可用于创建使发射粒子的数量随时间变化的效果。
+
+\ **注意：**\ 减少 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 不会带来性能优势，因为无论 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 是多少，都需要为粒子总数 :ref:`amount<class_GPUParticles2D_property_amount>` 分配和处理资源。如果你不打算在粒子发射时更改发射的粒子数量，请确保将 :ref:`amount_ratio<class_GPUParticles2D_property_amount_ratio>` 设置为 ``1`` 并根据你的喜好更改 :ref:`amount<class_GPUParticles2D_property_amount>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -253,7 +278,9 @@ Property Descriptions
 - void **set_collision_base_size** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_collision_base_size** **(** **)**
 
-粒子碰撞半径的乘数。 ``1.0``\ 对应精灵的大小。
+粒子碰撞半径的乘数。\ ``1.0`` 对应于该精灵的大小。如果碰撞时粒子似乎沉入地下，请增加该值。如果粒子在碰撞时出现漂浮，请减小该值。仅当 :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 为 :ref:`ParticleProcessMaterial.COLLISION_RIGID<class_ParticleProcessMaterial_constant_COLLISION_RIGID>` 或 :ref:`ParticleProcessMaterial.COLLISION_HIDE_ON_CONTACT<class_ParticleProcessMaterial_constant_COLLISION_HIDE_ON_CONTACT>` 时有效。
+
+\ **注意：**\ 粒子始终具有球形碰撞形状。
 
 .. rst-class:: classref-item-separator
 
@@ -287,7 +314,7 @@ Property Descriptions
 - void **set_emitting** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_emitting** **(** **)**
 
-If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_property_emitting>` can be used to start and stop particles from emitting. However, if :ref:`one_shot<class_GPUParticles2D_property_one_shot>` is ``true`` setting :ref:`emitting<class_GPUParticles2D_property_emitting>` to ``true`` will not restart the emission cycle until after all active particles finish processing. You can use the :ref:`finished<class_GPUParticles2D_signal_finished>` signal to be notified once all active particles finish processing.
+如果为 ``true``\ ，则正在发射粒子。\ :ref:`emitting<class_GPUParticles2D_property_emitting>` 可用于启动和停止粒子发射。但是，如果 :ref:`one_shot<class_GPUParticles2D_property_one_shot>` 为 ``true``\ ，则将 :ref:`emitting<class_GPUParticles2D_property_emitting>` 设置为 ``true`` 将不会重新启动该发射循环，直到所有活动粒子完成处理为止。一旦所有活动粒子完成处理，你可以使用 :ref:`finished<class_GPUParticles2D_signal_finished>` 信号来收取通知。
 
 .. rst-class:: classref-item-separator
 
@@ -344,6 +371,25 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 
 ----
 
+.. _class_GPUParticles2D_property_interp_to_end:
+
+.. rst-class:: classref-property
+
+:ref:`float<class_float>` **interp_to_end** = ``0.0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_interp_to_end** **(** :ref:`float<class_float>` value **)**
+- :ref:`float<class_float>` **get_interp_to_end** **(** **)**
+
+导致该节点中的所有粒子插值到其生命周期结束时。
+
+\ **注意：**\ 这仅在与 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` 一起使用时才有效。对于自定义进程着色器，需要手动实现。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_GPUParticles2D_property_interpolate:
 
 .. rst-class:: classref-property
@@ -372,7 +418,7 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 - void **set_lifetime** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_lifetime** **(** **)**
 
-每个粒子存在的时间。
+每个粒子存在的时间（以秒为单位）。有效发射速率为每秒 ``(amount * amount_ratio) / lifetime`` 个粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -491,7 +537,9 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 - void **set_sub_emitter** **(** :ref:`NodePath<class_NodePath>` value **)**
 - :ref:`NodePath<class_NodePath>` **get_sub_emitter** **(** **)**
 
-到用于子发射的 **GPUParticles2D** 的 :ref:`NodePath<class_NodePath>`\ 。
+到将被用作子发射器（请参阅 :ref:`ParticleProcessMaterial.sub_emitter_mode<class_ParticleProcessMaterial_property_sub_emitter_mode>`\ ）的另一个 **GPUParticles2D** 节点的路径。子发射器可被用于实现烟花、碰撞火花、气泡弹出水滴等效果。
+
+\ **注意：**\ 当 :ref:`sub_emitter<class_GPUParticles2D_property_sub_emitter>` 被设置时，该目标 **GPUParticles2D** 节点将不再自行发射粒子。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +556,9 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 - void **set_texture** **(** :ref:`Texture2D<class_Texture2D>` value **)**
 - :ref:`Texture2D<class_Texture2D>` **get_texture** **(** **)**
 
-粒子纹理。如果为 ``null``\ ，则粒子将为正方形。
+粒子纹理。如果为 ``null``\ ，则粒子将是大小为 1×1 像素的正方形。
+
+\ **注意：**\ 要使用翻页纹理，请将新的 :ref:`CanvasItemMaterial<class_CanvasItemMaterial>` 分配给 **GPUParticles2D** 的 :ref:`CanvasItem.material<class_CanvasItem_property_material>` 属性，然后启用 :ref:`CanvasItemMaterial.particles_animation<class_CanvasItemMaterial_property_particles_animation>` 并设置 :ref:`CanvasItemMaterial.particles_anim_h_frames<class_CanvasItemMaterial_property_particles_anim_h_frames>`\ 、\ :ref:`CanvasItemMaterial.particles_anim_v_frames<class_CanvasItemMaterial_property_particles_anim_v_frames>`\ 、和 :ref:`CanvasItemMaterial.particles_anim_loop<class_CanvasItemMaterial_property_particles_anim_loop>` 来匹配该翻页纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -605,8 +655,8 @@ If ``true``, particles are being emitted. :ref:`emitting<class_GPUParticles2D_pr
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_GPUParticles2D_method_capture_rect:
 
@@ -614,9 +664,9 @@ Method Descriptions
 
 :ref:`Rect2<class_Rect2>` **capture_rect** **(** **)** |const|
 
-Returns a rectangle containing the positions of all existing particles.
+返回一个包含所有已有粒子位置的矩形。
 
-\ **Note:** When using threaded rendering this method synchronizes the rendering thread. Calling it often may have a negative impact on performance.
+\ **注意：**\ 当使用线程渲染时，该方法会同步渲染线程。经常调用它可能会对性能产生负面影响。
 
 .. rst-class:: classref-item-separator
 
@@ -628,7 +678,7 @@ Returns a rectangle containing the positions of all existing particles.
 
 void **convert_from_particles** **(** :ref:`Node<class_Node>` particles **)**
 
-Sets this node's properties to match a given :ref:`CPUParticles2D<class_CPUParticles2D>` node.
+设置该节点的属性以匹配给定的 :ref:`CPUParticles2D<class_CPUParticles2D>` 节点。
 
 .. rst-class:: classref-item-separator
 
@@ -654,10 +704,10 @@ void **restart** **(** **)**
 
 重新启动所有现有的粒子。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

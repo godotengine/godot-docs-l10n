@@ -10,14 +10,14 @@
 ConfigFile
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于处理 INI 样式文件的辅助类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该辅助类可用于使用 INI 样式格式在文件系统上存储 :ref:`Variant<class_Variant>` 值。存储的值由一个小节和一个键标识：
 
@@ -124,8 +124,8 @@ ConfigFiles 还可以包含以分号（\ ``;``\ ）开头的手动编写的注�
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -172,8 +172,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ConfigFile_method_clear:
 
@@ -291,7 +291,7 @@ void **erase_section_key** **(** :ref:`String<class_String>` section, :ref:`Stri
 
 加载指定为参数的配置文件。解析文件的内容并将其加载到调用该方法的 **ConfigFile** 对象中。
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 错误码常量（成功时为 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果操作失败，则返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -305,7 +305,7 @@ void **erase_section_key** **(** :ref:`String<class_String>` section, :ref:`Stri
 
 加载指定为参数的加密配置文件，使用提供的 ``key`` 对其解密。解析文件的内容并将其加载到调用该方法的 **ConfigFile** 对象中。
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 错误码常量（成功时为 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果操作失败，则返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -319,7 +319,7 @@ void **erase_section_key** **(** :ref:`String<class_String>` section, :ref:`Stri
 
 加载作为参数的加密配置文件，使用提供的 ``password`` 解密。该文件的内容被解析并加载到调用该方法的 **ConfigFile** 对象中。
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 错误码常量（成功时为 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果操作失败，则返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -333,7 +333,7 @@ void **erase_section_key** **(** :ref:`String<class_String>` section, :ref:`Stri
 
 将传递的字符串解析为配置文件的内容。该字符串被解析并加载到调用该方法的 ConfigFile 对象中。
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 错误码常量（成功时为 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果操作失败，则返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -347,7 +347,7 @@ void **erase_section_key** **(** :ref:`String<class_String>` section, :ref:`Stri
 
 将 **ConfigFile** 对象的内容保存到指定为参数的文件中。输出文件使用 INI 样式的结构。
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 错误码常量（成功时为 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果操作失败，则返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -361,7 +361,7 @@ void **erase_section_key** **(** :ref:`String<class_String>` section, :ref:`Stri
 
 使用提供的 ``key`` 将 **ConfigFile** 对象的内容保存到作为参数指定的 AES-256 加密文件中。输出文件使用 INI 样式的结构。
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 错误码常量（成功时为 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果操作失败，则返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -375,7 +375,7 @@ void **erase_section_key** **(** :ref:`String<class_String>` section, :ref:`Stri
 
 将 **ConfigFile** 对象的内容保存到作为参数指定的 AES-256 加密文件中，使用提供的 ``password`` 进行加密。输出文件使用 INI 风格的结构。
 
-返回 :ref:`Error<enum_@GlobalScope_Error>` 错误码常量（成功时为 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果操作失败，则返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
 
 .. rst-class:: classref-item-separator
 
@@ -389,10 +389,10 @@ void **set_value** **(** :ref:`String<class_String>` section, :ref:`String<class
 
 为指定小节的指定键赋值。如果小节或键不存在，则创建它们。如果指定的键存在，传递 ``null`` 值就会移除指定的键，如果键被移除后，小节最终是空的，就会移除小节。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

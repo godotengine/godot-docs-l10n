@@ -10,27 +10,27 @@
 RegEx
 =====
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 使用正则表达式搜索文本的类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A regular expression (or regex) is a compact language that can be used to recognize strings that follow a specific pattern, such as URLs, email addresses, complete sentences, etc. For example, a regex of ``ab[0-9]`` would find any string that is ``ab`` followed by any number from ``0`` to ``9``. For a more in-depth look, you can easily find various tutorials and detailed explanations on the Internet.
+正则表达式（或称 regex）是一种紧凑的语言，可用于识别遵循特定模式的字符串，如 URL、电子邮件地址、完整句子等。例如正则表达式 ``ab[0-9]`` 可以找到 ``ab`` 后面跟着 ``0`` 到 ``9`` 的任何数字的字符串。要想更深入地了解，你可以很容易地在互联网上找到各种教程和详细解释。
 
-To begin, the RegEx object needs to be compiled with the search pattern using :ref:`compile<class_RegEx_method_compile>` before it can be used.
+首先，在使用 RegEx 对象之前，需要用 :ref:`compile<class_RegEx_method_compile>` 对其进行搜索模式的编译。
 
 ::
 
     var regex = RegEx.new()
     regex.compile("\\w-(\\d+)")
 
-The search pattern must be escaped first for GDScript before it is escaped for the expression. For example, ``compile("\\d+")`` would be read by RegEx as ``\d+``. Similarly, ``compile("\"(?:\\\\.|[^\"])*\"")`` would be read as ``"(?:\\.|[^"])*"``. In GDScript, you can also use raw string literals (r-strings). For example, ``compile(r'"(?:\\.|[^"])*"')`` would be read the same.
+在为表达式转义之前，必须先为 GDScript 转义搜索模式。例如，\ ``compile("\\d+")`` 会被 RegEx 读成 ``\d+``\ 。同样，\ ``compile("\"(?:\\\\.|[^\"])*\")`` 会被读作 ``"(?:\.|[^"])*"``\ 。在 GDScript 中，你还可以使用原始字符串文字（r-字符串）。例如，\ ``compile(r'"(?:\\.|[^"])*"')`` 将被读取为相同的。
 
-Using :ref:`search<class_RegEx_method_search>`, you can find the pattern within the given text. If a pattern is found, :ref:`RegExMatch<class_RegExMatch>` is returned and you can retrieve details of the results using methods such as :ref:`RegExMatch.get_string<class_RegExMatch_method_get_string>` and :ref:`RegExMatch.get_start<class_RegExMatch_method_get_start>`.
+使用 :ref:`search<class_RegEx_method_search>`\ ，你可以在给定的文本中匹配模式。如果匹配到一个模式，将返回 :ref:`RegExMatch<class_RegExMatch>`\ ，你可以使用 :ref:`RegExMatch.get_string<class_RegExMatch_method_get_string>` 和 :ref:`RegExMatch.get_start<class_RegExMatch_method_get_start>` 等方法检索结果的细节。
 
 ::
 
@@ -38,47 +38,47 @@ Using :ref:`search<class_RegEx_method_search>`, you can find the pattern within 
     regex.compile("\\w-(\\d+)")
     var result = regex.search("abc n-0123")
     if result:
-        print(result.get_string()) # Would print n-0123
+        print(result.get_string()) # 会输出 n-0123
 
-The results of capturing groups ``()`` can be retrieved by passing the group number to the various methods in :ref:`RegExMatch<class_RegExMatch>`. Group 0 is the default and will always refer to the entire pattern. In the above example, calling ``result.get_string(1)`` would give you ``0123``.
+捕获组的结果 ``()`` 可以通过向 :ref:`RegExMatch<class_RegExMatch>` 中的各种方法传递组号来检索。默认是组 0，并且将总是指整个模式。在上面的例子中，调用 ``result.get_string(1)`` 会得到 ``0123``\ 。
 
-This version of RegEx also supports named capturing groups, and the names can be used to retrieve the results. If two or more groups have the same name, the name would only refer to the first one with a match.
+这个版本的 RegEx 也支持命名的捕获组，名称可以用来检索结果。如果两个或更多的组有相同的名称，那么这个名称将只指第一个有匹配的组。
 
 ::
 
     var regex = RegEx.new()
     regex.compile("d(?<digit>[0-9]+)|x(?<digit>[0-9a-f]+)")
-    var result = regex.search("the number is x2f")
+    var result = regex.search("数字是 x2f")
     if result:
-        print(result.get_string("digit")) # Would print 2f
+        print(result.get_string("digit")) # 会输出 2f
 
-If you need to process multiple results, :ref:`search_all<class_RegEx_method_search_all>` generates a list of all non-overlapping results. This can be combined with a ``for`` loop for convenience.
+如果你需要处理多个结果，\ :ref:`search_all<class_RegEx_method_search_all>` 会生成一个所有不重叠的结果列表。为了方便起见，这可以和一个 ``for`` 循环结合起来。
 
 ::
 
     for result in regex.search_all("d01, d03, d0c, x3f and x42"):
         print(result.get_string("digit"))
-    # Would print 01 03 0 3f 42
+    # 会输出 01 03 0 3f 42
 
-\ **Example of splitting a string using a RegEx:**\ 
+\ **使用 RegEx 分割字符串的例子：**\ 
 
 ::
 
     var regex = RegEx.new()
-    regex.compile("\\S+") # Negated whitespace character class.
+    regex.compile("\\S+") # 非空白字符类。
     var results = []
     for result in regex.search_all("One  Two \n\tThree"):
         results.push_back(result.get_string())
-    # The `results` array now contains "One", "Two", "Three".
+    # `results` 数组包含 "One"、"Two"、"Three"。
 
-\ **Note:** Godot's regex implementation is based on the `PCRE2 <https://www.pcre.org/>`__ library. You can view the full pattern reference `here <https://www.pcre.org/current/doc/html/pcre2pattern.html>`__.
+\ **注意：**\ Godot 的 regex 实现基于的是 `PCRE2 <https://www.pcre.org/>`__\ 。你可以查看完整的模式参考\ `这里 <https://www.pcre.org/current/doc/html/pcre2pattern.html>`__\ 。
 
-\ **Tip:** You can use `Regexr <https://regexr.com/>`__ to test regular expressions online.
+\ **提示：**\ 你可以使用 `Regexr <https://regexr.com/>`__ 来在线测试正则表达式。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -111,8 +111,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RegEx_method_clear:
 
@@ -236,10 +236,10 @@ void **clear** **(** **)**
 
 可以使用 ``offset`` 和 ``end`` 指定要搜索的区域。这对在上一次成功后再次调用该方法，以相同的 ``subject`` 搜索另一个匹配项时很有用。请注意，设置这些参数不同于传递缩短后的字符串。例如，起始锚点 ``^`` 不受 ``offset`` 的影响，会为单词边界 ``\b`` 检查 ``offset`` 之前的字符。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

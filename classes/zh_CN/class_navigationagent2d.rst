@@ -10,14 +10,14 @@
 NavigationAgent2D
 =================
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于寻路至某个位置并且能够躲避障碍物的 2D 代理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于寻路至某个位置并且能够躲避静态和动态障碍物的 2D 代理。父节点能够使用计算结果沿着路径动态前进。需要有导航数据才能正常工作。
 
@@ -27,15 +27,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 NavigationAgent <../tutorials/navigation/navigation_using_navigationagents>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -92,8 +92,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -144,8 +144,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_NavigationAgent2D_signal_link_reached:
 
@@ -179,7 +179,7 @@ Signals
 
 **navigation_finished** **(** **)**
 
-Emitted once per loaded path when the agent internal navigation path index reaches the last index of the loaded path array. The agent internal navigation path index can be received with :ref:`get_current_navigation_path_index<class_NavigationAgent2D_method_get_current_navigation_path_index>`.
+当代理内部导航路径索引到达加载路径数组的最后一个索引时，每个加载路径发出一次。可以使用 :ref:`get_current_navigation_path_index<class_NavigationAgent2D_method_get_current_navigation_path_index>` 接收代理内部导航路径索引。
 
 .. rst-class:: classref-item-separator
 
@@ -191,13 +191,13 @@ Emitted once per loaded path when the agent internal navigation path index reach
 
 **path_changed** **(** **)**
 
-Emitted when the agent had to update the loaded path:
+当该代理必须更新加载的路径时发出：
 
-- because path was previously empty.
+- 因为路径以前是空的。
 
-- because navigation map has changed.
+- 因为导航地图已经改变。
 
-- because agent pushed further away from the current path segment than the :ref:`path_max_distance<class_NavigationAgent2D_property_path_max_distance>`.
+- 因为代理从当前路径段推得比 :ref:`path_max_distance<class_NavigationAgent2D_property_path_max_distance>` 更远。
 
 .. rst-class:: classref-item-separator
 
@@ -209,7 +209,7 @@ Emitted when the agent had to update the loaded path:
 
 **target_reached** **(** **)**
 
-Emitted once per loaded path when the agent's global position is the first time within :ref:`target_desired_distance<class_NavigationAgent2D_property_target_desired_distance>` to the :ref:`target_position<class_NavigationAgent2D_property_target_position>`.
+当代理的全局位置第一次在 :ref:`target_desired_distance<class_NavigationAgent2D_property_target_desired_distance>` 内到达 :ref:`target_position<class_NavigationAgent2D_property_target_position>` 时，每个加载路径发出一次。
 
 .. rst-class:: classref-item-separator
 
@@ -251,8 +251,8 @@ Emitted once per loaded path when the agent's global position is the first time 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_NavigationAgent2D_property_avoidance_enabled:
 
@@ -666,8 +666,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationAgent2D_method_distance_to_target:
 
@@ -747,7 +747,7 @@ Method Descriptions
 
 :ref:`Vector2<class_Vector2>` **get_final_position** **(** **)**
 
-Returns the reachable final position of the current navigation path in global coordinates. This position can change if the agent needs to update the navigation path which makes the agent emit the :ref:`path_changed<class_NavigationAgent2D_signal_path_changed>` signal.
+返回当前导航路径上可到达的最终位置的全局坐标。如果该代理需要更新导航路径，从而使该代理发出 :ref:`path_changed<class_NavigationAgent2D_signal_path_changed>` 信号，则该位置可能会发生变化。
 
 .. rst-class:: classref-item-separator
 
@@ -807,9 +807,9 @@ Returns the reachable final position of the current navigation path in global co
 
 :ref:`bool<class_bool>` **is_navigation_finished** **(** **)**
 
-Returns ``true`` if the end of the currently loaded navigation path has been reached.
+如果已到达当前加载的导航路径的末尾，则返回 ``true``\ 。
 
-\ **Note:** While true prefer to stop calling update functions like :ref:`get_next_path_position<class_NavigationAgent2D_method_get_next_path_position>`. This avoids jittering the standing agent due to calling repeated path updates.
+\ **注意：**\ 虽然 true 更喜欢停止调用更新函数，例如 :ref:`get_next_path_position<class_NavigationAgent2D_method_get_next_path_position>`\ 。这避免了由于调用重复的路径更新而使常设代理抖动。
 
 .. rst-class:: classref-item-separator
 
@@ -821,7 +821,7 @@ Returns ``true`` if the end of the currently loaded navigation path has been rea
 
 :ref:`bool<class_bool>` **is_target_reachable** **(** **)**
 
-Returns ``true`` if :ref:`get_final_position<class_NavigationAgent2D_method_get_final_position>` is within :ref:`target_desired_distance<class_NavigationAgent2D_property_target_desired_distance>` of the :ref:`target_position<class_NavigationAgent2D_property_target_position>`.
+如果 :ref:`get_final_position<class_NavigationAgent2D_method_get_final_position>` 位于 :ref:`target_position<class_NavigationAgent2D_property_target_position>` 的 :ref:`target_desired_distance<class_NavigationAgent2D_property_target_desired_distance>` 范围内，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -895,10 +895,10 @@ void **set_velocity_forced** **(** :ref:`Vector2<class_Vector2>` velocity **)**
 
 将防撞仿真的内部速度替换为 ``velocity``\ 。代理传送到新的位置之后，应该在同一帧里使用这个函数。如果频繁调用这个函数，可能会让代理卡住。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

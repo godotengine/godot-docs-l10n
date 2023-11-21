@@ -10,14 +10,14 @@
 DirAccess
 =========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 提供管理目录及其内容的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 这个类可以用来管理目录及其内容，不限于项目文件夹。
 
@@ -88,15 +88,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`文件系统 <../tutorials/scripting/filesystem>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -109,8 +109,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -152,6 +152,8 @@ Methods
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                             | :ref:`get_space_left<class_DirAccess_method_get_space_left>` **(** **)**                                                                                                               |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`is_case_sensitive<class_DirAccess_method_is_case_sensitive>` **(** :ref:`String<class_String>` path **)** |const|                                                                |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`list_dir_begin<class_DirAccess_method_list_dir_begin>` **(** **)**                                                                                                               |
    +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                              | :ref:`list_dir_end<class_DirAccess_method_list_dir_end>` **(** **)**                                                                                                                   |
@@ -181,8 +183,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_DirAccess_property_include_hidden:
 
@@ -224,8 +226,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_DirAccess_method_change_dir:
 
@@ -236,6 +238,8 @@ Method Descriptions
 将当前打开的目录改为作为参数传递的目录。该参数可以是相对于当前目录的（例如 ``newdir`` 或 ``../newdir``\ ），也可以是绝对路径（例如 ``/tmp/newdir`` 或 ``res://somedir/newdir``\ ）。
 
 返回 :ref:`Error<enum_@GlobalScope_Error>` 错误码常量之一（成功时为 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ）。
+
+\ **注意：**\ 新目录必须在相同范围内，例如当在 ``res://`` 中打开目录时，无法将其更改为 ``user://`` 目录。如果需要在另一个访问范围中打开目录，请使用 :ref:`open<class_DirAccess_method_open>` 创建一个新实例。
 
 .. rst-class:: classref-item-separator
 
@@ -475,6 +479,20 @@ Method Descriptions
 
 ----
 
+.. _class_DirAccess_method_is_case_sensitive:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_case_sensitive** **(** :ref:`String<class_String>` path **)** |const|
+
+如果文件系统或目录使用区分大小写的文件名，则返回 ``true``\ 。
+
+\ **注意：**\ 该方法在 macOS、Linux（仅对于 EXT4 和 F2FS 文件系统）和 Windows 上实现。在其他平台上，它始终返回 ``true``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_DirAccess_method_list_dir_begin:
 
 .. rst-class:: classref-method
@@ -619,10 +637,10 @@ void **list_dir_end** **(** **)**
 
 静态版本的 :ref:`rename<class_DirAccess_method_rename>`\ 。仅支持绝对路径。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

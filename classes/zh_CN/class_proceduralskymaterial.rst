@@ -10,25 +10,25 @@
 ProceduralSkyMaterial
 =====================
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material that defines a simple sky for a :ref:`Sky<class_Sky>` resource.
+一种材质，可为 :ref:`Sky<class_Sky>` 资源定义简单天空。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**ProceduralSkyMaterial** provides a way to create an effective background quickly by defining procedural parameters for the sun, the sky and the ground. The sky and ground are defined by a main color, a color at the horizon, and an easing curve to interpolate between them. Suns are described by a position in the sky, a color, and a max angle from the sun at which the easing curve ends. The max angle therefore defines the size of the sun in the sky.
+**ProceduralSkyMaterial** 提供了一种通过为太阳、天空、和地面定义程序参数，来快速创建一个有效背景的方法。天空和地面由主颜色、地平线颜色、以及在它们之间插值的缓动曲线定义。太阳通过天空中的位置、颜色、以及缓动曲线结束时距太阳的最大角度来描述。因此，最大角度定义了天空中太阳的大小。
 
-\ **ProceduralSkyMaterial** supports up to 4 suns, using the color, and energy, direction, and angular distance of the first four :ref:`DirectionalLight3D<class_DirectionalLight3D>` nodes in the scene. This means that the suns are defined individually by the properties of their corresponding :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s and globally by :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>` and :ref:`sun_curve<class_ProceduralSkyMaterial_property_sun_curve>`.
+\ **ProceduralSkyMaterial** 支持最多 4 个太阳，它们使用场景中前四个 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 节点的颜色、能量、方向、和角距离。这意味着太阳由其相应的 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 的属性单独定义，并由 :ref:`sun_angle_max<class_ProceduralSkyMaterial_property_sun_angle_max>` 和 :ref:`sun_curve<class_ProceduralSkyMaterial_property_sun_curve>` 全局定义。
 
-\ **ProceduralSkyMaterial** uses a lightweight shader to draw the sky and is therefore suited for real time updates. This makes it a great option for a sky that is simple and computationally cheap, but unrealistic. If you need a more realistic procedural option, use :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`.
+\ **ProceduralSkyMaterial** 使用轻量级着色器来绘制天空，因此适合实时更新。这使得它成为简单、低计算成本且不切实际的天空的绝佳选择。如果你需要更真实的程序化选项，请使用 :ref:`PhysicalSkyMaterial<class_PhysicalSkyMaterial>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -67,8 +67,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ProceduralSkyMaterial_property_ground_bottom_color:
 
@@ -287,10 +287,10 @@ Property Descriptions
 
 如果为 ``true``\ ，则启用去色带。去色带会增加少量噪点，这有助于减少天空中颜色的平滑变化而出现的色带。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

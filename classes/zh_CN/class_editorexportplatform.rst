@@ -10,32 +10,32 @@
 EditorExportPlatform
 ====================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`EditorExportPlatformAndroid<class_EditorExportPlatformAndroid>`, :ref:`EditorExportPlatformIOS<class_EditorExportPlatformIOS>`, :ref:`EditorExportPlatformMacOS<class_EditorExportPlatformMacOS>`, :ref:`EditorExportPlatformPC<class_EditorExportPlatformPC>`, :ref:`EditorExportPlatformWeb<class_EditorExportPlatformWeb>`
+**派生：** :ref:`EditorExportPlatformAndroid<class_EditorExportPlatformAndroid>`, :ref:`EditorExportPlatformIOS<class_EditorExportPlatformIOS>`, :ref:`EditorExportPlatformMacOS<class_EditorExportPlatformMacOS>`, :ref:`EditorExportPlatformPC<class_EditorExportPlatformPC>`, :ref:`EditorExportPlatformWeb<class_EditorExportPlatformWeb>`
 
 标识一个支持的导出平台，并在内部提供导出到该平台的功能。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 基础资源，提供从编辑器将项目的发布构建导出到平台的功能。存储特定于平台的元数据，例如平台的名称和支持的功能，并执行项目、PCK 文件和 ZIP 文件的导出。使用在项目导出时提供的平台导出模板。
 
-在 :ref:`EditorExportPlugin<class_EditorExportPlugin>` 的脚本中用于配置特定于平台的场景和资源的定制。有关详细信息，请参阅 :ref:`EditorExportPlugin._begin_customize_scenes<class_EditorExportPlugin_method__begin_customize_scenes>` 和 :ref:`EditorExportPlugin._begin_customize_resources<class_EditorExportPlugin_method__begin_customize_resources>`\ 。
+在 :ref:`EditorExportPlugin<class_EditorExportPlugin>` 的脚本中用于配置特定于平台的场景和资源的定制。有关详细信息，请参阅 :ref:`EditorExportPlugin._begin_customize_scenes<class_EditorExportPlugin_private_method__begin_customize_scenes>` 和 :ref:`EditorExportPlugin._begin_customize_resources<class_EditorExportPlugin_private_method__begin_customize_resources>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `$DOCS_URL/tutorials/platform/consoles.html <Console support in Godot>`__
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_EditorExportPlatform_method_get_os_name:
 
@@ -59,12 +59,12 @@ Method Descriptions
 
 :ref:`String<class_String>` **get_os_name** **(** **)** |const|
 
-Returns the name of the export operating system handled by this **EditorExportPlatform** class, as a friendly string. Possible return values are ``Windows``, ``Linux``, ``macOS``, ``Android``, ``iOS``, and ``Web``.
+以友好字符串的形式，返回由该 **EditorExportPlatform** 类处理的导出操作系统的名称。可能的返回值为 ``Windows``\ 、\ ``Linux``\ 、\ ``macOS``\ 、\ ``Android``\ 、\ ``iOS``\ 、和 ``Web``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

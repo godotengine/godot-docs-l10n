@@ -10,31 +10,31 @@
 PhysicsServer3DRenderingServerHandler
 =====================================
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-用于为 :ref:`PhysicsServer3DExtension._soft_body_update_rendering_server<class_PhysicsServer3DExtension_method__soft_body_update_rendering_server>` 提供柔体渲染处理器的类。
+用于为 :ref:`PhysicsServer3DExtension._soft_body_update_rendering_server<class_PhysicsServer3DExtension_private_method__soft_body_update_rendering_server>` 提供柔体渲染处理器的类。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`_set_aabb<class_PhysicsServer3DRenderingServerHandler_method__set_aabb>` **(** :ref:`AABB<class_AABB>` aabb **)** |virtual|                                              |
-   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`_set_normal<class_PhysicsServer3DRenderingServerHandler_method__set_normal>` **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` normal **)** |virtual| |
-   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`_set_vertex<class_PhysicsServer3DRenderingServerHandler_method__set_vertex>` **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` vertex **)** |virtual| |
-   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`set_aabb<class_PhysicsServer3DRenderingServerHandler_method_set_aabb>` **(** :ref:`AABB<class_AABB>` aabb **)**                                                          |
-   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`set_normal<class_PhysicsServer3DRenderingServerHandler_method_set_normal>` **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` normal **)**             |
-   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`set_vertex<class_PhysicsServer3DRenderingServerHandler_method_set_vertex>` **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` vertex **)**             |
-   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`_set_aabb<class_PhysicsServer3DRenderingServerHandler_private_method__set_aabb>` **(** :ref:`AABB<class_AABB>` aabb **)** |virtual|                                              |
+   +------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`_set_normal<class_PhysicsServer3DRenderingServerHandler_private_method__set_normal>` **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` normal **)** |virtual| |
+   +------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`_set_vertex<class_PhysicsServer3DRenderingServerHandler_private_method__set_vertex>` **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` vertex **)** |virtual| |
+   +------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`set_aabb<class_PhysicsServer3DRenderingServerHandler_method_set_aabb>` **(** :ref:`AABB<class_AABB>` aabb **)**                                                                  |
+   +------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`set_normal<class_PhysicsServer3DRenderingServerHandler_method_set_normal>` **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` normal **)**                     |
+   +------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`set_vertex<class_PhysicsServer3DRenderingServerHandler_method_set_vertex>` **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` vertex **)**                     |
+   +------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -42,44 +42,44 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_PhysicsServer3DRenderingServerHandler_method__set_aabb:
+.. _class_PhysicsServer3DRenderingServerHandler_private_method__set_aabb:
 
 .. rst-class:: classref-method
 
 void **_set_aabb** **(** :ref:`AABB<class_AABB>` aabb **)** |virtual|
 
-Called by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` to set the bounding box for the :ref:`SoftBody3D<class_SoftBody3D>`.
+由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 调用以设置 :ref:`SoftBody3D<class_SoftBody3D>` 的边界框。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_PhysicsServer3DRenderingServerHandler_method__set_normal:
+.. _class_PhysicsServer3DRenderingServerHandler_private_method__set_normal:
 
 .. rst-class:: classref-method
 
 void **_set_normal** **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` normal **)** |virtual|
 
-Called by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` to set the normal for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
+由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 调用，以在 ``vertex_id`` 指定的索引处设置 :ref:`SoftBody3D<class_SoftBody3D>` 顶点的法线。
 
-\ **Note:** The ``normal`` parameter used to be of type ``const void*`` prior to Godot 4.2.
+\ **注意：**\ 在 Godot 4.2 之前，\ ``normal`` 参数的类型为 ``const void*``\ 。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_PhysicsServer3DRenderingServerHandler_method__set_vertex:
+.. _class_PhysicsServer3DRenderingServerHandler_private_method__set_vertex:
 
 .. rst-class:: classref-method
 
 void **_set_vertex** **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` vertex **)** |virtual|
 
-Called by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` to set the position for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
+由 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 调用，以在 ``vertex_id`` 指定的索引处设置 :ref:`SoftBody3D<class_SoftBody3D>` 顶点的位置。
 
-\ **Note:** The ``vertex`` parameter used to be of type ``const void*`` prior to Godot 4.2.
+\ **注意：**\ 在 Godot 4.2 之前，\ ``vertex`` 参数的类型为 ``const void*``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -91,7 +91,7 @@ Called by the :ref:`PhysicsServer3D<class_PhysicsServer3D>` to set the position 
 
 void **set_aabb** **(** :ref:`AABB<class_AABB>` aabb **)**
 
-Sets the bounding box for the :ref:`SoftBody3D<class_SoftBody3D>`.
+设置该 :ref:`SoftBody3D<class_SoftBody3D>` 的边界框。
 
 .. rst-class:: classref-item-separator
 
@@ -103,7 +103,7 @@ Sets the bounding box for the :ref:`SoftBody3D<class_SoftBody3D>`.
 
 void **set_normal** **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` normal **)**
 
-Sets the normal for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
+在由 ``vertex_id`` 指定的索引处设置该 :ref:`SoftBody3D<class_SoftBody3D>` 顶点的法线。
 
 .. rst-class:: classref-item-separator
 
@@ -115,12 +115,12 @@ Sets the normal for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index 
 
 void **set_vertex** **(** :ref:`int<class_int>` vertex_id, :ref:`Vector3<class_Vector3>` vertex **)**
 
-Sets the position for the :ref:`SoftBody3D<class_SoftBody3D>` vertex at the index specified by ``vertex_id``.
+在由 ``vertex_id`` 指定的索引处设置该 :ref:`SoftBody3D<class_SoftBody3D>` 顶点的位置。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

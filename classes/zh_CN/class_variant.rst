@@ -14,8 +14,8 @@ Godot 中最重要的数据类型。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 在计算机编程中，Variant（变体）类是用来存储各种其他类型的类。像 PHP、 Lua、 JavaScript 和 GDScript 这样的动态编程语言喜欢用它们在后端存储变量数据。使用 Variant，属性可以自由地更改值类型。
 
@@ -38,7 +38,7 @@ Description
     var boo = "boo 是字符串！";
     var ref = new RefCounted(); // var 非常适合与构造函数配合使用。
     
-    // Godot 也提供了 Variant 类，类似于所有与 Variant 兼容类型的 union。
+    // Godot 也提供了 Variant 类，类似于一个与所有 Variant 兼容类型的联合体。
     Variant fooVar = 2; // fooVar 是动态类型的整数（在 Variant 类型中存储为 `long`）。
     fooVar = "现在 fooVar 是字符串！";
     fooVar = new RefCounted(); // fooVar 是 GodotObject。
@@ -49,7 +49,7 @@ Godot 在 Variant 中跟踪所有脚本 API 变量。你一直在无意中使用
 
 - GDScript 会自动将数值进行包装。默认情况下会将所有数据保存在普通的 Variant 中，也可以选择对变量类型执行自定义的静态类型规则。
 
-- C# 是静态类型的，但是当它需要表示动态值时，就会在需要 Godot 的 Variant 类的地方使用它自己实现的 ``Variant`` 类型。\ ``Variant`` 可以用任意兼容类型隐式赋值，但反之则需要显式类型转换。
+- C# 是静态类型的，但是当它需要表示动态值时，就会在需要 Godot 的 Variant 类的地方使用它自己实现的 **Variant** 类型。C# Variant 可以用任意兼容类型隐式赋值，但反之则需要显式类型转换。
 
 全局函数 :ref:`@GlobalScope.typeof<class_@GlobalScope_method_typeof>` 返回的是枚举类型的值，表示当前变量中所存储的 Variant 类型（见 :ref:`Variant.Type<enum_@GlobalScope_Variant.Type>`\ ）。
 
@@ -69,7 +69,7 @@ Godot 在 Variant 中跟踪所有脚本 API 变量。你一直在无意中使用
             # 要获取实际的 Object 类型名称，你需要使用 `get_class()` 方法。
             print("foo is a(n) %s" % foo.get_class()) # 将类名注入格式字符串中。
             # 另外请注意，目前没有比较方便的方法来获取脚本的 `class_name` 字符串。
-            # 如果要获取，你可以使用 ProjectSettings.get_global_class_list。
+            # 如果要获取，你可以使用 ProjectSettings.get_global_class_list()。
 
  .. code-tab:: csharp
 
@@ -123,19 +123,19 @@ Variant：
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`Variant 类简介 <../contributing/development/core_and_modules/variant_class>`
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

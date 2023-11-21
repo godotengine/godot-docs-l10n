@@ -10,30 +10,30 @@
 BaseMaterial3D
 ==============
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`ORMMaterial3D<class_ORMMaterial3D>`, :ref:`StandardMaterial3D<class_StandardMaterial3D>`
+**派生：** :ref:`ORMMaterial3D<class_ORMMaterial3D>`, :ref:`StandardMaterial3D<class_StandardMaterial3D>`
 
-Abstract base class for defining the 3D rendering properties of meshes.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-This class serves as a default material with a wide variety of rendering features and properties without the need to write shader code. See the tutorial below for details.
+用于定义网格 3D 渲染属性的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
+
+这个类提供了默认的材质，具有多种渲染功能和属性，无需编写着色器代码。详情见下面的教程。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
 
 - :doc:`标准 3D 材质与 ORM 3D 材质 <../tutorials/3d/standard_material_3d>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -276,8 +276,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -302,8 +302,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_BaseMaterial3D_TextureParam:
 
@@ -1101,7 +1101,7 @@ enum **Flags**:
 
 :ref:`Flags<enum_BaseMaterial3D_Flags>` **FLAG_DISABLE_FOG** = ``21``
 
-Disables receiving depth-based or volumetric fog.
+禁用接收基于深度或体积雾。
 
 .. _class_BaseMaterial3D_constant_FLAG_MAX:
 
@@ -1227,7 +1227,7 @@ enum **BillboardMode**:
 
 :ref:`BillboardMode<enum_BaseMaterial3D_BillboardMode>` **BILLBOARD_PARTICLES** = ``3``
 
-分配给 :ref:`GPUParticles3D<class_GPUParticles3D>` 和 :ref:`CPUParticles3D<class_CPUParticles3D>` 节点时被用于粒子系统。启用 ``particles_anim_*`` 属性。
+分配给 :ref:`GPUParticles3D<class_GPUParticles3D>` 和 :ref:`CPUParticles3D<class_CPUParticles3D>` 节点时被用于粒子系统（翻页动画）。启用 ``particles_anim_*`` 属性。
 
 \ :ref:`ParticleProcessMaterial.anim_speed_min<class_ParticleProcessMaterial_property_anim_speed_min>` 或 :ref:`CPUParticles3D.anim_speed_min<class_CPUParticles3D_property_anim_speed_min>` 也应设置为大于零的值，以便播放动画。
 
@@ -1355,8 +1355,8 @@ enum **DistanceFadeMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_BaseMaterial3D_property_albedo_color:
 
@@ -2003,7 +2003,7 @@ Alpha 剪刀将丢弃值的阈值。较高的值将导致更多像素被丢弃�
 - void **set_flag** **(** :ref:`Flags<enum_BaseMaterial3D_Flags>` flag, :ref:`bool<class_bool>` enable **)**
 - :ref:`bool<class_bool>` **get_flag** **(** :ref:`Flags<enum_BaseMaterial3D_Flags>` flag **)** |const|
 
-If ``true``, the object will not be affected by fog (neither volumetric nor depth fog). This is useful for unshaded or transparent materials (e.g. particles), which without this setting will be affected even if fully transparent.
+如果为 ``true``\ ，则对象不会受到雾的影响（包括体积雾和深度雾）。可用于不着色材质和透明材质（例如例子），不开启时即便完全透明也会受到影响。
 
 .. rst-class:: classref-item-separator
 
@@ -2039,7 +2039,7 @@ If ``true``, the object will not be affected by fog (neither volumetric nor dept
 
 物体看起来完全不透明的距离。
 
-\ **注意：**\ 如果 ``distance_fade_max_distance`` 小于 ``distance_fade_min_distance``\ ，则行为相反。物体将在 ``distance_fade_max_distance`` 处开始逐渐消失，并在到达 ``distance_fade_min_distance`` 时完全消失。
+\ **注意：**\ 如果 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` 小于 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>`\ ，则行为相反。物体将在 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` 处开始逐渐消失，并在到达 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>` 时完全消失。
 
 .. rst-class:: classref-item-separator
 
@@ -2058,7 +2058,7 @@ If ``true``, the object will not be affected by fog (neither volumetric nor dept
 
 物体开始变得可见的距离。如果物体的距离小于这个距离，它将是不可见的。
 
-\ **注意：**\ 如果 ``distance_fade_min_distance`` 大于 ``distance_fade_max_distance``\ ，则行为将相反。物体将在 ``distance_fade_max_distance`` 处开始逐渐消失，并在到达 ``distance_fade_min_distance`` 时完全消失。
+\ **注意：**\ 如果 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>` 大于 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>`\ ，则行为将相反。物体将在 :ref:`distance_fade_max_distance<class_BaseMaterial3D_property_distance_fade_max_distance>` 处开始逐渐消失，并在到达 :ref:`distance_fade_min_distance<class_BaseMaterial3D_property_distance_fade_min_distance>` 时完全消失。
 
 .. rst-class:: classref-item-separator
 
@@ -2501,7 +2501,7 @@ If ``true``, the object will not be affected by fog (neither volumetric nor dept
 - void **set_msdf_outline_size** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_msdf_outline_size** **(** **)**
 
-The width of the shape outline.
+形状轮廓的宽度。
 
 .. rst-class:: classref-item-separator
 
@@ -3415,8 +3415,8 @@ The width of the shape outline.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_BaseMaterial3D_method_get_feature:
 
@@ -3486,10 +3486,10 @@ void **set_texture** **(** :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`
 
 设置由 ``param`` 指定的插槽的纹理。有关可用插槽，请参阅 :ref:`TextureParam<enum_BaseMaterial3D_TextureParam>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,23 +10,23 @@
 AnimatableBody2D
 ================
 
-**Inherits:** :ref:`StaticBody2D<class_StaticBody2D>` **<** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`StaticBody2D<class_StaticBody2D>` **<** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 无法被外力移动的 2D 物理物体。手动移动时会影响路径上的其他物体。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-An animatable 2D physics body. It can't be moved by external forces or contacts, but can be moved manually by other means such as code, :ref:`AnimationPlayer<class_AnimationPlayer>`\ s (with :ref:`AnimationPlayer.playback_process_mode<class_AnimationPlayer_property_playback_process_mode>` set to :ref:`AnimationPlayer.ANIMATION_PROCESS_PHYSICS<class_AnimationPlayer_constant_ANIMATION_PROCESS_PHYSICS>`), and :ref:`RemoteTransform2D<class_RemoteTransform2D>`.
+可动画的 2D 物理物体。无法因外力和接触而移动，但可以通过代码、\ :ref:`AnimationMixer<class_AnimationMixer>`\ （\ :ref:`AnimationMixer.callback_mode_process<class_AnimationMixer_property_callback_mode_process>` 设为 :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`\ ）、\ :ref:`RemoteTransform2D<class_RemoteTransform2D>` 等方法手动移动。
 
-When **AnimatableBody2D** is moved, its linear and angular velocity are estimated and used to affect other physics bodies in its path. This makes it useful for moving platforms, doors, and other moving objects.
+\ **AnimatableBody2D** 发生移动时，会对线速度和角速度进行估算，并用于影响其路径上的其他物理物体。因此适用于移动平台、门等移动的对象。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AnimatableBody2D_property_sync_to_physics:
 
@@ -57,10 +57,10 @@ Property Descriptions
 
 如果为 ``true``\ ，则物体的运动将与物理帧同步。当通过 :ref:`AnimationPlayer<class_AnimationPlayer>` 为运动设置动画时，例如在移动的平台上，这个功能很有用。\ **不要**\ 与\ :ref:`PhysicsBody2D.move_and_collide<class_PhysicsBody2D_method_move_and_collide>`\ 一起使用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,32 +10,32 @@
 EditorSyntaxHighlighter
 =======================
 
-**Inherits:** :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 :ref:`ScriptEditor<class_ScriptEditor>` 所使用的 :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` 的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Base class that all :ref:`SyntaxHighlighter<class_SyntaxHighlighter>`\ s used by the :ref:`ScriptEditor<class_ScriptEditor>` extend from.
+扩展了 :ref:`ScriptEditor<class_ScriptEditor>` 的编辑器所使用的所有 :ref:`SyntaxHighlighter<class_SyntaxHighlighter>` 的基类。
 
-Add a syntax highlighter to an individual script by calling :ref:`ScriptEditorBase.add_syntax_highlighter<class_ScriptEditorBase_method_add_syntax_highlighter>`. To apply to all scripts on open, call :ref:`ScriptEditor.register_syntax_highlighter<class_ScriptEditor_method_register_syntax_highlighter>`.
+请通过调用 :ref:`ScriptEditorBase.add_syntax_highlighter<class_ScriptEditorBase_method_add_syntax_highlighter>` 为各个脚本添加语法高亮器。要在打开时应用于所有脚本，请调用 :ref:`ScriptEditor.register_syntax_highlighter<class_ScriptEditor_method_register_syntax_highlighter>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                       | :ref:`_get_name<class_EditorSyntaxHighlighter_method__get_name>` **(** **)** |virtual| |const|                               |
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_supported_languages<class_EditorSyntaxHighlighter_method__get_supported_languages>` **(** **)** |virtual| |const| |
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`_get_name<class_EditorSyntaxHighlighter_private_method__get_name>` **(** **)** |virtual| |const|                               |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_supported_languages<class_EditorSyntaxHighlighter_private_method__get_supported_languages>` **(** **)** |virtual| |const| |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -43,10 +43,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EditorSyntaxHighlighter_method__get_name:
+.. _class_EditorSyntaxHighlighter_private_method__get_name:
 
 .. rst-class:: classref-method
 
@@ -58,7 +58,7 @@ Method Descriptions
 
 ----
 
-.. _class_EditorSyntaxHighlighter_method__get_supported_languages:
+.. _class_EditorSyntaxHighlighter_private_method__get_supported_languages:
 
 .. rst-class:: classref-method
 
@@ -66,10 +66,10 @@ Method Descriptions
 
 虚函数，可以在重写后返回所支持的语言名称。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

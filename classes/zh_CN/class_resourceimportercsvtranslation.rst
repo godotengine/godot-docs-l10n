@@ -10,18 +10,18 @@
 ResourceImporterCSVTranslation
 ==============================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports comma-separated values
+导入 CSV
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Comma-separated values are a plain text table storage format. The format's simplicity makes it easy to edit in any text editor or spreadsheet software. This makes it a common choice for game localization.
+逗号分隔值是纯文本表格存储格式。该格式的简单性使其可以轻松地在任何文本编辑器或电子表格软件中进行编辑。这使其成为游戏本地化的常见选择。
 
-\ **Example CSV file:**\ 
+\ **示例 CSV 文件：**\ 
 
 ::
 
@@ -33,15 +33,15 @@ Comma-separated values are a plain text table storage format. The format's simpl
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Importing translations <../tutorials/assets_pipeline/importing_translations>`
+- :doc:`导入翻译 <../tutorials/assets_pipeline/importing_translations>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ResourceImporterCSVTranslation_property_compress:
 
@@ -67,7 +67,7 @@ Property Descriptions
 
 :ref:`bool<class_bool>` **compress** = ``true``
 
-If ``true``, creates an :ref:`OptimizedTranslation<class_OptimizedTranslation>` instead of a :ref:`Translation<class_Translation>`. This makes the resulting file smaller at the cost of a small CPU overhead.
+如果为 ``true``\ ，则会创建 :ref:`OptimizedTranslation<class_OptimizedTranslation>` 而不是 :ref:`Translation<class_Translation>`\ 。这样得到的文件会更小，但代价是 CPU 会消耗得稍多一些。
 
 .. rst-class:: classref-item-separator
 
@@ -79,12 +79,12 @@ If ``true``, creates an :ref:`OptimizedTranslation<class_OptimizedTranslation>` 
 
 :ref:`int<class_int>` **delimiter** = ``0``
 
-The delimiter to use in the CSV file. The default value matches the common CSV convention. Tab-separated values are sometimes called TSV files.
+在 CSV 文件中使用的分隔符。该默认值符合常见的 CSV 约定。制表符分隔值有时被称为 TSV 文件。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

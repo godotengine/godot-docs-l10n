@@ -10,29 +10,29 @@
 CanvasItem
 ==========
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>`
+**派生：** :ref:`Control<class_Control>`, :ref:`Node2D<class_Node2D>`
 
 2D 空间中所有对象的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-2D 空间中所有对象的抽象基类。画布项目（Canvas Item）以树状排列；子节点继承并扩展其父节点的变换。\ **CanvasItem** 由 :ref:`Control<class_Control>` 扩展为 GUI 相关的节点，由 :ref:`Node2D<class_Node2D>` 扩展为 2D 游戏对象。
+2D 空间中所有对象的抽象基类。画布项目以树状排列；子节点继承并扩展其父节点的变换。\ **CanvasItem** 由 :ref:`Control<class_Control>` 扩展为 GUI 相关的节点，由 :ref:`Node2D<class_Node2D>` 扩展为 2D 游戏对象。
 
-任何 **CanvasItem** 都可以进行绘图。绘图时，引擎会调用 :ref:`queue_redraw<class_CanvasItem_method_queue_redraw>`\ ，然后节点就会在空闲时接收到请求重绘的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>`\ 。因此画布项目不需要每一帧都重绘，显著提升了性能。这个类还提供了几个用于在 **CanvasItem** 上绘图的函数（见 ``draw_*`` 函数）。不过这些函数都只能在 :ref:`_draw<class_CanvasItem_method__draw>` 及其对应的 :ref:`Object._notification<class_Object_method__notification>` 或连接到 :ref:`draw<class_CanvasItem_signal_draw>` 的方法内使用。
+任何 **CanvasItem** 都可以进行绘图。绘图时，引擎会调用 :ref:`queue_redraw<class_CanvasItem_method_queue_redraw>`\ ，然后 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 就会在空闲时被接收到以请求重绘。因此，画布项目不需要每一帧都重绘，这显著提升了性能。这个类还提供了几个用于在 **CanvasItem** 上绘图的函数（见 ``draw_*`` 函数）。不过这些函数都只能在 :ref:`_draw<class_CanvasItem_private_method__draw>` 及其对应的 :ref:`Object._notification<class_Object_private_method__notification>` 或连接到 :ref:`draw<class_CanvasItem_signal_draw>` 的方法内使用。
 
-画布项目是按树状顺序绘制的。默认情况下，子项目位于父项目的上方，因此根 **CanvasItem** 将被画在所有项目的后面。这种行为可以针对单个画布项目进行更改。
+画布项目在其画布层上是按树状顺序绘制的。默认情况下，子项目位于其父项目的上方，因此根 **CanvasItem** 将被画在所有项目的后面。这种行为可以针对每个画布项目进行更改。
 
-\ **CanvasItem** 可以隐藏，隐藏时也会隐藏其子项目。通过调整画布项目的各种其它属性，你还可以调制它的颜色（通过 :ref:`modulate<class_CanvasItem_property_modulate>` 或 :ref:`self_modulate<class_CanvasItem_property_self_modulate>`\ ）、更改 Z 索引、混合模式等。
+\ **CanvasItem** 可以隐藏，隐藏时也会隐藏其子项目。通过调整 **CanvasItem** 的各种其它属性，你还可以调制它的颜色（通过 :ref:`modulate<class_CanvasItem_property_modulate>` 或 :ref:`self_modulate<class_CanvasItem_property_self_modulate>`\ ）、更改 Z 索引、混合模式等。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`Viewport 和画布变换 <../tutorials/2d/2d_transforms>`
 
@@ -42,8 +42,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -82,14 +82,14 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                  | :ref:`_draw<class_CanvasItem_method__draw>` **(** **)** |virtual|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+   | void                                  | :ref:`_draw<class_CanvasItem_private_method__draw>` **(** **)** |virtual|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    +---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                  | :ref:`draw_animation_slice<class_CanvasItem_method_draw_animation_slice>` **(** :ref:`float<class_float>` animation_length, :ref:`float<class_float>` slice_begin, :ref:`float<class_float>` slice_end, :ref:`float<class_float>` offset=0.0 **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
    +---------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -210,8 +210,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_CanvasItem_signal_draw:
 
@@ -219,7 +219,7 @@ Signals
 
 **draw** **(** **)**
 
-当该 **CanvasItem** 必须重绘时发出，发生在相关的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 通知\ *之后*\ ，调用 :ref:`_draw<class_CanvasItem_method__draw>` *之前*\ 。
+当该 **CanvasItem** 必须重绘时发出，发生在相关的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 通知\ *之后*\ ，调用 :ref:`_draw<class_CanvasItem_private_method__draw>` *之前*\ 。
 
 \ **注意：**\ 延迟连接无法使用 ``draw_*`` 方法进行绘制。
 
@@ -265,8 +265,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_CanvasItem_TextureFilter:
 
@@ -440,8 +440,8 @@ enum **ClipChildrenMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_CanvasItem_constant_NOTIFICATION_TRANSFORM_CHANGED:
 
@@ -465,7 +465,7 @@ Constants
 
 **NOTIFICATION_DRAW** = ``30``
 
-要求绘制该 **CanvasItem**\ （见 :ref:`_draw<class_CanvasItem_method__draw>`\ ）。
+要求绘制该 **CanvasItem**\ （见 :ref:`_draw<class_CanvasItem_private_method__draw>`\ ）。
 
 .. _class_CanvasItem_constant_NOTIFICATION_VISIBILITY_CHANGED:
 
@@ -505,8 +505,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CanvasItem_property_clip_children:
 
@@ -773,10 +773,10 @@ Z 索引。控制节点的渲染顺序。具有较高 Z 索引的节点将显示
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_CanvasItem_method__draw:
+.. _class_CanvasItem_private_method__draw:
 
 .. rst-class:: classref-method
 
@@ -784,7 +784,7 @@ void **_draw** **(** **)** |virtual|
 
 当 **CanvasItem** 被请求重绘时调用（手动调用或者引擎调用 :ref:`queue_redraw<class_CanvasItem_method_queue_redraw>` 之后）。
 
-对应于 :ref:`Object._notification<class_Object_method__notification>` 中的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 通知。
+对应于 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 通知。
 
 .. rst-class:: classref-item-separator
 
@@ -808,9 +808,9 @@ void **draw_animation_slice** **(** :ref:`float<class_float>` animation_length, 
 
 void **draw_arc** **(** :ref:`Vector2<class_Vector2>` center, :ref:`float<class_float>` radius, :ref:`float<class_float>` start_angle, :ref:`float<class_float>` end_angle, :ref:`int<class_int>` point_count, :ref:`Color<class_Color>` color, :ref:`float<class_float>` width=-1.0, :ref:`bool<class_bool>` antialiased=false **)**
 
-使用一个 uniform ``color`` 和 ``width`` 以及可选的抗锯齿（仅支持正 ``width`` ），在给定的角度之间绘制一条未填充的弧线。\ ``point_count`` 的值越大，该曲线越平滑。另请参见 :ref:`draw_circle<class_CanvasItem_method_draw_circle>`\ 。
+使用一个 uniform ``color`` 和 ``width`` 以及可选的抗锯齿（仅支持正 ``width`` ），在给定的角度之间绘制一条未填充的弧线。\ ``point_count`` 的值越大，该曲线越平滑。另见 :ref:`draw_circle<class_CanvasItem_method_draw_circle>`\ 。
 
-如果 ``width`` 为负，则使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制弧线。这意味着当缩放 CanvasItem 时，弧线将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
+如果 ``width`` 为负，则它将被忽略，并使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制该弧线。这意味着当缩放 CanvasItem 时，弧线将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
 如果 ``start_angle < end_angle`` ，则圆弧是从 ``start_angle`` 朝向 ``end_angle`` 的值绘制的，即是顺时针方向；否则为逆时针方向。以相反的顺序传递相同的角度，将产生相同的弧线。如果 ``start_angle`` 和 ``end_angle`` 的差的绝对值大于 :ref:`@GDScript.TAU<class_@GDScript_constant_TAU>` 弧度，则绘制一个完整的圆弧（即弧线不会与自身重叠）。
 
@@ -872,7 +872,7 @@ void **draw_colored_polygon** **(** :ref:`PackedVector2Array<class_PackedVector2
 
 void **draw_dashed_line** **(** :ref:`Vector2<class_Vector2>` from, :ref:`Vector2<class_Vector2>` to, :ref:`Color<class_Color>` color, :ref:`float<class_float>` width=-1.0, :ref:`float<class_float>` dash=2.0, :ref:`bool<class_bool>` aligned=true **)**
 
-使用给定的颜色和宽度，从一个 2D 点到另一个点绘制一条虚线。另请参见 :ref:`draw_multiline<class_CanvasItem_method_draw_multiline>` 和 :ref:`draw_polyline<class_CanvasItem_method_draw_polyline>`\ 。
+使用给定的颜色和宽度，从一个 2D 点到另一个点绘制一条虚线。另见 :ref:`draw_multiline<class_CanvasItem_method_draw_multiline>` 和 :ref:`draw_polyline<class_CanvasItem_method_draw_polyline>`\ 。
 
 如果 ``width`` 为负，则将绘制一个两点图元而不是一个四点图元。这意味着当缩放 CanvasItem 时，线条部分将保持细长。如果不需要此行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
 
@@ -1037,9 +1037,9 @@ void **draw_polygon** **(** :ref:`PackedVector2Array<class_PackedVector2Array>` 
 
 void **draw_polyline** **(** :ref:`PackedVector2Array<class_PackedVector2Array>` points, :ref:`Color<class_Color>` color, :ref:`float<class_float>` width=-1.0, :ref:`bool<class_bool>` antialiased=false **)**
 
-使用一个 uniform ``color`` 和 ``width`` 以及可选的抗锯齿（仅支持正 ``width`` ），绘制相互连接的线段。绘制大量线条时，这比使用单独的 :ref:`draw_line<class_CanvasItem_method_draw_line>` 调用更快。要绘制不相连的的线段，请改用 :ref:`draw_multiline<class_CanvasItem_method_draw_multiline>`\ 。另见 :ref:`draw_polygon<class_CanvasItem_method_draw_polygon>`\ 。
+使用一致的 ``color`` 和 ``width`` 以及可选的抗锯齿（仅支持正 ``width`` ），绘制相互连接的线段。绘制大量线条时，这比使用单独的 :ref:`draw_line<class_CanvasItem_method_draw_line>` 调用更快。要绘制不相连的的线段，请改用 :ref:`draw_multiline<class_CanvasItem_method_draw_multiline>`\ 。另见 :ref:`draw_polygon<class_CanvasItem_method_draw_polygon>`\ 。
 
-如果 ``width`` 为负，则使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制折线。这意味着当缩放 CanvasItem 时，多段线将保持为细线。如果不需要该行为，请传递一个正的 ``width``\ ，如 ``1.0``\ 。
+如果 ``width`` 为负，则它将被忽略，并使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制该折线。这意味着当 CanvasItem 被缩放时，折线将保持为细线。如果不需要该行为，请传入一个正的 ``width``\ ，如 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1053,7 +1053,7 @@ void **draw_polyline_colors** **(** :ref:`PackedVector2Array<class_PackedVector2
 
 绘制相连的线段，使用一致的宽度 ``width``\ ，按点指定颜色，还可以开启抗锯齿（仅支持正的 ``width``\ ）。将颜色与线段上的点匹配时，使用的是 ``points`` 和 ``colors`` 的索引，即每条线段填充的都是在两个端点之间颜色的渐变色。绘制大量线段时，这种方法比使用 :ref:`draw_line<class_CanvasItem_method_draw_line>` 一条条画要快。要绘制不相连的线段，请改用 :ref:`draw_multiline_colors<class_CanvasItem_method_draw_multiline_colors>`\ 。另见 :ref:`draw_polygon<class_CanvasItem_method_draw_polygon>`\ 。
 
-如果 ``width`` 为负数，则折线使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制。此时如果 CanvasItem 发生缩放，则线段仍然会很细。如果不想要这样的行为，请传入 ``1.0`` 等正数 ``width``\ 。
+如果 ``width`` 为负，则它将被忽略，并使用 :ref:`RenderingServer.PRIMITIVE_LINE_STRIP<class_RenderingServer_constant_PRIMITIVE_LINE_STRIP>` 绘制该折线。这意味着当 CanvasItem 被缩放时，折线将保持为细线。如果不需要该行为，请传入一个正的 ``width``\ ，如 ``1.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1428,7 +1428,7 @@ void **hide** **(** **)**
 
 :ref:`bool<class_bool>` **is_visible_in_tree** **(** **)** |const|
 
-如果该节点位于 :ref:`SceneTree<class_SceneTree>` 中，并且其 :ref:`visible<class_CanvasItem_property_visible>` 属性为 ``true``\ ，并且其所有上层节点也均可见，则返回 ``true``\ 。如果任何上层节点被隐藏，则该节点在场景树中将不可见，因此也不会进行绘制（见 :ref:`_draw<class_CanvasItem_method__draw>`\ ）。
+如果该节点位于 :ref:`SceneTree<class_SceneTree>` 中，并且其 :ref:`visible<class_CanvasItem_property_visible>` 属性为 ``true``\ ，并且其所有上层节点也均可见，则返回 ``true``\ 。如果任何上层节点被隐藏，则该节点在场景树中将不可见，因此也不会进行绘制（见 :ref:`_draw<class_CanvasItem_private_method__draw>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1478,7 +1478,7 @@ void **move_to_front** **(** **)**
 
 void **queue_redraw** **(** **)**
 
-将该 **CanvasItem** 加入重绘队列。空闲时，如果 **CanvasItem** 可见，则会发送 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 并调用 :ref:`_draw<class_CanvasItem_method__draw>`\ 。即便多次调用这个方法，每帧也都只会发生\ **一次**\ 绘制。
+将该 **CanvasItem** 加入重绘队列。空闲时，如果 **CanvasItem** 可见，则会发送 :ref:`NOTIFICATION_DRAW<class_CanvasItem_constant_NOTIFICATION_DRAW>` 并调用 :ref:`_draw<class_CanvasItem_private_method__draw>`\ 。即便多次调用这个方法，每帧也都只会发生\ **一次**\ 绘制。
 
 .. rst-class:: classref-item-separator
 
@@ -1528,10 +1528,10 @@ void **show** **(** **)**
 
 如果该 **CanvasItem** 目前是隐藏的，则将其显示。相当于将 :ref:`visible<class_CanvasItem_property_visible>` 设为 ``true``\ 。对于继承自 :ref:`Popup<class_Popup>` 的控件，让它们可见的正确做法是换成调用各种 ``popup*()`` 函数的其中之一。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

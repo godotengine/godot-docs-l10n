@@ -10,21 +10,21 @@
 Geometry2D
 ==========
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 提供常见 2D 几何运算的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 为创建几何形状，计算形状之间的交集，以及处理 2D 中的各种其他几何操作提供了一组辅助函数。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -83,8 +83,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Geometry2D_PolyBooleanOperation:
 
@@ -214,8 +214,8 @@ enum **PolyEndType**:
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Geometry2D_method_clip_polygons:
 
@@ -530,10 +530,10 @@ Method Descriptions
 
 对由 ``polygon`` 中的点指定的多边形进行三角化。 返回一个 :ref:`PackedInt32Array<class_PackedInt32Array>`\ ，其中每个三角形由 ``polygon`` 中的三个连续点的索引组成（即返回的数组将具有 ``n * 3`` 个元素，其中 ``n`` 是找到的三角形的数量）。输出三角形将始终为逆时针旋转，如果为顺时针旋转，则轮廓将翻转。如果三角化没有成功，则返回一个空的 :ref:`PackedInt32Array<class_PackedInt32Array>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

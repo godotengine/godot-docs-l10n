@@ -10,16 +10,16 @@
 GLTFDocumentExtension
 =====================
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`GLTFDocumentExtensionConvertImporterMesh<class_GLTFDocumentExtensionConvertImporterMesh>`
+**派生：** :ref:`GLTFDocumentExtensionConvertImporterMesh<class_GLTFDocumentExtensionConvertImporterMesh>`
 
 :ref:`GLTFDocument<class_GLTFDocument>` 扩展类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 通过允许在 GLTF 导入或导出的各个阶段运行任意代码，来扩展 :ref:`GLTFDocument<class_GLTFDocument>` 类的功能。
 
@@ -27,53 +27,60 @@ Description
 
 \ **注意：**\ 与 GLTFDocument 本身一样，所有 GLTFDocumentExtension 类都必须是无状态的才能正常运行。如果需要存储数据，请使用 :ref:`GLTFState<class_GLTFState>` 或 :ref:`GLTFNode<class_GLTFNode>` 中的 ``set_additional_data`` 和 ``get_additional_data`` 方法。
 
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`_convert_scene_node<class_GLTFDocumentExtension_method__convert_scene_node>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Node<class_Node>` scene_node **)** |virtual|                                                                                                  |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_export_node<class_GLTFDocumentExtension_method__export_node>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` json, :ref:`Node<class_Node>` node **)** |virtual|                                                                            |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_export_post<class_GLTFDocumentExtension_method__export_post>` **(** :ref:`GLTFState<class_GLTFState>` state **)** |virtual|                                                                                                                                                                                               |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_export_preflight<class_GLTFDocumentExtension_method__export_preflight>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Node<class_Node>` root **)** |virtual|                                                                                                                                                       |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_export_preserialize<class_GLTFDocumentExtension_method__export_preserialize>` **(** :ref:`GLTFState<class_GLTFState>` state **)** |virtual|                                                                                                                                                                               |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Node3D<class_Node3D>`                       | :ref:`_generate_scene_node<class_GLTFDocumentExtension_method__generate_scene_node>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Node<class_Node>` scene_parent **)** |virtual|                                                                                              |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`String<class_String>`                       | :ref:`_get_image_file_extension<class_GLTFDocumentExtension_method__get_image_file_extension>` **(** **)** |virtual|                                                                                                                                                                                                             |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_method__get_saveable_image_formats>` **(** **)** |virtual|                                                                                                                                                                                                         |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_supported_extensions<class_GLTFDocumentExtension_method__get_supported_extensions>` **(** **)** |virtual|                                                                                                                                                                                                             |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_import_node<class_GLTFDocumentExtension_method__import_node>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` json, :ref:`Node<class_Node>` node **)** |virtual|                                                                            |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_import_post<class_GLTFDocumentExtension_method__import_post>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Node<class_Node>` root **)** |virtual|                                                                                                                                                                 |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_import_post_parse<class_GLTFDocumentExtension_method__import_post_parse>` **(** :ref:`GLTFState<class_GLTFState>` state **)** |virtual|                                                                                                                                                                                   |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_import_preflight<class_GLTFDocumentExtension_method__import_preflight>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`PackedStringArray<class_PackedStringArray>` extensions **)** |virtual|                                                                                                                       |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_parse_image_data<class_GLTFDocumentExtension_method__parse_image_data>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`PackedByteArray<class_PackedByteArray>` image_data, :ref:`String<class_String>` mime_type, :ref:`Image<class_Image>` ret_image **)** |virtual|                                               |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_parse_node_extensions<class_GLTFDocumentExtension_method__parse_node_extensions>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` extensions **)** |virtual|                                                                                |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_parse_texture_json<class_GLTFDocumentExtension_method__parse_texture_json>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Dictionary<class_Dictionary>` texture_json, :ref:`GLTFTexture<class_GLTFTexture>` ret_gltf_texture **)** |virtual|                                                                       |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_save_image_at_path<class_GLTFDocumentExtension_method__save_image_at_path>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Image<class_Image>` image, :ref:`String<class_String>` file_path, :ref:`String<class_String>` image_format, :ref:`float<class_float>` lossy_quality **)** |virtual|                      |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedByteArray<class_PackedByteArray>`     | :ref:`_serialize_image_to_bytes<class_GLTFDocumentExtension_method__serialize_image_to_bytes>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Image<class_Image>` image, :ref:`Dictionary<class_Dictionary>` image_dict, :ref:`String<class_String>` image_format, :ref:`float<class_float>` lossy_quality **)** |virtual| |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_serialize_texture_json<class_GLTFDocumentExtension_method__serialize_texture_json>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Dictionary<class_Dictionary>` texture_json, :ref:`GLTFTexture<class_GLTFTexture>` gltf_texture, :ref:`String<class_String>` image_format **)** |virtual|                         |
-   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                              | :ref:`_convert_scene_node<class_GLTFDocumentExtension_private_method__convert_scene_node>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Node<class_Node>` scene_node **)** |virtual|                                                                                                  |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_export_node<class_GLTFDocumentExtension_private_method__export_node>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` json, :ref:`Node<class_Node>` node **)** |virtual|                                                                            |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_export_post<class_GLTFDocumentExtension_private_method__export_post>` **(** :ref:`GLTFState<class_GLTFState>` state **)** |virtual|                                                                                                                                                                                               |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_export_preflight<class_GLTFDocumentExtension_private_method__export_preflight>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Node<class_Node>` root **)** |virtual|                                                                                                                                                       |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_export_preserialize<class_GLTFDocumentExtension_private_method__export_preserialize>` **(** :ref:`GLTFState<class_GLTFState>` state **)** |virtual|                                                                                                                                                                               |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Node3D<class_Node3D>`                       | :ref:`_generate_scene_node<class_GLTFDocumentExtension_private_method__generate_scene_node>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Node<class_Node>` scene_parent **)** |virtual|                                                                                              |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`String<class_String>`                       | :ref:`_get_image_file_extension<class_GLTFDocumentExtension_private_method__get_image_file_extension>` **(** **)** |virtual|                                                                                                                                                                                                             |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` **(** **)** |virtual|                                                                                                                                                                                                         |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_supported_extensions<class_GLTFDocumentExtension_private_method__get_supported_extensions>` **(** **)** |virtual|                                                                                                                                                                                                             |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_import_node<class_GLTFDocumentExtension_private_method__import_node>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` json, :ref:`Node<class_Node>` node **)** |virtual|                                                                            |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_import_post<class_GLTFDocumentExtension_private_method__import_post>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Node<class_Node>` root **)** |virtual|                                                                                                                                                                 |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_import_post_parse<class_GLTFDocumentExtension_private_method__import_post_parse>` **(** :ref:`GLTFState<class_GLTFState>` state **)** |virtual|                                                                                                                                                                                   |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_import_preflight<class_GLTFDocumentExtension_private_method__import_preflight>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`PackedStringArray<class_PackedStringArray>` extensions **)** |virtual|                                                                                                                       |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_parse_image_data<class_GLTFDocumentExtension_private_method__parse_image_data>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`PackedByteArray<class_PackedByteArray>` image_data, :ref:`String<class_String>` mime_type, :ref:`Image<class_Image>` ret_image **)** |virtual|                                               |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_parse_node_extensions<class_GLTFDocumentExtension_private_method__parse_node_extensions>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` extensions **)** |virtual|                                                                                |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_parse_texture_json<class_GLTFDocumentExtension_private_method__parse_texture_json>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Dictionary<class_Dictionary>` texture_json, :ref:`GLTFTexture<class_GLTFTexture>` ret_gltf_texture **)** |virtual|                                                                       |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_save_image_at_path<class_GLTFDocumentExtension_private_method__save_image_at_path>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Image<class_Image>` image, :ref:`String<class_String>` file_path, :ref:`String<class_String>` image_format, :ref:`float<class_float>` lossy_quality **)** |virtual|                      |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedByteArray<class_PackedByteArray>`     | :ref:`_serialize_image_to_bytes<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Image<class_Image>` image, :ref:`Dictionary<class_Dictionary>` image_dict, :ref:`String<class_String>` image_format, :ref:`float<class_float>` lossy_quality **)** |virtual| |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_serialize_texture_json<class_GLTFDocumentExtension_private_method__serialize_texture_json>` **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Dictionary<class_Dictionary>` texture_json, :ref:`GLTFTexture<class_GLTFTexture>` gltf_texture, :ref:`String<class_String>` image_format **)** |virtual|                         |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -81,38 +88,38 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_GLTFDocumentExtension_method__convert_scene_node:
+.. _class_GLTFDocumentExtension_private_method__convert_scene_node:
 
 .. rst-class:: classref-method
 
 void **_convert_scene_node** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Node<class_Node>` scene_node **)** |virtual|
 
-Part of the export process. This method is run after :ref:`_export_preflight<class_GLTFDocumentExtension_method__export_preflight>` and before :ref:`_export_preserialize<class_GLTFDocumentExtension_method__export_preserialize>`.
+导出过程的一部分。该方法在 :ref:`_export_preflight<class_GLTFDocumentExtension_private_method__export_preflight>` 之后和 :ref:`_export_preserialize<class_GLTFDocumentExtension_private_method__export_preserialize>` 之前运行。
 
-Runs when converting the data from a Godot scene node. This method can be used to process the Godot scene node data into a format that can be used by :ref:`_export_node<class_GLTFDocumentExtension_method__export_node>`.
+在转换来自 Godot 场景节点的数据时运行。该方法可用于将 Godot 场景节点的数据，处理成可以被 :ref:`_export_node<class_GLTFDocumentExtension_private_method__export_node>` 使用的格式。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__export_node:
+.. _class_GLTFDocumentExtension_private_method__export_node:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_node** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` json, :ref:`Node<class_Node>` node **)** |virtual|
 
-Part of the export process. This method is run after :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_method__get_saveable_image_formats>` and before :ref:`_export_post<class_GLTFDocumentExtension_method__export_post>`. If this **GLTFDocumentExtension** is used for exporting images, this runs after :ref:`_serialize_texture_json<class_GLTFDocumentExtension_method__serialize_texture_json>`.
+导出过程的一部分。该方法在 :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` 之后 :ref:`_export_post<class_GLTFDocumentExtension_private_method__export_post>` 之前运行。如果该 **GLTFDocumentExtension** 用于导出图像，则会在 :ref:`_serialize_texture_json<class_GLTFDocumentExtension_private_method__serialize_texture_json>` 之后运行。
 
-This method can be used to modify the final JSON of each node.
+该方法可用于修改每个节点的最终 JSON。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__export_post:
+.. _class_GLTFDocumentExtension_private_method__export_post:
 
 .. rst-class:: classref-method
 
@@ -126,7 +133,7 @@ This method can be used to modify the final JSON of each node.
 
 ----
 
-.. _class_GLTFDocumentExtension_method__export_preflight:
+.. _class_GLTFDocumentExtension_private_method__export_preflight:
 
 .. rst-class:: classref-method
 
@@ -140,67 +147,69 @@ This method can be used to modify the final JSON of each node.
 
 ----
 
-.. _class_GLTFDocumentExtension_method__export_preserialize:
+.. _class_GLTFDocumentExtension_private_method__export_preserialize:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_export_preserialize** **(** :ref:`GLTFState<class_GLTFState>` state **)** |virtual|
 
-Part of the export process. This method is run after :ref:`_convert_scene_node<class_GLTFDocumentExtension_method__convert_scene_node>` and before :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_method__get_saveable_image_formats>`.
+导入过程的一部分。该方法在 :ref:`_convert_scene_node<class_GLTFDocumentExtension_private_method__convert_scene_node>` 之后 :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` 之前运行。
 
-This method can be used to alter the state before performing serialization. It runs every time when generating a buffer with :ref:`GLTFDocument.generate_buffer<class_GLTFDocument_method_generate_buffer>` or writing to the file system with :ref:`GLTFDocument.write_to_filesystem<class_GLTFDocument_method_write_to_filesystem>`.
+该方法可用于在执行序列化之前更改状态。每次使用 :ref:`GLTFDocument.generate_buffer<class_GLTFDocument_method_generate_buffer>` 生成缓冲区或使用\ :ref:`GLTFDocument.write_to_filesystem<class_GLTFDocument_method_write_to_filesystem>`\ 写入文件系统时，它都会运行。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__generate_scene_node:
+.. _class_GLTFDocumentExtension_private_method__generate_scene_node:
 
 .. rst-class:: classref-method
 
 :ref:`Node3D<class_Node3D>` **_generate_scene_node** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Node<class_Node>` scene_parent **)** |virtual|
 
-Part of the import process. This method is run after :ref:`_import_post_parse<class_GLTFDocumentExtension_method__import_post_parse>` and before :ref:`_import_node<class_GLTFDocumentExtension_method__import_node>`.
+导入过程的一部分。该方法在 :ref:`_import_post_parse<class_GLTFDocumentExtension_private_method__import_post_parse>` 之后 :ref:`_import_node<class_GLTFDocumentExtension_private_method__import_node>` 之前运行。
 
-Runs when generating a Godot scene node from a GLTFNode. The returned node will be added to the scene tree. Multiple nodes can be generated in this step if they are added as a child of the returned node.
+当从 GLTFNode 生成一个 Godot 场景节点时运行。返回的节点将被添加到场景树中。如果将多个节点添加为返回节点的子节点，则可以在该步骤中生成这些节点。
+
+\ **注意：**\ 如果这是单个根节点，则 ``scene_parent`` 参数可以为 null。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__get_image_file_extension:
+.. _class_GLTFDocumentExtension_private_method__get_image_file_extension:
 
 .. rst-class:: classref-method
 
 :ref:`String<class_String>` **_get_image_file_extension** **(** **)** |virtual|
 
-Returns the file extension to use for saving image data into, for example, ``".png"``. If defined, when this extension is used to handle images, and the images are saved to a separate file, the image bytes will be copied to a file with this extension. If this is set, there should be a :ref:`ResourceImporter<class_ResourceImporter>` class able to import the file. If not defined or empty, Godot will save the image into a PNG file.
+返回用于保存图像数据的文件的文件扩展名，例如 ``".png"``\ 。如果定义了，当使用该扩展名处理图像并将图像保存到单独的文件时，图像字节将被复制到具有该扩展名的文件中。如果设置了该选项，则应该有一个能够导入该文件的 :ref:`ResourceImporter<class_ResourceImporter>` 类。如果未定义或为空，则 Godot 会将该图像保存到 PNG 文件中。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__get_saveable_image_formats:
+.. _class_GLTFDocumentExtension_private_method__get_saveable_image_formats:
 
 .. rst-class:: classref-method
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_saveable_image_formats** **(** **)** |virtual|
 
-Part of the export process. This method is run after :ref:`_convert_scene_node<class_GLTFDocumentExtension_method__convert_scene_node>` and before :ref:`_export_node<class_GLTFDocumentExtension_method__export_node>`.
+导出过程的一部分。该方法在 :ref:`_convert_scene_node<class_GLTFDocumentExtension_private_method__convert_scene_node>` 之后和 :ref:`_export_node<class_GLTFDocumentExtension_private_method__export_node>` 之前运行。
 
-Returns an array of the image formats that can be saved/exported by this extension. This extension will only be selected as the image exporter if the :ref:`GLTFDocument<class_GLTFDocument>`'s :ref:`GLTFDocument.image_format<class_GLTFDocument_property_image_format>` is in this array. If this **GLTFDocumentExtension** is selected as the image exporter, one of the :ref:`_save_image_at_path<class_GLTFDocumentExtension_method__save_image_at_path>` or :ref:`_serialize_image_to_bytes<class_GLTFDocumentExtension_method__serialize_image_to_bytes>` methods will run next, otherwise :ref:`_export_node<class_GLTFDocumentExtension_method__export_node>` will run next. If the format name contains ``"Lossy"``, the lossy quality slider will be displayed.
+返回可以由该扩展保存/导出的图像格式的数组。仅当 :ref:`GLTFDocument<class_GLTFDocument>` 的 :ref:`GLTFDocument.image_format<class_GLTFDocument_property_image_format>` 在该数组中时，才会选择该扩展作为图像导出器。如果选择该 **GLTFDocumentExtension** 作为图像导出器，则接下来将运行 :ref:`_save_image_at_path<class_GLTFDocumentExtension_private_method__save_image_at_path>` 或 :ref:`_serialize_image_to_bytes<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>` 方法之一，否则接下来将运行 :ref:`_export_node<class_GLTFDocumentExtension_private_method__export_node>`\ 。如果格式名称包含 ``"Lossy"``\ ，则会显示有损质量滑块。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__get_supported_extensions:
+.. _class_GLTFDocumentExtension_private_method__get_supported_extensions:
 
 .. rst-class:: classref-method
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_supported_extensions** **(** **)** |virtual|
 
-导入过程的一部分。该方法在 :ref:`_import_preflight<class_GLTFDocumentExtension_method__import_preflight>` 之后 :ref:`_parse_node_extensions<class_GLTFDocumentExtension_method__parse_node_extensions>` 之前运行。
+导入过程的一部分。该方法在 :ref:`_import_preflight<class_GLTFDocumentExtension_private_method__import_preflight>` 之后 :ref:`_parse_node_extensions<class_GLTFDocumentExtension_private_method__parse_node_extensions>` 之前运行。
 
 返回一组被该 GLTFDocumentExtension 类支持的 GLTF 扩展。这用于验证是否可以加载一个具有所需扩展名的 GLTF 文件。
 
@@ -208,21 +217,21 @@ Returns an array of the image formats that can be saved/exported by this extensi
 
 ----
 
-.. _class_GLTFDocumentExtension_method__import_node:
+.. _class_GLTFDocumentExtension_private_method__import_node:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import_node** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` json, :ref:`Node<class_Node>` node **)** |virtual|
 
-Part of the import process. This method is run after :ref:`_generate_scene_node<class_GLTFDocumentExtension_method__generate_scene_node>` and before :ref:`_import_post<class_GLTFDocumentExtension_method__import_post>`.
+导入过程的一部分。该方法在 :ref:`_generate_scene_node<class_GLTFDocumentExtension_private_method__generate_scene_node>` 之后 :ref:`_import_post<class_GLTFDocumentExtension_private_method__import_post>` 之前运行。
 
-This method can be used to make modifications to each of the generated Godot scene nodes.
+该方法可用于对生成的每个 Godot 场景节点进行修改。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__import_post:
+.. _class_GLTFDocumentExtension_private_method__import_post:
 
 .. rst-class:: classref-method
 
@@ -236,21 +245,21 @@ This method can be used to make modifications to each of the generated Godot sce
 
 ----
 
-.. _class_GLTFDocumentExtension_method__import_post_parse:
+.. _class_GLTFDocumentExtension_private_method__import_post_parse:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_import_post_parse** **(** :ref:`GLTFState<class_GLTFState>` state **)** |virtual|
 
-Part of the import process. This method is run after :ref:`_parse_node_extensions<class_GLTFDocumentExtension_method__parse_node_extensions>` and before :ref:`_generate_scene_node<class_GLTFDocumentExtension_method__generate_scene_node>`.
+导入过程的一部分。该方法在 :ref:`_parse_node_extensions<class_GLTFDocumentExtension_private_method__parse_node_extensions>` 之后 :ref:`_generate_scene_node<class_GLTFDocumentExtension_private_method__generate_scene_node>` 之前运行。
 
-This method can be used to modify any of the data imported so far, including any scene nodes, before running the final per-node import step.
+在运行最终的各节点导入步骤之前，该方法可用于修改到目前为止导入的任何数据，包括任何场景节点。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__import_preflight:
+.. _class_GLTFDocumentExtension_private_method__import_preflight:
 
 .. rst-class:: classref-method
 
@@ -264,13 +273,13 @@ This method can be used to modify any of the data imported so far, including any
 
 ----
 
-.. _class_GLTFDocumentExtension_method__parse_image_data:
+.. _class_GLTFDocumentExtension_private_method__parse_image_data:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_parse_image_data** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`PackedByteArray<class_PackedByteArray>` image_data, :ref:`String<class_String>` mime_type, :ref:`Image<class_Image>` ret_image **)** |virtual|
 
-导入过程的一部分。该方法在 :ref:`_parse_node_extensions<class_GLTFDocumentExtension_method__parse_node_extensions>` 之后 :ref:`_parse_texture_json<class_GLTFDocumentExtension_method__parse_texture_json>` 之前运行。
+导入过程的一部分。该方法在 :ref:`_parse_node_extensions<class_GLTFDocumentExtension_private_method__parse_node_extensions>` 之后 :ref:`_parse_texture_json<class_GLTFDocumentExtension_private_method__parse_texture_json>` 之前运行。
 
 从 GLTF 文件中解析图像数据时运行。数据可以从单独的文件、URI 或缓冲中获取，然后作为字节数组传递。
 
@@ -278,27 +287,27 @@ This method can be used to modify any of the data imported so far, including any
 
 ----
 
-.. _class_GLTFDocumentExtension_method__parse_node_extensions:
+.. _class_GLTFDocumentExtension_private_method__parse_node_extensions:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_parse_node_extensions** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`GLTFNode<class_GLTFNode>` gltf_node, :ref:`Dictionary<class_Dictionary>` extensions **)** |virtual|
 
-Part of the import process. This method is run after :ref:`_get_supported_extensions<class_GLTFDocumentExtension_method__get_supported_extensions>` and before :ref:`_import_post_parse<class_GLTFDocumentExtension_method__import_post_parse>`.
+导入过程的一部分。该方法在 :ref:`_get_supported_extensions<class_GLTFDocumentExtension_private_method__get_supported_extensions>` 之后和 :ref:`_import_post_parse<class_GLTFDocumentExtension_private_method__import_post_parse>` 之前运行。
 
-Runs when parsing the node extensions of a GLTFNode. This method can be used to process the extension JSON data into a format that can be used by :ref:`_generate_scene_node<class_GLTFDocumentExtension_method__generate_scene_node>`. The return value should be a member of the :ref:`Error<enum_@GlobalScope_Error>` enum.
+在解析 GLTFNode 的节点扩展时运行。该方法可用于将扩展 JSON 数据，处理成可被 :ref:`_generate_scene_node<class_GLTFDocumentExtension_private_method__generate_scene_node>` 使用的格式。该返回值应该是 :ref:`Error<enum_@GlobalScope_Error>` 枚举中的一个成员。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__parse_texture_json:
+.. _class_GLTFDocumentExtension_private_method__parse_texture_json:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_parse_texture_json** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Dictionary<class_Dictionary>` texture_json, :ref:`GLTFTexture<class_GLTFTexture>` ret_gltf_texture **)** |virtual|
 
-导入过程的一部分。该方法在 :ref:`_parse_image_data<class_GLTFDocumentExtension_method__parse_image_data>` 之后 :ref:`_generate_scene_node<class_GLTFDocumentExtension_method__generate_scene_node>` 之前运行。
+导入过程的一部分。该方法在 :ref:`_parse_image_data<class_GLTFDocumentExtension_private_method__parse_image_data>` 之后 :ref:`_generate_scene_node<class_GLTFDocumentExtension_private_method__generate_scene_node>` 之前运行。
 
 从 GLTF 纹理数组中解析纹理 JSON 时运行。可用于设置用作纹理的源图像索引。
 
@@ -306,50 +315,50 @@ Runs when parsing the node extensions of a GLTFNode. This method can be used to 
 
 ----
 
-.. _class_GLTFDocumentExtension_method__save_image_at_path:
+.. _class_GLTFDocumentExtension_private_method__save_image_at_path:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_save_image_at_path** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Image<class_Image>` image, :ref:`String<class_String>` file_path, :ref:`String<class_String>` image_format, :ref:`float<class_float>` lossy_quality **)** |virtual|
 
-Part of the export process. This method is run after :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_method__get_saveable_image_formats>` and before :ref:`_serialize_texture_json<class_GLTFDocumentExtension_method__serialize_texture_json>`.
+导入过程的一部分。该方法在 :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` 之后 :ref:`_serialize_texture_json<class_GLTFDocumentExtension_private_method__serialize_texture_json>` 之前运行。
 
-This method is run when saving images separately from the GLTF file. When images are embedded, :ref:`_serialize_image_to_bytes<class_GLTFDocumentExtension_method__serialize_image_to_bytes>` runs instead. Note that these methods only run when this **GLTFDocumentExtension** is selected as the image exporter.
+当与 GLTF 文件分开保存图像时运行该方法。嵌入图像时，将运行 :ref:`_serialize_image_to_bytes<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>`\ 。请注意，这些方法仅在选择该 **GLTFDocumentExtension** 作为图像导出器时运行。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__serialize_image_to_bytes:
+.. _class_GLTFDocumentExtension_private_method__serialize_image_to_bytes:
 
 .. rst-class:: classref-method
 
 :ref:`PackedByteArray<class_PackedByteArray>` **_serialize_image_to_bytes** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Image<class_Image>` image, :ref:`Dictionary<class_Dictionary>` image_dict, :ref:`String<class_String>` image_format, :ref:`float<class_float>` lossy_quality **)** |virtual|
 
-Part of the export process. This method is run after :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_method__get_saveable_image_formats>` and before :ref:`_serialize_texture_json<class_GLTFDocumentExtension_method__serialize_texture_json>`.
+导出过程的一部分。该方法在 :ref:`_get_saveable_image_formats<class_GLTFDocumentExtension_private_method__get_saveable_image_formats>` 之后和 :ref:`_serialize_texture_json<class_GLTFDocumentExtension_private_method__serialize_texture_json>` 之前运行。
 
-This method is run when embedding images in the GLTF file. When images are saved separately, :ref:`_save_image_at_path<class_GLTFDocumentExtension_method__save_image_at_path>` runs instead. Note that these methods only run when this **GLTFDocumentExtension** is selected as the image exporter.
+在 GLTF 文件中嵌入图像时运行该方法。当图像单独保存时，将运行 :ref:`_save_image_at_path<class_GLTFDocumentExtension_private_method__save_image_at_path>`\ 。请注意，这些方法仅在选择该 **GLTFDocumentExtension** 作为图像导出器时运行。
 
-This method must set the image MIME type in the ``image_dict`` with the ``"mimeType"`` key. For example, for a PNG image, it would be set to ``"image/png"``. The return value must be a :ref:`PackedByteArray<class_PackedByteArray>` containing the image data.
+该方法必须使用 ``"mimeType"`` 键在 ``image_dict`` 中设置该图像的 MIME 类型。例如，对于 PNG 图像，它将被设置为 ``"image/png"``\ 。该返回值必须是包含该图像数据的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_GLTFDocumentExtension_method__serialize_texture_json:
+.. _class_GLTFDocumentExtension_private_method__serialize_texture_json:
 
 .. rst-class:: classref-method
 
 :ref:`Error<enum_@GlobalScope_Error>` **_serialize_texture_json** **(** :ref:`GLTFState<class_GLTFState>` state, :ref:`Dictionary<class_Dictionary>` texture_json, :ref:`GLTFTexture<class_GLTFTexture>` gltf_texture, :ref:`String<class_String>` image_format **)** |virtual|
 
-Part of the export process. This method is run after :ref:`_save_image_at_path<class_GLTFDocumentExtension_method__save_image_at_path>` or :ref:`_serialize_image_to_bytes<class_GLTFDocumentExtension_method__serialize_image_to_bytes>`, and before :ref:`_export_node<class_GLTFDocumentExtension_method__export_node>`. Note that this method only runs when this **GLTFDocumentExtension** is selected as the image exporter.
+导出过程的一部分。该方法在 :ref:`_save_image_at_path<class_GLTFDocumentExtension_private_method__save_image_at_path>` 或 :ref:`_serialize_image_to_bytes<class_GLTFDocumentExtension_private_method__serialize_image_to_bytes>` 之后、\ :ref:`_export_node<class_GLTFDocumentExtension_private_method__export_node>` 之前运行。请注意，该方法仅在选择该 **GLTFDocumentExtension** 作为图像导出器时运行。
 
-This method can be used to set up the extensions for the texture JSON by editing ``texture_json``. The extension must also be added as used extension with :ref:`GLTFState.add_used_extension<class_GLTFState_method_add_used_extension>`, be sure to set ``required`` to ``true`` if you are not providing a fallback.
+该方法可用于通过编辑 ``texture_json`` 设置该纹理 JSON 的扩展。还必须使用 :ref:`GLTFState.add_used_extension<class_GLTFState_method_add_used_extension>` 将该扩展添加为使用的扩展，如果你不提供后备，请务必将 ``required`` 设置为 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

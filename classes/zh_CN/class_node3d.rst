@@ -10,29 +10,29 @@
 Node3D
 ======
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AudioListener3D<class_AudioListener3D>`, :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`, :ref:`BoneAttachment3D<class_BoneAttachment3D>`, :ref:`Camera3D<class_Camera3D>`, :ref:`CollisionObject3D<class_CollisionObject3D>`, :ref:`CollisionPolygon3D<class_CollisionPolygon3D>`, :ref:`CollisionShape3D<class_CollisionShape3D>`, :ref:`GridMap<class_GridMap>`, :ref:`ImporterMeshInstance3D<class_ImporterMeshInstance3D>`, :ref:`Joint3D<class_Joint3D>`, :ref:`LightmapProbe<class_LightmapProbe>`, :ref:`Marker3D<class_Marker3D>`, :ref:`NavigationLink3D<class_NavigationLink3D>`, :ref:`NavigationObstacle3D<class_NavigationObstacle3D>`, :ref:`NavigationRegion3D<class_NavigationRegion3D>`, :ref:`OccluderInstance3D<class_OccluderInstance3D>`, :ref:`OpenXRHand<class_OpenXRHand>`, :ref:`Path3D<class_Path3D>`, :ref:`PathFollow3D<class_PathFollow3D>`, :ref:`RayCast3D<class_RayCast3D>`, :ref:`RemoteTransform3D<class_RemoteTransform3D>`, :ref:`ShapeCast3D<class_ShapeCast3D>`, :ref:`Skeleton3D<class_Skeleton3D>`, :ref:`SpringArm3D<class_SpringArm3D>`, :ref:`VehicleWheel3D<class_VehicleWheel3D>`, :ref:`VisualInstance3D<class_VisualInstance3D>`, :ref:`XRNode3D<class_XRNode3D>`, :ref:`XROrigin3D<class_XROrigin3D>`
+**派生：** :ref:`AudioListener3D<class_AudioListener3D>`, :ref:`AudioStreamPlayer3D<class_AudioStreamPlayer3D>`, :ref:`BoneAttachment3D<class_BoneAttachment3D>`, :ref:`Camera3D<class_Camera3D>`, :ref:`CollisionObject3D<class_CollisionObject3D>`, :ref:`CollisionPolygon3D<class_CollisionPolygon3D>`, :ref:`CollisionShape3D<class_CollisionShape3D>`, :ref:`GridMap<class_GridMap>`, :ref:`ImporterMeshInstance3D<class_ImporterMeshInstance3D>`, :ref:`Joint3D<class_Joint3D>`, :ref:`LightmapProbe<class_LightmapProbe>`, :ref:`Marker3D<class_Marker3D>`, :ref:`NavigationLink3D<class_NavigationLink3D>`, :ref:`NavigationObstacle3D<class_NavigationObstacle3D>`, :ref:`NavigationRegion3D<class_NavigationRegion3D>`, :ref:`OccluderInstance3D<class_OccluderInstance3D>`, :ref:`OpenXRHand<class_OpenXRHand>`, :ref:`Path3D<class_Path3D>`, :ref:`PathFollow3D<class_PathFollow3D>`, :ref:`RayCast3D<class_RayCast3D>`, :ref:`RemoteTransform3D<class_RemoteTransform3D>`, :ref:`ShapeCast3D<class_ShapeCast3D>`, :ref:`Skeleton3D<class_Skeleton3D>`, :ref:`SpringArm3D<class_SpringArm3D>`, :ref:`VehicleWheel3D<class_VehicleWheel3D>`, :ref:`VisualInstance3D<class_VisualInstance3D>`, :ref:`XRNode3D<class_XRNode3D>`, :ref:`XROrigin3D<class_XROrigin3D>`
 
 最基本的 3D 游戏对象，所有 3D 相关节点的父类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-最基本的 3D 游戏对象，具有 :ref:`Transform3D<class_Transform3D>` 和可见性设置。所有其他的 3D 游戏对象都继承自 Node3D。在 3D 项目中，请使用 **Node3D** 作为父节点对子节点进行移动、缩放、旋转和显示/隐藏。
+最基本的 3D 游戏对象，具有 :ref:`Transform3D<class_Transform3D>` 和可见性设置。所有其他的 3D 游戏对象都继承自 **Node3D**\ 。在 3D 项目中，请使用 **Node3D** 作为父节点对子节点进行移动、缩放、旋转和显示/隐藏。
 
 除非该 **Node3D** 对象被设置为顶层，否则仿射操作（旋转、缩放、平移）会在父节点的本地坐标系中进行。在这个坐标系中的仿射操作对应于对 **Node3D** 变换的直接仿射运算。下文中的本地一词指的就是这个坐标系。附加到 **Node3D** 对象本身的坐标系被称为对象本地坐标系。
 
 \ **注意：**\ 除非另有规定，所有有角度参数的方法必须将角度指定为\ *弧度*\ 。请使用 :ref:`@GlobalScope.deg_to_rad<class_@GlobalScope_method_deg_to_rad>` 将度数转换为弧度。
 
-\ **注意：**\ “Spatial”节点从 Godot 4 开始被称为“Node3D”。Godot 3.x 中指的“Spatial”节点在 Godot 4 中指的是“Node3D”。
+\ **注意：**\ 请注意，从 Godot 4 开始，“Spatial”节点现在被称为“Node3D”。Godot 3.x 中指的“Spatial”节点，均指的是 Godot 4 中的“Node3D”。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`3D 简介 <../tutorials/3d/introduction_to_3d>`
 
@@ -40,8 +40,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -84,8 +84,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -170,8 +170,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Node3D_signal_visibility_changed:
 
@@ -187,8 +187,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Node3D_RotationEditMode:
 
@@ -226,8 +226,8 @@ enum **RotationEditMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Node3D_constant_NOTIFICATION_TRANSFORM_CHANGED:
 
@@ -235,7 +235,7 @@ Constants
 
 **NOTIFICATION_TRANSFORM_CHANGED** = ``2000``
 
-Node3D 节点在自己的全局变换发生改变时，会收到这个通知。这意味着当前节点或者某个父节点的变换发生了改变。
+**Node3D** 节点在自己的全局变换发生改变时，会收到这个通知。这意味着当前节点或者某个父节点的变换发生了改变。
 
 用户需要使用 :ref:`set_notify_transform<class_Node3D_method_set_notify_transform>` 手动申请才能够收到 :ref:`NOTIFICATION_TRANSFORM_CHANGED<class_Node3D_constant_NOTIFICATION_TRANSFORM_CHANGED>`\ 。如果该节点在编辑器环境中，并且拥有至少一个有效的小工具，则也会发送这个通知。
 
@@ -245,7 +245,7 @@ Node3D 节点在自己的全局变换发生改变时，会收到这个通知。�
 
 **NOTIFICATION_ENTER_WORLD** = ``41``
 
-Node3D 节点在注册到新的 :ref:`World3D<class_World3D>` 资源时，会收到这个通知。
+**Node3D** 节点在注册到新的 :ref:`World3D<class_World3D>` 资源时，会收到这个通知。
 
 .. _class_Node3D_constant_NOTIFICATION_EXIT_WORLD:
 
@@ -253,7 +253,7 @@ Node3D 节点在注册到新的 :ref:`World3D<class_World3D>` 资源时，会收
 
 **NOTIFICATION_EXIT_WORLD** = ``42``
 
-Node3D 节点从当前的 :ref:`World3D<class_World3D>` 资源中取消注册时，会收到这个通知。
+**Node3D** 节点从当前的 :ref:`World3D<class_World3D>` 资源中取消注册时，会收到这个通知。
 
 .. _class_Node3D_constant_NOTIFICATION_VISIBILITY_CHANGED:
 
@@ -261,7 +261,7 @@ Node3D 节点从当前的 :ref:`World3D<class_World3D>` 资源中取消注册时
 
 **NOTIFICATION_VISIBILITY_CHANGED** = ``43``
 
-Node3D 节点在自己的可见性发生变化时，会收到这个通知。
+**Node3D** 节点在其可见性发生变化时，会收到该通知。
 
 .. _class_Node3D_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED:
 
@@ -269,9 +269,9 @@ Node3D 节点在自己的可见性发生变化时，会收到这个通知。
 
 **NOTIFICATION_LOCAL_TRANSFORM_CHANGED** = ``44``
 
-Node3D 节点在自己的局部变换发生改变时，会收到这个通知。父节点的变换发生改变时不会收到这个通知。
+**Node3D** 节点在其局部变换发生改变时，会收到这个通知。父节点的变换发生改变时不会收到这个通知。
 
-用户需要使用 :ref:`set_notify_local_transform<class_Node3D_method_set_notify_local_transform>` 手动申请才能够收到 :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_Node3D_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>`\ 。
+为了使 :ref:`NOTIFICATION_LOCAL_TRANSFORM_CHANGED<class_Node3D_constant_NOTIFICATION_LOCAL_TRANSFORM_CHANGED>` 起作用，用户首先需要使用 :ref:`set_notify_local_transform<class_Node3D_method_set_notify_local_transform>` 请求它。
 
 .. rst-class:: classref-section-separator
 
@@ -279,8 +279,8 @@ Node3D 节点在自己的局部变换发生改变时，会收到这个通知。�
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Node3D_property_basis:
 
@@ -293,7 +293,7 @@ Property Descriptions
 - void **set_basis** **(** :ref:`Basis<class_Basis>` value **)**
 - :ref:`Basis<class_Basis>` **get_basis** **(** **)**
 
-Direct access to the 3x3 basis of the :ref:`transform<class_Node3D_property_transform>` property.
+直接访问 :ref:`transform<class_Node3D_property_transform>` 属性的 3x3 基。
 
 .. rst-class:: classref-item-separator
 
@@ -310,7 +310,7 @@ Direct access to the 3x3 basis of the :ref:`transform<class_Node3D_property_tran
 - void **set_global_basis** **(** :ref:`Basis<class_Basis>` value **)**
 - :ref:`Basis<class_Basis>` **get_global_basis** **(** **)**
 
-Global basis of this node. This is equivalent to ``global_transform.basis``.
+这个节点的全局基。与 ``global_transform.basis`` 等价。
 
 .. rst-class:: classref-item-separator
 
@@ -431,11 +431,11 @@ Global basis of this node. This is equivalent to ``global_transform.basis``.
 - void **set_rotation** **(** :ref:`Vector3<class_Vector3>` value **)**
 - :ref:`Vector3<class_Vector3>` **get_rotation** **(** **)**
 
-Rotation part of the local transformation in radians, specified in terms of Euler angles. The angles construct a rotation in the order specified by the :ref:`rotation_order<class_Node3D_property_rotation_order>` property.
+以弧度为单位的，局部变换的旋转部分，根据欧拉角指定。角度按照 :ref:`rotation_order<class_Node3D_property_rotation_order>` 属性指定的顺序，构造一个旋转。
 
-\ **Note:** In the mathematical sense, rotation is a matrix and not a vector. The three Euler angles, which are the three independent parameters of the Euler-angle parametrization of the rotation matrix, are stored in a :ref:`Vector3<class_Vector3>` data structure not because the rotation is a vector, but only because :ref:`Vector3<class_Vector3>` exists as a convenient data-structure to store 3 floating-point numbers. Therefore, applying affine operations on the rotation "vector" is not meaningful.
+\ **注意：**\ 在数学意义上，旋转是一个矩阵，而不是一个向量。三个欧拉角，即旋转矩阵的欧拉角参数化的三个独立参数，存储在一个 :ref:`Vector3<class_Vector3>` 数据结构中，并不是因为旋转是一个向量，而是因为 :ref:`Vector3<class_Vector3>` 是一个方便存储 3 个浮点数的数据结构。因此，对旋转“向量”，应用仿射操作是没有意义的。
 
-\ **Note:** This property is edited in the inspector in degrees. If you want to use degrees in a script, use :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`.
+\ **注意：**\ 该属性在检查器中以度为单位进行编辑。如果要在脚本中使用度数，请使用 :ref:`rotation_degrees<class_Node3D_property_rotation_degrees>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -583,8 +583,8 @@ Rotation part of the local transformation in radians, specified in terms of Eule
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Node3D_method_add_gizmo:
 
@@ -592,7 +592,9 @@ Method Descriptions
 
 void **add_gizmo** **(** :ref:`Node3DGizmo<class_Node3DGizmo>` gizmo **)**
 
-将小工具附加到该 ``Node3D`` 上。
+将编辑器小工具附加到该 **Node3D**\ 。
+
+\ **注意：**\ 小工具对象通常是 :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` 的一个实例，但参数类型保持通用以避免在 **Node3D** 中创建对编辑器类的依赖。
 
 .. rst-class:: classref-item-separator
 
@@ -604,7 +606,7 @@ void **add_gizmo** **(** :ref:`Node3DGizmo<class_Node3DGizmo>` gizmo **)**
 
 void **clear_gizmos** **(** **)**
 
-清除附加于该 ``Node3D`` 的所有小工具。
+清除附加于该 **Node3D** 的所有小工具。
 
 .. rst-class:: classref-item-separator
 
@@ -640,7 +642,7 @@ void **force_update_transform** **(** **)**
 
 :ref:`Node3DGizmo[]<class_Node3DGizmo>` **get_gizmos** **(** **)** |const|
 
-返回附加到该 ``Node3D`` 的所有小工具。
+返回附加到该 **Node3D** 的所有小工具。
 
 .. rst-class:: classref-item-separator
 
@@ -948,7 +950,9 @@ void **set_notify_transform** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_subgizmo_selection** **(** :ref:`Node3DGizmo<class_Node3DGizmo>` gizmo, :ref:`int<class_int>` id, :ref:`Transform3D<class_Transform3D>` transform **)**
 
-在编辑器中为该节点设置子小工具选择。
+在编辑器中为该节点设置子小工具选区。
+
+\ **注意：**\ 小工具对象通常是 :ref:`EditorNode3DGizmo<class_EditorNode3DGizmo>` 的一个实例，但参数类型保持通用以避免在 **Node3D** 中创建对编辑器类的依赖。
 
 .. rst-class:: classref-item-separator
 
@@ -1022,12 +1026,12 @@ void **translate_object_local** **(** :ref:`Vector3<class_Vector3>` offset **)**
 
 void **update_gizmos** **(** **)**
 
-更新附加于该节点的所有 :ref:`Node3DGizmo<class_Node3DGizmo>`\ 。
+更新附加于该节点的所有 **Node3D** 小工具。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

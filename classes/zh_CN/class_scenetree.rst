@@ -10,14 +10,14 @@
 SceneTree
 =========
 
-**Inherits:** :ref:`MainLoop<class_MainLoop>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`MainLoop<class_MainLoop>` **<** :ref:`Object<class_Object>`
 
 通过节点层次结构管理游戏循环。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 作为最重要的类之一，\ **SceneTree** 管理着场景中节点的层次结构以及场景本身。节点可以被添加、检索和删除。整个场景树可以被暂停，包括当前场景。场景可以被加载、切换和重新加载。
 
@@ -27,8 +27,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`SceneTree <../tutorials/scripting/scene_tree>`
 
@@ -36,8 +36,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -124,8 +124,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_SceneTree_signal_node_added:
 
@@ -181,7 +181,7 @@ Signals
 
 **physics_frame** **(** **)**
 
-在 **SceneTree** 中的每个节点上调用 :ref:`Node._physics_process<class_Node_method__physics_process>` 之前立即发出。
+在 **SceneTree** 中的每个节点上调用 :ref:`Node._physics_process<class_Node_private_method__physics_process>` 之前立即发出。
 
 .. rst-class:: classref-item-separator
 
@@ -193,7 +193,7 @@ Signals
 
 **process_frame** **(** **)**
 
-在对 **SceneTree** 中的每个节点调用 :ref:`Node._process<class_Node_method__process>` 之前立即发出。
+在对 **SceneTree** 中的每个节点调用 :ref:`Node._process<class_Node_private_method__process>` 之前立即发出。
 
 .. rst-class:: classref-item-separator
 
@@ -225,8 +225,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_SceneTree_GroupCallFlags:
 
@@ -274,8 +274,8 @@ enum **GroupCallFlags**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_SceneTree_property_auto_accept_quit:
 
@@ -307,9 +307,9 @@ Property Descriptions
 - void **set_current_scene** **(** :ref:`Node<class_Node>` value **)**
 - :ref:`Node<class_Node>` **get_current_scene** **(** **)**
 
-Returns the root node of the currently running scene, regardless of its structure.
+返回当前运行场景的根节点，无视其结构。
 
-\ **Warning:** Setting this directly might not work as expected, and will *not* add or remove any nodes from the tree, consider using :ref:`change_scene_to_file<class_SceneTree_method_change_scene_to_file>` or :ref:`change_scene_to_packed<class_SceneTree_method_change_scene_to_packed>` instead.
+\ **警告：**\ 直接设置这个属性可能无法达到预期效果，\ *不会*\ 为场景树添加或移除任何节点，请考虑改用 :ref:`change_scene_to_file<class_SceneTree_method_change_scene_to_file>` 或 :ref:`change_scene_to_packed<class_SceneTree_method_change_scene_to_packed>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -423,7 +423,7 @@ Returns the root node of the currently running scene, regardless of its structur
 
 - 2D 和 3D 物理将停止，包括信号和碰撞检测。
 
-- 节点不再调用 :ref:`Node._process<class_Node_method__process>`\ 、\ :ref:`Node._physics_process<class_Node_method__physics_process>` 和 :ref:`Node._input<class_Node_method__input>`\ 。
+- 节点不再调用 :ref:`Node._process<class_Node_private_method__process>`\ 、\ :ref:`Node._physics_process<class_Node_private_method__physics_process>` 和 :ref:`Node._input<class_Node_private_method__input>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -466,8 +466,8 @@ Returns the root node of the currently running scene, regardless of its structur
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_SceneTree_method_call_group:
 
@@ -508,11 +508,11 @@ void **call_group_flags** **(** :ref:`int<class_int>` flags, :ref:`StringName<cl
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_file** **(** :ref:`String<class_String>` path **)**
 
-Changes the running scene to the one at the given ``path``, after loading it into a :ref:`PackedScene<class_PackedScene>` and creating a new instance.
+将位于给定路径 ``path`` 的场景加载进一个 :ref:`PackedScene<class_PackedScene>` 并新建其实例，然后将正在运行的场景修改为这个场景。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>` if the ``path`` cannot be loaded into a :ref:`PackedScene<class_PackedScene>`, or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if that scene cannot be instantiated.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，如果 ``path`` 不能被加载到一个 :ref:`PackedScene<class_PackedScene>` 中，则返回 :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>`\ ；如果该场景无法被实例化，则返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
 
-\ **Note:** The new scene node is added to the tree at the end of the frame. This ensures that both scenes aren't running at the same time, while still freeing the previous scene in a safe way similar to :ref:`Node.queue_free<class_Node_method_queue_free>`. As such, you won't be able to access the loaded scene immediately after the :ref:`change_scene_to_file<class_SceneTree_method_change_scene_to_file>` call.
+\ **注意：**\ 新的场景节点是在该帧的末尾添加的。这确保了两个场景永远不会同时加载，如果场景太大或在内存受限的环境中运行，这会耗尽系统资源。因此，无法在 :ref:`change_scene_to_file<class_SceneTree_method_change_scene_to_file>` 调用后，立即访问到被加载的场景。
 
 .. rst-class:: classref-item-separator
 
@@ -524,11 +524,11 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_packed** **(** :ref:`PackedScene<class_PackedScene>` packed_scene **)**
 
-Changes the running scene to a new instance of the given :ref:`PackedScene<class_PackedScene>` (which must be valid).
+将正在运行的场景改变为给定 :ref:`PackedScene<class_PackedScene>` （必须有效）的一个新实例。
 
-Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the scene cannot be instantiated, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the scene is invalid.
+成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，场景无法实例化时返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ ，场景无效时返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
 
-\ **Note:** The new scene node is added to the tree at the end of the frame. You won't be able to access it immediately after the :ref:`change_scene_to_packed<class_SceneTree_method_change_scene_to_packed>` call.
+\ **注意：**\ 新的场景节点会在当前帧的末尾添加到场景树中。无法在调用 :ref:`change_scene_to_packed<class_SceneTree_method_change_scene_to_packed>` 后立即访问到它。
 
 .. rst-class:: classref-item-separator
 
@@ -573,7 +573,7 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 计时器将在其时间结束后被自动释放。
 
-\ **注意：**\ 计时器是在当前帧所有节点之后处理的，即节点的 :ref:`Node._process<class_Node_method__process>` 方法比计时器先调用（\ ``process_in_physics`` 为 ``true`` 时为 :ref:`Node._physics_process<class_Node_method__physics_process>`\ ）。
+\ **注意：**\ 计时器是在当前帧所有节点之后处理的，即节点的 :ref:`Node._process<class_Node_private_method__process>` 方法比计时器先调用（\ ``process_in_physics`` 为 ``true`` 时为 :ref:`Node._physics_process<class_Node_private_method__physics_process>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -585,9 +585,9 @@ Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:
 
 :ref:`Tween<class_Tween>` **create_tween** **(** **)**
 
-Creates and returns a new :ref:`Tween<class_Tween>`. The Tween will start automatically on the next process frame or physics frame (depending on :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`).
+创建并返回新的 :ref:`Tween<class_Tween>`\ 。该 Tween 会在下一个处理帧或物理帧中自动开始（取决于 :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`\ ）。
 
-\ **Note:** When creating a :ref:`Tween<class_Tween>` using this method, the :ref:`Tween<class_Tween>` will not be tied to the :ref:`Node<class_Node>` that called it. It will continue to animate even if the :ref:`Node<class_Node>` is freed, but it will automatically finish if there's nothing left to animate. If you want the :ref:`Tween<class_Tween>` to be automatically killed when the :ref:`Node<class_Node>` is freed, use :ref:`Node.create_tween<class_Node_method_create_tween>` or :ref:`Tween.bind_node<class_Tween_method_bind_node>`.
+\ **注意：**\ 使用这个方法创建 :ref:`Tween<class_Tween>` 时，\ :ref:`Tween<class_Tween>` 不会与调用的 :ref:`Node<class_Node>` 绑定。即便在该 :ref:`Node<class_Node>` 释放后也仍然会继续进行动画，但是在已经没有任何可以动画的东西时会自动结束。如果你想要让 :ref:`Tween<class_Tween>` 在该 :ref:`Node<class_Node>` 释放时自动销毁，请使用 :ref:`Node.create_tween<class_Node_method_create_tween>` 或 :ref:`Tween.bind_node<class_Tween_method_bind_node>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -623,9 +623,7 @@ Creates and returns a new :ref:`Tween<class_Tween>`. The Tween will start automa
 
 :ref:`MultiplayerAPI<class_MultiplayerAPI>` **get_multiplayer** **(** :ref:`NodePath<class_NodePath>` for_path=NodePath("") **)** |const|
 
-返回给定路径所配置的 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ ，如果 ``for_path`` 为空则返回默认版本。
-
-\ **注意：**\ 一个子路径只能配置一个 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。如果先为 ``"/root/Foo"`` 进行了配置，再针对 ``"/root/Foo/Bar"`` 调用这个方法，则无论是否对该路径进行了配置，都会返回为 ``"/root/Foo"`` 配置的版本。
+搜索为给定路径配置的 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ ，如果不存在，则会搜索父路径，直到找到为止。如果路径为空，或者没有找到，则返回默认路径。参见 :ref:`set_multiplayer<class_SceneTree_method_set_multiplayer>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -673,9 +671,9 @@ Creates and returns a new :ref:`Tween<class_Tween>`. The Tween will start automa
 
 :ref:`bool<class_bool>` **has_group** **(** :ref:`StringName<class_StringName>` name **)** |const|
 
-Returns ``true`` if the given group exists.
+如果存在给定的分组，则返回 ``true``\ 。
 
-A group exists if any :ref:`Node<class_Node>` in the tree belongs to it (see :ref:`Node.add_to_group<class_Node_method_add_to_group>`). Groups without nodes are removed automatically.
+场景中存在属于某个分组的 :ref:`Node<class_Node>` 时，该分组才存在（见 :ref:`Node.add_to_group<class_Node_method_add_to_group>`\ ）。不含任何节点的分组会被自动移除。
 
 .. rst-class:: classref-item-separator
 
@@ -789,7 +787,7 @@ void **set_multiplayer** **(** :ref:`MultiplayerAPI<class_MultiplayerAPI>` multi
 
 用给定的 ``root_path`` 设置自定义的 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ （同时控制相对的子路径），如果 ``root_path`` 为空，则会覆盖默认值。
 
-\ **注意：**\ 一个子路径只能配置一个 :ref:`MultiplayerAPI<class_MultiplayerAPI>`\ 。如果先为 ``"/root/Foo"`` 进行了配置，再针对 ``"/root/Foo/Bar"`` 设置就会被忽略。见 :ref:`get_multiplayer<class_SceneTree_method_get_multiplayer>`\ 。
+\ **注意：**\ :ref:`MultiplayerAPI<class_MultiplayerAPI>` 不能为包含 ``root_path`` 的子路径配置，嵌套的自定义多人游戏是不被允许的。例如，如果为 ``"/root/Foo"`` 配置了一项，则为 ``"/root/Foo/Bar"`` 设置一项将导致错误。
 
 .. rst-class:: classref-item-separator
 
@@ -803,10 +801,10 @@ void **unload_current_scene** **(** **)**
 
 如果当前场景已加载，调用此方法将进行卸载。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

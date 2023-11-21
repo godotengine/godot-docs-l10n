@@ -10,14 +10,14 @@
 VideoStreamPlayer
 =================
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于播放视频的控件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于播放 :ref:`VideoStream<class_VideoStream>` 资源的控件。
 
@@ -29,15 +29,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Playing videos <../tutorials/animation/playing_videos>`
+- :doc:`播放视频 <../tutorials/animation/playing_videos>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -94,8 +94,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_VideoStreamPlayer_signal_finished:
 
@@ -111,8 +111,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VideoStreamPlayer_property_audio_track:
 
@@ -210,7 +210,7 @@ Property Descriptions
 - void **set_loop** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **has_loop** **(** **)**
 
-If ``true``, the video restarts when it reaches its end.
+如果为 ``true``\ ，该视频将在到达末尾时重新开始。
 
 .. rst-class:: classref-item-separator
 
@@ -305,8 +305,8 @@ If ``true``, the video restarts when it reaches its end.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_VideoStreamPlayer_method_get_stream_length:
 
@@ -314,9 +314,9 @@ Method Descriptions
 
 :ref:`float<class_float>` **get_stream_length** **(** **)** |const|
 
-The length of the current stream, in seconds.
+当前流的长度，单位：秒。
 
-\ **Note:** For :ref:`VideoStreamTheora<class_VideoStreamTheora>` streams (the built-in format supported by Godot), this value will always be zero, as getting the stream length is not implemented yet. The feature may be supported by video formats implemented by a GDExtension add-on.
+\ **注意：**\ 对于 :ref:`VideoStreamTheora<class_VideoStreamTheora>` 流（Godot 支持的内置格式），该值将始终为零，因为获取流长度尚未实现。GDExtension 插件实现的视频格式可能会支持该功能。
 
 .. rst-class:: classref-item-separator
 
@@ -382,10 +382,10 @@ void **stop** **(** **)**
 
 \ **注意：**\ 虽然视频流位置将被设置为 0，但视频流的第一帧不会成为当前帧。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

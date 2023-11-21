@@ -14,26 +14,26 @@ PackedVector2Array
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 专门设计用于存放 :ref:`Vector2<class_Vector2>` 的数组。数据是紧密存放的，因此能够在数组较大时节省内存。
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `2D 导航 Astar 演示 <https://godotengine.org/asset-library/asset/519>`__
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -48,8 +48,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -100,8 +100,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -124,8 +124,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_PackedVector2Array_constructor_PackedVector2Array:
 
@@ -167,8 +167,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PackedVector2Array_method_append:
 
@@ -442,8 +442,8 @@ void **sort** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_PackedVector2Array_operator_neq_PackedVector2Array:
 
@@ -463,7 +463,11 @@ Operator Descriptions
 
 :ref:`PackedVector2Array<class_PackedVector2Array>` **operator *** **(** :ref:`Transform2D<class_Transform2D>` right **)**
 
-使用 :ref:`Transform2D<class_Transform2D>` 矩阵对数组中的所有向量进行变换（相乘）。
+返回一个新的 **PackedVector2Array**\ ，该数组中的所有向量都通过给定的 :ref:`Transform2D<class_Transform2D>` 变换矩阵进行逆变换（乘以），假设该变换的基是正交的（即旋转/反射可以，缩放/倾斜则不然）。
+
+\ ``array * transform`` 相当于 ``transform.inverse() * array``\ 。请参阅 :ref:`Transform2D.inverse<class_Transform2D_method_inverse>`\ 。
+
+对于通过仿射变换的逆进行变换（例如缩放），可以使用 ``transform.affine_inverse() * array`` 代替。请参阅 :ref:`Transform2D.affine_inverse<class_Transform2D_method_affine_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -501,10 +505,10 @@ Operator Descriptions
 
 返回索引为 ``index`` 的 :ref:`Vector2<class_Vector2>`\ 。负数索引能从末尾开始访问元素。使用数组范围外的索引会导致出错。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

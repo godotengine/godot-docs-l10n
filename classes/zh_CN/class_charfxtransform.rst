@@ -10,21 +10,21 @@
 CharFXTransform
 ===============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 控制单个字符在 :ref:`RichTextEffect<class_RichTextEffect>` 中的显示方式。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 通过在此对象上设置各种属性，可以控制单个字符在 :ref:`RichTextEffect<class_RichTextEffect>` 中的显示方式。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`RichTextLabel 中的 BBCode <../tutorials/ui/bbcode_in_richtextlabel>`
 
@@ -32,37 +32,39 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`Color<class_Color>`           | :ref:`color<class_CharFXTransform_property_color>`                   | ``Color(0, 0, 0, 1)`` |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`float<class_float>`           | :ref:`elapsed_time<class_CharFXTransform_property_elapsed_time>`     | ``0.0``               |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`Dictionary<class_Dictionary>` | :ref:`env<class_CharFXTransform_property_env>`                       | ``{}``                |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`RID<class_RID>`               | :ref:`font<class_CharFXTransform_property_font>`                     | ``RID()``             |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`               | :ref:`glyph_count<class_CharFXTransform_property_glyph_count>`       | ``0``                 |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`               | :ref:`glyph_flags<class_CharFXTransform_property_glyph_flags>`       | ``0``                 |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`               | :ref:`glyph_index<class_CharFXTransform_property_glyph_index>`       | ``0``                 |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`Vector2<class_Vector2>`       | :ref:`offset<class_CharFXTransform_property_offset>`                 | ``Vector2(0, 0)``     |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`             | :ref:`outline<class_CharFXTransform_property_outline>`               | ``false``             |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`Vector2i<class_Vector2i>`     | :ref:`range<class_CharFXTransform_property_range>`                   | ``Vector2i(0, 0)``    |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`int<class_int>`               | :ref:`relative_index<class_CharFXTransform_property_relative_index>` | ``0``                 |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
-   | :ref:`bool<class_bool>`             | :ref:`visible<class_CharFXTransform_property_visible>`               | ``true``              |
-   +-------------------------------------+----------------------------------------------------------------------+-----------------------+
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Color<class_Color>`             | :ref:`color<class_CharFXTransform_property_color>`                   | ``Color(0, 0, 0, 1)``             |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`float<class_float>`             | :ref:`elapsed_time<class_CharFXTransform_property_elapsed_time>`     | ``0.0``                           |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Dictionary<class_Dictionary>`   | :ref:`env<class_CharFXTransform_property_env>`                       | ``{}``                            |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`RID<class_RID>`                 | :ref:`font<class_CharFXTransform_property_font>`                     | ``RID()``                         |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`glyph_count<class_CharFXTransform_property_glyph_count>`       | ``0``                             |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`glyph_flags<class_CharFXTransform_property_glyph_flags>`       | ``0``                             |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`glyph_index<class_CharFXTransform_property_glyph_index>`       | ``0``                             |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Vector2<class_Vector2>`         | :ref:`offset<class_CharFXTransform_property_offset>`                 | ``Vector2(0, 0)``                 |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`bool<class_bool>`               | :ref:`outline<class_CharFXTransform_property_outline>`               | ``false``                         |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`       | :ref:`range<class_CharFXTransform_property_range>`                   | ``Vector2i(0, 0)``                |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`int<class_int>`                 | :ref:`relative_index<class_CharFXTransform_property_relative_index>` | ``0``                             |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`Transform2D<class_Transform2D>` | :ref:`transform<class_CharFXTransform_property_transform>`           | ``Transform2D(1, 0, 0, 1, 0, 0)`` |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
+   | :ref:`bool<class_bool>`               | :ref:`visible<class_CharFXTransform_property_visible>`               | ``true``                          |
+   +---------------------------------------+----------------------------------------------------------------------+-----------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -70,8 +72,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CharFXTransform_property_color:
 
@@ -228,7 +230,7 @@ Property Descriptions
 - void **set_outline** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_outline** **(** **)**
 
-如果为 ``为true``\ ，则调用 FX 变换进行轮廓绘制。设置该属性不会影响绘制。
+如果为 ``true``\ ，则调用 FX 变换进行轮廓绘制。设置该属性不会影响绘制。
 
 .. rst-class:: classref-item-separator
 
@@ -268,6 +270,23 @@ Property Descriptions
 
 ----
 
+.. _class_CharFXTransform_property_transform:
+
+.. rst-class:: classref-property
+
+:ref:`Transform2D<class_Transform2D>` **transform** = ``Transform2D(1, 0, 0, 1, 0, 0)``
+
+.. rst-class:: classref-property-setget
+
+- void **set_transform** **(** :ref:`Transform2D<class_Transform2D>` value **)**
+- :ref:`Transform2D<class_Transform2D>` **get_transform** **(** **)**
+
+当前字形的当前变换。可以被覆盖（例如根据曲线来确定位置和旋转）。你还可以修改现有值，在其他效果的基础上应用变换。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_CharFXTransform_property_visible:
 
 .. rst-class:: classref-property
@@ -281,10 +300,10 @@ Property Descriptions
 
 如果为 ``true``\ ，将绘制字符。如果为 ``false``\ ，则隐藏字符。隐藏字符周围的字符将回流以占用隐藏字符的空间。如果不希望这样做，可以将它们的 :ref:`color<class_CharFXTransform_property_color>` 设置为\ ``Color(1, 1, 1, 0)``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

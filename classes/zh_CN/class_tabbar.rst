@@ -10,53 +10,55 @@
 TabBar
 ======
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 提供水平选项卡栏的控件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 提供水平选项卡栏的控件。类似于 :ref:`TabContainer<class_TabContainer>`\ ，但只负责绘制选项卡，不与子节点互动。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`                                               | :ref:`clip_tabs<class_TabBar_property_clip_tabs>`                                 | ``true``  |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`                                                 | :ref:`current_tab<class_TabBar_property_current_tab>`                             | ``0``     |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`                                               | :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>` | ``false`` |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`                                                 | :ref:`max_tab_width<class_TabBar_property_max_tab_width>`                         | ``0``     |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`                                               | :ref:`scroll_to_selected<class_TabBar_property_scroll_to_selected>`               | ``true``  |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`                                               | :ref:`scrolling_enabled<class_TabBar_property_scrolling_enabled>`                 | ``true``  |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`bool<class_bool>`                                               | :ref:`select_with_rmb<class_TabBar_property_select_with_rmb>`                     | ``false`` |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`                       | :ref:`tab_alignment<class_TabBar_property_tab_alignment>`                         | ``0``     |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` | :ref:`tab_close_display_policy<class_TabBar_property_tab_close_display_policy>`   | ``0``     |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`                                                 | :ref:`tab_count<class_TabBar_property_tab_count>`                                 | ``0``     |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
-   | :ref:`int<class_int>`                                                 | :ref:`tabs_rearrange_group<class_TabBar_property_tabs_rearrange_group>`           | ``-1``    |
-   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+-----------+
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`clip_tabs<class_TabBar_property_clip_tabs>`                                 | ``true``                                                            |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                                 | :ref:`current_tab<class_TabBar_property_current_tab>`                             | ``0``                                                               |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`drag_to_rearrange_enabled<class_TabBar_property_drag_to_rearrange_enabled>` | ``false``                                                           |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`FocusMode<enum_Control_FocusMode>`                              | focus_mode                                                                        | ``2`` (overrides :ref:`Control<class_Control_property_focus_mode>`) |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                                 | :ref:`max_tab_width<class_TabBar_property_max_tab_width>`                         | ``0``                                                               |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`scroll_to_selected<class_TabBar_property_scroll_to_selected>`               | ``true``                                                            |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`scrolling_enabled<class_TabBar_property_scrolling_enabled>`                 | ``true``                                                            |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                               | :ref:`select_with_rmb<class_TabBar_property_select_with_rmb>`                     | ``false``                                                           |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`AlignmentMode<enum_TabBar_AlignmentMode>`                       | :ref:`tab_alignment<class_TabBar_property_tab_alignment>`                         | ``0``                                                               |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`CloseButtonDisplayPolicy<enum_TabBar_CloseButtonDisplayPolicy>` | :ref:`tab_close_display_policy<class_TabBar_property_tab_close_display_policy>`   | ``0``                                                               |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                                 | :ref:`tab_count<class_TabBar_property_tab_count>`                                 | ``0``                                                               |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                                 | :ref:`tabs_rearrange_group<class_TabBar_property_tabs_rearrange_group>`           | ``-1``                                                              |
+   +-----------------------------------------------------------------------+-----------------------------------------------------------------------------------+---------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -100,6 +102,10 @@ Methods
    +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                             | :ref:`remove_tab<class_TabBar_method_remove_tab>` **(** :ref:`int<class_int>` tab_idx **)**                                                                                     |
    +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                          | :ref:`select_next_available<class_TabBar_method_select_next_available>` **(** **)**                                                                                             |
+   +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                          | :ref:`select_previous_available<class_TabBar_method_select_previous_available>` **(** **)**                                                                                     |
+   +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                             | :ref:`set_tab_button_icon<class_TabBar_method_set_tab_button_icon>` **(** :ref:`int<class_int>` tab_idx, :ref:`Texture2D<class_Texture2D>` icon **)**                           |
    +--------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                             | :ref:`set_tab_disabled<class_TabBar_method_set_tab_disabled>` **(** :ref:`int<class_int>` tab_idx, :ref:`bool<class_bool>` disabled **)**                                       |
@@ -121,8 +127,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -168,6 +174,8 @@ Theme Properties
    +-----------------------------------+------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_disabled<class_TabBar_theme_style_tab_disabled>`                   |                                     |
    +-----------------------------------+------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_focus<class_TabBar_theme_style_tab_focus>`                         |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_hovered<class_TabBar_theme_style_tab_hovered>`                     |                                     |
    +-----------------------------------+------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_selected<class_TabBar_theme_style_tab_selected>`                   |                                     |
@@ -181,8 +189,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_TabBar_signal_active_tab_rearranged:
 
@@ -289,7 +297,7 @@ Signals
 
 **tab_selected** **(** :ref:`int<class_int>` tab **)**
 
-通过点击或脚本选中某个选项卡时发出，即便该选项卡本来就是当前选项卡。
+通过点击、定向输入、或脚本选中某个选项卡时发出，即便该选项卡本来就是当前选项卡。
 
 .. rst-class:: classref-section-separator
 
@@ -297,8 +305,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TabBar_AlignmentMode:
 
@@ -386,8 +394,8 @@ enum **CloseButtonDisplayPolicy**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TabBar_property_clip_tabs:
 
@@ -580,8 +588,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TabBar_method_add_tab:
 
@@ -811,6 +819,30 @@ void **remove_tab** **(** :ref:`int<class_int>` tab_idx **)**
 
 ----
 
+.. _class_TabBar_method_select_next_available:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **select_next_available** **(** **)**
+
+选择索引大于当前所选选项卡索引的第一个可用选项卡。如果选项卡选择发生改变，则返回 ``true``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabBar_method_select_previous_available:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **select_previous_available** **(** **)**
+
+选择索引低于当前所选选项卡索引的第一个可用选项卡。如果选项卡选择发生改变，则返回 ``true``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TabBar_method_set_tab_button_icon:
 
 .. rst-class:: classref-method
@@ -921,8 +953,8 @@ void **set_tab_title** **(** :ref:`int<class_int>` tab_idx, :ref:`String<class_S
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_TabBar_theme_color_drop_mark_color:
 
@@ -1166,13 +1198,27 @@ Theme Property Descriptions
 
 ----
 
+.. _class_TabBar_theme_style_tab_focus:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **tab_focus**
+
+该 **TabBar** 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`tab_focus<class_TabBar_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TabBar_theme_style_tab_hovered:
 
 .. rst-class:: classref-themeproperty
 
 :ref:`StyleBox<class_StyleBox>` **tab_hovered**
 
-当前悬停的选项卡的样式。不会应用于选中的选项卡。
+当前悬停选项卡的样式。不适用于选择的选项卡。
+
+\ **注意：**\ 该样式将以至少与 :ref:`tab_unselected<class_TabBar_theme_style_tab_unselected>` 相同的宽度绘制。
 
 .. rst-class:: classref-item-separator
 
@@ -1198,10 +1244,10 @@ Theme Property Descriptions
 
 其他未被选中的选项卡的样式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

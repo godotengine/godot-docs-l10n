@@ -10,21 +10,21 @@
 Geometry3D
 ==========
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 提供常见 3D 几何运算的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 为创建几何形状，计算形状之间的交集，以及处理 3D 中的各种其他几何操作提供了一组辅助函数。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -65,8 +65,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Geometry3D_method_build_box_planes:
 
@@ -122,7 +122,7 @@ Method Descriptions
 
 :ref:`PackedVector3Array<class_PackedVector3Array>` **compute_convex_mesh_points** **(** :ref:`Plane[]<class_Plane>` planes **)**
 
-Calculates and returns all the vertex points of a convex shape defined by an array of ``planes``.
+计算并返回由一组 ``planes`` 定义的凸形状的所有顶点。
 
 .. rst-class:: classref-item-separator
 
@@ -170,9 +170,9 @@ Calculates and returns all the vertex points of a convex shape defined by an arr
 
 :ref:`Vector3<class_Vector3>` **get_triangle_barycentric_coords** **(** :ref:`Vector3<class_Vector3>` point, :ref:`Vector3<class_Vector3>` a, :ref:`Vector3<class_Vector3>` b, :ref:`Vector3<class_Vector3>` c **)**
 
-Returns a :ref:`Vector3<class_Vector3>` containing weights based on how close a 3D position (``point``) is to a triangle's different vertices (``a``, ``b`` and ``c``). This is useful for interpolating between the data of different vertices in a triangle. One example use case is using this to smoothly rotate over a mesh instead of relying solely on face normals.
+返回一个 :ref:`Vector3<class_Vector3>`\ ，其中包含基于 3D 位置（\ ``point``\ ）与三角形不同顶点（\ ``a``\ 、\ ``b`` 和 ``c``\ ）的接近程度的权重。这对于在三角形中不同顶点的数据之间进行插值非常有用。一个示例用例是使用它在网格上平滑旋转，而不是仅仅依赖于面法线。
 
-\ `Here is a more detailed explanation of barycentric coordinates. <https://en.wikipedia.org/wiki/Barycentric_coordinate_system>`__
+\ `这里是重心坐标的更详细解释。 <https://en.wikipedia.org/wiki/Barycentric_coordinate_system>`__
 
 .. rst-class:: classref-item-separator
 
@@ -234,10 +234,10 @@ Returns a :ref:`Vector3<class_Vector3>` containing weights based on how close a 
 
 测试线段（\ ``from``\ ，\ ``to``\ ）是否与三角形 ``a``\ 、\ ``b``\ 、\ ``c`` 相交。如果相交，则将交点作为 :ref:`Vector3<class_Vector3>` 返回。如果不相交，则返回 ``null``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

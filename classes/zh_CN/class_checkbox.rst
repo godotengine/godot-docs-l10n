@@ -10,14 +10,14 @@
 CheckBox
 ========
 
-**Inherits:** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Button<class_Button>` **<** :ref:`BaseButton<class_BaseButton>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 代表二元选项的按钮。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **CheckBox** 允许用户在仅有的两个可能的选项中选择一个。它在功能上类似于 :ref:`CheckButton<class_CheckButton>`\ ，但外观不同。为了遵循既定的 UX 模式，建议在切换而\ **不会**\ 立即对某些内容产生影响时使用 **CheckBox**\ 。例如，切换后只会在按下确认按钮后才执行某些操作时，就可以使用它。
 
@@ -27,8 +27,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,65 +41,31 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
 
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_color<class_CheckBox_theme_color_font_color>`                             | ``Color(0.875, 0.875, 0.875, 1)``   |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_disabled_color<class_CheckBox_theme_color_font_disabled_color>`           | ``Color(0.875, 0.875, 0.875, 0.5)`` |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_focus_color<class_CheckBox_theme_color_font_focus_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_hover_color<class_CheckBox_theme_color_font_hover_color>`                 | ``Color(0.95, 0.95, 0.95, 1)``      |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_hover_pressed_color<class_CheckBox_theme_color_font_hover_pressed_color>` | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_outline_color<class_CheckBox_theme_color_font_outline_color>`             | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Color<class_Color>`         | :ref:`font_pressed_color<class_CheckBox_theme_color_font_pressed_color>`             | ``Color(1, 1, 1, 1)``               |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`check_v_offset<class_CheckBox_theme_constant_check_v_offset>`                  | ``0``                               |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`h_separation<class_CheckBox_theme_constant_h_separation>`                      | ``4``                               |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`outline_size<class_CheckBox_theme_constant_outline_size>`                      | ``0``                               |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Font<class_Font>`           | :ref:`font<class_CheckBox_theme_font_font>`                                          |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`int<class_int>`             | :ref:`font_size<class_CheckBox_theme_font_size_font_size>`                           |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`checked<class_CheckBox_theme_icon_checked>`                                    |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`checked_disabled<class_CheckBox_theme_icon_checked_disabled>`                  |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`radio_checked<class_CheckBox_theme_icon_radio_checked>`                        |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`radio_checked_disabled<class_CheckBox_theme_icon_radio_checked_disabled>`      |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`radio_unchecked<class_CheckBox_theme_icon_radio_unchecked>`                    |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`radio_unchecked_disabled<class_CheckBox_theme_icon_radio_unchecked_disabled>`  |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`unchecked<class_CheckBox_theme_icon_unchecked>`                                |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`unchecked_disabled<class_CheckBox_theme_icon_unchecked_disabled>`              |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`disabled<class_CheckBox_theme_style_disabled>`                                 |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`focus<class_CheckBox_theme_style_focus>`                                       |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`hover<class_CheckBox_theme_style_hover>`                                       |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`hover_pressed<class_CheckBox_theme_style_hover_pressed>`                       |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`normal<class_CheckBox_theme_style_normal>`                                     |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`pressed<class_CheckBox_theme_style_pressed>`                                   |                                     |
-   +-----------------------------------+--------------------------------------------------------------------------------------+-------------------------------------+
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`             | :ref:`check_v_offset<class_CheckBox_theme_constant_check_v_offset>`                 | ``0`` |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`checked<class_CheckBox_theme_icon_checked>`                                   |       |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`checked_disabled<class_CheckBox_theme_icon_checked_disabled>`                 |       |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`radio_checked<class_CheckBox_theme_icon_radio_checked>`                       |       |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`radio_checked_disabled<class_CheckBox_theme_icon_radio_checked_disabled>`     |       |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`radio_unchecked<class_CheckBox_theme_icon_radio_unchecked>`                   |       |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`radio_unchecked_disabled<class_CheckBox_theme_icon_radio_unchecked_disabled>` |       |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`unchecked<class_CheckBox_theme_icon_unchecked>`                               |       |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`unchecked_disabled<class_CheckBox_theme_icon_unchecked_disabled>`             |       |
+   +-----------------------------------+-------------------------------------------------------------------------------------+-------+
 
 .. rst-class:: classref-section-separator
 
@@ -107,92 +73,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
-
-.. _class_CheckBox_theme_color_font_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_color** = ``Color(0.875, 0.875, 0.875, 1)``
-
-该 **CheckBox** 文本的字体颜色。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_color_font_disabled_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_disabled_color** = ``Color(0.875, 0.875, 0.875, 0.5)``
-
-该 **CheckBox** 被禁用时的文本字体颜色。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_color_font_focus_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_focus_color** = ``Color(0.95, 0.95, 0.95, 1)``
-
-该 **CheckBox** 被聚焦时的文本字体颜色。只替代该勾选框的正常文本颜色。禁用、悬停和按下状态优先于这个颜色。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_color_font_hover_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_hover_color** = ``Color(0.95, 0.95, 0.95, 1)``
-
-该 **CheckBox** 被悬停时的文本字体颜色。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_color_font_hover_pressed_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_hover_pressed_color** = ``Color(1, 1, 1, 1)``
-
-该 **CheckBox** 被悬停且被按下时的文本字体颜色。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_color_font_outline_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_outline_color** = ``Color(1, 1, 1, 1)``
-
-该 **CheckBox** 文本轮廓的色调。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_color_font_pressed_color:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Color<class_Color>` **font_pressed_color** = ``Color(1, 1, 1, 1)``
-
-该 **CheckBox** 被按下时的文本字体颜色。
-
-.. rst-class:: classref-item-separator
-
-----
+主题属性说明
+------------
 
 .. _class_CheckBox_theme_constant_check_v_offset:
 
@@ -201,56 +83,6 @@ Theme Property Descriptions
 :ref:`int<class_int>` **check_v_offset** = ``0``
 
 渲染勾选图标时使用的垂直偏移量（单位：像素）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_constant_h_separation:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`int<class_int>` **h_separation** = ``4``
-
-勾选图标与文本之间的间隔（单位：像素）。使用时负值会被视为 ``0``\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_constant_outline_size:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`int<class_int>` **outline_size** = ``0``
-
-文字轮廓的大小。
-
-\ **注意：**\ 如果使用启用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字体，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必须至少设置为 :ref:`outline_size<class_CheckBox_theme_constant_outline_size>` 的\ *两倍*\ ，轮廓渲染才能看起来正确。否则，轮廓可能会比预期的更早被切断。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_font_font:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Font<class_Font>` **font**
-
-该 **CheckBox** 文本所使用的 :ref:`Font<class_Font>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_font_size_font_size:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`int<class_int>` **font_size**
-
-该 **CheckBox** 文本的字体大小。
 
 .. rst-class:: classref-item-separator
 
@@ -348,82 +180,10 @@ Theme Property Descriptions
 
 勾选图标，该 **CheckBox** 未勾选且被禁用时显示。
 
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_style_disabled:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **disabled**
-
-作为背景显示的 :ref:`StyleBox<class_StyleBox>`\ ，该 **CheckBox** 被禁用时使用。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_style_focus:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **focus**
-
-作为背景显示的 :ref:`StyleBox<class_StyleBox>`\ ，该 **CheckBox** 被聚焦时使用。\ ``focus`` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_style_hover:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **hover**
-
-作为背景显示的 :ref:`StyleBox<class_StyleBox>`\ ，该 **CheckBox** 被悬停时使用。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_style_hover_pressed:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **hover_pressed**
-
-作为背景显示的 :ref:`StyleBox<class_StyleBox>`\ ，该 **CheckBox** 被悬停且被按下时使用。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_style_normal:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **normal**
-
-作为背景显示的 :ref:`StyleBox<class_StyleBox>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_CheckBox_theme_style_pressed:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **pressed**
-
-作为背景显示的 :ref:`StyleBox<class_StyleBox>`\ ，该 **CheckBox** 被按下时使用。
-
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

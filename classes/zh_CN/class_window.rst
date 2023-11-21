@@ -10,16 +10,16 @@
 Window
 ======
 
-**Inherits:** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Viewport<class_Viewport>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`AcceptDialog<class_AcceptDialog>`, :ref:`Popup<class_Popup>`
+**派生：** :ref:`AcceptDialog<class_AcceptDialog>`, :ref:`Popup<class_Popup>`
 
 所有窗口、对话框、弹出框的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 创建窗口的节点。窗口可以是原生系统窗口，也可以是嵌入到其他 **Window** 中的窗口（见 :ref:`Viewport.gui_embed_subwindows<class_Viewport_property_gui_embed_subwindows>`\ ）。
 
@@ -27,8 +27,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -57,6 +57,8 @@ Properties
    | :ref:`bool<class_bool>`                                         | :ref:`extend_to_title<class_Window_property_extend_to_title>`                     | ``false``                |
    +-----------------------------------------------------------------+-----------------------------------------------------------------------------------+--------------------------+
    | :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` | :ref:`initial_position<class_Window_property_initial_position>`                   | ``0``                    |
+   +-----------------------------------------------------------------+-----------------------------------------------------------------------------------+--------------------------+
+   | :ref:`bool<class_bool>`                                         | :ref:`keep_title_visible<class_Window_property_keep_title_visible>`               | ``false``                |
    +-----------------------------------------------------------------+-----------------------------------------------------------------------------------+--------------------------+
    | :ref:`Vector2i<class_Vector2i>`                                 | :ref:`max_size<class_Window_property_max_size>`                                   | ``Vector2i(0, 0)``       |
    +-----------------------------------------------------------------+-----------------------------------------------------------------------------------+--------------------------+
@@ -95,14 +97,14 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Vector2<class_Vector2>`                       | :ref:`_get_contents_minimum_size<class_Window_method__get_contents_minimum_size>` **(** **)** |virtual| |const|                                                                                                                                    |
+   | :ref:`Vector2<class_Vector2>`                       | :ref:`_get_contents_minimum_size<class_Window_private_method__get_contents_minimum_size>` **(** **)** |virtual| |const|                                                                                                                            |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                | :ref:`add_theme_color_override<class_Window_method_add_theme_color_override>` **(** :ref:`StringName<class_StringName>` name, :ref:`Color<class_Color>` color **)**                                                                                |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -249,8 +251,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -289,8 +291,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Window_signal_about_to_popup:
 
@@ -398,7 +400,7 @@ Signals
 
 **mouse_entered** **(** **)**
 
-Emitted when the mouse cursor enters the **Window**'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or windows, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
+当鼠标光标进入 **Window** 的可见区域时发出，该区域未被其他 :ref:`Control<class_Control>` 或窗口遮挡，只要其 :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` 为 ``false`` 并且无论它当前聚焦与否。
 
 .. rst-class:: classref-item-separator
 
@@ -410,7 +412,7 @@ Emitted when the mouse cursor enters the **Window**'s visible area, that is not 
 
 **mouse_exited** **(** **)**
 
-Emitted when the mouse cursor leaves the **Window**'s visible area, that is not occluded behind other :ref:`Control<class_Control>`\ s or windows, provided its :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` is ``false`` and regardless if it's currently focused or not.
+当鼠标光标离开 **Window** 的可见区域时发出，该区域未被其他 :ref:`Control<class_Control>` 或窗口遮挡，只要其 :ref:`Viewport.gui_disable_input<class_Viewport_property_gui_disable_input>` 为 ``false`` 并且无论它当前聚焦与否。
 
 .. rst-class:: classref-item-separator
 
@@ -466,8 +468,8 @@ Emitted when the mouse cursor leaves the **Window**'s visible area, that is not 
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Window_Mode:
 
@@ -505,9 +507,15 @@ enum **Mode**:
 
 :ref:`Mode<enum_Window_Mode>` **MODE_FULLSCREEN** = ``3``
 
-全屏窗口模式。请注意，这不是\ *独占的*\ 全屏显示。在 Windows 和 Linux 上，无边框窗口用于模拟全屏。在 macOS 上，会创建一个新的桌面用于显示正在运行的项目。
+具有完整多窗口支持的全屏模式。
 
-无论平台如何，启用全屏都会更改窗口大小以匹配显示器的大小。因此，请确保你的项目在启用全屏模式时支持\ :doc:`多种分辨率 <../tutorials/rendering/multiple_resolutions>`\ 。
+全屏窗口覆盖屏幕的整个显示区域，且没有任何装饰。显示的视频模式没有更改。
+
+\ **在 Windows 上：**\ 多窗口全屏模式具有 1px 宽的颜色为 :ref:`ProjectSettings.rendering/environment/defaults/default_clear_color<class_ProjectSettings_property_rendering/environment/defaults/default_clear_color>` 的边框。
+
+\ **在 macOS 上：**\ 使用新桌面来显示正在运行的项目。
+
+\ **注意：**\ 无论平台如何，启用全屏都会更改窗口大小以匹配显示器的大小。因此，请确保你的项目在启用全屏模式时支持\ :doc:`多种分辨率 <../tutorials/rendering/multiple_resolutions>`\ 。
 
 .. _class_Window_constant_MODE_EXCLUSIVE_FULLSCREEN:
 
@@ -515,11 +523,17 @@ enum **Mode**:
 
 :ref:`Mode<enum_Window_Mode>` **MODE_EXCLUSIVE_FULLSCREEN** = ``4``
 
-独占式全屏窗口模式。该模式仅在 Windows 平台上实现。在其他平台上等同于 :ref:`MODE_FULLSCREEN<class_Window_constant_MODE_FULLSCREEN>`\ 。
+单窗口全屏模式。这种模式开销较小，但一次只能在给定屏幕上打开一个窗口（打开子窗口或切换应用程序会触发全屏过渡）。
 
-同一屏幕上一次只能有一个窗口处于独占式全屏模式。如果同一屏幕上有多个窗口都启用了独占式全屏模式，则最后一个设置为该模式的窗口会优先显示。
+全屏窗口会覆盖屏幕的整个显示区域，没有边框或装饰。显示视频模式没有改变。
 
-无论在哪个平台上，启用全屏模式将会将窗口大小调整为与显示器相匹配的大小。因此，在启用全屏模式之前，请确保你的项目支持\ :doc:`多分辨率 <../tutorials/rendering/multiple_resolutions>`\ 。
+\ **在 Windows 上：**\ 取决于视频驱动程序，全屏过渡可能会导致屏幕暂时变黑。
+
+\ **在 macOS 上：**\ 一个新的桌面用于显示正在运行的项目。当鼠标指针悬停在屏幕边缘时，独占全屏模式会阻止 Dock 和 Menu 出现。
+
+\ **在 Linux（X11）上：**\ 独占全屏模式会绕过合成器。
+
+\ **注意：**\ 无论平台如何，启用全屏都会更改窗口大小以匹配显示器的大小。因此，确保你的项目在启用全屏模式时支持\ :doc:`多个分辨率 <../tutorials/rendering/multiple_resolutions>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -713,7 +727,7 @@ enum **ContentScaleStretch**:
 
 :ref:`ContentScaleStretch<enum_Window_ContentScaleStretch>` **CONTENT_SCALE_STRETCH_FRACTIONAL** = ``0``
 
-The content will be stretched according to a fractional factor. This fills all the space available in the window, but allows "pixel wobble" to occur due to uneven pixel scaling.
+内容会根据小数系数进行拉伸。这样就能够填充窗口的所有空间，但非整数的像素缩放会导致发生“像素摆动”。
 
 .. _class_Window_constant_CONTENT_SCALE_STRETCH_INTEGER:
 
@@ -721,7 +735,7 @@ The content will be stretched according to a fractional factor. This fills all t
 
 :ref:`ContentScaleStretch<enum_Window_ContentScaleStretch>` **CONTENT_SCALE_STRETCH_INTEGER** = ``1``
 
-The content will be stretched only according to an integer factor, preserving sharp pixels. This may leave a black background visible on the window's edges depending on the window size.
+内容只会根据整数系数进行拉伸，保持像素的锐利。可能导致窗口的边缘留出可见的黑色背景，具体取决于窗口大小。
 
 .. rst-class:: classref-item-separator
 
@@ -829,8 +843,8 @@ enum **WindowInitialPosition**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Window_constant_NOTIFICATION_VISIBILITY_CHANGED:
 
@@ -862,8 +876,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Window_property_always_on_top:
 
@@ -995,7 +1009,7 @@ Property Descriptions
 - void **set_content_scale_stretch** **(** :ref:`ContentScaleStretch<enum_Window_ContentScaleStretch>` value **)**
 - :ref:`ContentScaleStretch<enum_Window_ContentScaleStretch>` **get_content_scale_stretch** **(** **)**
 
-The policy to use to determine the final scale factor for 2D elements. This affects how :ref:`content_scale_factor<class_Window_property_content_scale_factor>` is applied, in addition to the automatic scale factor determined by :ref:`content_scale_size<class_Window_property_content_scale_size>`.
+决定 2D 元素最终缩放系数的策略。会影响 :ref:`content_scale_factor<class_Window_property_content_scale_factor>` 的使用，与 :ref:`content_scale_size<class_Window_property_content_scale_size>` 决定的自动缩放系数共同生效。
 
 .. rst-class:: classref-item-separator
 
@@ -1070,6 +1084,23 @@ The policy to use to determine the final scale factor for 2D elements. This affe
 - :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` **get_initial_position** **(** **)**
 
 指定该 **Window** 的初始位置类型。见 :ref:`WindowInitialPosition<enum_Window_WindowInitialPosition>` 常量。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Window_property_keep_title_visible:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **keep_title_visible** = ``false``
+
+.. rst-class:: classref-property-setget
+
+- void **set_keep_title_visible** **(** :ref:`bool<class_bool>` value **)**
+- :ref:`bool<class_bool>` **get_keep_title_visible** **(** **)**
+
+如果为 ``true``\ ，则该 **Window** 宽度被扩展以保持标题栏文本完全可见。
 
 .. rst-class:: classref-item-separator
 
@@ -1218,7 +1249,7 @@ The policy to use to determine the final scale factor for 2D elements. This affe
 - void **set_flag** **(** :ref:`Flags<enum_Window_Flags>` flag, :ref:`bool<class_bool>` enabled **)**
 - :ref:`bool<class_bool>` **get_flag** **(** :ref:`Flags<enum_Window_Flags>` flag **)** |const|
 
-If ``true``, the **Window** will be considered a popup. Popups are sub-windows that don't show as separate windows in system's window manager's window list and will send close request when anything is clicked outside of them (unless :ref:`exclusive<class_Window_property_exclusive>` is enabled).
+如果为 ``true``\ ，则该 **Window** 将被视为弹出窗口。弹出窗口是子窗口，不会在系统窗口管理器的窗口列表中显示为单独的窗口，并且会在单击它们之外的任何位置时发送关闭请求（除非启用了 :ref:`exclusive<class_Window_property_exclusive>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1427,16 +1458,16 @@ If ``true``, the **Window** will be considered a popup. Popups are sub-windows t
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Window_method__get_contents_minimum_size:
+.. _class_Window_private_method__get_contents_minimum_size:
 
 .. rst-class:: classref-method
 
 :ref:`Vector2<class_Vector2>` **_get_contents_minimum_size** **(** **)** |virtual| |const|
 
-Virtual method to be implemented by the user. Overrides the value returned by :ref:`get_contents_minimum_size<class_Window_method_get_contents_minimum_size>`.
+需要用户实现的虚方法。能够覆盖 :ref:`get_contents_minimum_size<class_Window_method_get_contents_minimum_size>` 的返回值。
 
 .. rst-class:: classref-item-separator
 
@@ -1580,9 +1611,9 @@ void **end_bulk_theme_override** **(** **)**
 
 :ref:`Vector2<class_Vector2>` **get_contents_minimum_size** **(** **)** |const|
 
-Returns the combined minimum size from the child :ref:`Control<class_Control>` nodes of the window. Use :ref:`child_controls_changed<class_Window_method_child_controls_changed>` to update it when children nodes have changed.
+返回该窗口子 :ref:`Control<class_Control>` 节点最小尺寸的合并大小。请在子节点发生改变时使用 :ref:`child_controls_changed<class_Window_method_child_controls_changed>` 进行更新。
 
-The value returned by this method can be overridden with :ref:`_get_contents_minimum_size<class_Window_method__get_contents_minimum_size>`.
+这个方法的返回值可以使用 :ref:`_get_contents_minimum_size<class_Window_private_method__get_contents_minimum_size>` 覆盖。
 
 .. rst-class:: classref-item-separator
 
@@ -2032,7 +2063,7 @@ void **hide** **(** **)**
 
 void **move_to_center** **(** **)**
 
-Centers a native window on the current screen and an embedded window on its embedder :ref:`Viewport<class_Viewport>`.
+在当前屏幕里居中原生窗口，如果时嵌入式窗口则是在嵌入器 :ref:`Viewport<class_Viewport>` 里居中。
 
 .. rst-class:: classref-item-separator
 
@@ -2370,8 +2401,8 @@ void **show** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_Window_theme_color_title_color:
 
@@ -2525,12 +2556,12 @@ Theme Property Descriptions
 
 :ref:`StyleBox<class_StyleBox>` **embedded_unfocused_border**
 
-The background style used when the **Window** is embedded and unfocused.
+**Window** 为嵌入式且未获得焦点时使用的背景样式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

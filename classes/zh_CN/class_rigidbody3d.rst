@@ -10,16 +10,16 @@
 RigidBody3D
 ===========
 
-**Inherits:** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`PhysicsBody3D<class_PhysicsBody3D>` **<** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VehicleBody3D<class_VehicleBody3D>`
+**派生：** :ref:`VehicleBody3D<class_VehicleBody3D>`
 
 由物理仿真进行移动的 3D 物理体。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **RigidBody3D** 实现了完整的 3D 物理。这个物理体无法直接控制，必须对其施加力（重力、冲量等），物理仿真将计算由此产生的移动、旋转、对碰撞的反应以及对沿路其他物理体的影响等。
 
@@ -29,12 +29,12 @@ Description
 
 如果你需要覆盖默认的物理行为，你可以编写自定义的力整合函数。见 :ref:`custom_integrator<class_RigidBody3D_property_custom_integrator>`\ 。
 
-\ **注意：**\ 频繁修改 **RigidBody3D** 的 3D 变换或 :ref:`linear_velocity<class_RigidBody3D_property_linear_velocity>` 可能导致无法预期的行为。如果你需要直接影响物理体，请优先使用 :ref:`_integrate_forces<class_RigidBody3D_method__integrate_forces>`\ ，能够直接访问物理状态。
+\ **注意：**\ 频繁修改 **RigidBody3D** 的 3D 变换或 :ref:`linear_velocity<class_RigidBody3D_property_linear_velocity>` 可能导致无法预期的行为。如果你需要直接影响物理体，请优先使用 :ref:`_integrate_forces<class_RigidBody3D_private_method__integrate_forces>`\ ，能够直接访问物理状态。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`物理介绍 <../tutorials/physics/physics_introduction>`
 
@@ -44,8 +44,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -100,14 +100,14 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                          | :ref:`_integrate_forces<class_RigidBody3D_method__integrate_forces>` **(** :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` state **)** |virtual|                |
+   | void                          | :ref:`_integrate_forces<class_RigidBody3D_private_method__integrate_forces>` **(** :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` state **)** |virtual|        |
    +-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                          | :ref:`add_constant_central_force<class_RigidBody3D_method_add_constant_central_force>` **(** :ref:`Vector3<class_Vector3>` force **)**                                          |
    +-------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -142,8 +142,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_RigidBody3D_signal_body_entered:
 
@@ -229,8 +229,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_RigidBody3D_FreezeMode:
 
@@ -312,8 +312,8 @@ enum **DampMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RigidBody3D_property_angular_damp:
 
@@ -345,7 +345,7 @@ Property Descriptions
 - void **set_angular_damp_mode** **(** :ref:`DampMode<enum_RigidBody3D_DampMode>` value **)**
 - :ref:`DampMode<enum_RigidBody3D_DampMode>` **get_angular_damp_mode** **(** **)**
 
-定义如何应用 :ref:`angular_damp<class_RigidBody3D_property_angular_damp>`\ 。有关可能的值，请参见 :ref:`DampMode<enum_RigidBody3D_DampMode>`\ 。
+定义如何应用 :ref:`angular_damp<class_RigidBody3D_property_angular_damp>`\ 。可能的取值见 :ref:`DampMode<enum_RigidBody3D_DampMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -379,7 +379,7 @@ Property Descriptions
 - void **set_can_sleep** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_able_to_sleep** **(** **)**
 
-如果\ ``true``\ ，当未运动时，物体可以进入睡眠模式。请参见 :ref:`sleeping<class_RigidBody3D_property_sleeping>` 。
+如果为 ``true``\ ，则物体未运动时可以进入睡眠模式。见 :ref:`sleeping<class_RigidBody3D_property_sleeping>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -415,7 +415,7 @@ Property Descriptions
 - void **set_center_of_mass_mode** **(** :ref:`CenterOfMassMode<enum_RigidBody3D_CenterOfMassMode>` value **)**
 - :ref:`CenterOfMassMode<enum_RigidBody3D_CenterOfMassMode>` **get_center_of_mass_mode** **(** **)**
 
-定义设置物体质心的方式。请参见 :ref:`CenterOfMassMode<enum_RigidBody3D_CenterOfMassMode>` 以获取可能的值。
+定义设置物体质心的方式。可能的取值见 :ref:`CenterOfMassMode<enum_RigidBody3D_CenterOfMassMode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -434,7 +434,7 @@ Property Descriptions
 
 在每个物理更新期间施加到物体的总恒定位置的力。
 
-请参见 :ref:`add_constant_force<class_RigidBody3D_method_add_constant_force>` 和 :ref:`add_constant_central_force<class_RigidBody3D_method_add_constant_central_force>` 。
+见 :ref:`add_constant_force<class_RigidBody3D_method_add_constant_force>` 和 :ref:`add_constant_central_force<class_RigidBody3D_method_add_constant_central_force>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -453,7 +453,7 @@ Property Descriptions
 
 在每个物理更新期间施加的物体的总恒定旋转力。
 
-请参见 :ref:`add_constant_torque<class_RigidBody3D_method_add_constant_torque>` 。
+见 :ref:`add_constant_torque<class_RigidBody3D_method_add_constant_torque>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -508,7 +508,7 @@ Property Descriptions
 - void **set_use_custom_integrator** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_using_custom_integrator** **(** **)**
 
-如果为 ``true``\ ，则该物体的内力积分将被禁用（如重力或空气摩擦）。除了碰撞响应之外，物体将仅根据 :ref:`_integrate_forces<class_RigidBody3D_method__integrate_forces>` 函数确定的方式移动（如果已定义）。
+如果为 ``true``\ ，则该物体的内力积分将被禁用（如重力或空气摩擦）。除了碰撞响应之外，物体将仅根据 :ref:`_integrate_forces<class_RigidBody3D_private_method__integrate_forces>` 函数确定的方式移动（如果已定义）。
 
 .. rst-class:: classref-item-separator
 
@@ -546,7 +546,7 @@ Property Descriptions
 - void **set_freeze_mode** **(** :ref:`FreezeMode<enum_RigidBody3D_FreezeMode>` value **)**
 - :ref:`FreezeMode<enum_RigidBody3D_FreezeMode>` **get_freeze_mode** **(** **)**
 
-物体的冻结模式。可用于设置当 :ref:`freeze<class_RigidBody3D_property_freeze>` 启用时，物体的行为。有关可能的值，请参见 :ref:`FreezeMode<enum_RigidBody3D_FreezeMode>` 。
+物体的冻结模式。可用于设置启用 :ref:`freeze<class_RigidBody3D_property_freeze>` 时物体的行为。可能的取值见 :ref:`FreezeMode<enum_RigidBody3D_FreezeMode>` 。
 
 对于始终冻结的物体，请使用 :ref:`StaticBody3D<class_StaticBody3D>` 或 :ref:`AnimatableBody3D<class_AnimatableBody3D>`\ 。
 
@@ -584,7 +584,7 @@ Property Descriptions
 
 该物体的惯性力矩。与质量类似，但适用于旋转：用于确定各个轴上需要施加多少扭矩才能让该物体旋转。通常会自动根据质量和形状计算惯性力矩，但这个属性能够让你设置自定义的值。
 
-设置为 ``Vector3.ZERO`` 时，会自动计算惯性（默认值）。
+设置为 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>` 时，会自动计算惯性（默认值）。
 
 \ **注意：**\ 自动计算出惯性后，这个值不会改变。请使用 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 获取计算出的惯性。
 
@@ -665,7 +665,7 @@ Property Descriptions
 - void **set_linear_velocity** **(** :ref:`Vector3<class_Vector3>` value **)**
 - :ref:`Vector3<class_Vector3>` **get_linear_velocity** **(** **)**
 
-物体的线速度，单位为单位每秒。可以偶尔使用，但是\ **不要每一帧都设置它**\ ，因为物理可能在另一个线程中运行，并且以不同的间隔。使用 :ref:`_integrate_forces<class_RigidBody3D_method__integrate_forces>` 作为你的进程循环，以精确控制物体状态。
+物体的线速度，单位为单位每秒。可以偶尔使用，但是\ **不要每一帧都设置它**\ ，因为物理可能在另一个线程中运行，并且以不同的间隔。使用 :ref:`_integrate_forces<class_RigidBody3D_private_method__integrate_forces>` 作为你的进程循环，以精确控制物体状态。
 
 .. rst-class:: classref-item-separator
 
@@ -762,10 +762,10 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_RigidBody3D_method__integrate_forces:
+.. _class_RigidBody3D_private_method__integrate_forces:
 
 .. rst-class:: classref-method
 
@@ -927,7 +927,7 @@ void **apply_torque_impulse** **(** :ref:`Vector3<class_Vector3>` impulse **)**
 
 :ref:`int<class_int>` **get_contact_count** **(** **)** |const|
 
-返回此物体与其他物体的接触数。默认情况下，除非配置监视接触的物体（请参见 :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>`\ ），否则返回 0。
+返回此物体与其他物体的接触数。默认情况下，除非配置监视接触的物体（见 :ref:`contact_monitor<class_RigidBody3D_property_contact_monitor>`\ ），否则返回 0。
 
 \ **注意：**\ 要获取正在碰撞的物体，请使用 :ref:`get_colliding_bodies<class_RigidBody3D_method_get_colliding_bodies>`\ 。
 
@@ -955,10 +955,10 @@ void **set_axis_velocity** **(** :ref:`Vector3<class_Vector3>` axis_velocity **)
 
 设置轴速度。给定向量轴上的速度将被设置为给定向量长度。这对跳跃行为很有用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

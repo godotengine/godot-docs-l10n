@@ -10,14 +10,14 @@
 NavigationAgent3D
 =================
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于寻路至某个位置并且能够躲避障碍物的 3D 代理。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于寻路至某个位置并且能够躲避静态和动态障碍物的 3D 代理。父节点能够使用计算结果沿着路径动态前进。需要有导航数据才能正常工作。
 
@@ -27,15 +27,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 NavigationAgent <../tutorials/navigation/navigation_using_navigationagents>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -58,6 +58,8 @@ Properties
    | :ref:`bool<class_bool>`                                                                        | :ref:`debug_use_custom<class_NavigationAgent3D_property_debug_use_custom>`                         | ``false``             |
    +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`float<class_float>`                                                                      | :ref:`height<class_NavigationAgent3D_property_height>`                                             | ``1.0``               |
+   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`bool<class_bool>`                                                                        | :ref:`keep_y_velocity<class_NavigationAgent3D_property_keep_y_velocity>`                           | ``true``              |
    +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`int<class_int>`                                                                          | :ref:`max_neighbors<class_NavigationAgent3D_property_max_neighbors>`                               | ``10``                |
    +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+-----------------------+
@@ -96,8 +98,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -148,8 +150,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_NavigationAgent3D_signal_link_reached:
 
@@ -157,21 +159,21 @@ Signals
 
 **link_reached** **(** :ref:`Dictionary<class_Dictionary>` details **)**
 
-Notifies when a navigation link has been reached.
+当到达一个导航链接时通知。
 
-The details dictionary may contain the following keys depending on the value of :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>`:
+根据 :ref:`path_metadata_flags<class_NavigationAgent3D_property_path_metadata_flags>` 的值，详细信息字典可能包含以下键：
 
-- ``position``: The start position of the link that was reached.
+- ``position``\ ：到达的链接的起始位置。
 
-- ``type``: Always :ref:`NavigationPathQueryResult3D.PATH_SEGMENT_TYPE_LINK<class_NavigationPathQueryResult3D_constant_PATH_SEGMENT_TYPE_LINK>`.
+- ``type``\ ：总是 :ref:`NavigationPathQueryResult3D.PATH_SEGMENT_TYPE_LINK<class_NavigationPathQueryResult3D_constant_PATH_SEGMENT_TYPE_LINK>`\ 。
 
-- ``rid``: The :ref:`RID<class_RID>` of the link.
+- ``rid``\ ：链接的 :ref:`RID<class_RID>`\ 。
 
-- ``owner``: The object which manages the link (usually :ref:`NavigationLink3D<class_NavigationLink3D>`).
+- ``owner``\ ：管理该链接的对象（通常是\ :ref:`NavigationLink3D<class_NavigationLink3D>`\ ）。
 
-- ``link_entry_position``: If ``owner`` is available and the owner is a :ref:`NavigationLink3D<class_NavigationLink3D>`, it will contain the global position of the link's point the agent is entering.
+- ``link_entry_position``\ ：如果 ``owner`` 可用且该所有者是一个 :ref:`NavigationLink3D<class_NavigationLink3D>`\ ，它将包含代理正在进入时的链接点的全局位置。
 
-- ``link_exit_position``: If ``owner`` is available and the owner is a :ref:`NavigationLink3D<class_NavigationLink3D>`, it will contain the global position of the link's point which the agent is exiting.
+- ``link_exit_position``\ ：如果 ``owner`` 可用且该所有者是一个 :ref:`NavigationLink3D<class_NavigationLink3D>`\ ，它将包含代理正在退出时的链接点的全局位置。
 
 .. rst-class:: classref-item-separator
 
@@ -183,7 +185,7 @@ The details dictionary may contain the following keys depending on the value of 
 
 **navigation_finished** **(** **)**
 
-Emitted once per loaded path when the agent internal navigation path index reaches the last index of the loaded path array. The agent internal navigation path index can be received with :ref:`get_current_navigation_path_index<class_NavigationAgent3D_method_get_current_navigation_path_index>`.
+当代理内部导航路径索引到达加载路径数组的最后一个索引时，每个加载路径发出一次。可以使用 :ref:`get_current_navigation_path_index<class_NavigationAgent3D_method_get_current_navigation_path_index>` 接收代理内部导航路径索引。
 
 .. rst-class:: classref-item-separator
 
@@ -195,13 +197,13 @@ Emitted once per loaded path when the agent internal navigation path index reach
 
 **path_changed** **(** **)**
 
-Emitted when the agent had to update the loaded path:
+当该代理必须更新加载的路径时发出：
 
-- because path was previously empty.
+- 因为路径以前是空的。
 
-- because navigation map has changed.
+- 因为导航地图已经改变。
 
-- because agent pushed further away from the current path segment than the :ref:`path_max_distance<class_NavigationAgent3D_property_path_max_distance>`.
+- 因为代理从当前路径段推得比 :ref:`path_max_distance<class_NavigationAgent3D_property_path_max_distance>` 更远。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +215,7 @@ Emitted when the agent had to update the loaded path:
 
 **target_reached** **(** **)**
 
-Emitted once per loaded path when the agent's global position is the first time within :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` to the :ref:`target_position<class_NavigationAgent3D_property_target_position>`.
+当代理的全局位置第一次在 :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` 内到达 :ref:`target_position<class_NavigationAgent3D_property_target_position>` 时，每个加载路径发出一次。
 
 .. rst-class:: classref-item-separator
 
@@ -255,8 +257,8 @@ Emitted once per loaded path when the agent's global position is the first time 
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_NavigationAgent3D_property_avoidance_enabled:
 
@@ -406,6 +408,23 @@ Property Descriptions
 - :ref:`float<class_float>` **get_height** **(** **)**
 
 避障代理的高度。2D 避障时，代理会忽略位于其上方或低于当前位置 + 高度的其他代理或障碍物。3D 避障时只使用半径球体，该设置无效。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_NavigationAgent3D_property_keep_y_velocity:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **keep_y_velocity** = ``true``
+
+.. rst-class:: classref-property-setget
+
+- void **set_keep_y_velocity** **(** :ref:`bool<class_bool>` value **)**
+- :ref:`bool<class_bool>` **get_keep_y_velocity** **(** **)**
+
+如果为 ``true``\ ，并且代理使用 2D 避障，它将记住设置的 y 轴速度并在避障步进后重新应用它。虽然 2D 避障没有 y 轴并在平坦平面上进行模拟，但该设置可以帮助减轻不均匀 3D 几何体上最明显的裁剪。
 
 .. rst-class:: classref-item-separator
 
@@ -706,8 +725,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationAgent3D_method_distance_to_target:
 
@@ -787,7 +806,7 @@ Method Descriptions
 
 :ref:`Vector3<class_Vector3>` **get_final_position** **(** **)**
 
-Returns the reachable final position of the current navigation path in global coordinates. This position can change if the agent needs to update the navigation path which makes the agent emit the :ref:`path_changed<class_NavigationAgent3D_signal_path_changed>` signal.
+返回当前导航路径上可到达的最终位置的全局坐标。如果该代理需要更新导航路径，从而使该代理发出 :ref:`path_changed<class_NavigationAgent3D_signal_path_changed>` 信号，则该位置可能会发生变化。
 
 .. rst-class:: classref-item-separator
 
@@ -847,9 +866,9 @@ Returns the reachable final position of the current navigation path in global co
 
 :ref:`bool<class_bool>` **is_navigation_finished** **(** **)**
 
-Returns ``true`` if the end of the currently loaded navigation path has been reached.
+如果已到达当前加载的导航路径的末尾，则返回 ``true``\ 。
 
-\ **Note:** While true prefer to stop calling update functions like :ref:`get_next_path_position<class_NavigationAgent3D_method_get_next_path_position>`. This avoids jittering the standing agent due to calling repeated path updates.
+\ **注意：**\ 虽然 true 更喜欢停止调用更新函数，例如 :ref:`get_next_path_position<class_NavigationAgent3D_method_get_next_path_position>`\ 。这避免了由于调用重复的路径更新而使常设代理抖动。
 
 .. rst-class:: classref-item-separator
 
@@ -861,7 +880,7 @@ Returns ``true`` if the end of the currently loaded navigation path has been rea
 
 :ref:`bool<class_bool>` **is_target_reachable** **(** **)**
 
-Returns ``true`` if :ref:`get_final_position<class_NavigationAgent3D_method_get_final_position>` is within :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` of the :ref:`target_position<class_NavigationAgent3D_property_target_position>`.
+如果 :ref:`get_final_position<class_NavigationAgent3D_method_get_final_position>` 位于 :ref:`target_position<class_NavigationAgent3D_property_target_position>` 的 :ref:`target_desired_distance<class_NavigationAgent3D_property_target_desired_distance>` 范围内，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -935,10 +954,10 @@ void **set_velocity_forced** **(** :ref:`Vector3<class_Vector3>` velocity **)**
 
 将防撞仿真的内部速度替换为 ``velocity``\ 。代理传送到新的位置之后，应该在同一帧里使用这个函数。如果频繁调用这个函数，可能会让代理卡住。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 Environment
 ===========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 定义渲染选项的资源，用于环境节点（例如 :ref:`WorldEnvironment<class_WorldEnvironment>`\ ）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 定义环境操作（例如背景 :ref:`Sky<class_Sky>` 或 :ref:`Color<class_Color>`\ 、环境光、雾、景深等）的资源，用于环境节点（例如 :ref:`WorldEnvironment<class_WorldEnvironment>`\ ）。这些参数会对场景的最终渲染造成影响。操作的顺序为：
 
@@ -31,12 +31,12 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`环境和后期处理 <../tutorials/3d/environment_and_post_processing>`
 
-- :doc:`High dynamic range lighting <../tutorials/3d/high_dynamic_range>`
+- :doc:`高动态范围照明 <../tutorials/3d/high_dynamic_range>`
 
 - `3D 材质测试演示 <https://godotengine.org/asset-library/asset/123>`__
 
@@ -46,8 +46,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -244,8 +244,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -262,8 +262,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Environment_BGMode:
 
@@ -537,8 +537,8 @@ enum **SDFGIYScale**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Environment_property_adjustment_brightness:
 
@@ -551,7 +551,7 @@ Property Descriptions
 - void **set_adjustment_brightness** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_adjustment_brightness** **(** **)**
 
-渲染场景的全局亮度值。只有当 ``adjust_enabled`` 为 ``true`` 时才有效。
+渲染场景的全局亮度值。只有当 :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` 为 ``true`` 时才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -568,7 +568,7 @@ Property Descriptions
 - void **set_adjustment_color_correction** **(** :ref:`Texture<class_Texture>` value **)**
 - :ref:`Texture<class_Texture>` **get_adjustment_color_correction** **(** **)**
 
-用于内置后处理颜色分级的 :ref:`Texture2D<class_Texture2D>` 或 :ref:`Texture3D<class_Texture3D>` 查找表（LUT）。可以将 :ref:`GradientTexture1D<class_GradientTexture1D>` 用于一维 LUT，或将 :ref:`Texture3D<class_Texture3D>` 用于更复杂的 LUT。仅当 ``adjustment_enabled`` 为 ``true`` 时有效。
+用于内置后处理颜色分级的 :ref:`Texture2D<class_Texture2D>` 或 :ref:`Texture3D<class_Texture3D>` 查找表（LUT）。可以将 :ref:`GradientTexture1D<class_GradientTexture1D>` 用于一维 LUT，或将 :ref:`Texture3D<class_Texture3D>` 用于更复杂的 LUT。仅当 :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` 为 ``true`` 时有效。
 
 .. rst-class:: classref-item-separator
 
@@ -585,7 +585,7 @@ Property Descriptions
 - void **set_adjustment_contrast** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_adjustment_contrast** **(** **)**
 
-渲染场景的全局对比度值（默认值为1）。只有当\ ``adjust_enabled``\ 为 ``true`` 时才有效。
+渲染场景的全局对比度值（默认值为 1）。只有当 :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` 为 ``true`` 时才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -621,7 +621,7 @@ Property Descriptions
 - void **set_adjustment_saturation** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_adjustment_saturation** **(** **)**
 
-渲染场景的全局色彩饱和度值（默认值为 1）。只有在 ``adjustment_enabled`` 为 ``true`` 时才有效。
+渲染场景的全局色彩饱和度值（默认值为 1）。只有在 :ref:`adjustment_enabled<class_Environment_property_adjustment_enabled>` 为 ``true`` 时才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -2186,8 +2186,8 @@ SDFGI 可见的最大距离。超出该距离，环境照明或其他 GI 来源�
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Environment_method_get_glow_level:
 
@@ -2209,10 +2209,10 @@ void **set_glow_level** **(** :ref:`int<class_int>` idx, :ref:`float<class_float
 
 设置辉光级别 ``idx`` 的强度。大于 ``0.0`` 时启用该级别。每个级别都依赖于前一个级别。这意味着启用较高的辉光等级会减慢辉光效果的渲染速度，即使之前的等级没有启用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

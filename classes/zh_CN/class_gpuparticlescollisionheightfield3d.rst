@@ -10,29 +10,29 @@
 GPUParticlesCollisionHeightField3D
 ==================================
 
-**Inherits:** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`GPUParticlesCollision3D<class_GPUParticlesCollision3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A real-time heightmap-shaped 3D particle collision shape affecting :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
+影响 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的实时高度图形状 3D 粒子碰撞形状。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A real-time heightmap-shaped 3D particle collision shape affecting :ref:`GPUParticles3D<class_GPUParticles3D>` nodes.
+影响 :ref:`GPUParticles3D<class_GPUParticles3D>` 节点的实时高度图形状的 3D 粒子碰撞形状。
 
-Heightmap shapes allow for efficiently representing collisions for convex and concave objects with a single "floor" (such as terrain). This is less flexible than :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>`, but it doesn't require a baking step.
+高度图形状允许有效地表示凸面和凹面对象与单个“地板”（例如地形）的碰撞。它不如 :ref:`GPUParticlesCollisionSDF3D<class_GPUParticlesCollisionSDF3D>` 灵活，但不需要烘焙步骤。
 
-\ **GPUParticlesCollisionHeightField3D** can also be regenerated in real-time when it is moved, when the camera moves, or even continuously. This makes **GPUParticlesCollisionHeightField3D** a good choice for weather effects such as rain and snow and games with highly dynamic geometry. However, this class is limited since heightmaps cannot represent overhangs (e.g. indoors or caves).
+也可以在移动时、相机移动时、甚至连续时，实时重新生成 **GPUParticlesCollisionHeightField3D**\ 。这对雨雪等天气效果、以及具有高度动态几何体的游戏来说，\ **GPUParticlesCollisionHeightField3D** 是一个不错的选择。但是，该类有限制，因为高度图无法表示悬垂（例如室内或洞穴）。
 
-\ **Note:** :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` must be ``true`` on the :ref:`GPUParticles3D<class_GPUParticles3D>`'s process material for collision to work.
+\ **注意：**\ 在 :ref:`GPUParticles3D<class_GPUParticles3D>` 的处理材质上，\ :ref:`ParticleProcessMaterial.collision_mode<class_ParticleProcessMaterial_property_collision_mode>` 必须为 ``true``\ ，才能使碰撞生效。
 
-\ **Note:** Particle collision only affects :ref:`GPUParticles3D<class_GPUParticles3D>`, not :ref:`CPUParticles3D<class_CPUParticles3D>`.
+\ **注意：**\ 粒子碰撞只影响 :ref:`GPUParticles3D<class_GPUParticles3D>`\ ，不影响 :ref:`CPUParticles3D<class_CPUParticles3D>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -53,8 +53,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_GPUParticlesCollisionHeightField3D_Resolution:
 
@@ -150,8 +150,8 @@ enum **UpdateMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_GPUParticlesCollisionHeightField3D_property_follow_camera_enabled:
 
@@ -219,10 +219,10 @@ Property Descriptions
 
 生成的高度图的更新策略。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,27 +10,27 @@
 RenderSceneBuffersRD
 ====================
 
-**Inherits:** :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RenderSceneBuffers<class_RenderSceneBuffers>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Abstract render scene buffer implementation for the RenderingDevice based renderers.
+RenderingDevice 基于的渲染器的抽象渲染场景缓冲区实现。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-This object manages all 3D rendering buffers for the rendering device based renderers. An instance of this object is created for every viewport that has 3D rendering enabled.
+该对象管理基于渲染设备的渲染器的所有 3D 渲染缓冲区。为每个启用 3D 渲染的视口创建该对象的实例。
 
-All buffers are organized in **contexts**. The default context is called **render_buffers** and can contain amongst others the color buffer, depth buffer, velocity buffers, VRS density map and MSAA variants of these buffers.
+所有缓冲区都被组织在\ **上下文**\ 中。默认上下文被称为 **render_buffers**\ ，可以包含颜色缓冲区、深度缓冲区、速度缓冲区、VRS 密度图和这些缓冲区的 MSAA 变体等。
 
-Buffers are only guaranteed to exist during rendering of the viewport.
+缓冲区仅保证在视口渲染期间存在。
 
-\ **Note:** this is an internal rendering server object only exposed for GDExtension plugins.
+\ **注意：**\ 这是一个仅为 GDExtension 插件公开的内部渲染服务器对象。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -64,6 +64,8 @@ Methods
    +-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector2i<class_Vector2i>`               | :ref:`get_texture_slice_size<class_RenderSceneBuffersRD_method_get_texture_slice_size>` **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name, :ref:`int<class_int>` mipmap **)**                                                                                                                                                                                                                                                                    |
    +-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`RID<class_RID>`                         | :ref:`get_texture_slice_view<class_RenderSceneBuffersRD_method_get_texture_slice_view>` **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name, :ref:`int<class_int>` layer, :ref:`int<class_int>` mipmap, :ref:`int<class_int>` layers, :ref:`int<class_int>` mipmaps, :ref:`RDTextureView<class_RDTextureView>` view **)**                                                                                                                          |
+   +-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                       | :ref:`get_use_taa<class_RenderSceneBuffersRD_method_get_use_taa>` **(** **)** |const|                                                                                                                                                                                                                                                                                                                                                                                                      |
    +-----------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`RID<class_RID>`                         | :ref:`get_velocity_layer<class_RenderSceneBuffersRD_method_get_velocity_layer>` **(** :ref:`int<class_int>` layer **)**                                                                                                                                                                                                                                                                                                                                                                    |
@@ -81,8 +83,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RenderSceneBuffersRD_method_clear_context:
 
@@ -90,7 +92,7 @@ Method Descriptions
 
 void **clear_context** **(** :ref:`StringName<class_StringName>` context **)**
 
-Frees all buffers related to this context.
+释放与这个上下文相关的所有缓冲。
 
 .. rst-class:: classref-item-separator
 
@@ -102,7 +104,7 @@ Frees all buffers related to this context.
 
 :ref:`RID<class_RID>` **create_texture** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name, :ref:`DataFormat<enum_RenderingDevice_DataFormat>` data_format, :ref:`int<class_int>` usage_bits, :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` texture_samples, :ref:`Vector2i<class_Vector2i>` size, :ref:`int<class_int>` layers, :ref:`int<class_int>` mipmaps, :ref:`bool<class_bool>` unique **)**
 
-Create a new texture with the given definition and cache this under the given name. Will return the existing texture if it already exists.
+使用给定的定义创建一个新纹理，并将其缓存在给定的名称下。如果已有纹理已经存在，则返回该已有纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -114,7 +116,7 @@ Create a new texture with the given definition and cache this under the given na
 
 :ref:`RID<class_RID>` **create_texture_from_format** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name, :ref:`RDTextureFormat<class_RDTextureFormat>` format, :ref:`RDTextureView<class_RDTextureView>` view, :ref:`bool<class_bool>` unique **)**
 
-Create a new texture using the given format and view and cache this under the given name. Will return the existing texture if it already exists.
+使用给定的格式创建一个新纹理，并在给定的名称下查看和缓存它。如果已有纹理已经存在，则返回该已有纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -126,7 +128,7 @@ Create a new texture using the given format and view and cache this under the gi
 
 :ref:`RID<class_RID>` **create_texture_view** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name, :ref:`StringName<class_StringName>` view_name, :ref:`RDTextureView<class_RDTextureView>` view **)**
 
-Create a new texture view for an existing texture and cache this under the given view_name. Will return the existing teture view if it already exists. Will error if the source texture doesn't exist.
+为已有纹理创建一个新的纹理视图，并将其缓存在给定的 view_name 下。如果已有的纹理视图已经存在，则返回该视图。如果源纹理不存在，将会出错。
 
 .. rst-class:: classref-item-separator
 
@@ -138,7 +140,7 @@ Create a new texture view for an existing texture and cache this under the given
 
 :ref:`RID<class_RID>` **get_color_layer** **(** :ref:`int<class_int>` layer **)**
 
-Returns the specified layer from the color texture we are rendering 3D content to.
+从渲染 3D 内容的颜色纹理返回指定的图层。
 
 .. rst-class:: classref-item-separator
 
@@ -150,7 +152,7 @@ Returns the specified layer from the color texture we are rendering 3D content t
 
 :ref:`RID<class_RID>` **get_color_texture** **(** **)**
 
-Returns the color texture we are rendering 3D content to. If multiview is used this will be a texture array with all views.
+返回渲染 3D 内容的颜色纹理。如果使用多视图，这将是一个包含所有视图的纹理数组。
 
 .. rst-class:: classref-item-separator
 
@@ -162,7 +164,7 @@ Returns the color texture we are rendering 3D content to. If multiview is used t
 
 :ref:`RID<class_RID>` **get_depth_layer** **(** :ref:`int<class_int>` layer **)**
 
-Returns the specified layer from the depth texture we are rendering 3D content to.
+从渲染 3D 内容的深度纹理返回指定的图层。
 
 .. rst-class:: classref-item-separator
 
@@ -174,7 +176,7 @@ Returns the specified layer from the depth texture we are rendering 3D content t
 
 :ref:`RID<class_RID>` **get_depth_texture** **(** **)**
 
-Returns the depth texture we are rendering 3D content to. If multiview is used this will be a texture array with all views.
+返回渲染 3D 内容的深度纹理。如果使用多视图，这将是一个包含所有视图的纹理数组。
 
 .. rst-class:: classref-item-separator
 
@@ -186,7 +188,7 @@ Returns the depth texture we are rendering 3D content to. If multiview is used t
 
 :ref:`Vector2i<class_Vector2i>` **get_internal_size** **(** **)** |const|
 
-Returns the internal size of the render buffer (size before upscaling) with which textures are created by default.
+返回默认情况下创建纹理的渲染缓冲区的内部大小（放大之前的大小）。
 
 .. rst-class:: classref-item-separator
 
@@ -198,7 +200,7 @@ Returns the internal size of the render buffer (size before upscaling) with whic
 
 :ref:`RID<class_RID>` **get_render_target** **(** **)** |const|
 
-Returns the render target associated with this buffers object.
+返回与该缓冲区对象关联的渲染目标。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +212,7 @@ Returns the render target associated with this buffers object.
 
 :ref:`RID<class_RID>` **get_texture** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name **)** |const|
 
-Returns a cached texture with this name.
+返回具有该名称的缓存纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -222,7 +224,7 @@ Returns a cached texture with this name.
 
 :ref:`RDTextureFormat<class_RDTextureFormat>` **get_texture_format** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name **)** |const|
 
-Returns the texture format information with which a cached texture was created.
+返回用于创建缓存纹理的纹理格式信息。
 
 .. rst-class:: classref-item-separator
 
@@ -234,7 +236,7 @@ Returns the texture format information with which a cached texture was created.
 
 :ref:`RID<class_RID>` **get_texture_slice** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name, :ref:`int<class_int>` layer, :ref:`int<class_int>` mipmap, :ref:`int<class_int>` layers, :ref:`int<class_int>` mipmaps **)**
 
-Returns a specific slice (layer or mipmap) for a cached texture.
+返回缓存纹理的指定切片（层或 mipmap）。
 
 .. rst-class:: classref-item-separator
 
@@ -246,7 +248,19 @@ Returns a specific slice (layer or mipmap) for a cached texture.
 
 :ref:`Vector2i<class_Vector2i>` **get_texture_slice_size** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name, :ref:`int<class_int>` mipmap **)**
 
-Returns the texture size of a given slice of a cached texture.
+返回缓存纹理给定切片的纹理大小。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_RenderSceneBuffersRD_method_get_texture_slice_view:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **get_texture_slice_view** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name, :ref:`int<class_int>` layer, :ref:`int<class_int>` mipmap, :ref:`int<class_int>` layers, :ref:`int<class_int>` mipmaps, :ref:`RDTextureView<class_RDTextureView>` view **)**
+
+返回缓存纹理的指定切片视图（层或 mipmap）。
 
 .. rst-class:: classref-item-separator
 
@@ -258,7 +272,7 @@ Returns the texture size of a given slice of a cached texture.
 
 :ref:`bool<class_bool>` **get_use_taa** **(** **)** |const|
 
-Returns ``true`` if TAA is enabled.
+如果启用 TAA，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -270,7 +284,7 @@ Returns ``true`` if TAA is enabled.
 
 :ref:`RID<class_RID>` **get_velocity_layer** **(** :ref:`int<class_int>` layer **)**
 
-Returns the specified layer from the velocity texture we are rendering 3D content to.
+从渲染 3D 内容的速度纹理返回指定的图层。
 
 .. rst-class:: classref-item-separator
 
@@ -282,7 +296,7 @@ Returns the specified layer from the velocity texture we are rendering 3D conten
 
 :ref:`RID<class_RID>` **get_velocity_texture** **(** **)**
 
-Returns the velocity texture we are rendering 3D content to. If multiview is used this will be a texture array with all views.
+返回渲染 3D 内容的速度纹理。如果使用多视图，这将是一个包含所有视图的纹理数组。
 
 .. rst-class:: classref-item-separator
 
@@ -294,7 +308,7 @@ Returns the velocity texture we are rendering 3D content to. If multiview is use
 
 :ref:`int<class_int>` **get_view_count** **(** **)** |const|
 
-Returns the view count for the associated viewport.
+返回关联视口的视图数。
 
 .. rst-class:: classref-item-separator
 
@@ -306,12 +320,12 @@ Returns the view count for the associated viewport.
 
 :ref:`bool<class_bool>` **has_texture** **(** :ref:`StringName<class_StringName>` context, :ref:`StringName<class_StringName>` name **)** |const|
 
-Returns ``true`` if a cached texture exists for this name.
+如果存在使用该名称的缓冲纹理，则返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

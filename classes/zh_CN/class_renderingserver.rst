@@ -10,14 +10,14 @@
 RenderingServer
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 任何可见的东西的服务器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 渲染服务器是所有可见内容的 API 后端。整个场景系统都挂载在它上面来显示。渲染服务器是完全不透明的：内部实现完全取决于具体的实现，无法进行访问。
 
@@ -39,15 +39,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用服务器进行优化 <../tutorials/performance/using_servers>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -569,6 +569,8 @@ Methods
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                                            | :ref:`mesh_surface_get_format_attribute_stride<class_RenderingServer_method_mesh_surface_get_format_attribute_stride>` **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count **)** |const|                                                                                                                                                                                                                                                                                                                                                                                                                           |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                                                            | :ref:`mesh_surface_get_format_normal_tangent_stride<class_RenderingServer_method_mesh_surface_get_format_normal_tangent_stride>` **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count **)** |const|                                                                                                                                                                                                                                                                                                                                                                                                                 |
+   +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                                            | :ref:`mesh_surface_get_format_offset<class_RenderingServer_method_mesh_surface_get_format_offset>` **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count, :ref:`int<class_int>` array_index **)** |const|                                                                                                                                                                                                                                                                                                                                                                                                            |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`                                                            | :ref:`mesh_surface_get_format_skin_stride<class_RenderingServer_method_mesh_surface_get_format_skin_stride>` **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count **)** |const|                                                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -665,6 +667,8 @@ Methods
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                             | :ref:`particles_set_amount<class_RenderingServer_method_particles_set_amount>` **(** :ref:`RID<class_RID>` particles, :ref:`int<class_int>` amount **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                                             | :ref:`particles_set_amount_ratio<class_RenderingServer_method_particles_set_amount_ratio>` **(** :ref:`RID<class_RID>` particles, :ref:`float<class_float>` ratio **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+   +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                             | :ref:`particles_set_collision_base_size<class_RenderingServer_method_particles_set_collision_base_size>` **(** :ref:`RID<class_RID>` particles, :ref:`float<class_float>` size **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                             | :ref:`particles_set_custom_aabb<class_RenderingServer_method_particles_set_custom_aabb>` **(** :ref:`RID<class_RID>` particles, :ref:`AABB<class_AABB>` aabb **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -677,6 +681,8 @@ Methods
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                             | :ref:`particles_set_emission_transform<class_RenderingServer_method_particles_set_emission_transform>` **(** :ref:`RID<class_RID>` particles, :ref:`Transform3D<class_Transform3D>` transform **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                                             | :ref:`particles_set_emitter_velocity<class_RenderingServer_method_particles_set_emitter_velocity>` **(** :ref:`RID<class_RID>` particles, :ref:`Vector3<class_Vector3>` velocity **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+   +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                             | :ref:`particles_set_emitting<class_RenderingServer_method_particles_set_emitting>` **(** :ref:`RID<class_RID>` particles, :ref:`bool<class_bool>` emitting **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                             | :ref:`particles_set_explosiveness_ratio<class_RenderingServer_method_particles_set_explosiveness_ratio>` **(** :ref:`RID<class_RID>` particles, :ref:`float<class_float>` ratio **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -684,6 +690,8 @@ Methods
    | void                                                                             | :ref:`particles_set_fixed_fps<class_RenderingServer_method_particles_set_fixed_fps>` **(** :ref:`RID<class_RID>` particles, :ref:`int<class_int>` fps **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                             | :ref:`particles_set_fractional_delta<class_RenderingServer_method_particles_set_fractional_delta>` **(** :ref:`RID<class_RID>` particles, :ref:`bool<class_bool>` enable **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+   +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                                             | :ref:`particles_set_interp_to_end<class_RenderingServer_method_particles_set_interp_to_end>` **(** :ref:`RID<class_RID>` particles, :ref:`float<class_float>` factor **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                             | :ref:`particles_set_interpolate<class_RenderingServer_method_particles_set_interpolate>` **(** :ref:`RID<class_RID>` particles, :ref:`bool<class_bool>` enable **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
    +----------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -998,8 +1006,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_RenderingServer_signal_frame_post_draw:
 
@@ -1027,8 +1035,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_RenderingServer_TextureLayeredType:
 
@@ -1588,7 +1596,7 @@ flags **ArrayFormat**:
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_USE_8_BONE_WEIGHTS** = ``134217728``
 
-Flag used to mark that the array uses 8 bone weights instead of 4.
+用于标记数组使用 8 个骨骼权重而不是 4 个的标志。
 
 .. _class_RenderingServer_constant_ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY:
 
@@ -1596,7 +1604,63 @@ Flag used to mark that the array uses 8 bone weights instead of 4.
 
 :ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_USES_EMPTY_VERTEX_ARRAY** = ``268435456``
 
+用于标记网格没有顶点数组，而是使用索引和其他信息推断着色器中的顶点位置的标志。
 
+.. _class_RenderingServer_constant_ARRAY_FLAG_COMPRESS_ATTRIBUTES:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_COMPRESS_ATTRIBUTES** = ``536870912``
+
+用于标记网格正在使用的压缩的属性（顶点、法线、切线、UV）的标志。启用这种形式的压缩后，顶点位置将被打包到 RGBA16UNORM 属性中，并在顶点着色器中进行缩放。法线和切线将被打包到表示一个轴的 RG16UNORM 中，并在顶点的 A 通道中存储一个 16 位浮点数。UV 将使用 16 位标准化浮点数而不是完整的 32 位有符号浮点数。使用该压缩模式时，必须使用顶点、法线、和切线或仅使用顶点。你无法使用没有切线的法线。如果可以的话，导入器将自动启用这种压缩。
+
+.. _class_RenderingServer_constant_ARRAY_FLAG_FORMAT_VERSION_BASE:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_FORMAT_VERSION_BASE** = ``35``
+
+用于标记被用于存储网格版本的位的起始的标志。
+
+.. _class_RenderingServer_constant_ARRAY_FLAG_FORMAT_VERSION_SHIFT:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_FORMAT_VERSION_SHIFT** = ``35``
+
+用于移动网格格式 int，以将版本带入最低位的标志。
+
+.. _class_RenderingServer_constant_ARRAY_FLAG_FORMAT_VERSION_1:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_FORMAT_VERSION_1** = ``0``
+
+用于记录版本引入之前先前网格版本所使用的格式的标志。
+
+.. _class_RenderingServer_constant_ARRAY_FLAG_FORMAT_VERSION_2:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_FORMAT_VERSION_2** = ``34359738368``
+
+用于记录第二次迭代的网格版本标志的标志。该版本与 :ref:`ARRAY_FLAG_FORMAT_VERSION_1<class_RenderingServer_constant_ARRAY_FLAG_FORMAT_VERSION_1>` 之间的主要区别在于，该版本支持 :ref:`ARRAY_FLAG_COMPRESS_ATTRIBUTES<class_RenderingServer_constant_ARRAY_FLAG_COMPRESS_ATTRIBUTES>`\ ，并且在该版本中，顶点位置与法线和切线去交错。
+
+.. _class_RenderingServer_constant_ARRAY_FLAG_FORMAT_CURRENT_VERSION:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_FORMAT_CURRENT_VERSION** = ``34359738368``
+
+用于记录引擎期望的当前版本的标志。目前这与 :ref:`ARRAY_FLAG_FORMAT_VERSION_2<class_RenderingServer_constant_ARRAY_FLAG_FORMAT_VERSION_2>` 相同。
+
+.. _class_RenderingServer_constant_ARRAY_FLAG_FORMAT_VERSION_MASK:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>` **ARRAY_FLAG_FORMAT_VERSION_MASK** = ``255``
+
+使用 :ref:`ARRAY_FLAG_FORMAT_VERSION_SHIFT<class_RenderingServer_constant_ARRAY_FLAG_FORMAT_VERSION_SHIFT>` 将用于网格版本的位转移到位后，用于隔离这些位的标志。
 
 .. rst-class:: classref-item-separator
 
@@ -2468,7 +2532,7 @@ enum **ParticlesDrawOrder**:
 
 :ref:`ParticlesDrawOrder<enum_RenderingServer_ParticlesDrawOrder>` **PARTICLES_DRAW_ORDER_LIFETIME** = ``1``
 
-根据粒子的寿命对其进行分类。
+根据粒子的寿命对其进行排序。换句话说，寿命最长的粒子被绘制在前面。
 
 .. _class_RenderingServer_constant_PARTICLES_DRAW_ORDER_REVERSE_LIFETIME:
 
@@ -2476,7 +2540,7 @@ enum **ParticlesDrawOrder**:
 
 :ref:`ParticlesDrawOrder<enum_RenderingServer_ParticlesDrawOrder>` **PARTICLES_DRAW_ORDER_REVERSE_LIFETIME** = ``2``
 
-
+根据粒子寿命的倒数对粒子进行排序。换句话说，寿命最短的粒子被绘制在前面。
 
 .. _class_RenderingServer_constant_PARTICLES_DRAW_ORDER_VIEW_DEPTH:
 
@@ -2702,11 +2766,19 @@ enum **ViewportScaling3DMode**:
 
 对视口的 3D 缓冲区使用 AMD FidelityFX 超分辨率 1.0 放大。可以使用 :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置缩放量。小于 ``1.0`` 的值将导致使用 FSR 放大视口。不支持大于 ``1.0`` 的值，将改用双线性降采样。\ ``1.0`` 的值将禁用缩放。
 
+.. _class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_FSR2:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_FSR2** = ``2``
+
+对视口的 3D 缓冲区使用 AMD FidelityFX 超分辨率 2.2 放大。可以使用 :ref:`Viewport.scaling_3d_scale<class_Viewport_property_scaling_3d_scale>` 设置缩放量。小于 ``1.0`` 的值将导致使用 FSR2 放大视口。不支持大于 ``1.0`` 的值，将改用双线性降采样。\ ``1.0`` 的值将使用原生分辨率下的 FSR2 作为 TAA 解决方案。
+
 .. _class_RenderingServer_constant_VIEWPORT_SCALING_3D_MODE_MAX:
 
 .. rst-class:: classref-enumeration-constant
 
-:ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_MAX** = ``2``
+:ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` **VIEWPORT_SCALING_3D_MODE_MAX** = ``3``
 
 代表 :ref:`ViewportScaling3DMode<enum_RenderingServer_ViewportScaling3DMode>` 枚举的大小。
 
@@ -3220,11 +3292,11 @@ enum **ViewportDebugDraw**:
 
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_DIRECTIONAL_SHADOW_ATLAS** = ``10``
 
-Draws the shadow atlas that stores shadows from :ref:`DirectionalLight3D<class_DirectionalLight3D>`\ s in the upper left quadrant of the :ref:`Viewport<class_Viewport>`.
+绘制阴影图集，该阴影图集存储 :ref:`Viewport<class_Viewport>` 左上象限中 :ref:`DirectionalLight3D<class_DirectionalLight3D>` 的阴影。
 
-The slice of the camera frustum related to the shadow map cascade is superimposed to visualize coverage. The color of each slice matches the colors used for :ref:`VIEWPORT_DEBUG_DRAW_PSSM_SPLITS<class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_PSSM_SPLITS>`. When shadow cascades are blended the overlap is taken into account when drawing the frustum slices.
+与阴影贴图级联相关的相机视锥体切片被叠加以可视化覆盖范围。每个切片的颜色与 :ref:`VIEWPORT_DEBUG_DRAW_PSSM_SPLITS<class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_PSSM_SPLITS>` 使用的颜色匹配。当混合阴影级联时，绘制视锥体切片时会考虑重叠。
 
-The last cascade shows all frustum slices to illustrate the coverage of all slices.
+最后一个级联显示了所有视锥体切片，以说明所有切片的覆盖范围。
 
 .. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_SCENE_LUMINANCE:
 
@@ -3345,6 +3417,14 @@ The last cascade shows all frustum slices to illustrate the coverage of all slic
 :ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_MOTION_VECTORS** = ``25``
 
 绘制运动向量缓冲。由时间抗锯齿使用，能够修正在游戏过程中发生的运动。
+
+.. _class_RenderingServer_constant_VIEWPORT_DEBUG_DRAW_INTERNAL_BUFFER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`ViewportDebugDraw<enum_RenderingServer_ViewportDebugDraw>` **VIEWPORT_DEBUG_DRAW_INTERNAL_BUFFER** = ``26``
+
+绘制内部缓冲区而不是常规场景，因此可以看到将被后处理效果使用的每像素输出。
 
 .. rst-class:: classref-item-separator
 
@@ -5160,8 +5240,8 @@ enum **Features**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_RenderingServer_constant_NO_INDEX_ARRAY:
 
@@ -5289,8 +5369,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RenderingServer_property_render_loop_enabled:
 
@@ -5311,8 +5391,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RenderingServer_method_bake_render_uv2:
 
@@ -5332,7 +5412,7 @@ Method Descriptions
 
 void **call_on_render_thread** **(** :ref:`Callable<class_Callable>` callable **)**
 
-As the RenderingServer actual logic may run on an separate thread, accessing its internals from the main (or any other) thread will result in errors. To make it easier to run code that can safely access the rendering internals (such as :ref:`RenderingDevice<class_RenderingDevice>` and similar RD classes), push a callable via this function so it will be executed on the render thread.
+由于 RenderingServer 实际逻辑可能在单独的线程上运行，因此从主（或任何其他）线程访问其内部将导致错误。为了更轻松地运行可以安全访问渲染内部的代码（例如 :ref:`RenderingDevice<class_RenderingDevice>` 和类似的 RD 类），请通过该函数推送一个可调用对象，以便它将在渲染线程上执行。
 
 .. rst-class:: classref-item-separator
 
@@ -6148,7 +6228,7 @@ void **canvas_light_occluder_set_as_sdf_collision** **(** :ref:`RID<class_RID>` 
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -6466,7 +6546,7 @@ void **canvas_set_disable_scale** **(** :ref:`bool<class_bool>` disable **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -7046,7 +7126,7 @@ void **environment_set_ssr_roughness_quality** **(** :ref:`EnvironmentSSRRoughne
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -7182,7 +7262,7 @@ void **force_sync** **(** **)**
 
 void **free_rid** **(** :ref:`RID<class_RID>` rid **)**
 
-Tries to free an object in the RenderingServer. To avoid memory leaks, this should be called after using an object as memory management does not occur automatically when using RenderingServer directly.
+尝试释放 RenderingServer 中的某个对象。为了避免内存泄漏，应该在使用完对象后调用，因为直接使用 RenderingServer 时不会自动进行内存管理。
 
 .. rst-class:: classref-item-separator
 
@@ -7314,11 +7394,11 @@ Tries to free an object in the RenderingServer. To avoid memory leaks, this shou
 
 :ref:`String<class_String>` **get_video_adapter_name** **(** **)** |const|
 
-Returns the name of the video adapter (e.g. "GeForce GTX 1080/PCIe/SSE2").
+返回视频适配器的名称（例如“GeForce GTX 1080/PCIe/SSE2”）。
 
-\ **Note:** When running a headless or server binary, this function returns an empty string.
+\ **注意：**\ 运行无头或服务器二进制文件时，该函数返回空字符串。
 
-\ **Note:** On the web platform, some browsers such as Firefox may report a different, fixed GPU name such as "GeForce GTX 980" (regardless of the user's actual GPU model). This is done to make fingerprinting more difficult.
+\ **注意：**\ 在 web 平台上，某些浏览器（例如 Firefox）可能会报告不同的固定 GPU 名称，例如“GeForce GTX 980”（无论用户的实际 GPU 型号如何）。这样做是为了使指纹识别更加困难。
 
 .. rst-class:: classref-item-separator
 
@@ -8110,7 +8190,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8124,7 +8204,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8138,7 +8218,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8152,7 +8232,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8178,7 +8258,7 @@ void **lightmap_set_probe_bounds** **(** :ref:`RID<class_RID>` lightmap, :ref:`A
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8192,7 +8272,7 @@ void **lightmap_set_probe_capture_data** **(** :ref:`RID<class_RID>` lightmap, :
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8206,7 +8286,7 @@ void **lightmap_set_probe_capture_update_speed** **(** :ref:`float<class_float>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8220,7 +8300,7 @@ void **lightmap_set_probe_interior** **(** :ref:`RID<class_RID>` lightmap, :ref:
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8334,7 +8414,7 @@ void **mesh_add_surface** **(** :ref:`RID<class_RID>` mesh, :ref:`Dictionary<cla
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8348,7 +8428,7 @@ void **mesh_add_surface_from_arrays** **(** :ref:`RID<class_RID>` mesh, :ref:`Pr
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8392,7 +8472,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8442,7 +8522,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8492,7 +8572,7 @@ void **mesh_set_shadow_mesh** **(** :ref:`RID<class_RID>` mesh, :ref:`RID<class_
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8528,9 +8608,19 @@ void **mesh_set_shadow_mesh** **(** :ref:`RID<class_RID>` mesh, :ref:`RID<class_
 
 :ref:`int<class_int>` **mesh_surface_get_format_attribute_stride** **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count **)** |const|
 
-.. container:: contribute
+返回具有给定 ``format`` 的网格的属性缓冲区的步幅。
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_RenderingServer_method_mesh_surface_get_format_normal_tangent_stride:
+
+.. rst-class:: classref-method
+
+:ref:`int<class_int>` **mesh_surface_get_format_normal_tangent_stride** **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count **)** |const|
+
+返回具有给定 ``format`` 的网格的组合法线和切线的步幅。重要的是请注意，虽然法线和切线位于带有顶点的顶点缓冲区中，但它们仅彼此交错，因此具有与顶点位置不同的步幅。
 
 .. rst-class:: classref-item-separator
 
@@ -8542,9 +8632,7 @@ void **mesh_set_shadow_mesh** **(** :ref:`RID<class_RID>` mesh, :ref:`RID<class_
 
 :ref:`int<class_int>` **mesh_surface_get_format_offset** **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count, :ref:`int<class_int>` array_index **)** |const|
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+返回由 ``array_index`` 给定属性在其各自缓冲区开头的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -8556,9 +8644,7 @@ void **mesh_set_shadow_mesh** **(** :ref:`RID<class_RID>` mesh, :ref:`RID<class_
 
 :ref:`int<class_int>` **mesh_surface_get_format_skin_stride** **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count **)** |const|
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+返回具有给定 ``format`` 的网格的皮肤缓冲区的步幅。
 
 .. rst-class:: classref-item-separator
 
@@ -8570,9 +8656,7 @@ void **mesh_set_shadow_mesh** **(** :ref:`RID<class_RID>` mesh, :ref:`RID<class_
 
 :ref:`int<class_int>` **mesh_surface_get_format_vertex_stride** **(** |bitfield|\<:ref:`ArrayFormat<enum_RenderingServer_ArrayFormat>`\> format, :ref:`int<class_int>` vertex_count **)** |const|
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+返回具有给定 ``format`` 的网格的顶点位置的步幅。请注意，重要的是，顶点位置是连续存储的，并且不与顶点缓冲区中的其他属性（法线和切线）交错。
 
 .. rst-class:: classref-item-separator
 
@@ -8610,7 +8694,7 @@ void **mesh_surface_update_attribute_region** **(** :ref:`RID<class_RID>` mesh, 
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8624,7 +8708,7 @@ void **mesh_surface_update_skin_region** **(** :ref:`RID<class_RID>` mesh, :ref:
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8638,7 +8722,7 @@ void **mesh_surface_update_vertex_region** **(** :ref:`RID<class_RID>` mesh, :re
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -8652,7 +8736,7 @@ void **multimesh_allocate_data** **(** :ref:`RID<class_RID>` multimesh, :ref:`in
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -9169,6 +9253,18 @@ void **particles_set_amount** **(** :ref:`RID<class_RID>` particles, :ref:`int<c
 
 ----
 
+.. _class_RenderingServer_method_particles_set_amount_ratio:
+
+.. rst-class:: classref-method
+
+void **particles_set_amount_ratio** **(** :ref:`RID<class_RID>` particles, :ref:`float<class_float>` ratio **)**
+
+设置要被发射的粒子的数量比率。相当于 :ref:`GPUParticles3D.amount_ratio<class_GPUParticles3D_property_amount_ratio>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_RenderingServer_method_particles_set_collision_base_size:
 
 .. rst-class:: classref-method
@@ -9177,7 +9273,7 @@ void **particles_set_collision_base_size** **(** :ref:`RID<class_RID>` particles
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -9243,6 +9339,18 @@ void **particles_set_emission_transform** **(** :ref:`RID<class_RID>` particles,
 
 ----
 
+.. _class_RenderingServer_method_particles_set_emitter_velocity:
+
+.. rst-class:: classref-method
+
+void **particles_set_emitter_velocity** **(** :ref:`RID<class_RID>` particles, :ref:`Vector3<class_Vector3>` velocity **)**
+
+设置粒子节点的速度，将由 :ref:`ParticleProcessMaterial.inherit_velocity_ratio<class_ParticleProcessMaterial_property_inherit_velocity_ratio>` 使用。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_RenderingServer_method_particles_set_emitting:
 
 .. rst-class:: classref-method
@@ -9291,6 +9399,18 @@ void **particles_set_fractional_delta** **(** :ref:`RID<class_RID>` particles, :
 
 ----
 
+.. _class_RenderingServer_method_particles_set_interp_to_end:
+
+.. rst-class:: classref-method
+
+void **particles_set_interp_to_end** **(** :ref:`RID<class_RID>` particles, :ref:`float<class_float>` factor **)**
+
+设置通知 :ref:`ParticleProcessMaterial<class_ParticleProcessMaterial>` 将所有粒子冲向其生命周期终点的值。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_RenderingServer_method_particles_set_interpolate:
 
 .. rst-class:: classref-method
@@ -9299,7 +9419,7 @@ void **particles_set_interpolate** **(** :ref:`RID<class_RID>` particles, :ref:`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -9399,7 +9519,7 @@ void **particles_set_subemitter** **(** :ref:`RID<class_RID>` particles, :ref:`R
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -9413,7 +9533,7 @@ void **particles_set_trail_bind_poses** **(** :ref:`RID<class_RID>` particles, :
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -9439,7 +9559,7 @@ void **particles_set_transform_align** **(** :ref:`RID<class_RID>` particles, :r
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -9867,7 +9987,7 @@ void **skeleton_allocate_data** **(** :ref:`RID<class_RID>` skeleton, :ref:`int<
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -9955,7 +10075,7 @@ void **skeleton_set_base_transform_2d** **(** :ref:`RID<class_RID>` skeleton, :r
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -10237,7 +10357,7 @@ void **texture_3d_update** **(** :ref:`RID<class_RID>` texture, :ref:`Image[]<cl
 
 :ref:`Format<enum_Image_Format>` **texture_get_format** **(** :ref:`RID<class_RID>` texture **)** |const|
 
-Returns the :ref:`Format<enum_Image_Format>` for the texture.
+返回该纹理的 :ref:`Format<enum_Image_Format>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -10265,7 +10385,7 @@ Returns the :ref:`Format<enum_Image_Format>` for the texture.
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -10313,7 +10433,7 @@ void **texture_proxy_update** **(** :ref:`RID<class_RID>` texture, :ref:`RID<cla
 
 :ref:`RID<class_RID>` **texture_rd_create** **(** :ref:`RID<class_RID>` rd_texture, :ref:`TextureLayeredType<enum_RenderingServer_TextureLayeredType>` layer_type=0 **)**
 
-Creates a new texture object based on a texture created directly on the :ref:`RenderingDevice<class_RenderingDevice>`. If the texture contains layers, ``layer_type`` is used to define the layer type.
+基于直接在 :ref:`RenderingDevice<class_RenderingDevice>` 上创建的纹理创建新的纹理对象。如果该纹理包含图层，则 ``layer_type`` 被用于定义图层类型。
 
 .. rst-class:: classref-item-separator
 
@@ -10339,7 +10459,7 @@ void **texture_set_force_redraw_if_visible** **(** :ref:`RID<class_RID>` texture
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -10353,7 +10473,7 @@ void **texture_set_path** **(** :ref:`RID<class_RID>` texture, :ref:`String<clas
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -10367,7 +10487,7 @@ void **texture_set_size_override** **(** :ref:`RID<class_RID>` texture, :ref:`in
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -10958,9 +11078,9 @@ void **viewport_set_use_debanding** **(** :ref:`RID<class_RID>` viewport, :ref:`
 
 void **viewport_set_use_hdr_2d** **(** :ref:`RID<class_RID>` viewport, :ref:`bool<class_bool>` enabled **)**
 
-If ``true``, 2D rendering will use a high dynamic range (HDR) format framebuffer matching the bit depth of the 3D framebuffer. When using the Forward+ renderer this will be a ``RGBA16`` framebuffer, while when using the Mobile renderer it will be a ``RGB10_A2`` framebuffer. Additionally, 2D rendering will take place in linear color space and will be converted to sRGB space immediately before blitting to the screen (if the Viewport is attached to the screen). Practically speaking, this means that the end result of the Viewport will not be clamped into the ``0-1`` range and can be used in 3D rendering without color space adjustments. This allows 2D rendering to take advantage of effects requiring high dynamic range (e.g. 2D glow) as well as substantially improves the appearance of effects requiring highly detailed gradients. This setting has the same effect as :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>`.
+如果为 ``true``\ ，2D 渲染将使用与 3D 帧缓冲区的位深度匹配的高动态范围（HDR）格式帧缓冲区。当使用 Forward+ 渲染器时，这将是一个 ``RGBA16`` 帧缓冲区，而当使用 Mobile 渲染器时，它将是一个 ``RGB10_A2`` 帧缓冲区。此外，2D 渲染将在线性色彩空间中进行，并在位块传输到屏幕之前（如果视口被连接到屏幕）立即转换为 sRGB 空间。实际上，这意味着视口的最终结果不会被钳制在 ``0-1`` 范围内，并且可以在不进行色彩空间调整的情况下被用于 3D 渲染。这使得 2D 渲染能够利用需要高动态范围的效果（例如 2D 辉光），并显著改善需要高度详细渐变的效果的外观。该设置与 :ref:`Viewport.use_hdr_2d<class_Viewport_property_use_hdr_2d>` 效果相同。
 
-\ **Note:** This setting will have no effect when using the GL Compatibility renderer as the GL Compatibility renderer always renders in low dynamic range for performance reasons.
+\ **注意：**\ 使用 GL 兼容渲染器时，该设置无效，因为出于性能原因，GL 兼容渲染器始终在低动态范围内渲染。
 
 .. rst-class:: classref-item-separator
 
@@ -11052,7 +11172,7 @@ void **visibility_notifier_set_aabb** **(** :ref:`RID<class_RID>` notifier, :ref
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11066,7 +11186,7 @@ void **visibility_notifier_set_callbacks** **(** :ref:`RID<class_RID>` notifier,
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11080,7 +11200,7 @@ void **voxel_gi_allocate_data** **(** :ref:`RID<class_RID>` voxel_gi, :ref:`Tran
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11110,7 +11230,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11124,7 +11244,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11138,7 +11258,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11152,7 +11272,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11166,7 +11286,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11180,7 +11300,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -11290,10 +11410,10 @@ void **voxel_gi_set_use_two_bounces** **(** :ref:`RID<class_RID>` voxel_gi, :ref
 
 为 :ref:`RID<class_RID>` 为 ``voxel_gi`` 的对象设置 :ref:`VoxelGIData.use_two_bounces<class_VoxelGIData_property_use_two_bounces>` 值。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

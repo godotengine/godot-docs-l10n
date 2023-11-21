@@ -10,14 +10,14 @@
 RenderingDevice
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 用于处理现代低阶图形 API 的抽象。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **RenderingDevice** 是用来使用 Vulkan 等现代低阶图形 API 的抽象。与（适用于 Godot 自有渲染子系统的）\ :ref:`RenderingServer<class_RenderingServer>` 相比，\ **RenderingDevice** 所处的层级更低，能够更加直接地使用底层图形 API。Godot 使用 **RenderingDevice** 来支持部分现代低阶图形 API，能够减少所需的重复代码。你也可以在自己的项目中使用 **RenderingDevice**\ ，从而执行 :ref:`RenderingServer<class_RenderingServer>` 和高阶节点未暴露的功能，例如使用计算着色器。
 
@@ -31,15 +31,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用计算着色器 <../tutorials/shaders/compute_shaders>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -203,6 +203,8 @@ Methods
    +------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`RID<class_RID>`                                      | :ref:`texture_create<class_RenderingDevice_method_texture_create>` **(** :ref:`RDTextureFormat<class_RDTextureFormat>` format, :ref:`RDTextureView<class_RDTextureView>` view, :ref:`PackedByteArray[]<class_PackedByteArray>` data=[] **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
    +------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`RID<class_RID>`                                      | :ref:`texture_create_from_extension<class_RenderingDevice_method_texture_create_from_extension>` **(** :ref:`TextureType<enum_RenderingDevice_TextureType>` type, :ref:`DataFormat<enum_RenderingDevice_DataFormat>` format, :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` samples, |bitfield|\<:ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>`\> usage_flags, :ref:`int<class_int>` image, :ref:`int<class_int>` width, :ref:`int<class_int>` height, :ref:`int<class_int>` depth, :ref:`int<class_int>` layers **)**                                                                                                                                                                                                                                                                                                                                                                             |
+   +------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`RID<class_RID>`                                      | :ref:`texture_create_shared<class_RenderingDevice_method_texture_create_shared>` **(** :ref:`RDTextureView<class_RDTextureView>` view, :ref:`RID<class_RID>` with_texture **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
    +------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`RID<class_RID>`                                      | :ref:`texture_create_shared_from_slice<class_RenderingDevice_method_texture_create_shared_from_slice>` **(** :ref:`RDTextureView<class_RDTextureView>` view, :ref:`RID<class_RID>` with_texture, :ref:`int<class_int>` layer, :ref:`int<class_int>` mipmap, :ref:`int<class_int>` mipmaps=1, :ref:`TextureSliceType<enum_RenderingDevice_TextureSliceType>` slice_type=0 **)**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
@@ -242,8 +244,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_RenderingDevice_DeviceType:
 
@@ -2193,7 +2195,7 @@ flags **BarrierMask**:
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_VERTEX** = ``1``
 
-Vertex shader barrier mask.
+顶点着色器屏障掩码。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_FRAGMENT:
 
@@ -2201,7 +2203,7 @@ Vertex shader barrier mask.
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_FRAGMENT** = ``8``
 
-Fragment shader barrier mask.
+片段着色器屏障掩码。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_COMPUTE:
 
@@ -2225,7 +2227,7 @@ Fragment shader barrier mask.
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_RASTER** = ``9``
 
-Raster barrier mask (vertex and fragment). Equivalent to ``BARRIER_MASK_VERTEX | BARRIER_MASK_FRAGMENT``.
+光栅屏障掩码（顶点及片段）。等价于 ``BARRIER_MASK_VERTEX | BARRIER_MASK_FRAGMENT``\ 。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_ALL_BARRIERS:
 
@@ -2233,7 +2235,7 @@ Raster barrier mask (vertex and fragment). Equivalent to ``BARRIER_MASK_VERTEX |
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_ALL_BARRIERS** = ``32767``
 
-Barrier mask for all types (vertex, fragment, compute, transfer).
+所有类型的屏障掩码（顶点、片段、计算、传输）。
 
 .. _class_RenderingDevice_constant_BARRIER_MASK_NO_BARRIER:
 
@@ -2241,7 +2243,7 @@ Barrier mask for all types (vertex, fragment, compute, transfer).
 
 :ref:`BarrierMask<enum_RenderingDevice_BarrierMask>` **BARRIER_MASK_NO_BARRIER** = ``32768``
 
-没有任何类型的屏障。
+任何类型都没有屏障。
 
 .. rst-class:: classref-item-separator
 
@@ -2825,7 +2827,7 @@ enum **UniformType**:
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_SAMPLER** = ``0``
 
-Sampler uniform.
+采样器 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_SAMPLER_WITH_TEXTURE:
 
@@ -2849,7 +2851,7 @@ Sampler uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_IMAGE** = ``3``
 
-Image uniform.
+图像 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_TEXTURE_BUFFER:
 
@@ -2857,7 +2859,7 @@ Image uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_TEXTURE_BUFFER** = ``4``
 
-Texture buffer uniform.
+纹理缓冲 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_SAMPLER_WITH_TEXTURE_BUFFER:
 
@@ -2865,7 +2867,7 @@ Texture buffer uniform.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_SAMPLER_WITH_TEXTURE_BUFFER** = ``5``
 
-Sampler uniform with a texture buffer.
+带有纹理缓冲的采样器 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_IMAGE_BUFFER:
 
@@ -2873,7 +2875,7 @@ Sampler uniform with a texture buffer.
 
 :ref:`UniformType<enum_RenderingDevice_UniformType>` **UNIFORM_TYPE_IMAGE_BUFFER** = ``6``
 
-Image buffer uniform.
+图像缓冲 uniform。
 
 .. _class_RenderingDevice_constant_UNIFORM_TYPE_UNIFORM_BUFFER:
 
@@ -4299,8 +4301,8 @@ enum **MemoryType**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_RenderingDevice_constant_INVALID_ID:
 
@@ -4324,8 +4326,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RenderingDevice_method_barrier:
 
@@ -4345,17 +4347,17 @@ void **barrier** **(** |bitfield|\<:ref:`BarrierMask<enum_RenderingDevice_Barrie
 
 :ref:`Error<enum_@GlobalScope_Error>` **buffer_clear** **(** :ref:`RID<class_RID>` buffer, :ref:`int<class_int>` offset, :ref:`int<class_int>` size_bytes, |bitfield|\<:ref:`BarrierMask<enum_RenderingDevice_BarrierMask>`\> post_barrier=32767 **)**
 
-Clears the contents of the ``buffer``, clearing ``size_bytes`` bytes, starting at ``offset``. Always raises a memory barrier.
+清除 ``buffer`` 的内容，清除 ``size_bytes`` 字节，从 ``offset`` 开始。总是会造成内存障碍。
 
-Prints an error if:
+如果出现以下情况，则打印错误：
 
-- the size isn't a multiple of four
+- 大小不是四的倍数
 
-- the region specified by ``offset`` + ``size_bytes`` exceeds the buffer
+- ``offset`` + ``size_bytes`` 指定的区域超出缓冲区
 
-- a draw list is currently active (created by :ref:`draw_list_begin<class_RenderingDevice_method_draw_list_begin>`)
+- 绘制列表当前处于活动状态（由 :ref:`draw_list_begin<class_RenderingDevice_method_draw_list_begin>` 创建）
 
-- a compute list is currently active (created by :ref:`compute_list_begin<class_RenderingDevice_method_compute_list_begin>`)
+- 计算列表当前处于活动状态（由 :ref:`compute_list_begin<class_RenderingDevice_method_compute_list_begin>` 创建）
 
 .. rst-class:: classref-item-separator
 
@@ -4379,15 +4381,15 @@ Prints an error if:
 
 :ref:`Error<enum_@GlobalScope_Error>` **buffer_update** **(** :ref:`RID<class_RID>` buffer, :ref:`int<class_int>` offset, :ref:`int<class_int>` size_bytes, :ref:`PackedByteArray<class_PackedByteArray>` data, |bitfield|\<:ref:`BarrierMask<enum_RenderingDevice_BarrierMask>`\> post_barrier=32767 **)**
 
-Updates a region of ``size_bytes`` bytes, starting at ``offset``, in the buffer, with the specified ``data``. Raises a memory barrier except when ``post_barrier`` is set to :ref:`BARRIER_MASK_NO_BARRIER<class_RenderingDevice_constant_BARRIER_MASK_NO_BARRIER>`.
+使用指定的 ``data`` 更新缓冲区中从 ``offset`` 开始的 ``size_bytes`` 字节区块。引发一个内存屏障，除非 ``post_barrier`` 被设置为 :ref:`BARRIER_MASK_NO_BARRIER<class_RenderingDevice_constant_BARRIER_MASK_NO_BARRIER>`\ 。
 
-Prints an error if:
+如果出现以下情况，则打印错误：
 
-- the region specified by ``offset`` + ``size_bytes`` exceeds the buffer
+- ``offset`` + ``size_bytes`` 指定的区块超出该缓冲区
 
-- a draw list is currently active (created by :ref:`draw_list_begin<class_RenderingDevice_method_draw_list_begin>`)
+- 绘制列表当前处于活动状态（由 :ref:`draw_list_begin<class_RenderingDevice_method_draw_list_begin>` 创建）
 
-- a compute list is currently active (created by :ref:`compute_list_begin<class_RenderingDevice_method_compute_list_begin>`)
+- 计算列表当前处于活动状态（由 :ref:`compute_list_begin<class_RenderingDevice_method_compute_list_begin>` 创建）
 
 .. rst-class:: classref-item-separator
 
@@ -4411,7 +4413,7 @@ void **capture_timestamp** **(** :ref:`String<class_String>` name **)**
 
 void **compute_list_add_barrier** **(** :ref:`int<class_int>` compute_list **)**
 
-Raises a Vulkan compute barrier in the specified ``compute_list``.
+在指定的 ``compute_list`` 中引发 Vulkan 计算屏障。
 
 .. rst-class:: classref-item-separator
 
@@ -4455,7 +4457,7 @@ Raises a Vulkan compute barrier in the specified ``compute_list``.
 
 void **compute_list_bind_compute_pipeline** **(** :ref:`int<class_int>` compute_list, :ref:`RID<class_RID>` compute_pipeline **)**
 
-Tells the GPU what compute pipeline to use when processing the compute list. If the shader has changed since the last time this function was called, Godot will unbind all descriptor sets and will re-bind them inside :ref:`compute_list_dispatch<class_RenderingDevice_method_compute_list_dispatch>`.
+告诉 GPU 在处理计算列表时使用什么计算管道。如果自上次调用该函数以来着色器发生了更改，Godot 将取消绑定所有描述符集，并在 :ref:`compute_list_dispatch<class_RenderingDevice_method_compute_list_dispatch>` 中重新绑定它们。
 
 .. rst-class:: classref-item-separator
 
@@ -4467,7 +4469,7 @@ Tells the GPU what compute pipeline to use when processing the compute list. If 
 
 void **compute_list_bind_uniform_set** **(** :ref:`int<class_int>` compute_list, :ref:`RID<class_RID>` uniform_set, :ref:`int<class_int>` set_index **)**
 
-Binds the ``uniform_set`` to this ``compute_list``. Godot ensures that all textures in the uniform set have the correct Vulkan access masks. If Godot had to change access masks of textures, it will raise a Vulkan image memory barrier.
+将 ``uniform_set`` 绑定到该 ``compute_list``\ 。Godot 确保统一集中的所有纹理都具有正确的 Vulkan 访问蒙版。如果 Godot 必须更改纹理的访问蒙版，则会引发 Vulkan 图像内存障碍。
 
 .. rst-class:: classref-item-separator
 
@@ -4626,9 +4628,9 @@ void **draw_command_insert_label** **(** :ref:`String<class_String>` name, :ref:
 
 :ref:`int<class_int>` **draw_list_begin_for_screen** **(** :ref:`int<class_int>` screen=0, :ref:`Color<class_Color>` clear_color=Color(0, 0, 0, 1) **)**
 
-High-level variant of :ref:`draw_list_begin<class_RenderingDevice_method_draw_list_begin>`, with the parameters automatically being adjusted for drawing onto the window specified by the ``screen`` ID.
+:ref:`draw_list_begin<class_RenderingDevice_method_draw_list_begin>` 的高阶变体，会针对绘制到 ``screen`` ID 指定的窗口上自动调整参数。
 
-\ **Note:** Cannot be used with local RenderingDevices, as these don't have a screen. If called on a local RenderingDevice, :ref:`draw_list_begin_for_screen<class_RenderingDevice_method_draw_list_begin_for_screen>` returns :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`.
+\ **注意：**\ 局部 RenderingDevice 没有屏幕，所以无法使用。如果在局部 RenderingDevice 上调用，\ :ref:`draw_list_begin_for_screen<class_RenderingDevice_method_draw_list_begin_for_screen>` 会返回 :ref:`INVALID_ID<class_RenderingDevice_constant_INVALID_ID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -5278,7 +5280,7 @@ RID 使用结束后，应该使用 RenderingDevice 的 :ref:`free_rid<class_Rend
 
 :ref:`RID<class_RID>` **shader_create_placeholder** **(** **)**
 
-Create a placeholder RID by allocating an RID without initializing it for use in :ref:`shader_create_from_bytecode<class_RenderingDevice_method_shader_create_from_bytecode>`. This allows you to create an RID for a shader and pass it around, but defer compiling the shader to a later time.
+通过分配 RID 来创建占位符 RID，而不对其进行初始化以供在 :ref:`shader_create_from_bytecode<class_RenderingDevice_method_shader_create_from_bytecode>` 中使用。这允许你为着色器创建 RID 并传递它，但将着色器的编译推迟到以后的时间。
 
 .. rst-class:: classref-item-separator
 
@@ -5290,7 +5292,7 @@ Create a placeholder RID by allocating an RID without initializing it for use in
 
 :ref:`int<class_int>` **shader_get_vertex_input_attribute_mask** **(** :ref:`RID<class_RID>` shader **)**
 
-Returns the internal vertex input mask. Internally, the vertex input mask is an unsigned integer consisting of the locations (specified in GLSL via. ``layout(location = ...)``) of the input variables (specified in GLSL by the ``in`` keyword).
+返回内部顶点输入掩码。在内部，顶点输入掩码是一个无符号整数，由输入变量（在 GLSL 中通过 ``in`` 关键字指定）的位置（在 GLSL 中通过 ``layout(location = ...)`` 指定）组成。
 
 .. rst-class:: classref-item-separator
 
@@ -5360,9 +5362,9 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 :ref:`Error<enum_@GlobalScope_Error>` **texture_clear** **(** :ref:`RID<class_RID>` texture, :ref:`Color<class_Color>` color, :ref:`int<class_int>` base_mipmap, :ref:`int<class_int>` mipmap_count, :ref:`int<class_int>` base_layer, :ref:`int<class_int>` layer_count, |bitfield|\<:ref:`BarrierMask<enum_RenderingDevice_BarrierMask>`\> post_barrier=32767 **)**
 
-将指定的 ``texture`` 清屏，将所有像素替换为指定的颜色 ``color``\ 。\ ``base_mipmap`` 和 ``mipmap_count`` 决定该清屏操作影响纹理的哪个 mipmap，而 ``base_layer`` 和 ``layer_count`` 决定该清屏操作影响 3D 纹理（或纹理数组）的哪一层。如果是 2D 纹理（本来就只有一层），则 ``base_layer`` 和 ``layer_count`` 必须都为 ``0``\ 。
+将指定的 ``texture`` 清屏，将所有像素替换为指定的颜色 ``color``\ 。\ ``base_mipmap`` 和 ``mipmap_count`` 决定该清屏操作影响纹理的哪些 mipmap，而 ``base_layer`` 和 ``layer_count`` 决定该清屏操作影响 3D 纹理（或纹理数组）的哪几层。如果是 2D 纹理（本来就只有一层），则 ``base_layer`` 必须为 ``0``\ ，\ ``layer_count`` 必须为 ``1``\ 。
 
-\ **注意：**\ 如果使用 ``texture`` 的绘图列表是创建的帧缓冲的一部分，则该纹理不能被清屏。绘图列表释放后（并且使用它的颜色和深度纹理没有被设为 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ）才能对该纹理做清屏操作。
+\ **注意：**\ 如果使用 ``texture`` 的绘图列表是创建的帧缓冲的一部分，则该纹理不能被清屏。确保绘图列表释放后（并且使用它的颜色和深度纹理没有被设为 :ref:`FINAL_ACTION_CONTINUE<class_RenderingDevice_constant_FINAL_ACTION_CONTINUE>`\ ）才能对该纹理做清屏操作。
 
 .. rst-class:: classref-item-separator
 
@@ -5401,6 +5403,18 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_RenderingDevice_method_free_rid>` 方法进行释放。
 
 \ **注意：**\ 请勿与 :ref:`RenderingServer.texture_2d_create<class_RenderingServer_method_texture_2d_create>` 混淆，后者创建的是 Godot 专属的 :ref:`Texture2D<class_Texture2D>` 资源，不是图形 API 自己的纹理类型。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_RenderingDevice_method_texture_create_from_extension:
+
+.. rst-class:: classref-method
+
+:ref:`RID<class_RID>` **texture_create_from_extension** **(** :ref:`TextureType<enum_RenderingDevice_TextureType>` type, :ref:`DataFormat<enum_RenderingDevice_DataFormat>` format, :ref:`TextureSamples<enum_RenderingDevice_TextureSamples>` samples, |bitfield|\<:ref:`TextureUsageBits<enum_RenderingDevice_TextureUsageBits>`\> usage_flags, :ref:`int<class_int>` image, :ref:`int<class_int>` width, :ref:`int<class_int>` height, :ref:`int<class_int>` depth, :ref:`int<class_int>` layers **)**
+
+使用给定的 ``type``\ 、\ ``format``\ 、\ ``samples``\ 、\ ``usage_flags``\ 、\ ``width``\ 、\ ``height``\ 、\ ``depth``\ 、和 ``layers`` 返回已有 ``image``\ （\ ``VkImage``\ ）的 RID。这可被用于允许 Godot 渲染到外部图像上。
 
 .. rst-class:: classref-item-separator
 
@@ -5456,7 +5470,7 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 :ref:`RDTextureFormat<class_RDTextureFormat>` **texture_get_format** **(** :ref:`RID<class_RID>` texture **)**
 
-Returns the data format used to create this texture.
+返回用于创建该纹理的数据格式。
 
 .. rst-class:: classref-item-separator
 
@@ -5562,9 +5576,9 @@ Returns the data format used to create this texture.
 
 :ref:`RID<class_RID>` **uniform_buffer_create** **(** :ref:`int<class_int>` size_bytes, :ref:`PackedByteArray<class_PackedByteArray>` data=PackedByteArray() **)**
 
-Creates a new uniform buffer. It can be accessed with the RID that is returned.
+新建 uniform 缓冲。可以通过返回的 RID 进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid<class_RenderingDevice_method_free_rid>` method.
+RID 使用结束后，应该使用 RenderingDevice 的 :ref:`free_rid<class_RenderingDevice_method_free_rid>` 方法进行释放。
 
 .. rst-class:: classref-item-separator
 
@@ -5576,9 +5590,9 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`RID<class_RID>` **uniform_set_create** **(** :ref:`RDUniform[]<class_RDUniform>` uniforms, :ref:`RID<class_RID>` shader, :ref:`int<class_int>` shader_set **)**
 
-Creates a new uniform set. It can be accessed with the RID that is returned.
+新建 uniform 集。可以通过返回的 RID 进行访问。
 
-Once finished with your RID, you will want to free the RID using the RenderingDevice's :ref:`free_rid<class_RenderingDevice_method_free_rid>` method.
+RID 使用结束后，应该使用 RenderingDevice 的 :ref:`free_rid<class_RenderingDevice_method_free_rid>` 方法进行释放。
 
 .. rst-class:: classref-item-separator
 
@@ -5590,7 +5604,7 @@ Once finished with your RID, you will want to free the RID using the RenderingDe
 
 :ref:`bool<class_bool>` **uniform_set_is_valid** **(** :ref:`RID<class_RID>` uniform_set **)**
 
-Checks if the ``uniform_set`` is valid, i.e. is owned.
+检查 ``uniform_set`` 是否有效，即是否有归属。
 
 .. rst-class:: classref-item-separator
 
@@ -5630,10 +5644,10 @@ RID 使用结束后，应该使用 RenderingServer 的 :ref:`free_rid<class_Rend
 
 新建顶点描述为 ``vertex_descriptions`` 的顶点格式。返回与新建顶点格式对应的唯一格式 ID。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 ItemList
 ========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 可选项目的垂直列表，可以有一列或多列。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该控件提供了可选项目的垂直列表，这些项目可能位于单列或多列中，每个项目都有文本和图标选项。支持工具提示，并且列表中的每个项目可能会有所不同。
 
@@ -31,8 +31,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -73,8 +73,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -173,8 +173,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -225,8 +225,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_ItemList_signal_empty_clicked:
 
@@ -294,8 +294,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ItemList_IconMode:
 
@@ -351,8 +351,8 @@ enum **SelectMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ItemList_property_allow_reselect:
 
@@ -606,8 +606,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ItemList_method_add_icon_item:
 
@@ -691,7 +691,7 @@ void **ensure_current_is_visible** **(** **)**
 
 void **force_update_list_size** **(** **)**
 
-Forces an update to the list size based on its items. This happens automatically whenever size of the items, or other relevant settings like :ref:`auto_height<class_ItemList_property_auto_height>`, change. The method can be used to trigger the update ahead of next drawing pass.
+根据列表项强制更新该列表大小。每当项目的大小或其他相关设置（例如 :ref:`auto_height<class_ItemList_property_auto_height>`\ ）发生变化时，这种情况就会自动发生。该方法可被用于在下一次绘制阶段之前触发更新。
 
 .. rst-class:: classref-item-separator
 
@@ -1167,8 +1167,8 @@ void **sort_items_by_text** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_ItemList_theme_color_font_color:
 
@@ -1396,10 +1396,10 @@ Theme Property Descriptions
 
 所选项的样式盒 :ref:`StyleBox<class_StyleBox>`\ ，当该 **ItemList** 获得焦点时使用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

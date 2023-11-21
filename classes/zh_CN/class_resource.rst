@@ -10,16 +10,16 @@
 Resource
 ========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`Animation<class_Animation>`, :ref:`AnimationLibrary<class_AnimationLibrary>`, :ref:`AnimationNode<class_AnimationNode>`, :ref:`AnimationNodeStateMachinePlayback<class_AnimationNodeStateMachinePlayback>`, :ref:`AnimationNodeStateMachineTransition<class_AnimationNodeStateMachineTransition>`, :ref:`AudioBusLayout<class_AudioBusLayout>`, :ref:`AudioEffect<class_AudioEffect>`, :ref:`AudioStream<class_AudioStream>`, :ref:`BitMap<class_BitMap>`, :ref:`BoneMap<class_BoneMap>`, :ref:`ButtonGroup<class_ButtonGroup>`, :ref:`CameraAttributes<class_CameraAttributes>`, :ref:`CryptoKey<class_CryptoKey>`, :ref:`Curve<class_Curve>`, :ref:`Curve2D<class_Curve2D>`, :ref:`Curve3D<class_Curve3D>`, :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`, :ref:`EditorSettings<class_EditorSettings>`, :ref:`Environment<class_Environment>`, :ref:`Font<class_Font>`, :ref:`GDExtension<class_GDExtension>`, :ref:`GLTFAccessor<class_GLTFAccessor>`, :ref:`GLTFAnimation<class_GLTFAnimation>`, :ref:`GLTFBufferView<class_GLTFBufferView>`, :ref:`GLTFCamera<class_GLTFCamera>`, :ref:`GLTFDocument<class_GLTFDocument>`, :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>`, :ref:`GLTFLight<class_GLTFLight>`, :ref:`GLTFMesh<class_GLTFMesh>`, :ref:`GLTFNode<class_GLTFNode>`, :ref:`GLTFPhysicsBody<class_GLTFPhysicsBody>`, :ref:`GLTFPhysicsShape<class_GLTFPhysicsShape>`, :ref:`GLTFSkeleton<class_GLTFSkeleton>`, :ref:`GLTFSkin<class_GLTFSkin>`, :ref:`GLTFSpecGloss<class_GLTFSpecGloss>`, :ref:`GLTFState<class_GLTFState>`, :ref:`GLTFTexture<class_GLTFTexture>`, :ref:`GLTFTextureSampler<class_GLTFTextureSampler>`, :ref:`Gradient<class_Gradient>`, :ref:`Image<class_Image>`, :ref:`ImporterMesh<class_ImporterMesh>`, :ref:`InputEvent<class_InputEvent>`, :ref:`JSON<class_JSON>`, :ref:`LabelSettings<class_LabelSettings>`, :ref:`LightmapGIData<class_LightmapGIData>`, :ref:`Material<class_Material>`, :ref:`Mesh<class_Mesh>`, :ref:`MeshLibrary<class_MeshLibrary>`, :ref:`MissingResource<class_MissingResource>`, :ref:`MultiMesh<class_MultiMesh>`, :ref:`NavigationMesh<class_NavigationMesh>`, :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>`, :ref:`NavigationPolygon<class_NavigationPolygon>`, :ref:`Noise<class_Noise>`, :ref:`Occluder3D<class_Occluder3D>`, :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`, :ref:`OggPacketSequence<class_OggPacketSequence>`, :ref:`OpenXRAction<class_OpenXRAction>`, :ref:`OpenXRActionMap<class_OpenXRActionMap>`, :ref:`OpenXRActionSet<class_OpenXRActionSet>`, :ref:`OpenXRInteractionProfile<class_OpenXRInteractionProfile>`, :ref:`OpenXRIPBinding<class_OpenXRIPBinding>`, :ref:`PackedDataContainer<class_PackedDataContainer>`, :ref:`PackedScene<class_PackedScene>`, :ref:`PhysicsMaterial<class_PhysicsMaterial>`, :ref:`PolygonPathFinder<class_PolygonPathFinder>`, :ref:`RDShaderFile<class_RDShaderFile>`, :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, :ref:`RichTextEffect<class_RichTextEffect>`, :ref:`SceneReplicationConfig<class_SceneReplicationConfig>`, :ref:`Script<class_Script>`, :ref:`Shader<class_Shader>`, :ref:`ShaderInclude<class_ShaderInclude>`, :ref:`Shape2D<class_Shape2D>`, :ref:`Shape3D<class_Shape3D>`, :ref:`Shortcut<class_Shortcut>`, :ref:`SkeletonModification2D<class_SkeletonModification2D>`, :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`, :ref:`SkeletonProfile<class_SkeletonProfile>`, :ref:`Skin<class_Skin>`, :ref:`Sky<class_Sky>`, :ref:`SpriteFrames<class_SpriteFrames>`, :ref:`StyleBox<class_StyleBox>`, :ref:`SyntaxHighlighter<class_SyntaxHighlighter>`, :ref:`Texture<class_Texture>`, :ref:`Theme<class_Theme>`, :ref:`TileMapPattern<class_TileMapPattern>`, :ref:`TileSet<class_TileSet>`, :ref:`TileSetSource<class_TileSetSource>`, :ref:`Translation<class_Translation>`, :ref:`VideoStream<class_VideoStream>`, :ref:`VideoStreamPlayback<class_VideoStreamPlayback>`, :ref:`VisualShaderNode<class_VisualShaderNode>`, :ref:`VoxelGIData<class_VoxelGIData>`, :ref:`World2D<class_World2D>`, :ref:`World3D<class_World3D>`, :ref:`X509Certificate<class_X509Certificate>`
+**派生：** :ref:`Animation<class_Animation>`, :ref:`AnimationLibrary<class_AnimationLibrary>`, :ref:`AnimationNode<class_AnimationNode>`, :ref:`AnimationNodeStateMachinePlayback<class_AnimationNodeStateMachinePlayback>`, :ref:`AnimationNodeStateMachineTransition<class_AnimationNodeStateMachineTransition>`, :ref:`AudioBusLayout<class_AudioBusLayout>`, :ref:`AudioEffect<class_AudioEffect>`, :ref:`AudioStream<class_AudioStream>`, :ref:`BitMap<class_BitMap>`, :ref:`BoneMap<class_BoneMap>`, :ref:`ButtonGroup<class_ButtonGroup>`, :ref:`CameraAttributes<class_CameraAttributes>`, :ref:`CryptoKey<class_CryptoKey>`, :ref:`Curve<class_Curve>`, :ref:`Curve2D<class_Curve2D>`, :ref:`Curve3D<class_Curve3D>`, :ref:`EditorNode3DGizmoPlugin<class_EditorNode3DGizmoPlugin>`, :ref:`EditorSettings<class_EditorSettings>`, :ref:`Environment<class_Environment>`, :ref:`Font<class_Font>`, :ref:`GDExtension<class_GDExtension>`, :ref:`GLTFAccessor<class_GLTFAccessor>`, :ref:`GLTFAnimation<class_GLTFAnimation>`, :ref:`GLTFBufferView<class_GLTFBufferView>`, :ref:`GLTFCamera<class_GLTFCamera>`, :ref:`GLTFDocument<class_GLTFDocument>`, :ref:`GLTFDocumentExtension<class_GLTFDocumentExtension>`, :ref:`GLTFLight<class_GLTFLight>`, :ref:`GLTFMesh<class_GLTFMesh>`, :ref:`GLTFNode<class_GLTFNode>`, :ref:`GLTFPhysicsBody<class_GLTFPhysicsBody>`, :ref:`GLTFPhysicsShape<class_GLTFPhysicsShape>`, :ref:`GLTFSkeleton<class_GLTFSkeleton>`, :ref:`GLTFSkin<class_GLTFSkin>`, :ref:`GLTFSpecGloss<class_GLTFSpecGloss>`, :ref:`GLTFState<class_GLTFState>`, :ref:`GLTFTexture<class_GLTFTexture>`, :ref:`GLTFTextureSampler<class_GLTFTextureSampler>`, :ref:`Gradient<class_Gradient>`, :ref:`Image<class_Image>`, :ref:`ImporterMesh<class_ImporterMesh>`, :ref:`InputEvent<class_InputEvent>`, :ref:`JSON<class_JSON>`, :ref:`LabelSettings<class_LabelSettings>`, :ref:`LightmapGIData<class_LightmapGIData>`, :ref:`Material<class_Material>`, :ref:`Mesh<class_Mesh>`, :ref:`MeshLibrary<class_MeshLibrary>`, :ref:`MissingResource<class_MissingResource>`, :ref:`MultiMesh<class_MultiMesh>`, :ref:`NavigationMesh<class_NavigationMesh>`, :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>`, :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>`, :ref:`NavigationPolygon<class_NavigationPolygon>`, :ref:`Noise<class_Noise>`, :ref:`Occluder3D<class_Occluder3D>`, :ref:`OccluderPolygon2D<class_OccluderPolygon2D>`, :ref:`OggPacketSequence<class_OggPacketSequence>`, :ref:`OpenXRAction<class_OpenXRAction>`, :ref:`OpenXRActionMap<class_OpenXRActionMap>`, :ref:`OpenXRActionSet<class_OpenXRActionSet>`, :ref:`OpenXRInteractionProfile<class_OpenXRInteractionProfile>`, :ref:`OpenXRIPBinding<class_OpenXRIPBinding>`, :ref:`PackedDataContainer<class_PackedDataContainer>`, :ref:`PackedScene<class_PackedScene>`, :ref:`PhysicsMaterial<class_PhysicsMaterial>`, :ref:`PolygonPathFinder<class_PolygonPathFinder>`, :ref:`RDShaderFile<class_RDShaderFile>`, :ref:`RDShaderSPIRV<class_RDShaderSPIRV>`, :ref:`RichTextEffect<class_RichTextEffect>`, :ref:`SceneReplicationConfig<class_SceneReplicationConfig>`, :ref:`Script<class_Script>`, :ref:`Shader<class_Shader>`, :ref:`ShaderInclude<class_ShaderInclude>`, :ref:`Shape2D<class_Shape2D>`, :ref:`Shape3D<class_Shape3D>`, :ref:`Shortcut<class_Shortcut>`, :ref:`SkeletonModification2D<class_SkeletonModification2D>`, :ref:`SkeletonModificationStack2D<class_SkeletonModificationStack2D>`, :ref:`SkeletonProfile<class_SkeletonProfile>`, :ref:`Skin<class_Skin>`, :ref:`Sky<class_Sky>`, :ref:`SpriteFrames<class_SpriteFrames>`, :ref:`StyleBox<class_StyleBox>`, :ref:`SyntaxHighlighter<class_SyntaxHighlighter>`, :ref:`Texture<class_Texture>`, :ref:`Theme<class_Theme>`, :ref:`TileMapPattern<class_TileMapPattern>`, :ref:`TileSet<class_TileSet>`, :ref:`TileSetSource<class_TileSetSource>`, :ref:`Translation<class_Translation>`, :ref:`VideoStream<class_VideoStream>`, :ref:`VideoStreamPlayback<class_VideoStreamPlayback>`, :ref:`VisualShaderNode<class_VisualShaderNode>`, :ref:`VoxelGIData<class_VoxelGIData>`, :ref:`World2D<class_World2D>`, :ref:`World3D<class_World3D>`, :ref:`X509Certificate<class_X509Certificate>`
 
 可序列化对象的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 资源是所有 Godot 特定资源类型的基类，主要作为数据容器。因为资源继承自 :ref:`RefCounted<class_RefCounted>`\ ，所以进行了引用计数，不再使用时会被释放。资源也可以嵌套到其他资源里、保存到磁盘上。一旦从磁盘加载，后续尝试使用 :ref:`resource_path<class_Resource_property_resource_path>` 加载资源时都会返回相同的引用。\ :ref:`PackedScene<class_PackedScene>` 也是一种资源，它是 Godot 项目中最常用的 :ref:`Object<class_Object>` 之一，独特的能力是可以将若干 :ref:`Node<class_Node>` 保存起来、随意进行实例化。
 
@@ -29,8 +29,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`资源 <../tutorials/scripting/resources>`
 
@@ -38,8 +38,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -54,14 +54,16 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +---------------------------------+------------------------------------------------------------------------------------------------------------------+
-   | :ref:`RID<class_RID>`           | :ref:`_get_rid<class_Resource_method__get_rid>` **(** **)** |virtual|                                            |
+   | :ref:`RID<class_RID>`           | :ref:`_get_rid<class_Resource_private_method__get_rid>` **(** **)** |virtual|                                    |
+   +---------------------------------+------------------------------------------------------------------------------------------------------------------+
+   | void                            | :ref:`_setup_local_to_scene<class_Resource_private_method__setup_local_to_scene>` **(** **)** |virtual|          |
    +---------------------------------+------------------------------------------------------------------------------------------------------------------+
    | :ref:`Resource<class_Resource>` | :ref:`duplicate<class_Resource_method_duplicate>` **(** :ref:`bool<class_bool>` subresources=false **)** |const| |
    +---------------------------------+------------------------------------------------------------------------------------------------------------------+
@@ -82,8 +84,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Resource_signal_changed:
 
@@ -105,7 +107,9 @@ Signals
 
 **setup_local_to_scene_requested** **(** **)**
 
-Emitted by the newly duplicated resource with :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` set to ``true``, when the scene is instantiated. Custom behavior can be defined by connecting this signal.
+由新复制的资源发出，并将 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 设置为 ``true``\ 。
+
+\ *已弃用。*\ 该信号仅在创建资源时发出。改为覆盖 :ref:`_setup_local_to_scene<class_Resource_private_method__setup_local_to_scene>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -113,8 +117,8 @@ Emitted by the newly duplicated resource with :ref:`resource_local_to_scene<clas
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Resource_property_resource_local_to_scene:
 
@@ -148,6 +152,8 @@ Property Descriptions
 
 这个资源的可选名称。定义后会在“检查器”面板中显示这个值来代表该资源。对于内置脚本，该名称会在脚本编辑器中作为选项卡名称的一部分显示。
 
+\ **注意：**\ 某些资源格式不支持资源名称。仍然可以在编辑器中或通过代码设置名称，但重新加载资源时该名称将会丢失。例如，只有内置的脚本可以有资源名称，而存储在单独文件中的脚本则不能。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -173,16 +179,39 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Resource_method__get_rid:
+.. _class_Resource_private_method__get_rid:
 
 .. rst-class:: classref-method
 
 :ref:`RID<class_RID>` **_get_rid** **(** **)** |virtual|
 
 可以覆盖此方法，从而在调用 :ref:`get_rid<class_Resource_method_get_rid>` 时返回自定义 :ref:`RID<class_RID>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Resource_private_method__setup_local_to_scene:
+
+.. rst-class:: classref-method
+
+void **_setup_local_to_scene** **(** **)** |virtual|
+
+如果原始资源的 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 被设置为 ``true``\ ，则覆盖该方法以自定义从 :ref:`PackedScene.instantiate<class_PackedScene_method_instantiate>` 创建的新复制的资源。
+
+\ **示例：**\ 为实例化场景中的每个本地资源设置随机 ``damage`` 值。
+
+::
+
+    extends Resource
+    
+    var damage = 0
+    
+    func _setup_local_to_scene():
+        damage = randi_range(10, 40)
 
 .. rst-class:: classref-item-separator
 
@@ -200,7 +229,7 @@ Method Descriptions
 
 带有 :ref:`@GlobalScope.PROPERTY_USAGE_ALWAYS_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_ALWAYS_DUPLICATE>` 标志的子资源属性始终会被复制，即便 ``subresources`` 为 ``false``\ 。而带有 :ref:`@GlobalScope.PROPERTY_USAGE_NEVER_DUPLICATE<class_@GlobalScope_constant_PROPERTY_USAGE_NEVER_DUPLICATE>` 标志的子资源属性始终不会被复制，即便 ``subresources`` 为 ``true``\ 。
 
-\ **注意：**\ 对于自定义资源，如果定义 :ref:`Object._init<class_Object_method__init>` 时使用了必填的参数，则此方法会失败。
+\ **注意：**\ 对于自定义资源，如果定义 :ref:`Object._init<class_Object_private_method__init>` 时使用了必填的参数，则此方法会失败。
 
 .. rst-class:: classref-item-separator
 
@@ -212,9 +241,9 @@ Method Descriptions
 
 void **emit_changed** **(** **)**
 
-Emits the :ref:`changed<class_Resource_signal_changed>` signal. This method is called automatically for some built-in resources.
+发出 :ref:`changed<class_Resource_signal_changed>` 更改信号。某些内置资源会自动调用此方法。
 
-\ **Note:** For custom resources, it's recommended to call this method whenever a meaningful change occurs, such as a modified property. This ensures that custom :ref:`Object<class_Object>`\ s depending on the resource are properly updated.
+\ **注意：**\ 对于自定义资源，推荐在发生任何有意义的变化时都调用此方法，例如修改属性时。这样能够保证依赖于此资源的自定义 :ref:`Object<class_Object>` 能够正确更新其属性。
 
 ::
 
@@ -258,9 +287,9 @@ Emits the :ref:`changed<class_Resource_signal_changed>` signal. This method is c
 
 void **setup_local_to_scene** **(** **)**
 
-Emits the :ref:`setup_local_to_scene_requested<class_Resource_signal_setup_local_to_scene_requested>` signal. If :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` is set to ``true``, this method is called from :ref:`PackedScene.instantiate<class_PackedScene_method_instantiate>` by the newly duplicated resource within the scene instance.
+调用 :ref:`_setup_local_to_scene<class_Resource_private_method__setup_local_to_scene>`\ 。如果 :ref:`resource_local_to_scene<class_Resource_property_resource_local_to_scene>` 被设置为 ``true``\ ，则场景实例中新复制的资源会自动从 :ref:`PackedScene.instantiate<class_PackedScene_method_instantiate>` 中调用该方法。
 
-For most resources, this method performs no logic of its own. Custom behavior can be defined by connecting :ref:`setup_local_to_scene_requested<class_Resource_signal_setup_local_to_scene_requested>` from a script, **not** by overriding this method.
+\ *已弃用。*\ 该方法只能被内部调用。使用覆盖 :ref:`_setup_local_to_scene<class_Resource_private_method__setup_local_to_scene>` 代替。
 
 .. rst-class:: classref-item-separator
 
@@ -274,10 +303,10 @@ void **take_over_path** **(** :ref:`String<class_String>` path **)**
 
 将 :ref:`resource_path<class_Resource_property_resource_path>` 设置为 ``path``\ ，可能会覆盖这个路径对应的已有缓存条目。后续尝试通过路径加载覆盖后的资源时，会返回这个资源。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

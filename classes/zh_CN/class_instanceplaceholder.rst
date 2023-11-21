@@ -10,14 +10,14 @@
 InstancePlaceholder
 ===================
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 :ref:`PackedScene<class_PackedScene>` 根 :ref:`Node<class_Node>` 的占位符。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 在编辑器中为实例化的场景打开\ **加载为占位符**\ 选项会导致在运行游戏时将其替换为 **InstancePlaceholder**\ 。这样就可以将场景的实际加载推迟到调用 :ref:`create_instance<class_InstancePlaceholder_method_create_instance>` 时。这对于通过选择性加载部分场景来避免一次性加载大场景很有用。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_InstancePlaceholder_method_create_instance:
 
@@ -84,10 +84,10 @@ Method Descriptions
 
 如果 ``with_order`` 为 ``true``\ ，会在字典中加入 ``.order`` 字段（注意有个前缀的点）。这个 ``.order`` 字段是属性名称 :ref:`String<class_String>` 的 :ref:`Array<class_Array>`\ ，指定属性的应用顺序（索引为 0 的是第一个）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

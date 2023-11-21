@@ -10,14 +10,14 @@
 Skeleton3D
 ==========
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 包含骨骼层级结构的节点，用于创建 3D 骨骼动画。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **Skeleton3D** 提供了管理骨骼层级结构的接口，包括姿势、放松姿势和动画（见 :ref:`Animation<class_Animation>`\ ）。它还可以使用布娃娃物理。
 
@@ -25,12 +25,12 @@ Description
 
 请注意，下文的“全局姿势”是指骨骼相对于骨架的整体变换，因此并不是骨骼的实际全局/世界变换。
 
-要设置不同类型的反向运动学，请考虑使用 :ref:`SkeletonIK3D<class_SkeletonIK3D>`\ ，或者添加一个子节点并在 :ref:`Node._process<class_Node_method__process>` 中实现自定义 IK。
+要设置不同类型的反向运动学，请考虑使用 :ref:`SkeletonIK3D<class_SkeletonIK3D>`\ ，或者添加一个子节点并在 :ref:`Node._process<class_Node_private_method__process>` 中实现自定义 IK。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `3D 逆运动学演示 <https://godotengine.org/asset-library/asset/523>`__
 
@@ -38,8 +38,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -148,8 +148,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Skeleton3D_signal_bone_enabled_changed:
 
@@ -159,7 +159,7 @@ Signals
 
 .. container:: contribute
 
-	There is currently no description for this signal. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个信号的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -185,7 +185,7 @@ Signals
 
 .. container:: contribute
 
-	There is currently no description for this signal. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个信号的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -199,7 +199,7 @@ Signals
 
 .. container:: contribute
 
-	There is currently no description for this signal. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个信号的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-section-separator
 
@@ -207,8 +207,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Skeleton3D_constant_NOTIFICATION_UPDATE_SKELETON:
 
@@ -224,8 +224,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Skeleton3D_property_animate_physical_bones:
 
@@ -240,7 +240,7 @@ Property Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,7 @@ Property Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-section-separator
 
@@ -286,8 +286,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Skeleton3D_method_add_bone:
 
@@ -333,7 +333,7 @@ void **clear_bones_global_pose_override** **(** **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -493,9 +493,7 @@ void **force_update_bone_child_transform** **(** :ref:`int<class_int>` bone_idx 
 
 :ref:`Vector3<class_Vector3>` **get_bone_pose_position** **(** :ref:`int<class_int>` bone_idx **)** |const|
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+返回骨骼在 ``bone_idx``\ 处的姿势位置。返回的 :ref:`Vector3<class_Vector3>` 位于 **Skeleton3D** 节点的局部坐标空间中。
 
 .. rst-class:: classref-item-separator
 
@@ -507,9 +505,7 @@ void **force_update_bone_child_transform** **(** :ref:`int<class_int>` bone_idx 
 
 :ref:`Quaternion<class_Quaternion>` **get_bone_pose_rotation** **(** :ref:`int<class_int>` bone_idx **)** |const|
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+返回 ``bone_idx`` 处骨骼的姿势旋转。返回的 :ref:`Quaternion<class_Quaternion>` 是局部于该骨骼的，且相对于任何父骨骼的旋转。
 
 .. rst-class:: classref-item-separator
 
@@ -521,9 +517,7 @@ void **force_update_bone_child_transform** **(** :ref:`int<class_int>` bone_idx 
 
 :ref:`Vector3<class_Vector3>` **get_bone_pose_scale** **(** :ref:`int<class_int>` bone_idx **)** |const|
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+返回 ``bone_idx`` 处骨骼的姿态缩放。
 
 .. rst-class:: classref-item-separator
 
@@ -719,7 +713,7 @@ void **set_bone_name** **(** :ref:`int<class_int>` bone_idx, :ref:`String<class_
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -745,9 +739,7 @@ void **set_bone_parent** **(** :ref:`int<class_int>` bone_idx, :ref:`int<class_i
 
 void **set_bone_pose_position** **(** :ref:`int<class_int>` bone_idx, :ref:`Vector3<class_Vector3>` position **)**
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+将 ``bone_idx`` 处的骨骼姿势位置设置为 ``position``\ 。\ ``position`` 是一个 :ref:`Vector3<class_Vector3>`\ ，描述局部于 **Skeleton3D** 节点的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -759,9 +751,7 @@ void **set_bone_pose_position** **(** :ref:`int<class_int>` bone_idx, :ref:`Vect
 
 void **set_bone_pose_rotation** **(** :ref:`int<class_int>` bone_idx, :ref:`Quaternion<class_Quaternion>` rotation **)**
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+将 ``bone_idx`` 处骨骼的姿势旋转设置为 ``rotation``\ 。\ ``rotation`` 是一个 :ref:`Quaternion<class_Quaternion>`\ ，描述该骨骼局部坐标空间中相对于任何父骨骼的旋转的旋转。
 
 .. rst-class:: classref-item-separator
 
@@ -773,9 +763,7 @@ void **set_bone_pose_rotation** **(** :ref:`int<class_int>` bone_idx, :ref:`Quat
 
 void **set_bone_pose_scale** **(** :ref:`int<class_int>` bone_idx, :ref:`Vector3<class_Vector3>` scale **)**
 
-.. container:: contribute
-
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+将 ``bone_idx`` 处骨骼的姿势缩放设置为 ``scale``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -801,10 +789,10 @@ void **unparent_bone_and_rest** **(** :ref:`int<class_int>` bone_idx **)**
 
 让位于 ``bone_idx`` 的骨骼不再有父级，并将其放松位置设置为之前父级放松时的位置。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

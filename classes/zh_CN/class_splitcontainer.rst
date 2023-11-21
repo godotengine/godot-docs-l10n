@@ -10,30 +10,30 @@
 SplitContainer
 ==============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`HSplitContainer<class_HSplitContainer>`, :ref:`VSplitContainer<class_VSplitContainer>`
+**派生：** :ref:`HSplitContainer<class_HSplitContainer>`, :ref:`VSplitContainer<class_VSplitContainer>`
 
 将两个子控件垂直或水平分隔的容器，提供了用于调整分隔比例的抓取器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 仅接受两个子控件的容器，会将它们垂直或水平排列，在中间创建一个分隔条。分隔条可以拖拽，从而改变两个控件的大小关系。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -62,8 +62,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -74,6 +74,8 @@ Theme Properties
    | :ref:`int<class_int>`             | :ref:`minimum_grab_thickness<class_SplitContainer_theme_constant_minimum_grab_thickness>` | ``6``  |
    +-----------------------------------+-------------------------------------------------------------------------------------------+--------+
    | :ref:`int<class_int>`             | :ref:`separation<class_SplitContainer_theme_constant_separation>`                         | ``12`` |
+   +-----------------------------------+-------------------------------------------------------------------------------------------+--------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber<class_SplitContainer_theme_icon_grabber>`                                   |        |
    +-----------------------------------+-------------------------------------------------------------------------------------------+--------+
    | :ref:`Texture2D<class_Texture2D>` | :ref:`h_grabber<class_SplitContainer_theme_icon_h_grabber>`                               |        |
    +-----------------------------------+-------------------------------------------------------------------------------------------+--------+
@@ -86,8 +88,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_SplitContainer_signal_dragged:
 
@@ -103,8 +105,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_SplitContainer_DraggerVisibility:
 
@@ -142,8 +144,8 @@ enum **DraggerVisibility**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_SplitContainer_property_collapsed:
 
@@ -217,8 +219,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_SplitContainer_method_clamp_split_offset:
 
@@ -234,8 +236,8 @@ void **clamp_split_offset** **(** **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_SplitContainer_theme_constant_autohide:
 
@@ -273,6 +275,18 @@ Theme Property Descriptions
 
 ----
 
+.. _class_SplitContainer_theme_icon_grabber:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **grabber**
+
+在中间区域绘制的抓取图标。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_SplitContainer_theme_icon_h_grabber:
 
 .. rst-class:: classref-themeproperty
@@ -293,10 +307,10 @@ Theme Property Descriptions
 
 :ref:`vertical<class_SplitContainer_property_vertical>` 为 ``true`` 时绘制在中间区域的抓取器图标。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,37 +10,37 @@
 PhysicsServer3D
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`PhysicsServer3DExtension<class_PhysicsServer3DExtension>`
+**派生：** :ref:`PhysicsServer3DExtension<class_PhysicsServer3DExtension>`
 
 用于访问低阶 3D 物理的服务器接口。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-PhysicsServer3D is the server responsible for all 3D physics. It can directly create and manipulate all physics objects:
+PhysicsServer3D 是负责所有 3D 物理的服务器。它可以直接创建和操作所有物理对象：
 
-- A *space* is a self-contained world for a physics simulation. It contains bodies, areas, and joints. Its state can be queried for collision and intersection information, and several parameters of the simulation can be modified.
+- *Space（空间）*\ 是用于物理仿真的自包含世界。它包含实体、区域和关节。可以对其状态进行查询，获取碰撞和相交信息，并且可以修改部分仿真参数。
 
-- A *shape* is a geometric shape such as a sphere, a box, a cylinder, or a polygon. It can be used for collision detection by adding it to a body/area, possibly with an extra transformation relative to the body/area's origin. Bodies/areas can have multiple (transformed) shapes added to them, and a single shape can be added to bodies/areas multiple times with different local transformations.
+- *Shape（形状）*\ 是球形、盒形、圆柱形、多边形等几何形状。加入到实体/区域中就可以用来进行碰撞检测，还可以带有相对于实体/区域原点的额外变换。实体/区域中可以添加多个（变换后的）形状，并且可以使用不同的局部变换将单个形状多次添加到实体/区域中。
 
-- A *body* is a physical object which can be in static, kinematic, or rigid mode. Its state (such as position and velocity) can be queried and updated. A force integration callback can be set to customize the body's physics.
+- *Body（实体）*\ 是物理对象，可以处于静态、运动学或刚性模式。可以对其状态进行查询和更新（例如位置、速度等）。可以设置力的集成回调，自定义实体的物理特性。
 
-- An *area* is a region in space which can be used to detect bodies and areas entering and exiting it. A body monitoring callback can be set to report entering/exiting body shapes, and similarly an area monitoring callback can be set. Gravity and damping can be overridden within the area by setting area parameters.
+- *Area（区域）*\ 是空间中的区块，可用于检测进入和离开它的实体和区域。可以设置实体的监视回调，报告进入/离开的实体形状，同样可以设置区域的监视回调。通过设置区域参数，可以在区域内覆盖重力和阻尼。
 
-- A *joint* is a constraint, either between two bodies or on one body relative to a point. Parameters such as the joint bias and the rest length of a spring joint can be adjusted.
+- *Joint（关节）*\ 是两个实体之间或一个实体相对于某个点的约束。可以调整关节偏置和弹簧关节的放松长度等参数。
 
-Physics objects in **PhysicsServer3D** may be created and manipulated independently; they do not have to be tied to nodes in the scene tree.
+\ **PhysicsServer3D** 中的物理对象可以独立创建和操作；不必将它们绑定到场景树中的节点。
 
-\ **Note:** All the 3D physics nodes use the physics server internally. Adding a physics node to the scene tree will cause a corresponding physics object to be created in the physics server. A rigid body node registers a callback that updates the node's transform with the transform of the respective body object in the physics server (every physics update). An area node registers a callback to inform the area node about overlaps with the respective area object in the physics server. The raycast node queries the direct state of the relevant space in the physics server.
+\ **注意：**\ 所有 3D 物理节点都在内部使用这个物理服务器。将物理节点添加到场景树，就会导致在物理服务器中创建相应的物理对象。刚体节点会注册回调，该回调会（在每次物理更新时）使用物理服务器中相应实体对象的变换更新该节点的变换。区域节点会注册回调，用来通知区域节点与物理服务器中相应区域对象的重叠。射线投射节点会查询物理服务器中相关空间的直接状态。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -321,8 +321,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_PhysicsServer3D_JointType:
 
@@ -1636,8 +1636,8 @@ enum **BodyAxis**:
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PhysicsServer3D_method_area_add_shape:
 
@@ -1887,7 +1887,7 @@ void **area_set_monitorable** **(** :ref:`RID<class_RID>` area, :ref:`bool<class
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1937,7 +1937,7 @@ void **area_set_shape_disabled** **(** :ref:`RID<class_RID>` area, :ref:`int<cla
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2161,7 +2161,7 @@ void **body_clear_shapes** **(** :ref:`RID<class_RID>` body **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2359,7 +2359,7 @@ void **body_clear_shapes** **(** :ref:`RID<class_RID>` body **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2435,7 +2435,7 @@ void **body_set_axis_lock** **(** :ref:`RID<class_RID>` body, :ref:`BodyAxis<enu
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2537,13 +2537,11 @@ void **body_set_enable_continuous_collision_detection** **(** :ref:`RID<class_RI
 
 void **body_set_force_integration_callback** **(** :ref:`RID<class_RID>` body, :ref:`Callable<class_Callable>` callable, :ref:`Variant<class_Variant>` userdata=null **)**
 
-如果对象允许的话，设置用于计算该对象物理的函数（参见 :ref:`body_set_omit_force_integration<class_PhysicsServer3D_method_body_set_omit_force_integration>`\ ）。
+如果对象允许的话，设置用于计算该对象物理的函数（见 :ref:`body_set_omit_force_integration<class_PhysicsServer3D_method_body_set_omit_force_integration>`\ ）。力的积分函数有 2 个参数：
 
-力的积分函数有 2 个参数：
+\ ``state`` — :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` 用于检索和修改物体的状态。
 
-\ ``state:`` :ref:`PhysicsDirectBodyState3D<class_PhysicsDirectBodyState3D>` 用于检索和修改物体的状态。
-
-\ ``userdata:`` 可选的用户数据，如果在调用 ``body_set_force_integration_callback`` 时被传递。
+\ ``userdata`` — 可选的用户数据，如果在调用 :ref:`body_set_force_integration_callback<class_PhysicsServer3D_method_body_set_force_integration_callback>` 时被传递。
 
 .. rst-class:: classref-item-separator
 
@@ -2629,7 +2627,7 @@ void **body_set_shape_disabled** **(** :ref:`RID<class_RID>` body, :ref:`int<cla
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2691,7 +2689,7 @@ void **body_set_state** **(** :ref:`RID<class_RID>` body, :ref:`BodyState<enum_P
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2705,7 +2703,7 @@ void **body_set_state** **(** :ref:`RID<class_RID>` body, :ref:`BodyState<enum_P
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2719,7 +2717,7 @@ void **body_set_state** **(** :ref:`RID<class_RID>` body, :ref:`BodyState<enum_P
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2757,7 +2755,7 @@ void **cone_twist_joint_set_param** **(** :ref:`RID<class_RID>` joint, :ref:`Con
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2771,7 +2769,7 @@ void **cone_twist_joint_set_param** **(** :ref:`RID<class_RID>` joint, :ref:`Con
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2785,7 +2783,7 @@ void **cone_twist_joint_set_param** **(** :ref:`RID<class_RID>` joint, :ref:`Con
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2871,7 +2869,7 @@ void **generic_6dof_joint_set_param** **(** :ref:`RID<class_RID>` joint, Vector3
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2933,7 +2931,7 @@ void **joint_clear** **(** :ref:`RID<class_RID>` joint **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -2947,7 +2945,7 @@ void **joint_clear** **(** :ref:`RID<class_RID>` joint **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3009,7 +3007,7 @@ void **joint_make_cone_twist** **(** :ref:`RID<class_RID>` joint, :ref:`RID<clas
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3023,7 +3021,7 @@ void **joint_make_generic_6dof** **(** :ref:`RID<class_RID>` joint, :ref:`RID<cl
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3037,7 +3035,7 @@ void **joint_make_hinge** **(** :ref:`RID<class_RID>` joint, :ref:`RID<class_RID
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3051,7 +3049,7 @@ void **joint_make_pin** **(** :ref:`RID<class_RID>` joint, :ref:`RID<class_RID>`
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3065,7 +3063,7 @@ void **joint_make_slider** **(** :ref:`RID<class_RID>` joint, :ref:`RID<class_RI
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3163,7 +3161,7 @@ void **pin_joint_set_param** **(** :ref:`RID<class_RID>` joint, :ref:`PinJointPa
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3249,7 +3247,7 @@ void **slider_joint_set_param** **(** :ref:`RID<class_RID>` joint, :ref:`SliderJ
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3335,7 +3333,7 @@ void **space_set_param** **(** :ref:`RID<class_RID>` space, :ref:`SpaceParameter
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -3349,12 +3347,12 @@ void **space_set_param** **(** :ref:`RID<class_RID>` space, :ref:`SpaceParameter
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

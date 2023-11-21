@@ -14,8 +14,8 @@ Transform3D
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于 3D 线性变换的 3×4 矩阵（3 行 4 列），可以表示平移、旋转、缩放等变换，由 :ref:`basis<class_Transform3D_property_basis>`\ （前三列）和 :ref:`origin<class_Transform3D_property_origin>` 的 :ref:`Vector3<class_Vector3>`\ （最后一列）组成。
 
@@ -23,12 +23,12 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`数学文档索引 <../tutorials/math/index>`
 
@@ -44,8 +44,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -114,8 +114,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -146,8 +146,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Transform3D_constant_IDENTITY:
 
@@ -187,8 +187,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Transform3D_property_basis:
 
@@ -216,8 +216,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Transform3D_constructor_Transform3D:
 
@@ -273,8 +273,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Transform3D_method_affine_inverse:
 
@@ -282,7 +282,7 @@ Method Descriptions
 
 :ref:`Transform3D<class_Transform3D>` **affine_inverse** **(** **)** |const|
 
-返回该变换的逆，假设变换由旋转、缩放和平移组成。
+假设该基可逆（必须具有非零行列式），返回该变换的逆。
 
 .. rst-class:: classref-item-separator
 
@@ -306,7 +306,7 @@ Method Descriptions
 
 :ref:`Transform3D<class_Transform3D>` **inverse** **(** **)** |const|
 
-返回变换的反值，假设该变换是由旋转和平移组成的（没有缩放，对有缩放的变换使用 :ref:`affine_inverse<class_Transform3D_method_affine_inverse>`\ ）。
+返回变换的逆，假设该变换的基是正交的（即旋转/反射可以，缩放/倾斜不行）。使用 :ref:`affine_inverse<class_Transform3D_method_affine_inverse>` 进行非正交变换（例如缩放）。
 
 .. rst-class:: classref-item-separator
 
@@ -318,7 +318,7 @@ Method Descriptions
 
 :ref:`bool<class_bool>` **is_equal_approx** **(** :ref:`Transform3D<class_Transform3D>` xform **)** |const|
 
-如果该变换和 ``xform`` 近似相等，则返回 ``true``\ ，确定近似相等的方法是在每个分量上调用 ``is_equal_approx``\ 。
+如果通过在每个分量上运行 :ref:`@GlobalScope.is_equal_approx<class_@GlobalScope_method_is_equal_approx>`\ ，该变换和 ``xform`` 近似相等，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -466,8 +466,8 @@ Method Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Transform3D_operator_neq_Transform3D:
 
@@ -549,7 +549,7 @@ Operator Descriptions
 
 :ref:`Transform3D<class_Transform3D>` **operator *** **(** :ref:`float<class_float>` right **)**
 
-这个运算符对该 **Transform3D** 的所有分量进行乘运算，包括原点向量，进行统一缩放。
+该运算符将 **Transform3D** 的所有分量相乘，包括 :ref:`origin<class_Transform3D_property_origin>` 向量，从而对其进行统一缩放。
 
 .. rst-class:: classref-item-separator
 
@@ -561,7 +561,7 @@ Operator Descriptions
 
 :ref:`Transform3D<class_Transform3D>` **operator *** **(** :ref:`int<class_int>` right **)**
 
-这个运算符对该 **Transform3D** 的所有分量进行乘运算，包括原点向量，进行统一缩放。
+该运算符将 **Transform3D** 的所有分量相乘，包括 :ref:`origin<class_Transform3D_property_origin>` 向量，从而对其进行统一缩放。
 
 .. rst-class:: classref-item-separator
 
@@ -577,10 +577,10 @@ Operator Descriptions
 
 \ **注意：**\ 由于浮点数精度误差，请考虑改用 :ref:`is_equal_approx<class_Transform3D_method_is_equal_approx>`\ ，会更可靠。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

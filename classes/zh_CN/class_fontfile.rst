@@ -10,14 +10,14 @@
 FontFile
 ========
 
-**Inherits:** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Font<class_Font>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 存放字体源数据和预渲染字形的缓存，从动态字体或位图字体导入。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **FontFile** 包含了一组字形，代表从字体文件中导入的 Unicode 字符，还包含了光栅化字形的缓存，以及一组备用的回退 :ref:`Font<class_Font>`\ 。
 
@@ -56,10 +56,17 @@ Description
 
 
 
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -72,6 +79,8 @@ Properties
    | :ref:`PackedByteArray<class_PackedByteArray>`                   | :ref:`data<class_FontFile_property_data>`                                                             | ``PackedByteArray()`` |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`int<class_int>`                                           | :ref:`fixed_size<class_FontFile_property_fixed_size>`                                                 | ``0``                 |
+   +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+-----------------------+
+   | :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>`   | :ref:`fixed_size_scale_mode<class_FontFile_property_fixed_size_scale_mode>`                           | ``0``                 |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+-----------------------+
    | :ref:`String<class_String>`                                     | :ref:`font_name<class_FontFile_property_font_name>`                                                   | ``""``                |
    +-----------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+-----------------------+
@@ -104,8 +113,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -248,8 +257,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_FontFile_property_allow_system_fallback:
 
@@ -314,6 +323,23 @@ Property Descriptions
 - :ref:`int<class_int>` **get_fixed_size** **(** **)**
 
 字体大小，仅用于位图字体。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_FontFile_property_fixed_size_scale_mode:
+
+.. rst-class:: classref-property
+
+:ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **fixed_size_scale_mode** = ``0``
+
+.. rst-class:: classref-property-setget
+
+- void **set_fixed_size_scale_mode** **(** :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` value **)**
+- :ref:`FixedSizeScaleMode<enum_TextServer_FixedSizeScaleMode>` **get_fixed_size_scale_mode** **(** **)**
+
+缩放模式，只有 :ref:`fixed_size<class_FontFile_property_fixed_size>` 大于零的位图字体会使用。
 
 .. rst-class:: classref-item-separator
 
@@ -563,8 +589,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_FontFile_method_clear_cache:
 
@@ -732,7 +758,7 @@ void **clear_textures** **(** :ref:`int<class_int>` cache_index, :ref:`Vector2i<
 
 :ref:`int<class_int>` **get_extra_spacing** **(** :ref:`int<class_int>` cache_index, :ref:`SpacingType<enum_TextServer_SpacingType>` spacing **)** |const|
 
-Returns spacing for ``spacing`` (see :ref:`SpacingType<enum_TextServer_SpacingType>`) in pixels (not relative to the font size).
+返回 ``spacing`` 的间距（见 :ref:`SpacingType<enum_TextServer_SpacingType>`\ ），单位为像素（与字体大小无关）。
 
 .. rst-class:: classref-item-separator
 
@@ -744,7 +770,7 @@ Returns spacing for ``spacing`` (see :ref:`SpacingType<enum_TextServer_SpacingTy
 
 :ref:`int<class_int>` **get_face_index** **(** :ref:`int<class_int>` cache_index **)** |const|
 
-Returns an active face index in the TrueType / OpenType collection.
+返回 TrueType / OpenType 集合中的活动字体索引。
 
 .. rst-class:: classref-item-separator
 
@@ -914,7 +940,7 @@ Returns an active face index in the TrueType / OpenType collection.
 
 :ref:`Vector2i[]<class_Vector2i>` **get_size_cache_list** **(** :ref:`int<class_int>` cache_index **)** |const|
 
-返回缓存中字体大小的列表。每个大小都是由字体大小和轮廓大小组成的 ``Vector2i``\ 。
+返回缓存中字体大小的列表。每个大小都是由字体大小和轮廓大小组成的 :ref:`Vector2i<class_Vector2i>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1198,7 +1224,7 @@ void **set_embolden** **(** :ref:`int<class_int>` cache_index, :ref:`float<class
 
 void **set_extra_spacing** **(** :ref:`int<class_int>` cache_index, :ref:`SpacingType<enum_TextServer_SpacingType>` spacing, :ref:`int<class_int>` value **)**
 
-Sets the spacing for ``spacing`` (see :ref:`SpacingType<enum_TextServer_SpacingType>`) to ``value`` in pixels (not relative to the font size).
+将 ``spacing`` 的间距（见 :ref:`SpacingType<enum_TextServer_SpacingType>`\ ）设置为 ``value``\ ，单位为像素（与字体大小无关）。
 
 .. rst-class:: classref-item-separator
 
@@ -1358,10 +1384,10 @@ void **set_variation_coordinates** **(** :ref:`int<class_int>` cache_index, :ref
 
 为指定的字体缓存条目设置变体坐标。有关详细信息，请参阅 :ref:`Font.get_supported_variation_list<class_Font_method_get_supported_variation_list>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

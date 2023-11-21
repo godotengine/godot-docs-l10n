@@ -10,35 +10,35 @@
 NavigationServer3D
 ==================
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 用于访问低阶 3D 导航的服务器接口。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-NavigationServer3D is the server that handles navigation maps, regions and agents. It does not handle A\* navigation from :ref:`AStar3D<class_AStar3D>`.
+NavigationServer3D 是处理导航地图、区块、代理的服务器。它不处理来自 :ref:`AStar3D<class_AStar3D>` 的 A\* 导航。
 
-Maps are made up of regions, which are made of navigation meshes. Together, they define the navigable areas in the 3D world.
+地图由区块组成，区块由导航网格组成。它们共同定义了 3D 空间中的可达区域。
 
-\ **Note:** Most **NavigationServer3D** changes take effect after the next physics frame and not immediately. This includes all changes made to maps, regions or agents by navigation-related nodes in the scene tree or made through scripts.
+\ **注意：**\ 大多数 **NavigationServer3D** 的更改都是在下一个物理帧进行的，不会立即生效。包括所有对地图、区块、代理的更改，无论是通过场景树中导航相关的节点作出的更改，还是通过脚本作出的更改。
 
-For two regions to be connected to each other, they must share a similar edge. An edge is considered connected to another if both of its two vertices are at a distance less than ``edge_connection_margin`` to the respective other edge's vertex.
+两个区块必须共享一条相似的边才能相连。如果一条边的两个顶点与另一条边上相应顶点的距离都小于 ``edge_connection_margin``\ ，那么就会认为这两条边是相连的。
 
-You may assign navigation layers to regions with :ref:`region_set_navigation_layers<class_NavigationServer3D_method_region_set_navigation_layers>`, which then can be checked upon when requesting a path with :ref:`map_get_path<class_NavigationServer3D_method_map_get_path>`. This can be used to allow or deny certain areas for some objects.
+可以使用 :ref:`region_set_navigation_layers<class_NavigationServer3D_method_region_set_navigation_layers>` 为区块分配导航层，使用 :ref:`map_get_path<class_NavigationServer3D_method_map_get_path>` 请求路径时会对导航层进行检查。可用于针对某些对象允许或禁止特定的区域。
 
-To use the collision avoidance system, you may use agents. You can set an agent's target velocity, then the servers will emit a callback with a modified velocity.
+使用碰撞躲避系统就需要使用代理。你可以为代理设置目标速度，然后服务器就会发出回调，提供修改后的速度。
 
-\ **Note:** The collision avoidance system ignores regions. Using the modified velocity directly may move an agent outside of the traversable area. This is a limitation of the collision avoidance system, any more complex situation may require the use of the physics engine.
+\ **注意：**\ 碰撞躲避系统会忽略区块。直接使用修改后的速度可能会将代理移动到可达区域之外。这是碰撞躲避系统的缺陷，更复杂的场合可能需要使用物理引擎。
 
-This server keeps tracks of any call and executes them during the sync phase. This means that you can request any change to the map, using any thread, without worrying.
+服务器会对所有调用进行跟踪，并在同步阶段执行。这意味着你可以放心地从任何线程请求对地图作出任何修改。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `3D 导航网格演示 <https://godotengine.org/asset-library/asset/124>`__
 
@@ -46,8 +46,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -290,8 +290,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_NavigationServer3D_signal_avoidance_debug_changed:
 
@@ -331,8 +331,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_NavigationServer3D_ProcessInfo:
 
@@ -418,8 +418,8 @@ enum **ProcessInfo**:
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_NavigationServer3D_method_agent_create:
 
@@ -513,7 +513,7 @@ void **agent_set_avoidance_callback** **(** :ref:`RID<class_RID>` agent, :ref:`C
 
 void **agent_set_avoidance_enabled** **(** :ref:`RID<class_RID>` agent, :ref:`bool<class_bool>` enabled **)**
 
-If ``enabled`` is ``true``, the provided ``agent`` calculates avoidance.
+如果 ``enabled`` 为 ``true``\ ，则提供的 ``agent`` 会计算避障。
 
 .. rst-class:: classref-item-separator
 
@@ -735,7 +735,7 @@ void **bake_from_source_geometry_data** **(** :ref:`NavigationMesh<class_Navigat
 
 void **bake_from_source_geometry_data_async** **(** :ref:`NavigationMesh<class_NavigationMesh>` navigation_mesh, :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>` source_geometry_data, :ref:`Callable<class_Callable>` callback=Callable() **)**
 
-Bakes the provided ``navigation_mesh`` with the data from the provided ``source_geometry_data`` as an async task running on a background thread. After the process is finished the optional ``callback`` will be called.
+使用提供的 ``source_geometry_data`` 中的数据烘焙提供的 ``navigation_mesh``\ ，并作为在后台线程上运行的异步任务。该过程完成后，将调用可选的 ``callback``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -807,7 +807,7 @@ void **free_rid** **(** :ref:`RID<class_RID>` rid **)**
 
 :ref:`bool<class_bool>` **link_get_enabled** **(** :ref:`RID<class_RID>` link **)** |const|
 
-Returns ``true`` if the specified ``link`` is enabled.
+如果指定的 ``link`` 已启用，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -927,7 +927,7 @@ void **link_set_bidirectional** **(** :ref:`RID<class_RID>` link, :ref:`bool<cla
 
 void **link_set_enabled** **(** :ref:`RID<class_RID>` link, :ref:`bool<class_bool>` enabled **)**
 
-If ``enabled`` is ``true``, the specified ``link`` will contribute to its current navigation map.
+如果 ``enabled`` 为 ``true``\ ，则指定的 ``link`` 会在它的当前导航地图中生效。
 
 .. rst-class:: classref-item-separator
 
@@ -1317,7 +1317,7 @@ void **map_set_up** **(** :ref:`RID<class_RID>` map, :ref:`Vector3<class_Vector3
 
 void **map_set_use_edge_connections** **(** :ref:`RID<class_RID>` map, :ref:`bool<class_bool>` enabled **)**
 
-Set the navigation ``map`` edge connection use. If ``enabled`` is ``true``, the navigation map allows navigation regions to use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin.
+设置导航地图 ``map`` 的边缘连接使用情况。如果 ``enabled`` 为 ``true``\ ，则导航地图允许导航区块使用边缘连接与位于导航地图边缘连接边距范围内的其他导航区块相连接。
 
 .. rst-class:: classref-item-separator
 
@@ -1389,7 +1389,7 @@ Set the navigation ``map`` edge connection use. If ``enabled`` is ``true``, the 
 
 void **obstacle_set_avoidance_enabled** **(** :ref:`RID<class_RID>` obstacle, :ref:`bool<class_bool>` enabled **)**
 
-If ``enabled`` is ``true``, the provided ``obstacle`` affects avoidance using agents.
+如果 ``enabled`` 为 ``true``\ ，则提供的障碍物 ``obstacle`` 会影响使用代理的避障。
 
 .. rst-class:: classref-item-separator
 
@@ -1537,9 +1537,9 @@ void **query_path** **(** :ref:`NavigationPathQueryParameters3D<class_Navigation
 
 void **region_bake_navigation_mesh** **(** :ref:`NavigationMesh<class_NavigationMesh>` navigation_mesh, :ref:`Node<class_Node>` root_node **)**
 
-Bakes the ``navigation_mesh`` with bake source geometry collected starting from the ``root_node``.
+使用从 ``root_node`` 开始收集的烘焙源几何体来烘焙 ``navigation_mesh``\ 。
 
-\ *Deprecated.* This function is deprecated due to core threading changes. To upgrade existing code, first create a :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>` resource. Use this resource with :ref:`parse_source_geometry_data<class_NavigationServer3D_method_parse_source_geometry_data>` to parse the SceneTree for nodes that should contribute to the navigation mesh baking. The SceneTree parsing needs to happen on the main thread. After the parsing is finished use the resource with :ref:`bake_from_source_geometry_data<class_NavigationServer3D_method_bake_from_source_geometry_data>` to bake a navigation mesh.
+\ *已弃用。* 由于核心线程更改，该函数已弃用。要更新现有代码，请先创建一个 :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>` 资源。将该资源与 :ref:`parse_source_geometry_data<class_NavigationServer3D_method_parse_source_geometry_data>` 结合使用来解析 SceneTree 以查找有助于导航网格烘焙的节点。SceneTree 解析需要在主线程上进行。解析完成后，请在调用 :ref:`bake_from_source_geometry_data<class_NavigationServer3D_method_bake_from_source_geometry_data>` 时使用该资源对导航网格进行烘焙。
 
 .. rst-class:: classref-item-separator
 
@@ -1599,7 +1599,7 @@ Bakes the ``navigation_mesh`` with bake source geometry collected starting from 
 
 :ref:`bool<class_bool>` **region_get_enabled** **(** :ref:`RID<class_RID>` region **)** |const|
 
-Returns ``true`` if the specified ``region`` is enabled.
+如果指定的 ``region`` 已启用，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1699,7 +1699,7 @@ Returns ``true`` if the specified ``region`` is enabled.
 
 void **region_set_enabled** **(** :ref:`RID<class_RID>` region, :ref:`bool<class_bool>` enabled **)**
 
-If ``enabled`` is ``true``, the specified ``region`` will contribute to its current navigation map.
+如果 ``enabled`` 为 ``true``\ ，则指定的 ``region`` 会在它的当前导航地图中生效。
 
 .. rst-class:: classref-item-separator
 
@@ -1795,7 +1795,7 @@ void **region_set_travel_cost** **(** :ref:`RID<class_RID>` region, :ref:`float<
 
 void **region_set_use_edge_connections** **(** :ref:`RID<class_RID>` region, :ref:`bool<class_bool>` enabled **)**
 
-If ``enabled`` is ``true``, the navigation ``region`` will use edge connections to connect with other navigation regions within proximity of the navigation map edge connection margin.
+如果 ``enabled`` 为 ``true``\ ，则导航区块 ``region`` 将使用边缘连接来与位于导航地图边缘连接边距范围内的其他导航区块相连接。
 
 .. rst-class:: classref-item-separator
 
@@ -1821,10 +1821,10 @@ void **set_debug_enabled** **(** :ref:`bool<class_bool>` enabled **)**
 
 如果为 ``true``\ ，则该 NavigationServer 启用了调试模式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

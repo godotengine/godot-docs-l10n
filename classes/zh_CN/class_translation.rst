@@ -10,23 +10,23 @@
 Translation
 ===========
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`OptimizedTranslation<class_OptimizedTranslation>`
+**派生：** :ref:`OptimizedTranslation<class_OptimizedTranslation>`
 
 语言翻译，能够将一组字符串映射到对应的翻译。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **Translation** 是可以按需加载和卸载的资源，能够将一组字符串映射到对应的翻译。还为复数形式提供了便捷方法。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`将游戏国际化 <../tutorials/i18n/internationalizing_games>`
 
@@ -34,8 +34,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,33 +46,33 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`StringName<class_StringName>`               | :ref:`_get_message<class_Translation_method__get_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` context **)** |virtual| |const|                                                                                                |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`StringName<class_StringName>`               | :ref:`_get_plural_message<class_Translation_method__get_plural_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` src_plural_message, :ref:`int<class_int>` n, :ref:`StringName<class_StringName>` context **)** |virtual| |const| |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`add_message<class_Translation_method_add_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` xlated_message, :ref:`StringName<class_StringName>` context="" **)**                                                             |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`add_plural_message<class_Translation_method_add_plural_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`PackedStringArray<class_PackedStringArray>` xlated_messages, :ref:`StringName<class_StringName>` context="" **)**                                |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                              | :ref:`erase_message<class_Translation_method_erase_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` context="" **)**                                                                                                             |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`StringName<class_StringName>`               | :ref:`get_message<class_Translation_method_get_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` context="" **)** |const|                                                                                                         |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                             | :ref:`get_message_count<class_Translation_method_get_message_count>` **(** **)** |const|                                                                                                                                                                                             |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_message_list<class_Translation_method_get_message_list>` **(** **)** |const|                                                                                                                                                                                               |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`StringName<class_StringName>`               | :ref:`get_plural_message<class_Translation_method_get_plural_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` src_plural_message, :ref:`int<class_int>` n, :ref:`StringName<class_StringName>` context="" **)** |const|          |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_translated_message_list<class_Translation_method_get_translated_message_list>` **(** **)** |const|                                                                                                                                                                         |
-   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`StringName<class_StringName>`               | :ref:`_get_message<class_Translation_private_method__get_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` context **)** |virtual| |const|                                                                                                |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`StringName<class_StringName>`               | :ref:`_get_plural_message<class_Translation_private_method__get_plural_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` src_plural_message, :ref:`int<class_int>` n, :ref:`StringName<class_StringName>` context **)** |virtual| |const| |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                              | :ref:`add_message<class_Translation_method_add_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` xlated_message, :ref:`StringName<class_StringName>` context="" **)**                                                                     |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                              | :ref:`add_plural_message<class_Translation_method_add_plural_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`PackedStringArray<class_PackedStringArray>` xlated_messages, :ref:`StringName<class_StringName>` context="" **)**                                        |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                              | :ref:`erase_message<class_Translation_method_erase_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` context="" **)**                                                                                                                     |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`StringName<class_StringName>`               | :ref:`get_message<class_Translation_method_get_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` context="" **)** |const|                                                                                                                 |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                             | :ref:`get_message_count<class_Translation_method_get_message_count>` **(** **)** |const|                                                                                                                                                                                                     |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_message_list<class_Translation_method_get_message_list>` **(** **)** |const|                                                                                                                                                                                                       |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`StringName<class_StringName>`               | :ref:`get_plural_message<class_Translation_method_get_plural_message>` **(** :ref:`StringName<class_StringName>` src_message, :ref:`StringName<class_StringName>` src_plural_message, :ref:`int<class_int>` n, :ref:`StringName<class_StringName>` context="" **)** |const|                  |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`get_translated_message_list<class_Translation_method_get_translated_message_list>` **(** **)** |const|                                                                                                                                                                                 |
+   +---------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -80,8 +80,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Translation_property_locale:
 
@@ -102,10 +102,10 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_Translation_method__get_message:
+.. _class_Translation_private_method__get_message:
 
 .. rst-class:: classref-method
 
@@ -117,7 +117,7 @@ Method Descriptions
 
 ----
 
-.. _class_Translation_method__get_plural_message:
+.. _class_Translation_private_method__get_plural_message:
 
 .. rst-class:: classref-method
 
@@ -227,10 +227,10 @@ void **erase_message** **(** :ref:`StringName<class_StringName>` src_message, :r
 
 返回所有信息（翻译后的文本）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

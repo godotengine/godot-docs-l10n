@@ -10,16 +10,16 @@
 InputEventKey
 =============
 
-**Inherits:** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`InputEventWithModifiers<class_InputEventWithModifiers>` **<** :ref:`InputEventFromWindow<class_InputEventFromWindow>` **<** :ref:`InputEvent<class_InputEvent>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 代表键盘上的某个按键被按下或松开。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-键盘上的按键操作对应的输入事件。支持按键按下、释放和 :ref:`echo<class_InputEventKey_property_echo>` 事件。还可以在 :ref:`Node._unhandled_key_input<class_Node_method__unhandled_key_input>` 收到。
+键盘上的按键操作对应的输入事件。支持按键按下、释放和 :ref:`echo<class_InputEventKey_property_echo>` 事件。还可以在 :ref:`Node._unhandled_key_input<class_Node_private_method__unhandled_key_input>` 收到。
 
 \ **注意：**\ 从键盘上接收的事件通常设置了所有属性。事件映射应该只设置 :ref:`keycode<class_InputEventKey_property_keycode>`\ 、\ :ref:`physical_keycode<class_InputEventKey_property_physical_keycode>`\ 、\ :ref:`unicode<class_InputEventKey_property_unicode>` 的其中之一。
 
@@ -27,15 +27,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 InputEvent <../tutorials/inputs/inputevent>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_InputEventKey_property_echo:
 
@@ -167,9 +167,32 @@ Property Descriptions
 - void **set_physical_keycode** **(** :ref:`Key<enum_@GlobalScope_Key>` value **)**
 - :ref:`Key<enum_@GlobalScope_Key>` **get_physical_keycode** **(** **)**
 
-表示 101/102 键美式 QWERTY 键盘上某个键的物理位置，它对应于 :ref:`Key<enum_@GlobalScope_Key>` 常量之一。
+代表按键在 101/102 键的美式键盘上的物理位置，对应一个 :ref:`Key<enum_@GlobalScope_Key>` 常量。
 
-要获得 **InputEventKey** 的人类可读表示，请使用 ``OS.get_keycode_string(event.keycode)``\ ，其中 ``event`` 是 **InputEventKey**\ 。
+要获取 **InputEventKey** 的人类可读表示，请搭配使用 :ref:`OS.get_keycode_string<class_OS_method_get_keycode_string>` 和 :ref:`DisplayServer.keyboard_get_keycode_from_physical<class_DisplayServer_method_keyboard_get_keycode_from_physical>`\ ：
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    func _input(event):
+        if event is InputEventKey:
+            var keycode = DisplayServer.keyboard_get_keycode_from_physical(event.physical_keycode)
+            print(OS.get_keycode_string(keycode))
+
+ .. code-tab:: csharp
+
+    public override void _Input(InputEvent @event)
+    {
+        if (@event is InputEventKey inputEventKey)
+        {
+            var keycode = DisplayServer.KeyboardGetKeycodeFromPhysical(inputEventKey.PhysicalKeycode);
+            GD.Print(OS.GetKeycodeString(keycode));
+        }
+    }
+
+
 
 .. rst-class:: classref-item-separator
 
@@ -211,8 +234,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_InputEventKey_method_as_text_key_label:
 
@@ -288,10 +311,10 @@ Method Descriptions
 
 要获得带有修饰符的 **InputEventKey** 的人类可读表示，请使用 ``OS.get_keycode_string(event.get_physical_keycode_with_modifiers())``\ ，其中 ``event`` 是 **InputEventKey**\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

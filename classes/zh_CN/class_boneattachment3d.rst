@@ -10,21 +10,21 @@
 BoneAttachment3D
 ================
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 对父级 :ref:`Skeleton3D<class_Skeleton3D>` 中某个骨骼的 3D 变换进行复制或覆盖的节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 这个节点能够选中 :ref:`Skeleton3D<class_Skeleton3D>` 中的某个骨骼并附加到这个骨骼上。这样 **BoneAttachment3D** 节点就能够动态复制或覆盖所选骨骼的 3D 变换。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -39,8 +39,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -63,8 +63,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_BoneAttachment3D_property_bone_idx:
 
@@ -119,8 +119,8 @@ BoneAttachment3D 节点是否将覆盖它所附着到的骨骼的骨骼姿势。
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_BoneAttachment3D_method_get_external_skeleton:
 
@@ -178,10 +178,10 @@ void **set_use_external_skeleton** **(** :ref:`bool<class_bool>` use_external_sk
 
 设置该 BoneAttachment3D 节点是否将使用外部 :ref:`Skeleton3D<class_Skeleton3D>` 节点，而不是尝试使用其父节点作为 :ref:`Skeleton3D<class_Skeleton3D>`\ 。当设置为 ``true`` 时，BoneAttachment3D 节点将使用 :ref:`set_external_skeleton<class_BoneAttachment3D_method_set_external_skeleton>` 中设置的外部 :ref:`Skeleton3D<class_Skeleton3D>` 节点。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

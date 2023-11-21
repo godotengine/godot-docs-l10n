@@ -10,27 +10,27 @@
 VisibleOnScreenNotifier3D
 =========================
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`VisibleOnScreenEnabler3D<class_VisibleOnScreenEnabler3D>`
+**派生：** :ref:`VisibleOnScreenEnabler3D<class_VisibleOnScreenEnabler3D>`
 
-大约在节点在屏幕上可见时进行检测。
+3D 空间的盒形区块，用于检测其在屏幕上是否可见。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-VisibleOnScreenNotifier3D 检测它何时在该屏幕上可见。它还会在其边界矩形进入或退出该屏幕或 :ref:`Camera3D<class_Camera3D>` 的视图时发出通知。
+:ref:`VisibleOnScreenEnabler3D<class_VisibleOnScreenEnabler3D>` 表示 3D 空间的盒形区块。当该区块的任何部分在屏幕或 :ref:`Camera3D<class_Camera3D>` 视图中可见时，它将发出 :ref:`screen_entered<class_VisibleOnScreenNotifier3D_signal_screen_entered>` 信号；同样，当其任何部分都不可见时，它将发出 :ref:`screen_exited<class_VisibleOnScreenNotifier3D_signal_screen_exited>` 信号。
 
-如果希望节点在退出屏幕时自动禁用，请改用 :ref:`VisibleOnScreenEnabler3D<class_VisibleOnScreenEnabler3D>`\ 。
+如果你希望当该区块在屏幕上可见时自动启用节点，请使用 :ref:`VisibleOnScreenEnabler3D<class_VisibleOnScreenEnabler3D>`\ 。
 
-\ **注意：**\ VisibleOnScreenNotifier3D 使用渲染剔除代码来确定它是否在屏幕上可见，这也意味着它的 :ref:`Node3D.visible<class_Node3D_property_visible>` 必须为 ``true`` 时才能正常工作。
+\ **注意：**\ **VisibleOnScreenNotifier3D** 使用近似启发式，不考虑墙壁和其他遮挡，除非使用遮挡剔除。除非将 :ref:`Node3D.visible<class_Node3D_property_visible>` 设置为 ``true``\ ，否则它也不会起作用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -41,8 +41,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -57,8 +57,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_VisibleOnScreenNotifier3D_signal_screen_entered:
 
@@ -66,7 +66,7 @@ Signals
 
 **screen_entered** **(** **)**
 
-当该 VisibleOnScreenNotifier3D 进入屏幕时发出。
+当该 **VisibleOnScreenNotifier3D** 进入屏幕时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -78,7 +78,7 @@ Signals
 
 **screen_exited** **(** **)**
 
-当该 VisibleOnScreenNotifier3D 退出屏幕时发出。
+当该 **VisibleOnScreenNotifier3D** 退出屏幕时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -86,8 +86,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisibleOnScreenNotifier3D_property_aabb:
 
@@ -100,7 +100,7 @@ Property Descriptions
 - void **set_aabb** **(** :ref:`AABB<class_AABB>` value **)**
 - :ref:`AABB<class_AABB>` **get_aabb** **(** **)**
 
-该 VisibleOnScreenNotifier3D 的边界框。
+该 **VisibleOnScreenNotifier3D** 的边界框。
 
 .. rst-class:: classref-section-separator
 
@@ -108,8 +108,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_VisibleOnScreenNotifier3D_method_is_on_screen:
 
@@ -119,12 +119,12 @@ Method Descriptions
 
 如果为 ``true``\ ，则边界框在屏幕上。
 
-\ **注意：**\ 一旦添加到场景树中，需要一帧来计算节点的可见性，所以这个方法将在它被实例化后立即返回 ``false``\ ，即使屏幕在绘制过程中。
+\ **注意：**\ **VisibleOnScreenNotifier3D** 被添加到场景树后需要一帧来评估其可见性，因此该方法在实例化后将始终返回 ``false`` 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

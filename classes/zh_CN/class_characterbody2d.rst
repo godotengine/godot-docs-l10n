@@ -10,14 +10,14 @@
 CharacterBody2D
 ===============
 
-**Inherits:** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`PhysicsBody2D<class_PhysicsBody2D>` **<** :ref:`CollisionObject2D<class_CollisionObject2D>` **<** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 专门用于通过脚本移动的角色的 2D 物理物体。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **CharacterBody2D** 是针对用户控制的物理体的特化类。它们不会受到物理的影响，但会影响路径上的其他物理体。除了由 :ref:`PhysicsBody2D.move_and_collide<class_PhysicsBody2D_method_move_and_collide>` 提供的常见的碰撞检测之外，它们主要用于提供移动对象的高阶 API，能够检测墙壁和斜坡（\ :ref:`move_and_slide<class_CharacterBody2D_method_move_and_slide>` 方法）。因此适用于需要高度可配置的物理体，因为通常是用户控制的角色，所以必须按照特定的方式移动、与世界发生碰撞。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`运动学角色（2D） <../tutorials/physics/kinematic_character_2d>`
 
@@ -38,8 +38,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -78,8 +78,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -128,8 +128,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_CharacterBody2D_MotionMode:
 
@@ -193,8 +193,8 @@ enum **PlatformOnLeave**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CharacterBody2D_property_floor_block_on_wall:
 
@@ -423,7 +423,7 @@ Property Descriptions
 - void **set_up_direction** **(** :ref:`Vector2<class_Vector2>` value **)**
 - :ref:`Vector2<class_Vector2>` **get_up_direction** **(** **)**
 
-指向上方的向量，用于在调用 :ref:`move_and_slide<class_CharacterBody2D_method_move_and_slide>` 时决定什么是墙壁、什么是地板（或者天花板）。默认为 ``Vector2.UP``\ 。因为会对该向量进行归一化，所以不能等于 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`\ ，如果你想要让所有碰撞都被报告为墙壁，请考虑使用 :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` 作为 :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`\ 。
+指向上方的向量，用于在调用 :ref:`move_and_slide<class_CharacterBody2D_method_move_and_slide>` 时决定什么是墙壁、什么是地板（或者天花板）。默认为 :ref:`Vector2.UP<class_Vector2_constant_UP>`\ 。因为会对该向量进行归一化，所以不能等于 :ref:`Vector2.ZERO<class_Vector2_constant_ZERO>`\ ，如果你想要让所有碰撞都被报告为墙壁，请考虑使用 :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` 作为 :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -457,7 +457,7 @@ Property Descriptions
 - void **set_wall_min_slide_angle** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_wall_min_slide_angle** **(** **)**
 
-该物体遇到斜坡时，允许滑动的最小角度（单位为弧度）。默认值等于 15 度。仅在 :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>` 为 :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` 时，该属性才会影响运动。
+该物体遇到斜面时，允许滑动的最小角度（单位为弧度）。默认值等于 15 度。只有在 :ref:`motion_mode<class_CharacterBody2D_property_motion_mode>` 为 :ref:`MOTION_MODE_FLOATING<class_CharacterBody2D_constant_MOTION_MODE_FLOATING>` 时，该属性才会影响运动。
 
 .. rst-class:: classref-section-separator
 
@@ -465,8 +465,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CharacterBody2D_method_apply_floor_snap:
 
@@ -486,7 +486,7 @@ void **apply_floor_snap** **(** **)**
 
 :ref:`float<class_float>` **get_floor_angle** **(** :ref:`Vector2<class_Vector2>` up_direction=Vector2(0, -1) **)** |const|
 
-返回地板在最近一次碰撞点的碰撞角度，依据为 ``up_direction``\ ，默认为 ``Vector2.UP``\ 。该值始终为正数，只有在调用了 :ref:`move_and_slide<class_CharacterBody2D_method_move_and_slide>` 并且 :ref:`is_on_floor<class_CharacterBody2D_method_is_on_floor>` 返回值为 ``true`` 时才有效。
+返回地板在最近一次碰撞点的碰撞角度，依据为 ``up_direction``\ ，默认为 :ref:`Vector2.UP<class_Vector2_constant_UP>`\ 。该值始终为正数，只有在调用了 :ref:`move_and_slide<class_CharacterBody2D_method_move_and_slide>` 并且 :ref:`is_on_floor<class_CharacterBody2D_method_is_on_floor>` 返回值为 ``true`` 时才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -709,10 +709,10 @@ void **apply_floor_snap** **(** **)**
 
 如果该物体发生了碰撞，则返回 ``true``\ ，否则返回 ``false``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

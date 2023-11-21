@@ -10,14 +10,14 @@
 TreeItem
 ========
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 代表 :ref:`Tree<class_Tree>` 中某个项目的内部控件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 :ref:`Tree<class_Tree>` 控件中的单个项目。可以包含其他 **TreeItem** 作为子级，从而创建层级结构。还可以包含文本和按钮。\ **TreeItem** 不是 :ref:`Node<class_Node>`\ ，在 :ref:`Tree<class_Tree>` 内部使用。
 
@@ -27,8 +27,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +45,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -257,8 +257,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TreeItem_TreeCellMode:
 
@@ -312,8 +312,8 @@ enum **TreeCellMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TreeItem_property_collapsed:
 
@@ -387,8 +387,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TreeItem_method_add_button:
 
@@ -890,7 +890,7 @@ void **erase_button** **(** :ref:`int<class_int>` column, :ref:`int<class_int>` 
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -904,7 +904,7 @@ void **erase_button** **(** :ref:`int<class_int>` column, :ref:`int<class_int>` 
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -964,7 +964,7 @@ void **erase_button** **(** :ref:`int<class_int>` column, :ref:`int<class_int>` 
 
 :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` **get_text_overrun_behavior** **(** :ref:`int<class_int>` column **)** |const|
 
-Returns the clipping behavior when the text exceeds the item's bounding rectangle in the given ``column``. By default it is :ref:`TextServer.OVERRUN_TRIM_ELLIPSIS<class_TextServer_constant_OVERRUN_TRIM_ELLIPSIS>`.
+返回当给定 ``column`` 中文本超出项目的边界矩形时的裁剪行为。默认情况下它是 :ref:`TextServer.OVERRUN_TRIM_ELLIPSIS<class_TextServer_constant_OVERRUN_TRIM_ELLIPSIS>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1040,7 +1040,7 @@ Returns the clipping behavior when the text exceeds the item's bounding rectangl
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1226,7 +1226,7 @@ void **set_button_disabled** **(** :ref:`int<class_int>` column, :ref:`int<class
 
 void **set_button_tooltip_text** **(** :ref:`int<class_int>` column, :ref:`int<class_int>` button_index, :ref:`String<class_String>` tooltip **)**
 
-Sets the tooltip text for the button at index ``button_index`` in the given ``column``.
+设置给定 ``column`` 中索引 ``button_index`` 处按钮的工具提示文本。
 
 .. rst-class:: classref-item-separator
 
@@ -1276,7 +1276,7 @@ void **set_custom_as_button** **(** :ref:`int<class_int>` column, :ref:`bool<cla
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1514,7 +1514,7 @@ void **set_structured_text_bidi_override** **(** :ref:`int<class_int>` column, :
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1528,7 +1528,7 @@ void **set_structured_text_bidi_override_options** **(** :ref:`int<class_int>` c
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1588,7 +1588,7 @@ void **set_text_direction** **(** :ref:`int<class_int>` column, :ref:`TextDirect
 
 void **set_text_overrun_behavior** **(** :ref:`int<class_int>` column, :ref:`OverrunBehavior<enum_TextServer_OverrunBehavior>` overrun_behavior **)**
 
-Sets the clipping behavior when the text exceeds the item's bounding rectangle in the given ``column``.
+设置当文本超出给定 ``column`` 中项目的边界矩形时的裁剪行为。
 
 .. rst-class:: classref-item-separator
 
@@ -1614,12 +1614,12 @@ void **uncollapse_tree** **(** **)**
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,74 +10,74 @@
 OpenXRExtensionWrapperExtension
 ===============================
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-Allows clients to implement OpenXR extensions with GDExtension.
+允许客户端使用 GDExtension 实现 OpenXR 扩展。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**OpenXRExtensionWrapperExtension** allows clients to implement OpenXR extensions with GDExtension. The extension should be registered with :ref:`register_extension_wrapper<class_OpenXRExtensionWrapperExtension_method_register_extension_wrapper>`.
+**OpenXRExtensionWrapperExtension** 允许客户端使用 GDExtension 实现 OpenXR 扩展。扩展应该使用 :ref:`register_extension_wrapper<class_OpenXRExtensionWrapperExtension_method_register_extension_wrapper>` 注册。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Dictionary<class_Dictionary>`                 | :ref:`_get_requested_extensions<class_OpenXRExtensionWrapperExtension_method__get_requested_extensions>` **(** **)** |virtual|                                                                |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_before_instance_created<class_OpenXRExtensionWrapperExtension_method__on_before_instance_created>` **(** **)** |virtual|                                                            |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`_on_event_polled<class_OpenXRExtensionWrapperExtension_method__on_event_polled>` **(** const void* event **)** |virtual|                                                                |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_instance_created<class_OpenXRExtensionWrapperExtension_method__on_instance_created>` **(** :ref:`int<class_int>` instance **)** |virtual|                                           |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_instance_destroyed<class_OpenXRExtensionWrapperExtension_method__on_instance_destroyed>` **(** **)** |virtual|                                                                      |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_pre_render<class_OpenXRExtensionWrapperExtension_method__on_pre_render>` **(** **)** |virtual|                                                                                      |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_process<class_OpenXRExtensionWrapperExtension_method__on_process>` **(** **)** |virtual|                                                                                            |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_register_metadata<class_OpenXRExtensionWrapperExtension_method__on_register_metadata>` **(** **)** |virtual|                                                                        |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_session_created<class_OpenXRExtensionWrapperExtension_method__on_session_created>` **(** :ref:`int<class_int>` session **)** |virtual|                                              |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_session_destroyed<class_OpenXRExtensionWrapperExtension_method__on_session_destroyed>` **(** **)** |virtual|                                                                        |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_state_exiting<class_OpenXRExtensionWrapperExtension_method__on_state_exiting>` **(** **)** |virtual|                                                                                |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_state_focused<class_OpenXRExtensionWrapperExtension_method__on_state_focused>` **(** **)** |virtual|                                                                                |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_state_idle<class_OpenXRExtensionWrapperExtension_method__on_state_idle>` **(** **)** |virtual|                                                                                      |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_state_loss_pending<class_OpenXRExtensionWrapperExtension_method__on_state_loss_pending>` **(** **)** |virtual|                                                                      |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_state_ready<class_OpenXRExtensionWrapperExtension_method__on_state_ready>` **(** **)** |virtual|                                                                                    |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_state_stopping<class_OpenXRExtensionWrapperExtension_method__on_state_stopping>` **(** **)** |virtual|                                                                              |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_state_synchronized<class_OpenXRExtensionWrapperExtension_method__on_state_synchronized>` **(** **)** |virtual|                                                                      |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`_on_state_visible<class_OpenXRExtensionWrapperExtension_method__on_state_visible>` **(** **)** |virtual|                                                                                |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                               | :ref:`_set_instance_create_info_and_get_next_pointer<class_OpenXRExtensionWrapperExtension_method__set_instance_create_info_and_get_next_pointer>` **(** void* next_pointer **)** |virtual|   |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                               | :ref:`_set_session_create_and_get_next_pointer<class_OpenXRExtensionWrapperExtension_method__set_session_create_and_get_next_pointer>` **(** void* next_pointer **)** |virtual|               |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                               | :ref:`_set_swapchain_create_info_and_get_next_pointer<class_OpenXRExtensionWrapperExtension_method__set_swapchain_create_info_and_get_next_pointer>` **(** void* next_pointer **)** |virtual| |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                               | :ref:`_set_system_properties_and_get_next_pointer<class_OpenXRExtensionWrapperExtension_method__set_system_properties_and_get_next_pointer>` **(** void* next_pointer **)** |virtual|         |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>` | :ref:`get_openxr_api<class_OpenXRExtensionWrapperExtension_method_get_openxr_api>` **(** **)**                                                                                                |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                                | :ref:`register_extension_wrapper<class_OpenXRExtensionWrapperExtension_method_register_extension_wrapper>` **(** **)**                                                                        |
-   +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>`                 | :ref:`_get_requested_extensions<class_OpenXRExtensionWrapperExtension_private_method__get_requested_extensions>` **(** **)** |virtual|                                                                |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_before_instance_created<class_OpenXRExtensionWrapperExtension_private_method__on_before_instance_created>` **(** **)** |virtual|                                                            |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                             | :ref:`_on_event_polled<class_OpenXRExtensionWrapperExtension_private_method__on_event_polled>` **(** const void* event **)** |virtual|                                                                |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_instance_created<class_OpenXRExtensionWrapperExtension_private_method__on_instance_created>` **(** :ref:`int<class_int>` instance **)** |virtual|                                           |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_instance_destroyed<class_OpenXRExtensionWrapperExtension_private_method__on_instance_destroyed>` **(** **)** |virtual|                                                                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_pre_render<class_OpenXRExtensionWrapperExtension_private_method__on_pre_render>` **(** **)** |virtual|                                                                                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_process<class_OpenXRExtensionWrapperExtension_private_method__on_process>` **(** **)** |virtual|                                                                                            |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_register_metadata<class_OpenXRExtensionWrapperExtension_private_method__on_register_metadata>` **(** **)** |virtual|                                                                        |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_session_created<class_OpenXRExtensionWrapperExtension_private_method__on_session_created>` **(** :ref:`int<class_int>` session **)** |virtual|                                              |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_session_destroyed<class_OpenXRExtensionWrapperExtension_private_method__on_session_destroyed>` **(** **)** |virtual|                                                                        |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_state_exiting<class_OpenXRExtensionWrapperExtension_private_method__on_state_exiting>` **(** **)** |virtual|                                                                                |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_state_focused<class_OpenXRExtensionWrapperExtension_private_method__on_state_focused>` **(** **)** |virtual|                                                                                |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_state_idle<class_OpenXRExtensionWrapperExtension_private_method__on_state_idle>` **(** **)** |virtual|                                                                                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_state_loss_pending<class_OpenXRExtensionWrapperExtension_private_method__on_state_loss_pending>` **(** **)** |virtual|                                                                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_state_ready<class_OpenXRExtensionWrapperExtension_private_method__on_state_ready>` **(** **)** |virtual|                                                                                    |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_state_stopping<class_OpenXRExtensionWrapperExtension_private_method__on_state_stopping>` **(** **)** |virtual|                                                                              |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_state_synchronized<class_OpenXRExtensionWrapperExtension_private_method__on_state_synchronized>` **(** **)** |virtual|                                                                      |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`_on_state_visible<class_OpenXRExtensionWrapperExtension_private_method__on_state_visible>` **(** **)** |virtual|                                                                                |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                               | :ref:`_set_instance_create_info_and_get_next_pointer<class_OpenXRExtensionWrapperExtension_private_method__set_instance_create_info_and_get_next_pointer>` **(** void* next_pointer **)** |virtual|   |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                               | :ref:`_set_session_create_and_get_next_pointer<class_OpenXRExtensionWrapperExtension_private_method__set_session_create_and_get_next_pointer>` **(** void* next_pointer **)** |virtual|               |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                               | :ref:`_set_swapchain_create_info_and_get_next_pointer<class_OpenXRExtensionWrapperExtension_private_method__set_swapchain_create_info_and_get_next_pointer>` **(** void* next_pointer **)** |virtual| |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                               | :ref:`_set_system_properties_and_get_next_pointer<class_OpenXRExtensionWrapperExtension_private_method__set_system_properties_and_get_next_pointer>` **(** void* next_pointer **)** |virtual|         |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>` | :ref:`get_openxr_api<class_OpenXRExtensionWrapperExtension_method_get_openxr_api>` **(** **)**                                                                                                        |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                | :ref:`register_extension_wrapper<class_OpenXRExtensionWrapperExtension_method_register_extension_wrapper>` **(** **)**                                                                                |
+   +-----------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -85,274 +85,274 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_OpenXRExtensionWrapperExtension_method__get_requested_extensions:
+.. _class_OpenXRExtensionWrapperExtension_private_method__get_requested_extensions:
 
 .. rst-class:: classref-method
 
 :ref:`Dictionary<class_Dictionary>` **_get_requested_extensions** **(** **)** |virtual|
 
-Returns a :ref:`Dictionary<class_Dictionary>` of OpenXR extensions related to this extension. The :ref:`Dictionary<class_Dictionary>` should contain the name of the extension, mapped to a ``bool *`` cast to an integer:
+返回与该扩展相关的 OpenXR 扩展的 :ref:`Dictionary<class_Dictionary>`\ 。该 :ref:`Dictionary<class_Dictionary>` 应包含扩展名，映射到 ``bool *`` 转换为整数：
 
-- If the ``bool *`` is a ``nullptr`` this extension is mandatory.
+- 如果 ``bool *`` 是 ``nullptr``\ ，则该扩展是强制性的。
 
-- If the ``bool *`` points to a boolean, the boolean will be updated to ``true`` if the extension is enabled.
+- 如果 ``bool *`` 指向布尔值，则在启用扩展的情况下，该布尔值将更新为 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_before_instance_created:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_before_instance_created:
 
 .. rst-class:: classref-method
 
 void **_on_before_instance_created** **(** **)** |virtual|
 
-Called before the OpenXR instance is created.
+在创建 OpenXR 实例之前调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_event_polled:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_event_polled:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_on_event_polled** **(** const void* event **)** |virtual|
 
-Called when there is an OpenXR event to process. When implementing, return ``true`` if the event was handled, return ``false`` otherwise.
+当有 OpenXR 事件需要处理时调用。实现时，如果事件已被处理，则返回 ``true``\ ，否则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_instance_created:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_instance_created:
 
 .. rst-class:: classref-method
 
 void **_on_instance_created** **(** :ref:`int<class_int>` instance **)** |virtual|
 
-Called right after the OpenXR instance is created.
+在创建 OpenXR 实例后立即调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_instance_destroyed:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_instance_destroyed:
 
 .. rst-class:: classref-method
 
 void **_on_instance_destroyed** **(** **)** |virtual|
 
-Called right before the OpenXR instance is destroyed.
+在 OpenXR 实例被销毁之前调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_pre_render:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_pre_render:
 
 .. rst-class:: classref-method
 
 void **_on_pre_render** **(** **)** |virtual|
 
-Called right before the XR viewports begin their rendering step.
+在 XR 视口开始其渲染步进之前调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_process:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_process:
 
 .. rst-class:: classref-method
 
 void **_on_process** **(** **)** |virtual|
 
-Called as part of the OpenXR process handling. This happens right before general and physics processing steps of the main loop. During this step controller data is queried and made available to game logic.
+作为 OpenXR 进程处理的一部分调用。这发生在主循环的一般和物理处理步进之前。在该步进中，控制器数据被查询并可供游戏逻辑使用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_register_metadata:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_register_metadata:
 
 .. rst-class:: classref-method
 
 void **_on_register_metadata** **(** **)** |virtual|
 
-Allows extensions to register additional controller metadata. This function is called even when the OpenXR API is not constructed as the metadata needs to be available to the editor.
+允许扩展注册额外的控制器元数据。即使 OpenXR API 未被构造，也会调用该函数，因为元数据需要可供编辑器使用。
 
-Extensions should also provide metadata regardless of whether they are supported on the host system. The controller data is used to setup action maps for users who may have access to the relevant hardware.
+扩展还应该提供元数据，无论主机系统是否支持它们。控制器数据用于为可以访问相关硬件的用户设置动作映射。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_session_created:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_session_created:
 
 .. rst-class:: classref-method
 
 void **_on_session_created** **(** :ref:`int<class_int>` session **)** |virtual|
 
-Called right after the OpenXR session is created.
+在创建 OpenXR 会话后立即调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_session_destroyed:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_session_destroyed:
 
 .. rst-class:: classref-method
 
 void **_on_session_destroyed** **(** **)** |virtual|
 
-Called right before the OpenXR session is destroyed.
+在 OpenXR 会话被销毁之前调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_state_exiting:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_state_exiting:
 
 .. rst-class:: classref-method
 
 void **_on_state_exiting** **(** **)** |virtual|
 
-Called when the OpenXR session state is changed to exiting.
+当 OpenXR 会话状态被更改为退出时调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_state_focused:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_state_focused:
 
 .. rst-class:: classref-method
 
 void **_on_state_focused** **(** **)** |virtual|
 
-Called when the OpenXR session state is changed to focused. This state is the active state when the game runs.
+当 OpenXR 会话状态被更改为聚焦时调用。该状态是游戏运行时的活动状态。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_state_idle:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_state_idle:
 
 .. rst-class:: classref-method
 
 void **_on_state_idle** **(** **)** |virtual|
 
-Called when the OpenXR session state is changed to idle.
+当 OpenXR 会话状态被更改为空闲时调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_state_loss_pending:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_state_loss_pending:
 
 .. rst-class:: classref-method
 
 void **_on_state_loss_pending** **(** **)** |virtual|
 
-Called when the OpenXR session state is changed to loss pending.
+当 OpenXR 会话状态被更改为丢失挂起时调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_state_ready:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_state_ready:
 
 .. rst-class:: classref-method
 
 void **_on_state_ready** **(** **)** |virtual|
 
-Called when the OpenXR session state is changed to ready. This means OpenXR is ready to set up the session.
+当 OpenXR 会话状态被更改为就绪时调用。这意味着 OpenXR 已准备好建立会话。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_state_stopping:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_state_stopping:
 
 .. rst-class:: classref-method
 
 void **_on_state_stopping** **(** **)** |virtual|
 
-Called when the OpenXR session state is changed to stopping.
+当 OpenXR 会话状态被更改为停止时调用。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_state_synchronized:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_state_synchronized:
 
 .. rst-class:: classref-method
 
 void **_on_state_synchronized** **(** **)** |virtual|
 
-Called when the OpenXR session state is changed to synchronized. OpenXR also returns to this state when the application loses focus.
+当 OpenXR 会话状态被更改为同步时调用。当应用程序失去焦点时，OpenXR 也会返回到该状态。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__on_state_visible:
+.. _class_OpenXRExtensionWrapperExtension_private_method__on_state_visible:
 
 .. rst-class:: classref-method
 
 void **_on_state_visible** **(** **)** |virtual|
 
-Called when the OpenXR session state is changed to visible. This means OpenXR is now ready to receive frames.
+当 OpenXR 会话状态被更改为可见时调用。这意味着 OpenXR 现在已准备好接收帧。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__set_instance_create_info_and_get_next_pointer:
+.. _class_OpenXRExtensionWrapperExtension_private_method__set_instance_create_info_and_get_next_pointer:
 
 .. rst-class:: classref-method
 
 :ref:`int<class_int>` **_set_instance_create_info_and_get_next_pointer** **(** void* next_pointer **)** |virtual|
 
-Adds additional data structures when the OpenXR instance is created.
+创建 OpenXR 实例时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__set_session_create_and_get_next_pointer:
+.. _class_OpenXRExtensionWrapperExtension_private_method__set_session_create_and_get_next_pointer:
 
 .. rst-class:: classref-method
 
 :ref:`int<class_int>` **_set_session_create_and_get_next_pointer** **(** void* next_pointer **)** |virtual|
 
-Adds additional data structures when the OpenXR session is created.
+创建 OpenXR 会话时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__set_swapchain_create_info_and_get_next_pointer:
+.. _class_OpenXRExtensionWrapperExtension_private_method__set_swapchain_create_info_and_get_next_pointer:
 
 .. rst-class:: classref-method
 
 :ref:`int<class_int>` **_set_swapchain_create_info_and_get_next_pointer** **(** void* next_pointer **)** |virtual|
 
-Adds additional data structures when creating OpenXR swapchains.
+创建 OpenXR 交换链时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_OpenXRExtensionWrapperExtension_method__set_system_properties_and_get_next_pointer:
+.. _class_OpenXRExtensionWrapperExtension_private_method__set_system_properties_and_get_next_pointer:
 
 .. rst-class:: classref-method
 
 :ref:`int<class_int>` **_set_system_properties_and_get_next_pointer** **(** void* next_pointer **)** |virtual|
 
-Adds additional data structures when interogating OpenXR system abilities.
+在询问 OpenXR 系统功能时添加额外的数据结构。
 
 .. rst-class:: classref-item-separator
 
@@ -364,7 +364,7 @@ Adds additional data structures when interogating OpenXR system abilities.
 
 :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>` **get_openxr_api** **(** **)**
 
-Returns the created :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>`, which can be used to access the OpenXR API.
+返回创建的 :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>`\ ，可用于访问 OpenXR API。
 
 .. rst-class:: classref-item-separator
 
@@ -376,12 +376,12 @@ Returns the created :ref:`OpenXRAPIExtension<class_OpenXRAPIExtension>`, which c
 
 void **register_extension_wrapper** **(** **)**
 
-Registers the extension. This should happen at core module initialization level.
+注册扩展程序。这应该发生在核心模块初始化级别。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

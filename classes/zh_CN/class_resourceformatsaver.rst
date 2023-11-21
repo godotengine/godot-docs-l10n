@@ -10,14 +10,14 @@
 ResourceFormatSaver
 ===================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 将特定资源类型保存到文件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 当你从编辑器执行此操作或使用 :ref:`ResourceSaver<class_ResourceSaver>` 单例时，引擎可以节省资源。这要归功于多个 **ResourceFormatSaver**\ ，每个都处理自己的格式并由引擎自动调用。
 
@@ -25,23 +25,23 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_recognized_extensions<class_ResourceFormatSaver_method__get_recognized_extensions>` **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const|              |
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`_recognize<class_ResourceFormatSaver_method__recognize>` **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const|                                              |
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                           | :ref:`_recognize_path<class_ResourceFormatSaver_method__recognize_path>` **(** :ref:`Resource<class_Resource>` resource, :ref:`String<class_String>` path **)** |virtual| |const|  |
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_save<class_ResourceFormatSaver_method__save>` **(** :ref:`Resource<class_Resource>` resource, :ref:`String<class_String>` path, :ref:`int<class_int>` flags **)** |virtual| |
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_set_uid<class_ResourceFormatSaver_method__set_uid>` **(** :ref:`String<class_String>` path, :ref:`int<class_int>` uid **)** |virtual|                                       |
-   +---------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedStringArray<class_PackedStringArray>` | :ref:`_get_recognized_extensions<class_ResourceFormatSaver_private_method__get_recognized_extensions>` **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const|              |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`_recognize<class_ResourceFormatSaver_private_method__recognize>` **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const|                                              |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | :ref:`_recognize_path<class_ResourceFormatSaver_private_method__recognize_path>` **(** :ref:`Resource<class_Resource>` resource, :ref:`String<class_String>` path **)** |virtual| |const|  |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_save<class_ResourceFormatSaver_private_method__save>` **(** :ref:`Resource<class_Resource>` resource, :ref:`String<class_String>` path, :ref:`int<class_int>` flags **)** |virtual| |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`             | :ref:`_set_uid<class_ResourceFormatSaver_private_method__set_uid>` **(** :ref:`String<class_String>` path, :ref:`int<class_int>` uid **)** |virtual|                                       |
+   +---------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -49,22 +49,22 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_ResourceFormatSaver_method__get_recognized_extensions:
+.. _class_ResourceFormatSaver_private_method__get_recognized_extensions:
 
 .. rst-class:: classref-method
 
 :ref:`PackedStringArray<class_PackedStringArray>` **_get_recognized_extensions** **(** :ref:`Resource<class_Resource>` resource **)** |virtual| |const|
 
-返回可用于保存资源对象的扩展名列表，前提是该资源对象已被识别（请参见\ :ref:`_recognize<class_ResourceFormatSaver_method__recognize>`\ ）。
+返回可用于保存资源对象的扩展名列表，前提是该资源对象已被识别（见 :ref:`_recognize<class_ResourceFormatSaver_private_method__recognize>`\ ）。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_ResourceFormatSaver_method__recognize:
+.. _class_ResourceFormatSaver_private_method__recognize:
 
 .. rst-class:: classref-method
 
@@ -76,7 +76,7 @@ Method Descriptions
 
 ----
 
-.. _class_ResourceFormatSaver_method__recognize_path:
+.. _class_ResourceFormatSaver_private_method__recognize_path:
 
 .. rst-class:: classref-method
 
@@ -84,13 +84,13 @@ Method Descriptions
 
 如果该saver可以处理给定的保存路径，则返回\ ``true``\ ，否则返回\ ``false``\ 。
 
-如果未实现该方法，则默认行为是检查路径的扩展名是否在\ :ref:`_get_recognized_extensions<class_ResourceFormatSaver_method__get_recognized_extensions>`\ 提供的范围内。
+如果未实现该方法，则默认行为是检查路径的扩展名是否在\ :ref:`_get_recognized_extensions<class_ResourceFormatSaver_private_method__get_recognized_extensions>`\ 提供的范围内。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_ResourceFormatSaver_method__save:
+.. _class_ResourceFormatSaver_private_method__save:
 
 .. rst-class:: classref-method
 
@@ -104,7 +104,7 @@ Method Descriptions
 
 ----
 
-.. _class_ResourceFormatSaver_method__set_uid:
+.. _class_ResourceFormatSaver_private_method__set_uid:
 
 .. rst-class:: classref-method
 
@@ -112,10 +112,10 @@ Method Descriptions
 
 为给定 ``path`` 处的资源设置新的 UID。成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，失败时返回 :ref:`Error<enum_@GlobalScope_Error>` 常量。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

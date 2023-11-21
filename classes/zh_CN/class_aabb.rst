@@ -14,8 +14,8 @@ AABB
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **AABB** 由一个位置、一个大小和若干实用函数组成。通常用于快速重叠测试。
 
@@ -27,12 +27,12 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`数学文档索引 <../tutorials/math/index>`
 
@@ -42,8 +42,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -74,8 +74,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -134,8 +134,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -154,8 +154,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AABB_property_end:
 
@@ -197,8 +197,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_AABB_constructor_AABB:
 
@@ -234,8 +234,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AABB_method_abs:
 
@@ -396,7 +396,7 @@ Method Descriptions
 
 :ref:`Vector3<class_Vector3>` **get_support** **(** :ref:`Vector3<class_Vector3>` dir **)** |const|
 
-Returns the vertex of the AABB that's the farthest in a given direction. This point is commonly known as the support point in collision detection algorithms.
+返回指定方向上最远的 AABB 顶点。该点通常称为碰撞检测算法的支撑点。
 
 .. rst-class:: classref-item-separator
 
@@ -562,8 +562,8 @@ Returns the vertex of the AABB that's the farthest in a given direction. This po
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_AABB_operator_neq_AABB:
 
@@ -585,7 +585,11 @@ Operator Descriptions
 
 :ref:`AABB<class_AABB>` **operator *** **(** :ref:`Transform3D<class_Transform3D>` right **)**
 
-通过给定的 :ref:`Transform3D<class_Transform3D>` 变换矩阵对该 **AABB** 进行逆变换（相乘）。
+假设该变换的基是正交的（即旋转/反射可以，缩放/倾斜则不行），将 **AABB** 逆向变换（乘以）给定的 :ref:`Transform3D<class_Transform3D>` 变换矩阵。
+
+\ ``aabb * transform`` 相当于 ``transform.inverse() * aabb``\ 。见 :ref:`Transform3D.inverse<class_Transform3D_method_inverse>`\ 。
+
+对于通过仿射变换的逆进行的变换（例如，缩放），可以使用 ``transform.affine_inverse() * aabb`` 代替。见 :ref:`Transform3D.affine_inverse<class_Transform3D_method_affine_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -601,10 +605,10 @@ Operator Descriptions
 
 \ **注意：**\ 由于浮点数精度误差，请考虑改用 :ref:`is_equal_approx<class_AABB_method_is_equal_approx>`\ ，会更可靠。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

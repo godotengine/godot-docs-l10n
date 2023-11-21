@@ -10,21 +10,28 @@
 AudioStreamOggVorbis
 ====================
 
-**Inherits:** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AudioStream<class_AudioStream>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A class representing an Ogg Vorbis audio stream.
+代表 Ogg Vorbis 音频流的类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-The AudioStreamOggVorbis class is a specialized :ref:`AudioStream<class_AudioStream>` for handling Ogg Vorbis file formats. It offers functionality for loading and playing back Ogg Vorbis files, as well as managing looping and other playback properties. This class is part of the audio stream system, which also supports WAV files through the :ref:`AudioStreamWAV<class_AudioStreamWAV>` class.
+AudioStreamOggVorbis 类是专用于处理 Ogg Vorbis 文件格式的 :ref:`AudioStream<class_AudioStream>` 类。它提供加载和播放 Ogg Vorbis 文件以及管理循环和其他播放属性的功能。该类是音频流系统的一部分，该系统还通过 :ref:`AudioStreamWAV<class_AudioStreamWAV>` 类支持 WAV 系统。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,8 +52,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -63,8 +70,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_AudioStreamOggVorbis_property_bar_beats:
 
@@ -79,7 +86,7 @@ Property Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -98,7 +105,7 @@ Property Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -117,7 +124,7 @@ Property Descriptions
 
 .. container:: contribute
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -134,7 +141,7 @@ Property Descriptions
 - void **set_loop** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **has_loop** **(** **)**
 
-If ``true``, the audio will play again from the specified :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` once it is done playing. Useful for ambient sounds and background music.
+如果为 ``true``\ ，则音频播放完成后将从 :ref:`loop_offset<class_AudioStreamOggVorbis_property_loop_offset>` 指定的位置再次播放。可用于环境声音和背景音乐。
 
 .. rst-class:: classref-item-separator
 
@@ -176,8 +183,8 @@ If ``true``, the audio will play again from the specified :ref:`loop_offset<clas
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_AudioStreamOggVorbis_method_load_from_buffer:
 
@@ -185,7 +192,7 @@ Method Descriptions
 
 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` **load_from_buffer** **(** :ref:`PackedByteArray<class_PackedByteArray>` buffer **)** |static|
 
-Creates a new AudioStreamOggVorbis instance from the given buffer. The buffer must contain Ogg Vorbis data.
+从给定缓冲区创建一个新的 AudioStreamOggVorbis 实例。缓冲区必须包含 Ogg Vorbis 数据。
 
 .. rst-class:: classref-item-separator
 
@@ -197,12 +204,12 @@ Creates a new AudioStreamOggVorbis instance from the given buffer. The buffer mu
 
 :ref:`AudioStreamOggVorbis<class_AudioStreamOggVorbis>` **load_from_file** **(** :ref:`String<class_String>` path **)** |static|
 
-Creates a new AudioStreamOggVorbis instance from the given file path. The file must be in Ogg Vorbis format.
+从给定文件路径创建新的 AudioStreamOggVorbis 实例。文件必须采用 Ogg Vorbis 格式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

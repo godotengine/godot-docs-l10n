@@ -10,30 +10,30 @@
 ScrollContainer
 ===============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`EditorInspector<class_EditorInspector>`
+**派生：** :ref:`EditorInspector<class_EditorInspector>`
 
 需要时能够为子控件提供滚动条的容器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于在需要时为子控件提供滚动条的容器。滚动条会自动绘制在右侧（垂直滚动条）或底部（水平滚动条），拖动滚动条能够移动 ScrollContainer 中的可见 Control（及其子项）。滚动条会根据该 Control 的 :ref:`Control.custom_minimum_size<class_Control_property_custom_minimum_size>` 相对于 ScrollContainer 的大小自动调整抓取器的大小。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -76,8 +76,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -92,8 +92,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_ScrollContainer_signal_scroll_ended:
 
@@ -101,9 +101,9 @@ Signals
 
 **scroll_ended** **(** **)**
 
-Emitted when scrolling stops when dragging the scrollable area *with a touch event*. This signal is *not* emitted when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.
+当\ *通过触摸事件*\ 拖动可滚动区域而导致滚动停止时发出。当通过拖动滚动条滚动、使用鼠标滚轮滚动、或使用键盘/游戏手柄事件滚动时，\ *不*\ 会发出该信号。
 
-\ **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` is enabled.
+\ **注意：**\ 该信号仅在 Android 或 iOS 上，或在启用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 时的桌面/Web 平台上发出。
 
 .. rst-class:: classref-item-separator
 
@@ -115,9 +115,9 @@ Emitted when scrolling stops when dragging the scrollable area *with a touch eve
 
 **scroll_started** **(** **)**
 
-Emitted when scrolling starts when dragging the scrollable area w\ *ith a touch event*. This signal is *not* emitted when scrolling by dragging the scrollbar, scrolling with the mouse wheel or scrolling with keyboard/gamepad events.
+当\ *通过触摸事件*\ 拖动可滚动区域而导致滚动开始时发出。当通过拖动滚动条滚动、使用鼠标滚轮滚动、或使用键盘/游戏手柄事件滚动时，\ *不*\ 会发出该信号。
 
-\ **Note:** This signal is only emitted on Android or iOS, or on desktop/web platforms when :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` is enabled.
+\ **注意：**\ 该信号仅在 Android 或 iOS 上，或在启用 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 时的桌面/Web 平台上发出。
 
 .. rst-class:: classref-section-separator
 
@@ -125,8 +125,8 @@ Emitted when scrolling starts when dragging the scrollable area w\ *ith a touch 
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_ScrollContainer_ScrollMode:
 
@@ -172,8 +172,8 @@ enum **ScrollMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ScrollContainer_property_follow_focus:
 
@@ -237,9 +237,9 @@ Property Descriptions
 - void **set_h_scroll** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_h_scroll** **(** **)**
 
-The current horizontal scroll value.
+当前的水平滚动值。
 
-\ **Note:** If you are setting this value in the :ref:`Node._ready<class_Node_method__ready>` function or earlier, it needs to be wrapped with :ref:`Object.set_deferred<class_Object_method_set_deferred>`, since scroll bar's :ref:`Range.max_value<class_Range_property_max_value>` is not initialized yet.
+\ **注意：**\ 如果在 :ref:`Node._ready<class_Node_private_method__ready>` 函数或更早的函数中设置该值，则需要用 :ref:`Object.set_deferred<class_Object_method_set_deferred>` 包装，因为滚动条的 :ref:`Range.max_value<class_Range_property_max_value>` 此时尚未初始化。
 
 ::
 
@@ -327,8 +327,8 @@ The current horizontal scroll value.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ScrollContainer_method_ensure_control_visible:
 
@@ -380,8 +380,8 @@ void **ensure_control_visible** **(** :ref:`Control<class_Control>` control **)*
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_ScrollContainer_theme_style_panel:
 
@@ -391,10 +391,10 @@ Theme Property Descriptions
 
 **ScrollContainer** 的背景 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

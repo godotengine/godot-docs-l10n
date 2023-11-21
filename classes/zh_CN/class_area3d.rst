@@ -10,25 +10,25 @@
 Area3D
 ======
 
-**Inherits:** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`CollisionObject3D<class_CollisionObject3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-3D 空间的一个区块，用于检测其他 :ref:`CollisionObject3D<class_CollisionObject3D>` 进入或退出它。
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-**Area3D** is a region of 3D space defined by one or multiple :ref:`CollisionShape3D<class_CollisionShape3D>` or :ref:`CollisionPolygon3D<class_CollisionPolygon3D>` child nodes. It detects when other :ref:`CollisionObject3D<class_CollisionObject3D>`\ s enter or exit it, and it also keeps track of which collision objects haven't exited it yet (i.e. which one are overlapping it).
-
-This node can also locally alter or override physics parameters (gravity, damping) and route audio to custom audio buses.
-
-\ **Warning:** Using a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` inside a :ref:`CollisionShape3D<class_CollisionShape3D>` child of this node (created e.g. by using the **Create Trimesh Collision Sibling** option in the **Mesh** menu that appears when selecting a :ref:`MeshInstance3D<class_MeshInstance3D>` node) may give unexpected results, since this collision shape is hollow. If this is not desired, it has to be split into multiple :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>`\ s or primitive shapes like :ref:`BoxShape3D<class_BoxShape3D>`, or in some cases it may be replaceable by a :ref:`CollisionPolygon3D<class_CollisionPolygon3D>`.
+3D 空间中的一个区域，能够检测到其他 :ref:`CollisionObject3D<class_CollisionObject3D>` 的进入或退出。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
+
+**Area3D** 是 3D 空间中的一个区域，由一个或多个 :ref:`CollisionShape3D<class_CollisionShape3D>` 或 :ref:`CollisionPolygon3D<class_CollisionPolygon3D>` 子节点定义，能够检测到其他 :ref:`CollisionObject3D<class_CollisionObject3D>` 进入或退出该区域，同时也会记录哪些碰撞对象尚未退出（即哪些对象与其存在重叠）。
+
+这个节点也可以在局部修改或覆盖物理参数（重力、阻尼），将音频引导至自定义音频总线。
+
+\ **警告：**\ 在这个节点的 :ref:`CollisionShape3D<class_CollisionShape3D>` 子节点中使用 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`\ （创建方法是在选中 :ref:`MeshInstance3D<class_MeshInstance3D>` 节点后，在出现的 **Mesh** 菜单中选择\ **创建三角网格碰撞同级**\ 选项）可能得到意外的结果，因为碰撞形状是空心的。如果不想要这种行为，则应该将其拆分为多个 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 或 :ref:`BoxShape3D<class_BoxShape3D>` 等基础网格，有些情况下也可以用 :ref:`CollisionPolygon3D<class_CollisionPolygon3D>` 代替。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
 
 - :doc:`使用 Area2D <../tutorials/physics/using_area_2d>`
 
@@ -38,8 +38,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -92,8 +92,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -118,8 +118,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Area3D_signal_area_entered:
 
@@ -194,7 +194,7 @@ Signals
 
 **body_entered** **(** :ref:`Node3D<class_Node3D>` body **)**
 
-当接收到的 ``body`` 进入这个区域时触发。\ ``body`` 可以是一个 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或一个 :ref:`GridMap<class_GridMap>`\ 。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置了碰撞形状，就会被检测到。需要将 :ref:`monitoring<class_Area3D_property_monitoring>` 设置为 ``true`` 。
+当接收到的 ``body`` 进入这个区域时发出。\ ``body`` 可以是一个 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 或一个 :ref:`GridMap<class_GridMap>`\ 。如果 :ref:`GridMap<class_GridMap>` 的 :ref:`MeshLibrary<class_MeshLibrary>` 配置了碰撞形状就会被检测到。需要将 :ref:`monitoring<class_Area3D_property_monitoring>` 设置为 ``true`` 。
 
 .. rst-class:: classref-item-separator
 
@@ -257,8 +257,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Area3D_SpaceOverride:
 
@@ -312,8 +312,8 @@ enum **SpaceOverride**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Area3D_property_angular_damp:
 
@@ -697,8 +697,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Area3D_method_get_overlapping_areas:
 
@@ -782,10 +782,10 @@ Method Descriptions
 
 参数 ``body`` 可以是 :ref:`PhysicsBody3D<class_PhysicsBody3D>` 实例，也可以是 :ref:`GridMap<class_GridMap>` 实例。GridMap 虽然不是物理物体，但会把图块的碰撞形状注册为虚拟物理物体。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

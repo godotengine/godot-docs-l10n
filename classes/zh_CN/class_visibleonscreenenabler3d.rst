@@ -10,27 +10,25 @@
 VisibleOnScreenEnabler3D
 ========================
 
-**Inherits:** :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>` **<** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-只在大约可见时启用某些节点。
+3D 空间的盒形区块，当在屏幕上可见时，启用目标节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-VisibleOnScreenEnabler3D 会禁用不可见的 :ref:`RigidBody3D<class_RigidBody3D>` 和 :ref:`AnimationPlayer<class_AnimationPlayer>` 节点。它只会影响与 VisibleOnScreenEnabler3D 本身相同场景中的其他节点。
+**VisibleOnScreenEnabler3D** 包含 3D 空间的盒形区块和目标节点。当该区域的任何部分在屏幕上可见时，目标节点将自动启用（通过其 :ref:`Node.process_mode<class_Node_property_process_mode>` 属性），否则将自动禁用。例如，这可以被用于仅在玩家接近敌人时激活敌人。
 
-如果你只是想接收通知，请使用 :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>` 代替。
+如果你只想在该区块在屏幕上可见时收到通知，请参阅 :ref:`VisibleOnScreenNotifier3D<class_VisibleOnScreenNotifier3D>`\ 。
 
-\ **注意：**\ VisibleOnScreenEnabler3D 由于性能原因使用了一个近似的启发式方法。它不会考虑墙和其他遮挡物。启发式方法属于实现细节，在未来的版本中可能会改变。如果你需要精确的可见性检查，请使用其他方法，例如添加一个 :ref:`Area3D<class_Area3D>` 节点作为 :ref:`Camera3D<class_Camera3D>` 节点的子节点和/或 :ref:`Vector3.dot<class_Vector3_method_dot>`\ 。
-
-\ **注意：**\ VisibleOnScreenEnabler3D 不会影响场景初始化后添加的节点。
+\ **注意：**\ **VisibleOnScreenEnabler3D** 使用近似启发式，不考虑墙壁和其他遮挡，除非使用遮挡剔除。除非将 :ref:`Node3D.visible<class_Node3D_property_visible>` 设置为 ``true``\ ，否则它也不会起作用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -47,8 +45,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_VisibleOnScreenEnabler3D_EnableMode:
 
@@ -62,7 +60,7 @@ enum **EnableMode**:
 
 :ref:`EnableMode<enum_VisibleOnScreenEnabler3D_EnableMode>` **ENABLE_MODE_INHERIT** = ``0``
 
-
+对应 :ref:`Node.PROCESS_MODE_INHERIT<class_Node_constant_PROCESS_MODE_INHERIT>`\ 。
 
 .. _class_VisibleOnScreenEnabler3D_constant_ENABLE_MODE_ALWAYS:
 
@@ -70,7 +68,7 @@ enum **EnableMode**:
 
 :ref:`EnableMode<enum_VisibleOnScreenEnabler3D_EnableMode>` **ENABLE_MODE_ALWAYS** = ``1``
 
-
+对应 :ref:`Node.PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>`\ 。
 
 .. _class_VisibleOnScreenEnabler3D_constant_ENABLE_MODE_WHEN_PAUSED:
 
@@ -78,7 +76,7 @@ enum **EnableMode**:
 
 :ref:`EnableMode<enum_VisibleOnScreenEnabler3D_EnableMode>` **ENABLE_MODE_WHEN_PAUSED** = ``2``
 
-
+对应 :ref:`Node.PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -86,8 +84,8 @@ enum **EnableMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_VisibleOnScreenEnabler3D_property_enable_mode:
 
@@ -100,9 +98,7 @@ Property Descriptions
 - void **set_enable_mode** **(** :ref:`EnableMode<enum_VisibleOnScreenEnabler3D_EnableMode>` value **)**
 - :ref:`EnableMode<enum_VisibleOnScreenEnabler3D_EnableMode>` **get_enable_mode** **(** **)**
 
-.. container:: contribute
-
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+确定如何启用目标节点。对应于 :ref:`ProcessMode<enum_Node_ProcessMode>`\ 。当该节点被禁用时，它始终使用 :ref:`Node.PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -119,14 +115,12 @@ Property Descriptions
 - void **set_enable_node_path** **(** :ref:`NodePath<class_NodePath>` value **)**
 - :ref:`NodePath<class_NodePath>` **get_enable_node_path** **(** **)**
 
-.. container:: contribute
+目标节点的路径，相对于 **VisibleOnScreenEnabler3D**\ 。目标节点会被缓存；只有在设置这个属性时（\ **VisibleOnScreenEnabler3D** 位于场景树中），以及 **VisibleOnScreenEnabler3D** 进入场景树时会进行赋值。如果路径无效，在编辑器中将打印一条错误，并且不会影响任何节点。
 
-	There is currently no description for this property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
-
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 DisplayServer
 =============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 用于低阶窗口管理的服务器接口。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 所有与窗口管理相关的内容都由 **DisplayServer**\ （显示服务器）处理。因为一个操作系统可能支持多个显示服务器，所以与 :ref:`OS<class_OS>` 是分开的。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -138,6 +138,8 @@ Methods
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                 | :ref:`global_menu_is_item_disabled<class_DisplayServer_method_global_menu_is_item_disabled>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx **)** |const|                                                                                                                                                                                                                                                                                                                     |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                                 | :ref:`global_menu_is_item_hidden<class_DisplayServer_method_global_menu_is_item_hidden>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx **)** |const|                                                                                                                                                                                                                                                                                                                         |
+   +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                 | :ref:`global_menu_is_item_radio_checkable<class_DisplayServer_method_global_menu_is_item_radio_checkable>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx **)** |const|                                                                                                                                                                                                                                                                                                       |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                    | :ref:`global_menu_remove_item<class_DisplayServer_method_global_menu_remove_item>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx **)**                                                                                                                                                                                                                                                                                                                                       |
@@ -151,6 +153,10 @@ Methods
    | void                                                                    | :ref:`global_menu_set_item_checked<class_DisplayServer_method_global_menu_set_item_checked>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`bool<class_bool>` checked **)**                                                                                                                                                                                                                                                                                            |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                    | :ref:`global_menu_set_item_disabled<class_DisplayServer_method_global_menu_set_item_disabled>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`bool<class_bool>` disabled **)**                                                                                                                                                                                                                                                                                         |
+   +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                                    | :ref:`global_menu_set_item_hidden<class_DisplayServer_method_global_menu_set_item_hidden>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`bool<class_bool>` hidden **)**                                                                                                                                                                                                                                                                                               |
+   +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                                    | :ref:`global_menu_set_item_hover_callbacks<class_DisplayServer_method_global_menu_set_item_hover_callbacks>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`Callable<class_Callable>` callback **)**                                                                                                                                                                                                                                                                   |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                    | :ref:`global_menu_set_item_icon<class_DisplayServer_method_global_menu_set_item_icon>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`Texture2D<class_Texture2D>` icon **)**                                                                                                                                                                                                                                                                                           |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -171,6 +177,8 @@ Methods
    | void                                                                    | :ref:`global_menu_set_item_text<class_DisplayServer_method_global_menu_set_item_text>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`String<class_String>` text **)**                                                                                                                                                                                                                                                                                                 |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                                    | :ref:`global_menu_set_item_tooltip<class_DisplayServer_method_global_menu_set_item_tooltip>` **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`String<class_String>` tooltip **)**                                                                                                                                                                                                                                                                                        |
+   +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                                    | :ref:`global_menu_set_popup_callbacks<class_DisplayServer_method_global_menu_set_popup_callbacks>` **(** :ref:`String<class_String>` menu_root, :ref:`Callable<class_Callable>` open_callback, :ref:`Callable<class_Callable>` close_callback **)**                                                                                                                                                                                                                                                   |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                 | :ref:`has_feature<class_DisplayServer_method_has_feature>` **(** :ref:`Feature<enum_DisplayServer_Feature>` feature **)** |const|                                                                                                                                                                                                                                                                                                                                                                     |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -302,6 +310,8 @@ Methods
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Vector2i<class_Vector2i>`                                         | :ref:`window_get_size_with_decorations<class_DisplayServer_method_window_get_size_with_decorations>` **(** :ref:`int<class_int>` window_id=0 **)** |const|                                                                                                                                                                                                                                                                                                                                            |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Vector2i<class_Vector2i>`                                         | :ref:`window_get_title_size<class_DisplayServer_method_window_get_title_size>` **(** :ref:`String<class_String>` title, :ref:`int<class_int>` window_id=0 **)** |const|                                                                                                                                                                                                                                                                                                                               |
+   +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`VSyncMode<enum_DisplayServer_VSyncMode>`                          | :ref:`window_get_vsync_mode<class_DisplayServer_method_window_get_vsync_mode>` **(** :ref:`int<class_int>` window_id=0 **)** |const|                                                                                                                                                                                                                                                                                                                                                                  |
    +-------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                                                 | :ref:`window_is_focused<class_DisplayServer_method_window_is_focused>` **(** :ref:`int<class_int>` window_id=0 **)** |const|                                                                                                                                                                                                                                                                                                                                                                          |
@@ -365,8 +375,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_DisplayServer_Feature:
 
@@ -906,7 +916,7 @@ enum **FileDialogMode**:
 
 :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>` **FILE_DIALOG_MODE_OPEN_FILE** = ``0``
 
-The native file dialog allows selecting one, and only one file.
+该原生对话框只允许选择一个文件。
 
 .. _class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_FILES:
 
@@ -914,7 +924,7 @@ The native file dialog allows selecting one, and only one file.
 
 :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>` **FILE_DIALOG_MODE_OPEN_FILES** = ``1``
 
-The native file dialog allows selecting multiple files.
+该原生对话框允许选择多个文件。
 
 .. _class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_DIR:
 
@@ -922,7 +932,7 @@ The native file dialog allows selecting multiple files.
 
 :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>` **FILE_DIALOG_MODE_OPEN_DIR** = ``2``
 
-The native file dialog only allows selecting a directory, disallowing the selection of any file.
+该原生对话框只允许选择一个目录，不允许选择任何文件。
 
 .. _class_DisplayServer_constant_FILE_DIALOG_MODE_OPEN_ANY:
 
@@ -930,7 +940,7 @@ The native file dialog only allows selecting a directory, disallowing the select
 
 :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>` **FILE_DIALOG_MODE_OPEN_ANY** = ``3``
 
-The native file dialog allows selecting one file or directory.
+该原生对话框允许选择一个文件或目录。
 
 .. _class_DisplayServer_constant_FILE_DIALOG_MODE_SAVE_FILE:
 
@@ -938,7 +948,7 @@ The native file dialog allows selecting one file or directory.
 
 :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>` **FILE_DIALOG_MODE_SAVE_FILE** = ``4``
 
-The native file dialog will warn when a file exists.
+当文件存在时，原生对话框会发出警告。
 
 .. rst-class:: classref-item-separator
 
@@ -982,7 +992,11 @@ enum **WindowMode**:
 
 具有完整多窗口支持的全屏模式。
 
-全屏窗口覆盖屏幕的整个显示区域，没有边框或装饰。显示视频模式没有更改。
+全屏窗口覆盖屏幕的整个显示区域，且没有任何装饰。显示的视频模式没有更改。
+
+\ **在 Windows 上：**\ 多窗口全屏模式具有 1px 宽的颜色为 :ref:`ProjectSettings.rendering/environment/defaults/default_clear_color<class_ProjectSettings_property_rendering/environment/defaults/default_clear_color>` 的边框。
+
+\ **在 macOS 上：**\ 使用新桌面来显示正在运行的项目。
 
 \ **注意：**\ 无论平台如何，启用全屏都会更改窗口大小以匹配显示器的大小。因此，请确保你的项目在启用全屏模式时支持\ :doc:`多种分辨率 <../tutorials/rendering/multiple_resolutions>`\ 。
 
@@ -998,7 +1012,7 @@ enum **WindowMode**:
 
 \ **在 Windows 上：**\ 取决于视频驱动程序，全屏过渡可能会导致屏幕暂时变黑。
 
-\ **在 macOS 上：**\ 当鼠标指针悬停在屏幕边缘时，独占全屏模式会阻止 Dock 和 Menu 出现。
+\ **在 macOS 上：**\ 一个新的桌面用于显示正在运行的项目。当鼠标指针悬停在屏幕边缘时，独占全屏模式会阻止 Dock 和 Menu 出现。
 
 \ **在 Linux（X11）上：**\ 独占全屏模式会绕过合成器。
 
@@ -1112,7 +1126,7 @@ enum **WindowEvent**:
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_MOUSE_ENTER** = ``0``
 
-当鼠标指针进入该窗口时发送，见 :ref:`window_set_window_event_callback<class_DisplayServer_method_window_set_window_event_callback>`\ 。
+当鼠标指针进入该窗口时发送。
 
 .. _class_DisplayServer_constant_WINDOW_EVENT_MOUSE_EXIT:
 
@@ -1120,7 +1134,7 @@ enum **WindowEvent**:
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_MOUSE_EXIT** = ``1``
 
-当鼠标指针退出该窗口时发送，见 :ref:`window_set_window_event_callback<class_DisplayServer_method_window_set_window_event_callback>`\ 。
+当鼠标指针退出该窗口时发送。
 
 .. _class_DisplayServer_constant_WINDOW_EVENT_FOCUS_IN:
 
@@ -1128,7 +1142,7 @@ enum **WindowEvent**:
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_FOCUS_IN** = ``2``
 
-当该窗口获得焦点时发送，见 :ref:`window_set_window_event_callback<class_DisplayServer_method_window_set_window_event_callback>`\ 。
+当窗口获得焦点时发送。
 
 .. _class_DisplayServer_constant_WINDOW_EVENT_FOCUS_OUT:
 
@@ -1136,7 +1150,7 @@ enum **WindowEvent**:
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_FOCUS_OUT** = ``3``
 
-当该窗口失去焦点时发送，见 :ref:`window_set_window_event_callback<class_DisplayServer_method_window_set_window_event_callback>`\ 。
+当窗口失去焦点时发送。
 
 .. _class_DisplayServer_constant_WINDOW_EVENT_CLOSE_REQUEST:
 
@@ -1144,7 +1158,7 @@ enum **WindowEvent**:
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_CLOSE_REQUEST** = ``4``
 
-当用户试图关闭该窗口时发送（例如按下关闭按钮），见 :ref:`window_set_window_event_callback<class_DisplayServer_method_window_set_window_event_callback>`\ 。
+当用户试图关闭该窗口时发送（例如按下关闭按钮）。
 
 .. _class_DisplayServer_constant_WINDOW_EVENT_GO_BACK_REQUEST:
 
@@ -1152,7 +1166,7 @@ enum **WindowEvent**:
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_GO_BACK_REQUEST** = ``5``
 
-当按下设备的“后退”按钮时发送，见 :ref:`window_set_window_event_callback<class_DisplayServer_method_window_set_window_event_callback>`\ 。
+当按下设备的“后退”按钮时发送。
 
 \ **注意：**\ 该事件仅在 Android 上实现。
 
@@ -1162,7 +1176,7 @@ enum **WindowEvent**:
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_DPI_CHANGE** = ``6``
 
-当窗口被移动到具有不同 DPI 的显示器上，或者显示器的 DPI 更改时发送，见 :ref:`window_set_window_event_callback<class_DisplayServer_method_window_set_window_event_callback>`\ 。
+当窗口被移动到具有不同 DPI 的显示器上，或者显示器的 DPI 更改时发送。
 
 \ **注意：**\ 该标志仅在 macOS 上实现。
 
@@ -1172,7 +1186,7 @@ enum **WindowEvent**:
 
 :ref:`WindowEvent<enum_DisplayServer_WindowEvent>` **WINDOW_EVENT_TITLEBAR_CHANGE** = ``7``
 
-当窗口标题栏的装饰改变时发送（例如 :ref:`WINDOW_FLAG_EXTEND_TO_TITLE<class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE>` 被设置或窗口进入/退出全屏模式），见 :ref:`window_set_window_event_callback<class_DisplayServer_method_window_set_window_event_callback>`\ 。
+当窗口标题栏的装饰改变时发送（例如 :ref:`WINDOW_FLAG_EXTEND_TO_TITLE<class_DisplayServer_constant_WINDOW_FLAG_EXTEND_TO_TITLE>` 被设置或窗口进入/退出全屏模式）。
 
 \ **注意：**\ 该标志仅在 macOS 上实现。
 
@@ -1192,7 +1206,7 @@ enum **VSyncMode**:
 
 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` **VSYNC_DISABLED** = ``0``
 
-No vertical synchronization, which means the engine will display frames as fast as possible (tearing may be visible). Framerate is unlimited (notwithstanding :ref:`Engine.max_fps<class_Engine_property_max_fps>`).
+没有垂直同步，这意味着引擎将尽可能快地显示帧（可能会有可见的撕裂）。帧速率是未限制的（不考虑 :ref:`Engine.max_fps<class_Engine_property_max_fps>`\ ）。
 
 .. _class_DisplayServer_constant_VSYNC_ENABLED:
 
@@ -1200,7 +1214,7 @@ No vertical synchronization, which means the engine will display frames as fast 
 
 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` **VSYNC_ENABLED** = ``1``
 
-Default vertical synchronization mode, the image is displayed only on vertical blanking intervals (no tearing is visible). Framerate is limited by the monitor refresh rate (notwithstanding :ref:`Engine.max_fps<class_Engine_property_max_fps>`).
+默认的垂直同步模式，图像只在垂直消隐间隔显示（没有可见的撕裂）。帧速率受显示器刷新率的限制（不考虑 :ref:`Engine.max_fps<class_Engine_property_max_fps>`\ ）。
 
 .. _class_DisplayServer_constant_VSYNC_ADAPTIVE:
 
@@ -1208,7 +1222,7 @@ Default vertical synchronization mode, the image is displayed only on vertical b
 
 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` **VSYNC_ADAPTIVE** = ``2``
 
-Behaves like :ref:`VSYNC_DISABLED<class_DisplayServer_constant_VSYNC_DISABLED>` when the framerate drops below the screen's refresh rate to reduce stuttering (tearing may be visible). Otherwise, vertical synchronization is enabled to avoid tearing. Framerate is limited by the monitor refresh rate (notwithstanding :ref:`Engine.max_fps<class_Engine_property_max_fps>`). Behaves like :ref:`VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` when using the Compatibility rendering method.
+当帧速率降至屏幕刷新率以下以减少卡顿（可能有可见的撕裂）时，行为类似于 :ref:`VSYNC_DISABLED<class_DisplayServer_constant_VSYNC_DISABLED>`\ 。否则，启用垂直同步以避免撕裂。帧速率受显示器刷新率的限制（不考虑 :ref:`Engine.max_fps<class_Engine_property_max_fps>`\ ）。使用兼容渲染方法时表现得像 :ref:`VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`\ 。
 
 .. _class_DisplayServer_constant_VSYNC_MAILBOX:
 
@@ -1216,9 +1230,9 @@ Behaves like :ref:`VSYNC_DISABLED<class_DisplayServer_constant_VSYNC_DISABLED>` 
 
 :ref:`VSyncMode<enum_DisplayServer_VSyncMode>` **VSYNC_MAILBOX** = ``3``
 
-Displays the most recent image in the queue on vertical blanking intervals, while rendering to the other images (no tearing is visible). Framerate is unlimited (notwithstanding :ref:`Engine.max_fps<class_Engine_property_max_fps>`).
+在垂直消隐间隔显示队列中的最新图像，同时对其他图像渲染（没有可见的撕裂）。帧速率是未限制的（不考虑 :ref:`Engine.max_fps<class_Engine_property_max_fps>`\ ）。
 
-Although not guaranteed, the images can be rendered as fast as possible, which may reduce input lag (also called "Fast" V-Sync mode). :ref:`VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` works best when at least twice as many frames as the display refresh rate are rendered. Behaves like :ref:`VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>` when using the Compatibility rendering method.
+虽然不能保证，但可以尽可能快地渲染图像，这可能会减少输入滞后（也称为“快速”V-Sync 模式）。\ :ref:`VSYNC_MAILBOX<class_DisplayServer_constant_VSYNC_MAILBOX>` 在渲染的帧数至少是显示器刷新率的两倍时效果最佳。使用兼容渲染方法时表现得像 :ref:`VSYNC_ENABLED<class_DisplayServer_constant_VSYNC_ENABLED>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1280,15 +1294,15 @@ enum **HandleType**:
 
 :ref:`HandleType<enum_DisplayServer_HandleType>` **OPENGL_CONTEXT** = ``3``
 
-OpenGL context (only with the GL Compatibility renderer):
+OpenGL 上下文（仅适用于 GL 兼容性渲染器）：
 
-- Windows: ``HGLRC`` for the window (native GL), or ``EGLContext`` for the window (ANGLE).
+- Windows：窗口的 ``HGLRC``\ （原生 GL）或窗口的 ``EGLContext``\ （ANGLE）。
 
-- Linux: ``GLXContext*`` for the window.
+- Linux：窗口的 ``GLXContext*``\ 。
 
-- macOS: ``NSOpenGLContext*`` for the window (native GL), or ``EGLContext`` for the window (ANGLE).
+- macOS：窗口的 ``NSOpenGLContext*``\ （原生 GL）或窗口的 ``EGLContext``\ （ANGLE）。
 
-- Android: ``EGLContext`` for the window.
+- Android：窗口的 ``EGLContext``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1338,8 +1352,8 @@ enum **TTSUtteranceEvent**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_DisplayServer_constant_SCREEN_WITH_MOUSE_FOCUS:
 
@@ -1395,8 +1409,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_DisplayServer_method_clipboard_get:
 
@@ -1416,7 +1430,7 @@ Method Descriptions
 
 :ref:`Image<class_Image>` **clipboard_get_image** **(** **)** |const|
 
-Returns the user's clipboard as an image if possible.
+如果可能，将用户的剪贴板作为图像返回。
 
 .. rst-class:: classref-item-separator
 
@@ -1442,7 +1456,7 @@ Returns the user's clipboard as an image if possible.
 
 :ref:`bool<class_bool>` **clipboard_has** **(** **)** |const|
 
-Returns ``true`` if there is a text content on the user's clipboard.
+如果用户的剪贴板中有文本内容，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1454,7 +1468,7 @@ Returns ``true`` if there is a text content on the user's clipboard.
 
 :ref:`bool<class_bool>` **clipboard_has_image** **(** **)** |const|
 
-Returns ``true`` if there is an image content on the user's clipboard.
+如果用户的剪贴板中有图像内容，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1570,21 +1584,21 @@ void **enable_for_stealing_focus** **(** :ref:`int<class_int>` process_id **)**
 
 :ref:`Error<enum_@GlobalScope_Error>` **file_dialog_show** **(** :ref:`String<class_String>` title, :ref:`String<class_String>` current_directory, :ref:`String<class_String>` filename, :ref:`bool<class_bool>` show_hidden, :ref:`FileDialogMode<enum_DisplayServer_FileDialogMode>` mode, :ref:`PackedStringArray<class_PackedStringArray>` filters, :ref:`Callable<class_Callable>` callback **)**
 
-Displays OS native dialog for selecting files or directories in the file system.
+显示操作系统原生对话框，用于选择文件系统中的文件或目录。
 
-Callbacks have the following arguments: ``bool status, PackedStringArray selected_paths``.
+回调具有以下参数：\ ``bool status, PackedStringArray selected_paths, int selected_filter_index``\ 。
 
-\ **Note:** This method is implemented if the display server has the ``FEATURE_NATIVE_DIALOG`` feature.
+\ **注意：**\ 如果显示服务器具有 :ref:`FEATURE_NATIVE_DIALOG<class_DisplayServer_constant_FEATURE_NATIVE_DIALOG>` 功能，则该方法已被实现。
 
-\ **Note:** This method is implemented on Linux, Windows and macOS.
+\ **注意：**\ 该方法在 Linux、Windows 和 macOS 上实现。
 
-\ **Note:** ``current_directory`` might be ignored.
+\ **注意：**\ ``current_directory`` 可能会被忽略。
 
-\ **Note:** On Linux, ``show_hidden`` is ignored.
+\ **注意：**\ 在 Linux 上，\ ``show_hidden`` 被忽略。
 
-\ **Note:** On macOS, native file dialogs have no title.
+\ **注意：**\ 在 macOS 上，原生文件对话框没有标题。
 
-\ **Note:** On macOS, sandboxed apps will save security-scoped bookmarks to retain access to the opened folders across multiple sessions. Use :ref:`OS.get_granted_permissions<class_OS_method_get_granted_permissions>` to get a list of saved bookmarks.
+\ **注意：**\ 在 macOS 上，沙盒应用程序将保存安全范围的书签，以保留对多个会话中打开的文件夹的访问权限。使用 :ref:`OS.get_granted_permissions<class_OS_method_get_granted_permissions>` 获取已保存书签的列表。
 
 .. rst-class:: classref-item-separator
 
@@ -1624,7 +1638,7 @@ void **force_process_and_drop_events** **(** **)**
 
 :ref:`Rect2[]<class_Rect2>` **get_display_cutouts** **(** **)** |const|
 
-返回 :ref:`Rect2<class_Rect2>` 的 :ref:`Array<class_Array>`\ ，其中每个都是显示切口或凹口的边界矩形。这些是相机和传感器使用的无边框屏幕上的非功能区域。如果设备没有切口，则返回一个空数组。另请参见 :ref:`get_display_safe_area<class_DisplayServer_method_get_display_safe_area>`\ 。
+返回 :ref:`Rect2<class_Rect2>` 的 :ref:`Array<class_Array>`\ ，其中每个都是显示切口或凹口的边界矩形。这些是相机和传感器使用的无边框屏幕上的非功能区域。如果设备没有切口，则返回一个空数组。另见 :ref:`get_display_safe_area<class_DisplayServer_method_get_display_safe_area>`\ 。
 
 \ **注意：**\ 目前仅在 Android 上实现。其他平台将返回一个空数组，即使它们确实有显示切口或凹口。
 
@@ -1638,7 +1652,7 @@ void **force_process_and_drop_events** **(** **)**
 
 :ref:`Rect2i<class_Rect2i>` **get_display_safe_area** **(** **)** |const|
 
-返回应渲染交互式控件的显示器的未遮挡区域。另请参见 :ref:`get_display_cutouts<class_DisplayServer_method_get_display_cutouts>`\ 。
+返回应渲染交互式控件的显示器的未遮挡区域。另见 :ref:`get_display_cutouts<class_DisplayServer_method_get_display_cutouts>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1712,9 +1726,9 @@ void **force_process_and_drop_events** **(** **)**
 
 :ref:`bool<class_bool>` **get_swap_cancel_ok** **(** **)**
 
-Returns ``true`` if positions of **OK** and **Cancel** buttons are swapped in dialogs. This is enabled by default on Windows to follow interface conventions, and be toggled by changing :ref:`ProjectSettings.gui/common/swap_cancel_ok<class_ProjectSettings_property_gui/common/swap_cancel_ok>`.
+如果对话框中的\ **确定**\ 和\ **取消**\ 按钮进行了交换，则返回 ``true``\ 。在 Windows 上默认启用，从而遵循界面规范，可以使用 :ref:`ProjectSettings.gui/common/swap_cancel_ok<class_ProjectSettings_property_gui/common/swap_cancel_ok>` 开关。
 
-\ **Note:** This doesn't affect native dialogs such as the ones spawned by :ref:`dialog_show<class_DisplayServer_method_dialog_show>`.
+\ **注意：**\ 由 :ref:`dialog_show<class_DisplayServer_method_dialog_show>` 等生成的原生对话框不受影响。
 
 .. rst-class:: classref-item-separator
 
@@ -2259,6 +2273,22 @@ void **global_menu_clear** **(** :ref:`String<class_String>` menu_root **)**
 
 ----
 
+.. _class_DisplayServer_method_global_menu_is_item_hidden:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **global_menu_is_item_hidden** **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx **)** |const|
+
+如果索引为 ``idx`` 的菜单项被隐藏，则返回 ``true``\ 。
+
+关于如何隐藏菜单项的更多信息见 :ref:`global_menu_set_item_hidden<class_DisplayServer_method_global_menu_set_item_hidden>`\ 。
+
+\ **注意：**\ 该方法仅在 macOS 上实现。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_DisplayServer_method_global_menu_is_item_radio_checkable:
 
 .. rst-class:: classref-method
@@ -2356,6 +2386,36 @@ void **global_menu_set_item_checked** **(** :ref:`String<class_String>` menu_roo
 void **global_menu_set_item_disabled** **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`bool<class_bool>` disabled **)**
 
 启用/禁用索引为 ``idx`` 的菜单项。禁用状态下无法被选中，也无法激活动作。
+
+\ **注意：**\ 该方法仅在 macOS 上实现。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_DisplayServer_method_global_menu_set_item_hidden:
+
+.. rst-class:: classref-method
+
+void **global_menu_set_item_hidden** **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`bool<class_bool>` hidden **)**
+
+隐藏/显示索引为 ``idx`` 的菜单项。当它被隐藏时，项目不会出现在菜单中，并且无法调用其操作。
+
+\ **注意：**\ 该方法仅在 macOS 上实现。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_DisplayServer_method_global_menu_set_item_hover_callbacks:
+
+.. rst-class:: classref-method
+
+void **global_menu_set_item_hover_callbacks** **(** :ref:`String<class_String>` menu_root, :ref:`int<class_int>` idx, :ref:`Callable<class_Callable>` callback **)**
+
+设置索引为 ``idx`` 的菜单项的回调。回调会在菜单项被悬停时发出。
+
+\ **注意：**\ ``callback`` Callable 需要接受一个 Variant 参数，传入 Callable 的参数是创建菜单项时传给 ``tag`` 参数的值。
 
 \ **注意：**\ 该方法仅在 macOS 上实现。
 
@@ -2509,6 +2569,18 @@ void **global_menu_set_item_tooltip** **(** :ref:`String<class_String>` menu_roo
 
 ----
 
+.. _class_DisplayServer_method_global_menu_set_popup_callbacks:
+
+.. rst-class:: classref-method
+
+void **global_menu_set_popup_callbacks** **(** :ref:`String<class_String>` menu_root, :ref:`Callable<class_Callable>` open_callback, :ref:`Callable<class_Callable>` close_callback **)**
+
+注册当菜单分别即将显示或关闭时发出的可调用对象。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_DisplayServer_method_has_feature:
 
 .. rst-class:: classref-method
@@ -2557,7 +2629,7 @@ void **global_menu_set_item_tooltip** **(** :ref:`String<class_String>` menu_roo
 
 如果操作系统正在使用暗黑模式，则返回 ``true``\ 。
 
-\ **注意：**\ 这个方法在 macOS、Windows 和 Linux（X11）上实现。
+\ **注意：**\ 该方法在 Android、iOS、macOS、Windows 和 Linux（X11）上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -2571,7 +2643,7 @@ void **global_menu_set_item_tooltip** **(** :ref:`String<class_String>` menu_roo
 
 如果操作系统支持暗黑模式，则返回 ``true``\ 。
 
-\ **注意：**\ 这个方法在 macOS、Windows 和 Linux（X11）上实现。
+\ **注意：**\ 该方法在 Android、iOS、macOS、Windows 和 Linux（X11）上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -2583,7 +2655,7 @@ void **global_menu_set_item_tooltip** **(** :ref:`String<class_String>` menu_roo
 
 :ref:`bool<class_bool>` **is_touchscreen_available** **(** **)** |const|
 
-Returns ``true`` if touch events are available (Android or iOS), the capability is detected on the Web platform or if :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` is ``true``.
+如果触摸事件可用（Android 或 iOS）、在 Web 平台上检测到该功能或如果 :ref:`ProjectSettings.input_devices/pointing/emulate_touch_from_mouse<class_ProjectSettings_property_input_devices/pointing/emulate_touch_from_mouse>` 为 ``true`` 时，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2623,9 +2695,9 @@ Returns ``true`` if touch events are available (Android or iOS), the capability 
 
 :ref:`Key<enum_@GlobalScope_Key>` **keyboard_get_label_from_physical** **(** :ref:`Key<enum_@GlobalScope_Key>` keycode **)** |const|
 
-Converts a physical (US QWERTY) ``keycode`` to localized label printed on the key in the active keyboard layout.
+将物理（美式 QWERTY）键码 ``keycode`` 转换为活动键盘布局中的按键上印刷的本地化标签。
 
-\ **Note:** This method is implemented on Linux (X11), macOS and Windows.
+\ **注意：**\ 该方法在 Linux（X11）、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -3319,7 +3391,7 @@ void **warp_mouse** **(** :ref:`Vector2i<class_Vector2i>` position **)**
 
 :ref:`int<class_int>` **window_get_current_screen** **(** :ref:`int<class_int>` window_id=0 **)** |const|
 
-该函数返回窗口 ``window_id`` 所在的屏幕。如果屏幕跨越多个显示器，则返回窗口中心所在的屏幕。另请参见 :ref:`window_set_current_screen<class_DisplayServer_method_window_set_current_screen>` 。
+该函数返回窗口 ``window_id`` 所在的屏幕。如果屏幕跨越多个显示器，则返回窗口中心所在的屏幕。另见 :ref:`window_set_current_screen<class_DisplayServer_method_window_set_current_screen>` 。
 
 .. rst-class:: classref-item-separator
 
@@ -3417,7 +3489,7 @@ void **warp_mouse** **(** :ref:`Vector2i<class_Vector2i>` position **)**
 
 :ref:`Vector2i<class_Vector2i>` **window_get_position_with_decorations** **(** :ref:`int<class_int>` window_id=0 **)** |const|
 
-该函数返回给定窗口在屏幕上的位置，包括操作系统绘制的边框。另请参见 :ref:`window_get_position<class_DisplayServer_method_window_get_position>`\ 。
+该函数返回给定窗口在屏幕上的位置，包括操作系统绘制的边框。另见 :ref:`window_get_position<class_DisplayServer_method_window_get_position>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -3454,6 +3526,20 @@ void **warp_mouse** **(** :ref:`Vector2i<class_Vector2i>` position **)**
 :ref:`Vector2i<class_Vector2i>` **window_get_size_with_decorations** **(** :ref:`int<class_int>` window_id=0 **)** |const|
 
 返回窗口的大小（单位为像素），包含操作系统绘制的边框，该窗口由 ``window_id`` 指定。另见 :ref:`window_get_size<class_DisplayServer_method_window_get_size>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_DisplayServer_method_window_get_title_size:
+
+.. rst-class:: classref-method
+
+:ref:`Vector2i<class_Vector2i>` **window_get_title_size** **(** :ref:`String<class_String>` title, :ref:`int<class_int>` window_id=0 **)** |const|
+
+返回由 ``window_id`` 指定的窗口的估计窗口标题栏大小（包括文本和窗口按钮）（单位：像素）。该方法不会更改窗口标题。
+
+\ **注意：**\ 该方法在 macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -3567,6 +3653,8 @@ void **window_set_drop_files_callback** **(** :ref:`Callable<class_Callable>` ca
 
 设置回调 ``callback``\ ，将文件从操作系统的文件管理器拖放到由 ``window_id`` 指定的窗口中时会进行调用。
 
+\ **警告：**\ 仅限高级用户！将这样的回调添加到 :ref:`Window<class_Window>` 节点将覆盖其默认实现，这可能会引入错误。
+
 \ **注意：**\ 这个方法在 Windows、macOS、Linux（X11）、Web 上实现。
 
 .. rst-class:: classref-item-separator
@@ -3633,6 +3721,8 @@ void **window_set_input_event_callback** **(** :ref:`Callable<class_Callable>` c
 
 设置回调 ``callback``\ ，向由 ``window_id`` 指定的窗口发送任何 :ref:`InputEvent<class_InputEvent>` 时会进行回调。
 
+\ **警告：**\ 仅限高级用户！将这样的回调添加到 :ref:`Window<class_Window>` 节点将覆盖其默认实现，这可能会引入错误。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -3644,6 +3734,8 @@ void **window_set_input_event_callback** **(** :ref:`Callable<class_Callable>` c
 void **window_set_input_text_callback** **(** :ref:`Callable<class_Callable>` callback, :ref:`int<class_int>` window_id=0 **)**
 
 设置回调 ``callback``\ ，使用虚拟键盘向由 ``window_id`` 指定的窗口输入文本时会进行回调。
+
+\ **警告：**\ 仅限高级用户！将这样的回调添加到 :ref:`Window<class_Window>` 节点将覆盖其默认实现，这可能会引入错误。
 
 .. rst-class:: classref-item-separator
 
@@ -3787,6 +3879,8 @@ void **window_set_rect_changed_callback** **(** :ref:`Callable<class_Callable>` 
 
 设置回调 ``callback``\ ，由 ``window_id`` 指定的窗口发生移动或调整大小时会进行回调。
 
+\ **警告：**\ 仅限高级用户！将这样的回调添加到 :ref:`Window<class_Window>` 节点将覆盖其默认实现，这可能会引入错误。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -3877,10 +3971,12 @@ void **window_set_window_event_callback** **(** :ref:`Callable<class_Callable>` 
 
 设置回调 ``callback``\ ，由 ``window_id`` 指定的窗口发生事件时会进行回调。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+\ **警告：**\ 仅限高级用户！将这样的回调添加到 :ref:`Window<class_Window>` 节点将覆盖其默认实现，这可能会引入错误。
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

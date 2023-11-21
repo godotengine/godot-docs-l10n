@@ -10,36 +10,36 @@
 EditorResourcePreviewGenerator
 ==============================
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 自定义的预览生成器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 自定义代码来生成预览。请查看 :ref:`EditorSettings<class_EditorSettings>` 中的 ``file_dialog/thumbnail_size``\ ，找出适合做预览的尺寸。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`           | :ref:`_can_generate_small_preview<class_EditorResourcePreviewGenerator_method__can_generate_small_preview>` **(** **)** |virtual| |const|                                                                                                      |
-   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`_generate<class_EditorResourcePreviewGenerator_method__generate>` **(** :ref:`Resource<class_Resource>` resource, :ref:`Vector2i<class_Vector2i>` size, :ref:`Dictionary<class_Dictionary>` metadata **)** |virtual| |const|             |
-   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`_generate_from_path<class_EditorResourcePreviewGenerator_method__generate_from_path>` **(** :ref:`String<class_String>` path, :ref:`Vector2i<class_Vector2i>` size, :ref:`Dictionary<class_Dictionary>` metadata **)** |virtual| |const| |
-   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`           | :ref:`_generate_small_preview_automatically<class_EditorResourcePreviewGenerator_method__generate_small_preview_automatically>` **(** **)** |virtual| |const|                                                                                  |
-   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`           | :ref:`_handles<class_EditorResourcePreviewGenerator_method__handles>` **(** :ref:`String<class_String>` type **)** |virtual| |const|                                                                                                           |
-   +-----------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`           | :ref:`_can_generate_small_preview<class_EditorResourcePreviewGenerator_private_method__can_generate_small_preview>` **(** **)** |virtual| |const|                                                                                                      |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`_generate<class_EditorResourcePreviewGenerator_private_method__generate>` **(** :ref:`Resource<class_Resource>` resource, :ref:`Vector2i<class_Vector2i>` size, :ref:`Dictionary<class_Dictionary>` metadata **)** |virtual| |const|             |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`_generate_from_path<class_EditorResourcePreviewGenerator_private_method__generate_from_path>` **(** :ref:`String<class_String>` path, :ref:`Vector2i<class_Vector2i>` size, :ref:`Dictionary<class_Dictionary>` metadata **)** |virtual| |const| |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`           | :ref:`_generate_small_preview_automatically<class_EditorResourcePreviewGenerator_private_method__generate_small_preview_automatically>` **(** **)** |virtual| |const|                                                                                  |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`           | :ref:`_handles<class_EditorResourcePreviewGenerator_private_method__handles>` **(** :ref:`String<class_String>` type **)** |virtual| |const|                                                                                                           |
+   +-----------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -47,16 +47,16 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EditorResourcePreviewGenerator_method__can_generate_small_preview:
+.. _class_EditorResourcePreviewGenerator_private_method__can_generate_small_preview:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_can_generate_small_preview** **(** **)** |virtual| |const|
 
-如果该函数返回 ``true``\ ，则该生成器也会为小型预览调用 :ref:`_generate<class_EditorResourcePreviewGenerator_method__generate>` 或 :ref:`_generate_from_path<class_EditorResourcePreviewGenerator_method__generate_from_path>`\ 。
+如果该函数返回 ``true``\ ，则该生成器也会为小型预览调用 :ref:`_generate<class_EditorResourcePreviewGenerator_private_method__generate>` 或 :ref:`_generate_from_path<class_EditorResourcePreviewGenerator_private_method__generate_from_path>`\ 。
 
 默认情况下，它返回 ``false``\ 。
 
@@ -64,49 +64,49 @@ Method Descriptions
 
 ----
 
-.. _class_EditorResourcePreviewGenerator_method__generate:
+.. _class_EditorResourcePreviewGenerator_private_method__generate:
 
 .. rst-class:: classref-method
 
 :ref:`Texture2D<class_Texture2D>` **_generate** **(** :ref:`Resource<class_Resource>` resource, :ref:`Vector2i<class_Vector2i>` size, :ref:`Dictionary<class_Dictionary>` metadata **)** |virtual| |const|
 
-Generate a preview from a given resource with the specified size. This must always be implemented.
+根据给定的资源生成指定大小的预览。必须始终实现。
 
-Returning an empty texture is an OK way to fail and let another generator take care.
+失败时允许返回空纹理，会由其他生成器接手。
 
-Care must be taken because this function is always called from a thread (not the main thread).
+必须保持谨慎，因为这个函数始终是从（主线程以外的）线程中调用的。
 
-\ ``metadata`` dictionary can be modified to store file-specific metadata that can be used in :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path<class_EditorResourceTooltipPlugin_method__make_tooltip_for_path>` (like image size, sample length etc.).
+可以修改 ``metadata`` 字典，从而保存能够在 :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` 中使用的文件相关的源数据（例如图片大小、采样长度等）。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_EditorResourcePreviewGenerator_method__generate_from_path:
+.. _class_EditorResourcePreviewGenerator_private_method__generate_from_path:
 
 .. rst-class:: classref-method
 
 :ref:`Texture2D<class_Texture2D>` **_generate_from_path** **(** :ref:`String<class_String>` path, :ref:`Vector2i<class_Vector2i>` size, :ref:`Dictionary<class_Dictionary>` metadata **)** |virtual| |const|
 
-Generate a preview directly from a path with the specified size. Implementing this is optional, as default code will load and call :ref:`_generate<class_EditorResourcePreviewGenerator_method__generate>`.
+根据路径直接生成指定大小的预览。可选实现，默认代码会在加载后调用 :ref:`_generate<class_EditorResourcePreviewGenerator_private_method__generate>`\ 。
 
-Returning an empty texture is an OK way to fail and let another generator take care.
+失败时允许返回空纹理，会由其他生成器接手。
 
-Care must be taken because this function is always called from a thread (not the main thread).
+必须保持谨慎，因为这个函数始终是从（主线程以外的）线程中调用的。
 
-\ ``metadata`` dictionary can be modified to store file-specific metadata that can be used in :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path<class_EditorResourceTooltipPlugin_method__make_tooltip_for_path>` (like image size, sample length etc.).
+可以修改 ``metadata`` 字典，从而保存能够在 :ref:`EditorResourceTooltipPlugin._make_tooltip_for_path<class_EditorResourceTooltipPlugin_private_method__make_tooltip_for_path>` 中使用的文件相关的源数据（例如图片大小、采样长度等）。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_EditorResourcePreviewGenerator_method__generate_small_preview_automatically:
+.. _class_EditorResourcePreviewGenerator_private_method__generate_small_preview_automatically:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_generate_small_preview_automatically** **(** **)** |virtual| |const|
 
-如果该函数返回 ``true``\ ，则该生成器将自动从通过方法 :ref:`_generate<class_EditorResourcePreviewGenerator_method__generate>` 或 :ref:`_generate_from_path<class_EditorResourcePreviewGenerator_method__generate_from_path>` 生成的普通预览纹理生成小型预览。
+如果该函数返回 ``true``\ ，则该生成器将自动从通过方法 :ref:`_generate<class_EditorResourcePreviewGenerator_private_method__generate>` 或 :ref:`_generate_from_path<class_EditorResourcePreviewGenerator_private_method__generate_from_path>` 生成的普通预览纹理生成小型预览。
 
 默认情况下，它返回 ``false``\ 。
 
@@ -114,7 +114,7 @@ Care must be taken because this function is always called from a thread (not the
 
 ----
 
-.. _class_EditorResourcePreviewGenerator_method__handles:
+.. _class_EditorResourcePreviewGenerator_private_method__handles:
 
 .. rst-class:: classref-method
 
@@ -122,10 +122,10 @@ Care must be taken because this function is always called from a thread (not the
 
 如果你的生成器支持类型为 ``type`` 的资源，则返回 ``true``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

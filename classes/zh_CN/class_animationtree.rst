@@ -10,14 +10,14 @@
 AnimationTree
 =============
 
-**Inherits:** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`AnimationMixer<class_AnimationMixer>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于 :ref:`AnimationPlayer<class_AnimationPlayer>` 中高级动画过渡的节点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于 :ref:`AnimationPlayer<class_AnimationPlayer>` 中高级动画过渡的节点。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 AnimationTree <../tutorials/animation/animation_tree>`
 
@@ -34,53 +34,35 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
-   +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------+
-   | :ref:`bool<class_bool>`                                                      | :ref:`active<class_AnimationTree_property_active>`                                             | ``false``         |
-   +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------+
-   | :ref:`NodePath<class_NodePath>`                                              | :ref:`advance_expression_base_node<class_AnimationTree_property_advance_expression_base_node>` | ``NodePath(".")`` |
-   +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------+
-   | :ref:`NodePath<class_NodePath>`                                              | :ref:`anim_player<class_AnimationTree_property_anim_player>`                                   | ``NodePath("")``  |
-   +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------+
-   | :ref:`int<class_int>`                                                        | :ref:`audio_max_polyphony<class_AnimationTree_property_audio_max_polyphony>`                   | ``32``            |
-   +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------+
-   | :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` | :ref:`process_callback<class_AnimationTree_property_process_callback>`                         | ``1``             |
-   +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------+
-   | :ref:`NodePath<class_NodePath>`                                              | :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>`                       | ``NodePath("")``  |
-   +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------+
-   | :ref:`AnimationNode<class_AnimationNode>`                                    | :ref:`tree_root<class_AnimationTree_property_tree_root>`                                       |                   |
-   +------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------+-------------------+
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`NodePath<class_NodePath>`                   | :ref:`advance_expression_base_node<class_AnimationTree_property_advance_expression_base_node>` | ``NodePath(".")``                                                                       |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`NodePath<class_NodePath>`                   | :ref:`anim_player<class_AnimationTree_property_anim_player>`                                   | ``NodePath("")``                                                                        |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                           | deterministic                                                                                  | ``true`` (overrides :ref:`AnimationMixer<class_AnimationMixer_property_deterministic>`) |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
+   | :ref:`AnimationRootNode<class_AnimationRootNode>` | :ref:`tree_root<class_AnimationTree_property_tree_root>`                                       |                                                                                         |
+   +---------------------------------------------------+------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Variant<class_Variant>`       | :ref:`_post_process_key_value<class_AnimationTree_method__post_process_key_value>` **(** :ref:`Animation<class_Animation>` animation, :ref:`int<class_int>` track, :ref:`Variant<class_Variant>` value, :ref:`Object<class_Object>` object, :ref:`int<class_int>` object_idx **)** |virtual| |const| |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                | :ref:`advance<class_AnimationTree_method_advance>` **(** :ref:`float<class_float>` delta **)**                                                                                                                                                                                                       |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Vector3<class_Vector3>`       | :ref:`get_root_motion_position<class_AnimationTree_method_get_root_motion_position>` **(** **)** |const|                                                                                                                                                                                             |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Vector3<class_Vector3>`       | :ref:`get_root_motion_position_accumulator<class_AnimationTree_method_get_root_motion_position_accumulator>` **(** **)** |const|                                                                                                                                                                     |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Quaternion<class_Quaternion>` | :ref:`get_root_motion_rotation<class_AnimationTree_method_get_root_motion_rotation>` **(** **)** |const|                                                                                                                                                                                             |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Quaternion<class_Quaternion>` | :ref:`get_root_motion_rotation_accumulator<class_AnimationTree_method_get_root_motion_rotation_accumulator>` **(** **)** |const|                                                                                                                                                                     |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Vector3<class_Vector3>`       | :ref:`get_root_motion_scale<class_AnimationTree_method_get_root_motion_scale>` **(** **)** |const|                                                                                                                                                                                                   |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Vector3<class_Vector3>`       | :ref:`get_root_motion_scale_accumulator<class_AnimationTree_method_get_root_motion_scale_accumulator>` **(** **)** |const|                                                                                                                                                                           |
-   +-------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` | :ref:`get_process_callback<class_AnimationTree_method_get_process_callback>` **(** **)** |const|                                                                           |
+   +------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                                         | :ref:`set_process_callback<class_AnimationTree_method_set_process_callback>` **(** :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` mode **)** |
+   +------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -88,21 +70,7 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
-
-.. _class_AnimationTree_signal_animation_finished:
-
-.. rst-class:: classref-signal
-
-**animation_finished** **(** :ref:`StringName<class_StringName>` anim_name **)**
-
-某个动画完成播放时发出通知。
-
-\ **注意：**\ 如果动画需要循环或者是被中止的，则不会发出该信号。另外请意识到可能存在同步和过渡所导致的不可见的播放。
-
-.. rst-class:: classref-item-separator
-
+信号
 ----
 
 .. _class_AnimationTree_signal_animation_player_changed:
@@ -111,21 +79,7 @@ Signals
 
 **animation_player_changed** **(** **)**
 
-当 :ref:`anim_player<class_AnimationTree_property_anim_player>` 被改变时触发。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_signal_animation_started:
-
-.. rst-class:: classref-signal
-
-**animation_started** **(** :ref:`StringName<class_StringName>` anim_name **)**
-
-某个动画完成播放时发出通知。
-
-\ **注意：**\ 如果动画需要循环或者是被中止的，则不会发出该信号。另外请意识到可能存在同步和过渡所导致的不可见的播放。
+当 :ref:`anim_player<class_AnimationTree_property_anim_player>` 被改变时发出。
 
 .. rst-class:: classref-section-separator
 
@@ -133,8 +87,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_AnimationTree_AnimationProcessCallback:
 
@@ -148,7 +102,7 @@ enum **AnimationProcessCallback**:
 
 :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **ANIMATION_PROCESS_PHYSICS** = ``0``
 
-动画将在物理帧期间推进（见 :ref:`Node.NOTIFICATION_INTERNAL_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS>`\ ）。
+用于向后兼容。见 :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_PHYSICS>`\ 。
 
 .. _class_AnimationTree_constant_ANIMATION_PROCESS_IDLE:
 
@@ -156,7 +110,7 @@ enum **AnimationProcessCallback**:
 
 :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **ANIMATION_PROCESS_IDLE** = ``1``
 
-动画将在处理帧期间推进（见 :ref:`Node.NOTIFICATION_INTERNAL_PROCESS<class_Node_constant_NOTIFICATION_INTERNAL_PROCESS>`\ ）。
+用于向后兼容。见 :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_IDLE<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_IDLE>`\ 。
 
 .. _class_AnimationTree_constant_ANIMATION_PROCESS_MANUAL:
 
@@ -164,7 +118,7 @@ enum **AnimationProcessCallback**:
 
 :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **ANIMATION_PROCESS_MANUAL** = ``2``
 
-只能手动行进动画（见 :ref:`advance<class_AnimationTree_method_advance>`\ ）。
+用于向后兼容。见 :ref:`AnimationMixer.ANIMATION_CALLBACK_MODE_PROCESS_MANUAL<class_AnimationMixer_constant_ANIMATION_CALLBACK_MODE_PROCESS_MANUAL>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -172,25 +126,8 @@ enum **AnimationProcessCallback**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
-
-.. _class_AnimationTree_property_active:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **active** = ``false``
-
-.. rst-class:: classref-property-setget
-
-- void **set_active** **(** :ref:`bool<class_bool>` value **)**
-- :ref:`bool<class_bool>` **is_active** **(** **)**
-
-如果 ``true`` 时，\ **AnimationTree** 将执行逻辑处理。
-
-.. rst-class:: classref-item-separator
-
-----
+属性说明
+--------
 
 .. _class_AnimationTree_property_advance_expression_base_node:
 
@@ -203,7 +140,7 @@ Property Descriptions
 - void **set_advance_expression_base_node** **(** :ref:`NodePath<class_NodePath>` value **)**
 - :ref:`NodePath<class_NodePath>` **get_advance_expression_base_node** **(** **)**
 
-用于评估 AnimationNode :ref:`Expression<class_Expression>` 的 :ref:`Node<class_Node>` 的路径，如果内部未明确指定路径时使用。
+用于评估 :ref:`AnimationNode<class_AnimationNode>` :ref:`Expression<class_Expression>` 的 :ref:`Node<class_Node>` 的路径，内部未明确指定路径时使用。
 
 .. rst-class:: classref-item-separator
 
@@ -226,73 +163,18 @@ Property Descriptions
 
 ----
 
-.. _class_AnimationTree_property_audio_max_polyphony:
-
-.. rst-class:: classref-property
-
-:ref:`int<class_int>` **audio_max_polyphony** = ``32``
-
-.. rst-class:: classref-property-setget
-
-- void **set_audio_max_polyphony** **(** :ref:`int<class_int>` value **)**
-- :ref:`int<class_int>` **get_audio_max_polyphony** **(** **)**
-
-每个指定的 AudioStreamPlayer 可能同时发出的声音的数量。
-
-例如，如果该值为 ``32`` 并且动画有两个音轨，则分配的两个 :ref:`AudioStreamPlayer<class_AudioStreamPlayer>` 可以同时播放最多 ``32`` 个声音。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_property_process_callback:
-
-.. rst-class:: classref-property
-
-:ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **process_callback** = ``1``
-
-.. rst-class:: classref-property-setget
-
-- void **set_process_callback** **(** :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` value **)**
-- :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **get_process_callback** **(** **)**
-
-该 **AnimationTree** 的处理模式。可用的模式见 :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_property_root_motion_track:
-
-.. rst-class:: classref-property
-
-:ref:`NodePath<class_NodePath>` **root_motion_track** = ``NodePath("")``
-
-.. rst-class:: classref-property-setget
-
-- void **set_root_motion_track** **(** :ref:`NodePath<class_NodePath>` value **)**
-- :ref:`NodePath<class_NodePath>` **get_root_motion_track** **(** **)**
-
-用于根部运动的动画轨道的路径。路径必须是指向节点的场景树有效路径，必须从将实现动画的节点的父节点开始指定。要指定控件属性或骨骼的轨道，请在路径后附加其名称，用 ``":"`` 隔开。例如，\ ``"character/skeleton:ankle"`` 或 ``"character/mesh:transform/local"``\ 。
-
-如果轨道的类型是 :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>`\ 、\ :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>`\ 、或者 :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>`\ ，那么将取消视觉上的变换，其动画看起来将是留在原地。参阅 :ref:`get_root_motion_position<class_AnimationTree_method_get_root_motion_position>`\ 、\ :ref:`get_root_motion_rotation<class_AnimationTree_method_get_root_motion_rotation>`\ 、\ :ref:`get_root_motion_scale<class_AnimationTree_method_get_root_motion_scale>`\ 、和 :ref:`RootMotionView<class_RootMotionView>`\ 。
-
-.. rst-class:: classref-item-separator
-
-----
-
 .. _class_AnimationTree_property_tree_root:
 
 .. rst-class:: classref-property
 
-:ref:`AnimationNode<class_AnimationNode>` **tree_root**
+:ref:`AnimationRootNode<class_AnimationRootNode>` **tree_root**
 
 .. rst-class:: classref-property-setget
 
-- void **set_tree_root** **(** :ref:`AnimationNode<class_AnimationNode>` value **)**
-- :ref:`AnimationNode<class_AnimationNode>` **get_tree_root** **(** **)**
+- void **set_tree_root** **(** :ref:`AnimationRootNode<class_AnimationRootNode>` value **)**
+- :ref:`AnimationRootNode<class_AnimationRootNode>` **get_tree_root** **(** **)**
 
-该 **AnimationTree** 的根动画节点。见 :ref:`AnimationNode<class_AnimationNode>`\ 。
+该 **AnimationTree** 的根动画节点。见 :ref:`AnimationRootNode<class_AnimationRootNode>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -300,256 +182,33 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_AnimationTree_method__post_process_key_value:
+.. _class_AnimationTree_method_get_process_callback:
 
 .. rst-class:: classref-method
 
-:ref:`Variant<class_Variant>` **_post_process_key_value** **(** :ref:`Animation<class_Animation>` animation, :ref:`int<class_int>` track, :ref:`Variant<class_Variant>` value, :ref:`Object<class_Object>` object, :ref:`int<class_int>` object_idx **)** |virtual| |const|
+:ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` **get_process_callback** **(** **)** |const|
 
-一个用于播放期间键获取之后的处理的虚函数。
+用于向后兼容。见 :ref:`AnimationCallbackModeProcess<enum_AnimationMixer_AnimationCallbackModeProcess>`\ 。
 
 .. rst-class:: classref-item-separator
 
 ----
 
-.. _class_AnimationTree_method_advance:
+.. _class_AnimationTree_method_set_process_callback:
 
 .. rst-class:: classref-method
 
-void **advance** **(** :ref:`float<class_float>` delta **)**
-
-手动将动画前进指定的时间（单位为秒）。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_method_get_root_motion_position:
-
-.. rst-class:: classref-method
-
-:ref:`Vector3<class_Vector3>` **get_root_motion_position** **(** **)** |const|
-
-将具有 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 的位置的运动增量，检索为一个可以在其他地方使用的 :ref:`Vector3<class_Vector3>`\ 。
-
-如果 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 不是 :ref:`Animation.TYPE_POSITION_3D<class_Animation_constant_TYPE_POSITION_3D>` 类型轨道的路径，则返回 ``Vector3(0, 0, 0)``\ 。
-
-另见 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 和 :ref:`RootMotionView<class_RootMotionView>`\ 。
-
-最基本的示例是将位置应用于 :ref:`CharacterBody3D<class_CharacterBody3D>`\ ：
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    var current_rotation: Quaternion
-    
-    func _process(delta):
-        if Input.is_action_just_pressed("animate"):
-            current_rotation = get_quaternion()
-            state_machine.travel("Animate")
-        var velocity: Vector3 = current_rotation * animation_tree.get_root_motion_position() / delta
-        set_velocity(velocity)
-        move_and_slide()
-
-
-
-通过将其与 :ref:`get_root_motion_position_accumulator<class_AnimationTree_method_get_root_motion_position_accumulator>` 结合使用，你可以更正确地应用根运动位置来考虑节点的旋转。
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    func _process(delta):
-        if Input.is_action_just_pressed("animate"):
-            state_machine.travel("Animate")
-        set_quaternion(get_quaternion() * animation_tree.get_root_motion_rotation())
-        var velocity: Vector3 = (animation_tree.get_root_motion_rotation_accumulator().inverse() * get_quaternion()) * animation_tree.get_root_motion_position() / delta
-        set_velocity(velocity)
-        move_and_slide()
-
-
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_method_get_root_motion_position_accumulator:
-
-.. rst-class:: classref-method
-
-:ref:`Vector3<class_Vector3>` **get_root_motion_position_accumulator** **(** **)** |const|
-
-检索具有 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 的位置轨道的混合值，返回的是可以在其他地方使用的 :ref:`Vector3<class_Vector3>`\ 。
-
-在想要遵循动画的初始动画帧值的情况下很有用。
-
-例如，如果前一帧播放的是一个只有单个动画帧 ``Vector3(0, 0, 0)`` 的动画，然后下一帧播放的是一个只有单个动画帧\ ``Vector3(1, 0, 1)`` 的动画，它们之间的差异可以这样计算：
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    var prev_root_motion_position_accumulator: Vector3
-    
-    func _process(delta):
-        if Input.is_action_just_pressed("animate"):
-            state_machine.travel("Animate")
-        var current_root_motion_position_accumulator: Vector3 = animation_tree.get_root_motion_position_accumulator()
-        var difference: Vector3 = current_root_motion_position_accumulator - prev_root_motion_position_accumulator
-        prev_root_motion_position_accumulator = current_root_motion_position_accumulator
-        transform.origin += difference
-
-
-
-不过，如果动画是循环播放的，就可能会发生预料之外的不连续变化，所以这只对一些简单的情况有用。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_method_get_root_motion_rotation:
-
-.. rst-class:: classref-method
-
-:ref:`Quaternion<class_Quaternion>` **get_root_motion_rotation** **(** **)** |const|
-
-检索带有 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 的旋转运动，作为一个 :ref:`Quaternion<class_Quaternion>`\ ，可以在其他地方使用。
-
-如果 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 不是 :ref:`Animation.TYPE_ROTATION_3D<class_Animation_constant_TYPE_ROTATION_3D>` 类型的轨迹的路径，返回 ``Quaternion(0, 0, 0, 1)`` 。
-
-另见 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 和 :ref:`RootMotionView<class_RootMotionView>`\ 。
-
-最基本的例子是对 :ref:`CharacterBody3D<class_CharacterBody3D>` 应用旋转。
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    func _process(delta):
-        if Input.is_action_just_pressed("animate"):
-            state_machine.travel("Animate")
-        set_quaternion(get_quaternion() * animation_tree.get_root_motion_rotation() )
-
-
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_method_get_root_motion_rotation_accumulator:
-
-.. rst-class:: classref-method
-
-:ref:`Quaternion<class_Quaternion>` **get_root_motion_rotation_accumulator** **(** **)** |const|
-
-检索带有 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 的旋转轨道的混合值，作为一个 :ref:`Quaternion<class_Quaternion>`\ ，可以在其他地方使用。
-
-这里必须正确地结合根运动位置，并且要考虑到旋转。参考 :ref:`get_root_motion_position<class_AnimationTree_method_get_root_motion_position>`\ 。
-
-并且，当你想重视动画的初始动画帧的值时，这会很有用。
-
-比如说，如果一个动画在上一帧只播放一个 ``Quaternion(0, 0, 0, 1)`` 动画帧，并且一个动画在下一帧只播放了一个动画帧的 ``Quaternion(0, 0.707, 0, 0.707)`` 时，它们相差的值可以这样求出：
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    var prev_root_motion_rotation_accumulator: Quaternion
-    
-    func _process(delta):
-        if Input.is_action_just_pressed("animate"):
-            state_machine.travel("Animate")
-        var current_root_motion_rotation_accumulator: Quaternion = animation_tree.get_root_motion_Quaternion_accumulator()
-        var difference: Quaternion = prev_root_motion_rotation_accumulator.inverse() * current_root_motion_rotation_accumulator
-        prev_root_motion_rotation_accumulator = current_root_motion_rotation_accumulator
-        transform.basis *= difference
-
-
-
-然而，当一个动画循环时，可能会得到一个意料之外的变化，所以这个只在一些简单情况下才有用。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_method_get_root_motion_scale:
-
-.. rst-class:: classref-method
-
-:ref:`Vector3<class_Vector3>` **get_root_motion_scale** **(** **)** |const|
-
-获取 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 的缩放运动增量，类型为 :ref:`Vector3<class_Vector3>`\ ，可以在其他地方使用。
-
-如果 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 不是类型为 :ref:`Animation.TYPE_SCALE_3D<class_Animation_constant_TYPE_SCALE_3D>` 的轨道的路径，则返回 ``Vector3(0, 0, 0)`` 。
-
-另见 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 和 :ref:`RootMotionView<class_RootMotionView>`\ 。
-
-最基本的例子是对 :ref:`CharacterBody3D<class_CharacterBody3D>` 应用缩放。
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    var current_scale: Vector3 = Vector3(1, 1, 1)
-    var scale_accum: Vector3 = Vector3(1, 1, 1)
-    
-    func _process(delta):
-        if Input.is_action_just_pressed("animate"):
-            current_scale = get_scale()
-            scale_accum = Vector3(1, 1, 1)
-            state_machine.travel("Animate")
-        scale_accum += animation_tree.get_root_motion_scale()
-        set_scale(current_scale * scale_accum)
-
-
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_AnimationTree_method_get_root_motion_scale_accumulator:
-
-.. rst-class:: classref-method
-
-:ref:`Vector3<class_Vector3>` **get_root_motion_scale_accumulator** **(** **)** |const|
-
-检索带有 :ref:`root_motion_track<class_AnimationTree_property_root_motion_track>` 的缩放轨道的混合值，作为一个 :ref:`Vector3<class_Vector3>`\ ，可以在其他地方使用。
-
-例如，如果一个动画在前一帧只播放了一个动画帧 ``Vector3(1, 1, 1)``\ ，并且一个动画在后一帧只播放了一个动画帧 ``Vector3(2, 2, 2)``\ ，他们之间相差的值可以这样求出：
-
-
-.. tabs::
-
- .. code-tab:: gdscript
-
-    var prev_root_motion_scale_accumulator: Vector3
-    
-    func _process(delta):
-        if Input.is_action_just_pressed("animate"):
-            state_machine.travel("Animate")
-        var current_root_motion_scale_accumulator: Vector3 = animation_tree.get_root_motion_scale_accumulator()
-        var difference: Vector3 = current_root_motion_scale_accumulator - prev_root_motion_scale_accumulator
-        prev_root_motion_scale_accumulator = current_root_motion_scale_accumulator
-        transform.basis = transform.basis.scaled(difference)
-
-
-
-然而，当一个动画循环时，可能会得到一个意料之外的变化，所以这个只在一些简单情况下才有用。
-
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+void **set_process_callback** **(** :ref:`AnimationProcessCallback<enum_AnimationTree_AnimationProcessCallback>` mode **)**
+
+用于向后兼容。见 :ref:`AnimationCallbackModeProcess<enum_AnimationMixer_AnimationCallbackModeProcess>`\ 。
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

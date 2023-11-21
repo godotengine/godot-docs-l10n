@@ -10,25 +10,25 @@
 CallbackTweener
 ===============
 
-**Inherits:** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Tweener<class_Tweener>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 在可选的延迟之后调用指定的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**CallbackTweener** is used to call a method in a tweening sequence. See :ref:`Tween.tween_callback<class_Tween_method_tween_callback>` for more usage information.
+**CallbackTweener** 可用于在补间序列中调用方法。更多用法信息请参阅 :ref:`Tween.tween_callback<class_Tween_method_tween_callback>`\ 。
 
-The tweener will finish automatically if the callback's target object is freed.
+如果回调的目标对象被释放，该补间将自动结束。
 
-\ **Note:** :ref:`Tween.tween_callback<class_Tween_method_tween_callback>` is the only correct way to create **CallbackTweener**. Any **CallbackTweener** created manually will not function correctly.
+\ **注意：**\ 创建 **CallbackTweener** 的唯一正确方法是 :ref:`Tween.tween_callback<class_Tween_method_tween_callback>`\ 。任何手动创建的 **CallbackTweener** 都无法正常工作。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CallbackTweener_method_set_delay:
 
@@ -61,10 +61,10 @@ Method Descriptions
     var tween = get_tree().create_tween()
     tween.tween_callback(queue_free).set_delay(2) # 会在 2 秒后调用 queue_free()
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

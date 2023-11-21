@@ -10,30 +10,30 @@
 RootMotionView
 ==============
 
-**Inherits:** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`VisualInstance3D<class_VisualInstance3D>` **<** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-在 :ref:`AnimationTree<class_AnimationTree>` 中设置根运动的仅编辑器可用的辅助工具。
+仅限编辑器的帮助程序，用于在 :ref:`AnimationMixer<class_AnimationMixer>` 中设置根运动。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-*根运动*\ （Root Motion）是一种动画技术，通过使用网格的骨架为角色提供冲量。在处理 3D 动画时，动画师通常使用根骨骼来为其余的骨骼提供动作，从而使得角色的动画能够准确地匹配地面，并实现在电影中与物体的精确交互。另请参阅 :ref:`AnimationTree<class_AnimationTree>`\ 。
+*根运动*\ 是指一种动画技术，通过使用网格的骨架为角色提供冲量。在处理 3D 动画时，动画师的一种流行技术是使用根骨架骨骼为骨架的其余部分提供运动。这允许以脚步实际与下面的地板匹配的方式对角色进行动画处理。它还允许在过场动画期间与对象进行精确交互。另请参阅 :ref:`AnimationMixer<class_AnimationMixer>`\ 。
 
 \ **注意：**\ **RootMotionView** 仅在编辑器中可见。在运行的项目中将自动隐藏。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `使用 AnimationTree - 根运动 <../tutorials/animation/animation_tree.html#root-motion>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -56,8 +56,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RootMotionView_property_animation_path:
 
@@ -70,7 +70,7 @@ Property Descriptions
 - void **set_animation_path** **(** :ref:`NodePath<class_NodePath>` value **)**
 - :ref:`NodePath<class_NodePath>` **get_animation_path** **(** **)**
 
-用作根运动的基的 :ref:`AnimationTree<class_AnimationTree>` 节点的路径。
+用作根运动的基的 :ref:`AnimationMixer<class_AnimationMixer>` 节点的路径。
 
 .. rst-class:: classref-item-separator
 
@@ -140,10 +140,10 @@ Property Descriptions
 
 如果为 ``true``\ ，则网格的点都将位于相同的 Y 坐标上（\ *local* Y = 0）。如果 ``false``\ ，则保留点的原始 Y 坐标。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,21 +10,21 @@
 VScrollBar
 ==========
 
-**Inherits:** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`ScrollBar<class_ScrollBar>` **<** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 垂直滚动条，从顶部（最小）滚动到底部（最大）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 垂直滚动条，通常用于为超出控件可见高度的内容进行导航。这是基于 :ref:`Range<class_Range>` 的控件，从顶部（最小）滚动到底部（最大）。注意，滚动方向和 :ref:`VSlider<class_VSlider>` 相反。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -35,179 +35,10 @@ Properties
    | |bitfield|\<:ref:`SizeFlags<enum_Control_SizeFlags>`\> | size_flags_vertical   | ``1`` (overrides :ref:`Control<class_Control_property_size_flags_vertical>`)   |
    +--------------------------------------------------------+-----------------------+--------------------------------------------------------------------------------+
 
-.. rst-class:: classref-reftable-group
-
-Theme Properties
-----------------
-
-.. table::
-   :widths: auto
-
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`decrement<class_VScrollBar_theme_icon_decrement>`                     |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`decrement_highlight<class_VScrollBar_theme_icon_decrement_highlight>` |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`decrement_pressed<class_VScrollBar_theme_icon_decrement_pressed>`     |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`increment<class_VScrollBar_theme_icon_increment>`                     |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`increment_highlight<class_VScrollBar_theme_icon_increment_highlight>` |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`Texture2D<class_Texture2D>` | :ref:`increment_pressed<class_VScrollBar_theme_icon_increment_pressed>`     |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber<class_VScrollBar_theme_style_grabber>`                        |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_highlight<class_VScrollBar_theme_style_grabber_highlight>`    |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_pressed<class_VScrollBar_theme_style_grabber_pressed>`        |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`scroll<class_VScrollBar_theme_style_scroll>`                          |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-   | :ref:`StyleBox<class_StyleBox>`   | :ref:`scroll_focus<class_VScrollBar_theme_style_scroll_focus>`              |
-   +-----------------------------------+-----------------------------------------------------------------------------+
-
-.. rst-class:: classref-section-separator
-
-----
-
-.. rst-class:: classref-descriptions-group
-
-Theme Property Descriptions
----------------------------
-
-.. _class_VScrollBar_theme_icon_decrement:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **decrement**
-
-按钮使用的图标，用于向上滚动\ :ref:`ScrollBar<class_ScrollBar>`\ 。支持使用\ :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`\ 属性的自定义步长。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_icon_decrement_highlight:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **decrement_highlight**
-
-当鼠标指针悬停在递减按钮上时显示。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_icon_decrement_pressed:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **decrement_pressed**
-
-在按下递减按钮时显示。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_icon_increment:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **increment**
-
-作为按钮使用的图标，用于向下滚动\ :ref:`ScrollBar<class_ScrollBar>`\ 。支持使用\ :ref:`ScrollBar.custom_step<class_ScrollBar_property_custom_step>`\ 属性的自定义步长。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_icon_increment_highlight:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **increment_highlight**
-
-当鼠标指针悬停在增量按钮上时显示。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_icon_increment_pressed:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`Texture2D<class_Texture2D>` **increment_pressed**
-
-在按下增量按钮时显示。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_style_grabber:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **grabber**
-
-用作拖动条的纹理，表示当前的可拖动元素。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_style_grabber_highlight:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **grabber_highlight**
-
-当鼠标悬停在拖动条上时使用。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_style_grabber_pressed:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **grabber_pressed**
-
-在拖动条被拖动时使用。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_style_scroll:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **scroll**
-
-用作此 :ref:`ScrollBar<class_ScrollBar>` 的背景。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_VScrollBar_theme_style_scroll_focus:
-
-.. rst-class:: classref-themeproperty
-
-:ref:`StyleBox<class_StyleBox>` **scroll_focus**
-
-当 :ref:`ScrollBar<class_ScrollBar>` 具有 GUI 焦点时用作背景。
-
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

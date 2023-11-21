@@ -10,31 +10,31 @@
 TileSet
 =======
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Tilemap 的图块库。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A TileSet is a library of tiles for a :ref:`TileMap<class_TileMap>`. A TileSet handles a list of :ref:`TileSetSource<class_TileSetSource>`, each of them storing a set of tiles.
+TileSet 是 :ref:`TileMap<class_TileMap>` 的图块库。TileSet 处理 :ref:`TileSetSource<class_TileSetSource>` 列表，每个表中存储一组图块。
 
-Tiles can either be from a :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`, which renders tiles out of a texture with support for physics, navigation, etc., or from a :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`, which exposes scene-based tiles.
+图块既可以来自 :ref:`TileSetAtlasSource<class_TileSetAtlasSource>`\ ，可以渲染纹理中的图块，支持物理、导航等功能，也可以来自 :ref:`TileSetScenesCollectionSource<class_TileSetScenesCollectionSource>`\ ，提供基于场景的图块。
 
-Tiles are referenced by using three IDs: their source ID, their atlas coordinates ID, and their alternative tile ID.
+图块通过使用三个 ID 来引用：源 ID、图集坐标 ID、备选图块 ID。
 
-A TileSet can be configured so that its tiles expose more or fewer properties. To do so, the TileSet resources use property layers, which you can add or remove depending on your needs.
+TileSet 可以配置图块暴露哪些属性。为了做到这一点，TileSet 资源使用了属性层，你可以根据需要进行添加和删除。
 
-For example, adding a physics layer allows giving collision shapes to your tiles. Each layer has dedicated properties (physics layer and mask), so you may add several TileSet physics layers for each type of collision you need.
+例如，添加物理层可以为瓷砖提供碰撞形状。不同的层都有不同的属性（物理层和遮罩），要实现不同类型的碰撞，你也可以添加多个 TileSet 物理层。
 
-See the functions to add new layers for more information.
+更多信息请参阅添加新层的函数。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用 Tilemap <../tutorials/2d/using_tilemaps>`
 
@@ -52,8 +52,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -72,8 +72,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -238,8 +238,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_TileSet_TileShape:
 
@@ -543,8 +543,8 @@ enum **TerrainMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TileSet_property_tile_layout:
 
@@ -633,8 +633,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TileSet_method_add_custom_data_layer:
 
@@ -886,7 +886,7 @@ void **clear_tile_proxies** **(** **)**
 
 :ref:`int<class_int>` **get_next_source_id** **(** **)** |const|
 
-返回新的未使用的源 ID。这个生成的 ID 与调用 ``add_source`` 将返回的 ID 相同。
+返回新的未使用的源 ID。这个生成的 ID 与调用 :ref:`add_source<class_TileSet_method_add_source>` 将返回的 ID 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -1164,11 +1164,11 @@ void **clear_tile_proxies** **(** **)**
 
 :ref:`Array<class_Array>` **map_tile_proxy** **(** :ref:`int<class_int>` source_from, :ref:`Vector2i<class_Vector2i>` coords_from, :ref:`int<class_int>` alternative_from **)** |const|
 
-According to the configured proxies, maps the provided identifiers to a new set of identifiers. The source ID, atlas coordinates ID and alternative tile ID are returned as a 3 elements Array.
+根据配置的代理，将提供的标识符映射到一组新的标识符。返回的是由源 ID、图集坐标 ID 和备选图块 ID 这三个元素构成的 Array。
 
-This function first look for matching alternative-level proxies, then coordinates-level proxies, then source-level proxies.
+这个函数首先查找匹配的备选级代理，然后是坐标级代理，然后是源级代理。
 
-If no proxy corresponding to provided identifiers are found, returns the same values the ones used as arguments.
+如果未找到与提供的标识符对应的代理，则返回与用作参数的值相同的值。
 
 .. rst-class:: classref-item-separator
 
@@ -1578,10 +1578,10 @@ void **set_terrain_set_mode** **(** :ref:`int<class_int>` terrain_set, :ref:`Ter
 
 设置地形模式。每种模式决定了图块形状的哪一个位被用来匹配相邻图块的地形。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

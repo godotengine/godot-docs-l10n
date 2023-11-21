@@ -10,23 +10,23 @@
 Slider
 ======
 
-**Inherits:** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Range<class_Range>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`HSlider<class_HSlider>`, :ref:`VSlider<class_VSlider>`
+**派生：** :ref:`HSlider<class_HSlider>`, :ref:`VSlider<class_VSlider>`
 
 滑块的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 滑块的抽象基类，通过将抓取器（滑块）沿水平轴或垂直轴移动类调整取值。滑块是基于 :ref:`Range<class_Range>` 的控件。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -45,14 +45,42 @@ Properties
    | :ref:`bool<class_bool>`                  | :ref:`ticks_on_borders<class_Slider_property_ticks_on_borders>` | ``false``                                                           |
    +------------------------------------------+-----------------------------------------------------------------+---------------------------------------------------------------------+
 
+.. rst-class:: classref-reftable-group
+
+主题属性
+--------
+
+.. table::
+   :widths: auto
+
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`             | :ref:`center_grabber<class_Slider_theme_constant_center_grabber>`              | ``0`` |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`int<class_int>`             | :ref:`grabber_offset<class_Slider_theme_constant_grabber_offset>`              | ``0`` |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber<class_Slider_theme_icon_grabber>`                                |       |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber_disabled<class_Slider_theme_icon_grabber_disabled>`              |       |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`grabber_highlight<class_Slider_theme_icon_grabber_highlight>`            |       |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`Texture2D<class_Texture2D>` | :ref:`tick<class_Slider_theme_icon_tick>`                                      |       |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_area<class_Slider_theme_style_grabber_area>`                     |       |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`grabber_area_highlight<class_Slider_theme_style_grabber_area_highlight>` |       |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`slider<class_Slider_theme_style_slider>`                                 |       |
+   +-----------------------------------+--------------------------------------------------------------------------------+-------+
+
 .. rst-class:: classref-section-separator
 
 ----
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Slider_signal_drag_ended:
 
@@ -80,8 +108,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Slider_property_editable:
 
@@ -147,10 +175,123 @@ Property Descriptions
 
 如果为 ``true``\ ，则滑动条将显示最小值和最大值的刻度。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. rst-class:: classref-section-separator
+
+----
+
+.. rst-class:: classref-descriptions-group
+
+主题属性说明
+------------
+
+.. _class_Slider_theme_constant_center_grabber:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **center_grabber** = ``0``
+
+布尔常量。如果为 ``1``\ ，则会忽略抓取器纹理的大小，根据其中心位置将其缩放到滚动条的边界。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_constant_grabber_offset:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`int<class_int>` **grabber_offset** = ``0``
+
+抓取器的垂直或水平偏移量。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_icon_grabber:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **grabber**
+
+用作拖动条的纹理（可拖动的元素）。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_icon_grabber_disabled:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **grabber_disabled**
+
+抓取器禁用时的材质。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_icon_grabber_highlight:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **grabber_highlight**
+
+抓取器获得焦点时的材质。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_icon_tick:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`Texture2D<class_Texture2D>` **tick**
+
+刻度的纹理。当 :ref:`tick_count<class_Slider_property_tick_count>` 大于 0 时可见。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_style_grabber_area:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **grabber_area**
+
+抓取器左侧或底部区域的背景。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_style_grabber_area_highlight:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **grabber_area_highlight**
+
+抓取器被悬停或聚焦时，显示的左侧或底部区域的背景。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Slider_theme_style_slider:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **slider**
+
+整个滑动条的背景。影响 :ref:`grabber_area<class_Slider_theme_style_grabber_area>` 的高度或宽度。
+
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

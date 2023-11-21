@@ -10,16 +10,16 @@
 SyntaxHighlighter
 =================
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`CodeHighlighter<class_CodeHighlighter>`, :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`
+**派生：** :ref:`CodeHighlighter<class_CodeHighlighter>`, :ref:`EditorSyntaxHighlighter<class_EditorSyntaxHighlighter>`
 
 语法高亮器的基类。可以向 :ref:`TextEdit<class_TextEdit>` 提供语法高亮数据。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 语法高亮器的基类。向 :ref:`TextEdit<class_TextEdit>` 提供语法高亮数据。关联的 :ref:`TextEdit<class_TextEdit>` 节点会根据需要调用 **SyntaxHighlighter**\ 。
 
@@ -27,27 +27,27 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                | :ref:`_clear_highlighting_cache<class_SyntaxHighlighter_method__clear_highlighting_cache>` **(** **)** |virtual|                                            |
-   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Dictionary<class_Dictionary>` | :ref:`_get_line_syntax_highlighting<class_SyntaxHighlighter_method__get_line_syntax_highlighting>` **(** :ref:`int<class_int>` line **)** |virtual| |const| |
-   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                | :ref:`_update_cache<class_SyntaxHighlighter_method__update_cache>` **(** **)** |virtual|                                                                    |
-   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                | :ref:`clear_highlighting_cache<class_SyntaxHighlighter_method_clear_highlighting_cache>` **(** **)**                                                        |
-   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Dictionary<class_Dictionary>` | :ref:`get_line_syntax_highlighting<class_SyntaxHighlighter_method_get_line_syntax_highlighting>` **(** :ref:`int<class_int>` line **)**                     |
-   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`TextEdit<class_TextEdit>`     | :ref:`get_text_edit<class_SyntaxHighlighter_method_get_text_edit>` **(** **)** |const|                                                                      |
-   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                | :ref:`update_cache<class_SyntaxHighlighter_method_update_cache>` **(** **)**                                                                                |
-   +-------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                | :ref:`_clear_highlighting_cache<class_SyntaxHighlighter_private_method__clear_highlighting_cache>` **(** **)** |virtual|                                            |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>` | :ref:`_get_line_syntax_highlighting<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` **(** :ref:`int<class_int>` line **)** |virtual| |const| |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                | :ref:`_update_cache<class_SyntaxHighlighter_private_method__update_cache>` **(** **)** |virtual|                                                                    |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                | :ref:`clear_highlighting_cache<class_SyntaxHighlighter_method_clear_highlighting_cache>` **(** **)**                                                                |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Dictionary<class_Dictionary>` | :ref:`get_line_syntax_highlighting<class_SyntaxHighlighter_method_get_line_syntax_highlighting>` **(** :ref:`int<class_int>` line **)**                             |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`TextEdit<class_TextEdit>`     | :ref:`get_text_edit<class_SyntaxHighlighter_method_get_text_edit>` **(** **)** |const|                                                                              |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                | :ref:`update_cache<class_SyntaxHighlighter_method_update_cache>` **(** **)**                                                                                        |
+   +-------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -55,10 +55,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_SyntaxHighlighter_method__clear_highlighting_cache:
+.. _class_SyntaxHighlighter_private_method__clear_highlighting_cache:
 
 .. rst-class:: classref-method
 
@@ -70,7 +70,7 @@ void **_clear_highlighting_cache** **(** **)** |virtual|
 
 ----
 
-.. _class_SyntaxHighlighter_method__get_line_syntax_highlighting:
+.. _class_SyntaxHighlighter_private_method__get_line_syntax_highlighting:
 
 .. rst-class:: classref-method
 
@@ -84,7 +84,7 @@ void **_clear_highlighting_cache** **(** **)** |virtual|
 
 ----
 
-.. _class_SyntaxHighlighter_method__update_cache:
+.. _class_SyntaxHighlighter_private_method__update_cache:
 
 .. rst-class:: classref-method
 
@@ -104,7 +104,7 @@ void **clear_highlighting_cache** **(** **)**
 
 清空所有缓存的语法高亮数据。
 
-然后调用可覆盖的 :ref:`_clear_highlighting_cache<class_SyntaxHighlighter_method__clear_highlighting_cache>` 方法。
+然后调用可覆盖的 :ref:`_clear_highlighting_cache<class_SyntaxHighlighter_private_method__clear_highlighting_cache>` 方法。
 
 .. rst-class:: classref-item-separator
 
@@ -116,7 +116,7 @@ void **clear_highlighting_cache** **(** **)**
 
 :ref:`Dictionary<class_Dictionary>` **get_line_syntax_highlighting** **(** :ref:`int<class_int>` line **)**
 
-返回某一行的语法高亮数据。如果尚未缓存该行，则会调用 :ref:`_get_line_syntax_highlighting<class_SyntaxHighlighter_method__get_line_syntax_highlighting>` 来计算相关数据。
+返回某一行的语法高亮数据。如果尚未缓存该行，则会调用 :ref:`_get_line_syntax_highlighting<class_SyntaxHighlighter_private_method__get_line_syntax_highlighting>` 来计算相关数据。
 
 返回的 :ref:`Dictionary<class_Dictionary>` 是将列号映射到另一个 :ref:`Dictionary<class_Dictionary>`\ 。列号代表区域的开始位置，当前区域在遇到其他区域或行尾时结束。嵌套的 :ref:`Dictionary<class_Dictionary>` 中包含该区域的数据，目前仅支持“color”字段。
 
@@ -157,14 +157,14 @@ void **clear_highlighting_cache** **(** **)**
 
 void **update_cache** **(** **)**
 
-清除然后更新 **SyntaxHighlighter** 缓存。为一个回调覆盖 :ref:`_update_cache<class_SyntaxHighlighter_method__update_cache>`\ 。
+清除然后更新 **SyntaxHighlighter** 缓存。为一个回调覆盖 :ref:`_update_cache<class_SyntaxHighlighter_private_method__update_cache>`\ 。
 
 \ **注意：**\ 当关联的 :ref:`TextEdit<class_TextEdit>` 节点更新它自己的缓存时，该函数会被自动调用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

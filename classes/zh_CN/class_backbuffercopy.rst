@@ -10,23 +10,23 @@
 BackBufferCopy
 ==============
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A node that copies a region of the screen to a buffer for access in shader code.
+这种节点能够将屏幕中的某个区域复制到缓冲中，方便从着色器代码中访问。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Node for back-buffering the currently-displayed screen. The region defined in the **BackBufferCopy** node is buffered with the content of the screen it covers, or the entire screen according to the :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>`. It can be accessed in shader scripts using the screen texture (i.e. a uniform sampler with ``hint_screen_texture``).
+用于后台缓冲当前显示屏幕的节点。会根据 :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>` 对 **BackBufferCopy** 节点中定义的区域所覆盖的屏幕内容或整个屏幕进行缓冲。可以在着色器脚本中使用屏幕纹理来访问（即带有 ``hint_screen_texture`` 的 uniform 采样器）。
 
-\ **Note:** Since this node inherits from :ref:`Node2D<class_Node2D>` (and not :ref:`Control<class_Control>`), anchors and margins won't apply to child :ref:`Control<class_Control>`-derived nodes. This can be problematic when resizing the window. To avoid this, add :ref:`Control<class_Control>`-derived nodes as *siblings* to the **BackBufferCopy** node instead of adding them as children.
+\ **注意：**\ 由于该节点继承自 :ref:`Node2D<class_Node2D>`\ （而非 :ref:`Control<class_Control>`\ ），因此锚点和边距不适用于子 :ref:`Control<class_Control>` 派生节点。这在调整窗口大小时可能会出现问题。为避免这种情况，请将 :ref:`Control<class_Control>` 派生节点添加为 **BackBufferCopy** 节点的\ *同级*\ 节点，而不是将它们添加为子节点。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_BackBufferCopy_CopyMode:
 
@@ -82,8 +82,8 @@ enum **CopyMode**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_BackBufferCopy_property_copy_mode:
 
@@ -115,10 +115,10 @@ Property Descriptions
 
 该 **BackBufferCopy** 所覆盖的区域。只有当 :ref:`copy_mode<class_BackBufferCopy_property_copy_mode>` 为 :ref:`COPY_MODE_RECT<class_BackBufferCopy_constant_COPY_MODE_RECT>` 时才使用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

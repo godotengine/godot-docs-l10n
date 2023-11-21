@@ -10,22 +10,22 @@
 PhysicsServer2D
 ===============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`PhysicsServer2DExtension<class_PhysicsServer2DExtension>`
+**派生：** :ref:`PhysicsServer2DExtension<class_PhysicsServer2DExtension>`
 
 用于访问低阶 2D 物理的服务器接口。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 PhysicsServer2D 是负责所有 2D 物理的服务器。它可以直接创建和操作所有物理对象：
 
 - *Space（空间）*\ 是用于物理仿真的自包含世界。它包含实体、区域和关节。可以对其状态进行查询，获取碰撞和相交信息，并且可以修改部分仿真参数。
 
-- *Shape（形状）*\ 是圆形、矩形、胶囊形、多边形等几何形状。加入到实体/区域中就可以用来进行碰撞检测，还可以带有相对于实体/区域原点的额外变换。实体/区域中可以添加多个（变换后的）形状，同一个形状可以使用不同的局部变换添加到实体/区域中。
+- *Shape（形状）*\ 是圆形、矩形、胶囊形、多边形等几何形状。加入到实体/区域中就可以用来进行碰撞检测，还可以带有相对于实体/区域原点的额外变换。实体/区域中可以添加多个（变换后的）形状，并且可以使用不同的局部变换将单个形状多次添加到实体/区域中。
 
 - *Body（实体）*\ 是物理对象，可以处于静态、运动学或刚性模式。可以对其状态进行查询和更新（例如位置、速度等）。可以设置力的集成回调，自定义实体的物理特性。
 
@@ -39,8 +39,8 @@ PhysicsServer2D 是负责所有 2D 物理的服务器。它可以直接创建和
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -246,7 +246,11 @@ Methods
    +-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                              | :ref:`joint_set_param<class_PhysicsServer2D_method_joint_set_param>` **(** :ref:`RID<class_RID>` joint, :ref:`JointParam<enum_PhysicsServer2D_JointParam>` param, :ref:`float<class_float>` value **)**                                                                                                            |
    +-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                                           | :ref:`pin_joint_get_flag<class_PhysicsServer2D_method_pin_joint_get_flag>` **(** :ref:`RID<class_RID>` joint, :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` flag **)** |const|                                                                                                                            |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`float<class_float>`                                         | :ref:`pin_joint_get_param<class_PhysicsServer2D_method_pin_joint_get_param>` **(** :ref:`RID<class_RID>` joint, :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` param **)** |const|                                                                                                                       |
+   +-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                                              | :ref:`pin_joint_set_flag<class_PhysicsServer2D_method_pin_joint_set_flag>` **(** :ref:`RID<class_RID>` joint, :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` flag, :ref:`bool<class_bool>` enabled **)**                                                                                                   |
    +-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                              | :ref:`pin_joint_set_param<class_PhysicsServer2D_method_pin_joint_set_param>` **(** :ref:`RID<class_RID>` joint, :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` param, :ref:`float<class_float>` value **)**                                                                                              |
    +-------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -285,8 +289,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_PhysicsServer2D_SpaceParameter:
 
@@ -910,6 +914,56 @@ enum **PinJointParam**:
 
 常量，用于设置/获取销关节的纽带可以弯曲多少。该参数的默认值为 ``0.0``\ 。
 
+.. _class_PhysicsServer2D_constant_PIN_JOINT_LIMIT_UPPER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` **PIN_JOINT_LIMIT_UPPER** = ``1``
+
+绕该销的最大旋转。
+
+.. _class_PhysicsServer2D_constant_PIN_JOINT_LIMIT_LOWER:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` **PIN_JOINT_LIMIT_LOWER** = ``2``
+
+绕该销的最小旋转。
+
+.. _class_PhysicsServer2D_constant_PIN_JOINT_MOTOR_TARGET_VELOCITY:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` **PIN_JOINT_MOTOR_TARGET_VELOCITY** = ``3``
+
+马达的目标速度。单位为弧度每秒。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _enum_PhysicsServer2D_PinJointFlag:
+
+.. rst-class:: classref-enumeration
+
+enum **PinJointFlag**:
+
+.. _class_PhysicsServer2D_constant_PIN_JOINT_FLAG_ANGULAR_LIMIT_ENABLED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` **PIN_JOINT_FLAG_ANGULAR_LIMIT_ENABLED** = ``0``
+
+如果为 ``true``\ ，则销关节具有最大和最小旋转。
+
+.. _class_PhysicsServer2D_constant_PIN_JOINT_FLAG_MOTOR_ENABLED:
+
+.. rst-class:: classref-enumeration-constant
+
+:ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` **PIN_JOINT_FLAG_MOTOR_ENABLED** = ``1``
+
+如果为 ``true``\ ，则马达将转动该销。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1044,8 +1098,8 @@ enum **ProcessInfo**:
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PhysicsServer2D_method_area_add_shape:
 
@@ -1209,7 +1263,7 @@ void **area_clear_shapes** **(** :ref:`RID<class_RID>` area **)**
 
 :ref:`RID<class_RID>` **area_get_space** **(** :ref:`RID<class_RID>` area **)** |const|
 
-返回分配给该区域的空间 :ref:`RID<class_RID>`\ 。如果没有分配空间，则返回 ``RID()``\ 。
+返回分配给该区域的空间 :ref:`RID<class_RID>`\ 。如果没有分配空间，则返回空 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1785,7 +1839,7 @@ void **body_clear_shapes** **(** :ref:`RID<class_RID>` body **)**
 
 :ref:`RID<class_RID>` **body_get_space** **(** :ref:`RID<class_RID>` body **)** |const|
 
-返回分配给该实体的空间的 :ref:`RID<class_RID>`\ 。如果没有分配空间，则返回 ``RID()``\ 。
+返回分配给该实体的空间的 :ref:`RID<class_RID>`\ 。如果没有分配空间，则返回空 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2299,7 +2353,7 @@ void **joint_make_groove** **(** :ref:`RID<class_RID>` joint, :ref:`Vector2<clas
 
 void **joint_make_pin** **(** :ref:`RID<class_RID>` joint, :ref:`Vector2<class_Vector2>` anchor, :ref:`RID<class_RID>` body_a, :ref:`RID<class_RID>` body_b=RID() **)**
 
-使关节成为一个销关节。如果 ``body_b`` 是 ``RID()``\ ，则 ``body_a`` 被固定到点 ``anchor``\ （在全局坐标中给出）； 否则，\ ``body_a`` 在 ``anchor`` 点被固定到 ``body_b``\ （在全局坐标中给出）。要设置特定于销关节的参数，请参阅 :ref:`pin_joint_set_param<class_PhysicsServer2D_method_pin_joint_set_param>`\ 。
+使关节成为一个销关节。如果 ``body_b`` 是一个空 :ref:`RID<class_RID>`\ ，则 ``body_a`` 被固定到点 ``anchor``\ （在全局坐标中给出）； 否则，\ ``body_a`` 在 ``anchor`` 点被固定到 ``body_b``\ （在全局坐标中给出）。要设置特定于销关节的参数，请参阅 :ref:`pin_joint_set_param<class_PhysicsServer2D_method_pin_joint_set_param>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2317,6 +2371,18 @@ void **joint_set_param** **(** :ref:`RID<class_RID>` joint, :ref:`JointParam<enu
 
 ----
 
+.. _class_PhysicsServer2D_method_pin_joint_get_flag:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **pin_joint_get_flag** **(** :ref:`RID<class_RID>` joint, :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` flag **)** |const|
+
+获取销关节标志（请参阅 :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` 常量）。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_PhysicsServer2D_method_pin_joint_get_param:
 
 .. rst-class:: classref-method
@@ -2324,6 +2390,18 @@ void **joint_set_param** **(** :ref:`RID<class_RID>` joint, :ref:`JointParam<enu
 :ref:`float<class_float>` **pin_joint_get_param** **(** :ref:`RID<class_RID>` joint, :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>` param **)** |const|
 
 返回销关节参数的值。有关可用参数列表，请参阅 :ref:`PinJointParam<enum_PhysicsServer2D_PinJointParam>`\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_PhysicsServer2D_method_pin_joint_set_flag:
+
+.. rst-class:: classref-method
+
+void **pin_joint_set_flag** **(** :ref:`RID<class_RID>` joint, :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` flag, :ref:`bool<class_bool>` enabled **)**
+
+设置销关节标志（请参阅 :ref:`PinJointFlag<enum_PhysicsServer2D_PinJointFlag>` 常量）。
 
 .. rst-class:: classref-item-separator
 
@@ -2421,19 +2499,19 @@ void **shape_set_data** **(** :ref:`RID<class_RID>` shape, :ref:`Variant<class_V
 
 设置定义形状配置的形状数据。要传递的 ``data`` 取决于形状的类型（参见 :ref:`shape_get_type<class_PhysicsServer2D_method_shape_get_type>`\ ）：
 
-- :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer2D_constant_SHAPE_WORLD_BOUNDARY>`\ ：长度为 2 的数组，包含 :ref:`Vector2<class_Vector2>` 类型的 ``normal`` 方向和 ``float`` 类型的距离 ``d``\ ，
+- :ref:`SHAPE_WORLD_BOUNDARY<class_PhysicsServer2D_constant_SHAPE_WORLD_BOUNDARY>`\ ：长度为 2 的数组，包含 :ref:`Vector2<class_Vector2>` 类型的 ``normal`` 方向和 :ref:`float<class_float>` 类型的距离 ``d``\ ，
 
-- :ref:`SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>`\ ：字典，包含键 ``length`` 和 ``float`` 值、以及键 ``slide_on_slope`` 和 ``bool`` 值，
+- :ref:`SHAPE_SEPARATION_RAY<class_PhysicsServer2D_constant_SHAPE_SEPARATION_RAY>`\ ：字典，包含键 ``length`` 和 :ref:`float<class_float>` 值、以及键 ``slide_on_slope`` 和 :ref:`bool<class_bool>` 值，
 
 - :ref:`SHAPE_SEGMENT<class_PhysicsServer2D_constant_SHAPE_SEGMENT>`\ ：\ :ref:`Rect2<class_Rect2>` 类型的 ``rect``\ ，以 ``rect.position`` 表示线段中的第一个点，并以 ``rect.size`` 表示线段中的第二个点，
 
-- :ref:`SHAPE_CIRCLE<class_PhysicsServer2D_constant_SHAPE_CIRCLE>`\ ：\ ``float`` 类型的 ``radius``\ ，
+- :ref:`SHAPE_CIRCLE<class_PhysicsServer2D_constant_SHAPE_CIRCLE>`\ ：\ :ref:`float<class_float>` 类型的 ``radius``\ ，
 
 - :ref:`SHAPE_RECTANGLE<class_PhysicsServer2D_constant_SHAPE_RECTANGLE>`\ ：\ :ref:`Vector2<class_Vector2>` 类型的 ``half_extents``\ ，
 
-- :ref:`SHAPE_CAPSULE<class_PhysicsServer2D_constant_SHAPE_CAPSULE>`\ ：长度为 2 的数组（或一个 :ref:`Vector2<class_Vector2>`\ ），包含一个 ``float`` 类型的 ``height`` 和一个 ``float`` 类型的 ``radius``\ ，
+- :ref:`SHAPE_CAPSULE<class_PhysicsServer2D_constant_SHAPE_CAPSULE>`\ ：长度为 2 的数组（或一个 :ref:`Vector2<class_Vector2>`\ ），包含一个 :ref:`float<class_float>` 类型的 ``height`` 和一个 :ref:`float<class_float>` 类型的 ``radius``\ ，
 
-- :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONVEX_POLYGON>`\ ：按逆时针顺序定义凸多边形的点的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ （在内部使用由连续点形成的每个线段的顺时针向外法线计算）；或一个长度可被 4 整除的 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ，以便每个 4 元组的 ``float`` 包含一个点的坐标，后跟一个向量的坐标表示，该向量是当前点和下一个点之间的线段的顺时针向外法向量，
+- :ref:`SHAPE_CONVEX_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONVEX_POLYGON>`\ ：按逆时针顺序定义凸多边形的点的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ （在内部使用由连续点形成的每个线段的顺时针向外法线计算）；或一个长度可被 4 整除的 :ref:`PackedFloat32Array<class_PackedFloat32Array>`\ ，以便每个 4 元组的 :ref:`float<class_float>` 包含一个点的坐标，后跟一个向量的坐标表示，该向量是当前点和下一个点之间的线段的顺时针向外法向量，
 
 - :ref:`SHAPE_CONCAVE_POLYGON<class_PhysicsServer2D_constant_SHAPE_CONCAVE_POLYGON>`\ ：长度可被 2 整除的 :ref:`PackedVector2Array<class_PackedVector2Array>`\ （每对点形成一个线段）。
 
@@ -2523,10 +2601,10 @@ void **space_set_param** **(** :ref:`RID<class_RID>` space, :ref:`SpaceParameter
 
 在物理服务中创建一个 2D 世界边界形状，并返回标识它的 :ref:`RID<class_RID>`\ 。可使用 :ref:`shape_set_data<class_PhysicsServer2D_method_shape_set_data>` 设置形状的法线方向和距离属性。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,23 +10,23 @@
 CurveXYZTexture
 ===============
 
-**Inherits:** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Texture2D<class_Texture2D>` **<** :ref:`Texture<class_Texture>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A 1D texture where the red, green, and blue color channels correspond to points on 3 curves.
+一维纹理，其中红色、绿色和蓝色通道分别对应 3 条曲线上的点。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-A 1D texture where the red, green, and blue color channels correspond to points on 3 :ref:`Curve<class_Curve>` resources. Compared to using separate :ref:`CurveTexture<class_CurveTexture>`\ s, this further simplifies the task of saving curves as image files.
+1D 纹理，其中红色、绿色和蓝色通道对应于 3 条 :ref:`Curve<class_Curve>` 资源上的点。与使用单独的 :ref:`CurveTexture<class_CurveTexture>` 相比，这进一步简化了将曲线保存为图像文件的任务。
 
-If you only need to store one curve within a single texture, use :ref:`CurveTexture<class_CurveTexture>` instead. See also :ref:`GradientTexture1D<class_GradientTexture1D>` and :ref:`GradientTexture2D<class_GradientTexture2D>`.
+如果只需要在单个纹理中存储一条曲线，请改用 :ref:`CurveTexture<class_CurveTexture>`\ 。另见 :ref:`GradientTexture1D<class_GradientTexture1D>` 和 :ref:`GradientTexture2D<class_GradientTexture2D>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -49,8 +49,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CurveXYZTexture_property_curve_x:
 
@@ -116,10 +116,10 @@ Property Descriptions
 
 纹理宽度（单位为像素）。较大的值能够更好地表示高频数据（例如方向的突变），但会增加生成时间和内存占用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,23 +10,23 @@
 PhysicsDirectSpaceState3D
 =========================
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`PhysicsDirectSpaceState3DExtension<class_PhysicsDirectSpaceState3DExtension>`
+**派生：** :ref:`PhysicsDirectSpaceState3DExtension<class_PhysicsDirectSpaceState3DExtension>`
 
 提供对 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中物理空间的直接访问。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 提供对 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 中物理空间的直接访问。主要用于对驻留在给定空间中的对象和区域进行查询。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`物理介绍 <../tutorials/physics/physics_introduction>`
 
@@ -34,8 +34,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -60,8 +60,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_PhysicsDirectSpaceState3D_method_cast_motion:
 
@@ -151,25 +151,25 @@ Method Descriptions
 
 :ref:`Dictionary<class_Dictionary>` **intersect_ray** **(** :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>` parameters **)**
 
-Intersects a ray in a given space. Ray position and other parameters are defined through :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>`. The returned object is a dictionary with the following fields:
+在给定空间中检测与射线的相交情况。射线的位置和其他参数由 :ref:`PhysicsRayQueryParameters3D<class_PhysicsRayQueryParameters3D>` 定义。返回的对象是包含以下字段的字典：
 
-\ ``collider``: The colliding object.
+\ ``collider``\ ：碰撞到的对象。
 
-\ ``collider_id``: The colliding object's ID.
+\ ``collider_id``\ ：碰撞到的对象的 ID。
 
-\ ``normal``: The object's surface normal at the intersection point, or ``Vector3(0, 0, 0)`` if the ray starts inside the shape and :ref:`PhysicsRayQueryParameters3D.hit_from_inside<class_PhysicsRayQueryParameters3D_property_hit_from_inside>` is ``true``.
+\ ``normal``\ ：该对象表面交点处的法线，如果射线中该形状的内部开始，并且 :ref:`PhysicsRayQueryParameters3D.hit_from_inside<class_PhysicsRayQueryParameters3D_property_hit_from_inside>` 为 ``true``\ ，则为 ``Vector3(0, 0, 0)``\ 。
 
-\ ``position``: The intersection point.
+\ ``position``\ ：交点。
 
-\ ``face_index``: The face index at the intersection point.
+\ ``face_index``\ ：交点处的面索引。
 
-\ **Note:** Returns a valid number only if the intersected shape is a :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>`. Otherwise, ``-1`` is returned.
+\ **注意：**\ 只有相交形状是 :ref:`ConcavePolygonShape3D<class_ConcavePolygonShape3D>` 时才会返回有效值。否则返回 ``-1``\ 。
 
-\ ``rid``: The intersecting object's :ref:`RID<class_RID>`.
+\ ``rid``\ ：相交对象的 :ref:`RID<class_RID>`\ 。
 
-\ ``shape``: The shape index of the colliding shape.
+\ ``shape``\ ：碰撞形状的形状索引。
 
-If the ray did not intersect anything, then an empty dictionary is returned instead.
+如果射线没有发生相交，则返回的是空字典。
 
 .. rst-class:: classref-item-separator
 
@@ -195,10 +195,10 @@ If the ray did not intersect anything, then an empty dictionary is returned inst
 
 \ **注意：**\ 该方法不考虑对象的 ``motion`` 属性。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

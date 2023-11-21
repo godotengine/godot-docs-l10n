@@ -14,8 +14,8 @@ String
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 这是内置的字符串 Variant 类型（GDScript 使用的就是这个类型）。字符串中可以包含任意数量的 Unicode 字符，暴露的方法可用于字符串的操作和生成。字符串有引用计数，使用写时复制技术（每次对字符串的修改都会返回新的 **String**\ ），所以传递字符串的资源损耗很小。
 
@@ -25,19 +25,19 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`GDScript 格式字符串 <../tutorials/scripting/gdscript/gdscript_format_string>`
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -272,8 +272,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -310,8 +310,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_String_constructor_String:
 
@@ -357,8 +357,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_String_method_begins_with:
 
@@ -1470,7 +1470,7 @@ Method Descriptions
 
 :ref:`String<class_String>` **reverse** **(** **)** |const|
 
-Returns the copy of this string in reverse order.
+返回将这个字符串逆序后的副本。
 
 .. rst-class:: classref-item-separator
 
@@ -1770,7 +1770,7 @@ Returns the copy of this string in reverse order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_ascii_buffer** **(** **)** |const|
 
-将该字符串转换为 `ASCII <https://zh.wikipedia.org/wiki/ASCII>`__/Latin-1 编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。这个方法比 :ref:`to_utf8_buffer<class_String_method_to_utf8_buffer>` 稍快，但会把不支持的字符都替换为空格。
+将该字符串转换为 `ASCII <https://zh.wikipedia.org/wiki/ASCII>`__/Latin-1 编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。这个方法比 :ref:`to_utf8_buffer<class_String_method_to_utf8_buffer>` 稍快，但会把不支持的字符都替换为空格。这是 :ref:`PackedByteArray.get_string_from_ascii<class_PackedByteArray_method_get_string_from_ascii>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -1881,7 +1881,7 @@ Returns the copy of this string in reverse order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_utf8_buffer** **(** **)** |const|
 
-将该字符串转换为 `UTF-8 <https://zh.wikipedia.org/wiki/UTF-8>`__ 编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。这个方法比 :ref:`to_ascii_buffer<class_String_method_to_ascii_buffer>` 稍慢，但支持所有 UTF-8 字符。大多数情况下请优先使用这个方法。
+将该字符串转换为 `UTF-8 <https://zh.wikipedia.org/wiki/UTF-8>`__ 编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。这个方法比 :ref:`to_ascii_buffer<class_String_method_to_ascii_buffer>` 稍慢，但支持所有 UTF-8 字符。大多数情况下请优先使用这个方法。这是 :ref:`PackedByteArray.get_string_from_utf8<class_PackedByteArray_method_get_string_from_utf8>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -1893,7 +1893,7 @@ Returns the copy of this string in reverse order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_utf16_buffer** **(** **)** |const|
 
-将该字符串转换为 `UTF-16 <https://zh.wikipedia.org/wiki/UTF-16>`__ 编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
+将该字符串转换为 `UTF-16 <https://zh.wikipedia.org/wiki/UTF-16>`__ 编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。这是 :ref:`PackedByteArray.get_string_from_utf16<class_PackedByteArray_method_get_string_from_utf16>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -1905,7 +1905,7 @@ Returns the copy of this string in reverse order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_utf32_buffer** **(** **)** |const|
 
-将该字符串转换为 `UTF-32 <https://zh.wikipedia.org/wiki/UTF-32>`__ 编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
+将该字符串转换为 `UTF-32 <https://zh.wikipedia.org/wiki/UTF-32>`__ 编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。这是 :ref:`PackedByteArray.get_string_from_utf32<class_PackedByteArray_method_get_string_from_utf32>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -1917,7 +1917,7 @@ Returns the copy of this string in reverse order.
 
 :ref:`PackedByteArray<class_PackedByteArray>` **to_wchar_buffer** **(** **)** |const|
 
-将该字符串转换为 `宽字符 <https://zh.wikipedia.org/zh-cn/%E5%AF%AC%E5%AD%97%E5%85%83>`__\ （\ ``wchat_t``\ ，Windows 上为 UTF-16，其他平台上为 UTF-32）编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。
+将该字符串转换为 `宽字符 <https://zh.wikipedia.org/zh-cn/%E5%AF%AC%E5%AD%97%E5%85%83>`__\ （\ ``wchat_t``\ ，Windows 上为 UTF-16，其他平台上为 UTF-32）编码的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。这是 :ref:`PackedByteArray.get_string_from_wchar<class_PackedByteArray_method_get_string_from_wchar>` 的逆运算。
 
 .. rst-class:: classref-item-separator
 
@@ -2067,8 +2067,8 @@ Returns the copy of this string in reverse order.
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_String_operator_neq_String:
 
@@ -2223,10 +2223,10 @@ Operator Descriptions
 
 返回只包含索引为 ``index`` 的字符的新 **String**\ 。索引从 ``0`` 开始。如果 ``index`` 大于等于 ``0``\ ，则字符是从该字符串的开头开始获取的。如果 ``index`` 为负，则从末尾开始获取。越界访问字符串会导致运行时错误，从编辑器中运行时会将项目暂停。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

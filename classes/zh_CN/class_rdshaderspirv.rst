@@ -10,23 +10,23 @@
 RDShaderSPIRV
 =============
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 SPIR-V 中间表示，是 :ref:`RDShaderFile<class_RDShaderFile>` 的一部分（由 :ref:`RenderingDevice<class_RenderingDevice>` 使用）。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**RDShaderSPIRV** represents a :ref:`RDShaderFile<class_RDShaderFile>`'s `SPIR-V <https://www.khronos.org/spir/>`__ code for various shader stages, as well as possible compilation error messages. SPIR-V is a low-level intermediate shader representation. This intermediate representation is not used directly by GPUs for rendering, but it can be compiled into binary shaders that GPUs can understand. Unlike compiled shaders, SPIR-V is portable across GPU models and driver versions.
+**RDShaderSPIRV** 代表 :ref:`RDShaderFile<class_RDShaderFile>` 不同着色器阶段的 `SPIR-V <https://www.khronos.org/spir/>`__ 代码，以及可能的编译错误消息。SPIR-V 是一种低阶着色器中间表示。这种中间表示无法直接用于 GPU 渲染，但可以被编译为 GPU 能够理解的二进制着色器。与编译后的着色器不同，SPIR-V 可以在不同 GPU 型号以及驱动版本之间移植。
 
-This object is used by :ref:`RenderingDevice<class_RenderingDevice>`.
+这个对象由 :ref:`RenderingDevice<class_RenderingDevice>` 使用。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -55,8 +55,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -77,8 +77,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_RDShaderSPIRV_property_bytecode_compute:
 
@@ -252,8 +252,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_RDShaderSPIRV_method_get_stage_bytecode:
 
@@ -299,10 +299,10 @@ void **set_stage_compile_error** **(** :ref:`ShaderStage<enum_RenderingDevice_Sh
 
 设置给定着色器阶段 ``stage`` 的编译错误消息。等价于设置 :ref:`compile_error_compute<class_RDShaderSPIRV_property_compile_error_compute>`\ 、\ :ref:`compile_error_fragment<class_RDShaderSPIRV_property_compile_error_fragment>`\ 、\ :ref:`compile_error_tesselation_control<class_RDShaderSPIRV_property_compile_error_tesselation_control>`\ 、\ :ref:`compile_error_tesselation_evaluation<class_RDShaderSPIRV_property_compile_error_tesselation_evaluation>`\ 、\ :ref:`compile_error_vertex<class_RDShaderSPIRV_property_compile_error_vertex>` 的其中之一。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,14 +10,14 @@
 EngineProfiler
 ==============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于创建自定义分析器的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 这个类可用于实现自定义分析器，能够与引擎和编辑器调试器进行交互。
 
@@ -25,19 +25,19 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`_add_frame<class_EngineProfiler_method__add_frame>` **(** :ref:`Array<class_Array>` data **)** |virtual|                                                                                                                           |
-   +------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`_tick<class_EngineProfiler_method__tick>` **(** :ref:`float<class_float>` frame_time, :ref:`float<class_float>` process_time, :ref:`float<class_float>` physics_time, :ref:`float<class_float>` physics_frame_time **)** |virtual| |
-   +------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void | :ref:`_toggle<class_EngineProfiler_method__toggle>` **(** :ref:`bool<class_bool>` enable, :ref:`Array<class_Array>` options **)** |virtual|                                                                                              |
-   +------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`_add_frame<class_EngineProfiler_private_method__add_frame>` **(** :ref:`Array<class_Array>` data **)** |virtual|                                                                                                                           |
+   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`_tick<class_EngineProfiler_private_method__tick>` **(** :ref:`float<class_float>` frame_time, :ref:`float<class_float>` process_time, :ref:`float<class_float>` physics_time, :ref:`float<class_float>` physics_frame_time **)** |virtual| |
+   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void | :ref:`_toggle<class_EngineProfiler_private_method__toggle>` **(** :ref:`bool<class_bool>` enable, :ref:`Array<class_Array>` options **)** |virtual|                                                                                              |
+   +------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -45,10 +45,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EngineProfiler_method__add_frame:
+.. _class_EngineProfiler_private_method__add_frame:
 
 .. rst-class:: classref-method
 
@@ -60,7 +60,7 @@ void **_add_frame** **(** :ref:`Array<class_Array>` data **)** |virtual|
 
 ----
 
-.. _class_EngineProfiler_method__tick:
+.. _class_EngineProfiler_private_method__tick:
 
 .. rst-class:: classref-method
 
@@ -72,7 +72,7 @@ void **_tick** **(** :ref:`float<class_float>` frame_time, :ref:`float<class_flo
 
 ----
 
-.. _class_EngineProfiler_method__toggle:
+.. _class_EngineProfiler_private_method__toggle:
 
 .. rst-class:: classref-method
 
@@ -80,10 +80,10 @@ void **_toggle** **(** :ref:`bool<class_bool>` enable, :ref:`Array<class_Array>`
 
 启用/禁用分析器时调用，提供了一组选项 ``options``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

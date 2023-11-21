@@ -10,36 +10,36 @@
 ConcavePolygonShape3D
 =====================
 
-**Inherits:** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Shape3D<class_Shape3D>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于物理碰撞的 3D 三角网格形状。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-一种用于物理模拟的三维三角网格形状。通常用于为 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形状。
+一种用于物理模拟的 3D 三角网格形状。通常用于为 :ref:`CollisionShape3D<class_CollisionShape3D>` 提供形状。
 
-作为一组相互连接的三角形， **ConcavePolygonShape3D** 是最自由配置的单一三维形状之一。它可以用于形成任何性质的多面体，甚至是不封闭体积的形状。然而，即使相互连接的三角形封闭了一个体积， :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 仍然是\ *中空*\ 的，这常常使其不适用于物理模拟或碰撞检测。
+作为一组相互连接的三角形， **ConcavePolygonShape3D** 是最自由的可配置的单一 3D 形状。它可以用于形成任何性质的多面体，甚至是不封闭体积的形状。然而，即使相互连接的三角形封闭了一个体积， :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 仍然是\ *中空*\ 的，这常常使其不适用于物理模拟或碰撞检测。
 
-\ **注意：**\ 当用于碰撞计算时， **ConcavePolygonShape3D** 旨在与静态的 :ref:`CollisionShape3D<class_CollisionShape3D>` 节点一起使用，如 :ref:`StaticBody3D<class_StaticBody3D>` 。并且可能不适用于处于除静态外的其他模式下的 :ref:`CharacterBody3D<class_CharacterBody3D>` 或 :ref:`RigidBody3D<class_RigidBody3D>` 。
+\ **注意：**\ 当用于碰撞计算时， **ConcavePolygonShape3D** 旨在与 :ref:`StaticBody3D<class_StaticBody3D>` 等静态 :ref:`CollisionShape3D<class_CollisionShape3D>` 节点一起使用 。并且对于 :ref:`CharacterBody3D<class_CharacterBody3D>` 或 :ref:`RigidBody3D<class_RigidBody3D>`\ ，在除静态模式之外的其他模式下可能表现不佳。
 
-\ **警告：**\ 当移动速度较快时，较小的物体有可能穿过该形状。这是因为在一帧中，物理体可能在形状的“外部”，而在下一帧中可能在其“内部”。 **ConcavePolygonShape3D** 是中空的，因此不会检测到碰撞。
+\ **警告：**\ 较小的物理物体在快速移动时有机会穿过该形状。发生这种情况是因为在一帧上，物理物体可能位于形状的“外部”，而在下一帧上，它可能位于形状的“内部”。由于\ **ConcavePolygonShape3D** 是中空的，因此它不会检测到碰撞。
 
-\ **性能：**\ 由于其复杂性， **ConcavePolygonShape3D** 是用于检测三维碰撞的形状中最慢的。它的使用通常应限制在关卡几何体上。对于凸几何体，应使用 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 。对于需要凹碰撞的动态物体，可以使用多个 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 通过凸分解来表示其碰撞；请参阅 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 的文档以获取指示。
+\ **性能：**\ 由于其复杂性， **ConcavePolygonShape3D** 是检测碰撞最慢的 3D 碰撞形状。它的使用一般仅限于关卡几何体。对于凸几何体，应使用 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 。对于需要凹碰撞的动态物体，可以使用多个 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 通过凸分解来表示其碰撞；相关说明请参阅 :ref:`ConvexPolygonShape3D<class_ConvexPolygonShape3D>` 文档。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `3D 物理测试演示 <https://godotengine.org/asset-library/asset/675>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -50,8 +50,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ConcavePolygonShape3D_property_backface_collision:
 
@@ -90,8 +90,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ConcavePolygonShape3D_method_get_faces:
 
@@ -113,10 +113,10 @@ void **set_faces** **(** :ref:`PackedVector3Array<class_PackedVector3Array>` fac
 
 根据顶点数组设置三角网格形状的面。\ ``faces`` 数组应更多由若干三元组构成，每三个顶点定义一个三角形。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

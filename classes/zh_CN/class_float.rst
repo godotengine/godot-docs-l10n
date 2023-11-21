@@ -14,8 +14,8 @@ float
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **float** 内置类型是 64 位双精度浮点数，相当于 C++ 中的 ``double``\ 。这个类型有 14 个可靠的十进制小数位精度。\ **float** 的最大值约为 ``1.79769e308``\ ，最小值约为 ``-1.79769e308``\ 。
 
@@ -25,8 +25,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `维基百科：双精度浮点数格式 <https://en.wikipedia.org/wiki/Double-precision_floating-point_format>`__
 
@@ -34,8 +34,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -54,8 +54,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -132,8 +132,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_float_constructor_float:
 
@@ -189,8 +189,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_float_operator_neq_float:
 
@@ -224,11 +224,11 @@ Operator Descriptions
 
 :ref:`Color<class_Color>` **operator *** **(** :ref:`Color<class_Color>` right **)**
 
-Multiplies each component of the :ref:`Color<class_Color>`, including the alpha, by the given **float**.
+将该 :ref:`Color<class_Color>` 的每个分量乘以给定的 **float**\ ，包括 Alpha。
 
 ::
 
-    print(1.5 * Color(0.5, 0.5, 0.5)) # Prints "(0.75, 0.75, 0.75, 1.5)"
+    print(1.5 * Color(0.5, 0.5, 0.5)) # 输出“(0.75, 0.75, 0.75, 1.5)”
 
 .. rst-class:: classref-item-separator
 
@@ -614,10 +614,10 @@ Multiplies each component of the :ref:`Color<class_Color>`, including the alpha,
 
 返回该 **float** 的相反数。如果为正数，则将该数变为负数。如果为负数，则将该数变为正数。对于浮点数，数字零既可以是正数，也可以是负数。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

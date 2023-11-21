@@ -10,28 +10,28 @@
 Label
 =====
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于显示纯文本的控件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于显示纯文本的控件。可以控制水平和垂直对齐方式以及文本在节点包围框内的换行方式。不支持粗体、斜体等富文本格式。这种需求请改用 :ref:`RichTextLabel<class_RichTextLabel>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - `2D Dodge The Creeps 演示 <https://godotengine.org/asset-library/asset/515>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -82,8 +82,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -100,8 +100,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -136,8 +136,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Label_property_autowrap_mode:
 
@@ -252,7 +252,7 @@ Property Descriptions
 - void **set_lines_skipped** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_lines_skipped** **(** **)**
 
-该节点在开始显示文本之前会忽略前 ``lines_skipped`` 行。
+从 :ref:`text<class_Label_property_text>` 值的开头开始忽略且不显示的行数。
 
 .. rst-class:: classref-item-separator
 
@@ -468,8 +468,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Label_method_get_line_count:
 
@@ -525,8 +525,8 @@ Method Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_Label_theme_color_font_color:
 
@@ -658,10 +658,10 @@ Theme Property Descriptions
 
 为 **Label** 设置背景样式盒 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

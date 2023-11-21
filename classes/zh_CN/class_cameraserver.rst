@@ -10,25 +10,25 @@
 CameraServer
 ============
 
-**Inherits:** :ref:`Object<class_Object>`
+**继承：** :ref:`Object<class_Object>`
 
 跟踪 Godot 中可访问的不同摄像头的服务器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-**CameraServer** 记录了 Godot 中可访问的不同摄像机。这些是外部摄像机，如网络摄像头或手机上的摄像机。
+**CameraServer** 记录了 Godot 中可访问的不同相机。此处的相机指外部相机，例如网络摄像头或手机上的摄像头。
 
-它主要用于为 AR 模块提供来自摄像机的视频源。
+主要用于为 AR 模块提供来自相机的视频源。
 
 \ **注意：**\ 这个类目前只在 macOS 和 iOS 上实现。在其他平台上没有可用的 :ref:`CameraFeed<class_CameraFeed>`\ 。
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -51,8 +51,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_CameraServer_signal_camera_feed_added:
 
@@ -60,7 +60,7 @@ Signals
 
 **camera_feed_added** **(** :ref:`int<class_int>` id **)**
 
-当添加 :ref:`CameraFeed<class_CameraFeed>` 时触发（例如插入网络摄像头时）。
+当添加 :ref:`CameraFeed<class_CameraFeed>` 时发出（例如插入网络摄像头时）。
 
 .. rst-class:: classref-item-separator
 
@@ -72,7 +72,7 @@ Signals
 
 **camera_feed_removed** **(** :ref:`int<class_int>` id **)**
 
-当移除 :ref:`CameraFeed<class_CameraFeed>` 时触发（例如拔掉网络摄像头时）。
+当移除 :ref:`CameraFeed<class_CameraFeed>` 时发出（例如拔掉网络摄像头时）。
 
 .. rst-class:: classref-section-separator
 
@@ -80,8 +80,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_CameraServer_FeedImage:
 
@@ -103,7 +103,7 @@ RGBA 相机图像。
 
 :ref:`FeedImage<enum_CameraServer_FeedImage>` **FEED_YCBCR_IMAGE** = ``0``
 
-`YCbCr <https://zh.wikipedia.org/zh-cn/YCbCr>`__ 摄像机图像。
+`YCbCr <https://zh.wikipedia.org/zh-cn/YCbCr>`__ 相机图像。
 
 .. _class_CameraServer_constant_FEED_Y_IMAGE:
 
@@ -127,8 +127,8 @@ CbCr 分量相机图像。
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CameraServer_method_add_feed:
 
@@ -186,10 +186,10 @@ void **remove_feed** **(** :ref:`CameraFeed<class_CameraFeed>` feed **)**
 
 移除指定的相机源 ``feed``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

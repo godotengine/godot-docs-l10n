@@ -10,21 +10,21 @@
 EditorExportPlatformWindows
 ===========================
 
-**Inherits:** :ref:`EditorExportPlatformPC<class_EditorExportPlatformPC>` **<** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`EditorExportPlatformPC<class_EditorExportPlatformPC>` **<** :ref:`EditorExportPlatform<class_EditorExportPlatform>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 Windows 导出器。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`为 Windows 导出 <../tutorials/export/exporting_for_windows>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -111,8 +111,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorExportPlatformWindows_property_application/company_name:
 
@@ -156,7 +156,7 @@ Property Descriptions
 
 :ref:`int<class_int>` **application/export_angle**
 
-If set to ``1``, ANGLE libraries are exported with the exported application. If set to ``0``, ANGLE libraries are exported only if :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` is set to ``"opengl3_angle"``.
+如果设置为 ``1``\ ，ANGLE 库将随导出的应用程序一起导出。如果设置为 ``0``\ ，则仅当 :ref:`ProjectSettings.rendering/gl_compatibility/driver<class_ProjectSettings_property_rendering/gl_compatibility/driver>` 被设置为 ``"opengl3_angle"`` 时才会导出 ANGLE 库。
 
 .. rst-class:: classref-item-separator
 
@@ -180,7 +180,7 @@ If set to ``1``, ANGLE libraries are exported with the exported application. If 
 
 :ref:`String<class_String>` **application/file_version**
 
-Version number of the file. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+文件的版本号。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。请参阅 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -192,7 +192,7 @@ Version number of the file. Falls back to :ref:`ProjectSettings.application/conf
 
 :ref:`String<class_String>` **application/icon**
 
-Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`, and then to :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`.
+应用程序图标文件。如果留空，则会回退至 :ref:`ProjectSettings.application/config/windows_native_icon<class_ProjectSettings_property_application/config/windows_native_icon>`\ ，继而回退至 :ref:`ProjectSettings.application/config/icon<class_ProjectSettings_property_application/config/icon>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -240,7 +240,7 @@ Application icon file. If left empty, it will fallback to :ref:`ProjectSettings.
 
 :ref:`String<class_String>` **application/product_version**
 
-Application version visible to the user. Falls back to :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>` if left empty. See `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__.
+用户可见的应用程序版本。如果留空，则回退到 :ref:`ProjectSettings.application/config/version<class_ProjectSettings_property_application/config/version>`\ 。请参阅 `StringFileInfo <https://learn.microsoft.com/en-us/windows/win32/menurc/stringfileinfo-block>`__\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -584,10 +584,10 @@ Application version visible to the user. Falls back to :ref:`ProjectSettings.app
 
 如果为 ``true``\ ，则项目中的纹理在导出时使用 S3TC 格式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

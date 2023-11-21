@@ -10,14 +10,14 @@
 MultiplayerAPIExtension
 =======================
 
-**Inherits:** :ref:`MultiplayerAPI<class_MultiplayerAPI>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`MultiplayerAPI<class_MultiplayerAPI>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于扩展 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 该类可用于通过脚本或扩展来增强或替换默认的 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 实现。
 
@@ -45,13 +45,16 @@ Description
         base_multiplayer.peer_connected.connect(func(id): pc.emit(id))
         base_multiplayer.peer_disconnected.connect(func(id): pd.emit(id))
     
+    func _poll():
+        return base_multiplayer.poll()
+    
     # 记录正在进行的 RPC 并将其转发到默认的多人游戏。
-    func _rpc(peer: int, object: Object, method: StringName, args: Array) -> int: # 错误代码
+    func _rpc(peer: int, object: Object, method: StringName, args: Array) -> Error:
         print("获取用于 %d 的 RPC：%s::%s(%s)" % [peer, object, method, args])
         return base_multiplayer.rpc(peer, object, method, args)
     
     # 记录配置添加。例如，根路径（nullptr、NodePath），复制（Node、Spawner|Synchronizer），自定义。
-    func _object_configuration_add(object, config: Variant) -> int: # 错误代码
+    func _object_configuration_add(object, config: Variant) -> Error:
         if config is MultiplayerSynchronizer:
             print("添加用于 %s 的同步配置。同步器：%s" % [object, config])
         elif config is MultiplayerSpawner:
@@ -59,7 +62,7 @@ Description
         return base_multiplayer.object_configuration_add(object, config)
     
     # 记录配置移除。例如，根路径（nullptr、NodePath），复制（Node、Spawner|Synchronizer），自定义。
-    func _object_configuration_remove(object, config: Variant) -> int: # 错误代码
+    func _object_configuration_remove(object, config: Variant) -> Error:
         if config is MultiplayerSynchronizer:
             print("移除用于 %s 的同步配置。同步器：%s" % [object, config])
         elif config is MultiplayerSpawner:
@@ -99,31 +102,31 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`MultiplayerPeer<class_MultiplayerPeer>`   | :ref:`_get_multiplayer_peer<class_MultiplayerAPIExtension_method__get_multiplayer_peer>` **(** **)** |virtual|                                                                                                          |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedInt32Array<class_PackedInt32Array>` | :ref:`_get_peer_ids<class_MultiplayerAPIExtension_method__get_peer_ids>` **(** **)** |virtual| |const|                                                                                                                  |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                           | :ref:`_get_remote_sender_id<class_MultiplayerAPIExtension_method__get_remote_sender_id>` **(** **)** |virtual| |const|                                                                                                  |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`int<class_int>`                           | :ref:`_get_unique_id<class_MultiplayerAPIExtension_method__get_unique_id>` **(** **)** |virtual| |const|                                                                                                                |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`           | :ref:`_object_configuration_add<class_MultiplayerAPIExtension_method__object_configuration_add>` **(** :ref:`Object<class_Object>` object, :ref:`Variant<class_Variant>` configuration **)** |virtual|                  |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`           | :ref:`_object_configuration_remove<class_MultiplayerAPIExtension_method__object_configuration_remove>` **(** :ref:`Object<class_Object>` object, :ref:`Variant<class_Variant>` configuration **)** |virtual|            |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`           | :ref:`_poll<class_MultiplayerAPIExtension_method__poll>` **(** **)** |virtual|                                                                                                                                          |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`           | :ref:`_rpc<class_MultiplayerAPIExtension_method__rpc>` **(** :ref:`int<class_int>` peer, :ref:`Object<class_Object>` object, :ref:`StringName<class_StringName>` method, :ref:`Array<class_Array>` args **)** |virtual| |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                            | :ref:`_set_multiplayer_peer<class_MultiplayerAPIExtension_method__set_multiplayer_peer>` **(** :ref:`MultiplayerPeer<class_MultiplayerPeer>` multiplayer_peer **)** |virtual|                                           |
-   +-------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`MultiplayerPeer<class_MultiplayerPeer>`   | :ref:`_get_multiplayer_peer<class_MultiplayerAPIExtension_private_method__get_multiplayer_peer>` **(** **)** |virtual|                                                                                                          |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`PackedInt32Array<class_PackedInt32Array>` | :ref:`_get_peer_ids<class_MultiplayerAPIExtension_private_method__get_peer_ids>` **(** **)** |virtual| |const|                                                                                                                  |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                           | :ref:`_get_remote_sender_id<class_MultiplayerAPIExtension_private_method__get_remote_sender_id>` **(** **)** |virtual| |const|                                                                                                  |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`int<class_int>`                           | :ref:`_get_unique_id<class_MultiplayerAPIExtension_private_method__get_unique_id>` **(** **)** |virtual| |const|                                                                                                                |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`           | :ref:`_object_configuration_add<class_MultiplayerAPIExtension_private_method__object_configuration_add>` **(** :ref:`Object<class_Object>` object, :ref:`Variant<class_Variant>` configuration **)** |virtual|                  |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`           | :ref:`_object_configuration_remove<class_MultiplayerAPIExtension_private_method__object_configuration_remove>` **(** :ref:`Object<class_Object>` object, :ref:`Variant<class_Variant>` configuration **)** |virtual|            |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`           | :ref:`_poll<class_MultiplayerAPIExtension_private_method__poll>` **(** **)** |virtual|                                                                                                                                          |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`Error<enum_@GlobalScope_Error>`           | :ref:`_rpc<class_MultiplayerAPIExtension_private_method__rpc>` **(** :ref:`int<class_int>` peer, :ref:`Object<class_Object>` object, :ref:`StringName<class_StringName>` method, :ref:`Array<class_Array>` args **)** |virtual| |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | void                                            | :ref:`_set_multiplayer_peer<class_MultiplayerAPIExtension_private_method__set_multiplayer_peer>` **(** :ref:`MultiplayerPeer<class_MultiplayerPeer>` multiplayer_peer **)** |virtual|                                           |
+   +-------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 .. rst-class:: classref-section-separator
 
@@ -131,10 +134,10 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_MultiplayerAPIExtension_method__get_multiplayer_peer:
+.. _class_MultiplayerAPIExtension_private_method__get_multiplayer_peer:
 
 .. rst-class:: classref-method
 
@@ -146,7 +149,7 @@ Method Descriptions
 
 ----
 
-.. _class_MultiplayerAPIExtension_method__get_peer_ids:
+.. _class_MultiplayerAPIExtension_private_method__get_peer_ids:
 
 .. rst-class:: classref-method
 
@@ -158,7 +161,7 @@ Method Descriptions
 
 ----
 
-.. _class_MultiplayerAPIExtension_method__get_remote_sender_id:
+.. _class_MultiplayerAPIExtension_private_method__get_remote_sender_id:
 
 .. rst-class:: classref-method
 
@@ -170,7 +173,7 @@ Method Descriptions
 
 ----
 
-.. _class_MultiplayerAPIExtension_method__get_unique_id:
+.. _class_MultiplayerAPIExtension_private_method__get_unique_id:
 
 .. rst-class:: classref-method
 
@@ -182,7 +185,7 @@ Method Descriptions
 
 ----
 
-.. _class_MultiplayerAPIExtension_method__object_configuration_add:
+.. _class_MultiplayerAPIExtension_private_method__object_configuration_add:
 
 .. rst-class:: classref-method
 
@@ -194,7 +197,7 @@ Method Descriptions
 
 ----
 
-.. _class_MultiplayerAPIExtension_method__object_configuration_remove:
+.. _class_MultiplayerAPIExtension_private_method__object_configuration_remove:
 
 .. rst-class:: classref-method
 
@@ -206,7 +209,7 @@ Method Descriptions
 
 ----
 
-.. _class_MultiplayerAPIExtension_method__poll:
+.. _class_MultiplayerAPIExtension_private_method__poll:
 
 .. rst-class:: classref-method
 
@@ -218,7 +221,7 @@ Method Descriptions
 
 ----
 
-.. _class_MultiplayerAPIExtension_method__rpc:
+.. _class_MultiplayerAPIExtension_private_method__rpc:
 
 .. rst-class:: classref-method
 
@@ -230,7 +233,7 @@ Method Descriptions
 
 ----
 
-.. _class_MultiplayerAPIExtension_method__set_multiplayer_peer:
+.. _class_MultiplayerAPIExtension_private_method__set_multiplayer_peer:
 
 .. rst-class:: classref-method
 
@@ -238,10 +241,10 @@ void **_set_multiplayer_peer** **(** :ref:`MultiplayerPeer<class_MultiplayerPeer
 
 在设置 :ref:`MultiplayerAPI.multiplayer_peer<class_MultiplayerAPI_property_multiplayer_peer>` 时调用。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

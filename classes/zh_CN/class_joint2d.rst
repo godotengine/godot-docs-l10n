@@ -10,23 +10,23 @@
 Joint2D
 =======
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`DampedSpringJoint2D<class_DampedSpringJoint2D>`, :ref:`GrooveJoint2D<class_GrooveJoint2D>`, :ref:`PinJoint2D<class_PinJoint2D>`
+**派生：** :ref:`DampedSpringJoint2D<class_DampedSpringJoint2D>`, :ref:`GrooveJoint2D<class_GrooveJoint2D>`, :ref:`PinJoint2D<class_PinJoint2D>`
 
 所有 2D 物理关节的抽象基类。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 2D 物理中所有关节的抽象基类。2D 关节能够将两个物理体绑定在一起并施加约束。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -43,8 +43,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -59,8 +59,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Joint2D_property_bias:
 
@@ -73,7 +73,7 @@ Property Descriptions
 - void **set_bias** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_bias** **(** **)**
 
-当 :ref:`node_a<class_Joint2D_property_node_a>` 和 :ref:`node_b<class_Joint2D_property_node_b>` 向不同方向移动时，\ ``bias`` 控制关节将它们拉回到原始位置的速度。\ ``bias`` 越低，两个实体对该关节的拉力就越大。
+当 :ref:`node_a<class_Joint2D_property_node_a>` 和 :ref:`node_b<class_Joint2D_property_node_b>` 向不同方向移动时，\ :ref:`bias<class_Joint2D_property_bias>` 控制关节将它们拉回到原始位置的速度。\ :ref:`bias<class_Joint2D_property_bias>` 越低，两个实体对该关节的拉力就越大。
 
 当被设置为 ``0`` 时，使用来自 :ref:`ProjectSettings.physics/2d/solver/default_constraint_bias<class_ProjectSettings_property_physics/2d/solver/default_constraint_bias>` 的默认值。
 
@@ -134,8 +134,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Joint2D_method_get_rid:
 
@@ -143,12 +143,12 @@ Method Descriptions
 
 :ref:`RID<class_RID>` **get_rid** **(** **)** |const|
 
-Returns the joint's :ref:`RID<class_RID>`.
+返回关节的 :ref:`RID<class_RID>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

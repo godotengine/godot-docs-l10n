@@ -10,14 +10,14 @@
 CPUParticles2D
 ==============
 
-**Inherits:** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node2D<class_Node2D>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-A CPU-based 2D particle emitter.
+基于 CPU 的 2D 粒子发射器。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 基于 CPU 的 2D 粒子节点，可用于创建各种粒子系统、粒子效果。
 
@@ -25,15 +25,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`粒子系统（2D） <../tutorials/2d/particle_systems_2d>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -172,8 +172,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -206,8 +206,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_CPUParticles2D_signal_finished:
 
@@ -215,7 +215,7 @@ Signals
 
 **finished** **(** **)**
 
-Emitted when all active particles have finished processing. When :ref:`one_shot<class_CPUParticles2D_property_one_shot>` is disabled, particles will process continuously, so this is never emitted.
+当所有活动粒子完成处理时发出。当 :ref:`one_shot<class_CPUParticles2D_property_one_shot>` 被禁用时，粒子将连续处理，因此它永远不会触发。
 
 .. rst-class:: classref-section-separator
 
@@ -223,8 +223,8 @@ Emitted when all active particles have finished processing. When :ref:`one_shot<
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_CPUParticles2D_DrawOrder:
 
@@ -246,7 +246,7 @@ enum **DrawOrder**:
 
 :ref:`DrawOrder<enum_CPUParticles2D_DrawOrder>` **DRAW_ORDER_LIFETIME** = ``1``
 
-粒子按剩余寿命的顺序绘制。
+粒子按照剩余寿命的顺序绘制。换句话说，寿命最长的粒子被绘制在前面。
 
 .. rst-class:: classref-item-separator
 
@@ -476,8 +476,8 @@ enum **EmissionShape**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_CPUParticles2D_property_amount:
 
@@ -951,7 +951,7 @@ Property Descriptions
 - void **set_emitting** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_emitting** **(** **)**
 
-If ``true``, particles are being emitted. :ref:`emitting<class_CPUParticles2D_property_emitting>` can be used to start and stop particles from emitting. However, if :ref:`one_shot<class_CPUParticles2D_property_one_shot>` is ``true`` setting :ref:`emitting<class_CPUParticles2D_property_emitting>` to ``true`` will not restart the emission cycle until after all active particles finish processing. You can use the :ref:`finished<class_CPUParticles2D_signal_finished>` signal to be notified once all active particles finish processing.
+如果为 ``true``\ ，则正在发射粒子。\ :ref:`emitting<class_CPUParticles2D_property_emitting>` 可用于启动和停止粒子发射。但是，如果 :ref:`one_shot<class_CPUParticles2D_property_one_shot>` 为 ``true``\ ，则将 :ref:`emitting<class_CPUParticles2D_property_emitting>` 设置为 ``true`` 将不会重新启动该发射循环，直到所有活动粒子完成处理为止。一旦所有活动粒子完成处理，你可以使用 :ref:`finished<class_CPUParticles2D_signal_finished>` 信号来收取通知。
 
 .. rst-class:: classref-item-separator
 
@@ -1592,8 +1592,8 @@ If ``true``, particles are being emitted. :ref:`emitting<class_CPUParticles2D_pr
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_CPUParticles2D_method_convert_from_particles:
 
@@ -1711,10 +1711,10 @@ void **set_particle_flag** **(** :ref:`ParticleFlags<enum_CPUParticles2D_Particl
 
 启用或禁用给定的标志（选项见 :ref:`ParticleFlags<enum_CPUParticles2D_ParticleFlags>`\ ）。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

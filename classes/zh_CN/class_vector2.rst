@@ -14,8 +14,8 @@ Vector2
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 包含两个元素的结构体，可用于代表 2D 坐标或任何数值的二元组。
 
@@ -27,8 +27,8 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`数学文档索引 <../tutorials/math/index>`
 
@@ -44,8 +44,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -58,8 +58,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -76,8 +76,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -170,8 +170,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -220,8 +220,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Vector2_constant_AXIS_X:
 
@@ -301,8 +301,8 @@ Y 轴的枚举值。由 :ref:`max_axis_index<class_Vector2_method_max_axis_index
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Vector2_property_x:
 
@@ -330,8 +330,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Vector2_constructor_Vector2:
 
@@ -377,8 +377,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Vector2_method_abs:
 
@@ -398,13 +398,13 @@ Method Descriptions
 
 :ref:`float<class_float>` **angle** **(** **)** |const|
 
-Returns this vector's angle with respect to the positive X axis, or ``(1, 0)`` vector, in radians.
+返回该向量与 X 轴正方向的夹角，单位为弧度。X 轴正方向为 ``(1, 0)`` 向量。
 
-For example, ``Vector2.RIGHT.angle()`` will return zero, ``Vector2.DOWN.angle()`` will return ``PI / 2`` (a quarter turn, or 90 degrees), and ``Vector2(1, -1).angle()`` will return ``-PI / 4`` (a negative eighth turn, or -45 degrees).
+例如，\ ``Vector2.RIGHT.angle()`` 将返回 0，\ ``Vector2.DOWN.angle()`` 将返回 ``PI / 2``\ （四分之一圈，即 90 度），\ ``Vector2(1, -1).angle()`` 将返回 ``-PI / 4``\ （负八分之一圈，即 -45 度）。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__\ 
+\ `返回夹角图示。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle.png>`__\ 
 
-Equivalent to the result of :ref:`@GlobalScope.atan2<class_@GlobalScope_method_atan2>` when called with the vector's :ref:`y<class_Vector2_property_y>` and :ref:`x<class_Vector2_property_x>` as parameters: ``atan2(y, x)``.
+相当于使用该向量的 :ref:`y<class_Vector2_property_y>` 和 :ref:`x<class_Vector2_property_x>` 作为参数对 :ref:`@GlobalScope.atan2<class_@GlobalScope_method_atan2>` 进行调用的结果：\ ``atan2(y, x)``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -416,9 +416,9 @@ Equivalent to the result of :ref:`@GlobalScope.atan2<class_@GlobalScope_method_a
 
 :ref:`float<class_float>` **angle_to** **(** :ref:`Vector2<class_Vector2>` to **)** |const|
 
-Returns the angle to the given vector, in radians.
+返回与给定向量的夹角，单位为弧度。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to.png>`__
+\ `返回夹角示意图。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -430,11 +430,11 @@ Returns the angle to the given vector, in radians.
 
 :ref:`float<class_float>` **angle_to_point** **(** :ref:`Vector2<class_Vector2>` to **)** |const|
 
-Returns the angle between the line connecting the two points and the X axis, in radians.
+返回连接两点的直线与 X 轴之间的夹角，单位为弧度。
 
-\ ``a.angle_to_point(b)`` is equivalent of doing ``(b - a).angle()``.
+\ ``a.angle_to_point(b)`` 等价于 ``(b - a).angle()``\ 。
 
-\ `Illustration of the returned angle. <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to_point.png>`__
+\ `返回夹角示意图。 <https://raw.githubusercontent.com/godotengine/godot-docs/master/img/vector2_angle_to_point.png>`__
 
 .. rst-class:: classref-item-separator
 
@@ -548,7 +548,7 @@ Returns the angle between the line connecting the two points and the X axis, in 
 
 返回该向量和 ``b`` 之间进行三次插值 ``weight`` 处的结果，使用 ``pre_a`` 和 ``post_b`` 作为控制柄。\ ``weight`` 在 0.0 到 1.0 的范围内，代表插值的量。
 
-通过使用时间值，可以比 ``cubic_interpolate()`` 进行更平滑的插值。
+通过使用时间值，可以比 :ref:`cubic_interpolate<class_Vector2_method_cubic_interpolate>` 进行更平滑的插值。
 
 .. rst-class:: classref-item-separator
 
@@ -926,8 +926,8 @@ Returns the angle between the line connecting the two points and the X axis, in 
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Vector2_operator_neq_Vector2:
 
@@ -951,7 +951,11 @@ Operator Descriptions
 
 :ref:`Vector2<class_Vector2>` **operator *** **(** :ref:`Transform2D<class_Transform2D>` right **)**
 
-使用给定的 :ref:`Transform2D<class_Transform2D>` 变换矩阵对该 **Vector2** 进行逆变换（相乘）。
+假设该变换的基是正交的（即旋转/反射可以，缩放/倾斜不行），将 **Vector2** 逆向变换（乘以）给定的 :ref:`Transform2D<class_Transform2D>` 变换矩阵。
+
+\ ``vector * transform`` 相当于 ``transform.inverse() * vector``\ 。请参阅 :ref:`Transform2D.inverse<class_Transform2D_method_inverse>`\ 。
+
+对于通过仿射变换的逆进行的变换（例如缩放），可以使用 ``transform.affine_inverse() * vector`` 代替。请参阅 :ref:`Transform2D.affine_inverse<class_Transform2D_method_affine_inverse>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1173,10 +1177,10 @@ Operator Descriptions
 
 返回该 **Vector2** 的负值。和写 ``Vector2(-v.x, -v.y)`` 是一样的。该操作在保持相同幅度的同时，翻转向量的方向。对于浮点数，零也有正负两种。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

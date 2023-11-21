@@ -10,32 +10,32 @@
 ResourceImporterDynamicFont
 ===========================
 
-**Inherits:** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-Imports a TTF, TTC, OTF, OTC, WOFF or WOFF2 font file for font rendering that adapts to any size.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-Unlike bitmap fonts, dynamic fonts can be resized to any size and still look crisp. Dynamic fonts also optionally support MSDF font rendering, which allows for run-time scale changes with no re-rasterization cost.
-
-While WOFF and especially WOFF2 tend to result in smaller file sizes, there is no universally "better" font format. In most situations, it's recommended to use the font format that was shipped on the font developer's website.
-
-See also :ref:`ResourceImporterBMFont<class_ResourceImporterBMFont>` and :ref:`ResourceImporterImageFont<class_ResourceImporterImageFont>`.
+导入 TTF、TTC、OTF、OTC、WOFF、WOFF2 字体文件，用于能够适配任何大小的字体渲染。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
 
-- `Dynamic fonts - Using fonts <../tutorials/ui/gui_using_fonts.html#dynamic-fonts>`__
+与位图字体不同，动态字体可以被调整为任意大小，并且看起来仍然清晰。动态字体还可以选择支持 MSDF 字体渲染，从而允许运行时缩放更改，且没有重新光栅化成本。
+
+虽然 WOFF（尤其是 WOFF2）往往会产生较小的文件大小，但不存在普遍“更好”的字体格式。在大多数情况下，建议使用字体开发人员网站上提供的字体格式。
+
+另请参见 :ref:`ResourceImporterBMFont<class_ResourceImporterBMFont>` 和 :ref:`ResourceImporterImageFont<class_ResourceImporterImageFont>`\ 。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
+
+- `动态字体——使用字体 <../tutorials/ui/gui_using_fonts.html#dynamic-fonts>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -80,8 +80,8 @@ Properties
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ResourceImporterDynamicFont_property_allow_system_fallback:
 
@@ -89,9 +89,9 @@ Property Descriptions
 
 :ref:`bool<class_bool>` **allow_system_fallback** = ``true``
 
-If ``true``, automatically use system fonts as a fallback if a glyph isn't found in this dynamic font. This makes supporting CJK characters or emoji more straightforward, as you don't need to include a CJK/emoji font in your project. See also :ref:`fallbacks<class_ResourceImporterDynamicFont_property_fallbacks>`.
+为 ``true`` 时，如果在该动态字体中找不到字形，则自动使用系统字体作为后备。这使得支持 CJK 字符或表情符号更加简单，因为你不需要在项目中包含 CJK/表情符号字体。另请参阅 :ref:`fallbacks<class_ResourceImporterDynamicFont_property_fallbacks>`\ 。
 
-\ **Note:** The appearance of system fonts varies across platforms. Loading system fonts is only supported on Windows, macOS, Linux, Android and iOS.
+\ **注意：**\ 系统字体的外观因平台而异。仅 Windows、macOS、Linux、Android 和 iOS 支持加载系统字体。
 
 .. rst-class:: classref-item-separator
 
@@ -103,13 +103,13 @@ If ``true``, automatically use system fonts as a fallback if a glyph isn't found
 
 :ref:`int<class_int>` **antialiasing** = ``1``
 
-The font antialiasing method to use.
+要使用的字体抗锯齿方法。
 
-\ **Disabled:** Most suited for pixel art fonts, although you do not *have* to change the antialiasing from the default **Grayscale** if the font file was well-created and the font is used at an integer multiple of its intended size. If pixel art fonts have a bad appearance at their intended size, try setting :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` to **Disabled** instead.
+\ **禁用：**\ 最适合像素艺术字体，如果字体文件创建良好并且字体以其预期大小的整数倍使用，则你不\ *必*\ 更改默认的\ **灰度**\ 抗锯齿。如果像素艺术字体在其预期大小下外观不佳，请尝试将 :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` 设置为 **Disabled**\ 。
 
-\ **Grayscale:** Use grayscale antialiasing. This is the approach used by the operating system on macOS, Android and iOS.
+\ **灰度：**\ 使用灰度抗锯齿。这是 macOS、Android 和 iOS 上的操作系统使用的方法。
 
-\ **LCD Subpixel:** Use antialiasing with subpixel patterns to make fonts sharper on LCD displays. This is the approach used by the operating system on Windows and most Linux distributions. The downside is that this can introduce "fringing" on edges, especially on display technologies that don't use standard RGB subpixels (such as OLED displays). The LCD subpixel layout is globally controlled by :ref:`ProjectSettings.gui/theme/lcd_subpixel_layout<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>`, which also allows falling back to grayscale antialiasing.
+\ **LCD 子像素：**\ 使用子像素模式的抗锯齿，使 LCD 显示器上的字体更加清晰。这是 Windows 和大多数 Linux 发行版上的操作系统使用的方法。缺点是这可能会在边缘产生“边缘”，尤其是在不使用标准 RGB 子像素的显示技术上（例如 OLED 显示器）。LCD 子像素布局由 :ref:`ProjectSettings.gui/theme/lcd_subpixel_layout<class_ProjectSettings_property_gui/theme/lcd_subpixel_layout>` 全局控制，这也允许回退到灰度抗锯齿。
 
 .. rst-class:: classref-item-separator
 
@@ -121,7 +121,7 @@ The font antialiasing method to use.
 
 :ref:`bool<class_bool>` **compress** = ``true``
 
-If ``true``, uses lossless compression for the resulting font.
+如果为 ``true``\ ，则会对得到的字体使用无损压缩。
 
 .. rst-class:: classref-item-separator
 
@@ -133,7 +133,7 @@ If ``true``, uses lossless compression for the resulting font.
 
 :ref:`Array<class_Array>` **fallbacks** = ``[]``
 
-List of font fallbacks to use if a glyph isn't found in this dynamic font. Fonts at the beginning of the array are attempted first, but fallback fonts that don't support the glyph's language and script are attempted last (see :ref:`language_support<class_ResourceImporterDynamicFont_property_language_support>` and :ref:`script_support<class_ResourceImporterDynamicFont_property_script_support>`). See also :ref:`allow_system_fallback<class_ResourceImporterDynamicFont_property_allow_system_fallback>`.
+如果在该动态字体中找不到字形，则要使用的字体后备列表。首先尝试位于数组开头的字体，最后尝试不支持字形语言和脚本的后备字体（请参阅 :ref:`language_support<class_ResourceImporterDynamicFont_property_language_support>` 和 :ref:`script_support<class_ResourceImporterDynamicFont_property_script_support>`\ ）。另请参阅 :ref:`allow_system_fallback<class_ResourceImporterDynamicFont_property_allow_system_fallback>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -145,7 +145,7 @@ List of font fallbacks to use if a glyph isn't found in this dynamic font. Fonts
 
 :ref:`bool<class_bool>` **force_autohinter** = ``false``
 
-If ``true``, forces generation of hinting data for the font using `FreeType <https://freetype.org/>`__'s autohinter. This will make :ref:`hinting<class_ResourceImporterDynamicFont_property_hinting>` effective with fonts that don't include hinting data.
+如果为 ``true``\ ，则使用 `FreeType <https://freetype.org/>`__ 的自动提示器强制生成字体的提示数据。这将使 :ref:`hinting<class_ResourceImporterDynamicFont_property_hinting>` 对不包含提示数据的字体有效。
 
 .. rst-class:: classref-item-separator
 
@@ -157,9 +157,9 @@ If ``true``, forces generation of hinting data for the font using `FreeType <htt
 
 :ref:`bool<class_bool>` **generate_mipmaps** = ``false``
 
-If ``true``, this font will have mipmaps generated. This prevents text from looking grainy when a :ref:`Control<class_Control>` is scaled down, or when a :ref:`Label3D<class_Label3D>` is viewed from a long distance (if :ref:`Label3D.texture_filter<class_Label3D_property_texture_filter>` is set to a mode that displays mipmaps).
+如果为 ``true``\ ，则该字体将生成 mipmap。这样可以防止文本在 :ref:`Control<class_Control>` 被按比例缩小或从远距离查看 :ref:`Label3D<class_Label3D>` 时看起来有颗粒感（如果 :ref:`Label3D.texture_filter<class_Label3D_property_texture_filter>` 被设置为显示 mipmap 的模式）。
 
-Enabling :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>` increases font generation time and memory usage. Only enable this setting if you actually need it.
+启用 :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>` 会增加字体生成时间和内存使用量。请只在你确实需要时才启用此设置。
 
 .. rst-class:: classref-item-separator
 
@@ -171,13 +171,13 @@ Enabling :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_gener
 
 :ref:`int<class_int>` **hinting** = ``1``
 
-The hinting mode to use. This controls how aggressively glyph edges should be snapped to pixels when rasterizing the font. Depending on personal preference, you may prefer using one hinting mode over the other. Hinting modes other than **None** are only effective if the font contains hinting data (see :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`).
+要使用的提示模式。这控制在光栅化字体时应如何积极地将字形边缘吸附到像素。根据个人喜好，你可能更喜欢使用一种提示模式而不是另一种。除 **None** 之外的提示模式仅在字体包含提示数据时才有效（请参阅 :ref:`force_autohinter<class_ResourceImporterDynamicFont_property_force_autohinter>`\ ）。
 
-\ **None:** Smoothest appearance, which can make the font look blurry at small sizes.
+\ **None：**\ 最平滑的外观，这会使字体在小尺寸下看起来模糊。
 
-\ **Light:** Sharp result by snapping glyph edges to pixels on the Y axis only.
+\ **Light：**\ 通过仅将字形边缘吸附到 Y 轴上的像素来获得清晰的结果。
 
-\ **Full:** Sharpest by snapping glyph edges to pixels on both X and Y axes.
+\ **Full：**\ 通过将字形边缘吸附到 X 轴和 Y 轴上的像素获得最清晰的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -189,7 +189,7 @@ The hinting mode to use. This controls how aggressively glyph edges should be sn
 
 :ref:`Dictionary<class_Dictionary>` **language_support** = ``{}``
 
-Override the list of languages supported by this font. If left empty, this is supplied by the font metadata. There is usually no need to change this. See also :ref:`script_support<class_ResourceImporterDynamicFont_property_script_support>`.
+覆盖该字体支持的语言列表。如果留空，则由字体元数据提供。通常无需更改该设置。另见 :ref:`script_support<class_ResourceImporterDynamicFont_property_script_support>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -201,7 +201,7 @@ Override the list of languages supported by this font. If left empty, this is su
 
 :ref:`int<class_int>` **msdf_pixel_range** = ``8``
 
-The width of the range around the shape between the minimum and maximum representable signed distance. If using font outlines, :ref:`msdf_pixel_range<class_ResourceImporterDynamicFont_property_msdf_pixel_range>` must be set to at least *twice* the size of the largest font outline. The default :ref:`msdf_pixel_range<class_ResourceImporterDynamicFont_property_msdf_pixel_range>` value of ``8`` allows outline sizes up to ``4`` to look correct.
+最小和最大可表示的有符号距离之间的形状周围的范围宽度。如果使用字体轮廓，\ :ref:`msdf_pixel_range<class_ResourceImporterDynamicFont_property_msdf_pixel_range>` 必须至少设置为最大字体轮廓大小的\ *两倍*\ 。\ :ref:`msdf_pixel_range<class_ResourceImporterDynamicFont_property_msdf_pixel_range>` 的默认值为 ``8``\ ，允许大小最大到 ``4`` 的轮廓看起来正确。
 
 .. rst-class:: classref-item-separator
 
@@ -213,7 +213,7 @@ The width of the range around the shape between the minimum and maximum represen
 
 :ref:`int<class_int>` **msdf_size** = ``48``
 
-Source font size used to generate MSDF textures. Higher values allow for more precision, but are slower to render and require more memory. Only increase this value if you notice a visible lack of precision in glyph rendering. Only effective if :ref:`multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>` is ``true``.
+用于生成 MSDF 纹理的源字体大小。较高的值允许更高的精度，但渲染速度较慢并且需要更多内存。只有当注意到字形渲染中明显缺乏精度时，才增加该属性的值。仅在 :ref:`multichannel_signed_distance_field<class_ResourceImporterDynamicFont_property_multichannel_signed_distance_field>` 为 ``true`` 时有效。
 
 .. rst-class:: classref-item-separator
 
@@ -225,9 +225,9 @@ Source font size used to generate MSDF textures. Higher values allow for more pr
 
 :ref:`bool<class_bool>` **multichannel_signed_distance_field** = ``false``
 
-If set to ``true``, the default font will use multichannel signed distance field (MSDF) for crisp rendering at any size. Since this approach does not rely on rasterizing the font every time its size changes, this allows for resizing the font in real-time without any performance penalty. Text will also not look grainy for :ref:`Control<class_Control>`\ s that are scaled down (or for :ref:`Label3D<class_Label3D>`\ s viewed from a long distance).
+如果设置为 ``true``\ ，默认字体将使用多通道带符号距离场（MSDF），任何尺寸都能够进行清晰的渲染。由于这种方法不需要在每次字体大小更改时都对字体进行光栅化，因此可以实时调整字体大小，不会造成任何性能损失。对于按比例缩小的 :ref:`Control<class_Control>`\ （或从远距离查看的 :ref:`Label3D<class_Label3D>`\ ），文本也不会看起来有颗粒感。
 
-MSDF font rendering can be combined with :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>` to further improve font rendering quality when scaled down.
+MSDF 字体渲染可以与 :ref:`generate_mipmaps<class_ResourceImporterDynamicFont_property_generate_mipmaps>` 结合使用，从而进一步提高缩小时的字体渲染质量。
 
 .. rst-class:: classref-item-separator
 
@@ -239,7 +239,7 @@ MSDF font rendering can be combined with :ref:`generate_mipmaps<class_ResourceIm
 
 :ref:`Dictionary<class_Dictionary>` **opentype_features** = ``{}``
 
-The OpenType features to enable, disable or set a value for this font. This can be used to enable optional features provided by the font, such as ligatures or alternative glyphs. The list of supported OpenType features varies on a per-font basis.
+要为这个字体启用、禁用或设值的 OpenType 特性。可以用来启用字体所提供的可选特性，例如合字和备选字形。不同字体所支持的 OpenType 特性列表各有不同。
 
 .. rst-class:: classref-item-separator
 
@@ -251,7 +251,7 @@ The OpenType features to enable, disable or set a value for this font. This can 
 
 :ref:`float<class_float>` **oversampling** = ``0.0``
 
-If set to a value greater than ``0.0``, overrides the oversampling factor for the font. This can be used to render the font at a higher or lower resolution than intended without affecting its physical size. In most cases, this should be left at ``0.0``.
+如果设为大于 ``0.0`` 的值，则会覆盖字体的过采样系数。可以用来在保持字体物理大小的前提下，使用比原计划更高或更低的分辨率渲染。大多数情况下应该保持为 ``0.0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -263,7 +263,7 @@ If set to a value greater than ``0.0``, overrides the oversampling factor for th
 
 :ref:`Array<class_Array>` **preload** = ``[]``
 
-The glyph ranges to prerender. This can avoid stuttering during gameplay when new characters need to be rendered, especially if :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` is enabled. The downside of using preloading is that initial project load times will increase, as well as memory usage.
+要预渲染的字形范围。这可以避免在游戏过程中需要渲染新角色时出现卡顿，特别是在启用 :ref:`subpixel_positioning<class_ResourceImporterDynamicFont_property_subpixel_positioning>` 的情况下。使用预加载的缺点是初始项目加载时间会增加，内存使用量也会增加。
 
 .. rst-class:: classref-item-separator
 
@@ -275,7 +275,7 @@ The glyph ranges to prerender. This can avoid stuttering during gameplay when ne
 
 :ref:`Dictionary<class_Dictionary>` **script_support** = ``{}``
 
-Override the list of language scripts supported by this font. If left empty, this is supplied by the font metadata. There is usually no need to change this. See also :ref:`language_support<class_ResourceImporterDynamicFont_property_language_support>`.
+覆盖该字体支持的语言脚本列表。如果留空，则由字体元数据提供。通常无需更改该设置。另见 :ref:`language_support<class_ResourceImporterDynamicFont_property_language_support>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -287,20 +287,20 @@ Override the list of language scripts supported by this font. If left empty, thi
 
 :ref:`int<class_int>` **subpixel_positioning** = ``1``
 
-Subpixel positioning improves font rendering appearance, especially at smaller font sizes. The downside is that it takes more time to initially render the font, which can cause stuttering during gameplay, especially if used with large font sizes. This should be set to **Disabled** for fonts with a pixel art appearance.
+子像素定位可改善字体渲染外观，尤其是在较小的字体大小下。缺点是初始渲染字体需要更多时间，这可能会导致游戏过程中出现卡顿，特别是在使用大字体时。对于具有像素艺术外观的字体，应将其设置为\ **禁用**\ 。
 
-\ **Disabled:** No subpixel positioning. Lowest quality, fastest rendering.
+\ **禁用：**\ 无子像素定位。质量最低，渲染最快。
 
-\ **Auto:** Use subpixel positioning at small font sizes (the chosen quality varies depending on font size). Large fonts will not use subpixel positioning. This is a good tradeoff between performance and quality.
+\ **自动：**\ 在小字体大小下使用子像素定位（所选质量根据字体大小而变化）。大字体不会使用子像素定位。这是性能和质量之间的良好权衡。
 
-\ **One Half of a Pixel:** Always perform intermediate subpixel positioning regardless of font size. High quality, slow rendering.
+\ **半像素：**\ 无论字体大小如何，始终执行中间子像素定位。质量高，渲染速度慢。
 
-\ **One Quarter of a Pixel:** Always perform precise subpixel positioning regardless of font size. Highest quality, slowest rendering.
+\ **四分之一像素：**\ 无论字体大小如何，始终执行精确的子像素定位。质量最高，渲染最慢。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

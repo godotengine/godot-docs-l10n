@@ -10,14 +10,14 @@
 Tree
 ====
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于以层级结构显示一组内部 :ref:`TreeItem<class_TreeItem>` 的控件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于以层级结构显示一组内部 :ref:`TreeItem<class_TreeItem>` 的控件。树项目可以选择、展开、折叠。该树可以有多列的自定义控件，如 :ref:`LineEdit<class_LineEdit>`\ 、按钮和弹出窗口。对于结构化显示和互动很有用。
 
@@ -58,8 +58,8 @@ Description
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -96,8 +96,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -180,8 +180,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -312,8 +312,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_Tree_signal_button_clicked:
 
@@ -477,7 +477,7 @@ Signals
 
 **multi_selected** **(** :ref:`TreeItem<class_TreeItem>` item, :ref:`int<class_int>` column, :ref:`bool<class_bool>` selected **)**
 
-如果 ``select_mode`` 为 :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>` 时，代替 ``item_selected`` 发出。
+如果 :ref:`select_mode<class_Tree_property_select_mode>` 被设置为 :ref:`SELECT_MULTI<class_Tree_constant_SELECT_MULTI>`\ ，则代替 :ref:`item_selected<class_Tree_signal_item_selected>` 发出。
 
 .. rst-class:: classref-item-separator
 
@@ -497,8 +497,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Tree_SelectMode:
 
@@ -582,8 +582,8 @@ enum **DropModeFlags**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Tree_property_allow_reselect:
 
@@ -681,7 +681,7 @@ Property Descriptions
 - void **set_drop_mode_flags** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_drop_mode_flags** **(** **)**
 
-放置模式是标志的按位或（OR）组合。见 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` 常量。放置完成后会恢复为 :ref:`DROP_MODE_DISABLED<class_Tree_constant_DROP_MODE_DISABLED>`\ 。建议在 :ref:`Control._can_drop_data<class_Control_method__can_drop_data>` 期间设置。
+放置模式是标志的按位或（OR）组合。见 :ref:`DropModeFlags<enum_Tree_DropModeFlags>` 常量。放置完成后会恢复为 :ref:`DROP_MODE_DISABLED<class_Tree_constant_DROP_MODE_DISABLED>`\ 。建议在 :ref:`Control._can_drop_data<class_Control_private_method__can_drop_data>` 期间设置。
 
 控制的是放置区，即根据鼠标的位置决定并绘制可能的放置位置。
 
@@ -793,8 +793,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Tree_method_clear:
 
@@ -1293,8 +1293,8 @@ void **set_selected** **(** :ref:`TreeItem<class_TreeItem>` item, :ref:`int<clas
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_Tree_theme_color_children_hl_line_color:
 
@@ -1494,7 +1494,7 @@ Theme Property Descriptions
 
 :ref:`int<class_int>` **inner_item_margin_bottom** = ``0``
 
-The inner bottom margin of an item.
+项目的底部内边距。
 
 .. rst-class:: classref-item-separator
 
@@ -1506,7 +1506,7 @@ The inner bottom margin of an item.
 
 :ref:`int<class_int>` **inner_item_margin_left** = ``0``
 
-The inner left margin of an item.
+项目的左侧内边距。
 
 .. rst-class:: classref-item-separator
 
@@ -1518,7 +1518,7 @@ The inner left margin of an item.
 
 :ref:`int<class_int>` **inner_item_margin_right** = ``0``
 
-The inner right margin of an item.
+项目的右侧内边距。
 
 .. rst-class:: classref-item-separator
 
@@ -1530,7 +1530,7 @@ The inner right margin of an item.
 
 :ref:`int<class_int>` **inner_item_margin_top** = ``0``
 
-The inner top margin of an item.
+项目的顶部内边距。
 
 .. rst-class:: classref-item-separator
 
@@ -1676,7 +1676,7 @@ The inner top margin of an item.
 
 :ref:`int<class_int>` **scrollbar_margin_top** = ``-1``
 
-The top margin of the vertical scrollbar. When negative, uses :ref:`panel<class_Tree_theme_style_panel>` top margin.
+垂直滚动条的顶部边距。为负数时会使用 :ref:`panel<class_Tree_theme_style_panel>` 的顶部边距。
 
 .. rst-class:: classref-item-separator
 
@@ -1748,7 +1748,7 @@ The top margin of the vertical scrollbar. When negative, uses :ref:`panel<class_
 
 :ref:`int<class_int>` **title_button_font_size**
 
-Font size of the title button's text.
+标题按钮文本的字体大小。
 
 .. rst-class:: classref-item-separator
 
@@ -2002,10 +2002,10 @@ Font size of the title button's text.
 
 当标题按钮被按下时使用的 :ref:`StyleBox<class_StyleBox>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

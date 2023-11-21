@@ -10,14 +10,14 @@
 FileAccess
 ==========
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 提供用于文件读写操作的方法。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 这个类可以用于在用户设备的文件系统中永久存储数据，也可以从中读取数据。适用于存储游戏存档数据或玩家配置文件。
 
@@ -64,17 +64,19 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`文件系统 <../tutorials/scripting/filesystem>`
+
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
 
 - `3D 体素演示 <https://godotengine.org/asset-library/asset/676>`__
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -85,8 +87,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -207,8 +209,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_FileAccess_ModeFlags:
 
@@ -314,7 +316,7 @@ flags **UnixPermissionFlags**:
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_OWNER** = ``256``
 
-Read for owner bit.
+读取所有者比特位。
 
 .. _class_FileAccess_constant_UNIX_WRITE_OWNER:
 
@@ -322,7 +324,7 @@ Read for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_OWNER** = ``128``
 
-Write for owner bit.
+写入所有者比特位。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_OWNER:
 
@@ -330,7 +332,7 @@ Write for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_OWNER** = ``64``
 
-Execute for owner bit.
+执行所有者比特位。
 
 .. _class_FileAccess_constant_UNIX_READ_GROUP:
 
@@ -338,7 +340,7 @@ Execute for owner bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_GROUP** = ``32``
 
-Read for group bit.
+读取组比特位。
 
 .. _class_FileAccess_constant_UNIX_WRITE_GROUP:
 
@@ -346,7 +348,7 @@ Read for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_GROUP** = ``16``
 
-Write for group bit.
+写入组比特位。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_GROUP:
 
@@ -354,7 +356,7 @@ Write for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_GROUP** = ``8``
 
-Execute for group bit.
+执行组比特位。
 
 .. _class_FileAccess_constant_UNIX_READ_OTHER:
 
@@ -362,7 +364,7 @@ Execute for group bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_READ_OTHER** = ``4``
 
-Read for other bit.
+读取其他比特位。
 
 .. _class_FileAccess_constant_UNIX_WRITE_OTHER:
 
@@ -370,7 +372,7 @@ Read for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_WRITE_OTHER** = ``2``
 
-Write for other bit.
+写入其他比特位。
 
 .. _class_FileAccess_constant_UNIX_EXECUTE_OTHER:
 
@@ -378,7 +380,7 @@ Write for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_EXECUTE_OTHER** = ``1``
 
-Execute for other bit.
+执行其他比特位。
 
 .. _class_FileAccess_constant_UNIX_SET_USER_ID:
 
@@ -386,7 +388,7 @@ Execute for other bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_SET_USER_ID** = ``2048``
 
-Set user id on execution bit.
+在执行比特位上设置用户 ID 。
 
 .. _class_FileAccess_constant_UNIX_SET_GROUP_ID:
 
@@ -394,7 +396,7 @@ Set user id on execution bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_SET_GROUP_ID** = ``1024``
 
-Set group id on execution bit.
+在执行位上设置组 ID。
 
 .. _class_FileAccess_constant_UNIX_RESTRICTED_DELETE:
 
@@ -402,7 +404,7 @@ Set group id on execution bit.
 
 :ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>` **UNIX_RESTRICTED_DELETE** = ``512``
 
-Restricted deletion (sticky) bit.
+限制删除（粘性）比特位。
 
 .. rst-class:: classref-section-separator
 
@@ -410,8 +412,8 @@ Restricted deletion (sticky) bit.
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_FileAccess_property_big_endian:
 
@@ -436,8 +438,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_FileAccess_method_close:
 
@@ -642,7 +644,9 @@ void **flush** **(** **)**
 
 :ref:`PackedByteArray<class_PackedByteArray>` **get_file_as_bytes** **(** :ref:`String<class_String>` path **)** |static|
 
-将 ``path`` 文件中的所有内容作为 :ref:`PackedByteArray<class_PackedByteArray>` 返回，不进行任何解码。
+将整个 ``path`` 文件内容作为 :ref:`PackedByteArray<class_PackedByteArray>` 返回，无需任何解码。
+
+如果打开文件时发生错误，则返回空的 :ref:`PackedByteArray<class_PackedByteArray>`\ 。你可以使用 :ref:`get_open_error<class_FileAccess_method_get_open_error>` 来检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -654,7 +658,9 @@ void **flush** **(** **)**
 
 :ref:`String<class_String>` **get_file_as_string** **(** :ref:`String<class_String>` path **)** |static|
 
-将 ``path`` 文件中的所有内容作为 :ref:`String<class_String>` 返回。作为 UTF-8 编码的文本解析。
+将整个 ``path`` 文件内容以 :ref:`String<class_String>` 形式返回。文本被解释为 UTF-8 编码。
+
+如果打开文件时发生错误，则返回空 :ref:`String<class_String>`\ 。可以使用 :ref:`get_open_error<class_FileAccess_method_get_open_error>` 来检查发生的错误。
 
 .. rst-class:: classref-item-separator
 
@@ -678,9 +684,9 @@ void **flush** **(** **)**
 
 :ref:`bool<class_bool>` **get_hidden_attribute** **(** :ref:`String<class_String>` file **)** |static|
 
-Returns ``true``, if file ``hidden`` attribute is set.
+如果文件 ``hidden`` 属性已设置，则返回 ``true``\ 。
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **注意：**\ 该方法在 iOS、BSD、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -730,7 +736,7 @@ Returns ``true``, if file ``hidden`` attribute is set.
 
 :ref:`int<class_int>` **get_modified_time** **(** :ref:`String<class_String>` file **)** |static|
 
-Returns the last time the ``file`` was modified in Unix timestamp format, or ``0`` on error. This Unix timestamp can be converted to another format using the :ref:`Time<class_Time>` singleton.
+返回 ``file`` 的最后修改时间，使用 Unix 时间戳格式，出错时返回 ``0``\ 。这个 Unix 时间戳可以用 :ref:`Time<class_Time>` 单例转换为其他格式。
 
 .. rst-class:: classref-item-separator
 
@@ -804,9 +810,9 @@ Returns the last time the ``file`` was modified in Unix timestamp format, or ``0
 
 :ref:`bool<class_bool>` **get_read_only_attribute** **(** :ref:`String<class_String>` file **)** |static|
 
-Returns ``true``, if file ``read only`` attribute is set.
+如果文件 ``read only`` 属性已设置，则返回 ``true``\ 。
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **注意：**\ 此方法在 iOS、BSD、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -842,9 +848,9 @@ Returns ``true``, if file ``read only`` attribute is set.
 
 |bitfield|\<:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\> **get_unix_permissions** **(** :ref:`String<class_String>` file **)** |static|
 
-Returns file UNIX permissions.
+返回文件的 UNIX 权限。
 
-\ **Note:** This method is implemented on iOS, Linux/BSD, and macOS.
+\ **注意：**\ 该方法在 iOS、Linux/BSD 和 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -970,9 +976,9 @@ void **seek_end** **(** :ref:`int<class_int>` position=0 **)**
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_hidden_attribute** **(** :ref:`String<class_String>` file, :ref:`bool<class_bool>` hidden **)** |static|
 
-Sets file ``hidden`` attribute.
+设置文件 **hidden** 属性。
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **注意：**\ 该方法在 iOS、BSD、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -984,9 +990,9 @@ Sets file ``hidden`` attribute.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_read_only_attribute** **(** :ref:`String<class_String>` file, :ref:`bool<class_bool>` ro **)** |static|
 
-Sets file ``read only`` attribute.
+设置文件 **read only** 属性。
 
-\ **Note:** This method is implemented on iOS, BSD, macOS, and Windows.
+\ **注意：**\ 该方法在 iOS、BSD、macOS 和 Windows 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -998,9 +1004,9 @@ Sets file ``read only`` attribute.
 
 :ref:`Error<enum_@GlobalScope_Error>` **set_unix_permissions** **(** :ref:`String<class_String>` file, |bitfield|\<:ref:`UnixPermissionFlags<enum_FileAccess_UnixPermissionFlags>`\> permissions **)** |static|
 
-Sets file UNIX permissions.
+设置文件的 UNIX 权限。
 
-\ **Note:** This method is implemented on iOS, Linux/BSD, and macOS.
+\ **注意：**\ 该方法在 iOS、Linux/BSD 和 macOS 上实现。
 
 .. rst-class:: classref-item-separator
 
@@ -1217,12 +1223,12 @@ void **store_var** **(** :ref:`Variant<class_Variant>` value, :ref:`bool<class_b
 
 在内部，这使用与 :ref:`@GlobalScope.var_to_bytes<class_@GlobalScope_method_var_to_bytes>` 方法相同的编码机制。
 
-\ **注意：**\ 并非所有属性都包括在内。只有配置了 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` 标志集的属性才会被序列化。可以通过覆盖类中的 :ref:`Object._get_property_list<class_Object_method__get_property_list>` 方法来向属性添加新的使用标志。还可以通过调用 :ref:`Object._get_property_list<class_Object_method__get_property_list>` 来检查属性使用的配置方式。有关可能的使用标志，请参阅 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>`\ 。
+\ **注意：**\ 并非所有属性都包括在内。只有配置了 :ref:`@GlobalScope.PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` 标志集的属性才会被序列化。可以通过覆盖类中的 :ref:`Object._get_property_list<class_Object_private_method__get_property_list>` 方法来向属性添加新的使用标志。还可以通过调用 :ref:`Object._get_property_list<class_Object_private_method__get_property_list>` 来检查属性使用的配置方式。有关可能的使用标志，请参阅 :ref:`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>`\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

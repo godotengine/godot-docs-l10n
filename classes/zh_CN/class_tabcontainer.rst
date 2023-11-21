@@ -10,14 +10,14 @@
 TabContainer
 ============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 会为每个子控件创建一个选项卡的容器，只会显示活动选项卡对应的控件。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 以选项卡视图排列子控件，为每个子控件创建一个选项卡。活动选项卡对应的控件可见，其他子控件都会被隐藏。非控件子节点会被忽略。
 
@@ -25,15 +25,15 @@ Description
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`使用容器 <../tutorials/ui/gui_containers>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -49,6 +49,8 @@ Properties
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`AlignmentMode<enum_TabBar_AlignmentMode>` | :ref:`tab_alignment<class_TabContainer_property_tab_alignment>`                               | ``0``     |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
+   | :ref:`FocusMode<enum_Control_FocusMode>`        | :ref:`tab_focus_mode<class_TabContainer_property_tab_focus_mode>`                             | ``2``     |
+   +-------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`int<class_int>`                           | :ref:`tabs_rearrange_group<class_TabContainer_property_tabs_rearrange_group>`                 | ``-1``    |
    +-------------------------------------------------+-----------------------------------------------------------------------------------------------+-----------+
    | :ref:`bool<class_bool>`                         | :ref:`tabs_visible<class_TabContainer_property_tabs_visible>`                                 | ``true``  |
@@ -58,8 +60,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -70,6 +72,8 @@ Methods
    | :ref:`Popup<class_Popup>`         | :ref:`get_popup<class_TabContainer_method_get_popup>` **(** **)** |const|                                                                                   |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`int<class_int>`             | :ref:`get_previous_tab<class_TabContainer_method_get_previous_tab>` **(** **)** |const|                                                                     |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`TabBar<class_TabBar>`       | :ref:`get_tab_bar<class_TabContainer_method_get_tab_bar>` **(** **)** |const|                                                                               |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Texture2D<class_Texture2D>` | :ref:`get_tab_button_icon<class_TabContainer_method_get_tab_button_icon>` **(** :ref:`int<class_int>` tab_idx **)** |const|                                 |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -91,6 +95,10 @@ Methods
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`           | :ref:`is_tab_hidden<class_TabContainer_method_is_tab_hidden>` **(** :ref:`int<class_int>` tab_idx **)** |const|                                             |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`           | :ref:`select_next_available<class_TabContainer_method_select_next_available>` **(** **)**                                                                   |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`           | :ref:`select_previous_available<class_TabContainer_method_select_previous_available>` **(** **)**                                                           |
+   +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                              | :ref:`set_popup<class_TabContainer_method_set_popup>` **(** :ref:`Node<class_Node>` popup **)**                                                             |
    +-----------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                              | :ref:`set_tab_button_icon<class_TabContainer_method_set_tab_button_icon>` **(** :ref:`int<class_int>` tab_idx, :ref:`Texture2D<class_Texture2D>` icon **)** |
@@ -108,8 +116,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -157,6 +165,8 @@ Theme Properties
    +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_disabled<class_TabContainer_theme_style_tab_disabled>`                   |                                     |
    +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_focus<class_TabContainer_theme_style_tab_focus>`                         |                                     |
+   +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_hovered<class_TabContainer_theme_style_tab_hovered>`                     |                                     |
    +-----------------------------------+------------------------------------------------------------------------------------+-------------------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`tab_selected<class_TabContainer_theme_style_tab_selected>`                   |                                     |
@@ -172,8 +182,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_TabContainer_signal_active_tab_rearranged:
 
@@ -253,7 +263,7 @@ Signals
 
 **tab_selected** **(** :ref:`int<class_int>` tab **)**
 
-选择选项卡时发出，即使它是当前选项卡。
+通过点击、定向输入、或脚本选中某个选项卡时发出，即便该选项卡本来就是当前选项卡。
 
 .. rst-class:: classref-section-separator
 
@@ -261,8 +271,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_TabContainer_property_all_tabs_in_front:
 
@@ -349,6 +359,23 @@ Property Descriptions
 
 ----
 
+.. _class_TabContainer_property_tab_focus_mode:
+
+.. rst-class:: classref-property
+
+:ref:`FocusMode<enum_Control_FocusMode>` **tab_focus_mode** = ``2``
+
+.. rst-class:: classref-property-setget
+
+- void **set_tab_focus_mode** **(** :ref:`FocusMode<enum_Control_FocusMode>` value **)**
+- :ref:`FocusMode<enum_Control_FocusMode>` **get_tab_focus_mode** **(** **)**
+
+内部 :ref:`TabBar<class_TabBar>` 节点的焦点访问模式。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TabContainer_property_tabs_rearrange_group:
 
 .. rst-class:: classref-property
@@ -404,8 +431,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_TabContainer_method_get_current_tab_control:
 
@@ -440,6 +467,20 @@ Method Descriptions
 :ref:`int<class_int>` **get_previous_tab** **(** **)** |const|
 
 返回上一个活动选项卡的索引。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_method_get_tab_bar:
+
+.. rst-class:: classref-method
+
+:ref:`TabBar<class_TabBar>` **get_tab_bar** **(** **)** |const|
+
+返回这个容器中包含的 :ref:`TabBar<class_TabBar>`\ 。
+
+\ **警告：**\ 这是一个必需的内部节点，对其进行移除和释放或者编辑其中的选项卡可能会导致崩溃。如果你想编辑选项卡，请使用 **TabContainer** 提供的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -565,6 +606,30 @@ Method Descriptions
 
 ----
 
+.. _class_TabContainer_method_select_next_available:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **select_next_available** **(** **)**
+
+选择索引大于当前所选选项卡索引的第一个可用选项卡。如果选项卡选择发生改变，则返回 ``true``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_TabContainer_method_select_previous_available:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **select_previous_available** **(** **)**
+
+选择索引低于当前所选选项卡索引的第一个可用选项卡。如果选项卡选择发生改变，则返回 ``true``\ 。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TabContainer_method_set_popup:
 
 .. rst-class:: classref-method
@@ -651,8 +716,8 @@ void **set_tab_title** **(** :ref:`int<class_int>` tab_idx, :ref:`String<class_S
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_TabContainer_theme_color_drop_mark_color:
 
@@ -910,6 +975,18 @@ Theme Property Descriptions
 
 ----
 
+.. _class_TabContainer_theme_style_tab_focus:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **tab_focus**
+
+该 :ref:`TabBar<class_TabBar>` 处于聚焦状态时使用的 :ref:`StyleBox<class_StyleBox>`\ 。\ :ref:`tab_focus<class_TabContainer_theme_style_tab_focus>` :ref:`StyleBox<class_StyleBox>` 显示在基础 :ref:`StyleBox<class_StyleBox>` *之上*\ ，所以应该使用部分透明的 :ref:`StyleBox<class_StyleBox>`\ ，确保基础 :ref:`StyleBox<class_StyleBox>` 仍然可见。代表轮廓或下划线的 :ref:`StyleBox<class_StyleBox>` 可以很好地实现这个目的。要禁用聚焦的视觉效果，请指定 :ref:`StyleBoxEmpty<class_StyleBoxEmpty>` 资源。请注意，禁用聚焦的视觉效果会影响使用键盘/手柄进行导航的可用性，所以出于可访问性的原因，不建议这样做。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_TabContainer_theme_style_tab_hovered:
 
 .. rst-class:: classref-themeproperty
@@ -917,6 +994,8 @@ Theme Property Descriptions
 :ref:`StyleBox<class_StyleBox>` **tab_hovered**
 
 当前悬停的选项卡的样式。
+
+\ **注意：**\ 该样式将至少以与 :ref:`tab_unselected<class_TabContainer_theme_style_tab_unselected>` 相同的宽度绘制。
 
 .. rst-class:: classref-item-separator
 
@@ -954,10 +1033,10 @@ Theme Property Descriptions
 
 :ref:`TabBar<class_TabBar>` 区域的背景填充样式。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

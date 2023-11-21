@@ -14,8 +14,8 @@ Basis
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于表示 3D 旋转和缩放的 3×3 矩阵。通常用作 :ref:`Transform3D<class_Transform3D>` 的正交基。
 
@@ -27,12 +27,12 @@ Description
 
 .. note::
 
-	There are notable differences when using this API with C#. See :ref:`doc_c_sharp_differences` for more information.
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`数学文档索引 <../tutorials/math/index>`
 
@@ -50,8 +50,8 @@ Tutorials
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -66,8 +66,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -86,8 +86,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -106,6 +106,8 @@ Methods
    | :ref:`Vector3<class_Vector3>`       | :ref:`get_scale<class_Basis_method_get_scale>` **(** **)** |const|                                                                                                                                           |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Basis<class_Basis>`           | :ref:`inverse<class_Basis_method_inverse>` **(** **)** |const|                                                                                                                                               |
+   +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`             | :ref:`is_conformal<class_Basis_method_is_conformal>` **(** **)** |const|                                                                                                                                     |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`             | :ref:`is_equal_approx<class_Basis_method_is_equal_approx>` **(** :ref:`Basis<class_Basis>` b **)** |const|                                                                                                   |
    +-------------------------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -132,8 +134,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -160,8 +162,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Basis_constant_IDENTITY:
 
@@ -171,7 +173,7 @@ Constants
 
 恒等基，未应用旋转或缩放。
 
-这与不带任何参数调用 ``Basis()`` 是一样的。这个常量可以用来让你的代码更清晰，并与 C# 保持一致。
+这与不带任何参数调用 :ref:`Basis<class_Basis_constructor_Basis>` 来创建是一样的。这个常量可以用来让你的代码更清晰，并与 C# 保持一致。
 
 .. _class_Basis_constant_FLIP_X:
 
@@ -203,8 +205,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Basis_property_x:
 
@@ -244,8 +246,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_Basis_constructor_Basis:
 
@@ -301,8 +303,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Basis_method_determinant:
 
@@ -387,6 +389,18 @@ Method Descriptions
 :ref:`Basis<class_Basis>` **inverse** **(** **)** |const|
 
 返回矩阵的逆值。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_Basis_method_is_conformal:
+
+.. rst-class:: classref-method
+
+:ref:`bool<class_bool>` **is_conformal** **(** **)** |const|
+
+如果该基是共形的，则返回\ ``true``\ ，这意味着它保留角度和距离比率，并且只能由旋转和均匀缩放组成。如果该基具有不均匀的缩放或剪切/倾斜，则返回 ``false``\ 。这可以用来验证该基是否不失真，这对于物理和其他用例很重要。
 
 .. rst-class:: classref-item-separator
 
@@ -530,8 +544,8 @@ Method Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_Basis_operator_neq_Basis:
 
@@ -617,10 +631,10 @@ Operator Descriptions
 
 使用索引访问基的分量。\ ``b[0]`` 相当于 ``b.x``\ 、\ ``b[1]`` 相当于 ``b.y``\ 、\ ``b[2]`` 相当于 ``b.z``\ 。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

@@ -10,31 +10,29 @@
 GraphEdit
 =========
 
-**Inherits:** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 图结构编辑器，使用 :ref:`GraphNode<class_GraphNode>`\ 。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 **GraphEdit** 提供了用于对各种图进行创建、操作、显示的工具。它在引擎中的主要目的是驱动可视化编程系统，例如可视化着色器，但也可以在用户项目中使用。
 
-\ **GraphEdit** 本身只是一个空容器，表示一个可以放置 :ref:`GraphNode<class_GraphNode>` 的无限栅格。每个 :ref:`GraphNode<class_GraphNode>` 代表图中的一个节点，是连接方案中的单个数据单元。而 **GraphEdit** 则有助于控制节点和节点之间的各种交互。当用户尝试连接、断开或关闭 :ref:`GraphNode<class_GraphNode>` 时，\ **GraphEdit** 中会发出对应的信号，但默认情况下不执行任何动作。使用此控件的程序员负责实现必要的逻辑，来确定应如何处理每个请求。
+\ **GraphEdit** 本身只是一个空容器，表示一个可以放置 :ref:`GraphNode<class_GraphNode>` 的无限栅格。每个 :ref:`GraphNode<class_GraphNode>` 代表图中的一个节点，是连接方案中的单个数据单元。而 **GraphEdit** 则有助于控制节点和节点之间的各种交互。当用户尝试连接、断开或删除一个 :ref:`GraphNode<class_GraphNode>` 时，\ **GraphEdit** 中会发出对应的信号，但默认情况下不执行任何动作。使用此控件的程序员负责实现必要的逻辑，来确定应如何处理每个请求。
 
 \ **性能：**\ 强烈建议在使用 GraphEdit 时启用低处理器使用模式（见 :ref:`OS.low_processor_usage_mode<class_OS_property_low_processor_usage_mode>`\ ）。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
 
-   +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                            | :ref:`arrange_nodes_button_hidden<class_GraphEdit_property_arrange_nodes_button_hidden>`   | ``false``                                                                 |
    +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                            | clip_contents                                                                              | ``true`` (overrides :ref:`Control<class_Control_property_clip_contents>`) |
    +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
@@ -58,7 +56,17 @@ Properties
    +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
    | :ref:`Vector2<class_Vector2>`                      | :ref:`scroll_offset<class_GraphEdit_property_scroll_offset>`                               | ``Vector2(0, 0)``                                                         |
    +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                            | :ref:`show_arrange_button<class_GraphEdit_property_show_arrange_button>`                   | ``true``                                                                  |
+   +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                            | :ref:`show_grid<class_GraphEdit_property_show_grid>`                                       | ``true``                                                                  |
+   +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                            | :ref:`show_grid_buttons<class_GraphEdit_property_show_grid_buttons>`                       | ``true``                                                                  |
+   +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                            | :ref:`show_menu<class_GraphEdit_property_show_menu>`                                       | ``true``                                                                  |
+   +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                            | :ref:`show_minimap_button<class_GraphEdit_property_show_minimap_button>`                   | ``true``                                                                  |
+   +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
+   | :ref:`bool<class_bool>`                            | :ref:`show_zoom_buttons<class_GraphEdit_property_show_zoom_buttons>`                       | ``true``                                                                  |
    +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
    | :ref:`bool<class_bool>`                            | :ref:`show_zoom_label<class_GraphEdit_property_show_zoom_label>`                           | ``false``                                                                 |
    +----------------------------------------------------+--------------------------------------------------------------------------------------------+---------------------------------------------------------------------------+
@@ -77,20 +85,20 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`PackedVector2Array<class_PackedVector2Array>` | :ref:`_get_connection_line<class_GraphEdit_method__get_connection_line>` **(** :ref:`Vector2<class_Vector2>` from_position, :ref:`Vector2<class_Vector2>` to_position **)** |virtual| |const|                                                                                           |
+   | :ref:`PackedVector2Array<class_PackedVector2Array>` | :ref:`_get_connection_line<class_GraphEdit_private_method__get_connection_line>` **(** :ref:`Vector2<class_Vector2>` from_position, :ref:`Vector2<class_Vector2>` to_position **)** |virtual| |const|                                                                                   |
    +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`_is_in_input_hotzone<class_GraphEdit_method__is_in_input_hotzone>` **(** :ref:`Object<class_Object>` in_node, :ref:`int<class_int>` in_port, :ref:`Vector2<class_Vector2>` mouse_position **)** |virtual|                                                                         |
+   | :ref:`bool<class_bool>`                             | :ref:`_is_in_input_hotzone<class_GraphEdit_private_method__is_in_input_hotzone>` **(** :ref:`Object<class_Object>` in_node, :ref:`int<class_int>` in_port, :ref:`Vector2<class_Vector2>` mouse_position **)** |virtual|                                                                 |
    +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`_is_in_output_hotzone<class_GraphEdit_method__is_in_output_hotzone>` **(** :ref:`Object<class_Object>` in_node, :ref:`int<class_int>` in_port, :ref:`Vector2<class_Vector2>` mouse_position **)** |virtual|                                                                       |
+   | :ref:`bool<class_bool>`                             | :ref:`_is_in_output_hotzone<class_GraphEdit_private_method__is_in_output_hotzone>` **(** :ref:`Object<class_Object>` in_node, :ref:`int<class_int>` in_port, :ref:`Vector2<class_Vector2>` mouse_position **)** |virtual|                                                               |
    +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`bool<class_bool>`                             | :ref:`_is_node_hover_valid<class_GraphEdit_method__is_node_hover_valid>` **(** :ref:`StringName<class_StringName>` from_node, :ref:`int<class_int>` from_port, :ref:`StringName<class_StringName>` to_node, :ref:`int<class_int>` to_port **)** |virtual|                               |
+   | :ref:`bool<class_bool>`                             | :ref:`_is_node_hover_valid<class_GraphEdit_private_method__is_node_hover_valid>` **(** :ref:`StringName<class_StringName>` from_node, :ref:`int<class_int>` from_port, :ref:`StringName<class_StringName>` to_node, :ref:`int<class_int>` to_port **)** |virtual|                       |
    +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                | :ref:`add_valid_connection_type<class_GraphEdit_method_add_valid_connection_type>` **(** :ref:`int<class_int>` from_type, :ref:`int<class_int>` to_type **)**                                                                                                                           |
    +-----------------------------------------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -131,8 +139,8 @@ Methods
 
 .. rst-class:: classref-reftable-group
 
-Theme Properties
-----------------
+主题属性
+--------
 
 .. table::
    :widths: auto
@@ -166,6 +174,8 @@ Theme Properties
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------+
    | :ref:`Texture2D<class_Texture2D>` | :ref:`zoom_reset<class_GraphEdit_theme_icon_zoom_reset>`                                   |                          |
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------+
+   | :ref:`StyleBox<class_StyleBox>`   | :ref:`menu_panel<class_GraphEdit_theme_style_menu_panel>`                                  |                          |
+   +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------+
    | :ref:`StyleBox<class_StyleBox>`   | :ref:`panel<class_GraphEdit_theme_style_panel>`                                            |                          |
    +-----------------------------------+--------------------------------------------------------------------------------------------+--------------------------+
 
@@ -175,8 +185,8 @@ Theme Properties
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_GraphEdit_signal_begin_node_move:
 
@@ -185,18 +195,6 @@ Signals
 **begin_node_move** **(** **)**
 
 在 GraphNode 移动开始时发出。
-
-.. rst-class:: classref-item-separator
-
-----
-
-.. _class_GraphEdit_signal_close_nodes_request:
-
-.. rst-class:: classref-signal
-
-**close_nodes_request** **(** :ref:`StringName[]<class_StringName>` nodes **)**
-
-Emitted when attempting to remove a GraphNode from the GraphEdit. Provides a list of node names to be removed (all selected nodes, excluding nodes without closing button).
 
 .. rst-class:: classref-item-separator
 
@@ -274,6 +272,18 @@ Emitted when attempting to remove a GraphNode from the GraphEdit. Provides a lis
 
 ----
 
+.. _class_GraphEdit_signal_delete_nodes_request:
+
+.. rst-class:: classref-signal
+
+**delete_nodes_request** **(** :ref:`StringName[]<class_StringName>` nodes **)**
+
+当尝试从该 GraphEdit 中移除一个 GraphNode 时触发。提供要移除的节点名称列表（所有选中的节点，除去不包含关闭按钮的节点）。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_GraphEdit_signal_disconnection_request:
 
 .. rst-class:: classref-signal
@@ -318,7 +328,7 @@ Emitted when attempting to remove a GraphNode from the GraphEdit. Provides a lis
 
 .. container:: contribute
 
-	There is currently no description for this signal. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个信号的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -374,8 +384,8 @@ Emitted when attempting to remove a GraphNode from the GraphEdit. Provides a lis
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_GraphEdit_PanningScheme:
 
@@ -405,25 +415,8 @@ enum **PanningScheme**:
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
-
-.. _class_GraphEdit_property_arrange_nodes_button_hidden:
-
-.. rst-class:: classref-property
-
-:ref:`bool<class_bool>` **arrange_nodes_button_hidden** = ``false``
-
-.. rst-class:: classref-property-setget
-
-- void **set_arrange_nodes_button_hidden** **(** :ref:`bool<class_bool>` value **)**
-- :ref:`bool<class_bool>` **is_arrange_nodes_button_hidden** **(** **)**
-
-如果为 ``true``\ ，则隐藏排列节点按钮。
-
-.. rst-class:: classref-item-separator
-
-----
+属性说明
+--------
 
 .. _class_GraphEdit_property_connection_lines_antialiased:
 
@@ -578,6 +571,23 @@ Property Descriptions
 
 ----
 
+.. _class_GraphEdit_property_show_arrange_button:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **show_arrange_button** = ``true``
+
+.. rst-class:: classref-property-setget
+
+- void **set_show_arrange_button** **(** :ref:`bool<class_bool>` value **)**
+- :ref:`bool<class_bool>` **is_showing_arrange_button** **(** **)**
+
+如果为 ``true``\ ，则自动排列图形节点的按钮可见。
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_GraphEdit_property_show_grid:
 
 .. rst-class:: classref-property
@@ -589,7 +599,75 @@ Property Descriptions
 - void **set_show_grid** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_showing_grid** **(** **)**
 
-If ``true``, the grid is visible.
+如果为 ``true``\ ，则该网格可见。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GraphEdit_property_show_grid_buttons:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **show_grid_buttons** = ``true``
+
+.. rst-class:: classref-property-setget
+
+- void **set_show_grid_buttons** **(** :ref:`bool<class_bool>` value **)**
+- :ref:`bool<class_bool>` **is_showing_grid_buttons** **(** **)**
+
+如果为 ``true``\ ，则允许配置栅格和吸附选项的按钮可见。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GraphEdit_property_show_menu:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **show_menu** = ``true``
+
+.. rst-class:: classref-property-setget
+
+- void **set_show_menu** **(** :ref:`bool<class_bool>` value **)**
+- :ref:`bool<class_bool>` **is_showing_menu** **(** **)**
+
+如果为 ``true``\ ，则菜单栏可见。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GraphEdit_property_show_minimap_button:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **show_minimap_button** = ``true``
+
+.. rst-class:: classref-property-setget
+
+- void **set_show_minimap_button** **(** :ref:`bool<class_bool>` value **)**
+- :ref:`bool<class_bool>` **is_showing_minimap_button** **(** **)**
+
+如果为 ``true``\ ，则切换小地图的按钮可见。
+
+.. rst-class:: classref-item-separator
+
+----
+
+.. _class_GraphEdit_property_show_zoom_buttons:
+
+.. rst-class:: classref-property
+
+:ref:`bool<class_bool>` **show_zoom_buttons** = ``true``
+
+.. rst-class:: classref-property-setget
+
+- void **set_show_zoom_buttons** **(** :ref:`bool<class_bool>` value **)**
+- :ref:`bool<class_bool>` **is_showing_zoom_buttons** **(** **)**
+
+如果为 ``true``\ ，则允许更改和重置缩放级别的按钮可见。
 
 .. rst-class:: classref-item-separator
 
@@ -606,7 +684,7 @@ If ``true``, the grid is visible.
 - void **set_show_zoom_label** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_showing_zoom_label** **(** **)**
 
-如果为 ``true``\ ，则使当前缩放级别的标签可见。缩放值以百分比显示。
+如果为 ``true``\ ，则使带有当前缩放级别的标签可见。缩放级别以百分比显示。
 
 .. rst-class:: classref-item-separator
 
@@ -623,7 +701,7 @@ If ``true``, the grid is visible.
 - void **set_snapping_distance** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_snapping_distance** **(** **)**
 
-The snapping distance in pixels, also determines the grid line distance.
+吸附距离，单位为像素，也决定了栅格线距离。
 
 .. rst-class:: classref-item-separator
 
@@ -716,10 +794,10 @@ The snapping distance in pixels, also determines the grid line distance.
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_GraphEdit_method__get_connection_line:
+.. _class_GraphEdit_private_method__get_connection_line:
 
 .. rst-class:: classref-method
 
@@ -731,17 +809,17 @@ Method Descriptions
 
 ----
 
-.. _class_GraphEdit_method__is_in_input_hotzone:
+.. _class_GraphEdit_private_method__is_in_input_hotzone:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_is_in_input_hotzone** **(** :ref:`Object<class_Object>` in_node, :ref:`int<class_int>` in_port, :ref:`Vector2<class_Vector2>` mouse_position **)** |virtual|
 
-Returns whether the ``mouse_position`` is in the input hot zone.
+返回 ``mouse_position`` 是否在输入热区。
 
-By default, a hot zone is a :ref:`Rect2<class_Rect2>` positioned such that its center is at ``in_node``.\ :ref:`GraphNode.get_input_port_position<class_GraphNode_method_get_input_port_position>`\ (``in_port``) (For output's case, call :ref:`GraphNode.get_output_port_position<class_GraphNode_method_get_output_port_position>` instead). The hot zone's width is twice the Theme Property ``port_grab_distance_horizontal``, and its height is twice the ``port_grab_distance_vertical``.
+默认情况下，热区是一个 :ref:`Rect2<class_Rect2>`\ ，其中心位于 ``in_node``.\ :ref:`GraphNode.get_input_port_position<class_GraphNode_method_get_input_port_position>`\ (``in_port``)（对于输出的情况，请改为调用 :ref:`GraphNode.get_output_port_position<class_GraphNode_method_get_output_port_position>`\ ）。热区的宽度是主题属性 ``port_grab_distance_horizontal`` 的两倍，高度是 ``port_grab_distance_vertical`` 的两倍。
 
-Below is a sample code to help get started:
+下面是一个示例代码，以帮助入门：
 
 ::
 
@@ -756,15 +834,15 @@ Below is a sample code to help get started:
 
 ----
 
-.. _class_GraphEdit_method__is_in_output_hotzone:
+.. _class_GraphEdit_private_method__is_in_output_hotzone:
 
 .. rst-class:: classref-method
 
 :ref:`bool<class_bool>` **_is_in_output_hotzone** **(** :ref:`Object<class_Object>` in_node, :ref:`int<class_int>` in_port, :ref:`Vector2<class_Vector2>` mouse_position **)** |virtual|
 
-Returns whether the ``mouse_position`` is in the output hot zone. For more information on hot zones, see :ref:`_is_in_input_hotzone<class_GraphEdit_method__is_in_input_hotzone>`.
+返回 ``mouse_position`` 是否在输出热区。有关热区的更多信息，请参阅 :ref:`_is_in_input_hotzone<class_GraphEdit_private_method__is_in_input_hotzone>`\ 。
 
-Below is a sample code to help get started:
+下面是一个示例代码，以帮助入门：
 
 ::
 
@@ -779,7 +857,7 @@ Below is a sample code to help get started:
 
 ----
 
-.. _class_GraphEdit_method__is_node_hover_valid:
+.. _class_GraphEdit_private_method__is_node_hover_valid:
 
 .. rst-class:: classref-method
 
@@ -1022,7 +1100,7 @@ void **remove_valid_right_disconnect_type** **(** :ref:`int<class_int>` type **)
 
 void **set_connection_activity** **(** :ref:`StringName<class_StringName>` from_node, :ref:`int<class_int>` from_port, :ref:`StringName<class_StringName>` to_node, :ref:`int<class_int>` to_port, :ref:`float<class_float>` amount **)**
 
-使用 :ref:`activity<class_GraphEdit_theme_color_activity>` 主题属性中提供的颜色，设置 ``from_node`` 的 ``from_port`` 和 ``to_node`` 的 ``to_port`` 之间的连接的颜色。
+使用 :ref:`activity<class_GraphEdit_theme_color_activity>` 主题属性中提供的颜色，设置 ``from_node`` 的 ``from_port`` 和 ``to_node`` 的 ``to_port`` 之间的连接的颜色。使用 ``amount`` 作为权重，在连接颜色和活动颜色之间线性插值颜色。
 
 .. rst-class:: classref-item-separator
 
@@ -1042,8 +1120,8 @@ void **set_selected** **(** :ref:`Node<class_Node>` node **)**
 
 .. rst-class:: classref-descriptions-group
 
-Theme Property Descriptions
----------------------------
+主题属性说明
+------------
 
 .. _class_GraphEdit_theme_color_activity:
 
@@ -1051,9 +1129,7 @@ Theme Property Descriptions
 
 :ref:`Color<class_Color>` **activity** = ``Color(1, 1, 1, 1)``
 
-.. container:: contribute
-
-	There is currently no description for this theme property. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+该连接活动的颜色（请参阅 :ref:`set_connection_activity<class_GraphEdit_method_set_connection_activity>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1137,7 +1213,7 @@ Theme Property Descriptions
 
 :ref:`Texture2D<class_Texture2D>` **grid_toggle**
 
-The icon for the grid toggle button.
+网格开关按钮的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -1149,7 +1225,7 @@ The icon for the grid toggle button.
 
 :ref:`Texture2D<class_Texture2D>` **layout**
 
-The icon for the layout button for auto-arranging the graph.
+用于自动排列图形的布局按钮的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -1161,7 +1237,7 @@ The icon for the layout button for auto-arranging the graph.
 
 :ref:`Texture2D<class_Texture2D>` **minimap_toggle**
 
-The icon for the minimap toggle button.
+小地图开关按钮的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -1173,7 +1249,7 @@ The icon for the minimap toggle button.
 
 :ref:`Texture2D<class_Texture2D>` **snapping_toggle**
 
-The icon for the snapping toggle button.
+吸附开关按钮的图标。
 
 .. rst-class:: classref-item-separator
 
@@ -1215,6 +1291,20 @@ The icon for the snapping toggle button.
 
 ----
 
+.. _class_GraphEdit_theme_style_menu_panel:
+
+.. rst-class:: classref-themeproperty
+
+:ref:`StyleBox<class_StyleBox>` **menu_panel**
+
+.. container:: contribute
+
+	目前没有这个主题属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+
+.. rst-class:: classref-item-separator
+
+----
+
 .. _class_GraphEdit_theme_style_panel:
 
 .. rst-class:: classref-themeproperty
@@ -1223,10 +1313,10 @@ The icon for the snapping toggle button.
 
 绘制在栅格下方的背景。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

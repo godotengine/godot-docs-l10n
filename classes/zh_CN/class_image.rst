@@ -10,32 +10,34 @@
 Image
 =====
 
-**Inherits:** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 图像数据类型。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 本机图像数据类型。包含可以被转换为 :ref:`ImageTexture<class_ImageTexture>` 的图像数据，并提供常用的\ *图像处理*\ 方法。\ **Image** 的最大宽度和高度为 :ref:`MAX_WIDTH<class_Image_constant_MAX_WIDTH>` 和 :ref:`MAX_HEIGHT<class_Image_constant_MAX_HEIGHT>`\ 。
 
-\ **Image** 不能被直接分配给对象（例如 :ref:`Sprite2D<class_Sprite2D>`\ ）的 ``texture`` 属性，必须先手动转换为 :ref:`ImageTexture<class_ImageTexture>`\ 。
+\ **Image** 不能被直接分配给对象的纹理属性（例如 :ref:`Sprite2D.texture<class_Sprite2D_property_texture>`\ ），必须先手动转换为 :ref:`ImageTexture<class_ImageTexture>`\ 。
 
 \ **注意：**\ 由于图形硬件限制，最大图像大小为 16384×16384 像素。较大的图像可能无法导入。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`导入图像 <../tutorials/assets_pipeline/importing_images>`
 
+- :doc:`运行时文件加载与保存 <../tutorials/io/runtime_file_loading_and_saving>`
+
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +48,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -198,8 +200,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Enumerations
-------------
+枚举
+----
 
 .. _enum_Image_Format:
 
@@ -313,7 +315,7 @@ OpenGL 纹理格式 ``GL_RGBA32F``\ ，其中有四个部分，每个部分都�
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RH** = ``12``
 
-OpenGL texture format ``GL_R16F`` where there's one component, a 16-bit "half-precision" floating-point value.
+OpenGL 纹理格式 ``GL_R16F``\ ，其中有一个分量，即 16 位“半精度”浮点值。
 
 .. _class_Image_constant_FORMAT_RGH:
 
@@ -321,7 +323,7 @@ OpenGL texture format ``GL_R16F`` where there's one component, a 16-bit "half-pr
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGH** = ``13``
 
-OpenGL texture format ``GL_RG16F`` where there are two components, each a 16-bit "half-precision" floating-point value.
+OpenGL 纹理格式 ``GL_RG16F``\ ，其中有两个分量，每个分量都是 16 位“半精度”浮点值。
 
 .. _class_Image_constant_FORMAT_RGBH:
 
@@ -329,7 +331,7 @@ OpenGL texture format ``GL_RG16F`` where there are two components, each a 16-bit
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBH** = ``14``
 
-OpenGL texture format ``GL_RGB16F`` where there are three components, each a 16-bit "half-precision" floating-point value.
+OpenGL 纹理格式 ``GL_RGB16F``\ ，其中有三个分量，每个分量都是 16 位“半精度”浮点值。
 
 .. _class_Image_constant_FORMAT_RGBAH:
 
@@ -337,7 +339,7 @@ OpenGL texture format ``GL_RGB16F`` where there are three components, each a 16-
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGBAH** = ``15``
 
-OpenGL texture format ``GL_RGBA16F`` where there are four components, each a 16-bit "half-precision" floating-point value.
+OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 位“半精度”浮点值。
 
 .. _class_Image_constant_FORMAT_RGBE9995:
 
@@ -511,7 +513,7 @@ OpenGL texture format ``GL_RGBA16F`` where there are four components, each a 16-
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ASTC_4x4** = ``35``
 
-`Adaptive Scalable Texture Compression <https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression>`__. This implements the 4x4 (high quality) mode.
+`自适应可伸缩纹理压缩 <https://zh.wikipedia.org/wiki/%E8%87%AA%E9%80%82%E5%BA%94%E5%8F%AF%E4%BC%B8%E7%BC%A9%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9>`__\ 。这实现了 4x4（高质量）模式。
 
 .. _class_Image_constant_FORMAT_ASTC_4x4_HDR:
 
@@ -527,7 +529,7 @@ OpenGL texture format ``GL_RGBA16F`` where there are four components, each a 16-
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ASTC_8x8** = ``37``
 
-`Adaptive Scalable Texture Compression <https://en.wikipedia.org/wiki/Adaptive_scalable_texture_compression>`__. This implements the 8x8 (low quality) mode.
+`自适应可伸缩纹理压缩 <https://zh.wikipedia.org/wiki/%E8%87%AA%E9%80%82%E5%BA%94%E5%8F%AF%E4%BC%B8%E7%BC%A9%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9>`__\ 。这实现了 8x8（低质量）模式。
 
 .. _class_Image_constant_FORMAT_ASTC_8x8_HDR:
 
@@ -819,8 +821,8 @@ enum **ASTCFormat**:
 
 .. rst-class:: classref-descriptions-group
 
-Constants
----------
+常量
+----
 
 .. _class_Image_constant_MAX_WIDTH:
 
@@ -844,8 +846,8 @@ Constants
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_Image_property_data:
 
@@ -861,8 +863,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_Image_method_adjust_bcs:
 
@@ -872,7 +874,7 @@ void **adjust_bcs** **(** :ref:`float<class_float>` brightness, :ref:`float<clas
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1090,7 +1092,7 @@ void **crop** **(** :ref:`int<class_int>` width, :ref:`int<class_int>` height **
 
 .. container:: contribute
 
-	There is currently no description for this method. Please help us by :ref:`contributing one <doc_updating_the_class_reference>`!
+	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
 
 .. rst-class:: classref-item-separator
 
@@ -1162,9 +1164,9 @@ void **flip_y** **(** **)**
 
 :ref:`Error<enum_@GlobalScope_Error>` **generate_mipmaps** **(** :ref:`bool<class_bool>` renormalize=false **)**
 
-Generates mipmaps for the image. Mipmaps are precalculated lower-resolution copies of the image that are automatically used if the image needs to be scaled down when rendered. They help improve image quality and performance when rendering. This method returns an error if the image is compressed, in a custom format, or if the image's width/height is ``0``. Enabling ``renormalize`` when generating mipmaps for normal textures will make sure all resulting vector values are normalized.
+为图像生成多级渐远纹理（Mipmap）。多级渐远纹理是预先计算好的图像的低分辨率副本，如果图像在渲染时需要按比例缩小，则会自动使用这些副本。它们有助于在渲染时提高图像质量和性能。如果图像被压缩，或采用自定义格式，或图像的宽度或高度为 ``0``\ ，则该方法返回错误。在为法线纹理生成多级渐远纹理时启用 ``renormalize`` 能够确保得到的所有向量值都是归一化的。
 
-It is possible to check if the image has mipmaps by calling :ref:`has_mipmaps<class_Image_method_has_mipmaps>` or :ref:`get_mipmap_count<class_Image_method_get_mipmap_count>`.
+调用 :ref:`has_mipmaps<class_Image_method_has_mipmaps>` 或 :ref:`get_mipmap_count<class_Image_method_get_mipmap_count>` 能够检查图像是否使用多级渐远纹理。在已拥有多级渐远纹理的图像上调用 :ref:`generate_mipmaps<class_Image_method_generate_mipmaps>` 将替换该图像中已有的多级渐远纹理。
 
 .. rst-class:: classref-item-separator
 
@@ -1212,7 +1214,7 @@ It is possible to check if the image has mipmaps by calling :ref:`has_mipmaps<cl
 
 :ref:`int<class_int>` **get_mipmap_count** **(** **)** |const|
 
-Returns the number of mipmap levels or 0 if the image has no mipmaps. The largest main level image is not counted as a mipmap level by this method, so if you want to include it you can add 1 to this count.
+返回多级渐远纹理级别数；如果该图像没有多级渐远纹理，则返回 0。该方法不会将最大的主要级别图像计为一个多级渐远纹理级别，因此如果你想将其包括在内，可以在该计数中加 1。
 
 .. rst-class:: classref-item-separator
 
@@ -1224,7 +1226,7 @@ Returns the number of mipmap levels or 0 if the image has no mipmaps. The larges
 
 :ref:`int<class_int>` **get_mipmap_offset** **(** :ref:`int<class_int>` mipmap **)** |const|
 
-返回存储在图像的 ``data`` 字典中的索引为 ``mipmap`` 的多级渐远纹理的偏移量。
+返回存储在图像的 :ref:`data<class_Image_property_data>` 字典中的索引为 ``mipmap`` 的多级渐远纹理的偏移量。
 
 .. rst-class:: classref-item-separator
 
@@ -1376,9 +1378,11 @@ Returns the number of mipmap levels or 0 if the image has no mipmaps. The larges
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_bmp_from_buffer** **(** :ref:`PackedByteArray<class_PackedByteArray>` buffer **)**
 
-从 BMP 文件的二进制内容中加载图像。
+从 BMP 文件的二进制内容加载图像。
 
-\ **注意：**\ Godot 的 BMP 模块不支持 16 位像素的图像。只支持 1 位、4 位、8 位、24 位和 32 位像素的图像。
+\ **注意：**\ Godot 的 BMP 模块不支持每像素 16 位的图像。仅支持每像素 1 位、4 位、8 位、24 位和 32 位的图像。
+
+\ **注意：**\ 该方法仅在启用了 BMP 模块的引擎版本中可用。默认情况下，BMP 模块是启用的，但可以在构建时使用 ``module_bmp_enabled=no`` SCons 选项禁用它。
 
 .. rst-class:: classref-item-separator
 
@@ -1414,7 +1418,11 @@ Returns the number of mipmap levels or 0 if the image has no mipmaps. The larges
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_ktx_from_buffer** **(** :ref:`PackedByteArray<class_PackedByteArray>` buffer **)**
 
-Loads an image from the binary contents of a KTX file.
+从 `KTX <https://github.com/KhronosGroup/KTX-Software>`__ 文件的二进制内容加载图像。与大多数图像格式不同，KTX 可以存储 VRAM 压缩数据并嵌入 mipmap。
+
+\ **注意：**\ Godot 的 libktx 实现仅支持 2D 图像。不支持立方体贴图、纹理数组、和去填充。
+
+\ **注意：**\ 该方法仅在启用了 KTX 模块的引擎版本中可用。默认情况下，KTX 模块是启用的，但可以在构建时使用 ``module_ktx_enabled=no`` SCons 选项禁用它。
 
 .. rst-class:: classref-item-separator
 
@@ -1438,11 +1446,11 @@ Loads an image from the binary contents of a KTX file.
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_svg_from_buffer** **(** :ref:`PackedByteArray<class_PackedByteArray>` buffer, :ref:`float<class_float>` scale=1.0 **)**
 
-Loads an image from the UTF-8 binary contents of an **uncompressed** SVG file (**.svg**).
+从\ **未压缩** SVG 文件（\ **.svg**\ ）的 UTF-8 二进制内容加载图像。
 
-\ **Note:** Beware when using compressed SVG files (like **.svgz**), they need to be ``decompressed`` before loading.
+\ **注意：**\ 使用压缩的 SVG 文件（如 **.svgz**\ ）时请注意，在加载之前需要对其进行 ``decompressed``\ 。
 
-\ **Note:** This method is only available in engine builds with the SVG module enabled. By default, the SVG module is enabled, but it can be disabled at build-time using the ``module_svg_enabled=no`` SCons option.
+\ **注意：**\ 该方法仅在启用了 SVG 模块的引擎版本中可用。默认情况下，SVG 模块是启用的，但可以在构建时使用 ``module_svg_enabled=no`` SCons 选项禁用它。
 
 .. rst-class:: classref-item-separator
 
@@ -1454,9 +1462,9 @@ Loads an image from the UTF-8 binary contents of an **uncompressed** SVG file (*
 
 :ref:`Error<enum_@GlobalScope_Error>` **load_svg_from_string** **(** :ref:`String<class_String>` svg_str, :ref:`float<class_float>` scale=1.0 **)**
 
-Loads an image from the string contents of a SVG file (**.svg**).
+从 SVG 文件（\ **.svg**\ ）的字符串内容加载图像。
 
-\ **Note:** This method is only available in engine builds with the SVG module enabled. By default, the SVG module is enabled, but it can be disabled at build-time using the ``module_svg_enabled=no`` SCons option.
+\ **注意：**\ 该方法仅在启用了 SVG 模块的引擎版本中可用。默认情况下，SVG 模块是启用的，但可以在构建时使用 ``module_svg_enabled=no`` SCons 选项禁用它。
 
 .. rst-class:: classref-item-separator
 
@@ -1469,6 +1477,8 @@ Loads an image from the string contents of a SVG file (**.svg**).
 :ref:`Error<enum_@GlobalScope_Error>` **load_tga_from_buffer** **(** :ref:`PackedByteArray<class_PackedByteArray>` buffer **)**
 
 从 TGA 文件的二进制内容加载图像。
+
+\ **注意：**\ 该方法仅在启用了 TGA 模块的引擎版本中可用。默认情况下，TGA 模块是启用的，但可以在构建时使用 ``module_tga_enabled=no`` SCons 选项禁用它。
 
 .. rst-class:: classref-item-separator
 
@@ -1504,7 +1514,7 @@ void **normal_map_to_xy** **(** **)**
 
 void **premultiply_alpha** **(** **)**
 
-将颜色值与 Alpha 值相乘。像素的结果颜色值为 ``(color * alpha)/256``\ 。
+将颜色值与 Alpha 值相乘。像素的最终颜色值为 ``(color * alpha)/256``\ 。另见 :ref:`CanvasItemMaterial.blend_mode<class_CanvasItemMaterial_property_blend_mode>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1656,7 +1666,9 @@ void **rotate_180** **(** **)**
 
 :ref:`Error<enum_@GlobalScope_Error>` **save_webp** **(** :ref:`String<class_String>` path, :ref:`bool<class_bool>` lossy=false, :ref:`float<class_float>` quality=0.75 **)** |const|
 
-将该图像作为 WebP（Web 图片）文件保存到 ``path`` 中的文件中。默认情况下，它将无损保存。如果 ``lossy`` 为真，则该图像将使用介于 0.0 和 1.0（包含）之间的 ``quality`` 设置进行有损保存。
+将该图像作为 WebP（Web 图片）文件保存到 ``path`` 中的文件中。默认情况下，它将无损保存。如果 ``lossy`` 为真，则该图像将使用介于 0.0 和 1.0（包含）之间的 ``quality`` 设置进行有损保存。无损 WebP 提供比 PNG 更有效的压缩。
+
+\ **注意：**\ WebP 格式的大小限制为 16383×16383 像素，而 PNG 可以保存更大的图像。
 
 .. rst-class:: classref-item-separator
 
@@ -1668,7 +1680,9 @@ void **rotate_180** **(** **)**
 
 :ref:`PackedByteArray<class_PackedByteArray>` **save_webp_to_buffer** **(** :ref:`bool<class_bool>` lossy=false, :ref:`float<class_float>` quality=0.75 **)** |const|
 
-将该图像作为 WebP（Web 图片）文件保存到字节数组中。默认情况下，它将无损保存。如果 ``lossy`` 为真，则该图像将使用介于 0.0 和 1.0（包含）之间的 ``quality`` 设置进行有损保存。
+将该图像作为 WebP（Web 图片）文件保存到字节数组中。默认情况下，它将无损保存。如果 ``lossy`` 为真，则该图像将使用介于 0.0 和 1.0（包含）之间的 ``quality`` 设置进行有损保存。无损 WebP 提供比 PNG 更有效的压缩。
+
+\ **注意：**\ WebP 格式的大小限制为 16383×16383 像素，而 PNG 可以保存更大的图像。
 
 .. rst-class:: classref-item-separator
 
@@ -1766,7 +1780,7 @@ void **set_pixelv** **(** :ref:`Vector2i<class_Vector2i>` point, :ref:`Color<cla
 
 void **shrink_x2** **(** **)**
 
-将图像缩小 2 倍。
+在每个轴上将图像缩小 2 倍（这会将像素数除以 4）。
 
 .. rst-class:: classref-item-separator
 
@@ -1780,10 +1794,10 @@ void **srgb_to_linear** **(** **)**
 
 将原始数据从 sRGB 色彩空间转换为线性比例。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

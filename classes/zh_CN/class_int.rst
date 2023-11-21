@@ -14,64 +14,64 @@ int
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
-Signed 64-bit integer type. This means that it can take values from ``-2^63`` to ``2^63 - 1``, i.e. from ``-9223372036854775808`` to ``9223372036854775807``. When it exceeds these bounds, it will wrap around.
+带符号 64 位整数类型。这意味着它能够接受从 ``-2^63`` 到 ``2^63 - 1`` 的值，即从 ``-9223372036854775808`` 到 ``9223372036854775807``\ 。超出这个范围后，值会绕回到另一端。
 
-\ **int**\ s can be automatically converted to :ref:`float<class_float>`\ s when necessary, for example when passing them as arguments in functions. The :ref:`float<class_float>` will be as close to the original integer as possible.
+\ **int** 可以在需要时自动转换为 :ref:`float<class_float>`\ ，例如在作为函数的参数传递的时候。\ :ref:`float<class_float>` 会尽可能与原始整数接近。
 
-Likewise, :ref:`float<class_float>`\ s can be automatically converted into **int**\ s. This will truncate the :ref:`float<class_float>`, discarding anything after the floating point.
+类似地，\ :ref:`float<class_float>` 可以自动转换为 **int**\ 。这样会截断该 :ref:`float<class_float>`\ ，丢弃小数点之后的部分。
 
-\ **Note:** In a boolean context, an **int** will evaluate to ``false`` if it equals ``0``, and to ``true`` otherwise.
+\ **注意：**\ 布尔环境中会将等于 ``0`` 的 **int** 评估为 ``false``\ ，其他值则为 ``true``\ 。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var x: int = 1 # x is 1
-    x = 4.2 # x is 4, because 4.2 gets truncated
-    var max_int = 9223372036854775807 # Biggest value an int can store
-    max_int += 1 # max_int is -9223372036854775808, because it wrapped around
+    var x: int = 1 # x 为 1
+    x = 4.2 # x 为 4，因为 4.2 发生了截断
+    var max_int = 9223372036854775807 # int 所能存储的最大值
+    max_int += 1 # max_int 现在是 -9223372036854775808，因为它绕到了另一端
 
  .. code-tab:: csharp
 
-    int x = 1; // x is 1
-    x = (int)4.2; // x is 4, because 4.2 gets truncated
-    // We use long below, because GDScript's int is 64-bit while C#'s int is 32-bit.
-    long maxLong = 9223372036854775807; // Biggest value a long can store
-    maxLong++; // maxLong is now -9223372036854775808, because it wrapped around.
+    int x = 1; // x 为 1
+    x = (int)4.2; // x 为 4，因为 4.2 发生了截断
+    // 下面使用 long，因为 GDScript 的 int 为 64 位，而 C# 的 int 为 32 位。
+    long maxLong = 9223372036854775807; // long 所能存储的最大值
+    maxLong++; // maxLong 现在是 -9223372036854775808，因为它绕到了另一端。
     
-    // Alternatively with C#'s 32-bit int type, which has a smaller maximum value.
-    int maxInt = 2147483647; // Biggest value an int can store
-    maxInt++; // maxInt is now -2147483648, because it wrapped around
+    // 也可以使用 C# 的 32 位 int 类型，最大值较小。
+    int maxInt = 2147483647; // int 所能存储的最大值
+    maxInt++; // maxInt 现在是 -2147483648，因为它绕到了另一端。
 
 
 
-You can use the ``0b`` literal for binary representation, the ``0x`` literal for hexadecimal representation, and the ``_`` symbol to separate long numbers and improve readability.
+你可以使用 ``0b`` 字面量书写二进制值，使用 ``0x`` 字面量书写十六进制值，使用 ``_`` 符号分隔较长的数字，提升可读性。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var x = 0b1001 # x is 9
-    var y = 0xF5 # y is 245
-    var z = 10_000_000 # z is 10000000
+    var x = 0b1001 # x 为 9
+    var y = 0xF5 # y 为 245
+    var z = 10_000_000 # z 为 10000000
 
  .. code-tab:: csharp
 
-    int x = 0b1001; // x is 9
-    int y = 0xF5; // y is 245
-    int z = 10_000_000; // z is 10000000
+    int x = 0b1001; // x 为 9
+    int y = 0xF5; // y 为 245
+    int z = 10_000_000; // z 为 10000000
 
 
 
 .. rst-class:: classref-reftable-group
 
-Constructors
-------------
+构造函数
+--------
 
 .. table::
    :widths: auto
@@ -90,8 +90,8 @@ Constructors
 
 .. rst-class:: classref-reftable-group
 
-Operators
----------
+操作符
+------
 
 .. table::
    :widths: auto
@@ -182,8 +182,8 @@ Operators
 
 .. rst-class:: classref-descriptions-group
 
-Constructor Descriptions
-------------------------
+构造函数说明
+------------
 
 .. _class_int_constructor_int:
 
@@ -239,8 +239,8 @@ Constructor Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Operator Descriptions
----------------------
+操作符说明
+----------
 
 .. _class_int_operator_neq_float:
 
@@ -769,17 +769,17 @@ Operator Descriptions
 
 :ref:`int<class_int>` **operator ~** **(** **)**
 
-Performs the bitwise ``NOT`` operation on the **int**. Due to `2's complement <https://en.wikipedia.org/wiki/Two%27s_complement>`__, it's effectively equal to ``-(int + 1)``.
+对该 **int** 执行按位 ``NOT``\ （反）运算。由于\ `补码 <https://zh.wikipedia.org/zh-cn/%E4%BA%8C%E8%A3%9C%E6%95%B8>`__\ ，效果上与 ``-(int + 1)`` 相同。
 
 ::
 
-    print(~4) # Prints -5
-    print(~(-7)) # Prints 6
+    print(~4) # 输出 -5
+    print(~(-7)) # 输出 6
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

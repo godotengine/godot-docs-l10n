@@ -10,21 +10,21 @@
 EditorProperty
 ==============
 
-**Inherits:** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Container<class_Container>` **<** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
 用于编辑属性的自定义控件，可以添加到 :ref:`EditorInspector<class_EditorInspector>` 中。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 用于编辑属性的自定义控件，可以添加到 :ref:`EditorInspector<class_EditorInspector>` 中。通过 :ref:`EditorInspectorPlugin<class_EditorInspectorPlugin>` 添加。
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -47,16 +47,16 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
 
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                | :ref:`_set_read_only<class_EditorProperty_method__set_read_only>` **(** :ref:`bool<class_bool>` read_only **)** |virtual|                                                                                                                          |
+   | void                                | :ref:`_set_read_only<class_EditorProperty_private_method__set_read_only>` **(** :ref:`bool<class_bool>` read_only **)** |virtual|                                                                                                                  |
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | void                                | :ref:`_update_property<class_EditorProperty_method__update_property>` **(** **)** |virtual|                                                                                                                                                        |
+   | void                                | :ref:`_update_property<class_EditorProperty_private_method__update_property>` **(** **)** |virtual|                                                                                                                                                |
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                | :ref:`add_focusable<class_EditorProperty_method_add_focusable>` **(** :ref:`Control<class_Control>` control **)**                                                                                                                                  |
    +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -77,8 +77,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_EditorProperty_signal_multiple_properties_changed:
 
@@ -86,7 +86,7 @@ Signals
 
 **multiple_properties_changed** **(** :ref:`PackedStringArray<class_PackedStringArray>` properties, :ref:`Array<class_Array>` value **)**
 
-如果想要同时修改多个属性，请发出它。如果属性是通过 :ref:`EditorInspectorPlugin._parse_property<class_EditorInspectorPlugin_method__parse_property>` 添加的，请勿使用。
+如果想要同时修改多个属性，请发出它。如果属性是通过 :ref:`EditorInspectorPlugin._parse_property<class_EditorInspectorPlugin_private_method__parse_property>` 添加的，请勿使用。
 
 .. rst-class:: classref-item-separator
 
@@ -216,8 +216,8 @@ Signals
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_EditorProperty_property_checkable:
 
@@ -340,10 +340,10 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
-.. _class_EditorProperty_method__set_read_only:
+.. _class_EditorProperty_private_method__set_read_only:
 
 .. rst-class:: classref-method
 
@@ -355,7 +355,7 @@ void **_set_read_only** **(** :ref:`bool<class_bool>` read_only **)** |virtual|
 
 ----
 
-.. _class_EditorProperty_method__update_property:
+.. _class_EditorProperty_private_method__update_property:
 
 .. rst-class:: classref-method
 
@@ -409,7 +409,7 @@ void **emit_changed** **(** :ref:`StringName<class_StringName>` property, :ref:`
 
 :ref:`StringName<class_StringName>` **get_edited_property** **(** **)** |const|
 
-获取被编辑的属性。如果你的编辑器适用于单个属性（通过 :ref:`EditorInspectorPlugin._parse_property<class_EditorInspectorPlugin_method__parse_property>` 添加），则返回该属性。
+获取被编辑的属性。如果你的编辑器适用于单个属性（通过 :ref:`EditorInspectorPlugin._parse_property<class_EditorInspectorPlugin_private_method__parse_property>` 添加），则返回该属性。
 
 .. rst-class:: classref-item-separator
 
@@ -435,10 +435,10 @@ void **update_property** **(** **)**
 
 强制刷新属性显示。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

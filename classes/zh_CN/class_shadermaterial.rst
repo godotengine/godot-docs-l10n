@@ -10,32 +10,32 @@
 ShaderMaterial
 ==============
 
-**Inherits:** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Material<class_Material>` **<** :ref:`Resource<class_Resource>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-A material defined by a custom :ref:`Shader<class_Shader>` program and the values of its shader parameters.
-
-.. rst-class:: classref-introduction-group
-
-Description
------------
-
-A material that uses a custom :ref:`Shader<class_Shader>` program to render visual items (canvas items, meshes, skies, fog), or to process particles. Compared to other materials, **ShaderMaterial** gives deeper control over the generated shader code. For more information, see the shaders documentation index below.
-
-Multiple **ShaderMaterial**\ s can use the same shader and configure different values for the shader uniforms.
-
-\ **Note:** For performance reasons, the :ref:`Resource.changed<class_Resource_signal_changed>` signal is only emitted when the :ref:`Resource.resource_name<class_Resource_property_resource_name>` changes. Only in editor, it is also emitted for :ref:`shader<class_ShaderMaterial_property_shader>` changes.
+由自定义 :ref:`Shader<class_Shader>` 程序定义的材质及其着色器参数的值。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+描述
+----
+
+使用自定义 :ref:`Shader<class_Shader>` 程序来渲染可见项目（画布项目、网格、天空、雾）或处理粒子的材质。与其他材质相比，\ **ShaderMaterial** 可以更深入地控制生成的着色器代码。有关更多信息，请参阅下面的着色器文档索引。
+
+多个 **ShaderMaterial** 可以使用相同的着色器并为着色器 uniform 配置不同的值。
+
+\ **注意：**\ 出于性能原因，仅当 :ref:`Resource.resource_name<class_Resource_property_resource_name>` 更改时才会发出 :ref:`Resource.changed<class_Resource_signal_changed>` 信号。仅在编辑器中，它也会针对 :ref:`shader<class_ShaderMaterial_property_shader>` 更改而发出。
+
+.. rst-class:: classref-introduction-group
+
+教程
+----
 
 - :doc:`着色器文档索引 <../tutorials/shaders/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -64,8 +64,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_ShaderMaterial_property_shader:
 
@@ -86,8 +86,8 @@ Property Descriptions
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_ShaderMaterial_method_get_shader_parameter:
 
@@ -113,10 +113,10 @@ void **set_shader_parameter** **(** :ref:`StringName<class_StringName>` param, :
 
 \ **注意：**\ 对着色器 uniform 的修改会在使用这个 **ShaderMaterial** 的所有实例上生效。要防止这种行为，请通过 :ref:`GeometryInstance3D.set_instance_shader_parameter<class_GeometryInstance3D_method_set_instance_shader_parameter>` 使用单实例 uniform，或者使用 :ref:`Resource.duplicate<class_Resource_method_duplicate>` 制作该 **ShaderMaterial** 的副本。单实例 uniform 可以更好地复用着色器，因此速度也更快，所以应该尽可能优先使用，而不是制作 **ShaderMaterial** 的副本。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

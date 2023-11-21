@@ -10,30 +10,30 @@
 XRNode3D
 ========
 
-**Inherits:** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`Node3D<class_Node3D>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-**Inherited By:** :ref:`XRAnchor3D<class_XRAnchor3D>`, :ref:`XRController3D<class_XRController3D>`
+**派生：** :ref:`XRAnchor3D<class_XRAnchor3D>`, :ref:`XRController3D<class_XRController3D>`
 
 空间节点，位置由 :ref:`XRServer<class_XRServer>` 自动更新。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 这个节点可以绑定到 :ref:`XRPositionalTracker<class_XRPositionalTracker>` 的某个姿势，\ :ref:`XRServer<class_XRServer>` 会自动更新其 :ref:`Node3D.transform<class_Node3D_property_transform>`\ 。这类节点必须添加为 :ref:`XROrigin3D<class_XROrigin3D>` 节点的子节点。
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
 - :doc:`XR 文档索引 <../tutorials/xr/index>`
 
 .. rst-class:: classref-reftable-group
 
-Properties
-----------
+属性
+----
 
 .. table::
    :widths: auto
@@ -46,8 +46,8 @@ Properties
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -68,8 +68,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Signals
--------
+信号
+----
 
 .. _class_XRNode3D_signal_tracking_changed:
 
@@ -77,7 +77,7 @@ Signals
 
 **tracking_changed** **(** :ref:`bool<class_bool>` tracking **)**
 
-Emitted when the :ref:`tracker<class_XRNode3D_property_tracker>` starts or stops receiving updated tracking data for the :ref:`pose<class_XRNode3D_property_pose>` being tracked. The ``tracking`` argument indicates whether the tracker is getting updated tracking data.
+当 :ref:`tracker<class_XRNode3D_property_tracker>` 开始或停止接收正被跟踪的 :ref:`pose<class_XRNode3D_property_pose>` 的更新跟踪数据时发出。\ ``tracking`` 参数指示跟踪器是否正在获取更新的跟踪数据。
 
 .. rst-class:: classref-section-separator
 
@@ -85,8 +85,8 @@ Emitted when the :ref:`tracker<class_XRNode3D_property_tracker>` starts or stops
 
 .. rst-class:: classref-descriptions-group
 
-Property Descriptions
----------------------
+属性说明
+--------
 
 .. _class_XRNode3D_property_pose:
 
@@ -128,8 +128,8 @@ Godot 定义了许多标准跟踪器，例如 ``left_hand`` 和 ``right_hand``\ 
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_XRNode3D_method_get_has_tracking_data:
 
@@ -177,10 +177,10 @@ void **trigger_haptic_pulse** **(** :ref:`String<class_String>` action_name, :re
 
 \ ``action_name`` 是该脉冲的动作名称。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`

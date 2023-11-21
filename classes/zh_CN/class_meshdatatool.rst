@@ -10,14 +10,14 @@
 MeshDataTool
 ============
 
-**Inherits:** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
+**继承：** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
 用于访问和编辑 :ref:`Mesh<class_Mesh>` 数据的辅助工具。
 
 .. rst-class:: classref-introduction-group
 
-Description
------------
+描述
+----
 
 MeshDataTool 提供对 :ref:`Mesh<class_Mesh>` 中各个顶点的访问。它允许用户读取和编辑网格的顶点数据。它还创建了一系列面和边。
 
@@ -74,15 +74,15 @@ MeshDataTool 提供对 :ref:`Mesh<class_Mesh>` 中各个顶点的访问。它允
 
 .. rst-class:: classref-introduction-group
 
-Tutorials
----------
+教程
+----
 
-- :doc:`Using the MeshDataTool <../tutorials/3d/procedural_geometry/meshdatatool>`
+- :doc:`使用 MeshDataTool <../tutorials/3d/procedural_geometry/meshdatatool>`
 
 .. rst-class:: classref-reftable-group
 
-Methods
--------
+方法
+----
 
 .. table::
    :widths: auto
@@ -90,7 +90,7 @@ Methods
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | void                                                | :ref:`clear<class_MeshDataTool_method_clear>` **(** **)**                                                                                                                  |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-   | :ref:`Error<enum_@GlobalScope_Error>`               | :ref:`commit_to_surface<class_MeshDataTool_method_commit_to_surface>` **(** :ref:`ArrayMesh<class_ArrayMesh>` mesh **)**                                                   |
+   | :ref:`Error<enum_@GlobalScope_Error>`               | :ref:`commit_to_surface<class_MeshDataTool_method_commit_to_surface>` **(** :ref:`ArrayMesh<class_ArrayMesh>` mesh, :ref:`int<class_int>` compression_flags=0 **)**        |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
    | :ref:`Error<enum_@GlobalScope_Error>`               | :ref:`create_from_surface<class_MeshDataTool_method_create_from_surface>` **(** :ref:`ArrayMesh<class_ArrayMesh>` mesh, :ref:`int<class_int>` surface **)**                |
    +-----------------------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -171,8 +171,8 @@ Methods
 
 .. rst-class:: classref-descriptions-group
 
-Method Descriptions
--------------------
+方法说明
+--------
 
 .. _class_MeshDataTool_method_clear:
 
@@ -190,7 +190,7 @@ void **clear** **(** **)**
 
 .. rst-class:: classref-method
 
-:ref:`Error<enum_@GlobalScope_Error>` **commit_to_surface** **(** :ref:`ArrayMesh<class_ArrayMesh>` mesh **)**
+:ref:`Error<enum_@GlobalScope_Error>` **commit_to_surface** **(** :ref:`ArrayMesh<class_ArrayMesh>` mesh, :ref:`int<class_int>` compression_flags=0 **)**
 
 使用编辑后的数据，向指定的 :ref:`Mesh<class_Mesh>` 中添加一个新的表面。
 
@@ -318,24 +318,24 @@ void **clear** **(** **)**
 
 :ref:`int<class_int>` **get_face_vertex** **(** :ref:`int<class_int>` idx, :ref:`int<class_int>` vertex **)** |const|
 
-Returns the specified vertex index of the given face.
+返回给定面的指定顶点索引。
 
-Vertex argument must be either 0, 1, or 2 because faces contain three vertices.
+顶点参数必须为 0、1 或 2，因为面包含三个顶点。
 
-\ **Example:**\ 
+\ **示例：**\ 
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    var index = mesh_data_tool.get_face_vertex(0, 1) # Gets the index of the second vertex of the first face.
+    var index = mesh_data_tool.get_face_vertex(0, 1) # 获取第一个面的第二个顶点的索引。
     var position = mesh_data_tool.get_vertex(index)
     var normal = mesh_data_tool.get_vertex_normal(index)
 
  .. code-tab:: csharp
 
-    int index = meshDataTool.GetFaceVertex(0, 1); // Gets the index of the second vertex of the first face.
+    int index = meshDataTool.GetFaceVertex(0, 1); // 获取第一个面的第二个顶点的索引。
     Vector3 position = meshDataTool.GetVertex(index);
     Vector3 normal = meshDataTool.GetVertexNormal(index);
 
@@ -377,7 +377,7 @@ Vertex argument must be either 0, 1, or 2 because faces contain three vertices.
 
 :ref:`Vector3<class_Vector3>` **get_vertex** **(** :ref:`int<class_int>` idx **)** |const|
 
-Returns the position of the given vertex.
+返回给定顶点的位置。
 
 .. rst-class:: classref-item-separator
 
@@ -655,10 +655,10 @@ void **set_vertex_weights** **(** :ref:`int<class_int>` idx, :ref:`PackedFloat32
 
 设置给定顶点的骨骼权重。
 
-.. |virtual| replace:: :abbr:`virtual (This method should typically be overridden by the user to have any effect.)`
-.. |const| replace:: :abbr:`const (This method has no side effects. It doesn't modify any of the instance's member variables.)`
-.. |vararg| replace:: :abbr:`vararg (This method accepts any number of arguments after the ones described here.)`
-.. |constructor| replace:: :abbr:`constructor (This method is used to construct a type.)`
-.. |static| replace:: :abbr:`static (This method doesn't need an instance to be called, so it can be called directly using the class name.)`
-.. |operator| replace:: :abbr:`operator (This method describes a valid operator to use with this type as left-hand operand.)`
-.. |bitfield| replace:: :abbr:`BitField (This value is an integer composed as a bitmask of the following flags.)`
+.. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
+.. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`
+.. |vararg| replace:: :abbr:`vararg (本方法除了在此处描述的参数外，还能够继续接受任意数量的参数。)`
+.. |constructor| replace:: :abbr:`constructor (本方法用于构造某个类型。)`
+.. |static| replace:: :abbr:`static (调用本方法无需实例，所以可以直接使用类名调用。)`
+.. |operator| replace:: :abbr:`operator (本方法描述的是使用本类型作为左操作数的有效操作符。)`
+.. |bitfield| replace:: :abbr:`BitField (这个值是由下列标志构成的位掩码整数。)`
