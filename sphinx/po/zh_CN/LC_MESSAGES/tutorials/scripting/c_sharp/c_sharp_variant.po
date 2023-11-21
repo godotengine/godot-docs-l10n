@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "C# Variant"
-msgstr "``Variant``"
+msgstr "C# Variant"
 
 msgid ""
 "For a detailed explanation of Variant in general, see the :ref:`Variant "
@@ -62,13 +61,11 @@ msgid ""
 "``decimal``, ``nint`` and ``nuint``."
 msgstr ""
 
-#, fuzzy
 msgid "``string``."
-msgstr "``:String``"
+msgstr "``:String``。"
 
-#, fuzzy
 msgid "Classes derived from :ref:`GodotObject <class_Object>`."
-msgstr ":ref:`Object <class_Object>`"
+msgstr ":ref:`Object <class_Object>`。"
 
 msgid "Collections types defined in the ``Godot.Collections`` namespace."
 msgstr ""
@@ -76,226 +73,179 @@ msgstr ""
 msgid "Full list of Variant types and their equivalent C# type:"
 msgstr ""
 
-#, fuzzy
 msgid "Variant.Type"
-msgstr "``Variant``"
+msgstr "Variant.Type"
 
-#, fuzzy
 msgid "C# Type"
-msgstr "类型"
+msgstr "C# 类型"
 
 msgid "``Nil``"
-msgstr ""
+msgstr "``Nil``"
 
 msgid "``null`` (Not a type)"
 msgstr ""
 
 msgid "``Bool``"
-msgstr ""
+msgstr "``Bool``"
 
-#, fuzzy
 msgid "``bool``"
-msgstr "bool"
+msgstr "``bool``"
 
-#, fuzzy
 msgid "``Int``"
-msgstr "``: int``"
+msgstr "``Int``"
 
 msgid "``long`` (Godot stores 64-bit integers in Variant)"
 msgstr ""
 
-#, fuzzy
 msgid "``Float``"
-msgstr "``: float``"
+msgstr "``Float``"
 
 msgid "``double`` (Godot stores 64-bit floats in Variant)"
 msgstr ""
 
-#, fuzzy
 msgid "``String``"
-msgstr "``String[]``"
+msgstr "``String``"
 
-#, fuzzy
 msgid "``string``"
-msgstr "``:String``"
+msgstr "``string``"
 
-#, fuzzy
 msgid "``Vector2``"
-msgstr "``Vector2[]``"
+msgstr "``Vector2``"
 
-#, fuzzy
 msgid "``Godot.Vector2``"
-msgstr "``Vector2[]``"
+msgstr "``Godot.Vector2``"
 
-#, fuzzy
 msgid "``Vector2I``"
-msgstr "``Vector2[]``"
+msgstr "``Vector2I``"
 
-#, fuzzy
 msgid "``Godot.Vector2I``"
-msgstr "``Vector2[]``"
+msgstr "``Godot.Vector2I``"
 
-#, fuzzy
 msgid "``Rect2``"
-msgstr "Rect2"
+msgstr "``Rect2``"
 
-#, fuzzy
 msgid "``Godot.Rect2``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Rect2``"
 
-#, fuzzy
 msgid "``Rect2I``"
-msgstr "Rect2"
+msgstr "``Rect2I``"
 
-#, fuzzy
 msgid "``Godot.Rect2I``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Rect2I``"
 
-#, fuzzy
 msgid "``Vector3``"
-msgstr "``Vector3[]``"
+msgstr "``Vector3``"
 
-#, fuzzy
 msgid "``Godot.Vector3``"
-msgstr "``Vector3[]``"
+msgstr "``Godot.Vector3``"
 
-#, fuzzy
 msgid "``Vector3I``"
-msgstr "``Vector3[]``"
+msgstr "``Vector3I``"
 
-#, fuzzy
 msgid "``Godot.Vector3I``"
-msgstr "``Vector3[]``"
+msgstr "``Godot.Vector3I``"
 
-#, fuzzy
 msgid "``Transform2D``"
-msgstr "``transform``"
+msgstr "``Transform2D``"
 
-#, fuzzy
 msgid "``Godot.Transform2D``"
-msgstr "``transform``"
+msgstr "``Godot.Transform2D``"
 
-#, fuzzy
 msgid "``Vector4``"
-msgstr "``Vector2[]``"
+msgstr "``Vector4``"
 
-#, fuzzy
 msgid "``Godot.Vector4``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Vector4``"
 
-#, fuzzy
 msgid "``Vector4I``"
-msgstr "``Vector2[]``"
+msgstr "``Vector4I``"
 
-#, fuzzy
 msgid "``Godot.Vector4I``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Vector4I``"
 
-#, fuzzy
 msgid "``Plane``"
-msgstr "Plane"
+msgstr "``Plane``"
 
 msgid "``Godot.Plane``"
-msgstr ""
+msgstr "``Godot.Plane``"
 
-#, fuzzy
 msgid "``Quaternion``"
-msgstr "``Quadrant``"
+msgstr "``Quaternion``"
 
-#, fuzzy
 msgid "``Godot.Quaternion``"
-msgstr "``Rotation``"
+msgstr "``Godot.Quaternion``"
 
 msgid "``Aabb``"
-msgstr ""
+msgstr "``Aabb``"
 
 msgid "``Godot.Aabb``"
-msgstr ""
+msgstr "``Godot.Aabb``"
 
-#, fuzzy
 msgid "``Basis``"
-msgstr "``is``"
+msgstr "``Basis``"
 
 msgid "``Godot.Basis``"
-msgstr ""
+msgstr "``Godot.Basis``"
 
-#, fuzzy
 msgid "``Transform3D``"
-msgstr "``transform``"
+msgstr "``Transform3D``"
 
-#, fuzzy
 msgid "``Godot.Transform3D``"
-msgstr "``transform``"
+msgstr "``Godot.Transform3D``"
 
-#, fuzzy
 msgid "``Projection``"
-msgstr "``connection``"
+msgstr "``Projection``"
 
-#, fuzzy
 msgid "``Godot.Projection``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Projection``"
 
-#, fuzzy
 msgid "``Color``"
-msgstr "``Color8``"
+msgstr "``Color``"
 
-#, fuzzy
 msgid "``Godot.Color``"
-msgstr "``Color.Color8``"
+msgstr "``Godot.Color``"
 
-#, fuzzy
 msgid "``StringName``"
-msgstr "StringName"
+msgstr "``StringName``"
 
-#, fuzzy
 msgid "``Godot.StringName``"
-msgstr "StringName"
+msgstr "``Godot.StringName``"
 
-#, fuzzy
 msgid "``NodePath``"
-msgstr "``$NodePath``"
+msgstr "``NodePath``"
 
-#, fuzzy
 msgid "``Godot.NodePath``"
-msgstr "``$NodePath``"
+msgstr "``Godot.NodePath``"
 
-#, fuzzy
 msgid "``Rid``"
-msgstr "``-> void``"
+msgstr "``Rid``"
 
 msgid "``Godot.Rid``"
-msgstr ""
+msgstr "``Godot.Rid``"
 
-#, fuzzy
 msgid "``Object``"
-msgstr "Object"
+msgstr "``Object``"
 
 msgid "``Godot.GodotObject`` or any derived type."
-msgstr ""
+msgstr "``Godot.GodotObject`` 或其他派生类型。"
 
-#, fuzzy
 msgid "``Callable``"
-msgstr "``enabled``"
+msgstr "``Callable``"
 
-#, fuzzy
 msgid "``Godot.Callable``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Callable``"
 
-#, fuzzy
 msgid "``Signal``"
-msgstr "信号"
+msgstr "``Signal``"
 
-#, fuzzy
 msgid "``Godot.Signal``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Signal``"
 
-#, fuzzy
 msgid "``Dictionary``"
-msgstr "字典"
+msgstr "``Dictionary``"
 
-#, fuzzy
 msgid "``Godot.Collections.Dictionary``"
-msgstr "使用 ``Godot.Collections.Dictionary``."
+msgstr "``Godot.Collections.Dictionary``"
 
 msgid "``Array``"
 msgstr "``Array``"
@@ -303,74 +253,59 @@ msgstr "``Array``"
 msgid "``Godot.Collections.Array``"
 msgstr "``Godot.Collections.Array``"
 
-#, fuzzy
 msgid "``PackedByteArray``"
-msgstr "``PoolByteArray``"
+msgstr "``PackedByteArray``"
 
 msgid "``byte[]``"
 msgstr "``byte[]``"
 
-#, fuzzy
 msgid "``PackedInt32Array``"
-msgstr "``PoolIntArray``"
+msgstr "``PackedInt32Array``"
 
 msgid "``int[]``"
 msgstr "``int[]``"
 
-#, fuzzy
 msgid "``PackedInt64Array``"
-msgstr "``PoolIntArray``"
+msgstr "``PackedInt64Array``"
 
-#, fuzzy
 msgid "``long[]``"
-msgstr "``float[]``"
+msgstr "``long[]``"
 
-#, fuzzy
 msgid "``PackedFloat32Array``"
-msgstr "``PoolFloatArray``"
+msgstr "``PackedFloat32Array``"
 
 msgid "``float[]``"
 msgstr "``float[]``"
 
-#, fuzzy
 msgid "``PackedFloat64Array``"
-msgstr "``PoolFloatArray``"
+msgstr "``PackedFloat64Array``"
 
-#, fuzzy
 msgid "``double[]``"
-msgstr "``byte[]``"
+msgstr "``double[]``"
 
-#, fuzzy
 msgid "``PackedStringArray``"
-msgstr "``PoolStringArray``"
+msgstr "``PackedStringArray``"
 
-#, fuzzy
 msgid "``string[]``"
-msgstr "``String[]``"
+msgstr "``string[]``"
 
-#, fuzzy
 msgid "``PackedVector2Array``"
-msgstr "``PoolVector2Array``"
+msgstr "``PackedVector2Array``"
 
-#, fuzzy
 msgid "``Godot.Vector2[]``"
-msgstr "``Vector2[]``"
+msgstr "``Godot.Vector2[]``"
 
-#, fuzzy
 msgid "``PackedVector3Array``"
-msgstr "``PoolVector3Array``"
+msgstr "``PackedVector3Array``"
 
-#, fuzzy
 msgid "``Godot.Vector3[]``"
-msgstr "``Vector3[]``"
+msgstr "``Godot.Vector3[]``"
 
-#, fuzzy
 msgid "``PackedColorArray``"
-msgstr "``PoolColorArray``"
+msgstr "``PackedColorArray``"
 
-#, fuzzy
 msgid "``Godot.Color[]``"
-msgstr "``Color[]``"
+msgstr "``Godot.Color[]``"
 
 msgid ""
 "Godot uses 64-bit integers and floats in Variant. Smaller integer and float "

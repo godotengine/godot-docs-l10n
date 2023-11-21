@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Custom performance monitors"
-msgstr "检查器性能提示"
+msgstr "自定义性能监视器"
 
 msgid "Introduction"
 msgstr "前言"
 
 msgid ""
 "As explained in the :ref:`doc_debugger_panel` documentation, Godot features "
-"a **Debugger > Monitor** bottom panel that allows tracking various values "
+"a **Debugger > Monitors** bottom panel that allows tracking various values "
 "with graphs showing their evolution over time. The data for those graphs is "
 "sourced from the engine's :ref:`class_Performance` singleton."
 msgstr ""
 
 msgid ""
-"Since Godot 4.0, you can declare custom values to be displayed in this "
-"Monitor tab. Example use cases for custom performance monitors include:"
+"Since Godot 4.0, you can declare custom values to be displayed in the "
+"Monitors tab. Example use cases for custom performance monitors include:"
 msgstr ""
 
 msgid ""
@@ -49,9 +48,8 @@ msgid ""
 "mechanic works as intended."
 msgstr ""
 
-#, fuzzy
 msgid "Creating a custom performance monitor"
-msgstr "创建自定义节点"
+msgstr "创建自定义性能监视器"
 
 msgid ""
 "In this example, we'll create a custom performance monitor to track how many "
@@ -64,7 +62,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The second parameter of ref:`Performance."
+"The second parameter of :ref:`Performance."
 "add_custom_monitor<class_Performance_method_add_custom_monitor>` is a :ref:"
 "`class_Callable`."
 msgstr ""
@@ -89,6 +87,10 @@ msgid ""
 "graph appearing as follows:"
 msgstr ""
 
+#, fuzzy
+msgid "Example editor graph from a custom performance monitor"
+msgstr "创建自定义性能监视器"
+
 msgid ""
 "The performance monitor handling code doesn't have to live in the same "
 "script as the nodes themselves. You may choose to move the performance "
@@ -96,9 +98,8 @@ msgid ""
 "<doc_singletons_autoload>` instead."
 msgstr ""
 
-#, fuzzy
 msgid "Querying a performance monitor in a project"
-msgstr "性能监控工具。"
+msgstr "在项目中查询性能监视器"
 
 msgid ""
 "If you wish to display the value of the performance monitor in the running "

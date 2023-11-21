@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -200,14 +200,15 @@ msgid "class"
 msgstr "class"
 
 #, fuzzy
-msgid "Defines a class."
-msgstr "Definuje vnitřní třídu."
+msgid "Defines an inner class. See `Inner classes`_."
+msgstr "Vnitřní třídy uvnitř jiného souboru třídy."
 
 msgid "class_name"
 msgstr "class_name"
 
 msgid ""
-"Defines the script as a globally accessible class with the specified name."
+"Defines the script as a globally accessible class with the specified name. "
+"See `Registering named classes`_."
 msgstr ""
 
 msgid "extends"
@@ -231,7 +232,7 @@ msgid "in"
 msgstr "Najít"
 
 msgid ""
-"Tests whether a value is within a string, list, range, dictionary, or node. "
+"Tests whether a value is within a string, array, range, dictionary, or node. "
 "When used with ``for``, it iterates through them instead of testing."
 msgstr ""
 
@@ -680,11 +681,24 @@ msgstr ""
 msgid "Literals"
 msgstr "Literály"
 
-msgid "**Literal**"
-msgstr "**Literál**"
+#, fuzzy
+msgid "**Example(s)**"
+msgstr "**Příklad**"
 
-msgid "**Type**"
-msgstr "**Typ**"
+msgid "``null``"
+msgstr ""
+
+#, fuzzy
+msgid "Null value"
+msgstr "hodnota"
+
+#, fuzzy
+msgid "``false``, ``true``"
+msgstr "``-e``, ``--editor``"
+
+#, fuzzy
+msgid "Boolean values"
+msgstr "Logické operátory"
 
 msgid "``45``"
 msgstr "``45``"
@@ -714,14 +728,32 @@ msgstr "Číslo s plovoucí desetinnou čárkou (reálné)"
 msgid "``\"Hello\"``, ``'Hi'``"
 msgstr "``\"Hello\"``, ``\"Hi\"``"
 
-msgid "Strings"
-msgstr "Řetězce"
+#, fuzzy
+msgid "Regular strings"
+msgstr "|retular| Mírná"
 
-msgid "``\"\"\"Hello\"\"\"``"
-msgstr "``\"\"\"Hello\"\"\"``"
+#, fuzzy
+msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
 
-msgid "Multiline string"
-msgstr "Víceřádkový řetězec"
+msgid "Triple-quoted regular strings"
+msgstr ""
+
+#, fuzzy
+msgid "``r\"Hello\"``, ``r'Hi'``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Raw strings"
+msgstr "string"
+
+#, fuzzy
+msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Triple-quoted raw strings"
+msgstr "Formátovací řetězce GDScriptu"
 
 msgid "``&\"name\"``"
 msgstr ""
@@ -736,6 +768,13 @@ msgstr "``@\"Node/Label\"``"
 
 msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"There are also two constructs that look like literals, but actually are not:"
+msgstr ""
+
+msgid "**Example**"
+msgstr "**Příklad**"
 
 msgid "``$NodePath``"
 msgstr "``$NodePath``"
@@ -756,6 +795,130 @@ msgid ""
 msgstr ""
 "Celá a pohyblivá čísla mohou být oddělena znakem ``_``, aby byla lépe "
 "čitelná. Všechny následující způsoby zápisu čísel jsou platné::"
+
+msgid "**Regular string literals** can contain the following escape sequences:"
+msgstr ""
+
+msgid "**Escape sequence**"
+msgstr "Escape sekvence"
+
+msgid "**Expands to**"
+msgstr "**Rozšiřuje se na**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "Nový řádek (line feed)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "Vodorovný znak tabulátoru"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "návrat vozíku"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "Výstraha (pípnutí / zvonek)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "Backspace"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr "Přerušení stránky Formfeed"
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "Svislý znak tabulátoru"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "Dvojitá uvozovka"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "Jednoduchá uvozovka"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "Zpětné lomítko"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr ""
+"codepoint Unicode ``XXXX`` (hexadecimální, nerozlišuje velká a malá písmena)"
+
+#, fuzzy
+msgid "``\\UXXXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr ""
+"codepoint Unicode ``XXXX`` (hexadecimální, nerozlišuje velká a malá písmena)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above "
+"``0xFFFF``:"
+msgstr "Zdroje lze ukládat dvěma způsoby. Mohou to být:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+msgid ""
+"A string enclosed in quotes of one type (for example ``\"``) can contain "
+"quotes of another type (for example ``'``) without escaping. Triple-quoted "
+"strings allow you to avoid escaping up to two consecutive quotes of the same "
+"type (unless they are adjacent to the string edges)."
+msgstr ""
+
+msgid ""
+"**Raw string literals** always encode the string as it appears in the source "
+"code. This is especially useful for regular expressions. Raw strings do not "
+"process escape sequences, but you can \"escape\" a quote or backslash (they "
+"replace themselves)."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
+msgstr "GDScript také podporuje :ref:`doc_gdscript_printf`."
 
 #, fuzzy
 msgid "Annotations"
@@ -844,6 +1007,80 @@ msgid ""
 msgstr ""
 "Cokoli od ''#'' do konce řádku je ignorováno a je považováno za komentář."
 
+msgid ""
+"In the Godot script editor, special keywords are highlighted within comments "
+"to bring the user's attention to specific comments:"
+msgstr ""
+
+msgid ""
+"**Critical** *(appears in red)*: ``ALERT``, ``ATTENTION``, ``CAUTION``, "
+"``CRITICAL``, ``DANGER``, ``SECURITY``"
+msgstr ""
+
+msgid ""
+"**Warning** *(appears in yellow)*: ``BUG``, ``DEPRECATED``, ``FIXME``, "
+"``HACK``, ``TASK``, ``TBD``, ``TODO``, ``WARNING``"
+msgstr ""
+
+msgid ""
+"**Notice** *(appears in green)*: ``INFO``, ``NOTE``, ``NOTICE``, ``TEST``, "
+"``TESTING``"
+msgstr ""
+
+msgid ""
+"These keywords are case-sensitive, so they must be written in uppercase for "
+"them to be recognized:"
+msgstr ""
+
+msgid ""
+"The list of highlighted keywords and their colors can be changed in the "
+"**Text Editor > Theme > Comment Markers** section of the Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Code regions"
+msgstr "Godot verze"
+
+msgid ""
+"Code regions are special types of comments that the script editor "
+"understands as *foldable regions*. This means that after writing code region "
+"comments, you can collapse and expand the region by clicking the arrow that "
+"appears at the left of the comment. This arrow appears within a purple "
+"square to be distinguishable from standard code folding."
+msgstr ""
+
+#, fuzzy
+msgid "The syntax is as follows:"
+msgstr "Nejčastější případy použití jsou následující:"
+
+msgid ""
+"To create a code region quickly, select several lines in the script editor, "
+"right-click the selection then choose **Create Code Region**. The region "
+"description will be selected automatically for editing."
+msgstr ""
+
+msgid "It is possible to nest code regions within other code regions."
+msgstr ""
+
+#, fuzzy
+msgid "Here's a concrete usage example of code regions:"
+msgstr "Existují dva hlavní způsoby, jak zmírnit páskování:"
+
+msgid ""
+"This can be useful to organize large chunks of code into easier to "
+"understand sections. However, remember that external editors generally don't "
+"support this feature, so make sure your code is easy to follow even when not "
+"relying on folding code regions."
+msgstr ""
+
+msgid ""
+"Individual functions and indented sections (such as ``if`` and ``for``) can "
+"*always* be collapsed in the script editor. This means you should avoid "
+"using a code region to contain a single function or indented section, as it "
+"won't bring much of a benefit. Code regions work best when they're used to "
+"group multiple elements together."
+msgstr ""
+
 #, fuzzy
 msgid "Line continuation"
 msgstr "Lineární interpolací"
@@ -931,116 +1168,10 @@ msgstr ":ref:`String <class_String>`"
 #, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
-"Unicode>`_. String literals can contain the following escape sequences:"
+"Unicode>`_."
 msgstr ""
 "Posloupnost znaků ve formátu `Unicode <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Řetězce mohou obsahovat následující escape sekvence:"
-
-msgid "**Escape sequence**"
-msgstr "Escape sekvence"
-
-msgid "**Expands to**"
-msgstr "**Rozšiřuje se na**"
-
-msgid "``\\n``"
-msgstr "``\\n``"
-
-msgid "Newline (line feed)"
-msgstr "Nový řádek (line feed)"
-
-msgid "``\\t``"
-msgstr "``\\t``"
-
-msgid "Horizontal tab character"
-msgstr "Vodorovný znak tabulátoru"
-
-msgid "``\\r``"
-msgstr "``\\r``"
-
-msgid "Carriage return"
-msgstr "návrat vozíku"
-
-msgid "``\\a``"
-msgstr "``\\a``"
-
-msgid "Alert (beep/bell)"
-msgstr "Výstraha (pípnutí / zvonek)"
-
-msgid "``\\b``"
-msgstr "``\\b``"
-
-msgid "Backspace"
-msgstr "Backspace"
-
-msgid "``\\f``"
-msgstr "``\\f``"
-
-msgid "Formfeed page break"
-msgstr "Přerušení stránky Formfeed"
-
-msgid "``\\v``"
-msgstr "``\\v``"
-
-msgid "Vertical tab character"
-msgstr "Svislý znak tabulátoru"
-
-msgid "``\\\"``"
-msgstr "``\\\"``"
-
-msgid "Double quote"
-msgstr "Dvojitá uvozovka"
-
-msgid "``\\'``"
-msgstr "``\\'``"
-
-msgid "Single quote"
-msgstr "Jednoduchá uvozovka"
-
-msgid "``\\\\``"
-msgstr "``\\\\``"
-
-msgid "Backslash"
-msgstr "Zpětné lomítko"
-
-msgid "``\\uXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr ""
-"codepoint Unicode ``XXXX`` (hexadecimální, nerozlišuje velká a malá písmena)"
-
-#, fuzzy
-msgid "``\\UXXXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
-msgstr ""
-"codepoint Unicode ``XXXX`` (hexadecimální, nerozlišuje velká a malá písmena)"
-
-#, fuzzy
-msgid ""
-"There are two ways to represent an escaped Unicode character above 0xFFFF:"
-msgstr "Zdroje lze ukládat dvěma způsoby. Mohou to být:"
-
-msgid ""
-"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
-"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
-msgstr ""
-
-msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
-msgstr ""
-
-msgid ""
-"Also, using ``\\`` followed by a newline inside a string will allow you to "
-"continue it in the next line, without inserting a newline character in the "
-"string itself."
-msgstr ""
-
-#, fuzzy
-msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
-msgstr "GDScript také podporuje :ref:`doc_gdscript_printf`."
 
 msgid ""
 "An immutable string that allows only one instance of each name. They are "
@@ -1334,11 +1465,12 @@ msgstr ""
 "Asociativní kontejner, který obsahuje hodnoty odkazované pomocí jedinečných "
 "klíčů."
 
+#, fuzzy
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
 "`` and doesn't use quotes to mark string keys (making for slightly less to "
 "write). However, keys written in this form can't start with a digit (like "
-"any GDScript identifier)."
+"any GDScript identifier), and must be string literals."
 msgstr ""
 "Podporována je také syntaxe tabulek ve stylu jazyka Lua. Lua-style používá "
 "``=`` místo ``:`` a nepoužívá uvozovky pro označení řetězcových klíčů (což "
@@ -1912,9 +2044,6 @@ msgstr ""
 "příkazu ``switch``, který se vyskytuje v mnoha jiných jazycích, ale nabízí "
 "některé další vlastnosti."
 
-msgid "Basic syntax::"
-msgstr "Základní syntaxe::"
-
 msgid ""
 "``match`` is more type strict than the ``==`` operator. For example ``1`` "
 "will **not** match ``1.0``. The only exception is ``String`` vs "
@@ -1922,7 +2051,12 @@ msgid ""
 "equal to the StringName ``&\"hello\"``."
 msgstr ""
 
-msgid "**Crash-course for people who are familiar with switch statements**:"
+#, fuzzy
+msgid "Basic syntax"
+msgstr "Základní syntaxe::"
+
+#, fuzzy
+msgid "Crash-course for people who are familiar with switch statements"
 msgstr "**Kurz pro lidi, kteří znají příkazy switch**:"
 
 msgid "Replace ``switch`` with ``match``."
@@ -1938,7 +2072,8 @@ msgstr "Odstraňte ``case``."
 msgid "Change ``default`` to a single underscore."
 msgstr "Změňte ``default`` na jedno podtržítko."
 
-msgid "**Control flow**:"
+#, fuzzy
+msgid "Control flow"
 msgstr "**Pořadí vyhodnocování**:"
 
 #, fuzzy
@@ -1957,20 +2092,24 @@ msgid ""
 "in Godot 4.0."
 msgstr ""
 
-msgid "There are 6 pattern types:"
-msgstr "Typově existuje 6 vzorů:"
+msgid "The following pattern types are available:"
+msgstr ""
 
-msgid "Constant pattern"
-msgstr "Konstantní vzor"
+#, fuzzy
+msgid "Literal pattern"
+msgstr "Vzor pole"
 
-msgid "Constant primitives, like numbers and strings::"
-msgstr "Prosté konstanty, jako jsou čísla a řetězce::"
+msgid "Matches a `literal <Literals_>`_::"
+msgstr ""
 
-msgid "Variable pattern"
-msgstr "Variabilní vzor"
+#, fuzzy
+msgid "Expression pattern"
+msgstr "Komprese"
 
-msgid "Matches the contents of a variable/enum::"
-msgstr "Porovnává obsah proměnné/výčtového typu (enum)::"
+msgid ""
+"Matches a constant expression, an identifier, or an attribute access (``A."
+"B``)::"
+msgstr ""
 
 msgid "Wildcard pattern"
 msgstr "Vzor zástupného znaku"
@@ -2065,6 +2204,33 @@ msgid ""
 msgstr ""
 "Můžete zadat i více vzorů oddělených čárkou. Tyto vzory nesmějí obsahovat "
 "žádné spojovací vzory."
+
+msgid "Pattern guards"
+msgstr ""
+
+msgid ""
+"Only one branch can be executed per ``match``. Once a branch is chosen, the "
+"rest are not checked. If you want to use the same pattern for multiple "
+"branches or to prevent choosing a branch with too general pattern, you can "
+"specify a guard expression after the list of patterns with the ``when`` "
+"keyword::"
+msgstr ""
+
+msgid ""
+"If there is no matching pattern for the current branch, the guard expression "
+"is **not** evaluated and the patterns of the next branch are checked."
+msgstr ""
+
+msgid "If a matching pattern is found, the guard expression is evaluated."
+msgstr ""
+
+msgid ""
+"If it's true, then the body of the branch is executed and ``match`` ends."
+msgstr ""
+
+#, fuzzy
+msgid "If it's false, then the patterns of the next branch are checked."
+msgstr "Pokud hodnotu nezadáte, kontroluje se pouze existence klíče."
 
 msgid "Classes"
 msgstr "Třídy"
@@ -2327,32 +2493,65 @@ msgid "Example::"
 msgstr "Příklady"
 
 msgid ""
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called (except as noted below), even when accessed "
+"inside the same class (with or without prefixing with ``self.``). This makes "
+"the behavior consistent. If you need direct access to the value, use another "
+"variable for direct access and make the property code use that name."
+msgstr ""
+
+#, fuzzy
+msgid "Alternative syntax"
+msgstr "Externí soubory"
+
+msgid ""
+"Also there is another notation to use existing class functions if you want "
+"to split the code from the variable declaration or you need to reuse the "
+"code across multiple properties (but you can't distinguish which property "
+"the setter/getter is being called for)::"
+msgstr ""
+
+#, fuzzy
+msgid "This can also be done in the same line::"
+msgstr "Vyplňte formulář s následujícím nastavením:"
+
+msgid ""
+"The setter and getter must use the same notation, mixing styles for the same "
+"variable is not allowed."
+msgstr ""
+
+msgid ""
+"You cannot specify type hints for *inline* setters and getters. This is done "
+"on purpose to reduce the boilerplate. If the variable is typed, then the "
+"setter's argument is automatically of the same type, and the getter's return "
+"value must match it. Separated setter/getter functions can have type hints, "
+"and the type must match the variable's type or be a wider type."
+msgstr ""
+
+msgid "When setter/getter is not called"
+msgstr ""
+
+msgid ""
+"When a variable is initialized, the value of the initializer will be written "
+"directly to the variable. Including if the ``@onready`` annotation is "
+"applied to the variable."
+msgstr ""
+
+msgid ""
 "Using the variable's name to set it inside its own setter or to get it "
 "inside its own getter will directly access the underlying member, so it "
 "won't generate infinite recursion and saves you from explicitly declaring "
 "another variable::"
 msgstr ""
 
-msgid "This backing member variable is not created if you don't use it."
+msgid "This also applies to the alternative syntax::"
 msgstr ""
 
 msgid ""
-"Unlike ``setget`` in previous Godot versions, the properties setter and "
-"getter are **always** called, even when accessed inside the same class (with "
-"or without prefixing with ``self.``). This makes the behavior consistent. If "
-"you need direct access to the value, use another variable for direct access "
-"and make the property code use that name."
+"The exception does **not** propagate to other functions called in the setter/"
+"getter. For example, the following code **will** cause an infinite "
+"recursion::"
 msgstr ""
-
-msgid ""
-"In case you want to split the code from the variable declaration or you need "
-"to share the code across multiple properties, you can use a different "
-"notation to use existing class functions::"
-msgstr ""
-
-#, fuzzy
-msgid "This can also be done in the same line."
-msgstr "Vyplňte formulář s následujícím nastavením:"
 
 msgid "Tool mode"
 msgstr "Tool mode"

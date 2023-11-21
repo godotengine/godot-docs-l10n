@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Fog shaders"
-msgstr "着色器"
+msgstr "雾着色器"
 
 msgid ""
 "Fog shaders are used to define how fog is added (or subtracted) from a scene "
@@ -76,27 +75,24 @@ msgstr "in float **TIME**"
 msgid "Global time, in seconds."
 msgstr "全球时间, 以秒为单位."
 
-#, fuzzy
 msgid "in float **PI**"
-msgstr "in float **TIME**"
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ratio of a circle's circumference to its "
 "diameter and amount of radians in half turn."
 msgstr ""
 
-#, fuzzy
 msgid "in float **TAU**"
-msgstr "in float **DELTA**"
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "in float **TIME**"
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
@@ -113,43 +109,40 @@ msgid ""
 "all be drawn at once."
 msgstr ""
 
-#, fuzzy
 msgid "in vec3 **WORLD_POSITION**"
-msgstr "in vec3 **VIEW**"
-
-msgid "Position of current froxel cell in world space."
-msgstr ""
+msgstr "in vec3 **WORLD_POSITION**"
 
 #, fuzzy
+msgid "Position of current froxel cell in world space."
+msgstr "当前片段体素单元在世界空间中的位置。"
+
 msgid "in vec3 **OBJECT_POSITION**"
-msgstr "in vec3 **VIEW**"
+msgstr "in vec3 **OBJECT_POSITION**"
 
 msgid ""
 "Position of the center of the current :ref:`FogVolume <class_FogVolume>` in "
 "world space."
 msgstr ""
 
-#, fuzzy
 msgid "in vec3 **UVW**"
-msgstr "in vec3 **VIEW**"
+msgstr "in vec3 **UVW**"
 
 msgid ""
 "3-dimensional uv, used to map a 3D texture to the current :ref:`FogVolume "
 "<class_FogVolume>`."
 msgstr ""
+"三维 UV，用于将 3D 纹理映射到当前的 :ref:`FogVolume <class_FogVolume>` 中。"
 
-#, fuzzy
 msgid "in vec3 **SIZE**"
-msgstr "in vec3 **VIEW**"
+msgstr "in vec3 **SIZE**"
 
 msgid ""
 "Size of the current :ref:`FogVolume <class_FogVolume>` when its :ref:"
 "`shape<class_FogVolume_property_shape>` has a size."
 msgstr ""
 
-#, fuzzy
 msgid "in vec3 **SDF**"
-msgstr "in vec3 **ALBEDO**"
+msgstr "in vec3 **SDF**"
 
 msgid ""
 "Signed distance field to the surface of the :ref:`FogVolume "
@@ -164,9 +157,8 @@ msgid ""
 "written to fog volume if used."
 msgstr ""
 
-#, fuzzy
 msgid "out float **DENSITY**"
-msgstr "out float **DEPTH**"
+msgstr "out float **DENSITY**"
 
 msgid ""
 "Output density value. Can be negative to allow subtracting one volume from "

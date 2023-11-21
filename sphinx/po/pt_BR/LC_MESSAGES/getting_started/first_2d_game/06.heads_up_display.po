@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,10 +28,12 @@ msgstr ""
 "exibir coisas como pontuação, uma mensagem de \"game over\" e um botão de "
 "reiniciar."
 
+#, fuzzy
 msgid ""
-"Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node "
-"named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational "
-"display that appears as an overlay on top of the game view."
+"Create a new scene, click the \"Other Node\" button and add a :ref:"
+"`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for "
+"\"heads-up display\", an informational display that appears as an overlay on "
+"top of the game view."
 msgstr ""
 "Crie uma nova cena e adicione um nó :ref:`CanvasLayer <class_CanvasLayer>` "
 "chamado ``HUD``. \"HUD\" significa \"heads-up display\", uma exibição "
@@ -135,11 +137,13 @@ msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
 msgid "Add the text ``0``."
-msgstr ""
+msgstr "Adicione o texto ``0``."
 
 msgid ""
 "Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
 msgstr ""
+"Defina o \"Alinhamento Horizontal\" e \"Alinhamento Vertical\" para "
+"``Center``."
 
 msgid "Choose the \"Anchor Preset\" ``Center Top``."
 msgstr ""
@@ -148,13 +152,15 @@ msgid "Message"
 msgstr "Mensagem"
 
 #, fuzzy
-msgid "Add the text ``Dodge the creeps!``."
-msgstr "*Text*: ``Desvie dos Bichos!``"
+msgid "Add the text ``Dodge the Creeps!``."
+msgstr "Adicione o texto ``Desvie dos monstros!`."
 
 msgid ""
 "Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
 "line."
 msgstr ""
+"Defina o \"Modo Autowrap\" para ``Word``, caso contrário o rótulo "
+"permanecerá em uma linha."
 
 msgid ""
 "Under \"Control - Layout/Transform\" set \"Size X\"  to ``480`` to use the "
@@ -231,7 +237,7 @@ msgstr ""
 "tempo antes de mostrar o botão \"Iniciar\"."
 
 msgid "Add the code below to ``HUD`` to update the score"
-msgstr ""
+msgstr "Adicione o código abaixo no ``HUD`` para atualizar a pontuação"
 
 #, fuzzy
 msgid ""
@@ -274,12 +280,6 @@ msgstr ""
 "\"Connect a Signal\". Verifique se o ícone de conexão verde agora aparece ao "
 "lado de `` func new_game () `` no script."
 
-#, fuzzy
-msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
-msgstr ""
-"Quando tiver certeza que tudo esta funcionando, remova a chamada de "
-"``new_game()`` em ``_ready()``."
-
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -291,11 +291,6 @@ msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 "Em ``game_over()``, precisamos chamar a correspondente função de ``HUD``:"
 
-msgid ""
-"Just a reminder: we don't want to start the new game automatically, so "
-"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
-msgstr ""
-
 #, fuzzy
 msgid ""
 "Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
@@ -303,6 +298,14 @@ msgid ""
 msgstr ""
 "Finalmente, adicione isto a ``_on_ScoreTimer_timeout()`` para manter o "
 "mostrador em sincronia com as mudanças de pontuação:"
+
+#, fuzzy
+msgid ""
+"Remember to remove the call to ``new_game()`` from ``_ready()`` if you "
+"haven't already, otherwise your game will start automatically."
+msgstr ""
+"Quando tiver certeza que tudo esta funcionando, remova a chamada de "
+"``new_game()`` em ``_ready()``."
 
 #, fuzzy
 msgid ""

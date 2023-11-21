@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -196,14 +196,15 @@ msgid "class"
 msgstr "클래스"
 
 #, fuzzy
-msgid "Defines a class."
-msgstr "내부 클래스를 정의합니다."
+msgid "Defines an inner class. See `Inner classes`_."
+msgstr "다른 클래스 파일의 내부 클래스."
 
 msgid "class_name"
 msgstr "class_name"
 
 msgid ""
-"Defines the script as a globally accessible class with the specified name."
+"Defines the script as a globally accessible class with the specified name. "
+"See `Registering named classes`_."
 msgstr ""
 
 msgid "extends"
@@ -226,7 +227,7 @@ msgid "in"
 msgstr ""
 
 msgid ""
-"Tests whether a value is within a string, list, range, dictionary, or node. "
+"Tests whether a value is within a string, array, range, dictionary, or node. "
 "When used with ``for``, it iterates through them instead of testing."
 msgstr ""
 
@@ -678,11 +679,25 @@ msgstr ""
 msgid "Literals"
 msgstr "리터럴(Literal)"
 
-msgid "**Literal**"
-msgstr "**리터럴**"
+#, fuzzy
+msgid "**Example(s)**"
+msgstr "**예제**"
 
-msgid "**Type**"
-msgstr "**유형**"
+#, fuzzy
+msgid "``null``"
+msgstr "null"
+
+#, fuzzy
+msgid "Null value"
+msgstr "값"
+
+#, fuzzy
+msgid "``false``, ``true``"
+msgstr "``-e``, ``--editor``"
+
+#, fuzzy
+msgid "Boolean values"
+msgstr "불 방식 OR"
 
 msgid "``45``"
 msgstr "``45``"
@@ -712,14 +727,32 @@ msgstr "부동 소수점 숫자 (실수)"
 msgid "``\"Hello\"``, ``'Hi'``"
 msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
 
-msgid "Strings"
+#, fuzzy
+msgid "Regular strings"
+msgstr "조명 굽기"
+
+#, fuzzy
+msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
+msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
+
+msgid "Triple-quoted regular strings"
+msgstr ""
+
+#, fuzzy
+msgid "``r\"Hello\"``, ``r'Hi'``"
+msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
+
+#, fuzzy
+msgid "Raw strings"
 msgstr "문자열"
 
-msgid "``\"\"\"Hello\"\"\"``"
-msgstr "``\"\"\"안녕하세요\"\"\"``"
+#, fuzzy
+msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
+msgstr "``\"안녕하세요\"``, ``\"안녕\"``"
 
-msgid "Multiline string"
-msgstr "여러 줄 문자열"
+#, fuzzy
+msgid "Triple-quoted raw strings"
+msgstr "GDScript 형식 문자열(format strings)"
 
 msgid "``&\"name\"``"
 msgstr ""
@@ -734,6 +767,13 @@ msgstr "``@\"Node/Label\"``"
 
 msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"There are also two constructs that look like literals, but actually are not:"
+msgstr ""
+
+msgid "**Example**"
+msgstr "**예제**"
 
 msgid "``$NodePath``"
 msgstr "``$NodePath``"
@@ -755,6 +795,129 @@ msgid ""
 msgstr ""
 "정수와 부동 소수점 수는 가독성을 높이기 위해 숫자를 ``_``\\ 로 구분할 수 있습"
 "니다. 숫자를 쓰는 다음 방법은 모두 유효합니다:"
+
+msgid "**Regular string literals** can contain the following escape sequences:"
+msgstr ""
+
+#, fuzzy
+msgid "**Escape sequence**"
+msgstr "이스케이프 시퀀스"
+
+msgid "**Expands to**"
+msgstr "**설명**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "줄 바꿈(라인 피드)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "수평 탭 문자"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "캐리지 리턴"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "경고(비프/벨 음)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "백스페이스"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr "폼 피드(페이지 나누기)"
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "수직 탭 문자"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "큰 따옴표"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "작은 따옴표"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "백슬래시"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr "유니코드 코드 포인트 ``XXXX`` (16진수, 대소문자 구분 안함)"
+
+#, fuzzy
+msgid "``\\UXXXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr "유니코드 코드 포인트 ``XXXX`` (16진수, 대소문자 구분 안함)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above "
+"``0xFFFF``:"
+msgstr "서버로 프로젝트를 내보낼 수 있는 방법이 두 가지 있습니다:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+msgid ""
+"A string enclosed in quotes of one type (for example ``\"``) can contain "
+"quotes of another type (for example ``'``) without escaping. Triple-quoted "
+"strings allow you to avoid escaping up to two consecutive quotes of the same "
+"type (unless they are adjacent to the string edges)."
+msgstr ""
+
+msgid ""
+"**Raw string literals** always encode the string as it appears in the source "
+"code. This is especially useful for regular expressions. Raw strings do not "
+"process escape sequences, but you can \"escape\" a quote or backslash (they "
+"replace themselves)."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
+msgstr "GDScript는 :ref:`doc_gdscript_printf`\\ 도 지원합니다."
 
 #, fuzzy
 msgid "Annotations"
@@ -839,6 +1002,80 @@ msgid ""
 "Anything from a ``#`` to the end of the line is ignored and is considered a "
 "comment."
 msgstr "``#``\\ 부터 줄 끝까지는 주석으로 간주되어 무시됩니다."
+
+msgid ""
+"In the Godot script editor, special keywords are highlighted within comments "
+"to bring the user's attention to specific comments:"
+msgstr ""
+
+msgid ""
+"**Critical** *(appears in red)*: ``ALERT``, ``ATTENTION``, ``CAUTION``, "
+"``CRITICAL``, ``DANGER``, ``SECURITY``"
+msgstr ""
+
+msgid ""
+"**Warning** *(appears in yellow)*: ``BUG``, ``DEPRECATED``, ``FIXME``, "
+"``HACK``, ``TASK``, ``TBD``, ``TODO``, ``WARNING``"
+msgstr ""
+
+msgid ""
+"**Notice** *(appears in green)*: ``INFO``, ``NOTE``, ``NOTICE``, ``TEST``, "
+"``TESTING``"
+msgstr ""
+
+msgid ""
+"These keywords are case-sensitive, so they must be written in uppercase for "
+"them to be recognized:"
+msgstr ""
+
+msgid ""
+"The list of highlighted keywords and their colors can be changed in the "
+"**Text Editor > Theme > Comment Markers** section of the Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Code regions"
+msgstr "Godot 버전 관리"
+
+msgid ""
+"Code regions are special types of comments that the script editor "
+"understands as *foldable regions*. This means that after writing code region "
+"comments, you can collapse and expand the region by clicking the arrow that "
+"appears at the left of the comment. This arrow appears within a purple "
+"square to be distinguishable from standard code folding."
+msgstr ""
+
+#, fuzzy
+msgid "The syntax is as follows:"
+msgstr "본 텍스트는 다음과 같습니다:"
+
+msgid ""
+"To create a code region quickly, select several lines in the script editor, "
+"right-click the selection then choose **Create Code Region**. The region "
+"description will be selected automatically for editing."
+msgstr ""
+
+msgid "It is possible to nest code regions within other code regions."
+msgstr ""
+
+#, fuzzy
+msgid "Here's a concrete usage example of code regions:"
+msgstr "어떻게 작동하는 지의 예제입니다:"
+
+msgid ""
+"This can be useful to organize large chunks of code into easier to "
+"understand sections. However, remember that external editors generally don't "
+"support this feature, so make sure your code is easy to follow even when not "
+"relying on folding code regions."
+msgstr ""
+
+msgid ""
+"Individual functions and indented sections (such as ``if`` and ``for``) can "
+"*always* be collapsed in the script editor. This means you should avoid "
+"using a code region to contain a single function or indented section, as it "
+"won't bring much of a benefit. Code regions work best when they're used to "
+"group multiple elements together."
+msgstr ""
 
 #, fuzzy
 msgid "Line continuation"
@@ -926,115 +1163,10 @@ msgstr ":ref:`String <class_String>`"
 #, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
-"Unicode>`_. String literals can contain the following escape sequences:"
+"Unicode>`_."
 msgstr ""
 "`유니코드 형식 <https://en.wikipedia.org/wiki/Unicode>`_\\ 의 문자열입니다. "
 "문자열에는 다음과 같은 이스케이프 시퀀스가 포함될 수 있습니다."
-
-#, fuzzy
-msgid "**Escape sequence**"
-msgstr "이스케이프 시퀀스"
-
-msgid "**Expands to**"
-msgstr "**설명**"
-
-msgid "``\\n``"
-msgstr "``\\n``"
-
-msgid "Newline (line feed)"
-msgstr "줄 바꿈(라인 피드)"
-
-msgid "``\\t``"
-msgstr "``\\t``"
-
-msgid "Horizontal tab character"
-msgstr "수평 탭 문자"
-
-msgid "``\\r``"
-msgstr "``\\r``"
-
-msgid "Carriage return"
-msgstr "캐리지 리턴"
-
-msgid "``\\a``"
-msgstr "``\\a``"
-
-msgid "Alert (beep/bell)"
-msgstr "경고(비프/벨 음)"
-
-msgid "``\\b``"
-msgstr "``\\b``"
-
-msgid "Backspace"
-msgstr "백스페이스"
-
-msgid "``\\f``"
-msgstr "``\\f``"
-
-msgid "Formfeed page break"
-msgstr "폼 피드(페이지 나누기)"
-
-msgid "``\\v``"
-msgstr "``\\v``"
-
-msgid "Vertical tab character"
-msgstr "수직 탭 문자"
-
-msgid "``\\\"``"
-msgstr "``\\\"``"
-
-msgid "Double quote"
-msgstr "큰 따옴표"
-
-msgid "``\\'``"
-msgstr "``\\'``"
-
-msgid "Single quote"
-msgstr "작은 따옴표"
-
-msgid "``\\\\``"
-msgstr "``\\\\``"
-
-msgid "Backslash"
-msgstr "백슬래시"
-
-msgid "``\\uXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr "유니코드 코드 포인트 ``XXXX`` (16진수, 대소문자 구분 안함)"
-
-#, fuzzy
-msgid "``\\UXXXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
-msgstr "유니코드 코드 포인트 ``XXXX`` (16진수, 대소문자 구분 안함)"
-
-#, fuzzy
-msgid ""
-"There are two ways to represent an escaped Unicode character above 0xFFFF:"
-msgstr "서버로 프로젝트를 내보낼 수 있는 방법이 두 가지 있습니다:"
-
-msgid ""
-"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
-"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
-msgstr ""
-
-msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
-msgstr ""
-
-msgid ""
-"Also, using ``\\`` followed by a newline inside a string will allow you to "
-"continue it in the next line, without inserting a newline character in the "
-"string itself."
-msgstr ""
-
-#, fuzzy
-msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
-msgstr "GDScript는 :ref:`doc_gdscript_printf`\\ 도 지원합니다."
 
 msgid ""
 "An immutable string that allows only one instance of each name. They are "
@@ -1327,11 +1459,12 @@ msgstr ":ref:`Dictionary <class_Dictionary>`"
 msgid "Associative container which contains values referenced by unique keys."
 msgstr "고유 키로 참조되는 값들을 가지는 연관 컨테이너입니다."
 
+#, fuzzy
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
 "`` and doesn't use quotes to mark string keys (making for slightly less to "
 "write). However, keys written in this form can't start with a digit (like "
-"any GDScript identifier)."
+"any GDScript identifier), and must be string literals."
 msgstr ""
 "Lua 스타일의 테이블 구문도 지원됩니다. Lua 스타일은 ``:`` 대신 ``=``\\ 을 사"
 "용하고 문자열 키를 표시하기 위해 따옴표를 사용하지 않습니다(쓸 문자가 약간 줄"
@@ -1588,7 +1721,7 @@ msgstr ""
 "니다::"
 
 msgid "Constants"
-msgstr "제약"
+msgstr "상수"
 
 msgid ""
 "Constants are values you cannot change when the game is running. Their value "
@@ -1900,9 +2033,6 @@ msgstr ""
 "``match`` 명령문은 프로그램의 실행을 분기하는 데 사용됩니다. 다른 많은 언어에"
 "서 볼 수 있는 ``switch`` 명령문과 유사하지만 몇 가지 추가 기능을 제공합니다."
 
-msgid "Basic syntax::"
-msgstr "기본 문법::"
-
 msgid ""
 "``match`` is more type strict than the ``==`` operator. For example ``1`` "
 "will **not** match ``1.0``. The only exception is ``String`` vs "
@@ -1910,7 +2040,12 @@ msgid ""
 "equal to the StringName ``&\"hello\"``."
 msgstr ""
 
-msgid "**Crash-course for people who are familiar with switch statements**:"
+#, fuzzy
+msgid "Basic syntax"
+msgstr "기본 문법::"
+
+#, fuzzy
+msgid "Crash-course for people who are familiar with switch statements"
 msgstr "**switch 명령문에 익숙한 사람들을 위한 집중 강좌**:"
 
 msgid "Replace ``switch`` with ``match``."
@@ -1926,7 +2061,8 @@ msgstr "``case``\\ 를 제거하세요."
 msgid "Change ``default`` to a single underscore."
 msgstr "``default``\\ 를 하나의 밑줄로 변경하세요."
 
-msgid "**Control flow**:"
+#, fuzzy
+msgid "Control flow"
 msgstr "**제어 흐름(Control flow)**:"
 
 #, fuzzy
@@ -1945,20 +2081,24 @@ msgid ""
 "in Godot 4.0."
 msgstr ""
 
-msgid "There are 6 pattern types:"
-msgstr "6 가지 패턴 유형이 있습니다:"
+msgid "The following pattern types are available:"
+msgstr ""
 
-msgid "Constant pattern"
-msgstr "상수 패턴(Constant pattern)"
+#, fuzzy
+msgid "Literal pattern"
+msgstr "배열 패턴(Array pattern)"
 
-msgid "Constant primitives, like numbers and strings::"
-msgstr "숫자, 문자열 같은 상수 원시값(Primitive)::"
+msgid "Matches a `literal <Literals_>`_::"
+msgstr ""
 
-msgid "Variable pattern"
-msgstr "변수 패턴(Variable pattern)"
+#, fuzzy
+msgid "Expression pattern"
+msgstr "Expression Node(표현식 노드)"
 
-msgid "Matches the contents of a variable/enum::"
-msgstr "변수/열거형 내용 매치::"
+msgid ""
+"Matches a constant expression, an identifier, or an attribute access (``A."
+"B``)::"
+msgstr ""
 
 msgid "Wildcard pattern"
 msgstr "와일드카드 패턴(Wildcard pattern)"
@@ -2052,6 +2192,33 @@ msgid ""
 msgstr ""
 "여러 패턴을 쉼표로 구분해서 지정할 수 있습니다. 이 패턴들 사이에서 바인딩은 "
 "허용되지 않습니다."
+
+msgid "Pattern guards"
+msgstr ""
+
+msgid ""
+"Only one branch can be executed per ``match``. Once a branch is chosen, the "
+"rest are not checked. If you want to use the same pattern for multiple "
+"branches or to prevent choosing a branch with too general pattern, you can "
+"specify a guard expression after the list of patterns with the ``when`` "
+"keyword::"
+msgstr ""
+
+msgid ""
+"If there is no matching pattern for the current branch, the guard expression "
+"is **not** evaluated and the patterns of the next branch are checked."
+msgstr ""
+
+msgid "If a matching pattern is found, the guard expression is evaluated."
+msgstr ""
+
+msgid ""
+"If it's true, then the body of the branch is executed and ``match`` ends."
+msgstr ""
+
+#, fuzzy
+msgid "If it's false, then the patterns of the next branch are checked."
+msgstr "값을 지정하지 않으면, 키의 존재 여부만 확인됩니다."
 
 msgid "Classes"
 msgstr "클래스"
@@ -2313,32 +2480,66 @@ msgid "Example::"
 msgstr "예시:"
 
 msgid ""
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called (except as noted below), even when accessed "
+"inside the same class (with or without prefixing with ``self.``). This makes "
+"the behavior consistent. If you need direct access to the value, use another "
+"variable for direct access and make the property code use that name."
+msgstr ""
+
+#, fuzzy
+msgid "Alternative syntax"
+msgstr "외부 파일"
+
+msgid ""
+"Also there is another notation to use existing class functions if you want "
+"to split the code from the variable declaration or you need to reuse the "
+"code across multiple properties (but you can't distinguish which property "
+"the setter/getter is being called for)::"
+msgstr ""
+
+#, fuzzy
+msgid "This can also be done in the same line::"
+msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
+
+msgid ""
+"The setter and getter must use the same notation, mixing styles for the same "
+"variable is not allowed."
+msgstr ""
+
+msgid ""
+"You cannot specify type hints for *inline* setters and getters. This is done "
+"on purpose to reduce the boilerplate. If the variable is typed, then the "
+"setter's argument is automatically of the same type, and the getter's return "
+"value must match it. Separated setter/getter functions can have type hints, "
+"and the type must match the variable's type or be a wider type."
+msgstr ""
+
+msgid "When setter/getter is not called"
+msgstr ""
+
+msgid ""
+"When a variable is initialized, the value of the initializer will be written "
+"directly to the variable. Including if the ``@onready`` annotation is "
+"applied to the variable."
+msgstr ""
+
+msgid ""
 "Using the variable's name to set it inside its own setter or to get it "
 "inside its own getter will directly access the underlying member, so it "
 "won't generate infinite recursion and saves you from explicitly declaring "
 "another variable::"
 msgstr ""
 
-msgid "This backing member variable is not created if you don't use it."
-msgstr ""
-
-msgid ""
-"Unlike ``setget`` in previous Godot versions, the properties setter and "
-"getter are **always** called, even when accessed inside the same class (with "
-"or without prefixing with ``self.``). This makes the behavior consistent. If "
-"you need direct access to the value, use another variable for direct access "
-"and make the property code use that name."
-msgstr ""
-
-msgid ""
-"In case you want to split the code from the variable declaration or you need "
-"to share the code across multiple properties, you can use a different "
-"notation to use existing class functions::"
-msgstr ""
-
 #, fuzzy
-msgid "This can also be done in the same line."
-msgstr "적 씬은 다음 노드들을 사용할 것입니다:"
+msgid "This also applies to the alternative syntax::"
+msgstr "최종 결과물입니다:"
+
+msgid ""
+"The exception does **not** propagate to other functions called in the setter/"
+"getter. For example, the following code **will** cause an infinite "
+"recursion::"
+msgstr ""
 
 msgid "Tool mode"
 msgstr "툴 모드(Tool mode)"
@@ -2403,7 +2604,7 @@ msgstr ""
 "오브젝트가 해제되었는지 확인할 수 있습니다."
 
 msgid "Signals"
-msgstr "신호"
+msgstr "시그널"
 
 msgid ""
 "Signals are a tool to emit messages from an object that other objects can "

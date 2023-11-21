@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,84 +18,88 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "CanvasItem shaders"
-msgstr ""
+msgstr "CanvasItem 著色器"
 
 msgid ""
 "CanvasItem shaders are used to draw all 2D elements in Godot. These include "
 "all nodes that inherit from CanvasItems, and all GUI elements."
 msgstr ""
+"畫布組件著色器用於繪製Godot中的所有二維元素. 這包括從畫布組件繼承的所有節點, "
+"以及所有圖形化使用者介面元素."
 
 msgid ""
 "CanvasItem shaders contain less built-in variables and functionality than "
 "Spatial shaders, but they maintain the same basic structure with vertex, "
 "fragment, and light processor functions."
 msgstr ""
+"畫布元件著色器比空間著色器包含更少的內建變數和功能, 但它們與頂點, 片段和光處"
+"理器功能保持相同的基本結構."
 
 msgid "Render modes"
-msgstr ""
+msgstr "渲染模式"
 
 msgid "Render mode"
-msgstr ""
+msgstr "渲染模式"
 
 msgid "Description"
 msgstr "說明"
 
 msgid "**blend_mix**"
-msgstr ""
+msgstr "**blend_mix**"
 
 msgid "Mix blend mode (alpha is transparency), default."
-msgstr ""
+msgstr "混合混合模式（Alpha 為透明度），預設。"
 
 msgid "**blend_add**"
-msgstr ""
+msgstr "**blend_add**"
 
 msgid "Additive blend mode."
-msgstr ""
+msgstr "疊加混合模式。"
 
 msgid "**blend_sub**"
-msgstr ""
+msgstr "**blend_sub**"
 
 msgid "Subtractive blend mode."
-msgstr ""
+msgstr "減法混合模式。"
 
 msgid "**blend_mul**"
-msgstr ""
+msgstr "**blend_mul**"
 
 msgid "Multiplicative blend mode."
-msgstr ""
+msgstr "乘法混合模式。"
 
 msgid "**blend_premul_alpha**"
-msgstr ""
+msgstr "**blend_premul_alpha**"
 
 msgid "Pre-multiplied alpha blend mode."
-msgstr ""
+msgstr "預乘 Alpha 混合模式。"
 
 msgid "**blend_disabled**"
-msgstr ""
+msgstr "**blend_disabled**"
 
 msgid "Disable blending, values (including alpha) are written as-is."
-msgstr ""
+msgstr "禁用混合，值（包括 Alpha）會按原樣寫入。"
 
 msgid "**unshaded**"
-msgstr ""
+msgstr "**unshaded**"
 
 msgid "Result is just albedo. No lighting/shading happens in material."
-msgstr ""
+msgstr "結果只使用反照率。材質中不會發生照明/陰影。"
 
 msgid "**light_only**"
-msgstr ""
+msgstr "**light_only**"
 
 msgid "Only draw on light pass."
-msgstr ""
+msgstr "僅在光通過時繪製."
 
 msgid "**skip_vertex_transform**"
-msgstr ""
+msgstr "**skip_vertex_transform**"
 
 msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
-msgstr ""
+msgstr "VERTEX/NORMAL/等需要在頂點函式中手動轉換."
 
 msgid "Built-ins"
-msgstr ""
+msgstr "內建"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -103,19 +107,21 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
+"標記為 \"in\" 的值是唯讀的. 標記為 \"out\" 的值是可以選擇寫入的, 不一定包含合"
+"理的值. 標記為 \"inout\" 的值提供一個合理的預設值, 並且可以選擇寫入. 取樣器不"
+"是寫入的物件, 它們沒有被標記."
 
-#, fuzzy
 msgid "Global built-ins"
 msgstr "定數"
 
 msgid "Global built-ins are available everywhere, including custom functions."
-msgstr ""
+msgstr "全域內建的功能隨處可見, 包括自訂功能."
 
 msgid "Built-in"
 msgstr "內建"
 
 msgid "in float **TIME**"
-msgstr ""
+msgstr "in float **TIME**"
 
 msgid ""
 "Global time since the engine has started, in seconds (always positive). It's "
@@ -124,137 +130,163 @@ msgid ""
 "pausing, but you can define a global shader uniform to add a \"scaled\" "
 "``TIME`` variable if desired."
 msgstr ""
+"引擎啟動後的全域時間, 以秒為單位(始終為正數). 這取決於翻轉(rollover)設定(預設"
+"為3600秒). 不受 :ref:`time_scale<class_Engine_property_time_scale>` 或暫停的"
+"影響, 但可以通過呼叫 ``VisualServer.set_shader_time_Scale()`` 來覆蓋 "
+"``TIME`` 變數的時標, 並將所需的時標因數作為參數( ``1.0`` 為預設值)."
 
 msgid "in float **PI**"
-msgstr ""
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
 "diameter and amount of radians in half turn."
-msgstr ""
+msgstr "一個“PI”常數（“3.141592”）。圓的周長與其直徑的比率以及半圈的弧度數。"
 
 msgid "in float **TAU**"
-msgstr ""
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
-msgstr ""
+msgstr "一個“TAU”常數（“6.283185”）。相當於“PI * 2”和完整的弧度數。"
 
 msgid "in float **E**"
-msgstr ""
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
 "logarithm."
-msgstr ""
+msgstr "一個“E”常數（“2.718281”）。歐拉數和自然對數的底數。"
 
 msgid "Vertex built-ins"
-msgstr ""
+msgstr "頂點內建"
 
 msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
 "relative to the Node2D's origin). If not written to, these values will not "
 "be modified and be passed through as they came."
 msgstr ""
+"頂點資料( ``VERTEX`` )是以局部空間(像素座標, 相對於相機)呈現. 如果不寫入, 這"
+"些值將不會被修改, 並按其來時的樣子傳遞."
 
 msgid ""
 "The user can disable the built-in model to world transform (world to screen "
 "and projection will still happen later) and do it manually with the "
 "following code:"
 msgstr ""
+"使用者可以禁用內建的modelview變換(以後仍然會發生投影), 並通過以下程式碼手動完"
+"成:"
 
 msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
-msgstr ""
+msgstr "其他內建程式, 如UV和COLOR, 如果沒有修改, 也會傳遞給片段函式."
 
 msgid ""
 "For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
 "data. When using particles, this information is usually:"
 msgstr ""
+"對於產生實體，INSTANCE_CUSTOM變數包含實例自訂資料. 使用粒子時, 此資訊通常是:"
 
 msgid "**x**: Rotation angle in radians."
-msgstr ""
+msgstr "**x**：旋轉角度，單位為弧度。"
 
 msgid "**y**: Phase during lifetime (0 to 1)."
-msgstr ""
+msgstr "**y**：生命週期的階段（0 到 1）。"
 
 msgid "**z**: Animation frame."
-msgstr ""
+msgstr "**z**：動畫影格。"
 
 msgid "in mat4 **MODEL_MATRIX**"
-msgstr ""
+msgstr "in mat4 **MODEL_MATRIX**"
 
 msgid ""
 "Local space to world space transform. World space is the coordinates you "
 "normally use in the editor."
-msgstr ""
+msgstr "局部空間到世界空間的變換。世界空間是您通常在編輯器中使用的座標。"
 
 msgid "in mat4 **CANVAS_MATRIX**"
-msgstr ""
+msgstr "in mat4 **CANVAS_MATRIX**"
 
 msgid ""
 "World space to canvas space transform. In canvas space the origin is the "
 "upper-left corner of the screen and coordinates ranging from (0, 0) to "
 "viewport size."
 msgstr ""
+"世界空間到畫布空間的變換。在畫布空間中，原點是螢幕的左上角，座標範圍從 (0, "
+"0) 到視窗大小。"
 
 msgid "in mat4 **SCREEN_MATRIX**"
-msgstr ""
+msgstr "in mat4 **SCREEN_MATRIX**"
 
 msgid ""
 "Canvas space to clip space. In clip space coordinates ranging from (-1, -1) "
 "to (1, 1)."
-msgstr ""
-
-msgid "in vec4 **INSTANCE_CUSTOM**"
-msgstr ""
-
-msgid "Instance custom data."
-msgstr ""
-
-msgid "in bool **AT_LIGHT_PASS**"
-msgstr ""
+msgstr "畫布空間到剪輯空間。在剪輯空間中，座標範圍從 (-1, -1) 到 (1, 1)。"
 
 #, fuzzy
+msgid "in int  **INSTANCE_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "產生實體的實例ID."
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "in vec4 **INSTANCE_CUSTOM**"
+
+msgid "Instance custom data."
+msgstr "實例自訂資料."
+
+msgid "in bool **AT_LIGHT_PASS**"
+msgstr "in bool **AT_LIGHT_PASS**"
+
 msgid "Always ``false``."
 msgstr "``if x else``"
 
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
-msgstr ""
+msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
 
 msgid ""
 "Normalized pixel size of default 2D texture. For a Sprite2D with a texture "
 "of size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
 msgstr ""
+"預設 2D 紋理的標準化像素大小。對於紋理大小為 64x32px 的 Sprite，"
+"**TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
 
 msgid "inout vec2 **VERTEX**"
-msgstr ""
+msgstr "inout vec2 **VERTEX**"
 
-msgid "Vertex, in image space."
-msgstr ""
+#, fuzzy
+msgid "Vertex, in local space."
+msgstr "頂點, 在圖像空間."
+
+msgid "in int **VERTEX_ID**"
+msgstr "in int **VERTEX_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
+msgstr "頂點緩衝區中目前頂點的索引。"
 
 msgid "inout vec2 **UV**"
-msgstr ""
+msgstr "inout vec2 **UV**"
 
 msgid "Normalized texture coordinates. Range from 0 to 1."
-msgstr ""
+msgstr "標準化紋理座標。範圍從 0 到 1。"
 
 msgid "inout vec4 **COLOR**"
-msgstr ""
+msgstr "inout vec4 **COLOR**"
 
 msgid "Color from vertex primitive."
-msgstr ""
+msgstr "來自頂點原語的顏色."
 
 msgid "inout float **POINT_SIZE**"
-msgstr ""
+msgstr "inout float **POINT_SIZE**"
 
 msgid "Point size for point drawing."
-msgstr ""
+msgstr "點繪圖的點大小."
 
 msgid "Fragment built-ins"
-msgstr ""
+msgstr "片段內建"
 
 msgid ""
 "Certain Nodes (for example, :ref:`Sprite2Ds <class_Sprite2D>`) display a "
@@ -263,6 +295,9 @@ msgid ""
 "provide the texture color in the ``COLOR`` built-in variable; to read the "
 "texture color for such nodes, use:"
 msgstr ""
+"某些節點（例如 :ref:`Sprite <class_Sprite>`）預設會顯示紋理。但是，當自訂片段"
+"函式附加到這些節點時，就需要手工完成紋理的搜尋。Godot 在 ``COLOR`` 內建變數中"
+"不提供紋理顏色；要讀取這些節點的紋理顏色，請使用："
 
 msgid ""
 "This differs from the behavior of the built-in normal map. If a normal map "
@@ -272,121 +307,130 @@ msgid ""
 "to the ``NORMALMAP`` property. Godot will handle converting it for use in 2D "
 "and overwriting ``NORMAL``."
 msgstr ""
+"這與內建法線貼圖的行為不同. 如果附加了法線貼圖,Godot預設使用它, 並將其值分配"
+"給內建的 ``NORMAL`` 變數. 如果你使用的是用於3D的法線貼圖, 它將出現倒置. 為了"
+"在你的著色器中使用它, 必須把它分配給 ``NORMALMAP`` 屬性.Godot會將其轉換為2D使"
+"用, 並覆蓋 ``NORMAL`` ."
 
 msgid "in vec4 **FRAGCOORD**"
-msgstr ""
+msgstr "in vec4 **FRAGCOORD**"
 
 msgid ""
 "Coordinate of pixel center. In screen space. ``xy`` specifies position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
+"像素中心的座標。在螢幕空間中，``xy`` 表示視窗中的位置，如果沒有用 ``DEPTH``，"
+"則 ``z`` 表示片段深度。原點位於左下角。"
 
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
-msgstr ""
+msgstr "in vec2 **SCREEN_PIXEL_SIZE**"
 
 msgid "Size of individual pixels. Equal to inverse of resolution."
-msgstr ""
+msgstr "單個像素的大小. 等於解析度的倒數."
 
 msgid "in vec2 **POINT_COORD**"
-msgstr ""
+msgstr "in vec2 **POINT_COORD**"
 
 msgid "Coordinate for drawing points."
-msgstr ""
+msgstr "所繪製點的座標。"
 
 msgid "sampler2D **TEXTURE**"
-msgstr ""
+msgstr "sampler2D **TEXTURE**"
 
 msgid "Default 2D texture."
-msgstr ""
+msgstr "預設的2D紋理."
 
 msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **SPECULAR_SHININESS_TEXTURE**"
 
 msgid "Specular shininess texture of this object."
-msgstr ""
+msgstr "該物件的鏡面光澤紋理。"
 
 msgid "in vec4 **SPECULAR_SHININESS**"
-msgstr ""
+msgstr "in vec4 **SPECULAR_SHININESS**"
 
 msgid "Specular shininess color, as sampled from the texture."
-msgstr ""
+msgstr "鏡面光澤顏色，從紋理取樣。"
 
 msgid "in vec2 **UV**"
-msgstr ""
+msgstr "in vec2 **UV**"
 
 msgid "UV from vertex function."
-msgstr ""
+msgstr "來自頂點功能的UV."
 
 msgid "in vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "in vec2 **SCREEN_UV**"
 
 msgid "Screen UV coordinate for current pixel."
-msgstr ""
+msgstr "螢幕目前像素的UV座標."
 
 msgid "sampler2D **SCREEN_TEXTURE**"
-msgstr ""
+msgstr "sampler2D **SCREEN_TEXTURE**"
 
 msgid ""
 "Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
-msgstr ""
+msgstr "在 Godot 4 中移除。請改用 ``sampler2D`` 和 ``hint_screen_texture``。"
 
 msgid "inout vec3 **NORMAL**"
-msgstr ""
+msgstr "inout vec3 **NORMAL**"
 
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
-msgstr ""
+msgstr "從 ** NORMAL_TEXTURE ** 中正常讀取. 可寫的."
 
 msgid "sampler2D **NORMAL_TEXTURE**"
-msgstr ""
+msgstr "輸入sampler2D **NORMAL_TEXTURE**"
 
 msgid "Default 2D normal texture."
-msgstr ""
+msgstr "預設 2D 法線紋理。"
 
 msgid "out vec3 **NORMAL_MAP**"
-msgstr ""
+msgstr "out vec3 **NORMAL_MAP**"
 
 msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overrides "
 "**NORMAL**."
-msgstr ""
+msgstr "配置用於三維的法線貼圖, 以便在二維中使用. 如果使用, 則覆蓋 **法線** ."
 
 msgid "out float **NORMAL_MAP_DEPTH**"
-msgstr ""
+msgstr "out float **NORMAL_MAP_DEPTH**"
 
 msgid "Normalmap depth for scaling."
-msgstr ""
+msgstr "用於縮放的法線貼圖深度."
 
 msgid "Pixel position in screen space."
-msgstr ""
+msgstr "法向量, 在視圖空間中."
 
 msgid "inout vec2 **SHADOW_VERTEX**"
-msgstr ""
+msgstr "inout vec2 **SHADOW_VERTEX**"
 
 msgid "Same as ``VERTEX`` but can be written to alter shadows."
-msgstr ""
+msgstr "與 VERTEX 相同，但可以寫入來改變陰影。"
 
 msgid "inout vec3 **LIGHT_VERTEX**"
-msgstr ""
+msgstr "inout vec3 **LIGHT_VERTEX**"
 
 msgid ""
 "Same as ``VERTEX`` but can be written to alter lighting. Z component "
 "represents height."
-msgstr ""
+msgstr "與“VERTEX”相同，但可以寫入來改變照明。 Z 分量代表高度。"
 
 msgid ""
 "Color from vertex function and output fragment color. If unused, will be set "
 "to **TEXTURE** color."
-msgstr ""
+msgstr "從頂點函式和輸出片段顏色. 如果未使用, 將設定為 **紋理** 顏色."
 
 msgid "Light built-ins"
-msgstr ""
+msgstr "內建燈光"
 
 msgid ""
 "Light processor functions work differently in Godot 4.x than they did in "
 "Godot 3.x. In Godot 4.x all lighting is done during the regular draw pass. "
 "In other words, Godot no longer draws the object again for each light."
 msgstr ""
+"光處理器函式在 Godot 4.x 中的運作方式與在 Godot 3.x 中的工作方式不同。在 "
+"Godot 4.x 中，所有照明都是在常規繪製過程中完成的。換句話說，Godot 不再為每個"
+"光重新繪製物體。"
 
 msgid ""
 "Use render_mode ``unshaded`` if you do not want the light processor function "
@@ -394,92 +438,99 @@ msgid ""
 "lighting on an object; this can be useful when you only want the object "
 "visible where it is covered by light."
 msgstr ""
+"光照處理器功能在 2D 中與在 3D 中工作不同。在 CanvasItem 著色器中，這個著色器"
+"會為被繪製的物件呼叫一次，然後再為每一束接觸場景中該物體的光呼叫一次。如果您"
+"不希望該物件發生任何光傳遞，請使用 render_mode ``unshaded``。如果您只想讓光通"
+"過該物件，使用 render_mode ``light_only``；當您只想讓被光覆蓋的物件可見時，這"
+"是非常有用的。"
 
 msgid ""
 "Below is an example of a light shader that takes a CanvasItem's normal map "
 "into account:"
-msgstr ""
+msgstr "以下是考慮 CanvasItem 法線貼圖的燈光著色器範例："
 
 msgid "in vec3 **NORMAL**"
-msgstr ""
+msgstr "in vec3 **NORMAL**"
 
-#, fuzzy
 msgid "Input Normal."
 msgstr "輸入"
 
 msgid "in vec4 **COLOR**"
-msgstr ""
+msgstr "in vec4 **COLOR**"
 
 msgid ""
 "Input Color. This is the output of the fragment function with final "
 "modulation applied."
 msgstr ""
+"輸入顏色. 這是片段函式的輸出(如果在著色器的任何函式中沒有使用 **MODULATE** , "
+"則應用最終調變)."
 
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
-msgstr ""
+msgstr "來自頂點函式的UV, 相當於片段函式中的UV."
 
 msgid "Current texture in use for CanvasItem."
-msgstr ""
+msgstr "CanvasItem使用的目前紋理."
 
 msgid "UV for Point Sprite."
-msgstr ""
+msgstr "點精靈的UV."
 
 msgid "in vec4 **LIGHT_COLOR**"
-msgstr ""
+msgstr "in vec4 **LIGHT_COLOR**"
 
 msgid "Color of Light."
-msgstr ""
+msgstr "燈光的顏色。"
 
 msgid "in float **LIGHT_ENERGY**"
-msgstr ""
+msgstr "in float **LIGHT_ENERGY**"
 
 msgid "Energy multiplier of Light."
-msgstr ""
+msgstr "燈光的能量乘數。"
 
 msgid "in vec3 **LIGHT_POSITION**"
-msgstr ""
+msgstr "in vec3 **LIGHT_POSITION**"
 
 msgid ""
 "Position of Light in screen space. If using a ``DirectionalLight2D`` this is "
 "always ``vec3(0,0,0)``."
 msgstr ""
+"燈光在螢幕空間中的位置。如果使用的是 ``DirectionalLight2D``，則始終為 "
+"``vec3(0,0,0)``。"
 
 msgid "in vec3 **LIGHT_DIRECTION**"
-msgstr ""
+msgstr "in vec3 **LIGHT_DIRECTION**"
 
 msgid "Direction of Light in screen space."
-msgstr ""
+msgstr "燈光在螢幕空間中的方向。"
 
 msgid "in bool **LIGHT_IS_DIRECTIONAL**"
-msgstr ""
+msgstr "in bool **LIGHT_IS_DIRECTIONAL**"
 
 msgid "``true`` if this pass is a ``DirectionalLight2D``."
-msgstr ""
+msgstr "如果 ``true`` 代表光照通道."
 
 msgid "in vec3 **LIGHT_VERTEX**"
-msgstr ""
+msgstr "in vec3 **LIGHT_VERTEX**"
 
 msgid "Pixel position, in screen space as modified in the fragment function."
-msgstr ""
+msgstr "``world_position`` 可用於頂點函式或片段函式."
 
 msgid "inout vec4 **LIGHT**"
-msgstr ""
+msgstr "inout vec4 **LIGHT**"
 
 msgid ""
 "Value from the Light texture and output color. Can be modified. If not used, "
 "the light function is ignored."
-msgstr ""
+msgstr "值從淺色紋理和輸出顏色. 可以修改. 如果不使用, 則忽略光照函式."
 
 msgid "Specular shininess, as set in the object's texture."
-msgstr ""
+msgstr "鏡面光澤度，在物件紋理中設定。"
 
 msgid "out vec4 **SHADOW_MODULATE**"
-msgstr ""
+msgstr "out vec4 **SHADOW_MODULATE**"
 
 msgid "Multiply shadows cast at this point by this color."
-msgstr ""
+msgstr "將此時投射的陰影乘以該顏色。"
 
-#, fuzzy
 msgid "SDF functions"
 msgstr "函式"
 
@@ -488,6 +539,8 @@ msgid ""
 "generated Signed Distance Field texture. These functions available for "
 "Fragment and Light functions of CanvasItem shaders."
 msgstr ""
+"也實作了一些附加函式來對自動產生的有符號距離場紋理進行取樣。這些函式可用於 "
+"CanvasItem 著色器的片段和燈光函式。"
 
 msgid ""
 "The signed distance field is generated from :ref:`class_LightOccluder2D` "
@@ -496,34 +549,36 @@ msgid ""
 "<doc_2d_lights_and_shadows_setting_up_shadows>` documentation for more "
 "information."
 msgstr ""
+"帶符號的距離場是從場景中存在的 class_LightOcclusionr2D 節點產生的，並且啟用"
+"了 **SDF Collision** 屬性（這是預設）。有關更多信息，請參閱 2D 燈光和陰影 "
+"<doc_2d_lights_and_shadows_setting_up_shadows>` 檔案。"
 
 msgid "Function"
 msgstr "函式"
 
 msgid "float **texture_sdf** (vec2 sdf_pos)"
-msgstr ""
+msgstr "float **texture_sdf** (vec2 sdf_pos)"
 
 msgid "Performs an SDF texture lookup."
-msgstr ""
+msgstr "執行2D紋理讀取。"
 
 msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
-msgstr ""
+msgstr "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 
 msgid "Performs an SDF normal texture lookup."
-msgstr ""
+msgstr "預設 2D 法線紋理。"
 
 msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
-msgstr ""
+msgstr "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
 
 msgid "Converts a SDF to screen UV."
-msgstr ""
+msgstr "將 SDF 轉換為螢幕 UV。"
 
 msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
-msgstr ""
+msgstr "vec2 **screen_uv_to_sdf** (vec2 uv)"
 
-#, fuzzy
 msgid "Converts screen UV to a SDF."
-msgstr "轉換縮排為 Tab"
+msgstr "轉換螢幕UV為SDF。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

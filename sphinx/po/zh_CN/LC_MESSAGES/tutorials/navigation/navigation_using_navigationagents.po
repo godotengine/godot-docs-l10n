@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using NavigationAgents"
-msgstr "NavigationAgent3D"
+msgstr "使用 NavigationAgent"
 
 msgid ""
 "NavigationsAgents are helper nodes that combine functionality for "
@@ -36,7 +35,7 @@ msgstr ""
 
 msgid ""
 "New NavigationAgent nodes will automatically join the default navigation map "
-"on the World2D/World3D."
+"on the :ref:`World2D<class_World2D>`/:ref:`World3D<class_World3D>`."
 msgstr ""
 
 msgid ""
@@ -45,20 +44,18 @@ msgid ""
 "and direct calls to the NavigationServer API."
 msgstr ""
 
-#, fuzzy
 msgid "NavigationAgent Pathfinding"
-msgstr "NavigationAgent3D"
+msgstr "NavigationAgent 寻路"
 
 msgid ""
 "NavigationAgents query a new navigation path on their current navigation map "
 "when their ``target_position`` is set with a global position."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The result of the pathfinding can be influenced with the following "
 "properties."
-msgstr "匀速遍历, 然后, 可以用下面的伪代码:"
+msgstr "匀速遍历, 然后, 可以用下面的伪代码。"
 
 msgid ""
 "The ``navigation_layers`` bitmask can be used to limit the navigation meshes "
@@ -84,9 +81,8 @@ msgid ""
 "Disabling path meta flags will disable related signal emissions on the agent."
 msgstr ""
 
-#, fuzzy
 msgid "NavigationAgent Pathfollowing"
-msgstr "NavigationAgent3D"
+msgstr "NavigationAgent 路径跟随"
 
 msgid ""
 "After a ``target_position`` has been set for the agent, the next position to "
@@ -112,7 +108,7 @@ msgstr ""
 msgid ""
 "The ``get_next_path_position()`` function is responsible for updating many "
 "of the agent's internal states and properties. The function should be "
-"repeatedly called `once` every ``physics_process`` until "
+"repeatedly called *once* every ``physics_process`` until "
 "``is_navigation_finished()`` tells that the path is finished. The function "
 "should not be called after the target position or path end has been reached "
 "as it can make the agent jitter in place due to the repeated path updates. "
@@ -120,9 +116,8 @@ msgid ""
 "path is already finished."
 msgstr ""
 
-#, fuzzy
 msgid "The following properties influence the path following behavior."
-msgstr "这个节点有如下属性可供设置："
+msgstr "这个节点有如下属性可供设置。"
 
 msgid ""
 "The ``path_desired_distance`` defines the distance at which the agent "
@@ -154,9 +149,8 @@ msgid ""
 "found further below."
 msgstr ""
 
-#, fuzzy
 msgid "Pathfollowing common problems"
-msgstr "运行以下命令："
+msgstr "运行以下命令"
 
 msgid ""
 "There are some common user problems and important caveats to consider when "
@@ -168,10 +162,10 @@ msgstr ""
 
 msgid ""
 "If an agent queries a path before the navigation map synchronisation, e.g. "
-"in a _ready() function, the path might return empty. In this case the "
-"get_next_path_position() function will return the same position as the agent "
-"parent node and the agent will consider the path end reached. This is fixed "
-"by making a deferred call or using a callback e.g. waiting for the "
+"in a ``_ready()`` function, the path might return empty. In this case the "
+"``get_next_path_position()`` function will return the same position as the "
+"agent parent node and the agent will consider the path end reached. This is "
+"fixed by making a deferred call or using a callback e.g. waiting for the "
 "navigation map changed signal."
 msgstr ""
 
@@ -214,9 +208,8 @@ msgid ""
 "position."
 msgstr ""
 
-#, fuzzy
 msgid "NavigationAgent Avoidance"
-msgstr "NavigationAgent3D"
+msgstr "NavigationAgent 避障"
 
 msgid ""
 "This section explains how to use the navigation avoidance specific to "
@@ -229,8 +222,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The velocity_computed signal of the NavigationAgent node must be connected "
-"to receive the ``safe_velocity`` calculation result."
+"The ``velocity_computed`` signal of the NavigationAgent node must be "
+"connected to receive the safe velocity calculation result."
 msgstr ""
 
 msgid ""
@@ -341,9 +334,8 @@ msgid ""
 "avoidance modes."
 msgstr ""
 
-#, fuzzy
 msgid "NavigationAgent Script Templates"
-msgstr "创建脚本模板"
+msgstr "NavigationAgent 脚本模板"
 
 msgid ""
 "The following sections provides script templates for nodes commonly used "
@@ -351,29 +343,38 @@ msgid ""
 msgstr ""
 
 msgid "Actor as Node3D"
-msgstr ""
-
-msgid ""
-"This script adds basic navigation movement to a Node3D with a "
-"NavigationAgent3D child node."
-msgstr ""
-
-msgid "Actor as CharacterBody3D"
-msgstr ""
-
-msgid ""
-"This script adds basic navigation movement to a CharacterBody3D with a "
-"NavigationAgent3D child node."
-msgstr ""
+msgstr "角色为 Node3D"
 
 #, fuzzy
-msgid "Actor as RigidBody3D"
-msgstr "使用 RigidBody2D"
-
 msgid ""
-"This script adds basic navigation movement to a RigidBody3D with a "
-"NavigationAgent3D child node."
+"This script adds basic navigation movement to a :ref:`Node3D <class_Node3D>` "
+"with a :ref:`NavigationAgent3D <class_NavigationAgent3D>` child node."
 msgstr ""
+"这个脚本能够为带有 NavigationAgent3D 子节点的 Node3D 添加基础的导航移动功能。"
+
+msgid "Actor as CharacterBody3D"
+msgstr "角色为 CharacterBody3D"
+
+#, fuzzy
+msgid ""
+"This script adds basic navigation movement to a :ref:`CharacterBody3D "
+"<class_CharacterBody3D>` with a :ref:`NavigationAgent3D "
+"<class_NavigationAgent3D>` child node."
+msgstr ""
+"这个脚本能够为带有 NavigationAgent3D 子节点的 CharacterBody3D 添加基础的导航"
+"移动功能。"
+
+msgid "Actor as RigidBody3D"
+msgstr "角色为 RigidBody3D"
+
+#, fuzzy
+msgid ""
+"This script adds basic navigation movement to a :ref:`RigidBody3D "
+"<class_RigidBody3D>` with a :ref:`NavigationAgent3D "
+"<class_NavigationAgent3D>` child node."
+msgstr ""
+"这个脚本能够为带有 NavigationAgent3D 子节点的 RigidBody3D 添加基础的导航移动"
+"功能。"
 
 msgid "Translation status"
 msgstr "翻译状态"

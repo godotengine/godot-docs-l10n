@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using the Asset Library"
 msgstr "素材庫"
 
 msgid "On the website"
-msgstr ""
+msgstr "在網站上"
 
 msgid "Overview"
 msgstr "概覽"
@@ -32,21 +31,24 @@ msgid ""
 "`Godot's official website <https://godotengine.org/asset-library/asset>`_. "
 "This is what it looks like when you first visit it:"
 msgstr ""
+"如前所述，你可以在 `Godot 的官方網站 <https://godotengine.org/asset-library/"
+"asset>`_上存取素材庫的 Web 前端。這是你第一次存取它時的樣子："
 
 msgid "|image0|"
 msgstr "\\ |image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "\\ |image0|"
+msgstr "image0"
 
 msgid ""
 "At the top, you see the **header**, which takes you to various other parts "
 "of the AssetLib - at the moment, it's empty, as we are not logged in."
 msgstr ""
+"在頂部, 你看到 **header** , 它導覽到AssetLib的各個其他部分, 目前, 它是空的, "
+"因為我們沒有登錄."
 
 msgid "Searching"
-msgstr ""
+msgstr "搜索"
 
 msgid ""
 "In the center is the **search bar + settings** section, and the **assets** "
@@ -55,6 +57,9 @@ msgid ""
 "scripts and demos), **engine version** they are intended for, **sorting "
 "order** (by update date, by name, etc.) and **support level**."
 msgstr ""
+"在中心是 **搜索欄+設定** 部分, 以及它下面的 **資源** 部分 - 這使您可以根據一"
+"系列標準篩選掉某些型別的資源. 這些包括資源的 **類別** (例如2D工具, 腳本和演"
+"示), **引擎版本** , **排序** (按更新日期, 按名稱等)和 **支援級別** ."
 
 msgid ""
 "While most other filter settings should be fairly self-explanatory, it's "
@@ -62,89 +67,96 @@ msgid ""
 "Currently there are three support levels, and each asset can belong to only "
 "one."
 msgstr ""
+"雖然大多數其他篩檢程式設定是不言自明的，但值得討論是素材庫中“支援級別”的含"
+"義。目前有三個支援級別，每個素材只能屬於一個。"
 
 msgid ""
 "**Official** assets are created and maintained by the official Godot Engine "
 "developers. Currently, these include the official engine demos, which "
 "showcase how various areas of the engine work."
 msgstr ""
+"**官方** 資源由官方Godot Engine開發人員建立和維護. 目前, 這些資源包括官方引擎"
+"演示, 它們展示了引擎工作的各個方面."
 
 msgid ""
 "**Community** assets are submitted and maintained by the members of the "
 "Godot community."
-msgstr ""
+msgstr "**社區** 資源由Godot社區成員提交和維護."
 
 msgid ""
 "**Testing** assets are works-in-progress, and may contain bugs and usability "
 "issues. They are not recommended for use in serious projects, but you are "
 "encouraged to download, test them, and submit issues to the original authors."
 msgstr ""
+"**測試** 資源是正在開發中的資源, 可能包含錯誤和可用性問題. 建議不要將它們用於"
+"正式的專案中, 但建議您下載並測試它們從而向原作者報告問題."
 
 msgid ""
 "You can mix and match any of the search filters and criteria, and upon "
 "clicking the Search button, receive the list of all assets in the Library "
 "that match them."
 msgstr ""
+"您可以混合和配對任何搜索篩檢程式和條件，並在按一下“搜索”按鈕後，接收庫中與其"
+"配對的所有資源的列表。"
 
 msgid "|image1|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "\\ |image1|"
+msgstr "image1"
 
 msgid ""
 "Note that the search results are not updated in real-time, so you will have "
 "to re-submit the search query each time you change the query settings."
 msgstr ""
+"請注意, 搜索結果不會即時更新, 因此每次更改查詢設定時都必須重新提交搜索查詢."
 
 msgid "Breakdown of an asset"
-msgstr ""
+msgstr "資源的細分"
 
 msgid ""
 "Now let's take a look at what an asset's page looks like and what it "
 "contains."
-msgstr ""
+msgstr "現在讓我們來看看資源的頁面是什麼樣的以及它包含的內容."
 
 msgid "|image2|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "\\ |image2|"
+msgstr "image2"
 
 msgid "Asset's thumbnail/icon."
-msgstr ""
+msgstr "資源的縮略圖/圖示."
 
 msgid "Asset's name."
-msgstr ""
+msgstr "資源的名稱."
 
 msgid "Current version number of the asset."
-msgstr ""
+msgstr "資源的目前版本號."
 
 msgid "Asset's category, Godot version, and support status."
-msgstr ""
+msgstr "資源類別,Godot版本和支援狀態."
 
 msgid "Asset's original author/submitter."
-msgstr ""
+msgstr "資源的原作者/提交者."
 
 msgid "The license the asset is distributed under."
-msgstr ""
+msgstr "資源配置的許可證."
 
 msgid "The date of the asset's latest edit/update."
-msgstr ""
+msgstr "資源的最新編輯/更新日期."
 
 msgid "A textual description of the asset."
-msgstr ""
+msgstr "資源的文字描述."
 
 msgid "Links related to the asset (download link, file list, issue tracker)."
-msgstr ""
+msgstr "與資源相關的連結(下載連結, 檔列表, 問題追蹤器)."
 
 msgid "Images and videos showcasing the asset."
-msgstr ""
+msgstr "展示資源的圖片和影片."
 
 msgid "Registering and logging in"
-msgstr ""
+msgstr "註冊並登錄"
 
 msgid ""
 "In order to upload assets to the AssetLib, you need to be logged in, and to "
@@ -153,123 +165,133 @@ msgid ""
 "existing assets. You do *not* need to be logged in to browse and download "
 "the assets."
 msgstr ""
+"要將資源上傳到AssetLib, 您需要登錄, 為此, 您需要一個註冊使用者帳戶. 將來, 這"
+"還可以讓您存取其他功能, 例如對現有資源評論或評級. 您 *不* 需要登錄就可以瀏覽"
+"和下載資源."
 
 msgid "The login/registration page can be accessed from the AssetLib header."
-msgstr ""
+msgstr "可以從AssetLib標題部分存取登錄/註冊頁面."
 
 msgid "|image3|"
 msgstr "\\ |image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "\\ |image3|"
+msgstr "image3"
 
 msgid ""
 "From here, you can register your account, which requires a valid email "
 "address, a username, and a (preferably strong) password."
 msgstr ""
+"在這裡, 您可以註冊您的帳戶, 該帳戶需要有效的電子郵寄地址, 使用者名和密碼(最好"
+"是強式密碼)."
 
 msgid "|image4|"
 msgstr "\\ |image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "\\ |image4|"
+msgstr "image4"
 
 msgid "Then, you can use your username and password to log in."
-msgstr ""
+msgstr "然後, 您可以使用您的使用者名和密碼登錄."
 
 msgid "|image5|"
 msgstr "\\ |image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "\\ |image5|"
+msgstr "image5"
 
 msgid ""
 "This will change the look of the AssetLib header. Now you get access to a "
 "handful of new functions:"
-msgstr ""
+msgstr "這將改變AssetLib標題的外觀. 現在你可以存取一些新的功能:"
 
 msgid ""
 "The feed, which shows a list of status updates on your submitted assets (and "
 "possibly more in the future)."
-msgstr ""
+msgstr "Feed, 顯示已提交資源的狀態更新列表(將來可能更多)."
 
 msgid "A list of your uploaded assets."
-msgstr ""
+msgstr "您上傳的資源列表."
 
 msgid "The ability to submit new assets."
-msgstr ""
+msgstr "提交新資源的能力."
 
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "\\ |image1|"
+msgstr "image6"
 
 msgid ""
 "You can learn how to submit assets to the Library, and what the asset "
 "submission guidelines are, in the next part of this tutorial, :ref:"
 "`doc_submitting_to_assetlib`."
 msgstr ""
+"你可以在本教學的下一部分 :ref:`doc_submitting_to_assetlib` 中學習如何向庫中提"
+"交素材，以及素材提交規範是什麼。"
 
 msgid "In the editor"
-msgstr ""
+msgstr "在編輯器中"
 
 msgid ""
 "The editor will display different categories of assets depending on whether "
 "you're browsing the Project Manager's **Asset Library Projects** tab or the "
 "editor's **AssetLib** tab."
 msgstr ""
+"編輯器將根據你是在瀏覽專案管理器的**範本**分頁或是編輯器的 **AssetLib** 分"
+"頁，顯示不同類別的素材。"
 
 msgid ""
 "The Project Manager's **Asset Library Projects** tab will only display "
 "assets that are standalone projects by themselves. This is denoted on the "
 "asset library with the *Templates*, *Demos* and *Projects* categories."
 msgstr ""
+"專案管理器的**素材庫專案**分頁只會顯示本身是獨立專案的素材。在素材庫中用 "
+"*Templates*、*Demos* 和 *Projects* 類別來表示。"
 
 msgid ""
 "The editor's **AssetLib** tab will only display assets that are *not* "
 "standalone projects by themselves. In other words, it will display assets "
 "from all categories except *Templates*, *Demos* and *Projects*."
 msgstr ""
+"編輯器的 **AssetLib** 分頁將只顯示本身 *不是* 獨立專案的素材。換句話說，它將"
+"顯示除 *Template*、*Demos* 和 *Projects* 以外的所有類別的素材。"
 
 msgid "You can also access the AssetLib directly from Godot:"
-msgstr ""
+msgstr "你也可以直接從Godot存取AssetLib:"
 
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "\\ |image1|"
+msgstr "image7"
 
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "\\ |image1|"
+msgstr "image14"
 
 msgid ""
 "Click on it, and Godot will fetch info about the assets from the AssetLib. "
 "Once it's finished, you will see a window similar to what the AssetLib "
 "website looks like, with some differences:"
 msgstr ""
+"按一下它,Godot將從AssetLib獲取有關資源的資訊. 一旦完成, 您將看到一個類似於"
+"AssetLib網站的視窗, 但有一些不同之處:"
 
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "\\ |image1|"
+msgstr "image8"
 
 msgid ""
 "Similarly to the web version of the AssetLib, here you can search for assets "
 "by category, name, and sort them by factors such as name or edit date."
 msgstr ""
+"與AssetLib的網頁版本類似, 您可以在此處按類別, 名稱搜索資源, 並按名稱或編輯日"
+"期等因素對其進行排序."
 
 msgid ""
 "Notably, you can only fetch assets for the current version of Godot you are "
@@ -280,6 +302,10 @@ msgid ""
 "in real-time (you do not have to press Search after every change to your "
 "search query for the changes to take place)."
 msgstr ""
+"顯然，你只能獲取與你所運作的 Godot 版本一致的素材。專案、演示、範本可以從專案"
+"管理器的 AssetLib 裡下載。擴充（工具、腳本、材質等）可以從專案的 AssetLib 裡"
+"下載並新增到目前專案。此外，與網頁前端不同，這些搜索結果是即時更新的（每次修"
+"改搜索內容後無需點擊搜索按鈕）。"
 
 msgid ""
 "In the future, you will be able to choose a different AssetLib provider to "
@@ -288,41 +314,44 @@ msgid ""
 "is supported, as well as the version that may be running on your local "
 "machine's web server (the localhost option)."
 msgstr ""
+"將來，您將能夠選擇一個不同的 AssetLib 提供程式來獲取資源（使用網站下拉式功能"
+"表），但是目前只支援官方的 `Godot 網站 <https://godotengine.org>`_ 版本的 "
+"AssetLib，和可能在本地 Web 伺服器上運作的素材庫（即 localhost 選項）。"
 
 msgid "When you click on an asset, you will see more information about it."
-msgstr ""
+msgstr "按一下資源時, 您將看到有關它的更多資訊."
 
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "\\ |image1|"
+msgstr "image9"
 
 msgid ""
 "If you click on the Install button, Godot will fetch an archive of the "
 "asset, and will track download progress of it at the bottom of the editor "
 "window. If the download fails, you can retry it using the Retry button."
 msgstr ""
+"如果按一下Install按鈕,Godot引擎將下載資源的壓縮包, 並將在編輯器視窗的底部顯示"
+"它的下載進度. 如果下載失敗, 您可以使用Retry按鈕重試."
 
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "\\ |image1|"
+msgstr "image10"
 
 msgid ""
 "When it finishes, you can proceed to install it using the Install button. "
 "This will bring up the Package Installer window."
 msgstr ""
+"完成後, 您可以使用Install按鈕繼續安裝它. 這將打開Package Installer視窗."
 
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "\\ |image1|"
+msgstr "image11"
 
 msgid ""
 "Here you can see a list of all the files that will be installed. You can "
@@ -331,13 +360,15 @@ msgid ""
 "files will be shown in red, and hovering over them will show you a message "
 "stating why it cannot be installed."
 msgstr ""
+"在這裡, 您可以看到將要安裝的所有檔的列表. 您可以勾選您不想安裝的任何檔,Godot"
+"引擎也會告知您無法安裝的檔案的任何問題. 這些檔將以紅色顯示, 將滑鼠懸停在它們"
+"上方會顯示一條消息, 說明無法安裝的原因."
 
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "\\ |image1|"
+msgstr "image12"
 
 msgid ""
 "Once you are done, you can press the Install button, which will unzip all "
@@ -345,13 +376,15 @@ msgid ""
 "images or 3D models. Once this is done, you should see a message stating "
 "that the Package installation is complete."
 msgstr ""
+"完成後, 您可以按Install按鈕, 該按鈕將解壓縮存檔中的所有檔, 並匯入其中包含的所"
+"有資源, 例如圖像或3D模型. 完成此操作後, 您應該會看到一條消息, 指出Package安裝"
+"已完成."
 
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "\\ |image1|"
+msgstr "image13"
 
 msgid ""
 "You may also use the Import button to import asset archives obtained "
@@ -360,6 +393,8 @@ msgid ""
 "procedure as with the assets downloaded directly via Godot that we just "
 "covered."
 msgstr ""
+"您還可以使用Import按鈕匯入在其他位置獲取的資源壓縮包(例如直接從AssetLib 網頁"
+"前端下載的), 這將引導您完成與我們剛剛通過Godot引擎實作的套裝程式安裝過程."
 
 msgid "Translation status"
 msgstr "翻譯狀態"

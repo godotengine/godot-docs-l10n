@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0107: Types not derived from Node should not export Node members"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr ""
+
+msgid "GD0107"
+msgstr ""
+
+#, fuzzy
+msgid "**Category**"
+msgstr "**Category** :"
+
+msgid "Usage"
+msgstr "Utilisation"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+#, fuzzy
+msgid "Breaking"
+msgstr "Pré-calcul"
+
+msgid "**Enabled by default**"
+msgstr ""
+
+#, fuzzy
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr ""
+
+msgid ""
+"A type that doesn't derive from ``Node`` contains an exported field or "
+"property of a type that derives from ``Node``."
+msgstr ""
+
+#, fuzzy
+msgid "Rule description"
+msgstr "`<brief_description>`"
+
+msgid ""
+"Exported nodes are serialized as ``NodePath``. Only types derived from "
+"``Node`` are able to get the node instance from the ``NodePath``."
+msgstr ""
+
+#, fuzzy
+msgid "How to fix violations"
+msgstr "doit exister de manière isolée"
+
+msgid ""
+"To fix a violation of this rule, avoid exporting ``Node`` members on a type "
+"that doesn't derive from ``Node``, or consider exporting a ``NodePath``."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr ""
+
+msgid ""
+"Do not suppress a warning from this rule. Types that don't derive from "
+"``Node`` will be unable to retrieve the right node instance for exported "
+"``Node`` members, resulting in unexpected runtime errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "État de la traduction"

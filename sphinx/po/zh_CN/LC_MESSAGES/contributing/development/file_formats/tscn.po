@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,7 +84,6 @@ msgstr "文件结构"
 msgid "There are five main sections inside the TSCN file:"
 msgstr "TSCN 文件分为五个主要部分："
 
-#, fuzzy
 msgid "File descriptor"
 msgstr "文件描述符"
 
@@ -285,9 +284,8 @@ msgid ""
 "``mesh`` points to its parent, ``Armature01``:"
 msgstr ""
 
-#, fuzzy
 msgid "Skeleton3D"
-msgstr "骨架"
+msgstr "Skeleton3D"
 
 #, fuzzy
 msgid ""
@@ -299,14 +297,13 @@ msgstr ""
 "Attribute=Value`` 格式在键值对中描述的骨骼列表。骨骼的属性有："
 
 msgid "``position``: Vector3"
-msgstr ""
+msgstr "``position``\\ ：Vector3"
 
-#, fuzzy
 msgid "``rotation``: Quaternion"
-msgstr "``Rotation``"
+msgstr "``rotation``\\ ：Quaternion"
 
 msgid "``scale``: Vector3"
-msgstr ""
+msgstr "``scale``\\ ：Vector3"
 
 msgid ""
 "These attributes are all optional. For instance, a bone may only define "
@@ -316,9 +313,8 @@ msgstr ""
 msgid "Here's an example of a skeleton node with two bones:"
 msgstr "具有两个骨骼的骨架节点的示例："
 
-#, fuzzy
 msgid "BoneAttachment3D"
-msgstr "BoneAttachment"
+msgstr "BoneAttachment3D"
 
 #, fuzzy
 msgid ""

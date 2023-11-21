@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -222,6 +222,13 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+msgid "in int  **INSTANCE_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr ""
+
+#, fuzzy
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr "in vec4 **INSTANCE_CUSTOM**"
 
@@ -247,7 +254,15 @@ msgstr ""
 msgid "inout vec2 **VERTEX**"
 msgstr "inout vec2 **VERTEX**"
 
-msgid "Vertex, in image space."
+#, fuzzy
+msgid "Vertex, in local space."
+msgstr "Carattere di tabulazione verticale"
+
+#, fuzzy
+msgid "in int **VERTEX_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
 msgstr ""
 
 #, fuzzy

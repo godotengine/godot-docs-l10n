@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,7 +48,6 @@ msgid ""
 "that:"
 msgstr "GDScript 是動態型別語言。因此，GDScript 有下列優點："
 
-#, fuzzy
 msgid "The language is easy to get started with."
 msgstr "GDScript 簡單易學。"
 
@@ -59,7 +58,7 @@ msgid "Less code written means less errors & mistakes to fix."
 msgstr "寫更少的程式碼，代表需要修正的錯誤與失誤更少。"
 
 msgid "The code is easy to read (little clutter)."
-msgstr ""
+msgstr "程式碼很容易閱讀（有點混亂）。"
 
 msgid "No compilation is required to test."
 msgstr "要測試時不需要編譯。"
@@ -67,7 +66,6 @@ msgstr "要測試時不需要編譯。"
 msgid "Runtime is tiny."
 msgstr "執行環境很小。"
 
-#, fuzzy
 msgid "It has duck-typing and polymorphism by nature."
 msgstr "具有鴨子型別與多型。"
 
@@ -77,7 +75,6 @@ msgstr "而主要缺點如下："
 msgid "Less performance than statically typed languages."
 msgstr "與靜態型別相比效能較差。"
 
-#, fuzzy
 msgid "More difficult to refactor (symbols can't be traced)."
 msgstr "比較難進行重構（無法追蹤符號）"
 
@@ -94,7 +91,6 @@ msgid ""
 "run-time)."
 msgstr "程式碼自動補全的靈活讀比較低（某些變數型別只有在執行時才可知）。"
 
-#, fuzzy
 msgid ""
 "This, translated to reality, means that Godot used with GDScript is a "
 "combination designed to create games quickly and efficiently. For games that "
@@ -127,12 +123,12 @@ msgid "Dynamic:"
 msgstr "動態語言："
 
 msgid "As function arguments:"
-msgstr "作為函式引數："
+msgstr "作為函式參數："
 
 msgid ""
 "Functions are of dynamic nature too, which means they can be called with "
 "different arguments, for example:"
-msgstr "函式也具有動態性質，這代表函式可以使用不同的引數呼叫，如："
+msgstr "函式也具有動態性質，這代表函式可以使用不同的參數呼叫，如："
 
 msgid "Pointers & referencing:"
 msgstr "指針與參照："
@@ -165,7 +161,6 @@ msgstr "Java："
 msgid "GDScript:"
 msgstr "GDScript："
 
-#, fuzzy
 msgid ""
 "In GDScript, only base types (int, float, string and the vector types) are "
 "passed by value to functions (value is copied). Everything else (instances, "
@@ -222,7 +217,7 @@ msgid ""
 "are, in fact, so efficient that some languages will go as far as "
 "implementing arrays as dictionaries."
 msgstr ""
-"字典可以用來映射任何數值到另一個數值，不論索引鍵或值是什麼資料型別。與一般的"
+"字典可以用來對應任何數值到另一個數值，不論索引鍵或值是什麼資料型別。與一般的"
 "迷思不同，字典其實是很實用的工具，因為可以用來實作雜湊表。事實上，字典實用到"
 "有些語言直接把陣列實作成字典。"
 
@@ -234,7 +229,6 @@ msgid ""
 "little cost:"
 msgstr "字典也是動態的，索引鍵可以在任何時候新增或移除，而不需花費太多力氣："
 
-#, fuzzy
 msgid ""
 "In most cases, two-dimensional arrays can often be implemented more easily "
 "with dictionaries. Here's a battleship game example:"
@@ -249,12 +243,11 @@ msgid ""
 "and quick structs:"
 msgstr ""
 "字典也可以用來作為資料標記或是快速架構。由於 GDScript 的字典很像 Python 的字"
-"典，所以也支援 Lua 類型的語法與索引，在寫初始狀態或快速架構時很有用："
+"典，所以也支援 Lua 型別的語法與索引，在寫初始狀態或快速架構時很有用："
 
 msgid "For & while"
 msgstr "For 與 While"
 
-#, fuzzy
 msgid ""
 "Iterating using the C-style for loop in C-derived languages can be quite "
 "complex:"
@@ -263,7 +256,7 @@ msgstr "在某些靜態型別語言中迭代可能很困難："
 msgid ""
 "Because of this, GDScript makes the opinionated decision to have a for-in "
 "loop over iterables instead:"
-msgstr ""
+msgstr "因此，GDScript 做出了固執己見的決定，對可迭代物件使用 for-in 迴圈："
 
 msgid ""
 "Container datatypes (arrays and dictionaries) are iterable. Dictionaries "
@@ -274,24 +267,22 @@ msgid "Iterating with indices is also possible:"
 msgstr "也可以迭代索引："
 
 msgid "The range() function can take 3 arguments:"
-msgstr "range() 函式有三個引數："
+msgstr "range() 函式有三個參數："
 
 msgid "Some examples involving C-style for loops:"
-msgstr ""
+msgstr "涉及 C 風格 for 迴圈的一些範例："
 
 msgid "Translate to:"
 msgstr "可以轉換為："
 
-#, fuzzy
 msgid "And backwards looping done through a negative counter:"
 msgstr "而反向循環可以使用負數計數器來完成："
 
 msgid "Becomes:"
 msgstr "改成："
 
-#, fuzzy
 msgid "While"
-msgstr "當"
+msgstr "While"
 
 msgid "while() loops are the same everywhere:"
 msgstr "while() 循環則在所有地方都長得一樣："
@@ -389,7 +380,6 @@ msgstr "**「若物件可以被砸碎，不管是什麼物件，把它砸碎就�
 msgid "Yes, we should call it Hulk typing instead."
 msgstr "當然，我們也可以稱這個方法為「綠巨人浩克型別」。"
 
-#, fuzzy
 msgid ""
 "It's possible that the object being hit doesn't have a smash() function. "
 "Some dynamically typed languages simply ignore a method call when it doesn't "

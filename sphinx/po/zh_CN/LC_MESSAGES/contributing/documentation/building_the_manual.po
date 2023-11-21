@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,19 +29,19 @@ msgstr ""
 "的 HTML 文件以及诸如 PDF、EPUB、LaTeX 形式的文档。"
 
 msgid "Before you get started, make sure that you have:"
-msgstr ""
+msgstr "在开始之前，请确保你已完成以下步骤："
+
+msgid "`Git <https://git-scm.com/>`_"
+msgstr "`Git <https://git-scm.com/>`_"
 
 #, fuzzy
-msgid "`Git <https://git-scm.com/>`_"
-msgstr "`GitHub <https://github.com/godotengine/>`_"
-
 msgid ""
 "`make <https://www.gnu.org/software/make/>`_ (unless you're using Windows)"
 msgstr ""
+"`make <https://www.gnu.org/software/make/>`_ （除非你在使用Windows系统）"
 
-#, fuzzy
 msgid "`Python <https://www.python.org/>`_ 3"
-msgstr "`Python 3.5+ <https://www.python.org/>`__\\ 。"
+msgstr "`Python <https://www.python.org/>`_ 3"
 
 #, fuzzy
 msgid ""
@@ -50,74 +50,71 @@ msgid ""
 "If both approaches fail, `make sure that you have pip3 installed <https://"
 "pip.pypa.io/en/stable/installation/>`__."
 msgstr ""
-"你可能需要写 ``python3 -m pip``\\ （Unix）或 ``py -m pip``\\ （Windows）而不"
-"是 ``pip3`` 。如果这两种方法都失败了，\\ `请检查是否安装了 pip3 <https://pip."
-"pypa.io/en/stable/installation/>`__\\ 。"
+"Python 3 应该带有 ``pip3`` 命令。 您可能需要输入 ``python3 -m pip`` （Unix）"
+"或 ``py -m pip`` （Windows）而不是 ``pip3`` 。 如果两种方法都失败了，\\`请确"
+"保您已安装 pip3 <https://pip.pypa.io/en/stable/installation/>`__\\。"
 
 msgid ""
 "*(Optional)* Set up a virtual environment. Virtual environments prevent "
 "potential conflicts between the Python packages in ``requirements.txt`` and "
 "other Python packages that are installed on your system."
 msgstr ""
+"*（可选）* 设置虚拟环境。 虚拟环境可防止 ``requirements.txt`` 中的 Python 包"
+"与系统上安装的其他 Python 包之间的潜在冲突。"
 
-#, fuzzy
 msgid "Create the virtual environment:"
-msgstr "设置自定义构建环境"
+msgstr "创建虚拟环境："
 
 msgid "Windows"
 msgstr "Windows"
 
-#, fuzzy
 msgid "Other platforms"
-msgstr "支持的平台"
+msgstr "其他平台"
 
-#, fuzzy
 msgid "Activate the virtual environment:"
-msgstr "设置自定义构建环境"
+msgstr "启动虚拟环境："
 
 msgid "*(Optional)* Update pre-installed packages:"
-msgstr ""
+msgstr "*（可选）* 更新预安装的软件包："
 
-#, fuzzy
 msgid "Clone the docs repo:"
-msgstr "计分。"
+msgstr "克隆（clone）文档仓库："
 
 msgid "Change directory into the docs repo:"
-msgstr ""
+msgstr "将目录切换到文档仓库："
 
 #, fuzzy
 msgid "Install the required packages:"
-msgstr "安装包"
+msgstr "安装需要的软件包："
 
-#, fuzzy
 msgid "Build the docs:"
-msgstr "构建编辑器"
+msgstr "构建文档："
 
 msgid ""
 "On Windows, that command will run ``make.bat`` instead of GNU Make (or an "
 "alternative)."
 msgstr ""
+"在 Windows 上，该命令将运行 ``make.bat`` 而不是 GNU Make（或其他替代方案）。"
 
 msgid ""
 "Alternatively, you can build the documentation by running the sphinx-build "
 "program manually:"
 msgstr "或者你也可以手动调用 sphinx-build 程序来构建文档："
 
-#, fuzzy
 msgid ""
 "The compilation will take some time as the ``classes/`` folder contains "
 "hundreds of files. See :ref:`doc_building_the_manual:performance`."
 msgstr ""
-"因为 ``classes/`` 文件夹里包含了上百个文件，所以编译的过程会花上一些时间。"
+"因为 ``classes/`` 文件夹里包含了上百个文件，所以编译的过程会花上一些时间。详"
+"见 :ref:`doc_building_the_manual:performance`。"
 
 msgid ""
 "You can then browse the documentation by opening ``_build/html/index.html`` "
 "in your web browser."
 msgstr "完成后就可以在网页浏览器里打开 ``_build/html/index.html`` 查看文档了。"
 
-#, fuzzy
 msgid "Dealing with errors"
-msgstr "用顶点颜色绘制"
+msgstr "处理错误"
 
 msgid "If you run into errors, you may try the following command:"
 msgstr "如果你遇到了错误，可以试试以下命令："
@@ -142,13 +139,11 @@ msgstr ""
 "``git add .``\\ ，否则整个 ``classes/`` 文件夹的删除都会记录进你的提交之中。"
 "详情见 `#3157 <https://github.com/godotengine/godot-docs/issues/3157>`\\ 。"
 
-#, fuzzy
 msgid "Hints for performance"
-msgstr "灯光性能"
+msgstr "性能提示"
 
-#, fuzzy
 msgid "RAM usage"
-msgstr "手动使用"
+msgstr "内存占用"
 
 msgid ""
 "Building the documentation requires at least 8 GB of RAM to run without disk "
@@ -158,16 +153,19 @@ msgstr ""
 "磁盘交换会拖慢文档构建的速度，关闭后需要至少 8 GB 的内存。如果你有至少 16 GB "
 "的内存，可以这样加速编译："
 
+#, fuzzy
 msgid ""
 "You can use ``-j auto`` to use all available CPU threads, but this can use a "
 "lot of RAM if you have a lot of CPU threads. For instance, on a system with "
 "32 CPU threads, ``-j auto`` (which corresponds to ``-j 32`` here) can "
 "require 20+ GB of RAM for Sphinx alone."
 msgstr ""
+"您可以使用 ``-j auto`` 来使用所有可用的 CPU 线程，但是如果您有很多 CPU 线程，"
+"这可能会使用大量 RAM。 例如，在具有 32 个 CPU 线程的系统上， ``-j auto`` （此"
+"处对应于 ``-j 32`` ）仅 Sphinx 就需要 20+ GB 的 RAM。"
 
-#, fuzzy
 msgid "Specifying a list of files"
-msgstr "提供文件"
+msgstr "指定文件列表"
 
 #, fuzzy
 msgid ""

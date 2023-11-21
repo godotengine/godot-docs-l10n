@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,7 +42,7 @@ msgid ""
 "moved to their own enums."
 msgstr ""
 "全域函式與一些常數被移到類別裡了，因為 C# 不允許在命名空間中定義這些函式與常"
-"數。大部分全域常數都被移到各自的列舉類型中了。"
+"數。大部分全域常數都被移到各自的列舉型別中了。"
 
 msgid "Constants"
 msgstr "常數"
@@ -54,13 +54,15 @@ msgid ""
 "This behaves similarly to a constant, but can't be used in some contexts "
 "like ``switch`` statements."
 msgstr ""
+"在 C# 中，只有基本型別可以是常數。例如，``TAU`` 常數被替換為 ``Mathf.Tau`` 常"
+"數，但是 ``Vector2.RIGHT`` 常數被替換為 ``Vector2.Right`` 唯讀屬性。這與常數"
+"的行為類似，但不能用於一些本文中，如 ``switch`` 敘述。"
 
-#, fuzzy
 msgid ""
 "Global enum constants were moved to their own enums. For example, ``ERR_*`` "
 "constants were moved to the ``Error`` enum."
 msgstr ""
-"全域常數移至其各自的列舉類型。例如， ``ERR_*`` 常數移動到了 ``Error`` 列舉類"
+"全域常數移至其各自的列舉型別。例如， ``ERR_*`` 常數移動到了 ``Error`` 列舉類"
 "型中。"
 
 msgid "Special cases:"
@@ -70,19 +72,19 @@ msgid "GDScript"
 msgstr "GDScript"
 
 msgid "C#"
-msgstr "\\ C#"
+msgstr "C#"
 
 msgid "``TYPE_*``"
 msgstr "``TYPE_*``"
 
 msgid "``Variant.Type`` enum"
-msgstr "``Variant.Type`` 列舉類型"
+msgstr "``Variant.Type`` 列舉型別"
 
 msgid "``OP_*``"
 msgstr "``OP_*``"
 
 msgid "``Variant.Operator`` enum"
-msgstr "``Variant.Operator`` 列舉類型"
+msgstr "``Variant.Operator`` 列舉型別"
 
 msgid "Math functions"
 msgstr "數學函式"
@@ -100,6 +102,8 @@ msgid ""
 "C# also provides static `System.Math`_ and `System.MathF`_ classes that may "
 "contain other useful mathematical operations."
 msgstr ""
+"C# 也提供靜態 `System.Math`_ 和 `System.MathF`_ 類，它們可能包含其他有用的數"
+"學運算。"
 
 msgid "Random functions"
 msgstr "隨機數函式"
@@ -115,11 +119,12 @@ msgid ""
 "Consider using `System.Random`_ or, if you need cryptographically strong "
 "randomness, `System.Security.Cryptography.RandomNumberGenerator`_."
 msgstr ""
+"考慮使用“System.Random”，或者，如果您需要加密的強隨機性，則使用“System."
+"Security.Cryptography.RandomNumberGenerator”。"
 
 msgid "Other functions"
 msgstr "其他函式"
 
-#, fuzzy
 msgid ""
 "Many other global functions like ``print`` and ``var_to_str`` are located "
 "under ``GD``. Example: ``GD.Print`` and ``GD.VarToStr``."
@@ -133,30 +138,24 @@ msgstr "例外："
 msgid "``weakref(obj)``"
 msgstr "``weakref(obj)``"
 
-#, fuzzy
 msgid "``GodotObject.WeakRef(obj)``"
 msgstr "``Object.WeakRef(obj)``"
 
-#, fuzzy
 msgid "``instance_from_id(id)``"
 msgstr "``is_instance_valid(obj)``"
 
-#, fuzzy
 msgid "``GodotObject.InstanceFromId(id)``"
 msgstr "``Object.IsInstanceValid(obj)``"
 
-#, fuzzy
 msgid "``is_instance_id_valid(id)``"
 msgstr "``is_instance_valid(obj)``"
 
-#, fuzzy
 msgid "``GodotObject.IsInstanceIdValid(id)``"
 msgstr "``Object.IsInstanceValid(obj)``"
 
 msgid "``is_instance_valid(obj)``"
 msgstr "``is_instance_valid(obj)``"
 
-#, fuzzy
 msgid "``GodotObject.IsInstanceValid(obj)``"
 msgstr "``Object.IsInstanceValid(obj)``"
 
@@ -174,709 +173,712 @@ msgstr ""
 msgid "Example:"
 msgstr "範例："
 
-#, fuzzy
 msgid "Full list of equivalences"
 msgstr "完整的定義列表"
 
 msgid "List of Godot's global scope functions and their equivalent in C#:"
-msgstr ""
+msgstr "Godot 的全域作用域函式及其在 C# 中的等效函式列表："
 
-#, fuzzy
 msgid "abs"
-msgstr "\\ as"
+msgstr "abs"
 
-#, fuzzy
 msgid "Mathf.Abs"
-msgstr "數學運算"
+msgstr "Mathf.Abs"
 
 msgid "absf"
-msgstr ""
+msgstr "absf"
 
 msgid "absi"
-msgstr ""
+msgstr "absi"
 
 msgid "acos"
-msgstr ""
+msgstr "acos"
+
+msgid "Mathf.Acos"
+msgstr "Mathf.Acos"
 
 #, fuzzy
-msgid "Mathf.Acos"
-msgstr "數學函式"
+msgid "acosh"
+msgstr "acos"
+
+#, fuzzy
+msgid "Mathf.Acosh"
+msgstr "Mathf.Acos"
+
+#, fuzzy
+msgid "angle_difference"
+msgstr "一般差異"
+
+#, fuzzy
+msgid "Mathf.AngleDifference"
+msgstr "Mathf.LerpAngle"
 
 msgid "asin"
-msgstr ""
+msgstr "asin"
 
 msgid "Mathf.Asin"
-msgstr ""
+msgstr "Mathf.Asin"
+
+#, fuzzy
+msgid "asinh"
+msgstr "asin"
+
+#, fuzzy
+msgid "Mathf.Asinh"
+msgstr "Mathf.Asin"
 
 msgid "atan"
-msgstr ""
+msgstr "atan"
 
 msgid "Mathf.Atan"
-msgstr ""
+msgstr "Mathf.Atan"
 
 msgid "atan2"
-msgstr ""
+msgstr "atan2"
 
 msgid "Mathf.Atan2"
-msgstr ""
+msgstr "Mathf.Atan2"
+
+#, fuzzy
+msgid "atanh"
+msgstr "atan"
+
+#, fuzzy
+msgid "Mathf.Atanh"
+msgstr "Mathf.Atan"
 
 msgid "bezier_derivative"
-msgstr ""
+msgstr "bezier_derivative"
 
 msgid "Mathf.BezierDerivative"
-msgstr ""
+msgstr "Mathf.BezierDerivative"
 
-#, fuzzy
 msgid "bezier_interpolate"
-msgstr "編輯器整合"
+msgstr "bezier_interpolate"
 
 msgid "Mathf.BezierInterpolate"
-msgstr ""
+msgstr "Mathf.BezierInterpolate"
 
 msgid "bytes_to_var"
-msgstr ""
+msgstr "bytes_to_var"
 
 msgid "GD.BytesToVar"
-msgstr ""
+msgstr "GD.BytesToVar"
 
 msgid "bytes_to_var_with_objects"
-msgstr ""
+msgstr "bytes_to_var_with_objects"
 
 msgid "GD.BytesToVarWithObjects"
-msgstr ""
+msgstr "GD.BytesToVarWithObjects"
 
 msgid "ceil"
-msgstr ""
+msgstr "ceil"
 
 msgid "Mathf.Ceil"
-msgstr ""
+msgstr "Mathf.Ceil"
 
 msgid "ceilf"
-msgstr ""
+msgstr "ceilf"
 
 msgid "ceili"
-msgstr ""
+msgstr "ceili"
 
 msgid "Mathf.CeilToInt"
-msgstr ""
+msgstr "Mathf.CeilToInt"
 
 msgid "clamp"
-msgstr ""
+msgstr "clamp"
 
 msgid "Mathf.Clamp"
-msgstr ""
+msgstr "Mathf.Clamp"
 
 msgid "clampf"
-msgstr ""
+msgstr "clampf"
 
 msgid "clampi"
-msgstr ""
+msgstr "clampi"
 
-#, fuzzy
 msgid "cos"
-msgstr "\\ const"
+msgstr "cos"
 
-#, fuzzy
 msgid "Mathf.Cos"
-msgstr "數學運算"
+msgstr "Mathf.Cos"
 
 msgid "cosh"
-msgstr ""
+msgstr "cosh"
 
 msgid "Mathf.Cosh"
-msgstr ""
+msgstr "Mathf.Cosh"
 
 msgid "cubic_interpolate"
-msgstr ""
+msgstr "cubic_interpolate"
+
+msgid "Mathf.CubicInterpolate"
+msgstr "Mathf.CubicInterpolate"
 
 #, fuzzy
-msgid "Mathf.CubicInterpolate"
-msgstr "物理系統介紹"
-
-msgid "cubic_interpoalte_angle"
-msgstr ""
+msgid "cubic_interpolate_angle"
+msgstr "cubic_interpoalte_angle"
 
 msgid "Mathf.CubicInterpolateAngle"
-msgstr ""
+msgstr "Mathf.CubicInterpolateAngle"
 
 msgid "cubic_interpolate_angle_in_time"
-msgstr ""
+msgstr "cubic_interpolate_angle_in_time"
 
 msgid "Mathf.CubicInterpolateInTime"
-msgstr ""
+msgstr "Mathf.CubicInterpolateInTime"
 
 msgid "cubic_interpolate_in_time"
-msgstr ""
+msgstr "cubic_interpolate_in_time"
 
 msgid "Mathf.CubicInterpolateAngleInTime"
-msgstr ""
+msgstr "Mathf.CubicInterpolateAngleInTime"
 
 msgid "db_to_linear"
-msgstr ""
+msgstr "db_to_linear"
 
 msgid "Mathf.DbToLinear"
-msgstr ""
+msgstr "Mathf.DbToLinear"
 
 msgid "deg_to_rad"
-msgstr ""
+msgstr "deg_to_rad"
 
 msgid "Mathf.DegToRad"
-msgstr ""
+msgstr "Mathf.DegToRad"
 
 msgid "ease"
-msgstr ""
+msgstr "ease"
 
 msgid "Mathf.Ease"
-msgstr ""
+msgstr "Mathf.Ease"
 
-#, fuzzy
 msgid "error_string"
-msgstr "字串"
+msgstr "error_string"
 
-#, fuzzy
 msgid "Error.ToString"
-msgstr "字串"
+msgstr "Error.ToString"
 
-#, fuzzy
 msgid "exp"
-msgstr "\\ export"
+msgstr "exp"
 
-#, fuzzy
 msgid "Mathf.Exp"
-msgstr "數學運算"
+msgstr "Mathf.Exp"
 
 msgid "floor"
-msgstr ""
+msgstr "floor"
 
 msgid "Mathf.Floor"
-msgstr ""
+msgstr "Mathf.Floor"
 
 msgid "floorf"
-msgstr ""
+msgstr "floorf"
 
 msgid "floori"
-msgstr ""
+msgstr "floori"
 
 msgid "Mathf.FloorToInt"
-msgstr ""
+msgstr "Mathf.FloorToInt"
 
 msgid "fmod"
-msgstr ""
+msgstr "fmod"
 
-#, fuzzy
 msgid "operator %"
-msgstr "運算子"
+msgstr "operator %"
 
 msgid "fposmod"
-msgstr ""
+msgstr "fposmod"
 
 msgid "Mathf.PosMod"
-msgstr ""
+msgstr "Mathf.PosMod"
 
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
 msgid "GD.Hash"
-msgstr ""
+msgstr "GD.Hash"
 
 msgid "instance_from_id"
-msgstr ""
+msgstr "instance_from_id"
 
 msgid "GodotObject.InstanceFromId"
-msgstr ""
+msgstr "GodotObject.InstanceFromId"
 
 msgid "inverse_lerp"
-msgstr ""
+msgstr "inverse_lerp"
 
 msgid "Mathf.InverseLerp"
-msgstr ""
+msgstr "Mathf.InverseLerp"
 
 msgid "is_equal_approx"
-msgstr ""
+msgstr "is_equal_approx"
 
 msgid "Mathf.IsEqualApprox"
-msgstr ""
+msgstr "Mathf.IsEqualApprox"
 
 msgid "is_finite"
-msgstr ""
+msgstr "is_finite"
 
 msgid "Mathf.IsFinite or `float.IsFinite`_ or `double.IsFinite`_"
-msgstr ""
+msgstr "Mathf.IsFinite or `float.IsFinite`_ or `double.IsFinite`_"
 
-#, fuzzy
 msgid "is_inf"
-msgstr "``is_inf``"
+msgstr "is_inf"
 
 msgid "Mathf.IsInf or `float.IsInfinity`_ or `double.IsInfinity`_"
-msgstr ""
+msgstr "Mathf.IsInf or `float.IsInfinity`_ or `double.IsInfinity`_"
 
-#, fuzzy
 msgid "is_instance_id_valid"
-msgstr "``is_instance_valid(obj)``"
+msgstr "is_instance_id_valid"
 
-#, fuzzy
 msgid "GodotObject.IsInstanceIdValid"
-msgstr "``Object.IsInstanceValid(obj)``"
+msgstr "GodotObject.IsInstanceIdValid"
 
-#, fuzzy
 msgid "is_instance_valid"
-msgstr "``is_instance_valid(obj)``"
+msgstr "is_instance_valid"
 
-#, fuzzy
 msgid "GodotObject.IsInstanceValid"
-msgstr "``Object.IsInstanceValid(obj)``"
+msgstr "GodotObject.IsInstanceValid"
 
-#, fuzzy
 msgid "is_nan"
-msgstr "``is_nan``"
+msgstr "is_nan"
 
 msgid "Mathf.IsNaN or `float.IsNaN`_ or `double.IsNaN`_"
-msgstr ""
+msgstr "Mathf.IsNaN or `float.IsNaN`_ or `double.IsNaN`_"
 
 msgid "is_same"
-msgstr ""
+msgstr "is_same"
 
 msgid "operator == or `object.ReferenceEquals`_"
-msgstr ""
+msgstr "operator == or `object.ReferenceEquals`_"
 
 msgid "is_zero_approx"
-msgstr ""
+msgstr "is_zero_approx"
 
 msgid "Mathf.IsZeroApprox"
-msgstr ""
+msgstr "Mathf.IsZeroApprox"
 
 msgid "lerp"
-msgstr ""
+msgstr "lerp"
 
 msgid "Mathf.Lerp"
-msgstr ""
+msgstr "Mathf.Lerp"
 
 msgid "lerp_angle"
-msgstr ""
+msgstr "lerp_angle"
 
 msgid "Mathf.LerpAngle"
-msgstr ""
+msgstr "Mathf.LerpAngle"
 
 msgid "lerpf"
-msgstr ""
+msgstr "lerpf"
 
 msgid "linear_to_db"
-msgstr ""
+msgstr "linear_to_db"
 
 msgid "Mathf.LinearToDb"
-msgstr ""
+msgstr "Mathf.LinearToDb"
 
-#, fuzzy
 msgid "log"
-msgstr "開發日誌"
+msgstr "log"
 
-#, fuzzy
 msgid "Mathf.Log"
-msgstr "數學運算"
+msgstr "Mathf.Log"
 
 msgid "max"
-msgstr ""
+msgstr "最大值"
 
-#, fuzzy
 msgid "Mathf.Max"
-msgstr "數學運算"
+msgstr "Mathf.Max"
 
 msgid "maxf"
-msgstr ""
+msgstr "maxf"
 
 msgid "maxi"
-msgstr ""
+msgstr "maxi"
 
-#, fuzzy
 msgid "min"
-msgstr "混合"
+msgstr "min"
 
-#, fuzzy
 msgid "Mathf.Min"
-msgstr "數學運算"
+msgstr "Mathf.Min"
 
 msgid "minf"
-msgstr ""
+msgstr "minf"
 
 msgid "mini"
-msgstr ""
+msgstr "mini"
 
 msgid "move_toward"
-msgstr ""
+msgstr "move_toward"
 
 msgid "Mathf.MoveToward"
-msgstr ""
+msgstr "Mathf.MoveToward"
 
 msgid "nearest_po2"
-msgstr ""
+msgstr "nearest_po2"
 
 msgid "Mathf.NearestPo2"
-msgstr ""
+msgstr "Mathf.NearestPo2"
 
 msgid "pingpong"
-msgstr ""
+msgstr "pingpong"
 
 msgid "Mathf.PingPong"
-msgstr ""
+msgstr "Mathf.PingPong"
 
 msgid "posmod"
-msgstr ""
+msgstr "posmod"
 
 msgid "pow"
-msgstr ""
+msgstr "pow"
 
-#, fuzzy
 msgid "Mathf.Pow"
-msgstr "數學運算"
+msgstr "Mathf.Pow"
 
 msgid "print"
-msgstr ""
+msgstr "print"
 
 msgid "GD.Print"
-msgstr ""
+msgstr "GD.Print"
 
 msgid "print_rich"
-msgstr ""
+msgstr "print_rich"
 
 msgid "GD.PrintRich"
-msgstr ""
+msgstr "GD.PrintRich"
 
 msgid "print_verbose"
-msgstr ""
+msgstr "print_verbose"
 
 msgid "Use OS.IsStdoutVerbose and GD.Print"
-msgstr ""
+msgstr "Use OS.IsStdoutVerbose and GD.Print"
 
 msgid "printerr"
-msgstr ""
+msgstr "printerr"
 
 msgid "GD.PrintErr"
-msgstr ""
+msgstr "GD.PrintErr"
 
 msgid "printraw"
-msgstr ""
+msgstr "printraw"
 
 msgid "GD.PrintRaw"
-msgstr ""
+msgstr "GD.PrintRaw"
 
-#, fuzzy
 msgid "prints"
-msgstr "匯入小提示"
+msgstr "prints"
 
 msgid "GD.PrintS"
-msgstr ""
+msgstr "GD.PrintS"
 
-#, fuzzy
 msgid "printt"
-msgstr "印出文字"
+msgstr "printt"
 
 msgid "GD.PrintT"
-msgstr ""
+msgstr "GD.PrintT"
 
 msgid "push_error"
-msgstr ""
+msgstr "push_error"
 
 msgid "GD.PushError"
-msgstr ""
+msgstr "GD.PushError"
 
 msgid "push_warning"
-msgstr ""
+msgstr "push_warning"
 
 msgid "GD.PushWarning"
-msgstr ""
+msgstr "GD.PushWarning"
 
 msgid "rad_to_deg"
-msgstr ""
+msgstr "rad_to_deg"
 
 msgid "Mathf.RadToDeg"
-msgstr ""
+msgstr "Mathf.RadToDeg"
 
 msgid "rand_from_seed"
-msgstr ""
+msgstr "rand_from_seed"
 
 msgid "GD.RandFromSeed"
-msgstr ""
+msgstr "GD.RandFromSeed"
 
 msgid "randf"
-msgstr ""
+msgstr "randf"
 
 msgid "GD.Randf"
-msgstr ""
+msgstr "GD.Randf"
 
 msgid "randf_range"
-msgstr ""
+msgstr "randf_range"
 
 msgid "GD.RandRange"
-msgstr ""
+msgstr "GD.RandRange"
 
 msgid "randfn"
-msgstr ""
+msgstr "randfn"
 
 msgid "GD.Randfn"
-msgstr ""
+msgstr "GD.Randfn"
 
 msgid "randi"
-msgstr ""
+msgstr "randi"
 
 msgid "GD.Randi"
-msgstr ""
+msgstr "GD.Randi"
 
 msgid "randi_range"
-msgstr ""
+msgstr "randi_range"
 
-#, fuzzy
 msgid "randomize"
-msgstr "隨機數函式"
+msgstr "randomize"
 
-#, fuzzy
 msgid "GD.Randomize"
-msgstr "隨機數函式"
+msgstr "GD.Randomize"
 
-#, fuzzy
 msgid "remap"
-msgstr "色調圖"
+msgstr "remap"
 
 msgid "Mathf.Remap"
-msgstr ""
+msgstr "Mathf.Remap"
 
 msgid "rid_allocate_id"
-msgstr ""
+msgstr "rid_allocate_id"
 
-#, fuzzy
 msgid "N/A"
-msgstr "\\ NAN"
+msgstr "N/A"
 
 msgid "rid_from_int64"
-msgstr ""
+msgstr "rid_from_int64"
 
 #, fuzzy
+msgid "rotate_toward"
+msgstr "move_toward"
+
+#, fuzzy
+msgid "Mathf.RotateToward"
+msgstr "Mathf.MoveToward"
+
 msgid "round"
-msgstr "背景"
+msgstr "round"
 
 msgid "Mathf.Round"
-msgstr ""
+msgstr "Mathf.Round"
 
-#, fuzzy
 msgid "roundf"
-msgstr "背景"
+msgstr "roundf"
 
-#, fuzzy
 msgid "roundi"
-msgstr "背景"
+msgstr "roundi"
 
-#, fuzzy
 msgid "Mathf.RoundToInt"
-msgstr "數學函式"
+msgstr "Mathf.RoundToInt"
 
 msgid "seed"
-msgstr ""
+msgstr "seed"
 
 msgid "GD.Seed"
-msgstr ""
+msgstr "GD.Seed"
 
-#, fuzzy
 msgid "sign"
-msgstr "\\ signal"
+msgstr "sign"
 
 msgid "Mathf.Sign"
-msgstr ""
+msgstr "Mathf.Sign"
 
-#, fuzzy
 msgid "signf"
-msgstr "\\ signal"
+msgstr "signf"
 
-#, fuzzy
 msgid "signi"
-msgstr "\\ signal"
+msgstr "signi"
 
-#, fuzzy
 msgid "sin"
-msgstr "字串"
+msgstr "sin"
 
-#, fuzzy
 msgid "Mathf.Sin"
-msgstr "數學運算"
+msgstr "Mathf.Sin"
 
 msgid "sinh"
-msgstr ""
+msgstr "sinh"
 
 msgid "Mathf.Sinh"
-msgstr ""
+msgstr "Mathf.Sinh"
 
 msgid "smoothstep"
-msgstr ""
+msgstr "smoothstep"
 
 msgid "Mathf.SmoothStep"
-msgstr ""
+msgstr "Mathf.SmoothStep"
 
 msgid "snapped"
-msgstr ""
+msgstr "snapped"
 
 msgid "Mathf.Snapped"
-msgstr ""
+msgstr "Mathf.Snapped"
 
 msgid "snappedf"
-msgstr ""
+msgstr "snappedf"
 
 msgid "snappedi"
-msgstr ""
+msgstr "snappedi"
 
 msgid "sqrt"
-msgstr ""
+msgstr "sqrt"
 
 msgid "Mathf.Sqrt"
-msgstr ""
+msgstr "Mathf.Sqrt"
 
 msgid "step_decimals"
-msgstr ""
+msgstr "step_decimals"
 
 msgid "Mathf.StepDecimals"
+msgstr "Mathf.StepDecimals"
+
+msgid "str"
+msgstr "str"
+
+msgid "Use `$ string interpolation`_"
+msgstr "Use `$ string interpolation`_"
+
+msgid "str_to_var"
+msgstr "str_to_var"
+
+msgid "GD.StrToVar"
+msgstr "GD.StrToVar"
+
+msgid "tan"
+msgstr "tan"
+
+msgid "Mathf.Tan"
+msgstr "Mathf.Tan"
+
+msgid "tanh"
+msgstr "tanh"
+
+msgid "Mathf.Tanh"
+msgstr "Mathf.Tanh"
+
+#, fuzzy
+msgid "type_convert"
+msgstr "convert"
+
+msgid "Variant.As<T> or GD.Convert"
 msgstr ""
 
 #, fuzzy
-msgid "str"
+msgid "type_string"
 msgstr "字串"
 
 #, fuzzy
-msgid "Use `$ string interpolation`_"
-msgstr "創建內容"
+msgid "Variant.Type.ToString"
+msgstr "變體"
 
-msgid "str_to_var"
-msgstr ""
-
-msgid "GD.StrToVar"
-msgstr ""
-
-#, fuzzy
-msgid "tan"
-msgstr "與"
-
-#, fuzzy
-msgid "Mathf.Tan"
-msgstr "數學運算"
-
-msgid "tanh"
-msgstr ""
-
-msgid "Mathf.Tanh"
-msgstr ""
-
-#, fuzzy
 msgid "typeof"
-msgstr "\\ ``type``"
+msgstr "typeof"
 
-#, fuzzy
 msgid "Variant.VariantType"
-msgstr "``Variant.Type`` 列舉類型"
+msgstr "Variant.VariantType"
 
 msgid "var_to_bytes"
-msgstr ""
+msgstr "var_to_bytes"
 
 msgid "GD.VarToBytes"
-msgstr ""
+msgstr "GD.VarToBytes"
 
 msgid "var_to_bytes_with_objects"
-msgstr ""
+msgstr "var_to_bytes_with_objects"
 
 msgid "GD.VarToBytesWithObjects"
-msgstr ""
+msgstr "GD.VarToBytesWithObjects"
 
 msgid "var_to_str"
-msgstr ""
+msgstr "var_to_str"
 
 msgid "GD.VarToStr"
-msgstr ""
+msgstr "GD.VarToStr"
 
-#, fuzzy
 msgid "weakref"
-msgstr "``weakref(obj)``"
+msgstr "weakref"
 
-#, fuzzy
 msgid "GodotObject.WeakRef"
-msgstr "``Object.WeakRef(obj)``"
+msgstr "GodotObject.WeakRef"
 
 msgid "wrap"
-msgstr ""
+msgstr "wrap"
 
 msgid "Mathf.Wrap"
-msgstr ""
+msgstr "Mathf.Wrap"
 
 msgid "wrapf"
-msgstr ""
+msgstr "wrapf"
 
 msgid "wrapi"
-msgstr ""
+msgstr "wrapi"
 
 msgid "List of GDScript utility functions and their equivalent in C#:"
-msgstr ""
+msgstr "List of GDScript utility functions and their equivalent in C#:"
 
 msgid "assert"
-msgstr "\\ assert"
+msgstr "assert"
 
 msgid "`System.Diagnostics.Debug.Assert`_"
-msgstr ""
+msgstr "`System.Diagnostics.Debug.Assert`_"
 
 msgid "char"
-msgstr ""
+msgstr "char"
 
 msgid "Use explicit conversion: ``(char)65``"
-msgstr ""
+msgstr "Use explicit conversion: ``(char)65``"
 
 msgid "convert"
-msgstr ""
+msgstr "convert"
 
 msgid "GD.Convert"
-msgstr ""
+msgstr "GD.Convert"
 
-#, fuzzy
 msgid "dict_to_inst"
-msgstr "``dict2inst``"
+msgstr "dict_to_inst"
 
 msgid "get_stack"
-msgstr ""
+msgstr "get_stack"
 
 msgid "`System.Environment.StackTrace`_"
-msgstr ""
+msgstr "`System.Environment.StackTrace`_"
 
-#, fuzzy
 msgid "inst_to_dict"
-msgstr "``inst2dict``"
+msgstr "inst_to_dict"
 
-#, fuzzy
 msgid "len"
-msgstr "\\ en"
+msgstr "len"
 
-#, fuzzy
 msgid "load"
-msgstr "\\ preload"
+msgstr "load"
 
 msgid "GD.Load"
-msgstr ""
+msgstr "GD.Load"
 
 msgid "preload"
-msgstr "\\ preload"
+msgstr "preload"
 
 msgid "print_debug"
-msgstr ""
+msgstr "print_debug"
 
 msgid "print_stack"
-msgstr ""
+msgstr "print_stack"
 
 msgid "GD.Print(`System.Environment.StackTrace`_)"
-msgstr ""
+msgstr "GD.Print(`System.Environment.StackTrace`_)"
 
-#, fuzzy
 msgid "range"
-msgstr "改動"
+msgstr "range"
 
 msgid "GD.Range or `System.Linq.Enumerable.Range`_"
-msgstr ""
+msgstr "GD.Range or `System.Linq.Enumerable.Range`_"
 
 msgid "type_exists"
-msgstr ""
+msgstr "type_exists"
 
 msgid "ClassDB.ClassExists(type)"
-msgstr ""
+msgstr "ClassDB.ClassExists(type)"
 
 msgid ""
 "``preload``, as it works in GDScript, is not available in C#. Use ``GD."
@@ -885,11 +887,9 @@ msgstr ""
 "在 GDScript 中可用的 ``preload`` 無法於 C# 中使用。請使用 ``GD.Load`` 或 "
 "``ResourceLoader.Load`` 代替。"
 
-#, fuzzy
 msgid "``@export`` annotation"
 msgstr "匯出選項"
 
-#, fuzzy
 msgid ""
 "Use the ``[Export]`` attribute instead of the GDScript ``@export`` "
 "annotation. This attribute can also be provided with optional :ref:"
@@ -900,15 +900,12 @@ msgstr ""
 "加上可選的 :ref:`PropertyHint<enum_@GlobalScope_PropertyHint>` 與 "
 "``hintString`` 參數。預設值可以通過指派數值來設定。"
 
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_exports`."
 msgstr "參見 :ref:`c_sharp_signals` 。"
 
-#, fuzzy
 msgid "``signal`` keyword"
 msgstr "訊號關鍵字"
 
-#, fuzzy
 msgid ""
 "Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
 "``signal`` keyword. This attribute should be used on a `delegate`, whose "
@@ -918,24 +915,26 @@ msgid ""
 "``EmitSignal``."
 msgstr ""
 "使用 ``[Signal]`` 屬性來取代 GDScript 中的 ``signal`` 關鍵字宣告訊號。這個屬"
-"性也可以用在 **delegate`` 上，其名稱簽名會用來定義訊號。"
+"性也可以用在 **delegate`` 上，其名稱簽章會用來定義訊號。"
 
 msgid "See also: :ref:`doc_c_sharp_signals`."
 msgstr "參見 :ref:`c_sharp_signals` 。"
 
 msgid "`@onready` annotation"
-msgstr ""
+msgstr "`@onready` 註釋"
 
 msgid ""
 "GDScript has the ability to defer the initialization of a member variable "
 "until the ready function is called with `@onready` (cf. :ref:"
 "`doc_gdscript_onready_annotation`). For example:"
 msgstr ""
+"GDScript能夠推遲成員變數的初始化, 直到用 `onready` 呼叫ready函式(參見 :ref:"
+"`doc_gdscript_onready_keyword` ). 例如:"
 
 msgid ""
 "However C# does not have this ability. To achieve the same effect you need "
 "to do this."
-msgstr ""
+msgstr "然而C#沒有這個能力. 為了達到同樣的效果, 你需要這樣做."
 
 msgid "Singletons"
 msgstr "單例"
@@ -948,7 +947,6 @@ msgstr ""
 "單例為靜態類別，而不是使用單例模式。這樣可以讓程式碼比起使用 ``Instance`` 屬"
 "性來得簡單。"
 
-#, fuzzy
 msgid ""
 "However, in some very rare cases this is not enough. For example, you may "
 "want to access a member from the base class ``GodotObject``, like "
@@ -956,14 +954,13 @@ msgid ""
 "``Singleton`` that returns the singleton instance. The type of this instance "
 "is ``GodotObject``."
 msgstr ""
-"但，在某些罕見情況下，這樣還不夠。如，我們可能需要存取基礎類型 ``Godot."
+"但，在某些罕見情況下，這樣還不夠。如，我們可能需要存取基礎型別 ``Godot."
 "Object`` 中的成員，如 ``Connect`` 。這種情況下，可以使用一個靜態屬性，名為 "
 "``Singleton`` ，這個屬性會回傳單例實體。該實體的型別為 ``Godot.Object`` 。"
 
 msgid "String"
 msgstr "字串"
 
-#, fuzzy
 msgid ""
 "Use ``System.String`` (``string``). Most of Godot's String methods have an "
 "equivalent in ``System.String`` or are provided by the ``StringExtensions`` "
@@ -978,433 +975,440 @@ msgid ""
 "modifications applied. To avoid creating multiple string allocations "
 "consider using a `StringBuilder`_."
 msgstr ""
+"字串在 .NET 中是不可變的，因此操作字串的所有方法都不會修改原始字串，而是傳回"
+"應用了修改的新建立的字串。為了避免建立多個字串分配，請考慮使"
+"用“StringBuilder”。"
 
 msgid "List of Godot's String methods and their equivalent in C#:"
-msgstr ""
+msgstr "Godot 的 String 方法及其在 C# 中的等效方法列表："
 
 msgid "begins_with"
-msgstr ""
+msgstr "begins_with"
 
 msgid "`string.StartsWith`_"
-msgstr ""
+msgstr "`string.StartsWith`_"
 
 msgid "bigrams"
-msgstr ""
+msgstr "bigrams"
 
 msgid "StringExtensions.Bigrams"
-msgstr ""
+msgstr "StringExtensions.Bigrams"
 
 msgid "bin_to_int"
-msgstr ""
+msgstr "bin_to_int"
 
 msgid "StringExtensions.BinToInt"
-msgstr ""
+msgstr "StringExtensions.BinToInt"
 
 msgid "c_escape"
-msgstr ""
+msgstr "c_escape"
 
 msgid "StringExtensions.CEscape"
-msgstr ""
+msgstr "StringExtensions.CEscape"
 
 msgid "c_unescape"
-msgstr ""
+msgstr "c_unescape"
 
 msgid "StringExtensions.CUnescape"
-msgstr ""
+msgstr "StringExtensions.CUnescape"
 
-#, fuzzy
 msgid "capitalize"
 msgstr "首字母大寫"
 
 msgid "StringExtensions.Capitalize"
-msgstr ""
+msgstr "StringExtensions.Capitalize"
 
 msgid "casecmp_to"
-msgstr ""
+msgstr "casecmp_to"
 
 msgid ""
 "StringExtensions.CasecmpTo or StringExtensions.CompareTo (Consider using "
 "`string.Equals`_ or `string.Compare`_)"
 msgstr ""
+"StringExtensions.CasecmpTo 或 StringExtensions.CompareTo（考慮使用 `string."
+"Equals`_ 或 `string.Compare`_）"
 
 msgid "chr"
-msgstr ""
+msgstr "chr"
 
-#, fuzzy
 msgid "contains"
 msgstr "continue"
 
-#, fuzzy
 msgid "`string.Contains`_"
-msgstr "創建內容"
+msgstr "建立內容"
 
-#, fuzzy
 msgid "count"
 msgstr "數量"
 
 msgid "StringExtensions.Count (Consider using `RegEx`_)"
-msgstr ""
+msgstr "StringExtensions.Count（考慮使用 `RegEx`_）"
 
-#, fuzzy
 msgid "countn"
 msgstr "數量"
 
 msgid "StringExtensions.CountN (Consider using `RegEx`_)"
-msgstr ""
+msgstr "StringExtensions.CountN（考慮使用 `RegEx`_）"
 
 msgid "dedent"
-msgstr ""
+msgstr "dedent"
 
 msgid "StringExtensions.Dedent"
-msgstr ""
+msgstr "StringExtensions.Dedent"
 
 msgid "ends_with"
-msgstr ""
+msgstr "ends_with"
 
 msgid "`string.EndsWith`_"
-msgstr ""
+msgstr "`string.EndsWith`_"
 
-#, fuzzy
 msgid "erase"
 msgstr "攝影機"
 
 msgid ""
 "`string.Remove`_ (Consider using `StringBuilder`_ to manipulate strings)"
-msgstr ""
+msgstr "`string.Remove`_ （考慮使用 `StringBuilder`_ 來操作字串）"
 
 msgid "find"
-msgstr ""
+msgstr "find"
 
 msgid ""
 "StringExtensions.Find (Consider using `string.IndexOf`_ or `string."
 "IndexOfAny`_)"
 msgstr ""
+"StringExtensions.Find（考慮使用 `string.IndexOf`_ 或 `string.IndexOfAny`_）"
 
 msgid "findn"
-msgstr ""
+msgstr "findn"
 
 msgid ""
 "StringExtensions.FindN (Consider using `string.IndexOf`_ or `string."
 "IndexOfAny`_)"
 msgstr ""
+"StringExtensions.FindN（考慮使用 `string.IndexOf`_ 或 `string.IndexOfAny`_）"
 
-#, fuzzy
 msgid "format"
 msgstr "格式"
 
 msgid "get_base_dir"
-msgstr ""
+msgstr "get_base_dir"
 
 msgid "StringExtensions.GetBaseDir"
-msgstr ""
+msgstr "StringExtensions.GetBaseDir"
 
 msgid "get_basename"
-msgstr ""
+msgstr "get_basename"
 
 msgid "StringExtensions.GetBaseName"
-msgstr ""
+msgstr "StringExtensions.GetBaseName"
 
-#, fuzzy
 msgid "get_extension"
-msgstr "\\ extends"
+msgstr "get_extension"
 
 msgid "StringExtensions.GetExtension"
-msgstr ""
+msgstr "StringExtensions.GetExtension"
 
 msgid "get_file"
-msgstr ""
+msgstr "get_file"
 
 msgid "StringExtensions.GetFile"
-msgstr ""
+msgstr "StringExtensions.GetFile"
 
 msgid "get_slice"
-msgstr ""
+msgstr "get_slice"
 
 msgid "get_slice_count"
-msgstr ""
+msgstr "get_slice_count"
 
 msgid "get_slicec"
-msgstr ""
+msgstr "get_slicec"
 
 msgid ""
 "StringExtensions.Hash (Consider using `object.GetHashCode`_ unless you need "
 "to guarantee the same behavior as in GDScript)"
 msgstr ""
+"StringExtensions.Hash（考慮使用 `object.GetHashCode`_ 除非您需要保證與 "
+"GDScript 中相同的行為）"
 
 msgid "hex_decode"
-msgstr ""
+msgstr "hex_decode"
 
 msgid ""
 "StringExtensions.HexDecode (Consider using `System.Convert.FromHexString`_)"
-msgstr ""
+msgstr "StringExtensions.HexDecode（考慮使用`System.Convert.FromHexString`_）"
 
 msgid "hex_to_int"
-msgstr ""
+msgstr "hex_to_int"
 
 msgid ""
 "StringExtensions.HexToInt (Consider using `int.Parse`_ or `long.Parse`_ with "
 "`System.Globalization.NumberStyles.HexNumber`_)"
 msgstr ""
+"StringExtensions.HexToInt（考慮將 `int.Parse`_ 或 `long.Parse`_ 與 `System."
+"Globalization.NumberStyles.HexNumber`_ 一起使用）"
 
 msgid "humanize_size"
-msgstr ""
+msgstr "humanize_size"
 
-#, fuzzy
 msgid "indent"
 msgstr "索引"
 
 msgid "StringExtensions.Indent"
-msgstr ""
+msgstr "StringExtensions.Indent"
 
-#, fuzzy
 msgid "insert"
-msgstr "\\ assert"
+msgstr "insert"
 
 msgid ""
 "`string.Insert`_ (Consider using `StringBuilder`_ to manipulate strings)"
-msgstr ""
+msgstr "`string.Insert`_ （考慮使用 `StringBuilder`_ 來操作字串）"
 
 msgid "is_absolute_path"
-msgstr ""
+msgstr "is_absolute_path"
 
 msgid "StringExtensions.IsAbsolutePath"
-msgstr ""
+msgstr "StringExtensions.IsAbsolutePath"
 
 msgid "is_empty"
-msgstr ""
+msgstr "is_empty"
 
 msgid "`string.IsNullOrEmpty`_ or `string.IsNullOrWhiteSpace`_"
-msgstr ""
+msgstr "`string.IsNullOrEmpty`_ 或 `string.IsNullOrWhiteSpace`_"
 
 msgid "is_relative_path"
-msgstr ""
+msgstr "is_relative_path"
 
 msgid "StringExtensions.IsRelativePath"
-msgstr ""
+msgstr "StringExtensions.IsRelativePath"
 
 msgid "is_subsequence_of"
-msgstr ""
+msgstr "is_subsequence_of"
 
 msgid "StringExtensions.IsSubsequenceOf"
-msgstr ""
+msgstr "StringExtensions.IsSubsequenceOf"
 
 msgid "is_subsequence_ofn"
-msgstr ""
+msgstr "is_subsequence_ofn"
 
 msgid "StringExtensions.IsSubsequenceOfN"
-msgstr ""
+msgstr "StringExtensions.IsSubsequenceOfN"
 
 msgid "is_valid_filename"
-msgstr ""
+msgstr "is_valid_filename"
 
 msgid "StringExtensions.IsValidFileName"
-msgstr ""
+msgstr "StringExtensions.IsValidFileName"
 
 msgid "is_valid_float"
-msgstr ""
+msgstr "is_valid_float"
 
 msgid ""
 "StringExtensions.IsValidFloat (Consider using `float.TryParse`_ or `double."
 "TryParse`_)"
 msgstr ""
+"StringExtensions.IsValidFloat（請考慮使用 `float.TryParse`_ 或 `double."
+"TryParse`_）"
 
 msgid "is_valid_hex_number"
-msgstr ""
+msgstr "is_valid_hex_number"
 
 msgid "StringExtensions.IsValidHexNumber"
-msgstr ""
+msgstr "StringExtensions.IsValidHexNumber"
 
 msgid "is_valid_html_color"
-msgstr ""
+msgstr "is_valid_html_color"
 
 msgid "StringExtensions.IsValidHtmlColor"
-msgstr ""
+msgstr "StringExtensions.IsValidHtmlColor"
 
-#, fuzzy
 msgid "is_valid_identifier"
 msgstr "識別項"
 
 msgid "StringExtensions.IsValidIdentifier"
-msgstr ""
+msgstr "StringExtensions.IsValidIdentifier"
 
 msgid "is_valid_int"
-msgstr ""
+msgstr "is_valid_int"
 
 msgid ""
 "StringExtensions.IsValidInt (Consider using `int.TryParse`_ or `long."
 "TryParse`_)"
 msgstr ""
+"StringExtensions.IsValidInt（請考慮使用 `int.TryParse`_ 或 `long.TryParse`_）"
 
 msgid "is_valid_ip_address"
-msgstr ""
+msgstr "is_valid_ip_address"
 
 msgid "StringExtensions.IsValidIPAddress"
-msgstr ""
+msgstr "StringExtensions.IsValidIPAddress"
 
 msgid "join"
-msgstr ""
+msgstr "join"
 
-#, fuzzy
 msgid "`string.Join`_"
 msgstr "字串"
 
 msgid "json_escape"
-msgstr ""
+msgstr "json_escape"
 
 msgid "StringExtensions.JSONEscape"
-msgstr ""
+msgstr "StringExtensions.JSONEscape"
 
 msgid "left"
-msgstr ""
+msgstr "left"
 
 msgid ""
 "StringExtensions.Left (Consider using `string.Substring`_ or `string."
 "AsSpan`_)"
 msgstr ""
+"StringExtensions.Left（請考慮使用 `string.Substring`_ 或 `string.AsSpan`_）"
 
-#, fuzzy
 msgid "length"
 msgstr "每行字數限制"
 
-#, fuzzy
 msgid "`string.Length`_"
 msgstr "每行字數限制"
 
 msgid "lpad"
-msgstr ""
+msgstr "lpad"
 
 msgid "`string.PadLeft`_"
-msgstr ""
+msgstr "`string.PadLeft`_"
 
-#, fuzzy
 msgid "lstrip"
 msgstr "字串"
 
 msgid "`string.TrimStart`_"
-msgstr ""
+msgstr "`string.TrimStart`_"
 
 msgid "match"
 msgstr "match"
 
 msgid "StringExtensions.Match (Consider using `RegEx`_)"
-msgstr ""
+msgstr "StringExtensions.Match（請考慮使用 `RegEx`_）"
 
-#, fuzzy
 msgid "matchn"
 msgstr "match"
 
 msgid "StringExtensions.MatchN (Consider using `RegEx`_)"
-msgstr ""
+msgstr "StringExtensions.MatchN（請考慮使用 `RegEx`_）"
 
 msgid "md5_buffer"
-msgstr ""
+msgstr "md5_buffer"
 
 msgid ""
 "StringExtensions.Md5Buffer (Consider using `System.Security.Cryptography.MD5."
 "HashData`_)"
 msgstr ""
+"StringExtensions.Md5Buffer（請考慮使用 `System.Security.Cryptography.MD5."
+"HashData`_）"
 
 msgid "md5_text"
-msgstr ""
+msgstr "md5_text"
 
 msgid ""
 "StringExtensions.Md5Text (Consider using `System.Security.Cryptography.MD5."
 "HashData`_ with StringExtensions.HexEncode)"
 msgstr ""
+"StringExtensions.Md5Text（請考慮使用 `System.Security.Cryptography.MD5."
+"HashData`_ 和 StringExtensions.HexEncode）"
 
 msgid "naturalnocasecmp_to"
-msgstr ""
+msgstr "naturalnocasecmp_to"
 
 msgid "N/A (Consider using `string.Equals`_ or `string.Compare`_)"
-msgstr ""
+msgstr "N/A（請考慮使用 `string.Equals`_ 或 `string.Compare`_）"
 
 msgid "nocasecmp_to"
-msgstr ""
+msgstr "nocasecmp_to"
 
 msgid ""
 "StringExtensions.NocasecmpTo or StringExtensions.CompareTo (Consider using "
 "`string.Equals`_ or `string.Compare`_)"
 msgstr ""
+"StringExtensions.NocasecmpTo 或 StringExtensions.CompareTo（請考慮使用 "
+"`string.Equals`_ 或 `string.Compare`_）"
 
-#, fuzzy
 msgid "num"
-msgstr "\\ enum"
+msgstr "num"
 
 msgid "`float.ToString`_ or `double.ToString`_"
-msgstr ""
+msgstr "`float.ToString`_ 或 `double.ToString`_"
 
 msgid "num_int64"
-msgstr ""
+msgstr "num_int64"
 
 msgid "`int.ToString`_ or `long.ToString`_"
-msgstr ""
+msgstr "`int.ToString`_ 或 `long.ToString`_"
 
 msgid "num_scientific"
-msgstr ""
+msgstr "num_scientific"
 
 msgid "num_uint64"
-msgstr ""
+msgstr "num_uint64"
 
 msgid "`uint.ToString`_ or `ulong.ToString`_"
-msgstr ""
+msgstr "`uint.ToString`_ 或 `ulong.ToString`_"
 
 msgid "pad_decimals"
-msgstr ""
+msgstr "pad_decimals"
 
 msgid "StringExtensions.PadDecimals"
-msgstr ""
+msgstr "StringExtensions.PadDecimals"
 
 msgid "pad_zeros"
-msgstr ""
+msgstr "pad_zeros"
 
 msgid "StringExtensions.PadZeros"
-msgstr ""
+msgstr "StringExtensions.PadZeros"
 
 msgid "path_join"
-msgstr ""
+msgstr "path_join"
 
 msgid "StringExtensions.PathJoin"
-msgstr ""
+msgstr "StringExtensions.PathJoin"
 
-#, fuzzy
 msgid "repeat"
 msgstr "重覆"
 
 msgid "Use `string constructor`_ or a `StringBuilder`_"
-msgstr ""
+msgstr "請使用 `string constructor`_ 或 `StringBuilder`_"
 
-#, fuzzy
 msgid "replace"
 msgstr "取代"
 
 msgid "`string.Replace`_ or `RegEx`_"
-msgstr ""
+msgstr "`string.Replace`_ 或 `RegEx`_"
 
-#, fuzzy
 msgid "replacen"
 msgstr "取代"
 
 msgid ""
 "StringExtensions.ReplaceN (Consider using `string.Replace`_ or `RegEx`_)"
-msgstr ""
+msgstr "StringExtensions.ReplaceN（請考慮使用 `string.Replace`_ 或 `RegEx`_）"
+
+msgid "reverse"
+msgstr "reverse"
 
 msgid "rfind"
-msgstr ""
+msgstr "rfind"
 
 msgid ""
 "StringExtensions.RFind (Consider using `string.LastIndexOf`_ or `string."
 "LastIndexOfAny`_)"
 msgstr ""
+"StringExtensions.RFind（請考慮使用 `string.LastIndexOf`_ 或 `string."
+"LastIndexOfAny`_）"
 
 msgid "rfindn"
-msgstr ""
+msgstr "rfindn"
 
 msgid ""
 "StringExtensions.RFindN (Consider using `string.LastIndexOf`_ or `string."
 "LastIndexOfAny`_)"
 msgstr ""
+"StringExtensions.RFindN（請考慮使用 `string.LastIndexOf`_ 或 `string."
+"LastIndexOfAny`_）"
 
-#, fuzzy
 msgid "right"
 msgstr "光照"
 
@@ -1412,116 +1416,128 @@ msgid ""
 "StringExtensions.Right (Consider using `string.Substring`_ or `string."
 "AsSpan`_)"
 msgstr ""
+"StringExtensions.Right（請考慮使用 `string.Substring`_ 或 `string.AsSpan`_）"
 
 msgid "rpad"
-msgstr ""
+msgstr "rpad"
 
 msgid "`string.PadRight`_"
-msgstr ""
+msgstr "`string.PadRight`_"
 
 msgid "rsplit"
-msgstr ""
+msgstr "rsplit"
 
-#, fuzzy
 msgid "rstrip"
 msgstr "字串"
 
 msgid "`string.TrimEnd`_"
-msgstr ""
+msgstr "`string.TrimEnd`_"
 
 msgid "sha1_buffer"
-msgstr ""
+msgstr "sha1_buffer"
 
 msgid ""
 "StringExtensions.Sha1Buffer (Consider using `System.Security.Cryptography."
 "SHA1.HashData`_)"
 msgstr ""
+"StringExtensions.Sha1Buffer（請考慮使用 `System.Security.Cryptography.SHA1."
+"HashData`_）"
 
 msgid "sha1_text"
-msgstr ""
+msgstr "sha1_text"
 
 msgid ""
 "StringExtensions.Sha1Text (Consider using `System.Security.Cryptography.SHA1."
 "HashData`_ with StringExtensions.HexEncode)"
 msgstr ""
+"StringExtensions.Sha1Text（請考慮使用 `System.Security.Cryptography.SHA1."
+"HashData`_ 和 StringExtensions.HexEncode）"
 
 msgid "sha256_buffer"
-msgstr ""
+msgstr "sha256_buffer"
 
 msgid ""
 "StringExtensions.Sha256Buffer (Consider using `System.Security.Cryptography."
 "SHA256.HashData`_)"
 msgstr ""
+"StringExtensions.Sha256Buffer（請考慮使用 `System.Security.Cryptography."
+"SHA256.HashData`_）"
 
 msgid "sha256_text"
-msgstr ""
+msgstr "sha256_text"
 
 msgid ""
 "StringExtensions.Sha256Text (Consider using `System.Security.Cryptography."
 "SHA256.HashData`_ with StringExtensions.HexEncode)"
 msgstr ""
+"StringExtensions.Sha256Text（請考慮使用 `System.Security.Cryptography.SHA256."
+"HashData`_ 和 StringExtensions.HexEncode）"
 
 msgid "similarity"
-msgstr ""
+msgstr "similarity"
 
 msgid "StringExtensions.Similarity"
-msgstr ""
+msgstr "StringExtensions.Similarity"
 
 msgid "simplify_path"
-msgstr ""
+msgstr "simplify_path"
 
 msgid "StringExtensions.SimplifyPath"
-msgstr ""
+msgstr "StringExtensions.SimplifyPath"
 
 msgid "split"
-msgstr ""
+msgstr "split"
 
 msgid "StringExtensions.Split (Consider using `string.Split`_)"
-msgstr ""
+msgstr "StringExtensions.Split（請考慮使用 `string.Split`_）"
 
 msgid "split_floats"
-msgstr ""
+msgstr "split_floats"
 
 msgid "StringExtensions.SplitFloat"
-msgstr ""
+msgstr "StringExtensions.SplitFloat"
 
 msgid "strip_edges"
-msgstr ""
+msgstr "strip_edges"
 
 msgid ""
 "StringExtensions.StripEdges (Consider using `string.Trim`_, `string."
 "TrimStart`_ or `string.TrimEnd`_)"
 msgstr ""
+"StringExtensions.StripEdges（請考慮使用 `string.Trim`_、`string.TrimStart`_、"
+"`string.TrimEnd`_）"
 
 msgid "strip_escapes"
-msgstr ""
+msgstr "strip_escapes"
 
 msgid "StringExtensions.StripEscapes"
-msgstr ""
+msgstr "StringExtensions.StripEscapes"
 
 msgid "substr"
-msgstr ""
+msgstr "substr"
 
 msgid ""
 "StringExtensions.Substr (Consider using `string.Substring`_ or `string."
 "AsSpan`_)"
 msgstr ""
+"StringExtensions.Substr（請考慮使用 `string.Substring`_ 或 `string.AsSpan`_）"
 
 msgid "to_ascii_buffer"
-msgstr ""
+msgstr "to_ascii_buffer"
 
 msgid ""
 "StringExtensions.ToAsciiBuffer (Consider using `System.Text.Encoding.ASCII."
 "GetBytes`_)"
 msgstr ""
+"StringExtensions.ToAsciiBuffer（請考慮使用 `System.Text.Encoding.ASCII."
+"GetBytes`_）"
 
 msgid "to_camel_case"
-msgstr ""
+msgstr "to_camel_case"
 
 msgid "StringExtensions.ToCamelCase"
-msgstr ""
+msgstr "StringExtensions.ToCamelCase"
 
-#, fuzzy
 msgid "to_float"
 msgstr "浮點數"
 
@@ -1529,183 +1545,205 @@ msgid ""
 "StringExtensions.ToFloat (Consider using `float.TryParse`_ or `double."
 "TryParse`_)"
 msgstr ""
+"StringExtensions.ToFloat（請考慮使用 `float.TryParse`_ 或 `double."
+"TryParse`_）"
 
 msgid "to_int"
-msgstr ""
+msgstr "to_int"
 
 msgid ""
 "StringExtensions.ToInt (Consider using `int.TryParse`_ or `long.TryParse`_)"
 msgstr ""
+"StringExtensions.ToInt（請考慮使用 `int.TryParse`_ 或 `long.TryParse`_）"
 
 msgid "to_lower"
-msgstr ""
+msgstr "to_lower"
 
 msgid "`string.ToLower`_"
-msgstr ""
+msgstr "`string.ToLower`_"
 
 msgid "to_pascal_case"
-msgstr ""
+msgstr "to_pascal_case"
 
 msgid "StringExtensions.ToPascalCase"
-msgstr ""
+msgstr "StringExtensions.ToPascalCase"
 
 msgid "to_snake_case"
-msgstr ""
+msgstr "to_snake_case"
 
 msgid "StringExtensions.ToSnakeCase"
-msgstr ""
+msgstr "StringExtensions.ToSnakeCase"
 
 msgid "to_upper"
-msgstr ""
+msgstr "to_upper"
 
 msgid "`string.ToUpper`_"
-msgstr ""
+msgstr "`string.ToUpper`_"
 
 msgid "to_utf16_buffer"
-msgstr ""
+msgstr "to_utf16_buffer"
 
 msgid ""
 "StringExtensions.ToUtf16Buffer (Consider using `System.Text.Encoding.UTF16."
 "GetBytes`_)"
 msgstr ""
+"StringExtensions.ToUtf16Buffer（請考慮使用 `System.Text.Encoding.UTF16."
+"GetBytes`_）"
 
 msgid "to_utf32_buffer"
-msgstr ""
+msgstr "to_utf32_buffer"
 
 msgid ""
 "StringExtensions.ToUtf32Buffer (Consider using `System.Text.Encoding.UTF32."
 "GetBytes`_)"
 msgstr ""
+"StringExtensions.ToUtf32Buffer（請考慮使用 `System.Text.Encoding.UTF32."
+"GetBytes`_）"
 
 msgid "to_utf8_buffer"
-msgstr ""
+msgstr "to_utf8_buffer"
 
 msgid ""
 "StringExtensions.ToUtf8Buffer (Consider using `System.Text.Encoding.UTF8."
 "GetBytes`_)"
 msgstr ""
+"StringExtensions.ToUtf8Buffer（請考慮使用 `System.Text.Encoding.UTF8."
+"GetBytes`_）"
 
 msgid "to_wchar_buffer"
-msgstr ""
+msgstr "to_wchar_buffer"
 
+#, fuzzy
 msgid ""
-"StringExtensions.ToUtf16Buffer in Windows and StringExtensiont.ToUtf32Buffer "
+"StringExtensions.ToUtf16Buffer in Windows and StringExtensions.ToUtf32Buffer "
 "in other platforms"
 msgstr ""
+"Windows 上 StringExtensions.ToUtf16Buffer，其他平臺 StringExtensiont."
+"ToUtf32Buffer"
 
 msgid "trim_prefix"
-msgstr ""
+msgstr "trim_prefix"
 
 msgid "StringExtensions.TrimPrefix"
-msgstr ""
+msgstr "StringExtensions.TrimPrefix"
 
 msgid "trim_suffix"
-msgstr ""
+msgstr "trim_suffix"
 
 msgid "StringExtensions.TrimSuffix"
-msgstr ""
+msgstr "StringExtensions.TrimSuffix"
 
 msgid "unicode_at"
-msgstr ""
+msgstr "unicode_at"
 
 msgid "`string[int]`_ indexer"
-msgstr ""
+msgstr "`string[int]`_ 索引器"
 
 msgid "uri_decode"
-msgstr ""
+msgstr "uri_decode"
 
 msgid ""
 "StringExtensions.URIDecode (Consider using `System.Uri.UnescapeDataString`_)"
 msgstr ""
+"StringExtensions.URIDecode（考慮使用 `System.Uri.UnescapeDataString`_）"
 
-#, fuzzy
 msgid "uri_encode"
 msgstr "使用空白字元"
 
 msgid ""
 "StringExtensions.URIEncode (Consider using `System.Uri.EscapeDataString`_)"
-msgstr ""
+msgstr "StringExtensions.URIEncode（考慮使用`System.Uri.EscapeDataString`_）"
 
 msgid "validate_node_name"
-msgstr ""
+msgstr "validate_node_name"
 
 msgid "StringExtensions.ValidateNodeName"
-msgstr ""
+msgstr "StringExtensions.ValidateNodeName"
 
 msgid "xml_escape"
-msgstr ""
+msgstr "xml_escape"
 
 msgid "StringExtensions.XMLEscape"
-msgstr ""
+msgstr "StringExtensions.XMLEscape"
 
 msgid "xml_unescape"
-msgstr ""
+msgstr "xml_unescape"
 
 msgid "StringExtensions.XMLUnescape"
-msgstr ""
+msgstr "StringExtensions.XMLUnescape"
 
 msgid ""
 "List of Godot's PackedByteArray methods that create a String and their C# "
 "equivalent:"
 msgstr ""
+"用於建立 String 的 Godot 的 PackedByteArray 方法及其 C# 等效方法的列表："
 
 msgid "get_string_from_ascii"
-msgstr ""
+msgstr "get_string_from_ascii"
 
 msgid ""
 "StringExtensions.GetStringFromAscii (Consider using `System.Text.Encoding."
 "ASCII.GetString`_)"
 msgstr ""
+"StringExtensions.GetStringFromAscii（考慮使用 `System.Text.Encoding.ASCII."
+"GetString`_）"
 
 msgid "get_string_from_utf16"
-msgstr ""
+msgstr "get_string_from_utf16"
 
 msgid ""
 "StringExtensions.GetStringFromUtf16 (Consider using `System.Text.Encoding."
 "UTF16.GetString`_)"
 msgstr ""
+"StringExtensions.GetStringFromUtf16（考慮使用`System.Text.Encoding.UTF16."
+"GetString`_）"
 
 msgid "get_string_from_utf32"
-msgstr ""
+msgstr "get_string_from_utf32"
 
 msgid ""
 "StringExtensions.GetStringFromUtf32 (Consider using `System.Text.Encoding."
 "UTF32.GetString`_)"
 msgstr ""
+"StringExtensions.GetStringFromUtf32（考慮使用`System.Text.Encoding.UTF32."
+"GetString`_）"
 
 msgid "get_string_from_utf8"
-msgstr ""
+msgstr "get_string_from_utf8"
 
 msgid ""
 "StringExtensions.GetStringFromUtf8 (Consider using `System.Text.Encoding."
 "UTF8.GetString`_)"
 msgstr ""
+"StringExtensions.GetStringFromUtf8（考慮使用 `System.Text.Encoding.UTF8."
+"GetString`_）"
 
 msgid "hex_encode"
-msgstr ""
+msgstr "hex_encode"
 
 msgid ""
 "StringExtensions.HexEncode (Consider using `System.Convert.ToHexString`_)"
-msgstr ""
+msgstr "StringExtensions.HexEncode（考慮使用`System.Convert.ToHexString`_）"
 
 msgid ""
 ".NET contains many path utility methods available under the `System.IO."
 "Path`_ class that can be used when not dealing with Godot paths (paths that "
 "start with ``res://`` or ``user://``)"
 msgstr ""
+".NET 包含許多在「System.IO.Path」類別下可用的路徑實用方法，可以在不處理 "
+"Godot 路徑（以「res://」或「user://」開頭的路徑時使用） `)"
 
 msgid "NodePath"
-msgstr "\\ NodePath"
+msgstr "NodePath"
 
 msgid "The following method was converted to a property with a different name:"
 msgstr "下列方法轉換成了名稱不同的屬性："
 
-#, fuzzy
 msgid "``is_empty()``"
 msgstr "``center()``"
 
 msgid "``IsEmpty``"
-msgstr ""
+msgstr "``IsEmpty``"
 
 msgid "Signal"
 msgstr "訊號"
@@ -1715,102 +1753,99 @@ msgid ""
 "names changed:"
 msgstr "下列各個方法皆轉換為屬性並更改其名稱："
 
-#, fuzzy
 msgid "``get_name()``"
 msgstr "``get_area()``"
 
 msgid "``Name``"
-msgstr ""
+msgstr "``Name``"
 
-#, fuzzy
 msgid "``get_object()``"
 msgstr "``get_area()``"
 
-#, fuzzy
 msgid "``Owner``"
-msgstr "\\ ``owner``"
+msgstr "``Owner``"
 
 msgid ""
 "The ``Signal`` type implements the awaitable pattern which means it can be "
 "used with the ``await`` keyword. See :ref:`doc_c_sharp_differences_await`."
 msgstr ""
+"“Signal” 型別實作了可等待模式，這意味著它可以與“await” 關鍵字一起使用。請參"
+"閱:ref:`doc_c_sharp_differences_await`。"
 
 msgid ""
 "Instead of using the ``Signal`` type, the recommended way to use Godot "
 "signals in C# is to use the generated C# events. See :ref:"
 "`doc_c_sharp_signals`."
 msgstr ""
+"在 C# 中使用 Godot 訊號的建議方法是使用產生的 C# 事件，而不是使用「Signal」型"
+"別。請參閱:ref:`doc_c_sharp_signals`。"
 
-#, fuzzy
 msgid "Callable"
 msgstr "Call 呼叫"
 
-#, fuzzy
 msgid "``Target``"
 msgstr "目標"
 
-#, fuzzy
 msgid "``get_method()``"
-msgstr "\\ ``method``"
+msgstr "``get_method()``"
 
-#, fuzzy
 msgid "``Method``"
-msgstr "\\ ``method``"
+msgstr "``Method``"
 
 msgid "Currently C# supports ``Callable`` if one of the following holds:"
-msgstr ""
+msgstr "目前，如果滿足以下條件之一，C# 支援「Callable」："
 
 msgid "``Callable`` was created using the C# ``Callable`` type."
-msgstr ""
+msgstr "``Callable`` 是使用 C# ``Callable`` 型別建立的。"
 
 msgid ""
 "``Callable`` is a basic version of the engine's ``Callable``. Custom "
 "``Callable``\\ s are unsupported. A ``Callable`` is custom when any of the "
 "following holds:"
 msgstr ""
+"“回呼函式”是引擎“回呼函式”的基本版本。不支援自定義「可調用」 \\。當以下任何一"
+"項成立時，「回呼函式」是自定義的："
 
 msgid ""
 "``Callable`` has bound information (``Callable``\\ s created with ``bind``/"
 "``unbind`` are unsupported)."
 msgstr ""
+"“回呼函式”具有綁定資訊（不支援使用“綁定”/“取消綁定”創建的“回呼函式”）。"
 
 msgid ""
 "``Callable`` was created from other languages through the GDExtension API."
-msgstr ""
+msgstr "「Callable」 是透過 GDExtension API 從其他語言建立的。"
 
 msgid ""
 "Some methods such as ``bind`` and ``unbind`` are not implemented, use "
 "lambdas instead:"
-msgstr ""
+msgstr "有些方法如“bind”和“unbind”沒有實作，請使用lambdas代替："
 
 msgid ""
 "The lambda captures the ``name`` variable so it can be bound to the "
 "``SayHello`` method."
-msgstr ""
+msgstr "lambda 捕獲“name”變量，以便將其綁定到“SayHello”方法。"
 
 msgid "RID"
 msgstr "RID"
 
-#, fuzzy
 msgid "This type is named ``Rid`` in C# to follow the .NET naming convention."
 msgstr "在這個專案中，我們會遵守 Godot 的命名慣例。"
 
-#, fuzzy
 msgid "``get_id()``"
 msgstr "``get_area()``"
 
 msgid "``Id``"
-msgstr ""
+msgstr "``Id``"
 
-#, fuzzy
 msgid "``is_valid()``"
 msgstr "``is_instance_valid(obj)``"
 
 msgid "``IsValid``"
-msgstr ""
+msgstr "``IsValid``"
 
 msgid "Basis"
-msgstr "\\ Basis"
+msgstr "基礎"
 
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
@@ -1828,7 +1863,7 @@ msgid "``Scale``"
 msgstr "``Scale``"
 
 msgid "Transform2D"
-msgstr "\\ Transform2D"
+msgstr "Transform2D"
 
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
@@ -1846,18 +1881,15 @@ msgstr "``get_rotation()``"
 msgid "``Rotation``"
 msgstr "``Rotation``"
 
-#, fuzzy
 msgid "``get_skew()``"
 msgstr "``get_scale()``"
 
 msgid "``Skew``"
-msgstr ""
+msgstr "``Skew``"
 
-#, fuzzy
 msgid "Transform3D"
-msgstr "\\ Transform2D"
+msgstr "Transform3D"
 
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Transform3D()`` initializes all primitive members to their default value. "
@@ -1869,7 +1901,7 @@ msgstr ""
 "中 ``Transform2D()`` 同等的效果。"
 
 msgid "Rect2"
-msgstr "\\ Rect2"
+msgstr "Rect2"
 
 msgid ""
 "The following field was converted to a property with a *slightly* different "
@@ -1888,32 +1920,28 @@ msgstr "``get_area()``"
 msgid "``Area``"
 msgstr "``Area``"
 
-#, fuzzy
 msgid "Rect2i"
-msgstr "\\ Rect2"
+msgstr "Rect2i"
 
 msgid ""
 "This type is named ``Rect2I`` in C# to follow the .NET naming convention."
-msgstr ""
+msgstr "該型別在 C# 中被命名為“Rect2I”，以遵循 .NET 命名約定。"
 
 msgid "AABB"
-msgstr ""
+msgstr "AABB"
 
-#, fuzzy
 msgid "This type is named ``Aabb`` in C# to follow the .NET naming convention."
 msgstr "在這個專案中，我們會遵守 Godot 的命名慣例。"
 
-#, fuzzy
 msgid "``get_volume()``"
 msgstr "``get_scale()``"
 
 msgid "``Volume``"
-msgstr ""
+msgstr "``Volume``"
 
 msgid "Quaternion"
-msgstr ""
+msgstr "四元數"
 
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Quaternion()`` initializes all primitive members to their default value. "
@@ -1924,11 +1952,9 @@ msgstr ""
 "設為預設值。請使用 ``Quat.Identity`` 來達到與 GDScript 或 C++ 中 ``Quat()`` "
 "同等的效果。"
 
-#, fuzzy
 msgid "Projection"
-msgstr "字典"
+msgstr "投影"
 
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Projection()`` initializes all primitive members to their default value. "
@@ -1942,7 +1968,6 @@ msgstr ""
 msgid "Color"
 msgstr "顏色"
 
-#, fuzzy
 msgid ""
 "Structs cannot have parameterless constructors in C#. Therefore, ``new "
 "Color()`` initializes all primitive members to their default value (which "
@@ -1956,46 +1981,40 @@ msgstr ""
 msgid ""
 "The global ``Color8`` method to construct a Color from bytes is available as "
 "a static method in the Color type."
-msgstr ""
+msgstr "從位元組建構 Color 的全域「Color8」方法可用作 Color 型別中的靜態方法。"
 
 msgid ""
 "The Color constants are available in the ``Colors`` static class as readonly "
 "properties."
-msgstr ""
+msgstr "顏色常數在“Colors”靜態類別中作為唯讀屬性提供。"
 
-#, fuzzy
 msgid "``get_luminance()``"
 msgstr "``get_area()``"
 
-#, fuzzy
 msgid "``Luminance``"
-msgstr "\\ ``instance``"
+msgstr "``Luminance``"
 
-#, fuzzy
 msgid "The following method was converted to a method with a different name:"
 msgstr "下列方法轉換成了名稱不同的屬性："
 
-#, fuzzy
 msgid "``html(String)``"
 msgstr "``String[]``"
 
 msgid "``FromHtml(ReadOnlySpan<char>)``"
-msgstr ""
+msgstr "``FromHtml(ReadOnlySpan<char>)``"
 
 msgid "The following methods are available as constructors:"
-msgstr ""
+msgstr "提供了以下方法，文件如下："
 
 msgid "``hex(int)``"
-msgstr ""
+msgstr "``hex(int)``"
 
-#, fuzzy
 msgid "``Color(uint)``"
 msgstr "``Color8``"
 
 msgid "``hex64(int)``"
-msgstr ""
+msgstr "``hex64(int)``"
 
-#, fuzzy
 msgid "``Color(ulong)``"
 msgstr "``Color8``"
 
@@ -2003,13 +2022,12 @@ msgid "Array"
 msgstr "陣列"
 
 msgid "The equivalent of packed arrays are ``System.Array``."
-msgstr ""
+msgstr "與緊縮陣列等價的是 ``System.Array``。"
 
 msgid ""
 "See also :ref:`PackedArray in C# <doc_c_sharp_collections_packedarray>`."
-msgstr ""
+msgstr "另見 :ref:`C# 中的緊縮資料 <doc_c_sharp_collections_packedarray>`。"
 
-#, fuzzy
 msgid ""
 "Use ``Godot.Collections.Array`` for an untyped ``Variant`` array. ``Godot."
 "Collections.Array<T>`` is a type-safe wrapper around ``Godot.Collections."
@@ -2019,7 +2037,6 @@ msgstr ""
 "裝。可使用 ``Godot.Collections.Array<T>(Godot.Collections.Array)`` 建置函式來"
 "建立。"
 
-#, fuzzy
 msgid "See also :ref:`Array in C# <doc_c_sharp_collections_array>`."
 msgstr "參見 :ref:`c_sharp_signals` 。"
 
@@ -2029,14 +2046,13 @@ msgstr "字典"
 #, fuzzy
 msgid ""
 "Use ``Godot.Collections.Dictionary`` for an untyped ``Variant`` dictionary. "
-"``Godot.Colelctions.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
+"``Godot.Collections.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
 "``Godot.Collections.Dictionary``."
 msgstr ""
 "``Godot.Collections.Dictionary<T>`` 是型別安全版的 ``Godot.Collections."
 "Dictionary`` 封裝。使用 ``Godot.Collections.Dictionary<T>(Godot.Collections."
 "Dictionary)`` 建置函式來建立。"
 
-#, fuzzy
 msgid "See also :ref:`Dictionary in C# <doc_c_sharp_collections_dictionary>`."
 msgstr ":ref:`Dictionary <class_Dictionary>`"
 
@@ -2048,8 +2064,9 @@ msgid ""
 "<class_Variant>` type. Any Variant-compatible type can be converted from/to "
 "it."
 msgstr ""
+"``Godot.Variant`` 用來表示 Godot 的原生 :ref:`Variant <class_Variant>` 型別。"
+"任何與 Variant 相容的型別都可以與其進行轉換。"
 
-#, fuzzy
 msgid "See also: :ref:`doc_c_sharp_variant`."
 msgstr "參見 :ref:`c_sharp_signals` 。"
 
@@ -2059,11 +2076,9 @@ msgstr "與其他腳本語言溝通"
 msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
 msgstr "本主題於 :ref:`doc_cross_language_scripting` 中詳細說明。"
 
-#, fuzzy
 msgid "``await`` keyword"
 msgstr "Onready 關鍵字"
 
-#, fuzzy
 msgid ""
 "Something similar to GDScript's ``await`` keyword can be achieved with C#'s "
 "`await keyword <https://docs.microsoft.com/en-US/dotnet/csharp/language-"
@@ -2078,35 +2093,39 @@ msgid ""
 "commonly used with operands of the types `Task`_, `Task<TResult>`_, "
 "`ValueTask`_, or `ValueTask<TResult>`_."
 msgstr ""
+"C# 中的「await」關鍵字可以與任何可等待表達式一起使用。它通常與 `Task`_、"
+"`Task<TResult>`_、`ValueTask`_ 或 `ValueTask<TResult>`_ 型別的運算元一起使"
+"用。"
 
 msgid "An expression ``t`` is awaitable if one of the following holds:"
-msgstr ""
+msgstr "回應事件將是包含以下欄位的字典："
 
 msgid "``t`` is of compile-time type ``dynamic``."
-msgstr ""
+msgstr "``t`` 是編譯時型別``dynamic``。"
 
 msgid ""
 "``t`` has an accessible instance or extension method called ``GetAwaiter`` "
 "with no parameters and no type parameters, and a return type ``A`` for which "
 "all of the following hold:"
 msgstr ""
+"``t`` 有一個名為 ``GetAwaiter`` 的可存取實例或擴充方法，沒有參數和型別參數，"
+"並且傳回型別 ``A`` 滿足以下所有條件："
 
 msgid ""
 "``A`` implements the interface ``System.Runtime.CompilerServices."
 "INotifyCompletion``."
-msgstr ""
+msgstr "``A`` 實作介面``System.Runtime.CompilerServices.INotifyCompletion``。"
 
 msgid ""
 "``A`` has an accessible, readable instance property ``IsCompleted`` of type "
 "``bool``."
-msgstr ""
+msgstr "“A” 有一個可存取、可讀的實例屬性“IsCompleted”，型別為“bool”。"
 
 msgid ""
 "``A`` has an accessible instance method ``GetResult`` with no parameters and "
 "no type parameters."
-msgstr ""
+msgstr "“A” 有一個可存取的實例方法“GetResult”，沒有參數，也沒有型別參數。"
 
-#, fuzzy
 msgid ""
 "An equivalent of awaiting a signal in GDScript can be achieved with the "
 "``await`` keyword and ``GodotObject.ToSignal``."

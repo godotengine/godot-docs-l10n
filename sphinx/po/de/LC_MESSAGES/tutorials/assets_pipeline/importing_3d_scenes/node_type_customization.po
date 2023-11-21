@@ -1,0 +1,277 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Node type customization using name suffixes"
+msgstr ""
+
+msgid ""
+"Many times, when editing a scene, there are common tasks that need to be "
+"done after exporting:"
+msgstr ""
+"Viele Male wenn eine Szene bearbeitet wird, sind häufig einige Aufgaben nach "
+"dem Exportieren zu erledigen:"
+
+msgid "Adding collision detection to objects."
+msgstr "Kollisionserkennung zu Objekten hinzufügen."
+
+msgid "Setting objects as navigation meshes."
+msgstr "Objekte als Navigations-Meshes setzen."
+
+#, fuzzy
+msgid ""
+"Deleting nodes that are not used in the game engine (like specific lights "
+"used for modeling)."
+msgstr ""
+"Nodes löschen, die in der Spiele-Engine nicht genutzt werden (wie bestimmte "
+"Lichter die zum Modellieren genutzt wurden)."
+
+#, fuzzy
+msgid ""
+"To simplify this workflow, Godot offers several suffixes that can be added "
+"to the names of the objects in your 3D modeling software. When imported, "
+"Godot will detect suffixes in object names and will perform actions "
+"automatically."
+msgstr ""
+"Um diesen Arbeitsablauf zu vereinfachen, bietet Godot mehrere Suffixe an, "
+"die den Namen der Objekte in Ihrer 3D-Modellierungssoftware hinzugefügt "
+"werden können. Beim Import erkennt Godot Suffixe in Objektnamen und führt "
+"automatisch Aktionen aus."
+
+#, fuzzy
+msgid "All the suffixes described below are **case-sensitive**."
+msgstr "Alle unten beschriebenen Suffixe sind *case-sensitive*."
+
+msgid "Remove nodes (-noimp)"
+msgstr "Nodes entfernen (-noimp)"
+
+msgid ""
+"Objects that have the ``-noimp`` suffix will be removed at import-time no "
+"matter what their type is. They will not appear in the imported scene."
+msgstr ""
+"Objekte, die das Suffix ``-noimp`` haben, werden beim Import entfernt, "
+"unabhängig von ihrem Typ. Sie werden in der importierten Szene nicht "
+"erscheinen."
+
+msgid ""
+"This is equivalent to enabling **Skip Import** for a node in the Advanced "
+"Import Settings dialog."
+msgstr ""
+
+msgid "Create collisions (-col, -convcol, -colonly, -convcolonly)"
+msgstr "Kollisionen erzeugen (-col, -convcol, -colonly, -convcolonly)"
+
+msgid ""
+"The option ``-col`` will work only for Mesh objects. If it is detected, a "
+"child static collision node will be added, using the same geometry as the "
+"mesh. This will create a triangle mesh collision shape, which is a slow, but "
+"accurate option for collision detection. This option is usually what you "
+"want for level geometry (but see also ``-colonly`` below)."
+msgstr ""
+"Die Option ``-col`` funktioniert nur für Mesh-Objekte. Bei der Erkennung "
+"wird ein untergeordneter statischer Kollisionsnode hinzugefügt, das die "
+"gleiche Geometrie wie das Mesh verwendet. Dadurch wird eine Dreiecksmesh-"
+"Kollisionsform erzeugt, was eine langsame, aber genaue Option für die "
+"Kollisionserkennung ist. Diese Option ist normalerweise das, was Sie für "
+"ebene Geometrie wünschen (siehe aber auch ``-colonly`` weiter unten)."
+
+#, fuzzy
+msgid ""
+"The option ``-convcol`` will create a :ref:`class_ConvexPolygonShape3D` "
+"instead of a :ref:`class_ConcavePolygonShape3D`. Unlike triangle meshes "
+"which can be concave, a convex shape can only accurately represent a shape "
+"that doesn't have any concave angles (a pyramid is convex, but a hollow box "
+"is concave). Due to this, convex collision shapes are generally not suited "
+"for level geometry. When representing simple enough meshes, convex collision "
+"shapes can result in better performance compared to a triangle collision "
+"shape. This option is ideal for simple or dynamic objects that require "
+"mostly-accurate collision detection."
+msgstr ""
+"Die Option ``-convcol`` erzeugt eine :ref:`class_convexpolygonshape` statt "
+"einer :ref:`class_concavepolygonshape`. Im Gegensatz zu Dreiecksmeshes, die "
+"konkav sein können, kann eine konvexe Form nur eine Form genau darstellen, "
+"die keine konkaven Winkel hat (eine Pyramide ist konvex, aber ein Hohlkasten "
+"ist konkav). Aus diesem Grund sind konvexe Kollisionsformen im Allgemeinen "
+"nicht für ebene Geometrie geeignet. Bei der Darstellung von Meshes, die "
+"einfach genug sind, können konvexe Kollisionsformen im Vergleich zu einer "
+"dreieckigen Kollisionsform zu einer besseren Leistung führen. Diese Option "
+"ist ideal für einfache oder dynamische Objekte, die eine weitgehend genaue "
+"Kollisionserkennung erfordern."
+
+#, fuzzy
+msgid ""
+"However, in both cases, the visual geometry may be too complex or not smooth "
+"enough for collisions. This can create physics glitches and slow down the "
+"engine unnecessarily."
+msgstr ""
+"In beiden Fällen kann die visuelle Geometrie jedoch zu komplex oder nicht "
+"glatt genug für Kollisionen sein. Dies kann zu physikalischen Störungen "
+"führen und die Engine unnötig verlangsamen."
+
+#, fuzzy
+msgid ""
+"To solve this, the ``-colonly`` modifier exists. It will remove the mesh "
+"upon importing and will create a :ref:`class_StaticBody3D` collision "
+"instead. This helps the visual mesh and actual collision to be separated."
+msgstr ""
+"Um dies zu lösen, gibt es den ``-colonly`` Modifikator. Er entfernt das Mesh "
+"beim Importieren und erzeugt stattdessen eine :ref:``class_staticbody`` "
+"Kollision. Dies hilft dabei, das visuelle Mesh und die tatsächliche "
+"Kollision zu trennen."
+
+#, fuzzy
+msgid ""
+"The option ``-convcolonly`` works in a similar way, but will create a :ref:"
+"`class_ConvexPolygonShape3D` instead using convex decomposition."
+msgstr ""
+"Die Option ``-convcolonly`` funktioniert auf ähnliche Weise, erzeugt aber "
+"stattdessen eine :ref:`class_convexpolygonshape`."
+
+#, fuzzy
+msgid ""
+"With Collada files, the option ``-colonly`` can also be used with Blender's "
+"empty objects. On import, it will create a :ref:`class_StaticBody3D` with a "
+"collision node as a child. The collision node will have one of a number of "
+"predefined shapes, depending on Blender's empty draw type:"
+msgstr ""
+"Die Option ``-colonly`` kann auch mit leeren Objekten von Blender verwendet "
+"werden. Beim Import wird ein :ref:``class_staticbody` mit einem "
+"Kollisionsnode als Kind erzeugt. Das Kollisionsnode wird eine von mehreren "
+"vordefinierten Formen haben, abhängig vom leeren Zeichnungstyp von Blender:"
+
+msgid "Choosing a draw type for an Empty on creation in Blender"
+msgstr ""
+
+#, fuzzy
+msgid "Single arrow will create a :ref:`class_SeparationRayShape3D`."
+msgstr "Ein einzelner Pfeil erzeugt eine :ref:`class_rayshape`."
+
+#, fuzzy
+msgid "Cube will create a :ref:`class_BoxShape3D`."
+msgstr "Cube erzeugt eine :ref:`class_boxshape`."
+
+#, fuzzy
+msgid "Image will create a :ref:`class_WorldBoundaryShape3D`."
+msgstr "Das Bild erstellt eine :ref:`class_planeshape`."
+
+#, fuzzy
+msgid ""
+"Sphere (and the others not listed) will create a :ref:`class_SphereShape3D`."
+msgstr ""
+"Sphäre (und andere nicht gelistete) erzeugen ein :ref:`class_sphereshape`."
+
+msgid ""
+"When possible, **try to use a few primitive collision shapes** instead of "
+"triangle mesh or convex shapes. Primitive shapes often have the best "
+"performance and reliability."
+msgstr ""
+"Wenn möglich, **versuchen Sie, einige wenige primitive Kollisionsformen** "
+"anstelle von Dreiecksmesh oder konvexen Formen zu verwenden. Primitive "
+"Formen haben oft die beste Leistung und Zuverlässigkeit."
+
+#, fuzzy
+msgid ""
+"For better visibility on Blender's editor, you can set the \"X-Ray\" option "
+"on collision empties and set some distinct color for them by changing **Edit "
+"> Preferences > Themes > 3D Viewport > Empty**."
+msgstr ""
+"Für eine bessere Sichtbarkeit im Editor von Blender können Sie die Option "
+"\"X-Ray\" für leere Kollisionen einstellen und in Blender's "
+"**Benutzereinstellungen > Themen > 3D-Ansicht > Leer** eine bestimmte Farbe "
+"für sie festlegen."
+
+msgid ""
+"If using Blender 2.79 or older, follow these steps instead: **User "
+"Preferences > Themes > 3D View > Empty**."
+msgstr ""
+
+msgid ""
+"See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collision "
+"shapes."
+msgstr ""
+"Siehe :ref:`doc_collision_shapes_3d` für einen umfassenden Überblick über "
+"Kollisionsformen."
+
+msgid "Create navigation (-navmesh)"
+msgstr "Navigation erzeugen (-navmesh)"
+
+msgid ""
+"A mesh node with the ``-navmesh`` suffix will be converted to a navigation "
+"mesh. The original Mesh object will be removed at import-time."
+msgstr ""
+"Ein Mesh Node mit dem Suffix ``-navmesh`` wird in ein Navigations mesh "
+"umgewandelt. Das ursprüngliche Mesh-Objekt wird zum Zeitpunkt des Imports "
+"entfernt."
+
+msgid "Create a VehicleBody (-vehicle)"
+msgstr "Ein Fahrzeug-Körper erzeugen (-vehicle)"
+
+#, fuzzy
+msgid ""
+"A mesh node with the ``-vehicle`` suffix will be imported as a child to a :"
+"ref:`class_VehicleBody3D` node."
+msgstr ""
+"Ein mesh node mit dem Suffix ``-vehicle`` wird als Kind eines :ref:"
+"`class_VehicleBody` -Nodes importiert."
+
+msgid "Create a VehicleWheel (-wheel)"
+msgstr "Ein Fahrzeug-Rad erzeugen (-wheel)"
+
+#, fuzzy
+msgid ""
+"A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:"
+"`class_VehicleWheel3D` node."
+msgstr ""
+"Ein mesh node mit dem Suffix ``-wheel`` wird als Kind zu einem :ref:"
+"`class_VehicleWheel` Node importiert."
+
+msgid "Rigid Body (-rigid)"
+msgstr "Starrer Körper (-rigid)"
+
+#, fuzzy
+msgid ""
+"A mesh node with the ``-rigid`` suffix will be imported as a :ref:"
+"`class_RigidBody3D`."
+msgstr ""
+"Ein mesh node mit dem Suffix ``-rigid`` wird als ein :ref:`class_RigidBody` "
+"importiert."
+
+msgid "Animation loop (-loop, -cycle)"
+msgstr "Animations-Schleife (-loop, -cycle)"
+
+#, fuzzy
+msgid ""
+"Animation clips in the source 3D file that start or end with the token "
+"``loop`` or ``cycle`` will be imported as a Godot :ref:`class_Animation` "
+"with the loop flag set. **Unlike the other suffixes described above, this "
+"does not require a hyphen.**"
+msgstr ""
+"Animationsclips im COLLADA-Dokument, die mit dem Token ``loop`` oder "
+"``cycle`` beginnen oder enden, werden als Godot-Animation mit gesetztem Loop-"
+"Flag importiert. **Im Gegensatz zu den anderen oben beschriebenen Suffixen "
+"ist hier kein Bindestrich erforderlich.**"
+
+msgid ""
+"In Blender, this requires using the NLA Editor and naming the Action with "
+"the ``loop`` or ``cycle`` prefix or suffix."
+msgstr ""
+"In Blender erfordert dies die Verwendung des NLA-Editors und die Benennung "
+"der Aktion mit dem Präfix oder Suffix ``loop`` oder ``cycle``."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

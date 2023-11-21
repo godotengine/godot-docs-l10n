@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,32 +23,29 @@ msgstr "使用外部的文本编辑器"
 msgid "This page explains how to code using an external text editor."
 msgstr "本页面讲述的是如何使用外部文本编辑器编写代码。"
 
-#, fuzzy
 msgid ""
 "Godot can be used with an external text editor, such as Sublime Text or "
 "Visual Studio Code. Browse to the relevant editor settings: **Editor > "
 "Editor Settings > Text Editor > External**"
 msgstr ""
-"Godot 可以与 Sublime Text、Visual Studio Code 等外部文本编辑器一起使用。请修"
-"改\\ ``编辑器 -> 编辑器设置 -> Text Editor -> External``\\ （文本编辑器 -> 外"
-"部）中的相关设置"
+"Godot 可以与 Sublime Text、Visual Studio Code 等外部文本编辑器一起使用。在编"
+"辑器中浏览相关设置： **编辑器 -> 编辑器设置 -> 文本编辑器 -> 外部**"
 
 msgid "Text Editor > External section of the Editor Settings"
-msgstr ""
+msgstr "文本编辑器 > 编辑器设置的外部部分"
 
 msgid "**Text Editor > External** section of the Editor Settings"
-msgstr ""
+msgstr "编辑器设置中的 **文本编辑器 > 外部** 部分"
 
-#, fuzzy
 msgid ""
 "There are two text fields: the executable path and command-line flags. The "
 "flags allow you to integrate the editor with Godot, passing it the file path "
 "to open and other relevant arguments. Godot will replace the following "
 "placeholders in the flags string:"
 msgstr ""
-"有两个字段：可执行文件路径和命令行标志。这些标志允许您将编辑器与 Godot 集成在"
-"一起，并向其传递文件路径以打开文件以及其他相关参数。Godot 将替换标志字符串中"
-"的以下占位符："
+"有两个文本字段：可执行文件路径和执行参数（标志）。这些标志允许您将编辑器与 "
+"Godot 集成在一起，并向其传递要打开的文件路径和其他相关参数。Godot 将替换参数"
+"字符串中的以下占位符："
 
 msgid "Field in Exec Flags"
 msgstr "Exec 标志中的字段"
@@ -80,9 +77,8 @@ msgstr "``{line}``"
 msgid "The line number of the error"
 msgstr "错误的行号"
 
-#, fuzzy
 msgid "Some example **Exec Flags** for various editors include:"
-msgstr "各种编辑器的一些示例Exec标志:"
+msgstr "一些编辑器的 **Exec 标志** 示例："
 
 msgid "Editor"
 msgstr "编辑器"
@@ -97,7 +93,7 @@ msgid "``{file} --line {line} --column {col}``"
 msgstr "``{file} --line {line} --column {col}``"
 
 msgid "Atom"
-msgstr ""
+msgstr "Atom"
 
 msgid "``{file}:{line}``"
 msgstr "``{file}:{line}``"
@@ -126,36 +122,35 @@ msgstr "Emacs"
 msgid "``emacs +{line}:{col} {file}``"
 msgstr "``emacs +{line}:{col} {file}``"
 
-#, fuzzy
 msgid "Sublime Text"
-msgstr "Atom/Sublime Text"
+msgstr "Sublime Text"
 
-#, fuzzy
 msgid "``{project} {file}:{line}:{column}``"
-msgstr "``{project} --goto {file}:{line}:{col}``"
+msgstr "``{project} {file}:{line}:{column}``"
 
 msgid ""
 "For Visual Studio Code on Windows, you will have to point to the ``code."
 "cmd`` file."
 msgstr ""
+"对于 Windows 平台上的 Visual Studio Code，你需要指向 ``code.cmd`` 文件。"
 
-#, fuzzy
 msgid ""
 "For Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
 "server mode."
 msgstr ""
-"对于 Visual Studio Code，你需要指向 ``code.cmd`` 文件。对于 Emacs，如果你使用"
-"的是服务器模式，那么调用的时候就可以用 ``emacsclient`` 代替 ``emacs``\\ 。"
+"对于 Emacs，如果你使用的是服务器模式，那么调用的时候就可以用 ``emacsclient`` "
+"代替 ``emacs`` 。"
 
-#, fuzzy
 msgid "Using External Editor in Debugger"
-msgstr "使用外部的文本编辑器"
+msgstr "在调试器中使用外部编辑器"
 
 msgid ""
 "Using external editor in debugger is determined by a separate option in "
 "settings. For details, see :ref:`Script editor debug tools and options "
 "<doc_debugger_tools_and_options>`."
 msgstr ""
+"在调试器中使用外部编辑器由设置中的单独选项决定。更多细节详见 :ref:`脚本编辑器"
+"调试工具及选项 <doc_debugger_tools_and_options>` 。"
 
 msgid "Official editor plugins"
 msgstr "官方编辑器插件"
@@ -170,6 +165,62 @@ msgstr ""
 
 msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+
+#, fuzzy
+msgid "LSP/DAP support"
+msgstr "支持 hiDPI 高分辨率屏幕"
+
+msgid ""
+"Godot supports the `Language Server Protocol <https://microsoft.github.io/"
+"language-server-protocol/>`_ (**LSP**) for code completion and the `Debug "
+"Adapter Protocol <https://microsoft.github.io/debug-adapter-protocol/>`_ "
+"(**DAP**) for debugging. You can check the `LSP client list <https://"
+"microsoft.github.io/language-server-protocol/implementors/tools/>`_ and `DAP "
+"client list <https://microsoft.github.io/debug-adapter-protocol/implementors/"
+"tools/>`_ to find if your editor supports them. If this is the case, you "
+"should be able to take advantage of these features without the need of a "
+"custom plugin."
+msgstr ""
+
+msgid ""
+"To use these protocols, a Godot instance must be running on your current "
+"project. You should then configure your editor to communicate to the running "
+"adapter ports in Godot, which by default are ``6005`` for **LSP**, and "
+"``6006`` for **DAP**. You can change these ports and other settings in the "
+"**Editor Settings**, under the **Network > Language Server** and **Network > "
+"Debug Adapter** sections respectively."
+msgstr ""
+
+msgid "Below are some configuration steps for specific editors:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You need to install the official `Visual Studio Code plugin <https://github."
+"com/godotengine/godot-vscode-plugin>`_."
+msgstr ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
+
+msgid ""
+"For **LSP**, follow `these instructions <https://github.com/godotengine/"
+"godot-vscode-plugin#gdscript_lsp_server_port>`_ to change the default LSP "
+"port. The connection status can be checked on the status bar:"
+msgstr ""
+
+msgid ""
+"For **DAP**, specify the ``debugServer`` property in your ``launch.json`` "
+"file:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Check the official instructions to configure `LSP <https://github.com/"
+"godotengine/emacs-gdscript-mode#auto-completion-with-the-language-server-"
+"protocol-lsp>`_, and `DAP <https://github.com/godotengine/emacs-gdscript-"
+"mode#using-the-debugger>`_."
+msgstr ""
+"官方对 `C <https://github.com/godotengine/godot-headers>`__ 和 `C++ <https://"
+"github.com/godotengine/godot-cpp>`__ 的 GDExtension 绑定。"
 
 msgid "Translation status"
 msgstr "翻译状态"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "Exporting for macOS"
 msgstr "Exportando para macOS"
 
-#, fuzzy
 msgid ""
 "This page describes how to export a Godot project to macOS. If you're "
 "looking to compile editor or export template binaries from source instead, "
@@ -28,7 +27,7 @@ msgid ""
 msgstr ""
 "Esta página descreve como exportar um projeto Godot para o macOS. Se você "
 "está procurando compilar editor ou exportar binários de modelo de origem, "
-"leia :ref:`doc_compiling_for_osx`."
+"leia :ref:`doc_compiling_for_macos`."
 
 msgid ""
 "macOS apps are exported as an ``.app`` bundle, a folder with a specific "
@@ -564,8 +563,9 @@ msgstr ""
 msgid "Network Client"
 msgstr "Cliente de Rede"
 
+#, fuzzy
 msgid "Enable to allow app to establish outgoing network connections."
-msgstr ""
+msgstr "Permita que o aplicativo estabeleça conexões de rede de saída."
 
 msgid "Device USB"
 msgstr "Dispositivo USB"
@@ -574,6 +574,8 @@ msgid ""
 "Enable to allow app to interact with USB devices. This entitlement is "
 "required to use wired controllers."
 msgstr ""
+"Permite que o aplicativo interaja com dispositivos USB. Este direito é "
+"necessário para usar controles com fio."
 
 msgid "Device Bluetooth"
 msgstr "Bluetooth do Dispositivo"
@@ -582,38 +584,38 @@ msgid ""
 "Enable to allow app to interact with Bluetooth devices. This entitlement is "
 "required to use wireless controllers."
 msgstr ""
+"Habilite para permitir que o aplicativo interaja com dispositivos Bluetooth. "
+"Este direito é necessário para usar controles sem fio."
 
-#, fuzzy
 msgid "Files Downloads [7]_"
-msgstr "Arquivos Filmes [6]_"
+msgstr "Download de Arquivos [7]_"
 
 msgid "Allows read or write access to the user's \"Downloads\" folder."
-msgstr ""
+msgstr "Permite ler ou escrever acesso à pasta \"Downloads\" do usuário."
 
-#, fuzzy
 msgid "Files Pictures [7]_"
-msgstr "Arquivos de imagens [6]_"
+msgstr "Arquivos de imagens [7]_"
 
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr ""
+"Permite o acesso para leitura ou escrever na pasta \"Pictures\" do usuário."
 
-#, fuzzy
 msgid "Files Music [7]_"
-msgstr "Arquivos de música [6]_"
+msgstr "Arquivos de música [7]_"
 
 msgid "Allows read or write access to the user's \"Music\" folder."
 msgstr ""
+"Permite o acesso para leitura ou escrever na pasta \"Música\" do usuário."
 
-#, fuzzy
 msgid "Files Movies [7]_"
-msgstr "Arquivos Filmes [6]_"
+msgstr "Arquivos Filmes [7]_"
 
 msgid "Allows read or write access to the user's \"Movies\" folder."
 msgstr ""
+"Permite o acesso para leitura ou escrever na pasta \"Vídeos\" do usuário."
 
-#, fuzzy
 msgid "Files User Selected [7]_"
-msgstr "Arquivos selecionados pelo usuário [6]_"
+msgstr "Arquivos selecionados pelo usuário [7]_"
 
 msgid ""
 "Allows read or write access to arbitrary folder. To gain access, a folder "
@@ -662,55 +664,58 @@ msgstr "Variáveis de ambiente"
 msgid "Encryption / Encryption Key"
 msgstr ""
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 msgstr ""
 
 msgid "Options / Codesign / Certificate File"
 msgstr ""
 
-msgid "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
 
 msgid "Options / Codesign / Certificate Password"
 msgstr ""
 
-msgid "GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
 
 msgid "Options / Codesign / Provisioning Profile"
 msgstr ""
 
-msgid "GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
 
 msgid "Options / Notarization / API UUID"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_API_UUID"
+msgid "``GODOT_MACOS_NOTARIZATION_API_UUID``"
 msgstr ""
 
 msgid "Options / Notarization / API Key"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_API_KEY"
+msgid "``GODOT_MACOS_NOTARIZATION_API_KEY``"
 msgstr ""
 
 msgid "Options / Notarization / API Key ID"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_API_KEY_ID"
+msgid "``GODOT_MACOS_NOTARIZATION_API_KEY_ID``"
 msgstr ""
 
 msgid "Options / Notarization / Apple ID Name"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME"
+msgid "``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME``"
 msgstr ""
 
 msgid "Options / Notarization / Apple ID Password"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD"
+msgid "``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD``"
 msgstr ""
 
 msgid "Translation status"

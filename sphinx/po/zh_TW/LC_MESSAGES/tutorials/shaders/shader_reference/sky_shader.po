@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Sky shaders"
 msgstr "著色器"
 
@@ -26,25 +25,29 @@ msgid ""
 "and for updating radiance cubemaps which are used for image-based lighting "
 "(IBL). Sky shaders only have one processing function, the ``sky()`` function."
 msgstr ""
+"天空著色器是一種特殊型別的著色器，用於繪製天空背景和更新用於基於影像的照明 "
+"(IBL) 的輻射立方體貼圖。天空著色器只有一個處理函式，即「sky()」函式。"
 
-#, fuzzy
 msgid "There are three places the sky shader is used."
 msgstr "有兩個地方可以管理樣板。"
 
 msgid ""
 "First the sky shader is used to draw the sky when you have selected to use a "
 "Sky as the background in your scene."
-msgstr ""
+msgstr "首先，當您選擇使用天空作為場景中的背景時，天空著色器用於繪製天空。"
 
 msgid ""
 "Second, the sky shader is used to update the radiance cubemap when using the "
 "Sky for ambient color or reflections."
 msgstr ""
+"其次，當使用天空作為環境顏色或反射時，天空著色器用於更新輻射立方體貼圖。"
 
 msgid ""
 "Third, the sky shader is used to draw the lower res subpasses which can be "
 "used in the high-res background or cubemap pass."
 msgstr ""
+"第三，天空著色器用於繪製可在高解析度背景或立方體貼圖通道中使用的較低解析度子"
+"通道。"
 
 msgid ""
 "In total, this means the sky shader can run up to six times per frame, "
@@ -53,12 +56,17 @@ msgid ""
 "be used. You can change the behavior of the shader based on where it is "
 "called by checking the ``AT_*_PASS`` booleans. For example:"
 msgstr ""
+"總的來說，這意味著天空著色器每影格最多可以運作六次，但實際上它會少得多，因為"
+"輻射立方體貼圖不需要每影格更新，並且並非所有子通道都會被使用。您可以透過檢"
+"查“AT_*_PASS”布林值來根據呼叫位置來變更著色器的行為。例如："
 
 msgid ""
 "When using the sky shader to draw a background, the shader will be called "
 "for all non-occluded fragments on the screen. However, for the background's "
 "subpasses, the shader will be called for every pixel of the subpass."
 msgstr ""
+"當使用天空著色器繪製背景時，將為螢幕上所有非遮蔽片段呼叫該著色器。但是，對於"
+"背景的子通道，將為子通道的每個像素呼叫著色器。"
 
 msgid ""
 "When using the sky shader to update the radiance cubemap, the sky shader "
@@ -69,23 +77,29 @@ msgid ""
 "cubemap will update every frame. The following list of changes force an "
 "update of the radiance cubemap:"
 msgstr ""
+"當使用天空著色器更新輻射立方體貼圖時，將為立方體貼圖中的每個像素呼叫天空著色"
+"器。另一方面，只有當輻射立方體貼圖需要更新時才會呼叫著色器。當任何著色器參數"
+"更新時，需要更新輻射立方體貼圖。例如，如果在著色器中使用“TIME”，則輻射立方體"
+"貼圖將更新每一影格。以下更改列表強制更新輻射立方體貼圖："
 
 msgid "``TIME`` is used."
-msgstr ""
+msgstr "使用“TIME”。"
 
 msgid "``POSITION`` is used and the camera position changes."
-msgstr ""
+msgstr "使用“POSITION”並且攝影機位置變化。"
 
 msgid ""
 "If any ``LIGHTX_*`` properties are used and any :ref:`DirectionalLight3D "
 "<class_DirectionalLight3D>` changes."
 msgstr ""
+"如果使用任何「LIGHTX_*」屬性且任何:ref:`DirectionalLight3D "
+"<class_DirectionalLight3D>`發生變化。"
 
 msgid "If any uniform is changed in the shader."
-msgstr ""
+msgstr "如果著色器中更改了任何制服。"
 
 msgid "If the screen is resized and either of the subpasses are used."
-msgstr ""
+msgstr "如果調整螢幕大小並且使用任一子頻道。"
 
 msgid ""
 "Try to avoid updating the radiance cubemap needlessly. If you do need to "
@@ -93,217 +107,254 @@ msgid ""
 "mode <class_Sky_property_process_mode>` is set to :ref:`REALTIME "
 "<class_Sky_constant_PROCESS_MODE_REALTIME>`."
 msgstr ""
+"盡量避免不必要地更新輻射立方體貼圖。如果您確實需要每影格更新輻射立方體貼圖，"
+"請確保您的 Sky 處理模式 <class_Sky_property_process_mode>` 設定為 :ref:"
+"`REALTIME <class_Sky_constant_PROCESS_MODE_REALTIME>`。"
+
+msgid ""
+"Note that the :ref:`process mode <class_Sky_property_process_mode>` only "
+"affects the rendering of the radiance cubemap. The visible sky is always "
+"rendered by calling the fragment shader for every pixel. With complex "
+"fragment shaders, this can result in a high rendering overhead. If the sky "
+"is static (the conditions listed above are met) or changes slowly, running "
+"the full fragment shader every frame is not needed. This can be avoided by "
+"rendering the full sky into the radiance cubemap, and reading from this "
+"cubemap when rendering the visible sky. With a completely static sky, this "
+"means that it needs to be rendered only once."
+msgstr ""
+
+msgid ""
+"The following code renders the full sky into the radiance cubemap and reads "
+"from that cubemap for displaying the visible sky:"
+msgstr ""
+
+msgid ""
+"This way, the complex calculations happen only in the cubemap pass, which "
+"can be optimized by setting the sky's :ref:`process mode "
+"<class_Sky_property_process_mode>` and the :ref:`radiance size "
+"<class_Sky_property_radiance_size>` to get the desired balance between "
+"performance and visual fidelity."
+msgstr ""
 
 msgid "Render modes"
-msgstr ""
+msgstr "渲染模式"
 
 msgid ""
 "Subpasses allow you to do more expensive calculations at a lower resolution "
 "to speed up your shaders. For example the following code renders clouds at a "
 "lower resolution than the rest of the sky:"
 msgstr ""
+"子通道可讓您以較低的解析度進行更昂貴的計算，以加快著色器的速度。例如，以下程"
+"式碼以低於天空其餘部分的解析度渲染雲："
 
 msgid "Render mode"
-msgstr ""
+msgstr "渲染模式"
 
 msgid "Description"
 msgstr "說明"
 
 msgid "**use_half_res_pass**"
-msgstr ""
+msgstr "**use_half_res_pass**"
 
 msgid "Allows the shader to write to and access the half resolution pass."
-msgstr ""
+msgstr "允許著色器對半解析度階段進行寫入和存取。"
 
 msgid "**use_quarter_res_pass**"
-msgstr ""
+msgstr "**use_quarter_res_pass**"
 
 msgid "Allows the shader to write to and access the quarter resolution pass."
-msgstr ""
+msgstr "允許著色器對四分之一解析度階段進行寫入和存取。"
 
 msgid "**disable_fog**"
-msgstr ""
+msgstr "**disable_fog**"
 
 msgid "If used, fog will not affect the sky."
-msgstr ""
+msgstr "使用後，霧不會影響天空。"
 
 msgid "Built-ins"
-msgstr ""
+msgstr "內建"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
 "optional writing and will not necessarily contain sensible values. Samplers "
 "cannot be written to so they are not marked."
 msgstr ""
+"標記為 \"in\" 的值是唯讀的. 標記為 \"out\" 的值是可以選擇寫入的, 不一定包含合"
+"理的值. 標記為 \"inout\" 的值提供一個合理的預設值, 並且可以選擇寫入. 取樣器不"
+"是寫入的物件, 它們沒有被標記."
 
-#, fuzzy
 msgid "Global built-ins"
 msgstr "定數"
 
 msgid ""
 "Global built-ins are available everywhere, including in custom functions."
-msgstr ""
+msgstr "全域內建的功能隨處可見, 包括自訂功能."
 
 msgid ""
 "There are 4 ``LIGHTX`` lights, accessed as ``LIGHT0``, ``LIGHT1``, "
 "``LIGHT2``, and ``LIGHT3``."
 msgstr ""
+"``LIGHTX`` 燈光有 4 個，可以通過 ``LIGHT0``、``LIGHT1``、``LIGHT2``、"
+"``LIGHT3`` 存取。"
 
 msgid "Built-in"
 msgstr "內建"
 
 msgid "in float **TIME**"
-msgstr ""
+msgstr "in float **TIME**"
 
 msgid "Global time, in seconds."
-msgstr ""
+msgstr "全球時間, 以秒為單位."
 
 msgid "in vec3 **POSITION**"
-msgstr ""
+msgstr "in vec3 **POSITION**"
 
 msgid "Camera position in world space"
-msgstr ""
+msgstr "相機位置，使用世界空間"
 
 msgid "samplerCube **RADIANCE**"
-msgstr ""
+msgstr "samplerCube **RADIANCE**"
 
 msgid ""
 "Radiance cubemap. Can only be read from during background pass. Check ``!"
 "AT_CUBEMAP_PASS`` before using."
 msgstr ""
+"輻射度立方體貼圖。只能在背景階段讀取。使用前請檢查 ``!AT_CUBEMAP_PASS``。"
 
 msgid "in bool **AT_HALF_RES_PASS**"
-msgstr ""
+msgstr "in bool **AT_HALF_RES_PASS**"
 
 msgid "Currently rendering to half resolution pass."
-msgstr ""
+msgstr "目前正在渲染半解析度階段。"
 
 msgid "in bool **AT_QUARTER_RES_PASS**"
-msgstr ""
+msgstr "in bool **AT_QUARTER_RES_PASS**"
 
 msgid "Currently rendering to quarter resolution pass."
-msgstr ""
+msgstr "目前正在渲染四分之一解析度階段。"
 
 msgid "in bool **AT_CUBEMAP_PASS**"
-msgstr ""
+msgstr "in bool **AT_CUBEMAP_PASS**"
 
 msgid "Currently rendering to radiance cubemap."
-msgstr ""
+msgstr "目前正在渲染輻射度立方體貼圖。"
 
 msgid "in bool **LIGHTX_ENABLED**"
-msgstr ""
+msgstr "in bool **LIGHTX_ENABLED**"
 
 msgid ""
 "``LightX`` is visible and in the scene. If ``false``, other light properties "
 "may be garbage."
 msgstr ""
+"場景中存在 ``LightX`` 並且可見。如果為 ``false``，則其他燈光屬性可能為垃圾"
+"值。"
 
 msgid "in float **LIGHTX_ENERGY**"
-msgstr ""
+msgstr "in float **LIGHTX_ENERGY**"
 
 msgid "Energy multiplier for ``LIGHTX``."
-msgstr ""
+msgstr "``LIGHTX`` 的能量乘數。"
 
 msgid "in vec3 **LIGHTX_DIRECTION**"
-msgstr ""
+msgstr "in vec3 **LIGHTX_DIRECTION**"
 
 msgid "Direction that ``LIGHTX`` is facing."
-msgstr ""
+msgstr "``LIGHTX`` 面朝的方向。"
 
 msgid "in vec3 **LIGHTX_COLOR**"
-msgstr ""
+msgstr "in vec3 **LIGHTX_COLOR**"
 
 msgid "Color of ``LIGHTX``."
-msgstr ""
+msgstr "``LIGHTX`` 的顏色。"
 
 msgid "in float **LIGHTX_SIZE**"
-msgstr ""
+msgstr "in float **LIGHTX_SIZE**"
 
 msgid ""
 "Angular diameter of ``LIGHTX`` in the sky. Expressed in degrees. For "
 "reference, the sun from earth is about 0.5 degrees."
 msgstr ""
+"天空中“LIGHTX”的角直徑。以度數表示。作為參考，太陽與地球的夾角約為0.5度。"
 
 msgid "in float **PI**"
-msgstr ""
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ratio of a circle's circumference to its "
 "diameter and amount of radians in half turn."
-msgstr ""
+msgstr "一個“PI”常數（“3.141592”）。圓的周長與其直徑的比率以及半圈的弧度數。"
 
 msgid "in float **TAU**"
-msgstr ""
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
-msgstr ""
+msgstr "一個“TAU”常數（“6.283185”）。相當於“PI * 2”和完整的弧度數。"
 
 msgid "in float **E**"
-msgstr ""
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
 "logarithm."
-msgstr ""
+msgstr "一個“E”常數（“2.718281”）。歐拉數和自然對數的底數。"
 
-#, fuzzy
 msgid "Sky built-ins"
 msgstr "定數"
 
 msgid "in vec3 **EYEDIR**"
-msgstr ""
+msgstr "in vec3 **EYEDIR**"
 
 msgid ""
 "Normalized direction of current pixel. Use this as your basic direction for "
 "procedural effects."
-msgstr ""
+msgstr "目前像素的標準化方向。將此作為程式效果的基本方向。"
 
 msgid "in vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "in vec2 **SCREEN_UV**"
 
 msgid ""
 "Screen UV coordinate for current pixel. Used to map a texture to the full "
 "screen."
-msgstr ""
+msgstr "螢幕目前像素的UV座標."
 
 msgid "in vec2 **SKY_COORDS**"
-msgstr ""
+msgstr "in vec2 **SKY_COORDS**"
 
 msgid "Sphere UV. Used to map a panorama texture to the sky."
-msgstr ""
+msgstr "球體紫外線。用於將全景紋理對應到天空。"
 
 msgid "in vec4 **HALF_RES_COLOR**"
-msgstr ""
+msgstr "in vec4 **HALF_RES_COLOR**"
 
 msgid ""
 "Color value of corresponding pixel from half resolution pass. Uses linear "
 "filter."
-msgstr ""
+msgstr "來自半解析度通道的相應像素的顏色值。使用線性濾波器。"
 
 msgid "in vec4 **QUARTER_RES_COLOR**"
-msgstr ""
+msgstr "in vec4 **QUARTER_RES_COLOR**"
 
 msgid ""
 "Color value of corresponding pixel from quarter resolution pass. Uses linear "
 "filter."
-msgstr ""
+msgstr "來自四分之一解析度通道的相應像素的顏色值。使用線性濾波器。"
 
 msgid "out vec3 **COLOR**"
-msgstr ""
+msgstr "out vec3 **COLOR**"
 
 msgid "Output color."
-msgstr ""
+msgstr "輸出顏色。"
 
 msgid "out float **ALPHA**"
-msgstr ""
+msgstr "out float **ALPHA**"
 
 msgid "Output alpha value, can only be used in subpasses."
-msgstr ""
+msgstr "輸出 alpha 值，只能在子通道中使用。"
 
 msgid "out vec4 **FOG**"
-msgstr ""
+msgstr "out vec4 **FOG**"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

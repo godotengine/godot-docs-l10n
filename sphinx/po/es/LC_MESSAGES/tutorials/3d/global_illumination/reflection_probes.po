@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,6 +19,11 @@ msgstr ""
 
 msgid "Reflection probes"
 msgstr "Reflection Probe"
+
+msgid ""
+"Reflection probes are only supported in the Clustered Forward and Forward "
+"Mobile rendering backends, not the Compatibility backend."
+msgstr ""
 
 #, fuzzy
 msgid ""
@@ -59,9 +64,13 @@ msgstr "Comparaciones visuales"
 msgid "Reflection probe disabled. Environment sky is used as a fallback."
 msgstr ""
 
-#, fuzzy
 msgid "Reflection probe enabled."
-msgstr "Reflection Probe"
+msgstr "Sonda de reflexión habilitada."
+
+msgid ""
+"Reflection probe enabled with LightmapGI used at the same time. The lightmap "
+"appears in the reflection."
+msgstr ""
 
 msgid ""
 "By combining reflection probes with screen-space reflections, you can get "
@@ -254,6 +263,26 @@ msgid ""
 "part of each ReflectionProbe overlap each other's area. The extents should "
 "only overlap as little possible with other reflection probes to improve "
 "rendering performance (typically a few units in 3D space)."
+msgstr ""
+
+msgid "Limitations"
+msgstr "Limitaciones"
+
+msgid ""
+"When using the Forward+ renderer, Godot uses a *clustering* approach for "
+"reflection probe rendering. As many reflection probes as desired can be "
+"added (as long as performance allows). However, there's still a default "
+"limit of 512 *clustered elements* that can be present in the current camera "
+"view. A clustered element is an omni light, a spot light, a :ref:`decal "
+"<doc_using_decals>` or a :ref:`reflection probe <doc_reflection_probes>`. "
+"This limit can be increased by adjusting the **Rendering > Limits > Cluster "
+"Builder > Max Clustered Elements** advanced project setting."
+msgstr ""
+
+msgid ""
+"When using the Forward Mobile backend, only 8 reflection probes can be "
+"applied on each individual Mesh *resource*. If there are more reflection "
+"probes affecting a single mesh, not all of them will be rendered on the mesh."
 msgstr ""
 
 msgid "Translation status"

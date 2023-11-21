@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,7 +27,6 @@ msgstr ""
 "我們已經解釋了場景與腳本有什麼不同。腳本通過了指令式程式碼定義了引擎類別的延"
 "伸，而場景則是用宣告性程式碼定義。"
 
-#, fuzzy
 msgid ""
 "Each system's capabilities are different as a result. Scenes can define how "
 "an extended class initializes, but not what its behavior actually is. Scenes "
@@ -68,7 +67,6 @@ msgstr ""
 msgid "Named types"
 msgstr "有名稱的型別"
 
-#, fuzzy
 msgid ""
 "Scripts can be registered as a new type within the editor itself. This "
 "displays it as a new type in the node or resource creation dialog with an "
@@ -88,7 +86,6 @@ msgstr "建立該基礎型別的實體。"
 msgid "Add the script to the node."
 msgstr "將腳本附加到節點。"
 
-#, fuzzy
 msgid ""
 "With a registered script, the scripted type instead becomes a creation "
 "option like the other nodes and resources in the system. The creation dialog "
@@ -98,7 +95,6 @@ msgstr ""
 "們就不需要再進行上述步驟了。建立對話框中甚至還有一個搜尋框可以按名稱搜尋型"
 "別。"
 
-#, fuzzy
 msgid "There are two systems for registering types:"
 msgstr "有兩種系統可以註冊型別..."
 
@@ -134,7 +130,6 @@ msgstr ""
 "使用 :ref:`EditorPlugin.add_custom_type "
 "<class_EditorPlugin_method_add_custom_type>` 設定。"
 
-#, fuzzy
 msgid ":ref:`Script Classes <doc_gdscript_basics_class_name>`"
 msgstr ":ref:`腳本類別 <doc_scripting_continued_class_name>`"
 
@@ -261,7 +256,6 @@ msgstr ""
 "如果想建立專屬於自己的遊戲的概念，則應該使用場景。場景比較好追蹤與編輯，並且"
 "比起腳本提供更多安全性。"
 
-#, fuzzy
 msgid ""
 "If one would like to give a name to a scene, then they can still sort of do "
 "this by declaring a script class and giving it a scene as a constant. The "

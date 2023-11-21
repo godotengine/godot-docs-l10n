@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,10 +27,9 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"This page lists features supported by the current stable version of Godot "
-"(4.0). Some of these features may not be available in the `LTS release "
-"series (3.x) <https://docs.godotengine.org/en/3.5/about/list_of_features."
-"html>`__."
+"This page lists features supported by the current stable version of Godot. "
+"Some of these features may not be available in the `LTS release series (3.x) "
+"<https://docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
 msgstr ""
 "Esta página lista funcionalidades suportadas pela atual versão estável do "
 "Godot (3.5). `Mais funcionalidades <https://docs.godotengine.org/en/latest/"
@@ -93,6 +92,13 @@ msgid ""
 msgstr ""
 "O Godot visa ser o mais independente possível de plataformas e pode ser "
 "portado para novas plataformas com relativa facilidade."
+
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to the web "
+"platform. To use C# on that platform, consider Godot 3 instead. Android and "
+"iOS platform support is available as of Godot 4.2, but is experimental and :"
+"ref:`some limitations apply <doc_c_sharp_platforms>`."
+msgstr ""
 
 msgid "Editor"
 msgstr "Editor"
@@ -332,6 +338,12 @@ msgstr ""
 msgid "CPU-based particles."
 msgstr "Partículas baseadas em CPU."
 
+msgid ""
+"Optional :ref:`2D HDR rendering "
+"<doc_environment_and_post_processing_using_glow_in_2d>` for better glow "
+"capabilities."
+msgstr ""
+
 msgid "2D tools"
 msgstr "Ferramentas 2D"
 
@@ -502,7 +514,10 @@ msgstr "Luzes unidirecionais."
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Focos de luz com ajuste de ângulo por cone e atenuação."
 
-msgid "Specular energy can be adjusted on a per-light basis."
+#, fuzzy
+msgid ""
+"Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
+"light basis."
 msgstr "A energia especular pode ser ajustada por luz."
 
 msgid ""
@@ -555,8 +570,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"PCSS-like shadow blur based on the light size and distance from the surface "
-"the shadow is cast on."
+":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
+"light size and distance from the surface the shadow is cast on."
 msgstr ""
 
 #, fuzzy
@@ -566,7 +581,10 @@ msgstr "A energia especular pode ser ajustada por luz."
 msgid "**Global illumination with indirect lighting:**"
 msgstr "**Iluminação global por luzes indiretas:**"
 
-msgid "Baked lightmaps (fast, but can't be updated at run-time)."
+#, fuzzy
+msgid ""
+":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
+"at run-time)."
 msgstr ""
 "Lightmaps previamente calculados (rápido, mas não pode ser atualizado "
 "durante a execução)."
@@ -599,19 +617,28 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Voxel-based GI probes. Supports dynamic lights *and* dynamic occluders, "
-"while also supporting reflections. Requires a fast baking step which can be "
-"performed in the editor or at run-time (including from an exported project)."
+"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
+"JNLM, or CPU/GPU-based denoising with OIDN."
 msgstr ""
 
 msgid ""
-"Signed-distance field GI designed for large open worlds. Supports dynamic "
-"lights, but not dynamic occluders. Supports reflections. No baking required."
+":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
+"*and* dynamic occluders, while also supporting reflections. Requires a fast "
+"baking step which can be performed in the editor or at run-time (including "
+"from an exported project)."
 msgstr ""
 
 msgid ""
-"Screen-space indirect lighting (SSIL) at half or full resolution. Fully real-"
-"time and supports any kind of emissive light source (including decals)."
+":ref:`Signed-distance field GI <doc_using_sdfgi>` designed for large open "
+"worlds. Supports dynamic lights, but not dynamic occluders. Supports "
+"reflections. No baking required."
+msgstr ""
+
+msgid ""
+":ref:`Screen-space indirect lighting (SSIL) "
+"<doc_environment_and_post_processing_ssil>` at half or full resolution. "
+"Fully real-time and supports any kind of emissive light source (including "
+"decals)."
 msgstr ""
 
 msgid ""
@@ -625,7 +652,9 @@ msgstr "**Reflexões:**"
 
 msgid ""
 "Voxel-based reflections (when using GI probes) and SDF-based reflections "
-"(when using signed distance field GI)."
+"(when using signed distance field GI). Voxel-based reflections are visible "
+"on transparent surfaces, while rough SDF-based reflections are visible on "
+"transparent surfaces."
 msgstr ""
 
 msgid ""
@@ -663,8 +692,8 @@ msgid "**Decals:**"
 msgstr "**Funcionalidades:**"
 
 msgid ""
-"Supports albedo, emissive, :abbr:`ORM (Occlusion Roughness Metallic)` and "
-"normal mapping."
+":ref:`Supports albedo <doc_using_decals>`, emissive, :abbr:`ORM (Occlusion "
+"Roughness Metallic)`, and normal mapping."
 msgstr ""
 
 msgid ""
@@ -742,6 +771,15 @@ msgstr ""
 msgid "Support for sun scattering in the fog."
 msgstr "Suporte para plugins visuais de shader."
 
+msgid ""
+"Support for controlling how much fog rendering should affect the sky, with "
+"separate controls for traditional and volumetric fog."
+msgstr ""
+
+#, fuzzy
+msgid "Support for making specific materials ignore fog."
+msgstr "Suporte para plugins visuais de shader."
+
 msgid "**Volumetric fog:**"
 msgstr ""
 
@@ -757,7 +795,8 @@ msgstr ""
 
 msgid ""
 "Fog volume nodes that can be placed to add fog to specific areas (or remove "
-"fog from specific areas)."
+"fog from specific areas). Supported shapes include box, ellipse, cone, "
+"cylinder, and 3D texture-based density maps."
 msgstr ""
 
 msgid "Each fog volume can have its own custom shader."
@@ -830,6 +869,11 @@ msgstr ""
 "disponíveis: Tela, Luz Suave, Adicionar, Substituir."
 
 msgid "Glow can have a colored dirt map texture, acting as a lens dirt effect."
+msgstr ""
+
+msgid ""
+"Glow can be :ref:`used as a screen-space blur effect "
+"<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`."
 msgstr ""
 
 #, fuzzy
@@ -1076,17 +1120,30 @@ msgstr ""
 "Empacotado em um binário separado para manter os tamanhos de arquivo e "
 "dependências pequeno."
 
-#, fuzzy
-msgid "Uses .NET 6."
-msgstr "Usa Mono 6.x."
+msgid "Supports .NET 6 and higher."
+msgstr ""
 
 #, fuzzy
 msgid "Full support for the C# 10.0 syntax and features."
 msgstr "Suporte completo para a sintaxe e funcionalidades do C# 7.0."
 
 msgid ""
-"Supports Windows, Linux and macOS. Mobile/web platforms are currently "
-"unsupported. To use C# on mobile/web platforms, use Godot 3 instead."
+"Supports Windows, Linux, and macOS. As of 4.2 experimental support for "
+"Android and iOS is also available (requires a .NET 7.0 project for Android "
+"and 8.0 for iOS)."
+msgstr ""
+
+msgid ""
+"On the Android platform only some architectures are supported: ``arm64`` and "
+"``x64``."
+msgstr ""
+
+msgid "On the iOS platform only some architectures are supported: ``arm64``."
+msgstr ""
+
+msgid ""
+"The web platform is currently unsupported. To use C# on that platform, "
+"consider Godot 3 instead."
 msgstr ""
 
 msgid ""
@@ -1125,8 +1182,8 @@ msgstr ""
 
 msgid ""
 "Actively developed GDExtension bindings for `D <https://github.com/godot-"
-"dlang/godot-dlang>`__, `Haxe <https://hxgodot.github.io/>`__, `Python "
-"<https://github.com/touilleMan/godot-python>`__, and `Rust <https://github."
+"dlang/godot-dlang>`__, `Haxe <https://hxgodot.github.io/>`__, `Swift "
+"<https://github.com/migueldeicaza/SwiftGodot>`__, and `Rust <https://github."
 "com/godot-rust/gdextension>`__ bindings provided by the community. (Some of "
 "these bindings may be experimental and not production-ready)."
 msgstr ""
@@ -1738,11 +1795,11 @@ msgstr ""
 msgid "Read XML files using :ref:`class_XMLParser`."
 msgstr "Leia arquivos XML usando :ref:`class_XMLParser`."
 
-#, fuzzy
 msgid ""
-"Read and write ZIP files using :ref:`class_ZIPReader` and :ref:"
-"`class_ZIPPacker`."
-msgstr "Leia e escreva arquivos binários ou de texto usando :ref:`class_File`."
+":ref:`Load and save images, audio/video, fonts and ZIP archives "
+"<doc_runtime_loading_and_saving>` in an exported project without having to "
+"go through Godot's import system."
+msgstr ""
 
 msgid ""
 "Pack game data into a PCK file (custom format optimized for fast seeking), "

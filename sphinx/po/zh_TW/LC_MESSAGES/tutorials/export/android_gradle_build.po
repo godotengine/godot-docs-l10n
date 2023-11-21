@@ -1,0 +1,120 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Gradle builds for Android"
+msgstr "適用於 Android 的自訂建構"
+
+#, fuzzy
+msgid ""
+"Godot provides the option to build using the gradle buildsystem. Instead of "
+"using the already pre-built template that ships with Godot, an Android Java "
+"project gets installed into your project folder. Godot will then build it "
+"and use it as an export template every time you export the project."
+msgstr ""
+"Godot 中有可以使用自定 Android 樣板的選項。不是使用 Godot 附帶的預編譯樣板，"
+"而是將真正的 Android Java 專案安裝到專案資料夾中。Godot 接著會建置該 Java 專"
+"案，並使用建置結果來在每次匯出專案是作為匯出樣板使用。"
+
+msgid "There are some reasons why you may want to do this:"
+msgstr "有幾個原因會需要這麼做："
+
+msgid "Modify the project before it's built."
+msgstr "要在建置前修改專案。"
+
+msgid "Add external SDKs that build with your project."
+msgstr "建置專案時要加上外部 SDK。"
+
+#, fuzzy
+msgid ""
+"Configuring the gradle build is a fairly straightforward process. But first "
+"you need to follow the steps in :ref:`exporting for "
+"android<doc_exporting_for_android>` up to **Setting it up in Godot**. After "
+"doing that, follow the steps below."
+msgstr ""
+"配置自訂建構是一個相當簡單的過程。但首先你需要按照:ref:`匯出到 Android "
+"<doc_exporting_for_android>` 中的步驟，直到**在 Godot 中設定它**。做完這些"
+"後，按照下面的步驟進行。"
+
+#, fuzzy
+msgid "Set up the gradle build environment"
+msgstr "設定自定建置環境"
+
+#, fuzzy
+msgid "Go to the Project menu, and install the *Gradle Build* template:"
+msgstr "前往 [專案]，然後安裝 **自定建置** 樣板："
+
+msgid ""
+"Make sure export templates are downloaded. If not, this menu will help you "
+"download them."
+msgstr "請確定有下載匯出樣板。若沒下載的話，該選單會協助下載。"
+
+#, fuzzy
+msgid ""
+"A Gradle-based Android project will be created under ``res://android/"
+"build``. Editing these files is not needed unless you really need to modify "
+"the project."
+msgstr ""
+"安裝後會在 ``res://android/build`` 中建立一個基於 Grandle 的 Android 專案。除"
+"非想要 :ref:`建立自己的增益集` 或是真的有需要修改專案，否則沒有必要修改這些檔"
+"案。"
+
+#, fuzzy
+msgid "Enabling the gradle build and exporting"
+msgstr "啟用自定建置與匯出"
+
+#, fuzzy
+msgid ""
+"When setting up the Android project in the **Project > Export** dialog, "
+"**Gradle Build** needs to be enabled:"
+msgstr ""
+"在 **[專案] > [匯出]** 中設定好 Android 專案後，也需要啟用 **Custom Build** "
+"："
+
+msgid ""
+"From now on, attempting to export the project or one-click deploy will call "
+"the `Gradle <https://gradle.org/>`__ build system to generate fresh "
+"templates (this window will appear every time):"
+msgstr ""
+"接著，只要匯出專案或單鍵部署時，就會呼叫 ``Gradle <https://gradle.org/>`_ 建"
+"置系統，並產生新的樣板 (該視窗每次都會出現)："
+
+msgid ""
+"The templates built will be used automatically afterwards, so no further "
+"configuration is needed."
+msgstr "接著會自動使用樣板建置，不需要進一步設定。"
+
+#, fuzzy
+msgid ""
+"When using the gradle Android build system, assets that are placed within a "
+"folder whose name begins with an underscore will not be included in the "
+"generated APK. This does not apply to assets whose *file* name begins with "
+"an underscore."
+msgstr ""
+"使用自訂 Android 建置系統時，放置在名稱以下劃線開頭的資料夾中的資源將不會包含"
+"在產生的 APK 中。這不適用於*檔案*名稱以下劃線開頭的素材。"
+
+msgid ""
+"For example, ``_example/image.png`` will **not** be included as an asset, "
+"but ``_image.png`` will."
+msgstr ""
+"例如，``_example/image.png`` 將**不會**包含為素材，但``_image.png`` 會。"
+
+msgid "Translation status"
+msgstr "翻譯狀態"

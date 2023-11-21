@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,9 +155,8 @@ msgstr "basis"
 msgid "13"
 msgstr "13"
 
-#, fuzzy
 msgid "transform3d"
-msgstr "transform2d"
+msgstr "transform3d"
 
 msgid "14"
 msgstr "14"
@@ -253,12 +252,11 @@ msgstr "28"
 msgid "color array"
 msgstr "颜色数组"
 
-#, fuzzy
 msgid "29"
-msgstr "2"
+msgstr "29"
 
 msgid "max"
-msgstr "最大值"
+msgstr "max"
 
 msgid ""
 "Following this is the actual packet contents, which varies for each type of "
@@ -548,74 +546,62 @@ msgid ""
 "``full_objects = false``, or with ``full_objects = true``."
 msgstr ""
 
-#, fuzzy
 msgid "A null value"
-msgstr "枚举值"
+msgstr "空值"
 
-#, fuzzy
 msgid "Zero (32-bit signed integer)"
-msgstr "32位有符号整数"
+msgstr "零（32 位带符号整数）"
 
 msgid "``full_objects`` disabled"
-msgstr ""
+msgstr "禁用 ``full_objects``"
 
-#, fuzzy
 msgid "The Object instance ID (64-bit signed integer)"
-msgstr "64位有符号整数"
+msgstr "Object 实例 ID（64 位带符号整数）"
 
 msgid "``full_objects`` enabled"
-msgstr ""
+msgstr "启用 ``full_objects``"
 
-#, fuzzy
 msgid "Class name (String length)"
-msgstr "字符串长度"
+msgstr "类名（字符串长度）"
 
-#, fuzzy
 msgid "Class name (UTF-8 encoded string)"
-msgstr "UTF-8 编码字符串"
+msgstr "类名（UTF-8 编码字符串）"
 
-#, fuzzy
 msgid "X+8"
-msgstr "X+0"
+msgstr "X+8"
 
-#, fuzzy
 msgid "The number of properties that are serialized"
-msgstr "这里有两个属性："
+msgstr "序列化的属性数"
 
-#, fuzzy
 msgid "For each property:"
-msgstr "Area 的属性"
+msgstr "对于每一个属性："
 
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
-#, fuzzy
 msgid "Property name (String length)"
-msgstr "字符串长度"
+msgstr "属性名称（字符串长度）"
 
-#, fuzzy
 msgid "Y+4"
-msgstr "X+4"
+msgstr "Y+4"
 
 msgid "Z"
-msgstr ""
+msgstr "Z"
 
-#, fuzzy
 msgid "Property name (UTF-8 encoded string)"
-msgstr "UTF-8 编码字符串"
+msgstr "属性名称（UTF-8 编码字符串）"
 
 msgid "Y+4+Z"
-msgstr ""
+msgstr "Y+4+Z"
 
 msgid "W"
-msgstr ""
+msgstr "W"
 
-#, fuzzy
 msgid "<variable>"
-msgstr "变量"
+msgstr "<可变>"
 
 msgid "Property value, using this same format"
-msgstr ""
+msgstr "属性值，格式相同"
 
 msgid ""
 "Not all properties are included. Only properties that are configured with "
@@ -623,15 +609,15 @@ msgid ""
 "`PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` "
 "flag set will be serialized. You can add a new usage flag to a property by "
 "overriding the :ref:"
-"`_get_property_list<class_Object_method__get_property_list>` method in your "
-"class. You can also check how property usage is configured by calling "
-"``Object._get_property_list`` See :ref:"
+"`_get_property_list<class_Object_private_method__get_property_list>` method "
+"in your class. You can also check how property usage is configured by "
+"calling ``Object._get_property_list`` See :ref:"
 "`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` for the possible "
 "usage flags."
 msgstr ""
 
 msgid "18: :ref:`Dictionary<class_dictionary>`"
-msgstr "18: :ref:`Dictionary<class_dictionary>`"
+msgstr "18：\\ :ref:`Dictionary<class_dictionary>`"
 
 msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
 msgstr "val&0x7FFFFFFF = 元素，val&0x80000000 = 共享（bool）"
@@ -642,16 +628,15 @@ msgid ""
 msgstr "然后，后续就有“元素”数量个连续的键值对，使用的也是这种相同的格式。"
 
 msgid "19: :ref:`Array<class_array>`"
-msgstr "19: :ref:`Array<class_array>`"
+msgstr "19：\\ :ref:`Array<class_array>`"
 
 msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
 msgstr "然后，后续就有“元素”数量个连续的值，使用的也是这种相同的格式。"
 
-#, fuzzy
 msgid "20: :ref:`PackedByteArray<class_PackedByteArray>`"
-msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
+msgstr "20：\\ :ref:`PackedByteArray<class_PackedByteArray>`"
 
 msgid "Array length (Bytes)"
 msgstr "数组长度（字节）"
@@ -668,9 +653,8 @@ msgstr "字节 (0..255)"
 msgid "The array data is padded to 4 bytes."
 msgstr "数组数据填充为4个字节."
 
-#, fuzzy
 msgid "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
-msgstr ":ref:`PoolIntArray <class_PoolIntArray>`"
+msgstr "21：\\ :ref:`PackedInt32Array<class_PackedInt32Array>`"
 
 msgid "Array length (Integers)"
 msgstr "数组长度（整数）"
@@ -678,35 +662,29 @@ msgstr "数组长度（整数）"
 msgid "8..8+length\\*4"
 msgstr "8..8+长度\\*4"
 
-#, fuzzy
 msgid "22: :ref:`PackedInt64Array<class_PackedInt64Array>`"
-msgstr ":ref:`PoolIntArray <class_PoolIntArray>`"
+msgstr "22：\\ :ref:`PackedInt64Array<class_PackedInt64Array>`"
 
 msgid "8..8+length\\*8"
 msgstr "8..8+长度\\*8"
 
-#, fuzzy
 msgid "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
-msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
+msgstr "23：\\ :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
 
 msgid "Array length (Floats)"
 msgstr "数组长度（浮点数）"
 
-#, fuzzy
 msgid "32-bit IEEE 754 single-precision float"
-msgstr "IEEE 754 单精度浮点数"
+msgstr "32 位 IEEE 754 单精度浮点数"
 
-#, fuzzy
 msgid "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
-msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
+msgstr "24：\\ :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
 
-#, fuzzy
 msgid "64-bit IEEE 754 double-precision float"
-msgstr "IEEE 754 双精度浮点数"
+msgstr "64 位 IEEE 754 双精度浮点数"
 
-#, fuzzy
 msgid "25: :ref:`PackedStringArray<class_PackedStringArray>`"
-msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
+msgstr "25：\\ :ref:`PackedStringArray<class_PackedStringArray>`"
 
 msgid "Array length (Strings)"
 msgstr "数组长度（字符串）"

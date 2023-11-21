@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Custom platform ports"
-msgstr "导出自定义 HTML 页面"
+msgstr "自定义平台的移植"
 
 msgid ""
 "Similar to :ref:`doc_custom_modules_in_cpp`, Godot's multi-platform "
@@ -36,7 +35,7 @@ msgid ""
 msgstr ""
 
 msgid "Some reasons to create custom platform ports might be:"
-msgstr ""
+msgstr "创建自定义平台移植可能有以下原因："
 
 msgid ""
 "You want to :ref:`port your game to consoles <doc_consoles>`, but wish to "
@@ -79,56 +78,39 @@ msgid ""
 "custom platform port:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`Windows <https://github.com/godotengine/godot/tree/master/platform/"
 "windows>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`Windows <https://github.com/godotengine/godot/tree/master/platform/"
+"windows>`__"
 
-#, fuzzy
 msgid ""
 "`macOS <https://github.com/godotengine/godot/tree/master/platform/macos>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`macOS <https://github.com/godotengine/godot/tree/master/platform/macos>`__"
 
-#, fuzzy
 msgid ""
 "`Linux/\\*BSD <https://github.com/godotengine/godot/tree/master/platform/"
 "linuxbsd>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`Linux/\\*BSD <https://github.com/godotengine/godot/tree/master/platform/"
+"linuxbsd>`__"
 
-#, fuzzy
 msgid ""
 "`Android <https://github.com/godotengine/godot/tree/master/platform/"
 "android>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`Android <https://github.com/godotengine/godot/tree/master/platform/"
+"android>`__"
 
-#, fuzzy
 msgid "`iOS <https://github.com/godotengine/godot/tree/master/platform/ios>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`iOS <https://github.com/godotengine/godot/tree/master/platform/ios>`__"
 
-#, fuzzy
-msgid ""
-"`UWP <https://github.com/godotengine/godot/tree/master/platform/uwp>`__ "
-"*(not currently working)*"
-msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
-
-#, fuzzy
 msgid "`Web <https://github.com/godotengine/godot/tree/master/platform/web>`__"
 msgstr ""
-"`editor/icons <https://github.com/godotengine/godot/tree/master/editor/"
-"icons>`__"
+"`Web <https://github.com/godotengine/godot/tree/master/platform/web>`__"
 
 msgid ""
 "While platform code is usually self-contained, there are exceptions to this "
@@ -137,9 +119,8 @@ msgid ""
 "com/godotengine/godot/tree/master/drivers>`__ of the Godot source code."
 msgstr ""
 
-#, fuzzy
 msgid "Creating a custom platform port"
-msgstr "创建自定义节点"
+msgstr "创建自定义平台移植"
 
 msgid ""
 "Creating a custom platform port is a large undertaking which requires prior "
@@ -148,7 +129,7 @@ msgid ""
 msgstr ""
 
 msgid "Required features of a platform port"
-msgstr ""
+msgstr "平台移植需要的功能"
 
 msgid ""
 "At the very least, a platform port must have methods from the :ref:"
@@ -176,9 +157,8 @@ msgid ""
 "as a reference."
 msgstr ""
 
-#, fuzzy
 msgid "**detect.py file**"
-msgstr "**depth_test_disable**"
+msgstr "**detect.py 文件**"
 
 msgid ""
 "A ``detect.py`` file must be created within the platform's folder with all "
@@ -189,7 +169,7 @@ msgid ""
 msgstr ""
 
 msgid "All methods should be implemented within ``detect.py`` as follows:"
-msgstr ""
+msgstr "``detect.py`` 应实现如下所有方法："
 
 msgid ""
 "``is_active()``: Can be used to temporarily disable building for a platform. "
@@ -222,7 +202,7 @@ msgid ""
 msgstr ""
 
 msgid "Optional features of a platform port"
-msgstr ""
+msgstr "平台移植的可选功能"
 
 msgid ""
 "In practice, headless operation doesn't suffice if you want to see anything "
@@ -284,13 +264,12 @@ msgid ""
 "logs aren't readily accessible."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`Text-to-speech driver <https://github.com/godotengine/godot/blob/master/"
 "platform/linuxbsd/tts_linux.cpp>`__ (for accessibility)."
 msgstr ""
 "`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
-"os/file_access.h>`_"
+"os/file_access.h>`_ 。"
 
 msgid ""
 "`Export handler <https://github.com/godotengine/godot/tree/master/platform/"

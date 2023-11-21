@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,11 +24,14 @@ msgid ""
 "In this part, you're going to code the monsters, which we'll call mobs. In "
 "the next lesson, we'll spawn them randomly around the playable area."
 msgstr ""
+"在這一部分中，我們要為怪物編寫程式碼，我們後續會稱之為“mob”（小怪）。在下一節"
+"課中，我們會在遊戲區域周圍隨機生成它們。"
 
 msgid ""
 "Let's design the monsters themselves in a new scene. The node structure is "
 "going to be similar to the ``player.tscn`` scene."
 msgstr ""
+"讓我們在一個新場景中設計這些怪物。節點結構和 ``player.tscn`` 場景類似。"
 
 msgid ""
 "Create a scene with, once again, a :ref:`CharacterBody3D "
@@ -37,47 +40,51 @@ msgid ""
 "file ``mob.glb`` from the *FileSystem* dock onto the ``Pivot`` to add the "
 "monster's 3D model to the scene."
 msgstr ""
+"還是用 :ref:`CharacterBody3D <class_CharacterBody3D>` 節點作為根節點來建立場"
+"景。命名為 *Mob*。新增一個 :ref:`Node3D <class_Node3D>` 節點作為其子項，將其"
+"命名為 *Pivot*。將 ``mob.glb`` 檔從*檔案系統*面板拖放到 *Pivot* 上，這樣就把"
+"怪物的 3D 模型新增到了場景之中。"
 
 msgid "You can rename the newly created ``mob`` node into ``Character``."
-msgstr ""
+msgstr "你可以將新建立的 ``mob`` 節點重命名成 ``Character``。"
 
 msgid "|image0|"
 msgstr "\\ |image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "\\ |image0|"
+msgstr "image0"
 
 msgid ""
 "We need a collision shape for our body to work. Right-click on the ``Mob`` "
 "node, the scene's root, and click *Add Child Node*."
 msgstr ""
+"我們的實體要新增碰撞形狀後才能正常工作。按右鍵場景的根節點 *Mob*，然後按一下*"
+"新增子節點*。"
 
 msgid "|image1|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "\\ |image1|"
+msgstr "image1"
 
-#, fuzzy
 msgid "Add a :ref:`CollisionShape3D <class_CollisionShape3D>`."
 msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
 msgid "|image2|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "\\ |image2|"
+msgstr "image2"
 
 msgid "In the *Inspector*, assign a *BoxShape3D* to the *Shape* property."
-msgstr ""
+msgstr "在*屬性面板*中為 *Shape*（形狀）屬性分配一個 *BoxShape3D*。"
 
 msgid ""
 "We should change its size to fit the 3D model better. You can do so "
 "interactively by clicking and dragging on the orange dots."
 msgstr ""
+"我們要調整一下它的大小，來更好地框住 3D 模型。可以按一下並拖動橙色的小點來進"
+"行。"
 
 msgid ""
 "The box should touch the floor and be a little thinner than the model. "
@@ -86,13 +93,15 @@ msgid ""
 "compared to the 3D model, you may die at a distance from the monster, and "
 "the game will feel unfair to the players."
 msgstr ""
+"碰撞盒應該接觸地面，並且比模型稍微瘦一點點。即便玩家的球體只接觸了這個碰撞盒"
+"的角落，物理引擎也會判定發生了碰撞。如果盒子比 3D 模型要大一點，你可能距離怪"
+"物還有一定的距離就死了，玩家就會覺得不公平。"
 
 msgid "|image4|"
 msgstr "\\ |image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "\\ |image4|"
+msgstr "image4"
 
 msgid ""
 "Notice that my box is taller than the monster. It is okay in this game "
@@ -100,8 +109,10 @@ msgid ""
 "Collision shapes don't have to match the model exactly. It's the way the "
 "game feels when you test it that should dictate their form and size."
 msgstr ""
+"請注意，我的盒子要比怪物稍高。在這個遊戲裡是沒問題的，因為我們是從遊戲場景的"
+"上方用固定角度觀察的。碰撞形狀不必精確配對模型。決定碰撞形狀形式和大小的關鍵"
+"是你在試玩遊戲時的手感。"
 
-#, fuzzy
 msgid "Removing monsters off-screen"
 msgstr "刪除舊的怪物"
 
@@ -111,6 +122,9 @@ msgid ""
 "want that. Each mob instance has both a memory and a processing cost, and we "
 "don't want to pay for it when the mob is outside the screen."
 msgstr ""
+"我們要在遊戲關卡中按照一定的時間間隔刷怪。如果你不小心，它們的數量可能就會無"
+"限地增長下去，我們可不想那樣。每個小怪實例都需要付出一定的記憶體和處理代價，"
+"我們不希望讓螢幕之外的小怪浪費資源。"
 
 msgid ""
 "Once a monster leaves the screen, we don't need it anymore, so we should "
@@ -118,6 +132,9 @@ msgid ""
 "`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>`, and we're "
 "going to use it to destroy our mobs."
 msgstr ""
+"怪物離開螢幕之後，我們就不再需要它了，所以我們可以把它刪除。Godot 有一個可以"
+"偵測物件離開螢幕的節點， :ref:`VisibleOnScreenNotifier3D "
+"<class_VisibleOnScreenNotifier3D>` ，我們就要用它來銷毀我們的小怪。"
 
 msgid ""
 "When you keep instancing an object, there's a technique you can use to avoid "
@@ -125,6 +142,9 @@ msgid ""
 "It consists of pre-creating an array of objects and reusing them over and "
 "over."
 msgstr ""
+"如果要在遊戲中不斷產生實體同一種物件，可以通過一種叫“池化”（pooling）的技術來"
+"避免持續地建立和銷毀實例。做法是預先建立一個該物件的陣列，然後去不斷地重用裡"
+"面的元素。"
 
 msgid ""
 "When working with GDScript, you don't need to worry about this. The main "
@@ -133,32 +153,37 @@ msgid ""
 "reference counting, which doesn't have that caveat. You can learn more about "
 "that here: :ref:`doc_gdscript_basics_memory_management`."
 msgstr ""
+"使用 GDScript 時，你不必擔心這個問題。用物件集區的主要目的是避免 C# 或 Lua 等"
+"帶垃圾回收的語言帶來的停滯。GDScript 管理記憶體的技術和它們是不同的，用的是引"
+"用計數，不會產生那種問題。你可以在這裡瞭解更多相關內容：:ref:"
+"`doc_gdscript_basics_memory_management`。"
 
 msgid ""
 "Select the ``Mob`` node and add a child node :ref:`VisibleOnScreenNotifier3D "
 "<class_VisibleOnScreenNotifier3D>`. Another box, pink this time, appears. "
 "When this box completely leaves the screen, the node will emit a signal."
 msgstr ""
+"選中 ``Mob`` 節點，並為其新增一個 :ref:`VisibleOnScreenNotifier3D "
+"<class_VisibleOnScreenNotifier3D>` 作為子項。這回出現的就是一個粉色的框。這個"
+"框完全離開螢幕後，該節點就會發出訊號。"
 
 msgid "|image5|"
 msgstr "\\ |image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "\\ |image5|"
+msgstr "image5"
 
 msgid "Resize it using the orange dots until it covers the entire 3D model."
-msgstr ""
+msgstr "使用橙色的點來調整大小，讓它覆蓋住整個 3D 模型。"
 
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "\\ |image1|"
+msgstr "image6"
 
 msgid "Coding the mob's movement"
-msgstr ""
+msgstr "為小怪的移動編寫程式碼"
 
 msgid ""
 "Let's implement the monster's motion. We're going to do this in two steps. "
@@ -166,23 +191,27 @@ msgid ""
 "initialize the monster. We'll then code the randomized spawn mechanism in "
 "the ``main.tscn`` scene and call the function from there."
 msgstr ""
+"讓我們來實作怪物的運動。我們要分兩步來實作。首先，我們要為 ``Mob`` 編寫腳本，"
+"定義初始化怪物的函式。然後我們會在 ``main.tscn`` 場景中編寫隨機刷怪的機制並進"
+"行呼叫。"
 
-#, fuzzy
 msgid "Attach a script to the ``Mob``."
 msgstr "將腳本附加到節點。"
 
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "\\ |image1|"
+msgstr "image7"
 
 msgid ""
 "Here's the movement code to start with. We define two properties, "
 "``min_speed`` and ``max_speed``, to define a random speed range, which we "
 "will later use to define ``CharacterBody3D.velocity``."
 msgstr ""
+"這是最初的移動程式碼。我們定義了兩個屬性 ``min_speed`` 和 ``max_speed``（最小"
+"速度和最大速度）來定義隨機速度的範圍，後面我們會用這兩個屬性來定義 "
+"``CharacterBody3D.velocity``。"
 
 msgid ""
 "Similarly to the player, we move the mob every frame by calling the function "
@@ -190,17 +219,24 @@ msgid ""
 "``velocity`` every frame; we want the monster to move at a constant speed "
 "and leave the screen, even if it were to hit an obstacle."
 msgstr ""
+"與玩家類似，在每一影格我們都會通過呼叫 ``CharacterBody3D.move_and_slide()`` "
+"方法來移動小怪。這一回，我們不會再每影格更新 ``velocity`` 了：我們希望怪物勻"
+"速移動，然後離開螢幕，即便碰到障礙物也一樣。"
 
 msgid ""
 "We need to define another function to calculate the ``CharacterBody3D."
 "velocity``. This function will turn the monster towards the player and "
 "randomize both its angle of motion and its velocity."
 msgstr ""
+"我們需要再定義一個函式來計算初始的速度。這個函式會讓怪物面朝玩家，並將其運動"
+"角度和速度隨機化。"
 
 msgid ""
 "The function will take a ``start_position``,the mob's spawn position, and "
 "the ``player_position`` as its arguments."
 msgstr ""
+"這個函式接受小怪的生成位置 ``start_position`` 以及玩家的位置 "
+"``player_position`` 作為參數。"
 
 msgid ""
 "We position the mob at ``start_position`` and turn it towards the player "
@@ -208,6 +244,9 @@ msgid ""
 "rotating a random amount around the Y axis. Below, ``randf_range()`` outputs "
 "a random value between ``-PI / 4`` radians and ``PI / 4`` radians."
 msgstr ""
+"我們首先將小怪定位在 ``start_position`` 並用 ``look_at_from_position()`` 方法"
+"將它轉向玩家，並通過圍繞 Y 軸旋轉隨機量來隨機化角度。下面，``rand_range()`` "
+"輸出一個介於 ``-PI / 4`` 弧度和 ``PI / 4`` 弧度的隨機值。"
 
 msgid ""
 "We got a random position, now we need a ``random_speed``. ``randi_range()`` "
@@ -216,8 +255,12 @@ msgid ""
 "to multiply our ``CharacterBody3D.velocity``. After ``random_speed`` is "
 "applied, we rotate ``CharacterBody3D.velocity`` Vector3 towards the player."
 msgstr ""
+"我們已經獲取到了一個隨機的位置，現在我們需要一個 ``random_speed``。"
+"``randi_range()`` 可以給我們需要的隨機整數，並且我們要使用 ``min_speed`` 和 "
+"``max_speed``。``random_speed`` 是一個整數，我們只是使用它與我們的 "
+"``CharacterBody3D.velocity`` 相乘。在乘完 ``random_speed`` 之後，我們將 "
+"``random_speed`` 旋轉至朝向玩家的方向。"
 
-#, fuzzy
 msgid "Leaving the screen"
 msgstr "測試場景"
 
@@ -227,18 +270,22 @@ msgid ""
 "<class_VisibleOnScreenNotifier3D>` node's ``screen_exited`` signal to the "
 "``Mob``."
 msgstr ""
+"我們還需要在小怪離開螢幕後將其銷毀。實作方法是將 :ref:"
+"`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>` 節點的 "
+"``screen_exited`` 訊號連接到 ``Mob`` 上。"
 
 msgid ""
 "Head back to the 3D viewport by clicking on the *3D* label at the top of the "
 "editor. You can also press :kbd:`Ctrl + F2` (:kbd:`Alt + 2` on macOS)."
 msgstr ""
+"按一下編輯器頂部的 *3D* 標籤回到 3D 視口。你也可以按 :kbd:`Ctrl + F2`（macOS "
+"上則是 :kbd:`Alt + 2`）。"
 
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "\\ |image1|"
+msgstr "image8"
 
 msgid ""
 "Select the :ref:`VisibleOnScreenNotifier3D "
@@ -246,38 +293,41 @@ msgid ""
 "interface, navigate to the *Node* dock. Double-click the ``screen_exited()`` "
 "signal."
 msgstr ""
+"選中 :ref:`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>` 節"
+"點，然後在介面右側打開*節點*面板。按兩下 ``screen_exited()`` 訊號。"
 
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "\\ |image1|"
+msgstr "image9"
 
-#, fuzzy
 msgid "Connect the signal to the ``Mob``"
 msgstr "連接訊號至方法"
 
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "\\ |image1|"
+msgstr "image10"
 
 msgid ""
 "This will take you back to the script editor and add a new function for you, "
 "``_on_visible_on_screen_notifier_3d_screen_exited()``. From it, call the "
 "``queue_free()`` method. This function destroy the instance it's called on."
 msgstr ""
+"這樣你就會被帶回到腳本編輯器，並且幫你新增了一個新的函式 "
+"``_on_visible_on_screen_notifier_3d_screen_exited()``。請在裡面呼叫 "
+"``queue_free()`` 方法。這樣 :ref:`VisibleOnScreenNotifier3D "
+"<class_VisibleOnScreenNotifier3D>` 的框離開螢幕時就會將小怪的實例銷毀。"
 
 msgid ""
 "Our monster is ready to enter the game! In the next part, you will spawn "
 "monsters in the game level."
-msgstr ""
+msgstr "我們的怪物已經準備好進入遊戲了！在下一部分，你將在遊戲關卡中生成怪物。"
 
 msgid "Here is the complete ``Mob.gd`` script for reference."
-msgstr ""
+msgstr "這是僅供參考的完整 ``Mob.gd`` 腳本。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

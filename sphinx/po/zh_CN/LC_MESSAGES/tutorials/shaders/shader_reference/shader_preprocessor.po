@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Shader preprocessor"
-msgstr "顶点处理器"
+msgstr "着色器预处理器"
 
 msgid "Why use a shader preprocessor?"
-msgstr ""
+msgstr "为什么要使用着色器预处理器？"
 
 msgid ""
 "In programming languages, a *preprocessor* allows changing the code before "
@@ -49,23 +48,23 @@ msgid ""
 "visual shaders."
 msgstr ""
 
-#, fuzzy
 msgid "Directives"
-msgstr "方向"
+msgstr "指令"
 
-#, fuzzy
 msgid "General syntax"
-msgstr "一般定义"
+msgstr "常规语法"
 
 msgid ""
 "Preprocessor directives do not use brackets (``{}``), but can use "
 "parentheses."
-msgstr ""
+msgstr "预处理器指令不使用大括号（\\ ``{}``\\ ），但会用到括号。"
 
 msgid ""
 "Preprocessor directives **never** end with semicolons (with the exception of "
 "``#define``, where this is allowed but potentially dangerous)."
 msgstr ""
+"预处理器指令\\ **从不**\\ 以分号结尾（除非是 ``#define``\\ ，允许这么做，但是"
+"可能比较危险）。"
 
 msgid ""
 "Preprocessor directives can span several lines by ending each line with a "
@@ -74,17 +73,17 @@ msgid ""
 msgstr ""
 
 msgid "#define"
-msgstr ""
+msgstr "#define"
 
 msgid "**Syntax:** ``#define <identifier> [replacement_code]``."
-msgstr ""
+msgstr "**语法：**\\ ``#define <标识符> [替换代码]``."
 
 msgid ""
 "Defines the identifier after that directive as a macro, and replaces all "
 "successive occurrences of it with the replacement code given in the shader. "
 "Replacement is performed on a \"whole words\" basis, which means no "
 "replacement is performed if the string is part of another string (without "
-"any spaces separating it)."
+"any spaces or operators separating it)."
 msgstr ""
 
 msgid ""
@@ -95,6 +94,13 @@ msgstr ""
 msgid ""
 "If the replacement code is not defined, the identifier may only be used with "
 "``#ifdef`` or ``#ifndef`` directives."
+msgstr ""
+
+msgid ""
+"If the *concatenation* symbol (``##``) is present in the replacement code "
+"then it will be removed upon macro insertion, together with any space "
+"surrounding it, and join the surrounding words and arguments into a new "
+"token."
 msgstr ""
 
 msgid ""
@@ -110,10 +116,10 @@ msgid ""
 msgstr ""
 
 msgid "#undef"
-msgstr ""
+msgstr "#undef"
 
 msgid "**Syntax:** ``#undef identifier``"
-msgstr ""
+msgstr "**语法：**\\ ``#undef 标识符``"
 
 msgid ""
 "The ``#undef`` directive may be used to cancel a previously defined "
@@ -125,12 +131,11 @@ msgid ""
 "error."
 msgstr ""
 
-#, fuzzy
 msgid "#if"
-msgstr "if"
+msgstr "#if"
 
 msgid "**Syntax:** ``#if <condition>``"
-msgstr ""
+msgstr "**语法：**\\ ``#if <条件>``"
 
 msgid ""
 "The ``#if`` directive checks whether the ``condition`` passed. If it "
@@ -201,9 +206,8 @@ msgid ""
 "significantly."
 msgstr ""
 
-#, fuzzy
 msgid "#elif"
-msgstr "elif"
+msgstr "#elif"
 
 msgid ""
 "The ``#elif`` directive stands for \"else if\" and checks the condition "
@@ -216,10 +220,10 @@ msgid "Like with ``#if``, the ``defined()`` preprocessor function can be used:"
 msgstr ""
 
 msgid "#ifdef"
-msgstr ""
+msgstr "#ifdef"
 
 msgid "**Syntax:** ``#ifdef <identifier>``"
-msgstr ""
+msgstr "**语法：**\\ ``#ifdef <标识符>``"
 
 msgid ""
 "This is a shorthand for ``#if defined(...)``. Checks whether the passed "
@@ -236,10 +240,10 @@ msgid ""
 msgstr ""
 
 msgid "#ifndef"
-msgstr ""
+msgstr "#ifndef"
 
 msgid "**Syntax:** ``#ifndef <identifier>``"
-msgstr ""
+msgstr "**语法：**\\ ``#ifndef <标识符>``"
 
 msgid ""
 "This is a shorthand for ``#if !defined(...)``. Similar to ``#ifdef``, but "
@@ -252,12 +256,11 @@ msgid ""
 "where ``#ifdef`` would never match, and vice versa."
 msgstr ""
 
-#, fuzzy
 msgid "#else"
-msgstr "else"
+msgstr "#else"
 
 msgid "**Syntax:** ``#else``"
-msgstr ""
+msgstr "**语法：**\\ ``#else``"
 
 msgid ""
 "Defines the optional block which is included when the previously defined "
@@ -265,22 +268,21 @@ msgid ""
 msgstr ""
 
 msgid "#endif"
-msgstr ""
+msgstr "#endif"
 
 msgid "**Syntax:** ``#endif``"
-msgstr ""
+msgstr "**语法：**\\ ``#endif``"
 
 msgid ""
 "Used as terminator for the ``#if``, ``#ifdef``, ``#ifndef`` or subsequent "
 "``#else`` directives."
 msgstr ""
 
-#, fuzzy
 msgid "#include"
-msgstr "标头引入"
+msgstr "#include"
 
 msgid "**Syntax:** ``#include \"path\"``"
-msgstr ""
+msgstr "**语法：**\\ ``#include \"路径\"``"
 
 msgid ""
 "The ``#include`` directive includes the *entire* content of a shader include "
@@ -337,18 +339,17 @@ msgstr ""
 msgid "To avoid infinite recursion, include depth is limited to 25 steps."
 msgstr ""
 
-#, fuzzy
 msgid "Example shader include file:"
-msgstr "玩家代码示例："
+msgstr "示例着色器头文件："
 
 msgid "Example base shader (using the include file we created above):"
 msgstr ""
 
 msgid "#pragma"
-msgstr ""
+msgstr "#pragma"
 
 msgid "**Syntax:** ``#pragma value``"
-msgstr ""
+msgstr "**语法：**\\ ``#pragma 值``"
 
 msgid ""
 "The ``#pragma`` directive provides additional information to the "

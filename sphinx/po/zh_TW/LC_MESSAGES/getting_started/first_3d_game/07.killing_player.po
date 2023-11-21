@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,8 @@ msgid ""
 "We can kill enemies by jumping on them, but the player still can't die. "
 "Let's fix this."
 msgstr ""
+"我們可以通過跳到敵人身上來殺死他們，但玩家仍然不能死亡。讓我們來解決這個問"
+"題。"
 
 msgid ""
 "We want to detect being hit by an enemy differently from squashing them. We "
@@ -32,32 +34,36 @@ msgid ""
 "collisions. Instead, though, we will use an :ref:`Area3D <class_Area3D>` "
 "node, which works well for hitboxes."
 msgstr ""
+"我們希望偵測到被敵人擊中與壓扁敵人時的不同。我們希望玩家在地板上移動時死亡，"
+"但如果他們在空中，則不會死亡。我們可以使用向量數學來區分這兩種碰撞。但是，我"
+"們將使用 :ref:`Area3D <class_Area3D>` 節點，該節點適用於命中框。"
 
 msgid "Hitbox with the Area node"
-msgstr ""
+msgstr "使用 Area 節點製作攻擊框"
 
 msgid ""
 "Head back to the ``player.tscn`` scene and add a new child node :ref:`Area3D "
 "<class_Area3D>`. Name it ``MobDetector`` Add a :ref:`CollisionShape3D "
 "<class_CollisionShape3D>` node as a child of it."
 msgstr ""
+"回到 ``player.tscn`` 場景，新增一個新的 :ref:`Area3D <class_Area3D>`子節點。"
+"把它命名為 ``MobDetector``（小怪偵測器）。新增一個 :ref:`CollisionShape3D "
+"<class_CollisionShape3D>` 節點作為它的一個子節點。"
 
 msgid "|image0|"
 msgstr "\\ |image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "\\ |image0|"
+msgstr "image0"
 
 msgid "In the *Inspector*, assign a cylinder shape to it."
-msgstr ""
+msgstr "在*屬性面板*中，給它指定一個圓柱體形狀。"
 
 msgid "|image1|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "\\ |image1|"
+msgstr "image1"
 
 msgid ""
 "Here is a trick you can use to make the collisions only happen when the "
@@ -65,22 +71,26 @@ msgid ""
 "and move it up to the top of the character. This way, when the player jumps, "
 "the shape will be too high up for the enemies to collide with it."
 msgstr ""
+"這裡有一個技巧，你可以用它來使碰撞只發生在玩家在地面上或靠近地面時。您可以降"
+"低圓柱體的高度並將其向上移動到角色的頂部。這樣，當玩家跳躍時，形狀會太高，敵"
+"人無法與之碰撞。"
 
 msgid "|image2|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "\\ |image2|"
+msgstr "image2"
 
 msgid ""
 "You also want the cylinder to be wider than the sphere. This way, the player "
 "gets hit before colliding and being pushed on top of the monster's collision "
 "box."
 msgstr ""
+"你還希望圓柱體比球體更寬。這樣一來，玩家在碰撞之前就會被擊中，並被推到怪物的"
+"碰撞盒之上。"
 
 msgid "The wider the cylinder, the more easily the player will get killed."
-msgstr ""
+msgstr "圓柱體越寬，玩家就越容易被殺死。"
 
 msgid ""
 "Next, select the ``MobDetector`` node again, and in the *Inspector*, turn "
@@ -89,13 +99,16 @@ msgid ""
 "detect collisions. Then, remove the *Collision -> Layer* and set the mask to "
 "the \"enemies\" layer."
 msgstr ""
+"接下來，再次選擇 ``MobDetector`` 節點，並在*屬性面板*中， **關閉** 其 "
+"*Monitorable* 屬性。這使得其他物理節點無法偵測到這個區域。補充的 "
+"*Monitoring* 屬性允許它偵測碰撞。然後，清除 *Collision -> Layer*，並將遮罩設"
+"定為“enemies”層。"
 
 msgid "|image3|"
 msgstr "\\ |image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "\\ |image3|"
+msgstr "image3"
 
 msgid ""
 "When areas detect a collision, they emit signals. We're going to connect one "
@@ -103,13 +116,14 @@ msgid ""
 "*Node* tab, double-click the ``body_entered`` signal and connect it to the "
 "``Player``"
 msgstr ""
+"當區域偵測到碰撞時，它們會發出訊號。我們要將一個訊號連接到 *Player* 節點。在*"
+"節點*分頁中，按兩下 ``body_entered`` 訊號並將其連接到 *Player*\\\\\\\\"
 
 msgid "|image4|"
 msgstr "\\ |image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "\\ |image4|"
+msgstr "image4"
 
 msgid ""
 "The *MobDetector* will emit ``body_entered`` when a :ref:`CharacterBody3D "
@@ -117,29 +131,36 @@ msgid ""
 "enters it. As it only masks the \"enemies\" physics layers, it will only "
 "detect the ``Mob`` nodes."
 msgstr ""
+"當一個 :ref:`CharacterBody3D <class_CharacterBody3D>` 或 :ref:`RigidBody3D "
+"<class_RigidBody3D>` 節點進入它時，*MobDetector* 將發出 ``body_entered`` 訊"
+"號。由於它只遮罩了“enemies”實體層，它將只偵測 *Mob* 節點。"
 
 msgid ""
 "Code-wise, we're going to do two things: emit a signal we'll later use to "
 "end the game and destroy the player. We can wrap these operations in a "
 "``die()`` function that helps us put a descriptive label on the code."
 msgstr ""
+"從程式碼上看，我們要做兩件事：發出一個訊號，我們以後會用來結束遊戲，並銷毀玩"
+"家。我們可以用 ``die()`` 函式來包裝這些操作，幫助我們給程式碼貼上描述性標籤。"
 
 msgid ""
 "Try the game again by pressing :kbd:`F5`. If everything is set up correctly, "
 "the character should die when an enemy runs into the collider. Note that "
 "without a ``Player``, the following line"
 msgstr ""
+"按 :kbd:`F5` 再試一下遊戲。如果一切設定正確，角色在被敵人碰到時應該會死亡"
 
 msgid "gives error because there is no $Player!"
-msgstr ""
+msgstr "由於此處沒有 $Player 導致的報告有錯！"
 
 msgid ""
 "Also note that the enemy colliding with the player and dying depends on the "
 "size and position of the ``Player`` and the ``Mob``\\ 's collision shapes. "
 "You may need to move them and resize them to achieve a tight game feel."
 msgstr ""
+"另外請注意，敵人與玩家碰撞並死亡取決於 ''Player'' 和 ''Mob'' 的碰撞形狀的大小"
+"和位置。你可能需要移動它們，調整它們的大小，以達到緊湊的遊戲感覺。"
 
-#, fuzzy
 msgid "Ending the game"
 msgstr "執行遊戲"
 
@@ -148,38 +169,42 @@ msgid ""
 "to do is connect it to the ``Main`` node and stop the ``MobTimer`` in "
 "reaction."
 msgstr ""
+"我們可以利用 ''Player'' 的 ''hit'' 信號來結束遊戲。我們所要做的就是將它連接"
+"到 ''Main'' 節點上，在處理時停止 ''MobTimer''\\ 。"
 
 msgid ""
 "Open ``main.tscn``, select the ``Player`` node, and in the *Node* dock, "
 "connect its ``hit`` signal to the ``Main`` node."
 msgstr ""
+"打開 ``main.tscn`` 場景，選中 ``Player`` 節點，然後在*節點*面板中把 ``hit`` "
+"訊號連接到 ``Main`` 節點。"
 
 msgid "|image5|"
 msgstr "\\ |image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "\\ |image5|"
+msgstr "image5"
 
 msgid "Get the timer, and stop it, in the ``_on_player_hit()`` function."
-msgstr ""
+msgstr "在 ``_on_player_hit()`` 函式中獲取並停止計時器。"
 
 msgid ""
 "If you try the game now, the monsters will stop spawning when you die, and "
 "the remaining ones will leave the screen."
-msgstr ""
+msgstr "如果你現在試玩遊戲，你死亡後就會停止刷怪，現有的怪物會離開螢幕。"
 
 msgid ""
 "You can pat yourself in the back: you prototyped a complete 3D game, even if "
 "it's still a bit rough."
-msgstr ""
+msgstr "你可以鼓勵鼓勵自己了：你做出了完整 3D 遊戲的原型，雖說還有點粗糙。"
 
 msgid ""
 "From there, we'll add a score, the option to retry the game, and you'll see "
 "how you can make the game feel much more alive with minimalistic animations."
 msgstr ""
+"在此基礎上，我們將會新增計分、重啟遊戲的選項，你還會看到如何使用簡單的動畫讓"
+"遊戲變得更加活靈活現。"
 
-#, fuzzy
 msgid "Code checkpoint"
 msgstr "設定／移除中斷點"
 
@@ -187,18 +212,20 @@ msgid ""
 "Here are the complete scripts for the ``Main``, ``Mob``, and ``Player`` "
 "nodes, for reference. You can use them to compare and check your code."
 msgstr ""
+"這些是 ``Main``、``Mob``、``Player`` 節點的完整腳本，僅供參考。你可以把它們和"
+"你的程式碼進行對比檢查。"
 
 msgid "Starting with ``main.gd``."
-msgstr ""
+msgstr "首先是 ``main.gd``。"
 
 msgid "Next is ``Mob.gd``."
-msgstr ""
+msgstr "然後是 ``Mob.gd``。"
 
 msgid "Finally, the longest script, ``Player.gd``:"
-msgstr ""
+msgstr "最後是最長的腳本 ``Player.gd``："
 
 msgid "See you in the next lesson to add the score and the retry option."
-msgstr ""
+msgstr "在下一節課中我們會新增計分和重試選項，再見。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

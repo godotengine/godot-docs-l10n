@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -886,13 +886,22 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"It's important to understand that textures that are supplied as color "
-"require hints for proper sRGB->linear conversion (i.e. ``source_color``), as "
-"Godot's 3D engine renders in linear color space."
+"It's important to understand that textures *that are supplied as color* "
+"require hints for proper sRGB -> linear conversion (i.e. ``source_color``), "
+"as Godot's 3D engine renders in linear color space. If this is not done, the "
+"texture will appear washed out."
 msgstr ""
 "Godotの3Dエンジンは線形色空間でレンダリングするため、色として提供されるテクス"
 "チャには適切なsRGB->線形変換(つまり、\\ ``hint_albedo``)のヒントが必要である"
 "ことを理解することが重要です。"
+
+msgid ""
+"The 2D renderer also renders in linear color space if the **Rendering > "
+"Viewport > HDR 2D** project setting is enabled, so ``source_color`` must "
+"also be used in ``canvas_item`` shaders. If 2D HDR is disabled, "
+"``source_color`` will keep working correctly in ``canvas_item`` shaders, so "
+"it's recommend to use it either way."
+msgstr ""
 
 msgid "Full list of hints below:"
 msgstr "以下のヒントの完全なリスト:"
@@ -1000,7 +1009,7 @@ msgstr ""
 msgid "hint_normal_roughness_texture"
 msgstr ""
 
-msgid "Texture is the normal roughness texture."
+msgid "Texture is the normal roughness texture (only supported in Forward+)."
 msgstr ""
 
 msgid ""
@@ -1114,6 +1123,11 @@ msgstr ""
 
 msgid "Uniforms can also be assigned default values:"
 msgstr "Uniformにはデフォルト値を割り当てることもできます:"
+
+msgid ""
+"Note that when adding a default value and a hint, the default value goes "
+"after the hint."
+msgstr ""
 
 msgid ""
 "If you need to make multiple uniforms to be grouped in the specific category "
@@ -2037,7 +2051,8 @@ msgstr "カスタムミップマップで2Dテクスチャの読み取りを実�
 
 msgid ""
 "The LOD defines which mipmap level is used. An LOD value of ``0.0`` will use "
-"the full resolution texture."
+"the full resolution texture. If the texture lacks mipmaps, all LOD values "
+"will act like ``0.0``."
 msgstr ""
 
 #, fuzzy
@@ -2116,7 +2131,8 @@ msgstr ""
 "vec_type dPdy)"
 
 #, fuzzy
-msgid "Performs a texture read with projection/LOD and with explcit gradients."
+msgid ""
+"Performs a texture read with projection/LOD and with explicit gradients."
 msgstr "投影を使用して2Dテクスチャの読み取りを実行する"
 
 #, fuzzy

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -313,7 +313,7 @@ msgid "**left**"
 msgstr ""
 
 #, fuzzy
-msgid "Makes ``{text}`` horizontally right-aligned."
+msgid "Makes ``{text}`` horizontally left-aligned."
 msgstr "Rende {testo} orizzontalmente allineato a destra."
 
 msgid "Same as ``[p align=left]``."
@@ -325,6 +325,10 @@ msgstr "``[indent]{testo}[/indent]``"
 
 msgid "**right**"
 msgstr "**destra**"
+
+#, fuzzy
+msgid "Makes ``{text}`` horizontally right-aligned."
+msgstr "Rende {testo} orizzontalmente allineato a destra."
 
 msgid "Same as ``[p align=right]``."
 msgstr ""
@@ -348,7 +352,9 @@ msgstr "``[fill]{testo}[/fill]``"
 msgid "**indent**"
 msgstr "**indentazione**"
 
-msgid "Indents ``{text}`` once."
+msgid ""
+"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
+"or ``[ol]``, but without a bullet point."
 msgstr ""
 
 msgid "``[indent]{text}[/indent]``"
@@ -505,6 +511,23 @@ msgstr "``[b]{testo}[/b]``"
 
 msgid "``[/opentype_features]``"
 msgstr ""
+
+#, fuzzy
+msgid "**lang**"
+msgstr "**specular_phong**"
+
+msgid ""
+"Overrides the language for ``{text}`` that is set by the **BiDi > Language** "
+"property in :ref:`class_RichTextLabel`. ``{code}`` must be an ISO :ref:"
+"`language code <doc_locales>`. This can be used to enforce the use of a "
+"specific script for a language without starting a new paragraph. Some font "
+"files may contain script-specific substitutes, in which case they will be "
+"used."
+msgstr ""
+
+#, fuzzy
+msgid "``[lang={code}]{text}[/color]``"
+msgstr "``[color=<code/name>]{testo}[/color]``"
 
 msgid "**color**"
 msgstr "**colore**"
@@ -786,9 +809,28 @@ msgstr ""
 msgid "ISO language codes. See :ref:`doc_locales`"
 msgstr "*Images:* Vedi :ref:`doc_import_images`."
 
+msgid ""
+"Locale override. Some font files may contain script-specific substitutes, in "
+"which case they will be used."
+msgstr ""
+
 #, fuzzy
-msgid "Locale override."
-msgstr "Sostituzioni predefinite"
+msgid "**tab_stops**"
+msgstr "**table**"
+
+msgid "List of floating-point numbers, e.g. ``10.0,30.0``"
+msgstr ""
+
+msgid "Width of the space character in the font"
+msgstr ""
+
+msgid ""
+"Overrides the horizontal offsets for each tab character. When the end of the "
+"list is reached, the tab stops will loop over. For example, if you set "
+"``tab_stops`` to ``10.0,30.0``, the first tab will be at ``10`` pixels, the "
+"second tab will be at ``10 + 30 = 40`` pixels, and the third tab will be at "
+"``10 + 30 + 10 = 50`` pixels from the origin of the RichTextLabel."
+msgstr ""
 
 msgid "Handling ``[url]`` tag clicks"
 msgstr ""
@@ -1042,6 +1084,24 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+msgid "Pulse"
+msgstr "Impulso"
+
+msgid ""
+"Pulse creates an animated pulsing effect that multiplies each character's "
+"opacity and color. It can be used to bring attention to specific text. Its "
+"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
+msgstr ""
+
+msgid ""
+"``freq`` controls the frequency of the half-pulsing cycle (higher is "
+"faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
+"is the target color multiplier for blinking. The default mostly fades out "
+"text, but not entirely. ``ease`` is the easing function exponent to use. "
+"Negative values provide in-out easing, which is why the default is ``-2.0``."
+msgstr ""
+
+#, fuzzy
 msgid "Wave"
 msgstr "Onda"
 
@@ -1239,10 +1299,6 @@ msgstr ""
 #, fuzzy
 msgid "Ghost"
 msgstr "Fantasma"
-
-#, fuzzy
-msgid "Pulse"
-msgstr "Impulso"
 
 #, fuzzy
 msgid "Matrix"

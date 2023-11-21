@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -142,10 +142,18 @@ msgstr ""
 msgid "Geometry draws using lines."
 msgstr ""
 
+msgid "**diffuse_burley**"
+msgstr "**diffuse_burley**"
+
+#, fuzzy
+msgid "Burley (Disney PBS) for diffuse (default)."
+msgstr "Burley (Disney PBS, ombrage basé sur la physique) pour la diffuse."
+
 msgid "**diffuse_lambert**"
 msgstr "**diffuse_lambert**"
 
-msgid "Lambert shading for diffuse (default)."
+#, fuzzy
+msgid "Lambert shading for diffuse."
 msgstr "Ombrage de Lambert pour la diffuse (par défaut)."
 
 msgid "**diffuse_lambert_wrap**"
@@ -153,12 +161,6 @@ msgstr "**diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr "Emballage Lambert (dépendant de la rugosité) pour la diffuse."
-
-msgid "**diffuse_burley**"
-msgstr "**diffuse_burley**"
-
-msgid "Burley (Disney PBS) for diffuse."
-msgstr "Burley (Disney PBS, ombrage basé sur la physique) pour la diffuse."
 
 msgid "**diffuse_toon**"
 msgstr "**diffuse_toon**"
@@ -171,18 +173,6 @@ msgstr "**specular_schlick_ggx**"
 
 msgid "Schlick-GGX for specular (default)."
 msgstr "Schlick-GGX pour la spéculaire (par défaut)."
-
-msgid "**specular_blinn**"
-msgstr "**specular_blinn**"
-
-msgid "Blinn for specular (compatibility)."
-msgstr "Blinn pour la spéculaire (compatibilité)."
-
-msgid "**specular_phong**"
-msgstr "**specular_phong**"
-
-msgid "Phong for specular (compatibility)."
-msgstr "Phong pour la spéculaire (compatibilité)."
 
 msgid "**specular_toon**"
 msgstr "**specular_toon**"
@@ -558,9 +548,8 @@ msgstr "inout vec3 **BINORMAL**"
 msgid "Binormal in local coordinates."
 msgstr "Binormale en coordonnées locales."
 
-#, fuzzy
 msgid "out vec4 **POSITION**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **POSITION**"
 
 msgid "If written to, overrides final vertex position."
 msgstr "Si réécrit, remplace la position finale du sommet."
@@ -968,18 +957,16 @@ msgstr "inout vec4 **COLOR**"
 msgid "If written to, blends final pixel color with FOG.rgb based on FOG.a."
 msgstr ""
 
-#, fuzzy
 msgid "out vec4 **RADIANCE**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **RADIANCE**"
 
 msgid ""
 "If written to, blends environment map radiance with RADIANCE.rgb based on "
 "RADIANCE.a."
 msgstr ""
 
-#, fuzzy
 msgid "out vec4 **IRRADIANCE**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **IRRADIANCE**"
 
 msgid ""
 "If written to, blends environment map IRRADIANCE with IRRADIANCE.rgb based "

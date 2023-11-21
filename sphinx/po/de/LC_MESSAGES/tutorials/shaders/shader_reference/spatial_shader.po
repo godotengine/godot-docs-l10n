@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,9 +105,8 @@ msgstr "Tiefenprüfung Deaktivieren."
 msgid "**sss_mode_skin**"
 msgstr ""
 
-#, fuzzy
 msgid "Subsurface Scattering mode for skin."
-msgstr "Subsurface-Streuung"
+msgstr "Subsurface Scattering Modus für Haut."
 
 msgid "**cull_back**"
 msgstr "**cull_back**"
@@ -140,10 +139,18 @@ msgstr ""
 msgid "Geometry draws using lines."
 msgstr ""
 
+msgid "**diffuse_burley**"
+msgstr "**diffuse_burley**"
+
+#, fuzzy
+msgid "Burley (Disney PBS) for diffuse (default)."
+msgstr "Burley (Disney PBS) für diffuses Licht."
+
 msgid "**diffuse_lambert**"
 msgstr "**diffuse_lambert**"
 
-msgid "Lambert shading for diffuse (default)."
+#, fuzzy
+msgid "Lambert shading for diffuse."
 msgstr "Lambert-Schattierung für diffuses Licht (Standard)."
 
 msgid "**diffuse_lambert_wrap**"
@@ -151,12 +158,6 @@ msgstr "**diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr "Lambert-Umhüllung (rauheitsabhängig) für diffuses Licht."
-
-msgid "**diffuse_burley**"
-msgstr "**diffuse_burley**"
-
-msgid "Burley (Disney PBS) for diffuse."
-msgstr "Burley (Disney PBS) für diffuses Licht."
 
 msgid "**diffuse_toon**"
 msgstr "**diffuse_toon**"
@@ -169,18 +170,6 @@ msgstr "**specular_schlick_ggx**"
 
 msgid "Schlick-GGX for specular (default)."
 msgstr "Schlick-GGX für spiegelnd (Standard)."
-
-msgid "**specular_blinn**"
-msgstr "**specular_blinn**"
-
-msgid "Blinn for specular (compatibility)."
-msgstr "Blinn für spiegelnd (Kompatibilität)."
-
-msgid "**specular_phong**"
-msgstr "**specular_phong**"
-
-msgid "Phong for specular (compatibility)."
-msgstr "Phong für spiegelnd (Kompatibilität)."
 
 msgid "**specular_toon**"
 msgstr "**specular_toon**"
@@ -257,12 +246,12 @@ msgstr ""
 msgid "**alpha_to_coverage**"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Alpha antialiasing mode, see `here <https://github.com/godotengine/godot/"
 "pull/40364>`_ for more."
 msgstr ""
-"`core/set.h <https://github.com/godotengine/godot/blob/master/core/set.h>`__"
+"Alpha-Antialiasing-Modus, siehe `hier <https://github.com/godotengine/godot/"
+"pull/40364>`_ für mehr."
 
 msgid "**alpha_to_coverage_and_one**"
 msgstr ""
@@ -300,7 +289,7 @@ msgstr ""
 "benutzerdefinierter Funktionen."
 
 msgid "Built-in"
-msgstr "Eingebettet"
+msgstr "Built-in"
 
 msgid "in float **TIME**"
 msgstr "in float **TIME**"
@@ -434,9 +423,8 @@ msgstr "Ermitteln Sie die Position des Spielers."
 msgid "in vec3 **CAMERA_POSITION_WORLD**"
 msgstr "in vec3 **ATTENUATION**"
 
-#, fuzzy
 msgid "Camera world space position."
-msgstr "Das Animationspanel in der Bodenleiste"
+msgstr "Position der Kamera im Weltspace."
 
 #, fuzzy
 msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
@@ -531,9 +519,8 @@ msgstr "inout vec3 **BINORMAL**"
 msgid "Binormal in local coordinates."
 msgstr "Binormal in lokalen Koordinaten."
 
-#, fuzzy
 msgid "out vec4 **POSITION**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **POSITION**"
 
 msgid "If written to, overrides final vertex position."
 msgstr ""
@@ -919,18 +906,16 @@ msgstr "inout vec4 **COLOR**"
 msgid "If written to, blends final pixel color with FOG.rgb based on FOG.a."
 msgstr ""
 
-#, fuzzy
 msgid "out vec4 **RADIANCE**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **POSITION**"
 
 msgid ""
 "If written to, blends environment map radiance with RADIANCE.rgb based on "
 "RADIANCE.a."
 msgstr ""
 
-#, fuzzy
 msgid "out vec4 **IRRADIANCE**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **POSITION**"
 
 msgid ""
 "If written to, blends environment map IRRADIANCE with IRRADIANCE.rgb based "
@@ -1048,9 +1033,8 @@ msgstr "in vec3 **LIGHT**"
 msgid "in float **METALLIC**"
 msgstr "out float **METALLIC**"
 
-#, fuzzy
 msgid "Metallic."
-msgstr "Metallisch"
+msgstr "Metallisch."
 
 msgid "in float **ROUGHNESS**"
 msgstr "in float **ROUGHNESS**"

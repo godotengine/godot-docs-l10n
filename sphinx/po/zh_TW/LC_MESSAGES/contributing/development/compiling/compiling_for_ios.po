@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,12 @@ msgid ""
 "If you're looking to export your project to iOS instead, read :ref:"
 "`doc_exporting_for_ios`."
 msgstr ""
+"這個頁面描述的是如何從源碼編譯 iOS 匯出範本二進位。如果你想要找的是匯出專案"
+"到 iOS，請閱讀 :ref:`doc_exporting_for_ios`。"
 
 msgid "Requirements"
 msgstr "系統需求"
 
-#, fuzzy
 msgid "`Python 3.6+ <https://www.python.org/downloads/macos/>`_."
 msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_ 。"
 
@@ -43,7 +44,6 @@ msgstr ""
 "`Xcode <https://apps.apple.com/us/app/xcode/id497799835>`_ (或更輕巧的適用於 "
 "Xcode 的命令行工具)。"
 
-#, fuzzy
 msgid "If you are building the ``master`` branch:"
 msgstr "若想回到 ``master`` 分支，可以使用："
 
@@ -52,8 +52,9 @@ msgid ""
 "from the `MoltenVK SDK <https://github.com/KhronosGroup/MoltenVK#fetching-"
 "moltenvk-source-code>`__."
 msgstr ""
+"下載並依照 README 說明從「MoltenVK SDK <https://github.com/KhronosGroup/"
+"MoltenVK#fetching-moltenvk-source-code>」建置靜態「.xcframework」。"
 
-#, fuzzy
 msgid ""
 "If you have `Homebrew <https://brew.sh/>`_ installed, you can easily install "
 "SCons using the following command::"
@@ -66,7 +67,6 @@ msgid ""
 "automatically if you don't have them already."
 msgstr "安裝 Homebrew 時，若還未有適用於 Xcode 的命令行工具，也會自動安裝。"
 
-#, fuzzy
 msgid ""
 "Similarly, if you have `MacPorts <https://www.macports.org/>`_ installed, "
 "you can easily install SCons using the following command::"
@@ -76,7 +76,7 @@ msgstr ""
 
 msgid ""
 "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
-msgstr ""
+msgstr "要獲取編譯所需的 Godot 源碼，請參閱 :ref:`doc_getting_source`。"
 
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
@@ -94,7 +94,6 @@ msgstr "開啟終端機，前往 Godot 原始碼的根目錄並輸入："
 msgid "for a debug build, or:"
 msgstr "若要建置除錯版，則："
 
-#, fuzzy
 msgid ""
 "for a release build (check ``platform/ios/detect.py`` for the compiler flags "
 "used for each configuration)."
@@ -105,11 +104,9 @@ msgstr ""
 msgid "Alternatively, you can run"
 msgstr "另外，也可以執行"
 
-#, fuzzy
 msgid "for a Simulator libraries."
 msgstr "來執行模擬器。"
 
-#, fuzzy
 msgid ""
 "To create an Xcode project like in the official builds, you need to use the "
 "template located in ``misc/dist/ios_xcode``. The release and debug libraries "
@@ -124,6 +121,8 @@ msgid ""
 "The MoltenVK static ``.xcframework`` folder must also be placed in the "
 "``ios_xcode`` folder once it has been created."
 msgstr ""
+"建立 MoltenVK 靜態「.xcframework」資料夾後，也必須將其放置在「ios_xcode」資料"
+"夾中。"
 
 msgid "Run"
 msgstr "執行"

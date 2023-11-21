@@ -1,0 +1,641 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Upgrading from Godot 4.1 to Godot 4.2"
+msgstr "从 Godot 4.0 升级到 Godot 4.1"
+
+#, fuzzy
+msgid ""
+"For most games and apps made with 4.1 it should be relatively safe to "
+"migrate to 4.2. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"对于大多数使用 4.0 制作的游戏和应用程序来说，迁移到 4.1 应该相对安全。本页旨"
+"在介绍迁移项目时需要注意的所有事项。"
+
+msgid "Breaking changes"
+msgstr "破坏性更改"
+
+#, fuzzy
+msgid ""
+"If you are migrating from 4.1 to 4.2, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"如果你要从 4.0 迁移到 4.1，这里列出的破坏性更改可能会影响到你。更改按照领域/"
+"系统分组。"
+
+msgid ""
+"The :ref:`class_Mesh` resource format has changed in 4.2 to allow for "
+"`vertex and attribute compression <https://github.com/godotengine/godot/"
+"pull/81138>`__. This allows for improved rendering performance, especially "
+"on platforms constrained by memory bandwidth such as mobile."
+msgstr ""
+
+msgid ""
+"It is still possible to load the Godot 4.0-4.1 Mesh formats, but it is "
+"**not** possible to load the Godot 4.2 Mesh format in prior Godot versions. "
+"When opening a Godot project made with a version prior to 4.2, you may be "
+"presented with an upgrade dialog that offers two options:"
+msgstr ""
+
+msgid ""
+"**Restart & Upgrade:** Upgrades the mesh format for all meshes in the "
+"project and saves the result to disk. Once chosen, this option prevents "
+"downgrading the project to a Godot version prior to 4.2. Set up a version "
+"control system and push your changes *before* choosing this option!"
+msgstr ""
+
+msgid ""
+"**Upgrade Only:** Upgrades the mesh format in-memory without writing it to "
+"disk. This allows downgrading the project to a Godot version older than 4.2 "
+"if you need to do so in the future. The downside is that loading the project "
+"will be slower every time as the mesh format needs to be upgraded every time "
+"the project is loaded. These increased loading times will also affect the "
+"exported project. The number and complexity of Mesh resources determines how "
+"much loading times are affected."
+msgstr ""
+
+msgid ""
+"If this dialog doesn't appear, use **Project > Tools > Upgrade Mesh Surfaces…"
+"** at the top of the editor."
+msgstr ""
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"这篇文章指出了每项破坏性改动是否会影响 GDScript，以及 C# 的破坏性改动是 *二进"
+"制兼容* 还是 *源代码兼容*\\ ："
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the run-time behavior won't change."
+msgstr ""
+"**二进制兼容** —— 现有二进制文件无需重新编译即可加载并成功执行，运行时的行为"
+"不会改变。"
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr "** 源代码兼容** —— 在升级 Godot 时，源代码可成功编译，无需更改。"
+
+msgid "Core"
+msgstr "核心"
+
+msgid "Change"
+msgstr "更改"
+
+msgid "GDScript Compatible"
+msgstr "GDScript 兼容"
+
+msgid "C# Binary Compatible"
+msgstr "C# 二进制兼容"
+
+msgid "C# Source Compatible"
+msgstr "C# 源代码兼容"
+
+msgid "Introduced"
+msgstr "引入"
+
+#, fuzzy
+msgid "**Node**"
+msgstr "**节点：**"
+
+msgid "Constant ``NOTIFICATION_NODE_RECACHE_REQUESTED`` removed"
+msgstr ""
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+#, fuzzy
+msgid "`GH-84419`_"
+msgstr "`GH-76418`_"
+
+msgid "Animation"
+msgstr "动画"
+
+#, fuzzy
+msgid "**AnimationPlayer**"
+msgstr "AnimationPlayer"
+
+msgid ""
+"Method ``_post_process_key_value`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#, fuzzy
+msgid "`GH-80813`_"
+msgstr "`GH-76413`_"
+
+msgid "Method ``add_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``advance`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Signal ``animation_finished`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Signal ``animation_started`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Signal ``animation_libraries_updated`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Signal ``animation_list_changed`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Property ``audio_max_polyphony`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Signal ``caches_cleared`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``clear_caches`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``find_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``find_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``get_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``get_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``get_animation_library_list`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``get_animation_list`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``has_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``has_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Property ``method_call_mode`` renamed to ``callback_mode_method`` and moved "
+"to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "|✔️ with compat|"
+msgstr "|✔️ with compat|"
+
+msgid ""
+"Property ``playback_active`` renamed to ``active`` and moved to base class "
+"``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Property ``playback_process_mode`` renamed to ``callback_mode_process`` and "
+"moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``remove_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``rename_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Property ``reset_on_save`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Property ``root_node`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``set_reset_on_save_enabled`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#, fuzzy
+msgid "Method ``seek`` adds a new ``update_only`` optional parameter"
+msgstr "``blend_node`` 方法添加了可选的 ``test_only`` 参数"
+
+#, fuzzy
+msgid "**AnimationTree**"
+msgstr "AnimationTree"
+
+msgid "Property ``active`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``get_root_motion_position`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``get_root_motion_position_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``get_root_motion_rotation`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``get_root_motion_rotation_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+
+msgid "Method ``get_root_motion_scale`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Method ``get_root_motion_scale_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+
+msgid ""
+"Property ``process_callback`` renamed to ``callback_mode_process`` and moved "
+"to base class ``AnimationMixer``"
+msgstr ""
+
+msgid "Property ``root_motion_track``  moved to base class ``AnimationMixer``"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Property ``tree_root`` changes type from ``AnimationNode`` to "
+"``AnimationRootNode``"
+msgstr "属性 ``priority`` 类型从 ``float`` 改为 ``int``"
+
+msgid "GUI nodes"
+msgstr "GUI 节点"
+
+#, fuzzy
+msgid "**PopupMenu**"
+msgstr "PopupMenu"
+
+#, fuzzy
+msgid ""
+"Method ``add_icon_shortcut`` adds a new ``allow_echo`` optional parameter"
+msgstr "方法 ``push_list`` 增加了一个新的 ``bullet`` 可选参数"
+
+#, fuzzy
+msgid "`GH-36493`_"
+msgstr "`GH-76413`_"
+
+#, fuzzy
+msgid "Method ``add_shortcut`` adds a new ``allow_echo`` optional parameter"
+msgstr "方法 ``push_list`` 增加了一个新的 ``bullet`` 可选参数"
+
+#, fuzzy
+msgid "Method ``clear`` adds a new ``free_submenus`` optional parameter"
+msgstr "方法 ``look_at`` 增加了一个新的 ``use_model_front`` 可选参数"
+
+#, fuzzy
+msgid "`GH-79965`_"
+msgstr "`GH-77595`_"
+
+msgid "**RichTextLabel**"
+msgstr "**RichTextLabel**"
+
+#, fuzzy
+msgid ""
+"Method ``add_image`` adds new ``key``, ``pad``, ``tooltip``, and "
+"``size_in_percent`` optional parameters"
+msgstr "方法 ``look_at`` 增加了一个新的 ``use_model_front`` 可选参数"
+
+#, fuzzy
+msgid "`GH-80410`_"
+msgstr "`GH-76418`_"
+
+msgid "Rendering"
+msgstr "渲染"
+
+#, fuzzy
+msgid "**ImporterMesh**"
+msgstr "**JavaScript**"
+
+#, fuzzy
+msgid ""
+"Method ``add_surface`` changes ``flags`` parameter type from ``uint32`` to "
+"``uint64``"
+msgstr ""
+"方法 ``add_triangle_fan`` 将 ``tangents`` 参数类型从无类型的 ``Array`` 改为 "
+"``Array[Plane]``"
+
+#, fuzzy
+msgid "`GH-81138`_"
+msgstr "`GH-76418`_"
+
+#, fuzzy
+msgid ""
+"Method ``get_surface_format`` changes return type from ``uint32`` to "
+"``uint64``"
+msgstr ""
+"``wait_for_task_completion`` 方法的返回类型从 ``void`` 改成了 ``Error``"
+
+#, fuzzy
+msgid "**MeshDataTool**"
+msgstr "MeshDataTool"
+
+#, fuzzy
+msgid ""
+"Method ``commit_to_surface`` adds a new ``compression_flags`` optional "
+"parameter"
+msgstr "方法 ``edit_selected`` 增加了一个新的 ``force_edit`` 可选参数"
+
+#, fuzzy
+msgid "Method ``get_format`` changes return type from ``uint32`` to ``uint64``"
+msgstr ""
+"``wait_for_task_completion`` 方法的返回类型从 ``void`` 改成了 ``Error``"
+
+msgid "**RenderingDevice**"
+msgstr "**RenderingDevice**"
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_RASTER`` changes value from ``1`` to "
+"``9``"
+msgstr ""
+
+#, fuzzy
+msgid "`GH-79911`_"
+msgstr "`GH-76418`_"
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_ALL_BARRIERS`` changes value from "
+"``7`` to ``32767``"
+msgstr ""
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_NO_BARRIER`` changes value from ``8`` "
+"to ``32768``"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Method ``shader_create_from_bytecode`` adds a new ``placeholder_rid`` "
+"optional parameter"
+msgstr ""
+"方法 ``look_at_from_position`` 增加了一个新的 ``use_model_front`` 可选参数"
+
+#, fuzzy
+msgid "`GH-79606`_"
+msgstr "`GH-76082`_"
+
+#, fuzzy
+msgid ""
+"Method ``shader_get_vertex_input_attribute_ask`` changes return type from "
+"``uint32`` to ``uint64``"
+msgstr ""
+"方法 ``get_version_list`` 将返回类型从 ``PackedStringArray`` 改为 "
+"``Array[StringName]``"
+
+msgid "**SurfaceTool**"
+msgstr "**SurfaceTool**"
+
+#, fuzzy
+msgid ""
+"Method ``commit`` changes ``flags`` parameter type from ``uint32`` to "
+"``uint64``"
+msgstr ""
+"方法 ``add_triangle_fan`` 将 ``tangents`` 参数类型从无类型的 ``Array`` 改为 "
+"``Array[Plane]``"
+
+#, fuzzy
+msgid "Text"
+msgstr "Texture (纹理)"
+
+msgid "**Font**"
+msgstr "**字体**"
+
+#, fuzzy
+msgid "Method ``set_fallbacks`` replaced with ``fallbacks`` property"
+msgstr "方法 ``set_velocity`` 被属性 ``velocity`` 所取代"
+
+#, fuzzy
+msgid "`GH-78266`_"
+msgstr "`GH-78237`_"
+
+#, fuzzy
+msgid "Method ``get_fallbacks`` replaced with ``fallbacks`` property"
+msgstr "方法 ``set_velocity`` 被属性 ``velocity`` 所取代"
+
+msgid ""
+"Method ``find_variation`` adds new ``spacing_top``, ``spacing_bottom``, "
+"``spacing_space``, and ``spacing_glyph`` optional parameters"
+msgstr ""
+
+#, fuzzy
+msgid "`GH-80954`_"
+msgstr "`GH-57894`_"
+
+msgid "GraphEdit"
+msgstr "GraphEdit"
+
+#, fuzzy
+msgid "**GraphEdit**"
+msgstr "GraphEdit"
+
+#, fuzzy
+msgid ""
+"Property ``arrange_nodes_button_hidden`` renamed to ``show_arrange_button``"
+msgstr "属性 ``agent_height_offset`` 更名为 ``path_height_offset``"
+
+#, fuzzy
+msgid "`GH-81582`_"
+msgstr "`GH-72152`_"
+
+#, fuzzy
+msgid "Method ``get_zoom_hbox`` renamed to ``get_menu_hbox``"
+msgstr "方法 ``get_rid`` 更名为 ``get_agent_rid``"
+
+#, fuzzy
+msgid "`GH-79308`_"
+msgstr "`GH-76082`_"
+
+#, fuzzy
+msgid "Property ``snap_distance`` renamed to ``snapping_distance``"
+msgstr "属性 ``agent_height_offset`` 更名为 ``path_height_offset``"
+
+#, fuzzy
+msgid "Property ``use_snap`` renamed to ``snapping_enabled``"
+msgstr "属性 ``agent_height_offset`` 更名为 ``path_height_offset``"
+
+#, fuzzy
+msgid "**GraphNode**"
+msgstr "GraphNode"
+
+#, fuzzy
+msgid "Property ``comment`` removed"
+msgstr "删除了属性 ``ignore_y``"
+
+#, fuzzy
+msgid "`GH-79307`_"
+msgstr "`GH-75017`_"
+
+msgid ""
+"Signal ``close_request`` renamed to ``delete_request`` and moved to base "
+"class ``GraphElement``"
+msgstr ""
+
+#, fuzzy
+msgid "`GH-79311`_"
+msgstr "`GH-76418`_"
+
+msgid "Property ``draggable`` moved to base class ``GraphElement``"
+msgstr ""
+
+msgid "Signal ``dragged`` moved to base class ``GraphElement``"
+msgstr ""
+
+#, fuzzy
+msgid "Method ``get_connection_input_color`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_input_count`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_input_height`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_input_position`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_input_slot`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_input_type`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_output_color`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_output_count`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_output_height`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_output_position`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_output_slot`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Method ``get_connection_output_type`` removed"
+msgstr "删除了方法 ``agent_set_target_velocity``"
+
+#, fuzzy
+msgid "Property ``language`` removed"
+msgstr "移除了 ``lookahead`` 属性"
+
+msgid "Signal ``node_deselected`` moved to base class ``GraphElement``"
+msgstr ""
+
+msgid "Signal ``node_selected`` moved to base class ``GraphElement``"
+msgstr ""
+
+#, fuzzy
+msgid "Property ``overlay`` removed"
+msgstr "删除了属性 ``ignore_y``"
+
+msgid "Property ``position_offset`` moved to base class ``GraphElement``"
+msgstr ""
+
+msgid "Signal ``position_offset_changed`` moved to base class ``GraphElement``"
+msgstr ""
+
+msgid "Signal ``raise_request`` moved to base class ``GraphElement``"
+msgstr ""
+
+msgid "Property ``resizable`` moved to base class ``GraphElement``"
+msgstr ""
+
+msgid "Signal ``resize_request`` moved to base class ``GraphElement``"
+msgstr ""
+
+msgid "Property ``selectable`` moved to base class ``GraphElement``"
+msgstr ""
+
+msgid "Property ``selected`` moved to base class ``GraphElement``"
+msgstr ""
+
+#, fuzzy
+msgid "Property ``show_close`` removed"
+msgstr "移除了 ``lookahead`` 属性"
+
+#, fuzzy
+msgid "Property ``text_direction`` removed"
+msgstr "删除了属性 ``ignore_y``"
+
+#, fuzzy
+msgid "TileMap"
+msgstr "使用 TileMap"
+
+#, fuzzy
+msgid "**TileMap**"
+msgstr "**Cubemap**"
+
+#, fuzzy
+msgid "Property ``cell_quadrant_size`` renamed to ``rendering_quadrant_size``"
+msgstr "属性 ``agent_height_offset`` 更名为 ``path_height_offset``"
+
+#, fuzzy
+msgid "`GH-81070`_"
+msgstr "`GH-76082`_"
+
+msgid "XR"
+msgstr "XR"
+
+#, fuzzy
+msgid "**XRInterface**"
+msgstr "XRInterface"
+
+msgid "Property ``environment_blend_mode`` added"
+msgstr ""
+
+#, fuzzy
+msgid "`GH-81561`_"
+msgstr "`GH-76418`_"
+
+msgid ""
+"This change breaks compatibility in C# because the new property conflicts "
+"with the name of an existing enum and the C# bindings generator gives "
+"priority to properties, so the enum type was renamed from "
+"``EnvironmentBlendMode`` to ``EnvironmentBlendModeEnum``."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻译状态"

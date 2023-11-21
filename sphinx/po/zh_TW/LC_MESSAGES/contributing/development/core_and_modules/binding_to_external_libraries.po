@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,6 @@ msgstr "繫結外部函式庫"
 msgid "Modules"
 msgstr "模組"
 
-#, fuzzy
 msgid ""
 "The Summator example in :ref:`doc_custom_modules_in_cpp` is great for small, "
 "custom modules, but what if you want to use a larger, external library? "
@@ -40,7 +39,6 @@ msgid ""
 "Summator example:"
 msgstr "要繫結到外部函式庫，我們先建立一個類似 Summator 範例的模組資料夾："
 
-#, fuzzy
 msgid "Next, you will create a header file with a TTS class:"
 msgstr "接著，需要建立含有一個簡易 TTS 類別的標頭檔："
 
@@ -68,7 +66,6 @@ msgid ""
 "module:"
 msgstr "接著，我們需要建立 ``SCsub`` 檔案，這樣一來建置系統才能編譯此模組："
 
-#, fuzzy
 msgid ""
 "You'll need to install the external library on your machine to get the .a "
 "library files. See the library's official documentation for specific "
@@ -90,7 +87,6 @@ msgstr ""
 "款與服務條款 (Terms of Use)。就算 Festival 函式庫本身是與 MIT 授權條款相容"
 "的，有些檔案對於 Godot 來說可能會有點問題。請務必檢查授權條款與服務條款。"
 
-#, fuzzy
 msgid ""
 "The external library will also need to be installed inside your module to "
 "make the source files accessible to the compiler, while also keeping the "
@@ -110,7 +106,6 @@ msgstr ""
 "若不想將外部儲存庫的原始碼 Commit 進儲存庫中，可以通過將其 (在 modules/tts/資"
 "料夾內) 加為子模組 (Submodule) 來將這些函式庫連結過來，如下所示："
 
-#, fuzzy
 msgid ""
 "Please note that Git submodules are not used in the Godot repository. If you "
 "are developing a module to be merged into the main Godot repository, you "

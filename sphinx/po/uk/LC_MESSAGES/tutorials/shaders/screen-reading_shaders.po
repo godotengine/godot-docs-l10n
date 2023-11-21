@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -59,6 +59,12 @@ msgid ""
 "``filter_nearest`` to ``filter_nearest_mipmap`` (or any other filter with "
 "mipmaps enabled). If using a filter with mipmaps, Godot will automatically "
 "calculate the blurred texture for you."
+msgstr ""
+
+msgid ""
+"If the filter mode is not changed to a filter mode that contains ``mipmap`` "
+"in its name, ``textureLod`` with a LOD parameter greater than ``0.0`` will "
+"have the same appearance as with the ``0.0`` LOD parameter."
 msgstr ""
 
 #, fuzzy
@@ -168,6 +174,12 @@ msgstr ""
 
 msgid "Normal-roughness texture"
 msgstr ""
+
+#, fuzzy
+msgid ""
+"Normal-roughness texture is only supported in the Forward+ rendering method, "
+"not Mobile or Compatibility."
+msgstr "*Ця функція доступна лише при використанні обробника GLES3.*"
 
 msgid ""
 "Similarly, the normal-roughness texture can be used to read the normals and "

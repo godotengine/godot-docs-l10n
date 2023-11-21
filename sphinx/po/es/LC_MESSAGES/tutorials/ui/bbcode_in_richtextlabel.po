@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -144,9 +144,8 @@ msgid ""
 "escaped user input (3rd line)"
 msgstr ""
 
-#, fuzzy
 msgid "The above image was created using the following script:"
-msgstr "Crea un Node y anéxale el siguiente script."
+msgstr "La imagen de arriba fue creada usando el siguiente script:"
 
 #, fuzzy
 msgid "Stripping BBCode tags"
@@ -300,9 +299,8 @@ msgid ""
 "`doc_bbcode_in_richtextlabel_paragraph_options`."
 msgstr ""
 
-#, fuzzy
 msgid "``[p]{text}[/p]``"
-msgstr "``[b]{text}[/b]``"
+msgstr "``[p]{text}[/p]``"
 
 #, fuzzy
 msgid "``[p {options}]{text}[/p]``"
@@ -325,18 +323,21 @@ msgid "**left**"
 msgstr ""
 
 #, fuzzy
-msgid "Makes ``{text}`` horizontally right-aligned."
+msgid "Makes ``{text}`` horizontally left-aligned."
 msgstr "Centra horizontalmente al {text} a la derecha."
 
 msgid "Same as ``[p align=left]``."
 msgstr ""
 
-#, fuzzy
 msgid "``[left]{text}[/left]``"
-msgstr "``[indent]{text}[/indent]``"
+msgstr "``[left]{text}[/left]``"
 
 msgid "**right**"
 msgstr "**derecho**"
+
+#, fuzzy
+msgid "Makes ``{text}`` horizontally right-aligned."
+msgstr "Centra horizontalmente al {text} a la derecha."
 
 msgid "Same as ``[p align=right]``."
 msgstr ""
@@ -360,7 +361,9 @@ msgstr "``[fill]{text}[/fill]``"
 msgid "**indent**"
 msgstr "**indentar**"
 
-msgid "Indents ``{text}`` once."
+msgid ""
+"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
+"or ``[ol]``, but without a bullet point."
 msgstr ""
 
 msgid "``[indent]{text}[/indent]``"
@@ -523,6 +526,23 @@ msgstr "``[b]{text}[/b]``"
 msgid "``[/opentype_features]``"
 msgstr ""
 
+#, fuzzy
+msgid "**lang**"
+msgstr "**specular_phong**"
+
+msgid ""
+"Overrides the language for ``{text}`` that is set by the **BiDi > Language** "
+"property in :ref:`class_RichTextLabel`. ``{code}`` must be an ISO :ref:"
+"`language code <doc_locales>`. This can be used to enforce the use of a "
+"specific script for a language without starting a new paragraph. Some font "
+"files may contain script-specific substitutes, in which case they will be "
+"used."
+msgstr ""
+
+#, fuzzy
+msgid "``[lang={code}]{text}[/color]``"
+msgstr "``[color=<code/name>]{text}[/color]``"
+
 msgid "**color**"
 msgstr "**color**"
 
@@ -647,9 +667,8 @@ msgid ""
 "ref:`doc_bbcode_in_richtextlabel_unordered_list_bullet`."
 msgstr ""
 
-#, fuzzy
 msgid "``[ul]{items}[/ul]``"
-msgstr "``[u]{text}[/u]``"
+msgstr "``[ul]{items}[/ul]``"
 
 #, fuzzy
 msgid "``[ul bullet={bullet}]{items}[/ul]``"
@@ -801,13 +820,31 @@ msgstr "Moverse en la dirección dada."
 msgid "**language**, **lang**"
 msgstr ""
 
-#, fuzzy
 msgid "ISO language codes. See :ref:`doc_locales`"
-msgstr "*Imágenes:* Ver :ref:`doc_import_images`."
+msgstr "Códigos ISO de idiomas. Ver :ref:`doc_locales`"
+
+msgid ""
+"Locale override. Some font files may contain script-specific substitutes, in "
+"which case they will be used."
+msgstr ""
 
 #, fuzzy
-msgid "Locale override."
-msgstr "Sobreescritura de valores por defecto"
+msgid "**tab_stops**"
+msgstr "**tabla**"
+
+msgid "List of floating-point numbers, e.g. ``10.0,30.0``"
+msgstr ""
+
+msgid "Width of the space character in the font"
+msgstr ""
+
+msgid ""
+"Overrides the horizontal offsets for each tab character. When the end of the "
+"list is reached, the tab stops will loop over. For example, if you set "
+"``tab_stops`` to ``10.0,30.0``, the first tab will be at ``10`` pixels, the "
+"second tab will be at ``10 + 30 = 40`` pixels, and the third tab will be at "
+"``10 + 30 + 10 = 50`` pixels from the origin of the RichTextLabel."
+msgstr ""
 
 msgid "Handling ``[url]`` tag clicks"
 msgstr "El manejo de clics de la etiqueta ``[url]``"
@@ -839,7 +876,6 @@ msgstr ""
 "abrir las URLs clickeadas utilizando el navegador web predeterminado del "
 "usuario::"
 
-#, fuzzy
 msgid ""
 "For more advanced use cases, it's also possible to store JSON in an "
 "``[url]`` tag's option and parse it in the function that handles the "
@@ -847,8 +883,7 @@ msgid ""
 msgstr ""
 "Para casos de uso más avanzados, también es posible almacenar JSON en la "
 "opción de una etiqueta ``[url]`` y analizarlo en la función que maneja la "
-"señal ``meta_clicked``. Por ejemplo: ``[url={\"ejemplo\": \"valor\"}]JSON[/"
-"url]``"
+"señal ``meta_clicked``. Por ejemplo:"
 
 #, fuzzy
 msgid "Image options"
@@ -876,9 +911,8 @@ msgstr "La ruta absoluta al archivo."
 msgid "**width**"
 msgstr "**smooth**"
 
-#, fuzzy
 msgid "Target width of the image."
-msgstr "Empieza con un árbol"
+msgstr "Ancho objetivo de la imagen."
 
 #, fuzzy
 msgid "**region**"
@@ -932,9 +966,8 @@ msgstr ""
 msgid "A valid Font resource path."
 msgstr "Inserte la imagen en el recurso {path}."
 
-#, fuzzy
 msgid "Font resource path."
-msgstr "Ruta del recurso"
+msgstr "Ruta del recurso fuente."
 
 msgid "**size**, **s**"
 msgstr ""
@@ -942,13 +975,11 @@ msgstr ""
 msgid "Number in pixels."
 msgstr ""
 
-#, fuzzy
 msgid "Custom font size."
-msgstr "Servidores Godot personalizados"
+msgstr "Tamaño de fuente personalizado."
 
-#, fuzzy
 msgid "Named colors"
-msgstr "Utilizado como color."
+msgstr "Colores con nombre"
 
 msgid ""
 "For tags that allow specifying a color by name you can use names of the "
@@ -1019,9 +1050,8 @@ msgid ""
 "``bg=odd_color,even_color``."
 msgstr ""
 
-#, fuzzy
 msgid "Unordered list bullet"
-msgstr "O conjuntos desordenados:"
+msgstr "Lista con viñetas desordenada"
 
 msgid ""
 "By default, the ``[ul]`` tag uses the ``U+2022`` \"Bullet\" Unicode glyph as "
@@ -1083,6 +1113,23 @@ msgid ""
 "the inspector after selecting the RichTextLabel node, or ensuring there is "
 "enough margin added around the text by using line breaks above and below the "
 "line using the effect."
+msgstr ""
+
+msgid "Pulse"
+msgstr "Pulso"
+
+msgid ""
+"Pulse creates an animated pulsing effect that multiplies each character's "
+"opacity and color. It can be used to bring attention to specific text. Its "
+"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
+msgstr ""
+
+msgid ""
+"``freq`` controls the frequency of the half-pulsing cycle (higher is "
+"faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
+"is the target color multiplier for blinking. The default mostly fades out "
+"text, but not entirely. ``ease`` is the easing function exponent to use. "
+"Negative values provide in-out easing, which is why the default is ``-2.0``."
 msgstr ""
 
 msgid "Wave"
@@ -1197,7 +1244,6 @@ msgstr ""
 msgid "Custom BBCode tags and text effects"
 msgstr "Etiquetas BBCode personalizadas y efectos de texto"
 
-#, fuzzy
 msgid ""
 "You can extend the :ref:`class_RichTextEffect` resource type to create your "
 "own custom BBCode tags. Create a new script file that extends the :ref:"
@@ -1211,13 +1257,15 @@ msgid ""
 "<class_RichTextLabel_method_install_effect>` method:"
 msgstr ""
 "Puedes extender el tipo de recurso :ref:`class_RichTextEffect` para crear "
-"tus propias etiquetas personalizadas de BBCode. Comienza extendiendo el tipo "
-"de recurso :ref:`class_RichTextEffect`. Agrega el prefijo ``tool`` a tu "
-"archivo GDScript si deseas que estos efectos personalizados se ejecuten "
-"dentro del propio editor. El RichTextLabel no necesita tener un script "
-"adjunto, ni tampoco necesita estar en modo ``tool``. El nuevo efecto se "
-"podrá activar en el Inspector a través de la propiedad **Efectos "
-"Personalizados** (Custom Effects)."
+"tus propias etiquetas personalizadas de BBCode. Crea un nuevo script que "
+"extienda el recurso :ref:`class_RichTextEffect` y asigna una ``class_name`` "
+"así el efecto puede selecctionarse desde el inspector. Agrega la anotación "
+"``@tool`` a tu archivo GDScript si deseas que estos efectos personalizados "
+"se ejecuten dentro del propio editor. El RichTextLabel no necesita tener un "
+"script adjunto, ni tampoco necesita estar en modo ``tool``. El nuevo efecto "
+"se podrá registrar desde el inspector agregándolo al arreglo **Markup > "
+"Custom Effects**, o desde código con el método :ref:`install_effect() "
+"<class_RichTextLabel_method_install_effect>`:"
 
 msgid ""
 "Selecting a custom RichTextEffect after saving a script that extends "
@@ -1350,9 +1398,6 @@ msgstr "Aquí hay unos ejemplos de efectos personalizados:"
 
 msgid "Ghost"
 msgstr "Fantasma"
-
-msgid "Pulse"
-msgstr "Pulso"
 
 msgid "Matrix"
 msgstr "Matriz"

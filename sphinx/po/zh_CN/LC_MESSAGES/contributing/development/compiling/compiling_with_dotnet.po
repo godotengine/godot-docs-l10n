@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,23 +17,21 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Compiling with .NET"
-msgstr "使用 Mono 编译"
+msgstr "使用 .NET 编译"
 
 msgid "Requirements"
 msgstr "需求"
 
 msgid "`.NET SDK 6.0+ <https://dotnet.microsoft.com/download>`_"
-msgstr ""
+msgstr "`.NET SDK 6.0+ <https://dotnet.microsoft.com/download>`_"
 
 msgid ""
 "You can use ``dotnet --info`` to check which .NET SDK versions are installed."
 msgstr ""
 
-#, fuzzy
 msgid "Enable the .NET module"
-msgstr "启用 Mono 模块"
+msgstr "启用 .NET 模块"
 
 msgid ""
 "C# support for Godot has historically used the `Mono <https://www.mono-"
@@ -111,20 +109,19 @@ msgstr ""
 "到脚本API时, 或该方法的参数之一发生更改时. 如果ClassDB和胶水源码之间的API不匹"
 "配,Godot将在启动时打印一条错误."
 
-#, fuzzy
 msgid "Building the managed libraries"
-msgstr "绑定到外部库"
+msgstr "构建托管库"
 
 msgid ""
 "Once you have generated the .NET glue, you can build the managed libraries "
 "with the ``build_assemblies.py`` script::"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "If everything went well, the ``GodotSharp`` directory, containing the "
 "managed libraries, should have been created in the ``bin`` directory."
-msgstr "如果一切正常, 除了正常的输出,SCons应该在 ``bin`` 目录中创建了以下文件:"
+msgstr ""
+"如果一切正常, 除了正常的输出,SCons应该在 ``bin`` 目录中创建了以下文件。"
 
 msgid ""
 "By default, all development builds share a version number, which can cause "
@@ -211,9 +208,8 @@ msgstr "示例"
 msgid "Example (Windows)"
 msgstr "示例（Windows）"
 
-#, fuzzy
 msgid "Example (Linux, \\*BSD)"
-msgstr "X11（Linux、\\*BSD）"
+msgstr "示例 (Linux, \\*BSD)"
 
 msgid "Data directory"
 msgstr "数据目录"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Building the manual with Sphinx"
 msgstr "建置 Mono 執行環境"
 
@@ -26,19 +25,20 @@ msgid ""
 "Sphinx docs engine. This allows you to have local HTML files and build the "
 "documentation as a PDF, EPUB, or LaTeX file, for example."
 msgstr ""
+"本頁面描述使用 Sphinx 文件引擎建構本地 Godot 手冊的方法。你可以用它來獲得本地"
+"的 HTML 檔以及諸如 PDF、EPUB、LaTeX 形式的文件。"
 
 msgid "Before you get started, make sure that you have:"
-msgstr ""
+msgstr "在開始之前，請確保你已完成以下步驟："
 
-#, fuzzy
 msgid "`Git <https://git-scm.com/>`_"
 msgstr "`GitHub <https://github.com/godotengine/>`_"
 
 msgid ""
 "`make <https://www.gnu.org/software/make/>`_ (unless you're using Windows)"
 msgstr ""
+"`make <https://www.gnu.org/software/make/>`_ （除非你在使用Windows系統）"
 
-#, fuzzy
 msgid "`Python <https://www.python.org/>`_ 3"
 msgstr "`Python 3.5+ <https://www.python.org/>`__ 。"
 
@@ -48,42 +48,43 @@ msgid ""
 "If both approaches fail, `make sure that you have pip3 installed <https://"
 "pip.pypa.io/en/stable/installation/>`__."
 msgstr ""
+"Python 3 應該帶有 ``pip3`` 命令。 您可能需要輸入 ``python3 -m pip`` （Unix）"
+"或 ``py -m pip`` （Windows）而不是 ``pip3`` 。 如果兩種方法都失敗了，\\\\\\"
+"\\`請確保您已安裝 pip3 <https://pip.pypa.io/en/stable/installation/>`__\\\\\\"
+"\\。"
 
 msgid ""
 "*(Optional)* Set up a virtual environment. Virtual environments prevent "
 "potential conflicts between the Python packages in ``requirements.txt`` and "
 "other Python packages that are installed on your system."
 msgstr ""
+"*（可選）* 設定虛擬環境。 虛擬環境可防止 ``requirements.txt`` 中的 Python 包"
+"與系統上安裝的其他 Python 包之間的潛在衝突。"
 
-#, fuzzy
 msgid "Create the virtual environment:"
 msgstr "設定自定建置環境"
 
 msgid "Windows"
 msgstr "Windows"
 
-#, fuzzy
 msgid "Other platforms"
 msgstr "支援所有平台。"
 
-#, fuzzy
 msgid "Activate the virtual environment:"
 msgstr "設定自定建置環境"
 
 msgid "*(Optional)* Update pre-installed packages:"
-msgstr ""
+msgstr "*（可選）* 更新預先安裝的套裝軟體："
 
 msgid "Clone the docs repo:"
-msgstr ""
+msgstr "克隆（clone）文件倉庫："
 
 msgid "Change directory into the docs repo:"
-msgstr ""
+msgstr "將目錄切換到文件倉庫："
 
-#, fuzzy
 msgid "Install the required packages:"
 msgstr "安裝套件"
 
-#, fuzzy
 msgid "Build the docs:"
 msgstr "內建主題編輯器。"
 
@@ -91,27 +92,28 @@ msgid ""
 "On Windows, that command will run ``make.bat`` instead of GNU Make (or an "
 "alternative)."
 msgstr ""
+"在 Windows 上，該命令將運作 ``make.bat`` 而不是 GNU Make（或其他替代方案）。"
 
 msgid ""
 "Alternatively, you can build the documentation by running the sphinx-build "
 "program manually:"
-msgstr ""
+msgstr "或者你也可以手動呼叫 sphinx-build 程式來建構文件："
 
 msgid ""
 "The compilation will take some time as the ``classes/`` folder contains "
 "hundreds of files. See :ref:`doc_building_the_manual:performance`."
 msgstr ""
+"因為 ``classes/`` 資料夾裡包含了上百個檔，所以編譯的過程會花上一些時間。詳"
+"見 :ref:`doc_building_the_manual:performance`。"
 
 msgid ""
 "You can then browse the documentation by opening ``_build/html/index.html`` "
 "in your web browser."
-msgstr ""
+msgstr "完成後就可以在網頁瀏覽器裡打開 ``_build/html/index.html`` 查看文件了。"
 
-#, fuzzy
 msgid "Dealing with errors"
 msgstr "設定為錯誤的警告"
 
-#, fuzzy
 msgid "If you run into errors, you may try the following command:"
 msgstr "若要從 GitHub 上 Clone 你的 Fork，請使用下列指令："
 
@@ -120,6 +122,9 @@ msgid ""
 "`` folder and run ``make`` again. This will drop the class references from "
 "the final HTML documentation but will keep the rest intact."
 msgstr ""
+"如果你遇到了 ``MemoryError`` 或者 ``EOFError``，可以把 ``classes/`` 資料夾刪"
+"除然後重新執行 ``make``。這樣會在最終的 HTML 文件中刪除類參考文件，其它內容還"
+"是一致的。"
 
 msgid ""
 "If you delete the ``classes/`` folder, do not use ``git add .`` when working "
@@ -127,12 +132,13 @@ msgid ""
 "commit. See `#3157 <https://github.com/godotengine/godot-docs/"
 "issues/3157>`__ for more detail."
 msgstr ""
+"一旦刪除 ``classes/`` 資料夾，在處理 Pull Request（拉取請求）時請勿使用 "
+"``git add .``，否則整個 ``classes/`` 資料夾的刪除都會記錄進你的提交之中。詳情"
+"見 `#3157 <https://github.com/godotengine/godot-docs/issues/3157>`。"
 
-#, fuzzy
 msgid "Hints for performance"
 msgstr "屬性目標中的效能提示"
 
-#, fuzzy
 msgid "RAM usage"
 msgstr "手動使用"
 
@@ -141,6 +147,8 @@ msgid ""
 "swapping, which slows it down. If you have at least 16 GB of RAM, you can "
 "speed up compilation by running:"
 msgstr ""
+"磁片交換會拖慢文件建構的速度，關閉後需要至少 8 GB 的記憶體。如果你有至少 16 "
+"GB 的記憶體，可以這樣加速編譯："
 
 msgid ""
 "You can use ``-j auto`` to use all available CPU threads, but this can use a "
@@ -148,15 +156,17 @@ msgid ""
 "32 CPU threads, ``-j auto`` (which corresponds to ``-j 32`` here) can "
 "require 20+ GB of RAM for Sphinx alone."
 msgstr ""
+"您可以使用 ``-j auto`` 來使用所有可用的 CPU 執行緒，但是如果您有很多 CPU 執行"
+"緒，這可能會使用大量 RAM。 例如，在具有 32 個 CPU 執行緒的系統上， ``-j "
+"auto`` （此處對應於 ``-j 32`` ）僅 Sphinx 就需要 20+ GB 的 RAM。"
 
-#, fuzzy
 msgid "Specifying a list of files"
 msgstr "提供檔案"
 
 msgid ""
 "You can specify a list of files to build, which can greatly speed up "
 "compilation:"
-msgstr ""
+msgstr "你也可以指定需要建構的檔列表，大幅加速編譯："
 
 msgid "Translation status"
 msgstr "翻譯狀態"

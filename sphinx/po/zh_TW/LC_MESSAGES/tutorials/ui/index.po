@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "User interface (UI)"
 msgstr "使用者介面 (UI)"
 
@@ -25,74 +24,75 @@ msgid ""
 "In this section of the tutorial we explain the basics of creating a "
 "graphical user interface (GUI) in Godot."
 msgstr ""
+"在本教學的這一部分中，我們將解釋在 Godot 中建立圖形使用者介面 (GUI) 的基礎知"
+"識。"
 
 msgid "UI building blocks"
-msgstr ""
+msgstr "UI 構件"
 
+#, fuzzy
 msgid ""
 "Like everything else in Godot the user interface is built using nodes, "
 "specifically :ref:`Control <class_Control>` nodes. There are many different "
-"types of controls which are useful for creating specific types of the GUI. "
-"For simplicity we can separate them into two groups: content and layout."
+"types of controls which are useful for creating specific types of GUIs. For "
+"simplicity we can separate them into two groups: content and layout."
 msgstr ""
+"與 Godot 中的其他所有內容一樣，使用者介面是使用節點建立的，特別是 Control "
+"<class_Control> 節點。有許多不同型別的控制項可用於建立特定型別的 GUI。為簡單"
+"起見，我們可以將它們分為兩組：內容和佈局。"
 
 msgid "Typical content controls include:"
-msgstr ""
+msgstr "典型的內容控制項有："
 
-#, fuzzy
 msgid ":ref:`Buttons <class_Button>`"
 msgstr ":ref:`Quat <class_Quat>`"
 
-#, fuzzy
 msgid ":ref:`Labels <class_Label>`"
 msgstr ":ref:`bool <class_bool>`"
 
 msgid ":ref:`LineEdits <class_LineEdit>` and :ref:`TextEdits <class_TextEdit>`"
 msgstr ""
+":ref:`單行文字方塊 <class_LineEdit>` 和 :ref:`多行文字方塊 <class_TextEdit>`"
 
 msgid "Typical layout controls include:"
-msgstr ""
+msgstr "典型的佈局控制項有："
 
-#, fuzzy
 msgid ":ref:`BoxContainers <class_BoxContainer>`"
 msgstr ":ref:`Stack <class_BoxContainer>` 配置。"
 
-#, fuzzy
 msgid ":ref:`MarginContainers <class_MarginContainer>`"
 msgstr ":ref:`Grid <class_GridContainer>` 配置。"
 
-#, fuzzy
 msgid ":ref:`ScrollContainers <class_ScrollContainer>`"
 msgstr ":ref:`Plane <class_Plane>`"
 
-#, fuzzy
 msgid ":ref:`TabContainers <class_TabContainer>`"
 msgstr ":ref:`Plane <class_Plane>`"
 
-#, fuzzy
 msgid ":ref:`Popups <class_Popup>`"
 msgstr ":ref:`bool <class_bool>`"
 
 msgid "The following pages explain the basics of using such controls."
-msgstr ""
+msgstr "以下文章涵蓋了特定控制項節點的具體細節。"
 
 msgid "GUI skinning and themes"
-msgstr ""
+msgstr "GUI 皮膚與主題"
 
 msgid ""
 "Godot features an in-depth skinning/theming system for control nodes. The "
 "pages in this section explain the benefits of that system and how to set it "
 "up in your projects."
 msgstr ""
+"Godot 的控制項節點具有完善的皮膚/主題系統。本節中的頁面將說明該系統的好處，以"
+"及如何在你的專案中啟用它。"
 
-#, fuzzy
 msgid "Control node tutorials"
 msgstr "命令行教學"
 
 msgid ""
 "The following articles cover specific details of using particular control "
 "nodes."
-msgstr ""
+msgstr "以下文章涵蓋了特定控制項節點的具體細節。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

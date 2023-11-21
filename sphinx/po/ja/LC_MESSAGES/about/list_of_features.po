@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,15 +28,13 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"This page lists features supported by the current stable version of Godot "
-"(4.0). Some of these features may not be available in the `LTS release "
-"series (3.x) <https://docs.godotengine.org/en/3.5/about/list_of_features."
-"html>`__."
+"This page lists features supported by the current stable version of Godot. "
+"Some of these features may not be available in the `LTS release series (3.x) "
+"<https://docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
 msgstr ""
-"このページでは、現在の安定版である Godot (3.5) でサポートされている機能の一覧"
-"を示します。最新の開発バージョン (4.0) では、\\ `より多くの機能 <https://"
-"docs.godotengine.org/ja/latest/about/list_of_features.html>`__\\ が利用可能で"
-"す。"
+"このページでは、現在の安定版である Godot (4.0) でサポートされている機能の一覧"
+"を示します。一部\\`LTSバージョン (3.x) <https://docs.godotengine.org/en/3.5/"
+"about/list_of_features.html>`__\\では利用できない機能が含まれます。"
 
 msgid "Platforms"
 msgstr "プラットフォーム"
@@ -65,10 +63,10 @@ msgid "Official binaries are compiled on Ubuntu 14.04."
 msgstr "公式のバイナリはUbuntu 14.04でコンパイルされています。"
 
 msgid "32-bit binaries can be compiled from source."
-msgstr ""
+msgstr "ソースから32ビットのバイナリをコンパイルできます。."
 
 msgid "Android 6.0 and later (editor support is experimental)."
-msgstr ""
+msgstr "Android 6.0以降(エディターは実験的)。"
 
 msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
@@ -92,6 +90,13 @@ msgid ""
 msgstr ""
 "Godotは可能な限りプラットフォームに依存しないことを目指しており、比較的簡単に"
 "新しいプラットフォームに移植することができます。"
+
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to the web "
+"platform. To use C# on that platform, consider Godot 3 instead. Android and "
+"iOS platform support is available as of Godot 4.2, but is experimental and :"
+"ref:`some limitations apply <doc_c_sharp_platforms>`."
+msgstr ""
 
 msgid "Editor"
 msgstr "エディタ"
@@ -192,24 +197,34 @@ msgstr "レンダリング"
 msgid ""
 "3 rendering *methods* (running over 2 rendering *drivers*) are available:"
 msgstr ""
+"3つのレンダー*メソッド*(2つのレンダリングドライバーを使用)が利用可能です:"
 
 msgid ""
 "**Forward+**, running over Vulkan 1.0 (with optional Vulkan 1.1 and 1.2 "
 "features). The most advanced graphics backend, suited for desktop platforms "
 "only. Used by default on desktop platforms."
 msgstr ""
+"**Forward+**は Vulkan 1.0 (任意でVulkan 1.1と1.2の機能)で実行されます。もっと"
+"も革新的なグラフィックバックエンドであり、デスクトップのみに適しています。デ"
+"スクトップでは初期設定になっています。"
 
 msgid ""
 "**Forward Mobile**, running over Vulkan 1.0 (with optional Vulkan 1.1 and "
 "1.2 features). Less features, but renders simple scenes faster. Suited for "
 "mobile and desktop platforms. Used by default on mobile platforms."
 msgstr ""
+"**モバイル**は Vulkan 1.0 (任意でVulkan 1.1と1.2の機能)で実行されます。機能は"
+"劣りますが、シンプルなシーンを高速に描画できます。モバイルやデスクトップに適"
+"しています。プラットフォームがモバイルの時に初期設定になります。"
 
 msgid ""
 "**Compatibility**, running over OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2.0. The "
 "least advanced graphics backend, suited for low-end desktop and mobile "
 "platforms. Used by default on the web platform."
 msgstr ""
+"**互換性**はOpenGL 3.3 / OpenGL ES 3.0 / WebGL 2.0上で動作します。もっとも軽"
+"量のグラフィックバックエンドで、ローエンドなデスクトップやモバイルに適してい"
+"ます。プラットフォームがWebの時、初期設定になっています。"
 
 msgid "2D graphics"
 msgstr "2Dグラフィックス"
@@ -322,6 +337,12 @@ msgstr ""
 
 msgid "CPU-based particles."
 msgstr "CPUベースのパーティクル。"
+
+msgid ""
+"Optional :ref:`2D HDR rendering "
+"<doc_environment_and_post_processing_using_glow_in_2d>` for better glow "
+"capabilities."
+msgstr ""
 
 msgid "2D tools"
 msgstr "2Dツール"
@@ -487,7 +508,10 @@ msgstr "全方位ライト。"
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "コーンの角度および減衰量を調整できるスポットライト。"
 
-msgid "Specular energy can be adjusted on a per-light basis."
+#, fuzzy
+msgid ""
+"Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
+"light basis."
 msgstr "鏡面エネルギー(\"Specular energy\")は、ライトごとに調整できます。"
 
 msgid ""
@@ -540,8 +564,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"PCSS-like shadow blur based on the light size and distance from the surface "
-"the shadow is cast on."
+":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
+"light size and distance from the surface the shadow is cast on."
 msgstr ""
 
 #, fuzzy
@@ -551,7 +575,10 @@ msgstr "鏡面エネルギー(\"Specular energy\")は、ライトごとに調整
 msgid "**Global illumination with indirect lighting:**"
 msgstr "**間接照明によるグローバルイルミネーション:**"
 
-msgid "Baked lightmaps (fast, but can't be updated at run-time)."
+#, fuzzy
+msgid ""
+":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
+"at run-time)."
 msgstr "ベイク済みライトマップ (高速ですが、実行時は更新不可)。"
 
 msgid ""
@@ -581,19 +608,28 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Voxel-based GI probes. Supports dynamic lights *and* dynamic occluders, "
-"while also supporting reflections. Requires a fast baking step which can be "
-"performed in the editor or at run-time (including from an exported project)."
+"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
+"JNLM, or CPU/GPU-based denoising with OIDN."
 msgstr ""
 
 msgid ""
-"Signed-distance field GI designed for large open worlds. Supports dynamic "
-"lights, but not dynamic occluders. Supports reflections. No baking required."
+":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
+"*and* dynamic occluders, while also supporting reflections. Requires a fast "
+"baking step which can be performed in the editor or at run-time (including "
+"from an exported project)."
 msgstr ""
 
 msgid ""
-"Screen-space indirect lighting (SSIL) at half or full resolution. Fully real-"
-"time and supports any kind of emissive light source (including decals)."
+":ref:`Signed-distance field GI <doc_using_sdfgi>` designed for large open "
+"worlds. Supports dynamic lights, but not dynamic occluders. Supports "
+"reflections. No baking required."
+msgstr ""
+
+msgid ""
+":ref:`Screen-space indirect lighting (SSIL) "
+"<doc_environment_and_post_processing_ssil>` at half or full resolution. "
+"Fully real-time and supports any kind of emissive light source (including "
+"decals)."
 msgstr ""
 
 msgid ""
@@ -607,7 +643,9 @@ msgstr "**反射:**"
 
 msgid ""
 "Voxel-based reflections (when using GI probes) and SDF-based reflections "
-"(when using signed distance field GI)."
+"(when using signed distance field GI). Voxel-based reflections are visible "
+"on transparent surfaces, while rough SDF-based reflections are visible on "
+"transparent surfaces."
 msgstr ""
 
 msgid ""
@@ -642,8 +680,8 @@ msgid "**Decals:**"
 msgstr "**機能:**"
 
 msgid ""
-"Supports albedo, emissive, :abbr:`ORM (Occlusion Roughness Metallic)` and "
-"normal mapping."
+":ref:`Supports albedo <doc_using_decals>`, emissive, :abbr:`ORM (Occlusion "
+"Roughness Metallic)`, and normal mapping."
 msgstr ""
 
 msgid ""
@@ -719,6 +757,15 @@ msgstr "カメラの向きに応じた自動の深度フォグ色に対応 (太�
 msgid "Support for sun scattering in the fog."
 msgstr "ビジュアルシェーダープラグイン。"
 
+msgid ""
+"Support for controlling how much fog rendering should affect the sky, with "
+"separate controls for traditional and volumetric fog."
+msgstr ""
+
+#, fuzzy
+msgid "Support for making specific materials ignore fog."
+msgstr "ビジュアルシェーダープラグイン。"
+
 msgid "**Volumetric fog:**"
 msgstr ""
 
@@ -734,7 +781,8 @@ msgstr ""
 
 msgid ""
 "Fog volume nodes that can be placed to add fog to specific areas (or remove "
-"fog from specific areas)."
+"fog from specific areas). Supported shapes include box, ellipse, cone, "
+"cylinder, and 3D texture-based density maps."
 msgstr ""
 
 msgid "Each fog volume can have its own custom shader."
@@ -803,6 +851,11 @@ msgstr ""
 "数のブレンドモード: スクリーン、ソフトライト、追加、置換。"
 
 msgid "Glow can have a colored dirt map texture, acting as a lens dirt effect."
+msgstr ""
+
+msgid ""
+"Glow can be :ref:`used as a screen-space blur effect "
+"<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`."
 msgstr ""
 
 #, fuzzy
@@ -1043,17 +1096,30 @@ msgstr ""
 "ファイルサイズと依存関係を抑えるために、異なるバイナリでパッケージ化されてい"
 "ます。"
 
-#, fuzzy
-msgid "Uses .NET 6."
-msgstr "Mono 6.x を使用。"
+msgid "Supports .NET 6 and higher."
+msgstr ""
 
 #, fuzzy
 msgid "Full support for the C# 10.0 syntax and features."
 msgstr "C# 7.0の構文と機能を完全サポート。"
 
 msgid ""
-"Supports Windows, Linux and macOS. Mobile/web platforms are currently "
-"unsupported. To use C# on mobile/web platforms, use Godot 3 instead."
+"Supports Windows, Linux, and macOS. As of 4.2 experimental support for "
+"Android and iOS is also available (requires a .NET 7.0 project for Android "
+"and 8.0 for iOS)."
+msgstr ""
+
+msgid ""
+"On the Android platform only some architectures are supported: ``arm64`` and "
+"``x64``."
+msgstr ""
+
+msgid "On the iOS platform only some architectures are supported: ``arm64``."
+msgstr ""
+
+msgid ""
+"The web platform is currently unsupported. To use C# on that platform, "
+"consider Godot 3 instead."
 msgstr ""
 
 msgid ""
@@ -1088,8 +1154,8 @@ msgstr "ビルドシステムや言語機能はなんでも使うことができ
 
 msgid ""
 "Actively developed GDExtension bindings for `D <https://github.com/godot-"
-"dlang/godot-dlang>`__, `Haxe <https://hxgodot.github.io/>`__, `Python "
-"<https://github.com/touilleMan/godot-python>`__, and `Rust <https://github."
+"dlang/godot-dlang>`__, `Haxe <https://hxgodot.github.io/>`__, `Swift "
+"<https://github.com/migueldeicaza/SwiftGodot>`__, and `Rust <https://github."
 "com/godot-rust/gdextension>`__ bindings provided by the community. (Some of "
 "these bindings may be experimental and not production-ready)."
 msgstr ""
@@ -1686,12 +1752,11 @@ msgstr ""
 msgid "Read XML files using :ref:`class_XMLParser`."
 msgstr "ref:`class_XMLParser` を使用した、XMLファイルの読み込み。"
 
-#, fuzzy
 msgid ""
-"Read and write ZIP files using :ref:`class_ZIPReader` and :ref:"
-"`class_ZIPPacker`."
+":ref:`Load and save images, audio/video, fonts and ZIP archives "
+"<doc_runtime_loading_and_saving>` in an exported project without having to "
+"go through Godot's import system."
 msgstr ""
-":ref:`class_File` を使用した、テキストファイルやバイナリファイルの読み書き。"
 
 msgid ""
 "Pack game data into a PCK file (custom format optimized for fast seeking), "

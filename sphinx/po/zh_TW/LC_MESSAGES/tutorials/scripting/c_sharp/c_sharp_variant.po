@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,14 +17,13 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "C# Variant"
 msgstr "變體"
 
 msgid ""
 "For a detailed explanation of Variant in general, see the :ref:`Variant "
 "<class_Variant>` documentation page."
-msgstr ""
+msgstr "有關 Variant 的一般詳細說明，請參閱 Variant <class_Variant> 檔案頁面。"
 
 msgid ""
 "``Godot.Variant`` is used to represent Godot's native :ref:`Variant "
@@ -33,6 +32,9 @@ msgid ""
 "interact with untyped engine APIs. Take advantage of C#'s type safety when "
 "possible."
 msgstr ""
+"``Godot.Variant`` 用來表示 Godot 的原生 :ref:`Variant <class_Variant>` 型別。"
+"任何與 Variant 相容的型別都可以與其進行轉換。我們建議避免使用“Godot."
+"Variant”，除非需要與非型別化引擎 API 互動。盡可能利用 C# 的型別安全性。"
 
 msgid ""
 "Any of ``Variant.As{TYPE}`` methods or the generic ``Variant.As<T>`` method "
@@ -40,19 +42,25 @@ msgid ""
 "Variant`` type contains implicit conversions defined for all the supported "
 "types, calling these methods directly is usually not necessary."
 msgstr ""
+"任何「Variant.As{TYPE}」方法或通用「Variant.As<T>」方法都可用於將「Godot."
+"Variant」轉換為 C# 型別。由於「Godot.Variant」型別包含為所有支援的型別定義的"
+"隱式轉換，因此通常不需要直接呼叫這些方法。"
 
 msgid ""
 "Use ``CreateFrom`` method overloads or the generic ``Variant.From<T>`` "
 "method to convert a C# type to a ``Godot.Variant``."
 msgstr ""
+"使用 CreateFrom 方法重載或通用 Variant.From<T> 方法將 C# 型別轉換為 Godot."
+"Variant 。"
 
 msgid ""
 "Since the Variant type in C# is a struct, it can't be null. To create a "
 "\"null\" Variant use the ``default`` keyword or the parameterless "
 "constructor."
 msgstr ""
+"由於 C# 中的 Variant 型別是一個結構體，因此它不能為 null。若要建立“null”變"
+"體，請使用“default”關鍵字或無參數建構函式。"
 
-#, fuzzy
 msgid "Variant-compatible types"
 msgstr "自定變數型別"
 
@@ -61,240 +69,195 @@ msgid ""
 "csharp/language-reference/keywords/built-in-types-table>`_, except "
 "``decimal``, ``nint`` and ``nuint``."
 msgstr ""
+"所有「內建值型別 <https://docs.microsoft.com/en-us/dotnet/csharp/language-"
+"reference/keywords/built-in-types-table>」_，除了「decimal」 、「nint」和"
+"「nuint」。"
 
-#, fuzzy
 msgid "``string``."
 msgstr "``: String``"
 
-#, fuzzy
 msgid "Classes derived from :ref:`GodotObject <class_Object>`."
 msgstr ":ref:`Object <class_Object>`"
 
 msgid "Collections types defined in the ``Godot.Collections`` namespace."
-msgstr ""
+msgstr "在「Godot.Collections」命名空間中定義的集合型別。"
 
 msgid "Full list of Variant types and their equivalent C# type:"
-msgstr ""
+msgstr "Variant 型別及其等效 C# 型別的完整列表："
 
-#, fuzzy
 msgid "Variant.Type"
 msgstr "變體"
 
-#, fuzzy
 msgid "C# Type"
 msgstr "型別"
 
 msgid "``Nil``"
-msgstr ""
+msgstr "``Nil``"
 
 msgid "``null`` (Not a type)"
-msgstr ""
+msgstr "``null`` （不是型別）"
 
 msgid "``Bool``"
-msgstr ""
+msgstr "``Bool``"
 
 msgid "``bool``"
-msgstr ""
+msgstr "``bool``"
 
-#, fuzzy
 msgid "``Int``"
 msgstr "``: int``"
 
 msgid "``long`` (Godot stores 64-bit integers in Variant)"
-msgstr ""
+msgstr "``long`` （Godot 在 Variant 中儲存 64 位元整數）"
 
-#, fuzzy
 msgid "``Float``"
 msgstr "``: float``"
 
 msgid "``double`` (Godot stores 64-bit floats in Variant)"
-msgstr ""
+msgstr "``double`` （Godot 在 Variant 中儲存 64 位元浮點數）"
 
-#, fuzzy
 msgid "``String``"
 msgstr "``String[]``"
 
-#, fuzzy
 msgid "``string``"
 msgstr "``: String``"
 
-#, fuzzy
 msgid "``Vector2``"
 msgstr "``Vector2[]``"
 
-#, fuzzy
 msgid "``Godot.Vector2``"
 msgstr "``Vector2[]``"
 
-#, fuzzy
 msgid "``Vector2I``"
 msgstr "``Vector2[]``"
 
-#, fuzzy
 msgid "``Godot.Vector2I``"
 msgstr "``Vector2[]``"
 
-#, fuzzy
 msgid "``Rect2``"
-msgstr "\\ Rect2"
+msgstr "``Rect2``"
 
-#, fuzzy
 msgid "``Godot.Rect2``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Rect2``"
 
-#, fuzzy
 msgid "``Rect2I``"
-msgstr "\\ Rect2"
+msgstr "``Rect2I``"
 
-#, fuzzy
 msgid "``Godot.Rect2I``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Rect2I``"
 
-#, fuzzy
 msgid "``Vector3``"
-msgstr "``Vector3[]``"
+msgstr "``Vector3``"
 
-#, fuzzy
 msgid "``Godot.Vector3``"
-msgstr "``Vector3[]``"
+msgstr "``Godot.Vector3``"
 
-#, fuzzy
 msgid "``Vector3I``"
-msgstr "``Vector3[]``"
+msgstr "``Vector3I``"
 
-#, fuzzy
 msgid "``Godot.Vector3I``"
-msgstr "``Vector3[]``"
+msgstr "``Godot.Vector3I``"
 
-#, fuzzy
 msgid "``Transform2D``"
-msgstr "\\ ``transform``"
+msgstr "``Transform2D``"
 
-#, fuzzy
 msgid "``Godot.Transform2D``"
-msgstr "\\ ``transform``"
+msgstr "``Godot.Transform2D``"
 
-#, fuzzy
 msgid "``Vector4``"
-msgstr "``Vector2[]``"
+msgstr "``Vector4``"
 
-#, fuzzy
 msgid "``Godot.Vector4``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Vector4``"
 
-#, fuzzy
 msgid "``Vector4I``"
-msgstr "``Vector2[]``"
+msgstr "``Vector4I``"
 
-#, fuzzy
 msgid "``Godot.Vector4I``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Vector4I``"
 
-#, fuzzy
 msgid "``Plane``"
-msgstr "平面"
+msgstr "``Plane``"
 
 msgid "``Godot.Plane``"
-msgstr ""
+msgstr "``Godot.Plane``"
 
-#, fuzzy
 msgid "``Quaternion``"
-msgstr "\\ ``Quadrant``"
+msgstr "``Quaternion``"
 
-#, fuzzy
 msgid "``Godot.Quaternion``"
-msgstr "``Rotation``"
+msgstr "``Godot.Quaternion``"
 
 msgid "``Aabb``"
-msgstr ""
+msgstr "``Aabb``"
 
 msgid "``Godot.Aabb``"
-msgstr ""
+msgstr "``Godot.Aabb``"
 
-#, fuzzy
 msgid "``Basis``"
-msgstr "``is``"
+msgstr "``Basis``"
 
 msgid "``Godot.Basis``"
-msgstr ""
+msgstr "``Godot.Basis``"
 
-#, fuzzy
 msgid "``Transform3D``"
-msgstr "\\ ``transform``"
+msgstr "``Transform3D``"
 
-#, fuzzy
 msgid "``Godot.Transform3D``"
-msgstr "\\ ``transform``"
+msgstr "``Godot.Transform3D``"
 
-#, fuzzy
 msgid "``Projection``"
-msgstr "\\ ``connection``"
+msgstr "``Projection``"
 
-#, fuzzy
 msgid "``Godot.Projection``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Projection``"
 
-#, fuzzy
 msgid "``Color``"
-msgstr "``Color8``"
+msgstr "``Color``"
 
-#, fuzzy
 msgid "``Godot.Color``"
-msgstr "``Color.Color8``"
+msgstr "``Godot.Color``"
 
-#, fuzzy
 msgid "``StringName``"
-msgstr "\\ StringName"
+msgstr "``StringName``"
 
-#, fuzzy
 msgid "``Godot.StringName``"
-msgstr "\\ StringName"
+msgstr "``Godot.StringName``"
 
-#, fuzzy
 msgid "``NodePath``"
-msgstr "``$NodePath``"
+msgstr "``NodePath``"
 
-#, fuzzy
 msgid "``Godot.NodePath``"
-msgstr "``$NodePath``"
+msgstr "``Godot.NodePath``"
 
-#, fuzzy
 msgid "``Rid``"
-msgstr "``-> void``"
+msgstr "``Rid``"
 
 msgid "``Godot.Rid``"
-msgstr ""
+msgstr "``Godot.Rid``"
 
-#, fuzzy
 msgid "``Object``"
-msgstr "\\ Object"
+msgstr "``Object``"
 
 msgid "``Godot.GodotObject`` or any derived type."
-msgstr ""
+msgstr "``Godot.GodotObject`` or any derived type."
 
-#, fuzzy
 msgid "``Callable``"
-msgstr "\\ ``enabled``"
+msgstr "``Callable``"
 
-#, fuzzy
 msgid "``Godot.Callable``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Callable``"
 
-#, fuzzy
 msgid "``Signal``"
-msgstr "訊號"
+msgstr "``Signal``"
 
-#, fuzzy
 msgid "``Godot.Signal``"
-msgstr "``Godot.Collections.Array``"
+msgstr "``Godot.Signal``"
 
-#, fuzzy
 msgid "``Dictionary``"
-msgstr "字典"
+msgstr "``Dictionary``"
 
-#, fuzzy
 msgid "``Godot.Collections.Dictionary``"
-msgstr "使用 ``Godot.Collections.Dictionary`` 。"
+msgstr "``Godot.Collections.Dictionary``"
 
 msgid "``Array``"
 msgstr "``Array``"
@@ -302,72 +265,57 @@ msgstr "``Array``"
 msgid "``Godot.Collections.Array``"
 msgstr "``Godot.Collections.Array``"
 
-#, fuzzy
 msgid "``PackedByteArray``"
 msgstr "``PoolByteArray``"
 
 msgid "``byte[]``"
 msgstr "``byte[]``"
 
-#, fuzzy
 msgid "``PackedInt32Array``"
 msgstr "``PoolIntArray``"
 
 msgid "``int[]``"
 msgstr "``int[]``"
 
-#, fuzzy
 msgid "``PackedInt64Array``"
 msgstr "``PoolIntArray``"
 
-#, fuzzy
 msgid "``long[]``"
 msgstr "``float[]``"
 
-#, fuzzy
 msgid "``PackedFloat32Array``"
 msgstr "``PoolFloatArray``"
 
 msgid "``float[]``"
 msgstr "``float[]``"
 
-#, fuzzy
 msgid "``PackedFloat64Array``"
 msgstr "``PoolFloatArray``"
 
-#, fuzzy
 msgid "``double[]``"
 msgstr "``byte[]``"
 
-#, fuzzy
 msgid "``PackedStringArray``"
 msgstr "``PoolStringArray``"
 
-#, fuzzy
 msgid "``string[]``"
 msgstr "``String[]``"
 
-#, fuzzy
 msgid "``PackedVector2Array``"
 msgstr "``PoolVector2Array``"
 
-#, fuzzy
 msgid "``Godot.Vector2[]``"
 msgstr "``Vector2[]``"
 
-#, fuzzy
 msgid "``PackedVector3Array``"
 msgstr "``PoolVector3Array``"
 
-#, fuzzy
 msgid "``Godot.Vector3[]``"
 msgstr "``Vector3[]``"
 
-#, fuzzy
 msgid "``PackedColorArray``"
 msgstr "``PoolColorArray``"
 
-#, fuzzy
 msgid "``Godot.Color[]``"
 msgstr "``Color[]``"
 
@@ -377,6 +325,9 @@ msgid ""
 "fit in the bigger type. Be aware that an implicit conversion is performed so "
 "using the wrong type will result in potential precision loss."
 msgstr ""
+"Godot 在 Variant 中使用 64 位元整數和浮點數。支援較小的整數和浮點型別，例"
+"如“int”、“short”和“float”，因為它們可以適應更大的型別。請注意，執行隱式轉換，"
+"因此使用錯誤的型別將導致潛在的精確度損失。"
 
 msgid ""
 "Enums are supported by ``Godot.Variant`` since their underlying type is an "
@@ -385,21 +336,29 @@ msgid ""
 "before they can converted to/from ``Godot.Variant`` or use the generic "
 "``Variant.As<T>`` and ``Variant.From<T>`` methods to convert them."
 msgstr ""
+"列舉受“Godot.Variant”支援，因為它們的基礎型別是所有相容的整數型別。但是，隱式"
+"轉換不存在，列舉必須手動轉換為其基礎整數型別，然後才能與“Godot.Variant”轉換或"
+"使用通用“Variant.As<T>”和“ Variant.From<T>`` 方法來轉換它們。"
 
 msgid "Using Variant in a generic context"
-msgstr ""
+msgstr "在通用本文中使用 Variant"
 
 msgid ""
 "When using generics, you may be interested in restricting the generic ``T`` "
 "type to be only one of the Variant-compatible types. This can be achieved "
 "using the ``[MustBeVariant]`` attribute."
 msgstr ""
+"使用泛型時，您可能有興趣將泛型「T」型別限制為 Variant 相容型別之一。這可以使"
+"用“[MustBeVariant]”屬性來實作。"
 
 msgid ""
 "Combined with the generic ``Variant.From<T>`` allows you to obtain an "
 "instance of ``Godot.Variant`` from an instance of a generic ``T`` type. Then "
 "it can be used in any API that only supports the ``Godot.Variant`` struct."
 msgstr ""
+"與泛型 ``Variant.From<T>`` 結合使用，您可以從泛型 ``T`` 型別的實例取得 "
+"``Godot.Variant`` 實例。然後它可以在任何只支援``Godot.Variant``結構的API中使"
+"用。"
 
 msgid ""
 "In order to invoke a method with a generic parameter annotated with the "
@@ -407,6 +366,8 @@ msgid ""
 "or a generic ``T`` type annotated with the ``[MustBeVariant]`` attribute as "
 "well."
 msgstr ""
+"為了呼叫具有「[MustBeVariant]」屬性註釋的泛型參數的方法，該值必須是 Variant "
+"相容型別或以「[MustBeVariant]」註釋的泛型「T」型別屬性也是如此。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

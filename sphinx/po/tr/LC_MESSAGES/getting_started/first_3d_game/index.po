@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Your first 3D game"
+msgstr "İlk 3B oyununuz"
+
+msgid ""
+"In this step-by-step tutorial series, you will create your first complete 3D "
+"game with Godot. By the end of the series, you will have a simple yet "
+"finished project of your own like the animated gif below."
+msgstr ""
+"Bu adım-adım öğretici serisinde, Godot ile ilk tamamlanmış 2B oyununuzu "
+"oluşturacaksınız. Serinin bitiminde, aşağıdaki hareketli resimdekine "
+"benzeyen, kendinize ait basit ama bitmiş bir projeniz olacak."
+
+msgid "|image0|"
+msgstr "|image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid ""
+"The game we'll code here is similar to :ref:`doc_your_first_2d_game`, with a "
+"twist: you can now jump and your goal is to squash the creeps. This way, you "
+"will both **recognize patterns** you learned in the previous tutorial and "
+"**build upon them** with new code and features."
+msgstr ""
+"Kodlayacağımız oyun, :ref:`doc_your_first_2d_game` serisinde yaptığımıza çok "
+"benziyor, ama ufak bir marifeti daha olacak: sıçrayabileceksiniz ve amacınız "
+"canavarları ezmek olacak. Bu şekilde, hem önceki öğreticiden öğrendiğiniz "
+"**kalıpları ayırt edecek** hem de yeni kodlar ve özelliklerle **bunların "
+"üzerine koyarak gelişeceksiniz**."
+
+msgid "You will learn to:"
+msgstr "Şunları yapmayı öğreneceksiniz:"
+
+msgid "Work with 3D coordinates with a jumping mechanic."
+msgstr "Sıçrama mekaniği ile 3B koordinatlarda çalışmak."
+
+msgid ""
+"Use kinematic bodies to move 3D characters and detect when and how they "
+"collide."
+msgstr ""
+"3B karakterleri hareket ettirmek için kinematik cisimler kullanmak ve "
+"bunların ne zaman ve nasıl çarpıştıklarını algılamak."
+
+msgid ""
+"Use physics layers and a group to detect interactions with specific entities."
+msgstr ""
+"Belirli varlıklar ile etkileşimleri algılamak için fizik katmanları ve bir "
+"grup kullanmak."
+
+msgid ""
+"Code basic procedural gameplay by instancing monsters at regular time "
+"intervals."
+msgstr ""
+"Canavarları düzenli zaman aralıklarında örnekleyerek temel yöntemsel oynanış "
+"kodlamak."
+
+msgid "Design a movement animation and change its speed at run-time."
+msgstr ""
+"Hareket canlandırması tasarlamak ve bunun hızını çalışma-zamanında "
+"değiştirmek."
+
+msgid "Draw a user interface on a 3D game."
+msgstr "3B bir oyunda kullanıcı arayüzü çizmek."
+
+msgid "And more."
+msgstr "Ve daha fazlası."
+
+#, fuzzy
+msgid ""
+"This tutorial is for beginners who followed the complete getting started "
+"series. We'll start slow with detailed instructions and shorten them as we "
+"do similar steps. If you're an experienced programmer, you can browse the "
+"complete demo's source code here: `Squash the Creep source code <https://"
+"github.com/godotengine/godot-3d-dodge-the-creeps>`__."
+msgstr ""
+"Bu öğretici, bütün başlangıç serisini takip etmiş yeni başlayanlar içindir. "
+"Detaylı talimatlarla yavaştan başlayacak ve benzer adımları tekrar ederken "
+"bunları kısaltacağız. Eğer deneyimli bir programcı iseniz, tamamlanmış demo "
+"kaynak koduna şuradan göz atabilirsiniz: `Squash the Creep kaynak kodu "
+"<https://github.com/GDQuest/godot-3d-dodge-the-creeps/>`__."
+
+msgid ""
+"You can follow this series without having done the 2D one. However, if "
+"you're new to game development, we recommend you to start with 2D. 3D game "
+"code is always more complex and the 2D series will give you foundations to "
+"follow along more comfortably."
+msgstr ""
+"Bu seriyi, önceki 2B olanı yapmadan da takip edebilirsiniz. Ancak, eğer oyun "
+"geliştirmeye yeni başlıyorsanız, 2B ile başlamanızı öneriyoruz. 3B oyunu "
+"kodlamak her zaman daha karmaşıktır ve 2B serisi size, daha rahat takip "
+"edebilmeniz için gereken temelleri verecektir."
+
+#, fuzzy
+msgid ""
+"We prepared some game assets so we can jump straight to the code. You can "
+"download them here: `Squash the Creeps assets <https://github.com/"
+"godotengine/godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
+msgstr ""
+"Doğrudan kodlamaya geçebilmemiz için size bazı oyun varlıkları hazırladık. "
+"Bunları şuradan indirebilirsiniz: `Squash the Creeps assets <https://github."
+"com/GDQuest/godot-3d-dodge-the-creeps/releases/tag/1.1.0>`__."
+
+msgid ""
+"We will first work on a basic prototype for the player's movement. We will "
+"then add the monsters that we'll spawn randomly around the screen. After "
+"that, we'll implement the jump and squashing mechanic before refining the "
+"game with some nice animation. We'll wrap up with the score and the retry "
+"screen."
+msgstr ""
+"İlk olarak oyuncunun hareketi için temel bir ön-örnek üzerinde çalışacağız. "
+"Sonra ekranda rastgele ortaya çıkartacağımız canavarları ekleyeceğiz. Bunun "
+"ardından, bazı güzel animasyonlar ile oyunu güzelleştirmeden önce, sıçrama "
+"ve ezme mekaniklerini yazacağız. En sonunda, puanlama ve tekrar deneme "
+"ekranları ile bitireceğiz."
+
+msgid "Contents"
+msgstr "İçerikler"
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

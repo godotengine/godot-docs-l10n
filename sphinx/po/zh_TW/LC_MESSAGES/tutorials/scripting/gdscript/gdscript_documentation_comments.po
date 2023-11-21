@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "GDScript documentation comments"
 msgstr "撰寫自定說明文件"
 
@@ -31,8 +30,11 @@ msgid ""
 "tooltip in the editor. This documentation can be generated as XML files by "
 "the editor."
 msgstr ""
+"在 GDScript 中，註解可用於記錄程式碼並為腳本成員新增描述。普通註釋和文件註釋"
+"之間有兩個區別。首先，文件註解應以雙散列符號「##」開頭。其次，它必須緊接在腳"
+"本成員之前，或者對於腳本描述，應放置在腳本的頂部。如果記錄了匯出的變量，則其"
+"描述將用作編輯器中的工具提示。該檔案可以由編輯器產生為 XML 檔案。"
 
-#, fuzzy
 msgid "Documenting a script"
 msgstr "執行腳本"
 
@@ -40,66 +42,61 @@ msgid ""
 "Comments documenting a script must come before any member documentation. A "
 "suggested format for script documentation can be divided into three parts."
 msgstr ""
+"記錄腳本的註解必須位於任何成員檔案之前。腳本檔案的建議格式可以分為三個部分。"
 
 msgid "A brief description of the script."
-msgstr ""
+msgstr "資源的文字描述."
 
-#, fuzzy
 msgid "Detailed description."
 msgstr "說明"
 
 msgid "Tutorials and deprecated/experimental marks."
-msgstr ""
+msgstr "教學和已放棄使用/實驗標記。"
 
 msgid ""
 "To separate these from each other, the documentation comments use special "
 "tags. The tag must be at the beginning of a line (ignoring preceding white "
 "space) and must have the format ``@``, followed by the keyword."
 msgstr ""
+"為了將它們彼此分開，檔案註釋使用特殊標籤。標記必須位於行的開頭（忽略前面的空"
+"格），並且必須採用格式“@”，後面跟著關鍵字。"
 
 msgid "Tags"
-msgstr ""
+msgstr "標籤"
 
-#, fuzzy
 msgid "Brief description"
-msgstr "\\ <brief_description></brief_description>"
+msgstr "Brief description"
 
 msgid "No tag. Lives at the very beginning of the documentation section."
-msgstr ""
+msgstr "沒有標籤。位於文件部分的開頭。"
 
 msgid "Description"
 msgstr "說明"
 
 msgid "No tag. Use one blank line to separate the description from the brief."
-msgstr ""
+msgstr "沒有標籤。使用一個空白行將描述與摘要分開。"
 
-#, fuzzy
 msgid "Tutorial"
 msgstr "文字教學"
 
 msgid "``@tutorial:``"
-msgstr ""
+msgstr "``@tutorial:``"
 
 msgid "``@tutorial(The Title Here):``"
-msgstr ""
+msgstr "``@tutorial(標題寫在此處):``"
 
-#, fuzzy
 msgid "Deprecated"
 msgstr "重複"
 
-#, fuzzy
 msgid "``@deprecated``"
-msgstr "\\ ``imported``"
+msgstr "``@deprecated``"
 
-#, fuzzy
 msgid "Experimental"
-msgstr "Android (實驗性)"
+msgstr "實驗性"
 
-#, fuzzy
 msgid "``@experimental``"
-msgstr "Android (實驗性)"
+msgstr "``@experimental``"
 
-#, fuzzy
 msgid "For example::"
 msgstr "如："
 
@@ -107,25 +104,26 @@ msgid ""
 "If there is any space in between the tag name and colon, for example "
 "``@tutorial  :``, it won't be treated as a valid tag and will be ignored."
 msgstr ""
+"如果標籤名稱和冒號之間有任何空格，例如``@tutorial :``，它將不會被視為有效標籤"
+"並將被忽略。"
 
 msgid ""
 "When the description spans multiple lines, the preceding and trailing white "
 "spaces will be stripped and joined with a single space. To preserve the line "
 "break use ``[br]``. See also `BBCode and class reference`_ below."
 msgstr ""
+"當描述跨越多行時，前面和後面的空格將被刪除並用單一空格連接。若要保留換行符，"
+"請使用``[br]``。另請參閱下面的“BBCode 和類別參考”。"
 
-#, fuzzy
 msgid "Documenting script members"
 msgstr "建立腳本樣板"
 
 msgid "Members that are applicable for documentation:"
-msgstr ""
+msgstr "適用於檔案的成員："
 
-#, fuzzy
 msgid "Inner class"
 msgstr "內類別"
 
-#, fuzzy
 msgid "Constant"
 msgstr "常數"
 
@@ -136,14 +134,13 @@ msgid "Signal"
 msgstr "訊號"
 
 msgid "Variable"
-msgstr ""
+msgstr "變數"
 
-#, fuzzy
 msgid "Enum"
-msgstr "Enum 列舉類型"
+msgstr "Enum 列舉型別"
 
 msgid "Enum value"
-msgstr ""
+msgstr "列舉值"
 
 msgid ""
 "Documentation of a script member must immediately precede the member or its "
@@ -151,14 +148,15 @@ msgid ""
 "every line must start with the double hash symbol ``##`` to be considered as "
 "part of the documentation."
 msgstr ""
+"腳本成員的文件必須緊接在該成員或其註解（如果有）之前。描述可以有多於一行，但"
+"每一行必須以雙井號「##」開頭才能被視為檔案的一部分。"
 
 msgid "No tag."
-msgstr ""
+msgstr "沒有標籤。"
 
-msgid ""
-"Variables, constants, signals, and enum values support inline documentation "
-"comments. Note that inline comments do not support tags."
-msgstr ""
+#, fuzzy
+msgid "Alternatively, you can use inline documentation comments::"
+msgstr "或者，您也可以將其克隆到專案資料夾："
 
 msgid ""
 "The script documentation will update in the editor help window every time "
@@ -166,39 +164,48 @@ msgid ""
 "an underscore, it will be treated as private. It will not appear in the "
 "documentation and will be ignored in the help window."
 msgstr ""
+"每次更新腳本時，腳本檔案都會在編輯器說明視窗中更新。如果任何成員變數或函式名"
+"稱以下劃線開頭，它將被視為私有。它不會出現在檔案中，並且在說明視窗中將被忽"
+"略。"
 
-#, fuzzy
 msgid "Complete script example"
 msgstr "GDScript 範例"
 
 msgid "``@deprecated`` and ``@experimental`` tags"
-msgstr ""
+msgstr "``@deprecated`` 和 ``@experimental`` 標籤"
 
 msgid ""
 "You can mark a class or any of its members as deprecated or experimental. "
 "This will add the corresponding indicator in the built-in documentation "
 "viewer. This can be especially useful for plugin and library creators."
 msgstr ""
+"您可以將類別或其任何成員標記為已放棄使用或實驗性的。這將在內建檔案檢視器中新"
+"增相應的指標。這對於插件和庫建立者特別有用。"
 
 msgid ""
 "**Deprecated** marks a non-recommended API that is subject to removal or "
 "incompatible change in a future major release. Usually the API is kept for "
 "backwards compatibility."
 msgstr ""
+"**已放棄使用** 標記不建議的 API，可能會在未來的主要版本中刪除或進行不相容的更"
+"改。通常保留 API 是為了向後相容。"
 
 msgid ""
 "**Experimental** marks a new unstable API that may be changed or removed in "
 "the current major branch. Using this API is not recommended in production "
 "code."
 msgstr ""
+"**實驗性**旗標著一個新的不穩定 API，可能會在目前主要分支中變更或刪除。不建議"
+"在生產程式碼中使用此 API。"
 
 msgid ""
 "While technically you can use both ``@deprecated`` and ``@experimental`` "
 "tags on the same class/member, this is not recommended as it is against "
 "common conventions."
 msgstr ""
+"雖然從技術上講，您可以在同一類/成員上使用“@deprecated”和“@experimental”標籤，"
+"但不建議這樣做，因為它違反了常見約定。"
 
-#, fuzzy
 msgid "BBCode and class reference"
 msgstr "類別參照手冊"
 
@@ -209,8 +216,10 @@ msgid ""
 "animation effects, etc. can be added with the :ref:`bbcode "
 "<doc_bbcode_in_richtextlabel>`."
 msgstr ""
+"顯示文件的編輯器幫助視窗支援:ref:`bbcode <doc_bbcode_in_richtextlabel>`。因"
+"此，可以對齊和格式化文件。彩色文字、圖像、字型、表格、URL、動畫效果等可以使"
+"用 :ref:`bbcode <doc_bbcode_in_richtextlabel>` 新增。"
 
-#, fuzzy
 msgid ""
 "Godot's class reference supports BBCode-like tags. They add nice formatting "
 "to the text which could also be used in the documentation. See also :ref:"
@@ -224,12 +233,12 @@ msgid ""
 "class name. For links to the same class, the class name is optional and can "
 "be omitted."
 msgstr ""
+"每當連結到另一個類別的成員時，都需要指定類別名稱。對於指向同一類別的鏈接，類"
+"別名稱是可選的並且可以省略。"
 
-#, fuzzy
 msgid "Here's the list of available tags:"
 msgstr "有六種搜尋模式："
 
-#, fuzzy
 msgid "Tag and Description"
 msgstr "說明"
 
@@ -239,215 +248,183 @@ msgstr "範例"
 msgid "Result"
 msgstr "結果"
 
-#, fuzzy
 msgid "``[Class]``"
-msgstr "\\ [Class]"
+msgstr "``[Class]``"
 
-#, fuzzy
 msgid "Link to class"
 msgstr "類別連結"
 
-#, fuzzy
 msgid "``Move the [Sprite2D].``"
 msgstr "移動 [Sprite]。"
 
-#, fuzzy
 msgid "Move the :ref:`class_Sprite2D`."
 msgstr "移動 :ref:`class_sprite`。"
 
 msgid "``[annotation Class.name]``"
-msgstr ""
+msgstr "``[註解類別名]``"
 
-#, fuzzy
 msgid "Link to annotation"
 msgstr "另一個類別的方法連結"
 
 msgid "``See [annotation @GDScript.@export].``"
-msgstr ""
+msgstr "``請參閱[註釋@GDScript.@export]。``"
 
 msgid "See :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`."
-msgstr ""
+msgstr "請參閱:ref:`@GDScript.@export <class_@GDScript_annotation_@export>`。"
 
-#, fuzzy
 msgid "``[constant Class.name]``"
 msgstr "[signal 類別.訊號名稱]"
 
-#, fuzzy
 msgid "Link to constant"
 msgstr "定義一個常數。"
 
 msgid "``See [constant @GlobalScope.KEY_F1].``"
-msgstr ""
+msgstr "``請參閱[常數@GlobalScope.KEY_F1]。``"
 
 msgid "See :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`."
 msgstr ""
+"請參閱:ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`。"
 
-#, fuzzy
 msgid "``[enum Class.name]``"
 msgstr "[member 類別.成員名稱]"
 
-#, fuzzy
 msgid "Link to enum"
 msgstr "同意授權條款"
 
 msgid "``See [enum Mesh.ArrayType].``"
-msgstr ""
+msgstr "``參見[列舉Mesh.ArrayType]。``"
 
 msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
-msgstr ""
+msgstr "請參閱:ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`。"
 
-#, fuzzy
 msgid "``[method Class.name]``"
 msgstr "[method 類別.方法名稱]"
 
-#, fuzzy
 msgid "Link to method"
 msgstr "繫結方法"
 
-#, fuzzy
 msgid "``Call [method Node3D.hide].``"
 msgstr "呼叫 [method hide]。"
 
-#, fuzzy
 msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
 msgstr "參考 :ref:`hide <class_spatial_method_hide>` 。"
 
-#, fuzzy
 msgid "``[member Class.name]``"
 msgstr "[member 類別.成員名稱]"
 
-#, fuzzy
 msgid "Link to member"
 msgstr "編輯成員"
 
-#, fuzzy
 msgid "``Get [member Node2D.scale].``"
 msgstr "取得 [member Node2D.scale]。"
 
-#, fuzzy
 msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
 msgstr "取得 :ref:`scale <class_node2d_property_scale>` 。"
 
-#, fuzzy
 msgid "``[signal Class.name]``"
 msgstr "[signal 類別.訊號名稱]"
 
-#, fuzzy
 msgid "Link to signal"
 msgstr "繫結訊號"
 
-#, fuzzy
 msgid "``Emit [signal Node.renamed].``"
 msgstr "發送 [signal Node.renamed]。"
 
-#, fuzzy
 msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
 msgstr "發送 :ref:`renamed <class_node_signal_renamed>`。"
 
-#, fuzzy
 msgid "``[theme_item Class.name]``"
 msgstr "[method 類別.方法名稱]"
 
-#, fuzzy
 msgid "Link to theme item"
 msgstr "同意授權條款"
 
 msgid "``See [theme_item Label.font].``"
-msgstr ""
+msgstr "``參見[theme_item Label.font]。``"
 
 msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
-msgstr ""
+msgstr "請參閱:ref:`Label.font <class_Label_theme_font_font>`。"
 
 msgid "``[param name]``"
-msgstr ""
+msgstr "``name``"
 
 msgid "Formats a parameter name (as code)"
-msgstr ""
+msgstr "格式化參數名稱（作為程式碼）"
 
 msgid "``Takes [param size] for the size.``"
-msgstr ""
+msgstr "“採用 [param size] 作為大小。”"
 
 msgid "Takes ``size`` for the size."
-msgstr ""
+msgstr "採用“size”作為尺寸。"
 
 msgid "``[br]``"
-msgstr ""
+msgstr "``[br]``"
 
-#, fuzzy
 msgid "Line break"
 msgstr "break"
 
 msgid "``Line 1.[br]``"
-msgstr ""
+msgstr "``第 1 行。[br]``"
 
 msgid "``Line 2.``"
-msgstr ""
+msgstr "``第 2 行。``"
 
 msgid "Line 1."
-msgstr ""
+msgstr "1號線。"
 
 msgid "Line 2."
-msgstr ""
+msgstr "2號線。"
 
-#, fuzzy
 msgid "``[b]`` ``[/b]``"
-msgstr "\\ [b] [/b]"
+msgstr "[b] [/b]"
 
 msgid "Bold"
 msgstr "粗體"
 
-#, fuzzy
 msgid "``Some [b]bold[/b] text.``"
 msgstr "普通的 [b]粗體[/b] 文字。"
 
 msgid "Some **bold** text."
 msgstr "普通的 **粗體** 文字。"
 
-#, fuzzy
 msgid "``[i]`` ``[/i]``"
-msgstr "\\ [i] [/i]"
+msgstr "[i] [/i]"
 
 msgid "Italic"
 msgstr "斜體"
 
-#, fuzzy
 msgid "``Some [i]italic[/i] text.``"
 msgstr "普通的 [i]斜體[/i] 文字。"
 
 msgid "Some *italic* text."
 msgstr "普通的 *斜體* 文字。"
 
-#, fuzzy
 msgid "``[kbd]`` ``[/kbd]``"
-msgstr "\\ [kbd] [/kbd]"
+msgstr "``[kbd]`` ``[/kbd]``"
 
 msgid "Keyboard/mouse shortcut"
 msgstr "鍵盤或滑鼠快捷鍵"
 
-#, fuzzy
 msgid "``Some [kbd]Ctrl + C[/kbd] key.``"
 msgstr "普通的 [kbd]Ctrl + C[/kbd] 按鍵。"
 
 msgid "Some :kbd:`Ctrl + C` key."
 msgstr "普通的 :kbd:`Ctrl + C` 按鍵。"
 
-#, fuzzy
 msgid "``[code]`` ``[/code]``"
-msgstr "\\ [code] [/code]"
+msgstr "``[code]`` ``[/code]``"
 
 msgid "Monospace"
-msgstr "等寬字體"
+msgstr "等寬字形"
 
-#, fuzzy
 msgid "``Some [code]monospace[/code] text.``"
-msgstr "普通的 [code]等寬字體 (Monospace)[/code] 文字。"
+msgstr "普通的 [code]等寬字形 (Monospace)[/code] 文字。"
 
 msgid "Some ``monospace`` text."
-msgstr "普通的 ``等寬字體 (Monospace)`` 文字。"
+msgstr "普通的 ``等寬字形 (Monospace)`` 文字。"
 
-#, fuzzy
 msgid "``[codeblock]`` ``[/codeblock]``"
-msgstr "\\ [codeblock] [/codeblock]"
+msgstr "``[codeblock]`` ``[/codeblock]``"
 
 msgid "Multiline preformatted block"
 msgstr "多行預格式化區塊"
@@ -456,16 +433,15 @@ msgid "*See below.*"
 msgstr "**參見下方。**"
 
 msgid "Currently only :ref:`class_@GDScript` has annotations."
-msgstr ""
+msgstr "目前只有 :ref:`class_@GDScript` 有注解。"
 
 msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
-msgstr ""
+msgstr "``[code]`` 停用 BBCode，直到解析器遇到 ``[/code]``。"
 
 msgid ""
 "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
-msgstr ""
+msgstr "``[codeblock]`` 停用 BBCode，直到解析器遇到 ``[/codeblock]``。"
 
-#, fuzzy
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation (the parser will delete tabs)."

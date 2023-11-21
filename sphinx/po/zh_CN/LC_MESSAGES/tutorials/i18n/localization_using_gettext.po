@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -97,7 +97,7 @@ msgid ""
 "operations, such as updating message files. Therefore, it's strongly "
 "recommended to install them."
 msgstr ""
-"需要命令行 gettext 工具来执行维护操作，如更新消息文件。因此，强烈建议您安装它"
+"需要命令行 gettext 工具来执行维护操作，如更新消息文件。因此，强烈建议你安装它"
 "们。"
 
 msgid ""
@@ -124,13 +124,11 @@ msgid ""
 msgstr ""
 "**Linux：**\\ 在大多数发行版上，请使用发行版的包管理器安装 ``gettext`` 包。"
 
-#, fuzzy
 msgid "Creating the PO template"
-msgstr "模板所在位置"
+msgstr "创建 PO 模板"
 
-#, fuzzy
 msgid "Automatic generation using the editor"
-msgstr "运行编辑器"
+msgstr "使用编辑器自动生成"
 
 msgid ""
 "Since Godot 4.0, the editor can generate a PO template automatically from "
@@ -144,16 +142,18 @@ msgid ""
 "the **Add…** button to specify the path to your project's scenes and scripts "
 "that contain localizable strings:"
 msgstr ""
+"打开项目设置的\\ **本地化 > POT 生成**\\ 选项卡，然后使用\\ **添加...** 按钮"
+"指定项目中包含可本地化字符串的场景和脚本的路径："
 
 msgid ""
 "Creating a PO template in the Localization > POT Generation tab of the "
 "Project Settings"
-msgstr ""
+msgstr "在项目设置的“本地化 > POT 生成”选项卡中创建 PO 模板"
 
 msgid ""
 "Creating a PO template in the **Localization > POT Generation** tab of the "
 "Project Settings"
-msgstr ""
+msgstr "在项目设置的\\ **本地化 > POT 生成**\\ 选项卡中创建 PO 模板"
 
 #, fuzzy
 msgid ""
@@ -179,9 +179,8 @@ msgid ""
 "update translations for outdated strings."
 msgstr ""
 
-#, fuzzy
 msgid "Manual creation"
-msgstr "手动 Camera 插值"
+msgstr "手动创建"
 
 #, fuzzy
 msgid ""
@@ -237,7 +236,7 @@ msgid ""
 "Alternatively, you can do that graphically using Poedit, or by uploading the "
 "POT file to your web platform of choice."
 msgstr ""
-"或者，您可以使用 Poedit 以图形方式完成此操作，或者通过将 POT 文件上传到您选择"
+"或者，你可以使用 Poedit 以图形方式完成此操作，或者通过将 POT 文件上传到你选择"
 "的 Web 平台。"
 
 msgid "Loading a messages file in Godot"
@@ -271,7 +270,7 @@ msgid ""
 "present in the PO template. This can be done automatically using the "
 "``msgmerge`` tool:"
 msgstr ""
-"更新 PO 模板后，您必须更新消息文件以使其包含新字符串，同时删除已经在 PO 模板"
+"更新 PO 模板后，你必须更新消息文件以使其包含新字符串，同时删除已经在 PO 模板"
 "中不复存在的字符串。这可以使用 ``msgmerge`` 工具自动完成："
 
 msgid ""

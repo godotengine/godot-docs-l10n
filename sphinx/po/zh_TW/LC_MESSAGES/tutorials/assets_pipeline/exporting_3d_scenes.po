@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,47 +17,56 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Exporting 3D scenes"
 msgstr "匯入 3D 場景"
 
 msgid "Overview"
 msgstr "概覽"
 
+#, fuzzy
 msgid ""
-"In Godot it is possible to export 3D scenes as a glTF 2.0 file. You can "
+"In Godot, it is possible to export 3D scenes as a glTF 2.0 file. You can "
 "export as a glTF binary (``.glb`` file) or glTF embedded with textures "
 "(``gltf`` + ``.bin`` + textures). This allows you to create scenes in Godot, "
 "such as a CSG mesh blockout for a level, export it to clean it up in a "
 "program such as Blender, and then bring it back into Godot."
 msgstr ""
+"在 Godot 中可以將 3D 場景匯出為 glTF 2.0 檔案。你可以將其匯出為 glTF 二進位檔"
+"案（``.glb`` 檔）或者內嵌 glTF 及紋理（``gltf`` + ``.bin`` + 紋理）。這樣你就"
+"可以在 Godot 中建立場景，比如使用 CSG 網格進行關卡的搭建，然後匯出到類似 "
+"Blender 的程式裡進行整理，然後再弄回 Godot。"
 
 msgid "Only Blender 2.83 and newer can import glTF files exported by Godot."
-msgstr ""
+msgstr "只有 Blender 2.83 及之後的版本才能匯入由 Godot 匯出的 glTF 檔。"
 
 msgid ""
 "To export a scene in the editor go to **Scene > Export As... > glTF 2.0 "
 "Scene...**"
 msgstr ""
+"要在編輯器中匯出場景，請轉到**Project > Tools > Export GLTF...**\\\\\\\\"
 
 msgid "Limitations"
 msgstr "限制"
 
-#, fuzzy
 msgid "There are several limitations with glTF export."
 msgstr "Godot 沒有使用限制"
 
 msgid ""
 "No support for exporting particles since their implementation varies across "
 "engines."
-msgstr ""
+msgstr "不支援匯出粒子，因為不同的引擎對粒子的實作是不同的。"
 
 msgid "ShaderMaterials cannot be exported."
-msgstr ""
+msgstr "無法匯出 ShaderMaterial。"
 
-#, fuzzy
 msgid "No support for exporting 2D scenes."
 msgstr "尚未支援 MIDI 輸出。"
+
+msgid ""
+"3D scenes can be saved at runtime using :ref:`runtime file loading and "
+"saving <doc_runtime_file_loading_and_saving_3d_scenes>`, including from an "
+"exported project."
+msgstr ""
 
 msgid "Translation status"
 msgstr "翻譯狀態"

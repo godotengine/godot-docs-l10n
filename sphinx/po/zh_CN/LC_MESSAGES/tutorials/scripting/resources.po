@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,45 +42,35 @@ msgstr ""
 "*节点* 为您提供功能: 它们绘制精灵, 3D模型, 模拟物理, 排列用户界面等. **资源"
 "** 是 **数据容器** . 它们自己不能做任何事情: 而是, 节点使用资源中包含的数据."
 
-#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
 "tscn`` or an ``.scn`` file), an image, a script... Here are some :ref:"
 "`Resource <class_Resource>` examples:"
 msgstr ""
-"Godot从磁盘保存或加载的任何内容都是一种资源. 无论它是场景( ``.tscn`` 或 ``."
-"scn`` 文件), 图像, 脚本……这是一些 ``资源`` 示例: :ref:`Texture "
-"<class_Texture>`, :ref:`Script <class_Script>`, :ref:`Mesh <class_Mesh>`, :"
-"ref:`Animation <class_Animation>`, :ref:`AudioStream <class_AudioStream>`, :"
-"ref:`Font <class_Font>`, :ref:`Translation <class_Translation>`."
+"Godot 保存到磁盘、从磁盘读取的都是资源。资源可以是场景（\\ ``.tscn`` 或 ``."
+"scn`` 文件）、图像、脚本……以下是一些 :ref:`Resource <class_Resource>` 的示"
+"例："
 
-#, fuzzy
 msgid ":ref:`Texture <class_Texture>`"
-msgstr ":ref:`Vector2 <class_Vector2>`"
+msgstr ":ref:`Texture <class_Texture>`"
 
-#, fuzzy
 msgid ":ref:`Script <class_Script>`"
-msgstr ":ref:`Sprite <class_Sprite>`"
+msgstr ":ref:`Script <class_Script>`"
 
-#, fuzzy
 msgid ":ref:`Mesh <class_Mesh>`"
-msgstr ":ref:`CSGMesh <class_CSGMesh>`"
+msgstr ":ref:`Mesh <class_Mesh>`"
 
-#, fuzzy
 msgid ":ref:`Animation <class_Animation>`"
-msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
+msgstr ":ref:`Animation <class_Animation>`"
 
-#, fuzzy
 msgid ":ref:`AudioStream <class_AudioStream>`"
-msgstr ":ref:`Area2D <class_Area2D>`"
+msgstr ":ref:`AudioStream <class_AudioStream>`"
 
-#, fuzzy
 msgid ":ref:`Font <class_Font>`"
-msgstr ":ref:`int<class_int>`"
+msgstr ":ref:`Font <class_Font>`"
 
-#, fuzzy
 msgid ":ref:`Translation <class_Translation>`"
-msgstr ":ref:`Transform <class_Transform>`"
+msgstr ":ref:`Translation <class_Translation>`"
 
 msgid ""
 "When the engine loads a resource from disk, **it only loads it once**. If a "
@@ -388,23 +378,20 @@ msgstr ""
 "据表 DataTable 是映射到自定义结构的字符串，类似于将字符串映射到辅助自定义资源"
 "脚本的字典。"
 
-#, fuzzy
 msgid ""
 "Instead of inlining the Dictionary values, one could also, alternatively:"
-msgstr "除了内联 Dictionary 值之外，还可以选择……"
+msgstr "除了内联 Dictionary 值之外，还可以选择："
 
-#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs."
-msgstr "从电子表格导入值表并生成这些键值对，或者……"
+msgstr "从电子表格导入值表并生成这些键值对。"
 
-#, fuzzy
 msgid ""
 "Design a visualization within the editor and create a plugin that adds it to "
 "the Inspector when you open these types of Resources."
 msgstr ""
-"在编辑器中设计可视化，并创建一个简单的插件，可在当您打开这些类型的 Resource "
+"在编辑器中设计可视化方法，创建一个简单的插件，在你打开这些类型的 Resource "
 "时，将其添加到检查器中。"
 
 msgid ""

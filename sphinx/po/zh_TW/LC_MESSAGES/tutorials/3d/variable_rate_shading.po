@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Variable rate shading"
 msgstr "變數型別轉換"
 
-#, fuzzy
 msgid "What is variable rate shading?"
-msgstr "什麼是視覺腳本"
+msgstr "什麼是視覺腳本？"
 
 msgid ""
 "In modern 3D rendering engines, shaders are much more complex compared to "
@@ -35,6 +33,10 @@ msgid ""
 "rendering usually represents a significant amount of the time taken to "
 "render each frame."
 msgstr ""
+"在現代 3D 渲染引擎中，著色器比以前複雜得多。基於物理的渲染、即時全域照明和螢"
+"幕空間效果的出現增加了渲染每影格時必須執行的「每像素」著色的數量。此外，螢幕"
+"解析度也大幅提升，1440p 和 4K 已成為常見的目標解析度。因此，場景渲染中的總著"
+"色成本通常代表渲染每個畫面所花費的大量時間。"
 
 msgid ""
 "Variable rate shading (VRS) is a method of decreasing this shading cost by "
@@ -44,6 +46,10 @@ msgid ""
 "combined with any :ref:`doc_3d_antialiasing` technique (MSAA, FXAA, TAA, "
 "SSAA)."
 msgstr ""
+"可變速率著色 (VRS) 是一種透過降低*每像素*著色（也稱為*片段*著色）的解析度來降"
+"低著色成本的方法，同時保持渲染幾何體的原始解析度。這意味著幾何邊緣仍然像沒有 "
+"VRS 時一樣鋒利。 VRS 可以與任何 doc_3d_antialiasing 技術（MSAA、FXAA、TAA、"
+"SSAA）結合使用。"
 
 msgid ""
 "VRS allows specifying the shading quality in a local manner, which makes it "
@@ -52,78 +58,79 @@ msgid ""
 "*foveated rendering*, where the center of the viewport is more detailed than "
 "the edges."
 msgstr ""
+"VRS 允許以本地方式指定著色質量，這使得視口的某些部分可以比其他部分接收更詳細"
+"的著色。這在虛擬實境 (VR) 中特別有用，可實作“注視點渲染”，其中視口的中心比邊"
+"緣更詳細。"
 
 msgid ""
 "Here's a scene rendered with rate shading disabled then enabled, using the "
 "density map linked at the bottom of this page:"
-msgstr ""
+msgstr "這是使用本頁底部連結的密度圖，先停用然後啟用速率著色渲染的場景："
 
 msgid "Variable rate shading disabled in textured scene"
-msgstr ""
+msgstr "在紋理場景中停用可變速率著色"
 
 msgid ""
 "Variable rate shading enabled in textured scene (lower quality but higher "
 "performance)"
-msgstr ""
+msgstr "在紋理場景中啟用可變速率著色（品質較低但效能較高）"
 
 msgid ""
 "When used in scenes with low-frequency detail (such as scenes with a "
 "stylized/low-poly aesthetic), it's possible to achieve similar performance "
 "gains but with less reduction in visual quality:"
 msgstr ""
+"當在具有低頻細節的場景（例如具有風格化/低多邊形美感的場景）中使用時，可以實作"
+"類似的性能增益，但視覺品質的降低較小："
 
 msgid "Variable rate shading disabled in untextured scene"
-msgstr ""
+msgstr "在無紋理場景中停用可變速率著色"
 
 msgid ""
 "Variable rate shading enabled in untextured scene (lower quality but higher "
 "performance)"
-msgstr ""
+msgstr "在無紋理場景中啟用可變速率著色（品質較低但效能較高）"
 
-#, fuzzy
 msgid "Hardware support"
 msgstr "提供 Mod 支援"
 
 msgid "Variable rate shading is only supported on specific GPUs:"
-msgstr ""
+msgstr "可變速率著色僅在特定 GPU 上支援："
 
-#, fuzzy
 msgid "**Desktop:**"
 msgstr "**描述**"
 
 msgid "NVIDIA Turing and newer (including GTX 1600 series)"
-msgstr ""
+msgstr "NVIDIA Turing 及更新版本（含 GTX 1600 系列）"
 
 msgid ""
 "AMD RDNA2 and newer (both integrated and dedicated GPUs – including Steam "
 "Deck)"
-msgstr ""
+msgstr "AMD RDNA2 及更新版本（整合與專用 GPU – 包括 Steam Deck）"
 
 msgid "Intel Arc Alchemist and newer **(dedicated GPUs only)**"
-msgstr ""
+msgstr "Intel Arc Alchemist 及更新版本 **（僅限專用 GPU）**"
 
 msgid "Intel integrated graphics do not support variable rate shading."
-msgstr ""
+msgstr "英特爾整合式顯示卡不支援可變速率著色。"
 
-#, fuzzy
 msgid "**Mobile SoCs:**"
-msgstr "\\ **mobile**"
+msgstr "**Mobile SoCs:**"
 
 msgid "Snapdragon 888 and newer"
-msgstr ""
+msgstr "Snapdragon 888 及更新版本"
 
 msgid "MediaTek Dimensity 9000 and newer"
-msgstr ""
+msgstr "MediaTek 天璣 9000 及更新版本"
 
 msgid "ARM Mali-G615 and newer"
-msgstr ""
+msgstr "ARM Mali-G615 及更新版本"
 
 msgid ""
 "As of January 2023, Apple and Raspberry Pi GPUs do not support variable rate "
 "shading."
-msgstr ""
+msgstr "截至 2023 年 1 月，Apple 和 Raspberry Pi GPU 不支援可變速率著色。"
 
-#, fuzzy
 msgid "Using variable rate shading in Godot"
 msgstr "在 Godot 中使用 NuGet 套件"
 
@@ -131,16 +138,19 @@ msgid ""
 "Both Forward Plus and Forward Mobile rendering methods support variable rate "
 "shading. VRS can be used in both pancake (non-XR) and XR display modes."
 msgstr ""
+"Forward Plus 和 Forward Mobile 渲染方法都支援可變速率著色。 VRS 可用於薄餅"
+"（非 XR）和 XR 顯示模式。"
 
 msgid ""
 "The Compatibility rendering method does **not** support variable rate "
 "shading."
-msgstr ""
+msgstr "相容性渲染方法**不**支援可變速率著色。"
 
 msgid ""
 "In the advanced Project Settings, the **Rendering > VRS** section offers "
 "settings to control variable rate shading on the root viewport:"
 msgstr ""
+"在進階專案設定中，**渲染 > VRS** 部分提供了控制根視口上可變速率著色的設定："
 
 msgid ""
 "**Mode:** Controls the variable rate shading mode. **Disabled** disables "
@@ -148,16 +158,21 @@ msgid ""
 "shading density (see the property below). **XR** automatically generates a "
 "texture suited for foveated rendering in virtual/augmented reality."
 msgstr ""
+"**模式：** 控制可變速率著色模式。 **禁用** 停用可變速率著色。 **紋理** 使用手"
+"動建立的紋理來設定著色密度（請參閱下面的屬性）。 **XR** 自動產生適合虛擬/擴增"
+"實境中的注視點渲染的紋理。"
 
 msgid ""
 "**Texture:** The texture to use to control shading density on the root "
 "viewport. Only used if **Mode** is **Texture**."
 msgstr ""
+"**紋理：** 用於控制根視口上的著色密度的紋理。僅當 **Mode** 為 **Texture** 時"
+"使用。"
 
 msgid ""
 "For custom viewports, the VRS mode and texture must be set manually to the :"
 "ref:`class_Viewport` node."
-msgstr ""
+msgstr "對於自訂視口，必須手動將 VRS 模式和紋理設定為 class_Viewport 節點。"
 
 msgid ""
 "On unsupported hardware, there is no visual difference when variable rate "
@@ -165,15 +180,19 @@ msgid ""
 "shading by running the editor or project with the ``--verbose`` :ref:"
 "`command line argument <doc_command_line_tutorial>`."
 msgstr ""
+"在不支援的硬體上，啟用可變速率著色時不會出現視覺差異。您可以透過使用「--"
+"verbose」:ref:`命令列參數 <doc_command_line_tutorial>` 執行編輯器或專案來檢查"
+"硬體是否支援可變速率著色。"
 
-#, fuzzy
 msgid "Creating a VRS density map"
-msgstr "創建內容"
+msgstr "建立內容"
 
 msgid ""
 "If using the **Texture** VRS mode, you *must* set a texture to be used as a "
 "density map. Otherwise, no effect will be visible."
 msgstr ""
+"如果使用**紋理** VRS 模式，您*必須*設定要用作密度貼圖的紋理。否則，將看不到任"
+"何效果。"
 
 msgid ""
 "You can create your own VRS density map manually using an image editor, or "
@@ -183,22 +202,26 @@ msgid ""
 "sure the VRS image generation process is fast enough to avoid outweighing "
 "the performance gains from VRS."
 msgstr ""
+"您可以使用影像編輯器手動建立自己的 VRS 密度圖，或使用其他方法產生它（例如，"
+"在 CPU 上使用 Image 類，或在 GPU 上使用著色器）。但是，動態產生 VRS 影像時請"
+"注意效能影響。如果選擇動態生成，請確保 VRS 影像生成過程足夠快，以避免超出 "
+"VRS 的效能提升。"
 
 msgid "The texture must follow these rules:"
-msgstr ""
+msgstr "文字內容如下："
 
 msgid ""
 "The texture *must* use a lossless compression format so that colors can be "
 "matched precisely."
-msgstr ""
+msgstr "紋理*必須*使用無損壓縮格式，以便顏色可以精確配對。"
 
 msgid ""
 "The following VRS densities are mapped to various colors, with brighter "
 "colors representing a lower level of shading precision:"
-msgstr ""
+msgstr "以下 VRS 密度對應到各種顏色，較亮的顏色表示較低的著色精度："
 
 msgid "Density"
-msgstr ""
+msgstr "密度"
 
 msgid "Color"
 msgstr "顏色"
@@ -207,75 +230,76 @@ msgid "Comment"
 msgstr "Comment 註解"
 
 msgid "1×1 (highest detail)"
-msgstr ""
+msgstr "1×1（細節最高）"
 
 msgid "``rgb(0, 0, 0) - #000000``"
-msgstr ""
+msgstr "``rgb(0, 0, 0) - #000000``"
 
 msgid "1×2"
-msgstr ""
+msgstr "1×2"
 
 msgid "``rgb(0, 85, 0) - #005500``"
-msgstr ""
+msgstr "``rgb(0, 85, 0) - #005500``"
 
 msgid "2×1"
-msgstr ""
+msgstr "2×1"
 
 msgid "``rgb(85, 0, 0) - #550000``"
-msgstr ""
+msgstr "``rgb(85, 0, 0) - #550000``"
 
 msgid "2×2"
-msgstr ""
+msgstr "2×2"
 
 msgid "``rgb(85, 85, 0) - #555500``"
-msgstr ""
+msgstr "``rgb(85, 85, 0) - #555500``"
 
 msgid "2×4"
-msgstr ""
+msgstr "2×4"
 
 msgid "``rgb(85, 170, 0) - #55aa00``"
-msgstr ""
+msgstr "``rgb(85, 170, 0) - #55aa00``"
 
 msgid "4×2"
-msgstr ""
+msgstr "4×2"
 
 msgid "``rgb(170, 85, 0) - #aa5500``"
-msgstr ""
+msgstr "``rgb(170, 85, 0) - #aa5500``"
 
 msgid "4×4"
-msgstr ""
+msgstr "4×4"
 
 msgid "``rgb(170, 170, 0) - #aaaa00``"
-msgstr ""
+msgstr "``rgb(170, 170, 0) - #aaaa00``"
 
 msgid "4×8"
-msgstr ""
+msgstr "4×8"
 
 msgid "``rgb(170, 255, 0) - #aaff00``"
-msgstr ""
+msgstr "``rgb(170, 255, 0) - #aaff00``"
 
 msgid "Not supported on most hardware."
-msgstr ""
+msgstr "大多數硬體不支援。"
 
 msgid "8×4"
-msgstr ""
+msgstr "8×4"
 
 msgid "``rgb(255, 170, 0) - #ffaa00``"
-msgstr ""
+msgstr "``rgb(255, 170, 0) - #ffaa00``"
 
 msgid "8×8 (lowest detail)"
-msgstr ""
+msgstr "8×8（細節最低）"
 
 msgid "``rgb(255, 255, 0) - #ffff00``"
-msgstr ""
+msgstr "``rgb(255, 255, 0) - #ffff00``"
 
 msgid ""
 "For example, this VRS density texture provides the highest shading density "
 "in the center of the viewport, and the lowest shading density in the corners:"
 msgstr ""
+"例如，此 VRS 密度紋理在視窗中心提供最高的著色密度，在角落提供最低的著色密度："
 
 msgid "Example VRS density map texture, simulating foveated rendering"
-msgstr ""
+msgstr "VRS 密度貼圖紋理範例，模擬注視點渲染"
 
 msgid ""
 "There are no size or aspect ratio requirements for the VRS density texture. "
@@ -286,6 +310,10 @@ msgid ""
 "pixels. You can view the tile size by running Godot with the ``--verbose`` "
 "command line argument, as it's printed in the VRS debugging information."
 msgstr ""
+"VRS 密度紋理沒有尺寸或縱橫比要求。但是，使用大於視窗解析度除以 GPU 的「圖塊大"
+"小」的 VRS 密度圖並沒有任何好處。切片大小決定了可以與其他切片分開更改著色密度"
+"的最小像素區域。在大多數 GPU 上，此圖塊大小為 8×8 像素。您可以透過使用「--"
+"verbose」命令列參數來執行 Godot 來查看圖塊大小，如 VRS 偵錯資訊中列印的那樣。"
 
 msgid ""
 "Therefore, sticking to a relatively low resolution such as 256×256 (square) "
@@ -293,20 +321,26 @@ msgid ""
 "texture may be more suited compared to a texture that matches the most "
 "common viewport aspect ratio in your project (such as 16:9)."
 msgstr ""
+"因此，建議堅持使用相對較低的分辨率，例如 256×256（方形）或 480×270（16:9）。"
+"根據您的使用案例，與專案中最常見的視口縱橫比（例如 16:9）相符的紋理相比，方形"
+"紋理可能更適合。"
 
 msgid ""
 "When using variable rate shading, you can use a negative :ref:`texture "
 "mipmap LOD bias <doc_resolution_scaling_mipmap_bias>` to reduce blurriness "
 "in areas with reduced shading rate."
 msgstr ""
+"使用可變速率著色時，您可以使用負紋理 mipmap LOD 偏差 "
+"<doc_resolution_scaling_mipmap_bias>` 來減少著色率降低的區域的模糊度。"
 
 msgid ""
 "Note that the texture LOD bias is set globally, so this will also affect "
 "areas of the viewport with full shading rate. Don't use values that are too "
 "low, or textures will appear grainy."
 msgstr ""
+"請注意，紋理 LOD 偏差是全域設定的，因此這也會影響具有完整著色率的視窗區域。不"
+"要使用太低的值，否則紋理會顯得有顆粒感。"
 
-#, fuzzy
 msgid "Performance comparison"
 msgstr "效能"
 
@@ -315,86 +349,88 @@ msgid ""
 "performance comparison with the textured example scene shown at the top of "
 "this page. The VRS density map example present on this page is used."
 msgstr ""
+"為了了解 VRS 在理論上可以提高多少效能，以下是與本頁頂部顯示的紋理範例場景的效"
+"能比較。使用本頁上提供的 VRS 密度圖範例。"
 
 msgid ""
 "Results were captured on a GeForce RTX 4090 with the NVIDIA 525.60.11 driver."
-msgstr ""
+msgstr "結果是在配備 NVIDIA 525.60.11 驅動程式的 GeForce RTX 4090 上捕獲的。"
 
-#, fuzzy
 msgid "Resolution"
-msgstr "資源路徑"
+msgstr "解析度"
 
-#, fuzzy
 msgid "VRS disabled"
 msgstr "禁用 3D"
 
-#, fuzzy
 msgid "VRS enabled"
 msgstr "已啟用"
 
-#, fuzzy
 msgid "Performance improvement"
 msgstr "效能"
 
 msgid "1920×1080 (Full HD)"
-msgstr ""
+msgstr "1920×1080（全高清）"
 
 msgid "2832 FPS"
-msgstr ""
+msgstr "2832 FPS"
 
 msgid "3136 FPS"
-msgstr ""
+msgstr "3136 FPS"
 
 msgid "+10.7%"
-msgstr ""
+msgstr "+10.7%"
 
 msgid "2560×1440 (QHD)"
-msgstr ""
+msgstr "2560×1440（QHD）"
 
 msgid "2008 FPS"
-msgstr ""
+msgstr "2008 FPS"
 
 msgid "2256 FPS"
-msgstr ""
+msgstr "2256 FPS"
 
 msgid "+12.3%"
-msgstr ""
+msgstr "+12.3%"
 
 msgid "3840×2160 (4K)"
-msgstr ""
+msgstr "3840×2160（4K）"
 
 msgid "1236 FPS"
-msgstr ""
+msgstr "1236 FPS"
 
 msgid "1436 FPS"
-msgstr ""
+msgstr "1436 FPS"
 
 msgid "+16.2%"
-msgstr ""
+msgstr "+16.2%"
 
 msgid "7680×4320 (8K)"
-msgstr ""
+msgstr "7680×4320（8K）"
 
 msgid "384 FPS"
-msgstr ""
+msgstr "384 FPS"
 
 msgid "473 FPS"
-msgstr ""
+msgstr "473 FPS"
 
 msgid "+23.1%"
-msgstr ""
+msgstr "+23.1%"
 
 msgid ""
 "In terms of performance improvements, variable rate shading is more "
 "beneficial at higher target resolutions. The reduction in visual quality is "
 "also less noticeable at high resolutions."
 msgstr ""
+"在效能改進方面，可變速率著色在更高的目標解析度下更有利。在高解析度下，視覺品"
+"質的下降也不太明顯。"
 
 msgid ""
 "For non-VR games, you will probably have to use a less aggressive VRS "
 "texture than what was used in this example. As a result, the effective "
 "performance gains will be lower."
 msgstr ""
+"對於非 VR 遊戲，您可能需要使用比本範例中使用的侵略性較小的 VRS 紋理。結果，有"
+"效的性能增益將會降低。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

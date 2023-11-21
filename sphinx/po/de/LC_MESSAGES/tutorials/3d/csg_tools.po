@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,10 @@ msgstr ""
 msgid "Prototyping levels with CSG"
 msgstr "Level-Prototypen mittels CSG erstellen"
 
+#, fuzzy
 msgid ""
 "CSG stands for **Constructive Solid Geometry**, and is a tool to combine "
-"basic shapes or custom meshes to create more complex shapes. In 3D modelling "
+"basic shapes or custom meshes to create more complex shapes. In 3D modeling "
 "software, CSG is mostly known as \"Boolean Operators\"."
 msgstr ""
 "CSG steht für **Constructive Solid Geometry** (konstruktive "
@@ -84,33 +85,27 @@ msgstr ""
 "Wie andere Funktionen von Godot wird CSG in Form von Nodes unterstützt. Dies "
 "sind die CSG-Nodes:"
 
-#, fuzzy
 msgid ":ref:`CSGBox3D <class_CSGBox3D>`"
-msgstr ":ref:`CSG Box <class_CSGBox>`"
+msgstr ":ref:`CSGBox3D <class_CSGBox3D>`"
 
 #, fuzzy
 msgid ":ref:`CSGCylinder3D <class_CSGCylinder3D>` (also supports cone)"
 msgstr ":ref:`CSGCylinder <class_CSGCylinder>` (unterstützt auch Kegel)"
 
-#, fuzzy
 msgid ":ref:`CSGSphere3D <class_CSGSphere3D>`"
-msgstr ":ref:`CSG Sphere <class_CSGSphere>`"
+msgstr ":ref:`CSGSphere3D <class_CSGSphere3D>`"
 
-#, fuzzy
 msgid ":ref:`CSGTorus3D <class_CSGTorus3D>`"
-msgstr ":ref:`CSG Torus <class_CSGTorus>`"
+msgstr ":ref:`CSGTorus3D <class_CSGTorus3D>`"
 
-#, fuzzy
 msgid ":ref:`CSGPolygon3D <class_CSGPolygon3D>`"
-msgstr ":ref:`CSG Polygon <class_CSGPolygon>`"
+msgstr ":ref:`CSGPolygon3D <class_CSGPolygon3D>`"
 
-#, fuzzy
 msgid ":ref:`CSGMesh3D <class_CSGMesh3D>`"
-msgstr ":ref:`CSG Mesh <class_CSGMesh>`"
+msgstr ":ref:`CSGMesh3D <class_CSGMesh3D>`"
 
-#, fuzzy
 msgid ":ref:`CSGCombiner3D <class_CSGCombiner3D>`"
-msgstr ":ref:`CSG Combiner <class_CSGcombiner>`"
+msgstr ":ref:`CSGCombiner3D <class_CSGCombiner3D>`"
 
 msgid "CSG tools features"
 msgstr "Eigenschaften der CSG-Tools"
@@ -173,7 +168,7 @@ msgstr "Benutzerdefinierte Meshes"
 
 msgid ""
 "Any mesh can be used for :ref:`CSGMesh3D <class_CSGMesh3D>`; the mesh can be "
-"modelled in other software and imported into Godot. Multiple materials are "
+"modeled in other software and imported into Godot. Multiple materials are "
 "supported. There are some restrictions for geometry:"
 msgstr ""
 
@@ -475,8 +470,8 @@ msgid ""
 "licensed prototype textures <https://kenney.nl/assets/prototype-textures>`__."
 msgstr ""
 "Wenn Sie einige Texturen für das Prototyping benötigen, hat Kenney eine "
-"Reihe von CC0-lizenzierten Prototyp-Texturen erstellt <https://kenney.nl/"
-"assets/prototype-textures> `__."
+"`Reihe von CC0-lizenzierten Prototyp-Texturen erstellt <https://kenney.nl/"
+"assets/prototype-textures>`__."
 
 msgid "There are two ways to apply a material to a CSG node:"
 msgstr ""
@@ -549,7 +544,7 @@ msgstr "Arrays exportieren"
 
 msgid ""
 "It can be useful to block out a level using CSG, then export it as a 3d "
-"model, to import into 3D modelling software. You can do this by selecting "
+"model, to import into 3D modeling software. You can do this by selecting "
 "**Scene > Export As... > glTF 2.0 Scene**."
 msgstr ""
 

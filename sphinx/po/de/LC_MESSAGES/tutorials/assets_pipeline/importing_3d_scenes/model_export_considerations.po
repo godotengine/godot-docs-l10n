@@ -1,0 +1,167 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#, fuzzy
+msgid "Model export considerations"
+msgstr "Überlegungen zum Exportieren"
+
+msgid ""
+"Before exporting a 3D model from a 3D modeling application, such as Blender, "
+"there are some considerations that should be taken into account to ensure "
+"that the model follows the conventions and best practices for Godot."
+msgstr ""
+
+#, fuzzy
+msgid "3D asset direction conventions"
+msgstr "Benennungsrichtlinien"
+
+msgid ""
+"Godot uses a right-handed, Y-is-up coordinate system, with the -Z axis as "
+"the camera's forward direction. This is the same as OpenGL. This implies "
+"that +Z is back, +X is right, and -X is left for a camera."
+msgstr ""
+
+msgid ""
+"The convention for 3D assets is to face the opposite direction as the "
+"camera, so that characters and other assets are facing the camera by "
+"default. This convention is extremely common in 3D modeling applications, "
+"and is `codified in glTF as part of the glTF 2.0 specification <https://"
+"registry.khronos.org/glTF/specs/2.0/glTF-2.0.html#coordinate-system-and-"
+"units>`__. This means that for oriented 3D assets (such as characters), the "
+"+Z axis is the direction of the front, so -Z is the rear, +X is the left "
+"side, and -X is the right side for a 3D asset. In Blender, this means that "
+"+Y is rear and -Y is front for an asset."
+msgstr ""
+
+msgid ""
+"When rotating an oriented 3D asset in Godot, use the ``use_model_front`` "
+"option on the ``look_at`` functions, and use the ``Vector3.MODEL_*`` "
+"constants to perform calculations in the oriented asset's local space."
+msgstr ""
+
+msgid ""
+"For assets without an intrinsic front side or forward direction, such as a "
+"game map or terrain, take note of the cardinal directions instead. The "
+"convention in Godot and the vast majority of other applications is that +X "
+"is east and -X is west. Due to Godot's right-handed Y-is-up coordinate "
+"system, this implies that +Z is south and -Z is north. In Blender, this "
+"means that +Y is north and -Y is south."
+msgstr ""
+
+msgid "Exporting textures separately"
+msgstr "Texturen separat exportieren"
+
+#, fuzzy
+msgid ""
+"While textures can be exported with a model in certain file formats, such as "
+"glTF 2.0, you can also export them separately. Godot uses PBR (physically "
+"based rendering) for its materials, so if a texturing program can export PBR "
+"textures they can work in Godot. This includes the `Substance suite <https://"
+"www.substance3d.com/>`__, `ArmorPaint (open source) <https://armorpaint.org/"
+">`__, and `Material Maker (open source) <https://github.com/RodZill4/"
+"material-maker>`__."
+msgstr ""
+"Während Texturen mit einem Modell in bestimmten Dateiformaten, wie glTF 2.0, "
+"exportiert werden, können sie auch separat exportiert werden. Godot "
+"verwendet PBR (Physically Based Rendering) für seine Materialien. Wenn also "
+"ein Texturierungsprogramm PBR-Texturen exportieren kann, können diese in "
+"Godot funktionieren. Dazu gehören die `Substance-Suite <https://www."
+"substance3d.com/>`__, `ArmorPaint (Open Source) <https://armorpaint.org/"
+">`__, und `Material Maker (Open Source) <https://github.com/RodZill4/"
+"material-maker>`__."
+
+#, fuzzy
+msgid ""
+"For more information on Godot's materials, see :ref:"
+"`doc_standard_material_3d`."
+msgstr ""
+"Weitere Informationen zu den Materialien von Godot finden Sie unter :ref:"
+"`doc_spatial_material`."
+
+msgid "Exporting considerations"
+msgstr "Überlegungen zum Exportieren"
+
+msgid ""
+"Since GPUs can only render triangles, meshes that contain quads or N-gons "
+"have to be *triangulated* before they can be rendered. Godot can triangulate "
+"meshes on import, but results may be unpredictable or incorrect, especially "
+"with N-gons. Regardless of the target application, triangulating *before* "
+"exporting the scene will lead to more consistent results and should be done "
+"whenever possible."
+msgstr ""
+"Da GPUs nur Dreiecke rendern können, müssen Meshes, die Quads oder N-Gons "
+"enthalten, *trianguliert* werden, bevor sie gerendert werden können. Godot "
+"kann Meshes beim Importieren triangulieren, aber die Ergebnisse können "
+"unvorhersehbar oder falsch sein, insbesondere bei N-Gons. Unabhängig von der "
+"Zielanwendung führt das Triangulieren *vor* dem Exportieren der Szene zu "
+"konsistenteren Ergebnissen und sollte nach Möglichkeit durchgeführt werden."
+
+#, fuzzy
+msgid ""
+"To avoid issues with incorrect triangulation after importing in Godot, it is "
+"recommended to make the 3D modeling software triangulate objects on its own. "
+"In Blender, this can be done by adding a Triangulate modifier to your "
+"objects and making sure **Apply Modifiers** is checked in the export dialog. "
+"Alternatively, depending on the exporter, you may be able to find and enable "
+"a **Triangulate Faces** option in the export dialog."
+msgstr ""
+"Um Probleme mit falscher Triangulation nach dem Import in Godot zu "
+"vermeiden, wird empfohlen, die 3D DCC Objekte selbständig triangulieren zu "
+"lassen. In Blender können Sie dies tun, indem Sie Ihren Objekten einen "
+"Triangulate Modifikator hinzufügen und sicherstellen, dass **Apply "
+"Modifiers** im Exportdialog aktiviert ist. Alternativ können Sie je nach "
+"Exporter eine Option **Triangulate Faces** im Exportdialog finden und "
+"aktivieren."
+
+#, fuzzy
+msgid ""
+"To avoid issues with 3D selection in the editor, it is recommended to apply "
+"the object transform in the 3D modeling software before exporting the scene."
+msgstr ""
+"Um Probleme mit der 3D-Auswahl im Editor zu vermeiden, wird empfohlen, die "
+"Objekttransformation im 3D-DCC anzuwenden, bevor die Szene exportiert wird."
+
+msgid ""
+"It is important that the mesh is not deformed by bones when exporting. Make "
+"sure that the skeleton is reset to its T-pose or default rest pose before "
+"exporting with your favorite 3D editor."
+msgstr ""
+"Es ist wichtig, dass das Mesh beim Export nicht durch Bones deformiert wird. "
+"Stellen Sie sicher, dass das Skelett vor dem Export mit Ihrem bevorzugten 3D-"
+"Editor auf seine T-Pose oder seine Standardposition zurückgesetzt wird."
+
+#, fuzzy
+msgid "Lighting considerations"
+msgstr "Überlegungen zum Exportieren"
+
+msgid ""
+"While it's possible to import lights from a 3D scene using the glTF, ``."
+"blend`` or Collada formats, it's generally advised to design the scene's "
+"lighting in the Godot editor after importing the scene."
+msgstr ""
+
+msgid ""
+"This allows you to get a more accurate feel for the final result, as "
+"different engines will render lights in a different manner. This also avoids "
+"any issues with lights appearing excessively strong or faint as a result of "
+"the import process."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

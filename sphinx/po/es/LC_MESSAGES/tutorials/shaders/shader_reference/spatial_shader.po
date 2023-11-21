@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Spatial shaders"
-msgstr "Spatial shaders"
+msgstr "Shaders espaciales"
 
 msgid ""
 "Spatial shaders are used for shading 3D objects. They are the most complex "
@@ -105,9 +105,9 @@ msgstr "Desactiva testing de depth."
 msgid "**sss_mode_skin**"
 msgstr ""
 
-#, fuzzy
 msgid "Subsurface Scattering mode for skin."
-msgstr "Dispersión Subsuperficial"
+msgstr ""
+"Modo Dispersión Subsuperficial (Subsurface Scattering) para piel (skin)."
 
 msgid "**cull_back**"
 msgstr "**cull_back**"
@@ -139,10 +139,18 @@ msgstr ""
 msgid "Geometry draws using lines."
 msgstr ""
 
+msgid "**diffuse_burley**"
+msgstr "**diffuse_burley**"
+
+#, fuzzy
+msgid "Burley (Disney PBS) for diffuse (default)."
+msgstr "Utiliza Burley (Disney PBS) para diffuse."
+
 msgid "**diffuse_lambert**"
 msgstr "**diffuse_lambert**"
 
-msgid "Lambert shading for diffuse (default)."
+#, fuzzy
+msgid "Lambert shading for diffuse."
 msgstr "Utiliza Lambert shading para diffuse (por defecto)."
 
 msgid "**diffuse_lambert_wrap**"
@@ -150,12 +158,6 @@ msgstr "**diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr "Utiliza Lambert wrapping (dependiente de roughness) para diffuse."
-
-msgid "**diffuse_burley**"
-msgstr "**diffuse_burley**"
-
-msgid "Burley (Disney PBS) for diffuse."
-msgstr "Utiliza Burley (Disney PBS) para diffuse."
 
 msgid "**diffuse_toon**"
 msgstr "**diffuse_toon**"
@@ -168,18 +170,6 @@ msgstr "**specular_schlick_ggx**"
 
 msgid "Schlick-GGX for specular (default)."
 msgstr "Usa Schlick-GGX para specular (por defecto)."
-
-msgid "**specular_blinn**"
-msgstr "**specular_blinn**"
-
-msgid "Blinn for specular (compatibility)."
-msgstr "Blinn para specular (compatibilidad)."
-
-msgid "**specular_phong**"
-msgstr "**specular_phong**"
-
-msgid "Phong for specular (compatibility)."
-msgstr "Usa Phong para specular (compatibilidad)."
 
 msgid "**specular_toon**"
 msgstr "**specular_toon**"
@@ -256,12 +246,12 @@ msgstr ""
 msgid "**alpha_to_coverage**"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Alpha antialiasing mode, see `here <https://github.com/godotengine/godot/"
 "pull/40364>`_ for more."
 msgstr ""
-"`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
+"Modo Alpha antialiasing, ver `aquí <https://github.com/godotengine/godot/"
+"pull/40364>`_ para más detalles."
 
 msgid "**alpha_to_coverage_and_one**"
 msgstr ""
@@ -335,7 +325,7 @@ msgid ""
 msgstr ""
 
 msgid "Vertex built-ins"
-msgstr "Vertex built-ins"
+msgstr "Incorporados en Vertex"
 
 msgid ""
 "Vertex data (``VERTEX``, ``NORMAL``, ``TANGENT``, ``BITANGENT``) are "
@@ -452,9 +442,8 @@ msgstr "Obten la posición del jugador."
 msgid "in vec3 **CAMERA_POSITION_WORLD**"
 msgstr "in vec3 **ATTENUATION**"
 
-#, fuzzy
 msgid "Camera world space position."
-msgstr "La posición del panel de animación"
+msgstr "Posición de la cámara en espacio de mundo."
 
 #, fuzzy
 msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
@@ -550,9 +539,8 @@ msgstr "inout vec3 **BINORMAL**"
 msgid "Binormal in local coordinates."
 msgstr "Binormal en coordenadas locales."
 
-#, fuzzy
 msgid "out vec4 **POSITION**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **POSITION**"
 
 msgid "If written to, overrides final vertex position."
 msgstr "Si está escrito, sobreescribe la posición final del vértice."
@@ -656,7 +644,7 @@ msgstr ""
 "evitar estos problemas."
 
 msgid "Fragment built-ins"
-msgstr "Fragment built-ins"
+msgstr "Incorporados en Fragment"
 
 msgid ""
 "The default use of a Godot fragment processor function is to set up the "
@@ -961,7 +949,7 @@ msgstr ""
 
 #, fuzzy
 msgid "out vec4 **RADIANCE**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **RADIANCE**"
 
 msgid ""
 "If written to, blends environment map radiance with RADIANCE.rgb based on "
@@ -970,7 +958,7 @@ msgstr ""
 
 #, fuzzy
 msgid "out vec4 **IRRADIANCE**"
-msgstr "out vec4  **POSITION**"
+msgstr "out vec4 **IRRADIANCE**"
 
 msgid ""
 "If written to, blends environment map IRRADIANCE with IRRADIANCE.rgb based "
@@ -991,7 +979,7 @@ msgstr ""
 "obtener más información y formas de evitar problemas."
 
 msgid "Light built-ins"
-msgstr "Light built-ins"
+msgstr "Incorporados en Light"
 
 msgid ""
 "Writing light processor functions is completely optional. You can skip the "
@@ -1107,9 +1095,8 @@ msgstr "in vec3 **LIGHT**"
 msgid "in float **METALLIC**"
 msgstr "out real **METALLIC**"
 
-#, fuzzy
 msgid "Metallic."
-msgstr "Metálico"
+msgstr "Metálico."
 
 msgid "in float **ROUGHNESS**"
 msgstr "in real **ROUGHNESS**"

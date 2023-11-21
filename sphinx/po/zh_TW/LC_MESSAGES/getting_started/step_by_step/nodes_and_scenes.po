@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,9 @@ msgid ""
 "scenes and that each scene is a tree of nodes. In this lesson, we explain a "
 "bit more about them. You will also create your first scene."
 msgstr ""
+"在 :ref:`doc_key_concepts_overview` 中，我們看到 Godot 遊戲就是由場景構成的樹"
+"狀結構，而每一個場景又是一個由節點構成的樹狀結構。在這一節中，我們將更詳細地"
+"解釋這些概念，你還將建立你的第一個場景。"
 
 msgid "Nodes"
 msgstr "節點"
@@ -34,40 +37,43 @@ msgid ""
 "the ingredients in a recipe. There are dozens of kinds that can display an "
 "image, play a sound, represent a camera, and much more."
 msgstr ""
+"**節點是你的遊戲的基本構件** 。它們就像食譜裡的食材。Godot 引擎包含很多種節"
+"點，可以用來顯示圖像、播放聲音、表示相機等等。"
 
-#, fuzzy
 msgid "All nodes have the following characteristics:"
 msgstr "有下列事項需注意："
 
-#, fuzzy
 msgid "A name."
-msgstr "操作名稱"
+msgstr "名稱。"
 
-#, fuzzy
 msgid "Editable properties."
 msgstr "節點有可編輯的屬性。"
 
-#, fuzzy
 msgid "They receive callbacks to update every frame."
-msgstr "節點能接收用來處理每一幀的回呼。"
+msgstr "節點能接收用來處理每一影格的回呼函式。"
 
-#, fuzzy
 msgid "You can extend them with new properties and functions."
 msgstr "可以擴充節點（讓節點有更多功能）。"
 
-#, fuzzy
 msgid "You can add them to another node as a child."
 msgstr "可以新增節點到另一個節點，變成另一個節點的子節點。"
 
+#, fuzzy
 msgid ""
 "The last characteristic is important. **Together, nodes form a tree**, which "
 "is a powerful feature to organize projects. Since different nodes have "
 "different functions, combining them produces more complex behavior. As we "
 "saw before, you can build a playable character the camera follows using a :"
-"ref:`CharacterBody2D <class_CharacterBody2D>` node named \"Character\", a :"
-"ref:`Sprite2D <class_Sprite2D>` node, a :ref:`Camera2D <class_Camera2D>` "
-"node, and a :ref:`CollisionShape2D <class_CollisionShape2D>` node."
+"ref:`CharacterBody2D <class_CharacterBody2D>` node, a :ref:`Sprite2D "
+"<class_Sprite2D>` node, a :ref:`Camera2D <class_Camera2D>` node, and a :ref:"
+"`CollisionShape2D <class_CollisionShape2D>` node."
 msgstr ""
+"最後一個特點是關鍵。 **節點會組成一棵樹** ，這個功能組織起專案來非常強大。因"
+"為不同的節點有不同的功能，將它們組合起來可以產生更複雜的行為。 正如我們之前看"
+"到的，你可以用一個名為“Character”的 :ref:`CharacterBody2D "
+"<class_CharacterBody2D>` 節點、一個 :ref:`Sprite2D <class_Sprite2D>` 節點、一"
+"個 :ref:`Camera2D <class_Camera2D>` 節點以及一個 :ref:`CollisionShape2D "
+"<class_CollisionShape2D>` 節點來建立一個相機跟隨的可玩角色。"
 
 msgid "Scenes"
 msgstr "場景"
@@ -78,6 +84,9 @@ msgid ""
 "editor, where you can add them as a child of an existing node. In that case, "
 "the instance of the scene appears as a single node with its internals hidden."
 msgstr ""
+"當你在樹中組織節點時，就像我們的角色一樣，我們稱之為場景建構。保存後，場景的"
+"工作方式類似於編輯器中的新節點型別，您可以在其中將它們新增為現有節點的子節"
+"點。在這種情況下，場景實例顯示為隱藏其內部結構的單個節點。"
 
 msgid ""
 "Scenes allow you to structure your game's code however you want. You can "
@@ -85,8 +94,9 @@ msgid ""
 "character that runs and jumps, a life bar, a chest with which you can "
 "interact, and more."
 msgstr ""
+"場景允許你以你想要的方式來建構你的遊戲程式碼。你可以 **組合節點** 來建立自訂"
+"和複雜的節點型別，比如能跑能跳的遊戲角色、生命條、可以互動的箱子等等。"
 
-#, fuzzy
 msgid ""
 "The Godot editor essentially is a **scene editor**. It has plenty of tools "
 "for editing 2D and 3D scenes, as well as user interfaces. A Godot project "
@@ -94,18 +104,15 @@ msgid ""
 "one as your application's **main scene**. This is the scene Godot will first "
 "load when you or a player runs the game."
 msgstr ""
-"基本上來說，Godot 編輯器就是一個 **場景編輯器**，有著各種能夠編輯 2D 與 3D 場"
-"景以及使用者介面的工具。但編輯器基本上就只是用來編輯場景以及編輯構成場景的節"
-"點。"
+"基本上，Godot 編輯器就是一個 **場景編輯器**，有著各種能夠編輯 2D 與 3D 場景以"
+"及使用者介面的工具。但編輯器基本上就只是用來編輯場景以及編輯構成場景的節點。"
 
-#, fuzzy
 msgid "On top of acting like nodes, scenes have the following characteristics:"
 msgstr "有下列事項需注意："
 
 msgid "They always have one root node, like the \"Character\" in our example."
-msgstr ""
+msgstr "它們始終有一個根節點，就像我們範例中的“Character”一樣。"
 
-#, fuzzy
 msgid "You can save them to your local drive and load them later."
 msgstr "可以新增節點到另一個節點，變成另一個節點的子節點。"
 
@@ -113,18 +120,21 @@ msgid ""
 "You can create as many instances of a scene as you'd like. You could have "
 "five or ten characters in your game, created from your Character scene."
 msgstr ""
+"您可以根據需要建立任意數量的場景實例。您的遊戲中可以有五個或十個角色，這些角"
+"色是從角色場景中建立的。"
 
-#, fuzzy
 msgid "Creating your first scene"
-msgstr "創建內容"
+msgstr "建立內容"
 
 msgid ""
 "Let's create our first scene with a single node. To do so, you will need to :"
 "ref:`create a new project <doc_creating_and_importing_projects>` first. "
 "After opening the project, you should see an empty editor."
 msgstr ""
+"讓我們只用一個節點來建立我們的第一個場景吧。首先你需要 :ref:`建立一個新專案 "
+"<doc_creating_and_importing_projects>` 。在打開專案後，你看到的應該是一個空的"
+"編輯器。"
 
-#, fuzzy
 msgid ""
 "In an empty scene, the Scene dock on the left shows several options to add a "
 "root node quickly. \"2D Scene\" adds a :ref:`Node2D <class_Node2D>` node, "
@@ -146,25 +156,23 @@ msgid ""
 "We're going to add a single :ref:`Label <class_Label>` node to our scene. "
 "Its function is to draw text on the screen."
 msgstr ""
+"我們要往場景中新增一個 :ref:`Label <class_Label>` 節點。它的功能是在螢幕上繪"
+"製文字。"
 
 msgid ""
 "Press the \"Add Child Node\" button or \"Other Node\" to create a root node."
-msgstr ""
+msgstr "點擊“新增子節點”按鈕或者“其他節點”，建立根節點。"
 
-#, fuzzy
 msgid "The Create Node dialog opens, showing the long list of available nodes."
-msgstr ""
-"如此一來會打開新增節點對話框，會顯示一串長長的列表，包含了所有可以建立的節"
-"點："
+msgstr "打開新增節點對話框，顯示一串長的可用節點。"
 
 msgid "Select the Label node. You can type its name to filter down the list."
-msgstr ""
+msgstr "選擇 Label 節點。您可以輸入這個名字來對列表進行篩選。"
 
-#, fuzzy
 msgid ""
 "Click on the Label node to select it and click the Create button at the "
 "bottom of the window."
-msgstr "點擊 TileSet 屬性，會在編輯器視窗的下方開啟「TileSet」面板："
+msgstr "點擊 Label 節點將其選中，然後點擊視窗底部的「建立」 按鈕。"
 
 msgid ""
 "A lot happens when you add a scene's first node. The scene changes to the 2D "
@@ -173,57 +181,65 @@ msgid ""
 "the left, and the node's properties appear in the Inspector dock on the "
 "right."
 msgstr ""
+"新增場景中的第一個節點時會發生很多事。場景會切換到 2D 工作區，因為 Label 是 "
+"2D 節點型別。該 Label 會以選中的狀態出現在視口的左上角。這個節點也會出現在左"
+"側的“場景”面板中，它的屬性會書現在右側的“屬性面板”面板裡。"
 
-#, fuzzy
 msgid "Changing a node's properties"
 msgstr "訊號與屬性"
 
-#, fuzzy
 msgid ""
 "The next step is to change the Label's \"Text\" property. Let's change it to "
 "\"Hello World\"."
-msgstr "下一步我們要修改標籤的「Text (文字)」屬性。來把它改成「Hello World」："
+msgstr "下一步我們要修改標籤的「Text (文字)」屬性。來把它改成「Hello World」。"
 
 msgid ""
 "Head to the Inspector dock on the right of the viewport. Click inside the "
 "field below the Text property and type \"Hello World\"."
 msgstr ""
+"前往視口右側的“屬性面板”面板。點擊 Text 屬性下方的欄位，然後填入“Hello "
+"World”。"
 
 msgid "You will see the text draw in the viewport as you type."
-msgstr ""
+msgstr "在你打字的同時，你會發現視口中也繪製出了這段文字。"
 
+#, fuzzy
 msgid ""
 "You can edit any property listed in the Inspector as we did with the Text. "
-"For a complete reference of the Inspector dock, see the :ref:"
+"For a complete reference of the Inspector dock, see :ref:"
 "`doc_editor_inspector_dock`."
 msgstr ""
+"你可以修改屬性面板列出的任何屬性，正如我們對文字所作的那樣。如果想要查看有關"
+"屬性面板停靠面板的完整參考資訊，詳見 :ref:`doc_editor_inspector_dock`。"
 
 msgid ""
 "You can move your Label node in the viewport by selecting the move tool in "
 "the toolbar."
-msgstr ""
+msgstr "選擇工具列上的移動工具，就可以在視口中移動你的 Label 節點。"
 
 msgid ""
 "With the Label selected, click and drag anywhere in the viewport to move it "
 "to the center of the view delimited by the rectangle."
 msgstr ""
+"選中 Label，點擊並拖拽視口中的任何位置，將它移動到矩形框所表示的視圖中心。"
 
-#, fuzzy
 msgid "Running the scene"
 msgstr "執行遊戲"
 
-#, fuzzy
 msgid ""
 "Everything's ready to run the scene! Press the Play Scene button in the top-"
 "right of the screen or press :kbd:`F6` (:kbd:`Cmd + R` on macOS)."
 msgstr ""
-"好了，現在可以執行場景了！點擊上方工具列的 **播放場景** 按鈕 (或是按 :kbd:"
-"`F6`)："
+"現在可以執行場景了！點擊上方工具列的 **播放場景** 按鈕 或是按 :kbd:`F6`(macOS"
+"上則是 :kbd:`Cmd + R`) 。"
 
+#, fuzzy
 msgid ""
 "A popup invites you to save the scene, which is required to run it. Click "
-"the Save button in the file browser to save it as \"label.tscn\"."
+"the Save button in the file browser to save it as ``label.tscn``."
 msgstr ""
+"會有一個彈出框請你保存場景，保存場景是運作這個場景前所必須做的。在檔瀏覽器中"
+"點擊保存按鈕將它保存為“label.tscn”。"
 
 msgid ""
 "The Save Scene As dialog, like other file dialogs in the editor, only allows "
@@ -232,18 +248,22 @@ msgid ""
 "path\". For more information about file paths in Godot, see :ref:"
 "`doc_filesystem`."
 msgstr ""
+"“場景另存為”對話方塊，和編輯器中的其他檔對話方塊一樣，只允許你將檔保存在專案"
+"之中。視窗頂部的 ``res://`` 路徑表示專案的根目錄，表示“resource path”（資源路"
+"徑）。Godot 中檔路徑的更多資訊請參閱 :ref:`doc_filesystem` 。"
 
 msgid ""
 "The application should open in a new window and display the text \"Hello "
 "World\"."
-msgstr ""
+msgstr "程式會打開一個新視窗，顯示“Hello World”字樣。"
 
 msgid ""
 "Close the window or press :kbd:`F8` (:kbd:`Cmd + .` on macOS) to quit the "
 "running scene."
 msgstr ""
+"關閉視窗或按 :kbd:`F8` （在 macOS 上是 :kbd:`Cmd + .` ）就可以退出正在運作的"
+"場景。"
 
-#, fuzzy
 msgid "Setting the main scene"
 msgstr "設定主要場景"
 
@@ -252,19 +272,23 @@ msgid ""
 "it allows you to set and run the project's main scene. You can press :kbd:"
 "`F5` (:kbd:`Cmd + B` on macOS) to do so."
 msgstr ""
+"我們運作測試場景用的是“運作場景”按鈕。它旁邊的另一個按鈕可以用來設定並運作專"
+"案的主場景。你也可以按 :kbd:`F5` （macOS 上則是 :kbd:`Cmd + B`）達到同樣的效"
+"果。"
 
 msgid "A popup window appears and invites you to select the main scene."
-msgstr ""
+msgstr "出現快顯視窗讓你選擇主場景。"
 
 msgid ""
 "Click the Select button, and in the file dialog that appears, double click "
 "on ``label.tscn``."
-msgstr ""
+msgstr "點擊“選擇”按鈕，出現檔對話方塊，按兩下 ``label.tscn`` 。"
 
 msgid ""
 "The demo should run again. Moving forward, every time you run the project, "
 "Godot will use this scene as a starting point."
 msgstr ""
+"演示程式又會開始運作。此後，每次你運作專案，Godot 都會使用該場景作為起點。"
 
 msgid ""
 "The editor saves the main scene's path in a project.godot file in your "
@@ -272,11 +296,15 @@ msgid ""
 "project settings, you can also use the \"Project -> Project Settings\" "
 "window to do so. For more information, see :ref:`doc_project_settings`."
 msgstr ""
+"編輯器會將主場景的路徑保存到專案目錄的 project.godot 檔案中。你能夠通過編輯這"
+"個文字檔來修改專案設定，但你也可以使用“專案 -> 專案設定”視窗來達到同樣的目"
+"的。詳細請參閱 :ref:`doc_project_settings`。"
 
 msgid ""
 "In the next part, we will discuss another key concept in games and in Godot: "
 "creating instances of a scene."
 msgstr ""
+"下一部分中，我們將討論遊戲和 Godot 中的另一個關鍵概念：建立場景的實例。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

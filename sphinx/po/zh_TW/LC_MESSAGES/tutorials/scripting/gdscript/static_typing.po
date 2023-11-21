@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,16 +23,22 @@ msgstr "GDScript 中的靜態型別"
 msgid "In this guide, you will learn:"
 msgstr "在本指南中，我們將學到："
 
-msgid "**How to use types in GDScript**"
-msgstr "**如何在 GDScript 中使用型別**"
+#, fuzzy
+msgid "how to use static typing in GDScript;"
+msgstr "GDScript 中的靜態型別"
 
-msgid "That **static types can help you avoid bugs**"
+#, fuzzy
+msgid "that static types can help you avoid bugs;"
 msgstr "**使用靜態型別可避免 Bug**"
 
+msgid "that static typing improves your experience with the editor."
+msgstr ""
+
+#, fuzzy
 msgid ""
-"Where and how you use this new language feature is entirely up to you: you "
-"can use it only in some sensitive GDScript files, use it everywhere, or "
-"write code like you always did!"
+"Where and how you use this language feature is entirely up to you: you can "
+"use it only in some sensitive GDScript files, use it everywhere, or don't "
+"use it at all."
 msgstr ""
 "要在哪裡使用靜態型別以及如何使用靜態型別全依個人：可以只在特定的 GDScript 檔"
 "案中使用、或是到處都使用靜態型別、也可以像平常一樣寫程式碼就好了！"
@@ -45,68 +51,68 @@ msgstr "靜態型別可以在變數、常數、函式、參數、與回傳型別
 msgid "A brief look at static typing"
 msgstr "靜態型別簡介"
 
+#, fuzzy
 msgid ""
-"With typed GDScript, Godot can detect even more errors as you write code! It "
-"gives you and your teammates more information as you're working, as the "
-"arguments' types show up when you call a method."
+"With static typing, GDScript can detect more errors without even running the "
+"code. Also type hints give you and your teammates more information as you're "
+"working, as the arguments' types show up when you call a method. Static "
+"typing improves editor autocompletion and :ref:`documentation "
+"<doc_gdscript_documentation_comments>` of your scripts."
 msgstr ""
 "在 GDScript 中使用型別，就能在寫程式碼時讓 Godot 偵測到更多錯誤！型別也能讓你"
-"與團隊成員獲得更多資訊，因為在呼叫方法時會顯示出引數的型別。"
+"與團隊成員獲得更多資訊，因為在呼叫方法時會顯示出參數的型別。"
 
+#, fuzzy
 msgid ""
-"Imagine you're programming an inventory system. You code an ``Item`` node, "
+"Imagine you're programming an inventory system. You code an ``Item`` class, "
 "then an ``Inventory``. To add items to the inventory, the people who work "
-"with your code should always pass an ``Item`` to the ``Inventory.add`` "
-"method. With types, you can enforce this:"
+"with your code should always pass an ``Item`` to the ``Inventory.add()`` "
+"method. With types, you can enforce this::"
 msgstr ""
 "來想像一下開發物品列系統。先撰寫 ``Item`` 節點的程式，然後寫 ``Inventory`` 。"
 "要將物品新增到物品列上時，則需要將 ``Item`` 傳遞給 ``Inventory.add`` 方法。我"
 "們可以通過指定型別來強制 Inventory.add 只能接受 Item 型別："
 
-msgid ""
-"Another significant advantage of typed GDScript is the new **warning "
-"system**. From version 3.1, Godot gives you warnings about your code as you "
-"write it: the engine identifies sections of your code that may lead to "
-"issues at runtime, but lets you decide whether or not you want to leave the "
-"code as it is. More on that in a moment."
-msgstr ""
-"另一個在 GDScript 使用型別的優勢為新的 **警告系統** 。自 3.1 版起，當 Godot "
-"發現程式碼中出現了可能會在執行時發生問題的程式碼時會即時顯示警告，但是使用者"
-"依然可以決定要保留程式碼或是進行修改。稍後將詳細說明。"
-
+#, fuzzy
 msgid ""
 "Static types also give you better code completion options. Below, you can "
-"see the difference between a dynamic and a static typed completion options "
-"for a class called ``PlayerController``."
+"see the difference between a dynamic and a static typed completion options."
 msgstr ""
 "靜態型別也能讓程式碼補全更加完善。我們將在下方比較動態與靜態型別的補全選項，"
 "以 ``PlayerController`` 類別為例。"
 
 msgid ""
-"You've probably stored a node in a variable before, and typed a dot to be "
-"left with no autocomplete suggestions:"
-msgstr "如果之前有將節點保存在變數過，輸入句點時不會顯示自動補全建議："
-
-msgid "code completion options for dynamic"
+"You've probably encountered a lack of autocomplete suggestions after a dot:"
 msgstr ""
 
+#, fuzzy
+msgid "Completion options for dynamic typed code."
+msgstr "動態型別的程式碼補全選項"
+
+#, fuzzy
 msgid ""
-"This is due to dynamic code. Godot cannot know what node or value type "
-"you're passing to the function. If you write the type explicitly however, "
-"you will get all public methods and variables from the node:"
+"This is due to dynamic code. Godot cannot know what value type you're "
+"passing to the function. If you write the type explicitly however, you will "
+"get all methods, properties, constants, etc. from the value:"
 msgstr ""
 "這是因為 body 的定義是動態的，Godot 無法知道傳入函式的節點或數值的型別。若明"
-"確聲明型別，則自動補全提示會顯示節點中所有 Public 的方法與變數："
+"確宣告型別，則自動補全提示會顯示節點中所有 Public 的方法與變數："
 
-msgid "code completion options for typed"
+#, fuzzy
+msgid "Completion options for static typed code."
+msgstr "靜態型別的程式碼補全選項"
+
+msgid ""
+"If you prefer static typing, we recommend enabling the **Text Editor > "
+"Completion > Add Type Hints** editor setting. Also consider enabling `some "
+"warnings <Warning system_>`_ that are disabled by default."
 msgstr ""
 
 msgid ""
-"In the future, typed GDScript will also increase code performance: Just-In-"
-"Time compilation and other compiler improvements are already on the roadmap!"
+"Also, typed GDScript improves performance by using optimized opcodes when "
+"operand/argument types are known at compile time. More GDScript "
+"optimizations are planned in the future, such as JIT/AOT compilation."
 msgstr ""
-"將來，有型別的 GDScript 也能增加程式碼的效能：我們已經在計劃藍圖上加上 JIT 編"
-"譯與其他編譯器改進了！"
 
 msgid ""
 "Overall, typed programming gives you a more structured experience. It helps "
@@ -125,51 +131,86 @@ msgstr ""
 msgid "How to use static typing"
 msgstr "如何使用靜態型別"
 
+#, fuzzy
 msgid ""
-"To define the type of a variable or a constant, write a colon after the "
-"variable's name, followed by its type. E.g. ``var health: int``. This forces "
-"the variable's type to always stay the same:"
+"To define the type of a variable, parameter, or constant, write a colon "
+"after the name, followed by its type. E.g. ``var health: int``. This forces "
+"the variable's type to always stay the same::"
 msgstr ""
 "要定義變數或常數的型別，只需在變數名稱後方加上逗號，再寫上型別。如 ``var "
 "heal: int`` 。這樣即可讓變數的型別保持相同："
 
+#, fuzzy
 msgid ""
-"Godot will try to infer types if you write a colon, but you omit the type:"
+"Godot will try to infer types if you write a colon, but you omit the type::"
 msgstr "若只寫冒號而省略型別，則 Godot 會自動推斷型別："
 
-msgid "Currently you can use three types of… types:"
-msgstr "目前可以使用三種類型的型別："
-
-msgid ":ref:`Built-in <doc_gdscript_builtin_types>`"
-msgstr ":ref:`內建型別 <doc_gdscript_builtin_types>`"
-
-msgid ""
-"Core classes and nodes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)"
-msgstr "核心類型與節點 (``Object``, ``Node``, ``Area2D``, ``Camera2D`` …等)"
+#, fuzzy
+msgid "There is no difference between ``=`` and ``:=`` for constants."
+msgstr "匯出中的緩衝陰影與光線陰影無異。"
 
 #, fuzzy
 msgid ""
-"Your own custom classes. Look at the new :ref:`class_name "
-"<doc_gdscript_basics_class_name>` feature to register types in the editor."
-msgstr ""
-"自定類型。請參考新的 :ref:`class_name <doc_scripting_continued_class_name>` "
-"功能來瞭解如何將型別註冊到編輯器內。"
-
-msgid ""
 "You don't need to write type hints for constants, as Godot sets it "
 "automatically from the assigned value. But you can still do so to make the "
-"intent of your code clearer."
+"intent of your code clearer. Also, this is useful for typed arrays (like "
+"``const A: Array[int] = [1, 2, 3]``), since untyped arrays are used by "
+"default."
 msgstr ""
 "常數不需要寫型別，因為 Godot 會自動依據指派的值來推斷型別。但一樣可以寫上型別"
 "來讓程式碼更清楚。"
 
-msgid "Custom variable types"
-msgstr "自定變數型別"
+#, fuzzy
+msgid "What can be a type hint"
+msgstr "這個引擎能幹什麼？"
 
+#, fuzzy
+msgid "Here is a complete list of what can be used as a type hint:"
+msgstr "下面是基於這些規範的完整著色器的例子："
+
+msgid ""
+"``Variant``. Any type. In most cases this is not much different from an "
+"untyped declaration, but increases readability. As a return type, forces the "
+"function to explicitly return some value."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"*(Only return type)* ``void``. Indicates that the function does not return "
+"any value."
+msgstr "用於代表函式不返回任何值。"
+
+#, fuzzy
+msgid ":ref:`Built-in types <doc_gdscript_builtin_types>`."
+msgstr ":ref:`內建型別 <doc_gdscript_builtin_types>`"
+
+#, fuzzy
+msgid "Native classes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)."
+msgstr "核心型別與節點 (``Object``, ``Node``, ``Area2D``, ``Camera2D`` …等)"
+
+#, fuzzy
+msgid ":ref:`Global classes <doc_gdscript_basics_class_name>`."
+msgstr ":ref:`腳本類別 <doc_scripting_continued_class_name>`"
+
+#, fuzzy
+msgid ":ref:`Inner classes <doc_gdscript_basics_inner_classes>`."
+msgstr ":ref:`腳本類別 <doc_scripting_continued_class_name>`"
+
+msgid ""
+"Global, native and custom named enums. Note that an enum type is just an "
+"``int``, there is no guarantee that the value belongs to the set of enum "
+"values."
+msgstr ""
+
+msgid ""
+"Constants (including local ones) if they contain a preloaded class or enum."
+msgstr ""
+
+#, fuzzy
 msgid ""
 "You can use any class, including your custom classes, as types. There are "
 "two ways to use them in scripts. The first method is to preload the script "
-"you want to use as a type in a constant:"
+"you want to use as a type in a constant::"
 msgstr ""
 "可以使用任何類別來作為型別，也包含自定類別。在腳本中使用類別作為型別有兩種方"
 "法，第一種方法是將要作為型別的腳本預先載入到常數中："
@@ -177,62 +218,154 @@ msgstr ""
 #, fuzzy
 msgid ""
 "The second method is to use the ``class_name`` keyword when you create. For "
-"the example above, your rifle.gd would look like this:"
+"the example above, your ``rifle.gd`` would look like this::"
 msgstr ""
 "而第二種方法則是在建立類別時使用 ``class_name`` 關鍵字。如在上方的範例中，"
 "Rifle.gd 會變成這樣："
 
+#, fuzzy
 msgid ""
-"If you use ``class_name``, Godot registers the Rifle type globally in the "
-"editor, and you can use it anywhere, without having to preload it into a "
-"constant:"
+"If you use ``class_name``, Godot registers the ``Rifle`` type globally in "
+"the editor, and you can use it anywhere, without having to preload it into a "
+"constant::"
 msgstr ""
 "若使用 ``class_name`` ，則 Godot 會將 Rifle 型別全域註冊到編輯器中，之後便可"
 "在任何地方使用而無需預載進常數："
 
-msgid "Variable casting"
-msgstr "變數型別轉換"
+#, fuzzy
+msgid "Specify the return type of a function with the arrow ``->``"
+msgstr "使用箭頭 -> 來定義函式的回傳值型別"
+
+#, fuzzy
+msgid ""
+"To define the return type of a function, write a dash and a right angle "
+"bracket ``->`` after its declaration, followed by the return type::"
+msgstr ""
+"要定義函式的回傳值型別，可以在函式定義後加上一個減號與右角括號 ``->`` ，再寫"
+"上回傳型別："
+
+#, fuzzy
+msgid ""
+"The type ``void`` means the function does not return anything. You can use "
+"any type, as with variables::"
+msgstr "型別 ``void`` 表示函式不回傳任何東西。與變數一樣，可以使用任何型別："
+
+#, fuzzy
+msgid "You can also use your own classes as return types::"
+msgstr "也可以使用自定節點來作為回傳型別："
+
+msgid "Covariance and contravariance"
+msgstr ""
 
 msgid ""
-"Type casting is a key concept in typed languages. Casting is the conversion "
-"of a value from one type to another."
+"When inheriting base class methods, you should follow the `Liskov "
+"substitution principle <https://en.wikipedia.org/wiki/"
+"Liskov_substitution_principle>`__."
+msgstr ""
+
+msgid ""
+"**Covariance:** When you inherit a method, you can specify a return type "
+"that is more specific (**subtype**) than the parent method."
+msgstr ""
+
+msgid ""
+"**Contravariance:** When you inherit a method, you can specify a parameter "
+"type that is less specific (**supertype**) than the parent method."
+msgstr ""
+
+msgid "Example::"
+msgstr "範例："
+
+#, fuzzy
+msgid "Specify the element type of an ``Array``"
+msgstr "使用箭頭 -> 來定義函式的回傳值型別"
+
+#, fuzzy
+msgid "To define the type of an ``Array``, enclose the type name in ``[]``."
+msgstr "要定義 Array 的型別，請將型別名稱包裹在 ``[]`` 中。"
+
+#, fuzzy
+msgid ""
+"An array's type applies to ``for`` loop variables, as well as some operators "
+"like ``[]``, ``[]=``, and ``+``. Array methods (such as ``push_back``) and "
+"other operators (such as ``==``) are still untyped. Built-in types, native "
+"and custom classes, and enums may be used as element types. Nested array "
+"types are not supported."
+msgstr ""
+"陣列的型別適用於“for”循環變量，以及一些運算符，如“[]”、“[]=”和“+”。陣列方法"
+"（例如``push_back``）和其他運算子（例如``==``）仍然是無型別的。原始型別、內建"
+"類別和自訂類別都可以用作型別。不支援巢狀陣列型別。"
+
+#, fuzzy
+msgid ""
+"Since Godot 4.2, you can also specify a type for the loop variable in a "
+"``for`` loop. For instance, you can write::"
+msgstr ""
+"從 Godot 4.2 開始，您也可以在「for」迴圈中指定循環變數的型別。例如，你可以"
+"寫："
+
+#, fuzzy
+msgid ""
+"The array will remain untyped, but the ``name`` variable within the ``for`` "
+"loop will always be of ``String`` type."
+msgstr "該陣列將保持無型別，但“for”循環中的“name”變數將始終是字串型別。"
+
+#, fuzzy
+msgid "Type casting"
+msgstr "型別轉換"
+
+#, fuzzy
+msgid ""
+"Type casting is an important concept in typed languages. Casting is the "
+"conversion of a value from one type to another."
 msgstr ""
 "型別轉換是型別語言的重要概念。型別轉換即為將數值從一種型別轉換至另一種型別。"
 
 #, fuzzy
 msgid ""
-"Imagine an Enemy in your game, that ``extends Area2D``. You want it to "
-"collide with the Player, a ``CharacterBody2D`` with a script called "
-"``PlayerController`` attached to it. You use the ``on_body_entered`` signal "
-"to detect the collision. With typed code, the body you detect is going to be "
-"a generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
+"Imagine an ``Enemy`` in your game, that ``extends Area2D``. You want it to "
+"collide with the ``Player``, a ``CharacterBody2D`` with a script called "
+"``PlayerController`` attached to it. You use the ``body_entered`` signal to "
+"detect the collision. With typed code, the body you detect is going to be a "
+"generic ``PhysicsBody2D``, and not your ``PlayerController`` on the "
 "``_on_body_entered`` callback."
 msgstr ""
 "試想一下遊戲中有 Enemy 物件 ``extends Area2D`` ，要與 Player (附加了 "
 "``PlayerController`` 腳本的 ``KinematicBody2D``) 碰撞，則可以使用 "
-"``on_body_entered`` 訊號來檢測碰撞。若使用有型別的程式碼，則 "
+"``on_body_entered`` 訊號來偵測碰撞。若使用有型別的程式碼，則 "
 "``_on_body_entered`` 回呼內偵測的是 ``PhysicsBody2D`` 而非 "
 "``PlayerController``。"
 
+#, fuzzy
 msgid ""
-"You can check if this ``PhysicsBody2D`` is your Player with the ``as`` "
-"casting keyword, and using the colon ``:`` again to force the variable to "
-"use this type. This forces the variable to stick to the ``PlayerController`` "
-"type:"
+"You can check if this ``PhysicsBody2D`` is your ``Player`` with the ``as`` "
+"keyword, and using the colon ``:`` again to force the variable to use this "
+"type. This forces the variable to stick to the ``PlayerController`` type::"
 msgstr ""
 "我們可以使用 ``as`` 型別轉換關鍵字來檢查 ``PhisicsBody2D`` 是否為 Player，並"
 "使用冒號 ``:`` 來強制變數使用這個型別。這樣一來便可強制變數保持為 "
 "``PlayerController`` 型別："
 
+#, fuzzy
 msgid ""
 "As we're dealing with a custom type, if the ``body`` doesn't extend "
-"``PlayerController``, the ``player``\\ variable will be set to ``null``. We "
+"``PlayerController``, the ``player`` variable will be set to ``null``. We "
 "can use this to check if the body is the player or not. We will also get "
 "full autocompletion on the player variable thanks to that cast."
 msgstr ""
 "由於我們在處理的是自定型別，若 ``body`` 不是繼承 ``PlayerController`` ，則 "
 "``player`` 變數會被設為 ``null`` 。可以藉由檢查 null 來確認 body 是否為玩家。"
 "另外，由於我們轉換了型別在輸入時也會有 Player 上完整的自動補全功能。"
+
+msgid ""
+"The ``as`` keyword silently casts the variable to ``null`` in case of a type "
+"mismatch at runtime, without an error/warning. While this may be convenient "
+"in some cases, it can also lead to bugs. Use the ``as`` keyword only if this "
+"behavior is intended. A safer alternative is to use the ``is`` keyword::"
+msgstr ""
+
+msgid "or ``assert()`` statement::"
+msgstr ""
 
 msgid ""
 "If you try to cast with a built-in type and it fails, Godot will throw an "
@@ -242,12 +375,12 @@ msgstr "若試著轉換型別為內建型別而失敗的話，Godot 會拋出錯
 msgid "Safe lines"
 msgstr "安全行"
 
+#, fuzzy
 msgid ""
-"You can also use casting to ensure safe lines. Safe lines are a new tool in "
-"Godot 3.1 to tell you when ambiguous lines of code are type-safe. As you can "
-"mix and match typed and dynamic code, at times, Godot doesn't have enough "
-"information to know if an instruction will trigger an error or not at "
-"runtime."
+"You can also use casting to ensure safe lines. Safe lines are a tool to tell "
+"you when ambiguous lines of code are type-safe. As you can mix and match "
+"typed and dynamic code, at times, Godot doesn't have enough information to "
+"know if an instruction will trigger an error or not at runtime."
 msgstr ""
 "我們可以使用型別轉換來確保某行程式碼為安全行。安全行是 Godot 3.1 版新增的新工"
 "具，能用來告訴使用者某行可能有歧義的程式碼是否為型別安全。由於我們能在程式碼"
@@ -268,7 +401,6 @@ msgstr ""
 "Timer 同時也會是其繼承的 ``Node`` 與 ``Object`` 兩個類別。使用動態 GDScript "
 "時，只要節點上有我們需要的方法，就不需要去在意節點是什麼型別。"
 
-#, fuzzy
 msgid ""
 "You can use casting to tell Godot the type you expect when you get a node: "
 "``($Timer as Timer)``, ``($Player as CharacterBody2D)``, etc. Godot will "
@@ -280,62 +412,31 @@ msgstr ""
 "別是否有效，而有效的話則會將腳本編輯器左邊的行號變成綠色。"
 
 msgid "Unsafe vs Safe Line"
-msgstr ""
+msgstr "不安全 vs 安全的行"
 
 msgid "Unsafe line (line 7) vs Safe Lines (line 6 and 8)"
 msgstr "非安全行 (第 7 行) vs 安全行 (第 6 行與第 8 行)"
 
 msgid ""
+"Safe lines do not always mean better or more reliable code. See the note "
+"above about the ``as`` keyword. For example::"
+msgstr ""
+
+msgid ""
+"Even though ``node_2`` declaration is marked as an unsafe line, it is more "
+"reliable than ``node_1`` declaration. Because if you change the node type in "
+"the scene and accidentally forget to change it in the script, the error will "
+"be detected immediately when the scene is loaded. Unlike ``node_1``, which "
+"will be silently cast to ``null`` and the error will be detected later."
+msgstr ""
+
+msgid ""
 "You can turn off safe lines or change their color in the editor settings."
 msgstr "可以在編輯器設定中關閉安全行或更改安全行的色彩。"
-
-msgid "Define the return type of a function with the arrow ->"
-msgstr "使用箭頭 -> 來定義函式的回傳值型別"
-
-msgid ""
-"To define the return type of a function, write a dash and a right angle "
-"bracket ``->`` after its declaration, followed by the return type:"
-msgstr ""
-"要定義函式的回傳值型別，可以在函式定義後加上一個減號與右角括號 ``->`` ，再寫"
-"上回傳型別："
-
-msgid ""
-"The type ``void`` means the function does not return anything. You can use "
-"any type, as with variables:"
-msgstr "型別 ``void`` 表示函式不回傳任何東西。與變數一樣，可以使用任何型別："
-
-msgid "You can also use your own nodes as return types:"
-msgstr "也可以使用自定節點來作為回傳型別："
-
-#, fuzzy
-msgid "Define the element type of an Array"
-msgstr "使用箭頭 -> 來定義函式的回傳值型別"
-
-msgid "To define the type of an Array, enclose the type name in ``[]``."
-msgstr ""
-
-msgid ""
-"An array's type applies to ``for`` loop variables, as well as some operators "
-"like ``[]``, ``[]=``, and ``+``. Array methods (such as ``push_back``) and "
-"other operators (such as ``==``) are still untyped. Primitive types, builtin "
-"classes, and custom classes may be used as types. Nested array types are not "
-"supported."
-msgstr ""
-
-msgid ""
-"Since Godot 4.2, you can also specify a type for the loop variable in a "
-"``for`` loop. For instance, you can write:"
-msgstr ""
-
-msgid ""
-"The array will remain untyped, but the ``name`` variable within the ``for`` "
-"loop will always be of String type."
-msgstr ""
 
 msgid "Typed or dynamic: stick to one style"
 msgstr "靜態或動態：只選擇一種風格"
 
-#, fuzzy
 msgid ""
 "Typed GDScript and dynamic GDScript can coexist in the same project. But "
 "it's recommended to stick to either style for consistency in your codebase, "
@@ -346,68 +447,96 @@ msgstr ""
 "風格來在程式碼中保持一貫性，團隊成員也應固定來保持一貫。若大家都遵守同一個方"
 "針的話，也更容易一起工作並更快地閱讀理解他人的程式碼。"
 
+#, fuzzy
 msgid ""
 "Typed code takes a little more writing, but you get the benefits we "
 "discussed above. Here's an example of the same, empty script, in a dynamic "
-"style:"
+"style::"
 msgstr ""
 "使用型別程式碼可能會需要寫更多程式碼，但同時也能享受剛才提到的優點。下列為使"
 "用動態風格的空白腳本範例："
 
-msgid "And with static typing:"
+#, fuzzy
+msgid "And with static typing::"
 msgstr "加上靜態型別定義："
 
+#, fuzzy
 msgid ""
 "As you can see, you can also use types with the engine's virtual methods. "
 "Signal callbacks, like any methods, can also use types. Here's a "
-"``body_entered`` signal in a dynamic style:"
+"``body_entered`` signal in a dynamic style::"
 msgstr ""
 "像上面這樣，在虛擬方法中也可以使用型別。訊號回呼與其他方法一樣也可以使用型"
 "別。下列為動態風格的 ``body_entered`` 訊號範例："
 
-msgid "And the same callback, with type hints:"
+#, fuzzy
+msgid "And the same callback, with type hints::"
 msgstr "而相同的回呼，加上型別定義："
-
-msgid ""
-"You're free to replace, e.g. the ``CollisionObject2D``, with your own type, "
-"to cast parameters automatically:"
-msgstr ""
-"``CollisionObject2D`` 可以自由替換為任何自定型別，並自動轉換參數的型別："
-
-msgid ""
-"The ``bullet`` variable could hold any ``CollisionObject2D`` here, but we "
-"make sure it is our ``Bullet``, a node we created for our project. If it's "
-"anything else, like an ``Area2D``, or any node that doesn't extend "
-"``Bullet``, the ``bullet`` variable will be ``null``."
-msgstr ""
-"此例中的 ``bullet`` 變數可以是任何的 ``CollisionObject2D`` ，但這裡我們確保 "
-"bullet 是專案中的 ``Bullet`` 節點。若 bullet 是其他如 ``Area2D`` 之類沒有繼"
-"承 ``Bullet`` 的節點，則 ``bullet`` 變數會是 ``null`` 。"
 
 msgid "Warning system"
 msgstr "警告系統"
 
+#, fuzzy
 msgid ""
-"Documentation about the GDScript warning system has been moved to :ref:"
-"`doc_gdscript_warning_system`."
+"Detailed documentation about the GDScript warning system has been moved to :"
+"ref:`doc_gdscript_warning_system`."
 msgstr ""
 "有關 GDScript 警告系統的文件已移至 :ref:`doc_gdscript_warning_system` 。"
 
 #, fuzzy
-msgid "A case where you can't specify types"
+msgid ""
+"From version 3.1, Godot gives you warnings about your code as you write it: "
+"the engine identifies sections of your code that may lead to issues at "
+"runtime, but lets you decide whether or not you want to leave the code as it "
+"is."
+msgstr ""
+"另一個在 GDScript 使用型別的優勢為新的 **警告系統** 。自 3.1 版起，當 Godot "
+"發現程式碼中出現了可能會在執行時發生問題的程式碼時會即時顯示警告，但是使用者"
+"依然可以決定要保留程式碼或是進行修改。稍後將詳細說明。"
+
+msgid ""
+"We have a number of warnings aimed specifically at users of typed GDScript. "
+"By default, these warnings are disabled, you can enable them in Project "
+"Settings (**Debug > GDScript**, make sure **Advanced Settings** is enabled)."
+msgstr ""
+
+msgid ""
+"You can enable the ``UNTYPED_DECLARATION`` warning if you want to always use "
+"static types. Additionally, you can enable the ``INFERRED_DECLARATION`` "
+"warning if you prefer a more readable and reliable, but more verbose syntax."
+msgstr ""
+
+msgid ""
+"``UNSAFE_*`` warnings make unsafe operations more noticeable, than unsafe "
+"lines. Currently, ``UNSAFE_*`` warnings do not cover all cases that unsafe "
+"lines cover."
+msgstr ""
+
+#, fuzzy
+msgid "Cases where you can't specify types"
 msgstr "無法指定型別的情況"
 
 #, fuzzy
 msgid ""
-"To wrap up this introduction, let's mention a case where you can't use type "
+"To wrap up this introduction, let's mention cases where you can't use type "
 "hints. This will trigger a **syntax error**."
 msgstr ""
 "在結束這篇教學前，我們再來說說無法使用型別定義的一些情況。接下來所有的例子都"
 "會 **觸發錯誤** 。"
 
 #, fuzzy
-msgid "You can't specify the type of individual members in an array:"
+msgid ""
+"You can't specify the type of individual elements in an array or a "
+"dictionary::"
 msgstr "無法為陣列中個別成員指定型別。下列例子會產生錯誤："
+
+#, fuzzy
+msgid "Nested types are not currently supported::"
+msgstr "JDK 9 或更新版本目前尚不支援。"
+
+#, fuzzy
+msgid "Typed dictionaries are not currently supported::"
+msgstr "JDK 9 或更新版本目前尚不支援。"
 
 msgid "Summary"
 msgstr "總結"
@@ -415,9 +544,9 @@ msgstr "總結"
 #, fuzzy
 msgid ""
 "Typed GDScript is a powerful tool. It helps you write more structured code, "
-"avoid common errors, and create scalable systems. In the future, static "
-"types will also bring you a nice performance boost thanks to upcoming "
-"compiler optimizations."
+"avoid common errors, and create scalable and reliable systems. Static types "
+"improve GDScript performance and more optimizations are planned for the "
+"future."
 msgstr ""
 "型別定義的 GDScript 是強力的工具。自 Godot 3.1 版起提供，型別定義能讓使用者撰"
 "寫更有結構的程式碼、避免場景錯誤以及能建立延展性更高的系統。在未來，靜態型別"

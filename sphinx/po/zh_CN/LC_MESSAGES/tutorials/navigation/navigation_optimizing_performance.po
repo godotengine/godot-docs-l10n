@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,38 +17,40 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Optimizing Navigation Performance"
-msgstr "优化 3D 性能"
+msgstr "优化导航性能"
 
 msgid ""
 "Common Navigation related performance problems can be categorized into the "
 "following topics:"
 msgstr ""
 
+#, fuzzy
 msgid ""
-"Performance problems with parsing SceneTree nodes for navigation mesh baking."
-msgstr ""
+"Performance problems with parsing scene tree nodes for navigation mesh "
+"baking."
+msgstr "为导航网格烘焙解析场景树节点时的性能问题。"
 
 msgid "Performance problems with baking the actual navigation mesh."
-msgstr ""
+msgstr "烘焙实际导航网格时的性能问题。"
 
 msgid "Performance problems with NavigationAgent path queries."
-msgstr ""
+msgstr "NavigationAgent 路径查询的性能问题。"
 
 msgid "Performance problems with the actual path search."
-msgstr ""
+msgstr "实际路径搜索的性能问题。"
 
 msgid "Performance problems with synchronizing the navigation map."
-msgstr ""
+msgstr "同步导航地图的性能问题。"
 
 msgid ""
 "In the following sections information can be found on how to identify and "
 "fix or at least mitigate their impact on framerates."
 msgstr ""
 
-msgid "Performance problems with parsing SceneTree nodes"
-msgstr ""
+#, fuzzy
+msgid "Performance problems with parsing scene tree nodes"
+msgstr "解析场景树节点的性能问题"
 
 msgid ""
 "Prefer using simple shapes with as few edges as possible e.g. nothing "
@@ -87,7 +89,7 @@ msgid ""
 msgstr ""
 
 msgid "Performance problems with navigation mesh baking"
-msgstr ""
+msgstr "烘焙导航网格的性能问题"
 
 msgid ""
 "At runtime, always prefer to use a background thread for baking navigation "
@@ -117,8 +119,9 @@ msgid ""
 "the framerate should stay at a bearable level."
 msgstr ""
 
+#, fuzzy
 msgid ""
-"Complexity of source geometry data parsed from SceneTree nodes has big "
+"Complexity of source geometry data parsed from scene tree nodes has big "
 "impact on baking performance as everything needs to be mapped to a grid / "
 "voxels. For runtime baking performance the NavigationMesh cell size and cell "
 "height should be set as high as possible without causing navigation mesh "
@@ -132,6 +135,14 @@ msgid ""
 "get away with the monotone or layers mode that are a lot faster to bake (e."
 "g. because they require no distance field pass)."
 msgstr ""
+"从SceneTree节点解析的源几何数据的复杂度对烘焙性能有很大的影响，因为所有的数据"
+"都需要映射到一个栅格/体素上。为了提高运行时的烘焙性能，NavigationMesh 的 "
+"cell size 和 cell height 应该尽可能地设置得高，但不要造成游戏中导航网格质量的"
+"问题。如果 cell size 或 cell height 设置得太低，烘焙过程就会被迫创建过多的体"
+"素来处理源几何数据。如果源几何数据覆盖了一个非常大的游戏世界，甚至有可能在烘"
+"焙过程中内存耗尽而导致游戏崩溃。partition type 也可以根据游戏中源几何数据的复"
+"杂度来降低，以提高一些性能。例如，有大量平坦表面和块状几何的游戏可以使用单调"
+"或分层模式来烘焙，这些模式会快很多（例如，因为它们不需要距离场阶段）。"
 
 msgid ""
 "Never scale source geometry with nodes. Not only can it result in a lot of "
@@ -143,7 +154,7 @@ msgid ""
 msgstr ""
 
 msgid "Performance problems with NavigationAgent path queries"
-msgstr ""
+msgstr "NavigationAgent 路径查询的性能问题"
 
 msgid ""
 "Avoid unnecessary path resets and queries every frame in NavigationAgent "
@@ -186,7 +197,7 @@ msgid ""
 msgstr ""
 
 msgid "Performance problems with the actual path search"
-msgstr ""
+msgstr "实际路径搜索的性能问题"
 
 msgid ""
 "Optimize overdetailed navigation meshes by reducing the amount of polygons "
@@ -215,7 +226,7 @@ msgid ""
 msgstr ""
 
 msgid "Performance problems with navigation map synchronization"
-msgstr ""
+msgstr "导航地图同步的性能问题"
 
 msgid ""
 "Merge navigation meshes polygons by vertex instead of by edge connection "

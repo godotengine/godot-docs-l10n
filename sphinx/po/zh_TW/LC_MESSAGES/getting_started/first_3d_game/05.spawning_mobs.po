@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,49 +24,50 @@ msgid ""
 "In this part, we're going to spawn monsters along a path randomly. By the "
 "end, you will have monsters roaming the game board."
 msgstr ""
+"在這一部分中，我們將沿著一條路徑隨機刷怪。在最後，怪物們就會在遊戲區域到處亂"
+"跑了。"
 
 msgid "|image0|"
 msgstr "\\ |image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "\\ |image0|"
+msgstr "image0"
 
 msgid ""
 "Double-click on ``main.tscn`` in the *FileSystem* dock to open the ``Main`` "
 "scene."
-msgstr ""
+msgstr "按兩下*檔案系統*停靠面板中的 ``Main.tscn`` 打開 ``Main`` 場景。"
 
 msgid ""
 "Before drawing the path, we're going to change the game resolution. Our game "
 "has a default window size of ``1152x648``. We're going to set it to "
 "``720x540``, a nice little box."
 msgstr ""
+"在繪製路徑之前，我們要修改遊戲的解析度。我們的遊戲預設的視窗大小是 "
+"``1152x648``。我們要把它設成 ``720x540``，一個小巧的方塊。"
 
-#, fuzzy
 msgid "Go to *Project -> Project Settings*."
 msgstr "選擇 [專案] -> [專案設定] 來打開這個對話框。現在就試試吧。"
 
 msgid "|image1|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "\\ |image1|"
+msgstr "image1"
 
 msgid ""
 "In the left menu, navigate down to *Display -> Window*. On the right, set "
 "the *Width* to ``720`` and the *Height* to ``540``."
 msgstr ""
+"在左側功能表中，找到 *Display -> Window*（顯示 -> 視窗）。在右側將 *Width*"
+"（寬度）設為 ``720``、*Height*（高度）設為 ``540``。"
 
 msgid "|image2|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "\\ |image2|"
+msgstr "image2"
 
-#, fuzzy
 msgid "Creating the spawn path"
 msgstr "建立動畫"
 
@@ -75,12 +76,16 @@ msgid ""
 "a :ref:`PathFollow3D <class_PathFollow3D>` node to sample random locations "
 "on it."
 msgstr ""
+"與 2D 遊戲教學中所做的一樣，你要設計一條路徑，使用 :ref:`PathFollow3D "
+"<class_PathFollow3D>` 節點在路徑上隨機取位置。"
 
 msgid ""
 "In 3D though, it's a bit more complicated to draw the path. We want it to be "
 "around the game view so monsters appear right outside the screen. But if we "
 "draw a path, we won't see it from the camera preview."
 msgstr ""
+"不過在 3D 中，路徑繪製起來會有一點複雜。我們希望它是圍繞著遊戲視圖的，這樣怪"
+"物就會在螢幕外出現。但繪製的路徑也同樣不會在相機預覽中出現。"
 
 msgid ""
 "To find the view's limits, we can use some placeholder meshes. Your viewport "
@@ -89,15 +94,16 @@ msgid ""
 "split the view into two. Select the :ref:`Camera3D <class_Camera3D>` node "
 "and click the *Preview* checkbox in the bottom viewport."
 msgstr ""
+"我們可以用一些占位網格來確定視圖的界限。你的視口應該還是分成兩個部分的，底部"
+"是相機預覽。如果不是的話，請按 :kbd:`Ctrl + 2`（macOS 上則是 :kbd:`Cmd + 2`）"
+"將視圖一分為二。選中 *Camera3D* 節點，然後點擊底部視口的*預覽*核取方塊。"
 
 msgid "|image3|"
 msgstr "\\ |image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "\\ |image3|"
+msgstr "image3"
 
-#, fuzzy
 msgid "Adding placeholder cylinders"
 msgstr "預留位置型"
 
@@ -107,72 +113,76 @@ msgid ""
 "group the cylinders. Select ``Cylinders`` and add a child node :ref:"
 "`MeshInstance3D <class_MeshInstance3D>`"
 msgstr ""
+"讓我們來新增一些占位網格。為 ``Main`` 節點新建一個 :ref:`Node3D "
+"<class_Node3D>` 節點作為子項，命名為 ``Cylinders``。我們會用它將圓柱體進行群"
+"組。新增一個 :ref:`MeshInstance3D <class_MeshInstance3D>` 節點作為其子項"
 
 msgid "|image4|"
 msgstr "\\ |image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "\\ |image4|"
+msgstr "image4"
 
 msgid "In the *Inspector*, assign a *CylinderMesh* to the *Mesh* property."
 msgstr ""
+"在*屬性面板*中，為 *Mesh*（網格）屬性賦值 *CylinderMesh*（圓柱體網格）。"
 
 msgid "|image5|"
 msgstr "\\ |image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "\\ |image5|"
+msgstr "image5"
 
 msgid ""
 "Set the top viewport to the top orthogonal view using the menu in the "
 "viewport's top-left corner. Alternatively, you can press the keypad's 7 key."
 msgstr ""
+"使用視口左上角的功能表，將上面的視口設為正交頂視圖。或者你也可以按小鍵盤的 "
+"7。"
 
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "\\ |image1|"
+msgstr "image6"
 
 msgid ""
 "The grid may be distracting. You can toggle it by going to the *View* menu "
 "in the toolbar and clicking *View Grid*."
 msgstr ""
+"地面柵格可能有一點分散注意力。你可以在工具列的*視圖*功能表中點擊*查看柵格*進"
+"行開關。"
 
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "\\ |image1|"
+msgstr "image7"
 
 msgid ""
 "You now want to move the cylinder along the ground plane, looking at the "
 "camera preview in the bottom viewport. I recommend using grid snap to do so. "
 "You can toggle it by clicking the magnet icon in the toolbar or pressing Y."
 msgstr ""
+"你現在要沿著地平面移動圓柱體，看底部視口的相機預覽。我推薦使用網格捕捉來做這"
+"件事。你可以通過點擊工具列上的磁鐵圖示或按 Y 鍵來切換。"
 
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "\\ |image1|"
+msgstr "image8"
 
 msgid ""
 "Move the cylinder so it's right outside the camera's view in the top-left "
 "corner."
-msgstr ""
+msgstr "將圓柱體移到相機視圖的左上角，使其正好在視野之外。"
 
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "\\ |image1|"
+msgstr "image9"
 
 msgid ""
 "We're going to create copies of the mesh and place them around the game "
@@ -181,141 +191,145 @@ msgid ""
 "*Duplicate*. Move the copy down along the blue Z axis until it's right "
 "outside the camera's preview."
 msgstr ""
+"我們將建立網格的副本，並將它們放置在遊戲區域周圍。按 :kbd:`Ctrl + D`（在 "
+"macOS 上則為 :kbd:`Cmd + D`）來複製節點。你也可以在*場景*面板中右擊節點，選擇"
+"*製作副本*。沿著藍色 Z 軸向下移動副本，直到它正好在相機的預覽範圍之外。"
 
 msgid ""
 "Select both cylinders by pressing the :kbd:`Shift` key and clicking on the "
 "unselected one and duplicate them."
 msgstr ""
+"按住 :kbd:`Shift` 鍵選擇兩個圓柱體，並點擊未選擇的那個圓柱體，然後複製它們。"
 
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "\\ |image1|"
+msgstr "image10"
 
 msgid "Move them to the right by dragging the red X axis."
-msgstr ""
+msgstr "拖拽紅色的 X 軸，將它們移動到右側。"
 
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "\\ |image1|"
+msgstr "image11"
 
 msgid ""
 "They're a bit hard to see in white, aren't they? Let's make them stand out "
 "by giving them a new material."
-msgstr ""
+msgstr "白色的有點難以看清是吧？讓我們給它們一個全新的材質，讓它們凸顯出來。"
 
 msgid ""
 "In 3D, materials define a surface's visual properties like its color, how it "
 "reflects light, and more. We can use them to change the color of a mesh."
 msgstr ""
+"在 3D 中，材質可以定義表面的外觀屬性，比如顏色、如何反射光照等。我們可以用材"
+"質來修改網格的顏色。"
 
 msgid ""
 "We can update all four cylinders at once. Select all the mesh instances in "
 "the *Scene* dock. To do so, you can click on the first one and Shift click "
 "on the last one."
 msgstr ""
+"我們可以同時更新所有四個圓柱體。在*場景*面板中選中所有網格實例。要實作全選，"
+"可以先點擊第一個，然後按住 Shift 點擊最後一個。"
 
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "\\ |image1|"
+msgstr "image12"
 
 msgid ""
 "In the *Inspector*, expand the *Material* section and assign a :ref:"
 "`StandardMaterial3D <class_StandardMaterial3D>` to slot *0*."
 msgstr ""
+"在*屬性面板*中，展開 *Material*（材質）部分，為 *0* 號插槽分配一個 "
+"*SpatialMaterial3D*。"
 
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "\\ |image1|"
+msgstr "image13"
 
 msgid ""
 "Click the sphere icon to open the material resource. You get a preview of "
 "the material and a long list of sections filled with properties. You can use "
 "these to create all sorts of surfaces, from metal to rock or water."
 msgstr ""
+"點擊球體圖示來打開材質資源。你會看到材質的預覽和一長串充滿屬性的部分。你可以"
+"用這些來建立各種表面，從金屬到岩石或水。"
 
 msgid "Expand the *Albedo* section."
-msgstr ""
+msgstr "展開 *Albedo*（反照率）部分。"
 
 msgid ""
 "Set the color to something that contrasts with the background, like a bright "
 "orange."
-msgstr ""
+msgstr "將顏色設為與背景色存在對比的顏色，比如亮橙色。"
 
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "\\ |image1|"
+msgstr "image14"
 
 msgid ""
 "We can now use the cylinders as guides. Fold them in the *Scene* dock by "
 "clicking the grey arrow next to them. Moving forward, you can also toggle "
 "their visibility by clicking the eye icon next to *Cylinders*."
 msgstr ""
+"我們現在可以使用圓柱體作為參考。點擊它們旁邊的灰箭頭，將它們折疊在*場景*面板"
+"中。你也可以通過點擊 *Cylinders* 旁邊的眼睛圖示來切換它們的可見性。"
 
-#, fuzzy
 msgid "|image15|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image15"
-msgstr "\\ |image1|"
+msgstr "image15"
 
 msgid ""
 "Add a child node :ref:`Path3D <class_Path3D>` to ``Main`` node. In the "
 "toolbar, four icons appear. Click the *Add Point* tool, the icon with the "
 "green \"+\" sign."
 msgstr ""
+"新增一個 :ref:`Path3D <class_Path3D>` 節點作為 ``Main`` 的子節點。在工具列中"
+"會出現四個圖示。點擊*新增點*工具，即帶有綠色“+”號的圖示。"
 
-#, fuzzy
 msgid "|image16|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image16"
-msgstr "\\ |image1|"
+msgstr "image16"
 
 msgid "You can hover any icon to see a tooltip describing the tool."
-msgstr ""
+msgstr "滑鼠懸停在任意圖示上，就可以看到描述該工具的工具提示。"
 
 msgid ""
 "Click in the center of each cylinder to create a point. Then, click the "
 "*Close Curve* icon in the toolbar to close the path. If any point is a bit "
 "off, you can click and drag on it to reposition it."
 msgstr ""
+"按一下每個圓柱體的中心以建立一個點。然後，按一下工具列中的*閉合曲線*圖示以關"
+"閉路徑。如果有任何一點偏離，您可以按一下並拖動它以重新定位它。"
 
-#, fuzzy
 msgid "|image17|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image17"
-msgstr "\\ |image1|"
+msgstr "image17"
 
-#, fuzzy
 msgid "Your path should look like this."
 msgstr "現在場景看起來會這樣："
 
-#, fuzzy
 msgid "|image18|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image18"
-msgstr "\\ |image1|"
+msgstr "image18"
 
 msgid ""
 "To sample random positions on it, we need a :ref:`PathFollow3D "
@@ -324,23 +338,23 @@ msgid ""
 "``SpawnLocation``, respectively. It's more descriptive of what we'll use "
 "them for."
 msgstr ""
+"要對它的隨機位置進行取樣，我們需要一個 :ref:`PathFollow3D "
+"<class_PathFollow3D>` 節點。新增 :ref:`PathFollow3D <class_PathFollow3D>` 作"
+"為 ``Path3D`` 的子項。將兩個節點分別重命名為 ``SpawnPath`` 和 "
+"``SpawnLocation``。 這兩個名字能夠更明確地說明用途。"
 
-#, fuzzy
 msgid "|image19|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image19"
-msgstr "\\ |image1|"
+msgstr "image19"
 
 msgid "With that, we're ready to code the spawn mechanism."
-msgstr ""
+msgstr "這樣，我們就可以著手編寫刷怪機制了。"
 
-#, fuzzy
 msgid "Spawning monsters randomly"
 msgstr "產生怪物"
 
-#, fuzzy
 msgid "Right-click on the ``Main`` node and attach a new script to it."
 msgstr "右鍵點擊 Panel 節點，然後在右鍵選單中選擇 [附加腳本]："
 
@@ -348,6 +362,8 @@ msgid ""
 "We first export a variable to the *Inspector* so that we can assign ``mob."
 "tscn`` or any other monster to it."
 msgstr ""
+"我們首先將一個變數匯出到*屬性面板*中，這樣我們就可以把 ``mob.tscn`` 或者其他"
+"任何怪物賦值給它。"
 
 msgid ""
 "We want to spawn mobs at regular time intervals. To do this, we need to go "
@@ -355,46 +371,45 @@ msgid ""
 "the ``mob.tscn`` file to the ``mob_scene`` property above (otherwise it's "
 "null!)"
 msgstr ""
+"我們希望以固定的時間間隔生成生物。為此，我們需要返回場景中並新增計時器。但"
+"是，在此之前，我們需要將 ``mob.tscn`` 檔分配給 ``mob_scene`` 屬性"
 
 msgid ""
 "Head back to the 3D screen and select the ``Main`` node. Drag ``mob.tscn`` "
 "from the *FileSystem* dock to the *Mob Scene* slot in the *Inspector*."
 msgstr ""
+"回到 3D 螢幕，選中 ``Main`` 節點。將 ``mob.tscn`` 從*檔案系統*面板拖到*屬性面"
+"板*的 *Mob Scene* 槽中。"
 
-#, fuzzy
 msgid "|image20|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image20"
-msgstr "\\ |image2|"
+msgstr "image20"
 
-#, fuzzy
 msgid ""
 "Add a new :ref:`Timer <class_Timer>` node as a child of ``Main``. Name it "
 "``MobTimer``."
 msgstr ":ref:`Timer <class_Timer>` ，命名為 ``MessageTimer`` 。"
 
-#, fuzzy
 msgid "|image21|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image21"
-msgstr "\\ |image2|"
+msgstr "image21"
 
 msgid ""
 "In the *Inspector*, set its *Wait Time* to ``0.5`` seconds and turn on "
 "*Autostart* so it automatically starts when we run the game."
 msgstr ""
+"在*屬性面板*中，將其 *Wait Time*（等待時間）設為 ``0.5`` 秒，然後打開 "
+"*Autostart*（自動開始），這樣我們運作遊戲它就會自動開始。"
 
-#, fuzzy
 msgid "|image22|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image22"
-msgstr "\\ |image2|"
+msgstr "image22"
 
 msgid ""
 "Timers emit a ``timeout`` signal every time they reach the end of their "
@@ -402,56 +417,53 @@ msgid ""
 "a cycle. We can connect to this signal from the *Main* node to spawn "
 "monsters every ``0.5`` seconds."
 msgstr ""
+"計時器在每次到達 *Wait Time* 時都會發出 ``timeout`` 訊號。計時器預設會自動重"
+"啟，迴圈觸發訊號。我們可以將 *Main* 節點連接到這個訊號，每 ``0.5`` 秒生成一隻"
+"怪物。"
 
 msgid ""
 "With the *MobTimer* still selected, head to the *Node* dock on the right, "
 "and double-click the ``timeout`` signal."
-msgstr ""
+msgstr "保持選中 *MobTimer*，在右側的*節點*面板中按兩下 ``timeout`` 訊號。"
 
-#, fuzzy
 msgid "|image23|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image23"
-msgstr "\\ |image2|"
+msgstr "image23"
 
-#, fuzzy
 msgid "Connect it to the *Main* node."
 msgstr "將 HUD 場景連接至 Main 場景"
 
-#, fuzzy
 msgid "|image24|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image24"
-msgstr "\\ |image2|"
+msgstr "image24"
 
 msgid ""
 "This will take you back to the script, with a new empty "
 "``_on_mob_timer_timeout()`` function."
 msgstr ""
+"這樣你就會被帶回腳本，其中新建了一個空的 ``_on_mob_timer_timeout()`` 函式。"
 
 msgid "Let's code the mob spawning logic. We're going to:"
-msgstr ""
+msgstr "讓我們來編寫刷怪的邏輯吧。我們要做的是："
 
-#, fuzzy
 msgid "Instantiate the mob scene."
 msgstr "實體化並建立新的房間。"
 
 msgid "Sample a random position on the spawn path."
-msgstr ""
+msgstr "在生成路徑上隨機選取一個位置。"
 
 msgid "Get the player's position."
-msgstr ""
+msgstr "獲取玩家的位置。"
 
 msgid ""
 "Call the mob's ``initialize()`` method, passing it the random position and "
 "the player's position."
-msgstr ""
+msgstr "呼叫小怪的 ``initialize()`` 方法，傳入隨機位置和玩家的位置。"
 
-#, fuzzy
 msgid "Add the mob as a child of the *Main* node."
 msgstr "將腳本附加到節點。"
 
@@ -462,27 +474,31 @@ msgid ""
 "camera's viewport, so any random value between 0 and 1 is a random position "
 "alongside the edges of the viewport!"
 msgstr ""
+"正如上面所示， ``randf ()`` 會生成一個介於 ``0`` 和 ``1`` 之間的隨機值，這個"
+"數值是 *PathFollow* 節點的 ``progress_ratio`` 屬性所期望的：0 代表路徑的開始"
+"點，1 代表路徑的終點。 我們之前設定的路徑是圍繞著相機視口的，因此任何 0 到 1 "
+"之間的隨機值都代表著沿著視口邊緣的隨機位置！"
 
 msgid "Here is the complete ``main.gd`` script so far, for reference."
-msgstr ""
+msgstr "這是目前完整的 ``main.gd`` 腳本，僅供參考。"
 
 msgid ""
 "You can test the scene by pressing :kbd:`F6`. You should see the monsters "
 "spawn and move in a straight line."
 msgstr ""
+"按 :kbd:`F6` 即可測試該場景。你應該會看到有怪物刷了出來，然後會進行直線運動。"
 
-#, fuzzy
 msgid "|image25|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image25"
-msgstr "\\ |image2|"
+msgstr "image25"
 
 msgid ""
 "For now, they bump and slide against one another when their paths cross. "
 "We'll address this in the next part."
 msgstr ""
+"目前，它們會在路線的交叉點撞到一起滑來滑去。我們會在下一部分解決這個問題。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

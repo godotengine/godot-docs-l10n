@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,7 +103,6 @@ msgstr ""
 "Anexar um :ref:`Script <class_Script>` ao seu objeto estende os métodos, "
 "propriedades e sinais disponíveis da ``ClassDB``."
 
-#, fuzzy
 msgid ""
 "Even scripts that don't use the ``extends`` keyword implicitly inherit from "
 "the engine's base :ref:`RefCounted <class_RefCounted>` class. As a result, "
@@ -112,9 +111,9 @@ msgid ""
 "<class_Node>`."
 msgstr ""
 "Mesmo os scripts que não usam a palavra-chave ``extends`` herdam "
-"implicitamente da classe :ref:`Reference <class_Reference>` da base do "
+"implicitamente da classe :ref:`RefCounted <class_RefCounted>` da base do "
 "motor. Como resultado, você pode instanciar scripts sem a palavra-chave "
-"``extends`` do código. Uma vez que eles estendem ``Reference``, você não "
+"``extends`` do código. Uma vez que eles estendem ``RefCounted``, você não "
 "pode anexá-los a um :ref:`Node <class_Node>`."
 
 msgid "Scenes"
@@ -144,21 +143,17 @@ msgstr ""
 msgid "The content of a scene helps to define:"
 msgstr "O conteúdo de uma cena ajuda a definir:"
 
-#, fuzzy
 msgid "What nodes are available to the script."
-msgstr "Quais nós estão disponíveis para o script"
+msgstr "Quais nós estão disponíveis para o script."
 
-#, fuzzy
 msgid "How they are organized."
-msgstr "Como eles são organizados"
+msgstr "Como eles são organizados."
 
-#, fuzzy
 msgid "How they are initialized."
-msgstr "Como eles são inicializados"
+msgstr "Como eles são inicializados."
 
-#, fuzzy
 msgid "What signal connections they have with each other."
-msgstr "Que conexões de sinal eles têm uns com os outros"
+msgstr "Que conexões de sinal eles têm uns com os outros."
 
 msgid ""
 "Why is any of this important to scene organization? Because instances of "

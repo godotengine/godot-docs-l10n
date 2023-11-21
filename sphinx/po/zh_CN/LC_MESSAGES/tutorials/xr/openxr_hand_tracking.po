@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "The OpenXR hand tracking"
-msgstr "基于节点的手势跟踪"
+msgstr "OpenXR 手势跟踪"
 
 msgid ""
 "Hand tracking is the process by which the position and orientation of the "
@@ -43,7 +42,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Three, inferred hand tracking. This has been the defacto approach since the "
+"Three, inferred hand tracking. This has been the de facto approach since the "
 "early days of VR. As we know the player is holding a controller and we know "
 "the position of this controller, we can infer where to render the players "
 "hand. Fingers can be positioned based on the controls the player is "
@@ -158,213 +157,161 @@ msgstr ""
 msgid "Right hand"
 msgstr "光节点"
 
-#, fuzzy
 msgid "Palm_L"
-msgstr "Palm"
+msgstr "Palm_L"
 
-#, fuzzy
 msgid "Palm_R"
-msgstr "Palm"
+msgstr "Palm_R"
 
-#, fuzzy
 msgid "Wrist_L"
-msgstr "Wrist"
+msgstr "Wrist_L"
 
-#, fuzzy
 msgid "Wrist_R"
-msgstr "Wrist"
+msgstr "Wrist_R"
 
-#, fuzzy
 msgid "Thumb_Metacarpal_L"
-msgstr "Thumb_Metacarpal"
+msgstr "Thumb_Metacarpal_L"
 
-#, fuzzy
 msgid "Thumb_Metacarpal_R"
-msgstr "Thumb_Metacarpal"
+msgstr "Thumb_Metacarpal_R"
 
-#, fuzzy
 msgid "Thumb_Proximal_L"
-msgstr "Thumb_Proximal"
+msgstr "Thumb_Proximal_L"
 
-#, fuzzy
 msgid "Thumb_Proximal_R"
-msgstr "Thumb_Proximal"
+msgstr "Thumb_Proximal_R"
 
-#, fuzzy
 msgid "Thumb_Distal_L"
-msgstr "Thumb_Distal"
+msgstr "Thumb_Distal_L"
 
-#, fuzzy
 msgid "Thumb_Distal_R"
-msgstr "Thumb_Distal"
+msgstr "Thumb_Distal_R"
 
-#, fuzzy
 msgid "Thumb_Tip_L"
-msgstr "Thumb_Tip"
+msgstr "Thumb_Tip_L"
 
-#, fuzzy
 msgid "Thumb_Tip_R"
-msgstr "Thumb_Tip"
+msgstr "Thumb_Tip_R"
 
-#, fuzzy
 msgid "Index_Metacarpal_L"
-msgstr "Index_Metacarpal"
+msgstr "Index_Metacarpal_L"
 
-#, fuzzy
 msgid "Index_Metacarpal_R"
-msgstr "Index_Metacarpal"
+msgstr "Index_Metacarpal_R"
 
-#, fuzzy
 msgid "Index_Proximal_L"
-msgstr "Index_Proximal"
+msgstr "Index_Proximal_L"
 
-#, fuzzy
 msgid "Index_Proximal_R"
-msgstr "Index_Proximal"
+msgstr "Index_Proximal_R"
 
-#, fuzzy
 msgid "Index_Intermediate_L"
-msgstr "Index_Intermediate"
+msgstr "Index_Intermediate_L"
 
-#, fuzzy
 msgid "Index_Intermediate_R"
-msgstr "Index_Intermediate"
+msgstr "Index_Intermediate_R"
 
-#, fuzzy
 msgid "Index_Distal_L"
-msgstr "Index_Distal"
+msgstr "Index_Distal_L"
 
-#, fuzzy
 msgid "Index_Distal_R"
-msgstr "Index_Distal"
+msgstr "Index_Distal_R"
 
-#, fuzzy
 msgid "Index_Tip_L"
-msgstr "Index_Tip"
+msgstr "Index_Tip_L"
 
-#, fuzzy
 msgid "Index_Tip_R"
-msgstr "Index_Tip"
+msgstr "Index_Tip_R"
 
-#, fuzzy
 msgid "Middle_Metacarpal_L"
-msgstr "Middle_Metacarpal"
+msgstr "Middle_Metacarpal_L"
 
-#, fuzzy
 msgid "Middle_Metacarpal_R"
-msgstr "Middle_Metacarpal"
+msgstr "Middle_Metacarpal_R"
 
-#, fuzzy
 msgid "Middle_Proximal_L"
-msgstr "Middle_Proximal"
+msgstr "Middle_Proximal_L"
 
-#, fuzzy
 msgid "Middle_Proximal_R"
-msgstr "Middle_Proximal"
+msgstr "Middle_Proximal_R"
 
-#, fuzzy
 msgid "Middle_Intermediate_L"
-msgstr "Middle_Intermediate"
+msgstr "Middle_Intermediate_L"
 
-#, fuzzy
 msgid "Middle_Intermediate_R"
-msgstr "Middle_Intermediate"
+msgstr "Middle_Intermediate_R"
 
-#, fuzzy
 msgid "Middle_Distal_L"
-msgstr "Middle_Distal"
+msgstr "Middle_Distal_L"
 
-#, fuzzy
 msgid "Middle_Distal_R"
-msgstr "Middle_Distal"
+msgstr "Middle_Distal_R"
 
-#, fuzzy
 msgid "Middle_Tip_L"
-msgstr "Middle_Tip"
+msgstr "Middle_Tip_L"
 
-#, fuzzy
 msgid "Middle_Tip_R"
-msgstr "Middle_Tip"
+msgstr "Middle_Tip_R"
 
-#, fuzzy
 msgid "Ring_Metacarpal_L"
-msgstr "Ring_Metacarpal"
+msgstr "Ring_Metacarpal_L"
 
-#, fuzzy
 msgid "Ring_Metacarpal_R"
-msgstr "Ring_Metacarpal"
+msgstr "Ring_Metacarpal_R"
 
-#, fuzzy
 msgid "Ring_Proximal_L"
-msgstr "Ring_Proximal"
+msgstr "Ring_Proximal_L"
 
-#, fuzzy
 msgid "Ring_Proximal_R"
-msgstr "Ring_Proximal"
+msgstr "Ring_Proximal_R"
 
-#, fuzzy
 msgid "Ring_Intermediate_L"
-msgstr "Ring_Intermediate"
+msgstr "Ring_Intermediate_L"
 
-#, fuzzy
 msgid "Ring_Intermediate_R"
-msgstr "Ring_Intermediate"
+msgstr "Ring_Intermediate_R"
 
-#, fuzzy
 msgid "Ring_Distal_L"
-msgstr "Ring_Distal"
+msgstr "Ring_Distal_L"
 
-#, fuzzy
 msgid "Ring_Distal_R"
-msgstr "Ring_Distal"
+msgstr "Ring_Distal_R"
 
-#, fuzzy
 msgid "Ring_Tip_L"
-msgstr "Ring_Tip"
+msgstr "Ring_Tip_L"
 
-#, fuzzy
 msgid "Ring_Tip_R"
-msgstr "Ring_Tip"
+msgstr "Ring_Tip_R"
 
-#, fuzzy
 msgid "Little_Metacarpal_L"
-msgstr "Little_Metacarpal"
+msgstr "Little_Metacarpal_L"
 
-#, fuzzy
 msgid "Little_Metacarpal_R"
-msgstr "Little_Metacarpal"
+msgstr "Little_Metacarpal_R"
 
-#, fuzzy
 msgid "Little_Proximal_L"
-msgstr "Little_Proximal"
+msgstr "Little_Proximal_L"
 
-#, fuzzy
 msgid "Little_Proximal_R"
-msgstr "Little_Proximal"
+msgstr "Little_Proximal_R"
 
-#, fuzzy
 msgid "Little_Intermediate_L"
-msgstr "Little_Intermediate"
+msgstr "Little_Intermediate_L"
 
-#, fuzzy
 msgid "Little_Intermediate_R"
-msgstr "Little_Intermediate"
+msgstr "Little_Intermediate_R"
 
-#, fuzzy
 msgid "Little_Distal_L"
-msgstr "Little_Distal"
+msgstr "Little_Distal_L"
 
-#, fuzzy
 msgid "Little_Distal_R"
-msgstr "Little_Distal"
+msgstr "Little_Distal_R"
 
-#, fuzzy
 msgid "Little_Tip_L"
-msgstr "Little_Tip"
+msgstr "Little_Tip_L"
 
-#, fuzzy
 msgid "Little_Tip_R"
-msgstr "Little_Tip"
+msgstr "Little_Tip_R"
 
 msgid ""
 "The skeleton data returned from different XR runtimes are often not "
@@ -419,47 +366,46 @@ msgid "HTC trackers"
 msgstr ""
 
 msgid "/user/vive_tracker_htcx/role/handheld_object"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/handheld_object"
 
 msgid "/user/vive_tracker_htcx/role/left_foot"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_foot"
 
 msgid "/user/vive_tracker_htcx/role/right_foot"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_foot"
 
 msgid "/user/vive_tracker_htcx/role/left_shoulder"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_shoulder"
 
 msgid "/user/vive_tracker_htcx/role/right_shoulder"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_shoulder"
 
 msgid "/user/vive_tracker_htcx/role/left_elbow"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_elbow"
 
 msgid "/user/vive_tracker_htcx/role/right_elbow"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_elbow"
 
 msgid "/user/vive_tracker_htcx/role/left_knee"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_knee"
 
 msgid "/user/vive_tracker_htcx/role/right_knee"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_knee"
 
 msgid "/user/vive_tracker_htcx/role/waist"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/waist"
 
 msgid "/user/vive_tracker_htcx/role/chest"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/chest"
 
 msgid "/user/vive_tracker_htcx/role/camera"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/camera"
 
 msgid "/user/vive_tracker_htcx/role/keyboard"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/keyboard"
 
-#, fuzzy
 msgid "Some final words"
-msgstr "信号关键字"
+msgstr "最后的话"
 
 msgid ""
 "Hand tracking is an area that is still under active development and we are "

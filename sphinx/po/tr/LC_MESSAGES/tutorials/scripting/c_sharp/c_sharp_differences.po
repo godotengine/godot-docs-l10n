@@ -1,0 +1,2048 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "C# API differences to GDScript"
+msgstr ""
+
+msgid "This is a (incomplete) list of API differences between C# and GDScript."
+msgstr ""
+
+msgid "General differences"
+msgstr ""
+
+msgid ""
+"As explained in the :ref:`doc_c_sharp`, C# generally uses ``PascalCase`` "
+"instead of the ``snake_case`` used in GDScript and C++."
+msgstr ""
+
+msgid "Global scope"
+msgstr ""
+
+msgid ""
+"Global functions and some constants had to be moved to classes, since C# "
+"does not allow declaring them in namespaces. Most global constants were "
+"moved to their own enums."
+msgstr ""
+
+msgid "Constants"
+msgstr "Sabitler"
+
+msgid ""
+"In C#, only primitive types can be constant. For example, the ``TAU`` "
+"constant is replaced by the ``Mathf.Tau`` constant, but the ``Vector2."
+"RIGHT`` constant is replaced by the ``Vector2.Right`` read-only property. "
+"This behaves similarly to a constant, but can't be used in some contexts "
+"like ``switch`` statements."
+msgstr ""
+
+msgid ""
+"Global enum constants were moved to their own enums. For example, ``ERR_*`` "
+"constants were moved to the ``Error`` enum."
+msgstr ""
+
+msgid "Special cases:"
+msgstr ""
+
+msgid "GDScript"
+msgstr "GDScript"
+
+msgid "C#"
+msgstr "C#"
+
+msgid "``TYPE_*``"
+msgstr ""
+
+msgid "``Variant.Type`` enum"
+msgstr ""
+
+msgid "``OP_*``"
+msgstr ""
+
+msgid "``Variant.Operator`` enum"
+msgstr ""
+
+msgid "Math functions"
+msgstr ""
+
+msgid ""
+"Math global functions, like ``abs``, ``acos``, ``asin``, ``atan`` and "
+"``atan2``, are located under ``Mathf`` as ``Abs``, ``Acos``, ``Asin``, "
+"``Atan`` and ``Atan2``. The ``PI`` constant can be found as ``Mathf.Pi``."
+msgstr ""
+
+msgid ""
+"C# also provides static `System.Math`_ and `System.MathF`_ classes that may "
+"contain other useful mathematical operations."
+msgstr ""
+
+msgid "Random functions"
+msgstr ""
+
+msgid ""
+"Random global functions, like ``rand_range`` and ``rand_seed``, are located "
+"under ``GD``. Example: ``GD.RandRange`` and ``GD.RandSeed``."
+msgstr ""
+
+msgid ""
+"Consider using `System.Random`_ or, if you need cryptographically strong "
+"randomness, `System.Security.Cryptography.RandomNumberGenerator`_."
+msgstr ""
+
+msgid "Other functions"
+msgstr ""
+
+msgid ""
+"Many other global functions like ``print`` and ``var_to_str`` are located "
+"under ``GD``. Example: ``GD.Print`` and ``GD.VarToStr``."
+msgstr ""
+
+msgid "Exceptions:"
+msgstr ""
+
+msgid "``weakref(obj)``"
+msgstr ""
+
+msgid "``GodotObject.WeakRef(obj)``"
+msgstr ""
+
+msgid "``instance_from_id(id)``"
+msgstr ""
+
+msgid "``GodotObject.InstanceFromId(id)``"
+msgstr ""
+
+msgid "``is_instance_id_valid(id)``"
+msgstr ""
+
+msgid "``GodotObject.IsInstanceIdValid(id)``"
+msgstr ""
+
+msgid "``is_instance_valid(obj)``"
+msgstr ""
+
+msgid "``GodotObject.IsInstanceValid(obj)``"
+msgstr ""
+
+msgid "Tips"
+msgstr ""
+
+msgid ""
+"Sometimes it can be useful to use the ``using static`` directive. This "
+"directive allows to access the members and nested types of a class without "
+"specifying the class name."
+msgstr ""
+
+msgid "Example:"
+msgstr "Örnek:"
+
+msgid "Full list of equivalences"
+msgstr ""
+
+msgid "List of Godot's global scope functions and their equivalent in C#:"
+msgstr ""
+
+#, fuzzy
+msgid "abs"
+msgstr "Etiketler."
+
+#, fuzzy
+msgid "Mathf.Abs"
+msgstr "Matematik"
+
+msgid "absf"
+msgstr ""
+
+msgid "absi"
+msgstr ""
+
+msgid "acos"
+msgstr ""
+
+msgid "Mathf.Acos"
+msgstr ""
+
+msgid "acosh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Acosh"
+msgstr "Matematik"
+
+#, fuzzy
+msgid "angle_difference"
+msgstr "Gölgelendirme Başvurusu:"
+
+msgid "Mathf.AngleDifference"
+msgstr ""
+
+msgid "asin"
+msgstr ""
+
+msgid "Mathf.Asin"
+msgstr ""
+
+msgid "asinh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Asinh"
+msgstr "Matematik"
+
+msgid "atan"
+msgstr ""
+
+msgid "Mathf.Atan"
+msgstr ""
+
+msgid "atan2"
+msgstr ""
+
+msgid "Mathf.Atan2"
+msgstr ""
+
+msgid "atanh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Atanh"
+msgstr "Matematik"
+
+msgid "bezier_derivative"
+msgstr ""
+
+msgid "Mathf.BezierDerivative"
+msgstr ""
+
+#, fuzzy
+msgid "bezier_interpolate"
+msgstr "Doğrusal ara değerle"
+
+#, fuzzy
+msgid "Mathf.BezierInterpolate"
+msgstr "Doğrusal ara değerle"
+
+msgid "bytes_to_var"
+msgstr ""
+
+msgid "GD.BytesToVar"
+msgstr ""
+
+msgid "bytes_to_var_with_objects"
+msgstr ""
+
+msgid "GD.BytesToVarWithObjects"
+msgstr ""
+
+msgid "ceil"
+msgstr ""
+
+msgid "Mathf.Ceil"
+msgstr ""
+
+msgid "ceilf"
+msgstr ""
+
+msgid "ceili"
+msgstr ""
+
+msgid "Mathf.CeilToInt"
+msgstr ""
+
+msgid "clamp"
+msgstr ""
+
+msgid "Mathf.Clamp"
+msgstr ""
+
+msgid "clampf"
+msgstr ""
+
+#, fuzzy
+msgid "clampi"
+msgstr "Yavaşlatma"
+
+#, fuzzy
+msgid "cos"
+msgstr "cs"
+
+#, fuzzy
+msgid "Mathf.Cos"
+msgstr "Matematik"
+
+msgid "cosh"
+msgstr ""
+
+msgid "Mathf.Cosh"
+msgstr ""
+
+#, fuzzy
+msgid "cubic_interpolate"
+msgstr "Doğrusal ara değerle"
+
+#, fuzzy
+msgid "Mathf.CubicInterpolate"
+msgstr "Doğrusal ara değerle"
+
+#, fuzzy
+msgid "cubic_interpolate_angle"
+msgstr "Doğrusal ara değerle"
+
+msgid "Mathf.CubicInterpolateAngle"
+msgstr ""
+
+msgid "cubic_interpolate_angle_in_time"
+msgstr ""
+
+msgid "Mathf.CubicInterpolateInTime"
+msgstr ""
+
+msgid "cubic_interpolate_in_time"
+msgstr ""
+
+msgid "Mathf.CubicInterpolateAngleInTime"
+msgstr ""
+
+msgid "db_to_linear"
+msgstr ""
+
+msgid "Mathf.DbToLinear"
+msgstr ""
+
+msgid "deg_to_rad"
+msgstr ""
+
+msgid "Mathf.DegToRad"
+msgstr ""
+
+msgid "ease"
+msgstr ""
+
+msgid "Mathf.Ease"
+msgstr ""
+
+msgid "error_string"
+msgstr ""
+
+#, fuzzy
+msgid "Error.ToString"
+msgstr "Dize"
+
+msgid "exp"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Exp"
+msgstr "Matematik"
+
+#, fuzzy
+msgid "floor"
+msgstr "Zemin"
+
+#, fuzzy
+msgid "Mathf.Floor"
+msgstr "Zemin"
+
+#, fuzzy
+msgid "floorf"
+msgstr "Zemin"
+
+#, fuzzy
+msgid "floori"
+msgstr "Zemin"
+
+msgid "Mathf.FloorToInt"
+msgstr ""
+
+msgid "fmod"
+msgstr ""
+
+#, fuzzy
+msgid "operator %"
+msgstr "İşleç"
+
+msgid "fposmod"
+msgstr ""
+
+msgid "Mathf.PosMod"
+msgstr ""
+
+msgid "hash"
+msgstr ""
+
+msgid "GD.Hash"
+msgstr ""
+
+msgid "instance_from_id"
+msgstr ""
+
+msgid "GodotObject.InstanceFromId"
+msgstr ""
+
+msgid "inverse_lerp"
+msgstr ""
+
+msgid "Mathf.InverseLerp"
+msgstr ""
+
+msgid "is_equal_approx"
+msgstr ""
+
+msgid "Mathf.IsEqualApprox"
+msgstr ""
+
+msgid "is_finite"
+msgstr ""
+
+msgid "Mathf.IsFinite or `float.IsFinite`_ or `double.IsFinite`_"
+msgstr ""
+
+msgid "is_inf"
+msgstr ""
+
+msgid "Mathf.IsInf or `float.IsInfinity`_ or `double.IsInfinity`_"
+msgstr ""
+
+msgid "is_instance_id_valid"
+msgstr ""
+
+msgid "GodotObject.IsInstanceIdValid"
+msgstr ""
+
+msgid "is_instance_valid"
+msgstr ""
+
+msgid "GodotObject.IsInstanceValid"
+msgstr ""
+
+msgid "is_nan"
+msgstr ""
+
+msgid "Mathf.IsNaN or `float.IsNaN`_ or `double.IsNaN`_"
+msgstr ""
+
+msgid "is_same"
+msgstr ""
+
+msgid "operator == or `object.ReferenceEquals`_"
+msgstr ""
+
+msgid "is_zero_approx"
+msgstr ""
+
+msgid "Mathf.IsZeroApprox"
+msgstr ""
+
+msgid "lerp"
+msgstr ""
+
+msgid "Mathf.Lerp"
+msgstr ""
+
+msgid "lerp_angle"
+msgstr ""
+
+msgid "Mathf.LerpAngle"
+msgstr ""
+
+msgid "lerpf"
+msgstr ""
+
+msgid "linear_to_db"
+msgstr ""
+
+msgid "Mathf.LinearToDb"
+msgstr ""
+
+#, fuzzy
+msgid "log"
+msgstr "Sis"
+
+#, fuzzy
+msgid "Mathf.Log"
+msgstr "Matematik"
+
+msgid "max"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Max"
+msgstr "Matematik"
+
+msgid "maxf"
+msgstr ""
+
+msgid "maxi"
+msgstr ""
+
+msgid "min"
+msgstr "min"
+
+#, fuzzy
+msgid "Mathf.Min"
+msgstr "Matematik"
+
+msgid "minf"
+msgstr ""
+
+msgid "mini"
+msgstr ""
+
+msgid "move_toward"
+msgstr ""
+
+msgid "Mathf.MoveToward"
+msgstr ""
+
+msgid "nearest_po2"
+msgstr ""
+
+msgid "Mathf.NearestPo2"
+msgstr ""
+
+msgid "pingpong"
+msgstr ""
+
+msgid "Mathf.PingPong"
+msgstr ""
+
+msgid "posmod"
+msgstr ""
+
+msgid "pow"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Pow"
+msgstr "Matematik"
+
+msgid "print"
+msgstr ""
+
+msgid "GD.Print"
+msgstr ""
+
+msgid "print_rich"
+msgstr ""
+
+msgid "GD.PrintRich"
+msgstr ""
+
+msgid "print_verbose"
+msgstr ""
+
+msgid "Use OS.IsStdoutVerbose and GD.Print"
+msgstr ""
+
+msgid "printerr"
+msgstr ""
+
+msgid "GD.PrintErr"
+msgstr ""
+
+msgid "printraw"
+msgstr ""
+
+msgid "GD.PrintRaw"
+msgstr ""
+
+#, fuzzy
+msgid "prints"
+msgstr "Eklemler."
+
+msgid "GD.PrintS"
+msgstr ""
+
+msgid "printt"
+msgstr ""
+
+msgid "GD.PrintT"
+msgstr ""
+
+msgid "push_error"
+msgstr ""
+
+msgid "GD.PushError"
+msgstr ""
+
+msgid "push_warning"
+msgstr ""
+
+msgid "GD.PushWarning"
+msgstr ""
+
+msgid "rad_to_deg"
+msgstr ""
+
+msgid "Mathf.RadToDeg"
+msgstr ""
+
+msgid "rand_from_seed"
+msgstr ""
+
+msgid "GD.RandFromSeed"
+msgstr ""
+
+msgid "randf"
+msgstr ""
+
+msgid "GD.Randf"
+msgstr ""
+
+msgid "randf_range"
+msgstr ""
+
+msgid "GD.RandRange"
+msgstr ""
+
+msgid "randfn"
+msgstr ""
+
+msgid "GD.Randfn"
+msgstr ""
+
+msgid "randi"
+msgstr ""
+
+msgid "GD.Randi"
+msgstr ""
+
+msgid "randi_range"
+msgstr ""
+
+#, fuzzy
+msgid "randomize"
+msgstr "Rastgelelik"
+
+#, fuzzy
+msgid "GD.Randomize"
+msgstr "Rastgelelik"
+
+#, fuzzy
+msgid "remap"
+msgstr "Uyumharitası"
+
+msgid "Mathf.Remap"
+msgstr ""
+
+msgid "rid_allocate_id"
+msgstr ""
+
+msgid "N/A"
+msgstr ""
+
+msgid "rid_from_int64"
+msgstr ""
+
+msgid "rotate_toward"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.RotateToward"
+msgstr "Zemin"
+
+#, fuzzy
+msgid "round"
+msgstr "Arkaplan"
+
+msgid "Mathf.Round"
+msgstr ""
+
+#, fuzzy
+msgid "roundf"
+msgstr "Arkaplan"
+
+#, fuzzy
+msgid "roundi"
+msgstr "Arkaplan"
+
+msgid "Mathf.RoundToInt"
+msgstr ""
+
+msgid "seed"
+msgstr ""
+
+msgid "GD.Seed"
+msgstr ""
+
+msgid "sign"
+msgstr ""
+
+msgid "Mathf.Sign"
+msgstr ""
+
+msgid "signf"
+msgstr ""
+
+msgid "signi"
+msgstr ""
+
+#, fuzzy
+msgid "sin"
+msgstr "si"
+
+#, fuzzy
+msgid "Mathf.Sin"
+msgstr "Matematik"
+
+msgid "sinh"
+msgstr ""
+
+msgid "Mathf.Sinh"
+msgstr ""
+
+msgid "smoothstep"
+msgstr ""
+
+msgid "Mathf.SmoothStep"
+msgstr ""
+
+msgid "snapped"
+msgstr ""
+
+msgid "Mathf.Snapped"
+msgstr ""
+
+msgid "snappedf"
+msgstr ""
+
+msgid "snappedi"
+msgstr ""
+
+msgid "sqrt"
+msgstr ""
+
+msgid "Mathf.Sqrt"
+msgstr ""
+
+msgid "step_decimals"
+msgstr ""
+
+msgid "Mathf.StepDecimals"
+msgstr ""
+
+#, fuzzy
+msgid "str"
+msgstr "sr"
+
+#, fuzzy
+msgid "Use `$ string interpolation`_"
+msgstr "Vektör ara değerlemesi"
+
+msgid "str_to_var"
+msgstr ""
+
+msgid "GD.StrToVar"
+msgstr ""
+
+#, fuzzy
+msgid "tan"
+msgstr "ta"
+
+#, fuzzy
+msgid "Mathf.Tan"
+msgstr "Matematik"
+
+msgid "tanh"
+msgstr ""
+
+msgid "Mathf.Tanh"
+msgstr ""
+
+msgid "type_convert"
+msgstr ""
+
+msgid "Variant.As<T> or GD.Convert"
+msgstr ""
+
+msgid "type_string"
+msgstr ""
+
+#, fuzzy
+msgid "Variant.Type.ToString"
+msgstr "Alt-Çeşit"
+
+#, fuzzy
+msgid "typeof"
+msgstr "tip"
+
+msgid "Variant.VariantType"
+msgstr ""
+
+msgid "var_to_bytes"
+msgstr ""
+
+msgid "GD.VarToBytes"
+msgstr ""
+
+msgid "var_to_bytes_with_objects"
+msgstr ""
+
+msgid "GD.VarToBytesWithObjects"
+msgstr ""
+
+msgid "var_to_str"
+msgstr ""
+
+msgid "GD.VarToStr"
+msgstr ""
+
+#, fuzzy
+msgid "weakref"
+msgstr "İnce ayarlar"
+
+msgid "GodotObject.WeakRef"
+msgstr ""
+
+msgid "wrap"
+msgstr ""
+
+msgid "Mathf.Wrap"
+msgstr ""
+
+msgid "wrapf"
+msgstr ""
+
+msgid "wrapi"
+msgstr ""
+
+msgid "List of GDScript utility functions and their equivalent in C#:"
+msgstr ""
+
+msgid "assert"
+msgstr "assert"
+
+msgid "`System.Diagnostics.Debug.Assert`_"
+msgstr ""
+
+msgid "char"
+msgstr ""
+
+msgid "Use explicit conversion: ``(char)65``"
+msgstr ""
+
+msgid "convert"
+msgstr ""
+
+msgid "GD.Convert"
+msgstr ""
+
+msgid "dict_to_inst"
+msgstr ""
+
+msgid "get_stack"
+msgstr ""
+
+msgid "`System.Environment.StackTrace`_"
+msgstr ""
+
+msgid "inst_to_dict"
+msgstr ""
+
+#, fuzzy
+msgid "len"
+msgstr "en"
+
+#, fuzzy
+msgid "load"
+msgstr "Ön Yükle"
+
+msgid "GD.Load"
+msgstr ""
+
+msgid "preload"
+msgstr ""
+
+msgid "print_debug"
+msgstr ""
+
+msgid "print_stack"
+msgstr ""
+
+msgid "GD.Print(`System.Environment.StackTrace`_)"
+msgstr ""
+
+#, fuzzy
+msgid "range"
+msgstr "Değişiklikler"
+
+msgid "GD.Range or `System.Linq.Enumerable.Range`_"
+msgstr ""
+
+msgid "type_exists"
+msgstr ""
+
+msgid "ClassDB.ClassExists(type)"
+msgstr ""
+
+msgid ""
+"``preload``, as it works in GDScript, is not available in C#. Use ``GD."
+"Load`` or ``ResourceLoader.Load`` instead."
+msgstr ""
+
+msgid "``@export`` annotation"
+msgstr ""
+
+msgid ""
+"Use the ``[Export]`` attribute instead of the GDScript ``@export`` "
+"annotation. This attribute can also be provided with optional :ref:"
+"`PropertyHint<enum_@GlobalScope_PropertyHint>` and ``hintString`` "
+"parameters. Default values can be set by assigning a value."
+msgstr ""
+
+msgid "See also: :ref:`doc_c_sharp_exports`."
+msgstr ""
+
+msgid "``signal`` keyword"
+msgstr ""
+
+msgid ""
+"Use the ``[Signal]`` attribute to declare a signal instead of the GDScript "
+"``signal`` keyword. This attribute should be used on a `delegate`, whose "
+"name signature will be used to define the signal. The `delegate` must have "
+"the ``EventHandler`` suffix, an `event` will be generated in the class with "
+"the same name but without the suffix, use that event's name with "
+"``EmitSignal``."
+msgstr ""
+
+msgid "See also: :ref:`doc_c_sharp_signals`."
+msgstr ""
+
+msgid "`@onready` annotation"
+msgstr ""
+
+msgid ""
+"GDScript has the ability to defer the initialization of a member variable "
+"until the ready function is called with `@onready` (cf. :ref:"
+"`doc_gdscript_onready_annotation`). For example:"
+msgstr ""
+
+msgid ""
+"However C# does not have this ability. To achieve the same effect you need "
+"to do this."
+msgstr ""
+
+msgid "Singletons"
+msgstr "Tekil nesneler"
+
+msgid ""
+"Singletons are available as static classes rather than using the singleton "
+"pattern. This is to make code less verbose than it would be with an "
+"``Instance`` property."
+msgstr ""
+
+msgid ""
+"However, in some very rare cases this is not enough. For example, you may "
+"want to access a member from the base class ``GodotObject``, like "
+"``Connect``. For such use cases we provide a static property named "
+"``Singleton`` that returns the singleton instance. The type of this instance "
+"is ``GodotObject``."
+msgstr ""
+
+msgid "String"
+msgstr "Dize"
+
+msgid ""
+"Use ``System.String`` (``string``). Most of Godot's String methods have an "
+"equivalent in ``System.String`` or are provided by the ``StringExtensions`` "
+"class as extension methods."
+msgstr ""
+
+msgid ""
+"Strings are immutable in .NET, so all methods that manipulate a string don't "
+"modify the original string and return a newly created string with the "
+"modifications applied. To avoid creating multiple string allocations "
+"consider using a `StringBuilder`_."
+msgstr ""
+
+msgid "List of Godot's String methods and their equivalent in C#:"
+msgstr ""
+
+msgid "begins_with"
+msgstr ""
+
+msgid "`string.StartsWith`_"
+msgstr ""
+
+msgid "bigrams"
+msgstr ""
+
+msgid "StringExtensions.Bigrams"
+msgstr ""
+
+msgid "bin_to_int"
+msgstr ""
+
+msgid "StringExtensions.BinToInt"
+msgstr ""
+
+msgid "c_escape"
+msgstr ""
+
+msgid "StringExtensions.CEscape"
+msgstr ""
+
+msgid "c_unescape"
+msgstr ""
+
+msgid "StringExtensions.CUnescape"
+msgstr ""
+
+#, fuzzy
+msgid "capitalize"
+msgstr "İlk harfi büyük yap"
+
+msgid "StringExtensions.Capitalize"
+msgstr ""
+
+msgid "casecmp_to"
+msgstr ""
+
+msgid ""
+"StringExtensions.CasecmpTo or StringExtensions.CompareTo (Consider using "
+"`string.Equals`_ or `string.Compare`_)"
+msgstr ""
+
+msgid "chr"
+msgstr "chr"
+
+#, fuzzy
+msgid "contains"
+msgstr "Taşıyıcı türler"
+
+#, fuzzy
+msgid "`string.Contains`_"
+msgstr "Taşıyıcılar Kullanmak"
+
+#, fuzzy
+msgid "count"
+msgstr "Miktar"
+
+msgid "StringExtensions.Count (Consider using `RegEx`_)"
+msgstr ""
+
+#, fuzzy
+msgid "countn"
+msgstr "Miktar"
+
+msgid "StringExtensions.CountN (Consider using `RegEx`_)"
+msgstr ""
+
+msgid "dedent"
+msgstr ""
+
+msgid "StringExtensions.Dedent"
+msgstr ""
+
+msgid "ends_with"
+msgstr ""
+
+msgid "`string.EndsWith`_"
+msgstr ""
+
+#, fuzzy
+msgid "erase"
+msgstr "Kameralar"
+
+msgid ""
+"`string.Remove`_ (Consider using `StringBuilder`_ to manipulate strings)"
+msgstr ""
+
+msgid "find"
+msgstr ""
+
+msgid ""
+"StringExtensions.Find (Consider using `string.IndexOf`_ or `string."
+"IndexOfAny`_)"
+msgstr ""
+
+msgid "findn"
+msgstr ""
+
+msgid ""
+"StringExtensions.FindN (Consider using `string.IndexOf`_ or `string."
+"IndexOfAny`_)"
+msgstr ""
+
+#, fuzzy
+msgid "format"
+msgstr "Biçim"
+
+msgid "get_base_dir"
+msgstr ""
+
+msgid "StringExtensions.GetBaseDir"
+msgstr ""
+
+msgid "get_basename"
+msgstr ""
+
+msgid "StringExtensions.GetBaseName"
+msgstr ""
+
+msgid "get_extension"
+msgstr ""
+
+msgid "StringExtensions.GetExtension"
+msgstr ""
+
+msgid "get_file"
+msgstr ""
+
+msgid "StringExtensions.GetFile"
+msgstr ""
+
+msgid "get_slice"
+msgstr ""
+
+msgid "get_slice_count"
+msgstr ""
+
+msgid "get_slicec"
+msgstr ""
+
+msgid ""
+"StringExtensions.Hash (Consider using `object.GetHashCode`_ unless you need "
+"to guarantee the same behavior as in GDScript)"
+msgstr ""
+
+msgid "hex_decode"
+msgstr ""
+
+msgid ""
+"StringExtensions.HexDecode (Consider using `System.Convert.FromHexString`_)"
+msgstr ""
+
+msgid "hex_to_int"
+msgstr ""
+
+msgid ""
+"StringExtensions.HexToInt (Consider using `int.Parse`_ or `long.Parse`_ with "
+"`System.Globalization.NumberStyles.HexNumber`_)"
+msgstr ""
+
+msgid "humanize_size"
+msgstr ""
+
+msgid "indent"
+msgstr ""
+
+msgid "StringExtensions.Indent"
+msgstr ""
+
+#, fuzzy
+msgid "insert"
+msgstr "assert"
+
+msgid ""
+"`string.Insert`_ (Consider using `StringBuilder`_ to manipulate strings)"
+msgstr ""
+
+msgid "is_absolute_path"
+msgstr ""
+
+msgid "StringExtensions.IsAbsolutePath"
+msgstr ""
+
+msgid "is_empty"
+msgstr ""
+
+msgid "`string.IsNullOrEmpty`_ or `string.IsNullOrWhiteSpace`_"
+msgstr ""
+
+msgid "is_relative_path"
+msgstr ""
+
+msgid "StringExtensions.IsRelativePath"
+msgstr ""
+
+msgid "is_subsequence_of"
+msgstr ""
+
+msgid "StringExtensions.IsSubsequenceOf"
+msgstr ""
+
+msgid "is_subsequence_ofn"
+msgstr ""
+
+msgid "StringExtensions.IsSubsequenceOfN"
+msgstr ""
+
+msgid "is_valid_filename"
+msgstr ""
+
+msgid "StringExtensions.IsValidFileName"
+msgstr ""
+
+msgid "is_valid_float"
+msgstr ""
+
+msgid ""
+"StringExtensions.IsValidFloat (Consider using `float.TryParse`_ or `double."
+"TryParse`_)"
+msgstr ""
+
+msgid "is_valid_hex_number"
+msgstr ""
+
+msgid "StringExtensions.IsValidHexNumber"
+msgstr ""
+
+msgid "is_valid_html_color"
+msgstr ""
+
+msgid "StringExtensions.IsValidHtmlColor"
+msgstr ""
+
+msgid "is_valid_identifier"
+msgstr ""
+
+msgid "StringExtensions.IsValidIdentifier"
+msgstr ""
+
+msgid "is_valid_int"
+msgstr ""
+
+msgid ""
+"StringExtensions.IsValidInt (Consider using `int.TryParse`_ or `long."
+"TryParse`_)"
+msgstr ""
+
+msgid "is_valid_ip_address"
+msgstr ""
+
+msgid "StringExtensions.IsValidIPAddress"
+msgstr ""
+
+msgid "join"
+msgstr ""
+
+msgid "`string.Join`_"
+msgstr ""
+
+msgid "json_escape"
+msgstr ""
+
+msgid "StringExtensions.JSONEscape"
+msgstr ""
+
+msgid "left"
+msgstr ""
+
+msgid ""
+"StringExtensions.Left (Consider using `string.Substring`_ or `string."
+"AsSpan`_)"
+msgstr ""
+
+#, fuzzy
+msgid "length"
+msgstr "Dizi uzunluğu"
+
+#, fuzzy
+msgid "`string.Length`_"
+msgstr "Dize uzunluğu"
+
+msgid "lpad"
+msgstr ""
+
+msgid "`string.PadLeft`_"
+msgstr ""
+
+msgid "lstrip"
+msgstr ""
+
+msgid "`string.TrimStart`_"
+msgstr ""
+
+msgid "match"
+msgstr ""
+
+msgid "StringExtensions.Match (Consider using `RegEx`_)"
+msgstr ""
+
+msgid "matchn"
+msgstr ""
+
+msgid "StringExtensions.MatchN (Consider using `RegEx`_)"
+msgstr ""
+
+msgid "md5_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.Md5Buffer (Consider using `System.Security.Cryptography.MD5."
+"HashData`_)"
+msgstr ""
+
+msgid "md5_text"
+msgstr ""
+
+msgid ""
+"StringExtensions.Md5Text (Consider using `System.Security.Cryptography.MD5."
+"HashData`_ with StringExtensions.HexEncode)"
+msgstr ""
+
+msgid "naturalnocasecmp_to"
+msgstr ""
+
+msgid "N/A (Consider using `string.Equals`_ or `string.Compare`_)"
+msgstr ""
+
+msgid "nocasecmp_to"
+msgstr ""
+
+msgid ""
+"StringExtensions.NocasecmpTo or StringExtensions.CompareTo (Consider using "
+"`string.Equals`_ or `string.Compare`_)"
+msgstr ""
+
+#, fuzzy
+msgid "num"
+msgstr "sayı"
+
+msgid "`float.ToString`_ or `double.ToString`_"
+msgstr ""
+
+msgid "num_int64"
+msgstr ""
+
+msgid "`int.ToString`_ or `long.ToString`_"
+msgstr ""
+
+msgid "num_scientific"
+msgstr ""
+
+msgid "num_uint64"
+msgstr ""
+
+msgid "`uint.ToString`_ or `ulong.ToString`_"
+msgstr ""
+
+msgid "pad_decimals"
+msgstr ""
+
+msgid "StringExtensions.PadDecimals"
+msgstr ""
+
+msgid "pad_zeros"
+msgstr ""
+
+msgid "StringExtensions.PadZeros"
+msgstr ""
+
+msgid "path_join"
+msgstr ""
+
+msgid "StringExtensions.PathJoin"
+msgstr ""
+
+#, fuzzy
+msgid "repeat"
+msgstr "Tekrar Et"
+
+msgid "Use `string constructor`_ or a `StringBuilder`_"
+msgstr ""
+
+#, fuzzy
+msgid "replace"
+msgstr "Değiştir"
+
+msgid "`string.Replace`_ or `RegEx`_"
+msgstr ""
+
+#, fuzzy
+msgid "replacen"
+msgstr "Değiştir"
+
+msgid ""
+"StringExtensions.ReplaceN (Consider using `string.Replace`_ or `RegEx`_)"
+msgstr ""
+
+msgid "reverse"
+msgstr ""
+
+msgid "rfind"
+msgstr ""
+
+msgid ""
+"StringExtensions.RFind (Consider using `string.LastIndexOf`_ or `string."
+"LastIndexOfAny`_)"
+msgstr ""
+
+msgid "rfindn"
+msgstr ""
+
+msgid ""
+"StringExtensions.RFindN (Consider using `string.LastIndexOf`_ or `string."
+"LastIndexOfAny`_)"
+msgstr ""
+
+#, fuzzy
+msgid "right"
+msgstr "Işıklar"
+
+msgid ""
+"StringExtensions.Right (Consider using `string.Substring`_ or `string."
+"AsSpan`_)"
+msgstr ""
+
+msgid "rpad"
+msgstr ""
+
+msgid "`string.PadRight`_"
+msgstr ""
+
+msgid "rsplit"
+msgstr ""
+
+msgid "rstrip"
+msgstr ""
+
+msgid "`string.TrimEnd`_"
+msgstr ""
+
+msgid "sha1_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.Sha1Buffer (Consider using `System.Security.Cryptography."
+"SHA1.HashData`_)"
+msgstr ""
+
+msgid "sha1_text"
+msgstr ""
+
+msgid ""
+"StringExtensions.Sha1Text (Consider using `System.Security.Cryptography.SHA1."
+"HashData`_ with StringExtensions.HexEncode)"
+msgstr ""
+
+msgid "sha256_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.Sha256Buffer (Consider using `System.Security.Cryptography."
+"SHA256.HashData`_)"
+msgstr ""
+
+msgid "sha256_text"
+msgstr ""
+
+msgid ""
+"StringExtensions.Sha256Text (Consider using `System.Security.Cryptography."
+"SHA256.HashData`_ with StringExtensions.HexEncode)"
+msgstr ""
+
+msgid "similarity"
+msgstr ""
+
+msgid "StringExtensions.Similarity"
+msgstr ""
+
+msgid "simplify_path"
+msgstr ""
+
+msgid "StringExtensions.SimplifyPath"
+msgstr ""
+
+msgid "split"
+msgstr ""
+
+msgid "StringExtensions.Split (Consider using `string.Split`_)"
+msgstr ""
+
+msgid "split_floats"
+msgstr ""
+
+msgid "StringExtensions.SplitFloat"
+msgstr ""
+
+msgid "strip_edges"
+msgstr ""
+
+msgid ""
+"StringExtensions.StripEdges (Consider using `string.Trim`_, `string."
+"TrimStart`_ or `string.TrimEnd`_)"
+msgstr ""
+
+msgid "strip_escapes"
+msgstr ""
+
+msgid "StringExtensions.StripEscapes"
+msgstr ""
+
+msgid "substr"
+msgstr ""
+
+msgid ""
+"StringExtensions.Substr (Consider using `string.Substring`_ or `string."
+"AsSpan`_)"
+msgstr ""
+
+msgid "to_ascii_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToAsciiBuffer (Consider using `System.Text.Encoding.ASCII."
+"GetBytes`_)"
+msgstr ""
+
+msgid "to_camel_case"
+msgstr ""
+
+msgid "StringExtensions.ToCamelCase"
+msgstr ""
+
+#, fuzzy
+msgid "to_float"
+msgstr "Float"
+
+msgid ""
+"StringExtensions.ToFloat (Consider using `float.TryParse`_ or `double."
+"TryParse`_)"
+msgstr ""
+
+msgid "to_int"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToInt (Consider using `int.TryParse`_ or `long.TryParse`_)"
+msgstr ""
+
+msgid "to_lower"
+msgstr ""
+
+msgid "`string.ToLower`_"
+msgstr ""
+
+msgid "to_pascal_case"
+msgstr ""
+
+msgid "StringExtensions.ToPascalCase"
+msgstr ""
+
+msgid "to_snake_case"
+msgstr ""
+
+msgid "StringExtensions.ToSnakeCase"
+msgstr ""
+
+msgid "to_upper"
+msgstr ""
+
+msgid "`string.ToUpper`_"
+msgstr ""
+
+msgid "to_utf16_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToUtf16Buffer (Consider using `System.Text.Encoding.UTF16."
+"GetBytes`_)"
+msgstr ""
+
+msgid "to_utf32_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToUtf32Buffer (Consider using `System.Text.Encoding.UTF32."
+"GetBytes`_)"
+msgstr ""
+
+msgid "to_utf8_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToUtf8Buffer (Consider using `System.Text.Encoding.UTF8."
+"GetBytes`_)"
+msgstr ""
+
+msgid "to_wchar_buffer"
+msgstr ""
+
+msgid ""
+"StringExtensions.ToUtf16Buffer in Windows and StringExtensions.ToUtf32Buffer "
+"in other platforms"
+msgstr ""
+
+msgid "trim_prefix"
+msgstr ""
+
+msgid "StringExtensions.TrimPrefix"
+msgstr ""
+
+msgid "trim_suffix"
+msgstr ""
+
+msgid "StringExtensions.TrimSuffix"
+msgstr ""
+
+msgid "unicode_at"
+msgstr ""
+
+msgid "`string[int]`_ indexer"
+msgstr ""
+
+msgid "uri_decode"
+msgstr ""
+
+msgid ""
+"StringExtensions.URIDecode (Consider using `System.Uri.UnescapeDataString`_)"
+msgstr ""
+
+msgid "uri_encode"
+msgstr ""
+
+msgid ""
+"StringExtensions.URIEncode (Consider using `System.Uri.EscapeDataString`_)"
+msgstr ""
+
+msgid "validate_node_name"
+msgstr ""
+
+msgid "StringExtensions.ValidateNodeName"
+msgstr ""
+
+msgid "xml_escape"
+msgstr ""
+
+msgid "StringExtensions.XMLEscape"
+msgstr ""
+
+msgid "xml_unescape"
+msgstr ""
+
+msgid "StringExtensions.XMLUnescape"
+msgstr ""
+
+msgid ""
+"List of Godot's PackedByteArray methods that create a String and their C# "
+"equivalent:"
+msgstr ""
+
+msgid "get_string_from_ascii"
+msgstr ""
+
+msgid ""
+"StringExtensions.GetStringFromAscii (Consider using `System.Text.Encoding."
+"ASCII.GetString`_)"
+msgstr ""
+
+msgid "get_string_from_utf16"
+msgstr ""
+
+msgid ""
+"StringExtensions.GetStringFromUtf16 (Consider using `System.Text.Encoding."
+"UTF16.GetString`_)"
+msgstr ""
+
+msgid "get_string_from_utf32"
+msgstr ""
+
+msgid ""
+"StringExtensions.GetStringFromUtf32 (Consider using `System.Text.Encoding."
+"UTF32.GetString`_)"
+msgstr ""
+
+msgid "get_string_from_utf8"
+msgstr ""
+
+msgid ""
+"StringExtensions.GetStringFromUtf8 (Consider using `System.Text.Encoding."
+"UTF8.GetString`_)"
+msgstr ""
+
+msgid "hex_encode"
+msgstr ""
+
+msgid ""
+"StringExtensions.HexEncode (Consider using `System.Convert.ToHexString`_)"
+msgstr ""
+
+msgid ""
+".NET contains many path utility methods available under the `System.IO."
+"Path`_ class that can be used when not dealing with Godot paths (paths that "
+"start with ``res://`` or ``user://``)"
+msgstr ""
+
+msgid "NodePath"
+msgstr ""
+
+msgid "The following method was converted to a property with a different name:"
+msgstr ""
+
+msgid "``is_empty()``"
+msgstr ""
+
+msgid "``IsEmpty``"
+msgstr ""
+
+msgid "Signal"
+msgstr "Sinyal"
+
+msgid ""
+"The following methods were converted to properties with their respective "
+"names changed:"
+msgstr ""
+
+msgid "``get_name()``"
+msgstr ""
+
+msgid "``Name``"
+msgstr ""
+
+msgid "``get_object()``"
+msgstr ""
+
+msgid "``Owner``"
+msgstr ""
+
+msgid ""
+"The ``Signal`` type implements the awaitable pattern which means it can be "
+"used with the ``await`` keyword. See :ref:`doc_c_sharp_differences_await`."
+msgstr ""
+
+msgid ""
+"Instead of using the ``Signal`` type, the recommended way to use Godot "
+"signals in C# is to use the generated C# events. See :ref:"
+"`doc_c_sharp_signals`."
+msgstr ""
+
+#, fuzzy
+msgid "Callable"
+msgstr "Çağır"
+
+#, fuzzy
+msgid "``Target``"
+msgstr "Hedef"
+
+msgid "``get_method()``"
+msgstr ""
+
+msgid "``Method``"
+msgstr ""
+
+msgid "Currently C# supports ``Callable`` if one of the following holds:"
+msgstr ""
+
+msgid "``Callable`` was created using the C# ``Callable`` type."
+msgstr ""
+
+msgid ""
+"``Callable`` is a basic version of the engine's ``Callable``. Custom "
+"``Callable``\\ s are unsupported. A ``Callable`` is custom when any of the "
+"following holds:"
+msgstr ""
+
+msgid ""
+"``Callable`` has bound information (``Callable``\\ s created with ``bind``/"
+"``unbind`` are unsupported)."
+msgstr ""
+
+msgid ""
+"``Callable`` was created from other languages through the GDExtension API."
+msgstr ""
+
+msgid ""
+"Some methods such as ``bind`` and ``unbind`` are not implemented, use "
+"lambdas instead:"
+msgstr ""
+
+msgid ""
+"The lambda captures the ``name`` variable so it can be bound to the "
+"``SayHello`` method."
+msgstr ""
+
+msgid "RID"
+msgstr ""
+
+#, fuzzy
+msgid "This type is named ``Rid`` in C# to follow the .NET naming convention."
+msgstr "Bu proje için, Godot isimlendirme geleneğini takip edeceğiz."
+
+msgid "``get_id()``"
+msgstr ""
+
+msgid "``Id``"
+msgstr ""
+
+msgid "``is_valid()``"
+msgstr ""
+
+msgid "``IsValid``"
+msgstr ""
+
+msgid "Basis"
+msgstr "Temel"
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Basis()`` initializes all primitive members to their default value. Use "
+"``Basis.Identity`` for the equivalent of ``Basis()`` in GDScript and C++."
+msgstr ""
+
+msgid "``get_scale()``"
+msgstr ""
+
+msgid "``Scale``"
+msgstr ""
+
+msgid "Transform2D"
+msgstr ""
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Transform2D()`` initializes all primitive members to their default value. "
+"Please use ``Transform2D.Identity`` for the equivalent of ``Transform2D()`` "
+"in GDScript and C++."
+msgstr ""
+
+msgid "``get_rotation()``"
+msgstr ""
+
+msgid "``Rotation``"
+msgstr "``Rotation``"
+
+msgid "``get_skew()``"
+msgstr ""
+
+msgid "``Skew``"
+msgstr ""
+
+#, fuzzy
+msgid "Transform3D"
+msgstr "Dönüştürme"
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Transform3D()`` initializes all primitive members to their default value. "
+"Please use ``Transform3D.Identity`` for the equivalent of ``Transform3D()`` "
+"in GDScript and C++."
+msgstr ""
+
+msgid "Rect2"
+msgstr ""
+
+msgid ""
+"The following field was converted to a property with a *slightly* different "
+"name:"
+msgstr ""
+
+msgid "``end``"
+msgstr ""
+
+msgid "``End``"
+msgstr ""
+
+msgid "``get_area()``"
+msgstr ""
+
+msgid "``Area``"
+msgstr ""
+
+msgid "Rect2i"
+msgstr ""
+
+msgid ""
+"This type is named ``Rect2I`` in C# to follow the .NET naming convention."
+msgstr ""
+
+msgid "AABB"
+msgstr ""
+
+#, fuzzy
+msgid "This type is named ``Aabb`` in C# to follow the .NET naming convention."
+msgstr "Bu proje için, Godot isimlendirme geleneğini takip edeceğiz."
+
+msgid "``get_volume()``"
+msgstr ""
+
+msgid "``Volume``"
+msgstr ""
+
+msgid "Quaternion"
+msgstr ""
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Quaternion()`` initializes all primitive members to their default value. "
+"Please use ``Quaternion.Identity`` for the equivalent of ``Quaternion()`` in "
+"GDScript and C++."
+msgstr ""
+
+#, fuzzy
+msgid "Projection"
+msgstr "Yön"
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Projection()`` initializes all primitive members to their default value. "
+"Please use ``Projection.Identity`` for the equivalent of ``Projection()`` in "
+"GDScript and C++."
+msgstr ""
+
+msgid "Color"
+msgstr "Renk"
+
+msgid ""
+"Structs cannot have parameterless constructors in C#. Therefore, ``new "
+"Color()`` initializes all primitive members to their default value (which "
+"represents the transparent black color). Please use ``Colors.Black`` for the "
+"equivalent of ``Color()`` in GDScript and C++."
+msgstr ""
+
+msgid ""
+"The global ``Color8`` method to construct a Color from bytes is available as "
+"a static method in the Color type."
+msgstr ""
+
+msgid ""
+"The Color constants are available in the ``Colors`` static class as readonly "
+"properties."
+msgstr ""
+
+msgid "``get_luminance()``"
+msgstr ""
+
+msgid "``Luminance``"
+msgstr ""
+
+msgid "The following method was converted to a method with a different name:"
+msgstr ""
+
+msgid "``html(String)``"
+msgstr ""
+
+msgid "``FromHtml(ReadOnlySpan<char>)``"
+msgstr ""
+
+msgid "The following methods are available as constructors:"
+msgstr ""
+
+msgid "``hex(int)``"
+msgstr ""
+
+#, fuzzy
+msgid "``Color(uint)``"
+msgstr "``Color8``"
+
+msgid "``hex64(int)``"
+msgstr ""
+
+#, fuzzy
+msgid "``Color(ulong)``"
+msgstr "``Color8``"
+
+msgid "Array"
+msgstr ""
+
+msgid "The equivalent of packed arrays are ``System.Array``."
+msgstr ""
+
+msgid ""
+"See also :ref:`PackedArray in C# <doc_c_sharp_collections_packedarray>`."
+msgstr ""
+
+msgid ""
+"Use ``Godot.Collections.Array`` for an untyped ``Variant`` array. ``Godot."
+"Collections.Array<T>`` is a type-safe wrapper around ``Godot.Collections."
+"Array``."
+msgstr ""
+
+msgid "See also :ref:`Array in C# <doc_c_sharp_collections_array>`."
+msgstr ""
+
+msgid "Dictionary"
+msgstr ""
+
+msgid ""
+"Use ``Godot.Collections.Dictionary`` for an untyped ``Variant`` dictionary. "
+"``Godot.Collections.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
+"``Godot.Collections.Dictionary``."
+msgstr ""
+
+msgid "See also :ref:`Dictionary in C# <doc_c_sharp_collections_dictionary>`."
+msgstr ""
+
+msgid "Variant"
+msgstr "Alt-Çeşit"
+
+msgid ""
+"``Godot.Variant`` is used to represent Godot's native :ref:`Variant "
+"<class_Variant>` type. Any Variant-compatible type can be converted from/to "
+"it."
+msgstr ""
+
+msgid "See also: :ref:`doc_c_sharp_variant`."
+msgstr ""
+
+msgid "Communicating with other scripting languages"
+msgstr ""
+
+msgid "This is explained extensively in :ref:`doc_cross_language_scripting`."
+msgstr ""
+
+msgid "``await`` keyword"
+msgstr ""
+
+msgid ""
+"Something similar to GDScript's ``await`` keyword can be achieved with C#'s "
+"`await keyword <https://docs.microsoft.com/en-US/dotnet/csharp/language-"
+"reference/keywords/await>`_."
+msgstr ""
+
+msgid ""
+"The ``await`` keyword in C# can be used with any awaitable expression. It's "
+"commonly used with operands of the types `Task`_, `Task<TResult>`_, "
+"`ValueTask`_, or `ValueTask<TResult>`_."
+msgstr ""
+
+msgid "An expression ``t`` is awaitable if one of the following holds:"
+msgstr ""
+
+msgid "``t`` is of compile-time type ``dynamic``."
+msgstr ""
+
+msgid ""
+"``t`` has an accessible instance or extension method called ``GetAwaiter`` "
+"with no parameters and no type parameters, and a return type ``A`` for which "
+"all of the following hold:"
+msgstr ""
+
+msgid ""
+"``A`` implements the interface ``System.Runtime.CompilerServices."
+"INotifyCompletion``."
+msgstr ""
+
+msgid ""
+"``A`` has an accessible, readable instance property ``IsCompleted`` of type "
+"``bool``."
+msgstr ""
+
+msgid ""
+"``A`` has an accessible instance method ``GetResult`` with no parameters and "
+"no type parameters."
+msgstr ""
+
+msgid ""
+"An equivalent of awaiting a signal in GDScript can be achieved with the "
+"``await`` keyword and ``GodotObject.ToSignal``."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

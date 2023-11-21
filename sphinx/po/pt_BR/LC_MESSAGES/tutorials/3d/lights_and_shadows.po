@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,54 +40,51 @@ msgstr ""
 "próximos, a menos que seja pré-processado. e mesclado o material com as "
 "iluminações nas texturas \"bake\")."
 
-#, fuzzy
 msgid "Light nodes: DirectionalLight3D, OmniLight3D and SpotLight3D."
-msgstr "Nós de Luz: Direcional, Omni e Spot."
+msgstr "Nós de Luz: DirectionalLight3D, OmniLight3D and SpotLight3D."
 
-#, fuzzy
 msgid ""
 "Ambient light in the :ref:`Environment <class_Environment>` or :ref:"
 "`doc_reflection_probes`."
-msgstr "Luz Ambiental no :ref:`Environment <class_Environment>`."
+msgstr ""
+"Luz Ambiental no :ref:`Environment <class_Environment>` ou :ref:"
+"`doc_reflection_probes`."
 
 msgid ""
 "Global illumination (:ref:`LightmapGI <doc_using_lightmap_gi>`, :ref:"
 "`VoxelGI <doc_using_voxel_gi>` or :ref:`SDFGI <doc_using_sdfgi>`)."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The emission color is a material property. You can read more about it in "
 "the :ref:`doc_standard_material_3d` tutorial."
 msgstr ""
 "A cor de emissão é uma propriedade do material. Você pode ler mais sobre "
-"isso no tutorial :ref:`doc_spatial_material`."
+"isso no tutorial :ref:`doc_standard_material_3d`."
 
-#, fuzzy
 msgid ""
 "You can compare various types of lights in action using the `3D Lights and "
 "Shadows demo project <https://github.com/godotengine/godot-demo-projects/"
 "tree/master/3d/lights_and_shadows>`__."
 msgstr ""
-"Se você aprender melhor olhando para um exemplo, você pode encontrar o "
-"projeto demonstrativo `aqui <https://github.com/godotengine/godot-demo-"
-"projects/tree/master/mobile/android_iap>`__."
+"Você pode comparar vários tipos de luzes em ação usando o projeto demo `3D "
+"Lights and Shadows demo project <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/lights_and_shadows>`__."
 
 msgid "Light nodes"
 msgstr "Nós de luz"
 
-#, fuzzy
 msgid ""
 "There are three types of light nodes: :ref:`class_DirectionalLight3D`, :ref:"
 "`class_OmniLight3D` and :ref:`class_SpotLight3D`. Let's take a look at the "
 "common parameters for lights:"
 msgstr ""
-"Existem três tipos de nós de luz: `Directional light`_, `Omni light`_ e "
-"`Spot light`_. Vamos dar uma olhada nos parâmetros comuns para luzes:"
+"Existem três tipos de nós de luz: :ref:`class_DirectionalLight3D`, :ref:"
+"`class_OmniLight3D` e :ref:`class_SpotLight3D` Vamos dar uma olhada nos "
+"parâmetros comuns para luzes:"
 
-#, fuzzy
 msgid "Each property has a specific function:"
-msgstr "Cada um tem uma função específica:"
+msgstr "Cada propriedade tem uma função específica:"
 
 #, fuzzy
 msgid "**Color:** Base color for emitted light."
@@ -135,8 +132,8 @@ msgid ""
 "**Bake Mode:** Sets the bake mode for the light. See :ref:"
 "`doc_using_lightmap_gi`."
 msgstr ""
-"**Modo Bake**: Define o modo de \"bake\" para a luz. Para mais informações, "
-"consulte :ref:`doc_baked_lightmaps`"
+"**Modo Bake**: Define o modo de bake para a luz. Veja ref:"
+"`doc_using_lightmap_gi`."
 
 #, fuzzy
 msgid ""
@@ -288,6 +285,10 @@ msgid ""
 "the grainy pattern used for filtering more noticeable. See also :ref:"
 "`doc_lights_and_shadows_shadow_filter_mode`."
 msgstr ""
+
+#, fuzzy
+msgid "Tweaking shadow bias"
+msgstr "Configuração de malhas"
 
 #, fuzzy
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,32 +24,34 @@ msgid ""
 "Groups in Godot work like tags in other software. You can add a node to as "
 "many groups as you want. Then, in code, you can use the SceneTree to:"
 msgstr ""
+"Godot 中的群組與其他軟體中的標籤類似。你可以將節點加入任意數量的你想要的群組"
+"之中。然後在程式碼中，你可以使用 SceneTree 來："
 
 msgid "Get a list of nodes in a group."
-msgstr ""
+msgstr "獲取某個群組中的節點列表。"
 
 msgid "Call a method on all nodes in a group."
-msgstr ""
+msgstr "在群組中的所有節點上呼叫方法。"
 
 msgid "Send a notification to all nodes in a group."
-msgstr ""
+msgstr "向群組中的所有節點發送通知。"
 
 msgid "This is a useful feature to organize large scenes and decouple code."
-msgstr ""
+msgstr "這個功能可以用來組織大型場景、對程式碼解耦。"
 
 msgid "Managing groups"
-msgstr ""
+msgstr "管理群組"
 
 msgid ""
 "Groups are created by adding a node to a new group name, and likewise they "
 "are removed by removing all nodes from a given group."
 msgstr ""
+"將節點新增到一個新的群組名稱中即可建立群組，同樣的，將所有節點移出某個給定的"
+"群組即為移除群組。"
 
-#, fuzzy
 msgid "There are two ways to add/remove nodes to groups:"
 msgstr "Godot 沒有使用限制"
 
-#, fuzzy
 msgid "During design, by using the Node dock in the editor."
 msgstr "執行編輯器"
 
@@ -58,63 +60,68 @@ msgid ""
 "<class_Node_method_add_to_group>` or :ref:`Node.remove_from_group() "
 "<class_Node_method_remove_from_group>`."
 msgstr ""
+"運作時，呼叫 :ref:`Node.add_to_group() <class_Node_method_add_to_group>` 或 :"
+"ref:`Node.remove_from_group() <class_Node_method_remove_from_group>`。"
 
-#, fuzzy
 msgid "Using the Node dock"
 msgstr "使用模組"
 
 msgid ""
 "You can add nodes in the current scene to groups using the Groups tab in the "
 "Node dock."
-msgstr ""
+msgstr "你可以使用“節點”停靠面板中的“群組”分頁，將目前場景中的節點加進群組中。"
 
 msgid ""
 "Select one or more nodes in the Scene dock and write the group name in the "
 "field, then click Add."
 msgstr ""
+"在“場景”面板中選中若干個節點，在輸入框中填寫群組名稱，然後按一下“新增”。"
 
 msgid "You should now see the group appear."
-msgstr ""
+msgstr "現在你就應該會看到出現了群組。"
 
 msgid ""
 "In a complex project, you may end up with many groups or large scenes with "
 "many nodes. You can add or remove any node to groups using the Group Editor "
 "window. To access it, click the Manage Groups button."
 msgstr ""
+"在複雜的專案中，你可能會用到很多包含許多節點的群組或者大型場景。你可以使用“群"
+"組編輯器”視窗來為群組新增或刪除節點。這個視窗可以通過點擊“管理群組”按鈕打開。"
 
 msgid ""
 "The Group Editor window appears. Here's a screenshot from a complex project "
 "to illustrate the tool's purpose."
 msgstr ""
+"出現“群組編輯器”視窗。這是一個複雜專案中的截圖，用於展示這個工具的用途。"
 
 msgid "It has three columns:"
-msgstr ""
+msgstr "它有三列："
 
 msgid "A list of groups used by nodes in the current scene."
-msgstr ""
+msgstr "目前場景中的節點所用到的群組列表。"
 
 msgid "A list of nodes that are not part of the selected group."
-msgstr ""
+msgstr "不在目前選中的群組中的節點列表。"
 
 msgid "A list of nodes in the group."
-msgstr ""
+msgstr "在群組中的節點列表。"
 
 msgid ""
 "The fields at the bottom allow you to add new groups or filter nodes in the "
 "second and third columns."
-msgstr ""
+msgstr "底部的輸入框可以用來新增新的群組，或者篩選第二第三列中的節點。"
 
 msgid ""
 "Any node name that's greyed out means the node was added to the group in a "
 "different scene and you cannot edit it here. This happens on scene instances "
 "in particular."
 msgstr ""
+"灰色的節點名稱意味著這個節點是從別的場景加入該群組的，你無法在這裡進行編輯。"
+"這種情況一般發生在產生實體的場景上。"
 
-#, fuzzy
 msgid "Using code"
 msgstr "使用空白字元"
 
-#, fuzzy
 msgid ""
 "You can also manage groups from scripts. The following code adds the node to "
 "which you attach the script to the ``guards`` group as soon as it enters the "
@@ -127,13 +134,16 @@ msgid ""
 "Imagine you're creating an infiltration game. When an enemy spots the "
 "player, you want all guards and robots to be on alert."
 msgstr ""
+"請想像你正在製作潛入類遊戲。敵人發現玩家後，你會希望所有守衛和機器人都進入警"
+"覺狀態。"
 
 msgid ""
 "In the fictional example below, we use ``SceneTree.call_group()`` to alert "
 "all enemies that the player was spotted."
 msgstr ""
+"下面的虛擬例子中，我們使用 ``SceneTree.call_group()`` 來通知所有敵人，玩家被"
+"發現了。"
 
-#, fuzzy
 msgid ""
 "The above code calls the function ``enter_alert_mode`` on every member of "
 "the group ``guards``."
@@ -141,7 +151,6 @@ msgstr ""
 "上面的程式碼會呼叫群組 ``enemies`` 裡所有成員的 ``player_was_discovered`` 方"
 "法。"
 
-#, fuzzy
 msgid ""
 "To get the full list of nodes in the ``guards`` group as an array, you can "
 "call :ref:`SceneTree.get_nodes_in_group() "
@@ -151,7 +160,6 @@ msgstr ""
 "<class_SceneTree_method_get_nodes_in_group>` 來取得所有 ``enemies`` 群組下的"
 "節點："
 
-#, fuzzy
 msgid ""
 "The :ref:`SceneTree <class_SceneTree>` class provides many more useful "
 "methods to interact with scenes, their node hierarchy, and groups. It allows "
@@ -161,7 +169,7 @@ msgstr ""
 ":ref:`SceneTree <class_SceneTree>` 類別還提供了很多實用的方法，例如與場景、節"
 "點架構、群組等互動。也可以使用 SceneTree 來輕鬆切換場景、重新載入場景、結束遊"
 "戲、暫停以及取消暫停。SceneTree 甚至有一些很有趣的訊號。有空的話記得去看看 "
-"SceneTree 的手冊！"
+"SceneTree 的手冊。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,31 +34,28 @@ msgstr ""
 "关于编辑器的界面和使用方法的全面介绍，请参见\\ :ref:`编辑器手册 <toc-learn-"
 "editor>`。"
 
-#, fuzzy
 msgid "The Project Manager"
 msgstr "项目管理器"
 
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. In "
 "the default tab **Local Projects**, you can manage existing projects, import "
 "or create new ones, and more."
 msgstr ""
-"启动 Godot 后，你会首先看到项目管理器窗口。在默认的选项卡“项目”中，你可以进行"
-"对已有项目的管理、导入或者创建新项目等操作。"
+"启动 Godot 后，你会首先看到项目管理器窗口。在默认的选项卡“本地项目”中，你可以"
+"进行对已有项目进行管理、导入或者创建新项目等操作。"
 
-#, fuzzy
 msgid ""
 "At the top of the window, there is another tab named \"Asset Library "
 "Projects\". You can search for demo projects in the open source asset "
 "library, which includes many projects developed by the community."
 msgstr ""
-"窗口顶部还有另一个名为“资产库项目”的选项卡。您可以在开源资产库中搜索演示项"
-"目、模板、完整项目，其中包括社区开发的许多项目。"
+"窗口顶部还有另一个名为“资产库项目”的选项卡。你可以在开源资产库中搜索演示项"
+"目，其中包括了许多社区开发的项目。"
 
 msgid ""
 "To learn the Project Manager's ins and outs, read :ref:`doc_project_manager`."
-msgstr ""
+msgstr "要进一步了解项目管理器，请阅读 :ref:`doc_project_manager` 。"
 
 msgid ""
 "You can also change the editor's language using the drop-down menu to the "
@@ -99,12 +96,11 @@ msgstr "工具栏会随着上下文和所选节点改变。这里展示的是 2D
 msgid "Below is the 3D one."
 msgstr "下面这个是 3D 的。"
 
-#, fuzzy
 msgid ""
 "Let's look at the docks. The **FileSystem** dock lists your project files, "
 "including scripts, images, audio samples, and more."
 msgstr ""
-"我们来看看停靠面板。\\ **文件系统**\\ 面板会列出项目中的文件，可以是脚本、图"
+"我们来看看停靠面板。\\ **文件系统**\\ 面板会列出项目中的文件，包括脚本、图"
 "片、音频采样等。"
 
 msgid "The **Scene** dock lists the active scene's nodes."
@@ -164,7 +160,6 @@ msgstr ""
 "**Script 屏幕**\\ 是一个完整的代码编辑器，包含调试器、丰富的自动补全、内置代"
 "码参考手册。"
 
-#, fuzzy
 msgid ""
 "Finally, the **AssetLib** is a library of free and open source add-ons, "
 "scripts, and assets to use in your projects."
@@ -187,8 +182,10 @@ msgid ""
 "signal by any one of the following methods:"
 msgstr "要搜索类、方法、属性、常量、信号相关的信息，可以使用以下任意方法："
 
+#, fuzzy
 msgid ""
-"Pressing :kbd:`F1` (or :kbd:`Alt + Space` on macOS) anywhere in the editor."
+"Pressing :kbd:`F1` (or :kbd:`Alt + Space` on macOS, or :kbd:`fn + F1` for "
+"laptops with a :kbd:`fn` key) anywhere in the editor."
 msgstr ""
 "在编辑器中的任何位置按下 :kbd:`F1`\\ （macOS 上则是 :kbd:`Alt + Space`\\ ）。"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Xcode"
-msgstr "\\ Xcode"
+msgstr "Xcode"
 
 msgid ""
 "`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
@@ -40,8 +40,9 @@ msgid ""
 "Now choose a name for your project and set the path to scons executable in "
 "build tool (to find the path you can type ``where scons`` in a terminal)."
 msgstr ""
+"現在為您的專案選擇名稱，並在建置工具中設定 scons 執行檔的路徑（要尋找路徑，您"
+"可以在終端機中鍵入「where scons」）。"
 
-#, fuzzy
 msgid ""
 "Open the main target from the **Targets** section and select the **Info** "
 "tab."
@@ -51,15 +52,15 @@ msgid "Fill out the form with the following settings:"
 msgstr "填寫下列設定："
 
 msgid "Arguments"
-msgstr ""
+msgstr "參數"
 
 msgid ""
 "See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
 msgstr ""
-"有關完整的引數列表，請參考 :ref:`doc_introduction_to_the_buildsystem` 。"
+"有關完整的參數列表，請參考 :ref:`doc_introduction_to_the_buildsystem` 。"
 
 msgid "Directory"
-msgstr "\\ Directory"
+msgstr "Directory"
 
 msgid "A full path to the Godot root folder"
 msgstr "Godot 根目錄的完整路徑"
@@ -71,7 +72,6 @@ msgstr ""
 "選擇 **File > New > Target...** 來新增一個用於對專案進行索引的 Command Line "
 "Tool 目標。"
 
-#, fuzzy
 msgid "Select **macOS > Application > Command Line Tool**."
 msgstr "選擇 **OS X > Application > Command Line Tool** 。"
 
@@ -103,7 +103,6 @@ msgid ""
 "project file browser."
 msgstr "將 Godot 原始碼拖放到專案檔案瀏覽器中來將這些檔案新增至專案中。"
 
-#, fuzzy
 msgid ""
 "Select **Create groups** for the **Added folders** option and check *only* "
 "your command line indexing target in the **Add to targets** section."
@@ -164,18 +163,16 @@ msgstr "將 **Executable** 設為連結到 post-build 操作腳本的檔案。"
 msgid "Check **Debug executable**."
 msgstr "勾選 **Debug executable** 。"
 
-#, fuzzy
 msgid ""
 "You can add two arguments on the **Arguments** tab: the ``-e`` flag opens "
 "the editor instead of the Project Manager, and the ``--path`` argument tells "
 "the executable to open the specified project (must be provided as an "
 "*absolute* path to the project root, not the ``project.godot`` file)."
 msgstr ""
-"可以在 **Arguments** 分頁中新增兩個引數：用於開啟編輯器而非專案管理員的 ``-"
-"e`` 旗標，以及用於告訴編輯器要開啟哪個特定專案的 ``--path`` 引數 (必須提供專"
+"可以在 **Arguments** 分頁中新增兩個參數：用於開啟編輯器而非專案管理員的 ``-"
+"e`` 旗標，以及用於告訴編輯器要開啟哪個特定專案的 ``--path`` 參數 (必須提供專"
 "案根目錄的 **絕對** 路徑，而非 ``project.godot`` 檔案)。"
 
-#, fuzzy
 msgid ""
 "To check that everything is working, put a breakpoint in ``platform/macos/"
 "godot_main_macos.mm`` and run the project."

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating movies"
-msgstr "创建节点"
+msgstr "创建电影"
 
 msgid ""
 "Godot can record **non-real-time** video and audio from any 2D or 3D "
 "project. This kind of recording is also called *offline rendering*. There "
 "are many scenarios where this is useful:"
 msgstr ""
+"Godot 可以为任何 2D 或 3D 项目录制\\ **非实时**\\ 音视频。这种录制也叫\\ *离"
+"线渲染*\\ 。适合很多不同的场景："
 
 msgid "Recording game trailers for promotional use."
 msgstr ""
@@ -49,11 +50,14 @@ msgid ""
 "techniques in an animated scene."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "With Godot's animation features such as the AnimationPlayer node, Tweeners, "
 "particles and shaders, it can effectively be used to create any kind of 2D "
 "and 3D animations (and still images)."
 msgstr ""
+"借助 Godot 的动画功能，例如 AnimationPlayer 节点、Tweeners、粒子和着色器，它"
+"可以有效地用于创建任何类型的 2D 和 3D 动画（以及图像）。"
 
 msgid ""
 "If you are already used to Godot's workflow, you may find yourself more "
@@ -61,11 +65,15 @@ msgid ""
 "said, renderers designed for non-real-time usage such as Cycles and Eevee "
 "can result in better visuals (at the cost of longer rendering times)."
 msgstr ""
+"如果您已经习惯了 Godot 的工作流程，您可能会发现使用 Godot 进行视频渲染会比 "
+"Blender 更加高效。 也就是说，非实时渲染器（例如 Cycles 和 Eevee）可以带来更好"
+"的视觉效果（代价是更长的渲染时间）。"
 
+#, fuzzy
 msgid ""
 "Compared to real-time video recording, some advantages of non-real-time "
 "recording include:"
-msgstr ""
+msgstr "与实时录像相比，非实时录像的一些优点包括："
 
 msgid ""
 "Use any graphics settings (including extremely demanding settings) "
@@ -125,7 +133,7 @@ msgstr ""
 
 msgid ""
 "Movie Maker mode is enabled, click the \"movie reel\" icon again to disable"
-msgstr ""
+msgstr "Movie Maker 模式启动后，再次点击“movie reel”图标关闭"
 
 msgid ""
 "Movie Maker status is **not** persisted when the editor quits, so you must "
@@ -167,17 +175,14 @@ msgid ""
 "automatically used when running the project from the editor."
 msgstr ""
 
-#, fuzzy
 msgid "Command line usage"
-msgstr "命令行教程"
+msgstr "命令行用法"
 
-#, fuzzy
 msgid ""
 "Movie Maker can also be enabled from the :ref:`command line "
 "<doc_command_line_tutorial>`:"
 msgstr ""
-"要了解更多的命令行参数, 请参考 :ref:`命令行教程 "
-"<doc_command_line_tutorial>` ."
+"Movie Maker 也可以通过\\ :ref:`命令行 <doc_command_line_tutorial>`\\ 启用："
 
 msgid ""
 "If the output path is relative, then it is **relative to the project "
@@ -222,9 +227,8 @@ msgid ""
 "more can be implemented by extensions:"
 msgstr ""
 
-#, fuzzy
 msgid "AVI (recommended)"
-msgstr "glTF 2.0 *（推荐）* 。"
+msgstr "glTF 2.0 *（推荐）*"
 
 msgid ""
 "AVI container with MJPEG for video and uncompressed audio. Features lossy "
@@ -246,7 +250,7 @@ msgid ""
 msgstr ""
 
 msgid "PNG"
-msgstr ""
+msgstr "PNG"
 
 msgid ""
 "PNG image sequence for video and WAV for audio. Features lossless video "
@@ -272,9 +276,8 @@ msgid ""
 "the same name as the ``.png`` file (minus the extension)."
 msgstr ""
 
-#, fuzzy
 msgid "Custom"
-msgstr "自定义目录"
+msgstr "自定义"
 
 msgid ""
 "If you need to encode directly to a different format or pipe a stream "
@@ -353,7 +356,9 @@ msgstr "内置变量和渲染模式"
 
 msgid ""
 "To safely quit a project that is using Movie Maker mode, use the X button at "
-"the top of the window, or call ``get_tree().quit()`` in a script."
+"the top of the window, or call ``get_tree().quit()`` in a script. You can "
+"also use the ``--quit-after N`` command line argument where ``N`` is the "
+"number of frames to render before quitting."
 msgstr ""
 
 msgid ""
@@ -456,12 +461,11 @@ msgid ""
 "those settings with the ``movie`` :ref:`feature tag <doc_feature_tags>`."
 msgstr ""
 
-#, fuzzy
 msgid "Post-processing steps"
-msgstr "处理停止."
+msgstr "后期处理步骤"
 
 msgid "Some common post-processing steps are listed below."
-msgstr ""
+msgstr "以下列出一些常见的后期处理步骤。"
 
 msgid ""
 "When using several post-processing steps, try to perform all of them in a "
@@ -469,9 +473,8 @@ msgid ""
 "avoiding multiple lossy encoding steps."
 msgstr ""
 
-#, fuzzy
 msgid "Converting AVI video to MP4"
-msgstr "将键转换为文本"
+msgstr "将 AVI 视频转换为 MP4"
 
 #, fuzzy
 msgid ""
@@ -505,7 +508,7 @@ msgid ""
 msgstr ""
 
 msgid "Converting PNG image sequence + WAV audio to a video"
-msgstr ""
+msgstr "将 PNG 图像序列 + WAV 音频转换为视频"
 
 msgid ""
 "If you chose to record a PNG image sequence with a WAV file beside it, you "
@@ -532,9 +535,8 @@ msgid ""
 "support storing transparency, so you can use WebM/VP9 as an alternative:"
 msgstr ""
 
-#, fuzzy
 msgid "Cutting video"
-msgstr "播放视频"
+msgstr "视频剪辑"
 
 msgid ""
 "You can trim parts of the video you don't want to keep after the video is "
@@ -547,9 +549,8 @@ msgid ""
 "github.io/lossless-cut/>`__."
 msgstr ""
 
-#, fuzzy
 msgid "Resizing video"
-msgstr "调整大小"
+msgstr "视频缩放"
 
 #, fuzzy
 msgid ""
@@ -559,9 +560,8 @@ msgstr ""
 "以下命令会在保持现有长宽比的前提下将视频调整到 720 像素高（720p）。如果原始文"
 "件分辨率是大于 720p 的，就能够显著降低文件大小："
 
-#, fuzzy
 msgid "Reducing framerate"
-msgstr "添加摄像机"
+msgstr "降低帧率"
 
 msgid ""
 "The following command changes a video's framerate to 30 FPS, dropping some "
@@ -569,7 +569,7 @@ msgid ""
 msgstr ""
 
 msgid "Generating accumulation motion blur with FFmpeg"
-msgstr ""
+msgstr "使用 FFmpeg 生成累积运动模糊"
 
 msgid ""
 "Godot does not have built-in support for motion blur, but it can still be "

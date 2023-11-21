@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,12 +20,30 @@ msgstr ""
 msgid "Introduction to the buildsystem"
 msgstr ""
 
-msgid "Setup"
-msgstr "Configura"
+msgid ""
+"Godot is a primarily C++ project and it :ref:`uses the SCons build system. "
+"<doc_faq_why_scons>` We love SCons for how maintainable and easy to set up "
+"it makes our buildsystem. And thanks to that compiling Godot from source can "
+"be as simple as running::"
+msgstr ""
 
 msgid ""
-":ref:`Godot uses the SCons build system. <doc_faq_why_scons>` Please refer "
-"to the documentation for:"
+"This produces an *export template* for your current platform, operating "
+"system, and architecture. An export template is a build of the engine that "
+"is used for running exported projects. To build the *editor* instead you can "
+"run the following command::"
+msgstr ""
+
+msgid ""
+"If you plan to debug or develop the engine, then you might want to add "
+"another option to the command::"
+msgstr ""
+
+msgid ""
+"Following sections in the article will explain these and other universal "
+"options in more detail. But before you can compile Godot, you need to "
+"install a few prerequisites. Please refer to the platform documentation to "
+"learn more:"
 msgstr ""
 
 #, fuzzy
@@ -45,16 +63,35 @@ msgid ":ref:`doc_compiling_for_macos`"
 msgstr ":ref:`doc_optimizing_for_size`"
 
 #, fuzzy
-msgid ":ref:`doc_compiling_for_uwp`"
-msgstr ":ref:`doc_optimizing_for_size`"
-
-#, fuzzy
 msgid ":ref:`doc_compiling_for_web`"
 msgstr ":ref:`doc_optimizing_for_size`"
 
 #, fuzzy
 msgid ":ref:`doc_compiling_for_windows`"
 msgstr ":ref:`doc_optimizing_for_size`"
+
+msgid ""
+"These articles cover in great detail both how to setup your environment to "
+"compile Godot on a specific platform, and how to compile for that platform. "
+"Please feel free to go back and forth between them and this article to "
+"reference platform-specific and universal configuration options."
+msgstr ""
+
+#, fuzzy
+msgid "Using multi-threading"
+msgstr "Multi-threading"
+
+msgid ""
+"The build process may take a while, depending on how powerful your system "
+"is. By default, Godot's SCons setup is configured to use all CPU threads but "
+"one (to keep the system responsive during compilation). If you want to "
+"adjust how many CPU threads SCons will use, use the ``-j <threads>`` "
+"parameter to specify how many threads will be used for the build."
+msgstr ""
+
+#, fuzzy
+msgid "Example for using 4 threads::"
+msgstr "Esempi:"
 
 #, fuzzy
 msgid "Platform selection"
@@ -79,17 +116,6 @@ msgstr ""
 msgid ""
 "To build for a platform (for example, ``linuxbsd``), run with the "
 "``platform=`` (or ``p=`` to make it short) argument:"
-msgstr ""
-
-msgid ""
-"This will start the build process, which will take a while. By default, "
-"Godot's SCons setup is configured to use all CPU threads but one (to keep "
-"the system responsive during compilation). If you want to adjust how many "
-"CPU threads SCons will use, use the ``-j <threads>`` parameter to specify "
-"how many threads will be used for the build."
-msgstr ""
-
-msgid "Example for using 4 threads:"
 msgstr ""
 
 #, fuzzy
@@ -136,16 +162,17 @@ msgid ""
 msgstr ""
 
 msgid ""
-"**editor**: Build with editor, optimized, with debugging code (defines: "
-"``TOOLS_ENABLED``, ``DEBUG_ENABLED``, ``-O2``/``/O2``)"
+"``target=editor``: Build with editor, optimized, with debugging code "
+"(defines: ``TOOLS_ENABLED``, ``DEBUG_ENABLED``, ``-O2``/``/O2``)"
 msgstr ""
 
 msgid ""
-"**template_debug**: Build with C++ debugging symbols (defines: "
+"``target=template_debug``: Build with C++ debugging symbols (defines: "
 "``DEBUG_ENABLED``, ``-O2``/``/O2``)"
 msgstr ""
 
-msgid "**template_release**: Build without symbols (defines: ``-O3``/``/O2``)"
+msgid ""
+"``target=template_release``: Build without symbols (defines: ``-O3``/``/O2``)"
 msgstr ""
 
 msgid ""
@@ -494,9 +521,8 @@ msgstr ""
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "
-"for almost every target (except for UWP). Linux and Windows come in second "
-"place, but Linux has the advantage of being the easier platform to set this "
-"up."
+"for every target. Linux and Windows come in second place, but Linux has the "
+"advantage of being the easier platform to set this up."
 msgstr ""
 
 msgid "Translation status"

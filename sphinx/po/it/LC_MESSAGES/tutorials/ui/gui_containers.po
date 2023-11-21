@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,7 @@ msgstr "Contenitori"
 
 msgid ""
 ":ref:`Anchors <doc_size_and_anchors>` are an efficient way to handle "
-"different aspect ratios for basic multiple resolution handling in GUIs,"
+"different aspect ratios for basic multiple resolution handling in GUIs."
 msgstr ""
 
 msgid "For more complex user interfaces, they can become difficult to use."
@@ -247,6 +247,54 @@ msgstr ""
 msgid ""
 "As in the example above, one of the most common ways to use this container "
 "is together with a *VBoxContainer* as child."
+msgstr ""
+
+#, fuzzy
+msgid "AspectRatioContainer"
+msgstr "SplitContainer"
+
+msgid ""
+"A container type that arranges its child controls in a way that preserves "
+"their proportions automatically when the container is resized. (via :ref:"
+"`AspectRatioContainer <class_AspectRatioContainer>`). It has multiple "
+"stretch modes, providing options for adjusting the child controls' sizes "
+"concerning the container: \"fill,\" \"width control height,\" \"height "
+"control width,\" and \"cover.\""
+msgstr ""
+
+msgid ""
+"useful when you have a container that needs to be dynamic and responsive to "
+"different screen sizes, and you want the child elements to scale "
+"proportionally without losing their intended shapes."
+msgstr ""
+
+#, fuzzy
+msgid "FlowContainer"
+msgstr "Contenitori"
+
+msgid ""
+"FlowContainer is a container that arranges its child controls either "
+"horizontally or vertically, (via :ref:`HFlowContainer "
+"<class_HFlowContainer>` and via :ref:`VFlowContainer "
+"<class_VFlowContainer>`). and when the available space runs out, it wraps "
+"the children to the next line or column, similar to how text wraps in a book."
+msgstr ""
+
+msgid ""
+"useful for creating flexible layouts where the child controls adjust "
+"automatically to the available space without overlapping."
+msgstr ""
+
+#, fuzzy
+msgid "CenterContainer"
+msgstr "PanelContainer"
+
+msgid ""
+"CenterContainer is a container that automatically keeps all of its child "
+"controls centered within it at their minimum size. It ensures that the child "
+"controls are always aligned to the center, making it easier to create "
+"centered layouts without manual positioning. (via :ref:`CenterContainer "
+"<class_CenterContainer>`)."
 msgstr ""
 
 #, fuzzy

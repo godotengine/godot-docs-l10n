@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Large world coordinates"
-msgstr "局部坐标切线."
+msgstr "大世界坐标"
 
 msgid ""
 "Large world coordinates are mainly useful in 3D projects; they are rarely "
@@ -27,10 +26,11 @@ msgid ""
 "doesn't benefit from increased precision when large world coordinates are "
 "enabled."
 msgstr ""
+"大世界坐标主要用于 3D 项目；2D 项目很少会用到。此外，启用大世界坐标后，2D 渲"
+"染目前无法从精度的增加中获益，但 3D 渲染可以。"
 
-#, fuzzy
 msgid "Why use large world coordinates?"
-msgstr "鼠标和输入坐标"
+msgstr "为什么要使用大世界坐标？"
 
 msgid ""
 "In Godot, physics simulation and rendering both rely on *floating-point* "
@@ -38,6 +38,9 @@ msgid ""
 "precision and range**. This can be a problem for games with huge worlds, "
 "such as space or planetary-scale simulation games."
 msgstr ""
+"在 Godot 中，物理仿真和渲染都依赖于\\ *浮点数*\\ 。然而，计算机中浮点数的\\ "
+"**精度和范围是有限的**\\ ，可能在太空、星球尺度的仿真游戏等拥有庞大世界的游戏"
+"中产生问题。"
 
 msgid ""
 "Precision is the greatest when the value is close to ``0.0``. Precision "
@@ -47,12 +50,18 @@ msgid ""
 "2 value (2, 4, 8, 16, …). Every time this occurs, the number's minimum step "
 "will *increase*, resulting in a loss of precision."
 msgstr ""
+"浮点数的精度在 ``0.0`` 附近是最高的。随着取值离 ``0.0`` 越来越远，精度就会变"
+"得越来越低。每次浮点数的\\ *指数*\\ 变大时，精度就会降低，也就是浮点数取值越"
+"过 2 的幂（2、4、8、16……）的时候。此时浮点数的最小步长就会\\ *增大*\\ ，精度"
+"因此变低。"
 
 msgid ""
 "In practice, this means that as the player moves away from the world origin "
 "(``Vector2(0, 0)`` in 2D games or ``Vector3(0, 0, 0)`` in 3D games), "
 "precision will decrease."
 msgstr ""
+"在实践中，这意味着玩家远离世界原点（2D 游戏的 ``Vector2(0, 0)`` 和 3D 游戏的 "
+"``Vector3(0, 0, 0)``\\ ），精度就会下降。"
 
 msgid ""
 "This loss of precision can result in objects appearing to \"vibrate\" when "
@@ -61,6 +70,9 @@ msgid ""
 "also result in physics glitches that only occur when the player is far from "
 "the world origin."
 msgstr ""
+"精度的丢失可能会导致远离世界原点的对象看上去在“抖动”，因为模型的位置会吸附到"
+"最接近的浮点数能够表示的值。这种情况下，如果玩家远离世界原点，还可能导致物理"
+"方面的问题。"
 
 msgid ""
 "The range determines the minimum and maximum values that can be stored in "
@@ -68,6 +80,8 @@ msgid ""
 "not be able to. However, in practice, floating-point precision almost always "
 "becomes a problem before the range does."
 msgstr ""
+"范围决定的是所能够存储的最小和最大值。如果玩家尝试移出这个范围就会直接失败。"
+"但是实际情况下，在能够受到范围影响之前几乎都会遇到浮点数精度问题。"
 
 msgid ""
 "The range and precision (minimum step between two exponent intervals) are "
@@ -78,220 +92,232 @@ msgid ""
 "low that the number cannot even distinguish two separate *integer* values "
 "from each other."
 msgstr ""
+"范围和精度（两个指数间隔的最小步长）取决于浮点数的类型。单精度浮点数的\\ *理"
+"论*\\ 范围支持存储极高的值，单精度很低。实践中，无法表示所有整数值的浮点数类"
+"型并不是很有用。极值附近的精度会变得非常低，低到连两个\\ *整数*\\ 值也无法区"
+"分。"
 
 msgid ""
 "This is the range where individual integer values can be represented in a "
 "floating-point number:"
-msgstr ""
+msgstr "以下是浮点数能够表示整数值的范围："
 
 msgid ""
 "**Single-precision float range (represent all integers):** Between "
 "-16,777,216 and 16,777,216"
 msgstr ""
+"**单精度浮点数范围（表示所有整数）：**\\ -16,777,216 和 16,777,216 之间"
 
 msgid ""
 "**Double-precision float range (represent all integers):** Between -9 "
 "quadrillon and 9 quadrillon"
-msgstr ""
+msgstr "**双精度浮点数范围（表示所有整数）：**\\ -9 千万亿和 9 千万亿之间"
 
-#, fuzzy
 msgid "Range"
-msgstr "修改"
+msgstr "范围"
 
-#, fuzzy
 msgid "Single step"
-msgstr "单引号"
+msgstr "单精度步长"
 
-#, fuzzy
 msgid "Double step"
-msgstr "双引号"
+msgstr "双精度步长"
 
 msgid "Comment"
-msgstr "注释(``Comment``)"
+msgstr "注释"
 
 msgid "[1; 2]"
-msgstr ""
+msgstr "[1; 2]"
 
 msgid "~0.0000001"
-msgstr ""
+msgstr "~0.0000001"
 
 msgid "~1e-15"
-msgstr ""
+msgstr "~1e-15"
 
 msgid "Precision becomes greater near 0.0 (this table is abbreviated)."
-msgstr ""
+msgstr "0.0 附近精度会变大（本表省略）。"
 
 msgid "[2; 4]"
-msgstr ""
+msgstr "[2; 4]"
 
 msgid "~0.0000002"
-msgstr ""
+msgstr "~0.0000002"
 
 msgid "[4; 8]"
-msgstr ""
+msgstr "[4; 8]"
 
 msgid "~0.0000005"
-msgstr ""
+msgstr "~0.0000005"
 
 msgid "[8; 16]"
-msgstr ""
+msgstr "[8; 16]"
 
 msgid "~0.000001"
-msgstr ""
+msgstr "~0.000001"
 
 msgid "~1e-14"
-msgstr ""
+msgstr "~1e-14"
 
 msgid "[16; 32]"
-msgstr ""
+msgstr "[16; 32]"
 
 msgid "~0.000002"
-msgstr ""
+msgstr "~0.000002"
 
 msgid "[32; 64]"
-msgstr ""
+msgstr "[32; 64]"
 
 msgid "~0.000004"
-msgstr ""
+msgstr "~0.000004"
 
 msgid "[64; 128]"
-msgstr ""
+msgstr "[64; 128]"
 
 msgid "~0.000008"
-msgstr ""
+msgstr "~0.000008"
 
 msgid "~1e-13"
-msgstr ""
+msgstr "~1e-13"
 
 msgid "[128; 256]"
-msgstr ""
+msgstr "[128; 256]"
 
 msgid "~0.000015"
-msgstr ""
+msgstr "~0.000015"
 
 msgid "[256; 512]"
-msgstr ""
+msgstr "[256; 512]"
 
 msgid "~0.00003"
-msgstr ""
+msgstr "~0.00003"
 
 msgid "[512; 1024]"
-msgstr ""
+msgstr "[512; 1024]"
 
 msgid "~0.00006"
-msgstr ""
+msgstr "~0.00006"
 
 msgid "~1e-12"
-msgstr ""
+msgstr "~1e-12"
 
 msgid "[1024; 2048]"
-msgstr ""
+msgstr "[1024; 2048]"
 
 msgid "~0.0001"
-msgstr ""
+msgstr "~0.0001"
 
 msgid "[2048; 4096]"
-msgstr ""
+msgstr "[2048; 4096]"
 
 msgid "~0.0002"
-msgstr ""
+msgstr "~0.0002"
 
 msgid ""
 "Maximum *recommended* single-precision range for a first-person 3D game "
 "without rendering artifacts or physics glitches."
 msgstr ""
+"第一人称 3D 游戏的最大\\ *推荐*\\ 单精度范围，不会有渲染和物理方面的问题。"
 
 msgid "[4096; 8192]"
-msgstr ""
+msgstr "[4096; 8192]"
 
 msgid "~0.0005"
-msgstr ""
+msgstr "~0.0005"
 
 msgid ""
 "Maximum *recommended* single-precision range for a third-person 3D game "
 "without rendering artifacts or physics glitches."
 msgstr ""
+"第三人称 3D 游戏的最大\\ *推荐*\\ 单精度范围，不会有渲染和物理方面的问题。"
 
 msgid "[8192; 16384]"
-msgstr ""
+msgstr "[8192; 16384]"
 
 msgid "~0.001"
-msgstr ""
+msgstr "~0.001"
 
 msgid "[16384; 32768]"
-msgstr ""
+msgstr "[16384; 32768]"
 
 msgid "~0.0019"
-msgstr ""
+msgstr "~0.0019"
 
 msgid "~1e-11"
-msgstr ""
+msgstr "~1e-11"
 
 msgid ""
 "Maximum *recommended* single-precision range for a top-down 3D game without "
 "rendering artifacts or physics glitches."
 msgstr ""
+"俯视角 3D 游戏的最大\\ *推荐*\\ 单精度范围，不会有渲染和物理方面的问题。"
 
 msgid "[32768; 65536]"
-msgstr ""
+msgstr "[32768; 65536]"
 
 msgid "~0.0039"
-msgstr ""
+msgstr "~0.0039"
 
 msgid ""
 "Maximum *recommended* single-precision range for any 3D game. Double "
 "precision (large world coordinates) is usually required past this point."
 msgstr ""
+"所有 3D 游戏的最大\\ *推荐*\\ 单精度范围。双精度（大世界坐标）通常会超过这个"
+"点。"
 
 msgid "[65536; 131072]"
-msgstr ""
+msgstr "[65536; 131072]"
 
 msgid "~0.0078"
-msgstr ""
+msgstr "~0.0078"
 
 msgid "[131072; 262144]"
-msgstr ""
+msgstr "[131072; 262144]"
 
 msgid "~0.0156"
-msgstr ""
+msgstr "~0.0156"
 
 msgid "~1e-10"
-msgstr ""
+msgstr "~1e-10"
 
 msgid "> 262144"
-msgstr ""
+msgstr "> 262144"
 
 msgid "> ~0.0313"
-msgstr ""
+msgstr "> ~0.0313"
 
 msgid "~1e-10 (0.0000000001)"
-msgstr ""
+msgstr "~1e-10（0.0000000001）"
 
 msgid ""
 "Double-precision remains far more precise than single-precision past this "
 "value."
-msgstr ""
+msgstr "超过这个值之后，双精度仍然比单精度要精确地多。"
 
 msgid ""
 "When using single-precision floats, it is possible to go past the suggested "
 "ranges, but more visible artifacting will occur and physics glitches will be "
 "more common (such as the player not walking straight in certain directions)."
 msgstr ""
+"使用单精度浮点数时，可以超过建议的范围，但此时就会更多可见的渲染问题，物理问"
+"题也会变得更常见（例如玩家在某些方向上无法直线移动）。"
 
 msgid ""
 "See the `Demystifying Floating Point Precision <https://blog.demofox."
 "org/2017/11/21/>`__ article for more information."
 msgstr ""
+"详见 `Demystifying Floating Point Precision <https://blog.demofox."
+"org/2017/11/21/>`__ 一文。"
 
-#, fuzzy
 msgid "How large world coordinates work"
-msgstr "硬件显示坐标"
+msgstr "大世界坐标的工作原理"
 
 msgid ""
 "Large world coordinates (also known as **double-precision physics**) "
 "increase the precision level of all floating-point computations within the "
 "engine."
 msgstr ""
+"大世界坐标（也叫\\ **双精度物理**\\ ）能够增加引擎中所有浮点数计算的精度级"
+"别。"
 
 msgid ""
 "By default, :ref:`class_float` is 64-bit in GDScript, but :ref:"
@@ -336,7 +362,7 @@ msgid ""
 msgstr ""
 
 msgid "Who are large world coordinates for?"
-msgstr ""
+msgstr "大世界坐标的目标群体是谁？"
 
 msgid ""
 "Large world coordinates are typically required for 3D space or planetary-"
@@ -376,9 +402,8 @@ msgid ""
 "both rendering and physics."
 msgstr ""
 
-#, fuzzy
 msgid "Enabling large world coordinates"
-msgstr "局部坐标次法线."
+msgstr "启用大世界坐标"
 
 msgid ""
 "This process requires recompiling the editor and all export template "
@@ -403,7 +428,7 @@ msgid ""
 msgstr ""
 
 msgid "Compatibility between single-precision and double-precision builds"
-msgstr ""
+msgstr "单双精度构建之间的的兼容性"
 
 msgid ""
 "When saving a *binary* resource using the :ref:`class_ResourceSaver` "
@@ -421,9 +446,8 @@ msgid ""
 "precision flag, as they don't require such a flag for correct reading."
 msgstr ""
 
-#, fuzzy
 msgid "Known incompatibilities"
-msgstr "版本兼容性"
+msgstr "已知的不兼容"
 
 msgid ""
 "In a networked multiplayer game, the server and all clients should be using "

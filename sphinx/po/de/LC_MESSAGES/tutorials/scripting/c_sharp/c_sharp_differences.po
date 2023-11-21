@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,32 +136,26 @@ msgstr "Ausnahmen:"
 msgid "``weakref(obj)``"
 msgstr "``weakref(obj)``"
 
-#, fuzzy
 msgid "``GodotObject.WeakRef(obj)``"
-msgstr "``Object.WeakRef(obj)``"
+msgstr "``GodotObject.WeakRef(obj)``"
 
-#, fuzzy
 msgid "``instance_from_id(id)``"
-msgstr "``is_instance_valid(obj)``"
+msgstr "``instance_from_id(id)``"
 
-#, fuzzy
 msgid "``GodotObject.InstanceFromId(id)``"
-msgstr "``Object.IsInstanceValid(obj)``"
+msgstr "``GodotObject.InstanceFromId(id)``"
 
-#, fuzzy
 msgid "``is_instance_id_valid(id)``"
-msgstr "``is_instance_valid(obj)``"
+msgstr "``is_instance_id_valid(id)``"
 
-#, fuzzy
 msgid "``GodotObject.IsInstanceIdValid(id)``"
-msgstr "``Object.IsInstanceValid(obj)``"
+msgstr "``GodotObject.IsInstanceIdValid(id)``"
 
 msgid "``is_instance_valid(obj)``"
 msgstr "``is_instance_valid(obj)``"
 
-#, fuzzy
 msgid "``GodotObject.IsInstanceValid(obj)``"
-msgstr "``Object.IsInstanceValid(obj)``"
+msgstr "``GodotObject.IsInstanceValid(obj)``"
 
 msgid "Tips"
 msgstr "Tipps"
@@ -206,11 +200,32 @@ msgstr ""
 msgid "Mathf.Acos"
 msgstr "Mathematische Funktionen"
 
+msgid "acosh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Acosh"
+msgstr "Mathematische Funktionen"
+
+#, fuzzy
+msgid "angle_difference"
+msgstr "Allgemeine Unterschiede"
+
+msgid "Mathf.AngleDifference"
+msgstr ""
+
 msgid "asin"
 msgstr ""
 
 msgid "Mathf.Asin"
 msgstr ""
+
+msgid "asinh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Asinh"
+msgstr "Mathematik"
 
 msgid "atan"
 msgstr ""
@@ -223,6 +238,13 @@ msgstr ""
 
 msgid "Mathf.Atan2"
 msgstr ""
+
+msgid "atanh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Atanh"
+msgstr "Mathematik"
 
 msgid "bezier_derivative"
 msgstr ""
@@ -302,8 +324,9 @@ msgstr "Lineare Interpolation"
 msgid "Mathf.CubicInterpolate"
 msgstr "Physik Einleitung"
 
-msgid "cubic_interpoalte_angle"
-msgstr ""
+#, fuzzy
+msgid "cubic_interpolate_angle"
+msgstr "Lineare Interpolation"
 
 msgid "Mathf.CubicInterpolateAngle"
 msgstr ""
@@ -479,9 +502,8 @@ msgstr ""
 msgid "Mathf.LinearToDb"
 msgstr ""
 
-#, fuzzy
 msgid "log"
-msgstr "Nebel"
+msgstr "Log"
 
 #, fuzzy
 msgid "Mathf.Log"
@@ -500,9 +522,8 @@ msgstr ""
 msgid "maxi"
 msgstr ""
 
-#, fuzzy
 msgid "min"
-msgstr "mi"
+msgstr "min"
 
 #, fuzzy
 msgid "Mathf.Min"
@@ -663,6 +684,13 @@ msgstr "NAN"
 msgid "rid_from_int64"
 msgstr ""
 
+msgid "rotate_toward"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.RotateToward"
+msgstr "runden"
+
 #, fuzzy
 msgid "round"
 msgstr "runden"
@@ -776,6 +804,20 @@ msgstr ""
 
 msgid "Mathf.Tanh"
 msgstr ""
+
+msgid "type_convert"
+msgstr ""
+
+msgid "Variant.As<T> or GD.Convert"
+msgstr ""
+
+#, fuzzy
+msgid "type_string"
+msgstr "Zeichenkette"
+
+#, fuzzy
+msgid "Variant.Type.ToString"
+msgstr "Variante"
 
 #, fuzzy
 msgid "typeof"
@@ -976,7 +1018,6 @@ msgstr ""
 "Muster zu verwenden. Dies dient dazu den Code weniger ausführlich zu machen "
 "als bei einer ``Instance``-Eigenschaft."
 
-#, fuzzy
 msgid ""
 "However, in some very rare cases this is not enough. For example, you may "
 "want to access a member from the base class ``GodotObject``, like "
@@ -987,11 +1028,12 @@ msgstr ""
 "In einigen sehr seltenen Fällen reicht dies jedoch nicht aus. Beispielsweise "
 "möchten Sie vielleicht auf ein Mitglied aus der Basisklasse ``Godot.Object`` "
 "zugreifen, z.B. ``Connect``. Für solche Anwendungsfälle stellen wir eine "
-"statische Eigenschaft mit dem Namen ``Singleton`` bereit, die die Singleton-"
-"Instanz zurückgibt. Der Typ dieser Instanz ist ``Godot.Object``."
+"statische Eigenschaft mit dem Namen ``Singleton`` bereit, ignore-duplicate:"
+"die die Singleton-Instanz zurückgibt. Der Typ dieser Instanz ist ``Godot."
+"Object``."
 
 msgid "String"
-msgstr "Zeichenkette"
+msgstr "String"
 
 #, fuzzy
 msgid ""
@@ -1058,9 +1100,8 @@ msgid ""
 "`string.Equals`_ or `string.Compare`_)"
 msgstr ""
 
-#, fuzzy
 msgid "chr"
-msgstr "hr"
+msgstr "chr"
 
 #, fuzzy
 msgid "contains"
@@ -1420,6 +1461,10 @@ msgid ""
 "StringExtensions.ReplaceN (Consider using `string.Replace`_ or `RegEx`_)"
 msgstr ""
 
+#, fuzzy
+msgid "reverse"
+msgstr "Server"
+
 msgid "rfind"
 msgstr ""
 
@@ -1622,7 +1667,7 @@ msgid "to_wchar_buffer"
 msgstr ""
 
 msgid ""
-"StringExtensions.ToUtf16Buffer in Windows and StringExtensiont.ToUtf32Buffer "
+"StringExtensions.ToUtf16Buffer in Windows and StringExtensions.ToUtf32Buffer "
 "in other platforms"
 msgstr ""
 
@@ -1735,9 +1780,8 @@ msgstr ""
 "Die folgende Methode wurde in eine Eigenschaft mit einem neuen Namen "
 "konvertiert:"
 
-#, fuzzy
 msgid "``is_empty()``"
-msgstr "``center()``"
+msgstr "``is_empty()``"
 
 msgid "``IsEmpty``"
 msgstr ""
@@ -1752,17 +1796,15 @@ msgstr ""
 "Die folgenden Methoden wurden in Eigenschaften konvertiert, deren jeweilige "
 "Namen geändert wurden:"
 
-#, fuzzy
 msgid "``get_name()``"
-msgstr "``get_area()``"
+msgstr "``get_name()``"
 
 #, fuzzy
 msgid "``Name``"
 msgstr "``name``"
 
-#, fuzzy
 msgid "``get_object()``"
-msgstr "``get_area()``"
+msgstr "``get_object()``"
 
 #, fuzzy
 msgid "``Owner``"
@@ -1787,9 +1829,8 @@ msgstr "Aufruf"
 msgid "``Target``"
 msgstr "Ziel"
 
-#, fuzzy
 msgid "``get_method()``"
-msgstr "``method``"
+msgstr "``get_method()``"
 
 #, fuzzy
 msgid "``Method``"
@@ -1833,16 +1874,14 @@ msgstr "RID"
 msgid "This type is named ``Rid`` in C# to follow the .NET naming convention."
 msgstr "Für dieses Projekt halten wir uns an die Godot-Namenskonvention."
 
-#, fuzzy
 msgid "``get_id()``"
-msgstr "``get_area()``"
+msgstr "``get_id()``"
 
 msgid "``Id``"
 msgstr ""
 
-#, fuzzy
 msgid "``is_valid()``"
-msgstr "``is_instance_valid(obj)``"
+msgstr "``is_valid()``"
 
 msgid "``IsValid``"
 msgstr ""
@@ -1886,9 +1925,8 @@ msgstr "``get_rotation()``"
 msgid "``Rotation``"
 msgstr "``Drehung``"
 
-#, fuzzy
 msgid "``get_skew()``"
-msgstr "``get_scale()``"
+msgstr "``get_skew()``"
 
 msgid "``Skew``"
 msgstr ""
@@ -1940,15 +1978,14 @@ msgid ""
 msgstr ""
 
 msgid "AABB"
-msgstr ""
+msgstr "AABB"
 
 #, fuzzy
 msgid "This type is named ``Aabb`` in C# to follow the .NET naming convention."
 msgstr "Für dieses Projekt halten wir uns an die Godot-Namenskonvention."
 
-#, fuzzy
 msgid "``get_volume()``"
-msgstr "``get_scale()``"
+msgstr "``get_volume()``"
 
 #, fuzzy
 msgid "``Volume``"
@@ -2010,9 +2047,8 @@ msgid ""
 "properties."
 msgstr ""
 
-#, fuzzy
 msgid "``get_luminance()``"
-msgstr "``get_area()``"
+msgstr "``get_luminance()``"
 
 #, fuzzy
 msgid "``Luminance``"
@@ -2074,21 +2110,21 @@ msgid "See also :ref:`Array in C# <doc_c_sharp_collections_array>`."
 msgstr "Siehe auch: :ref:`doc_c_sharp_signals`."
 
 msgid "Dictionary"
-msgstr "Dictionary (Wörterbuch)"
+msgstr "Dictionary"
 
 #, fuzzy
 msgid ""
 "Use ``Godot.Collections.Dictionary`` for an untyped ``Variant`` dictionary. "
-"``Godot.Colelctions.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
+"``Godot.Collections.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
 "``Godot.Collections.Dictionary``."
 msgstr ""
 "``Godot.Collections.Dictionary<T>`` ist eine typsichere Hülle um ``Godot."
 "Collections.Dictionary``. Verwenden Sie den Konstruktor ``Godot.Collections."
 "Dictionary<T>(Godot.Collections.Dictionary)`` um eine zu erstellen."
 
-#, fuzzy
 msgid "See also :ref:`Dictionary in C# <doc_c_sharp_collections_dictionary>`."
-msgstr "18: :ref:`Dictionary<class_dictionary>`"
+msgstr ""
+"Siehe auch :ref:`Dictionary in C# <doc_c_sharp_collections_dictionary>`."
 
 msgid "Variant"
 msgstr "Variante"

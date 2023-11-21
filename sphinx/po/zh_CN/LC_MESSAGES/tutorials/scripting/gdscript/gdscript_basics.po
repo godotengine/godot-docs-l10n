@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "GDScript reference"
-msgstr "数据偏好"
+msgstr "GDScript 参考"
 
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is a high-level, `object-oriented <https://en."
 "wikipedia.org/wiki/Object-oriented_programming>`_, `imperative <https://en."
@@ -32,13 +30,18 @@ msgid ""
 "goal is to be optimized for and tightly integrated with Godot Engine, "
 "allowing great flexibility for content creation and integration."
 msgstr ""
-"*GDScript* 是一种用于创建内容的高级, 动态类型的编程语言. 它使用类似于 "
-"`Python <https://en.wikipedia.org/wiki/Python_%28programming_language%29>`_ "
-"的语法(块基于缩进, 许多关键字相似). 其目标是针对Godot引擎进行优化并与之紧密集"
-"成, 从而为内容创建和集成提供极大的灵活性."
+":ref:`GDScript<doc_gdscript>` 是一种高级\\ `面向对象 <https://zh.wikipedia."
+"org/wiki/"
+"%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1>`_\\ "
+"的\\ `指令式 <https://zh.wikipedia.org/wiki/"
+"%E6%8C%87%E4%BB%A4%E5%BC%8F%E7%B7%A8%E7%A8%8B>`_\\ 编程语言，使用\\ `渐进类"
+"型 <https://en.wikipedia.org/wiki/Gradual_typing>`_\\ ，专为 Godot 构建。"
+"GDScript 的语法基于缩进，与 `Python <https://zh.wikipedia.org/wiki/Python>`_ "
+"等语言类似。它的目标是针对 Godot 引擎优化，与 Godot 引擎紧密集成，从而为内容"
+"的创建与继承提供灵活的手段。"
 
 msgid "GDScript is entirely independent from Python and is not based on it."
-msgstr ""
+msgstr "GDScript 是完全独立于 Python 存在的，没有继承或扩展关系。"
 
 msgid "History"
 msgstr "历史"
@@ -47,10 +50,11 @@ msgid ""
 "Documentation about GDScript's history has been moved to the :ref:"
 "`Frequently Asked Questions <doc_faq_what_is_gdscript>`."
 msgstr ""
-"关于GDScript历史的文档已被移至 :ref:`常见问题 <doc_faq_what_is_gdscript>` 中."
+"关于 GDScript 历史的文档已移至\\ :ref:`常见问题 "
+"<doc_faq_what_is_gdscript>`\\ 。"
 
 msgid "Example of GDScript"
-msgstr "GDScript的示例"
+msgstr "GDScript 示例"
 
 #, fuzzy
 msgid ""
@@ -187,14 +191,15 @@ msgid "class"
 msgstr "class"
 
 #, fuzzy
-msgid "Defines a class."
-msgstr "定义一个内部类."
+msgid "Defines an inner class. See `Inner classes`_."
+msgstr "另一个类文件中的内部类。"
 
 msgid "class_name"
 msgstr "class_name"
 
 msgid ""
-"Defines the script as a globally accessible class with the specified name."
+"Defines the script as a globally accessible class with the specified name. "
+"See `Registering named classes`_."
 msgstr ""
 
 msgid "extends"
@@ -217,7 +222,7 @@ msgstr "查找"
 
 #, fuzzy
 msgid ""
-"Tests whether a value is within a string, list, range, dictionary, or node. "
+"Tests whether a value is within a string, array, range, dictionary, or node. "
 "When used with ``for``, it iterates through them instead of testing."
 msgstr ""
 "和 ``if`` 关键字一同使用时，会检查字符串、列表、范围、字典、节点中是否存在某"
@@ -289,18 +294,18 @@ msgid "Preloads a class or variable. See `Classes as resources`_."
 msgstr "预加载一个类或变量. 请参见 `类作为资源`_."
 
 msgid "await"
-msgstr ""
+msgstr "await"
 
 msgid ""
 "Waits for a signal or a coroutine to finish. See `Awaiting for signals or "
 "coroutines`_."
-msgstr ""
+msgstr "等待信号或协程完成。见\\ `等待信号和协程`_\\ 。"
 
 msgid "yield"
 msgstr "yield"
 
 msgid "Previously used for coroutines. Kept as keyword for transition."
-msgstr ""
+msgstr "以前用于协程。保留为关键字，方便迁移。"
 
 msgid "assert"
 msgstr "assert"
@@ -316,34 +321,32 @@ msgid "void"
 msgstr "void"
 
 msgid "Used to represent that a function does not return any value."
-msgstr ""
+msgstr "用于代表函数不返回任何值。"
 
 msgid "PI"
 msgstr "PI"
 
 msgid "PI constant."
-msgstr "圆周率常量."
+msgstr "PI 常量。"
 
 msgid "TAU"
 msgstr "TAU"
 
 msgid "TAU constant."
-msgstr "TAU 常量."
+msgstr "TAU 常量。"
 
 msgid "INF"
 msgstr "INF"
 
-#, fuzzy
 msgid "Infinity constant. Used for comparisons and as result of calculations."
-msgstr "无穷大常数. 用于比较."
+msgstr "无穷常量。用于比较和计算结果。"
 
 msgid "NAN"
 msgstr "NAN"
 
-#, fuzzy
 msgid ""
 "NAN (not a number) constant. Used as impossible result from calculations."
-msgstr "NAN(不是一个数字)常数. 用于比较."
+msgstr "NAN（非数）常量。用作计算的不可能结果。"
 
 msgid "Operators"
 msgstr "运算符"
@@ -357,25 +360,22 @@ msgstr "**运算符**"
 msgid "**Description**"
 msgstr "**描述**"
 
-#, fuzzy
 msgid "``(`` ``)``"
-msgstr "``<<`` ``>>``"
+msgstr "``(`` ``)``"
 
-#, fuzzy
 msgid "Grouping (highest priority)"
-msgstr "数组索引(最高优先级)"
+msgstr "分组（优先级最高）"
 
 msgid ""
 "Parentheses are not really an operator, but allow you to explicitly specify "
 "the precedence of an operation."
-msgstr ""
+msgstr "括号其实不是运算符，但是能够让你显式指定运算的优先级。"
 
 msgid "``x[index]``"
 msgstr "``x[index]``"
 
-#, fuzzy
 msgid "Subscription"
-msgstr "订阅"
+msgstr "下标"
 
 msgid "``x.attribute``"
 msgstr "``x.attribute``"
@@ -390,65 +390,67 @@ msgid "Function call"
 msgstr "函数调用"
 
 msgid "``await x``"
-msgstr ""
+msgstr "``await x``"
 
 msgid "`Awaiting for signals or coroutines`_"
-msgstr ""
+msgstr "`等待信号和协程`_"
 
-#, fuzzy
 msgid "``x is Node``"
-msgstr "``node``"
+msgstr "``x is Node``"
 
-#, fuzzy
 msgid "Type checking"
-msgstr "类型转换"
+msgstr "类型检查"
 
 msgid ""
 "See also :ref:`is_instance_of() <class_@GDScript_method_is_instance_of>` "
 "function."
 msgstr ""
+"另见 :ref:`is_instance_of() <class_@GDScript_method_is_instance_of>` 函数。"
 
 msgid "``x ** y``"
-msgstr ""
+msgstr "``x ** y``"
 
 msgid "Power"
-msgstr ""
+msgstr "幂"
 
 msgid ""
 "Multiplies ``x`` by itself ``y`` times, similar to calling :ref:`pow() "
 "<class_@GlobalScope_method_pow>` function."
 msgstr ""
+"将 ``x`` 与其自身相乘 ``y`` 次，类似于调用 :ref:`pow() "
+"<class_@GlobalScope_method_pow>` 函数。"
 
 msgid ""
 "**Note:** In GDScript, the ``**`` operator is `left-associative <https://en."
 "wikipedia.org/wiki/Operator_associativity>`_. See a detailed note after the "
 "table."
 msgstr ""
+"**注意：**\\ 在 GDScript 中，\\ ``**`` 运算符是\\ `左结合 <https://en."
+"wikipedia.org/wiki/Operator_associativity>`_\\ 的。详情见表后。"
 
 msgid "``~x``"
-msgstr ""
+msgstr "``~x``"
 
 msgid "Bitwise NOT"
 msgstr "按位取反"
 
 msgid "``+x``"
-msgstr ""
+msgstr "``+x``"
 
 msgid "``-x``"
 msgstr "``-x``"
 
-#, fuzzy
 msgid "Identity / Negation"
-msgstr "缩进"
+msgstr "一致 / 求负"
 
 msgid "``x * y``"
-msgstr ""
+msgstr "``x * y``"
 
 msgid "``x / y``"
-msgstr ""
+msgstr "``x / y``"
 
 msgid "``x % y``"
-msgstr ""
+msgstr "``x % y``"
 
 msgid "Multiplication / Division / Remainder"
 msgstr "乘法/除法/余数"
@@ -456,172 +458,168 @@ msgstr "乘法/除法/余数"
 msgid ""
 "The ``%`` operator is additionally used for :ref:`format strings "
 "<doc_gdscript_printf>`."
-msgstr ""
+msgstr "``%`` 运算符也用于\\ :ref:`字符串的格式化 <doc_gdscript_printf>`\\ 。"
 
 msgid ""
 "**Note:** These operators have the same behavior as C++, which may be "
 "unexpected for users coming from Python, JavaScript, etc. See a detailed "
 "note after the table."
 msgstr ""
+"**注意：**\\ 这些运算符的行为与 C++ 一致，对于来自 Python、JavaScript 等语言"
+"的用户可能存在意外的行为。详情见表后。"
 
 msgid "``x + y``"
-msgstr ""
+msgstr "``x + y``"
 
 msgid "``x - y``"
-msgstr ""
+msgstr "``x - y``"
 
-#, fuzzy
 msgid "Addition (or Concatenation) / Subtraction"
-msgstr "加法/数组的串联"
+msgstr "加法（或连接）/减法"
 
 msgid "``x << y``"
-msgstr ""
+msgstr "``x << y``"
 
 msgid "``x >> y``"
-msgstr ""
+msgstr "``x >> y``"
 
 msgid "Bit shifting"
 msgstr "位移位"
 
 msgid "``x & y``"
-msgstr ""
+msgstr "``x & y``"
 
 msgid "Bitwise AND"
 msgstr "按位与"
 
 msgid "``x ^ y``"
-msgstr ""
+msgstr "``x ^ y``"
 
 msgid "Bitwise XOR"
 msgstr "按位异或"
 
 msgid "``x | y``"
-msgstr ""
+msgstr "``x | y``"
 
 msgid "Bitwise OR"
 msgstr "按位或"
 
 msgid "``x == y``"
-msgstr ""
+msgstr "``x == y``"
 
 msgid "``x != y``"
-msgstr ""
+msgstr "``x != y``"
 
 msgid "``x < y``"
-msgstr ""
+msgstr "``x < y``"
 
 msgid "``x > y``"
-msgstr ""
+msgstr "``x > y``"
 
 msgid "``x <= y``"
-msgstr ""
+msgstr "``x <= y``"
 
 msgid "``x >= y``"
-msgstr ""
+msgstr "``x >= y``"
 
-#, fuzzy
 msgid "Comparison"
 msgstr "比较"
 
 msgid "See a detailed note after the table."
-msgstr ""
+msgstr "详情见表后。"
 
 msgid "``x in y``"
-msgstr ""
+msgstr "``x in y``"
 
 msgid "``x not in y``"
-msgstr ""
+msgstr "``x not in y``"
 
-#, fuzzy
 msgid "Inclusion checking"
-msgstr "遮挡剔除"
+msgstr "包含检查"
 
 msgid "``in`` is also used with the for_ keyword as part of the syntax."
-msgstr ""
+msgstr "``in`` 也在 for_ 关键字的语法中使用。"
 
-#, fuzzy
 msgid "``not x``"
-msgstr "``node``"
+msgstr "``not x``"
 
 msgid "``!x``"
-msgstr ""
+msgstr "``!x``"
 
 msgid "Boolean NOT and its :ref:`unrecommended <boolean_operators>` alias"
-msgstr ""
+msgstr "布尔“非”，以及\\ :ref:`不推荐使用 <boolean_operators>`\\ 的别名"
 
 msgid "``x and y``"
-msgstr ""
+msgstr "``x and y``"
 
 msgid "``x && y``"
-msgstr ""
+msgstr "``x && y``"
 
 msgid "Boolean AND and its :ref:`unrecommended <boolean_operators>` alias"
-msgstr ""
+msgstr "布尔“与”，以及\\ :ref:`不推荐使用 <boolean_operators>`\\ 的别名"
 
 msgid "``x or y``"
-msgstr ""
+msgstr "``x or y``"
 
 msgid "``x || y``"
-msgstr ""
+msgstr "``x || y``"
 
 msgid "Boolean OR and its :ref:`unrecommended <boolean_operators>` alias"
-msgstr ""
+msgstr "布尔“或”，以及\\ :ref:`不推荐使用 <boolean_operators>`\\ 的别名"
 
 msgid "``true_expr if cond else false_expr``"
-msgstr ""
+msgstr "``真表达式 if 条件 else 假表达式``"
 
 msgid "Ternary if/else"
 msgstr "三元 if/else"
 
-#, fuzzy
 msgid "``x as Node``"
-msgstr "``node``"
+msgstr "``x as Node``"
 
-#, fuzzy
 msgid "`Type casting <casting_>`_"
-msgstr "类型转换和强制转换"
+msgstr "`类型转换 <casting_>`_"
 
 msgid "``x = y``"
-msgstr ""
+msgstr "``x = y``"
 
 msgid "``x += y``"
-msgstr ""
+msgstr "``x += y``"
 
 msgid "``x -= y``"
-msgstr ""
+msgstr "``x -= y``"
 
 msgid "``x *= y``"
-msgstr ""
+msgstr "``x *= y``"
 
 msgid "``x /= y``"
-msgstr ""
+msgstr "``x /= y``"
 
 msgid "``x **= y``"
-msgstr ""
+msgstr "``x **= y``"
 
 msgid "``x %= y``"
-msgstr ""
+msgstr "``x %= y``"
 
 msgid "``x &= y``"
-msgstr ""
+msgstr "``x &= y``"
 
 msgid "``x |= y``"
-msgstr ""
+msgstr "``x |= y``"
 
 msgid "``x ^= y``"
-msgstr ""
+msgstr "``x ^= y``"
 
 msgid "``x <<= y``"
-msgstr ""
+msgstr "``x <<= y``"
 
 msgid "``x >>= y``"
-msgstr ""
+msgstr "``x >>= y``"
 
 msgid "Assignment (lowest priority)"
-msgstr "赋值(最低优先级)"
+msgstr "赋值（优先级最低）"
 
 msgid "You cannot use an assignment operator inside an expression."
-msgstr ""
+msgstr "表达式中不能使用赋值运算符。"
 
 msgid "The behavior of some operators may differ from what you expect:"
 msgstr ""
@@ -670,11 +668,24 @@ msgstr ""
 msgid "Literals"
 msgstr "字面量"
 
-msgid "**Literal**"
-msgstr "**字面量**"
+#, fuzzy
+msgid "**Example(s)**"
+msgstr "**Examples**"
 
-msgid "**Type**"
-msgstr "**类型**"
+msgid "``null``"
+msgstr "``null``"
+
+#, fuzzy
+msgid "Null value"
+msgstr "空值"
+
+#, fuzzy
+msgid "``false``, ``true``"
+msgstr "``-e``, ``--editor``"
+
+#, fuzzy
+msgid "Boolean values"
+msgstr "枚举值"
 
 msgid "``45``"
 msgstr "``45``"
@@ -704,29 +715,52 @@ msgstr "浮点数（实数）"
 msgid "``\"Hello\"``, ``'Hi'``"
 msgstr "``\"Hello\"``, ``\"Hi\"``"
 
-msgid "Strings"
-msgstr "字符串"
-
-msgid "``\"\"\"Hello\"\"\"``"
-msgstr "``\"\"\"Hello\"\"\"``"
-
-msgid "Multiline string"
-msgstr "多行字符串"
+#, fuzzy
+msgid "Regular strings"
+msgstr "镜面反射光效果"
 
 #, fuzzy
+msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+msgid "Triple-quoted regular strings"
+msgstr ""
+
+#, fuzzy
+msgid "``r\"Hello\"``, ``r'Hi'``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Raw strings"
+msgstr "字符串"
+
+#, fuzzy
+msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Hi\"``"
+
+#, fuzzy
+msgid "Triple-quoted raw strings"
+msgstr "GDScript 格式字符串"
+
 msgid "``&\"name\"``"
-msgstr "``name``"
+msgstr "``&\"name\"``"
 
 #, fuzzy
 msgid ":ref:`StringName <class_StringName>`"
 msgstr ":ref:`String <class_String>`"
 
-#, fuzzy
 msgid "``^\"Node/Label\"``"
-msgstr "``@\"Node/Label\"``"
+msgstr "``^\"Node/Label\"``"
 
 msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"There are also two constructs that look like literals, but actually are not:"
+msgstr ""
+
+msgid "**Example**"
+msgstr "**示例**"
 
 msgid "``$NodePath``"
 msgstr "``$NodePath``"
@@ -734,9 +768,8 @@ msgstr "``$NodePath``"
 msgid "Shorthand for ``get_node(\"NodePath\")``"
 msgstr "``get_node(\"NodePath\")`` 的简写"
 
-#, fuzzy
 msgid "``%UniqueNode``"
-msgstr "``node``"
+msgstr "``%UniqueNode``"
 
 #, fuzzy
 msgid "Shorthand for ``get_node(\"%UniqueNode\")``"
@@ -748,6 +781,127 @@ msgid ""
 msgstr ""
 "整数和浮点数可以用 ``_`` 来分隔，使其更易读。以下表示数字的方式都是有效"
 "的： ::"
+
+msgid "**Regular string literals** can contain the following escape sequences:"
+msgstr ""
+
+msgid "**Escape sequence**"
+msgstr "**转义序列**"
+
+msgid "**Expands to**"
+msgstr "**转义为**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "换行(line feed,LF)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "水平制表符(tab)"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "回车(carriage return,CR)"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "警报(蜂鸣/响铃)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "退格键(Backspace)"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr "换页符(form feed,FF)"
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "垂直制表符(tab)"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "双引号"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "单引号"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "反斜杠"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr "Unicode 代码点 ``XXXX`` (十六进制, 不区分大小写)"
+
+msgid "``\\UXXXXXX``"
+msgstr "``\\UXXXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr "Unicode 代码点 ``XXXX`` (十六进制, 不区分大小写)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above "
+"``0xFFFF``:"
+msgstr "有两种方法可以导出服务项目:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+msgid ""
+"A string enclosed in quotes of one type (for example ``\"``) can contain "
+"quotes of another type (for example ``'``) without escaping. Triple-quoted "
+"strings allow you to avoid escaping up to two consecutive quotes of the same "
+"type (unless they are adjacent to the string edges)."
+msgstr ""
+
+msgid ""
+"**Raw string literals** always encode the string as it appears in the source "
+"code. This is especially useful for regular expressions. Raw strings do not "
+"process escape sequences, but you can \"escape\" a quote or backslash (they "
+"replace themselves)."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
+msgstr "GDScript 也支持 :ref:`doc_gdscript_printf`."
 
 #, fuzzy
 msgid "Annotations"
@@ -834,6 +988,80 @@ msgid ""
 "comment."
 msgstr "任何从 ``#`` 开始到行尾的内容都会被忽略, 并被视为注释."
 
+msgid ""
+"In the Godot script editor, special keywords are highlighted within comments "
+"to bring the user's attention to specific comments:"
+msgstr ""
+
+msgid ""
+"**Critical** *(appears in red)*: ``ALERT``, ``ATTENTION``, ``CAUTION``, "
+"``CRITICAL``, ``DANGER``, ``SECURITY``"
+msgstr ""
+
+msgid ""
+"**Warning** *(appears in yellow)*: ``BUG``, ``DEPRECATED``, ``FIXME``, "
+"``HACK``, ``TASK``, ``TBD``, ``TODO``, ``WARNING``"
+msgstr ""
+
+msgid ""
+"**Notice** *(appears in green)*: ``INFO``, ``NOTE``, ``NOTICE``, ``TEST``, "
+"``TESTING``"
+msgstr ""
+
+msgid ""
+"These keywords are case-sensitive, so they must be written in uppercase for "
+"them to be recognized:"
+msgstr ""
+
+msgid ""
+"The list of highlighted keywords and their colors can be changed in the "
+"**Text Editor > Theme > Comment Markers** section of the Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Code regions"
+msgstr "注意事项"
+
+msgid ""
+"Code regions are special types of comments that the script editor "
+"understands as *foldable regions*. This means that after writing code region "
+"comments, you can collapse and expand the region by clicking the arrow that "
+"appears at the left of the comment. This arrow appears within a purple "
+"square to be distinguishable from standard code folding."
+msgstr ""
+
+#, fuzzy
+msgid "The syntax is as follows:"
+msgstr "文本内容如下："
+
+msgid ""
+"To create a code region quickly, select several lines in the script editor, "
+"right-click the selection then choose **Create Code Region**. The region "
+"description will be selected automatically for editing."
+msgstr ""
+
+msgid "It is possible to nest code regions within other code regions."
+msgstr ""
+
+#, fuzzy
+msgid "Here's a concrete usage example of code regions:"
+msgstr "以下是一些自定义效果的示例:"
+
+msgid ""
+"This can be useful to organize large chunks of code into easier to "
+"understand sections. However, remember that external editors generally don't "
+"support this feature, so make sure your code is easy to follow even when not "
+"relying on folding code regions."
+msgstr ""
+
+msgid ""
+"Individual functions and indented sections (such as ``if`` and ``for``) can "
+"*always* be collapsed in the script editor. This means you should avoid "
+"using a code region to contain a single function or indented section, as it "
+"won't bring much of a benefit. Code regions work best when they're used to "
+"group multiple elements together."
+msgstr ""
+
 #, fuzzy
 msgid "Line continuation"
 msgstr "引擎配置"
@@ -850,7 +1078,6 @@ msgstr ""
 msgid "Built-in types"
 msgstr "内置类型"
 
-#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
@@ -860,8 +1087,8 @@ msgid ""
 "``Resource``) have a ``duplicate()`` method that allows you to make a copy."
 msgstr ""
 "内置类型是分配在栈上的，按值传递。这意味着在每次赋值或将它们作为参数传递给函"
-"数时都会创建一个副本。唯一的例外是数组 ``Array`` 和字典 ``Dictionary`` ，它们"
-"是共享的，按引用传递。（类似 ``PoolByteArray`` 的池数组还是按值传递的。）"
+"数时都会创建一个副本。唯一的例外是数组 ``Array`` 和字典 ``Dictionary`` ，（类"
+"似 ``PoolByteArray`` 的池数组还是按值传递的。）它们是共享的，按引用传递。"
 
 msgid "Basic built-in types"
 msgstr "基本内置类型"
@@ -914,114 +1141,10 @@ msgstr ":ref:`String <class_String>`"
 #, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
-"Unicode>`_. String literals can contain the following escape sequences:"
+"Unicode>`_."
 msgstr ""
 "`Unicode 格式 <https://en.wikipedia.org/wiki/Unicode>`_ 的字符序列。字符串可"
 "以包含以下转义序列："
-
-msgid "**Escape sequence**"
-msgstr "**转义序列**"
-
-msgid "**Expands to**"
-msgstr "**转义为**"
-
-msgid "``\\n``"
-msgstr "``\\n``"
-
-msgid "Newline (line feed)"
-msgstr "换行(line feed,LF)"
-
-msgid "``\\t``"
-msgstr "``\\t``"
-
-msgid "Horizontal tab character"
-msgstr "水平制表符(tab)"
-
-msgid "``\\r``"
-msgstr "``\\r``"
-
-msgid "Carriage return"
-msgstr "回车(carriage return,CR)"
-
-msgid "``\\a``"
-msgstr "``\\a``"
-
-msgid "Alert (beep/bell)"
-msgstr "警报(蜂鸣/响铃)"
-
-msgid "``\\b``"
-msgstr "``\\b``"
-
-msgid "Backspace"
-msgstr "退格键(Backspace)"
-
-msgid "``\\f``"
-msgstr "``\\f``"
-
-msgid "Formfeed page break"
-msgstr "换页符(form feed,FF)"
-
-msgid "``\\v``"
-msgstr "``\\v``"
-
-msgid "Vertical tab character"
-msgstr "垂直制表符(tab)"
-
-msgid "``\\\"``"
-msgstr "``\\\"``"
-
-msgid "Double quote"
-msgstr "双引号"
-
-msgid "``\\'``"
-msgstr "``\\'``"
-
-msgid "Single quote"
-msgstr "单引号"
-
-msgid "``\\\\``"
-msgstr "``\\\\``"
-
-msgid "Backslash"
-msgstr "反斜杠"
-
-msgid "``\\uXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr "Unicode 代码点 ``XXXX`` (十六进制, 不区分大小写)"
-
-#, fuzzy
-msgid "``\\UXXXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
-msgstr "Unicode 代码点 ``XXXX`` (十六进制, 不区分大小写)"
-
-#, fuzzy
-msgid ""
-"There are two ways to represent an escaped Unicode character above 0xFFFF:"
-msgstr "有两种方法可以导出服务项目:"
-
-msgid ""
-"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
-"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
-msgstr ""
-
-msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
-msgstr ""
-
-msgid ""
-"Also, using ``\\`` followed by a newline inside a string will allow you to "
-"continue it in the next line, without inserting a newline character in the "
-"string itself."
-msgstr ""
-
-#, fuzzy
-msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
-msgstr "GDScript 也支持 :ref:`doc_gdscript_printf`."
 
 msgid ""
 "An immutable string that allows only one instance of each name. They are "
@@ -1300,11 +1423,12 @@ msgstr ":ref:`Dictionary <class_Dictionary>`"
 msgid "Associative container which contains values referenced by unique keys."
 msgstr "关联容器，包含的值通过唯一的键进行引用。"
 
+#, fuzzy
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
 "`` and doesn't use quotes to mark string keys (making for slightly less to "
 "write). However, keys written in this form can't start with a digit (like "
-"any GDScript identifier)."
+"any GDScript identifier), and must be string literals."
 msgstr ""
 "还支持 Lua 风格的 table 语法。Lua 风格使用 ``=`` 而不是 ``:``\\ ，并且不使用"
 "引号来标记字符串键（这样要写的东西会稍微少一些）。但是请注意，与任何 "
@@ -1327,9 +1451,8 @@ msgstr ""
 "点，可以换用 :ref:`Object.get() <class_Object_method_get>` 和 :ref:`Object."
 "set() <class_Object_method_set>` 方法。"
 
-#, fuzzy
 msgid ":ref:`Signal <class_Signal>`"
-msgstr ":ref:`int<class_int>`"
+msgstr ":ref:`Signal <class_Signal>`"
 
 msgid ""
 "A signal is a message that can be emitted by an object to those who want to "
@@ -1341,9 +1464,8 @@ msgid ""
 "button_up``."
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`Callable <class_Callable>`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`Callable <class_Callable>`"
 
 msgid ""
 "Contains an object and a function, which is useful for passing functions as "
@@ -1840,9 +1962,6 @@ msgstr ""
 "``match`` 语句用于分支程序的执行。它相当于在许多其他语言中出现的 ``switch`` "
 "语句，但提供了一些附加功能。"
 
-msgid "Basic syntax::"
-msgstr "基本语法： ::"
-
 msgid ""
 "``match`` is more type strict than the ``==`` operator. For example ``1`` "
 "will **not** match ``1.0``. The only exception is ``String`` vs "
@@ -1850,7 +1969,12 @@ msgid ""
 "equal to the StringName ``&\"hello\"``."
 msgstr ""
 
-msgid "**Crash-course for people who are familiar with switch statements**:"
+#, fuzzy
+msgid "Basic syntax"
+msgstr "基本语法： ::"
+
+#, fuzzy
+msgid "Crash-course for people who are familiar with switch statements"
 msgstr "**熟悉 switch 语句的人的速成课程**\\ ："
 
 msgid "Replace ``switch`` with ``match``."
@@ -1866,7 +1990,8 @@ msgstr "删除 ``case``\\ 。"
 msgid "Change ``default`` to a single underscore."
 msgstr "将 ``default`` 替换为单个下划线。"
 
-msgid "**Control flow**:"
+#, fuzzy
+msgid "Control flow"
 msgstr "**控制流**\\ ："
 
 #, fuzzy
@@ -1884,20 +2009,25 @@ msgid ""
 "in Godot 4.0."
 msgstr ""
 
-msgid "There are 6 pattern types:"
-msgstr "有6种模式类型:"
+#, fuzzy
+msgid "The following pattern types are available:"
+msgstr "可以使用以下操作符："
 
-msgid "Constant pattern"
-msgstr "常量模式"
+#, fuzzy
+msgid "Literal pattern"
+msgstr "数组模式"
 
-msgid "Constant primitives, like numbers and strings::"
-msgstr "常量原语，例如数字和字符串： ::"
+msgid "Matches a `literal <Literals_>`_::"
+msgstr ""
 
-msgid "Variable pattern"
-msgstr "变量模式"
+#, fuzzy
+msgid "Expression pattern"
+msgstr "Expression 节点"
 
-msgid "Matches the contents of a variable/enum::"
-msgstr "匹配变量/枚举的内容： ::"
+msgid ""
+"Matches a constant expression, an identifier, or an attribute access (``A."
+"B``)::"
+msgstr ""
 
 msgid "Wildcard pattern"
 msgstr "通配符模式"
@@ -1977,6 +2107,34 @@ msgid ""
 "You can also specify multiple patterns separated by a comma. These patterns "
 "aren't allowed to have any bindings in them."
 msgstr "您还可以指定由逗号分隔的多重模式. 这些模式不允许包含任何绑定."
+
+#, fuzzy
+msgid "Pattern guards"
+msgstr "Eastern Mari"
+
+msgid ""
+"Only one branch can be executed per ``match``. Once a branch is chosen, the "
+"rest are not checked. If you want to use the same pattern for multiple "
+"branches or to prevent choosing a branch with too general pattern, you can "
+"specify a guard expression after the list of patterns with the ``when`` "
+"keyword::"
+msgstr ""
+
+msgid ""
+"If there is no matching pattern for the current branch, the guard expression "
+"is **not** evaluated and the patterns of the next branch are checked."
+msgstr ""
+
+msgid "If a matching pattern is found, the guard expression is evaluated."
+msgstr ""
+
+msgid ""
+"If it's true, then the body of the branch is executed and ``match`` ends."
+msgstr ""
+
+#, fuzzy
+msgid "If it's false, then the patterns of the next branch are checked."
+msgstr "如果不指定值, 则仅检查键的存在."
 
 msgid "Classes"
 msgstr "类"
@@ -2225,32 +2383,66 @@ msgid "Example::"
 msgstr "示例："
 
 msgid ""
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called (except as noted below), even when accessed "
+"inside the same class (with or without prefixing with ``self.``). This makes "
+"the behavior consistent. If you need direct access to the value, use another "
+"variable for direct access and make the property code use that name."
+msgstr ""
+
+#, fuzzy
+msgid "Alternative syntax"
+msgstr "替代方案"
+
+msgid ""
+"Also there is another notation to use existing class functions if you want "
+"to split the code from the variable declaration or you need to reuse the "
+"code across multiple properties (but you can't distinguish which property "
+"the setter/getter is being called for)::"
+msgstr ""
+
+#, fuzzy
+msgid "This can also be done in the same line::"
+msgstr "可以使用以下步骤实现。"
+
+msgid ""
+"The setter and getter must use the same notation, mixing styles for the same "
+"variable is not allowed."
+msgstr ""
+
+msgid ""
+"You cannot specify type hints for *inline* setters and getters. This is done "
+"on purpose to reduce the boilerplate. If the variable is typed, then the "
+"setter's argument is automatically of the same type, and the getter's return "
+"value must match it. Separated setter/getter functions can have type hints, "
+"and the type must match the variable's type or be a wider type."
+msgstr ""
+
+msgid "When setter/getter is not called"
+msgstr ""
+
+msgid ""
+"When a variable is initialized, the value of the initializer will be written "
+"directly to the variable. Including if the ``@onready`` annotation is "
+"applied to the variable."
+msgstr ""
+
+msgid ""
 "Using the variable's name to set it inside its own setter or to get it "
 "inside its own getter will directly access the underlying member, so it "
 "won't generate infinite recursion and saves you from explicitly declaring "
 "another variable::"
 msgstr ""
 
-msgid "This backing member variable is not created if you don't use it."
-msgstr ""
-
-msgid ""
-"Unlike ``setget`` in previous Godot versions, the properties setter and "
-"getter are **always** called, even when accessed inside the same class (with "
-"or without prefixing with ``self.``). This makes the behavior consistent. If "
-"you need direct access to the value, use another variable for direct access "
-"and make the property code use that name."
-msgstr ""
-
-msgid ""
-"In case you want to split the code from the variable declaration or you need "
-"to share the code across multiple properties, you can use a different "
-"notation to use existing class functions::"
-msgstr ""
-
 #, fuzzy
-msgid "This can also be done in the same line."
-msgstr "可以使用以下步骤实现："
+msgid "This also applies to the alternative syntax::"
+msgstr "这是必需的语法："
+
+msgid ""
+"The exception does **not** propagate to other functions called in the setter/"
+"getter. For example, the following code **will** cause an infinite "
+"recursion::"
+msgstr ""
 
 msgid "Tool mode"
 msgstr "工具模式"
@@ -2438,9 +2630,8 @@ msgid ""
 msgstr ""
 "我们的 ``BattleLog`` 节点接收绑定数组中的每个元素作为一个额外的参数： ::"
 
-#, fuzzy
 msgid "Awaiting for signals or coroutines"
-msgstr "定位原始内容"
+msgstr "等待信号和协程"
 
 msgid ""
 "The ``await`` keyword can be used to create `coroutines <https://en."
@@ -2450,38 +2641,48 @@ msgid ""
 "the caller. When the signal is emitted (or the called coroutine finishes), "
 "it will resume execution from the point on where it stopped."
 msgstr ""
+"``await`` 关键字可以用来创建\\ `协程 <https://zh.wikipedia.org/wiki/"
+"%E5%8D%8F%E7%A8%8B>`_\\ ，会等待某个信号发出之后再继续执行。对信号或者对同为"
+"协程的函数调用使用 ``await`` 关键字会立即将控制权返回给调用方。发出信号时（或"
+"者调用的协程完成时），就会从停止的地方继续执行。"
 
 msgid ""
 "For example, to stop execution until the user presses a button, you can do "
 "something like this::"
-msgstr ""
+msgstr "例如，要停止到用户按下某个按钮，你就可以这样： ::"
 
 msgid ""
 "In this case, the ``wait_confirmation`` becomes a coroutine, which means "
 "that the caller also needs to await for it::"
 msgstr ""
+"此时 ``wait_confirmation`` 就会变成协程，因此调用方也需要对它进行 await： ::"
 
 msgid ""
 "Note that requesting a coroutine's return value without ``await`` will "
 "trigger an error::"
-msgstr ""
+msgstr "请注意，请求协程的返回值时不带 ``await`` 会触发报错： ::"
 
 msgid ""
 "However, if you don't depend on the result, you can just call it "
 "asynchronously, which won't stop execution and won't make the current "
 "function a coroutine::"
 msgstr ""
+"但是如果你不需要结果，直接异步调用就可以了，既不会阻止运行，也不会让当前的函"
+"数变成协程： ::"
 
 msgid ""
 "If you use await with an expression that isn't a signal nor a coroutine, the "
 "value will be returned immediately and the function won't give the control "
 "back to the caller::"
 msgstr ""
+"如果对不是信号和协程的表达式使用 await，就会立即返回对应的值，函数也不会将控"
+"制权转交回调用方： ::"
 
 msgid ""
 "This also means that returning a signal from a function that isn't a "
 "coroutine will make the caller await on that signal::"
 msgstr ""
+"这就意味着，如果从不是协程的函数中返回信号，那么调用方就会等待那个信号： ::"
 
 msgid ""
 "Unlike ``yield`` in previous Godot versions, you cannot obtain the function "
@@ -2489,6 +2690,9 @@ msgid ""
 "place, a function cannot say that it returns an ``int`` while it actually "
 "returns a function state object during runtime."
 msgstr ""
+"与之前版本 Godot 中的 ``yield`` 不同，你无法获取函数状态对象。这是出于类型安"
+"全的考虑。要实现类型安全，函数就没法说自己在返回 ``int`` 的同时还可能在运行时"
+"返回函数状态对象。"
 
 msgid "Assert keyword"
 msgstr "Assert 关键字"
@@ -2514,7 +2718,7 @@ msgstr "从编辑器运行项目时, 如果发生断言错误, 该项目将被�
 msgid ""
 "You can optionally pass a custom error message to be shown if the assertion "
 "fails::"
-msgstr ""
+msgstr "你还可以传入自定义的错误消息，会在断言失败时显示： ::"
 
 msgid "Translation status"
 msgstr "翻译状态"

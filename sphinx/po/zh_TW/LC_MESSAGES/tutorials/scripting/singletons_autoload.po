@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Singletons (Autoload)"
 msgstr "單例（Autoload）"
 
 msgid "Introduction"
-msgstr "簡介"
+msgstr "前言"
 
 msgid ""
 "Godot's scene system, while powerful and flexible, has a drawback: there is "
@@ -83,9 +82,8 @@ msgid ""
 msgstr "**行為** 類似單例模式，只是 GDScript 在設計上不支援全域變數。"
 
 msgid "Autoloading nodes and scripts can give us these characteristics."
-msgstr "通過讓節點與腳本自動載入便能實現這些特徵。"
+msgstr "通過讓節點與腳本自動載入便能實作這些特徵。"
 
-#, fuzzy
 msgid ""
 "Godot won't make an Autoload a \"true\" singleton as per the singleton "
 "design pattern. It may still be instanced more than once by the user if "
@@ -99,12 +97,12 @@ msgid ""
 "`registering it automatically in the Project Settings "
 "<doc_making_plugins_autoload>` when the plugin is enabled."
 msgstr ""
+"如果你建立的自動載入是編輯器外掛程式的一部分，請考慮在啟用外掛程式時:ref:`將"
+"其自動註冊到專案設定中 <doc_making_plugins_autoload>`。"
 
-#, fuzzy
 msgid "Autoload"
-msgstr "Autoload"
+msgstr "自動載入"
 
-#, fuzzy
 msgid ""
 "You can create an Autoload to load a scene or a script that inherits from :"
 "ref:`class_Node`."
@@ -118,7 +116,6 @@ msgstr ""
 "當 Autoload 腳本時，會新增一個 :ref:`class_Node` 並將該腳本附加到 Node 上。這"
 "個節點會在其他場景載入前被新增到根檢視區上。"
 
-#, fuzzy
 msgid ""
 "To autoload a scene or script, select **Project > Project Settings** from "
 "the menu and switch to the **Autoload** tab."
@@ -126,7 +123,6 @@ msgstr ""
 "要自動載入場景或腳本，請從選單中選擇 **[專案] -> [專案設定]** 然後切換到 "
 "**[AutoLoad]** 分頁。"
 
-#, fuzzy
 msgid ""
 "Here you can add any number of scenes or scripts. Each entry in the list "
 "requires a name, which is assigned as the node's ``name`` property. The "
@@ -134,7 +130,7 @@ msgid ""
 "manipulated using the up/down arrow keys. Like regular scenes, the engine "
 "will read these nodes in top-to-bottom order."
 msgstr ""
-"這裡可以新增任意數量的場景或腳本。列表中的每一個項目都必須填寫名稱，這個名稱"
+"這裡可以新增任意數量的場景或腳本。列表中的每一個專案都必須填寫名稱，這個名稱"
 "會被指派為節點的 ``name`` 屬性。列表上的順序就是載入進全域場景樹的順序，可以"
 "使用上下方向了來更改。"
 
@@ -144,7 +140,6 @@ msgid ""
 msgstr ""
 "這表示，所有的節點都可以通過下列方式來存取名為「PlayerVariables」的單例："
 
-#, fuzzy
 msgid ""
 "If the **Enable** column is checked (which is the default), then the "
 "singleton can be accessed directly in GDScript, without requiring "
@@ -165,11 +160,12 @@ msgid ""
 "Autoloads must **not** be removed using ``free()`` or ``queue_free()`` at "
 "runtime, or the engine will crash."
 msgstr ""
+"運作時絕對**不能**通過 ``free()`` 或 ``queue_free()`` 去移除自動載入，否則引"
+"擎會當機。"
 
 msgid "Custom scene switcher"
 msgstr "自製場景切換器"
 
-#, fuzzy
 msgid ""
 "This tutorial will demonstrate building a scene switcher using autoloads. "
 "For basic scene switching, you can use the :ref:`SceneTree."
@@ -183,7 +179,6 @@ msgstr ""
 "`doc_scene_tree` )。但若在切換場景時需要更複雜的行為，則這個方法就有更多功"
 "能。"
 
-#, fuzzy
 msgid ""
 "To begin, download the template from here: `singleton_autoload_starter.zip "
 "<https://github.com/godotengine/godot-docs-project-starters/releases/"
@@ -192,7 +187,6 @@ msgstr ""
 "要開始本教學，請先下載這個樣板： :download:`autoload.zip <files/autoload."
 "zip>` 然後在 Godot 中打開。"
 
-#, fuzzy
 msgid ""
 "The project contains two scenes: ``scene_1.tscn`` and ``scene_2.tscn``. Each "
 "scene contains a label displaying the scene name and a button with its "
@@ -203,11 +197,9 @@ msgstr ""
 "了一個展示場景名稱的 Label ，自己一個連結了 ``pressed()`` 訊號的按鈕。執行專"
 "案時會從 ``Scene1.tscn`` 開始執行。但，現在按按鈕還不會發生任何事。"
 
-#, fuzzy
 msgid "Creating the script"
 msgstr "建立腳本"
 
-#, fuzzy
 msgid ""
 "Open the **Script** window and create a new script called ``global.gd``. "
 "Make sure it inherits from ``Node``:"
@@ -215,7 +207,6 @@ msgstr ""
 "切換到 **[腳本]** 分頁並建立名為 ``Global.gd`` 的腳本。請確認該腳本有繼承 "
 "``Node`` ："
 
-#, fuzzy
 msgid ""
 "The next step is to add this script to the autoLoad list. Open **Project > "
 "Project Settings** from the menu, switch to the **Autoload** tab and select "
@@ -231,7 +222,6 @@ msgid ""
 "loaded."
 msgstr "現在，無論正在執行專案中的哪個場景，這個腳本都會被載入。"
 
-#, fuzzy
 msgid ""
 "Returning to the script, it needs to fetch the current scene in the "
 "`_ready()` function. Both the current scene (the one with the button) and "

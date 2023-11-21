@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "cheatsheet, cheat sheet, shortcut"
 msgstr "Cheatsheet, Cheat Sheet, Shortcut"
 
 msgid "Default editor shortcuts"
-msgstr "Editor Standard Tastenkürzel"
+msgstr "Default-Editor-Tastenkürzel"
 
 msgid ""
 "Many of Godot Editor functions can be executed with keyboard shortcuts. This "
@@ -78,7 +78,7 @@ msgid "Editor setting"
 msgstr "Editoreinstellungen"
 
 msgid "Open 2D Editor"
-msgstr "2D Editor öffnen"
+msgstr "2D-Editor öffnen"
 
 msgid ":kbd:`Ctrl + F1`"
 msgstr ":kbd:`Ctrl + F12`"
@@ -90,7 +90,7 @@ msgid "``editor/editor_2d``"
 msgstr "``editor/editor_2d``"
 
 msgid "Open 3D Editor"
-msgstr "3D Editor öffnen"
+msgstr "3D-Editor öffnen"
 
 msgid ":kbd:`Ctrl + F2`"
 msgstr ":kbd:`Ctrl + F2`"
@@ -315,7 +315,7 @@ msgid "``editor/file_quit``"
 msgstr "``editor/file_quit``"
 
 msgid "Quit to Project List"
-msgstr "Zur Projektverwaltung zurückkehren"
+msgstr "Zum Projektmanager zurückkehren"
 
 msgid ":kbd:`Ctrl + Shift + Q`"
 msgstr ":kbd:`Ctrl + Shift + Q`"
@@ -327,7 +327,7 @@ msgid "``editor/quit_to_project_list``"
 msgstr "``editor/quit_to_project_list``"
 
 msgid "Take Screenshot"
-msgstr "Bildschirmfoto erstellen"
+msgstr "Screenshot erstellen"
 
 msgid ":kbd:`Ctrl + F12`"
 msgstr ":kbd:`Ctrl + F12`"
@@ -339,7 +339,7 @@ msgid "``editor/take_screenshot``"
 msgstr "``editor/take_screenshot``"
 
 msgid "Toggle Fullscreen"
-msgstr "Vollbildmodus umschalten"
+msgstr "Vollbildmodus ein-/ausschalten"
 
 msgid ":kbd:`Shift + F11`"
 msgstr ":kbd:`Shift + F11`"
@@ -411,7 +411,7 @@ msgid "``editor/play_custom_scene``"
 msgstr "``editor/play_custom_scene``"
 
 msgid "Expand Bottom Panel"
-msgstr "Unteres Panel vergrößern"
+msgstr "Unteres Bedienfeld vergrößern"
 
 msgid ":kbd:`Shift + F12`"
 msgstr ":kbd:`Shift + F12`"
@@ -420,10 +420,10 @@ msgid "``editor/bottom_panel_expand``"
 msgstr "``editor/bottom_panel_expand``"
 
 msgid "2D / Canvas Item Editor"
-msgstr "2D / Canvas Item Editor"
+msgstr "2D / Canvas-Element-Editor"
 
 msgid "Zoom In"
-msgstr "Vergrößern"
+msgstr "Hereinzoomen"
 
 msgid ":kbd:`Ctrl + =`"
 msgstr ":kbd:`Ctrl + =`"
@@ -435,7 +435,7 @@ msgid "``canvas_item_editor/zoom_plus``"
 msgstr "``canvas_item_editor/zoom_plus``"
 
 msgid "Zoom Out"
-msgstr "Verkleinern"
+msgstr "Hinauszoomen"
 
 msgid ":kbd:`Ctrl + -`"
 msgstr ":kbd:`Ctrl + -`"
@@ -459,7 +459,7 @@ msgid "``canvas_item_editor/zoom_reset``"
 msgstr "``canvas_item_editor/zoom_reset``"
 
 msgid "Pan View"
-msgstr "Sicht verschieben"
+msgstr "Sicht schwenken"
 
 msgid ":kbd:`Space`"
 msgstr ":kbd:`Space`"
@@ -495,7 +495,7 @@ msgid "``canvas_item_editor/rotate_mode``"
 msgstr "``canvas_item_editor/rotate_mode``"
 
 msgid "Scale Mode"
-msgstr "Skalierungsmodus"
+msgstr "Skalierungs-Modus"
 
 msgid ":kbd:`S`"
 msgstr ":kbd:`S`"
@@ -513,7 +513,7 @@ msgid "``canvas_item_editor/ruler_mode``"
 msgstr "``canvas_item_editor/ruler_mode``"
 
 msgid "Use Smart Snap"
-msgstr "Kluges Einrasten verwenden"
+msgstr "Intelligentes Einrasten"
 
 msgid ":kbd:`Shift + S`"
 msgstr ":kbd:`Shift + S`"
@@ -522,7 +522,7 @@ msgid "``canvas_item_editor/use_smart_snap``"
 msgstr "``canvas_item_editor/use_smart_snap``"
 
 msgid "Use Grid Snap"
-msgstr "Gitter-Einrasten benutzen"
+msgstr "am Raster einrasten"
 
 msgid ":kbd:`Shift + G`"
 msgstr ":kbd:`Shift + G`"
@@ -531,7 +531,7 @@ msgid "``canvas_item_editor/use_grid_snap``"
 msgstr "``canvas_item_editor/use_grid_snap``"
 
 msgid "Multiply grid step by 2"
-msgstr "Gitterstufe verdoppeln"
+msgstr "Rasterstufe verdoppeln"
 
 msgid ":kbd:`Num *`"
 msgstr ":kbd:`Num *`"
@@ -540,7 +540,7 @@ msgid "``canvas_item_editor/multiply_grid_step``"
 msgstr "``canvas_item_editor/multiply_grid_step``"
 
 msgid "Divide grid step by 2"
-msgstr "Gitterstufe halbieren"
+msgstr "Rasterstufe halbieren"
 
 msgid ":kbd:`Num /`"
 msgstr ":kbd:`Num /`"
@@ -585,7 +585,7 @@ msgid "``canvas_item_editor/center_selection``"
 msgstr "``canvas_item_editor/center_selection``"
 
 msgid "Frame Selection"
-msgstr "Auswahl einrahmen"
+msgstr "Frame-Auswahl"
 
 msgid ":kbd:`Shift + F`"
 msgstr ":kbd:`Shift + F`"
@@ -606,7 +606,7 @@ msgid "``canvas_item_editor/preview_canvas_scale``"
 msgstr "``canvas_item_editor/preview_canvas_scale``"
 
 msgid "Insert Key"
-msgstr "Schlüsselbild einfügen"
+msgstr "Key einfügen"
 
 msgid ":kbd:`Ins`"
 msgstr ":kbd:`Ins`"
@@ -615,7 +615,7 @@ msgid "``canvas_item_editor/anim_insert_key``"
 msgstr "``canvas_item_editor/anim_insert_key``"
 
 msgid "Insert Key (Existing Tracks)"
-msgstr "Schlüsselbild einfügen (in existierende Spuren)"
+msgstr "Key einfügen (in existierende Tracks)"
 
 msgid ":kbd:`Ctrl + Ins`"
 msgstr ":kbd:`Ctrl + Ins`"
@@ -651,13 +651,13 @@ msgid "3D / Spatial Editor"
 msgstr "3D / Spatial-Editor"
 
 msgid "Toggle Freelook"
-msgstr "Freie Kamera umschalten"
+msgstr "Freie Kamera ein-/ausschalten"
 
 msgid "``spatial_editor/freelook_toggle``"
 msgstr "``spatial_editor/freelook_toggle``"
 
 msgid "Freelook Left"
-msgstr "Freisicht Links"
+msgstr "Freelook Links"
 
 msgid ":kbd:`A`"
 msgstr ":kbd:`A`"
@@ -666,7 +666,7 @@ msgid "``spatial_editor/freelook_left``"
 msgstr "``spatial_editor/freelook_left``"
 
 msgid "Freelook Right"
-msgstr "Freisicht Rechts"
+msgstr "Freelook Rechts"
 
 msgid ":kbd:`D`"
 msgstr ":kbd:`D`"
@@ -675,31 +675,31 @@ msgid "``spatial_editor/freelook_right``"
 msgstr "``spatial_editor/freelook_right``"
 
 msgid "Freelook Forward"
-msgstr "Freisicht Vorwärts"
+msgstr "Freelook Vorwärts"
 
 msgid "``spatial_editor/freelook_forward``"
 msgstr "``spatial_editor/freelook_forward``"
 
 msgid "Freelook Backwards"
-msgstr "Freisicht Rückwärts"
+msgstr "Freelook Rückwärts"
 
 msgid "``spatial_editor/freelook_backwards``"
 msgstr "``spatial_editor/freelook_backwards``"
 
 msgid "Freelook Up"
-msgstr "Freisicht Hoch"
+msgstr "Freelook Hoch"
 
 msgid "``spatial_editor/freelook_up``"
 msgstr "``spatial_editor/freelook_up``"
 
 msgid "Freelook Down"
-msgstr "Freisicht Runter"
+msgstr "Freelook Runter"
 
 msgid "``spatial_editor/freelook_down``"
 msgstr "``spatial_editor/freelook_down``"
 
 msgid "Freelook Speed Modifier"
-msgstr "Freisicht Geschwindigkeitsregler"
+msgstr "Freelook-Geschwindigkeits-Modifier"
 
 msgid ":kbd:`Shift`"
 msgstr ":kbd:`Shift`"
@@ -708,7 +708,7 @@ msgid "``spatial_editor/freelook_speed_modifier``"
 msgstr "``spatial_editor/freelook_speed_modifier``"
 
 msgid "Freelook Slow Modifier"
-msgstr "Freisicht Trägheitsregler"
+msgstr "Freelook-Trägheits-Modifier"
 
 msgid ":kbd:`Alt`"
 msgstr ":kbd:`Alt`"
@@ -729,7 +729,7 @@ msgid "``spatial_editor/tool_scale``"
 msgstr "``spatial_editor/tool_scale``"
 
 msgid "Use Local Space"
-msgstr "Lokalkoordinaten verwenden"
+msgstr "Local-Space verwenden"
 
 msgid ":kbd:`T`"
 msgstr ":kbd:`T`"
@@ -816,7 +816,7 @@ msgid "``spatial_editor/switch_perspective_orthogonal``"
 msgstr "``spatial_editor/switch_perspective_orthogonal``"
 
 msgid "Insert Animation Key"
-msgstr "Animations-Schlüsselbild einfügen"
+msgstr "Animations-Key einfügen"
 
 msgid ":kbd:`K`"
 msgstr ":kbd:`K`"
@@ -840,7 +840,7 @@ msgid "``spatial_editor/focus_selection``"
 msgstr "``spatial_editor/focus_selection``"
 
 msgid "Align Transform with View"
-msgstr "Transform auf Sicht ausrichten"
+msgstr "Transform an Ansicht ausrichten"
 
 msgid ":kbd:`Ctrl + Alt + M`"
 msgstr ":kbd:`Ctrl + Alt + M`"
@@ -864,7 +864,7 @@ msgid "``spatial_editor/align_rotation_with_view``"
 msgstr "``spatial_editor/align_rotation_with_view``"
 
 msgid "1 Viewport"
-msgstr "Eine Ansicht"
+msgstr "1 Viewport"
 
 msgid ":kbd:`Ctrl + 1`"
 msgstr ":kbd:`Ctrl + 1`"
@@ -876,7 +876,7 @@ msgid "``spatial_editor/1_viewport``"
 msgstr "``spatial_editor/1_viewport``"
 
 msgid "2 Viewports"
-msgstr "Zwei Ansichten"
+msgstr "2 Viewports"
 
 msgid ":kbd:`Ctrl + 2`"
 msgstr ":kbd:`Ctrl + 2`"
@@ -888,7 +888,7 @@ msgid "``spatial_editor/2_viewports``"
 msgstr "``spatial_editor/2_viewports``"
 
 msgid "2 Viewports (Alt)"
-msgstr "Zwei Ansichten (alternativ)"
+msgstr "2 Viewports (alternativ)"
 
 msgid ":kbd:`Ctrl + Alt + 2`"
 msgstr ":kbd:`Ctrl + Alt + 2`"
@@ -900,7 +900,7 @@ msgid "``spatial_editor/2_viewports_alt``"
 msgstr "``spatial_editor/2_viewports_alt``"
 
 msgid "3 Viewports"
-msgstr "Drei Ansichten"
+msgstr "3 Viewports"
 
 msgid ":kbd:`Ctrl + 3`"
 msgstr ":kbd:`Ctrl + 3`"
@@ -912,7 +912,7 @@ msgid "``spatial_editor/3_viewports``"
 msgstr "``spatial_editor/3_viewports``"
 
 msgid "3 Viewports (Alt)"
-msgstr "Drei Ansichten (alternativ)"
+msgstr "3 Viewports (alternativ)"
 
 msgid ":kbd:`Ctrl + Alt + 3`"
 msgstr ":kbd:`Ctrl + Alt + 3`"
@@ -924,7 +924,7 @@ msgid "``spatial_editor/3_viewports_alt``"
 msgstr "``spatial_editor/3_viewports_alt``"
 
 msgid "4 Viewports"
-msgstr "Vier Ansichten"
+msgstr "4 Viewports"
 
 msgid ":kbd:`Ctrl + 4`"
 msgstr ":kbd:`Ctrl + 4`"
@@ -1098,7 +1098,7 @@ msgid "``script_text_editor/delete_line``"
 msgstr "``script_text_editor/delete_line``"
 
 msgid "Toggle Comment"
-msgstr "Kommentar umschalten"
+msgstr "Kommentar ein-/ausschalten"
 
 msgid ":kbd:`Ctrl + K`"
 msgstr ":kbd:`Ctrl + K`"
@@ -1110,25 +1110,30 @@ msgid "``script_text_editor/toggle_comment``"
 msgstr "``script_text_editor/toggle_comment``"
 
 msgid "Fold/Unfold Line"
-msgstr "Zeile ein/aufklappen"
+msgstr "Zeile ein-/ausklappen"
 
 msgid ":kbd:`Alt + F`"
 msgstr ":kbd:`Alt + F`"
 
+#, fuzzy
+msgid ":kbd:`Ctrl + Cmd + F`"
+msgstr ":kbd:`Ctrl + Cmd + J`"
+
 msgid "``script_text_editor/toggle_fold_line``"
 msgstr "``script_text_editor/toggle_fold_line``"
 
-msgid "Clone Down"
-msgstr "Klone herunter"
+msgid "Duplicate Selection"
+msgstr "Auswahl duplizieren"
 
-msgid ":kbd:`Ctrl + D`"
-msgstr ":kbd:`Ctrl + D`"
+msgid ":kbd:`Ctrl + Shift + D`"
+msgstr ":kbd:`Ctrl + Shift + D`"
 
 msgid ":kbd:`Cmd + Shift + C`"
 msgstr ":kbd:`Cmd + Shift + C`"
 
-msgid "``script_text_editor/clone_down``"
-msgstr "``script_text_editor/clone_down``"
+#, fuzzy
+msgid "``script_text_editor/duplicate_selection``"
+msgstr "``script_text_editor/evaluate_selection``"
 
 msgid "Complete Symbol"
 msgstr "Symbol vervollständigen"
@@ -1140,7 +1145,7 @@ msgid "``script_text_editor/complete_symbol``"
 msgstr "``script_text_editor/complete_symbol``"
 
 msgid "Evaluate Selection"
-msgstr "Springe zum vorigen Haltepunkt"
+msgstr "Auswahl auswerten"
 
 msgid ":kbd:`Ctrl + Shift + E`"
 msgstr ":kbd:`Ctrl + Shift + E`"
@@ -1152,7 +1157,7 @@ msgid "``script_text_editor/evaluate_selection``"
 msgstr "``script_text_editor/evaluate_selection``"
 
 msgid "Trim Trailing Whitespace"
-msgstr "Kürze Leerraum am Zeilenende"
+msgstr "Kürze Whitespace am Zeilenende"
 
 msgid ":kbd:`Ctrl + Alt + T`"
 msgstr ":kbd:`Ctrl + Alt + T`"
@@ -1182,7 +1187,7 @@ msgid "``script_text_editor/convert_to_lowercase``"
 msgstr "``script_text_editor/convert_to_lowercase``"
 
 msgid "Capitalize"
-msgstr "Kapitalisiere"
+msgstr "Anfangsbuchstaben großschreiben"
 
 msgid ":kbd:`Shift + F6`"
 msgstr ":kbd:`Shift + F6`"
@@ -1227,7 +1232,7 @@ msgid "``script_text_editor/auto_indent``"
 msgstr "``script_text_editor/auto_indent``"
 
 msgid "Toggle Bookmark"
-msgstr "Lesezeichen umschalten"
+msgstr "Lesezeichen ein-/ausschalten"
 
 msgid ":kbd:`Ctrl + Alt + B`"
 msgstr ":kbd:`Ctrl + Alt + B`"
@@ -1239,7 +1244,7 @@ msgid "``script_text_editor/toggle_bookmark``"
 msgstr "``script_text_editor/toggle_bookmark``"
 
 msgid "Go to Next Bookmark"
-msgstr "Springe zum nächsten Lesezeichen"
+msgstr "Zum nächsten Lesezeichen springen"
 
 msgid ":kbd:`Ctrl + B`"
 msgstr ":kbd:`Ctrl + B`"
@@ -1248,13 +1253,13 @@ msgid "``script_text_editor/goto_next_bookmark``"
 msgstr "``script_text_editor/goto_next_bookmark``"
 
 msgid "Go to Previous Bookmark"
-msgstr "Springe zum vorigen Lesezeichen"
+msgstr "Zum vorigen Lesezeichen springen"
 
 msgid "``script_text_editor/goto_previous_bookmark``"
 msgstr "``script_text_editor/goto_previous_bookmark``"
 
 msgid "Go to Function"
-msgstr "Springe zu Funktion"
+msgstr "Zu Funktion springen"
 
 msgid ":kbd:`Ctrl + Cmd + J`"
 msgstr ":kbd:`Ctrl + Cmd + J`"
@@ -1263,7 +1268,7 @@ msgid "``script_text_editor/goto_function``"
 msgstr "``script_text_editor/goto_function``"
 
 msgid "Go to Line"
-msgstr "Gehe zu Zeile"
+msgstr "Zu Zeile springen"
 
 msgid ":kbd:`Ctrl + L`"
 msgstr ":kbd:`Ctrl + L`"
@@ -1275,7 +1280,7 @@ msgid "``script_text_editor/goto_line``"
 msgstr "``script_text_editor/goto_line``"
 
 msgid "Toggle Breakpoint"
-msgstr "Haltepunkt umschalten"
+msgstr "Haltepunkt ein-/ausschalten"
 
 msgid ":kbd:`F9`"
 msgstr ":kbd:`F9`"
@@ -1296,7 +1301,7 @@ msgid "``script_text_editor/remove_all_breakpoints``"
 msgstr "``script_text_editor/remove_all_breakpoints``"
 
 msgid "Go to Next Breakpoint"
-msgstr "Springe zum nächsten Haltepunkt"
+msgstr "Zum nächsten Haltepunkt springen"
 
 msgid ":kbd:`Ctrl + .`"
 msgstr ":kbd:`Ctrl + .`"
@@ -1305,7 +1310,7 @@ msgid "``script_text_editor/goto_next_breakpoint``"
 msgstr "``script_text_editor/goto_next_breakpoint``"
 
 msgid "Go to Previous Breakpoint"
-msgstr "Springe zum vorigen Haltepunkt"
+msgstr "Zum vorigen Haltepunkt springen"
 
 msgid ":kbd:`Ctrl + ,`"
 msgstr ":kbd:`Ctrl + ,`"
@@ -1452,7 +1457,7 @@ msgid "``script_editor/run_file``"
 msgstr "``script_editor/run_file``"
 
 msgid "Toggle Scripts Panel"
-msgstr "Skript-Panel umschalten"
+msgstr "Skript-Panel ein-/ausschalten"
 
 msgid ":kbd:`Ctrl + \\\\`"
 msgstr ":kbd:`Ctrl + \\\\`"
@@ -1470,7 +1475,7 @@ msgid "``script_editor/zoom_out``"
 msgstr "``script_editor/zoom_out``"
 
 msgid "Reset Zoom"
-msgstr "Vergrößerung zurücksetzen"
+msgstr "Zoom zurücksetzen"
 
 msgid "``script_editor/reset_zoom``"
 msgstr "``script_editor/reset_zoom``"
@@ -1548,7 +1553,7 @@ msgid "``file_dialog/refresh``"
 msgstr "``file_dialog/refresh``"
 
 msgid "Toggle Hidden Files"
-msgstr "Versteckte Dateien ein- und ausblenden"
+msgstr "Versteckte Dateien ein-/ausblenden"
 
 msgid ":kbd:`Ctrl + H`"
 msgstr ":kbd:`Ctrl + H`"
@@ -1560,13 +1565,13 @@ msgid "``file_dialog/toggle_hidden_files``"
 msgstr "``file_dialog/toggle_hidden_files``"
 
 msgid "Toggle Favorite"
-msgstr "Favoriten ein- und ausblenden"
+msgstr "Favoriten ein-/ausblenden"
 
 msgid "``file_dialog/toggle_favorite``"
 msgstr "``file_dialog/toggle_favorite``"
 
 msgid "Toggle Mode"
-msgstr "Modus umschalten"
+msgstr "Modus ein-/ausschalten"
 
 msgid ":kbd:`Alt + V`"
 msgstr ":kbd:`Alt + V`"
@@ -1601,6 +1606,9 @@ msgstr "``file_dialog/delete``"
 msgid "Focus Path"
 msgstr "Zu Pfad springen"
 
+msgid ":kbd:`Ctrl + D`"
+msgstr ":kbd:`Ctrl + D`"
+
 msgid ":kbd:`Cmd + D`"
 msgstr ":kbd:`Cmd + D`"
 
@@ -1632,7 +1640,7 @@ msgid "``file_dialog/move_favorite_down``"
 msgstr "``file_dialog/move_favorite_down``"
 
 msgid "FileSystem Dock"
-msgstr "Dateisystemleiste"
+msgstr "Dateisystem-Dock"
 
 msgid "Copy Path"
 msgstr "Pfad kopieren"
@@ -1670,6 +1678,14 @@ msgstr "``scene_tree/batch_rename``"
 msgid "Copy Node Path"
 msgstr "Node-Pfad kopieren"
 
+#, fuzzy
+msgid ":kbd:`Ctrl + Shift + C`"
+msgstr ":kbd:`Ctrl + Shift + W`"
+
+#, fuzzy
+msgid ":kbd:`Cmd + Shift +  C`"
+msgstr ":kbd:`Cmd + Shift + C`"
+
 msgid "``scene_tree/copy_node_path``"
 msgstr "``scene_tree/copy_node_path``"
 
@@ -1697,17 +1713,11 @@ msgstr "``scene_tree/move_down``"
 msgid "Animation Track Editor"
 msgstr "Animations-Spur Editor"
 
-msgid "Duplicate Selection"
-msgstr "Auswahl duplizieren"
-
 msgid "``animation_editor/duplicate_selection``"
 msgstr "``animation_editor/duplicate_selection``"
 
 msgid "Duplicate Transposed"
 msgstr "Umgesetztes duplizieren"
-
-msgid ":kbd:`Ctrl + Shift + D`"
-msgstr ":kbd:`Ctrl + Shift + D`"
 
 msgid ":kbd:`Cmd + Shift + D`"
 msgstr ":kbd:`Cmd + Shift + D`"
@@ -1917,7 +1927,7 @@ msgid "``tileset_editor/editmode_priority``"
 msgstr "``tileset_editor/editmode_priority``"
 
 msgid "Icon Mode"
-msgstr "Symbolmodus"
+msgstr "Icon-Modus"
 
 msgid ":kbd:`7`"
 msgstr ":kbd:`7`"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,41 +20,76 @@ msgstr ""
 msgid "Introduction to the buildsystem"
 msgstr "建置系統簡介"
 
-msgid "Setup"
+msgid ""
+"Godot is a primarily C++ project and it :ref:`uses the SCons build system. "
+"<doc_faq_why_scons>` We love SCons for how maintainable and easy to set up "
+"it makes our buildsystem. And thanks to that compiling Godot from source can "
+"be as simple as running::"
 msgstr ""
 
 msgid ""
-":ref:`Godot uses the SCons build system. <doc_faq_why_scons>` Please refer "
-"to the documentation for:"
+"This produces an *export template* for your current platform, operating "
+"system, and architecture. An export template is a build of the engine that "
+"is used for running exported projects. To build the *editor* instead you can "
+"run the following command::"
 msgstr ""
 
-#, fuzzy
-msgid ":ref:`doc_compiling_for_android`"
-msgstr ":ref:`doc_optimizing_for_size`"
+msgid ""
+"If you plan to debug or develop the engine, then you might want to add "
+"another option to the command::"
+msgstr ""
 
-#, fuzzy
+msgid ""
+"Following sections in the article will explain these and other universal "
+"options in more detail. But before you can compile Godot, you need to "
+"install a few prerequisites. Please refer to the platform documentation to "
+"learn more:"
+msgstr ""
+
+msgid ":ref:`doc_compiling_for_android`"
+msgstr ":ref:`doc_compiling_for_android`"
+
 msgid ":ref:`doc_compiling_for_ios`"
 msgstr ":ref:`doc_optimizing_for_size`"
 
-#, fuzzy
 msgid ":ref:`doc_compiling_for_linuxbsd`"
 msgstr ":ref:`doc_complying_with_licenses`"
 
-#, fuzzy
 msgid ":ref:`doc_compiling_for_macos`"
 msgstr ":ref:`doc_optimizing_for_size`"
 
-#, fuzzy
-msgid ":ref:`doc_compiling_for_uwp`"
-msgstr ":ref:`doc_optimizing_for_size`"
-
-#, fuzzy
 msgid ":ref:`doc_compiling_for_web`"
 msgstr ":ref:`doc_optimizing_for_size`"
 
-#, fuzzy
 msgid ":ref:`doc_compiling_for_windows`"
 msgstr ":ref:`doc_optimizing_for_size`"
+
+msgid ""
+"These articles cover in great detail both how to setup your environment to "
+"compile Godot on a specific platform, and how to compile for that platform. "
+"Please feel free to go back and forth between them and this article to "
+"reference platform-specific and universal configuration options."
+msgstr ""
+
+#, fuzzy
+msgid "Using multi-threading"
+msgstr "使用多執行緒"
+
+#, fuzzy
+msgid ""
+"The build process may take a while, depending on how powerful your system "
+"is. By default, Godot's SCons setup is configured to use all CPU threads but "
+"one (to keep the system responsive during compilation). If you want to "
+"adjust how many CPU threads SCons will use, use the ``-j <threads>`` "
+"parameter to specify how many threads will be used for the build."
+msgstr ""
+"這將開始建置過程，這將需要一段時間。預設情況下，Godot 的 SCons 設定配置為使用"
+"除一個之外的所有 CPU 執行緒（以在編譯期間保持系統回應）。如果要調整 SCons 將"
+"使用多少個 CPU 線程，請使用「-j <threads>」參數指定建置將使用多少個線程。"
+
+#, fuzzy
+msgid "Example for using 4 threads::"
+msgstr "使用 4 核心的例子："
 
 msgid "Platform selection"
 msgstr "選擇平台"
@@ -79,25 +114,12 @@ msgstr ""
 msgid "To list the available target platforms, use ``scons platform=list``::"
 msgstr "若要列出所有可用的目標平台，請使用 ``scons platform=list`` ："
 
-#, fuzzy
 msgid ""
 "To build for a platform (for example, ``linuxbsd``), run with the "
 "``platform=`` (or ``p=`` to make it short) argument:"
 msgstr ""
 "若要為某個平台建置 (如 x11)，請使用 ``platform=`` (或簡寫為 ``p=`` ) 印數來執"
 "行："
-
-msgid ""
-"This will start the build process, which will take a while. By default, "
-"Godot's SCons setup is configured to use all CPU threads but one (to keep "
-"the system responsive during compilation). If you want to adjust how many "
-"CPU threads SCons will use, use the ``-j <threads>`` parameter to specify "
-"how many threads will be used for the build."
-msgstr ""
-
-#, fuzzy
-msgid "Example for using 4 threads:"
-msgstr "使用 4 核心的例子："
 
 msgid "Resulting binary"
 msgstr "產生的二進位檔"
@@ -110,7 +132,6 @@ msgstr "產生的二進位檔會放在 ``bin/`` 子資料夾中。通常來說�
 msgid "For the previous build attempt, the result would look like this::"
 msgstr "依照前面這個建置例子，產生的結果會長這樣："
 
-#, fuzzy
 msgid ""
 "This means that the binary is for Linux *or* \\*BSD (*not* both), is not "
 "optimized, has the whole editor compiled in, and is meant for 64 bits."
@@ -121,7 +142,6 @@ msgstr ""
 msgid "A Windows binary with the same configuration will look like this:"
 msgstr "使用相同設定的 Window 二進位執行檔會長這樣："
 
-#, fuzzy
 msgid ""
 "Copy that binary to any location you like, as it contains the Project "
 "Manager, editor and all means to execute the game. However, it lacks the "
@@ -142,26 +162,32 @@ msgstr "除此之外，還有其他能用於所有建置目標的標準選項，
 msgid "Target"
 msgstr "目標"
 
-#, fuzzy
 msgid ""
 "Target controls if the editor is contained and debug flags are used. All "
 "builds are optimized. Each mode means:"
 msgstr "建置目標是用來控制最佳化旗標與偵錯旗標的。各個模式分別代表："
 
+#, fuzzy
 msgid ""
-"**editor**: Build with editor, optimized, with debugging code (defines: "
-"``TOOLS_ENABLED``, ``DEBUG_ENABLED``, ``-O2``/``/O2``)"
+"``target=editor``: Build with editor, optimized, with debugging code "
+"(defines: ``TOOLS_ENABLED``, ``DEBUG_ENABLED``, ``-O2``/``/O2``)"
 msgstr ""
-
-msgid ""
-"**template_debug**: Build with C++ debugging symbols (defines: "
-"``DEBUG_ENABLED``, ``-O2``/``/O2``)"
-msgstr ""
-
-msgid "**template_release**: Build without symbols (defines: ``-O3``/``/O2``)"
-msgstr ""
+"**編輯器**：使用編輯器建構，優化，帶有除錯程式碼（定義：``TOOLS_ENABLED``，"
+"``DEBUG_ENABLED``，``-O2``/``/O2``）"
 
 #, fuzzy
+msgid ""
+"``target=template_debug``: Build with C++ debugging symbols (defines: "
+"``DEBUG_ENABLED``, ``-O2``/``/O2``)"
+msgstr ""
+"**template_debug**：使用 C++ 偵錯符號建構（定義：``DEBUG_ENABLED``、``-O2``/"
+"``/O2``）"
+
+#, fuzzy
+msgid ""
+"``target=template_release``: Build without symbols (defines: ``-O3``/``/O2``)"
+msgstr "**template_release**：不帶符號建構（定義：``-O3``/``/O2``）"
+
 msgid ""
 "The editor is enabled by default in all PC targets (Linux, Windows, macOS), "
 "disabled for everything else. Disabling the editor produces a binary that "
@@ -170,7 +196,6 @@ msgstr ""
 "工具預設會在所有 PC 目標上啟用 (Linux, Window, macOS)，其他平台則預設關閉。如"
 "果將工具禁用，產生的二進位檔則只能執行專案，而不會包含編輯器與專案管理員。"
 
-#, fuzzy
 msgid "Development and production aliases"
 msgstr "開發"
 
@@ -179,8 +204,9 @@ msgid ""
 "<doc_using_cpp_profilers>` tools), you often have different goals compared "
 "to production builds (making binaries as fast and small as possible)."
 msgstr ""
+"建立開發建置（執行偵錯/:ref:`分析 <doc_using_cpp_profilers>` 工具）時，與生產"
+"建置相比，您通常有不同的目標（使二進位檔案盡可能快且小）。"
 
-#, fuzzy
 msgid "Godot provides two aliases for this purpose:"
 msgstr "Godot 提供了一系列常見的容器："
 
@@ -190,6 +216,9 @@ msgid ""
 "continuous integration setup) and also builds :ref:`unit tests "
 "<doc_unit_testing>` so you can run them locally."
 msgstr ""
+"``dev_mode=yes`` 是``verbose=yes warnings=extra werror=yes tests=yes`` 的別"
+"名。這將啟用警告即錯誤行為（類似於 Godot 的持續整合設定），並且還建置:ref:`單"
+"元測試 <doc_unit_testing>`，以便您可以在本地運作它們。"
 
 msgid ""
 "``production=yes`` is an alias for ``use_static_cpp=yes debug_symbols=no "
@@ -200,6 +229,11 @@ msgid ""
 "because LTO on those platforms is very slow to link or has issues with the "
 "generated code."
 msgstr ""
+"``product=yes`` 是``use_static_cpp=yes debug_symbols=no lto=auto`` 的別名。靜"
+"態連結 libstdc++ 可以在針對 Linux 進行編譯時實作更好的二進位可攜性。當使用 "
+"MinGW 編譯 Linux、Web 和 Windows 時，此別名還可以啟用連結時最佳化，但在使用 "
+"MSVC 編譯 macOS、iOS 或 Windows 時保持停用 LTO。這是因為這些平台上的 LTO 連結"
+"速度非常慢或產生的程式碼有問題。"
 
 msgid ""
 "You can manually override options from those aliases by specifying them on "
@@ -207,14 +241,19 @@ msgid ""
 "``scons production=yes debug_symbols=yes`` to create production-optimized "
 "binaries with debugging symbols included."
 msgstr ""
+"您可以透過在同一命令列上使用不同的值指定這些別名來手動覆寫這些選項。例如，您"
+"可以使用 scons production=yes debug_symbols=yes 建立包含偵錯符號的生產最佳化"
+"二進位檔案。"
 
 msgid "Dev build"
-msgstr ""
+msgstr "開發建構"
 
 msgid ""
 "``dev_build`` should **not** be confused with ``dev_mode``, which is an "
 "alias for several development-related options (see above)."
 msgstr ""
+"``dev_build`` 不應與 ``dev_mode`` 混淆，後者是幾個與開發相關的選項的別名（見"
+"上文）。"
 
 msgid ""
 "When doing engine development the ``dev_build`` option can be used together "
@@ -223,19 +262,23 @@ msgid ""
 "debug symbols, and does not define ``NDEBUG`` (so ``assert()`` works in "
 "thirdparty libraries)."
 msgstr ""
+"在進行引擎開發時，「dev_build」選項可以與「target」一起使用來啟用特定於開發的"
+"程式碼。 ``dev_build`` 定義``DEV_ENABLED``，停用最佳化（``-O0``/``/0d``），啟"
+"用產生偵錯符號，且不定義``NDEBUG``（因此``assert( ) `` 適用於第三方函式庫）。"
 
 msgid ""
 "This flag appends the ``.dev`` suffix (for development) to the generated "
 "binary name."
-msgstr ""
+msgstr "此旗標將“.dev”後綴（用於開發）附加到產生的二進位名稱。"
 
 msgid ""
 "There are additional SCons options to enable *sanitizers*, which are tools "
 "you can enable at compile-time to better debug certain engine issues. See :"
 "ref:`doc_using_sanitizers` for more information."
 msgstr ""
+"還有其他 SCons 選項可以啟用 *sanitizers*，這些工具可以在編譯時啟用，以更好地"
+"偵錯某些引擎問題。請參閱 doc_using_sanitizers 以了解更多資訊。"
 
-#, fuzzy
 msgid "Debugging symbols"
 msgstr "偵錯"
 
@@ -246,6 +289,10 @@ msgid ""
 "profilers to work correctly. Debugging symbols are also required for Godot's "
 "crash stacktraces to display with references to source code files and lines."
 msgstr ""
+"預設情況下，使用“debug_symbols=no”，這表示編譯的二進位檔案中不包含偵錯符號。"
+"使用“debug_symbols=yes”在編譯的二進位檔案中包含偵錯符號，這允許偵錯器和分析器"
+"正常工作。 Godot 的當機堆疊追蹤還需要偵錯符號來顯示對原始程式碼檔案和行的參"
+"考。"
 
 msgid ""
 "The downside is that debugging symbols are large files (significantly larger "
@@ -253,6 +300,8 @@ msgid ""
 "not include debugging symbols. This means you need to compile Godot yourself "
 "to have access to debugging symbols."
 msgstr ""
+"缺點是除錯符號是大檔案（比二進位檔案本身大得多）。因此，官方二進位檔案目前不"
+"包含偵錯符號。這意味著您需要自己編譯 Godot 才能存取偵錯符號。"
 
 msgid ""
 "When using ``debug_symbols=yes``, you can also use "
@@ -262,18 +311,21 @@ msgid ""
 "*always* written to a separate ``.pdb`` file regardless of "
 "``separate_debug_symbols``."
 msgstr ""
+"當使用“debug_symbols=yes”時，您也可以使用“separate_debug_symbols=yes”將偵錯資"
+"訊放在帶有“.debug”後綴的單獨檔案中。這允許獨立分發兩個檔案。請注意，在 "
+"Windows 上，當使用 MSVC 進行編譯時，偵錯資訊*總是*寫入到單獨的 .pdb 檔案中，"
+"無論 ``separate_debug_symbols ``如何。"
 
 msgid ""
 "Use the ``strip <path/to/binary>`` command to remove debugging symbols from "
 "a binary you've already compiled."
-msgstr ""
+msgstr "使用“strip <path/to/binary>”命令從已編譯的二進位檔案中刪除偵錯符號。"
 
-#, fuzzy
 msgid "Optimization level"
 msgstr "最佳化"
 
 msgid "Several compiler optimization levels can be chosen from:"
-msgstr ""
+msgstr "可以選擇以下幾種編譯器最佳化等級："
 
 msgid ""
 "``optimize=speed_trace`` *(default when targeting non-Web platforms)*: "
@@ -281,6 +333,9 @@ msgid ""
 "sometimes negatively impact debugger usage (stack traces may be less "
 "accurate. If this occurs to you, use ``optimize=debug`` instead."
 msgstr ""
+"``optimize=speed_trace`` *（針對非 Web 平台時的預設設定）*：以較大的二進位大"
+"小為代價提高執行速度。最佳化有時可能會對偵錯器的使用產生負面影響（堆疊追蹤可"
+"能不太準確。如果您遇到這種情況，請改用「optimize=debug」。"
 
 msgid ""
 "``optimize=speed``: Favors even more execution speed, at the cost of even "
@@ -288,34 +343,42 @@ msgid ""
 "to debugging compared to ``optimize=debug``, as this uses the most "
 "aggressive optimizations available."
 msgstr ""
+"「optimize=speed」：與「optimize=speed_trace」相比，有利於更高的執行速度，但"
+"代價是二進位大小更大。與“optimize=debug”相比，除錯更加不友好，因為它使用了最"
+"積極的優化。"
 
 msgid ""
 "``optimize=size`` *(default when targeting the Web platform)*: Favors small "
 "binaries at the cost of slower execution speed."
 msgstr ""
+"``optimize=size`` *（針對 Web 平台時的預設值）*：支援小型二進位檔案，但代價是"
+"執行速度較慢。"
 
 msgid ""
 "``optimize=debug``: Only enables optimizations that do not impact debugging "
 "in any way. This results in faster binaries than ``optimize=none``, but "
 "slower binaries than ``optimize=speed_trace``."
 msgstr ""
+"``optimize=debug``：僅啟用不會以任何方式影響偵錯的最佳化。這會導致二進位檔案"
+"比“optimize=none”更快，但比“optimize=speed_trace”慢。"
 
 msgid ""
 "``optimize=none``: Do not perform any optimization. This provides the "
 "fastest build times, but the slowest execution times."
 msgstr ""
+"``optimize=none``：不執行任何最佳化。這提供了最快的建置時間，但執行時間最慢。"
 
 msgid ""
 "``optimize=custom`` *(advanced users only)*: Do not pass optimization "
 "arguments to the C/C++ compilers. You will have to pass arguments manually "
 "using the ``CFLAGS``, ``CCFLAGS`` and ``CXXFLAGS`` SCons options."
 msgstr ""
+"``optimize=custom`` *（僅限進階使用者）*：不要將最佳化參數傳遞給 C/C++ 編譯"
+"器。您必須使用“CFLAGS”、“CCFLAGS”和“CXXFLAGS” SCons 選項手動傳遞參數。"
 
-#, fuzzy
 msgid "Architecture"
-msgstr "架構圖"
+msgstr "架構"
 
-#, fuzzy
 msgid ""
 "The ``arch`` option is meant to control the CPU or OS version intended to "
 "run the binaries. It is focused mostly on desktop platforms and ignored "
@@ -329,8 +392,9 @@ msgid ""
 "**x86_64**, **arm32**, **arm64**, **rv64**, **ppc32**, **ppc64** and "
 "**wasm32**."
 msgstr ""
+"「arch」 選項支援的值為 **auto**、**x86_32**、**x86_64**、**arm32**、"
+"**arm64**、**rv64**、**ppc32 **、 **ppc64** 和**wasm32**。"
 
-#, fuzzy
 msgid ""
 "This flag appends the value of ``arch`` to resulting binaries when "
 "relevant.  The default value ``arch=auto`` detects the architecture that "
@@ -370,9 +434,8 @@ msgid ""
 "to override built-in module implementations."
 msgstr ""
 "若有自定模組的資料夾名稱與內建模組的名稱相同，則 Godot 只會編譯自定模組。可以"
-"利用這個特性來複寫掉內建的模組。"
+"利用這個功能來複寫掉內建的模組。"
 
-#, fuzzy
 msgid ":ref:`doc_custom_modules_in_cpp`"
 msgstr ":ref:`doc_custom_modules_in_c++`"
 
@@ -429,7 +492,6 @@ msgstr ""
 "預設可以在 Godot Engine 的原始碼根目錄建立一個 ``custom.py`` 檔案來初始化任何"
 "通過命令行傳給 SCons 的建置選項："
 
-#, fuzzy
 msgid ""
 "You can also disable some of the builtin modules before compiling, saving "
 "some time it takes to build the engine. See :ref:`doc_optimizing_for_size` "
@@ -473,7 +535,6 @@ msgstr ""
 "``SCONSFLAGS`` 是 SCons 用來自動設定選項的環境變數，使用 ``SCONSFLAGS`` 就不"
 "需要通過命令行來給定選項。"
 
-#, fuzzy
 msgid ""
 "For instance, you may want to force a number of CPU threads with the "
 "aforementioned ``-j`` option for all future builds:"
@@ -481,7 +542,7 @@ msgstr ""
 "舉例來說，我們可能會想使用剛才提到的 ``-j`` 選項來同時為所有功能進行建置："
 
 msgid "SCU (single compilation unit) build"
-msgstr ""
+msgstr "SCU（單一編譯單元）建構"
 
 msgid ""
 "Regular builds tend to be bottlenecked by including large numbers of headers "
@@ -489,15 +550,20 @@ msgid ""
 "(rather than for production builds), Godot offers a \"single compilation "
 "unit\" build (aka \"Unity / Jumbo\" build)."
 msgstr ""
+"常規建置往往會因每個編譯翻譯單元中包含大量標頭而遇到瓶頸。主要是為了加快開發"
+"速度（而不是生產建置），Godot 提供了「單一編譯單元」建置（又稱「Unity / "
+"Jumbo」建置）。"
 
 msgid ""
 "For the folders accelerated by this option, multiple ``.cpp`` files are "
 "compiled in each translation unit, so headers can be shared between multiple "
 "files, which can dramatically decrease build times."
 msgstr ""
+"對於透過此選項加速的資料夾，每個翻譯單元中都會編譯多個“.cpp”檔案，因此可以在"
+"多個檔案之間共用標頭，這可以顯著減少建置時間。"
 
 msgid "To make a SCU build, use the ``scu_build=yes`` SCons option."
-msgstr ""
+msgstr "若要建置 SCU，請使用 ``scu_build=yes`` SCons 選項。"
 
 msgid ""
 "When developing a Pull Request using SCU builds, be sure to make a regular "
@@ -507,6 +573,10 @@ msgid ""
 "CI will catch these errors but it will usually be faster to catch them on a "
 "local build on your machine."
 msgstr ""
+"使用 SCU 建置開發 Pull 請求時，請務必在提交 PR 之前進行常規建置。這是因為 "
+"SCU 建置本質上包含翻譯單元中早期 ``.cpp`` 檔案的標頭，因此不會捕獲常規建置中"
+"所需的所有包含內容。 CI 會捕獲這些錯誤，但在電腦上的本機建置上捕獲它們通常會"
+"更快。"
 
 msgid "Export templates"
 msgstr "匯出樣板"
@@ -553,12 +623,12 @@ msgstr ""
 "Patch`` (若有的話)、以及 `Godot Git 儲存庫中的 version.py 檔案 <https://"
 "github.com/godotengine/godot/blob/master/version.py>`__ ``狀態 Status`` 。"
 
+#, fuzzy
 msgid ""
 "If you are developing for multiple platforms, macOS is definitely the most "
 "convenient host platform for cross-compilation, since you can cross-compile "
-"for almost every target (except for UWP). Linux and Windows come in second "
-"place, but Linux has the advantage of being the easier platform to set this "
-"up."
+"for every target. Linux and Windows come in second place, but Linux has the "
+"advantage of being the easier platform to set this up."
 msgstr ""
 "若要為多個平台進行開發，那麼 macOS 絕對是進行交叉編譯最方便的平台了，因為 (除"
 "了 UWP 外) 幾乎可以為所有平台進行交叉編譯。Linux 與 Windows 則為其次，但 "

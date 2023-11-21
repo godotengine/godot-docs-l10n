@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Plugins for iOS"
 msgstr "為 iOS 進行編譯"
 
@@ -25,11 +24,12 @@ msgid ""
 "Godot provides StoreKit, GameCenter, iCloud services and other plugins. They "
 "are using same model of asynchronous calls explained below."
 msgstr ""
+"Godot 提供了 StoreKit、GameCenter、iCloud 服務等外掛程式。它們使用下面解釋的"
+"相同非同步呼叫模型。"
 
 msgid "ARKit and Camera access are also provided as plugins."
-msgstr ""
+msgstr "ARKit和Camera存取也作為外掛程式提供."
 
-#, fuzzy
 msgid ""
 "Latest updates, documentation and source code can be found at `Godot iOS "
 "plugins repository <https://github.com/godotengine/godot-ios-plugins>`_"
@@ -37,7 +37,6 @@ msgstr ""
 "若想參與貢獻說明文件，則可在 `此處 <https://github.com/godotengine/godot-"
 "docs>`_ 找到其儲存庫。"
 
-#, fuzzy
 msgid "Accessing plugin singletons"
 msgstr "存取場景節點"
 
@@ -46,17 +45,18 @@ msgid ""
 "exported and available by calling the `Engine.has_singleton()` function, "
 "which returns a registered singleton."
 msgstr ""
+"要存取外掛程式功能, 首先需要通過呼叫 `Engine.has_singleton()` 函式來檢查外掛"
+"程式是否匯出並可用, 該函式會返回一個註冊的單例."
 
-#, fuzzy
 msgid "Here's an example of how to do this in GDScript:"
 msgstr "下列為有兩個骨頭的骨骼節點範例："
 
 msgid "Asynchronous methods"
-msgstr ""
+msgstr "非同步方法"
 
 msgid ""
 "When requesting an asynchronous operation, the method will look like this:"
-msgstr ""
+msgstr "請求非同步作業時, 方法如下所示:"
 
 msgid ""
 "The parameter will usually be a Dictionary, with the information necessary "
@@ -67,6 +67,10 @@ msgid ""
 "response event will be produced and added to the 'pending events' queue. "
 "Example:"
 msgstr ""
+"參數通常是一個字典，包含發出請求所需的資訊，並且呼叫將有兩個階段。首先，該方"
+"法將立即返回 Error 值。如果這個 Error 不是“OK”，則呼叫操作完成，可能在本地引"
+"起錯誤（沒有網路連接、API 配置不正確等）。如果錯誤值是“OK”，則會生成回應事件"
+"並將其新增到“掛起事件”佇列中。例如："
 
 msgid ""
 "Remember that when a call returns OK, the API will *always* produce an event "
@@ -75,42 +79,43 @@ msgid ""
 "waiting for a reply from the server. If any of the APIs don't behave this "
 "way it should be treated as a bug."
 msgstr ""
+"請記住，當一個呼叫返回 OK 時，API 將*始終*通過 pending_event 介面產生一個事"
+"件，即使它是一個錯誤，或網路超時等。您應該能夠，例如，安全地阻止等待的介面來"
+"自伺服器的回復。如果任何 API 不以這種方式運作，則應將其視為錯誤。"
 
 msgid "The pending event interface consists of two methods:"
-msgstr ""
+msgstr "掛起事件介面包含兩個方法："
 
 msgid ""
 "``get_pending_event_count()`` Returns the number of pending events on the "
 "queue."
-msgstr ""
+msgstr "``get_pending_event_count()`` 返回佇列中掛起事件的數量。"
 
 msgid ""
 "``Variant pop_pending_event()`` Pops the first event from the queue and "
 "returns it."
-msgstr ""
+msgstr "``Variant pop_pending_event()`` 彈出佇列中的第一個事件並返回它。"
 
 msgid "Store Kit"
-msgstr ""
+msgstr "Store Kit"
 
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 msgstr ""
-"\\ `core/list.h <https://github.com/godotengine/godot/blob/master/core/list."
-"h>`__"
+"Implemented in `Godot iOS InAppStore plugin <https://github.com/godotengine/"
+"godot-ios-plugins/blob/master/plugins/inappstore/in_app_store.mm>`_."
 
 msgid ""
 "The Store Kit API is accessible through the ``InAppStore`` singleton. It is "
 "initialized automatically."
-msgstr ""
+msgstr "Store Kit API 可通過 ``InAppStore`` 單例存取。它是自動初始化的。"
 
 msgid "The following methods are available and documented below:"
-msgstr ""
+msgstr "提供了以下方法，文件如下："
 
-#, fuzzy
 msgid "``purchase``"
-msgstr "\\ ``pose``"
+msgstr "``purchase``"
 
 msgid ""
 "Purchases a product ID through the Store Kit API. You have to call "
@@ -118,6 +123,9 @@ msgid ""
 "call ``set_auto_finish_transaction(true)`` prior to calling ``purchase()``. "
 "These two methods ensure the transaction is completed."
 msgstr ""
+"通過 Store Kit API 購買一個產品 ID。你需要在收到成功回應後呼叫 "
+"``finish_transaction(product_id)``，或者在呼叫 ``purchase()`` 之前呼叫 "
+"``set_auto_finish_transaction(true)``。這兩個方法確保事務完成。"
 
 msgid "Parameters"
 msgstr "參數"
@@ -126,174 +134,180 @@ msgid ""
 "Takes a dictionary as a parameter, with one field, ``product_id``, a string "
 "with your product ID. Example:"
 msgstr ""
+"參數是一個字典，包含一個 ``product_id`` 欄位，是你的商品的字串 ID。例子："
 
 msgid "Response event"
-msgstr ""
+msgstr "回應事件"
 
 msgid "The response event will be a dictionary with the following fields:"
-msgstr ""
+msgstr "回應事件將是包含以下欄位的字典："
 
 msgid "On error:"
-msgstr ""
+msgstr "出錯時："
 
 msgid "On success:"
-msgstr ""
+msgstr "成功時："
 
 msgid "``request_product_info``"
-msgstr ""
+msgstr "``request_product_info``"
 
 msgid "Requests the product info on a list of product IDs."
-msgstr ""
+msgstr "在產品ID列表中請求產品資訊."
 
 msgid ""
 "Takes a dictionary as a parameter, with a single ``product_ids`` key to "
 "which a string array of product IDs is assigned. Example:"
-msgstr ""
+msgstr "參數為字典，只有一個欄位 ``product_ids``，是產品 ID 字串的陣列。例如："
 
 msgid "``restore_purchases``"
-msgstr ""
+msgstr "``restore_purchases``"
 
 msgid ""
 "Restores previously made purchases on user's account. This will create "
 "response events for each previously purchased product ID."
 msgstr ""
+"恢復使用者帳戶之前完成的購買。會為每一個之前購買過的產品 ID 建立響應事件。"
 
 msgid "The response events will be dictionaries with the following fields:"
-msgstr ""
+msgstr "回應事件將是包含以下欄位的字典："
 
 msgid "``set_auto_finish_transaction``"
-msgstr ""
+msgstr "``set_auto_finish_transaction``"
 
 msgid ""
 "If set to ``true``, once a purchase is successful, your purchase will be "
 "finalized automatically. Call this method prior to calling ``purchase()``."
 msgstr ""
+"設為 ``true`` 時，一旦購買成功，就會自動結束購買。請在呼叫 ``purchase()`` 前"
+"呼叫本方法。"
 
 msgid ""
 "Takes a boolean as a parameter which specifies if purchases should be "
 "automatically finalized. Example:"
-msgstr ""
+msgstr "參數為布林值，表示購買是否應該自動結束。例如："
 
-#, fuzzy
 msgid "``finish_transaction``"
-msgstr "\\ ``connection``"
+msgstr "``finish_transaction``"
 
 msgid ""
 "If you don't want transactions to be automatically finalized, call this "
 "method after you receive a successful purchase response."
-msgstr ""
+msgstr "如果你不希望自動結束交易事務，請在接收到成功購買回應後呼叫本方法。"
 
 msgid ""
 "Takes a string ``product_id`` as an argument. ``product_id`` specifies what "
 "product to finalize the purchase on. Example:"
 msgstr ""
+"參數 ``product_id`` 是一個字串。``product_id`` 表示需要結束購買的產品。例如："
 
 msgid "Game Center"
-msgstr ""
+msgstr "遊戲中心"
 
-#, fuzzy
 msgid ""
 "Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
 "godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 msgstr ""
-"\\ `scene/audio/audioplayer.cpp <https://github.com/godotengine/godot/blob/"
-"master/scene/audio/audio_player.cpp>`__"
+"Implemented in `Godot iOS GameCenter plugin <https://github.com/godotengine/"
+"godot-ios-plugins/blob/master/plugins/gamecenter/game_center.mm>`_."
 
 msgid ""
 "The Game Center API is available through the ``GameCenter`` singleton. It "
 "has the following methods:"
-msgstr ""
+msgstr "Game Center API 可以通過“GameCenter”單例使用。它有以下方法："
 
 msgid "and the pending events interface:"
-msgstr ""
+msgstr "以及未決事件介面："
 
-#, fuzzy
 msgid "``authenticate``"
 msgstr "``x.attribute``"
 
 msgid "Authenticates a user in Game Center."
-msgstr ""
+msgstr "在遊戲中心對使用者進行身份驗證."
 
-#, fuzzy
 msgid "``post_score``"
-msgstr "\\ ``pose``"
+msgstr "``post_score``"
 
 msgid "Posts a score to a Game Center leaderboard."
-msgstr ""
+msgstr "將分數發行到遊戲中心排行榜."
 
 msgid "Takes a dictionary as a parameter, with two fields:"
-msgstr ""
+msgstr "參數為一個字典，有兩個欄位："
 
 msgid "``score`` a float number"
-msgstr ""
+msgstr "``score`` 浮點數"
 
 msgid "``category`` a string with the category name"
-msgstr ""
+msgstr "``category`` 表示類別名稱的字串"
 
 msgid "Example:"
 msgstr "範例："
 
 msgid "``award_achievement``"
-msgstr ""
+msgstr "``award_achievement``"
 
 msgid "Modifies the progress of a Game Center achievement."
-msgstr ""
+msgstr "修改遊戲中心成就的進度."
 
 msgid "Takes a Dictionary as a parameter, with 3 fields:"
-msgstr ""
+msgstr "將Dictionary作為參數, 包含3個欄位:"
 
 msgid "``name`` (string) the achievement name"
-msgstr ""
+msgstr "``name``（字串）成就名稱"
 
 msgid ""
 "``progress`` (float) the achievement progress from 0.0 to 100.0 (passed to "
 "``GKAchievement::percentComplete``)"
 msgstr ""
+"``progress``（float）成就進度從 0.0 到 100.0（傳遞給 ``GKAchievement :: "
+"percentComplete``）"
 
 msgid ""
 "``show_completion_banner`` (bool) whether Game Center should display an "
 "achievement banner at the top of the screen"
 msgstr ""
+"``show_completion_banner``（bool）遊戲中心是否應該在螢幕頂部顯示成就橫幅"
 
 msgid "``reset_achievements``"
-msgstr ""
+msgstr "``reset_achievements``"
 
 msgid "Clears all Game Center achievements. The function takes no parameters."
-msgstr ""
+msgstr "清除所有 Game Center 成就。該函式不帶參數。"
 
 msgid "``request_achievements``"
-msgstr ""
+msgstr "``request_achievements``"
 
 msgid ""
 "Request all the Game Center achievements the player has made progress on. "
 "The function takes no parameters."
-msgstr ""
+msgstr "請求遊戲角色取得進步的所有遊戲中心成就. 該函式不帶參數."
 
 msgid "``request_achievement_descriptions``"
-msgstr ""
+msgstr "``request_achievement_descriptions``"
 
 msgid ""
 "Request the descriptions of all existing Game Center achievements regardless "
 "of progress. The function takes no parameters."
-msgstr ""
+msgstr "無論進度如何, 都要求描述所有現有的Game Center成就. 該函式不帶參數."
 
-#, fuzzy
 msgid "``show_game_center``"
 msgstr "``center()``"
 
 msgid ""
 "Displays the built in Game Center overlay showing leaderboards, "
 "achievements, and challenges."
-msgstr ""
+msgstr "顯示內建的遊戲中心疊加層, 顯示排行榜, 成就和挑戰."
 
 msgid "Takes a Dictionary as a parameter, with two fields:"
-msgstr ""
+msgstr "將Dictionary作為參數, 包含兩個欄位:"
 
 msgid ""
 "``view`` (string) (optional) the name of the view to present. Accepts "
 "\"default\", \"leaderboards\", \"achievements\", or \"challenges\". Defaults "
 "to \"default\"."
 msgstr ""
+"``view``（字串）（可選）要呈現的視圖的名稱。接受“default”（預"
+"設）“leaderboards”（排行榜）“achievements”（成就）“challenges”（挑戰）。預設"
+"為“default”。"
 
 msgid ""
 "``leaderboard_name`` (string) (optional) the name of the leaderboard to "
@@ -301,12 +315,15 @@ msgid ""
 "configured to show leaderboards). If not specified, Game Center will display "
 "the aggregate leaderboard."
 msgstr ""
+"``leaderboard_name``（字串）（可選）要顯示的排行榜的名稱。僅"
+"在“view”為“leaderboards”（或“default”被配置為顯示排行榜）時使用。如果未指定，"
+"Game Center 將顯示聚合排行榜。"
 
 msgid "Examples:"
-msgstr ""
+msgstr "範例："
 
 msgid "On close:"
-msgstr ""
+msgstr "關閉時："
 
 msgid "Translation status"
 msgstr "翻譯狀態"

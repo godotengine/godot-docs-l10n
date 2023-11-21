@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -55,28 +55,25 @@ msgstr ""
 msgid "Android Studio will import and index the project."
 msgstr "Android Studio 将导入项目并为其编制索引."
 
-#, fuzzy
 msgid "Android Studio project layout"
-msgstr "Android Studio"
+msgstr "Android Studio 项目结构"
 
-#, fuzzy
 msgid ""
 "The project is organized using `Android Studio's modules <https://developer."
 "android.com/studio/projects#ApplicationModules>`_:"
 msgstr ""
 "你可以使用 `Android Studio 4.1或更高版本 <https://developer.android.com/"
-"studio/>`__ 进行安装."
+"studio/>`__ 进行安装："
 
 msgid "``lib`` module:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Located under ``<Godot root directory>/platform/android/java/lib``, this is "
 "a **library module** that organizes"
 msgstr ""
 "导航到 ``<Godot根目录(Godot root directory)>/platform/android/java`` 并选择 "
-"``settings.gradle`` 文件."
+"``settings.gradle`` 文件"
 
 msgid ""
 "the Godot java and native code and make it available as a reusable "
@@ -89,45 +86,40 @@ msgid ""
 "maven.org/maven2/org/godotengine/godot/>`_."
 msgstr ""
 
-#, fuzzy
 msgid "``editor`` module:"
-msgstr "``editor/undo``"
+msgstr "``editor`` 模块："
 
-#, fuzzy
 msgid ""
 "Located under ``<Godot root directory>/platform/android/java/editor``, this "
 "is an **application module** that holds"
 msgstr ""
-"导航到 ``<Godot根目录(Godot root directory)>/platform/android/java`` 并选择 "
-"``settings.gradle`` 文件."
+"位于 ``<Godot 根目录>/platform/android/java/editor`` 中，这就是一个\\ **应用"
+"程序模块**\\ ，"
 
 msgid "the source code for the Android port of the Godot Editor."
-msgstr ""
+msgstr "存放的是 Godot Editor 的 Android 移植版的源代码。"
 
-#, fuzzy
 msgid "This module has a dependency on the ``lib`` module."
-msgstr "该库必须依赖Godot引擎头文件."
+msgstr "这个模块依赖于 ``lib`` 模块。"
 
 msgid "``app`` module:"
-msgstr ""
+msgstr "``app`` 模块："
 
-#, fuzzy
 msgid ""
 "Located under ``<Godot root directory>/platform/android/java/app``, this is "
 "an **application module** that holds"
 msgstr ""
-"导航到 ``<Godot根目录(Godot root directory)>/platform/android/java`` 并选择 "
-"``settings.gradle`` 文件."
+"位于 ``<Godot 根目录>/platform/android/java/app`` 中，这就是一个\\ **应用程序"
+"模块**\\ ，"
 
 msgid "the source code for the Android build templates."
-msgstr ""
+msgstr "存放的是 Android 构建模板的源代码。"
 
-#, fuzzy
 msgid "Building & debugging the editor module"
-msgstr "构建编辑器"
+msgstr "编辑器模块的构建与调试"
 
 msgid "To build the ``editor`` module:"
-msgstr ""
+msgstr "要构建 ``editor`` 模块："
 
 msgid ""
 "Select the `Run/Debug Configurations drop down <https://developer.android."
@@ -143,7 +135,7 @@ msgstr ""
 "update#sdk-manager>`__\\ 完成 SDK 设置。"
 
 msgid "To debug the ``editor`` module:"
-msgstr ""
+msgstr "要调试 ``editor`` 模块："
 
 msgid ""
 "Open the **Build Variants** window using **View > Tools Windows > Build "
@@ -175,7 +167,7 @@ msgstr ""
 "update#sdk-manager>`__\\ 完成 SDK 设置。"
 
 msgid "Building & debugging the app module"
-msgstr ""
+msgstr "应用模块的构建与调试"
 
 msgid ""
 "The ``app`` module requires the presence of a Godot project in its "

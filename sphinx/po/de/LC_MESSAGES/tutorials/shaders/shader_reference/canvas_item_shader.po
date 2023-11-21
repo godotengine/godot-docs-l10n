@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -128,7 +128,7 @@ msgstr ""
 "benutzerdefinierter Funktionen."
 
 msgid "Built-in"
-msgstr "Eingebettet"
+msgstr "Built-in"
 
 msgid "in float **TIME**"
 msgstr "in float **TIME**"
@@ -236,6 +236,13 @@ msgid ""
 "to (1, 1)."
 msgstr ""
 
+#, fuzzy
+msgid "in int  **INSTANCE_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "Instanz-ID zum Instanzieren."
+
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr "in vec4 **INSTANCE_CUSTOM**"
 
@@ -245,9 +252,8 @@ msgstr "Benutzerdefinierte Daten instanzieren."
 msgid "in bool **AT_LIGHT_PASS**"
 msgstr "in bool **AT_LIGHT_PASS**"
 
-#, fuzzy
 msgid "Always ``false``."
-msgstr "``if x else``"
+msgstr "Immer ``false``."
 
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
@@ -260,8 +266,16 @@ msgstr ""
 msgid "inout vec2 **VERTEX**"
 msgstr "inout vec2 **VERTEX**"
 
-msgid "Vertex, in image space."
+#, fuzzy
+msgid "Vertex, in local space."
 msgstr "Vertex, im Bildraum."
+
+#, fuzzy
+msgid "in int **VERTEX_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
+msgstr ""
 
 msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
@@ -442,9 +456,8 @@ msgstr ""
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
-#, fuzzy
 msgid "Input Normal."
-msgstr "Eingabe"
+msgstr "Eingabe Normal."
 
 msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
@@ -554,9 +567,8 @@ msgstr "Funktion"
 msgid "float **texture_sdf** (vec2 sdf_pos)"
 msgstr "float **length** (vec_type x)"
 
-#, fuzzy
 msgid "Performs an SDF texture lookup."
-msgstr "2D-Texturlesung durchführen"
+msgstr "Führt eine SDF-Textursuche durch."
 
 msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 msgstr ""
@@ -575,9 +587,8 @@ msgstr ""
 msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
 msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
-#, fuzzy
 msgid "Converts screen UV to a SDF."
-msgstr "Konvertiere Einrückung zu Tabulatoren"
+msgstr "Konvertiert Bildschirm-UV in eine SDF."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

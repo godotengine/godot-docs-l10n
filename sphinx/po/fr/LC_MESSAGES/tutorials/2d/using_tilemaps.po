@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,18 +51,6 @@ msgstr ""
 "optimisées pour être dessinés en grand nombre. Finalement, vous pouvez "
 "ajouter des collisions, des occlusions, et des formes de navigations aux "
 "tuiles, ajoutant des fonctionnalités supplémentaires à la TileMap."
-
-msgid ""
-"Godot 4.0 has moved several per-tile properties, such as tile rotation, from "
-"TileMap to TileSet. Individual tiles can no longer be rotated while in the "
-"TileMap editor. Instead, the TileSet editor must be used to create "
-"alternative rotated tiles."
-msgstr ""
-
-msgid ""
-"This change allows for greater design consistency, as not every tile needs "
-"to be rotated or flipped within a TileSet."
-msgstr ""
 
 msgid "Specifying the TileSet in the TileMap"
 msgstr ""
@@ -262,9 +250,8 @@ msgstr ""
 msgid "From left to right, the painting modes and tools you can choose are:"
 msgstr "De gauche à droite dans la barre d'outils :"
 
-#, fuzzy
 msgid "Selection"
-msgstr "Réflexion"
+msgstr "Sélection"
 
 msgid ""
 "Select tiles by clicking a single tile, or by holding down the left mouse "
@@ -284,9 +271,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"While in Selection mode, you can't place new tiles, but you can still erase "
-"tiles by right-clicking after making a selection. The whole selection will "
-"be erased, regardless of where you click in the selection."
+"You can remove the selected tiles from the TileMap by pressing :kbd:`Del`."
 msgstr ""
 
 msgid ""
@@ -302,9 +287,8 @@ msgid ""
 "`Escape` to cancel pasting."
 msgstr ""
 
-#, fuzzy
 msgid "Paint"
-msgstr "Peindre la tuile"
+msgstr "Peindre"
 
 msgid ""
 "The standard Paint mode allows you to place tiles by clicking or holding "
@@ -427,9 +411,8 @@ msgstr ""
 msgid "Using the Bucket Fill tool"
 msgstr "Utilisation de SurfaceTool"
 
-#, fuzzy
 msgid "Picker"
-msgstr "ColorPicker"
+msgstr "Sélecteur"
 
 msgid ""
 "After selecting Picker mode, you can pick existing tiles in the 2D editor by "

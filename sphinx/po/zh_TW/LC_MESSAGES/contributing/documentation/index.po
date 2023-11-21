@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Writing documentation"
 msgstr "撰寫自定說明文件"
 
@@ -26,23 +25,25 @@ msgid ""
 "or the manual. Below, you can find our content and writing guidelines and "
 "concrete guides to make changes to the documentation."
 msgstr ""
+"我們始終需要大家來説明優化文件，無論是類參考還是手冊。你可以在下面找到我們的"
+"內容與編寫規範，以及實際的文件修改指南。"
 
 msgid ""
 "Be sure to also check the :ref:`workflow guidelines "
 "<doc_contributing_workflow>`, especially if you're new to using Git or "
 "GitHub."
 msgstr ""
+"請務必檢查 :ref:`工作流程指南 <doc_contributing_workflow>`，特別是如果您不熟"
+"悉使用 Git 或 GitHub。"
 
-#, fuzzy
 msgid "Guidelines"
-msgstr "通用方針"
+msgstr "參考線"
 
 msgid ""
 "Here are the principles and guidelines we strive to follow to write "
 "accessible documentation."
-msgstr ""
+msgstr "這些是我們為了編寫簡單易懂的文件而努力遵循的原則和規範。"
 
-#, fuzzy
 msgid "Writing the manual"
 msgstr "編輯動畫"
 
@@ -50,12 +51,11 @@ msgid ""
 "These articles explain how to contribute to this very documentation, and how "
 "to build the online version locally for testing."
 msgstr ""
+"本指南介紹的是如何向 Godot 的文件做出貢獻，無論是編寫頁面還是審核頁面。"
 
-#, fuzzy
 msgid "Class reference guides"
 msgstr "類別參照手冊"
 
-#, fuzzy
 msgid "The pages below focus on the class reference."
 msgstr "如何撰寫類別參照文件"
 
@@ -65,8 +65,10 @@ msgid ""
 "XML files to write it, so the process to contribute to the class reference "
 "differs from writing the online manual."
 msgstr ""
+"因為參考是包含在 Godot 編輯器中的，它的原始檔案是 `Godot 倉庫 <https://"
+"github.com/godotengine/godot>`_的一部分。我們是用 XML 檔來編寫的，所以貢獻類"
+"參考的流程和編寫線上手冊的流程有所不同。"
 
-#, fuzzy
 msgid "Translating the documentation"
 msgstr "說明文件架構"
 
@@ -75,6 +77,8 @@ msgid ""
 "available to more people. Localizing the documentation is a colossal and "
 "ongoing effort you can be part of."
 msgstr ""
+"社區始終在努力讓 Godot 及其文件能夠被更多人使用。你可以參與文件的當地語系化，"
+"這是一個正在進行的龐大工程。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

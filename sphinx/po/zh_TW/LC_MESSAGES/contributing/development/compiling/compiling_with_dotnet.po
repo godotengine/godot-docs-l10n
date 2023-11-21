@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Compiling with .NET"
 msgstr "通過 Mono 進行編譯"
 
@@ -25,13 +24,12 @@ msgid "Requirements"
 msgstr "系統需求"
 
 msgid "`.NET SDK 6.0+ <https://dotnet.microsoft.com/download>`_"
-msgstr ""
+msgstr "`.NET SDK 6.0+ <https://dotnet.microsoft.com/download>`_"
 
 msgid ""
 "You can use ``dotnet --info`` to check which .NET SDK versions are installed."
-msgstr ""
+msgstr "您可以使用「dotnet --info」來檢查安裝了哪些.NET SDK版本。"
 
-#, fuzzy
 msgid "Enable the .NET module"
 msgstr "開啟 Mono 模組"
 
@@ -41,8 +39,10 @@ msgid ""
 "dotnet/runtime>`_ and internally many things are still named ``mono`` "
 "instead of ``dotnet`` or otherwise referred to as ``mono``."
 msgstr ""
+"C# 對 Godot 的支援歷來使用 `Mono <https://www.mono-project.com/>`_ 運作時而不"
+"是 `.NET Runtime <https://github.com/dotnet/runtime>`_ 並且在內部，許多東西仍"
+"然被命名為“mono”而不是“dotnet”或以其他方式稱為“mono”。"
 
-#, fuzzy
 msgid ""
 "By default, the .NET module is disabled when building. To enable it, add the "
 "option ``module_mono_enabled=yes`` to the SCons command line, while "
@@ -54,7 +54,6 @@ msgstr ""
 msgid "Generate the glue"
 msgstr "產生 Glue"
 
-#, fuzzy
 msgid ""
 "Parts of the sources of the managed libraries are generated from the "
 "ClassDB. These source files must be generated before building the managed "
@@ -66,7 +65,6 @@ msgstr ""
 "建置完成後，需要使用 ``--generate-mono-glue`` 參數接上輸出路徑來執行編譯好的"
 "可執行檔。該路徑必須為 Godot 資料夾中的 ``modules/mono/glue`` ："
 
-#, fuzzy
 msgid ""
 "This command will tell Godot to generate the C# bindings for the Godot API "
 "at ``modules/mono/glue/GodotSharp/GodotSharp/Generated``, and the C# "
@@ -79,7 +77,6 @@ msgstr ""
 "Godot API 的 C# 解決方案，位於 ``modules/mono/glue/Managed/Generated`` 。產生"
 "好這些檔案後，就可以為所有需要的建置目標建置 Godot，而無需重複此一過程。"
 
-#, fuzzy
 msgid ""
 "``<godot_binary>`` refers to the editor binary you compiled with the .NET "
 "module enabled. Its exact name will differ based on your system and "
@@ -107,16 +104,14 @@ msgstr ""
 "腳本 API 註冊新方法或其中一個向 ClassDB 註冊的方法需要更改參數時。若 ClassDB "
 "與 Glue 原始檔註冊的 API 有出入，Godot 會在啟動時顯示錯誤。"
 
-#, fuzzy
 msgid "Building the managed libraries"
 msgstr "繫結外部函式庫"
 
 msgid ""
 "Once you have generated the .NET glue, you can build the managed libraries "
 "with the ``build_assemblies.py`` script::"
-msgstr ""
+msgstr "產生 .NET 黏合後，您可以使用「build_assemblies.py」腳本建立託管庫："
 
-#, fuzzy
 msgid ""
 "If everything went well, the ``GodotSharp`` directory, containing the "
 "managed libraries, should have been created in the ``bin`` directory."
@@ -130,8 +125,10 @@ msgid ""
 "use ``GODOT_VERSION_STATUS`` to give every build a unique version or delete "
 "``GodotNuGetFallbackFolder`` after every build to clear the package cache."
 msgstr ""
+"預設情況下，所有開發版本共用一個版本號，這可能會導致 NuGet 套件快取出現一些問"
+"題。要解決此問題，可以使用“GODOT_VERSION_STATUS”為每個建置提供唯一的版本，或"
+"在每個建置後刪除“GodotNuGetFallbackFolder”以清除套件快取。"
 
-#, fuzzy
 msgid ""
 "Unlike \"classical\" Godot builds, when building with the .NET module "
 "enabled (and depending on the target platform), a data directory may be "
@@ -142,10 +139,9 @@ msgid ""
 msgstr ""
 "與「經典」Godot 建置不同，當建置啟用了 Mono 模組 (並根據不同的目標平台)，有可"
 "能會為編輯器與匯出樣板產生資料目錄。該資料夾對於能否正常使用 Godot 來說很重"
-"要，在發佈 Godot 時必須一同發佈。有關該資料夾的詳情請參考 :ref:`資料目錄 "
+"要，在發行 Godot 時必須一同發行。有關該資料夾的詳情請參考 :ref:`資料目錄 "
 "<compiling_with_mono_data_directory>` 。"
 
-#, fuzzy
 msgid "Build Platform"
 msgstr "支援平台"
 
@@ -154,13 +150,15 @@ msgid ""
 "platform specific the libraries are built. Omit this argument to build for "
 "the current system."
 msgstr ""
+"提供“--godot-platform=<platform>”參數來控制建置特定於哪個平台的函式庫。忽略此"
+"參數以針對目前系統進行建置。"
 
 msgid ""
 "This currently only controls the inclusion of the support for Visual Studio "
 "as an external editor, the libraries are otherwise identical."
 msgstr ""
+"目前，這僅控制對 Visual Studio 作為外部編輯器的支援，庫在其他方面是相同的。"
 
-#, fuzzy
 msgid "NuGet packages"
 msgstr "在 Godot 中使用 NuGet 套件"
 
@@ -169,23 +167,31 @@ msgid ""
 "distributed as NuGet packages. This is all transparent to the user, but it "
 "can make things complicated during development."
 msgstr ""
+"API 組件、來源產生器和自訂 MSBuild 專案 SDK 以 NuGet 套件分發。這對使用者來說"
+"都是透明的，但它會使開發過程中的事情變得複雜。"
 
 msgid ""
 "In order to use Godot with a development version of those packages, a local "
 "NuGet source must be created where MSBuild can find them. This can be done "
 "with the .NET CLI:"
 msgstr ""
+"為了將 Godot 與這些套件的開發版本一起使用，必須建立本機 NuGet 來源，MSBuild "
+"可以在其中找到它們。這可以使用 .NET CLI 來完成："
 
 msgid ""
 "The Godot NuGet packages must be added to that local source. Additionally, "
 "we must make sure there are no other versions of the package in the NuGet "
 "cache, as MSBuild may pick one of those instead."
 msgstr ""
+"Godot NuGet 套件必須新增至該本機來源。此外，我們必須確保 NuGet 快取中沒有該套"
+"件的其他版本，因為 MSBuild 可能會選擇其中之一。"
 
 msgid ""
 "In order to simplify this process, the ``build_assemblies.py`` script "
 "provides the following ``--push-nupkgs-local`` option:"
 msgstr ""
+"為了簡化此過程，「build_assemblies.py」腳本提供了以下「--push-nupkgs-local」"
+"選項："
 
 msgid ""
 "This option ensures the packages will be added to the specified local NuGet "
@@ -193,15 +199,19 @@ msgid ""
 "NuGet cache. It's recommended to always use this option when building the C# "
 "solutions during development to avoid mistakes."
 msgstr ""
+"此選項可確保將套件新增至指定的本機 NuGet 來源，並從 NuGet 快取中刪除套件的衝"
+"突版本。建議在開發過程中建立 C# 解決方案時始終使用此選項以避免錯誤。"
 
 msgid "Double Precision Support (REAL_T_IS_DOUBLE)"
-msgstr ""
+msgstr "雙精度支援 (REAL_T_IS_DOUBLE)"
 
 msgid ""
 "When building Godot with double precision support, i.e. the "
 "``precision=double`` argument for scons, the managed libraries must be "
 "adjusted to match by passing the ``--precision=double`` argument:"
 msgstr ""
+"當建立具有雙精度支援的 Godot 時，即 scons 的“ precision=double ”參數，必須透"
+"過傳遞“-- precision=double ”參數來調整託管庫以配對："
 
 msgid "Examples"
 msgstr "範例"
@@ -209,21 +219,19 @@ msgstr "範例"
 msgid "Example (Windows)"
 msgstr "範例 (Windows)"
 
-#, fuzzy
 msgid "Example (Linux, \\*BSD)"
-msgstr "X11 (Linux, \\*BSD)"
+msgstr "範例 (Linux, \\*BSD)"
 
 msgid "Data directory"
 msgstr "資料目錄"
 
-#, fuzzy
 msgid ""
 "The data directory is a dependency for Godot binaries built with the .NET "
 "module enabled. It contains important files for the correct functioning of "
 "Godot. It must be distributed together with the Godot executable."
 msgstr ""
 "資料目錄在 Godot 二進位檔編譯時啟用 Mono 目錄時的相依性。該資料夾包含了一些重"
-"要的檔案，且會影響 Godot 能否正確運作。在發佈 Godot 執行檔時必須一同發佈。"
+"要的檔案，且會影響 Godot 能否正確運作。在發行 Godot 執行檔時必須一同發行。"
 
 msgid "Editor"
 msgstr "編輯器"
@@ -234,17 +242,21 @@ msgid ""
 "Godot API assemblies and a ``Tools`` subdirectory with the tools required by "
 "the editor, like the ``GodotTools`` assemblies and its dependencies."
 msgstr ""
+"Godot 編輯器的資料目錄名稱始終為「GodotSharp」。該目錄包含一個包含 Godot API "
+"組件的「Api」子目錄和一個包含編輯器所需工具的「Tools」子目錄，例如"
+"「GodotTools」組件及其相依性。"
 
 msgid ""
 "On macOS, if the Godot editor is distributed as a bundle, the ``GodotSharp`` "
 "directory may be placed in the ``<bundle_name>.app/Contents/Resources/`` "
 "directory inside the bundle."
 msgstr ""
+"在 macOS 上，如果 Godot 編輯器是作為組合包分發，則「GodotSharp」目錄可能會放"
+"置在組合包內的「<bundle_name>.app/Contents/Resources/」目錄中。"
 
 msgid "Export templates"
 msgstr "匯出樣板"
 
-#, fuzzy
 msgid ""
 "The data directory for exported projects is generated by the editor during "
 "the export. It is named ``data_<APPNAME>_<ARCH>``, where ``<APPNAME>`` is "
@@ -258,12 +270,11 @@ msgstr ""
 msgid ""
 "In the case of multi-architecture exports multiple such data directories "
 "will be generated."
-msgstr ""
+msgstr "在多架構匯出的情況下，將產生多個此類資料目錄。"
 
 msgid "Command-line options"
 msgstr "命令行選項"
 
-#, fuzzy
 msgid ""
 "The following is the list of command-line options available when building "
 "with the .NET module:"
@@ -272,7 +283,6 @@ msgstr "下列為在建置 Mono 模組時可用的命令行選項："
 msgid "**module_mono_enabled**\\ =yes | **no**"
 msgstr "\\ **module_mono_enabled**\\ =yes | **no**"
 
-#, fuzzy
 msgid "Build Godot with the .NET module enabled."
 msgstr "開啟 Mono 模組來建置 Godot。"
 

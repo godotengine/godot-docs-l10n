@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,10 +27,12 @@ msgstr ""
 "Posledním kouskem, který naše hra potřebuje, je UI: rozhraní pro zobrazování "
 "věcí, jako je skóre, zpráva „konec hry“ a tlačítko restartu."
 
+#, fuzzy
 msgid ""
-"Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node "
-"named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational "
-"display that appears as an overlay on top of the game view."
+"Create a new scene, click the \"Other Node\" button and add a :ref:"
+"`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for "
+"\"heads-up display\", an informational display that appears as an overlay on "
+"top of the game view."
 msgstr ""
 "Vytvořte novou scénu a přidejte uzel s názvem ``HUD`` :ref:`CanvasLayer "
 "<class_CanvasLayer>`. „HUD“ znamená „heads-up display“, informační displej, "
@@ -145,7 +147,7 @@ msgid "Message"
 msgstr "Zpráva"
 
 #, fuzzy
-msgid "Add the text ``Dodge the creeps!``."
+msgid "Add the text ``Dodge the Creeps!``."
 msgstr "*Text*: ``Dodge the Creeps!``"
 
 msgid ""
@@ -271,12 +273,6 @@ msgstr ""
 "\"Připojit signál\". Ověřte, že zelená ikonka připojení se nyní objeví ve "
 "skriptu vedle ``func new_game()``."
 
-#, fuzzy
-msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
-msgstr ""
-"Pokud jste si jisti, že vše funguje, odeberte volání ``new_game()`` z "
-"``_ready()``."
-
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -287,11 +283,6 @@ msgstr ""
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "V ``game_over()`` musíme zavolat odpovídající `HUD`` funkci:"
 
-msgid ""
-"Just a reminder: we don't want to start the new game automatically, so "
-"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
-msgstr ""
-
 #, fuzzy
 msgid ""
 "Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
@@ -299,6 +290,14 @@ msgid ""
 msgstr ""
 "Nakonec přidejte toto do ``_on_ScoreTimer_timeout()``, aby byl displej "
 "synchronizován s měnícím se skóre:"
+
+#, fuzzy
+msgid ""
+"Remember to remove the call to ``new_game()`` from ``_ready()`` if you "
+"haven't already, otherwise your game will start automatically."
+msgstr ""
+"Pokud jste si jisti, že vše funguje, odeberte volání ``new_game()`` z "
+"``_ready()``."
 
 #, fuzzy
 msgid ""

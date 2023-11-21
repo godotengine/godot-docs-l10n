@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Basic XR Locomotion"
-msgstr "根骨骼运动"
+msgstr "基础 XR 运动"
 
 msgid ""
 "For basic locomotion we're going to continue using our Godot XR Tools "
 "library. The library contains both basic movement features as more advanced "
 "features."
 msgstr ""
+"对于基本运动，我们将继续使用 Godot XR 工具库。该库既包含基本运动功能，也包含"
+"更高级的功能。"
 
-#, fuzzy
 msgid "Adding our player body"
-msgstr "添加更多节点"
+msgstr "添加玩家的身体"
 
 msgid ""
 "The first step we need to do is to add a helper node to our :ref:`XROrigin3D "
@@ -47,15 +47,16 @@ msgid ""
 "godot-xr-tools/player/player_body.tscn`` and add this node."
 msgstr ""
 
-#, fuzzy
 msgid "Adding a floor"
-msgstr "加一把剑"
+msgstr "添加地板"
 
 msgid ""
 "This node governs the in game movement of your character and will "
 "immediately react to gravity. So to prevent our player from infinitely "
 "falling down we'll quickly add a floor to our scene."
 msgstr ""
+"该节点控制角色在游戏中的移动，并会立即对重力做出反应。因此，为了防止玩家无限"
+"下坠，我们将在场景中快速添加一个地板。"
 
 msgid ""
 "We start by adding a :ref:`StaticBody3D <class_staticbody3d>` node to our "
@@ -77,14 +78,15 @@ msgid ""
 "generator>`_."
 msgstr ""
 
-#, fuzzy
 msgid "Direct movement"
-msgstr "方向"
+msgstr "直接移动"
 
 msgid ""
 "We're going to start adding some basic direct movement to our setup. This "
 "allows the user to move through the virtual world using joystick input."
 msgstr ""
+"我们将开始在我们的设置中添加一些基本的直接运动。这允许用户使用摇杆输入在虚拟"
+"世界中移动。"
 
 msgid ""
 "It is important to note that moving through the virtual world while the "
@@ -126,10 +128,10 @@ msgid ""
 "If you run your game at this point in time you will find that you can move "
 "through the world freely using the right hand joystick."
 msgstr ""
+"如果你在这个时间点运行你的游戏，你会发现你可以使用右手摇杆在世界中自由移动。"
 
-#, fuzzy
 msgid "Teleport"
-msgstr "export"
+msgstr "传送"
 
 msgid ""
 "An alternative to direct movement that some users find more pleasant is the "
@@ -158,12 +160,13 @@ msgid ""
 msgstr "你的场景现在应该看上去类似这样："
 
 msgid "More advanced movement features"
-msgstr ""
+msgstr "更多高级移动功能"
 
 msgid ""
 "Godot XR Tools adds many more movement features such as gliding, a grapple "
 "hook implementation, a jetpack, climbing mechanics, etc."
 msgstr ""
+"Godot XR 工具增加了更多的运动功能，如滑翔，抓钩，喷气背包，攀爬机制等。"
 
 msgid ""
 "Most work similarly to the basic movement features we've handled so far, "

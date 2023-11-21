@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "2D coordinate systems and 2D transforms"
-msgstr "坐标系（2D）"
+msgstr "2D 坐标系与 2D 变换"
 
 msgid "Introduction"
 msgstr "前言"
@@ -38,9 +37,8 @@ msgid ""
 "insights to the underlying functionality."
 msgstr ""
 
-#, fuzzy
 msgid "Godot 2D coordinate systems"
-msgstr "坐标系"
+msgstr "Godot 2D 坐标系"
 
 msgid ""
 "The following graphic gives an overview of Godot 2D coordinate systems and "
@@ -63,23 +61,18 @@ msgid ""
 msgstr ""
 
 msgid "Click graphic to enlarge."
-msgstr ""
+msgstr "单击图片放大。"
 
-#, fuzzy
 msgid "**Item Coordinates**"
-msgstr "坐标"
+msgstr "**Item 坐标**"
 
-#, fuzzy
 msgid ""
 "This is the local coordinate system of a :ref:`CanvasItem "
 "<class_CanvasItem>`."
-msgstr ""
-"这是一个简单的例子, 说明如何从代码中创建一个精灵, 并使用低级的 :ref:"
-"`CanvasItem <class_CanvasItem>` API移动它."
+msgstr "这是 :ref:`CanvasItem <class_CanvasItem>` 的局部坐标系。"
 
-#, fuzzy
 msgid "**Parent Item Coordinates**"
-msgstr "下一个坐标"
+msgstr "**父 Item 坐标**"
 
 msgid ""
 "This is the local coordinate system of the parent's *CanvasItem*. When "
@@ -88,9 +81,8 @@ msgid ""
 "`CanvasItems.top_level <class_CanvasItem_property_top_level>`."
 msgstr ""
 
-#, fuzzy
 msgid "**Canvas Coordinates**"
-msgstr "坐标"
+msgstr "**画布坐标**"
 
 msgid ""
 "As mentioned in the previous tutorial :ref:`doc_canvas_layers`, there are "
@@ -99,17 +91,15 @@ msgid ""
 "*Viewport* can contain multiple *Canvases* with different coordinate systems."
 msgstr ""
 
-#, fuzzy
 msgid "**Viewport Coordinates**"
-msgstr "视口显示坐标"
+msgstr "**视口坐标**"
 
 #, fuzzy
 msgid "This is the coordinate system of the :ref:`Viewport <class_Viewport>`."
 msgstr "然后选择您想要使用的 :ref:`Viewport <class_Viewport>`."
 
-#, fuzzy
 msgid "**Camera Coordinates**"
-msgstr "坐标"
+msgstr "**相机坐标**"
 
 msgid ""
 "This is only used internally for functionality like 3D-camera ray "
@@ -117,7 +107,7 @@ msgid ""
 msgstr ""
 
 msgid "**Embedder Coordinates / Screen Coordinates**"
-msgstr ""
+msgstr "**嵌入器坐标 / 屏幕坐标**"
 
 msgid ""
 "Every *Viewport* (*Window* or *SubViewport*) in the scene tree is embedded "
@@ -133,7 +123,7 @@ msgid ""
 msgstr ""
 
 msgid "**Absolute Embedder Coordinates / Absolute Screen Coordinates**"
-msgstr ""
+msgstr "**绝对嵌入器坐标 / 绝对屏幕坐标**"
 
 msgid ""
 "The origin of this coordinate system is the top-left corner of the embedding "
@@ -146,9 +136,8 @@ msgid ""
 "Screen Coordinates."
 msgstr ""
 
-#, fuzzy
 msgid "Node transforms"
-msgstr "变换"
+msgstr "节点变换"
 
 msgid ""
 "Each of the mentioned nodes have one or more transforms associated with them "
@@ -158,9 +147,8 @@ msgid ""
 "effects of each of them."
 msgstr ""
 
-#, fuzzy
 msgid "**CanvasItem transform**"
-msgstr "画布变换"
+msgstr "**CanvasItem 变换**"
 
 msgid "*CanvasItems* are either *Control*-nodes or *Node2D*-nodes."
 msgstr ""
@@ -186,9 +174,8 @@ msgid ""
 "*SubViewport*."
 msgstr ""
 
-#, fuzzy
 msgid "**CanvasLayer transform**"
-msgstr "画布变换"
+msgstr "**CanvasLayer 变换**"
 
 msgid ""
 "The *CanvasLayer's* :ref:`transform <class_CanvasLayer_property_transform>` "
@@ -197,7 +184,7 @@ msgid ""
 msgstr ""
 
 msgid "**CanvasLayer follow viewport transform**"
-msgstr ""
+msgstr "**CanvasLayer 视口跟随变换**"
 
 msgid ""
 "The *follow viewport transform* is an automatically calculated transform, "
@@ -209,9 +196,8 @@ msgid ""
 "3D effect. It affects the same child nodes as the *CanvasLayer transform*."
 msgstr ""
 
-#, fuzzy
 msgid "**Viewport canvas transform**"
-msgstr "Viewport 和画布变换"
+msgstr "**视口画布变换**"
 
 msgid ""
 "The :ref:`canvas transform <class_Viewport_property_canvas_transform>` "
@@ -221,9 +207,8 @@ msgid ""
 "transform. It doesn't affect this *Viewport's* embedded *Windows*."
 msgstr ""
 
-#, fuzzy
 msgid "**Viewport global canvas transform**"
-msgstr "Viewport 和画布变换"
+msgstr "**视口全局画布变换**"
 
 #, fuzzy
 msgid ""
@@ -236,9 +221,8 @@ msgstr ""
 "<class_Transform2D>`\\ ）。这是一个影响所有单独的\\ *画布层*\\ 的主变换。通常"
 "这种变换用得不多。它被用在了 Godot 的编辑器中的 CanvasItem 编辑器中。"
 
-#, fuzzy
 msgid "**Viewport stretch transform**"
-msgstr "拉伸变换"
+msgstr "**视口拉伸变换**"
 
 msgid ""
 "Finally, *Viewports* have a *stretch transform*, which is used when resizing "
@@ -253,9 +237,8 @@ msgid ""
 "have non-default :ref:`scale <class_Transform2D_method_get_scale>`."
 msgstr ""
 
-#, fuzzy
 msgid "**Window transform**"
-msgstr "**Transform**"
+msgstr "**窗口变换**"
 
 msgid ""
 "In order to scale and position the *Window's* content as described in :ref:"
@@ -265,19 +248,20 @@ msgid ""
 "ratio."
 msgstr ""
 
-#, fuzzy
 msgid "**Window position**"
-msgstr "**Windows**"
+msgstr "**窗口位置**"
 
 msgid ""
 "Every *Window* also has a :ref:`position <class_Window_property_position>` "
 "to describe its position within its embedder. The embedder can be another "
 "*Viewport* or the OS Window Manager."
 msgstr ""
+"每个 *Window* 都还有一个 :ref:`position "
+"<class_Window_property_position>`\\ ，描述的是它在嵌入器中的位置。嵌入器可以"
+"是另一个 *Viewport*\\ ，也可以是操作系统窗口管理器。"
 
-#, fuzzy
 msgid "**SubViewportContainer shrink transform**"
-msgstr "Viewport 和画布变换"
+msgstr "**SubViewportContainer 收缩变换**"
 
 msgid ""
 ":ref:`stretch <class_SubViewportContainer_property_stretch>` together with :"

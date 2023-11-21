@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "Godot's design philosophy"
 msgstr "Godot 的設計理念"
 
-#, fuzzy
 msgid "Now that you've gotten your feet wet, let's talk about Godot's design."
 msgstr "現在你已經逐漸上手了，讓我們來瞭解一下 Godot 的設計。"
 
@@ -105,11 +104,9 @@ msgstr ""
 msgid "|image0|"
 msgstr "\\ |image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "\\ |image0|"
+msgstr "image0"
 
-#, fuzzy
 msgid ""
 "Also note that Godot offers many different types of objects called nodes, "
 "each with a specific purpose. Nodes are part of a tree and always inherit "
@@ -124,23 +121,21 @@ msgstr ""
 msgid ""
 "In other words, Godot's nodes do not work like components in some other game "
 "engines."
-msgstr ""
+msgstr "換句話說，Godot的節點並不像其他一些遊戲引擎中的元件那樣工作。"
 
 msgid "|image1|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "\\ |image1|"
+msgstr "image1"
 
-#, fuzzy
 msgid ""
 "Sprite2D is a Node2D, a CanvasItem and a Node. It has all the properties and "
 "features of its three parent classes, like transforms or the ability to draw "
 "custom shapes and render with a custom shader."
 msgstr ""
 "Sprite 繼承自 Node2D、CanvasItem、與 Node 型別。Sprite 有這些母類別上所有的屬"
-"性與功能如變換、繪製自定形狀、使用自定著色器算繪等。"
+"性與功能如變換、繪製自定形狀、使用自定著色器渲染等。"
 
 msgid "All-inclusive package"
 msgstr "一條龍服務的套裝軟體"
@@ -158,11 +153,9 @@ msgstr ""
 msgid "|image2|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "\\ |image2|"
+msgstr "image2"
 
-#, fuzzy
 msgid ""
 "The goal is to offer a full package to create games and a continuous user "
 "experience. You can still work with external programs as long as there is an "
@@ -175,7 +168,6 @@ msgstr ""
 "個，如 `Tiled Map Importer <https://github.com/vnen/godot-tiled-importer>`__ "
 "就是個例子。"
 
-#, fuzzy
 msgid ""
 "That is also partly why Godot offers its own programming language GDScript "
 "along with C#. GDScript is designed for the needs of game developers and "
@@ -185,7 +177,6 @@ msgstr ""
 "(VisualScript) 一部分的原因。這些語言是源自遊戲開發者與設計師的需求所設計的，"
 "而且也與引擎及編輯器高度整合。"
 
-#, fuzzy
 msgid ""
 "GDScript lets you write code using an indentation-based syntax, yet it "
 "detects types and offers a static language's quality of auto-completion. It "
@@ -199,8 +190,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "Note that with GDExtension, you can write high-performance code using "
-"compiled languages like C, C++, Rust, or Python (using the Cython compiler) "
-"without recompiling the engine."
+"compiled languages like C, C++, Rust, D, Haxe, or Swift without recompiling "
+"the engine."
 msgstr ""
 "值得注意的是，使用 GDNative 的話，你也可以使用如 C、C++、Rust、與（使用 "
 "Cython 編譯器的）Python 這類的編譯語言而毋須重新編譯整個引擎。"
@@ -219,16 +210,15 @@ msgstr ""
 msgid "|image4|"
 msgstr "\\ |image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "\\ |image4|"
+msgstr "image4"
 
 msgid ""
 "*A State Machine editor plugin in Godot 2 by kubecz3k. It lets you manage "
 "states and transitions visually.*"
 msgstr ""
-"> Godot 2 中的狀態機 (State Machine) 編輯器外掛，作者為 kubecz3k。這個外掛提"
-"供視覺化的狀態管理與轉換界面。"
+"*Godot 2 中的狀態機 (State Machine) 編輯器外掛，作者為 kubecz3k。這個外掛提供"
+"視覺化的狀態管理與轉換界面。*"
 
 msgid "Open source"
 msgstr "開放原始碼"
@@ -301,42 +291,39 @@ msgid ""
 "run game code in the editor. This means you can **use the same code** and "
 "scenes for your games, or **build plugins and extend the editor.**"
 msgstr ""
-"Godot 編輯器是在遊戲引擎上執行的。編輯器使用了 Godot 引擎自己的 UI 系統，能夠"
-"在測試專案時熱重載程式碼與場景，或是在編輯器中執行遊戲程式碼。這表示 **同一個"
-"程式碼** 可以用在場景，也可以 **製作成外掛並擴充編輯器功能** 。"
+"Godot 編輯器是在遊戲引擎上執行的，編輯器使用了 Godot 引擎自己的 UI 系統，能夠"
+"在測試專案時熱重載程式碼與場景，或是在編輯器中執行遊戲程式碼。這表示\\ **同一"
+"個程式碼**\\ 可以用在場景，也可以\\ **製作成外掛並擴充編輯器功能**\\ 。"
 
-#, fuzzy
 msgid ""
 "This leads to a reliable and flexible UI system, as it powers the editor "
 "itself. With the ``@tool`` annotation, you can run any game code in the "
 "editor."
 msgstr ""
-"誠如編輯器也仰賴於統一套系統，也讓我們有了可靠與靈活的 UI 系統。使用 "
-"``tool`` 關鍵字，就能在編輯器中執行任何遊戲程式碼。"
+"這帶來了非常穩定且靈活的UI系統，並且編輯器本身就是由它自身驅動的。使用 "
+"``@tool`` 關鍵字，就能在編輯器中執行任何遊戲程式碼。"
 
 msgid "|image5|"
 msgstr "\\ |image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "\\ |image5|"
+msgstr "image5"
 
 msgid ""
 "*RPG in a Box is a voxel RPG editor made with Godot 2. It uses Godot's UI "
 "tools for its node-based programming system and for the rest of the "
 "interface.*"
 msgstr ""
-"> *RPG in a Box* 是一個使用 Godot 2 開發的 Voxel RPG 編輯器。他使用 Godot 的 "
-"UI 工具來製作他的基於節點的程式語言系統以及其他界面。"
+"*RPG in a Box是一個使用 Godot 2 開發的 Voxel RPG 編輯器。他使用 Godot 的 UI "
+"工具來製作他的基於節點的程式系統以及其他界面。*"
 
-#, fuzzy
 msgid ""
 "Put the ``@tool`` annotation at the top of any GDScript file and it will run "
 "in the editor. This lets you import and export plugins, create plugins like "
 "custom level editors, or create scripts with the same nodes and API you use "
 "in your projects."
 msgstr ""
-"將 ``tool`` 關鍵字放在任何 GDScript 檔案的最上方就可以在編輯器中使用。這就讓"
+"將 ``@tool`` 關鍵字放在任何 GDScript 檔案的最上方就可以在編輯器中使用。這就讓"
 "你可以匯入與匯出外掛、可以建立如自定關卡的編輯器、或是可以使用與專案相同的節"
 "點與 API 來建立腳本。"
 
@@ -345,6 +332,8 @@ msgid ""
 "binary. This means you can't import it as a typical project that would have "
 "a ``project.godot`` file."
 msgstr ""
+"編輯器完全使用 C++ 編寫並且靜態地編譯為二進位檔案。這意味著你不能像匯入一個擁"
+"有 ``project.godot`` 檔的普通專案一樣匯入它。"
 
 msgid "Separate 2D and 3D engines"
 msgstr "互相獨立的 2D 與 3D 引擎"
@@ -355,7 +344,7 @@ msgid ""
 "can render 2D in 3D, 3D in 2D, and overlay 2D sprites and interfaces over "
 "your 3D world."
 msgstr ""
-"Godot 提供了互相獨立的 2D 與 3D 算繪引擎。所以 **2D 場景的基本單位是像素** 。"
+"Godot 提供了互相獨立的 2D 與 3D 渲染引擎。所以 **2D 場景的基本單位是像素** 。"
 "雖然引擎是分開的，但你可以在 3D 中使用 2D、在 2D 中使用 3D 、或是在 3D 世界中"
 "使用 2D Sprite 或界面。"
 

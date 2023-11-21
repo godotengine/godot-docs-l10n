@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,45 +17,47 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Evaluating expressions"
 msgstr "Bisect 迴歸"
 
 msgid ""
 "Godot provides an :ref:`class_Expression` class you can use to evaluate "
 "expressions."
-msgstr ""
+msgstr "Godot 提供了 :ref:`class_Expression` 類，可以用來對運算式進行估值。"
 
-#, fuzzy
 msgid "An expression can be:"
 msgstr "運算式節點可以："
 
 msgid "A mathematical expression such as ``(2 + 4) * 16/4.0``."
-msgstr ""
+msgstr "類似 ``(2 + 4) * 16/4.0`` 的數學運算式。"
 
 msgid "A built-in method call like ``deg_to_rad(90)``."
-msgstr ""
+msgstr "類似 ``deg2rad(90)`` 的內建方法呼叫。"
 
 msgid ""
 "A method call on an user-provided script like ``update_health()``, if "
 "``base_instance`` is set to a value other than ``null`` when calling :ref:"
 "`Expression.execute() <class_Expression_method_execute>`."
 msgstr ""
+"呼叫 :ref:`Expression.execute() <class_Expression_method_execute>` 時如果 "
+"``base_instance`` 非 ``null``，那麼呼叫使用者提供腳本的方法，比如 "
+"``update_health()``。"
 
 msgid ""
 "The Expression class is independent from GDScript. It's available even if "
 "you compile Godot with the GDScript module disabled."
 msgstr ""
+"Expression 類是獨立於 GDScript 的。即便禁用 GDScript 模組編譯 Godot 也能使"
+"用。"
 
-#, fuzzy
 msgid "Basic usage"
-msgstr "\\ Basis"
+msgstr "基本使用"
 
 msgid "To evaluate a mathematical expression, use::"
-msgstr ""
+msgstr "要對數學運算式求值，請使用： ::"
 
 msgid "The following operators are available:"
-msgstr ""
+msgstr "可以使用以下運算子："
 
 msgid "Operator"
 msgstr "運算子"
@@ -63,7 +65,6 @@ msgstr "運算子"
 msgid "Notes"
 msgstr "請注意"
 
-#, fuzzy
 msgid "Addition ``+``"
 msgstr "其他注意事項"
 
@@ -71,65 +72,75 @@ msgid ""
 "Can also be used to concatenate strings and arrays: - ``\"hello\" + \" "
 "world\"`` = ``hello world`` - ``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 msgstr ""
+"還可以用於連接字串和陣列：- ``\"hello\" + \" world\"`` = ``hello world`` - "
+"``[1, 2] + [3, 4]`` = ``[1, 2, 3, 4]``"
 
-#, fuzzy
 msgid "Subtraction (``-``)"
 msgstr "減法"
 
 msgid "Multiplication (``*``)"
-msgstr ""
+msgstr "乘（``*``）"
 
-#, fuzzy
 msgid "Division (``/``)"
-msgstr "\\ Truevision Targa (``.tga``)"
+msgstr "Division (``/``)"
 
 msgid ""
 "Performs and integer division if both operands are integers. If at least one "
 "of them is a floating-point number, returns a floating-point value."
 msgstr ""
+"兩個運算元都是整數時執行整數除法。如果至少有一個是浮點數，就會返回浮點值。"
 
 msgid "Modulo (``%``)"
-msgstr ""
+msgstr "求餘（``%``）"
 
 msgid "Returns the remainder of an integer division."
-msgstr ""
+msgstr "返回整數除法的餘數。"
 
 msgid ""
 "Spaces around operators are optional. Also, keep in mind the usual `order of "
 "operations <https://en.wikipedia.org/wiki/Order_of_operations>`__ applies. "
 "Use parentheses to override the order of operations if needed."
 msgstr ""
+"運算子周圍的空格是可選的。另外請記住，此處適用一般的`運算次序 <https://zh."
+"wikipedia.org/zh-cn/%E9%81%8B%E7%AE%97%E6%AC%A1%E5%BA%8F>`__。必要時請使用括"
+"弧來覆蓋運算子的次序。"
 
 msgid ""
 "All the Variant types supported in Godot can be used: integers, floating-"
 "point numbers, strings, arrays, dictionaries, colors, vectors, …"
 msgstr ""
+"Godot 所支援的所有 Variant 型別都可以使用：整數、浮點數、字串、陣列、字典、顏"
+"色、向量……"
 
 msgid "Arrays and dictionaries can be indexed like in GDScript::"
-msgstr ""
+msgstr "陣列與字典的索引方法與 GDScript 一致： ::"
 
 msgid "Passing variables to an expression"
-msgstr ""
+msgstr "向運算式傳遞變數"
 
 msgid ""
 "You can pass variables to an expression. These variables will then become "
 "available in the expression's \"context\" and will be substituted when used "
 "in the expression::"
 msgstr ""
+"你可以將變數傳入運算式。這些變數就會進入這個運算式的“本文”，在運算式中使用就"
+"會被替換： ::"
 
 msgid ""
 "Both the variable names and variable values **must** be specified as an "
 "array, even if you only define one variable. Also, variable names are **case-"
 "sensitive**."
 msgstr ""
+"變數的名稱和變數的值都**必須**以陣列的形式指定，即便只定義一個變數也是如此。"
+"而且，變數名是**大小寫敏感**的。"
 
 msgid "Setting a base instance for the expression"
-msgstr ""
+msgstr "為運算式設定基礎實例"
 
 msgid ""
 "By default, an expression has a base instance of ``null``. This means the "
 "expression has no base instance associated to it."
-msgstr ""
+msgstr "運算式預設的基礎實例是 ``null``。這意味著該運算式沒有關聯基礎實例。"
 
 msgid ""
 "When calling :ref:`Expression.execute() <class_Expression_method_execute>`, "
@@ -137,20 +148,23 @@ msgid ""
 "object instance such as ``self``, another script instance or even a "
 "singleton::"
 msgstr ""
+"呼叫 :ref:`Expression.execute() <class_Expression_method_execute>` 時，你可以"
+"將參數 ``base_instance`` 的值設為 ``self``、另一個腳本實例、單例等特定物件的"
+"實例： ::"
 
 msgid "Associating a base instance allows doing the following:"
-msgstr ""
+msgstr "關聯基礎實例可以實作以下功能："
 
 msgid "Reference the instance's constants (``const``) in the expression."
-msgstr ""
+msgstr "在運算式中引用實例的常數（``const``）。"
 
 msgid "Reference the instance's member variables (``var``) in the expression."
-msgstr ""
+msgstr "在運算式中引用實例的成員變數（``var``）。"
 
 msgid ""
 "Call methods defined in the instance and use their return values in the "
 "expression."
-msgstr ""
+msgstr "在運算式中呼叫定義在實例上的方法，並使用其返回值。"
 
 msgid ""
 "Setting a base instance to a value other than ``null`` allows referencing "
@@ -159,26 +173,30 @@ msgid ""
 "cheating in your game, or may even introduce security vulnerabilities if you "
 "allow arbitrary clients to run expressions on other players' devices."
 msgstr ""
+"將基礎實例設為非 ``null`` 值，就可以引用常數、成員變數、呼叫定義在該實例的附"
+"加腳本中的方法。允許使用者輸入運算式可能會導致在你的遊戲出現作弊，如果你允許"
+"任意客戶的在其他玩家的裝置上運作運算式的話，甚至還可能引入安全隱患。"
 
-#, fuzzy
 msgid "Example script"
 msgstr "GDScript 範例"
 
 msgid "The script below demonstrates what the Expression class is capable of::"
-msgstr ""
+msgstr "下面的腳本演示的是 Expression 類的功能： ::"
 
-#, fuzzy
 msgid "The output from the script will be::"
 msgstr "腳本的功能"
 
 msgid "Built-in functions"
-msgstr ""
+msgstr "內建函式"
 
+#, fuzzy
 msgid ""
-"Most methods available in the :ref:`class_@GDScript` scope are available in "
+"All methods in the :ref:`Global Scope<class_@GlobalScope>` are available in "
 "the Expression class, even if no base instance is bound to the expression. "
 "The same parameters and return types are available."
 msgstr ""
+":ref:`class_@GDScript` 作用域中的大多數方法都可以在 Expression 類中使用，無需"
+"為運算式綁定基礎實例。參數和返回型別也是一樣的。"
 
 msgid ""
 "However, unlike GDScript, parameters are **always required** even if they're "
@@ -186,6 +204,8 @@ msgid ""
 "restriction on arguments doesn't apply to user-made functions when you bind "
 "a base instance to the expression."
 msgstr ""
+"然而，與 GDScript 不同，參數**始終是必須的**，即使類參考中說明此參數為可選。"
+"不過，為運算式綁定了基礎實例時，使用者定義函式的參數沒有此限制。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

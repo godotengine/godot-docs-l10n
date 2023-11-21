@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "File paths in Godot projects"
-msgstr "準備專案"
+msgstr "Godot 專案中的檔路徑"
 
 msgid ""
 "This page explains how file paths work inside Godot projects. You will learn "
@@ -27,34 +26,44 @@ msgid ""
 "notations, and where Godot stores project and editor files on your and your "
 "users' systems."
 msgstr ""
+"本頁面會講解 Godot 專案中檔路徑的工作原理。你會學到如何在專案中使用 ``res://"
+"`` 和 ``user://`` 標記來存取路徑，以及 Godot 會在你的以及使用者系統上的哪些位"
+"置儲存專案和編輯器檔。"
 
 msgid "Path separators"
-msgstr ""
+msgstr "路徑分隔符號"
 
 msgid ""
 "To make supporting multiple platforms easier, Godot uses **UNIX-style path "
 "separators** (forward slash ``/``). These work on all platforms, **including "
 "Windows**."
 msgstr ""
+"為了讓支援跨平臺更方便，Godot 使用 **UNIX 風格的路徑分隔符號**（正斜杠 ``/"
+"``）。在所有平臺上都可以使用，**包括 Windows**。"
 
 msgid ""
 "Instead of writing paths like ``C:\\Projects\\Game``, in Godot, you should "
 "write ``C:/Projects/Game``."
 msgstr ""
+"在 Godot 裡寫的不是類似 ''C：\\Projects\\Game'' 的路徑，而應該寫 ''C：/"
+"Projects/Game''\\。"
 
 msgid ""
 "Windows-style path separators (backward slash ``\\``) are also supported in "
 "some path-related methods, but they need to be doubled (``\\\\``), as ``\\`` "
 "is normally used as an escape for characters with a special meaning."
 msgstr ""
+"有些路徑相關的方法也支援 Windows 風格的路徑分隔符（反斜杠\\ '''''\\ ），不過"
+"需要寫兩個（\\ ''\\''），因為 '''' 一般是用來進行字元轉義的，有特殊含義。"
 
 msgid ""
 "This makes it possible to work with paths returned by other Windows "
 "applications. We still recommend using only forward slashes in your own code "
 "to guarantee that everything will work as intended."
 msgstr ""
+"這樣就能夠處理其他 Windows 程式所返回的路徑了。我們仍然建議在您自己的程式碼裡"
+"只使用正斜杠，這樣才能確保一切都能正常工作。"
 
-#, fuzzy
 msgid "Accessing files in the project folder (``res://``)"
 msgstr "新增檔案至專案"
 
@@ -63,6 +72,8 @@ msgid ""
 "``project.godot`` text file, even if the file is empty. The folder that "
 "contains this file is your project's root folder."
 msgstr ""
+"只要資料夾中存在名叫 ``project.godot`` 的文字檔，即便是空檔，Godot 也會認為這"
+"個資料夾中包含了一個專案。包含這個檔的資料夾是你的專案的根資料夾。"
 
 msgid ""
 "You can access any file relative to it by writing paths starting with "
@@ -70,8 +81,10 @@ msgid ""
 "file ``character.png`` located in the project's root folder in code with the "
 "following path: ``res://character.png``."
 msgstr ""
+"相對於這個資料夾的任何檔，都可以通過以 ``res://`` 開頭的路徑存取，這個前綴代"
+"表“資源”（resource）。例如，在程式碼中，你可以通過 ``res://character.png`` 來"
+"存取位於專案根資料夾的 ``character.png`` 圖片。"
 
-#, fuzzy
 msgid "Accessing persistent user data (``user://``)"
 msgstr "存取場景節點"
 
@@ -81,6 +94,8 @@ msgid ""
 "because when the game is running, the project's file system will likely be "
 "read-only."
 msgstr ""
+"要儲存持久化資料檔案，比如玩家的存檔、設定等，你會想要使用 ``user://`` 作為路"
+"徑前綴，而不是 ``res://``。這是因為遊戲運作時，專案的檔案系統很可能是唯讀的。"
 
 msgid ""
 "The ``user://`` prefix points to a different directory on the user's device. "
@@ -88,11 +103,13 @@ msgid ""
 "automatically and *guaranteed* to be writable to, even in an exported "
 "project."
 msgstr ""
+"``user://`` 前綴指向的是使用者裝置上的其他目錄。與 ``res://`` 不同，即便在匯"
+"出後的專案中，``user://`` 指向的這個目錄也會自動建立並且*保證*可寫。"
 
 msgid ""
 "The location of the ``user://`` folder depends on what is configured in the "
 "Project Settings:"
-msgstr ""
+msgstr "``user://`` 資料夾的位置由“專案設定”中的配置決定："
 
 msgid ""
 "By default, the ``user://`` folder is created within Godot's :ref:`editor "
@@ -100,6 +117,10 @@ msgid ""
 "[project_name]`` folder. This is the default so that prototypes and test "
 "projects stay self-contained within Godot's data folder."
 msgstr ""
+"預設情況下，``user://`` 資料夾是在:ref:`編輯器資料路徑 "
+"<doc_data_paths_editor_data_paths>`中建立的 ``app_userdata/[專案名稱]`` 資料"
+"夾。使用這一預設值的目的是讓原型和測試專案能夠在 Godot 的資料檔案夾中達到自包"
+"含。"
 
 msgid ""
 "If :ref:`application/config/use_custom_user_dir "
@@ -108,6 +129,9 @@ msgid ""
 "to** Godot's editor data path, i.e. in the standard location for "
 "applications data."
 msgstr ""
+"如果“專案設定”中啟用了 :ref:`application/config/use_custom_user_dir "
+"<class_ProjectSettings_property_application/config/use_custom_user_dir>`，"
+"``user://`` 資料夾會與 Godot 編輯器的資料路徑*同級*，即程式資料的標準位置。"
 
 msgid ""
 "By default, the folder name will be inferred from the project name, but it "
@@ -116,9 +140,14 @@ msgid ""
 "This path can contain path separators, so you can use it e.g. to group "
 "projects of a given studio with a ``Studio Name/Game Name`` structure."
 msgstr ""
+"預設情況下，資料夾名稱是從專案名稱推匯出來的，但可以使用 :ref:`application/"
+"config/custom_user_dir_name <class_ProjectSettings_property_application/"
+"config/custom_user_dir_name>` 進行進一步的自訂。這個路徑可以包含路徑分隔符"
+"號，那麼比如你就可以把給定工作室的專案都群組到 ``工作室名稱/遊戲名稱`` 這樣的"
+"目錄結構之下。"
 
 msgid "On desktop platforms, the actual directory paths for ``user://`` are:"
-msgstr ""
+msgstr "在桌面平臺上，``user://`` 的實際目錄路徑為："
 
 msgid "Type"
 msgstr "型別"
@@ -129,48 +158,37 @@ msgstr "位置"
 msgid "Default"
 msgstr "預設"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\Godot\\app_userdata\\[project_name]``"
 msgstr "Windows：``%APPDATA%\\Godot\\script_templates\\``"
 
-#, fuzzy
 msgid ""
 "macOS: ``~/Library/Application Support/Godot/app_userdata/[project_name]``"
 msgstr "macOS：``$HOME/Library/Application Support/Godot/script_templates/``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/godot/app_userdata/[project_name]``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<版本>/``"
 
-#, fuzzy
 msgid "Custom dir"
 msgstr "自定功能"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[project_name]``"
 msgstr "Windows：``%APPDATA%\\Godot\\script_templates\\``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/[project_name]``"
 msgstr "macOS：``$HOME/Library/Application Support/Godot/script_templates/``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/[project_name]``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<版本>/``"
 
-#, fuzzy
 msgid "Custom dir and name"
 msgstr "自定 AudioStream"
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\[custom_user_dir_name]``"
 msgstr "Windows：``%APPDATA%\\Godot\\script_templates\\``"
 
-#, fuzzy
 msgid "macOS: ``~/Library/Application Support/[custom_user_dir_name]``"
 msgstr "macOS：``$HOME/Library/Application Support/Godot/script_templates/``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/[custom_user_dir_name]``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<版本>/``"
 
@@ -179,11 +197,15 @@ msgid ""
 "Settings, but you can override it on a per-platform basis using :ref:"
 "`feature tags <doc_feature_tags>`."
 msgstr ""
+"``[專案名稱]`` 基於的是專案設定中定義的應用名稱，不過你可以使用:ref:`功能標"
+"籤 <doc_feature_tags>`來為不同平臺單獨進行覆蓋。"
 
 msgid ""
 "On mobile platforms, this path is unique to the project and is not "
 "accessible by other applications for security reasons."
 msgstr ""
+"在移動平臺上，這個路徑是與專案相關的，每個專案都不一樣，並且出於安全原因無法"
+"被其他應用程式存取。"
 
 msgid ""
 "On HTML5 exports, ``user://`` will refer to a virtual filesystem stored on "
@@ -191,9 +213,12 @@ msgid ""
 "performed through the :ref:`JavaScriptBridge <class_JavaScriptBridge>` "
 "singleton.)"
 msgstr ""
+"在 HTML5 匯出中，``user://`` 會指向裝置上由 IndexedDB 實作的虛擬檔案系統。"
+"（與主檔案系統的互動仍然可以通過 :ref:`JavaScript <class_JavaScript>` 進"
+"行。）"
 
 msgid "Converting paths to absolute paths or \"local\" paths"
-msgstr ""
+msgstr "將路徑轉換為絕對路徑或“本地”路徑"
 
 msgid ""
 "You can use :ref:`ProjectSettings.globalize_path() "
@@ -204,6 +229,13 @@ msgid ""
 "paths in the OS file manager using :ref:`OS.shell_open() "
 "<class_OS_method_shell_open>` since it only accepts native OS paths."
 msgstr ""
+"你可以使用 :ref:`ProjectSettings.globalize_path() "
+"<class_ProjectSettings_method_globalize_path>` 將類似 ``res://path/to/file."
+"txt`` 的本地路徑轉換為作業系統的絕對路徑。例如，可以使用 :ref:"
+"`ProjectSettings.globalize_path() "
+"<class_ProjectSettings_method_globalize_path>` 在作業系統的檔案管理員中通過 :"
+"ref:`OS.shell_open() <class_OS_method_shell_open>` 打開“本地”路徑，因為這個函"
+"式只接受原生作業系統路徑。"
 
 msgid ""
 "To convert an absolute OS path to a \"local\" path starting with ``res://`` "
@@ -212,61 +244,68 @@ msgid ""
 "paths that point to files or folders in your project's root or ``user://`` "
 "folders."
 msgstr ""
+"要將作業系統絕對路徑轉換為以 ``res://`` 或 ``user://`` 開頭的“本地”路徑，請使"
+"用 :ref:`ProjectSettings.localize_path() "
+"<class_ProjectSettings_method_localize_path>`。只對指向專案根目錄或者 "
+"``user://`` 資料夾中的檔案或資料夾有效。"
 
 msgid "Editor data paths"
-msgstr ""
+msgstr "編輯器資料路徑"
 
 msgid ""
 "The editor uses different paths for editor data, editor settings, and cache, "
 "depending on the platform. By default, these paths are:"
 msgstr ""
+"根據平臺的不同，編輯器會使用不同的路徑來儲存編輯器資料、編輯器設定、快取。預"
+"設情況下，這些路徑是："
 
-#, fuzzy
 msgid "Editor data"
 msgstr "編輯器使用手冊"
 
 msgid "Windows: ``%APPDATA%\\Godot\\``"
-msgstr ""
+msgstr "Windows: ``%APPDATA%\\Godot\\``"
 
 msgid "macOS: ``~/Library/Application Support/Godot/``"
-msgstr ""
+msgstr "macOS：``~/Library/Application Support/Godot/``"
 
-#, fuzzy
 msgid "Linux: ``~/.local/share/godot/``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<版本>/``"
 
-#, fuzzy
 msgid "Editor settings"
 msgstr "編輯器設定"
 
 msgid "Linux: ``~/.config/godot/``"
-msgstr ""
+msgstr "Linux：``~/.config/godot/``"
 
 msgid "Cache"
-msgstr ""
+msgstr "快取"
 
 msgid "Windows: ``%TEMP%\\Godot\\``"
-msgstr ""
+msgstr "Windows: ``%TEMP%\\Godot\\``"
 
 msgid "macOS: ``~/Library/Caches/Godot/``"
-msgstr ""
+msgstr "macOS：``~/Library/Caches/Godot/``"
 
 msgid "Linux: ``~/.cache/godot/``"
-msgstr ""
+msgstr "Linux：``~/.cache/godot/``"
 
 msgid "**Editor data** contains export templates and project-specific data."
-msgstr ""
+msgstr "**編輯器資料**包含匯出範本和具體專案資料。"
 
 msgid ""
 "**Editor settings** contains the main editor settings configuration file as "
 "well as various other user-specific customizations (editor layouts, feature "
 "profiles, script templates, etc.)."
 msgstr ""
+"**編輯器設定**包含主編輯器設定的配置，以及各種針對使用者的自訂資訊（編輯器佈"
+"局、功能配置、腳本範本等）。"
 
 msgid ""
 "**Cache** contains data generated by the editor, or stored temporarily. It "
 "can safely be removed when Godot is closed."
 msgstr ""
+"**快取**包含編輯器生成的資料，或者臨時儲存的資料。當 Godot 關閉時可以放心地移"
+"除。"
 
 msgid ""
 "Godot complies with the `XDG Base Directory Specification <https://"
@@ -274,15 +313,21 @@ msgid ""
 "all platforms. You can override environment variables following the "
 "specification to change the editor and project data paths."
 msgstr ""
+"Godot 在所有平臺上都遵守 `XDG 基本目錄規範 <https://specifications."
+"freedesktop.org/basedir-spec/basedir-spec-latest.html>`__。可以根據規範通過覆"
+"蓋環境變數來更改編輯器和專案的資料路徑。"
 
 msgid ""
 "If you use `Godot packaged as a Flatpak <https://flathub.org/apps/details/"
 "org.godotengine.Godot>`__, the editor data paths will be located in "
 "subfolders in ``~/.var/app/org.godotengine.Godot/``."
 msgstr ""
+"如果您使用的是 `Flatpak 打包的 Godot <https://flathub.org/apps/details/org."
+"godotengine.Godot>`__，編輯器資料路徑將位於 ``~/.var/app/org.godotengine."
+"godot/`` 的子資料夾中。"
 
 msgid "Self-contained mode"
-msgstr ""
+msgstr "自包含模式"
 
 msgid ""
 "If you create a file called ``._sc_`` or ``_sc_`` in the same directory as "
@@ -292,11 +337,18 @@ msgid ""
 "the same directory as the editor binary. You can use it to create a portable "
 "installation of the editor."
 msgstr ""
+"如果您在編輯器二進位檔案所在的目錄下建立了名為 ``._sc_`` 或 ``_sc_`` 的檔"
+"（macOS 編輯器 .app 組合包則是在 `MacOS/Contents/` 下），Godot 就會開啟*自包"
+"含模式*。這種模式下，Godot 會將所有編輯器資料、設定、快取都寫入一個與編輯器二"
+"進位檔案位於同一目錄中的名為 ``editor_data/`` 的目錄。你可以用它來建立便攜安"
+"裝的編輯器。"
 
 msgid ""
 "The `Steam release of Godot <https://store.steampowered.com/app/404790/>`__ "
 "uses self-contained mode by default."
 msgstr ""
+"`Steam 版本的 Godot <https://store.steampowered.com/app/404790/>`__ 預設使用"
+"自包含模式。"
 
 msgid ""
 "Self-contained mode is not supported in exported projects yet. To read and "
@@ -306,6 +358,10 @@ msgid ""
 "in a writable location (i.e. **not** Program Files or another directory that "
 "is read-only for regular users)."
 msgstr ""
+"匯出後的專案目前不支援自包含模式。要對相對於可執行檔路徑的檔進行讀寫，請使"
+"用 :ref:`OS.get_executable_path() <class_OS_method_get_executable_path>`。注"
+"意，只有可執行檔位於可寫的位置時，才能夠對可執行檔路徑上的檔進行寫操作（即**"
+"不在** Program Files 或者其他普通使用者唯讀的目錄中）。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

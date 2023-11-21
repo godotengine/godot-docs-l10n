@@ -1,0 +1,540 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDExtension C++ example"
+msgstr ""
+
+msgid "Introduction"
+msgstr "Giriş"
+
+msgid ""
+"The C++ bindings for GDExtension are built on top of the C GDExtension API "
+"and provide a nicer way to \"extend\" nodes and other built-in classes in "
+"Godot using C++. This new system allows the extension of Godot to nearly the "
+"same level as statically linked C++ modules."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can download the included example in the test folder of the godot-cpp "
+"repository `on GitHub <https://github.com/godotengine/godot-cpp>`__."
+msgstr ""
+"`godot-docs deposu <https://github.com/godotengine/godot-docs/>`__ 'nu "
+"klonlayın."
+
+msgid "Setting up the project"
+msgstr "Projeyi ayarlamak"
+
+msgid "There are a few prerequisites you'll need:"
+msgstr ""
+
+msgid "a Godot 4 executable,"
+msgstr ""
+
+msgid "a C++ compiler,"
+msgstr ""
+
+msgid "SCons as a build tool,"
+msgstr ""
+
+msgid ""
+"a copy of the `godot-cpp repository <https://github.com/godotengine/godot-"
+"cpp>`__."
+msgstr ""
+
+msgid ""
+"See also :ref:`Compiling <toc-devel-compiling>` as the build tools are "
+"identical to the ones you need to compile Godot from source."
+msgstr ""
+
+msgid ""
+"You can download the `godot-cpp repository <https://github.com/godotengine/"
+"godot-cpp>`__ from GitHub or let Git do the work for you. Note that this "
+"repository has different branches for different versions of Godot. "
+"GDExtensions will not work in older versions of Godot (only Godot 4 and up) "
+"and vice versa, so make sure you download the correct branch."
+msgstr ""
+
+msgid ""
+"To use `GDExtension <https://godotengine.org/article/introducing-gd-"
+"extensions>`__ you need to use the godot-cpp branch that matches the version "
+"of Godot that you are targeting. For example, if you're targeting Godot 4.1, "
+"use the ``4.1`` branch, which is what is shown through out this tutorial."
+msgstr ""
+
+msgid ""
+"The ``master`` branch is the development branch which is updated regularly "
+"to work with Godot's ``master`` branch."
+msgstr ""
+
+msgid ""
+"Our long-term goal is that GDExtensions targeting an earlier version of "
+"Godot will work in later minor versions, but not vice-versa. For example, a "
+"GDExtension targeting Godot 4.2 should work just fine in Godot 4.3, but one "
+"targeting Godot 4.3 won't work in Godot 4.2."
+msgstr ""
+
+msgid ""
+"However, GDExtension is currently *experimental*, which means that we may "
+"break compatibility in order to fix major bugs or include critical features. "
+"For example, GDExtensions created for Godot 4.0 aren't compatible with Godot "
+"4.1 (see :ref:`updating_your_gdextension_for_godot_4_1`)."
+msgstr ""
+
+msgid ""
+"If you are versioning your project using Git, it is recommended to add it as "
+"a Git submodule:"
+msgstr ""
+
+msgid "Alternatively, you can also clone it to the project folder:"
+msgstr ""
+
+msgid ""
+"If you decide to download the repository or clone it into your folder, make "
+"sure to keep the folder layout the same as we've setup here. Much of the "
+"code we'll be showcasing here assumes the project has this layout."
+msgstr ""
+
+msgid ""
+"If you cloned the example from the link specified in the introduction, the "
+"submodules are not automatically initialized. You will need to execute the "
+"following commands:"
+msgstr ""
+
+msgid "This will initialize the repository in your project folder."
+msgstr ""
+
+msgid "Building the C++ bindings"
+msgstr ""
+
+msgid ""
+"Now that we've downloaded our prerequisites, it is time to build the C++ "
+"bindings."
+msgstr ""
+
+msgid ""
+"The repository contains a copy of the metadata for the current Godot "
+"release, but if you need to build these bindings for a newer version of "
+"Godot, simply call the Godot executable:"
+msgstr ""
+
+msgid ""
+"The resulting ``extension_api.json`` file will be created in the "
+"executable's directory. Copy it to the project folder and add "
+"``custom_api_file=<PATH_TO_FILE>`` to the scons command below."
+msgstr ""
+
+msgid ""
+"To generate and compile the bindings, use this command (replacing "
+"``<platform>`` with ``windows``, ``linux`` or ``macos`` depending on your "
+"OS):"
+msgstr ""
+
+msgid ""
+"The build process automatically detects the number of CPU threads to use for "
+"parallel builds. To specify a number of CPU threads to use, add ``-jN`` at "
+"the end of the SCons command line where ``N`` is the number of CPU threads "
+"to use."
+msgstr ""
+
+msgid ""
+"This step will take a while. When it is completed, you should have static "
+"libraries that can be compiled into your project stored in ``godot-cpp/bin/"
+"``."
+msgstr ""
+
+msgid "You may need to add ``bits=64`` to the command on Windows or Linux."
+msgstr ""
+
+msgid "Creating a simple plugin"
+msgstr ""
+
+msgid ""
+"Now it's time to build an actual plugin. We'll start by creating an empty "
+"Godot project in which we'll place a few files."
+msgstr ""
+
+msgid ""
+"Open Godot and create a new project. For this example, we will place it in a "
+"folder called ``demo`` inside our GDExtension's folder structure."
+msgstr ""
+
+msgid ""
+"In our demo project, we'll create a scene containing a Node called \"Main\" "
+"and we'll save it as ``main.tscn``. We'll come back to that later."
+msgstr ""
+
+msgid ""
+"Back in the top-level GDExtension module folder, we're also going to create "
+"a subfolder called ``src`` in which we'll place our source files."
+msgstr ""
+
+msgid ""
+"You should now have ``demo``, ``godot-cpp``, and ``src`` directories in your "
+"GDExtension module."
+msgstr ""
+
+#, fuzzy
+msgid "Your folder structure should now look like this:"
+msgstr "Sahneniz bunun gibi görünmelidir:"
+
+msgid ""
+"In the ``src`` folder, we'll start with creating our header file for the "
+"GDExtension node we'll be creating. We will name it ``gdexample.h``:"
+msgstr ""
+
+msgid ""
+"There are a few things of note to the above. We include ``sprite2d.hpp`` "
+"which contains bindings to the Sprite2D class. We'll be extending this class "
+"in our module."
+msgstr ""
+
+msgid ""
+"We're using the namespace ``godot``, since everything in GDExtension is "
+"defined within this namespace."
+msgstr ""
+
+msgid ""
+"Then we have our class definition, which inherits from our Sprite2D through "
+"a container class. We'll see a few side effects of this later on. The "
+"``GDCLASS`` macro sets up a few internal things for us."
+msgstr ""
+
+msgid "After that, we declare a single member variable called ``time_passed``."
+msgstr ""
+
+msgid ""
+"In the next block we're defining our methods, we have our constructor and "
+"destructor defined, but there are two other functions that will likely look "
+"familiar to some, and one new method."
+msgstr ""
+
+msgid ""
+"The first is ``_bind_methods``, which is a static function that Godot will "
+"call to find out which methods can be called and which properties it "
+"exposes. The second is our ``_process`` function, which will work exactly "
+"the same as the ``_process`` function you're used to in GDScript."
+msgstr ""
+
+msgid "Let's implement our functions by creating our ``gdexample.cpp`` file:"
+msgstr ""
+
+msgid ""
+"This one should be straightforward. We're implementing each method of our "
+"class that we defined in our header file."
+msgstr ""
+
+msgid ""
+"Note our ``_process`` function, which keeps track of how much time has "
+"passed and calculates a new position for our sprite using a sine and cosine "
+"function."
+msgstr ""
+
+msgid ""
+"There is one more C++ file we need; we'll name it ``register_types.cpp``. "
+"Our GDExtension plugin can contain multiple classes, each with their own "
+"header and source file like we've implemented ``GDExample`` up above. What "
+"we need now is a small bit of code that tells Godot about all the classes in "
+"our GDExtension plugin."
+msgstr ""
+
+msgid ""
+"The ``initialize_example_module`` and ``uninitialize_example_module`` "
+"functions get called respectively when Godot loads our plugin and when it "
+"unloads it. All we're doing here is parse through the functions in our "
+"bindings module to initialize them, but you might have to set up more things "
+"depending on your needs. We call the function ``register_class`` for each of "
+"our classes in our library."
+msgstr ""
+
+msgid ""
+"The important function is the third function called "
+"``example_library_init``. We first call a function in our bindings library "
+"that creates an initialization object. This object registers the "
+"initialization and termination functions of the GDExtension. Furthermore, it "
+"sets the level of initialization (core, servers, scene, editor, level)."
+msgstr ""
+
+msgid ""
+"At last, we need the header file for the ``register_types.cpp`` named "
+"``register_types.h``."
+msgstr ""
+
+msgid "Compiling the plugin"
+msgstr ""
+
+msgid ""
+"We cannot easily write by hand a ``SConstruct`` file that SCons would use "
+"for building. For the purpose of this example, just use :download:`this "
+"hardcoded SConstruct file <files/cpp_example/SConstruct>` we've prepared. "
+"We'll cover a more customizable, detailed example on how to use these build "
+"files in a subsequent tutorial."
+msgstr ""
+
+msgid ""
+"This ``SConstruct`` file was written to be used with the latest ``godot-"
+"cpp`` master, you may need to make small changes using it with older "
+"versions or refer to the ``SConstruct`` file in the Godot 4.0 documentation."
+msgstr ""
+
+msgid ""
+"Once you've downloaded the ``SConstruct`` file, place it in your GDExtension "
+"folder structure alongside ``godot-cpp``, ``src`` and ``demo``, then run:"
+msgstr ""
+
+msgid "You should now be able to find the module in ``demo/bin/<platform>``."
+msgstr ""
+
+msgid ""
+"Here, we've compiled both godot-cpp and our gdexample library as debug "
+"builds. For optimized builds, you should compile them using the "
+"``target=template_release`` switch."
+msgstr ""
+
+msgid "Using the GDExtension module"
+msgstr ""
+
+msgid ""
+"Before we jump back into Godot, we need to create one more file in ``demo/"
+"bin/``."
+msgstr ""
+
+msgid ""
+"This file lets Godot know what dynamic libraries should be loaded for each "
+"platform and the entry function for the module. It is called ``gdexample."
+"gdextension``."
+msgstr ""
+
+msgid ""
+"This file contains a ``configuration`` section that controls the entry "
+"function of the module. You should also set the minimum compatible Godot "
+"version with ``compatability_minimum``, which prevents older version of "
+"Godot from trying to load your extension."
+msgstr ""
+
+msgid ""
+"The ``libraries`` section is the important bit: it tells Godot the location "
+"of the dynamic library in the project's filesystem for each supported "
+"platform. It will also result in *just* that file being exported when you "
+"export the project, which means the data pack won't contain libraries that "
+"are incompatible with the target platform."
+msgstr ""
+
+msgid ""
+"Finally, the ``dependencies`` section allows you to name additional dynamic "
+"libraries that should be included as well. This is important when your "
+"GDExtension plugin implements someone else's library and requires you to "
+"supply a third-party dynamic library with your project."
+msgstr ""
+
+msgid "Here is another overview to check the correct file structure:"
+msgstr ""
+
+msgid ""
+"Time to jump back into Godot. We load up the main scene we created way back "
+"in the beginning and now add a newly available GDExample node to the scene:"
+msgstr ""
+
+msgid ""
+"We're going to assign the Godot logo to this node as our texture, disable "
+"the ``centered`` property:"
+msgstr ""
+
+msgid "We're finally ready to run the project:"
+msgstr ""
+
+#, fuzzy
+msgid "Custom editor icon"
+msgstr "Özel klasör"
+
+msgid ""
+"By default, Godot uses the node icon in the scene dock for GDExtension "
+"nodes. The custom icon can be added via the ``gdextension`` file. The node's "
+"icon is set by reference to its name and resource path of an SVG file."
+msgstr ""
+
+msgid "For example:"
+msgstr ""
+
+msgid ""
+"The path should point to a 16 by 16 pixel SVG image. Read the guide for :ref:"
+"`creating icons <doc_editor_icons>` for more information."
+msgstr ""
+
+msgid "Adding properties"
+msgstr ""
+
+msgid ""
+"GDScript allows you to add properties to your script using the ``export`` "
+"keyword. In GDExtension you have to register the properties with a getter "
+"and setter function or directly implement the ``_get_property_list``, "
+"``_get`` and ``_set`` methods of an object (but that goes far beyond the "
+"scope of this tutorial)."
+msgstr ""
+
+msgid ""
+"Lets add a property that allows us to control the amplitude of our wave."
+msgstr ""
+
+msgid ""
+"In our ``gdexample.h`` file we need to add a member variable and getter and "
+"setter functions:"
+msgstr ""
+
+msgid ""
+"In our ``gdexample.cpp`` file we need to make a number of changes, we will "
+"only show the methods we end up changing, don't remove the lines we're "
+"omitting:"
+msgstr ""
+
+msgid ""
+"Once you compile the module with these changes in place, you will see that a "
+"property has been added to our interface. You can now change this property "
+"and when you run your project, you will see that our Godot icon travels "
+"along a larger figure."
+msgstr ""
+
+msgid ""
+"Let's do the same but for the speed of our animation and use a setter and "
+"getter function. Our ``gdexample.h`` header file again only needs a few more "
+"lines of code:"
+msgstr ""
+
+msgid ""
+"This requires a few more changes to our ``gdexample.cpp`` file, again we're "
+"only showing the methods that have changed so don't remove anything we're "
+"omitting:"
+msgstr ""
+
+msgid ""
+"Now when the project is compiled, we'll see another property called speed. "
+"Changing its value will make the animation go faster or slower. Furthermore, "
+"we added a property range which describes in which range the value can be. "
+"The first two arguments are the minimum and maximum value and the third is "
+"the step size."
+msgstr ""
+
+msgid ""
+"For simplicity, we've only used the hint_range of the property method. There "
+"are a lot more options to choose from. These can be used to further "
+"configure how properties are displayed and set on the Godot side."
+msgstr ""
+
+msgid "Signals"
+msgstr "Sinyaller"
+
+msgid ""
+"Last but not least, signals fully work in GDExtension as well. Having your "
+"extension react to a signal given out by another object requires you to call "
+"``connect`` on that object. We can't think of a good example for our "
+"wobbling Godot icon, we would need to showcase a far more complete example."
+msgstr ""
+
+msgid "This is the required syntax:"
+msgstr ""
+
+msgid ""
+"To connect our signal ``the_signal`` from some other node with our method "
+"``my_method``, we need to provide the ``connect`` method with the name of "
+"the signal and a ``Callable``. The ``Callable`` holds information about an "
+"object on which a method can be called. In our case, it associates our "
+"current object instance ``this`` with the method ``my_method`` of the "
+"object. Then the ``connect`` method will add this to the observers of "
+"``the_signal``. Whenever ``the_signal`` is now emitted, Godot knows which "
+"method of which object it needs to call."
+msgstr ""
+
+msgid ""
+"Note that you can only call ``my_method`` if you've previously registered it "
+"in your ``_bind_methods`` method. Otherwise Godot will not know about the "
+"existence of ``my_method``."
+msgstr ""
+
+msgid ""
+"To learn more about ``Callable``, check out the class reference here: :ref:"
+"`Callable <class_Callable>`."
+msgstr ""
+
+msgid ""
+"Having your object sending out signals is more common. For our wobbling "
+"Godot icon, we'll do something silly just to show how it works. We're going "
+"to emit a signal every time a second has passed and pass the new location "
+"along."
+msgstr ""
+
+msgid ""
+"In our ``gdexample.h`` header file, we need to define a new member "
+"``time_emit``:"
+msgstr ""
+
+msgid ""
+"This time, the changes in ``gdexample.cpp`` are more elaborate. First, "
+"you'll need to set ``time_emit = 0.0;`` in either our ``_init`` method or in "
+"our constructor. We'll look at the other 2 needed changes one by one."
+msgstr ""
+
+msgid ""
+"In our ``_bind_methods`` method, we need to declare our signal. This is done "
+"as follows:"
+msgstr ""
+
+msgid ""
+"Here, our ``ADD_SIGNAL`` macro can be a single call with a ``MethodInfo`` "
+"argument. ``MethodInfo``'s first parameter will be the signal's name, and "
+"its remaining parameters are ``PropertyInfo`` types which describe the "
+"essentials of each of the method's parameters. ``PropertyInfo`` parameters "
+"are defined with the data type of the parameter, and then the name that the "
+"parameter will have by default."
+msgstr ""
+
+msgid ""
+"So here, we add a signal, with a ``MethodInfo`` which names the signal "
+"\"position_changed\". The ``PropertyInfo`` parameters describe two essential "
+"arguments, one of type ``Object``, the other of type ``Vector2``, "
+"respectively named \"node\" and \"new_pos\"."
+msgstr ""
+
+msgid "Next, we'll need to change our ``_process`` method:"
+msgstr ""
+
+msgid ""
+"After a second has passed, we emit our signal and reset our counter. We can "
+"add our parameter values directly to ``emit_signal``."
+msgstr ""
+
+msgid ""
+"Once the GDExtension library is compiled, we can go into Godot and select "
+"our sprite node. In the **Node** dock, we can find our new signal and link "
+"it up by pressing the **Connect** button or double-clicking the signal. "
+"We've added a script on our main node and implemented our signal like this:"
+msgstr ""
+
+msgid "Every second, we output our position to the console."
+msgstr ""
+
+msgid "Next steps"
+msgstr ""
+
+msgid ""
+"We hope the above example showed you the basics. You can build upon this "
+"example to create full-fledged scripts to control nodes in Godot using C++."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

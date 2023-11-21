@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Viewport and canvas transforms"
-msgstr "Viewport 與 Canvas 變換"
+msgstr "Viewport 和畫布變換"
 
 msgid "Introduction"
-msgstr "簡介"
+msgstr "前言"
 
 msgid ""
 "This is an overview of the 2D transforms going on for nodes from the moment "
@@ -35,11 +35,13 @@ msgid ""
 "The goal of this tutorial is to teach a way for feeding input events to the "
 "Input with a position in the correct coordinate system."
 msgstr ""
+"本教學的目標是介紹如何為提供給 Input 的輸入事件在正確的坐標系中確定位置。"
 
 msgid ""
 "A more extensive description of all coordinate systems and 2d transforms is "
 "available in :ref:`doc_2d_coordinate_systems`."
 msgstr ""
+"關於所有坐標系以及 2D 變換的詳盡描述見 :ref:`doc_2d_coordinate_systems`。"
 
 msgid "Canvas transform"
 msgstr "Canvas 變換"
@@ -67,7 +69,6 @@ msgstr ""
 msgid "Global canvas transform"
 msgstr "全域 Canvas 變換"
 
-#, fuzzy
 msgid ""
 "Viewports also have a Global Canvas transform (also a :ref:`Transform2D "
 "<class_Transform2D>`). This is the master transform and affects all "
@@ -92,7 +93,6 @@ msgstr ""
 "螢幕的。這個變換時在內部使用的 (與 :ref:`doc_multiple_resolutions` 中說明的一"
 "樣)，但也可以手動在各個 Viewport 上設定。"
 
-#, fuzzy
 msgid ""
 "Input events are multiplied by this transform but lack the ones above. To "
 "convert InputEvent coordinates to local CanvasItem coordinates, the :ref:"
@@ -104,7 +104,6 @@ msgstr ""
 "換為本機 CanvasItem 座標，我們提供了方便的 :ref:`CanvasItem."
 "make_input_local() <class_CanvasItem_method_make_input_local>` 函式。"
 
-#, fuzzy
 msgid "Window transform"
 msgstr "Canvas 變換"
 
@@ -116,11 +115,14 @@ msgid ""
 "*Window's* sides so that the *Viewport* is displayed with a fixed aspect "
 "ratio."
 msgstr ""
+"根視口是一個 :ref:`Window <class_Window>`。為了能夠像 :ref:"
+"`doc_multiple_resolutions` 中一樣將*視窗*的內容進行縮放和移動，每個 :ref:"
+"`Window <class_Window>` 都包含了*視窗變換*。例如在 *Viewport* 使用固定長寬比"
+"顯示時，負責*視窗*邊緣的黑框。"
 
 msgid "Transform order"
 msgstr "變換順序"
 
-#, fuzzy
 msgid ""
 "To convert a CanvasItem local coordinate to an actual screen coordinate, the "
 "following chain of transforms must be applied:"
@@ -138,6 +140,9 @@ msgid ""
 "the :ref:`affine inverse <class_Transform2D_method_affine_inverse>` of a "
 "transform results in a coordinate system further to the right:"
 msgstr ""
+"上圖顯示了一些可用的變換函式。所有變換都是從右向左的，這意味著將一個變換與一"
+"個座標相乘會得到一個更靠左的坐標系，將一個變換的 :ref:`affine inverse "
+"<class_Transform2D_method_affine_inverse>` 相乘會得到一個更靠右的坐標系："
 
 msgid ""
 "Finally, then, to convert a CanvasItem local coordinates to screen "
@@ -157,7 +162,6 @@ msgstr ""
 msgid "Feeding custom input events"
 msgstr "處理自定輸入事件"
 
-#, fuzzy
 msgid ""
 "It is often desired to feed custom input events to the game. With the above "
 "knowledge, to correctly do this in the focused window, it must be done the "

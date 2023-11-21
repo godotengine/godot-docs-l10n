@@ -1,0 +1,206 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Screen-reading shaders"
+msgstr ""
+
+msgid "Introduction"
+msgstr "Giriş"
+
+msgid ""
+"It is often desired to make a shader that reads from the same screen to "
+"which it's writing. 3D APIs, such as OpenGL or DirectX, make this very "
+"difficult because of internal hardware limitations. GPUs are extremely "
+"parallel, so reading and writing causes all sorts of cache and coherency "
+"problems. As a result, not even the most modern hardware supports this "
+"properly."
+msgstr ""
+
+msgid ""
+"The workaround is to make a copy of the screen, or a part of the screen, to "
+"a back-buffer and then read from it while drawing. Godot provides a few "
+"tools that make this process easy."
+msgstr ""
+
+#, fuzzy
+msgid "Screen texture"
+msgstr "Dokuları okumak"
+
+msgid ""
+"Godot :ref:`doc_shading_language` has a special texture to access the "
+"already rendered contents of the screen. It is used by specifying a hint "
+"when declaring a ``sampler2D`` uniform: ``hint_screen_texture``. A special "
+"built-in varying ``SCREEN_UV`` can be used to obtain the UV relative to the "
+"screen for the current fragment. As a result, this canvas_item fragment "
+"shader results in an invisible object, because it only shows what lies "
+"behind:"
+msgstr ""
+
+msgid ""
+"``textureLod`` is used here as we only want to read from the bottom mipmap. "
+"If you want to read from a blurred version of the texture instead, you can "
+"increase the third argument to ``textureLod`` and change the hint "
+"``filter_nearest`` to ``filter_nearest_mipmap`` (or any other filter with "
+"mipmaps enabled). If using a filter with mipmaps, Godot will automatically "
+"calculate the blurred texture for you."
+msgstr ""
+
+msgid ""
+"If the filter mode is not changed to a filter mode that contains ``mipmap`` "
+"in its name, ``textureLod`` with a LOD parameter greater than ``0.0`` will "
+"have the same appearance as with the ``0.0`` LOD parameter."
+msgstr ""
+
+msgid "Screen texture example"
+msgstr ""
+
+msgid ""
+"The screen texture can be used for many things. There is a special demo for "
+"*Screen Space Shaders*, that you can download to see and learn. One example "
+"is a simple shader to adjust brightness, contrast and saturation:"
+msgstr ""
+
+msgid "Behind the scenes"
+msgstr ""
+
+msgid ""
+"While this seems magical, it's not. In 2D, when ``hint_screen_texture`` is "
+"first found in a node that is about to be drawn, Godot does a full-screen "
+"copy to a back-buffer. Subsequent nodes that use it in shaders will not have "
+"the screen copied for them, because this ends up being inefficient. In 3D, "
+"the screen is copied after the opaque geometry pass, but before the "
+"transparent geometry pass, so transparent objects will not be captured in "
+"the screen texture."
+msgstr ""
+
+msgid ""
+"As a result, in 2D, if shaders that use ``hint_screen_texture`` overlap, the "
+"second one will not use the result of the first one, resulting in unexpected "
+"visuals:"
+msgstr ""
+
+msgid ""
+"In the above image, the second sphere (top right) is using the same source "
+"for the screen texture as the first one below, so the first one "
+"\"disappears\", or is not visible."
+msgstr ""
+
+msgid ""
+"In 2D, this can be corrected via the :ref:`BackBufferCopy "
+"<class_BackBufferCopy>` node, which can be instantiated between both "
+"spheres. BackBufferCopy can work by either specifying a screen region or the "
+"whole screen:"
+msgstr ""
+
+msgid "With correct back-buffer copying, the two spheres blend correctly:"
+msgstr ""
+
+msgid ""
+"In 3D, there is less flexibility to solve this particular issue because the "
+"screen texture is only captured once. Be careful when using the screen "
+"texture in 3D as it won't capture transparent objects and may capture some "
+"opaque objects that are in front of the object using the screen texture."
+msgstr ""
+
+msgid ""
+"You can reproduce the back-buffer logic in 3D by creating a :ref:`Viewport "
+"<class_Viewport>` with a camera in the same position as your object, and "
+"then use the :ref:`Viewport's <class_Viewport>` texture instead of the "
+"screen texture."
+msgstr ""
+
+msgid "Back-buffer logic"
+msgstr ""
+
+msgid ""
+"So, to make it clearer, here's how the backbuffer copying logic works in 2D "
+"in Godot:"
+msgstr ""
+
+msgid ""
+"If a node uses ``hint_screen_texture``, the entire screen is copied to the "
+"back buffer before drawing that node. This only happens the first time; "
+"subsequent nodes do not trigger this."
+msgstr ""
+
+msgid ""
+"If a BackBufferCopy node was processed before the situation in the point "
+"above (even if ``hint_screen_texture`` was not used), the behavior described "
+"in the point above does not happen. In other words, automatic copying of the "
+"entire screen only happens if ``hint_screen_texture`` is used in a node for "
+"the first time and no BackBufferCopy node (not disabled) was found before in "
+"tree-order."
+msgstr ""
+
+msgid ""
+"BackBufferCopy can copy either the entire screen or a region. If set to only "
+"a region (not the whole screen) and your shader uses pixels not in the "
+"region copied, the result of that read is undefined (most likely garbage "
+"from previous frames). In other words, it's possible to use BackBufferCopy "
+"to copy back a region of the screen and then read the screen texture from a "
+"different region. Avoid this behavior!"
+msgstr ""
+
+msgid "Depth texture"
+msgstr ""
+
+msgid ""
+"For 3D shaders, it's also possible to access the screen depth buffer. For "
+"this, the ``hint_depth_texture`` hint is used. This texture is not linear; "
+"it must be converted using the inverse projection matrix."
+msgstr ""
+
+msgid ""
+"The following code retrieves the 3D position below the pixel being drawn:"
+msgstr ""
+
+msgid "Normal-roughness texture"
+msgstr ""
+
+msgid ""
+"Normal-roughness texture is only supported in the Forward+ rendering method, "
+"not Mobile or Compatibility."
+msgstr ""
+
+msgid ""
+"Similarly, the normal-roughness texture can be used to read the normals and "
+"roughness of objects rendered in the depth prepass. The normal is stored in "
+"the ``.xyz`` channels (mapped to the 0-1 range) while the roughness is "
+"stored in the ``.w`` channel."
+msgstr ""
+
+#, fuzzy
+msgid "Redefining screen textures"
+msgstr "Dokuları okumak"
+
+msgid ""
+"The screen texture hints (``hint_screen_texture``, ``hint_depth_texture``, "
+"and ``hint_normal_roughness_texture``) can be used with multiple uniforms. "
+"For example, you may want to read from the texture multiple times with a "
+"different repeat flag or filter flag."
+msgstr ""
+
+msgid ""
+"The following example shows a shader that reads the screen space normal with "
+"linear filtering, but reads the screen space roughness using nearest "
+"neighbor filtering."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

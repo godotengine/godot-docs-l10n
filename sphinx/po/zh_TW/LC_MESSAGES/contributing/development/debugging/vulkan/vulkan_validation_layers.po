@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,20 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Validation layers"
-msgstr "\\ AnimationPlayer"
+msgstr "Validation layers"
 
 msgid ""
 "Validation layers enable developers to verify their application's correct "
 "use of the Vulkan API. Validation layers can be enabled in both debug and "
 "release builds, including in exported projects."
 msgstr ""
+"驗證層能夠讓開發者驗證應用程式是否正確使用了 Vulkan API。除錯建構和發行建構中"
+"均可啟用驗證層，包括匯出後的專案。"
 
 msgid ""
 "Enabling validation layers has a performance impact, so only enable them "
 "when you actually need the output to debug the application."
 msgstr ""
+"啟用驗證層會對性能產生影響，因此，請只有在實際需要輸出來偵錯工具時才啟用。"
 
 msgid "Windows"
 msgstr "Windows"
@@ -42,6 +44,9 @@ msgid ""
 "SDK suffices. You don't need to reboot after installing the SDK, but you may "
 "need to close and reopen your current terminal."
 msgstr ""
+"安裝 Vulkan SDK `<https://vulkan.lunarg.com/sdk/home>`__，其中包含驗證層作為"
+"其預設安裝的一部分。無需在安裝程式中啟用任何可選功能；安裝核心 Vulkan SDK 就"
+"足夠了。安裝 SDK 後無需重新啟動，但可能需要關閉並重新開啟目前終端。"
 
 msgid ""
 "After installing the Vulkan SDK, run Godot with the ``--gpu-validation`` :"
@@ -50,6 +55,9 @@ msgid ""
 "error happens. This can prevent your system from freezing if a validation "
 "error occurs."
 msgstr ""
+"安裝 Vulkan SDK 後，使用「--gpu-validation」:ref:`命令列參數 "
+"<doc_command_line_tutorial>` 執行 Godot。您也可以指定“--gpu-abort”，這將使 "
+"Godot 在驗證錯誤發生時立即退出。如果發生驗證錯誤，這可以防止您的系統凍結。"
 
 msgid "macOS"
 msgstr "macOS"
@@ -59,6 +67,8 @@ msgid ""
 "are statically linked against the Vulkan SDK. Dynamic linking must be used "
 "instead."
 msgstr ""
+"官方 Godot macOS 版本**不**支援驗證層，因為這些層與 Vulkan SDK 靜態連結。必須"
+"改用動態連結。"
 
 msgid ""
 "In practice, this means that using validation layers on macOS **requires** "
@@ -67,6 +77,10 @@ msgid ""
 "project, you must recompile the export template and specify it as a custom "
 "export template in your project's macOS export preset."
 msgstr ""
+"實際上，這意味著在 macOS 上使用驗證層**需要**您使用使用“use_volk=yes” SCons "
+"選項編譯的 Godot 版本。 :ref:`doc_compiling_for_macos`。如果在匯出的專案上測"
+"試驗證層，您必須重新編譯匯出範本並將其指定為專案的 macOS 匯出預設中的自訂匯出"
+"範本。"
 
 msgid ""
 "After installing the Vulkan SDK, run a Godot binary that was compiled with "
@@ -76,58 +90,51 @@ msgid ""
 "happens. This can prevent your system from freezing if a validation error "
 "occurs."
 msgstr ""
+"安裝 Vulkan SDK 後，執行使用「use_volk=yes」 SCons 選項編譯的 Godot 二進位。"
+"指定“--gpu-validation”:ref:`命令列參數 <doc_command_line_tutorial>`。您也可以"
+"指定“--gpu-abort”，這將使 Godot 在驗證錯誤發生時立即退出。如果發生驗證錯誤，"
+"這可以防止您的系統凍結。"
 
-#, fuzzy
 msgid "Linux, \\*BSD"
-msgstr "X11 (Linux, \\*BSD)"
+msgstr "Linux, \\*BSD"
 
 msgid "Install Vulkan validation layers from your distribution's repositories:"
-msgstr ""
+msgstr "從您的發行版儲存庫安裝 Vulkan 驗證層："
 
-#, fuzzy
 msgid "Alpine Linux"
-msgstr "\\ **Alpine Linux**"
+msgstr "Alpine Linux"
 
-#, fuzzy
 msgid "Arch Linux"
-msgstr "\\ **Arch Linux**"
+msgstr "Arch Linux"
 
-#, fuzzy
 msgid "Debian/Ubuntu"
-msgstr "\\ **Debian** / **Ubuntu**"
+msgstr "Debian/Ubuntu"
 
-#, fuzzy
 msgid "Fedora"
-msgstr "\\ **Fedora**"
+msgstr "Fedora"
 
-#, fuzzy
 msgid "FreeBSD"
-msgstr "\\ **FreeBSD**"
+msgstr "FreeBSD"
 
-#, fuzzy
 msgid "Gentoo"
-msgstr "\\ **Gentoo**"
+msgstr "Gentoo"
 
-#, fuzzy
 msgid "Mageia"
-msgstr "\\ **Mageia**"
+msgstr "Mageia"
 
-#, fuzzy
 msgid "OpenBSD"
-msgstr "\\ **OpenBSD**"
+msgstr "OpenBSD"
 
-#, fuzzy
 msgid "openSUSE"
-msgstr "\\ **openSUSE**"
+msgstr "openSUSE"
 
-#, fuzzy
 msgid "Solus"
-msgstr "\\ **Solus**"
+msgstr "Solus"
 
 msgid ""
 "You don't need to reboot after installing the validation layers, but you may "
 "need to close and reopen your current terminal."
-msgstr ""
+msgstr "安裝驗證層後無需重新啟動，但可能需要關閉並重新開啟目前終端。"
 
 msgid ""
 "After installing the package, run Godot with the ``--gpu-validation`` :ref:"
@@ -136,6 +143,9 @@ msgid ""
 "happens. This can prevent your system from freezing if a validation error "
 "occurs."
 msgstr ""
+"安裝軟體包後，使用“--gpu-validation”:ref:`命令列參數 "
+"<doc_command_line_tutorial>` 執行 Godot。您也可以指定“--gpu-abort”，這將使 "
+"Godot 在驗證錯誤發生時立即退出。如果發生驗證錯誤，這可以防止您的系統凍結。"
 
 msgid "Android"
 msgstr "Android"
@@ -144,11 +154,12 @@ msgid ""
 "After enabling validation layers on Android, a developer can see errors and "
 "warning messages in the ``adb logcat`` output."
 msgstr ""
+"在 Android 上啟用驗證層後，開發人員可以在「adb logcat」輸出中看到錯誤和警告訊"
+"息。"
 
 msgid "iOS"
 msgstr "iOS"
 
-#, fuzzy
 msgid "Validation layers are currently **not** supported on iOS."
 msgstr "JDK 9 或更新版本目前尚不支援。"
 
@@ -158,13 +169,13 @@ msgstr "Web"
 msgid ""
 "Validation layers are **not** supported on the web platform, as there is no "
 "support for Vulkan there."
-msgstr ""
+msgstr "Web 平台**不**支援驗證層，因為那裡不支援 Vulkan。"
 
 msgid "Enabling validation layers"
-msgstr ""
+msgstr "啟用驗證層"
 
 msgid "Build validation layers from official sources"
-msgstr ""
+msgstr "從官方源碼建構驗證層"
 
 msgid ""
 "To build Android libraries, follow the instructions on `Khronos' repository  "
@@ -172,16 +183,21 @@ msgid ""
 "md#building-on-android>`__. After a successful build, the libraries will be "
 "located in ``Vulkan-ValidationLayers/build-android/libs``."
 msgstr ""
+"要建立 Android 庫，請按照「Khronos」儲存庫 <https://github.com/KhronosGroup/"
+"Vulkan-ValidationLayers/blob/master/BUILD.md#building-on-android>`__ 上的說明"
+"進行操作。成功建置後，庫將位於「Vulkan-ValidationLayers/build-android/libs」"
+"中。"
 
 msgid "Copy libraries"
-msgstr ""
+msgstr "複製庫"
 
 msgid ""
 "Copy libraries from ``Vulkan-ValidationLayers/build-android/libs`` to "
 "``godot/platform/android/java/app/libs/debug/vulkan_validation_layers``."
 msgstr ""
+"將函式庫從「Vulkan-ValidationLayers/build-android/libs」複製到「godot/"
+"platform/android/java/app/libs/debug/vulkan_validation_layers」。"
 
-#, fuzzy
 msgid ""
 "Your Godot source directory tree should look like on the example below::"
 msgstr "在這裡的範例中的 Shell 歷史應該長這樣："
@@ -189,9 +205,8 @@ msgstr "在這裡的範例中的 Shell 歷史應該長這樣："
 msgid ""
 "If the subdirectory ``libs/debug/vulkan_validation_layers`` doesn't exist, "
 "create it."
-msgstr ""
+msgstr "如果子目錄「libs/debug/vulkan_validation_layers」不存在，請建立它。"
 
-#, fuzzy
 msgid "Compile and run the Android app"
 msgstr "為 Android 進行編譯"
 
@@ -200,6 +215,8 @@ msgid ""
 "debug builds. You can use Godot's :ref:`doc_one-click_deploy` feature to "
 "quickly test your project with the validation layers enabled."
 msgstr ""
+"連結的驗證層會在 Android 偵錯版本中自動載入並啟用。您可以使用 Godot 的 "
+"doc_one-click_deploy 功能在啟用驗證層的情況下快速測試您的專案。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

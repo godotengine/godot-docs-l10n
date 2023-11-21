@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,8 @@ msgid ""
 "source. If you're looking to export your project to Android instead, read :"
 "ref:`doc_exporting_for_android`."
 msgstr ""
+"這個頁面描述的是如何從源碼編譯 Android 匯出範本二進位。如果你想要找的是匯出專"
+"案到 Android，請閱讀 :ref:`doc_exporting_for_android`。"
 
 msgid "Note"
 msgstr "請注意"
@@ -51,7 +53,6 @@ msgstr "系統需求"
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "要在 Windows, Linux 或 macOS 下進行編譯，則必須滿足下列條件："
 
-#, fuzzy
 msgid "`Python 3.6+ <https://www.python.org/downloads/>`_."
 msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_ 。"
 
@@ -65,11 +66,9 @@ msgstr ""
 "`Android SDK <https://developer.android.com/studio/#command-tools>`_ (命令行"
 "工具即可)。"
 
-#, fuzzy
 msgid "Required SDK components will be automatically installed."
 msgstr "所需的 SDK 元件會由 Gradle 自動安裝 (除了 NDK)。"
 
-#, fuzzy
 msgid "On Linux,"
 msgstr "Linux"
 
@@ -77,22 +76,24 @@ msgid ""
 "**do not use an Android SDK provided by your distribution's repositories as "
 "it will often be outdated**."
 msgstr ""
+"在 Linux 上，**請勿使用發行版本倉庫提供的 Android SDK，因為它通常是過時的**。"
 
 msgid "Gradle (will be downloaded and installed automatically if missing)."
 msgstr "Gradle (若尚未安裝，會自動下載並安裝)。"
 
 #, fuzzy
-msgid "JDK 11 (either OpenJDK or Oracle JDK)."
+msgid "JDK 17 (either OpenJDK or Oracle JDK)."
 msgstr "JDK 8 (OpenJDK 或 Oracle JDK 擇一)。"
 
+#, fuzzy
 msgid ""
-"You can download a build from `ojdkbuild <https://github.com/ojdkbuild/"
-"ojdkbuild>`_."
+"You can download a build from `ojdkbuild <https://adoptium.net/temurin/"
+"releases/?variant=openjdk17>`_."
 msgstr "可以從 `ojdkbuild <https://github.com/ojdkbuild/ojdkbuild>`_ 中下載。"
 
 msgid ""
 "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
-msgstr ""
+msgstr "要獲取編譯所需的 Godot 源碼，請參閱 :ref:`doc_getting_source`。"
 
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
@@ -104,27 +105,31 @@ msgstr ""
 msgid "Setting up the buildsystem"
 msgstr "設定建置系統"
 
+#, fuzzy
 msgid ""
-"Set the environment variable ``ANDROID_SDK_ROOT`` to point to the Android "
-"SDK. If you downloaded the Android command-line tools, this would be the "
-"folder where you extracted the contents of the ZIP archive."
+"Set the environment variable ``ANDROID_HOME`` to point to the Android SDK. "
+"If you downloaded the Android command-line tools, this would be the folder "
+"where you extracted the contents of the ZIP archive."
 msgstr ""
+"設定環境變數 ``ANDROID_SDK_ROOT`` 指向 Android SDK. 如果你下載了Android命令列"
+"工具, 這將是您提取ZIP存檔內容的資料夾."
 
 msgid "Install the necessary SDK components in this folder:"
-msgstr ""
+msgstr "在此資料夾中安裝必要的SDK元件:"
 
 msgid ""
 "Accept the SDK component licenses by running the following command where "
 "``android_sdk_path`` is the path to the Android SDK, then answering all the "
 "prompts with ``y``:"
 msgstr ""
+"通過運作以下命令接受SDK元件許可證, 其中 ``android_sdk_path`` 是android SDK的"
+"路徑, 然後用 ``y`` 回答所有提示:"
 
 msgid ""
 "Complete setup by running the following command where ``android_sdk_path`` "
 "is the path to the Android SDK."
-msgstr ""
+msgstr "運作以下命令完成安裝, 其中 ``android_sdk_path`` 是Android SDK的路徑."
 
-#, fuzzy
 msgid ""
 "To set the environment variable on Windows, press :kbd:`Windows + R`, type "
 "\"control system\", then click on **Advanced system settings** in the left "
@@ -137,8 +142,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "To set the environment variable on Linux or macOS, use ``export "
-"ANDROID_SDK_ROOT=/path/to/android-sdk`` where ``/path/to/android-sdk`` "
-"points to the root of the SDK directories."
+"ANDROID_HOME=/path/to/android-sdk`` where ``/path/to/android-sdk`` points to "
+"the root of the SDK directories."
 msgstr ""
 "若要在 Linux 或 macOS 中設定這些環境變數，請使用 ``export ANDROID_HOME=/path/"
 "to/android-sdk`` 與 ``export ANDROID_NDK_ROOT=/path/to/android-ndk`` ，其中，"
@@ -163,7 +168,7 @@ msgstr ""
 msgid ""
 "Compiling the standard export templates is done by calling SCons from the "
 "Godot root directory with the following arguments:"
-msgstr "可以通過在 Godot 根目錄以下列引數來呼叫 SCons 來編譯標準匯出樣板："
+msgstr "可以通過在 Godot 根目錄以下列參數來呼叫 SCons 來編譯標準匯出樣板："
 
 msgid ""
 "Release template (used when exporting with **Debugging Enabled** unchecked)"
@@ -182,11 +187,12 @@ msgid ""
 "If you want to enable Vulkan validation layers, see :ref:`Vulkan validation "
 "layers on Android <doc_vulkan_validation_layers_android>`."
 msgstr ""
+"如果您想要啟用 Vulkan 驗證層，請參閱 Android 上的 Vulkan 驗證層 "
+"<doc_vulkan_validation_layers_android>`。"
 
 msgid "Adding support for x86 devices"
 msgstr "加上對 x86 裝置的支援"
 
-#, fuzzy
 msgid ""
 "If you also want to include support for x86 and x86-64 devices, run the "
 "SCons command a third and fourth time with the ``arch=x86_32``, and "
@@ -194,7 +200,7 @@ msgid ""
 "for the release template:"
 msgstr ""
 "若想包含對 x86 與 x86-64 裝置的支援，則請在使用 Gradle 建置 APK 前以 "
-"``android_arch=x86`` 與 ``android_arch=x86_64`` 引數來執行第三次與第四次 "
+"``android_arch=x86`` 與 ``android_arch=x86_64`` 參數來執行第三次與第四次 "
 "SCons。舉例來說，對於釋出樣板："
 
 msgid ""
@@ -242,15 +248,12 @@ msgstr ""
 "必須將新編譯的樣板 (``android_debug.apk`` and ``android_release.apk``) 複製"
 "到 Godot 的樣板路徑中，並命名為對應的名稱。樣板資料夾位於："
 
-#, fuzzy
 msgid "Windows: ``%APPDATA%\\Godot\\export_templates\\<version>\\``"
 msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<版本>\\``"
 
-#, fuzzy
 msgid "Linux: ``$HOME/.local/share/godot/export_templates/<version>/``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<版本>/``"
 
-#, fuzzy
 msgid ""
 "macOS: ``$HOME/Library/Application Support/Godot/export_templates/<version>/"
 "``"
@@ -281,30 +284,27 @@ msgstr ""
 "這種情況下甚至不需要複製這些檔案，只需要將這些檔案參照至 Godot 原始碼目錄中"
 "的 ``bin\\`` 資料夾即可。這樣一來下次建置時就會自動參照到自定樣板。"
 
-#, fuzzy
 msgid "Building the Godot editor"
 msgstr "內建主題編輯器。"
 
-#, fuzzy
 msgid ""
 "Compiling the editor is done by calling SCons from the Godot root directory "
 "with the following arguments:"
-msgstr "可以通過在 Godot 根目錄以下列引數來呼叫 SCons 來編譯標準匯出樣板："
+msgstr "可以通過在 Godot 根目錄以下列參數來呼叫 SCons 來編譯標準匯出樣板："
 
 #, fuzzy
-msgid "The resulting APK will be located at ``bin/android_editor.apk``."
-msgstr "產生的 APK 會放在 ``bin/android_debug.apk``。"
+msgid ""
+"The resulting APK will be located at ``bin/android_editor_builds/"
+"android_editor-release.apk``."
+msgstr "產生的 APK 會放在 ``bin/android_release.apk``。"
 
-#, fuzzy
 msgid "Removing the Editor templates"
 msgstr "使用匯出樣板"
 
-#, fuzzy
 msgid ""
 "You can use the following commands to remove the generated editor templates:"
 msgstr "可以使用下列指令來移除產生的匯出樣板："
 
-#, fuzzy
 msgid "Installing the Godot editor"
 msgstr "安裝樣板"
 
@@ -314,6 +314,9 @@ msgid ""
 "a Terminal/Command Prompt and run the following commands from the root "
 "directory with the following arguments:"
 msgstr ""
+"在啟用了開發者選項的 Android 裝置上，透過 USB/USB-C 連接埠的充電線將 Android "
+"裝置連接到您的電腦。開啟終端機/命令提示字元並使用以下參數從根目錄執行以下命"
+"令："
 
 msgid "Troubleshooting"
 msgstr "疑難排解"
@@ -323,9 +326,9 @@ msgstr "SCons 中未顯示平台"
 
 #, fuzzy
 msgid ""
-"Double-check that you've set the ``ANDROID_SDK_ROOT`` environment variable. "
-"This is required for the platform to appear in SCons' list of detected "
-"platforms. See :ref:`Setting up the buildsystem "
+"Double-check that you've set the ``ANDROID_HOME`` environment variable. This "
+"is required for the platform to appear in SCons' list of detected platforms. "
+"See :ref:`Setting up the buildsystem "
 "<doc_android_setting_up_the_buildsystem>` for more information."
 msgstr ""
 "請再次檢查 ``ANDROID_HOME`` 與 ``ANDROID_NDK_ROOT`` 環境變數是否都有設定。必"
@@ -374,7 +377,6 @@ msgstr ""
 "請確保匯出樣板的版本符合編輯器版本。若使用較新的 Godot 版本，則 **必須** 一併"
 "更新樣板的版本。"
 
-#, fuzzy
 msgid ""
 "``libgodot_android.so`` is not in ``libs/<arch>/`` where ``<arch>`` is the "
 "device's architecture."

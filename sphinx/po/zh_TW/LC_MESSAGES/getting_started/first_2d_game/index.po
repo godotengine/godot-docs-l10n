@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,15 +25,15 @@ msgid ""
 "game with Godot. By the end of the series, you will have a simple yet "
 "complete game of your own, like the image below."
 msgstr ""
+"在這個循序漸進的教學系列中，你將使用 Godot 建立你的第一個完整的 2D 遊戲。在系"
+"列結束時，你將擁有一個簡單而完整的遊戲，如下圖所示。"
 
 msgid "|image0|"
 msgstr "\\ |image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "\\ |image0|"
+msgstr "image0"
 
-#, fuzzy
 msgid ""
 "You will learn how the Godot editor works, how to structure a project, and "
 "build a 2D game."
@@ -41,7 +41,6 @@ msgstr ""
 "本篇教學會帶領你製作出第一個 Godot 專案。在本篇教學中，會學習 Godot 是如何運"
 "作的、如何組織一個專案以及如何製作一個 2D 遊戲。"
 
-#, fuzzy
 msgid ""
 "This project is an introduction to the Godot engine. It assumes that you "
 "have some programming experience already. If you're new to programming "
@@ -50,33 +49,29 @@ msgstr ""
 "這個專案是用來介紹 Godot 引擎的。在這裡我們會假設你已經有一些程式設計的經驗。"
 "如果完全沒有寫程式的經驗，請從 :ref:`doc_scripting` 開始。"
 
-#, fuzzy
 msgid ""
 "The game is called \"Dodge the Creeps!\". Your character must move and avoid "
 "the enemies for as long as possible."
 msgstr ""
-"這個遊戲叫做「Dodge the Creeps! 」。玩家角色必須不斷移動，儘可能地一直閃躲敵"
-"人。最終成果會長這樣："
+"這個遊戲叫做「Dodge the Creeps! 」。玩家角色必須儘可能不斷移動閃躲敵人。"
 
 msgid "You will learn to:"
 msgstr "你將學習："
 
 msgid "Create a complete 2D game with the Godot editor."
-msgstr ""
+msgstr "使用 Godot 編輯器建立完整的 2D 遊戲。"
 
-#, fuzzy
 msgid "Structure a simple game project."
-msgstr "建立或匯入專案"
+msgstr "構建一個簡單的遊戲專案。"
 
-#, fuzzy
 msgid "Move the player character and change its sprite."
 msgstr "將玩家移動到樹狀結構中其他地方。"
 
 msgid "Spawn random enemies."
-msgstr ""
+msgstr "生成隨機敵人。"
 
 msgid "Count the score."
-msgstr ""
+msgstr "計分。"
 
 msgid "And more."
 msgstr "以及更多。"
@@ -85,17 +80,20 @@ msgid ""
 "You'll find another series where you'll create a similar game but in 3D. We "
 "recommend you to start with this one, though."
 msgstr ""
+"你可以找到另一個系列，是在 3D 中建立與此類似的遊戲。不過我們推薦你從這個系列"
+"開始。"
 
 msgid "**Why start with 2D?**"
-msgstr ""
+msgstr "**為什麼從 2D 開始？**"
 
 msgid ""
 "If you are new to game development or unfamiliar with Godot, we recommend "
 "starting with 2D games. This will allow you to become comfortable with both "
 "before tackling 3D games, which tend to be more complicated."
 msgstr ""
+"若你是遊戲開發新手或不熟悉 Godot，我們建議你從 2D 遊戲開始。 這將使你在處理往"
+"往更複雜的 3D 遊戲之前熟悉兩者。"
 
-#, fuzzy
 msgid "You can find a completed version of this project at this location:"
 msgstr "你可以在這幾個網址上找到這個專案的完成版："
 
@@ -103,14 +101,15 @@ msgid "https://github.com/godotengine/godot-demo-projects"
 msgstr "https://github.com/godotengine/godot-demo-projects"
 
 msgid "Prerequisites"
-msgstr ""
+msgstr "先決條件"
 
 msgid ""
 "This step-by-step tutorial is intended for beginners who followed the "
 "complete :ref:`Getting Started <toc-learn-step_by_step>`."
 msgstr ""
+"這個分步教學是為那些遵循完整的 :ref:`《入門》 <toc-learn-step_by_step>` 的初"
+"學者準備的。"
 
-#, fuzzy
 msgid ""
 "If you're an experienced programmer, you can find the complete demo's source "
 "code here: `Godot demo projects <https://github.com/godotengine/godot-demo-"
@@ -122,16 +121,19 @@ msgstr ""
 msgid ""
 "We prepared some game assets you'll need to download so we can jump straight "
 "to the code."
-msgstr ""
+msgstr "我們準備了一些你需要下載的遊戲資源，以便我們可以直接跳轉到程式碼。"
 
 msgid "You can download them by clicking the link below."
-msgstr ""
+msgstr "您可以通過按一下下面的連結下載它們。"
 
 msgid ""
 "`dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/godot-docs-"
 "project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets."
 "zip>`_."
 msgstr ""
+"`dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/godot-docs-"
+"project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets."
+"zip>`_ 。"
 
 msgid "Contents"
 msgstr "內容"

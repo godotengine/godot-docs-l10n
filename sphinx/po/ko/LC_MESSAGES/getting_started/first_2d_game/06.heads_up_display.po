@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,9 +27,10 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node "
-"named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational "
-"display that appears as an overlay on top of the game view."
+"Create a new scene, click the \"Other Node\" button and add a :ref:"
+"`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for "
+"\"heads-up display\", an informational display that appears as an overlay on "
+"top of the game view."
 msgstr ""
 "게임에 마지막으로 필요한 것은 UI입니다: 인터페이스로 점수, \"game over\" 메시"
 "지, 재시작 버튼을 화면에 보여줍니다. 새 씬을 만들고, :ref:`CanvasLayer "
@@ -89,7 +90,7 @@ msgid ""
 msgstr ""
 "``ScoreLabel``\\ 을 클릭하고 인스펙터(Inspecter)의 *Text* 필드에 숫자를 입력"
 "하세요. ``Control`` 노드의 기본 폰트는 작아서 크기 조정이 잘 되지 않습니다. "
-"게임 에셋에는 \"Xolonium-Regular.ttf\"라는 폰트 파일이 있습니다. 이 폰트를 사"
+"게임 애셋에는 \"Xolonium-Regular.ttf\"라는 폰트 파일이 있습니다. 이 폰트를 사"
 "용하려면, 각 ``Control`` 노드마다 다음과 같이 하세요:"
 
 #, fuzzy
@@ -145,7 +146,7 @@ msgid "Message"
 msgstr "메시지"
 
 #, fuzzy
-msgid "Add the text ``Dodge the creeps!``."
+msgid "Add the text ``Dodge the Creeps!``."
 msgstr "*Text* : ``Dodge the Creeps!``"
 
 msgid ""
@@ -271,12 +272,6 @@ msgstr ""
 "``start_game`` 신호를 Main 노드의 ``new_game()`` 함수에 연결하세요. 이제 스크"
 "립트의 ``func new_game()`` 옆에 녹색 연결 아이콘이 나타나는지 확인하세요."
 
-#, fuzzy
-msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
-msgstr ""
-"모든 것이 제대로 작동한다고 확신한다면 '_ready()'에서 ``new_game()`` 함수 호"
-"출을 제거하세요."
-
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -287,11 +282,6 @@ msgstr ""
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "``game_over()``\\ 에서는, 해당 ``HUD`` 함수를 호출해야 합니다:"
 
-msgid ""
-"Just a reminder: we don't want to start the new game automatically, so "
-"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
-msgstr ""
-
 #, fuzzy
 msgid ""
 "Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
@@ -299,6 +289,14 @@ msgid ""
 msgstr ""
 "마지막으로, ``_on_ScoreTimer_timeout()``\\ 을 추가해서 점수가 바뀌면 화면과 "
 "일치하도록 합니다:"
+
+#, fuzzy
+msgid ""
+"Remember to remove the call to ``new_game()`` from ``_ready()`` if you "
+"haven't already, otherwise your game will start automatically."
+msgstr ""
+"모든 것이 제대로 작동한다고 확신한다면 '_ready()'에서 ``new_game()`` 함수 호"
+"출을 제거하세요."
 
 #, fuzzy
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -146,9 +146,8 @@ msgid ""
 "escaped user input (3rd line)"
 msgstr ""
 
-#, fuzzy
 msgid "The above image was created using the following script:"
-msgstr "Erstellen Sie einen Node und hängen Sie das folgende Skript an."
+msgstr "Das obige Bild wurde mit folgendem Skript erstellt:"
 
 #, fuzzy
 msgid "Stripping BBCode tags"
@@ -302,13 +301,11 @@ msgid ""
 "`doc_bbcode_in_richtextlabel_paragraph_options`."
 msgstr ""
 
-#, fuzzy
 msgid "``[p]{text}[/p]``"
-msgstr "``[b]{text}[/b]``"
+msgstr "``[p]{text}[/p]``"
 
-#, fuzzy
 msgid "``[p {options}]{text}[/p]``"
-msgstr "``[i]{text}[/i]``"
+msgstr "``[p {options}]{text}[/p]``"
 
 msgid "**center**"
 msgstr "**center**"
@@ -327,18 +324,21 @@ msgid "**left**"
 msgstr ""
 
 #, fuzzy
-msgid "Makes ``{text}`` horizontally right-aligned."
+msgid "Makes ``{text}`` horizontally left-aligned."
 msgstr "zeigt {text} horizontal rechtsbündig."
 
 msgid "Same as ``[p align=left]``."
 msgstr ""
 
-#, fuzzy
 msgid "``[left]{text}[/left]``"
-msgstr "``[indent]{text}[/indent]``"
+msgstr "``[left]{text}[/left]``"
 
 msgid "**right**"
 msgstr "**right**"
+
+#, fuzzy
+msgid "Makes ``{text}`` horizontally right-aligned."
+msgstr "zeigt {text} horizontal rechtsbündig."
 
 msgid "Same as ``[p align=right]``."
 msgstr ""
@@ -362,7 +362,9 @@ msgstr "``[fill]{text}[/fill]``"
 msgid "**indent**"
 msgstr "**indent**"
 
-msgid "Indents ``{text}`` once."
+msgid ""
+"Indents ``{text}`` once. The indentation width is the same as with ``[ul]`` "
+"or ``[ol]``, but without a bullet point."
 msgstr ""
 
 msgid "``[indent]{text}[/indent]``"
@@ -381,13 +383,11 @@ msgid ""
 "ref:`doc_bbcode_in_richtextlabel_handling_url_tag_clicks`."
 msgstr ""
 
-#, fuzzy
 msgid "``[url]{link}[/url]``"
-msgstr "``[url]{url}[/url]``"
+msgstr "``[url]{link}[/url]``"
 
-#, fuzzy
 msgid "``[url={link}]{text}[/url]``"
-msgstr "``[url=<url>]{text}[/url]``"
+msgstr "``[url={link}]{text}[/url]``"
 
 #, fuzzy
 msgid "**hint**"
@@ -434,21 +434,17 @@ msgstr ""
 msgid "``[img]{path}[/img]``"
 msgstr "``[img]{path}[/img]``"
 
-#, fuzzy
 msgid "``[img={width}]{path}[/img]``"
-msgstr "``[img=<width>]{path}[/img]``"
+msgstr "``[img={width}]{path}[/img]``"
 
-#, fuzzy
 msgid "``[img={width}x{height}]{path}[/img]``"
-msgstr "``[img=<width>x<height>]{path}[/img]``"
+msgstr "``[img={width}x{height}]{path}[/img]``"
 
-#, fuzzy
 msgid "``[img={valign}]{path}[/img]``"
-msgstr "``[img]{path}[/img]``"
+msgstr "``[img={valign}]{path}[/img]``"
 
-#, fuzzy
 msgid "``[img {options}]{path}[/img]``"
-msgstr "``[img]{path}[/img]``"
+msgstr "``[img {options}]{path}[/img]``"
 
 msgid "**font**"
 msgstr "**font**"
@@ -461,13 +457,11 @@ msgid ""
 "`doc_bbcode_in_richtextlabel_font_options`."
 msgstr ""
 
-#, fuzzy
 msgid "``[font={path}]{text}[/font]``"
-msgstr "``[font=<path>]{text}[/font]``"
+msgstr "``[font={path}]{text}[/font]``"
 
-#, fuzzy
 msgid "``[font {options}]{text}[/font]``"
-msgstr "``[font=<path>]{text}[/font]``"
+msgstr "``[font {options}]{text}[/font]``"
 
 #, fuzzy
 msgid "**font_size**"
@@ -477,9 +471,8 @@ msgstr "**font**"
 msgid "Use custom font size for ``{text}``."
 msgstr "verwende eigenen Zeichensatz bei <Pfad> für {text}."
 
-#, fuzzy
 msgid "``[font_size={size}]{text}[/font_size]``"
-msgstr "``[font=<path>]{text}[/font]``"
+msgstr "``[font_size={size}]{text}[/font_size]``"
 
 msgid "**dropcap**"
 msgstr ""
@@ -514,12 +507,28 @@ msgstr ""
 msgid "``[opentype_features={list}]``"
 msgstr ""
 
-#, fuzzy
 msgid "``{text}``"
-msgstr "``[b]{text}[/b]``"
+msgstr "``{text}``"
 
 msgid "``[/opentype_features]``"
 msgstr ""
+
+#, fuzzy
+msgid "**lang**"
+msgstr "**specular_phong**"
+
+msgid ""
+"Overrides the language for ``{text}`` that is set by the **BiDi > Language** "
+"property in :ref:`class_RichTextLabel`. ``{code}`` must be an ISO :ref:"
+"`language code <doc_locales>`. This can be used to enforce the use of a "
+"specific script for a language without starting a new paragraph. Some font "
+"files may contain script-specific substitutes, in which case they will be "
+"used."
+msgstr ""
+
+#, fuzzy
+msgid "``[lang={code}]{text}[/color]``"
+msgstr "``[color={code/name}]{text}[/color]``"
 
 msgid "**color**"
 msgstr "**color**"
@@ -530,9 +539,8 @@ msgid ""
 "format (e.g. ``#ff00ff``, see :ref:`doc_bbcode_in_richtextlabel_hex_colors`)."
 msgstr ""
 
-#, fuzzy
 msgid "``[color={code/name}]{text}[/color]``"
-msgstr "``[color=<code/name>]{text}[/color]``"
+msgstr "``[color={code/name}]{text}[/color]``"
 
 #, fuzzy
 msgid "**bgcolor**"
@@ -543,9 +551,8 @@ msgid ""
 "Accepts same values as the ``color`` tag."
 msgstr ""
 
-#, fuzzy
 msgid "``[bgcolor={code/name}]{text}[/bgcolor]``"
-msgstr "``[color=<code/name>]{text}[/color]``"
+msgstr "``[bgcolor={code/name}]{text}[/bgcolor]``"
 
 #, fuzzy
 msgid "**fgcolor**"
@@ -557,9 +564,8 @@ msgid ""
 "tag."
 msgstr ""
 
-#, fuzzy
 msgid "``[fgcolor={code/name}]{text}[/fgcolor]``"
-msgstr "``[color=<code/name>]{text}[/color]``"
+msgstr "``[fgcolor={code/name}]{text}[/fgcolor]``"
 
 #, fuzzy
 msgid "**outline_size**"
@@ -584,9 +590,8 @@ msgid ""
 "``color`` tag."
 msgstr ""
 
-#, fuzzy
 msgid "``[outline_color={code/name}]``"
-msgstr "``[color=<code/name>]{text}[/color]``"
+msgstr "``[outline_color={code/name}]``"
 
 msgid "``[/outline_color]``"
 msgstr ""
@@ -599,9 +604,8 @@ msgid ""
 "define table cells."
 msgstr ""
 
-#, fuzzy
 msgid "``[table={number}]{cells}[/table]``"
-msgstr "``[table=<number>]{cells}[/table]``"
+msgstr "``[table={number}]{cells}[/table]``"
 
 msgid "**cell**"
 msgstr "**cell**"
@@ -623,13 +627,11 @@ msgstr ""
 msgid "``[cell]{text}[/cell]``"
 msgstr "``[cell]{text}[/cell]``"
 
-#, fuzzy
 msgid "``[cell={ratio}]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
+msgstr "``[cell={ratio}]{text}[/cell]``"
 
-#, fuzzy
 msgid "``[cell {options}]{text}[/cell]``"
-msgstr "``[cell]{text}[/cell]``"
+msgstr "``[cell {options}]{text}[/cell]``"
 
 #, fuzzy
 msgid "**ul**"
@@ -645,13 +647,11 @@ msgid ""
 "ref:`doc_bbcode_in_richtextlabel_unordered_list_bullet`."
 msgstr ""
 
-#, fuzzy
 msgid "``[ul]{items}[/ul]``"
-msgstr "``[u]{text}[/u]``"
+msgstr "``[ul]{items}[/ul]``"
 
-#, fuzzy
 msgid "``[ul bullet={bullet}]{items}[/ul]``"
-msgstr "``[url=<url>]{text}[/url]``"
+msgstr "``[ul bullet={bullet}]{items}[/ul]``"
 
 #, fuzzy
 msgid "**ol**"
@@ -784,13 +784,11 @@ msgstr ""
 msgid "**direction**, **dir**"
 msgstr ""
 
-#, fuzzy
 msgid "``ltr``, ``rtl``, ``auto``"
-msgstr "``-h``, ``--help``, ``/?``"
+msgstr "``ltr``, ``rtl``, ``auto``"
 
-#, fuzzy
 msgid "Inherit"
-msgstr "Vererbung"
+msgstr "Vererben"
 
 #, fuzzy
 msgid "Base BiDi direction."
@@ -799,13 +797,31 @@ msgstr "In die angegebene Richtung bewegen."
 msgid "**language**, **lang**"
 msgstr ""
 
-#, fuzzy
 msgid "ISO language codes. See :ref:`doc_locales`"
-msgstr "*Bilder:* Siehe :ref:`doc_import_images`."
+msgstr "ISO-Sprachcodes. Siehe :ref:`doc_locales`"
+
+msgid ""
+"Locale override. Some font files may contain script-specific substitutes, in "
+"which case they will be used."
+msgstr ""
 
 #, fuzzy
-msgid "Locale override."
-msgstr "Standardüberschreibungen"
+msgid "**tab_stops**"
+msgstr "**table**"
+
+msgid "List of floating-point numbers, e.g. ``10.0,30.0``"
+msgstr ""
+
+msgid "Width of the space character in the font"
+msgstr ""
+
+msgid ""
+"Overrides the horizontal offsets for each tab character. When the end of the "
+"list is reached, the tab stops will loop over. For example, if you set "
+"``tab_stops`` to ``10.0,30.0``, the first tab will be at ``10`` pixels, the "
+"second tab will be at ``10 + 30 = 40`` pixels, and the third tab will be at "
+"``10 + 30 + 10 = 50`` pixels from the origin of the RichTextLabel."
+msgstr ""
 
 msgid "Handling ``[url]`` tag clicks"
 msgstr "Umgang mit ``[url]``-Tag-Klicks"
@@ -859,9 +875,8 @@ msgstr "Der Inhalt der Datei."
 msgid "**width**"
 msgstr "**smooth**"
 
-#, fuzzy
 msgid "Target width of the image."
-msgstr "Beginnen Sie mit einem Baum"
+msgstr "Zielbreite des Bildes."
 
 #, fuzzy
 msgid "**region**"
@@ -915,9 +930,8 @@ msgstr ""
 msgid "A valid Font resource path."
 msgstr "Bild an Ressource {Pfad} einfügen."
 
-#, fuzzy
 msgid "Font resource path."
-msgstr "Ressourcen-Pfad"
+msgstr "Pfad der Schriftart-Ressourcen."
 
 msgid "**size**, **s**"
 msgstr ""
@@ -925,13 +939,11 @@ msgstr ""
 msgid "Number in pixels."
 msgstr ""
 
-#, fuzzy
 msgid "Custom font size."
-msgstr "Benutzerdefinierte Godot Server"
+msgstr "Benutzerdefinierte Schriftgröße."
 
-#, fuzzy
 msgid "Named colors"
-msgstr "Genutzt als Farbe."
+msgstr "Benannte Farben"
 
 msgid ""
 "For tags that allow specifying a color by name you can use names of the "
@@ -1000,9 +1012,8 @@ msgid ""
 "``bg=odd_color,even_color``."
 msgstr ""
 
-#, fuzzy
 msgid "Unordered list bullet"
-msgstr "Oder unsortierte Sets:"
+msgstr "Ungeordnete Liste Aufzählung"
 
 msgid ""
 "By default, the ``[ul]`` tag uses the ``U+2022`` \"Bullet\" Unicode glyph as "
@@ -1064,6 +1075,23 @@ msgid ""
 "the inspector after selecting the RichTextLabel node, or ensuring there is "
 "enough margin added around the text by using line breaks above and below the "
 "line using the effect."
+msgstr ""
+
+msgid "Pulse"
+msgstr "Pulse"
+
+msgid ""
+"Pulse creates an animated pulsing effect that multiplies each character's "
+"opacity and color. It can be used to bring attention to specific text. Its "
+"tag format is ``[pulse freq=1.0 color=#ffffff40 ease=-2.0]{text}[/pulse]``."
+msgstr ""
+
+msgid ""
+"``freq`` controls the frequency of the half-pulsing cycle (higher is "
+"faster). A full pulsing cycle takes ``2 * (1.0 / freq)`` seconds. ``color`` "
+"is the target color multiplier for blinking. The default mostly fades out "
+"text, but not entirely. ``ease`` is the easing function exponent to use. "
+"Negative values provide in-out easing, which is why the default is ``-2.0``."
 msgstr ""
 
 msgid "Wave"
@@ -1266,9 +1294,6 @@ msgstr "Hier sind einige Beispiele eigener Effekte:"
 
 msgid "Ghost"
 msgstr "Geist"
-
-msgid "Pulse"
-msgstr "Pulse"
 
 msgid "Matrix"
 msgstr "Matrix"

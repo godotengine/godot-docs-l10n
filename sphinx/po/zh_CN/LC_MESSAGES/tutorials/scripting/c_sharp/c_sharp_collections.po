@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "C# collections"
-msgstr "连接"
+msgstr "C# 合集"
 
 msgid ""
 "The .NET base class library contains multiple collection types that can be "
@@ -27,9 +26,8 @@ msgid ""
 "that are tightly integrated with the rest of the engine."
 msgstr ""
 
-#, fuzzy
 msgid "Choose a collection"
-msgstr "端口和连接"
+msgstr "选择一种合集"
 
 msgid ""
 "The main difference between the `.NET collections <https://learn.microsoft."
@@ -120,22 +118,22 @@ msgid ""
 "key."
 msgstr ""
 
-#, fuzzy
 msgid "Godot collections"
-msgstr "Godot 通知"
+msgstr "Godot 合集"
 
-#, fuzzy
 msgid "PackedArray"
-msgstr "数组"
+msgstr "PackedArray"
 
 msgid ""
 "Godot packed arrays are implemented as an array of a specific type, allowing "
 "it to be more tightly packed as each element has the size of the specific "
 "type, not ``Variant``."
 msgstr ""
+"Godot 中的紧缩数组以指定类型的数组形式实现，这样就能够更加紧实，每个元素都只"
+"有各自类型的大小，而不是 ``Variant`` 的大小。"
 
 msgid "In C#, packed arrays are replaced by ``System.Array``:"
-msgstr ""
+msgstr "在 C# 中，紧缩数组由 ``System.Array`` 代替："
 
 msgid "GDScript"
 msgstr "GDScript"
@@ -143,68 +141,56 @@ msgstr "GDScript"
 msgid "C#"
 msgstr "C#"
 
-#, fuzzy
 msgid "``PackedInt32Array``"
-msgstr "``PoolIntArray``"
+msgstr "``PackedInt32Array``"
 
 msgid "``int[]``"
 msgstr "``int[]``"
 
-#, fuzzy
 msgid "``PackedInt64Array``"
-msgstr "``PoolIntArray``"
+msgstr "``PackedInt64Array``"
 
-#, fuzzy
 msgid "``long[]``"
-msgstr "``float[]``"
+msgstr "``long[]``"
 
-#, fuzzy
 msgid "``PackedByteArray``"
-msgstr "``PoolByteArray``"
+msgstr "``PackedByteArray``"
 
 msgid "``byte[]``"
 msgstr "``byte[]``"
 
-#, fuzzy
 msgid "``PackedFloat32Array``"
-msgstr "``PoolFloatArray``"
+msgstr "``PackedFloat32Array``"
 
 msgid "``float[]``"
 msgstr "``float[]``"
 
-#, fuzzy
 msgid "``PackedFloat64Array``"
-msgstr "``PoolFloatArray``"
+msgstr "``PackedFloat64Array``"
 
-#, fuzzy
 msgid "``double[]``"
-msgstr "``byte[]``"
+msgstr "``double[]``"
 
-#, fuzzy
 msgid "``PackedStringArray``"
-msgstr "``PoolStringArray``"
+msgstr "``PackedStringArray``"
 
-#, fuzzy
 msgid "``string[]``"
-msgstr "``String[]``"
+msgstr "``string[]``"
 
-#, fuzzy
 msgid "``PackedColorArray``"
-msgstr "``PoolColorArray``"
+msgstr "``PackedColorArray``"
 
 msgid "``Color[]``"
 msgstr "``Color[]``"
 
-#, fuzzy
 msgid "``PackedVector2Array``"
-msgstr "``PoolVector2Array``"
+msgstr "``PackedVector2Array``"
 
 msgid "``Vector2[]``"
 msgstr "``Vector2[]``"
 
-#, fuzzy
 msgid "``PackedVector3Array``"
-msgstr "``PoolVector3Array``"
+msgstr "``PackedVector3Array``"
 
 msgid "``Vector3[]``"
 msgstr "``Vector3[]``"
@@ -248,314 +234,281 @@ msgstr ""
 msgid "List of Godot's Array methods and their equivalent in C#:"
 msgstr ""
 
-#, fuzzy
 msgid "all"
-msgstr "调用(``Call``)"
+msgstr "all"
 
 msgid "`System.Linq.Enumerable.All`_"
-msgstr ""
+msgstr "`System.Linq.Enumerable.All`_"
 
-#, fuzzy
 msgid "any"
-msgstr "以及"
+msgstr "any"
 
 msgid "`System.Linq.Enumerable.Any`_"
-msgstr ""
+msgstr "`System.Linq.Enumerable.Any`_"
 
-#, fuzzy
 msgid "append"
-msgstr "附录"
+msgstr "append"
 
-#, fuzzy
 msgid "Add"
-msgstr "广告"
+msgstr "Add"
 
-#, fuzzy
 msgid "append_array"
-msgstr "切线数组"
+msgstr "append_array"
 
 msgid "AddRange"
-msgstr ""
+msgstr "AddRange"
 
-#, fuzzy
 msgid "assign"
-msgstr "signal"
+msgstr "assign"
 
 msgid "Clear and AddRange"
-msgstr ""
+msgstr "Clear 和 AddRange"
 
-#, fuzzy
 msgid "back"
-msgstr "缺点"
+msgstr "back"
 
 msgid ""
 "``Array[^1]`` or `System.Linq.Enumerable.Last`_ or `System.Linq.Enumerable."
 "LastOrDefault`_"
 msgstr ""
+"``Array[^1]`` 或 `System.Linq.Enumerable.Last`_ 或 `System.Linq.Enumerable."
+"LastOrDefault`_"
 
-#, fuzzy
 msgid "bsearch"
-msgstr "搜索"
+msgstr "bsearch"
 
-#, fuzzy
 msgid "BinarySearch"
-msgstr "二分查找"
+msgstr "BinarySearch"
 
 msgid "bsearch_custom"
-msgstr ""
+msgstr "bsearch_custom"
 
-#, fuzzy
 msgid "N/A"
-msgstr "NAN"
+msgstr "N/A"
 
 msgid "clear"
 msgstr "clear（明显）"
 
-#, fuzzy
 msgid "Clear"
-msgstr "clear（明显）"
+msgstr "Clear"
 
-#, fuzzy
 msgid "count"
-msgstr "量"
+msgstr "count"
 
 msgid "`System.Linq.Enumerable.Count`_"
-msgstr ""
+msgstr "`System.Linq.Enumerable.Count`_"
 
-#, fuzzy
 msgid "duplicate"
-msgstr "创建副本"
+msgstr "duplicate"
 
 msgid "Duplicate"
 msgstr "创建副本"
 
-#, fuzzy
 msgid "erase"
-msgstr "相机"
+msgstr "erase"
 
 msgid "Remove"
-msgstr ""
+msgstr "Remove"
 
-#, fuzzy
 msgid "fill"
-msgstr "**填充**"
+msgstr "fill"
 
 msgid "Fill"
-msgstr ""
+msgstr "Fill"
 
-#, fuzzy
 msgid "filter"
-msgstr "过滤器"
+msgstr "filter"
 
 msgid "Use `System.Linq.Enumerable.Where`_"
-msgstr ""
+msgstr "使用 `System.Linq.Enumerable.Where`_"
 
 msgid "find"
-msgstr ""
+msgstr "find"
 
-#, fuzzy
 msgid "IndexOf"
-msgstr "索引"
+msgstr "IndexOf"
 
 msgid "front"
-msgstr ""
+msgstr "front"
 
 msgid ""
 "``Array[0]`` or `System.Linq.Enumerable.First`_ or `System.Linq.Enumerable."
 "FirstOrDefault`_"
 msgstr ""
+"``Array[0]`` 或 `System.Linq.Enumerable.First`_ 或 `System.Linq.Enumerable."
+"FirstOrDefault`_"
 
-#, fuzzy
 msgid "get_typed_builtin"
-msgstr "顶点内置"
+msgstr "get_typed_builtin"
 
-#, fuzzy
 msgid "get_typed_class_name"
-msgstr "class_name"
+msgstr "get_typed_class_name"
 
 msgid "get_typed_script"
-msgstr ""
+msgstr "get_typed_script"
 
-#, fuzzy
 msgid "has"
-msgstr "as"
+msgstr "has"
 
-#, fuzzy
 msgid "Contains"
-msgstr "容器"
+msgstr "Contains"
 
 msgid "hash"
-msgstr ""
+msgstr "hash"
 
 msgid "GD.Hash"
-msgstr ""
+msgstr "GD.Hash"
 
-#, fuzzy
 msgid "insert"
-msgstr "assert"
+msgstr "insert"
 
-#, fuzzy
 msgid "Insert"
-msgstr "插入关键帧"
+msgstr "Insert"
 
 msgid "is_empty"
-msgstr ""
+msgstr "is_empty"
 
 msgid "Use ``Count == 0``"
 msgstr ""
 
 msgid "is_read_only"
-msgstr ""
+msgstr "is_read_only"
 
 msgid "IsReadOnly"
-msgstr ""
+msgstr "IsReadOnly"
 
 msgid "is_same_typed"
-msgstr ""
+msgstr "is_same_typed"
 
-#, fuzzy
 msgid "is_typed"
-msgstr "类型"
+msgstr "is_typed"
 
 msgid "make_read_only"
-msgstr ""
+msgstr "make_read_only"
 
 msgid "MakeReadOnly"
-msgstr ""
+msgstr "MakeReadOnly"
 
-#, fuzzy
 msgid "map"
-msgstr "pap"
+msgstr "map"
 
 msgid "`System.Linq.Enumerable.Select`_"
-msgstr ""
+msgstr "`System.Linq.Enumerable.Select`_"
 
 msgid "max"
-msgstr "最大值"
+msgstr "max"
 
-#, fuzzy
 msgid "Max"
-msgstr "最大值"
+msgstr "Max"
 
-#, fuzzy
 msgid "min"
-msgstr "mi"
+msgstr "min"
 
-#, fuzzy
 msgid "Min"
-msgstr "主要"
+msgstr "Min"
 
 msgid "pick_random"
-msgstr ""
+msgstr "pick_random"
 
 msgid "PickRandom (Consider using `System.Random`_)"
 msgstr ""
 
 msgid "pop_at"
-msgstr ""
+msgstr "pop_at"
 
 msgid "``Array[i]`` with ``RemoveAt(i)``"
 msgstr ""
 
 msgid "pop_back"
-msgstr ""
+msgstr "pop_back"
 
 msgid "``Array[^1]`` with ``RemoveAt(Count - 1)``"
 msgstr ""
 
 msgid "pop_front"
-msgstr ""
+msgstr "pop_front"
 
 msgid "``Array[0]`` with ``RemoveAt(0)``"
 msgstr ""
 
 msgid "push_back"
-msgstr ""
+msgstr "push_back"
 
 msgid "``Insert(Count, item)``"
-msgstr ""
+msgstr "``Insert(Count, item)``"
 
 msgid "push_front"
-msgstr ""
+msgstr "push_front"
 
 msgid "``Insert(0, item)``"
-msgstr ""
+msgstr "``Insert(0, item)``"
 
 msgid "reduce"
-msgstr ""
+msgstr "reduce"
 
 msgid "`System.Linq.Enumerable.Aggregate`_"
-msgstr ""
+msgstr "`System.Linq.Enumerable.Aggregate`_"
 
-#, fuzzy
 msgid "remove_at"
-msgstr "remote"
+msgstr "remove_at"
 
 msgid "RemoveAt"
-msgstr ""
+msgstr "RemoveAt"
 
-#, fuzzy
 msgid "resize"
-msgstr "X 尺寸"
+msgstr "resize"
 
-#, fuzzy
 msgid "Resize"
-msgstr "调整大小"
+msgstr "Resize"
 
-#, fuzzy
 msgid "reverse"
-msgstr "服务器"
+msgstr "reverse"
 
-#, fuzzy
 msgid "Reverse"
-msgstr "混响(Reverb)"
+msgstr "Reverse"
 
 msgid "rfind"
-msgstr ""
+msgstr "rfind"
 
-#, fuzzy
 msgid "LastIndexOf"
-msgstr "索引"
+msgstr "LastIndexOf"
 
 msgid "shuffle"
-msgstr ""
+msgstr "shuffle"
 
 msgid "Shuffle"
-msgstr ""
+msgstr "Shuffle"
 
-#, fuzzy
 msgid "size"
-msgstr "X 尺寸"
+msgstr "size"
 
-#, fuzzy
 msgid "Count"
-msgstr "量"
+msgstr "Count"
 
 msgid "slice"
-msgstr ""
+msgstr "slice"
 
 msgid "Slice"
-msgstr ""
+msgstr "Slice"
 
 msgid "sort"
-msgstr ""
+msgstr "sort"
 
-#, fuzzy
 msgid "Sort"
-msgstr "``YSort``"
+msgstr "Sort"
 
 msgid "sort_custom"
-msgstr ""
+msgstr "sort_custom"
 
 msgid "`System.Linq.Enumerable.OrderBy`_"
-msgstr ""
+msgstr "`System.Linq.Enumerable.OrderBy`_"
 
 #, fuzzy
 msgid "operator !="
 msgstr "操作符"
 
 msgid "!RecursiveEqual"
-msgstr ""
+msgstr "!RecursiveEqual"
 
 #, fuzzy
 msgid "operator +"
@@ -565,31 +518,26 @@ msgstr "操作符"
 msgid "operator <"
 msgstr "操作符"
 
-#, fuzzy
 msgid "operator <="
-msgstr "操作符"
+msgstr "operator <="
 
-#, fuzzy
 msgid "operator =="
-msgstr "操作符"
+msgstr "operator =="
 
 msgid "RecursiveEqual"
-msgstr ""
+msgstr "RecursiveEqual"
 
-#, fuzzy
 msgid "operator >"
-msgstr "操作符"
+msgstr "operator >"
 
-#, fuzzy
 msgid "operator >="
-msgstr "操作符"
+msgstr "operator >="
 
-#, fuzzy
 msgid "operator []"
-msgstr "操作符"
+msgstr "operator []"
 
 msgid "Array[int] indexer"
-msgstr ""
+msgstr "Array[int] indexer"
 
 msgid "Dictionary"
 msgstr "字典"
@@ -624,41 +572,37 @@ msgid "List of Godot's Dictionary methods and their equivalent in C#:"
 msgstr ""
 
 msgid "find_key"
-msgstr ""
+msgstr "find_key"
 
-#, fuzzy
 msgid "get"
-msgstr "et"
+msgstr "get"
 
 msgid "Dictionary[Variant] indexer or TryGetValue"
 msgstr ""
 
-#, fuzzy
 msgid "ContainsKey"
-msgstr "容器"
+msgstr "ContainsKey"
 
 msgid "has_all"
-msgstr ""
+msgstr "has_all"
 
 msgid "keys"
 msgstr "键"
 
 msgid "Keys"
-msgstr ""
+msgstr "Keys"
 
 msgid "merge"
-msgstr ""
+msgstr "merge"
 
 msgid "Merge"
-msgstr ""
+msgstr "Merge"
 
-#, fuzzy
 msgid "values"
-msgstr "值"
+msgstr "values"
 
-#, fuzzy
 msgid "Values"
-msgstr "值"
+msgstr "Values"
 
 msgid "Dictionary[Variant] indexer, Add or TryGetValue"
 msgstr ""

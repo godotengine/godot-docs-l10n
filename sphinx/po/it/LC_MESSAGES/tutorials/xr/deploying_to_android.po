@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,7 +35,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Installing OpenJDK 11"
+msgid "Installing OpenJDK 17"
 msgstr "Installa OpenJDK"
 
 #, fuzzy
@@ -55,7 +55,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Custom Android build"
+msgid "Gradle Android build"
 msgstr "Moduli personalizzati"
 
 msgid ""
@@ -68,7 +68,7 @@ msgstr ""
 
 msgid ""
 "In order to include the vendor-specific OpenXR loader into your project, you "
-"will need to setup a custom Android build."
+"will need to setup a gradle Android build."
 msgstr ""
 
 msgid "Select **Install Android Build Template...** from the **Project** menu:"
@@ -83,49 +83,66 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"You can read more about custom builds here: :ref:`doc_android_custom_build`."
+"You can read more about gradle builds here: :ref:`doc_android_gradle_build`."
 msgstr ""
 "Puoi saperne di più sulla libreria dei Contenuti in :ref:"
 "`doc_what_is_assetlib`."
 
 #, fuzzy
-msgid "Installing the loader plugins"
+msgid "Installing the vendors plugin"
 msgstr ":ref:`Inspector Plugin<doc_inspector_plugins>`"
 
 msgid ""
-"The Android plugin structure has been restructured in Godot 4.2, if you've "
-"previously installed the loader plugin you need to delete it from the "
-"`android/plugins` folder. The loader plugin available in the asset library "
-"is still the old one, it will be updated to the new one after 4.2 is "
-"released."
-msgstr ""
-
-msgid ""
-"The loaders can be downloaded from the asset library, search for OpenXR "
-"Loaders and install the plugin:"
-msgstr ""
-
-msgid "You will find the installed files inside the **addons** folder."
-msgstr ""
-
-msgid ""
-"Alternatively you can manually install the loader plugin by downloading the "
-"v2.x version of the plugin `from the release page here <https://github.com/"
-"GodotVR/godot_openxr_loaders/releases>`__."
-msgstr ""
-
-msgid ""
-"You will need to copy the `assets/addons/godotopenxr` folder from the zip "
-"file into your projects `assets/addons` folder."
+"The Android plugin structure has been restructured in Godot 4.2, and the "
+"loader plugin was renamed to vendors plugin as it now includes more than "
+"just loaders. If you've previously installed the loader plugin you need to "
+"delete it from the `android/plugins` folder. The loader plugin available in "
+"the asset library is still the old one, it will be updated to the new vendor "
+"plugin after 4.2 is released."
 msgstr ""
 
 #, fuzzy
 msgid ""
-"You can find the main repository of the loader plugin `here <https://github."
-"com/GodotVR/godot_openxr_loaders>`__."
+"The vendors plugin can be downloaded from the asset library, search for "
+"OpenXR and install the plugin:"
+msgstr ""
+"I plug-in dell'editor possono essere scaricati da: ref: `Libreria dei "
+"Contenuti <doc_what_is_assetlib>` per estenderne le funzionalità."
+
+msgid "You will find the installed files inside the **addons** folder."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Alternatively you can manually install the vendors plugin by downloading the "
+"v2.x version of the plugin `from the release page here <https://github.com/"
+"GodotVR/godot_openxr_vendors/releases>`__."
 msgstr ""
 "una copia del repository `godot-cpp <https://github.com/GodotNativeTools/"
 "godot-cpp>`__."
+
+msgid ""
+"You will need to copy the `assets/addons/godotopenxrvendors` folder from the "
+"zip file into your projects `assets/addons` folder."
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You can find the main repository of the vendors plugin `here <https://github."
+"com/GodotVR/godot_openxr_vendors>`__."
+msgstr ""
+"una copia del repository `godot-cpp <https://github.com/GodotNativeTools/"
+"godot-cpp>`__."
+
+#, fuzzy
+msgid "Enabling the vendors plugin"
+msgstr ":ref:`Inspector Plugin<doc_inspector_plugins>`"
+
+msgid ""
+"The vendors plugin needs to be enabled before the export settings become "
+"accessible. Open **Project** and select **Project Settings...**. Go to the "
+"**Plugins** tab. Enable the **GodotOpenXRVendors** plugin."
+msgstr ""
 
 #, fuzzy
 msgid "Creating the export presets"
@@ -169,9 +186,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The fourth option is the official Khronos (KHR) loader, in due time all "
-"headsets should work with this loader. At the moment this loader has been "
-"tested with the Magic Leap 2 and standalone HTC headsets."
+"The fourth option is the official Khronos loader, in due time all headsets "
+"should work with this loader. At the moment this loader has been tested with "
+"the Magic Leap 2 and standalone HTC headsets."
 msgstr ""
 
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -51,20 +51,8 @@ msgstr ""
 "Navigationsformen hinzufügen und der TileMap zusätzliche Funktionen "
 "hinzufügen."
 
-msgid ""
-"Godot 4.0 has moved several per-tile properties, such as tile rotation, from "
-"TileMap to TileSet. Individual tiles can no longer be rotated while in the "
-"TileMap editor. Instead, the TileSet editor must be used to create "
-"alternative rotated tiles."
-msgstr ""
-
-msgid ""
-"This change allows for greater design consistency, as not every tile needs "
-"to be rotated or flipped within a TileSet."
-msgstr ""
-
 msgid "Specifying the TileSet in the TileMap"
-msgstr ""
+msgstr "Festlegen des TileSet in der TileMap"
 
 msgid ""
 "If you've followed the previous page on :ref:`doc_using_tilesets`, you "
@@ -82,9 +70,8 @@ msgstr ""
 msgid "Saving the built-in TileSet resource to an external resource file"
 msgstr ""
 
-#, fuzzy
 msgid "Creating TileMap layers"
-msgstr "Spielerszene erstellen"
+msgstr "Erstellen von TileMap-Ebenen"
 
 msgid ""
 "As of Godot 4.0, you can place several *layers* in a single TileMap node. "
@@ -156,9 +143,8 @@ msgid ""
 "all tiles that were placed on the layer."
 msgstr ""
 
-#, fuzzy
 msgid "Opening the TileMap editor"
-msgstr "Den Web-Editor nutzen"
+msgstr "Öffnen des TileMap-Editors"
 
 #, fuzzy
 msgid ""
@@ -174,7 +160,7 @@ msgid ""
 msgstr ""
 
 msgid "Selecting tiles to use for painting"
-msgstr ""
+msgstr "Auswahl der Fliesen zum Zeichnen"
 
 msgid ""
 "First, if you've created additional layers above, make sure you've selected "
@@ -247,9 +233,8 @@ msgstr ""
 msgid "Placing a scene tile containing particles using the TileMap editor"
 msgstr ""
 
-#, fuzzy
 msgid "Painting modes and tools"
-msgstr "Variablen bearbeiten"
+msgstr "Zeichenmodi und Tools"
 
 msgid ""
 "Using the toolbar at the top of the TileMap editor, you can choose between "
@@ -283,9 +268,7 @@ msgid ""
 msgstr ""
 
 msgid ""
-"While in Selection mode, you can't place new tiles, but you can still erase "
-"tiles by right-clicking after making a selection. The whole selection will "
-"be erased, regardless of where you click in the selection."
+"You can remove the selected tiles from the TileMap by pressing :kbd:`Del`."
 msgstr ""
 
 msgid ""
@@ -301,9 +284,8 @@ msgid ""
 "`Escape` to cancel pasting."
 msgstr ""
 
-#, fuzzy
 msgid "Paint"
-msgstr "Kachel zeichnen"
+msgstr "Malen"
 
 msgid ""
 "The standard Paint mode allows you to place tiles by clicking or holding "
@@ -422,9 +404,8 @@ msgid ""
 "tool, you can place them in a repeating pattern within the filled area."
 msgstr ""
 
-#, fuzzy
 msgid "Using the Bucket Fill tool"
-msgstr "Nutzen des Oberflächen-Werkzeugs"
+msgstr "Verwenden des Bucket-Fill-Tools"
 
 #, fuzzy
 msgid "Picker"
@@ -458,9 +439,8 @@ msgid ""
 "clicking instead of left-clicking."
 msgstr ""
 
-#, fuzzy
 msgid "Painting randomly using scattering"
-msgstr "Ein Thema erstellen"
+msgstr "Malen nach dem Zufallsprinzip mit Streuung"
 
 msgid ""
 "While painting, you can optionally enable *randomization*. When enabled, a "
@@ -501,6 +481,8 @@ msgstr ""
 
 msgid "Saving and loading premade tile placements using patterns"
 msgstr ""
+"Speichern und Laden von vorgefertigten Kachelplatzierungen unter Verwendung "
+"von Mustern"
 
 msgid ""
 "While you can copy and paste tiles while in Select mode, you may wish to "
@@ -539,7 +521,7 @@ msgid ""
 msgstr ""
 
 msgid "Handling tile connections automatically using terrains"
-msgstr ""
+msgstr "Automatische Handhabung von Kachelverbindungen durch Terrains"
 
 msgid ""
 "To use terrains, the TileMap node must feature at least one terrain set and "
@@ -593,9 +575,8 @@ msgid ""
 "corresponding terrain ID will appear in the list of tiles to choose from."
 msgstr ""
 
-#, fuzzy
 msgid "Handling missing tiles"
-msgstr "Umgang mit Seitenverhältnissen"
+msgstr "Umgang mit fehlenden Fliesen"
 
 msgid ""
 "If you remove tiles in the TileSet that are referenced in a TileMap, the "

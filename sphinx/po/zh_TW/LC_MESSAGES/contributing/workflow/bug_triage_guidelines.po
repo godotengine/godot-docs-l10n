@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,7 +20,6 @@ msgstr ""
 msgid "Bug triage guidelines"
 msgstr "Bug 分級方針"
 
-#, fuzzy
 msgid ""
 "This page describes the typical workflow of the bug triage team aka bugsquad "
 "when handling issues and pull requests on Godot's `GitHub repository "
@@ -64,7 +63,6 @@ msgstr ""
 "用到負責人的功能。歡迎所有貢獻者參與，當遇到相關問題時在 Issue 上提出並與其他"
 "開發人員討論是解決問題最好的方法。。"
 
-#, fuzzy
 msgid "For the time being, we do not use the project dashboard feature either."
 msgstr "目前我們也還沒使用到 Project Dashboard (專案儀表板) 功能。"
 
@@ -92,7 +90,7 @@ msgstr ""
 msgid ""
 "*Breaks compat*: describes something that can only be fixed by breaking "
 "compatibility with existing projects."
-msgstr ""
+msgstr "*Breaks compat*：用於描述需要破壞已有專案相容性才能修復的內容。"
 
 msgid "*Bug*: describes something that is not working properly."
 msgstr "**Bug**: 代表某東西沒有正常運作。"
@@ -101,6 +99,7 @@ msgid ""
 "*Cherrypick*: describes something that can be backported to a stable branch "
 "after being merged in the ``master`` branch."
 msgstr ""
+"*Cherrypick*：用於描述合併入 ``master`` 分支後還可以移植回穩定分支的內容。"
 
 msgid ""
 "*Confirmed*: has been confirmed by at least one other contributor than the "
@@ -121,6 +120,7 @@ msgid ""
 "*Crash:* describes a bug that causes the engine to crash. This label is only "
 "used for \"hard\" crashes, not freezes."
 msgstr ""
+"*Crash：*用於描述導致引擎當機的問題。這個標籤僅適用於“硬”當機，卡死不算。"
 
 msgid ""
 "*Discussion*: the issue is not consensual and needs further discussion to "
@@ -149,27 +149,33 @@ msgid ""
 "Please use `godot-proposals <https://github.com/godotengine/godot-"
 "proposals>`__ instead."
 msgstr ""
+"*Feature proposal*：用於描述實作新功能的願望。請注意 Godot 主倉庫不再接受功能"
+"請求。請換用 `godot-proposals <https://github.com/godotengine/godot-"
+"proposals>`__。"
 
 msgid ""
 "*For PR meeting*: the issue needs to be discussed in a pull request meeting. "
 "These meetings are public and are held on the `Godot Contributors Chat "
 "<https://chat.godotengine.org/>`_."
 msgstr ""
+"*For PR meeting*：該問題需要在拉取請求會議中進行討論。會議是公開的，在 "
+"`Godot 貢獻者聊天 <https://chat.godotengine.org/>`_中舉行。"
 
-#, fuzzy
 msgid ""
 "*Good first issue*: the issue is *assumed* to be an easy one to fix, which "
 "makes it a great fit for new contributors who want to become familiar with "
 "the code base. It should be removed while an active PR is available, that "
 "resolves this issue."
 msgstr ""
-"**Junior job**: 初階任務。我們 **假設** 該 Issue 很容易修正，因此對於想熟悉原"
+"**Junior job**: 初階工作。我們 **假設** 該 Issue 很容易修正，因此對於想熟悉原"
 "始碼的初級貢獻者是再適合不過的工作了。"
 
 msgid ""
 "*High priority:* the issue is particularly important as it can prevent "
 "people from releasing their projects or cause data loss."
 msgstr ""
+"*High priority：*該問題非常重要，可能導致人們無法發行他們的專案或造成資料丟"
+"失。"
 
 msgid ""
 "*Needs testing*: the issue/pull request could not be completely tested and "
@@ -181,7 +187,6 @@ msgstr ""
 "可能表示該 Issue 需要在不同的硬體或軟體設定上測試，甚至是測試所需要的重現步驟"
 "不一定的情況。"
 
-#, fuzzy
 msgid ""
 "*Needs work*: the pull request needs additional work before it can be merged."
 msgstr "**Needs rebase**: 需要 Rebase。該 Issue 需要進行 Git Rebase 才能合併。"
@@ -191,15 +196,16 @@ msgid ""
 "also be used for pull requests that improve performance or add low-end-"
 "friendly options. Should not be coupled with *Usability*."
 msgstr ""
+"*Performance*: 直接影響引擎或編輯器性能的問題。也可用於改善性能或增加低端友好"
+"選項的拉取請求。不應與 *Usability* 可用性結合在一起。"
 
-#, fuzzy
 msgid "*Production*: Relates to the production team."
 msgstr "**GDScript**: 與 GDScript 有關。"
 
 msgid ""
 "*Regression*: the bug appeared after a stable release not exhibiting the bug "
 "was released."
-msgstr ""
+msgstr "*Regression*: 在沒有表現出該錯誤的穩定版本發行之後，該錯誤出現。"
 
 msgid ""
 "*Salvageable*: the pull request can't be merged due to design issues or "
@@ -208,6 +214,9 @@ msgid ""
 "do so, you need to open a new pull request based on the original pull "
 "request."
 msgstr ""
+"*Salvageable*: 由於設計問題或合併衝突，該拉動請求不能被合併，其作者也不再活"
+"躍。然而，它仍然可以被一個外部貢獻者拾取，以使其達到可合併狀態。為此，您需要"
+"基於原始拉取請求打開一個新的拉取請求。"
 
 msgid ""
 "*Tracker*: issue used to track other issues (like all issues related to the "
@@ -216,13 +225,11 @@ msgstr ""
 "**Tracker**: 追蹤用。用來跟進其他 Issue 的 Issue (如所有與外掛系統有關的 "
 "Issue)。"
 
-#, fuzzy
 msgid ""
 "*Usability*: issues that directly impact user usability. Should not be "
 "coupled with *Performance*."
 msgstr "**Usability**: 可用性。直接影響使用者可用性的 Issue。"
 
-#, fuzzy
 msgid ""
 "The categories are used for general triage of the issues. They can be "
 "combined in some way when relevant, e.g. an issue can be labelled "
@@ -244,13 +251,14 @@ msgid ""
 "*2D*: relates to 2D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *3D*."
 msgstr ""
+"*2D*: 涉及 2D 特定問題。應該與下面的某個標籤組合使用，而不應該與 *3D* 組合。"
 
 msgid ""
 "*3D*: relates to 3D-specific issues. Should be coupled with one of the "
 "labels below, and should not be coupled with *2D*."
 msgstr ""
+"*3D*: 涉及 3D 特定問題。應該與下面的某個標籤組合使用，而不應該與 *2D* 組合。"
 
-#, fuzzy
 msgid "*Animation*: relates to the Animation system, editors and importers."
 msgstr "**Editor**: 與編輯器有關的 Issue (主要為 UI)。"
 
@@ -268,9 +276,8 @@ msgstr ""
 "關。"
 
 msgid "*Codestyle*: relates to the programming style used within the codebase."
-msgstr ""
+msgstr "*Codestyle*：與程式碼庫所使用的程式設計風格有關。"
 
-#, fuzzy
 msgid ""
 "*Core*: anything related to the core engine. Specific topics are split off "
 "separately as they crop up."
@@ -278,48 +285,42 @@ msgstr ""
 "**Core**: 任何與核心引擎有關的 Issue。如果是足夠大的主題，可能會進一步被拆分"
 "成多個 Issue。"
 
-#, fuzzy
 msgid "*Dotnet*: relates to the C# / Dotnet bindings."
 msgstr "**Mono**: 與 C# / Mono 繫結有關。"
 
 msgid "*Editor*: relates to issues in the editor (mainly UI)."
 msgstr "**Editor**: 與編輯器有關的 Issue (主要為 UI)。"
 
-#, fuzzy
 msgid "*Export*: relates to the export system and templates."
 msgstr "**GDScript**: 與 GDScript 有關。"
 
 msgid "*GDExtension*: relates to the GDExtension system for native extensions."
-msgstr ""
+msgstr "*GDExtension*：與本機擴充的 GDExtension 系統相關。"
 
 msgid "*GDScript*: relates to GDScript."
 msgstr "**GDScript**: 與 GDScript 有關。"
 
-#, fuzzy
 msgid ""
 "*GUI*: relates to GUI (Control) nodes or to Nodes that compose user "
 "interfaces."
 msgstr "**Mono**: 與 C# / Mono 繫結有關。"
 
 msgid "*Import*: relates to the resource import system."
-msgstr ""
+msgstr "*Import*：與資源匯入系統有關。"
 
-#, fuzzy
 msgid "*Input*: relates to the input system."
 msgstr "**GDScript**: 與 GDScript 有關。"
 
 msgid "*Multiplayer*: relates to multiplayer (high-level networking) systems."
-msgstr ""
+msgstr "*多人遊戲*：涉及多人遊戲（進階網路）系統。"
 
 msgid ""
 "*Navigation*: relates to the navigation system (including A* and navmeshes)."
-msgstr ""
+msgstr "*Navigation*：與導覽系統（包括 A* 和導覽網格）有關。"
 
-#, fuzzy
 msgid "*Network*: relates to (lot-level) networking."
 msgstr "**Network**: 與網路有關。"
 
-#, fuzzy
 msgid "*Particles*: particles, particle systems and their editors."
 msgstr ":ref:`doc_particle_shader`"
 
@@ -329,25 +330,23 @@ msgstr "**Physics**: 與物理引擎有關 (2D/3D)。"
 msgid "*Plugin*: relates to problems encountered while writing plugins."
 msgstr "**Plugin**: 與撰寫外掛時遇到的問題有關。"
 
-#, fuzzy
 msgid "*Porting*: relates to some specific platforms or exporting projects."
 msgstr "**Porting**: 與某些特定平台有關。"
 
 msgid "*Rendering*: relates to the 2D and 3D rendering engines."
-msgstr "**Rendering**: 與 2D、3D 算繪引擎有關。"
+msgstr "**Rendering**: 與 2D、3D 渲染引擎有關。"
 
 msgid "*Shaders*: relates to the Godot shader language or visual shaders."
-msgstr ""
+msgstr "*Shaders*：與 Godot 著色器語言或視覺化著色器有關。"
 
-#, fuzzy
 msgid "*Tests*: relates to unit tests."
 msgstr "**Network**: 與網路有關。"
 
 msgid "*Thirdparty*: relates to third-party libraries used in Godot."
-msgstr ""
+msgstr "*Thirdparty*：與 Godot 所使用的協力廠商庫有關。"
 
 msgid "*XR*: relates to Augmented Reality or Virtual Reality."
-msgstr ""
+msgstr "*XR*：與增強現實（AR）或虛擬實境（VR）有關。"
 
 msgid ""
 "Issues would typically correspond to only one topic, though it's not "
@@ -362,7 +361,8 @@ msgstr ""
 msgid "**Platforms:**"
 msgstr "**平台：**"
 
-msgid "*Android*, *HTML5*, *iOS*, *Linux*, *macOS*, *Windows*, *UWP*"
+#, fuzzy
+msgid "*Android*, *iOS*, *Linux*, *macOS*, *Web*, *Windows*"
 msgstr ""
 "**Android**, **HTML5**, **iOS**, **Linux**, **macOS**, **Windows**, **UWP**"
 
@@ -376,11 +376,9 @@ msgstr ""
 "Label，則表示剛才這個假設不適用 (也就是如這個 Bug 是在 Android 或 Linux 上才"
 "會出現的，那麼就加上這兩個平台)。"
 
-#, fuzzy
 msgid "Documentation labels"
 msgstr "說明文件修改記錄"
 
-#, fuzzy
 msgid ""
 "In the `documentation repository <https://github.com/godotengine/godot-"
 "docs>`__, we use the following labels:"
@@ -391,89 +389,86 @@ msgstr ""
 msgid ""
 "*Bug*: Incorrect information in an existing page. Not to be used for "
 "*missing* information."
-msgstr ""
+msgstr "*Bug*：現有頁面中的錯誤資訊。請勿對*缺失*資訊使用。"
 
 msgid "*Dependencies*: describes pull requests that update a dependency file."
-msgstr ""
+msgstr "*依賴項*：描述更新相依性檔案的拉取請求。"
 
 msgid "*Enhancememnt*: new information to be added in an existing page."
-msgstr ""
+msgstr "*Enhancememnt*：為現有頁面加入新資訊。"
 
 msgid "*Python*: Pull requests that update Python code."
-msgstr ""
+msgstr "*Python*：更新 Python 程式碼的拉取請求。"
 
-#, fuzzy
 msgid "**Area:**"
 msgstr "**相機：**"
 
 msgid ""
 "*About*: Issues and PRs related to the About section of the documentation "
 "and other general articles."
-msgstr ""
+msgstr "*關於*：與檔案的「關於」部分和其他一般文章相關的問題和 PR。"
 
 msgid ""
 "*Class reference*: the issue is about the class reference, not a "
 "documentation page."
-msgstr ""
+msgstr "*Class reference*：類參考的問題，非文件頁面。"
 
 msgid ""
 "*Community*: Issues and PRs related to the Community section of the "
 "documentation."
-msgstr ""
+msgstr "*社區*：與檔案的社區部分相關的問題和 PR。"
 
 msgid ""
 "*Contributing*: Issues and PRs related to the Contributing/Development "
 "section of the documentation."
-msgstr ""
+msgstr "*貢獻*：與檔案的貢獻/開發部分相關的問題和 PR。"
 
 msgid ""
 "*Getting started*: Issues and PRs related to the Getting Started section of "
 "the documentation."
-msgstr ""
+msgstr "*入門*：與檔案的入門部分相關的問題和 PR。"
 
 msgid ""
 "*Manual*: Issues and PRs related to the Manual/Tutorials section of the "
 "documentation."
-msgstr ""
+msgstr "*手冊*：與檔案的手冊/教學部分相關的問題和 PR。"
 
-#, fuzzy
 msgid "**Content:**"
 msgstr "常數"
 
 msgid ""
 "*Images*: Issues and PRs involving outdated or incorrect images in articles."
-msgstr ""
+msgstr "*圖片*：涉及文章中過時或不正確圖像的問題和 PR。"
 
 msgid ""
 "*New page*: Issues and PRs related to creation of new documentation pages "
 "for new or undocumented features."
-msgstr ""
+msgstr "*新頁面*：與為新功能或未記錄功能建立新檔案頁面相關的問題和 PR 。"
 
 msgid "*Organization*: Issues and PRs related to reorganizing the content."
-msgstr ""
+msgstr "*Organization*：這個問題涉及移動頁面或者重新組織內容。"
 
 msgid ""
 "*Proofreading*: Issues and PRs related to proofreading the documentation."
-msgstr ""
+msgstr "*校對*：與校對檔案相關的問題和 PR。"
 
 msgid ""
 "*Redirect*: Issues and PRs involving moving content and adding a redirect "
 "rule on the backend."
-msgstr ""
+msgstr "*重定向*：涉及移動內容和在後端新增重定向規則的問題和 PR。"
 
 msgid ""
 "*Website*: Issues related to adding website features and fixing bugs, "
 "whether on the front or back-end,"
-msgstr ""
+msgstr "*網站*：與新增網站功能和修復錯誤相關的問題，無論是在前端或後端，"
 
-#, fuzzy
 msgid "**Topic:**"
 msgstr "**主題：**"
 
 msgid ""
 "The available topics describe the same content as the topics in the main "
 "repository."
-msgstr ""
+msgstr "可用主題描述與主儲存庫中的主題相同的內容。"
 
 msgid "Milestones"
 msgstr "Milestone (里程碑)"

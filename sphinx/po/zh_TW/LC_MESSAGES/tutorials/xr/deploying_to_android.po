@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,46 +17,46 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Deploying to Android"
 msgstr "正在為Android匯出"
 
 msgid "Setup"
-msgstr ""
+msgstr "設定"
 
 msgid ""
 "Most standalone headsets run on Android and OpenXR support is making its way "
 "to these platforms."
-msgstr ""
+msgstr "大多數獨立耳機都在 Android 上運作，而 OpenXR 支援正在進入這些平台。"
 
 msgid ""
 "Before following the OpenXR-specific instructions here, you'll need to first "
 "setup your system to export to Android in general, including:"
 msgstr ""
+"在遵循此處特定於 OpenXR 的說明之前，您需要先設定係統以匯出到 Android，包括："
 
 #, fuzzy
-msgid "Installing OpenJDK 11"
+msgid "Installing OpenJDK 17"
 msgstr "安裝 OpenJDK"
 
-#, fuzzy
 msgid "Installing Android Studio"
-msgstr "\\ Android Studio"
+msgstr "安裝 Android Studio"
 
-#, fuzzy
 msgid "Creating a debug.keystore"
 msgstr "建立 debug.keystore"
 
 msgid "Configuring the location of the Android SDK and debug.keystore in Godot"
-msgstr ""
+msgstr "配置Godot中Android SDK和debug.keystore的位置"
 
 msgid ""
 "See :ref:`doc_exporting_for_android` for the full details, and return here "
 "when you've finished these steps."
 msgstr ""
+"請參閱 doc_exporting_for_android 以了解完整詳細信息，並在完成這些步驟後返回此"
+"處。"
 
 #, fuzzy
-msgid "Custom Android build"
-msgstr "自定義模組"
+msgid "Gradle Android build"
+msgstr "自定義Android建置"
 
 msgid ""
 "Official support for the Android platform wasn't added to the OpenXR "
@@ -65,14 +65,20 @@ msgid ""
 "is that all vendors will adopt the official OpenXR loader, for now these "
 "loaders need to be added to your project."
 msgstr ""
+"OpenXR 規範並未新增對 Android 平台的官方支援，最初導致各個供應商建立自訂載入"
+"器以使 OpenXR 在其耳機上可用。雖然長期期望所有供應商都將採用官方 OpenXR 載入"
+"器，但目前需要將這些載入器新增到您的專案中。"
 
+#, fuzzy
 msgid ""
 "In order to include the vendor-specific OpenXR loader into your project, you "
-"will need to setup a custom Android build."
+"will need to setup a gradle Android build."
 msgstr ""
+"為了將供應商特定的 OpenXR 載入程式包含到您的專案中，您需要設定自訂 Android 版"
+"本。"
 
 msgid "Select **Install Android Build Template...** from the **Project** menu:"
-msgstr ""
+msgstr "從 **專案* 選單中選擇 **安裝 Android 建置範本...**："
 
 msgid ""
 "This will create a folder called **android** inside of your project that "
@@ -80,52 +86,76 @@ msgid ""
 "installation. Godot won't show this in the editor but you can find it with a "
 "file browser."
 msgstr ""
+"這將在您的專案中建立一個名為 **android** 的資料夾，其中包含 Android 上所需的"
+"所有運作時檔案。現在您可以自訂此安裝。 Godot 不會在編輯器中顯示它，但您可以使"
+"用檔案瀏覽器找到它。"
 
 #, fuzzy
 msgid ""
-"You can read more about custom builds here: :ref:`doc_android_custom_build`."
+"You can read more about gradle builds here: :ref:`doc_android_gradle_build`."
 msgstr "GDScript 亦支援 :ref:`doc_gdscript_printf` 。"
 
 #, fuzzy
-msgid "Installing the loader plugins"
-msgstr "Android"
-
-msgid ""
-"The Android plugin structure has been restructured in Godot 4.2, if you've "
-"previously installed the loader plugin you need to delete it from the "
-"`android/plugins` folder. The loader plugin available in the asset library "
-"is still the old one, it will be updated to the new one after 4.2 is "
-"released."
-msgstr ""
-
-msgid ""
-"The loaders can be downloaded from the asset library, search for OpenXR "
-"Loaders and install the plugin:"
-msgstr ""
-
-msgid "You will find the installed files inside the **addons** folder."
-msgstr ""
-
-msgid ""
-"Alternatively you can manually install the loader plugin by downloading the "
-"v2.x version of the plugin `from the release page here <https://github.com/"
-"GodotVR/godot_openxr_loaders/releases>`__."
-msgstr ""
-
-msgid ""
-"You will need to copy the `assets/addons/godotopenxr` folder from the zip "
-"file into your projects `assets/addons` folder."
-msgstr ""
+msgid "Installing the vendors plugin"
+msgstr "安裝載入器外掛"
 
 #, fuzzy
 msgid ""
-"You can find the main repository of the loader plugin `here <https://github."
-"com/GodotVR/godot_openxr_loaders>`__."
+"The Android plugin structure has been restructured in Godot 4.2, and the "
+"loader plugin was renamed to vendors plugin as it now includes more than "
+"just loaders. If you've previously installed the loader plugin you need to "
+"delete it from the `android/plugins` folder. The loader plugin available in "
+"the asset library is still the old one, it will be updated to the new vendor "
+"plugin after 4.2 is released."
+msgstr ""
+"Android 插件結構在 Godot 4.2 中進行了重組，如果您之前安裝了 loader 插件，則需"
+"要將其從 `android/plugins` 資料夾中刪除。資源庫中的loader插件還是舊的，4.2發"
+"布後會更新為新的。"
+
+#, fuzzy
+msgid ""
+"The vendors plugin can be downloaded from the asset library, search for "
+"OpenXR and install the plugin:"
+msgstr "載入器可以從資源庫下載，搜尋 OpenXR Loaders 並安裝插件："
+
+msgid "You will find the installed files inside the **addons** folder."
+msgstr "這會將所需檔案下載到該資料夾中."
+
+#, fuzzy
+msgid ""
+"Alternatively you can manually install the vendors plugin by downloading the "
+"v2.x version of the plugin `from the release page here <https://github.com/"
+"GodotVR/godot_openxr_vendors/releases>`__."
+msgstr ""
+"或者，您可以從此處的發布頁面下載 v2.x 版本的插件來手動安裝載入器外掛程式 "
+"<https://github.com/GodotVR/godot_openxr_loaders/releases>`__。"
+
+#, fuzzy
+msgid ""
+"You will need to copy the `assets/addons/godotopenxrvendors` folder from the "
+"zip file into your projects `assets/addons` folder."
+msgstr ""
+"您需要將 zip 檔案中的“assets/addons/godotopenxr”資料夾複製到專案的“assets/"
+"addons”資料夾中。"
+
+#, fuzzy
+msgid ""
+"You can find the main repository of the vendors plugin `here <https://github."
+"com/GodotVR/godot_openxr_vendors>`__."
 msgstr ""
 "在這份文件之外，你可能也會想看看 `Godot 的 demo 專案 <https://github.com/"
 "godotengine/godot-demo-projects>`_。"
 
 #, fuzzy
+msgid "Enabling the vendors plugin"
+msgstr "啟用外掛程式"
+
+msgid ""
+"The vendors plugin needs to be enabled before the export settings become "
+"accessible. Open **Project** and select **Project Settings...**. Go to the "
+"**Plugins** tab. Enable the **GodotOpenXRVendors** plugin."
+msgstr ""
+
 msgid "Creating the export presets"
 msgstr "建立 UWP 匯出樣板"
 
@@ -133,6 +163,7 @@ msgid ""
 "You will need to setup a separate export preset for each device, as each "
 "device will need its own loader included."
 msgstr ""
+"您需要為每個裝置設定單獨的匯出預設，因為每個裝置都需要包含自己的載入程式。"
 
 msgid ""
 "Open **Project** and select **Export..**. Click on **Add..** and select "
@@ -141,14 +172,17 @@ msgid ""
 "you want to use one-click deploy (described below), ensure that **Runnable** "
 "is enabled."
 msgstr ""
+"開啟**專案**並選擇**匯出..**。點擊“**新增..**”並選擇“**Android**”。接下來更改"
+"您要設定的裝置的匯出預設的名稱，例如 **Meta Quest**。並啟用**使用 Gradle "
+"Build**。如果您想使用一鍵部署（如下所述），請確保啟用 **Runnable**。"
 
 msgid ""
 "If the loader plugins were installed correctly you should find entries for "
 "the different headsets, select the entry for meta:"
-msgstr ""
+msgstr "如果加載器插件安裝正確，您應該找到不同耳機的條目，選擇元條目："
 
 msgid "Also change the **XR Mode** to **OpenXR**."
-msgstr ""
+msgstr "也將 **XR 模式** 變更為 **OpenXR**。"
 
 msgid ""
 "Scroll to the bottom of the list and you'll find additional XR feature "
@@ -157,20 +191,25 @@ msgid ""
 "Quest and you will need to select the appropriate settings if you wish to "
 "use these features."
 msgstr ""
+"捲動到列表底部，您會發現其他 XR 功能部分，目前僅**元 XR 功能**可用。此處的手"
+"部追蹤和直通設定目前僅適用於 Meta Quest，如果您想使用這些功能，則需要選擇適當"
+"的設定。"
 
-#, fuzzy
 msgid "Now you can repeat the same process for the other devices."
 msgstr "灰色的節點無法重新命名。代表這些節點有母場景"
 
 msgid ""
 "There are separate loaders for the Meta Quest, Pico and Lynx R1 headsets."
-msgstr ""
+msgstr "Meta Quest、Pico 和 Lynx R1 耳機有單獨的載入程式。"
 
+#, fuzzy
 msgid ""
-"The fourth option is the official Khronos (KHR) loader, in due time all "
-"headsets should work with this loader. At the moment this loader has been "
-"tested with the Magic Leap 2 and standalone HTC headsets."
+"The fourth option is the official Khronos loader, in due time all headsets "
+"should work with this loader. At the moment this loader has been tested with "
+"the Magic Leap 2 and standalone HTC headsets."
 msgstr ""
+"第四個選項是官方 Khronos (KHR) 加載程式，到時候所有耳機都應該與此加載程式配合"
+"使用。目前，該裝載機已通過 Magic Leap 2 和獨立 HTC 耳機進行了測試。"
 
 msgid ""
 "While the Mobile Vulkan renderer has many optimizations targeted at mobile "
@@ -178,26 +217,32 @@ msgid ""
 "the OpenGL renderer for the time being when targeting Android based XR "
 "devices."
 msgstr ""
+"雖然 Mobile Vulkan 渲染器針對行動裝置進行了許多最佳化，但我們仍在解決問題。當"
+"針對基於 Android 的 XR 裝置時，強烈建議暫時使用 OpenGL 渲染器。"
 
 msgid ""
 "Note that we are awaiting driver updates on various devices before Vulkan "
 "support will work on these."
 msgstr ""
+"請注意，我們正在等待各種裝置上的驅動程式更新，然後 Vulkan 支援才能在這些裝置"
+"上運作。"
 
 msgid "Running on your device from the Godot editor"
-msgstr ""
+msgstr "通過 Godot 編輯器在裝置上運作"
 
 msgid ""
 "If you've setup your export settings as described above, and your headset is "
 "connected to your computer and correctly recognized, you can launch it "
 "directly from the Godot editor using :ref:`doc_one-click_deploy`:"
-msgstr ""
+msgstr "使用 :ref:`doc_one-click_deploy`直接從 Godot 編輯器啟動它："
 
 msgid ""
 "For some devices on some platforms, you may need to perform some extra steps "
 "in order for your device to be recognized correctly, so be sure to check the "
 "developer documentation from your headset vendor."
 msgstr ""
+"對於某些平台上的某些裝置，您可能需要執行一些額外的步驟才能正確識別您的裝置，"
+"因此請務必檢查耳機供應商的開發人員檔案。"
 
 msgid ""
 "For example, with the Meta Quest 2, you need to enable developer mode on the "
@@ -206,11 +251,16 @@ msgid ""
 "developer.oculus.com/documentation/native/android/mobile-device-setup/>`_ "
 "for more details."
 msgstr ""
+"只有開啟開發者模式，才能夠向 Meta Quest 部署遊戲。這個模式可以使用手機上安裝"
+"的 Oculus 支援應用開啟。請`按照 Oculus 開發者網站上的說明操作 <https://"
+"developer.oculus.com/documentation/native/android/mobile-device-setup/>`__。"
 
 msgid ""
 "If you're having any issues with one-click deploy, check the :ref:"
 "`Troubleshooting section <doc_one-click_deploy_troubleshooting>`."
 msgstr ""
+"如果您對一鍵部署有任何問題，請檢查:ref:`故障排除部分 <doc_one-"
+"click_deploy_troubleshooting>`。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -193,7 +193,7 @@ msgstr ""
 "Ausführung von Code eigentlich ungewünscht ist, z.B. in leeren Funktionen."
 
 msgid "return"
-msgstr "return"
+msgstr "zurückgeben"
 
 msgid "Returns a value from a function."
 msgstr "Gibt einen Wert aus einer Funktion zurück."
@@ -202,14 +202,15 @@ msgid "class"
 msgstr "Klasse"
 
 #, fuzzy
-msgid "Defines a class."
-msgstr "Definiert eine innere Klasse."
+msgid "Defines an inner class. See `Inner classes`_."
+msgstr "Eine lokale Klasse innerhalb einer anderen Klassendatei."
 
 msgid "class_name"
 msgstr "class_name"
 
 msgid ""
-"Defines the script as a globally accessible class with the specified name."
+"Defines the script as a globally accessible class with the specified name. "
+"See `Registering named classes`_."
 msgstr ""
 
 msgid "extends"
@@ -234,7 +235,7 @@ msgid "in"
 msgstr "Finde"
 
 msgid ""
-"Tests whether a value is within a string, list, range, dictionary, or node. "
+"Tests whether a value is within a string, array, range, dictionary, or node. "
 "When used with ``for``, it iterates through them instead of testing."
 msgstr ""
 
@@ -377,9 +378,8 @@ msgstr "**Operator**"
 msgid "**Description**"
 msgstr "**Beschreibung**"
 
-#, fuzzy
 msgid "``(`` ``)``"
-msgstr "``<<`` ``>>``"
+msgstr "``(`` ``)``"
 
 #, fuzzy
 msgid "Grouping (highest priority)"
@@ -432,7 +432,7 @@ msgid "``x ** y``"
 msgstr ""
 
 msgid "Power"
-msgstr ""
+msgstr "Energie"
 
 msgid ""
 "Multiplies ``x`` by itself ``y`` times, similar to calling :ref:`pow() "
@@ -457,9 +457,8 @@ msgstr ""
 msgid "``-x``"
 msgstr "``-x``"
 
-#, fuzzy
 msgid "Identity / Negation"
-msgstr "Einrückung"
+msgstr "identische Abbildung / Negation"
 
 msgid "``x * y``"
 msgstr ""
@@ -690,11 +689,24 @@ msgstr ""
 msgid "Literals"
 msgstr "Literale"
 
-msgid "**Literal**"
-msgstr "**Literal**"
+#, fuzzy
+msgid "**Example(s)**"
+msgstr "**Beispiel**"
 
-msgid "**Type**"
-msgstr "**Typ**"
+msgid "``null``"
+msgstr "``null``"
+
+#, fuzzy
+msgid "Null value"
+msgstr "Aufzählungswert"
+
+#, fuzzy
+msgid "``false``, ``true``"
+msgstr "``-e``, ``--editor``"
+
+#, fuzzy
+msgid "Boolean values"
+msgstr "Aufzählungswert"
 
 msgid "``45``"
 msgstr "``45``"
@@ -724,29 +736,52 @@ msgstr "Fließkommazahl (reell)"
 msgid "``\"Hello\"``, ``'Hi'``"
 msgstr "``\"Hallo\"``, ``\"Hey\"``"
 
-msgid "Strings"
-msgstr "Zeichenketten"
+#, fuzzy
+msgid "Regular strings"
+msgstr "Spiegelnde Beleuchtung"
 
-msgid "``\"\"\"Hello\"\"\"``"
-msgstr "``\"\"\"Hallo\"\"\"``"
+#, fuzzy
+msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
+msgstr "``\"Hallo\"``, ``\"Hey\"``"
 
-msgid "Multiline string"
-msgstr "Mehrzeilige Zeichenkette"
+msgid "Triple-quoted regular strings"
+msgstr ""
+
+#, fuzzy
+msgid "``r\"Hello\"``, ``r'Hi'``"
+msgstr "``\"Hallo\"``, ``\"Hey\"``"
+
+#, fuzzy
+msgid "Raw strings"
+msgstr "Zeichenkette"
+
+#, fuzzy
+msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
+msgstr "``\"Hallo\"``, ``\"Hey\"``"
+
+#, fuzzy
+msgid "Triple-quoted raw strings"
+msgstr "GDScript Zeichenketten formatieren"
 
 #, fuzzy
 msgid "``&\"name\"``"
 msgstr "``name``"
 
-#, fuzzy
 msgid ":ref:`StringName <class_StringName>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`StringName <class_StringName>`"
 
-#, fuzzy
 msgid "``^\"Node/Label\"``"
-msgstr "``@\"Node/Label\"``"
+msgstr "``^\"Node/Label\"``"
 
 msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"There are also two constructs that look like literals, but actually are not:"
+msgstr ""
+
+msgid "**Example**"
+msgstr "**Beispiel**"
 
 msgid "``$NodePath``"
 msgstr "``$NodeWeg``"
@@ -754,9 +789,8 @@ msgstr "``$NodeWeg``"
 msgid "Shorthand for ``get_node(\"NodePath\")``"
 msgstr "Kurzform für ``get_node(\"NodePath\")``"
 
-#, fuzzy
 msgid "``%UniqueNode``"
-msgstr "``node``"
+msgstr "``%UniqueNode``"
 
 #, fuzzy
 msgid "Shorthand for ``get_node(\"%UniqueNode\")``"
@@ -770,9 +804,134 @@ msgstr ""
 "Lesbarkeit zu verbessern. Die folgenden Möglichkeiten zum Schreiben von "
 "Zahlen sind alle gültig:"
 
+msgid "**Regular string literals** can contain the following escape sequences:"
+msgstr ""
+
+msgid "**Escape sequence**"
+msgstr "**Escape Sequenz**"
+
+msgid "**Expands to**"
+msgstr "**wird zu**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "Zeilenumbruch (Line Feed)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "Horizontaler Tabulator"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "Wagenrücklauf (Carriage Return)"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "Alarm (Piepton/Klingel)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "Rücktaste"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr "neue Seite (Page Break)"
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "Vertikaler Tabulator"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "Doppelte Anführungszeichen"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "Einfaches Anführungszeichen"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "Backslash (Rückstrich oder umgekehrter Schrägstrich)"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
 #, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr ""
+"Unicode Codepoint ``XXXX`` (Hexadezimal, Case-Insensitive = Groß/"
+"Kleinschreibung ist egal)"
+
+msgid "``\\UXXXXXX``"
+msgstr "``\\UXXXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr ""
+"Unicode Codepoint ``XXXX`` (Hexadezimal, Case-Insensitive = Groß/"
+"Kleinschreibung ist egal)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above "
+"``0xFFFF``:"
+msgstr ""
+"Es gibt zwei Möglichkeiten, ein Projekt für einen Server zu exportieren:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+msgid ""
+"A string enclosed in quotes of one type (for example ``\"``) can contain "
+"quotes of another type (for example ``'``) without escaping. Triple-quoted "
+"strings allow you to avoid escaping up to two consecutive quotes of the same "
+"type (unless they are adjacent to the string edges)."
+msgstr ""
+
+msgid ""
+"**Raw string literals** always encode the string as it appears in the source "
+"code. This is especially useful for regular expressions. Raw strings do not "
+"process escape sequences, but you can \"escape\" a quote or backslash (they "
+"replace themselves)."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
+msgstr "GDScript unterstützt auch :ref:`doc_gdscript_printf`."
+
 msgid "Annotations"
-msgstr "Einrückung"
+msgstr "Anmerkungen"
 
 msgid ""
 "There are some special tokens in GDScript that act like keywords but are "
@@ -861,6 +1020,82 @@ msgstr ""
 "Alles ab einem ``#`` bis zum Ende der Zeile wird ignoriert und als Kommentar "
 "aufgefasst."
 
+msgid ""
+"In the Godot script editor, special keywords are highlighted within comments "
+"to bring the user's attention to specific comments:"
+msgstr ""
+
+msgid ""
+"**Critical** *(appears in red)*: ``ALERT``, ``ATTENTION``, ``CAUTION``, "
+"``CRITICAL``, ``DANGER``, ``SECURITY``"
+msgstr ""
+
+msgid ""
+"**Warning** *(appears in yellow)*: ``BUG``, ``DEPRECATED``, ``FIXME``, "
+"``HACK``, ``TASK``, ``TBD``, ``TODO``, ``WARNING``"
+msgstr ""
+
+msgid ""
+"**Notice** *(appears in green)*: ``INFO``, ``NOTE``, ``NOTICE``, ``TEST``, "
+"``TESTING``"
+msgstr ""
+
+msgid ""
+"These keywords are case-sensitive, so they must be written in uppercase for "
+"them to be recognized:"
+msgstr ""
+
+msgid ""
+"The list of highlighted keywords and their colors can be changed in the "
+"**Text Editor > Theme > Comment Markers** section of the Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Code regions"
+msgstr "Überlegungen"
+
+msgid ""
+"Code regions are special types of comments that the script editor "
+"understands as *foldable regions*. This means that after writing code region "
+"comments, you can collapse and expand the region by clicking the arrow that "
+"appears at the left of the comment. This arrow appears within a purple "
+"square to be distinguishable from standard code folding."
+msgstr ""
+
+#, fuzzy
+msgid "The syntax is as follows:"
+msgstr ""
+"Dieser Text lautet wie folgt (eine sinngemäße Übersetzung finden Sie `hier "
+"<https://de.wikipedia.org/wiki/MIT-Lizenz>`_):"
+
+msgid ""
+"To create a code region quickly, select several lines in the script editor, "
+"right-click the selection then choose **Create Code Region**. The region "
+"description will be selected automatically for editing."
+msgstr ""
+
+msgid "It is possible to nest code regions within other code regions."
+msgstr ""
+
+#, fuzzy
+msgid "Here's a concrete usage example of code regions:"
+msgstr "Hier sind einige Beispiele eigener Effekte:"
+
+msgid ""
+"This can be useful to organize large chunks of code into easier to "
+"understand sections. However, remember that external editors generally don't "
+"support this feature, so make sure your code is easy to follow even when not "
+"relying on folding code regions."
+msgstr ""
+
+msgid ""
+"Individual functions and indented sections (such as ``if`` and ``for``) can "
+"*always* be collapsed in the script editor. This means you should avoid "
+"using a code region to contain a single function or indented section, as it "
+"won't bring much of a benefit. Code regions work best when they're used to "
+"group multiple elements together."
+msgstr ""
+
 #, fuzzy
 msgid "Line continuation"
 msgstr "Konfiguration"
@@ -877,7 +1112,6 @@ msgstr ""
 msgid "Built-in types"
 msgstr "Eingebaute Typen"
 
-#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
@@ -886,12 +1120,14 @@ msgid ""
 "so they are shared. All arrays, ``Dictionary``, and some objects (``Node``, "
 "``Resource``) have a ``duplicate()`` method that allows you to make a copy."
 msgstr ""
-"Eingebaute Typen werden stapelweise zugewiesen. Sie werden als Werte "
-"übergeben. Dies bedeutet, dass bei jeder Zuweisung oder bei der Übergabe als "
-"Argumente an Funktionen eine Kopie erstellt wird. Die einzigen Ausnahmen "
-"sind ``Array``\\ s und ``Dictionaries``, die als Referenz übergeben werden, "
-"damit sie gemeinsam genutzt werden. (zusammengesetzte Arrays wie "
-"\"PoolByteArray\" werden weiterhin als Werte übergeben.)"
+"Eingebaute Typen werden auf dem Stapel (Stack) abgelegt. Sie werden als "
+"Werte übergeben. Das bedeutet, dass bei jeder Zuweisung oder bei der "
+"Übergabe als Argument an Funktionen eine Kopie erstellt wird. Die Ausnahmen "
+"sind ``Object``, ``Array``, ``Dictionary`` und gepackte Arrays (wie "
+"``PackedByteArray``), die per Referenz übergeben werden, so dass sie "
+"gemeinsam genutzt werden können. Alle Arrays, ``Dictionary``, und einige "
+"Objekte (``Node``, ``Resource``) haben eine ``duplicate()`` Methode, die es "
+"erlaubt, eine Kopie zu erstellen."
 
 msgid "Basic built-in types"
 msgstr "Einfache eingebaute Typen"
@@ -951,119 +1187,10 @@ msgstr ":ref:`String <class_String>`"
 #, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
-"Unicode>`_. String literals can contain the following escape sequences:"
+"Unicode>`_."
 msgstr ""
 "Eine Folge von Zeichen im `Unicode-Format <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Zeichenketten können die folgenden Escape-Sequenzen enthalten:"
-
-msgid "**Escape sequence**"
-msgstr "**Escape Sequenz**"
-
-msgid "**Expands to**"
-msgstr "**wird zu**"
-
-msgid "``\\n``"
-msgstr "``\\n``"
-
-msgid "Newline (line feed)"
-msgstr "Zeilenumbruch (Line Feed)"
-
-msgid "``\\t``"
-msgstr "``\\t``"
-
-msgid "Horizontal tab character"
-msgstr "Horizontaler Tabulator"
-
-msgid "``\\r``"
-msgstr "``\\r``"
-
-msgid "Carriage return"
-msgstr "Wagenrücklauf (Carriage Return)"
-
-msgid "``\\a``"
-msgstr "``\\a``"
-
-msgid "Alert (beep/bell)"
-msgstr "Alarm (Piepton/Klingel)"
-
-msgid "``\\b``"
-msgstr "``\\b``"
-
-msgid "Backspace"
-msgstr "Rücktaste"
-
-msgid "``\\f``"
-msgstr "``\\f``"
-
-msgid "Formfeed page break"
-msgstr "neue Seite (Page Break)"
-
-msgid "``\\v``"
-msgstr "``\\v``"
-
-msgid "Vertical tab character"
-msgstr "Vertikaler Tabulator"
-
-msgid "``\\\"``"
-msgstr "``\\\"``"
-
-msgid "Double quote"
-msgstr "Doppelte Anführungszeichen"
-
-msgid "``\\'``"
-msgstr "``\\'``"
-
-msgid "Single quote"
-msgstr "Einfaches Anführungszeichen"
-
-msgid "``\\\\``"
-msgstr "``\\\\``"
-
-msgid "Backslash"
-msgstr "Backslash (Rückstrich oder umgekehrter Schrägstrich)"
-
-msgid "``\\uXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr ""
-"Unicode Codepoint ``XXXX`` (Hexadezimal, Case-Insensitive = Groß/"
-"Kleinschreibung ist egal)"
-
-#, fuzzy
-msgid "``\\UXXXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
-msgstr ""
-"Unicode Codepoint ``XXXX`` (Hexadezimal, Case-Insensitive = Groß/"
-"Kleinschreibung ist egal)"
-
-#, fuzzy
-msgid ""
-"There are two ways to represent an escaped Unicode character above 0xFFFF:"
-msgstr ""
-"Es gibt zwei Möglichkeiten, ein Projekt für einen Server zu exportieren:"
-
-msgid ""
-"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
-"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
-msgstr ""
-
-msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
-msgstr ""
-
-msgid ""
-"Also, using ``\\`` followed by a newline inside a string will allow you to "
-"continue it in the next line, without inserting a newline character in the "
-"string itself."
-msgstr ""
-
-#, fuzzy
-msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
-msgstr "GDScript unterstützt auch :ref:`doc_gdscript_printf`."
 
 msgid ""
 "An immutable string that allows only one instance of each name. They are "
@@ -1091,9 +1218,8 @@ msgstr ""
 "2D Vektor-Typ bestehend aus ``x`` und ``y``. Zugriff kann auch als Feld "
 "erfolgen."
 
-#, fuzzy
 msgid ":ref:`Vector2i <class_Vector2i>`"
-msgstr ":ref:`Vector2 <class_Vector2>`"
+msgstr ":ref:`Vector2i <class_Vector2i>`"
 
 msgid ""
 "Same as a Vector2 but the components are integers. Useful for representing "
@@ -1120,9 +1246,8 @@ msgstr ""
 "3D Vektor Typ besitzt ``x``, ``y`` und ``z`` Felder. Diese können auch als "
 "Array aufgerufen werden."
 
-#, fuzzy
 msgid ":ref:`Vector3i <class_Vector3i>`"
-msgstr ":ref:`Vector3 <class_Vector3>`"
+msgstr ":ref:`Vector3i <class_Vector3i>`"
 
 msgid ""
 "Same as Vector3 but the components are integers. Can be use for indexing "
@@ -1145,9 +1270,8 @@ msgstr ""
 "3D Ebenentyp in normalisierter Form, welcher ein ``normal`` Vektorfeld und "
 "eine skalare Distanz ``d`` besitzt."
 
-#, fuzzy
 msgid ":ref:`Quaternion <class_Quaternion>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`Quaternion <class_Quaternion>`"
 
 msgid ""
 "Quaternion is a datatype used for representing a 3D rotation. It's useful "
@@ -1180,9 +1304,8 @@ msgstr ""
 "besitzt drei Vektorfelder (``x``, ``y`` und ``z``) und kann auch als Array "
 "von 3D Vektoren aufgerufen werden."
 
-#, fuzzy
 msgid ":ref:`Transform3D <class_Transform3D>`"
-msgstr ":ref:`Transform2D <class_Transform2D>`"
+msgstr ":ref:`Transform3D <class_Transform3D>`"
 
 msgid ""
 "3D Transform contains a Basis field ``basis`` and a Vector3 field ``origin``."
@@ -1200,9 +1323,9 @@ msgid ""
 "Color data type contains ``r``, ``g``, ``b``, and ``a`` fields. It can also "
 "be accessed as ``h``, ``s``, and ``v`` for hue/saturation/value."
 msgstr ""
-"Der Color Datentyp besitzt jeweils ein ``r``-, ``g``-, ``b``- und ``a``-"
-"Feld. Der Zugriff kann auch über ``h``, ``s`` und ``v`` erfolgen, was für "
-"hue (Farbwert)/saturation (Sättigung)/value (Dunkelstufe) steht."
+"Der Color Datentyp besitzt jeweils ein ``r``, ``g``, ``b`` und ``a`` Feld. "
+"Der Zugriff kann auch über ``h``, ``s`` und ``v`` erfolgen, was für hue "
+"(Farbwert)/saturation (Sättigung)/value (Dunkelstufe) steht."
 
 msgid ":ref:`RID <class_RID>`"
 msgstr ":ref:`RID <class_RID>`"
@@ -1366,11 +1489,12 @@ msgstr ""
 "Zugehöriger Container, der durch eindeutige Schlüssel referenzierte Werte "
 "enthält."
 
+#, fuzzy
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
 "`` and doesn't use quotes to mark string keys (making for slightly less to "
 "write). However, keys written in this form can't start with a digit (like "
-"any GDScript identifier)."
+"any GDScript identifier), and must be string literals."
 msgstr ""
 "Eine Tabellensyntax im Lua-Stil wird ebenfalls unterstützt. Der Lua-Stil "
 "verwendet ``=`` anstelle von ``:`` und benutzt keine Anführungszeichen, um "
@@ -1399,9 +1523,8 @@ msgstr ""
 "Methoden :ref:`Object.get() <class_Object_method_get>` und :ref:`Object."
 "set() <class_Object_method_set>`."
 
-#, fuzzy
 msgid ":ref:`Signal <class_Signal>`"
-msgstr ":ref:`int <class_int>`"
+msgstr ":ref:`Signal <class_Signal>`"
 
 msgid ""
 "A signal is a message that can be emitted by an object to those who want to "
@@ -1413,9 +1536,8 @@ msgid ""
 "button_up``."
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`Callable <class_Callable>`"
-msgstr ":ref:`Plane <class_Plane>`"
+msgstr ":ref:`Callable <class_Callable>`"
 
 msgid ""
 "Contains an object and a function, which is useful for passing functions as "
@@ -1757,7 +1879,7 @@ msgid ""
 "using the arrow token (``->``)::"
 msgstr ""
 "Der Rückgabetyp der Funktion kann nach der Argumentliste mit dem Pfeiltoken "
-"(`` -> ``) angegeben werden:"
+"(``->``) angegeben werden:"
 
 msgid ""
 "Functions that have a return type **must** return a proper value. Setting "
@@ -1855,7 +1977,7 @@ msgid ""
 "optional."
 msgstr ""
 "Ausdrücke sind Standard und können Zuweisungen sein, Funktionsaufrufe, "
-"Flußkontrollstrukturen, usw. (siehe unten). ``;``als Trennzeichen zwischen "
+"Flußkontrollstrukturen, usw. (siehe unten). ``;`` als Trennzeichen zwischen "
 "Ausdrücken ist optional."
 
 #, fuzzy
@@ -1971,9 +2093,6 @@ msgstr ""
 "anderen Sprachen bekannt ist, aber bietet darüberhinaus zusätzliche "
 "Funktionalität."
 
-msgid "Basic syntax::"
-msgstr "Grundlegende Syntax:"
-
 msgid ""
 "``match`` is more type strict than the ``==`` operator. For example ``1`` "
 "will **not** match ``1.0``. The only exception is ``String`` vs "
@@ -1981,7 +2100,12 @@ msgid ""
 "equal to the StringName ``&\"hello\"``."
 msgstr ""
 
-msgid "**Crash-course for people who are familiar with switch statements**:"
+#, fuzzy
+msgid "Basic syntax"
+msgstr "Grundlegende Syntax:"
+
+#, fuzzy
+msgid "Crash-course for people who are familiar with switch statements"
 msgstr "**Crashkurs für jene, die mit switch-Anweisungen vertraut sind**:"
 
 msgid "Replace ``switch`` with ``match``."
@@ -1997,7 +2121,8 @@ msgstr "Entferne ``case``."
 msgid "Change ``default`` to a single underscore."
 msgstr "Ändere ``default`` zu einem einzelnen Unterstrich."
 
-msgid "**Control flow**:"
+#, fuzzy
+msgid "Control flow"
 msgstr "**Kontrollfluss**:"
 
 #, fuzzy
@@ -2017,20 +2142,25 @@ msgid ""
 "in Godot 4.0."
 msgstr ""
 
-msgid "There are 6 pattern types:"
-msgstr "Es gibt 6 Arten von Mustern:"
+#, fuzzy
+msgid "The following pattern types are available:"
+msgstr "Folgende Methoden sind verfügbar und dokumentiert:"
 
-msgid "Constant pattern"
-msgstr "Konstanten-Muster"
+#, fuzzy
+msgid "Literal pattern"
+msgstr "Array-Muster"
 
-msgid "Constant primitives, like numbers and strings::"
-msgstr "Konstanten einfachen Typs, wie Zahlen und Zeichenketten:"
+msgid "Matches a `literal <Literals_>`_::"
+msgstr ""
 
-msgid "Variable pattern"
-msgstr "Variablen-Muster"
+#, fuzzy
+msgid "Expression pattern"
+msgstr "Expression-Node"
 
-msgid "Matches the contents of a variable/enum::"
-msgstr "Vergleicht mit dem Inhalt einer Variable oder Aufzählung:"
+msgid ""
+"Matches a constant expression, an identifier, or an attribute access (``A."
+"B``)::"
+msgstr ""
 
 msgid "Wildcard pattern"
 msgstr "Platzhalter-Muster"
@@ -2130,6 +2260,36 @@ msgid ""
 msgstr ""
 "Sie können auch mehrere durch Komma getrennte Muster angeben. Diese Muster "
 "dürfen keine Bindungen enthalten."
+
+#, fuzzy
+msgid "Pattern guards"
+msgstr "Ostmari"
+
+msgid ""
+"Only one branch can be executed per ``match``. Once a branch is chosen, the "
+"rest are not checked. If you want to use the same pattern for multiple "
+"branches or to prevent choosing a branch with too general pattern, you can "
+"specify a guard expression after the list of patterns with the ``when`` "
+"keyword::"
+msgstr ""
+
+msgid ""
+"If there is no matching pattern for the current branch, the guard expression "
+"is **not** evaluated and the patterns of the next branch are checked."
+msgstr ""
+
+msgid "If a matching pattern is found, the guard expression is evaluated."
+msgstr ""
+
+msgid ""
+"If it's true, then the body of the branch is executed and ``match`` ends."
+msgstr ""
+
+#, fuzzy
+msgid "If it's false, then the patterns of the next branch are checked."
+msgstr ""
+"Falls kein Wert angegeben wird, wird nur die Existenz des Schlüssels "
+"überprüft."
 
 msgid "Classes"
 msgstr "Klassen"
@@ -2404,32 +2564,66 @@ msgid "Example::"
 msgstr "Beispiel:"
 
 msgid ""
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called (except as noted below), even when accessed "
+"inside the same class (with or without prefixing with ``self.``). This makes "
+"the behavior consistent. If you need direct access to the value, use another "
+"variable for direct access and make the property code use that name."
+msgstr ""
+
+#, fuzzy
+msgid "Alternative syntax"
+msgstr "Alternativer Ansatz"
+
+msgid ""
+"Also there is another notation to use existing class functions if you want "
+"to split the code from the variable declaration or you need to reuse the "
+"code across multiple properties (but you can't distinguish which property "
+"the setter/getter is being called for)::"
+msgstr ""
+
+#, fuzzy
+msgid "This can also be done in the same line::"
+msgstr "Dies kann auch in der gleichen Zeile geschehen."
+
+msgid ""
+"The setter and getter must use the same notation, mixing styles for the same "
+"variable is not allowed."
+msgstr ""
+
+msgid ""
+"You cannot specify type hints for *inline* setters and getters. This is done "
+"on purpose to reduce the boilerplate. If the variable is typed, then the "
+"setter's argument is automatically of the same type, and the getter's return "
+"value must match it. Separated setter/getter functions can have type hints, "
+"and the type must match the variable's type or be a wider type."
+msgstr ""
+
+msgid "When setter/getter is not called"
+msgstr ""
+
+msgid ""
+"When a variable is initialized, the value of the initializer will be written "
+"directly to the variable. Including if the ``@onready`` annotation is "
+"applied to the variable."
+msgstr ""
+
+msgid ""
 "Using the variable's name to set it inside its own setter or to get it "
 "inside its own getter will directly access the underlying member, so it "
 "won't generate infinite recursion and saves you from explicitly declaring "
 "another variable::"
 msgstr ""
 
-msgid "This backing member variable is not created if you don't use it."
-msgstr ""
-
-msgid ""
-"Unlike ``setget`` in previous Godot versions, the properties setter and "
-"getter are **always** called, even when accessed inside the same class (with "
-"or without prefixing with ``self.``). This makes the behavior consistent. If "
-"you need direct access to the value, use another variable for direct access "
-"and make the property code use that name."
-msgstr ""
-
-msgid ""
-"In case you want to split the code from the variable declaration or you need "
-"to share the code across multiple properties, you can use a different "
-"notation to use existing class functions::"
-msgstr ""
-
 #, fuzzy
-msgid "This can also be done in the same line."
-msgstr "Füllen Sie das Formular mit den folgenden Einstellungen aus:"
+msgid "This also applies to the alternative syntax::"
+msgstr "Dies ist jedoch die erforderliche Syntax:"
+
+msgid ""
+"The exception does **not** propagate to other functions called in the setter/"
+"getter. For example, the following code **will** cause an infinite "
+"recursion::"
+msgstr ""
 
 msgid "Tool mode"
 msgstr "Werkzeug-Modus"
@@ -2518,8 +2712,8 @@ msgstr ""
 "R%C3%BCckruffunktion>` _ Mechanismus. Sie übernehmen auch die Rolle der "
 "Beobachter, ein gängiges Programmiermuster. Weitere Informationen finden Sie "
 "im `Observer-Tutorial (in englischer Sprache)<https://"
-"gameprogrammingpatterns.com/observer.html>` _ im eBook "
-"Spielprogrammiermuster."
+"gameprogrammingpatterns.com/observer.html>` _ im E-Book Game Programming "
+"Patterns."
 
 #, fuzzy
 msgid ""

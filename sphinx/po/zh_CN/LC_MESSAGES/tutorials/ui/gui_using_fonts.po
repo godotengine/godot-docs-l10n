@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,12 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using Fonts"
-msgstr "使用容器"
+msgstr "使用字体"
 
 msgid "Godot allows you to set specific fonts for different UI nodes."
-msgstr ""
+msgstr "Godot 中能够为不同的 UI 节点设置指定的字体。"
 
 msgid ""
 "There are three different places where you can setup font usage. The first "
@@ -79,19 +78,17 @@ msgstr ""
 "如果您更善于通过查看示例学习，可以在\\ `这里 <https://github.com/godotengine/"
 "godot-demo-projects/tree/master/mobile/android_iap>`__\\ 找到演示项目。"
 
-#, fuzzy
 msgid "Dynamic fonts"
-msgstr "动态对象"
+msgstr "动态字体"
 
-#, fuzzy
 msgid "Godot supports the following dynamic font formats:"
-msgstr "Godot 支持以下 3D *场景文件格式*\\ ："
+msgstr "Godot 支持以下动态字体格式："
 
 msgid "TrueType Font or Collection (``.ttf``, ``.ttc``)"
-msgstr ""
+msgstr "TrueType 字体或合集（\\ ``.ttf``\\ 、\\ ``.ttc``\\ ）"
 
 msgid "OpenType Font or Collection (``.otf``, ``.otc``)"
-msgstr ""
+msgstr "OpenType 字体或合集（\\ ``.otf``\\ 、\\ ``.otc``\\ ）"
 
 msgid "Web Open Font Format 1 (``.woff``)"
 msgstr "Web 开放字体格式 1（\\ ``.woff``\\ ）"
@@ -107,7 +104,7 @@ msgid ""
 msgstr ""
 
 msgid "Bitmap fonts"
-msgstr ""
+msgstr "位图字体"
 
 msgid ""
 "Godot supports the BMFont (``.fnt``) bitmap font format. This is a format "
@@ -137,9 +134,8 @@ msgid ""
 "wikipedia.org/wiki/ASCII>`__ characters and follows standard ASCII ordering:"
 msgstr ""
 
-#, fuzzy
 msgid "Bitmap font example"
-msgstr "最小客户端示例"
+msgstr "位图字体示例"
 
 msgid ""
 "Credit: `LibreQuake <https://github.com/MissLav/LibreQuake/blob/master/lq1/"
@@ -186,9 +182,8 @@ msgid ""
 "Margin**. This margin is applied for every imported glyph."
 msgstr ""
 
-#, fuzzy
 msgid "Loading a font file"
-msgstr "分享配置"
+msgstr "加载字体文件"
 
 msgid ""
 "To load a font file (dynamic or bitmap), use the resource dropdown's **Quick "
@@ -228,12 +223,69 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Advanced font features"
-msgstr "环境特性"
+msgid "Font outlines and shadows"
+msgstr "2D 灯光和阴影"
+
+msgid ""
+"Font outlines and shadows can be used to improve readability when the "
+"background color isn't known in advance. For instance, this is the case for "
+"HUD elements that are drawn over a 2D/3D scene."
+msgstr ""
+
+msgid ""
+"Font outlines are available in most nodes that derive from Control, in "
+"addition to :ref:`class_Label3D`."
+msgstr ""
+
+msgid ""
+"To enable outline for a font on a given node, configure the theme overrides "
+"**Font Outline Color** and **Outline Size** in the inspector. The result "
+"should look like this:"
+msgstr ""
 
 #, fuzzy
+msgid "Font outline example"
+msgstr "射击示例"
+
+msgid ""
+"If using a font with MSDF rendering, its **MSDF Pixel Range** import option "
+"be set to at least *twice* the value of the outline size for outline "
+"rendering to look correct. Otherwise, the outline may appear to be cut off "
+"earlier than intended."
+msgstr ""
+
+msgid ""
+"Support for font shadows is more limited: they are only available in :ref:"
+"`class_Label` and :ref:`class_RichTextLabel`. Additionally, font shadows "
+"always have a hard edge (but you can reduce their opacity to make them look "
+"more subtle). To enable font shadows on a given node, configure the **Font "
+"Shadow Color**, **Shadow Offset X**, and **Shadow Offset Y** theme overrides "
+"in a Label or RichTextLabel node accordingly:"
+msgstr ""
+
+#, fuzzy
+msgid "Configuring font shadow in a Label node"
+msgstr "配置构建"
+
+#, fuzzy
+msgid "The result should look like this:"
+msgstr "最终结果应如下所示:"
+
+#, fuzzy
+msgid "Font shadow example"
+msgstr "Windows示例:"
+
+msgid ""
+"You can create local overrides to font display in Label nodes by creating a :"
+"ref:`class_LabelSettings` resource that you reuse across Label nodes. This "
+"resource takes priority over :ref:`theme properties <doc_gui_skinning>`."
+msgstr ""
+
+msgid "Advanced font features"
+msgstr "高级字体特性"
+
 msgid "Antialiasing"
-msgstr "**抗锯齿：**"
+msgstr "抗锯齿"
 
 msgid ""
 "You can adjust how the font should be smoothed out when rendering by "
@@ -276,9 +328,8 @@ msgid ""
 "antialiasing."
 msgstr ""
 
-#, fuzzy
 msgid "Hinting"
-msgstr "提示"
+msgstr "微调"
 
 msgid ""
 "Hinting controls how aggressively glyph edges should be snapped to pixels "
@@ -307,7 +358,7 @@ msgid ""
 msgstr ""
 
 msgid "Subpixel positioning"
-msgstr ""
+msgstr "次像素定位"
 
 msgid ""
 "Subpixel positioning can be adjusted. This is a `FreeType <https://freetype."
@@ -340,7 +391,7 @@ msgid ""
 msgstr ""
 
 msgid "Mipmaps"
-msgstr "Mipmaps"
+msgstr "Mipmap"
 
 msgid ""
 "By default, fonts do not have mipmaps generated to reduce memory usage and "
@@ -359,55 +410,58 @@ msgstr ""
 
 msgid ""
 "Mipmaps can be enabled on MSDF fonts as well. This can improve font "
-"rencering quality a little at smaller-than-default sizes, but MSDF fonts are "
+"rendering quality a little at smaller-than-default sizes, but MSDF fonts are "
 "already resistant to graininess out of the box."
 msgstr ""
 
-#, fuzzy
 msgid "MSDF font rendering"
-msgstr "Portal 渲染"
+msgstr "MSDF 字体渲染"
 
 msgid ""
 "Multi-channel signed distance field (MSDF) font rendering allows rendering "
 "fonts at any size, without having to re-rasterize them when their size "
 "changes."
 msgstr ""
+"多通道带符号距离场（Multi-channel signed distance field，MSDF）字体渲染能够将"
+"字体渲染为任意大小，无需在大小发生变化时重新栅格化。"
 
 msgid ""
 "MSDF font rendering has 2 upsides over traditional font rasterization, which "
 "Godot uses by default:"
-msgstr ""
+msgstr "与 Godot 默认使用的传统字体栅格化相比，MSDF 字体渲染有两个优点："
 
 msgid "The font will always look crisp, even at huge sizes."
-msgstr ""
+msgstr "即便文字非常巨大，字体看上去也总是清晰的。"
 
 msgid ""
 "There is less stuttering when rendering characters *at large font sizes* for "
 "the first time, as there is no rasterization performed."
-msgstr ""
+msgstr "首次渲染\\ *大字号字体*\\ 的字符时卡顿更短，因为无须执行栅格化。"
 
-#, fuzzy
 msgid "The downsides of MSDF font rendering are:"
-msgstr "``GIProbe`` 的主要缺点是："
+msgstr "MSDF 字体渲染的缺点有："
 
 msgid ""
 "Higher baseline cost for font rendering. This is usually not noticeable on "
 "desktop platforms, but it can have an impact on low-end mobile devices."
 msgstr ""
+"字体渲染的基础开销较高。桌面平台上通常无法察觉，但是会影响低端移动设备。"
 
 msgid ""
 "Fonts at small sizes will not look as clear as rasterized fonts, due to the "
 "lack of hinting."
-msgstr ""
+msgstr "由于缺少微调，较小的字体没有栅格化字体清晰。"
 
 msgid ""
 "Rendering new glyphs for the first time *at small font sizes* may be more "
 "expensive compared to traditional rasterized fonts. :ref:"
 "`doc_using_fonts_font_prerendering` can be used to alleviate this."
 msgstr ""
+"与传统的栅格化字体相比，首次为新字形渲染\\ *小字号字体*\\ 的开销可能更大。可"
+"以使用 :ref:`doc_using_fonts_font_prerendering` 缓解。"
 
 msgid "LCD subpixel optimization cannot be enabled for MSDF fonts."
-msgstr ""
+msgstr "无法为 MSDF 字体启用 LCD 次像素优化。"
 
 msgid ""
 "Fonts with self-intersecting outlines will not render correctly in MSDF "
@@ -415,25 +469,49 @@ msgid ""
 "as `Google Fonts <https://fonts.google.com>`__, try downloading the font "
 "from the font author's official website instead."
 msgstr ""
+"MSDF 模式下无法正确渲染轮廓自相交的字体。如果使用从 `Google Fonts <https://"
+"fonts.google.com>`__ 等处下载到的字体时出现渲染问题，请尝试改为从作者的官方网"
+"站下载。"
+
+msgid "Comparison of font rasterization methods"
+msgstr ""
+
+msgid ""
+"Comparison of font rasterization methods. From top to bottom: rasterized "
+"without oversampling, rasterized with oversampling, MSDF"
+msgstr ""
 
 #, fuzzy
+msgid ""
+"To enable MSDF rendering for a given font, select it in the FileSystem dock, "
+"go to the Import dock, enable **Multichannel Signed Distance Field**, then "
+"click **Reimport**:"
+msgstr ""
+"为了使OBJ文件具有为其生成的网格LOD，在文件系统面板中选择它，去到导入面板，将"
+"其 **导入为** 选项更改为 **场景** ，然后单击 **重新导入** ："
+
+msgid "Enabling MSDF in the font's import options"
+msgstr ""
+
 msgid "Using emoji"
-msgstr "使用代码"
+msgstr "使用 Emoji"
 
 msgid "Godot has limited support for emoji fonts:"
-msgstr ""
+msgstr "Godot 对 Emoji 字体的支持有限："
 
 msgid "CBDT/CBLC (embedded PNGs) and SVG emoji fonts are supported."
-msgstr ""
+msgstr "支持 CBDT/CBLC（内嵌 PNG）和 SVG Emoji 字体。"
 
 msgid "COLR/CPAL emoji fonts (custom vector format) are **not** supported."
-msgstr ""
+msgstr "**不支持** COLR/CPAL Emoji 字体（自定义矢量格式）。"
 
 msgid ""
 "EMJC bitmap image compression (used by iOS' system emoji font) is **not** "
 "supported. This means that to support emoji on iOS, you must use a custom "
 "font that uses SVG or PNG bitmap compression instead."
 msgstr ""
+"**不支持** EMJC 位图压缩（iOS 系统 Emoji 字体需要用到）。这意味着如果要在 "
+"iOS 上支持 Emoji，你就必须改用自定义的使用 SVG 或 PNG 位图压缩的字体。"
 
 msgid ""
 "For Godot to be able to display emoji, the font used (or one of its :ref:"
@@ -443,7 +521,7 @@ msgid ""
 msgstr ""
 
 msgid "Default appearance when trying to use emoji in a label"
-msgstr ""
+msgstr "尝试在标签中使用 Emoji 的默认外观"
 
 msgid ""
 "After adding a font to display emoji such as `Noto Color Emoji <https://"
@@ -452,7 +530,7 @@ msgid ""
 msgstr ""
 
 msgid "Correct appearance after adding an emoji font to the label"
-msgstr ""
+msgstr "为标签添加 Emoji 字体后的正确外观"
 
 msgid ""
 "To use a regular font alongside emoji, it's recommended to specify a :ref:"
@@ -472,13 +550,11 @@ msgid ""
 "system fonts is not supported on all platforms."
 msgstr ""
 
-#, fuzzy
 msgid "It's possible to use a system font as a fallback font too."
-msgstr "是否能将 Godot 作为库使用？"
+msgstr "也可以将系统字体用作回退字体。"
 
-#, fuzzy
 msgid "Using icon fonts"
-msgstr "添加控制点"
+msgstr "使用图标字体"
 
 msgid ""
 "Tools like `Fontello <https://fontello.com/>`__ can be used to generate font "
@@ -533,7 +609,7 @@ msgid ""
 msgstr ""
 
 msgid "Font fallbacks"
-msgstr ""
+msgstr "字体回退"
 
 msgid ""
 "Godot supports defining one or more fallbacks when the main font lacks a "
@@ -555,9 +631,8 @@ msgid ""
 "to the Import dock then choose **Advanced…** at the bottom:"
 msgstr ""
 
-#, fuzzy
 msgid "Import dock"
-msgstr "导入的流程"
+msgstr "导入面板"
 
 msgid ""
 "In the dialog that appears, look for **Fallbacks** section on the sidebar on "
@@ -565,9 +640,8 @@ msgid ""
 "then click **Add Element**:"
 msgstr ""
 
-#, fuzzy
 msgid "Adding font fallback"
-msgstr "添加轨道"
+msgstr "添加字体回退"
 
 msgid ""
 "Click the dropdown arrow on the new element, then choose a font file using "
@@ -575,7 +649,7 @@ msgid ""
 msgstr ""
 
 msgid "Loading font fallback"
-msgstr ""
+msgstr "加载字体回退"
 
 msgid ""
 "It is possible to add fallback fonts while using the default project font. "
@@ -589,9 +663,8 @@ msgid ""
 "brevity reasons."
 msgstr ""
 
-#, fuzzy
 msgid "Variable fonts"
-msgstr "变量"
+msgstr "可变字体"
 
 msgid ""
 "Godot has full support for `variable fonts <https://variablefonts.io/>`__, "
@@ -606,12 +679,11 @@ msgid ""
 "FontVariation resource:"
 msgstr ""
 
-#, fuzzy
 msgid "Creating a FontVariation resource"
-msgstr "创建自己的资源"
+msgstr "创建 FontVariation 资源"
 
 msgid "Loading a font file into the FontVariation resource"
-msgstr ""
+msgstr "为 FontVariation 资源加载字体文件"
 
 msgid ""
 "Scroll down to the FontVariation's **Variation** section, then click the "
@@ -619,9 +691,8 @@ msgid ""
 "adjusted:"
 msgstr ""
 
-#, fuzzy
 msgid "List of variation axes"
-msgstr "特性列表"
+msgstr "可变轴列表"
 
 msgid ""
 "The set of axes you can adjust depends on the font loaded. Some variable "
@@ -635,7 +706,7 @@ msgid ""
 msgstr ""
 
 msgid "Variable font example (Inter V)"
-msgstr ""
+msgstr "可变字体示例（Inter V）"
 
 msgid ""
 "While variable font axis names and scales aren't standardized, some common "
@@ -650,10 +721,10 @@ msgid ""
 msgstr ""
 
 msgid "Saving FontVariation to an external resource file"
-msgstr ""
+msgstr "将 FontVariation 保存为外部资源文件"
 
 msgid "Faux bold and italic"
-msgstr ""
+msgstr "假粗体和假斜体"
 
 msgid ""
 "When writing text in bold or italic, using font variants specifically "
@@ -702,9 +773,8 @@ msgid ""
 "values are between ``0.2`` and ``0.4`` depending on the font."
 msgstr ""
 
-#, fuzzy
 msgid "Adjusting font spacing"
-msgstr "调整轴心"
+msgstr "调整字体间距"
 
 msgid ""
 "For stylistic purposes or for better readability, you may want to adjust how "
@@ -745,9 +815,8 @@ msgid ""
 "generally not designed to be displayed with stretching."
 msgstr ""
 
-#, fuzzy
 msgid "OpenType font features"
-msgstr "默认功能"
+msgstr "OpenType 字体特性"
 
 msgid ""
 "Godot supports enabling OpenType font features, which are a standardized way "
@@ -763,8 +832,8 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "There are 2 ways to use OpenType font featutres:"
-msgstr "获取证书有两种方法:"
+msgid "There are 2 ways to use OpenType font features:"
+msgstr "使用 OpenType 字体特性有两种方法："
 
 msgid "**Globally on a font file**"
 msgstr ""
@@ -776,7 +845,7 @@ msgid ""
 msgstr ""
 
 msgid "OpenType feature overrides in Advanced Import Settings"
-msgstr ""
+msgstr "高级导入设置中的 OpenType 特性覆盖"
 
 msgid "**In a specific font usage (FontVariation)**"
 msgstr ""
@@ -788,7 +857,7 @@ msgid ""
 msgstr ""
 
 msgid "Loading a font file into a FontVariation resource"
-msgstr ""
+msgstr "在 FontVariation 资源中加载字体文件"
 
 msgid ""
 "Scroll down to the FontVariation's **OpenType Features** section, click the "
@@ -797,7 +866,7 @@ msgid ""
 msgstr ""
 
 msgid "Specifying OpenType features in a FontVariation resource"
-msgstr ""
+msgstr "在 FontVariation 资源中指定 OpenType 特性"
 
 msgid ""
 "For example, here's the `Inter <https://rsms.me/inter/>`__ font without the "
@@ -806,7 +875,7 @@ msgid ""
 msgstr ""
 
 msgid "OpenType feature comparison (Inter)"
-msgstr ""
+msgstr "OpenType 特性比较（Inter）"
 
 msgid ""
 "You can disable ligatures and/or kerning for a specific font by adding "
@@ -814,16 +883,22 @@ msgid ""
 msgstr ""
 
 msgid "Disabling ligatures and kerning for a font"
-msgstr ""
+msgstr "禁用字体的合字和字偶距"
 
 msgid "System fonts"
-msgstr ""
+msgstr "系统字体"
 
-#, fuzzy
 msgid ""
 "Loading system fonts is only supported on Windows, macOS, Linux, Android and "
 "iOS."
-msgstr "控制器支持Windows、macOS、Linux、Android、iOS和HTML5。"
+msgstr "只有 Windows、macOS、Linux、Android、iOS 支持加载系统字体。"
+
+msgid ""
+"However, loading system fonts on Android is unreliable as there is no "
+"official API for doing so. Godot has to rely on parsing system configuration "
+"files, which can be modified by third-party Android vendors. This may result "
+"in non-functional system font loading."
+msgstr ""
 
 msgid ""
 "System fonts are a different type of resource compared to imported fonts. "
@@ -850,8 +925,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Create a SystemFont resource in the location where you desire to use the "
-"system font:"
+"Create a :ref:`class_SystemFont` resource in the location where you desire "
+"to use the system font:"
 msgstr ""
 
 #, fuzzy
@@ -866,17 +941,17 @@ msgid ""
 "``Arial``), or specify the name of a font *alias* that maps to a "
 "\"standard\" default font for the system:"
 msgstr ""
+"你可以显式指定若干字体名称（例如 ``Arial``\\ ），也可以指定字体的\\ *别名"
+"*\\ ，后者会映射到系统中的“标准”默认字体："
 
-#, fuzzy
 msgid "Font alias"
-msgstr "前视图"
+msgstr "字体别名"
 
 msgid "Windows"
 msgstr "Windows"
 
-#, fuzzy
 msgid "macOS/iOS"
-msgstr "macOS"
+msgstr "macOS/iOS"
 
 msgid "Linux"
 msgstr "Linux"
@@ -885,70 +960,64 @@ msgid "Android"
 msgstr "Android"
 
 msgid "``sans-serif``"
-msgstr ""
+msgstr "``sans-serif``"
 
 msgid "Arial"
-msgstr ""
+msgstr "Arial"
 
 msgid "Helvetica"
-msgstr ""
+msgstr "Helvetica"
 
 msgid "*Handled by fontconfig*"
-msgstr ""
+msgstr "*由 fontconfig 处理*"
 
 msgid "Roboto / Noto Sans"
-msgstr ""
+msgstr "Roboto / Noto Sans"
 
 msgid "``serif``"
-msgstr ""
+msgstr "``serif``"
 
 msgid "Times New Roman"
-msgstr ""
+msgstr "Times New Roman"
 
-#, fuzzy
 msgid "Times"
-msgstr "iTime"
+msgstr "Times"
 
 msgid "Noto Serif"
-msgstr ""
+msgstr "Noto Serif"
 
-#, fuzzy
 msgid "``monospace``"
-msgstr "等宽字体"
+msgstr "``monospace``"
 
 msgid "Courier New"
-msgstr ""
+msgstr "Courier New"
 
 msgid "Courier"
-msgstr ""
+msgstr "Courier"
 
 msgid "Droid Sans Mono"
-msgstr ""
+msgstr "Droid Sans Mono"
 
-#, fuzzy
 msgid "``cursive``"
-msgstr "``primitive``"
+msgstr "``cursive``"
 
 msgid "Comic Sans MS"
-msgstr ""
+msgstr "Comic Sans MS"
 
-#, fuzzy
 msgid "Apple Chancery"
-msgstr "应用更改."
+msgstr "Apple Chancery"
 
-#, fuzzy
 msgid "Dancing Script"
-msgstr "Main 脚本"
+msgstr "Dancing Script"
 
-#, fuzzy
 msgid "``fantasy``"
-msgstr "``false``"
+msgstr "``fantasy``"
 
 msgid "Gabriola"
-msgstr ""
+msgstr "Gabriola"
 
 msgid "Papyrus"
-msgstr ""
+msgstr "Papyrus"
 
 msgid ""
 "On Android, Roboto is used for Latin/Cyrillic text and Noto Sans is used for "
@@ -981,9 +1050,14 @@ msgid ""
 "or alias."
 msgstr ""
 
-#, fuzzy
+msgid ""
+"It is also possible to load fonts at runtime even if they aren't installed "
+"on the system. See :ref:`Runtime loading and saving "
+"<doc_runtime_file_loading_and_saving_fonts>` for details."
+msgstr ""
+
 msgid "Font prerendering"
-msgstr "项目重新排序"
+msgstr "字体预渲染"
 
 msgid ""
 "When using traditional rasterized fonts, Godot caches glyphs on a per-font "
@@ -1034,9 +1108,8 @@ msgid ""
 "It is possible to use both approaches in a cumulative manner:"
 msgstr ""
 
-#, fuzzy
 msgid "**Using text from translations**"
-msgstr "使用 Weblate 进行翻译"
+msgstr "**使用翻译中的文本**"
 
 msgid ""
 "For most projects, this approach is the most convenient to use, as it "
@@ -1068,9 +1141,8 @@ msgid ""
 "translations have changed significantly."
 msgstr ""
 
-#, fuzzy
 msgid "**Using custom text**"
-msgstr "使用自定义节点"
+msgstr "**使用自定义文本**"
 
 msgid ""
 "While it requires manually specifying text that will appear in the game, "
@@ -1105,7 +1177,7 @@ msgid ""
 msgstr ""
 
 msgid "**By enabling character sets**"
-msgstr ""
+msgstr "**通过启用字符集**"
 
 msgid ""
 "The second method requires less configuration and fewer updates if your "
@@ -1117,7 +1189,7 @@ msgstr ""
 msgid ""
 "To use existing text as a baseline for prerendering, go to the **Glyphs from "
 "the Character Map** sub-tab of the Advanced Import Settings dialog, then "
-"*dobule-click* character sets to be enabled on the right:"
+"*double-click* character sets to be enabled on the right:"
 msgstr ""
 
 msgid ""
@@ -1138,14 +1210,15 @@ msgid ""
 "Russian, **Cyrillic** needs to be enabled, and so on."
 msgstr ""
 
-#, fuzzy
 msgid "Default project font properties"
-msgstr "为属性添加默认值"
+msgstr "默认项目字体属性"
 
 msgid ""
 "In the **GUI > Theme** section of the advanced Project Settings, you can "
 "choose how the default font should be rendered:"
 msgstr ""
+"在高级“项目设置”的 **GUI > 主题**\\ 部分中，可以对默认字体的渲染方式进行选"
+"择："
 
 msgid ""
 "**Default Font Antialiasing:** Controls the :ref:`antialiasing "

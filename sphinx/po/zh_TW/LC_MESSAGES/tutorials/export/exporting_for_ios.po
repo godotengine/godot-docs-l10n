@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,8 @@ msgid ""
 "to compile export template binaries from source instead, read :ref:"
 "`doc_compiling_for_ios`."
 msgstr ""
+"這個頁面描述的是如何將 Godot 專案匯出到 iOS。如果你想要找的是從源碼編譯編輯器"
+"或匯出範本二進位檔案，請閱讀 :ref:`doc_compiling_for_ios`。"
 
 msgid ""
 "These are the steps to load a Godot project in Xcode. This allows you to "
@@ -35,8 +37,8 @@ msgstr ""
 "iOS 裝置上、為 App Store 建置發行版本，並可在 Xcode 中執行各種其他一般操作。"
 
 msgid ""
-"Projects written in C# using Godot 4 currently cannot be exported to iOS. To "
-"use C# on iOS, use Godot 3 instead."
+"Projects written in C# can be exported to iOS as of Godot 4.2, but support "
+"is experimental and :ref:`some limitations apply <doc_c_sharp_platforms>`."
 msgstr ""
 
 msgid "Requirements"
@@ -61,7 +63,6 @@ msgstr ""
 "在 Godot 編輯器中，打開 **[專案]** 選單中的 **[匯出]** 視窗。[匯出] 視窗開啟"
 "後，點擊 **[新增...]** 然後選擇 **[iOS]** 。"
 
-#, fuzzy
 msgid ""
 "The **App Store Team ID** and (Bundle) **Identifier** options in the "
 "**Application** category are required. Leaving them blank will cause the "
@@ -69,27 +70,31 @@ msgid ""
 msgstr "必須設定下列匯出選項。將任何選項留空都會導致匯出工具拋出錯誤："
 
 msgid "If you encounter an error during export similar to"
-msgstr ""
+msgstr "如果您在匯出過程中遇到類似以下錯誤"
 
 msgid ""
 "``JSON text did not start with array or object and option to allow fragments "
 "not set``"
-msgstr ""
+msgstr "“JSON 文字未以陣列或物件開頭，且未設定允許片段的選項”"
 
 msgid "then it might be due to a malformated **App Store Team ID**!"
-msgstr ""
+msgstr "那麼可能是由於 **App Store 團隊 ID** 格式錯誤！"
 
 msgid ""
 "The exporter expects a (10 characters long) code like ``ABCDE12XYZ`` and "
 "not, e.g., your name as Xcode likes to display in the *Signing & "
 "Capabilities* tab."
 msgstr ""
+"匯出器需要一個（10 個字元長）程式碼，例如“ABCDE12XYZ”，而不是例如 Xcode 喜歡"
+"在“簽章和功能”標籤中顯示的您的姓名。"
 
 msgid ""
 "You can find the code over at `developer.apple.com <https://developer.apple."
 "com/account/resources/certificates/list>`_ next to your name in the top "
 "right corner."
 msgstr ""
+"您可以在右上角您姓名旁的「developer.apple.com <https://developer.apple.com/"
+"account/resources/certificates/list>」找到程式碼。"
 
 msgid ""
 "After you click **Export Project**, there are still two important options "
@@ -200,14 +205,12 @@ msgid ""
 "That's it! You can now edit your project in the Godot editor and build it in "
 "Xcode when you want to run it on a device."
 msgstr ""
-"就這樣！現在可以在 Godot 編輯器中編輯專案並於準備好在設備上執行時於 Xcode 中"
+"就這樣！現在可以在 Godot 編輯器中編輯專案並於準備好在裝置上執行時於 Xcode 中"
 "進行建置。"
 
-#, fuzzy
 msgid "Plugins for iOS"
 msgstr "為 iOS 進行編譯"
 
-#, fuzzy
 msgid ""
 "Special iOS plugins can be used in Godot. Check out the :ref:"
 "`doc_plugins_for_ios` page."
@@ -222,36 +225,38 @@ msgid ""
 "outside of the editor. During the export process, these override the values "
 "that you set in the export menu."
 msgstr ""
+"您可以使用下列環境變數在編輯器外部設定匯出選項。在匯出過程中，這些值會覆寫您"
+"在匯出選單中設定的值。"
 
-#, fuzzy
 msgid "iOS export environment variables"
 msgstr "環境變數"
 
-#, fuzzy
 msgid "Export option"
 msgstr "匯出選項"
 
-#, fuzzy
 msgid "Environment variable"
 msgstr "環境變數"
 
 msgid "Encryption / Encryption Key"
-msgstr ""
+msgstr "加密/加密金鑰"
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "GODOT_SCRIPT_ENCRYPTION_KEY"
 
 msgid "Options / Application / Provisioning Profile UUID Debug"
-msgstr ""
+msgstr "選項/應用程式/設定檔 UUID 偵錯"
 
-msgid "GODOT_IOS_PROVISIONING_PROFILE_UUID_DEBUG"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_IOS_PROVISIONING_PROFILE_UUID_DEBUG``"
+msgstr "GODOT_IOS_PROVISIONING_PROFILE_UUID_DEBUG"
 
 msgid "Options / Application / Provisioning Profile UUID Release"
-msgstr ""
+msgstr "選項/應用程式/設定檔 UUID 發布"
 
-msgid "GODOT_IOS_PROVISIONING_PROFILE_UUID_RELEASE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_IOS_PROVISIONING_PROFILE_UUID_RELEASE``"
+msgstr "GODOT_IOS_PROVISIONING_PROFILE_UUID_RELEASE"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

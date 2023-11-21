@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,15 +18,16 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Exporting for Android"
-msgstr "正在為Android匯出"
+msgstr "為 Android 匯出"
 
 msgid ""
 "This page describes how to export a Godot project to Android. If you're "
 "looking to compile export template binaries from source instead, read :ref:"
 "`doc_compiling_for_android`."
 msgstr ""
+"這個頁面描述的是如何將 Godot 專案匯出到 Android。如果你想要找的是從源碼編譯編"
+"輯器或匯出範本二進位檔案，請閱讀 :ref:`doc_compiling_for_android`。"
 
-#, fuzzy
 msgid ""
 "Exporting for Android has fewer requirements than compiling Godot for "
 "Android. The following steps detail what is needed to set up the Android SDK "
@@ -36,18 +37,19 @@ msgstr ""
 "Godot 所需的詳細步驟。"
 
 msgid ""
-"Projects written in C# using Godot 4 currently cannot be exported to "
-"Android. To use C# on Android, use Godot 3 instead."
+"Projects written in C# can be exported to Android as of Godot 4.2, but "
+"support is experimental and :ref:`some limitations apply "
+"<doc_c_sharp_platforms>`."
 msgstr ""
 
 #, fuzzy
-msgid "Install OpenJDK 11"
+msgid "Install OpenJDK 17"
 msgstr "安裝 OpenJDK"
 
 #, fuzzy
 msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
+"Download and install `OpenJDK 17 <https://adoptium.net/temurin/releases/?"
+"variant=openjdk17>`__."
 msgstr "下載並安裝 `OpenJDK <https://adoptopenjdk.net/index.html`__ 。"
 
 msgid "Download the Android SDK"
@@ -56,7 +58,6 @@ msgstr "下載 Android SDK"
 msgid "Download and install the Android SDK."
 msgstr "下載與安裝 Android SDK。"
 
-#, fuzzy
 msgid ""
 "You can install the Android SDK using `Android Studio version 4.1 or later "
 "<https://developer.android.com/studio/>`__."
@@ -79,26 +80,23 @@ msgstr ""
 "update#recommended>`__ 。"
 
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
-msgstr ""
+msgstr "Android SDK Platform-Tools 30.0.5 或更高版本"
 
 msgid "Android SDK Build-Tools version 33.0.2"
-msgstr ""
+msgstr "Android SDK Build-Tools version 33.0.2"
 
-#, fuzzy
 msgid "Android SDK Platform 33"
-msgstr "\\ Android SDK Platform"
+msgstr "Android SDK Platform 33"
 
-#, fuzzy
 msgid "Android SDK Command-line Tools (latest)"
 msgstr "安裝 Android SDK (命令行版本)"
 
 msgid "CMake version 3.10.2.4988404"
-msgstr ""
+msgstr "CMake 版本 3.10.2.4988404"
 
 msgid "NDK version r23c (23.2.8568313)"
-msgstr ""
+msgstr "NDK 版本 r23c（23.2.8568313）"
 
-#, fuzzy
 msgid ""
 "Alternatively, you can install the Android SDK using the `command line tools "
 "<https://developer.android.com/studio/#command-tools>`__."
@@ -112,12 +110,14 @@ msgid ""
 "the setup process:"
 msgstr ""
 "安裝好命令行工具後，執行 `sdkmanager <https://developer.android.com/studio/"
-"command-line/sdkmanager>`__ 指令來完成安裝程序："
+"command-line/sdkmanager>`__ 指令來完成安裝程式："
 
 msgid ""
 "If you are using Linux, **do not use an Android SDK provided by your "
 "distribution's repositories as it will often be outdated**."
 msgstr ""
+"如果你使用的是 Linux，**請勿使用發行版本軟體庫提供的 Android SDK，因為它通常"
+"是過時的**。"
 
 msgid "Create a debug.keystore"
 msgstr "建立 debug.keystore"
@@ -139,12 +139,13 @@ msgid ""
 "JDK can be used for this purpose::"
 msgstr "若找不到金鑰儲存區或需要產生，則可以使用 JDK 中的 keytool 指令："
 
+#, fuzzy
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
 "should move it to a memorable location such as ``%USERPROFILE%\\."
 "android\\``, because you will need its location in a later step. For more "
-"information on ``keytool`` usage, see `this Q&A article <https://godotengine."
-"org/qa/21349/jdk-android-file-missing>`__."
+"information on ``keytool`` usage, see `this Q&A article <https://ask."
+"godotengine.org/21349/jdk-android-file-missing>`__."
 msgstr ""
 "這個指令會在目前的目錄中建立 ``debug.keystore`` 檔案。接著應將該檔案移動到好"
 "記的位置，如 ``%USERPROFILE%\\.android\\`` 等，因為接下來的步驟會需要用到這個"
@@ -156,6 +157,9 @@ msgid ""
 "This is a `known Android studio issue <https://developer.android.com/studio/"
 "known-issues#ki-key-keystore-warning>`__ that also affects Godot projects."
 msgstr ""
+"金鑰庫和金鑰的密碼必須相同，這一點很重要。這是一個“已知的 Android studio 問"
+"題 <https://developer.android.com/studio/known-issues#ki-key-keystore-"
+"warning>”，也會影響 Godot 專案。"
 
 msgid "Setting it up in Godot"
 msgstr "在 Godot 中設定"
@@ -197,6 +201,8 @@ msgid ""
 "do not have an application with the same Android package name already "
 "installed on the device (but signed with a different key)."
 msgstr ""
+"如果你遇到 *“Could not install to device”* 的錯誤，請確認裝置上未安裝使用了相"
+"同Android包名（但使用不同金鑰進行簽章）的應用。"
 
 msgid ""
 "If you have an application with the same Android package name but a "
@@ -204,6 +210,8 @@ msgid ""
 "the application in question from the Android device before exporting to "
 "Android again."
 msgstr ""
+"如果裝置上安裝了 Android 包名相同但簽章金鑰不同的應用，你**必須**先在該 "
+"Android 裝置詢問時選擇刪除該應用，但後再重新匯出到 Android。"
 
 msgid "Providing launcher icons"
 msgstr "提供起動器圖示"
@@ -219,7 +227,7 @@ msgstr ""
 "本。"
 
 msgid "There are two types of icons required by Godot:"
-msgstr "Godot 中需要的圖示有兩種類型："
+msgstr "Godot 中需要的圖示有兩種型別："
 
 msgid ""
 "**Main Icon:** The \"classic\" icon. This will be used on all Android "
@@ -264,8 +272,8 @@ msgid ""
 "If you don't provide some of the requested icons, Godot will replace them "
 "using a fallback chain, trying the next in line when the current one fails:"
 msgstr ""
-"若不提供需要的圖示，則 Godot 會自動在遞補鏈中以下一個項目來代替，當遞補鏈中目"
-"前項目失敗時，則往下遞補："
+"若不提供需要的圖示，則 Godot 會自動在遞補鏈中以下一個專案來代替，當遞補鏈中目"
+"前專案失敗時，則往下遞補："
 
 msgid ""
 "**Main Icon:** Provided main icon -> Project icon -> Default Godot main icon."
@@ -283,14 +291,13 @@ msgid ""
 "background icon."
 msgstr "**Adaptive Icon Background:** 提供的背景圖示 -> 預設 Godot 背景圖示。"
 
-#, fuzzy
 msgid ""
 "It's highly recommended to provide all the requested icons with their "
 "specified resolutions. This way, your application will look great on all "
 "Android devices and versions."
 msgstr ""
 "強烈建議提供所有需要的圖示，並至少要有指定的解析度。只有這樣才能讓應用程式在"
-"所有 Android 設備與版本中看起來好看。"
+"所有 Android 裝置與版本中看起來好看。"
 
 msgid "Exporting for Google Play Store"
 msgstr "為 Google Play Store 匯出"
@@ -328,7 +335,6 @@ msgstr ""
 "**Release Password：** 金鑰密碼，請注意，目前金鑰儲存區密碼與金鑰的密碼必須相"
 "同。"
 
-#, fuzzy
 msgid ""
 "Don't forget to uncheck the **Export With Debug** checkbox while exporting."
 msgstr "設定 APK 名稱時也別忘了取消勾選 **[Export With Debug]** 勾選框。"
@@ -362,7 +368,7 @@ msgstr ""
 "自 2019 年 8 月起，Google Play 中所有的應用程式都必須支援 64 位元。這表示無法"
 "上傳裡面 **只有** ARMv7 函式庫的 APK。為此，可以通過 `多 APK 支援 <https://"
 "developer.android.com/google/play/publishing/multiple-apks>`__ 來上傳多個 "
-"APK 到 Google Play 上。每個 APK 都應至為單一重架構建置。為 ARMv7 與 ARMv8 建"
+"APK 到 Google Play 上。每個 APK 都應至為單一重架建構置。為 ARMv7 與 ARMv8 建"
 "立 APK 應該可涵蓋當今大多數的裝置。"
 
 msgid ""
@@ -381,60 +387,66 @@ msgid ""
 "outside of the editor. During the export process, these override the values "
 "that you set in the export menu."
 msgstr ""
+"您可以使用下列環境變數在編輯器外部設定匯出選項。在匯出過程中，這些值會覆寫您"
+"在匯出選單中設定的值。"
 
-#, fuzzy
 msgid "Android export environment variables"
-msgstr "環境變數"
+msgstr "Android匯出環境變數"
 
-#, fuzzy
 msgid "Export option"
 msgstr "匯出選項"
 
-#, fuzzy
 msgid "Environment variable"
 msgstr "環境變數"
 
 msgid "Encryption / Encryption Key"
-msgstr ""
+msgstr "加密/加密金鑰"
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "GODOT_SCRIPT_ENCRYPTION_KEY"
 
 msgid "Options / Keystore / Debug"
-msgstr ""
+msgstr "選項/金鑰庫/除錯"
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
+msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
 
 msgid "Options / Keystore / Debug User"
-msgstr ""
+msgstr "選項/金鑰庫/除錯使用者"
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
+msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
 
 msgid "Options / Keystore / Debug Password"
-msgstr ""
+msgstr "選項/金鑰庫/除錯密碼"
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
+msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
 
 msgid "Options / Keystore / Release"
-msgstr ""
+msgstr "選項/金鑰庫/發布"
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
+msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
 
 msgid "Options / Keystore / Release User"
-msgstr ""
+msgstr "選項/金鑰庫/釋放使用者"
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
+msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
 
 msgid "Options / Keystore / Release Password"
-msgstr ""
+msgstr "選項/金鑰庫/釋放密碼"
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
+msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

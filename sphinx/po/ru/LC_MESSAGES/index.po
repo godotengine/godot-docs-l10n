@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,9 +23,8 @@ msgstr "О Godot Engine"
 msgid "Getting started"
 msgstr "Начало работы"
 
-#, fuzzy
 msgid "Manual"
-msgstr "Ограничение инструкций"
+msgstr "Руководство"
 
 msgid "Contributing"
 msgstr "Содействие"
@@ -36,9 +35,8 @@ msgstr "Сообщество"
 msgid "Class reference"
 msgstr "Справочник по классам"
 
-#, fuzzy
 msgid "Godot Docs – *master* branch"
-msgstr "Документация Godot – ветка *3.5*"
+msgstr "Документация Godot – *главная* ветка"
 
 msgid ""
 "Godot's documentation is available in various languages and versions. Expand "
@@ -48,15 +46,14 @@ msgstr ""
 "Разверните панель \"Read the Docs\" в нижней части боковой панели, чтобы "
 "увидеть весь список."
 
-#, fuzzy
 msgid ""
 "This documentation is translated from the `original English one <https://"
 "docs.godotengine.org/en/stable>`_ by community members on `Weblate <https://"
 "hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 msgstr ""
 "Эта документация была переведена с оригинального `английского источника "
-"<https://docs.godotengine.org/en/latest>`_ членами сообщества на `Weblate "
-"<https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
+"<https://docs.godotengine.org/en/latest>`_ участниками сообщества на "
+"`Weblate <https://hosted.weblate.org/projects/godot-engine/godot-docs>`_."
 
 msgid ""
 "Depending on the translation effort's completion level, you may find "
@@ -69,16 +66,16 @@ msgstr ""
 "помочь сообществу добавить новые переводы или проверить уже существующие на "
 "Weblate."
 
-#, fuzzy
 msgid ""
 "For the time being, localized translations are only available for the "
 "\"stable\" branch. You can still view the English documentation for other "
 "engine versions using the \"Read the Docs\" panel at the bottom of the "
 "sidebar."
 msgstr ""
-"На данный момент локализованные переводы доступны только для ветки "
-"\"latest\" (разработка), но тем не менее должны подходить для изучения и "
-"использования стабильных релизов Godot."
+"На данный момент локализованные переводы доступны только для «стабильной» "
+"ветки. Вы по-прежнему можете просмотреть документацию на английском языке "
+"для других версий движка, используя панель «Читать документацию» в нижней "
+"части боковой панели."
 
 msgid ""
 "Welcome to the official documentation of `Godot Engine <https://godotengine."
@@ -94,18 +91,17 @@ msgstr ""
 "чтобы получить общее представление о том, что эта документация может "
 "предложить."
 
-#, fuzzy
 msgid ""
 "The table of contents in the sidebar should let you easily access the "
 "documentation for your topic of interest. You can also use the search "
 "function in the top-left corner."
 msgstr ""
-"Оглавление на боковой панели должно позволить вам легко получить доступ к "
-"документации по интересующей вас теме. Вы также можете использовать функцию "
-"поиска в верхнем левом углу."
+"Оглавление в боковой панели позволяет легко перейти к документации по "
+"интересующей вас теме. Вы также можете воспользоваться функцией поиска в "
+"левом верхнем углу."
 
 msgid "Get involved"
-msgstr ""
+msgstr "Участвуйте"
 
 msgid ""
 "Godot Engine is an open source project developed by a community of "
@@ -137,34 +133,38 @@ msgid "weblate_widget"
 msgstr "weblate_widget"
 
 msgid "Translation status"
-msgstr "Translation status (статус перевода)"
+msgstr "Статус перевода"
 
-#, fuzzy
 msgid "Offline documentation"
-msgstr "Онлайн документация (RST)"
+msgstr "Офлайн документация"
 
 msgid ""
 "To browse the documentation offline, you can use the mirror of the "
 "documentation hosted on `DevDocs <https://devdocs.io/godot/>`__. To enable "
 "offline browsing on DevDocs, you need to:"
 msgstr ""
+"Для просмотра документации оффлайн, Вы можете использовать зеркало "
+"документации, размещенное на `DevDocs <https://devdocs.io/godot/>`__. Для "
+"включения автономного просмотра на DevDocs вам нужно:"
 
 msgid "Click the three dots in the top-left corner, choose **Preferences**."
-msgstr ""
+msgstr "Нажмите на три точки в верхнем левом углу и выберите **Настройки**."
 
 msgid ""
 "Enable the desired version of the Godot documentation by checking the box "
 "next to it in the sidebar."
 msgstr ""
+"Включите необходимую версию документации Godot, установив флажок рядом с ней "
+"в боковой панели."
 
 msgid "Click the three dots in the top-left corner, choose **Offline data**."
 msgstr ""
+"Нажмите на три точки на верхнем-левом углу и выберите \"Офлайн данные\""
 
-#, fuzzy
 msgid "Click the **Install** link next to the Godot documentation."
-msgstr "Что такое документация Godot"
+msgstr ""
+"Нажмите ссылку **Установить** расположенной рядом с документацией Godot."
 
-#, fuzzy
 msgid ""
 "You can also `download an HTML copy <https://nightly.link/godotengine/godot-"
 "docs/workflows/build_offline_docs/master/godot-docs-html-master.zip>`__ for "
@@ -177,7 +177,6 @@ msgstr ""
 "понедельник). Распакуйте ZIP архив, затем откройте самый верхний файл "
 "``index.html`` в браузере."
 
-#, fuzzy
 msgid ""
 "For mobile devices or e-readers, you can also `download an ePub copy "
 "<https://nightly.link/godotengine/godot-docs/workflows/build_offline_docs/"

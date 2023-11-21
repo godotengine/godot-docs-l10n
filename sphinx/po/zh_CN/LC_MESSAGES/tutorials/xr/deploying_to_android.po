@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Deploying to Android"
-msgstr "为 Android 导出"
+msgstr "部署到 Android"
 
 msgid "Setup"
 msgstr "场景布置"
@@ -35,14 +34,12 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Installing OpenJDK 11"
+msgid "Installing OpenJDK 17"
 msgstr "安装 OpenJDK 11"
 
-#, fuzzy
 msgid "Installing Android Studio"
-msgstr "Android Studio"
+msgstr "安装 Android Studio"
 
-#, fuzzy
 msgid "Creating a debug.keystore"
 msgstr "创建 debug.keystore"
 
@@ -55,8 +52,8 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Custom Android build"
-msgstr "自定义模块"
+msgid "Gradle Android build"
+msgstr "自定义 Android 构建"
 
 msgid ""
 "Official support for the Android platform wasn't added to the OpenXR "
@@ -68,7 +65,7 @@ msgstr ""
 
 msgid ""
 "In order to include the vendor-specific OpenXR loader into your project, you "
-"will need to setup a custom Android build."
+"will need to setup a gradle Android build."
 msgstr ""
 
 msgid "Select **Install Android Build Template...** from the **Project** menu:"
@@ -83,54 +80,70 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"You can read more about custom builds here: :ref:`doc_android_custom_build`."
+"You can read more about gradle builds here: :ref:`doc_android_gradle_build`."
 msgstr ""
 "你可以在这里了解更多关于字符串格式化的内容：\\ :ref:"
 "`doc_gdscript_printf`\\ 。"
 
 #, fuzzy
-msgid "Installing the loader plugins"
-msgstr "安装插件"
+msgid "Installing the vendors plugin"
+msgstr "安装加载器插件"
 
 msgid ""
-"The Android plugin structure has been restructured in Godot 4.2, if you've "
-"previously installed the loader plugin you need to delete it from the "
-"`android/plugins` folder. The loader plugin available in the asset library "
-"is still the old one, it will be updated to the new one after 4.2 is "
-"released."
+"The Android plugin structure has been restructured in Godot 4.2, and the "
+"loader plugin was renamed to vendors plugin as it now includes more than "
+"just loaders. If you've previously installed the loader plugin you need to "
+"delete it from the `android/plugins` folder. The loader plugin available in "
+"the asset library is still the old one, it will be updated to the new vendor "
+"plugin after 4.2 is released."
 msgstr ""
 
+#, fuzzy
 msgid ""
-"The loaders can be downloaded from the asset library, search for OpenXR "
-"Loaders and install the plugin:"
+"The vendors plugin can be downloaded from the asset library, search for "
+"OpenXR and install the plugin:"
 msgstr ""
+"可以从\\ :ref:`资产库 <doc_what_is_assetlib>`\\ 下载编辑器插件，扩展编辑器的"
+"功能。"
 
 #, fuzzy
 msgid "You will find the installed files inside the **addons** folder."
 msgstr "这会将所需文件下载到该文件夹中."
 
+#, fuzzy
 msgid ""
-"Alternatively you can manually install the loader plugin by downloading the "
+"Alternatively you can manually install the vendors plugin by downloading the "
 "v2.x version of the plugin `from the release page here <https://github.com/"
-"GodotVR/godot_openxr_loaders/releases>`__."
+"GodotVR/godot_openxr_vendors/releases>`__."
 msgstr ""
+"你可以在 `OpenVR GitHub 仓库 <https://github.com/GodotVR/"
+"godot_openvr_fps>`_\\ 上找到完成的项目。"
 
 msgid ""
-"You will need to copy the `assets/addons/godotopenxr` folder from the zip "
-"file into your projects `assets/addons` folder."
+"You will need to copy the `assets/addons/godotopenxrvendors` folder from the "
+"zip file into your projects `assets/addons` folder."
 msgstr ""
 
 #, fuzzy
 msgid ""
-"You can find the main repository of the loader plugin `here <https://github."
-"com/GodotVR/godot_openxr_loaders>`__."
+"You can find the main repository of the vendors plugin `here <https://github."
+"com/GodotVR/godot_openxr_vendors>`__."
 msgstr ""
 "你可以在 `OpenVR GitHub 仓库 <https://github.com/GodotVR/"
 "godot_openvr_fps>`_\\ 上找到完成的项目。"
 
 #, fuzzy
+msgid "Enabling the vendors plugin"
+msgstr "启用插件"
+
+msgid ""
+"The vendors plugin needs to be enabled before the export settings become "
+"accessible. Open **Project** and select **Project Settings...**. Go to the "
+"**Plugins** tab. Enable the **GodotOpenXRVendors** plugin."
+msgstr ""
+
 msgid "Creating the export presets"
-msgstr "创建 UWP 导出模板"
+msgstr "创建导出预设"
 
 msgid ""
 "You will need to setup a separate export preset for each device, as each "
@@ -170,9 +183,9 @@ msgid ""
 msgstr ""
 
 msgid ""
-"The fourth option is the official Khronos (KHR) loader, in due time all "
-"headsets should work with this loader. At the moment this loader has been "
-"tested with the Magic Leap 2 and standalone HTC headsets."
+"The fourth option is the official Khronos loader, in due time all headsets "
+"should work with this loader. At the moment this loader has been tested with "
+"the Magic Leap 2 and standalone HTC headsets."
 msgstr ""
 
 msgid ""
@@ -187,9 +200,8 @@ msgid ""
 "support will work on these."
 msgstr ""
 
-#, fuzzy
 msgid "Running on your device from the Godot editor"
-msgstr "在编辑器中运行代码"
+msgstr "通过 Godot 编辑器在设备上运行"
 
 msgid ""
 "If you've setup your export settings as described above, and your headset is "

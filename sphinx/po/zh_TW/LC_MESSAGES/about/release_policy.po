@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,6 +26,8 @@ msgid ""
 "depends on the choices of core contributors and the needs of the community "
 "at a given time."
 msgstr ""
+"Godot 的發行政策是在不斷改進的。以下內容提供了大致的預期結果，但實際會發生什"
+"麼取決於核心貢獻者的選擇，以及社區在特定時期的需求。"
 
 msgid "Godot versioning"
 msgstr "Godot 版本"
@@ -35,18 +37,25 @@ msgid ""
 "``major.minor.patch`` versioning system, albeit with an interpretation of "
 "each term adapted to the complexity of a game engine:"
 msgstr ""
+"Godot 鬆散地遵循了 `語義化版本 <https://semver.org/>`__ ，採用了 ``major."
+"minor.patch`` 的版本系統，不過對每個術語的解釋都根據遊戲引擎的複雜性進行了調"
+"整："
 
 msgid ""
 "The ``major`` version is incremented when major compatibility breakages "
 "happen which imply significant porting work to move projects from one major "
 "version to another."
 msgstr ""
+"``major`` （主要）版本在發生重大不相容時會增加，這意味著專案需要大量的移植工"
+"作才能從一個主要版本遷移另一個主要版本。"
 
 msgid ""
 "For example, porting Godot projects from Godot 3.x to Godot 4.x requires "
 "running the project through a conversion tool, and then performing a number "
 "of further adjustments manually for what the tool could not do automatically."
 msgstr ""
+"例如，將 Godot 專案從 Godot 3.x 移植到 Godot 4.x 時，需要通過轉換工具運作專"
+"案，然後對工具無法自動完成的工作進行進一步的手動調整。"
 
 msgid ""
 "The ``minor`` version is incremented for feature releases that do not break "
@@ -54,6 +63,9 @@ msgid ""
 "areas *may* happen in minor versions, but the vast majority of projects "
 "should not be affected or require significant porting work."
 msgstr ""
+"``minor`` （次要）版本在不嚴重破壞相容性的功能發行時增加。在非常特定的領域"
+"中，小版本 *可能* 會出現輕微的相容性問題，但絕大部分專案並不會受到影響或需要"
+"做大量的移植工作。"
 
 msgid ""
 "This is because Godot, as a game engine, covers many areas like rendering, "
@@ -61,11 +73,16 @@ msgid ""
 "might sometimes require changing a feature's behavior or modifying a class's "
 "interface, even if the rest of the engine API remains backwards compatible."
 msgstr ""
+"這是因為 Godot 作為一個遊戲引擎， 涵蓋了渲染、物理、腳本等許多領域。修復某個"
+"領域的 Bug 或實作新功能，有時可能需要改變某個功能的行為，或者修改某個類的介"
+"面，即便是引擎 API 的其他部分仍然向後相容。"
 
 msgid ""
 "Upgrading to a new minor version is recommended for all users, but some "
 "testing is necessary to ensure that your project still behaves as expected."
 msgstr ""
+"建議所有使用者升級到新的次要版本，但有必要進行一些測試，以確保你的專案仍能按"
+"照預期的方式運作。"
 
 msgid ""
 "The ``patch`` version is incremented for maintenance releases which focus on "
@@ -73,16 +90,21 @@ msgid ""
 "support, and backporting safe usability enhancements. Patch releases are "
 "backwards compatible."
 msgstr ""
+"``patch`` （更新）版本是為維護版本而增加的，其重點是修復錯誤和安全問題，實作"
+"平臺支援的新要求，以及可用性安全性增強。更新版本是向後相容的。"
 
 msgid ""
 "Patch versions may include minor new features which do not impact the "
 "existing API, and thus have no risk of impacting existing projects."
 msgstr ""
+"更新版本可能包含一些不影響現有 API 的小的新功能，因此沒有影響現有專案的風險。"
 
 msgid ""
 "Updating to new patch versions is therefore considered safe and strongly "
 "recommended to all users of a given stable branch."
 msgstr ""
+"因此，更新到新的更新版本被認為是安全的，並強烈推薦給特定穩定分支的所有使用"
+"者。"
 
 msgid ""
 "We call ``major.minor`` combinations *stable branches*. Each stable branch "
@@ -91,6 +113,9 @@ msgid ""
 "name (for example patch updates for the 4.0 stable branch are developed in "
 "the ``4.0`` Git branch)."
 msgstr ""
+"我們將 ``major.minor`` 組合稱為 *穩定分支* 。每個穩定分支都從 ``major."
+"minor`` 版本開始（不寫為 ``0`` 的 ``patch`` ），後續維護版本的開發都位於同名"
+"的 Git 分支上（例如 4.0 穩定分支更新更新的開發位於 ``4.0`` Git 分支）。"
 
 msgid "Release support timeline"
 msgstr "釋出支援時程"
@@ -101,6 +126,8 @@ msgid ""
 "stable branches on a *best effort* basis for as long as they have active "
 "users who need maintenance updates."
 msgstr ""
+"對穩定分支的支援會 *至少* 持續到下一個穩定分支發行並獲得第一個更新更新。在實"
+"踐中，只要還有活躍使用者需要維護更新，我們就會 *以最大努力* 去支援穩定分支。"
 
 msgid ""
 "Whenever a new major version is released, we make the previous stable branch "
@@ -109,6 +136,9 @@ msgid ""
 "new major version. This was the case for the 2.1 branch, and is the case for "
 "the 3.6 branch."
 msgstr ""
+"每當一個新的主版本發行時，我們都會對上一個穩定分支提供長期的支援，並盡最大努"
+"力為那些無法將複雜專案移植到新的主要版本中的舊版使用者提供修復幫助。2.1 分支"
+"如此，3.6 分支也如此。"
 
 msgid ""
 "In a given minor release series, only the latest patch release receives "
@@ -116,6 +146,9 @@ msgid ""
 "upgrade to the latest patch release of that series and test again before "
 "reporting an issue on GitHub."
 msgstr ""
+"次版本號相同的一系列版本中，只有最新的更新版本會得到支援。如果你在使用較舊的"
+"更新版本時遇到問題，請在前往 GitHub 提交問題之前先升級到該系列的最新更新版本"
+"並測試。"
 
 msgid "**Version**"
 msgstr "**版本**"
@@ -127,9 +160,8 @@ msgid "**Support level**"
 msgstr "**支援等級**"
 
 msgid "Godot 4.2 (`master`)"
-msgstr ""
+msgstr "Godot 4.2（ `master` ）"
 
-#, fuzzy
 msgid "November 2023 (estimate)"
 msgstr "2014 年 12 月"
 
@@ -137,80 +169,69 @@ msgid ""
 "|unstable| *Development.* Receives new features, usability and performance "
 "improvements, as well as bug fixes, while under development."
 msgstr ""
+"|unstable| *開發。*在開發過程中獲得新功能、可用性和效能改進以及錯誤修復。"
 
-#, fuzzy
 msgid "unstable"
 msgstr "啟用"
 
-#, fuzzy
 msgid "Godot 4.1"
 msgstr "Godot 4.0"
 
-#, fuzzy
 msgid "July 2023"
 msgstr "2016 年 7 月"
 
 msgid ""
 "|supported| Receives fixes for bugs and security issues, as well as patches "
 "that enable platform support."
-msgstr ""
+msgstr "|supported| 接收錯誤和安全性問題的修復，以及啟用平台支援的修補程式。"
 
-#, fuzzy
 msgid "supported"
 msgstr "支援的圖片格式"
 
 msgid "Godot 4.0"
 msgstr "Godot 4.0"
 
-#, fuzzy
 msgid "March 2023"
 msgstr "2019 年 3 月"
 
-#, fuzzy
 msgid "Godot 3.6 (`3.x`, LTS)"
 msgstr "Godot 3.2"
 
 msgid "Q3 2023 (estimate)"
-msgstr ""
+msgstr "2023 年第三季度（預計）"
 
 msgid ""
 "|supported| *Beta.* Receives new features, usability and performance "
 "improvements, as well as bug fixes, while under development."
 msgstr ""
+"|supported| *測試版。* 在開發過程中獲得新功能、可用性和效能改進以及錯誤修復。"
 
-#, fuzzy
 msgid "Godot 3.5"
 msgstr "Godot 3.2"
 
 msgid "August 2022"
-msgstr ""
+msgstr "2022 年 8 月"
 
-#, fuzzy
 msgid "Godot 3.4"
 msgstr "Godot 3.2"
 
-#, fuzzy
 msgid "November 2021"
 msgstr "2014 年 12 月"
 
-#, fuzzy
 msgid ""
 "|eol| No longer supported, as fully superseded by the compatible 3.5 release "
 "(last update: 3.4.5)."
 msgstr "|eol| 已停止支援。"
 
 msgid "eol"
-msgstr ""
+msgstr "eol"
 
-#, fuzzy
 msgid "Godot 3.3"
 msgstr "Godot 3.2"
 
-#, fuzzy
 msgid "April 2021"
 msgstr "2019 年 3 月"
 
-#, fuzzy
 msgid ""
 "|eol| No longer supported, as fully superseded by the compatible 3.4 release "
 "(last update: 3.3.4)."
@@ -222,7 +243,6 @@ msgstr "Godot 3.2"
 msgid "January 2020"
 msgstr "2020 年 1 月"
 
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.2.3)."
 msgstr "|eol| 已停止支援。"
 
@@ -232,7 +252,6 @@ msgstr "Godot 3.1"
 msgid "March 2019"
 msgstr "2019 年 3 月"
 
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.1.2)."
 msgstr "|eol| 已停止支援。"
 
@@ -242,7 +261,6 @@ msgstr "Godot 3.0"
 msgid "January 2018"
 msgstr "2018 年 1 月"
 
-#, fuzzy
 msgid "|eol| No longer supported (last update: 3.0.6)."
 msgstr "|eol| 已停止支援。"
 
@@ -252,7 +270,6 @@ msgstr "Godot 2.1"
 msgid "July 2016"
 msgstr "2016 年 7 月"
 
-#, fuzzy
 msgid "|eol| No longer supported (last update: 2.1.6)."
 msgstr "|eol| 已停止支援。"
 
@@ -262,7 +279,6 @@ msgstr "Godot 2.0"
 msgid "February 2016"
 msgstr "2016 年 2 月"
 
-#, fuzzy
 msgid "|eol| No longer supported (last update: 2.0.4.1)."
 msgstr "|eol| 已停止支援。"
 
@@ -281,11 +297,9 @@ msgstr "Godot 1.0"
 msgid "December 2014"
 msgstr "2014 年 12 月"
 
-#, fuzzy
 msgid "partial"
-msgstr "\\ Spatial"
+msgstr "partial"
 
-#, fuzzy
 msgid ""
 "**Legend:** |supported| Full support – |partial| Partial support – |eol| No "
 "support (end of life) – |unstable| Development version"
@@ -293,7 +307,6 @@ msgstr ""
 "**圖例：** |supported| 完整支援 - |partial| 部分支援 - |eol| 停止支援 (EOL) "
 "- |unstable| 開發中版本"
 
-#, fuzzy
 msgid ""
 "Pre-release Godot versions aren't intended to be used in production and are "
 "provided for testing purposes only."
@@ -303,8 +316,9 @@ msgid ""
 "See :ref:`doc_upgrading_to_godot_4` for instructions on migrating a project "
 "from Godot 3.x to 4.x."
 msgstr ""
+"有關將專案從 Godot 3.x 遷移到 4.x 的說明，請參閱 :ref:"
+"`doc_upgrading_to_godot_4` 。"
 
-#, fuzzy
 msgid "Which version should I use for a new project?"
 msgstr "GDScript是什麼？為什麼我要用它？"
 
@@ -317,14 +331,21 @@ msgid ""
 "check which methods have been renamed (if you get a script error while "
 "trying to use a specific node or method that was renamed in Godot 4.x)."
 msgstr ""
+"我們建議在新專案中使用 Godot 4.x，因為在未來 3.x 停止接收更新後很長時間內仍將"
+"支援 Godot 4.x 系列。 需要注意的是，許多協力廠商文件尚未針對 Godot 4.x 進行更"
+"新。 如果您必須學習為 Godot 3.x 設計的教學，我們建議在單獨的分頁中保持 :ref:"
+"`doc_upgrading_to_godot_4` 打開，以檢查哪些方法已被重命名（如果您在嘗試使用特"
+"定節點或在 Godot 4.x 中被重命名的方法時遇到了腳本錯誤的話）。"
 
 msgid ""
 "If your project requires a feature that is missing in 4.x (such as GLES2/"
 "WebGL 1.0), you should use Godot 3.x for a new project instead."
 msgstr ""
+"如果你的專案需要在 4.x 版本中缺失的功能（如GLE2/WebGL 1.0），那麼你應該為新專"
+"案使用 Godot 3.x。"
 
 msgid "Should I upgrade my project to use new engine versions?"
-msgstr ""
+msgstr "我應該把專案升級到新版本的引擎嗎？"
 
 msgid ""
 "Upgrading software while working on a project is inherently risky, so "
@@ -332,11 +353,14 @@ msgid ""
 "upgrade. Also, make backups of your project or use version control to "
 "prevent losing data in case the upgrade goes wrong."
 msgstr ""
+"在專案中途升級軟體本身就有風險，所以在嘗試升級之前請慎重考慮，你的專案是否能"
+"夠從升級中獲益。另外，請做好專案的備份或者使用版本控制系統，防止在升級出錯時"
+"造成資料的丟失。"
 
 msgid ""
 "That said, we do our best to keep minor and especially patch releases "
 "compatible with existing projects."
-msgstr ""
+msgstr "也就是說，我們盡力確保的是次要版本，尤其是更新版本與現有專案相容。"
 
 msgid ""
 "The general recommendation is to upgrade your project to follow new *patch* "
@@ -345,6 +369,10 @@ msgid ""
 "important for mobile platforms). You also get continued support, as only the "
 "last patch release receives support on official community platforms."
 msgstr ""
+"一般性建議是升級你的專案以跟進新的 *更新* 版本，例如從 4.0.2 升級到 4.0.3。 "
+"這可以確保你獲得錯誤修復、安全更新和平臺支援更新（這對於移動平臺來說尤其重"
+"要）。 你還可以獲得持續的支援，因為只有最後一個更新版本才會在官方社區平臺上獲"
+"得支援。"
 
 msgid ""
 "For *minor* releases, you should determine whether it's a good idea to "
@@ -355,6 +383,10 @@ msgid ""
 "as required to fix some bugs. This is especially the case in classes marked "
 "as *experimental* in the documentation."
 msgstr ""
+"對於 *次要* 版本，你應該根據具體情況具體分析的原則，來確定升級是否是個好主"
+"意。 我們已經付出了很大的努力來使升級過程盡可能無縫，但次要版本中可能會出現一"
+"些重大更改，並且回歸的風險也更大。次要版本中包含的某些修復，也可能會根據修復"
+"某些錯誤的需要而更改類的預期行為。 在文件中標記為 *實驗性* 的類中尤其如此。"
 
 msgid ""
 "*Major* releases bring a lot of new functionality, but they also remove "
@@ -366,11 +398,15 @@ msgid ""
 "3.5.2 and possibly 3.6 in the future, but not to 4.0+, unless your project "
 "really needs the new features that come with 4.0+."
 msgstr ""
+"*主要* 版本帶來了許多新功能，但它們也會移除以前有的功能，並有可能提高硬體要"
+"求。與次要版本相比，它們還需要更多的工作來升級。 因此，如果你對專案目前的運作"
+"方式感到滿意，我們建議你堅持使用你啟動專案時使用的主要版本。 例如，如果你的專"
+"案是從 3.5 開始的，那麼我們建議升級到 3.5.2，將來也許升級到 3.6，但不要升級"
+"到 4.0+，除非你的專案確實需要 4.0+ 帶來的新功能。"
 
 msgid "When is the next release out?"
 msgstr "下個版本什麼時候出？"
 
-#, fuzzy
 msgid ""
 "While Godot contributors aren't working under any deadlines, we strive to "
 "publish minor releases relatively frequently."
@@ -383,6 +419,8 @@ msgid ""
 "to a faster paced development workflow, with the 4.1 release expected within "
 "late Q2 / early Q3 2023."
 msgstr ""
+"尤其是在 4.0 經歷了漫長的發行週期之後，我們正在轉向更快節奏的開發工作流程，預"
+"計 4.1 版本將在 2023 年第二季度末 / 第三季度初發行。"
 
 msgid ""
 "Frequent minor releases will enable us to ship new features faster (possibly "
@@ -390,12 +428,17 @@ msgid ""
 "features and their usability. Likewise, the general user experience will be "
 "improved more steadily with a faster path to the end users."
 msgstr ""
+"頻繁發行的次要版本可以讓我們能夠更快地發行新功能（有可能是實驗性的），快速獲"
+"得使用者回饋，並反覆運算以改進這些功能及其可用性。 同樣地，更快到達最終使用"
+"者，一般使用者的體驗就能夠得到更穩定的改善。"
 
 msgid ""
 "Maintenance (patch) releases are released as needed with potentially very "
 "short development cycles, to provide users of the current stable branch with "
 "the latest bug fixes for their production needs."
 msgstr ""
+"維護（更新）版本是按需發行的，開發週期可能很短，作用是為目前穩定分支的使用者"
+"提供最新的錯誤修復，以滿足他們的生產需求。"
 
 msgid ""
 "The 3.6 release is still planned and should be the last stable branch of "
@@ -404,17 +447,21 @@ msgid ""
 "4.x, or having published games which they need to keep updating for platform "
 "requirements)."
 msgstr ""
+"3.6 版本仍在計畫中，它應該是 Godot 3.x 的最後一個穩定分支。 這將是一個長期支"
+"援 (LTS) 版本，只要使用者仍然需要它，我們就計畫對其提供支援（由於 Godot 4.x "
+"中缺少功能，或者已發行的遊戲需要持續更新以滿足平臺需求）。"
 
 msgid "What are the criteria for compatibility across engine versions?"
-msgstr ""
+msgstr "引擎版本之間的相容標準是怎樣的？"
 
 msgid ""
 "This section is intended to be used by contributors to determine which "
 "changes are safe for a given release. The list is not exhaustive; it only "
 "outlines the most common situations encountered during Godot's development."
 msgstr ""
+"本節旨在供貢獻者使用以確定哪些更改對於給定版本是安全的。 該列表並不詳盡； 它"
+"只是概述了 Godot 開發過程中遇到的最常見的情況。"
 
-#, fuzzy
 msgid "The following changes are acceptable in patch releases:"
 msgstr "在 Godot 儲存庫中目前有設定下列 Label："
 
@@ -426,32 +473,39 @@ msgid ""
 "of projects, it should be made optional (e.g. using a project setting or "
 "separate method)."
 msgstr ""
+"修復一個不會對大多數專案產生重大負面影響的 bug，比如視覺或物理 bug。Godot 的"
+"物理引擎不是確定性的，所以修復物理 bug 不會被認為會破壞相容性。如果修復一個 "
+"bug 會產生可能影響很多專案的負面影響，應該將其設定為可選項（例如使用專案設定"
+"或單獨的方法）。"
 
 msgid "Adding a new optional parameter to a method."
-msgstr ""
+msgstr "為一個方法新增一個可選參數。"
 
 msgid "Small-scale editor usability tweaks."
-msgstr ""
+msgstr "小規模的編輯器可用性調整。"
 
 msgid ""
 "Note that we tend to be more conservative with the fixes we allow in each "
 "subsequent patch release. For instance, 4.0.1 may receive more impactful "
 "fixes than 4.0.4 would."
 msgstr ""
+"需要注意的是，我們在每個後續的更新發行中通常更加保守地處理允許的修復。 例如，"
+"4.0.1 可能會比 4.0.4 收到更具影響的修復。"
 
 msgid ""
 "The following changes are acceptable in minor releases, but not patch "
 "releases:"
-msgstr ""
+msgstr "以下更改在次要版本中是可接受的，但在更新版本中則是不可接受的："
 
-#, fuzzy
 msgid "Significant new features."
-msgstr "功能清單"
+msgstr "重要新功能。"
 
 msgid ""
 "Renaming a method parameter. In C#, method parameters can be passed by name "
 "(but not in GDScript). As a result, this can break some projects that use C#."
 msgstr ""
+"重命名方法參數。在 C# 中，方法參數可以通過名稱傳遞（但在 GDScript 中不行）。"
+"因此這可能會破壞一些使用 C# 的專案。"
 
 msgid ""
 "Deprecating a method, member variable, or class. This is done by adding a "
@@ -459,9 +513,12 @@ msgid ""
 "When a method is marked as deprecated, it's slated to be removed in the next "
 "*major* release."
 msgstr ""
+"放棄使用方法、成員變數或類。 這是通過向其類引用新增一個已放棄使用旗標來完成"
+"的，該旗標將顯示在編輯器中。 當一個方法被標記為已放棄使用時，它將在下一個*主"
+"要（major）*版本中刪除。"
 
 msgid "Changes that affect the default project theme's visuals."
-msgstr ""
+msgstr "影響預設專案主題視覺效果的更改。"
 
 msgid ""
 "Bug fixes which significantly change the behavior or the output, with the "
@@ -469,33 +526,38 @@ msgid ""
 "may favor keeping a buggy behavior so we don't break existing projects which "
 "likely already rely on the bug or use a workaround."
 msgstr ""
+"某些引起了行為或輸出的明顯改變的錯誤修復，旨在更好地滿足使用者的期望。相比之"
+"下，在更新版本中，我們可能傾向於保留一些錯誤行為，這樣我們就不會破壞可能已經"
+"依賴該錯誤或使用了解決方法的現有專案。"
 
 msgid "Performance optimizations that result in visual changes."
-msgstr ""
+msgstr "導致了視覺變化的性能優化。"
 
 msgid ""
 "The following changes are considered **compatibility-breaking** and can only "
 "be performed in a new major release:"
-msgstr ""
+msgstr "以下更改被視為**破壞相容性**，並且只能在新的主要（major）版本中執行："
 
 msgid "Renaming or removing a method, member variable, or class."
-msgstr ""
+msgstr "重命名或刪除方法、成員變數或類。"
 
 msgid ""
 "Modifying a node's inheritance tree by making it inherit from a different "
 "class."
-msgstr ""
+msgstr "通過讓節點繼承不同的類來修改節點的繼承樹。"
 
 msgid ""
 "Changing the default value of a project setting value in a way that affects "
 "existing projects. To only affect new projects, the project manager should "
 "write a modified ``project.godot`` instead."
 msgstr ""
+"改變專案設定的預設值會影響已存在的專案。如果想只影響到新專案，專案管理者應當"
+"用編寫一份修改的 ``project.godot`` 來代替。"
 
 msgid ""
 "Since Godot 5.0 hasn't been branched off yet, we currently discourage making "
 "compatibility-breaking changes of this kind."
-msgstr ""
+msgstr "由於 Godot 5.0 分支目前還沒有建立，我們不建議這種破壞相容性的更改。"
 
 msgid ""
 "When modifying a method's signature in any fashion (including adding an "
@@ -505,6 +567,10 @@ msgid ""
 "request #76446 <https://github.com/godotengine/godot/pull/76446>`_ for more "
 "information."
 msgstr ""
+"當以任何方式修改一個方法的簽章（包括新增可選參數）時，必須建立一個 "
+"GDExtension 相容方法。這將確保現有的 GDExtensions 能夠在更新版本和次要版本中"
+"繼續工作，如此使用者就不必重新編譯它們。更多資訊請參見`拉取清求 #76446 "
+"<https://github.com/godotengine/godot/pull/76446>`_ 。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

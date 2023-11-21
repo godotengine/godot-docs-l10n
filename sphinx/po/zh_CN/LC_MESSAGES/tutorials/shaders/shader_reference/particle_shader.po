@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -118,27 +118,24 @@ msgstr "in float **TIME**"
 msgid "Global time, in seconds."
 msgstr "全球时间, 以秒为单位."
 
-#, fuzzy
 msgid "in float **PI**"
-msgstr "in float **TIME**"
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
 "diameter and amount of radians in half turn."
 msgstr ""
 
-#, fuzzy
 msgid "in float **TAU**"
-msgstr "in float **DELTA**"
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "in float **TIME**"
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
@@ -170,9 +167,8 @@ msgstr "in uint **NUMBER**"
 msgid "Unique number since emission start."
 msgstr "发射开始后的唯一编号。"
 
-#, fuzzy
 msgid "in uint **INDEX**"
-msgstr "in int **INDEX**"
+msgstr "in uint **INDEX**"
 
 msgid "Particle index (from total particles)."
 msgstr "粒子索引（在所有粒子范围内）。"
@@ -222,9 +218,8 @@ msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
 msgstr "自定义粒子数据。网格的着色器可以使用 **INSTANCE_CUSTOM** 访问。"
 
-#, fuzzy
 msgid "inout float **MASS**"
-msgstr "out float **MASS**"
+msgstr "inout float **MASS**"
 
 msgid ""
 "Particle mass, intended to be used with attractors. Equals ``1.0`` by "
@@ -244,25 +239,20 @@ msgstr ""
 msgid "Start built-ins"
 msgstr "顶点内置"
 
-#, fuzzy
 msgid "in bool **RESTART_POSITION**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_POSITION**"
 
-#, fuzzy
 msgid "in bool **RESTART_ROT_SCALE**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_ROT_SCALE**"
 
-#, fuzzy
 msgid "in bool **RESTART_VELOCITY**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_VELOCITY**"
 
-#, fuzzy
 msgid "in bool **RESTART_COLOR**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_COLOR**"
 
-#, fuzzy
 msgid "in bool **RESTART_CUSTOM**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_CUSTOM**"
 
 #, fuzzy
 msgid "Process built-ins"
@@ -275,87 +265,77 @@ msgstr "in bool **RESTART**"
 msgid "``true`` if the current process frame is first for the particle."
 msgstr "``true`` , 如果当前面是正面."
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_POSITION**"
-msgstr "in uint **RANDOM_SEED**"
+msgstr "in uint **FLAG_EMIT_POSITION**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a position to a new particle's transform."
 msgstr ""
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_ROT_SCALE**"
-msgstr "in uint **RANDOM_SEED**"
+msgstr "in uint **FLAG_EMIT_ROT_SCALE**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign the rotation and scale to a new particle's transform."
 msgstr ""
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_VELOCITY**"
-msgstr "inout vec3 **VELOCITY**"
+msgstr "in uint **FLAG_EMIT_VELOCITY**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a velocity to a new particle."
 msgstr ""
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_COLOR**"
-msgstr "in vec3 **LIGHT_COLOR**"
+msgstr "in uint **FLAG_EMIT_COLOR**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a color to a new particle."
 msgstr ""
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_CUSTOM**"
-msgstr "in uint **RANDOM_SEED**"
+msgstr "in uint **FLAG_EMIT_CUSTOM**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a custom data vector to a new particle."
 msgstr ""
 
-#, fuzzy
 msgid "in bool **COLLIDED**"
-msgstr "inout bool **ACTIVE**"
+msgstr "in bool **COLLIDED**"
 
 #, fuzzy
 msgid "``true`` when the particle has collided with a particle collider."
 msgstr "``true`` 当粒子必须重新启动时(生命周期循环)."
 
-#, fuzzy
 msgid "in vec3 **COLLISION_NORMAL**"
-msgstr "in vec3 **NORMAL**"
+msgstr "in vec3 **COLLISION_NORMAL**"
 
 msgid ""
 "A normal of the last collision. If there is no collision detected it is "
 "equal to ``vec3(0.0)``."
 msgstr ""
 
-#, fuzzy
 msgid "in float **COLLISION_DEPTH**"
-msgstr "inout float **NORMALMAP_DEPTH**"
+msgstr "in float **COLLISION_DEPTH**"
 
 msgid ""
 "A length of normal of the last collision. If there is no collision detected "
 "it is equal to ``0.0``."
 msgstr ""
 
-#, fuzzy
 msgid "in vec3 **ATTRACTOR_FORCE**"
-msgstr "in vec3 **ATTENUATION**"
+msgstr "in vec3 **ATTRACTOR_FORCE**"
 
 msgid "A combined force of the attractors at the moment on that particle."
 msgstr ""
 
-#, fuzzy
 msgid "in vec4 **USERDATAX**"
-msgstr "in vec3 **VERTEX**"
+msgstr "in vec4 **USERDATAX**"
 
 msgid ""
 "Vector that enables the integration of supplementary user-defined data into "
@@ -371,6 +351,8 @@ msgid ""
 "bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 "
 "custom, uint flags)"
 msgstr ""
+"bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 "
+"custom, uint flags)"
 
 msgid "Forces to emit a particle from a sub-emitter."
 msgstr ""

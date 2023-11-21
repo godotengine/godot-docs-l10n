@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -139,10 +139,18 @@ msgstr ""
 msgid "Geometry draws using lines."
 msgstr ""
 
+msgid "**diffuse_burley**"
+msgstr "\\ **diffuse_burley**"
+
+#, fuzzy
+msgid "Burley (Disney PBS) for diffuse (default)."
+msgstr "拡散をバーリー(ディズニーPBS)に。"
+
 msgid "**diffuse_lambert**"
 msgstr "\\ **diffuse_lambert**"
 
-msgid "Lambert shading for diffuse (default)."
+#, fuzzy
+msgid "Lambert shading for diffuse."
 msgstr "拡散をランバートシェーディングに(デフォルト)。"
 
 msgid "**diffuse_lambert_wrap**"
@@ -150,12 +158,6 @@ msgstr "\\ **diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr "拡散をランバートラッピングに(回り込みはroughnessに依存)。"
-
-msgid "**diffuse_burley**"
-msgstr "\\ **diffuse_burley**"
-
-msgid "Burley (Disney PBS) for diffuse."
-msgstr "拡散をバーリー(ディズニーPBS)に。"
 
 msgid "**diffuse_toon**"
 msgstr "\\ **diffuse_toon**"
@@ -168,18 +170,6 @@ msgstr "\\ **specular_schlick_ggx**"
 
 msgid "Schlick-GGX for specular (default)."
 msgstr "スペキュラーをSchlick-GGXに(デフォルト)。"
-
-msgid "**specular_blinn**"
-msgstr "\\ **specular_blinn**"
-
-msgid "Blinn for specular (compatibility)."
-msgstr "スペキュラーをブリンに(互換性が高い)。"
-
-msgid "**specular_phong**"
-msgstr "\\ **specular_phong**"
-
-msgid "Phong for specular (compatibility)."
-msgstr "スペキュラーをフォンに(互換性が高い)。"
 
 msgid "**specular_toon**"
 msgstr "\\ **specular_toon**"

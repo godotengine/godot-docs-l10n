@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Exporting for macOS"
-msgstr "為 iOS 匯出"
+msgstr "為 macOS 匯出"
 
 msgid ""
 "This page describes how to export a Godot project to macOS. If you're "
 "looking to compile editor or export template binaries from source instead, "
 "read :ref:`doc_compiling_for_macos`."
 msgstr ""
+"這個頁面描述的是如何將 Godot 專案匯出到 macOS。如果你想要找的是從源碼編譯編輯"
+"器或匯出範本二進位檔案，請閱讀 :ref:`doc_compiling_for_osx`。"
 
 msgid ""
 "macOS apps are exported as an ``.app`` bundle, a folder with a specific "
@@ -33,11 +34,13 @@ msgid ""
 "This bundle can be exported as is, packed in a ZIP archive or DMG disk image "
 "(only supported when exporting from a computer running macOS)."
 msgstr ""
+"macOS App 會被匯出為 ``.app`` 組合包，這是一個具有特殊結構的資料夾，裡面存放"
+"著可執行檔、庫，以及所有專案檔案。這個組合包可以原樣匯出，或者打包到 ZIP 歸檔"
+"檔或 DMG 磁片對應檔中（只有在運作 macOS 的電腦上進行匯出時才支援）。"
 
 msgid "Requirements"
 msgstr "系統需求"
 
-#, fuzzy
 msgid ""
 "Download the Godot export templates. Use the Godot menu: ``Editor > Manage "
 "Export Templates``."
@@ -46,7 +49,7 @@ msgstr "下載 Godot 匯出樣板。使用 Godot 選單：[編輯器] > [管理�
 msgid ""
 "A valid and unique ``Bundle identifier`` should be set in the "
 "``Application`` section of the export options."
-msgstr ""
+msgstr "應當在匯出選項的 ``應用`` 部分中設定有效且唯一的 ``組合包識別字``。"
 
 msgid ""
 "Projects exported without code signing and notarization will be blocked by "
@@ -54,8 +57,10 @@ msgid ""
 "`Running Godot apps on macOS <doc_running_on_macos>` page for more "
 "information."
 msgstr ""
+"匯出的專案如果沒有進行程式碼簽章和公證，那麼如果是從未知來源下載到的，就會"
+"被“門禁”（Gatekeeper）阻攔。詳情請參閱:ref:`在 macOS 上運作 Godot 應用 "
+"<doc_running_on_macos>`頁面。"
 
-#, fuzzy
 msgid "Code signing and notarization"
 msgstr "視窗環境與作業系統整合"
 
@@ -64,52 +69,64 @@ msgid ""
 "If you use any other signing configuration, see :ref:`Running Godot apps on "
 "macOS <doc_running_on_macos>` for workarounds."
 msgstr ""
+"預設情況下，macOS 只會運作經過簽章和公證的應用程式。如果你使用了其他簽章配"
+"置，替代方案請參閱:ref:`在 macOS 上運作 Godot 應用 <doc_running_on_macos>`。"
 
 msgid ""
 "To notarize an app, you **must** have a valid `Apple Developer ID "
 "Certificate <https://developer.apple.com/>`__."
 msgstr ""
+"要公證 App，你**必須**持有有效的 `Apple 開發者 ID 憑證 <https://developer."
+"apple.com/>`__。"
 
 msgid "If you have an Apple Developer ID Certificate and exporting from macOS"
-msgstr ""
+msgstr "如果你有 Apple 開發者 ID 憑證"
 
 msgid ""
 "Install `Xcode <https://developer.apple.com/xcode/>`__ command line tools "
 "and open Xcode at least once or run the ``sudo xcodebuild -license accept`` "
 "command to accept license agreement."
 msgstr ""
+"安裝 Xcode <https://developer.apple.com/xcode/>`__ 命令列工具並開啟 Xcode 至"
+"少一次或執行 ``sudo xcodebuild -license Accept`` 命令接受許可協議。"
 
 msgid "To sign exported app"
-msgstr ""
+msgstr "簽署匯出的應用程式"
 
 msgid "Select ``Xcode codesign`` in the ``Code Signing > Codesign`` option."
-msgstr ""
+msgstr "在“程式碼簽章 > 程式碼設計”選項中選擇“Xcode 程式碼設計”。"
 
 msgid ""
 "Set valid Apple ID certificate identity (certificate \"Common Name\") in the "
 "``Code Signing > Identity`` section."
 msgstr ""
+"在「程式碼簽署 > 身分」部分設定有效的 Apple ID 憑證身分（憑證「通用名稱」）。"
 
 msgid "To notarize exported app"
-msgstr ""
+msgstr "公證匯出的應用程式"
 
 msgid "Select ``Xcode altool`` in the ``Notarization > Notarization`` option."
-msgstr ""
+msgstr "在「公證 > 公證」選項中選擇「Xcode altool」。"
 
 msgid "Disable the ``Debugging`` entitlement."
-msgstr ""
+msgstr "要對 App 進行公證，你必須禁用 ``Debugging`` 授權。"
 
 msgid ""
 "Set valid Apple ID login / app. specific password or `App Store Connect "
 "<https://developer.apple.com/documentation/appstoreconnectapi>`__ API UUID / "
 "Key in the ``Notarization`` section."
 msgstr ""
+"設定有效的 Apple ID 登入/應用程式。特定密碼或「App Store Connect <https://"
+"developer.apple.com/documentation/appstoreconnectapi>`__ API UUID /「公證」區"
+"段中的金鑰。"
 
 msgid ""
 "You can use the ``xcrun notarytool history`` command to check notarization "
 "status and use the ``xcrun notarytool log {ID}`` command to download the "
 "notarization log."
 msgstr ""
+"你可以使用 ``xcrun notarytool history`` 命令檢查公證狀態，使用 ``xcrun "
+"notarytool log {ID}`` 命令下載公證紀錄。"
 
 msgid ""
 "If you encounter notarization issues, see `Resolving common notarization "
@@ -117,137 +134,146 @@ msgid ""
 "notarizing_macos_software_before_distribution/"
 "resolving_common_notarization_issues>`__ for more info."
 msgstr ""
+"如果你在公證過程中遇到了問題，請在 `Resolving common notarization issues "
+"<https://developer.apple.com/documentation/security/"
+"notarizing_macos_software_before_distribution/"
+"resolving_common_notarization_issues>`__ 查看更多資訊。"
 
 msgid ""
 "After notarization is completed, `staple the ticket <https://developer.apple."
 "com/documentation/security/notarizing_macos_software_before_distribution/"
 "customizing_the_notarization_workflow>`__ to the exported project."
 msgstr ""
+"完成公證後，請將`票證裝訂 <https://developer.apple.com/documentation/"
+"security/notarizing_macos_software_before_distribution/"
+"customizing_the_notarization_workflow>`__到匯出的專案上。"
 
 msgid ""
 "If you have an Apple Developer ID Certificate and exporting from Linux or "
 "Windows"
-msgstr ""
+msgstr "如果你有 Apple 開發者 ID 憑證"
 
 msgid ""
 "Install `PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
 "tree/main/apple-codesign>`__, and configure the path to ``rcodesign`` in the "
 "``Editor Settings > Export > macOS > rcodesign``."
 msgstr ""
+"安裝`PyOxidizer rcodesign <https://github.com/indygreg/apple-platform-rs/"
+"tree/main/apple-codesign>``__，並在``編輯器設定>匯出'中設定``rcodesign``的路"
+"徑> macOS > rcodesign``。"
 
 msgid ""
 "Select ``PyOxidizer rcodesign`` in the ``Code Signing > Codesign`` option."
-msgstr ""
+msgstr "在「程式碼簽章> Codesign」選項中選擇「PyOxidizer rcodesign」。"
 
 msgid ""
 "Set valid Apple ID PKCS #12 certificate file and password in the ``Code "
 "Signing`` section."
-msgstr ""
+msgstr "在「程式碼簽署」部分設定有效的 Apple ID PKCS #12 憑證檔案和密碼。"
 
 msgid ""
 "Select ``PyOxidizer rcodesign`` in the ``Notarization > Notarization`` "
 "option."
-msgstr ""
+msgstr "在「公證 > 公證」選項中選擇「PyOxidizer rcodesign」。"
 
 msgid ""
 "Set valid `App Store Connect <https://developer.apple.com/documentation/"
 "appstoreconnectapi>`__ API UUID / Key in the ``Notarization`` section."
 msgstr ""
+"在「Notarization」部分設定有效的「App Store Connect <https://developer.apple."
+"com/documentation/appstoreconnectapi>`__ API UUID/金鑰」。"
 
 msgid ""
 "You can use the ``rcodesign notary-log`` command to check notarization "
 "status."
-msgstr ""
+msgstr "您可以使用「rcodesign notary-log」指令檢查公證狀態。"
 
 msgid ""
 "After notarization is completed, use the ``rcodesign staple`` command to "
 "staple the ticket to the exported project."
-msgstr ""
+msgstr "公證完成後，使用「rcodesignstaple」指令將票證裝訂到匯出的專案。"
 
 msgid "If you do not have an Apple Developer ID Certificate"
-msgstr ""
+msgstr "如果你沒有 Apple 開發者 ID 憑證"
 
 msgid ""
 "Select ``Built-in (ad-hoc only)`` in the ``Code Signing > Codesign`` option."
-msgstr ""
+msgstr "在“程式碼簽章 > 程式碼設計”選項中選擇“內建（僅臨時）”。"
 
 msgid "Select ``Disabled`` in the ``Notarization > Notarization`` option."
-msgstr ""
+msgstr "在「公證 > 公證」選項中選擇「停用」。"
 
 msgid ""
 "In this case Godot will use a ad-hoc signature, which will make running an "
 "exported app easier for the end users, see the :ref:`Running Godot apps on "
 "macOS <doc_running_on_macos>` page for more information."
 msgstr ""
+"保持 ``Code Signing`` 啟用並將 ``Identity`` 選項留空（在運作 macOS 的電腦上匯"
+"出時可用，這個選項在其他平臺上是不可見的）。這樣 Godot 就會使用 Ad-hoc 簽章，"
+"讓最終使用者能夠更方便地運作匯出的 App，詳情請見:ref:`在 macOS 上運作 Godot "
+"App <doc_running_on_macos>` 頁面。"
 
-#, fuzzy
 msgid "Signing Options"
-msgstr "Android"
+msgstr "簽名選項"
 
-#, fuzzy
 msgid "Option"
 msgstr "最佳化"
 
 msgid "Description"
 msgstr "說明"
 
-#, fuzzy
 msgid "Codesign"
 msgstr "節點"
 
 msgid "Tool to use for code signing."
-msgstr ""
+msgstr "用於程式碼簽章的工具。"
 
 msgid "Identity"
-msgstr "身分"
+msgstr "身份"
 
 msgid ""
 "The \"Full Name\" or \"Common Name\" of the signing identity, store in the "
 "macOS keychain. [1]_"
-msgstr ""
+msgstr "簽章主體的“全名”或“通用名”，儲存在 macOS 鑰匙串中。[1]_ [2]_"
 
-#, fuzzy
 msgid "Certificate File"
-msgstr "建立資料夾"
+msgstr "憑證檔案"
 
 msgid "The PKCS #12 certificate file. [2]_"
-msgstr ""
+msgstr "PKCS #12 憑證檔。 [2]_"
 
 msgid "Certificate Password"
-msgstr ""
+msgstr "憑證密碼"
 
 msgid "Password for the certificate file. [2]_"
-msgstr ""
+msgstr "憑證檔案的密碼。 [2]_"
 
-#, fuzzy
 msgid "Custom Options"
-msgstr "自定訊號"
+msgstr "自訂選項"
 
 msgid "Array of command line arguments passed to the code signing tool."
-msgstr ""
+msgstr "傳遞給程式碼簽署工具的命令列參數陣列。"
 
 msgid "This option is visible only when signing with Xcode codesign."
-msgstr ""
+msgstr "這個選項僅在運作 macOS 的電腦上匯出時可見。"
 
 msgid "These options are visible only when signing with PyOxidizer rcodesign."
-msgstr ""
+msgstr "這些選項僅在使用 PyOxidizer rcodesign 簽章時可見。"
 
-#, fuzzy
 msgid "Notarization Options"
 msgstr "Animation - 動畫選項"
 
-#, fuzzy
 msgid "Notarization"
 msgstr "Animation - 動畫選項"
 
 msgid "Tool to use for notarization."
-msgstr ""
+msgstr "用於公證的工具。"
 
 msgid "Apple ID Name"
 msgstr "Apple ID 名稱"
 
 msgid "Apple ID account name (email address). [3]_"
-msgstr ""
+msgstr "Apple ID 帳戶名稱（郵箱地址）"
 
 msgid "Apple ID Password"
 msgstr "Apple ID 密碼"
@@ -257,6 +283,8 @@ msgid ""
 "support.apple.com/en-us/HT204397>`__ to enable two-factor authentication and "
 "create app password. [3]_"
 msgstr ""
+"Apple ID 的 App 專用密碼。請參閱`《使用 App 專用密碼》 <https://support."
+"apple.com/zh-cn/HT204397>`__啟用雙重認證並建立 App 密碼。[3]_"
 
 msgid "Apple Team ID"
 msgstr "Apple 團隊 ID"
@@ -264,73 +292,85 @@ msgstr "Apple 團隊 ID"
 msgid ""
 "Team ID (\"Organization Unit\"), if your Apple ID belongs to multiple teams "
 "(optional). [3]_"
-msgstr ""
+msgstr "團隊 ID，如果你的 Apple ID 屬於多個團隊"
 
 msgid "API UUID"
-msgstr ""
+msgstr "API UUID"
 
 msgid ""
 "Apple `App Store Connect <https://developer.apple.com/documentation/"
 "appstoreconnectapi>`__ API issuer UUID."
 msgstr ""
+"Apple `App Store Connect <https://developer.apple.com/documentation/"
+"appstoreconnectapi>`__ API 頒發者 UUID。"
 
 msgid "API Key"
-msgstr ""
+msgstr "API 金鑰"
 
 msgid ""
 "Apple `App Store Connect <https://developer.apple.com/documentation/"
 "appstoreconnectapi>`__ API key."
 msgstr ""
+"Apple `App Store Connect <https://developer.apple.com/documentation/"
+"appstoreconnectapi>`__ API 金鑰。"
 
 msgid ""
 "You should set either Apple ID Name/Password or App Store Connect API UUID/"
 "Key."
-msgstr ""
+msgstr "您應該設定 Apple ID 名稱/密碼或 App Store Connect API UUID/金鑰。"
 
 msgid "These options are visible only when notarizing with Xcode altool."
-msgstr ""
+msgstr "這個選項僅在運作 macOS 的電腦上匯出時可見。"
 
 msgid ""
 "See `Notarizing macOS Software Before Distribution <https://developer.apple."
 "com/documentation/security/notarizing_macos_software_before_distribution?"
 "language=objc>`__ for more info."
 msgstr ""
+"詳情請參閱 `Notarizing macOS Software Before Distribution <https://developer."
+"apple.com/documentation/security/"
+"notarizing_macos_software_before_distribution?language=objc>`__。"
 
-#, fuzzy
 msgid "Entitlements"
-msgstr "檢查內容"
+msgstr "授權"
 
 msgid "Hardened Runtime Entitlements"
-msgstr ""
+msgstr "強化運作時授權"
 
 msgid ""
 "Hardened Runtime entitlements manage security options and resource access "
 "policy. See `Hardened Runtime <https://developer.apple.com/documentation/"
 "security/hardened_runtime?language=objc>`__ for more info."
 msgstr ""
+"強化運作時授權（Hardened Runtime entitlements）管理的是安全性選項和資源存取策"
+"略。詳情請參閱 `Hardened Runtime <https://developer.apple.com/documentation/"
+"security/hardened_runtime?language=objc>`__。"
 
 msgid "Entitlement"
-msgstr ""
+msgstr "授權"
 
 msgid "Allow JIT Code Execution [4]_"
-msgstr ""
+msgstr "Allow JIT Code Execution [3]_"
 
 msgid ""
 "Allows creating writable and executable memory for JIT code. If you are "
 "using add-ons with dynamic or self-modifying native code, enable them "
 "according to the add-on documentation."
 msgstr ""
+"允許為 JIT 程式碼建立可寫可執行的記憶體。如果你正在使用動態或能夠自我修改原生"
+"程式碼的外掛程式，請根據外掛程式文件啟用它們。"
 
 msgid "Allow Unsigned Executable Memory [4]_"
-msgstr ""
+msgstr "Allow Unsigned Executable Memory [3]_"
 
 msgid ""
 "Allows creating writable and executable memory without JIT restrictions. If "
 "you are using add-ons with dynamic or self-modifying native code, enable "
 "them according to the add-on documentation."
 msgstr ""
+"允許建立沒有 JIT 限制的可寫可執行的記憶體。如果你正在使用動態或能夠自我修改原"
+"生程式碼的外掛程式，請根據外掛程式文件啟用它們。"
 
-#, fuzzy
 msgid "Allow DYLD Environment Variables [4]_"
 msgstr "環境變數"
 
@@ -339,15 +379,19 @@ msgid ""
 "you are using add-ons with dynamic or self-modifying native code, enable "
 "them according to the add-on documentation."
 msgstr ""
+"允許 App 使用動態連結器環境變數注入程式碼。如果你正在使用動態或能夠自我修改原"
+"生程式碼的外掛程式，請根據外掛程式文件啟用它們。"
 
 msgid "Disable Library Validation"
-msgstr ""
+msgstr "停用庫校驗"
 
 msgid ""
 "Allows app to load arbitrary libraries and frameworks. Enable it if you are "
 "using GDExtension add-ons or ad-hoc signing, or want to support user-"
 "provided external add-ons."
 msgstr ""
+"允許 App 載入任意庫和框架。如果你使用 GDNative 外掛程式和 Ad-hoc 簽章，或者想"
+"要支援使用者提供的外部外掛程式，請啟用。"
 
 msgid "Audio Input"
 msgstr "音源輸入"
@@ -357,6 +401,8 @@ msgid ""
 "it's enabled you should also provide usage message in the `privacy/"
 "microphone_usage_description` option."
 msgstr ""
+"請在需要使用麥克風或者其他音訊輸入源時啟用。啟用時，你應該還要在 `privacy/"
+"microphone_usage_description` 中提供用途資訊。"
 
 msgid "Camera"
 msgstr "相機"
@@ -365,6 +411,8 @@ msgid ""
 "Enable if you need to use the camera, if it's enabled you should also "
 "provide usage message in the `privacy/camera_usage_description` option."
 msgstr ""
+"請在需要使用攝像頭時啟用。啟用時，你應該還要在 `privacy/"
+"camera_usage_description` 中提供用途資訊。"
 
 msgid "Location"
 msgstr "位置"
@@ -374,6 +422,8 @@ msgid ""
 "it's enabled you should also provide usage message in the `privacy/"
 "location_usage_description` option."
 msgstr ""
+"請在需要使用位置服務時啟用。啟用時，你應該還要在 `privacy/"
+"location_usage_description` 中提供用途資訊。"
 
 msgid "Address Book"
 msgstr "地址簿"
@@ -383,6 +433,8 @@ msgid ""
 "enabled you should also provide usage message in the `privacy/"
 "address_book_usage_description` option."
 msgstr ""
+"[4]_ 請在需要存取使用者的位址簿時啟用。啟用時，你應該還要在 `privacy/"
+"address_book_usage_description` 中提供用途資訊。"
 
 msgid "Calendars"
 msgstr "日曆"
@@ -392,8 +444,9 @@ msgid ""
 "should also provide usage message in the `privacy/"
 "calendar_usage_description` option."
 msgstr ""
+"[4]_ 請在需要存取使用者的日歷時啟用。啟用時，你應該還要在 `privacy/"
+"calendar_usage_description` 中提供用途資訊。"
 
-#, fuzzy
 msgid "Photo Library"
 msgstr "素材庫"
 
@@ -402,38 +455,46 @@ msgid ""
 "you should also provide usage message in the `privacy/"
 "photos_library_usage_description` option."
 msgstr ""
+"[4]_ 請在需要存取使用者的照片圖庫時啟用。啟用時，你應該還要在 `privacy/"
+"photos_library_usage_description` 中提供用途資訊。"
 
 msgid "Apple Events"
 msgstr "Apple 活動"
 
 msgid "[5]_ Enable to allow app to send Apple events to other apps."
-msgstr ""
+msgstr "[4]_ 請在需要允許 App 向其他 App 發送 App 事件時啟用。"
 
 msgid "Debugging"
-msgstr "偵錯"
+msgstr "除錯"
 
 msgid ""
 "[6]_ You can temporarily enable this entitlement to use native debugger "
 "(GDB, LLDB) with the exported app. This entitlement should be disabled for "
 "production export."
 msgstr ""
+"[5]_ 你可以臨時啟用這個授權來對匯出的 App 使用原生除錯器（GDB、LLDB）。生產匯"
+"出中應該禁用這個授權。"
 
 msgid ""
 "The ``Allow JIT Code Execution``, ``Allow Unsigned Executable Memory`` and "
 "``Allow DYLD Environment Variables`` entitlements are always enabled for the "
 "Godot Mono exports, and are not visible in the export options."
 msgstr ""
+"``Allow JIT Code Execution``、``Allow Unsigned Executable Memory``、``Allow "
+"DYLD Environment Variables`` 授權在 Godot Mono 匯出中始終啟用，在匯出選項中不"
+"可見。"
 
 msgid ""
 "These features aren't supported by Godot out of the box, enable them only if "
 "you are using add-ons which require them."
 msgstr ""
+"Godot 並不支援這些功能的開箱即用，請在使用需要用到它們的外掛程式時啟用。"
 
 msgid "To notarize an app, you must disable the ``Debugging`` entitlement."
-msgstr ""
+msgstr "要對 App 進行公證，你必須禁用 ``Debugging`` 授權。"
 
 msgid "App Sandbox Entitlement"
-msgstr ""
+msgstr "App 沙盒授權"
 
 msgid ""
 "The App Sandbox restricts access to user data, networking and devices. "
@@ -443,28 +504,33 @@ msgid ""
 "developer.apple.com/documentation/security/app_sandbox?language=objc>`__ for "
 "more info."
 msgstr ""
+"App 沙盒會限制對使用者資料、網路、裝置的存取。沙盒 App 無法存取檔案系統的大部"
+"分位置，無法使用自訂檔對話方塊，也無法執行 ``.app`` 組合包以外的可執行檔（通"
+"過 ``OS.execute`` 和 ``OS.create_process``）。詳情請參閱 `App Sandbox "
+"<https://developer.apple.com/documentation/security/app_sandbox?"
+"language=objc>`__。"
 
 msgid ""
 "To distribute an app through the App Store, you must enable the App Sandbox."
-msgstr ""
+msgstr "要通過 App Store 分發 App，必須啟用 App 沙盒。"
 
 msgid "Enabled"
 msgstr "已啟用"
 
 msgid "Enables App Sandbox."
-msgstr ""
+msgstr "啟用 App 沙盒。"
 
 msgid "Network Server"
 msgstr "網路伺服器"
 
 msgid "Enable to allow app to listen for incoming network connections."
-msgstr ""
+msgstr "允許 App 監聽入站網路請求。"
 
 msgid "Network Client"
 msgstr "網路客戶端"
 
 msgid "Enable to allow app to establish outgoing network connections."
-msgstr ""
+msgstr "允許 App 監聽出站網路請求。"
 
 msgid "Device USB"
 msgstr "裝置 USB"
@@ -472,7 +538,7 @@ msgstr "裝置 USB"
 msgid ""
 "Enable to allow app to interact with USB devices. This entitlement is "
 "required to use wired controllers."
-msgstr ""
+msgstr "允許 App 與 USB 裝置互動。使用有線控制器需要這項授權。"
 
 msgid "Device Bluetooth"
 msgstr "裝置藍芽"
@@ -480,37 +546,32 @@ msgstr "裝置藍芽"
 msgid ""
 "Enable to allow app to interact with Bluetooth devices. This entitlement is "
 "required to use wireless controllers."
-msgstr ""
+msgstr "允許 App 與藍牙裝置互動。使用無線控制器需要這項授權。"
 
-#, fuzzy
 msgid "Files Downloads [7]_"
 msgstr "檔案結構"
 
 msgid "Allows read or write access to the user's \"Downloads\" folder."
-msgstr ""
+msgstr "允許對使用者的“ Downloads”資料夾進行讀寫。"
 
-#, fuzzy
 msgid "Files Pictures [7]_"
 msgstr "檔案結構"
 
 msgid "Allows read or write access to the user's \"Pictures\" folder."
-msgstr ""
+msgstr "允許對使用者的“ Pictures”資料夾進行讀寫。"
 
-#, fuzzy
 msgid "Files Music [7]_"
 msgstr "檔案結構"
 
 msgid "Allows read or write access to the user's \"Music\" folder."
-msgstr ""
+msgstr "允許對使用者的“ Music”資料夾進行讀寫。"
 
-#, fuzzy
 msgid "Files Movies [7]_"
 msgstr "檔案結構"
 
 msgid "Allows read or write access to the user's \"Movies\" folder."
-msgstr ""
+msgstr "允許對使用者的“ Movies”資料夾進行讀寫。"
 
-#, fuzzy
 msgid "Files User Selected [7]_"
 msgstr "刪除所選"
 
@@ -518,25 +579,29 @@ msgid ""
 "Allows read or write access to arbitrary folder. To gain access, a folder "
 "must be selected from the native file dialog by the user."
 msgstr ""
+"允許對使用者的任意資料夾進行讀寫。要獲取存取權限，必須由使用者在原生檔對話方"
+"塊中選中該資料夾。"
 
-#, fuzzy
 msgid "Helper Executable"
-msgstr "\\ Executable"
+msgstr "Executable"
 
 msgid ""
 "List of helper executables to embedded to the app bundle. Sandboxed app are "
 "limited to execute only these executable."
 msgstr ""
+"要在 App 組合包中嵌入的輔助可執行檔列表。沙盒 App 僅限於執行這些可執行檔。"
 
 msgid ""
 "You can optionally provide usage messages for various folders in the "
 "`privacy/*_folder_usage_description` options."
 msgstr ""
+"針對不同的資料夾，你還可以通過 `privacy/*_folder_usage_description` 選項提供"
+"用途資訊。"
 
 msgid ""
 "You can override default entitlements by selecting custom entitlements file, "
 "in this case all other entitlement are ignored."
-msgstr ""
+msgstr "選擇自訂授權檔即可覆蓋預設授權，此時其他所有授權都會被忽略。"
 
 msgid "Environment variables"
 msgstr "環境變數"
@@ -546,72 +611,80 @@ msgid ""
 "outside of the editor. During the export process, these override the values "
 "that you set in the export menu."
 msgstr ""
+"您可以使用下列環境變數在編輯器外部設定匯出選項。在匯出過程中，這些值會覆寫您"
+"在匯出選單中設定的值。"
 
-#, fuzzy
 msgid "macOS export environment variables"
 msgstr "環境變數"
 
-#, fuzzy
 msgid "Export option"
 msgstr "匯出選項"
 
-#, fuzzy
 msgid "Environment variable"
 msgstr "環境變數"
 
 msgid "Encryption / Encryption Key"
-msgstr ""
+msgstr "加密/加密金鑰"
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "GODOT_SCRIPT_ENCRYPTION_KEY"
 
 msgid "Options / Codesign / Certificate File"
-msgstr ""
+msgstr "選項/程式碼設計/憑證檔案"
 
-msgid "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
 
 msgid "Options / Codesign / Certificate Password"
-msgstr ""
+msgstr "選項/程式碼設計/憑證密碼"
 
-msgid "GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD"
 
 msgid "Options / Codesign / Provisioning Profile"
-msgstr ""
+msgstr "選項/程式碼設計/配置檔案"
 
-msgid "GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE``"
+msgstr "GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE"
 
 msgid "Options / Notarization / API UUID"
-msgstr ""
+msgstr "選項/公證/API UUID"
 
-msgid "GODOT_MACOS_NOTARIZATION_API_UUID"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_API_UUID``"
+msgstr "GODOT_MACOS_NOTARIZATION_API_UUID"
 
 msgid "Options / Notarization / API Key"
-msgstr ""
+msgstr "選項/公證/API 金鑰"
 
-msgid "GODOT_MACOS_NOTARIZATION_API_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_API_KEY``"
+msgstr "GODOT_MACOS_NOTARIZATION_API_KEY"
 
 msgid "Options / Notarization / API Key ID"
-msgstr ""
+msgstr "選項/公證/API 金鑰 ID"
 
-msgid "GODOT_MACOS_NOTARIZATION_API_KEY_ID"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_API_KEY_ID``"
+msgstr "GODOT_MACOS_NOTARIZATION_API_KEY_ID"
 
 msgid "Options / Notarization / Apple ID Name"
-msgstr ""
+msgstr "選項/公證/Apple ID 名稱"
 
-msgid "GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME``"
+msgstr "GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME"
 
 msgid "Options / Notarization / Apple ID Password"
-msgstr ""
+msgstr "選項/公證/Apple ID 密碼"
 
-msgid "GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD``"
+msgstr "GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

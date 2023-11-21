@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,9 +105,8 @@ msgstr ""
 msgid "**Examples**"
 msgstr "**Beispiel**"
 
-#, fuzzy
 msgid "``--test-suite``"
-msgstr "``--test <test>``"
+msgstr "``--test-suite``"
 
 msgid "``-ts``"
 msgstr ""
@@ -115,20 +114,17 @@ msgstr ""
 msgid "``-ts=\"*[GDScript]*\"``"
 msgstr ""
 
-#, fuzzy
 msgid "``--test-case``"
-msgstr "``--no-docbase``"
+msgstr "``--test-case``"
 
 msgid "``-tc``"
 msgstr ""
 
-#, fuzzy
 msgid "``-tc=\"*[String]*\"``"
-msgstr "``String[]``"
+msgstr "``-tc=\"*[String]*\"``"
 
-#, fuzzy
 msgid "``--source-file``"
-msgstr "``--quiet``"
+msgstr "``--source-file``"
 
 msgid "``-sf``"
 msgstr ""
@@ -409,6 +405,9 @@ msgid ""
 "Godot uses doctest to prevent regressions in GDScript during development. "
 "There are several types of test scripts which can be written:"
 msgstr ""
+"Godot verwendet doctest, um Regressions-Bugs in GDScript während der "
+"Entwicklung zu verhindern. Es gibt mehrere Arten von Testskripten, die "
+"geschrieben werden können:"
 
 msgid "tests for expected errors;"
 msgstr ""
@@ -416,9 +415,8 @@ msgstr ""
 msgid "tests for warnings;"
 msgstr ""
 
-#, fuzzy
 msgid "tests for features."
-msgstr "Liste der Eigenschaften und Merkmale"
+msgstr "Tests für Leistungsmerkmale."
 
 msgid ""
 "Therefore, the process of writing integration tests for GDScript is the "
@@ -443,6 +441,9 @@ msgstr ""
 msgid "Here's an example test script:"
 msgstr "Hier ist ein Beispiel dafür, wie Sie dies in GDScript tun können:"
 
+msgid "Change directory to the Godot source repository root."
+msgstr ""
+
 msgid ""
 "Generate ``*.out`` files to update the expected results from the output:"
 msgstr ""
@@ -454,9 +455,8 @@ msgid ""
 "the crash and debug from there."
 msgstr ""
 
-#, fuzzy
 msgid "Run GDScript tests with:"
-msgstr "GDScript Exporte"
+msgstr "Führen Sie GDScript-Tests mit aus:"
 
 msgid "This also accepts the ``--print-filenames`` option (see above)."
 msgstr ""

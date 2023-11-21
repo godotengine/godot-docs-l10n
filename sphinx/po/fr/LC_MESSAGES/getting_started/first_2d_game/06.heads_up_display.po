@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,10 +28,12 @@ msgstr ""
 "(IU), User Interface (UI) en anglais, pour afficher des éléments comme le "
 "score, un message \"game over\" et un bouton de redémarrage."
 
+#, fuzzy
 msgid ""
-"Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node "
-"named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational "
-"display that appears as an overlay on top of the game view."
+"Create a new scene, click the \"Other Node\" button and add a :ref:"
+"`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for "
+"\"heads-up display\", an informational display that appears as an overlay on "
+"top of the game view."
 msgstr ""
 "Créez une nouvelle scène, et ajoutez un nœud :ref:`CanvasLayer "
 "<class_CanvasLayer>` nommé ``HUD``. \"HUD\" signifie \"heads-up display\" un "
@@ -149,7 +151,7 @@ msgid "Message"
 msgstr "Message"
 
 #, fuzzy
-msgid "Add the text ``Dodge the creeps!``."
+msgid "Add the text ``Dodge the Creeps!``."
 msgstr "*Text* : ``Dodge the Creeps!``"
 
 msgid ""
@@ -278,12 +280,6 @@ msgstr ""
 "connexion verte apparaît maintenant à côté de ``func new_game()`` dans le "
 "script."
 
-#, fuzzy
-msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
-msgstr ""
-"Quand vous êtes sûr que tout fonctionne, supprimez l'appel à ``new_game()`` "
-"depuis ``_ready()``."
-
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -295,11 +291,6 @@ msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 "Dans ``game_over()`` nous devons appeler la fonction ``HUD`` correspondante :"
 
-msgid ""
-"Just a reminder: we don't want to start the new game automatically, so "
-"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
-msgstr ""
-
 #, fuzzy
 msgid ""
 "Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
@@ -307,6 +298,14 @@ msgid ""
 msgstr ""
 "Enfin, ajoutez ceci à ``on_ScoreTimer_timeout()`` pour que l'affichage reste "
 "synchronisé avec le changement de score :"
+
+#, fuzzy
+msgid ""
+"Remember to remove the call to ``new_game()`` from ``_ready()`` if you "
+"haven't already, otherwise your game will start automatically."
+msgstr ""
+"Quand vous êtes sûr que tout fonctionne, supprimez l'appel à ``new_game()`` "
+"depuis ``_ready()``."
 
 #, fuzzy
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating the enemy"
-msgstr "創建內容"
+msgstr "建立內容"
 
 msgid ""
 "Now it's time to make the enemies our player will have to dodge. Their "
@@ -39,21 +38,18 @@ msgstr ""
 msgid "Node setup"
 msgstr "設定節點"
 
-#, fuzzy
 msgid "Click Scene -> New Scene from the top menu and add the following nodes:"
 msgstr "點擊 [場景] -> [新增場景]，然後新增下列節點："
 
 msgid ":ref:`RigidBody2D <class_RigidBody2D>` (named ``Mob``)"
 msgstr ":ref:`RigidBody2D <class_RigidBody2D>` (設定名稱為 ``Mob`` )"
 
-#, fuzzy
 msgid ":ref:`AnimatedSprite2D <class_AnimatedSprite2D>`"
 msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
 msgid ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`"
 
-#, fuzzy
 msgid ":ref:`VisibleOnScreenNotifier2D <class_VisibleOnScreenNotifier2D>`"
 msgstr ":ref:`VisibilityNotifier2D <class_VisibilityNotifier2D>`"
 
@@ -62,19 +58,23 @@ msgid ""
 "with the Player scene."
 msgstr "別忘了把子節點設定成無法選擇，跟剛剛在 Player 場景中一樣。"
 
+msgid ""
+"Select the ``Mob`` node and set it's ``Gravity Scale`` property in the :ref:"
+"`RigidBody2D <class_RigidBody2D>` section of the inspector to ``0``. This "
+"will prevent the mob from falling downwards."
+msgstr ""
+
 #, fuzzy
 msgid ""
-"In the :ref:`RigidBody2D <class_RigidBody2D>` properties, set ``Gravity "
-"Scale`` to ``0``, so the mob will not fall downward. In addition, under the :"
-"ref:`CollisionObject2D <class_CollisionObject2D>` section, uncheck the ``1`` "
-"inside the ``Mask`` property. This will ensure the mobs do not collide with "
-"each other."
+"In addition, under the :ref:`CollisionObject2D <class_CollisionObject2D>` "
+"section just beneath the **RigidBody2D** section, expand the **Collision** "
+"group and uncheck the ``1`` inside the ``Mask`` property. This will ensure "
+"the mobs do not collide with each other."
 msgstr ""
 "將 :ref:`RigidBody2D <class_RigidBody2D>` 的 ``Gravity Scale`` (重力量級) 設"
 "為 ``0`` ，讓怪物不會下墜。另外，在 ``PhysicsBody2D`` 中，點擊 ``Mask`` (遮"
 "罩) 屬性並取消選擇第一個勾選框，就可以確保怪物不會互相碰撞。"
 
-#, fuzzy
 msgid ""
 "Set up the :ref:`AnimatedSprite2D <class_AnimatedSprite2D>` like you did for "
 "the player. This time, we have 3 animations: ``fly``, ``swim``, and "
@@ -88,11 +88,13 @@ msgid ""
 "The ``Animation Speed`` property has to be set for each individual "
 "animation. Adjust it to ``3`` for all 3 animations."
 msgstr ""
+"必須為每個單獨動畫設定 ``動畫速度`` 屬性，將三個動畫的對應動畫速度值都調整為 "
+"``3`` 。"
 
 msgid ""
 "You can use the \"Play Animation\" buttons on the right of the ``Animation "
 "Speed`` input field to preview your animations."
-msgstr ""
+msgstr "你可以使用 ``動畫速度`` 輸入區域右側的“播放動畫”按鈕預覽動畫。"
 
 msgid ""
 "We'll select one of these animations randomly so that the mobs will have "
@@ -100,7 +102,6 @@ msgid ""
 msgstr ""
 "接著我們會隨機選擇其中一個動畫來播放，這樣才不會讓所有怪物看起來都一樣。"
 
-#, fuzzy
 msgid ""
 "Like the player images, these mob images need to be scaled down. Set the "
 "``AnimatedSprite2D``'s ``Scale`` property to ``(0.75, 0.75)``."
@@ -123,11 +124,9 @@ msgstr "保存場景。"
 msgid "Enemy script"
 msgstr "敵人腳本"
 
-#, fuzzy
 msgid "Add a script to the ``Mob`` like this:"
 msgstr "為 ``Mob`` 新增一個腳本，並新增下列成員變數："
 
-#, fuzzy
 msgid ""
 "Now let's look at the rest of the script. In ``_ready()`` we play the "
 "animation and randomly choose one of the three animation types:"
@@ -137,8 +136,8 @@ msgstr ""
 #, fuzzy
 msgid ""
 "First, we get the list of animation names from the AnimatedSprite2D's "
-"``frames`` property. This returns an Array containing all three animation "
-"names: ``[\"walk\", \"swim\", \"fly\"]``."
+"``sprite_frames`` property. This returns an Array containing all three "
+"animation names: ``[\"walk\", \"swim\", \"fly\"]``."
 msgstr ""
 "首先，我們需要從 AnimatedSprite 的 ``frames`` 屬性中取得所有動畫的名稱。這個"
 "屬性會回傳一個陣列 (Array)，包含三個動畫的名稱： ``[\"walk\", \"swim\", "
@@ -153,7 +152,6 @@ msgstr ""
 "列的索引從 ``0`` 開始）。 使用 ``randi() % n`` 可以從 ``0`` 到 ``n - 1`` 之間"
 "隨機選擇一個整數。"
 
-#, fuzzy
 msgid ""
 "The last piece is to make the mobs delete themselves when they leave the "
 "screen. Connect the ``screen_exited()`` signal of the "
@@ -170,6 +168,8 @@ msgid ""
 "together in a new scene. We'll make enemies spawn randomly around the game "
 "board and move forward, turning our project into a playable game."
 msgstr ""
+"玩家和敵人已經準備就緒，接下來，我們將在一個新的場景中把他們放到一起。我們將"
+"使敵人在遊戲台上隨機生成並前進，我們的專案將變成一個能玩的遊戲。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

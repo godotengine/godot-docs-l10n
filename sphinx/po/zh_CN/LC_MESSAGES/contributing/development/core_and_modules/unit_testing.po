@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Unit testing"
-msgstr "A/B 测试"
+msgstr "单元测试"
 
 msgid ""
 "Godot Engine allows to write unit tests directly in C++. The engine "
@@ -30,9 +29,8 @@ msgid ""
 "instead, which is located at the root of the engine source code."
 msgstr ""
 
-#, fuzzy
 msgid "Platform and target support"
-msgstr "平台支持"
+msgstr "平台及目标支持"
 
 msgid ""
 "C++ unit tests can be run on Linux, macOS, and Windows operating systems."
@@ -43,9 +41,8 @@ msgid ""
 "templates cannot be tested currently."
 msgstr ""
 
-#, fuzzy
 msgid "Running tests"
-msgstr "运行场景"
+msgstr "运行测试"
 
 msgid ""
 "Before tests can be actually run, the engine must be compiled with the "
@@ -77,9 +74,8 @@ msgid ""
 "opening a pull request."
 msgstr ""
 
-#, fuzzy
 msgid "Filtering tests"
-msgstr "筛选文件"
+msgstr "筛选测试"
 
 msgid ""
 "By default, all tests are run if you don't supply any extra arguments after "
@@ -99,42 +95,37 @@ msgid "**Filter options**"
 msgstr "**常规选项**"
 
 msgid "**Shorthand**"
-msgstr ""
+msgstr "**Shorthand**"
 
-#, fuzzy
 msgid "**Examples**"
-msgstr "**示例**"
+msgstr "**Examples**"
 
-#, fuzzy
 msgid "``--test-suite``"
-msgstr "``--test <test>``"
+msgstr "``--test-suite``"
 
 msgid "``-ts``"
-msgstr ""
+msgstr "``-ts``"
 
 msgid "``-ts=\"*[GDScript]*\"``"
-msgstr ""
+msgstr "``-ts=\"*[GDScript]*\"``"
 
-#, fuzzy
 msgid "``--test-case``"
-msgstr "``--no-docbase``"
+msgstr "``--test-case``"
 
 msgid "``-tc``"
-msgstr ""
+msgstr "``-tc``"
 
-#, fuzzy
 msgid "``-tc=\"*[String]*\"``"
-msgstr "``String[]``"
+msgstr "``-tc=\"*[String]*\"``"
 
-#, fuzzy
 msgid "``--source-file``"
-msgstr "``--quiet``"
+msgstr "``--source-file``"
 
 msgid "``-sf``"
-msgstr ""
+msgstr "``-sf``"
 
 msgid "``-sf=\"*test_color*\"``"
-msgstr ""
+msgstr "``-sf=\"*test_color*\"``"
 
 msgid "For instance, to run only the ``String`` unit tests, run:"
 msgstr ""
@@ -208,89 +199,93 @@ msgstr ""
 "有关如何创建模块图标的特定说明, 请参考 :ref:`创建自定义模块图标 "
 "<doc_custom_module_icons>`."
 
-#, fuzzy
 msgid "Assertions"
-msgstr "动作"
+msgstr "断言"
 
 msgid ""
 "A list of all commonly used assertions used throughout the Godot tests, "
 "sorted by severity."
-msgstr ""
+msgstr "Godot 测试中常用的断言列表，按严格程度排序。"
 
-#, fuzzy
 msgid "**Assertion**"
-msgstr "**版本**"
+msgstr "**断言**"
 
 msgid "**Description**"
 msgstr "**描述**"
 
 msgid "``REQUIRE``"
-msgstr ""
+msgstr "``REQUIRE``"
 
 msgid ""
 "Test if condition holds true. Fails the entire test immediately if the "
 "condition does not hold true."
-msgstr ""
+msgstr "检查条件是否成立。如果条件不成立则会立即让整个测试失败。"
 
 msgid "``REQUIRE_FALSE``"
-msgstr ""
+msgstr "``REQUIRE_FALSE``"
 
 msgid ""
 "Test if condition does not hold true. Fails the entire test immediately if "
 "the condition holds true."
-msgstr ""
+msgstr "检查条件是否不成立。如果条件成立则会立即让整个测试失败。"
 
 msgid "``CHECK``"
-msgstr ""
+msgstr "``CHECK``"
 
 msgid ""
 "Test if condition holds true. Marks the test run as failing, but allow to "
 "run other assertions."
-msgstr ""
+msgstr "检查条件是否成立。会将测试表示为失败，但允许运行其他断言。"
 
 msgid "``CHECK_FALSE``"
-msgstr ""
+msgstr "``CHECK_FALSE``"
 
 msgid ""
 "Test if condition does not hold true. Marks the test run as failing, but "
 "allow to run other assertions."
-msgstr ""
+msgstr "检查条件是否不成立。会将测试表示为失败，但允许运行其他断言。"
 
 msgid "``WARN``"
-msgstr ""
+msgstr "``WARN``"
 
 msgid ""
 "Test if condition holds true. Does not fail the test under any circumstance, "
 "but logs a warning if something does not hold true."
 msgstr ""
+"检查条件是否成立。任何情况下都不会让测试失败，但是不成立时会记录一条警告。"
 
 msgid "``WARN_FALSE``"
-msgstr ""
+msgstr "``WARN_FALSE``"
 
 msgid ""
 "Test if condition does not hold true. Does not fail the test under any "
 "circumstance, but logs a warning if something holds true."
 msgstr ""
+"检查条件是否不成立。任何情况下都不会让测试失败，但是成立时会记录一条警告。"
 
 msgid ""
 "All of the above assertions have corresponding ``*_MESSAGE`` macros, which "
 "allow to print optional message with rationale of what should happen."
 msgstr ""
+"以上断言都有对应的 ``*_MESSAGE`` 宏，能够在原有行为的基础上输出可选的消息。"
 
 msgid ""
 "Prefer to use ``CHECK`` for self-explanatory assertions and "
 "``CHECK_MESSAGE`` for more complex ones if you think that it deserves a "
 "better explanation."
 msgstr ""
+"对于能够自我说明的断言请尽量使用 ``CHECK``\\ ，如果你认为相对复杂的断言需要更"
+"好的解释再使用 ``CHECK_MESSAGE``\\ 。"
 
 msgid ""
 "`doctest: Assertion macros <https://github.com/onqtam/doctest/blob/master/"
 "doc/markdown/assertions.md>`_."
 msgstr ""
+"`doctest: 断言宏 <https://github.com/onqtam/doctest/blob/master/doc/markdown/"
+"assertions.md>`_\\ 。"
 
-#, fuzzy
 msgid "Logging"
-msgstr "调试"
+msgstr "日志"
 
 msgid ""
 "The test output is handled by doctest itself, and does not rely on Godot "
@@ -299,18 +294,17 @@ msgid ""
 "doctest."
 msgstr ""
 
-#, fuzzy
 msgid "**Macro**"
-msgstr "宏"
+msgstr "**Macro**"
 
 msgid "``MESSAGE``"
-msgstr ""
+msgstr "``MESSAGE``"
 
 msgid "Prints a message."
 msgstr ""
 
 msgid "``FAIL_CHECK``"
-msgstr ""
+msgstr "``FAIL_CHECK``"
 
 msgid ""
 "Marks the test as failing, but continue the execution. Can be wrapped in "
@@ -318,7 +312,7 @@ msgid ""
 msgstr ""
 
 msgid "``FAIL``"
-msgstr ""
+msgstr "``FAIL``"
 
 msgid ""
 "Fails the test immediately. Can be wrapped in conditionals for complex "
@@ -415,9 +409,8 @@ msgstr ""
 msgid "tests for warnings;"
 msgstr ""
 
-#, fuzzy
 msgid "tests for features."
-msgstr "特性列表"
+msgstr "特性列表。"
 
 msgid ""
 "Therefore, the process of writing integration tests for GDScript is the "
@@ -442,6 +435,10 @@ msgstr ""
 msgid "Here's an example test script:"
 msgstr "下面是一个如何在GDScript中做到这一点的例子:"
 
+#, fuzzy
+msgid "Change directory to the Godot source repository root."
+msgstr "将目录切换到文档仓库："
+
 msgid ""
 "Generate ``*.out`` files to update the expected results from the output:"
 msgstr ""
@@ -453,9 +450,8 @@ msgid ""
 "the crash and debug from there."
 msgstr ""
 
-#, fuzzy
 msgid "Run GDScript tests with:"
-msgstr "GDScript 导出"
+msgstr "GDScript 导出："
 
 msgid "This also accepts the ``--print-filenames`` option (see above)."
 msgstr ""

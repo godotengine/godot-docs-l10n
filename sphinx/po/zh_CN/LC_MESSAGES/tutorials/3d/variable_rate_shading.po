@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Variable rate shading"
-msgstr "变量转换"
+msgstr "可变速率着色"
 
-#, fuzzy
 msgid "What is variable rate shading?"
-msgstr "什么是可视化脚本"
+msgstr "什么是可变速率着色？"
 
 msgid ""
 "In modern 3D rendering engines, shaders are much more complex compared to "
@@ -87,9 +85,8 @@ msgstr "浏览器支持"
 msgid "Variable rate shading is only supported on specific GPUs:"
 msgstr ""
 
-#, fuzzy
 msgid "**Desktop:**"
-msgstr "**描述**"
+msgstr "**Desktop:**"
 
 msgid "NVIDIA Turing and newer (including GTX 1600 series)"
 msgstr ""
@@ -202,80 +199,73 @@ msgid "Density"
 msgstr ""
 
 msgid "Color"
-msgstr "颜色"
+msgstr "Color"
 
 msgid "Comment"
-msgstr "注释(``Comment``)"
+msgstr "注释"
 
-#, fuzzy
 msgid "1×1 (highest detail)"
-msgstr "1（最高）"
+msgstr "1×1（细节最高）"
 
 msgid "``rgb(0, 0, 0) - #000000``"
-msgstr ""
+msgstr "``rgb(0, 0, 0) - #000000``"
 
-#, fuzzy
 msgid "1×2"
-msgstr "12"
+msgstr "1×2"
 
 msgid "``rgb(0, 85, 0) - #005500``"
-msgstr ""
+msgstr "``rgb(0, 85, 0) - #005500``"
 
-#, fuzzy
 msgid "2×1"
-msgstr "21"
+msgstr "2×1"
 
 msgid "``rgb(85, 0, 0) - #550000``"
-msgstr ""
+msgstr "``rgb(85, 0, 0) - #550000``"
 
-#, fuzzy
 msgid "2×2"
-msgstr "22"
+msgstr "2×2"
 
 msgid "``rgb(85, 85, 0) - #555500``"
-msgstr ""
+msgstr "``rgb(85, 85, 0) - #555500``"
 
-#, fuzzy
 msgid "2×4"
-msgstr "24"
+msgstr "2×4"
 
 msgid "``rgb(85, 170, 0) - #55aa00``"
-msgstr ""
+msgstr "``rgb(85, 170, 0) - #55aa00``"
 
 msgid "4×2"
-msgstr ""
+msgstr "4×2"
 
 msgid "``rgb(170, 85, 0) - #aa5500``"
-msgstr ""
+msgstr "``rgb(170, 85, 0) - #aa5500``"
 
-#, fuzzy
 msgid "4×4"
-msgstr "44"
+msgstr "4×4"
 
 msgid "``rgb(170, 170, 0) - #aaaa00``"
-msgstr ""
+msgstr "``rgb(170, 170, 0) - #aaaa00``"
 
-#, fuzzy
 msgid "4×8"
-msgstr "48"
+msgstr "4×8"
 
 msgid "``rgb(170, 255, 0) - #aaff00``"
-msgstr ""
+msgstr "``rgb(170, 255, 0) - #aaff00``"
 
 msgid "Not supported on most hardware."
-msgstr ""
+msgstr "大多数硬件不支持。"
 
 msgid "8×4"
-msgstr ""
+msgstr "8×4"
 
 msgid "``rgb(255, 170, 0) - #ffaa00``"
-msgstr ""
+msgstr "``rgb(255, 170, 0) - #ffaa00``"
 
 msgid "8×8 (lowest detail)"
-msgstr ""
+msgstr "8×8（细节最低）"
 
 msgid "``rgb(255, 255, 0) - #ffff00``"
-msgstr ""
+msgstr "``rgb(255, 255, 0) - #ffff00``"
 
 msgid ""
 "For example, this VRS density texture provides the highest shading density "
@@ -314,9 +304,8 @@ msgid ""
 "low, or textures will appear grainy."
 msgstr ""
 
-#, fuzzy
 msgid "Performance comparison"
-msgstr "性能方面的注意事项"
+msgstr "性能比较"
 
 msgid ""
 "To give an idea of how much VRS can improve performance in theory, here's a "
@@ -328,69 +317,65 @@ msgid ""
 "Results were captured on a GeForce RTX 4090 with the NVIDIA 525.60.11 driver."
 msgstr ""
 
-#, fuzzy
 msgid "Resolution"
-msgstr "iResolution"
+msgstr "Resolution"
 
-#, fuzzy
 msgid "VRS disabled"
-msgstr "Disabled（禁用）"
+msgstr "启用 VRS"
 
-#, fuzzy
 msgid "VRS enabled"
-msgstr "Enabled"
+msgstr "禁用 VRS"
 
-#, fuzzy
 msgid "Performance improvement"
-msgstr "性能方面的注意事项"
+msgstr "性能提升"
 
 msgid "1920×1080 (Full HD)"
-msgstr ""
+msgstr "1920×1080（全高清）"
 
 msgid "2832 FPS"
-msgstr ""
+msgstr "2832 FPS"
 
 msgid "3136 FPS"
-msgstr ""
+msgstr "3136 FPS"
 
 msgid "+10.7%"
-msgstr ""
+msgstr "+10.7%"
 
 msgid "2560×1440 (QHD)"
-msgstr ""
+msgstr "2560×1440（QHD）"
 
 msgid "2008 FPS"
-msgstr ""
+msgstr "2008 FPS"
 
 msgid "2256 FPS"
-msgstr ""
+msgstr "2256 FPS"
 
 msgid "+12.3%"
-msgstr ""
+msgstr "+12.3%"
 
 msgid "3840×2160 (4K)"
-msgstr ""
+msgstr "3840×2160（4K）"
 
 msgid "1236 FPS"
-msgstr ""
+msgstr "1236 FPS"
 
 msgid "1436 FPS"
-msgstr ""
+msgstr "1436 FPS"
 
 msgid "+16.2%"
-msgstr ""
+msgstr "+16.2%"
 
 msgid "7680×4320 (8K)"
-msgstr ""
+msgstr "7680×4320（8K）"
 
 msgid "384 FPS"
-msgstr ""
+msgstr "384 FPS"
 
 msgid "473 FPS"
-msgstr ""
+msgstr "473 FPS"
 
 msgid "+23.1%"
-msgstr ""
+msgstr "+23.1%"
 
 msgid ""
 "In terms of performance improvements, variable rate shading is more "

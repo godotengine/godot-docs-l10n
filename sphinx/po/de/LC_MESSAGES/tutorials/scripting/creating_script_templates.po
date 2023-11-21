@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -145,27 +145,24 @@ msgstr ""
 msgid "Default behaviour and overriding it"
 msgstr ""
 
-#, fuzzy
 msgid "By default:"
-msgstr "Standard"
+msgstr "Standardmäßig:"
 
 msgid ""
 "the template's name is the same as the file name (minus the extension, "
 "prettyfied)"
 msgstr ""
 
-#, fuzzy
 msgid "the description is empty"
-msgstr "Hier sind die Beschreibungen der Optionen:"
+msgstr "die Beschreibung ist leer"
 
 msgid "the space indent is set to 4"
 msgstr ""
 
-#, fuzzy
 msgid "the template will not be set as the default for the given node"
 msgstr ""
-"Alle diese Optionen können für diese Übung auf ihren Standardeinstellungen "
-"belassen werden."
+"die Vorlage wird nicht als Standard für den angegebenen Knoten (Node) "
+"festgelegt"
 
 msgid ""
 "It is possible to customize this behaviour by adding meta headers at the "
@@ -228,14 +225,13 @@ msgid ""
 "type."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The ``Default`` templates for basic Nodes, for both GDScript and C#, are "
 "shown here so you can use these as the base for creating other templates:"
 msgstr ""
-"Die ``Standard`` Vorlage wird immer dynamisch pro Sprache generiert und kann "
-"weder konfiguriert noch überschrieben werden. Sie können diese jedoch als "
-"Basis für die Erstellung anderer Vorlagen verwenden."
+"Die ``Default``-Vorlagen für grundlegende Knoten (Nodes), sowohl für "
+"GDScript als auch für C#, werden hier gezeigt, damit Sie diese als Basis für "
+"die Erstellung anderer Vorlagen verwenden können:"
 
 msgid ""
 "The Godot editor provides a set of useful built-in node-specific templates, "
@@ -270,16 +266,14 @@ msgstr ""
 msgid "The name of the Godot namespace (used in C# only)."
 msgstr "Der Name der neuen Klasse (wird nur in C# verwendet)."
 
-#, fuzzy
 msgid "``_CLASS_``"
-msgstr "``%CLASS%``"
+msgstr "``_CLASS_``"
 
 msgid "The name of the new class (used in C# only)."
 msgstr "Der Name der neuen Klasse (wird nur in C# verwendet)."
 
-#, fuzzy
 msgid "``_BASE_``"
-msgstr "``%BASE%``"
+msgstr "``_BASE_``"
 
 msgid "The base type a new script inherits from."
 msgstr "Der Basistyp, von dem ein neues Skript erbt."
@@ -316,25 +310,20 @@ msgid ""
 "types will be automatically removed for a few base types:"
 msgstr ""
 
-#, fuzzy
 msgid "``int``"
-msgstr "``in``"
+msgstr "``int``"
 
-#, fuzzy
 msgid "``String``"
-msgstr "``String[]``"
+msgstr "``String``"
 
-#, fuzzy
 msgid "``Array[String]``"
-msgstr "``String[]``"
+msgstr "``Array[String]``"
 
-#, fuzzy
 msgid "``float``"
-msgstr "``float[]``"
+msgstr "``float``"
 
-#, fuzzy
 msgid "``void``"
-msgstr "``-> void``"
+msgstr "``void``"
 
 msgid "``:=`` will be transformed into ``=``"
 msgstr ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -43,7 +43,6 @@ msgstr ""
 "** 則是一個 **資料容器** 。資源本身並不會做任何事，反而是節點會使用放入了資料"
 "的資源。"
 
-#, fuzzy
 msgid ""
 "Anything Godot saves or loads from disk is a resource. Be it a scene (a ``."
 "tscn`` or an ``.scn`` file), an image, a script... Here are some :ref:"
@@ -56,31 +55,24 @@ msgstr ""
 "<class_AudioStream>` 、 :ref:`Font <class_Font>` 、 :ref:`Translation "
 "<class_Translation>` 。"
 
-#, fuzzy
 msgid ":ref:`Texture <class_Texture>`"
 msgstr ":ref:`Vector2 <class_Vector2>`"
 
-#, fuzzy
 msgid ":ref:`Script <class_Script>`"
 msgstr ":ref:`int <class_int>`"
 
-#, fuzzy
 msgid ":ref:`Mesh <class_Mesh>`"
 msgstr ":ref:`Rect2 <class_Rect2>`"
 
-#, fuzzy
 msgid ":ref:`Animation <class_Animation>`"
 msgstr ":ref:`AnimatedSprite <class_AnimatedSprite>`"
 
-#, fuzzy
 msgid ":ref:`AudioStream <class_AudioStream>`"
 msgstr ":ref:`Array <class_Array>`"
 
-#, fuzzy
 msgid ":ref:`Font <class_Font>`"
 msgstr ":ref:`int <class_int>`"
 
-#, fuzzy
 msgid ":ref:`Translation <class_Translation>`"
 msgstr ":ref:`Transform <class_Transform>`"
 
@@ -118,7 +110,6 @@ msgid ""
 "attached to."
 msgstr "**內建** ，將資源保存在所附加的 ``.tscn`` 或是 ``.scn`` 檔內。"
 
-#, fuzzy
 msgid ""
 "To be more specific, here's a :ref:`Texture2D <class_Texture2D>` in a :ref:"
 "`Sprite2D <class_Sprite2D>` node:"
@@ -126,7 +117,6 @@ msgstr ""
 "更具體來講，假設在 :ref:`Sprite <class_Sprite>` 節點中有一個 :ref:`Texture "
 "<class_Texture>` ："
 
-#, fuzzy
 msgid ""
 "Clicking the resource preview allows us to view the resource's properties."
 msgstr "點擊資源預覽可以讓我們檢視並編輯資源的屬性。"
@@ -165,7 +155,6 @@ msgstr ""
 "要從程式碼中載入資源有兩種方法。第一種方法是使用 ``load()`` 函式，可以在任何"
 "時候使用："
 
-#, fuzzy
 msgid ""
 "You can also ``preload`` resources. Unlike ``load``, this function will read "
 "the file from disk and load it at compile-time. As a result, you cannot call "
@@ -178,7 +167,6 @@ msgstr ""
 msgid "Loading scenes"
 msgstr "載入場景"
 
-#, fuzzy
 msgid ""
 "Scenes are also resources, but there is a catch. Scenes saved to disk are "
 "resources of type :ref:`PackedScene <class_PackedScene>`. The scene is "
@@ -187,7 +175,6 @@ msgstr ""
 "場景也是資源，但有一點需要注意。保存在硬碟上的場景是 :ref:`PackedScene "
 "<class_PackedScene>` 型別的資源。這種場景是被打包在資源內的。"
 
-#, fuzzy
 msgid ""
 "To get an instance of the scene, you have to use the :ref:`PackedScene."
 "instantiate() <class_PackedScene_method_instantiate>` method."
@@ -203,7 +190,6 @@ msgstr ""
 "這個方法會在場景結構中建立節點並對節點進行組態設定，最後回傳場景的根節點。接"
 "著便能將其新增為其他節點的子節點。"
 
-#, fuzzy
 msgid ""
 "The approach has several advantages. As the :ref:`PackedScene.instantiate() "
 "<class_PackedScene_method_instantiate>` function is fast, you can create new "
@@ -219,7 +205,6 @@ msgstr ""
 msgid "Freeing resources"
 msgstr "釋放資源"
 
-#, fuzzy
 msgid ""
 "When a :ref:`Resource <class_Resource>` is no longer in use, it will "
 "automatically free itself. Since, in most cases, Resources are contained in "
@@ -243,7 +228,6 @@ msgstr ""
 "件屬性、序列化文字、與二進位資料 (\\*.tres、\\*.res) 間自由轉換的能力。資源也"
 "從 Reference 型別上繼承了引用計數的記憶體管理。"
 
-#, fuzzy
 msgid ""
 "This comes with many distinct advantages over alternative data structures, "
 "such as JSON, CSV, or custom TXT files. Users can only import these assets "
@@ -252,7 +236,7 @@ msgid ""
 "of :ref:`Object <class_Object>`, :ref:`RefCounted <class_RefCounted>`, and :"
 "ref:`Resource <class_Resource>` features:"
 msgstr ""
-"這比起其他替代類型的資料結構如 JSON、CSV、或是自定 TXT 檔多了許多直接的優點。"
+"這比起其他替代型別的資料結構如 JSON、CSV、或是自定 TXT 檔多了許多直接的優點。"
 "使用者只能將這些資源匯入為 :ref:`Dictionary <class_Dictionary>` (JSON) 或是匯"
 "入為 :ref:`File <class_File>` 來解析。Resource 與這些型別不同的是它繼承了 :"
 "ref:`Object <class_Object>` 、 :ref:`Reference <class_Reference>` 、與 :ref:"
@@ -308,7 +292,7 @@ msgid ""
 "their data. To do so, double-click the resource file in the FileSystem dock "
 "or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
-"Godot Engine 的屬性面板可開箱即用地對資源檔案算繪與編輯。因此，使用者通常不需"
+"Godot Engine 的屬性面板可開箱即用地對資源檔案渲染與編輯。因此，使用者通常不需"
 "要自己實作視覺化或編輯資料的自定邏輯。可以從在檔案系統 Dock 中對資源檔案點兩"
 "下，或是在屬性面板中點擊資料夾圖示並在對話框中打開檔案來進行。"
 
@@ -323,7 +307,7 @@ msgid ""
 "Create a plain Resource object in the Inspector. This can even be a type "
 "that derives Resource, so long as your script is extending that type."
 msgstr ""
-"在屬性面板中建立一個純資源。只要腳本是繼承自該類型，也可以建立衍生自資源的型"
+"在屬性面板中建立一個純資源。只要腳本是繼承自該型別，也可以建立衍生自資源的型"
 "別。"
 
 msgid "Set the ``script`` property in the Inspector to be your script."
@@ -339,7 +323,6 @@ msgstr ""
 "性面板也會序列化自定屬性。要從屬性面板中保存資源，點擊屬性面板的工具選單（右"
 "上角），並選擇「保存」或「另存新檔」。"
 
-#, fuzzy
 msgid ""
 "If the script's language supports :ref:`script classes "
 "<doc_gdscript_basics_class_name>`, then it streamlines the process. Defining "
@@ -358,11 +341,17 @@ msgid ""
 "and logic! Attach a script to it named ``bot_stats.gd`` (or just create a "
 "new script, and then drag it to it)."
 msgstr ""
+"讓我們來看一些例子。建立一個資源 <class_Resource>` 並將其命名為"
+"「bot_stats」。它應該以全名“bot_stats.tres”出現在您的檔案標籤中。沒有腳本是沒"
+"有用的，所以我們來加入一些資料和邏輯吧！向其附加一個名為「bot_stats.gd」的腳"
+"本（或只是建立一個新腳本，然後將其拖曳到其中）。"
 
 msgid ""
 "Now, create a :ref:`CharacterBody3D <class_CharacterBody3D>`, name it "
 "``Bot``, and add the following script to it:"
 msgstr ""
+"現在，建立一個:ref:`CharacterBody3D <class_CharacterBody3D>`，將其命名"
+"為“Bot”，並向其中新增以下腳本："
 
 msgid ""
 "Now, select the :ref:`CharacterBody3D <class_CharacterBody3D>` node which we "
@@ -371,6 +360,10 @@ msgid ""
 "advanced features than this, but as long you really understand *how* it all "
 "worked, you should figure out everything else related to Resources."
 msgstr ""
+"現在，選擇我們命名為「bot」的CharacterBody3D <class_CharacterBody3D>節點，並"
+"將「bot_stats.tres」資源拖曳到屬性面板上。它應該打印 10！顯然，此設定可用於比"
+"這更高級的功能，但只要您真正了解「如何」這一切工作，您就應該弄清楚與資源相關"
+"的所有其他內容。"
 
 msgid ""
 "Resource scripts are similar to Unity's ScriptableObjects. The Inspector "
@@ -384,40 +377,36 @@ msgstr ""
 "`EditorPlugin <class_EditorPlugin>` 結合使用來為資源的資料建立自定的視覺界面"
 "與編輯器。"
 
-#, fuzzy
 msgid ""
 "Unreal Engine's DataTables and CurveTables are also easy to recreate with "
 "Resource scripts. DataTables are a String mapped to a custom struct, similar "
 "to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
 "Unreal Engine 4 的 DataTable 與 CurveTable 也很容易能通過資源腳本來重現。"
-"DataTable 就是映射到自定結構的字串，與 Dictionary 映射字串到一個第二層自定資"
+"DataTable 就是對應到自定結構的字串，與 Dictionary 對應字串到一個第二層自定資"
 "源腳本的做法類似。"
 
-#, fuzzy
 msgid ""
 "Instead of inlining the Dictionary values, one could also, alternatively:"
-msgstr "除了直接在行內寫上字典值，也可以…"
+msgstr "除了直接在行內寫上字典值，也可以:"
 
-#, fuzzy
 msgid ""
 "Import a table of values from a spreadsheet and generate these key-value "
 "pairs."
-msgstr "從試算表中匯入整張表的值並產生索引鍵/值組，或…"
+msgstr "從試算表中匯入整張表的值並產生索引鍵/值組。"
 
-#, fuzzy
 msgid ""
 "Design a visualization within the editor and create a plugin that adds it to "
 "the Inspector when you open these types of Resources."
 msgstr ""
-"在編輯器中設計視覺界面並製作一個簡單的插件來在開啟這類資源型別的時候顯示在屬"
-"性面板中。"
+"在編輯器中設計視覺界面並製作一個簡單的外掛程式來在開啟這類資源型別的時候顯示"
+"在屬性面板中。"
 
 msgid ""
 "CurveTables are the same thing, except mapped to an Array of float values or "
 "a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
-"CurveTable 是同樣的東西，不同的地方是 CurveTable 是映射到一組以浮點數為值的陣"
+"CurveTable 是同樣的東西，不同的地方是 CurveTable 是對應到一組以浮點數為值的陣"
 "列或 :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` 資源物件。"
 
 msgid ""
@@ -429,9 +418,9 @@ msgid ""
 "properties on the script subclass properly."
 msgstr ""
 "請注意，資源檔案 (\\*.tres/\\*.res) 會檔案中保存資源所使用的腳本路徑。載入"
-"後，資源會抓取並以擴充其型別的方式載入腳本。這表示將無法指派子類別，如腳本的"
-"內部類別（如在 GDScript 內使用 ``class`` 關鍵字）。Godot 不會正確地序列化腳本"
-"內子類別的自定屬性。"
+"後，資源會抓取並以擴充其型別的方式載入腳本。這表示將無法指派子類別別，如腳本"
+"的內部類別（如在 GDScript 內使用 ``class`` 關鍵字）。Godot 不會正確地序列化腳"
+"本內子類別別的自定屬性。"
 
 msgid ""
 "In the example below, Godot would load the ``Node`` script, see that it "

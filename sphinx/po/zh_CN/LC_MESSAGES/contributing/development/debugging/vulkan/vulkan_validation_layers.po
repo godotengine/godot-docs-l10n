@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,20 +17,22 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Validation layers"
-msgstr "AnimationPlayer"
+msgstr "验证层"
 
 msgid ""
 "Validation layers enable developers to verify their application's correct "
 "use of the Vulkan API. Validation layers can be enabled in both debug and "
 "release builds, including in exported projects."
 msgstr ""
+"验证层能够让开发者验证应用程序是否正确使用了 Vulkan API。调试构建和发布构建中"
+"均可启用验证层，包括导出后的项目。"
 
 msgid ""
 "Enabling validation layers has a performance impact, so only enable them "
 "when you actually need the output to debug the application."
 msgstr ""
+"启用验证层会对性能产生影响，因此，请只有在实际需要输出来调试程序时才启用。"
 
 msgid "Windows"
 msgstr "Windows"
@@ -77,9 +79,8 @@ msgid ""
 "occurs."
 msgstr ""
 
-#, fuzzy
 msgid "Linux, \\*BSD"
-msgstr "X11（Linux、\\*BSD）"
+msgstr "Linux、\\*BSD"
 
 msgid "Install Vulkan validation layers from your distribution's repositories:"
 msgstr ""
@@ -92,37 +93,29 @@ msgstr "**Alpine Linux**"
 msgid "Arch Linux"
 msgstr "**Arch Linux**"
 
-#, fuzzy
 msgid "Debian/Ubuntu"
-msgstr "**Debian** / **Ubuntu**"
+msgstr "Debian/Ubuntu"
 
-#, fuzzy
 msgid "Fedora"
-msgstr "**Fedora**"
+msgstr "Fedora"
 
-#, fuzzy
 msgid "FreeBSD"
-msgstr "**FreeBSD**"
+msgstr "FreeBSD"
 
-#, fuzzy
 msgid "Gentoo"
-msgstr "**Gentoo**"
+msgstr "Gentoo"
 
-#, fuzzy
 msgid "Mageia"
-msgstr "**Mageia**"
+msgstr "Mageia"
 
-#, fuzzy
 msgid "OpenBSD"
-msgstr "**OpenBSD**"
+msgstr "OpenBSD"
 
-#, fuzzy
 msgid "openSUSE"
-msgstr "**openSUSE**"
+msgstr "openSUSE"
 
-#, fuzzy
 msgid "Solus"
-msgstr "**Solus**"
+msgstr "Solus"
 
 msgid ""
 "You don't need to reboot after installing the validation layers, but you may "
@@ -148,9 +141,8 @@ msgstr ""
 msgid "iOS"
 msgstr "iOS"
 
-#, fuzzy
 msgid "Validation layers are currently **not** supported on iOS."
-msgstr "**目前不支持移动浏览器。**"
+msgstr "**验证层目前不支持iOS**。"
 
 msgid "Web"
 msgstr "Web"
@@ -160,12 +152,11 @@ msgid ""
 "support for Vulkan there."
 msgstr ""
 
-#, fuzzy
 msgid "Enabling validation layers"
-msgstr "启用插件"
+msgstr "启用验证层"
 
 msgid "Build validation layers from official sources"
-msgstr ""
+msgstr "从官方源码构建验证层"
 
 msgid ""
 "To build Android libraries, follow the instructions on `Khronos' repository  "
@@ -174,9 +165,8 @@ msgid ""
 "located in ``Vulkan-ValidationLayers/build-android/libs``."
 msgstr ""
 
-#, fuzzy
 msgid "Copy libraries"
-msgstr "平台库"
+msgstr "复制库"
 
 msgid ""
 "Copy libraries from ``Vulkan-ValidationLayers/build-android/libs`` to "
@@ -193,9 +183,8 @@ msgid ""
 "create it."
 msgstr ""
 
-#, fuzzy
 msgid "Compile and run the Android app"
-msgstr "为 Android 平台编译"
+msgstr "编译并运行 Android 应用"
 
 msgid ""
 "Linked validation layers are automatically loaded and enabled in Android "

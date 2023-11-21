@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,27 +136,24 @@ msgstr ""
 "影响, 但可以通过调用 ``VisualServer.set_shader_time_Scale()`` 来覆盖 "
 "``TIME`` 变量的时标, 并将所需的时标因子作为参数( ``1.0`` 为默认值)."
 
-#, fuzzy
 msgid "in float **PI**"
-msgstr "in float **TIME**"
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
 "diameter and amount of radians in half turn."
 msgstr ""
 
-#, fuzzy
 msgid "in float **TAU**"
-msgstr "in float **DELTA**"
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "in float **TIME**"
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
@@ -203,18 +200,16 @@ msgstr "**y**\\ ：生命周期的阶段（0 到 1）。"
 msgid "**z**: Animation frame."
 msgstr "**z**\\ ：动画帧。"
 
-#, fuzzy
 msgid "in mat4 **MODEL_MATRIX**"
-msgstr "in mat4 ** WORLD_MATRIX **"
+msgstr "in mat4 **MODEL_MATRIX**"
 
 msgid ""
 "Local space to world space transform. World space is the coordinates you "
 "normally use in the editor."
 msgstr ""
 
-#, fuzzy
 msgid "in mat4 **CANVAS_MATRIX**"
-msgstr "in mat4 **CAMERA_MATRIX**"
+msgstr "in mat4 **CANVAS_MATRIX**"
 
 msgid ""
 "World space to canvas space transform. In canvas space the origin is the "
@@ -222,14 +217,20 @@ msgid ""
 "viewport size."
 msgstr ""
 
-#, fuzzy
 msgid "in mat4 **SCREEN_MATRIX**"
-msgstr "in mat4 **CAMERA_MATRIX**"
+msgstr "in mat4 **SCREEN_MATRIX**"
 
 msgid ""
 "Canvas space to clip space. In clip space coordinates ranging from (-1, -1) "
 "to (1, 1)."
 msgstr ""
+
+#, fuzzy
+msgid "in int  **INSTANCE_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "实例化的实例ID."
 
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr "in vec4 **INSTANCE_CUSTOM**"
@@ -240,9 +241,8 @@ msgstr "实例自定义数据."
 msgid "in bool **AT_LIGHT_PASS**"
 msgstr "in bool **AT_LIGHT_PASS**"
 
-#, fuzzy
 msgid "Always ``false``."
-msgstr "``false``"
+msgstr "始终为 ``false``\\ 。"
 
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
@@ -258,8 +258,15 @@ msgstr ""
 msgid "inout vec2 **VERTEX**"
 msgstr "inout vec2 **VERTEX**"
 
-msgid "Vertex, in image space."
+#, fuzzy
+msgid "Vertex, in local space."
 msgstr "顶点, 在图像空间."
+
+msgid "in int **VERTEX_ID**"
+msgstr "in int **VERTEX_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
+msgstr ""
 
 msgid "inout vec2 **UV**"
 msgstr "inout vec2 **UV**"
@@ -336,16 +343,14 @@ msgstr "sampler2D **TEXTURE**"
 msgid "Default 2D texture."
 msgstr "默认的2D纹理."
 
-#, fuzzy
 msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
-msgstr "sampler2D **SCREEN_TEXTURE**"
+msgstr "sampler2D **SPECULAR_SHININESS_TEXTURE**"
 
 msgid "Specular shininess texture of this object."
 msgstr ""
 
-#, fuzzy
 msgid "in vec4 **SPECULAR_SHININESS**"
-msgstr "out vec3 **SPECULAR_LIGHT**"
+msgstr "in vec4 **SPECULAR_SHININESS**"
 
 msgid "Specular shininess color, as sampled from the texture."
 msgstr ""
@@ -368,6 +373,7 @@ msgstr "sampler2D **SCREEN_TEXTURE**"
 msgid ""
 "Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
 msgstr ""
+"在 Godot 4 中移除。请改用 ``sampler2D`` 和 ``hint_screen_texture``\\ 。"
 
 msgid "inout vec3 **NORMAL**"
 msgstr "inout vec3 **NORMAL**"
@@ -382,9 +388,8 @@ msgstr "输入sampler2D **NORMAL_TEXTURE**"
 msgid "Default 2D normal texture."
 msgstr "默认 2D 法线纹理。"
 
-#, fuzzy
 msgid "out vec3 **NORMAL_MAP**"
-msgstr "out vec3 **NORMALMAP**"
+msgstr "out vec3 **NORMAL_MAP**"
 
 #, fuzzy
 msgid ""
@@ -392,9 +397,8 @@ msgid ""
 "**NORMAL**."
 msgstr "配置用于三维的法线贴图, 以便在二维中使用. 如果使用, 则覆盖 **法线** ."
 
-#, fuzzy
 msgid "out float **NORMAL_MAP_DEPTH**"
-msgstr "out float **NORMALMAP_DEPTH**"
+msgstr "out float **NORMAL_MAP_DEPTH**"
 
 msgid "Normalmap depth for scaling."
 msgstr "用于缩放的法线贴图深度."
@@ -403,16 +407,14 @@ msgstr "用于缩放的法线贴图深度."
 msgid "Pixel position in screen space."
 msgstr "法向量, 在视图空间中."
 
-#, fuzzy
 msgid "inout vec2 **SHADOW_VERTEX**"
-msgstr "inout vec2 **SHADOW_VEC**"
+msgstr "inout vec2 **SHADOW_VERTEX**"
 
 msgid "Same as ``VERTEX`` but can be written to alter shadows."
 msgstr ""
 
-#, fuzzy
 msgid "inout vec3 **LIGHT_VERTEX**"
-msgstr "inout vec3 **VERTEX**"
+msgstr "inout vec3 **LIGHT_VERTEX**"
 
 msgid ""
 "Same as ``VERTEX`` but can be written to alter lighting. Z component "
@@ -454,9 +456,8 @@ msgstr ""
 msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
-#, fuzzy
 msgid "Input Normal."
-msgstr "输入"
+msgstr "输入。"
 
 msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
@@ -478,47 +479,43 @@ msgstr "CanvasItem使用的当前纹理."
 msgid "UV for Point Sprite."
 msgstr "点精灵的UV."
 
-#, fuzzy
 msgid "in vec4 **LIGHT_COLOR**"
-msgstr "in vec3 **LIGHT_COLOR**"
+msgstr "in vec4 **LIGHT_COLOR**"
 
 msgid "Color of Light."
-msgstr "光的颜色."
+msgstr "灯光的颜色。"
 
-#, fuzzy
 msgid "in float **LIGHT_ENERGY**"
-msgstr "inout float **LIGHT_HEIGHT**"
+msgstr "in float **LIGHT_ENERGY**"
 
 msgid "Energy multiplier of Light."
-msgstr ""
+msgstr "灯光的能量乘数。"
 
-#, fuzzy
 msgid "in vec3 **LIGHT_POSITION**"
-msgstr "in vec3 **LIGHT_COLOR**"
+msgstr "in vec3 **LIGHT_POSITION**"
 
 msgid ""
 "Position of Light in screen space. If using a ``DirectionalLight2D`` this is "
 "always ``vec3(0,0,0)``."
 msgstr ""
+"灯光在屏幕空间中的位置。如果使用的是 ``DirectionalLight2D``\\ ，则始终为 "
+"``vec3(0,0,0)``\\ 。"
 
-#, fuzzy
 msgid "in vec3 **LIGHT_DIRECTION**"
-msgstr "in vec3 **LIGHT_COLOR**"
+msgstr "in vec3 **LIGHT_DIRECTION**"
 
 msgid "Direction of Light in screen space."
-msgstr ""
+msgstr "灯光在屏幕空间中的方向。"
 
-#, fuzzy
 msgid "in bool **LIGHT_IS_DIRECTIONAL**"
-msgstr "in bool **AT_LIGHT_PASS**"
+msgstr "in bool **LIGHT_IS_DIRECTIONAL**"
 
 #, fuzzy
 msgid "``true`` if this pass is a ``DirectionalLight2D``."
 msgstr "如果 ``true`` 代表光照通道."
 
-#, fuzzy
 msgid "in vec3 **LIGHT_VERTEX**"
-msgstr "in vec3 **VERTEX**"
+msgstr "in vec3 **LIGHT_VERTEX**"
 
 #, fuzzy
 msgid "Pixel position, in screen space as modified in the fragment function."
@@ -535,16 +532,14 @@ msgstr "值从浅色纹理和输出颜色. 可以修改. 如果不使用, 则忽
 msgid "Specular shininess, as set in the object's texture."
 msgstr ""
 
-#, fuzzy
 msgid "out vec4 **SHADOW_MODULATE**"
-msgstr "out vec4 **SHADOW_COLOR**"
+msgstr "out vec4 **SHADOW_MODULATE**"
 
 msgid "Multiply shadows cast at this point by this color."
 msgstr ""
 
-#, fuzzy
 msgid "SDF functions"
-msgstr "函数"
+msgstr "SDF 函数"
 
 msgid ""
 "There are a few additional functions implemented to sample an automatically "
@@ -563,13 +558,11 @@ msgstr ""
 msgid "Function"
 msgstr "函数"
 
-#, fuzzy
 msgid "float **texture_sdf** (vec2 sdf_pos)"
-msgstr "float **length** (vec_type x)"
+msgstr "float **texture_sdf** (vec2 sdf_pos)"
 
-#, fuzzy
 msgid "Performs an SDF texture lookup."
-msgstr "执行2D纹理读取"
+msgstr "执行2D纹理读取。"
 
 msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 msgstr ""
@@ -584,13 +577,11 @@ msgstr ""
 msgid "Converts a SDF to screen UV."
 msgstr ""
 
-#, fuzzy
 msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
-msgstr "vec3 **cross** (vec3 a, vec3 b)"
+msgstr "vec2 **screen_uv_to_sdf** (vec2 uv)"
 
-#, fuzzy
 msgid "Converts screen UV to a SDF."
-msgstr "将缩进转为制表符"
+msgstr "将缩进转为制表符。"
 
 msgid "Translation status"
 msgstr "翻译状态"

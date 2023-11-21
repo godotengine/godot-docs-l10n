@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Feature tags"
 msgstr "功能標籤"
 
 msgid "Introduction"
-msgstr "簡介"
+msgstr "前言"
 
 msgid ""
 "Godot has a special system to tag availability of features. Each *feature* "
@@ -37,7 +37,7 @@ msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
 msgstr "平台架構 (64 位元或 32 位元，x86 或 ARM)。"
 
 msgid "Platform type (desktop, mobile, Web)."
-msgstr "平台類型 (桌面、行動裝置、網頁)。"
+msgstr "平台型別 (桌面、行動裝置、網頁)。"
 
 msgid "Supported texture compression algorithms on the platform."
 msgstr "平台所支援的紋理壓縮演算法。"
@@ -61,6 +61,8 @@ msgid ""
 "load. For example, a library for ``linux.debug.editor.x86_64`` will be "
 "loaded only on a debug editor build for Linux x86_64."
 msgstr ""
+"GDExtension 使用作業系統功能標籤來決定要載入的庫。例如，「linux.debug.editor."
+"x86_64」的程式庫將僅在 Linux x86_64 的偵錯編輯器版本上載入。"
 
 msgid "Default features"
 msgstr "預設功能"
@@ -77,110 +79,92 @@ msgstr "**功能標籤**"
 msgid "**Description**"
 msgstr "**描述**"
 
-#, fuzzy
 msgid "**android**"
-msgstr "\\ **Android**"
+msgstr "**Android**"
 
 msgid "Running on Android (but not within a Web browser)"
-msgstr ""
+msgstr "在 Android 上運作（非 Web 瀏覽器）"
 
 msgid "**bsd**"
-msgstr ""
+msgstr "**bsd**"
 
 msgid "Running on \\*BSD (but not within a Web browser)"
-msgstr ""
+msgstr "在 \\*BSD 上運行（非 Web 瀏覽器）"
 
-#, fuzzy
 msgid "**linux**"
-msgstr "\\ **Alpine Linux**"
+msgstr "**Alpine Linux**"
 
 msgid "Running on Linux (but not within a Web browser)"
-msgstr ""
+msgstr "在 Linux 上運作（非 Web 瀏覽器）"
 
-#, fuzzy
 msgid "**macos**"
-msgstr "\\ **macOS**"
+msgstr "**macOS**"
 
 msgid "Running on macOS (but not within a Web browser)"
-msgstr ""
+msgstr "在 macOS 上運作（非 Web 瀏覽器）"
 
 msgid "**ios**"
-msgstr ""
+msgstr "**ios**"
 
 msgid "Running on iOS (but not within a Web browser)"
-msgstr ""
+msgstr "在 iOS 上運作（非 Web 瀏覽器）"
 
-msgid "**uwp**"
-msgstr ""
-
-msgid "Running on UWP (but not within a Web browser)"
-msgstr ""
-
-#, fuzzy
 msgid "**windows**"
-msgstr "\\ **Windows**"
+msgstr "**Windows**"
 
 msgid "Running on Windows"
 msgstr "在 Windows 上執行"
 
-#, fuzzy
 msgid "**linuxbsd**"
-msgstr "\\ **Alpine Linux**"
+msgstr "**Alpine Linux**"
 
-#, fuzzy
 msgid "Running on Linux or \\*BSD"
 msgstr "在 iOS 上執行"
 
 msgid "**debug**"
-msgstr "\\ **debug**"
+msgstr "**debug**"
 
 msgid "Running on a debug build (including the editor)"
 msgstr "在除錯建置中執行 (包含編輯器)"
 
 msgid "**release**"
-msgstr "\\ **release**"
+msgstr "**release**"
 
 msgid "Running on a release build"
 msgstr "在發行版本建置上執行"
 
 msgid "**editor**"
-msgstr "\\ **editor**"
+msgstr "**editor**"
 
 msgid "Running on an editor build"
 msgstr "在編輯器建置中執行"
 
-#, fuzzy
 msgid "**template**"
 msgstr "**釋出日期**"
 
-#, fuzzy
 msgid "Running on a non-editor (export template) build"
 msgstr "在非編輯器建置中執行"
 
-#, fuzzy
 msgid "**double**"
-msgstr "\\ **mobile**"
+msgstr "**mobile**"
 
-#, fuzzy
 msgid "Running on a double-precision build"
 msgstr "在非編輯器建置中執行"
 
-#, fuzzy
 msgid "**single**"
-msgstr "\\ **mobile**"
+msgstr "**mobile**"
 
-#, fuzzy
 msgid "Running on a single-precision build"
 msgstr "在非編輯器建置中執行"
 
 msgid "**64**"
-msgstr "\\ **64**"
+msgstr "**64**"
 
 msgid "Running on a 64-bit build (any architecture)"
 msgstr "在 64 位元建置上執行 (不限架構)"
 
 msgid "**32**"
-msgstr "\\ **32**"
+msgstr "**32**"
 
 msgid "Running on a 32-bit build (any architecture)"
 msgstr "在 32 位元建置上執行 (不限架構)"
@@ -191,7 +175,6 @@ msgstr "**x86_64**"
 msgid "Running on a 64-bit x86 build"
 msgstr "在 64 位元 x86 建置上執行"
 
-#, fuzzy
 msgid "**x86_32**"
 msgstr "**x86**"
 
@@ -201,7 +184,6 @@ msgstr "在 32 位元 x86 建置上執行"
 msgid "**x86**"
 msgstr "**x86**"
 
-#, fuzzy
 msgid "Running on an x86 build (any bitness)"
 msgstr "在 64 位元建置上執行 (不限架構)"
 
@@ -211,7 +193,6 @@ msgstr "**arm64**"
 msgid "Running on a 64-bit ARM build"
 msgstr "在 64 位元 ARM 建置上執行"
 
-#, fuzzy
 msgid "**arm32**"
 msgstr "**arm**"
 
@@ -221,80 +202,65 @@ msgstr "在 32 位元 ARM 建置上執行"
 msgid "**arm**"
 msgstr "**arm**"
 
-#, fuzzy
 msgid "Running on an ARM build (any bitness)"
 msgstr "在 64 位元建置上執行 (不限架構)"
 
-#, fuzzy
 msgid "**rv64**"
-msgstr "\\ **64**"
+msgstr "**64**"
 
-#, fuzzy
 msgid "Running on a 64-bit RISC-V build"
 msgstr "在 64 位元 ARM 建置上執行"
 
 msgid "**riscv**"
-msgstr ""
+msgstr "**riscv**"
 
-#, fuzzy
 msgid "Running on a RISC-V build (any bitness)"
 msgstr "在 64 位元建置上執行 (不限架構)"
 
-#, fuzzy
 msgid "**ppc64**"
-msgstr "\\ **64**"
+msgstr "**64**"
 
-#, fuzzy
 msgid "Running on a 64-bit PowerPC build"
 msgstr "在 64 位元 x86 建置上執行"
 
-#, fuzzy
 msgid "**ppc32**"
-msgstr "\\ **32**"
+msgstr "**32**"
 
-#, fuzzy
 msgid "Running on a 32-bit PowerPC build"
 msgstr "在 32 位元 x86 建置上執行"
 
-#, fuzzy
 msgid "**ppc**"
-msgstr "\\ **pc**"
+msgstr "**pc**"
 
-#, fuzzy
 msgid "Running on a PowerPC build (any bitness)"
 msgstr "在 64 位元建置上執行 (不限架構)"
 
-#, fuzzy
 msgid "**wasm64**"
 msgstr "**arm64**"
 
-#, fuzzy
 msgid "Running on a 64-bit WebAssembly build (not yet possible)"
 msgstr "在 64 位元建置上執行 (不限架構)"
 
-#, fuzzy
 msgid "**wasm32**"
-msgstr "\\ **32**"
+msgstr "**32**"
 
-#, fuzzy
 msgid "Running on a 32-bit WebAssembly build"
 msgstr "在 32 位元 ARM 建置上執行"
 
 msgid "**wasm**"
-msgstr ""
+msgstr "**wasm**"
 
-#, fuzzy
 msgid "Running on a WebAssembly build (any bitness)"
 msgstr "在 64 位元建置上執行 (不限架構)"
 
 msgid "**mobile**"
-msgstr "\\ **mobile**"
+msgstr "**mobile**"
 
 msgid "Host OS is a mobile platform"
 msgstr "主機作業系統為行動裝置平台"
 
 msgid "**pc**"
-msgstr "\\ **pc**"
+msgstr "**pc**"
 
 msgid "Host OS is a PC platform (desktop/laptop)"
 msgstr "主機作業系統為 PC 平台 (桌上型電腦／膝上型電腦)"
@@ -305,43 +271,33 @@ msgstr "**web**"
 msgid "Host OS is a Web browser"
 msgstr "主機作業系統為網頁瀏覽器"
 
-#, fuzzy
 msgid "**web_android**"
-msgstr "\\ **Android**"
+msgstr "**Android**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Android"
 msgstr "主機作業系統為網頁瀏覽器"
 
-#, fuzzy
 msgid "**web_ios**"
 msgstr "**web**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on iOS"
 msgstr "主機作業系統為網頁瀏覽器"
 
-#, fuzzy
 msgid "**web_linuxbsd**"
 msgstr "**web**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Linux or \\*BSD"
 msgstr "主機作業系統為網頁瀏覽器"
 
-#, fuzzy
 msgid "**web_macos**"
 msgstr "**web**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on macOS"
 msgstr "主機作業系統為網頁瀏覽器"
 
-#, fuzzy
 msgid "**web_windows**"
-msgstr "\\ **Windows**"
+msgstr "**Windows**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Windows"
 msgstr "主機作業系統為網頁瀏覽器"
 
@@ -363,12 +319,11 @@ msgstr "**s3tc**"
 msgid "Textures using S3TC (DXT/BC) compression are supported"
 msgstr "支援以 S3TC (DXT/BC) 壓縮紋理"
 
-#, fuzzy
 msgid "**movie**"
-msgstr "\\ **mobile**"
+msgstr "**mobile**"
 
 msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
-msgstr ""
+msgstr ":ref:`Movie Maker 模式 <doc_creating_movies>` 已激活"
 
 msgid ""
 "With the exception of texture compression and ``movie`` feature tags, "
@@ -377,12 +332,17 @@ msgid ""
 "has_feature(\"mobile\")`` will return ``false`` when running a project "
 "exported to HTML5 on a mobile device."
 msgstr ""
+"除了紋理壓縮功能標籤之外，預設的功能標籤都是**不可修改**的。這意味著它們*不會"
+"*根據運作時的情況變化。例如，在移動裝置上運作匯出為 HTML5 的專案時， ``OS."
+"has_feature(\"mobile\")`` 返回的是 ``false``。"
 
 msgid ""
 "To check whether a project exported to HTML5 is running on a mobile device, :"
 "ref:`call JavaScript code <doc_javascript_eval>` that reads the browser's "
 "user agent."
 msgstr ""
+"要檢查匯出為 HTML5 的專案是否是在移動裝置上運作，請:ref:`呼叫 JavaScript 程式"
+"碼 <doc_javascript_eval>`讀取瀏覽器的使用者代理。"
 
 msgid "Custom features"
 msgstr "自定功能"
@@ -399,6 +359,9 @@ msgid ""
 "running the project from the editor, even if the export preset marked as "
 "**Runnable** for your current platform has custom feature tags defined."
 msgstr ""
+"自訂功能標籤只會在運作匯出後的專案中使用（包括 :ref:`doc_one-"
+"click_deploy`）。從編輯器中運作專案時**不會使用**，即便標記為**可執行**的匯出"
+"預設對應的平臺上存在自訂功能標籤。"
 
 msgid "Overriding project settings"
 msgstr "覆寫專案設定"
@@ -429,6 +392,9 @@ msgid ""
 "setting with the desired feature tag(s) if you want them to override base "
 "project settings on all platforms and configurations."
 msgstr ""
+"當使用:ref:`專案設定的“override.cfg”功能 <class_ProjectSettings>`時（與功能標"
+"籤無關），記住功能標籤仍然適用。因此，如果你想讓它們覆蓋所有平臺和配置上的基"
+"本專案設定，請確保*同時*用所需的功能標籤覆蓋設定。"
 
 msgid "Default overrides"
 msgstr "預設覆寫"
@@ -441,7 +407,6 @@ msgstr "預設已經有許多設定會被覆蓋。專案設定中各個地方都
 msgid "Customizing the build"
 msgstr "自定建置"
 
-#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "

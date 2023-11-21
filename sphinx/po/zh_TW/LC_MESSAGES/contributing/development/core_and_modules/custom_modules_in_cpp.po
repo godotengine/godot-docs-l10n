@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,6 @@ msgstr "最佳化遊戲中重要的部分。"
 msgid "Adding new functionality to the engine and/or editor."
 msgstr "為引擎與／或編輯器加上新功能。"
 
-#, fuzzy
 msgid "Porting an existing game to Godot."
 msgstr "移植現有遊戲。"
 
@@ -75,7 +74,6 @@ msgstr "如果你沒有 C++ 活不下去的話，可以用 C++ 來撰寫一個�
 msgid "Creating a new module"
 msgstr "建立新模組"
 
-#, fuzzy
 msgid ""
 "Before creating a module, make sure to :ref:`download the source code of "
 "Godot and compile it <toc-devel-compiling>`."
@@ -94,6 +92,8 @@ msgid ""
 "The example module will be called \"summator\" (``godot/modules/summator``). "
 "Inside we will create a summator class:"
 msgstr ""
+"實例模組的名字就叫“summator（加法器）”（ ``godot/modules/summator`` ）。我們"
+"在裡面建立一個簡單的加法器類："
 
 msgid "And then the cpp file."
 msgstr "以及 cpp 檔。"
@@ -137,7 +137,6 @@ msgid ""
 msgstr ""
 "要新增讓編譯器搜尋的 include 資料夾，可以將資料夾附加到編譯環境的路徑內："
 
-#, fuzzy
 msgid ""
 "If you want to add custom compiler flags when building your module, you need "
 "to clone ``env`` first, so it won't add those flags to whole Godot build "
@@ -146,7 +145,6 @@ msgstr ""
 "若要為模組新增自定編譯器旗標，則需要先複製 ``env`` 變數，以免修改到整個 "
 "Godot 建置用的旗標 (進而導致發生錯誤)。下列為使用自定旗標的 ``SCsub`` 範例："
 
-#, fuzzy
 msgid ""
 "And finally, the configuration file for the module, this is a Python script "
 "that must be named ``config.py``:"
@@ -179,8 +177,8 @@ msgid ""
 "subclasses. This can be raised to 13 by including the header file ``core/"
 "method_bind_ext.gen.inc``."
 msgstr ""
-"對於如子類別 (Subclass) 的東西，C++ 模組內限制最多只能有 5 個參數。包含了標頭"
-"檔 ``core/method_bind_ext.gen.inc`` 便可提升至 13 個。"
+"對於如子類別別 (Subclass) 的東西，C++ 模組內限制最多只能有 5 個參數。包含了標"
+"頭檔 ``core/method_bind_ext.gen.inc`` 便可提升至 13 個。"
 
 msgid "Using the module"
 msgstr "使用模組"
@@ -235,7 +233,7 @@ msgid ""
 msgstr ""
 "不管要不要編譯模組，每次編譯引擎的時候都需要手動複製模組的原始碼，甚至還需要"
 "額外的步驟來手動在編譯時期通過如 ``module_summator_enabled=no`` 這樣的建置選"
-"項來停用模組。建立符號連結可能是個解法，但如果要通過腳本實現的話，可能會需要"
+"項來停用模組。建立符號連結可能是個解法，但如果要通過腳本實作的話，可能會需要"
 "解決一些如符號連結權限這樣的作業系統限制。"
 
 msgid ""
@@ -290,7 +288,7 @@ msgstr ""
 ":ref:`建置系統簡介 - 自定模組建置選項 <doc_buildsystem_custom_modules>` 。"
 
 msgid "Customizing module types initialization"
-msgstr ""
+msgstr "自訂展現形式"
 
 msgid ""
 "Modules can interact with other built-in engine classes during runtime and "
@@ -298,11 +296,14 @@ msgid ""
 "``register_summator_types`` as a way to bring in module classes to be "
 "available within the engine."
 msgstr ""
+"模組可以在運作時與其他內建引擎類別互動，甚至影響核心型別的初始化方式。到目前"
+"為止，我們一直在使用“register_summator_types”作為引入模組類別以在引擎中可用的"
+"方法。"
 
 msgid ""
 "A crude order of the engine setup can be summarized as a list of the "
 "following type registration methods:"
-msgstr ""
+msgstr "引擎設定的粗略順序可以概括為以下型別註冊方法的列表："
 
 msgid ""
 "Our ``Summator`` class is initialized during the ``register_module_types()`` "
@@ -312,16 +313,22 @@ msgid ""
 "ensure that our module classes are registered *before* any other built-in "
 "type."
 msgstr ""
+"我們的“Summator”類別在“register_module_types()”呼叫期間初始化。想像一下，我們"
+"需要滿足一些常見的模組運作時依賴性（例如單例），或者允許我們覆蓋現有的引擎方"
+"法回調，然後才能由引擎本身分配它們。在這種情況下，我們希望確保我們的模組類別"
+"在任何其他內建型別*之前*註冊。"
 
 msgid ""
 "This is where we can define an optional ``preregister_summator_types()`` "
 "method which will be called before anything else during the "
 "``preregister_module_types()`` engine setup stage."
 msgstr ""
+"這是我們可以定義一個可選的“preregister_summator_types()”方法的地方，該方法將"
+"在“preregister_module_types()”引擎設定階段期間在其他任何事情之前被呼叫。"
 
 msgid ""
 "We now need to add this method to ``register_types`` header and source files:"
-msgstr ""
+msgstr "我們現在需要將此方法新增到「register_types」頭檔和來源檔案："
 
 msgid ""
 "Unlike other register methods, we have to explicitly define "
@@ -329,6 +336,8 @@ msgid ""
 "relevant method calls to include at compile time. The module's name has to "
 "be converted to uppercase as well."
 msgstr ""
+"與其他註冊方法不同，我們必須明確定義“MODULE_SUMMATOR_HAS_PREREGISTER”，以使建"
+"置系統知道在編譯時要包含哪些相關方法呼叫。模組的名稱也必須轉換為大寫。"
 
 msgid "Improving the build system for development"
 msgstr "為開發環境改進建置系統"
@@ -338,8 +347,9 @@ msgid ""
 "to other users without recompiling the engine. For that purpose, use a "
 "GDExtension instead."
 msgstr ""
+"如果想要在不對引擎進行重新編譯的情況下，將模組分發給其他使用者，請使用 :ref:"
+"`GDNative <doc_what_is_gdnative>`。此處的共用庫支援並不是為此設計的。"
 
-#, fuzzy
 msgid ""
 "So far, we defined a clean SCsub that allows us to add the sources of our "
 "new module as part of the Godot binary."
@@ -347,7 +357,6 @@ msgstr ""
 "到目前為止，我們建立了一個用來將新模組的原始碼加到 Godot 二進位檔中的一個簡易"
 "的 SCsub 檔案。"
 
-#, fuzzy
 msgid ""
 "This static approach is fine when we want to build a release version of our "
 "game, given we want all the modules in a single binary."
@@ -355,7 +364,6 @@ msgstr ""
 "當我們只是要建置遊戲的釋出版本時，由於我們想將所有模組都放在單一二進位檔中，"
 "這種靜態的方法沒什麼問題。"
 
-#, fuzzy
 msgid ""
 "However, the trade-off is that every single change requires a full "
 "recompilation of the game. Even though SCons is able to detect and recompile "
@@ -383,13 +391,11 @@ msgstr ""
 "但，由於 .so 並不在標準資料夾內 (如 ``/usr/lib``) 中，因此我們必須要通過 "
 "``LD_LIBRARY_PATH`` 環境變數來讓我們的二進位檔能在執行時期找到這些函式庫："
 
-#, fuzzy
 msgid ""
 "You have to ``export`` the environment variable. Otherwise, you won't be "
 "able to run your project from the editor."
 msgstr "必須要 ``export`` 環境變數，否則將無法從編輯器來執行專案。"
 
-#, fuzzy
 msgid ""
 "On top of that, it would be nice to be able to select whether to compile our "
 "module as shared library (for development) or as a part of the Godot binary "
@@ -417,7 +423,6 @@ msgstr ""
 msgid "Writing custom documentation"
 msgstr "撰寫自定說明文件"
 
-#, fuzzy
 msgid ""
 "Writing documentation may seem like a boring task, but it is highly "
 "recommended to document your newly created module to make it easier for "
@@ -425,7 +430,7 @@ msgid ""
 "year ago may become indistinguishable from the code that was written by "
 "someone else, so be kind to your future self!"
 msgstr ""
-"撰寫說明文件看起來可能是一件無聊的任務，但我們非常建議為新建立的模組撰寫說明"
+"撰寫說明文件看起來可能是一件無聊的工作，但我們非常建議為新建立的模組撰寫說明"
 "文件，這樣一來可以讓其他使用者更輕鬆地從模組中獲益。更不用提你自己一年前寫的"
 "程式碼看起來可能跟別人寫的程式差不多，因此也請善待未來的自己吧！"
 
@@ -502,7 +507,6 @@ msgstr ""
 "接著若開啟 ``godot/modules/summator/doc_classes`` 資料夾，就可以看到裡面有 "
 "``Summator.xml`` 檔案，或在 ``get_doc_classes`` 函式中參照的其他類別。"
 
-#, fuzzy
 msgid ""
 "Edit the file(s) following :ref:`doc_class_reference_primer` and recompile "
 "the engine."
@@ -536,7 +540,6 @@ msgid ""
 "you might encounter an error similar to the following:"
 msgstr "如果沒有所提供 ``<路徑>`` 的寫入權限，則可能會遇到類似下列錯誤："
 
-#, fuzzy
 msgid "Writing custom unit tests"
 msgstr "撰寫自定說明文件"
 
@@ -545,30 +548,33 @@ msgid ""
 "you are not familiar with the unit testing process in Godot yet, please "
 "refer to :ref:`doc_unit_testing`."
 msgstr ""
+"可以將獨立的單元測試編寫為 C++ 模組的一部分。如果您還不熟悉 Godot 中的單元測"
+"試流程，請參閱 doc_unit_testing。"
 
-#, fuzzy
 msgid "The procedure is the following:"
 msgstr "有下列事項需注意："
 
 msgid "Create a new directory named ``tests/`` under your module's root:"
-msgstr ""
+msgstr "在模組的根目錄下建立一個名為「tests/」的新目錄："
 
 msgid ""
 "Create a new test suite: ``test_summator.h``. The header must be prefixed "
 "with ``test_`` so that the build system can collect it and include it as "
 "part of the ``tests/test_main.cpp`` where the tests are run."
 msgstr ""
+"建立一個新的測試套件：「test_summator.h」。標頭必須以“test_”為前綴，以便建置"
+"系統可以收集它並將其包含在執行測試的“tests/test_main.cpp”中。"
 
 msgid "Write some test cases. Here's an example:"
-msgstr ""
+msgstr "編寫一些測試案例。這是一個例子："
 
 msgid ""
 "Compile the engine with ``scons tests=yes``, and run the tests with the "
 "following command:"
-msgstr ""
+msgstr "使用“sconstests=yes”編譯引擎，並使用以下命令執行測試："
 
 msgid "You should see the passing assertions now."
-msgstr ""
+msgstr "現在你就應該會看到出現了群組。"
 
 msgid "Adding custom editor icons"
 msgstr "新增自定編輯器圖示"
@@ -619,11 +625,9 @@ msgstr "總結"
 msgid "Remember to:"
 msgstr "請記住："
 
-#, fuzzy
 msgid "Use ``GDCLASS`` macro for inheritance, so Godot can wrap it."
 msgstr "使用 ``GDCLASS`` 來處理繼承，這樣 Godot 才能對其進行封裝"
 
-#, fuzzy
 msgid ""
 "Use ``_bind_methods`` to bind your functions to scripting, and to allow them "
 "to work as callbacks for signals."
@@ -636,6 +640,8 @@ msgid ""
 "doesn't support this. You can still use multiple inheritance in your own "
 "classes as long as they're not exposed to Godot's scripting API."
 msgstr ""
+"**避免暴露給 Godot 的類別的多重繼承**，因為「GDCLASS」不支援這一點。您仍然可"
+"以在自己的類別中使用多重繼承，只要它們不暴露於 Godot 的腳本 API。"
 
 msgid ""
 "But this is not all, depending what you do, you will be greeted with some "
@@ -644,13 +650,12 @@ msgstr ""
 "但依據使用情況，還有其他要注意的點。在實際製作模組的過程還會遇到許多驚喜 (希"
 "望是正面的驚喜)。"
 
-#, fuzzy
 msgid ""
 "If you inherit from :ref:`class_Node` (or any derived node type, such as "
 "Sprite2D), your new class will appear in the editor, in the inheritance tree "
 "in the \"Add Node\" dialog."
 msgstr ""
-"若從 :ref:`class_Node` (以及其他衍生 Node 類型，如 Sprite) 繼承，則新類別會出"
+"若從 :ref:`class_Node` (以及其他衍生 Node 型別，如 Sprite) 繼承，則新類別會出"
 "現在編輯器的「新增節點」對話框中的繼承樹中。"
 
 msgid ""

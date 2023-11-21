@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Fixing jitter, stutter and input lag"
-msgstr "修复抖动和卡顿"
+msgstr "修复抖动、卡顿和输入延迟"
 
-#, fuzzy
 msgid "What is jitter, stutter and input lag?"
-msgstr "什么是抖动和卡顿？"
+msgstr "什么是抖动、卡顿和输入延迟？"
 
 msgid ""
 "*Jitter* and *stutter* are two different alterations to visible motion of "
@@ -45,9 +43,8 @@ msgid ""
 "reduced in several ways."
 msgstr ""
 
-#, fuzzy
 msgid "Distinguishing between jitter and stutter"
-msgstr "它们之间的区别"
+msgstr "抖动和卡顿的区分"
 
 msgid ""
 "A game running at a normal framerate without exhibiting any effect will "
@@ -98,16 +95,15 @@ msgstr ""
 "对此做了一些改进，从允许运动体在规则的 _process 循环中被动画化，进一步修正帧"
 "定时器。"
 
-#, fuzzy
 msgid ""
 "You can use physics interpolation to mitigate physics-related jittering. See "
 "`lawnjelly's smoothing-addon <https://github.com/lawnjelly/smoothing-"
 "addon>`__ for an add-on that can be dropped into any project to enable "
 "physics interpolation."
 msgstr ""
-"你可以使用物理插值来减少物理相关的抖动。请参阅 `lawnjelly 的平滑插件 "
-"<https://github.com/lawnjelly/smoothing-addon>`__\\ ，获得一个可以放入任何项"
-"目中以启用物理插值的附加组件。"
+"你可以使用物理插值来缓解物理相关的抖动。请参阅 `lawnjelly 的平滑插件 "
+"<https://github.com/lawnjelly/smoothing-addon>`__\\ ，可以将其添加到任何项目"
+"中以启用物理插值。"
 
 msgid "Stutter"
 msgstr "卡顿"
@@ -196,7 +192,9 @@ msgstr ""
 #, fuzzy
 msgid ""
 "There is no workaround for driver or compositor stuttering, other than "
-"reporting it as an issue to the driver or compositor developers."
+"reporting it as an issue to the driver or compositor developers. Stutter may "
+"be more present when playing in windowed mode as opposed to fullscreen, even "
+"with compositing disabled."
 msgstr ""
 "对于驱动程序或组合程序出现的卡顿现象，除了将其作为问题报告给驱动程序或组合程"
 "序开发人员外，没有其他解决办法。"
@@ -242,13 +240,11 @@ msgstr ""
 "iOS设备通常没有卡顿现象，但运行新版操作系统的旧式设备可能会出现问题。这通常是"
 "不可避免的。"
 
-#, fuzzy
 msgid "Input lag"
-msgstr "输入"
+msgstr "输入延迟"
 
-#, fuzzy
 msgid "Project configuration"
-msgstr "项目组织"
+msgstr "项目配置"
 
 msgid ""
 "On platforms that support disabling V-Sync, input lag can be made less "
@@ -291,7 +287,7 @@ msgid ""
 msgstr ""
 
 msgid "Hardware/OS-specific"
-msgstr ""
+msgstr "针对硬件/操作系统"
 
 msgid ""
 "If your monitor supports it, consider enabling variable refresh rate (G-Sync/"
@@ -340,9 +336,8 @@ msgid ""
 "KWin or Xfwm) can reduce input lag significantly."
 msgstr ""
 
-#, fuzzy
 msgid "Reporting jitter, stutter or input lag problems"
-msgstr "报告卡顿或抖动问题"
+msgstr "报告卡顿、抖动或输入延迟问题"
 
 msgid ""
 "If you are reporting a stutter or jitter problem (opening an issue) not "

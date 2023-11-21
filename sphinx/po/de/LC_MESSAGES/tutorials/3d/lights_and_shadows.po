@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,15 +73,15 @@ msgstr ""
 msgid "Light nodes"
 msgstr "Beleuchtungs-Nodes"
 
-#, fuzzy
 msgid ""
 "There are three types of light nodes: :ref:`class_DirectionalLight3D`, :ref:"
 "`class_OmniLight3D` and :ref:`class_SpotLight3D`. Let's take a look at the "
 "common parameters for lights:"
 msgstr ""
-"Es gibt drei Arten von Nodes die Licht erzeugen: `Directional light`_, `Omni "
-"light`_ und `Spot light`_. Werfen wir einen Blick auf die allgemeinen "
-"Parameter für diese Lichter"
+"Es gibt drei Arten von Lichtknoten (light nodes): :ref:"
+"`class_DirectionalLight3D`, :ref:`class_OmniLight3D` und :ref:"
+"`class_SpotLight3D`. Werfen wir einen Blick auf die allgemeinen Parameter "
+"für Lichter:"
 
 #, fuzzy
 msgid "Each property has a specific function:"
@@ -283,6 +283,10 @@ msgid ""
 "the grainy pattern used for filtering more noticeable. See also :ref:"
 "`doc_lights_and_shadows_shadow_filter_mode`."
 msgstr ""
+
+#, fuzzy
+msgid "Tweaking shadow bias"
+msgstr "Meshes einrichten"
 
 #, fuzzy
 msgid ""
@@ -542,9 +546,8 @@ msgstr ""
 "Spotlights haben die gleichen **Reichweite** und **Dämpfung** Eigenschaften "
 "wie das**OmniLight**. Fügen aber zwei zusätzliche Parameter hinzu:"
 
-#, fuzzy
 msgid "**Angle:** The aperture angle of the light."
-msgstr "**Winkel**: Der Blendenwinkel des Lichts"
+msgstr "**Winkel**: Der Blendenwinkel des Lichts."
 
 msgid ""
 "**Angle Attenuation:** The cone attenuation, which helps soften the cone "
@@ -681,7 +684,7 @@ msgid ""
 msgstr ""
 
 msgid "Balancing performance and quality"
-msgstr ""
+msgstr "Gleichgewicht zwischen Leistung und Qualität"
 
 msgid ""
 "Shadow rendering is a critical topic in 3D rendering performance. It's "

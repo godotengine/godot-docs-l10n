@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -199,14 +199,15 @@ msgid "class"
 msgstr "клас"
 
 #, fuzzy
-msgid "Defines a class."
-msgstr "Визначає внутрішній клас."
+msgid "Defines an inner class. See `Inner classes`_."
+msgstr "Внутрішнього класу всередині іншого файла класу."
 
 msgid "class_name"
 msgstr "class_name"
 
 msgid ""
-"Defines the script as a globally accessible class with the specified name."
+"Defines the script as a globally accessible class with the specified name. "
+"See `Registering named classes`_."
 msgstr ""
 
 msgid "extends"
@@ -229,7 +230,7 @@ msgid "in"
 msgstr "Знайти"
 
 msgid ""
-"Tests whether a value is within a string, list, range, dictionary, or node. "
+"Tests whether a value is within a string, array, range, dictionary, or node. "
 "When used with ``for``, it iterates through them instead of testing."
 msgstr ""
 
@@ -307,7 +308,7 @@ msgid ""
 msgstr ""
 
 msgid "yield"
-msgstr "yield"
+msgstr "вихід"
 
 msgid "Previously used for coroutines. Kept as keyword for transition."
 msgstr ""
@@ -682,11 +683,25 @@ msgstr ""
 msgid "Literals"
 msgstr "Літерали"
 
-msgid "**Literal**"
-msgstr "**Літерал**"
+#, fuzzy
+msgid "**Example(s)**"
+msgstr "**Приклад**"
 
-msgid "**Type**"
-msgstr "**Тип**"
+#, fuzzy
+msgid "``null``"
+msgstr "null"
+
+#, fuzzy
+msgid "Null value"
+msgstr "значення"
+
+#, fuzzy
+msgid "``false``, ``true``"
+msgstr "``-e``, ``--editor``"
+
+#, fuzzy
+msgid "Boolean values"
+msgstr "Логічне «або»"
 
 msgid "``45``"
 msgstr "``45``"
@@ -716,14 +731,32 @@ msgstr "Число з рухомою комою (дійсне)"
 msgid "``\"Hello\"``, ``'Hi'``"
 msgstr "``\"Hello\"``, ``\"Привіт\"``"
 
-msgid "Strings"
-msgstr "Рядки"
+#, fuzzy
+msgid "Regular strings"
+msgstr "|regular| Трохи"
 
-msgid "``\"\"\"Hello\"\"\"``"
-msgstr "``\"\"\"Hello, Dude\"\"\"``"
+#, fuzzy
+msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Привіт\"``"
 
-msgid "Multiline string"
-msgstr "Багаторядковий рядок (текст)"
+msgid "Triple-quoted regular strings"
+msgstr ""
+
+#, fuzzy
+msgid "``r\"Hello\"``, ``r'Hi'``"
+msgstr "``\"Hello\"``, ``\"Привіт\"``"
+
+#, fuzzy
+msgid "Raw strings"
+msgstr "текст"
+
+#, fuzzy
+msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
+msgstr "``\"Hello\"``, ``\"Привіт\"``"
+
+#, fuzzy
+msgid "Triple-quoted raw strings"
+msgstr "Форматований текст GDScript"
 
 #, fuzzy
 msgid "``&\"name\"``"
@@ -739,6 +772,13 @@ msgstr "``@\"Node/Label\"``"
 
 msgid ":ref:`NodePath <class_NodePath>`"
 msgstr ":ref:`NodePath <class_NodePath>`"
+
+msgid ""
+"There are also two constructs that look like literals, but actually are not:"
+msgstr ""
+
+msgid "**Example**"
+msgstr "**Приклад**"
 
 msgid "``$NodePath``"
 msgstr "``$NodePath``"
@@ -760,6 +800,128 @@ msgid ""
 msgstr ""
 "Цілі та десяткові числа можуть розділятись символом ``_`` для кращої "
 "читабельності. Усі наступні способи запису чисел є дійсними:"
+
+msgid "**Regular string literals** can contain the following escape sequences:"
+msgstr ""
+
+msgid "**Escape sequence**"
+msgstr "**Escape послідовності**"
+
+msgid "**Expands to**"
+msgstr "**Розширюються**"
+
+msgid "``\\n``"
+msgstr "``\\n``"
+
+msgid "Newline (line feed)"
+msgstr "Новий рядок (перенесення рядка)"
+
+msgid "``\\t``"
+msgstr "``\\t``"
+
+msgid "Horizontal tab character"
+msgstr "Горизонтальний символ табуляції"
+
+msgid "``\\r``"
+msgstr "``\\r``"
+
+msgid "Carriage return"
+msgstr "Повернення каретки"
+
+msgid "``\\a``"
+msgstr "``\\a``"
+
+msgid "Alert (beep/bell)"
+msgstr "Попередження (звуковий сигнал/дзвінок)"
+
+msgid "``\\b``"
+msgstr "``\\b``"
+
+msgid "Backspace"
+msgstr "Стерти"
+
+msgid "``\\f``"
+msgstr "``\\f``"
+
+msgid "Formfeed page break"
+msgstr ""
+
+msgid "``\\v``"
+msgstr "``\\v``"
+
+msgid "Vertical tab character"
+msgstr "Вертикальний символ табуляції"
+
+msgid "``\\\"``"
+msgstr "``\\\"``"
+
+msgid "Double quote"
+msgstr "Подвійні лапки"
+
+msgid "``\\'``"
+msgstr "``\\'``"
+
+msgid "Single quote"
+msgstr "Одинарні лапки"
+
+msgid "``\\\\``"
+msgstr "``\\\\``"
+
+msgid "Backslash"
+msgstr "Зворотний слеш"
+
+msgid "``\\uXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
+msgstr "Символ Unicode ``XXXX`` (шіснадцятковий, без урахування регістру)"
+
+#, fuzzy
+msgid "``\\UXXXXXX``"
+msgstr "``\\uXXXX``"
+
+#, fuzzy
+msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
+msgstr "Символ Unicode ``XXXX`` (шіснадцятковий, без урахування регістру)"
+
+#, fuzzy
+msgid ""
+"There are two ways to represent an escaped Unicode character above "
+"``0xFFFF``:"
+msgstr "Є два способи експорту проєкту на сервер:"
+
+msgid ""
+"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
+"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
+msgstr ""
+
+msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
+msgstr ""
+
+msgid ""
+"Also, using ``\\`` followed by a newline inside a string will allow you to "
+"continue it in the next line, without inserting a newline character in the "
+"string itself."
+msgstr ""
+
+msgid ""
+"A string enclosed in quotes of one type (for example ``\"``) can contain "
+"quotes of another type (for example ``'``) without escaping. Triple-quoted "
+"strings allow you to avoid escaping up to two consecutive quotes of the same "
+"type (unless they are adjacent to the string edges)."
+msgstr ""
+
+msgid ""
+"**Raw string literals** always encode the string as it appears in the source "
+"code. This is especially useful for regular expressions. Raw strings do not "
+"process escape sequences, but you can \"escape\" a quote or backslash (they "
+"replace themselves)."
+msgstr ""
+
+#, fuzzy
+msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
+msgstr "GDScript також підтримує :ref:`doc_gdscript_printf`."
 
 #, fuzzy
 msgid "Annotations"
@@ -849,6 +1011,80 @@ msgstr ""
 "Все що знаходиться після символа ``#``, і до кінця рядка, ігнорується і "
 "вважається коментарем."
 
+msgid ""
+"In the Godot script editor, special keywords are highlighted within comments "
+"to bring the user's attention to specific comments:"
+msgstr ""
+
+msgid ""
+"**Critical** *(appears in red)*: ``ALERT``, ``ATTENTION``, ``CAUTION``, "
+"``CRITICAL``, ``DANGER``, ``SECURITY``"
+msgstr ""
+
+msgid ""
+"**Warning** *(appears in yellow)*: ``BUG``, ``DEPRECATED``, ``FIXME``, "
+"``HACK``, ``TASK``, ``TBD``, ``TODO``, ``WARNING``"
+msgstr ""
+
+msgid ""
+"**Notice** *(appears in green)*: ``INFO``, ``NOTE``, ``NOTICE``, ``TEST``, "
+"``TESTING``"
+msgstr ""
+
+msgid ""
+"These keywords are case-sensitive, so they must be written in uppercase for "
+"them to be recognized:"
+msgstr ""
+
+msgid ""
+"The list of highlighted keywords and their colors can be changed in the "
+"**Text Editor > Theme > Comment Markers** section of the Editor Settings."
+msgstr ""
+
+#, fuzzy
+msgid "Code regions"
+msgstr "Вмикає підписування коду."
+
+msgid ""
+"Code regions are special types of comments that the script editor "
+"understands as *foldable regions*. This means that after writing code region "
+"comments, you can collapse and expand the region by clicking the arrow that "
+"appears at the left of the comment. This arrow appears within a purple "
+"square to be distinguishable from standard code folding."
+msgstr ""
+
+#, fuzzy
+msgid "The syntax is as follows:"
+msgstr "Цей текст заявляє наступне:"
+
+msgid ""
+"To create a code region quickly, select several lines in the script editor, "
+"right-click the selection then choose **Create Code Region**. The region "
+"description will be selected automatically for editing."
+msgstr ""
+
+msgid "It is possible to nest code regions within other code regions."
+msgstr ""
+
+#, fuzzy
+msgid "Here's a concrete usage example of code regions:"
+msgstr "Є багато типів переходів:"
+
+msgid ""
+"This can be useful to organize large chunks of code into easier to "
+"understand sections. However, remember that external editors generally don't "
+"support this feature, so make sure your code is easy to follow even when not "
+"relying on folding code regions."
+msgstr ""
+
+msgid ""
+"Individual functions and indented sections (such as ``if`` and ``for``) can "
+"*always* be collapsed in the script editor. This means you should avoid "
+"using a code region to contain a single function or indented section, as it "
+"won't bring much of a benefit. Code regions work best when they're used to "
+"group multiple elements together."
+msgstr ""
+
 #, fuzzy
 msgid "Line continuation"
 msgstr "Налаштування збирання:"
@@ -936,114 +1172,10 @@ msgstr ":ref:`String <class_String>`"
 #, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
-"Unicode>`_. String literals can contain the following escape sequences:"
+"Unicode>`_."
 msgstr ""
 "Послідовність символів у `форматі Unicode <https://en.wikipedia.org/wiki/"
 "Unicode>`_. Рядки (текст) можуть містити наступні escape послідовності:"
-
-msgid "**Escape sequence**"
-msgstr "**Escape послідовності**"
-
-msgid "**Expands to**"
-msgstr "**Розширюються**"
-
-msgid "``\\n``"
-msgstr "``\\n``"
-
-msgid "Newline (line feed)"
-msgstr "Новий рядок (перенесення рядка)"
-
-msgid "``\\t``"
-msgstr "``\\t``"
-
-msgid "Horizontal tab character"
-msgstr "Горизонтальний символ табуляції"
-
-msgid "``\\r``"
-msgstr "``\\r``"
-
-msgid "Carriage return"
-msgstr "Повернення каретки"
-
-msgid "``\\a``"
-msgstr "``\\a``"
-
-msgid "Alert (beep/bell)"
-msgstr "Попередження (звуковий сигнал/дзвінок)"
-
-msgid "``\\b``"
-msgstr "``\\b``"
-
-msgid "Backspace"
-msgstr "Стерти"
-
-msgid "``\\f``"
-msgstr "``\\f``"
-
-msgid "Formfeed page break"
-msgstr ""
-
-msgid "``\\v``"
-msgstr "``\\v``"
-
-msgid "Vertical tab character"
-msgstr "Вертикальний символ табуляції"
-
-msgid "``\\\"``"
-msgstr "``\\\"``"
-
-msgid "Double quote"
-msgstr "Подвійні лапки"
-
-msgid "``\\'``"
-msgstr "``\\'``"
-
-msgid "Single quote"
-msgstr "Одинарні лапки"
-
-msgid "``\\\\``"
-msgstr "``\\\\``"
-
-msgid "Backslash"
-msgstr "Зворотний слеш"
-
-msgid "``\\uXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-16 Unicode codepoint ``XXXX`` (hexadecimal, case-insensitive)"
-msgstr "Символ Unicode ``XXXX`` (шіснадцятковий, без урахування регістру)"
-
-#, fuzzy
-msgid "``\\UXXXXXX``"
-msgstr "``\\uXXXX``"
-
-#, fuzzy
-msgid "UTF-32 Unicode codepoint ``XXXXXX`` (hexadecimal, case-insensitive)"
-msgstr "Символ Unicode ``XXXX`` (шіснадцятковий, без урахування регістру)"
-
-#, fuzzy
-msgid ""
-"There are two ways to represent an escaped Unicode character above 0xFFFF:"
-msgstr "Є два способи експорту проєкту на сервер:"
-
-msgid ""
-"as a `UTF-16 surrogate pair <https://en.wikipedia.org/wiki/"
-"UTF-16#Code_points_from_U+010000_to_U+10FFFF>`_ ``\\uXXXX\\uXXXX``."
-msgstr ""
-
-msgid "as a single UTF-32 codepoint ``\\UXXXXXX``."
-msgstr ""
-
-msgid ""
-"Also, using ``\\`` followed by a newline inside a string will allow you to "
-"continue it in the next line, without inserting a newline character in the "
-"string itself."
-msgstr ""
-
-#, fuzzy
-msgid "GDScript also supports :ref:`format strings <doc_gdscript_printf>`."
-msgstr "GDScript також підтримує :ref:`doc_gdscript_printf`."
 
 msgid ""
 "An immutable string that allows only one instance of each name. They are "
@@ -1344,11 +1476,12 @@ msgstr ""
 "Асоціативний контейнер, який містить значення, на які посилаються унікальні "
 "ключі."
 
+#, fuzzy
 msgid ""
 "Lua-style table syntax is also supported. Lua-style uses ``=`` instead of ``:"
 "`` and doesn't use quotes to mark string keys (making for slightly less to "
 "write). However, keys written in this form can't start with a digit (like "
-"any GDScript identifier)."
+"any GDScript identifier), and must be string literals."
 msgstr ""
 "Також підтримується синтаксис таблиць в стилі Lua. Стиль Lua використовує "
 "``=`` замість ``:`` і не використовує лапки для позначення ключів (що "
@@ -1924,9 +2057,6 @@ msgstr ""
 "``switch``, який можна знайти в багатьох інших мовах, але``match`` пропонує "
 "деякі додаткові функції."
 
-msgid "Basic syntax::"
-msgstr "Основний синтаксис:"
-
 msgid ""
 "``match`` is more type strict than the ``==`` operator. For example ``1`` "
 "will **not** match ``1.0``. The only exception is ``String`` vs "
@@ -1934,7 +2064,12 @@ msgid ""
 "equal to the StringName ``&\"hello\"``."
 msgstr ""
 
-msgid "**Crash-course for people who are familiar with switch statements**:"
+#, fuzzy
+msgid "Basic syntax"
+msgstr "Основний синтаксис:"
+
+#, fuzzy
+msgid "Crash-course for people who are familiar with switch statements"
 msgstr "**Прискорений курс для людей, які знайомі із switch**:"
 
 msgid "Replace ``switch`` with ``match``."
@@ -1950,7 +2085,8 @@ msgstr "Видаліть ``case``."
 msgid "Change ``default`` to a single underscore."
 msgstr "Змініть ``default`` на одне підкреслення."
 
-msgid "**Control flow**:"
+#, fuzzy
+msgid "Control flow"
 msgstr "**Потік керування**:"
 
 #, fuzzy
@@ -1970,20 +2106,25 @@ msgid ""
 "in Godot 4.0."
 msgstr ""
 
-msgid "There are 6 pattern types:"
-msgstr "Є 6 типів шаблонів:"
+#, fuzzy
+msgid "The following pattern types are available:"
+msgstr "Доступні кілька типів кореневих вузлів у ``AnimationTree``:"
 
-msgid "Constant pattern"
-msgstr "Постійний шаблон"
+#, fuzzy
+msgid "Literal pattern"
+msgstr "Шаблон масиву"
 
-msgid "Constant primitives, like numbers and strings::"
-msgstr "Постійні примітиви, як числа та рядки:"
+msgid "Matches a `literal <Literals_>`_::"
+msgstr ""
 
-msgid "Variable pattern"
-msgstr "Змінний шаблон"
+#, fuzzy
+msgid "Expression pattern"
+msgstr "Обробка"
 
-msgid "Matches the contents of a variable/enum::"
-msgstr "Відповідає вмісту змінної / переліку:"
+msgid ""
+"Matches a constant expression, an identifier, or an attribute access (``A."
+"B``)::"
+msgstr ""
 
 msgid "Wildcard pattern"
 msgstr "Шаблон Wildcard"
@@ -2081,6 +2222,34 @@ msgid ""
 msgstr ""
 "Ви також можете вказати кілька шаблонів, розділених комою. Ці шаблони не "
 "можуть мати ніяких прив'язок у них."
+
+#, fuzzy
+msgid "Pattern guards"
+msgstr "Східномарійська (Росія)"
+
+msgid ""
+"Only one branch can be executed per ``match``. Once a branch is chosen, the "
+"rest are not checked. If you want to use the same pattern for multiple "
+"branches or to prevent choosing a branch with too general pattern, you can "
+"specify a guard expression after the list of patterns with the ``when`` "
+"keyword::"
+msgstr ""
+
+msgid ""
+"If there is no matching pattern for the current branch, the guard expression "
+"is **not** evaluated and the patterns of the next branch are checked."
+msgstr ""
+
+msgid "If a matching pattern is found, the guard expression is evaluated."
+msgstr ""
+
+msgid ""
+"If it's true, then the body of the branch is executed and ``match`` ends."
+msgstr ""
+
+#, fuzzy
+msgid "If it's false, then the patterns of the next branch are checked."
+msgstr "Якщо значення не вказано, перевіряється лише наявність ключа."
 
 msgid "Classes"
 msgstr "Класи"
@@ -2347,32 +2516,65 @@ msgid "Example::"
 msgstr "Приклад:"
 
 msgid ""
+"Unlike ``setget`` in previous Godot versions, the properties setter and "
+"getter are **always** called (except as noted below), even when accessed "
+"inside the same class (with or without prefixing with ``self.``). This makes "
+"the behavior consistent. If you need direct access to the value, use another "
+"variable for direct access and make the property code use that name."
+msgstr ""
+
+#, fuzzy
+msgid "Alternative syntax"
+msgstr "Внутрішні вершини"
+
+msgid ""
+"Also there is another notation to use existing class functions if you want "
+"to split the code from the variable declaration or you need to reuse the "
+"code across multiple properties (but you can't distinguish which property "
+"the setter/getter is being called for)::"
+msgstr ""
+
+#, fuzzy
+msgid "This can also be done in the same line::"
+msgstr "Це можна зробити за допомогою наступних кроків:"
+
+msgid ""
+"The setter and getter must use the same notation, mixing styles for the same "
+"variable is not allowed."
+msgstr ""
+
+msgid ""
+"You cannot specify type hints for *inline* setters and getters. This is done "
+"on purpose to reduce the boilerplate. If the variable is typed, then the "
+"setter's argument is automatically of the same type, and the getter's return "
+"value must match it. Separated setter/getter functions can have type hints, "
+"and the type must match the variable's type or be a wider type."
+msgstr ""
+
+msgid "When setter/getter is not called"
+msgstr ""
+
+msgid ""
+"When a variable is initialized, the value of the initializer will be written "
+"directly to the variable. Including if the ``@onready`` annotation is "
+"applied to the variable."
+msgstr ""
+
+msgid ""
 "Using the variable's name to set it inside its own setter or to get it "
 "inside its own getter will directly access the underlying member, so it "
 "won't generate infinite recursion and saves you from explicitly declaring "
 "another variable::"
 msgstr ""
 
-msgid "This backing member variable is not created if you don't use it."
+msgid "This also applies to the alternative syntax::"
 msgstr ""
 
 msgid ""
-"Unlike ``setget`` in previous Godot versions, the properties setter and "
-"getter are **always** called, even when accessed inside the same class (with "
-"or without prefixing with ``self.``). This makes the behavior consistent. If "
-"you need direct access to the value, use another variable for direct access "
-"and make the property code use that name."
+"The exception does **not** propagate to other functions called in the setter/"
+"getter. For example, the following code **will** cause an infinite "
+"recursion::"
 msgstr ""
-
-msgid ""
-"In case you want to split the code from the variable declaration or you need "
-"to share the code across multiple properties, you can use a different "
-"notation to use existing class functions::"
-msgstr ""
-
-#, fuzzy
-msgid "This can also be done in the same line."
-msgstr "Це можна зробити за допомогою наступних кроків:"
 
 msgid "Tool mode"
 msgstr "Режим інструмента"

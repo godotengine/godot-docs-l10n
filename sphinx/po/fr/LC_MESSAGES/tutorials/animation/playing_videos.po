@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,9 +26,8 @@ msgid ""
 msgstr ""
 "Godot supporte la lecture de vidéos avec le nœud :ref:`class_VideoPlayer`."
 
-#, fuzzy
 msgid "Supported playback formats"
-msgstr "Plateformes prises en charge"
+msgstr "Formats de lecture pris en charge"
 
 #, fuzzy
 msgid ""
@@ -301,6 +300,23 @@ msgstr ""
 "exemples."
 
 #, fuzzy
+msgid "Looping a video"
+msgstr "Prototypage d'un niveau"
+
+msgid ""
+"For looping a video, the **Loop** property can be enabled. This will "
+"seamlessly restart the video when it reaches its end."
+msgstr ""
+
+msgid ""
+"Note that setting the project setting **Video Delay Compensation** to a non-"
+"zero value might cause your loop to not be seamless, because the "
+"synchronization of audio and video takes place at the start of each loop "
+"causing occasional missed frames. Set **Video Delay Compensation** in your "
+"project settings to **0** to avoid frame drop issues."
+msgstr ""
+
+#, fuzzy
 msgid "Video decoding conditions and recommended resolutions"
 msgstr "Conditions de décodage vidéo et résolutions recommandées"
 
@@ -367,12 +383,6 @@ msgid ""
 msgstr ""
 "Le changement de la vitesse de lecture n'est pas supporté. VideoPlayer ne "
 "suivra pas :ref:`Engine.time_scale<class_Engine_property_time_scale>`."
-
-msgid ""
-"Looping is not supported, but you can connect a VideoStreamPlayer's :ref:"
-"`finished <class_VideoStreamPlayer_signal_finished>` signal to a function "
-"that plays the video again."
-msgstr ""
 
 msgid "Streaming a video from a URL is not supported."
 msgstr "Le streaming d'une vidéo à partir d'une URL n'est pas prise en charge."
@@ -531,6 +541,96 @@ msgstr ""
 "taille de 720 pixels (720p), tout en préservant son rapport hauteur/largeur "
 "existant. Cela permet de réduire considérablement la taille du fichier si la "
 "source est enregistrée à une résolution supérieure à 720p :"
+
+msgid "Chroma Key Videos"
+msgstr ""
+
+msgid ""
+"Chroma key, commonly known as the \"green screen\" or \"blue screen\" "
+"effect, allows you to remove a specific color from an image or video and "
+"replace it with another background. This effect is widely used in video "
+"production to composite different elements together seamlessly."
+msgstr ""
+
+msgid ""
+"We will achieve the chroma key effect by writing a custom shader in GDScript "
+"and using a `VideoStreamPlayer` node to display the video content."
+msgstr ""
+
+#, fuzzy
+msgid "Scene Setup"
+msgstr "Configuration de la scène"
+
+msgid ""
+"Ensure that the scene contains a `VideoStreamPlayer` node to play the video "
+"and a `Control` node to hold the UI elements for controlling the chroma key "
+"effect."
+msgstr ""
+
+#, fuzzy
+msgid "Writing the Custom Shader"
+msgstr "Améliorer le shader"
+
+msgid "To implement the chroma key effect, follow these steps:"
+msgstr ""
+
+msgid ""
+"Select the `VideoStreamPlayer` node in the scene and go to its properties. "
+"Under `CanvasItem > Material`, create a new shader named \"ChromaKeyShader."
+"gdshader.\""
+msgstr ""
+
+msgid ""
+"In the \"ChromaKeyShader.gdshader\" file, write the custom shader code as "
+"shown below:"
+msgstr ""
+
+msgid ""
+"The shader uses the distance calculation to identify pixels close to the "
+"chroma key color and discards them, effectively removing the selected color. "
+"Pixels that are slightly further away from the chroma key color are faded "
+"based on the fade_factor, blending them smoothly with the surrounding "
+"colors. This process creates the desired chroma key effect, making it appear "
+"as if the background has been replaced with another image or video."
+msgstr ""
+
+msgid ""
+"The code above represents a simple demonstration of the Chroma Key shader, "
+"and users can customize it according to their specific requirements."
+msgstr ""
+
+#, fuzzy
+msgid "UI Controls"
+msgstr "Contrôle"
+
+msgid ""
+"To allow users to manipulate the chroma key effect in real-time, we created "
+"sliders in the `Control` node. The `Control` node's script contains the "
+"following functions:"
+msgstr ""
+
+msgid ""
+"also make sure that the range of the sliders are appropriate, our settings "
+"are :"
+msgstr ""
+
+#, fuzzy
+msgid "Signal Handling"
+msgstr "Entrée"
+
+msgid ""
+"Connect the appropriate signal from the UI elements to the `Control` node's "
+"script. you created in the `Control` node's script to control the chroma key "
+"effect. These signal handlers will update the shader's uniform variables in "
+"response to user input."
+msgstr ""
+
+msgid ""
+"Save and run the scene to see the chroma key effect in action! With the "
+"provided UI controls, you can now adjust the chroma key color, pickup range, "
+"and fade amount in real-time, achieving the desired chroma key functionality "
+"for your video content."
+msgstr ""
 
 msgid "Translation status"
 msgstr "État de la traduction"

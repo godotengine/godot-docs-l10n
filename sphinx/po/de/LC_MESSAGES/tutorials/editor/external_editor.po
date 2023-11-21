@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -133,9 +133,8 @@ msgstr "``emacs +{line}:{col} {file}``"
 msgid "Sublime Text"
 msgstr "Atom/Sublime Text"
 
-#, fuzzy
 msgid "``{project} {file}:{line}:{column}``"
-msgstr "``{project} --goto {file}:{line}:{col}``"
+msgstr "``{project} {file}:{line}:{column}``"
 
 msgid ""
 "For Visual Studio Code on Windows, you will have to point to the ``code."
@@ -151,9 +150,8 @@ msgstr ""
 "Emacs können Sie auch ``emacsclient`` statt ``emacs`` aufrufen, wenn sie den "
 "Server-Modus verwenden."
 
-#, fuzzy
 msgid "Using External Editor in Debugger"
-msgstr "Einen externen Texteditor verwenden"
+msgstr "Einen externen Editor im Debugger verwenden"
 
 msgid ""
 "Using external editor in debugger is determined by a separate option in "
@@ -174,6 +172,62 @@ msgstr ""
 
 msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
 msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+
+#, fuzzy
+msgid "LSP/DAP support"
+msgstr "Unterstützung durch Dritte"
+
+msgid ""
+"Godot supports the `Language Server Protocol <https://microsoft.github.io/"
+"language-server-protocol/>`_ (**LSP**) for code completion and the `Debug "
+"Adapter Protocol <https://microsoft.github.io/debug-adapter-protocol/>`_ "
+"(**DAP**) for debugging. You can check the `LSP client list <https://"
+"microsoft.github.io/language-server-protocol/implementors/tools/>`_ and `DAP "
+"client list <https://microsoft.github.io/debug-adapter-protocol/implementors/"
+"tools/>`_ to find if your editor supports them. If this is the case, you "
+"should be able to take advantage of these features without the need of a "
+"custom plugin."
+msgstr ""
+
+msgid ""
+"To use these protocols, a Godot instance must be running on your current "
+"project. You should then configure your editor to communicate to the running "
+"adapter ports in Godot, which by default are ``6005`` for **LSP**, and "
+"``6006`` for **DAP**. You can change these ports and other settings in the "
+"**Editor Settings**, under the **Network > Language Server** and **Network > "
+"Debug Adapter** sections respectively."
+msgstr ""
+
+msgid "Below are some configuration steps for specific editors:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You need to install the official `Visual Studio Code plugin <https://github."
+"com/godotengine/godot-vscode-plugin>`_."
+msgstr ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
+
+msgid ""
+"For **LSP**, follow `these instructions <https://github.com/godotengine/"
+"godot-vscode-plugin#gdscript_lsp_server_port>`_ to change the default LSP "
+"port. The connection status can be checked on the status bar:"
+msgstr ""
+
+msgid ""
+"For **DAP**, specify the ``debugServer`` property in your ``launch.json`` "
+"file:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"Check the official instructions to configure `LSP <https://github.com/"
+"godotengine/emacs-gdscript-mode#auto-completion-with-the-language-server-"
+"protocol-lsp>`_, and `DAP <https://github.com/godotengine/emacs-gdscript-"
+"mode#using-the-debugger>`_."
+msgstr ""
+"Offizielle GDExtension Bindings für `C <https://github.com/godotengine/godot-"
+"headers>`__ und `C++ <https://github.com/godotengine/godot-cpp>`__."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

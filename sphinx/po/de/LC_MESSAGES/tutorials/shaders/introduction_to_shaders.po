@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Introduction to shaders"
-msgstr "Einführung in Exporte"
+msgstr "Einführung in Shader"
 
 #, fuzzy
 msgid ""
@@ -167,17 +166,15 @@ msgstr ""
 msgid "Here are the available types:"
 msgstr "Es gibt 6 Arten von Mustern:"
 
-#, fuzzy
 msgid ":ref:`spatial <doc_spatial_shader>` for 3D rendering."
-msgstr ":ref:`Spatial-Shader <doc_spatial_shader>`: für 3D Rendering."
+msgstr ":ref:`spatial <doc_spatial_shader>` für 3D Rendering."
 
 #, fuzzy
 msgid ":ref:`canvas_item <doc_canvas_item_shader>` for 2D rendering."
 msgstr ":ref:`canvas_item <doc_canvas_item_shader>`: für 2D Rendering."
 
-#, fuzzy
 msgid ":ref:`particles <doc_particle_shader>` for particle systems."
-msgstr ":ref:`particles <doc_particle_shader>`: für Partikelsysteme."
+msgstr ":ref:`particles <doc_particle_shader>` für Partikelsysteme."
 
 msgid ":ref:`sky <doc_sky_shader>` to render :ref:`Skies <class_Sky>`."
 msgstr ""
@@ -244,17 +241,16 @@ msgstr ""
 msgid "Fragment processor"
 msgstr "Fragment-Prozessor oder Pixel-Prozessor"
 
-#, fuzzy
 msgid ""
 "The ``fragment()`` processing function is used to set up the Godot material "
 "parameters per pixel. This code runs on every visible pixel the object or "
 "primitive draws. It is only available in ``spatial``, ``canvas_item``, and "
 "``sky`` shaders."
 msgstr ""
-"Die ``fragment`` Verarbeitungsfunktion wird verwendet um die Godot-"
-"Materialparameter pro Pixel einzurichten. Dieser Code wird auf jedem "
-"sichtbaren Pixel ausgeführt, das das Objekt oder Grundelement zeichnet. Es "
-"ist nur in den Shadern \"spatial\" und \"canvas_item\" verfügbar."
+"Die Bearbeitungsfunktion ``fragment()`` wird verwendet, um die Godot-"
+"Materialparameter pro Pixel einzustellen. Dieser Code läuft auf jedem "
+"sichtbaren Pixel, den das Objekt oder Primitiv zeichnet. Er ist nur in "
+"``spatial``, ``canvas_item`` und ``sky`` Shadern verfügbar."
 
 msgid ""
 "The standard use of the fragment function is to set up material properties "

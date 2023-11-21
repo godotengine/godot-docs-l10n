@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,10 +66,17 @@ msgstr ""
 "dans Godot. Le choix de l'une ou l'autre dépend de vos besoins."
 
 msgid ""
-"If you notice that specific systems are not accessible via GDExtension but "
-"are via custom modules feel free to open an issue on the `godot-cpp "
-"repository <https://github.com/godotengine/godot-cpp>`__ to discuss "
-"implementation options to expose the missing functionality."
+"Our long-term goal is that GDExtensions targeting an earlier version of "
+"Godot will work in later minor versions, but not vice-versa. For example, a "
+"GDExtension targeting Godot 4.2 should work just fine in Godot 4.3, but one "
+"targeting Godot 4.3 won't work in Godot 4.2."
+msgstr ""
+
+msgid ""
+"However, GDExtension is currently *experimental*, which means that we may "
+"break compatibility in order to fix major bugs or include critical features. "
+"For example, GDExtensions created for Godot 4.0 aren't compatible with Godot "
+"4.1 (see :ref:`updating_your_gdextension_for_godot_4_1`)."
 msgstr ""
 
 #, fuzzy
@@ -144,7 +151,7 @@ msgstr ""
 #, fuzzy
 msgid ""
 "C++ modules provide deeper integration into the engine. GDExtension's access "
-"is not as deep as static modules"
+"is not as deep as static modules."
 msgstr ""
 "Les modules C++ permettent une intégration plus poussée dans le moteur. "
 "L'accès de GDNative est limité à ce que l'API de scripting expose."
@@ -156,6 +163,13 @@ msgstr ""
 "Vous pouvez utiliser des modules C++ pour fournir des fonctionnalités "
 "supplémentaires dans un projet sans avoir à transporter des fichiers de "
 "bibliothèque natifs. Ceci s'étend aux projets exportés."
+
+msgid ""
+"If you notice that specific systems are not accessible via GDExtension but "
+"are via custom modules, feel free to open an issue on the `godot-cpp "
+"repository <https://github.com/godotengine/godot-cpp>`__ to discuss "
+"implementation options for exposing the missing functionality."
+msgstr ""
 
 msgid "Supported languages"
 msgstr "Langages supportés"
@@ -186,8 +200,20 @@ msgid "The bindings below are developed and maintained by the community:"
 msgstr "Ces liaisons sont développées et gérées par la communauté :"
 
 #, fuzzy
+msgid "`D <https://github.com/godot-dlang/godot-dlang>`__"
+msgstr "`Rust <https://github.com/godot-rust/godot-rust>`__"
+
+#, fuzzy
+msgid "`Haxe <https://hxgodot.github.io/>`__"
+msgstr "`Dépôt GitHub <https://github.com/godotengine/>`_"
+
+#, fuzzy
 msgid "`Rust <https://github.com/godot-rust/gdextension>`__"
 msgstr "`Rust <https://github.com/godot-rust/godot-rust>`__"
+
+#, fuzzy
+msgid "`Swift <https://github.com/migueldeicaza/SwiftGodot>`__"
+msgstr "`Dépôt GitHub <https://github.com/godotengine/>`_"
 
 msgid ""
 "Not all bindings mentioned here may be production-ready. Make sure to "
@@ -214,6 +240,14 @@ msgstr ""
 "garanties de fonctionner qu'avec les versions mineures de la même série. Par "
 "exemple, une extension GDNative compilée pour Godot 3.4 fonctionnera avec "
 "Godot 3.4, 3.4.1, 3.4.2, ... mais pas Godot 3.3 ou 3.5."
+
+msgid ""
+"GDExtension add-ons are also only compatible with engine builds that use the "
+"level of floating-point precision the extension was compiled for. This means "
+"that if you use a engine build with double-precision floats, the extension "
+"must also be compiled for double-precision floats. See :ref:"
+"`doc_large_world_coordinates` for details."
+msgstr ""
 
 msgid "Translation status"
 msgstr "État de la traduction"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -349,17 +349,14 @@ msgstr ""
 msgid "The rest are only emitted on clients:"
 msgstr "Es gibt die folgenden Einschränkungen:"
 
-#, fuzzy
 msgid "``connected_to_server()``"
-msgstr "``connected_to_server``"
+msgstr "``connected_to_server()``"
 
-#, fuzzy
 msgid "``connection_failed()``"
-msgstr "``connection_failed``"
+msgstr "``connection_failed()``"
 
-#, fuzzy
 msgid "``server_disconnected()``"
-msgstr "``server_disconnected``"
+msgstr "``server_disconnected()``"
 
 msgid "To get the unique ID of the associated peer:"
 msgstr ""
@@ -368,9 +365,8 @@ msgstr ""
 msgid "To check whether the peer is server or client:"
 msgstr "Prüfen, ob der Baum als Server oder Client initialisiert ist:"
 
-#, fuzzy
 msgid "Remote procedure calls"
-msgstr "Erstellen prozeduraler Texturen."
+msgstr "Ferngesteuerte Prozeduraufrufe (Remote procedure Calls)"
 
 msgid ""
 "Remote procedure calls, or RPCs, are functions that can be called on other "
@@ -390,6 +386,20 @@ msgid ""
 msgstr ""
 
 msgid ""
+"If a function is annotated with ``@rpc`` on the client script (resp. server "
+"script), then this function must also be declared on the server script "
+"(resp. client script), and both must have the same signature, **even if this "
+"function is not currently used**."
+msgstr ""
+
+msgid ""
+"If these conditions are not fulfilled, the script may print an error or "
+"cause unwanted behavior. See further explanation and troubleshooting on "
+"`this post <https://github.com/godotengine/godot/"
+"issues/57869#issuecomment-1034215138>`__."
+msgstr ""
+
+msgid ""
 "The annotation can take a number of arguments, which have default values. "
 "``@rpc`` is equivalent to:"
 msgstr ""
@@ -398,9 +408,8 @@ msgstr ""
 msgid "The parameters and their functions are as follows:"
 msgstr "Die gebräuchlichsten Anwendungsfälle sind:"
 
-#, fuzzy
 msgid "``mode``:"
-msgstr "``node``"
+msgstr "``mode``:"
 
 msgid ""
 "``\"authority\"``: Only the multiplayer authority (the server) can call "
@@ -412,9 +421,8 @@ msgid ""
 "transferring user input."
 msgstr ""
 
-#, fuzzy
 msgid "``sync``:"
-msgstr "``remotesync``"
+msgstr "``sync``:"
 
 msgid "``\"call_remote\"``: The function will not be called on the local peer."
 msgstr ""
@@ -424,9 +432,8 @@ msgid ""
 "when the server is also a player."
 msgstr ""
 
-#, fuzzy
 msgid "``transfer_mode``:"
-msgstr "``transform``"
+msgstr "``transfer_mode``:"
 
 msgid ""
 "``\"unreliable\"`` Packets are not acknowledged, can be lost, and can arrive "
@@ -486,7 +493,7 @@ msgstr ""
 
 msgid ""
 "The default channel with index 0 is actually three different channels - one "
-"for each tansfer mode."
+"for each transfer mode."
 msgstr ""
 
 #, fuzzy

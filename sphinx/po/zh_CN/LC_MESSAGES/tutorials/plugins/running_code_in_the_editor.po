@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,19 +20,17 @@ msgstr ""
 msgid "Running code in the editor"
 msgstr "在编辑器中运行代码"
 
-#, fuzzy
 msgid "What is ``@tool``?"
-msgstr "``tool`` 是什么？"
+msgstr "``@tool`` 是什么？"
 
-#, fuzzy
 msgid ""
 "``@tool`` is a powerful line of code that, when added at the top of your "
 "script, makes it execute in the editor. You can also decide which parts of "
 "the script execute in the editor, which in game, and which in both."
 msgstr ""
-"``tool`` 是一个强大的代码行, 当添加到脚本的顶部时, 它会在编辑器中执行. 您还可"
-"以决定脚本的哪些部分在编辑器中执行, 哪部分在游戏中执行, 以及哪部分在两者中均"
-"执行."
+"``@tool`` 是一行强大的代码，添加到脚本的顶部后，脚本就会在编辑器中执行。你还"
+"可以决定脚本的哪些部分在编辑器中执行、哪些部分在游戏中执行、哪部分在两者中均"
+"执行。"
 
 msgid ""
 "You can use it for doing many things, but it is mostly useful in level "
@@ -81,7 +79,8 @@ msgstr ""
 "**极其** 谨慎, 因为如果你在编辑器运行涉及到节点的逻辑时释放该节点, 可能会导致"
 "崩溃."
 
-msgid "How to use it"
+#, fuzzy
+msgid "How to use ``@tool``"
 msgstr "如何使用它"
 
 #, fuzzy
@@ -104,9 +103,10 @@ msgid ""
 "the same statement:"
 msgstr "另一方面, 如果你想只在游戏中执行代码, 只需否定相同的语句:"
 
+#, fuzzy
 msgid ""
-"Pieces of code do not have either of the 2 conditions above will run both in-"
-"editor and in-game."
+"Pieces of code that do not have either of the 2 conditions above will run "
+"both in-editor and in-game."
 msgstr "不具备上述两个条件之一的代码片断将在编辑器和游戏中运行."
 
 msgid "Here is how a ``_process()`` function might look for you:"
@@ -121,7 +121,15 @@ msgstr ""
 "编辑器中的修改是永久性的. 例如, 在下面的情况下, 当我们删除脚本时, 节点将保持"
 "其旋转. 要注意避免做不需要的修改."
 
-msgid "Try it out"
+msgid ""
+"Extending a ``@tool`` script does not automatically make the extending "
+"script a ``@tool``. Omitting ``@tool`` from the extending script will "
+"disable tool behavior from the super class. Therefore the extending script "
+"should also specify the ``@tool`` annotation."
+msgstr ""
+
+#, fuzzy
+msgid "Try ``@tool`` out"
 msgstr "试试看"
 
 #, fuzzy
@@ -179,9 +187,8 @@ msgstr ""
 "树和节点及其默认属性, 但无法访问用户变量. 如果要这样做, 其他节点也必须在编辑"
 "器中运行. AutoLoad节点时无法在编辑器中访问的."
 
-#, fuzzy
 msgid "Reporting node configuration warnings"
-msgstr "引擎配置"
+msgstr "报告节点配置警告"
 
 msgid ""
 "Godot uses a *node configuration warning* system to warn users about "
@@ -197,6 +204,84 @@ msgid ""
 "remove the warning changes, you need to call :ref:"
 "`update_configuration_warnings<class_Node_method_update_configuration_warnings>` . "
 "By default, the warning only updates when closing and reopening the scene."
+msgstr ""
+
+msgid "Running one-off scripts using EditorScript"
+msgstr ""
+
+msgid ""
+"Sometimes, you need to run code just one time to automate a certain task "
+"that is not available in the editor out of the box. Some examples might be:"
+msgstr ""
+
+msgid ""
+"Use as a playground for GDScript or C# scripting without having to run a "
+"project. ``print()`` output is displayed in the editor Output panel."
+msgstr ""
+
+msgid ""
+"Scale all light nodes in the currently edited scene, as you noticed your "
+"level ends up looking too dark or too bright after placing lights where "
+"desired."
+msgstr ""
+
+msgid ""
+"Replace nodes that were copy-pasted with scene instances to make them easier "
+"to modify later."
+msgstr ""
+
+msgid ""
+"This is available in Godot by extending :ref:`class_EditorScript` in a "
+"script. This provides a way to run individual scripts in the editor without "
+"having to create an editor plugin."
+msgstr ""
+
+msgid ""
+"To create an EditorScript, right-click a folder or empty space in the "
+"FileSystem dock then choose **New > Script...**. In the script creation "
+"dialog, click the tree icon to choose an object to extend from (or enter "
+"``EditorScript`` directly in the field on the left, though note this is case-"
+"sensitive):"
+msgstr ""
+
+#, fuzzy
+msgid "Creating an editor script in the script editor creation dialog"
+msgstr "在地形集中创建地形"
+
+msgid ""
+"This will automatically select a script template that is suited for "
+"EditorScripts, with a ``_run()`` method already inserted:"
+msgstr ""
+
+msgid ""
+"This ``_run()`` method is executed when you use **File > Run** or the "
+"keyboard shortcut :kbd:`Ctrl + Shift + X` while the EditorScript is the "
+"currently open script in the script editor. This keyboard shortcut is only "
+"effective when currently focused on the script editor."
+msgstr ""
+
+msgid "Scripts that extend EditorScript must be ``@tool`` scripts to function."
+msgstr ""
+
+msgid ""
+"EditorScripts have no undo/redo functionality, so **make sure to save your "
+"scene before running one** if the script is designed to modify any data."
+msgstr ""
+
+msgid ""
+"To access nodes in the currently edited scene, use the :ref:`EditorScript."
+"get_scene <class_EditorScript_method_get_scene>` method which returns the "
+"root Node of the currently edited scene. Here's an example that recursively "
+"gets all nodes in the currently edited scene and doubles the range of all "
+"OmniLight3D nodes:"
+msgstr ""
+
+msgid ""
+"You can change the currently edited scene at the top of the editor even "
+"while the Script view is open. This will affect the return value of :ref:"
+"`EditorScript.get_scene <class_EditorScript_method_get_scene>`, so make sure "
+"you've selected the scene you intend to iterate upon before running the "
+"script."
 msgstr ""
 
 msgid "Instancing scenes"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,23 +23,12 @@ msgstr "Android 应用内购买"
 #, fuzzy
 msgid ""
 "Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin "
-"compatible with Godot 3.2.2 and higher. This plugin uses the `Google Play "
-"Billing library <https://developer.android.com/google/play/billing>`__ "
-"instead of the now deprecated AIDL IAP implementation. For details of how to "
-"migrate from the older ``GodotPaymentsV3``, see the migration guide: "
-"`Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)`_."
+"compatible with Godot 4 which uses the `Google Play Billing library <https://"
+"developer.android.com/google/play/billing>`_."
 msgstr ""
 "自 Godot 3.2.2 以来，Godot提供了一个第一方的 ``GodotGooglePlayBilling`` "
 "Android 插件。新插件使用 `Google Play Billing 库 <https://developer.android."
 "com/google/play/billing>`__\\ ，而不是现在已经废弃的 AIDL IAP 实现。"
-
-msgid ""
-"If you learn better by looking at an example, you can find the demo project "
-"`here <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
-"android_iap>`__."
-msgstr ""
-"如果您更善于通过查看示例学习，可以在\\ `这里 <https://github.com/godotengine/"
-"godot-demo-projects/tree/master/mobile/android_iap>`__\\ 找到演示项目。"
 
 msgid "Usage"
 msgstr "用法"
@@ -49,8 +38,8 @@ msgstr "入门"
 
 #, fuzzy
 msgid ""
-"Make sure you have enabled and successfully set up :ref:`Android Custom "
-"Builds <doc_android_custom_build>`. Follow the compiling instructions on the "
+"Make sure you have enabled and successfully set up :ref:`Android Gradle "
+"Builds <doc_android_gradle_build>`. Follow the compiling instructions on the "
 "``GodotGooglePlayBilling`` `github page <https://github.com/godotengine/"
 "godot-google-play-billing>`__."
 msgstr ""
@@ -59,11 +48,6 @@ msgstr ""
 "godotengine/godot-google-play-billing/releases>`__\"中抓取 "
 "``GodotGooglePlayBilling`` 插件二进制文件和配置文件, 并将两者放入 `res://"
 "android/plugins` 中. 现在该插件应该出现在Android导出设置中, 你可以启用它."
-
-msgid ""
-"If you use a custom build you possibly have to put your own `godot-lib.***."
-"release.aar` file in the `./godot-google-play-billing/libs/` folder."
-msgstr ""
 
 msgid ""
 "Then put the files `./godot-google-play-billing/build/outputs/aar/"
@@ -93,9 +77,8 @@ msgstr ""
 msgid "Call ``startConnection``"
 msgstr "``connection``"
 
-#, fuzzy
 msgid "Initialization example:"
-msgstr "最小连接示例"
+msgstr "最小连接示例："
 
 msgid ""
 "The API must be in a connected state prior to use. The ``connected`` signal "
@@ -122,12 +105,11 @@ msgid ""
 "ids defined in the Google Play Console entry for your app."
 msgstr ""
 
-#, fuzzy
 msgid "Example use of ``querySkuDetails()``:"
-msgstr "``StaticBody2D`` 的示例用法："
+msgstr "``querySkuDetails()`` 的示例用法："
 
 msgid "Query user purchases"
-msgstr ""
+msgstr "查询用户购买记录"
 
 #, fuzzy
 msgid ""
@@ -146,7 +128,7 @@ msgstr ""
 "处于活跃状态的订阅和尚未消耗的一次性购买。"
 
 msgid "Example use of ``queryPurchases()``:"
-msgstr ""
+msgstr "``queryPurchases()`` 的示例用法："
 
 msgid ""
 "You should query purchases during startup after successfully retrieving SKU "
@@ -157,7 +139,7 @@ msgid ""
 msgstr ""
 
 msgid "Example use of ``billing_resume``:"
-msgstr ""
+msgstr "``billing_resume`` 的示例用法："
 
 msgid ""
 "For more information on processing the purchase items returned by "
@@ -176,18 +158,16 @@ msgstr ""
 "要启动一个项目的购买流程，请调用 ``purchase``\\ 。在启动购买流程之前，你\\ **"
 "必须**\\ 查询该项目的 SKU 详情。"
 
-#, fuzzy
 msgid "Example use of ``purchase()``:"
-msgstr "``StaticBody2D`` 的示例用法："
+msgstr "``purchase()`` 的示例用法："
 
 msgid ""
 "The payment flow will send a ``purchases_updated`` signal on success or a "
 "``purchase_error`` signal on failure."
 msgstr ""
 
-#, fuzzy
 msgid "Processing a purchase item"
-msgstr "处理顺序"
+msgstr "处理购买项目"
 
 msgid ""
 "The ``query_purchases_response`` and ``purchases_updated`` signals provide "
@@ -197,13 +177,11 @@ msgid ""
 "billingclient/api/Purchase>`_ class."
 msgstr ""
 
-#, fuzzy
 msgid "Purchase fields:"
-msgstr "购买项目"
+msgstr "购买项目："
 
-#, fuzzy
 msgid "Check purchase state"
-msgstr "检查用户是否购买了某个项目"
+msgstr "检查购买状态"
 
 msgid ""
 "Check the ``purchase_state`` value of a purchase to determine if a purchase "
@@ -211,7 +189,7 @@ msgid ""
 msgstr ""
 
 msgid "PurchaseState values:"
-msgstr ""
+msgstr "PurchaseState 取值："
 
 msgid ""
 "If a purchase is in a ``PENDING`` state, you should not award the contents "
@@ -242,11 +220,10 @@ msgstr ""
 "次进行购买，同时也会将其从后续 ``queryPurchases`` 的返回中移除。"
 
 msgid "Example use of ``consumePurchase()``:"
-msgstr ""
+msgstr "``consumePurchase()`` 的示例用法："
 
-#, fuzzy
 msgid "Acknowledging purchases"
-msgstr "Android 应用内购买"
+msgstr "确认购买"
 
 msgid ""
 "If your in-app item is a one-time purchase, you must acknowledge the "
@@ -258,23 +235,21 @@ msgid ""
 "not need to call ``acknowledgePurchase()``."
 msgstr ""
 
-#, fuzzy
 msgid "Example use of ``acknowledgePurchase()``:"
-msgstr "``StaticBody2D`` 的示例用法："
+msgstr "``acknowledgePurchase()`` 的示例用法："
 
 msgid "Subscriptions"
 msgstr "订阅"
 
-#, fuzzy
 msgid ""
 "Subscriptions work mostly like regular in-app items. Use ``\"subs\"`` as the "
 "second argument to ``querySkuDetails()`` to get subscription details. Pass "
 "``\"subs\"`` to ``queryPurchases()`` to get subscription purchase details."
 msgstr ""
 "订阅的工作原理和普通的应用内项目没有太大区别. 只要使用 ``\"subs\"`` 作为 "
-"``querySkuDetails`` 的第二个参数, 就可以得到订阅的详细信息. 在 "
+"``querySkuDetails()`` 的第二个参数, 就可以得到订阅的详细信息. 在 "
 "``queryPurchases()`` 的结果中检查 ``is_auto_renewing`` 来查看用户是否取消了自"
-"动更新的订阅"
+"动更新的订阅。"
 
 msgid ""
 "You can check ``is_auto_renewing`` in the a subscription purchase returned "
@@ -323,42 +298,6 @@ msgstr ""
 
 msgid "Example use of ``confirmPriceChange()``:"
 msgstr ""
-
-msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
-msgstr "从 Godot 3.2.1 和更低版本迁移（GodotPaymentsV3）"
-
-msgid ""
-"The new ``GodotGooglePlayBilling`` API is not compatible with its "
-"predecessor ``GodotPaymentsV3``."
-msgstr ""
-"新的 ``GodotGooglePlayBilling`` API 与其前身 ``GodotPaymentsV3`` 不兼容。"
-
-msgid "Changes"
-msgstr "修改"
-
-msgid ""
-"You need to enable the Custom Build option in your Android export settings "
-"and install the ``GodotGooglePlayBilling`` plugin manually (see below for "
-"details)"
-msgstr ""
-"你需要在你的 Android 导出设置中启用 Custom Build 选项，并手动安装 "
-"``GodotGooglePlayBilling`` 插件（详见下文）"
-
-msgid ""
-"All purchases have to be acknowledged by your app. This is a `requirement "
-"from Google <https://developer.android.com/google/play/billing/"
-"integrate#process>`__. Purchases that are not acknowledged by your app will "
-"be refunded."
-msgstr ""
-"所有的购买都必须被你的应用程序所确认。这是 `Google 的要求 <https://developer."
-"android.com/google/play/billing/integrate#process>`__\\ 。您的应用程序未确认"
-"的购买将被退款。"
-
-msgid "Support for subscriptions"
-msgstr "支持订阅"
-
-msgid "Signals (no polling or callback objects)"
-msgstr "信号（没有轮询或回调对象）"
 
 msgid "Translation status"
 msgstr "翻译状态"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,17 +17,18 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Resolution scaling"
 msgstr "保存資源"
 
 msgid "Why use resolution scaling?"
-msgstr ""
+msgstr "為什麼要使用解析度縮放？"
 
 msgid ""
 "With the ever-increasing rendering complexity of modern games, rendering at "
 "native resolution isn't always viable anymore, especially on lower-end GPUs."
 msgstr ""
+"隨著現代遊戲的渲染複雜性不斷增加，以原始解析度進行渲染不再總是可行，尤其是在"
+"低端 GPU 上。"
 
 msgid ""
 "Resolution scaling is one of the most direct ways to influence the GPU "
@@ -36,6 +37,9 @@ msgid ""
 "significantly. Resolution scaling is particularly important on mobile GPUs "
 "where performance and power budgets are limited."
 msgstr ""
+"解析度縮放是影響場景 GPU 要求的最直接方法之一。在 GPU（而不是 CPU）成為瓶頸的"
+"場景中，降低解析度比例可以顯著提高效能。解析度縮放對於效能和功耗預算有限的行"
+"動 GPU 尤其重要。"
 
 msgid ""
 "While resolution scaling is an important tool to have, remember that "
@@ -43,8 +47,9 @@ msgid ""
 "graphics settings on lower-end hardware. Consider exposing both resolution "
 "scale and graphics settings in your in-game menus."
 msgstr ""
+"雖然解析度縮放是一個重要的工具，但請記住，解析度縮放並不是要取代低階硬體上降"
+"低圖形設定的方法。考慮在遊戲選單中公開解析度比例和圖形設定。"
 
-#, fuzzy
 msgid ""
 "You can compare resolution scaling modes and factors in action using the `3D "
 "Antialiasing demo project <https://github.com/godotengine/godot-demo-"
@@ -58,8 +63,9 @@ msgid ""
 "be simulated using the ``viewport`` stretch mode. See :ref:"
 "`doc_multiple_resolutions` for more information."
 msgstr ""
+"解析度縮放目前不適用於 2D 渲染，但可以使用「viewport」拉伸模式進行模擬。請參"
+"閱 doc_multiple_resolutions 以了解更多資訊。"
 
-#, fuzzy
 msgid "Resolution scaling options"
 msgstr "資源路徑"
 
@@ -67,13 +73,14 @@ msgid ""
 "In the advanced Project Settings' **Rendering > Scaling 3D** section, you "
 "can find several options for 3D resolution scaling:"
 msgstr ""
+"在進階專案設定的 **渲染 > 縮放 3D** 部分中，您可以找到用於 3D 解析度縮放的多"
+"個選項："
 
-#, fuzzy
 msgid "Scaling mode"
 msgstr "縮放模式"
 
 msgid "**Bilinear:** Standard bilinear filtering (default)."
-msgstr ""
+msgstr "**雙線性：** 標準雙線性濾波（預設）。"
 
 msgid ""
 "**FSR 1.0:** `AMD FidelityFX Super Resolution 1.0 <https://gpuopen.com/"
@@ -81,11 +88,16 @@ msgid ""
 "bilinear scaling. On very slow GPUs, the cost of FSR 1.0 may be too "
 "expensive to be worth using it over bilinear scaling."
 msgstr ""
+"**FSR 1.0：** `AMD FidelityFX 超解析度 1.0 <https://gpuopen.com/fidelityfx-"
+"superresolution/>`__。與雙線性縮放相比，速度較慢，但品質較高。在非常慢的 GPU "
+"上，FSR 1.0 的成本可能太昂貴，不值得使用它而不是雙線性縮放。"
 
 msgid ""
 "Here are comparison images between native resolution, bilinear scaling with "
 "50% resolution scale and FSR 1.0 scaling with 50% resolution scale:"
 msgstr ""
+"以下是原始解析度、50% 解析度雙線性縮放和 50% 解析度 FSR 1.0 縮放之間的比較影"
+"像："
 
 msgid ""
 "FSR 1.0 upscaling works best when coupled with another form of antialiasing. "
@@ -93,18 +105,20 @@ msgid ""
 "preferably be used in this case, as FXAA does not add temporal information "
 "and introduces more blurring to the image."
 msgstr ""
+"當與另一種形式的抗鋸齒結合使用時，FSR 1.0 升級效果最佳。在這種情況下，最好使"
+"用時間抗鋸齒 (TAA) 或多重取樣抗鋸齒 (MSAA)，因為 FXAA 不會新增時間信息，並且"
+"會為影像帶來更多模糊。"
 
 msgid "Here's the same comparison, but with 4× MSAA enabled on all images:"
-msgstr ""
+msgstr "以下是相同的比較，但在所有影像上啟用了 4× MSAA："
 
 msgid ""
 "Notice how the edge upscaling of FSR 1.0 becomes much more convincing once "
 "4× MSAA is enabled."
-msgstr ""
+msgstr "請注意，啟用 4× MSAA 後，FSR 1.0 的邊緣放大如何變得更加令人信服。"
 
-#, fuzzy
 msgid "Rendering scale"
-msgstr "算繪"
+msgstr "渲染"
 
 msgid ""
 "The **Rendering > Scaling 3D > Scale** setting adjusts the resolution scale. "
@@ -113,11 +127,16 @@ msgid ""
 "``1.0`` can be used to speed up rendering, at the cost of a blurrier final "
 "image and more aliasing."
 msgstr ""
+"**渲染 > 縮放 3D > 比例** 設定可調整解析度比例。 「1.0」表示全解析度比例，3D "
+"渲染解析度與 2D 渲染解析度相符。解析度比例*低於*“1.0”可用於加速渲染，但代價是"
+"最終影像更模糊和更多鋸齒。"
 
 msgid ""
 "The rendering scale can be adjusted at run-time by changing the "
 "``scaling_3d_scale`` property on a :ref:`class_Viewport` node."
 msgstr ""
+"可以透過變更 class_Viewport 節點上的 scaling_3d_scale 屬性在執行時調整渲染比"
+"例。"
 
 msgid ""
 "Resolution scales *above* ``1.0`` can be used for supersample antialiasing "
@@ -125,6 +144,9 @@ msgid ""
 "and is **not recommended** for most use cases. See :ref:"
 "`doc_3d_antialiasing` for more information."
 msgstr ""
+"解析度比例*以上*「1.0」可用於超級取樣抗鋸齒 (SSAA)。這將以*非常*高的性能成本"
+"提供抗鋸齒功能，並且對於大多數用例來說**不建議** 。請參閱 "
+"doc_3d_antialiasing 以了解更多資訊。"
 
 msgid ""
 "The tables below list common screen resolutions, the resulting 3D rendering "
@@ -132,6 +154,8 @@ msgid ""
 "depending on the rendering scale option. Rows are sorted from fastest to "
 "slowest in each table."
 msgstr ""
+"下表列出了常見的螢幕解析度、最終的 3D 渲染解析度以及根據渲染比例選項每個畫面"
+"需要渲染的百萬像素數。每個表中的行按從最快到最慢的順序排序。"
 
 msgid ""
 "The resolution scale is defined on a **per-axis** basis. For example, this "
@@ -140,184 +164,187 @@ msgid ""
 "or very high resolution scale factors can have a greater performance impact "
 "than expected."
 msgstr ""
+"分辨率比例是在**每軸**的基礎上定義的。例如，這意味著將解析度比例因子減半將使"
+"每影格渲染的百萬像素數減少4 倍，而不是2 倍。因此，非常低或非常高的解析度比例"
+"因子可能會對效能產生比預期更大的影響。"
 
 msgid "**1920×1080 (Full HD)**"
-msgstr ""
+msgstr "**1920×1080（全高清）**"
 
-#, fuzzy
 msgid "Resolution scale factor"
 msgstr "遠端屬性面板。"
 
-#, fuzzy
 msgid "3D rendering resolution"
 msgstr "著色器語言限制"
 
 msgid "Megapixels rendered per frame"
-msgstr ""
+msgstr "渲染前一影格的時間"
 
 msgid "``0.50``"
-msgstr ""
+msgstr "``0.50``"
 
 msgid "960×540"
-msgstr ""
+msgstr "960×540"
 
 msgid "0.52 MPix"
-msgstr ""
+msgstr "0.52 像素"
 
 msgid "``0.67``"
-msgstr ""
+msgstr "``0.67``"
 
 msgid "1286×723"
-msgstr ""
+msgstr "1286×723"
 
 msgid "0.93 MPix"
-msgstr ""
+msgstr "0.93 像素"
 
 msgid "``0.75``"
-msgstr ""
+msgstr "``0.75``"
 
 msgid "1440×810"
-msgstr ""
+msgstr "1440×810"
 
 msgid "1.17 MPix"
-msgstr ""
+msgstr "1.17 MPix"
 
 msgid "``0.85``"
-msgstr ""
+msgstr "``0.85``"
 
 msgid "1632×918"
-msgstr ""
+msgstr "1632×918"
 
 msgid "1.50 MPix"
-msgstr ""
+msgstr "1.50 MPix"
 
 msgid "``1.00`` **(native)**"
-msgstr ""
+msgstr "``1.00`` **（本地）**"
 
 msgid "**1920×1080**"
-msgstr ""
+msgstr "**1920×1080**"
 
 msgid "**2.07 MPix**"
-msgstr ""
+msgstr "**2.07 MPix**"
 
 msgid "``1.33`` (supersampling)"
-msgstr ""
+msgstr "``1.33``（超級取樣）"
 
 msgid "2553×1436"
-msgstr ""
+msgstr "2553×1436"
 
 msgid "3.67 MPix"
-msgstr ""
+msgstr "3.67 MPix"
 
 msgid "``1.50`` (supersampling)"
-msgstr ""
+msgstr "``1.50``（超級取樣）"
 
 msgid "2880×1620"
-msgstr ""
+msgstr "2880×1620"
 
 msgid "4.67 MPix"
-msgstr ""
+msgstr "4.67 MPix"
 
 msgid "``2.00`` (supersampling)"
-msgstr ""
+msgstr "``2.00``（超級取樣）"
 
 msgid "3840×2160"
-msgstr ""
+msgstr "3840×2160"
 
 msgid "8.29 MPix"
-msgstr ""
+msgstr "8.29 MPix"
 
 msgid "**2560×1440 (QHD)**"
-msgstr ""
+msgstr "**2560×1440（QHD）**"
 
 msgid "1280×720"
-msgstr ""
+msgstr "1280×720"
 
 msgid "0.92 MPix"
-msgstr ""
+msgstr "0.92 像素"
 
 msgid "1715×964"
-msgstr ""
+msgstr "1715×964"
 
 msgid "1.65 MPix"
-msgstr ""
+msgstr "1.65 像素"
 
 msgid "1920×1080"
-msgstr ""
+msgstr "1920×1080"
 
 msgid "2.07 MPix"
-msgstr ""
+msgstr "2.07 MPix"
 
 msgid "2176×1224"
-msgstr ""
+msgstr "2176×1224"
 
 msgid "2.66 MPix"
-msgstr ""
+msgstr "2.66 像素"
 
 msgid "**2560×1440**"
-msgstr ""
+msgstr "**2560×1440**"
 
 msgid "**3.69 MPix**"
-msgstr ""
+msgstr "**3.69 MPix**"
 
 msgid "3404×1915"
-msgstr ""
+msgstr "3404×1915"
 
 msgid "6.52 MPix"
-msgstr ""
+msgstr "6.52 像素"
 
 msgid "5120×2880"
-msgstr ""
+msgstr "5120×2880"
 
 msgid "14.75 MPix"
-msgstr ""
+msgstr "14.75 像素"
 
 msgid "**3840×2160 (Ultra HD \"4K\")**"
-msgstr ""
+msgstr "**3840×2160（超高清「4K」）**"
 
 msgid "2572×1447"
-msgstr ""
+msgstr "2572×1447"
 
 msgid "3.72 MPix"
-msgstr ""
+msgstr "3.72 MPix"
 
 msgid "3264×1836"
-msgstr ""
+msgstr "3264×1836"
 
 msgid "5.99 MPix"
-msgstr ""
+msgstr "5.99 像素"
 
 msgid "**3840×2160**"
-msgstr ""
+msgstr "**3840×2160**"
 
 msgid "**8.29 MPix**"
-msgstr ""
+msgstr "**8.29 MPix**"
 
 msgid "5107×2872"
-msgstr ""
+msgstr "5107×2872"
 
 msgid "14.67 MPix"
-msgstr ""
+msgstr "14.67 像素"
 
 msgid "5760×3240"
-msgstr ""
+msgstr "5760×3240"
 
 msgid "18.66 MPix"
-msgstr ""
+msgstr "18.66 像素"
 
 msgid "7680×4320"
-msgstr ""
+msgstr "7680×4320"
 
 msgid "33.18 MPix"
-msgstr ""
+msgstr "33.18 MPix"
 
 msgid "FSR Sharpness"
-msgstr ""
+msgstr "FSR 銳度"
 
 msgid ""
 "When using the FSR 1.0 scaling mode, the sharpness can be controlled using "
 "the **Rendering > Scaling 3D > FSR Sharpness** advanced project setting."
 msgstr ""
+"使用 FSR 1.0 縮放模式時，可以使用 **渲染 > 縮放 3D > FSR 銳利度** 進階專案設"
+"定來控制銳利度。"
 
 msgid ""
 "The intensity is inverted compared to most other sharpness sliders: *lower* "
@@ -327,20 +354,27 @@ msgid ""
 "between preserving the original image's sharpness and avoiding additional "
 "aliasing due to oversharpening."
 msgstr ""
+"與大多數其他銳利度滑桿相比，強度是相反的：「較低」值將導致最終影像更銳利，而"
+"「較高」值將「減少」銳利化濾鏡的影響。 ``0.0`` 是最銳利的，而``2.0`` 是最不銳"
+"利的。預設值「0.2」在保留原始影像的清晰度和避免因過度銳化而產生額外鋸齒之間提"
+"供了平衡。"
 
 msgid ""
 "If you wish to use sharpening when rendering at native resolution, Godot "
 "currently doesn't allow using the sharpening component of FSR (RCAS) "
 "independently from the upscaling component (EASU)."
 msgstr ""
+"如果您希望在以原始解析度渲染時使用銳利化，Godot 目前不允許使用獨立於升級元件 "
+"(EASU) 的 FSR (RCAS) 銳利化元件。"
 
 msgid ""
 "As a workaround, you can set the 3D rendering scale to ``0.99``, set the "
 "scaling mode to **FSR 1.0** then adjust FSR sharpness as needed. This allows "
 "using FSR 1.0 while rendering at a near-native resolution."
 msgstr ""
+"作為解決方法，您可以將 3D 渲染比例設為“0.99”，將縮放模式設為 **FSR 1.0**，然"
+"後根據需要調整 FSR 銳利度。這允許在以接近原始解析度渲染時使用 FSR 1.0。"
 
-#, fuzzy
 msgid "Mipmap bias"
 msgstr "Mipmap"
 
@@ -349,6 +383,8 @@ msgid ""
 "resolution scale is set below ``1.0``. This allows for better preservation "
 "of texture detail at the cost of a grainy appearance on detailed textures."
 msgstr ""
+"當 3D 解析度比例設定為低於「1.0」時，Godot 會自動使用負紋理 mipmap 偏差。這樣"
+"可以更好地保留紋理細節，但代價是詳細紋理上出現顆粒狀外觀。"
 
 msgid ""
 "The texture LOD bias currently affects both 2D and 3D rendering in the same "
@@ -357,9 +393,12 @@ msgid ""
 "means only 3D rendering is affected unless you enabled mipmaps on 2D "
 "textures in the Import dock."
 msgstr ""
+"目前，紋理 LOD 偏差以相同的方式影響 2D 和 3D 渲染。但是，請記住，它僅對啟用 "
+"mipmap 的紋理產生影響。預設情況下，2D 中使用的紋理不會啟用 mipmap，這表示只"
+"有 3D 渲染會受到影響，除非您在匯入塢中對 2D 紋理啟用 mipmap。"
 
 msgid "The formula used to determine the texture mipmap bias is: TODO"
-msgstr ""
+msgstr "用來決定紋理 mipmap 偏差的公式為： TODO"
 
 msgid ""
 "To counteract the blurriness added by some antialiasing methods, Godot also "
@@ -368,6 +407,10 @@ msgid ""
 "used. This mipmap bias offset is applied *before* the resolution scaling "
 "offset, so it does not change depending on resolution scale."
 msgstr ""
+"為了抵消某些抗鋸齒方法增加的模糊度，Godot 還在啟用 FXAA 時新增了「-0.25」偏移"
+"量，在啟用 TAA 時新增了「-0.5」偏移量。如果同時啟用兩者，則使用“-0.75”偏移"
+"量。此 mipmap 偏移偏移在解析度縮放偏移之前應用，因此它不會根據解析度縮放而變"
+"化。"
 
 msgid ""
 "The texture LOD bias can manually be changed by adjusting the **Rendering > "
@@ -375,18 +418,25 @@ msgid ""
 "It can also be changed at run-time on :ref:`Viewports <class_Viewport>` by "
 "adjusting the ``texture_mipmap_bias`` property."
 msgstr ""
+"可以透過調整 **渲染 > 紋理 > 預設濾鏡 > 紋理 Mipmap 偏差** 高級專案設定來手動"
+"更改紋理 LOD 偏差。它也可以在運作時透過調整“texture_mipmap_bias”屬性在“視口 "
+"<class_Viewport>”上進行更改。"
 
 msgid ""
 "Adjusting the mipmap LOD bias manually can be useful in certain scenarios, "
 "but this should be done carefully to prevent the final image from looking "
 "grainy in motion."
 msgstr ""
+"手動調整 mipmap LOD 偏差在某些情況下可能很有用，但應小心執行，以防止最終影像"
+"在運動中看起來有顆粒感。"
 
 msgid ""
 "*Negative* mipmap LOD bias can also decrease performance due to higher-"
 "resolution mips having to be sampled further away. Recommended values for a "
 "manual offset are between ``-0.5`` and ``0.0``."
 msgstr ""
+"*負* mipmap LOD 偏差也會降低效能，因為必須在更遠的距離取樣更高解析度的 mip。"
+"手動偏移的建議值在“-0.5”和“0.0”之間。"
 
 msgid ""
 "*Positive* mipmap LOD bias will make mipmapped textures appear blurrier than "
@@ -394,17 +444,21 @@ msgid ""
 "recommended as the loss in visual quality is usually not worth the "
 "performance gain."
 msgstr ""
+"*正* mipmap LOD 偏差將使 mipmap 紋理看起來比預期更模糊。這可能會稍微提高性"
+"能，但不建議這樣做，因為視覺品質的損失通常不值得性能的提升。"
 
 msgid ""
 "The example below shows an extreme case, with a mipmap LOD bias of ``-1.0`` "
 "and anisotropic filtering disabled to make the difference more noticeable:"
 msgstr ""
+"下面的範例顯示了一個極端情況，其中 mipmap LOD 偏差為“-1.0”並禁用各向異性篩選"
+"以使差異更加明顯："
 
 msgid "Troubleshooting"
 msgstr "疑難排解"
 
 msgid "Performance does not increase much when decreasing resolution scale"
-msgstr ""
+msgstr "降低解析度比例時效能不會增加太多"
 
 msgid ""
 "If performance doesn't increase much when decreasing resolution scale to a "
@@ -413,8 +467,10 @@ msgid ""
 "causing a CPU bottleneck to occur. Likewise, you may have too many graphics "
 "effects enabled for your GPU to handle (such as SDFGI, SSAO or SSR)."
 msgstr ""
+"如果將解析度比例降低到「0.5」之類的值時效能沒有增加太多，則可能表示效能瓶頸在"
+"場景的其他地方。例如，您的場景可能有太多繪製呼叫，導致出現 CPU 瓶頸。同樣，您"
+"可能啟用了太多圖形效果供 GPU 處理（例如 SDFGI、SSAO 或 SSR）。"
 
-#, fuzzy
 msgid "See the :ref:`doc_performance` tutorials for more information."
 msgstr "更多資訊請參考 :ref:`doc_exporting_projects` 。"
 

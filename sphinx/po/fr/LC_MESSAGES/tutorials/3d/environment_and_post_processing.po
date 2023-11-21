@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -253,7 +253,10 @@ msgstr ""
 "360 degrés) ou un ciel procédural (un ciel simple avec un dégradé et un "
 "soleil en option). Les objets le reflètent et absorbent la lumière ambiante."
 
-msgid "**Canvas** displays the 2D scene as a background to the 3D scene."
+msgid ""
+"**Canvas** displays the 2D scene as a background to the 3D scene. This can "
+"be used to make environment effects visible on 2D rendering, such as :ref:"
+"`glow in 2D <doc_environment_and_post_processing_using_glow_in_2d>`."
 msgstr ""
 
 msgid ""
@@ -523,7 +526,7 @@ msgid ""
 msgstr ""
 
 msgid "Tonemap"
-msgstr "Tonemap"
+msgstr "Carte tonale"
 
 #, fuzzy
 msgid ""
@@ -929,6 +932,13 @@ msgstr "Luisance"
 
 #, fuzzy
 msgid ""
+"*This feature is only available when using the Forward+ and Mobile backends, "
+"not Compatibility.*"
+msgstr ""
+"*Cette fonction est disponible uniquement en utilisant l'arrière-plan GLES3*"
+
+#, fuzzy
+msgid ""
 "In photography and film, when light amount exceeds the maximum *luminance* "
 "(brightness) supported by the media, it generally bleeds outwards to darker "
 "regions of the image. This is simulated in Godot with the **Glow** effect."
@@ -1029,9 +1039,11 @@ msgstr ""
 "une subtile perturbation des couleurs autour des objets. Ce mode fonctionne "
 "mieux sur les scènes sombres."
 
+#, fuzzy
 msgid ""
-"**Replace** can be used to blur the whole screen or debug the effect. It "
-"only shows the glow effect without the image below."
+"**Replace** can be used to :ref:`blur the whole screen "
+"<doc_environment_and_post_processing_using_glow_to_blur_the_screen>` or "
+"debug the effect. It only shows the glow effect without the image below."
 msgstr ""
 "**Replace** peut être utilisé pour brouiller l'ensemble de l'écran ou "
 "déboguer l'effet. Il ne montre que l'effet de lueur sans l'image ci-dessous."
@@ -1081,10 +1093,96 @@ msgid ""
 "texture."
 msgstr ""
 
+#, fuzzy
+msgid "Using glow in 2D"
+msgstr "Utiliser RigidBody2D"
+
+#, fuzzy
+msgid "There are 2 ways to use glow in 2D:"
+msgstr "Il y a plusieurs façons de régler l'arrière-plan :"
+
 msgid ""
-"Glow can be used in 2D as well. To do so, set the environment background "
-"mode to **Canvas** then enable glow as usual. You may have to decrease "
-"**Glow HDR Threshold** to see a difference."
+"Since Godot 4.2, you can enable HDR for 2D rendering when using the Forward+ "
+"and Mobile rendering methods. This has a performance cost, but it allows for "
+"a greater dynamic range. This also allows you to control which objects glow "
+"using their individual **Modulate** or **Self Modulate** properties (use the "
+"RAW mode in the color picker). Enabling HDR can also reduce banding in the "
+"2D rendering output."
+msgstr ""
+
+msgid ""
+"To enable HDR in 2D, open the Project Settings, enable **Rendering > "
+"Viewport > HDR 2D** then restart the editor."
+msgstr ""
+
+msgid ""
+"If you want to maximize performance, you can leave HDR disabled for 2D "
+"rendering. However, you will have less control on which objects glow."
+msgstr ""
+
+msgid ""
+"Enable glow, set the environment background mode to **Canvas** then decrease "
+"**Glow HDR Threshold** so that pixels that are not overbright will still "
+"glow. To prevent UI elements from glowing, make them children of a :ref:"
+"`class_CanvasLayer` node. You can control which layers are affected by glow "
+"using the **Background > Canvas Max Layer** property of the Environment "
+"resource."
+msgstr ""
+
+#, fuzzy
+msgid "Example of using glow in a 2D scene"
+msgstr "Exemple pour l'utilisation de 4 cœurs :"
+
+msgid ""
+"Example of using glow in a 2D scene. HDR 2D is enabled, while coins and the "
+"bullet have their **Modulate** property increased to overbright values using "
+"the RAW mode in the color picker."
+msgstr ""
+
+msgid ""
+"The 2D renderer renders in linear color space if the **Rendering > Viewport "
+"> HDR 2D** project setting is enabled, so ``source_color`` must also be used "
+"for uniform samplers that are used as color input in ``canvas_item`` "
+"shaders. If this is not done, the texture will appear washed out."
+msgstr ""
+
+msgid ""
+"If 2D HDR is disabled, ``source_color`` will keep working correctly in "
+"``canvas_item`` shaders, so it's recommend to use it when relevant either "
+"way."
+msgstr ""
+
+msgid "Using glow to blur the screen"
+msgstr ""
+
+msgid ""
+"Glow can be used to blur the whole viewport, which is useful for background "
+"blur when a menu is open. Only 3D rendering will be affected unless the "
+"environment's background mode is set to **Canvas**. To prevent UI elements "
+"from being blurred when using the Canvas background mode, make them children "
+"of a :ref:`class_CanvasLayer` node. You can control which layers are "
+"affected by this blurring effect using the **Background > Canvas Max Layer** "
+"property of the Environment resource."
+msgstr ""
+
+msgid "To use glow as a blurring solution:"
+msgstr ""
+
+msgid ""
+"Enable **Normalized** and adjust levels according to preference. Increasing "
+"higher level indices will result in a more blurred image. It's recommended "
+"to leave a single glow level at ``1.0`` and leave all other glow levels at "
+"``0.0``, but this is not required. Note that the final appearance will vary "
+"depending on viewport resolution."
+msgstr ""
+
+msgid "Set **Intensity** to ``1.0`` and **Bloom** to ``1.0``."
+msgstr ""
+
+msgid "Set the blend mode to **Replace** and **HDR Luminance Cap** to ``1.0``."
+msgstr ""
+
+msgid "Example of using glow to blur the 2D rendering in the menu's background"
 msgstr ""
 
 msgid "Adjustments"
@@ -1212,9 +1310,11 @@ msgstr ""
 "Il brouille les objets derrière une plage donnée. Il a une **Distance** "
 "initiale avec une région de **Transition** (en unités mondiales) :"
 
+#, fuzzy
 msgid ""
 "The **Amount** parameter controls the amount of blur. For larger blurs, "
-"tweaking the **Quality** may be needed in order to avoid artifacts."
+"tweaking the depth of field quality in the advanced project settings may be "
+"needed to avoid artifacts."
 msgstr ""
 "Le paramètre **Amount** contrôle la quantité de flou. Pour les flous plus "
 "importants, il peut être nécessaire d'ajuster la **Quality** afin d'éviter "
@@ -1233,6 +1333,14 @@ msgstr ""
 "Il brouille les objets à proximité de l'appareil photo (agit dans la "
 "direction opposée jusqu'au flou). Il a une **Distance** initiale avec une "
 "région de **Transition** (en unités mondiales) :"
+
+msgid ""
+"The **Amount** parameter controls the amount of blur. For larger blurs, "
+"tweaking the **Quality** may be needed in order to avoid artifacts."
+msgstr ""
+"Le paramètre **Amount** contrôle la quantité de flou. Pour les flous plus "
+"importants, il peut être nécessaire d'ajuster la **Quality** afin d'éviter "
+"les artefacts."
 
 #, fuzzy
 msgid ""

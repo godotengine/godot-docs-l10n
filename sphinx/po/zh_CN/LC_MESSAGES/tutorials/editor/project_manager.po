@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,104 +17,108 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using the Project Manager"
-msgstr "项目管理器"
+msgstr "使用项目管理器"
 
-#, fuzzy
 msgid ""
 "When you launch Godot, the first window you see is the Project Manager. It "
 "lets you create, remove, import, or play game projects."
 msgstr ""
-"启动 Godot 后，你会首先看到项目管理器窗口。在默认的选项卡“项目”中，你可以进行"
-"对已有项目的管理、导入或者创建新项目等操作。"
+"启动 Godot 后，你会首先看到项目管理器窗口。“项目”选项卡中，你可以管理、导入已"
+"有项目或创建新项目。"
 
 msgid ""
 "In the window's top-right corner, a drop-down menu allows you to change the "
 "editor's language."
-msgstr ""
+msgstr "你可以通过窗口的右上角的下拉菜单来更改编辑器的语言。"
 
-#, fuzzy
 msgid "Creating and importing projects"
-msgstr "创建一个新项目"
+msgstr "项目的创建与导入"
 
-#, fuzzy
 msgid "To create a new project:"
-msgstr "创建新项目。"
+msgstr "创建新项目："
 
 #, fuzzy
-msgid "Click the ``New Project`` button on the right of the window."
-msgstr "点击右侧的 **Profile All** 按钮开始性能分析。"
+msgid "Click the **New** button on the top-left of the window."
+msgstr "单击窗口右侧的 ``新建项目`` 按钮。"
 
 msgid ""
 "Give the project a name, choose an empty folder on your computer to save the "
 "files, and select a rendering backend."
-msgstr ""
+msgstr "为项目命名，在计算机上选择一个空文件夹来保存文件，然后选择渲染后端。"
 
 #, fuzzy
 msgid ""
-"Click the Create & Edit button to create the project folder and open it in "
-"the editor."
-msgstr "点击\\ *导入并编辑*\\ 在编辑器中打开该项目。"
+"Click the **Create & Edit** button to create the project folder and open it "
+"in the editor."
+msgstr "单击“导入并编辑”按钮，这样就会创建项目文件夹并将其在编辑器中打开。"
 
-#, fuzzy
 msgid "Using the file browser"
-msgstr "提供文件"
+msgstr "使用文件浏览器"
 
+#, fuzzy
 msgid ""
-"Click the Browse button to open Godot's file browser and pick a location or "
-"type the folder's path in the Project Path field."
+"Click the **Browse** button to open Godot's file browser and pick a location "
+"or type the folder's path in the Project Path field."
 msgstr ""
+"单击“浏览”按钮打开 Godot 的文件浏览器，然后选中某个位置，或者在 \\*项目路径* "
+"\\字段中输入文件夹的路径。"
 
+#, fuzzy
 msgid ""
 "When you see the green tick on the right, it means the engine detects an "
-"empty folder. You can also click the ``Create Folder`` button to create an "
+"empty folder. You can also click the **Create Folder** button to create an "
 "empty folder based on your project's name."
 msgstr ""
+"当你看到右侧的绿色勾号时，表示引擎检测到一个空文件夹。 你还可以单击 ``创建文"
+"件夹`` 按钮以根据你的项目名称创建一个空文件夹。"
 
-#, fuzzy
 msgid "Opening and importing projects"
-msgstr "编辑和运行一个项目"
+msgstr "项目的打开与导入"
 
 msgid ""
 "The next time you open the Project Manager, you'll see your new project in "
 "the list. Double click on it to open it in the editor."
 msgstr ""
-
-msgid ""
-"You can similarly import existing projects using the Import button. Locate "
-"the folder that contains the project or the ``project.godot`` file to import "
-"and edit it."
-msgstr ""
-
-msgid "When the folder path is correct, you'll see a green checkmark."
-msgstr ""
+"下次打开项目管理器时，你将在列表中看到你的新项目。 双击它以在编辑器中将它打"
+"开。"
 
 #, fuzzy
+msgid ""
+"You can similarly import existing projects using the **Import** button. "
+"Locate the folder that contains the project or the **project.godot** file to "
+"import and edit it."
+msgstr ""
+"同样地你可以使用\\ *导入*\\ 按钮导入现有项目。 找到包含项目或 ``project."
+"godot`` 文件的文件夹以导入并编辑它。"
+
+msgid "When the folder path is correct, you'll see a green checkmark."
+msgstr "当文件夹路径正确时，你会看到一个绿色的对勾。"
+
 msgid "Downloading demos and templates"
-msgstr "构建导出模板"
+msgstr "下载演示和模板"
 
 msgid ""
 "From the **Asset Library Projects** tab you can download open source project "
 "templates and demos from the :ref:`Asset Library <doc_what_is_assetlib>` to "
 "help you get started faster."
 msgstr ""
+"在\\ **资产库项目**\\ 选项卡中，你可以从\\ :ref:`资产库 "
+"<doc_what_is_assetlib>`\\ 下载开源项目模板和演示程序，以便更快地开始。"
 
-#, fuzzy
 msgid "To download a demo or template:"
-msgstr "启用 Mono 的导出模板： ::"
+msgstr "下载一个demo或者模板："
 
 msgid "Click on its title."
-msgstr ""
+msgstr "点击它的标题。"
 
-#, fuzzy
 msgid "On the page that opens, click the download button."
-msgstr "请保持默认值，然后点击\\ *添加*\\ 按钮。"
+msgstr "在打开的页面上，点击\\ *下载*\\ 按钮。"
 
 msgid ""
 "Once it finished downloading, click install and choose where you want to "
 "save the project."
-msgstr ""
+msgstr "下载完成后，点击\\*安装*\\ 并选择你想要保存项目的位置。"
 
 msgid "Translation status"
 msgstr "翻译状态"

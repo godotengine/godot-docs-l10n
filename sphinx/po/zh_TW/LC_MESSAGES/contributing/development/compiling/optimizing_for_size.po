@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,27 +44,31 @@ msgid ""
 "The options below are listed from the most important (greatest size savings) "
 "to the least important (lowest size savings)."
 msgstr ""
+"下面的選項按照從最重要（大小節省得最多）到最不重要（大小節省得最少）的順序排"
+"列。"
 
 msgid "Stripping binaries"
 msgstr "在二進位檔中移除"
 
 msgid "**Space savings:** Very high"
-msgstr ""
+msgstr "**節省空間：**非常高"
 
 msgid "**Difficulty:** Easy"
-msgstr ""
+msgstr "**難度：**簡單"
 
 msgid "**Performed in official builds:** Yes"
-msgstr ""
+msgstr "**在官方建構中執行：**是"
 
 msgid ""
 "If you build Windows (MinGW), Linux or macOS binaries from source, remember "
 "to strip debug symbols from binaries by installing the ``strip`` package "
 "from your distribution then running:"
 msgstr ""
+"如果你從源碼建構了 Windows（MinGW）、Linux、macOS 的二進位檔案，請記得剝離二"
+"進位檔案中的除錯符號。首先請安裝你的發行版本中的 ``strip`` 包，然後執行："
 
 msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
-msgstr ""
+msgstr "在 Windows 上，大多數 MinGW 工具鏈安裝時都會包含 ``strip.exe``。"
 
 msgid ""
 "This will reduce the size of compiled binaries by a factor between 5× and "
@@ -73,34 +77,25 @@ msgid ""
 "`C++ profilers <doc_using_cpp_profilers>` will also no longer be able to "
 "display function names (this does not affect the built-in GDScript profiler)."
 msgstr ""
+"這樣可以將編譯後二進位檔案減少到原先五分之一到十分之一的大小。缺點是當機追蹤"
+"中就無法再提供準確的資訊了（可用於搜尋當機原因）。:ref:`C++ 性能分析器 "
+"<doc_using_cpp_profilers>`也將無法顯示函式名稱（不影響內建的 GDScript 性能分"
+"析器）。"
 
+#, fuzzy
 msgid ""
 "The above command will not work on Windows binaries compiled with MSVC and "
-"platforms such as Android and HTML5. Instead, pass ``debug_symbols=no`` on "
-"the SCons command line when compiling."
+"platforms such as Android and Web. Instead, pass ``debug_symbols=no`` on the "
+"SCons command line when compiling."
 msgstr ""
-
-msgid "Optimizing for size instead of speed"
-msgstr "最佳化大小而非速度"
-
-msgid "**Space savings:** High"
-msgstr ""
-
-msgid "**Performed in official builds:** Yes, but only for HTML5"
-msgstr ""
-
-msgid ""
-"Godot 3.1 onwards allows compiling using size optimizations (instead of "
-"speed). To enable this, set the ``optimize`` flag to ``size``:"
-msgstr ""
-"Godot 3.1 後可進行大小最佳化 (而非速度)。若要啟用大小最佳化，請將 "
-"``optimize`` 旗標設為 ``size`` ："
-
-msgid "Some platforms such as WebAssembly already use this mode by default."
-msgstr "部分平台，如 WebAssembly，已預設使用此模式。"
+"上面的命令無法用於使用 MSVC 編譯的 Windows 二進位檔案，Android 和 HTML5 等平"
+"臺也一樣。作為替代，請在編譯時向 SCons 命令列傳遞 ``debug_symbols=no``。"
 
 msgid "Compiling with link-time optimization"
 msgstr "以連結時期最佳化進行編譯"
+
+msgid "**Space savings:** High"
+msgstr "**節省空間：**高"
 
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
@@ -112,7 +107,6 @@ msgstr ""
 "通過清理重複的樣板功能與為使用的程式碼來達成的。目前可以在 GCC 與 MSVC 編譯器"
 "上使用："
 
-#, fuzzy
 msgid ""
 "Linking becomes much slower and more RAM-consuming with this option, so it "
 "should be used only for release builds:"
@@ -122,20 +116,84 @@ msgid ""
 "When compiling the ``master`` branch, you need to have at least 8 GB of RAM "
 "available for successful linking with LTO enabled."
 msgstr ""
+"編譯 ``master`` 分支時，如果啟用了 LTO，那麼你需要至少 8 GB 可用記憶體才能成"
+"功連結。"
 
 msgid ""
 "When compiling the ``3.x`` branch, you need to have at least 6 GB of RAM "
 "available for successful linking with LTO enabled."
+msgstr ""
+"編譯 ``3.x`` 分支時，如果啟用了 LTO，那麼你需要至少 6 GB 可用記憶體才能成功連"
+"結。"
+
+msgid "Optimizing for size instead of speed"
+msgstr "最佳化大小而非速度"
+
+#, fuzzy
+msgid "**Performed in official builds:** Yes, but only for web builds"
+msgstr "**在官方建構中執行：**是，但僅限於 HTML5"
+
+msgid ""
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+"Godot 3.1 後可進行大小最佳化 (而非速度)。若要啟用大小最佳化，請將 "
+"``optimize`` 旗標設為 ``size`` ："
+
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr "部分平台，如 WebAssembly，已預設使用此模式。"
+
+#, fuzzy
+msgid "Disabling advanced text server"
+msgstr "禁用進階 GUI 節點"
+
+msgid "**Performed in official builds:** No"
+msgstr "**在官方建構中執行：**否"
+
+msgid ""
+"By default, Godot uses an advanced text server with the support for the "
+"following features:"
+msgstr ""
+
+msgid ""
+"Right-to-left typesetting and complex scripts, required to write languages "
+"such as Arabic and Hebrew."
+msgstr ""
+
+msgid ""
+"Font ligatures and OpenType features (such as small capitals, fractions and "
+"slashed zero)."
+msgstr ""
+
+msgid ""
+"Godot provides a fallback text server that isn't compiled by default. This "
+"text server can be used as a lightweight alternative to the default advanced "
+"text server:"
+msgstr ""
+
+msgid ""
+"If you only intend on supporting Latin, Greek and Cyrillic-based languages "
+"in your project, the fallback text server should suffice."
+msgstr ""
+
+msgid ""
+"This fallback text server can also process large amounts of text more "
+"quickly than the advanced text server. This makes the fallback text server a "
+"good fit for mobile/web projects."
+msgstr ""
+
+msgid ""
+"Remember to always pass ``module_text_server_fb_enabled=yes`` when using "
+"``module_text_server_adv_enabled=no``. Otherwise, the compiled binary won't "
+"contain any text server, which means no text will be displayed at all when "
+"running the project."
 msgstr ""
 
 msgid "Disabling 3D"
 msgstr "禁用 3D"
 
 msgid "**Space savings:** Moderate"
-msgstr ""
-
-msgid "**Performed in official builds:** No"
-msgstr ""
+msgstr "**節省空間：**一般"
 
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
@@ -152,7 +210,6 @@ msgstr ""
 "必須要禁用 Tools 才能使用該旗標，因為編輯器並非設計給不支援 3D 的情景。關閉 "
 "3D 支援後，二進位檔的大小約可以減少 15%。"
 
-#, fuzzy
 msgid "Disabling advanced GUI objects"
 msgstr "禁用進階 GUI 節點"
 
@@ -164,104 +221,88 @@ msgstr ""
 "控制。可以通過一個建置旗標來禁用："
 
 msgid "This is everything that will be disabled:"
-msgstr ""
+msgstr "以下所有東西都會被禁用："
 
-#, fuzzy
 msgid "FileDialog"
 msgstr "檔案對話框"
 
 msgid "PopupMenu"
-msgstr ""
+msgstr "PopupMenu"
 
-#, fuzzy
 msgid "Tree"
-msgstr "\\ SceneTree"
+msgstr "樹"
 
-#, fuzzy
 msgid "TextEdit"
 msgstr "文字編輯器"
 
-#, fuzzy
 msgid "CodeEdit"
 msgstr "文字編輯器"
 
 msgid "SyntaxHighlighter"
-msgstr ""
+msgstr "SyntaxHighlighter"
 
 msgid "CodeHighlighter"
-msgstr ""
+msgstr "CodeHighlighter"
 
 msgid "TreeItem"
-msgstr ""
+msgstr "TreeItem"
 
-#, fuzzy
 msgid "OptionButton"
 msgstr "最佳化"
 
 msgid "SpinBox"
-msgstr ""
+msgstr "SpinBox"
 
-#, fuzzy
 msgid "ColorPicker"
 msgstr "顏色"
 
 msgid "ColorPickerButton"
-msgstr ""
+msgstr "ColorPickerButton"
 
-#, fuzzy
 msgid "RichTextlabel"
-msgstr "\\ ScoreLabel"
+msgstr "RichTextlabel"
 
-#, fuzzy
 msgid "RichTextEffect"
-msgstr "效果"
+msgstr "RichTextEffect"
 
-#, fuzzy
 msgid "CharFXTransform"
 msgstr "清除變換"
 
-#, fuzzy
 msgid "AcceptDialog"
 msgstr "檔案對話框"
 
-#, fuzzy
 msgid "ConfirmationDialog"
 msgstr "注意事項"
 
-#, fuzzy
 msgid "MarginContainer"
-msgstr "創建內容"
+msgstr "建立內容"
 
-#, fuzzy
 msgid "SubViewportContainer"
-msgstr "創建內容"
+msgstr "建立內容"
 
-#, fuzzy
 msgid "SplitContainer"
-msgstr "創建內容"
+msgstr "建立內容"
 
-#, fuzzy
 msgid "HSplitContainer"
-msgstr "創建內容"
+msgstr "建立內容"
 
-#, fuzzy
 msgid "VSplitContainer"
-msgstr "創建內容"
+msgstr "建立內容"
 
 msgid "GraphNode"
-msgstr ""
+msgstr "GraphNode"
 
 msgid "GraphEdit"
-msgstr ""
+msgstr "GraphEdit"
 
 msgid "Disabling unwanted modules"
 msgstr "禁用不需要的模組"
 
 msgid "**Space savings:** Very low to moderate depending on modules"
-msgstr ""
+msgstr "**節省空間：**非常低到一般之間，取決於模組"
 
 msgid "**Difficulty:** Medium to hard depending on modules"
-msgstr ""
+msgstr "**難度：**中等到難之間，取決於模組"
 
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
@@ -280,8 +321,8 @@ msgstr ""
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
 "modules and see which ones you actually still need for your game (e.g. you "
-"might want to keep networking-related modules, regex support, or theora to "
-"play videos)."
+"might want to keep networking-related modules, regex support, ``minimp3``/"
+"``ogg``/``vorbis`` to play music, or ``theora`` to play videos)."
 msgstr ""
 "若確定這個設定與你的需求不合時，可以看看模組列表，找找其中是否有你的遊戲需要"
 "的功能 (如，與網路相關的模組、正規表示式支援以及用於播放影片的 Theora/WebM)。"

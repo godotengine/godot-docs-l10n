@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Setting up XR"
-msgstr "设置"
+msgstr "设置 XR"
 
-#, fuzzy
 msgid "Introduction to the XR system in Godot"
-msgstr "构建系统介绍"
+msgstr "Godot 的 XR 系统简介"
 
 msgid ""
 "Godot provides a modular XR system that abstracts many of the different XR "
@@ -38,7 +36,7 @@ msgid ""
 "<class_xrinterface>`. Supported interfaces register themselves with the :ref:"
 "`XRServer <class_xrserver>` and can be queried with the ``find_interface`` "
 "method on the :ref:`XRServer <class_xrserver>`. When the desired interface "
-"is found it can be initialised by calling ``initialize`` on the interface."
+"is found it can be initialized by calling ``initialize`` on the interface."
 msgstr ""
 
 msgid ""
@@ -106,7 +104,7 @@ msgid ""
 msgstr ""
 
 msgid "Prerequisites for XR in Godot 4"
-msgstr ""
+msgstr "Godot 4 中 XR 的先决条件"
 
 msgid ""
 "While in Godot 3 most things worked out of the box, Godot 4 needs a little "
@@ -128,15 +126,14 @@ msgid ""
 "benefit XR applications. You may wish to enable this even on desktop."
 msgstr ""
 
-#, fuzzy
 msgid "OpenXR"
-msgstr "OpenXR 插件"
+msgstr "OpenXR"
 
 msgid ""
 "OpenXR is a new industry standard that allows different XR platforms to "
 "present themselves through a standardised API to XR applications. This "
 "standard is an open standard maintained by the Khronos Group and thus aligns "
-"very well with Godots interests."
+"very well with Godot's interests."
 msgstr ""
 
 msgid ""
@@ -160,9 +157,8 @@ msgid ""
 "go into detail in another section of the documentation."
 msgstr ""
 
-#, fuzzy
 msgid "Setting up the XR scene"
-msgstr "设置场景"
+msgstr "设置 XR 场景"
 
 msgid ""
 "Every XR application needs at least an :ref:`XROrigin3D <class_xrorigin3d>` "
@@ -179,16 +175,15 @@ msgid ""
 "up as follows:"
 msgstr ""
 
-#, fuzzy
 msgid "And the right hand:"
-msgstr "将脚本添加到节点."
+msgstr "将脚本添加到节点："
 
 msgid ""
-"Right now all these nodes are on the floor, the will be positioned correctly "
-"in runtime. To help during development, it can be helpful to move the camera "
-"upwards so its ``y`` is set to ``1.7``, and move the controller nodes to "
-"``-0.5, 1.0, -0.5`` and ``0.5, 1.0, -0.5`` for respectively the left and "
-"right hand."
+"Right now all these nodes are on the floor, they will be positioned "
+"correctly in runtime. To help during development, it can be helpful to move "
+"the camera upwards so its ``y`` is set to ``1.7``, and move the controller "
+"nodes to ``-0.5, 1.0, -0.5`` and ``0.5, 1.0, -0.5`` for respectively the "
+"left and right hand."
 msgstr ""
 
 #, fuzzy

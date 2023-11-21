@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1114,19 +1114,23 @@ msgstr "행 접기/펼치기"
 msgid ":kbd:`Alt + F`"
 msgstr ""
 
+#, fuzzy
+msgid ":kbd:`Ctrl + Cmd + F`"
+msgstr ":kbd:`Ctrl + F1`"
+
 msgid "``script_text_editor/toggle_fold_line``"
 msgstr ""
 
-msgid "Clone Down"
-msgstr "아래로 복제"
+msgid "Duplicate Selection"
+msgstr "선택 항목 복제"
 
-msgid ":kbd:`Ctrl + D`"
+msgid ":kbd:`Ctrl + Shift + D`"
 msgstr ""
 
 msgid ":kbd:`Cmd + Shift + C`"
 msgstr ""
 
-msgid "``script_text_editor/clone_down``"
+msgid "``script_text_editor/duplicate_selection``"
 msgstr ""
 
 msgid "Complete Symbol"
@@ -1602,6 +1606,9 @@ msgstr ""
 msgid "Focus Path"
 msgstr "경로 포커스"
 
+msgid ":kbd:`Ctrl + D`"
+msgstr ""
+
 msgid ":kbd:`Cmd + D`"
 msgstr ""
 
@@ -1672,6 +1679,14 @@ msgstr ""
 msgid "Copy Node Path"
 msgstr "노드 경로 복사"
 
+#, fuzzy
+msgid ":kbd:`Ctrl + Shift + C`"
+msgstr ":kbd:`Ctrl + Shift + W`"
+
+#, fuzzy
+msgid ":kbd:`Cmd + Shift +  C`"
+msgstr ":kbd:`Cmd + Shift + W`"
+
 msgid "``scene_tree/copy_node_path``"
 msgstr ""
 
@@ -1700,17 +1715,11 @@ msgstr ""
 msgid "Animation Track Editor"
 msgstr "애니메이션 트리"
 
-msgid "Duplicate Selection"
-msgstr "선택 항목 복제"
-
 msgid "``animation_editor/duplicate_selection``"
 msgstr ""
 
 msgid "Duplicate Transposed"
 msgstr "선택된 트랙에 복제"
-
-msgid ":kbd:`Ctrl + Shift + D`"
-msgstr ""
 
 msgid ":kbd:`Cmd + Shift + D`"
 msgstr ""

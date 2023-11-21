@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,17 +33,14 @@ msgstr ""
 msgid "There are, of course, always drawbacks:"
 msgstr "当然, 总是有缺点的:"
 
-#, fuzzy
 msgid "There is an extra layer of complexity."
-msgstr "那有一个额外复杂层"
+msgstr "那有一个额外复杂层。"
 
-#, fuzzy
 msgid "Performance is lower than when using simple APIs directly."
-msgstr "性能比直接使用简单API要低"
+msgstr "性能比直接使用简单API要低。"
 
-#, fuzzy
 msgid "It is not possible to use multiple threads to control them."
-msgstr "无法使用多个线程来控制它们"
+msgstr "无法使用多个线程来控制它们。"
 
 msgid "More memory is needed."
 msgstr "需要更多的内存."
@@ -70,14 +67,13 @@ msgstr ""
 msgid "Still, Godot is designed to work around this problem."
 msgstr "当然,Godot的设计工作中还是可以解决这个问题."
 
-#, fuzzy
 msgid ""
 "You can see how using low-level servers works in action using the `Bullet "
 "Shower demo project <https://github.com/godotengine/godot-demo-projects/tree/"
 "master/2d/bullet_shower>`__"
 msgstr ""
 "如果您更善于通过查看示例学习，可以在\\ `这里 <https://github.com/godotengine/"
-"godot-demo-projects/tree/master/mobile/android_iap>`__\\ 找到演示项目。"
+"godot-demo-projects/tree/master/mobile/android_iap>`__\\ 找到演示项目"
 
 msgid "Servers"
 msgstr "服务器"
@@ -98,23 +94,25 @@ msgstr ""
 "Godot 在核心中使用了“服务器”的概念。它们是非常底层的 API，用来控制渲染、物"
 "理、声音等。场景系统建立在它们之上，直接使用它们。最常见的服务器有："
 
-#, fuzzy
 msgid ""
 ":ref:`RenderingServer <class_RenderingServer>`: handles everything related "
 "to graphics."
-msgstr ":ref:`VisualServer <class_VisualServer>`: 处理与图形相关的一切."
+msgstr ""
+":ref:`RenderingServer <class_RenderingServer>`: 处理所有与图形相关的内容。"
 
-#, fuzzy
 msgid ""
 ":ref:`PhysicsServer3D <class_PhysicsServer3D>`: handles everything related "
 "to 3D physics."
-msgstr ":ref:`PhysicsServer <class_PhysicsServer>`: 处理一切相关的3d物体."
+msgstr ""
+":ref:`PhysicsServer3D <class_PhysicsServer3D>`: 处理所有与 3D 物理相关的内"
+"容。"
 
-#, fuzzy
 msgid ""
 ":ref:`PhysicsServer2D <class_PhysicsServer2D>`: handles everything related "
 "to 2D physics."
-msgstr ":ref:`PhysicsServer <class_PhysicsServer>`: 处理一切相关的3d物体."
+msgstr ""
+":ref:`PhysicsServer2D <class_PhysicsServer2D>`: 处理所有与 2D 物理相关的内"
+"容。"
 
 msgid ""
 ":ref:`AudioServer <class_AudioServer>`: handles everything related to audio."
@@ -153,16 +151,15 @@ msgstr ""
 "RID。不过并不是所有资源都包含 RID：在这种情况下，RID 为空。可以用 RID 的形式"
 "将资源传递给服务器 API。"
 
-#, fuzzy
 msgid ""
 "Resources are reference-counted (see :ref:`RefCounted <class_RefCounted>`), "
 "and references to a resource's RID are *not* counted when determining "
 "whether the resource is still in use. Make sure to keep a reference to the "
 "resource outside the server, or else both it and its RID will be erased."
 msgstr ""
-"资源进行了引用计数（请参阅 :ref:`Reference <class_Reference>`\\ ），但在确定"
-"是否仍在使用某个资源时，对资源 RID 的引用\\ **没有**\\ 进行计数。请在服务器外"
-"保留资源的引用，并在清除资源时清除其 RID。"
+"资源是引用计数的（参阅 :ref:`RefCounted <class_RefCounted>`），并且对资源 "
+"RID 的引用在确定资源仍在使用时 *不* 进行计数。请确保在服务外部保持对资源的引"
+"用，否则将删除资源及其 RID 。"
 
 msgid "For nodes, there are many functions available:"
 msgstr "对于节点来说, 有很多函数功能可以使用:"
@@ -261,7 +258,7 @@ msgid ""
 "primitives re-added (this is not the case for setting the transform, which "
 "can be done as many times as desired)."
 msgstr ""
-"服务器中的 Canvas Item API 允许您向其添加绘制图元。一旦添加，它们就不能被修"
+"服务器中的 Canvas Item API 允许你向其添加绘制图元。一旦添加，它们就不能被修"
 "改。需要清除 Item，并重新添加图元（设置变换时则不然，变换可根据需要多次进"
 "行）。"
 

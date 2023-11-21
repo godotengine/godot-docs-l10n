@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -78,7 +78,7 @@ msgid "Editor setting"
 msgstr "Paramètres de l'éditeur"
 
 msgid "Open 2D Editor"
-msgstr "Ouvrir éditeur 2D"
+msgstr "Ouvrir l'éditeur 2D"
 
 msgid ":kbd:`Ctrl + F1`"
 msgstr ":kbd:`Ctrl + F1`"
@@ -90,7 +90,7 @@ msgid "``editor/editor_2d``"
 msgstr "``editor/editor_2d``"
 
 msgid "Open 3D Editor"
-msgstr "Ouvrir éditeur 3D"
+msgstr "Ouvrir l'éditeur 3D"
 
 msgid ":kbd:`Ctrl + F2`"
 msgstr ":kbd:`Ctrl + F2`"
@@ -126,7 +126,7 @@ msgid "``editor/editor_help``"
 msgstr "``editor/editor_help``"
 
 msgid "Distraction Free Mode"
-msgstr "Mode Sans Distraction"
+msgstr "Mode sans distraction"
 
 msgid ":kbd:`Ctrl + Shift + F11`"
 msgstr ":kbd:`Ctrl + Shift + F11`"
@@ -198,7 +198,7 @@ msgid "``editor/close_scene``"
 msgstr "``editor/close_scene``"
 
 msgid "Reopen Closed Scene"
-msgstr "Réouvrir la scène fermée"
+msgstr "Rouvrir la scène fermée"
 
 msgid ":kbd:`Ctrl + Shift + T`"
 msgstr ":kbd:`Ctrl + Shift + T`"
@@ -303,7 +303,7 @@ msgid "``editor/redo``"
 msgstr "``editor/redo``"
 
 msgid "Quit"
-msgstr "Fermer"
+msgstr "Quitter"
 
 msgid ":kbd:`Ctrl + Q`"
 msgstr ":kbd:`Ctrl + Q`"
@@ -339,7 +339,7 @@ msgid "``editor/take_screenshot``"
 msgstr "``editor/take_screenshot``"
 
 msgid "Toggle Fullscreen"
-msgstr "Activer/Désactiver le plein écran"
+msgstr "Activer/désactiver le plein écran"
 
 msgid ":kbd:`Shift + F11`"
 msgstr ":kbd:`Shift + F11`"
@@ -411,7 +411,7 @@ msgid "``editor/play_custom_scene``"
 msgstr "``editor/play_custom_scene``"
 
 msgid "Expand Bottom Panel"
-msgstr "Développez le panneau inférieur"
+msgstr "Développer le panneau inférieur"
 
 msgid ":kbd:`Shift + F12`"
 msgstr ":kbd:`Shift + F12`"
@@ -459,7 +459,7 @@ msgid "``canvas_item_editor/zoom_reset``"
 msgstr "``canvas_item_editor/zoom_reset``"
 
 msgid "Pan View"
-msgstr "Panoramique de vue"
+msgstr "Déplacer la vue"
 
 msgid ":kbd:`Space`"
 msgstr ":kbd:`Space`"
@@ -1115,20 +1115,25 @@ msgstr "Réduire/Développer la ligne"
 msgid ":kbd:`Alt + F`"
 msgstr ":kbd:`Alt + F`"
 
+#, fuzzy
+msgid ":kbd:`Ctrl + Cmd + F`"
+msgstr ":kbd:`Ctrl + Cmd + J`"
+
 msgid "``script_text_editor/toggle_fold_line``"
 msgstr "``script_text_editor/toggle_fold_line``"
 
-msgid "Clone Down"
-msgstr "Cloner en dessous"
+msgid "Duplicate Selection"
+msgstr "Dupliquer la sélection"
 
-msgid ":kbd:`Ctrl + D`"
-msgstr ":kbd:`Ctrl + D`"
+msgid ":kbd:`Ctrl + Shift + D`"
+msgstr ":kbd:`Ctrl + Shift + D`"
 
 msgid ":kbd:`Cmd + Shift + C`"
 msgstr ":kbd:`Cmd + Shift + C`"
 
-msgid "``script_text_editor/clone_down``"
-msgstr "``script_text_editor/clone_down``"
+#, fuzzy
+msgid "``script_text_editor/duplicate_selection``"
+msgstr "``script_text_editor/evaluate_selection``"
 
 msgid "Complete Symbol"
 msgstr "Compléter le symbole"
@@ -1601,6 +1606,9 @@ msgstr "``file_dialog/delete``"
 msgid "Focus Path"
 msgstr "Focaliser le chemin"
 
+msgid ":kbd:`Ctrl + D`"
+msgstr ":kbd:`Ctrl + D`"
+
 msgid ":kbd:`Cmd + D`"
 msgstr ":kbd:`Cmd + D`"
 
@@ -1670,6 +1678,14 @@ msgstr "``scene_tree/batch_rename``"
 msgid "Copy Node Path"
 msgstr "Copier le chemin du nœud"
 
+#, fuzzy
+msgid ":kbd:`Ctrl + Shift + C`"
+msgstr ":kbd:`Ctrl + Shift + W`"
+
+#, fuzzy
+msgid ":kbd:`Cmd + Shift +  C`"
+msgstr ":kbd:`Cmd + Shift + C`"
+
 msgid "``scene_tree/copy_node_path``"
 msgstr "``scene_tree/copy_node_path``"
 
@@ -1697,17 +1713,11 @@ msgstr "``scene_tree/move_down``"
 msgid "Animation Track Editor"
 msgstr "Éditeur de Piste d'Animation"
 
-msgid "Duplicate Selection"
-msgstr "Dupliquer la sélection"
-
 msgid "``animation_editor/duplicate_selection``"
 msgstr "``animation_editor/duplicate_selection``"
 
 msgid "Duplicate Transposed"
 msgstr "Dupliquer transposé"
-
-msgid ":kbd:`Ctrl + Shift + D`"
-msgstr ":kbd:`Ctrl + Shift + D`"
 
 msgid ":kbd:`Cmd + Shift + D`"
 msgstr ":kbd:`Cmd + Shift + D`"

@@ -1,0 +1,70 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting for Linux"
+msgstr "Linux için dışa aktarmak"
+
+msgid ""
+"This page describes how to export a Godot project to Linux. If you're "
+"looking to compile editor or export template binaries from source instead, "
+"read :ref:`doc_compiling_for_linuxbsd`."
+msgstr ""
+
+msgid ""
+"The simplest way to distribute a game for PC is to copy the executable "
+"(``godot``), compress the folder and send it to someone else. However, this "
+"is often not desired."
+msgstr ""
+
+msgid ""
+"Godot offers a more elegant approach for PC distribution when using the "
+"export system. When exporting for Linux, the exporter takes all the project "
+"files and creates a ``data.pck`` file. This file is bundled with a specially "
+"optimized binary that is smaller, faster and does not contain the editor and "
+"debugger."
+msgstr ""
+
+msgid "Environment variables"
+msgstr ""
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+
+msgid "Linux export environment variables"
+msgstr ""
+
+#, fuzzy
+msgid "Export option"
+msgstr "İçe aktarma seçenekleri"
+
+#, fuzzy
+msgid "Environment variable"
+msgstr "Ortam özellikleri"
+
+msgid "Encryption / Encryption Key"
+msgstr ""
+
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr ""
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

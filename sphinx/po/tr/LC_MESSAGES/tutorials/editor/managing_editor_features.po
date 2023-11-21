@@ -1,0 +1,79 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Managing editor features"
+msgstr "Düzenleyici özelliklerini yönetmek"
+
+msgid "Introduction"
+msgstr "Giriş"
+
+msgid ""
+"In certain situations, it may be desirable to limit what features can be "
+"used in the Godot editor. For example, a UI designer on a team who doesn't "
+"need to see 3D features, or an educator slowly introducing features to "
+"students. Godot has a built in system called \"feature profiles\" to do this."
+msgstr ""
+
+msgid ""
+"With feature profiles, major features and nodes can be hidden from the "
+"editor. This only hides parts of the interface and does not actually remove "
+"support for these features, so scenes and scripts relying on those features "
+"will still work fine. This also means feature profiles are not an "
+"optimization technique. For information on how to optimize Godot see :ref:"
+"`doc_performance`."
+msgstr ""
+
+msgid "Creating a profile"
+msgstr ""
+
+msgid ""
+"To manage editor features go to **Editor > Manage Editor Features**. This "
+"will open the **Manage Editor Feature Profiles** window. By default there "
+"will be no profile. Click on **Create Profile** and give it a name. You will "
+"then see a list of all the features in the Godot editor."
+msgstr ""
+
+msgid ""
+"The first section allows major editor features to be removed, such as the 3D "
+"editor or scripting editor. Below the main features is every class and node "
+"in Godot, which can be disabled as well. Click on a node and all of its "
+"properties and options will be listed in the **Extra Items** box, these can "
+"all be individually disabled."
+msgstr ""
+
+msgid "Sharing a profile"
+msgstr ""
+
+msgid ""
+"To share profiles between editors click on the **Export** button. Save the "
+"custom profile somewhere as a ``.profile`` file. To use this in another "
+"editor open that editor's **Manage Editor Feature Profiles** window and "
+"click import, then select the ``.profile`` file."
+msgstr ""
+
+msgid ""
+"This process is potentially cumbersome however if a large amount of "
+"computers need custom profiles. As an alternative, you can enable self-"
+"contained mode for Godot, which allows putting all editor configuration in "
+"the same folder as the editor binary. See :ref:"
+"`doc_data_paths_self_contained_mode` for details."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

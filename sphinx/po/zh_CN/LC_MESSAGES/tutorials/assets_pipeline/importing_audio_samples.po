@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,18 +20,16 @@ msgstr ""
 msgid "Importing audio samples"
 msgstr "导入音频采样"
 
-#, fuzzy
 msgid "Supported audio formats"
-msgstr "支持的图像格式"
+msgstr "支持的音频格式"
 
 #, fuzzy
 msgid ""
 "Godot provides 3 options to import your audio data: WAV, Ogg Vorbis and MP3."
 msgstr "Godot 提供了三个选项来导入您的音频数据：WAV、Ogg Vorbis、MP3。"
 
-#, fuzzy
 msgid "Each format has different advantages:"
-msgstr "他们各有优点。"
+msgstr "不同的格式各有优点："
 
 msgid ""
 "WAV files use raw data or light compression (IMA-ADPCM). They are "
@@ -164,9 +162,8 @@ msgid ""
 "`doc_audio_streams` for more information."
 msgstr ""
 
-#, fuzzy
 msgid "Import options (WAV)"
-msgstr "导入选项"
+msgstr "导入选项（WAV）"
 
 msgid "Force > 8 Bit"
 msgstr ""
@@ -268,8 +265,8 @@ msgstr ""
 msgid ""
 "When choosing one of the **Forward**, **Ping-Pong** or **Backward** loop "
 "modes, loop points can also be defined to make only a specific part of the "
-"sound loop. **Loop Begin** is set in seconds after the beginning of the "
-"audio file. **Loop End** is also set in seconds after the beginning of the "
+"sound loop. **Loop Begin** is set in samples after the beginning of the "
+"audio file. **Loop End** is also set in samples after the beginning of the "
 "audio file, but will use the end of the audio file if set to ``-1``."
 msgstr ""
 
@@ -279,9 +276,8 @@ msgid ""
 "playing indefinitely."
 msgstr ""
 
-#, fuzzy
 msgid "Compress > Mode"
-msgstr "压缩模式"
+msgstr "压缩 > 模式"
 
 msgid ""
 "Two compression modes can be chosen for WAV files: **Disabled** (default) or "
@@ -296,22 +292,19 @@ msgid ""
 "playing dozens of compressed sounds at the same time on mobile/web platforms."
 msgstr ""
 
-#, fuzzy
 msgid "Import options (Ogg Vorbis and MP3)"
-msgstr "导入选项非常多："
+msgstr "导入选项（Ogg Vorbis 和 MP3）"
 
-#, fuzzy
 msgid "Loop"
 msgstr "循环"
 
 msgid ""
 "If enabled, the audio will begin playing at the beginning after playback "
 "ends by reaching the end of the audio."
-msgstr ""
+msgstr "如果启用，播放至音频末尾后会从开头开始播放。"
 
-#, fuzzy
 msgid "Loop Offset"
-msgstr "偏移量"
+msgstr "循环偏移"
 
 msgid ""
 "The loop offset determines where audio will start to loop after playback "
@@ -332,7 +325,7 @@ msgid ""
 msgstr ""
 
 msgid "BPM"
-msgstr ""
+msgstr "BPM"
 
 msgid ""
 "The Beats Per Minute of the audio track. This should match the BPM measure "
@@ -382,18 +375,19 @@ msgid ""
 msgstr ""
 
 msgid "Advanced import settings (Ogg Vorbis and MP3)"
-msgstr ""
+msgstr "高级导入设置（Ogg Vorbis 和 MP3）"
 
 msgid ""
 "If you double-click an Ogg Vorbis or MP3 file in the FileSystem dock (or "
 "choose **Advanced…** in the Import dock), you will see a dialog appear:"
 msgstr ""
+"双击文件系统面板中的 Ogg Vorbis 或 MP3 文件（或者在导入面板中选择\\ **高级..."
+"**\\ ），就会出现一个对话框："
 
-#, fuzzy
 msgid ""
 "Advanced dialog when double-clicking a Ogg Vorbis or MP3 file in the "
 "FileSystem dock"
-msgstr "或者，你也可以在\\ *文件系统*\\ 面板中双击 ``Main.gd`` 文件。"
+msgstr "双击文件系统面板中的 Ogg Vorbis 或 MP3 文件时的高级对话框"
 
 msgid ""
 "This dialog allows you to edit the audio's loop point with a real-time "
@@ -457,23 +451,27 @@ msgid ""
 msgstr ""
 
 msgid "Use real-time audio effects to reduce file size"
-msgstr ""
+msgstr "使用实时音频效果降低文件大小"
 
-#, fuzzy
 msgid ""
 "Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
 "effects. This saves SFX artists the need to add reverb to the sound effects, "
 "reducing their size greatly and ensuring correct trimming."
 msgstr ""
-"Godot 有一个带有内置效果的 :ref:`扩展总线系统 <doc_audio_buses>` 。这使 SFX "
-"艺术家无需在音效中添加混响，从而大大缩减了文件大小并能确保剪辑正确。对使用混"
-"响烘焙的 SFX 说不！"
+"Godot 有一个\\ :ref:`庞大的总线系统 <doc_audio_buses>`\\ ，提供了内置的效果。"
+"因此 SFX 艺术家无需在音效中添加混响，从而大大缩减了文件大小并且能确保剪辑正"
+"确。"
 
-#, fuzzy
 msgid ""
 "As you can see above, sound effects become much larger in file size with "
 "reverb added."
-msgstr "正如你在上面看到的，添加混响后音效会变得非常巨大。"
+msgstr "如上所示，音效在添加混响后文件大小会变得非常巨大。"
+
+msgid ""
+"Audio samples can be loaded and saved at runtime using :ref:`runtime file "
+"loading and saving <doc_runtime_file_loading_and_saving_audio_video_files>`, "
+"including from an exported project."
+msgstr ""
 
 msgid "Translation status"
 msgstr "翻译状态"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Debugging on macOS"
 msgstr "在 macOS 上執行"
 
-#, fuzzy
 msgid "Debugging Godot editor"
 msgstr "使用 gdb 為編輯器進行除錯"
 
@@ -32,16 +30,17 @@ msgid ""
 "an official build of the editor it should be re-signed with the proper "
 "entitlements."
 msgstr ""
+"將除錯器附加到具有簽章的 macOS 程序上需要“com.apple.security.get-task-"
+"allow”授權，預設未啟用，因為啟用時 App 無法進行公證。如果你想要除錯官方建構的"
+"編輯器，就需要使用正確的授權重新進行簽章。"
 
 msgid ""
 "Create an ``editor.entitlements`` text file with the following contents:"
-msgstr ""
+msgstr "建立包含如下內容的 ``editor.entitlements`` 文字檔："
 
-#, fuzzy
 msgid "Then use the following command to re-sign the editor::"
 msgstr "可以使用下列指令來移除產生的匯出樣板："
 
-#, fuzzy
 msgid "Debugging exported project"
 msgstr "對專案進行除錯"
 
@@ -50,6 +49,8 @@ msgid ""
 "get-task-allow``) entitlement during the export. When it is selected, "
 "notarization is not supported and should be disabled."
 msgstr ""
+"要允許除錯，請在匯出時選擇 ''codesign\\debugging''\\ （\\ ''com.apple."
+"security.get-task-allow''\\ ）授權。選中後不支持公證，所以應該將其停用。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

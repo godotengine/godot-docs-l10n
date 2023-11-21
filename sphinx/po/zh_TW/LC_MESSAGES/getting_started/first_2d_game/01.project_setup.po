@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,24 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Setting up the project"
-msgstr ""
+msgstr "設定專案"
 
 msgid "In this short first part, we'll set up and organize the project."
-msgstr ""
+msgstr "在這個簡短的第一部分中，我們將設定和組織專案。"
 
-#, fuzzy
 msgid "Launch Godot and create a new project."
-msgstr "建立新專案"
+msgstr "啟動 Godot 並創建一個新專案。"
 
 msgid ""
 "When creating the new project, you only need to choose a valid *Project "
 "Path*. You can leave the other default settings alone."
 msgstr ""
+"建立新專案時，你只需要選擇一個有效的 *專案路徑* 。你可以保留其他預設設定。"
 
 msgid "GDScript"
 msgstr "GDScript"
 
-#, fuzzy
 msgid ""
 "Download `dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/"
 "godot-docs-project-starters/releases/download/latest-4.x/"
@@ -48,39 +47,38 @@ msgstr ""
 "這些檔案解壓縮至專案資料夾中。"
 
 msgid "C#"
-msgstr "\\ C#"
+msgstr "C#"
 
 msgid ""
 "Ensure that you have the required dependencies to use C# in Godot. You need "
 "the latest stable .NET SDK, and an editor such as VS Code. See :ref:"
 "`doc_c_sharp_setup`."
 msgstr ""
+"確保你擁有在Godot中使用C#所需的依賴。你需要最新的穩定版的 .NET SDK 和一個編輯"
+"器，如VS Code。參見 :ref:`doc_c_sharp_setup` 。"
 
-#, fuzzy
 msgid "C++"
-msgstr "C++："
+msgstr "C++"
 
 msgid ""
 "The C++ part of this tutorial wasn't rewritten for the new GDExtension "
 "system yet."
-msgstr ""
+msgstr "本教學的 C++ 部分還沒有為新的 GDExtension 系統重寫。"
 
-#, fuzzy
 msgid "Your project folder should look like this."
-msgstr "現在場景看起來會這樣："
+msgstr "你的專案資料夾看起來會這樣。"
 
 #, fuzzy
 msgid ""
 "This game is designed for portrait mode, so we need to adjust the size of "
 "the game window. Click on *Project -> Project Settings* to open the project "
-"settings window and in the left column, open the *Display -> Window* tab. "
-"There, set \"Viewport Width\" to ``480`` and \"Viewport Height\" to ``720``."
+"settings window, in the left column open the *Display -> Window* tab. There, "
+"set \"Viewport Width\" to ``480`` and \"Viewport Height\" to ``720``."
 msgstr ""
 "這個遊戲的畫面設計成了垂直顯示，我們需要調整遊戲視窗的大小。點擊 [專案] -> "
 "[專案設定] -> [Display] (顯示) -> [Window] (視窗)，接著把 [Width] (寬度) 設"
 "為 ``480`` ，[Height] (高度) 設為 ``720`` 。"
 
-#, fuzzy
 msgid ""
 "Also, under the **Stretch** options, set **Mode** to ``canvas_items`` and "
 "**Aspect** to ``keep``. This ensures that the game scales consistently on "
@@ -97,8 +95,9 @@ msgid ""
 "In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
 "``HUD``, which we will combine into the game's ``Main`` scene."
 msgstr ""
+"在這個專案中，我們將製作 3 個獨立的場景： ``Player`` 、 ``Mob`` 以及 "
+"``HUD`` ，我們將把這些場景合併成遊戲的 ``Main`` 場景。"
 
-#, fuzzy
 msgid ""
 "In a larger project, it might be useful to create folders to hold the "
 "various scenes and their scripts, but for this relatively small game, you "
@@ -115,7 +114,7 @@ msgstr ""
 msgid ""
 "With the project in place, we're ready to design the player scene in the "
 "next lesson."
-msgstr ""
+msgstr "專案準備就緒後，我們已準備好在下一課中設計玩家場景。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Pull request review process"
-msgstr "拉取请求工作流程"
+msgstr "拉取请求审核流程"
 
 msgid ""
 "This page is intended to provide insight into the pull request (PR) review "
@@ -94,9 +93,8 @@ msgid ""
 "out doing this before they became maintainers."
 msgstr ""
 
-#, fuzzy
 msgid "Code review and testing"
-msgstr "获取玩家的位置。"
+msgstr "代码评审与测试"
 
 msgid ""
 "The following is a list of things that contributors and engine maintainers "
@@ -113,7 +111,7 @@ msgid ""
 msgstr ""
 
 msgid "1. Confirm that the problem exists"
-msgstr ""
+msgstr "1、确认存在问题"
 
 msgid ""
 "PRs need to solve problems and problems need to be documented. Make sure "
@@ -130,7 +128,7 @@ msgid ""
 msgstr ""
 
 msgid "2. Test the PR and look for regressions"
-msgstr ""
+msgstr "2、测试 PR 并查找 Regression"
 
 msgid ""
 "While strict code review and CI help to ensure that all pull requests work "
@@ -152,7 +150,7 @@ msgid ""
 msgstr ""
 
 msgid "3. Do a code review"
-msgstr ""
+msgstr "3、进行代码评审"
 
 msgid ""
 "Code reviews are usually done by people who are already experienced in a "
@@ -169,11 +167,11 @@ msgstr ""
 
 msgid ""
 "Here are some things to think about and look out for as you review the code:"
-msgstr ""
+msgstr "评审代码时，可以对这些内容进行检查："
 
 msgid ""
 "**Code only touches the areas announced in the PR (and the commit message).**"
-msgstr ""
+msgstr "**代码仅涉及 PR（和提交信息）中提及的领域。**"
 
 msgid ""
 "It can be tempting to fix random things in the code, as you see them. "
@@ -184,7 +182,7 @@ msgid ""
 msgstr ""
 
 msgid "**Code properly uses Godot's own APIs and patterns.**"
-msgstr ""
+msgstr "**代码正确使用了 Godot 自己的 API 和模式。**"
 
 msgid ""
 "Consistency is very important, and a solution that already exists in the "
@@ -192,7 +190,7 @@ msgid ""
 msgstr ""
 
 msgid "**Are core areas affected by the change?**"
-msgstr ""
+msgstr "**修改影响核心区域吗？**"
 
 msgid ""
 "Sometimes a PR that is supposed to solve a local problem can have a far-"
@@ -204,7 +202,7 @@ msgid ""
 msgstr ""
 
 msgid "4. Iterate with the contributor and improve the PR"
-msgstr ""
+msgstr "4、与贡献者迭代改进 PR"
 
 msgid ""
 "Maintainers should provide feedback and suggestions for improvement if they "
@@ -242,10 +240,10 @@ msgstr ""
 msgid ""
 "Here are some things to avoid as you iterate on a pull request with a "
 "contributor:"
-msgstr ""
+msgstr "与贡献者迭代拉取请求时，请避免以下情况："
 
 msgid "**Needless double reviews.**"
-msgstr ""
+msgstr "**不必要的多次评审。**"
 
 msgid ""
 "In other words, review the full PR at once and avoid coming back endless "
@@ -255,7 +253,7 @@ msgid ""
 msgstr ""
 
 msgid "**Being overly nitpicky.**"
-msgstr ""
+msgstr "**过于吹毛求疵。**"
 
 msgid ""
 "Code quality can be flexible depending on the area of the engine you are "
@@ -264,9 +262,8 @@ msgid ""
 "example."
 msgstr ""
 
-#, fuzzy
 msgid "**Expanding the scope of a pull request.**"
-msgstr "随机化源网格的比例."
+msgstr "**扩大拉取请求的范围。**"
 
 msgid ""
 "Providing context or related/similar issues or proposals that may be fixed "
@@ -285,9 +282,8 @@ msgid ""
 "assistance."
 msgstr ""
 
-#, fuzzy
 msgid "5. Approve the pull request"
-msgstr "测试拉取请求"
+msgstr "5、批准拉取请求"
 
 msgid ""
 "After reviewing the code, if you think that the code is ready to be merged "
@@ -301,9 +297,8 @@ msgid ""
 "shy."
 msgstr ""
 
-#, fuzzy
 msgid "Code style review"
-msgstr "代码风格规范"
+msgstr "代码风格评审"
 
 msgid ""
 "Generally speaking, we aim to conduct a code review before a style/clarity "
@@ -363,9 +358,8 @@ msgid ""
 "and try to build a sense of what exactly it can and cannot detect."
 msgstr ""
 
-#, fuzzy
 msgid "Merging pull requests"
-msgstr "测试拉取请求"
+msgstr "合并拉取请求"
 
 msgid ""
 "In general, pull requests should only be merged by members of the production "
@@ -396,7 +390,7 @@ msgid ""
 msgstr ""
 
 msgid "1. Get feedback from the right people/teams"
-msgstr ""
+msgstr "1、从正确的人/团队获取反馈"
 
 msgid ""
 "Production team members should ensure that the right people look at a pull "
@@ -437,7 +431,7 @@ msgid ""
 msgstr ""
 
 msgid "2. Get feedback from the community"
-msgstr ""
+msgstr "2、从社区获取反馈"
 
 msgid ""
 "If a pull request is having trouble attracting reviewers, you may need to "
@@ -458,10 +452,10 @@ msgid ""
 msgstr ""
 
 msgid "3. Git checklist"
-msgstr ""
+msgstr "3、Git 注意事项"
 
 msgid "**Make sure that the PR comes in one commit.**"
-msgstr ""
+msgstr "**确保 PR 中只有一个提交。**"
 
 msgid ""
 "When each commit is self-contained and could be used to build a clean and "
@@ -473,7 +467,7 @@ msgstr ""
 msgid ""
 "**Fixes made during the review process must be squashed into the main commit."
 "**"
-msgstr ""
+msgstr "**评审过程中作出的修改必须 Squash 到主提交中。**"
 
 msgid ""
 "For multi-commit PRs check that those fixes are amended in the relevant "
@@ -481,7 +475,7 @@ msgid ""
 msgstr ""
 
 msgid "**Make sure that the PR has no merge conflicts.**"
-msgstr ""
+msgstr "**确保 PR 没有合并冲突。**"
 
 msgid ""
 "Contributors may need to rebase their changes on top of the relevant branch "
@@ -492,7 +486,7 @@ msgid ""
 msgstr ""
 
 msgid "**Check for proper commit attribution.**"
-msgstr ""
+msgstr "**检查正确的提交归属。**"
 
 msgid ""
 "If a contributor uses an author signature that is not listed in their GitHub "
@@ -510,7 +504,7 @@ msgid ""
 msgstr ""
 
 msgid "**Check for proper commit messages.**"
-msgstr ""
+msgstr "**检查正确的提交消息。**"
 
 msgid ""
 "While we don't have a very strict ruleset for commit messages, we still "
@@ -524,10 +518,10 @@ msgid ""
 msgstr ""
 
 msgid "4. GitHub checklist"
-msgstr ""
+msgstr "4、GitHub 注意事项"
 
 msgid "**Validate the target branch of the PR.**"
-msgstr ""
+msgstr "**确认 PR 的目标分支。**"
 
 msgid ""
 "Most Godot development happens around in the ``master`` branch. Therefore "
@@ -552,7 +546,7 @@ msgid ""
 msgstr ""
 
 msgid "**Make sure that the appropriate milestone is assigned.**"
-msgstr ""
+msgstr "**确保分配了合适的里程碑。**"
 
 msgid ""
 "This will make it more obvious which version would include the submitted "
@@ -572,7 +566,7 @@ msgstr ""
 msgid ""
 "**Make sure that the opening message of the PR contains the magic words "
 "\"Closes #...\" or \"Fixes #...\".**"
-msgstr ""
+msgstr "**确保 PR 消息的开头包含“Closes #...”或“Fixes #...”咒语。**"
 
 msgid ""
 "These link the PR and the referenced issue together and allow GitHub to auto-"
@@ -586,7 +580,7 @@ msgstr ""
 msgid ""
 "**For the issues that get closed by the PR add the closest relevant "
 "milestone.**"
-msgstr ""
+msgstr "**为 PR 所关闭的 Issue 添加最近的相关里程碑。**"
 
 msgid ""
 "In other words, if the PR is targeting the ``master`` branch, but is then "
@@ -594,9 +588,8 @@ msgid ""
 "appropriate milestone for the closed issue."
 msgstr ""
 
-#, fuzzy
 msgid "5. Merge the pull request"
-msgstr "修改拉取请求"
+msgstr "5、合并拉取请求"
 
 msgid ""
 "If it is appropriate for you to be merging a pull request (i.e. you are on "

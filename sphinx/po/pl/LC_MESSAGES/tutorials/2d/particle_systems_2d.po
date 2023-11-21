@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -110,13 +110,77 @@ msgid "Texture"
 msgstr "Tekstura"
 
 msgid ""
-"A particle system uses a single texture (in the future this might be "
-"extended to animated textures via spritesheet). The texture is set via the "
-"relevant texture property:"
+"A particle system can use a single texture or an animation *flipbook*. A "
+"flipbook is a texture that contains several frames of animation that can be "
+"played back, or chosen at random during emission. This is equivalent to a "
+"spritesheet for particles."
 msgstr ""
-"System cząsteczek wykorzystuje jedną teksturę (w przyszłości może ona zostać "
-"rozszerzona na tekstury animowane za pomocą arkusza spritesheet). Ustawienie "
-"tekstury następuje poprzez odpowiednią właściwość tekstury:"
+
+msgid "The texture is set via the **Texture** property:"
+msgstr ""
+
+#, fuzzy
+msgid "Using an animation flipbook"
+msgstr "Drzewo animacji"
+
+msgid ""
+"Particle flipbooks are suited to reproduce complex effects such as smoke, "
+"fire, explosions. They can also be used to introduce random texture "
+"variation, by making every particle use a different texture. You can find "
+"existing particle flipbook images online, or pre-render them using external "
+"tools such as `Blender <https://www.blender.org/>`__ or `EmberGen <https://"
+"jangafx.com/software/embergen/>`__."
+msgstr ""
+
+msgid "Example of a particle system that uses a flipbook texture"
+msgstr ""
+
+msgid ""
+"Using an animation flipbook requires additional configuration compared to a "
+"single texture. For demonstration purposes, we'll use this texture with 5 "
+"columns and 7 rows (right-click and choose **Save as…**):"
+msgstr ""
+
+#, fuzzy
+msgid "Particle flipbook texture example"
+msgstr "Inny przykład:"
+
+msgid ""
+"Credit: `JoesAlotofthings <https://opengameart.org/content/alot-of-particles-"
+"indispersal-special-effect-alotofparticles30>`__ (CC BY 4.0)"
+msgstr ""
+
+msgid ""
+"To use an animation flipbook, you must create a new CanvasItemMaterial in "
+"the Material section of the GPUParticles2D (or CPUParticles2D) node:"
+msgstr ""
+
+msgid ""
+"Creating a CanvasItemMaterial at the bottom of the particles node inspector"
+msgstr ""
+
+msgid ""
+"In this CanvasItemMaterial, enable **Particle Animation** and set **H "
+"Frames** and **V Frames** to the number of columns and rows present in your "
+"flipbook texture:"
+msgstr ""
+
+msgid "Configuring the CanvasItemMaterial for the example flipbook texture"
+msgstr ""
+
+msgid ""
+"Once this is done, the :ref:`Animation section "
+"<doc_particle_systems_2d_animation>` in ParticleProcessMaterial (for "
+"GPUParticles2D) or in the CPUParticles2D inspector will be effective."
+msgstr ""
+
+msgid ""
+"If your flipbook texture has a black background instead of a transparent "
+"background, you will also need to set the blend mode to **Add** instead of "
+"**Mix** for correct display. Alternatively, you can modify the texture to "
+"have a transparent background in an image editor. In `GIMP <https://gimp."
+"org>`__, this can be done using the **Color > Color to Alpha** menu."
+msgstr ""
 
 #, fuzzy
 msgid "Time parameters"
@@ -434,7 +498,8 @@ msgstr "Kolor"
 msgid "Used to change the color of the particles being emitted."
 msgstr "Służy do zmiany koloru emitowanych cząstek."
 
-msgid "Hue variation"
+#, fuzzy
+msgid "Hue Variation"
 msgstr "Zróżnicowanie odcieni barw"
 
 #, fuzzy
@@ -445,6 +510,66 @@ msgid ""
 msgstr ""
 "Wartość zmiany określa początkową zmianę barwy zastosowaną do każdej "
 "cząsteczki. Wartość Variation rand kontroluje losowość zmienności barwy."
+
+msgid "Animation"
+msgstr "Animacja"
+
+msgid ""
+"Particle flipbook animation is only effective if the CanvasItemMaterial used "
+"on the GPUParticles2D or CPUParticles2D node has been :ref:`configured "
+"accordingly <doc_particle_systems_2d_using_flipbook>`."
+msgstr ""
+
+msgid ""
+"To set up the particle flipbook for linear playback, set the **Speed Min** "
+"and **Speed Max** values to 1:"
+msgstr ""
+
+msgid ""
+"Setting up particle animation for playback during the particle's lifetime"
+msgstr ""
+
+msgid ""
+"By default, looping is disabled. If the particle is done playing before its "
+"lifetime ends, the particle will keep using the flipbook's last frame (which "
+"may be fully transparent depending on how the flipbook texture is designed). "
+"If looping is enabled, the animation will loop back to the first frame and "
+"resume playing."
+msgstr ""
+
+msgid ""
+"Depending on how many images your sprite sheet contains and for how long "
+"your particle is alive, the animation might not look smooth. The "
+"relationship between particle lifetime, animation speed, and number of "
+"images in the sprite sheet is this:"
+msgstr ""
+
+msgid ""
+"At an animation speed of ``1.0``, the animation will reach the last image in "
+"the sequence just as the particle's lifetime ends."
+msgstr ""
+
+msgid ""
+"Animation\\ FPS = \\frac{Number\\ of\\ images}{Lifetime}\n"
+"\n"
+msgstr ""
+
+msgid ""
+"If you wish the particle flipbook to be used as a source of random particle "
+"textures for every particle, keep the speed values at 0 and set **Offset "
+"Max** to 1 instead:"
+msgstr ""
+
+msgid "Setting up particle animation for random offset on emission"
+msgstr ""
+
+msgid ""
+"Note that the GPUParticles2D node's **Fixed FPS** also affects animation "
+"playback. For smooth animation playback, it's recommended to set it to 0 so "
+"that the particle is simulated on every rendered frame. If this is not an "
+"option for your use case, set **Fixed FPS** to be equal to the effective "
+"framerate used by the flipbook animation (see above for the formula)."
+msgstr ""
 
 #, fuzzy
 msgid "Emission Shapes"

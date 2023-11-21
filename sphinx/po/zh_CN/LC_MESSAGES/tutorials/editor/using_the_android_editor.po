@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using the Android editor"
-msgstr "使用 Web 编辑器"
+msgstr "使用 Android 编辑器"
 
 msgid ""
 "In 2023, `we added <https://godotengine.org/article/"
@@ -27,37 +26,40 @@ msgid ""
 "editor <https://godotengine.org/download/android/>`__ that can be used to "
 "work on new or existing projects on Android devices."
 msgstr ""
+"2023 年，\\ `我们添加了 <https://godotengine.org/article/"
+"android_godot_editor_play_store_beta_release/>`__ `Android 端的编辑器 "
+"<https://godotengine.org/download/android/>`__\\ ，可用于在 Android 设备上处"
+"理新项目或现有项目。"
 
-#, fuzzy
 msgid ""
 "The Android editor is in beta testing stage, while we continue to refine the "
 "experience, and bring it up to parity with the Desktop version of the "
 "editor. See :ref:`doc_using_the_android_editor_limitations` below."
 msgstr ""
-"Web 编辑器处于初级阶段。虽然其功能集可能足以满足教学目的，但目前\\ **不建议用"
-"于生产工作**\\ 。见下文 :ref:`doc_using_the_web_editor_limitations`。"
+"Android 编辑器处于初级阶段。虽然其功能集可能足以满足教学目的，但目前\\ **不建"
+"议用于生产工作**\\ 。见下文 :ref:`doc_using_the_web_editor_limitations`。"
 
 msgid "Android devices support"
-msgstr ""
+msgstr "Android 设备支持"
 
 msgid ""
 "The Android editor requires devices running Android 5 Lollipop or higher, "
 "with at least OpenGL 3 support. This includes (not exhaustive):"
 msgstr ""
+"Android 编辑器需要运行在 Android 5 Lollipop 或更高版本的设备上，并且至少支持 "
+"OpenGL 3。 这些设备包括（并非详尽无遗）："
 
 msgid "Android tablets, foldables and large phones"
-msgstr ""
+msgstr "Android 平板、折叠机、大屏手机"
 
 msgid "Android-powered netbooks"
-msgstr ""
+msgstr "Android 上网本"
 
-#, fuzzy
 msgid "Chromebooks supporting Android apps"
-msgstr "创建 Android 插件"
+msgstr "支持 Android 应用的 Chromebook"
 
-#, fuzzy
 msgid "Required Permissions"
-msgstr "需求"
+msgstr "权限需求"
 
 msgid ""
 "The Android editor requires the `All files access permission <https://"
@@ -67,30 +69,28 @@ msgid ""
 "the editor is still functional, but has limited access to the device's files "
 "and directories."
 msgstr ""
+"Android 编辑器需要 `所有文件访问权限 <https://developer.android.com/training/"
+"data-storage/manage-all-files#all-files-access>`__\\ 。该权限允许编辑器从设备"
+"上的任何文件位置创建、导入和读取项目文件。没有该权限，编辑器仍可运行，但对设"
+"备文件和目录的访问受限。"
 
-#, fuzzy
 msgid "Limitations & known issues"
-msgstr "Xbox One 的限制"
+msgstr "局限性与已知问题"
 
 msgid "Here are the known limitations and issues of the Android editor:"
-msgstr ""
+msgstr "以下是 Android 编辑器的已知局限性和问题："
 
-#, fuzzy
 msgid "No C#/Mono support"
-msgstr "不支持 C#/Mono。"
+msgstr "不支持 C#/Mono"
 
-#, fuzzy
-msgid "No GDExtension support"
-msgstr "不支持 GDNative。"
-
-#, fuzzy
 msgid "No support for external script editors"
-msgstr "不支持外部脚本编辑器。"
+msgstr "不支持外部脚本编辑器"
 
 msgid ""
 "While available, the *Vulkan Forward+* renderer is not recommended due to "
 "severe performance issues"
 msgstr ""
+"*Vulkan Forward+* 渲染器虽然可用，但是由于存在严重的性能问题，所以不推荐使用"
 
 msgid ""
 "No support for building and exporting an Android APK binary. As a "
@@ -98,17 +98,20 @@ msgid ""
 "docs.godotengine.org/en/stable/tutorials/export/exporting_projects.html#pck-"
 "versus-zip-pack-file-formats>`__"
 msgstr ""
+"不支持构建和导出二进制 Android APK。作为一种变通的方法，你可以生成并导出 "
+"`Godot PCK 或 ZIP 文件 <https://docs.godotengine.org/en/stable/tutorials/"
+"export/exporting_projects.html#pck-versus-zip-pack-file-formats>`__"
 
 msgid "No support for building and exporting binaries for other platforms"
-msgstr ""
+msgstr "不支持其他平台的二进制构建与导出"
 
 msgid ""
 "Performance and stability issues when using the *Vulkan Mobile* renderer for "
 "a project"
-msgstr ""
+msgstr "使用 *Vulkan Mobile* 作为渲染器时的性能与稳定性问题"
 
 msgid "UX not optimized for Android phones form-factor"
-msgstr ""
+msgstr "UX 未针对 Android 手机的尺寸进行优化"
 
 msgid ""
 "`Android Go devices <https://developer.android.com/guide/topics/"
@@ -117,23 +120,25 @@ msgid ""
 "recommended to create new projects only in the Android *Documents* or "
 "*Downloads* directories."
 msgstr ""
+"`Android Go 设备 <https://developer.android.com/guide/topics/androidgo>`__ 缺"
+"少设备读和写访问所需的 *全部文件访问* 权限。作为一种变通方法，在使用 Android "
+"Go 设备时，建议只在 Android *Documents* 或 *Downloads* 目录中创建新项目。"
 
 msgid ""
 "The editor doesn't properly resume when *Don't keep activities* is enabled "
 "in the *Developer Options*"
-msgstr ""
+msgstr "在 *开发者选项* 中启用 *不保留活动* 后，编辑器将无法正常恢复"
 
-#, fuzzy
 msgid ""
 "See the `list of open issues on GitHub related to the Android editor "
 "<https://github.com/godotengine/godot/issues?"
 "q=is%3Aopen+is%3Aissue+label%3Aplatform%3Aandroid+label%3Atopic%3Aeditor>`__ "
 "for a list of known bugs."
 msgstr ""
-"参见 GitHub 上与 Web 编辑器相关的\\ `公开问题列表 <https://github.com/"
+"请参阅\\ `GitHub 上与 Android 编辑器有关的问题列表 <https://github.com/"
 "godotengine/godot/issues?"
 "q=is%3Aopen+is%3Aissue+label%3Aplatform%3Ahtml5+label%3Atopic%3Aeditor>`__\\ "
-"了解已知的 Bug 列表。"
+"来了解已知 Bug 列表。"
 
 msgid "Translation status"
 msgstr "翻译状态"

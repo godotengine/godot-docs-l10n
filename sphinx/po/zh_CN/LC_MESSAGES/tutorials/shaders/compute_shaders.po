@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using compute shaders"
-msgstr "使用多线程"
+msgstr "使用计算着色器"
 
 msgid ""
 "This tutorial will walk you through the process of creating a minimal "
@@ -67,9 +66,8 @@ msgid ""
 "driver bugs), even if they are technically supported."
 msgstr ""
 
-#, fuzzy
 msgid "Let's take a look at this compute shader code:"
-msgstr "我们把它调成蓝色."
+msgstr "我们把它调成蓝色："
 
 msgid ""
 "This code takes an array of floats, multiplies each element by 2 and store "
@@ -142,9 +140,8 @@ msgid ""
 "glsl`` file."
 msgstr ""
 
-#, fuzzy
 msgid "Create a local RenderingDevice"
-msgstr "Portal 渲染"
+msgstr "创建局部 RenderingDevice"
 
 msgid ""
 "To interact with and execute a compute shader, we need a script. Create a "
@@ -163,7 +160,7 @@ msgid ""
 msgstr ""
 
 msgid "Provide input data"
-msgstr ""
+msgstr "提供输入数据"
 
 msgid ""
 "As you might remember, we want to pass an input array to our shader, "
@@ -187,7 +184,7 @@ msgid ""
 msgstr ""
 
 msgid "Defining a compute pipeline"
-msgstr ""
+msgstr "定义计算管线"
 
 msgid ""
 "The next step is to create a set of instructions our GPU can execute. We "
@@ -227,7 +224,7 @@ msgid ""
 msgstr ""
 
 msgid "Execute a compute shader"
-msgstr ""
+msgstr "执行计算着色器"
 
 msgid ""
 "After all of this we are almost done, but we still need to execute our "
@@ -265,9 +262,8 @@ msgid ""
 "compared to a faster GPU."
 msgstr ""
 
-#, fuzzy
 msgid "Retrieving results"
-msgstr "测试结果"
+msgstr "获取结果"
 
 msgid ""
 "You may have noticed that, in the example shader, we modified the contents "

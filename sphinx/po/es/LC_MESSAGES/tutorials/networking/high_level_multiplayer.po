@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -394,9 +394,8 @@ msgstr ""
 msgid "To check whether the peer is server or client:"
 msgstr "Comprobando si el árbol se inicializó como servidor o cliente:"
 
-#, fuzzy
 msgid "Remote procedure calls"
-msgstr "Crea texturas de procedimiento."
+msgstr "Llamadas a procedimientos remotos"
 
 msgid ""
 "Remote procedure calls, or RPCs, are functions that can be called on other "
@@ -416,6 +415,20 @@ msgid ""
 msgstr ""
 
 msgid ""
+"If a function is annotated with ``@rpc`` on the client script (resp. server "
+"script), then this function must also be declared on the server script "
+"(resp. client script), and both must have the same signature, **even if this "
+"function is not currently used**."
+msgstr ""
+
+msgid ""
+"If these conditions are not fulfilled, the script may print an error or "
+"cause unwanted behavior. See further explanation and troubleshooting on "
+"`this post <https://github.com/godotengine/godot/"
+"issues/57869#issuecomment-1034215138>`__."
+msgstr ""
+
+msgid ""
 "The annotation can take a number of arguments, which have default values. "
 "``@rpc`` is equivalent to:"
 msgstr ""
@@ -426,7 +439,7 @@ msgstr "Algunos casos de uso comunes son:"
 
 #, fuzzy
 msgid "``mode``:"
-msgstr "``node``"
+msgstr "``mode``:"
 
 msgid ""
 "``\"authority\"``: Only the multiplayer authority (the server) can call "
@@ -440,7 +453,7 @@ msgstr ""
 
 #, fuzzy
 msgid "``sync``:"
-msgstr "``remotesync``"
+msgstr "``sync``:"
 
 #, fuzzy
 msgid "``\"call_remote\"``: The function will not be called on the local peer."
@@ -455,7 +468,7 @@ msgstr ""
 
 #, fuzzy
 msgid "``transfer_mode``:"
-msgstr "``transform``"
+msgstr "``transfer_mode``:"
 
 msgid ""
 "``\"unreliable\"`` Packets are not acknowledged, can be lost, and can arrive "
@@ -515,7 +528,7 @@ msgstr ""
 
 msgid ""
 "The default channel with index 0 is actually three different channels - one "
-"for each tansfer mode."
+"for each transfer mode."
 msgstr ""
 
 #, fuzzy

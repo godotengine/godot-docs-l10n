@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using decals"
-msgstr "BBCode verwenden"
+msgstr "Verwenden von Decals"
 
 msgid ""
 "Decals are only supported in the Clustered Forward and Forward Mobile "
@@ -58,13 +57,12 @@ msgstr ""
 msgid "How to balance decal configuration between performance and quality."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The Godot demo projects repository contains a `3D decals demo <https://"
 "github.com/godotengine/godot-demo-projects/tree/4.0-dev/3d/decals>`__."
 msgstr ""
-"Ein Beispielprojekt finden Sie in der OS-Testdemo: https://github.com/"
-"godotengine/godot-demo-projects/tree/master/misc/os_test"
+"Das Godot-Demoprojekt-Repository enthält eine \"3D-Decals\"-Demo <https://"
+"github.com/godotengine/godot-demo-projects/tree/4.0-dev/3d/decals>`__."
 
 msgid ""
 "If you're looking to write arbitrary 3D text on top of a surface, use :ref:"
@@ -142,7 +140,7 @@ msgid "Blob shadow under object comparison"
 msgstr ""
 
 msgid "Quick start guide"
-msgstr ""
+msgstr "Schnellstart-Anleitung"
 
 #, fuzzy
 msgid "Creating decals in the editor"
@@ -178,9 +176,8 @@ msgid ""
 "disable layer 2 in the decal's **Cull Mask** property."
 msgstr ""
 
-#, fuzzy
 msgid "Decal node properties"
-msgstr "Node-Eigenschaften"
+msgstr "Decal-Node-Eigenschaften"
 
 msgid ""
 "**Extents:** The size of the decal. The Y axis determines the length of the "
@@ -288,9 +285,8 @@ msgid ""
 "transition, which is more suited when the camera moves fast."
 msgstr ""
 
-#, fuzzy
 msgid "Cull Mask"
-msgstr "Kollisionsmaske"
+msgstr "Cull-Maske"
 
 msgid ""
 "**Cull Mask:** Specifies which VisualInstance3D layers this decal will "
@@ -300,9 +296,8 @@ msgid ""
 "receive a Decal intended for the terrain under them."
 msgstr ""
 
-#, fuzzy
 msgid "Tweaking performance and quality"
-msgstr "Leistung messen"
+msgstr "Optimierung von Leistung und Qualität"
 
 msgid ""
 "Decal rendering performance is mostly determined by their screen coverage, "
@@ -349,6 +344,17 @@ msgid ""
 "decals cannot use custom shaders. However, custom shaders on the projected "
 "surfaces are able to read the information that is overridden by decals on "
 "top of them, such as roughness and metallic."
+msgstr ""
+
+msgid ""
+"When using the Forward+ renderer, Godot uses a *clustering* approach for "
+"decal rendering. As many decals as desired can be added (as long as "
+"performance allows). However, there's still a default limit of 512 "
+"*clustered elements* that can be present in the current camera view. A "
+"clustered element is an omni light, a spot light, a :ref:`decal "
+"<doc_using_decals>` or a :ref:`reflection probe <doc_reflection_probes>`. "
+"This limit can be increased by adjusting the **Rendering > Limits > Cluster "
+"Builder > Max Clustered Elements** advanced project setting."
 msgstr ""
 
 msgid ""

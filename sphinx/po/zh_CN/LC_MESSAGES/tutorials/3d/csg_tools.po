@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,10 @@ msgstr ""
 msgid "Prototyping levels with CSG"
 msgstr "使用 CSG 设计关卡原型"
 
+#, fuzzy
 msgid ""
 "CSG stands for **Constructive Solid Geometry**, and is a tool to combine "
-"basic shapes or custom meshes to create more complex shapes. In 3D modelling "
+"basic shapes or custom meshes to create more complex shapes. In 3D modeling "
 "software, CSG is mostly known as \"Boolean Operators\"."
 msgstr ""
 "CSG 是 **Constructive Solid Geometry**\\ （构造实体几何）的缩写，是一种将基本"
@@ -75,33 +76,27 @@ msgid ""
 "are the CSG nodes:"
 msgstr "与 Godot 的其他功能一样，CSG 以节点的形式存在。这些是 CSG 节点："
 
-#, fuzzy
 msgid ":ref:`CSGBox3D <class_CSGBox3D>`"
-msgstr ":ref:`CSGBox <class_CSGBox>`"
+msgstr ":ref:`CSGBox3D <class_CSGBox3D>`"
 
 #, fuzzy
 msgid ":ref:`CSGCylinder3D <class_CSGCylinder3D>` (also supports cone)"
 msgstr ":ref:`CSGCylinder <class_CSGCylinder>` (也支持锥体)"
 
-#, fuzzy
 msgid ":ref:`CSGSphere3D <class_CSGSphere3D>`"
-msgstr ":ref:`CSGSphere <class_CSGSphere>`"
+msgstr ":ref:`CSGSphere3D <class_CSGSphere3D>`"
 
-#, fuzzy
 msgid ":ref:`CSGTorus3D <class_CSGTorus3D>`"
-msgstr ":ref:`CSGTorus <class_CSGTorus>`"
+msgstr ":ref:`CSGTorus3D <class_CSGTorus3D>`"
 
-#, fuzzy
 msgid ":ref:`CSGPolygon3D <class_CSGPolygon3D>`"
-msgstr ":ref:`CSGPolygon <class_CSGPolygon>`"
+msgstr ":ref:`CSGPolygon3D <class_CSGPolygon3D>`"
 
-#, fuzzy
 msgid ":ref:`CSGMesh3D <class_CSGMesh3D>`"
-msgstr ":ref:`CSGMesh <class_CSGMesh>`"
+msgstr ":ref:`CSGMesh3D <class_CSGMesh3D>`"
 
-#, fuzzy
 msgid ":ref:`CSGCombiner3D <class_CSGCombiner3D>`"
-msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+msgstr ":ref:`CSGCombiner3D <class_CSGCombiner3D>`"
 
 msgid "CSG tools features"
 msgstr "CSG 工具功能"
@@ -162,7 +157,7 @@ msgstr "自定义网格"
 #, fuzzy
 msgid ""
 "Any mesh can be used for :ref:`CSGMesh3D <class_CSGMesh3D>`; the mesh can be "
-"modelled in other software and imported into Godot. Multiple materials are "
+"modeled in other software and imported into Godot. Multiple materials are "
 "supported. There are some restrictions for geometry:"
 msgstr ""
 "任何网格都可以用于 :ref:`CSGMesh <class_CSGMesh>`, 网格可以在其他软件中建模并"
@@ -180,9 +175,8 @@ msgstr "它不能包含内部面,"
 msgid "every edge must connect to only two other faces."
 msgstr "每条边都必须连接到另外两个面."
 
-#, fuzzy
 msgid "CSGCombiner3D"
-msgstr "CSGCombiner"
+msgstr "CSGCombiner3D"
 
 #, fuzzy
 msgid ""
@@ -349,7 +343,7 @@ msgstr ""
 msgid ""
 "Undo the re-parent after observing the effect. The bed you've built should "
 "look like this:"
-msgstr "观察效果后, 撤消重新选择父节点. 您搭建的床应如下所示:"
+msgstr "观察效果后, 撤消重新选择父节点. 你搭建的床应如下所示:"
 
 #, fuzzy
 msgid "Create a CSGCombiner3D and name it ``lamp``."
@@ -405,7 +399,7 @@ msgstr "你几乎已经建立了一个架子. 再创建一个CSGBox, 把架子�
 msgid ""
 "Position your furniture in your room as you like and your scene should look "
 "this:"
-msgstr "根据您的喜好将您的家具放在房间里, 您的场景应该是这样的:"
+msgstr "根据你的喜好将你的家具放在房间里, 你的场景应该是这样的:"
 
 msgid ""
 "You've successfully prototyped a room level with the CSG tools in Godot. CSG "
@@ -493,13 +487,12 @@ msgstr ""
 "(属性)检查器中点击材质属性旁边的下拉箭头, 然后选择 **复制** . 要粘贴它, 请选"
 "择您要应用该材质的节点, 单击其材质属性旁边的下拉箭头, 然后选择 **粘贴** ."
 
-#, fuzzy
 msgid "Exporting as glTF"
-msgstr "导出数组"
+msgstr "导出为 glTF"
 
 msgid ""
 "It can be useful to block out a level using CSG, then export it as a 3d "
-"model, to import into 3D modelling software. You can do this by selecting "
+"model, to import into 3D modeling software. You can do this by selecting "
 "**Scene > Export As... > glTF 2.0 Scene**."
 msgstr ""
 

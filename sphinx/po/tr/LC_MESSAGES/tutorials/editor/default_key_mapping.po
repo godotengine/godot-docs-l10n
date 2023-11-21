@@ -1,0 +1,1950 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "cheatsheet, cheat sheet, shortcut"
+msgstr "hilekodları, hile kodları, kısa yollar"
+
+msgid "Default editor shortcuts"
+msgstr "Varsayılan düzenleyici kısayolları"
+
+msgid ""
+"Many of Godot Editor functions can be executed with keyboard shortcuts. This "
+"page lists functions which have associated shortcuts by default, but many "
+"others are available for customization in editor settings as well. To change "
+"keys associated with these and other actions navigate to ``Editor -> Editor "
+"Settings -> Shortcuts``."
+msgstr ""
+"Godot Düzenleyici fonksiyonlarının pek çoğu, klavye kısa yolları ile "
+"çalıştırılabilir. Bu sayfa, varsayılan olarak kısayol atanmış fonksiyonları "
+"listeler, ama bunlardan çok daha fazlasını da düzenleyicinin ayarlarından "
+"kişiselleştirmek mümkündür. Hem burada verilen atanmış tuşları hem de "
+"diğerlerini değiştirmek için ``Düzenleyici-> Düzenleyici Ayarları -> "
+"Kısayollar`` kısmına gidin. (Num: Sayısal Tuş Takımı, Shift: Üst Karakter "
+"Tuşu, Tab: Sekme Tuşu, Del: Silme Tuşu, BkSp: Geri Silme Tuşu, Ins: Insert/"
+"Araya Ekleme Tuşu, PgDown/PgUp: Sayfa Aşağı/Yukarı Tuşları."
+
+msgid ""
+"While some actions are universal, a lot of shortcuts are specific to "
+"individual tools. For this reason it is possible for some key combinations "
+"to be assigned to more than one function. The correct action will be "
+"performed depending on the context."
+msgstr ""
+"Bazı eylemler evrenselleşmiş olsa da, kısayolların pek çok belirli araçlara "
+"özeldir. Bu nedenle, aynı tuş kombinasyonunun birden fazla fonksiyona "
+"atanması mümkündür. O anki bağlam ve şartlara bağlı olarak doğru eylem "
+"seçilip uygulanacaktır."
+
+msgid ""
+"While Windows and Linux builds of the editor share most of the default "
+"settings, some shortcuts may differ for macOS version. This is done for "
+"better integration of the editor into macOS ecosystem. Users fluent with "
+"standard shortcuts on that OS should find Godot Editor's default key mapping "
+"intuitive."
+msgstr ""
+"Düzenleyicinin Windows ve Linux derlemeleri, varsayılan ayarların "
+"çoğunluğunu paylaşırlar, ancak bazı kısayollar macOS için farklı olabilir. "
+"Düzenleyicinin macOS ekosistemi ile daha iyi bütünleşebilmesi için bu "
+"gereklidir. Bir işletim sisteminin standart kısayollarını akıcı kullanabilen "
+"kullanıcılar, Godot Düzenleyicinin varsayılan tuş haritalamasını oldukça "
+"sezgisel bulacaktır."
+
+msgid "General Editor Actions"
+msgstr "Genel Düzenleyici Eylemleri"
+
+msgid "Action name"
+msgstr "Eylem ismi"
+
+msgid "Windows, Linux"
+msgstr "Windows, Linux"
+
+msgid "macOS"
+msgstr "macOS"
+
+msgid "Editor setting"
+msgstr "Düzenleyici ayarı"
+
+msgid "Open 2D Editor"
+msgstr "2B Düzenleyiciyi Aç"
+
+msgid ":kbd:`Ctrl + F1`"
+msgstr ":kbd:`Ctrl + F1`"
+
+msgid ":kbd:`Alt + 1`"
+msgstr ":kbd:`Alt + 1`"
+
+msgid "``editor/editor_2d``"
+msgstr "``editor/editor_2d``"
+
+msgid "Open 3D Editor"
+msgstr "3B Düzenleyiciyi Aç"
+
+msgid ":kbd:`Ctrl + F2`"
+msgstr ":kbd:`Ctrl + F2`"
+
+msgid ":kbd:`Alt + 2`"
+msgstr ":kbd:`Alt + 2`"
+
+msgid "``editor/editor_3d``"
+msgstr "``editor/editor_3d``"
+
+msgid "Open Script Editor"
+msgstr "Betik Düzenleyiciyi Aç"
+
+msgid ":kbd:`Ctrl + F3`"
+msgstr ":kbd:`Ctrl + F3`"
+
+msgid ":kbd:`Alt + 3`"
+msgstr ":kbd:`Alt + 3`"
+
+msgid "``editor/editor_script``"
+msgstr "``editor/editor_script``"
+
+msgid "Search Help"
+msgstr "Yardımda Ara"
+
+msgid ":kbd:`F1`"
+msgstr ":kbd:`F1`"
+
+msgid ":kbd:`Alt + Space`"
+msgstr ":kbd:`Alt + Boşluk`"
+
+msgid "``editor/editor_help``"
+msgstr "``editor/editor_help``"
+
+msgid "Distraction Free Mode"
+msgstr "Dikkat Dağıtmayan Kip"
+
+msgid ":kbd:`Ctrl + Shift + F11`"
+msgstr ":kbd:`Ctrl + Shift + F11`"
+
+msgid ":kbd:`Cmd + Ctrl + D`"
+msgstr ":kbd:`Cmd + Ctrl + D`"
+
+msgid "``editor/distraction_free_mode``"
+msgstr "``editor/distraction_free_mode``"
+
+msgid "Next tab"
+msgstr "Sonraki sekme"
+
+msgid ":kbd:`Ctrl + Tab`"
+msgstr ":kbd:`Ctrl + Tab`"
+
+msgid ":kbd:`Cmd + Tab`"
+msgstr ":kbd:`Cmd + Tab`"
+
+msgid "``editor/next_tab``"
+msgstr "``editor/next_tab``"
+
+msgid "Previous tab"
+msgstr "Önceki sekme"
+
+msgid ":kbd:`Ctrl + Shift + Tab`"
+msgstr ":kbd:`Ctrl + Shift + Tab`"
+
+msgid ":kbd:`Cmd + Shift + Tab`"
+msgstr ":kbd:`Cmd + Shift + Tab`"
+
+msgid "``editor/prev_tab``"
+msgstr "``editor/prev_tab``"
+
+msgid "Filter Files"
+msgstr "Dosyaları Filtrele"
+
+msgid ":kbd:`Ctrl + Alt + P`"
+msgstr ":kbd:`Ctrl + Alt + P`"
+
+msgid ":kbd:`Cmd + Alt + P`"
+msgstr ":kbd:`Cmd + Alt + P`"
+
+msgid "``editor/filter_files``"
+msgstr "``editor/filter_files``"
+
+msgid "Open Scene"
+msgstr "Sahneyi Aç"
+
+msgid ":kbd:`Ctrl + O`"
+msgstr ":kbd:`Ctrl + O`"
+
+msgid ":kbd:`Cmd + O`"
+msgstr ":kbd:`Cmd + O`"
+
+msgid "``editor/open_scene``"
+msgstr "``editor/open_scene``"
+
+msgid "Close Scene"
+msgstr "Sahneyi Kapat"
+
+msgid ":kbd:`Ctrl + Shift + W`"
+msgstr ":kbd:`Ctrl + Shift + W`"
+
+msgid ":kbd:`Cmd + Shift + W`"
+msgstr ":kbd:`Cmd + Shift + W`"
+
+msgid "``editor/close_scene``"
+msgstr "``editor/close_scene``"
+
+msgid "Reopen Closed Scene"
+msgstr "Kapatılan Sahneyi Tekrar Aç"
+
+msgid ":kbd:`Ctrl + Shift + T`"
+msgstr ":kbd:`Ctrl + Shift + T`"
+
+msgid ":kbd:`Cmd + Shift + T`"
+msgstr ":kbd:`Cmd + Shift + T`"
+
+msgid "``editor/reopen_closed_scene``"
+msgstr "``editor/reopen_closed_scene``"
+
+msgid "Save Scene"
+msgstr "Sahneyi Kaydet"
+
+msgid ":kbd:`Ctrl + S`"
+msgstr ":kbd:`Ctrl + S`"
+
+msgid ":kbd:`Cmd + S`"
+msgstr ":kbd:`Cmd + S`"
+
+msgid "``editor/save_scene``"
+msgstr "``editor/save_scene``"
+
+msgid "Save Scene As"
+msgstr "Sahneyi Farklı Kaydet"
+
+msgid ":kbd:`Ctrl + Shift + S`"
+msgstr ":kbd:`Ctrl + Shift + S`"
+
+msgid ":kbd:`Cmd + Shift + S`"
+msgstr ":kbd:`Cmd + Shift + S`"
+
+msgid "``editor/save_scene_as``"
+msgstr "``editor/save_scene_as``"
+
+msgid "Save All Scenes"
+msgstr "Tüm Sahneleri Kaydet"
+
+msgid ":kbd:`Ctrl + Shift + Alt + S`"
+msgstr ":kbd:`Ctrl + Shift + Alt + S`"
+
+msgid ":kbd:`Cmd + Shift + Alt + S`"
+msgstr ":kbd:`Cmd + Shift + Alt + S`"
+
+msgid "``editor/save_all_scenes``"
+msgstr "``editor/save_all_scenes``"
+
+msgid "Quick Open"
+msgstr "Hızlı Aç"
+
+msgid ":kbd:`Shift + Alt + O`"
+msgstr ":kbd:`Shift + Alt + O`"
+
+msgid "``editor/quick_open``"
+msgstr "``editor/quick_open``"
+
+msgid "Quick Open Scene"
+msgstr "Sahneyi Hızlı Aç"
+
+msgid ":kbd:`Ctrl + Shift + O`"
+msgstr ":kbd:`Ctrl + Shift + O`"
+
+msgid ":kbd:`Cmd + Shift + O`"
+msgstr ":kbd:`Cmd + Shift + O`"
+
+msgid "``editor/quick_open_scene``"
+msgstr "``editor/quick_open_scene``"
+
+msgid "Quick Open Script"
+msgstr "Betiği Hızlı Aç"
+
+msgid ":kbd:`Ctrl + Alt + O`"
+msgstr ":kbd:`Ctrl + Alt + O`"
+
+msgid ":kbd:`Cmd + Alt + O`"
+msgstr ":kbd:`Cmd + Alt + O`"
+
+msgid "``editor/quick_open_script``"
+msgstr "``editor/quick_open_script``"
+
+msgid "Undo"
+msgstr "Geri al"
+
+msgid ":kbd:`Ctrl + Z`"
+msgstr ":kbd:`Ctrl + Z`"
+
+msgid ":kbd:`Cmd + Z`"
+msgstr ":kbd:`Cmd + Z`"
+
+msgid "``editor/undo``"
+msgstr "``editor/undo``"
+
+msgid "Redo"
+msgstr "Yinele"
+
+msgid ":kbd:`Ctrl + Shift + Z`"
+msgstr ":kbd:`Ctrl + Shift + Z`"
+
+msgid ":kbd:`Cmd + Shift + Z`"
+msgstr ":kbd:`Cmd + Shift + Z`"
+
+msgid "``editor/redo``"
+msgstr "``editor/redo``"
+
+msgid "Quit"
+msgstr "Çıkış"
+
+msgid ":kbd:`Ctrl + Q`"
+msgstr ":kbd:`Ctrl + Q`"
+
+msgid ":kbd:`Cmd + Q`"
+msgstr ":kbd:`Cmd + Q`"
+
+msgid "``editor/file_quit``"
+msgstr "``editor/file_quit``"
+
+msgid "Quit to Project List"
+msgstr "Proje Listesine Çık"
+
+msgid ":kbd:`Ctrl + Shift + Q`"
+msgstr ":kbd:`Ctrl + Shift + Q`"
+
+msgid ":kbd:`Shift + Alt + Q`"
+msgstr ":kbd:`Shift + Alt + Q`"
+
+msgid "``editor/quit_to_project_list``"
+msgstr "``editor/quit_to_project_list``"
+
+msgid "Take Screenshot"
+msgstr "Ekran Görüntüsü Al"
+
+msgid ":kbd:`Ctrl + F12`"
+msgstr ":kbd:`Ctrl + F12`"
+
+msgid ":kbd:`Cmd + F12`"
+msgstr ":kbd:`Cmd + F12`"
+
+msgid "``editor/take_screenshot``"
+msgstr "``editor/take_screenshot``"
+
+msgid "Toggle Fullscreen"
+msgstr "Tam Ekranı Aç/Kapat"
+
+msgid ":kbd:`Shift + F11`"
+msgstr ":kbd:`Shift + F11`"
+
+msgid ":kbd:`Cmd + Ctrl + F`"
+msgstr ":kbd:`Cmd + Ctrl + F`"
+
+msgid "``editor/fullscreen_mode``"
+msgstr "``editor/fullscreen_mode``"
+
+msgid "Play"
+msgstr "Oynat"
+
+msgid ":kbd:`F5`"
+msgstr ":kbd:`F5`"
+
+msgid ":kbd:`Cmd + B`"
+msgstr ":kbd:`Cmd + B`"
+
+msgid "``editor/play``"
+msgstr "``editor/play``"
+
+msgid "Pause Scene"
+msgstr "Sahneyi Duraklat"
+
+msgid ":kbd:`F7`"
+msgstr ":kbd:`F7`"
+
+msgid ":kbd:`Cmd + Ctrl + Y`"
+msgstr ":kbd:`Cmd + Ctrl + Y`"
+
+msgid "``editor/pause_scene``"
+msgstr "``editor/pause_scene``"
+
+msgid "Stop"
+msgstr "Durdur"
+
+msgid ":kbd:`F8`"
+msgstr ":kbd:`F8`"
+
+msgid ":kbd:`Cmd + .`"
+msgstr ":kbd:`Cmd + .`"
+
+msgid "``editor/stop``"
+msgstr "``editor/stop``"
+
+msgid "Play Scene"
+msgstr "Sahneyi Oynat"
+
+msgid ":kbd:`F6`"
+msgstr ":kbd:`F6`"
+
+msgid ":kbd:`Cmd + R`"
+msgstr ":kbd:`Cmd + R`"
+
+msgid "``editor/play_scene``"
+msgstr "``editor/play_scene``"
+
+msgid "Play Custom Scene"
+msgstr "Özel Sahneyi Oynat"
+
+msgid ":kbd:`Ctrl + Shift + F5`"
+msgstr ":kbd:`Ctrl + Shift + F5`"
+
+msgid ":kbd:`Cmd + Shift + R`"
+msgstr ":kbd:`Cmd + Shift + R`"
+
+msgid "``editor/play_custom_scene``"
+msgstr "``editor/play_custom_scene``"
+
+msgid "Expand Bottom Panel"
+msgstr "Alt Paneli Genişlet"
+
+msgid ":kbd:`Shift + F12`"
+msgstr ":kbd:`Shift + F12`"
+
+msgid "``editor/bottom_panel_expand``"
+msgstr "``editor/bottom_panel_expand``"
+
+msgid "2D / Canvas Item Editor"
+msgstr "2B / Kanvas Öğe Düzenleyici"
+
+msgid "Zoom In"
+msgstr "Yakınlaştır"
+
+msgid ":kbd:`Ctrl + =`"
+msgstr ":kbd:`Ctrl + =`"
+
+msgid ":kbd:`Cmd + =`"
+msgstr ":kbd:`Cmd + =`"
+
+msgid "``canvas_item_editor/zoom_plus``"
+msgstr "``canvas_item_editor/zoom_plus``"
+
+msgid "Zoom Out"
+msgstr "Uzaklaştır"
+
+msgid ":kbd:`Ctrl + -`"
+msgstr ":kbd:`Ctrl + -`"
+
+msgid ":kbd:`Cmd + -`"
+msgstr ":kbd:`Cmd + -`"
+
+msgid "``canvas_item_editor/zoom_minus``"
+msgstr "``canvas_item_editor/zoom_minus``"
+
+msgid "Zoom Reset"
+msgstr "Yakınlaştırmayı Sıfırlama"
+
+msgid ":kbd:`Ctrl + 0`"
+msgstr ":kbd:`Ctrl + 0`"
+
+msgid ":kbd:`Cmd + 0`"
+msgstr ":kbd:`Cmd + 0`"
+
+msgid "``canvas_item_editor/zoom_reset``"
+msgstr "``canvas_item_editor/zoom_reset``"
+
+msgid "Pan View"
+msgstr "Görünümü Kaydır"
+
+msgid ":kbd:`Space`"
+msgstr ":kbd:`Boşluk`"
+
+msgid "``canvas_item_editor/pan_view``"
+msgstr "``canvas_item_editor/pan_view``"
+
+msgid "Select Mode"
+msgstr "Seçme Kipi"
+
+msgid ":kbd:`Q`"
+msgstr ":kbd:`Q`"
+
+msgid "``canvas_item_editor/select_mode``"
+msgstr "``canvas_item_editor/select_mode``"
+
+msgid "Move Mode"
+msgstr "Taşıma Kipi"
+
+msgid ":kbd:`W`"
+msgstr ":kbd:`W`"
+
+msgid "``canvas_item_editor/move_mode``"
+msgstr "``canvas_item_editor/move_mode``"
+
+msgid "Rotate Mode"
+msgstr "Döndürme Kipi"
+
+msgid ":kbd:`E`"
+msgstr ":kbd:`E`"
+
+msgid "``canvas_item_editor/rotate_mode``"
+msgstr "``canvas_item_editor/rotate_mode``"
+
+msgid "Scale Mode"
+msgstr "Ölçek Kipi"
+
+msgid ":kbd:`S`"
+msgstr ":kbd:`S`"
+
+msgid "``canvas_item_editor/scale_mode``"
+msgstr "``canvas_item_editor/scale_mode``"
+
+msgid "Ruler Mode"
+msgstr "Cetvel Kipi"
+
+msgid ":kbd:`R`"
+msgstr ":kbd:`R`"
+
+msgid "``canvas_item_editor/ruler_mode``"
+msgstr "``canvas_item_editor/ruler_mode``"
+
+msgid "Use Smart Snap"
+msgstr "Akıllı Tutunmayı Kullan"
+
+msgid ":kbd:`Shift + S`"
+msgstr ":kbd:`Shift + S`"
+
+msgid "``canvas_item_editor/use_smart_snap``"
+msgstr "``canvas_item_editor/use_smart_snap``"
+
+msgid "Use Grid Snap"
+msgstr "Izgara Tutunmasını Kullan"
+
+msgid ":kbd:`Shift + G`"
+msgstr ":kbd:`Shift + G`"
+
+msgid "``canvas_item_editor/use_grid_snap``"
+msgstr "``canvas_item_editor/use_grid_snap``"
+
+msgid "Multiply grid step by 2"
+msgstr "Izgara adımını 2 ile çarp"
+
+msgid ":kbd:`Num *`"
+msgstr ":kbd:`Num *`"
+
+msgid "``canvas_item_editor/multiply_grid_step``"
+msgstr "``canvas_item_editor/multiply_grid_step``"
+
+msgid "Divide grid step by 2"
+msgstr "Izgara adımını 2'ye böl"
+
+msgid ":kbd:`Num /`"
+msgstr ":kbd:`Num /`"
+
+msgid "``canvas_item_editor/divide_grid_step``"
+msgstr "``canvas_item_editor/divide_grid_step``"
+
+msgid "Always Show Grid"
+msgstr "Izgarayı Her Zaman Göster"
+
+msgid ":kbd:`G`"
+msgstr ":kbd:`G`"
+
+msgid "``canvas_item_editor/show_grid``"
+msgstr "``canvas_item_editor/show_grid``"
+
+msgid "Show Helpers"
+msgstr "Yardımcıları Göster"
+
+msgid ":kbd:`H`"
+msgstr ":kbd:`H`"
+
+msgid "``canvas_item_editor/show_helpers``"
+msgstr "``canvas_item_editor/show_helpers``"
+
+msgid "Show Guides"
+msgstr "Kılavuz Çizgileri Göster"
+
+msgid ":kbd:`Y`"
+msgstr ":kbd:`Y`"
+
+msgid "``canvas_item_editor/show_guides``"
+msgstr "``canvas_item_editor/show_guides``"
+
+msgid "Center Selection"
+msgstr "Seçimi Merkeze Getir"
+
+msgid ":kbd:`F`"
+msgstr ":kbd:`F`"
+
+msgid "``canvas_item_editor/center_selection``"
+msgstr "``canvas_item_editor/center_selection``"
+
+msgid "Frame Selection"
+msgstr "Seçimi Kareye Al"
+
+msgid ":kbd:`Shift + F`"
+msgstr ":kbd:`Shift + F`"
+
+msgid "``canvas_item_editor/frame_selection``"
+msgstr "``canvas_item_editor/frame_selection``"
+
+msgid "Preview Canvas Scale"
+msgstr "Kanvas Ölçeğini Önizle"
+
+msgid ":kbd:`Ctrl + Shift + P`"
+msgstr ":kbd:`Ctrl + Shift + P`"
+
+msgid ":kbd:`Cmd + Shift + P`"
+msgstr ":kbd:`Cmd + Shift + P`"
+
+msgid "``canvas_item_editor/preview_canvas_scale``"
+msgstr "``canvas_item_editor/preview_canvas_scale``"
+
+msgid "Insert Key"
+msgstr "Anahtar Ekle"
+
+msgid ":kbd:`Ins`"
+msgstr ":kbd:`Ins`"
+
+msgid "``canvas_item_editor/anim_insert_key``"
+msgstr "``canvas_item_editor/anim_insert_key``"
+
+msgid "Insert Key (Existing Tracks)"
+msgstr "Anahtar Ekle (Mevcut İzler)"
+
+msgid ":kbd:`Ctrl + Ins`"
+msgstr ":kbd:`Ctrl + Ins`"
+
+msgid ":kbd:`Cmd + Ins`"
+msgstr ":kbd:`Cmd + Ins`"
+
+msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
+msgstr "``canvas_item_editor/anim_insert_key_existing_tracks``"
+
+msgid "Make Custom Bones from Nodes"
+msgstr "Düğümlerden Özel Kemikler Yap"
+
+msgid ":kbd:`Ctrl + Shift + B`"
+msgstr ":kbd:`Ctrl + Shift + B`"
+
+msgid ":kbd:`Cmd + Shift + B`"
+msgstr ":kbd:`Cmd + Shift + B`"
+
+msgid "``canvas_item_editor/skeleton_make_bones``"
+msgstr "``canvas_item_editor/skeleton_make_bones``"
+
+msgid "Clear Pose"
+msgstr "Duruşu Temizle"
+
+msgid ":kbd:`Shift + K`"
+msgstr ":kbd:`Shift + K`"
+
+msgid "``canvas_item_editor/anim_clear_pose``"
+msgstr "``canvas_item_editor/anim_clear_pose``"
+
+msgid "3D / Spatial Editor"
+msgstr "3B / Uzaysal Düzenleyici"
+
+msgid "Toggle Freelook"
+msgstr "Serbest Bakışı Aç/Kapat"
+
+msgid "``spatial_editor/freelook_toggle``"
+msgstr "``spatial_editor/freelook_toggle``"
+
+msgid "Freelook Left"
+msgstr "Sola Serbest Bakış"
+
+msgid ":kbd:`A`"
+msgstr ":kbd:`A`"
+
+msgid "``spatial_editor/freelook_left``"
+msgstr "``spatial_editor/freelook_left``"
+
+msgid "Freelook Right"
+msgstr "Sağa Serbest Bakış"
+
+msgid ":kbd:`D`"
+msgstr ":kbd:`D`"
+
+msgid "``spatial_editor/freelook_right``"
+msgstr "``spatial_editor/freelook_right``"
+
+msgid "Freelook Forward"
+msgstr "İleri Serbest Bakış"
+
+msgid "``spatial_editor/freelook_forward``"
+msgstr "``spatial_editor/freelook_forward``"
+
+msgid "Freelook Backwards"
+msgstr "Geriye Serbest Bakış"
+
+msgid "``spatial_editor/freelook_backwards``"
+msgstr "``spatial_editor/freelook_backwards``"
+
+msgid "Freelook Up"
+msgstr "Yukarı Serbest Bakış"
+
+msgid "``spatial_editor/freelook_up``"
+msgstr "``spatial_editor/freelook_up``"
+
+msgid "Freelook Down"
+msgstr "Aşağı Serbest Bakış"
+
+msgid "``spatial_editor/freelook_down``"
+msgstr "``spatial_editor/freelook_down``"
+
+msgid "Freelook Speed Modifier"
+msgstr "Serbest Bakış Hızlı Değiştirici"
+
+msgid ":kbd:`Shift`"
+msgstr ":kbd:`Shift`"
+
+msgid "``spatial_editor/freelook_speed_modifier``"
+msgstr "``spatial_editor/freelook_speed_modifier``"
+
+msgid "Freelook Slow Modifier"
+msgstr "Serbest Bakış Yavaş Değiştirici"
+
+msgid ":kbd:`Alt`"
+msgstr ":kbd:`Alt`"
+
+msgid "``spatial_editor/freelook_slow_modifier``"
+msgstr "``spatial_editor/freelook_slow_modifier``"
+
+msgid "``spatial_editor/tool_select``"
+msgstr "``spatial_editor/tool_select``"
+
+msgid "``spatial_editor/tool_move``"
+msgstr "``spatial_editor/tool_move``"
+
+msgid "``spatial_editor/tool_rotate``"
+msgstr "``spatial_editor/tool_rotate``"
+
+msgid "``spatial_editor/tool_scale``"
+msgstr "``spatial_editor/tool_scale``"
+
+msgid "Use Local Space"
+msgstr "Yerel Uzayı Kullan"
+
+msgid ":kbd:`T`"
+msgstr ":kbd:`T`"
+
+msgid "``spatial_editor/local_coords``"
+msgstr "``spatial_editor/local_coords``"
+
+msgid "Use Snap"
+msgstr "Tutunma Kullan"
+
+msgid "``spatial_editor/snap``"
+msgstr "``spatial_editor/snap``"
+
+msgid "Snap Object to Floor"
+msgstr "Nesneyi Zemine Tuttur"
+
+msgid ":kbd:`PgDown`"
+msgstr ":kbd:`PgDown`"
+
+msgid "``spatial_editor/snap_to_floor``"
+msgstr "``spatial_editor/snap_to_floor``"
+
+msgid "Top View"
+msgstr "Üstten Görünüm"
+
+msgid ":kbd:`Num 7`"
+msgstr ":kbd:`Num 7`"
+
+msgid "``spatial_editor/top_view``"
+msgstr "``spatial_editor/top_view``"
+
+msgid "Bottom View"
+msgstr "Alttan Görünüm"
+
+msgid ":kbd:`Alt + Num 7`"
+msgstr ":kbd:`Alt + Num 7`"
+
+msgid "``spatial_editor/bottom_view``"
+msgstr "``spatial_editor/bottom_view``"
+
+msgid "Front View"
+msgstr "Önden Görünüm"
+
+msgid ":kbd:`Num 1`"
+msgstr ":kbd:`Num 1`"
+
+msgid "``spatial_editor/front_view``"
+msgstr "``spatial_editor/front_view``"
+
+msgid "Rear View"
+msgstr "Arkadan Görünüm"
+
+msgid ":kbd:`Alt + Num 1`"
+msgstr ":kbd:`Alt + Num 1`"
+
+msgid "``spatial_editor/rear_view``"
+msgstr "``spatial_editor/rear_view``"
+
+msgid "Right View"
+msgstr "Sağdan Görünüm"
+
+msgid ":kbd:`Num 3`"
+msgstr ":kbd:`Num 3`"
+
+msgid "``spatial_editor/right_view``"
+msgstr "``spatial_editor/right_view``"
+
+msgid "Left View"
+msgstr "Soldan Görünüm"
+
+msgid ":kbd:`Alt + Num 3`"
+msgstr ":kbd:`Alt + Num 3`"
+
+msgid "``spatial_editor/left_view``"
+msgstr "``spatial_editor/left_view``"
+
+msgid "Switch Perspective/Orthogonal View"
+msgstr "Bakış Açılı / Dik Açılı Görünüme Geç"
+
+msgid ":kbd:`Num 5`"
+msgstr ":kbd:`Num 5`"
+
+msgid "``spatial_editor/switch_perspective_orthogonal``"
+msgstr "``spatial_editor/switch_perspective_orthogonal``"
+
+msgid "Insert Animation Key"
+msgstr "Animasyon Anahtarı Ekle"
+
+msgid ":kbd:`K`"
+msgstr ":kbd:`K`"
+
+msgid "``spatial_editor/insert_anim_key``"
+msgstr "``spatial_editor/insert_anim_key``"
+
+msgid "Focus Origin"
+msgstr "Sıfır Noktasını Odakla"
+
+msgid ":kbd:`O`"
+msgstr ":kbd:`O`"
+
+msgid "``spatial_editor/focus_origin``"
+msgstr "``spatial_editor/focus_origin``"
+
+msgid "Focus Selection"
+msgstr "Seçimi Odakla"
+
+msgid "``spatial_editor/focus_selection``"
+msgstr "``spatial_editor/focus_selection``"
+
+msgid "Align Transform with View"
+msgstr "Dönüştürmeyi Görünüme Hizala"
+
+msgid ":kbd:`Ctrl + Alt + M`"
+msgstr ":kbd:`Ctrl + Alt + M`"
+
+msgid ":kbd:`Cmd + Alt + M`"
+msgstr ":kbd:`Cmd + Alt + M`"
+
+msgid "``spatial_editor/align_transform_with_view``"
+msgstr "``spatial_editor/align_transform_with_view``"
+
+msgid "Align Rotation with View"
+msgstr "Dönmeyi Görünüme Hizala"
+
+msgid ":kbd:`Ctrl + Alt + F`"
+msgstr ":kbd:`Ctrl + Alt + F`"
+
+msgid ":kbd:`Cmd + Alt + F`"
+msgstr ":kbd:`Cmd + Alt + F`"
+
+msgid "``spatial_editor/align_rotation_with_view``"
+msgstr "``spatial_editor/align_rotation_with_view``"
+
+msgid "1 Viewport"
+msgstr "1 Çerçeve"
+
+msgid ":kbd:`Ctrl + 1`"
+msgstr ":kbd:`Ctrl + 1`"
+
+msgid ":kbd:`Cmd + 1`"
+msgstr ":kbd:`Cmd + 1`"
+
+msgid "``spatial_editor/1_viewport``"
+msgstr "``spatial_editor/1_viewport``"
+
+msgid "2 Viewports"
+msgstr "2 Çerçeve"
+
+msgid ":kbd:`Ctrl + 2`"
+msgstr ":kbd:`Ctrl + 2`"
+
+msgid ":kbd:`Cmd + 2`"
+msgstr ":kbd:`Cmd + 2`"
+
+msgid "``spatial_editor/2_viewports``"
+msgstr "``spatial_editor/2_viewports``"
+
+msgid "2 Viewports (Alt)"
+msgstr "2 Çerçeve (diğer)"
+
+msgid ":kbd:`Ctrl + Alt + 2`"
+msgstr ":kbd:`Ctrl + Alt + 2`"
+
+msgid ":kbd:`Cmd + Alt + 2`"
+msgstr ":kbd:`Cmd + Alt + 2`"
+
+msgid "``spatial_editor/2_viewports_alt``"
+msgstr "``spatial_editor/2_viewports_alt``"
+
+msgid "3 Viewports"
+msgstr "3 Çerçeve"
+
+msgid ":kbd:`Ctrl + 3`"
+msgstr ":kbd:`Ctrl + 3`"
+
+msgid ":kbd:`Cmd + 3`"
+msgstr ":kbd:`Cmd + 3`"
+
+msgid "``spatial_editor/3_viewports``"
+msgstr "``spatial_editor/3_viewports``"
+
+msgid "3 Viewports (Alt)"
+msgstr "3 Çerçeve (diğer)"
+
+msgid ":kbd:`Ctrl + Alt + 3`"
+msgstr ":kbd:`Ctrl + Alt + 3`"
+
+msgid ":kbd:`Cmd + Alt + 3`"
+msgstr ":kbd:`Cmd + Alt + 3`"
+
+msgid "``spatial_editor/3_viewports_alt``"
+msgstr "``spatial_editor/3_viewports_alt``"
+
+msgid "4 Viewports"
+msgstr "4 Çerçeve"
+
+msgid ":kbd:`Ctrl + 4`"
+msgstr ":kbd:`Ctrl + 4`"
+
+msgid ":kbd:`Cmd + 4`"
+msgstr ":kbd:`Cmd + 4`"
+
+msgid "``spatial_editor/4_viewports``"
+msgstr "``spatial_editor/4_viewports``"
+
+msgid "Text Editor"
+msgstr "Metin Düzenleyici"
+
+msgid "Cut"
+msgstr "Kes"
+
+msgid ":kbd:`Ctrl + X`"
+msgstr ":kbd:`Ctrl + X`"
+
+msgid ":kbd:`Cmd + X`"
+msgstr ":kbd:`Cmd + X`"
+
+msgid "``script_text_editor/cut``"
+msgstr "``script_text_editor/cut``"
+
+msgid "Copy"
+msgstr "Kopyala"
+
+msgid ":kbd:`Ctrl + C`"
+msgstr ":kbd:`Ctrl + C`"
+
+msgid ":kbd:`Cmd + C`"
+msgstr ":kbd:`Cmd + C`"
+
+msgid "``script_text_editor/copy``"
+msgstr "``script_text_editor/copy``"
+
+msgid "Paste"
+msgstr "Yapıştır"
+
+msgid ":kbd:`Ctrl + V`"
+msgstr ":kbd:`Ctrl + V`"
+
+msgid ":kbd:`Cmd + V`"
+msgstr ":kbd:`Cmd + V`"
+
+msgid "``script_text_editor/paste``"
+msgstr "``script_text_editor/paste``"
+
+msgid "Select All"
+msgstr "Hepsini Seç"
+
+msgid ":kbd:`Ctrl + A`"
+msgstr ":kbd:`Ctrl + A`"
+
+msgid ":kbd:`Cmd + A`"
+msgstr ":kbd:`Cmd + A`"
+
+msgid "``script_text_editor/select_all``"
+msgstr "``script_text_editor/select_all``"
+
+msgid "Find"
+msgstr "Bul"
+
+msgid ":kbd:`Ctrl + F`"
+msgstr ":kbd:`Ctrl + F`"
+
+msgid ":kbd:`Cmd + F`"
+msgstr ":kbd:`Cmd + F`"
+
+msgid "``script_text_editor/find``"
+msgstr "``script_text_editor/find``"
+
+msgid "Find Next"
+msgstr "Sonrakini Bul"
+
+msgid ":kbd:`F3`"
+msgstr ":kbd:`F3`"
+
+msgid ":kbd:`Cmd + G`"
+msgstr ":kbd:`Cmd + G`"
+
+msgid "``script_text_editor/find_next``"
+msgstr "``script_text_editor/find_next``"
+
+msgid "Find Previous"
+msgstr "Öncekini Bul"
+
+msgid ":kbd:`Shift + F3`"
+msgstr ":kbd:`Shift + F3`"
+
+msgid ":kbd:`Cmd + Shift + G`"
+msgstr ":kbd:`Cmd + Shift + G`"
+
+msgid "``script_text_editor/find_previous``"
+msgstr "``script_text_editor/find_previous``"
+
+msgid "Find in Files"
+msgstr "Dosyalarda bul"
+
+msgid ":kbd:`Ctrl + Shift + F`"
+msgstr ":kbd:`Ctrl + Shift + F`"
+
+msgid ":kbd:`Cmd + Shift + F`"
+msgstr ":kbd:`Cmd + Shift + F`"
+
+msgid "``script_text_editor/find_in_files``"
+msgstr "``script_text_editor/find_in_files``"
+
+msgid "Replace"
+msgstr "Değiştir"
+
+msgid ":kbd:`Ctrl + R`"
+msgstr ":kbd:`Ctrl + R`"
+
+msgid ":kbd:`Alt + Cmd + F`"
+msgstr ":kbd:`Alt + Cmd + F`"
+
+msgid "``script_text_editor/replace``"
+msgstr "``script_text_editor/replace``"
+
+msgid "Replace in Files"
+msgstr "Dosyalarda Değiştir"
+
+msgid ":kbd:`Ctrl + Shift + R`"
+msgstr ":kbd:`Ctrl + Shift + R`"
+
+msgid "``script_text_editor/replace_in_files``"
+msgstr "``script_text_editor/replace_in_files``"
+
+msgid "``script_text_editor/undo``"
+msgstr "``script_text_editor/undo``"
+
+msgid ":kbd:`Ctrl + Y`"
+msgstr ":kbd:`Ctrl + Y`"
+
+msgid ":kbd:`Cmd + Y`"
+msgstr ":kbd:`Cmd + Y`"
+
+msgid "``script_text_editor/redo``"
+msgstr "``script_text_editor/redo``"
+
+msgid "Move Up"
+msgstr "Yukarı Taşı"
+
+msgid ":kbd:`Alt + Up Arrow`"
+msgstr ":kbd:`Alt + Yukarı Ok`"
+
+msgid "``script_text_editor/move_up``"
+msgstr "``script_text_editor/move_up``"
+
+msgid "Move Down"
+msgstr "Aşağı Taşı"
+
+msgid ":kbd:`Alt + Down Arrow`"
+msgstr ":kbd:`Alt + Aşağı Ok`"
+
+msgid "``script_text_editor/move_down``"
+msgstr "``script_text_editor/move_down``"
+
+msgid "Delete Line"
+msgstr "Satırı Sil"
+
+msgid ":kbd:`Ctrl + Shift + K`"
+msgstr ":kbd:`Ctrl + Shift + K`"
+
+msgid ":kbd:`Cmd + Shift + K`"
+msgstr ":kbd:`Cmd + Shift + K`"
+
+msgid "``script_text_editor/delete_line``"
+msgstr "``script_text_editor/delete_line``"
+
+msgid "Toggle Comment"
+msgstr "Yorumu Aç/Kapat"
+
+msgid ":kbd:`Ctrl + K`"
+msgstr ":kbd:`Ctrl + K`"
+
+msgid ":kbd:`Cmd + K`"
+msgstr ":kbd:`Cmd + K`"
+
+msgid "``script_text_editor/toggle_comment``"
+msgstr "``script_text_editor/toggle_comment``"
+
+msgid "Fold/Unfold Line"
+msgstr "Satırı Katla/Aç"
+
+msgid ":kbd:`Alt + F`"
+msgstr ":kbd:`Alt + F`"
+
+#, fuzzy
+msgid ":kbd:`Ctrl + Cmd + F`"
+msgstr ":kbd:`Ctrl + Cmd + J`"
+
+msgid "``script_text_editor/toggle_fold_line``"
+msgstr "``script_text_editor/toggle_fold_line``"
+
+msgid "Duplicate Selection"
+msgstr "Seçimin Kopyasını Oluştur"
+
+msgid ":kbd:`Ctrl + Shift + D`"
+msgstr ":kbd:`Ctrl + Shift + D`"
+
+msgid ":kbd:`Cmd + Shift + C`"
+msgstr ":kbd:`Cmd + Shift + C`"
+
+#, fuzzy
+msgid "``script_text_editor/duplicate_selection``"
+msgstr "``script_text_editor/evaluate_selection``"
+
+msgid "Complete Symbol"
+msgstr "Sembolü Tamamla"
+
+msgid ":kbd:`Ctrl + Space`"
+msgstr ":kbd:`Ctrl + Boşluk`"
+
+msgid "``script_text_editor/complete_symbol``"
+msgstr "``script_text_editor/complete_symbol``"
+
+msgid "Evaluate Selection"
+msgstr "Seçimi Hesapla"
+
+msgid ":kbd:`Ctrl + Shift + E`"
+msgstr ":kbd:`Ctrl + Shift + E`"
+
+msgid ":kbd:`Cmd + Shift + E`"
+msgstr ":kbd:`Cmd + Shift + E`"
+
+msgid "``script_text_editor/evaluate_selection``"
+msgstr "``script_text_editor/evaluate_selection``"
+
+msgid "Trim Trailing Whitespace"
+msgstr "Sondaki Beyaz boşlukları Kırp"
+
+msgid ":kbd:`Ctrl + Alt + T`"
+msgstr ":kbd:`Ctrl + Alt + T`"
+
+msgid ":kbd:`Cmd + Alt + T`"
+msgstr ":kbd:`Cmd + Alt + T`"
+
+msgid "``script_text_editor/trim_trailing_whitespace``"
+msgstr "``script_text_editor/trim_trailing_whitespace``"
+
+msgid "Uppercase"
+msgstr "Büyük harf"
+
+msgid ":kbd:`Shift + F4`"
+msgstr ":kbd:`Shift + F4`"
+
+msgid "``script_text_editor/convert_to_uppercase``"
+msgstr "``script_text_editor/convert_to_uppercase``"
+
+msgid "Lowercase"
+msgstr "Küçük harf"
+
+msgid ":kbd:`Shift + F5`"
+msgstr ":kbd:`Shift + F5`"
+
+msgid "``script_text_editor/convert_to_lowercase``"
+msgstr "``script_text_editor/convert_to_lowercase``"
+
+msgid "Capitalize"
+msgstr "İlk harfi büyük yap"
+
+msgid ":kbd:`Shift + F6`"
+msgstr ":kbd:`Shift + F6`"
+
+msgid "``script_text_editor/capitalize``"
+msgstr "``script_text_editor/capitalize``"
+
+msgid "Convert Indent to Spaces"
+msgstr "Girintiyi Boşluklara Dönüştür"
+
+msgid ":kbd:`Ctrl + Shift + Y`"
+msgstr ":kbd:`Ctrl + Shift + Y`"
+
+msgid ":kbd:`Cmd + Shift + Y`"
+msgstr ":kbd:`Cmd + Shift + Y`"
+
+msgid "``script_text_editor/convert_indent_to_spaces``"
+msgstr "``script_text_editor/convert_indent_to_spaces``"
+
+msgid "Convert Indent to Tabs"
+msgstr "Girintiyi Sekmelere Dönüştür"
+
+msgid ":kbd:`Ctrl + Shift + I`"
+msgstr ":kbd:`Ctrl + Shift + I`"
+
+msgid ":kbd:`Cmd + Shift + I`"
+msgstr ":kbd:`Cmd + Shift + I`"
+
+msgid "``script_text_editor/convert_indent_to_tabs``"
+msgstr "``script_text_editor/convert_indent_to_tabs``"
+
+msgid "Auto Indent"
+msgstr "Otomatik Girinti"
+
+msgid ":kbd:`Ctrl + I`"
+msgstr ":kbd:`Ctrl + I`"
+
+msgid ":kbd:`Cmd + I`"
+msgstr ":kbd:`Cmd + I`"
+
+msgid "``script_text_editor/auto_indent``"
+msgstr "``script_text_editor/auto_indent``"
+
+msgid "Toggle Bookmark"
+msgstr "Yer imlerini Aç / Kapat"
+
+msgid ":kbd:`Ctrl + Alt + B`"
+msgstr ":kbd:`Ctrl + Alt + B`"
+
+msgid ":kbd:`Cmd + Alt + B`"
+msgstr ":kbd:`Cmd + Alt + B`"
+
+msgid "``script_text_editor/toggle_bookmark``"
+msgstr "``script_text_editor/toggle_bookmark``"
+
+msgid "Go to Next Bookmark"
+msgstr "Sonraki Yer İmine Git"
+
+msgid ":kbd:`Ctrl + B`"
+msgstr ":kbd:`Ctrl + B`"
+
+msgid "``script_text_editor/goto_next_bookmark``"
+msgstr "``script_text_editor/goto_next_bookmark``"
+
+msgid "Go to Previous Bookmark"
+msgstr "Önceki Yer İmine Git"
+
+msgid "``script_text_editor/goto_previous_bookmark``"
+msgstr "``script_text_editor/goto_previous_bookmark``"
+
+msgid "Go to Function"
+msgstr "Fonksiyona Git"
+
+msgid ":kbd:`Ctrl + Cmd + J`"
+msgstr ":kbd:`Ctrl + Cmd + J`"
+
+msgid "``script_text_editor/goto_function``"
+msgstr "``script_text_editor/goto_function``"
+
+msgid "Go to Line"
+msgstr "Satıra Git"
+
+msgid ":kbd:`Ctrl + L`"
+msgstr ":kbd:`Ctrl + L`"
+
+msgid ":kbd:`Cmd + L`"
+msgstr ":kbd:`Cmd + L`"
+
+msgid "``script_text_editor/goto_line``"
+msgstr "``script_text_editor/goto_line``"
+
+msgid "Toggle Breakpoint"
+msgstr "Kesme Noktası Aç/Kapat"
+
+msgid ":kbd:`F9`"
+msgstr ":kbd:`F9`"
+
+msgid "``script_text_editor/toggle_breakpoint``"
+msgstr "``script_text_editor/toggle_breakpoint``"
+
+msgid "Remove All Breakpoints"
+msgstr "Tüm Kesme Noktalarını Kaldır"
+
+msgid ":kbd:`Ctrl + Shift + F9`"
+msgstr ":kbd:`Ctrl + Shift + F9`"
+
+msgid ":kbd:`Cmd + Shift + F9`"
+msgstr ":kbd:`Cmd + Shift + F9`"
+
+msgid "``script_text_editor/remove_all_breakpoints``"
+msgstr "``script_text_editor/remove_all_breakpoints``"
+
+msgid "Go to Next Breakpoint"
+msgstr "Sonraki Kesme Noktasına Git"
+
+msgid ":kbd:`Ctrl + .`"
+msgstr ":kbd:`Ctrl + .`"
+
+msgid "``script_text_editor/goto_next_breakpoint``"
+msgstr "``script_text_editor/goto_next_breakpoint``"
+
+msgid "Go to Previous Breakpoint"
+msgstr "Önceki Kesme Noktasına Git"
+
+msgid ":kbd:`Ctrl + ,`"
+msgstr ":kbd:`Ctrl + ,`"
+
+msgid ":kbd:`Cmd + ,`"
+msgstr ":kbd:`Cmd + ,`"
+
+msgid "``script_text_editor/goto_previous_breakpoint``"
+msgstr "``script_text_editor/goto_previous_breakpoint``"
+
+msgid "Contextual Help"
+msgstr "Bağlamsal Yardım"
+
+msgid ":kbd:`Alt + F1`"
+msgstr ":kbd:`Alt + F1`"
+
+msgid ":kbd:`Alt + Shift + Space`"
+msgstr ":kbd:`Alt + Shift + Boşluk`"
+
+msgid "``script_text_editor/contextual_help``"
+msgstr "``script_text_editor/contextual_help``"
+
+msgid "Script Editor"
+msgstr "Betik Düzenleyici"
+
+msgid "``script_editor/find``"
+msgstr "``script_editor/find``"
+
+msgid "``script_editor/find_next``"
+msgstr "``script_editor/find_next``"
+
+msgid "``script_editor/find_previous``"
+msgstr "``script_editor/find_previous``"
+
+msgid "``script_editor/find_in_files``"
+msgstr "``script_editor/find_in_files``"
+
+msgid ":kbd:`Shift + Alt + Up Arrow`"
+msgstr ":kbd:`Shift + Alt + Yukarı Ok`"
+
+msgid "``script_editor/window_move_up``"
+msgstr "``script_editor/window_move_up``"
+
+msgid ":kbd:`Shift + Alt + Down Arrow`"
+msgstr ":kbd:`Shift + Alt + Aşağı Ok`"
+
+msgid "``script_editor/window_move_down``"
+msgstr "``script_editor/window_move_down``"
+
+msgid "Next Script"
+msgstr "Sonraki Betik"
+
+msgid ":kbd:`Ctrl + Shift + .`"
+msgstr ":kbd:`Ctrl + Shift + .`"
+
+msgid ":kbd:`Cmd + Shift + .`"
+msgstr ":kbd:`Cmd + Shift + .`"
+
+msgid "``script_editor/next_script``"
+msgstr "``script_editor/next_script``"
+
+msgid "Previous Script"
+msgstr "Önceki Betik"
+
+msgid ":kbd:`Ctrl + Shift + ,`"
+msgstr ":kbd:`Ctrl + Shift + ,`"
+
+msgid ":kbd:`Cmd + Shift + ,`"
+msgstr ":kbd:`Cmd + Shift + ,`"
+
+msgid "``script_editor/prev_script``"
+msgstr "``script_editor/prev_script``"
+
+msgid "Reopen Closed Script"
+msgstr "Kapatılan Betiği Yeniden Aç"
+
+msgid "``script_editor/reopen_closed_script``"
+msgstr "``script_editor/reopen_closed_script``"
+
+msgid "Save"
+msgstr "Kaydet"
+
+msgid ":kbd:`Ctrl + Alt + S`"
+msgstr ":kbd:`Ctrl + Alt + S`"
+
+msgid ":kbd:`Cmd + Alt + S`"
+msgstr ":kbd:`Cmd + Alt + S`"
+
+msgid "``script_editor/save``"
+msgstr "``script_editor/save``"
+
+msgid "Save All"
+msgstr "Tümünü kaydet"
+
+msgid "``script_editor/save_all``"
+msgstr "``script_editor/save_all``"
+
+msgid "Soft Reload Script"
+msgstr "Betiği Yeniden Hafif Yükle"
+
+msgid "``script_editor/reload_script_soft``"
+msgstr "``script_editor/reload_script_soft``"
+
+msgid "History Previous"
+msgstr "Geçmiş Önceki"
+
+msgid ":kbd:`Alt + Left Arrow`"
+msgstr ":kbd:`Alt + Sol Ok`"
+
+msgid "``script_editor/history_previous``"
+msgstr "``script_editor/history_previous``"
+
+msgid "History Next"
+msgstr "Geçmiş Sonraki"
+
+msgid ":kbd:`Alt + Right Arrow`"
+msgstr ":kbd:`Alt + Sağ Ok`"
+
+msgid "``script_editor/history_next``"
+msgstr "``script_editor/history_next``"
+
+msgid "Close"
+msgstr "Kapat"
+
+msgid ":kbd:`Ctrl + W`"
+msgstr ":kbd:`Ctrl + W`"
+
+msgid ":kbd:`Cmd + W`"
+msgstr ":kbd:`Cmd + W`"
+
+msgid "``script_editor/close_file``"
+msgstr "``script_editor/close_file``"
+
+msgid "Run"
+msgstr "Çalıştır"
+
+msgid ":kbd:`Ctrl + Shift + X`"
+msgstr ":kbd:`Ctrl + Shift + X`"
+
+msgid ":kbd:`Cmd + Shift + X`"
+msgstr ":kbd:`Cmd + Shift + X`"
+
+msgid "``script_editor/run_file``"
+msgstr "``script_editor/run_file``"
+
+msgid "Toggle Scripts Panel"
+msgstr "Betikler Panelini Aç/Kapa"
+
+msgid ":kbd:`Ctrl + \\\\`"
+msgstr ":kbd:`Ctrl + \\\\`"
+
+msgid ":kbd:`Cmd + \\\\`"
+msgstr ":kbd:`Cmd + \\\\`"
+
+msgid "``script_editor/toggle_scripts_panel``"
+msgstr "``script_editor/toggle_scripts_panel``"
+
+msgid "``script_editor/zoom_in``"
+msgstr "``script_editor/zoom_in``"
+
+msgid "``script_editor/zoom_out``"
+msgstr "``script_editor/zoom_out``"
+
+msgid "Reset Zoom"
+msgstr "Yakınlaştırmayı Sıfırla"
+
+msgid "``script_editor/reset_zoom``"
+msgstr "``script_editor/reset_zoom``"
+
+msgid "Editor Output"
+msgstr "Düzenleyici Çıktısı"
+
+msgid "Copy Selection"
+msgstr "Seçimi Kopyala"
+
+msgid "``editor/copy_output``"
+msgstr "``editor/copy_output``"
+
+msgid "Clear Output"
+msgstr "Çıktıyı Temizle"
+
+msgid "``editor/clear_output``"
+msgstr "``editor/clear_output``"
+
+msgid "Debugger"
+msgstr "Hata Ayıklayıcı"
+
+msgid "Step Into"
+msgstr "İçine Gir"
+
+msgid ":kbd:`F11`"
+msgstr ":kbd:`F11`"
+
+msgid "``debugger/step_into``"
+msgstr "``debugger/step_into``"
+
+msgid "Step Over"
+msgstr "Üstünden Geç"
+
+msgid ":kbd:`F10`"
+msgstr ":kbd:`F10`"
+
+msgid "``debugger/step_over``"
+msgstr "``debugger/step_over``"
+
+msgid "Continue"
+msgstr "Devam Et"
+
+msgid ":kbd:`F12`"
+msgstr ":kbd:`F12`"
+
+msgid "``debugger/continue``"
+msgstr "``debugger/continue``"
+
+msgid "File Dialog"
+msgstr "Dosya İleti Penceresi"
+
+msgid "Go Back"
+msgstr "Geri Git"
+
+msgid "``file_dialog/go_back``"
+msgstr "``file_dialog/go_back``"
+
+msgid "Go Forward"
+msgstr "İleri Git"
+
+msgid "``file_dialog/go_forward``"
+msgstr "``file_dialog/go_forward``"
+
+msgid "Go Up"
+msgstr "Yukarı Git"
+
+msgid "``file_dialog/go_up``"
+msgstr "``file_dialog/go_up``"
+
+msgid "Refresh"
+msgstr "Yenile"
+
+msgid "``file_dialog/refresh``"
+msgstr "``file_dialog/refresh``"
+
+msgid "Toggle Hidden Files"
+msgstr "Gizli Dosyaları Aç/Kapat"
+
+msgid ":kbd:`Ctrl + H`"
+msgstr ":kbd:`Ctrl + H`"
+
+msgid ":kbd:`Cmd + H`"
+msgstr ":kbd:`Cmd + H`"
+
+msgid "``file_dialog/toggle_hidden_files``"
+msgstr "``file_dialog/toggle_hidden_files``"
+
+msgid "Toggle Favorite"
+msgstr "Sık Kullanılanları Aç/Kapat"
+
+msgid "``file_dialog/toggle_favorite``"
+msgstr "``file_dialog/toggle_favorite``"
+
+msgid "Toggle Mode"
+msgstr "Kip Değiştir"
+
+msgid ":kbd:`Alt + V`"
+msgstr ":kbd:`Alt + V`"
+
+msgid "``file_dialog/toggle_mode``"
+msgstr "``file_dialog/toggle_mode``"
+
+msgid "Create Folder"
+msgstr "Klasör Oluştur"
+
+msgid ":kbd:`Ctrl + N`"
+msgstr ":kbd:`Ctrl + N`"
+
+msgid ":kbd:`Cmd + N`"
+msgstr ":kbd:`Cmd + N`"
+
+msgid "``file_dialog/create_folder``"
+msgstr "``file_dialog/create_folder``"
+
+msgid "Delete"
+msgstr "Sil"
+
+msgid ":kbd:`Del`"
+msgstr ":kbd:`Del`"
+
+msgid ":kbd:`Cmd + BkSp`"
+msgstr ":kbd:`Cmd + BkSp`"
+
+msgid "``file_dialog/delete``"
+msgstr "``file_dialog/delete``"
+
+msgid "Focus Path"
+msgstr "Yolu Odakla"
+
+msgid ":kbd:`Ctrl + D`"
+msgstr ":kbd:`Ctrl + D`"
+
+msgid ":kbd:`Cmd + D`"
+msgstr ":kbd:`Cmd + D`"
+
+msgid "``file_dialog/focus_path``"
+msgstr "``file_dialog/focus_path``"
+
+msgid "Move Favorite Up"
+msgstr "Sık Kullanılanı Yukarı Taşı"
+
+msgid ":kbd:`Ctrl + Up Arrow`"
+msgstr ":kbd:`Ctrl + Yukarı Ok`"
+
+msgid ":kbd:`Cmd + Up Arrow`"
+msgstr ":kbd:`Cmd + Yukarı Ok`"
+
+msgid "``file_dialog/move_favorite_up``"
+msgstr "``file_dialog/move_favorite_up``"
+
+msgid "Move Favorite Down"
+msgstr "Sık Kullanılanı Aşağı Taşı"
+
+msgid ":kbd:`Ctrl + Down Arrow`"
+msgstr ":kbd:`Ctrl + Aşağı Ok`"
+
+msgid ":kbd:`Cmd + Down Arrow`"
+msgstr ":kbd:`Cmd + Aşağı Ok`"
+
+msgid "``file_dialog/move_favorite_down``"
+msgstr "``file_dialog/move_favorite_down``"
+
+msgid "FileSystem Dock"
+msgstr "DosyaSistemi Yuvası"
+
+msgid "Copy Path"
+msgstr "Yolu Kopyala"
+
+msgid "``filesystem_dock/copy_path``"
+msgstr "``filesystem_dock/copy_path``"
+
+msgid "Duplicate"
+msgstr "Kopyasını Oluştur"
+
+msgid "``filesystem_dock/duplicate``"
+msgstr "``filesystem_dock/duplicate``"
+
+msgid "``filesystem_dock/delete``"
+msgstr "``filesystem_dock/delete``"
+
+msgid "Scene Tree Dock"
+msgstr "Sahne Ağacı Yuvası"
+
+msgid "Add Child Node"
+msgstr "Alt-öğe Düğümü Ekle"
+
+msgid "``scene_tree/add_child_node``"
+msgstr "``scene_tree/add_child_node``"
+
+msgid "Batch Rename"
+msgstr "Toplu Yeniden İsimlendir"
+
+msgid ":kbd:`Cmd + F2`"
+msgstr ":kbd:`Cmd + F2`"
+
+msgid "``scene_tree/batch_rename``"
+msgstr "``scene_tree/batch_rename``"
+
+msgid "Copy Node Path"
+msgstr "Düğüm Yolunu Kopyala"
+
+#, fuzzy
+msgid ":kbd:`Ctrl + Shift + C`"
+msgstr ":kbd:`Ctrl + Shift + W`"
+
+#, fuzzy
+msgid ":kbd:`Cmd + Shift +  C`"
+msgstr ":kbd:`Cmd + Shift + C`"
+
+msgid "``scene_tree/copy_node_path``"
+msgstr "``scene_tree/copy_node_path``"
+
+msgid "``scene_tree/delete``"
+msgstr "``scene_tree/delete``"
+
+msgid "Force Delete"
+msgstr "Silmeyi Zorla"
+
+msgid ":kbd:`Shift + Del`"
+msgstr ":kbd:`Shift + Del`"
+
+msgid "``scene_tree/delete_no_confirm``"
+msgstr "``scene_tree/delete_no_confirm``"
+
+msgid "``scene_tree/duplicate``"
+msgstr "``scene_tree/duplicate``"
+
+msgid "``scene_tree/move_up``"
+msgstr "``scene_tree/move_up``"
+
+msgid "``scene_tree/move_down``"
+msgstr "``scene_tree/move_down``"
+
+msgid "Animation Track Editor"
+msgstr "Animasyon İzi Düzenleyicisi"
+
+msgid "``animation_editor/duplicate_selection``"
+msgstr "``animation_editor/duplicate_selection``"
+
+msgid "Duplicate Transposed"
+msgstr "Tersine Çevrilmiş olarak Kopyasını oluştur"
+
+msgid ":kbd:`Cmd + Shift + D`"
+msgstr ":kbd:`Cmd + Shift + D`"
+
+msgid "``animation_editor/duplicate_selection_transposed``"
+msgstr "``animation_editor/duplicate_selection_transposed``"
+
+msgid "Delete Selection"
+msgstr "Seçimi Sil"
+
+msgid "``animation_editor/delete_selection``"
+msgstr "``animation_editor/delete_selection``"
+
+msgid "Go to Next Step"
+msgstr "Sonraki Adıma Git"
+
+msgid ":kbd:`Ctrl + Right Arrow`"
+msgstr ":kbd:`Ctrl + Sağ Ok`"
+
+msgid ":kbd:`Cmd + Right Arrow`"
+msgstr ":kbd:`Cmd + Sağ Ok`"
+
+msgid "``animation_editor/goto_next_step``"
+msgstr "``animation_editor/goto_next_step``"
+
+msgid "Go to Previous Step"
+msgstr "Önceki Adıma Git"
+
+msgid ":kbd:`Ctrl + Left Arrow`"
+msgstr ":kbd:`Ctrl + Sol Ok`"
+
+msgid ":kbd:`Cmd + Left Arrow`"
+msgstr ":kbd:`Cmd + Sol Ok`"
+
+msgid "``animation_editor/goto_prev_step``"
+msgstr "``animation_editor/goto_prev_step``"
+
+msgid "Tile Map Editor"
+msgstr "Karo Haritası Düzenleyici"
+
+msgid "Find Tile"
+msgstr "Karo Bul"
+
+msgid "``tile_map_editor/find_tile``"
+msgstr "``tile_map_editor/find_tile``"
+
+msgid "Pick Tile"
+msgstr "Karo Seç"
+
+msgid ":kbd:`I`"
+msgstr ":kbd:`I`"
+
+msgid "``tile_map_editor/pick_tile``"
+msgstr "``tile_map_editor/pick_tile``"
+
+msgid "Paint Tile"
+msgstr "Karo Boya"
+
+msgid ":kbd:`P`"
+msgstr ":kbd:`P`"
+
+msgid "``tile_map_editor/paint_tile``"
+msgstr "``tile_map_editor/paint_tile``"
+
+msgid "Bucket Fill"
+msgstr "Doldurma Kovası"
+
+msgid "``tile_map_editor/bucket_fill``"
+msgstr "``tile_map_editor/bucket_fill``"
+
+msgid "Transpose"
+msgstr "Tersini Al"
+
+msgid "``tile_map_editor/transpose``"
+msgstr "``tile_map_editor/transpose``"
+
+msgid "Flip Horizontally"
+msgstr "Yatayda Ters Çevir"
+
+msgid ":kbd:`X`"
+msgstr ":kbd:`X`"
+
+msgid "``tile_map_editor/flip_horizontal``"
+msgstr "``tile_map_editor/flip_horizontal``"
+
+msgid "Flip Vertically"
+msgstr "Dikeyde Ters Çevir"
+
+msgid ":kbd:`Z`"
+msgstr ":kbd:`Z`"
+
+msgid "``tile_map_editor/flip_vertical``"
+msgstr "``tile_map_editor/flip_vertical``"
+
+msgid "Rotate Left"
+msgstr "Sola Döndür"
+
+msgid "``tile_map_editor/rotate_left``"
+msgstr "``tile_map_editor/rotate_left``"
+
+msgid "Rotate Right"
+msgstr "Sağa Döndür"
+
+msgid "``tile_map_editor/rotate_right``"
+msgstr "``tile_map_editor/rotate_right``"
+
+msgid "Clear Transform"
+msgstr "Dönüştürmeyi Temizle"
+
+msgid "``tile_map_editor/clear_transform``"
+msgstr "``tile_map_editor/clear_transform``"
+
+msgid "Select"
+msgstr "Seç"
+
+msgid ":kbd:`M`"
+msgstr ":kbd:`M`"
+
+msgid "``tile_map_editor/select``"
+msgstr "``tile_map_editor/select``"
+
+msgid "Cut Selection"
+msgstr "Seçimi Kes"
+
+msgid "``tile_map_editor/cut_selection``"
+msgstr "``tile_map_editor/cut_selection``"
+
+msgid "``tile_map_editor/copy_selection``"
+msgstr "``tile_map_editor/copy_selection``"
+
+msgid "Erase Selection"
+msgstr "Seçimi Sil"
+
+msgid "``tile_map_editor/erase_selection``"
+msgstr "``tile_map_editor/erase_selection``"
+
+msgid "Tileset Editor"
+msgstr "Karo Seti Düzenleyici"
+
+msgid "Next Coordinate"
+msgstr "Sonraki Koordinat"
+
+msgid "``tileset_editor/next_shape``"
+msgstr "``tileset_editor/next_shape``"
+
+msgid "Previous Coordinate"
+msgstr "Önceki Koordinat"
+
+msgid ":kbd:`PgUp`"
+msgstr ":kbd:`PgUp`"
+
+msgid "``tileset_editor/previous_shape``"
+msgstr "``tileset_editor/previous_shape``"
+
+msgid "Region Mode"
+msgstr "Bölge Kipi"
+
+msgid ":kbd:`1`"
+msgstr ":kbd:`1`"
+
+msgid "``tileset_editor/editmode_region``"
+msgstr "``tileset_editor/editmode_region``"
+
+msgid "Collision Mode"
+msgstr "Çarpışma Kipi"
+
+msgid ":kbd:`2`"
+msgstr ":kbd:`2`"
+
+msgid "``tileset_editor/editmode_collision``"
+msgstr "``tileset_editor/editmode_collision``"
+
+msgid "Occlusion Mode"
+msgstr "Perdeleme Kipi"
+
+msgid ":kbd:`3`"
+msgstr ":kbd:`3`"
+
+msgid "``tileset_editor/editmode_occlusion``"
+msgstr "``tileset_editor/editmode_occlusion``"
+
+msgid "Navigation Mode"
+msgstr "Gezinti Kipi"
+
+msgid ":kbd:`4`"
+msgstr ":kbd:`4`"
+
+msgid "``tileset_editor/editmode_navigation``"
+msgstr "``tileset_editor/editmode_navigation``"
+
+msgid "Bitmask Mode"
+msgstr "Bitmaskesi Kipi"
+
+msgid ":kbd:`5`"
+msgstr ":kbd:`5`"
+
+msgid "``tileset_editor/editmode_bitmask``"
+msgstr "``tileset_editor/editmode_bitmask``"
+
+msgid "Priority Mode"
+msgstr "Öncelik Kipi"
+
+msgid ":kbd:`6`"
+msgstr ":kbd:`6`"
+
+msgid "``tileset_editor/editmode_priority``"
+msgstr "``tileset_editor/editmode_priority``"
+
+msgid "Icon Mode"
+msgstr "Simge Kipi"
+
+msgid ":kbd:`7`"
+msgstr ":kbd:`7`"
+
+msgid "``tileset_editor/editmode_icon``"
+msgstr "``tileset_editor/editmode_icon``"
+
+msgid "Z Index Mode"
+msgstr "Z İndeksi Kipi"
+
+msgid ":kbd:`8`"
+msgstr ":kbd:`8`"
+
+msgid "``tileset_editor/editmode_z_index``"
+msgstr "``tileset_editor/editmode_z_index``"
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

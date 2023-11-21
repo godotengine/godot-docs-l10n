@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,17 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Your first 2D game"
-msgstr "Twoja pierwsza gra"
+msgstr "Twoja pierwsza gra 2D"
 
 msgid ""
 "In this step-by-step tutorial series, you will create your first complete 2D "
 "game with Godot. By the end of the series, you will have a simple yet "
 "complete game of your own, like the image below."
 msgstr ""
+"W tej serii samouczków krok po kroku stworzysz swoją pierwszą, pełnoprawną "
+"grę 2D w Godocie. Po ukończeniu tych samouczków będziesz mieć swoją prostą, "
+"ale skończoną grę, taką jak na obrazku poniżej."
 
 msgid "|image0|"
 msgstr "|image0|"
@@ -34,7 +36,6 @@ msgstr "|image0|"
 msgid "image0"
 msgstr "|image0|"
 
-#, fuzzy
 msgid ""
 "You will learn how the Godot editor works, how to structure a project, and "
 "build a 2D game."
@@ -59,24 +60,23 @@ msgstr ""
 "Gra nazywa się \"Dodge the Creeps!\" Twoja postać musi się przemieszczać i "
 "unikać wrogów tak długo, jak to możliwe."
 
-#, fuzzy
 msgid "You will learn to:"
-msgstr "Nauczysz się:"
+msgstr "Nauczysz się jak:"
 
 msgid "Create a complete 2D game with the Godot editor."
-msgstr ""
+msgstr "stworzyć kompletną grę 2D z pomogą edytora Godota."
 
 msgid "Structure a simple game project."
-msgstr "Struktury prostego projektu gry."
+msgstr "uporządkować projekt małej gry."
 
 msgid "Move the player character and change its sprite."
-msgstr "Przemieszczania postaci gracza i zmiany jego duszka."
+msgstr "poruszać postacią gracza oraz zmienić jej grafikę."
 
 msgid "Spawn random enemies."
-msgstr ""
+msgstr "dodać losowo pojawiających się przeciwników."
 
 msgid "Count the score."
-msgstr ""
+msgstr "zliczać wynik."
 
 #, fuzzy
 msgid "And more."
@@ -86,15 +86,21 @@ msgid ""
 "You'll find another series where you'll create a similar game but in 3D. We "
 "recommend you to start with this one, though."
 msgstr ""
+"Znajdziesz również inną serię samouczków, gdzie stworzysz podobną grę, ale w "
+"3D. Zalecamy jednak, abyś zaczął od tej."
 
 msgid "**Why start with 2D?**"
-msgstr ""
+msgstr "**Czemu zacząć od 2D?**"
 
 msgid ""
 "If you are new to game development or unfamiliar with Godot, we recommend "
 "starting with 2D games. This will allow you to become comfortable with both "
 "before tackling 3D games, which tend to be more complicated."
 msgstr ""
+"Jeżeli dopiero zaczynasz tworzyć gry lub nie znasz dobrze Godota, to "
+"zalecamy rozpocząć od gier 2D. Pozwoli ci to na nabranie wprawy w obu tych "
+"aspektach, zanim weźmiesz się za gry 3D, które zazwyczaj są bardziej "
+"skomplikowane."
 
 #, fuzzy
 msgid "You can find a completed version of this project at this location:"
@@ -110,33 +116,39 @@ msgid ""
 "This step-by-step tutorial is intended for beginners who followed the "
 "complete :ref:`Getting Started <toc-learn-step_by_step>`."
 msgstr ""
+"Ten samouczek jest przeznaczony dla początkujących, którzy zapoznali się z: :"
+"ref:`Getting Started <toc-learn-step_by_step>`."
 
-#, fuzzy
 msgid ""
 "If you're an experienced programmer, you can find the complete demo's source "
 "code here: `Godot demo projects <https://github.com/godotengine/godot-demo-"
 "projects>`__."
 msgstr ""
-"Oprócz tej dokumentacji możesz również rzucić okiem na różne `projekty - "
-"dema Godot'a <https://github.com/godotengine/godot-demo-projects> `_."
+"Zaawansowani programiści mogą znaleźć pełny kod źródłowy projektu tutaj: "
+"`Przykładowe projekty w Godocie <https://github.com/godotengine/godot-demo-"
+"projects> `_."
 
 msgid ""
 "We prepared some game assets you'll need to download so we can jump straight "
 "to the code."
 msgstr ""
+"Przygotowaliśmy kilka zasobów (assetów) do pobrania, dzięki czemu będziemy "
+"mogli od razu przejść do kodowania gry."
 
 msgid "You can download them by clicking the link below."
-msgstr ""
+msgstr "Możesz pobrać je klikając w link poniżej."
 
 msgid ""
 "`dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/godot-docs-"
 "project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets."
 "zip>`_."
 msgstr ""
+"`dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/godot-docs-"
+"project-starters/releases/download/latest-4.x/dodge_the_creeps_2d_assets."
+"zip>`_"
 
-#, fuzzy
 msgid "Contents"
-msgstr "Badanie zawartości"
+msgstr "Zawartość"
 
 msgid "Translation status"
 msgstr "Status tłumaczenia"

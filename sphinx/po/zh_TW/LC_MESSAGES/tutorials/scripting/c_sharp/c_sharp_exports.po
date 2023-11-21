@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #, fuzzy
-msgid "C# exports"
-msgstr "\\ export"
+msgid "C# exported properties"
+msgstr "Area 的屬性"
 
-msgid "Introduction to exports"
-msgstr "匯出簡介"
-
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
@@ -38,7 +34,7 @@ msgstr ""
 msgid ""
 "In that example the value ``5`` will be saved, and after building the "
 "current project it will be visible in the property editor."
-msgstr ""
+msgstr "在該範例中，值「5」將被儲存，建置目前專案後，它將在屬性編輯器中可見。"
 
 msgid ""
 "One of the fundamental benefits of exporting member variables is to have "
@@ -53,18 +49,16 @@ msgstr ""
 msgid ""
 "Exporting can only be done with :ref:`Variant-compatible "
 "<doc_c_sharp_variant>` types."
-msgstr ""
+msgstr "匯出只適用於:ref:`與 Variant 相容 <doc_c_sharp_variant>`的型別。"
 
 msgid ""
 "Exporting properties can also be done in GDScript, for information on that "
 "see :ref:`doc_gdscript_exports`."
-msgstr ""
+msgstr "GDScript 中也能夠匯出屬性，相關資訊見 :ref:`doc_gdscript_exports`。"
 
-#, fuzzy
 msgid "Basic use"
-msgstr "\\ Basis"
+msgstr "Basic use"
 
-#, fuzzy
 msgid "Exporting can work with fields and properties."
 msgstr "匯出套件、修正檔與 Mod"
 
@@ -73,11 +67,13 @@ msgid ""
 "of the type <https://learn.microsoft.com/en-us/dotnet/csharp/language-"
 "reference/builtin-types/default-values>`_ is used instead."
 msgstr ""
+"匯出的成員可以指定預設值；否則，將使用「型別的預設值 <https://learn."
+"microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/default-"
+"values>」。"
 
 msgid "Resources and nodes can be exported."
-msgstr ""
+msgstr "可以匯出資源和節點。"
 
-#, fuzzy
 msgid "Grouping exports"
 msgstr "建立屬性群組"
 
@@ -87,100 +83,105 @@ msgid ""
 "attribute will be added to the group. Start a new group or use "
 "``[ExportGroup(\"\")]`` to break out."
 msgstr ""
+"可以使用“[ExportGroup]”屬性在屬性面板中對匯出的屬性進行群組。此屬性之後的每個"
+"匯出屬性都會新增到群組中。開始一個新群組或使用``[ExportGroup(\"\")]`` 進行群"
+"組。"
 
 msgid ""
 "The second argument of the attribute can be used to only group properties "
 "with the specified prefix."
-msgstr ""
+msgstr "此屬性的第二個參數可用於僅對具有指定前綴的屬性進行群組。"
 
 msgid ""
 "Groups cannot be nested, use ``[ExportSubgroup]`` to create subgroups within "
 "a group."
-msgstr ""
+msgstr "群組可以巢狀，請使用 ``[ExportSubgroup]`` 在群組中建立子群組。"
 
 msgid ""
 "You can also change the name of your main category, or create additional "
 "categories in the property list with the ``[ExportCategory]`` attribute."
 msgstr ""
+"您也可以變更主類別的名稱，或使用「[ExportCategory]」屬性在屬性列表中建立其他"
+"類別。"
 
 msgid ""
 "The list of properties is organized based on the class inheritance, and new "
 "categories break that expectation. Use them carefully, especially when "
 "creating projects for public use."
 msgstr ""
+"屬性列表是根據類別繼承來組織的，而新類別打破了這種期望。謹慎使用它們，尤其是"
+"在建立供公共使用的專案時。"
 
-#, fuzzy
 msgid "Strings as paths"
 msgstr "每行字數限制"
 
 msgid "Property hints can be used to export strings as paths"
-msgstr ""
+msgstr "屬性提示可用於將字串匯出為路徑"
 
-#, fuzzy
 msgid "String as a path to a file."
 msgstr "使用檔案"
 
 msgid "String as a path to a directory."
-msgstr ""
+msgstr "字串是目錄的路徑。"
 
 msgid "String as a path to a file, custom filter provided as hint."
-msgstr ""
+msgstr "字串是檔的路徑，在提示中提供自訂篩檢程式。"
 
 msgid ""
 "Using paths in the global filesystem is also possible, but only in scripts "
 "in tool mode."
-msgstr ""
+msgstr "也可以使用全域檔案系統中的路徑，但是僅支援工具模式的腳本。"
 
 msgid "String as a path to a PNG file in the global filesystem."
-msgstr ""
+msgstr "字串是全域檔案系統中某個 PNG 檔的路徑。"
 
 msgid "String as a path to a directory in the global filesystem."
-msgstr ""
+msgstr "字串是全域檔案系統中某個目錄的路徑。"
 
 msgid ""
 "The multiline annotation tells the editor to show a large input field for "
 "editing over multiple lines."
-msgstr ""
+msgstr "多行註解告訴編輯器顯示一個大的輸入欄位以進行多行編輯。"
 
-#, fuzzy
 msgid "Limiting editor input ranges"
 msgstr "翻譯現有頁面"
 
 msgid ""
 "Using the range property hint allows you to limit what can be input as a "
 "value using the editor."
-msgstr ""
+msgstr "使用 range 屬性提示可以限制使用編輯器輸入的值。"
 
 msgid "Allow integer values from 0 to 20."
-msgstr ""
+msgstr "允許 0 到 20 之間的整數。"
 
 msgid "Allow integer values from -10 to 20."
-msgstr ""
+msgstr "允許 -10 到 20 之間的整數。"
 
 msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
-msgstr ""
+msgstr "允許 -10 到 20 之間的數，對齊到 0.2 的倍數。"
 
 msgid ""
 "If you add the hints \"or_greater\" and/or \"or_less\" you can go above or "
 "below the limits when adjusting the value by typing it instead of using the "
 "slider."
 msgstr ""
+"如果新增提示“or_greater”和/或“or_less”，則在調整值時可以透過鍵入而不是使用滑"
+"桿來高於或低於限制。"
 
 msgid "Floats with easing hint"
-msgstr ""
+msgstr "帶緩動提示的浮點數"
 
 msgid "Display a visual representation of the 'ease()' function when editing."
-msgstr ""
+msgstr "編輯時顯示“ease()”函式的可視化表示。"
 
-#, fuzzy
 msgid "Colors"
 msgstr "顏色"
 
 msgid "Regular color given as red-green-blue-alpha value."
-msgstr ""
+msgstr "使用紅、綠、藍、Alpha 值指定的普通顏色。"
 
 msgid "Color given as red-green-blue value (alpha will always be 1)."
-msgstr ""
+msgstr "使用紅、綠、藍值指定的顏色（Alpha 始終為 1）。"
 
 msgid "Nodes"
 msgstr "節點"
@@ -188,15 +189,15 @@ msgstr "節點"
 msgid ""
 "Since Godot 4.0, nodes can be directly exported without having to use "
 "NodePaths."
-msgstr ""
+msgstr "從Godot 4.0開始，可以直接匯出節點，而無需使用NodePaths。"
 
 msgid ""
 "Custom node classes can also be used, see :ref:`doc_c_sharp_global_classes`."
-msgstr ""
+msgstr "也可以使用自訂節點類，請參閱 doc_c_sharp_global_classes`。"
 
 msgid ""
 "Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
-msgstr ""
+msgstr "如果需要，仍然可以和 Godot 3.x 中一樣匯出 NodePath："
 
 msgid "Resources"
 msgstr "資源"
@@ -204,19 +205,23 @@ msgstr "資源"
 msgid ""
 "In the Inspector, you can then drag and drop a resource file from the "
 "FileSystem dock into the variable slot."
-msgstr ""
+msgstr "在屬性面板中，您可以將資源檔案從檔案系統停靠欄拖曳到變數槽中。"
 
 msgid ""
 "Opening the inspector dropdown may result in an extremely long list of "
 "possible classes to create, however. Therefore, if you specify a type "
 "derived from Resource such as:"
 msgstr ""
+"然而，開啟屬性面板下拉列表可能會導致要建立的可能類別的列表非常長。因此，如果"
+"您指定從 Resource 衍生的型別，例如："
 
 msgid ""
 "The drop-down menu will be limited to AnimationNode and all its inherited "
 "classes. Custom resource classes can also be used, see :ref:"
 "`doc_c_sharp_global_classes`."
 msgstr ""
+"下拉式選單將僅限於 AnimationNode 及其所有繼承類別。也可以使用自訂資源類，請參"
+"閱 doc_c_sharp_global_classes。"
 
 msgid ""
 "It must be noted that even if the script is not being run while in the "
@@ -235,8 +240,10 @@ msgid ""
 "will create a widget in the Inspector, allowing to select none, one, or "
 "multiple of the enum members. The value will be stored as an integer."
 msgstr ""
+"可以匯出型別為具有「[Flags]」屬性的列舉的成員，並且它們的值僅限於列舉型別的成"
+"員。編輯器將在屬性面板中建立一個小元件，允許選擇不選擇、選擇一個或多個列舉成"
+"員。該值將儲存為整數。"
 
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the ``Flags`` property hint, they can be "
@@ -245,7 +252,6 @@ msgstr ""
 "作為位元旗標的整數可以在單一屬性內儲存多個 ``true``/``false`` (布林) 值。只需"
 "要使用匯出提示 ``int, FLAGS, …`` 就可以在編輯器中設定："
 
-#, fuzzy
 msgid ""
 "You must provide a string description for each flag. In this example, "
 "``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and "
@@ -257,26 +263,26 @@ msgstr ""
 "ELEMENT_WIND = 8`` 等)。"
 
 msgid "You can add explicit values using a colon:"
-msgstr ""
+msgstr "您可以使用冒號新增明確的值："
 
 msgid ""
 "Only power of 2 values are valid as bit flags options. The lowest allowed "
 "value is 1, as 0 means that nothing is selected. You can also add options "
 "that are a combination of other flags:"
 msgstr ""
+"只有 2 的冪值作為位元旗標選項才有效。允許的最低值為 1，因為 0 表示未選擇任何"
+"內容。您也可以新增其他旗標組合的選項："
 
-#, fuzzy
 msgid ""
 "Export annotations are also provided for the physics and render layers "
 "defined in the project settings."
-msgstr "匯出提示在專案設定中也定義了物理與算繪層："
+msgstr "匯出提示在專案設定中也定義了物理與渲染層："
 
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr "使用位元旗標會需要理解位元運算子。若不確定的話，則應該使用布林變數。"
 
-#, fuzzy
 msgid "Exporting enums"
 msgstr "匯出選單"
 
@@ -286,6 +292,9 @@ msgid ""
 "Inspector, enumerating the following as \"Thing 1\", \"Thing 2\", \"Another "
 "Thing\". The value will be stored as an integer."
 msgstr ""
+"可以匯出列舉型別的成員，且其值僅限於列舉型別的成員。編輯器將在屬性面板中建立"
+"一個小元件，將以下內容列舉為「Thing 1」、「Thing 2」、「Another Thing」。該值"
+"將儲存為整數。"
 
 msgid ""
 "Integer and string members can also be limited to a specific list of values "
@@ -295,14 +304,16 @@ msgid ""
 "corresponding to the index of the selected option (i.e. ``0``, ``1``, or "
 "``2``)."
 msgstr ""
+"也可以使用帶有“PropertyHint.Enum”提示的“[Export]”註釋將整數和字串成員限制為特"
+"定的值列表。編輯器將在 Inspector 中建立一個小元件，列舉以下角色：戰士、魔術"
+"師、小偷。該值將儲存為整數，對應於所選選項的索引（即“0”、“1”或“2”）。"
 
 msgid "If the type is ``string``, the value will be stored as a string."
-msgstr ""
+msgstr "如果是 ``string`` , 檔將從該路徑載入."
 
 msgid "If you want to set an initial value, you must specify it explicitly:"
-msgstr ""
+msgstr "如果要設定初始值，則必須明確指定："
 
-#, fuzzy
 msgid "Exporting collections"
 msgstr "其他建議"
 
@@ -312,8 +323,10 @@ msgid ""
 "Collections`` namespace are Variant-compatible, therefore, only those types "
 "can be exported."
 msgstr ""
+"如 C# Variant <doc_c_sharp_variant> 檔案中所述，只有某些 C# 陣列和「Godot."
+"Collections」命名空間中定義的集合型別是 Variant 相容的，因此，只能匯出這些型"
+"別。"
 
-#, fuzzy
 msgid "Exporting Godot arrays"
 msgstr "匯出陣列"
 
@@ -322,13 +335,14 @@ msgid ""
 "of the array elements which will be used as a hint for the editor. The "
 "Inspector will restrict the elements to the specified type."
 msgstr ""
+"使用通用的「Godot.Collections.Array<T>」允許指定將用作編輯器提示的陣列元素的"
+"型別。屬性面板會將元素限制為指定型別。"
 
 msgid ""
 "The default value of Godot arrays is null, a different default can be "
 "specified:"
-msgstr ""
+msgstr "Godot 陣列的預設值為 null，可以指定不同的預設值："
 
-#, fuzzy
 msgid ""
 "Arrays with specified types which inherit from resource can be set by drag-"
 "and-dropping multiple files from the FileSystem dock."
@@ -336,7 +350,6 @@ msgstr ""
 "若匯出的陣列指定了從 Resource 繼承來的型別，則陣列值在屬性面板中就可以從檔案"
 "系統中一次拖放多個檔案過來。"
 
-#, fuzzy
 msgid "Exporting Godot dictionaries"
 msgstr "其他建議"
 
@@ -344,19 +357,22 @@ msgid ""
 "Using the generic ``Godot.Collections.Dictionary<TKey, TValue>`` allows to "
 "specify the type of the key and value elements of the dictionary."
 msgstr ""
+"使用通用的「Godot.Collections.Dictionary<TKey, TValue>」允許指定字典的鍵和值"
+"元素的型別。"
 
 msgid ""
 "Typed dictionaries are currently unsupported in the Godot editor, so the "
 "Inspector will not restrict the types that can be assigned, potentially "
 "resulting in runtime exceptions."
 msgstr ""
+"目前 Godot 編輯器不支援型別化字典，因此 Inspector 不會限制可以指派的型別，這"
+"可能會導致執行時期異常。"
 
 msgid ""
 "The default value of Godot dictionaries is null, a different default can be "
 "specified:"
-msgstr ""
+msgstr "Godot 字典的預設值為 null，可以指定不同的預設值："
 
-#, fuzzy
 msgid "Exporting C# arrays"
 msgstr "匯出陣列"
 
@@ -364,15 +380,16 @@ msgid ""
 "C# arrays can exported as long as the element type is a :ref:`Variant-"
 "compatible <doc_c_sharp_variant>` type."
 msgstr ""
+"只要元素型別是 Variant 相容的 <doc_c_sharp_variant> 型別，就可以匯出 C# 陣"
+"列。"
 
 msgid ""
 "The default value of C# arrays is null, a different default can be specified:"
-msgstr ""
+msgstr "C# 陣列的預設值為 null，可以指定不同的預設值："
 
 msgid "Setting exported variables from a tool script"
 msgstr "從工具腳本中設定匯出變數"
 
-#, fuzzy
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
@@ -400,9 +417,10 @@ msgstr ""
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_Set() "
-"<class_Object_method__set>`, :ref:`_Get() <class_Object_method__get>`, and :"
-"ref:`_GetPropertyList() <class_Object_method__get_property_list>` methods as "
-"described in :ref:`doc_accessing_data_or_logic_from_object`."
+"<class_Object_private_method__set>`, :ref:`_Get() "
+"<class_Object_private_method__get>`, and :ref:`_GetPropertyList() "
+"<class_Object_private_method__get_property_list>` methods as described in :"
+"ref:`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 "在進一步閱讀之前，建議您先熟悉屬性的處理方法以及如何使用 :ref:`_set() "
 "<class_Object_method__get_property_list>`, :ref:`_get() "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "GDScript exports"
+#, fuzzy
+msgid "GDScript exported properties"
 msgstr "GDScript 导出"
 
-msgid "Introduction to exports"
-msgstr "导出简介"
-
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
@@ -32,7 +29,7 @@ msgid ""
 msgstr ""
 "在 Godot 中可以导出类成员。这意味着它们的值会与它们所附加的资源（例如\\ :ref:"
 "`场景 <class_PackedScene>`\\ ）一起保存。它们也可以在属性编辑器中进行编辑。导"
-"出使用关键字 ``export`` 来完成： ::"
+"出使用关键字 ``export`` 来完成。"
 
 msgid ""
 "In that example the value ``5`` will be saved and visible in the property "
@@ -66,25 +63,22 @@ msgid ""
 "information on C# exports."
 msgstr "C# 等其他语言也可以进行属性的导出。不同的语言有不同的语法。"
 
-#, fuzzy
 msgid "Basic use"
 msgstr "基本用法"
 
 msgid ""
 "If the exported value assigns a constant or constant expression, the type "
 "will be inferred and used in the editor."
-msgstr ""
+msgstr "如果为导出值分配了常量或常量表达式，就可以推断类型，在编辑器中使用。"
 
 msgid "If there's no default value, you can add a type to the variable."
-msgstr ""
+msgstr "如果没有默认值，那么你可以为变量添加类型。"
 
-#, fuzzy
 msgid "Resources and nodes can be exported."
-msgstr "无法导出 ShaderMaterial。"
+msgstr "可以导出资源和节点。"
 
-#, fuzzy
 msgid "Grouping Exports"
-msgstr "对属性进行分组"
+msgstr "导出项分组"
 
 msgid ""
 "It is possible to group your exported properties inside the Inspector with "
@@ -116,48 +110,45 @@ msgid ""
 "creating projects for public use."
 msgstr ""
 
-#, fuzzy
 msgid "Strings as paths"
-msgstr "字符串长度"
+msgstr "字符串是路径"
 
-#, fuzzy
 msgid "String as a path to a file."
-msgstr "分享配置"
+msgstr "字符串是文件的路径。"
 
 msgid "String as a path to a directory."
-msgstr ""
+msgstr "字符串是目录的路径。"
 
 msgid "String as a path to a file, custom filter provided as hint."
-msgstr ""
+msgstr "字符串是文件的路径，在提示中提供自定义过滤器。"
 
 msgid ""
 "Using paths in the global filesystem is also possible, but only in scripts "
 "in tool mode."
-msgstr ""
+msgstr "也可以使用全局文件系统中的路径，但是仅支持工具模式的脚本。"
 
 msgid "String as a path to a PNG file in the global filesystem."
-msgstr ""
+msgstr "字符串是全局文件系统中某个 PNG 文件的路径。"
 
 msgid "String as a path to a directory in the global filesystem."
-msgstr ""
+msgstr "字符串是全局文件系统中某个目录的路径。"
 
 msgid ""
 "The multiline annotation tells the editor to show a large input field for "
 "editing over multiple lines."
 msgstr ""
 
-#, fuzzy
 msgid "Limiting editor input ranges"
-msgstr "编辑现有页面"
+msgstr "限制编辑器输入范围"
 
 msgid "Allow integer values from 0 to 20."
-msgstr ""
+msgstr "允许 0 到 20 之间的整数。"
 
 msgid "Allow integer values from -10 to 20."
-msgstr ""
+msgstr "允许 -10 到 20 之间的整数。"
 
 msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
-msgstr ""
+msgstr "允许 -10 到 20 之间的数，对齐到 0.2 的倍数。"
 
 msgid ""
 "The limits can be only for the slider if you add the hints \"or_greater\" "
@@ -165,20 +156,19 @@ msgid ""
 msgstr ""
 
 msgid "Floats with easing hint"
-msgstr ""
+msgstr "带缓动提示的浮点数"
 
 msgid "Display a visual representation of the 'ease()' function when editing."
 msgstr ""
 
-#, fuzzy
 msgid "Colors"
 msgstr "颜色"
 
 msgid "Regular color given as red-green-blue-alpha value."
-msgstr ""
+msgstr "使用红、绿、蓝、Alpha 值指定的普通颜色。"
 
 msgid "Color given as red-green-blue value (alpha will always be 1)."
-msgstr ""
+msgstr "使用红、绿、蓝值指定的颜色（Alpha 始终为 1）。"
 
 msgid "Nodes"
 msgstr "节点"
@@ -187,15 +177,18 @@ msgid ""
 "Since Godot 4.0, nodes can be directly exported as properties in a script "
 "without having to use NodePaths:"
 msgstr ""
+"从 Godot 4.0 开始，脚本中可以直接将节点作为属性导出，不必再使用 NodePath："
 
 msgid ""
 "Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
-msgstr ""
+msgstr "如果需要，仍然可以和 Godot 3.x 中一样导出 NodePath："
 
 msgid ""
 "If you want to limit the types of nodes for NodePaths, you can use the :ref:"
 "`@export_node_path<class_@GDScript_annotation_@export_node_path>` annotation:"
 msgstr ""
+"如果你想要限制 NodePath 的类型，可以使用 :ref:"
+"`@export_node_path<class_@GDScript_annotation_@export_node_path>` 注解："
 
 msgid "Resources"
 msgstr "资源"
@@ -266,9 +259,8 @@ msgid ""
 "doubt, use boolean variables instead."
 msgstr "使用位标志需要对位操作有一定的了解. 如果有疑问, 请使用布尔变量代替."
 
-#, fuzzy
 msgid "Exporting enums"
-msgstr "导出菜单"
+msgstr "导出枚举"
 
 msgid ""
 "Properties can be exported with a type hint referencing an enum to limit "
@@ -362,9 +354,10 @@ msgstr ""
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
-"<class_Object_method__set>`, :ref:`_get() <class_Object_method__get>`, and :"
-"ref:`_get_property_list() <class_Object_method__get_property_list>` methods "
-"as described in :ref:`doc_accessing_data_or_logic_from_object`."
+"<class_Object_private_method__set>`, :ref:`_get() "
+"<class_Object_private_method__get>`, and :ref:`_get_property_list() "
+"<class_Object_private_method__get_property_list>` methods as described in :"
+"ref:`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 "在进一步阅读前，你需要熟悉属性的运作方式以及它们是如何通过 :ref:`_set() "
 "<class_Object_method__get_property_list>`\\ 、\\ :ref:`_get() "

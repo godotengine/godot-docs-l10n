@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -84,26 +84,23 @@ msgstr "**depth_draw_never**"
 msgid "Never draw depth."
 msgstr "不绘制深度。"
 
-#, fuzzy
 msgid "**depth_prepass_alpha**"
-msgstr "**depth_draw_always**"
+msgstr "**depth_prepass_alpha**"
 
 msgid "Do opaque depth pre-pass for transparent geometry."
 msgstr "对透明几何体进行不透明的深度处理。"
 
-#, fuzzy
 msgid "**depth_test_disabled**"
-msgstr "**depth_test_disable**"
+msgstr "**depth_test_disabled**"
 
 msgid "Disable depth testing."
 msgstr "禁用深度测试。"
 
 msgid "**sss_mode_skin**"
-msgstr ""
+msgstr "**sss_mode_skin**"
 
-#, fuzzy
 msgid "Subsurface Scattering mode for skin."
-msgstr "Subsurface Scattering（次表面散射）"
+msgstr "Subsurface Scattering（次表面散射）。"
 
 msgid "**cull_back**"
 msgstr "**cull_back**"
@@ -135,10 +132,18 @@ msgstr ""
 msgid "Geometry draws using lines."
 msgstr ""
 
+msgid "**diffuse_burley**"
+msgstr "**diffuse_burley**"
+
+#, fuzzy
+msgid "Burley (Disney PBS) for diffuse (default)."
+msgstr "漫反射使用 Burley（迪士尼 PBS）。"
+
 msgid "**diffuse_lambert**"
 msgstr "**diffuse_lambert**"
 
-msgid "Lambert shading for diffuse (default)."
+#, fuzzy
+msgid "Lambert shading for diffuse."
 msgstr "漫反射使用 Lambert 着色（默认）。"
 
 msgid "**diffuse_lambert_wrap**"
@@ -146,12 +151,6 @@ msgstr "**diffuse_lambert_wrap**"
 
 msgid "Lambert wrapping (roughness dependent) for diffuse."
 msgstr "漫反射使用 Lambert 环绕（受粗糙度影响）。"
-
-msgid "**diffuse_burley**"
-msgstr "**diffuse_burley**"
-
-msgid "Burley (Disney PBS) for diffuse."
-msgstr "漫反射使用 Burley（迪士尼 PBS）。"
 
 msgid "**diffuse_toon**"
 msgstr "**diffuse_toon**"
@@ -164,18 +163,6 @@ msgstr "**specular_schlick_ggx**"
 
 msgid "Schlick-GGX for specular (default)."
 msgstr "镜面反射使用 Schlick-GGX（默认）。"
-
-msgid "**specular_blinn**"
-msgstr "**specular_blinn**"
-
-msgid "Blinn for specular (compatibility)."
-msgstr "镜面反射使用 Blinn（兼容）。"
-
-msgid "**specular_phong**"
-msgstr "**specular_phong**"
-
-msgid "Phong for specular (compatibility)."
-msgstr "镜面反射使用 Phong（兼容）。"
 
 msgid "**specular_toon**"
 msgstr "**specular_toon**"
@@ -246,19 +233,17 @@ msgstr ""
 msgid "**alpha_to_coverage**"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Alpha antialiasing mode, see `here <https://github.com/godotengine/godot/"
 "pull/40364>`_ for more."
 msgstr ""
-"`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__"
+"`core/set.h <https://github.com/godotengine/godot/blob/3.x/core/set.h>`__。"
 
 msgid "**alpha_to_coverage_and_one**"
 msgstr ""
 
-#, fuzzy
 msgid "**fog_disabled**"
-msgstr "**cull_disabled**"
+msgstr "**fog_disabled**"
 
 msgid ""
 "Disable receiving depth-based or volumetric fog. Useful for blend_add "
@@ -293,27 +278,24 @@ msgstr "in float **TIME**"
 msgid "Global time, in seconds."
 msgstr "全球时间, 以秒为单位."
 
-#, fuzzy
 msgid "in float **PI**"
-msgstr "in float **TIME**"
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
 "diameter and amount of radians in half turn."
 msgstr ""
 
-#, fuzzy
 msgid "in float **TAU**"
-msgstr "in float **DELTA**"
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "in float **TIME**"
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
@@ -388,16 +370,14 @@ msgstr "in vec2 **VIEWPORT_SIZE**"
 msgid "Size of viewport (in pixels)."
 msgstr "视口大小（单位为像素）。"
 
-#, fuzzy
 msgid "in mat4 **VIEW_MATRIX**"
-msgstr "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "in mat4 **VIEW_MATRIX**"
 
 msgid "World space to view space transform."
 msgstr "世界空间向视图空间转变。"
 
-#, fuzzy
 msgid "in mat4 **INV_VIEW_MATRIX**"
-msgstr "in mat4 **INV_CAMERA_MATRIX**"
+msgstr "in mat4 **INV_VIEW_MATRIX**"
 
 msgid "View space to world space transform."
 msgstr "视图空间向世界空间变换."
@@ -408,36 +388,29 @@ msgstr "in mat4 **INV_PROJECTION_MATRIX**"
 msgid "Clip space to view space transform."
 msgstr "裁剪空间向视图空间变换。"
 
-#, fuzzy
 msgid "in vec3 **NODE_POSITION_WORLD**"
-msgstr "in vec2 **POINT_COORD**"
+msgstr "in vec3 **NODE_POSITION_WORLD**"
 
-#, fuzzy
 msgid "Node world space position."
-msgstr "获取玩家的位置。"
+msgstr "节点在世界空间的位置。"
 
-#, fuzzy
 msgid "in vec3 **NODE_POSITION_VIEW**"
-msgstr "in vec3 **VIEW**"
+msgstr "in vec3 **NODE_POSITION_VIEW**"
 
-#, fuzzy
 msgid "Node view space position."
-msgstr "获取玩家的位置。"
+msgstr "节点在视图空间的位置。"
 
-#, fuzzy
 msgid "in vec3 **CAMERA_POSITION_WORLD**"
-msgstr "in vec3 **ATTENUATION**"
+msgstr "in vec3 **CAMERA_POSITION_WORLD**"
 
-#, fuzzy
 msgid "Camera world space position."
-msgstr "动画面板位置"
+msgstr "相机在世界空间的位置。"
 
-#, fuzzy
 msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
-msgstr "in vec3 **ATTENUATION**"
+msgstr "in vec3 **CAMERA_DIRECTION_WORLD**"
 
 msgid "Camera world space direction."
-msgstr ""
+msgstr "相机在世界空间的方向。"
 
 msgid "in bool **OUTPUT_IS_SRGB**"
 msgstr "in bool **OUTPUT_IS_SRGB**"
@@ -461,32 +434,28 @@ msgstr "in vec4 **INSTANCE_CUSTOM**"
 msgid "Instance custom data (for particles, mostly)."
 msgstr "实例自定义数据（主要用于粒子）。"
 
-#, fuzzy
 msgid "in int **VIEW_INDEX**"
-msgstr "in int **INDEX**"
+msgstr "in int **VIEW_INDEX**"
 
 msgid ""
 "The view that we are rendering. ``VIEW_MONO_LEFT`` (``0``) for Mono (not "
 "multiview) or left eye, ``VIEW_RIGHT`` (``1``) for right eye."
 msgstr ""
 
-#, fuzzy
 msgid "in int **VIEW_MONO_LEFT**"
-msgstr "in int **INDEX**"
+msgstr "in int **VIEW_MONO_LEFT**"
 
 msgid "Constant for Mono or left eye, always ``0``."
 msgstr ""
 
-#, fuzzy
 msgid "in int **VIEW_RIGHT**"
-msgstr "in int **INDEX**"
+msgstr "in int **VIEW_RIGHT**"
 
 msgid "Constant for right eye, always ``1``."
 msgstr ""
 
-#, fuzzy
 msgid "in vec3 **EYE_OFFSET**"
-msgstr "in vec3 **VERTEX**"
+msgstr "in vec3 **EYE_OFFSET**"
 
 msgid ""
 "Position offset for the eye being rendered. Only applicable for multiview "
@@ -499,9 +468,8 @@ msgstr "inout vec3 **VERTEX**"
 msgid "Vertex in local coordinates."
 msgstr "局部坐标中的顶点."
 
-#, fuzzy
 msgid "in int **VERTEX_ID**"
-msgstr "in int **INSTANCE_ID**"
+msgstr "in int **VERTEX_ID**"
 
 msgid "The index of the current vertex in the vertex buffer."
 msgstr ""
@@ -524,7 +492,6 @@ msgstr "inout vec3 **BINORMAL**"
 msgid "Binormal in local coordinates."
 msgstr "局部坐标次法线."
 
-#, fuzzy
 msgid "out vec4 **POSITION**"
 msgstr "out vec4 **POSITION**"
 
@@ -567,20 +534,17 @@ msgstr "inout mat4 **MODELVIEW_MATRIX**"
 msgid "Model space to view space transform (use if possible)."
 msgstr "模型空间向视图空间变换(如果可用)."
 
-#, fuzzy
 msgid "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
-msgstr "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
 
-#, fuzzy
 msgid "inout mat4 **MODEL_MATRIX**"
-msgstr "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "inout mat4 **MODEL_MATRIX**"
 
 msgid "Model space to world space transform."
 msgstr "模型空间到世界空间变换."
 
-#, fuzzy
 msgid "inout mat3 **MODEL_NORMAL_MATRIX**"
-msgstr "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "inout mat3 **MODEL_NORMAL_MATRIX**"
 
 msgid "inout mat4 **PROJECTION_MATRIX**"
 msgstr "inout mat4 **PROJECTION_MATRIX**"
@@ -588,29 +552,23 @@ msgstr "inout mat4 **PROJECTION_MATRIX**"
 msgid "View space to clip space transform."
 msgstr "视图空间向裁剪空间变换."
 
-#, fuzzy
 msgid "inout uvec4 **BONE_INDICES**"
-msgstr "inout vec4 **CUSTOM**"
+msgstr "inout uvec4 **BONE_INDICES**"
 
-#, fuzzy
 msgid "inout vec4 **BONE_WEIGHTS**"
-msgstr "inout vec4 **LIGHT**"
+msgstr "inout vec4 **BONE_WEIGHTS**"
 
-#, fuzzy
 msgid "in vec4 **CUSTOM0**"
-msgstr "inout vec4 **CUSTOM**"
+msgstr "in vec4 **CUSTOM0**"
 
-#, fuzzy
 msgid "in vec4 **CUSTOM1**"
-msgstr "inout vec4 **CUSTOM**"
+msgstr "in vec4 **CUSTOM1**"
 
-#, fuzzy
 msgid "in vec4 **CUSTOM2**"
-msgstr "inout vec4 **CUSTOM**"
+msgstr "in vec4 **CUSTOM2**"
 
-#, fuzzy
 msgid "in vec4 **CUSTOM3**"
-msgstr "inout vec4 **CUSTOM**"
+msgstr "in vec4 **CUSTOM3**"
 
 #, fuzzy
 msgid ""
@@ -685,31 +643,26 @@ msgstr "in vec2 **POINT_COORD**"
 msgid "Point Coordinate for drawing points with POINT_SIZE."
 msgstr "用POINT_SIZE绘制的点坐标."
 
-#, fuzzy
 msgid "in mat4 **MODEL_MATRIX**"
-msgstr "in mat4 ** WORLD_MATRIX **"
+msgstr "in mat4 **MODEL_MATRIX**"
 
-#, fuzzy
 msgid "in mat3 **MODEL_NORMAL_MATRIX**"
-msgstr "in mat4 **CAMERA_MATRIX**"
+msgstr "in mat3 **MODEL_NORMAL_MATRIX**"
 
 msgid "in mat4 **PROJECTION_MATRIX**"
 msgstr "in mat4 **PROJECTION_MATRIX**"
 
-#, fuzzy
 msgid "Node position, in world space."
-msgstr "鼠标在像素坐标中的位置."
+msgstr "节点的位置，使用世界空间。"
 
-#, fuzzy
 msgid "Node position, in view space."
-msgstr "法向量, 在视图空间中."
+msgstr "节点的位置，使用视图空间。"
 
 msgid "Camera position, in world space."
-msgstr ""
+msgstr "相机的位置，使用世界空间。"
 
-#, fuzzy
 msgid "Camera direction, in world space."
-msgstr "法向量, 在视图空间中."
+msgstr "相机的方向，使用世界空间。"
 
 msgid "in vec3 **VERTEX**"
 msgstr "in vec3 **VERTEX**"
@@ -723,6 +676,7 @@ msgstr "sampler2D **SCREEN_TEXTURE**"
 msgid ""
 "Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
 msgstr ""
+"在 Godot 4 中移除。请改用 ``sampler2D`` 和 ``hint_screen_texture``\\ 。"
 
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
@@ -735,7 +689,7 @@ msgstr "sampler2D **DEPTH_TEXTURE**"
 
 msgid ""
 "Removed in Godot 4. Use a ``sampler2D`` with ``hint_depth_texture`` instead."
-msgstr ""
+msgstr "在 Godot 4 中移除。请改用 ``sampler2D`` 和 ``hint_depth_texture``\\ 。"
 
 msgid "out float **DEPTH**"
 msgstr "out float **DEPTH**"
@@ -758,16 +712,14 @@ msgstr "来自顶点函数的切线."
 msgid "Binormal that comes from vertex function."
 msgstr "来自顶点函数的Binormal."
 
-#, fuzzy
 msgid "out vec3 **NORMAL_MAP**"
-msgstr "out vec3 **NORMALMAP**"
+msgstr "out vec3 **NORMAL_MAP**"
 
 msgid "Set normal here if reading normal from a texture instead of NORMAL."
 msgstr "如果从纹理中读取法线而不是NORMAL, 在这里设置normal."
 
-#, fuzzy
 msgid "out float **NORMAL_MAP_DEPTH**"
-msgstr "out float **NORMALMAP_DEPTH**"
+msgstr "out float **NORMAL_MAP_DEPTH**"
 
 msgid "Depth from variable above. Defaults to 1.0."
 msgstr "从变量上方深度. 默认为1.0."
@@ -786,24 +738,20 @@ msgid ""
 "pipeline."
 msgstr "Alpha (0..1);如果写入, 材质将进入透明管道."
 
-#, fuzzy
 msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
-msgstr "out float **ALPHA_SCISSOR**"
+msgstr "out float **ALPHA_SCISSOR_THRESHOLD**"
 
 msgid "If written to, values below a certain amount of alpha are discarded."
 msgstr "如果写入, 则丢弃低于一定量alpha的值."
 
-#, fuzzy
 msgid "out float **ALPHA_HASH_SCALE**"
-msgstr "out float **ALPHA**"
+msgstr "out float **ALPHA_HASH_SCALE**"
 
-#, fuzzy
 msgid "out float **ALPHA_ANTIALIASING_EDGE**"
-msgstr "out float **ALPHA_SCISSOR**"
+msgstr "out float **ALPHA_ANTIALIASING_EDGE**"
 
-#, fuzzy
 msgid "out vec2 **ALPHA_TEXTURE_COORDINATE**"
-msgstr "inout vec4 **LIGHT_COLOR**"
+msgstr "out vec2 **ALPHA_TEXTURE_COORDINATE**"
 
 msgid "out float **METALLIC**"
 msgstr "out float **METALLIC**"
@@ -867,21 +815,17 @@ msgid ""
 "applied to object."
 msgstr "次表面散射强度. 如果使用, 物体将应用次表面散射."
 
-#, fuzzy
 msgid "out vec4 **SSS_TRANSMITTANCE_COLOR**"
-msgstr "out vec4 **SHADOW_COLOR**"
+msgstr "out vec4 **SSS_TRANSMITTANCE_COLOR**"
 
-#, fuzzy
 msgid "out float **SSS_TRANSMITTANCE_DEPTH**"
-msgstr "out float **SSS_STRENGTH**"
+msgstr "out float **SSS_TRANSMITTANCE_DEPTH**"
 
-#, fuzzy
 msgid "out float **SSS_TRANSMITTANCE_BOOST**"
-msgstr "out float **SSS_STRENGTH**"
+msgstr "out float **SSS_TRANSMITTANCE_BOOST**"
 
-#, fuzzy
 msgid "inout vec3 **BACKLIGHT**"
-msgstr "inout vec4 **LIGHT**"
+msgstr "inout vec3 **BACKLIGHT**"
 
 msgid "out float **AO**"
 msgstr "out float **AO**"
@@ -901,25 +845,22 @@ msgstr "out vec3 **EMISSION**"
 msgid "Emission color (can go over 1,1,1 for HDR)."
 msgstr "发射颜色(HDR可以超过1,1,1)."
 
-#, fuzzy
 msgid "out vec4 **FOG**"
-msgstr "inout vec4 **COLOR**"
+msgstr "out vec4 **FOG**"
 
 msgid "If written to, blends final pixel color with FOG.rgb based on FOG.a."
 msgstr ""
 
-#, fuzzy
 msgid "out vec4 **RADIANCE**"
-msgstr "out vec4 **POSITION**"
+msgstr "out vec4 **RADIANCE**"
 
 msgid ""
 "If written to, blends environment map radiance with RADIANCE.rgb based on "
 "RADIANCE.a."
 msgstr ""
 
-#, fuzzy
 msgid "out vec4 **IRRADIANCE**"
-msgstr "out vec4 **POSITION**"
+msgstr "out vec4 **IRRADIANCE**"
 
 msgid ""
 "If written to, blends environment map IRRADIANCE with IRRADIANCE.rgb based "
@@ -1009,26 +950,23 @@ msgid ""
 "``PI``."
 msgstr ""
 
-#, fuzzy
 msgid "in float **SPECULAR_AMOUNT**"
-msgstr "out float **SPECULAR**"
+msgstr "in float **SPECULAR_AMOUNT**"
 
 msgid ""
 "2.0 * ``light_specular`` property for ``OmniLight3D`` and ``SpotLight3D``. "
 "1.0 for ``DirectionalLight3D``."
 msgstr ""
 
-#, fuzzy
 msgid "in bool **LIGHT_IS_DIRECTIONAL**"
-msgstr "in bool **AT_LIGHT_PASS**"
+msgstr "in bool **LIGHT_IS_DIRECTIONAL**"
 
 #, fuzzy
 msgid "``true`` if this pass is a ``DirectionalLight3D``."
 msgstr "如果 ``true`` 代表光照通道."
 
-#, fuzzy
 msgid "in float **ATTENUATION**"
-msgstr "in vec3 **ATTENUATION**"
+msgstr "in float **ATTENUATION**"
 
 msgid "Attenuation based on distance or shadow."
 msgstr "基于距离或阴影的衰减."
@@ -1039,17 +977,14 @@ msgstr "in vec3 **ALBEDO**"
 msgid "Base albedo."
 msgstr "基础反射."
 
-#, fuzzy
 msgid "in vec3 **BACKLIGHT**"
-msgstr "in vec3 **LIGHT**"
+msgstr "in vec3 **BACKLIGHT**"
 
-#, fuzzy
 msgid "in float **METALLIC**"
-msgstr "out float **METALLIC**"
+msgstr "in float **METALLIC**"
 
-#, fuzzy
 msgid "Metallic."
-msgstr "Metallic(金属)"
+msgstr "Metallic(金属)。"
 
 msgid "in float **ROUGHNESS**"
 msgstr "in float **ROUGHNESS**"

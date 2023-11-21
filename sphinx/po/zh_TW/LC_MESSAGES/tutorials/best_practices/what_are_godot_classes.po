@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -98,7 +98,6 @@ msgstr ""
 "將 :ref:`Script <class_Script>` 附加到物件上，就會使物件繼承 ``ClassDB`` 中可"
 "用的方法、屬性與訊號。"
 
-#, fuzzy
 msgid ""
 "Even scripts that don't use the ``extends`` keyword implicitly inherit from "
 "the engine's base :ref:`RefCounted <class_RefCounted>` class. As a result, "
@@ -124,7 +123,6 @@ msgstr ""
 "複使用、可初始化，而且還是一組可繼承的節點。建立場景就有點類似一個會建立節點"
 "並通過 ``add_child()`` 將這些節點新增為子節點的腳本。"
 
-#, fuzzy
 msgid ""
 "We often pair a scene with a scripted root node that makes use of the "
 "scene's nodes. As such, the script extends the scene by adding behavior "
@@ -136,19 +134,15 @@ msgstr ""
 msgid "The content of a scene helps to define:"
 msgstr "場景的內容可以協助定義："
 
-#, fuzzy
 msgid "What nodes are available to the script."
 msgstr "腳本中可以使用哪些節點"
 
-#, fuzzy
 msgid "How they are organized."
 msgstr "節點如何組織"
 
-#, fuzzy
 msgid "How they are initialized."
 msgstr "節點如何初始化"
 
-#, fuzzy
 msgid "What signal connections they have with each other."
 msgstr "節點之間有用什麼訊號連接"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Upgrading from Godot 3 to Godot 4"
-msgstr "Migrieren von Godot 3.2.1 und kleiner (GodotPaymentsV3)"
+msgstr "Upgraden von Godot 3 auf Godot 4"
 
 msgid "Should I upgrade to Godot 4?"
-msgstr ""
+msgstr "Sollte ich auf Godot 4 upgraden?"
 
 msgid ""
 "Before beginning the upgrade process, it's worth thinking about the "
 "advantages and disadvantages that upgrading would bring to your project."
 msgstr ""
 
-#, fuzzy
 msgid "Advantages of upgrading"
-msgstr "Vorteile"
+msgstr "Vorteile des Upgrades"
 
 #, fuzzy
 msgid ""
@@ -57,9 +55,8 @@ msgid ""
 "in Godot 4.0."
 msgstr ""
 
-#, fuzzy
 msgid "Disadvantages of upgrading"
-msgstr "Nachteile"
+msgstr "Nachteile des Upgrades"
 
 msgid ""
 "If you don't *need* any features present in Godot 4.0, you may want to stay "
@@ -114,7 +111,7 @@ msgid ""
 msgstr ""
 
 msgid "Caveats of upgrading"
-msgstr ""
+msgstr "Vorbehalte gegen das Upgraden"
 
 msgid ""
 "**Since Godot 4 is a complete rewrite in many aspects, some features have "
@@ -145,9 +142,10 @@ msgstr ""
 msgid ""
 "Mono was replaced by .NET 6. This means exporting C# projects to Android, "
 "iOS and HTML5 is no longer supported for now. Exporting C# projects to "
-"desktop platforms is still supported. Support for exporting C# projects to "
-"more platforms will be restored in future 4.x releases as upstream support "
-"improves."
+"desktop platforms is still supported, and as of 4.2 there's experimental "
+"support for exporting to mobile platforms. Support for exporting C# projects "
+"to more platforms will be restored in future 4.x releases as upstream "
+"support improves."
 msgstr ""
 
 #, fuzzy
@@ -164,9 +162,8 @@ msgstr ""
 "utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3AHacktoberfest+>`_) "
 "gekennzeichnet sind."
 
-#, fuzzy
 msgid "Preparing before the upgrade (optional)"
-msgstr "Vorbereitung des Projekts"
+msgstr "Vorbereitungen vor dem Upgrade (optional)"
 
 msgid ""
 "If you want to be ready to upgrade to Godot 4 in the future, consider using :"
@@ -185,9 +182,8 @@ msgid ""
 "but only ``.gdshader`` is supported in Godot 4.0."
 msgstr ""
 
-#, fuzzy
 msgid "Running the project upgrade tool"
-msgstr "Projektpfad setzen"
+msgstr "Ausführen des Projekt-Upgrade-Tools"
 
 msgid ""
 "**Make a full backup of your project** before upgrading! The project upgrade "
@@ -199,17 +195,14 @@ msgid ""
 "folder to another location."
 msgstr ""
 
-#, fuzzy
 msgid "Using the Project Manager"
-msgstr "Der Projektmanager"
+msgstr "Die Verwendung des Projektmanagers"
 
-#, fuzzy
 msgid "To use the project upgrade tool:"
-msgstr "Projektpfad setzen"
+msgstr "So verwenden Sie das Projekt-Upgrade-Tool:"
 
-#, fuzzy
 msgid "Open the Godot 4 Project Manager."
-msgstr "Der Projektmanager"
+msgstr "Öffnen Sie den Godot 4-Projektmanager."
 
 msgid ""
 "Import the Godot 3.x project using the **Import** button, or use the "
@@ -246,9 +239,8 @@ msgid ""
 "will allow you to override the converter's size limits."
 msgstr ""
 
-#, fuzzy
 msgid "Using the command line"
-msgstr "Von der Kommandozeile exportieren"
+msgstr "Verwendung der Kommandozeile"
 
 msgid ""
 "To use the project upgrade tool from the :ref:`command line "
@@ -288,7 +280,7 @@ msgid ""
 msgstr ""
 
 msgid "Fixing the project after running the project upgrade tool"
-msgstr ""
+msgstr "Reparieren des Projekts nach Ausführung des Projekt-Upgrade-Tools"
 
 msgid ""
 "After upgrading the project, you may notice that certain things don't look "
@@ -298,9 +290,8 @@ msgid ""
 "remains manual."
 msgstr ""
 
-#, fuzzy
 msgid "Automatically renamed nodes and resources"
-msgstr "Anleitungen und Ressourcen"
+msgstr "Automatisch umbenannte Nodes und Ressourcen"
 
 msgid ""
 "The list below refers to nodes which were simply renamed for consistency or "
@@ -326,9 +317,8 @@ msgstr ""
 msgid "New name (Godot 4)"
 msgstr ""
 
-#, fuzzy
 msgid "AnimatedSprite"
-msgstr "Sprite-Bogen mittels AnimatedSprite"
+msgstr "AnimatedSprite"
 
 msgid "AnimatedSprite2D"
 msgstr ""
@@ -438,7 +428,7 @@ msgid "KinematicBody2D"
 msgstr "KinematicBody2D"
 
 msgid "CharacterBody2D"
-msgstr ""
+msgstr "CharacterBody2D"
 
 #, fuzzy
 msgid "Light2D"
@@ -461,9 +451,8 @@ msgstr "Listener"
 msgid "AudioListener3D"
 msgstr "Listener"
 
-#, fuzzy
 msgid "NavigationMeshInstance"
-msgstr "Navigations-Meshes."
+msgstr "NavigationMeshInstance"
 
 #, fuzzy
 msgid "NavigationRegion3D"
@@ -567,9 +556,8 @@ msgstr "gl_Position (OpenGL)"
 msgid "Marker3D"
 msgstr ""
 
-#, fuzzy
 msgid "ProceduralSky"
-msgstr "Prozeduraler Himmel."
+msgstr "Prozeduraler Himmel"
 
 #, fuzzy
 msgid "RayShape"
@@ -594,16 +582,15 @@ msgstr ""
 msgid "Spatial"
 msgstr "Spatial"
 
-#, fuzzy
 msgid "Node3D"
-msgstr "Node2D"
+msgstr "Node3D"
 
 #, fuzzy
 msgid "SpatialGizmo"
 msgstr "Spatial"
 
 msgid "Node3DGizmo"
-msgstr ""
+msgstr "Node3DGizmo"
 
 #, fuzzy
 msgid "SpatialMaterial"
@@ -617,7 +604,7 @@ msgid "Sprite"
 msgstr ""
 
 msgid "Sprite2D"
-msgstr ""
+msgstr "Sprite2D"
 
 #, fuzzy
 msgid "StreamTexture"
@@ -646,13 +633,11 @@ msgstr "AudioStreamPlayer"
 msgid "ViewportContainer"
 msgstr "Viewport-Container"
 
-#, fuzzy
 msgid "SubViewportContainer"
-msgstr "Viewport-Container"
+msgstr "SubViewportContainer"
 
-#, fuzzy
 msgid "Viewport"
-msgstr "Ansichtsfenster (Viewports)"
+msgstr "Viewport"
 
 #, fuzzy
 msgid "SubViewport"
@@ -774,9 +759,8 @@ msgstr "Visual Shader Nodes"
 msgid "VisualShaderNodeScalarTransformMult"
 msgstr ""
 
-#, fuzzy
 msgid "VisualShaderNodeTransformOp"
-msgstr "Visual Shader Nodes"
+msgstr "VisualShaderNodeTransformOp"
 
 msgid "VisualShaderNodeScalarDerivativeFunc"
 msgstr ""
@@ -831,13 +815,11 @@ msgstr ""
 msgid "VisualShaderNodeTextureParameterTriplanar"
 msgstr ""
 
-#, fuzzy
 msgid "VisualShaderNodeTransformUniform"
-msgstr "Visual Shader Nodes"
+msgstr "VisualShaderNodeTransformUniform"
 
-#, fuzzy
 msgid "VisualShaderNodeTransformParameter"
-msgstr "Visual Shader Nodes"
+msgstr "VisualShaderNodeTransformParameter"
 
 #, fuzzy
 msgid "VisualShaderNodeVec3Uniform"
@@ -863,11 +845,9 @@ msgstr "Visual Shader Nodes"
 msgid "VisualShaderNodeParameterRef"
 msgstr "Visual Shader Nodes"
 
-#, fuzzy
 msgid "Manually renaming methods, properties, signals and constants"
 msgstr ""
-"Eine Erklärung der Eigenschaften, Methoden, Signale, Enums und Konstanten "
-"der Klasse."
+"Manuelles Umbenennen von Methoden, Eigenschaften, Signalen und Konstanten"
 
 msgid ""
 "Due to how the project upgrade tool works, not all :abbr:`API (Application "
@@ -1110,9 +1090,8 @@ msgid ""
 "``NOTIFICATION_WM_CLOSE_REQUEST``."
 msgstr ""
 
-#, fuzzy
 msgid "Checking project settings"
-msgstr "Projekteinstellungen verwenden"
+msgstr "Überprüfung der Projekteinstellungen"
 
 msgid ""
 "Several project settings were renamed, and some of them had their enums "
@@ -1122,9 +1101,8 @@ msgid ""
 "all project settings."
 msgstr ""
 
-#, fuzzy
 msgid "Checking Environment settings"
-msgstr "Umgebungs-Einstellungen"
+msgstr "Überprüfung der Umgebungseinstellungen"
 
 msgid ""
 "Graphics quality settings were moved from Environment properties to project "
@@ -1147,9 +1125,8 @@ msgid ""
 "remain within the Environment resource."
 msgstr ""
 
-#, fuzzy
 msgid "Updating shaders"
-msgstr "3D Spatial-Shader"
+msgstr "Shader aktualisieren"
 
 msgid ""
 "There have been some changes to shaders that aren't covered by the upgrade "
@@ -1173,9 +1150,8 @@ msgstr ""
 msgid "``hint_albedo`` is now ``source_color``."
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`Built in matrix variables were renamed. <doc_spatial_shader>`"
-msgstr ":ref:`Spatial-Shader <doc_spatial_shader>`"
+msgstr ""
 
 msgid ""
 "Particles shaders no longer use the ``vertex()`` processor function. Instead "
@@ -1188,6 +1164,8 @@ msgstr "Siehe :ref:`doc_exporting_projects` für weitere Informationen."
 
 msgid "Updating scripts to take backwards-incompatible changes into account"
 msgstr ""
+"Aktualisierung von Skripten zur Berücksichtigung von abwärtskompatiblen "
+"Änderungen"
 
 msgid ""
 "Some changes performed between Godot 3.x and 4 are not renames, but they "
@@ -1295,6 +1273,12 @@ msgid ""
 msgstr ""
 
 msgid ""
+":ref:`class_Array`'s ``slice()`` second parameter (``end``) is now "
+"*exclusive*, instead of being inclusive. For example, this means that ``[1, "
+"2, 3].slice(0, 1)`` now returns ``[1]`` instead of ``[1, 2]``."
+msgstr ""
+
+msgid ""
 ":ref:`class_BaseButton`'s signals are now ``button_up`` and ``button_down``. "
 "The ``pressed`` property is now ``button_pressed``."
 msgstr ""
@@ -1364,7 +1348,7 @@ msgid ""
 msgstr ""
 
 msgid "**Removed or replaced nodes/resources**"
-msgstr ""
+msgstr "**Entfernte oder ersetzte Knoten/Ressourcen**"
 
 msgid ""
 "This lists all nodes that were replaced by another node requiring different "
@@ -1387,9 +1371,8 @@ msgstr "Kommentar"
 msgid "AnimationTreePlayer"
 msgstr "AnimationPlayer"
 
-#, fuzzy
 msgid "AnimationTree"
-msgstr "Animation"
+msgstr "AnimationTree"
 
 msgid "AnimationTreePlayer was deprecated since Godot 3.1."
 msgstr ""
@@ -1402,9 +1385,8 @@ msgstr "Gebackene LightMaps"
 msgid "LightmapGI"
 msgstr "Lichter"
 
-#, fuzzy
 msgid "See :ref:`doc_using_lightmap_gi`."
-msgstr ":ref:`Verwendung von MultiMeshs <doc_using_multimesh>`"
+msgstr "Siehe :ref:`doc_using_lightmap_gi`."
 
 #, fuzzy
 msgid "BakedLightmapData"
@@ -1420,13 +1402,11 @@ msgstr ""
 msgid "FontFile"
 msgstr "Dateien filtern"
 
-#, fuzzy
 msgid "See :ref:`doc_gui_using_fonts`."
-msgstr ":ref:`Container<doc_gui_containers>`"
+msgstr "Siehe :ref:`doc_gui_using_fonts`."
 
-#, fuzzy
 msgid "DynamicFont"
-msgstr "Dynamisch:"
+msgstr "DynamischeSchrift"
 
 #, fuzzy
 msgid "DynamicFontData"
@@ -1462,13 +1442,11 @@ msgid ""
 "for 4D noise as it's absent from the FastNoiseLite library."
 msgstr ""
 
-#, fuzzy
 msgid "ToolButton"
-msgstr "Schaltflächen (Buttons)."
+msgstr "WerkzeugSchaltfläche (ToolButtons)"
 
-#, fuzzy
 msgid "Button"
-msgstr "Schaltflächen (Buttons)."
+msgstr "Button"
 
 msgid "ToolButton was Button with the **Flat** property enabled by default."
 msgstr ""
@@ -1500,9 +1478,8 @@ msgid ""
 "different setup process."
 msgstr ""
 
-#, fuzzy
 msgid "Room"
-msgstr "Räume"
+msgstr "Raum"
 
 #, fuzzy
 msgid "RoomManager"
@@ -1512,9 +1489,8 @@ msgstr "Projektverwaltung"
 msgid "RoomGroup"
 msgstr "RoomGroups"
 
-#, fuzzy
 msgid "Occluder"
-msgstr "Verdeckungsmodus"
+msgstr "Occluder"
 
 msgid ""
 "Geometry occlusion culling was replaced by raster :ref:`occlusion culling "
@@ -1555,7 +1531,7 @@ msgid ""
 msgstr ""
 
 msgid "ArrayMesh resource compatibility breakage"
-msgstr ""
+msgstr "ArrayMesh Ressourcen-Kompatibilitätsbruch"
 
 msgid ""
 "If you've saved an ArrayMesh resource to a ``.res`` or ``.tres`` file, the "
@@ -1567,6 +1543,8 @@ msgstr ""
 msgid ""
 "List of automatically renamed methods, properties, signals and constants"
 msgstr ""
+"Liste der automatisch umbenannten Methoden, Eigenschaften, Signale und "
+"Konstanten"
 
 msgid ""
 "The `editor/renames_map_3_to_4.cpp <https://github.com/godotengine/godot/"
@@ -1576,9 +1554,8 @@ msgid ""
 "automatically <doc_upgrading_to_godot_4_manual_rename>`."
 msgstr ""
 
-#, fuzzy
 msgid "Porting editor settings"
-msgstr "Editoreinstellungen"
+msgstr "Portierung von Editoreinstellungen"
 
 msgid ""
 "Godot 3.x and 4.0 use different editor settings files. This means their "

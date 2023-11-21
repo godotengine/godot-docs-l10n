@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,9 +99,8 @@ msgstr ""
 msgid ""
 "To do this, one must expose data and then rely on a parent context to "
 "initialize it:"
-msgstr "為此，必須將資料公開並讓這些類別通過母級上下文來初始化："
+msgstr "為此，必須將資料公開並讓這些類別通過母級本文來初始化："
 
-#, fuzzy
 msgid ""
 "Connect to a signal. Extremely safe, but should be used only to \"respond\" "
 "to behavior, not start it. By convention, signal names are usually past-"
@@ -114,7 +113,6 @@ msgstr ""
 msgid "Call a method. Used to start behavior."
 msgstr "呼叫方法。用於開始一個行為。"
 
-#, fuzzy
 msgid ""
 "Initialize a :ref:`Callable <class_Callable>` property. Safer than a method "
 "as ownership of the method is unnecessary. Used to start behavior."
@@ -128,9 +126,10 @@ msgstr "初始化 Node 或其他 Object 參照。"
 msgid "Initialize a NodePath."
 msgstr "初始化 NodePath。"
 
+#, fuzzy
 msgid ""
 "These options hide the points of access from the child node. This in turn "
-"keeps the child **loosely coupled** to its environment. One can re-use it in "
+"keeps the child **loosely coupled** to its environment. One can reuse it in "
 "another context without any extra changes to its API."
 msgstr ""
 "通過上面幾個步驟，便能將來自子節點的存取點隱藏起來。這樣便可以確保子節點對環"
@@ -165,13 +164,12 @@ msgid ""
 "is otherwise known as development hell. Writing code that relies on external "
 "documentation for one to use it safely is error-prone by default."
 msgstr ""
-"建議應儘量將資料保存在內部 (場景內部)，雖然將相依性放在外部脈絡上一樣代表這個"
-"節點需要依賴環境中的某些東西，就算依賴的這個外部脈絡是鬆散耦合的也一樣。專案"
+"建議應儘量將資料保存在內部 (場景內部)，雖然將相依性放在外部脈路上一樣代表這個"
+"節點需要依賴環境中的某些東西，就算依賴的這個外部脈路是鬆散耦合的也一樣。專案"
 "的設計理念應該避免這種狀況發生。若不避免的話，則程式碼的繼承關係也會強迫開發"
 "人員使用說明文件來追蹤物件在微觀尺度上的關係。這也可以稱為是開發地獄。撰寫需"
 "要依賴外部文件才能安全使用的程式碼很容易就會發生錯誤。"
 
-#, fuzzy
 msgid ""
 "To avoid creating and maintaining such documentation, one converts the "
 "dependent node (\"child\" above) into a tool script that implements "
@@ -202,7 +200,6 @@ msgstr ""
 "相依性有滿足嗎？其他的程式設計師，尤其是設計師與作家，會需要更清楚的指示來瞭"
 "解如何正確設定這些節點。"
 
-#, fuzzy
 msgid ""
 "So, why does all this complex switcharoo work? Well, because scenes operate "
 "best when they operate alone. If unable to work alone, then working with "
@@ -216,7 +213,7 @@ msgstr ""
 "那麼，為什麼還要搞得這麼複雜呢？這個嘛，因為場景在獨自運作的時候效果最好。若"
 "沒辦法獨自運作的話，則匿名地與其他場景運作則是次要最好的 (通過最小限度的硬參"
 "照，即鬆散耦合)。當然，當這些改動會導致類別與其他場景以無法預期的方式互動時就"
-"不可避免地會需要對類別做出修改，那麼接下來事情便開始崩潰。用這些拐彎抹角的方"
+"不可避免地會需要對類別做出修改，那麼接下來事情便開始當機。用這些拐彎抹角的方"
 "式的重點就是要避免造成這種狀況，也就是一個類別負面地影響了其他類別。"
 
 msgid ""
@@ -246,7 +243,6 @@ msgstr ""
 msgid "Choosing a node tree structure"
 msgstr "選擇一種節點樹架構"
 
-#, fuzzy
 msgid ""
 "So, a developer starts work on a game only to stop at the vast possibilities "
 "before them. They might know what they want to do, what systems they want to "
@@ -289,9 +285,8 @@ msgstr ""
 "接著我們會需要遊戲中真正的「世界」(2D 或 3D 世界)。可以是 Main 的子節點。另"
 "外，我們還需要遊戲的主 GUI 來管理專案所需的各種選單與小工具。"
 
-#, fuzzy
 msgid "Node2D/Node3D \"World\" (game_world.gd)"
-msgstr "Node2D/Spatial「World」(game_world.gd)"
+msgstr "Node2D/Node3D “世界”（game_world.gd）"
 
 msgid "Control \"GUI\" (gui.gd)"
 msgstr "Control「GUI」(gui.gd)"
@@ -324,7 +319,6 @@ msgid ""
 msgstr ""
 "... 則應該要建立一個 :ref:`Autoload「單例」節點 <doc_singletons_autoload>` 。"
 
-#, fuzzy
 msgid ""
 "For smaller games, a simpler alternative with less control would be to have "
 "a \"Game\" singleton that simply calls the :ref:`SceneTree."
@@ -344,7 +338,6 @@ msgstr ""
 "所有的 GUI 也都需要是單例。要嘛是會臨時放在「World」中的一部分，要嘛就是手動"
 "新增為根節點的子節點。否則，GUI 節點就必須在場景轉場時將自己刪除。"
 
-#, fuzzy
 msgid ""
 "If one has systems that modify other systems' data, one should define those "
 "as their own scripts or scenes rather than autoloads. For more information "
@@ -367,7 +360,6 @@ msgstr ""
 "是對其母節點有效果時才使用子母關係。在移除母節點時就代表應該合理地移除子節點"
 "嗎？如果不應該的話，則應該在層級關係中使用同級節點或其他的關係。"
 
-#, fuzzy
 msgid ""
 "In some cases, one needs these separated nodes to *also* position themselves "
 "relative to each other. One can use the :ref:`RemoteTransform "
@@ -479,7 +471,6 @@ msgstr ""
 "**宣告型** 解法：在這兩個節點間放一個 :ref:`Node <class_Node>` 。由於節點沒有"
 "變換，所以 Node 不會將這個資訊傳送給子節點。"
 
-#, fuzzy
 msgid ""
 "The **imperative** solution: Use the ``top_level`` property for the :ref:"
 "`CanvasItem <class_CanvasItem_property_top_level>` or :ref:`Node3D "
@@ -504,7 +495,6 @@ msgstr ""
 "「PlayerController」邏輯副本，而只需要自己的。因此，將這些東西從「World」中分"
 "開來在獨立的分支中有助於簡化管理遊戲連線以及之類的東西。"
 
-#, fuzzy
 msgid ""
 "The key to scene organization is to consider the SceneTree in relational "
 "terms rather than spatial terms. Are the nodes dependent on their parent's "

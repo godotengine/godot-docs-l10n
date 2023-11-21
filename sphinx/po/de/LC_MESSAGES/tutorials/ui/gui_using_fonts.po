@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -229,6 +229,65 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+msgid "Font outlines and shadows"
+msgstr "2D Beleuchtung und Schatten"
+
+msgid ""
+"Font outlines and shadows can be used to improve readability when the "
+"background color isn't known in advance. For instance, this is the case for "
+"HUD elements that are drawn over a 2D/3D scene."
+msgstr ""
+
+msgid ""
+"Font outlines are available in most nodes that derive from Control, in "
+"addition to :ref:`class_Label3D`."
+msgstr ""
+
+msgid ""
+"To enable outline for a font on a given node, configure the theme overrides "
+"**Font Outline Color** and **Outline Size** in the inspector. The result "
+"should look like this:"
+msgstr ""
+
+#, fuzzy
+msgid "Font outline example"
+msgstr "Beispiel für Geschosse"
+
+msgid ""
+"If using a font with MSDF rendering, its **MSDF Pixel Range** import option "
+"be set to at least *twice* the value of the outline size for outline "
+"rendering to look correct. Otherwise, the outline may appear to be cut off "
+"earlier than intended."
+msgstr ""
+
+msgid ""
+"Support for font shadows is more limited: they are only available in :ref:"
+"`class_Label` and :ref:`class_RichTextLabel`. Additionally, font shadows "
+"always have a hard edge (but you can reduce their opacity to make them look "
+"more subtle). To enable font shadows on a given node, configure the **Font "
+"Shadow Color**, **Shadow Offset X**, and **Shadow Offset Y** theme overrides "
+"in a Label or RichTextLabel node accordingly:"
+msgstr ""
+
+#, fuzzy
+msgid "Configuring font shadow in a Label node"
+msgstr "Den Build anpassen"
+
+#, fuzzy
+msgid "The result should look like this:"
+msgstr "Das Endergebnis sollte folgendermaßen aussehen:"
+
+#, fuzzy
+msgid "Font shadow example"
+msgstr "Windows Beispiel:"
+
+msgid ""
+"You can create local overrides to font display in Label nodes by creating a :"
+"ref:`class_LabelSettings` resource that you reuse across Label nodes. This "
+"resource takes priority over :ref:`theme properties <doc_gui_skinning>`."
+msgstr ""
+
+#, fuzzy
 msgid "Advanced font features"
 msgstr "Umgebungsmerkmale"
 
@@ -360,7 +419,7 @@ msgstr ""
 
 msgid ""
 "Mipmaps can be enabled on MSDF fonts as well. This can improve font "
-"rencering quality a little at smaller-than-default sizes, but MSDF fonts are "
+"rendering quality a little at smaller-than-default sizes, but MSDF fonts are "
 "already resistant to graininess out of the box."
 msgstr ""
 
@@ -415,6 +474,23 @@ msgid ""
 "mode. If you notice rendering issues on fonts downloaded from websites such "
 "as `Google Fonts <https://fonts.google.com>`__, try downloading the font "
 "from the font author's official website instead."
+msgstr ""
+
+msgid "Comparison of font rasterization methods"
+msgstr ""
+
+msgid ""
+"Comparison of font rasterization methods. From top to bottom: rasterized "
+"without oversampling, rasterized with oversampling, MSDF"
+msgstr ""
+
+msgid ""
+"To enable MSDF rendering for a given font, select it in the FileSystem dock, "
+"go to the Import dock, enable **Multichannel Signed Distance Field**, then "
+"click **Reimport**:"
+msgstr ""
+
+msgid "Enabling MSDF in the font's import options"
 msgstr ""
 
 #, fuzzy
@@ -473,9 +549,9 @@ msgid ""
 "system fonts is not supported on all platforms."
 msgstr ""
 
-#, fuzzy
 msgid "It's possible to use a system font as a fallback font too."
-msgstr "Ist es möglich Godot als Bibliothek zu nutzen?"
+msgstr ""
+"Es ist auch möglich, eine Systemschrift als Ausweichschrift zu verwenden."
 
 #, fuzzy
 msgid "Using icon fonts"
@@ -764,7 +840,7 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "There are 2 ways to use OpenType font featutres:"
+msgid "There are 2 ways to use OpenType font features:"
 msgstr "Es gibt zwei Wege Zertifikate zu erhalten:"
 
 msgid "**Globally on a font file**"
@@ -829,6 +905,13 @@ msgstr ""
 "unterstützt."
 
 msgid ""
+"However, loading system fonts on Android is unreliable as there is no "
+"official API for doing so. Godot has to rely on parsing system configuration "
+"files, which can be modified by third-party Android vendors. This may result "
+"in non-functional system font loading."
+msgstr ""
+
+msgid ""
 "System fonts are a different type of resource compared to imported fonts. "
 "They are never actually imported into the project, but are loaded at run-"
 "time. This has 2 benefits:"
@@ -853,8 +936,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Create a SystemFont resource in the location where you desire to use the "
-"system font:"
+"Create a :ref:`class_SystemFont` resource in the location where you desire "
+"to use the system font:"
 msgstr ""
 
 #, fuzzy
@@ -935,9 +1018,8 @@ msgstr "``primitive``"
 msgid "Comic Sans MS"
 msgstr ""
 
-#, fuzzy
 msgid "Apple Chancery"
-msgstr "Übernehmen Sie die Änderungen."
+msgstr "Apple-Kanzlei"
 
 #, fuzzy
 msgid "Dancing Script"
@@ -982,6 +1064,12 @@ msgid ""
 "depends on the distribution. This means that on different Linux "
 "distributions, different fonts may be displayed for a given system font name "
 "or alias."
+msgstr ""
+
+msgid ""
+"It is also possible to load fonts at runtime even if they aren't installed "
+"on the system. See :ref:`Runtime loading and saving "
+"<doc_runtime_file_loading_and_saving_fonts>` for details."
 msgstr ""
 
 #, fuzzy
@@ -1120,7 +1208,7 @@ msgstr ""
 msgid ""
 "To use existing text as a baseline for prerendering, go to the **Glyphs from "
 "the Character Map** sub-tab of the Advanced Import Settings dialog, then "
-"*dobule-click* character sets to be enabled on the right:"
+"*double-click* character sets to be enabled on the right:"
 msgstr ""
 
 msgid ""

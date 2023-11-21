@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,6 +40,12 @@ msgid ""
 msgstr ""
 "DirectDraw Surface（\\ ``.dds``\\ ）——如果纹理中存在 mipmap，则直接加载。可以"
 "使用自定义 mipmap 制作特效。"
+
+msgid ""
+"Khronos Texture (``.ktx``) - Decoding is done using `libktx <https://github."
+"com/KhronosGroup/KTX-Software>`__. Only supports 2D images. Cubemaps, "
+"texture arrays and de-padding are not supported."
+msgstr ""
 
 msgid ""
 "OpenEXR (``.exr``) - Supports HDR (highly recommended for panorama skies)."
@@ -124,14 +130,13 @@ msgid ""
 "dock. Some of these options are only visible with certain compression modes."
 msgstr ""
 
-#, fuzzy
 msgid "Changing import type"
-msgstr "更改导入资源类型"
+msgstr "更改导入类型"
 
 msgid ""
 "It is possible to choose other types of imported resources in the Import "
 "dock:"
-msgstr ""
+msgstr "可以在“导入”面板中选择其他导入资源的类型："
 
 msgid ""
 "**BitMap:** 1-bit monochrome texture (intended to be used as a click mask "
@@ -195,7 +200,7 @@ msgid ""
 msgstr ""
 
 msgid "Detect 3D"
-msgstr "Detect 3D（检测 3D）"
+msgstr "检测 3D"
 
 msgid ""
 "The default import options (no mipmaps and **Lossless** compression) are "
@@ -207,11 +212,17 @@ msgid ""
 "`doc_importing_images_detect_3d_compress_to` is changed. The texture is also "
 "reimported automatically."
 msgstr ""
+"默认的导入选项（不带 mipmap 并且使用 **Lossless** 压缩）适合 2D，对于大多数 "
+"3D 项目而言并不理想。\\ **检测 3D**\\ 能够让 Godot 关注纹理在 3D 场景中的使用"
+"（例如用作 :ref:`class_BaseMaterial3D` 的纹理）。一旦使用，就会将部分导入选项"
+"进行修改，这样纹理标志就对 3D 更友好。除非修改了 :ref:"
+"`doc_importing_images_detect_3d_compress_to`\\ ，否则此时就会启用 mipmap 并将"
+"压缩模式修改为 **VRAM Compressed**\\ 。纹理会自动进行重新导入。"
 
 msgid ""
 "A message is printed to the Output panel when a texture is detected to be "
 "used in 3D."
-msgstr ""
+msgstr "检测到纹理在 3D 中使用时会在“输出”面板中打印一个消息。"
 
 msgid ""
 "If you run into quality issues when a texture is detected to be used in 3D "
@@ -222,6 +233,11 @@ msgid ""
 "3D**, as mipmap generation remains enabled to prevent textures from looking "
 "grainy at a distance."
 msgstr ""
+"如果纹理检测到在 3D 中使用后遇到了质量问题（例如像素风纹理），请在用于 3D 之"
+"前修改 :ref:`doc_importing_images_detect_3d_compress_to` 选项，或者在用于 3D "
+"之后将 :ref:`doc_importing_images_compress_mode` 修改为 **Lossless**\\ 。这样"
+"比禁用\\ **检测 3D** 更好，因为仍然会启用 mipmap 生成，从远处观察纹理就不会感"
+"觉模糊。"
 
 msgid "Import options"
 msgstr "导入选项"
@@ -229,7 +245,7 @@ msgstr "导入选项"
 msgid ""
 "In Godot 4.0, changing the texture filter and repeat mode is no longer done "
 "in the import options."
-msgstr ""
+msgstr "在 Godot 4.0 中，对纹理过滤模式以及重复模式的修改不再位于导入选项中。"
 
 msgid ""
 "Instead, texture filter and repeat modes are changed in the CanvasItem "
@@ -239,20 +255,22 @@ msgid ""
 "uniform using hints described in the :ref:`doc_shading_language` "
 "documentation."
 msgstr ""
+"现在，2D 中需要在 CanvasItem 的属性中对纹理过滤模式和重复模式进行修改（项目设"
+"置中可以设置默认值），3D 中则是\\ :ref:`针对材质进行配置 "
+"<doc_standard_material_3d_sampling>`\\ 。在自定义着色器中，\\ ``sampler2D`` "
+"uniform 的过滤和重复模式使用提示修改，见 :ref:`doc_shading_language` 文档。"
 
-#, fuzzy
 msgid "Compress > Mode"
-msgstr "压缩模式"
+msgstr "压缩 > 模式"
 
 msgid ""
 "Images are one of the largest assets in a game. To handle them efficiently, "
 "they need to be compressed. Godot offers several compression methods, "
 "depending on the use case."
 msgstr ""
-"图像是游戏中最大的资产之一. 为了有效地处理它们, 它们被需要压缩.Godot根据使用"
-"情况提供了几种压缩方法."
+"图像是游戏中最大的资产之一。要实现高效的处理，就需要进行压缩。Godot 提供了很"
+"多压缩方法，可以根据实际情况选用。"
 
-#, fuzzy
 msgid ""
 "**Lossless:** This is the default and most common compression mode for 2D "
 "assets. It shows assets without any kind of artifacting, and disk "
@@ -260,21 +278,20 @@ msgid ""
 "than VRAM Compression, though. This is also the recommended setting for "
 "pixel art."
 msgstr ""
-"**无损压缩:** 这是 2D 资产最常用的压缩方式. 显示的资产不会失真, 并且磁盘压缩"
-"率也不错. 但是, 它占用的显存比VRAM压缩多得多. 这是像素画的推荐设置."
+"**Lossless：**\\ 无损压缩。这是 2D 资产的默认压缩模式，也是最常用的压缩模式。"
+"显示资产时不会有任何失真，磁盘压缩也比较合适。但如果与 VRAM 压缩相比，使用的"
+"显存就明显要更多。这也是像素画的推荐设置。"
 
-#, fuzzy
 msgid ""
 "**Lossy:** This is a good choice for large 2D assets. It has some artifacts, "
 "but less than VRAM compression and the file size is several times lower "
 "compared to Lossless or VRAM Uncompressed. Video memory usage isn't "
 "decreased by this mode; it's the same as with Lossless or VRAM Uncompressed."
 msgstr ""
-"**有损压缩:** 对于比较大的 2D 资产是一个好的选择. 只是会有一些失真, 但比 "
-"VRAM 压缩少, 文件大小比无损或未压缩低好几倍. 此模式不会降低视频内存使用量, 它"
-"与无损压缩或未压缩相同."
+"**Lossy：**\\ 有损压缩。适合较大的 2D 资产。会有一些失真，但是比 VRAM 压缩要"
+"少，文件大小比无损压缩以及 VRAM 未压缩要小好几倍。这个模式不会降低显存占用；"
+"与无损压缩和 VRAM 未压缩相同。"
 
-#, fuzzy
 msgid ""
 "**VRAM Compressed:** This is the default and most common compression mode "
 "for 3D assets. Size on disk is reduced and video memory usage is also "
@@ -282,15 +299,16 @@ msgid ""
 "should be avoided for 2D as it exhibits noticeable artifacts, especially for "
 "lower-resolution textures."
 msgstr ""
-"**VRAM压缩:** 这是3D资产最常见的压缩方式. 可以减小磁盘文件的大小, 同时大大减"
-"少显存使用量(通常是4到6倍). 但 2D 资产应该避免使用此模式, 因为它会出现明显的"
-"失真."
+"**VRAM Compressed：**\\ VRAM 压缩。这是 3D 资产的默认压缩模式，也是最常用的压"
+"缩模式。会降低磁盘上的大小，显存占用也会显著降低（通常是 4 到 6 倍）。应该避"
+"免在 2D 中使用这个模式，因为会有明显的失真，在低分辨率纹理上尤为明显。"
 
-#, fuzzy
 msgid ""
 "**VRAM Uncompressed:** Only useful for formats that can't be compressed, "
 "such as raw floating-point images."
-msgstr "未压缩: 仅适用于无法压缩的格式(例如 raw float 图片)."
+msgstr ""
+"**VRAM Uncompressed：**\\ VRAM 未压缩。仅适用于不能压缩的格式，例如原始浮点数"
+"图像。"
 
 msgid ""
 "**Basis Universal:** This alternative VRAM compression mode encodes the "
@@ -301,22 +319,25 @@ msgid ""
 "Universal does not support floating-point image formats (the engine will "
 "internally fall back to VRAM Compressed instead)."
 msgstr ""
+"**Basis Universal：**\\ 这也是一种 VRAM 压缩模式，编码后的纹理格式为能够在加"
+"载时转码为大多数 GPU 压缩格式。这样得到的文件就很小，能够利用 VRAM 压缩，但相"
+"对于 VRAM 压缩而言质量较差，压缩耗时也更长。显存占用通常和 VRAM 压缩相同。"
+"Basis Universal 不支持浮点数图像格式（引擎会在内部回退至 VRAM 压缩）。"
 
 msgid ""
 "Even in 3D, \"pixel art\" textures should have VRAM compression disabled as "
 "it will negatively affect their appearance, without improving performance "
 "significantly due to their low resolution."
 msgstr ""
-"即使在3D中,\"像素艺术 \"纹理也应该禁用VRAM压缩, 因为这会对其外观产生负面影"
-"响, 而不会因为其低分辨率而显著提高性能."
+"即便在 3D 中，“像素画”纹理也应该禁用 VRAM 压缩，因为压缩会对外观产生负面影"
+"响，较低的分辨率也无法得到显著的性能提升。"
 
-#, fuzzy
 msgid ""
 "In this table, each of the 5 options are described together with their "
 "advantages and disadvantages (|good| = best, |bad| = worst):"
 msgstr ""
-"这张表将四个选项中每一个的优缺点列在了一起（\\ |good| = 最好、\\ |bad| = 最"
-"差）："
+"这张表对这五个选项进行了横向比较，列出了各自的优缺点（\\ |good| = 最好、\\ |"
+"bad| = 最差）："
 
 msgid "good"
 msgstr "good"
@@ -324,50 +345,44 @@ msgstr "good"
 msgid "bad"
 msgstr "bad"
 
-#, fuzzy
 msgid "Compress mode"
 msgstr "压缩模式"
 
-#, fuzzy
 msgid "Lossless"
-msgstr "无损压缩"
+msgstr "Lossless"
 
 msgid "Lossy"
-msgstr ""
+msgstr "Lossy"
 
-#, fuzzy
 msgid "VRAM Compressed"
-msgstr "压缩"
+msgstr "VRAM Compressed"
 
-#, fuzzy
 msgid "VRAM Uncompressed"
-msgstr "未压缩"
+msgstr "VRAM Uncompressed"
 
 msgid "Basis Universal"
-msgstr ""
+msgstr "Basis Universal"
 
 msgid "**Description**"
 msgstr "**描述**"
 
 msgid "Stored as Lossless WebP / PNG"
-msgstr "存储为无损WebP / PNG"
+msgstr "存储为无损 WebP / PNG"
 
 msgid "Stored as Lossy WebP"
-msgstr "存储为有损的WebP"
+msgstr "存储为有损 WebP"
 
-#, fuzzy
 msgid "Stored as S3TC, BPTC or ETC2 depending on platform"
-msgstr "根据平台不同, 存储为S3TC/BC或PVRTC/ETC"
+msgstr "根据平台不同，存储为 S3TC、BPTC 或 ETC2"
 
 msgid "Stored as raw pixels"
 msgstr "存储为原始像素"
 
 msgid "Transcoded to VRAM Compressed format"
-msgstr ""
+msgstr "转码至 VRAM Compressed 格式"
 
-#, fuzzy
 msgid "**Size on disk**"
-msgstr "磁盘占用"
+msgstr "**磁盘占用**"
 
 msgid "|regular| Small"
 msgstr "|regular| 小"
@@ -375,23 +390,20 @@ msgstr "|regular| 小"
 msgid "regular"
 msgstr "regular"
 
-#, fuzzy
 msgid "|good| Very small"
 msgstr "|good| 非常小"
 
 msgid "|bad| Large"
-msgstr "|bad| 巨大"
+msgstr "|bad| 大"
 
-#, fuzzy
 msgid "**Memory usage**"
-msgstr "内存占用"
+msgstr "**内存占用**"
 
 msgid "|good| Small"
 msgstr "|good| 小"
 
-#, fuzzy
 msgid "**Performance**"
-msgstr "**性能：**"
+msgstr "**性能**"
 
 msgid "|regular| Normal"
 msgstr "|regular| 普通"
@@ -399,9 +411,8 @@ msgstr "|regular| 普通"
 msgid "|good| Fast"
 msgstr "|good| 快"
 
-#, fuzzy
 msgid "**Quality loss**"
-msgstr "质量损失"
+msgstr "**质量损失**"
 
 msgid "|good| None"
 msgstr "|good| 无"
@@ -412,59 +423,56 @@ msgstr "|regular| 轻微"
 msgid "|bad| Moderate"
 msgstr "|bad| 中等"
 
-#, fuzzy
 msgid "**Load time**"
-msgstr "加载时间"
+msgstr "**加载时间**"
 
 msgid "|bad| Slow"
 msgstr "|bad| 慢"
 
 msgid "Estimated memory usage for a single RGBA8 texture with mipmaps enabled:"
-msgstr ""
+msgstr "单张 RGBA8 纹理启用 mipmap 后的预估内存占用："
 
-#, fuzzy
 msgid "Texture size"
-msgstr "纹理尺寸限制"
+msgstr "纹理大小"
 
 msgid "**128×128**"
-msgstr ""
+msgstr "**128×128**"
 
 msgid "|good| 85 KiB"
-msgstr ""
+msgstr "|good| 85 KiB"
 
 msgid "|good| 21 KiB"
-msgstr ""
+msgstr "|good| 21 KiB"
 
 msgid "**256×256**"
-msgstr ""
+msgstr "**256×256**"
 
 msgid "|good| 341 KiB"
-msgstr ""
+msgstr "|good| 341 KiB"
 
 msgid "**512×512**"
-msgstr ""
+msgstr "**512×512**"
 
 msgid "|good| 1.33 MiB"
-msgstr ""
+msgstr "|good| 1.33 MiB"
 
 msgid "**1024×1024**"
-msgstr ""
+msgstr "**1024×1024**"
 
-#, fuzzy
 msgid "|regular| 5.33 MiB"
-msgstr "|regular| 轻微"
+msgstr "|regular| 5.33 MiB"
 
 msgid "**2048×2048**"
-msgstr ""
+msgstr "**2048×2048**"
 
 msgid "|bad| 21.33 MiB"
-msgstr ""
+msgstr "|bad| 21.33 MiB"
 
 msgid "**4096×4096**"
-msgstr ""
+msgstr "**4096×4096**"
 
 msgid "|bad| 85.33 MiB"
-msgstr ""
+msgstr "|bad| 85.33 MiB"
 
 msgid ""
 "In the above table, memory usage will be reduced by 25% for images that do "
@@ -669,7 +677,7 @@ msgstr ""
 
 msgid ""
 "The downside of mipmaps is that they increase memory usage by roughly 33%."
-msgstr ""
+msgstr "mipmaps 的缺点是会增加大约 33% 的内存使用量。"
 
 msgid ""
 "It's recommended to enable mipmaps in 3D. However, in 2D, this should only "
@@ -738,7 +746,6 @@ msgstr ""
 msgid "Process > Premult Alpha"
 msgstr "预乘Alpha"
 
-#, fuzzy
 msgid ""
 "An alternative to fixing darkened borders with **Fix Alpha Border** is to "
 "use premultiplied alpha. By enabling this option, the texture will be "
@@ -747,7 +754,7 @@ msgid ""
 msgstr ""
 "另一种修复深色边界的方法是使用预乘 alpha。启用该选项后，纹理将被转换为此格"
 "式。请注意，在画布项（canvas items）上使用预乘 ALPHA 混合模式需要先创建材质，"
-"并开启“PREMULT ALPHA”混合模式。"
+"并开启“PREMULT ALPHA”混合模式："
 
 msgid ""
 "In 2D, a :ref:`class_CanvasItemMaterial` will need to be created and "
@@ -930,6 +937,12 @@ msgid ""
 "When working with 3D models using a low-poly style and plain colors, you can "
 "rely on vertex colors instead of textures to represent colors on the model's "
 "surfaces."
+msgstr ""
+
+msgid ""
+"Images can be loaded and saved at runtime using :ref:`runtime file loading "
+"and saving <doc_runtime_file_loading_and_saving_images>`, including from an "
+"exported project."
 msgstr ""
 
 msgid "Translation status"

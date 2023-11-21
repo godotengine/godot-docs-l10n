@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -134,35 +134,29 @@ msgstr ""
 "который создает узлы и добавляет их как дочерние элементы с помощью "
 "``add_child()``."
 
-#, fuzzy
 msgid ""
 "We often pair a scene with a scripted root node that makes use of the "
 "scene's nodes. As such, the script extends the scene by adding behavior "
 "through imperative code."
 msgstr ""
-"Почему все это важно для организации сцены? Потому что сцены *являются* "
-"объектами. Вы обычно объединяете в пару сцену и корневой сценарный "
-"(скриптовый) узел, что позволяет использовать вложенные узлы. Таким образом, "
-"сцена часто является расширением сценария."
+"Часто мы связываем сцену с корневым узлом, который использует узлы сцены. "
+"Таким образом, сценарий расширяет сцену, добавляя поведение с помощью "
+"императивного кода."
 
 msgid "The content of a scene helps to define:"
 msgstr "Содержание сцены позволяет определить:"
 
-#, fuzzy
 msgid "What nodes are available to the script."
-msgstr "Какие узлы доступны сценарию (скрипту)"
+msgstr "Какие узлы доступны скрипту."
 
-#, fuzzy
 msgid "How they are organized."
-msgstr "Как они организованы"
+msgstr "Как они организованы."
 
-#, fuzzy
 msgid "How they are initialized."
-msgstr "Как они инициализированы"
+msgstr "Как они инициализированы."
 
-#, fuzzy
 msgid "What signal connections they have with each other."
-msgstr "Какие сигнальные связи они имеют друг с другом"
+msgstr "Какие сигнальные связи они имеют друг с другом."
 
 msgid ""
 "Why is any of this important to scene organization? Because instances of "
@@ -189,4 +183,4 @@ msgstr ""
 "Большинство методов, описанных в этой серии best practices, основаны на этом."
 
 msgid "Translation status"
-msgstr "Translation status (статус перевода)"
+msgstr "Статус перевода"

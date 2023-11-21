@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,6 +34,8 @@ msgid ""
 "On Windows and Linux, you can run a Godot binary in a terminal by specifying "
 "its relative or absolute path."
 msgstr ""
+"在 Windows 和 Linux 上，您可以通過指定其相對或絕對路徑在終端中運作 Godot 可執"
+"行檔。"
 
 msgid ""
 "On macOS, the process is different due to Godot being contained within an ``."
@@ -44,41 +46,45 @@ msgid ""
 "bundle from ``Godot`` to another name, make sure to edit this command line "
 "accordingly."
 msgstr ""
+"在 macOS 上，由於 Godot 包含在 ``.app`` 包中，它是一個 *資料夾*，而不是檔，因"
+"此運作過程有所不同。要從 macOS 的終端運作 Godot 可執行檔，您必須 ``cd`` 到 "
+"Godot 應用套裝程式所在的資料夾，然後運作 ``Godot.app/Contents/MacOS/Godot``，"
+"並在後面加上相關命令列參數。如果你把應用包從 ``Godot`` 改名為其他名稱，則需相"
+"應地編輯這個命令列。"
 
 msgid "Command line reference"
 msgstr "命令列參照說明"
 
-#, fuzzy
 msgid "release"
-msgstr "\\ **release**"
+msgstr "release"
 
-#, fuzzy
 msgid "debug"
-msgstr "偵錯"
+msgstr "除錯"
 
-#, fuzzy
 msgid "editor"
 msgstr "編輯器"
 
 msgid "**Legend**"
-msgstr ""
+msgstr "**圖例解釋**"
 
 msgid ""
 "|release| Available in editor builds, debug export templates and release "
 "export templates."
-msgstr ""
+msgstr "|release|可用於編輯器版本、偵錯匯出範本和發布匯出模板。"
 
 msgid "|debug| Available in editor builds and debug export templates only."
-msgstr ""
+msgstr "|debug|僅在編輯器建置和除錯匯出模板中可用。"
 
 msgid "|editor| Only available in editor builds."
-msgstr ""
+msgstr "|editor|僅在編輯器版本中可用。"
 
 msgid ""
 "Note that unknown command line arguments have no effect whatsoever. The "
 "engine will **not** warn you when using a command line argument that doesn't "
 "exist with a given build type."
 msgstr ""
+"請注意，未知的命令列參數不會產生任何影響。當命令列中使用了不存在的建構型別"
+"時，引擎不會發出警告。"
 
 msgid "**General options**"
 msgstr "**通用選項**"
@@ -89,33 +95,27 @@ msgstr "Command"
 msgid "Description"
 msgstr "說明"
 
-#, fuzzy
 msgid "``-h``, ``--help``"
 msgstr "``-h``, ``--help``, ``/?``"
 
-#, fuzzy
 msgid "|release| Display the list of command line options."
 msgstr "顯示所有可用的命令列選項。"
 
 msgid "``--version``"
 msgstr "``--version``"
 
-#, fuzzy
 msgid "|release| Display the version string."
 msgstr "顯示版本資訊。"
 
 msgid "``-v``, ``--verbose``"
 msgstr "``-v``, ``--verbose``"
 
-#, fuzzy
 msgid "|release| Use verbose stdout mode."
 msgstr "使用詳細標準輸出 (Stdout) 模式。"
 
-#, fuzzy
 msgid "``-q``, ``--quiet``"
 msgstr "``-q``, ``--quit``"
 
-#, fuzzy
 msgid ""
 "|release| Quiet mode, silences stdout messages. Errors are still displayed."
 msgstr "靜默模式，不輸出任何標準輸出 (Stdout) 訊息。仍會顯示錯誤。"
@@ -123,7 +123,6 @@ msgstr "靜默模式，不輸出任何標準輸出 (Stdout) 訊息。仍會顯�
 msgid "**Run options**"
 msgstr "**執行選項**"
 
-#, fuzzy
 msgid "``--``, ``++``"
 msgstr "``-q``, ``--quit``"
 
@@ -131,20 +130,21 @@ msgid ""
 "|release| Separator for user-provided arguments. Following arguments are not "
 "used by the engine, but can be read from ``OS.get_cmdline_user_args()``."
 msgstr ""
+"|release|使用者提供的參數的分隔符號。以下參數不被引擎使用，但可以從“OS."
+"get_cmdline_user_args()”讀取。"
 
 msgid "``-e``, ``--editor``"
 msgstr "``-e``, ``--editor``"
 
 msgid "|editor| Start the editor instead of running the scene."
-msgstr ""
+msgstr "|editor|啟動編輯器而不是運作場景。"
 
 msgid "``-p``, ``--project-manager``"
 msgstr "``-p``, ``--project-manager``"
 
 msgid "|editor| Start the Project Manager, even if a project is auto-detected."
-msgstr ""
+msgstr "|editor|即使自動偵測到專案，也要啟動專案管理器。"
 
-#, fuzzy
 msgid "``--debug-server <uri>``"
 msgstr "``--video-driver <driver>``"
 
@@ -152,24 +152,22 @@ msgid ""
 "|editor| Start the editor debug server (``<protocol>://<host/IP>[:<port>]``, "
 "e.g. ``tcp://127.0.0.1:6007``)"
 msgstr ""
+"|editor|啟動編輯器除錯伺服器（``<protocol>://<host/IP>[:<port>]``，例如"
+"``tcp://127.0.0.1:6007``）'"
 
-#, fuzzy
 msgid "``--quit``"
 msgstr "``--quiet``"
 
-#, fuzzy
 msgid "|release| Quit after the first iteration."
 msgstr "首次迭代後退出。"
 
-#, fuzzy
 msgid "``--quit-after``"
 msgstr "``--quiet``"
 
 msgid ""
 "|release| Quit after the given number of iterations. Set to 0 to disable."
-msgstr ""
+msgstr "|release|在給定的迭代次數後退出。設定為 0 以停用。"
 
-#, fuzzy
 msgid "``-l``, ``--language <locale>``"
 msgstr "``-l <locale>``, ``--language <locale>``"
 
@@ -179,11 +177,13 @@ msgid ""
 "language code in lowercase and the rest is optional. See :ref:`doc_locales` "
 "for more details."
 msgstr ""
+"|release|使用特定的區域設定。 ``<locale>`` 遵循格式 "
+"``language_Script_COUNTRY_VARIANT`` ，其中 language 是小寫的 2 或 3 個字母的"
+"語言程式碼，其餘部分是可選的。請參閱 :ref:`doc_locales` 以了解更多詳細資訊。"
 
 msgid "``--path <directory>``"
 msgstr "``--path <directory>``"
 
-#, fuzzy
 msgid ""
 "|release| Path to a project (``<directory>`` must contain a 'project.godot' "
 "file)."
@@ -192,102 +192,88 @@ msgstr "專案路徑（<directory> 內必須包含一個「project.godot」檔�
 msgid "``-u``, ``--upwards``"
 msgstr "``-u``, ``--upwards``"
 
-#, fuzzy
 msgid "|release| Scan folders upwards for 'project.godot' file."
 msgstr "向上層資料夾搜尋「project.godot」檔案。"
 
 msgid "``--main-pack <file>``"
 msgstr "``--main-pack <file>``"
 
-#, fuzzy
 msgid "|release| Path to a pack (.pck) file to load."
 msgstr "欲載入之 Pack (.pck) 檔。"
 
 msgid "``--render-thread <mode>``"
 msgstr "``--render-thread <mode>``"
 
-#, fuzzy
 msgid ""
 "|release| Render thread mode ('unsafe', 'safe', 'separate'). See :ref:"
 "`Thread Model <class_ProjectSettings_property_rendering/driver/threads/"
 "thread_model>` for more details."
 msgstr ""
-"算繪器執行緒模式（「unsafe」、「safe」、「separate」）。詳細請參考 :ref:`執行"
+"渲染器執行緒模式（「unsafe」、「safe」、「separate」）。詳細請參考 :ref:`執行"
 "緒模型 <class_ProjectSettings_property_rendering/threads/thread_model>` 。"
 
 msgid "``--remote-fs <address>``"
 msgstr "``--remote-fs <address>``"
 
-#, fuzzy
 msgid "|release| Remote filesystem (``<host/IP>[:<port>]`` address)."
 msgstr "遠端檔案系統（ ``<host/IP>[:<port>]`` 位址）。"
 
-#, fuzzy
 msgid "``--remote-fs-password <password>``"
 msgstr "``--remote-fs <address>``"
 
 msgid "|release| Password for remote filesystem."
-msgstr ""
+msgstr "|release|遠端檔案系統的密碼。"
 
 msgid "``--audio-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
-#, fuzzy
 msgid ""
 "|release| Audio driver. Use ``--help`` first to display the list of "
 "available drivers."
 msgstr "音效驅動程式。先指定 ``--help`` 以顯示所有可用的驅動程式。"
 
-#, fuzzy
 msgid "``--display-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
-#, fuzzy
 msgid ""
 "|release| Display driver (and rendering driver). Use ``--help`` first to "
 "display the list of available drivers."
 msgstr "視訊驅動程式。先指定 ``--help`` 以顯示所有可用的驅動程式。"
 
-#, fuzzy
 msgid "``--rendering-method <renderer>``"
 msgstr "``--render-thread <mode>``"
 
 msgid "|release| Renderer name. Requires driver support."
-msgstr ""
+msgstr "|release|渲染器名稱。需要驅動程式支援。"
 
-#, fuzzy
 msgid "``--rendering-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
-#, fuzzy
 msgid ""
 "|release| Rendering driver (depends on display driver). Use ``--help`` first "
 "to display the list of available drivers."
 msgstr "視訊驅動程式。先指定 ``--help`` 以顯示所有可用的驅動程式。"
 
 msgid "``--gpu-index <device_index>``"
-msgstr ""
+msgstr "``--gpu-index <裝置索引>``"
 
 msgid ""
 "|release| Use a specific GPU (run with ``--verbose`` to get available device "
 "list)."
-msgstr ""
+msgstr "|release|使用特定的 GPU（使用“--verbose”運作以取得可用裝置列表）。"
 
-#, fuzzy
 msgid "``--text-driver <driver>``"
 msgstr "``--video-driver <driver>``"
 
 msgid "|release| Text driver (Fonts, BiDi, shaping)."
-msgstr ""
+msgstr "|release|文字驅動程式（字形、BiDi、整形）。"
 
-#, fuzzy
 msgid "``--tablet-driver <driver>``"
 msgstr "``--audio-driver <driver>``"
 
 msgid "|release| Pen tablet input driver."
-msgstr ""
+msgstr "|release|手寫板輸入驅動程式。"
 
-#, fuzzy
 msgid "``--headless``"
 msgstr "``--remote-fs <address>``"
 
@@ -295,8 +281,9 @@ msgid ""
 "|release| Enable headless mode (``--display-driver headless --audio-driver "
 "Dummy``). Useful for servers and with ``--script``."
 msgstr ""
+"|release|啟用無頭模式（``--display-driver headless --audio-driver Dummy``）。"
+"對於伺服器和“--script”很有用。"
 
-#, fuzzy
 msgid "``--write-movie <file>``"
 msgstr "``--main-pack <file>``"
 
@@ -307,6 +294,10 @@ msgid ""
 "makes interaction more difficult. ``--quit-after`` can be used to specify "
 "the number of frames to write."
 msgstr ""
+"|release|以電影編寫的方式運作引擎（通常帶有 .avi 或 .png 副檔名）。 ``--"
+"fixed-fps`` 在啟用時被強制，但可用於更改電影 FPS。 ``--disable-vsync`` 可以加"
+"快電影寫入速度，但會使互動變得更加困難。 “--quit-after” 可用來指定要寫入的訊"
+"框數。"
 
 msgid "**Display options**"
 msgstr "**顯示選項**"
@@ -314,66 +305,56 @@ msgstr "**顯示選項**"
 msgid "``-f``, ``--fullscreen``"
 msgstr "``-f``, ``--fullscreen``"
 
-#, fuzzy
 msgid "|release| Request fullscreen mode."
 msgstr "指定全螢幕模式。"
 
 msgid "``-m``, ``--maximized``"
 msgstr "``-m``, ``--maximized``"
 
-#, fuzzy
 msgid "|release| Request a maximized window."
 msgstr "指定視窗最大化。"
 
 msgid "``-w``, ``--windowed``"
 msgstr "``-w``, ``--windowed``"
 
-#, fuzzy
 msgid "|release| Request windowed mode."
 msgstr "指定視窗模式。"
 
 msgid "``-t``, ``--always-on-top``"
 msgstr "``-t``, ``--always-on-top``"
 
-#, fuzzy
 msgid "|release| Request an always-on-top window."
 msgstr "指定永遠顯示於最上層之視窗。"
 
 msgid "``--resolution <W>x<H>``"
 msgstr "``--resolution <W>x<H>``"
 
-#, fuzzy
 msgid "|release| Request window resolution."
 msgstr "指定視窗解析度。"
 
 msgid "``--position <X>,<Y>``"
 msgstr "``--position <X>,<Y>``"
 
-#, fuzzy
 msgid "|release| Request window position."
 msgstr "指定視窗位置。"
 
-#, fuzzy
 msgid "``--screen <N>``"
 msgstr "``--frame-delay <ms>``"
 
-#, fuzzy
 msgid "|release| Request window screen."
 msgstr "指定視窗解析度。"
 
-#, fuzzy
 msgid "``--single-window``"
 msgstr "``--no-window``"
 
 msgid "|release| Use a single window (no separate subwindows)."
-msgstr ""
+msgstr "|release|使用單一視窗（沒有單獨的子視窗）。"
 
-#, fuzzy
 msgid "``--xr-mode <mode>``"
 msgstr "``--render-thread <mode>``"
 
 msgid "|release| Select XR mode ('default', 'off', 'on')."
-msgstr ""
+msgstr "|release|選擇 XR 模式（“預設”、“關閉”、“開啟”）。"
 
 msgid "**Debug options**"
 msgstr "**偵錯選項**"
@@ -381,14 +362,12 @@ msgstr "**偵錯選項**"
 msgid "``-d``, ``--debug``"
 msgstr "``-d``, ``--debug``"
 
-#, fuzzy
 msgid "|release| Debug (local stdout debugger)."
 msgstr "除錯（本機標準輸出 (Stdout) 除錯工具）。"
 
 msgid "``-b``, ``--breakpoints``"
 msgstr "``-b``, ``--breakpoints``"
 
-#, fuzzy
 msgid ""
 "|release| Breakpoint list as source::line comma-separated pairs, no spaces "
 "(use ``%20`` instead)."
@@ -397,20 +376,17 @@ msgstr "以 source::line，逗號分隔配對，無空白（顯示 %%20）來列
 msgid "``--profiling``"
 msgstr "``--profiling``"
 
-#, fuzzy
 msgid "|release| Enable profiling in the script debugger."
 msgstr "在腳本除錯工具中啟用分析。"
 
-#, fuzzy
 msgid "``--gpu-profile``"
 msgstr "``--profiling``"
 
 msgid ""
 "|release| Show a GPU profile of the tasks that took the most time during "
 "frame rendering."
-msgstr ""
+msgstr "|release|顯示影格渲染期間花費最多時間的工作的 GPU 設定檔。"
 
-#, fuzzy
 msgid "``--gpu-validation``"
 msgstr "``--debug-navigation``"
 
@@ -418,8 +394,8 @@ msgid ""
 "|release| Enable graphics API :ref:`validation layers "
 "<doc_vulkan_validation_layers>` for debugging."
 msgstr ""
+"|release|啟用圖形 API :ref:`驗證層 <doc_vulkan_validation_layers>` 進行除錯。"
 
-#, fuzzy
 msgid "``--gpu-abort``"
 msgstr "``--quiet``"
 
@@ -427,8 +403,9 @@ msgid ""
 "|debug| Abort on GPU errors (usually validation layer errors), may help see "
 "the problem if your system freezes."
 msgstr ""
+"|debug|在 GPU 錯誤（通常是驗證層錯誤）時中止，可能有助於在系統凍結時發現問"
+"題。"
 
-#, fuzzy
 msgid "``--remote-debug <uri>``"
 msgstr "``--remote-debug <address>``"
 
@@ -436,71 +413,62 @@ msgid ""
 "|release| Remote debug (``<protocol>://<host/IP>[:<port>]``, e.g. "
 "``tcp://127.0.0.1:6007``)."
 msgstr ""
+"|release|遠端偵錯（``<協定>://<主機/IP>[:<連接埠>]``，例如"
+"``tcp://127.0.0.1:6007``）。"
 
-#, fuzzy
 msgid "``--single-threaded-scene``"
 msgstr "``--render-thread <mode>``"
 
 msgid ""
 "|release| Scene tree runs in single-threaded mode. Sub-thread groups are "
 "disabled and run on the main thread."
-msgstr ""
+msgstr "|release|場景樹以單執行緒模式運作。子線程組被禁用並在主線程上運作。"
 
 msgid "``--debug-collisions``"
 msgstr "``--debug-collisions``"
 
-#, fuzzy
 msgid "|debug| Show collision shapes when running the scene."
 msgstr "執行場景時顯示碰撞區域。"
 
-#, fuzzy
 msgid "``--debug-paths``"
 msgstr "``--debug-navigation``"
 
-#, fuzzy
 msgid "|debug| Show path lines when running the scene."
 msgstr "執行場景時顯示碰撞區域。"
 
 msgid "``--debug-navigation``"
 msgstr "``--debug-navigation``"
 
-#, fuzzy
 msgid "|debug| Show navigation polygons when running the scene."
-msgstr "執行場景時顯示導航多邊形。"
+msgstr "執行場景時顯示導覽多邊形。"
 
-#, fuzzy
 msgid "``--debug-avoidance``"
 msgstr "``--debug-navigation``"
 
-#, fuzzy
 msgid "|debug| Show navigation avoidance debug visuals when running the scene."
-msgstr "執行場景時顯示導航多邊形。"
+msgstr "執行場景時顯示導覽多邊形。"
 
-#, fuzzy
 msgid "``--debug-stringnames``"
 msgstr "``--debug-collisions``"
 
 msgid ""
 "|debug| Print all StringName allocations to stdout when the engine quits."
-msgstr ""
+msgstr "|debug|當引擎退出時，將所有 StringName 分配列印到標準輸出。"
 
 msgid "``--frame-delay <ms>``"
 msgstr "``--frame-delay <ms>``"
 
-#, fuzzy
 msgid ""
 "|release| Simulate high CPU load (delay each frame by <ms> milliseconds)."
-msgstr "模擬 CPU 高負載（每幀延遲 <ms> 毫秒）。"
+msgstr "模擬 CPU 高負載（每影格延遲 <ms> 毫秒）。"
 
 msgid "``--time-scale <scale>``"
 msgstr "``--time-scale <scale>``"
 
-#, fuzzy
 msgid ""
 "|release| Force time scale (higher values are faster, 1.0 is normal speed)."
 msgstr "強制時間縮放（值越早則越快，1.0 為正常速度）。"
 
-#, fuzzy
 msgid "``--disable-vsync``"
 msgstr "``--disable-crash-handler``"
 
@@ -508,65 +476,59 @@ msgid ""
 "|release| Forces disabling of vertical synchronization, even if enabled in "
 "the project settings. Does not override driver-level V-Sync enforcement."
 msgstr ""
+"|release|強制停用垂直同步，即使在專案設定中啟用也是如此。不會覆蓋驅動程式層級"
+"的垂直同步強制。"
 
 msgid "``--disable-render-loop``"
 msgstr "``--disable-render-loop``"
 
-#, fuzzy
 msgid ""
 "|release| Disable render loop so rendering only occurs when called "
 "explicitly from script."
-msgstr "禁用算繪循環，將只在腳本內明確呼叫時才進行算繪。"
+msgstr "禁用渲染循環，將只在腳本內明確呼叫時才進行渲染。"
 
 msgid "``--disable-crash-handler``"
 msgstr "``--disable-crash-handler``"
 
-#, fuzzy
 msgid "|release| Disable crash handler when supported by the platform code."
-msgstr "若平台代碼支援，禁用 Crash Handler。"
+msgstr "若平台程式碼支援，禁用 Crash Handler。"
 
 msgid "``--fixed-fps <fps>``"
 msgstr "``--fixed-fps <fps>``"
 
-#, fuzzy
 msgid ""
 "|release| Force a fixed number of frames per second. This setting disables "
 "real-time synchronization."
 msgstr "強制固定數 FPS。該設定將禁用即時同步。"
 
 msgid "``--delta-smoothing <enable>``"
-msgstr ""
+msgstr "``--delta-smoothing <啟用>``"
 
 msgid ""
 "|release| Enable or disable frame delta smoothing ('enable', 'disable')."
-msgstr ""
+msgstr "|release|啟用或停用影格差異量平滑（「啟用」、「停用」）。"
 
 msgid "``--print-fps``"
 msgstr "``--print-fps``"
 
-#, fuzzy
 msgid "|release| Print the frames per second to the stdout."
 msgstr "在標準輸出上印出 FPS。"
 
 msgid "**Standalone tools**"
 msgstr "**獨立工具**"
 
-#, fuzzy
 msgid "``-s``, ``--script <script>``"
 msgstr "``-s <script>``, ``--script <script>``"
 
-#, fuzzy
 msgid "|release| Run a script."
 msgstr "執行腳本。"
 
 msgid "``--check-only``"
 msgstr "``--check-only``"
 
-#, fuzzy
 msgid "|release| Only parse for errors and quit (use with ``--script``)."
 msgstr "僅解析錯誤並退出（與 ``--script`` 一起使用）。"
 
-#, fuzzy
 msgid "``--export-release <preset> <path>``"
 msgstr "``--export-pack <preset> <path>``"
 
@@ -577,18 +539,19 @@ msgid ""
 "include the filename for the binary (e.g. 'builds/game.exe'). The target "
 "directory should exist."
 msgstr ""
+"|editor|使用給定的預設和配對的發布模板匯出專案。預設名稱應與export_presets."
+"cfg 中定義的名稱相符。 ``<path>`` 應該是絕對路徑或相對於專案目錄的路徑，並包"
+"含二進位檔案的檔案名稱（例如「builds/game.exe」）。目標目錄應該存在。"
 
-#, fuzzy
 msgid "``--export-debug <preset> <path>``"
 msgstr "``--export-pack <preset> <path>``"
 
 msgid "|editor| Like ``--export-release``, but use debug template."
-msgstr ""
+msgstr "|editor|類似於“--export-release”，但使用除錯模板。"
 
 msgid "``--export-pack <preset> <path>``"
 msgstr "``--export-pack <preset> <path>``"
 
-#, fuzzy
 msgid ""
 "|editor| Like ``--export-release``, but only export the game pack for the "
 "given preset. The ``<path>`` extension determines whether it will be in PCK "
@@ -599,24 +562,22 @@ msgstr ""
 "<doc_introduction_to_the_buildsystem_tools>` )。"
 
 msgid "``--convert-3to4 [<max_file_kb>] [<max_line_size>]``"
-msgstr ""
+msgstr "``--convert-3to4 [<最大檔案kb值>] [<最大行數>]``"
 
 msgid "|editor| Convert project from Godot 3.x to Godot 4.x."
-msgstr ""
+msgstr "|editor|將專案從 Godot 3.x 轉換為 Godot 4.x。"
 
 msgid "``--validate-conversion-3to4 [<max_file_kb>] [<max_line_size>]``"
-msgstr ""
+msgstr "``--validate-conversion-3to4 [<最大檔案kb值>] [<最大行數>]``"
 
 msgid ""
 "|editor| Show what elements will be renamed when converting project from "
 "Godot 3.x to Godot 4.x."
-msgstr ""
+msgstr "|editor|顯示將專案從 Godot 3.x 轉換為 Godot 4.x 時將重新命名哪些元素。"
 
-#, fuzzy
 msgid "``--doctool [<path>]``"
 msgstr "``--doctool <path>``"
 
-#, fuzzy
 msgid ""
 "|editor| Dump the engine API reference to the given ``<path>`` in XML "
 "format, merging if existing files are found."
@@ -628,9 +589,8 @@ msgid "``--no-docbase``"
 msgstr "``--no-docbase``"
 
 msgid "|editor| Disallow dumping the base types (used with ``--doctool``)."
-msgstr ""
+msgstr "|editor|禁止轉儲基本型別（與“--doctool”一起使用）。"
 
-#, fuzzy
 msgid "``--gdscript-docs <path>``"
 msgstr "``--doctool <path>``"
 
@@ -639,6 +599,8 @@ msgid ""
 "inline documentation in the GDScript files found in <path> (used with ``--"
 "doctool``)."
 msgstr ""
+"|editor|不是轉儲引擎 API，而是從 <path> 找到的 GDScript 檔案中的行內檔案產生 "
+"API 引用（與「--doctool」一起使用）。"
 
 msgid "``--build-solutions``"
 msgstr "``--build-solutions``"
@@ -647,17 +609,20 @@ msgid ""
 "|editor| Build the scripting solutions (e.g. for C# projects). Implies ``--"
 "editor`` and requires a valid project to edit."
 msgstr ""
+"|editor|建置腳本解決方案（例如，針對 C# 專案）。暗示“--editor”並且需要一個有"
+"效的專案來編輯。"
 
 msgid "``--dump-gdextension-interface``"
-msgstr ""
+msgstr "``--dump-gdextension-interface``"
 
 msgid ""
 "|editor| Generate GDExtension header file 'gdnative_interface.h' in the "
 "current folder. This file is the base file required to implement a "
 "GDExtension."
 msgstr ""
+"|editor|在目前資料夾中產生GDExtension頭檔'gdnative_interface.h'。該檔案是實"
+"作 GDExtension 所需的基本檔案。"
 
-#, fuzzy
 msgid "``--dump-extension-api``"
 msgstr "``--gdnative-generate-json-api``"
 
@@ -665,8 +630,9 @@ msgid ""
 "|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
 "'extension_api.json' in the current folder."
 msgstr ""
+"|editor|在目前資料夾中為名為「extension_api.json」的 GDExtension 綁定產生 "
+"Godot API 的 JSON 轉儲。"
 
-#, fuzzy
 msgid "``--validate-extension-api <path>``"
 msgstr "``--gdnative-generate-json-api``"
 
@@ -675,14 +641,15 @@ msgid ""
 "a previous version of the engine to ensure API compatibility. If "
 "incompatibilities or errors are detected, the return code will be non-zero."
 msgstr ""
+"|editor|驗證從先前版本的引擎轉儲的擴充 API 檔案（使用上面的選項）以確保 API "
+"相容性。如果偵測到不相容或錯誤，回傳程式碼將不為零。"
 
 msgid "``--benchmark``"
-msgstr ""
+msgstr "``--benchmark``"
 
 msgid "|editor| Benchmark the run time and print it to console."
-msgstr ""
+msgstr "|editor|對運作時間進行基準測試並將其列印到控制台。"
 
-#, fuzzy
 msgid "``--benchmark-file <path>``"
 msgstr "``--doctool <path>``"
 
@@ -690,11 +657,12 @@ msgid ""
 "|editor| Benchmark the run time and save it to a given file in JSON format. "
 "The path should be absolute."
 msgstr ""
+"|editor|對運作時間進行基準測試並將其以 JSON 格式儲存到給定檔案中。該路徑應該"
+"是絕對的。"
 
 msgid "Path"
 msgstr "路徑"
 
-#, fuzzy
 msgid ""
 "It is recommended to place your Godot editor binary in your ``PATH`` "
 "environment variable, so it can be executed easily from any place by typing "
@@ -711,6 +679,9 @@ msgid ""
 "(on macOS). This will automatically make the copy of Godot installed "
 "available in the ``PATH``:"
 msgstr ""
+"要在 Windows 或 macOS 上輕鬆實作這一目標，可以使用 `Scoop <https://scoop."
+"sh>`__（在 Windows 上）或 `Homebrew <https://brew.sh>`__（在 macOS 上）安裝 "
+"Godot。這將自動在 ``PATH`` 中提供已安裝的 Godot 副本："
 
 msgid "Setting the project path"
 msgstr "設定專案路徑"
@@ -730,7 +701,7 @@ msgstr ""
 "可以通過為第一個參數指定專案 ``project.godot`` 檔案所在的路徑來完成，如："
 
 msgid "Or by using the ``--path`` argument:"
-msgstr "或是使用 ``--path`` 引數："
+msgstr "或是使用 ``--path`` 參數："
 
 msgid ""
 "For example, the full command for exporting your game (as explained below) "
@@ -740,12 +711,11 @@ msgstr "舉例來說，用於匯出遊戲（下方會說明）的完整指令看
 msgid "Creating a project"
 msgstr "建立專案"
 
-#, fuzzy
 msgid ""
 "Creating a project from the command line can be done by navigating the shell "
 "to the desired place and making a ``project.godot`` file."
 msgstr ""
-"可以通過將 Shell 導航至欲建立專案的位置並建立 project.godot 檔案來在命令列中"
+"可以通過將 Shell 導覽至欲建立專案的位置並建立 project.godot 檔案來在命令列中"
 "建立專案。"
 
 msgid "The project can now be opened with Godot."
@@ -754,7 +724,6 @@ msgstr "該專案即可以 Godot 開啟。"
 msgid "Running the editor"
 msgstr "執行編輯器"
 
-#, fuzzy
 msgid ""
 "Running the editor is done by executing Godot with the ``-e`` flag. This "
 "must be done from within the project directory or a subdirectory, otherwise "
@@ -771,7 +740,6 @@ msgstr "若已有建立並保存場景，則之後可使用相同的指令並以
 msgid "Erasing a scene"
 msgstr "清除場景"
 
-#, fuzzy
 msgid ""
 "Godot is friends with your filesystem and will not create extra metadata "
 "files. Use ``rm`` to erase a scene file. Make sure nothing references that "
@@ -794,21 +762,19 @@ msgid ""
 msgstr "若需要測試特定的場景，則可將該場景傳入命令行。"
 
 msgid "Debugging"
-msgstr "偵錯"
+msgstr "除錯"
 
-#, fuzzy
 msgid ""
 "Catching errors in the command line can be a difficult task because they "
 "scroll quickly. For this, a command line debugger is provided by adding ``-"
 "d``. It works for running either the game or a single scene."
 msgstr ""
-"在命令列中找出錯誤可能很困難。為此，可以通過加上 ``-d`` 引數來使用命令列除錯"
+"在命令列中找出錯誤可能很困難。為此，可以通過加上 ``-d`` 參數來使用命令列除錯"
 "工具。該工具可以用於執行遊戲或場景。"
 
 msgid "Exporting"
 msgstr "匯出"
 
-#, fuzzy
 msgid ""
 "Exporting the project from the command line is also supported. This is "
 "especially useful for continuous integration setups."
@@ -823,6 +789,8 @@ msgid ""
 "with GPU access, ``--headless`` prevents a window from spawning while the "
 "project is exporting."
 msgstr ""
+"在沒有 GPU 存取權限的平臺上（如持續集成），必須使用 ``--headless`` 命令列參"
+"數。在有 GPU 存取權限的平臺上， ``--headless`` 可阻止在匯出專案時生成視窗。"
 
 msgid ""
 "The preset name must match the name of an export preset defined in the "
@@ -830,8 +798,9 @@ msgid ""
 "special characters (such as \"Windows Desktop\"), it must be surrounded with "
 "quotes."
 msgstr ""
+"預設名稱必須與專案的 ``export_presets.cfg`` 檔中定義的匯出預設名稱一致. 如果"
+"預設名稱包含空格或特殊字元(如 \"Windows Desktop\"), 必須用引號引起來."
 
-#, fuzzy
 msgid ""
 "To export a debug version of the game, use the ``--export-debug`` switch "
 "instead of ``--export-release``. Their parameters and usage are the same."
@@ -839,7 +808,6 @@ msgstr ""
 "欲匯出除錯版本的遊戲，請使用 ``--export-debug`` 而非 ``--export`` 。其參數與"
 "用法皆相同。"
 
-#, fuzzy
 msgid ""
 "To export only a PCK file, use the ``--export-pack`` option followed by the "
 "preset name and output path, with the file extension, instead of ``--export-"
@@ -856,11 +824,12 @@ msgid ""
 "directory containing the ``project.godot`` file, **not** relative to the "
 "current working directory."
 msgstr ""
+"當指定相對路徑作為 `--export`、`--export-debug`、`--export-pack` 的路徑時，該"
+"路徑將是相對於包含 ``project.godot`` 檔的目錄，而**不是**相對於目前工作目錄。"
 
 msgid "Running a script"
 msgstr "執行腳本"
 
-#, fuzzy
 msgid ""
 "It is possible to run a ``.gd`` script from the command line. This feature "
 "is especially useful in large projects, e.g. for batch conversion of assets "
@@ -872,7 +841,6 @@ msgstr ""
 msgid "The script must inherit from ``SceneTree`` or ``MainLoop``."
 msgstr "該腳本必須繼承 ``SceneTree`` 或 ``MainLoop`` 。"
 
-#, fuzzy
 msgid "Here is an example ``sayhello.gd``, showing how it works:"
 msgstr "下列為一個簡單的 ``sayhello.gd`` 範例，用來說明如何運作："
 

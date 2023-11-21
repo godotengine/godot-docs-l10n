@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,7 +34,6 @@ msgstr ""
 msgid "C++ and Objective-C"
 msgstr "C++ 與 Objective-C"
 
-#, fuzzy
 msgid ""
 "There are no written guidelines, but the code style agreed upon by the "
 "developers is enforced via the `clang-format <https://clang.llvm.org/docs/"
@@ -68,21 +67,23 @@ msgstr ""
 "clang-format 所使用的規則列在 Godot 儲存庫中的 `.clang-format <https://"
 "github.com/godotengine/godot/blob/master/.clang-format>`__ 檔案內。"
 
+#, fuzzy
 msgid ""
 "As long as you ensure that your style matches the surrounding code and that "
 "you not introducing trailing whitespace or space-based indentation, you "
-"should be fine. If you plan to contribute regularly however, we strongly "
-"advise that you setup clang-format locally to check and automatically fix "
+"should be fine. If you plan to contribute regularly, however, we strongly "
+"advise that you set up clang-format locally to check and automatically fix "
 "all your commits."
 msgstr ""
 "基本上只要確保你寫的程式碼與周圍程式碼的樣式一致、並且行尾沒有多餘的空格、且"
 "不使用空格來縮排就沒什麼問題。如果未來還有打算持續參與貢獻的話，我們強烈建議"
 "在本機開發環境上安裝 clang-format 以自動檢查並修正所有的 Commit。"
 
+#, fuzzy
 msgid ""
 "Godot's code style should *not* be applied to third-party code, i.e. that is "
 "included in Godot's source tree but was not written specifically for our "
-"project. Such code usually come from different upstream projects with their "
+"project. Such code usually comes from different upstream projects with their "
 "own style guides (or lack thereof), and don't want to introduce differences "
 "that would make syncing with upstream repositories harder."
 msgstr ""
@@ -107,11 +108,12 @@ msgid ""
 "`doc_cpp_usage_guidelines` for a list of language features that are "
 "permitted in pull requests."
 msgstr ""
+"這些規範只涉及程式碼的格式化。拉取請求中所允許的語言功能列表請參閱 :ref:"
+"`doc_cpp_usage_guidelines`。"
 
 msgid "Using clang-format locally"
 msgstr "在本機上使用 clang-format"
 
-#, fuzzy
 msgid ""
 "First of all, you will need to install clang-format. As of now, you need to "
 "use **clang-format 13** to be compatible with Godot's format. Later versions "
@@ -127,7 +129,6 @@ msgstr "安裝"
 msgid "Here's how to install clang-format:"
 msgstr "下列為如何安裝 clang-format："
 
-#, fuzzy
 msgid ""
 "Linux: It will usually be available out-of-the-box with the clang toolchain "
 "packaged by your distribution. If your distro version is not the required "
@@ -140,7 +141,6 @@ msgstr ""
 "下載預先編譯好的版本。而若使用 Debian 衍生版本，則可以使用這個 `上游軟體倉 "
 "<http://apt.llvm.org/>`__ 。"
 
-#, fuzzy
 msgid ""
 "macOS and Windows: You can download precompiled binaries from the `LLVM "
 "website <https://releases.llvm.org/download.html>`__. You may need to add "
@@ -158,8 +158,9 @@ msgstr "要將 clang-format 套用到修改中有幾個方法："
 msgid "Manual usage"
 msgstr "手動使用"
 
+#, fuzzy
 msgid ""
-"You can apply clang-format manually one or more files with the following "
+"You can apply clang-format manually for one or more files with the following "
 "command:"
 msgstr "可以通過下列指令手動將 clang-format 套用至一個或多個檔案："
 
@@ -192,9 +193,10 @@ msgstr ""
 "為了更容易使用，我們提供了用於 Git 的 Pre-commit Hook，可以自動在所有 Commit "
 "上執行 clang-format 並進行檢查，然後能將其更改套用到最終 Commit 上。"
 
+#, fuzzy
 msgid ""
-"This \"hook\" is a script which can be found in ``misc/hooks``, refer to "
-"that folder's README.md for installation instructions."
+"This \"hook\" is a script that can be found in ``misc/hooks``, refer to that "
+"folder's README.md for installation instructions."
 msgstr ""
 "這個「Hook」是放在 ``misc/hooks`` 中的腳本，請參考該資料夾的 README.md 以瞭解"
 "詳細的安裝步驟。"
@@ -212,49 +214,53 @@ msgstr ""
 msgid "IDE plugin"
 msgstr "IDE 外掛"
 
+#, fuzzy
 msgid ""
 "Most IDEs or code editors have beautifier plugins that can be configured to "
-"run clang-format automatically, for example each time you save a file."
+"run clang-format automatically, for example, each time you save a file."
 msgstr ""
-"大多數 IDE 或程式碼編輯器都有可以設定自動執行 clang-format 的美化插件，如可以"
-"在保存檔案時自動執行。"
+"大多數 IDE 或程式碼編輯器都有可以設定自動執行 clang-format 的美化外掛程式，如"
+"可以在保存檔案時自動執行。"
 
 msgid "Here is a non-exhaustive list of beautifier plugins for some IDEs:"
 msgstr "此處僅列出部分用於一些 IDE 的美化外掛："
 
-#, fuzzy
 msgid ""
 "Qt Creator: `Beautifier plugin <https://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
 msgstr ""
-"\\ Qt Creator: `Beautifier plugin <http://doc.qt.io/qtcreator/creator-"
+"Qt Creator: `Beautifier plugin <https://doc.qt.io/qtcreator/creator-"
 "beautifier.html>`__"
 
 msgid ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
 msgstr ""
-"\\ Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
+"Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
 
+#, fuzzy
 msgid ""
-"Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
-"itemName=LLVMExtensions.ClangFormat>`__"
+"Visual Studio: `Clang Power Tools 2022 <https://marketplace.visualstudio.com/"
+"items?itemName=caphyon.ClangPowerTools2022>`__"
 msgstr ""
-"\\ Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
+"Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
 "itemName=LLVMExtensions.ClangFormat>`__"
 
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
-msgstr ""
-"\\ vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
+msgstr "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 
 msgid ""
 "CLion: Starting from version ``2019.1``, no plugin is required. Instead, "
 "enable `ClangFormat <https://www.jetbrains.com/help/clion/clangformat-as-"
 "alternative-formatter.html#clion-support>`__"
 msgstr ""
+"CLion：從 ``2019.1`` 版本起不再需要外掛程式。啟用 `ClangFormat <https://www."
+"jetbrains.com/help/clion/clangformat-as-alternative-formatter.html#clion-"
+"support>`__ 即可"
 
-msgid "(Pull requests welcome to extend this list with tested plugins.)"
+#, fuzzy
+msgid "(Pull requests are welcome to extend this list with tested plugins.)"
 msgstr "(歡迎建立 PR 以擴充此列表來包含更多經過測試的外掛。)"
 
 msgid "Header includes"
@@ -322,7 +328,7 @@ msgid "Example:"
 msgstr "範例："
 
 msgid "Java"
-msgstr "\\ Java"
+msgstr "Java"
 
 msgid ""
 "Godot's Java code (mostly in ``platform/android``) is also enforced via "
@@ -336,7 +342,7 @@ msgstr ""
 "的第三方程式碼則不應套用。"
 
 msgid "Python"
-msgstr "\\ Python"
+msgstr "Python"
 
 msgid ""
 "Godot's SCons buildsystem is written in Python, and various scripts included "
@@ -357,7 +363,6 @@ msgstr ""
 msgid "Using black locally"
 msgstr "在本機上使用 Black"
 
-#, fuzzy
 msgid ""
 "First of all, you will need to install Black. Black requires Python 3.7+ to "
 "run."
@@ -405,55 +410,55 @@ msgstr ""
 msgid "Editor integration"
 msgstr "編輯器整合"
 
+#, fuzzy
 msgid ""
 "Many IDEs or code editors have beautifier plugins that can be configured to "
-"run black automatically, for example each time you save a file. For details "
-"you can check `Black editor integration <https://github.com/psf/black#editor-"
-"integration>`__."
+"run black automatically, for example, each time you save a file. For "
+"details, you can check `Black editor integration <https://github.com/psf/"
+"black#editor-integration>`__."
 msgstr ""
 "許多 IDE 與程式碼編輯器都有可設定自動執行 Black 的美化外掛，如可在每次保存檔"
 "案時自動執行。詳細資訊可參考 `Black editor integration <https://github.com/"
 "psf/black#editor-integration>`__ 一頁。"
 
-#, fuzzy
 msgid "Comment style guide"
 msgstr "C# 風格指南"
 
 msgid ""
 "This comment style guide applies to all programming languages used within "
 "Godot's codebase."
-msgstr ""
+msgstr "本注釋風格指南適用於Godot程式碼庫中使用的所有程式設計語言."
 
 msgid ""
 "Begin comments with a space character to distinguish them from disabled code."
-msgstr ""
+msgstr "以空間字元開始注釋, 以將其與禁用程式碼區分開來."
 
 msgid ""
 "Use sentence case for comments. Begin comments with an uppercase character "
 "and always end them with a period."
-msgstr ""
+msgstr "注釋使用句子大小寫. 注釋以大寫字母開頭, 並始終以句號結束."
 
 msgid "Reference variable/function names and values using backticks."
-msgstr ""
+msgstr "使用反引號引用變數和函式名和值."
 
 msgid "Wrap comments to ~100 characters."
-msgstr ""
+msgstr "將注釋控制在~100個字元。"
 
 msgid ""
 "You can use ``TODO:``, ``FIXME:``, ``NOTE:``, or ``HACK:`` as admonitions "
 "when needed."
 msgstr ""
+"你可以在需要的時候使用 ``TODO:`` , ``FIXME:`` , ``NOTE:`` , ``HACK:`` 作為強"
+"調."
 
-#, fuzzy
 msgid "**Example:**"
 msgstr "**範例**"
 
 msgid ""
 "Don't repeat what the code says in a comment. Explain the *why* rather than "
 "*how*."
-msgstr ""
+msgstr "不要在注釋中重複程式碼的內容. 解釋 *為什麼* 而不是 *如何* ."
 
-#, fuzzy
 msgid "**Bad:**"
 msgstr "**錯誤例** :"
 
@@ -463,11 +468,14 @@ msgid ""
 "exposed to scripting. This is because exposed methods should be documented "
 "in the :ref:`class reference XML <doc_updating_the_class_reference>` instead."
 msgstr ""
+"你可以在函式或巨集定義上面使用Javadoc風格的注釋. 建議只對不公開給腳本的方法使"
+"用Javadoc風格的注釋. 這是因為公開的方法應該在 :ref:`class reference XML "
+"<doc_updating_the_class_reference>` 中進行記錄."
 
 msgid ""
 "For member variables, don't use Javadoc-style comments but use single-line "
 "comments instead:"
-msgstr ""
+msgstr "對於成員變數, 不要使用Javadoc式的注釋, 而是使用單行注釋:"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

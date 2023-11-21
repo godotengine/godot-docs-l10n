@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,26 +17,25 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Exporting for Windows"
-msgstr "正在為Android匯出"
+msgstr "為 Windows 匯出"
 
 msgid ""
 "This page describes how to export a Godot project to Windows. If you're "
 "looking to compile editor or export template binaries from source instead, "
 "read :ref:`doc_compiling_for_windows`."
 msgstr ""
+"這個頁面描述的是如何將 Godot 專案匯出到 Windows。如果你想要找的是從源碼編譯編"
+"輯器或匯出範本二進位檔案，請閱讀 :ref:`doc_compiling_for_windows`。"
 
-#, fuzzy
 msgid ""
 "The simplest way to distribute a game for PC is to copy the executable "
 "(``godot.exe``), compress the folder and send it to someone else. However, "
 "this is often not desired."
 msgstr ""
-"要為 PC 發佈遊戲最簡單的方法就是複製可執行檔 (Windows 上為 ``godot.exe`` ，其"
+"要為 PC 發行遊戲最簡單的方法就是複製可執行檔 (Windows 上為 ``godot.exe`` ，其"
 "餘為 ``godot``)，壓縮資料夾並將壓縮檔傳送給其他人。但我們通常不想這麼做。"
 
-#, fuzzy
 msgid ""
 "Godot offers a more elegant approach for PC distribution when using the "
 "export system. When exporting for Windows, the exporter takes all the "
@@ -44,12 +43,11 @@ msgid ""
 "specially optimized binary that is smaller, faster and does not contain the "
 "editor and debugger."
 msgstr ""
-"通過匯出系統，Godot 提供一種更優雅的方法來在 PC 平台上發佈。為 PC 平台匯出時 "
+"通過匯出系統，Godot 提供一種更優雅的方法來在 PC 平台上發行。為 PC 平台匯出時 "
 "(Linux, Windows, macOS)，匯出工具會以所有的專案檔案建立成一個 ``data.pck`` 檔"
 "案。該檔案會內涵一個特別最佳化過的二進位，這個二進位檔更小、更快，而且不包含"
 "編輯器與除錯工具。"
 
-#, fuzzy
 msgid "Code signing"
 msgstr "Godot 版本"
 
@@ -61,8 +59,12 @@ msgid ""
 "<https://docs.microsoft.com/en-us/windows/win32/appxpkg/how-to-create-a-"
 "package-signing-certificate?redirectedfrom=MSDN>`__."
 msgstr ""
+"Godot 能夠在匯出時自動進行程式碼簽署。為此，您必須安裝「Windows SDK」（在 "
+"Windows 上）或「osslsigncode <https://github.com/mtrojnar/osslsigncode>」__"
+"（在任何其他作業系統上）。您還需要一個套件簽章憑證，有關建立憑證的資訊可以在"
+"此處找到 <https://docs.microsoft.com/en-us/windows/win32/appxpkg/how-to-"
+"create-a-package-signing -憑證？redirectedfrom=MSDN>`__。"
 
-#, fuzzy
 msgid ""
 "If you export for Windows with embedded PCK files, you will not be able to "
 "sign the program as it will break."
@@ -74,9 +76,11 @@ msgid ""
 "you're distributing your project via Steam as it bypasses code signing and "
 "antivirus checks."
 msgstr ""
+"在Windows上,PCK嵌入也會在殺毒軟體中造成誤報. 因此, 建議避免使用它, 除非你的專"
+"案通過Steam發行, 因為這樣就繞過了程式碼簽章和防病毒檢查."
 
 msgid "Setup"
-msgstr ""
+msgstr "設定"
 
 msgid ""
 "Settings need to be changed in two places. First, in the editor settings, "
@@ -84,18 +88,25 @@ msgid ""
 "setting, if you're using Windows navigate to and select ``SignTool.exe``, if "
 "you're on a different OS select ``osslsigncode``."
 msgstr ""
+"需要更改兩個地方的設定。首先，在編輯器設定中的 **匯出 > Windows** 下。點"
+"擊“Sign Tool”設定旁邊的資料夾，如果您使用的是 Windows，請導覽至並選"
+"擇“SignTool.exe”，如果您使用的是其他作業系統，請選擇“osslsigncode”。"
 
 msgid ""
 "The second location is the Windows export preset, which can be found in "
 "**Project > Export...**. Add a windows desktop preset if you haven't "
 "already. Under options there is a code signing category."
 msgstr ""
+"第二個位置是 Windows 匯出預設，可以在 **專案 > 匯出...** 中找到。新增 "
+"Windows 桌面預設（如果尚未新增）。在選項下有一個程式碼簽章類別。"
 
 msgid ""
 "``Enabled`` must be set to true, and ``Identity`` must be set to the signing "
 "certificate. The other settings can be adjusted as needed. Once this is Done "
 "Godot will sign your project on export."
 msgstr ""
+"「Enabled」必須設定為 true，「Identity」必須設定為簽章憑證。其他設定可以根據"
+"需要進行調整。一旦完成，Godot 將簽署您的匯出專案。"
 
 msgid "Environment variables"
 msgstr "環境變數"
@@ -105,42 +116,45 @@ msgid ""
 "outside of the editor. During the export process, these override the values "
 "that you set in the export menu."
 msgstr ""
+"您可以使用下列環境變數在編輯器外部設定匯出選項。在匯出過程中，這些值會覆寫您"
+"在匯出選單中設定的值。"
 
-#, fuzzy
 msgid "Windows export environment variables"
 msgstr "環境變數"
 
-#, fuzzy
 msgid "Export option"
 msgstr "匯出選項"
 
-#, fuzzy
 msgid "Environment variable"
 msgstr "環境變數"
 
 msgid "Encryption / Encryption Key"
-msgstr ""
+msgstr "加密/加密金鑰"
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "GODOT_SCRIPT_ENCRYPTION_KEY"
 
 msgid "Options / Codesign / Identity Type"
-msgstr ""
+msgstr "選項/協同設計/身分型別"
 
-msgid "GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
+msgstr "GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE"
 
 msgid "Options / Codesign / Identity"
-msgstr ""
+msgstr "選項/協同設計/身份"
 
-msgid "GODOT_WINDOWS_CODESIGN_IDENTITY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
+msgstr "GODOT_WINDOWS_CODESIGN_IDENTITY"
 
 msgid "Options / Codesign / Password"
-msgstr ""
+msgstr "選項/程式碼設計/密碼"
 
-msgid "GODOT_WINDOWS_CODESIGN_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
+msgstr "GODOT_WINDOWS_CODESIGN_PASSWORD"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

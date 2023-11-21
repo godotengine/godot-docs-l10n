@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Mouse and input coordinates"
+msgstr ""
+
+msgid "About"
+msgstr "Hakkında"
+
+msgid ""
+"The reason for this small tutorial is to clear up many common mistakes about "
+"input coordinates, obtaining mouse position and screen resolution, etc."
+msgstr ""
+
+msgid "Hardware display coordinates"
+msgstr ""
+
+msgid ""
+"Using hardware coordinates makes sense in the case of writing complex UIs "
+"meant to run on PC, such as editors, MMOs, tools, etc. However, it does not "
+"make as much sense outside of that scope."
+msgstr ""
+
+msgid "Viewport display coordinates"
+msgstr ""
+
+msgid ""
+"Godot uses viewports to display content, and viewports can be scaled by "
+"several options (see :ref:`doc_multiple_resolutions` tutorial). Use, then, "
+"the functions in nodes to obtain the mouse coordinates and viewport size, "
+"for example:"
+msgstr ""
+
+msgid ""
+"Alternatively, it's possible to ask the viewport for the mouse position:"
+msgstr ""
+
+msgid ""
+"When the mouse mode is set to ``Input.MOUSE_MODE_CAPTURED``, the ``event."
+"position`` value from ``InputEventMouseMotion`` is the center of the screen. "
+"Use ``event.relative`` instead of ``event.position`` and ``event.velocity`` "
+"to process mouse movement and position changes."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

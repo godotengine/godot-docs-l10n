@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Writing guidelines"
 msgstr "說明文件撰寫方針"
 
@@ -35,7 +34,6 @@ msgstr ""
 msgid "In summary, always try to:"
 msgstr "總之，請儘量："
 
-#, fuzzy
 msgid "Use the active voice"
 msgstr "使用直觀的語調"
 
@@ -88,11 +86,12 @@ msgid ""
 "See the :ref:`content guidelines <doc_content_guidelines>` for information "
 "on the types of documentation you can write in the official documentation."
 msgstr ""
+"請查看:ref:`內容規範 <doc_content_guidelines>`，瞭解你可以在官方文件中編寫哪"
+"些型別的文件。"
 
 msgid "7 rules for clear English"
 msgstr "讓英語清晰明瞭的 7 個規則"
 
-#, fuzzy
 msgid ""
 "Use the active voice when possible. Take the classes, methods, and constants "
 "you describe as the subject. It's natural to write using the passive voice, "
@@ -144,7 +143,6 @@ msgstr ""
 msgid "**Don't** use the progressive form for instant changes."
 msgstr "**不要** 在發生立即性改動時使用進行式。"
 
-#, fuzzy
 msgid "**Do** use simple present, past, or future."
 msgstr "**使用** 簡單的現在、過去、或未來式。"
 
@@ -198,25 +196,25 @@ msgid "**Don't** ever use these 8 banned words:"
 msgstr "**不準** 使用這 8 個禁用詞："
 
 msgid "obvious"
-msgstr "\\ obvious"
+msgstr "obvious"
 
 msgid "simple"
-msgstr "\\ simple"
+msgstr "simple"
 
 msgid "basic"
-msgstr "\\ basic"
+msgstr "basic"
 
 msgid "easy"
-msgstr "\\ easy"
+msgstr "easy"
 
 msgid "actual"
-msgstr "\\ actual"
+msgstr "actual"
 
 msgid "just"
-msgstr "\\ just"
+msgstr "just"
 
 msgid "clear"
-msgstr "\\ clear"
+msgstr "clear"
 
 msgid "however (some uses)"
 msgstr "however (某些情況)"
@@ -313,7 +311,7 @@ msgid ""
 "of a sentence when the items in a list are not single words: *These items "
 "are available in black and white, red and yellow, and blue and green.*"
 msgstr ""
-"[...] 並非所有作家與出版社都使用牛津逗號，但使用牛津逗號可以在當列表內的項目"
+"[...] 並非所有作家與出版社都使用牛津逗號，但使用牛津逗號可以在當列表內的專案"
 "並非完整單詞時說清楚句子的意思： **These items are available in black and "
 "white, red and yellow, and blue and green.**"
 
@@ -459,7 +457,7 @@ msgid "**Do** start with \"if true\":"
 msgstr "**請** 以「if true」開頭："
 
 msgid "Use ``[code]`` around arguments"
-msgstr "使用 ``[code]`` 來包住引數"
+msgstr "使用 ``[code]`` 來包住參數"
 
 msgid ""
 "In the class reference, always surround arguments with ``[code][/code]``. In "
@@ -467,9 +465,9 @@ msgid ""
 "XML files in the Godot repository, replace existing arguments written like "
 "'this' or \\`this\\` with ``[code]this[/code]``."
 msgstr ""
-"在類別參照文件中，請以 ``[code][/code]`` 來包住引數。在說明文件與 Godot 中，"
+"在類別參照文件中，請以 ``[code][/code]`` 來包住參數。在說明文件與 Godot 中，"
 "這個語法會想 ``這樣`` 顯示。在 Godot 儲存庫中編輯 XML 檔案時，請將如 'this' "
-"或 \\`this\\` 這樣寫的現有引數替換為 ``[code]this[/code]`` 。"
+"或 \\`this\\` 這樣寫的現有參數替換為 ``[code]this[/code]`` 。"
 
 msgid "Common vocabulary to use in Godot's documentation"
 msgstr "在 Godot 說明文件中常用的詞彙"
@@ -519,7 +517,6 @@ msgstr ""
 "動畫、除錯工具…等放在檢視區下方的是 ``Panel (面板)`` 。這些面板組合在一起稱"
 "為 ``Bottom Panel (底部面板)`` 。"
 
-#, fuzzy
 msgid ""
 "Foldable areas of the Inspector are ``sections``. The node's parent class "
 "names, which you can't fold, are ``Classes`` e.g. the ``CharacterBody2D "

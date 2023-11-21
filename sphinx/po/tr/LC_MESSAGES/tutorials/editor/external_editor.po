@@ -1,0 +1,213 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using an external text editor"
+msgstr ""
+
+msgid "This page explains how to code using an external text editor."
+msgstr ""
+
+msgid ""
+"Godot can be used with an external text editor, such as Sublime Text or "
+"Visual Studio Code. Browse to the relevant editor settings: **Editor > "
+"Editor Settings > Text Editor > External**"
+msgstr ""
+
+msgid "Text Editor > External section of the Editor Settings"
+msgstr ""
+
+msgid "**Text Editor > External** section of the Editor Settings"
+msgstr ""
+
+msgid ""
+"There are two text fields: the executable path and command-line flags. The "
+"flags allow you to integrate the editor with Godot, passing it the file path "
+"to open and other relevant arguments. Godot will replace the following "
+"placeholders in the flags string:"
+msgstr ""
+
+msgid "Field in Exec Flags"
+msgstr ""
+
+msgid "Is replaced with"
+msgstr ""
+
+msgid "``{project}``"
+msgstr ""
+
+msgid "The absolute path to the project directory"
+msgstr ""
+
+msgid "``{file}``"
+msgstr ""
+
+msgid "The absolute path to the file"
+msgstr ""
+
+msgid "``{col}``"
+msgstr ""
+
+msgid "The column number of the error"
+msgstr ""
+
+msgid "``{line}``"
+msgstr ""
+
+msgid "The line number of the error"
+msgstr ""
+
+msgid "Some example **Exec Flags** for various editors include:"
+msgstr ""
+
+msgid "Editor"
+msgstr "Düzenleyici"
+
+msgid "Exec Flags"
+msgstr "Uygulama Bayrakları"
+
+msgid "Geany/Kate"
+msgstr ""
+
+msgid "``{file} --line {line} --column {col}``"
+msgstr ""
+
+msgid "Atom"
+msgstr ""
+
+msgid "``{file}:{line}``"
+msgstr ""
+
+msgid "JetBrains Rider"
+msgstr ""
+
+msgid "``{project} --line {line} {file}``"
+msgstr ""
+
+msgid "Visual Studio Code"
+msgstr ""
+
+msgid "``{project} --goto {file}:{line}:{col}``"
+msgstr ""
+
+msgid "Vim (gVim)"
+msgstr ""
+
+msgid "``\"+call cursor({line}, {col})\" {file}``"
+msgstr ""
+
+msgid "Emacs"
+msgstr ""
+
+msgid "``emacs +{line}:{col} {file}``"
+msgstr ""
+
+msgid "Sublime Text"
+msgstr ""
+
+msgid "``{project} {file}:{line}:{column}``"
+msgstr ""
+
+msgid ""
+"For Visual Studio Code on Windows, you will have to point to the ``code."
+"cmd`` file."
+msgstr ""
+
+msgid ""
+"For Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
+"server mode."
+msgstr ""
+
+msgid "Using External Editor in Debugger"
+msgstr ""
+
+msgid ""
+"Using external editor in debugger is determined by a separate option in "
+"settings. For details, see :ref:`Script editor debug tools and options "
+"<doc_debugger_tools_and_options>`."
+msgstr ""
+
+msgid "Official editor plugins"
+msgstr "Resmi düzenleyici eklentileri"
+
+msgid "We have official plugins for the following code editors:"
+msgstr ""
+
+msgid ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
+msgstr ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
+
+msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+msgstr "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+
+#, fuzzy
+msgid "LSP/DAP support"
+msgstr "hiDPI desteği"
+
+msgid ""
+"Godot supports the `Language Server Protocol <https://microsoft.github.io/"
+"language-server-protocol/>`_ (**LSP**) for code completion and the `Debug "
+"Adapter Protocol <https://microsoft.github.io/debug-adapter-protocol/>`_ "
+"(**DAP**) for debugging. You can check the `LSP client list <https://"
+"microsoft.github.io/language-server-protocol/implementors/tools/>`_ and `DAP "
+"client list <https://microsoft.github.io/debug-adapter-protocol/implementors/"
+"tools/>`_ to find if your editor supports them. If this is the case, you "
+"should be able to take advantage of these features without the need of a "
+"custom plugin."
+msgstr ""
+
+msgid ""
+"To use these protocols, a Godot instance must be running on your current "
+"project. You should then configure your editor to communicate to the running "
+"adapter ports in Godot, which by default are ``6005`` for **LSP**, and "
+"``6006`` for **DAP**. You can change these ports and other settings in the "
+"**Editor Settings**, under the **Network > Language Server** and **Network > "
+"Debug Adapter** sections respectively."
+msgstr ""
+
+msgid "Below are some configuration steps for specific editors:"
+msgstr ""
+
+#, fuzzy
+msgid ""
+"You need to install the official `Visual Studio Code plugin <https://github."
+"com/godotengine/godot-vscode-plugin>`_."
+msgstr ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
+
+msgid ""
+"For **LSP**, follow `these instructions <https://github.com/godotengine/"
+"godot-vscode-plugin#gdscript_lsp_server_port>`_ to change the default LSP "
+"port. The connection status can be checked on the status bar:"
+msgstr ""
+
+msgid ""
+"For **DAP**, specify the ``debugServer`` property in your ``launch.json`` "
+"file:"
+msgstr ""
+
+msgid ""
+"Check the official instructions to configure `LSP <https://github.com/"
+"godotengine/emacs-gdscript-mode#auto-completion-with-the-language-server-"
+"protocol-lsp>`_, and `DAP <https://github.com/godotengine/emacs-gdscript-"
+"mode#using-the-debugger>`_."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

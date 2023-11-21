@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using the Android editor"
 msgstr "執行編輯器"
 
@@ -27,32 +26,38 @@ msgid ""
 "editor <https://godotengine.org/download/android/>`__ that can be used to "
 "work on new or existing projects on Android devices."
 msgstr ""
+"2023 年， `我們新增了<https://godotengine.org/article/"
+"android_godot_editor_play_store_beta_release/>`__ `Android 端的編輯器"
+"<https://godotengine.org/download/android/>`__，可用於在 Android 裝置上處理新"
+"專案或現有專案。"
 
 msgid ""
 "The Android editor is in beta testing stage, while we continue to refine the "
 "experience, and bring it up to parity with the Desktop version of the "
 "editor. See :ref:`doc_using_the_android_editor_limitations` below."
 msgstr ""
+"Web 編輯器處於初級階段。雖然其功能集可能足以滿足教學目的，但目前**不建議用於"
+"生產工作**。見下文 :ref:`doc_using_the_web_editor_limitations`。"
 
 msgid "Android devices support"
-msgstr ""
+msgstr "Android 裝置支援"
 
 msgid ""
 "The Android editor requires devices running Android 5 Lollipop or higher, "
 "with at least OpenGL 3 support. This includes (not exhaustive):"
 msgstr ""
+"Android 編輯器需要運作在 Android 5 Lollipop 或更高版本的裝置上，並且至少支援 "
+"OpenGL 3。 這些裝置包括（並非詳盡無遺）："
 
 msgid "Android tablets, foldables and large phones"
-msgstr ""
+msgstr "Android 平板、折疊機、大屏手機"
 
 msgid "Android-powered netbooks"
-msgstr ""
+msgstr "Android 上網本"
 
-#, fuzzy
 msgid "Chromebooks supporting Android apps"
-msgstr "Android"
+msgstr "支援 Android 應用的 Chromebook"
 
-#, fuzzy
 msgid "Required Permissions"
 msgstr "系統需求"
 
@@ -64,23 +69,20 @@ msgid ""
 "the editor is still functional, but has limited access to the device's files "
 "and directories."
 msgstr ""
+"Android 編輯器需要 `所有檔存取權限 <https://developer.android.com/training/"
+"data-storage/manage-all-files#all-files-access>`__。該許可權允許編輯器從裝置"
+"上的任何檔位置建立、匯入和讀取專案檔案。沒有該許可權，編輯器仍可運作，但對裝"
+"置檔和目錄的存取受限。"
 
-#, fuzzy
 msgid "Limitations & known issues"
 msgstr "Xbox One 的限制"
 
 msgid "Here are the known limitations and issues of the Android editor:"
-msgstr ""
+msgstr "以下是 Android 編輯器的已知局限性和問題："
 
-#, fuzzy
 msgid "No C#/Mono support"
-msgstr "|eol| 已停止支援。"
+msgstr "\\|eol\\| 已停止支援。"
 
-#, fuzzy
-msgid "No GDExtension support"
-msgstr "|eol| 已停止支援。"
-
-#, fuzzy
 msgid "No support for external script editors"
 msgstr "尚未支援 MIDI 輸出。"
 
@@ -88,6 +90,7 @@ msgid ""
 "While available, the *Vulkan Forward+* renderer is not recommended due to "
 "severe performance issues"
 msgstr ""
+"*Vulkan Forward+* 渲染器雖然可用，但是由於存在嚴重的性能問題，所以不推薦使用"
 
 msgid ""
 "No support for building and exporting an Android APK binary. As a "
@@ -95,17 +98,20 @@ msgid ""
 "docs.godotengine.org/en/stable/tutorials/export/exporting_projects.html#pck-"
 "versus-zip-pack-file-formats>`__"
 msgstr ""
+"不支援建構和匯出二進位Android APK。作為一種變通的方法，你可以生成和匯出一個"
+"`Godot PCK 或 ZIP<https://docs.godotengine.org/en/stable/tutorials/export/"
+"exporting_projects.html#pck-versus-zip-pack-file-formats>`__"
 
 msgid "No support for building and exporting binaries for other platforms"
-msgstr ""
+msgstr "不支援其他平臺的二進位建構與匯出"
 
 msgid ""
 "Performance and stability issues when using the *Vulkan Mobile* renderer for "
 "a project"
-msgstr ""
+msgstr "使用 *Vulkan Mobile* 作為渲染器時的性能與穩定性問題"
 
 msgid "UX not optimized for Android phones form-factor"
-msgstr ""
+msgstr "UX 未針對 Android 手機的尺寸進行優化"
 
 msgid ""
 "`Android Go devices <https://developer.android.com/guide/topics/"
@@ -114,13 +120,15 @@ msgid ""
 "recommended to create new projects only in the Android *Documents* or "
 "*Downloads* directories."
 msgstr ""
+"`Android Go 裝置 <https://developer.android.com/guide/topics/androidgo>`__ 缺"
+"少裝置讀和寫存取所需的 *全部檔存取* 許可權。作為一種變通方法，在使用 Android "
+"Go 裝置時，建議只在 Android *Documents* 或 *Downloads* 目錄中建立新專案。"
 
 msgid ""
 "The editor doesn't properly resume when *Don't keep activities* is enabled "
 "in the *Developer Options*"
-msgstr ""
+msgstr "在 *開發者選項* 中啟用 *不保留活動* 後，編輯器將無法正常恢復"
 
-#, fuzzy
 msgid ""
 "See the `list of open issues on GitHub related to the Android editor "
 "<https://github.com/godotengine/godot/issues?"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Exporting for Android"
-msgstr "Экспорт для Android"
+msgstr "Экспортирование для ОС Android"
 
 msgid ""
 "This page describes how to export a Godot project to Android. If you're "
@@ -36,18 +36,19 @@ msgstr ""
 "Android SDK и движка."
 
 msgid ""
-"Projects written in C# using Godot 4 currently cannot be exported to "
-"Android. To use C# on Android, use Godot 3 instead."
+"Projects written in C# can be exported to Android as of Godot 4.2, but "
+"support is experimental and :ref:`some limitations apply "
+"<doc_c_sharp_platforms>`."
 msgstr ""
 
 #, fuzzy
-msgid "Install OpenJDK 11"
+msgid "Install OpenJDK 17"
 msgstr "Установите OpenJDK 8"
 
 #, fuzzy
 msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
+"Download and install `OpenJDK 17 <https://adoptium.net/temurin/releases/?"
+"variant=openjdk17>`__."
 msgstr ""
 "Скачайте и установите `OpenJDK 8 <https://adoptopenjdk.net/index.html?"
 "variant=openjdk8&jvmVariant=hotspot>`__."
@@ -147,12 +148,13 @@ msgstr ""
 "Если вы не можете его найти или вам нужно его сгенерировать, для этой цели "
 "можно использовать команду *keytool* из JDK:"
 
+#, fuzzy
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
 "should move it to a memorable location such as ``%USERPROFILE%\\."
 "android\\``, because you will need its location in a later step. For more "
-"information on ``keytool`` usage, see `this Q&A article <https://godotengine."
-"org/qa/21349/jdk-android-file-missing>`__."
+"information on ``keytool`` usage, see `this Q&A article <https://ask."
+"godotengine.org/21349/jdk-android-file-missing>`__."
 msgstr ""
 "Это создаст файл ``debug.keystore`` в вашем текущем каталоге. Вы должны "
 "переместить его в запоминающееся место, такое как ``%USERPROFILE%\\."
@@ -434,44 +436,44 @@ msgstr "Функции и Переменные"
 msgid "Encryption / Encryption Key"
 msgstr ""
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 msgstr ""
 
 msgid "Options / Keystore / Debug"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
 msgstr ""
 
 msgid "Options / Keystore / Debug User"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
 msgstr ""
 
 msgid "Options / Keystore / Debug Password"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
 msgstr ""
 
 msgid "Options / Keystore / Release"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
 msgstr ""
 
 msgid "Options / Keystore / Release User"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
 msgstr ""
 
 msgid "Options / Keystore / Release Password"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
 msgstr ""
 
 msgid "Translation status"
-msgstr "Translation status (статус перевода)"
+msgstr "Статус перевода"

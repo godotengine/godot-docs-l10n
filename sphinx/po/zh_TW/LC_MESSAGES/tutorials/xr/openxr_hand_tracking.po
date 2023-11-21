@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "The OpenXR hand tracking"
 msgstr "節點與術語"
 
@@ -26,12 +25,16 @@ msgid ""
 "players hands are tracked, including the orientation of the players fingers. "
 "We can identify 3 categories of this:"
 msgstr ""
+"手部追蹤是追蹤玩家手的位置和方向（包括玩家手指的方向）的過程。我們可以將其分"
+"為 3 類："
 
 msgid ""
 "One, hand tracking through external sensors such as cameras. This is what "
 "Hololens, Quest, UltraLeap and similar devices do. This often results in "
 "very accurate tracking of all fingers of the players hands."
 msgstr ""
+"一，透過相機等外部感光元件進行手部追蹤。 Hololens、Quest、UltraLeap 和類似裝"
+"置就是這麼做的。這通常會導致非常準確地追蹤玩家手上的所有手指。"
 
 msgid ""
 "Two, hand tracking through VR gloves. This method is still mostly "
@@ -41,15 +44,23 @@ msgid ""
 "recognised as controllers and often will have additional controls such as "
 "buttons embedded."
 msgstr ""
+"第二，透過 VR 手套進行手部追蹤。這種方法仍處於實驗階段，但可能很快就會流行起"
+"來。手套通常具有良好的手指追蹤功能，但其真正的賣點是限制運動的能力。這允許觸"
+"摸的感覺。手套通常也被認為是控制器，並且通常會有附加的控件，例如嵌入的按鈕。"
 
+#, fuzzy
 msgid ""
-"Three, inferred hand tracking. This has been the defacto approach since the "
+"Three, inferred hand tracking. This has been the de facto approach since the "
 "early days of VR. As we know the player is holding a controller and we know "
 "the position of this controller, we can infer where to render the players "
 "hand. Fingers can be positioned based on the controls the player is "
 "interacting with. Many modern VR controllers have additional sensors to help "
 "determine finger positions on the controller."
 msgstr ""
+"三、推斷手部追蹤。自 VR 早期以來，這一直是事實上的方法。我們知道玩家拿著控制"
+"器並且知道該控制器的位置，因此我們可以推斷在哪裡渲染玩家的手。手指可以根據玩"
+"家正在互動的控制來定位。許多現代 VR 控制器都有額外的感測器來幫助確定手指在控"
+"制器上的位置。"
 
 msgid ""
 "Traditionally inferred hand tracking has been the responsibility of the "
@@ -59,20 +70,27 @@ msgid ""
 "There is an expectation that other XR Runtimes will follow this example in "
 "the near future."
 msgstr ""
+"傳統上推斷手部追蹤一直是遊戲的責任。然而，行動地圖背後的原則在一定程度上限制"
+"了這裡的可行選擇。 Valve 是目前唯一一個將推斷手部追蹤作為手部追蹤擴充的一部分"
+"實作的 XR 運作時。預計其他 XR 運作時將在不久的將來效倣此範例。"
 
 msgid ""
 "Until then we recommend that if your game depends on inferred hand tracking, "
 "to use the hand assets that are part of Godot XR Tools."
 msgstr ""
+"在此之前，如果您的遊戲依賴推斷手部跟踪，我們建議您使用 Godot XR Tools 中的手"
+"部素材。"
 
 msgid "Tracking through interaction profiles"
-msgstr ""
+msgstr "透過互動設定檔進行追蹤"
 
 msgid ""
 "Tracking the location and state of controllers are performed through "
 "interaction profiles. Bindings can be set within the :ref:`action map "
 "<doc_xr_action_map>`."
 msgstr ""
+"追蹤控制器的位置和狀態是透過互動設定檔執行的。可以在操作對應 "
+"<doc_xr_action_map>` 中設定綁定。"
 
 msgid ""
 "However it is important to realise that in OpenXR controllers are bound to "
@@ -83,6 +101,10 @@ msgid ""
 "be extended with paths such as ``/user/foot/left`` and ``/user/foot/right`` "
 "at some point."
 msgstr ""
+"然而，重要的是要認識到，在 OpenXR 中，控制器綁定到指示這些控制器的使用的路"
+"徑。即，玩家左手握持的控制器綁定到“/user/hand/left”，而玩家右手握持的控制器則"
+"綁定到“/user/hand/right”。雖然 HTC 追蹤器擴充功能之外尚未受支援，但 OpenXR 很"
+"可能會在某個時候使用「/user/foot/left」和「/user/foot/right」等路徑進行擴充。"
 
 msgid ""
 "This paradigm therefore begs the question what happens to a controller that "
@@ -90,40 +112,47 @@ msgid ""
 "is still being debated and the specification may change in the near future. "
 "The behavior is thus undefined and can be different for different platforms."
 msgstr ""
+"因此，這種範例引出了一個問題：如果控制器沒有被使用者持有，會發生什麼情況。這"
+"個問題還沒有答案，仍在爭論中，規範可能在不久的將來發生變化。因此，該行為是未"
+"定義的，並且對於不同的平台可能有所不同。"
 
 msgid ""
 "The most common is that the controller will remain bound regardless of "
 "whether the player is actually holding the controller."
-msgstr ""
+msgstr "最常見的是，無論玩家是否實際握住控制器，控制器都將保持綁定狀態。"
 
 msgid ""
 "However there are runtimes, such as the Quest, that can unbind a controller "
 "when it is not being held by the user."
 msgstr ""
+"然而，有些運作時（例如 Quest）可以在使用者未握住控制器時取消綁定控制器。"
 
 msgid ""
 "This may become the norm in the future and the expectation is that the "
 "action map system will be enhanced accordingly."
-msgstr ""
+msgstr "這可能會成為未來的常態，預計行動地圖系統將得到相應的增強。"
 
 msgid "The hand tracking extension"
-msgstr ""
+msgstr "手勢追蹤"
 
 msgid ""
 "OpenXR has an extension that exposes hand tracking functionality. This "
 "extension allows a game to request the hand skeleton with all bone positions "
 "for each hand."
 msgstr ""
+"OpenXR 有一個擴充，可以公開手部追蹤功能。此擴充功能允許遊戲請求手部骨骼以及每"
+"隻手的所有骨骼位置。"
 
 msgid ""
 "Copyright (c) 2017-2022, The Khronos Group Inc. SPDX-License-Identifier: CC-"
 "BY-4.0"
 msgstr ""
+"版權所有 (c) 2017-2022，The Khronos Group Inc. SPDX-授權-識別碼：CC-BY-4.0"
 
 msgid ""
 "The above image shows the joints that have to be provided by each XR runtime "
 "that implements this extension."
-msgstr ""
+msgstr "上圖顯示了實作此擴充的每個 XR 運作時必須提供的關節。"
 
 msgid ""
 "Currently Godot exposes this functionality through the :ref:`OpenXRHand "
@@ -131,217 +160,218 @@ msgid ""
 "tracking data from OpenXR and apply it to a skeleton in Godot. You select "
 "either the left or right hand through the ``hand`` property on this node."
 msgstr ""
+"目前，Godot 透過 OpenXRHand <class_openxrhand> 節點公開此功能。這是一個輔助節"
+"點，將從 OpenXR 檢索手部追蹤資料並將其應用到 Godot 中的骨架。您可以透過此節點"
+"上的“hand”屬性選擇左手或右手。"
 
 msgid ""
 "The hand asset itself has to be provided by the developer and is thus "
 "separate from the OpenXRHand node. You set the ``hand_skeleton`` on the "
 "OpenXRHand node to the skeleton it needs to apply the tracking data to."
 msgstr ""
+"手素材本身必須由開發人員提供，因此與 OpenXRHand 節點分開。您將 OpenXRHand 節"
+"點上的「hand_sculpture」設定為需要套用追蹤資料的骨架。"
 
 msgid ""
 "If supported by the XR runtime you can also set the ``motion_range`` "
 "property to limit how far the hand can close."
 msgstr ""
+"如果 XR 運作時支援，您也可以設定「motion_range」屬性來限製手可以靠近的距離。"
 
 msgid "The skeleton for this asset has to have the following bones:"
-msgstr ""
+msgstr "此資源的骨架必須具有以下骨骼："
 
-#, fuzzy
 msgid "OpenXR hand skeleton"
-msgstr "創建內容"
+msgstr "建立內容"
 
 msgid "Left hand"
-msgstr ""
+msgstr "左手"
 
-#, fuzzy
 msgid "Right hand"
 msgstr "光照烘焙"
 
 msgid "Palm_L"
-msgstr ""
+msgstr "Palm_L"
 
 msgid "Palm_R"
-msgstr ""
+msgstr "Palm_R"
 
 msgid "Wrist_L"
-msgstr ""
+msgstr "Wrist_L"
 
 msgid "Wrist_R"
-msgstr ""
+msgstr "Wrist_R"
 
 msgid "Thumb_Metacarpal_L"
-msgstr ""
+msgstr "Thumb_Metacarpal_L"
 
 msgid "Thumb_Metacarpal_R"
-msgstr ""
+msgstr "Thumb_Metacarpal_R"
 
 msgid "Thumb_Proximal_L"
-msgstr ""
+msgstr "Thumb_Proximal_L"
 
 msgid "Thumb_Proximal_R"
-msgstr ""
+msgstr "Thumb_Proximal_R"
 
 msgid "Thumb_Distal_L"
-msgstr ""
+msgstr "Thumb_Distal_L"
 
 msgid "Thumb_Distal_R"
-msgstr ""
+msgstr "Thumb_Distal_R"
 
 msgid "Thumb_Tip_L"
-msgstr ""
+msgstr "Thumb_Tip_L"
 
 msgid "Thumb_Tip_R"
-msgstr ""
+msgstr "Thumb_Tip_R"
 
 msgid "Index_Metacarpal_L"
-msgstr ""
+msgstr "Index_Metacarpal_L"
 
 msgid "Index_Metacarpal_R"
-msgstr ""
+msgstr "Index_Metacarpal_R"
 
 msgid "Index_Proximal_L"
-msgstr ""
+msgstr "Index_Proximal_L"
 
 msgid "Index_Proximal_R"
-msgstr ""
+msgstr "Index_Proximal_R"
 
 msgid "Index_Intermediate_L"
-msgstr ""
+msgstr "Index_Intermediate_L"
 
 msgid "Index_Intermediate_R"
-msgstr ""
+msgstr "Index_Intermediate_R"
 
-#, fuzzy
 msgid "Index_Distal_L"
 msgstr "Index - 索引"
 
-#, fuzzy
 msgid "Index_Distal_R"
 msgstr "Index - 索引"
 
-#, fuzzy
 msgid "Index_Tip_L"
 msgstr "Index - 索引"
 
-#, fuzzy
 msgid "Index_Tip_R"
 msgstr "Index - 索引"
 
 msgid "Middle_Metacarpal_L"
-msgstr ""
+msgstr "Middle_Metacarpal_L"
 
 msgid "Middle_Metacarpal_R"
-msgstr ""
+msgstr "Middle_Metacarpal_R"
 
 msgid "Middle_Proximal_L"
-msgstr ""
+msgstr "Middle_Proximal_L"
 
 msgid "Middle_Proximal_R"
-msgstr ""
+msgstr "Middle_Proximal_R"
 
 msgid "Middle_Intermediate_L"
-msgstr ""
+msgstr "Middle_Intermediate_L"
 
 msgid "Middle_Intermediate_R"
-msgstr ""
+msgstr "Middle_Intermediate_R"
 
 msgid "Middle_Distal_L"
-msgstr ""
+msgstr "Middle_Distal_L"
 
 msgid "Middle_Distal_R"
-msgstr ""
+msgstr "Middle_Distal_R"
 
 msgid "Middle_Tip_L"
-msgstr ""
+msgstr "Middle_Tip_L"
 
 msgid "Middle_Tip_R"
-msgstr ""
+msgstr "Middle_Tip_R"
 
 msgid "Ring_Metacarpal_L"
-msgstr ""
+msgstr "Ring_Metacarpal_L"
 
 msgid "Ring_Metacarpal_R"
-msgstr ""
+msgstr "Ring_Metacarpal_R"
 
 msgid "Ring_Proximal_L"
-msgstr ""
+msgstr "Ring_Proximal_L"
 
 msgid "Ring_Proximal_R"
-msgstr ""
+msgstr "Ring_Proximal_R"
 
 msgid "Ring_Intermediate_L"
-msgstr ""
+msgstr "Ring_Intermediate_L"
 
 msgid "Ring_Intermediate_R"
-msgstr ""
+msgstr "Ring_Intermediate_R"
 
 msgid "Ring_Distal_L"
-msgstr ""
+msgstr "Ring_Distal_L"
 
 msgid "Ring_Distal_R"
-msgstr ""
+msgstr "Ring_Distal_R"
 
 msgid "Ring_Tip_L"
-msgstr ""
+msgstr "Ring_Tip_L"
 
 msgid "Ring_Tip_R"
-msgstr ""
+msgstr "Ring_Tip_R"
 
 msgid "Little_Metacarpal_L"
-msgstr ""
+msgstr "Little_Metacarpal_L"
 
 msgid "Little_Metacarpal_R"
-msgstr ""
+msgstr "Little_Metacarpal_R"
 
 msgid "Little_Proximal_L"
-msgstr ""
+msgstr "Little_Proximal_L"
 
 msgid "Little_Proximal_R"
-msgstr ""
+msgstr "Little_Proximal_R"
 
 msgid "Little_Intermediate_L"
-msgstr ""
+msgstr "Little_Intermediate_L"
 
 msgid "Little_Intermediate_R"
-msgstr ""
+msgstr "Little_Intermediate_R"
 
 msgid "Little_Distal_L"
-msgstr ""
+msgstr "Little_Distal_L"
 
 msgid "Little_Distal_R"
-msgstr ""
+msgstr "Little_Distal_R"
 
 msgid "Little_Tip_L"
-msgstr ""
+msgstr "Little_Tip_L"
 
 msgid "Little_Tip_R"
-msgstr ""
+msgstr "Little_Tip_R"
 
 msgid ""
 "The skeleton data returned from different XR runtimes are often not "
 "compatible which poses a problem for cross platform development."
-msgstr ""
+msgstr "從不同XR運作時返回的骨架資料通常不相容，這給跨平台開發帶來了問題。"
 
 msgid ""
 "For instance both Microsoft and Meta runtimes base the skeleton on the "
 "actual hands of the player. These skeletons will thus conform to the size of "
 "the players hand."
 msgstr ""
+"例如，Microsoft 和 Meta 運作時都會將骨架基於玩家的實際手部。因此，這些骨骼將"
+"符合玩家手的大小。"
 
 msgid ""
 "Contrast that to Valve where a fixed skeleton is used if inferred hand "
 "tracking is applied."
-msgstr ""
+msgstr "與 Valve 相比，如果應用推斷的手部跟踪，則使用固定骨架。"
 
 msgid ""
 "We are still gathering experience on how best to deal with these differences "
 "in the platforms."
-msgstr ""
+msgstr "我們仍在收集如何最好地處理平台中這些差異的經驗。"
 
 msgid "When exporting to Meta Quest you need to enable the following setting:"
-msgstr ""
+msgstr "匯出到 Meta Quest 時，您需要啟用以下設定："
 
-#, fuzzy
 msgid "Body tracking"
 msgstr "烘焙"
 
@@ -350,72 +380,76 @@ msgid ""
 "core spec. We are expecting this to change in the near future as more and "
 "more body tracking solutions are hitting the market."
 msgstr ""
+"在撰寫本文時，OpenXR 不支援身體追蹤作為核心規範的一部分。隨著越來越多的身體追"
+"蹤解決方案進入市場，我們預計這種情況將在不久的將來發生變化。"
 
 msgid ""
 "For now the only option available here is through HTC trackers. There is an "
 "extension that becomes available if HTC trackers are supported by the XR "
 "runtime. These are fully exposed through the action map system."
 msgstr ""
+"目前，這裡唯一可用的選擇是透過 HTC 追蹤器。如果 XR 運作時支援 HTC 追蹤器，則"
+"可以使用一個擴充。這些都透過動作地圖系統充分暴露出來。"
 
 msgid ""
 "Godot has full support for these and you can setup the trackers in the "
 "action map. Each tracker is assigned a usage within the SteamVR interface."
 msgstr ""
+"Godot 完全支援這些，您可以在動作圖中設定追蹤器。每個追蹤器都在 SteamVR 介面中"
+"分配了一個用途。"
 
-#, fuzzy
 msgid "These are exposed through the following trackers:"
 msgstr "填寫下列設定："
 
 msgid "HTC trackers"
-msgstr ""
+msgstr "HTC 追蹤器"
 
 msgid "/user/vive_tracker_htcx/role/handheld_object"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/handheld_object"
 
 msgid "/user/vive_tracker_htcx/role/left_foot"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_foot"
 
 msgid "/user/vive_tracker_htcx/role/right_foot"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_foot"
 
 msgid "/user/vive_tracker_htcx/role/left_shoulder"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_shoulder"
 
 msgid "/user/vive_tracker_htcx/role/right_shoulder"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_shoulder"
 
 msgid "/user/vive_tracker_htcx/role/left_elbow"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_elbow"
 
 msgid "/user/vive_tracker_htcx/role/right_elbow"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_elbow"
 
 msgid "/user/vive_tracker_htcx/role/left_knee"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_knee"
 
 msgid "/user/vive_tracker_htcx/role/right_knee"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_knee"
 
 msgid "/user/vive_tracker_htcx/role/waist"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/waist"
 
 msgid "/user/vive_tracker_htcx/role/chest"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/chest"
 
 msgid "/user/vive_tracker_htcx/role/camera"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/camera"
 
 msgid "/user/vive_tracker_htcx/role/keyboard"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/keyboard"
 
-#, fuzzy
 msgid "Some final words"
 msgstr "訊號關鍵字"
 
 msgid ""
 "Hand tracking is an area that is still under active development and we are "
 "expecting improvements in the near future."
-msgstr ""
+msgstr "手部追蹤是一個仍在積極開發的領域，我們預計在不久的將來會有改進。"
 
 msgid ""
 "The underlying principle that we're hoping will eventuate is that the action "
@@ -424,6 +458,8 @@ msgid ""
 "that improvements to the OpenXR specification will ensure better portability "
 "between platforms."
 msgstr ""
+"我們希望最終實作的基本原則是，動作圖將用於處理互動，而手部追蹤擴充將主要是一"
+"種可視化玩家手部的方法。希望 OpenXR 規範的改進能確保平台之間更好的可移植性。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

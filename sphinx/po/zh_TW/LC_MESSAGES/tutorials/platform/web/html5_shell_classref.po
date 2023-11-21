@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,21 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "HTML5 shell class reference"
-msgstr ""
+msgstr "HTML5 shell 類參考"
 
 msgid ""
 "Projects exported for the Web expose the :js:class:`Engine` class to the "
 "JavaScript environment, that allows fine control over the engine's start-up "
 "process."
 msgstr ""
+"為 Web 匯出的專案向 JavaScript 環境暴露了 :js:class:`Engine` 類，從而可以更好"
+"地控制引擎的啟動過程。"
 
 msgid ""
 "This API is built in an asynchronous manner and requires basic understanding "
 "of `Promises <https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/"
 "Using_promises>`__."
 msgstr ""
+"這個API是以非同步的方式建立的, 需要對 `Promises <https://developer.mozilla."
+"org/en-US/docs/Web/JavaScript/Guide/Using_promises>`__ 的基本理解."
 
-#, fuzzy
 msgid "Engine"
 msgstr "關於 Godot Engine"
 
@@ -42,92 +45,102 @@ msgid ""
 "the exported HTML page. To understand practical use of the ``Engine`` class, "
 "see :ref:`Custom HTML page for Web export <doc_customizing_html5_shell>`."
 msgstr ""
+"``Engine`` 類提供了在Web上載入和啟動匯出專案的方法. 對於預設的匯出設定, 這已"
+"經是匯出的HTML頁面的一部分. 要瞭解 ``Engine`` 類的實際使用, 請參見 :ref:`自訂"
+"Web匯出的HTML 頁面 <doc_customizing_html5_shell>` ."
 
 msgid "Static Methods"
-msgstr ""
+msgstr "靜態方法"
 
 msgid "Promise"
-msgstr ""
+msgstr "Promise"
 
 msgid ":js:attr:`load <Engine.load>` **(** string basePath **)**"
-msgstr ""
+msgstr ":js:attr:`load <Engine.load>` **(** string basePath **)**"
 
 msgid "void"
-msgstr ""
+msgstr "void"
 
 msgid ":js:attr:`unload <Engine.unload>` **(** **)**"
-msgstr ""
+msgstr ":js:attr:`unload <Engine.unload>` **(** **)**"
 
 msgid "boolean"
-msgstr ""
+msgstr "boolean"
 
 msgid ""
 ":js:attr:`isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
 "majorVersion=1 ]* **)**"
 msgstr ""
+":js:attr: `isWebGLAvailable <Engine.isWebGLAvailable>` **(** *[ number "
+"majorVersion=1 ] **)**"
 
 msgid "Instance Methods"
-msgstr ""
+msgstr "實例方法"
 
 msgid ""
 ":js:attr:`init <Engine.prototype.init>` **(** *[ string basePath ]* **)**"
 msgstr ""
+":js:attr: `init <Engine.prototype.init>` **(** *[ string basePath ] **) **"
 
 msgid ""
 ":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
 "ArrayBuffer file *[, string path ]* **)**"
 msgstr ""
+":js:attr:`preloadFile <Engine.prototype.preloadFile>` **(** string\\|"
+"ArrayBuffer file *[, string path ]* **)**"
 
 msgid ""
 ":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 msgstr ""
+":js:attr:`start <Engine.prototype.start>` **(** EngineConfig override **)**"
 
 msgid ""
 ":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
 "override **)**"
 msgstr ""
+":js:attr:`startGame <Engine.prototype.startGame>` **(** EngineConfig "
+"override **)**"
 
 msgid ""
 ":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
 "ArrayBuffer buffer **)**"
 msgstr ""
+":js:attr:`copyToFS <Engine.prototype.copyToFS>` **(** string path, "
+"ArrayBuffer buffer **)**"
 
 msgid ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
-msgstr ""
+msgstr ":js:attr:`requestQuit <Engine.prototype.requestQuit>` **(** **)**"
 
 msgid "Create a new Engine instance with the given configuration."
-msgstr ""
+msgstr "用給定的配置建立一個新的引擎實例."
 
 msgid "Arguments"
-msgstr ""
+msgstr "參數"
 
 msgid "The initial config for this instance."
-msgstr ""
+msgstr "此實例的初始配置."
 
-#, fuzzy
 msgid "**Static Methods**"
 msgstr "靜態形體。"
 
 msgid "Load the engine from the specified base path."
-msgstr ""
+msgstr "從指定的基本路徑載入引擎."
 
 msgid "Base path of the engine to load."
-msgstr ""
+msgstr "引擎載入的底層路徑."
 
 msgid "Returns"
-msgstr ""
+msgstr "返回"
 
 msgid "A Promise that resolves once the engine is loaded."
-msgstr ""
+msgstr "一個一旦載入引擎就會解析的Promise."
 
-#, fuzzy
 msgid "Return type"
 msgstr "Return 回傳"
 
 msgid "Unload the engine to free memory."
-msgstr ""
+msgstr "解除安裝引擎以釋放記憶體."
 
-#, fuzzy
 msgid ""
 "This method will be called automatically depending on the configuration. "
 "See :js:attr:`unloadAfterInit`."
@@ -136,15 +149,14 @@ msgstr "接著會自動使用樣板建置，不需要進一步設定。"
 msgid ""
 "Check whether WebGL is available. Optionally, specify a particular version "
 "of WebGL to check for."
-msgstr ""
+msgstr "檢查 WebGL 是否可用.(可選)指定要檢查的特定 WebGL 版本."
 
 msgid "The major WebGL version to check for."
-msgstr ""
+msgstr "要檢查的主要WebGL版本."
 
 msgid "If the given major version of WebGL is available."
-msgstr ""
+msgstr "如果給定的WebGL的主要版本是可用的."
 
-#, fuzzy
 msgid "**Instance Methods**"
 msgstr "**使用泛型方法**"
 
@@ -152,103 +164,116 @@ msgid ""
 "Initialize the engine instance. Optionally, pass the base path to the engine "
 "to load it, if it hasn't been loaded yet. See :js:meth:`Engine.load`."
 msgstr ""
+"初始化引擎實例. 如果引擎還沒有被載入, 可以選擇將基本路徑傳遞給引擎來載入它. "
+"參見 :js:meth:`Engine.load` ."
 
 msgid "A ``Promise`` that resolves once the engine is loaded and initialized."
-msgstr ""
+msgstr "一旦引擎被載入和初始化, 一個 ``Promise`` 就會被解析."
 
 msgid ""
 "Load a file so it is available in the instance's file system once it runs. "
 "Must be called **before** starting the instance."
 msgstr ""
+"載入一個檔, 這樣一旦運作, 它就可以在實例的檔案系統中使用. 必須在啟動實例 **之"
+"前** 呼叫."
 
 msgid ""
 "If not provided, the ``path`` is derived from the URL of the loaded file."
-msgstr ""
+msgstr "如果沒有提供, ``path`` 是從載入檔的URL中匯出的."
 
 msgid ""
 "The file to preload.  If a ``string`` the file will be loaded from that "
 "path.  If an ``ArrayBuffer`` or a view on one, the buffer will used as the "
 "content of the file."
 msgstr ""
+"要預裝的檔, 如果是一個 ``string`` , 檔將從該路徑載入. 如果是一個  "
+"``ArrayBuffer`` 或一個視圖, 該緩衝區將被用作檔的內容."
 
-#, fuzzy
 msgid "The file to preload."
 msgstr "最終結果"
 
 msgid "If a ``string`` the file will be loaded from that path."
-msgstr ""
+msgstr "如果是 ``string`` , 檔將從該路徑載入."
 
 msgid ""
 "If an ``ArrayBuffer`` or a view on one, the buffer will used as the content "
 "of the file."
-msgstr ""
+msgstr "如果是一個 ``ArrayBuffer`` 或一個視圖, 該緩衝區將被用作檔的內容."
 
 msgid ""
 "Path by which the file will be accessible. Required, if ``file`` is not a "
 "string."
-msgstr ""
+msgstr "用於存取檔的路徑. 如果 ``file`` 不是一個字串, 則為必需的."
 
 msgid "A Promise that resolves once the file is loaded."
-msgstr ""
+msgstr "一個一旦檔被載入就會解析的Promise."
 
 msgid ""
 "Start the engine instance using the given override configuration (if any). :"
 "js:meth:`startGame <Engine.prototype.startGame>` can be used in typical "
 "cases instead."
 msgstr ""
+"使用給定的覆蓋配置(如果有的話)啟動引擎實例. :js:meth:`startGame <Engine."
+"prototype.startGame>` 可以在典型情況下代替使用."
 
 msgid ""
 "This will initialize the instance if it is not initialized. For manual "
 "initialization, see :js:meth:`init <Engine.prototype.init>`. The engine must "
 "be loaded beforehand."
 msgstr ""
+"如果實例沒有被初始化, 它將初始化它. 對於手動初始化, 請參閱 :js:meth:`init "
+"<Engine.prototype.init>` . 引擎必須事先載入."
 
 msgid ""
 "Fails if a canvas cannot be found on the page, or not specified in the "
 "configuration."
-msgstr ""
+msgstr "如果在頁面上找不到畫布, 或者沒有在配置中指定, 則失敗."
 
 msgid "An optional configuration override."
-msgstr ""
+msgstr "一個可選的配置重寫."
 
 msgid "Promise that resolves once the engine started."
-msgstr ""
+msgstr "引擎啟動後解析的Promise."
 
 msgid ""
 "Start the game instance using the given configuration override (if any)."
-msgstr ""
+msgstr "使用給定的配置覆蓋(如果有的話)啟動遊戲實例."
 
 msgid ""
 "This will initialize the instance if it is not initialized. For manual "
 "initialization, see :js:meth:`init <Engine.prototype.init>`."
 msgstr ""
+"如果實例沒有被初始化, 將初始化它. 對於手動初始化, 見 :js:meth:`init <Engine."
+"prototype.init>` ."
 
 msgid ""
 "This will load the engine if it is not loaded, and preload the main pck."
-msgstr ""
+msgstr "如果未載入引擎, 則將載入引擎, 並預載入主pck."
 
 msgid ""
 "This method expects the initial config (or the override) to have both the :"
 "js:attr:`executable` and :js:attr:`mainPack` properties set (normally done "
 "by the editor during export)."
 msgstr ""
+"該方法將初始配置(或重寫)時同時設定 :js:attr:`executable` 和 :js:attr:"
+"`mainPack` 屬性(通常由編輯器在匯出過程中完成)."
 
 msgid "Promise that resolves once the game started."
-msgstr ""
+msgstr "一旦遊戲開始就會解析Promise."
 
 msgid ""
 "Create a file at the specified ``path`` with the passed as ``buffer`` in the "
 "instance's file system."
 msgstr ""
+"在指定的 ``path`` 上建立一個檔, 在實例的檔案系統中將通過該檔建立為 "
+"``buffer`` ."
 
 msgid "The location where the file will be created."
-msgstr ""
+msgstr "將建立檔的位置."
 
-#, fuzzy
 msgid "The content of the file."
 msgstr "檔案的絕對路徑"
 
-#, fuzzy
 msgid "Request that the current instance quit."
 msgstr "參照目前的類別實體。"
 
@@ -256,8 +281,9 @@ msgid ""
 "This is akin the user pressing the close button in the window manager, and "
 "will have no effect if the engine has crashed, or is stuck in a loop."
 msgstr ""
+"這就類似使用者在視窗管理器中按下關閉按鈕, 如果引擎已經當機, 或者卡在迴圈中, "
+"就不會有任何效果."
 
-#, fuzzy
 msgid "Engine configuration"
 msgstr "程式碼樣式設定"
 
@@ -265,247 +291,249 @@ msgid ""
 "An object used to configure the Engine instance based on godot export "
 "options, and to override those in custom HTML templates if needed."
 msgstr ""
+"用於根據 Godot 匯出選項配置引擎實例的物件, 如果需要, 可重寫自訂 HTML 範本中的"
+"物件."
 
-#, fuzzy
 msgid "Properties"
-msgstr "屬性。"
+msgstr "屬性"
 
-#, fuzzy
 msgid "type"
-msgstr "\\ ``type``"
+msgstr "type"
 
 msgid "name"
-msgstr ""
+msgstr "名稱"
 
 msgid ":js:attr:`unloadAfterInit`"
-msgstr ""
+msgstr ":js:attr:`unloadAfterInit`"
 
 msgid "HTMLCanvasElement"
-msgstr ""
+msgstr "HTMLCanvasElement"
 
 msgid ":js:attr:`canvas`"
-msgstr ""
+msgstr ":js:attr:`canvas`"
 
 msgid "string"
 msgstr "字串"
 
 msgid ":js:attr:`executable`"
-msgstr ""
+msgstr ":js:attr:`executable`"
 
 msgid ":js:attr:`mainPack`"
-msgstr ""
+msgstr ":js:attr:`mainPack`"
 
 msgid ":js:attr:`locale`"
-msgstr ""
+msgstr ":js:attr:`locale`"
 
-#, fuzzy
 msgid "number"
 msgstr "數字"
 
 msgid ":js:attr:`canvasResizePolicy`"
-msgstr ""
+msgstr ":js:attr:`canvasResizePolicy`"
 
-#, fuzzy
 msgid "Array.<string>"
 msgstr "字串"
 
 msgid ":js:attr:`args`"
-msgstr ""
+msgstr ":js:attr:`args`"
 
-#, fuzzy
 msgid "function"
 msgstr "函式"
 
 msgid ":js:attr:`onExecute`"
-msgstr ""
+msgstr ":js:attr:`onExecute`"
 
 msgid ":js:attr:`onExit`"
-msgstr ""
+msgstr ":js:attr:`onExit`"
 
 msgid ":js:attr:`onProgress`"
-msgstr ""
+msgstr ":js:attr:`onProgress`"
 
 msgid ":js:attr:`onPrint`"
-msgstr ""
+msgstr ":js:attr:`onPrint`"
 
 msgid ":js:attr:`onPrintError`"
-msgstr ""
+msgstr ":js:attr:`onPrintError`"
 
 msgid ""
 "The Engine configuration object. This is just a typedef, create it like a "
 "regular object, e.g.:"
-msgstr ""
+msgstr "引擎配置物件. 這只是一個型別, 像建立一個普通物件一樣建立它, 例如:"
 
 msgid "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
-msgstr ""
+msgstr "``const MyConfig = { executable: 'godot', unloadAfterInit: false }``"
 
-#, fuzzy
 msgid "**Property Descriptions**"
 msgstr "**描述**"
 
 msgid ""
 "Whether the unload the engine automatically after the instance is "
 "initialized."
-msgstr ""
+msgstr "在實例被初始化後, 是否自動解除安裝引擎."
 
 msgid "value"
 msgstr "值"
 
-#, fuzzy
 msgid "``true``"
-msgstr "\\ ``value``"
+msgstr "``true``"
 
 msgid "The HTML DOM Canvas object to use."
-msgstr ""
+msgstr "要使用的 HTML DOM Canvas 物件。"
 
 msgid ""
 "By default, the first canvas element in the document will be used is none is "
 "specified."
-msgstr ""
+msgstr "預設情況下, 如果沒有指定任何元素, 將使用文件中的第一個畫布元素."
 
-#, fuzzy
 msgid "``null``"
 msgstr "null"
 
 msgid ""
 "The name of the WASM file without the extension. (Set by Godot Editor export "
 "process)."
-msgstr ""
+msgstr "WASM 檔的名稱，不含副檔名。（由 Godot 編輯器的匯出過程設定）。"
 
 msgid "``\"\"``"
-msgstr ""
+msgstr "``\"\"``"
 
 msgid ""
 "An alternative name for the game pck to load. The executable name is used "
 "otherwise."
-msgstr ""
+msgstr "要載入的遊戲pck的更換名稱. 否則使用可執行檔名."
 
 msgid "Specify a language code to select the proper localization for the game."
-msgstr ""
+msgstr "指定語言程式碼，為遊戲選擇合適的當地語系化。"
 
 msgid ""
 "The browser locale will be used if none is specified. See complete list of :"
 "ref:`supported locales <doc_locales>`."
 msgstr ""
+"如果沒有指定，將使用瀏覽器的區域設定。請參閱完整的:ref:`支援的區域設定 "
+"<doc_locales>`列表。"
 
 msgid ""
 "The canvas resize policy determines how the canvas should be resized by "
 "Godot."
-msgstr ""
+msgstr "畫布大小調整策略決定 Godot 應當如何調整畫布的大小。"
 
 msgid ""
 "``0`` means Godot won't do any resizing. This is useful if you want to "
 "control the canvas size from javascript code in your template."
 msgstr ""
+"``0`` 意味著 Godot 不做任何大小調整。如果您想通過範本中的 javascript 程式碼來"
+"控制畫布的大小，這將很有用。"
 
 msgid ""
 "``1`` means Godot will resize the canvas on start, and when changing window "
 "size via engine functions."
 msgstr ""
+"``1`` 意味著 Godot 在啟動時，以及通過引擎功能改變視窗大小時，會調整畫布的大"
+"小。"
 
 msgid ""
 "``2`` means Godot will adapt the canvas size to match the whole browser "
 "window."
-msgstr ""
+msgstr "``2`` 意味著 Godot 將調整畫布的大小以配對整個瀏覽器視窗。"
 
 msgid "``2``"
-msgstr ""
+msgstr "``2``"
 
-#, fuzzy
 msgid "The arguments to be passed as command line arguments on startup."
-msgstr "解析自定命令行引數。"
+msgstr "解析自定命令行參數。"
 
-#, fuzzy
 msgid "See :ref:`command line tutorial <doc_command_line_tutorial>`."
 msgstr ""
-"更多有關命令行引數的資訊，請參考 :ref:`命令行教學 "
+"更多有關命令行參數的資訊，請參考 :ref:`命令行教學 "
 "<doc_command_line_tutorial>` 。"
 
 msgid ""
 "**Note**: :js:meth:`startGame <Engine.prototype.startGame>` will always add "
 "the ``--main-pack`` argument."
 msgstr ""
+"**注意**：:js:meth:`startGame <Engine.prototype.startGame>` 將始終新增 ``--"
+"main-pack`` 參數。"
 
-#, fuzzy
 msgid "``[]``"
 msgstr "``int[]``"
 
 msgid "A callback function for handling Godot's ``OS.execute`` calls."
-msgstr ""
+msgstr "用於處理 Godot 的 ``OS.execute`` 呼叫的回呼函式。"
 
 msgid ""
 "This is for example used in the Web Editor template to switch between "
 "Project Manager and editor, and for running the game."
 msgstr ""
+"例如在Web Editor範本中使用, 用於在專案管理器和編輯器之間切換, 以及運作遊戲."
 
 msgid "The path that Godot's wants executed."
-msgstr ""
+msgstr "Godot想要執行的路徑."
 
 msgid "The arguments of the \"command\" to execute."
-msgstr ""
+msgstr "要執行的 \"command\" 的參數."
 
 msgid "A callback function for being notified when the Godot instance quits."
-msgstr ""
+msgstr "當Godot實例退出時, 用於通知的回呼函式."
 
 msgid ""
 "**Note**: This function will not be called if the engine crashes or become "
 "unresponsive."
-msgstr ""
+msgstr "**注意**：如果引擎當機或無回應，該函式不會被呼叫。"
 
 msgid "The status code returned by Godot on exit."
-msgstr ""
+msgstr "Godot 退出時返回的狀態碼。"
 
 msgid "A callback function for displaying download progress."
-msgstr ""
+msgstr "回呼函式，用於顯示下載進度。"
 
 msgid ""
 "The function is called once per frame while downloading files, so the usage "
 "of ``requestAnimationFrame()`` is not necessary."
 msgstr ""
+"該函式在下載檔案時每影格被呼叫一次, 所以沒有必要使用 "
+"``requestAnimationFrame()`` ."
 
 msgid ""
 "If the callback function receives a total amount of bytes as 0, this means "
 "that it is impossible to calculate. Possible reasons include:"
-msgstr ""
+msgstr "如果回呼函式接收到的位元組總數為0, 這意味著無法計算. 可能的原因包括:"
 
 msgid "Files are delivered with server-side chunked compression"
-msgstr ""
+msgstr "檔隨伺服器端分塊壓縮一起提供"
 
 msgid "Files are delivered with server-side compression on Chromium"
-msgstr ""
+msgstr "檔在Chromium上通過伺服器端壓縮提供"
 
 msgid ""
 "Not all file downloads have started yet (usually on servers without multi-"
 "threading)"
-msgstr ""
+msgstr "並非所有檔下載都已開始(通常在沒有多執行緒的伺服器上)"
 
 msgid "The current amount of downloaded bytes so far."
-msgstr ""
+msgstr "到目前為止, 已下載的位元組數."
 
 msgid "The total amount of bytes to be downloaded."
-msgstr ""
+msgstr "要下載的總位元組數."
 
 msgid ""
 "A callback function for handling the standard output stream. This method "
 "should usually only be used in debug pages."
-msgstr ""
+msgstr "用於處理標準輸出流的回呼函式. 這個方法通常應該只在除錯頁面使用."
 
 msgid "By default, ``console.log()`` is used."
-msgstr ""
+msgstr "預設情況下，使用的是 ``console.log()``。"
 
 msgid "A variadic number of arguments to be printed."
-msgstr ""
+msgstr "將要輸出的可變數量的參數."
 
 msgid ""
 "A callback function for handling the standard error stream. This method "
 "should usually only be used in debug pages."
-msgstr ""
+msgstr "用於處理標準錯誤流的回呼函式. 這個方法通常應該只在除錯頁面使用."
 
 msgid "By default, ``console.error()`` is used."
-msgstr ""
+msgstr "預設情況下，使用的是 ``console.error()``。"
 
 msgid "A variadic number of arguments to be printed as errors."
-msgstr ""
+msgstr "將要輸出的可變數量的參數."
 
 msgid "Translation status"
 msgstr "翻譯狀態"

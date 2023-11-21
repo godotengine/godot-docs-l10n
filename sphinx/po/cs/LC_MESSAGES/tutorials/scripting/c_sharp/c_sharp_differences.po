@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -177,11 +177,32 @@ msgstr ""
 msgid "Mathf.Acos"
 msgstr ""
 
+msgid "acosh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Acosh"
+msgstr "Matematika"
+
+#, fuzzy
+msgid "angle_difference"
+msgstr "Stínování Reference:"
+
+msgid "Mathf.AngleDifference"
+msgstr ""
+
 msgid "asin"
 msgstr ""
 
 msgid "Mathf.Asin"
 msgstr ""
+
+msgid "asinh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Asinh"
+msgstr "Matematika"
 
 msgid "atan"
 msgstr ""
@@ -194,6 +215,13 @@ msgstr ""
 
 msgid "Mathf.Atan2"
 msgstr ""
+
+msgid "atanh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Atanh"
+msgstr "Matematika"
 
 msgid "bezier_derivative"
 msgstr ""
@@ -271,8 +299,9 @@ msgstr "Lineární interpolací"
 msgid "Mathf.CubicInterpolate"
 msgstr "Vektorová interpolace"
 
-msgid "cubic_interpoalte_angle"
-msgstr ""
+#, fuzzy
+msgid "cubic_interpolate_angle"
+msgstr "Lineární interpolací"
 
 msgid "Mathf.CubicInterpolateAngle"
 msgstr ""
@@ -615,6 +644,12 @@ msgstr "NAN"
 msgid "rid_from_int64"
 msgstr ""
 
+msgid "rotate_toward"
+msgstr ""
+
+msgid "Mathf.RotateToward"
+msgstr ""
+
 #, fuzzy
 msgid "round"
 msgstr "Pozadí"
@@ -725,6 +760,20 @@ msgstr ""
 
 msgid "Mathf.Tanh"
 msgstr ""
+
+msgid "type_convert"
+msgstr ""
+
+msgid "Variant.As<T> or GD.Convert"
+msgstr ""
+
+#, fuzzy
+msgid "type_string"
+msgstr "string"
+
+#, fuzzy
+msgid "Variant.Type.ToString"
+msgstr "Proměnná"
 
 #, fuzzy
 msgid "typeof"
@@ -1327,6 +1376,9 @@ msgid ""
 "StringExtensions.ReplaceN (Consider using `string.Replace`_ or `RegEx`_)"
 msgstr ""
 
+msgid "reverse"
+msgstr ""
+
 msgid "rfind"
 msgstr ""
 
@@ -1527,7 +1579,7 @@ msgid "to_wchar_buffer"
 msgstr ""
 
 msgid ""
-"StringExtensions.ToUtf16Buffer in Windows and StringExtensiont.ToUtf32Buffer "
+"StringExtensions.ToUtf16Buffer in Windows and StringExtensions.ToUtf32Buffer "
 "in other platforms"
 msgstr ""
 
@@ -1930,7 +1982,7 @@ msgstr "Slovník"
 
 msgid ""
 "Use ``Godot.Collections.Dictionary`` for an untyped ``Variant`` dictionary. "
-"``Godot.Colelctions.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
+"``Godot.Collections.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
 "``Godot.Collections.Dictionary``."
 msgstr ""
 

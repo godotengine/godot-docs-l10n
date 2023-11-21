@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,19 +17,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using sanitizers"
-msgstr "使用容器"
+msgstr "使用 Sanitizer"
 
-#, fuzzy
 msgid "What are sanitizers?"
-msgstr "什么是许可证？"
+msgstr "什么是 Sanitizer？"
 
 msgid ""
 "Sanitizers are static instrumentation tools that help find bugs that "
 "traditional debuggers usually cannot catch. This is particularly useful when "
 "combined with :ref:`doc_unit_testing` in continuous integration."
 msgstr ""
+"Sanitizer 是一种静态检测工具，能够帮助找出传统调试器通常无法捕捉的问题。非常"
+"适合在持续集成中与 :ref:`doc_unit_testing` 结合使用。"
 
 msgid ""
 "Sanitizers can be used on Windows, macOS and Linux by using the Clang "
@@ -39,15 +39,21 @@ msgid ""
 "several different compilers, remember that their output and behavior will "
 "differ slightly."
 msgstr ""
+"在 Windows、macOS、Linux 平台使用 Clang（LLVM）、GCC、Visual Studio 编译器时"
+"能够使用 Sanitizer。\\ :ref:`部分平台 "
+"<doc_using_sanitizers_platform_specific_sanitizers>`\\ 可能也可以使用其独有"
+"的 Sanitizer。多种不同的编译器都提供相同的某种 Sanitizer 时，请记住它们的输出"
+"和行为有可能略有不同。"
 
-#, fuzzy
 msgid "Using sanitizers on Godot"
-msgstr "在 Godot 中使用 WebRTC"
+msgstr "在 Godot 中使用 Sanitizer"
 
 msgid ""
 "Sanitizers **require** recompiling the binary. This means you cannot use "
 "official Godot binaries to run sanitizers."
 msgstr ""
+"Sanitizer **要求**\\ 重新编译二进制文件。这意味着你无法使用官方 Godot 二进制"
+"文件来运行 Sanitizer。"
 
 msgid ""
 "When :ref:`compiling <toc-devel-compiling>` with any of the sanitizers "
@@ -69,19 +75,19 @@ msgid ""
 msgstr ""
 
 msgid "Address sanitizer (ASAN)"
-msgstr ""
+msgstr "地址 Sanitizer（ASAN）"
 
-#, fuzzy
 msgid "Available in Clang and GCC."
-msgstr "可用的脚本语言"
+msgstr "Clang 和 GCC 中可用。"
 
 msgid "**Supported platforms:** Linux, macOS, Windows (Visual Studio), Web"
-msgstr ""
+msgstr "**支持的平台：**\\ Linux、macOS、Windows（Visual Studio）、Web"
 
 msgid ""
 "`Clang ASAN documentation <https://clang.llvm.org/docs/AddressSanitizer."
 "html>`__"
 msgstr ""
+"`Clang ASAN 文档 <https://clang.llvm.org/docs/AddressSanitizer.html>`__"
 
 msgid ""
 "The address sanitizer is generally the most frequently used sanitizer. It "
@@ -119,15 +125,14 @@ msgid ""
 msgstr ""
 
 msgid "Leak sanitizer (LSAN)"
-msgstr ""
+msgstr "泄漏 Sanitizer（LSAN）"
 
-#, fuzzy
 msgid "**Supported platforms:** Linux, Web"
-msgstr "支持的平台"
+msgstr "**支持的平台：**\\ Linux、Web"
 
 msgid ""
 "`Clang LSAN documentation <https://clang.llvm.org/docs/LeakSanitizer.html>`__"
-msgstr ""
+msgstr "`Clang LSAN 文档 <https://clang.llvm.org/docs/LeakSanitizer.html>`__"
 
 msgid ""
 "The leak sanitizer can detect memory leaks, which are situations where "
@@ -146,19 +151,18 @@ msgid ""
 msgstr ""
 
 msgid "Memory sanitizer (MSAN)"
-msgstr ""
+msgstr "内存 Sanitizer（MSAN）"
 
 msgid "Available in Clang only, not GCC."
-msgstr ""
+msgstr "仅 Clang 可用，GCC 不可用。"
 
-#, fuzzy
 msgid "**Supported platforms:** Linux"
-msgstr "支持的平台"
+msgstr "**支持的平台：**\\ Linux"
 
 msgid ""
 "`Clang MSAN documentation <https://clang.llvm.org/docs/MemorySanitizer."
 "html>`__"
-msgstr ""
+msgstr "`Clang MSAN 文档 <https://clang.llvm.org/docs/MemorySanitizer.html>`__"
 
 msgid ""
 "The memory sanitizer complements the :ref:"
@@ -173,16 +177,15 @@ msgid ""
 msgstr ""
 
 msgid "Thread sanitizer (TSAN)"
-msgstr ""
+msgstr "线程 Sanitizer（TSAN）"
 
-#, fuzzy
 msgid "**Supported platforms:** Linux, macOS"
-msgstr "支持的平台"
+msgstr "**支持的平台：**\\ Linux、macOS"
 
 msgid ""
 "`Clang TSAN documentation <https://clang.llvm.org/docs/ThreadSanitizer."
 "html>`__"
-msgstr ""
+msgstr "`Clang TSAN 文档 <https://clang.llvm.org/docs/ThreadSanitizer.html>`__"
 
 msgid ""
 "The thread sanitizer is used to track down race conditions related to "
@@ -202,16 +205,17 @@ msgid ""
 msgstr ""
 
 msgid "Undefined behavior sanitizer (UBSAN)"
-msgstr ""
+msgstr "未定义行为 Sanitizer（UBSAN）"
 
-#, fuzzy
 msgid "**Supported platforms:** Linux, macOS, Web"
-msgstr "支持的平台"
+msgstr "**支持的平台：**\\ Linux、macOS、Web"
 
 msgid ""
 "`Clang UBSAN documentation <https://clang.llvm.org/docs/"
 "UndefinedBehaviorSanitizer.html>`__"
 msgstr ""
+"`Clang UBSAN 文档 <https://clang.llvm.org/docs/UndefinedBehaviorSanitizer."
+"html>`__"
 
 msgid ""
 "The undefined behavior sanitizer is used to track down situations where the "
@@ -227,9 +231,8 @@ msgid ""
 "small performance overhead."
 msgstr ""
 
-#, fuzzy
 msgid "Platform-specific sanitizers"
-msgstr "平台相关"
+msgstr "平台相关 Sanitizer"
 
 msgid "Web"
 msgstr "Web"

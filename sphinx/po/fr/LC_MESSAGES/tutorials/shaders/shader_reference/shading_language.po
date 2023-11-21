@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -918,14 +918,23 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"It's important to understand that textures that are supplied as color "
-"require hints for proper sRGB->linear conversion (i.e. ``source_color``), as "
-"Godot's 3D engine renders in linear color space."
+"It's important to understand that textures *that are supplied as color* "
+"require hints for proper sRGB -> linear conversion (i.e. ``source_color``), "
+"as Godot's 3D engine renders in linear color space. If this is not done, the "
+"texture will appear washed out."
 msgstr ""
 "Il est important de comprendre que les textures qui sont fournies sous forme "
 "de couleur nécessitent des indices pour une conversion sRGB->linear (i.e. "
 "``hint_albedo``), car le moteur 3D de Godot effectue le rendu dans un espace "
 "de couleur linéaire."
+
+msgid ""
+"The 2D renderer also renders in linear color space if the **Rendering > "
+"Viewport > HDR 2D** project setting is enabled, so ``source_color`` must "
+"also be used in ``canvas_item`` shaders. If 2D HDR is disabled, "
+"``source_color`` will keep working correctly in ``canvas_item`` shaders, so "
+"it's recommend to use it either way."
+msgstr ""
 
 msgid "Full list of hints below:"
 msgstr "Liste complète des indices ci-dessous :"
@@ -1029,7 +1038,7 @@ msgstr ""
 msgid "hint_normal_roughness_texture"
 msgstr ""
 
-msgid "Texture is the normal roughness texture."
+msgid "Texture is the normal roughness texture (only supported in Forward+)."
 msgstr ""
 
 msgid ""
@@ -1145,6 +1154,11 @@ msgstr ""
 msgid "Uniforms can also be assigned default values:"
 msgstr ""
 "Des valeurs par défaut peuvent également être attribuées aux uniforms :"
+
+msgid ""
+"Note that when adding a default value and a hint, the default value goes "
+"after the hint."
+msgstr ""
 
 msgid ""
 "If you need to make multiple uniforms to be grouped in the specific category "
@@ -1928,13 +1942,11 @@ msgstr ""
 msgid "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
 msgstr "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
 
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler2DArray s, vec3 p [, float bias])"
-msgstr "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
+msgstr "vec4_type **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
 
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler3D s, vec3 p [, float bias])"
-msgstr "vec4_type  **texture** (sampler3D_type s, vec3 uv [, float bias])"
+msgstr "vec4_type **texture** (sampler3D_type s, vec3 uv [, float bias])"
 
 #, fuzzy
 msgid "vec4 **texture** (samplerCube s, vec3 p [, float bias])"
@@ -1956,9 +1968,8 @@ msgstr "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
 msgid "gvec4_type **textureProj** (gsampler2D s, vec4 p [, float bias])"
 msgstr "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
 
-#, fuzzy
 msgid "gvec4_type **textureProj** (gsampler3D s, vec4 p [, float bias])"
-msgstr "vec4_type  **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
+msgstr "vec4_type **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
 
 #, fuzzy
 msgid "Perform a texture read with projection."
@@ -1990,7 +2001,8 @@ msgstr "Effectuer une lecture de texture 2D avec mipmap personnalisé"
 
 msgid ""
 "The LOD defines which mipmap level is used. An LOD value of ``0.0`` will use "
-"the full resolution texture."
+"the full resolution texture. If the texture lacks mipmaps, all LOD values "
+"will act like ``0.0``."
 msgstr ""
 
 #, fuzzy
@@ -2066,7 +2078,8 @@ msgstr ""
 "vec_type dPdy )"
 
 #, fuzzy
-msgid "Performs a texture read with projection/LOD and with explcit gradients."
+msgid ""
+"Performs a texture read with projection/LOD and with explicit gradients."
 msgstr "Effectuer une lecture de texture 2D avec projection/LOD"
 
 #, fuzzy
@@ -2089,9 +2102,8 @@ msgstr "Récupérer un seul texel à l'aide de coordonnées entières"
 msgid "gvec4_type **textureGather** (gsampler2D s, vec2 p [, int comps])"
 msgstr "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
 
-#, fuzzy
 msgid "gvec4_type **textureGather** (gsampler2DArray s, vec3 p [, int comps])"
-msgstr "vec4_type  **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
+msgstr "vec4_type **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
 
 #, fuzzy
 msgid "vec4 **textureGather** (samplerCube s, vec3 p [, int comps])"

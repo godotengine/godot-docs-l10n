@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Editor introduction"
 msgstr "編輯器整合"
 
@@ -25,8 +24,8 @@ msgid ""
 "In this section, we cover the Godot editor in general, from its interface to "
 "using it with the command line."
 msgstr ""
+"在本節中，我們將大體上地介紹 Godot 編輯器，從它的介面到如何通過命令行使用它。"
 
-#, fuzzy
 msgid "Editor's interface"
 msgstr "編輯器界面 (C++)"
 
@@ -36,10 +35,12 @@ msgid ""
 "interface in other sections where appropriate. For example, the :ref:"
 "`animation editor <doc_introduction_animation>`."
 msgstr ""
+"在這一部分中，我們將介紹 Godot 編輯器的大體情況，從介面到如何在命令列中使用。"
+"我們也會在合適的時候在其他章節中介紹特定的編輯器介面。例如:ref:`動畫編輯器 "
+"<doc_introduction_animation>`。"
 
-#, fuzzy
 msgid "Android editor"
-msgstr "\\ Android Studio"
+msgstr "Android Studio"
 
 msgid ""
 "Godot offers a native port of the editor running entirely on Android "
@@ -48,8 +49,11 @@ msgid ""
 "parity with the Desktop version of the editor, the Android port has a "
 "certain amount of caveats you should be aware of."
 msgstr ""
+"Godot 提供了一個完全在 Android 裝置上運作的編輯器本地埠。Android 埠可以從 "
+"`Android 下載頁面<https://godotengine.org/download/android/>`__下載。在我們努"
+"力實作與桌上出版本的編輯器功能對等的同時，Android 埠仍有一些您應當注意的警"
+"告。"
 
-#, fuzzy
 msgid "Web editor"
 msgstr "執行編輯器"
 
@@ -58,8 +62,9 @@ msgid ""
 "browser. No download is required to use it, but it has a certain amount of "
 "caveats you should be aware of."
 msgstr ""
+"Godot 提供了可完全在瀏覽器中運作的 HTML5 版本的編輯器。 無需下載即可使用，但"
+"使用這個編輯器仍有一些你應該注意的警告。"
 
-#, fuzzy
 msgid "Advanced features"
 msgstr "進階匯出"
 
@@ -68,10 +73,11 @@ msgid ""
 "developers, such as calling Godot from the command line and using an "
 "external text editor like Visual Studio Code or Emacs."
 msgstr ""
+"下面的文章重點介紹對經驗豐富的開發人員有幫助的高級功能，例如從命令列呼叫 "
+"Godot 以及使用 Visual Studio Code 或 Emacs 等外部文字編輯器。"
 
-#, fuzzy
 msgid "Managing editor features"
-msgstr "功能清單"
+msgstr "功能列表"
 
 msgid ""
 "Godot allows you to remove features from the editor. This may be useful if "
@@ -79,6 +85,9 @@ msgid ""
 "you're working on a project that's only 2D or only 3D and don't want to see "
 "what you don't need."
 msgstr ""
+"Godot 允許你從編輯器中移除功能。 如果你是一名教育工作者，試圖讓學生一點一點地"
+"熟悉編輯器，或者你正在處理只有 2D 或 3D 的專案並且不想看到不需要的功能，移除"
+"功能的操作可能會很有用。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

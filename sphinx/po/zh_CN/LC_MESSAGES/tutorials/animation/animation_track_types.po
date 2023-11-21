@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Animation Track types"
-msgstr "动画轨道编辑器"
+msgstr "动画轨道类型"
 
 msgid ""
 "This page gives an overview of the track types available for Godot's "
@@ -32,37 +31,37 @@ msgid ""
 msgstr ""
 
 msgid "Property Track"
-msgstr ""
+msgstr "属性轨道"
 
 msgid "The most basic track type. See :ref:`doc_introduction_animation`."
-msgstr ""
+msgstr "最基本的轨道类型。见 :ref:`doc_introduction_animation`\\ 。"
 
 msgid "Position 3D / Rotation 3D / Scale 3D Track"
-msgstr ""
+msgstr "3D 位置、旋转、缩放轨道"
 
 msgid ""
 "These 3D transform tracks control the location, rotation, and scale of a 3D "
 "object. They make it easier to animate a 3D object's transform compared to "
 "using regular property tracks."
 msgstr ""
+"这些 3D 变换轨道控制的是 3D 对象的位置、旋转和缩放。这样为 3D 对象的变换做动"
+"画相比于使用普通属性轨道更方便。"
 
 msgid ""
 "It is designed for animations imported from external 3D models and can "
 "reduce resource capacity through compression."
 msgstr ""
 
-#, fuzzy
 msgid "Blend Shape Track"
-msgstr "融合变形"
+msgstr "混合形状轨道"
 
 msgid ""
 "A blend shape track is optimized for animating blend shape in :ref:"
 "`MeshInstance3D <class_MeshInstance3D>`."
 msgstr ""
 
-#, fuzzy
 msgid "Call Method Track"
-msgstr "添加调用方法轨道"
+msgstr "方法调用轨道"
 
 msgid ""
 "A call method track allow you to call a function at a precise time from "
@@ -89,9 +88,8 @@ msgid ""
 "\"Args\" section, you will see a list of arguments you can edit."
 msgstr ""
 
-#, fuzzy
 msgid "Bezier Curve Track"
-msgstr "贝塞尔、曲线和路径"
+msgstr "贝塞尔曲线轨道"
 
 msgid ""
 "A bezier curve track is similar to a property track, except it allows you to "
@@ -139,7 +137,7 @@ msgid ""
 msgstr ""
 
 msgid "Audio Playback Track"
-msgstr ""
+msgstr "音频播放轨道"
 
 msgid ""
 "If you want to create an animation with audio, you need to create an audio "
@@ -164,9 +162,8 @@ msgid ""
 "volume when blending in the :ref:`AnimationTree <class_AnimationTree>`."
 msgstr ""
 
-#, fuzzy
 msgid "Animation Playback Track"
-msgstr "AnimationPlayer"
+msgstr "动画播放轨道"
 
 msgid ""
 "Animation playback tracks allow you to sequence the animations of other "

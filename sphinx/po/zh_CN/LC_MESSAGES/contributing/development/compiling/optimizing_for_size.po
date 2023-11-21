@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Optimizing a build for size"
 msgstr "为尺寸优化构建"
 
 msgid "Rationale"
-msgstr "解释"
+msgstr "依据"
 
 msgid ""
 "Sometimes, it is desired to optimize a build for size rather than speed. "
@@ -83,35 +83,20 @@ msgstr ""
 "<doc_using_cpp_profilers>`\\ 也将无法显示函数名称（不影响内置的 GDScript 性能"
 "分析器）。"
 
+#, fuzzy
 msgid ""
 "The above command will not work on Windows binaries compiled with MSVC and "
-"platforms such as Android and HTML5. Instead, pass ``debug_symbols=no`` on "
-"the SCons command line when compiling."
+"platforms such as Android and Web. Instead, pass ``debug_symbols=no`` on the "
+"SCons command line when compiling."
 msgstr ""
 "上面的命令无法用于使用 MSVC 编译的 Windows 二进制文件，Android 和 HTML5 等平"
 "台也一样。作为替代，请在编译时向 SCons 命令行传递 ``debug_symbols=no``\\ 。"
 
-msgid "Optimizing for size instead of speed"
-msgstr "针对大小而不是速度优化"
+msgid "Compiling with link-time optimization"
+msgstr "编译时使用连接时间优化"
 
 msgid "**Space savings:** High"
 msgstr "**节省空间：**\\ 高"
-
-msgid "**Performed in official builds:** Yes, but only for HTML5"
-msgstr "**在官方构建中执行：**\\ 是，但仅限于 HTML5"
-
-msgid ""
-"Godot 3.1 onwards allows compiling using size optimizations (instead of "
-"speed). To enable this, set the ``optimize`` flag to ``size``:"
-msgstr ""
-"Godot 3.1以上版本允许使用尺寸优化(而不是速度优化)进行编译. 要启用这个功能, 请"
-"将 ``optimize`` 标志设置为 ``size`` :"
-
-msgid "Some platforms such as WebAssembly already use this mode by default."
-msgstr "某些平台如WebAssembly默认情况下已使用此模式."
-
-msgid "Compiling with link-time optimization"
-msgstr "编译时使用连接时间优化"
 
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
@@ -142,14 +127,74 @@ msgstr ""
 "编译 ``3.x`` 分支时，如果启用了 LTO，那么你需要至少 6 GB 可用内存才能成功链"
 "接。"
 
+msgid "Optimizing for size instead of speed"
+msgstr "针对大小而不是速度优化"
+
+#, fuzzy
+msgid "**Performed in official builds:** Yes, but only for web builds"
+msgstr "**在官方构建中执行：**\\ 是，但仅限于 HTML5"
+
+msgid ""
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+"Godot 3.1以上版本允许使用尺寸优化(而不是速度优化)进行编译. 要启用这个功能, 请"
+"将 ``optimize`` 标志设置为 ``size`` :"
+
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr "某些平台如WebAssembly默认情况下已使用此模式."
+
+#, fuzzy
+msgid "Disabling advanced text server"
+msgstr "禁用高级 GUI 对象"
+
+msgid "**Performed in official builds:** No"
+msgstr "**在官方构建中执行：**\\ 否"
+
+msgid ""
+"By default, Godot uses an advanced text server with the support for the "
+"following features:"
+msgstr ""
+
+msgid ""
+"Right-to-left typesetting and complex scripts, required to write languages "
+"such as Arabic and Hebrew."
+msgstr ""
+
+msgid ""
+"Font ligatures and OpenType features (such as small capitals, fractions and "
+"slashed zero)."
+msgstr ""
+
+msgid ""
+"Godot provides a fallback text server that isn't compiled by default. This "
+"text server can be used as a lightweight alternative to the default advanced "
+"text server:"
+msgstr ""
+
+msgid ""
+"If you only intend on supporting Latin, Greek and Cyrillic-based languages "
+"in your project, the fallback text server should suffice."
+msgstr ""
+
+msgid ""
+"This fallback text server can also process large amounts of text more "
+"quickly than the advanced text server. This makes the fallback text server a "
+"good fit for mobile/web projects."
+msgstr ""
+
+msgid ""
+"Remember to always pass ``module_text_server_fb_enabled=yes`` when using "
+"``module_text_server_adv_enabled=no``. Otherwise, the compiled binary won't "
+"contain any text server, which means no text will be displayed at all when "
+"running the project."
+msgstr ""
+
 msgid "Disabling 3D"
 msgstr "禁用 3D"
 
 msgid "**Space savings:** Moderate"
 msgstr "**节省空间：**\\ 一般"
-
-msgid "**Performed in official builds:** No"
-msgstr "**在官方构建中执行：**\\ 否"
 
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
@@ -191,16 +236,14 @@ msgstr "Tree"
 msgid "TextEdit"
 msgstr "TextEdit"
 
-#, fuzzy
 msgid "CodeEdit"
-msgstr "TextEdit"
+msgstr "CodeEdit"
 
 msgid "SyntaxHighlighter"
-msgstr ""
+msgstr "SyntaxHighlighter"
 
-#, fuzzy
 msgid "CodeHighlighter"
-msgstr "高架滤波器(HighShelfFilter)"
+msgstr "CodeHighlighter"
 
 msgid "TreeItem"
 msgstr "TreeItem"
@@ -217,9 +260,8 @@ msgstr "ColorPicker"
 msgid "ColorPickerButton"
 msgstr "ColorPickerButton"
 
-#, fuzzy
 msgid "RichTextlabel"
-msgstr "RichTextLabel"
+msgstr "RichTextlabel"
 
 msgid "RichTextEffect"
 msgstr "RichTextEffect"
@@ -236,9 +278,8 @@ msgstr "ConfirmationDialog"
 msgid "MarginContainer"
 msgstr "MarginContainer"
 
-#, fuzzy
 msgid "SubViewportContainer"
-msgstr "ViewportContainer"
+msgstr "SubViewportContainer"
 
 msgid "SplitContainer"
 msgstr "SplitContainer"
@@ -246,9 +287,8 @@ msgstr "SplitContainer"
 msgid "HSplitContainer"
 msgstr "HSplitContainer"
 
-#, fuzzy
 msgid "VSplitContainer"
-msgstr "SplitContainer"
+msgstr "VSplitContainer"
 
 msgid "GraphNode"
 msgstr "GraphNode"
@@ -282,8 +322,8 @@ msgstr ""
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
 "modules and see which ones you actually still need for your game (e.g. you "
-"might want to keep networking-related modules, regex support, or theora to "
-"play videos)."
+"might want to keep networking-related modules, regex support, ``minimp3``/"
+"``ogg``/``vorbis`` to play music, or ``theora`` to play videos)."
 msgstr ""
 "如果这被证明不适合你的用例, 你应该回顾一下模块列表, 看看哪些模块是你的游戏仍"
 "然需要的(例如, 你可能想保留网络相关的模块,regex支持, 或者播放视频的theora/"

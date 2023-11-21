@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -211,6 +211,12 @@ msgid ""
 "to (1, 1)."
 msgstr ""
 
+msgid "in int  **INSTANCE_ID**"
+msgstr ""
+
+msgid "Instance ID for instancing."
+msgstr ""
+
 msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr ""
 
@@ -235,7 +241,14 @@ msgstr ""
 msgid "inout vec2 **VERTEX**"
 msgstr ""
 
-msgid "Vertex, in image space."
+#, fuzzy
+msgid "Vertex, in local space."
+msgstr "이 기능은 항상 전반적인 좌표에 적용됩니다."
+
+msgid "in int **VERTEX_ID**"
+msgstr ""
+
+msgid "The index of the current vertex in the vertex buffer."
 msgstr ""
 
 msgid "inout vec2 **UV**"

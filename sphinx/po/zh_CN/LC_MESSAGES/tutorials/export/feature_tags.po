@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,59 +76,47 @@ msgstr "**功能标签**"
 msgid "**Description**"
 msgstr "**描述**"
 
-#, fuzzy
 msgid "**android**"
-msgstr "**Android**"
+msgstr "**android**"
 
 msgid "Running on Android (but not within a Web browser)"
-msgstr ""
+msgstr "在 Android 上运行（非 Web 浏览器）"
 
 msgid "**bsd**"
-msgstr ""
+msgstr "**bsd**"
 
 msgid "Running on \\*BSD (but not within a Web browser)"
-msgstr ""
+msgstr "在 \\*BSD 上运行（非 Web 浏览器）"
 
-#, fuzzy
 msgid "**linux**"
-msgstr "**Alpine Linux**"
+msgstr "**linux**"
 
 msgid "Running on Linux (but not within a Web browser)"
-msgstr ""
+msgstr "在 Linux 上运行（非 Web 浏览器）"
 
-#, fuzzy
 msgid "**macos**"
-msgstr "**macOS**"
+msgstr "**macos**"
 
 msgid "Running on macOS (but not within a Web browser)"
-msgstr ""
+msgstr "在 macOS 上运行（非 Web 浏览器）"
 
 msgid "**ios**"
-msgstr ""
+msgstr "**ios**"
 
 msgid "Running on iOS (but not within a Web browser)"
-msgstr ""
+msgstr "在 iOS 上运行（非 Web 浏览器）"
 
-msgid "**uwp**"
-msgstr ""
-
-msgid "Running on UWP (but not within a Web browser)"
-msgstr ""
-
-#, fuzzy
 msgid "**windows**"
-msgstr "**Windows**"
+msgstr "**windows**"
 
 msgid "Running on Windows"
 msgstr "在 Windows 上运行"
 
-#, fuzzy
 msgid "**linuxbsd**"
-msgstr "**Alpine Linux**"
+msgstr "**linuxbsd**"
 
-#, fuzzy
 msgid "Running on Linux or \\*BSD"
-msgstr "在 iOS 上运行"
+msgstr "在 Linux 或 \\*BSD 上运行"
 
 msgid "**debug**"
 msgstr "**debug**"
@@ -148,29 +136,23 @@ msgstr "**editor**"
 msgid "Running on an editor build"
 msgstr "在编辑器构建上运行"
 
-#, fuzzy
 msgid "**template**"
-msgstr "**发布日期**"
+msgstr "**template**"
 
-#, fuzzy
 msgid "Running on a non-editor (export template) build"
-msgstr "在无编辑器构建上运行"
+msgstr "在非编辑器（导出模板）构建上运行"
 
-#, fuzzy
 msgid "**double**"
-msgstr "**mobile**"
+msgstr "**double**"
 
-#, fuzzy
 msgid "Running on a double-precision build"
-msgstr "在无编辑器构建上运行"
+msgstr "在双精度构建上运行"
 
-#, fuzzy
 msgid "**single**"
-msgstr "**mobile**"
+msgstr "**single**"
 
-#, fuzzy
 msgid "Running on a single-precision build"
-msgstr "在无编辑器构建上运行"
+msgstr "在单精度构建上运行"
 
 msgid "**64**"
 msgstr "**64**"
@@ -190,9 +172,8 @@ msgstr "**x86_64**"
 msgid "Running on a 64-bit x86 build"
 msgstr "在 64 位 x86 架构构建上运行"
 
-#, fuzzy
 msgid "**x86_32**"
-msgstr "**x86**"
+msgstr "**x86_32**"
 
 msgid "Running on a 32-bit x86 build"
 msgstr "在 32 位 x86 架构构建上运行"
@@ -200,9 +181,8 @@ msgstr "在 32 位 x86 架构构建上运行"
 msgid "**x86**"
 msgstr "**x86**"
 
-#, fuzzy
 msgid "Running on an x86 build (any bitness)"
-msgstr "在 64 位构建上运行（不限架构）"
+msgstr "在 x86 构建上运行（不限位数）"
 
 msgid "**arm64**"
 msgstr "**arm64**"
@@ -210,9 +190,8 @@ msgstr "**arm64**"
 msgid "Running on a 64-bit ARM build"
 msgstr "在 64 位 ARM 架构构建上运行"
 
-#, fuzzy
 msgid "**arm32**"
-msgstr "**arm**"
+msgstr "**arm32**"
 
 msgid "Running on a 32-bit ARM build"
 msgstr "在 32 位 ARM 架构构建上运行"
@@ -220,72 +199,56 @@ msgstr "在 32 位 ARM 架构构建上运行"
 msgid "**arm**"
 msgstr "**arm**"
 
-#, fuzzy
 msgid "Running on an ARM build (any bitness)"
-msgstr "在 64 位构建上运行（不限架构）"
+msgstr "在 ARM 架构构建上运行（不限位数）"
 
-#, fuzzy
 msgid "**rv64**"
-msgstr "**64**"
+msgstr "**rv64**"
 
-#, fuzzy
 msgid "Running on a 64-bit RISC-V build"
-msgstr "在 64 位 ARM 架构构建上运行"
+msgstr "在 64 位 RISC-V 构建上运行"
 
-#, fuzzy
 msgid "**riscv**"
-msgstr "**右对齐**"
+msgstr "**riscv**"
 
-#, fuzzy
 msgid "Running on a RISC-V build (any bitness)"
-msgstr "在 64 位构建上运行（不限架构）"
+msgstr "在 RISC-V 构建上运行（不限位数）"
 
-#, fuzzy
 msgid "**ppc64**"
-msgstr "**64**"
+msgstr "**ppc64**"
 
-#, fuzzy
 msgid "Running on a 64-bit PowerPC build"
-msgstr "在 64 位 x86 架构构建上运行"
+msgstr "在 64 位 PowerPC 构建上运行"
 
-#, fuzzy
 msgid "**ppc32**"
-msgstr "**32**"
+msgstr "**ppc32**"
 
-#, fuzzy
 msgid "Running on a 32-bit PowerPC build"
-msgstr "在 32 位 x86 架构构建上运行"
+msgstr "在 32 位 PowerPC 构建上运行"
 
-#, fuzzy
 msgid "**ppc**"
-msgstr "**pc**"
+msgstr "**ppc**"
 
-#, fuzzy
 msgid "Running on a PowerPC build (any bitness)"
-msgstr "在 64 位构建上运行（不限架构）"
+msgstr "在 PowerPC 构建上运行（不限位数）"
 
-#, fuzzy
 msgid "**wasm64**"
-msgstr "**arm64**"
+msgstr "**wasm64**"
 
-#, fuzzy
 msgid "Running on a 64-bit WebAssembly build (not yet possible)"
-msgstr "在 64 位构建上运行（不限架构）"
+msgstr "在 64 位 WebAssembly 构建上运行（尚不支持）"
 
-#, fuzzy
 msgid "**wasm32**"
-msgstr "**32**"
+msgstr "**wasm32**"
 
-#, fuzzy
 msgid "Running on a 32-bit WebAssembly build"
-msgstr "在 32 位 ARM 架构构建上运行"
+msgstr "在 32 位 WebAssembly 构建上运行"
 
 msgid "**wasm**"
-msgstr ""
+msgstr "**wasm**"
 
-#, fuzzy
 msgid "Running on a WebAssembly build (any bitness)"
-msgstr "在 64 位构建上运行（不限架构）"
+msgstr "在 WebAssembly 构建上运行（不限位数）"
 
 msgid "**mobile**"
 msgstr "**mobile**"
@@ -305,41 +268,36 @@ msgstr "**web**"
 msgid "Host OS is a Web browser"
 msgstr "宿主操作系统是网页浏览器"
 
-#, fuzzy
 msgid "**web_android**"
-msgstr "**Android**"
+msgstr "**web_android**"
 
 #, fuzzy
 msgid "Host OS is a Web browser running on Android"
 msgstr "宿主操作系统是网页浏览器"
 
-#, fuzzy
 msgid "**web_ios**"
-msgstr "**web**"
+msgstr "**web_ios**"
 
 #, fuzzy
 msgid "Host OS is a Web browser running on iOS"
 msgstr "宿主操作系统是网页浏览器"
 
-#, fuzzy
 msgid "**web_linuxbsd**"
-msgstr "**web**"
+msgstr "**web_linuxbsd**"
 
 #, fuzzy
 msgid "Host OS is a Web browser running on Linux or \\*BSD"
 msgstr "宿主操作系统是网页浏览器"
 
-#, fuzzy
 msgid "**web_macos**"
-msgstr "**web**"
+msgstr "**web_macos**"
 
 #, fuzzy
 msgid "Host OS is a Web browser running on macOS"
 msgstr "宿主操作系统是网页浏览器"
 
-#, fuzzy
 msgid "**web_windows**"
-msgstr "**Windows**"
+msgstr "**web_windows**"
 
 #, fuzzy
 msgid "Host OS is a Web browser running on Windows"
@@ -363,9 +321,8 @@ msgstr "**s3tc**"
 msgid "Textures using S3TC (DXT/BC) compression are supported"
 msgstr "支持使用 S3TC（DXT/BC）压缩的纹理"
 
-#, fuzzy
 msgid "**movie**"
-msgstr "**mobile**"
+msgstr "**movie**"
 
 msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
 msgstr ""

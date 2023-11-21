@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Unit testing"
 msgstr "位元移位"
 
@@ -29,21 +28,24 @@ msgid ""
 "``main`` entry point, the tests reside in a dedicated ``tests/`` directory "
 "instead, which is located at the root of the engine source code."
 msgstr ""
+"Godot Engine 允許直接用 C++ 寫單元測試。該引擎整合了「doctest <https://"
+"github.com/onqtam/doctest>」_單元測試框架，該框架提供了在生產程式碼旁邊編寫測"
+"試套件和測試案例的能力，但由於Godot 中的測試經歷了不同的「 `main` 入口點，測"
+"試駐留在專用的 `tests/` 目錄中，該目錄位於引擎原始碼的根目錄下。"
 
-#, fuzzy
 msgid "Platform and target support"
 msgstr "支援平台"
 
 msgid ""
 "C++ unit tests can be run on Linux, macOS, and Windows operating systems."
-msgstr ""
+msgstr "C++ 單元測試可以在 Linux、macOS 和 Windows 作業系統上運作。"
 
 msgid ""
 "Tests can only be run with editor ``tools`` enabled, which means that export "
 "templates cannot be tested currently."
 msgstr ""
+"測試只能在啟用編輯器「tools」的情況下運作，這表示目前無法測試匯出範本。"
 
-#, fuzzy
 msgid "Running tests"
 msgstr "執行遊戲"
 
@@ -52,21 +54,25 @@ msgid ""
 "``tests`` build option enabled (and any other build option you typically "
 "use), as the tests are not compiled as part of the engine by default:"
 msgstr ""
+"在實際執行測試之前，必須在啟用「tests」建置選項（以及您通常使用的任何其他建置"
+"選項）的情況下編譯引擎，因為預設情況下測試不會編譯為引擎的一部分："
 
 msgid ""
 "Once the build is done, run the tests with a ``--test`` command-line option:"
-msgstr ""
+msgstr "建置完成後，使用“--test”命令列選項執行測試："
 
 msgid ""
 "The test run can be configured with the various doctest-specific command-"
 "line options. To retrieve the full list of supported options, run the ``--"
 "test`` command with the ``--help`` option:"
 msgstr ""
+"可以使用各種特定於 doctest 的命令列選項來設定測試運作。若要檢索支援選項的完整"
+"列表，請執行帶有“--help”選項的“--test”命令："
 
 msgid ""
 "Any other options and arguments after the ``--test`` command are treated as "
 "arguments for doctest."
-msgstr ""
+msgstr "“--test” 指令之後的任何其他選項和參數都被視為 doctest 的參數。"
 
 msgid ""
 "Tests are compiled automatically if you use the ``dev_mode=yes`` SCons "
@@ -76,8 +82,11 @@ msgid ""
 "warnings are detected, so you should strive to fix all warnings before "
 "opening a pull request."
 msgstr ""
+"如果您使用“dev_mode=yes” SCons 選項，測試會自動編譯。如果您打算為引擎開發做出"
+"貢獻，建議使用“dev_mode=yes”，因為它會自動將編譯警告視為錯誤。如果偵測到任何"
+"編譯警告，持續整合系統將會失敗，因此您應該在開啟拉取請求之前努力修復所有警"
+"告。"
 
-#, fuzzy
 msgid "Filtering tests"
 msgstr "篩選檔案"
 
@@ -88,70 +97,71 @@ msgid ""
 "purposes, you can run the tests of interest with the various filtering "
 "options provided by doctest."
 msgstr ""
+"預設情況下，如果您在“--test”命令後不提供任何額外參數，則會執行所有測試。但"
+"是，如果您正在編寫新測試或希望查看這些測試的成功判斷提示輸出以進行偵錯，則可"
+"以使用 doctest 提供的各種篩選選項來執行感興趣的測試。"
 
 msgid ""
 "The wildcard syntax ``*`` is supported for matching any number of characters "
 "in test suites, test cases, and source file names:"
 msgstr ""
+"支援通配符語法「*」來配對測試套件、測試案例和原始檔案名稱中的任意數量的字元："
 
-#, fuzzy
 msgid "**Filter options**"
 msgstr "**通用選項**"
 
 msgid "**Shorthand**"
-msgstr ""
+msgstr "**Shorthand**"
 
-#, fuzzy
 msgid "**Examples**"
 msgstr "**範例**"
 
-#, fuzzy
 msgid "``--test-suite``"
 msgstr "``--test <test>``"
 
 msgid "``-ts``"
-msgstr ""
+msgstr "``-ts``"
 
 msgid "``-ts=\"*[GDScript]*\"``"
-msgstr ""
+msgstr "``-ts=\"*[GDScript]*\"``"
 
-#, fuzzy
 msgid "``--test-case``"
 msgstr "``--no-docbase``"
 
 msgid "``-tc``"
-msgstr ""
+msgstr "``-tc``"
 
-#, fuzzy
 msgid "``-tc=\"*[String]*\"``"
 msgstr "``String[]``"
 
-#, fuzzy
 msgid "``--source-file``"
 msgstr "``--quiet``"
 
 msgid "``-sf``"
-msgstr ""
+msgstr "``-sf``"
 
 msgid "``-sf=\"*test_color*\"``"
-msgstr ""
+msgstr "``-sf=\"*test_color*\"``"
 
 msgid "For instance, to run only the ``String`` unit tests, run:"
-msgstr ""
+msgstr "例如，若要僅執行“String”單元測試，請執行："
 
 msgid ""
 "Successful assertions output can be enabled with the ``--success`` (``-s``) "
 "option, and can be combined with any combination of filtering options above, "
 "for instance:"
 msgstr ""
+"成功的判斷提示輸出可以使用“--success”（“-s”）選項啟用，並且可以與上述篩選選項"
+"的任意組合結合使用，例如："
 
 msgid ""
 "Specific tests can be skipped with corresponding ``-exclude`` options. As of "
 "now, some tests include random stress tests which take a while to execute. "
 "In order to skip those kind of tests, run the following command:"
 msgstr ""
+"可以使用對應的“-exclude”選項跳過特定測試。截至目前，一些測試包括隨機壓力測"
+"試，需要一段時間才能執行。若要跳過此類測試，請執行以下命令："
 
-#, fuzzy
 msgid "Writing tests"
 msgstr "撰文風格"
 
@@ -160,15 +170,19 @@ msgid ""
 "main test entry point in ``tests/test_main.cpp``. Most test suites are "
 "located directly under ``tests/`` directory."
 msgstr ""
+"測試套件代表 C++ 頭檔案，必須將其作為主測試入口點的一部分包含在「tests/"
+"test_main.cpp」中。大多數測試套件直接位於“tests/”目錄下。"
 
 msgid ""
 "All header files are prefixed with ``test_``, and this is a naming "
 "convention which the Godot build system relies on to detect tests throughout "
 "the engine."
 msgstr ""
+"所有頭檔都以「test_」為前綴，這是 Godot 建置系統用來偵測整個引擎測試的命名約"
+"定。"
 
 msgid "Here's a minimal working test suite with a single test case written:"
-msgstr ""
+msgstr "這是一個最小的工作測試套件，其中編寫了一個測試案例："
 
 msgid ""
 "The ``tests/test_macros.h`` header encapsulates everything which is needed "
@@ -176,8 +190,10 @@ msgid ""
 "logging macros such as ``CHECK`` as seen above, and of course the "
 "definitions for writing test cases themselves."
 msgstr ""
+"“tests/test_macros.h” 標頭封裝了所有在 Godot 中編寫 C++ 單元測試所需的內容。"
+"它包括 doctest 判斷提示和紀錄記錄宏，例如上面看到的“CHECK”，當然還有編寫測試"
+"案例本身的定義。"
 
-#, fuzzy
 msgid ""
 "`tests/test_macros.h <https://github.com/godotengine/godot/blob/master/tests/"
 "test_macros.h>`_ source code for currently implemented macros and aliases "
@@ -192,6 +208,9 @@ msgid ""
 "including custom tags which allow to filter the tests at run-time, such as "
 "``[String]``, ``[Stress]`` etc."
 msgstr ""
+"測試案例是使用“TEST_CASE”類似函式的巨集建立的。每個測試案例必須有一個寫在括號"
+"中的簡短描述，可以選擇包含允許在執行時間篩選測試的自訂標籤，例如"
+"「[String]」、「[Stress]」等。"
 
 msgid ""
 "Test cases are written in a dedicated namespace. This is not required, but "
@@ -199,8 +218,10 @@ msgid ""
 "are written to accommodate the repeating testing procedures such as "
 "populating common test data for each test, or writing parameterized tests."
 msgstr ""
+"測試案例編寫在專用的命名空間中。這不是必需的，但可以防止在編寫其他靜態幫助器"
+"函式以適應重複測試過程（例如為每個測試填充公共測試資料或編寫參數化測試）時發"
+"生命名衝突。"
 
-#, fuzzy
 msgid ""
 "Godot supports writing tests per C++ module. For instructions on how to "
 "write module tests, refer to :ref:`doc_custom_module_unit_tests`."
@@ -208,16 +229,14 @@ msgstr ""
 "有關如何建立模組圖示，請參考 :ref:`Creating custom module "
 "icons<doc_custom_module_icons>` 。"
 
-#, fuzzy
 msgid "Assertions"
 msgstr "注意事項"
 
 msgid ""
 "A list of all commonly used assertions used throughout the Godot tests, "
 "sorted by severity."
-msgstr ""
+msgstr "Godot 測試中常用的判斷提示列表，按嚴格程度排序。"
 
-#, fuzzy
 msgid "**Assertion**"
 msgstr "**版本**"
 
@@ -225,70 +244,77 @@ msgid "**Description**"
 msgstr "**描述**"
 
 msgid "``REQUIRE``"
-msgstr ""
+msgstr "``REQUIRE``"
 
 msgid ""
 "Test if condition holds true. Fails the entire test immediately if the "
 "condition does not hold true."
-msgstr ""
+msgstr "檢查條件是否成立。如果條件不成立則會立即讓整個測試失敗。"
 
 msgid "``REQUIRE_FALSE``"
-msgstr ""
+msgstr "``REQUIRE_FALSE``"
 
 msgid ""
 "Test if condition does not hold true. Fails the entire test immediately if "
 "the condition holds true."
-msgstr ""
+msgstr "檢查條件是否不成立。如果條件成立則會立即讓整個測試失敗。"
 
 msgid "``CHECK``"
-msgstr ""
+msgstr "``CHECK``"
 
 msgid ""
 "Test if condition holds true. Marks the test run as failing, but allow to "
 "run other assertions."
-msgstr ""
+msgstr "檢查條件是否成立。會將測試表示為失敗，但允許運作其他判斷提示。"
 
 msgid "``CHECK_FALSE``"
-msgstr ""
+msgstr "``CHECK_FALSE``"
 
 msgid ""
 "Test if condition does not hold true. Marks the test run as failing, but "
 "allow to run other assertions."
-msgstr ""
+msgstr "檢查條件是否不成立。會將測試表示為失敗，但允許運作其他判斷提示。"
 
 msgid "``WARN``"
-msgstr ""
+msgstr "``WARN``"
 
 msgid ""
 "Test if condition holds true. Does not fail the test under any circumstance, "
 "but logs a warning if something does not hold true."
 msgstr ""
+"檢查條件是否成立。任何情況下都不會讓測試失敗，但是不成立時會記錄一條警告。"
 
 msgid "``WARN_FALSE``"
-msgstr ""
+msgstr "``WARN_FALSE``"
 
 msgid ""
 "Test if condition does not hold true. Does not fail the test under any "
 "circumstance, but logs a warning if something holds true."
 msgstr ""
+"檢查條件是否不成立。任何情況下都不會讓測試失敗，但是成立時會記錄一條警告。"
 
 msgid ""
 "All of the above assertions have corresponding ``*_MESSAGE`` macros, which "
 "allow to print optional message with rationale of what should happen."
 msgstr ""
+"以上判斷提示都有對應的 ``*_MESSAGE`` 宏，能夠在原有行為的基礎上輸出可選的消"
+"息。"
 
 msgid ""
 "Prefer to use ``CHECK`` for self-explanatory assertions and "
 "``CHECK_MESSAGE`` for more complex ones if you think that it deserves a "
 "better explanation."
 msgstr ""
+"對於能夠自我說明的判斷提示請儘量使用 ``CHECK``，如果你認為相對複雜的判斷提示"
+"需要更好的解釋再使用 ``CHECK_MESSAGE``。"
 
 msgid ""
 "`doctest: Assertion macros <https://github.com/onqtam/doctest/blob/master/"
 "doc/markdown/assertions.md>`_."
 msgstr ""
+"`doctest: 判斷提示宏 <https://github.com/onqtam/doctest/blob/master/doc/"
+"markdown/assertions.md>`_。"
 
-#, fuzzy
 msgid "Logging"
 msgstr "偵錯"
 
@@ -298,44 +324,47 @@ msgid ""
 "dedicated macros which allow to log test output in a format written by "
 "doctest."
 msgstr ""
+"測試輸出由 doctest 本身處理，根本不依賴 Godot 列印或紀錄記錄功能，因此建議使"
+"用專用宏，它允許以 doctest 編寫的格式記錄測試輸出。"
 
-#, fuzzy
 msgid "**Macro**"
-msgstr "\\ **Mageia**"
+msgstr "**Macro**"
 
 msgid "``MESSAGE``"
-msgstr ""
+msgstr "``MESSAGE``"
 
 msgid "Prints a message."
-msgstr ""
+msgstr "列印一條訊息。"
 
 msgid "``FAIL_CHECK``"
-msgstr ""
+msgstr "``FAIL_CHECK``"
 
 msgid ""
 "Marks the test as failing, but continue the execution. Can be wrapped in "
 "conditionals for complex checks."
-msgstr ""
+msgstr "將測試標記為失敗，但繼續執行。可以包含在條件敘述中以進行複雜的檢查。"
 
 msgid "``FAIL``"
-msgstr ""
+msgstr "``FAIL``"
 
 msgid ""
 "Fails the test immediately. Can be wrapped in conditionals for complex "
 "checks."
-msgstr ""
+msgstr "測試立即失敗。可以包含在條件敘述中以進行複雜的檢查。"
 
 msgid ""
 "Different reporters can be chosen at run-time. For instance, here's how the "
 "output can be redirected to a XML file:"
 msgstr ""
+"可以在運作時選擇不同的記者。例如，以下是將輸出重新導向到 XML 檔案的方法："
 
 msgid ""
 "`doctest: Logging macros <https://github.com/onqtam/doctest/blob/master/doc/"
 "markdown/logging.md>`_."
 msgstr ""
+"`doctest：記錄巨集<https://github.com/onqtam/doctest/blob/master/doc/"
+"markdown/logging.md>`_。"
 
-#, fuzzy
 msgid "Testing failure paths"
 msgstr "匯入翻譯"
 
@@ -346,6 +375,9 @@ msgid ""
 "to check that those failure paths are indeed safe to execute without "
 "crashing the engine."
 msgstr ""
+"有時，測試「預期」結果並不總是可行。按照 Godot開發理念，引擎不應當機，並且在"
+"發生非致命錯誤時應正常恢復，因此檢查這些故障路徑是否確實可以安全執行而不會使"
+"引擎當機非常重要。"
 
 msgid ""
 "*Unexpected* behavior can be tested in the same way as anything else. The "
@@ -353,14 +385,17 @@ msgid ""
 "pollute the test output with errors coming from the engine itself (even if "
 "the end result is successful)."
 msgstr ""
+"*意外*行為可以用與其他任何行為相同的方式進行測試。這產生的唯一問題是錯誤列印"
+"會不必要地污染來自引擎本身的錯誤的測試輸出（即使最終結果是成功的）。"
 
 msgid ""
 "To alleviate this problem, use ``ERR_PRINT_OFF`` and ``ERR_PRINT_ON`` macros "
 "directly within test cases to temporarily disable the error output coming "
 "from the engine, for instance:"
 msgstr ""
+"為了緩解這個問題，請直接在測試案例中使用“ERR_PRINT_OFF”和“ERR_PRINT_ON”巨集來"
+"暫時停用來自引擎的錯誤輸出，例如："
 
-#, fuzzy
 msgid "Test tools"
 msgstr "2D 工具"
 
@@ -369,6 +404,8 @@ msgid ""
 "to facilitate the process of manual testing and debugging the engine "
 "internals."
 msgstr ""
+"測試工具是先進的方法，可讓您運作任意程式，以方便手動測試和除錯引擎內部的過"
+"程。"
 
 msgid ""
 "These tools can be run by supplying the name of a tool after the ``--test`` "
@@ -376,10 +413,12 @@ msgid ""
 "registers several tools to help the debugging of the tokenizer, parser, and "
 "compiler:"
 msgstr ""
+"可以透過在「--test」命令列選項後提供工具名稱來運作這些工具。例如，GDScript 模"
+"組實作並註冊了幾個工具來幫助偵錯分詞器、解析器和編譯器："
 
 msgid ""
 "If any such tool is detected, then the rest of the unit tests are skipped."
-msgstr ""
+msgstr "如果偵測到任何此類工具，則跳過其餘的單元測試。"
 
 msgid ""
 "Test tools can be registered anywhere throughout the engine as the "
@@ -388,19 +427,25 @@ msgid ""
 "these can be registered at corresponding ``register_types.cpp`` sources (per "
 "module or core)."
 msgstr ""
+"測試工具可以在整個引擎的任何地方註冊，因為註冊機制與doctest 在使用動態初始化"
+"技術註冊測試案例時提供的機制非常相似，但通常這些可以在相應的「register_types."
+"cpp」來源中註冊（每個模組或核心） 。"
 
 msgid ""
 "Here's an example of how GDScript registers test tools in ``modules/gdscript/"
 "register_types.cpp``:"
 msgstr ""
+"以下是 GDScript 如何在「modules/gdscript/register_types.cpp」中註冊測試工具的"
+"範例："
 
 msgid ""
 "The custom command-line parsing can be performed by a test tool itself with "
 "the help of OS :ref:`get_cmdline_args<class_OS_method_get_cmdline_args>` "
 "method."
 msgstr ""
+"自訂命令列解析可以由測試工具本身在 OS "
+"get_cmdline_args<class_OS_method_get_cmdline_args>` 方法的幫助下執行。"
 
-#, fuzzy
 msgid "Integration tests for GDScript"
 msgstr "在 GDScript 中實體化 C# 節點"
 
@@ -408,27 +453,30 @@ msgid ""
 "Godot uses doctest to prevent regressions in GDScript during development. "
 "There are several types of test scripts which can be written:"
 msgstr ""
+"Godot 使用 doctest 來防止開發過程中 GDScript 中的迴歸。可以編寫多種型別的測試"
+"腳本："
 
 msgid "tests for expected errors;"
-msgstr ""
+msgstr "測試預期錯誤;"
 
 msgid "tests for warnings;"
-msgstr ""
+msgstr "警告測試;"
 
-#, fuzzy
 msgid "tests for features."
-msgstr "功能清單"
+msgstr "功能列表"
 
 msgid ""
 "Therefore, the process of writing integration tests for GDScript is the "
 "following:"
-msgstr ""
+msgstr "因此，為GDScript編寫整合測試的流程如下："
 
 msgid ""
 "Pick a type of a test script you'd like to write, and create a new GDScript "
 "file under the ``modules/gdscript/tests/scripts`` directory within "
 "corresponding sub-directory."
 msgstr ""
+"選擇您想要編寫的測試腳本型別，然後在對應子目錄中的「modules/gdscript/tests/"
+"scripts」目錄下建立新的 GDScript 檔案。"
 
 msgid ""
 "Write GDScript code. The test script must have a function called ``test()`` "
@@ -437,14 +485,21 @@ msgid ""
 "Global classes (using ``class_name``) are registered before the runner "
 "starts, so those should work if needed."
 msgstr ""
+"編寫 GDScript 程式碼。測試腳本必須有一個名為「test()」的函式，該函式不帶參"
+"數。這樣的函式將由測試運作器呼叫。測試不應該有任何依賴性，除非它也是測試的一"
+"部分。全域類別（使用“class_name”）在運作器啟動之前註冊，因此如果需要的話這些"
+"應該可以工作。"
 
-#, fuzzy
 msgid "Here's an example test script:"
 msgstr "下列為有兩個骨頭的骨骼節點範例："
 
+#, fuzzy
+msgid "Change directory to the Godot source repository root."
+msgstr "將目錄切換到文件倉庫："
+
 msgid ""
 "Generate ``*.out`` files to update the expected results from the output:"
-msgstr ""
+msgstr "產生“*.out”檔案以更新輸出的預期結果："
 
 msgid ""
 "You may add the ``--print-filenames`` option to see filenames as their test "
@@ -452,16 +507,18 @@ msgid ""
 "hard crashes, you can use this option to quickly find which test file causes "
 "the crash and debug from there."
 msgstr ""
+"您可以新增「--print-filenames」選項來查看產生測試輸出的檔案名稱。如果您正在開"
+"發導致硬當機的新功能，則可以使用此選項快速尋找導致當機的測試檔案並從那裡進行"
+"偵錯。"
 
-#, fuzzy
 msgid "Run GDScript tests with:"
-msgstr "GDScript的導出"
+msgstr "GDScript的匯出"
 
 msgid "This also accepts the ``--print-filenames`` option (see above)."
-msgstr ""
+msgstr "這也接受“--print-filenames”選項（見上文）。"
 
 msgid "If no errors are printed and everything goes well, you're done!"
-msgstr ""
+msgstr "如果沒有列印任何錯誤並且一切順利，那麼您就完成了！"
 
 msgid ""
 "Make sure the output does have the expected values before submitting a pull "
@@ -469,6 +526,9 @@ msgid ""
 "unrelated to newly added tests, you should revert those files back and only "
 "commit ``*.out`` files for new tests."
 msgstr ""
+"在提交拉取請求之前，請確保輸出確實具有預期值。如果「--gdscript-generate-"
+"tests」產生與新新增的測試無關的「*.out」檔案，您應該恢復這些檔案並只為新測試"
+"提交「*.out」檔案。"
 
 msgid ""
 "The GDScript test runner is meant for testing the GDScript implementation, "
@@ -478,6 +538,11 @@ msgid ""
 "q=is%3Aissue+label%3Atopic%3Agdscript+is%3Aclosed>`_, or writing tests for "
 "currently working features."
 msgstr ""
+"GDScript 測試執行程式旨在測試 GDScript 實作，而不是測試使用者腳本或使用腳本測"
+"試引擎。我們建議為GitHub 上已解決的「與GDScript 相關的問題<https://github."
+"com/godotengine/godot/issues?"
+"q=is%3Aissue+label%3Atopic%3Agdscript+is%3Aheld>」編寫新測試，或為目前工作的"
+"功能編寫測試。"
 
 msgid ""
 "If your test case requires that there is no ``test()`` function present "
@@ -485,6 +550,9 @@ msgid ""
 "naming the script file so that it matches the pattern ``*.notest.gd``. For "
 "example, \"test_empty_file.notest.gd\"."
 msgstr ""
+"如果您的測試案例要求腳本檔案中不存在「test()」函式，您可以透過命名腳本檔案來"
+"停用測試的執行時間部分，使其與模式「*.notest.gd」相符``。例如，"
+"「test_empty_file.notes.gd」。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

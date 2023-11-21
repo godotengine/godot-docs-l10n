@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,13 +48,12 @@ msgstr ""
 "2D 网格是包含二维几何（Z 轴可以省略或忽略）而不是三维几何的网格。你可以尝试使"
 "用代码中的 ``SurfaceTool`` 创建它们，并在 ``MeshInstance2D`` 节点中显示它们。"
 
-#, fuzzy
 msgid ""
 "Currently, the only way to generate a 2D mesh within the editor is by either "
 "importing an OBJ file as a mesh, or converting it from a Sprite2D."
 msgstr ""
-"目前, 在编辑器中生成二维网格的唯一方法, 是导入一个OBJ文件作为网格, 或者从"
-"Sprite转换而来."
+"目前，在编辑器中生成 2D 网格的唯一方法是导入 OBJ 文件作为网格，或者从 "
+"Sprite2D 转换而来。"
 
 msgid "Optimizing pixels drawn"
 msgstr "优化绘制的像素"
@@ -81,23 +80,20 @@ msgid ""
 "and the rest will be ignored."
 msgstr "转换成网格能确保只绘制不透明部分, 其余部分被忽略."
 
-#, fuzzy
 msgid "Converting Sprite2Ds to 2D meshes"
-msgstr "将 Sprite 转换为 2D 网格"
+msgstr "将 Sprite2D 转换为 2D 网格"
 
-#, fuzzy
 msgid ""
 "You can take advantage of this optimization by converting a ``Sprite2D`` to "
 "a ``MeshInstance2D``. Start with an image that contains large amounts of "
 "transparency on the edges, like this tree:"
 msgstr ""
-"你可以通过把 ``Sprite`` 转换为 ``MeshInstance2D`` 的方法来利用这种优化. 从边"
-"缘有大量透明的图片开始, 就像这棵树:"
+"你可以通过把 ``Sprite2D`` 转换为 ``MeshInstance2D`` 的方法来利用这种优化。从"
+"边缘有大量透明的图片开始，就像这棵树："
 
-#, fuzzy
 msgid ""
 "Put it in a ``Sprite2D`` and select \"Convert to 2D Mesh\" from the menu:"
-msgstr "把它放到一个 ``Sprite`` 中，从菜单选择“转换为 2D 网格”："
+msgstr "把它放到一个 ``Sprite2D`` 中，从菜单选择“转换为 2D 网格”："
 
 msgid ""
 "A dialog will appear, showing a preview of how the 2D mesh will be created:"
@@ -110,11 +106,10 @@ msgstr ""
 "很多情况下, 默认值已经足够好, 但是你可以根据需要改变growth(增长)和"
 "simplication(简化):"
 
-#, fuzzy
 msgid ""
 "Finally, push the ``Convert 2D Mesh`` button and your Sprite2D will be "
 "replaced:"
-msgstr "最后，按下 ``转换 2D 网格`` 按钮，你的 Sprite 将被替换："
+msgstr "最后，按下 ``转换 2D 网格`` 按钮，你的 Sprite2D 将被替换："
 
 msgid "Translation status"
 msgstr "翻译状态"

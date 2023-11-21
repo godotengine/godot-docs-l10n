@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Large world coordinates"
-msgstr "Tangente in lokalen Koordinaten."
+msgstr "Koordinaten in großen Welten"
 
 msgid ""
 "Large world coordinates are mainly useful in 3D projects; they are rarely "
@@ -28,9 +27,8 @@ msgid ""
 "enabled."
 msgstr ""
 
-#, fuzzy
 msgid "Why use large world coordinates?"
-msgstr "Maus und Eingabe Koordinaten"
+msgstr "Warum große Weltkoordinaten verwenden?"
 
 msgid ""
 "In Godot, physics simulation and rendering both rely on *floating-point* "
@@ -94,9 +92,8 @@ msgid ""
 "quadrillon and 9 quadrillon"
 msgstr ""
 
-#, fuzzy
 msgid "Range"
-msgstr "Veränderungen"
+msgstr "Bereich"
 
 #, fuzzy
 msgid "Single step"
@@ -110,91 +107,91 @@ msgid "Comment"
 msgstr "Kommentar"
 
 msgid "[1; 2]"
-msgstr ""
+msgstr "[1; 2]"
 
 msgid "~0.0000001"
-msgstr ""
+msgstr "~0.0000001"
 
 msgid "~1e-15"
-msgstr ""
+msgstr "~1e-15"
 
 msgid "Precision becomes greater near 0.0 (this table is abbreviated)."
 msgstr ""
 
 msgid "[2; 4]"
-msgstr ""
+msgstr "[2; 4]"
 
 msgid "~0.0000002"
-msgstr ""
+msgstr "~0.0000002"
 
 msgid "[4; 8]"
-msgstr ""
+msgstr "[4; 8]"
 
 msgid "~0.0000005"
-msgstr ""
+msgstr "~0.0000005"
 
 msgid "[8; 16]"
-msgstr ""
+msgstr "[8; 16]"
 
 msgid "~0.000001"
-msgstr ""
+msgstr "~0.000001"
 
 msgid "~1e-14"
-msgstr ""
+msgstr "~1e-14"
 
 msgid "[16; 32]"
-msgstr ""
+msgstr "[16; 32]"
 
 msgid "~0.000002"
-msgstr ""
+msgstr "~0.000002"
 
 msgid "[32; 64]"
-msgstr ""
+msgstr "[32; 64]"
 
 msgid "~0.000004"
-msgstr ""
+msgstr "~0.000004"
 
 msgid "[64; 128]"
-msgstr ""
+msgstr "[64; 128]"
 
 msgid "~0.000008"
-msgstr ""
+msgstr "~0.000008"
 
 msgid "~1e-13"
-msgstr ""
+msgstr "~1e-13"
 
 msgid "[128; 256]"
-msgstr ""
+msgstr "[128; 256]"
 
 msgid "~0.000015"
-msgstr ""
+msgstr "~0.000015"
 
 msgid "[256; 512]"
-msgstr ""
+msgstr "[256; 512]"
 
 msgid "~0.00003"
-msgstr ""
+msgstr "~0.00003"
 
 msgid "[512; 1024]"
-msgstr ""
+msgstr "[512; 1024]"
 
 msgid "~0.00006"
-msgstr ""
+msgstr "~0.00006"
 
 msgid "~1e-12"
-msgstr ""
+msgstr "~1e-12"
 
 msgid "[1024; 2048]"
-msgstr ""
+msgstr "[1024; 2048]"
 
 msgid "~0.0001"
-msgstr ""
+msgstr "~0.0001"
 
 msgid "[2048; 4096]"
-msgstr ""
+msgstr "[2048; 4096]"
 
 msgid "~0.0002"
-msgstr ""
+msgstr "~0.0002"
 
 msgid ""
 "Maximum *recommended* single-precision range for a first-person 3D game "
@@ -202,10 +199,10 @@ msgid ""
 msgstr ""
 
 msgid "[4096; 8192]"
-msgstr ""
+msgstr "[4096; 8192]"
 
 msgid "~0.0005"
-msgstr ""
+msgstr "~0.0005"
 
 msgid ""
 "Maximum *recommended* single-precision range for a third-person 3D game "
@@ -213,19 +210,19 @@ msgid ""
 msgstr ""
 
 msgid "[8192; 16384]"
-msgstr ""
+msgstr "[8192; 16384]"
 
 msgid "~0.001"
-msgstr ""
+msgstr "~0.001"
 
 msgid "[16384; 32768]"
-msgstr ""
+msgstr "[16384; 32768]"
 
 msgid "~0.0019"
-msgstr ""
+msgstr "~0.0019"
 
 msgid "~1e-11"
-msgstr ""
+msgstr "~1e-11"
 
 msgid ""
 "Maximum *recommended* single-precision range for a top-down 3D game without "
@@ -233,10 +230,10 @@ msgid ""
 msgstr ""
 
 msgid "[32768; 65536]"
-msgstr ""
+msgstr "[32768; 65536]"
 
 msgid "~0.0039"
-msgstr ""
+msgstr "~0.0039"
 
 msgid ""
 "Maximum *recommended* single-precision range for any 3D game. Double "
@@ -244,28 +241,28 @@ msgid ""
 msgstr ""
 
 msgid "[65536; 131072]"
-msgstr ""
+msgstr "[65536; 131072]"
 
 msgid "~0.0078"
-msgstr ""
+msgstr "~0.0078"
 
 msgid "[131072; 262144]"
-msgstr ""
+msgstr "[131072; 262144]"
 
 msgid "~0.0156"
-msgstr ""
+msgstr "~0.0156"
 
 msgid "~1e-10"
-msgstr ""
+msgstr "~1e-10"
 
 msgid "> 262144"
-msgstr ""
+msgstr "> 262144"
 
 msgid "> ~0.0313"
-msgstr ""
+msgstr "> ~0.0313"
 
 msgid "~1e-10 (0.0000000001)"
-msgstr ""
+msgstr "~1e-10 (0.0000000001)"
 
 msgid ""
 "Double-precision remains far more precise than single-precision past this "
@@ -376,9 +373,8 @@ msgid ""
 "both rendering and physics."
 msgstr ""
 
-#, fuzzy
 msgid "Enabling large world coordinates"
-msgstr "Binormal in lokalen Koordinaten."
+msgstr "Große Weltkoordinaten Aktivieren"
 
 msgid ""
 "This process requires recompiling the editor and all export template "

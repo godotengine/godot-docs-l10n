@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -284,14 +284,13 @@ msgstr "Apple ID 账户名称（邮箱地址）"
 msgid "Apple ID Password"
 msgstr "Apple ID Password"
 
-#, fuzzy
 msgid ""
 "Apple ID app-specific password. See `Using app-specific passwords <https://"
 "support.apple.com/en-us/HT204397>`__ to enable two-factor authentication and "
 "create app password. [3]_"
 msgstr ""
 "Apple ID 的 App 专用密码。请参阅\\ `《使用 App 专用密码》 <https://support."
-"apple.com/zh-cn/HT204397>`__\\ 启用双重认证并创建 App 密码。"
+"apple.com/zh-cn/HT204397>`__\\ 启用双重认证并创建 App 密码。\\ [3]_"
 
 msgid "Apple Team ID"
 msgstr "Apple Team ID"
@@ -303,7 +302,7 @@ msgid ""
 msgstr "团队 ID，如果你的 Apple ID 属于多个团队"
 
 msgid "API UUID"
-msgstr ""
+msgstr "API UUID"
 
 msgid ""
 "Apple `App Store Connect <https://developer.apple.com/documentation/"
@@ -647,56 +646,65 @@ msgstr "环境变量"
 msgid "Encryption / Encryption Key"
 msgstr ""
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "GODOT_SCRIPT_ENCRYPTION_KEY"
 
 msgid "Options / Codesign / Certificate File"
 msgstr ""
 
-msgid "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_CERTIFICATE_FILE``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_FILE"
 
 msgid "Options / Codesign / Certificate Password"
 msgstr ""
 
-msgid "GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD``"
+msgstr "GODOT_MACOS_CODESIGN_CERTIFICATE_PASSWORD"
 
 msgid "Options / Codesign / Provisioning Profile"
 msgstr ""
 
-msgid "GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE``"
+msgstr "GODOT_MACOS_CODESIGN_PROVISIONING_PROFILE"
 
 msgid "Options / Notarization / API UUID"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_API_UUID"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_API_UUID``"
+msgstr "GODOT_MACOS_NOTARIZATION_API_UUID"
 
 msgid "Options / Notarization / API Key"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_API_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_API_KEY``"
+msgstr "GODOT_MACOS_NOTARIZATION_API_KEY"
 
 msgid "Options / Notarization / API Key ID"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_API_KEY_ID"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_API_KEY_ID``"
+msgstr "GODOT_MACOS_NOTARIZATION_API_KEY_ID"
 
 msgid "Options / Notarization / Apple ID Name"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME``"
+msgstr "GODOT_MACOS_NOTARIZATION_APPLE_ID_NAME"
 
 msgid "Options / Notarization / Apple ID Password"
 msgstr ""
 
-msgid "GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD``"
+msgstr "GODOT_MACOS_NOTARIZATION_APPLE_ID_PASSWORD"
 
 msgid "Translation status"
 msgstr "翻译状态"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -102,7 +102,7 @@ msgid ""
 msgstr ""
 
 msgid "where:"
-msgstr ""
+msgstr "位置:"
 
 msgid ""
 "``template_path`` is one of the 2 locations discussed in the previous two "
@@ -125,36 +125,33 @@ msgid ""
 msgstr ""
 
 msgid "For example:"
-msgstr "例如:"
+msgstr "例如："
 
 msgid "``template_scripts/Node/smooth_camera.gd``"
-msgstr ""
+msgstr "``template_scripts/Node/smooth_camera.gd``"
 
 msgid "``template_scripts/CharacterBody3D/platformer_movement.gd``"
-msgstr ""
+msgstr "``template_scripts/CharacterBody3D/platformer_movement.gd``"
 
 msgid "Default behaviour and overriding it"
-msgstr ""
+msgstr "默认行为与覆盖"
 
-#, fuzzy
 msgid "By default:"
-msgstr "默认"
+msgstr "默认："
 
 msgid ""
 "the template's name is the same as the file name (minus the extension, "
 "prettyfied)"
 msgstr ""
 
-#, fuzzy
 msgid "the description is empty"
-msgstr "下面是这些选项的说明："
+msgstr "下面是这些选项的说明"
 
 msgid "the space indent is set to 4"
 msgstr ""
 
-#, fuzzy
 msgid "the template will not be set as the default for the given node"
-msgstr "在这个演示中, 所有这些选项都可以保持默认值."
+msgstr "在这个演示中, 所有这些选项都可以保持默认值"
 
 msgid ""
 "It is possible to customize this behaviour by adding meta headers at the "
@@ -213,13 +210,12 @@ msgid ""
 "type."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "The ``Default`` templates for basic Nodes, for both GDScript and C#, are "
 "shown here so you can use these as the base for creating other templates:"
 msgstr ""
 "``默认`` 模板总是根据每种语言动态生成，并且不能配置也不能覆盖，但是你可以使用"
-"它们作为创建其他模板的基础。"
+"它们作为创建其他模板的基础："
 
 msgid ""
 "The Godot editor provides a set of useful built-in node-specific templates, "
@@ -246,28 +242,26 @@ msgid "Description"
 msgstr "描述"
 
 msgid "``_BINDINGS_NAMESPACE_``"
-msgstr ""
+msgstr "``_BINDINGS_NAMESPACE_``"
 
 #, fuzzy
 msgid "The name of the Godot namespace (used in C# only)."
 msgstr "新建类的名称(只在 C# 中使用)."
 
-#, fuzzy
 msgid "``_CLASS_``"
-msgstr "``%CLASS%``"
+msgstr "``_CLASS_``"
 
 msgid "The name of the new class (used in C# only)."
 msgstr "新建类的名称(只在 C# 中使用)."
 
-#, fuzzy
 msgid "``_BASE_``"
-msgstr "``%BASE%``"
+msgstr "``_BASE_``"
 
 msgid "The base type a new script inherits from."
 msgstr "新建脚本的基类型."
 
 msgid "``_TS_``"
-msgstr ""
+msgstr "``_TS_``"
 
 #, fuzzy
 msgid ""
@@ -297,25 +291,20 @@ msgid ""
 "types will be automatically removed for a few base types:"
 msgstr ""
 
-#, fuzzy
 msgid "``int``"
-msgstr "``in``"
+msgstr "``int``"
 
-#, fuzzy
 msgid "``String``"
-msgstr "``String[]``"
+msgstr "``String``"
 
-#, fuzzy
 msgid "``Array[String]``"
-msgstr "``String[]``"
+msgstr "``Array[String]``"
 
-#, fuzzy
 msgid "``float``"
-msgstr "``float[]``"
+msgstr "``float``"
 
-#, fuzzy
 msgid "``void``"
-msgstr "``-> void``"
+msgstr "``void``"
 
 msgid "``:=`` will be transformed into ``=``"
 msgstr ""

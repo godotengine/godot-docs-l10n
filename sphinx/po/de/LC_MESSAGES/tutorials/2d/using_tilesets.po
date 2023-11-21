@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using TileSets"
-msgstr "TileMaps verwenden"
+msgstr "TileSets verwenden"
 
 msgid "Introduction"
 msgstr "Einführung"
@@ -60,24 +59,21 @@ msgid ""
 "they can be rectangular, hexagonal, or isometric (pseudo-3D perspective)."
 msgstr ""
 
-#, fuzzy
 msgid "Creating a new TileSet"
-msgstr "Erstellen eines TileSets"
+msgstr "Erstellen eines neuen TileSets"
 
 #, fuzzy
 msgid "Using a tilesheet"
 msgstr "Verwendung von Dateien"
 
-#, fuzzy
 msgid ""
 "This demonstration will use the following tiles taken from `Kenney's "
 "\"Abstract Platformer\" pack <https://kenney.nl/assets/abstract-"
 "platformer>`__. We'll use this particular *tilesheet* from the set:"
 msgstr ""
-"In dieser Demo werden die folgenden Kacheln aus Kenneys Paket \"Abstract "
-"Platformer\" verwendet. Das komplette Set finden Sie `hier <https://kenney."
-"nl/assets/abstract-platformer>`_, aber für diese Demo bleiben wir bei diesem "
-"kleinen Set."
+"Diese Demonstration wird die folgenden Felder aus Kenneys \"Abstract "
+"Platformer\"-Paket <https://kenney.nl/assets/abstract-platformer>`__ "
+"verwenden. Wir werden dieses spezielle *Tilesheet* aus dem Set verwenden:"
 
 msgid "Tilesheet example with 64×64 tiles"
 msgstr ""
@@ -303,7 +299,7 @@ msgid ""
 msgstr ""
 
 msgid "Merging several atlases into a single atlas"
-msgstr ""
+msgstr "Zusammenführung mehrerer Atlanten zu einem einzigen Atlas"
 
 msgid ""
 "Using multiple atlases within a single TileSet resource can sometimes be "
@@ -358,7 +354,7 @@ msgid ""
 msgstr ""
 
 msgid "Adding collision, navigation and occlusion to the TileSet"
-msgstr ""
+msgstr "Hinzufügen von Kollision, Navigation und Okklusion zum TileSet"
 
 msgid ""
 "We've now successfully created a basic TileSet. We could start using in the "
@@ -496,7 +492,7 @@ msgid ""
 msgstr ""
 
 msgid "Assigning custom metadata to the TileSet's tiles"
-msgstr ""
+msgstr "Zuweisung von benutzerdefinierten Metadaten zu den Kacheln des TileSet"
 
 msgid ""
 "You can assign custom data on a per-tile basis using *custom data layers*. "
@@ -547,9 +543,8 @@ msgid ""
 "Assigning custom data in the TileSet editor using tile property painting"
 msgstr ""
 
-#, fuzzy
 msgid "Creating terrain sets (autotiling)"
-msgstr "Skelett erstellen"
+msgstr "Erstellen von Geländesätzen (Autotiling)"
 
 msgid ""
 "This functionality was implemented in a different form as *autotiling* in "
@@ -661,7 +656,7 @@ msgid ""
 msgstr ""
 
 msgid "Assigning properties to multiple tiles at once"
-msgstr ""
+msgstr "Zuweisung von Eigenschaften zu mehreren Kacheln auf einmal"
 
 msgid ""
 "There are two ways to assign properties to multiple tiles at once. Depending "
@@ -717,9 +712,8 @@ msgid ""
 "properties onto tiles."
 msgstr ""
 
-#, fuzzy
 msgid "Painting tile properties using the TileSet editor"
-msgstr "Führt ein Skript im Editor aus."
+msgstr "Malen von Flächeneigenschaften mit dem TileSet-Editor"
 
 msgid ""
 "Tile property painting is especially useful with properties that are time-"
@@ -729,15 +723,20 @@ msgstr ""
 msgid "Painting a collision polygon, then left-clicking tiles to apply it"
 msgstr ""
 
-#, fuzzy
 msgid "Creating alternative tiles"
-msgstr "Erstellen eines Baums"
+msgstr "Alternative Kacheln erstellen"
 
 msgid ""
 "Sometimes, you want to use a single tile image (found only once within the "
 "atlas), but configured in different ways. For example, you may want to use "
 "the same tile image, but rotated, flipped, or modulated with a different "
 "color. This can be done using *alternative tiles*."
+msgstr ""
+
+msgid ""
+"Since Godot 4.2, you don't have to create alternative tiles to rotate or "
+"flip tiles anymore. You can rotate any tile while placing it in the TileMap "
+"editor by using the rotation/flip buttons in the TileMap editor toolbar."
 msgstr ""
 
 msgid ""
@@ -787,8 +786,11 @@ msgstr ""
 
 msgid ""
 "**Rendering > Transpose:** If ``true``, the tile is rotated 90 degrees "
-"counter-clockwise. Combine this with **Flip H** and/or **Flip V** to perform "
-"180-degree or 270-degree rotation."
+"*counter-clockwise* and then flipped vertically. In practice, this means "
+"that to rotate a tile by 90 degrees clockwise without flipping it, you "
+"should enable **Flip H** and **Transpose**. To rotate a tile by 180 degrees "
+"clockwise, enable **Flip H** and **Flip V**. To rotate a tile by 270 degrees "
+"clockwise, enable **Flip V** and **Transpose**."
 msgstr ""
 
 msgid ""

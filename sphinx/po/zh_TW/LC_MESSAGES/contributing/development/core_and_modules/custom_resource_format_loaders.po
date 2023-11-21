@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Custom resource format loaders"
 msgstr "自定資源格式載入器"
 
 msgid "Introduction"
-msgstr "簡介"
+msgstr "前言"
 
 msgid ""
 "ResourceFormatLoader is a factory interface for loading file assets. "
@@ -33,7 +33,6 @@ msgstr ""
 "主要的容器，當重複載入相同的檔案路徑時，會參照到之前載入的 Resource。當然，載"
 "入的資源是無狀態的。"
 
-#, fuzzy
 msgid ""
 "This guide assumes the reader knows how to create C++ modules and Godot data "
 "types. If not, refer to this guide: :ref:`doc_custom_modules_in_cpp`"
@@ -45,13 +44,13 @@ msgid "References"
 msgstr "參照"
 
 msgid ":ref:`ResourceLoader<class_resourceloader>`"
-msgstr "\\ :ref:`ResourceLoader<class_resourceloader>`"
+msgstr ":ref:`ResourceLoader<class_resourceloader>`"
 
 msgid ""
 "`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
 msgstr ""
-"\\ `core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
 "master/core/io/resource_loader.cpp>`_"
 
 msgid "What for?"
@@ -82,7 +81,7 @@ msgid ""
 "`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
 msgstr ""
-"\\ `core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
 "core/io/image_loader.h>`_"
 
 msgid "Creating a ResourceFormatLoader"
@@ -92,7 +91,6 @@ msgid ""
 "Each file format consist of a data container and a ``ResourceFormatLoader``."
 msgstr "各個檔案格式都是由一個資料容器與一個 ``ResourceFormatLoader`` 組成的。"
 
-#, fuzzy
 msgid ""
 "ResourceFormatLoaders are classes which return all the necessary metadata "
 "for supporting new extensions in Godot. The class must return the format "
@@ -146,25 +144,22 @@ msgid ""
 "``std::istream``."
 msgstr "如，下列程式碼會將 ``FileAccess`` 呼叫翻譯為 ``std::istream`` 。"
 
-#, fuzzy
 msgid "`istream <https://cplusplus.com/reference/istream/istream/>`_"
-msgstr "\\ `istream <http://www.cplusplus.com/reference/istream/istream/>`_"
+msgstr "`istream <http://www.cplusplus.com/reference/istream/istream/>`_"
 
-#, fuzzy
 msgid ""
 "`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`_"
 msgstr ""
-"\\ `streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
+"`streambuf <http://www.cplusplus.com/reference/streambuf/streambuf/?"
 "kw=streambuf>`_"
 
-#, fuzzy
 msgid ""
 "`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
 "core/os/file_access.h>`_"
 msgstr ""
-"\\ `core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/"
-"core/os/file_access.h>`_"
+"`core/io/fileaccess.h <https://github.com/godotengine/godot/blob/master/core/"
+"os/file_access.h>`_"
 
 msgid "Registering the new file format"
 msgstr "註冊新的檔案格式"

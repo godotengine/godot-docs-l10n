@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -94,7 +94,7 @@ msgid "2"
 msgstr "2"
 
 msgid "integer"
-msgstr "integer (Ganzzahl)"
+msgstr "Integer"
 
 msgid "3"
 msgstr "3"
@@ -159,9 +159,8 @@ msgstr "basis"
 msgid "13"
 msgstr "13"
 
-#, fuzzy
 msgid "transform3d"
-msgstr "transform2d"
+msgstr "transform3d"
 
 msgid "14"
 msgstr "14"
@@ -191,7 +190,7 @@ msgid "18"
 msgstr "18"
 
 msgid "dictionary"
-msgstr "Dictionary (Wörterbuch)"
+msgstr "dictionary"
 
 msgid "19"
 msgstr "19"
@@ -257,9 +256,8 @@ msgstr "28"
 msgid "color array"
 msgstr "Farb-Array"
 
-#, fuzzy
 msgid "29"
-msgstr "2"
+msgstr "29"
 
 msgid "max"
 msgstr "max"
@@ -423,9 +421,8 @@ msgstr "Normal Z"
 msgid "Distance"
 msgstr "Distanz"
 
-#, fuzzy
 msgid "10: :ref:`Quaternion<class_quaternion>`"
-msgstr "10: :ref:`Quat<class_quat>`"
+msgstr "10: :ref:`Quaternion<class_quaternion>`"
 
 msgid "Imaginary X"
 msgstr "Imaginäres X"
@@ -474,9 +471,8 @@ msgid "The Z component of the Z column vector, accessed via [2][2]"
 msgstr ""
 "Die Z-Komponente des Z-Spaltenvektors, auf die über [2][2] zugegriffen wird"
 
-#, fuzzy
 msgid "13: :ref:`Transform3D<class_transform3d>`"
-msgstr "13: :ref:`Transform<class_transform>`"
+msgstr "13: :ref:`Transform3D<class_transform3d>`"
 
 msgid "40"
 msgstr "40"
@@ -553,9 +549,8 @@ msgstr "Jede Namenszeichenfolge wird auf 4 Bytes aufgefüllt."
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
 msgstr "16: :ref:`RID<class_rid>` (nicht unterstützt)"
 
-#, fuzzy
 msgid "17: :ref:`Object<class_object>`"
-msgstr ":ref:`Object <class_Object>`"
+msgstr "17: :ref:`Object<class_object>`"
 
 msgid ""
 "An Object could be serialized in three different ways: as a null value, with "
@@ -592,13 +587,11 @@ msgstr "UTF-8-codierte Zeichenfolge"
 msgid "X+8"
 msgstr "X+0"
 
-#, fuzzy
 msgid "The number of properties that are serialized"
-msgstr "Es gibt 6 Arten von Mustern:"
+msgstr "Die Anzahl der Eigenschaften, die serialisiert werden"
 
-#, fuzzy
 msgid "For each property:"
-msgstr "Bereichs-Eigenschaften"
+msgstr "Für jede Eigenschaft:"
 
 msgid "Y"
 msgstr ""
@@ -637,9 +630,9 @@ msgid ""
 "`PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>` "
 "flag set will be serialized. You can add a new usage flag to a property by "
 "overriding the :ref:"
-"`_get_property_list<class_Object_method__get_property_list>` method in your "
-"class. You can also check how property usage is configured by calling "
-"``Object._get_property_list`` See :ref:"
+"`_get_property_list<class_Object_private_method__get_property_list>` method "
+"in your class. You can also check how property usage is configured by "
+"calling ``Object._get_property_list`` See :ref:"
 "`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` for the possible "
 "usage flags."
 msgstr ""
@@ -663,9 +656,8 @@ msgid ""
 "other, using this same format."
 msgstr ""
 
-#, fuzzy
 msgid "20: :ref:`PackedByteArray<class_PackedByteArray>`"
-msgstr "20: :ref:`PoolByteArray<class_poolbytearray>`"
+msgstr "20: :ref:`PackedByteArray<class_PackedByteArray>`"
 
 msgid "Array length (Bytes)"
 msgstr "Feld Länge (Bytes)"
@@ -682,9 +674,8 @@ msgstr "Byte (0..255)"
 msgid "The array data is padded to 4 bytes."
 msgstr "Die Array-Daten werden auf 4 Byte aufgefüllt."
 
-#, fuzzy
 msgid "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
-msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
+msgstr "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
 
 msgid "Array length (Integers)"
 msgstr "Feld Länge (Integer)"
@@ -692,16 +683,14 @@ msgstr "Feld Länge (Integer)"
 msgid "8..8+length\\*4"
 msgstr "8..8+Länge\\*4"
 
-#, fuzzy
 msgid "22: :ref:`PackedInt64Array<class_PackedInt64Array>`"
-msgstr "21: :ref:`PoolIntArray<class_poolintarray>`"
+msgstr "22: :ref:`PackedInt64Array<class_PackedInt64Array>`"
 
 msgid "8..8+length\\*8"
 msgstr "8..8+Länge\\*8"
 
-#, fuzzy
 msgid "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
-msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
+msgstr "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
 
 msgid "Array length (Floats)"
 msgstr "Array Länge (Fließkomma)"
@@ -710,17 +699,15 @@ msgstr "Array Länge (Fließkomma)"
 msgid "32-bit IEEE 754 single-precision float"
 msgstr "IEEE 754 Fließkommazahl mit einfacher Genauigkeit"
 
-#, fuzzy
 msgid "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
-msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
+msgstr "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
 
 #, fuzzy
 msgid "64-bit IEEE 754 double-precision float"
 msgstr "IEEE 754 Fließkommazahl mit doppelter Genauigkeit"
 
-#, fuzzy
 msgid "25: :ref:`PackedStringArray<class_PackedStringArray>`"
-msgstr "23: :ref:`PoolStringArray<class_poolstringarray>`"
+msgstr "25: :ref:`PackedStringArray<class_PackedStringArray>`"
 
 msgid "Array length (Strings)"
 msgstr "Feld Länge (Zeichenketten)"
@@ -731,9 +718,8 @@ msgstr "für jede Zeichenkette:"
 msgid "Every string is padded to 4 bytes."
 msgstr "Jede Zeichenkette wird auf 4 Bytes aufgefüllt."
 
-#, fuzzy
 msgid "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
-msgstr "24: :ref:`PoolVector2Array<class_poolvector2array>`"
+msgstr "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
 
 msgid "Array length"
 msgstr "Array Länge"
@@ -741,9 +727,8 @@ msgstr "Array Länge"
 msgid "8..12+length\\*8"
 msgstr "8..12+Länge\\*8"
 
-#, fuzzy
 msgid "27: :ref:`PackedVector3Array<class_PackedVector3Array>`"
-msgstr "25: :ref:`PoolVector3Array<class_poolvector3array>`"
+msgstr "27: :ref:`PackedVector3Array<class_PackedVector3Array>`"
 
 msgid "8..8+length\\*12"
 msgstr "8..8+Länge\\*12"
@@ -754,9 +739,8 @@ msgstr "8..12+Länge\\*12"
 msgid "8..16+length\\*12"
 msgstr "8..16+Länge\\*12"
 
-#, fuzzy
 msgid "28: :ref:`PackedColorArray<class_PackedColorArray>`"
-msgstr "26: :ref:`PoolColorArray<class_poolcolorarray>`"
+msgstr "28: :ref:`PackedColorArray<class_PackedColorArray>`"
 
 msgid "8..8+length\\*16"
 msgstr "8..8+Länge\\*16"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,10 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Optimizing a build for size"
-msgstr "Einen Build für die Größe optimieren"
+msgstr "Einen Build für Größe optimieren"
 
 msgid "Rationale"
-msgstr ""
+msgstr "Hintergrund"
 
 msgid ""
 "Sometimes, it is desired to optimize a build for size rather than speed. "
@@ -29,38 +29,55 @@ msgid ""
 "specific compiler flags to aid on decreasing build size. Common situations "
 "include creating builds for mobile and Web platforms."
 msgstr ""
+"Manchmal ist es wünschenswert, einen Build eher auf Größe als auf "
+"Geschwindigkeit zu optimieren. Dies bedeutet, dass ungenutzte Funktionen der "
+"Engine nicht kompiliert werden und dass bestimmte Compiler-Flags verwendet "
+"werden, um die Größe des Builds zu verringern. Häufige Situationen sind die "
+"Erstellung von Builds für mobile und Web-Plattformen."
 
 msgid ""
 "This tutorial aims to give an overview on different methods to create a "
 "smaller binary. Before continuing, it is recommended to read the previous "
 "tutorials on compiling Godot for each platform."
 msgstr ""
+"Dieses Tutorial soll einen Überblick über die verschiedenen Methoden zur "
+"Erstellung einer kleineren Binärdatei geben. Bevor Sie fortfahren, sollten "
+"Sie die vorherigen Tutorials zur Kompilierung von Godot für jede Plattform "
+"lesen."
 
 msgid ""
 "The options below are listed from the most important (greatest size savings) "
 "to the least important (lowest size savings)."
 msgstr ""
+"Die nachstehenden Optionen sind in der Reihenfolge ihrer Wichtigkeit (größte "
+"Einsparungen) und ihrer Unwichtigkeit (geringste Einsparungen) aufgeführt."
 
 msgid "Stripping binaries"
 msgstr "Binärdateien entfernen"
 
 msgid "**Space savings:** Very high"
-msgstr ""
+msgstr "**Platzersparnis:** Sehr hoch"
 
 msgid "**Difficulty:** Easy"
 msgstr "**Schwierigkeit:** Einfach"
 
 msgid "**Performed in official builds:** Yes"
-msgstr ""
+msgstr "**Durchgeführt in offiziellen Builds:** Ja"
 
 msgid ""
 "If you build Windows (MinGW), Linux or macOS binaries from source, remember "
 "to strip debug symbols from binaries by installing the ``strip`` package "
 "from your distribution then running:"
 msgstr ""
+"Wenn Sie Windows- (MinGW), Linux- oder macOS-Binärdateien aus dem Quellcode "
+"erstellen, denken Sie daran, Debugsymbole aus den Binärdateien zu entfernen, "
+"indem Sie das Paket ``strip`` aus Ihrer Distribution installieren und dann "
+"ausführen:"
 
 msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
 msgstr ""
+"Unter Windows ist ``strip.exe`` in den meisten MinGW Toolchain-Setups "
+"enthalten."
 
 msgid ""
 "This will reduce the size of compiled binaries by a factor between 5× and "
@@ -69,34 +86,28 @@ msgid ""
 "`C++ profilers <doc_using_cpp_profilers>` will also no longer be able to "
 "display function names (this does not affect the built-in GDScript profiler)."
 msgstr ""
+"Dadurch wird die Größe der kompilierten Binärdateien um einen Faktor "
+"zwischen 5x und 10x reduziert. Der Nachteil ist, dass Crash-Backtraces keine "
+"genauen Informationen mehr liefern (was für die Fehlersuche bei der Ursache "
+"eines Absturzes nützlich ist). :ref:`C++-Profiler <doc_using_cpp_profilers>` "
+"werden auch nicht mehr in der Lage sein, Funktionsnamen anzuzeigen (dies "
+"betrifft nicht den eingebauten GDScript-Profiler)."
 
+#, fuzzy
 msgid ""
 "The above command will not work on Windows binaries compiled with MSVC and "
-"platforms such as Android and HTML5. Instead, pass ``debug_symbols=no`` on "
-"the SCons command line when compiling."
+"platforms such as Android and Web. Instead, pass ``debug_symbols=no`` on the "
+"SCons command line when compiling."
 msgstr ""
-
-msgid "Optimizing for size instead of speed"
-msgstr "Optimieren auf Größe statt Geschwindigkeit"
-
-msgid "**Space savings:** High"
-msgstr ""
-
-msgid "**Performed in official builds:** Yes, but only for HTML5"
-msgstr ""
-
-msgid ""
-"Godot 3.1 onwards allows compiling using size optimizations (instead of "
-"speed). To enable this, set the ``optimize`` flag to ``size``:"
-msgstr ""
-
-msgid "Some platforms such as WebAssembly already use this mode by default."
-msgstr ""
-"Einige Plattformen wie z.B. WebAssembly verwenden diesen Modus bereits "
-"standardmäßig."
+"Der obige Befehl funktioniert nicht bei Windows-Binärdateien, die mit MSVC "
+"kompiliert wurden, und bei Plattformen wie Android und HTML5. Übergeben Sie "
+"stattdessen ``debug_symbols=no`` in der SCons-Kommandozeile beim Kompilieren."
 
 msgid "Compiling with link-time optimization"
 msgstr "Kompilieren mit Optimierung der Verbindungszeit"
+
+msgid "**Space savings:** High"
+msgstr "**Platzersparnis:** Hoch"
 
 msgid ""
 "Enabling link-time optimization produces more efficient binaries, both in "
@@ -104,45 +115,124 @@ msgid ""
 "template functions and unused code. It can currently be used with the GCC "
 "and MSVC compilers:"
 msgstr ""
+"Die Aktivierung der Link-Time-Optimierung führt zu effizienteren "
+"Binärdateien, sowohl in Bezug auf die Leistung als auch auf die Dateigröße. "
+"Sie funktioniert, indem sie doppelte Vorlagenfunktionen und ungenutzten Code "
+"eliminiert. Sie kann derzeit mit den Compilern GCC und MSVC verwendet werden:"
 
 msgid ""
 "Linking becomes much slower and more RAM-consuming with this option, so it "
 "should be used only for release builds:"
 msgstr ""
+"Das Linken wird mit dieser Option viel langsamer und benötigt mehr RAM, "
+"daher sollte sie nur für Release-Builds verwendet werden:"
 
 msgid ""
 "When compiling the ``master`` branch, you need to have at least 8 GB of RAM "
 "available for successful linking with LTO enabled."
 msgstr ""
+"Wenn Sie den ``master``-Branch kompilieren, müssen Sie mindestens 8 GB RAM "
+"zur Verfügung haben, damit das Linken mit aktiviertem LTO erfolgreich ist."
 
 msgid ""
 "When compiling the ``3.x`` branch, you need to have at least 6 GB of RAM "
 "available for successful linking with LTO enabled."
+msgstr ""
+"Wenn Sie den ``3.x``-Branch kompilieren, müssen Sie mindestens 6 GB RAM zur "
+"Verfügung haben, um das Linken mit aktiviertem LTO erfolgreich durchzuführen."
+
+msgid "Optimizing for size instead of speed"
+msgstr "Optimieren auf Größe statt Geschwindigkeit"
+
+#, fuzzy
+msgid "**Performed in official builds:** Yes, but only for web builds"
+msgstr "**Durchgeführt in offiziellen Builds:** Ja, aber nur für HTML5"
+
+msgid ""
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+"Ab Godot 3.1 ist es möglich, die Kompilierung unter Verwendung von "
+"Größenoptimierungen (anstelle von Geschwindigkeitsoptimierungen) "
+"durchzuführen. Um dies zu aktivieren, setzen Sie das Flag ``optimize`` auf "
+"``size``:"
+
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr ""
+"Einige Plattformen wie z.B. WebAssembly verwenden diesen Modus bereits "
+"standardmäßig."
+
+#, fuzzy
+msgid "Disabling advanced text server"
+msgstr "Deaktivieren erweiterter GUI-Objekte"
+
+msgid "**Performed in official builds:** No"
+msgstr "**Durchgeführt in offiziellen Builds:** Nein"
+
+msgid ""
+"By default, Godot uses an advanced text server with the support for the "
+"following features:"
+msgstr ""
+
+msgid ""
+"Right-to-left typesetting and complex scripts, required to write languages "
+"such as Arabic and Hebrew."
+msgstr ""
+
+msgid ""
+"Font ligatures and OpenType features (such as small capitals, fractions and "
+"slashed zero)."
+msgstr ""
+
+msgid ""
+"Godot provides a fallback text server that isn't compiled by default. This "
+"text server can be used as a lightweight alternative to the default advanced "
+"text server:"
+msgstr ""
+
+msgid ""
+"If you only intend on supporting Latin, Greek and Cyrillic-based languages "
+"in your project, the fallback text server should suffice."
+msgstr ""
+
+msgid ""
+"This fallback text server can also process large amounts of text more "
+"quickly than the advanced text server. This makes the fallback text server a "
+"good fit for mobile/web projects."
+msgstr ""
+
+msgid ""
+"Remember to always pass ``module_text_server_fb_enabled=yes`` when using "
+"``module_text_server_adv_enabled=no``. Otherwise, the compiled binary won't "
+"contain any text server, which means no text will be displayed at all when "
+"running the project."
 msgstr ""
 
 msgid "Disabling 3D"
 msgstr "3D abschalten"
 
 msgid "**Space savings:** Moderate"
-msgstr ""
-
-msgid "**Performed in official builds:** No"
-msgstr ""
+msgstr "**Platzersparnis:** Mäßig"
 
 msgid ""
 "For 2D games, having the whole 3D engine available usually makes no sense. "
 "Because of this, there is a build flag to disable it:"
 msgstr ""
+"Bei 2D-Spielen macht es normalerweise keinen Sinn, die gesamte 3D-Engine zur "
+"Verfügung zu haben. Aus diesem Grund gibt es ein Build-Flag, um dies zu "
+"deaktivieren:"
 
 msgid ""
 "Tools must be disabled in order to use this flag, as the editor is not "
 "designed to operate without 3D support. Without it, the binary size can be "
 "reduced by about 15%."
 msgstr ""
+"Die Tools müssen deaktiviert werden, um dieses Flag zu verwenden, da der "
+"Editor nicht für den Betrieb ohne 3D-Unterstützung ausgelegt ist. Ohne "
+"dieses Flag kann die Binärgröße um etwa 15 % reduziert werden."
 
-#, fuzzy
 msgid "Disabling advanced GUI objects"
-msgstr "Deaktivieren erweiterter GUI-Nodes"
+msgstr "Deaktivieren erweiterter GUI-Objekte"
 
 msgid ""
 "Most small games don't require complex GUI controls such as Tree, ItemList, "
@@ -153,129 +243,126 @@ msgstr ""
 "mit einem Build Flag:"
 
 msgid "This is everything that will be disabled:"
-msgstr ""
+msgstr "Dies ist alles, was deaktiviert werden wird:"
 
-#, fuzzy
 msgid "FileDialog"
-msgstr "Dateidialog"
+msgstr "FileDialog"
 
 msgid "PopupMenu"
-msgstr ""
+msgstr "PopupMenu"
 
-#, fuzzy
 msgid "Tree"
-msgstr "Szenenbaum"
+msgstr "Tree"
 
-#, fuzzy
 msgid "TextEdit"
-msgstr "Text Editor"
+msgstr "TextEdit"
 
-#, fuzzy
 msgid "CodeEdit"
-msgstr "Text Editor"
+msgstr "CodeEdit"
 
 msgid "SyntaxHighlighter"
-msgstr ""
+msgstr "SyntaxHighlighter"
 
-#, fuzzy
 msgid "CodeHighlighter"
-msgstr "HighShelfFilter"
+msgstr "CodeHighlighter"
 
 msgid "TreeItem"
-msgstr ""
+msgstr "TreeItem"
 
-#, fuzzy
 msgid "OptionButton"
-msgstr "Optimierungen"
+msgstr "OptionButton"
 
 msgid "SpinBox"
-msgstr ""
+msgstr "SpinBox"
 
-#, fuzzy
 msgid "ColorPicker"
-msgstr "Farbraum"
+msgstr "ColorPicker"
 
 msgid "ColorPickerButton"
-msgstr ""
+msgstr "ColorPickerButton"
 
-#, fuzzy
 msgid "RichTextlabel"
-msgstr "BBCode in RichTextLabel"
+msgstr "RichTextlabel"
 
-#, fuzzy
 msgid "RichTextEffect"
-msgstr "Effekt"
+msgstr "RichTextEffect"
 
-#, fuzzy
 msgid "CharFXTransform"
-msgstr "Transform leeren"
+msgstr "CharFXTransform"
 
-#, fuzzy
 msgid "AcceptDialog"
-msgstr "Dateidialog"
+msgstr "AcceptDialog"
 
-#, fuzzy
 msgid "ConfirmationDialog"
-msgstr "Konfiguration"
+msgstr "ConfirmationDialog"
 
-#, fuzzy
 msgid "MarginContainer"
-msgstr "Rand-Container"
+msgstr "MarginContainer"
 
-#, fuzzy
 msgid "SubViewportContainer"
-msgstr "Viewport-Container"
+msgstr "SubViewportContainer"
 
-#, fuzzy
 msgid "SplitContainer"
-msgstr "Split-Container"
+msgstr "SplitContainer"
 
-#, fuzzy
 msgid "HSplitContainer"
-msgstr "Split-Container"
+msgstr "HSplitContainer"
 
-#, fuzzy
 msgid "VSplitContainer"
-msgstr "Split-Container"
+msgstr "VSplitContainer"
 
 msgid "GraphNode"
-msgstr ""
+msgstr "GraphNode"
 
 msgid "GraphEdit"
-msgstr ""
+msgstr "GraphEdit"
 
 msgid "Disabling unwanted modules"
 msgstr "Unerwünschte Module deaktivieren"
 
 msgid "**Space savings:** Very low to moderate depending on modules"
-msgstr ""
+msgstr "**Platzersparnis:** Sehr gering bis mäßig je nach Modulen"
 
 msgid "**Difficulty:** Medium to hard depending on modules"
-msgstr ""
+msgstr "**Schwierigkeit:** Mittel bis schwer, je nach Modulen"
 
 msgid ""
 "A lot of Godot's functions are offered as modules. You can see a list of "
 "modules with the following command:"
 msgstr ""
+"Viele der Funktionen von Godot werden als Module angeboten. Sie können eine "
+"Liste der Module mit dem folgenden Befehl anzeigen:"
 
 msgid ""
 "The list of modules that can be disabled will appear, together with all "
 "build options. If you are working on a simple 2D game, you could disable a "
 "lot of them:"
 msgstr ""
+"Die Liste der Module, die deaktiviert werden können, wird zusammen mit allen "
+"Build-Optionen angezeigt. Wenn Sie an einem einfachen 2D-Spiel arbeiten, "
+"können Sie viele von ihnen deaktivieren:"
 
+#, fuzzy
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
 "modules and see which ones you actually still need for your game (e.g. you "
-"might want to keep networking-related modules, regex support, or theora to "
-"play videos)."
+"might want to keep networking-related modules, regex support, ``minimp3``/"
+"``ogg``/``vorbis`` to play music, or ``theora`` to play videos)."
 msgstr ""
+"Wenn sich dies für Ihren Anwendungsfall als nicht praktikabel erweist, "
+"sollten Sie die Liste der Module überprüfen und sehen, welche Sie "
+"tatsächlich noch für Ihr Spiel benötigen (z. B. möchten Sie vielleicht "
+"netzwerkbezogene Module, Regex-Unterstützung oder Theora zum Abspielen von "
+"Videos behalten)."
 
 msgid ""
 "Alternatively, you can supply a list of disabled modules by creating "
 "``custom.py`` at the root of the source, with the contents similar to the "
 "following:"
 msgstr ""
+"Alternativ können Sie eine Liste von deaktivierten Modulen bereitstellen, "
+"indem Sie ``custom.py`` im Stammverzeichnis des Quelltextes erstellen, mit "
+"einem Inhalt ähnlich dem folgenden:"
 
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ":ref:`doc_overriding_build_options`."

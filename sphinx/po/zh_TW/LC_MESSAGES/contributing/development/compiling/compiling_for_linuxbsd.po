@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,15 +17,16 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Compiling for Linux, \\*BSD"
-msgstr "為 X11 進行編譯 (Linux, \\*BSD)"
+msgstr "為 Linux, \\*BSD 進行編譯"
 
 msgid ""
 "This page describes how to compile Linux editor and export template binaries "
 "from source. If you're looking to export your project to Linux instead, "
 "read :ref:`doc_exporting_for_linux`."
 msgstr ""
+"這個頁面描述的是如何從源碼編譯 Linux 編輯器和匯出範本二進位檔案。如果你要找的"
+"是匯出專案到 Linux，請閱讀 :ref:`doc_exporting_for_linux`。"
 
 msgid "Requirements"
 msgstr "系統需求"
@@ -37,14 +38,12 @@ msgstr "若要在 Linux 或其他各種 Unix 下進行編譯，必須滿足下�
 msgid "GCC 7+ or Clang 6+."
 msgstr "GCC 7+ 或 Clang 6+。"
 
-#, fuzzy
 msgid "`Python 3.6+ <https://www.python.org/downloads/>`_."
 msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_ 。"
 
 msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
 msgstr "`SCons 3.0+ <https://scons.org/pages/download.html>`_ 建置系統。"
 
-#, fuzzy
 msgid ""
 "If your distribution uses Python 2 by default, or you are using a version of "
 "SCons prior to 3.1.2, you will need to change the version of Python that "
@@ -57,25 +56,21 @@ msgstr ""
 "來更改 SCons 使用的 Python 版本。可使用 ``which scons`` 指令來找到 SCons 腳本"
 "的位置。"
 
-#, fuzzy
 msgid "pkg-config (used to detect the development libraries listed below)."
 msgstr "pkg-config (用於偵測下方的相依性套件)。"
 
-#, fuzzy
 msgid "Development libraries:"
 msgstr "ALSA 開發函式庫。"
 
-#, fuzzy
 msgid "X11, Xcursor, Xinerama, Xi and XRandR."
 msgstr "X11, Xcursor, Xinerama, Xi 與 XRandR 開發函式庫。"
 
 msgid "MesaGL."
-msgstr ""
+msgstr "MesaGL."
 
 msgid "ALSA."
-msgstr ""
+msgstr "ALSA."
 
-#, fuzzy
 msgid "PulseAudio."
 msgstr "音訊"
 
@@ -84,7 +79,7 @@ msgstr "**可選** - libudev (使用 ``udev=yes`` 進行建置)。"
 
 msgid ""
 "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
-msgstr ""
+msgstr "要獲取編譯所需的 Godot 源碼，請參閱 :ref:`doc_getting_source`。"
 
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
@@ -96,52 +91,41 @@ msgstr ""
 msgid "Distro-specific one-liners"
 msgstr "用於各個發行版的單行安裝程式"
 
-#, fuzzy
 msgid "Alpine Linux"
-msgstr "\\ **Alpine Linux**"
+msgstr "Alpine Linux"
 
-#, fuzzy
 msgid "Arch Linux"
-msgstr "\\ **Arch Linux**"
+msgstr "Arch Linux"
 
-#, fuzzy
 msgid "Debian/Ubuntu"
-msgstr "\\ **Debian** / **Ubuntu**"
+msgstr "Debian/Ubuntu"
 
-#, fuzzy
 msgid "Fedora"
-msgstr "\\ **Fedora**"
+msgstr "Fedora"
 
-#, fuzzy
 msgid "FreeBSD"
-msgstr "\\ **FreeBSD**"
+msgstr "FreeBSD"
 
-#, fuzzy
 msgid "Gentoo"
-msgstr "\\ **Gentoo**"
+msgstr "Gentoo"
 
-#, fuzzy
 msgid "Mageia"
-msgstr "\\ **Mageia**"
+msgstr "Mageia"
 
-#, fuzzy
 msgid "OpenBSD"
-msgstr "\\ **OpenBSD**"
+msgstr "OpenBSD"
 
-#, fuzzy
 msgid "openSUSE"
-msgstr "\\ **openSUSE**"
+msgstr "openSUSE"
 
-#, fuzzy
 msgid "NetBSD"
-msgstr "\\ **NetBSD**"
+msgstr "NetBSD"
 
 msgid "For audio support, you can optionally install ``pulseaudio``."
 msgstr "若要支援音訊，則可選擇性地安裝 ``pulseaudio`` 。"
 
-#, fuzzy
 msgid "Solus"
-msgstr "\\ **Solus**"
+msgstr "Solus"
 
 msgid "Compiling"
 msgstr "編譯"
@@ -156,8 +140,10 @@ msgid ""
 "`3.x branch of this documentation <https://docs.godotengine.org/en/3.6/"
 "development/compiling/compiling_for_x11.html>`__."
 msgstr ""
+"在Godot 4.0之前，Linux/\\*BSD目標被稱為“x11”而不是“linuxbsd”。如果你想編譯"
+"Godot 3.x，請確保使用本文檔的'3.x分支<https://docs.godotengine.org/en/3.6/"
+"development/compiling/compiling_for_x11.html>'_。"
 
-#, fuzzy
 msgid ""
 "If all goes well, the resulting binary executable will be placed in the "
 "\"bin\" subdirectory. This executable file contains the whole engine and "
@@ -174,9 +160,8 @@ msgstr "若想使用 Clang 而不是 GCC 來編譯的話，請使用這個指令
 msgid ""
 "Using Clang appears to be a requirement for OpenBSD, otherwise fonts would "
 "not build."
-msgstr "在 OpenBSD 上似乎需要使用 Clang，否則無法正確建置字體。"
+msgstr "在 OpenBSD 上似乎需要使用 Clang，否則無法正確建置字形。"
 
-#, fuzzy
 msgid ""
 "If you are compiling Godot for production use, then you can make the final "
 "executable smaller and faster by adding the SCons options "
@@ -185,7 +170,6 @@ msgstr ""
 "若是要為正式環境編譯 Godot，則可以通過加上 ``target=release_debug`` SCons 選"
 "項來讓最終產生的可執行檔更小且更快速。"
 
-#, fuzzy
 msgid ""
 "If you are compiling Godot with GCC, you can make the binary even smaller "
 "and faster by adding the SCons option ``lto=full``. As link-time "
@@ -205,23 +189,23 @@ msgstr ""
 "``bin/`` 資料夾中建立檔名為 ``._sc_`` 或 ``_sc_`` 的檔案來開啟 :ref:"
 "`doc_data_paths_self_contained_mode` 。"
 
-#, fuzzy
 msgid "Running a headless/server build"
 msgstr "編譯無周邊版本與伺服器版本"
 
-#, fuzzy
 msgid ""
 "To run in *headless* mode which provides editor functionality to export "
 "projects in an automated manner, use the normal build::"
 msgstr "若要編譯用於以編輯器功能來自動化匯出專案的 **無周邊** 版本，請使用："
 
 msgid "And then use the ``--headless`` command line argument::"
-msgstr ""
+msgstr "然後使用“--headless”命令列參數::"
 
 msgid ""
 "To compile a debug *server* build which can be used with :ref:`remote "
 "debugging tools <doc_command_line_tutorial>`, use::"
 msgstr ""
+"如果要編譯除錯版本的*伺服器*，支援:ref:`遠端除錯工具 "
+"<doc_command_line_tutorial>`，那麼請使用： ::"
 
 msgid ""
 "To compile a *server* build which is optimized to run dedicated game "
@@ -242,11 +226,10 @@ msgstr ""
 "能在多數發行版上執行的二進位執行檔，請使用較舊的發行版來建置，如 Ubuntu "
 "16.04。可以使用虛擬機或容器來設定一個適合的建置環境。"
 
-#, fuzzy
 msgid ""
 "To build Linux or \\*BSD export templates, run the build system with the "
 "following parameters:"
-msgstr "若要建置 X11 (Linux, \\*BSD) 匯出樣板，請使用下列參數來執行建置系統："
+msgstr "若要建置 Linux, \\*BSD 匯出樣板，請使用下列參數來執行建置系統："
 
 msgid "(32 bits)"
 msgstr "(32 位元)"
@@ -261,13 +244,11 @@ msgstr ""
 "請注意，可能無法為與目前宿主機環境不同的位元 (64/32) 進行交叉編譯時，有可能會"
 "需要 Chroot 環境。"
 
-#, fuzzy
 msgid ""
 "To create standard export templates, the resulting files in the ``bin/`` "
 "folder must be copied to:"
 msgstr "要建立標準的匯出樣板，則必須將產生的檔案複製至："
 
-#, fuzzy
 msgid ""
 "and named like this (even for \\*BSD which is seen as \"Linux/X11\" by "
 "Godot):"
@@ -319,6 +300,8 @@ msgid ""
 "After the build is completed, a new binary with a ``.llvm`` suffix will be "
 "created in the ``bin/`` folder."
 msgstr ""
+"建構完成後，將在 ``bin/`` 資料夾中建立一個以 ``.llvm`` 為後綴的新的二進位檔"
+"案。"
 
 msgid ""
 "It's still recommended to use GCC for production builds as they can be "
@@ -329,14 +312,13 @@ msgstr ""
 "譯，產生的二進位執行檔也更小更快。"
 
 msgid "If this error occurs::"
-msgstr ""
+msgstr "如果出現此錯誤：："
 
-#, fuzzy
 msgid "There are two solutions:"
 msgstr "Godot 沒有使用限制"
 
 msgid "In your SCons command, add the parameter ``use_static_cpp=no``."
-msgstr ""
+msgstr "在 SCons 指令中，新增參數``use_static_cpp=no``。"
 
 msgid ""
 "Follow `these instructions <https://github.com/ivmai/"
@@ -344,8 +326,10 @@ msgid ""
 "``libatomic_ops``. Then, copy ``/usr/lib/libatomic_ops.a`` to ``/usr/lib/"
 "libatomic.a``."
 msgstr ""
+"請依照這些說明<https://github.com/ivmai/libatomic_ops#installation-and-"
+"usage>`__ 來設定、建置和安裝「libatomic_ops」。然後，將「/usr/lib/"
+"libatomic_ops.a」複製到「/usr/lib/libatomic.a」。"
 
-#, fuzzy
 msgid "Using mold for faster development"
 msgstr "使用 Clang 與 LLD 來更快速地開發"
 
@@ -353,13 +337,16 @@ msgid ""
 "For even faster linking compared to LLD, you can use `mold <https://github."
 "com/rui314/mold>`__. mold can be used with either GCC or Clang."
 msgstr ""
+"為了比 LLD 更快的鏈接，您可以使用 `mold <https://github.com/rui314/"
+"mold>`__。 Mold 可以與 GCC 或 Clang 一起使用。"
 
 msgid ""
 "As of January 2023, mold is not readily available in Linux distribution "
 "repositories, so you will have to install its binaries manually."
 msgstr ""
+"截至 2023 年 1 月，mold 在 Linux 發行版儲存庫中尚不可用，因此您必須手動安裝其"
+"二進位。"
 
-#, fuzzy
 msgid ""
 "Download mold binaries from its `releases page <https://github.com/rui314/"
 "mold/releases/latest>`__."
@@ -371,19 +358,24 @@ msgid ""
 "Extract the ``.tar.gz`` file, then move the extraced folder to a location "
 "such as ``.local/share/mold``."
 msgstr ""
+"解壓 ``.tar.gz`` 檔，然後將得到的資料夾移動到類似於 ``.local/share/mold`` 的"
+"位置。"
 
 msgid ""
 "Add ``$HOME/.local/share/mold/bin`` to your user's ``PATH`` environment "
 "variable. For example, you can add the following line at the end of your "
 "``$HOME/.bash_profile`` file:"
 msgstr ""
+"將 ``$HOME/.local/share/mold/bin`` 新增到使用者的 ``PATH`` 環境變數中。例如可"
+"以在 ``$HOME/.bash_profile`` 檔的末尾加上以下內容："
 
 msgid ""
 "Open a new terminal (or run ``source \"$HOME/.bash_profile\"``), then use "
 "the following SCons command when compiling Godot::"
 msgstr ""
+"打開新的終端（或者運作 ``source \"$HOME/.bash_profile\"``），然後使用以下 "
+"SCons 命令編譯 Godot：::"
 
-#, fuzzy
 msgid "Using system libraries for faster development"
 msgstr "使用 Clang 與 LLD 來更快速地開發"
 
@@ -395,11 +387,17 @@ msgid ""
 "Therefore, they don't need to be statically linked every time you build the "
 "engine (even on small incremental changes)."
 msgstr ""
+"`Godot 捆綁了各種第三方函式庫的源程式碼。 <https://github.com/godotengine/"
+"godot/tree/master/thirdparty>`__ 您可以選擇使用系統版本的第三方函式庫。這使"
+"得 Godot 二進位檔案的連結速度更快，因為第三方函式庫是動態連結的。因此，它們不"
+"需要在每次建立引擎時靜態連結（即使是小的差異量更改）。"
 
 msgid ""
 "However, not all Linux distributions have packages for third-party libraries "
 "available (or they may not be up-to-date)."
 msgstr ""
+"但是，並非所有 Linux 發行版都有可用的第三方函式庫的軟體包（或者它們可能不是最"
+"新的）。"
 
 msgid ""
 "Moving to system libraries can reduce linking times by several seconds on "
@@ -408,24 +406,31 @@ msgid ""
 "everything due to bugs in the system library packages (or in the build "
 "system, as this feature is less tested)."
 msgstr ""
+"遷移到系統庫可以將慢速 CPU 上的連結時間縮短幾秒鐘，但需要手動測試，具體取決於"
+"您的 Linux 發行版。此外，由於系統庫包中的錯誤（或建置系統中的錯誤，因為此功能"
+"測試較少），您可能無法將系統庫用於所有內容。"
 
 msgid ""
 "To compile Godot with system libraries, install these dependencies *on top* "
 "of the ones listed in the :ref:`doc_compiling_for_linuxbsd_oneliners`:"
 msgstr ""
+"要使用系統庫編譯 Godot，請在 doc_compiling_for_linuxbsd_oneliners 中列出的*頂"
+"部*安裝這些依賴項："
 
 msgid "**Fedora**"
-msgstr "\\ **Fedora**"
+msgstr "**Fedora**"
 
 msgid ""
 "After installing all required packages, use the following command to build "
 "Godot:"
-msgstr ""
+msgstr "安裝所有必需的軟體包後，使用以下命令建置 Godot："
 
 msgid ""
 "You can view a list of all built-in libraries that have system alternatives "
 "by running ``scons -h``, then looking for options starting with ``builtin_``."
 msgstr ""
+"您可以透過執行「scons -h」來查看具有系統替代方案的所有內建庫的列表，然後尋找"
+"以「builtin_」開頭的選項。"
 
 msgid ""
 "When using system libraries, the resulting library is **not** portable "
@@ -433,8 +438,9 @@ msgid ""
 "binaries you intend to distribute to others, unless you're creating a "
 "package for a Linux distribution."
 msgstr ""
+"使用系統函式庫時，產生的函式庫**不再**可跨 Linux 發行版移植。請勿使用此方法建"
+"立要分發給其他人的二進位檔案，除非您正在為 Linux 發行版建立套件。"
 
-#, fuzzy
 msgid "Using Pyston for faster development"
 msgstr "使用 Clang 與 LLD 來更快速地開發"
 
@@ -445,37 +451,53 @@ msgid ""
 "incremental builds significantly, often by a factor between 1.5× and 2×. "
 "Pyston can be combined with Clang and LLD to get even faster builds."
 msgstr ""
+"你可以使用 `Pyston <https://www.pyston.org/>`__ 來運作 SCons。Pyston 是一種利"
+"用了 JIT 的 Python 語言實作（SCons 就是使用 Python 編寫的）。目前它只相容 "
+"Linux。Pyston 可以顯著加速差異量建構，經常可以達到 1.5× 和 2× 倍。可以將 "
+"Pyston 與 Clang 和 LLD 組合，進行更快的建構。"
 
 msgid ""
 "Download the `latest portable Pyston release <https://github.com/pyston/"
 "pyston/releases/latest>`__."
 msgstr ""
+"下載 `Pyston 的最新綠色版本 <https://github.com/pyston/pyston/releases/"
+"latest>`__。"
 
 msgid ""
 "Extract the portable ``.tar.gz`` to a set location, such as ``$HOME/.local/"
 "opt/pyston/`` (create folders as needed)."
 msgstr ""
+"將綠色的 ``.tar.gz`` 解壓到特定的位置，比如 `$HOME/.local/opt/pyston/`（必要"
+"時請建立資料夾）。"
 
 msgid ""
 "Use ``cd`` to reach the extracted Pyston folder from a terminal, then run "
 "``./pyston -m pip install scons`` to install SCons within Pyston."
 msgstr ""
+"在命令列中，使用 ``cd`` 達到 Pyston 解壓出的資料夾，然後運作 ``./pyston -m "
+"pip install scons``，在 Pyston 中安裝 SCons。"
 
 msgid ""
 "To make SCons via Pyston easier to run, create a symbolic link of its "
 "wrapper script to a location in your ``PATH`` environment variable::"
 msgstr ""
+"為了便於通過 Pyston 運作 SCons，請建立一個指向其封裝腳本的符號連結，符號連結"
+"的位置必須在你的 ``PATH`` 環境變數中： ::"
 
 msgid ""
 "Instead of running ``scons <build arguments>``, run ``pyston-scons <build "
 "arguments>`` to compile Godot."
 msgstr ""
+"現在就不是執行 ``scons <建構參數>`` 了，要編譯 Godot 請執行 ``pyston-scons <"
+"建構參數>``。"
 
 msgid ""
 "If you can't run ``pyston-scons`` after creating the symbolic link, make "
 "sure ``$HOME/.local/bin/`` is part of your user's ``PATH`` environment "
 "variable."
 msgstr ""
+"如果建立符號連結後無法執行 ``pyston-scons``，請確定 ``$HOME/.local/bin/`` 是"
+"目前使用者的 ``PATH`` 環境變數的一部分。"
 
 msgid ""
 "Alternatively, you can run ``python -m pip install pyston_lite_autoload`` "
@@ -483,6 +505,9 @@ msgid ""
 "optimizations in any Python program you run. However, this won't bring as "
 "much of a performance improvement compared to installing \"full\" Pyston."
 msgstr ""
+"或者，您可以執行“python -m pip install pyston_lite_autoload”，然後照常執行 "
+"SCons。這將自動在您執行的任何 Python 程式中載入 Pyston 最佳化的子集。然而，與"
+"安裝「完整」Pyston 相比，這不會帶來那麼多的效能改進。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

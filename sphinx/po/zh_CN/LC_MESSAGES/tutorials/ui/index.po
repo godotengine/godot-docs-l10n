@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "User interface (UI)"
 msgstr "用户界面（UI）"
 
@@ -27,51 +26,45 @@ msgid ""
 msgstr ""
 
 msgid "UI building blocks"
-msgstr ""
+msgstr "UI 构件"
 
 msgid ""
 "Like everything else in Godot the user interface is built using nodes, "
 "specifically :ref:`Control <class_Control>` nodes. There are many different "
-"types of controls which are useful for creating specific types of the GUI. "
-"For simplicity we can separate them into two groups: content and layout."
+"types of controls which are useful for creating specific types of GUIs. For "
+"simplicity we can separate them into two groups: content and layout."
 msgstr ""
 
 msgid "Typical content controls include:"
-msgstr ""
+msgstr "典型的内容控件有："
 
-#, fuzzy
 msgid ":ref:`Buttons <class_Button>`"
-msgstr ":ref:`Quat <class_Quat>`"
+msgstr ":ref:`按钮 <class_Button>`"
 
-#, fuzzy
 msgid ":ref:`Labels <class_Label>`"
-msgstr ":ref:`bool <class_bool>`"
+msgstr ":ref:`标签 <class_Label>`"
 
 msgid ":ref:`LineEdits <class_LineEdit>` and :ref:`TextEdits <class_TextEdit>`"
 msgstr ""
+":ref:`单行文本框 <class_LineEdit>` 和 :ref:`多行文本框 <class_TextEdit>`"
 
 msgid "Typical layout controls include:"
-msgstr ""
+msgstr "典型的布局控件有："
 
-#, fuzzy
 msgid ":ref:`BoxContainers <class_BoxContainer>`"
-msgstr ":ref:`堆叠 <class_BoxContainer>` 布局。"
+msgstr ":ref:`盒容器 <class_BoxContainer>`"
 
-#, fuzzy
 msgid ":ref:`MarginContainers <class_MarginContainer>`"
-msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+msgstr ":ref:`边距容器 <class_MarginContainer>`"
 
-#, fuzzy
 msgid ":ref:`ScrollContainers <class_ScrollContainer>`"
-msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+msgstr ":ref:`滚动条容器 <class_ScrollContainer>`"
 
-#, fuzzy
 msgid ":ref:`TabContainers <class_TabContainer>`"
-msgstr ":ref:`CSGCombiner <class_CSGcombiner>`"
+msgstr ":ref:`选项卡容器 <class_TabContainer>`"
 
-#, fuzzy
 msgid ":ref:`Popups <class_Popup>`"
-msgstr ":ref:`CSGTorus <class_CSGTorus>`"
+msgstr ":ref:`弹框 <class_Popup>`"
 
 #, fuzzy
 msgid "The following pages explain the basics of using such controls."

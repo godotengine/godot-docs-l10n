@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgstr ""
 "클래스로 이동해야 합니다. 대부분의 전역 상수는 자신의 열거형으로 이동합니다."
 
 msgid "Constants"
-msgstr "제약"
+msgstr "상수"
 
 msgid ""
 "In C#, only primitive types can be constant. For example, the ``TAU`` "
@@ -203,11 +203,32 @@ msgstr ""
 msgid "Mathf.Acos"
 msgstr "수학 함수"
 
+msgid "acosh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Acosh"
+msgstr "수학 함수"
+
+#, fuzzy
+msgid "angle_difference"
+msgstr "일반적인 차이점"
+
+msgid "Mathf.AngleDifference"
+msgstr ""
+
 msgid "asin"
 msgstr ""
 
 msgid "Mathf.Asin"
 msgstr ""
+
+msgid "asinh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Asinh"
+msgstr "수학"
 
 msgid "atan"
 msgstr ""
@@ -220,6 +241,13 @@ msgstr ""
 
 msgid "Mathf.Atan2"
 msgstr ""
+
+msgid "atanh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Atanh"
+msgstr "수학"
 
 msgid "bezier_derivative"
 msgstr ""
@@ -297,8 +325,9 @@ msgstr "보간법 (Interpolation)"
 msgid "Mathf.CubicInterpolate"
 msgstr "물리 보간"
 
-msgid "cubic_interpoalte_angle"
-msgstr ""
+#, fuzzy
+msgid "cubic_interpolate_angle"
+msgstr "보간법 (Interpolation)"
 
 msgid "Mathf.CubicInterpolateAngle"
 msgstr ""
@@ -656,6 +685,13 @@ msgstr "NAN"
 msgid "rid_from_int64"
 msgstr ""
 
+msgid "rotate_toward"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.RotateToward"
+msgstr "바닥"
+
 #, fuzzy
 msgid "round"
 msgstr "배경(Background)"
@@ -767,6 +803,20 @@ msgstr ""
 
 msgid "Mathf.Tanh"
 msgstr ""
+
+msgid "type_convert"
+msgstr ""
+
+msgid "Variant.As<T> or GD.Convert"
+msgstr ""
+
+#, fuzzy
+msgid "type_string"
+msgstr "문자열"
+
+#, fuzzy
+msgid "Variant.Type.ToString"
+msgstr "변종"
 
 #, fuzzy
 msgid "typeof"
@@ -1405,6 +1455,10 @@ msgid ""
 "StringExtensions.ReplaceN (Consider using `string.Replace`_ or `RegEx`_)"
 msgstr ""
 
+#, fuzzy
+msgid "reverse"
+msgstr "**Server**"
+
 msgid "rfind"
 msgstr ""
 
@@ -1606,7 +1660,7 @@ msgid "to_wchar_buffer"
 msgstr ""
 
 msgid ""
-"StringExtensions.ToUtf16Buffer in Windows and StringExtensiont.ToUtf32Buffer "
+"StringExtensions.ToUtf16Buffer in Windows and StringExtensions.ToUtf32Buffer "
 "in other platforms"
 msgstr ""
 
@@ -2048,7 +2102,7 @@ msgstr "딕셔너리"
 #, fuzzy
 msgid ""
 "Use ``Godot.Collections.Dictionary`` for an untyped ``Variant`` dictionary. "
-"``Godot.Colelctions.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
+"``Godot.Collections.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
 "``Godot.Collections.Dictionary``."
 msgstr ""
 "``Godot.Collections.Dictionary<T>`` 는 ``Godot.Collections.Dictionary`` 를 둘"

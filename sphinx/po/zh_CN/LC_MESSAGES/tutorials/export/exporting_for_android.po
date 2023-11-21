@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,16 +37,19 @@ msgstr ""
 "SDK和引擎所需的内容."
 
 msgid ""
-"Projects written in C# using Godot 4 currently cannot be exported to "
-"Android. To use C# on Android, use Godot 3 instead."
+"Projects written in C# can be exported to Android as of Godot 4.2, but "
+"support is experimental and :ref:`some limitations apply "
+"<doc_c_sharp_platforms>`."
 msgstr ""
 
-msgid "Install OpenJDK 11"
+#, fuzzy
+msgid "Install OpenJDK 17"
 msgstr "安装 OpenJDK 11"
 
+#, fuzzy
 msgid ""
-"Download and install  `OpenJDK 11 <https://adoptium.net/?"
-"variant=openjdk11>`__."
+"Download and install `OpenJDK 17 <https://adoptium.net/temurin/releases/?"
+"variant=openjdk17>`__."
 msgstr "下载并安装  `OpenJDK 11 <https://adoptium.net/?variant=openjdk11>`__."
 
 msgid "Download the Android SDK"
@@ -130,21 +133,22 @@ msgid ""
 "on Linux and macOS, in the ``C:\\Users\\<user>\\.android\\`` directory on "
 "Windows)."
 msgstr ""
-"Android 需要调试密钥库文件，才能安装到设备并分发非发布版本 APK。如果您以前使"
-"用过 SDK 并且已经构建了项目，那么 ant 或 eclipse 可能会为您生成一个（在 "
-"Linux 和 macOS 上，您可以在 ``~/ .android`` 目录中找到它）。"
+"Android 需要调试密钥库文件，才能安装到设备并分发非发布版本 APK。如果你以前使"
+"用过 SDK 并且已经构建了项目，那么 ant 或 eclipse 可能会为你生成一个（在 "
+"Linux 和 macOS 上，你可以在 ``~/ .android`` 目录中找到它）。"
 
 msgid ""
 "If you can't find it or need to generate one, the keytool command from the "
 "JDK can be used for this purpose::"
 msgstr "如果找不到或需要生成一个，则可以使用 JDK 中的 keytool 命令： ::"
 
+#, fuzzy
 msgid ""
 "This will create a ``debug.keystore`` file in your current directory. You "
 "should move it to a memorable location such as ``%USERPROFILE%\\."
 "android\\``, because you will need its location in a later step. For more "
-"information on ``keytool`` usage, see `this Q&A article <https://godotengine."
-"org/qa/21349/jdk-android-file-missing>`__."
+"information on ``keytool`` usage, see `this Q&A article <https://ask."
+"godotengine.org/21349/jdk-android-file-missing>`__."
 msgstr ""
 "这会在当前目录中创建一个 ``debug.keystore`` 文件。你需要移动到一个好记的位"
 "置，比如 ``%USERPROFILE%\\.android\\``\\ ，因为后续步骤会需要这个位置。\\ "
@@ -300,7 +304,7 @@ msgid ""
 "Uploading an APK to Google's Play Store requires you to sign using a non-"
 "debug keystore file; such file can be generated like this:"
 msgstr ""
-"将 APK 上传到 Google 的 Play 商店，需要您使用非调试密钥库文件进行签名；这样的"
+"将 APK 上传到 Google 的 Play 商店，需要你使用非调试密钥库文件进行签名；这样的"
 "文件可以像这样生成："
 
 msgid ""
@@ -309,15 +313,15 @@ msgid ""
 "guides to learn more about `APK signing <https://developer.android.com/"
 "studio/publish/app-signing>`__."
 msgstr ""
-"这个密钥库和密钥用于验证您的开发人员身份，请记住密码并将其保存在安全的地方！"
+"这个密钥库和密钥用于验证你的开发人员身份，请记住密码并将其保存在安全的地方！"
 "使用 Google 的 Android 开发者指南来了解有关 `APK 签名 <https://developer."
 "android.com/studio/publish/app-signing>`__\\ 的更多信息。"
 
 msgid "Now fill in the following forms in your Android Export Presets:"
-msgstr "现在，在您的 Android 导出预设中填写以下表格："
+msgstr "现在，在你的 Android 导出预设中填写以下表格："
 
 msgid "**Release:** Enter the path to the keystore file you just generated."
-msgstr "**发布：**\\ 输入您刚刚生成的密钥库文件的路径。"
+msgstr "**发布：**\\ 输入你刚刚生成的密钥库文件的路径。"
 
 msgid "**Release User:** Replace with the key alias."
 msgstr "**发布用户：**\\ 替换为密钥别名。"
@@ -356,8 +360,8 @@ msgid ""
 "creating an APK for ARMv7 and ARMv8 is usually sufficient to cover most "
 "devices in use today."
 msgstr ""
-"自2019年8月起,Google Play要求所有应用程序都必须以64位格式提供. 这意味着您不能"
-"上传 *仅* 包含ARMv7库的APK. 为了解决这个问题, 您可以使用其 `多个APK 支持 "
+"自2019年8月起,Google Play要求所有应用程序都必须以64位格式提供. 这意味着你不能"
+"上传 *仅* 包含ARMv7库的APK. 为了解决这个问题, 你可以使用其 `多个APK 支持 "
 "<https://developer.android.com/google/play/publishing/multiple-apks>`__ 将多"
 "个APK上传到Google Play. 每个APK都应针对单一架构；为ARMv7和ARMv8创建APK通常足"
 "以覆盖当今使用的大多数设备."
@@ -367,7 +371,7 @@ msgid ""
 "with only the features you need. See :ref:`doc_optimizing_for_size` for more "
 "information."
 msgstr ""
-"您可以通过仅编译具有所需功能的Android导出模板来进一步优化大小. 有关更多信息, "
+"你可以通过仅编译具有所需功能的Android导出模板来进一步优化大小. 有关更多信息, "
 "请参见 :ref:`doc_optimizing_for_size`."
 
 msgid "Environment variables"
@@ -394,44 +398,51 @@ msgstr "环境变量"
 msgid "Encryption / Encryption Key"
 msgstr ""
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "GODOT_SCRIPT_ENCRYPTION_KEY"
 
 msgid "Options / Keystore / Debug"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
+msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
 
 msgid "Options / Keystore / Debug User"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
+msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
 
 msgid "Options / Keystore / Debug Password"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
+msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
 
 msgid "Options / Keystore / Release"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
+msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
 
 msgid "Options / Keystore / Release User"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
+msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
 
 msgid "Options / Keystore / Release Password"
 msgstr ""
 
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
+msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
 
 msgid "Translation status"
 msgstr "翻译状态"

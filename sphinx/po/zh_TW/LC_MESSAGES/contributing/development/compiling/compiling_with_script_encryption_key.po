@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Compiling with PCK encryption key"
 msgstr "以腳本加密密鑰進行編譯"
 
-#, fuzzy
 msgid ""
 "The export dialog gives you the option to encrypt your PCK file with a 256-"
 "bit AES key when releasing your project. This will make sure your scenes, "
@@ -37,6 +35,8 @@ msgid ""
 "Of course, the key needs to be stored in the binary, but if it's compiled, "
 "optimized and without symbols, it would take some effort to find it."
 msgstr ""
+"當然，金鑰需要儲存在二進位檔案中，但是經過編譯、優化、去除符號後，是需要花費"
+"一些精力才能找到的。"
 
 msgid ""
 "For this to work, you need to build the export templates from source, with "
@@ -48,17 +48,20 @@ msgid ""
 "is absolutely **required** to compile your own export templates to use PCK "
 "encryption."
 msgstr ""
+"如果你使用官方預編譯的匯出範本，是**不會**起作用的。要使用 PCK 加密，絕對**必"
+"須**自己編譯匯出範本。"
 
 msgid ""
 "By default, Android exports store assets directly in the APK file and aren't "
 "affected by PCK encryption. To use PCK encryption on Android, enable **APK "
 "expansion** in the export options."
 msgstr ""
+"預設情況下，Android 匯出將資源直接儲存在 APK 檔案中，並且不受 PCK 加密的影"
+"響。若要在 Android 上使用 PCK 加密，請在匯出選項中啟用 **APK 擴充**。"
 
 msgid "Step by step"
 msgstr "按部就班"
 
-#, fuzzy
 msgid ""
 "Generate a 256-bit AES key in hexadecimal format. You can use the aes-256-"
 "cbc variant from `this service <https://asecuritysite.com/encryption/"
@@ -67,14 +70,13 @@ msgstr ""
 "產生十六進位格式的 256 位元 AES 密鑰。可以使用 `這個服務 <https://"
 "asecuritysite.com/encryption/keygen>`_ 中的 AES-256-CBC 變體。"
 
-#, fuzzy
 msgid ""
 "Alternatively, you can generate it yourself using `OpenSSL <https://www."
 "openssl.org/>`__ command-line tools:"
 msgstr "或者，也可以通過 OpenSSL 來自行產生："
 
 msgid "The output in ``godot.gdkey`` should be similar to:"
-msgstr ""
+msgstr "``godot.gdkey`` 中的輸出應該類似："
 
 msgid ""
 "You can generate the key without redirecting the output to a file, but that "
@@ -92,7 +94,6 @@ msgid ""
 "the export preset options."
 msgstr "編譯 Godot 匯出樣板，並將該匯出樣板在匯出預設設定中設為自定匯出樣板。"
 
-#, fuzzy
 msgid "Set the encryption key in the **Encryption** tab of the export preset:"
 msgstr "在匯出預設設定中的 ``腳本`` 分頁設定加密密鑰："
 
@@ -100,8 +101,9 @@ msgid ""
 "Add filters for the files/folders to encrypt. **By default**, include "
 "filters are empty and **nothing will be encrypted**."
 msgstr ""
+"為要加密的檔案/資料夾新增篩選器。 **預設情況下**，包含篩選器為空並且**不會加"
+"密任何內容**。"
 
-#, fuzzy
 msgid ""
 "Export the project. The project should run with the files encrypted now."
 msgstr "匯出專案。該遊戲現在應該會使用加密腳本來執行。"
@@ -109,7 +111,6 @@ msgstr "匯出專案。該遊戲現在應該會使用加密腳本來執行。"
 msgid "Troubleshooting"
 msgstr "疑難排解"
 
-#, fuzzy
 msgid ""
 "If you get an error like below, it means the key wasn't properly included in "
 "your Godot build. Godot is encrypting PCK file during export, but can't read "

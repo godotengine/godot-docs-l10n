@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,392 +20,320 @@ msgstr ""
 msgid "Documentation changelog"
 msgstr "文档变更日志"
 
-#, fuzzy
 msgid ""
 "The documentation is continually being improved. New releases include new "
 "pages, fixes and updates to existing pages, and many updates to the :ref:"
 "`class reference <doc_class_reference>`. Below is a list of new pages added "
 "since version 3.0."
 msgstr ""
-"文档正在不断完善中。3.2 版的发布加入了许多新教程，对旧版教程的修正和更新，以"
-"及对\\ :ref:`类参考手册 <toc-class-ref>`\\ 的诸多更新。以下列出了自 3.1 版起"
-"添加的新教程。"
+"文档正在不断完善中。新版本加入了许多新页面、对旧版页面的修正和更新，以及对"
+"\\ :ref:`类参考手册 <doc_class_reference>`\\ 的诸多更新。 以下是自 3.0 版以来"
+"添加的新页面的列表。"
 
-#, fuzzy
 msgid ""
 "This document only contains new pages so not all changes are reflected, many "
 "pages have been substantially updated but are not reflected in this document."
 msgstr ""
-"本文档仅包含全新的教程，因此并未反映所有更改，许多教程已经大幅更新，但未反映"
-"在本文档中。"
+"本文档仅包含新页面，因此并未反映所有更改，许多页面已经大幅更新，但未反映在本"
+"文档中。"
 
-#, fuzzy
 msgid "New pages since version 4.0"
-msgstr "自 3.0 版本以来的新教程"
+msgstr "4.0 版本加入的新页面"
 
 msgid "Development"
 msgstr "开发"
 
-#, fuzzy
 msgid ":ref:`doc_internal_rendering_architecture`"
-msgstr ":ref:`doc_beziers_and_curves`"
+msgstr ":ref:`doc_internal_rendering_architecture`"
 
-#, fuzzy
 msgid ":ref:`doc_using_sanitizers`"
-msgstr ":ref:`doc_using_servers`"
+msgstr ":ref:`doc_using_sanitizers`"
 
-#, fuzzy
 msgid "Migrating"
-msgstr "灯光"
+msgstr "迁移"
 
-#, fuzzy
 msgid ":ref:`doc_upgrading_to_godot_4.1`"
-msgstr ":ref:`doc_converting_glsl_to_godot_shaders`"
+msgstr ":ref:`doc_upgrading_to_godot_4.1`"
 
 msgid "Physics"
-msgstr "物理学"
+msgstr "物理"
 
-#, fuzzy
 msgid ":ref:`doc_troubleshooting_physics_issues`"
-msgstr ":ref:`doc_exporting_basics`"
+msgstr ":ref:`doc_troubleshooting_physics_issues`"
 
-#, fuzzy
 msgid "New pages since version 3.6"
-msgstr "自 3.1 版本以来的新教程"
+msgstr "3.6 版本加入的新页面"
 
 msgid "2D"
 msgstr "2D"
 
-#, fuzzy
 msgid ":ref:`doc_2d_antialiasing`"
-msgstr ":ref:`doc_2d_sprite_animation`"
+msgstr ":ref:`doc_2d_antialiasing`"
 
 msgid "3D"
 msgstr "3D"
 
-#, fuzzy
 msgid ":ref:`doc_3d_antialiasing`"
-msgstr ":ref:`doc_godot_notifications`"
+msgstr ":ref:`doc_3d_antialiasing`"
 
-#, fuzzy
 msgid ":ref:`doc_faking_global_illumination`"
-msgstr ":ref:`doc_interpolation`"
+msgstr ":ref:`doc_faking_global_illumination`"
 
-#, fuzzy
 msgid ":ref:`doc_introduction_to_global_illumination`"
-msgstr ":ref:`doc_introduction_to_shaders`"
+msgstr ":ref:`doc_introduction_to_global_illumination`"
 
-#, fuzzy
 msgid ":ref:`doc_mesh_lod`"
-msgstr ":ref:`doc_2d_meshes`"
+msgstr ":ref:`doc_mesh_lod`"
 
-#, fuzzy
 msgid ":ref:`doc_occlusion_culling`"
-msgstr ":ref:`doc_using_multimesh`"
+msgstr ":ref:`doc_occlusion_culling`"
 
-#, fuzzy
 msgid ":ref:`doc_using_sdfgi`"
-msgstr ":ref:`doc_using_servers`"
+msgstr ":ref:`doc_using_sdfgi`"
 
-#, fuzzy
 msgid ":ref:`doc_using_decals`"
-msgstr ":ref:`doc_signals`"
+msgstr ":ref:`doc_using_decals`"
 
-#, fuzzy
 msgid ":ref:`doc_visibility_ranges`"
-msgstr ":ref:`doc_visual_shaders`"
+msgstr ":ref:`doc_visibility_ranges`"
 
-#, fuzzy
 msgid ":ref:`doc_volumetric_fog`"
-msgstr ":ref:`doc_webrtc`"
+msgstr ":ref:`doc_volumetric_fog`"
 
-#, fuzzy
 msgid ":ref:`doc_variable_rate_shading`"
-msgstr ":ref:`doc_particle_shader`"
+msgstr ":ref:`doc_variable_rate_shading`"
 
-#, fuzzy
 msgid ":ref:`doc_physical_light_and_camera_units`"
-msgstr ":ref:`doc_2d_lights_and_shadows`"
+msgstr ":ref:`doc_physical_light_and_camera_units`"
 
 msgid "Animation"
 msgstr "动画"
 
-#, fuzzy
 msgid ":ref:`doc_creating_movies`"
-msgstr ":ref:`doc_making_trees`"
+msgstr ":ref:`doc_creating_movies`"
 
 msgid "Assets pipeline"
 msgstr "资产管线"
 
-#, fuzzy
 msgid ":ref:`doc_retargeting_3d_skeletons`"
-msgstr ":ref:`doc_2d_skeletons`"
+msgstr ":ref:`doc_retargeting_3d_skeletons`"
 
-#, fuzzy
 msgid ":ref:`doc_custom_platform_ports`"
-msgstr ":ref:`doc_custom_postprocessing`"
+msgstr ":ref:`doc_custom_platform_ports`"
 
-#, fuzzy
 msgid ":ref:`doc_upgrading_to_godot_4`"
-msgstr ":ref:`doc_converting_glsl_to_godot_shaders`"
+msgstr ":ref:`doc_upgrading_to_godot_4`"
 
-#, fuzzy
 msgid ":ref:`doc_large_world_coordinates`"
-msgstr ":ref:`doc_what_are_godot_classes`"
+msgstr ":ref:`doc_large_world_coordinates`"
 
 msgid "Scripting"
 msgstr "编写脚本"
 
-#, fuzzy
 msgid ":ref:`doc_custom_performance_monitors`"
-msgstr ":ref:`doc_custom_postprocessing`"
+msgstr ":ref:`doc_custom_performance_monitors`"
 
-#, fuzzy
 msgid ":ref:`doc_c_sharp_collections`"
-msgstr ":ref:`doc_2d_skeletons`"
+msgstr ":ref:`doc_c_sharp_collections`"
 
-#, fuzzy
 msgid ":ref:`doc_c_sharp_global_classes`"
-msgstr ":ref:`doc_what_are_godot_classes`"
+msgstr ":ref:`doc_c_sharp_global_classes`"
 
-#, fuzzy
 msgid ":ref:`doc_c_sharp_variant`"
-msgstr ":ref:`doc_2d_sprite_animation`"
+msgstr ":ref:`doc_c_sharp_variant`"
 
 msgid "Shaders"
 msgstr "着色器"
 
-#, fuzzy
 msgid ":ref:`doc_compute_shaders`"
-msgstr ":ref:`doc_particle_shader`"
+msgstr ":ref:`doc_compute_shaders`"
 
 msgid "Workflow"
-msgstr ""
+msgstr "工作流"
 
-#, fuzzy
 msgid ":ref:`doc_pr_review_guidelines`"
-msgstr "阅读我们的 :ref:`doc_content_guidelines`\\ 。"
+msgstr ":ref:`doc_pr_review_guidelines`"
 
-#, fuzzy
 msgid "XR"
-msgstr "X"
+msgstr "XR"
 
-#, fuzzy
 msgid ":ref:`doc_introducing_xr_tools`"
-msgstr ":ref:`doc_introduction_to_shaders`"
+msgstr ":ref:`doc_introducing_xr_tools`"
 
-#, fuzzy
 msgid ":ref:`doc_xr_action_map`"
-msgstr ":ref:`doc_interpolation`"
+msgstr ":ref:`doc_xr_action_map`"
 
-#, fuzzy
 msgid ":ref:`doc_deploying_to_android`"
-msgstr ":ref:`doc_exporting_basics`"
+msgstr ":ref:`doc_deploying_to_android`"
 
-#, fuzzy
 msgid "New pages since version 3.5"
-msgstr "自 3.1 版本以来的新教程"
+msgstr "3.5 版本加入的新页面"
 
 msgid "None."
-msgstr ""
+msgstr "无。"
 
-#, fuzzy
 msgid "New pages since version 3.4"
-msgstr "自 3.1 版本以来的新教程"
+msgstr "3.4 版本加入的新页面"
 
-#, fuzzy
 msgid ":ref:`doc_3d_text`"
-msgstr ":ref:`doc_webrtc`"
+msgstr ":ref:`doc_3d_text`"
 
-#, fuzzy
 msgid ":ref:`doc_playing_videos`"
-msgstr ":ref:`doc_making_trees`"
+msgstr ":ref:`doc_playing_videos`"
 
 msgid "Editor"
 msgstr "编辑器"
 
-#, fuzzy
 msgid ":ref:`doc_managing_editor_features`"
-msgstr ":ref:`doc_making_trees`"
+msgstr ":ref:`doc_managing_editor_features`"
 
-#, fuzzy
 msgid "New pages since version 3.3"
-msgstr "自 3.1 版本以来的新教程"
+msgstr "3.3 版本加入的新页面"
 
 msgid "C++"
 msgstr "C++"
 
-#, fuzzy
 msgid ":ref:`doc_cpp_usage_guidelines`"
-msgstr ":ref:`doc_using_multimesh`"
+msgstr ":ref:`doc_cpp_usage_guidelines`"
 
 msgid "GDScript"
 msgstr "GDScript"
 
-#, fuzzy
 msgid ":ref:`doc_gdscript_documentation_comments`"
-msgstr ":ref:`doc_gdscript_static_typing`"
+msgstr ":ref:`doc_gdscript_documentation_comments`"
 
-#, fuzzy
 msgid "New pages since version 3.2"
-msgstr "自 3.1 版本以来的新教程"
+msgstr "3.2 版本加入的新页面"
 
-#, fuzzy
 msgid ":ref:`doc_3d_rendering_limitations`"
-msgstr "3D 渲染的局限性"
+msgstr ":ref:`doc_3d_rendering_limitations`"
 
 msgid "About"
 msgstr "关于"
 
-#, fuzzy
 msgid ":ref:`doc_troubleshooting`"
-msgstr ":ref:`doc_interpolation`"
+msgstr ":ref:`doc_troubleshooting`"
 
-#, fuzzy
 msgid ":ref:`doc_list_of_features`"
-msgstr ":ref:`doc_viewport_as_texture`"
+msgstr ":ref:`doc_list_of_features`"
 
-#, fuzzy
 msgid ":ref:`doc_release_policy`"
-msgstr ":ref:`doc_thread_safe_apis`"
+msgstr ":ref:`doc_release_policy`"
 
 msgid "Best practices"
 msgstr "最佳实践"
 
-#, fuzzy
 msgid ":ref:`doc_version_control_systems`"
-msgstr ":ref:`doc_ragdoll_system`"
+msgstr ":ref:`doc_version_control_systems`"
 
 msgid "Community"
 msgstr "社区"
 
-#, fuzzy
 msgid ":ref:`doc_best_practices_for_engine_contributors`"
-msgstr "引擎贡献者的最佳实践"
+msgstr ":ref:`doc_best_practices_for_engine_contributors`"
 
-#, fuzzy
 msgid ":ref:`doc_bisecting_regressions`"
-msgstr "Regression 的二分查找"
+msgstr ":ref:`doc_bisecting_regressions`"
 
-#, fuzzy
 msgid ":ref:`doc_editor_and_docs_localization`"
-msgstr "详见 :ref:`doc_editor_and_docs_localization` ."
+msgstr ":ref:`doc_editor_and_docs_localization`"
 
-#, fuzzy
 msgid ":ref:`doc_introduction_to_editor_development`"
-msgstr "编辑器开发简介"
+msgstr ":ref:`doc_introduction_to_editor_development`"
 
-#, fuzzy
 msgid ":ref:`doc_editor_style_guide`"
-msgstr ":ref:`doc_jitter_stutter`"
+msgstr ":ref:`doc_editor_style_guide`"
 
-#, fuzzy
 msgid ":ref:`doc_common_engine_methods_and_macros`"
-msgstr "常见的引擎方法和宏"
+msgstr ":ref:`doc_common_engine_methods_and_macros`"
 
-#, fuzzy
 msgid ":ref:`doc_vulkan_validation_layers`"
-msgstr ":ref:`doc_animation_tree`"
+msgstr ":ref:`doc_vulkan_validation_layers`"
 
-#, fuzzy
 msgid ":ref:`doc_gdscript_grammar`"
-msgstr ":ref:`doc_2d_sprite_animation`"
+msgstr ":ref:`doc_gdscript_grammar`"
 
 msgid "Configuring an IDE: :ref:`doc_configuring_an_ide_code_blocks`"
-msgstr ""
+msgstr "配置 IDE：\\ :ref:`doc_configuring_an_ide_code_blocks`"
 
-#, fuzzy
 msgid ":ref:`doc_default_key_mapping`"
-msgstr ":ref:`doc_thread_safe_apis`"
+msgstr ":ref:`doc_default_key_mapping`"
 
-#, fuzzy
 msgid ":ref:`doc_using_the_web_editor`"
-msgstr ":ref:`Web <doc_using_the_web_editor>`"
+msgstr ":ref:`doc_using_the_web_editor`"
 
 msgid "Export"
 msgstr "导出"
 
-#, fuzzy
 msgid ":ref:`doc_exporting_for_dedicated_servers`"
-msgstr "为专用服务器导出"
+msgstr ":ref:`doc_exporting_for_dedicated_servers`"
 
 msgid "Input"
 msgstr "输入"
 
-#, fuzzy
 msgid ":ref:`doc_controllers_gamepads_joysticks`"
-msgstr "控制器、手柄和摇杆"
+msgstr ":ref:`doc_controllers_gamepads_joysticks`"
 
 msgid "Math"
 msgstr "数学"
 
-#, fuzzy
 msgid ":ref:`doc_random_number_generation`"
-msgstr "随机数生成"
+msgstr ":ref:`doc_random_number_generation`"
 
 msgid "Platform-specific"
 msgstr "平台相关"
 
-#, fuzzy
 msgid ":ref:`doc_plugins_for_ios`"
-msgstr ":ref:`doc_optimizing_for_size`"
+msgstr ":ref:`doc_plugins_for_ios`"
 
-#, fuzzy
 msgid ":ref:`doc_ios_plugin`"
-msgstr ":ref:`doc_android_plugin`"
+msgstr ":ref:`doc_ios_plugin`"
 
-#, fuzzy
 msgid ":ref:`doc_html5_shell_classref`"
-msgstr ":ref:`doc_what_are_godot_classes`"
+msgstr ":ref:`doc_html5_shell_classref`"
 
-#, fuzzy
 msgid ":ref:`doc_collision_shapes_2d`"
-msgstr ":ref:`doc_visual_shaders`"
+msgstr ":ref:`doc_collision_shapes_2d`"
 
-#, fuzzy
 msgid ":ref:`doc_collision_shapes_3d`"
-msgstr ":ref:`doc_visual_shaders`"
+msgstr ":ref:`doc_collision_shapes_3d`"
 
-#, fuzzy
 msgid ":ref:`doc_shaders_style_guide`"
-msgstr ":ref:`doc_shading_language`"
+msgstr ":ref:`doc_shaders_style_guide`"
 
-#, fuzzy
 msgid ":ref:`doc_debugger_panel`"
-msgstr "GDScript :ref:`调试器 <doc_debugger_panel>`。"
+msgstr ":ref:`doc_debugger_panel`"
 
-#, fuzzy
 msgid ":ref:`doc_creating_script_templates`"
-msgstr "创建脚本模板"
+msgstr ":ref:`doc_creating_script_templates`"
 
-#, fuzzy
 msgid ":ref:`doc_evaluating_expressions`"
-msgstr "表达式估值"
+msgstr ":ref:`doc_evaluating_expressions`"
 
-#, fuzzy
 msgid ":ref:`doc_what_is_gdextension`"
-msgstr ":ref:`doc_what_are_godot_classes`"
+msgstr ":ref:`doc_what_is_gdextension`"
 
 msgid ""
 ":ref:`doc_gdscript_warning_system` (split from :ref:"
 "`doc_gdscript_static_typing`)"
 msgstr ""
+":ref:`doc_gdscript_warning_system`\\ （拆分自 :ref:"
+"`doc_gdscript_static_typing`\\ ）"
 
 msgid "User Interface (UI)"
 msgstr "用户界面（UI）"
 
-#, fuzzy
 msgid ":ref:`doc_control_node_gallery`"
-msgstr ":ref:`doc_node_alternatives`"
+msgstr ":ref:`doc_control_node_gallery`"
 
-#, fuzzy
 msgid "New pages since version 3.1"
-msgstr "自 3.1 版本以来的新教程"
+msgstr "3.1 版本加入的新页面"
 
 msgid "Project workflow"
 msgstr "项目工作流程"
 
-msgid ":ref:`doc_android_custom_build`"
+#, fuzzy
+msgid ":ref:`doc_android_gradle_build`"
 msgstr ":ref:`doc_android_custom_build`"
 
 msgid ":ref:`doc_2d_sprite_animation`"
@@ -442,7 +370,7 @@ msgid "Shading"
 msgstr "着色"
 
 msgid "Your First Shader Series:"
-msgstr "您的第一个着色器系列："
+msgstr "你的第一个着色器系列："
 
 msgid ":ref:`doc_introduction_to_shaders`"
 msgstr ":ref:`doc_introduction_to_shaders`"
@@ -501,9 +429,8 @@ msgstr ":ref:`doc_surfacetool`"
 msgid ":ref:`doc_meshdatatool`"
 msgstr ":ref:`doc_meshdatatool`"
 
-#, fuzzy
 msgid ":ref:`doc_immediatemesh`"
-msgstr ":ref:`doc_immediategeometry`"
+msgstr ":ref:`doc_immediatemesh`"
 
 msgid "Optimization"
 msgstr "优化"
@@ -520,9 +447,8 @@ msgstr "法律相关"
 msgid ":ref:`doc_complying_with_licenses`"
 msgstr ":ref:`doc_complying_with_licenses`"
 
-#, fuzzy
 msgid "New pages since version 3.0"
-msgstr "自 3.0 版本以来的新教程"
+msgstr "3.0 版本加入的新页面"
 
 msgid "Step by step"
 msgstr "渐进式教程"
@@ -635,9 +561,8 @@ msgstr ":ref:`doc_particle_shader`"
 msgid ":ref:`doc_making_main_screen_plugins`"
 msgstr ":ref:`doc_making_main_screen_plugins`"
 
-#, fuzzy
 msgid ":ref:`doc_3d_gizmo_plugins`"
-msgstr ":ref:`doc_spatial_gizmo_plugins`"
+msgstr ":ref:`doc_3d_gizmo_plugins`"
 
 msgid ":ref:`doc_customizing_html5_shell`"
 msgstr ":ref:`doc_customizing_html5_shell`"

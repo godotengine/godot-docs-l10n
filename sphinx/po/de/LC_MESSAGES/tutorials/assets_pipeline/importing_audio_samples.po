@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,9 +31,8 @@ msgstr ""
 "Godot bietet drei Optionen für den Import Ihrer Audiodaten: WAV, Ogg Vorbis "
 "und MP3."
 
-#, fuzzy
 msgid "Each format has different advantages:"
-msgstr "Jeder hat unterschiedliche Vorteile."
+msgstr "Jedes Format hat unterschiedliche Vorteile:"
 
 msgid ""
 "WAV files use raw data or light compression (IMA-ADPCM). They are "
@@ -282,8 +281,8 @@ msgstr ""
 msgid ""
 "When choosing one of the **Forward**, **Ping-Pong** or **Backward** loop "
 "modes, loop points can also be defined to make only a specific part of the "
-"sound loop. **Loop Begin** is set in seconds after the beginning of the "
-"audio file. **Loop End** is also set in seconds after the beginning of the "
+"sound loop. **Loop Begin** is set in samples after the beginning of the "
+"audio file. **Loop End** is also set in samples after the beginning of the "
 "audio file, but will use the end of the audio file if set to ``-1``."
 msgstr ""
 
@@ -310,22 +309,19 @@ msgid ""
 "playing dozens of compressed sounds at the same time on mobile/web platforms."
 msgstr ""
 
-#, fuzzy
 msgid "Import options (Ogg Vorbis and MP3)"
-msgstr "Die Importmöglichkeiten sind riesig:"
+msgstr "Importoptionen (Ogg Vorbis und MP3)"
 
-#, fuzzy
 msgid "Loop"
-msgstr "Looping (Wiederhol-Schleife)"
+msgstr "Schleife"
 
 msgid ""
 "If enabled, the audio will begin playing at the beginning after playback "
 "ends by reaching the end of the audio."
 msgstr ""
 
-#, fuzzy
 msgid "Loop Offset"
-msgstr "Versatz"
+msgstr "Schleifenversatz"
 
 msgid ""
 "The loop offset determines where audio will start to loop after playback "
@@ -378,9 +374,8 @@ msgid ""
 "you preview your changes without having to reimport the audio."
 msgstr ""
 
-#, fuzzy
 msgid "Bar Beats"
-msgstr "Vorsichtsmaßnahmen"
+msgstr "Takt-Beats"
 
 msgid ""
 "The number of bars within a single beat in the audio track. This is only "
@@ -403,13 +398,12 @@ msgid ""
 "choose **Advanced…** in the Import dock), you will see a dialog appear:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Advanced dialog when double-clicking a Ogg Vorbis or MP3 file in the "
 "FileSystem dock"
 msgstr ""
-"Alternativ können Sie die Datei ``Main.gd`` in dem *Datensystem* Panel "
-"doppelt anklicken."
+"Erweiterter Dialog beim Doppelklick auf eine Ogg Vorbis- oder MP3-Datei im "
+"FileSystem-Dock"
 
 msgid ""
 "This dialog allows you to edit the audio's loop point with a real-time "
@@ -426,7 +420,7 @@ msgid ""
 msgstr ""
 
 msgid "Best practices"
-msgstr "Best Practices"
+msgstr "Bewährte Praktiken"
 
 #, fuzzy
 msgid "Use appropriate quality settings"
@@ -475,17 +469,15 @@ msgstr ""
 msgid "Use real-time audio effects to reduce file size"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
 "effects. This saves SFX artists the need to add reverb to the sound effects, "
 "reducing their size greatly and ensuring correct trimming."
 msgstr ""
 "Godot hat ein :ref:`umfangreiches Bussystem <doc_audio_buses>` mit "
-"eingebauten Effekten. Dies erspart Spezialeffekt-Künstlern das Hinzufügen "
-"von Hall (Reverb) zu den Soundeffekten, wodurch deren Größe stark reduziert "
-"und ein korrektes Trimmen gewährleistet wird. Sagen Sie nein zu "
-"Spezialeffekten mit gebranntem Hall!"
+"eingebauten Effekten. Dies erspart den Spezialeffekt(SFX)-Künstlern das "
+"Hinzufügen von Hall(Reverb) zu den Soundeffekten, reduziert deren Größe "
+"erheblich und gewährleistet ein korrektes Trimming."
 
 #, fuzzy
 msgid ""
@@ -494,6 +486,12 @@ msgid ""
 msgstr ""
 "Wie Sie oben sehen können, werden die Soundeffekte mit hinzugefügtem Hall "
 "riesig."
+
+msgid ""
+"Audio samples can be loaded and saved at runtime using :ref:`runtime file "
+"loading and saving <doc_runtime_file_loading_and_saving_audio_video_files>`, "
+"including from an exported project."
+msgstr ""
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -60,8 +60,8 @@ msgid ""
 "To use the animation tools we first have to create an :ref:"
 "`class_AnimationPlayer` node."
 msgstr ""
-"Um die Werkzeuge zur Animation zu verwenden, benötigen wir zunächst einen :"
-"ref:`class_AnimationPlayer`-Node."
+"Um die Tools zur Animation zu verwenden, benötigen wir zunächst einen :ref:"
+"`class_AnimationPlayer`-Node."
 
 #, fuzzy
 msgid ""
@@ -227,9 +227,8 @@ msgstr ""
 "Stellen Sie die Animationslänge auf ``0.6`` ein und klicken Sie auf die "
 "Schaltfläche \"Loop\", damit sich unsere Animation wiederholt."
 
-#, fuzzy
 msgid "Add Animation"
-msgstr "Animation"
+msgstr "Animation hinzufügen"
 
 msgid "Add a new animation"
 msgstr "Fügen Sie eine neue Animation hinzu"
@@ -261,25 +260,23 @@ msgstr "Fügen Sie eine neue Animation hinzu"
 msgid "Adding a track"
 msgstr "Hinzufügen einer Spur"
 
-#, fuzzy
 msgid ""
 "To add a new track for our sprite, select it and take a look at the toolbar:"
 msgstr ""
 "Um eine neue Spur für unser Sprite hinzuzufügen, wählen Sie sie aus und "
-"sehen Sie in der Symbolleiste nach:"
+"sehen Sie in der Toolbar nach:"
 
 msgid "Convenience buttons"
-msgstr "Komfortable Schaltflächen"
+msgstr "Komfortable Buttons"
 
-#, fuzzy
 msgid ""
 "These switches and buttons allow you to add keyframes for the selected "
 "node's location, rotation, and scale. Since we are only animating the "
 "sprite's position, make sure that only the location switch is selected. The "
 "selected switches are blue."
 msgstr ""
-"Mit diesen Schaltern und Schaltflächen können Sie Keyframes für die "
-"Position, Rotation und Skalierung des ausgewählten Nodes hinzufügen."
+"Mit diesen Schaltern und Buttons können Sie Keyframes für die Position, "
+"Rotation und Skalierung des ausgewählten Nodes hinzufügen."
 
 #, fuzzy
 msgid ""
@@ -346,8 +343,8 @@ msgstr "Die Animation starten"
 
 msgid "Click on the \"Play from beginning\" (|Play from beginning|) button."
 msgstr ""
-"Klicken Sie auf die Schaltfläche \"Von Anfang an spielen\" (|Von Anfang an "
-"spielen|)."
+"Klicken Sie auf die Schaltfläche \"Von Anfang an spielen\" (|Play from "
+"beginning|)."
 
 msgid "Yay! Our animation runs:"
 msgstr "JA! Unsere Animation läuft:"
@@ -401,13 +398,11 @@ msgstr ""
 "Der Aktualisierungsmodus einer Spur teilt Godot mit, wann die "
 "Eigenschaftswerte aktualisiert werden sollen. Dies kann sein:"
 
-#, fuzzy
 msgid "**Continuous:** Update the property on each frame"
-msgstr "**Fortlaufend:** Aktualisiert die Eigenschaft für jeden Frame."
+msgstr "**Kontinuierlich:** Aktualisieren Sie die Eigenschaft bei jedem Bild"
 
-#, fuzzy
 msgid "**Discrete:** Only update the property on keyframes"
-msgstr "**Diskret:** Aktualisiert die Eigenschaft nur für Keyframes."
+msgstr "**Diskret:** Aktualisieren Sie die Eigenschaft nur bei Keyframes"
 
 msgid ""
 "**Capture:** if the first keyframe's time is greater than ``0.0``, the "
@@ -548,12 +543,11 @@ msgstr ""
 "ziehen. Dies teilt Godot mit, wie die Eigenschaftswerte geändert werden "
 "sollen, wenn dieser Keyframe erreicht wird."
 
-#, fuzzy
 msgid ""
 "You can tweak your animations this way until the movement \"looks right.\""
 msgstr ""
-"Normalerweise optimieren Sie Ihre Animationen auf diese Weise, wenn die "
-"Bewegung nicht \"richtig aussieht\"."
+"Sie können Ihre Animationen auf diese Weise optimieren, bis die Bewegung "
+"\"richtig\" aussieht."
 
 #, fuzzy
 msgid "Using RESET tracks"

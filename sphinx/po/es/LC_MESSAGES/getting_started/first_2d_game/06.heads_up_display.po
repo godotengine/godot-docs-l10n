@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,10 +28,12 @@ msgstr ""
 "para mostrar elementos como la puntuación, un mensaje de \"game over\" y un "
 "botón de reinicio."
 
+#, fuzzy
 msgid ""
-"Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node "
-"named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational "
-"display that appears as an overlay on top of the game view."
+"Create a new scene, click the \"Other Node\" button and add a :ref:"
+"`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for "
+"\"heads-up display\", an informational display that appears as an overlay on "
+"top of the game view."
 msgstr ""
 "Crea una nueva escena y añade un nodo :ref:`CanvasLayer <class_CanvasLayer>` "
 "llamado ``HUD``. \"HUD\" son las siglas de \"heads-up display\", una "
@@ -107,6 +109,9 @@ msgid ""
 "Overrides > Font Sizes\". Once you've done this with the ``ScoreLabel``, "
 "repeat the changes for the ``Message`` and ``StartButton`` nodes."
 msgstr ""
+"El tamaño de la fuente aun es demasiado pequeño, increméntalo a ``64`` en "
+"\"Theme Overrides > Font Sizes\". Una vez lo hayas hecho con ``ScoreLabel``, "
+"hazlo también para ``Message`` y ``StartButton``."
 
 #, fuzzy
 msgid ""
@@ -121,19 +126,18 @@ msgstr ""
 "Control. Representan la distancia del borde al ancla del nodo Control. Para "
 "más detalles, ver :ref:`doc_design_interfaces_with_the_control_nodes`."
 
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. You can drag the nodes to place them "
 "manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr ""
-"Puedes arrastrar y ubicarlos manualmente o, para un modo más preciso, usa la "
-"siguiente configuración:"
+"Acomoda los nodos como se muestra debajo. Puedes arrastrar y ubicarlos "
+"manualmente o, para un modo más preciso, utiliza \"Anchor Presets\"."
 
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
 
 msgid "Add the text ``0``."
-msgstr ""
+msgstr "Añade el texto ``0``."
 
 msgid ""
 "Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
@@ -146,8 +150,8 @@ msgid "Message"
 msgstr "Message"
 
 #, fuzzy
-msgid "Add the text ``Dodge the creeps!``."
-msgstr "*Text* : ``Dodge the Creeps!``"
+msgid "Add the text ``Dodge the Creeps!``."
+msgstr "Agrega el texto ``Dodge the Creeps!``."
 
 msgid ""
 "Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
@@ -165,9 +169,8 @@ msgstr ""
 msgid "StartButton"
 msgstr "StartButton"
 
-#, fuzzy
 msgid "Add the text ``Start``."
-msgstr "*Text* : ``Start``"
+msgstr "Agrega el texto ``Start``."
 
 msgid ""
 "Under \"Control - Layout/Transform\", set \"Size X\" to ``200`` and \"Size "
@@ -190,13 +193,12 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr "Ahora agrega este script a ``HUD``:"
 
-#, fuzzy
 msgid ""
 "We now want to display a message temporarily, such as \"Get Ready\", so we "
 "add the following code"
 msgstr ""
-"Esta función se llamará cuando queramos mostrar un mensaje temporalmente, "
-"como \"Get Ready\"."
+"Ahora queremos mostrar un mensaje temporalmente, como ej. \"Get "
+"Ready\" (Prepárate), así que agregaremos el siguiente código"
 
 #, fuzzy
 msgid ""
@@ -272,12 +274,6 @@ msgstr ""
 "del receptor\" en la ventana \"Conectar una señal\". Verifique que el icono "
 "de conexión verde ahora aparezca junto a `` func new_game () `` en el script."
 
-#, fuzzy
-msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
-msgstr ""
-"Cuando estés seguro de que todo funciona, quita la llamada a ``new_game()`` "
-"de ``ready()``."
-
 msgid ""
 "In ``new_game()``, update the score display and show the \"Get Ready\" "
 "message:"
@@ -289,11 +285,6 @@ msgstr ""
 "En ``game_over()`` necesitaremos llamar la función correspondiente en "
 "``HUD``:"
 
-msgid ""
-"Just a reminder: we don't want to start the new game automatically, so "
-"remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
-msgstr ""
-
 #, fuzzy
 msgid ""
 "Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
@@ -301,6 +292,14 @@ msgid ""
 msgstr ""
 "Finalmente, agrega ``_on_ScoreTimer_timeout()`` para mantener la interfaz en "
 "sincronía al cambiar la puntuación:"
+
+#, fuzzy
+msgid ""
+"Remember to remove the call to ``new_game()`` from ``_ready()`` if you "
+"haven't already, otherwise your game will start automatically."
+msgstr ""
+"Cuando estés seguro de que todo funciona, quita la llamada a ``new_game()`` "
+"de ``ready()``."
 
 #, fuzzy
 msgid ""

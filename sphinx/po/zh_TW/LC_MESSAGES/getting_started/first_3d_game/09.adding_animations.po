@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,19 +25,18 @@ msgid ""
 "characters float and flap. You'll learn to design animations in the editor "
 "and use code to make your game feel alive."
 msgstr ""
+"這是最後一課，我們會使用 Godot 的內建動畫工具製作角色的浮動和拍打動畫。你會學"
+"到如何在編輯器中設計動畫，以及如何使用程式碼讓遊戲變得活靈活現。"
 
 msgid "|image0|"
 msgstr "\\ |image0|"
 
-#, fuzzy
 msgid "image0"
-msgstr "\\ |image0|"
+msgstr "image0"
 
-#, fuzzy
 msgid "We'll start with an introduction to using the animation editor."
 msgstr "建置系統簡介"
 
-#, fuzzy
 msgid "Using the animation editor"
 msgstr "執行編輯器"
 
@@ -45,127 +44,126 @@ msgid ""
 "The engine comes with tools to author animations in the editor. You can then "
 "use the code to play and control them at runtime."
 msgstr ""
+"該引擎自帶的工具可以在編輯器中編寫動畫。然後你可以在運作時使用程式碼來播放和"
+"控制它們。"
 
 msgid ""
 "Open the player scene, select the ``Player`` node, and add an :ref:"
 "`AnimationPlayer <class_AnimationPlayer>` node."
 msgstr ""
+"打開玩家場景，選中 ``Player`` 節點，然後新增一個 :ref:`AnimationPlayer "
+"<class_AnimationPlayer>` 節點。"
 
 msgid "The *Animation* dock appears in the bottom panel."
-msgstr ""
+msgstr "*動畫*停靠面板就會出現在底部面板中。"
 
 msgid "|image1|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "\\ |image1|"
+msgstr "image1"
 
 msgid ""
 "It features a toolbar and the animation drop-down menu at the top, a track "
 "editor in the middle that's currently empty, and filter, snap, and zoom "
 "options at the bottom."
 msgstr ""
+"它的特點是頂部有一個工具列和動畫下拉式功能表，中間有一個軌道編輯器，目前是空"
+"的，底部有篩選、捕捉和縮放選項。"
 
 msgid "Let's create an animation. Click on *Animation -> New*."
-msgstr ""
+msgstr "讓我們來建立一個動畫。請點擊*動畫 -> 新建*。"
 
 msgid "|image2|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "\\ |image2|"
+msgstr "image2"
 
-#, fuzzy
 msgid "Name the animation \"float\"."
 msgstr "建立動畫"
 
 msgid "|image3|"
 msgstr "\\ |image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "\\ |image3|"
+msgstr "image3"
 
 msgid ""
 "Once you've created the animation, the timeline appears with numbers "
 "representing time in seconds."
-msgstr ""
+msgstr "建立完動畫後，就會出現一條時間線，上面的數位代表時間，單位為秒。"
 
 msgid "|image4|"
 msgstr "\\ |image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "\\ |image4|"
+msgstr "image4"
 
 msgid ""
 "We want the animation to start playback automatically at the start of the "
 "game. Also, it should loop."
-msgstr ""
+msgstr "我們希望讓這個動畫在遊戲開始時自動開始播放，而且還應該迴圈播放。"
 
 msgid ""
 "To do so, you can click the button with an \"A+\" icon in the animation "
 "toolbar and the looping arrows, respectively."
-msgstr ""
+msgstr "要實作這個需求，可以按一下動畫工具列上對應的“A+”圖示和迴圈箭頭。"
 
 msgid "|image5|"
 msgstr "\\ |image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "\\ |image5|"
+msgstr "image5"
 
 msgid ""
 "You can also pin the animation editor by clicking the pin icon in the top-"
 "right. This prevents it from folding when you click on the viewport and "
 "deselect the nodes."
 msgstr ""
+"你還可以按一下右上角的圖釘圖示，將動畫編輯器進行固定。這樣它就不會在你點擊視"
+"口取消選擇節點時折疊。"
 
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "\\ |image1|"
+msgstr "image6"
 
 msgid ""
 "Set the animation duration to ``1.2`` seconds in the top-right of the dock."
-msgstr ""
+msgstr "在面板右上角將動畫的時長設為 ``1.2`` 秒。"
 
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "\\ |image1|"
+msgstr "image7"
 
 msgid ""
 "You should see the gray ribbon widen a bit. It shows you the start and end "
 "of your animation and the vertical blue line is your time cursor."
 msgstr ""
+"您應該看到灰色帶子變寬了一點。它顯示動畫的開始和結束，垂直藍線是您的時間游"
+"標。"
 
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "\\ |image1|"
+msgstr "image8"
 
 msgid ""
 "You can click and drag the slider in the bottom-right to zoom in and out of "
 "the timeline."
-msgstr ""
+msgstr "按一下並拖拽右下角的滑動條，即可將時間線進行縮放。"
 
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "\\ |image1|"
+msgstr "image9"
 
-#, fuzzy
 msgid "The float animation"
 msgstr "光照動畫"
 
@@ -176,83 +174,91 @@ msgid ""
 "value pair for the corresponding property. The keyframe gets inserted where "
 "your time cursor is in the timeline."
 msgstr ""
+"使用動畫播放機節點，你可以對所需任意數量的節點的大多數屬性做動畫。請注意*屬性"
+"面板*中屬性旁的鑰匙圖示。在上面按一下就可以建立一個關鍵影格，即對應屬性的一對"
+"時間與值。關鍵影格會被插入到時間線上的時間游標處。"
 
 msgid ""
 "Let's insert our first keys. Here, we will animate both the position and the "
 "rotation of the ``Character`` node."
 msgstr ""
+"讓我們來開始插入關鍵影格吧。這裡，我們要為 ``Character`` 節點的平移"
+"（translation）和旋轉（rotation）做動畫。"
 
 msgid ""
 "Select the ``Character`` and in the *Inspector* expand the *Transform* "
 "section. Click the key icon next to *Position*, and *Rotation*."
 msgstr ""
+"選中 ``Character`` 並在*屬性面板*中展開 *Transform* 欄。按一下 *Position* 和 "
+"*Rotation* 旁的鑰匙圖示。"
 
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "\\ |image1|"
+msgstr "image10"
 
 msgid ""
 "For this tutorial, just create RESET Track(s) which is the default choice"
-msgstr ""
+msgstr "對於本教學，我們只建立預設選擇 RESET（重設）軌道"
 
 msgid ""
 "Two tracks appear in the editor with a diamond icon representing each "
 "keyframe."
-msgstr ""
+msgstr "編輯器中會出現兩個軌道，各有一個代表關鍵影格的菱形圖示。"
 
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
+
+msgid "image11"
+msgstr "image11"
 
 #, fuzzy
-msgid "image11"
-msgstr "\\ |image1|"
-
 msgid ""
 "You can click and drag on the diamonds to move them in time. Move the "
-"position key to ``0.2`` seconds and the rotation key to ``0.1`` seconds."
+"position key to ``0.3`` seconds and the rotation key to ``0.1`` seconds."
 msgstr ""
+"按一下並拖動這些菱形就可以改變它們的時間。將平移（translation）關鍵影格移動"
+"到 ``0.2`` 秒的位置，將旋轉（rotation）關鍵影格移動到 ``0.1`` 秒的位置。"
 
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "\\ |image1|"
+msgstr "image12"
 
 msgid ""
 "Move the time cursor to ``0.5`` seconds by clicking and dragging on the gray "
 "timeline."
-msgstr ""
+msgstr "在灰色的時間線上按一下並拖拽，將時間游標移動至 ``0.5`` 秒位置。"
 
 msgid ""
 "In the *Inspector*, set the *Position*'s *Y* axis to ``0.65`` meters and the "
 "*Rotation*' *X* axis to ``8``."
 msgstr ""
+"按一下灰色的時間線並拖動，將時間游標移動到 ``0.5`` 秒的位置。在*屬性面板*中"
+"將 *Translation* 的 *Y* 軸設為約 ``0.65`` 米，將 *Rotation Degrees* 的 *X* 軸"
+"設為 ``8``。"
 
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "\\ |image1|"
+msgstr "image13"
 
 msgid "Create a keyframe for both properties"
-msgstr ""
+msgstr "為這兩個屬性分別建立一個關鍵影格"
 
 msgid ""
 "Now, move the position keyframe to ``0.7`` seconds by dragging it on the "
 "timeline."
-msgstr ""
+msgstr "現在開始在時間線上拖動，將平移的關鍵影格移動到 ``0.7`` 秒。"
 
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "\\ |image1|"
+msgstr "image14"
 
 msgid ""
 "A lecture on the principles of animation is beyond the scope of this "
@@ -261,25 +267,30 @@ msgid ""
 "principles. You want to offset and contrast in your character's motion to "
 "make them feel alive."
 msgstr ""
+"關於動畫原理的講解已經超出了本教學的範圍。請注意，您不想均勻地分配時間和空"
+"間。取而代之的是，動畫師使用時間和間隔，這兩個核心動畫原則。您希望讓它們存在"
+"一定的偏移，在角色的運動中產生對比，以使他們感覺生動。"
 
 msgid ""
 "Move the time cursor to the end of the animation, at ``1.2`` seconds. Set "
 "the Y position to about ``0.35`` and the X rotation to ``-9`` degrees. Once "
 "again, create a key for both properties."
 msgstr ""
+"將時間游標移動到動畫結尾，即 ``1.2`` 秒。將 Y 平移量設為約 ``0.35``、X 旋轉量"
+"設為 ``-9`` 度。再次為這兩個屬性新增關鍵影格。"
 
 msgid ""
 "You can preview the result by clicking the play button or pressing :kbd:"
 "`Shift + D`. Click the stop button or press :kbd:`S` to stop playback."
 msgstr ""
+"按一下播放按鈕或者按 :kbd:`Shift + D` 即可預覽結果。按一下停止按鈕或者按 :"
+"kbd:`S` 即可停止播放。"
 
-#, fuzzy
 msgid "|image15|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image15"
-msgstr "\\ |image1|"
+msgstr "image15"
 
 msgid ""
 "You can see that the engine interpolates between your keyframes to produce a "
@@ -287,88 +298,82 @@ msgid ""
 "This is because the default interpolation is linear, causing constant "
 "transitions, unlike how living things move in the real world."
 msgstr ""
+"您可以看到引擎在關鍵影格之間插值以生成連續動畫。不過目前，這個動作感覺非常機"
+"器人化。這是因為預設插值是線性的，導致持續的過渡，這與現實世界中生物的移動方"
+"式不同。"
 
 msgid "We can control the transition between keyframes using easing curves."
-msgstr ""
+msgstr "我們可以使用緩動曲線來控制關鍵影格之間的過渡。"
 
 msgid ""
 "Click and drag around the first two keys in the timeline to box select them."
-msgstr ""
+msgstr "按一下並拖拽，框選時間線上的前兩個關鍵影格。"
 
-#, fuzzy
 msgid "|image16|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image16"
-msgstr "\\ |image1|"
+msgstr "image16"
 
 msgid ""
 "You can edit the properties of both keys simultaneously in the *Inspector*, "
 "where you can see an *Easing* property."
 msgstr ""
+"可以在*屬性面板*中同時編輯這兩個關鍵影格的屬性，其中就有一個屬性叫做 *Easing*"
+"（緩動）。"
 
-#, fuzzy
 msgid "|image17|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image17"
-msgstr "\\ |image1|"
+msgstr "image17"
 
 msgid ""
 "Click and drag on the curve, pulling it towards the left. This will make it "
 "ease-out, that is to say, transition fast initially and slow down as the "
 "time cursor reaches the next keyframe."
 msgstr ""
+"按一下並拖動曲線，把它往左拉。這樣就會讓他實作緩出，也就是說，一開始變得快，"
+"然後時間游標越接近下一個關鍵影格就變得越慢。"
 
-#, fuzzy
 msgid "|image18|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image18"
-msgstr "\\ |image1|"
+msgstr "image18"
 
 msgid ""
 "Play the animation again to see the difference. The first half should "
 "already feel a bit bouncier."
-msgstr ""
+msgstr "再次播放動畫以查看差異。前半部分應該已經感覺有點彈性了。"
 
 msgid "Apply an ease-out to the second keyframe in the rotation track."
-msgstr ""
+msgstr "將緩動效果應用於旋轉軌跡中的第二個關鍵影格。"
 
-#, fuzzy
 msgid "|image19|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image19"
-msgstr "\\ |image1|"
+msgstr "image19"
 
 msgid ""
 "Do the opposite for the second position keyframe, dragging it to the right."
-msgstr ""
+msgstr "對第二個平移關鍵影格執行相反操作，將其拖動到右側。"
 
-#, fuzzy
 msgid "|image20|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image20"
-msgstr "\\ |image2|"
+msgstr "image20"
 
-#, fuzzy
 msgid "Your animation should look something like this."
 msgstr "最後場景應該長這樣。"
 
-#, fuzzy
 msgid "|image21|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image21"
-msgstr "\\ |image2|"
+msgstr "image21"
 
 msgid ""
 "Animations update the properties of the animated nodes every frame, "
@@ -377,55 +382,61 @@ msgid ""
 "comes in handy: even though we animated the *Character*, we can still move "
 "and rotate the *Pivot* and layer changes on top of the animation in a script."
 msgstr ""
+"每一影格，動畫都會去更新被動畫的節點的屬性，覆蓋掉初始值。如果我們直接對 "
+"*Player* 節點做動畫，就沒法使用程式碼來移動它了。這就是 *Pivot* 節點的用處："
+"儘管我們為 *Character* 做了動畫，我們還是可以在此動畫之上，再通過程式碼來移動"
+"並旋轉 *Pivot*。"
 
 msgid "If you play the game, the player's creature will now float!"
-msgstr ""
+msgstr "如果你運作遊戲，玩家的生物就會漂浮起來！"
 
 msgid ""
 "If the creature is a little too close to the floor, you can move the "
 "``Pivot`` up to offset it."
 msgstr ""
+"如果這個生物離地面太近了，你可以將 ``Pivot`` 向上移動，達成偏移的目的。"
 
-#, fuzzy
 msgid "Controlling the animation in code"
-msgstr "創建內容"
+msgstr "建立內容"
 
 msgid ""
 "We can use code to control the animation playback based on the player's "
 "input. Let's change the animation speed when the character is moving."
 msgstr ""
+"我們可以使用程式碼來根據玩家的輸入控制動畫的播放。讓我們在角色移動時修改動畫"
+"的速度吧。"
 
 msgid "Open the ``Player``'s script by clicking the script icon next to it."
-msgstr ""
+msgstr "點擊 *Player* 旁的腳本圖示打開其腳本。"
 
-#, fuzzy
 msgid "|image22|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image22"
-msgstr "\\ |image2|"
+msgstr "image22"
 
 msgid ""
 "In ``_physics_process()``, after the line where we check the ``direction`` "
 "vector, add the following code."
 msgstr ""
+"在 ``_physics_process()`` 中檢查 ``direction`` 向量的那一行之後新增如下程式"
+"碼。"
 
 msgid ""
 "This code makes it so when the player moves, we multiply the playback speed "
 "by ``4``. When they stop, we reset it to normal."
 msgstr ""
+"這段程式碼的作用是讓玩家在移動時將播放速度乘以 ``4``。在停止移動時將其恢復原"
+"狀。"
 
-#, fuzzy
 msgid ""
 "We mentioned that the ``Pivot`` could layer transforms on top of the "
 "animation. We can make the character arc when jumping using the following "
 "line of code. Add it at the end of ``_physics_process()``."
 msgstr ""
 "我們提到樞紐(Pivot)可以在動畫之上疊加變換(transforms)。我們可以用下面這行程式"
-"碼使角色在跳躍時產生弧線。將其添加到 ``_physics_process()`` 的最後。"
+"碼使角色在跳躍時產生弧線。將其新增到 ``_physics_process()`` 的最後。"
 
-#, fuzzy
 msgid "Animating the mobs"
 msgstr "動畫"
 
@@ -433,11 +444,15 @@ msgid ""
 "Here's another nice trick with animations in Godot: as long as you use a "
 "similar node structure, you can copy them to different scenes."
 msgstr ""
+"在 Godot 中還有一個很好的動畫技巧：只要你使用類似的節點結構，你就可以把它們複"
+"製到不同的場景中。"
 
 msgid ""
 "For example, both the ``Mob`` and the ``Player`` scenes have a ``Pivot`` and "
 "a ``Character`` node, so we can reuse animations between them."
 msgstr ""
+"例如，*Mob* 和 *Player* 場景都有 *Pivot* 和 *Character* 節點，所以我們可以在"
+"它們之間複用動畫。"
 
 msgid ""
 "Open the *Player* scene, select the AnimationPlayer node and open the "
@@ -448,31 +463,37 @@ msgid ""
 "turned on in the animation editor in the bottom panel. That's it; all "
 "monsters will now play the float animation."
 msgstr ""
+"打開 *Player* 場景，選中動畫播放機節點，打開浮動動畫。然後點擊*動畫 -> 複製"
+"*。然後打開 ``Mob.tscn`` 並打開其中的動畫播放機。點擊*動畫 -> 貼上*。這樣就行"
+"了；所有的怪物現在就都能播放浮動動畫了。"
 
 msgid ""
 "We can change the playback speed based on the creature's ``random_speed``. "
 "Open the *Mob*'s script and at the end of the ``initialize()`` function, add "
 "the following line."
 msgstr ""
+"我們可以根據生物的 ``random_speed`` 來更改播放速度。打開 *Mob* 的腳本，在 "
+"``initialize()`` 函式的末尾新增下面這行程式碼。"
 
 msgid "And with that, you finished coding your first complete 3D game."
-msgstr ""
+msgstr "這樣，你就完成了你第一個完整 3D 遊戲的編碼。"
 
-#, fuzzy
 msgid "**Congratulations**!"
-msgstr "**通用選項**"
+msgstr "**恭喜**！"
 
 msgid ""
 "In the next part, we'll quickly recap what you learned and give you some "
 "links to keep learning more. But for now, here are the complete ``Player."
 "gd`` and ``Mob.gd`` so you can check your code against them."
 msgstr ""
+"在下一部分，我們將快速複習已學到的內容，並為你提供一些繼續學習的連結。不過現"
+"在，這裡是完整的 ``Player.gd`` 和 ``Mob.gd``，你可以用它們來校對你的程式碼。"
 
 msgid "Here's the *Player* script."
-msgstr ""
+msgstr "這是 *Player* 腳本。"
 
 msgid "And the *Mob*'s script."
-msgstr ""
+msgstr "這是 *Mob* 的腳本。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

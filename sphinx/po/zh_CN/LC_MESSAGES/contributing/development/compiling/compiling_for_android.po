@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,9 +53,8 @@ msgstr "需求"
 msgid "For compiling under Windows, Linux or macOS, the following is required:"
 msgstr "要在Windows, Linux或macOS下进行编译, 需要以下内容:"
 
-#, fuzzy
 msgid "`Python 3.6+ <https://www.python.org/downloads/>`_."
-msgstr "`Python 3.5+ <https://www.python.org/downloads/>`_."
+msgstr "`Python 3.6+ <https://www.python.org/downloads/>`_."
 
 msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`_ build system."
 msgstr "`SCons 3.0+ <https://scons.org/pages/download.html>`_ 构建系统."
@@ -70,9 +69,8 @@ msgstr ""
 msgid "Required SDK components will be automatically installed."
 msgstr "所需的 SDK 组件将被自动安装。"
 
-#, fuzzy
 msgid "On Linux,"
-msgstr "在Linux上:"
+msgstr "在Linux上，"
 
 #, fuzzy
 msgid ""
@@ -85,12 +83,14 @@ msgstr ""
 msgid "Gradle (will be downloaded and installed automatically if missing)."
 msgstr "Gradle（如果缺少，将自动下载并安装）。"
 
-msgid "JDK 11 (either OpenJDK or Oracle JDK)."
+#, fuzzy
+msgid "JDK 17 (either OpenJDK or Oracle JDK)."
 msgstr "JDK 11（OpenJDK 或 Oracle JDK）。"
 
+#, fuzzy
 msgid ""
-"You can download a build from `ojdkbuild <https://github.com/ojdkbuild/"
-"ojdkbuild>`_."
+"You can download a build from `ojdkbuild <https://adoptium.net/temurin/"
+"releases/?variant=openjdk17>`_."
 msgstr ""
 "您可以从 `ojdkbuild <https://github.com/ojdkbuild/ojdkbuild>`_ 下载一个版本."
 
@@ -108,10 +108,11 @@ msgstr ""
 msgid "Setting up the buildsystem"
 msgstr "设置构建系统"
 
+#, fuzzy
 msgid ""
-"Set the environment variable ``ANDROID_SDK_ROOT`` to point to the Android "
-"SDK. If you downloaded the Android command-line tools, this would be the "
-"folder where you extracted the contents of the ZIP archive."
+"Set the environment variable ``ANDROID_HOME`` to point to the Android SDK. "
+"If you downloaded the Android command-line tools, this would be the folder "
+"where you extracted the contents of the ZIP archive."
 msgstr ""
 "设置环境变量 ``ANDROID_SDK_ROOT`` 指向 Android SDK. 如果你下载了Android命令行"
 "工具, 这将是您提取ZIP存档内容的文件夹."
@@ -141,10 +142,11 @@ msgstr ""
 "然后在左侧窗格中点击 **Advanced system settings** , 然后在出现的窗口中点击 "
 "**Environment** ."
 
+#, fuzzy
 msgid ""
 "To set the environment variable on Linux or macOS, use ``export "
-"ANDROID_SDK_ROOT=/path/to/android-sdk`` where ``/path/to/android-sdk`` "
-"points to the root of the SDK directories."
+"ANDROID_HOME=/path/to/android-sdk`` where ``/path/to/android-sdk`` points to "
+"the root of the SDK directories."
 msgstr ""
 "要在Linux或macOS上设置环境变量, 使用 ``export ANDROID_SDK_ROOT=/path/to/"
 "android-sdk`` , 其中 ``/path/to/android-sdk`` 指向SDK目录的根目录."
@@ -253,12 +255,12 @@ msgstr "Windows: ``%APPDATA%\\Godot\\templates\\<version>\\``"
 msgid "Linux: ``$HOME/.local/share/godot/export_templates/<version>/``"
 msgstr "Linux: ``$HOME/.local/share/godot/templates/<version>/``"
 
-#, fuzzy
 msgid ""
 "macOS: ``$HOME/Library/Application Support/Godot/export_templates/<version>/"
 "``"
 msgstr ""
-"macOS: ``$HOME/Library/Application Support/Godot/templates/<version>/``"
+"macOS: ``$HOME/Library/Application Support/Godot/export_templates/<version>/"
+"``"
 
 msgid ""
 "``<version>`` is of the form ``major.minor[.patch].status`` using values "
@@ -285,9 +287,8 @@ msgstr ""
 "你甚至不需要复制它们, 只需引用在Godot源文件夹的 ``bin\\`` 目录中生成的文件, "
 "因此下次构建时, 将自动引用自定义模板."
 
-#, fuzzy
 msgid "Building the Godot editor"
-msgstr "构建编辑器"
+msgstr "构建 Godot 编辑器"
 
 #, fuzzy
 msgid ""
@@ -296,21 +297,20 @@ msgid ""
 msgstr "编译标准导出模板的方法是在Godot根目录下调用SCons, 参数如下:"
 
 #, fuzzy
-msgid "The resulting APK will be located at ``bin/android_editor.apk``."
-msgstr "生成的APK将位于 ``bin/android_debug.apk``."
+msgid ""
+"The resulting APK will be located at ``bin/android_editor_builds/"
+"android_editor-release.apk``."
+msgstr "生成的APK将位于 ``bin/android_release.apk``."
 
-#, fuzzy
 msgid "Removing the Editor templates"
-msgstr "使用导出模板"
+msgstr "移除编辑器模板"
 
-#, fuzzy
 msgid ""
 "You can use the following commands to remove the generated editor templates:"
-msgstr "您可以使用以下命令删除生成的导出模板:"
+msgstr "你可以使用以下命令移除生成的编辑器模板："
 
-#, fuzzy
 msgid "Installing the Godot editor"
-msgstr "安装模板"
+msgstr "安装 Godot 编辑器"
 
 msgid ""
 "With an Android device with Developer Options enabled, connect the Android "
@@ -325,10 +325,11 @@ msgstr "故障排除"
 msgid "Platform doesn't appear in SCons"
 msgstr "平台未在 SCons 中出现"
 
+#, fuzzy
 msgid ""
-"Double-check that you've set the ``ANDROID_SDK_ROOT`` environment variable. "
-"This is required for the platform to appear in SCons' list of detected "
-"platforms. See :ref:`Setting up the buildsystem "
+"Double-check that you've set the ``ANDROID_HOME`` environment variable. This "
+"is required for the platform to appear in SCons' list of detected platforms. "
+"See :ref:`Setting up the buildsystem "
 "<doc_android_setting_up_the_buildsystem>` for more information."
 msgstr ""
 "仔细检查你是否已经设置了 ``ANDROID_SDK_ROOT`` 环境变量. 这是使平台出现在SCons"

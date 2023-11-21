@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,20 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Validation layers"
-msgstr "AnimationPlayer"
+msgstr "Validations-Ebenen"
 
 msgid ""
 "Validation layers enable developers to verify their application's correct "
 "use of the Vulkan API. Validation layers can be enabled in both debug and "
 "release builds, including in exported projects."
 msgstr ""
+"Validierungsebenen ermöglichen es Entwicklern, die korrekte Verwendung der "
+"Vulkan-API durch ihre Anwendung zu überprüfen. Validierungsebenen können "
+"sowohl in Debug- als auch in Release-Builds aktiviert werden, auch in "
+"exportierten Projekten."
 
 msgid ""
 "Enabling validation layers has a performance impact, so only enable them "
 "when you actually need the output to debug the application."
 msgstr ""
+"Die Aktivierung von Validierungsebenen wirkt sich auf die Leistung aus. "
+"Aktivieren Sie sie daher nur, wenn Sie die Ausgabe tatsächlich zum Debuggen "
+"der Anwendung benötigen."
 
 msgid "Windows"
 msgstr "Windows"
@@ -42,6 +48,12 @@ msgid ""
 "SDK suffices. You don't need to reboot after installing the SDK, but you may "
 "need to close and reopen your current terminal."
 msgstr ""
+"Installieren Sie das Vulkan SDK `<https://vulkan.lunarg.com/sdk/home>`__, "
+"das als Teil seiner Standardinstallation Validierungsebenen enthält. Sie "
+"brauchen keine optionalen Funktionen im Installationsprogramm zu aktivieren; "
+"die Installation des Vulkan-SDK-Kerns reicht aus. Sie müssen nach der "
+"Installation des SDKs nicht neu starten, aber Sie müssen möglicherweise Ihr "
+"aktuelles Terminal schließen und wieder öffnen."
 
 msgid ""
 "After installing the Vulkan SDK, run Godot with the ``--gpu-validation`` :"
@@ -50,6 +62,11 @@ msgid ""
 "error happens. This can prevent your system from freezing if a validation "
 "error occurs."
 msgstr ""
+"Nachdem Sie das Vulkan SDK installiert haben, starten Sie Godot mit dem ``--"
+"gpu-validation`` :ref:`Befehlszeilenargument <doc_command_line_tutorial>`. "
+"Sie können auch ``--gpu-abort`` angeben, was Godot beenden wird, sobald ein "
+"Validierungsfehler auftritt. Dies kann verhindern, dass Ihr System "
+"einfriert, wenn ein Überprüfungsfehler auftritt."
 
 msgid "macOS"
 msgstr "macOS"
@@ -59,6 +76,9 @@ msgid ""
 "are statically linked against the Vulkan SDK. Dynamic linking must be used "
 "instead."
 msgstr ""
+"Offizielle Godot macOS-Builds unterstützen **keine** Validierungsebenen, da "
+"diese statisch mit dem Vulkan-SDK verknüpft sind. Stattdessen muss "
+"dynamisches Linking verwendet werden."
 
 msgid ""
 "In practice, this means that using validation layers on macOS **requires** "
@@ -67,6 +87,13 @@ msgid ""
 "project, you must recompile the export template and specify it as a custom "
 "export template in your project's macOS export preset."
 msgstr ""
+"In der Praxis bedeutet dies, dass für die Verwendung von Validierungsebenen "
+"unter macOS **erforderlich** ist, dass Sie einen Godot-Build verwenden, der "
+"mit der SCons-Option ``use_volk=yes`` kompiliert wurde. :ref:"
+"`doc_compiling_for_macos`. Wenn Sie Validierungsebenen auf einem "
+"exportierten Projekt testen, müssen Sie die Exportvorlage neu kompilieren "
+"und sie als benutzerdefinierte Exportvorlage in der macOS-Exportvorgabe "
+"Ihres Projekts angeben."
 
 msgid ""
 "After installing the Vulkan SDK, run a Godot binary that was compiled with "
@@ -76,58 +103,58 @@ msgid ""
 "happens. This can prevent your system from freezing if a validation error "
 "occurs."
 msgstr ""
+"Nach der Installation des Vulkan-SDK führen Sie ein Godot-Binary aus, das "
+"mit der SCons-Option ``use_volk=yes`` kompiliert wurde. Geben Sie das ``--"
+"gpu-validation`` :ref:`Befehlszeilenargument <doc_command_line_tutorial>` "
+"an. Sie können auch ``--gpu-abort`` angeben, was Godot beenden wird, sobald "
+"ein Validierungsfehler auftritt. Dies kann verhindern, dass Ihr System "
+"einfriert, wenn ein Überprüfungsfehler auftritt."
 
-#, fuzzy
 msgid "Linux, \\*BSD"
-msgstr "X11 (Linux, \\*BSD)"
+msgstr "Linux, \\*BSD"
 
 msgid "Install Vulkan validation layers from your distribution's repositories:"
 msgstr ""
+"Installieren Sie Vulkan-Validierungsebenen aus den Repositorys Ihrer "
+"Distribution:"
 
-#, fuzzy
 msgid "Alpine Linux"
-msgstr "**Alpine Linux**"
+msgstr "Alpine Linux"
 
-#, fuzzy
 msgid "Arch Linux"
-msgstr "**Arch Linux**"
+msgstr "Arch Linux"
 
-#, fuzzy
 msgid "Debian/Ubuntu"
-msgstr "**Debian** / **Ubuntu**"
+msgstr "Debian/Ubuntu"
 
-#, fuzzy
 msgid "Fedora"
-msgstr "**Fedora**"
+msgstr "Fedora"
 
-#, fuzzy
 msgid "FreeBSD"
-msgstr "**FreeBSD**"
+msgstr "FreeBSD"
 
-#, fuzzy
 msgid "Gentoo"
-msgstr "**Gentoo**"
+msgstr "Gentoo"
 
-#, fuzzy
 msgid "Mageia"
-msgstr "**Mageia**"
+msgstr "Mageia"
 
-#, fuzzy
 msgid "OpenBSD"
-msgstr "**OpenBSD**"
+msgstr "OpenBSD"
 
-#, fuzzy
 msgid "openSUSE"
-msgstr "**openSUSE**"
+msgstr "openSUSE"
 
-#, fuzzy
 msgid "Solus"
-msgstr "**Solus**"
+msgstr "Solus"
 
 msgid ""
 "You don't need to reboot after installing the validation layers, but you may "
 "need to close and reopen your current terminal."
 msgstr ""
+"Nach der Installation der Validierungsebenen müssen Sie nicht neu starten, "
+"aber möglicherweise müssen Sie Ihr aktuelles Terminal schließen und neu "
+"öffnen."
 
 msgid ""
 "After installing the package, run Godot with the ``--gpu-validation`` :ref:"
@@ -136,6 +163,11 @@ msgid ""
 "happens. This can prevent your system from freezing if a validation error "
 "occurs."
 msgstr ""
+"Nachdem Sie das Paket installiert haben, starten Sie Godot mit dem ``--gpu-"
+"validation`` :ref:`Befehlszeilenargument <doc_command_line_tutorial>`. Sie "
+"können auch ``--gpu-abort`` angeben, wodurch Godot beendet wird, sobald ein "
+"Validierungsfehler auftritt. Dies kann verhindern, dass Ihr System "
+"einfriert, wenn ein Überprüfungsfehler auftritt."
 
 msgid "Android"
 msgstr "Android"
@@ -144,13 +176,14 @@ msgid ""
 "After enabling validation layers on Android, a developer can see errors and "
 "warning messages in the ``adb logcat`` output."
 msgstr ""
+"Nach der Aktivierung von Validierungssebenen unter Android kann ein "
+"Entwickler Fehler und Warnmeldungen in der ``adb logcat``-Ausgabe sehen."
 
 msgid "iOS"
 msgstr "iOS"
 
-#, fuzzy
 msgid "Validation layers are currently **not** supported on iOS."
-msgstr "**Mobile Browser werden derzeit nicht unterstützt.**"
+msgstr "Validierungsebenen werden unter iOS derzeit **nicht** unterstützt."
 
 msgid "Web"
 msgstr "Web"
@@ -159,13 +192,14 @@ msgid ""
 "Validation layers are **not** supported on the web platform, as there is no "
 "support for Vulkan there."
 msgstr ""
+"Validierungsebenen werden auf der Webplattform **nicht** unterstützt, da es "
+"dort keine Unterstützung für Vulkan gibt."
 
-#, fuzzy
 msgid "Enabling validation layers"
-msgstr "Ein Plugin aktivieren"
+msgstr "Aktivieren von Validierungsebenen"
 
 msgid "Build validation layers from official sources"
-msgstr ""
+msgstr "Erstellen von Validierungsebenen aus offiziellen Quellen"
 
 msgid ""
 "To build Android libraries, follow the instructions on `Khronos' repository  "
@@ -173,35 +207,46 @@ msgid ""
 "md#building-on-android>`__. After a successful build, the libraries will be "
 "located in ``Vulkan-ValidationLayers/build-android/libs``."
 msgstr ""
+"Um die Android-Bibliotheken zu erstellen, folgen Sie den Anweisungen im "
+"`Khronos'-Repository <https://github.com/KhronosGroup/Vulkan-"
+"ValidationLayers/blob/master/BUILD.md#building-on-android>`__. Nach einem "
+"erfolgreichen Build befinden sich die Bibliotheken in ``Vulkan-"
+"ValidationLayers/build-android/libs``."
 
-#, fuzzy
 msgid "Copy libraries"
-msgstr "Plattform Bibliotheken"
+msgstr "Bibliotheken kopieren"
 
 msgid ""
 "Copy libraries from ``Vulkan-ValidationLayers/build-android/libs`` to "
 "``godot/platform/android/java/app/libs/debug/vulkan_validation_layers``."
 msgstr ""
+"Bibliotheken von ``Vulkan-ValidationLayers/build-android/libs`` nach ``godot/"
+"platform/android/java/app/libs/debug/vulkan_validation_layers`` kopieren."
 
-#, fuzzy
 msgid ""
 "Your Godot source directory tree should look like on the example below::"
-msgstr "So könnte die Shell-Historie in unserem Beispiel aussehen:"
+msgstr ""
+"Ihr Godot-Quellverzeichnisbaum sollte wie im folgenden Beispiel aussehen::"
 
 msgid ""
 "If the subdirectory ``libs/debug/vulkan_validation_layers`` doesn't exist, "
 "create it."
 msgstr ""
+"Wenn das Unterverzeichnis ``libs/debug/vulkan_validation_layers`` nicht "
+"existiert, erstellen Sie es."
 
-#, fuzzy
 msgid "Compile and run the Android app"
-msgstr "Kompilieren für Android"
+msgstr "Kompilieren und Ausführen der Android-Anwendung"
 
 msgid ""
 "Linked validation layers are automatically loaded and enabled in Android "
 "debug builds. You can use Godot's :ref:`doc_one-click_deploy` feature to "
 "quickly test your project with the validation layers enabled."
 msgstr ""
+"Verknüpfte Validierungsebenen werden in Android-Debug-Builds automatisch "
+"geladen und aktiviert. Sie können Godots Funktion :ref:`doc_one-"
+"click_deploy` verwenden, um Ihr Projekt mit aktivierten Validierungsebenen "
+"schnell zu testen."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

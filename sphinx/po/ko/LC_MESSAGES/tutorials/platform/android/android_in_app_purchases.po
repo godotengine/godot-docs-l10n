@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,21 +22,9 @@ msgstr ""
 
 msgid ""
 "Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin "
-"compatible with Godot 3.2.2 and higher. This plugin uses the `Google Play "
-"Billing library <https://developer.android.com/google/play/billing>`__ "
-"instead of the now deprecated AIDL IAP implementation. For details of how to "
-"migrate from the older ``GodotPaymentsV3``, see the migration guide: "
-"`Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)`_."
+"compatible with Godot 4 which uses the `Google Play Billing library <https://"
+"developer.android.com/google/play/billing>`_."
 msgstr ""
-
-#, fuzzy
-msgid ""
-"If you learn better by looking at an example, you can find the demo project "
-"`here <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/"
-"android_iap>`__."
-msgstr ""
-"이 문서 외에 여러가지 `Godot 데모 프로젝트들 <https://github.com/godotengine/"
-"godot-demo-projects>`_\\ 도 살펴보면 좋습니다."
 
 msgid "Usage"
 msgstr "사용례"
@@ -45,15 +33,10 @@ msgid "Getting started"
 msgstr "시작하기"
 
 msgid ""
-"Make sure you have enabled and successfully set up :ref:`Android Custom "
-"Builds <doc_android_custom_build>`. Follow the compiling instructions on the "
+"Make sure you have enabled and successfully set up :ref:`Android Gradle "
+"Builds <doc_android_gradle_build>`. Follow the compiling instructions on the "
 "``GodotGooglePlayBilling`` `github page <https://github.com/godotengine/"
 "godot-google-play-billing>`__."
-msgstr ""
-
-msgid ""
-"If you use a custom build you possibly have to put your own `godot-lib.***."
-"release.aar` file in the `./godot-google-play-billing/libs/` folder."
 msgstr ""
 
 msgid ""
@@ -294,37 +277,6 @@ msgid ""
 msgstr ""
 
 msgid "Example use of ``confirmPriceChange()``:"
-msgstr ""
-
-msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
-msgstr ""
-
-msgid ""
-"The new ``GodotGooglePlayBilling`` API is not compatible with its "
-"predecessor ``GodotPaymentsV3``."
-msgstr ""
-
-msgid "Changes"
-msgstr "변경사항"
-
-msgid ""
-"You need to enable the Custom Build option in your Android export settings "
-"and install the ``GodotGooglePlayBilling`` plugin manually (see below for "
-"details)"
-msgstr ""
-
-msgid ""
-"All purchases have to be acknowledged by your app. This is a `requirement "
-"from Google <https://developer.android.com/google/play/billing/"
-"integrate#process>`__. Purchases that are not acknowledged by your app will "
-"be refunded."
-msgstr ""
-
-#, fuzzy
-msgid "Support for subscriptions"
-msgstr "설정 가져오기"
-
-msgid "Signals (no polling or callback objects)"
 msgstr ""
 
 msgid "Translation status"

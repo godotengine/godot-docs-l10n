@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,9 +20,10 @@ msgstr ""
 msgid "Using Containers"
 msgstr "Usando Containers"
 
+#, fuzzy
 msgid ""
 ":ref:`Anchors <doc_size_and_anchors>` are an efficient way to handle "
-"different aspect ratios for basic multiple resolution handling in GUIs,"
+"different aspect ratios for basic multiple resolution handling in GUIs."
 msgstr ""
 ":ref:`Anchors <doc_size_and_anchors>` son una forma eficiente de manejar "
 "diferentes relaciones de aspecto para el manejo básico de resolución "
@@ -195,11 +196,11 @@ msgid ""
 "Godot provides several container types out of the box as they serve "
 "different purposes:"
 msgstr ""
-"Godot proporciona varios tipos de contenedores fuera de la caja ya que "
-"sirven para diferentes propósitos:"
+"Godot proporciona varios tipos de contenedores prefabricados que sirven para "
+"diferentes propósitos:"
 
 msgid "Box Containers"
-msgstr "Box Containers"
+msgstr "Contenedores Box"
 
 msgid ""
 "Arranges child controls vertically or horizontally (via :ref:`HBoxContainer "
@@ -222,7 +223,7 @@ msgstr ""
 "bandera *Expandir* puesta."
 
 msgid "Grid Container"
-msgstr "Grid Container"
+msgstr "Contenedor Rejilla"
 
 msgid ""
 "Arranges child controls in a grid layout (via :ref:`GridContainer "
@@ -234,7 +235,7 @@ msgstr ""
 "columnas). Utiliza las banderas de expansión vertical y horizontal."
 
 msgid "Margin Container"
-msgstr "Margin Container"
+msgstr "Contenedor Margen"
 
 msgid ""
 "Child controls are expanded towards the bounds of this control (via :ref:"
@@ -254,7 +255,7 @@ msgstr ""
 "control:"
 
 msgid "Tab Container"
-msgstr "Tab Container"
+msgstr "Contenedor Pestaña"
 
 msgid ""
 "Allows you to place several child controls stacked on top of each other "
@@ -286,7 +287,7 @@ msgstr ""
 "modificados en el tema *TabContainer*."
 
 msgid "Split Container"
-msgstr "Split Container"
+msgstr "Contenedor Divisor"
 
 msgid ""
 "Accepts only one or two children controls, then places them side to side "
@@ -358,6 +359,61 @@ msgid ""
 msgstr ""
 "Como en el ejemplo anterior, una de las formas más comunes de usar este "
 "contenedor es junto con un *VBoxContainer* de hijo."
+
+#, fuzzy
+msgid "AspectRatioContainer"
+msgstr "SplitContainer"
+
+msgid ""
+"A container type that arranges its child controls in a way that preserves "
+"their proportions automatically when the container is resized. (via :ref:"
+"`AspectRatioContainer <class_AspectRatioContainer>`). It has multiple "
+"stretch modes, providing options for adjusting the child controls' sizes "
+"concerning the container: \"fill,\" \"width control height,\" \"height "
+"control width,\" and \"cover.\""
+msgstr ""
+
+msgid ""
+"useful when you have a container that needs to be dynamic and responsive to "
+"different screen sizes, and you want the child elements to scale "
+"proportionally without losing their intended shapes."
+msgstr ""
+
+#, fuzzy
+msgid "FlowContainer"
+msgstr "Contenedores"
+
+#, fuzzy
+msgid ""
+"FlowContainer is a container that arranges its child controls either "
+"horizontally or vertically, (via :ref:`HFlowContainer "
+"<class_HFlowContainer>` and via :ref:`VFlowContainer "
+"<class_VFlowContainer>`). and when the available space runs out, it wraps "
+"the children to the next line or column, similar to how text wraps in a book."
+msgstr ""
+"Organiza los controles secundarios de forma vertical u horizontal (mediante :"
+"ref:`HBoxContainer <class_HBoxContainer>` y :ref:`VBoxContainer "
+"<class_VBoxContainer>`). En la dirección opuesta a la designada (es decir, "
+"vertical para un contenedor horizontal), simplemente expande los hijos. Esta "
+"disposición te permite alinear y distribuir los controles de manera "
+"conveniente en tus interfaces gráficas."
+
+msgid ""
+"useful for creating flexible layouts where the child controls adjust "
+"automatically to the available space without overlapping."
+msgstr ""
+
+#, fuzzy
+msgid "CenterContainer"
+msgstr "Panel Container"
+
+msgid ""
+"CenterContainer is a container that automatically keeps all of its child "
+"controls centered within it at their minimum size. It ensures that the child "
+"controls are always aligned to the center, making it easier to create "
+"centered layouts without manual positioning. (via :ref:`CenterContainer "
+"<class_CenterContainer>`)."
+msgstr ""
 
 #, fuzzy
 msgid "SubViewportContainer"

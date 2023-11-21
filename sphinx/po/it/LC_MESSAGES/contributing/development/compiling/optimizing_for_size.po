@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -74,28 +74,14 @@ msgstr ""
 
 msgid ""
 "The above command will not work on Windows binaries compiled with MSVC and "
-"platforms such as Android and HTML5. Instead, pass ``debug_symbols=no`` on "
-"the SCons command line when compiling."
-msgstr ""
-
-msgid "Optimizing for size instead of speed"
-msgstr ""
-
-msgid "**Space savings:** High"
-msgstr ""
-
-msgid "**Performed in official builds:** Yes, but only for HTML5"
-msgstr ""
-
-msgid ""
-"Godot 3.1 onwards allows compiling using size optimizations (instead of "
-"speed). To enable this, set the ``optimize`` flag to ``size``:"
-msgstr ""
-
-msgid "Some platforms such as WebAssembly already use this mode by default."
+"platforms such as Android and Web. Instead, pass ``debug_symbols=no`` on the "
+"SCons command line when compiling."
 msgstr ""
 
 msgid "Compiling with link-time optimization"
+msgstr ""
+
+msgid "**Space savings:** High"
 msgstr ""
 
 msgid ""
@@ -120,14 +106,71 @@ msgid ""
 "available for successful linking with LTO enabled."
 msgstr ""
 
+msgid "Optimizing for size instead of speed"
+msgstr ""
+
+msgid "**Performed in official builds:** Yes, but only for web builds"
+msgstr ""
+
+msgid ""
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr ""
+
+#, fuzzy
+msgid "Disabling advanced text server"
+msgstr "Disabilitare i moduli indesiderati"
+
+msgid "**Performed in official builds:** No"
+msgstr ""
+
+msgid ""
+"By default, Godot uses an advanced text server with the support for the "
+"following features:"
+msgstr ""
+
+msgid ""
+"Right-to-left typesetting and complex scripts, required to write languages "
+"such as Arabic and Hebrew."
+msgstr ""
+
+msgid ""
+"Font ligatures and OpenType features (such as small capitals, fractions and "
+"slashed zero)."
+msgstr ""
+
+msgid ""
+"Godot provides a fallback text server that isn't compiled by default. This "
+"text server can be used as a lightweight alternative to the default advanced "
+"text server:"
+msgstr ""
+
+msgid ""
+"If you only intend on supporting Latin, Greek and Cyrillic-based languages "
+"in your project, the fallback text server should suffice."
+msgstr ""
+
+msgid ""
+"This fallback text server can also process large amounts of text more "
+"quickly than the advanced text server. This makes the fallback text server a "
+"good fit for mobile/web projects."
+msgstr ""
+
+msgid ""
+"Remember to always pass ``module_text_server_fb_enabled=yes`` when using "
+"``module_text_server_adv_enabled=no``. Otherwise, the compiled binary won't "
+"contain any text server, which means no text will be displayed at all when "
+"running the project."
+msgstr ""
+
 #, fuzzy
 msgid "Disabling 3D"
 msgstr "Disabilitare il 3D"
 
 msgid "**Space savings:** Moderate"
-msgstr ""
-
-msgid "**Performed in official builds:** No"
 msgstr ""
 
 msgid ""
@@ -258,8 +301,8 @@ msgstr ""
 msgid ""
 "If this proves not to work for your use case, you should review the list of "
 "modules and see which ones you actually still need for your game (e.g. you "
-"might want to keep networking-related modules, regex support, or theora to "
-"play videos)."
+"might want to keep networking-related modules, regex support, ``minimp3``/"
+"``ogg``/``vorbis`` to play music, or ``theora`` to play videos)."
 msgstr ""
 
 msgid ""

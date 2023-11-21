@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,77 +17,86 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Upgrading from Godot 3 to Godot 4"
-msgstr "从 Godot 3.2.1 和更低版本迁移（GodotPaymentsV3）"
+msgstr "从 Godot 3 升级到 Godot 4"
 
 msgid "Should I upgrade to Godot 4?"
-msgstr ""
+msgstr "我应该升级到 Godot4 吗？"
 
 msgid ""
 "Before beginning the upgrade process, it's worth thinking about the "
 "advantages and disadvantages that upgrading would bring to your project."
-msgstr ""
+msgstr "在开始升级之前，有必要考虑一下升级会给你的项目带来的优点和缺点。"
 
-#, fuzzy
 msgid "Advantages of upgrading"
-msgstr "GDNative 的优势"
+msgstr "升级的优点"
 
-#, fuzzy
 msgid ""
 "Along with the `new features present in 4.0 <https://github.com/godotengine/"
 "godot/blob/master/CHANGELOG.md>`__, upgrading gives the following advantages:"
 msgstr ""
-"在\\ `文档仓库 <https://github.com/godotengine/godot-docs>`__\\ 中，我们使用"
-"如下标签："
+"除了 `4.0 中提供的新功能 <https://github.com/godotengine/godot/blob/master/"
+"CHANGELOG.md>`__\\ 之外，升级还有如下优点："
 
 msgid ""
 "Many bugs are fixed in 4.0, but cannot be resolved in 3.x for various "
 "reasons (such as graphics API differences or backwards compatibility)."
 msgstr ""
+"许多问题已经在4.0进行了修复，但是由于各种各样的原因（例如不同的图形API以及向"
+"后兼容性等），这些问题无法在3.x版本中修复。"
 
 msgid ""
 "4.x will enjoy a longer :ref:`support period <doc_release_policy>`. Godot 3."
 "x will continue to be supported for some time after 4.0 is released, but it "
 "will eventually stop receiving support."
 msgstr ""
+"4.x 版本将享受更长的\\ :ref:`支持周期 <doc_release_policy>`\\ 。Godot 3.x 也"
+"将在 4.0 发布之后支持一段时间，但最终将会放弃支持。"
 
 msgid ""
 "See :ref:`doc_docs_changelog` for a list of pages documenting new features "
 "in Godot 4.0."
-msgstr ""
+msgstr "记录 Godot 4.0 中新功能的文档页面列表见 :ref:`class_PopupMenu`\\ 。"
 
-#, fuzzy
 msgid "Disadvantages of upgrading"
-msgstr "缺点"
+msgstr "升级的缺点"
 
 msgid ""
 "If you don't *need* any features present in Godot 4.0, you may want to stay "
 "on Godot 3.x for the following reasons:"
 msgstr ""
+"如果你\\ *不需要* Godot 4.0 中的功能，留在 Godot 3.x 中可能有如下原因："
 
 msgid ""
 "`Godot 3.x is tried and true, while Godot 4 remains in its early stages. "
 "<https://godotengine.org/article/release-management-4-0-and-beyond>`__"
 msgstr ""
+"`Godot 3.x 是身经百战了，而 Godot 4 还太年轻。 <https://godotengine.org/"
+"article/release-management-4-0-and-beyond>`__"
 
 msgid ""
 "Godot 4.0 is expected to contain workflow and performance issues that Godot "
 "3.x doesn't have. These issues will be ironed out over time in future Godot "
 "4.x releases."
 msgstr ""
+"Godot 4.0 应该会有一些工作流和性能问题，在 Godot 3.x 中则没有对应的问题。这些"
+"问题会在后续的 Godot 4.x 版本中陆续解决。"
 
 msgid ""
 "Godot 4 has fewer third-party tutorials available compared to Godot 3.x. If "
 "you're new to game engines, you may have a better experience using Godot 3.x "
 "as a result."
 msgstr ""
+"Godot 4 的第三方教程比 Godot 3.x 要少。如果你是游戏引擎小白，使用 Godot 3.x "
+"的体验会丝滑很多。"
 
 msgid ""
 "Godot 4's baseline hardware requirements (such as memory usage) are slightly "
 "higher, both for the editor and exported projects. This was required for the "
 "implementation of some core optimizations."
 msgstr ""
+"Godot 4 的基准硬件需求要稍高一些（例如内存占用），无论是编辑器还是导出后的项"
+"目。这些都是实现核心优化所必须的。"
 
 msgid ""
 "Since Godot 4 includes more features than Godot 3, Godot 4's binary size for "
@@ -98,12 +107,19 @@ msgid ""
 "<doc_exporting_for_web>`, as binary size directly influences how fast the "
 "engine can initialize (regardless of download speed)."
 msgstr ""
+"由于 Godot 4 比 Godot 3 包含更多的功能，Godot 4 导出的项目二进制文件相比更"
+"大。这个问题可以通过\\ :ref:`针对大小优化构建 <doc_optimizing_for_size>`\\ 来"
+"缓解，但是启用模块相同的前提下，4.0 构建的大小仍然会比 3.x 构建要大。\\ :ref:"
+"`为 Web 导出 <doc_exporting_for_web>`\\ 时可能会造成一些问题，因为二进制文件"
+"的大小对引擎初始化的速度有直接影响（不考虑下载速度）。"
 
 msgid ""
 "Godot 4 does not and will not have support for GLES2 rendering. (There is "
 "still support for GLES3 rendering using the new OpenGL backend, which means "
 "that devices without Vulkan support can still run Godot 4.)"
 msgstr ""
+"Godot 4 不支持且不会提供对 GLES2 渲染器的支持。（使用新的 OpenGL 后台，Godot"
+"依然支持 GLES3 渲染器，这意味着不支持Vulkan的设备依旧可以运行Godot 4。）"
 
 msgid ""
 "If you are targeting **very** old hardware such as Intel Sandy Bridge (2nd "
@@ -112,15 +128,20 @@ msgid ""
 "github.com/pal1000/mesa-dist-win>`__ can be used to bypass this limitation, "
 "but they're too slow for gaming."
 msgstr ""
+"如果你的目标是像 Intel Sandy Bridge（第二代）集成图形一样\\ **极其**\\ 老旧的"
+"硬件，升级后将阻止项目在此类硬件上运行。\\ `软件 OpenGL 实现 <https://github."
+"com/pal1000/mesa-dist-win>`__\\ 可以用来绕过这个限制，但对于游戏来说太慢了。"
 
 msgid "Caveats of upgrading"
-msgstr ""
+msgstr "升级的注意事项"
 
 msgid ""
 "**Since Godot 4 is a complete rewrite in many aspects, some features have "
 "unfortunately been lost in the process.** Some of these features may be "
 "restored in future Godot releases:"
 msgstr ""
+"**由于 Godot 4 在许多方面都是完全重写的，一些功能在这个过程中不幸地丢失了。"
+"**\\ 其中一些功能可能会在未来的 Godot 版本中恢复："
 
 msgid ""
 "Bullet physics was removed in favor of GodotPhysics. This only affects 3D "
@@ -129,94 +150,110 @@ msgid ""
 "physics in core, but a third-party add-on could be created for it thanks to "
 "GDExtension."
 msgstr ""
+"Bullet 物理引擎被移除以支持 GodotPhysics。这只会影响使用默认物理引擎（即 "
+"Bullet）且没有手动更改为 GodotPhysics 的3D项目。没有在核心中重新添加 Bullet "
+"物理引擎的计划，但由于 GDExtension，可以为其创建第三方附加组件。"
 
 msgid ""
 "Rendering in 2D is no longer performed in HDR, which means \"overbright\" "
 "modulate values have no visible effect. This is planned to be restored at "
 "some point in the future."
 msgstr ""
+"2D 渲染不在执行HDR，这意味着 modulate中的 “overbright” 不会产生效果。我们计划"
+"在未来某个时候进行修复。"
 
 msgid ""
 "While rendering still happens in HDR in 3D when using the Forward Plus or "
 "Forward Mobile backends, Viewports cannot return HDR data anymore. This is "
 "planned to be restored at some point in the future."
 msgstr ""
+"虽然使用 Forward Plus 或 Forward Mobile 后端时，渲染仍然会以 3D HDR 形式进"
+"行，但视口无法再返回 HDR 数据。 计划在未来某个时候恢复这一功能。"
 
+#, fuzzy
 msgid ""
 "Mono was replaced by .NET 6. This means exporting C# projects to Android, "
 "iOS and HTML5 is no longer supported for now. Exporting C# projects to "
-"desktop platforms is still supported. Support for exporting C# projects to "
-"more platforms will be restored in future 4.x releases as upstream support "
-"improves."
+"desktop platforms is still supported, and as of 4.2 there's experimental "
+"support for exporting to mobile platforms. Support for exporting C# projects "
+"to more platforms will be restored in future 4.x releases as upstream "
+"support improves."
 msgstr ""
+"Mono 被替换为 .Net 6。这意味着现在不支持导出 C# 项目到 Android，iOS 和 "
+"HTML5。导出 C# 项目到桌面平台依然是支持的。随着上游支持的改进，将 C# 项目导出"
+"到更多平台的支持将在未来的 4.x 版本中恢复。"
 
-#, fuzzy
 msgid ""
 "You can find a more complete list of functional regressions by searching for "
 "`issues labeled \"regression\" but not \"bug\" on GitHub <https://github.com/"
 "godotengine/godot/issues?q=is%3Aissue+is%3Aopen+label%3Aregression+-"
 "label%3Abug>`__."
 msgstr ""
-"通过搜索 Github 中标记为 `good first issue <https://github.com/godotengine/"
-"godot/issues?q=is%3Aissue+is%3Aopen+label%3A%22good+first+issue%22>`_ 的问题"
-"着手是个不错的办法。"
+"您可以通过在 GitHub 上搜索`'issues labeled' 为\"regression\"而不是\"bug\" "
+"<https://github.com/godotengine/godot/issues?q=is%3Aissue+is%3Aopen "
+"+label%3Aregression+-label%3Abug>`_ 来找到更完整的功能回归列表。"
 
-#, fuzzy
 msgid "Preparing before the upgrade (optional)"
-msgstr "准备项目"
+msgstr "升级前的准备（可选）"
 
 msgid ""
 "If you want to be ready to upgrade to Godot 4 in the future, consider using :"
 "ref:`class_Tweener` and the :ref:`class_Time` singleton in your project. "
 "These classes are both available in Godot 3.5 and later."
 msgstr ""
+"如果你想在未来升级到 Godot 4，可以考虑在你的项目中使用 :ref:`class_Tweener` "
+"和 :ref:`class_Time` 单例。这些类在 Godot 3.5 及更高版本中都已可用。"
 
 msgid ""
 "This way, you won't be relying on the deprecated Tween node and OS time "
 "functions, both of which are removed in Godot 4.0."
 msgstr ""
+"如此，你便不用再依赖已弃用的 Tween node 和 OS time 函数，这两个函数在 Godot "
+"4.0 中都被删除了。"
 
 msgid ""
 "It's also a good idea to rename external shaders so that their extension is "
 "``.gdshader`` instead of ``.shader``. Godot 3.x supports both extensions, "
 "but only ``.gdshader`` is supported in Godot 4.0."
 msgstr ""
+"使用 ``.gdshader`` 后缀来替换 ``.shader`` 后缀是一个很好的点子。Godot 3.x 支"
+"持这两种后缀，但 Godot 4.0 仅支持 ``.gdshader`` 这一种。"
 
-#, fuzzy
 msgid "Running the project upgrade tool"
-msgstr "设置项目路径"
+msgstr "运行项目升级工具"
 
 msgid ""
 "**Make a full backup of your project** before upgrading! The project upgrade "
 "tool will *not* perform any backups of the project that is being upgraded."
 msgstr ""
+"升级前，\\ **请将显示进行完整备份**\\ ！项目升级工具\\ *不会*\\ 对升级的项目"
+"进行备份。"
 
 msgid ""
 "You can backup a project by using version control, or by copying the project "
 "folder to another location."
-msgstr ""
+msgstr "你可以使用版本控制备份项目，也可以将项目文件夹复制到其他位置。"
 
-#, fuzzy
 msgid "Using the Project Manager"
-msgstr "项目管理器"
+msgstr "使用项目管理器"
 
-#, fuzzy
 msgid "To use the project upgrade tool:"
-msgstr "设置项目路径"
+msgstr "使用项目升级工具："
 
-#, fuzzy
 msgid "Open the Godot 4 Project Manager."
-msgstr "项目管理器"
+msgstr "打开 Godot 4 项目管理器。"
 
 msgid ""
 "Import the Godot 3.x project using the **Import** button, or use the "
 "**Scan** button to find the project within a folder."
 msgstr ""
+"使用\\ **导入**\\ 按钮导入 Godot 3.x 项目，或者使用\\ **扫描**\\ 按钮在文件夹"
+"中查找项目。"
 
 msgid ""
 "Double-click the imported project (or select the project then choose "
 "**Edit**)."
-msgstr ""
+msgstr "双击导入的项目（或者选中项目后选择\\ **编辑**\\ ）。"
 
 msgid ""
 "You will see a dialog appearing with two options: **Convert project.godot "
@@ -225,38 +262,48 @@ msgid ""
 "project.godot Only** is intended to be used for advanced use cases *only*, "
 "in case the conversion tool fails."
 msgstr ""
+"你将看到一个带有两个选项的对话框：\\ **仅转换 project.godot**\\ 和\\ **转换整"
+"个项目**\\ 。在确保你的项目已经备份之后（见上面的警告），请选择\\ **转换整个"
+"项目**\\ 。\\ **仅转换 project.godot** \\ 选项\\ *只应该*\\ 用于高级用例，处"
+"理转换工具失败的情况。"
 
 msgid ""
 "Wait until the project conversion process finishes. This can take up to a "
 "few minutes for large projects with lots of scenes."
-msgstr ""
+msgstr "等待项目转换完成。由许多场景组成的大项目将花费更多的时间。"
 
 msgid ""
 "When the Project Manager interface becomes available again, double-click the "
 "project (or select the project then choose **Edit**) to open it in the "
 "editor."
 msgstr ""
+"当项目管理器界面再次可用时，双击项目 (或选中项目，然后选择 **编辑**) 在编辑器"
+"中打开。"
 
 msgid ""
 "If you hit conversion issues due to some project files being too large or "
 "long, you can use the command line to upgrade the project (see below). This "
 "will allow you to override the converter's size limits."
 msgstr ""
+"如果由于某些项目文件过大或过长而遇到转换问题，你可以使用命令行来升级项目(参见"
+"下面的内容)。这将允许你覆盖转换器的大小限制。"
 
-#, fuzzy
 msgid "Using the command line"
-msgstr "从命令行导出"
+msgstr "使用命令行"
 
 msgid ""
 "To use the project upgrade tool from the :ref:`command line "
 "<doc_command_line_tutorial>`, it's recommended to validate the project "
 "conversion by running the Godot editor binary with the following arguments:"
 msgstr ""
+"要从 :ref:`命令行 <doc_command_line_tutorial>` 使用升级工具，建议通过使用如下"
+"参数运行 Godot 编辑器二进制文件来验证项目转换："
 
 msgid ""
 "If the list of planned upgrades looks good to you, run the following command "
 "on the Godot editor binary to upgrade project files:"
 msgstr ""
+"如果计划升级列表无误，在 Godot 编辑器二进制文件上运行以下命令来升级项目文件："
 
 msgid ""
 "``[<max_file_kb>]`` and ``[<max_line_size>]`` are *optional* arguments to "
@@ -266,6 +313,10 @@ msgid ""
 "This is useful to prevent large resources from slowing down the upgrade to a "
 "crawl."
 msgstr ""
+"``[<max_file_kb>]`` 和 ``[<max_line_size>]`` 是\\ *可选*\\ 参数，用于指定要转"
+"换的文件的最大大小（单位分别为 KB 和行）。默认限制分别为 4MB 和十万行。如果文"
+"件达到上述任何一个限制，则项目转换器将不会对其进行升级。这对于防止大量资源占"
+"用会降低升级速度来说非常有用。"
 
 msgid ""
 "If you still want large files to be converted by the project upgrade tool, "
@@ -273,19 +324,21 @@ msgid ""
 "running the Godot editor binary with those arguments increases both limits "
 "by a 10× factor:"
 msgstr ""
+"如果你仍然希望通过项目升级工具转换大文件，请在运行项目升级工具时增加大小限"
+"制。例如，运行带有这些参数的 Godot 编辑器二进制文件会使这两个限制都增加10倍："
 
 msgid ""
 "Only Godot 3.0 and later projects can be upgraded using the project "
 "conversion tool found in the Godot 4 editor."
-msgstr ""
+msgstr "只有Godot 3.x的项目可以使用 Godot 4 编辑器中的项目转换工具升级。"
 
 msgid ""
 "It's recommended to ensure that your project is up-to-date with the latest 3."
 "x stable release before running the project upgrade tool."
-msgstr ""
+msgstr "建议在使用项目升级工具之前检查你的项目是否为最新的 3.x 稳定版。"
 
 msgid "Fixing the project after running the project upgrade tool"
-msgstr ""
+msgstr "运行项目升级工具后修复项目"
 
 msgid ""
 "After upgrading the project, you may notice that certain things don't look "
@@ -294,575 +347,489 @@ msgid ""
 "cater to all situations. Therefore, a large part of the upgrade process "
 "remains manual."
 msgstr ""
+"项目升级完成之后，你可能会注意到某些东西看起来不太正常。脚本还可能包含各种错"
+"误（在大项目中可能有几百个）。这是因为项目升级工具无法满足所有的情况。因此，"
+"升级过程的很大一部分问题仍然需要手动的解决。"
 
-#, fuzzy
 msgid "Automatically renamed nodes and resources"
-msgstr "教程和资源"
+msgstr "自动重命名节点和资源"
 
 msgid ""
 "The list below refers to nodes which were simply renamed for consistency or "
 "clarity in Godot 4.0. The project upgrade tool renames them automatically in "
 "your scripts."
 msgstr ""
+"以下列表是 Godot 4.0 为了一致性或清晰性而简单重命名的节点。项目升级工具会在你"
+"的脚本中自动重命名它们。"
 
 msgid ""
 "One noteworthy set of renames is 3D nodes, which all got a ``3D`` suffix "
 "added for consistency with their 2D counterparts. For example, ``Area`` is "
 "now ``Area3D``."
 msgstr ""
+"在 3D 节点中有一些重命名值得注意，它们中与 2D 功能相似的节点全部以 ``3D`` 为"
+"后缀。例如 ``Area`` 现在为 ``Area3D`` 。"
 
 msgid ""
 "For ease of searching, this table lists all nodes and resources that were "
 "renamed and are automatically converted, excluding the ones which only "
 "involved adding a ``3D`` suffix to the old name:"
 msgstr ""
+"为了方便搜索，此表列出了所有已更名并自动转换的节点和资源，不包括仅在旧名称后"
+"添``3D``后缀的节点和资源："
 
 msgid "Old name (Godot 3.x)"
-msgstr ""
+msgstr "旧名称（Godot 3.x）"
 
 msgid "New name (Godot 4)"
-msgstr ""
+msgstr "新名称（Godot 4）"
 
-#, fuzzy
 msgid "AnimatedSprite"
-msgstr "AnimateSprite 与精灵表"
+msgstr "AnimatedSprite"
 
 msgid "AnimatedSprite2D"
-msgstr ""
+msgstr "AnimatedSprite2D"
 
-#, fuzzy
 msgid "ARVRCamera"
-msgstr "Camera"
+msgstr "ARVRCamera"
 
-#, fuzzy
 msgid "XRCamera3D"
-msgstr "Camera"
+msgstr "XRCamera3D"
 
-#, fuzzy
 msgid "ARVRController"
-msgstr "Control"
+msgstr "ARVRController"
 
-#, fuzzy
 msgid "XRController3D"
-msgstr "Control"
+msgstr "XRController3D"
 
 msgid "ARVRAnchor"
-msgstr ""
+msgstr "ARVRAnchor"
 
 msgid "XRAnchor3D"
-msgstr ""
+msgstr "XRAnchor3D"
 
 msgid "ARVRInterface"
-msgstr ""
+msgstr "ARVRInterface"
 
-#, fuzzy
 msgid "XRInterface"
-msgstr "用户界面（UI）"
+msgstr "XRInterface"
 
 msgid "ARVROrigin"
-msgstr ""
+msgstr "ARVROrigin"
 
 msgid "XROrigin3D"
-msgstr ""
+msgstr "XROrigin3D"
 
 msgid "ARVRPositionalTracker"
-msgstr ""
+msgstr "ARVRPositionalTracker"
 
 msgid "XRPositionalTracker"
-msgstr ""
+msgstr "XRPositionalTracker"
 
-#, fuzzy
 msgid "ARVRServer"
-msgstr "AR/VR 服务器"
+msgstr "ARVRServer"
 
-#, fuzzy
 msgid "XRServer"
-msgstr "服务器"
+msgstr "XRServer"
 
-#, fuzzy
 msgid "CubeMesh"
-msgstr "网格"
+msgstr "CubeMesh"
 
-#, fuzzy
 msgid "BoxMesh"
-msgstr "网格"
+msgstr "BoxMesh"
 
-#, fuzzy
 msgid "EditorSpatialGizmo"
-msgstr "EditorSpatialGizmoPlugin"
+msgstr "EditorSpatialGizmo"
 
 msgid "EditorNode3DGizmo"
-msgstr ""
+msgstr "EditorNode3DGizmo"
 
-#, fuzzy
 msgid "EditorSpatialGizmoPlugin"
 msgstr "EditorSpatialGizmoPlugin"
 
-#, fuzzy
 msgid "EditorNode3DGizmoPlugin"
-msgstr "EditorSpatialGizmoPlugin"
+msgstr "EditorNode3DGizmoPlugin"
 
-#, fuzzy
 msgid "GIProbe"
 msgstr "GIProbe"
 
 msgid "VoxelGI"
-msgstr ""
+msgstr "VoxelGI"
 
-#, fuzzy
 msgid "GIProbeData"
-msgstr "GIProbe"
+msgstr "GIProbeData"
 
 msgid "VoxelGIData"
-msgstr ""
+msgstr "VoxelGIData"
 
-#, fuzzy
 msgid "GradientTexture"
-msgstr "读取纹理"
+msgstr "GradientTexture"
 
-#, fuzzy
 msgid "GradientTexture1D"
-msgstr "读取纹理"
+msgstr "GradientTexture1D"
 
-#, fuzzy
 msgid "KinematicBody"
-msgstr "KinematicBody2D"
+msgstr "KinematicBody"
 
 msgid "CharacterBody3D"
-msgstr ""
+msgstr "CharacterBody3D"
 
 msgid "KinematicBody2D"
 msgstr "KinematicBody2D"
 
 msgid "CharacterBody2D"
-msgstr ""
+msgstr "CharacterBody2D"
 
-#, fuzzy
 msgid "Light2D"
-msgstr "灯光"
+msgstr "Light2D"
 
-#, fuzzy
 msgid "PointLight2D"
-msgstr "环境光"
+msgstr "PointLight2D"
 
 msgid "LineShape2D"
-msgstr ""
+msgstr "LineShape2D"
 
 msgid "WorldBoundaryShape2D"
-msgstr ""
+msgstr "WorldBoundaryShape2D"
 
 msgid "Listener"
-msgstr "侦听器"
+msgstr "Listener"
 
-#, fuzzy
 msgid "AudioListener3D"
-msgstr "侦听器"
+msgstr "AudioListener3D"
 
-#, fuzzy
 msgid "NavigationMeshInstance"
-msgstr "NavigationMesh"
+msgstr "NavigationMeshInstance"
 
-#, fuzzy
 msgid "NavigationRegion3D"
-msgstr "NavigationAgent3D"
+msgstr "NavigationRegion3D"
 
-#, fuzzy
 msgid "NavigationPolygonInstance"
-msgstr "NavigationObstacle3D"
+msgstr "NavigationPolygonInstance"
 
-#, fuzzy
 msgid "NavigationRegion2D"
-msgstr "NavigationAgent3D"
+msgstr "NavigationRegion2D"
 
-#, fuzzy
 msgid "Navigation2DServer"
-msgstr "导航"
+msgstr "Navigation2DServer"
 
-#, fuzzy
 msgid "NavigationServer2D"
-msgstr "导航"
+msgstr "NavigationServer2D"
 
 msgid "PanoramaSky"
-msgstr ""
+msgstr "PanoramaSky"
 
-#, fuzzy
 msgid "Sky"
-msgstr "键"
+msgstr "Sky"
 
 msgid "Particles"
-msgstr "粒子"
+msgstr "Particles"
 
-#, fuzzy
 msgid "GPUParticles3D"
-msgstr "粒子"
+msgstr "GPUParticles3D"
 
-#, fuzzy
 msgid "Particles2D"
-msgstr "粒子"
+msgstr "Particles2D"
 
-#, fuzzy
 msgid "GPUParticles2D"
-msgstr "粒子"
+msgstr "GPUParticles2D"
 
 msgid "ParticlesMaterial"
 msgstr "ParticlesMaterial"
 
-#, fuzzy
 msgid "ParticleProcessMaterial"
-msgstr "ParticlesMaterial"
+msgstr "ParticleProcessMaterial"
 
 msgid "Physics2DDirectBodyState"
-msgstr ""
+msgstr "Physics2DDirectBodyState"
 
 msgid "PhysicsDirectBodyState2D"
-msgstr ""
+msgstr "PhysicsDirectBodyState2D"
 
 msgid "Physics2DDirectSpaceState"
-msgstr ""
+msgstr "Physics2DDirectSpaceState"
 
 msgid "PhysicsDirectSpaceState2D"
-msgstr ""
+msgstr "PhysicsDirectSpaceState2D"
 
-#, fuzzy
 msgid "Physics2DServer"
-msgstr "物理学"
+msgstr "Physics2DServer"
 
-#, fuzzy
 msgid "PhysicsServer2D"
-msgstr "物理学"
+msgstr "PhysicsServer2D"
 
 msgid "Physics2DShapeQueryParameters"
-msgstr ""
+msgstr "Physics2DShapeQueryParameters"
 
 msgid "PhysicsShapeQueryParameters2D"
-msgstr ""
+msgstr "PhysicsShapeQueryParameters2D"
 
 msgid "Physics2DTestMotionResult"
-msgstr ""
+msgstr "Physics2DTestMotionResult"
 
 msgid "PhysicsTestMotionResult2D"
-msgstr ""
+msgstr "PhysicsTestMotionResult2D"
 
-#, fuzzy
 msgid "PlaneShape"
-msgstr "Plane"
+msgstr "PlaneShape"
 
 msgid "WorldBoundaryShape3D"
-msgstr ""
+msgstr "WorldBoundaryShape3D"
 
-#, fuzzy
 msgid "Position2D"
-msgstr "gl_Position"
+msgstr "Position2D"
 
 msgid "Marker2D"
-msgstr ""
+msgstr "Marker2D"
 
-#, fuzzy
 msgid "Position3D"
-msgstr "gl_Position"
+msgstr "Position3D"
 
 msgid "Marker3D"
-msgstr ""
+msgstr "Marker3D"
 
-#, fuzzy
 msgid "ProceduralSky"
-msgstr "程序式天空。"
+msgstr "ProceduralSky"
 
-#, fuzzy
 msgid "RayShape"
-msgstr "Shapes（形状）"
+msgstr "RayShape"
 
 msgid "SeparationRayShape3D"
-msgstr ""
+msgstr "SeparationRayShape3D"
 
-#, fuzzy
 msgid "RayShape2D"
-msgstr "Shapes（形状）"
+msgstr "RayShape2D"
 
 msgid "SeparationRayShape2D"
-msgstr ""
+msgstr "SeparationRayShape2D"
 
 msgid "ShortCut"
-msgstr ""
+msgstr "ShortCut"
 
 msgid "Shortcut"
-msgstr ""
+msgstr "Shortcut"
 
 msgid "Spatial"
 msgstr "Spatial"
 
-#, fuzzy
 msgid "Node3D"
-msgstr "Node2D"
+msgstr "Node3D"
 
-#, fuzzy
 msgid "SpatialGizmo"
-msgstr "Spatial"
+msgstr "SpatialGizmo"
 
 msgid "Node3DGizmo"
-msgstr ""
+msgstr "Node3DGizmo"
 
-#, fuzzy
 msgid "SpatialMaterial"
-msgstr "空间材质"
+msgstr "SpatialMaterial"
 
-#, fuzzy
 msgid "StandardMaterial3D"
-msgstr "空间材质"
+msgstr "StandardMaterial3D"
 
 msgid "Sprite"
-msgstr ""
+msgstr "Sprite"
 
 msgid "Sprite2D"
-msgstr ""
+msgstr "Sprite2D"
 
-#, fuzzy
 msgid "StreamTexture"
-msgstr "Texture (纹理)"
+msgstr "StreamTexture"
 
-#, fuzzy
 msgid "CompressedTexture2D"
-msgstr "压缩模式"
+msgstr "CompressedTexture2D"
 
-#, fuzzy
 msgid "TextureProgress"
-msgstr "纹理压缩"
+msgstr "TextureProgress"
 
-#, fuzzy
 msgid "TextureProgressBar"
-msgstr "纹理压缩"
+msgstr "TextureProgressBar"
 
-#, fuzzy
 msgid "VideoPlayer"
-msgstr "设置 VideoPlayer"
+msgstr "VideoPlayer"
 
-#, fuzzy
 msgid "VideoStreamPlayer"
-msgstr "AudioStreamPlayer"
+msgstr "VideoStreamPlayer"
 
 msgid "ViewportContainer"
 msgstr "ViewportContainer"
 
-#, fuzzy
 msgid "SubViewportContainer"
-msgstr "ViewportContainer"
+msgstr "SubViewportContainer"
 
-#, fuzzy
 msgid "Viewport"
-msgstr "视口"
+msgstr "Viewport"
 
-#, fuzzy
 msgid "SubViewport"
-msgstr "视口"
+msgstr "SubViewport"
 
-#, fuzzy
 msgid "VisibilityEnabler"
-msgstr "Visibility Rect(可见性区域)"
+msgstr "VisibilityEnabler"
 
 msgid "VisibleOnScreenEnabler3D"
-msgstr ""
+msgstr "VisibleOnScreenEnabler3D"
 
-#, fuzzy
 msgid "VisibilityNotifier"
-msgstr "Visibility Rect(可见性区域)"
+msgstr "VisibilityNotifier"
 
 msgid "VisibleOnScreenNotifier3D"
-msgstr ""
+msgstr "VisibleOnScreenNotifier3D"
 
-#, fuzzy
 msgid "VisibilityNotifier2D"
-msgstr "Visibility Rect(可见性区域)"
+msgstr "VisibilityNotifier2D"
 
 msgid "VisibleOnScreenNotifier2D"
-msgstr ""
+msgstr "VisibleOnScreenNotifier2D"
 
-#, fuzzy
 msgid "VisibilityNotifier3D"
-msgstr "Visibility Rect(可见性区域)"
+msgstr "VisibilityNotifier3D"
 
-#, fuzzy
 msgid "VisualServer"
-msgstr "VisualScript"
+msgstr "VisualServer"
 
-#, fuzzy
 msgid "RenderingServer"
-msgstr "渲染"
+msgstr "RenderingServer"
 
-#, fuzzy
 msgid "VisualShaderNodeScalarConstant"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeScalarConstant"
 
-#, fuzzy
 msgid "VisualShaderNodeFloatConstant"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeFloatConstant"
 
-#, fuzzy
 msgid "VisualShaderNodeScalarFunc"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeScalarFunc"
 
-#, fuzzy
 msgid "VisualShaderNodeFloatFunc"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeFloatFunc"
 
-#, fuzzy
 msgid "VisualShaderNodeScalarOp"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeScalarOp"
 
-#, fuzzy
 msgid "VisualShaderNodeFloatOp"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeFloatOp"
 
-#, fuzzy
 msgid "VisualShaderNodeScalarClamp"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeScalarClamp"
 
-#, fuzzy
 msgid "VisualShaderNodeClamp"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeClamp"
 
-#, fuzzy
 msgid "VisualShaderNodeVectorClamp"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeVectorClamp"
 
-#, fuzzy
 msgid "VisualShaderNodeScalarInterp"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeScalarInterp"
 
-#, fuzzy
 msgid "VisualShaderNodeMix"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeMix"
 
-#, fuzzy
 msgid "VisualShaderNodeVectorInterp"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeVectorInterp"
 
-#, fuzzy
 msgid "VisualShaderNodeVectorScalarMix"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeVectorScalarMix"
 
 msgid "VisualShaderNodeScalarSmoothStep"
-msgstr ""
+msgstr "VisualShaderNodeScalarSmoothStep"
 
-#, fuzzy
 msgid "VisualShaderNodeSmoothStep"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeSmoothStep"
 
 msgid "VisualShaderNodeVectorSmoothStep"
-msgstr ""
+msgstr "VisualShaderNodeVectorSmoothStep"
 
 msgid "VisualShaderNodeVectorScalarSmoothStep"
-msgstr ""
+msgstr "VisualShaderNodeVectorScalarSmoothStep"
 
 msgid "VisualShaderNodeVectorScalarStep"
-msgstr ""
+msgstr "VisualShaderNodeVectorScalarStep"
 
-#, fuzzy
 msgid "VisualShaderNodeStep"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeStep"
 
-#, fuzzy
 msgid "VisualShaderNodeScalarSwitch"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeScalarSwitch"
 
-#, fuzzy
 msgid "VisualShaderNodeSwitch"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeSwitch"
 
 msgid "VisualShaderNodeScalarTransformMult"
-msgstr ""
+msgstr "VisualShaderNodeScalarTransformMult"
 
-#, fuzzy
 msgid "VisualShaderNodeTransformOp"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeTransformOp"
 
 msgid "VisualShaderNodeScalarDerivativeFunc"
-msgstr ""
+msgstr "VisualShaderNodeScalarDerivativeFunc"
 
-#, fuzzy
 msgid "VisualShaderNodeDerivativeFunc"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeDerivativeFunc"
 
 msgid "VisualShaderNodeVectorDerivativeFunc"
-msgstr ""
+msgstr "VisualShaderNodeVectorDerivativeFunc"
 
-#, fuzzy
 msgid "VisualShaderNodeBooleanUniform"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeBooleanUniform"
 
 msgid "VisualShaderNodeBooleanParameter"
-msgstr ""
+msgstr "VisualShaderNodeBooleanParameter"
 
-#, fuzzy
 msgid "VisualShaderNodeColorUniform"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeColorUniform"
 
-#, fuzzy
 msgid "VisualShaderNodeColorParameter"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeColorParameter"
 
-#, fuzzy
 msgid "VisualShaderNodeScalarUniform"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeScalarUniform"
 
-#, fuzzy
 msgid "VisualShaderNodeFloatParameter"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeFloatParameter"
 
-#, fuzzy
 msgid "VisualShaderNodeCubeMapUniform"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeCubeMapUniform"
 
 msgid "VisualShaderNodeCubeMapParameter"
-msgstr ""
+msgstr "VisualShaderNodeCubeMapParameter"
 
-#, fuzzy
 msgid "VisualShaderNodeTextureUniform"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeTextureUniform"
 
 msgid "VisualShaderNodeTexture2DParameter"
-msgstr ""
+msgstr "VisualShaderNodeTexture2DParameter"
 
 msgid "VisualShaderNodeTextureUniformTriplanar"
-msgstr ""
+msgstr "VisualShaderNodeTextureUniformTriplanar"
 
 msgid "VisualShaderNodeTextureParameterTriplanar"
-msgstr ""
+msgstr "VisualShaderNodeTextureParameterTriplanar"
 
-#, fuzzy
 msgid "VisualShaderNodeTransformUniform"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeTransformUniform"
 
-#, fuzzy
 msgid "VisualShaderNodeTransformParameter"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeTransformParameter"
 
-#, fuzzy
 msgid "VisualShaderNodeVec3Uniform"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeVec3Uniform"
 
-#, fuzzy
 msgid "VisualShaderNodeVec3Parameter"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeVec3Parameter"
 
-#, fuzzy
 msgid "VisualShaderNodeUniform"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeUniform"
 
-#, fuzzy
 msgid "VisualShaderNodeParameter"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeParameter"
 
-#, fuzzy
 msgid "VisualShaderNodeUniformRef"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeUniformRef"
 
-#, fuzzy
 msgid "VisualShaderNodeParameterRef"
-msgstr "可视化着色器节点"
+msgstr "VisualShaderNodeParameterRef"
 
-#, fuzzy
 msgid "Manually renaming methods, properties, signals and constants"
-msgstr "这个类的属性、方法、信号、枚举、场景的解释。"
+msgstr "手动重命名的方法、属性、信号、枚举和常量"
 
 msgid ""
 "Due to how the project upgrade tool works, not all :abbr:`API (Application "
@@ -870,11 +837,14 @@ msgid ""
 "below contains all renames that must be performed manually using the script "
 "editor."
 msgstr ""
+"由于项目升级工具的工作方式，并非所有 :abbr:`API (Application Programming "
+"Interface，应用程序编程接口)` 的重命名都可以自动执行。 以下列表包含了必须使用"
+"脚本编辑器手动执行的所有重命名项目。"
 
 msgid ""
 "If you cannot find a node or resource in the list below, refer to the above "
 "table to find its new name."
-msgstr ""
+msgstr "如果您在下面的列表中找不到节点或资源，请参考上表查找其新名称。"
 
 msgid ""
 "You can use the **Replace in Files** dialog to speed up replacement by "
@@ -885,16 +855,21 @@ msgid ""
 "used if you need something more flexible than the editor's Replace in Files "
 "dialog."
 msgstr ""
+"你可以在脚本编辑器打开时按 :kbd:`Ctrl + Shift + R` 使用 **在文件中替换** 对话"
+"框来加快替换速度。 但是需要小心，“在文件中替换”对话框不提供任何撤消替换的方"
+"法。 使用版本控制定期提交升级工作。 如果你要比编辑器的“在文件中替换”对话框更"
+"灵活的工具，也可以使用`sd <https://github.com/chmln/sd>`__ 等命令行工具。"
 
 msgid ""
 "If using C#, remember to search for outdated API usage with PascalCase "
 "notation in the project (and perform the replacement with PascalCase "
 "notation)."
 msgstr ""
+"如果使用 C#，请记住在项目中使用 PascalCase 表示法（即帕斯卡命名法）搜索过时"
+"的 API 使用情况（并使用 PascalCase 表示法执行替换）。"
 
-#, fuzzy
 msgid "**Methods**"
-msgstr "**静态方法**"
+msgstr "**方法**"
 
 msgid ""
 "File and Directory classes were replaced by :ref:`class_FileAccess` and :ref:"
@@ -902,6 +877,9 @@ msgid ""
 "now static, which means you can call them directly on FileAccess or "
 "DirAccess without having to create an instance of that class."
 msgstr ""
+"文件和目录类已被 :ref:`class_FileAccess` 与 :ref:`class_DirAccess` 取代，它们"
+"拥有完全不同的 API。现在有几种方法是静态的，这意味着你可以不创建对象而直接使"
+"用 FileAccess 或 DirAccess 的方法。"
 
 msgid ""
 "Screen and window-related methods from the :ref:`class_OS` singleton (such "
@@ -910,119 +888,140 @@ msgid ""
 "<object>_<get/set>_property()`` form instead. For example, ``OS."
 "get_screen_size()`` becomes ``DisplayServer.screen_get_size()``."
 msgstr ""
+":ref:`class_OS` 单例中与屏幕和窗口相关的方法（例如 ``OS."
+"get_screen_size()``\\ ）已被移至 :ref:`class_DisplayServer` 单例。方法命名也"
+"改为使用 ``DisplayServer.<对象>_<get/set>_property()`` 的形式。例如，\\ ``OS."
+"get_screen_size()`` 变成了 ``DisplayServer.screen_get_size()``\\ 。"
 
 msgid ""
 "Time and date methods from the :ref:`class_OS` singleton were moved to the :"
 "ref:`class_Time` singleton. (The Time singleton is also available in Godot "
 "3.5 and later.)"
 msgstr ""
+"时间和日期方法已从 :ref:`class_OS` 单例移动至 :ref:`class_Time` 单例。（ 在"
+"Godot 3.5 以及其后的版本中依旧如此。）"
 
 msgid ""
 "You may have to replace some ``instance()`` calls with ``instantiate()``. "
 "The converter *should* handle this automatically, but this relies on custom "
 "code that may not work in 100% of situations."
 msgstr ""
+"你可能需要将一些``instance()``调用替换为``instantiate()``。转换器*应该*会自动"
+"处理这个，但这依赖于可能无法在100%的情况下工作的自定义代码。"
 
 msgid "AcceptDialog's ``set_autowrap()`` is now ``set_autowrap_mode()``."
-msgstr ""
+msgstr "AcceptDialog的``set_autowrap()``现在是``set_autowrap_mode()``。"
 
 msgid ""
 "AnimationNode's ``process()`` is now ``_process()`` (note the leading "
 "underscore, which denotes a virtual method)."
 msgstr ""
+"AnimationNode的``process()``现在是``_process()``（注意前面的下划线，表示虚方"
+"法）。"
 
 msgid "AStar2D and AStar3D's ``get_points()`` is now ``get_points_id()``."
-msgstr ""
+msgstr "AStar2D和AStar3D的``get_points()``现在改为``get_points_id()``。"
 
 msgid "BaseButton's ``set_event()`` is now ``set_shortcut()``."
-msgstr ""
+msgstr "BaseButton的``set_event()``现在改为``set_shortcut()``。"
 
 msgid "Camera2D's ``get_v_offset()`` is now ``get_drag_vertical_offset()``."
-msgstr ""
+msgstr "Camera2D的``get_v_offset()``现在改为``get_drag_vertical_offset()``。"
 
 msgid "Camera2D's ``set_v_offset()`` is now ``set_drag_vertical_offset()``."
-msgstr ""
+msgstr "Camera2D的``set_v_offset()``现在改为``set_drag_vertical_offset()``。"
 
 msgid "CanvasItem's ``update()`` is now ``queue_redraw()``."
-msgstr ""
+msgstr "CanvasItem的``update()``现在改为``queue_redraw()``。"
 
 msgid "Control's ``set_tooltip()`` is now ``set_tooltip_text()``."
-msgstr ""
+msgstr "Control的``set_tooltip()``现在是``set_tooltip_text()``。"
 
 msgid ""
 "EditorNode3DGizmoPlugin's ``create_gizmo()`` is now ``_create_gizmo()`` "
 "(note the leading underscore, which denotes a virtual method)."
 msgstr ""
+"EditorNode3DGizmoPlugin的``create_gizmo()``现在改为``_create_gizmo()``（注意"
+"前面的下划线，表示虚方法）。"
 
 msgid "ENetMultiplayerPeer's ``get_peer_port()`` is now ``get_peer()``."
-msgstr ""
+msgstr "ENetMultiplayerPeer的``get_peer_port()``现在是``get_peer()``。"
 
 msgid "FileDialog's ``get_mode()`` is now ``get_file_mode()``."
-msgstr ""
+msgstr "FileDialog的``get_mode()``现在是``get_file_mode()``。"
 
 msgid "FileDialog's ``set_mode()`` is now ``set_file_mode()``."
-msgstr ""
+msgstr "FileDialog的``set_mode()``现在改为``set_file_mode()``。"
 
 msgid "GraphNode's ``get_offset()`` is now ``get_position_offset()``."
-msgstr ""
+msgstr "GraphNode的``get_offset()``现在改为``get_position_offset()``。"
 
 msgid "GridMap's ``world_to_map()`` is now ``local_to_map()``."
-msgstr ""
+msgstr "GridMap的``world_to_map()``现在改为``local_to_map()``。"
 
 msgid "GridMap's ``map_to_world()`` is now ``map_to_local()``."
-msgstr ""
+msgstr "GridMap 的 ``map_to_world()`` 方法现在叫 ``map_to_local()`` 。"
 
 msgid "Image's ``get_rect()`` is now ``get_region()``."
-msgstr ""
+msgstr "Image的 ``get_rect()`` 方法现在为 ``get_region()`` 。"
 
 msgid "ItemList's ``get_v_scroll()`` is now ``get_v_scroll_bar()``."
-msgstr ""
+msgstr "ItemList 的 ``get_v_scroll()`` 方法现在为 ``get_v_scroll_bar()``\\ 。"
 
 msgid ""
 "MultiPlayerAPI's ``get_network_connected_peers()`` is now ``get_peers()``."
 msgstr ""
+"MultiPlayerAPI 的 ``get_network_connected_peers()`` 现在改为 "
+"``get_peers()``\\ 。"
 
 msgid "MultiPlayerAPI's ``get_network_peer()`` is now ``get_peer()``."
-msgstr ""
+msgstr "MultiPlayerAPI 的 ``get_network_peer()`` 现在改为 ``get_peer()``\\ 。"
 
 msgid ""
 "MultiPlayerAPI's ``get_network_unique_id()`` is now ``get_unique_id()``."
 msgstr ""
+"MultiPlayerAPI 的 ``get_network_unique_id()`` 现在改为 "
+"``get_unique_id()``\\ 。"
 
 msgid ""
 "MultiPlayerAPI's ``has_network_peer()`` is now ``has_multiplayer_peer()``."
 msgstr ""
+"MultiPlayerAPI 的 ``has_network_peer()`` 现在是 "
+"``has_multiplayer_peer()``\\ 。"
 
 msgid "PacketPeerUDP's ``is_listening()`` is now ``is_bound()``."
-msgstr ""
+msgstr "PacketPeerUDP 的 ``is_listening()`` 现在是 ``is_bound()``\\ 。"
 
 msgid "PacketPeerUDP's ``listen()`` is now ``bind()``."
-msgstr ""
+msgstr "PacketPeerUDP 的 ``listen()`` 现在是 ``bind()``\\ 。"
 
 msgid ""
 "ParticleProcessMaterial's ``set_flag()`` is now ``set_particle_flag()``."
 msgstr ""
+"ParticleProcessMaterial 的 ``set_flag()`` 现在是 ``set_particle_flag()``\\ 。"
 
 msgid ""
 "ResourceFormatLoader's ``get_dependencies()`` is now ``_get_dependencies()`` "
 "(note the leading underscore, which denotes a virtual method)."
 msgstr ""
+"ResourceFormatLoader 的 ``get_dependencies()`` 现在是 "
+"``_get_dependencies()``\\ （注意前面的下划线表示虚方法）。"
 
 msgid "SceneTree's ``change_scene()`` is now ``change_scene_to_file()``."
 msgstr ""
+"SceneTree 中的 ``change_scene()`` 现改为 ``change_scene_to_file()``\\ 。"
 
 msgid "Shortcut's ``is_valid()`` is now ``has_valid_event()``."
-msgstr ""
+msgstr "Shortcut 中的 ``is_valid()`` 现改为 ``has_valid_event()``\\ 。"
 
 msgid "TileMap's ``world_to_map()`` is now ``local_to_map()``."
-msgstr ""
+msgstr "TileMap 中的 ``world_to_map()`` 现改为 ``local_to_map()`` 。"
 
 msgid "TileMap's ``map_to_world()`` is now ``map_to_local()``."
-msgstr ""
+msgstr "TileMap 中的 ``map_to_world()`` 现改为 ``map_to_local()`` 。"
 
-#, fuzzy
 msgid "**Properties**"
-msgstr "属性"
+msgstr "**属性**"
 
 msgid ""
 "If a property is listed here, its associated getter and setter methods must "
@@ -1030,23 +1029,29 @@ msgid ""
 "and PathFollow3D's ``set_offset()`` and ``get_offset()`` must be renamed to "
 "``set_progress()`` and ``get_progress()`` respectively."
 msgstr ""
+"如果此处列出了属性，则要在项目中使用，必须手动重命名其关联的 getter 和 "
+"setter 方法。例如， PathFollow2D 和 PathFollow3D 的 ``set_offset()`` 和 "
+"``get_offset()`` 必须分别重命名为 ``set_progress()`` 和 ``get_progress()`` 。"
 
 msgid "Control's ``margin`` is now ``offset``."
-msgstr ""
+msgstr "Control 中的 ``margin`` 现改为 ``offset``\\ 。"
 
 msgid "Label's ``percent_visible`` is now ``visible_ratio``."
-msgstr ""
+msgstr "Label 中的 ``percent_visible`` 现改为 ``visible_ratio``\\ 。"
 
 msgid ""
 "MultiPlayerAPI's ``refuse_new_network_connections`` is now "
 "``refuse_new_connections``."
 msgstr ""
+"MultiPlayerAPI 中的 ``refuse_new_network_connections`` 现改为 "
+"``refuse_new_connections``\\ 。"
 
 msgid "PathFollow2D and PathFollow3D's ``offset`` is now ``progress``."
-msgstr ""
+msgstr "PathFollow2D 和 PathFollow3D 中的 ``offset`` 现改为 ``progress``\\ 。"
 
 msgid "TextureProgressBar's ``percent_visible`` is now ``show_percentage``."
 msgstr ""
+"TextureProgressBar 中的 ``percent_visible`` 现改为 ``show_percentage``\\ 。"
 
 msgid ""
 "The ``extents`` property on CSG nodes and VoxelGI will have to be replaced "
@@ -1054,39 +1059,43 @@ msgid ""
 "extents). This also affects its setter/getter methods ``set_extents()`` and "
 "``get_extents()``."
 msgstr ""
+"CSG 节点和 VoxelGI 上的 ``extents``属性必须被替换成 ``size``，并且将设置的值"
+"减半（因为它们不再是半个范围了）。这也同样影响它的 setter/getter 方法， "
+"``set_extents()`` 和 ``get_extents()`` 。"
 
 msgid ""
 "The ``Engine.editor_hint`` property was removed in favor of the ``Engine."
 "is_editor_hint()`` *method*. This is because it's read-only, and properties "
 "in Godot are not used for read-only values."
 msgstr ""
+"``Engine.editor_hint`` 属性被移除以支持 ``Engine.is_editor_hint()`` *方法* 。"
+"这是由于它是只读的，而 Godot 中属性不可用于只读的值。"
 
-#, fuzzy
 msgid "**Enums**"
-msgstr "枚举"
+msgstr "**枚举**"
 
 msgid "CPUParticles2D's ``FLAG_MAX`` is now ``PARTICLE_FLAG_MAX``."
-msgstr ""
+msgstr "CPUParticles2D 中的 ``FLAG_MAX`` 现在为 ``PARTICLE_FLAG_MAX`` 。"
 
-#, fuzzy
 msgid "**Signals**"
-msgstr "信号"
+msgstr "**信号**"
 
 msgid "FileSystemDock's ``instantiate`` is now ``instance``."
-msgstr ""
+msgstr "FileSystemDock中的 ``instantiate`` 现在为 ``instance`` 。"
 
 msgid ""
 "CanvasItem's ``hide`` is now ``hidden``. This rename does **not** apply to "
 "the ``hide()`` method, only the signal."
 msgstr ""
+"CanvasItem 中的 ``hide`` 现在是 ``hidden`` 。 这个重命名不会影响 ``hide()`` "
+"方法，只是信号的重命名。"
 
 msgid "Tween's ``tween_all_completed`` is now ``loop_finished``."
-msgstr ""
+msgstr "Tween 中的 ``tween_all_completed`` 现在为 ``loop_finished`` 。"
 
 msgid "EditorSettings' ``changed`` is now ``settings_changed``."
-msgstr ""
+msgstr "EditorSettings 中的 ``changed`` 现在为 ``settings_changed`` 。"
 
-#, fuzzy
 msgid "**Constants**"
 msgstr "**常量**"
 
@@ -1094,20 +1103,25 @@ msgid ""
 "Color names are now uppercase and use underscores between words. For "
 "example, ``Color.palegreen`` is now ``Color.PALE_GREEN``."
 msgstr ""
+"Color 中的所有属性现在均为大写并由下划线来分割。例如， ``Color.palegreen`` 现"
+"在为 ``Color.PALE_GREEN`` 。"
 
 msgid ""
 "MainLoop's ``NOTIFICATION_`` constants were duplicated to ``Node`` which "
 "means you can remove the ``MainLoop.`` prefix when referencing them."
 msgstr ""
+"Mainloop的 ``Notification_`` 常量被复制到 ``Node`` ，这意味着你可以在引用它们"
+"时移除 ``Mainloop.`` 前缀。"
 
 msgid ""
 "MainLoop's ``NOTIFICATION_WM_QUIT_REQUEST`` is now "
 "``NOTIFICATION_WM_CLOSE_REQUEST``."
 msgstr ""
+"MainLoop 中的 ``NOTIFICATION_WM_QUIT_REQUEST`` 现在为 "
+"``NOTIFICATION_WM_CLOSE_REQUEST`` 。"
 
-#, fuzzy
 msgid "Checking project settings"
-msgstr "使用项目设置"
+msgstr "检查项目设置"
 
 msgid ""
 "Several project settings were renamed, and some of them had their enums "
@@ -1116,10 +1130,12 @@ msgid ""
 "**Advanced** toggle is enabled in the project settings dialog so you can see "
 "all project settings."
 msgstr ""
+"数个项目设置已被重命名，其中一些项目以不兼容的方式（例如阴影滤波质量 shadow "
+"filter quality ）改变了枚举。这意味着你可能需要再次设置一些项目设置的值。确保"
+"在项目设置对话框中启用了 **高级** 切换选项，以便你可以看到所有项目设置。"
 
-#, fuzzy
 msgid "Checking Environment settings"
-msgstr "环境可选项"
+msgstr "检查环境设置"
 
 msgid ""
 "Graphics quality settings were moved from Environment properties to project "
@@ -1127,12 +1143,16 @@ msgid ""
 "having to access the currently active Environment resource then modify its "
 "properties."
 msgstr ""
+"图形质量设置已从环境属性转移到项目设置。这样做是为了使运行时质量调整更加容"
+"易，而无需访问当前活动的环境资源再去修改其属性。"
 
 msgid ""
 "As a result, you will have to configure Environment quality settings in the "
 "project settings as old Environment quality settings aren't converted "
 "automatically to project settings."
 msgstr ""
+"因此，你必须在项目设置中配置环境质量设置，因为旧的环境质量设置并不会自动转换"
+"为项目设置。"
 
 msgid ""
 "If you have a graphics settings menu that changed environment properties in "
@@ -1141,56 +1161,62 @@ msgid ""
 "Only the \"base\" toggle of each environment effect and its visual knobs "
 "remain within the Environment resource."
 msgstr ""
+"在 Godot 3.x 中，如果你在图形设置菜单中更改了环境属性，则必须更改相关的代码来"
+"调用 :ref:`class_RenderingServer` 中能影响环境效果质量的方法。只有每个环境效"
+"果的“基本”切换及其视觉旋钮保留在环境资源中。"
 
-#, fuzzy
 msgid "Updating shaders"
-msgstr "Spatial 着色器"
+msgstr "更新着色器"
 
 msgid ""
 "There have been some changes to shaders that aren't covered by the upgrade "
 "tool."
-msgstr ""
+msgstr "因为着色器语言有一些更改所以无法使用升级工具进行转换。"
 
 msgid ""
 "The ``.shader`` file extension is no longer supported, which means you must "
 "rename ``.shader`` files to ``.gdshader`` and update references accordingly "
 "in scene/resource files using an external text editor."
 msgstr ""
+"不在支持后缀为 ``.shader`` 的文件，你需要把后缀为 ``.shader`` 的文件重命名为 "
+"``.gdshader`` 并且在 场景/资源 设置中重新引用。"
 
 msgid "Some notable renames you will need to perform in shaders are:"
-msgstr ""
+msgstr "在着色器中你需要重命名以下字符："
 
 msgid ""
 "Texture filter and repeat modes are now set on individual uniforms, rather "
 "than the texture files themselves."
-msgstr ""
+msgstr "纹理过滤和重复模式现在在单独的 uniform 上设置，而不是在纹理文件本身。"
 
 msgid "``hint_albedo`` is now ``source_color``."
-msgstr ""
+msgstr "``hint_albedo`` 现在是 ``source_color``\\ 。"
 
-#, fuzzy
 msgid ":ref:`Built in matrix variables were renamed. <doc_spatial_shader>`"
-msgstr ":ref:`空间着色器 <doc_spatial_shader>`"
+msgstr ":ref:`内置矩阵变量已重命名。 <doc_spatial_shader>`"
 
 msgid ""
 "Particles shaders no longer use the ``vertex()`` processor function. Instead "
 "they use ``start()`` and ``process()``."
 msgstr ""
+"粒子着色器不再使用 ``vertex()`` 处理器函数。使用 ``start()`` 和 "
+"``process()`` 来代替它。"
 
-#, fuzzy
 msgid "See :ref:`doc_shading_language` for more information."
-msgstr "详见 :ref:`doc_exporting_projects` ."
+msgstr "详见 :ref:`doc_shading_language`\\ 。"
 
 msgid "Updating scripts to take backwards-incompatible changes into account"
-msgstr ""
+msgstr "更新脚本时将向后不兼容的更改考虑在内"
 
 msgid ""
 "Some changes performed between Godot 3.x and 4 are not renames, but they "
 "still break backwards compatibility due to different default behavior."
 msgstr ""
+"Godot 3.x 和 4 之间的一些变化并没有重新命名，但由于默认行为的不同，它们仍然会"
+"破坏向后兼容性。"
 
 msgid "The most notable examples of this are:"
-msgstr ""
+msgstr "最显著的例子如下："
 
 msgid ""
 "Lifecycle functions such as ``_ready()`` and ``_process()`` no longer "
@@ -1198,6 +1224,9 @@ msgid ""
 "you must use ``super()`` at the top of a lifecycle function in the child "
 "class so that the parent class function is called first."
 msgstr ""
+"``_ready()`` 和 ``_process()`` 等生命周期函数不再隐式调用同名的父类函数。相"
+"反，你必须在子类中的生命周期函数的顶部使用 ``super()`` 以调用父类中的这些生命"
+"周期函数。"
 
 msgid ""
 "Both :ref:`class_String` and :ref:`class_StringName` are now exposed to "
@@ -1209,6 +1238,12 @@ msgid ""
 "&\"example\"`` returns ``true``), sometimes you may have to replace "
 "``\"example\"`` with ``&\"example\"``."
 msgstr ""
+":ref:`class_String` 和 :ref:`class_StringName` 现在都暴露给了GDScript，这使优"
+"化成为可能，因为 StringName 是专门为“常量”字符串设计的，这些字符串创建一次后"
+"可能会重复使用多次。String 与 StringName 类型严格来说并不等同，这意味着"
+"``is_same(\"example\", &\"example\")`` 会返回 ``false`` 。虽然在大多数情况下"
+"它们可以互换（ ``\"example\" == &\"example\"`` 返回 ``true`` ），但是有时候您"
+"可能需要使用 ``&\"example\"`` 来替换 ``\"example\"`` 。"
 
 msgid ""
 ":ref:`GDScript setter and getter syntax "
@@ -1216,6 +1251,9 @@ msgid ""
 "converted by the conversion tool. In most cases, manual changes are required "
 "to make setters and getters working again."
 msgstr ""
+":ref:`GDScript 的 setter 和 getter 语法 "
+"<doc_gdscript_basics_setters_getters>` 已经发生了变化，但是转换工具仅对其进行"
+"了部分转换，在大多数情况下，需要手动更改才能使 setter 和 getter 重新工作。"
 
 msgid ""
 ":ref:`GDScript signal connection syntax <doc_gdscript_signals>` was changed. "
@@ -1225,24 +1263,36 @@ msgid ""
 "involved, which avoids issues with signal name errors that can only be "
 "discovered at run-time."
 msgstr ""
+":ref:`GDScript 信号连接语法 <doc_gdscript_signals>`\\ 已经做了改动。转换工具"
+"将使用 Godot 4 中仍然存在的基于字符串的语法，但建议改用链接页面中描述的基于 :"
+"ref:`class_Signal` 的语法。通过这种方式，就不会在信号连接中涉及字符串，从而避"
+"免了只能在运行时发现的信号名称错误问题。"
 
 msgid ""
 "Built-in scripts that are :ref:`tool scripts "
 "<doc_running_code_in_the_editor>` do not get the ``tool`` keyword converted "
 "to the ``@tool`` annotation."
 msgstr ""
+"作为 :ref:`tool scripts <doc_running_code_in_the_editor>` 的内置脚本不会将 "
+"``tool`` 关键字转换为 ``@tool`` 注解。"
 
 msgid ""
 "The Tween node was removed in favor of Tweeners, which are also available in "
 "Godot 3.5 and later. See the `original pull request <https://github.com/"
 "godotengine/godot/pull/41794>`__ for details."
 msgstr ""
+"Tween 节点已经被移除，取而代之的是在 Godot 3.5 及更高的版本中可用的 "
+"Tweeners。详情请参见 `original pull request <https://github.com/godotengine/"
+"godot/pull/41794>` 。"
 
 msgid ""
 "``randomize()`` is now automatically called on project load, so "
 "deterministic randomness with the global RandomNumberGenerate instance "
 "requires manually setting a seed in a script's ``_ready()`` function."
 msgstr ""
+"``randomize()`` 现在会在项目加载时自动调用，因此使用全局 "
+"RandomNumberGenerate 实例进行确定性随机化需要在脚本的 ``_ready()`` 函数中手动"
+"设置种子。"
 
 msgid ""
 "``call_group()``, ``set_group()`` and ``notify_group()`` are now immediate "
@@ -1252,6 +1302,11 @@ msgid ""
 "``call_group_flags(SceneTree.GROUP_CALL_DEFERRED, ...)`` (and do the same "
 "with ``set_group()`` and ``notify_group()`` respectively)."
 msgstr ""
+"``call_group()`` 、 ``set_group()`` 和 ``notify_group()`` 现在默认为立即调"
+"用。如果在包含大量节点的组中调用代价高昂的函数可能会导致卡顿。要像以前一样使"
+"用延迟调用，请将 ``call_group(...)`` 替换为 ``call_group_flags(SceneTree."
+"GROUP_CALL_DEFERRED, ...)`` （并分别对 ``set_group()`` 和 ``notify_group()`` "
+"也进行类似的替换）。"
 
 msgid ""
 "Instead of ``rotation_degrees``, the ``rotation`` property is exposed to the "
@@ -1259,28 +1314,40 @@ msgid ""
 "This may break animations, as the conversion is not handled automatically by "
 "the conversion tool."
 msgstr ""
+"现在编辑器中的 ``rotation`` 属性取代了旧有的 ``rotation_degrees`` 属性，在检"
+"查器面板中，它会自动显示为度。这可能会破坏动画，因为转换工具无法自动处理转"
+"换。"
 
 msgid ""
 ":ref:`class_AABB`'s ``has_no_surface()`` was inverted and renamed to "
 "``has_surface()``."
 msgstr ""
+":ref:`class_AABB` 的函数 ``has_no_surface()`` 被反转并重命名为了 "
+"``has_surface()`` 。"
 
 msgid ""
 ":ref:`class_AABB` and :ref:`class_Rect2`'s ``has_no_area()`` was inverted "
 "and renamed to ``has_area()``."
 msgstr ""
+":ref:`class_AABB` 及 :ref:`class_Rect2` 的 函数 ``has_no_area()`` 被反转并重"
+"命名为了 ``has_area()`` 。"
 
 msgid ""
 ":ref:`class_AnimatedTexture`'s ``fps`` property was replaced by "
 "``speed_scale``, which works the same as AnimationPlayer's "
 "``playback_speed`` property."
 msgstr ""
+":ref:`class_AnimatedTexture` 的 ``fps`` 属性被 ``speed_scale`` 属性取代，其作"
+"用与 AnimationPlayer 的 ``playback_speed`` 属性相同。"
 
 msgid ""
 ":ref:`class_AnimatedSprite2D` and :ref:`class_AnimatedSprite3D` now allow "
 "negative ``speed_scale`` values. This may break animations if you relied on "
 "``speed_scale`` being internally clamped to ``0.0``."
 msgstr ""
+":ref:`class_AnimatedSprite2D` 和 :ref:`class_AnimatedSprite3D` 现在允许设置负"
+"的 ``speed_scale`` 值。如果您过去的工作依赖于 ``speed_scale`` 属性在内部被限"
+"位为 0.0 ， 现在这可能会破坏动画。"
 
 msgid ""
 ":ref:`class_AnimatedSprite2D` and :ref:`class_AnimatedSprite3D`'s "
@@ -1288,21 +1355,36 @@ msgid ""
 "OR configure ``autoplay`` animation via the SpriteFrames bottom panel (but "
 "not both at once)."
 msgstr ""
+":ref:`class_AnimatedSprite2D` 和 :ref:`class_AnimatedSprite3D` 的 "
+"``playing`` 属性现在已经被移除。请使用 ``play()``/``stop()`` 方法来代替或者通"
+"过 SpriteFrames 底部面板配置 ``autoplay`` 动画（但不能同时使用这两种方法）。"
+
+msgid ""
+":ref:`class_Array`'s ``slice()`` second parameter (``end``) is now "
+"*exclusive*, instead of being inclusive. For example, this means that ``[1, "
+"2, 3].slice(0, 1)`` now returns ``[1]`` instead of ``[1, 2]``."
+msgstr ""
 
 msgid ""
 ":ref:`class_BaseButton`'s signals are now ``button_up`` and ``button_down``. "
 "The ``pressed`` property is now ``button_pressed``."
 msgstr ""
+":ref:`class_BaseButton` 的信号现在是 ``button_up`` 和 ``button_down`` 。 "
+"``pressed`` 属性也改为了 ``button_pressed`` 。"
 
 msgid ""
 ":ref:`class_Camera2D`'s ``rotating`` property was replaced by "
 "``ignore_rotation``, which has inverted behavior."
 msgstr ""
+":ref:`class_Camera2D` 的属性 ``rotating`` 现在被 ``ignore_rotation`` 所取代，"
+"而后者的行为是相反的。"
 
 msgid ""
 "Camera2D's ``zoom`` property was inverted: higher values are now more zoomed "
 "in, instead of less."
 msgstr ""
+"Camera2D 的 ``zoom`` 属性被反转：现在该属性的值越大，缩放越大，而并非之前的缩"
+"放越小。"
 
 msgid ""
 ":ref:`class_Node`'s ``remove_and_skip()`` method was removed. If you need to "
@@ -1310,23 +1392,35 @@ msgid ""
 "github.com/godotengine/godot/blob/7936b3cc4c657e4b273b376068f095e1e0e4d82a/"
 "scene/main/node.cpp#L1910-L1945>`__ as a reference."
 msgstr ""
+":ref:`class_Node` 的 ``remove_and_skip()`` 方法现在已经被移除，如果你需要在脚"
+"本中重新实现该方法，可以使用 `old C++ implementation <https://github.com/"
+"godotengine/godot/blob/7936b3cc4c657e4b273b376068f095e1e0e4d82a/scene/main/"
+"node.cpp#L1910-L1945>` __ 作为参考。"
 
 msgid ""
 "``OS.get_system_time_secs()`` should be converted to ``Time."
 "get_time_dict_from_system()[\"second\"]``."
 msgstr ""
+"``OS.get_system_time_secs()`` 现在应该改写为 ``Time."
+"get_time_dict_from_system()[\"second\"]`` 。"
 
 msgid ""
 ":ref:`class_ResourceSaver`'s ``save()`` method now has its arguments swapped "
 "around (``resource: Resource, path: String``). This also applies to :ref:"
 "`class_ResourceFormatSaver`'s ``_save()`` method."
 msgstr ""
+":ref:`class_ResourceSaver` 的 ``save()`` 方法的参数现在交换了位置"
+"（ ``resource: Resource, path: String`` ）。这也适用于 :ref:"
+"`class_ResourceFormatSaver` 的 ``_save()`` 方法。"
 
 msgid ""
 "A :ref:`class_StreamPeerTCP` must have ``poll()`` called on it to update its "
 "state, instead of relying on ``get_status()`` automatically polling: "
 "`GH-59582 <https://github.com/godotengine/godot/pull/59582>`__"
 msgstr ""
+":ref:`class_StreamPeerTCP` 必须依靠其中的 ``poll()`` 来更新状态，而不能依赖"
+"于 ``get_status()`` 自动轮询：\\ `GH-59582 <https://github.com/godotengine/"
+"godot/pull/59582>` __"
 
 msgid ""
 ":ref:`class_String`'s ``right()`` method `has changed behavior <https://"
@@ -1335,6 +1429,10 @@ msgid ""
 "string from a given position. If you need the old behavior, you can use "
 "``substr()`` instead."
 msgstr ""
+":ref:`class_String` 的 ``right()`` 方法 `改变了功能表现 <https://github.com/"
+"godotengine/godot/pull/36180>` __：它现在返回字符串右边的字符数，而不是从给定"
+"位置开始返回字符串右边的字符数。如果需要旧的功能，可以使用 ``substr()`` 来代"
+"替。"
 
 msgid ""
 "``is_connected_to_host()`` was removed from StreamPeerTCP and PacketPeerUDP "
@@ -1342,184 +1440,179 @@ msgid ""
 "``get_status()`` can be used in StreamPeerTCP instead. "
 "``is_socket_connected()`` can be used in :ref:`class_PacketPeerUDP` instead."
 msgstr ""
+"根据 `GH-59582 <https://github.com/godotengine/godot/pull/59582>` __\\ ，"
+"StreamPeerTCP 和 PacketPeerUDP 当中的 ``is_connected_to_host()`` 现已被删除。"
+"可在 StreamPeerTCP 当中使用 ``get_status()`` 来代替，在 :ref:"
+"`class_PacketPeerUDP` 则可以使用 ``is_socket_connected()``\\ 。"
 
 msgid ""
 "In ``_get_property_list()``, the ``or_lesser`` property hint string is now "
 "``or_less``."
 msgstr ""
+"在 ``_get_property_list()`` 中，\\ ``or_lesser`` 这个属性提示字符串被更改为"
+"了 ``or_less``\\ 。"
 
 msgid ""
 "In ``_get_property_list()``, the ``noslider`` property hint string is now "
 "``no_slider``."
 msgstr ""
+"在 ``_get_property_list()`` 中，\\ ``noslider`` 这个属性提示字符串被改成了 "
+"``no_slider``\\ 。"
 
 msgid ""
 "VisualShaderNodeVec4Parameter now takes a :ref:`class_Vector4` as parameter "
 "instead of a :ref:`class_Quaternion`."
 msgstr ""
+"VisualShaderNodeVec4Parameter 现在使用 :ref:`class_Vector4` 作为参数，而不再"
+"使用 :ref:`class_Quaternion`\\ 。"
 
 msgid "**Removed or replaced nodes/resources**"
-msgstr ""
+msgstr "**已移除或已替换的节点/资源**"
 
 msgid ""
 "This lists all nodes that were replaced by another node requiring different "
 "configuration. The setup must be done from scratch again, as the project "
 "converter doesn't support updating existing setups:"
 msgstr ""
+"这将列出所有需要被另一个不同配置的节点替换掉的那些节点。由于项目转换器不支持"
+"更新现存设置，因此必须从头开始设置："
 
-#, fuzzy
 msgid "Removed node"
-msgstr "删除节点（-noimp）"
+msgstr "移除节点"
 
-#, fuzzy
 msgid "Closest approximation"
-msgstr "交叉推广"
+msgstr "最接近的等价物"
 
 msgid "Comment"
-msgstr "注释(``Comment``)"
+msgstr "注释"
 
-#, fuzzy
 msgid "AnimationTreePlayer"
-msgstr "AnimationPlayer"
+msgstr "AnimationTreePlayer"
 
-#, fuzzy
 msgid "AnimationTree"
-msgstr "动画"
+msgstr "AnimationTree"
 
 msgid "AnimationTreePlayer was deprecated since Godot 3.1."
-msgstr ""
+msgstr "AnimationTreePlayer 从 Godot 3.1 起废弃。"
 
-#, fuzzy
 msgid "BakedLightmap"
-msgstr "烘焙光照贴图"
+msgstr "BakedLightmap"
 
-#, fuzzy
 msgid "LightmapGI"
-msgstr "灯光"
+msgstr "LightmapGI"
 
-#, fuzzy
 msgid "See :ref:`doc_using_lightmap_gi`."
-msgstr ":ref:`doc_using_multimesh`"
+msgstr "见 :ref:`doc_using_lightmap_gi`\\ 。"
 
-#, fuzzy
 msgid "BakedLightmapData"
-msgstr "烘焙光照贴图"
+msgstr "BakedLightmapData"
 
 msgid "LightmapGIData"
-msgstr ""
+msgstr "LightmapGIData"
 
 msgid "BitmapFont"
-msgstr ""
+msgstr "BitmapFont"
 
-#, fuzzy
 msgid "FontFile"
-msgstr "筛选文件"
+msgstr "FontFile"
 
-#, fuzzy
 msgid "See :ref:`doc_gui_using_fonts`."
-msgstr ":ref:`doc_gui_containers`"
+msgstr "见 :ref:`doc_gui_using_fonts`\\ 。"
 
-#, fuzzy
 msgid "DynamicFont"
-msgstr "动态的："
+msgstr "DynamicFont"
 
-#, fuzzy
 msgid "DynamicFontData"
-msgstr "动态性"
+msgstr "DynamicFontData"
 
-#, fuzzy
 msgid "Navigation2D"
-msgstr "导航"
+msgstr "Navigation2D"
 
 msgid "Node2D"
 msgstr "Node2D"
 
 msgid ""
 "Replaced by :ref:`other 2D Navigation nodes <doc_navigation_overview_2d>`."
-msgstr ""
+msgstr "由\\ :ref:`其他 2D 导航节点 <doc_navigation_overview_2d>`\\ 代替。"
 
-#, fuzzy
 msgid "Navigation3D"
-msgstr "导航"
+msgstr "Navigation3D"
 
 msgid ""
 "Replaced by :ref:`other 3D Navigation nodes <doc_navigation_overview_3d>`."
-msgstr ""
+msgstr "由\\ :ref:`其他 3D 导航节点 <doc_navigation_overview_3d>`\\ 代替。"
 
 msgid "OpenSimplexNoise"
-msgstr ""
+msgstr "OpenSimplexNoise"
 
 msgid "FastNoiseLite"
-msgstr ""
+msgstr "FastNoiseLite"
 
 msgid ""
 "Has different parameters and more noise types such as cellular. No support "
 "for 4D noise as it's absent from the FastNoiseLite library."
 msgstr ""
+"参数不同，额外提供了蜂窝等不同类型的噪声。不支持 4D 噪声，因为 FastNoiseLite "
+"库中没有提供。"
 
-#, fuzzy
 msgid "ToolButton"
-msgstr "按钮。"
+msgstr "ToolButton"
 
-#, fuzzy
 msgid "Button"
-msgstr "按钮。"
+msgstr "Button"
 
 msgid "ToolButton was Button with the **Flat** property enabled by default."
-msgstr ""
+msgstr "ToolButton 是默认启用 **Flat** 属性的 Button。"
 
-#, fuzzy
 msgid "YSort"
-msgstr "``YSort``"
+msgstr "YSort"
 
-#, fuzzy
 msgid "Node2D or Control"
-msgstr "流控制"
+msgstr "Node2D 或 Control"
 
 msgid "CanvasItem has a new **Y Sort Enabled** property in 4.0."
-msgstr ""
+msgstr "4.0 中的 CanvasItem 新增了 **Y Sort Enabled** 属性。"
 
 msgid "ProximityGroup"
-msgstr ""
+msgstr "ProximityGroup"
 
 msgid ":ref:`class_VisibleOnScreenNotifier3D` can act as a replacement."
-msgstr ""
+msgstr ":ref:`class_VisibleOnScreenNotifier3D` 可以作为替代品。"
 
-#, fuzzy
 msgid "Portal"
-msgstr "入口"
+msgstr "Portal"
 
 msgid ""
 "Portal and room occlusion culling was replaced by raster :ref:`occlusion "
 "culling <doc_occlusion_culling>` (OccluderInstance3D node), which requires a "
 "different setup process."
 msgstr ""
+"入口与房间遮挡剔除换成了光栅\\ :ref:`遮挡剔除 <doc_occlusion_culling>`\\ "
+"（OccluderInstance3D 节点），设置流程不同。"
 
-#, fuzzy
 msgid "Room"
-msgstr "房间"
+msgstr "Room"
 
 msgid "RoomManager"
 msgstr "RoomManager"
 
-#, fuzzy
 msgid "RoomGroup"
 msgstr "RoomGroup"
 
-#, fuzzy
 msgid "Occluder"
-msgstr "遮挡器节点"
+msgstr "Occluder"
 
 msgid ""
 "Geometry occlusion culling was replaced by raster :ref:`occlusion culling "
 "<doc_occlusion_culling>` (OccluderInstance3D node), which requires a "
 "different setup process."
 msgstr ""
+"几何体遮挡剔除换成了光栅\\ :ref:`遮挡剔除 <doc_occlusion_culling>`\\ "
+"（OccluderInstance3D 节点），设置流程不同。"
 
 msgid "OccluderShapeSphere"
 msgstr "OccluderShapeSphere"
 
-#, fuzzy
 msgid "Resource"
 msgstr "资源"
 
@@ -1527,29 +1620,36 @@ msgid ""
 "If loading an old project, the node will be replaced with its *Closest "
 "approximation* automatically (even if not using the project upgrade tool)."
 msgstr ""
+"如果加载一个旧版本项目，项目中的节点将自动替换为其 *最近似值*\\ （即使没有使"
+"用项目升级工具）。"
 
-#, fuzzy
 msgid "**Threading changes**"
-msgstr "做出变更"
+msgstr "**改变线程**"
 
 msgid ""
 ":ref:`Threading <doc_using_multiple_threads>` APIs have changed in 4.0. For "
 "example, the following code snippet in Godot 3.x must be modified to work in "
 "4.0:"
 msgstr ""
+":ref:`Threading <doc_using_multiple_threads>` 的API在 4.0 当中发生了变化。例"
+"如：Godot 3.x 中的以下代码片段必须修改后才能在 4.0 当中运行："
 
 msgid ""
 "``Thread.is_active()`` is no longer used and should be converted to ``Thread."
 "is_alive()``."
 msgstr ""
+"``Thread.is_active()`` 已经不再使用，应该使用 ``Thread.is_alive()`` 来代替"
+"它。"
 
 msgid ""
 "See the `changelog <https://github.com/godotengine/godot/blob/master/"
 "CHANGELOG.md>`__ for a full list of changes between Godot 3.x and 4."
 msgstr ""
+"有关 Godot 3.x 和 4 之间的完整变化列表，请参见 `更新日志 <https://github.com/"
+"godotengine/godot/blob/master/CHANGELOG.md>` __。"
 
 msgid "ArrayMesh resource compatibility breakage"
-msgstr ""
+msgstr "ArrayMesh 资源不兼容问题"
 
 msgid ""
 "If you've saved an ArrayMesh resource to a ``.res`` or ``.tres`` file, the "
@@ -1557,10 +1657,13 @@ msgid ""
 "to go through the process of importing the source mesh file and saving it as "
 "an ArrayMesh resource again."
 msgstr ""
+"如果在旧版本项目中你已经将 ArrayMesh 资源保存为了 ``.res`` 或者 ``.tres`` 文"
+"件，由于 4.0 中使用的格式与 3.x 中使用的格式不兼容，那么你需要再次导入源网格"
+"文件并将其保存为 ArrayMesh 资源。"
 
 msgid ""
 "List of automatically renamed methods, properties, signals and constants"
-msgstr ""
+msgstr "自动重命名方法、属性、信号、常量列表"
 
 msgid ""
 "The `editor/renames_map_3_to_4.cpp <https://github.com/godotengine/godot/"
@@ -1569,15 +1672,20 @@ msgid ""
 "commented out refer to API renames that :ref:`cannot be performed "
 "automatically <doc_upgrading_to_godot_4_manual_rename>`."
 msgstr ""
+"`editor/renames_map_3_to_4.cpp <https://github.com/godotengine/godot/blob/"
+"master/editor/renames_map_3_to_4.cpp>` __ 源文件列出了项目升级工具执行的所有"
+"自动重命名。注释掉的行指的是 :ref:`不能自动执行的 "
+"<doc_upgrading_to_godot_4_manual_rename>` API重命名。"
 
-#, fuzzy
 msgid "Porting editor settings"
-msgstr "编辑器设置"
+msgstr "移植编辑器设置"
 
 msgid ""
 "Godot 3.x and 4.0 use different editor settings files. This means their "
 "settings can be changed independently from each other."
 msgstr ""
+"Godot 3.x 和 4.0 使用不同的编辑器设置文件。这意味着它们的设置可以相互独立更"
+"改。"
 
 msgid ""
 "If you wish to port over your Godot 3.x settings to Godot 4, open the :ref:"
@@ -1585,12 +1693,17 @@ msgid ""
 "``editor_settings-3.tres`` to ``editor_settings-4.tres`` while the Godot 4 "
 "editor is closed."
 msgstr ""
+"如果你希望将 Godot 3.x 的设置移植到 Godot 4 ，请打开 :ref:`编辑器设置文件夹 "
+"<doc_data_paths_editor_data_paths>`\\ ，并在 Godot 4 编辑器关闭时复制 "
+"``editor_settings-3.tres`` 到 ``editor_settings-4.tres``\\ 。"
 
 msgid ""
 "Many settings' names and categories have changed since Godot 3.x. Editor "
 "settings whose name or category has changed won't carry over to Godot 4.0; "
 "you will have to set their values again."
 msgstr ""
+"自 Godot 3.x 版本以来，许多设置的名称和类别都发生了变化。名称或类别发生变化的"
+"编辑器设置不会延续到 Godot 4.0，您必须重新设置它们的值。"
 
 msgid "Translation status"
 msgstr "翻译状态"

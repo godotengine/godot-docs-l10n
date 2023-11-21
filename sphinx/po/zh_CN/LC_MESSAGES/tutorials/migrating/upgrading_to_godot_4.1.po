@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,536 +18,560 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Upgrading from Godot 4.0 to Godot 4.1"
-msgstr ""
+msgstr "从 Godot 4.0 升级到 Godot 4.1"
 
 msgid ""
 "For most games and apps made with 4.0, it should be relatively safe to "
 "migrate to 4.1. This page intends to cover everything you need to pay "
 "attention to when migrating your project."
 msgstr ""
+"对于大多数使用 4.0 制作的游戏和应用程序来说，迁移到 4.1 应该相对安全。本页旨"
+"在介绍迁移项目时需要注意的所有事项。"
 
-#, fuzzy
 msgid "Breaking changes"
-msgstr "做出变更"
+msgstr "破坏性更改"
 
 msgid ""
 "If you are migrating from 4.0 to 4.1, the breaking changes listed here might "
 "affect you. Changes are grouped by areas/systems."
 msgstr ""
+"如果你要从 4.0 迁移到 4.1，这里列出的破坏性更改可能会影响到你。更改按照领域/"
+"系统分组。"
 
 msgid ""
 "The GDExtension API completely breaks compatibility in 4.1, so it's not "
 "included in the table below. See the :ref:"
 "`updating_your_gdextension_for_godot_4_1` section for more information."
 msgstr ""
+"GDExtension API 在 4.1 中完全不兼容，因此未列入下表。更多信息请参见 :ref:"
+"`updating_your_gdextension_for_godot_4_1` 部分。"
 
 msgid ""
 "This article indicates whether each breaking change affects GDScript and "
 "whether the C# breaking change is *binary compatible* or *source compatible*:"
 msgstr ""
+"这篇文章指出了每项破坏性改动是否会影响 GDScript，以及 C# 的破坏性改动是 *二进"
+"制兼容* 还是 *源代码兼容*\\ ："
 
 msgid ""
 "**Binary compatible** - Existing binaries will load and execute successfully "
 "without recompilation, and the run-time behavior won't change."
 msgstr ""
+"**二进制兼容** —— 现有二进制文件无需重新编译即可加载并成功执行，运行时的行为"
+"不会改变。"
 
 msgid ""
 "**Source compatible** - Source code will compile successfully without "
 "changes when upgrading Godot."
-msgstr ""
+msgstr "** 源代码兼容** —— 在升级 Godot 时，源代码可成功编译，无需更改。"
 
 msgid "Core"
-msgstr ""
+msgstr "核心"
 
-#, fuzzy
 msgid "Change"
-msgstr "修改"
+msgstr "更改"
 
-#, fuzzy
 msgid "GDScript Compatible"
-msgstr "GDScript 类型"
+msgstr "GDScript 兼容"
 
 msgid "C# Binary Compatible"
-msgstr ""
+msgstr "C# 二进制兼容"
 
 msgid "C# Source Compatible"
-msgstr ""
+msgstr "C# 源代码兼容"
 
-#, fuzzy
 msgid "Introduced"
-msgstr "前言"
+msgstr "引入"
 
-#, fuzzy
 msgid "**Basis**"
-msgstr "Basis"
+msgstr "**Basis**"
 
 msgid "Method ``looking_at`` adds a new ``use_model_front`` optional parameter"
-msgstr ""
+msgstr "``looking_at`` 方法添加了可选的 ``use_model_front`` 参数"
 
 msgid "|✔️|"
-msgstr ""
+msgstr "|✔️|"
 
 msgid "`GH-76082`_"
-msgstr ""
+msgstr "`GH-76082`_"
 
-#, fuzzy
 msgid "**Object**"
-msgstr "Object"
+msgstr "**Object**"
 
 msgid ""
 "Method ``get_meta_list`` changes return type from ``PackedStringArray`` to "
 "``Array[StringName]``"
 msgstr ""
+"``get_meta_list`` 方法的返回类型从 ``PackedStringArray`` 改成了 "
+"``Array[StringName]``"
 
 msgid "|❌|"
-msgstr ""
+msgstr "|❌|"
 
 msgid "`GH-76418`_"
-msgstr ""
+msgstr "`GH-76418`_"
 
-#, fuzzy
 msgid "**Transform3D**"
-msgstr "**Transform2D**"
+msgstr "**Transform3D**"
 
 msgid "**UndoRedo**"
-msgstr ""
+msgstr "**UndoRedo**"
 
 msgid ""
 "Method ``create_action`` adds a new ``backward_undo_ops`` optional parameter"
-msgstr ""
+msgstr "``create_action`` 添加了可选的 ``backward_undo_ops`` 参数"
 
 msgid "|✔️ with compat|"
-msgstr ""
+msgstr "|✔️ with compat|"
 
 msgid "`GH-76688`_"
-msgstr ""
+msgstr "`GH-76688`_"
 
 msgid "**WorkerThreadPool**"
-msgstr ""
+msgstr "**WorkerThreadPool**"
 
 msgid ""
 "Method ``wait_for_task_completion`` changes return type from ``void`` to "
 "``Error``"
 msgstr ""
+"``wait_for_task_completion`` 方法的返回类型从 ``void`` 改成了 ``Error``"
 
 msgid "`GH-77143`_"
-msgstr ""
+msgstr "`GH-77143`_"
 
 msgid "Animation"
 msgstr "动画"
 
-#, fuzzy
 msgid "**AnimationNode**"
-msgstr "动画模式"
+msgstr "**AnimationNode**"
 
 msgid "Method ``_process`` adds a new ``test_only`` parameter"
-msgstr ""
+msgstr "``_process`` 方法添加了 ``test_only`` 参数"
 
 msgid "`GH-75759`_"
-msgstr ""
+msgstr "`GH-75759`_"
 
 msgid "Method ``blend_input`` adds a new ``test_only`` optional parameter"
-msgstr ""
+msgstr "``blend_input`` 方法添加了可选的 ``test_only`` 参数"
 
 msgid "Method ``blend_node`` adds a new ``test_only`` optional parameter"
-msgstr ""
+msgstr "``blend_node`` 方法添加了可选的 ``test_only`` 参数"
 
 msgid "**AnimationNodeStateMachinePlayback**"
-msgstr ""
+msgstr "**AnimationNodeStateMachinePlayback**"
 
 msgid ""
 "Method ``get_travel_path`` changes return type from ``PackedStringArray`` to "
 "``Array[StringName]``"
 msgstr ""
+"``get_travel_path`` 方法的返回类型从 ``PackedStringArray`` 改成了 "
+"``Array[StringName]``"
 
-#, fuzzy
 msgid "2D nodes"
-msgstr "If 节点"
+msgstr "2D 节点"
 
 msgid "**PathFollow2D**"
-msgstr ""
+msgstr "**PathFollow2D**"
 
 msgid "Property ``lookahead`` removed"
-msgstr ""
+msgstr "移除了 ``lookahead`` 属性"
 
 msgid "`GH-72842`_"
-msgstr ""
+msgstr "`GH-72842`_"
 
-#, fuzzy
 msgid "3D nodes"
-msgstr "If 节点"
+msgstr "3D 节点"
 
-#, fuzzy
 msgid "**Geometry3D**"
-msgstr "**sampler3D**"
+msgstr "**Geometry3D**"
 
 msgid ""
 "Method ``segment_intersects_convex`` changes ``planes`` parameter type from "
 "untyped ``Array`` to ``Array[Plane]``"
 msgstr ""
+"方法 ``segment_intersects_convex`` 将 ``planes`` 参数类型从无类型的 "
+"``Array`` 改为 ``Array[Plane]``"
 
-#, fuzzy
 msgid "**MeshInstance3D**"
-msgstr "**实例方法**"
+msgstr "**MeshInstance3D**"
 
 msgid ""
 "Method ``create_multiple_convex_collisions`` adds a new ``settings`` "
 "optional parameter"
 msgstr ""
+"方法 ``create_multiple_convex_collisions`` 增加了一个新的 ``settings`` 可选参"
+"数"
 
 msgid "`GH-72152`_"
-msgstr ""
+msgstr "`GH-72152`_"
 
-#, fuzzy
 msgid "**Node3D**"
-msgstr "**节点：**"
+msgstr "**Node3D**"
 
 msgid "Method ``look_at`` adds a new ``use_model_front`` optional parameter"
-msgstr ""
+msgstr "方法 ``look_at`` 增加了一个新的 ``use_model_front`` 可选参数"
 
 msgid ""
 "Method ``look_at_from_position`` adds a new ``use_model_front`` optional "
 "parameter"
 msgstr ""
+"方法 ``look_at_from_position`` 增加了一个新的 ``use_model_front`` 可选参数"
 
-#, fuzzy
 msgid "GUI nodes"
-msgstr "If 节点"
+msgstr "GUI 节点"
 
 msgid "**CodeEdit**"
-msgstr ""
+msgstr "**CodeEdit**"
 
 msgid ""
 "Method ``add_code_completion_option`` adds a new ``location`` optional "
 "parameter"
 msgstr ""
+"方法 ``add_code_completion_option`` 添加了一个新的 ``location`` 可选参数"
 
 msgid "`GH-75746`_"
-msgstr ""
+msgstr "`GH-75746`_"
 
-#, fuzzy
 msgid "**RichTextLabel**"
-msgstr "RichTextLabel"
+msgstr "**RichTextLabel**"
 
 msgid "Method ``push_list`` adds a new ``bullet`` optional parameter"
-msgstr ""
+msgstr "方法 ``push_list`` 增加了一个新的 ``bullet`` 可选参数"
 
 msgid "`GH-75017`_"
-msgstr ""
+msgstr "`GH-75017`_"
 
 msgid ""
 "Method ``push_paragraph`` adds a new ``justification_flags`` optional "
 "parameter"
 msgstr ""
+"方法 ``push_paragraph`` 增加了一个新的 ``justification_flags`` 可选参数"
 
 msgid "`GH-75250`_"
-msgstr ""
+msgstr "`GH-75250`_"
 
 msgid "Method ``push_paragraph`` adds a new ``tab_stops`` optional parameter"
-msgstr ""
+msgstr "方法 ``push_paragraph`` 增加了一个新的 ``tab_stops`` 可选参数"
 
 msgid "`GH-76401`_"
-msgstr ""
+msgstr "`GH-76401`_"
 
-#, fuzzy
 msgid "**Tree**"
-msgstr "**True**"
+msgstr "**Tree**"
 
 msgid "Method ``edit_selected`` adds a new ``force_edit`` optional parameter"
-msgstr ""
+msgstr "方法 ``edit_selected`` 增加了一个新的 ``force_edit`` 可选参数"
 
 msgid "`GH-76794`_"
-msgstr ""
+msgstr "`GH-76794`_"
 
 msgid "Physics"
-msgstr "物理学"
+msgstr "物理"
 
-#, fuzzy
 msgid "**Area2D**"
-msgstr "Area2D"
+msgstr "**Area2D**"
 
 msgid "Property ``priority`` changes type from ``float`` to ``int``"
-msgstr ""
+msgstr "属性 ``priority`` 类型从 ``float`` 改为 ``int``"
 
 msgid "`GH-72749`_"
-msgstr ""
+msgstr "`GH-72749`_"
 
-#, fuzzy
 msgid "**Area3D**"
-msgstr "Area2D"
+msgstr "**Area3D**"
 
 msgid "**PhysicsDirectSpaceState2D**"
-msgstr ""
+msgstr "**PhysicsDirectSpaceState2D**"
 
 msgid ""
 "Method ``collide_shape`` changes return type from "
 "``Array[PackedVector2Array]`` to ``Array[Vector2]``"
 msgstr ""
+"方法 ``collide_shape`` 将返回类型从 ``Array[PackedVector2Array]`` 改为 "
+"``Array[Vector2]``"
 
 msgid "`GH-75260`_"
-msgstr ""
+msgstr "`GH-75260`_"
 
 msgid "**PhysicsDirectSpaceState3D**"
-msgstr ""
+msgstr "**PhysicsDirectSpaceState3D**"
 
 msgid ""
 "Method ``collide_shape`` changes return type from "
 "``Array[PackedVector3Array]`` to ``Array[Vector3]``"
 msgstr ""
+"方法 ``collide_shape`` 将返回类型从 ``Array[PackedVector3Array]`` 改为 "
+"``Array[Vector3]``"
 
 msgid "Rendering"
 msgstr "渲染"
 
 msgid "**RDShaderFile**"
-msgstr ""
+msgstr "**RDShaderFile**"
 
 msgid ""
 "Method ``get_version_list`` changes return type from ``PackedStringArray`` "
 "to ``Array[StringName]``"
 msgstr ""
+"方法 ``get_version_list`` 将返回类型从 ``PackedStringArray`` 改为 "
+"``Array[StringName]``"
 
-#, fuzzy
 msgid "**RenderingDevice**"
-msgstr "**下划线**"
+msgstr "**RenderingDevice**"
 
 msgid ""
 "Method ``draw_list_begin`` changes ``storage_textures`` parameter type from "
 "untyped ``Array`` to ``Array[RID]``"
 msgstr ""
+"方法 ``draw_list_begin`` 将 ``storage_textures`` 参数类型从无类型的 "
+"``Array`` 改为 ``Array[RID]``"
 
-#, fuzzy
 msgid "**RenderingServer**"
-msgstr "**Server**"
+msgstr "**RenderingServer**"
 
 msgid ""
 "Method ``global_shader_parameter_get_list`` changes return type from "
 "``PackedStringArray`` to ``Array[StringName]``"
 msgstr ""
+"方法 ``global_shader_parameter_get_list`` 将返回类型从 ``PackedStringArray`` "
+"改为 ``Array[StringName]``"
 
-#, fuzzy
 msgid "**SurfaceTool**"
-msgstr "SurfaceTool"
+msgstr "**SurfaceTool**"
 
 msgid ""
 "Method ``add_triangle_fan`` changes ``tangents`` parameter type from untyped "
 "``Array`` to ``Array[Plane]``"
 msgstr ""
+"方法 ``add_triangle_fan`` 将 ``tangents`` 参数类型从无类型的 ``Array`` 改为 "
+"``Array[Plane]``"
 
 msgid "Navigation"
 msgstr "导航"
 
-#, fuzzy
 msgid "**NavigationAgent2D**"
-msgstr "NavigationAgent3D"
+msgstr "**NavigationAgent2D**"
 
 msgid "Method ``set_velocity`` replaced with ``velocity`` property"
-msgstr ""
+msgstr "方法 ``set_velocity`` 被属性 ``velocity`` 所取代"
 
 msgid "`GH-69988`_"
-msgstr ""
+msgstr "`GH-69988`_"
 
 msgid ""
 "Property ``time_horizon`` split into ``time_horizon_agents`` and "
 "``time_horizon_obstacles``"
 msgstr ""
+"属性 ``time_horizon`` 被拆分为 ``time_horizon_agents`` 和 "
+"``time_horizon_obstacles``"
 
-#, fuzzy
 msgid "**NavigationAgent3D**"
-msgstr "NavigationAgent3D"
+msgstr "**NavigationAgent3D**"
 
 msgid "Property ``agent_height_offset`` renamed to ``path_height_offset``"
-msgstr ""
+msgstr "属性 ``agent_height_offset`` 更名为 ``path_height_offset``"
 
 msgid "Property ``ignore_y`` removed"
-msgstr ""
+msgstr "删除了属性 ``ignore_y``"
 
-#, fuzzy
 msgid "**NavigationObstacle2D**"
-msgstr "NavigationObstacle3D"
+msgstr "**NavigationObstacle2D**"
 
 msgid "Property ``estimate_radius`` removed"
-msgstr ""
+msgstr "删除了属性 ``estimate_radius``"
 
 msgid "Method ``get_rid`` renamed to ``get_agent_rid``"
-msgstr ""
+msgstr "方法 ``get_rid`` 更名为 ``get_agent_rid``"
 
-#, fuzzy
 msgid "**NavigationObstacle3D**"
-msgstr "NavigationObstacle3D"
+msgstr "**NavigationObstacle3D**"
 
-#, fuzzy
 msgid "**NavigationServer2D**"
-msgstr "NavigationMesh"
+msgstr "**NavigationServer2D**"
 
 msgid ""
 "Method ``agent_set_callback`` renamed to ``agent_set_avoidance_callback``"
-msgstr ""
+msgstr "方法 ``agent_set_callback`` 更名为 ``agent_set_avoidance_callback``"
 
 msgid "Method ``agent_set_target_velocity`` removed"
-msgstr ""
+msgstr "删除了方法 ``agent_set_target_velocity``"
 
 msgid ""
 "Method ``agent_set_time_horizon`` split into "
 "``agent_set_time_horizon_agents`` and ``agent_set_time_horizon_obstacles``"
 msgstr ""
+"方法 ``agent_set_time_horizon`` 拆分为 ``agent_set_time_horizon_agents`` 和 "
+"``agent_set_time_horizon_obstacles``"
 
-#, fuzzy
 msgid "**NavigationServer3D**"
-msgstr "NavigationMesh"
+msgstr "**NavigationServer3D**"
 
 msgid "Networking"
 msgstr "网络"
 
 msgid "**WebRTCPeerConnectionExtension**"
-msgstr ""
+msgstr "**WebRTCPeerConnectionExtension**"
 
 msgid ""
 "Method ``_create_data_channel`` changes return type from ``Object`` to "
 "``WebRTCDataChannel``"
 msgstr ""
+"方法 ``_create_data_channel`` 将返回类型从 ``Object`` 改为 "
+"``WebRTCDataChannel``"
 
 msgid "`GH-78237`_"
-msgstr ""
+msgstr "`GH-78237`_"
 
 msgid "Editor plugins"
 msgstr "编辑器插件"
 
-#, fuzzy
 msgid "**AnimationTrackEditPlugin**"
-msgstr "动画轨道编辑器"
+msgstr "**AnimationTrackEditPlugin**"
 
-#, fuzzy
 msgid "Type ``AnimationTrackEditPlugin`` removed"
-msgstr "动画轨道编辑器"
+msgstr "``AnimationTrackEditPlugin`` 类型已移除"
 
 msgid "`GH-76413`_"
-msgstr ""
+msgstr "`GH-76413`_"
 
-#, fuzzy
 msgid "**EditorInterface**"
-msgstr "编辑器界面（C++）"
+msgstr "**EditorInterface**"
 
 msgid ""
 "Type ``EditorInterface`` changes inheritance from ``Node`` to ``Object``"
-msgstr ""
+msgstr "``EditorInterface`` 类现在继承自 ``Object`` 而不是 ``Node``"
 
 msgid "`GH-76176`_"
-msgstr ""
+msgstr "`GH-76176`_"
 
 msgid ""
 "Method ``set_movie_maker_enabled`` replaced with ``movie_maker_enabled`` "
 "property"
-msgstr ""
+msgstr "方法 ``set_movie_maker_enabled`` 替换为 ``movie_maker_enabled`` 属性"
 
 msgid ""
 "Method ``is_movie_maker_enabled`` replaced with ``movie_maker_enabled`` "
 "property"
-msgstr ""
+msgstr "方法 ``is_movie_maker_enabled`` 替换为 ``movie_maker_enabled`` 属性"
 
 msgid "**EditorResourcePreviewGenerator**"
-msgstr ""
+msgstr "**EditorResourcePreviewGenerator**"
 
 msgid "Method ``_generate`` adds a new ``metadata`` parameter"
-msgstr ""
+msgstr "``_generate`` 方法添加了 ``metadata`` 参数"
 
 msgid "`GH-64628`_"
-msgstr ""
+msgstr "`GH-64628`_"
 
 msgid "Method ``_generate_from_path`` adds a new ``metadata`` parameter"
-msgstr ""
+msgstr "``_generate_from_path`` 方法添加了 ``metadata`` 参数"
 
 msgid "**EditorUndoRedoManager**"
-msgstr ""
+msgstr "**EditorUndoRedoManager**"
 
-#, fuzzy
 msgid "Behavior changes"
-msgstr "做出变更"
+msgstr "行为更改"
 
 msgid ""
 "In 4.1 some behavior changes have been introduced, which might require you "
 "to adjust your project."
-msgstr ""
+msgstr "4.1 中引入了一些行为的更改，你可能需要调整项目。"
 
-#, fuzzy
 msgid "**SubViewportContainer**"
-msgstr "ViewportContainer"
+msgstr "**SubViewportContainer**"
 
 msgid ""
 "When input events should reach SubViewports and their children, "
 "``SubViewportContainer.mouse_filter`` now needs to be ``MOUSE_FILTER_STOP`` "
 "or ``MOUSE_FILTER_PASS``. See `GH-79271`_ for details."
 msgstr ""
+"当输入事件应传播到 SubViewport 及其子节点时，\\ ``SubViewportContainer."
+"mouse_filter`` 现在需要改为 ``MOUSE_FILTER_STOP`` 或 "
+"``MOUSE_FILTER_PASS``\\ 。详见 `GH-79271`_\\ 。"
 
 msgid "`GH-57894`_"
-msgstr ""
+msgstr "`GH-57894`_"
 
 msgid ""
 "Multiple layered ``SubViewportContainer`` nodes, that should all receive "
 "mouse input events, now need to be replaced by ``Area2D`` nodes. See "
 "`GH-79128`_ for details."
 msgstr ""
+"如果多层 ``SubViewportContainer`` 节点都应接收鼠标输入事件，现在需要用 "
+"``Area2D`` 节点代替。详见 `GH-79128`_\\ 。"
 
-#, fuzzy
 msgid "**Viewport**"
-msgstr "视口"
+msgstr "**Viewport**"
 
 msgid ""
 "``Viewport`` nodes, that have Physics Picking enabled, now automatically set "
 "InputEvents as handled. See `GH-79897`_ for workarounds."
 msgstr ""
+"启用 Physics Picking 的 ``Viewport`` 节点现在会自动将 InputEvent 标记为已处"
+"理。变通方法见 `GH-79897`_\\ 。"
 
 msgid "`GH-77595`_"
-msgstr ""
+msgstr "`GH-77595`_"
 
 msgid "Updating your GDExtension for 4.1"
-msgstr ""
+msgstr "将 GDExtension 更新到 4.1"
 
 msgid ""
 "GDExtension is still in beta. Until it's marked as stable, compatibility may "
 "break when upgrading to a new minor version of Godot."
 msgstr ""
+"GDExtension 仍处于测试阶段。在它被标记为稳定版之前，升级到新的 Godot 小版本时"
+"可能会出现兼容性问题。"
 
 msgid ""
 "In order to fix a serious bug, in Godot 4.1 we had to break binary "
 "compatibility in a big way and source compatibility in a small way."
 msgstr ""
+"为了修复一个严重的错误，在 Godot 4.1 中，我们不得不在很大程度上打破二进制兼容"
+"性，在很小程度上打破源代码兼容性。"
 
 msgid ""
 "This means that GDExtensions made for Godot 4.0 will need to be recompiled "
 "for Godot 4.1 (using the  ``4.1`` branch of godot-cpp), with a small change "
 "to their source code."
 msgstr ""
+"这意味着为 Godot 4.0 制作的 GDExtensions 将需要为 Godot 4.1 重新编译（使用 "
+"godot-cpp 的 ``4.1`` 分支），并对其源代码稍作修改。"
 
-#, fuzzy
 msgid "In Godot 4.0, your \"entry_symbol\" function looks something like this:"
-msgstr "你的场景现在应该看上去类似这样："
+msgstr "在 Godot 4.0 中，你的“entry_symbol”函数应该是这样："
 
 msgid "However, for Godot 4.1, it should look like:"
-msgstr ""
+msgstr "不过，对于 Godot 4.1 来说，它应该是这样的："
 
-#, fuzzy
 msgid "There are two small changes:"
-msgstr "有以下注意事项:"
+msgstr "有 2 个小改动："
 
 msgid ""
 "The first argument changes from ``const GDExtensionInterface *p_interface`` "
 "to ``GDExtensionInterfaceGetProcAddress p_get_proc_address``"
 msgstr ""
+"第一个参数从 ``const GDExtensionInterface *p_interface`` 改为 "
+"``GDExtensionInterfaceGetProcAddress p_get_proc_address``"
 
 msgid ""
 "The constructor for the `init_obj` variable now receives "
 "``p_get_proc_address`` as its first parameter"
 msgstr ""
+"`init_obj` 变量的构造函数现在会接收 ``p_get_proc_address`` 作为第一个参数"
 
 msgid ""
 "You also need to add an extra ``compatibility_minimum`` line to your ``."
 "gdextension`` file, so that it looks something like::"
 msgstr ""
+"您还需要在 ``.gdextension`` 文件中添加额外的 ``compatibility_minimum`` 行，使"
+"其看起来类似于："
 
 msgid ""
 "This lets Godot know that your GDExtension has been updated and is safe to "
 "load in Godot 4.1."
 msgstr ""
+"这会让 Godot 知道您的 GDExtension 已经更新，可以在 Godot 4.1 中安全加载。"
 
 msgid "Translation status"
 msgstr "翻译状态"

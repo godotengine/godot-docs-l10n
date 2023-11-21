@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,9 +45,8 @@ msgstr ""
 msgid "A brief description of the script."
 msgstr "Una descripción textual del recurso."
 
-#, fuzzy
 msgid "Detailed description."
-msgstr "Descripción"
+msgstr "Descripción detallada."
 
 msgid "Tutorials and deprecated/experimental marks."
 msgstr ""
@@ -156,10 +155,11 @@ msgstr ""
 msgid "No tag."
 msgstr ""
 
-msgid ""
-"Variables, constants, signals, and enum values support inline documentation "
-"comments. Note that inline comments do not support tags."
+#, fuzzy
+msgid "Alternatively, you can use inline documentation comments::"
 msgstr ""
+"Alternativamente, puedes construir la documentación ejecutando el programa "
+"``sphinx-build`` manualmente:"
 
 msgid ""
 "The script documentation will update in the editor help window every time "
@@ -211,12 +211,15 @@ msgid ""
 "<doc_bbcode_in_richtextlabel>`."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Godot's class reference supports BBCode-like tags. They add nice formatting "
 "to the text which could also be used in the documentation. See also :ref:"
 "`class reference bbcode <doc_class_reference_bbcode>`."
-msgstr "Mejore el formato con etiquetas de estilo BBCode:"
+msgstr ""
+"La referencia de clases de Godot soporta etiquetas del estilo BBCode. Estas "
+"pueden agregar un formato al texto que también se puede usar en la "
+"documentación. Ver también :ref:`class reference bbcode "
+"<doc_class_reference_bbcode>`."
 
 msgid ""
 "Whenever you link to a member of another class, you need to specify the "
@@ -246,9 +249,8 @@ msgstr "[Class]"
 msgid "Link to class"
 msgstr "Enlazar a una clase"
 
-#, fuzzy
 msgid "``Move the [Sprite2D].``"
-msgstr "Mover el [Sprite]."
+msgstr "``Mueve el [Sprite2D].``"
 
 #, fuzzy
 msgid "Move the :ref:`class_Sprite2D`."
@@ -271,9 +273,8 @@ msgstr ""
 msgid "``[constant Class.name]``"
 msgstr "[señal Clase.nombreseñal]"
 
-#, fuzzy
 msgid "Link to constant"
-msgstr "Define una constante."
+msgstr "Vínculo a constante"
 
 msgid "``See [constant @GlobalScope.KEY_F1].``"
 msgstr ""
@@ -303,9 +304,8 @@ msgstr "[método Clase.nombremetodo]"
 msgid "Link to method"
 msgstr "Métodos de vinculación"
 
-#, fuzzy
 msgid "``Call [method Node3D.hide].``"
-msgstr "Llama [metodo hide]."
+msgstr "``Llama a [method Node3D.hide].``"
 
 #, fuzzy
 msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
@@ -313,15 +313,13 @@ msgstr "Llama a :ref:`hide <class_Spatial_method_hide>`."
 
 #, fuzzy
 msgid "``[member Class.name]``"
-msgstr "[miembro Clase.nombremiembro]"
+msgstr "``[member Class.name]``"
 
-#, fuzzy
 msgid "Link to member"
-msgstr "Editar Miembro"
+msgstr "Vínculo a miembro"
 
-#, fuzzy
 msgid "``Get [member Node2D.scale].``"
-msgstr "Obtén [member Node2D.scale]."
+msgstr "``Obtén [member Node2D.scale].``"
 
 #, fuzzy
 msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
@@ -329,15 +327,14 @@ msgstr "Obtén :ref:`scale <class_Node2D_property_scale>`."
 
 #, fuzzy
 msgid "``[signal Class.name]``"
-msgstr "[señal Clase.nombreseñal]"
+msgstr "``[signal Class.name]``"
 
 #, fuzzy
 msgid "Link to signal"
 msgstr "Usando Señales"
 
-#, fuzzy
 msgid "``Emit [signal Node.renamed].``"
-msgstr "Emita un [signal Node.renamed]."
+msgstr "``Emite [signal Node.renamed].``"
 
 #, fuzzy
 msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
@@ -396,9 +393,8 @@ msgstr "``[b]{text}[/b]``"
 msgid "Bold"
 msgstr "Negrita"
 
-#, fuzzy
 msgid "``Some [b]bold[/b] text.``"
-msgstr "Un texto en [b]negrita[/b]."
+msgstr "``Un texto en [b]negrita[/b].``"
 
 msgid "Some **bold** text."
 msgstr "Algo de texto en **negrita**."
@@ -410,44 +406,38 @@ msgstr "``[i]{text}[/i]``"
 msgid "Italic"
 msgstr "Cursiva"
 
-#, fuzzy
 msgid "``Some [i]italic[/i] text.``"
-msgstr "Un texto en [i]cursiva[/i]."
+msgstr "``Un texto en [i]itálica[/i].``"
 
 msgid "Some *italic* text."
 msgstr "Algo de texto en *cursiva*."
 
-#, fuzzy
 msgid "``[kbd]`` ``[/kbd]``"
-msgstr "[kbd] [/kbd]"
+msgstr "``[kbd]`` ``[/kbd]``"
 
 msgid "Keyboard/mouse shortcut"
 msgstr "Atajo del teclado/ratón"
 
-#, fuzzy
 msgid "``Some [kbd]Ctrl + C[/kbd] key.``"
-msgstr "Alguna tecla [kbd]Ctrl + C[/kbd]."
+msgstr "``Una tecla [kbd]Ctrl + C[/kbd].``"
 
 msgid "Some :kbd:`Ctrl + C` key."
 msgstr "Alguna tecla :kbd:`Ctrl + C`."
 
-#, fuzzy
 msgid "``[code]`` ``[/code]``"
-msgstr "[code] [/code]"
+msgstr "``[code]`` ``[/code]``"
 
 msgid "Monospace"
 msgstr "Monospace"
 
-#, fuzzy
 msgid "``Some [code]monospace[/code] text.``"
-msgstr "Un texto [code]monoespaciado[/code]."
+msgstr "``Un texto [code]monoespaciado[/code].``"
 
 msgid "Some ``monospace`` text."
 msgstr "Algo de texto ``monospace``."
 
-#, fuzzy
 msgid "``[codeblock]`` ``[/codeblock]``"
-msgstr "[codeblock] [/codeblock]"
+msgstr "``[codeblock]`` ``[/codeblock]``"
 
 msgid "Multiline preformatted block"
 msgstr "Bloque pre-formateado con múltiples líneas"
@@ -465,14 +455,13 @@ msgid ""
 "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation (the parser will delete tabs)."
 msgstr ""
 "Usa ``[codeblock]`` para bloques de código preformateados. Dentro de "
-"``[codeblock]``, siempre utiliza **cuatro espacios** para la indentación. El "
-"analizador eliminará las tabulaciones. Por ejemplo:"
+"``[codeblock]``, siempre utiliza **cuatro espacios** para la indentación (el "
+"analizador eliminará las tabulaciones)."
 
 msgid "Translation status"
 msgstr "Estado de traducción"

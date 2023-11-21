@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -47,9 +47,8 @@ msgstr ""
 "时，导出器将提取所有项目文件并创建一个 ``data.pck`` 文件。该文件与特别优化的"
 "二进制文件捆绑在一起，更小、更快，并且不包含编辑器和调试器。"
 
-#, fuzzy
 msgid "Code signing"
-msgstr "启用代码签名。"
+msgstr "启用代码签名"
 
 msgid ""
 "Godot is capable of automatic code signing on export. To do this you must "
@@ -120,26 +119,30 @@ msgstr "环境变量"
 msgid "Encryption / Encryption Key"
 msgstr ""
 
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "GODOT_SCRIPT_ENCRYPTION_KEY"
 
 msgid "Options / Codesign / Identity Type"
 msgstr ""
 
-msgid "GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE``"
+msgstr "GODOT_WINDOWS_CODESIGN_IDENTITY_TYPE"
 
 msgid "Options / Codesign / Identity"
 msgstr ""
 
-msgid "GODOT_WINDOWS_CODESIGN_IDENTITY"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_WINDOWS_CODESIGN_IDENTITY``"
+msgstr "GODOT_WINDOWS_CODESIGN_IDENTITY"
 
 msgid "Options / Codesign / Password"
 msgstr ""
 
-msgid "GODOT_WINDOWS_CODESIGN_PASSWORD"
-msgstr ""
+#, fuzzy
+msgid "``GODOT_WINDOWS_CODESIGN_PASSWORD``"
+msgstr "GODOT_WINDOWS_CODESIGN_PASSWORD"
 
 msgid "Translation status"
 msgstr "翻译状态"

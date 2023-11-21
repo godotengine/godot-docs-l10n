@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,21 +20,19 @@ msgstr ""
 msgid "List of features"
 msgstr "기능 목록"
 
-#, fuzzy
 msgid "This page aims to list **all** features currently supported by Godot."
 msgstr ""
-"이 페이지의 목표는 현재 Godot가 지원하는 모든 기능을 나열하는 것입니다."
+"이 페이지의 목표는 현재 Godot가 지원하는 **모든** 기능을 나열하는 것입니다."
 
 #, fuzzy
 msgid ""
-"This page lists features supported by the current stable version of Godot "
-"(4.0). Some of these features may not be available in the `LTS release "
-"series (3.x) <https://docs.godotengine.org/en/3.5/about/list_of_features."
-"html>`__."
+"This page lists features supported by the current stable version of Godot. "
+"Some of these features may not be available in the `LTS release series (3.x) "
+"<https://docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
 msgstr ""
-"이 페이지는 현재 stable 버전 Godot (3.5)이 지원하는 기능들을 나열하고 있으"
-"며, latest development 버전(4.0)에서는 `더 많은 기능들 <https://docs."
-"godotengine.org/ko/latest/about/list_of_features.html>`__\\ 을 제공합니다."
+"이 페이지는 현재 stable 버전 Godot (4.0)이 지원하는 기능들을 나열하고 있습니"
+"다. 몇몇 기능은 `이전 버전 시리즈 (3.x) <https://docs.godotengine.org/ko/3.5/"
+"about/list_of_features.html>`_에서 작동하지 않을 수 있습니다."
 
 msgid "Platforms"
 msgstr "플랫폼"
@@ -48,9 +46,8 @@ msgstr "Windows 7 이상 (64비트 및 32비트)."
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
 msgstr "macOS 10.12 이상 (64비트, x86 및 ARM)."
 
-#, fuzzy
 msgid "Linux (64-bit, x86 and ARM)."
-msgstr "Linux (64비트 및 32비트, x86 및 ARM)."
+msgstr "Linux (64비트, x86 및 ARM)."
 
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
@@ -63,33 +60,40 @@ msgid "Official binaries are compiled on Ubuntu 14.04."
 msgstr "공식 바이너리는 Ubuntu 14.04에서 컴파일됩니다."
 
 msgid "32-bit binaries can be compiled from source."
-msgstr ""
+msgstr "32비트 바이너리는 소스에서 컴파일할 수 있습니다."
 
 msgid "Android 6.0 and later (editor support is experimental)."
-msgstr ""
+msgstr "Android 6.0 이상 (에디터 지원은 시험 중입니다)."
 
 msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
 "Godot 3.x is recommended instead when targeting HTML5."
 msgstr ""
+":ref:`웹 브라우저 <doc_using_the_web_editor>`. 4.0에서는 시험 중이며, HTML5"
+"을 목표로 개발한다면 Godot 3.x 를 추천드립니다."
 
 msgid "**Runs exported projects:**"
 msgstr "**내보낸 프로젝트를 실행할 수 있는 플랫폼:**"
 
-#, fuzzy
 msgid "iOS 11.0 and later."
-msgstr "iOS 10.0 이상."
+msgstr "iOS 11.0 이상."
 
 msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`콘솔 <doc_consoles>`."
 
-#, fuzzy
 msgid ""
 "Godot aims to be as platform-independent as possible and can be :ref:`ported "
 "to new platforms <doc_custom_platform_ports>` with relative ease."
 msgstr ""
-"Godot는 가능한 한 플랫폼 독립적이고 비교적 쉽게 새로운 플랫폼으로 이식할 수 "
-"있는 것을 목표로 합니다."
+"Godot는 가능한 한 플랫폼 독립적이고 비교적 쉽게 :ref:`새로운 플랫폼으로 "
+"<doc_custom_platform_ports>` 이식할 수 있는 것을 목표로 합니다."
+
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to the web "
+"platform. To use C# on that platform, consider Godot 3 instead. Android and "
+"iOS platform support is available as of Godot 4.2, but is experimental and :"
+"ref:`some limitations apply <doc_c_sharp_platforms>`."
+msgstr ""
 
 msgid "Editor"
 msgstr "에디터"
@@ -120,11 +124,15 @@ msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
 "rendering pipeline."
 msgstr ""
+"렌더링 파이프라인의 각 단계에 대한 CPU 및 GPU 시간 표시를 포함하는 시각적 프"
+"로파일러."
 
 msgid ""
 "Performance monitoring tools, including :ref:`custom performance monitors "
 "<doc_custom_performance_monitors>`."
 msgstr ""
+":ref:`커스텀 퍼포먼스 모니터 <doc_custom_performance_monitors>`를 포함한 퍼포"
+"먼스 모니터링 도구."
 
 msgid "Live script reloading."
 msgstr "실시간 스크립트 리로딩."
@@ -178,13 +186,12 @@ msgstr ""
 "새로운 플러그인을 추가하기 위해 GDScript를 사용하여 :ref:`자신의 플러그인 생"
 "성 <doc_making_plugins>`"
 
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
 "프로젝트 매니저의 :ref:`애셋 라이브러리에서 프로젝트를 다운로드"
-"<doc_using_assetlib_editor>`하고 직접 가져옵니다."
+"<doc_using_assetlib_editor>`하고 바로 가져옵니다."
 
 msgid "Rendering"
 msgstr "렌더링"
@@ -217,15 +224,15 @@ msgstr "2D 그래픽"
 msgid "Sprite, polygon and line rendering."
 msgstr "스프라이트, 폴리곤 및 직선 렌더링."
 
-#, fuzzy
 msgid ""
 "High-level tools to draw lines and polygons such as :ref:`class_Polygon2D` "
 "and :ref:`class_Line2D`, with support for texturing."
-msgstr "Line2D, Polygon2D같은 직선이나 폴리곤을 그리는 고수준 툴."
+msgstr ""
+":ref:`class_Polygon2D` 와 :ref:`class_Line2D`같은 직선이나 폴리곤을 그리는 고"
+"수준 툴."
 
-#, fuzzy
 msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr "애니메이션 스프라이트 제작 도우미 AnimatedSprite."
+msgstr "애니메이션 스프라이트 제작 도우미 AnimatedSprite2D."
 
 msgid "Parallax layers."
 msgstr "패럴랙스 레이어."
@@ -240,11 +247,11 @@ msgstr ""
 
 #, fuzzy
 msgid "Point (omni/spot) and directional 2D lights."
-msgstr "전방위 조명(Omnidirectional lights)."
+msgstr "Point (omni/spot) 및 방향성(directional) 2D 조명."
 
 #, fuzzy
 msgid "Hard or soft shadows (adjustable on a per-light basis)."
-msgstr "빛 반사의 정도는 광원마다 조절할 수 있습니다."
+msgstr "하드 또는 소프트 그림자 (광도 단위로 조정 가능)"
 
 msgid ""
 "Custom shaders can access a real-time :abbr:`SDF (Signed Distance Field)` "
@@ -316,6 +323,12 @@ msgstr "GPU 기반 파티클과 커스텀 파티클 셰이더 지원."
 
 msgid "CPU-based particles."
 msgstr "CPU 기반 파티클."
+
+msgid ""
+"Optional :ref:`2D HDR rendering "
+"<doc_environment_and_post_processing_using_glow_in_2d>` for better glow "
+"capabilities."
+msgstr ""
 
 msgid "2D tools"
 msgstr "2D 툴"
@@ -486,7 +499,10 @@ msgstr "전방위 조명(Omnidirectional lights)."
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "원뿔 모양의 각도와 감쇠(attenuation)를 조정할 수 있는 스포트라이트."
 
-msgid "Specular energy can be adjusted on a per-light basis."
+#, fuzzy
+msgid ""
+"Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
+"light basis."
 msgstr "빛 반사의 정도는 광원마다 조절할 수 있습니다."
 
 msgid ""
@@ -539,8 +555,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"PCSS-like shadow blur based on the light size and distance from the surface "
-"the shadow is cast on."
+":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
+"light size and distance from the surface the shadow is cast on."
 msgstr ""
 
 #, fuzzy
@@ -550,7 +566,10 @@ msgstr "빛 반사의 정도는 광원마다 조절할 수 있습니다."
 msgid "**Global illumination with indirect lighting:**"
 msgstr "**간접 조명을 통한 전역 조명(Global illumination):**"
 
-msgid "Baked lightmaps (fast, but can't be updated at run-time)."
+#, fuzzy
+msgid ""
+":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
+"at run-time)."
 msgstr "베이크된 라이트맵(빠르지만 실행 중 갱신할 수 없습니다)."
 
 msgid ""
@@ -581,19 +600,28 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Voxel-based GI probes. Supports dynamic lights *and* dynamic occluders, "
-"while also supporting reflections. Requires a fast baking step which can be "
-"performed in the editor or at run-time (including from an exported project)."
+"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
+"JNLM, or CPU/GPU-based denoising with OIDN."
 msgstr ""
 
 msgid ""
-"Signed-distance field GI designed for large open worlds. Supports dynamic "
-"lights, but not dynamic occluders. Supports reflections. No baking required."
+":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
+"*and* dynamic occluders, while also supporting reflections. Requires a fast "
+"baking step which can be performed in the editor or at run-time (including "
+"from an exported project)."
 msgstr ""
 
 msgid ""
-"Screen-space indirect lighting (SSIL) at half or full resolution. Fully real-"
-"time and supports any kind of emissive light source (including decals)."
+":ref:`Signed-distance field GI <doc_using_sdfgi>` designed for large open "
+"worlds. Supports dynamic lights, but not dynamic occluders. Supports "
+"reflections. No baking required."
+msgstr ""
+
+msgid ""
+":ref:`Screen-space indirect lighting (SSIL) "
+"<doc_environment_and_post_processing_ssil>` at half or full resolution. "
+"Fully real-time and supports any kind of emissive light source (including "
+"decals)."
 msgstr ""
 
 msgid ""
@@ -607,7 +635,9 @@ msgstr "**반사(Reflections)**"
 
 msgid ""
 "Voxel-based reflections (when using GI probes) and SDF-based reflections "
-"(when using signed distance field GI)."
+"(when using signed distance field GI). Voxel-based reflections are visible "
+"on transparent surfaces, while rough SDF-based reflections are visible on "
+"transparent surfaces."
 msgstr ""
 
 msgid ""
@@ -642,8 +672,8 @@ msgid "**Decals:**"
 msgstr "**기능:**"
 
 msgid ""
-"Supports albedo, emissive, :abbr:`ORM (Occlusion Roughness Metallic)` and "
-"normal mapping."
+":ref:`Supports albedo <doc_using_decals>`, emissive, :abbr:`ORM (Occlusion "
+"Roughness Metallic)`, and normal mapping."
 msgstr ""
 
 msgid ""
@@ -720,6 +750,15 @@ msgstr ""
 msgid "Support for sun scattering in the fog."
 msgstr "비주얼 셰이더 플러그인 지원."
 
+msgid ""
+"Support for controlling how much fog rendering should affect the sky, with "
+"separate controls for traditional and volumetric fog."
+msgstr ""
+
+#, fuzzy
+msgid "Support for making specific materials ignore fog."
+msgstr "비주얼 셰이더 플러그인 지원."
+
 msgid "**Volumetric fog:**"
 msgstr ""
 
@@ -735,7 +774,8 @@ msgstr ""
 
 msgid ""
 "Fog volume nodes that can be placed to add fog to specific areas (or remove "
-"fog from specific areas)."
+"fog from specific areas). Supported shapes include box, ellipse, cone, "
+"cylinder, and 3D texture-based density maps."
 msgstr ""
 
 msgid "Each fog volume can have its own custom shader."
@@ -804,6 +844,11 @@ msgstr ""
 "한 블렌딩 모드(스크린, 소프트 라이트, Add, Replace)."
 
 msgid "Glow can have a colored dirt map texture, acting as a lens dirt effect."
+msgstr ""
+
+msgid ""
+"Glow can be :ref:`used as a screen-space blur effect "
+"<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`."
 msgstr ""
 
 #, fuzzy
@@ -1036,17 +1081,30 @@ msgid "Packaged in a separate binary to keep file sizes and dependencies down."
 msgstr ""
 "파일 크기를 줄이고 의존성을 낮추기 위해 별도의 바이너리로 패키징했습니다."
 
-#, fuzzy
-msgid "Uses .NET 6."
-msgstr "Mono 6.x 버전을 사용합니다."
+msgid "Supports .NET 6 and higher."
+msgstr ""
 
 #, fuzzy
 msgid "Full support for the C# 10.0 syntax and features."
 msgstr "C# 7.0의 구문과 기능을 모두 지원합니다."
 
 msgid ""
-"Supports Windows, Linux and macOS. Mobile/web platforms are currently "
-"unsupported. To use C# on mobile/web platforms, use Godot 3 instead."
+"Supports Windows, Linux, and macOS. As of 4.2 experimental support for "
+"Android and iOS is also available (requires a .NET 7.0 project for Android "
+"and 8.0 for iOS)."
+msgstr ""
+
+msgid ""
+"On the Android platform only some architectures are supported: ``arm64`` and "
+"``x64``."
+msgstr ""
+
+msgid "On the iOS platform only some architectures are supported: ``arm64``."
+msgstr ""
+
+msgid ""
+"The web platform is currently unsupported. To use C# on that platform, "
+"consider Godot 3 instead."
 msgstr ""
 
 msgid ""
@@ -1080,8 +1138,8 @@ msgstr "여러분이 사용하는 어느 빌드 시스템이나 언어든 사용
 
 msgid ""
 "Actively developed GDExtension bindings for `D <https://github.com/godot-"
-"dlang/godot-dlang>`__, `Haxe <https://hxgodot.github.io/>`__, `Python "
-"<https://github.com/touilleMan/godot-python>`__, and `Rust <https://github."
+"dlang/godot-dlang>`__, `Haxe <https://hxgodot.github.io/>`__, `Swift "
+"<https://github.com/migueldeicaza/SwiftGodot>`__, and `Rust <https://github."
 "com/godot-rust/gdextension>`__ bindings provided by the community. (Some of "
 "these bindings may be experimental and not production-ready)."
 msgstr ""
@@ -1659,11 +1717,11 @@ msgstr ""
 msgid "Read XML files using :ref:`class_XMLParser`."
 msgstr ":ref:`class_XMLParser`\\ 을 이용한 XML 파일 읽기."
 
-#, fuzzy
 msgid ""
-"Read and write ZIP files using :ref:`class_ZIPReader` and :ref:"
-"`class_ZIPPacker`."
-msgstr ":ref:`class_File`\\ 을 이용해 텍스트나 바이너리 파일을 읽고 쓰기."
+":ref:`Load and save images, audio/video, fonts and ZIP archives "
+"<doc_runtime_loading_and_saving>` in an exported project without having to "
+"go through Godot's import system."
+msgstr ""
 
 msgid ""
 "Pack game data into a PCK file (custom format optimized for fast seeking), "

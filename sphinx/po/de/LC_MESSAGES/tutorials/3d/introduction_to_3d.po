@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -50,9 +50,8 @@ msgstr ""
 "erstellt wurde, nicht für Mathematiker oder Ingenieure), ebnen Sie sich den "
 "Weg zur effizienten 3D-Spiele Entwicklung."
 
-#, fuzzy
 msgid "Node3D node"
-msgstr "Boolescher Node"
+msgstr "Node3D-Node"
 
 #, fuzzy
 msgid ""
@@ -90,7 +89,6 @@ msgstr ""
 msgid "3D content"
 msgstr "3D Inhalt"
 
-#, fuzzy
 msgid ""
 "Unlike 2D, where loading image content and drawing is straightforward, 3D is "
 "a little more difficult. The content needs to be created with special 3D "
@@ -99,13 +97,13 @@ msgid ""
 "formats are not as standardized as images."
 msgstr ""
 "Im Gegensatz zu 2D wo das Laden von Bildinhalten und Zeichnen einfach ist, "
-"ist 3D etwas schwieriger. Der Inhalt muss mit speziellen 3D-Werkzeugen "
+"ist 3D etwas schwieriger. Der Inhalt muss mit speziellen 3D-Tools "
 "(normalerweise als DCCs bezeichnet) erstellt und in ein Austauschdateiformat "
 "exportiert werden, um in Godot importiert zu werden (3D-Formate sind nicht "
 "so standardisiert wie Bilder)."
 
 msgid "Manually authored models (using 3D modeling software)"
-msgstr ""
+msgstr "Manuell erstellte Modelle (mit 3D-Modellierungssoftware)"
 
 #, fuzzy
 msgid ""
@@ -166,9 +164,10 @@ msgstr "Unmittelbare Geometrie"
 #, fuzzy
 msgid ""
 "If, instead, you need to generate simple geometry that will be updated "
-"often, Godot provides a special node, :ref:`ImmediateMesh "
-"<class_ImmediateMesh>`, which provides an OpenGL 1.x style immediate-mode "
-"API to create points, lines, triangles, etc."
+"often, Godot provides a special :ref:`ImmediateMesh <class_ImmediateMesh>` "
+"resource that can be used in a :ref:`MeshInstance3D <class_MeshInstance3D>` "
+"node. This provides an OpenGL 1.x-style immediate-mode API to create points, "
+"lines, triangles, etc."
 msgstr ""
 "Wenn stattdessen eine einfache Geometrie generiert werden muss, die häufig "
 "aktualisiert wird, stellt Godot einen speziellen Node bereit :ref:"
@@ -205,7 +204,7 @@ msgstr ""
 "in Pixeln verringert wird."
 
 msgid "Environment"
-msgstr "Umgebung"
+msgstr "Environment"
 
 msgid ""
 "Besides editing a scene, it is often common to edit the environment. Godot "
@@ -242,8 +241,8 @@ msgstr ""
 "Die Standardsteuerelemente für die 3D-Szenennavigation ähneln Blender (mit "
 "dem Ziel, eine gewisse Konsistenz in der Pipeline freier Software zu "
 "haben...), aber es sind Optionen enthalten, um die Maustasten und das "
-"Verhalten so anzupassen, dass es anderen Werkzeugen in den Editor-"
-"Einstellungen ähnelt:"
+"Verhalten so anzupassen, dass es anderen Tools in den Editor-Einstellungen "
+"ähnelt:"
 
 msgid "Coordinate system"
 msgstr "Koordinatensystem"
@@ -337,6 +336,58 @@ msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr ""
 "Zum Zentrieren der Ansicht auf das ausgewählte Objekt, drücken Sie :kbd:`F`."
 
+msgid "Using Blender-style transform shortcuts"
+msgstr ""
+
+msgid ""
+"Since Godot 4.2, you can enable Blender-style shortcuts for translating, "
+"rotating and scaling nodes. In Blender, these shortcuts are:"
+msgstr ""
+
+msgid ":kbd:`G` for translating"
+msgstr ""
+
+msgid ":kbd:`R` for rotating"
+msgstr ""
+
+msgid ":kbd:`S` for scaling"
+msgstr ""
+
+msgid ""
+"After pressing a shortcut key while focusing on the 3D editor viewport, move "
+"the mouse or enter a number to move the selected node(s) by the specified "
+"amount in 3D units. You can constrain movement to a specific axis by "
+"specifying the axis as a letter, then the distance (if entering a value with "
+"the keyboard)."
+msgstr ""
+
+msgid ""
+"For instance, to move the selection upwards by 2.5 units, enter the "
+"following sequence in order (Y+ is upwards in Godot):"
+msgstr ""
+
+msgid ":kbd:`G`-:kbd:`Y`-:kbd:`2`-:kbd:`.`-:kbd:`5`-:kbd:`Enter`"
+msgstr ""
+
+msgid ""
+"To use Blender-style transform shortcuts in Godot, go to the Editor "
+"Settings' **Shortcuts** tab, then in the Spatial Editor section:"
+msgstr ""
+
+msgid "Bind **Begin Translate Transformation** to :kbd:`G`."
+msgstr ""
+
+msgid "Bind **Begin Rotate Transformation** to :kbd:`R`."
+msgstr ""
+
+msgid "Bind **Begin Scale Transformation** to :kbd:`S`."
+msgstr ""
+
+msgid ""
+"Finally, unbind **Scale Mode** so that its shortcut won't conflict with "
+"**Begin Rotate Transformation**."
+msgstr ""
+
 msgid "View menu"
 msgstr "Ansicht-Menü"
 
@@ -344,8 +395,8 @@ msgid ""
 "The view options are controlled by the \"View\" menu in the viewport's "
 "toolbar."
 msgstr ""
-"Die Ansichtsoptionen werden über das Menü \"Ansicht\" in der Symbolleiste "
-"des Ansichtsfensters gesteuert."
+"Die Ansichtsoptionen werden über das Menü \"Ansicht\" in der Toolbar des "
+"Viewport gesteuert."
 
 msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
 msgstr ""

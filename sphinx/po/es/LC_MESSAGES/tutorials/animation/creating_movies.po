@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -171,13 +171,12 @@ msgstr ""
 msgid "Command line usage"
 msgstr "Tutorial de línea de comandos"
 
-#, fuzzy
 msgid ""
 "Movie Maker can also be enabled from the :ref:`command line "
 "<doc_command_line_tutorial>`:"
 msgstr ""
-"Para obtener más información sobre los argumentos de la línea de comandos, "
-"consulta el :ref:`tutorial de línea de comandos <doc_command_line_tutorial>`."
+"El Fabricante de Películas puede ser habilitado desde la `línea de comandos "
+"<doc_command_line_tutorial>`:"
 
 msgid ""
 "If the output path is relative, then it is **relative to the project "
@@ -222,9 +221,8 @@ msgid ""
 "more can be implemented by extensions:"
 msgstr ""
 
-#, fuzzy
 msgid "AVI (recommended)"
-msgstr "glTF 2.0 *(recomendado)*."
+msgstr "AVI (recomendado)"
 
 msgid ""
 "AVI container with MJPEG for video and uncompressed audio. Features lossy "
@@ -353,7 +351,9 @@ msgstr "Variables integradas y modos de renderizado"
 
 msgid ""
 "To safely quit a project that is using Movie Maker mode, use the X button at "
-"the top of the window, or call ``get_tree().quit()`` in a script."
+"the top of the window, or call ``get_tree().quit()`` in a script. You can "
+"also use the ``--quit-after N`` command line argument where ``N`` is the "
+"number of frames to render before quitting."
 msgstr ""
 
 msgid ""
@@ -456,9 +456,8 @@ msgid ""
 "those settings with the ``movie`` :ref:`feature tag <doc_feature_tags>`."
 msgstr ""
 
-#, fuzzy
 msgid "Post-processing steps"
-msgstr "Detención de procesamiento."
+msgstr "Pasos para post-procesado"
 
 msgid "Some common post-processing steps are listed below."
 msgstr ""

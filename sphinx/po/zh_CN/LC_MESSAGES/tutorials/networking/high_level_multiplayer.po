@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,9 +29,9 @@ msgid ""
 "add networking to your first nodes, skip to `Initializing the network`_ "
 "below. But make sure to read the rest later on!"
 msgstr ""
-"下面解释了Godot高级, 低级网络的区别以及一些基本原理. 如果您等不及了且将网络添"
-"加到您的第一个节点中, 请跳到下面的 `初始化网络`_ . 但是请确保稍后阅读其余部"
-"分！"
+"下面解释了 Godot 高阶、低阶网络的区别以及一些基本原理。如果你想一头扎进去，直"
+"接为你的最初的节点添加网络功能，请跳到下面的\\ `初始化网络`_\\ 。但是请确保稍"
+"后阅读其余部分！"
 
 #, fuzzy
 msgid ""
@@ -105,7 +105,7 @@ msgid ""
 "API based on :ref:`SceneTree <class_SceneTree>` that does most of the heavy "
 "lifting behind the scenes in a generally optimized way."
 msgstr ""
-"综上所述, 您可以使用低级网络API来实现最大限度的控制, 并在完全裸露的网络协议之"
+"综上所述, 你可以使用低级网络API来实现最大限度的控制, 并在完全裸露的网络协议之"
 "上实现所有功能, 或者使用基于 :ref:`SceneTree <class_SceneTree>` 的高级API, 后"
 "者以通常以一种比较优化的方式在后台完成大部分繁重的工作."
 
@@ -146,7 +146,7 @@ msgid ""
 "Godot's built-in networking, see here for an example: https://github.com/"
 "PerduGames/gdnet3"
 msgstr ""
-"如果您想使用您选择的底层网络库来代替Godot的内置网络, 请参阅这里的示例 : "
+"如果你想使用你选择的底层网络库来代替Godot的内置网络, 请参阅这里的示例 : "
 "https://github.com/PerduGames/gdnet3"
 
 #, fuzzy
@@ -167,12 +167,11 @@ msgid ""
 "with Godot. You can of course experiment, but when you release a networked "
 "application, always take care of any possible security concerns."
 msgstr ""
-"当涉及到网络而与Godot无关时, 情况总是如此. 当然, 您可以进行试验, 但是在发布网"
+"当涉及到网络而与Godot无关时, 情况总是如此. 当然, 你可以进行试验, 但是在发布网"
 "络应用程序时, 请始终注意任何可能的安全问题."
 
-#, fuzzy
 msgid "Mid-level abstraction"
-msgstr "中间层的抽象"
+msgstr "中级抽象"
 
 msgid ""
 "Before going into how we would like to synchronize a game across the "
@@ -200,7 +199,7 @@ msgid ""
 msgstr ""
 "这个对象扩展自 :ref:`PacketPeer <class_PacketPeer>`, 因此它继承了所有用于序列"
 "化, 发送和接收数据的方法. 除此之外, 它还添加了设置节点, 传输模式等的方法. 它"
-"同时还包括当节点连接或断开时将通知您的信号."
+"同时还包括当节点连接或断开时将通知你的信号."
 
 #, fuzzy
 msgid ""
@@ -228,9 +227,8 @@ msgstr ""
 "大多数常见情况下, 不鼓励直接使用这个对象, 因为Godot提供了更高级别的网络使用. "
 "只有当游戏对较低级别的API有特殊需求的情况下, 才使用它."
 
-#, fuzzy
 msgid "Hosting considerations"
-msgstr "导出注意事项"
+msgstr "托管注意事项"
 
 msgid ""
 "When hosting a server, clients on your :abbr:`LAN (Local Area Network)` can "
@@ -337,17 +335,14 @@ msgstr ""
 msgid "The rest are only emitted on clients:"
 msgstr "有以下注意事项:"
 
-#, fuzzy
 msgid "``connected_to_server()``"
-msgstr "``connected_to_server``"
+msgstr "``connected_to_server()``"
 
-#, fuzzy
 msgid "``connection_failed()``"
-msgstr "``connection_failed``"
+msgstr "``connection_failed()``"
 
-#, fuzzy
 msgid "``server_disconnected()``"
-msgstr "``server_disconnected``"
+msgstr "``server_disconnected()``"
 
 msgid "To get the unique ID of the associated peer:"
 msgstr ""
@@ -356,9 +351,8 @@ msgstr ""
 msgid "To check whether the peer is server or client:"
 msgstr "检查树是否被初始化为服务器或客户端:"
 
-#, fuzzy
 msgid "Remote procedure calls"
-msgstr "创建程序式纹理。"
+msgstr "远程过程调用"
 
 msgid ""
 "Remote procedure calls, or RPCs, are functions that can be called on other "
@@ -378,6 +372,20 @@ msgid ""
 msgstr ""
 
 msgid ""
+"If a function is annotated with ``@rpc`` on the client script (resp. server "
+"script), then this function must also be declared on the server script "
+"(resp. client script), and both must have the same signature, **even if this "
+"function is not currently used**."
+msgstr ""
+
+msgid ""
+"If these conditions are not fulfilled, the script may print an error or "
+"cause unwanted behavior. See further explanation and troubleshooting on "
+"`this post <https://github.com/godotengine/godot/"
+"issues/57869#issuecomment-1034215138>`__."
+msgstr ""
+
+msgid ""
 "The annotation can take a number of arguments, which have default values. "
 "``@rpc`` is equivalent to:"
 msgstr ""
@@ -386,9 +394,8 @@ msgstr ""
 msgid "The parameters and their functions are as follows:"
 msgstr "最常见的用例如下:"
 
-#, fuzzy
 msgid "``mode``:"
-msgstr "``node``"
+msgstr "``mode``："
 
 msgid ""
 "``\"authority\"``: Only the multiplayer authority (the server) can call "
@@ -400,9 +407,8 @@ msgid ""
 "transferring user input."
 msgstr ""
 
-#, fuzzy
 msgid "``sync``:"
-msgstr "``remotesync``"
+msgstr "``remotesync`` ："
 
 #, fuzzy
 msgid "``\"call_remote\"``: The function will not be called on the local peer."
@@ -413,9 +419,8 @@ msgid ""
 "when the server is also a player."
 msgstr ""
 
-#, fuzzy
 msgid "``transfer_mode``:"
-msgstr "``transform``"
+msgstr "``transform`` ："
 
 msgid ""
 "``\"unreliable\"`` Packets are not acknowledged, can be lost, and can arrive "
@@ -447,9 +452,8 @@ msgid ""
 "unique id of an rpc sender, when used within the function called by rpc."
 msgstr ""
 
-#, fuzzy
 msgid "Channels"
-msgstr "iChanneli"
+msgstr "通道"
 
 msgid ""
 "Modern networking protocols support channels, which are separate connections "
@@ -475,12 +479,11 @@ msgstr ""
 
 msgid ""
 "The default channel with index 0 is actually three different channels - one "
-"for each tansfer mode."
+"for each transfer mode."
 msgstr ""
 
-#, fuzzy
 msgid "Example lobby implementation"
-msgstr "实现"
+msgstr "大厅的示例实现"
 
 msgid ""
 "This is an example lobby that can handle peers joining and leaving, notify "

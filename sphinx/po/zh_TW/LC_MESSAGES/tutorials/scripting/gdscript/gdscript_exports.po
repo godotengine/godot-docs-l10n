@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,13 +17,10 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "GDScript exports"
-msgstr "GDScript的導出"
-
-msgid "Introduction to exports"
-msgstr "匯出簡介"
-
 #, fuzzy
+msgid "GDScript exported properties"
+msgstr "GDScript的匯出"
+
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
@@ -37,16 +34,15 @@ msgstr ""
 msgid ""
 "In that example the value ``5`` will be saved and visible in the property "
 "editor."
-msgstr ""
+msgstr "在該範例中，值“5”將被儲存並在屬性編輯器中可見。"
 
-#, fuzzy
 msgid ""
 "An exported variable must be initialized to a constant expression or have a "
 "type specifier in the variable. Some of the export annotations have a "
 "specific type and don't need the variable to be typed (see the *Examples* "
 "section below)."
 msgstr ""
-"匯出的變數必須以常數運算式來初始化，或必須以 ``export`` 關鍵字的引數來作為匯"
+"匯出的變數必須以常數運算式來初始化，或必須以 ``export`` 關鍵字的參數來作為匯"
 "出提示 (請參考下方**範例** 一節)。"
 
 msgid ""
@@ -59,29 +55,26 @@ msgstr ""
 "或遊戲設計師之後就能通過修改數值來更改程式的執行方式。為此有一個特殊的匯出語"
 "法。"
 
-#, fuzzy
 msgid ""
 "Exporting properties can also be done in other languages such as C#. The "
 "syntax varies depending on the language. See :ref:`doc_c_sharp_exports` for "
 "information on C# exports."
 msgstr "也可以在其他語言如 C# 中匯出屬性。匯出的語法因語言而異。"
 
-#, fuzzy
 msgid "Basic use"
-msgstr "\\ Basis"
+msgstr "Basic use"
 
 msgid ""
 "If the exported value assigns a constant or constant expression, the type "
 "will be inferred and used in the editor."
-msgstr ""
+msgstr "如果為匯出值分配了常數或常數運算式，就可以推斷型別，在編輯器中使用。"
 
 msgid "If there's no default value, you can add a type to the variable."
-msgstr ""
+msgstr "如果沒有預設值，那麼你可以為變數新增型別。"
 
 msgid "Resources and nodes can be exported."
-msgstr ""
+msgstr "可以匯出資源和節點。"
 
-#, fuzzy
 msgid "Grouping Exports"
 msgstr "建立屬性群組"
 
@@ -91,93 +84,98 @@ msgid ""
 "annotation. Every exported property after this annotation will be added to "
 "the group. Start a new group or use ``@export_group(\"\")`` to break out."
 msgstr ""
+"可以使用 @export_group <class_@GDScript_annotation_@export_group>` 註解將檢視"
+"器中匯出的屬性群組。此註釋後的每個匯出屬性都會新增至群組。開始一個新群組或使"
+"用``@export_group(\"\")`` 來退出。"
 
 msgid ""
 "The second argument of the annotation can be used to only group properties "
 "with the specified prefix."
-msgstr ""
+msgstr "註解的第二個參數可用於僅對具有指定前綴的屬性進行群組。"
 
 msgid ""
 "Groups cannot be nested, use :ref:`@export_subgroup "
 "<class_@GDScript_annotation_@export_subgroup>` to create subgroups within a "
 "group."
 msgstr ""
+"群組不能巢狀，請使用:ref:`@export_subgroup "
+"<class_@GDScript_annotation_@export_subgroup>` 在群組內建立子群組。"
 
 msgid ""
 "You can also change the name of your main category, or create additional "
 "categories in the property list with the :ref:`@export_category "
 "<class_@GDScript_annotation_@export_category>` annotation."
 msgstr ""
+"您也可以變更主類別的名稱，或使用 @export_category "
+"<class_@GDScript_annotation_@export_category>` 註解在屬性列表中建立其他類別。"
 
 msgid ""
 "The list of properties is organized based on the class inheritance and new "
 "categories break that expectation. Use them carefully, especially when "
 "creating projects for public use."
 msgstr ""
+"屬性列表是根據類別繼承來組織的，而新類別打破了這種期望。謹慎使用它們，尤其是"
+"在建立供公共使用的專案時。"
 
-#, fuzzy
 msgid "Strings as paths"
 msgstr "每行字數限制"
 
-#, fuzzy
 msgid "String as a path to a file."
 msgstr "使用檔案"
 
 msgid "String as a path to a directory."
-msgstr ""
+msgstr "字串是目錄的路徑。"
 
 msgid "String as a path to a file, custom filter provided as hint."
-msgstr ""
+msgstr "字串是檔的路徑，在提示中提供自訂篩檢程式。"
 
 msgid ""
 "Using paths in the global filesystem is also possible, but only in scripts "
 "in tool mode."
-msgstr ""
+msgstr "也可以使用全域檔案系統中的路徑，但是僅支援工具模式的腳本。"
 
 msgid "String as a path to a PNG file in the global filesystem."
-msgstr ""
+msgstr "字串是全域檔案系統中某個 PNG 檔的路徑。"
 
 msgid "String as a path to a directory in the global filesystem."
-msgstr ""
+msgstr "字串是全域檔案系統中某個目錄的路徑。"
 
 msgid ""
 "The multiline annotation tells the editor to show a large input field for "
 "editing over multiple lines."
-msgstr ""
+msgstr "多行註解告訴編輯器顯示一個大的輸入欄位以進行多行編輯。"
 
-#, fuzzy
 msgid "Limiting editor input ranges"
 msgstr "翻譯現有頁面"
 
 msgid "Allow integer values from 0 to 20."
-msgstr ""
+msgstr "允許 0 到 20 之間的整數。"
 
 msgid "Allow integer values from -10 to 20."
-msgstr ""
+msgstr "允許 -10 到 20 之間的整數。"
 
 msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
-msgstr ""
+msgstr "允許 -10 到 20 之間的數，對齊到 0.2 的倍數。"
 
 msgid ""
 "The limits can be only for the slider if you add the hints \"or_greater\" "
 "and/or \"or_less\"."
-msgstr ""
+msgstr "如果新增提示“or_greater”和/或“or_less”，則限制只能適用於滑桿。"
 
 msgid "Floats with easing hint"
-msgstr ""
+msgstr "帶緩動提示的浮點數"
 
 msgid "Display a visual representation of the 'ease()' function when editing."
-msgstr ""
+msgstr "編輯時顯示“ease()”函式的可視化表示。"
 
-#, fuzzy
 msgid "Colors"
 msgstr "顏色"
 
 msgid "Regular color given as red-green-blue-alpha value."
-msgstr ""
+msgstr "使用紅、綠、藍、Alpha 值指定的普通顏色。"
 
 msgid "Color given as red-green-blue value (alpha will always be 1)."
-msgstr ""
+msgstr "使用紅、綠、藍值指定的顏色（Alpha 始終為 1）。"
 
 msgid "Nodes"
 msgstr "節點"
@@ -186,15 +184,18 @@ msgid ""
 "Since Godot 4.0, nodes can be directly exported as properties in a script "
 "without having to use NodePaths:"
 msgstr ""
+"從 Godot 4.0 開始，腳本中可以直接將節點作為屬性匯出，不必再使用 NodePath："
 
 msgid ""
 "Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
-msgstr ""
+msgstr "如果需要，仍然可以和 Godot 3.x 中一樣匯出 NodePath："
 
 msgid ""
 "If you want to limit the types of nodes for NodePaths, you can use the :ref:"
 "`@export_node_path<class_@GDScript_annotation_@export_node_path>` annotation:"
 msgstr ""
+"如果你想要限制 NodePath 的型別，可以使用 :ref:"
+"`@export_node_path<class_@GDScript_annotation_@export_node_path>` 注解："
 
 msgid "Resources"
 msgstr "資源"
@@ -202,18 +203,20 @@ msgstr "資源"
 msgid ""
 "In the Inspector, you can then drag and drop a resource file from the "
 "FileSystem dock into the variable slot."
-msgstr ""
+msgstr "在屬性面板中，您可以將資源檔案從檔案系統停靠欄拖曳到變數槽中。"
 
 msgid ""
 "Opening the inspector dropdown may result in an extremely long list of "
 "possible classes to create, however. Therefore, if you specify an extension "
 "of Resource such as:"
 msgstr ""
+"然而，開啟屬性面板下拉列表可能會導致要建立的可能類別的列表非常長。因此，如果"
+"您指定 Resource 的擴充，例如："
 
 msgid ""
 "The drop-down menu will be limited to AnimationNode and all its inherited "
 "classes."
-msgstr ""
+msgstr "下拉式選單將僅限於 AnimationNode 及其所有繼承類別。"
 
 msgid ""
 "It must be noted that even if the script is not being run while in the "
@@ -226,7 +229,6 @@ msgstr ""
 msgid "Exporting bit flags"
 msgstr "匯出位元旗標"
 
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the ``@export_flags`` annotation, they can "
@@ -246,26 +248,26 @@ msgstr ""
 "ELEMENT_WIND = 8`` 等)。"
 
 msgid "You can add explicit values using a colon::"
-msgstr ""
+msgstr "您可以使用冒號新增明確的值::"
 
 msgid ""
 "Only power of 2 values are valid as bit flags options. The lowest allowed "
 "value is 1, as 0 means that nothing is selected. You can also add options "
 "that are a combination of other flags::"
 msgstr ""
+"只有 2 的冪值作為位元旗標選項才有效。允許的最低值為 1，因為 0 表示未選擇任何"
+"內容。您也可以新增其他旗標組合的選項："
 
-#, fuzzy
 msgid ""
 "Export annotations are also provided for the physics, render, and navigation "
 "layers defined in the project settings::"
-msgstr "匯出提示在專案設定中也定義了物理與算繪層："
+msgstr "匯出提示在專案設定中也定義了物理與渲染層："
 
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr "使用位元旗標會需要理解位元運算子。若不確定的話，則應該使用布林變數。"
 
-#, fuzzy
 msgid "Exporting enums"
 msgstr "匯出選單"
 
@@ -275,6 +277,9 @@ msgid ""
 "widget in the Inspector, enumerating the following as \"Thing 1\", \"Thing "
 "2\", \"Another Thing\". The value will be stored as an integer."
 msgstr ""
+"可以使用引用列舉的型別提示匯出屬性，以將其值限制為列舉的值。編輯器將在屬性面"
+"板中建立一個小元件，將以下內容列舉為「Thing 1」、「Thing 2」、「Another "
+"Thing」。該值將儲存為整數。"
 
 msgid ""
 "Integer and string properties can also be limited to a specific list of "
@@ -284,12 +289,16 @@ msgid ""
 "Magician, Thief. The value will be stored as an integer, corresponding to "
 "the index of the selected option (i.e. ``0``, ``1``,  or ``2``)."
 msgstr ""
+"也可以使用 @export_enum <class_@GDScript_annotation_@export_enum>` 註解將整數"
+"和字串屬性限制為特定的值列表。編輯器將在 Inspector 中建立一個小元件，列舉以下"
+"角色：戰士、魔術師、小偷。該值將儲存為整數，對應於所選選項的索引"
+"（即“0”、“1”或“2”）。"
 
 msgid "If the type is String, the value will be stored as a string."
-msgstr ""
+msgstr "如果是 ``string`` , 檔將從該路徑載入."
 
 msgid "If you want to set an initial value, you must specify it explicitly::"
-msgstr ""
+msgstr "如果你想設定一個初始值，你必須明確指定它::"
 
 msgid "Exporting arrays"
 msgstr "匯出陣列"
@@ -307,17 +316,16 @@ msgstr ""
 "系統中一次拖放多個檔案過來。"
 
 msgid "The default value **must** be a constant expression."
-msgstr ""
+msgstr "此預設的選項的預設值."
 
 msgid "Exported arrays can specify type (using the same hints as before)."
-msgstr ""
+msgstr "匯出的陣列可以指定型別（使用與之前相同的提示）。"
 
 msgid ""
 "You can omit the default value, but it would then be ``null`` if not "
 "assigned."
-msgstr ""
+msgstr "您可以省略預設值，但如果未分配，它將是“null”。"
 
-#, fuzzy
 msgid ""
 "Arrays with specified types which inherit from resource can be set by drag-"
 "and-dropping multiple files from the FileSystem dock."
@@ -326,12 +334,11 @@ msgstr ""
 "系統中一次拖放多個檔案過來。"
 
 msgid "Packed type arrays also work, but only initialized empty:"
-msgstr ""
+msgstr "打包型別陣列也可以工作，但只能初始化為空："
 
 msgid "Setting exported variables from a tool script"
 msgstr "從工具腳本中設定匯出變數"
 
-#, fuzzy
 msgid ""
 "When changing an exported variable's value from a script in :ref:"
 "`doc_gdscript_tool_mode`, the value in the inspector won't be updated "
@@ -359,9 +366,10 @@ msgstr ""
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_set() "
-"<class_Object_method__set>`, :ref:`_get() <class_Object_method__get>`, and :"
-"ref:`_get_property_list() <class_Object_method__get_property_list>` methods "
-"as described in :ref:`doc_accessing_data_or_logic_from_object`."
+"<class_Object_private_method__set>`, :ref:`_get() "
+"<class_Object_private_method__get>`, and :ref:`_get_property_list() "
+"<class_Object_private_method__get_property_list>` methods as described in :"
+"ref:`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 "在進一步閱讀之前，建議您先熟悉屬性的處理方法以及如何使用 :ref:`_set() "
 "<class_Object_method__get_property_list>`, :ref:`_get() "

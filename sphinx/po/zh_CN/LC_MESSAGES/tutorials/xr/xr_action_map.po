@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "The XR action map"
-msgstr "动画面板"
+msgstr "XR 动作映射"
 
 msgid ""
 "Godot has an action map feature as part of the XR system. At this point in "
@@ -40,10 +39,12 @@ msgid ""
 "As the XR action map is currently part of the OpenXR module, OpenXR needs to "
 "be enabled in your project settings to expose it:"
 msgstr ""
+"由于 XR 动作映射目前是 OpenXR 模块的一部分，因此需要在项目设置中启用 OpenXR "
+"才能显示它："
 
 msgid ""
 "You will then find the XR Action Map interface in the bottom of the screen:"
-msgstr ""
+msgstr "然后，你会在屏幕底部看到 XR 行动地图界面："
 
 msgid ""
 "Godot's built-in input system has many things in common with the XR action "
@@ -73,11 +74,11 @@ msgstr ""
 msgid ""
 "Godot's input system allows changes to what inputs are bound to actions in "
 "runtime, OpenXR does not."
-msgstr ""
+msgstr "Godot 的输入系统允许在运行时更改输入与操作的绑定，而 OpenXR 则不允许。"
 
 msgid ""
 "Godot's input system is based on device ids which are meaningless in OpenXR."
-msgstr ""
+msgstr "Godot 的输入系统基于设备 ID，而这在 OpenXR 中毫无意义。"
 
 msgid ""
 "This does mean that a game/application that mixes traditional inputs with XR "
@@ -86,14 +87,13 @@ msgid ""
 "limitation of the system."
 msgstr ""
 
-#, fuzzy
 msgid "The default action map"
-msgstr "漂浮动画"
+msgstr "默认动作映射"
 
 msgid ""
 "Godot will automatically create a default action map if no action map file "
 "is found."
-msgstr ""
+msgstr "如果找不到操作映射文件，Godot 会自动创建默认操作映射。"
 
 msgid ""
 "This default map was designed to help developers port their XR games/"
@@ -112,9 +112,8 @@ msgid ""
 "remove the controllers that you do not wish to setup, more on this later."
 msgstr ""
 
-#, fuzzy
 msgid "Action sets"
-msgstr "动作"
+msgstr "动作集"
 
 msgid ""
 "Before we dive in, you will see the term XR runtime used throughout this "
@@ -200,9 +199,8 @@ msgstr ""
 msgid "The columns in our table are as follows:"
 msgstr "最常见的用例如下:"
 
-#, fuzzy
 msgid "Col"
-msgstr "颜色"
+msgstr "Col"
 
 msgid "Value"
 msgstr "值"
@@ -213,9 +211,8 @@ msgstr "描述"
 msgid "1"
 msgstr "1"
 
-#, fuzzy
 msgid "my_first_action_set"
-msgstr "限制"
+msgstr "my_first_action_set"
 
 msgid ""
 "This is the internal name of the action set. OpenXR doesn't specify specific "
@@ -325,7 +322,7 @@ msgid ""
 msgstr ""
 
 msgid "aim_pose"
-msgstr ""
+msgstr "aim_pose"
 
 msgid ""
 "This is the internal name of the action. OpenXR doesn't specify specific "
@@ -344,9 +341,8 @@ msgstr ""
 msgid "Pose"
 msgstr ""
 
-#, fuzzy
 msgid "The type of this action."
-msgstr "主题类型变种"
+msgstr "主题类型变种。"
 
 msgid ""
 "OpenXR defines a number of bindable input poses that are commonly available "
@@ -463,9 +459,8 @@ msgstr ""
 msgid "Now that we have our basic actions defined, it's time to hook them up."
 msgstr ""
 
-#, fuzzy
 msgid "Profiles"
-msgstr "分析器"
+msgstr "配置文件"
 
 msgid ""
 "In OpenXR controller bindings are captured in so-called \"Interaction "
@@ -577,9 +572,8 @@ msgid ""
 "accessible. This is actively being worked on however."
 msgstr ""
 
-#, fuzzy
 msgid "Our first controller binding"
-msgstr "自动图块绑定"
+msgstr "第一个控制器绑定"
 
 msgid ""
 "Let's set up our first controller binding, using the Touch controller as an "
@@ -597,9 +591,8 @@ msgid ""
 "use the ``+`` next to each entry to bind it to an action:"
 msgstr ""
 
-#, fuzzy
 msgid "Let's finish our configuration:"
-msgstr "引擎配置"
+msgstr "引擎配置："
 
 msgid ""
 "Each action is bound the given input or output for both controllers to "
@@ -663,9 +656,8 @@ msgid ""
 "features of your game/application."
 msgstr ""
 
-#, fuzzy
 msgid "The simple controller"
-msgstr "创建控制器"
+msgstr "简单控制器"
 
 msgid ""
 "The \"Simple controller\" is a generic controller that OpenXR offers as a "

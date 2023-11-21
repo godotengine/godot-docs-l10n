@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,146 +23,163 @@ msgstr "分數與重玩"
 msgid ""
 "In this part, we'll add the score, music playback, and the ability to "
 "restart the game."
-msgstr ""
+msgstr "在這一部分中，我們會新增計分、播放音樂、重啟遊戲的能力。"
 
 msgid ""
 "We have to keep track of the current score in a variable and display it on "
 "screen using a minimal interface. We will use a text label to do that."
 msgstr ""
+"我們要用一個變數來記錄目前的分數，使用最簡的介面在螢幕上顯示。我們會用文字標"
+"籤來實作。"
 
 msgid ""
 "In the main scene, add a new child node :ref:`Control <class_Control>` to "
 "``Main`` and name it ``UserInterface``. You will automatically be taken to "
 "the 2D screen, where you can edit your User Interface (UI)."
 msgstr ""
+"在主場景中，新增一個新的 :ref:`Control <class_Control>` 節點作為 ``Main`` 的"
+"子項，命名為 ``UserInterface``。你會被自動切換到 2D 螢幕，可以在這裡編輯你的"
+"使用者介面 User Interface（UI）。"
 
-#, fuzzy
 msgid "Add a :ref:`Label <class_Label>` node and name it ``ScoreLabel``"
 msgstr ":ref:`Label <class_Label>` ，命名為 ``ScoreLabel`` 。"
 
 msgid "|image1|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image1"
-msgstr "\\ |image1|"
+msgstr "image1"
 
 msgid ""
 "In the *Inspector*, set the *Label*'s *Text* to a placeholder like \"Score: "
 "0\"."
-msgstr ""
+msgstr "在*屬性面板*中將該 *Label* 的 *Text* 設為類似“Score: 0”的占位元內容。"
 
 msgid "|image2|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image2"
-msgstr "\\ |image2|"
+msgstr "image2"
 
 msgid ""
 "Also, the text is white by default, like our game's background. We need to "
 "change its color to see it at runtime."
 msgstr ""
+"並且，文字預設是白色的，和我們的遊戲背景一樣。我們需要修改它的顏色，才能在運"
+"作時看到。"
 
 msgid ""
 "Scroll down to *Theme Overrides*, and expand *Colors* and enable *Font "
 "Color* in order to tint the text to black (which contrasts well with the "
 "white 3D scene)"
 msgstr ""
+"向下滾動到 *Theme Overrides*（主題覆蓋）然後展開 *Colors*（顏色）並點擊 "
+"*Font Color*（字形顏色）旁邊的黑框來為文字著色"
 
 msgid "|image3|"
 msgstr "\\ |image3|"
 
-#, fuzzy
 msgid "image3"
-msgstr "\\ |image3|"
+msgstr "image3"
 
 msgid ""
 "Finally, click and drag on the text in the viewport to move it away from the "
 "top-left corner."
-msgstr ""
+msgstr "最後按一下視口中的文字，將其拖離左上角。"
 
 msgid "|image4|"
 msgstr "\\ |image4|"
 
-#, fuzzy
 msgid "image4"
-msgstr "\\ |image4|"
+msgstr "image4"
 
 msgid ""
 "The ``UserInterface`` node allows us to group our UI in a branch of the "
 "scene tree and use a theme resource that will propagate to all its children. "
 "We'll use it to set our game's font."
 msgstr ""
+"``UserInterface`` 節點讓我們可以將 UI 組合到場景樹的一個分支上，並且也讓主題"
+"資源能夠傳播到它的所有子節點上。我們將會用它來設定遊戲的字形。"
 
-#, fuzzy
 msgid "Creating a UI theme"
-msgstr "創建內容"
+msgstr "建立內容"
 
 msgid ""
 "Once again, select the ``UserInterface`` node. In the *Inspector*, create a "
 "new theme resource in *Theme -> Theme*."
 msgstr ""
+"再次選中 ``UserInterface`` 節點。在*屬性面板*中為 *Theme -> Theme* 建立一個新"
+"的主題資源。"
 
 msgid "|image5|"
 msgstr "\\ |image5|"
 
-#, fuzzy
 msgid "image5"
-msgstr "\\ |image5|"
+msgstr "image5"
 
 msgid ""
 "Click on it to open the theme editor In the bottom panel. It gives you a "
 "preview of how all the built-in UI widgets will look with your theme "
 "resource."
 msgstr ""
+"按一下這個資源就會在底部面板中打開主題編輯器。會展示使用你的主題資源時內建 "
+"UI 控制項的外觀。"
 
 msgid "|image6|"
-msgstr ""
+msgstr "|image6|"
 
-#, fuzzy
 msgid "image6"
-msgstr "\\ |image1|"
+msgstr "image6"
 
 msgid "By default, a theme only has one property, the *Default Font*."
-msgstr ""
+msgstr "預設情況下，主題只有一個屬性，*Default Font*（預設字形）。"
 
 msgid ""
 "You can add more properties to the theme resource to design complex user "
 "interfaces, but that is beyond the scope of this series. To learn more about "
 "creating and editing themes, see :ref:`doc_gui_skinning`."
 msgstr ""
+"你可以為主題資源新增更多屬性，從而設計更複雜的使用者介面，不過這就超出本系列"
+"的範疇了。要學習主題的建立和編輯，請參閱 :ref:`doc_gui_skinning`。"
 
 msgid ""
 "This one expects a font file like the ones you have on your computer. Two "
 "common font file formats are TrueType Font (TTF) and OpenType Font (OTF)."
 msgstr ""
+"這裡需要的是一個字形檔，就是你電腦上用的那種。常見的字形檔案格式有兩種："
+"TrueType 字形（TTF）和 OpenType 字形（OTF）。"
 
 msgid ""
 "In the *FileSystem* dock, expand the ``fonts`` directory and click and drag "
 "the ``Montserrat-Medium.ttf`` file we included in the project onto the "
 "*Default Font*. The text will reappear in the theme preview."
 msgstr ""
+"在*檔案系統*面板中，展開 ``fonts`` 目錄，按一下我們包含在專案裡的 "
+"``Montserrat-Medium.ttf`` 檔案並將其拖放到*Default Font*（預設字形）上。文字"
+"就又會出現在主題預覽中了。"
 
 msgid ""
 "The text is a bit small. Set the *Default Font Size* to ``22`` pixels to "
 "increase the text's size."
 msgstr ""
+"文字有一點小。將*Default Font Size*（預設字形大小）設定為 ``22`` 像素即可增大"
+"文字的大小。"
 
 msgid "|image7|"
-msgstr ""
+msgstr "|image7|"
 
-#, fuzzy
 msgid "image7"
-msgstr "\\ |image1|"
+msgstr "image7"
 
 msgid "Keeping track of the score"
-msgstr ""
+msgstr "追蹤得分"
 
 msgid ""
 "Let's work on the score next. Attach a new script to the ``ScoreLabel`` and "
 "define the ``score`` variable."
 msgstr ""
+"我們下一步是進行計分。為 ``ScoreLabel`` 附加一個新的腳本，並在其中定義 "
+"``score``（分數）變數。"
 
 msgid ""
 "The score should increase by ``1`` every time we squash a monster. We can "
@@ -170,47 +187,52 @@ msgid ""
 "instantiate monsters from the code, we cannot connect the mob signal to the "
 "``ScoreLabel`` via the editor."
 msgstr ""
+"每踩扁一隻怪物，這個分數就應該加 ``1``。我們可以使用它們的 ``squashed`` 訊號"
+"來得知發生的時間。不過，因為我們是用程式碼產生實體的怪物，我們無法在編輯器中"
+"將怪物的訊號連接到 ``ScoreLabel``。"
 
 msgid ""
 "Instead, we have to make the connection from the code every time we spawn a "
 "monster."
-msgstr ""
+msgstr "不過，我們可以在每次生成一隻怪物時通過程式碼來進行連接。"
 
 msgid ""
 "Open the script ``main.gd``. If it's still open, you can click on its name "
 "in the script editor's left column."
 msgstr ""
+"打開 ``main.gd`` 腳本。如果它還開著，你可以在腳本編輯器左欄中點擊它的名字。"
 
 msgid "|image8|"
-msgstr ""
+msgstr "|image8|"
 
-#, fuzzy
 msgid "image8"
-msgstr "\\ |image1|"
+msgstr "image8"
 
 msgid ""
 "Alternatively, you can double-click the ``main.gd`` file in the *FileSystem* "
 "dock."
-msgstr ""
+msgstr "另一種方法是在*檔案系統*面板中按兩下 ``main.gd`` 檔案。"
 
 msgid ""
 "At the bottom of the ``_on_mob_timer_timeout()`` function, add the following "
 "line:"
-msgstr ""
+msgstr "在 ``_on_mob_timer_timeout()`` 函式的最後新增下面這行程式碼:"
 
 msgid ""
 "This line means that when the mob emits the ``squashed`` signal, the "
 "``ScoreLabel`` node will receive it and call the function "
 "``_on_mob_squashed()``."
 msgstr ""
+"這一行的意思是，當小怪發出 ``squashed`` 訊號時，``ScoreLabel`` 節點就會接收到"
+"並呼叫 ``_on_mob_squashed()`` 函式。"
 
 msgid ""
 "Head back to the ``ScoreLabel.gd`` script to define the "
 "``_on_mob_squashed()`` callback function."
-msgstr ""
+msgstr "回到 ``ScoreLabel.gd`` 腳本，定義回呼函式 ``_on_mob_squashed()``。"
 
 msgid "There, we increment the score and update the displayed text."
-msgstr ""
+msgstr "這裡我們將進行加分並更新顯示的文字。"
 
 msgid ""
 "The second line uses the value of the ``score`` variable to replace the "
@@ -218,23 +240,27 @@ msgid ""
 "values to string text, which is convenient when outputting text in labels or "
 "when using the ``print()`` function."
 msgstr ""
+"第二行用 ``score`` 變數的值替換預留位置 ``%s``。使用此功能時，Godot 會自動將"
+"值轉換為字串文字，這在向標籤中輸出文字或者使用 ``print()`` 函式時非常方便。"
 
 msgid ""
 "You can learn more about string formatting here: :ref:`doc_gdscript_printf`. "
 "In C#, consider using `string interpolation with \"$\" <https://learn."
 "microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated>`_."
 msgstr ""
+"可以在 :ref:`doc_gdscript_printf` 學習字串格式化相關的更多資訊。在 C# 中請考"
+"慮`使用“$”進行字串插值 <https://learn.microsoft.com/en-us/dotnet/csharp/"
+"language-reference/tokens/interpolated>`_。"
 
 msgid ""
 "You can now play the game and squash a few enemies to see the score increase."
-msgstr ""
+msgstr "你現在可以玩遊戲，壓死幾個敵人，看看分數的增長。"
 
 msgid "|image9|"
-msgstr ""
+msgstr "|image9|"
 
-#, fuzzy
 msgid "image9"
-msgstr "\\ |image1|"
+msgstr "image9"
 
 msgid ""
 "In a complex game, you may want to completely separate your user interface "
@@ -243,8 +269,11 @@ msgid ""
 "object. But when prototyping or when your project is simple, it is fine to "
 "keep your code simple. Programming is always a balancing act."
 msgstr ""
+"在一個複雜的遊戲中，你可能想把你的使用者介面與遊戲世界完全分開。在這種情況"
+"下，你就不會在標籤上記錄分數了。相反，你可能想把它儲存在一個單獨的、專門的物"
+"件中。但當原型設計或你的專案很簡單時，保持你的程式碼簡單就可以了。程式設計總"
+"是一種平衡的行為。"
 
-#, fuzzy
 msgid "Retrying the game"
 msgstr "執行遊戲"
 
@@ -252,6 +281,8 @@ msgid ""
 "We'll now add the ability to play again after dying. When the player dies, "
 "we'll display a message on the screen and wait for input."
 msgstr ""
+"我們現在就要新增死亡後重玩的能力。玩家死亡後，我們會在螢幕上現實一條消息並等"
+"待輸入。"
 
 msgid ""
 "Head back to the ``main.tscn`` scene, select the ``UserInterface`` node, add "
@@ -259,40 +290,42 @@ msgid ""
 "node fills a rectangle with a uniform color and will serve as an overlay to "
 "darken the screen."
 msgstr ""
+"回到 ``main.tscn`` 場景，選中 ``UserInterface`` 節點，新增 :ref:`ColorRect "
+"<class_ColorRect>` 節點作為其子項並命名為 ``Retry``（重試）。該節點會使用單一"
+"色彩填充矩形，我們用它來覆蓋畫面，達到變暗的效果。"
 
 msgid ""
 "To make it span over the whole viewport, you can use the *Anchor Preset* "
 "menu in the toolbar."
-msgstr ""
+msgstr "要使其覆蓋整個視口，可以使用工具列中 *錨點預設* 功能表。"
 
 msgid "|image10|"
-msgstr ""
+msgstr "|image10|"
 
-#, fuzzy
 msgid "image10"
-msgstr "\\ |image1|"
+msgstr "image10"
 
 msgid "Open it and apply the *Full Rect* command."
-msgstr ""
+msgstr "點擊打開，並應用*整個矩形*命令。"
 
 msgid "|image11|"
-msgstr ""
+msgstr "|image11|"
 
-#, fuzzy
 msgid "image11"
-msgstr "\\ |image1|"
+msgstr "image11"
 
 msgid ""
 "Nothing happens. Well, almost nothing; only the four green pins move to the "
 "corners of the selection box."
 msgstr ""
+"什麼都沒發生。好吧，是幾乎什麼都沒有；只有四個綠色的大頭針移動到了選擇框的四"
+"個角落。"
 
 msgid "|image12|"
-msgstr ""
+msgstr "|image12|"
 
-#, fuzzy
 msgid "image12"
-msgstr "\\ |image1|"
+msgstr "image12"
 
 msgid ""
 "This is because UI nodes (all the ones with a green icon) work with anchors "
@@ -300,11 +333,15 @@ msgid ""
 "``UserInterface`` node has a small size and the ``Retry`` one is limited by "
 "it."
 msgstr ""
+"這是因為 UI 節點（圖示都是綠色）使用的是錨點和邊距，它們都相對於它們父節點包"
+"圍框。這裡的 ``UserInterface`` 節點比較小，所以 ``Retry`` 會受限於它。"
 
 msgid ""
 "Select the ``UserInterface`` and apply *Anchor Preset -> Full Rect* to it as "
 "well. The ``Retry`` node should now span the whole viewport."
 msgstr ""
+"選中 ``UserInterface`` 然後也對其使用*錨點預設 -> 整個矩形*。``Retry`` 節點就"
+"應該覆蓋整個視口了。"
 
 msgid ""
 "Let's change its color so it darkens the game area. Select ``Retry`` and in "
@@ -312,28 +349,31 @@ msgid ""
 "do so, in the color picker, drag the *A* slider to the left. It controls the "
 "color's Alpha channel, that is to say, its opacity/transparency."
 msgstr ""
+"讓我們修改它的顏色，把遊戲區域變暗。選中 ``Retry``，在*屬性面板*中將 *Color*"
+"（顏色）設定為透明的暗色。要實作整個效果，可以在取色器中將 *A* 滑動條拖到左"
+"邊。它控制的是顏色的 Alpha 通道，也就是不透明度。"
 
 msgid "|image13|"
-msgstr ""
+msgstr "|image13|"
 
-#, fuzzy
 msgid "image13"
-msgstr "\\ |image1|"
+msgstr "image13"
 
 msgid ""
 "Next, add a :ref:`Label <class_Label>` as a child of ``Retry`` and give it "
 "the *Text* \"Press Enter to retry.\" To move it and anchor it in the center "
 "of the screen, apply *Anchor Preset -> Center* to it."
 msgstr ""
+"接下來，新增一個 :ref:`Label <class_Label>` 的節點作為 ``Retry`` 的子節點並且"
+"設定他的 *Text* 為“Press Enter to retry”。將其移動至螢幕中央，並且選擇 "
+"*Anchor Preset -> Center*（錨點預設 > 居中）。"
 
 msgid "|image14|"
-msgstr ""
+msgstr "|image14|"
 
-#, fuzzy
 msgid "image14"
-msgstr "\\ |image1|"
+msgstr "image14"
 
-#, fuzzy
 msgid "Coding the retry option"
 msgstr "複寫建置選項"
 
@@ -341,14 +381,17 @@ msgid ""
 "We can now head to the code to show and hide the ``Retry`` node when the "
 "player dies and plays again."
 msgstr ""
+"我們現在就可以去編寫程式碼，在玩家死亡時顯示 ``Retry`` 節點，重玩時隱藏。"
 
 msgid ""
 "Open the script ``main.gd``. First, we want to hide the overlay at the start "
 "of the game. Add this line to the ``_ready()`` function."
 msgstr ""
+"打開 ``main.gd`` 腳本。首先，我們想要在遊戲開始時隱藏覆蓋層。將這一行加到 "
+"``_ready()`` 函式中。"
 
 msgid "Then, when the player gets hit, we show the overlay."
-msgstr ""
+msgstr "然後在玩家受到攻擊時，我們就顯示這個覆蓋層。"
 
 msgid ""
 "Finally, when the ``Retry`` node is visible, we need to listen to the "
@@ -356,19 +399,25 @@ msgid ""
 "the built-in ``_unhandled_input()`` callback, which is triggered on any "
 "input."
 msgstr ""
+"最後，當 ``Retry`` 節點可見時，我們需要監聽玩家的輸入，按下確認鍵時讓遊戲重"
+"啟。可以使用內建的 ``_unhandled_input()`` 回呼函式來實作，任何輸入都會觸發這"
+"個回呼函式。"
 
 msgid ""
 "If the player pressed the predefined ``ui_accept`` input action and "
 "``Retry`` is visible, we reload the current scene."
 msgstr ""
+"如果玩家按下了預設的 ``ui_accept`` 輸入動作並且 ``Retry`` 是可見狀態，我們就"
+"重新載入目前場景。"
 
 msgid ""
 "The function ``get_tree()`` gives us access to the global :ref:`SceneTree "
 "<class_SceneTree>` object, which allows us to reload and restart the current "
 "scene."
 msgstr ""
+"我們可以通過 ``get_tree()`` 函式存取全域 :ref:`SceneTree <class_SceneTree>` "
+"物件，然後用它來重新載入並重啟目前場景。"
 
-#, fuzzy
 msgid "Adding music"
 msgstr "新增腳本"
 
@@ -376,6 +425,8 @@ msgid ""
 "To add music that plays continuously in the background, we're going to use "
 "another feature in Godot: :ref:`autoloads <doc_singletons_autoload>`."
 msgstr ""
+"要新增音樂，讓音樂在後臺連續播放，我們就要用到 Godot 的另一項功能：:ref:`自動"
+"載入 <doc_singletons_autoload>`。"
 
 msgid ""
 "To play audio, all you need to do is add an :ref:`AudioStreamPlayer "
@@ -384,38 +435,44 @@ msgid ""
 "reload the scene, like we do to play again, the audio nodes are also reset, "
 "and the music starts back from the beginning."
 msgstr ""
+"要播放音訊，只需往場景裡新增一個 :ref:`AudioStreamPlayer "
+"<class_AudioStreamPlayer>` 節點，然後為它附加一個音訊檔。啟動場景時，就會自動"
+"播放。然而，如果重新載入了場景，比如我們在重玩的時候就這麼幹了，這些音訊節點"
+"也會被重設，音樂也就會從頭開始播放。"
 
 msgid ""
 "You can use the autoload feature to have Godot load a node or a scene "
 "automatically at the start of the game, outside the current scene. You can "
 "also use it to create globally accessible objects."
 msgstr ""
+"你可以使用自動載入功能來讓 Godot 在遊戲開始時自動載入節點或場景，不依賴於目前"
+"場景。你還可以用它來建立能夠全域存取的物件。"
 
 msgid ""
 "Create a new scene by going to the *Scene* menu and clicking *New Scene* or "
 "by using the *+* icon next to your currently opened scene."
 msgstr ""
+"在*場景*功能表中按一下*新建場景*，或者使用目前打開的場景旁邊的 *+* 圖示來建立"
+"一個新場景。"
 
-#, fuzzy
 msgid "|image15|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image15"
-msgstr "\\ |image1|"
+msgstr "image15"
 
 msgid ""
 "Click the *Other Node* button to create an :ref:`AudioStreamPlayer "
 "<class_AudioStreamPlayer>` and rename it to ``MusicPlayer``."
 msgstr ""
+"按一下*其他節點*按鈕，建立一個 :ref:`AudioStreamPlayer "
+"<class_AudioStreamPlayer>` 然後將其重命名為 ``MusicPlayer``（音樂播放機）。"
 
-#, fuzzy
 msgid "|image16|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image16"
-msgstr "\\ |image1|"
+msgstr "image16"
 
 msgid ""
 "We included a music soundtrack in the ``art/`` directory, ``House In a "
@@ -423,20 +480,19 @@ msgid ""
 "*Inspector*. Also, turn on *Autoplay* so the music plays automatically at "
 "the start of the game."
 msgstr ""
+"我們在 ``art/`` 目錄中包含了一條音樂音軌 ``House In a Forest Loop.ogg``。按一"
+"下並把它拖放到*屬性面板*中的 *Stream*（流）屬性上。同時要打開 *Autoplay*，這"
+"樣音樂就會在遊戲開始時自動播放了。"
 
-#, fuzzy
 msgid "|image17|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image17"
-msgstr "\\ |image1|"
+msgstr "image17"
 
-#, fuzzy
 msgid "Save the scene as ``MusicPlayer.tscn``."
 msgstr "最後，保存場景為 ``sayhello.tscn`` 之類的名稱。"
 
-#, fuzzy
 msgid ""
 "We have to register it as an autoload. Head to the *Project -> Project "
 "Settings…* menu and click on the *Autoload* tab."
@@ -449,60 +505,63 @@ msgid ""
 "folder icon to open the file browser and double-click on ``MusicPlayer."
 "tscn``. Then, click the *Add* button on the right to register the node."
 msgstr ""
+"*路徑*輸入框中需要輸入場景的路徑。按一下資料夾圖示打開檔瀏覽器，然後按兩下 "
+"``MusicPlayer.tscn``。接下來，按一下右側的*新增*按鈕，將該節點進行註冊。"
 
-#, fuzzy
 msgid "|image18|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image18"
-msgstr "\\ |image1|"
+msgstr "image18"
 
 msgid ""
 "``MusicPlayer.tscn`` now loads into any scene you open or play. So if you "
 "run the game now, the music will play automatically in any scene."
 msgstr ""
+"``MusicPlayer.tscn`` 現在會被載入到任何您打開或播放的場景中。 因此，如果您現"
+"在運作遊戲，音樂將在任何場景中自動播放。"
 
 msgid ""
 "Before we wrap up this lesson, here's a quick look at how it works under the "
 "hood. When you run the game, your *Scene* dock changes to give you two tabs: "
 "*Remote* and *Local*."
 msgstr ""
+"在這一節課結束之前，我們來看一下在底層發生了什麼。運作遊戲時，你的*場景*面板"
+"會多出來兩個分頁：*遠端*和*本地*。"
 
-#, fuzzy
 msgid "|image19|"
 msgstr "\\ |image1|"
 
-#, fuzzy
 msgid "image19"
-msgstr "\\ |image1|"
+msgstr "image19"
 
 msgid ""
 "The *Remote* tab allows you to visualize the node tree of your running game. "
 "There, you will see the *Main* node and everything the scene contains and "
 "the instantiated mobs at the bottom."
 msgstr ""
+"你可以在*遠端*分頁中查看運作中的遊戲的節點樹。你會看到 *Main* 節點以及場景中"
+"所包含的所有東西，最底部是產生實體的小怪。"
 
-#, fuzzy
 msgid "|image20|"
 msgstr "\\ |image2|"
 
-#, fuzzy
 msgid "image20"
-msgstr "\\ |image2|"
+msgstr "image20"
 
 msgid ""
 "At the top are the autoloaded ``MusicPlayer`` and a *root* node, which is "
 "your game's viewport."
 msgstr ""
+"頂部的是自動載入的 ``MusicPlayer`` 以及一個 *root* 節點，這是你的遊戲的視口。"
 
 msgid ""
 "And that does it for this lesson. In the next part, we'll add an animation "
 "to make the game both look and feel much nicer."
-msgstr ""
+msgstr "這一節課就是這樣。在下一部分，我們會新增動畫，讓遊戲更美觀。"
 
 msgid "Here is the complete ``main.gd`` script for reference."
-msgstr ""
+msgstr "這是完整的 ``main.gd`` 腳本，僅供參考。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -63,9 +63,9 @@ msgstr ""
 
 msgid ""
 "You can also use the ``breakpoint`` keyword in GDScript to create a "
-"breakpoint that is stored in the script iself. Unlike breakpoints created by "
-"clicking in the gutter, this keyword-based breakpoint is persistent across "
-"different machines when using version control."
+"breakpoint that is stored in the script itself. Unlike breakpoints created "
+"by clicking in the gutter, this keyword-based breakpoint is persistent "
+"across different machines when using version control."
 msgstr ""
 
 msgid "You can use the buttons in the top-right corner to:"
@@ -108,7 +108,7 @@ msgid ""
 msgstr "您可以在 **项目设置>调试> GDScript** 中禁用特定的警告."
 
 msgid "Profiler"
-msgstr "性能分析器"
+msgstr "分析器"
 
 msgid ""
 "The profiler is used to see what code is running while your project is in "
@@ -202,18 +202,16 @@ msgid ""
 "will result in the following categories appearing:"
 msgstr ""
 
-#, fuzzy
 msgid "Example results from a 2D scene in the Visual Profiler"
-msgstr "例子结果来自Callgrind, 这是Valgrind的一部分."
+msgstr "例子结果来自Callgrind, 这是Valgrind的一部分"
 
 msgid ""
 "To give another example with Forward+, a 3D scene with shadow-casting lights "
 "and various effects enabled will result in the following categories enabled:"
 msgstr ""
 
-#, fuzzy
 msgid "Example results from a 3D scene in the Visual Profiler"
-msgstr "例子结果来自Callgrind, 这是Valgrind的一部分."
+msgstr "可视分析器中 3D 场景的示例结果"
 
 msgid ""
 "Notice how in the 3D example, several of the categories have **(Parallel)** "
@@ -278,19 +276,19 @@ msgstr ""
 "方还有一个显存占用总量的数字。"
 
 msgid "Misc"
-msgstr "杂项"
+msgstr "其他"
 
 msgid ""
 "The **Misc** tab contains tools to identify the control nodes you are "
 "clicking at runtime:"
-msgstr "**杂项** 选项卡包含一些工具, 用于识别您在运行时点击的控制节点:"
+msgstr "**其他**\\ 选项卡中的工具可以用来识别你在运行时点击了哪个控件节点："
 
 msgid ""
 "**Clicked Control** tells you where the clicked node is in the scene tree."
-msgstr "**点击的控制** 告诉你点击的节点在场景树中的位置."
+msgstr "**点击的控件**\\ 显示的是被点击节点在场景树中的位置。"
 
 msgid "**Clicked Control Type** tells you the type of the node you clicked is."
-msgstr "**点击的控制类型** 告诉你你点击的节点的类型是什么."
+msgstr "**点击的控件类型**\\ 显示的是被点击节点的类型。"
 
 msgid "Translation status"
 msgstr "翻译状态"

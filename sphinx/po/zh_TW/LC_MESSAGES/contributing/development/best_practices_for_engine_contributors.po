@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,9 +21,8 @@ msgid "Best practices for engine contributors"
 msgstr "參與引擎貢獻的最佳實踐"
 
 msgid "Introduction"
-msgstr "簡介"
+msgstr "前言"
 
-#, fuzzy
 msgid ""
 "Godot has a large amount of users who have the ability to contribute because "
 "the project itself is aimed mainly at users who can code. That being said, "
@@ -38,7 +37,6 @@ msgstr ""
 msgid "Language"
 msgstr "語言"
 
-#, fuzzy
 msgid ""
 "The scope of this document is to be a list of best practices for "
 "contributors to follow, as well as to create a language they can use to "
@@ -48,7 +46,6 @@ msgstr ""
 "本篇文章討論的範圍是有關貢獻者應遵守的最佳實踐列表，以及建立一個在提供貢獻的"
 "過程時能用來引述常見情形的語言。"
 
-#, fuzzy
 msgid ""
 "While a generalized list of software development best practices might be "
 "useful, we'll focus on the situations that are most common in our project."
@@ -71,7 +68,6 @@ msgstr "最佳實踐"
 msgid "#1: The problem always comes first"
 msgstr "#1: 問題優先"
 
-#, fuzzy
 msgid ""
 "Many contributors are extremely creative and just enjoy the process of "
 "designing abstract data structures, creating nice user interfaces, or simply "
@@ -82,7 +78,6 @@ msgstr ""
 "或是喜愛程式設計。不管是遇到什麼問題，這些貢獻者都能想出許多好點子，但這些好"
 "點子不一定能解決實際的問題。"
 
-#, fuzzy
 msgid ""
 "These are usually called *solutions in search of a problem*. In an ideal "
 "world, they would not be harmful but, in reality, code takes time to write, "
@@ -105,7 +100,6 @@ msgstr ""
 "這個最佳實踐算是前一個的變體。雖然最好不要新增任何不需要的東西，但什麼東西算"
 "是需要的，什麼又算是不需要的呢？"
 
-#, fuzzy
 msgid ""
 "The answer to this question is that the problem needs to *exist* before it "
 "can be actually solved. It must not be speculation or a belief. The user "
@@ -145,7 +139,6 @@ msgstr ""
 msgid "#3: The problem has to be complex or frequent"
 msgstr "#3: 問題必須要複雜或頻繁"
 
-#, fuzzy
 msgid ""
 "Software is designed to solve problems, but we can't expect it to solve "
 "*every problem that exists under the sun*. As a game engine, Godot will help "
@@ -156,7 +149,6 @@ msgstr ""
 "為一個遊戲引擎，Godot 會負責解決問題，這樣使用者就能更好更快地製作遊戲，但 "
 "Godot 不會幫使用者做好 **整個遊戲** 。我們必須要在某些地方劃清界線。"
 
-#, fuzzy
 msgid ""
 "Whether a problem is worth solving is determined by the effort that is "
 "required to work around it. The required effort depends on:"
@@ -170,7 +162,6 @@ msgstr "問題的複雜性"
 msgid "The frequency the problem"
 msgstr "問題的頻繁度"
 
-#, fuzzy
 msgid ""
 "If the problem is *too complex* for most users to solve, then the software "
 "should offer a ready-made solution for it. Likewise, if the problem is easy "
@@ -180,7 +171,6 @@ msgstr ""
 "現成的解決方案。同理，若對使用者來說，這個問題能很輕鬆地迴避掉，則就沒有必要"
 "提供一套解決方案，且使用者可以自行決定是否要使用。"
 
-#, fuzzy
 msgid ""
 "The exception, however, is when the user encounters a problem *frequently "
 "enough* that having to do the simple solution every time becomes an "
@@ -191,7 +181,6 @@ msgstr ""
 "須要使用到某個簡單的解決方案而困擾。這時，軟體也必須要能提供簡化此一情況的解"
 "決方案。"
 
-#, fuzzy
 msgid ""
 "It's usually easy to tell if a problem is complex or frequent, but it can be "
 "difficult. This is why discussing with other developers (next point) is "
@@ -211,8 +200,10 @@ msgid ""
 "proposed solutions don't always contemplate all use cases and are often "
 "biased towards the user's own requirements."
 msgstr ""
+"通常，當使用者偶然發現問題時，他們會沉浸在自己的專案中。這些使用者自然會嘗試"
+"從自己的角度解決問題，只考慮自己的用例。因此，使用者提出的解決方案並不總是考"
+"慮所有用例，並且通常偏向使用者自己的需求。"
 
-#, fuzzy
 msgid ""
 "For developers, the perspective is different. They may find the user's "
 "problem too unique to justify a solution (instead of a workaround), or they "
@@ -225,7 +216,6 @@ msgstr ""
 "方案 (通常是比較簡單或低階的解法)，適用於更廣泛的問題，然後讓使用者自行處理剩"
 "下的問題。"
 
-#, fuzzy
 msgid ""
 "In any case, before attempting to contribute, it is important to discuss the "
 "actual problems with the other developers or contributors, so a better "
@@ -234,7 +224,6 @@ msgstr ""
 "不管哪種情況，在嘗試參與貢獻時，先與其他開發人員或貢獻者進行討論都很重要，這"
 "樣也才能在實作方法上有更好的共識。"
 
-#, fuzzy
 msgid ""
 "The only exception is when an area of code has a clear agreed upon owner, "
 "who talks to users directly and has the most knowledge to implement a "
@@ -257,7 +246,6 @@ msgstr ""
 msgid "#5: To each problem, its own solution"
 msgstr "#5: 每個問題都有各自的解決方案"
 
-#, fuzzy
 msgid ""
 "For programmers, it is always a most enjoyable challenge to find the most "
 "optimal solutions to problems. It is possible to go overboard, though. "
@@ -276,7 +264,6 @@ msgstr ""
 "時變得更糟糕。而純粹基於臆測的問題 (像 #2 中說明的) 也會讓這些解決方案浮上檯"
 "面。"
 
-#, fuzzy
 msgid ""
 "The main problem is that, in reality, it rarely works this way. Most of the "
 "time, writing an individual solution to each problem results in code that is "
@@ -285,7 +272,6 @@ msgstr ""
 "主要的問題是，在現實中，這種解決方案很少能解決問題。大多數時候，如果能為個別"
 "問題製作個別的解決方案，產生出來的程式碼也能更簡單且更好維護。"
 
-#, fuzzy
 msgid ""
 "Additionally, solutions that target individual problems are better for the "
 "users. Targeted solutions allow users find something that does exactly what "
@@ -293,9 +279,8 @@ msgid ""
 "for simple tasks."
 msgstr ""
 "此外，針對個別問題製作的解決方案對於使用者來說也更好，因為使用者可以找到剛好"
-"符合他們需求的解法，而不需要只為了某個簡單的任務來瞭解與記住一個複雜的系統。"
+"符合他們需求的解法，而不需要只為了某個簡單的工作來瞭解與記住一個複雜的系統。"
 
-#, fuzzy
 msgid ""
 "Big and flexible solutions also have an additional drawback which is that, "
 "over time, they are rarely flexible enough for all users. Users end up "
@@ -325,7 +310,6 @@ msgstr ""
 "未來使用者會有什麼需求非常困難。因此要設計出能同時滿足各種使用情況的靈活架構"
 "通常是個錯誤。"
 
-#, fuzzy
 msgid ""
 "We may come up with something we believe is brilliant but later find out "
 "that users will never even use half of it or that they require features that "
@@ -336,7 +320,6 @@ msgstr ""
 "的功能都用不到或是使用者會要求超出我們原本設計的功能，讓我們必須要將這個功能"
 "刪掉，或是讓這些功能變得更複雜。"
 
-#, fuzzy
 msgid ""
 "The question is then, how do we design software that both allows users to do "
 "*what we know they need to do* now and allows them to do *what we don't yet "
@@ -364,7 +347,7 @@ msgstr ""
 "決方案是很合理的。這也是為什麼提供使用者實作解決方案的基本要素很重要的原因。"
 
 msgid "#7: Prefer local solutions"
-msgstr ""
+msgstr "#7：局部解決方案優先"
 
 msgid ""
 "When looking for a solution to a problem, be it implementing a new feature "
@@ -392,13 +375,11 @@ msgstr ""
 "這樣不好，因為想想有多少程式碼都仰賴核心 API 來運作，核心 API 是否易讀與是否"
 "清楚非常重要。另一個原因是因為核心 API 是新貢獻者開始瞭解程式碼的起點。"
 
-#, fuzzy
 msgid ""
 "A common reason for wanting to do this is that it's usually less code to "
 "simply add a hack in the core layers."
 msgstr "會想將程式碼加到核心層級的原因通常是因為這麼做只要寫更少的程式碼。"
 
-#, fuzzy
 msgid ""
 "Doing so is not advised. Generally, the code for a solution should be closer "
 "to where the problem originates, even if it involves additional, duplicated, "
@@ -419,15 +400,13 @@ msgstr ""
 "並非所有問題都有簡單的解決方案，而且，很多時候，正確的選擇是使用第三方函式庫"
 "來解決問題。"
 
-#, fuzzy
 msgid ""
 "As Godot requires to be shipped in a large amount of platforms, we can't "
 "link libraries dynamically. Instead, we bundle them in our source tree."
 msgstr ""
-"由於 Godot 必須要發佈到大量不同的平台，所以我們不能直接動態地連結到函式庫上，"
+"由於 Godot 必須要發行到大量不同的平台，所以我們不能直接動態地連結到函式庫上，"
 "而必須要將這些程式碼捆綁到我們的原始碼裡。"
 
-#, fuzzy
 msgid ""
 "As a result, we are very picky with what goes in, and we tend to prefer "
 "smaller libraries (single header ones are our favorite). We will only bundle "
@@ -437,7 +416,6 @@ msgstr ""
 "實上，最好只有單一標頭檔)。除非是沒有其他選擇的情況，我們才會將大型的函式庫捆"
 "綁進來。"
 
-#, fuzzy
 msgid ""
 "Libraries must use a permissive enough license to be included into Godot. "
 "Some examples of acceptable licenses are Apache 2.0, BSD, MIT, ISC, and MPL "
@@ -451,7 +429,7 @@ msgstr ""
 "另外，函式庫也必須要使用足夠鬆散的授權條款才能夠被包含進 Godot。舉例來說，我"
 "們可以使用 Apache 2.0, BSD, MIT, ISC 與 MPL 2.0。更具體來說，我們不能使用 "
 "GPL 或 LGPL 授權的函式庫，因為這些授權條款特別禁止靜態連結至專屬軟體內 (也就"
-"是 Godot 大多數匯出專案發佈的方法)。這項要求也適用於編輯器，因為我們長期來看"
+"是 Godot 大多數匯出專案發行的方法)。這項要求也適用於編輯器，因為我們長期來看"
 "還想在 iOS 上執行。由於 iOS 不支援動態連結，因此靜態連結是 iOS 上唯一的選項。"
 
 msgid "Translation status"

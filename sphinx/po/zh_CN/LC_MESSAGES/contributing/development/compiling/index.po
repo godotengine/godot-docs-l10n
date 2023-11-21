@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,64 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Building from source"
-msgstr "构建编辑器"
+msgstr "从源代码构建"
+
+msgid ""
+"Godot prides itself on being very easy to build, by C++ projects' "
+"standards. :ref:`Godot uses the SCons build system <doc_faq_why_scons>`, and "
+"after the initial setup compiling the engine for your current platform "
+"should be as easy as running::"
+msgstr ""
+
+msgid ""
+"But you will probably need to use at least some of the available options to "
+"configure the build to match your specific needs, be it a custom engine "
+"fork, a lightweight build stripped of extra modules, or an executable "
+"targetting engine development."
+msgstr ""
+
+msgid ""
+"The articles below should help you navigate configuration options available, "
+"as well as prerequisites required to compile Godot exactly the way you need."
+msgstr ""
+
+#, fuzzy
+msgid "Basics of building Godot"
+msgstr "基本内置类型"
+
+msgid ""
+"Let's start with basics, and learn how to get Godot's source code, and then "
+"which options to use to compile it regardless of your target platform."
+msgstr ""
+
+#, fuzzy
+msgid "Building for target platforms"
+msgstr "构建导出模板"
+
+msgid ""
+"Below you can find instructions for compiling the engine for your specific "
+"target platform. Note that Godot supports cross-compilation, which means you "
+"can compile it for a target platform that doesn't match your current "
+"platform (say, target Linux while being on Windows). The guides will try "
+"their best to cover all possible situations."
+msgstr ""
+
+#, fuzzy
+msgid "Other compilation targets and options"
+msgstr "其他构建选项"
+
+msgid ""
+"Some additional universal compilation options require further setup. Namely, "
+"while Godot does have C#/.NET support as a part of its main codebase, it "
+"does not get compiled by default to reduce the executable size for users who "
+"don't need C# for their projects."
+msgstr ""
+
+msgid ""
+"Articles below explain how to configure the buildsystem for cases like this, "
+"and also cover some optimization techniques."
+msgstr ""
 
 msgid "Translation status"
 msgstr "翻译状态"

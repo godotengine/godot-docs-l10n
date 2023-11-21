@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Setting up the project"
+msgstr "Projeyi ayarlamak"
+
+msgid "In this short first part, we'll set up and organize the project."
+msgstr "Bu kısa ilk bölümde, projeyi kuracak ve düzenini ayarlayacağız."
+
+msgid "Launch Godot and create a new project."
+msgstr "Godot'yu başlatın ve yeni bir proje oluşturun."
+
+msgid ""
+"When creating the new project, you only need to choose a valid *Project "
+"Path*. You can leave the other default settings alone."
+msgstr ""
+
+msgid "GDScript"
+msgstr "GDScript"
+
+#, fuzzy
+msgid ""
+"Download `dodge_the_creeps_2d_assets.zip <https://github.com/godotengine/"
+"godot-docs-project-starters/releases/download/latest-4.x/"
+"dodge_the_creeps_2d_assets.zip>`_. The archive contains the images and "
+"sounds you'll be using to make the game. Extract the archive and move the "
+"``art/`` and ``fonts/`` directories to your project's directory."
+msgstr ""
+":download:`dodge_assets.zip <files/dodge_assets.zip>` varlık dosyasını "
+"indirin. Bu arşiv dosyası oyunumuz için kullanacağınız resimleri ve sesleri "
+"içeriyor. Dosya içeriğini ayıklayın ve sonra ``art/`` ve ``fonts/`` "
+"klasörlerini projenizin klasörüne taşıyın."
+
+msgid "C#"
+msgstr "C#"
+
+#, fuzzy
+msgid ""
+"Ensure that you have the required dependencies to use C# in Godot. You need "
+"the latest stable .NET SDK, and an editor such as VS Code. See :ref:"
+"`doc_c_sharp_setup`."
+msgstr ""
+"Godot içinde C# kullanabilmeniz için gerekli bağımlılıkların kurulu "
+"olduğundan emin olun. .NET Core 3.1 SDK ile VSCode gibi bir düzenleyiciye "
+"ihtiyacınız olacak. Detaylar için :ref:`doc_c_sharp_setup` sayfasına bakın."
+
+msgid "C++"
+msgstr ""
+
+msgid ""
+"The C++ part of this tutorial wasn't rewritten for the new GDExtension "
+"system yet."
+msgstr ""
+
+msgid "Your project folder should look like this."
+msgstr "Proje klasörünüz bunun gibi görünmelidir."
+
+#, fuzzy
+msgid ""
+"This game is designed for portrait mode, so we need to adjust the size of "
+"the game window. Click on *Project -> Project Settings* to open the project "
+"settings window, in the left column open the *Display -> Window* tab. There, "
+"set \"Viewport Width\" to ``480`` and \"Viewport Height\" to ``720``."
+msgstr ""
+"Bu oyun, dikey ekran kipi için tasarlanmıştır, yani oyun penceresinin "
+"boyutunu ayarlamamız gerekiyor. *Proje -> Proje Ayarları* 'ndan proje "
+"ayarları penceresini açın, ve soldaki sütundan *Görüntü -> Pencere* "
+"sekmesine geçin. Buradan, \"Genişlik\" değerini ``480``, \"Yükseklik\" "
+"değerini ``720`` yapın."
+
+#, fuzzy
+msgid ""
+"Also, under the **Stretch** options, set **Mode** to ``canvas_items`` and "
+"**Aspect** to ``keep``. This ensures that the game scales consistently on "
+"different sized screens."
+msgstr ""
+"Ayrıca, bu bölümde biraz daha aşağıya gidip, \"Esnetme\" seçenekleri "
+"altından, ``Kip`` değerini \"2B\" ve ``En/Boy Oranı`` değerini \"koru\" "
+"yapın. Bunu yapmak, oyunun farklı ekran boyutlarında tutarlı bir şekilde "
+"ölçeklenmesini sağlar."
+
+msgid "Organizing the project"
+msgstr "Proje düzeni oluşturma"
+
+msgid ""
+"In this project, we will make 3 independent scenes: ``Player``, ``Mob``, and "
+"``HUD``, which we will combine into the game's ``Main`` scene."
+msgstr ""
+"Bu projede, 3 tane bağımsız sahne oluşturacağız: ``Player`` (oyuncu), "
+"``Mob`` (düşman), and ``HUD`` (arayüz), ve sonra bunları oyunun ana "
+"sahnesinde, ``Main``, bir araya getireceğiz."
+
+msgid ""
+"In a larger project, it might be useful to create folders to hold the "
+"various scenes and their scripts, but for this relatively small game, you "
+"can save your scenes and scripts in the project's root folder, identified by "
+"``res://``. You can see your project folders in the FileSystem dock in the "
+"lower left corner:"
+msgstr ""
+"Büyük bir projede, çeşitli sahne ve betikleri tutmak için klasörler "
+"kullanmak yararlı olabilir, ama bu nispeten küçük oyunda, sahne ve "
+"betiklerinizi projenizin, ``res://`` olarak tanımlanan, kök klasöründe "
+"tutabilirsiniz. Proje klasörlerinizi, sol alt taraftaki DosyaSistemi "
+"kısmında görebilirsiniz:"
+
+msgid ""
+"With the project in place, we're ready to design the player scene in the "
+"next lesson."
+msgstr ""
+"Proje yerini aldığına göre, sıradaki derste oyuncu sahnesini tasarlamaya "
+"artık hazırız."
+
+msgid "Translation status"
+msgstr "Çeviri durumu"

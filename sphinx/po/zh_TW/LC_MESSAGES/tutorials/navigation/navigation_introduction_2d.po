@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,8 +18,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #, fuzzy
-msgid "2D Navigation Overview"
-msgstr "導航模式"
+msgid "2D navigation overview"
+msgstr "導覽模式"
 
 msgid ""
 "Godot provides multiple objects, classes and servers to facilitate grid-"
@@ -27,27 +27,30 @@ msgid ""
 "following section provides a quick overview over all available navigation "
 "related objects in Godot for 2D scenes and their primary use."
 msgstr ""
+"Godot 提供了多種物件、類和伺服器，可幫助 2D 和 3D 遊戲實作基於柵格（Grid）或"
+"網格（Mesh）的導覽和尋路。下文將對 Godot 中與 2D 場景導覽相關的對象及其主要用"
+"途進行概述。"
 
-#, fuzzy
 msgid "Godot provides the following objects and classes for 2D navigation:"
 msgstr "Godot 可匯入下列圖片格式："
 
-#, fuzzy
 msgid ":ref:`Astar2D<class_Astar2D>`"
 msgstr ":ref:`Vector2 <class_Vector2>`"
 
 msgid ""
 "``Astar2D`` objects provide an option to find the shortest path in a graph "
 "of weighted **points**."
-msgstr ""
+msgstr "``Astar2D`` 物件能夠在由具有權重的**點**構成的圖中搜尋最短路徑。"
 
+#, fuzzy
 msgid ""
-"The AStar2D class is best suited for cellbased 2D gameplay that does not "
+"The AStar2D class is best suited for cell-based 2D gameplay that does not "
 "require actors to reach any possible position within an area but only "
 "predefined, distinct positions."
 msgstr ""
+"AStar2D 類最適合的是基於儲存格的 2D 遊戲，不需要角色到達區域中的任意位置，只"
+"需要到達預先指定的一些獨立位置。"
 
-#, fuzzy
 msgid ":ref:`NavigationServer2D<class_NavigationServer2D>`"
 msgstr ":ref:`String <class_String>`"
 
@@ -55,65 +58,92 @@ msgid ""
 "``NavigationServer2D`` provides a powerful server API to find the shortest "
 "path between two positions on a area defined by a navigation mesh."
 msgstr ""
+"``NavigationServer2D`` 提供了強大的伺服器 API，能夠在區域中搜尋兩個位置之間的"
+"最短路徑，區域由導覽網格定義。"
 
+#, fuzzy
 msgid ""
 "The NavigationServer is best suited for 2D realtime gameplay that does "
-"require actors to reach any possible position within an navmesh defined "
-"area. Meshbased navigation scales well with large gameworlds as a large area "
-"can often be defined with a single polygon when it would require many, many "
-"grid cells."
+"require actors to reach any possible position within a navigation mesh "
+"defined area. Mesh-based navigation scales well with large game worlds as a "
+"large area can often be defined with a single polygon when it would require "
+"many, many grid cells."
 msgstr ""
+"NavigationServer 最適合的是要求角色能夠到達區域中任意位置的 2D 即時遊戲，區域"
+"由導覽網格定義。基於網格的導覽能夠輕鬆擴充到大型遊戲世界，因為大型區域通常能"
+"夠使用單一多邊形定義，如果換成柵格則會需要定義許許多多的儲存格。"
 
+#, fuzzy
 msgid ""
 "The NavigationServer holds different navigation maps that each consist of "
 "regions that hold navigation mesh data. Agents can be placed on a map for "
-"avoidance calculation. RIDs are used to reference the internal maps, regions "
+"avoidance calculation. RIDs are used to reference internal maps, regions, "
 "and agents when communicating with the server."
 msgstr ""
+"NavigationServer 中存放了不同的導覽地圖，每一張地圖都由若干區塊組成，區塊中存"
+"放的是導覽網格資料。在地圖上放置代理就能夠進行避障計算。與伺服器通信時，使用 "
+"RID 來引用內部的地圖、區塊和代理。"
 
 msgid "The following NavigationServer RID types are available."
-msgstr ""
+msgstr "NavigationServer 中可用的 RID 型別如下。"
 
 msgid "NavMap RID"
-msgstr ""
+msgstr "導覽地圖 RID"
 
+#, fuzzy
 msgid ""
 "Reference to a specific navigation map that holds regions and agents. The "
-"map will attempt to join changed navigation meshes of regions by proximity. "
+"map will attempt to join the navigation meshes of the regions by proximity. "
 "The map will synchronize regions and agents each physics frame."
 msgstr ""
+"引用指定的導覽地圖，地圖中存放的是區塊和代理。地圖會嘗試將發生區塊中更改的導"
+"覽網格根據距離進行合併。每一個物理影格，地圖都會同步區塊和代理。"
 
 msgid "NavRegion RID"
-msgstr ""
+msgstr "導覽區塊 RID"
 
+#, fuzzy
 msgid ""
 "Reference to a specific navigation region that can hold navigation mesh "
 "data. The region can be enabled / disabled or the use restricted with a "
-"navigationlayer bitmask."
+"navigation layer bitmask."
 msgstr ""
+"引用指定的導覽區塊，區塊中存放的是導覽網格資料。使用導覽層位元遮罩可以對區塊"
+"進行啟用/禁用，限制其使用。"
 
 msgid "NavLink RID"
-msgstr ""
+msgstr "導覽連結 RID"
 
 msgid ""
 "Reference to a specific navigation link that connects two navigation mesh "
 "positions over arbitrary distances."
-msgstr ""
+msgstr "引用指定的導覽連結，能夠將兩個導覽網格上的位置進行連接，無視距離。"
 
 msgid "NavAgent RID"
-msgstr ""
-
-msgid ""
-"Reference to a specific avoidance agent with a radius value use solely in "
-"avoidance."
-msgstr ""
-
-msgid ""
-"The following SceneTree Nodes are available as helpers to work with the "
-"NavigationServer2D API."
-msgstr ""
+msgstr "導覽代理 RID"
 
 #, fuzzy
+msgid ""
+"Reference to a specific avoidance agent. The avoidance is specified by a "
+"radius value."
+msgstr "引用指定的避障代理，包含半徑值，只會在避障中使用。"
+
+#, fuzzy
+msgid "NavObstacle RID"
+msgstr "導覽地圖 RID"
+
+#, fuzzy
+msgid ""
+"Reference to a specific avoidance obstacle used to affect and constrain the "
+"avoidance velocity of agents."
+msgstr "引用指定的避障代理，包含半徑值，只會在避障中使用。"
+
+#, fuzzy
+msgid ""
+"The following scene tree nodes are available as helpers to work with the "
+"NavigationServer2D API."
+msgstr "下列場景樹節點可以輔助對 NavigationServer2D API 的使用。"
+
 msgid ":ref:`NavigationRegion2D<class_NavigationRegion2D>` Node"
 msgstr ":ref:`String <class_String>`"
 
@@ -121,87 +151,96 @@ msgid ""
 "A Node that holds a NavigationPolygon resource that defines a navigation "
 "mesh for the NavigationServer2D."
 msgstr ""
+"存放 NavigationPolygon 資源的節點，該資源定義的是 NavigationServer2D 中的導覽"
+"網格。"
 
 msgid "The region can be enabled / disabled."
-msgstr ""
-
-msgid ""
-"The use in pathfinding can be further restricted through the "
-"navigationlayers bitmask."
-msgstr ""
-
-msgid ""
-"Regions can join their navigation meshes by proximity for a combined "
-"navigation mesh."
-msgstr ""
+msgstr "區塊可以啟用/禁用。"
 
 #, fuzzy
+msgid ""
+"The use in pathfinding can be further restricted through the "
+"``navigation_layers`` bitmask."
+msgstr "通過導覽層位元遮罩，可以對其在尋路中的使用做進一步的限制。"
+
+#, fuzzy
+msgid ""
+"The NavigationServer2D will join the navigation meshes of regions by "
+"proximity for a combined navigation mesh."
+msgstr "區塊可以根據距離將不同的導覽網格合併成一個導覽網格。"
+
 msgid ":ref:`NavigationLink2D<class_NavigationLink2D>` Node"
 msgstr ":ref:`String <class_String>`"
 
+#, fuzzy
 msgid ""
-"A Node that connects two positions on navigation mesh over arbitrary "
+"A Node that connects two positions on navigation meshes over arbitrary "
 "distances for pathfinding."
-msgstr ""
+msgstr "將兩個導覽網格上的位置進行連接的節點，無視距離，可用於尋路。"
 
 msgid "The link can be enabled / disabled."
-msgstr ""
+msgstr "連結可以啟用/禁用。"
 
 msgid "The link can be made one-way or bidirectional."
-msgstr ""
+msgstr "連結可以設為單向或雙向。"
 
 msgid ""
 "Links tell the pathfinding that a connection exists and at what cost. The "
 "actual agent handling and movement needs to happen in custom scripts."
 msgstr ""
+"連結會告訴尋路存在這樣的連接、相關的消耗如何。實際的代理處理以及移動需要在自"
+"訂腳本中實作。"
 
-#, fuzzy
 msgid ":ref:`NavigationAgent2D<class_NavigationAgent2D>` Node"
 msgstr ":ref:`String <class_String>`"
 
-msgid ""
-"An optional helper Node to facilitate common NavigationServer2D API calls "
-"for pathfinding and avoidance for a Node2D inheriting parent Node."
-msgstr ""
-
 #, fuzzy
+msgid ""
+"A helper Node used to facilitate common NavigationServer2D API calls for "
+"pathfinding and avoidance. Use this Node with a Node2D inheriting parent "
+"Node."
+msgstr ""
+"可選的輔助節點，用於為繼承自 Node2D 的父節點提供尋路和避障所需的常規 "
+"NavigationServer2D API 呼叫。"
+
 msgid ":ref:`NavigationObstacle2D<class_NavigationObstacle2D>` Node"
 msgstr ":ref:`Dictionary <class_Dictionary>`"
 
 msgid ""
-"A Node that acts as an agent with avoidance radius, to work it needs to be "
-"added under a Node2D inheriting parent Node. Obstacles are intended as a "
-"last resort option for constantly moving objects that cannot be re(baked) to "
-"a navigation mesh efficiently. This node also only works if RVO processing "
-"is being used."
+"A Node that can be used to affect and constrain the avoidance velocity of "
+"avoidance enabled agents. This Node does NOT affect the pathfinding of "
+"agents. You need to change the navigation meshes for that instead."
 msgstr ""
 
-#, fuzzy
 msgid "The 2D navigation meshes are defined with the following resources:"
 msgstr "填寫下列設定："
 
-#, fuzzy
 msgid ":ref:`NavigationPolygon<class_NavigationPolygon>` Resource"
 msgstr ":ref:`String <class_String>`"
 
+#, fuzzy
 msgid ""
-"A resource that holds 2D navigation mesh data and provides polygon drawtools "
-"to define navigation areas inside the Editor as well as at runtime."
+"A resource that holds 2D navigation mesh data. It provides polygon drawing "
+"tools to allow defining navigation areas inside the Editor as well as at "
+"runtime."
 msgstr ""
+"存放 2D 導覽網格資料的資源，提供了多邊形繪製工具，既能夠在編輯器中定義導覽區"
+"域，也能夠在運作時定義。"
 
 msgid ""
 "The NavigationRegion2D Node uses this resource to define its navigation area."
-msgstr ""
+msgstr "NavigationRegion2D 節點使用該資源定義其導覽區域。"
 
+#, fuzzy
 msgid ""
-"The NavigationServer2D uses this resource to update navmesh of individual "
-"regions."
-msgstr ""
+"The NavigationServer2D uses this resource to update the navigation mesh of "
+"individual regions."
+msgstr "NavigationServer2D 使用該資源更新各個區塊的導覽網格。"
 
 msgid ""
 "The TileSet Editor creates and uses this resource internally when defining "
 "tile navigation areas."
-msgstr ""
+msgstr "TileSet 編輯器會定義圖塊的導覽區域時在內部建立並使用該資源。"
 
 msgid ""
 "You can see how 2D navigation works in action using the `2D Navigation "
@@ -210,53 +249,70 @@ msgid ""
 "com/godotengine/godot-demo-projects/tree/master/2d/navigation_astar>`__ demo "
 "projects."
 msgstr ""
+"可以使用 `2D 導覽演示專案 <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/2d/navigation>`__和`使用 AStarGrid2D 進行基於柵格的導覽 "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/2d/"
+"navigation_astar>`__ 演示專案瞭解 2D 導覽如何運作。"
 
 msgid "Setup for 2D scene"
-msgstr ""
+msgstr "2D 場景的設定"
 
+#, fuzzy
 msgid ""
-"The following steps show the basic setup for a minimum viable navigation in "
-"2D that uses the NavigationServer2D and a NavigationAgent2D for path "
-"movement."
+"The following steps show the basic setup for minimal viable navigation in "
+"2D. It uses the NavigationServer2D and a NavigationAgent2D for path movement."
 msgstr ""
+"下列步驟演示的是最小可行的 2D 導覽的基礎設定，使用 NavigationServer2D 和 "
+"NavigationAgent2D 進行路徑移動。"
 
 msgid "Add a NavigationRegion2D Node to the scene."
-msgstr ""
+msgstr "在場景中新增一個 NavigationRegion2D 節點。"
 
 msgid ""
 "Click on the region node and add a new NavigationPolygon Resource to the "
 "region node."
-msgstr ""
+msgstr "按一下該區塊節點，向該節點新增一個新的 NavigationPolygon 資源。"
 
 msgid ""
 "Define the moveable navigation area with the NavigationPolygon draw tool."
-msgstr ""
+msgstr "使用 NavigationPolygon 繪製工具定義可移動導覽區域。"
 
+#, fuzzy
 msgid ""
 "The navigation mesh defines the area where an actor can stand and move with "
-"its center. Leave enough margin between the navpolygon edges and collision "
-"objects to not get path following actors repeatedly stuck on collision."
+"its center. Leave enough margin between the navigation polygon edges and "
+"collision objects to not get path following actors repeatedly stuck on "
+"collision."
 msgstr ""
+"導覽網格定義的是角色的中心點所能夠站立和移動的區域。請在導覽多邊形的邊緣和碰"
+"撞物件之間留下足夠的邊距，這樣角色跟隨路徑移動時就不會因為碰撞而卡住。"
 
 msgid ""
 "Add a CharacterBody2D node in the scene with a basic collision shape and a "
 "sprite or mesh for visuals."
 msgstr ""
+"在場景中新增一個 CharacterBody2D 節點，設定基礎的碰撞形狀，新增一個精靈或網格"
+"方便觀察。"
 
 msgid "Add a NavigationAgent2D node below the character node."
-msgstr ""
+msgstr "在該角色節點下新增一個 NavigationAgent2D 節點。"
 
 msgid ""
 "Add the following script to the CharacterBody2D node. We make sure to set a "
 "movement target after the scene has fully loaded and the NavigationServer "
 "had time to sync."
 msgstr ""
+"為 CharacterBody3D 節點新增下面的腳本。場景完全載入後，我們確保設定移動目標，"
+"NavigationServer 有時間進行同步。"
 
+#, fuzzy
 msgid ""
 "On the first frame the NavigationServer map has not synchronized region data "
-"and any path query will return empty. Await one frame to pause scripts until "
-"the NavigationServer had time to sync."
+"and any path query will return empty. Wait for the NavigationServer "
+"synchronization by awaiting one frame in the script."
 msgstr ""
+"第一影格的時候，NavigationServer 上的地圖還沒有同步區塊資料，請求路徑時都會返"
+"回空。等待一影格就可以讓腳本暫停，讓 NavigationServer 有時間進行同步。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

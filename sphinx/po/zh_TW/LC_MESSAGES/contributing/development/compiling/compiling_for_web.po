@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,6 +25,8 @@ msgid ""
 "from source. If you're looking to export your project to HTML5 instead, "
 "read :ref:`doc_exporting_for_web`."
 msgstr ""
+"這個頁面描述的是如何從源碼編譯 HTML5 編輯器和匯出範本二進位檔案。如果你要找的"
+"是匯出專案到 HTML5，請閱讀 :ref:`doc_exporting_for_web`。"
 
 msgid "Requirements"
 msgstr "系統需求"
@@ -32,21 +34,18 @@ msgstr "系統需求"
 msgid "To compile export templates for the Web, the following is required:"
 msgstr "要為網頁平台進行編譯，需滿足下列需求："
 
-#, fuzzy
 msgid "`Emscripten 1.39.9+ <https://emscripten.org>`__."
 msgstr "`Emscripten 1.39.0+ <https://emscripten.org>`__ 。"
 
-#, fuzzy
 msgid "`Python 3.6+ <https://www.python.org/>`__."
 msgstr "`Python 3.5+ <https://www.python.org/>`__ 。"
 
-#, fuzzy
 msgid "`SCons 3.0+ <https://scons.org/pages/download.html>`__ build system."
 msgstr "`SCons 3.0+ <https://scons.org/pages/download.html>`_ 建置系統。"
 
 msgid ""
 "To get the Godot source code for compiling, see :ref:`doc_getting_source`."
-msgstr ""
+msgstr "要獲取編譯所需的 Godot 源碼，請參閱 :ref:`doc_getting_source`。"
 
 msgid ""
 "For a general overview of SCons usage for Godot, see :ref:"
@@ -63,8 +62,10 @@ msgid ""
 "usually configured by the Emscripten SDK, e.g. when invoking ``emsdk "
 "activate`` and ``source ./emsdk_env.sh``/``emsdk_env.bat``."
 msgstr ""
+"在開始之前，確認 ``emcc`` 在你的 PATH 中是可用的。這通常是由 Emscripten SDK "
+"配置的，例如在呼叫 ``emsdk activate`` 和 ``source ./emsdk_env.sh``/"
+"``emsdk_env.bat`` 時。"
 
-#, fuzzy
 msgid ""
 "Open a terminal and navigate to the root directory of the engine source "
 "code. Then instruct SCons to build the Web platform. Specify ``target`` as "
@@ -85,7 +86,6 @@ msgstr ""
 "官方的匯出樣板中也有開啟 JavaScript 單例。由於 ``eval`` 呼叫有安全性疑慮，因"
 "此可以通過 ``javascript_eval`` 選項來建置不包含該單例的版本："
 
-#, fuzzy
 msgid ""
 "The engine will now be compiled to WebAssembly by Emscripten. Once finished, "
 "the resulting file will be placed in the ``bin`` subdirectory. Its name is "
@@ -96,7 +96,6 @@ msgstr ""
 "``bin`` 子資料夾中。正式版本 (release) 的檔案名稱為 ``godot.javascript.opt."
 "zip`` ，除錯版本 (debug) 為 ``godot.javascript.opt.debug.zip`` 。"
 
-#, fuzzy
 msgid ""
 "Finally, rename the zip archive to ``web_release.zip`` for the release "
 "template::"
@@ -104,32 +103,33 @@ msgstr ""
 "最後，將用於正式樣板 (release) 的 ZIP 檔重新命名為 ``webassembly_release."
 "zip`` ："
 
-#, fuzzy
 msgid "And ``web_debug.zip`` for the debug template::"
 msgstr ""
 "並將用於除錯樣板 (debug) 的 ZIP 檔重新命名為 ``webassembly_release.zip`` ："
 
 msgid "GDExtension"
-msgstr ""
+msgstr "GDExtension"
 
 msgid ""
 "The default export templates do not include GDExtension support for "
 "performance and compatibility reasons. See the :ref:`export page "
 "<doc_javascript_export_options>` for more info."
 msgstr ""
+"由於性能和相容性的原因，預設的匯出範本不包括執行緒和 GDNative 支援。更多資訊"
+"見:ref:`匯出頁面 <doc_javascript_export_options>`。"
 
 msgid ""
 "You can build the export templates using the option ``dlink_enabled=yes`` to "
 "enable GDExtension support::"
 msgstr ""
+"你可以使用選項 ``threads_enabled=yes`` 或 ``gdnative_enabled=yes`` 建構匯出範"
+"本，以啟用執行緒或 GDNative 支援： ::"
 
-#, fuzzy
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will have ``_dlink`` added."
 msgstr "產生的二進位檔會放在 ``bin/`` 子資料夾中。通常來說會依照下列命名慣例："
 
-#, fuzzy
 msgid ""
 "Finally, rename the zip archives to ``web_dlink_release.zip`` and "
 "``web_dlink_release.zip`` for the release template::"
@@ -137,7 +137,6 @@ msgstr ""
 "最後，將用於正式樣板 (release) 的 ZIP 檔重新命名為 ``webassembly_release."
 "zip`` ："
 
-#, fuzzy
 msgid "Building the editor"
 msgstr "內建主題編輯器。"
 
@@ -146,8 +145,9 @@ msgid ""
 "the browser. The editor version is not recommended over the native build. "
 "You can build the editor with::"
 msgstr ""
+"也可以建立一個可以在瀏覽器中運作的 Godot 編輯器版本。編輯器版本需要執行緒支"
+"援，不推薦使用本地建構。你可以用以下方法建構編輯器： ::"
 
-#, fuzzy
 msgid ""
 "Once finished, the resulting file will be placed in the ``bin`` "
 "subdirectory. Its name will be ``godot.web.opt.tools.wasm32.zip``. You can "
@@ -159,29 +159,39 @@ msgid ""
 "Refer to the :ref:`export page <doc_javascript_export_options>` for the web "
 "server requirements."
 msgstr ""
+"關於網路伺服器的要求，請參考:ref:`匯出頁面 <doc_javascript_export_options>`。"
 
 msgid ""
 "The Godot repository includes a `Python script to host a local web server "
 "<https://raw.githubusercontent.com/godotengine/godot/master/platform/web/"
 "serve.py>`__. This can be used to test the web editor locally."
 msgstr ""
+"Godot 儲存庫包含一個「託管本機 Web 伺服器的 Python 腳本 <https://raw."
+"githubusercontent.com/godotengine/godot/master/platform/web/serve.py>」。這可"
+"用於在本地測試網頁編輯器。"
 
 msgid ""
 "After compiling the editor, extract the ZIP archive that was created in the "
 "``bin/`` folder, then run the following command in the Godot repository root:"
 msgstr ""
+"編譯編輯器後，提取在「bin/」資料夾中建立的 ZIP 存檔，然後在 Godot 儲存庫根目"
+"錄中執行以下命令："
 
 msgid ""
 "This will serve the contents of the ``bin/`` folder and open the default web "
 "browser automatically. In the page that opens, access ``godot.tools.html`` "
 "and you should be able to test the web editor this way."
 msgstr ""
+"這將提供 ``bin/`` 資料夾的內容並自動開啟預設的 Web 瀏覽器。在打開的頁面中，存"
+"取“godot.tools.html”，您應該能夠通過這種方式測試 Web 編輯器。"
 
 msgid ""
 "Note that for production use cases, this Python-based web server should not "
 "be used. Instead, you should use an established web server such as Apache or "
 "nginx."
 msgstr ""
+"請注意，對於生產用例，不應使用此基於 Python 的 Web 伺服器。相反，您應該使用已"
+"建立的 Web 伺服器，例如 Apache 或 nginx。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

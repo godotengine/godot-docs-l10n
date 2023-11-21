@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Particle shaders"
-msgstr ""
+msgstr "粒子著色器"
 
 msgid ""
 "Particle shaders are a special type of shader that runs before the object is "
@@ -26,6 +26,9 @@ msgid ""
 "position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
+"粒子著色器是一種特殊型別的頂點著色器, 在物體被繪製之前運作. 它們用於計算材質"
+"屬性, 如顏色, 位置和旋轉. 它們與CanvasItem或Spatial的任何常規材質一起繪製, 這"
+"取決於它們是2D還是3D."
 
 msgid ""
 "Particle shaders are unique because they are not used to draw the object "
@@ -33,17 +36,24 @@ msgid ""
 "by the CanvasItem of Spatial shader. They contain two processor functions: "
 "``start()`` and ``process()``."
 msgstr ""
+"粒子著色器是獨特的, 因為它們不用於繪製物件本身；被用來計算粒子的性質, 然後由"
+"空間著色器的畫布元件使用. 它們只包含一個頂點處理器函式, 輸出多個屬性的內建函"
+"式(見下文)."
 
 msgid ""
 "Unlike other shader types, particle shaders keep the data that was output "
 "the previous frame. Therefore, particle shaders can be used for complex "
 "effects that take place over multiple frames."
 msgstr ""
+"與其他著色器型別不同，粒子著色器保留前一影格輸出的資料。因此，粒子著色器可用"
+"於在多個影格上發生的複雜效果。"
 
 msgid ""
 "Particle shaders are only available with GPU-based particle nodes (:ref:"
 "`class_GPUParticles2D` and :ref:`class_GPUParticles3D`)."
 msgstr ""
+"粒子著色器僅在 GLES3 後端中可用。如果您需要在 GLES2 中使用粒子系統，請使用 :"
+"ref:`CPUParticles <class_CPUParticles>`。"
 
 msgid ""
 "CPU-based particle nodes (:ref:`class_CPUParticles2D` and :ref:"
@@ -51,36 +61,39 @@ msgid ""
 "custom CanvasItem or Spatial shaders), but their motion is *simulated* on "
 "the CPU."
 msgstr ""
+"基於 CPU 的粒子節點（class_CPUParticles2D 和 class_CPUParticles3D）在 GPU 上"
+"「渲染」（這表示它們可以使用自訂 CanvasItem 或空間著色器），但它們的運動是在 "
+"CPU 上「模擬」 。"
 
 msgid "Render modes"
-msgstr ""
+msgstr "渲染模式"
 
 msgid "Render mode"
-msgstr ""
+msgstr "渲染模式"
 
 msgid "Description"
 msgstr "說明"
 
 msgid "**keep_data**"
-msgstr ""
+msgstr "**keep_data**"
 
 msgid "Do not clear previous data on restart."
-msgstr ""
+msgstr "不要在重啟時清除以前的資料."
 
 msgid "**disable_force**"
-msgstr ""
+msgstr "**disable_force**"
 
 msgid "Disable attractor force."
-msgstr ""
+msgstr "禁用吸引力。"
 
 msgid "**disable_velocity**"
-msgstr ""
+msgstr "**disable_velocity**"
 
 msgid "Ignore **VELOCITY** value."
-msgstr ""
+msgstr "忽略 **VELOCITY** 值."
 
 msgid "Built-ins"
-msgstr ""
+msgstr "內建"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -88,242 +101,252 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
+"標記為 \"in\" 的值是唯讀的. 標記為 \"out\" 的值是可以選擇寫入的, 不一定包含合"
+"理的值. 標記為 \"inout\" 的值提供一個合理的預設值, 並且可以選擇寫入. 取樣器不"
+"是寫入的物件, 它們沒有被標記."
 
-#, fuzzy
 msgid "Global built-ins"
 msgstr "定數"
 
 msgid "Global built-ins are available everywhere, including custom functions."
-msgstr ""
+msgstr "全域內建的功能隨處可見, 包括自訂功能."
 
 msgid "Built-in"
 msgstr "內建"
 
 msgid "in float **TIME**"
-msgstr ""
+msgstr "in float **TIME**"
 
 msgid "Global time, in seconds."
-msgstr ""
+msgstr "全球時間, 以秒為單位."
 
 msgid "in float **PI**"
-msgstr ""
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
 "diameter and amount of radians in half turn."
-msgstr ""
+msgstr "一個“PI”常數（“3.141592”）。圓的周長與其直徑的比率以及半圈的弧度數。"
 
 msgid "in float **TAU**"
-msgstr ""
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
-msgstr ""
+msgstr "一個“TAU”常數（“6.283185”）。相當於“PI * 2”和完整的弧度數。"
 
 msgid "in float **E**"
-msgstr ""
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
 "logarithm."
-msgstr ""
+msgstr "一個“E”常數（“2.718281”）。歐拉數和自然對數的底數。"
 
 msgid "Start and Process built-ins"
-msgstr ""
+msgstr "頂點內建"
 
 msgid "Function"
 msgstr "函式"
 
 msgid "in float **LIFETIME**"
-msgstr ""
+msgstr "in float **LIFETIME**"
 
 msgid "Particle lifetime."
-msgstr ""
+msgstr "粒子壽命。"
 
 msgid "in float **DELTA**"
-msgstr ""
+msgstr "in float **DELTA**"
 
 msgid "Delta process time."
-msgstr ""
+msgstr "處理時間差。"
 
 msgid "in uint **NUMBER**"
-msgstr ""
+msgstr "in uint **NUMBER**"
 
 msgid "Unique number since emission start."
-msgstr ""
+msgstr "發射開始後的唯一編號。"
 
 msgid "in uint **INDEX**"
-msgstr ""
+msgstr "in uint **INDEX**"
 
 msgid "Particle index (from total particles)."
-msgstr ""
+msgstr "粒子索引（在所有粒子範圍內）。"
 
 msgid "in mat4 **EMISSION_TRANSFORM**"
-msgstr ""
+msgstr "in mat4 **EMISSION_TRANSFORM**"
 
 msgid "Emitter transform (used for non-local systems)."
-msgstr ""
+msgstr "發射器變換（用於非本地坐標系）。"
 
 msgid "in uint **RANDOM_SEED**"
-msgstr ""
+msgstr "in uint **RANDOM_SEED**"
 
 msgid "Random seed used as base for random."
-msgstr ""
+msgstr "隨機種子，是隨機的基礎。"
 
 msgid "inout bool **ACTIVE**"
-msgstr ""
+msgstr "inout bool **ACTIVE**"
 
 msgid "``true`` when the particle is active, can be set ``false``."
-msgstr ""
+msgstr "當粒子被啟動時為 ``true`` , 可以設定為 ``false`` ."
 
 msgid "inout vec4 **COLOR**"
-msgstr ""
+msgstr "inout vec4 **COLOR**"
 
 msgid ""
 "Particle color, can be written to and accessed in mesh's vertex function."
-msgstr ""
+msgstr "粒子的顏色, 可以寫入Mesh的頂點函式中, 也可以存取."
 
 msgid "inout vec3 **VELOCITY**"
-msgstr ""
+msgstr "inout vec3 **VELOCITY**"
 
 msgid "Particle velocity, can be modified."
-msgstr ""
+msgstr "粒子速度, 可以修改."
 
 msgid "inout mat4 **TRANSFORM**"
-msgstr ""
+msgstr "inout mat4 **TRANSFORM**"
 
 msgid "Particle transform."
-msgstr ""
+msgstr "粒子變換。"
 
 msgid "inout vec4 **CUSTOM**"
-msgstr ""
+msgstr "inout vec4 **CUSTOM**"
 
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
-msgstr ""
+msgstr "自訂粒子資料。網格的著色器可以使用 **INSTANCE_CUSTOM** 存取。"
 
 msgid "inout float **MASS**"
-msgstr ""
+msgstr "inout float **MASS**"
 
 msgid ""
 "Particle mass, intended to be used with attractors. Equals ``1.0`` by "
 "default."
-msgstr ""
+msgstr "粒子質量，旨在與吸引子一起使用。預設等於``1.0``。"
 
 msgid ""
 "In order to use the ``COLOR`` variable in a StandardMaterial3D, set "
 "``vertex_color_use_as_albedo`` to ``true``. In a ShaderMaterial, access it "
 "with the ``COLOR`` variable."
 msgstr ""
+"為了在SpatialMaterial中使用 ``COLOR`` 變數, 將 ``use_vertex_as_albedo`` 設定"
+"為 ``true`` . 在ShaderMaterial中, 用 ``COLOR`` 變數存取它."
 
-#, fuzzy
 msgid "Start built-ins"
 msgstr "定數"
 
 msgid "in bool **RESTART_POSITION**"
-msgstr ""
+msgstr "in bool **RESTART_POSITION**"
 
 msgid "in bool **RESTART_ROT_SCALE**"
-msgstr ""
+msgstr "in bool **RESTART_ROT_SCALE**"
 
 msgid "in bool **RESTART_VELOCITY**"
-msgstr ""
+msgstr "in bool **RESTART_VELOCITY**"
 
 msgid "in bool **RESTART_COLOR**"
-msgstr ""
+msgstr "in bool **RESTART_COLOR**"
 
 msgid "in bool **RESTART_CUSTOM**"
-msgstr ""
+msgstr "in bool **RESTART_CUSTOM**"
 
-#, fuzzy
 msgid "Process built-ins"
 msgstr "定數"
 
 msgid "in bool **RESTART**"
-msgstr ""
+msgstr "in bool **RESTART**"
 
 msgid "``true`` if the current process frame is first for the particle."
-msgstr ""
+msgstr "``true`` , 如果目前面是正面."
 
 msgid "in uint **FLAG_EMIT_POSITION**"
-msgstr ""
+msgstr "in uint **FLAG_EMIT_POSITION**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a position to a new particle's transform."
 msgstr ""
+"用於在「emit_subarticle」函式的最後一個參數上使用的旗標，用於為新粒子的變換分"
+"配位置。"
 
 msgid "in uint **FLAG_EMIT_ROT_SCALE**"
-msgstr ""
+msgstr "in uint **FLAG_EMIT_ROT_SCALE**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign the rotation and scale to a new particle's transform."
 msgstr ""
+"用於在“emit_subarticle”函式的最後一個參數上使用的旗標，將旋轉和縮放分配給新粒"
+"子的變換。"
 
 msgid "in uint **FLAG_EMIT_VELOCITY**"
-msgstr ""
+msgstr "in uint **FLAG_EMIT_VELOCITY**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a velocity to a new particle."
-msgstr ""
+msgstr "用於使用“emit_subarticle”函式的最後一個參數來為新粒子分配速度的旗標。"
 
 msgid "in uint **FLAG_EMIT_COLOR**"
-msgstr ""
+msgstr "in uint **FLAG_EMIT_COLOR**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a color to a new particle."
 msgstr ""
+"用於在“emit_subarticle”函式的最後一個參數上使用的旗標，為新粒子分配顏色。"
 
 msgid "in uint **FLAG_EMIT_CUSTOM**"
-msgstr ""
+msgstr "in uint **FLAG_EMIT_CUSTOM**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a custom data vector to a new particle."
 msgstr ""
+"用於在「emit_subarticle」函式的最後一個參數上使用的旗標，以將自訂資料向量指派"
+"給新粒子。"
 
 msgid "in bool **COLLIDED**"
-msgstr ""
+msgstr "in bool **COLLIDED**"
 
 msgid "``true`` when the particle has collided with a particle collider."
-msgstr ""
+msgstr "``true`` 當粒子必須重新啟動時(生命週期迴圈)."
 
 msgid "in vec3 **COLLISION_NORMAL**"
-msgstr ""
+msgstr "in vec3 **COLLISION_NORMAL**"
 
 msgid ""
 "A normal of the last collision. If there is no collision detected it is "
 "equal to ``vec3(0.0)``."
-msgstr ""
+msgstr "上次碰撞的法線。如果沒有偵測到碰撞，則等於「vec3(0.0)」。"
 
 msgid "in float **COLLISION_DEPTH**"
-msgstr ""
+msgstr "in float **COLLISION_DEPTH**"
 
 msgid ""
 "A length of normal of the last collision. If there is no collision detected "
 "it is equal to ``0.0``."
-msgstr ""
+msgstr "最後一次碰撞的法線長度。如果沒有偵測到碰撞，則等於「0.0」。"
 
 msgid "in vec3 **ATTRACTOR_FORCE**"
-msgstr ""
+msgstr "in vec3 **ATTRACTOR_FORCE**"
 
 msgid "A combined force of the attractors at the moment on that particle."
-msgstr ""
+msgstr "此時該粒子上吸引子的合力。"
 
 msgid "in vec4 **USERDATAX**"
-msgstr ""
+msgstr "in vec4 **USERDATAX**"
 
 msgid ""
 "Vector that enables the integration of supplementary user-defined data into "
 "the particle process shader. ``USERDATAX`` are six built-ins identified by "
 "number, ``X`` can be numbers between 1 and 6."
 msgstr ""
+"可將補充的使用者定義資料整合到粒子過程著色器中的向量。 ``USERDATAX`` 是由數字"
+"標識的六個內建函式，``X`` 可以是 1 到 6 之間的數字。"
 
-#, fuzzy
 msgid "Process functions"
 msgstr "其他函式"
 
@@ -331,9 +354,11 @@ msgid ""
 "bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 "
 "custom, uint flags)"
 msgstr ""
+"bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 "
+"custom, uint flags)"
 
 msgid "Forces to emit a particle from a sub-emitter."
-msgstr ""
+msgstr "強制從子發射器發射粒子。"
 
 msgid "Translation status"
 msgstr "翻譯狀態"

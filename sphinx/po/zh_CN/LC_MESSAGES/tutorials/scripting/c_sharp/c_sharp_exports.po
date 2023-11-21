@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,13 +18,9 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #, fuzzy
-msgid "C# exports"
-msgstr "export"
+msgid "C# exported properties"
+msgstr "Area 的属性"
 
-msgid "Introduction to exports"
-msgstr "导出简介"
-
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
@@ -33,7 +29,7 @@ msgid ""
 msgstr ""
 "在 Godot 中可以导出类成员。这意味着它们的值会与它们所附加的资源（例如\\ :ref:"
 "`场景 <class_PackedScene>`\\ ）一起保存。它们也可以在属性编辑器中进行编辑。导"
-"出使用关键字 ``export`` 来完成： ::"
+"出使用注解 ``[Export]`` 来完成。"
 
 msgid ""
 "In that example the value ``5`` will be saved, and after building the "
@@ -53,20 +49,18 @@ msgstr ""
 msgid ""
 "Exporting can only be done with :ref:`Variant-compatible "
 "<doc_c_sharp_variant>` types."
-msgstr ""
+msgstr "导出只适用于\\ :ref:`与 Variant 兼容 <doc_c_sharp_variant>`\\ 的类型。"
 
 msgid ""
 "Exporting properties can also be done in GDScript, for information on that "
 "see :ref:`doc_gdscript_exports`."
-msgstr ""
+msgstr "GDScript 中也能够导出属性，相关信息见 :ref:`doc_gdscript_exports`\\ 。"
 
-#, fuzzy
 msgid "Basic use"
 msgstr "基本用法"
 
-#, fuzzy
 msgid "Exporting can work with fields and properties."
-msgstr "导出包、补丁、Mod"
+msgstr "导出包、补丁、Mod。"
 
 msgid ""
 "Exported members can specify a default value; otherwise, the `default value "
@@ -74,13 +68,11 @@ msgid ""
 "reference/builtin-types/default-values>`_ is used instead."
 msgstr ""
 
-#, fuzzy
 msgid "Resources and nodes can be exported."
-msgstr "无法导出 ShaderMaterial。"
+msgstr "可以导出资源和节点。"
 
-#, fuzzy
 msgid "Grouping exports"
-msgstr "对属性进行分组"
+msgstr "导出分组"
 
 msgid ""
 "It is possible to group your exported properties inside the Inspector with "
@@ -97,7 +89,7 @@ msgstr ""
 msgid ""
 "Groups cannot be nested, use ``[ExportSubgroup]`` to create subgroups within "
 "a group."
-msgstr ""
+msgstr "分组可以嵌套，请使用 ``[ExportSubgroup]`` 在分组中创建子分组。"
 
 msgid ""
 "You can also change the name of your main category, or create additional "
@@ -110,42 +102,39 @@ msgid ""
 "creating projects for public use."
 msgstr ""
 
-#, fuzzy
 msgid "Strings as paths"
-msgstr "字符串长度"
+msgstr "字符串是路径"
 
 msgid "Property hints can be used to export strings as paths"
 msgstr ""
 
-#, fuzzy
 msgid "String as a path to a file."
-msgstr "分享配置"
+msgstr "字符串是文件的路径。"
 
 msgid "String as a path to a directory."
-msgstr ""
+msgstr "字符串是目录的路径。"
 
 msgid "String as a path to a file, custom filter provided as hint."
-msgstr ""
+msgstr "字符串是文件的路径，在提示中提供自定义过滤器。"
 
 msgid ""
 "Using paths in the global filesystem is also possible, but only in scripts "
 "in tool mode."
-msgstr ""
+msgstr "也可以使用全局文件系统中的路径，但是仅支持工具模式的脚本。"
 
 msgid "String as a path to a PNG file in the global filesystem."
-msgstr ""
+msgstr "字符串是全局文件系统中某个 PNG 文件的路径。"
 
 msgid "String as a path to a directory in the global filesystem."
-msgstr ""
+msgstr "字符串是全局文件系统中某个目录的路径。"
 
 msgid ""
 "The multiline annotation tells the editor to show a large input field for "
 "editing over multiple lines."
 msgstr ""
 
-#, fuzzy
 msgid "Limiting editor input ranges"
-msgstr "编辑现有页面"
+msgstr "限制编辑器输入范围"
 
 msgid ""
 "Using the range property hint allows you to limit what can be input as a "
@@ -153,13 +142,13 @@ msgid ""
 msgstr ""
 
 msgid "Allow integer values from 0 to 20."
-msgstr ""
+msgstr "允许 0 到 20 之间的整数。"
 
 msgid "Allow integer values from -10 to 20."
-msgstr ""
+msgstr "允许 -10 到 20 之间的整数。"
 
 msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
-msgstr ""
+msgstr "允许 -10 到 20 之间的数，对齐到 0.2 的倍数。"
 
 msgid ""
 "If you add the hints \"or_greater\" and/or \"or_less\" you can go above or "
@@ -168,20 +157,19 @@ msgid ""
 msgstr ""
 
 msgid "Floats with easing hint"
-msgstr ""
+msgstr "带缓动提示的浮点数"
 
 msgid "Display a visual representation of the 'ease()' function when editing."
 msgstr ""
 
-#, fuzzy
 msgid "Colors"
 msgstr "颜色"
 
 msgid "Regular color given as red-green-blue-alpha value."
-msgstr ""
+msgstr "使用红、绿、蓝、Alpha 值指定的普通颜色。"
 
 msgid "Color given as red-green-blue value (alpha will always be 1)."
-msgstr ""
+msgstr "使用红、绿、蓝值指定的颜色（Alpha 始终为 1）。"
 
 msgid "Nodes"
 msgstr "节点"
@@ -197,7 +185,7 @@ msgstr ""
 
 msgid ""
 "Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
-msgstr ""
+msgstr "如果需要，仍然可以和 Godot 3.x 中一样导出 NodePath："
 
 msgid "Resources"
 msgstr "资源"
@@ -237,14 +225,13 @@ msgid ""
 "multiple of the enum members. The value will be stored as an integer."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the ``Flags`` property hint, they can be "
 "set from the editor."
 msgstr ""
 "用作位标志的整数可以在一个属性中存储多个 ``true``/ ``false``\\ （布尔）值。通"
-"过使用导出提示 ``int, FLAGS, ...``\\ ，可以在编辑器中设置它们： ::"
+"过使用导出提示 ``int, FLAGS, ...``\\ ，可以在编辑器中设置它们。"
 
 #, fuzzy
 msgid ""
@@ -266,20 +253,18 @@ msgid ""
 "that are a combination of other flags:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Export annotations are also provided for the physics and render layers "
 "defined in the project settings."
-msgstr "也可以为项目设置中定义的物理层和渲染层提供导出提示： ::"
+msgstr "也可以为项目设置中定义的物理层和渲染层提供导出提示。"
 
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
 msgstr "使用位标志需要对位操作有一定的了解. 如果有疑问, 请使用布尔变量代替."
 
-#, fuzzy
 msgid "Exporting enums"
-msgstr "导出菜单"
+msgstr "导出枚举"
 
 msgid ""
 "Members whose type is an enum can be exported and their values are limited "
@@ -358,9 +343,8 @@ msgid ""
 "specified:"
 msgstr ""
 
-#, fuzzy
 msgid "Exporting C# arrays"
-msgstr "导出数组"
+msgstr "导出 C# 数组"
 
 msgid ""
 "C# arrays can exported as long as the element type is a :ref:`Variant-"
@@ -402,9 +386,10 @@ msgstr ""
 msgid ""
 "Before reading further, you should get familiar with the way properties are "
 "handled and how they can be customized with :ref:`_Set() "
-"<class_Object_method__set>`, :ref:`_Get() <class_Object_method__get>`, and :"
-"ref:`_GetPropertyList() <class_Object_method__get_property_list>` methods as "
-"described in :ref:`doc_accessing_data_or_logic_from_object`."
+"<class_Object_private_method__set>`, :ref:`_Get() "
+"<class_Object_private_method__get>`, and :ref:`_GetPropertyList() "
+"<class_Object_private_method__get_property_list>` methods as described in :"
+"ref:`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 "在进一步阅读前，你需要熟悉属性的运作方式以及它们是如何通过 :ref:`_set() "
 "<class_Object_method__get_property_list>`\\ 、\\ :ref:`_get() "

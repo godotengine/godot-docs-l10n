@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -234,17 +234,14 @@ msgstr "用于绑定3D纹理的采样器类型, 以无符号整数形式读取."
 msgid "**samplerCube**"
 msgstr "**samplerCube**"
 
-#, fuzzy
 msgid "Sampler type for binding Cubemaps, which are read as float."
-msgstr "用于绑定Cubemaps的采样器类型, 读取为浮点数."
+msgstr "用于绑定立方体贴图的采样器类型，作为 float 读取。"
 
-#, fuzzy
 msgid "**samplerCubeArray**"
-msgstr "**samplerCube**"
+msgstr "**samplerCubeArray**"
 
-#, fuzzy
 msgid "Sampler type for binding Cubemap arrays, which are read as float."
-msgstr "用于绑定Cubemaps的采样器类型, 读取为浮点数."
+msgstr "用于绑定立方体贴图数组的采样器类型，作为 float 读取。"
 
 msgid "Casting"
 msgstr "转换"
@@ -472,29 +469,29 @@ msgid ""
 "using the ``uint(x)`` built-in conversion function."
 msgstr ""
 
-#, fuzzy
 msgid "Structs"
-msgstr "构造函数"
+msgstr "结构体"
 
 msgid ""
 "Structs are compound types which can be used for better abstraction of "
 "shader code. You can declare them at the global scope like:"
 msgstr ""
+"结构体是一种复合类型，可以对着色器代码进行更好的抽象。你可以像这样在全局作用"
+"域进行声明："
 
 msgid "After declaration, you can instantiate and initialize them like:"
-msgstr ""
+msgstr "声明后可以这样进行实例化和初始化："
 
 msgid "Or use struct constructor for same purpose:"
-msgstr ""
+msgstr "或者使用结构体的构造函数达到同样的效果："
 
 msgid ""
 "Structs may contain other struct or array, you can also instance them as "
 "global constant:"
-msgstr ""
+msgstr "结构体中可以包含其他结构体或者数组，你还可以把它们作为全局常量实例化："
 
-#, fuzzy
 msgid "You can also pass them to functions:"
-msgstr "你也可以通过代码来修改该属性："
+msgstr "你还可以把它们传递给函数："
 
 msgid "Operators"
 msgstr "运算符"
@@ -648,9 +645,8 @@ msgid ""
 "also behave differently depending on the hardware."
 msgstr ""
 
-#, fuzzy
 msgid "**Don't** do this."
-msgstr "**不要** 写 \"of the X\":"
+msgstr "**不要** 写 \"of the X\"。"
 
 msgid ""
 "Instead, always perform a range comparison with an epsilon value. The larger "
@@ -829,12 +825,21 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"It's important to understand that textures that are supplied as color "
-"require hints for proper sRGB->linear conversion (i.e. ``source_color``), as "
-"Godot's 3D engine renders in linear color space."
+"It's important to understand that textures *that are supplied as color* "
+"require hints for proper sRGB -> linear conversion (i.e. ``source_color``), "
+"as Godot's 3D engine renders in linear color space. If this is not done, the "
+"texture will appear washed out."
 msgstr ""
 "重要的是要明白，以颜色形式提供的纹理需要适当的 sRGB->线性转换的提示（即 "
 "``hint_albedo``\\ ），因为 Godot 的 3D 引擎在线性颜色空间中渲染。"
+
+msgid ""
+"The 2D renderer also renders in linear color space if the **Rendering > "
+"Viewport > HDR 2D** project setting is enabled, so ``source_color`` must "
+"also be used in ``canvas_item`` shaders. If 2D HDR is disabled, "
+"``source_color`` will keep working correctly in ``canvas_item`` shaders, so "
+"it's recommend to use it either way."
+msgstr ""
 
 msgid "Full list of hints below:"
 msgstr "以下是完整的提示列表："
@@ -847,7 +852,7 @@ msgid "**vec3, vec4**"
 msgstr "**vec4**"
 
 msgid "source_color"
-msgstr ""
+msgstr "source_color"
 
 msgid "Used as color."
 msgstr "用作颜色。"
@@ -871,32 +876,29 @@ msgstr "hint_normal"
 msgid "Used as normalmap."
 msgstr "用作法线贴图。"
 
-#, fuzzy
 msgid "hint_default_white"
-msgstr "hint_white"
+msgstr "hint_default_white"
 
 #, fuzzy
 msgid "As value or albedo color, default to opaque white."
 msgstr "用作反照率颜色，默认为白色。"
 
-#, fuzzy
 msgid "hint_default_black"
-msgstr "hint_black"
+msgstr "hint_default_black"
 
 #, fuzzy
 msgid "As value or albedo color, default to opaque black."
 msgstr "用作反照率颜色，默认为黑色。"
 
 msgid "hint_default_transparent"
-msgstr ""
+msgstr "hint_default_transparent"
 
 #, fuzzy
 msgid "As value or albedo color, default to transparent black."
 msgstr "用作反照率颜色，默认为黑色。"
 
-#, fuzzy
 msgid "hint_anisotropy"
-msgstr "hint_aniso"
+msgstr "hint_anisotropy"
 
 msgid "As flowmap, default to right."
 msgstr "作为 FlowMap，默认为右。"
@@ -917,28 +919,27 @@ msgid "Enabled specified texture filtering."
 msgstr ""
 
 msgid "repeat[_enable, _disable]"
-msgstr ""
+msgstr "repeat[_enable, _disable]"
 
 msgid "Enabled texture repeating."
-msgstr ""
+msgstr "启用纹理重复。"
 
 msgid "hint_screen_texture"
-msgstr ""
+msgstr "hint_screen_texture"
 
 msgid "Texture is the screen texture."
-msgstr ""
+msgstr "纹理是屏幕纹理。"
 
-#, fuzzy
 msgid "hint_depth_texture"
-msgstr "深度纹理"
+msgstr "hint_depth_texture"
 
 msgid "Texture is the depth texture."
-msgstr ""
+msgstr "纹理是深度纹理。"
 
 msgid "hint_normal_roughness_texture"
-msgstr ""
+msgstr "hint_normal_roughness_texture"
 
-msgid "Texture is the normal roughness texture."
+msgid "Texture is the normal roughness texture (only supported in Forward+)."
 msgstr ""
 
 msgid ""
@@ -964,17 +965,14 @@ msgstr ""
 msgid "For example, a bvec2 of (bx, by) could be created in the following way:"
 msgstr ""
 
-#, fuzzy
 msgid "**Vector2i**"
-msgstr "**Vector2**"
+msgstr "**Vector2i**"
 
-#, fuzzy
 msgid "**Vector3i**"
-msgstr "**Vector3**"
+msgstr "**Vector3i**"
 
-#, fuzzy
 msgid "**Vector4i**"
-msgstr "**Vector2**"
+msgstr "**Vector4i**"
 
 msgid "**Vector2**"
 msgstr "**Vector2**"
@@ -1005,9 +1003,8 @@ msgstr ""
 msgid "**Transform2D**"
 msgstr "**Transform2D**"
 
-#, fuzzy
 msgid "**Basis**"
-msgstr "Basis"
+msgstr "**Basis**"
 
 #, fuzzy
 msgid "**mat4** **mat4**"
@@ -1020,25 +1017,20 @@ msgstr "**Transform2D**"
 msgid "When a Transform3D is used, the w Vector is set to the identity."
 msgstr ""
 
-#, fuzzy
 msgid "**Texture2D**"
-msgstr "Texture (纹理)"
+msgstr "**Texture2D**"
 
-#, fuzzy
 msgid "**Texture2DArray**"
-msgstr "**sampler2DArray**"
+msgstr "**Texture2DArray**"
 
-#, fuzzy
 msgid "**Texture3D**"
-msgstr "Texture (纹理)"
+msgstr "**Texture3D**"
 
-#, fuzzy
 msgid "**Cubemap**"
-msgstr "**samplerCube**"
+msgstr "**Cubemap**"
 
-#, fuzzy
 msgid "**CubemapArray**"
-msgstr "**usampler2DArray**"
+msgstr "**CubemapArray**"
 
 msgid ""
 "Be careful when setting shader uniforms from GDScript, no error will be "
@@ -1050,6 +1042,11 @@ msgstr ""
 
 msgid "Uniforms can also be assigned default values:"
 msgstr "Uniform 也可以分配默认值："
+
+msgid ""
+"Note that when adding a default value and a hint, the default value goes "
+"after the hint."
+msgstr ""
 
 msgid ""
 "If you need to make multiple uniforms to be grouped in the specific category "
@@ -1266,58 +1263,50 @@ msgstr ""
 msgid "vec_type **radians** (vec_type degrees)"
 msgstr "vec_type **radians** (vec_type degrees度)"
 
-#, fuzzy
 msgid "Convert degrees to radians."
-msgstr "将度数转换为弧度"
+msgstr "将度数转换为弧度。"
 
 msgid "vec_type **degrees** (vec_type radians)"
 msgstr "vec_type **degrees** ( vec_type radians弧度)"
 
-#, fuzzy
 msgid "Convert radians to degrees."
-msgstr "将弧度转换为度数"
+msgstr "将弧度转换为度数。"
 
 msgid "vec_type **sin** (vec_type x)"
 msgstr "vec_type **sin** (vec_type x)"
 
-#, fuzzy
 msgid "Sine."
-msgstr "正弦"
+msgstr "正弦。"
 
 msgid "vec_type **cos** (vec_type x)"
 msgstr "vec_type **cos** (vec_type x)"
 
-#, fuzzy
 msgid "Cosine."
-msgstr "余弦"
+msgstr "余弦。"
 
 msgid "vec_type **tan** (vec_type x)"
 msgstr "vec_type **tan** (vec_type x)"
 
-#, fuzzy
 msgid "Tangent."
-msgstr "正切"
+msgstr "正切。"
 
 msgid "vec_type **asin** (vec_type x)"
 msgstr "vec_type **asin** (vec_type x)"
 
-#, fuzzy
 msgid "Arcsine."
-msgstr "反正弦"
+msgstr "反正弦。"
 
 msgid "vec_type **acos** (vec_type x)"
 msgstr "vec_type **acos** (vec_type x)"
 
-#, fuzzy
 msgid "Arccosine."
-msgstr "反余弦"
+msgstr "反余弦。"
 
 msgid "vec_type **atan** (vec_type y_over_x)"
 msgstr "vec_type **atan** (vec_type y_over_x)"
 
-#, fuzzy
 msgid "Arctangent."
-msgstr "反正切"
+msgstr "反正切。"
 
 msgid "vec_type **atan** (vec_type y, vec_type x)"
 msgstr "vec_type **atan** (vec_type y, vec_type x)"
@@ -1325,93 +1314,80 @@ msgstr "vec_type **atan** (vec_type y, vec_type x)"
 msgid "vec_type **sinh** (vec_type x)"
 msgstr "vec_type **sinh** (vec_type x)"
 
-#, fuzzy
 msgid "Hyperbolic sine."
-msgstr "双曲正弦"
+msgstr "双曲正弦。"
 
 msgid "vec_type **cosh** (vec_type x)"
 msgstr "vec_type **cosh** (vec_type x)"
 
-#, fuzzy
 msgid "Hyperbolic cosine."
-msgstr "双曲余弦"
+msgstr "双曲余弦。"
 
 msgid "vec_type **tanh** (vec_type x)"
 msgstr "vec_type **tanh** (vec_type x)"
 
-#, fuzzy
 msgid "Hyperbolic tangent."
-msgstr "双曲正切"
+msgstr "双曲正切。"
 
 msgid "vec_type **asinh** (vec_type x)"
 msgstr "vec_type **asinh** (vec_type x)"
 
-#, fuzzy
 msgid "Inverse hyperbolic sine."
-msgstr "反双曲正弦"
+msgstr "反双曲正弦。"
 
 msgid "vec_type **acosh** (vec_type x)"
 msgstr "vec_type **acosh** (vec_type x)"
 
-#, fuzzy
 msgid "Inverse hyperbolic cosine."
-msgstr "反双曲余弦"
+msgstr "反双曲余弦。"
 
 msgid "vec_type **atanh** (vec_type x)"
 msgstr "vec_type **atanh** (vec_type x)"
 
-#, fuzzy
 msgid "Inverse hyperbolic tangent."
-msgstr "反双曲正切"
+msgstr "反双曲正切。"
 
 msgid "vec_type **pow** (vec_type x, vec_type y)"
 msgstr "vec_type **pow** (vec_type x, vec_type y)"
 
-#, fuzzy
 msgid "Power (undefined if ``x`` < 0 or if ``x`` == 0 and ``y`` <= 0)."
-msgstr "幂（\\ ``x`` < 0 或 ``x`` = 0 且 ``y`` <= 0 时未定义）"
+msgstr "幂（\\ ``x`` < 0 或 ``x`` = 0 且 ``y`` <= 0 时未定义）。"
 
 msgid "vec_type **exp** (vec_type x)"
 msgstr "vec_type **exp** (vec_type x)"
 
-#, fuzzy
 msgid "Base-e exponential."
-msgstr "基数-e指数"
+msgstr "基数 e 的指数。"
 
 msgid "vec_type **exp2** (vec_type x)"
 msgstr "vec_type **exp2** (vec_type x)"
 
-#, fuzzy
 msgid "Base-2 exponential."
-msgstr "基数-2指数"
+msgstr "基数 2 的指数。"
 
 msgid "vec_type **log** (vec_type x)"
 msgstr "vec_type **log** (vec_type x)"
 
-#, fuzzy
 msgid "Natural logarithm."
-msgstr "自然对数"
+msgstr "自然对数。"
 
 msgid "vec_type **log2** (vec_type x)"
 msgstr "vec_type **log2** (vec_type x)"
 
-#, fuzzy
 msgid "Base-2 logarithm."
-msgstr "基数-2对数"
+msgstr "基数 2 的对数。"
 
 msgid "vec_type **sqrt** (vec_type x)"
 msgstr "vec_type **sqrt** (vec_type x)"
 
-#, fuzzy
 msgid "Square root."
-msgstr "平方根"
+msgstr "平方根。"
 
 msgid "vec_type **inversesqrt** (vec_type x)"
 msgstr "vec_type **inversesqrt** (vec_type x)"
 
-#, fuzzy
 msgid "Inverse square root."
-msgstr "反平方根"
+msgstr "反平方根。"
 
 msgid "vec_type **abs** (vec_type x)"
 msgstr "vec_type **abs** (vec_type x)"
@@ -1435,37 +1411,32 @@ msgstr ""
 msgid "vec_type **floor** (vec_type x)"
 msgstr "vec_type **floor** (vec_type x)"
 
-#, fuzzy
 msgid "Round to the integer below."
-msgstr "四舍五入到最接近的偶数"
+msgstr "向下舍入为整数。"
 
 msgid "vec_type **round** (vec_type x)"
 msgstr "vec_type **round** (vec_type x)"
 
-#, fuzzy
 msgid "Round to the nearest integer."
-msgstr "四舍五入到最接近的偶数"
+msgstr "舍入到最接近的整数。"
 
 msgid "vec_type **roundEven** (vec_type x)"
 msgstr "vec_type **roundEven** (vec_type x)"
 
-#, fuzzy
 msgid "Round to the nearest even integer."
-msgstr "四舍五入到最接近的偶数"
+msgstr "舍入到最接近的偶数。"
 
 msgid "vec_type **trunc** (vec_type x)"
 msgstr "vec_type **trunc** (vec_type x)"
 
-#, fuzzy
 msgid "Truncation."
-msgstr "截断"
+msgstr "截断。"
 
 msgid "vec_type **ceil** (vec_type x)"
 msgstr "vec_type **ceil** (vec_type x)"
 
-#, fuzzy
 msgid "Round to the integer above."
-msgstr "四舍五入到最接近的偶数"
+msgstr "向上舍入为整数。"
 
 msgid "vec_type **fract** (vec_type x)"
 msgstr "vec_type **fract** (vec_type x)"
@@ -1476,34 +1447,29 @@ msgstr ""
 msgid "vec_type **mod** (vec_type x, vec_type y)"
 msgstr "vec_type **mod** (vec_type x, vec_type y)"
 
-#, fuzzy
 msgid "vec_type **mod** (vec_type x, float y)"
-msgstr "vec_type **mod** (vec_type x , float y)"
+msgstr "vec_type **mod** (vec_type x, float y)"
 
-#, fuzzy
 msgid "Modulo (division remainder)."
-msgstr "乘法/除法/余数"
+msgstr "模（除法余数）。"
 
 msgid "vec_type **modf** (vec_type x, out vec_type i)"
 msgstr "vec_type **modf** (vec_type x, out vec_type i)"
 
-#, fuzzy
 msgid "Fractional of ``x``, with ``i`` as integer part."
-msgstr "``x`` 为小数部分, ``i`` 为整数部分"
+msgstr "``x`` 的小数部分，\\ ``i`` 为整数部分。"
 
 msgid "vec_type  **min** (vec_type a, vec_type b)"
 msgstr "vec_type **min** (vec_type a, vec_type b)"
 
-#, fuzzy
 msgid "Lowest value between ``a`` and ``b``."
-msgstr "``x`` 和 ``y`` 的绝对导数之和"
+msgstr "``a`` 和 ``b`` 之间的较小值。"
 
 msgid "vec_type  **max** (vec_type a, vec_type b)"
 msgstr "vec_type **max** (vec_type a, vec_type b)"
 
-#, fuzzy
 msgid "Highest value between ``a`` and ``b``."
-msgstr "这将为每条鱼在 ``2`` 和 ``10`` 之间设置不同的速度。"
+msgstr "``a`` 和 ``b`` 之间的较大值。"
 
 msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
 msgstr "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
@@ -1521,11 +1487,10 @@ msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 msgstr "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 
 msgid "Linear interpolate between ``a`` and ``b`` by ``c``."
-msgstr ""
+msgstr "根据 ``c`` 在 ``a`` 和 ``b`` 之间进行线性插值。"
 
-#, fuzzy
 msgid "vec_type **fma** (vec_type a, vec_type b, vec_type c)"
-msgstr "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
+msgstr "vec_type **fma** (vec_type a, vec_type b, vec_type c)"
 
 msgid ""
 "Performs a fused multiply-add operation: ``(a * b + c)`` (faster than doing "
@@ -1535,16 +1500,14 @@ msgstr ""
 msgid "vec_type **step** (vec_type a, vec_type b)"
 msgstr "vec_type **step** (vec_type a, vec_type b)"
 
-#, fuzzy
 msgid "``b[i] < a[i] ? 0.0 : 1.0``."
-msgstr "``b[i] < a[i] ? 0.0 : 1.0``"
+msgstr "``b[i] < a[i] ? 0.0 : 1.0``\\ 。"
 
 msgid "vec_type **step** (float a, vec_type b)"
 msgstr "vec_type **step** (float a, vec_type b)"
 
-#, fuzzy
 msgid "``b[i] < a ? 0.0 : 1.0``."
-msgstr "``b[i] < a ? 0.0 : 1.0``"
+msgstr "``b[i] < a ? 0.0 : 1.0``\\ 。"
 
 msgid "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
 msgstr "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
@@ -1558,177 +1521,152 @@ msgstr ""
 msgid "bvec_type **isnan** (vec_type x)"
 msgstr "bvec_type **isnan** (vec_type x)"
 
-#, fuzzy
 msgid "Returns ``true`` if scalar or vector component is ``NaN``."
-msgstr "如果标量或向量分量是 ``NaN`` 则返回 ``true``"
+msgstr "如果标量或向量分量是 ``NaN`` 则返回 ``true``。"
 
 msgid "bvec_type **isinf** (vec_type x)"
 msgstr "bvec_type **isinf** (vec_type x)"
 
-#, fuzzy
 msgid "Returns ``true`` if scalar or vector component is ``INF``."
-msgstr "如果标量或向量分量是 ``INF`` , 则返回 ``true``"
+msgstr "如果标量或向量分量是 ``INF`` , 则返回 ``true``。"
 
 msgid "ivec_type **floatBitsToInt** (vec_type x)"
 msgstr "ivec_type **floatBitsToInt** (vec_type x)"
 
-#, fuzzy
 msgid "Float->Int bit copying, no conversion."
-msgstr "Float->Int 位复制，无转换"
+msgstr "Float->Int 位复制，无转换。"
 
 msgid "uvec_type **floatBitsToUint** (vec_type x)"
 msgstr "uvec_type **floatBitsToUint** (vec_type x)"
 
-#, fuzzy
 msgid "Float->UInt bit copying, no conversion."
-msgstr "Float->UInt 位复制，无转换"
+msgstr "Float->UInt 位复制，无转换。"
 
 msgid "vec_type **intBitsToFloat** (ivec_type x)"
 msgstr "vec_type **intBitsToFloat** (ivec_type x)"
 
-#, fuzzy
 msgid "Int->Float bit copying, no conversion."
-msgstr "Int-> Float 位复制，无转换"
+msgstr "Int-> Float 位复制，无转换。"
 
 msgid "vec_type **uintBitsToFloat** (uvec_type x)"
 msgstr "vec_type **uintBitsToFloat** (uvec_type x)"
 
-#, fuzzy
 msgid "UInt->Float bit copying, no conversion."
-msgstr "UInt->Float 位复制，无转换"
+msgstr "UInt->Float 位复制，无转换。"
 
 msgid "float **length** (vec_type x)"
 msgstr "float **length** (vec_type x)"
 
-#, fuzzy
 msgid "Vector length."
-msgstr "向量长度"
+msgstr "向量长度。"
 
 msgid "float **distance** (vec_type a, vec_type b)"
 msgstr "float **distance** (vec_type a, vec_type b)"
 
-#, fuzzy
 msgid "Distance between vectors i.e ``length(a - b)``."
-msgstr "向量间距，即 ``length(a - b)``"
+msgstr "向量间距，即 ``length(a - b)``。"
 
 msgid "float **dot** (vec_type a, vec_type b)"
 msgstr "float **dot** (vec_type a, vec_type b)"
 
-#, fuzzy
 msgid "Dot product."
-msgstr "点积"
+msgstr "点积。"
 
 msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr "vec3 **cross** (vec3 a, vec3 b)"
 
-#, fuzzy
 msgid "Cross product."
-msgstr "叉积"
+msgstr "叉积。"
 
 msgid "vec_type **normalize** (vec_type x)"
 msgstr "vec_type **normalize** (vec_type x)"
 
-#, fuzzy
 msgid "Normalize to unit length."
-msgstr "标准化为单位长度"
+msgstr "标准化为单位长度。"
 
 msgid "vec3 **reflect** (vec3 I, vec3 N)"
 msgstr "vec3 **reflect** (vec3 I, vec3 N)"
 
-#, fuzzy
 msgid "Reflect."
-msgstr "反射"
+msgstr "反射。"
 
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
 msgstr "vec3 **refract** (vec3 I, vec3 N, float eta)"
 
-#, fuzzy
 msgid "Refract."
-msgstr "折射"
+msgstr "折射。"
 
 msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 msgstr "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 
-#, fuzzy
 msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
-msgstr "如果 ``dot(Nref, I)`` <0, 则返回N, 否则返回-N"
+msgstr "如果 ``dot(Nref, I)`` <0, 则返回N, 否则返回-N。"
 
 msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 msgstr "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 
-#, fuzzy
 msgid "Matrix component multiplication."
-msgstr "矩阵分量乘法"
+msgstr "矩阵分量乘法。"
 
 msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
 msgstr "mat_type **outerProduct** (vec_type column, vec_type row)"
 
-#, fuzzy
 msgid "Matrix outer product."
-msgstr "矩阵外积"
+msgstr "矩阵外积。"
 
 msgid "mat_type **transpose** (mat_type m)"
 msgstr "mat_type **transpose** (mat_type m)"
 
-#, fuzzy
 msgid "Transpose matrix."
-msgstr "转置矩阵"
+msgstr "转置矩阵。"
 
 msgid "float **determinant** (mat_type m)"
 msgstr "float **determinant** (mat_type m)"
 
-#, fuzzy
 msgid "Matrix determinant."
-msgstr "矩阵行列式"
+msgstr "矩阵行列式。"
 
 msgid "mat_type **inverse** (mat_type m)"
 msgstr "mat_type **inverse** (mat_type m)"
 
-#, fuzzy
 msgid "Inverse matrix."
-msgstr "逆矩阵"
+msgstr "逆矩阵。"
 
 msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
 msgstr "bvec_type **lessThan** (vec_type x, vec_type y)"
 
-#, fuzzy
 msgid "Bool vector comparison on < int/uint/float vectors."
-msgstr "Bool vector 对比 < int/uint/float vectors"
+msgstr "Bool vector 对比 < int/uint/float vectors。"
 
 msgid "bvec_type **greaterThan** (vec_type x, vec_type y)"
 msgstr "bvec_type **greaterThan** (vec_type x, vec_type y)"
 
-#, fuzzy
 msgid "Bool vector comparison on > int/uint/float vectors."
-msgstr "Bool vector 对比 > int/uint/float vectors"
+msgstr "Bool vector 对比 > int/uint/float vectors。"
 
 msgid "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
 msgstr "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
 
-#, fuzzy
 msgid "Bool vector comparison on <= int/uint/float vectors."
-msgstr "Bool vector 对比 <= int/uint/float vectors"
+msgstr "Bool vector 对比 <= int/uint/float vectors。"
 
 msgid "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
 msgstr "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
 
-#, fuzzy
 msgid "Bool vector comparison on >= int/uint/float vectors."
-msgstr "Bool vector 对比 >= int/uint/float vectors"
+msgstr "Bool vector 对比 >= int/uint/float vectors。"
 
 msgid "bvec_type **equal** (vec_type x, vec_type y)"
 msgstr "bvec_type **equal** (vec_type x, vec_type y)"
 
-#, fuzzy
 msgid "Bool vector comparison on == int/uint/float vectors."
-msgstr "Bool vector 对比 == int/uint/float vectors"
+msgstr "Bool vector 对比 == int/uint/float vectors。"
 
 msgid "bvec_type **notEqual** (vec_type x, vec_type y)"
 msgstr "bvec_type **notEqual** (vec_type x, vec_type y)"
 
-#, fuzzy
 msgid "Bool vector comparison on != int/uint/float vectors."
-msgstr "Bool vector 对比 != int/uint/float vectors"
+msgstr "Bool vector 对比 != int/uint/float vectors。"
 
 msgid "bool **any** (bvec_type x)"
 msgstr "bool **any** (bvec_type x)"
@@ -1745,53 +1683,43 @@ msgstr ""
 msgid "bvec_type **not** (bvec_type x)"
 msgstr "bvec_type **not** (bvec_type x)"
 
-#, fuzzy
 msgid "Invert boolean vector."
-msgstr "反转布尔向量"
+msgstr "反转布尔向量。"
 
-#, fuzzy
 msgid "ivec2 **textureSize** (gsampler2D s, int lod)"
-msgstr "ivec3 **textureSize** (sampler3D s, int lod)"
+msgstr "ivec2 **textureSize** (gsampler2D s, int lod)"
 
-#, fuzzy
 msgid "ivec3 **textureSize** (gsampler2DArray s, int lod)"
-msgstr "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
+msgstr "ivec3 **textureSize** (gsampler2DArray s, int lod)"
 
-#, fuzzy
 msgid "ivec3 **textureSize** (gsampler3D s, int lod)"
-msgstr "ivec3 **textureSize** (sampler3D s, int lod)"
+msgstr "ivec3 **textureSize** (gsampler3D s, int lod)"
 
 msgid "ivec2 **textureSize** (samplerCube s, int lod)"
 msgstr "ivec2 **textureSize** (samplerCube s, int lod)"
 
-#, fuzzy
 msgid "ivec2 **textureSize** (samplerCubeArray s, int lod)"
-msgstr "ivec2 **textureSize** (samplerCube s, int lod)"
+msgstr "ivec2 **textureSize** (samplerCubeArray s, int lod)"
 
-#, fuzzy
 msgid "Get the size of a texture."
-msgstr "获取2D纹理的大小"
+msgstr "获取纹理的大小。"
 
 msgid ""
 "The LOD defines which mipmap level is used. An LOD value of ``0`` will use "
 "the full resolution texture."
 msgstr ""
 
-#, fuzzy
 msgid "vec2 **textureQueryLod** (gsampler2D s, vec2 p)"
-msgstr "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
+msgstr "vec2 **textureQueryLod** (gsampler2D s, vec2 p)"
 
-#, fuzzy
 msgid "vec3 **textureQueryLod** (gsampler2DArray s, vec2 p)"
-msgstr "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
+msgstr "vec3 **textureQueryLod** (gsampler2DArray s, vec2 p)"
 
-#, fuzzy
 msgid "vec2 **textureQueryLod** (gsampler3D s, vec3 p)"
-msgstr "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
+msgstr "vec2 **textureQueryLod** (gsampler3D s, vec3 p)"
 
-#, fuzzy
 msgid "vec2 **textureQueryLod** (samplerCube s, vec3 p)"
-msgstr "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
+msgstr "vec2 **textureQueryLod** (samplerCube s, vec3 p)"
 
 msgid ""
 "Compute the level-of-detail that would be used to sample from a texture. The "
@@ -1800,201 +1728,153 @@ msgid ""
 "base level (regardless of the mipmap levels of the texture)."
 msgstr ""
 
-#, fuzzy
 msgid "int **textureQueryLevels** (gsampler2D s)"
-msgstr "ivec3 **textureSize** (sampler3D s, int lod)"
+msgstr "int **textureQueryLevels** (gsampler2D s)"
 
-#, fuzzy
 msgid "int **textureQueryLevels** (gsampler2DArray s)"
-msgstr "ivec3 **textureSize** (sampler2DArray_type s, int lod)"
+msgstr "int **textureQueryLevels** (gsampler2DArray s)"
 
-#, fuzzy
 msgid "int **textureQueryLevels** (gsampler3D s)"
-msgstr "ivec3 **textureSize** (sampler3D s, int lod)"
+msgstr "int **textureQueryLevels** (gsampler3D s)"
 
-#, fuzzy
 msgid "int **textureQueryLevels** (samplerCube s)"
-msgstr "ivec2 **textureSize** (samplerCube s, int lod)"
+msgstr "int **textureQueryLevels** (samplerCube s)"
 
-#, fuzzy
 msgid "Get the number of accessible mipmap levels of a texture."
-msgstr "获取cubemap纹理的大小"
+msgstr "获取cubemap纹理的大小。"
 
 msgid "If the texture is unassigned to a sampler, ``0`` is returned."
 msgstr ""
 
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
-msgstr "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
+msgstr "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
 
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler2DArray s, vec3 p [, float bias])"
-msgstr "vec4_type **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
+msgstr "gvec4_type **texture** (gsampler2DArray s, vec3 p [, float bias])"
 
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler3D s, vec3 p [, float bias])"
-msgstr "vec4_type **texture** (sampler3D_type s, vec3 uv [, float bias])"
+msgstr "gvec4_type **texture** (gsampler3D s, vec3 p [, float bias])"
 
-#, fuzzy
 msgid "vec4 **texture** (samplerCube s, vec3 p [, float bias])"
-msgstr "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
+msgstr "vec4 **texture** (samplerCube s, vec3 p [, float bias])"
 
-#, fuzzy
 msgid "vec4 **texture** (samplerCubeArray s, vec4 p [, float bias])"
-msgstr "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
+msgstr "vec4 **texture** (samplerCubeArray s, vec4 p [, float bias])"
 
-#, fuzzy
 msgid "Perform a texture read."
-msgstr "执行2D纹理读取"
+msgstr "执行纹理读取。"
 
-#, fuzzy
 msgid "gvec4_type **textureProj** (gsampler2D s, vec3 p [, float bias])"
-msgstr "vec4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
+msgstr "gvec4_type **textureProj** (gsampler2D s, vec3 p [, float bias])"
 
-#, fuzzy
 msgid "gvec4_type **textureProj** (gsampler2D s, vec4 p [, float bias])"
-msgstr "vec4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
+msgstr "gvec4_type **textureProj** (gsampler2D s, vec4 p [, float bias])"
 
-#, fuzzy
 msgid "gvec4_type **textureProj** (gsampler3D s, vec4 p [, float bias])"
-msgstr "vec4_type **textureProj** (sampler3D_type s, vec4 uv [, float bias])"
+msgstr "gvec4_type **textureProj** (gsampler3D s, vec4 p [, float bias])"
 
-#, fuzzy
 msgid "Perform a texture read with projection."
-msgstr "执行带投影的2D纹理读取"
+msgstr "执行带投影的纹理读取。"
 
-#, fuzzy
 msgid "gvec4_type **textureLod** (gsampler2D s, vec2 p, float lod)"
-msgstr "vec4_type **textureLod** (sampler2D_type s, vec2 uv, float lod)"
+msgstr "gvec4_type **textureLod** (gsampler2D s, vec2 p, float lod)"
 
-#, fuzzy
 msgid "gvec4_type **textureLod** (gsampler2DArray s, vec3 p, float lod)"
-msgstr "vec4_type **textureLod** (sampler2DArray_type s, vec3 uv, float lod)"
+msgstr "gvec4_type **textureLod** (gsampler2DArray s, vec3 p, float lod)"
 
-#, fuzzy
 msgid "gvec4_type **textureLod** (gsampler3D s, vec3 p, float lod)"
-msgstr "vec4_type **textureLod** (sampler3D_type s, vec3 uv, float lod)"
+msgstr "gvec4_type **textureLod** (gsampler3D s, vec3 p, float lod)"
 
-#, fuzzy
 msgid "vec4 **textureLod** (samplerCube s, vec3 p, float lod)"
-msgstr "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
+msgstr "vec4 **textureLod** (samplerCube s, vec3 p, float lod)"
 
-#, fuzzy
 msgid "vec4 **textureLod** (samplerCubeArray s, vec4 p, float lod)"
-msgstr "vec4 **textureLod** (samplerCube s, vec3 uv, float lod)"
+msgstr "vec4 **textureLod** (samplerCubeArray s, vec4 p, float lod)"
 
-#, fuzzy
 msgid "Perform a texture read at custom mipmap."
-msgstr "在自定义mipmap上执行2D纹理读取"
+msgstr "在自定义 mipmap 上执行纹理读取。"
 
 msgid ""
 "The LOD defines which mipmap level is used. An LOD value of ``0.0`` will use "
-"the full resolution texture."
+"the full resolution texture. If the texture lacks mipmaps, all LOD values "
+"will act like ``0.0``."
 msgstr ""
 
-#, fuzzy
 msgid "gvec4_type **textureProjLod** (gsampler2D s, vec3 p, float lod)"
-msgstr "vec4_type **textureProjLod** (sampler2D_type s, vec3 uv, float lod)"
+msgstr "gvec4_type **textureProjLod** (gsampler2D s, vec3 p, float lod)"
 
-#, fuzzy
 msgid "gvec4_type **textureProjLod** (gsampler2D s, vec4 p, float lod)"
-msgstr "vec4_type **textureProjLod** (sampler2D_type s, vec4 uv, float lod)"
+msgstr "gvec4_type **textureProjLod** (gsampler2D s, vec4 p, float lod)"
 
-#, fuzzy
 msgid "gvec4_type **textureProjLod** (gsampler3D s, vec4 p, float lod)"
-msgstr "vec4_type **textureProjLod** (sampler3D_type s, vec4 uv, float lod)"
+msgstr "gvec4_type **textureProjLod** (gsampler3D s, vec4 p, float lod)"
 
-#, fuzzy
 msgid "Performs a texture read with projection/LOD."
-msgstr "执行带投影/LOD的2D纹理读取"
+msgstr "执行带投影/LOD的2D纹理读取。"
 
-#, fuzzy
 msgid "gvec4_type **textureGrad** (gsampler2D s, vec2 p, vec2 dPdx, vec2 dPdy)"
 msgstr ""
-"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"gvec4_type **textureGrad** (gsampler2D s, vec2 p, vec2 dPdx, vec2 dPdy)"
 
-#, fuzzy
 msgid ""
 "gvec4_type **textureGrad** (gsampler2DArray s, vec3 p, vec2 dPdx, vec2 dPdy)"
 msgstr ""
-"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"gvec4_type **textureGrad** (gsampler2DArray s, vec3 p, vec2 dPdx, vec2 dPdy)"
 
-#, fuzzy
 msgid "gvec4_type **textureGrad** (gsampler3D s, vec3 p, vec2 dPdx, vec2 dPdy)"
 msgstr ""
-"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"gvec4_type **textureGrad** (gsampler3D s, vec3 p, vec2 dPdx, vec2 dPdy)"
 
-#, fuzzy
 msgid "vec4 **textureGrad** (samplerCube s, vec3 p, vec3 dPdx, vec3 dPdy)"
-msgstr ""
-"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+msgstr "vec4 **textureGrad** (samplerCube s, vec3 p, vec3 dPdx, vec3 dPdy)"
 
-#, fuzzy
 msgid "vec4 **textureGrad** (samplerCubeArray s, vec3 p, vec3 dPdx, vec3 dPdy)"
 msgstr ""
-"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"vec4 **textureGrad** (samplerCubeArray s, vec3 p, vec3 dPdx, vec3 dPdy)"
 
-#, fuzzy
 msgid "Performs a texture read with explicit gradients."
-msgstr "执行带投影的2D纹理读取"
+msgstr "执行带显式渐变的纹理读取。"
 
-#, fuzzy
 msgid ""
 "gvec4_type **textureProjGrad** (gsampler2D s, vec3 p, vec2 dPdx, vec2 dPdy)"
 msgstr ""
-"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"gvec4_type **textureProjGrad** (gsampler2D s, vec3 p, vec2 dPdx, vec2 dPdy)"
 
-#, fuzzy
 msgid ""
 "gvec4_type **textureProjGrad** (gsampler2D s, vec4 p, vec2 dPdx, vec2 dPdy)"
 msgstr ""
-"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"gvec4_type **textureProjGrad** (gsampler2D s, vec4 p, vec2 dPdx, vec2 dPdy)"
 
-#, fuzzy
 msgid ""
 "gvec4_type **textureProjGrad** (gsampler3D s, vec4 p, vec3 dPdx, vec3 dPdy)"
 msgstr ""
-"vec4_type **textureGrad** ( sampler_type s, vec_type uv, vec_type dPdx, "
-"vec_type dPdy)"
+"gvec4_type **textureProjGrad** (gsampler3D s, vec4 p, vec3 dPdx, vec3 dPdy)"
 
 #, fuzzy
-msgid "Performs a texture read with projection/LOD and with explcit gradients."
-msgstr "执行带投影/LOD的2D纹理读取"
+msgid ""
+"Performs a texture read with projection/LOD and with explicit gradients."
+msgstr "执行带投影/LOD、带显式渐变的纹理读取。"
 
-#, fuzzy
 msgid "gvec4_type **texelFetch** (gsampler2D s, ivec2 p, int lod)"
-msgstr "vec4_type **texelFetch** (sampler2D_type s, ivec2 uv, int lod)"
+msgstr "gvec4_type **texelFetch** (gsampler2D s, ivec2 p, int lod)"
 
-#, fuzzy
 msgid "gvec4_type **texelFetch** (gsampler2DArray s, ivec3 p, int lod)"
-msgstr "vec4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
+msgstr "gvec4_type **texelFetch** (gsampler2DArray s, ivec3 p, int lod)"
 
-#, fuzzy
 msgid "gvec4_type **texelFetch** (gsampler3D s, ivec3 p, int lod)"
-msgstr "vec4_type **texelFetch** (sampler3D_type s, ivec3 uv, int lod)"
+msgstr "gvec4_type **texelFetch** (gsampler3D s, ivec3 p, int lod)"
 
-#, fuzzy
 msgid "Fetches a single texel using integer coordinates."
-msgstr "使用整数坐标获取单个纹素"
+msgstr "使用整数坐标获取单个纹素。"
 
-#, fuzzy
 msgid "gvec4_type **textureGather** (gsampler2D s, vec2 p [, int comps])"
-msgstr "vec4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
+msgstr "gvec4_type **textureGather** (gsampler2D s, vec2 p [, int comps])"
 
-#, fuzzy
 msgid "gvec4_type **textureGather** (gsampler2DArray s, vec3 p [, int comps])"
-msgstr "vec4_type **texture** (sampler2DArray_type s, vec3 uv [, float bias])"
+msgstr "gvec4_type **textureGather** (gsampler2DArray s, vec3 p [, int comps])"
 
-#, fuzzy
 msgid "vec4 **textureGather** (samplerCube s, vec3 p [, int comps])"
-msgstr "vec4 **texture** (samplerCube s, vec3 uv [, float bias])"
+msgstr "vec4 **textureGather** (samplerCube s, vec3 p [, int comps])"
 
 msgid ""
 "Gathers four texels from a texture. Use ``comps`` within range of 0..3 to "
@@ -2011,9 +1891,8 @@ msgid ""
 "the GPU driver."
 msgstr ""
 
-#, fuzzy
 msgid "vec_type **dFdxCoarse** (vec_type p)"
-msgstr "vec_type **dFdx** (vec_type p)"
+msgstr "vec_type **dFdxCoarse** (vec_type p)"
 
 msgid ""
 "Calculates derivative with respect to ``x`` window coordinate using local "
@@ -2023,9 +1902,8 @@ msgid ""
 "profile."
 msgstr ""
 
-#, fuzzy
 msgid "vec_type **dFdxFine** (vec_type p)"
-msgstr "vec_type **dFdx** (vec_type p)"
+msgstr "vec_type **dFdxFine** (vec_type p)"
 
 msgid ""
 "Calculates derivative with respect to ``x`` window coordinate using local "
@@ -2043,9 +1921,8 @@ msgid ""
 "the GPU driver."
 msgstr ""
 
-#, fuzzy
 msgid "vec_type **dFdyCoarse** (vec_type p)"
-msgstr "vec_type **dFdy** (vec_type p)"
+msgstr "vec_type **dFdyCoarse** (vec_type p)"
 
 msgid ""
 "Calculates derivative with respect to ``y`` window coordinate using local "
@@ -2055,9 +1932,8 @@ msgid ""
 "profile."
 msgstr ""
 
-#, fuzzy
 msgid "vec_type **dFdyFine** (vec_type p)"
-msgstr "vec_type **dFdy** (vec_type p)"
+msgstr "vec_type **dFdyFine** (vec_type p)"
 
 msgid ""
 "Calculates derivative with respect to ``y`` window coordinate using local "
@@ -2074,9 +1950,8 @@ msgid ""
 "using ``abs(dFdx(p)) + abs(dFdy(p))``."
 msgstr ""
 
-#, fuzzy
 msgid "vec_type **fwidthCoarse** (vec_type p)"
-msgstr "vec_type **fwidth** (vec_type p)"
+msgstr "vec_type **fwidthCoarse** (vec_type p)"
 
 msgid ""
 "Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
@@ -2084,9 +1959,8 @@ msgid ""
 "available on ``gl_compatibility`` profile."
 msgstr ""
 
-#, fuzzy
 msgid "vec_type **fwidthFine** (vec_type p)"
-msgstr "vec_type **fwidth** (vec_type p)"
+msgstr "vec_type **fwidthFine** (vec_type p)"
 
 msgid ""
 "Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
@@ -2095,10 +1969,10 @@ msgid ""
 msgstr ""
 
 msgid "uint **packHalf2x16** (vec2 v)"
-msgstr ""
+msgstr "uint **packHalf2x16** (vec2 v)"
 
 msgid "vec2 **unpackHalf2x16** (uint v)"
-msgstr ""
+msgstr "vec2 **unpackHalf2x16** (uint v)"
 
 msgid ""
 "Convert two 32-bit floating-point numbers into 16-bit and pack them into a "
@@ -2106,10 +1980,10 @@ msgid ""
 msgstr ""
 
 msgid "uint **packUnorm2x16** (vec2 v)"
-msgstr ""
+msgstr "uint **packUnorm2x16** (vec2 v)"
 
 msgid "vec2 **unpackUnorm2x16** (uint v)"
-msgstr ""
+msgstr "vec2 **unpackUnorm2x16** (uint v)"
 
 msgid ""
 "Convert two 32-bit floating-point numbers (clamped within 0..1 range) into "
@@ -2117,10 +1991,10 @@ msgid ""
 msgstr ""
 
 msgid "uint **packSnorm2x16** (vec2 v)"
-msgstr ""
+msgstr "uint **packSnorm2x16** (vec2 v)"
 
 msgid "vec2 **unpackSnorm2x16** (uint v)"
-msgstr ""
+msgstr "vec2 **unpackSnorm2x16** (uint v)"
 
 msgid ""
 "Convert two 32-bit floating-point numbers (clamped within -1..1 range) into "
@@ -2128,10 +2002,10 @@ msgid ""
 msgstr ""
 
 msgid "uint **packUnorm4x8** (vec4 v)"
-msgstr ""
+msgstr "uint **packUnorm4x8** (vec4 v)"
 
 msgid "vec4 **unpackUnorm4x8** (uint v)"
-msgstr ""
+msgstr "vec4 **unpackUnorm4x8** (uint v)"
 
 msgid ""
 "Convert four 32-bit floating-point numbers (clamped within 0..1 range) into "
@@ -2139,98 +2013,92 @@ msgid ""
 msgstr ""
 
 msgid "uint **packSnorm4x8** (vec4 v)"
-msgstr ""
+msgstr "uint **packSnorm4x8** (vec4 v)"
 
 msgid "vec4 **unpackSnorm4x8** (uint v)"
-msgstr ""
+msgstr "vec4 **unpackSnorm4x8** (uint v)"
 
 msgid ""
 "Convert four 32-bit floating-point numbers (clamped within -1..1 range) into "
 "8-bit and pack them into a 32-bit unsigned integer and vice-versa."
 msgstr ""
 
-#, fuzzy
 msgid "ivec_type **bitfieldExtract** (ivec_type value, int offset, int bits)"
-msgstr "vec_type **step** (vec_type a, vec_type b)"
+msgstr "ivec_type **bitfieldExtract** (ivec_type value, int offset, int bits)"
 
-#, fuzzy
 msgid "uvec_type **bitfieldExtract** (uvec_type value, int offset, int bits)"
-msgstr "vec_type **step** (vec_type a, vec_type b)"
+msgstr "uvec_type **bitfieldExtract** (uvec_type value, int offset, int bits)"
 
 msgid "Extracts a range of bits from an integer."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "ivec_type **bitfieldInsert** (ivec_type base, ivec_type insert, int offset, "
 "int bits)"
-msgstr "vec_type **mix** (vec_type a, vec_type b, float c)"
+msgstr ""
+"ivec_type **bitfieldInsert** (ivec_type base, ivec_type insert, int offset, "
+"int bits)"
 
-#, fuzzy
 msgid ""
 "uvec_type **bitfieldInsert** (uvec_type base, uvec_type insert, int offset, "
 "int bits)"
-msgstr "vec_type **mix** (vec_type a, vec_type b, float c)"
+msgstr ""
+"uvec_type **bitfieldInsert** (uvec_type base, uvec_type insert, int offset, "
+"int bits)"
 
 msgid "Insert a range of bits into an integer."
 msgstr ""
 
-#, fuzzy
 msgid "ivec_type **bitfieldReverse** (ivec_type value)"
-msgstr "ivec_type **abs** (ivec_type x)"
+msgstr "ivec_type **bitfieldReverse** (ivec_type value)"
 
-#, fuzzy
 msgid "uvec_type **bitfieldReverse** (uvec_type value)"
-msgstr "vec_type **inversesqrt** (vec_type x)"
+msgstr "uvec_type **bitfieldReverse** (uvec_type value)"
 
 #, fuzzy
 msgid "Reverse the order of bits in an integer."
 msgstr "返回整数除法的余数。"
 
-#, fuzzy
 msgid "ivec_type **bitCount** (ivec_type value)"
-msgstr "ivec_type **sign** (ivec_type x)"
+msgstr "ivec_type **bitCount** (ivec_type value)"
 
-#, fuzzy
 msgid "uvec_type **bitCount** (uvec_type value)"
-msgstr "vec_type **round** (vec_type x)"
+msgstr "uvec_type **bitCount** (uvec_type value)"
 
 msgid "Counts the number of 1 bits in an integer."
 msgstr ""
 
-#, fuzzy
 msgid "ivec_type **findLSB** (ivec_type value)"
-msgstr "ivec_type **sign** (ivec_type x)"
+msgstr "ivec_type **findLSB** (ivec_type value)"
 
-#, fuzzy
 msgid "uvec_type **findLSB** (uvec_type value)"
-msgstr "vec_type **sin** (vec_type x)"
+msgstr "uvec_type **findLSB** (uvec_type value)"
 
 msgid "Find the index of the least significant bit set to 1 in an integer."
 msgstr ""
 
-#, fuzzy
 msgid "ivec_type **findMSB** (ivec_type value)"
-msgstr "ivec_type **sign** (ivec_type x)"
+msgstr "ivec_type **findMSB** (ivec_type value)"
 
-#, fuzzy
 msgid "uvec_type **findMSB** (uvec_type value)"
-msgstr "vec_type **sin** (vec_type x)"
+msgstr "uvec_type **findMSB** (uvec_type value)"
 
 msgid "Find the index of the most significant bit set to 1 in an integer."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "void **imulExtended** (ivec_type x, ivec_type y, out ivec_type msb, out "
 "ivec_type lsb)"
-msgstr "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
+msgstr ""
+"void **imulExtended** (ivec_type x, ivec_type y, out ivec_type msb, out "
+"ivec_type lsb)"
 
-#, fuzzy
 msgid ""
 "void **umulExtended** (uvec_type x, uvec_type y, out uvec_type msb, out "
 "uvec_type lsb)"
-msgstr "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
+msgstr ""
+"void **umulExtended** (uvec_type x, uvec_type y, out uvec_type msb, out "
+"uvec_type lsb)"
 
 msgid ""
 "Multiplies two 32-bit numbers and produce a 64-bit result. ``x`` - the first "
@@ -2238,24 +2106,23 @@ msgid ""
 "significant bits. ``lsb`` - will contain the least significant bits."
 msgstr ""
 
-#, fuzzy
 msgid "uvec_type **uaddCarry** (uvec_type x, uvec_type y, out uvec_type carry)"
-msgstr "vec_type **mix** (vec_type a, vec_type b, vec_type c)"
+msgstr ""
+"uvec_type **uaddCarry** (uvec_type x, uvec_type y, out uvec_type carry)"
 
 msgid "Adds two unsigned integers and generates carry."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "uvec_type **usubBorrow** (uvec_type x, uvec_type y, out uvec_type borrow)"
-msgstr "vec_type **smoothstep** (vec_type a, vec_type b, vec_type c)"
+msgstr ""
+"uvec_type **usubBorrow** (uvec_type x, uvec_type y, out uvec_type borrow)"
 
 msgid "Subtracts two unsigned integers and generates borrow."
 msgstr ""
 
-#, fuzzy
 msgid "vec_type **ldexp** (vec_type x, out ivec_type exp)"
-msgstr "vec_type **modf** (vec_type x, out vec_type i)"
+msgstr "vec_type **ldexp** (vec_type x, out ivec_type exp)"
 
 msgid "Assemble a floating-point number from a value and exponent."
 msgstr ""
@@ -2265,9 +2132,8 @@ msgid ""
 "the result is undefined."
 msgstr ""
 
-#, fuzzy
 msgid "vec_type **frexp** (vec_type x, out ivec_type exp)"
-msgstr "vec_type **modf** (vec_type x, out vec_type i)"
+msgstr "vec_type **frexp** (vec_type x, out ivec_type exp)"
 
 msgid ""
 "Splits a floating-point number(``x``) into significand (in the range of "

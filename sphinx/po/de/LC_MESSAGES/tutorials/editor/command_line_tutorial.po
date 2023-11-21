@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -103,9 +103,8 @@ msgstr "Befehl"
 msgid "Description"
 msgstr "Beschreibung"
 
-#, fuzzy
 msgid "``-h``, ``--help``"
-msgstr "``-h``, ``--help``, ``/?``"
+msgstr "``-h``, ``--help``"
 
 #, fuzzy
 msgid "|release| Display the list of command line options."
@@ -125,9 +124,8 @@ msgstr "``-v``, ``--verbose``"
 msgid "|release| Use verbose stdout mode."
 msgstr "Benutze den ausführlichen stdout Modus."
 
-#, fuzzy
 msgid "``-q``, ``--quiet``"
-msgstr "``-q``, ``--quit``"
+msgstr "``-q``, ``--quiet``"
 
 #, fuzzy
 msgid ""
@@ -139,9 +137,8 @@ msgstr ""
 msgid "**Run options**"
 msgstr "**Ausführen Eigenschaften**"
 
-#, fuzzy
 msgid "``--``, ``++``"
-msgstr "``-q``, ``--quit``"
+msgstr "``--``, ``++``"
 
 msgid ""
 "|release| Separator for user-provided arguments. Following arguments are not "
@@ -160,34 +157,30 @@ msgstr "``-p``, ``--project-manager``"
 msgid "|editor| Start the Project Manager, even if a project is auto-detected."
 msgstr ""
 
-#, fuzzy
 msgid "``--debug-server <uri>``"
-msgstr "``--video-driver <driver>``"
+msgstr "``--debug-server <uri>``"
 
 msgid ""
 "|editor| Start the editor debug server (``<protocol>://<host/IP>[:<port>]``, "
 "e.g. ``tcp://127.0.0.1:6007``)"
 msgstr ""
 
-#, fuzzy
 msgid "``--quit``"
-msgstr "``--quiet``"
+msgstr "``--quit``"
 
 #, fuzzy
 msgid "|release| Quit after the first iteration."
 msgstr "Beende nach dem ersten Schleifendurchgang."
 
-#, fuzzy
 msgid "``--quit-after``"
-msgstr "``--quiet``"
+msgstr "``--quit-after``"
 
 msgid ""
 "|release| Quit after the given number of iterations. Set to 0 to disable."
 msgstr ""
 
-#, fuzzy
 msgid "``-l``, ``--language <locale>``"
-msgstr "``-l <local>``, ``--language <local>``"
+msgstr "``-l``, ``--language <locale>``"
 
 msgid ""
 "|release| Use a specific locale. ``<locale>`` follows the format "
@@ -241,9 +234,8 @@ msgstr "``--remote-fs <address>``"
 msgid "|release| Remote filesystem (``<host/IP>[:<port>]`` address)."
 msgstr "Remote Dateisystem (``<Host/IP>[:<Port>]`` Addresse)."
 
-#, fuzzy
 msgid "``--remote-fs-password <password>``"
-msgstr "``--remote-fs <address>``"
+msgstr "``--remote-fs-password <password>``"
 
 msgid "|release| Password for remote filesystem."
 msgstr ""
@@ -258,9 +250,8 @@ msgid ""
 msgstr ""
 "Audio-Treiber. Nutze ``--help`` für eine Liste der verfügbaren Treiber."
 
-#, fuzzy
 msgid "``--display-driver <driver>``"
-msgstr "``--audio-driver <driver>``"
+msgstr "``--display-driver <driver>``"
 
 #, fuzzy
 msgid ""
@@ -269,16 +260,14 @@ msgid ""
 msgstr ""
 "Video-Treiber. Nutze ``--help`` für eine Liste der verfügbaren Treiber."
 
-#, fuzzy
 msgid "``--rendering-method <renderer>``"
-msgstr "``--render-thread <mode>``"
+msgstr "``--rendering-method <renderer>``"
 
 msgid "|release| Renderer name. Requires driver support."
 msgstr ""
 
-#, fuzzy
 msgid "``--rendering-driver <driver>``"
-msgstr "``--audio-driver <driver>``"
+msgstr "``--rendering-driver <driver>``"
 
 #, fuzzy
 msgid ""
@@ -295,32 +284,28 @@ msgid ""
 "list)."
 msgstr ""
 
-#, fuzzy
 msgid "``--text-driver <driver>``"
-msgstr "``--video-driver <driver>``"
+msgstr "``--text-driver <driver>``"
 
 msgid "|release| Text driver (Fonts, BiDi, shaping)."
 msgstr ""
 
-#, fuzzy
 msgid "``--tablet-driver <driver>``"
-msgstr "``--audio-driver <driver>``"
+msgstr "``--tablet-driver <driver>``"
 
 msgid "|release| Pen tablet input driver."
 msgstr ""
 
-#, fuzzy
 msgid "``--headless``"
-msgstr "``--remote-fs <address>``"
+msgstr "``--headless``"
 
 msgid ""
 "|release| Enable headless mode (``--display-driver headless --audio-driver "
 "Dummy``). Useful for servers and with ``--script``."
 msgstr ""
 
-#, fuzzy
 msgid "``--write-movie <file>``"
-msgstr "``--main-pack <file>``"
+msgstr "``--write-movie <file>``"
 
 msgid ""
 "|release| Run the engine in a way that a movie is written (usually with .avi "
@@ -375,24 +360,21 @@ msgstr "``--position <X>,<Y>``"
 msgid "|release| Request window position."
 msgstr "Die Fenster-Position abfragen."
 
-#, fuzzy
 msgid "``--screen <N>``"
-msgstr "``--frame-delay <ms>``"
+msgstr "``--screen <N>``"
 
 #, fuzzy
 msgid "|release| Request window screen."
 msgstr "Die Fenster Auflösung abrufen."
 
-#, fuzzy
 msgid "``--single-window``"
-msgstr "``--no-window``"
+msgstr "``--single-window``"
 
 msgid "|release| Use a single window (no separate subwindows)."
 msgstr ""
 
-#, fuzzy
 msgid "``--xr-mode <mode>``"
-msgstr "``--render-thread <mode>``"
+msgstr "``--xr-mode <mode>``"
 
 msgid "|release| Select XR mode ('default', 'off', 'on')."
 msgstr ""
@@ -425,45 +407,40 @@ msgstr "``--profiling``"
 msgid "|release| Enable profiling in the script debugger."
 msgstr "Schaltet Profiling in Skript-Debugger ein."
 
-#, fuzzy
 msgid "``--gpu-profile``"
-msgstr "``--profiling``"
+msgstr "``--gpu-profile``"
 
 msgid ""
 "|release| Show a GPU profile of the tasks that took the most time during "
 "frame rendering."
 msgstr ""
 
-#, fuzzy
 msgid "``--gpu-validation``"
-msgstr "``--debug-navigation``"
+msgstr "``--gpu-validation``"
 
 msgid ""
 "|release| Enable graphics API :ref:`validation layers "
 "<doc_vulkan_validation_layers>` for debugging."
 msgstr ""
 
-#, fuzzy
 msgid "``--gpu-abort``"
-msgstr "``--quiet``"
+msgstr "``--gpu-abort``"
 
 msgid ""
 "|debug| Abort on GPU errors (usually validation layer errors), may help see "
 "the problem if your system freezes."
 msgstr ""
 
-#, fuzzy
 msgid "``--remote-debug <uri>``"
-msgstr "``--remote-debug <address>``"
+msgstr "``--remote-debug <uri>``"
 
 msgid ""
 "|release| Remote debug (``<protocol>://<host/IP>[:<port>]``, e.g. "
 "``tcp://127.0.0.1:6007``)."
 msgstr ""
 
-#, fuzzy
 msgid "``--single-threaded-scene``"
-msgstr "``--render-thread <mode>``"
+msgstr "``--single-threaded-scene``"
 
 msgid ""
 "|release| Scene tree runs in single-threaded mode. Sub-thread groups are "
@@ -477,9 +454,8 @@ msgstr "``--debug-collisions``"
 msgid "|debug| Show collision shapes when running the scene."
 msgstr "Zeigt Kollisionsformen während eine Szene läuft."
 
-#, fuzzy
 msgid "``--debug-paths``"
-msgstr "``--debug-navigation``"
+msgstr "``--debug-paths``"
 
 #, fuzzy
 msgid "|debug| Show path lines when running the scene."
@@ -492,17 +468,15 @@ msgstr "``--debug-navigation``"
 msgid "|debug| Show navigation polygons when running the scene."
 msgstr "Zeigt bei Ausführung der Szene Navigationspolygone an."
 
-#, fuzzy
 msgid "``--debug-avoidance``"
-msgstr "``--debug-navigation``"
+msgstr "``--debug-avoidance``"
 
 #, fuzzy
 msgid "|debug| Show navigation avoidance debug visuals when running the scene."
 msgstr "Zeigt bei Ausführung der Szene Navigationspolygone an."
 
-#, fuzzy
 msgid "``--debug-stringnames``"
-msgstr "``--debug-collisions``"
+msgstr "``--debug-stringnames``"
 
 msgid ""
 "|debug| Print all StringName allocations to stdout when the engine quits."
@@ -528,9 +502,8 @@ msgstr ""
 "Zeitskala erzwingen (höhere Werte sind schneller, 1,0 ist normale "
 "Geschwindigkeit)."
 
-#, fuzzy
 msgid "``--disable-vsync``"
-msgstr "``--disable-crash-handler``"
+msgstr "``--disable-vsync``"
 
 msgid ""
 "|release| Forces disabling of vertical synchronization, even if enabled in "
@@ -581,11 +554,10 @@ msgid "|release| Print the frames per second to the stdout."
 msgstr "Gibt die FPS (Bilder pro Sekunde) an stdout."
 
 msgid "**Standalone tools**"
-msgstr "**Eigenständige Werkzeuge**"
+msgstr "**Eigenständige Tools**"
 
-#, fuzzy
 msgid "``-s``, ``--script <script>``"
-msgstr "``-s <script>``, ``--script <script>``"
+msgstr "``-s``, ``--script <script>``"
 
 #, fuzzy
 msgid "|release| Run a script."
@@ -598,9 +570,8 @@ msgstr "``--check-only``"
 msgid "|release| Only parse for errors and quit (use with ``--script``)."
 msgstr "Nur auf Fehler prüfen und beenden (benutzten mit ``--script``)."
 
-#, fuzzy
 msgid "``--export-release <preset> <path>``"
-msgstr "``--export-pack <preset> <path>``"
+msgstr "``--export-release <preset> <path>``"
 
 msgid ""
 "|editor| Export the project using the given preset and matching release "
@@ -610,9 +581,8 @@ msgid ""
 "directory should exist."
 msgstr ""
 
-#, fuzzy
 msgid "``--export-debug <preset> <path>``"
-msgstr "``--export-pack <preset> <path>``"
+msgstr "``--export-debug <preset> <path>``"
 
 msgid "|editor| Like ``--export-release``, but use debug template."
 msgstr ""
@@ -643,9 +613,8 @@ msgid ""
 "Godot 3.x to Godot 4.x."
 msgstr ""
 
-#, fuzzy
 msgid "``--doctool [<path>]``"
-msgstr "``--doctool <path>``"
+msgstr "``--doctool [<path>]``"
 
 #, fuzzy
 msgid ""
@@ -662,9 +631,8 @@ msgstr "``--no-docbase``"
 msgid "|editor| Disallow dumping the base types (used with ``--doctool``)."
 msgstr ""
 
-#, fuzzy
 msgid "``--gdscript-docs <path>``"
-msgstr "``--doctool <path>``"
+msgstr "``--gdscript-docs <path>``"
 
 msgid ""
 "|editor| Rather than dumping the engine API, generate API reference from the "
@@ -689,18 +657,16 @@ msgid ""
 "GDExtension."
 msgstr ""
 
-#, fuzzy
 msgid "``--dump-extension-api``"
-msgstr "``--gdnative-generate-json-api``"
+msgstr "``--dump-extension-api``"
 
 msgid ""
 "|editor| Generate JSON dump of the Godot API for GDExtension bindings named "
 "'extension_api.json' in the current folder."
 msgstr ""
 
-#, fuzzy
 msgid "``--validate-extension-api <path>``"
-msgstr "``--gdnative-generate-json-api``"
+msgstr "``--validate-extension-api <path>``"
 
 msgid ""
 "|editor| Validate an extension API file dumped (with the option above) from "
@@ -714,9 +680,8 @@ msgstr ""
 msgid "|editor| Benchmark the run time and print it to console."
 msgstr ""
 
-#, fuzzy
 msgid "``--benchmark-file <path>``"
-msgstr "``--doctool <path>``"
+msgstr "``--benchmark-file <path>``"
 
 msgid ""
 "|editor| Benchmark the run time and save it to a given file in JSON format. "

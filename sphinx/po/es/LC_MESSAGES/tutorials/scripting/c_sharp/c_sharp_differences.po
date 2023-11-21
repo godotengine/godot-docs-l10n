@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -207,11 +207,32 @@ msgstr ""
 msgid "Mathf.Acos"
 msgstr "Funciones Matemáticas"
 
+msgid "acosh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Acosh"
+msgstr "Funciones Matemáticas"
+
+#, fuzzy
+msgid "angle_difference"
+msgstr "Diferencias generales"
+
+msgid "Mathf.AngleDifference"
+msgstr ""
+
 msgid "asin"
 msgstr ""
 
 msgid "Mathf.Asin"
 msgstr ""
+
+msgid "asinh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Asinh"
+msgstr "Matemáticas"
 
 msgid "atan"
 msgstr ""
@@ -224,6 +245,13 @@ msgstr ""
 
 msgid "Mathf.Atan2"
 msgstr ""
+
+msgid "atanh"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.Atanh"
+msgstr "Matemáticas"
 
 msgid "bezier_derivative"
 msgstr ""
@@ -303,8 +331,9 @@ msgstr "Interpolación lineal"
 msgid "Mathf.CubicInterpolate"
 msgstr "Interpolación física"
 
-msgid "cubic_interpoalte_angle"
-msgstr ""
+#, fuzzy
+msgid "cubic_interpolate_angle"
+msgstr "Interpolación lineal"
 
 msgid "Mathf.CubicInterpolateAngle"
 msgstr ""
@@ -664,6 +693,13 @@ msgstr "NAN"
 msgid "rid_from_int64"
 msgstr ""
 
+msgid "rotate_toward"
+msgstr ""
+
+#, fuzzy
+msgid "Mathf.RotateToward"
+msgstr "Redondeo"
+
 #, fuzzy
 msgid "round"
 msgstr "Redondeo"
@@ -777,6 +813,20 @@ msgstr ""
 
 msgid "Mathf.Tanh"
 msgstr ""
+
+msgid "type_convert"
+msgstr ""
+
+msgid "Variant.As<T> or GD.Convert"
+msgstr ""
+
+#, fuzzy
+msgid "type_string"
+msgstr "string"
+
+#, fuzzy
+msgid "Variant.Type.ToString"
+msgstr "Variant"
 
 #, fuzzy
 msgid "typeof"
@@ -1420,6 +1470,10 @@ msgid ""
 "StringExtensions.ReplaceN (Consider using `string.Replace`_ or `RegEx`_)"
 msgstr ""
 
+#, fuzzy
+msgid "reverse"
+msgstr "Servidores"
+
 msgid "rfind"
 msgstr ""
 
@@ -1622,7 +1676,7 @@ msgid "to_wchar_buffer"
 msgstr ""
 
 msgid ""
-"StringExtensions.ToUtf16Buffer in Windows and StringExtensiont.ToUtf32Buffer "
+"StringExtensions.ToUtf16Buffer in Windows and StringExtensions.ToUtf32Buffer "
 "in other platforms"
 msgstr ""
 
@@ -2082,16 +2136,16 @@ msgstr "Diccionario"
 #, fuzzy
 msgid ""
 "Use ``Godot.Collections.Dictionary`` for an untyped ``Variant`` dictionary. "
-"``Godot.Colelctions.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
+"``Godot.Collections.Dictionary<TKey, TValue>`` is a type-safe wrapper around "
 "``Godot.Collections.Dictionary``."
 msgstr ""
 "``Godot.Collections.Dictionary<T>`` es una envoltura de tipo-seguro para "
 "``Godot.Collections.Dictionary``. Utiliza el constructor ``Godot.Collections."
 "Dictionary<T>(Godot.Collections.Dictionary)`` para crear uno."
 
-#, fuzzy
 msgid "See also :ref:`Dictionary in C# <doc_c_sharp_collections_dictionary>`."
-msgstr "18: :ref:`Dictionary<class_dictionary>`"
+msgstr ""
+"Ver también :ref:`Dictionary en C# <doc_c_sharp_collections_dictionary>`."
 
 msgid "Variant"
 msgstr "Variant"

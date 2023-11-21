@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Creating movies"
-msgstr "Nodes erstellen"
+msgstr "Filme erstellen"
 
 msgid ""
 "Godot can record **non-real-time** video and audio from any 2D or 3D "
@@ -171,13 +170,12 @@ msgstr ""
 msgid "Command line usage"
 msgstr "Befehlszeilen-Anleitung"
 
-#, fuzzy
 msgid ""
 "Movie Maker can also be enabled from the :ref:`command line "
 "<doc_command_line_tutorial>`:"
 msgstr ""
-"Weitere Informationen zu Befehlszeilenargumenten finden Sie in der :ref:"
-"`Befehlszeilen-Anleitung <doc_command_line_tutorial>`."
+"Movie Maker kann auch über die :ref:`Befehlszeile "
+"<doc_command_line_tutorial>` aktiviert werden:"
 
 msgid ""
 "If the output path is relative, then it is **relative to the project "
@@ -222,9 +220,8 @@ msgid ""
 "more can be implemented by extensions:"
 msgstr ""
 
-#, fuzzy
 msgid "AVI (recommended)"
-msgstr "glTF 2.0 *(empfohlen)*."
+msgstr "AVI (empfohlen)"
 
 msgid ""
 "AVI container with MJPEG for video and uncompressed audio. Features lossy "
@@ -353,7 +350,9 @@ msgstr "Eingebaute Variablen und Render-Modi"
 
 msgid ""
 "To safely quit a project that is using Movie Maker mode, use the X button at "
-"the top of the window, or call ``get_tree().quit()`` in a script."
+"the top of the window, or call ``get_tree().quit()`` in a script. You can "
+"also use the ``--quit-after N`` command line argument where ``N`` is the "
+"number of frames to render before quitting."
 msgstr ""
 
 msgid ""
@@ -456,9 +455,8 @@ msgid ""
 "those settings with the ``movie`` :ref:`feature tag <doc_feature_tags>`."
 msgstr ""
 
-#, fuzzy
 msgid "Post-processing steps"
-msgstr "Abarbeitung stoppt."
+msgstr "Nachbearbeitungsschritte"
 
 msgid "Some common post-processing steps are listed below."
 msgstr ""

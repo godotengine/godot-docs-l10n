@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,22 +18,23 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Import process"
-msgstr "导入的流程"
+msgstr "导入流程"
 
-#, fuzzy
 msgid "Importing assets in Godot"
-msgstr "在 Godot 3.0+ 中导入资产"
+msgstr "在 Godot 中导入资产"
 
 msgid ""
 "To import assets in Godot, place your assets (image files, scenes, audio "
 "files, fonts, etc) directly in the project folder. There are 2 ways to "
 "achieve this:"
 msgstr ""
+"要在 Godot 中导入资产，请将资产（图像文件、场景、音频文件、字体等）直接放置在"
+"项目文件夹中。有两种方法可以实现："
 
 msgid ""
 "**For any file type:** Copy files manually with your operating system's file "
 "manager."
-msgstr ""
+msgstr "**任何文件类型：**\\ 使用操作系统的文件管理器手动复制文件。"
 
 msgid ""
 "**For file types that can be imported by Godot:** Drag-and-drop files from "
@@ -41,13 +42,17 @@ msgid ""
 "only works with *resource* file types (i.e. file types that Godot can "
 "import)."
 msgstr ""
+"**Godot 能够导入的文件类型：**\\ 将文件从操作系统的文件管理器拖放至编辑器"
+"的“文件系统”面板。只适用于\\ *资源*\\ 文件类型（即 Godot 能够导入的文件类"
+"型）。"
 
 msgid ""
 "Godot will automatically import these files internally and keep the imported "
 "resources hidden in a ``res://.godot/imported/`` folder."
 msgstr ""
+"Godot 内部会自动导入这些文件，将导入后的资源存放在隐藏的 ``res://.godot/"
+"imported/`` 文件夹中。"
 
-#, fuzzy
 msgid ""
 "This means that when trying to access imported assets through code, you need "
 "to use the :ref:`Resource Loader<class_ResourceLoader>` as it will "
@@ -56,18 +61,17 @@ msgid ""
 "<class_FileAccess>` class, it will work in the editor, but **it will break "
 "in the exported project**."
 msgstr ""
-"这意味着, 在尝试通过代码访问导入的资产时, 你需要使用 :ref:"
-"`ResourceLoader<class_ResourceLoader>` , 它会自动考虑内部文件的保存位置. 如果"
-"尝试使用 :ref:`File <class_File>` 类访问导入的资产, 它会在编辑器中正常运作, "
-"但在导出的项目中会出错."
+"这样一来，在代码中尝试访问导入后的资产就需要使用\\ :ref:`资源加载器 "
+"<class_ResourceLoader>`\\ ，因为会自动考虑内部文件的存储位置。如果用 :ref:"
+"`FileAccess <class_FileAccess>` 尝试访问导入后的资产，虽然在编辑器中是可行"
+"的，但是\\ **在导出后的项目中会失败**\\ 。"
 
-#, fuzzy
 msgid ""
 "However, the :ref:`Resource Loader<class_ResourceLoader>` cannot access non-"
 "imported files. Only the :ref:`FileAccess <class_FileAccess>` class can."
 msgstr ""
-"然而 :ref:`Resource Loader<class_ResourceLoader>` 无法访问非导入的文件, 只"
-"有 :ref:`File <class_File>` 类可以."
+"然而\\ :ref:`资源加载器 <class_ResourceLoader>`\\ 无法访问未经导入的文件，只"
+"有 :ref:`FileAccess <class_FileAccess>` 类可以。"
 
 msgid "Changing import parameters"
 msgstr "更改导入参数"
@@ -78,14 +82,14 @@ msgid ""
 "``.tres``, ``.res``) don't have import options you can select in the Import "
 "dock."
 msgstr ""
+"*非原生* Godot 资源类型才有导入参数。也就是说，Godot 自己的场景和资源文件格式"
+"（\\ ``.tscn``\\ 、\\ ``.scn``\\ 、\\ ``.tres``\\ 、\\ ``.res``\\ ）在“导"
+"入”面板中没有选项可用。"
 
-#, fuzzy
 msgid ""
 "To change the import parameters of an asset in Godot, select the relevant "
 "resource in the FileSystem dock:"
-msgstr ""
-"在Godot中更改资产的导入参数(再次提醒, 只有非本地的 Godot 资产类型有导入参"
-"数), 只需在文件系统停靠面板中选择相关的资产:"
+msgstr "要在 Godot 中更改资产的导入参数，请在“文件系统”面板中选中相关的资源："
 
 msgid ""
 "After adjusting the parameters, click **Reimport**. Be careful: if you "
@@ -93,6 +97,9 @@ msgid ""
 "changes will be discarded. After clicking **Reimport**, the chosen "
 "parameters will only be used for this asset and on future reimports."
 msgstr ""
+"参数调整完毕后，请单击\\ **重新导入**\\ 。小心：如果在单击\\ **重新导入**\\ "
+"之前在“文件系统”面板中选中其他文件，那么你做出的更改就会被丢弃。单击\\ **重新"
+"导入**\\ 之后，选中的参数只会对该资产生效，后续重新导入时也会生效。"
 
 msgid ""
 "Changing the import parameters of several assets at the same time is also "
@@ -139,18 +146,17 @@ msgstr ""
 msgid "Files generated"
 msgstr "生成的文件"
 
-#, fuzzy
 msgid ""
 "Importing will add an extra ``<asset>.import`` file next to the source file, "
 "containing the import configuration."
 msgstr ""
-"导入时会生成额外的 ``<资产>.import`` 文件，包含了导入配置。记得把它们加入你的"
-"版本控制系统！"
+"导入时会在源文件的旁边生成额外的 ``<资产>.import`` 文件，包含的是导入配置。"
 
 msgid ""
 "**Make sure to commit these files to your version control system**, as these "
 "files contain important metadata."
 msgstr ""
+"**请务必将这些文件提交进版本控制系统**\\ ，因为这些文件包含了重要的元数据。"
 
 #, fuzzy
 msgid ""
@@ -158,7 +164,6 @@ msgid ""
 "imported/`` folder:"
 msgstr "此外，额外的资产会被放在隐藏的 ``res://.import`` 文件夹中："
 
-#, fuzzy
 msgid ""
 "If any of the files present in this folder is erased (or the whole folder), "
 "the asset or assets will be reimported automatically. As such, committing "
@@ -166,9 +171,9 @@ msgid ""
 "While committing this folder can shorten reimporting time when checking out "
 "on another computer, it requires considerably more space and bandwidth."
 msgstr ""
-"如果此文件夹中的任何文件被删除(或整个文件夹), 则资产将自动重新导入. 因此, 将"
-"此文件夹提交给版本控制系统是可选的. 当检出到另一台计算机上时, 它可以节省重新"
-"导入的时间, 但需要相当多的空间和传输时间. 请自己决定！"
+"如果此文件夹中的任何文件（或整个文件夹）被删除，则会自动重新导入资产。因此，"
+"不建议将 ``.godot/`` 文件夹提交给版本控制系统。提交这个文件夹虽然能够缩短在另"
+"一台计算机上检出后重新导入的时间，但是需要相当多的空间和带宽。"
 
 msgid ""
 "The default version control metadata that can be generated on project "
@@ -205,9 +210,8 @@ msgid ""
 "dialog:"
 msgstr ""
 
-#, fuzzy
 msgid "Further reading"
-msgstr "多线程"
+msgstr "扩展阅读"
 
 #, fuzzy
 msgid ""
@@ -217,27 +221,22 @@ msgstr ""
 "这是一个非常简单的工作流程, 只需很短的时间来习惯. 它还能以更加正确的方式来处"
 "理资源."
 
-#, fuzzy
 msgid ""
 "There are many types of assets available for import. Continue reading to "
 "understand how to work with all of them:"
-msgstr "有许多可导入的资产类型, 请继续阅读, 了解如何使用它们！"
+msgstr "可以导入的资产类型有很多。如果想要了解用法，请继续阅读："
 
-#, fuzzy
 msgid ":ref:`doc_importing_images`"
-msgstr ":ref:`doc_exporting_basics`"
+msgstr ":ref:`doc_importing_images`"
 
-#, fuzzy
 msgid ":ref:`doc_importing_audio_samples`"
-msgstr ":ref:`doc_exporting_basics`"
+msgstr ":ref:`doc_importing_audio_samples`"
 
-#, fuzzy
 msgid ":ref:`doc_importing_3d_scenes`"
-msgstr ":ref:`doc_exporting_basics`"
+msgstr ":ref:`doc_importing_3d_scenes`"
 
-#, fuzzy
 msgid ":ref:`doc_importing_translations`"
-msgstr ":ref:`doc_exporting_basics`"
+msgstr ":ref:`doc_importing_translations`"
 
 msgid "Translation status"
 msgstr "翻译状态"
