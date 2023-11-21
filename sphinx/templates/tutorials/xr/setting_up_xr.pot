@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "Godot provides a modular XR system that abstracts many of the different X
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:12
-msgid "Each supported XR platform is implemented as an :ref:`XRInterface <class_xrinterface>`. Supported interfaces register themselves with the :ref:`XRServer <class_xrserver>` and can be queried with the ``find_interface`` method on the :ref:`XRServer <class_xrserver>`. When the desired interface is found it can be initialised by calling ``initialize`` on the interface."
+msgid "Each supported XR platform is implemented as an :ref:`XRInterface <class_xrinterface>`. Supported interfaces register themselves with the :ref:`XRServer <class_xrserver>` and can be queried with the ``find_interface`` method on the :ref:`XRServer <class_xrserver>`. When the desired interface is found it can be initialized by calling ``initialize`` on the interface."
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:15
@@ -85,7 +85,7 @@ msgid "OpenXR"
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:47
-msgid "OpenXR is a new industry standard that allows different XR platforms to present themselves through a standardised API to XR applications. This standard is an open standard maintained by the Khronos Group and thus aligns very well with Godots interests."
+msgid "OpenXR is a new industry standard that allows different XR platforms to present themselves through a standardised API to XR applications. This standard is an open standard maintained by the Khronos Group and thus aligns very well with Godot's interests."
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:49
@@ -117,7 +117,7 @@ msgid "And the right hand:"
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:73
-msgid "Right now all these nodes are on the floor, the will be positioned correctly in runtime. To help during development, it can be helpful to move the camera upwards so its ``y`` is set to ``1.7``, and move the controller nodes to ``-0.5, 1.0, -0.5`` and ``0.5, 1.0, -0.5`` for respectively the left and right hand."
+msgid "Right now all these nodes are on the floor, they will be positioned correctly in runtime. To help during development, it can be helpful to move the camera upwards so its ``y`` is set to ``1.7``, and move the controller nodes to ``-0.5, 1.0, -0.5`` and ``0.5, 1.0, -0.5`` for respectively the left and right hand."
 msgstr ""
 
 #: ../../docs/tutorials/xr/setting_up_xr.rst:75

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -69,30 +69,30 @@ msgid "Sprite animation"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/02.player_scene.rst:56
-msgid "Click on the ``Player`` node and add (:kbd:`Ctrl + A`) a child node :ref:`AnimatedSprite2D <class_AnimatedSprite2D>`. The ``AnimatedSprite2D`` will handle the appearance and animations for our player. Notice that there is a warning symbol next to the node. An ``AnimatedSprite2D`` requires a :ref:`SpriteFrames <class_SpriteFrames>` resource, which is a list of the animations it can display. To create one, find the ``Sprite Frames`` property under the ``Animation`` tab in the Inspector and click \"[empty]\" -> \"New SpriteFrames\". Click again to open the \"SpriteFrames\" panel:"
+msgid "Click on the ``Player`` node and add (:kbd:`Ctrl + A` on Windows/Linux or :kbd:`Cmd + A` on macOS) a child node :ref:`AnimatedSprite2D <class_AnimatedSprite2D>`. The ``AnimatedSprite2D`` will handle the appearance and animations for our player. Notice that there is a warning symbol next to the node. An ``AnimatedSprite2D`` requires a :ref:`SpriteFrames <class_SpriteFrames>` resource, which is a list of the animations it can display. To create one, find the ``Sprite Frames`` property under the ``Animation`` tab in the Inspector and click \"[empty]\" -> \"New SpriteFrames\". Click again to open the \"SpriteFrames\" panel:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:67
+#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:68
 msgid "On the left is a list of animations. Click the \"default\" one and rename it to \"walk\". Then click the \"Add Animation\" button to create a second animation named \"up\". Find the player images in the \"FileSystem\" tab - they're in the ``art`` folder you unzipped earlier. Drag the two images for each animation, named ``playerGrey_up[1/2]`` and ``playerGrey_walk[1/2]``, into the \"Animation Frames\" side of the panel for the corresponding animation:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:76
+#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:77
 msgid "The player images are a bit too large for the game window, so we need to scale them down. Click on the ``AnimatedSprite2D`` node and set the ``Scale`` property to ``(0.5, 0.5)``. You can find it in the Inspector under the ``Node2D`` heading."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:83
+#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:84
 msgid "Finally, add a :ref:`CollisionShape2D <class_CollisionShape2D>` as a child of ``Player``. This will determine the player's \"hitbox\", or the bounds of its collision area. For this character, a ``CapsuleShape2D`` node gives the best fit, so next to \"Shape\" in the Inspector, click \"[empty]\" -> \"New CapsuleShape2D\". Using the two size handles, resize the shape to cover the sprite:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:92
+#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:93
 msgid "When you're finished, your ``Player`` scene should look like this:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:96
+#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:97
 msgid "Make sure to save the scene again after these changes."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:98
+#: ../../docs/getting_started/first_2d_game/02.player_scene.rst:99
 msgid "In the next part, we'll add a script to the player node to move and animate it. Then, we'll set up collision detection to know when the player got hit by something."
 msgstr ""
 

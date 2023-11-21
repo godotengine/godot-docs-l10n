@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,7 +70,7 @@ msgid "These four conditions give us eight possibilities and eight possible dire
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:129
-msgid "In case the player presses, say, both W and D simultaneously, the vector will have a length of about ``1.4``. But if they press a single key, it will have a length of ``1``. We want the vector's length to be consistent, and not move faster diagonally. To do so, we can call its ``normalize()`` method."
+msgid "In case the player presses, say, both W and D simultaneously, the vector will have a length of about ``1.4``. But if they press a single key, it will have a length of ``1``. We want the vector's length to be consistent, and not move faster diagonally. To do so, we can call its ``normalized()`` method."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:157
@@ -98,7 +98,7 @@ msgid "The ``CharacterBody3D.is_on_floor()`` function returns ``true`` if the bo
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:226
-msgid "For the vertical velocity, we subtract the fall acceleration multiplied by the delta time every frame. This line of code will cause our character to fall in every frame, as long it is not on or collides with the floor."
+msgid "For the vertical velocity, we subtract the fall acceleration multiplied by the delta time every frame. This line of code will cause our character to fall in every frame, as long as it is not on or colliding with the floor."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:230
@@ -143,7 +143,7 @@ msgid "If you closed the scene before, head to the *FileSystem* dock and double-
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:364
-msgid "To instantiate the ``Player``, right-click on the ``Main`` node and select *Instance Child Scene*."
+msgid "To instantiate the ``Player``, right-click on the ``Main`` node and select *Instantiate Child Scene*."
 msgstr ""
 
 #: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:367

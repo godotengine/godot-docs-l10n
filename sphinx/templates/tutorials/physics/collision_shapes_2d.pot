@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -85,7 +85,7 @@ msgid "You can represent the collision of most smaller objects using one or more
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:42
-msgid "We recommend favoring primitive shapes for dynamic objects such as RigidBodies and KinematicBodies as their behavior is the most reliable. They often provide better performance as well."
+msgid "We recommend favoring primitive shapes for dynamic objects such as RigidBodies and CharacterBodies as their behavior is the most reliable. They often provide better performance as well."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:47
@@ -109,7 +109,7 @@ msgid "Concave or trimesh collision shapes"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:71
-msgid ":ref:`Concave collision shapes <class_ConcavePolygonShape2D>`, also called trimesh collision shapes, can take any form, from a few triangles to thousands of triangles. Concave shapes are the slowest option but are also the most accurate in Godot. **You can only use concave shapes within StaticBodies.** They will not work with KinematicBodies or RigidBodies unless the RigidBody's mode is Static."
+msgid ":ref:`Concave collision shapes <class_ConcavePolygonShape2D>`, also called trimesh collision shapes, can take any form, from a few triangles to thousands of triangles. Concave shapes are the slowest option but are also the most accurate in Godot. **You can only use concave shapes within StaticBodies.** They will not work with CharacterBodies or RigidBodies unless the RigidBody's mode is Static."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:79
@@ -153,7 +153,7 @@ msgid "Performance caveats"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:117
-msgid "You aren't limited to a single collision shape per PhysicsBody. Still, we recommend keeping the number of shapes as low as possible to improve performance, especially for dynamic objects like RigidBodies and KinematicBodies. On top of that, avoid translating, rotating, or scaling CollisionShapes to benefit from the physics engine's internal optimizations."
+msgid "You aren't limited to a single collision shape per PhysicsBody. Still, we recommend keeping the number of shapes as low as possible to improve performance, especially for dynamic objects like RigidBodies and CharacterBodies. On top of that, avoid translating, rotating, or scaling CollisionShapes to benefit from the physics engine's internal optimizations."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_2d.rst:123

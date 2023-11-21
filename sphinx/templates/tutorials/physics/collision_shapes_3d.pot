@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -77,7 +77,7 @@ msgid "You can represent the collision of most smaller objects using one or more
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:39
-msgid "We recommend favoring primitive shapes for dynamic objects such as RigidBodies and KinematicBodies as their behavior is the most reliable. They often provide better performance as well."
+msgid "We recommend favoring primitive shapes for dynamic objects such as RigidBodies and CharacterBodies as their behavior is the most reliable. They often provide better performance as well."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:44
@@ -109,7 +109,7 @@ msgid "Concave or trimesh collision shapes"
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:78
-msgid ":ref:`Concave collision shapes <class_ConcavePolygonShape3D>`, also called trimesh collision shapes, can take any form, from a few triangles to thousands of triangles. Concave shapes are the slowest option but are also the most accurate in Godot. **You can only use concave shapes within StaticBodies.** They will not work with KinematicBodies or RigidBodies unless the RigidBody's mode is Static."
+msgid ":ref:`Concave collision shapes <class_ConcavePolygonShape3D>`, also called trimesh collision shapes, can take any form, from a few triangles to thousands of triangles. Concave shapes are the slowest option but are also the most accurate in Godot. **You can only use concave shapes within StaticBodies.** They will not work with CharacterBodies or RigidBodies unless the RigidBody's mode is Static."
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:86
@@ -137,30 +137,22 @@ msgid "**Create Trimesh Collision Sibling** creates a CollisionShape node with a
 msgstr ""
 
 #: ../../docs/tutorials/physics/collision_shapes_3d.rst:111
-msgid "Suppose you need to make a RigidBody *slide* on a concave collision shape. In that case, you may notice that sometimes, the RigidBody will bump upwards. To solve this, open **Project > Project Settings** and enable **Physics > 3d > Smooth Trimesh Collision**."
-msgstr ""
-
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:116
-msgid "Once you've enabled smooth trimesh collision, make sure the concave shape is the only shape of your StaticBody and that it's located at its origin without any rotation. This way, the RigidBody should slide perfectly on the StaticBody."
-msgstr ""
-
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:123
 msgid "See :ref:`doc_importing_3d_scenes` for information on how to export models for Godot and automatically generate collision shapes on import."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:127
+#: ../../docs/tutorials/physics/collision_shapes_3d.rst:115
 msgid "Performance caveats"
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:129
-msgid "You aren't limited to a single collision shape per PhysicsBody. Still, we recommend keeping the number of shapes as low as possible to improve performance, especially for dynamic objects like RigidBodies and KinematicBodies. On top of that, avoid translating, rotating, or scaling CollisionShapes to benefit from the physics engine's internal optimizations."
+#: ../../docs/tutorials/physics/collision_shapes_3d.rst:117
+msgid "You aren't limited to a single collision shape per PhysicsBody. Still, we recommend keeping the number of shapes as low as possible to improve performance, especially for dynamic objects like RigidBodies and CharacterBodies. On top of that, avoid translating, rotating, or scaling CollisionShapes to benefit from the physics engine's internal optimizations."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:135
+#: ../../docs/tutorials/physics/collision_shapes_3d.rst:123
 msgid "When using a single non-transformed collision shape in a StaticBody, the engine's *broad phase* algorithm can discard inactive PhysicsBodies. The *narrow phase* will then only have to take into account the active bodies' shapes. If a StaticBody has many collision shapes, the broad phase will fail. The narrow phase, which is slower, must then perform a collision check against each shape."
 msgstr ""
 
-#: ../../docs/tutorials/physics/collision_shapes_3d.rst:141
+#: ../../docs/tutorials/physics/collision_shapes_3d.rst:129
 msgid "If you run into performance issues, you may have to make tradeoffs in terms of accuracy. Most games out there don't have a 100% accurate collision. They find creative ways to hide it or otherwise make it unnoticeable during normal gameplay."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,11 +29,11 @@ msgid "A map can hold and connect a near infinite number of navigation regions w
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:12
-msgid "A map can be joined by avoidance agents to process collision avoidance between the avoidance agents."
+msgid "A map can contain avoidance agents. Collision avoidance will be calculated based on the agents present in the map."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:16
-msgid "Different NavigationMaps are completely isolated from each other but navigation regions and avoidance agents can switch between different maps once every server synchronization."
+msgid "Different NavigationMaps are completely isolated from each other but navigation regions and avoidance agents can switch between different maps. Switches will become effective on NavigationServer synchronization."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:20
@@ -41,15 +41,15 @@ msgid "Default navigation maps"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:22
-msgid "By default Godot creates a navigation map RID for each :ref:`World2D<class_World2D>` and :ref:`World3D<class_World3D>` of the root viewport."
+msgid "By default Godot creates a navigation map for each :ref:`World2D<class_World2D>` and :ref:`World3D<class_World3D>` of the root viewport."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:24
-msgid "The 2D default navigation ``map`` can be obtained with ``get_world_2d().get_navigation_map()`` from any :ref:`Node2D<class_Node2D>` inheriting Node."
+msgid "The 2D default navigation map RID can be obtained with ``get_world_2d().get_navigation_map()`` from any :ref:`Node2D<class_Node2D>` inheriting Node."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:26
-msgid "The 3D default navigation ``map`` can be obtained with ``get_world_3d().get_navigation_map()`` from any :ref:`Node3D<class_Node3D>` inheriting Node."
+msgid "The 3D default navigation map RID can be obtained with ``get_world_3d().get_navigation_map()`` from any :ref:`Node3D<class_Node3D>` inheriting Node."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:43
@@ -57,7 +57,7 @@ msgid "Creating new navigation maps"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:45
-msgid "The NavigationServer can create and support as many navigation maps as are required for specific gameplay. Additional navigation maps are created and maintained by using the NavigationServer API directly e.g. to support different avoidance agent or actor locomotion types."
+msgid "The NavigationServer can create and support as many navigation maps as required for specific gameplay. Additional navigation maps are created and handled by using the NavigationServer API directly e.g. to support different avoidance agent or actor locomotion types."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:49
@@ -65,7 +65,7 @@ msgid "For example uses of different navigation maps see :ref:`doc_navigation_di
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:51
-msgid "Each navigation map synchronizes queued changes to its navigation regions and avoidance agents individually. A navigation map that has not received changes will consume little to no processing time. Navigation regions and avoidance agents can only be part of a single navigations map but they can switch maps at any time."
+msgid "Each navigation map individually synchronizes queued changes to its navigation regions and avoidance agents. A navigation map that has not received changes will consume little to no processing time. Navigation regions and avoidance agents can only be part of a single navigation map but they can switch map at any time."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmaps.rst:57

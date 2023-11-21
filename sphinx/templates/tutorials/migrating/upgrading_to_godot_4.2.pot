@@ -1,0 +1,1023 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:4
+msgid "Upgrading from Godot 4.1 to Godot 4.2"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:6
+msgid "For most games and apps made with 4.1 it should be relatively safe to migrate to 4.2. This page intends to cover everything you need to pay attention to when migrating your project."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:11
+msgid "Breaking changes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:13
+msgid "If you are migrating from 4.1 to 4.2, the breaking changes listed here might affect you. Changes are grouped by areas/systems."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:18
+msgid "The :ref:`class_Mesh` resource format has changed in 4.2 to allow for `vertex and attribute compression <https://github.com/godotengine/godot/pull/81138>`__. This allows for improved rendering performance, especially on platforms constrained by memory bandwidth such as mobile."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:23
+msgid "It is still possible to load the Godot 4.0-4.1 Mesh formats, but it is **not** possible to load the Godot 4.2 Mesh format in prior Godot versions. When opening a Godot project made with a version prior to 4.2, you may be presented with an upgrade dialog that offers two options:"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:28
+msgid "**Restart & Upgrade:** Upgrades the mesh format for all meshes in the project and saves the result to disk. Once chosen, this option prevents downgrading the project to a Godot version prior to 4.2. Set up a version control system and push your changes *before* choosing this option!"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:32
+msgid "**Upgrade Only:** Upgrades the mesh format in-memory without writing it to disk. This allows downgrading the project to a Godot version older than 4.2 if you need to do so in the future. The downside is that loading the project will be slower every time as the mesh format needs to be upgraded every time the project is loaded. These increased loading times will also affect the exported project. The number and complexity of Mesh resources determines how much loading times are affected."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:40
+msgid "If this dialog doesn't appear, use **Project > Tools > Upgrade Mesh Surfaces…** at the top of the editor."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:43
+msgid "This article indicates whether each breaking change affects GDScript and whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:46
+msgid "**Binary compatible** - Existing binaries will load and execute successfully without recompilation, and the run-time behavior won't change."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:48
+msgid "**Source compatible** - Source code will compile successfully without changes when upgrading Godot."
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:52
+msgid "Core"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:65
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:117
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:131
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:165
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:209
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:219
+msgid "Change"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:65
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:117
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:131
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:165
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:209
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:219
+msgid "GDScript Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:65
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:117
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:131
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:165
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:209
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:219
+msgid "C# Binary Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:65
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:117
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:131
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:165
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:209
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:219
+msgid "C# Source Compatible"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:55
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:65
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:117
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:131
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:153
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:165
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:209
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:219
+msgid "Introduced"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:57
+msgid "**Node**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:58
+msgid "Constant ``NOTIFICATION_NODE_RECACHE_REQUESTED`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:58
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:58
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:71
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:71
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:72
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:72
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:99
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:99
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:100
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:100
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:110
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:110
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:135
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:135
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:138
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:138
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:144
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:144
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:168
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:170
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:171
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:173
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:173
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:173
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:174
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:177
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:177
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:178
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:178
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:178
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:179
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:179
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:179
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:180
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:180
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:180
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:181
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:181
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:181
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:182
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:182
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:182
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:183
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:183
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:183
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:184
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:184
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:184
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:185
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:185
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:185
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:186
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:186
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:186
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:187
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:187
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:187
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:188
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:188
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:188
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:189
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:189
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:189
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:190
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:190
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:190
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:193
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:193
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:193
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:198
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:198
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:201
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:201
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:201
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:202
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:202
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:202
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:212
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:222
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:222
+msgid "|❌|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:58
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:68
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:68
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:68
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:70
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:70
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:70
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:71
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:72
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:73
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:73
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:73
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:74
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:74
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:74
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:77
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:77
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:77
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:78
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:78
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:78
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:80
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:80
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:80
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:81
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:81
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:81
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:82
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:82
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:82
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:83
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:83
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:83
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:84
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:84
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:84
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:85
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:85
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:85
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:87
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:88
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:89
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:89
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:89
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:90
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:90
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:90
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:92
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:92
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:92
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:93
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:93
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:93
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:94
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:94
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:96
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:96
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:96
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:97
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:97
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:97
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:99
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:100
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:101
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:101
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:101
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:102
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:102
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:102
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:103
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:103
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:103
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:104
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:104
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:104
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:105
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:105
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:105
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:106
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:106
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:106
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:108
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:109
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:109
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:109
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:110
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:120
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:121
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:122
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:124
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:124
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:134
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:135
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:137
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:137
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:138
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:140
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:140
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:140
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:141
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:141
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:141
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:142
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:143
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:143
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:144
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:146
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:157
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:158
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:158
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:175
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:175
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:175
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:176
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:176
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:176
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:177
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:191
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:191
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:191
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:192
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:192
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:192
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:194
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:194
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:194
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:195
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:195
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:195
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:196
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:196
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:196
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:197
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:197
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:197
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:198
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:199
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:199
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:199
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:200
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:200
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:200
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:222
+msgid "|✔️|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:58
+msgid "`GH-84419`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:62
+msgid "Animation"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:67
+msgid "**AnimationPlayer**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:68
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:96
+msgid "Method ``_post_process_key_value`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:68
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:69
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:70
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:71
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:72
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:73
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:74
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:76
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:77
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:78
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:79
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:80
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:81
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:82
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:83
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:84
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:85
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:87
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:88
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:89
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:90
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:91
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:92
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:93
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:94
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:96
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:97
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:98
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:99
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:100
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:101
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:102
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:103
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:104
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:105
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:106
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:107
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:108
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:109
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:110
+msgid "`GH-80813`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:69
+msgid "Method ``add_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:70
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:98
+msgid "Method ``advance`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:71
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:99
+msgid "Signal ``animation_finished`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:72
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:100
+msgid "Signal ``animation_started`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:73
+msgid "Signal ``animation_libraries_updated`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:74
+msgid "Signal ``animation_list_changed`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:75
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:101
+msgid "Property ``audio_max_polyphony`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:76
+msgid "Signal ``caches_cleared`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:77
+msgid "Method ``clear_caches`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:78
+msgid "Method ``find_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:79
+msgid "Method ``find_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:80
+msgid "Method ``get_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:81
+msgid "Method ``get_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:82
+msgid "Method ``get_animation_library_list`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:83
+msgid "Method ``get_animation_list`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:84
+msgid "Method ``has_animation`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:85
+msgid "Method ``has_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:86
+msgid "Property ``method_call_mode`` renamed to ``callback_mode_method`` and moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:86
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:87
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:87
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:88
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:88
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:94
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:108
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:108
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:120
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:120
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:121
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:121
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:122
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:122
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:124
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:134
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:134
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:137
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:143
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:146
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:146
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:158
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:168
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:168
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:170
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:170
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:171
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:171
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:174
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:174
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:212
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:212
+msgid "|✔️ with compat|"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:87
+msgid "Property ``playback_active`` renamed to ``active`` and moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:88
+msgid "Property ``playback_process_mode`` renamed to ``callback_mode_process`` and moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:89
+msgid "Method ``remove_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:90
+msgid "Method ``rename_animation_library`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:91
+msgid "Property ``reset_on_save`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:92
+msgid "Property ``root_node`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:93
+msgid "Method ``set_reset_on_save_enabled`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:94
+msgid "Method ``seek`` adds a new ``update_only`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:95
+msgid "**AnimationTree**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:97
+msgid "Property ``active`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:102
+msgid "Method ``get_root_motion_position`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:103
+msgid "Method ``get_root_motion_position_accumulator`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:104
+msgid "Method ``get_root_motion_rotation`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:105
+msgid "Method ``get_root_motion_rotation_accumulator`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:106
+msgid "Method ``get_root_motion_scale`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:107
+msgid "Method ``get_root_motion_scale_accumulator`` moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:108
+msgid "Property ``process_callback`` renamed to ``callback_mode_process`` and moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:109
+msgid "Property ``root_motion_track``  moved to base class ``AnimationMixer``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:110
+msgid "Property ``tree_root`` changes type from ``AnimationNode`` to ``AnimationRootNode``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:114
+msgid "GUI nodes"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:119
+msgid "**PopupMenu**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:120
+msgid "Method ``add_icon_shortcut`` adds a new ``allow_echo`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:120
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:121
+msgid "`GH-36493`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:121
+msgid "Method ``add_shortcut`` adds a new ``allow_echo`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:122
+msgid "Method ``clear`` adds a new ``free_submenus`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:122
+msgid "`GH-79965`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:123
+msgid "**RichTextLabel**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:124
+msgid "Method ``add_image`` adds new ``key``, ``pad``, ``tooltip``, and ``size_in_percent`` optional parameters"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:124
+msgid "`GH-80410`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:128
+msgid "Rendering"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:133
+msgid "**ImporterMesh**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:134
+msgid "Method ``add_surface`` changes ``flags`` parameter type from ``uint32`` to ``uint64``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:134
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:135
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:137
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:138
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:144
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:146
+msgid "`GH-81138`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:135
+msgid "Method ``get_surface_format`` changes return type from ``uint32`` to ``uint64``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:136
+msgid "**MeshDataTool**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:137
+msgid "Method ``commit_to_surface`` adds a new ``compression_flags`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:138
+msgid "Method ``get_format`` changes return type from ``uint32`` to ``uint64``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:139
+msgid "**RenderingDevice**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:140
+msgid "Enum field ``BarrierMask.BARRIER_MASK_RASTER`` changes value from ``1`` to ``9``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:140
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:141
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:142
+msgid "`GH-79911`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:141
+msgid "Enum field ``BarrierMask.BARRIER_MASK_ALL_BARRIERS`` changes value from ``7`` to ``32767``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:142
+msgid "Enum field ``BarrierMask.BARRIER_MASK_NO_BARRIER`` changes value from ``8`` to ``32768``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:143
+msgid "Method ``shader_create_from_bytecode`` adds a new ``placeholder_rid`` optional parameter"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:143
+msgid "`GH-79606`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:144
+msgid "Method ``shader_get_vertex_input_attribute_ask`` changes return type from ``uint32`` to ``uint64``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:145
+msgid "**SurfaceTool**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:146
+msgid "Method ``commit`` changes ``flags`` parameter type from ``uint32`` to ``uint64``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:150
+msgid "Text"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:155
+msgid "**Font**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:156
+msgid "Method ``set_fallbacks`` replaced with ``fallbacks`` property"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:156
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:157
+msgid "`GH-78266`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:157
+msgid "Method ``get_fallbacks`` replaced with ``fallbacks`` property"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:158
+msgid "Method ``find_variation`` adds new ``spacing_top``, ``spacing_bottom``, ``spacing_space``, and ``spacing_glyph`` optional parameters"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:158
+msgid "`GH-80954`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:162
+msgid "GraphEdit"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:167
+msgid "**GraphEdit**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:168
+msgid "Property ``arrange_nodes_button_hidden`` renamed to ``show_arrange_button``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:168
+msgid "`GH-81582`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:169
+msgid "Method ``get_zoom_hbox`` renamed to ``get_menu_hbox``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:169
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:170
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:171
+msgid "`GH-79308`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:170
+msgid "Property ``snap_distance`` renamed to ``snapping_distance``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:171
+msgid "Property ``use_snap`` renamed to ``snapping_enabled``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:172
+msgid "**GraphNode**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:173
+msgid "Property ``comment`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:173
+msgid "`GH-79307`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:174
+msgid "Signal ``close_request`` renamed to ``delete_request`` and moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:174
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:175
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:176
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:177
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:178
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:179
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:180
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:181
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:182
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:183
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:184
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:185
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:186
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:187
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:188
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:189
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:190
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:191
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:192
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:193
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:194
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:195
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:196
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:197
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:198
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:199
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:200
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:201
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:202
+msgid "`GH-79311`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:175
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:176
+msgid "Property ``draggable`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:177
+msgid "Signal ``dragged`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:178
+msgid "Method ``get_connection_input_color`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:179
+msgid "Method ``get_connection_input_count`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:180
+msgid "Method ``get_connection_input_height`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:181
+msgid "Method ``get_connection_input_position`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:182
+msgid "Method ``get_connection_input_slot`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:183
+msgid "Method ``get_connection_input_type`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:184
+msgid "Method ``get_connection_output_color`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:185
+msgid "Method ``get_connection_output_count`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:186
+msgid "Method ``get_connection_output_height`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:187
+msgid "Method ``get_connection_output_position`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:188
+msgid "Method ``get_connection_output_slot`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:189
+msgid "Method ``get_connection_output_type`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:190
+msgid "Property ``language`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:191
+msgid "Signal ``node_deselected`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:192
+msgid "Signal ``node_selected`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:193
+msgid "Property ``overlay`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:194
+msgid "Property ``position_offset`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:195
+msgid "Signal ``position_offset_changed`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:196
+msgid "Signal ``raise_request`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:197
+msgid "Property ``resizable`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:198
+msgid "Signal ``resize_request`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:199
+msgid "Property ``selectable`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:200
+msgid "Property ``selected`` moved to base class ``GraphElement``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:201
+msgid "Property ``show_close`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:202
+msgid "Property ``text_direction`` removed"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:206
+msgid "TileMap"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:211
+msgid "**TileMap**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:212
+msgid "Property ``cell_quadrant_size`` renamed to ``rendering_quadrant_size``"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:212
+msgid "`GH-81070`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:216
+msgid "XR"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:221
+msgid "**XRInterface**"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:222
+msgid "Property ``environment_blend_mode`` added"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:222
+msgid "`GH-81561`_"
+msgstr ""
+
+#: ../../docs/tutorials/migrating/upgrading_to_godot_4.2.rst:227
+msgid "This change breaks compatibility in C# because the new property conflicts with the name of an existing enum and the C# bindings generator gives priority to properties, so the enum type was renamed from ``EnvironmentBlendMode`` to ``EnvironmentBlendModeEnum``."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

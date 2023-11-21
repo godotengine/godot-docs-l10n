@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,11 +25,11 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:9
-msgid "As explained in the :ref:`doc_debugger_panel` documentation, Godot features a **Debugger > Monitor** bottom panel that allows tracking various values with graphs showing their evolution over time. The data for those graphs is sourced from the engine's :ref:`class_Performance` singleton."
+msgid "As explained in the :ref:`doc_debugger_panel` documentation, Godot features a **Debugger > Monitors** bottom panel that allows tracking various values with graphs showing their evolution over time. The data for those graphs is sourced from the engine's :ref:`class_Performance` singleton."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:14
-msgid "Since Godot 4.0, you can declare custom values to be displayed in this Monitor tab. Example use cases for custom performance monitors include:"
+msgid "Since Godot 4.0, you can declare custom values to be displayed in the Monitors tab. Example use cases for custom performance monitors include:"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:17
@@ -53,7 +53,7 @@ msgid "The main scene features a :ref:`class_Timer` node with the following scri
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:61
-msgid "The second parameter of ref:`Performance.add_custom_monitor<class_Performance_method_add_custom_monitor>` is a :ref:`class_Callable`."
+msgid "The second parameter of :ref:`Performance.add_custom_monitor<class_Performance_method_add_custom_monitor>` is a :ref:`class_Callable`."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:65
@@ -66,6 +66,11 @@ msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:88
 msgid "To visualize the graph created from this custom performance monitor, run the project, switch to the editor while the project is running and open **Debugger > Monitors** at the bottom of the editor window. Scroll down to the newly available **Game** section and check **Enemies**. You should see a graph appearing as follows:"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:98
+#: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:98
+msgid "Example editor graph from a custom performance monitor"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/debug/custom_performance_monitors.rst:102

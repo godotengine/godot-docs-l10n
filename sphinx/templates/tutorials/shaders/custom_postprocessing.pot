@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,67 +25,67 @@ msgid "Introduction"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/custom_postprocessing.rst:9
-msgid "Godot provides many post-processing effects out of the box, including Bloom, DOF, and SSAO. However, advanced use cases may require custom effects. This article explains how to write your own custom effects."
+msgid "Godot provides many post-processing effects out of the box, including Bloom, DOF, and SSAO, which are described in :ref:`doc_environment_and_post_processing`. However, advanced use cases may require custom effects. This article explains how to write your own custom effects."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:13
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:14
 msgid "The easiest way to implement a custom post-processing shader is to use Godot's built-in ability to read from the screen texture. If you're not familiar with this, you should read the :ref:`Screen Reading Shaders Tutorial <doc_screen-reading_shaders>` first."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:19
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:20
 msgid "Single pass post-processing"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:21
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:22
 msgid "Post-processing effects are shaders applied to a frame after Godot has rendered it. To apply a shader to a frame, create a :ref:`CanvasLayer <class_CanvasLayer>`, and give it a :ref:`ColorRect <class_ColorRect>`. Assign a new :ref:`ShaderMaterial <class_ShaderMaterial>` to the newly created ``ColorRect``, and set the ``ColorRect``'s layout to \"Full Rect\"."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:27
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:101
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:28
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:105
 msgid "Your scene tree will look something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:33
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:34
 msgid "Another more efficient method is to use a :ref:`BackBufferCopy <class_BackBufferCopy>` to copy a region of the screen to a buffer and to access it in a shader script through a ``sampler2D`` using ``hint_screen_texture``."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:40
-msgid "As of the time of writing, Godot does not support rendering to multiple buffers at the same time. Your post-processing shader will not have access to normals or other render passes. You only have access to the rendered frame."
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:41
+msgid "As of the time of writing, Godot does not support rendering to multiple buffers at the same time. Your post-processing shader will not have access to other render passes and buffers not exposed by Godot (such as depth or normal/roughness). You only have access to the rendered frame and buffers exposed by Godot as samplers."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:45
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:47
 msgid "For this demo, we will use this :ref:`Sprite <class_Sprite2D>` of a sheep."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:49
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:51
 msgid "Assign a new :ref:`Shader <class_Shader>` to the ``ColorRect``'s ``ShaderMaterial``. You can access the frame's texture and UV with a ``sampler2D`` using ``hint_screen_texture`` and the built in ``SCREEN_UV`` uniforms."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:54
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:56
 msgid "Copy the following code to your shader. The code below is a hex pixelization shader by `arlez80 <https://bitbucket.org/arlez80/hex-mosaic/src/master/>`_,"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:83
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:87
 msgid "The sheep will look something like this:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:88
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:92
 msgid "Multi-pass post-processing"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:90
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:94
 msgid "Some post-processing effects like blurs are resource intensive. You can make them run a lot faster if you break them down in multiple passes. In a multipass material, each pass takes the result from the previous pass as an input and processes it."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:95
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:99
 msgid "To produce a multi-pass post-processing shader, you stack ``CanvasLayer`` and ``ColorRect`` nodes. In the example above, you use a ``CanvasLayer`` object to render a shader using the frame on the layer below. Apart from the node structure, the steps are the same as with the single-pass post-processing shader."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:105
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:109
 msgid "As an example, you could write a full screen Gaussian blur effect by attaching the following pieces of code to each of the ``ColorRect`` nodes. The order in which you apply the shaders depends on the position of the ``CanvasLayer`` in the scene tree, higher means sooner. For this blur shader, the order does not matter."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/custom_postprocessing.rst:151
+#: ../../docs/tutorials/shaders/custom_postprocessing.rst:155
 msgid "Using the above code, you should end up with a full screen blur effect like below."
 msgstr ""
 

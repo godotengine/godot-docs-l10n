@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -116,147 +116,147 @@ msgstr ""
 msgid "There are two ways to load resources from code. First, you can use the ``load()`` function anytime:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:95
+#: ../../docs/tutorials/scripting/resources.rst:96
 msgid "You can also ``preload`` resources. Unlike ``load``, this function will read the file from disk and load it at compile-time. As a result, you cannot call ``preload`` with a variable path: you need to use a constant string."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:112
+#: ../../docs/tutorials/scripting/resources.rst:113
 msgid "Loading scenes"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:114
+#: ../../docs/tutorials/scripting/resources.rst:115
 msgid "Scenes are also resources, but there is a catch. Scenes saved to disk are resources of type :ref:`PackedScene <class_PackedScene>`. The scene is packed inside a :ref:`Resource <class_Resource>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:118
+#: ../../docs/tutorials/scripting/resources.rst:119
 msgid "To get an instance of the scene, you have to use the :ref:`PackedScene.instantiate() <class_PackedScene_method_instantiate>` method."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:139
+#: ../../docs/tutorials/scripting/resources.rst:140
 msgid "This method creates the nodes in the scene's hierarchy, configures them, and returns the root node of the scene. You can then add it as a child of any other node."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:143
+#: ../../docs/tutorials/scripting/resources.rst:144
 msgid "The approach has several advantages. As the :ref:`PackedScene.instantiate() <class_PackedScene_method_instantiate>` function is fast, you can create new enemies, bullets, effects, etc. without having to load them again from disk each time. Remember that, as always, images, meshes, etc. are all shared between the scene instances."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:150
+#: ../../docs/tutorials/scripting/resources.rst:151
 msgid "Freeing resources"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:152
+#: ../../docs/tutorials/scripting/resources.rst:153
 msgid "When a :ref:`Resource <class_Resource>` is no longer in use, it will automatically free itself. Since, in most cases, Resources are contained in Nodes, when you free a node, the engine frees all the resources it owns as well if no other node uses them."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:157
+#: ../../docs/tutorials/scripting/resources.rst:158
 msgid "Creating your own resources"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:159
+#: ../../docs/tutorials/scripting/resources.rst:160
 msgid "Like any Object in Godot, users can also script Resources. Resource scripts inherit the ability to freely translate between object properties and serialized text or binary data (\\*.tres, \\*.res). They also inherit the reference-counting memory management from the Reference type."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:164
+#: ../../docs/tutorials/scripting/resources.rst:165
 msgid "This comes with many distinct advantages over alternative data structures, such as JSON, CSV, or custom TXT files. Users can only import these assets as a :ref:`Dictionary <class_Dictionary>` (JSON) or as a :ref:`FileAccess <class_FileAccess>` to parse. What sets Resources apart is their inheritance of :ref:`Object <class_Object>`, :ref:`RefCounted <class_RefCounted>`, and :ref:`Resource <class_Resource>` features:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:171
+#: ../../docs/tutorials/scripting/resources.rst:172
 msgid "They can define constants, so constants from other data fields or objects are not needed."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:173
+#: ../../docs/tutorials/scripting/resources.rst:174
 msgid "They can define methods, including setter/getter methods for properties. This allows for abstraction and encapsulation of the underlying data. If the Resource script's structure needs to change, the game using the Resource need not also change."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:175
+#: ../../docs/tutorials/scripting/resources.rst:176
 msgid "They can define signals, so Resources can trigger responses to changes in the data they manage."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:177
+#: ../../docs/tutorials/scripting/resources.rst:178
 msgid "They have defined properties, so users know 100% that their data will exist."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:179
+#: ../../docs/tutorials/scripting/resources.rst:180
 msgid "Resource auto-serialization and deserialization is a built-in Godot Engine feature. Users do not need to implement custom logic to import/export a resource file's data."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:181
+#: ../../docs/tutorials/scripting/resources.rst:182
 msgid "Resources can even serialize sub-Resources recursively, meaning users can design even more sophisticated data structures."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:183
+#: ../../docs/tutorials/scripting/resources.rst:184
 msgid "Users can save Resources as version-control-friendly text files (\\*.tres). Upon exporting a game, Godot serializes resource files as binary files (\\*.res) for increased speed and compression."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:185
+#: ../../docs/tutorials/scripting/resources.rst:186
 msgid "Godot Engine's Inspector renders and edits Resource files out-of-the-box. As such, users often do not need to implement custom logic to visualize or edit their data. To do so, double-click the resource file in the FileSystem dock or click the folder icon in the Inspector and open the file in the dialog."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:187
+#: ../../docs/tutorials/scripting/resources.rst:188
 msgid "They can extend **other** resource types besides just the base Resource."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:189
+#: ../../docs/tutorials/scripting/resources.rst:190
 msgid "Godot makes it easy to create custom Resources in the Inspector."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:191
+#: ../../docs/tutorials/scripting/resources.rst:192
 msgid "Create a plain Resource object in the Inspector. This can even be a type that derives Resource, so long as your script is extending that type."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:192
+#: ../../docs/tutorials/scripting/resources.rst:193
 msgid "Set the ``script`` property in the Inspector to be your script."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:194
+#: ../../docs/tutorials/scripting/resources.rst:195
 msgid "The Inspector will now display your Resource script's custom properties. If one edits those values and saves the resource, the Inspector serializes the custom properties too! To save a resource from the Inspector, click the Inspector's tools menu (top right), and select \"Save\" or \"Save As...\"."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:199
+#: ../../docs/tutorials/scripting/resources.rst:200
 msgid "If the script's language supports :ref:`script classes <doc_gdscript_basics_class_name>`, then it streamlines the process. Defining a name for your script alone will add it to the Inspector's creation dialog. This will auto-add your script to the Resource object you create."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:204
+#: ../../docs/tutorials/scripting/resources.rst:205
 msgid "Let's see some examples. Create a :ref:`Resource <class_Resource>` and name it ``bot_stats``. It should appear in your file tab with the full name ``bot_stats.tres``. Without a script, it's useless, so let's add some data and logic! Attach a script to it named ``bot_stats.gd`` (or just create a new script, and then drag it to it)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:261
+#: ../../docs/tutorials/scripting/resources.rst:262
 msgid "Now, create a :ref:`CharacterBody3D <class_CharacterBody3D>`, name it ``Bot``, and add the following script to it:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:299
+#: ../../docs/tutorials/scripting/resources.rst:300
 msgid "Now, select the :ref:`CharacterBody3D <class_CharacterBody3D>` node which we named ``bot``, and drag&drop the ``bot_stats.tres`` resource onto the Inspector. It should print 10! Obviously, this setup can be used for more advanced features than this, but as long you really understand *how* it all worked, you should figure out everything else related to Resources."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:303
+#: ../../docs/tutorials/scripting/resources.rst:304
 msgid "Resource scripts are similar to Unity's ScriptableObjects. The Inspector provides built-in support for custom resources. If desired though, users can even design their own Control-based tool scripts and combine them with an :ref:`EditorPlugin <class_EditorPlugin>` to create custom visualizations and editors for their data."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:309
+#: ../../docs/tutorials/scripting/resources.rst:310
 msgid "Unreal Engine's DataTables and CurveTables are also easy to recreate with Resource scripts. DataTables are a String mapped to a custom struct, similar to a Dictionary mapping a String to a secondary custom Resource script."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:344
+#: ../../docs/tutorials/scripting/resources.rst:345
 msgid "Instead of inlining the Dictionary values, one could also, alternatively:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:346
+#: ../../docs/tutorials/scripting/resources.rst:347
 msgid "Import a table of values from a spreadsheet and generate these key-value pairs."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:348
+#: ../../docs/tutorials/scripting/resources.rst:349
 msgid "Design a visualization within the editor and create a plugin that adds it to the Inspector when you open these types of Resources."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:351
+#: ../../docs/tutorials/scripting/resources.rst:352
 msgid "CurveTables are the same thing, except mapped to an Array of float values or a :ref:`Curve <class_Curve>`/:ref:`Curve2D <class_Curve2D>` resource object."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:356
+#: ../../docs/tutorials/scripting/resources.rst:357
 msgid "Beware that resource files (\\*.tres/\\*.res) will store the path of the script they use in the file. When loaded, they will fetch and load this script as an extension of their type. This means that trying to assign a subclass, i.e. an inner class of a script (such as using the ``class`` keyword in GDScript) won't work. Godot will not serialize the custom properties on the script subclass properly."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/resources.rst:362
+#: ../../docs/tutorials/scripting/resources.rst:363
 msgid "In the example below, Godot would load the ``Node`` script, see that it doesn't extend ``Resource``, and then determine that the script failed to load for the Resource object since the types are incompatible."
 msgstr ""
 

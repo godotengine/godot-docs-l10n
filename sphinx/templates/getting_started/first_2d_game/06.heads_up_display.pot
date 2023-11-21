@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "The final piece our game needs is a User Interface (UI) to display things
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:9
-msgid "Create a new scene, and add a :ref:`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational display that appears as an overlay on top of the game view."
+msgid "Create a new scene, click the \"Other Node\" button and add a :ref:`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for \"heads-up display\", an informational display that appears as an overlay on top of the game view."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:13
@@ -114,7 +114,7 @@ msgid "Message"
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:68
-msgid "Add the text ``Dodge the creeps!``."
+msgid "Add the text ``Dodge the Creeps!``."
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:70
@@ -157,91 +157,87 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:149
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:108
 msgid "We now want to display a message temporarily, such as \"Get Ready\", so we add the following code"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:196
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:130
 msgid "We also need to process what happens when the player loses. The code below will show \"Game Over\" for 2 seconds, then return to the title screen and, after a brief pause, show the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:246
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:163
 msgid "This function is called when the player loses. It will show \"Game Over\" for 2 seconds, then return to the title screen and, after a brief pause, show the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:250
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:167
 msgid "When you need to pause for a brief time, an alternative to using a Timer node is to use the SceneTree's ``create_timer()`` function. This can be very useful to add delays such as in the above code, where we want to wait some time before showing the \"Start\" button."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:255
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:172
 msgid "Add the code below to ``HUD`` to update the score"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:277
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:187
 msgid "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` signal of ``StartButton``, and add the following code to the new functions:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:323
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:214
 msgid "Connecting HUD to Main"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:325
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:216
 msgid "Now that we're done creating the ``HUD`` scene, go back to ``Main``. Instance the ``HUD`` scene in ``Main`` like you did the ``Player`` scene. The scene tree should look like this, so make sure you didn't miss anything:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:331
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:222
 msgid "Now we need to connect the ``HUD`` functionality to our ``Main`` script. This requires a few additions to the ``Main`` scene:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:334
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:225
 msgid "In the Node tab, connect the HUD's ``start_game`` signal to the ``new_game()`` function of the Main node by clicking the \"Pick\" button in the \"Connect a Signal\" window and selecting the ``new_game()`` method or type \"new_game\" below \"Receiver Method\" in the window. Verify that the green connection icon now appears next to ``func new_game()`` in the script."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:340
-msgid "Remember to remove the call to ``new_game()`` from ``_ready()``."
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:343
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:231
 msgid "In ``new_game()``, update the score display and show the \"Get Ready\" message:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:362
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:245
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:377
-msgid "Just a reminder: we don't want to start the new game automatically, so remove the call to ``new_game()`` in ``_ready()`` if you haven't yet."
-msgstr ""
-
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:380
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:256
 msgid "Finally, add this to ``_on_score_timer_timeout()`` to keep the display in sync with the changing score:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:396
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:270
+msgid "Remember to remove the call to ``new_game()`` from ``_ready()`` if you haven't already, otherwise your game will start automatically."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:274
 msgid "Now you're ready to play! Click the \"Play the Project\" button. You will be asked to select a main scene, so choose ``main.tscn``."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:400
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:278
 msgid "Removing old creeps"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:402
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:280
 msgid "If you play until \"Game Over\" and then start a new game right away, the creeps from the previous game may still be on the screen. It would be better if they all disappeared at the start of a new game. We just need a way to tell *all* the mobs to remove themselves. We can do this with the \"group\" feature."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:407
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:285
 msgid "In the ``Mob`` scene, select the root node and click the \"Node\" tab next to the Inspector (the same place where you find the node's signals). Next to \"Signals\", click \"Groups\" and you can type a new group name and click \"Add\"."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:413
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:291
 msgid "Now all mobs will be in the \"mobs\" group. We can then add the following line to the ``new_game()`` function in ``Main``:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:431
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:305
 msgid "The ``call_group()`` function calls the named function on every node in a group - in this case we are telling every mob to delete itself."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:434
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:308
 msgid "The game's mostly done at this point. In the next and last part, we'll polish it a bit by adding a background, looping music, and some keyboard shortcuts."
 msgstr ""
 

@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:2
+msgid "GD0107: Types not derived from Node should not export Node members"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:7
+msgid "**Rule ID**"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:7
+msgid "GD0107"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:8
+msgid "**Category**"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:8
+msgid "Usage"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:9
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:9
+msgid "Breaking"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:10
+msgid "**Enabled by default**"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:10
+msgid "Yes"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:14
+msgid "Cause"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:16
+msgid "A type that doesn't derive from ``Node`` contains an exported field or property of a type that derives from ``Node``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:20
+msgid "Rule description"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:22
+msgid "Exported nodes are serialized as ``NodePath``. Only types derived from ``Node`` are able to get the node instance from the ``NodePath``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:26
+msgid "How to fix violations"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:28
+msgid "To fix a violation of this rule, avoid exporting ``Node`` members on a type that doesn't derive from ``Node``, or consider exporting a ``NodePath``."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:32
+msgid "When to suppress warnings"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/c_sharp/diagnostics/GD0107.rst:34
+msgid "Do not suppress a warning from this rule. Types that don't derive from ``Node`` will be unable to retrieve the right node instance for exported ``Node`` members, resulting in unexpected runtime errors."
+msgstr ""
+
+#: ../../docs/<rst_epilog>:0
+msgid "Translation status"
+msgstr ""

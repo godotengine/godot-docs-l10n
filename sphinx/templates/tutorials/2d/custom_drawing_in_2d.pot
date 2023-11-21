@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -76,147 +76,147 @@ msgstr ""
 msgid "Here is a little more complex example, a texture variable that will be redrawn if modified:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:110
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:111
 msgid "In some cases, it may be desired to draw every frame. For this, call ``queue_redraw()`` from the ``_process()`` callback, like this:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:143
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:144
 msgid "Coordinates"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:145
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:146
 msgid "The drawing API uses the CanvasItem's coordinate system, not necessarily pixel coordinates. Which means it uses the coordinate space created after applying the CanvasItem's transform. Additionally, you can apply a custom transform on top of it by using :ref:`draw_set_transform<class_CanvasItem_method_draw_set_transform>` or :ref:`draw_set_transform_matrix<class_CanvasItem_method_draw_set_transform_matrix>`."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:152
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:153
 msgid "When using ``draw_line``, you should consider the width of the line. When using a width that is an odd size, the position should be shifted by ``0.5`` to keep the line centered as shown below."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:175
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:176
 msgid "The same applies to the ``draw_rect`` method with ``filled = false``."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:199
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:200
 msgid "An example: drawing circular arcs"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:201
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:202
 msgid "We will now use the custom drawing functionality of the Godot Engine to draw something that Godot doesn't provide functions for. As an example, Godot provides a ``draw_circle()`` function that draws a whole circle. However, what about drawing a portion of a circle? You will have to code a function to perform this and draw it yourself."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:207
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:208
 msgid "Arc function"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:209
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:210
 msgid "An arc is defined by its support circle parameters, that is, the center position and the radius. The arc itself is then defined by the angle it starts from and the angle at which it stops. These are the 4 arguments that we have to provide to our drawing function. We'll also provide the color value, so we can draw the arc in different colors if we wish."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:214
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:215
 msgid "Basically, drawing a shape on the screen requires it to be decomposed into a certain number of points linked from one to the next. As you can imagine, the more points your shape is made of, the smoother it will appear, but the heavier it will also be in terms of processing cost. In general, if your shape is huge (or in 3D, close to the camera), it will require more points to be drawn without it being angular-looking. On the contrary, if your shape is small (or in 3D, far from the camera), you may decrease its number of points to save processing costs; this is known as *Level of Detail (LOD)*. In our example, we will simply use a fixed number of points, no matter the radius."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:256
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:257
 msgid "Remember the number of points our shape has to be decomposed into? We fixed this number in the ``nb_points`` variable to a value of ``32``. Then, we initialize an empty ``PackedVector2Array``, which is simply an array of ``Vector2``\\ s."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:260
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:261
 msgid "The next step consists of computing the actual positions of these 32 points that compose an arc. This is done in the first for-loop: we iterate over the number of points for which we want to compute the positions, plus one to include the last point. We first determine the angle of each point, between the starting and ending angles."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:265
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:266
 msgid "The reason why each angle is decreased by 90° is that we will compute 2D positions out of each angle using trigonometry (you know, cosine and sine stuff...). However, ``cos()`` and ``sin()`` use radians, not degrees. The angle of 0° (0 radian) starts at 3 o'clock, although we want to start counting at 12 o'clock. So we decrease each angle by 90° in order to start counting from 12 o'clock."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:271
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:272
 msgid "The actual position of a point located on a circle at angle ``angle`` (in radians) is given by ``Vector2(cos(angle), sin(angle))``. Since ``cos()`` and ``sin()`` return values between -1 and 1, the position is located on a circle of radius 1. To have this position on our support circle, which has a radius of ``radius``, we simply need to multiply the position by ``radius``. Finally, we need to position our support circle at the ``center`` position, which is performed by adding it to our ``Vector2`` value. Finally, we insert the point in the ``PackedVector2Array`` which was previously defined."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:279
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:280
 msgid "Now, we need to actually draw our points. As you can imagine, we will not simply draw our 32 points: we need to draw everything that is between each of them. We could have computed every point ourselves using the previous method, and drew it one by one. But this is too complicated and inefficient (except if explicitly needed), so we simply draw lines between each pair of points. Unless the radius of our support circle is big, the length of each line between a pair of points will never be long enough to see them. If that were to happen, we would simply need to increase the number of points."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:289
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:290
 msgid "Draw the arc on the screen"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:291
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:292
 msgid "We now have a function that draws stuff on the screen; it is time to call it inside the ``_draw()`` function:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:318
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:319
 msgid "Result:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:323
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:324
 msgid "Arc polygon function"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:325
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:326
 msgid "We can take this a step further and not only write a function that draws the plain portion of the disc defined by the arc, but also its shape. The method is exactly the same as before, except that we draw a polygon instead of lines:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:365
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:366
 msgid "Dynamic custom drawing"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:367
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:368
 msgid "All right, we are now able to draw custom stuff on the screen. However, it is static; let's make this shape turn around the center. The solution to do this is simply to change the angle_from and angle_to values over time. For our example, we will simply increment them by 50. This increment value has to remain constant or else the rotation speed will change accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:373
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:374
 msgid "First, we have to make both angle_from and angle_to variables global at the top of our script. Also note that you can store them in other nodes and access them using ``get_node()``."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:397
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:398
 msgid "We make these values change in the _process(delta) function."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:399
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:400
 msgid "We also increment our angle_from and angle_to values here. However, we must not forget to ``wrap()`` the resulting values between 0 and 360°! That is, if the angle is 361°, then it is actually 1°. If you don't wrap these values, the script will work correctly, but the angle values will grow bigger and bigger over time until they reach the maximum integer value Godot can manage (``2^31 - 1``). When this happens, Godot may crash or produce unexpected behavior."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:406
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:407
 msgid "Finally, we must not forget to call the ``queue_redraw()`` function, which automatically calls ``_draw()``. This way, you can control when you want to refresh the frame."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:439
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:440
 msgid "Also, don't forget to modify the ``_draw()`` function to make use of these variables:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:463
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:464
 msgid "Let's run! It works, but the arc is rotating insanely fast! What's wrong?"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:466
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:467
 msgid "The reason is that your GPU is actually displaying the frames as fast as it can. We need to \"normalize\" the drawing by this speed; to achieve that, we have to make use of the ``delta`` parameter of the ``_process()`` function. ``delta`` contains the time elapsed between the two last rendered frames. It is generally small (about 0.0003 seconds, but this depends on your hardware), so using ``delta`` to control your drawing ensures that your program runs at the same speed on everybody's hardware."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:474
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:475
 msgid "In our case, we simply need to multiply our ``rotation_angle`` variable by ``delta`` in the ``_process()`` function. This way, our 2 angles will be increased by a much smaller value, which directly depends on the rendering speed."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:508
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:509
 msgid "Let's run again! This time, the rotation displays fine!"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:511
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:512
 msgid "Antialiased drawing"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:513
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:514
 msgid "Godot offers method parameters in :ref:`draw_line<class_CanvasItem_method_draw_line>` to enable antialiasing, but not all custom drawing methods offer this ``antialiased`` parameter."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:517
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:518
 msgid "For custom drawing methods that don't provide an ``antialiased`` parameter, you can enable 2D MSAA instead, which affects rendering in the entire viewport. This provides high-quality antialiasing, but a higher performance cost and only on specific elements. See :ref:`doc_2d_antialiasing` for more information."
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:523
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:524
 msgid "Tools"
 msgstr ""
 
-#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:525
+#: ../../docs/tutorials/2d/custom_drawing_in_2d.rst:526
 msgid "Drawing your own nodes might also be desired while running them in the editor. This can be used as a preview or visualization of some feature or behavior. See :ref:`doc_running_code_in_the_editor` for more information."
 msgstr ""
 

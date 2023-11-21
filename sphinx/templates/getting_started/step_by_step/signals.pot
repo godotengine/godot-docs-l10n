@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -173,7 +173,7 @@ msgid "Let's use a different node here. Godot has a :ref:`Timer <class_Timer>` n
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:241
-msgid "Head back to the 2D workspace. You can either click the \"2D\" text at the top of the window or press :kbd:`Ctrl + F1` (:kbd:`Alt + 1` on macOS)."
+msgid "Head back to the 2D workspace. You can either click the \"2D\" text at the top of the window or press :kbd:`Ctrl + F1` (:kbd:`Ctrl + Cmd + 1` on macOS)."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:244
@@ -205,7 +205,7 @@ msgid "To connect to a signal via code, you need to call the ``connect()`` metho
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:268
-msgid "We want to connect the signal when the scene is instantiated, and we can do that using the :ref:`Node._ready() <class_Node_method__ready>` built-in function, which is called automatically by the engine when a node is fully instantiated."
+msgid "We want to connect the signal when the scene is instantiated, and we can do that using the :ref:`Node._ready() <class_Node_private_method__ready>` built-in function, which is called automatically by the engine when a node is fully instantiated."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/signals.rst:272

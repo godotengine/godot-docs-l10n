@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,15 +29,15 @@ msgid "Exporting for Android has fewer requirements than compiling Godot for And
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:18
-msgid "Projects written in C# using Godot 4 currently cannot be exported to Android. To use C# on Android, use Godot 3 instead."
+msgid "Projects written in C# can be exported to Android as of Godot 4.2, but support is experimental and :ref:`some limitations apply <doc_c_sharp_platforms>`."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:22
-msgid "Install OpenJDK 11"
+msgid "Install OpenJDK 17"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:24
-msgid "Download and install  `OpenJDK 11 <https://adoptium.net/?variant=openjdk11>`__."
+msgid "Download and install `OpenJDK 17 <https://adoptium.net/temurin/releases/?variant=openjdk17>`__."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:27
@@ -109,7 +109,7 @@ msgid "If you can't find it or need to generate one, the keytool command from th
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:70
-msgid "This will create a ``debug.keystore`` file in your current directory. You should move it to a memorable location such as ``%USERPROFILE%\\.android\\``, because you will need its location in a later step. For more information on ``keytool`` usage, see `this Q&A article <https://godotengine.org/qa/21349/jdk-android-file-missing>`__."
+msgid "This will create a ``debug.keystore`` file in your current directory. You should move it to a memorable location such as ``%USERPROFILE%\\.android\\``, because you will need its location in a later step. For more information on ``keytool`` usage, see `this Q&A article <https://ask.godotengine.org/21349/jdk-android-file-missing>`__."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:74
@@ -273,7 +273,7 @@ msgid "Encryption / Encryption Key"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:194
-msgid "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:195
@@ -281,7 +281,7 @@ msgid "Options / Keystore / Debug"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:196
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:197
@@ -289,7 +289,7 @@ msgid "Options / Keystore / Debug User"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:198
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:199
@@ -297,7 +297,7 @@ msgid "Options / Keystore / Debug Password"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:200
-msgid "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
+msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:201
@@ -305,7 +305,7 @@ msgid "Options / Keystore / Release"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:202
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:203
@@ -313,7 +313,7 @@ msgid "Options / Keystore / Release User"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:204
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:205
@@ -321,7 +321,7 @@ msgid "Options / Keystore / Release Password"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_for_android.rst:206
-msgid "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
+msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

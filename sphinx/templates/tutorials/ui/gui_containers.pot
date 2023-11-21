@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -21,7 +21,7 @@ msgid "Using Containers"
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:8
-msgid ":ref:`Anchors <doc_size_and_anchors>` are an efficient way to handle different aspect ratios for basic multiple resolution handling in GUIs,"
+msgid ":ref:`Anchors <doc_size_and_anchors>` are an efficient way to handle different aspect ratios for basic multiple resolution handling in GUIs."
 msgstr ""
 
 #: ../../docs/tutorials/ui/gui_containers.rst:11
@@ -200,19 +200,51 @@ msgstr ""
 msgid "As in the example above, one of the most common ways to use this container is together with a *VBoxContainer* as child."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_containers.rst:164
+#: ../../docs/tutorials/ui/gui_containers.rst:163
+msgid "AspectRatioContainer"
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_containers.rst:165
+msgid "A container type that arranges its child controls in a way that preserves their proportions automatically when the container is resized. (via :ref:`AspectRatioContainer <class_AspectRatioContainer>`). It has multiple stretch modes, providing options for adjusting the child controls' sizes concerning the container: \"fill,\" \"width control height,\" \"height control width,\" and \"cover.\""
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_containers.rst:173
+msgid "useful when you have a container that needs to be dynamic and responsive to different screen sizes, and you want the child elements to scale proportionally without losing their intended shapes."
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_containers.rst:179
+msgid "FlowContainer"
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_containers.rst:181
+msgid "FlowContainer is a container that arranges its child controls either horizontally or vertically, (via :ref:`HFlowContainer <class_HFlowContainer>` and via :ref:`VFlowContainer <class_VFlowContainer>`). and when the available space runs out, it wraps the children to the next line or column, similar to how text wraps in a book."
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_containers.rst:188
+msgid "useful for creating flexible layouts where the child controls adjust automatically to the available space without overlapping."
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_containers.rst:193
+msgid "CenterContainer"
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_containers.rst:195
+msgid "CenterContainer is a container that automatically keeps all of its child controls centered within it at their minimum size. It ensures that the child controls are always aligned to the center, making it easier to create centered layouts without manual positioning. (via :ref:`CenterContainer <class_CenterContainer>`)."
+msgstr ""
+
+#: ../../docs/tutorials/ui/gui_containers.rst:204
 msgid "SubViewportContainer"
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_containers.rst:166
+#: ../../docs/tutorials/ui/gui_containers.rst:206
 msgid "This is a special control that will only accept a single *Viewport* node as child, and it will display it as if it was an image (via :ref:`SubViewportContainer <class_SubViewportContainer>`)."
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_containers.rst:170
+#: ../../docs/tutorials/ui/gui_containers.rst:210
 msgid "Creating custom Containers"
 msgstr ""
 
-#: ../../docs/tutorials/ui/gui_containers.rst:172
+#: ../../docs/tutorials/ui/gui_containers.rst:212
 msgid "It is possible to create a custom container using a script. Here is an example of a container that fits children to its rect size:"
 msgstr ""
 

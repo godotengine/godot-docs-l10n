@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -132,127 +132,175 @@ msgstr ""
 msgid "**Fade Mode:** Controls how the transition between LOD levels should be performed. See below for details."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:98
+#: ../../docs/tutorials/3d/visibility_ranges.rst:100
 msgid "Fade mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:102
+#: ../../docs/tutorials/3d/visibility_ranges.rst:104
 msgid "The fade mode chosen only has a visible impact if either **Visibility Range > Begin Margin** or **Visibility Range > End Margin** is greater than ``0.0``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:106
+#: ../../docs/tutorials/3d/visibility_ranges.rst:108
 msgid "In the inspector's **Visibility Range** section, there are 3 fade modes to choose from:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:109
+#: ../../docs/tutorials/3d/visibility_ranges.rst:111
 msgid "**Disabled:** Uses hysteresis to switch between LOD levels instantly. This prevents situations where LOD levels are switched back and forth quickly when the player moves forward and then backward at the LOD transition point. The hystereis distance is determined by **Visibility Range > Begin Margin** and **Visibility Range > End Margin**. This mode provides the best performance as it doesn't force rendering to become transparent during the fade transition."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:115
-msgid "**Self:** Uses alpha blending to smoothly fade between LOD levels. The fade transition distance is determined by **Visibility Range > Begin Margin** and **Visibility Range > End Margin**. This mode forces transparent rendering on the object during its fade transition, so it has a performance impact."
+#: ../../docs/tutorials/3d/visibility_ranges.rst:117
+msgid "**Self:** Uses alpha blending to smoothly fade between LOD levels. The node will fade-out itself when reaching the limits of its own visibility range. The fade transition distance is determined by **Visibility Range > Begin Margin** and **Visibility Range > End Margin**. This mode forces transparent rendering on the object during its fade transition, so it has a performance impact."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:119
-msgid "**Dependencies:** This is intended for hierarchical LOD systems, and acts the same as **Self** if visibility ranges are used to perform non-hierarchical LOD."
+#: ../../docs/tutorials/3d/visibility_ranges.rst:122
+msgid "**Dependencies:** Uses alpha blending to smoothly fade between LOD levels. The node will fade-in its dependencies when reaching the limits of its own visibility range. The fade transition distance is determined by **Visibility Range > Begin Margin** and **Visibility Range > End Margin**. This mode forces transparent rendering on the object during its fade transition, so it has a performance impact. This mode is intended for hierarchical LOD systems using :ref:`Visibility parent <doc_visibility_ranges_visibility_parent>`. It acts the same as **Self** if visibility ranges are used to perform non-hierarchical LOD."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:124
-msgid "Configuration tips"
+#: ../../docs/tutorials/3d/visibility_ranges.rst:135
+msgid "Visibility parent"
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:127
-msgid "Use simpler materials at a distance to improve performance"
+#: ../../docs/tutorials/3d/visibility_ranges.rst:137
+msgid "The **Visibility Parent** property makes it easier to set up :abbr:`HLOD (Hierarchical Level of Detail)`. It allows automatically hiding child nodes if its parent is visible given its current visibility range properties."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:129
-msgid "One way to further improve performance is to use simpler materials for distant LOD meshes. While using LOD meshes will reduce the number of vertices that need to be rendered, the per-pixel shading load for materials remains identical. However, per-pixel shading load is regularly a bottleneck on the GPU in complex 3D scenes. One way to reduce this shading load on the GPU is to use simpler materials when they don't make much of a visual difference."
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:136
-msgid "Performance gains when doing so should be carefully measured, as increasing the number of *unique* materials in a scene has a performance cost on its own. Still, using simpler materials for distant LOD meshes can still result in a net performance gain as a result of the fewer per-pixel calculations required."
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:142
-msgid "For example, on the materials used by distant LOD meshes, you can disable expensive material features such as:"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:145
-msgid "Normal Map (especially on mobile platforms)"
+#: ../../docs/tutorials/3d/visibility_ranges.rst:143
+msgid "The target of **Visibility Parent** *must* inherit from :ref:`class_GeometryInstance3D`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/visibility_ranges.rst:146
-msgid "Rim"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:147
-msgid "Clearcoat"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:148
-msgid "Anisotropy"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:149
-msgid "Height"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:150
-msgid "Subsurface Scattering"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:151
-msgid "Back Lighting"
+msgid "Despite its name, the **Visibility Parent** property *can* point to a node that is not a parent of the node in the scene tree. However, it is impossible to point **Visibility Parent** towards a child node, as this creates a dependency cycle which is not supported. You will get an error message in the Output panel if a dependency cycle occurs."
 msgstr ""
 
 #: ../../docs/tutorials/3d/visibility_ranges.rst:152
-msgid "Refraction"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:153
-msgid "Proximity Fade"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:156
-msgid "Use dithering for LOD transitions"
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:158
-msgid "Godot currently only supports alpha-based fading for visibility ranges. You can however use dithering instead by using several different materials for different LOD levels."
+msgid "Given the following scene tree (where all nodes inherit from GeometryInstance3D):"
 msgstr ""
 
 #: ../../docs/tutorials/3d/visibility_ranges.rst:162
-msgid "There are two advantages to using dithering over alpha blending for LOD transitions:"
+msgid "In this example, *BatchOfHouses* is a large mesh designed to represent all child nodes when viewed at a distance. *House1* to *House4* are smaller MeshInstance3Ds representing individual houses. To configure HLOD in this example, we only need to configure two things:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:164
-msgid "Higher performance, as dithering transparency is faster to render compared to alpha blending."
-msgstr ""
-
-#: ../../docs/tutorials/3d/visibility_ranges.rst:166
-msgid "No visual glitches due to :ref:`transparency sorting issues <doc_3d_rendering_limitations_transparency_sorting>` during LOD transitions."
+#: ../../docs/tutorials/3d/visibility_ranges.rst:167
+msgid "Set **Visibility Range Begin** to a number greater than `0.0` so that *BatchOfHouses* only appears when far away enough from the camera. Below this distance, we want *House1* to *House4* to be displayed instead."
 msgstr ""
 
 #: ../../docs/tutorials/3d/visibility_ranges.rst:170
+msgid "On *House1* to *House4*, assign the **Visibility Parent** property to *BatchOfHouses*."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:172
+msgid "This makes it easier to perform further adjustments, as you don't need to adjust the **Visibility Range Begin** of *BatchOfHouses* and **Visibility Range End** of *House1* to *House4*."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:176
+msgid "Fade mode is automatically handled by the **Visibility Parent** property, so that the child nodes only become hidden once the parent node is fully faded out. This is done to minimize visible pop-in. Depending on your :abbr:`HLOD (Hierarchical Level of Detail)` setup, you may want to try both the **Self** and **Dependencies** :ref:`fade modes <doc_visibility_ranges_fade_mode>`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:184
+msgid "Nodes hidden via the **Visible** property are essentially removed from the visibility dependency tree, so dependent instances will not take the hidden node or its ancestors into account."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:188
+msgid "In practice, this means that if the target of the **Visibility Parent** node is hidden by setting its **Visible** property to ``false``, the node will not be hidden according to the **Visibility Range Begin** value specified in the visibility parent."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:194
+msgid "Configuration tips"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:197
+msgid "Use simpler materials at a distance to improve performance"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:199
+msgid "One way to further improve performance is to use simpler materials for distant LOD meshes. While using LOD meshes will reduce the number of vertices that need to be rendered, the per-pixel shading load for materials remains identical. However, per-pixel shading load is regularly a bottleneck on the GPU in complex 3D scenes. One way to reduce this shading load on the GPU is to use simpler materials when they don't make much of a visual difference."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:206
+msgid "Performance gains when doing so should be carefully measured, as increasing the number of *unique* materials in a scene has a performance cost on its own. Still, using simpler materials for distant LOD meshes can still result in a net performance gain as a result of the fewer per-pixel calculations required."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:212
+msgid "For example, on the materials used by distant LOD meshes, you can disable expensive material features such as:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:215
+msgid "Normal Map (especially on mobile platforms)"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:216
+msgid "Rim"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:217
+msgid "Clearcoat"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:218
+msgid "Anisotropy"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:219
+msgid "Height"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:220
+msgid "Subsurface Scattering"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:221
+msgid "Back Lighting"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:222
+msgid "Refraction"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:223
+msgid "Proximity Fade"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:226
+msgid "Use dithering for LOD transitions"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:228
+msgid "Godot currently only supports alpha-based fading for visibility ranges. You can however use dithering instead by using several different materials for different LOD levels."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:232
+msgid "There are two advantages to using dithering over alpha blending for LOD transitions:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:234
+msgid "Higher performance, as dithering transparency is faster to render compared to alpha blending."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:236
+msgid "No visual glitches due to :ref:`transparency sorting issues <doc_3d_rendering_limitations_transparency_sorting>` during LOD transitions."
+msgstr ""
+
+#: ../../docs/tutorials/3d/visibility_ranges.rst:240
 msgid "The downside of dithering is that a \"noisy\" pattern is visible during LOD fade transitions. This may not be as noticeable at higher viewport resolutions or when temporal antialiasing is enabled."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:174
+#: ../../docs/tutorials/3d/visibility_ranges.rst:244
 msgid "Also, as distance fade in BaseMaterial3D only supports fading up close *or* fading when far away, this setup is best used with only two LODs as part of the setup."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:178
+#: ../../docs/tutorials/3d/visibility_ranges.rst:248
 msgid "Ensure **Begin Margin** and **End Margin** is set to ``0.0`` on both MeshInstance3D nodes, as hysteresis or alpha fade are not desired here."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:180
+#: ../../docs/tutorials/3d/visibility_ranges.rst:250
 msgid "On both MeshInstance3D nodes, *decrease* **Begin** by the desired fade transition distance and *increase* **End** by the same distance. This is required for the dithering transition to actually be visible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:183
+#: ../../docs/tutorials/3d/visibility_ranges.rst:253
 msgid "On the MeshInstance3D that is displayed up close, edit its material in the inspector. Set its **Distance Fade** mode to **Object Dither**. Set **Min Distance** to the same value as the visibility range **End**. Set **Max Distance** to the same value *minus* the fade transition distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/visibility_ranges.rst:187
+#: ../../docs/tutorials/3d/visibility_ranges.rst:257
 msgid "On the MeshInstance3D that is displayed far away, edit its material in the inspector. Set its **Distance Fade** mode to **Object Dither**. Set **Min Distance** to the same value as the visibility range **Begin**. Set **Max Distance** to the same value *plus* the fade transition distance."
 msgstr ""
 

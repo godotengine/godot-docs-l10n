@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "Amplify"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:19
-msgid "Amplify changes the amplitude of the signal. Some care needs to be taken. Setting the level too high can make the sound clip, which is usually undesirable."
+msgid "Amplify changes the volume of the signal. Some care needs to be taken, though: setting the level too high can make the sound digitally clip, which can produce unpleasant crackles and pops."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:24
@@ -57,183 +57,203 @@ msgid "Chorus"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:42
-msgid "The Chorus effect duplicates the incoming audio, delays the duplicate slightly and uses an LFO to continuously modulate the pitch of the duplicated signal before mixing the duplicated signal(s) and the original together again. This creates a shimmering effect and adds stereo width to the sound."
+msgid "As the name of the effect implies, the Chorus effect makes a single audio sample sound like an entire chorus. It does this by duplicating a signal and very slightly altering the timing and pitch of each duplicate, and varying that over time via an LFO (low frequency oscillator). The duplicate(s) are then mixed back together with the original signal, producing a lush, wide, and large sound. Although chorus is traditionally used for voices, it can be desirable with almost any type of sound."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:48
+#: ../../docs/tutorials/audio/audio_effects.rst:51
 msgid "Compressor"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:50
-msgid "A dynamic range compressor automatically attenuates the level of the incoming signal when its amplitude exceeds a certain threshold. The level of attenuation applied is proportional to how far the incoming audio exceeds the threshold. The compressor's Ratio parameter controls the degree of attenuation. One of the main uses of a compressor is to reduce the dynamic range of signals with very loud and quiet parts. Reducing the dynamic range of a signal can make it easier to mix."
-msgstr ""
-
-#: ../../docs/tutorials/audio/audio_effects.rst:58
-msgid "The compressor has many uses. For example:"
-msgstr ""
-
-#: ../../docs/tutorials/audio/audio_effects.rst:60
-msgid "It can be used in the Master bus to compress the whole output."
+#: ../../docs/tutorials/audio/audio_effects.rst:53
+msgid "A dynamic range compressor automatically attenuates (ducks) the level of the incoming signal when its amplitude exceeds a certain threshold. The level of attenuation applied is proportional to how far the incoming audio exceeds the threshold. The compressor's Ratio parameter controls the degree of attenuation. One of the main uses of a compressor is to reduce the dynamic range of signals with very loud and quiet parts. Reducing the dynamic range of a signal can make it fit more comfortably in a mix."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:61
+msgid "The compressor has many uses. For example:"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:63
+msgid "It can be used in the Master bus to compress the whole output prior to being hit by a limiter, making the effect of the limiter much more subtle."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:64
 msgid "It can be used in voice channels to ensure they sound as even as possible."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:62
-msgid "It can be *sidechained*. This means it can reduce the sound level of one signal using the level of another audio bus for threshold detection. This technique is very common in video game mixing to \"duck\" the level of music or sound effects when voices need to be heard."
+#: ../../docs/tutorials/audio/audio_effects.rst:65
+msgid "It can be *sidechained* by another sound source. This means it can reduce the sound level of one signal using the level of another audio bus for threshold detection. This technique is very common in video game mixing to \"duck\" the level of music or sound effects when in-game or multiplayer voices need to be fully audible."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:66
+#: ../../docs/tutorials/audio/audio_effects.rst:69
 msgid "It can accentuate transients by using a slower attack. This can make sound effects more punchy."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:71
-msgid "If your goal is to prevent a signal from exceeding a given amplitude altogether, rather than to reduce the dynamic range of the signal, a :ref:`limiter <doc_audio_buses_limiter>` is likely a better choice than a compressor."
+#: ../../docs/tutorials/audio/audio_effects.rst:74
+msgid "If your goal is to prevent a signal from exceeding a given amplitude altogether, rather than to reduce the dynamic range of the signal, a :ref:`limiter <doc_audio_buses_limiter>` is likely a better choice than a compressor for this purpose. However, applying compression before a limiter is still good practice."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:78
+#: ../../docs/tutorials/audio/audio_effects.rst:81
 msgid "Delay"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:80
-msgid "Adds an \"echo\" effect with a feedback loop. It can be used together with *Reverb* to simulate wide rooms, canyons, etc. where sound bounces are far apart."
+#: ../../docs/tutorials/audio/audio_effects.rst:83
+msgid "Digital delay essentially duplicates a signal and repeats it at a specified speed with a volume level that decays for each repeat. Delay is great for simulating the acoustic space of a canyon or large room, where sound bounces have a lot of *delay* between their repeats. This is in contrast to reverb, which has a more natural and blurred sound to it. Using this in conjunction with reverb can create very natural sounding environments!"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:85
+#: ../../docs/tutorials/audio/audio_effects.rst:91
 msgid "Distortion"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:87
-msgid "Makes the sound distorted. Godot offers several types of distortion: *overdrive*, *tan* and *bit crushing*. Distortion can be used to simulate sound coming through a low-quality speaker or device."
+#: ../../docs/tutorials/audio/audio_effects.rst:93
+msgid "Makes the sound distorted. Godot offers several types of distortion:"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:92
-msgid "EQ"
+#: ../../docs/tutorials/audio/audio_effects.rst:95
+msgid "*Overdrive* sounds like a guitar distortion pedal or megaphone. Sounds distorted with this sound like they're coming through a low-quality speaker or device."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:94
-msgid "EQ is what all other equalizers inherit from. It can be extended with Custom scripts to create an equalizer with a custom number of bands."
+#: ../../docs/tutorials/audio/audio_effects.rst:97
+msgid "*Tan* sounds like another interesting flavor of overdrive."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:98
-msgid "EQ6, EQ10, EQ21"
+msgid "*Bit crushing* clamps the amplitude of the signal, making it sound flat and crunchy."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:100
-msgid "Godot provides three equalizers with different numbers of bands. An equalizer on the Master bus can be useful to cut frequencies that the device's speakers can't reproduce well (e.g. a mobile phone's speakers won't reproduce bass content well). The equalizer effect can be disabled when headphones are plugged in."
+msgid "All three types of distortion can add higher frequency sounds to an original sound, making it stand out better in a mix."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:106
-msgid "Filter"
+#: ../../docs/tutorials/audio/audio_effects.rst:103
+msgid "EQ"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:108
-msgid "Filter is what all other filters inherit from and should not be used directly."
+#: ../../docs/tutorials/audio/audio_effects.rst:105
+msgid "EQ is what all other equalizers inherit from. It can be extended with Custom scripts to create an equalizer with a custom number of bands."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:109
+msgid "EQ6, EQ10, EQ21"
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:111
-msgid "HighPassFilter"
+msgid "Godot provides three equalizers with different numbers of bands, which are represented in the title (6, 10, and 21 bands, respectively). An equalizer on the Master bus can be useful for cutting low and high frequencies that the device's speakers can't reproduce well. For example, phone or tablet speakers usually don't reproduce low frequency sounds well, and could make a limiter or compressor attenuate sounds that aren't even audible to the user anyway."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:113
-msgid "Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used to reduce the bass content of a signal."
+#: ../../docs/tutorials/audio/audio_effects.rst:119
+msgid "Note: The equalizer effect can be disabled when headphones are plugged in, giving the user the best of both worlds."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:118
-msgid "HighShelfFilter"
+#: ../../docs/tutorials/audio/audio_effects.rst:122
+msgid "Filter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:120
-msgid "Reduces all frequencies above a specific *Cutoff* frequency."
-msgstr ""
-
-#: ../../docs/tutorials/audio/audio_effects.rst:125
-msgid "Limiter"
+#: ../../docs/tutorials/audio/audio_effects.rst:124
+msgid "Filter is what all other filters inherit from and should not be used directly."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:127
-msgid "A limiter is similar to a compressor, but it's less flexible and designed to prevent a signal's amplitude exceeding a given dB threshold. Adding a limiter to the Master bus is a safeguard against clipping."
+msgid "HighPassFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:132
-msgid "LowPassFilter"
+#: ../../docs/tutorials/audio/audio_effects.rst:129
+msgid "Cuts frequencies below a specific *Cutoff* frequency. HighPassFilter is used to reduce the bass content of a signal."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:134
+msgid "HighShelfFilter"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:136
+msgid "Reduces all frequencies above a specific *Cutoff* frequency."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:141
+msgid "Limiter"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:143
+msgid "A limiter is similar to a compressor, but it's less flexible and designed to prevent a signal's amplitude exceeding a given dB threshold. Adding a limiter to the final point of the Master bus is good practice, as it offers an easy safeguard against clipping."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:148
+msgid "LowPassFilter"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:150
 msgid "Cuts frequencies above a specific *Cutoff* frequency and can also resonate (boost frequencies close to the *Cutoff* frequency). Low pass filters can be used to simulate \"muffled\" sound. For instance, underwater sounds, sounds blocked by walls, or distant sounds."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:140
+#: ../../docs/tutorials/audio/audio_effects.rst:156
 msgid "LowShelfFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:142
+#: ../../docs/tutorials/audio/audio_effects.rst:158
 msgid "Reduces all frequencies below a specific *Cutoff* frequency."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:145
+#: ../../docs/tutorials/audio/audio_effects.rst:161
 msgid "NotchFilter"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:147
+#: ../../docs/tutorials/audio/audio_effects.rst:163
 msgid "The opposite of the BandPassFilter, it removes a band of sound from the frequency spectrum at a given *Cutoff* frequency."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:151
+#: ../../docs/tutorials/audio/audio_effects.rst:167
 msgid "Panner"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:153
-msgid "The Panner allows the stereo balance of a signal to be adjusted between the left and right channels (wear headphones to audition this effect)."
-msgstr ""
-
-#: ../../docs/tutorials/audio/audio_effects.rst:157
-msgid "Phaser"
-msgstr ""
-
-#: ../../docs/tutorials/audio/audio_effects.rst:159
-msgid "It probably does not make much sense to explain that this effect is formed by two signals being dephased and cancelling each other out. You can make a Darth Vader voice with it, or jet-like sounds."
-msgstr ""
-
-#: ../../docs/tutorials/audio/audio_effects.rst:164
-msgid "PitchShift"
-msgstr ""
-
-#: ../../docs/tutorials/audio/audio_effects.rst:166
-msgid "This effect allows the adjustment of the signal's pitch independently of its speed. All frequencies can be increased/decreased with minimal effect on transients. PitchShift can be useful to create unusually high or deep voices."
-msgstr ""
-
-#: ../../docs/tutorials/audio/audio_effects.rst:171
-msgid "Record"
+#: ../../docs/tutorials/audio/audio_effects.rst:169
+msgid "The Panner allows the stereo balance of a signal to be adjusted between the left and right channels. Headphones are recommended when configuring in this effect."
 msgstr ""
 
 #: ../../docs/tutorials/audio/audio_effects.rst:173
+msgid "Phaser"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:175
+msgid "This effect is formed by de-phasing two duplicates of the same sound so they cancel each other out in an interesting way. Phaser produces a pleasant whooshing sound that moves back and forth through the audio spectrum, and can be a great way to create sci-fi effects or Darth Vader-like voices."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:182
+msgid "PitchShift"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:184
+msgid "This effect allows the adjustment of the signal's pitch independently of its speed. All frequencies can be increased/decreased with minimal effect on transients. PitchShift can be useful to create unusually high or deep voices. Do note that altering pitch can sound unnatural when pushed outside of a narrow window."
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:191
+msgid "Record"
+msgstr ""
+
+#: ../../docs/tutorials/audio/audio_effects.rst:193
 msgid "The Record effect allows the user to record sound from a microphone."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:176
+#: ../../docs/tutorials/audio/audio_effects.rst:196
 msgid "Reverb"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:178
+#: ../../docs/tutorials/audio/audio_effects.rst:198
 msgid "Reverb simulates rooms of different sizes. It has adjustable parameters that can be tweaked to obtain the sound of a specific room. Reverb is commonly outputted from :ref:`Area3Ds <class_Area3D>` (see :ref:`Reverb buses <doc_audio_streams_reverb_buses>`), or to apply a \"chamber\" feel to all sounds."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:185
+#: ../../docs/tutorials/audio/audio_effects.rst:205
 msgid "SpectrumAnalyzer"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:187
-msgid "This effect doesn't alter audio, instead, you add this effect to buses you want a spectrum analysis of. This would typically be used for audio visualization. A demo project using this can be found `here <https://github.com/godotengine/godot-demo-projects/tree/master/audio/spectrum>`__."
+#: ../../docs/tutorials/audio/audio_effects.rst:207
+msgid "This effect doesn't alter audio, instead, you add this effect to buses you want a spectrum analysis of. This would typically be used for audio visualization. Visualizing voices can be a great way to draw attention to them without just increasing their volume. A demo project using this can be found `here <https://github.com/godotengine/godot-demo-projects/tree/master/audio/spectrum>`__."
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:192
+#: ../../docs/tutorials/audio/audio_effects.rst:214
 msgid "StereoEnhance"
 msgstr ""
 
-#: ../../docs/tutorials/audio/audio_effects.rst:194
-msgid "This effect uses a few algorithms to enhance a signal's stereo spectrum."
+#: ../../docs/tutorials/audio/audio_effects.rst:216
+msgid "This effect uses a few algorithms to enhance a signal's stereo width."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

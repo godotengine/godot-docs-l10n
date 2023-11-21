@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/navigation/navigation_debug_tools.rst:4
-msgid "Navigation Debug Tools"
+msgid "Navigation debug tools"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_debug_tools.rst:8
@@ -25,82 +25,82 @@ msgid "The debug tools, properties and functions are only available in Godot deb
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_debug_tools.rst:12
-msgid "Enabling debug navigation"
+msgid "Enabling navigation debug"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_debug_tools.rst:14
-msgid "The navigation debug visualization is enabled by default inside the Editor. To visualize navigation meshes and connections also at runtime enable the option ``Visible Navigation`` in the editor debug menu."
+msgid "The navigation debug visualizations are enabled by default inside the editor. To visualize navigation meshes and connections at runtime too, enable the option **Visible Navigation** in the editor **Debug** menu."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:20
-msgid "In Godot debug builds the navigation debug can also be toggled on the NavigationServers from scripts."
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:19
+msgid "In Godot debug builds the navigation debug can also be toggled through the NavigationServer singletons from scripts."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:29
-msgid "Debug navigation settings"
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:28
+msgid "Navigation debug settings"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:31
-msgid "The appearance of navigation debug can be change in the ProjectSettings under ``debug/shapes/navigation``. Certain debug features can also be enabled or disabled at will but may require a scene restart to apply."
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:30
+msgid "The appearance of navigation debug can be changed in the ProjectSettings under ``debug/shapes/navigation``. Certain debug features can also be enabled or disabled at will but may require a scene restart to take effect."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:37
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:36
 msgid "Debug navigation mesh polygons"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:39
-msgid "If ``enable_edge_lines`` is enabled the edges of navigation mesh polygons will be highlighted. If ``enable_edge_lines_xray`` is also enabled the edges of navigationmeshes will be visible through geometry."
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:38
+msgid "If ``enable_edge_lines`` is enabled, the edges of navigation mesh polygons will be highlighted. If ``enable_edge_lines_xray`` is also enabled, the edges of navigation meshes will be visible through geometry."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:42
-msgid "if ``enable_geometry_face_random_color`` is enabled each navigation mesh face receives a random color that is mixed with the main color from ``geometry_face_color``."
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:41
+msgid "If ``enable_geometry_face_random_color`` is enabled, the color of each navigation mesh face will be mixed with a random color that is itself mixed with the color specified in ``geometry_face_color``."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:49
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:46
 msgid "Debug edge connections"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:51
-msgid "Different navigation meshes connected within ``edge_connection_margin`` distance are overlaid. The color of the overlay is controlled with the navigation debug ``edge_connection_color``. The connections can be made visible through geometry with the navigation debug ``enable_edge_connections_xray`` property."
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:48
+msgid "When two navigation meshes are connected within ``edge_connection_margin`` distance, the connection is overlaid. The color of the overlay is controlled by ``edge_connection_color``. The connections can be made visible through geometry with ``enable_edge_connections_xray``."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:61
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:58
 msgid "Edge connections are only visible when the NavigationServer is active."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:64
-msgid "Debug Performance"
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:61
+msgid "Debug performance"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:66
-msgid "To measure NavigationServer performance a dedicated monitor exists that can be found within the Editor Debugger under `Debugger->Monitors->NavigationProcess`."
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:63
+msgid "To measure NavigationServer performance a dedicated monitor exists that can be found within the Editor Debugger under *Debugger->Monitors->Navigation Process*."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:67
+msgid "Navigation Process shows how long the NavigationServer spends updating its internals this update frame in milliseconds. Navigation Process works similar to Process for visual frame rendering and Physics Process for collision and fixed updates."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_debug_tools.rst:70
-msgid "NavigationProcess shows how long the NavigationServer spends updating its internals this update frame in milliseconds. NavigationProcess works similar to Process for visual frame rendering and PhysicsProcess for collision and fixed updates."
+msgid "Navigation Process accounts for all updates to **navigation maps**, **navigation regions** and **navigation agents** as well as all the **avoidance calculations** for the update frame."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:73
-msgid "NavigationProcess accounts for all updates to ``navigation maps``, ``navigation regions`` and ``navigation agents`` as well as all the ``avoidance calculations`` for the update frame."
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:74
+msgid "Navigation Process does NOT include pathfinding performance cause pathfinding operates on the navigation map data independently from the server process update."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:77
-msgid "NavigationProcess does NOT include pathfinding performance cause pathfinding operates on the navigation map data independently from the server process update."
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:76
+msgid "Navigation Process should be in general kept as low and as stable as possible for runtime performance to avoid frame rate issues. Note that since the NavigationServer process update happens in the middle of the physics update an increase in Navigation Process will automatically increase Physics Process by the same amount."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_debug_tools.rst:79
-msgid "NavigationProcess should be in general kept as low and as stable as possible for runtime performance to avoid frame rate issues. Note that since the NavigationServer process update happens in the middle of the physics update an increase in NavigationProcess will automatically increase PhysicsProcess by the same amount."
-msgstr ""
-
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:82
 msgid "Navigation also provides more detailed statistics about the current navigation related objects and navigation map composition on the NavigationServer."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:86
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:83
 msgid "Navigation statistics shown here can not be judged as good or bad for performance as it depends entirely on the project what can be considered as reasonable or horribly excessive."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:88
+#: ../../docs/tutorials/navigation/navigation_debug_tools.rst:85
 msgid "Navigation statistics help with identifying performance bottlenecks that are less obvious because the source might not always have a visible representation. E.g. pathfinding performance issues created by overly detailed navigation meshes with thousand of edges / polygons or problems caused by procedural navigation gone wrong."
 msgstr ""
 

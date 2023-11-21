@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -149,107 +149,183 @@ msgid "See :ref:`doc_viewports` and the `GUI in 3D demo <https://github.com/godo
 msgstr ""
 
 #: ../../docs/tutorials/animation/playing_videos.rst:120
-msgid "Video decoding conditions and recommended resolutions"
+msgid "Looping a video"
 msgstr ""
 
 #: ../../docs/tutorials/animation/playing_videos.rst:122
+msgid "For looping a video, the **Loop** property can be enabled. This will seamlessly restart the video when it reaches its end."
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:125
+msgid "Note that setting the project setting **Video Delay Compensation** to a non-zero value might cause your loop to not be seamless, because the synchronization of audio and video takes place at the start of each loop causing occasional missed frames. Set **Video Delay Compensation** in your project settings to **0** to avoid frame drop issues."
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:132
+msgid "Video decoding conditions and recommended resolutions"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:134
 msgid "Video decoding is performed on the CPU, as GPUs don't have hardware acceleration for decoding Theora videos. Modern desktop CPUs can decode Ogg Theora videos at 1440p @ 60 FPS or more, but low-end mobile CPUs will likely struggle with high-resolution videos."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:127
+#: ../../docs/tutorials/animation/playing_videos.rst:139
 msgid "To ensure your videos decode smoothly on varied hardware:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:129
+#: ../../docs/tutorials/animation/playing_videos.rst:141
 msgid "When developing games for desktop platforms, it's recommended to encode in 1080p at most (preferably at 30 FPS). Most people are still using 1080p or lower resolution displays, so encoding higher-resolution videos may not be worth the increased file size and CPU requirements."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:133
+#: ../../docs/tutorials/animation/playing_videos.rst:145
 msgid "When developing games for mobile or web platforms, it's recommended to encode in 720p at most (preferably at 30 FPS or even lower). The visual difference between 720p and 1080p videos on a mobile device is usually not that noticeable."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:139
+#: ../../docs/tutorials/animation/playing_videos.rst:151
 msgid "Playback limitations"
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:141
+#: ../../docs/tutorials/animation/playing_videos.rst:153
 msgid "There are several limitations with the current implementation of video playback in Godot:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:143
+#: ../../docs/tutorials/animation/playing_videos.rst:155
 msgid "Seeking a video to a certain point is not supported."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:144
+#: ../../docs/tutorials/animation/playing_videos.rst:156
 msgid "Changing playback speed is not supported. VideoStreamPlayer also won't follow :ref:`Engine.time_scale<class_Engine_property_time_scale>`."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:146
-msgid "Looping is not supported, but you can connect a VideoStreamPlayer's :ref:`finished <class_VideoStreamPlayer_signal_finished>` signal to a function that plays the video again."
-msgstr ""
-
-#: ../../docs/tutorials/animation/playing_videos.rst:149
+#: ../../docs/tutorials/animation/playing_videos.rst:158
 msgid "Streaming a video from a URL is not supported."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:154
+#: ../../docs/tutorials/animation/playing_videos.rst:163
 msgid "Recommended Theora encoding settings"
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:156
+#: ../../docs/tutorials/animation/playing_videos.rst:165
 msgid "A word of advice is to **avoid relying on built-in Ogg Theora exporters** (most of the time). There are 2 reasons you may want to favor using an external program to encode your video:"
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:159
+#: ../../docs/tutorials/animation/playing_videos.rst:168
 msgid "Some programs such as Blender can render to Ogg Theora. However, the default quality presets are usually very low by today's standards. You may be able to increase the quality options in the software you're using, but you may find the output quality to remain less than ideal (given the increased file size). This usually means that the software only supports encoding to constant bit rate (CBR), instead of variable bit rate (VBR). VBR encoding should be preferred in most scenarios as it provides a better quality to file size ratio."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:167
+#: ../../docs/tutorials/animation/playing_videos.rst:176
 msgid "Some other programs can't render to Ogg Theora at all."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:169
+#: ../../docs/tutorials/animation/playing_videos.rst:178
 msgid "In this case, you can **render the video to an intermediate high-quality format** (such as a high-bitrate H.264 video) then re-encode it to Ogg Theora. Ideally, you should use a lossless or uncompressed format as an intermediate format to maximize the quality of the output Ogg Theora video, but this can require a lot of disk space."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:175
+#: ../../docs/tutorials/animation/playing_videos.rst:184
 msgid "`HandBrake <https://handbrake.fr/>`__ (GUI) and `FFmpeg <https://ffmpeg.org/>`__ (CLI) are popular open source tools for this purpose. FFmpeg has a steeper learning curve, but it's more powerful."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:179
+#: ../../docs/tutorials/animation/playing_videos.rst:188
 msgid "Here are example FFmpeg commands to convert a MP4 video to Ogg Theora. Since FFmpeg supports a lot of input formats, you should be able to use the commands below with almost any input video format (AVI, MOV, WebM, …)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:185
+#: ../../docs/tutorials/animation/playing_videos.rst:194
 msgid "Make sure your copy of FFmpeg is compiled with libtheora and libvorbis support. You can check this by running ``ffmpeg`` without any arguments, then looking at the ``configuration:`` line in the command output."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:190
+#: ../../docs/tutorials/animation/playing_videos.rst:199
 msgid "Balancing quality and file size"
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:192
+#: ../../docs/tutorials/animation/playing_videos.rst:201
 msgid "The **video quality** level (``-q:v``) must be between ``1`` and ``10``. Quality ``6`` is a good compromise between quality and file size. If encoding at a high resolution (such as 1440p or 4K), you will probably want to decrease ``-q:v`` to ``5`` to keep file sizes reasonable. Since pixel density is higher on a 1440p or 4K video, lower quality presets at higher resolutions will look as good or better compared to low-resolution videos."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:199
+#: ../../docs/tutorials/animation/playing_videos.rst:208
 msgid "The **audio quality** level (``-q:a``) must be between ``-1`` and ``10``. Quality ``6`` provides a good compromise between quality and file size. In contrast to video quality, increasing audio quality doesn't increase the output file size nearly as much. Therefore, if you want the cleanest audio possible, you can increase this to ``9`` to get *perceptually lossless* audio. This is especially valuable if your input file already uses lossy audio compression. Higher quality audio does increase the CPU usage of the decoder, so it might lead to audio dropouts in case of high system load. See `this page <https://wiki.hydrogenaud.io/index.php?title=Recommended_Ogg_Vorbis#Recommended_Encoder_Settings>`__ for a table listing Ogg Vorbis audio quality presets and their respective variable bitrates."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:212
+#: ../../docs/tutorials/animation/playing_videos.rst:221
 msgid "FFmpeg: Convert while preserving original video resolution"
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:214
+#: ../../docs/tutorials/animation/playing_videos.rst:223
 msgid "The following command converts the video while keeping its original resolution. The video and audio's bitrate will be variable to maximize quality while saving space in parts of the video/audio that don't require a high bitrate (such as static scenes)."
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:224
+#: ../../docs/tutorials/animation/playing_videos.rst:233
 msgid "FFmpeg: Resize the video then convert it"
 msgstr ""
 
-#: ../../docs/tutorials/animation/playing_videos.rst:226
+#: ../../docs/tutorials/animation/playing_videos.rst:235
 msgid "The following command resizes a video to be 720 pixels tall (720p), while preserving its existing aspect ratio. This helps decrease the file size significantly if the source is recorded at a higher resolution than 720p:"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:247
+msgid "Chroma Key Videos"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:249
+msgid "Chroma key, commonly known as the \"green screen\" or \"blue screen\" effect, allows you to remove a specific color from an image or video and replace it with another background. This effect is widely used in video production to composite different elements together seamlessly."
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:253
+msgid "We will achieve the chroma key effect by writing a custom shader in GDScript and using a `VideoStreamPlayer` node to display the video content."
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:256
+msgid "Scene Setup"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:258
+msgid "Ensure that the scene contains a `VideoStreamPlayer` node to play the video and a `Control` node to hold the UI elements for controlling the chroma key effect."
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:263
+msgid "Writing the Custom Shader"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:265
+msgid "To implement the chroma key effect, follow these steps:"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:267
+msgid "Select the `VideoStreamPlayer` node in the scene and go to its properties. Under `CanvasItem > Material`, create a new shader named \"ChromaKeyShader.gdshader.\""
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:269
+msgid "In the \"ChromaKeyShader.gdshader\" file, write the custom shader code as shown below:"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:300
+msgid "The shader uses the distance calculation to identify pixels close to the chroma key color and discards them, effectively removing the selected color. Pixels that are slightly further away from the chroma key color are faded based on the fade_factor, blending them smoothly with the surrounding colors. This process creates the desired chroma key effect, making it appear as if the background has been replaced with another image or video."
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:306
+msgid "The code above represents a simple demonstration of the Chroma Key shader, and users can customize it according to their specific requirements."
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:310
+msgid "UI Controls"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:312
+msgid "To allow users to manipulate the chroma key effect in real-time, we created sliders in the `Control` node. The `Control` node's script contains the following functions:"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:334
+msgid "also make sure that the range of the sliders are appropriate, our settings are :"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:339
+msgid "Signal Handling"
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:341
+msgid "Connect the appropriate signal from the UI elements to the `Control` node's script. you created in the `Control` node's script to control the chroma key effect. These signal handlers will update the shader's uniform variables in response to user input."
+msgstr ""
+
+#: ../../docs/tutorials/animation/playing_videos.rst:346
+msgid "Save and run the scene to see the chroma key effect in action! With the provided UI controls, you can now adjust the chroma key color, pickup range, and fade amount in real-time, achieving the desired chroma key functionality for your video content."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,7 +29,7 @@ msgid "2D and 3D version of NavigationAgents are available as :ref:`NavigationAg
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:15
-msgid "New NavigationAgent nodes will automatically join the default navigation map on the World2D/World3D."
+msgid "New NavigationAgent nodes will automatically join the default navigation map on the :ref:`World2D<class_World2D>`/:ref:`World3D<class_World3D>`."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:17
@@ -89,7 +89,7 @@ msgid "NavigationAgents have their own internal logic to proceed with the curren
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:52
-msgid "The ``get_next_path_position()`` function is responsible for updating many of the agent's internal states and properties. The function should be repeatedly called `once` every ``physics_process`` until ``is_navigation_finished()`` tells that the path is finished. The function should not be called after the target position or path end has been reached as it can make the agent jitter in place due to the repeated path updates. Always check very early in script with ``is_navigation_finished()`` if the path is already finished."
+msgid "The ``get_next_path_position()`` function is responsible for updating many of the agent's internal states and properties. The function should be repeatedly called *once* every ``physics_process`` until ``is_navigation_finished()`` tells that the path is finished. The function should not be called after the target position or path end has been reached as it can make the agent jitter in place due to the repeated path updates. Always check very early in script with ``is_navigation_finished()`` if the path is already finished."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:58
@@ -133,7 +133,7 @@ msgid "The path is returned empty"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:77
-msgid "If an agent queries a path before the navigation map synchronisation, e.g. in a _ready() function, the path might return empty. In this case the get_next_path_position() function will return the same position as the agent parent node and the agent will consider the path end reached. This is fixed by making a deferred call or using a callback e.g. waiting for the navigation map changed signal."
+msgid "If an agent queries a path before the navigation map synchronisation, e.g. in a ``_ready()`` function, the path might return empty. In this case the ``get_next_path_position()`` function will return the same position as the agent parent node and the agent will consider the path end reached. This is fixed by making a deferred call or using a callback e.g. waiting for the navigation map changed signal."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:80
@@ -173,7 +173,7 @@ msgid "In order for NavigationAgents to use the avoidance feature the ``enable_a
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:97
-msgid "The velocity_computed signal of the NavigationAgent node must be connected to receive the ``safe_velocity`` calculation result."
+msgid "The ``velocity_computed`` signal of the NavigationAgent node must be connected to receive the safe velocity calculation result."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:101
@@ -253,7 +253,7 @@ msgid "Actor as Node3D"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:182
-msgid "This script adds basic navigation movement to a Node3D with a NavigationAgent3D child node."
+msgid "This script adds basic navigation movement to a :ref:`Node3D <class_Node3D>` with a :ref:`NavigationAgent3D <class_NavigationAgent3D>` child node."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:215
@@ -261,7 +261,7 @@ msgid "Actor as CharacterBody3D"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:217
-msgid "This script adds basic navigation movement to a CharacterBody3D with a NavigationAgent3D child node."
+msgid "This script adds basic navigation movement to a :ref:`CharacterBody3D <class_CharacterBody3D>` with a :ref:`NavigationAgent3D <class_NavigationAgent3D>` child node."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:249
@@ -269,7 +269,7 @@ msgid "Actor as RigidBody3D"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationagents.rst:251
-msgid "This script adds basic navigation movement to a RigidBody3D with a NavigationAgent3D child node."
+msgid "This script adds basic navigation movement to a :ref:`RigidBody3D <class_RigidBody3D>` with a :ref:`NavigationAgent3D <class_NavigationAgent3D>` child node."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

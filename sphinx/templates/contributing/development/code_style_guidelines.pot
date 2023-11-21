@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,11 +53,11 @@ msgid "The rules used by clang-format are outlined in the `.clang-format <https:
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:32
-msgid "As long as you ensure that your style matches the surrounding code and that you not introducing trailing whitespace or space-based indentation, you should be fine. If you plan to contribute regularly however, we strongly advise that you setup clang-format locally to check and automatically fix all your commits."
+msgid "As long as you ensure that your style matches the surrounding code and that you not introducing trailing whitespace or space-based indentation, you should be fine. If you plan to contribute regularly, however, we strongly advise that you set up clang-format locally to check and automatically fix all your commits."
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:37
-msgid "Godot's code style should *not* be applied to third-party code, i.e. that is included in Godot's source tree but was not written specifically for our project. Such code usually come from different upstream projects with their own style guides (or lack thereof), and don't want to introduce differences that would make syncing with upstream repositories harder."
+msgid "Godot's code style should *not* be applied to third-party code, i.e. that is included in Godot's source tree but was not written specifically for our project. Such code usually comes from different upstream projects with their own style guides (or lack thereof), and don't want to introduce differences that would make syncing with upstream repositories harder."
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:44
@@ -103,7 +103,7 @@ msgid "Manual usage"
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:84
-msgid "You can apply clang-format manually one or more files with the following command:"
+msgid "You can apply clang-format manually for one or more files with the following command:"
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:91
@@ -124,7 +124,7 @@ msgid "For ease of use, we provide a pre-commit hook for Git that will run clang
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:105
-msgid "This \"hook\" is a script which can be found in ``misc/hooks``, refer to that folder's README.md for installation instructions."
+msgid "This \"hook\" is a script that can be found in ``misc/hooks``, refer to that folder's README.md for installation instructions."
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:108
@@ -136,7 +136,7 @@ msgid "IDE plugin"
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:116
-msgid "Most IDEs or code editors have beautifier plugins that can be configured to run clang-format automatically, for example each time you save a file."
+msgid "Most IDEs or code editors have beautifier plugins that can be configured to run clang-format automatically, for example, each time you save a file."
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:119
@@ -152,7 +152,7 @@ msgid "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/i
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:123
-msgid "Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?itemName=LLVMExtensions.ClangFormat>`__"
+msgid "Visual Studio: `Clang Power Tools 2022 <https://marketplace.visualstudio.com/items?itemName=caphyon.ClangPowerTools2022>`__"
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:124
@@ -164,7 +164,7 @@ msgid "CLion: Starting from version ``2019.1``, no plugin is required. Instead, 
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:128
-msgid "(Pull requests welcome to extend this list with tested plugins.)"
+msgid "(Pull requests are welcome to extend this list with tested plugins.)"
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:133
@@ -264,7 +264,7 @@ msgid "Editor integration"
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:309
-msgid "Many IDEs or code editors have beautifier plugins that can be configured to run black automatically, for example each time you save a file. For details you can check `Black editor integration <https://github.com/psf/black#editor-integration>`__."
+msgid "Many IDEs or code editors have beautifier plugins that can be configured to run black automatically, for example, each time you save a file. For details, you can check `Black editor integration <https://github.com/psf/black#editor-integration>`__."
 msgstr ""
 
 #: ../../docs/contributing/development/code_style_guidelines.rst:314

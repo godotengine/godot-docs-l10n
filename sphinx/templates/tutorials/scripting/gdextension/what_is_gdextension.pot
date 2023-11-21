@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,84 +44,108 @@ msgstr ""
 msgid "They also both allow you to integrate third-party libraries into Godot. The one you should choose depends on your needs."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:25
-msgid "If you notice that specific systems are not accessible via GDExtension but are via custom modules feel free to open an issue on the `godot-cpp repository <https://github.com/godotengine/godot-cpp>`__ to discuss implementation options to expose the missing functionality."
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:27
+msgid "Our long-term goal is that GDExtensions targeting an earlier version of Godot will work in later minor versions, but not vice-versa. For example, a GDExtension targeting Godot 4.2 should work just fine in Godot 4.3, but one targeting Godot 4.3 won't work in Godot 4.2."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:31
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:32
+msgid "However, GDExtension is currently *experimental*, which means that we may break compatibility in order to fix major bugs or include critical features. For example, GDExtensions created for Godot 4.0 aren't compatible with Godot 4.1 (see :ref:`updating_your_gdextension_for_godot_4_1`)."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:38
 msgid "Advantages of GDExtension"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:33
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:40
 msgid "Unlike modules, GDExtension doesn't require compiling the engine's source code, making it easier to distribute your work. It gives you access to most of the API available to GDScript and C#, allowing you to code game logic with full control regarding performance. It's ideal if you need high-performance code you'd like to distribute as an add-on in the :ref:`asset library <doc_what_is_assetlib>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:39
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:46
 msgid "Also:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:41
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:48
 msgid "GDExtension is not limited to C and C++. Thanks to :ref:`third-party bindings <doc_what_is_gdnative_third_party_bindings>`, you can use it with many other languages."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:44
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:51
 msgid "You can use the same compiled GDExtension library in the editor and exported project. With C++ modules, you have to recompile all the export templates you plan to use if you require its functionality at run-time."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:47
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:54
 msgid "GDExtension only requires you to compile your library, not the whole engine. That's unlike C++ modules, which are statically compiled into the engine. Every time you change a module, you need to recompile the engine. Even with incremental builds, this process is slower than using GDExtension."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:53
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:60
 msgid "Advantages of C++ modules"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:55
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:62
 msgid "We recommend :ref:`C++ modules <doc_custom_modules_in_cpp>` in cases where GDExtension isn't enough:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:58
-msgid "C++ modules provide deeper integration into the engine. GDExtension's access is not as deep as static modules"
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:65
+msgid "C++ modules provide deeper integration into the engine. GDExtension's access is not as deep as static modules."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:60
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:67
 msgid "You can use C++ modules to provide additional features in a project without carrying native library files around. This extends to exported projects."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:64
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:72
+msgid "If you notice that specific systems are not accessible via GDExtension but are via custom modules, feel free to open an issue on the `godot-cpp repository <https://github.com/godotengine/godot-cpp>`__ to discuss implementation options for exposing the missing functionality."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:78
 msgid "Supported languages"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:66
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:80
 msgid "The Godot developers officially support the following language bindings for GDExtension:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:69
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:83
 msgid "C++ :ref:`(tutorial) <doc_gdextension_cpp_example>`"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:73
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:87
 msgid "There are no plans to support additional languages with GDExtension officially. That said, the community offers several bindings for other languages (see below)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:79
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:93
 msgid "The bindings below are developed and maintained by the community:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:84
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:98
+msgid "`D <https://github.com/godot-dlang/godot-dlang>`__"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:99
+msgid "`Haxe <https://hxgodot.github.io/>`__"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:100
 msgid "`Rust <https://github.com/godot-rust/gdextension>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:88
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:101
+msgid "`Swift <https://github.com/migueldeicaza/SwiftGodot>`__"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:105
 msgid "Not all bindings mentioned here may be production-ready. Make sure to research options thoroughly before starting a project with one of those. Also, double-check whether the binding is compatible with the Godot version you're using."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:94
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:111
 msgid "Version compatibility"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:96
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:113
 msgid "GDExtension add-ons compiled for a given Godot version are only guaranteed to work with the same minor release series. For example, a GDExtension add-on compiled for Godot 4.0 will only work with Godot 4.0, 4.0.1, 4.0.2. In addition, GDExtension is not compatible with Godot 3.x."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:118
+msgid "GDExtension add-ons are also only compatible with engine builds that use the level of floating-point precision the extension was compiled for. This means that if you use a engine build with double-precision floats, the extension must also be compiled for double-precision floats. See :ref:`doc_large_world_coordinates` for details."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

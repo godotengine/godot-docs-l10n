@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,7 +25,7 @@ msgid "Common Navigation related performance problems can be categorized into th
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_optimizing_performance.rst:10
-msgid "Performance problems with parsing SceneTree nodes for navigation mesh baking."
+msgid "Performance problems with parsing scene tree nodes for navigation mesh baking."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_optimizing_performance.rst:11
@@ -49,7 +49,7 @@ msgid "In the following sections information can be found on how to identify and
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_optimizing_performance.rst:19
-msgid "Performance problems with parsing SceneTree nodes"
+msgid "Performance problems with parsing scene tree nodes"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_optimizing_performance.rst:23
@@ -93,7 +93,7 @@ msgid "Baking navigation meshes at runtime should always be done in a background
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_optimizing_performance.rst:53
-msgid "Complexity of source geometry data parsed from SceneTree nodes has big impact on baking performance as everything needs to be mapped to a grid / voxels. For runtime baking performance the NavigationMesh cell size and cell height should be set as high as possible without causing navigation mesh quality problems for a game. If cell size or cell height is set too low the baking is forced to create an excessive amount of voxels to process the source geometry. If the source geometry spans over a very large game world it is even possible that the baking process runs out off memory in the middle and crashes the game. The partition type can also be lowered depending on how complex the games source geometry is to gain some performance. E.g. games with mostly flat surfaces with blocky geometry can get away with the monotone or layers mode that are a lot faster to bake (e.g. because they require no distance field pass)."
+msgid "Complexity of source geometry data parsed from scene tree nodes has big impact on baking performance as everything needs to be mapped to a grid / voxels. For runtime baking performance the NavigationMesh cell size and cell height should be set as high as possible without causing navigation mesh quality problems for a game. If cell size or cell height is set too low the baking is forced to create an excessive amount of voxels to process the source geometry. If the source geometry spans over a very large game world it is even possible that the baking process runs out off memory in the middle and crashes the game. The partition type can also be lowered depending on how complex the games source geometry is to gain some performance. E.g. games with mostly flat surfaces with blocky geometry can get away with the monotone or layers mode that are a lot faster to bake (e.g. because they require no distance field pass)."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_optimizing_performance.rst:60

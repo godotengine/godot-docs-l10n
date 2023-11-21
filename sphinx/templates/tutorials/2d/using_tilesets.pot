@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -581,73 +581,77 @@ msgstr ""
 msgid "Sometimes, you want to use a single tile image (found only once within the atlas), but configured in different ways. For example, you may want to use the same tile image, but rotated, flipped, or modulated with a different color. This can be done using *alternative tiles*."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:608
+#: ../../docs/tutorials/2d/using_tilesets.rst:610
+msgid "Since Godot 4.2, you don't have to create alternative tiles to rotate or flip tiles anymore. You can rotate any tile while placing it in the TileMap editor by using the rotation/flip buttons in the TileMap editor toolbar."
+msgstr ""
+
+#: ../../docs/tutorials/2d/using_tilesets.rst:615
 msgid "To create an alternative tile, right-click a base tile in the atlas displayed by the TileSet editor, then choose **Create an Alternative Tile**:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:615
-#: ../../docs/tutorials/2d/using_tilesets.rst:615
+#: ../../docs/tutorials/2d/using_tilesets.rst:622
+#: ../../docs/tutorials/2d/using_tilesets.rst:622
 msgid "Creating an alternative tile by right-clicking a base tile in the TileSet editor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:617
+#: ../../docs/tutorials/2d/using_tilesets.rst:624
 msgid "If currently in Select mode, the alternative tile will already be selected for editing. If not currently in Select mode, you can still create alternative tiles, but you will need to switch to Select mode and select the alternative tile to edit it."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:622
+#: ../../docs/tutorials/2d/using_tilesets.rst:629
 msgid "If you don't see the alternative tile, pan over to the right of the atlas image, as alternative tiles always appear on the right of base tiles of a given atlas in the TileSet editor:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:630
-#: ../../docs/tutorials/2d/using_tilesets.rst:630
+#: ../../docs/tutorials/2d/using_tilesets.rst:637
+#: ../../docs/tutorials/2d/using_tilesets.rst:637
 msgid "Configuring an alternative tile after clicking it in the TileSet editor"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:632
+#: ../../docs/tutorials/2d/using_tilesets.rst:639
 msgid "After selecting an alternative tile, you can change any properties using the middle column like you would on a base tile. However, the list of exposed properties is different compared to base tiles:"
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:636
+#: ../../docs/tutorials/2d/using_tilesets.rst:643
 msgid "**Alternative ID:** The unique numerical identifier for this alternative tile. Changing it will break existing TileMaps, so be careful! This ID also controls the sorting in the list of alternative tiles displayed in the editor."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:639
+#: ../../docs/tutorials/2d/using_tilesets.rst:646
 msgid "**Rendering > Flip H:** If ``true``, the tile is horizontally flipped."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:640
+#: ../../docs/tutorials/2d/using_tilesets.rst:647
 msgid "**Rendering > Flip V:** If ``true``, the tile is vertically flipped."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:641
-msgid "**Rendering > Transpose:** If ``true``, the tile is rotated 90 degrees counter-clockwise. Combine this with **Flip H** and/or **Flip V** to perform 180-degree or 270-degree rotation."
+#: ../../docs/tutorials/2d/using_tilesets.rst:648
+msgid "**Rendering > Transpose:** If ``true``, the tile is rotated 90 degrees *counter-clockwise* and then flipped vertically. In practice, this means that to rotate a tile by 90 degrees clockwise without flipping it, you should enable **Flip H** and **Transpose**. To rotate a tile by 180 degrees clockwise, enable **Flip H** and **Flip V**. To rotate a tile by 270 degrees clockwise, enable **Flip V** and **Transpose**."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:644
+#: ../../docs/tutorials/2d/using_tilesets.rst:654
 msgid "**Rendering > Texture Origin:** The origin to use for drawing the tile. This can be used to visually offset the tile compared to the base tile."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:646
+#: ../../docs/tutorials/2d/using_tilesets.rst:656
 msgid "**Rendering > Modulate:** The color multiplier to use when rendering the tile."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:647
+#: ../../docs/tutorials/2d/using_tilesets.rst:657
 msgid "**Rendering > Material:** The material to use for this tile. This can be used to apply a different blend mode or custom shaders to a single tile."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:649
+#: ../../docs/tutorials/2d/using_tilesets.rst:659
 msgid "**Z Index:** The sorting order for this tile. Higher values will make the tile render in front of others on the same layer."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:651
+#: ../../docs/tutorials/2d/using_tilesets.rst:661
 msgid "**Y Sort Origin:** The vertical offset to use for tile sorting based on its Y coordinate (in pixels). This allows using layers as if they were on different height for top-down games. Adjusting this can help alleviate issues with sorting certain tiles. Only effective if **Y Sort Enabled** is ``true`` on the TileMap layer the tile is placed on."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:657
+#: ../../docs/tutorials/2d/using_tilesets.rst:667
 msgid "You can create an additional alternative tile variant by clicking the large \"+\" icon next to the alternative tile. This is equivalent to selecting the base tile and right-clicking it to choose **Create an Alternative Tile** again."
 msgstr ""
 
-#: ../../docs/tutorials/2d/using_tilesets.rst:663
+#: ../../docs/tutorials/2d/using_tilesets.rst:673
 msgid "When creating an alternative tile, none of the properties from the base tile are inherited. You must set properties again on the alternative tile if you wish those to be identical on the base tile and the alternative tile."
 msgstr ""
 

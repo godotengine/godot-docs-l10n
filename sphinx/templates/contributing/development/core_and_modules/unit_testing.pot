@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -370,34 +370,38 @@ msgid "Here's an example test script:"
 msgstr ""
 
 #: ../../docs/contributing/development/core_and_modules/unit_testing.rst:322
-msgid "Generate ``*.out`` files to update the expected results from the output:"
+msgid "Change directory to the Godot source repository root."
 msgstr ""
 
 #: ../../docs/contributing/development/core_and_modules/unit_testing.rst:328
+msgid "Generate ``*.out`` files to update the expected results from the output:"
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:334
 msgid "You may add the ``--print-filenames`` option to see filenames as their test outputs are generated. If you are working on a new feature that is causing hard crashes, you can use this option to quickly find which test file causes the crash and debug from there."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:333
+#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:339
 msgid "Run GDScript tests with:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:339
+#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:345
 msgid "This also accepts the ``--print-filenames`` option (see above)."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:341
+#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:347
 msgid "If no errors are printed and everything goes well, you're done!"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:345
+#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:351
 msgid "Make sure the output does have the expected values before submitting a pull request. If ``--gdscript-generate-tests`` produces ``*.out`` files which are unrelated to newly added tests, you should revert those files back and only commit ``*.out`` files for new tests."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:352
+#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:358
 msgid "The GDScript test runner is meant for testing the GDScript implementation, not for testing user scripts nor testing the engine using scripts. We recommend writing new tests for already resolved `issues related to GDScript at GitHub <https://github.com/godotengine/godot/issues?q=is%3Aissue+label%3Atopic%3Agdscript+is%3Aclosed>`_, or writing tests for currently working features."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:360
+#: ../../docs/contributing/development/core_and_modules/unit_testing.rst:366
 msgid "If your test case requires that there is no ``test()`` function present inside the script file, you can disable the runtime section of the test by naming the script file so that it matches the pattern ``*.notest.gd``. For example, \"test_empty_file.notest.gd\"."
 msgstr ""
 

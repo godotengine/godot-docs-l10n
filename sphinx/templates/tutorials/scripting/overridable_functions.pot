@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,7 +33,7 @@ msgid "Under the hood, these functions rely on Godot's low-level notifications s
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:15
-msgid "Two functions allow you to initialize and get nodes, besides the class's constructor: ``_enter_tree()`` and ``_ready()``."
+msgid "Two functions allow you to initialize and get nodes besides the class's constructor: ``_enter_tree()`` and ``_ready()``."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:18
@@ -41,7 +41,7 @@ msgid "When the node enters the Scene Tree, it becomes active and the engine cal
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:23
-msgid "Most of the time, you'll use ``_ready()`` instead. This function is called only once in a node's lifetime, after ``_enter_tree()``. ``_ready()`` ensures that all children have entered the scene tree first, so you can safely call ``get_node()`` on it."
+msgid "Most of the time, you'll use ``_ready()`` instead. This function is called only once in a node's lifetime, after ``_enter_tree()``. ``_ready()`` ensures that all children have entered the scene tree first, so you can safely call ``get_node()`` on them."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:27
@@ -49,7 +49,7 @@ msgid "To learn more about getting node references, read :ref:`doc_nodes_and_sce
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:30
-msgid "Another related callback is ``_exit_tree()``, which the engine calls every time a node exits the scene tree. This can be when you call :ref:`Node.remove_child() <class_Node_method_remove_child>` or when you free a node."
+msgid "Another related callback is ``_exit_tree()``, which the engine calls every time a node is about to exit the scene tree. This can be when you call :ref:`Node.remove_child() <class_Node_method_remove_child>` or when you free a node."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:71
@@ -57,7 +57,7 @@ msgid "The two virtual methods ``_process()`` and ``_physics_process()`` allow y
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:101
-msgid "Two more essential built-in node callback functions are :ref:`Node._unhandled_input() <class_Node_method__unhandled_input>` and :ref:`Node._input() <class_Node_method__input>`, which you use to both receive and process individual input events. The ``_unhandled_input()`` method receives every key press, mouse click, etc. that have not been handled already in an ``_input()`` callback or in a user interface component. You want to use it for gameplay input in general. The ``_input()`` callback allows you to intercept and process input events before ``_unhandled_input()`` gets them."
+msgid "Two more essential built-in node callback functions are :ref:`Node._unhandled_input() <class_Node_private_method__unhandled_input>` and :ref:`Node._input() <class_Node_private_method__input>`, which you use to both receive and process individual input events. The ``_unhandled_input()`` method receives every key press, mouse click, etc. that have not been handled already in an ``_input()`` callback or in a user interface component. You want to use it for gameplay input in general. The ``_input()`` callback allows you to intercept and process input events before ``_unhandled_input()`` gets them."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:110
@@ -65,7 +65,7 @@ msgid "To learn more about inputs in Godot, see the :ref:`Input section <toc-lea
 msgstr ""
 
 #: ../../docs/tutorials/scripting/overridable_functions.rst:139
-msgid "There are some more overridable functions like :ref:`Node._get_configuration_warnings() <class_Node_method__get_configuration_warnings>`. Specialized node types provide more callbacks like :ref:`CanvasItem._draw() <class_CanvasItem_method__draw>` to draw programmatically or :ref:`Control._gui_input() <class_Control_method__gui_input>` to handle clicks and input on UI elements."
+msgid "There are some more overridable functions like :ref:`Node._get_configuration_warnings() <class_Node_private_method__get_configuration_warnings>`. Specialized node types provide more callbacks like :ref:`CanvasItem._draw() <class_CanvasItem_private_method__draw>` to draw programmatically or :ref:`Control._gui_input() <class_Control_private_method__gui_input>` to handle clicks and input on UI elements."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

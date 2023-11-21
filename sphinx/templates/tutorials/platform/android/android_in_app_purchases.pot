@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,256 +16,220 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:6
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:4
 msgid "Android in-app purchases"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:8
-msgid "Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin compatible with Godot 3.2.2 and higher. This plugin uses the `Google Play Billing library <https://developer.android.com/google/play/billing>`__ instead of the now deprecated AIDL IAP implementation. For details of how to migrate from the older ``GodotPaymentsV3``, see the migration guide: `Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)`_."
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:6
+msgid "Godot offers a first-party ``GodotGooglePlayBilling`` Android plugin compatible with Godot 4 which uses the `Google Play Billing library <https://developer.android.com/google/play/billing>`_."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:13
-msgid "If you learn better by looking at an example, you can find the demo project `here <https://github.com/godotengine/godot-demo-projects/tree/master/mobile/android_iap>`__."
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:18
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:10
 msgid "Usage"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:21
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:13
 msgid "Getting started"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:23
-msgid "Make sure you have enabled and successfully set up :ref:`Android Custom Builds <doc_android_custom_build>`. Follow the compiling instructions on the ``GodotGooglePlayBilling`` `github page <https://github.com/godotengine/godot-google-play-billing>`__."
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:15
+msgid "Make sure you have enabled and successfully set up :ref:`Android Gradle Builds <doc_android_gradle_build>`. Follow the compiling instructions on the ``GodotGooglePlayBilling`` `github page <https://github.com/godotengine/godot-google-play-billing>`__."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:28
-msgid "If you use a custom build you possibly have to put your own `godot-lib.***.release.aar` file in the `./godot-google-play-billing/libs/` folder."
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:30
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:18
 msgid "Then put the files `./godot-google-play-billing/build/outputs/aar/GodotGooglePlayBilling.***.release.aar` and `./GodotGooglePlayBilling.gdap` into your project in the `res://android/plugins` folder."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:32
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:20
 msgid "The plugin should now show up in the Android export settings, where you can enable it."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:36
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:24
 msgid "Initialize the plugin"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:38
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:26
 msgid "To use the ``GodotGooglePlayBilling`` API:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:40
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:28
 msgid "Obtain a reference to the ``GodotGooglePlayBilling`` singleton"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:41
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:29
 msgid "Connect handlers for the plugin signals"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:42
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:30
 msgid "Call ``startConnection``"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:44
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:32
 msgid "Initialization example:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:75
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:63
 msgid "The API must be in a connected state prior to use. The ``connected`` signal is sent when the connection process succeeds. You can also use ``isReady()`` to determine if the plugin is ready for use. The ``getConnectionState()`` function returns the current connection state of the plugin."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:80
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:68
 msgid "Return values for ``getConnectionState()``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:94
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:82
 msgid "Query available items"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:96
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:84
 msgid "Once the API has connected, query SKUs using ``querySkuDetails()``. You must successfully complete a SKU query before calling the ``purchase()`` or ``queryPurchases()`` functions, or they will return an error. ``querySkuDetails()`` takes two parameters: an array of SKU name strings, and a string specifying the type of SKU being queried. The SKU type string should be ``\"inapp\"`` for normal in-app purchases or ``\"subs\"`` for subscriptions. The name strings in the array should match the SKU product ids defined in the Google Play Console entry for your app."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:104
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:92
 msgid "Example use of ``querySkuDetails()``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:121
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:109
 msgid "Query user purchases"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:123
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:111
 msgid "To retrieve a user's purchases, call the ``queryPurchases()`` function passing a string with the type of SKU to query. The SKU type string should be ``\"inapp\"`` for normal in-app purchases or ``\"subs\"`` for subscriptions. The ``query_purchases_response`` signal is sent with the result. The signal has a single parameter: a :ref:`Dictionary <class_Dictionary>` with a status code and either an array of purchases or an error message. Only active subscriptions and non-consumed one-time purchases are included in the purchase array."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:132
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:120
 msgid "Example use of ``queryPurchases()``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:149
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:137
 msgid "You should query purchases during startup after successfully retrieving SKU details. Since the user may make a purchase or resolve a pending transaction from outside your app, you should recheck for purchases when resuming from the background. To accomplish this, you can use the ``billing_resume`` signal."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:154
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:142
 msgid "Example use of ``billing_resume``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:163
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:151
 msgid "For more information on processing the purchase items returned by ``queryPurchases()``, see `Processing a purchase item`_"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:168
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:156
 msgid "Purchase an item"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:170
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:158
 msgid "To initiate the purchase flow for an item, call ``purchase()`` passing the product id string of the SKU you wish to purchase. Reminder: you **must** query the SKU details for an item before you can pass it to ``purchase()``."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:175
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:163
 msgid "Example use of ``purchase()``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:182
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:170
 msgid "The payment flow will send a ``purchases_updated`` signal on success or a ``purchase_error`` signal on failure."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:196
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:184
 msgid "Processing a purchase item"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:198
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:186
 msgid "The ``query_purchases_response`` and ``purchases_updated`` signals provide an array of purchases in :ref:`Dictionary <class_Dictionary>` format. The purchase Dictionary includes keys that map to values of the Google Play Billing `Purchase <https://developer.android.com/reference/com/android/billingclient/api/Purchase>`_ class."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:203
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:191
 msgid "Purchase fields:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:225
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:213
 msgid "Check purchase state"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:227
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:215
 msgid "Check the ``purchase_state`` value of a purchase to determine if a purchase was completed or is still pending."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:230
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:218
 msgid "PurchaseState values:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:242
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:230
 msgid "If a purchase is in a ``PENDING`` state, you should not award the contents of the purchase or do any further processing of the purchase until it reaches the ``PURCHASED`` state. If you have a store interface, you may wish to display information about pending purchases needing to be completed in the Google Play Store. For more details on pending purchases, see `Handling pending transactions <https://developer.android.com/google/play/billing/integrate#pending>`_ in the Google Play Billing Library documentation."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:252
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:240
 msgid "Consumables"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:254
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:242
 msgid "If your in-app item is not a one-time purchase but a consumable item (e.g. coins) which can be purchased multiple times, you can consume an item by calling ``consumePurchase()`` passing the ``purchase_token`` value from the purchase dictionary. Calling ``consumePurchase()`` automatically acknowledges a purchase. Consuming a product allows the user to purchase it again, it will no longer appear in subsequent ``queryPurchases()`` calls unless it is repurchased."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:261
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:249
 msgid "Example use of ``consumePurchase()``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:286
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:274
 msgid "Acknowledging purchases"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:288
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:276
 msgid "If your in-app item is a one-time purchase, you must acknowledge the purchase by calling the ``acknowledgePurchase()`` function, passing the ``purchase_token`` value from the purchase dictionary. If you do not acknowledge a purchase within three days, the user automatically receives a refund, and Google Play revokes the purchase. If you are calling ``comsumePurchase()`` it automatically acknowledges the purchase and you do not need to call ``acknowledgePurchase()``."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:295
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:283
 msgid "Example use of ``acknowledgePurchase()``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:322
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:310
 msgid "Subscriptions"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:324
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:312
 msgid "Subscriptions work mostly like regular in-app items. Use ``\"subs\"`` as the second argument to ``querySkuDetails()`` to get subscription details. Pass ``\"subs\"`` to ``queryPurchases()`` to get subscription purchase details."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:328
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:316
 msgid "You can check ``is_auto_renewing`` in the a subscription purchase returned from ``queryPurchases()`` to see if a user has cancelled an auto-renewing subscription."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:332
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:320
 msgid "You need to acknowledge new subscription purchases, but not automatic subscription renewals."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:335
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:323
 msgid "If you support upgrading or downgrading between different subscription levels, you should use ``updateSubscription()`` to use the subscription update flow to change an active subscription. Like ``purchase()``, results are returned by the ``purchases_updated`` and ``purchase_error`` signals. There are three parameters to ``updateSubscription()``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:341
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:329
 msgid "The purchase token of the currently active subscription"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:342
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:330
 msgid "The product id string of the subscription SKU to change to"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:343
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:331
 msgid "The proration mode to apply to the subscription."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:345
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:333
 msgid "The proration values are defined as:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:370
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:358
 msgid "Default behavior is ``IMMEDIATE_WITH_TIME_PRORATION``."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:372
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:360
 msgid "Example use of ``updateSubscription``:"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:380
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:368
 msgid "The ``confirmPriceChange()`` function can be used to launch price change confirmation flow for a subscription. Pass the product id of the subscription SKU subject to the price change. The result will be sent by the ``price_change_acknowledged`` signal."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:384
+#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:372
 msgid "Example use of ``confirmPriceChange()``:"
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:401
-msgid "Migrating from Godot 3.2.1 and lower (GodotPaymentsV3)"
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:403
-msgid "The new ``GodotGooglePlayBilling`` API is not compatible with its predecessor ``GodotPaymentsV3``."
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:406
-msgid "Changes"
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:408
-msgid "You need to enable the Custom Build option in your Android export settings and install the ``GodotGooglePlayBilling`` plugin manually (see below for details)"
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:410
-msgid "All purchases have to be acknowledged by your app. This is a `requirement from Google <https://developer.android.com/google/play/billing/integrate#process>`__. Purchases that are not acknowledged by your app will be refunded."
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:413
-msgid "Support for subscriptions"
-msgstr ""
-
-#: ../../docs/tutorials/platform/android/android_in_app_purchases.rst:414
-msgid "Signals (no polling or callback objects)"
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

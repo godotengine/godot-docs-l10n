@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -113,102 +113,102 @@ msgid "Stutter may be visible on desktop Linux, but this is usually associated w
 msgstr ""
 
 #: ../../docs/tutorials/rendering/jitter_stutter.rst:111
-msgid "There is no workaround for driver or compositor stuttering, other than reporting it as an issue to the driver or compositor developers."
+msgid "There is no workaround for driver or compositor stuttering, other than reporting it as an issue to the driver or compositor developers. Stutter may be more present when playing in windowed mode as opposed to fullscreen, even with compositing disabled."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:114
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:116
 msgid "`Feral GameMode <https://github.com/FeralInteractive/gamemode>`__ can be used to automatically apply optimizations (such as forcing the GPU performance profile) when running specific processes."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:119
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:121
 msgid "macOS"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:121
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:123
 msgid "Generally, macOS is stutter-free, although recently some bugs were reported when running on fullscreen (this is a macOS bug). If you have a machine exhibiting this behavior, please let us know."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:126
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:128
 msgid "Android"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:128
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:130
 msgid "Generally, Android is stutter and jitter-free because the running activity gets all the priority. That said, there may be problematic devices (older Kindle Fire is known to be one). If you see this problem on Android, please let us know."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:133
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:135
 msgid "iOS"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:135
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:137
 msgid "iOS devices are generally stutter-free, but older devices running newer versions of the operating system may exhibit problems. This is generally unavoidable."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:139
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:141
 msgid "Input lag"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:142
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:144
 msgid "Project configuration"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:144
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:146
 msgid "On platforms that support disabling V-Sync, input lag can be made less noticeable by disabling V-Sync in the project settings. This will however cause tearing to appear, especially on monitors with low refresh rates."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:148
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:150
 msgid "Increasing the number of physics iterations per second can also reduce physics-induced input latency. This is especially noticeable when using physics interpolation (which improves smoothness but increases latency). To do so, set **Physics > Common > Physics Ticks Per Second** to a value higher than the default ``60``, or set ``Engine.physics_ticks_per_second`` at run-time in a script. Values that are a multiple of the monitor refresh rate (typically ``60``) work best when physics interpolation is disabled, as they will avoid jitter. This means values such as ``120``, ``180`` and ``240`` are good starting points. As a bonus, higher physics FPSes make tunneling and physics unstability issues less likely to occur."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:159
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:161
 msgid "The downside of increasing physics FPS is that CPU usage will increase, which can lead to performance bottlenecks in games that have heavy physics simulation code. This can be alleviated by increasing physics FPS only in situations where low latency is critical, or by letting players adjust physics FPS to match their hardware. However, different physics FPS will lead to different outcomes in physics simulation, even when ``delta`` is consistently used in your game logic. This can give certain players an advantage over others. Therefore, allowing the player to change the physics FPS themselves should be avoided for competitive multiplayer games."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:169
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:171
 msgid "Lastly, you can disable input buffering on a per-rendered frame basis by calling ``Input.set_use_accumulated_input(false)`` in a script. This will make it so the ``_input()`` and ``_unhandled_input()`` functions in your scripts are called on every input, rather than accumulating inputs and waiting for a frame to be rendered. Disabling input accumulation will increase CPU usage, so it should be done with caution."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:177
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:179
 msgid "Hardware/OS-specific"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:179
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:181
 msgid "If your monitor supports it, consider enabling variable refresh rate (G-Sync/FreeSync) while leaving V-Sync enabled, then cap the framerate in the project settings to a slightly lower value than your monitor's maximum refresh rate as per `this page <https://blurbusters.com/howto-low-lag-vsync-on/>`__. For example, on a 144 Hz monitor, you can set the project's framerate cap to ``141``. This may be counterintuitive at first, but capping the FPS below the maximum refresh rate range ensures that the OS never has to wait for vertical blanking to finish. This leads to *similar* input lag as V-Sync disabled with the same framerate cap (usually less than 1 ms greater), but without any tearing."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:190
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:192
 msgid "This can be done by changing the **Application > Run > Max FPS** project setting or assigning ``Engine.max_fps`` at run-time in a script."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:193
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:195
 msgid "On some platforms, you can also opt into a low-latency mode in the graphics driver options (such as the NVIDIA Control Panel on Windows). The **Ultra** setting will give you the lowest possible latency, at the cost of slightly lower average framerates. Forcing the GPU to use the maximum performance profile can also further reduce input lag, at the cost of higher power consumption (and resulting heat/fan noise)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:200
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:202
 msgid "Finally, make sure your monitor is running at its highest possible refresh rate in the OS' display settings."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:203
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:205
 msgid "Also, ensure that your mouse is configured to use its highest polling rate (typically 1,000 Hz for gaming mice, sometimes more). High USB polling rates can however result in high CPU usage, so 500 Hz may be a safer bet on low-end CPUs. If your mouse offers multiple :abbr:`DPI (Dots Per Inch)` settings, consider also `using the highest possible setting and reducing in-game sensitivity to reduce mouse latency <https://www.youtube.com/watch?v=6AoRfv9W110>`__."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:209
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:211
 msgid "On Linux, disabling compositing in window managers that allow it (such as KWin or Xfwm) can reduce input lag significantly."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:213
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:215
 msgid "Reporting jitter, stutter or input lag problems"
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:215
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:217
 msgid "If you are reporting a stutter or jitter problem (opening an issue) not caused by any of the above reasons, please specify very clearly all the information possible about device, operating system, driver versions, etc. This may help to better troubleshoot it."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:220
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:222
 msgid "If you are reporting input lag problems, please include a capture made with a high speed camera (such as your phone's slow motion video mode). The capture **must** have both the screen and the input device visible so that the number of frames between an input and the on-screen result can be counted. Also, make sure to mention your monitor's refresh rate and your input device's polling rate (especially for mice)."
 msgstr ""
 
-#: ../../docs/tutorials/rendering/jitter_stutter.rst:227
+#: ../../docs/tutorials/rendering/jitter_stutter.rst:229
 msgid "Also, make sure to use the correct term (jitter, stutter, input lag) based on the exhibited behavior. This will help understand your issue much faster. Provide a project that can be used to reproduce the issue, and if possible, include a screen capture demonstrating the bug."
 msgstr ""
 

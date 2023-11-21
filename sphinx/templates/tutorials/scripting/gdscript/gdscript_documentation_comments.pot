@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -160,66 +160,66 @@ msgid "No tag."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:103
-msgid "Variables, constants, signals, and enum values support inline documentation comments. Note that inline comments do not support tags."
+msgid "Alternatively, you can use inline documentation comments::"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:118
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:122
 msgid "The script documentation will update in the editor help window every time the script is updated. If any member variable or function name starts with an underscore, it will be treated as private. It will not appear in the documentation and will be ignored in the help window."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:123
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:127
 msgid "Complete script example"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:200
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:204
 msgid "``@deprecated`` and ``@experimental`` tags"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:202
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:206
 msgid "You can mark a class or any of its members as deprecated or experimental. This will add the corresponding indicator in the built-in documentation viewer. This can be especially useful for plugin and library creators."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:208
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:212
 msgid "**Deprecated** marks a non-recommended API that is subject to removal or incompatible change in a future major release. Usually the API is kept for backwards compatibility."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:210
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:214
 msgid "**Experimental** marks a new unstable API that may be changed or removed in the current major branch. Using this API is not recommended in production code."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:215
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:219
 msgid "While technically you can use both ``@deprecated`` and ``@experimental`` tags on the same class/member, this is not recommended as it is against common conventions."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:219
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:223
 msgid "BBCode and class reference"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:221
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:225
 msgid "The editor help window which renders the documentation supports :ref:`bbcode <doc_bbcode_in_richtextlabel>`. As a result it's possible to align and format the documentation. Color texts, images, fonts, tables, URLs, animation effects, etc. can be added with the :ref:`bbcode <doc_bbcode_in_richtextlabel>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:225
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:229
 msgid "Godot's class reference supports BBCode-like tags. They add nice formatting to the text which could also be used in the documentation. See also :ref:`class reference bbcode <doc_class_reference_bbcode>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:228
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:232
 msgid "Whenever you link to a member of another class, you need to specify the class name. For links to the same class, the class name is optional and can be omitted."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:231
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:235
 msgid "Here's the list of available tags:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:234
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:238
 msgid "Tag and Description"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:234
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:238
 msgid "Example"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:234
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:238
 msgid "Result"
 msgstr ""
 
@@ -231,11 +231,11 @@ msgstr ""
 msgid "Link to class"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:236
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:240
 msgid "``Move the [Sprite2D].``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:236
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:240
 msgid "Move the :ref:`class_Sprite2D`."
 msgstr ""
 
@@ -247,11 +247,11 @@ msgstr ""
 msgid "Link to annotation"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:239
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:243
 msgid "``See [annotation @GDScript.@export].``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:239
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:243
 msgid "See :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`."
 msgstr ""
 
@@ -263,11 +263,11 @@ msgstr ""
 msgid "Link to constant"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:242
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:246
 msgid "``See [constant @GlobalScope.KEY_F1].``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:242
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:246
 msgid "See :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`."
 msgstr ""
 
@@ -279,11 +279,11 @@ msgstr ""
 msgid "Link to enum"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:245
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:249
 msgid "``See [enum Mesh.ArrayType].``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:245
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:249
 msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
 msgstr ""
 
@@ -295,11 +295,11 @@ msgstr ""
 msgid "Link to method"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:248
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:252
 msgid "``Call [method Node3D.hide].``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:248
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:252
 msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
 msgstr ""
 
@@ -311,11 +311,11 @@ msgstr ""
 msgid "Link to member"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:251
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:255
 msgid "``Get [member Node2D.scale].``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:251
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:255
 msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
 msgstr ""
 
@@ -327,11 +327,11 @@ msgstr ""
 msgid "Link to signal"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:254
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:258
 msgid "``Emit [signal Node.renamed].``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:254
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:258
 msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
 msgstr ""
 
@@ -343,11 +343,11 @@ msgstr ""
 msgid "Link to theme item"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:257
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:261
 msgid "``See [theme_item Label.font].``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:257
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:261
 msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
 msgstr ""
 
@@ -359,11 +359,11 @@ msgstr ""
 msgid "Formats a parameter name (as code)"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:260
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:264
 msgid "``Takes [param size] for the size.``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:260
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:264
 msgid "Takes ``size`` for the size."
 msgstr ""
 
@@ -399,11 +399,11 @@ msgstr ""
 msgid "Bold"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:266
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:270
 msgid "``Some [b]bold[/b] text.``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:266
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:270
 msgid "Some **bold** text."
 msgstr ""
 
@@ -415,11 +415,11 @@ msgstr ""
 msgid "Italic"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:269
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:273
 msgid "``Some [i]italic[/i] text.``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:269
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:273
 msgid "Some *italic* text."
 msgstr ""
 
@@ -431,11 +431,11 @@ msgstr ""
 msgid "Keyboard/mouse shortcut"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:272
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:276
 msgid "``Some [kbd]Ctrl + C[/kbd] key.``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:272
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:276
 msgid "Some :kbd:`Ctrl + C` key."
 msgstr ""
 
@@ -447,11 +447,11 @@ msgstr ""
 msgid "Monospace"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:275
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:279
 msgid "``Some [code]monospace[/code] text.``"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:275
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:279
 msgid "Some ``monospace`` text."
 msgstr ""
 
@@ -463,24 +463,24 @@ msgstr ""
 msgid "Multiline preformatted block"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:278
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:278
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:282
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:282
 msgid "*See below.*"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:284
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:288
 msgid "Currently only :ref:`class_@GDScript` has annotations."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:285
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:289
 msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:286
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:290
 msgid "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:290
+#: ../../docs/tutorials/scripting/gdscript/gdscript_documentation_comments.rst:294
 msgid "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, always use **four spaces** for indentation (the parser will delete tabs)."
 msgstr ""
 

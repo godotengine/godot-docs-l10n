@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,219 +44,219 @@ msgstr ""
 msgid "Here is a complete shader example based on these guidelines:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:52
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:51
 msgid "Formatting"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:55
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:54
 msgid "Encoding and special characters"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:57
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:56
 msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor default)*"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:58
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:57
 msgid "Use one line feed character at the end of each file. *(editor default)*"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:59
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:58
 msgid "Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/wiki/Byte_order_mark>`_. *(editor default)*"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:60
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:59
 msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:63
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:62
 msgid "Indentation"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:65
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:64
 msgid "Each indent level should be one tab greater than the block containing it."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:67
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:86
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:113
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:164
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:196
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:228
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:258
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:282
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:333
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:66
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:85
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:112
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:163
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:195
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:227
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:257
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:281
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:332
 msgid "**Good**:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:75
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:94
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:123
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:173
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:203
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:236
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:266
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:288
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:347
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:74
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:93
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:122
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:172
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:202
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:235
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:265
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:287
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:346
 msgid "**Bad**:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:83
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:82
 msgid "Use 2 indent levels to distinguish continuation lines from regular code blocks."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:104
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:103
 msgid "Line breaks and blank lines"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:106
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:105
 msgid "For a general indentation rule, follow `the \"1TBS Style\" <https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)>`_ which recommends placing the brace associated with a control statement on the same line. Always use braces for statements, even if they only span one line. This makes them easier to refactor and avoids mistakes when adding more lines to an ``if`` statement or similar."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:134
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:133
 msgid "Blank lines"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:136
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:135
 msgid "Surround function definitions with one (and only one) blank line:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:148
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:147
 msgid "Use one (and only one) blank line inside functions to separate logical sections."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:151
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:150
 msgid "Line length"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:153
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:152
 msgid "Keep individual lines of code under 100 characters."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:155
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:154
 msgid "If you can, try to keep lines under 80 characters. This helps to read the code on small displays and with two shaders opened side-by-side in an external text editor. For example, when looking at a differential revision."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:160
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:159
 msgid "One statement per line"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:162
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:161
 msgid "Never combine multiple statements on a single line."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:181
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:180
 msgid "The only exception to that rule is the ternary operator:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:191
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:190
 msgid "Comment spacing"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:193
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:192
 msgid "Regular comments should start with a space, but not code that you comment out. This helps differentiate text comments from disabled code."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:210
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:209
 msgid "Don't use multiline comment syntax if your comment can fit on a single line:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:218
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:217
 msgid "In the shader editor, to make the selected code a comment (or uncomment it), press :kbd:`Ctrl + K`. This feature adds or removes ``//`` at the start of the selected lines."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:223
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:222
 msgid "Whitespace"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:225
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:224
 msgid "Always use one space around operators and after commas. Also, avoid extraneous spaces in function calls."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:244
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:243
 msgid "Don't use spaces to align expressions vertically:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:252
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:251
 msgid "Floating-point numbers"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:254
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:253
 msgid "Always specify at least one digit for both the integer and fractional part. This makes it easier to distinguish floating-point numbers from integers, as well as distinguishing numbers greater than 1 from those lower than 1."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:275
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:274
 msgid "Accessing vector members"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:277
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:276
 msgid "Use ``r``, ``g``, ``b``, and ``a`` when accessing a vector's members if it contains a color. If the vector contains anything else than a color, use ``x``, ``y``, ``z``, and ``w``. This allows those reading your code to better understand what the underlying data represents."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:295
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:294
 msgid "Naming conventions"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:297
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:296
 msgid "These naming conventions follow the Godot Engine style. Breaking these will make your code clash with the built-in naming conventions, leading to inconsistent code."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:302
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:301
 msgid "Functions and variables"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:304
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:303
 msgid "Use snake\\_case to name functions and variables:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:313
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:312
 msgid "Constants"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:315
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:314
 msgid "Write constants with CONSTANT\\_CASE, that is to say in all caps with an underscore (\\_) to separate words:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:323
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:322
 msgid "Preprocessor directives"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:325
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:324
 msgid ":ref:`doc_shader_preprocessor` directives should be written in CONSTANT__CASE. Directives should be written without any indentation before them, even if nested within a function."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:329
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:328
 msgid "To preserve the natural flow of indentation when shader errors are printed to the console, extra indentation should **not** be added within ``#if``, ``#ifdef`` or ``#ifndef`` blocks:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:362
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:361
 msgid "Code order"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:364
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:363
 msgid "We suggest to organize shader code this way:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:381
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:380
 msgid "We optimized the order to make it easy to read the code from top to bottom, to help developers reading the code for the first time understand how it works, and to avoid errors linked to the order of variable declarations."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:385
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:384
 msgid "This code order follows two rules of thumb:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:387
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:386
 msgid "Metadata and properties first, followed by methods."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:388
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:387
 msgid "\"Public\" comes before \"private\". In a shader language's context, \"public\" refers to what's easily adjustable by the user (uniforms)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:392
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:391
 msgid "Local variables"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shaders_style_guide.rst:394
+#: ../../docs/tutorials/shaders/shaders_style_guide.rst:393
 msgid "Declare local variables as close as possible to their first use. This makes it easier to follow the code, without having to scroll too much to find where the variable was declared."
 msgstr ""
 

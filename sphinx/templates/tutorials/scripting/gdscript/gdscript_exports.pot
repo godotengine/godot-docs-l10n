@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,287 +17,283 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:4
-msgid "GDScript exports"
+msgid "GDScript exported properties"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:7
-msgid "Introduction to exports"
-msgstr ""
-
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:9
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:6
 msgid "In Godot, class members can be exported. This means their value gets saved along with the resource (such as the :ref:`scene <class_PackedScene>`) they're attached to. They will also be available for editing in the property editor. Exporting is done by using the ``@export`` annotation."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:18
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:15
 msgid "In that example the value ``5`` will be saved and visible in the property editor."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:20
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:17
 msgid "An exported variable must be initialized to a constant expression or have a type specifier in the variable. Some of the export annotations have a specific type and don't need the variable to be typed (see the *Examples* section below)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:24
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:21
 msgid "One of the fundamental benefits of exporting member variables is to have them visible and editable in the editor. This way, artists and game designers can modify values that later influence how the program runs. For this, a special export syntax is provided."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:31
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:28
 msgid "Exporting properties can also be done in other languages such as C#. The syntax varies depending on the language. See :ref:`doc_c_sharp_exports` for information on C# exports."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:36
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:33
 msgid "Basic use"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:38
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:35
 msgid "If the exported value assigns a constant or constant expression, the type will be inferred and used in the editor."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:45
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:42
 msgid "If there's no default value, you can add a type to the variable."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:51
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:48
 msgid "Resources and nodes can be exported."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:59
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:56
 msgid "Grouping Exports"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:61
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:58
 msgid "It is possible to group your exported properties inside the Inspector with the :ref:`@export_group <class_@GDScript_annotation_@export_group>` annotation. Every exported property after this annotation will be added to the group. Start a new group or use ``@export_group(\"\")`` to break out."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:71
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:68
 msgid "The second argument of the annotation can be used to only group properties with the specified prefix."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:74
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:71
 msgid "Groups cannot be nested, use :ref:`@export_subgroup <class_@GDScript_annotation_@export_subgroup>` to create subgroups within a group."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:83
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:80
 msgid "You can also change the name of your main category, or create additional categories in the property list with the :ref:`@export_category <class_@GDScript_annotation_@export_category>` annotation."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:98
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:95
 msgid "The list of properties is organized based on the class inheritance and new categories break that expectation. Use them carefully, especially when creating projects for public use."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:103
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:100
 msgid "Strings as paths"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:105
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:102
 msgid "String as a path to a file."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:111
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:108
 msgid "String as a path to a directory."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:117
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:114
 msgid "String as a path to a file, custom filter provided as hint."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:123
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:120
 msgid "Using paths in the global filesystem is also possible, but only in scripts in tool mode."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:126
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:123
 msgid "String as a path to a PNG file in the global filesystem."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:132
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:129
 msgid "String as a path to a directory in the global filesystem."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:138
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:135
 msgid "The multiline annotation tells the editor to show a large input field for editing over multiple lines."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:146
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:143
 msgid "Limiting editor input ranges"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:148
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:145
 msgid "Allow integer values from 0 to 20."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:154
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:151
 msgid "Allow integer values from -10 to 20."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:160
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:157
 msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:166
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:163
 msgid "The limits can be only for the slider if you add the hints \"or_greater\" and/or \"or_less\"."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:175
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:172
 msgid "Floats with easing hint"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:177
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:174
 msgid "Display a visual representation of the 'ease()' function when editing."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:185
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:182
 msgid "Colors"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:187
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:184
 msgid "Regular color given as red-green-blue-alpha value."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:193
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:190
 msgid "Color given as red-green-blue value (alpha will always be 1)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:200
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:197
 msgid "Nodes"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:202
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:199
 msgid "Since Godot 4.0, nodes can be directly exported as properties in a script without having to use NodePaths:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:214
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:211
 msgid "Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:221
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:218
 msgid "If you want to limit the types of nodes for NodePaths, you can use the :ref:`@export_node_path<class_@GDScript_annotation_@export_node_path>` annotation:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:230
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:227
 msgid "Resources"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:236
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:233
 msgid "In the Inspector, you can then drag and drop a resource file from the FileSystem dock into the variable slot."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:239
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:236
 msgid "Opening the inspector dropdown may result in an extremely long list of possible classes to create, however. Therefore, if you specify an extension of Resource such as:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:247
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:244
 msgid "The drop-down menu will be limited to AnimationNode and all its inherited classes."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:250
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:247
 msgid "It must be noted that even if the script is not being run while in the editor, the exported properties are still editable. This can be used in conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:255
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:252
 msgid "Exporting bit flags"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:257
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:254
 msgid "Integers used as bit flags can store multiple ``true``/``false`` (boolean) values in one property. By using the ``@export_flags`` annotation, they can be set from the editor::"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:264
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:261
 msgid "You must provide a string description for each flag. In this example, ``Fire`` has value 1, ``Water`` has value 2, ``Earth`` has value 4 and ``Wind`` corresponds to value 8. Usually, constants should be defined accordingly (e.g. ``const ELEMENT_WIND = 8`` and so on)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:269
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:314
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:266
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:311
 msgid "You can add explicit values using a colon::"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:273
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:270
 msgid "Only power of 2 values are valid as bit flags options. The lowest allowed value is 1, as 0 means that nothing is selected. You can also add options that are a combination of other flags::"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:280
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:277
 msgid "Export annotations are also provided for the physics, render, and navigation layers defined in the project settings::"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:289
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:286
 msgid "Using bit flags requires some understanding of bitwise operations. If in doubt, use boolean variables instead."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:293
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:290
 msgid "Exporting enums"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:295
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:292
 msgid "Properties can be exported with a type hint referencing an enum to limit their values to the values of the enumeration. The editor will create a widget in the Inspector, enumerating the following as \"Thing 1\", \"Thing 2\", \"Another Thing\". The value will be stored as an integer."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:304
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:301
 msgid "Integer and string properties can also be limited to a specific list of values using the :ref:`@export_enum <class_@GDScript_annotation_@export_enum>` annotation. The editor will create a widget in the Inspector, enumerating the following as Warrior, Magician, Thief. The value will be stored as an integer, corresponding to the index of the selected option (i.e. ``0``, ``1``,  or ``2``)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:318
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:315
 msgid "If the type is String, the value will be stored as a string."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:324
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:321
 msgid "If you want to set an initial value, you must specify it explicitly::"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:329
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:326
 msgid "Exporting arrays"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:331
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:328
 msgid "Exported arrays can have initializers, but they must be constant expressions."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:333
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:330
 msgid "If the exported array specifies a type which inherits from Resource, the array values can be set in the inspector by dragging and dropping multiple files from the FileSystem dock at once."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:337
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:334
 msgid "The default value **must** be a constant expression."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:343
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:340
 msgid "Exported arrays can specify type (using the same hints as before)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:352
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:349
 msgid "You can omit the default value, but it would then be ``null`` if not assigned."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:359
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:356
 msgid "Arrays with specified types which inherit from resource can be set by drag-and-dropping multiple files from the FileSystem dock."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:367
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:364
 msgid "Packed type arrays also work, but only initialized empty:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:375
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:372
 msgid "Setting exported variables from a tool script"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:377
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:374
 msgid "When changing an exported variable's value from a script in :ref:`doc_gdscript_tool_mode`, the value in the inspector won't be updated automatically. To update it, call :ref:`notify_property_list_changed() <class_Object_method_notify_property_list_changed>` after setting the exported variable's value."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:384
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:381
 msgid "Advanced exports"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:386
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:383
 msgid "Not every type of export can be provided on the level of the language itself to avoid unnecessary design complexity. The following describes some more or less common exporting features which can be implemented with a low-level API."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:390
-msgid "Before reading further, you should get familiar with the way properties are handled and how they can be customized with :ref:`_set() <class_Object_method__set>`, :ref:`_get() <class_Object_method__get>`, and :ref:`_get_property_list() <class_Object_method__get_property_list>` methods as described in :ref:`doc_accessing_data_or_logic_from_object`."
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:387
+msgid "Before reading further, you should get familiar with the way properties are handled and how they can be customized with :ref:`_set() <class_Object_private_method__set>`, :ref:`_get() <class_Object_private_method__get>`, and :ref:`_get_property_list() <class_Object_private_method__get_property_list>` methods as described in :ref:`doc_accessing_data_or_logic_from_object`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:397
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:394
 msgid "For binding properties using the above methods in C++, see :ref:`doc_binding_properties_using_set_get_property_list`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:400
+#: ../../docs/tutorials/scripting/gdscript/gdscript_exports.rst:397
 msgid "The script must operate in the ``tool`` mode so the above methods can work from within the editor."
 msgstr ""
 

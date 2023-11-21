@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,51 +52,51 @@ msgstr ""
 msgid "These files should contain the following:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:109
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:112
 msgid "Next, you need to create a ``SCsub`` file so the build system compiles this module:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:121
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:124
 msgid "You'll need to install the external library on your machine to get the .a library files. See the library's official documentation for specific instructions on how to do this for your operation system. We've included the installation commands for Linux below, for reference."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:132
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:135
 msgid "The voices that Festival uses (and any other potential external/3rd-party resource) all have varying licenses and terms of use; some (if not most) of them may be be problematic with Godot, even if the Festival Library itself is MIT License compatible. Please be sure to check the licenses and terms of use."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:137
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:140
 msgid "The external library will also need to be installed inside your module to make the source files accessible to the compiler, while also keeping the module code self-contained. The festival and speech_tools libraries can be installed from the modules/tts/ directory via git using the following commands:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:147
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:150
 msgid "If you don't want the external repository source files committed to your repository, you can link to them instead by adding them as submodules (from within the modules/tts/ directory), as seen below:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:156
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:159
 msgid "Please note that Git submodules are not used in the Godot repository. If you are developing a module to be merged into the main Godot repository, you should not use submodules. If your module doesn't get merged in, you can always try to implement the external library as a GDExtension."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:161
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:164
 msgid "To add include directories for the compiler to look at you can append it to the environment's paths:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:181
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:184
 msgid "If you want to add custom compiler flags when building your module, you need to clone `env` first, so it won't add those flags to whole Godot build (which can cause errors). Example `SCsub` with custom flags:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:199
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:202
 msgid "The final module should look like this:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:217
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:220
 msgid "Using the module"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:219
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:222
 msgid "You can now use your newly created module from any script:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:228
+#: ../../docs/contributing/development/core_and_modules/binding_to_external_libraries.rst:231
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr ""
 

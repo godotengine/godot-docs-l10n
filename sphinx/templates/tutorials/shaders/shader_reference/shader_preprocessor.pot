@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -65,7 +65,7 @@ msgid "**Syntax:** ``#define <identifier> [replacement_code]``."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:47
-msgid "Defines the identifier after that directive as a macro, and replaces all successive occurrences of it with the replacement code given in the shader. Replacement is performed on a \"whole words\" basis, which means no replacement is performed if the string is part of another string (without any spaces separating it)."
+msgid "Defines the identifier after that directive as a macro, and replaces all successive occurrences of it with the replacement code given in the shader. Replacement is performed on a \"whole words\" basis, which means no replacement is performed if the string is part of another string (without any spaces or operators separating it)."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:53
@@ -77,218 +77,222 @@ msgid "If the replacement code is not defined, the identifier may only be used w
 msgstr ""
 
 #: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:59
+msgid "If the *concatenation* symbol (``##``) is present in the replacement code then it will be removed upon macro insertion, together with any space surrounding it, and join the surrounding words and arguments into a new token."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:74
 msgid "Compared to constants (``const CONSTANT = value;``), ``#define`` can be used anywhere within the shader (including in uniform hints). ``#define`` can also be used to insert arbitrary shader code at any location, while constants can't do that."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:94
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:109
 msgid "Defining a ``#define`` for an identifier that is already defined results in an error. To prevent this, use ``#undef <identifier>``."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:98
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:113
 msgid "#undef"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:100
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:115
 msgid "**Syntax:** ``#undef identifier``"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:102
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:117
 msgid "The ``#undef`` directive may be used to cancel a previously defined ``#define`` directive:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:123
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:138
 msgid "Without ``#undef`` in the above example, there would be a macro redefinition error."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:126
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:141
 msgid "#if"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:128
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:143
 msgid "**Syntax:** ``#if <condition>``"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:130
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:145
 msgid "The ``#if`` directive checks whether the ``condition`` passed. If it evaluates to a non-zero value, the code block is included, otherwise it is skipped."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:133
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:148
 msgid "To evaluate correctly, the condition must be an expression giving a simple floating-point, integer or boolean result. There may be multiple condition blocks connected by ``&&`` (AND) or ``||`` (OR) operators. It may be continued by a ``#else`` block, but **must** be ended with the ``#endif`` directive."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:148
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:163
 msgid "Using the ``defined()`` *preprocessor function*, you can check whether the passed identifier is defined a by ``#define`` placed above that directive. This is useful for creating multiple shader versions in the same file. It may be continued by a ``#else`` block, but must be ended with the ``#endif`` directive."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:153
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:168
 msgid "The ``defined()`` function's result can be negated by using the ``!`` (boolean NOT) symbol in front of it. This can be used to check whether a define is *not* set."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:166
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:181
 msgid "Be careful, as ``defined()`` must only wrap a single identifier within parentheses, never more:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:177
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:192
 msgid "In the shader editor, preprocessor branches that evaluate to ``false`` (and are therefore excluded from the final compiled shader) will appear grayed out. This does not apply to run-time ``if`` statements."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:181
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:196
 msgid "**#if preprocessor versus if statement: Performance caveats**"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:183
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:198
 msgid "The :ref:`shading language <doc_shading_language>` supports run-time ``if`` statements:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:195
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:210
 msgid "If the uniform is never changed, this behaves identical to the following usage of the ``#if`` preprocessor statement:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:208
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:223
 msgid "However, the ``#if`` variant can be faster in certain scenarios. This is because all run-time branches in a shader are still compiled and variables within those branches may still take up register space, even if they are never run in practice."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:213
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:228
 msgid "Modern GPUs are `quite effective <https://medium.com/@jasonbooth_86226/branching-on-a-gpu-18bfc83694f2>`__ at performing \"static\" branching. \"Static\" branching refers to ``if`` statements where *all* pixels/vertices evaluate to the same result in a given shader invocation. However, high amounts of :abbr:`VGPRs (Vector General-Purpose Register)` (which can be caused by having too many branches) can still slow down shader execution significantly."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:220
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:235
 msgid "#elif"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:222
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:237
 msgid "The ``#elif`` directive stands for \"else if\" and checks the condition passed if the above ``#if`` evaluated to ``false``. ``#elif`` can only be used within an ``#if`` block. It is possible to use several ``#elif`` statements after an ``#if`` statement."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:240
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:255
 msgid "Like with ``#if``, the ``defined()`` preprocessor function can be used:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:255
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:270
 msgid "#ifdef"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:257
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:272
 msgid "**Syntax:** ``#ifdef <identifier>``"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:259
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:274
 msgid "This is a shorthand for ``#if defined(...)``. Checks whether the passed identifier is defined by ``#define`` placed above that directive. This is useful for creating multiple shader versions in the same file. It may be continued by a ``#else`` block, but must be ended with the ``#endif`` directive."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:272
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:287
 msgid "The processor does *not* support ``#elifdef`` as a shortcut for ``#elif defined(...)``. Instead, use the following series of ``#ifdef`` and ``#else`` when you need more than two branches:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:291
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:306
 msgid "#ifndef"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:293
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:308
 msgid "**Syntax:** ``#ifndef <identifier>``"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:295
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:310
 msgid "This is a shorthand for ``#if !defined(...)``. Similar to ``#ifdef``, but checks whether the passed identifier is **not** defined by ``#define`` before that directive."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:299
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:314
 msgid "This is the exact opposite of ``#ifdef``; it will always match in situations where ``#ifdef`` would never match, and vice versa."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:315
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:330
 msgid "#else"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:317
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:332
 msgid "**Syntax:** ``#else``"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:319
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:334
 msgid "Defines the optional block which is included when the previously defined ``#if``, ``#elif``, ``#ifdef`` or ``#ifndef`` directive evaluates to false."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:337
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:352
 msgid "#endif"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:339
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:354
 msgid "**Syntax:** ``#endif``"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:341
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:356
 msgid "Used as terminator for the ``#if``, ``#ifdef``, ``#ifndef`` or subsequent ``#else`` directives."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:344
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:359
 msgid "#include"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:346
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:361
 msgid "**Syntax:** ``#include \"path\"``"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:348
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:363
 msgid "The ``#include`` directive includes the *entire* content of a shader include file in a shader. ``\"path\"`` can be an absolute ``res://`` path or relative to the current shader file. Relative paths are only allowed in shaders that are saved to ``.gdshader`` or ``.gdshaderinc`` files, while absolute paths can be used in shaders that are built into a scene/resource file."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:354
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:369
 msgid "You can create new shader includes by using the **File > Create Shader Include** menu option of the shader editor, or by creating a new :ref:`ShaderInclude<class_ShaderInclude>` resource in the FileSystem dock."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:358
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:373
 msgid "Shader includes can be included from within any shader, or other shader include, at any point in the file."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:361
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:376
 msgid "When including shader includes in the global scope of a shader, it is recommended to do this after the initial ``shader_type`` statement."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:364
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:379
 msgid "You can also include shader includes from within the body a function. Please note that the shader editor is likely going to report errors for your shader include's code, as it may not be valid outside of the context that it was written for. You can either choose to ignore these errors (the shader will still compile fine), or you can wrap the include in an ``#ifdef`` block that checks for a define from your shader."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:370
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:385
 msgid "``#include`` is useful for creating libraries of helper functions (or macros) and reducing code duplication. When using ``#include``, be careful about naming collisions, as redefining functions or macros is not allowed."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:374
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:389
 msgid "``#include`` is subject to several restrictions:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:376
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:391
 msgid "Only shader include resources (ending with ``.gdshaderinc``) can be included. ``.gdshader`` files cannot be included by another shader, but a ``.gdshaderinc`` file can include other ``.gdshaderinc`` files."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:379
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:394
 msgid "Cyclic dependencies are **not** allowed and will result in an error."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:380
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:395
 msgid "To avoid infinite recursion, include depth is limited to 25 steps."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:382
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:397
 msgid "Example shader include file:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:394
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:409
 msgid "Example base shader (using the include file we created above):"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:410
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:425
 msgid "#pragma"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:412
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:427
 msgid "**Syntax:** ``#pragma value``"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:414
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:429
 msgid "The ``#pragma`` directive provides additional information to the preprocessor or compiler."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:416
+#: ../../docs/tutorials/shaders/shader_reference/shader_preprocessor.rst:431
 msgid "Currently, it may have only one value: ``disable_preprocessor``. If you don't need the preprocessor, use that directive to speed up shader compilation by excluding the preprocessor step."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -52,79 +52,79 @@ msgstr ""
 msgid "Instead of property or method access, one can get Resources by load access."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:119
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:121
 msgid "Note the following:"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:121
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:123
 msgid "There are many ways in which a language can load such resources."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:123
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:125
 msgid "When designing how objects will access data, don't forget that one can pass resources around as references as well."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:126
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:128
 msgid "Keep in mind that loading a resource fetches the cached resource instance maintained by the engine. To get a new object, one must :ref:`duplicate <class_Resource_method_duplicate>` an existing reference or instantiate one from scratch with ``new()``."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:131
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:133
 msgid "Nodes likewise have an alternative access point: the SceneTree."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:265
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:267
 msgid "Accessing data or logic from an object"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:267
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:269
 msgid "Godot's scripting API is duck-typed. This means that if a script executes an operation, Godot doesn't validate that it supports the operation by **type**. It instead checks that the object **implements** the individual method."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:271
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:273
 msgid "For example, the :ref:`CanvasItem <class_CanvasItem>` class has a ``visible`` property. All properties exposed to the scripting API are in fact a setter and getter pair bound to a name. If one tried to access :ref:`CanvasItem.visible <class_CanvasItem_property_visible>`, then Godot would do the following checks, in order:"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:277
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:279
 msgid "If the object has a script attached, it will attempt to set the property through the script. This leaves open the opportunity for scripts to override a property defined on a base object by overriding the setter method for the property."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:282
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:284
 msgid "If the script does not have the property, it performs a HashMap lookup in the ClassDB for the \"visible\" property against the CanvasItem class and all of its inherited types. If found, it will call the bound setter or getter. For more information about HashMaps, see the :ref:`data preferences <doc_data_preferences>` docs."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:288
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:290
 msgid "If not found, it does an explicit check to see if the user wants to access the \"script\" or \"meta\" properties."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:291
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:293
 msgid "If not, it checks for a ``_set``/``_get`` implementation (depending on type of access) in the CanvasItem and its inherited types. These methods can execute logic that gives the impression that the Object has a property. This is also the case with the ``_get_property_list`` method."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:296
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:298
 msgid "Note that this happens even for non-legal symbol names, such as names starting with a digit or containing a slash."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:299
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:301
 msgid "As a result, this duck-typed system can locate a property either in the script, the object's class, or any class that object inherits, but only for things which extend Object."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:303
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:305
 msgid "Godot provides a variety of options for performing runtime checks on these accesses:"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:306
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:308
 msgid "A duck-typed property access. These will be property checks (as described above). If the operation isn't supported by the object, execution will halt."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:334
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:336
 msgid "A method check. In the case of :ref:`CanvasItem.visible <class_CanvasItem_property_visible>`, one can access the methods, ``set_visible`` and ``is_visible`` like any other method."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:472
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:474
 msgid "Outsource the access to a :ref:`Callable <class_Callable>`. These may be useful in cases where one needs the max level of freedom from dependencies. In this case, one relies on an external context to setup the method."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_interfaces.rst:534
+#: ../../docs/tutorials/best_practices/godot_interfaces.rst:536
 msgid "These strategies contribute to Godot's flexible design. Between them, users have a breadth of tools to meet their specific needs."
 msgstr ""
 

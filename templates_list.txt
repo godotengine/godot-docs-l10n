@@ -66,6 +66,7 @@ tutorials/editor/managing_editor_features.pot
 tutorials/migrating/index.pot
 tutorials/migrating/upgrading_to_godot_4.pot
 tutorials/migrating/upgrading_to_godot_4.1.pot
+tutorials/migrating/upgrading_to_godot_4.2.pot
 tutorials/2d/index.pot
 tutorials/2d/canvas_layers.pot
 tutorials/2d/2d_transforms.pot
@@ -125,7 +126,11 @@ tutorials/assets_pipeline/import_process.pot
 tutorials/assets_pipeline/importing_images.pot
 tutorials/assets_pipeline/importing_audio_samples.pot
 tutorials/assets_pipeline/importing_translations.pot
-tutorials/assets_pipeline/importing_scenes.pot
+tutorials/assets_pipeline/importing_3d_scenes/index.pot
+tutorials/assets_pipeline/importing_3d_scenes/available_formats.pot
+tutorials/assets_pipeline/importing_3d_scenes/model_export_considerations.pot
+tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.pot
+tutorials/assets_pipeline/importing_3d_scenes/import_configuration.pot
 tutorials/assets_pipeline/retargeting_3d_skeletons.pot
 tutorials/assets_pipeline/exporting_3d_scenes.pot
 tutorials/assets_pipeline/escn_exporter/index.pot
@@ -151,10 +156,9 @@ tutorials/export/exporting_for_macos.pot
 tutorials/export/running_on_macos.pot
 tutorials/export/exporting_for_windows.pot
 tutorials/export/changing_application_icon_for_windows.pot
-tutorials/export/exporting_for_uwp.pot
 tutorials/export/exporting_for_ios.pot
 tutorials/export/exporting_for_android.pot
-tutorials/export/android_custom_build.pot
+tutorials/export/android_gradle_build.pot
 tutorials/export/exporting_for_web.pot
 tutorials/export/exporting_for_dedicated_servers.pot
 tutorials/export/one-click_deploy.pot
@@ -162,6 +166,7 @@ tutorials/io/index.pot
 tutorials/io/background_loading.pot
 tutorials/io/data_paths.pot
 tutorials/io/saving_games.pot
+tutorials/io/runtime_file_loading_and_saving.pot
 tutorials/io/binary_serialization_api.pot
 tutorials/i18n/index.pot
 tutorials/i18n/internationalizing_games.pot
@@ -235,6 +240,7 @@ tutorials/physics/large_world_coordinates.pot
 tutorials/physics/troubleshooting_physics_issues.pot
 tutorials/platform/index.pot
 tutorials/platform/android/index.pot
+tutorials/platform/android/android_library.pot
 tutorials/platform/android/android_plugin.pot
 tutorials/platform/android/android_in_app_purchases.pot
 tutorials/platform/ios/index.pot
@@ -279,6 +285,7 @@ tutorials/scripting/c_sharp/c_sharp_exports.pot
 tutorials/scripting/c_sharp/c_sharp_global_classes.pot
 tutorials/scripting/c_sharp/c_sharp_style_guide.pot
 tutorials/scripting/c_sharp/diagnostics/index.pot
+tutorials/scripting/c_sharp/diagnostics/GD0107.pot
 tutorials/scripting/gdextension/index.pot
 tutorials/scripting/gdextension/what_is_gdextension.pot
 tutorials/scripting/gdextension/gdextension_cpp_example.pot
@@ -367,7 +374,6 @@ contributing/development/compiling/compiling_for_macos.pot
 contributing/development/compiling/compiling_for_android.pot
 contributing/development/compiling/compiling_for_ios.pot
 contributing/development/compiling/cross-compiling_for_ios_on_linux.pot
-contributing/development/compiling/compiling_for_uwp.pot
 contributing/development/compiling/compiling_for_web.pot
 contributing/development/compiling/compiling_with_dotnet.pot
 contributing/development/compiling/optimizing_for_size.pot

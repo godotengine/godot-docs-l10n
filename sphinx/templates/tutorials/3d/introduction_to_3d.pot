@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine latest\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-18 18:00+0200\n"
+"POT-Creation-Date: 2023-11-21 12:44+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -81,7 +81,7 @@ msgid "Immediate geometry"
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:83
-msgid "If, instead, you need to generate simple geometry that will be updated often, Godot provides a special node, :ref:`ImmediateMesh <class_ImmediateMesh>`, which provides an OpenGL 1.x style immediate-mode API to create points, lines, triangles, etc."
+msgid "If, instead, you need to generate simple geometry that will be updated often, Godot provides a special :ref:`ImmediateMesh <class_ImmediateMesh>` resource that can be used in a :ref:`MeshInstance3D <class_MeshInstance3D>` node. This provides an OpenGL 1.x-style immediate-mode API to create points, lines, triangles, etc."
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:90
@@ -177,70 +177,122 @@ msgid "To center the view on the selected object, press :kbd:`F`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:179
-msgid "View menu"
+msgid "Using Blender-style transform shortcuts"
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:181
-msgid "The view options are controlled by the \"View\" menu in the viewport's toolbar."
+msgid "Since Godot 4.2, you can enable Blender-style shortcuts for translating, rotating and scaling nodes. In Blender, these shortcuts are:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:184
+msgid ":kbd:`G` for translating"
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:185
-msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
+msgid ":kbd:`R` for rotating"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:189
-msgid "To hide a specific type of gizmos, you can toggle them off in the \"View\" menu."
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:186
+msgid ":kbd:`S` for scaling"
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:188
+msgid "After pressing a shortcut key while focusing on the 3D editor viewport, move the mouse or enter a number to move the selected node(s) by the specified amount in 3D units. You can constrain movement to a specific axis by specifying the axis as a letter, then the distance (if entering a value with the keyboard)."
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:194
-msgid "Default environment"
+msgid "For instance, to move the selection upwards by 2.5 units, enter the following sequence in order (Y+ is upwards in Godot):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:196
-msgid "When created from the Project Manager, the 3D environment has a default sky."
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:197
+msgid ":kbd:`G`-:kbd:`Y`-:kbd:`2`-:kbd:`.`-:kbd:`5`-:kbd:`Enter`"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:200
-msgid "Given how physically-based rendering works, it is advised to always try to work with a default environment in order to provide indirect and reflected light to your objects."
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:199
+msgid "To use Blender-style transform shortcuts in Godot, go to the Editor Settings' **Shortcuts** tab, then in the Spatial Editor section:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:202
+msgid "Bind **Begin Translate Transformation** to :kbd:`G`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:203
+msgid "Bind **Begin Rotate Transformation** to :kbd:`R`."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:204
+msgid "Bind **Begin Scale Transformation** to :kbd:`S`."
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:205
-msgid "Cameras"
+msgid "Finally, unbind **Scale Mode** so that its shortcut won't conflict with **Begin Rotate Transformation**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:207
-msgid "No matter how many objects are placed in the 3D space, nothing will be displayed unless a :ref:`Camera3D <class_Camera3D>` is also added to the scene. Cameras can work in either orthogonal or perspective projections:"
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:209
+msgid "View menu"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:214
-msgid "Cameras are associated with (and only display to) a parent or grandparent viewport. Since the root of the scene tree is a viewport, cameras will display on it by default, but if sub-viewports (either as render target or picture-in-picture) are desired, they need their own children cameras to display."
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:211
+msgid "The view options are controlled by the \"View\" menu in the viewport's toolbar."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:222
-msgid "When dealing with multiple cameras, the following rules are enforced for each viewport:"
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:215
+msgid "You can hide the gizmos in the 3D view of the editor through this menu:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:225
-msgid "If no cameras are present in the scene tree, the first one that enters it will become the active camera. Further cameras entering the scene will be ignored (unless they are set as *current*)."
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:219
+msgid "To hide a specific type of gizmos, you can toggle them off in the \"View\" menu."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:228
-msgid "If a camera has the \"*current*\" property set, it will be used regardless of any other camera in the scene. If the property is set, it will become active, replacing the previous camera."
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:224
+msgid "Default environment"
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:231
-msgid "If an active camera leaves the scene tree, the first camera in tree-order will take its place."
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:226
+msgid "When created from the Project Manager, the 3D environment has a default sky."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:230
+msgid "Given how physically-based rendering works, it is advised to always try to work with a default environment in order to provide indirect and reflected light to your objects."
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:235
-msgid "Lights"
+msgid "Cameras"
 msgstr ""
 
 #: ../../docs/tutorials/3d/introduction_to_3d.rst:237
+msgid "No matter how many objects are placed in the 3D space, nothing will be displayed unless a :ref:`Camera3D <class_Camera3D>` is also added to the scene. Cameras can work in either orthogonal or perspective projections:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:244
+msgid "Cameras are associated with (and only display to) a parent or grandparent viewport. Since the root of the scene tree is a viewport, cameras will display on it by default, but if sub-viewports (either as render target or picture-in-picture) are desired, they need their own children cameras to display."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:252
+msgid "When dealing with multiple cameras, the following rules are enforced for each viewport:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:255
+msgid "If no cameras are present in the scene tree, the first one that enters it will become the active camera. Further cameras entering the scene will be ignored (unless they are set as *current*)."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:258
+msgid "If a camera has the \"*current*\" property set, it will be used regardless of any other camera in the scene. If the property is set, it will become active, replacing the previous camera."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:261
+msgid "If an active camera leaves the scene tree, the first camera in tree-order will take its place."
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:265
+msgid "Lights"
+msgstr ""
+
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:267
 msgid "The background environment emits some ambient light which appears on surfaces. Still, without any light sources placed in the scene, the scene will appear quite dark unless the background environment is very bright."
 msgstr ""
 
-#: ../../docs/tutorials/3d/introduction_to_3d.rst:241
+#: ../../docs/tutorials/3d/introduction_to_3d.rst:271
 msgid "Most outdoor scenes have a directional light (the sun or moon), while indoor scenes typically have several positional lights (lamps, torches, …). See :ref:`doc_lights_and_shadows` for more information on setting up lights in Godot."
 msgstr ""
 
