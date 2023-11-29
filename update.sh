@@ -131,22 +131,26 @@ if [ "$add_langs" = true ]; then
 fi
 
 # Generate/Merge Sphinx PO files from Weblate PO file
+merge_sphinx_po() {
+  po=$WEBLATE_DIR"/$1.po"
+  echo "Merging $po..."
+  langdir="$SPHINX_PO_DIR/$lang/LC_MESSAGES"
+  mkdir -p "$langdir"
+  for template in $SPHINX_TEMPLATES; do
+    page=$(basename "$template" .pot)
+    dirpath=$(dirname "$template" | sed -e 's@'$SPHINX_TEMPLATES_DIR'@'"$langdir"'@')
+    mkdir -p "$dirpath"
+    output="$dirpath/$page.po"
+    msgmerge --lang="$lang" --no-location -C "$po" "$template" "$template" -o "$output"
+  done
+}
+
 if [ "$update_sphinx_po" = true ]; then
   echo "=== Merging Sphinx PO files with their template and Weblate PO file ==="
   # First clean previous folder to take into account potentially removed files
   rm -rf $SPHINX_PO_DIR
   mkdir $SPHINX_PO_DIR
   for lang in $SPHINX_BUILD_LANGS; do
-    po=$WEBLATE_DIR"/$lang.po"
-    echo "Merging $po..."
-    langdir="$SPHINX_PO_DIR/$lang/LC_MESSAGES"
-    mkdir -p "$langdir"
-    for template in $SPHINX_TEMPLATES; do
-      page=$(basename "$template" .pot)
-      dirpath=$(dirname "$template" | sed -e 's@'$SPHINX_TEMPLATES_DIR'@'"$langdir"'@')
-      mkdir -p "$dirpath"
-      output="$dirpath/$page.po"
-      msgmerge --lang="$lang" --no-location -C "$po" "$template" "$template" -o "$output"
-    done
+    merge_sphinx_po $lang &
   done
 fi
