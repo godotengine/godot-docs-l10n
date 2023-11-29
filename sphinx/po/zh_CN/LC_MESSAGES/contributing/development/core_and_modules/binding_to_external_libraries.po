@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "Next, you will create a header file with a TTS class:"
 msgstr "接下来, 您将使用简单的TTS类创建头文件:"
 
 msgid "And then you'll add the cpp file."
-msgstr "然后您将添加cpp文件."
+msgstr "然后你将添加cpp文件."
 
 msgid ""
 "Just as before, the new class needs to be registered somehow, so two more "
@@ -56,7 +56,7 @@ msgid ""
 "These files must be in the top-level folder of your module (next to your "
 "``SCsub`` and ``config.py`` files) for the module to be registered properly."
 msgstr ""
-"这些文件必须在您的模块的顶层文件夹中( ``SCsub`` 和 ``config.py`` 文件旁边), "
+"这些文件必须在你的模块的顶层文件夹中( ``SCsub`` 和 ``config.py`` 文件旁边), "
 "这样模块才能被正确注册."
 
 msgid "These files should contain the following:"
@@ -104,7 +104,7 @@ msgid ""
 "repository, you can link to them instead by adding them as submodules (from "
 "within the modules/tts/ directory), as seen below:"
 msgstr ""
-"如果不希望将外部仓库的源文件提交到您的仓库中，您可以通过将它们添加为子模块"
+"如果不希望将外部仓库的源文件提交到你的仓库中，你可以通过将它们添加为子模块"
 "（从 ``modules/tts/`` 目录中）来链接它们，如下所示："
 
 #, fuzzy
@@ -139,7 +139,7 @@ msgid "Using the module"
 msgstr "使用模块"
 
 msgid "You can now use your newly created module from any script:"
-msgstr "现在, 您可以通过任何脚本使用新创建的模块:"
+msgstr "现在, 你可以通过任何脚本使用新创建的模块:"
 
 msgid "And the output will be ``is_spoken: True`` if the text is spoken."
 msgstr "如果说出文本, 输出将是 ``is_spoken:True`` ."

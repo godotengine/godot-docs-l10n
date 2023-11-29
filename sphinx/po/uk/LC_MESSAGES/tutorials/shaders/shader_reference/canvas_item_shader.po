@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,7 +92,13 @@ msgstr ""
 msgid "**skip_vertex_transform**"
 msgstr ""
 
-msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
+msgid "VERTEX needs to be transformed manually in vertex function."
+msgstr ""
+
+msgid "**world_vertex_coords**"
+msgstr ""
+
+msgid "VERTEX is modified in world coordinates instead of local."
 msgstr ""
 
 #, fuzzy
@@ -236,7 +242,7 @@ msgstr ""
 
 msgid ""
 "Normalized pixel size of default 2D texture. For a Sprite2D with a texture "
-"of size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
+"of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 msgstr ""
 
 msgid "inout vec2 **VERTEX**"
@@ -276,18 +282,18 @@ msgstr ""
 msgid ""
 "Certain Nodes (for example, :ref:`Sprite2Ds <class_Sprite2D>`) display a "
 "texture by default. However, when a custom fragment function is attached to "
-"these nodes, the texture lookup needs to be done manually. Godot does not "
-"provide the texture color in the ``COLOR`` built-in variable; to read the "
-"texture color for such nodes, use:"
+"these nodes, the texture lookup needs to be done manually. Godot provides "
+"the texture color in the ``COLOR`` built-in variable multiplied by the "
+"node's color. To read the texture color by itself, you can use:"
 msgstr ""
 
 msgid ""
-"This differs from the behavior of the built-in normal map. If a normal map "
-"is attached, Godot uses it by default and assigns its value to the built-in "
-"``NORMAL`` variable. If you are using a normal map meant for use in 3D, it "
-"will appear inverted. In order to use it in your shader, you must assign it "
-"to the ``NORMALMAP`` property. Godot will handle converting it for use in 2D "
-"and overwriting ``NORMAL``."
+"Similarly, if a normal map is used in the :ref:`CanvasTexture "
+"<class_CanvasTexture>`, Godot uses it by default and assigns its value to "
+"the built-in ``NORMAL`` variable. If you are using a normal map meant for "
+"use in 3D, it will appear inverted. In order to use it in your shader, you "
+"must assign it to the ``NORMALMAP`` property. Godot will handle converting "
+"it for use in 2D and overwriting ``NORMAL``."
 msgstr ""
 
 msgid "in vec4 **FRAGCOORD**"
@@ -394,8 +400,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Color from vertex function and output fragment color. If unused, will be set "
-"to **TEXTURE** color."
+"Color from vertex function multiplied by the **TEXTURE** color. Also output "
+"color value."
 msgstr ""
 
 #, fuzzy
@@ -416,6 +422,11 @@ msgid ""
 msgstr ""
 
 msgid ""
+"If you define a light function it will replace the built in light function, "
+"even if your light function is empty."
+msgstr ""
+
+msgid ""
 "Below is an example of a light shader that takes a CanvasItem's normal map "
 "into account:"
 msgstr ""
@@ -430,9 +441,7 @@ msgstr "Введення"
 msgid "in vec4 **COLOR**"
 msgstr ""
 
-msgid ""
-"Input Color. This is the output of the fragment function with final "
-"modulation applied."
+msgid "Input Color. This is the output of the fragment function."
 msgstr ""
 
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
@@ -441,13 +450,18 @@ msgstr ""
 msgid "Current texture in use for CanvasItem."
 msgstr ""
 
+msgid ""
+"Normalized pixel size of **TEXTURE**. For a Sprite2D with a **TEXTURE** of "
+"size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
+msgstr ""
+
 msgid "UV for Point Sprite."
 msgstr "УФ для точкового спрайта."
 
 msgid "in vec4 **LIGHT_COLOR**"
 msgstr ""
 
-msgid "Color of Light."
+msgid "Color of Light multiplied by Light's texture."
 msgstr ""
 
 msgid "in float **LIGHT_ENERGY**"
@@ -485,10 +499,9 @@ msgstr ""
 msgid "inout vec4 **LIGHT**"
 msgstr ""
 
-msgid ""
-"Value from the Light texture and output color. Can be modified. If not used, "
-"the light function is ignored."
-msgstr ""
+#, fuzzy
+msgid "Output color for this Light."
+msgstr "Лог виводу"
 
 msgid "Specular shininess, as set in the object's texture."
 msgstr ""
@@ -529,7 +542,7 @@ msgstr ""
 msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 msgstr ""
 
-msgid "Performs an SDF normal texture lookup."
+msgid "Calculates a normal from the SDF texture."
 msgstr ""
 
 msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"

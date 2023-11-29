@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,6 +143,128 @@ msgstr ""
 msgid ""
 "When connecting any ``vector`` output to a ``scalar`` input, the value of "
 "the scalar will be the average of the vector's components."
+msgstr ""
+
+#, fuzzy
+msgid "Visual Shader node interface"
+msgstr "Görsel Gölgelendirici düğümleri"
+
+msgid ""
+"Visual shader nodes have input and output ports. The input ports are located "
+"on the left side of the node, and output ports are located on the right side "
+"of the node."
+msgstr ""
+
+msgid "These ports are colored to differentiate type of port:"
+msgstr ""
+
+msgid "scalar"
+msgstr ""
+
+#, fuzzy
+msgid "vector"
+msgstr "Vektör"
+
+msgid "boolean"
+msgstr ""
+
+#, fuzzy
+msgid "transform"
+msgstr "Dönüştürme"
+
+#, fuzzy
+msgid "sampler"
+msgstr "Örnek:"
+
+#, fuzzy
+msgid "Port types"
+msgstr "Taşıyıcı türler"
+
+msgid "Type"
+msgstr "Tip"
+
+msgid "Color"
+msgstr "Renk"
+
+msgid "Description"
+msgstr "Tanım"
+
+msgid "Example"
+msgstr ""
+
+#, fuzzy
+msgid "Scalar"
+msgstr "Ölçek"
+
+msgid "Cyan"
+msgstr ""
+
+msgid "Scalar is a single value."
+msgstr ""
+
+msgid "|scalar|"
+msgstr ""
+
+msgid "Vector"
+msgstr "Vektör"
+
+msgid "Purple"
+msgstr ""
+
+msgid "Vector is a set of values."
+msgstr ""
+
+#, fuzzy
+msgid "|vector|"
+msgstr "Vektör"
+
+#, fuzzy
+msgid "Boolean"
+msgstr "değer"
+
+msgid "Blue"
+msgstr ""
+
+msgid "On or off, true or false."
+msgstr ""
+
+msgid "|boolean|"
+msgstr ""
+
+msgid "Transform"
+msgstr "Dönüştürme"
+
+#, fuzzy
+msgid "Orange"
+msgstr "Değişiklikler"
+
+msgid "A matrix, usually used to transform vertices."
+msgstr ""
+
+#, fuzzy
+msgid "|transform|"
+msgstr "Dönüştürme"
+
+#, fuzzy
+msgid "Sampler"
+msgstr "Derleme"
+
+msgid "Yellow"
+msgstr ""
+
+msgid "A texture sampler. It can be used to sample textures."
+msgstr ""
+
+msgid "|sampler|"
+msgstr ""
+
+msgid ""
+"All of the types are used in the calculations of vertices, fragments, and "
+"lights in the shader. For example: matrix multiplication, vector addition, "
+"or scalar division."
+msgstr ""
+
+msgid "There are other types but these are the main ones."
 msgstr ""
 
 msgid "Visual Shader nodes"

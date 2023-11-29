@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -207,6 +207,132 @@ msgid ""
 msgstr ""
 "Cuando se conecta cualquier salida ``vector`` a una entrada ``scalar``, el "
 "valor del escalar será el promedio de los componentes del vector."
+
+#, fuzzy
+msgid "Visual Shader node interface"
+msgstr "Nodos de Visual Shaders"
+
+msgid ""
+"Visual shader nodes have input and output ports. The input ports are located "
+"on the left side of the node, and output ports are located on the right side "
+"of the node."
+msgstr ""
+
+msgid "These ports are colored to differentiate type of port:"
+msgstr ""
+
+msgid "scalar"
+msgstr ""
+
+#, fuzzy
+msgid "vector"
+msgstr "vector2"
+
+msgid "boolean"
+msgstr "boolean"
+
+#, fuzzy
+msgid "transform"
+msgstr "transformación 2d"
+
+#, fuzzy
+msgid "sampler"
+msgstr "simple"
+
+#, fuzzy
+msgid "Port types"
+msgstr "Tipos principales"
+
+msgid "Type"
+msgstr "Tipo"
+
+msgid "Color"
+msgstr "Color"
+
+msgid "Description"
+msgstr "Descripción"
+
+msgid "Example"
+msgstr "Ejemplo"
+
+#, fuzzy
+msgid "Scalar"
+msgstr "Escala"
+
+msgid "Cyan"
+msgstr ""
+
+msgid "Scalar is a single value."
+msgstr ""
+
+msgid "|scalar|"
+msgstr ""
+
+msgid "Vector"
+msgstr "Vector"
+
+msgid "Purple"
+msgstr ""
+
+msgid "Vector is a set of values."
+msgstr ""
+
+#, fuzzy
+msgid "|vector|"
+msgstr "vector2"
+
+#, fuzzy
+msgid "Boolean"
+msgstr "boolean"
+
+msgid "Blue"
+msgstr ""
+
+msgid "On or off, true or false."
+msgstr ""
+
+#, fuzzy
+msgid "|boolean|"
+msgstr "boolean"
+
+msgid "Transform"
+msgstr "Transformar"
+
+#, fuzzy
+msgid "Orange"
+msgstr "Cambios"
+
+#, fuzzy
+msgid "A matrix, usually used to transform vertices."
+msgstr "Matriz 3 × 2 utilizada para transformaciones 2D."
+
+#, fuzzy
+msgid "|transform|"
+msgstr "transformación 2d"
+
+#, fuzzy
+msgid "Sampler"
+msgstr "Sampler2D"
+
+msgid "Yellow"
+msgstr ""
+
+msgid "A texture sampler. It can be used to sample textures."
+msgstr ""
+
+#, fuzzy
+msgid "|sampler|"
+msgstr "Sampler2D"
+
+msgid ""
+"All of the types are used in the calculations of vertices, fragments, and "
+"lights in the shader. For example: matrix multiplication, vector addition, "
+"or scalar division."
+msgstr ""
+
+#, fuzzy
+msgid "There are other types but these are the main ones."
+msgstr "Hay dos lugares donde las plantillas pueden ser colocadas."
 
 msgid "Visual Shader nodes"
 msgstr "Nodos de Visual Shaders"

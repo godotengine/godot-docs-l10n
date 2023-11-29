@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -317,6 +317,67 @@ msgstr ""
 
 msgid ":ref:`doc_overriding_build_options`."
 msgstr ": ref: `doc_overriding_build_options`."
+
+msgid "Optimizing the distribution of your project"
+msgstr ""
+
+#, fuzzy
+msgid "Desktop"
+msgstr "**Опис**"
+
+msgid ""
+"This section is only relevant when distributing the files on a desktop "
+"platform that doesn't perform its own compression or packing. As such, this "
+"advice is relevant when you distribute ZIP archives on itch.io or GitHub "
+"Releases."
+msgstr ""
+
+msgid ""
+"Platforms like Steam already apply their own compression scheme, so you "
+"don't need to create a ZIP archive to distribute files in the first place."
+msgstr ""
+
+msgid ""
+"As an aside, you can look into optimizing the distribution of your project "
+"itself. This can be done even without recompiling the export template."
+msgstr ""
+
+msgid ""
+"`7-Zip <https://7-zip.org/>`__ can be used to create ZIP archives that are "
+"more efficient than usual, while remaining compatible with every ZIP "
+"extractor (including Windows' own built-in extractor). ZIP size reduction in "
+"a large project can reach dozens of megabytes compared to a typical ZIP "
+"compressor, although average savings are in the 1-5 MB range. Creating this "
+"ZIP archive will take longer than usual, but it will extract just as fast as "
+"any other ZIP archive."
+msgstr ""
+
+msgid ""
+"When using the 7-Zip GUI, this is done by creating a ZIP archive with the "
+"Ultra compression mode. When using the command line, this is done using the "
+"following command:"
+msgstr ""
+
+msgid "Web"
+msgstr "Інтернет"
+
+msgid ""
+"Enabling gzip or Brotli compression for all file types from the web export "
+"(especially the ``.wasm`` and ``.pck``) can reduce the download size "
+"significantly, leading to faster loading times, especially on slow "
+"connections."
+msgstr ""
+
+msgid ""
+"Creating precompressed gzip or Brotli files with a high compression level "
+"can be even more efficient, as long as the web server is configured to serve "
+"those files when they exist. When supported, Brotli should be preferred over "
+"gzip as it has a greater potential for file size reduction."
+msgstr ""
+
+#, fuzzy
+msgid "See :ref:`doc_exporting_for_web_serving_the_files` for instructions."
+msgstr "Додаткову інформацію дивіться в :ref:`doc_exporting_projects`."
 
 msgid "Translation status"
 msgstr "Стан перекладу"

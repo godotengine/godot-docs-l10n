@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -201,6 +201,133 @@ msgid ""
 msgstr ""
 "``vector`` 出力を ``scalar`` 入力に接続すると、スカラーの値はベクトルの要素の"
 "平均になります。"
+
+#, fuzzy
+msgid "Visual Shader node interface"
+msgstr "ビジュアルシェーダーノード"
+
+msgid ""
+"Visual shader nodes have input and output ports. The input ports are located "
+"on the left side of the node, and output ports are located on the right side "
+"of the node."
+msgstr ""
+
+msgid "These ports are colored to differentiate type of port:"
+msgstr ""
+
+msgid "scalar"
+msgstr ""
+
+#, fuzzy
+msgid "vector"
+msgstr "\\ vector2"
+
+#, fuzzy
+msgid "boolean"
+msgstr "\\ bool"
+
+#, fuzzy
+msgid "transform"
+msgstr "\\ transform2d"
+
+#, fuzzy
+msgid "sampler"
+msgstr "シンプルな"
+
+#, fuzzy
+msgid "Port types"
+msgstr "コアタイプ"
+
+msgid "Type"
+msgstr "タイプ(型)"
+
+msgid "Color"
+msgstr "色"
+
+msgid "Description"
+msgstr "説明"
+
+msgid "Example"
+msgstr "例"
+
+#, fuzzy
+msgid "Scalar"
+msgstr "スケール"
+
+msgid "Cyan"
+msgstr ""
+
+msgid "Scalar is a single value."
+msgstr ""
+
+msgid "|scalar|"
+msgstr ""
+
+msgid "Vector"
+msgstr "Vector"
+
+msgid "Purple"
+msgstr ""
+
+msgid "Vector is a set of values."
+msgstr ""
+
+#, fuzzy
+msgid "|vector|"
+msgstr "\\ vector2"
+
+#, fuzzy
+msgid "Boolean"
+msgstr "\\ bool"
+
+msgid "Blue"
+msgstr ""
+
+msgid "On or off, true or false."
+msgstr ""
+
+#, fuzzy
+msgid "|boolean|"
+msgstr "\\ bool"
+
+msgid "Transform"
+msgstr "トランスフォーム"
+
+#, fuzzy
+msgid "Orange"
+msgstr "変更点"
+
+#, fuzzy
+msgid "A matrix, usually used to transform vertices."
+msgstr "2次元の幾何学変換に使用される3x2行列です。"
+
+#, fuzzy
+msgid "|transform|"
+msgstr "\\ transform2d"
+
+#, fuzzy
+msgid "Sampler"
+msgstr "\\ Sampler2D"
+
+msgid "Yellow"
+msgstr ""
+
+msgid "A texture sampler. It can be used to sample textures."
+msgstr ""
+
+#, fuzzy
+msgid "|sampler|"
+msgstr "\\ Sampler2D"
+
+msgid ""
+"All of the types are used in the calculations of vertices, fragments, and "
+"lights in the shader. For example: matrix multiplication, vector addition, "
+"or scalar division."
+msgstr ""
+
+#, fuzzy
+msgid "There are other types but these are the main ones."
+msgstr "ディテールの使用をコントロールする設定がいくつかあります。"
 
 msgid "Visual Shader nodes"
 msgstr "ビジュアルシェーダーノード"

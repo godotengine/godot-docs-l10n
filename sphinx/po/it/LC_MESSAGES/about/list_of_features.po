@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -927,6 +927,12 @@ msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
 msgstr ""
 
 msgid ""
+"AMD FidelityFX Super Resolution 2.2 :ref:`antialiasing "
+"<doc_3d_antialiasing>` (FSR2), which can be used at native resolution as a "
+"form of high-quality temporal antialiasing."
+msgstr ""
+
+msgid ""
 "Multi-sample antialiasing (MSAA), for both :ref:`doc_2d_antialiasing` and :"
 "ref:`doc_3d_antialiasing`."
 msgstr ""
@@ -956,8 +962,8 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Resolution scaling uses bilinear filtering or AMD FidelityFX Super "
-"Resolution 1.0 (FSR)."
+"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
+"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
 msgstr ""
 
 msgid ""
@@ -1591,16 +1597,30 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Including support for popular headsets like the Meta Quest and the Valve "
-"Index."
+"Including support for popular desktop headsets like the Valve Index, WMR "
+"headsets, and Quest over Link."
 msgstr ""
 "Include il supporto per i visori più popolari come Meta Quest e Valve Index."
 
-msgid "Support for ARKit on iOS out of the box."
-msgstr "Supporto per ARKit su iOS pronto all'uso."
+msgid ""
+"Support for :ref:`Android based headsets <doc_deploying_to_android>` using "
+"OpenXR through a plugin."
+msgstr ""
 
-msgid "Support for the OpenVR APIs."
-msgstr "Supporto per le API OpenVR."
+#, fuzzy
+msgid ""
+"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
+"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
+msgstr ""
+"Include il supporto per i visori più popolari come Meta Quest e Valve Index."
+
+msgid "Other devices supported through an XR plugin structure."
+msgstr ""
+
+msgid ""
+"Various advanced toolkits are available that implement common features "
+"required by XR applications."
+msgstr ""
 
 msgid "GUI system"
 msgstr "Sistema GUI"

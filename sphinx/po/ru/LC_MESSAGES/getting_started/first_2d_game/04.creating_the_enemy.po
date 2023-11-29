@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,7 +40,6 @@ msgstr ""
 msgid "Node setup"
 msgstr "Настройка узла"
 
-#, fuzzy
 msgid "Click Scene -> New Scene from the top menu and add the following nodes:"
 msgstr "Нажмите \"Сцена\" -> \"Новая сцена\" и добавьте следующие узлы:"
 
@@ -119,10 +118,11 @@ msgstr ""
 "Также как изображения игрока, изображения мобов нужно уменьшить. Установите "
 "для ``AnimatedSprite`` в свойстве ``Scale`` значение ``(0.75, 0.75)``."
 
+#, fuzzy
 msgid ""
 "As in the ``Player`` scene, add a ``CapsuleShape2D`` for the collision. To "
-"align the shape with the image, you'll need to set the ``Rotation Degrees`` "
-"property to ``90`` (under \"Transform\" in the Inspector)."
+"align the shape with the image, you'll need to set the ``Rotation`` property "
+"to ``90`` (under \"Transform\" in the Inspector)."
 msgstr ""
 "Как и в сцене ``Player``, добавьте форму ``CapsuleShape2D`` для расчета "
 "столкновений. Чтобы выровнять фигуру с изображением, вам нужно установить "

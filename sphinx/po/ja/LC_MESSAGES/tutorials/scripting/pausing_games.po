@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -143,32 +143,38 @@ msgid ""
 msgstr ""
 
 #, fuzzy
-msgid "Pause Menu Example"
+msgid "Pause menu example"
 msgstr "シーンを一時停止"
+
+msgid "Start by creating a button that will be used to pause the game."
+msgstr ""
 
 #, fuzzy
 msgid ""
-"Here is an example of a pause menu. Create a popup or panel with controls "
-"inside, and set its pause mode to \"When Paused\" then hide it. By setting "
-"the root of the pause popup to \"When Paused\", all children and "
-"grandchildren will inherit that state. This way, this branch of the scene "
-"tree will continue working when paused."
+"Create a menu containing a close button, set the **Process Mode** of the "
+"menu's root node to **When Paused**, then hide the menu. Since the process "
+"mode is set to **When Paused** on the root node, all its children and "
+"grandchildren will inherit that process mode. This way, all the nodes in the "
+"menu will start processing when the game is paused."
 msgstr ""
 "一時停止ポップアップのルートを \"Process\" に設定するだけで、すべての子と孫が"
 "その状態を継承します。この場合、シーンツリーのこのブランチは、一時停止しても"
 "機能し続けます。"
 
 msgid ""
-"Finally, make it so when a pause button is pressed (any button will do), "
-"enable the pause and show the pause screen."
+"Attach a script to the menu's root node, connect the pause button created "
+"earlier to a new method in the script, and inside that method pause the game "
+"and show the pause menu."
 msgstr ""
-"最後に、一時停止ボタンが押されたとき(どのボタンでも実行可能)、一時停止を有効"
-"にして一時停止画面を表示するようにします。"
+
+msgid ""
+"Finally, connect the menu's close button to a new method in the script. "
+"Inside that method, unpause the game and hide the pause menu."
+msgstr ""
 
 #, fuzzy
-msgid "To unpause, do the opposite when the pause screen is closed:"
-msgstr ""
-"一時停止を解除するには、一時停止画面が閉じているときに反対の操作を行います:"
+msgid "You should now have a working pause menu."
+msgstr "これで、[シーン]タブにスプライトノードのみが追加されました。"
 
 msgid "Translation status"
 msgstr "翻訳ステータス"

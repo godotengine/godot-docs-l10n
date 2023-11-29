@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -99,8 +99,16 @@ msgstr "ライトパスでのみ描画します。"
 msgid "**skip_vertex_transform**"
 msgstr "\\ **skip_vertex_transform**"
 
-msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
+#, fuzzy
+msgid "VERTEX needs to be transformed manually in vertex function."
 msgstr "VERTEX/NORMAL/その他は、頂点関数で手動で変換する必要があります。"
+
+msgid "**world_vertex_coords**"
+msgstr "\\ **world_vertex_coords**"
+
+#, fuzzy
+msgid "VERTEX is modified in world coordinates instead of local."
+msgstr "頂点/法線/その他は、ローカル座標ではなくワールド座標で変更されます。"
 
 #, fuzzy
 msgid "Built-ins"
@@ -263,7 +271,7 @@ msgstr "\\ in vec2 **TEXTURE_PIXEL_SIZE**"
 #, fuzzy
 msgid ""
 "Normalized pixel size of default 2D texture. For a Sprite2D with a texture "
-"of size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
+"of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 msgstr ""
 "デフォルトの2Dテクスチャの正規化されたピクセルサイズ。サイズが64x32pxのテクス"
 "チャを持つスプライトの場合、\\ **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, "
@@ -308,9 +316,9 @@ msgstr "フラグメント用ビルトイン"
 msgid ""
 "Certain Nodes (for example, :ref:`Sprite2Ds <class_Sprite2D>`) display a "
 "texture by default. However, when a custom fragment function is attached to "
-"these nodes, the texture lookup needs to be done manually. Godot does not "
-"provide the texture color in the ``COLOR`` built-in variable; to read the "
-"texture color for such nodes, use:"
+"these nodes, the texture lookup needs to be done manually. Godot provides "
+"the texture color in the ``COLOR`` built-in variable multiplied by the "
+"node's color. To read the texture color by itself, you can use:"
 msgstr ""
 "特定のノード(たとえば、\\ :ref:`Sprites <class_Sprite>`)は、デフォルトでテク"
 "スチャを表示します。ただし、カスタムフラグメント関数がこれらのノードにアタッ"
@@ -320,12 +328,12 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"This differs from the behavior of the built-in normal map. If a normal map "
-"is attached, Godot uses it by default and assigns its value to the built-in "
-"``NORMAL`` variable. If you are using a normal map meant for use in 3D, it "
-"will appear inverted. In order to use it in your shader, you must assign it "
-"to the ``NORMALMAP`` property. Godot will handle converting it for use in 2D "
-"and overwriting ``NORMAL``."
+"Similarly, if a normal map is used in the :ref:`CanvasTexture "
+"<class_CanvasTexture>`, Godot uses it by default and assigns its value to "
+"the built-in ``NORMAL`` variable. If you are using a normal map meant for "
+"use in 3D, it will appear inverted. In order to use it in your shader, you "
+"must assign it to the ``NORMALMAP`` property. Godot will handle converting "
+"it for use in 2D and overwriting ``NORMAL``."
 msgstr ""
 "これは、ビルトイン法線マップの動作とは異なります。法線マップがアタッチされて"
 "いる場合、Godotはデフォルトでそれを使用し、その値を組み込みの ``NORMAL`` 変数"
@@ -449,9 +457,10 @@ msgid ""
 "represents height."
 msgstr ""
 
+#, fuzzy
 msgid ""
-"Color from vertex function and output fragment color. If unused, will be set "
-"to **TEXTURE** color."
+"Color from vertex function multiplied by the **TEXTURE** color. Also output "
+"color value."
 msgstr ""
 "頂点関数の色と出力フラグメントの色。使用しない場合、\\ **TEXTURE ** 色に設定"
 "されます。"
@@ -481,6 +490,11 @@ msgstr ""
 "ジェクトを表示する場合に役立ちます。"
 
 msgid ""
+"If you define a light function it will replace the built in light function, "
+"even if your light function is empty."
+msgstr ""
+
+msgid ""
 "Below is an example of a light shader that takes a CanvasItem's normal map "
 "into account:"
 msgstr ""
@@ -496,9 +510,7 @@ msgid "in vec4 **COLOR**"
 msgstr "\\ in vec4 **COLOR**"
 
 #, fuzzy
-msgid ""
-"Input Color. This is the output of the fragment function with final "
-"modulation applied."
+msgid "Input Color. This is the output of the fragment function."
 msgstr ""
 "入力される色。これは、最終的な変調が適用されたフラグメント関数の出力です。"
 
@@ -508,6 +520,15 @@ msgstr "頂点関数からのUV。フラグメント関数のUVと同等です�
 msgid "Current texture in use for CanvasItem."
 msgstr "CanvasItemに使用されている現在のテクスチャ。"
 
+#, fuzzy
+msgid ""
+"Normalized pixel size of **TEXTURE**. For a Sprite2D with a **TEXTURE** of "
+"size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
+msgstr ""
+"デフォルトの2Dテクスチャの正規化されたピクセルサイズ。サイズが64x32pxのテクス"
+"チャを持つスプライトの場合、\\ **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, "
+"1/32)`"
+
 msgid "UV for Point Sprite."
 msgstr "ポイントスプライトのUV。"
 
@@ -515,8 +536,8 @@ msgstr "ポイントスプライトのUV。"
 msgid "in vec4 **LIGHT_COLOR**"
 msgstr "\\ in vec3 **LIGHT_COLOR**"
 
-msgid "Color of Light."
-msgstr "ライトの色。"
+msgid "Color of Light multiplied by Light's texture."
+msgstr ""
 
 #, fuzzy
 msgid "in float **LIGHT_ENERGY**"
@@ -560,12 +581,9 @@ msgstr "``world_position`` は頂点関数またはフラグメント関数で�
 msgid "inout vec4 **LIGHT**"
 msgstr "\\ inout vec4 **LIGHT**"
 
-msgid ""
-"Value from the Light texture and output color. Can be modified. If not used, "
-"the light function is ignored."
-msgstr ""
-"ライトテクスチャと出力カラーの値。変更できます。使用しない場合、ライト関数は"
-"無視されます。"
+#, fuzzy
+msgid "Output color for this Light."
+msgstr "各ピクセルの出力色。"
 
 msgid "Specular shininess, as set in the object's texture."
 msgstr ""
@@ -610,7 +628,7 @@ msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 msgstr ""
 
 #, fuzzy
-msgid "Performs an SDF normal texture lookup."
+msgid "Calculates a normal from the SDF texture."
 msgstr "デフォルトの2D法線テクスチャ。"
 
 msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -898,6 +898,12 @@ msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
 msgstr "時間 :ref:`抗鋸齒 <doc_3d_antialiasing>` （TAA）。"
 
 msgid ""
+"AMD FidelityFX Super Resolution 2.2 :ref:`antialiasing "
+"<doc_3d_antialiasing>` (FSR2), which can be used at native resolution as a "
+"form of high-quality temporal antialiasing."
+msgstr ""
+
+msgid ""
 "Multi-sample antialiasing (MSAA), for both :ref:`doc_2d_antialiasing` and :"
 "ref:`doc_3d_antialiasing`."
 msgstr ""
@@ -931,9 +937,10 @@ msgstr ""
 "支援 :ref:`以較低解析度渲染 3D <doc_resolution_scaling>` ，同時保持原始比例"
 "的 2D 渲染。 這可用於提高低端系統的性能或改善高端系統的視覺效果。"
 
+#, fuzzy
 msgid ""
-"Resolution scaling uses bilinear filtering or AMD FidelityFX Super "
-"Resolution 1.0 (FSR)."
+"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
+"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
 msgstr ""
 "解析度縮放使用了雙線性篩選或 AMD FidelityFX Super Resolution 1.0 （FSR）。"
 
@@ -1507,16 +1514,30 @@ msgstr "支援 XR (AR 與 VR)"
 msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
 msgstr "開箱即用的 :ref:`OpenXR 支援 <doc_setting_up_xr>` 。"
 
+#, fuzzy
 msgid ""
-"Including support for popular headsets like the Meta Quest and the Valve "
-"Index."
+"Including support for popular desktop headsets like the Valve Index, WMR "
+"headsets, and Quest over Link."
 msgstr "包含對 Meta Quest、Valve Index 等流行頭戴式裝置的支援。"
 
-msgid "Support for ARKit on iOS out of the box."
-msgstr "開箱即用支援 iOS 上的 ARKit。"
+msgid ""
+"Support for :ref:`Android based headsets <doc_deploying_to_android>` using "
+"OpenXR through a plugin."
+msgstr ""
 
-msgid "Support for the OpenVR APIs."
-msgstr "支援 OpenXR 與 OpenVR API。"
+#, fuzzy
+msgid ""
+"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
+"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
+msgstr "包含對 Meta Quest、Valve Index 等流行頭戴式裝置的支援。"
+
+msgid "Other devices supported through an XR plugin structure."
+msgstr ""
+
+msgid ""
+"Various advanced toolkits are available that implement common features "
+"required by XR applications."
+msgstr ""
 
 msgid "GUI system"
 msgstr "GUI 圖形界面系統"

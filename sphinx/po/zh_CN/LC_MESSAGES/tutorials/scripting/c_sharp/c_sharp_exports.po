@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -42,9 +42,9 @@ msgid ""
 "designers can modify values that later influence how the program runs. For "
 "this, a special export syntax is provided."
 msgstr ""
-"导出成员变量的基本好处之一是使它们在编辑器中可见并可编辑. 这样, 美术师和游戏"
-"设计师可以修改值, 这些值以后会影响程序的运行方式. 为此, 提供了一种特殊的导出"
-"语法."
+"导出成员变量的基本好处之一，便是让这些变量在编辑器中可见可改，这样一来，美术"
+"师和游戏设计师就可以修改这些会影响程序运行方式的值。为此，Godot 提供了一种特"
+"殊的导出语法。"
 
 msgid ""
 "Exporting can only be done with :ref:`Variant-compatible "
@@ -103,38 +103,39 @@ msgid ""
 msgstr ""
 
 msgid "Strings as paths"
-msgstr "字符串是路径"
+msgstr "字符串用作文件路径"
 
 msgid "Property hints can be used to export strings as paths"
 msgstr ""
 
 msgid "String as a path to a file."
-msgstr "字符串是文件的路径。"
+msgstr "字符串可以用作文件的路径。"
 
 msgid "String as a path to a directory."
-msgstr "字符串是目录的路径。"
+msgstr "字符串也可以用作文件目录路径。"
 
 msgid "String as a path to a file, custom filter provided as hint."
-msgstr "字符串是文件的路径，在提示中提供自定义过滤器。"
+msgstr "字符串在用作是文件路径时，可以在提示项中提供自定义过滤器。"
 
 msgid ""
 "Using paths in the global filesystem is also possible, but only in scripts "
 "in tool mode."
-msgstr "也可以使用全局文件系统中的路径，但是仅支持工具模式的脚本。"
+msgstr "也可以使用全局文件系统中的路径，仅支持工具模式脚本可以如此使用。"
 
 msgid "String as a path to a PNG file in the global filesystem."
-msgstr "字符串是全局文件系统中某个 PNG 文件的路径。"
+msgstr "字符串还可以用作全局文件系统中某个 PNG 文件的路径。"
 
 msgid "String as a path to a directory in the global filesystem."
-msgstr "字符串是全局文件系统中某个目录的路径。"
+msgstr "字符串也能用作全局文件系统中某个目录的路径。"
 
 msgid ""
 "The multiline annotation tells the editor to show a large input field for "
 "editing over multiple lines."
 msgstr ""
+"多行文本注释会让编辑器使用大文本输入框来输入文本，而非那种小小的单行输入框。"
 
 msgid "Limiting editor input ranges"
-msgstr "限制编辑器输入范围"
+msgstr "编辑器内限制值的输入范围"
 
 msgid ""
 "Using the range property hint allows you to limit what can be input as a "
@@ -148,7 +149,7 @@ msgid "Allow integer values from -10 to 20."
 msgstr "允许 -10 到 20 之间的整数。"
 
 msgid "Allow floats from -10 to 20 and snap the value to multiples of 0.2."
-msgstr "允许 -10 到 20 之间的数，对齐到 0.2 的倍数。"
+msgstr "允许 -10 到 20 之间的数，调整步长为 0.2 。"
 
 msgid ""
 "If you add the hints \"or_greater\" and/or \"or_less\" you can go above or "
@@ -160,16 +161,16 @@ msgid "Floats with easing hint"
 msgstr "带缓动提示的浮点数"
 
 msgid "Display a visual representation of the 'ease()' function when editing."
-msgstr ""
+msgstr "在编辑器里提供 'ease()' 函数的视觉呈现。"
 
 msgid "Colors"
 msgstr "颜色"
 
 msgid "Regular color given as red-green-blue-alpha value."
-msgstr "使用红、绿、蓝、Alpha 值指定的普通颜色。"
+msgstr "使用红、绿、蓝、Alpha 值指定普通颜色。"
 
 msgid "Color given as red-green-blue value (alpha will always be 1)."
-msgstr "使用红、绿、蓝值指定的颜色（Alpha 始终为 1）。"
+msgstr "使用红、绿、蓝值指定颜色（此时Alpha 始终为 1）。"
 
 msgid "Nodes"
 msgstr "节点"
@@ -185,7 +186,7 @@ msgstr ""
 
 msgid ""
 "Exporting NodePaths like in Godot 3.x is still possible, in case you need it:"
-msgstr "如果需要，仍然可以和 Godot 3.x 中一样导出 NodePath："
+msgstr "如果需要，仍可以像 Godot 3.x 中那样导出 NodePath："
 
 msgid "Resources"
 msgstr "资源"
@@ -194,6 +195,7 @@ msgid ""
 "In the Inspector, you can then drag and drop a resource file from the "
 "FileSystem dock into the variable slot."
 msgstr ""
+"在检查器里，可以将资源文件从文件系统面板中拖放到导出变量所对应的槽位中。"
 
 msgid ""
 "Opening the inspector dropdown may result in an extremely long list of "
@@ -212,11 +214,11 @@ msgid ""
 "editor, the exported properties are still editable. This can be used in "
 "conjunction with a :ref:`script in \"tool\" mode <doc_gdscript_tool_mode>`."
 msgstr ""
-"必须注意, 即使在编辑器中未运行脚本, 导出的属性仍可编辑. 可以与 :ref:`使用工具"
-"模式的脚本 <doc_gdscript_tool_mode>` 结合使用."
+"必须注意：即使在编辑器中未运行脚本，导出的属性仍可编辑。这一点可以与 :ref:`使"
+"用工具模式的脚本 <doc_gdscript_tool_mode>` 配合使用。"
 
 msgid "Exporting bit flags"
-msgstr "导出位标志"
+msgstr "导出位标记"
 
 msgid ""
 "Members whose type is an enum with the ``[Flags]`` attribute can be exported "
@@ -261,7 +263,9 @@ msgstr "也可以为项目设置中定义的物理层和渲染层提供导出提
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "
 "doubt, use boolean variables instead."
-msgstr "使用位标志需要对位操作有一定的了解. 如果有疑问, 请使用布尔变量代替."
+msgstr ""
+"使用位标记需要对位操作有一定的了解，若对此有疑问，请使用布尔变量代替位标记使"
+"用。"
 
 msgid "Exporting enums"
 msgstr "导出枚举"
@@ -315,13 +319,12 @@ msgid ""
 "specified:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Arrays with specified types which inherit from resource can be set by drag-"
 "and-dropping multiple files from the FileSystem dock."
 msgstr ""
-"如果导出的数组指定了从 Resource 继承的类型，则可以通过一次从文件系统面板中拖"
-"放多个文件来在检查器中设置数组值。"
+"如果导出的数组指定了从 Resource 继承的类型，则可以一次性从文件系统面板中拖放"
+"多个文件到检查器中来设置该数组的值。"
 
 #, fuzzy
 msgid "Exporting Godot dictionaries"
@@ -356,7 +359,7 @@ msgid ""
 msgstr ""
 
 msgid "Setting exported variables from a tool script"
-msgstr "从工具脚本设置导出变量"
+msgstr "从工具脚本中设置导出变量"
 
 #, fuzzy
 msgid ""
@@ -379,8 +382,8 @@ msgid ""
 "to avoid unnecessary design complexity. The following describes some more or "
 "less common exporting features which can be implemented with a low-level API."
 msgstr ""
-"为了避免不必要的复杂设计，不是所有导出类型都在语言层面上提供。下面将说明一些"
-"能用底层 API 实现的，较为常见的导出方法。"
+"为了避免非必要的复杂设计，并非所有类型的导出都在语言层面上提供。下面将说明一"
+"些能用底层 API 实现的，且较为常见的导出方法。"
 
 #, fuzzy
 msgid ""
@@ -407,7 +410,7 @@ msgstr ""
 msgid ""
 "The script must operate in the ``tool`` mode so the above methods can work "
 "from within the editor."
-msgstr "脚本必须在 ``tool`` 模式运行，上述方法才能在编辑器内运行。"
+msgstr "脚本必须在 ``tool`` 模式运行，才能使上述方法在编辑器内运行。"
 
 msgid "Translation status"
 msgstr "翻译状态"

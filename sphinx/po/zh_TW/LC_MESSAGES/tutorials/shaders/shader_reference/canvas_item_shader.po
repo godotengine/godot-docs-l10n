@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -95,8 +95,16 @@ msgstr "僅在光通過時繪製."
 msgid "**skip_vertex_transform**"
 msgstr "**skip_vertex_transform**"
 
-msgid "VERTEX/NORMAL/etc need to be transformed manually in vertex function."
+#, fuzzy
+msgid "VERTEX needs to be transformed manually in vertex function."
 msgstr "VERTEX/NORMAL/等需要在頂點函式中手動轉換."
+
+msgid "**world_vertex_coords**"
+msgstr "**world_vertex_coords**"
+
+#, fuzzy
+msgid "VERTEX is modified in world coordinates instead of local."
+msgstr "VERTEX/NORMAL 等是以世界座標而不是局部座標修改的。"
 
 msgid "Built-ins"
 msgstr "內建"
@@ -247,9 +255,10 @@ msgstr "``if x else``"
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr "in vec2 **TEXTURE_PIXEL_SIZE**"
 
+#, fuzzy
 msgid ""
 "Normalized pixel size of default 2D texture. For a Sprite2D with a texture "
-"of size 64x32px, **TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
+"of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 msgstr ""
 "預設 2D 紋理的標準化像素大小。對於紋理大小為 64x32px 的 Sprite，"
 "**TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
@@ -288,24 +297,26 @@ msgstr "點繪圖的點大小."
 msgid "Fragment built-ins"
 msgstr "片段內建"
 
+#, fuzzy
 msgid ""
 "Certain Nodes (for example, :ref:`Sprite2Ds <class_Sprite2D>`) display a "
 "texture by default. However, when a custom fragment function is attached to "
-"these nodes, the texture lookup needs to be done manually. Godot does not "
-"provide the texture color in the ``COLOR`` built-in variable; to read the "
-"texture color for such nodes, use:"
+"these nodes, the texture lookup needs to be done manually. Godot provides "
+"the texture color in the ``COLOR`` built-in variable multiplied by the "
+"node's color. To read the texture color by itself, you can use:"
 msgstr ""
 "某些節點（例如 :ref:`Sprite <class_Sprite>`）預設會顯示紋理。但是，當自訂片段"
 "函式附加到這些節點時，就需要手工完成紋理的搜尋。Godot 在 ``COLOR`` 內建變數中"
 "不提供紋理顏色；要讀取這些節點的紋理顏色，請使用："
 
+#, fuzzy
 msgid ""
-"This differs from the behavior of the built-in normal map. If a normal map "
-"is attached, Godot uses it by default and assigns its value to the built-in "
-"``NORMAL`` variable. If you are using a normal map meant for use in 3D, it "
-"will appear inverted. In order to use it in your shader, you must assign it "
-"to the ``NORMALMAP`` property. Godot will handle converting it for use in 2D "
-"and overwriting ``NORMAL``."
+"Similarly, if a normal map is used in the :ref:`CanvasTexture "
+"<class_CanvasTexture>`, Godot uses it by default and assigns its value to "
+"the built-in ``NORMAL`` variable. If you are using a normal map meant for "
+"use in 3D, it will appear inverted. In order to use it in your shader, you "
+"must assign it to the ``NORMALMAP`` property. Godot will handle converting "
+"it for use in 2D and overwriting ``NORMAL``."
 msgstr ""
 "這與內建法線貼圖的行為不同. 如果附加了法線貼圖,Godot預設使用它, 並將其值分配"
 "給內建的 ``NORMAL`` 變數. 如果你使用的是用於3D的法線貼圖, 它將出現倒置. 為了"
@@ -415,9 +426,10 @@ msgid ""
 "represents height."
 msgstr "與“VERTEX”相同，但可以寫入來改變照明。 Z 分量代表高度。"
 
+#, fuzzy
 msgid ""
-"Color from vertex function and output fragment color. If unused, will be set "
-"to **TEXTURE** color."
+"Color from vertex function multiplied by the **TEXTURE** color. Also output "
+"color value."
 msgstr "從頂點函式和輸出片段顏色. 如果未使用, 將設定為 **紋理** 顏色."
 
 msgid "Light built-ins"
@@ -445,6 +457,11 @@ msgstr ""
 "是非常有用的。"
 
 msgid ""
+"If you define a light function it will replace the built in light function, "
+"even if your light function is empty."
+msgstr ""
+
+msgid ""
 "Below is an example of a light shader that takes a CanvasItem's normal map "
 "into account:"
 msgstr "以下是考慮 CanvasItem 法線貼圖的燈光著色器範例："
@@ -458,9 +475,8 @@ msgstr "輸入"
 msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
 
-msgid ""
-"Input Color. This is the output of the fragment function with final "
-"modulation applied."
+#, fuzzy
+msgid "Input Color. This is the output of the fragment function."
 msgstr ""
 "輸入顏色. 這是片段函式的輸出(如果在著色器的任何函式中沒有使用 **MODULATE** , "
 "則應用最終調變)."
@@ -471,14 +487,22 @@ msgstr "來自頂點函式的UV, 相當於片段函式中的UV."
 msgid "Current texture in use for CanvasItem."
 msgstr "CanvasItem使用的目前紋理."
 
+#, fuzzy
+msgid ""
+"Normalized pixel size of **TEXTURE**. For a Sprite2D with a **TEXTURE** of "
+"size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
+msgstr ""
+"預設 2D 紋理的標準化像素大小。對於紋理大小為 64x32px 的 Sprite，"
+"**TEXTURE_PIXEL_SIZE** = :code:`vec2(1/64, 1/32)`"
+
 msgid "UV for Point Sprite."
 msgstr "點精靈的UV."
 
 msgid "in vec4 **LIGHT_COLOR**"
 msgstr "in vec4 **LIGHT_COLOR**"
 
-msgid "Color of Light."
-msgstr "燈光的顏色。"
+msgid "Color of Light multiplied by Light's texture."
+msgstr ""
 
 msgid "in float **LIGHT_ENERGY**"
 msgstr "in float **LIGHT_ENERGY**"
@@ -517,10 +541,9 @@ msgstr "``world_position`` 可用於頂點函式或片段函式."
 msgid "inout vec4 **LIGHT**"
 msgstr "inout vec4 **LIGHT**"
 
-msgid ""
-"Value from the Light texture and output color. Can be modified. If not used, "
-"the light function is ignored."
-msgstr "值從淺色紋理和輸出顏色. 可以修改. 如果不使用, 則忽略光照函式."
+#, fuzzy
+msgid "Output color for this Light."
+msgstr "每個像素的輸出顏色."
 
 msgid "Specular shininess, as set in the object's texture."
 msgstr "鏡面光澤度，在物件紋理中設定。"
@@ -565,7 +588,8 @@ msgstr "執行2D紋理讀取。"
 msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 msgstr "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 
-msgid "Performs an SDF normal texture lookup."
+#, fuzzy
+msgid "Calculates a normal from the SDF texture."
 msgstr "預設 2D 法線紋理。"
 
 msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"

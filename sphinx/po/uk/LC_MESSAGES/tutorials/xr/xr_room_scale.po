@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -33,6 +33,15 @@ msgid ""
 "document we will look at a number of the challenges you may face and outline "
 "some solutions. We'll discuss the issues and challenges for seated XR games "
 "in another document."
+msgstr ""
+
+msgid ""
+"Often developers sit behind their desk while building the foundation to "
+"their game. In this mode the issues with developing for room scale don't "
+"show themselves until it is too late. The advice here is to start testing "
+"while standing up and walking around as early as possible. Once you are "
+"happy your foundation is solid, you can develop in comfort while remaining "
+"seated."
 msgstr ""
 
 msgid ""
@@ -109,6 +118,15 @@ msgstr ""
 msgid "Processing our character movement is now done in three steps."
 msgstr ""
 
+#, fuzzy
+msgid ""
+"The `Origin centric movement demo <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/xr/openxr_origin_centric_movement>`__ contains a more "
+"elaborate example of the technique described below."
+msgstr ""
+"Окрім цієї документації, ви також можете поглянути на різні `демонстраційні "
+"проєкти \"Godot\" <https://github.com/godotengine/godot-demo-projects>`_."
+
 msgid "Step 1"
 msgstr "Крок 1"
 
@@ -138,6 +156,19 @@ msgid ""
 "necessary input and return the rotational speed in radians per second."
 msgstr ""
 
+msgid ""
+"For our example we are going to keep this simple and straight forward. We "
+"are not going to worry about comfort features such as snap turning and "
+"applying a vignette. We highly recommend implementing such comfort features."
+msgstr ""
+
+msgid ""
+"We've added the call for processing our rotation to our physics process but "
+"we are only executing this if we were able to move our player fully. This "
+"means that if the player moves somewhere they shouldn't, we don't process "
+"further movement."
+msgstr ""
+
 msgid "Step 3"
 msgstr "Крок 3"
 
@@ -151,6 +182,11 @@ msgid ""
 "are simply calling the function ``_get_movement_input``. This function "
 "should obtain the necessary input and return a directional vector scaled to "
 "the required velocity."
+msgstr ""
+
+msgid ""
+"Just like with rotation we're keeping it simple. Here too it is advisable to "
+"look at adding comfort settings."
 msgstr ""
 
 #, fuzzy
@@ -171,6 +207,15 @@ msgid ""
 "Processing our character movement is done in the same three steps but "
 "implemented slightly differently."
 msgstr ""
+
+#, fuzzy
+msgid ""
+"The `Character centric movement demo <https://github.com/godotengine/godot-"
+"demo-projects/tree/master/xr/openxr_character_centric_movement>`__ contains "
+"a more elaborate example of the technique described below."
+msgstr ""
+"Окрім цієї документації, ви також можете поглянути на різні `демонстраційні "
+"проєкти \"Godot\" <https://github.com/godotengine/godot-demo-projects>`_."
 
 msgid ""
 "In this approach step 1 is where all the magic happens. Just like with our "
@@ -285,6 +330,11 @@ msgstr ""
 
 msgid ""
 "still applying gravity to the player even when controller input is disabled."
+msgstr ""
+
+msgid ""
+"The movement demos in our demo repository contain an example of blacking out "
+"the screen when a user walks into restricted areas."
 msgstr ""
 
 msgid "Further suggestions for improvements"

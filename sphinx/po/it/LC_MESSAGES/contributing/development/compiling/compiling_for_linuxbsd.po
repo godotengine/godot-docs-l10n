@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -302,7 +302,10 @@ msgid ""
 "Follow `these instructions <https://github.com/ivmai/"
 "libatomic_ops#installation-and-usage>`__ to configure, build, and install "
 "``libatomic_ops``. Then, copy ``/usr/lib/libatomic_ops.a`` to ``/usr/lib/"
-"libatomic.a``."
+"libatomic.a``, or create a soft link to ``libatomic_ops`` by command ``ln -"
+"s /usr/lib/libatomic_ops.a /usr/lib/libatomic.a``. The soft link can ensure "
+"the latest ``libatomic_ops`` will be used without the need to copy it "
+"everytime when it is updated."
 msgstr ""
 
 #, fuzzy

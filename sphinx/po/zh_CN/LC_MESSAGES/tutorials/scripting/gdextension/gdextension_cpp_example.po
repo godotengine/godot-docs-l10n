@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -45,7 +45,7 @@ msgid "Setting up the project"
 msgstr "设置项目"
 
 msgid "There are a few prerequisites you'll need:"
-msgstr "您需要一些先决条件："
+msgstr "你需要一些先决条件："
 
 msgid "a Godot 4 executable,"
 msgstr "Godot 4 可执行文件，"
@@ -137,7 +137,7 @@ msgid ""
 "submodules are not automatically initialized. You will need to execute the "
 "following commands:"
 msgstr ""
-"如果从介绍中指定的链接克隆示例, 子模块不会自动初始化. 您需要执行以下命令:"
+"如果从介绍中指定的链接克隆示例, 子模块不会自动初始化. 你需要执行以下命令:"
 
 #, fuzzy
 msgid "This will initialize the repository in your project folder."
@@ -156,7 +156,7 @@ msgid ""
 "release, but if you need to build these bindings for a newer version of "
 "Godot, simply call the Godot executable:"
 msgstr ""
-"仓库包含当前 Godot 版本的元数据副本，但如果您需要为较新版本的 Godot 构建这些"
+"仓库包含当前 Godot 版本的元数据副本，但如果你需要为较新版本的 Godot 构建这些"
 "绑定，只需调用 Godot 可执行文件："
 
 #, fuzzy
@@ -189,11 +189,11 @@ msgid ""
 "libraries that can be compiled into your project stored in ``godot-cpp/bin/"
 "``."
 msgstr ""
-"这一步将需要一段时间. 完成后, 您应该有一个静态库, 可以编译到您的项目中, 存储"
+"这一步将需要一段时间. 完成后, 你应该有一个静态库, 可以编译到你的项目中, 存储"
 "在 ``godot-cpp / bin /`` 中."
 
 msgid "You may need to add ``bits=64`` to the command on Windows or Linux."
-msgstr "您可能需要在 Windows 或 Linux 的命令行中添加 ``bits=64``\\ 。"
+msgstr "你可能需要在 Windows 或 Linux 的命令行中添加 ``bits=64``\\ 。"
 
 msgid "Creating a simple plugin"
 msgstr "创建一个简单的插件"
@@ -390,7 +390,7 @@ msgstr ""
 "``godot-cpp`` 、 ``godot-headers`` 和 ``demo`` 之外，然后运行:"
 
 msgid "You should now be able to find the module in ``demo/bin/<platform>``."
-msgstr "您现在应该能够在 ``demo / bin / <platform>`` 中找到该模块."
+msgstr "你现在应该能够在 ``demo / bin / <platform>`` 中找到该模块."
 
 #, fuzzy
 msgid ""
@@ -531,8 +531,8 @@ msgid ""
 "and when you run your project, you will see that our Godot icon travels "
 "along a larger figure."
 msgstr ""
-"使用这些更改编译模块后，就会看到界面上加入了一个属性。您现在可以更改此属性，"
-"当您运行项目时，您将看到我们的 Godot 图标沿着更大的数字移动。"
+"使用这些更改编译模块后，就会看到界面上加入了一个属性。你现在可以更改此属性，"
+"当运行项目时，你将看到我们的 Godot 图标沿着更大的数字移动。"
 
 msgid ""
 "Let's do the same but for the speed of our animation and use a setter and "

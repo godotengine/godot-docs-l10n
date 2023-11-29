@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,7 +37,6 @@ msgstr "使任何节点的任何属性变成动画"
 msgid "Create a simple animation"
 msgstr "创建简单的动画"
 
-#, fuzzy
 msgid ""
 "In Godot, you can animate anything available in the Inspector, such as Node "
 "transforms, sprites, UI elements, particles, visibility and color of "
@@ -45,8 +44,8 @@ msgid ""
 "even call functions."
 msgstr ""
 "在 Godot 中，你可以对“检查器”中可用的任何内容设置动画，例如 Node 的变换、精"
-"灵、UI 元素、粒子、可见性、材质的颜色等等。您还可以修改脚本变量的值、调用任何"
-"函数。"
+"灵、UI 元素、粒子、可见性、材质的颜色等等。你还可以修改脚本变量的值、甚至调用"
+"任何函数。"
 
 msgid "Create an AnimationPlayer node"
 msgstr "创建 AnimationPlayer 节点"
@@ -57,30 +56,27 @@ msgid ""
 msgstr ""
 "要使用动画工具, 我们首先必须创建一个 :ref:`class_AnimationPlayer` 节点."
 
-#, fuzzy
 msgid ""
 "The AnimationPlayer node type is the data container for your animations. One "
 "AnimationPlayer node can hold multiple animations, which can automatically "
 "transition to one another."
 msgstr ""
-"AnimationPlayer节点类型是动画的数据容器. 一个AnimationPlayer节点可以保存多个"
-"动画, 这些动画可以自动相互转换."
+"AnimationPlayer节点类型是动画的数据容器。一个AnimationPlayer节点可以保存多个"
+"动画，这些动画可以自动相互过渡。"
 
 msgid "The AnimationPlayer node"
 msgstr "AnimationPlayer节点"
 
-#, fuzzy
 msgid ""
 "After you create an AnimationPlayer node, click on it to open the Animation "
 "Panel at the bottom of the viewport."
-msgstr "创建后, 单击节点选项卡中的AnimationPlayer节点, 打开视口底部的动画面板."
+msgstr "创建 AnimationPlayer 节点后，单击它以打开视口底部的动画面板。"
 
 msgid "The animation panel position"
 msgstr "动画面板位置"
 
-#, fuzzy
 msgid "The animation panel consists of four parts:"
-msgstr "它由四部分组成:"
+msgstr "动画面板由四部分组成："
 
 msgid "The animation panel"
 msgstr "动画面板"
@@ -94,24 +90,21 @@ msgstr "轨道列表"
 msgid "The timeline with keyframes"
 msgstr "带有关键帧的时间轴"
 
-#, fuzzy
 msgid ""
 "The timeline and track controls, where you can zoom the timeline and edit "
 "tracks, for example."
-msgstr "时间轴和轨道控件, 例如, 您可以在其中缩放时间轴和编辑轨道."
+msgstr "时间轴和轨道控件，例如，你可以在其中缩放时间轴和编辑轨道。"
 
 msgid "Computer animation relies on keyframes"
 msgstr "计算机动画依赖于关键帧"
 
-#, fuzzy
 msgid "A keyframe defines the value of a property at a point in time."
-msgstr "关键帧定义属性在某一时间点的值."
+msgstr "关键帧定义属性在某个时间点的值。"
 
-#, fuzzy
 msgid ""
 "Diamond shapes represent keyframes in the timeline. A line between two "
 "keyframes indicates that the value doesn't change between them."
-msgstr "菱形代表时间轴中的关键帧. 两个关键帧之间的线表示该值未更改."
+msgstr "菱形代表时间轴中的关键帧。两个关键帧之间的线表示该值未更改。"
 
 msgid "Keyframes in Godot"
 msgstr "Godot中的关键帧"
@@ -121,6 +114,8 @@ msgid ""
 "them. When the animation runs, the engine will interpolate the values "
 "between the keyframes, resulting in them gradually changing over time."
 msgstr ""
+"你设置节点属性的值并为其创建动画关键帧。当动画运行时，引擎将在关键帧之间插入"
+"值，使它们随着时间的推移逐渐变化。"
 
 msgid "Two keyframes are all it takes to obtain a smooth motion"
 msgstr "只需两个关键帧就可以获得一个平滑运动"
@@ -128,7 +123,7 @@ msgstr "只需两个关键帧就可以获得一个平滑运动"
 msgid ""
 "The timeline defines how long the animation will take. You can insert "
 "keyframes at various points, and change their timing."
-msgstr ""
+msgstr "时间轴定义动画需要多长时间。你可以在不同的点插入关键帧，并更改其时间。"
 
 msgid "The timeline in the animation panel"
 msgstr "动画面板中的时间轴"
@@ -139,20 +134,22 @@ msgid ""
 "and its affected property. For example, the position track in the "
 "illustration refers to the ``position`` property of the Sprite2D node."
 msgstr ""
+"动画面板中的每一行都是引用节点的普通或变换属性的动画轨道。每个轨道存储节点的"
+"路径及其受影响的属性。例如，图中的位置轨迹指的是 Sprite2D 节点的 "
+"``position`` 属性。"
 
 msgid "Example of Normal animation tracks"
 msgstr "普通动画轨道的示例"
 
-#, fuzzy
 msgid ""
 "If you animate the wrong property, you can edit a track's path at any time "
 "by double-clicking on it and typing the new path. Play the animation using "
 "the \"Play from beginning\" button |Play from beginning| (or pressing :kbd:"
 "`Shift + D` on keyboard) to see the changes instantly."
 msgstr ""
-"如果你的动画属性错误, 你可以随时编辑轨道路径. 双击它并输入新的路径. 使用 \"从"
-"头开始播放\" 按钮|从头开始播放|(或按键盘上的 :kbd:`Shift + D` )播放动画, 可以"
-"立即看到变化."
+"如果你的动画属性错误，你可以随时通过双击轨道并输入新路径来编辑轨道的路径。使"
+"用 “从头开始播放” 按钮|从头开始播放|（或按键盘上的 :kbd:`Shift + D` ）播放动"
+"画，可以立即看到变化."
 
 msgid "Play from beginning"
 msgstr "从头开始播放"
@@ -173,14 +170,13 @@ msgstr ""
 msgid "Our scene setup"
 msgstr "我们的场景设置"
 
-#, fuzzy
 msgid ""
 "AnimationPlayer inherits from Node instead of Node2D or Node3D, which means "
 "that the child nodes will not inherit the transform from the parent nodes "
 "due to a bare Node being present in the hierarchy."
 msgstr ""
-"AnimationPlayer 继承自 Node 而不是 Node2D 或者 Spatial。因为层级中间出现了普"
-"通的 Node 节点，所以它的子节点不会继承父节点的变换。"
+"AnimationPlayer 继承自 Node 而不是 Node2D 或者 Node3D。因为层级中间出现了普通"
+"的 Node 节点，所以它的子节点不会继承父节点的变换。"
 
 msgid ""
 "Therefore, it is not recommended to add nodes that have a 2D/3D transform as "
@@ -193,12 +189,12 @@ msgid ""
 "node, click Texture in the Inspector, and then click Load. Select the "
 "default Godot icon for the sprite's texture."
 msgstr ""
+"精灵拥有图像纹理。在本教程中，选择 Sprite2D 节点，在检查器中单击 Texture ，然"
+"后单击“加载”。精灵的纹理选择为默认的 Godot 图标。"
 
-#, fuzzy
 msgid "Adding an animation"
-msgstr "添加新动画"
+msgstr "添加动画"
 
-#, fuzzy
 msgid ""
 "Select the AnimationPlayer node and click the \"Animation\" button in the "
 "animation editor. From the list, select \"New\" (|Add Animation|) to add a "
@@ -213,9 +209,8 @@ msgstr "添加动画"
 msgid "Add a new animation"
 msgstr "添加新动画"
 
-#, fuzzy
 msgid "Manage an animation libraries"
-msgstr "管理与导入项目"
+msgstr "管理动画库"
 
 msgid ""
 "For reusability, the animation is registered in a list in the animation "
@@ -223,53 +218,52 @@ msgid ""
 "specifying any particular settings, the animation will be registered in the "
 "[Global] animation library that AnimationPlayer has by default."
 msgstr ""
+"出于可复用性，动画被注册在动画库资源的列表中。如果你将动画添加到 "
+"AnimationPlayer 而不指定任何特定设置，则该动画将默认注册到 AnimationPlayer 具"
+"有的 [Global] 动画库中。"
 
-#, fuzzy
 msgid "Manage animations"
-msgstr "动画"
+msgstr "管理动画"
 
 msgid ""
 "If there are multiple animation libraries and you try to add an animation, a "
 "dialog box will appear with options."
-msgstr ""
+msgstr "如果有多个动画库并且你尝试添加动画，则会出现一个包含选项的对话框。"
 
-#, fuzzy
 msgid "Add a new animation with library option"
-msgstr "添加新动画"
+msgstr "添加带有库选项的新动画"
 
 msgid "Adding a track"
 msgstr "添加轨道"
 
-#, fuzzy
 msgid ""
 "To add a new track for our sprite, select it and take a look at the toolbar:"
-msgstr "要为我们的精灵添加一个新的轨道, 选择它并在工具栏中查看:"
+msgstr "要为我们的精灵添加一个新的轨道，请选择它并在工具栏中查看："
 
 msgid "Convenience buttons"
 msgstr "方便按钮"
 
-#, fuzzy
 msgid ""
 "These switches and buttons allow you to add keyframes for the selected "
 "node's location, rotation, and scale. Since we are only animating the "
 "sprite's position, make sure that only the location switch is selected. The "
 "selected switches are blue."
-msgstr "这些开关和按钮允许您为选择的节点的位置, 旋转和比例分别添加关键帧."
+msgstr ""
+"这些开关和按钮允许你为所选节点的位置、旋转和缩放添加关键帧。由于我们仅对精灵"
+"的位置进行动画处理，因此请确保仅选择位置开关。所选开关为蓝色。"
 
-#, fuzzy
 msgid ""
 "Click on the key button to create the first keyframe. Since we don't have a "
 "track set up for the Position property yet, Godot will offer to create it "
 "for us. Click **Create**."
 msgstr ""
-"由于我们还没有为变换或位置属性设置轨道,Godot询问是否应该设置, 点击 "
-"**Create** ."
+"单击钥匙按钮（插入关键帧）创建第一个关键帧。由于我们还没有为 Position 属性设"
+"置轨道，Godot 将主动为我们创建它。点击 **创建** 。"
 
-#, fuzzy
 msgid ""
 "Godot will create a new track and insert our first keyframe at the beginning "
 "of the timeline:"
-msgstr "这会在时间轴的开头创建一个新轨道和第一个关键帧:"
+msgstr "Godot 将创建一个新轨道，并在时间轴的开头插入我们的第一个关键帧："
 
 msgid "The sprite track"
 msgstr "精灵轨道"
@@ -277,21 +271,19 @@ msgstr "精灵轨道"
 msgid "The second keyframe"
 msgstr "第二个关键帧"
 
-#, fuzzy
 msgid ""
 "We need to set our sprite's end location and how long it will take for it to "
 "get there."
-msgstr "现在我们需要设置我们的精灵应该到达的目的地以及到达那里需要多长时间."
+msgstr "我们需要设置我们的精灵的最终目的地，以及它到达那里需要多长时间。"
 
-#, fuzzy
 msgid ""
 "Let's say we want it to take two seconds to move between the points. By "
 "default, the animation is set to last only one second, so change the "
 "animation length to 2 in the controls on the right side of the animation "
 "panel's timeline header."
 msgstr ""
-"让我们说, 我们希望它需要2秒才能到达另一个点. 默认情况下, 动画设置为仅持续1"
-"秒, 因此在动画面板下方面板的时间轴控件中将其更改为2."
+"假设我们希望在点之间移动需要两秒钟。默认情况下，动画设置为仅持续一秒，因此请"
+"在动画面板时间轴标题右侧的控件中将动画长度更改为 2。"
 
 msgid "Animation length"
 msgstr "动画长度"
@@ -300,12 +292,15 @@ msgid ""
 "Now, move the sprite right, to its final position. You can use the *Move "
 "tool* in the toolbar or set the *Position*'s X value in the *Inspector*."
 msgstr ""
+"现在，将精灵向右移动到其最终位置。可以使用工具栏中的 *移动工具* 或在 *检查器"
+"* 中设置* Position* 的 X 值。"
 
-#, fuzzy
 msgid ""
 "Click on the timeline header near the two-second mark in the animation panel "
 "and then click the key button in the toolbar to create the second keyframe."
-msgstr "点击2秒附近的时间线标记, 将精灵移动到右侧的目标目的地."
+msgstr ""
+"点击动画面板 2 秒附近的时间轴标题，然后单击工具栏中的钥匙按钮以创建第二个关键"
+"帧。"
 
 msgid "Run the animation"
 msgstr "运行动画"
@@ -327,32 +322,33 @@ msgid ""
 "Animation Looping is set but there's no keyframe specified at the end of the "
 "animation, the first keyframe is also the last."
 msgstr ""
+"Godot 有一个我们可以在动画中使用的有趣的功能。当设置了动画循环但动画末尾没有"
+"指定关键帧时，第一个关键帧也是最后一个关键帧。"
 
 msgid ""
 "This means we can extend the animation length to four seconds now, and Godot "
 "will also calculate the frames from the last keyframe to the first, moving "
 "our sprite back and forth."
 msgstr ""
+"这意味着我们现在可以将动画长度延长到四秒，Godot 还将计算从最后一个关键帧到第"
+"一个关键帧的帧，来回移动我们的精灵。"
 
 msgid "Animation loop"
 msgstr "动画循环"
 
-#, fuzzy
 msgid ""
 "You can change this behavior by changing the track's loop mode. This is "
 "covered in the next chapter."
-msgstr ""
-"如果你现在将动画长度设置为4秒, 动画就会来回移动. 如果改变轨道的循环模式, 你可"
-"以改变这种行为. 这将在下一章中介绍."
+msgstr "你可以通过更改轨道的循环模式来更改此行为。这将在下一章中介绍。"
 
 msgid "Track settings"
 msgstr "轨道设置"
 
-#, fuzzy
 msgid ""
 "Each track has a settings panel at the end, where you can set its update "
 "mode, track interpolation, and loop mode."
-msgstr "每条轨道最后都有一个设置面板，可以设置更新模式, 轨道插值, 循环模式。"
+msgstr ""
+"每条轨道最后都有一个设置面板，可以在其中设置更新模式、轨道插值和循环模式。"
 
 msgid ""
 "The update mode of a track tells Godot when to update the property values. "
@@ -407,12 +403,12 @@ msgstr "三次方：使用三次函数计算两个关键帧之间的值"
 msgid ""
 "Linear Angle (Only appears in rotation property): Linear mode with shortest "
 "path rotation"
-msgstr ""
+msgstr "线性角（仅出现在旋转属性中）：具有最短路径旋转的线性模式"
 
 msgid ""
 "Cubic Angle (Only appears in rotation property): Cubic mode with shortest "
 "path rotation"
-msgstr ""
+msgstr "三次角（仅出现在旋转属性中）：具有最短路径旋转的立方模式"
 
 msgid "Track interpolation"
 msgstr "轨道插值"
@@ -458,7 +454,7 @@ msgstr "其他属性的关键帧"
 msgid ""
 "Godot's animation system isn't restricted to position, rotation, and scale. "
 "You can animate any property."
-msgstr ""
+msgstr "Godot的动画系统不仅限于位置、旋转和缩放。你可以对任何属性进行动画化。"
 
 #, fuzzy
 msgid ""
@@ -476,7 +472,7 @@ msgstr "编辑关键帧"
 msgid ""
 "You can click on a keyframe in the animation timeline to display and edit "
 "its value in the *Inspector*."
-msgstr ""
+msgstr "你可以在动画时间轴上点击关键帧，以在*属性面板*中显示和编辑其值。"
 
 msgid "Keyframe editor editing a key"
 msgstr "关键帧编辑器编辑一个键"
@@ -492,7 +488,7 @@ msgstr ""
 
 msgid ""
 "You can tweak your animations this way until the movement \"looks right.\""
-msgstr "当这个动作“看起来不正确”时，您通常会以这种方式调整您的动画"
+msgstr "你可以通过这种方式调整动画，直到运动“看起来正确”。"
 
 msgid "Using RESET tracks"
 msgstr "使用 RESET 轨道"
@@ -548,6 +544,8 @@ msgid ""
 "RESET tracks is also used as a reference value for blending. See also `For "
 "better blending <../animation/animation_tree.html#for-better-blending>`__."
 msgstr ""
+"RESET轨道也被用作混合的参考值。另见\\ `更好的混合 <../animation/"
+"animation_tree.html#for-better-blending>`__\\ 。"
 
 msgid "Translation status"
 msgstr "翻译状态"

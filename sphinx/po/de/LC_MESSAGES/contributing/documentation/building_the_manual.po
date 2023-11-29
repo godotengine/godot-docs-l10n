@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,36 +31,40 @@ msgstr ""
 "oder LaTeX-Datei zu erstellen."
 
 msgid "Before you get started, make sure that you have:"
-msgstr ""
+msgstr "Bevor Sie beginnen, vergewissern Sie sich, dass Sie diese Dinge haben:"
 
-#, fuzzy
 msgid "`Git <https://git-scm.com/>`_"
-msgstr "`GitHub <https://github.com/godotengine/>`__"
+msgstr "`Git <https://git-scm.com/>`_"
 
 msgid ""
 "`make <https://www.gnu.org/software/make/>`_ (unless you're using Windows)"
 msgstr ""
+"`make <https://www.gnu.org/software/make/>`_ (sofern Sie nicht Windows "
+"verwenden)"
 
 msgid "`Python <https://www.python.org/>`_ 3"
 msgstr "`Python <https://www.python.org/>`_ 3"
 
-#, fuzzy
 msgid ""
 "Python 3 should come with the ``pip3`` command. You may need to write "
 "``python3 -m pip`` (Unix) or  ``py -m pip`` (Windows) instead of ``pip3``. "
 "If both approaches fail, `make sure that you have pip3 installed <https://"
 "pip.pypa.io/en/stable/installation/>`__."
 msgstr ""
-"Möglicherweise müssen Sie anstelle von  ``pip3`` ``python3 -m pip`` (Unix) "
-"bzw. ``py -m pip`` (Windows) schreiben. Schlagen beide Ansätze fehlt, so "
-"überprüfen Sie bitte, ob Sie pip3 installiert haben <https://pip.pypa.io/en/"
-"stable/installation/>`__."
+"Python 3 sollte mit dem Befehl ``pip3`` ausgeliefert werden. Möglicherweise "
+"müssen Sie ``python3 -m pip`` (Unix) oder ``py -m pip`` (Windows) anstelle "
+"von ``pip3`` schreiben. Wenn beide Ansätze scheitern, `stellen Sie sicher, "
+"dass Sie pip3 installiert haben <https://pip.pypa.io/en/stable/installation/"
+">`__."
 
 msgid ""
 "*(Optional)* Set up a virtual environment. Virtual environments prevent "
 "potential conflicts between the Python packages in ``requirements.txt`` and "
 "other Python packages that are installed on your system."
 msgstr ""
+"*(Optional)* Richten Sie eine virtuelle Umgebung ein. Virtuelle Umgebungen "
+"verhindern mögliche Konflikte zwischen den Python-Paketen in ``requirements."
+"txt`` und anderen Python-Paketen, die auf Ihrem System installiert sind."
 
 msgid "Create the virtual environment:"
 msgstr "Erstellen Sie die virtuelle Umgebung:"
@@ -68,21 +72,20 @@ msgstr "Erstellen Sie die virtuelle Umgebung:"
 msgid "Windows"
 msgstr "Windows"
 
-#, fuzzy
 msgid "Other platforms"
-msgstr "Unterstützte Plattformen"
+msgstr "Andere Plattformen"
 
 msgid "Activate the virtual environment:"
 msgstr "Aktivieren Sie die virtuelle Umgebung:"
 
 msgid "*(Optional)* Update pre-installed packages:"
-msgstr ""
+msgstr "*(Optional)* Aktualisieren Sie vorinstallierte Pakete:"
 
 msgid "Clone the docs repo:"
-msgstr "Klonen Sie das Docs-Repo:"
+msgstr "Klonen Sie das Docs-Repository:"
 
 msgid "Change directory into the docs repo:"
-msgstr ""
+msgstr "Wechseln Sie das Verzeichnis in das Docs-Repository:"
 
 msgid "Install the required packages:"
 msgstr "Installieren Sie die erforderlichen Pakete:"
@@ -94,6 +97,8 @@ msgid ""
 "On Windows, that command will run ``make.bat`` instead of GNU Make (or an "
 "alternative)."
 msgstr ""
+"Unter Windows wird dieser Befehl ``make.bat`` anstelle von GNU Make (oder "
+"einer Alternative) ausführen."
 
 msgid ""
 "Alternatively, you can build the documentation by running the sphinx-build "
@@ -102,13 +107,13 @@ msgstr ""
 "Alternativ können Sie die Dokumentation auch erstellen, indem Sie das "
 "Programm sphinx-build manuell ausführen:"
 
-#, fuzzy
 msgid ""
 "The compilation will take some time as the ``classes/`` folder contains "
 "hundreds of files. See :ref:`doc_building_the_manual:performance`."
 msgstr ""
 "Die Kompilierung wird einige Zeit dauern, da der Ordner ``classes/`` "
-"hunderte von Dateien enthält."
+"hunderte von Dateien enthält. Siehe :ref:`doc_building_the_manual:"
+"performance`."
 
 msgid ""
 "You can then browse the documentation by opening ``_build/html/index.html`` "
@@ -117,21 +122,19 @@ msgstr ""
 "Sie können dann die Dokumentation durchsuchen, indem Sie ``_build/html/index."
 "html`` in Ihrem Webbrowser öffnen."
 
-#, fuzzy
 msgid "Dealing with errors"
-msgstr "Malen mit Vertex-Farben"
+msgstr "Umgang mit Fehlern"
 
 msgid "If you run into errors, you may try the following command:"
 msgstr "Wenn Sie auf Fehler stoßen, können Sie den folgenden Befehl versuchen:"
 
-#, fuzzy
 msgid ""
 "If you get a ``MemoryError`` or ``EOFError``, you can remove the ``classes/"
 "`` folder and run ``make`` again. This will drop the class references from "
 "the final HTML documentation but will keep the rest intact."
 msgstr ""
-"Falls Sie einen ``MemoryError`` oder ``EOFError`` erhalten, können Sie den "
-"Ordner ``classes/`` entfernen und ``make`` erneut ausführen. Dadurch werden "
+"Wenn Sie einen ``MemoryError`` oder ``EOFError`` erhalten, können Sie den "
+"Ordner ``classes/`` entfernen und ``make`` erneut starten. Dadurch werden "
 "die Klassenreferenzen aus der endgültigen HTML-Dokumentation entfernt, aber "
 "der Rest bleibt intakt."
 
@@ -142,17 +145,15 @@ msgid ""
 "issues/3157>`__ for more detail."
 msgstr ""
 "Wenn Sie den Ordner ``classes/`` löschen, verwenden Sie nicht ``git add``, "
-"wenn Sie an einer Pull-Request arbeiten, sonst wird der gesamte Ordner "
+"wenn Sie an einem Pull Request arbeiten, sonst wird der gesamte Ordner "
 "``classes/`` beim Commit entfernt. Siehe `#3157 <https://github.com/"
 "godotengine/godot-docs/issues/3157>`__ für weitere Details."
 
-#, fuzzy
 msgid "Hints for performance"
-msgstr "Lichtleistung"
+msgstr "Hinweise zur Performance"
 
-#, fuzzy
 msgid "RAM usage"
-msgstr "Manuelle Verwendung"
+msgstr "RAM-Verbrauch"
 
 msgid ""
 "Building the documentation requires at least 8 GB of RAM to run without disk "
@@ -160,8 +161,9 @@ msgid ""
 "speed up compilation by running:"
 msgstr ""
 "Das Erstellen der Dokumentation erfordert mindestens 8 GB RAM, um ohne "
-"Festplattenswapping zu laufen, was es verlangsamt. Wenn Sie mindestens 16 GB "
-"RAM haben, können Sie die Kompilierung beschleunigen, indem Sie ausführen:"
+"Festplatten-Swapping zu laufen, was es verlangsamt. Wenn Sie mindestens 16 "
+"GB RAM haben, können Sie die Kompilierung beschleunigen, indem Sie folgendes "
+"ausführen:"
 
 msgid ""
 "You can use ``-j auto`` to use all available CPU threads, but this can use a "
@@ -169,15 +171,20 @@ msgid ""
 "32 CPU threads, ``-j auto`` (which corresponds to ``-j 32`` here) can "
 "require 20+ GB of RAM for Sphinx alone."
 msgstr ""
+"Sie können ``-j auto`` verwenden, um alle verfügbaren CPU-Threads zu nutzen, "
+"aber dies kann eine Menge RAM verbrauchen, wenn Sie viele CPU-Threads haben. "
+"Auf einem System mit 32 CPU-Threads kann zum Beispiel ``-j auto`` (was hier "
+"``-j 32`` entspricht) 20+ GB RAM allein für Sphinx benötigen."
 
-#, fuzzy
 msgid "Specifying a list of files"
-msgstr "Dateien bereitstellen"
+msgstr "Angeben einer Liste von Dateien"
 
 msgid ""
 "You can specify a list of files to build, which can greatly speed up "
 "compilation:"
 msgstr ""
+"Sie können eine Liste der zu erstellenden Dateien angeben, was die "
+"Kompilierung erheblich beschleunigen kann:"
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -111,6 +111,13 @@ msgid ""
 msgstr ""
 
 msgid "With correct back-buffer copying, the two spheres blend correctly:"
+msgstr ""
+
+msgid ""
+"In 3D, materials that use ``hint_screen_texture`` are considered transparent "
+"themselves and will not appear in the resulting screen texture of other "
+"materials. If you plan to instance a scene that uses a material with "
+"``hint_screen_texture``, you will need to use a BackBufferCopy node."
 msgstr ""
 
 msgid ""
