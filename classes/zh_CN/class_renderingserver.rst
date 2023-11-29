@@ -2008,7 +2008,7 @@ enum **LightParam**:
 
 :ref:`LightParam<enum_RenderingServer_LightParam>` **LIGHT_PARAM_SHADOW_PANCAKE_SIZE** = ``16``
 
-设置定向阴影斑点的大小。 斑点偏移了阴影的相机视锥体的起点，为阴影提供更高的有效深度分辨率。但是，较大的斑点尺寸会导致靠近视锥体边缘的大型物体的阴影出现伪影。减少斑点的大小会有所帮助。将大小设置为 ``0`` 会关闭斑点效果。
+设置定向阴影圆斑的大小。该圆斑偏移了阴影的相机视锥体的起点，为阴影提供更高的有效深度分辨率。但是，较大的圆斑大小会导致靠近视锥体边缘的大型物体的阴影出现伪影。减少该圆斑的大小会有所帮助。将大小设置为 ``0`` 会关闭该圆斑效果。
 
 .. _class_RenderingServer_constant_LIGHT_PARAM_SHADOW_OPACITY:
 

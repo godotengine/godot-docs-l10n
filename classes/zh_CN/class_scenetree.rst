@@ -508,11 +508,11 @@ void **call_group_flags** **(** :ref:`int<class_int>` flags, :ref:`StringName<cl
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_file** **(** :ref:`String<class_String>` path **)**
 
-将位于给定路径 ``path`` 的场景加载进一个 :ref:`PackedScene<class_PackedScene>` 并新建其实例，然后将正在运行的场景修改为这个场景。
+Changes the running scene to the one at the given ``path``, after loading it into a :ref:`PackedScene<class_PackedScene>` and creating a new instance.
 
-成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，如果 ``path`` 不能被加载到一个 :ref:`PackedScene<class_PackedScene>` 中，则返回 :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>`\ ；如果该场景无法被实例化，则返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ 。
+Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_OPEN<class_@GlobalScope_constant_ERR_CANT_OPEN>` if the ``path`` cannot be loaded into a :ref:`PackedScene<class_PackedScene>`, or :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if that scene cannot be instantiated.
 
-\ **注意：**\ 新的场景节点是在该帧的末尾添加的。这确保了两个场景永远不会同时加载，如果场景太大或在内存受限的环境中运行，这会耗尽系统资源。因此，无法在 :ref:`change_scene_to_file<class_SceneTree_method_change_scene_to_file>` 调用后，立即访问到被加载的场景。
+\ **Note:** See :ref:`change_scene_to_packed<class_SceneTree_method_change_scene_to_packed>` for details on the order of operations.
 
 .. rst-class:: classref-item-separator
 
@@ -524,11 +524,17 @@ void **call_group_flags** **(** :ref:`int<class_int>` flags, :ref:`StringName<cl
 
 :ref:`Error<enum_@GlobalScope_Error>` **change_scene_to_packed** **(** :ref:`PackedScene<class_PackedScene>` packed_scene **)**
 
-将正在运行的场景改变为给定 :ref:`PackedScene<class_PackedScene>` （必须有效）的一个新实例。
+Changes the running scene to a new instance of the given :ref:`PackedScene<class_PackedScene>` (which must be valid).
 
-成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，场景无法实例化时返回 :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>`\ ，场景无效时返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ 。
+Returns :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>` on success, :ref:`@GlobalScope.ERR_CANT_CREATE<class_@GlobalScope_constant_ERR_CANT_CREATE>` if the scene cannot be instantiated, or :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>` if the scene is invalid.
 
-\ **注意：**\ 新的场景节点会在当前帧的末尾添加到场景树中。无法在调用 :ref:`change_scene_to_packed<class_SceneTree_method_change_scene_to_packed>` 后立即访问到它。
+\ **Note:** Operations happen in the following order when :ref:`change_scene_to_packed<class_SceneTree_method_change_scene_to_packed>` is called:
+
+1. The current scene node is immediately removed from the tree. From that point, :ref:`Node.get_tree<class_Node_method_get_tree>` called on the current (outgoing) scene will return ``null``. :ref:`current_scene<class_SceneTree_property_current_scene>` will be ``null``, too, because the new scene is not available yet.
+
+2. At the end of the frame, the formerly current scene, already removed from the tree, will be deleted (freed from memory) and then the new scene will be instantiated and added to the tree. :ref:`Node.get_tree<class_Node_method_get_tree>` and :ref:`current_scene<class_SceneTree_property_current_scene>` will be back to working as usual.
+
+This ensures that both scenes aren't running at the same time, while still freeing the previous scene in a safe way similar to :ref:`Node.queue_free<class_Node_method_queue_free>`.
 
 .. rst-class:: classref-item-separator
 
