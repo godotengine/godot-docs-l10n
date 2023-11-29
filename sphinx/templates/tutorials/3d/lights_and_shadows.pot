@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -466,78 +466,78 @@ msgid "Several shadow map quality settings can be chosen here. The default **Sof
 msgstr ""
 
 #: ../../docs/tutorials/3d/lights_and_shadows.rst:448
-msgid "However, in projects with less detailed textures, the shadow dithering pattern may be more visible. To hide this pattern, you can either enable :ref:`doc_3d_antialiasing_taa`, :ref:`doc_3d_antialiasing_fxaa`, or increase the shadow filter quality to **Soft Medium** or higher."
+msgid "However, in projects with less detailed textures, the shadow dithering pattern may be more visible. To hide this pattern, you can either enable :ref:`doc_3d_antialiasing_taa`, :ref:`doc_3d_antialiasing_fsr2`, :ref:`doc_3d_antialiasing_fxaa`, or increase the shadow filter quality to **Soft Medium** or higher."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:453
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:454
 msgid "The **Soft Very Low** setting will automatically decrease shadow blur to make artifacts from the low sample count less visible. Conversely, the **Soft High** and **Soft Ultra** settings will automatically increase shadow blur to better make use of the increased sample count."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:461
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:462
 msgid "16-bits versus 32-bit"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:463
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:464
 msgid "By default, Godot uses 16-bit depth textures for shadow map rendering. This is recommended in most cases as it performs better without a noticeable difference in quality."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:467
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:468
 msgid "If **16 Bits** is disabled, 32-bit depth textures will be used instead. This can result in less artifacting in large scenes and large lights with shadows enabled. However, the difference is often barely visible, yet this can have a significant performance cost."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:473
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:474
 msgid "Light/shadow distance fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:475
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:476
 msgid "OmniLight3D and SpotLight3D offer several properties to hide distant lights. This can improve performance significantly in large scenes with dozens of lights or more."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:479
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:480
 msgid "**Enabled:** Controls whether distance fade (a form of :abbr:`LOD (Level of Detail)`) is enabled. The light will fade out over **Begin + Length**, after which it will be culled and not sent to the shader at all. Use this to reduce the number of active lights in a scene and thus improve performance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:483
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:484
 msgid "**Begin:** The distance from the camera at which the light begins to fade away (in 3D units)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:485
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:486
 msgid "**Shadow:** The distance from the camera at which the shadow begins to fade away (in 3D units). This can be used to fade out shadows sooner compared to the light, further improving performance. Only available if shadows are enabled for the light."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:488
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:489
 msgid "**Length:** The distance over which the light and shadow fades (in 3D units). The light becomes slowly more transparent over this distance and is completely invisible at the end. Higher values result in a smoother fade-out transition, which is more suited when the camera moves fast."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:496
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:497
 msgid "PCSS recommendations"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:498
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:499
 msgid "Percentage-closer soft shadows (PCSS) provide a more realistic shadow mapping appearance, with the penumbra size varying depending on the distance between the caster and the surface receiving the shadow. This comes at a high performance cost, especially for directional lights."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:503
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:504
 msgid "To avoid performance issues, it's recommended to:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:505
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:506
 msgid "Only use a handful of lights with PCSS shadows enabled at a given time. The effect is generally most visible on large, bright lights. Secondary light sources that are more faint usually don't benefit much from using PCSS shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:509
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:510
 msgid "Provide a setting for users to disable PCSS shadows. On directional lights, this can be done by setting the DirectionalLight3D's ``light_angular_distance`` property to ``0.0`` in a script. On positional lights, this can be done by setting the OmniLight3D or SpotLight3D's ``light_size`` property to ``0.0`` in a script."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:516
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:517
 msgid "Projector filter mode"
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:518
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:519
 msgid "The way projectors are rendered also has an impact on performance. The **Rendering > Textures > Light Projectors > Filter** advanced project setting lets you control how projector textures should be filtered. **Nearest/Linear** do not use mipmaps, which makes them faster to render. However, projectors will look grainy at distance. **Nearest/Linear Mipmaps** will look smoother at a distance, but projectors will look blurry when viewed from oblique angles. This can be resolved by using **Nearest/Linear Mipmaps Anisotropic**, which is the highest-quality mode but also the most expensive."
 msgstr ""
 
-#: ../../docs/tutorials/3d/lights_and_shadows.rst:527
+#: ../../docs/tutorials/3d/lights_and_shadows.rst:528
 msgid "If your project has a pixel art style, consider setting the filter to one of the **Nearest** values so that projectors use nearest-neighbor filtering. Otherwise, stick to **Linear**."
 msgstr ""
 

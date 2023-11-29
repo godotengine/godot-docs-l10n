@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -117,42 +117,46 @@ msgid "_init vs. initialization vs. export"
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:166
-msgid "If the script initializes its own node subtree, without a scene, that code should execute here. Other property or SceneTree-independent initializations should also run here. This triggers before ``_ready()`` or ``_enter_tree()``, but after a script creates and initializes its properties."
+msgid "If the script initializes its own node subtree, without a scene, that code should execute in ``_init()``. Other property or SceneTree-independent initializations should also run here."
 msgstr ""
 
 #: ../../docs/tutorials/best_practices/godot_notifications.rst:171
-msgid "Scripts have three types of property assignments that can occur during instantiation:"
+msgid "The C# equivalent to GDScript's ``_init()`` method is the constructor."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_notifications.rst:217
-msgid "When instantiating a scene, property values will set up according to the following sequence:"
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:173
+msgid "``_init()`` triggers before ``_enter_tree()`` or ``_ready()``, but after a script creates and initializes its properties. When instantiating a scene, property values will set up according to the following sequence:"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_notifications.rst:220
-msgid "**Initial value assignment:** instantiation will assign either the initialization value or the init assignment value. Init assignments take priority over initialization values."
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:177
+msgid "**Initial value assignment:** the property is assigned its initialization value, or its default value if one is not specified. If a setter exists, it is not used."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_notifications.rst:224
-msgid "**Exported value assignment:** If instancing from a scene rather than a script, Godot will assign the exported value to replace the initial value defined in the script."
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:180
+msgid "**``_init()`` assignment:** the property's value is replaced by any assignments made in ``_init()``, triggering the setter."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_notifications.rst:228
-msgid "As a result, instantiating a script versus a scene will affect both the initialization *and* the number of times the engine calls the setter."
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:183
+msgid "**Exported value assignment:** an exported property's value is again replaced by any value set in the Inspector, triggering the setter."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_notifications.rst:232
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:226
+msgid "As a result, instantiating a script versus a scene may affect both the initialization *and* the number of times the engine calls the setter."
+msgstr ""
+
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:230
 msgid "_ready vs. _enter_tree vs. NOTIFICATION_PARENTED"
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_notifications.rst:234
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:232
 msgid "When instantiating a scene connected to the first executed scene, Godot will instantiate nodes down the tree (making ``_init()`` calls) and build the tree going downwards from the root. This causes ``_enter_tree()`` calls to cascade down the tree. Once the tree is complete, leaf nodes call ``_ready``. A node will call this method once all child nodes have finished calling theirs. This then causes a reverse cascade going up back to the tree's root."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_notifications.rst:241
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:239
 msgid "When instantiating a script or a standalone scene, nodes are not added to the SceneTree upon creation, so no ``_enter_tree()`` callbacks trigger. Instead, only the ``_init()`` call occurs. When the scene is added to the SceneTree, the ``_enter_tree()`` and ``_ready()`` calls occur."
 msgstr ""
 
-#: ../../docs/tutorials/best_practices/godot_notifications.rst:246
+#: ../../docs/tutorials/best_practices/godot_notifications.rst:244
 msgid "If one needs to trigger behavior that occurs as nodes parent to another, regardless of whether it occurs as part of the main/active scene or not, one can use the :ref:`PARENTED <class_Node_constant_NOTIFICATION_PARENTED>` notification. For example, here is a snippet that connects a node's method to a custom signal on the parent node without failing. Useful on data-centric nodes that one might create at runtime."
 msgstr ""
 

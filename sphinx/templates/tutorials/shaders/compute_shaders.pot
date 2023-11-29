@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,102 +121,106 @@ msgid "After that, we can load the newly created shader file ``compute_example.g
 msgstr ""
 
 #: ../../docs/tutorials/shaders/compute_shaders.rst:193
+msgid "Local RenderingDevices cannot be debugged using tools such as `RenderDoc <https://renderdoc.org/>`__."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/compute_shaders.rst:197
 msgid "Provide input data"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:195
+#: ../../docs/tutorials/shaders/compute_shaders.rst:199
 msgid "As you might remember, we want to pass an input array to our shader, multiply each element by 2 and get the results."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:198
+#: ../../docs/tutorials/shaders/compute_shaders.rst:202
 msgid "We need to create a buffer to pass values to a compute shader. We are dealing with an array of floats, so we will use a storage buffer for this example. A storage buffer takes an array of bytes and allows the CPU to transfer data to and from the GPU."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:203
+#: ../../docs/tutorials/shaders/compute_shaders.rst:207
 msgid "So let's initialize an array of floats and create a storage buffer:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:227
+#: ../../docs/tutorials/shaders/compute_shaders.rst:231
 msgid "With the buffer in place we need to tell the rendering device to use this buffer. To do that we will need to create a uniform (like in normal shaders) and assign it to a uniform set which we can pass to our shader later."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:254
+#: ../../docs/tutorials/shaders/compute_shaders.rst:258
 msgid "Defining a compute pipeline"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:256
+#: ../../docs/tutorials/shaders/compute_shaders.rst:260
 msgid "The next step is to create a set of instructions our GPU can execute. We need a pipeline and a compute list for that."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:259
+#: ../../docs/tutorials/shaders/compute_shaders.rst:263
 msgid "The steps we need to do to compute our result are:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:261
+#: ../../docs/tutorials/shaders/compute_shaders.rst:265
 msgid "Create a new pipeline."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:262
+#: ../../docs/tutorials/shaders/compute_shaders.rst:266
 msgid "Begin a list of instructions for our GPU to execute."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:263
+#: ../../docs/tutorials/shaders/compute_shaders.rst:267
 msgid "Bind our compute list to our pipeline"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:264
+#: ../../docs/tutorials/shaders/compute_shaders.rst:268
 msgid "Bind our buffer uniform to our pipeline"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:265
+#: ../../docs/tutorials/shaders/compute_shaders.rst:269
 msgid "Specify how many workgroups to use"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:266
+#: ../../docs/tutorials/shaders/compute_shaders.rst:270
 msgid "End the list of instructions"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:289
+#: ../../docs/tutorials/shaders/compute_shaders.rst:293
 msgid "Note that we are dispatching the compute shader with 5 work groups in the X axis, and one in the others. Since we have 2 local invocations in the X axis (specified in our shader), 10 compute shader invocations will be launched in total. If you read or write to indices outside of the range of your buffer, you may access memory outside of your shaders control or parts of other variables which may cause issues on some hardware."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:297
+#: ../../docs/tutorials/shaders/compute_shaders.rst:301
 msgid "Execute a compute shader"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:299
+#: ../../docs/tutorials/shaders/compute_shaders.rst:303
 msgid "After all of this we are almost done, but we still need to execute our pipeline. So far we have only recorded what we would like the GPU to do; we have not actually run the shader program."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:303
+#: ../../docs/tutorials/shaders/compute_shaders.rst:307
 msgid "To execute our compute shader we need to submit the pipeline to the GPU and wait for the execution to finish:"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:319
+#: ../../docs/tutorials/shaders/compute_shaders.rst:323
 msgid "Ideally, you would not call ``sync()`` to synchronize the RenderingDevice right away as it will cause the CPU to wait for the GPU to finish working. In our example, we synchronize right away because we want our data available for reading right away. In general, you will want to wait *at least* 2 or 3 frames before synchronizing so that the GPU is able to run in parallel with the CPU."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:327
+#: ../../docs/tutorials/shaders/compute_shaders.rst:331
 msgid "Long computations can cause Windows graphics drivers to \"crash\" due to :abbr:`TDR (Timeout Detection and Recovery)` being triggered by Windows. This is a mechanism that reinitializes the graphics driver after a certain amount of time has passed without any activity from the graphics driver (usually 5 to 10 seconds)."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:333
+#: ../../docs/tutorials/shaders/compute_shaders.rst:337
 msgid "Depending on the duration your compute shader takes to execute, you may need to split it into multiple dispatches to reduce the time each dispatch takes and reduce the chances of triggering a TDR. Given TDR is time-dependent, slower GPUs may be more prone to TDRs when running a given compute shader compared to a faster GPU."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:340
+#: ../../docs/tutorials/shaders/compute_shaders.rst:344
 msgid "Retrieving results"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:342
+#: ../../docs/tutorials/shaders/compute_shaders.rst:346
 msgid "You may have noticed that, in the example shader, we modified the contents of the storage buffer. In other words, the shader read from our array and stored the data in the same array again so our results are already there. Let's retrieve the data and print the results to our console."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:365
+#: ../../docs/tutorials/shaders/compute_shaders.rst:369
 msgid "With that, you have everything you need to get started working with compute shaders."
 msgstr ""
 
-#: ../../docs/tutorials/shaders/compute_shaders.rst:370
+#: ../../docs/tutorials/shaders/compute_shaders.rst:374
 msgid "The demo projects repository contains a `Compute Shader Heightmap demo <https://github.com/godotengine/godot-demo-projects/tree/master/misc/compute_shader_heightmap>`__ This project performs heightmap image generation on the CPU and GPU separately, which lets you compare how a similar algorithm can be implemented in two different ways (with the GPU implementation being faster in most cases)."
 msgstr ""
 

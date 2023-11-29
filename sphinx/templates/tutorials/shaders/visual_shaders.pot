@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,54 +121,199 @@ msgid "When connecting any ``vector`` output to a ``scalar`` input, the value of
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:96
-msgid "Visual Shader nodes"
+msgid "Visual Shader node interface"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:98
-msgid "Below are some special nodes that are worth knowing about. The list is not exhaustive and might be expanded with more nodes and examples."
+msgid "Visual shader nodes have input and output ports. The input ports are located on the left side of the node, and output ports are located on the right side of the node."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:102
-msgid "Expression node"
+msgid "These ports are colored to differentiate type of port:"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:104
-msgid "The ``Expression`` node allows you to write Godot Shading Language (GLSL-like) expressions inside your visual shaders. The node has buttons to add any amount of required input and output ports and can be resized. You can also set up the name and type of each port. The expression you have entered will apply immediately to the material (once the focus leaves the expression text box). Any parsing or compilation errors will be printed to the Output tab. The outputs are initialized to their zero value by default. The node is located under the Special tab and can be used in all shader modes."
+#: ../../docs/tutorials/shaders/visual_shaders.rst:104
+msgid "scalar"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:105
+#: ../../docs/tutorials/shaders/visual_shaders.rst:105
+msgid "vector"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:106
+#: ../../docs/tutorials/shaders/visual_shaders.rst:106
+msgid "boolean"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:107
+#: ../../docs/tutorials/shaders/visual_shaders.rst:107
+msgid "transform"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:108
+#: ../../docs/tutorials/shaders/visual_shaders.rst:108
+msgid "sampler"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:111
+msgid "Port types"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:115
-msgid "The possibilities of this node are almost limitless – you can write complex procedures, and use all the power of text-based shaders, such as loops, the ``discard`` keyword, extended types, etc. For example:"
+msgid "Type"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:116
+msgid "Color"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:117
+msgid "Description"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:118
+msgid "Example"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:119
+msgid "Scalar"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:120
+msgid "Cyan"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:121
+msgid "Scalar is a single value."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:122
-msgid "Fresnel node"
+msgid "|scalar|"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:123
+msgid "Vector"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:124
-msgid "The ``Fresnel`` node is designed to accept normal and view vectors and produces a scalar which is the saturated dot product between them. Additionally, you can setup the inversion and the power of equation. The ``Fresnel`` node is great for adding a rim-like lighting effect to objects."
+msgid "Purple"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:125
+msgid "Vector is a set of values."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:126
+msgid "|vector|"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:127
+msgid "Boolean"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:128
+msgid "Blue"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:129
+msgid "On or off, true or false."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:130
+msgid "|boolean|"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:131
+msgid "Transform"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:132
-msgid "Boolean node"
+msgid "Orange"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:133
+msgid "A matrix, usually used to transform vertices."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:134
-msgid "The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to represent ``0`` or ``1`` and ``(0, 0, 0)`` or ``(1, 1, 1)`` respectively. This property can be used to enable or disable some effect parts with one click."
+msgid "|transform|"
 msgstr ""
 
-#: ../../docs/tutorials/shaders/visual_shaders.rst:141
-msgid "If node"
+#: ../../docs/tutorials/shaders/visual_shaders.rst:135
+msgid "Sampler"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:136
+msgid "Yellow"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:137
+msgid "A texture sampler. It can be used to sample textures."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:138
+msgid "|sampler|"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:140
+msgid "All of the types are used in the calculations of vertices, fragments, and lights in the shader. For example: matrix multiplication, vector addition, or scalar division."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:143
-msgid "The ``If`` node allows you to setup a vector which will be returned the result of the comparison between ``a`` and ``b``. There are three vectors which can be returned: ``a == b`` (in that case the tolerance parameter is provided as a comparison threshold – by default it is equal to the minimal value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
+msgid "There are other types but these are the main ones."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:146
+msgid "Visual Shader nodes"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:148
+msgid "Below are some special nodes that are worth knowing about. The list is not exhaustive and might be expanded with more nodes and examples."
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:152
-msgid "Switch node"
+msgid "Expression node"
 msgstr ""
 
 #: ../../docs/tutorials/shaders/visual_shaders.rst:154
+msgid "The ``Expression`` node allows you to write Godot Shading Language (GLSL-like) expressions inside your visual shaders. The node has buttons to add any amount of required input and output ports and can be resized. You can also set up the name and type of each port. The expression you have entered will apply immediately to the material (once the focus leaves the expression text box). Any parsing or compilation errors will be printed to the Output tab. The outputs are initialized to their zero value by default. The node is located under the Special tab and can be used in all shader modes."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:165
+msgid "The possibilities of this node are almost limitless – you can write complex procedures, and use all the power of text-based shaders, such as loops, the ``discard`` keyword, extended types, etc. For example:"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:172
+msgid "Fresnel node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:174
+msgid "The ``Fresnel`` node is designed to accept normal and view vectors and produces a scalar which is the saturated dot product between them. Additionally, you can setup the inversion and the power of equation. The ``Fresnel`` node is great for adding a rim-like lighting effect to objects."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:182
+msgid "Boolean node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:184
+msgid "The ``Boolean`` node can be converted to ``Scalar`` or ``Vector`` to represent ``0`` or ``1`` and ``(0, 0, 0)`` or ``(1, 1, 1)`` respectively. This property can be used to enable or disable some effect parts with one click."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:191
+msgid "If node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:193
+msgid "The ``If`` node allows you to setup a vector which will be returned the result of the comparison between ``a`` and ``b``. There are three vectors which can be returned: ``a == b`` (in that case the tolerance parameter is provided as a comparison threshold – by default it is equal to the minimal value, i.e. ``0.00001``), ``a > b`` and ``a < b``."
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:202
+msgid "Switch node"
+msgstr ""
+
+#: ../../docs/tutorials/shaders/visual_shaders.rst:204
 msgid "The ``Switch`` node returns a vector if the boolean condition is ``true`` or ``false``. ``Boolean`` was introduced above. If you convert a vector to a true boolean, all components of the vector should be above zero."
 msgstr ""
 

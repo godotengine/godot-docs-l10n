@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,31 +32,31 @@ msgstr ""
 msgid "Attributes are added before each vertex is added:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:24
+#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:32
 msgid "When finished generating your geometry with the :ref:`SurfaceTool <class_surfacetool>` call ``commit()`` to finish generating the mesh. If an :ref:`ArrayMesh <class_ArrayMesh>` is passed to ``commit()`` then it appends a new surface to the end of the ArrayMesh. While if nothing is passed in, ``commit()`` returns an ArrayMesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:36
+#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:50
 msgid "Code creates a triangle with indices"
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:62
+#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:99
 msgid "You can optionally add an index array, either by calling ``add_index()`` and adding vertices to the index array or by calling ``index()`` which shrinks the vertex array to remove duplicate vertices."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:82
+#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:134
 msgid "Similarly, if you have an index array, but you want each vertex to be unique (e.g. because you want to use unique normals or colors per face instead of per-vertex), you can call ``deindex()``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:90
+#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:146
 msgid "If you don't add custom normals yourself, you can add them using ``generate_normals()``, which should be called after generating geometry and before committing the mesh using ``commit()`` or ``commit_to_arrays()``. Calling ``generate_normals(true)`` will flip the resulting normals. As a side note, ``generate_normals()`` only works if the primitive type is set to ``Mesh.PRIMITIVE_TRIANGLES``."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:95
+#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:151
 msgid "You may notice that normal mapping or other material properties look broken on the generated mesh. This is because normal mapping **requires** the mesh to feature *tangents*, which are separate from *normals*. You can either add custom tangents manually, or generate them automatically with ``generate_tangents()``. This method requires that each vertex have UVs and normals set already."
 msgstr ""
 
-#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:108
+#: ../../docs/tutorials/3d/procedural_geometry/surfacetool.rst:169
 msgid "By default, when generating normals, they will be calculated on a per-face basis. If you want smooth vertex normals, when adding vertices, call ``add_smooth_group()``. ``add_smooth_group()`` needs to be called while building the geometry, e.g. before the call to ``add_vertex()`` (if non-indexed) or ``add_index()`` (if indexed)."
 msgstr ""
 

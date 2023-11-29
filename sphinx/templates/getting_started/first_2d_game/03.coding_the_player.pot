@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Godot Engine latest\n"
+"Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-21 12:44+0100\n"
+"POT-Creation-Date: 2023-11-29 23:14+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -217,26 +217,42 @@ msgid "This defines a custom signal called \"hit\" that we will have our player 
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:372
-msgid "Notice our custom \"hit\" signal is there as well! Since our enemies are going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node2D)`` signal. This signal will be emitted when a body contacts the player. Click \"Connect..\" and the \"Connect a Signal\" window appears. We don't need to change any of these settings so click \"Connect\" again. Godot will automatically create a function in your player's script."
+msgid "Notice our custom \"hit\" signal is there as well! Since our enemies are going to be ``RigidBody2D`` nodes, we want the ``body_entered(body: Node2D)`` signal. This signal will be emitted when a body contacts the player. Click \"Connect..\" and the \"Connect a Signal\" window appears."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:381
-msgid "Note the green icon indicating that a signal is connected to this function. Add this code to the function:"
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:377
+msgid "Godot will create a function with that exact name directly in script for you. You don't need to change the default settings right now."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:403
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:384
+msgid "If you're using an external text editor (for example, Visual Studio Code), a bug currently prevents Godot from doing so. You'll be sent to your external editor, but the new function won't be there."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:388
+msgid "In this case, you'll need to write the function yourself into the Player's script file."
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:393
+msgid "Note the green icon indicating that a signal is connected to this function; this does not mean the function exists, only that the signal will attempt to connect to a function with that name, so double-check that the spelling of the function matches exactly!"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:397
+msgid "Next, add this code to the function:"
+msgstr ""
+
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:418
 msgid "Each time an enemy hits the player, the signal is going to be emitted. We need to disable the player's collision so that we don't trigger the ``hit`` signal more than once."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:407
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:422
 msgid "Disabling the area's collision shape can cause an error if it happens in the middle of the engine's collision processing. Using ``set_deferred()`` tells Godot to wait to disable the shape until it's safe to do so."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:412
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:427
 msgid "The last piece is to add a function we can call to reset the player when starting a new game."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:432
+#: ../../docs/getting_started/first_2d_game/03.coding_the_player.rst:447
 msgid "With the player working, we'll work on the enemy in the next lesson."
 msgstr ""
 
