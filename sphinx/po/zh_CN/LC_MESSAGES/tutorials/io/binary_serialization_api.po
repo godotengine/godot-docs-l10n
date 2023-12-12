@@ -39,18 +39,22 @@ msgstr ""
 "式。"
 
 msgid "Full Objects vs Object instance IDs"
-msgstr ""
+msgstr "完整对象 vs 对象实例 ID"
 
 msgid ""
 "If a variable is serialized with ``full_objects = true``, then any Objects "
 "contained in the variable will be serialized and included in the result. "
 "This is recursive."
 msgstr ""
+"如果序列化变量时使用了 ``full_objects = true``\\ ，则该变量中所包含的 Object "
+"都会进行序列化、包含在结果中。这个过程是递归的。"
 
 msgid ""
 "If ``full_objects = false``, then only the instance IDs will be serialized "
 "for any Objects contained in the variable."
 msgstr ""
+"如果 ``full_objects = false``\\ ，则只会对该变量中所包含的 Object 的实例 ID "
+"进行序列化。"
 
 msgid "Packet specification"
 msgstr "数据包规格"
@@ -138,7 +142,7 @@ msgid "10"
 msgstr "10"
 
 msgid "quaternion"
-msgstr ""
+msgstr "四元数"
 
 msgid "11"
 msgstr "11"

@@ -18,70 +18,78 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "CanvasItem shaders"
-msgstr ""
+msgstr "Шейдеры CanvasItem"
 
 msgid ""
 "CanvasItem shaders are used to draw all 2D elements in Godot. These include "
 "all nodes that inherit from CanvasItems, and all GUI elements."
 msgstr ""
+"Шейдеры CanvasItem используются для отрисовки всех 2D-элементов в Godot. К "
+"ним относятся все узлы, наследующие от CanvasItems, и все элементы "
+"графического интерфейса."
 
 msgid ""
 "CanvasItem shaders contain less built-in variables and functionality than "
 "Spatial shaders, but they maintain the same basic structure with vertex, "
 "fragment, and light processor functions."
 msgstr ""
+"Шейдеры CanvasItem содержат меньше встроенных переменных и функциональных "
+"возможностей, чем шейдеры Spatial, но они сохраняют ту же базовую структуру "
+"с функциями вершинного, фрагментного и светового процессоров."
 
 msgid "Render modes"
 msgstr "Режимы визуализации"
 
-#, fuzzy
 msgid "Render mode"
-msgstr "Опции Отрисовки"
+msgstr "Режим рендеринга"
 
 msgid "Description"
 msgstr "Описание"
 
 msgid "**blend_mix**"
-msgstr "**blеnd_mix**"
+msgstr ""
 
 msgid "Mix blend mode (alpha is transparency), default."
-msgstr ""
+msgstr "Режим смешивания (альфа как прозрачность), по умолчанию."
 
 msgid "**blend_add**"
-msgstr "**blеnd_add**"
+msgstr ""
 
 msgid "Additive blend mode."
-msgstr ""
+msgstr "Аддитивный режим наложения."
 
 msgid "**blend_sub**"
 msgstr "**blеnd_sub**"
 
 msgid "Subtractive blend mode."
-msgstr ""
+msgstr "Режим наложения с вычитанием."
 
 msgid "**blend_mul**"
 msgstr "**blеnd_mul**"
 
 msgid "Multiplicative blend mode."
-msgstr ""
+msgstr "Режим наложения с умножением."
 
 msgid "**blend_premul_alpha**"
 msgstr "**blеnd_premul_alpha**"
 
 msgid "Pre-multiplied alpha blend mode."
-msgstr ""
+msgstr "Режим наложения альфа с предварительным умножением."
 
 msgid "**blend_disabled**"
 msgstr ""
 
 msgid "Disable blending, values (including alpha) are written as-is."
 msgstr ""
+"Отключить смешивание, значения (в том числе альфа) записываются как есть."
 
 msgid "**unshaded**"
 msgstr "**unshadеd**"
 
 msgid "Result is just albedo. No lighting/shading happens in material."
 msgstr ""
+"В результате получается просто альбедо. Никакого освещения/затенения в "
+"материале не происходит."
 
 msgid "**light_only**"
 msgstr "**lіght_only**"
@@ -93,17 +101,16 @@ msgid "**skip_vertex_transform**"
 msgstr "**skіp_vertex_transform**"
 
 msgid "VERTEX needs to be transformed manually in vertex function."
-msgstr ""
+msgstr "VERTEX необходимо преобразовать вручную в функцию vertex."
 
 msgid "**world_vertex_coords**"
 msgstr "**wоrld_vertex_coords**"
 
 msgid "VERTEX is modified in world coordinates instead of local."
-msgstr ""
+msgstr "VERTEX изменяется в мировых координатах, а не в локальных."
 
-#, fuzzy
 msgid "Built-ins"
-msgstr "Встроенный"
+msgstr "Встроенные функции"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -111,13 +118,19 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
+"Значения, помеченные как \"in\", предназначены только для чтения. Значения, "
+"помеченные как \"out\", предназначены для необязательной записи и не "
+"обязательно будут содержать разумные значения. Значения, помеченные как "
+"\"inout\", содержат разумное значение по умолчанию и могут быть записаны по "
+"желанию. Сэмплеры не являются объектами записи и не помечаются."
 
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Векторные встроенные типы"
+msgstr "Глобальные встроенные функции"
 
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
+"Глобальные встроенные модули доступны везде, включая пользовательские "
+"функции."
 
 msgid "Built-in"
 msgstr "Встроенный"
@@ -132,6 +145,12 @@ msgid ""
 "pausing, but you can define a global shader uniform to add a \"scaled\" "
 "``TIME`` variable if desired."
 msgstr ""
+"Глобальное время с момента запуска движка, в секундах (всегда "
+"положительное). Оно зависит от настройки ролловера (по умолчанию это 3600 "
+"секунд). На него не влияет :ref:"
+"`time_scale<class_Engine_property_time_scale>` или пауза, но вы можете "
+"определить глобальную форму шейдера, чтобы добавить \"масштабированную\" "
+"переменную ``TIME``, если хотите."
 
 msgid "in float **PI**"
 msgstr ""
@@ -140,6 +159,8 @@ msgid ""
 "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
 "diameter and amount of radians in half turn."
 msgstr ""
+"Константа ``PI`` (``3.141592``). Отношение окружности круга к его диаметру и "
+"количество радианов в половине оборота."
 
 msgid "in float **TAU**"
 msgstr ""
@@ -148,58 +169,73 @@ msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
+"Константа ``TAU`` (``6.283185``). Эквивалент ``PI * 2`` и количество "
+"радианов в полном обороте."
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "**float**"
+msgstr ""
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
 "logarithm."
 msgstr ""
+"Константа ``E`` (``2,718281``). Число Эйлера и основание натурального "
+"логарифма."
 
-#, fuzzy
 msgid "Vertex built-ins"
-msgstr "Векторные встроенные типы"
+msgstr "Вершинные встроенные константы"
 
 msgid ""
 "Vertex data (``VERTEX``) is presented in local space (pixel coordinates, "
 "relative to the Node2D's origin). If not written to, these values will not "
 "be modified and be passed through as they came."
 msgstr ""
+"Данные вершин (``VERTEX``) представлены в локальном пространстве (пиксельные "
+"координаты, относительно начала координат Node2D). Если не записывать эти "
+"значения, то они не будут изменены и будут переданы в том виде, в котором "
+"пришли."
 
 msgid ""
 "The user can disable the built-in model to world transform (world to screen "
 "and projection will still happen later) and do it manually with the "
 "following code:"
 msgstr ""
+"Пользователь может отключить встроенную модель для преобразования мира (мир "
+"на экран и проецирование все равно произойдет позже) и сделать это вручную с "
+"помощью следующего кода:"
 
 msgid ""
 "Other built-ins, such as UV and COLOR, are also passed through to the "
 "fragment function if not modified."
 msgstr ""
+"Другие встроенные параметры, такие как UV и COLOR, также передаются во "
+"фрагментную функцию, если они не изменены."
 
 msgid ""
 "For instancing, the INSTANCE_CUSTOM variable contains the instance custom "
 "data. When using particles, this information is usually:"
 msgstr ""
+"При инстансировании переменная INSTANCE_CUSTOM содержит пользовательские "
+"данные экземпляра. При использовании частиц эта информация обычно является:"
 
 msgid "**x**: Rotation angle in radians."
-msgstr ""
+msgstr "**x**: Угол поворота в радианах."
 
 msgid "**y**: Phase during lifetime (0 to 1)."
-msgstr ""
+msgstr "**y**: Фаза в течение жизни (от 0 до 1)."
 
 msgid "**z**: Animation frame."
-msgstr ""
+msgstr "**z**: Кадр анимации."
 
 msgid "in mat4 **MODEL_MATRIX**"
-msgstr ""
+msgstr "mat4 **MODEL_MATRIX**"
 
 msgid ""
 "Local space to world space transform. World space is the coordinates you "
 "normally use in the editor."
 msgstr ""
+"Трансформация локального пространства в мировое. Мировое пространство — это "
+"координаты, которые вы обычно используете в редакторе."
 
 msgid "in mat4 **CANVAS_MATRIX**"
 msgstr ""
@@ -209,6 +245,9 @@ msgid ""
 "upper-left corner of the screen and coordinates ranging from (0, 0) to "
 "viewport size."
 msgstr ""
+"Преобразование пространства мира в пространство холста. В пространстве "
+"холста началом координат является левый верхний угол экрана, а координаты "
+"варьируются от (0, 0) до размера области просмотра (вьюпорта)."
 
 msgid "in mat4 **SCREEN_MATRIX**"
 msgstr ""
@@ -217,6 +256,8 @@ msgid ""
 "Canvas space to clip space. In clip space coordinates ranging from (-1, -1) "
 "to (1, 1)."
 msgstr ""
+"Пространство холста для обрезки пространства. В пространстве отсечения "
+"координаты от (-1, -1) до (1, 1)."
 
 msgid "in int  **INSTANCE_ID**"
 msgstr ""
@@ -228,14 +269,13 @@ msgid "in vec4 **INSTANCE_CUSTOM**"
 msgstr ""
 
 msgid "Instance custom data."
-msgstr ""
+msgstr "Пользовательские данные экземпляра."
 
 msgid "in bool **AT_LIGHT_PASS**"
 msgstr ""
 
-#, fuzzy
 msgid "Always ``false``."
-msgstr "``if x else``"
+msgstr "Всегда ``false``."
 
 msgid "in vec2 **TEXTURE_PIXEL_SIZE**"
 msgstr ""
@@ -244,41 +284,41 @@ msgid ""
 "Normalized pixel size of default 2D texture. For a Sprite2D with a texture "
 "of size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 msgstr ""
+"Нормализованный размер пикселя 2D-текстуры по умолчанию. Для Sprite2D с "
+"текстурой размером 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 
 msgid "inout vec2 **VERTEX**"
 msgstr ""
 
-#, fuzzy
 msgid "Vertex, in local space."
-msgstr "Символ вертикальной табуляции"
+msgstr "Вершина, в локальном пространстве."
 
 msgid "in int **VERTEX_ID**"
 msgstr ""
 
 msgid "The index of the current vertex in the vertex buffer."
-msgstr ""
+msgstr "Индекс текущей вершины в буфере вершин."
 
 msgid "inout vec2 **UV**"
 msgstr ""
 
 msgid "Normalized texture coordinates. Range from 0 to 1."
-msgstr ""
+msgstr "Нормализованные координаты текстуры. Диапазон от 0 до 1."
 
 msgid "inout vec4 **COLOR**"
 msgstr ""
 
 msgid "Color from vertex primitive."
-msgstr ""
+msgstr "Цвет из вершин примитива."
 
 msgid "inout float **POINT_SIZE**"
 msgstr ""
 
 msgid "Point size for point drawing."
-msgstr "Размер точки для рисования."
+msgstr "Размер точки для отрисовки."
 
-#, fuzzy
 msgid "Fragment built-ins"
-msgstr "Векторные встроенные типы"
+msgstr "Фрагментные встроенные константы"
 
 msgid ""
 "Certain Nodes (for example, :ref:`Sprite2Ds <class_Sprite2D>`) display a "
@@ -287,6 +327,12 @@ msgid ""
 "the texture color in the ``COLOR`` built-in variable multiplied by the "
 "node's color. To read the texture color by itself, you can use:"
 msgstr ""
+"Некоторые узлы (например, :ref:`Sprite2Ds <class_Sprite2D>`) отображают "
+"текстуру по умолчанию. Однако, когда к этим узлам прикрепляется "
+"пользовательская фрагментная функция, поиск текстуры приходится выполнять "
+"вручную. Godot предоставляет цвет текстуры во встроенной переменной "
+"``COLOR``, умноженной на цвет узла. Чтобы прочитать цвет текстуры "
+"самостоятельно, вы можете использовать:"
 
 msgid ""
 "Similarly, if a normal map is used in the :ref:`CanvasTexture "
@@ -296,58 +342,67 @@ msgid ""
 "must assign it to the ``NORMALMAP`` property. Godot will handle converting "
 "it for use in 2D and overwriting ``NORMAL``."
 msgstr ""
+"Аналогично, если карта нормалей используется в :ref:`CanvasTexture "
+"<class_CanvasTexture>`, Godot использует её по умолчанию и присваивает её "
+"значение встроенной переменной ``NORMAL``. Если вы используете карту "
+"нормалей, предназначенную для использования в 3D, она будет отображаться "
+"инвертированной. Чтобы использовать её в шейдере, вы должны присвоить её "
+"свойству ``NORMALMAP``. Godot сам преобразует её для использования в 2D и "
+"перезапишет ``NORMAL``."
 
 msgid "in vec4 **FRAGCOORD**"
-msgstr ""
+msgstr "vec4 **FRAGCOORD**"
 
 msgid ""
 "Coordinate of pixel center. In screen space. ``xy`` specifies position in "
 "window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
 "lower-left."
 msgstr ""
+"Координата центра пикселя в пространстве экрана. ``xy`` задает позицию в "
+"окне, ``z`` задает глубину фрагмента, если ``DEPTH`` не используется. Начало "
+"координат - левый нижний угол."
 
 msgid "in vec2 **SCREEN_PIXEL_SIZE**"
 msgstr ""
 
 msgid "Size of individual pixels. Equal to inverse of resolution."
-msgstr ""
+msgstr "Размер отдельных пикселей. Равно обратному разрешению."
 
 msgid "in vec2 **POINT_COORD**"
-msgstr ""
+msgstr "vec2 **POINT_COORD**"
 
 msgid "Coordinate for drawing points."
-msgstr ""
+msgstr "Координаты для отрисовки точек."
 
 msgid "sampler2D **TEXTURE**"
 msgstr ""
 
 msgid "Default 2D texture."
-msgstr ""
+msgstr "2D текстура по умолчанию."
 
 msgid "sampler2D **SPECULAR_SHININESS_TEXTURE**"
 msgstr ""
 
 msgid "Specular shininess texture of this object."
-msgstr ""
+msgstr "Текстура зеркального блеска этого объекта."
 
-#, fuzzy
 msgid "in vec4 **SPECULAR_SHININESS**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid "Specular shininess color, as sampled from the texture."
-msgstr ""
+msgstr "Цвет зеркального блеска, взятый из текстуры."
 
 msgid "in vec2 **UV**"
-msgstr ""
+msgstr "vec2 **UV**"
 
 msgid "UV from vertex function."
-msgstr ""
+msgstr "UV из вершинной (vertex) функции."
 
 msgid "in vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "vec2 **SCREEN_UV**"
 
 msgid "Screen UV coordinate for current pixel."
-msgstr ""
+msgstr "Экранная UV-координата для текущего пикселя."
 
 msgid "sampler2D **SCREEN_TEXTURE**"
 msgstr ""
@@ -355,18 +410,20 @@ msgstr ""
 msgid ""
 "Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
 msgstr ""
+"Убрано в Godot 4. Вместо этого используйте ``sampler2D`` с "
+"``hint_screen_texture``."
 
 msgid "inout vec3 **NORMAL**"
 msgstr ""
 
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
-msgstr ""
+msgstr "Чтение нормали из **NORMAL_TEXTURE**. Возможна запись."
 
 msgid "sampler2D **NORMAL_TEXTURE**"
 msgstr ""
 
 msgid "Default 2D normal texture."
-msgstr ""
+msgstr "2D текстура нормали по умолчанию."
 
 msgid "out vec3 **NORMAL_MAP**"
 msgstr ""
@@ -375,168 +432,173 @@ msgid ""
 "Configures normal maps meant for 3D for use in 2D. If used, overrides "
 "**NORMAL**."
 msgstr ""
+"Настраивает карты нормалей, предназначенные для 3D, для использования в 2D. "
+"Если используется, переопределяет **NORMAL**."
 
 msgid "out float **NORMAL_MAP_DEPTH**"
 msgstr ""
 
 msgid "Normalmap depth for scaling."
-msgstr ""
+msgstr "Глубина карты нормалей для масштабирования."
 
 msgid "Pixel position in screen space."
-msgstr ""
+msgstr "Позиция пикселя в экранном пространстве."
 
-#, fuzzy
 msgid "inout vec2 **SHADOW_VERTEX**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid "Same as ``VERTEX`` but can be written to alter shadows."
-msgstr ""
+msgstr "Аналогичен ``VERTEX``, но может быть записан для изменения теней."
 
-#, fuzzy
 msgid "inout vec3 **LIGHT_VERTEX**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid ""
 "Same as ``VERTEX`` but can be written to alter lighting. Z component "
 "represents height."
 msgstr ""
+"Аналогичен ``VERTEX``, но может быть записан для изменения освещения. "
+"Компонент Z представляет собой высоту."
 
 msgid ""
 "Color from vertex function multiplied by the **TEXTURE** color. Also output "
 "color value."
 msgstr ""
+"Цвет из вершинной функции, умноженный на цвет **TEXTURE**. Также выводит "
+"значение цвета."
 
-#, fuzzy
 msgid "Light built-ins"
-msgstr "Базовые встроенные типы"
+msgstr "Встроенные константы шейдеров света"
 
 msgid ""
 "Light processor functions work differently in Godot 4.x than they did in "
 "Godot 3.x. In Godot 4.x all lighting is done during the regular draw pass. "
 "In other words, Godot no longer draws the object again for each light."
 msgstr ""
+"Функции светового процессора в Godot 4.x работают иначе, чем в Godot 3.x. В "
+"Godot 4.x всё освещение выполняется во время обычного прохода отрисовки. "
+"Другими словами, Godot больше не рисует объект заново для каждого освещения."
 
-#, fuzzy
 msgid ""
 "Use render_mode ``unshaded`` if you do not want the light processor function "
 "to run. Use render_mode ``light_only`` if you only want to see the impact of "
 "lighting on an object; this can be useful when you only want the object "
 "visible where it is covered by light."
 msgstr ""
-"Функции процессора света работают в 2D иначе, чем в 3D. В шейдерах "
-"CanvasItem шейдер вызывается один раз для рисуемого объекта, а затем один "
-"раз для каждого света, касающегося этого объекта в сцене. Используйте "
-"render_mode ``unshaded``, если вы не хотите, чтобы для этого объекта "
-"происходило прохождение света. Используйте render_mode ``light_only``, если "
-"вы хотите, чтобы для этого объекта выполнялись только проходы света; это "
-"может быть полезно, когда вы хотите, чтобы объект был виден только там, где "
-"он освещен."
+"Используйте render_mode ``unshaded``, если вы не хотите запускать функцию "
+"обработки света. Используйте render_mode ``light_only``, если вы хотите "
+"видеть только влияние освещения на объект; это может быть полезно, когда вы "
+"хотите, чтобы объект был виден только там, где он освещён."
 
 msgid ""
 "If you define a light function it will replace the built in light function, "
 "even if your light function is empty."
 msgstr ""
+"Если вы определите функцию освещения, она заменит встроенную функцию "
+"освещения, даже если ваша функция освещения пуста."
 
 msgid ""
 "Below is an example of a light shader that takes a CanvasItem's normal map "
 "into account:"
 msgstr ""
+"Ниже приведён пример шейдера света (light), который учитывает карту нормалей "
+"CanvasItem:"
 
 msgid "in vec3 **NORMAL**"
 msgstr ""
 
-#, fuzzy
 msgid "Input Normal."
-msgstr "Вход"
+msgstr "Вход нормали."
 
 msgid "in vec4 **COLOR**"
-msgstr ""
+msgstr "vec4 **COLOR**"
 
 msgid "Input Color. This is the output of the fragment function."
-msgstr ""
+msgstr "Цвет ввода. Это результат фрагментной функции."
 
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
-msgstr ""
+msgstr "UV из вершинной функции, что эквивалентно UV во фрагментной функции."
 
 msgid "Current texture in use for CanvasItem."
-msgstr ""
+msgstr "Текущая текстура, используемая для CanvasItem."
 
 msgid ""
 "Normalized pixel size of **TEXTURE**. For a Sprite2D with a **TEXTURE** of "
 "size 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 msgstr ""
+"Нормализованный размер пикселя **TEXTURE**. Для Sprite2D с **TEXTURE** "
+"размером 64x32px, **TEXTURE_PIXEL_SIZE** = ``vec2(1/64, 1/32)``"
 
 msgid "UV for Point Sprite."
 msgstr ""
 
-#, fuzzy
 msgid "in vec4 **LIGHT_COLOR**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid "Color of Light multiplied by Light's texture."
-msgstr ""
+msgstr "Цвет Света, умноженный на текстуру Света."
 
-#, fuzzy
 msgid "in float **LIGHT_ENERGY**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid "Energy multiplier of Light."
-msgstr ""
+msgstr "Мультипликатор энергии света."
 
-#, fuzzy
 msgid "in vec3 **LIGHT_POSITION**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid ""
 "Position of Light in screen space. If using a ``DirectionalLight2D`` this is "
 "always ``vec3(0,0,0)``."
 msgstr ""
+"Положение света в пространстве экрана. При использовании "
+"``DirectionalLight2D`` это всегда ``vec3(0,0,0)``."
 
-#, fuzzy
 msgid "in vec3 **LIGHT_DIRECTION**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid "Direction of Light in screen space."
-msgstr ""
+msgstr "Направление света в экранном пространстве."
 
 msgid "in bool **LIGHT_IS_DIRECTIONAL**"
 msgstr ""
 
 msgid "``true`` if this pass is a ``DirectionalLight2D``."
-msgstr ""
+msgstr "``true``, если этот проход является ``DirectionalLight2D``."
 
-#, fuzzy
 msgid "in vec3 **LIGHT_VERTEX**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid "Pixel position, in screen space as modified in the fragment function."
 msgstr ""
+"Положение пикселя в пространстве экрана, изменённое во фрагментной функции."
 
 msgid "inout vec4 **LIGHT**"
 msgstr ""
 
-#, fuzzy
 msgid "Output color for this Light."
-msgstr "Лог вывода"
+msgstr "Выходной цвет для этого источника света."
 
 msgid "Specular shininess, as set in the object's texture."
-msgstr ""
+msgstr "Зеркальный блеск, заданный текстурой объекта."
 
 msgid "out vec4 **SHADOW_MODULATE**"
 msgstr ""
 
 msgid "Multiply shadows cast at this point by this color."
-msgstr ""
+msgstr "Умножение теней, отбрасываемые в этой точке, на этот цвет."
 
-#, fuzzy
 msgid "SDF functions"
-msgstr "Функции"
+msgstr "SDF функции"
 
 msgid ""
 "There are a few additional functions implemented to sample an automatically "
 "generated Signed Distance Field texture. These functions available for "
 "Fragment and Light functions of CanvasItem shaders."
 msgstr ""
+"Для выборки автоматически сгенерированной текстуры Signed Distance Field "
+"(поле расстояния со знаком) реализовано несколько дополнительных функций. "
+"Эти функции доступны для функций Fragment и Light шейдеров CanvasItem."
 
 msgid ""
 "The signed distance field is generated from :ref:`class_LightOccluder2D` "
@@ -545,6 +607,10 @@ msgid ""
 "<doc_2d_lights_and_shadows_setting_up_shadows>` documentation for more "
 "information."
 msgstr ""
+"Поле расстояния со знаком генерируется из узлов :ref:"
+"`class_LightOccluder2D`, присутствующих в сцене с включенным свойством **SDF "
+"Collision** (по умолчанию). Дополнительную информацию см. в документации :"
+"ref:`2D lights and shadows <doc_2d_lights_and_shadows_setting_up_shadows>`."
 
 msgid "Function"
 msgstr "Функция"
@@ -553,26 +619,25 @@ msgid "float **texture_sdf** (vec2 sdf_pos)"
 msgstr ""
 
 msgid "Performs an SDF texture lookup."
-msgstr ""
+msgstr "Выполняет поиск текстуры SDF."
 
 msgid "vec2 **texture_sdf_normal** (vec2 sdf_pos)"
 msgstr ""
 
 msgid "Calculates a normal from the SDF texture."
-msgstr ""
+msgstr "Вычисляет нормаль из текстуры SDF."
 
 msgid "vec2 **sdf_to_screen_uv** (vec2 sdf_pos)"
 msgstr ""
 
 msgid "Converts a SDF to screen UV."
-msgstr ""
+msgstr "Преобразует SDF в экранный UV."
 
 msgid "vec2 **screen_uv_to_sdf** (vec2 uv)"
 msgstr ""
 
-#, fuzzy
 msgid "Converts screen UV to a SDF."
-msgstr "Преобразовать отступ в табуляцию"
+msgstr "Преобразует экранный UV в SDF."
 
 msgid "Translation status"
 msgstr "Статус перевода"

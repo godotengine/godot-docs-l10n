@@ -64,15 +64,14 @@ msgid ""
 "<doc_android_gradle_build>`."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Building on the previous v1 architecture, Android plugins continue to be "
 "derived from the `Android archive library <https://developer.android.com/"
 "studio/projects/android-library#aar-contents>`_."
 msgstr ""
-"En su núcleo, un complemento de Godot para Android es una `biblioteca de "
-"archivos de Android <https://developer.android.com/studio/projects/android-"
-"library#aar-contents>`_ (*archivo aar*) con las siguientes advertencias:"
+"Compilar en la arquitectura previa v1, plugins de Android continúan siendo "
+"derivados de la `bliblioteca de archivos Android <https://developer.android."
+"com/studio/projects/android-library#aar-contents>`_."
 
 msgid ""
 "At its core, a Godot Android plugin v2 is an Android library with a "
@@ -100,9 +99,8 @@ msgstr "Usando AnimationTree"
 msgid "Native libraries (via JNI)"
 msgstr ""
 
-#, fuzzy
 msgid "GDExtension libraries"
-msgstr "Librerías de desarrollo:"
+msgstr "Librerías de GDExtension"
 
 msgid ""
 "Each plugin has an init class extending from the `GodotPlugin <https://"
@@ -154,14 +152,12 @@ msgid ""
 "create the project template:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Create an Android library module using `these instructions <https://"
 "developer.android.com/studio/projects/android-library>`_"
 msgstr ""
-"Sigue estas instrucciones en <https://developer.android.com/studio/projects/"
-"android-library>__ para crear un módulo de biblioteca de Android para tu "
-"complemento."
+"Crea un módulo librería de Android siguiendo `estas instrucciones <https://"
+"developer.android.com/studio/projects/android-library>`_"
 
 msgid ""
 "Add the Godot Android library as a dependency by updating the module's "
@@ -478,15 +474,12 @@ msgid ""
 "Open the project in the Godot Editor; the Editor should detect the plugin"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Navigate to ``Project`` -> ``Project Settings...`` -> ``Plugins``, and "
 "ensure the plugin is enabled"
 msgstr ""
-"En la barra de herramientas principal, haz clic en el desplegable "
-"``Project``. Luego haz clic en ``Project Settings...``. Ve a la pestaña "
-"``Plugins`` y luego haz clic en el botón ``Create`` en la parte superior "
-"derecha."
+"Dirígete a ``Projecto`` -> ``Ajustes del Proyecto...`` -> ``Plugins``, y "
+"asegúrate de que el plugin esté habilitado"
 
 msgid ""
 "Install the Godot Android build template by clicking on ``Project`` -> "
@@ -532,33 +525,30 @@ msgstr ""
 msgid "Reference implementations"
 msgstr "Implementaciones de referenca"
 
-#, fuzzy
 msgid ""
 "`Godot Android Plugins Samples <https://github.com/m4gr3d/Godot-Android-"
 "Samples/tree/master/plugins>`_"
 msgstr ""
-"`Plugin de Godot Google Play Billing <https://github.com/godotengine/godot-"
-"google-play-billing>`_."
+"`Ejemplos de plugins de Android para Godot <https://github.com/m4gr3d/Godot-"
+"Android-Samples/tree/master/plugins>`_"
 
-#, fuzzy
 msgid ""
 "`Godot Android Plugin Template <https://github.com/m4gr3d/Godot-Android-"
 "Plugin-Template>`_"
 msgstr ""
-"`Plugin de Godot Google Play Billing <https://github.com/godotengine/godot-"
-"google-play-billing>`_."
+"`Plantillas de plugins de Android para Godot <https://github.com/m4gr3d/"
+"Godot-Android-Plugin-Template>`_"
 
 msgid ""
 "`GDExtension Android Plugin Template <https://github.com/m4gr3d/GDExtension-"
 "Android-Plugin-Template>`_"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`Godot OpenXR Loaders <https://github.com/GodotVR/godot_openxr_loaders>`_"
 msgstr ""
-"Puedes encontrar el proyecto terminado en el repositorio de GitHub de "
-"OpenVR: `https://github.com/GodotVR/godot_openvr_fps`__."
+"`Cargadores de Godot OpenXR <https://github.com/GodotVR/"
+"godot_openxr_loaders>`_"
 
 #, fuzzy
 msgid "Tips and Guidelines"

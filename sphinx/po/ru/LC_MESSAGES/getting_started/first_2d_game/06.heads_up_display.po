@@ -18,7 +18,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "Heads up display"
-msgstr "Головной дисплей"
+msgstr "Графический интерфейс"
 
 msgid ""
 "The final piece our game needs is a User Interface (UI) to display things "
@@ -28,7 +28,6 @@ msgstr ""
 "чтобы отображать такие вещи, как рейтинг, сообщение \"игра окончена\" и "
 "кнопку перезапуска."
 
-#, fuzzy
 msgid ""
 "Create a new scene, click the \"Other Node\" button and add a :ref:"
 "`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for "
@@ -36,8 +35,8 @@ msgid ""
 "top of the game view."
 msgstr ""
 "Создайте новую сцену и добавьте узел :ref:`CanvasLayer <class_CanvasLayer>` "
-"с именем ``HUD``. \"HUD\" означает \"heads-up display\", информационный "
-"дисплей, отображающийся поверх игры."
+"с именем ``HUD``. \"HUD\" означает \"heads-up display\" (\"графический "
+"интерфейс пользователя\"), дисплей, отображающийся поверх игры."
 
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
@@ -71,7 +70,7 @@ msgstr ""
 "<class_Control>`: :ref:`Label <class_Label>` и :ref:`Button <class_Button>`."
 
 msgid "Create the following as children of the ``HUD`` node:"
-msgstr "Создайте следующие узлы в качестве потомков узла '' HUD'':"
+msgstr "Создайте следующие узлы, как дочерние узла ``HUD``:"
 
 msgid ":ref:`Label <class_Label>` named ``ScoreLabel``."
 msgstr ":ref:`Label <class_Label>` с именем ``ScoreLabel``."
@@ -96,19 +95,21 @@ msgstr ""
 "ресурсы игры включен файл шрифта под названием \"Xolonium-Regular.ttf\". "
 "Чтобы использовать этот шрифт, сделайте следующее:"
 
-#, fuzzy
 msgid ""
 "Under \"Theme Overrides > Fonts\", choose \"Load\" and select the \"Xolonium-"
 "Regular.ttf\" file."
 msgstr ""
-"Щелкните на \"DynamicFont\", который вы добавили, и в разделе **Font > "
-"FontData** выберите \"Load\" и выберите файл \"Xolonium-Regular.ttf\"."
+"В \"Theme Overrides > Fonts\" выберите \"Загрузить\" и выберите файл "
+"\"Xolonium-Regular.ttf\"."
 
 msgid ""
 "The font size is still too small, increase it to ``64`` under \"Theme "
 "Overrides > Font Sizes\". Once you've done this with the ``ScoreLabel``, "
 "repeat the changes for the ``Message`` and ``StartButton`` nodes."
 msgstr ""
+"Размер шрифта все еще слишком мал, увеличьте его до ``64`` в разделе «Theme "
+"Overrides > Font Sizes». Сделав это для ``ScoreLabel``, повторите изменения "
+"для узлов ``Message`` и ``StartButton``."
 
 #, fuzzy
 msgid ""
@@ -124,64 +125,73 @@ msgstr ""
 "`doc_design_interfaces_with_the_control_nodes` для получения более подробной "
 "информации."
 
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. You can drag the nodes to place them "
 "manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr ""
-"Вы можете перетаскивать узлы, размещая их вручную, либо используйте "
-"следующие параметры для более точного размещения:"
+"Расположите узлы, как показано ниже. Вы можете перетаскивать узлы, чтобы "
+"разместить их вручную, или для более точного размещения используйте "
+"\"Пресеты для значения якорей\"."
 
 msgid "ScoreLabel"
 msgstr "ScoreLabеl"
 
 msgid "Add the text ``0``."
-msgstr ""
+msgstr "Установите текст на ``0``."
 
 msgid ""
 "Set the \"Horizontal Alignment\" and \"Vertical Alignment\" to ``Center``."
 msgstr ""
+"В Инспекторе, установите \"Horizontal Alignment\" и \"Vertical Alignment\" "
+"на ``Center``."
 
 msgid "Choose the \"Anchor Preset\" ``Center Top``."
-msgstr ""
+msgstr "Установите \"пресет якорей\" на ``Вверху посередине``."
 
 msgid "Message"
-msgstr "Сообщение"
+msgstr "Message"
 
-#, fuzzy
 msgid "Add the text ``Dodge the Creeps!``."
-msgstr "*Text*: ``Уворачивайся от крипов!``"
+msgstr "Установите текст на ``Увернись от Крипов!``."
 
 msgid ""
 "Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
 "line."
 msgstr ""
+"Установите \"Autowrap Mode\" на ``Word``, в противном случае надпись "
+"останется на одной строке."
 
 msgid ""
 "Under \"Control - Layout/Transform\" set \"Size X\"  to ``480`` to use the "
 "entire width of the screen."
 msgstr ""
+"В разделе \"Control - Layout/Transform\" установите для параметра «Size X» "
+"значение ``480``, чтобы использовать всю ширину экрана."
 
 msgid "Choose the \"Anchor Preset\" ``Center``."
-msgstr ""
+msgstr "Установите \"Пресет якорей\" на ``Центр``."
 
 msgid "StartButton"
 msgstr "StartButtоn"
 
-#, fuzzy
 msgid "Add the text ``Start``."
-msgstr "*Text* : ``Старт``"
+msgstr "Установите текст на ``Старт``."
 
 msgid ""
 "Under \"Control - Layout/Transform\", set \"Size X\" to ``200`` and \"Size "
 "Y\" to ``100`` to add a little bit more padding between the border and text."
 msgstr ""
+"В разделе \"Control - Layout/Transform\" установите для параметра «Size X» "
+"значение ``480``, а для параметра \"Size Y\" значение ``100``, чтобы "
+"добавить немного больше отступа между границей экрана и текстом."
 
 msgid "Choose the \"Anchor Preset\" ``Center Bottom``."
-msgstr ""
+msgstr "Установите \"Пресет якорей \" на ``Внизу посередине``."
 
 msgid "Under \"Control - Layout/Transform\", set \"Position Y\" to ``580``."
 msgstr ""
+"В разделе \"Control - Layout/Transform\" установите для параметра \"Position "
+"Y\" значение ``580``."
 
 msgid ""
 "On the ``MessageTimer``, set the ``Wait Time`` to ``2`` and set the ``One "
@@ -193,23 +203,21 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr "Теперь добавьте этот скрипт в ``HUD``:"
 
-#, fuzzy
 msgid ""
 "We now want to display a message temporarily, such as \"Get Ready\", so we "
 "add the following code"
 msgstr ""
-"Эта функция вызывается, когда мы хотим временно отобразить сообщение, такое "
-"как \"Приготовьтесь\"."
+"Теперь мы хотим временно отобразить сообщение, например \"Get "
+"Ready\" (Приготовьтесь), поэтому мы добавляем следующий код"
 
-#, fuzzy
 msgid ""
 "We also need to process what happens when the player loses. The code below "
 "will show \"Game Over\" for 2 seconds, then return to the title screen and, "
 "after a brief pause, show the \"Start\" button."
 msgstr ""
-"Эта функция вызывается, когда игрок проигрывает. Она покажет надпись \"Game "
-"Over\" на 2 секунды, затем произойдет возврат к основному экрану, и после "
-"короткой паузы появится кнопка \"Start\"."
+"Также нам нужна функция, которая будет вызываться, когда игрок проигрывает. "
+"Она покажет надпись \"Game Over\" на 2 секунды, затем произойдет возврат к "
+"основному экрану, и после короткой паузы появится кнопка \"Старт\"."
 
 msgid ""
 "This function is called when the player loses. It will show \"Game Over\" "
@@ -233,9 +241,8 @@ msgstr ""
 "времени, прежде чем показывать кнопку \"Start\"."
 
 msgid "Add the code below to ``HUD`` to update the score"
-msgstr ""
+msgstr "Добавьте приведенный ниже код в ``HUD``, чтобы обновлять счет"
 
-#, fuzzy
 msgid ""
 "Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
 "signal of ``StartButton``, and add the following code to the new functions:"
@@ -263,7 +270,6 @@ msgstr ""
 "Теперь нам нужно подключить функционал ``HUD`` в наш ``Main``-скрипт. Для "
 "этого потребуются некоторые дополнения к сцене ``Main``:"
 
-#, fuzzy
 msgid ""
 "In the Node tab, connect the HUD's ``start_game`` signal to the "
 "``new_game()`` function of the Main node by clicking the \"Pick\" button in "
@@ -285,29 +291,26 @@ msgstr ""
 msgid "In ``game_over()`` we need to call the corresponding ``HUD`` function:"
 msgstr "В ``game_over()`` нам нужно вызвать соответствующую функцию ``HUD``:"
 
-#, fuzzy
 msgid ""
 "Finally, add this to ``_on_score_timer_timeout()`` to keep the display in "
 "sync with the changing score:"
 msgstr ""
-"Наконец добавьте это в ``_on_ScoreTimer_timeout()``, чтобы синхронизировать "
-"отображение с изменением количества очков:"
+"Наконец добавьте этот код в ``_on_score_Ttmer_timeout()``, чтобы "
+"синхронизировать отображение с изменением количества очков:"
 
-#, fuzzy
 msgid ""
 "Remember to remove the call to ``new_game()`` from ``_ready()`` if you "
 "haven't already, otherwise your game will start automatically."
 msgstr ""
 "Когда вы убедитесь, что всё работает, удалите вызов ``new_game()`` из "
-"``_ready()``."
+"``_ready()``, иначе ваша игра запустится автоматически."
 
-#, fuzzy
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "
 "asked to select a main scene, so choose ``main.tscn``."
 msgstr ""
-"Теперь вы готовы к игре! Нажмите на кнопку \"Запустить проект\". Вам будет "
-"предложено выбрать основную сцену - выбирайте ``Main.tscn``."
+"Теперь можно поиграть! Нажмите на кнопку \"Запустить проект\". Вам будет "
+"предложено выбрать основную сцену, выбирайте ``main.tscn``."
 
 msgid "Removing old creeps"
 msgstr "Удаляем старых крипов"

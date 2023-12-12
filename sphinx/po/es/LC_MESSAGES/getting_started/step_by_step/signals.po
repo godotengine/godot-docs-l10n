@@ -44,16 +44,15 @@ msgstr ""
 "entre sí. El uso de señales limita el `acoplamiento <https://en.wikipedia."
 "org/wiki/Coupling_(computer_programming)>`_ y mantiene tu código flexible."
 
-#, fuzzy
 msgid ""
 "For example, you might have a life bar on the screen that represents the "
 "player's health. When the player takes damage or uses a healing potion, you "
 "want the bar to reflect the change. To do so, in Godot, you would use "
 "signals."
 msgstr ""
-"Por ejemplo, puede tener una barra de vida en la pantalla que represente la "
+"Por ejemplo, puedes tener una barra de vida en la pantalla que represente la "
 "salud del jugador. Cuando el jugador recibe daño o usa una poción curativa, "
-"desea que la barra refleje el cambio. Para hacerlo, en Godot, usarías "
+"querrás que la barra refleje el cambio. Para hacerlo, en Godot usarías "
 "señales."
 
 msgid ""
@@ -76,34 +75,32 @@ msgstr ""
 msgid "Scene setup"
 msgstr "Configuración de la escena"
 
-#, fuzzy
 msgid ""
 "To add a button to our game, we will create a new main scene which will "
 "include both a :ref:`Button <class_button>` and the ``sprite_2d.tscn`` scene "
 "we created in the :ref:`doc_scripting_first_script` lesson."
 msgstr ""
-"Para agregar un botón a nuestro juego, crearemos una nueva escena \"main\" "
-"que incluirá tanto un botón como la escena ``Sprite.tscn`` que escribimos en "
-"lecciones anteriores."
+"Para agregar un botón a nuestro juego, crearemos una nueva escena principal "
+"que incluirá tanto un :ref:`Button <class_button>`como la escena ``sprite_2d."
+"tscn`` que escribimos en la lección :ref:`doc_scripting_first_script`."
 
 msgid "Create a new scene by going to the menu Scene -> New Scene."
 msgstr "Cree una nueva escena yendo al menú Escenas -> Nueva escena."
 
-#, fuzzy
 msgid ""
 "In the Scene dock, click the 2D Scene button. This will add a :ref:`Node2D "
 "<class_Node2D>` as our root."
 msgstr ""
-"En el panel Escenas, haga clic en el botón Escena 2D. Esto agregará un "
-"Node2D como nuestra raíz."
+"En el panel Escenas, haz clic en el botón Escena 2D. Esto agregará un :ref:"
+"`Node2D <class_Node2D>` como raíz."
 
-#, fuzzy
 msgid ""
 "In the FileSystem dock, click and drag the ``sprite_2d.tscn`` file you saved "
 "previously onto the Node2D to instantiate it."
 msgstr ""
-"En el panel del Sistema de Archivos, haga clic y arrastre el archivo "
-"``Sprite.tscn`` que guardó previamente en Node2D para crear una instancia."
+"En el panel del Sistema de Archivos, haz clic y arrastra el archivo "
+"``sprite_2d.tscn`` que se guardó previamente en el Node2D para crear una "
+"instancia."
 
 #, fuzzy
 msgid ""

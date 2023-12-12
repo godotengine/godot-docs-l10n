@@ -73,9 +73,8 @@ msgstr "|image1|"
 msgid "image1"
 msgstr "image1"
 
-#, fuzzy
 msgid "Add a :ref:`CollisionShape3D <class_CollisionShape3D>`."
-msgstr ":ref:`CollisionShape2D <class_CollisionShape2D>`(Форма зіткнення 2D)"
+msgstr "Додати :ref:`CollisionShape3D <клас_CollisionShape3D>`."
 
 msgid "|image2|"
 msgstr "|image2|"
@@ -295,16 +294,15 @@ msgstr ""
 msgid "Leaving the screen"
 msgstr "Залишання екрану"
 
-#, fuzzy
 msgid ""
 "We still have to destroy the mobs when they leave the screen. To do so, "
 "we'll connect our :ref:`VisibleOnScreenNotifier3D "
 "<class_VisibleOnScreenNotifier3D>` node's ``screen_exited`` signal to the "
 "``Mob``."
 msgstr ""
-"Ми все ще повинні знищувати монстрів, коли вони залишають екран. Для цього "
-"ми підключимо сигнал ``screen_exited`` нашого вузла *VisibilityNotifier* до "
-"*Mob*."
+"Нам все ще потрібно знищувати мобів, коли вони залишають екран. Для цього ми "
+"підключимо сигнал ``screen_exited`` нашого вузла :ref:"
+"`VisibleOnScreenNotifier3D <class_VisibleOnScreenNotifier3D>` до ``Mob``."
 
 msgid ""
 "Head back to the 3D viewport by clicking on the *3D* label at the top of the "
@@ -336,9 +334,8 @@ msgstr "|image9|"
 msgid "image9"
 msgstr "image9"
 
-#, fuzzy
 msgid "Connect the signal to the ``Mob``"
-msgstr "Підключіть сигнал до *Mob*."
+msgstr "Підключіть сигнал до ``Mob``"
 
 msgid "|image10|"
 msgstr "|image10|"

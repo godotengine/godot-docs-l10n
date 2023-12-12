@@ -23,27 +23,23 @@ msgstr "Tipado estático en GDScript"
 msgid "In this guide, you will learn:"
 msgstr "En esta guía aprenderás:"
 
-#, fuzzy
 msgid "how to use static typing in GDScript;"
-msgstr "Tipado estático en GDScript"
+msgstr "cómo utilizar tipado estático en GDScript;"
 
-#, fuzzy
 msgid "that static types can help you avoid bugs;"
-msgstr "Que **los tipos estáticos pueden ayudarte a evitar errores**"
+msgstr "los tipos estáticos pueden ayudar a evitar errores;"
 
 msgid "that static typing improves your experience with the editor."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Where and how you use this language feature is entirely up to you: you can "
 "use it only in some sensitive GDScript files, use it everywhere, or don't "
 "use it at all."
 msgstr ""
-"El lugar y la forma en que use esta nueva funcionalidad de idioma depende "
-"totalmente de usted: ¡puede usarla solo en algunos archivos GDScript "
-"confidenciales, usarla en todas partes o escribir código como siempre lo "
-"hizo!"
+"Dónde y cómo uses esta característica del lenguaje depende totalmente de tí: "
+"puedes usarla solo en algunos archivos GDScript delicados, usarla en todas "
+"partes o no utilizarla para nada."
 
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
@@ -93,9 +89,8 @@ msgid ""
 "You've probably encountered a lack of autocomplete suggestions after a dot:"
 msgstr ""
 
-#, fuzzy
 msgid "Completion options for dynamic typed code."
-msgstr "Opciones de autocompletado para dinámico"
+msgstr "Opciones de autocompletado para código con tipado dinámico."
 
 #, fuzzy
 msgid ""
@@ -107,9 +102,8 @@ msgstr ""
 "valor está pasando a la función. Sin embargo, si escribe el tipo "
 "explícitamente, obtendrás todos los métodos y variables públicos del nodo:"
 
-#, fuzzy
 msgid "Completion options for static typed code."
-msgstr "Opciones de autocompletado para tipado"
+msgstr "Opciones de autocompletado para código con tipado estático."
 
 msgid ""
 "If you prefer static typing, we recommend enabling the **Text Editor > "
@@ -176,9 +170,8 @@ msgstr ""
 "establece automáticamente a partir del valor asignado. Pero aún puede "
 "hacerlo para aclarar la intención de su código."
 
-#, fuzzy
 msgid "What can be a type hint"
-msgstr "¿Qué puede hacer el motor?"
+msgstr "Qué puede utilizar indicación de tipo"
 
 #, fuzzy
 msgid "Here is a complete list of what can be used as a type hint:"
@@ -196,23 +189,17 @@ msgid ""
 "any value."
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`Built-in types <doc_gdscript_builtin_types>`."
-msgstr ":ref:`Integrados <doc_gdscript_builtin_types>`"
+msgstr ":ref:`Tipos integrados <doc_gdscript_builtin_types>`."
 
-#, fuzzy
 msgid "Native classes (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)."
-msgstr ""
-"Clases principales y nodos (``Object``, ``Node``, ``Area2D``, ``Camera2D``, "
-"etc.)"
+msgstr "Clases nativas (``Object``, ``Node``, ``Area2D``, ``Camera2D``, etc.)."
 
-#, fuzzy
 msgid ":ref:`Global classes <doc_gdscript_basics_class_name>`."
-msgstr ":ref:`Script Classes <doc_scripting_continued_class_name>`"
+msgstr ":ref:`Clases globales <doc_gdscript_basics_class_name>`."
 
-#, fuzzy
 msgid ":ref:`Inner classes <doc_gdscript_basics_inner_classes>`."
-msgstr ":ref:`Script Classes <doc_scripting_continued_class_name>`"
+msgstr ":ref:`Clases internas <doc_gdscript_basics_inner_classes>`."
 
 msgid ""
 "Global, native and custom named enums. Note that an enum type is just an "
@@ -567,13 +554,11 @@ msgstr ""
 "No puedes especificar tipos de miembros individuales de un array. Esto te "
 "dará un error:"
 
-#, fuzzy
 msgid "Nested types are not currently supported::"
-msgstr "**Los navigadores de móvil no son compatibles.**"
+msgstr "Los tipos anidados no están soportados actualmente::"
 
-#, fuzzy
 msgid "Typed dictionaries are not currently supported::"
-msgstr "La validación de capas **no** está soportada en iOS actualmente."
+msgstr "Los diccionarios tipados no están soportados actualmente::"
 
 msgid "Summary"
 msgstr "Sumario"

@@ -78,7 +78,6 @@ msgstr ""
 "<https://github.com/godotengine/godot/blob/master/.clang-format>`__ des "
 "Godot-Repositorys beschrieben."
 
-#, fuzzy
 msgid ""
 "As long as you ensure that your style matches the surrounding code and that "
 "you not introducing trailing whitespace or space-based indentation, you "
@@ -93,7 +92,6 @@ msgstr ""
 "clang-format lokal einzurichten, um alle Ihre Commits zu prüfen und "
 "automatisch zu korrigieren."
 
-#, fuzzy
 msgid ""
 "Godot's code style should *not* be applied to third-party code, i.e. that is "
 "included in Godot's source tree but was not written specifically for our "
@@ -128,7 +126,7 @@ msgid ""
 "permitted in pull requests."
 msgstr ""
 "Diese Richtlinien betreffen nur die Formatierung des Codes. Siehe :ref:"
-"`doc_cpp_usage_guidelines` für eine Liste von Sprachfunktionen, die in Pull "
+"`doc_cpp_usage_guidelines` für eine Liste von Sprachfeatures, die in Pull "
 "Requests erlaubt sind."
 
 msgid "Using clang-format locally"
@@ -187,7 +185,6 @@ msgstr ""
 msgid "Manual usage"
 msgstr "Manuelle Verwendung"
 
-#, fuzzy
 msgid ""
 "You can apply clang-format manually for one or more files with the following "
 "command:"
@@ -249,7 +246,6 @@ msgstr ""
 msgid "IDE plugin"
 msgstr "IDE Plugin"
 
-#, fuzzy
 msgid ""
 "Most IDEs or code editors have beautifier plugins that can be configured to "
 "run clang-format automatically, for example, each time you save a file."
@@ -276,13 +272,12 @@ msgstr ""
 "Visual Studio Code: `Clang-Format <https://marketplace.visualstudio.com/"
 "items?itemName=xaver.clang-format>`__"
 
-#, fuzzy
 msgid ""
 "Visual Studio: `Clang Power Tools 2022 <https://marketplace.visualstudio.com/"
 "items?itemName=caphyon.ClangPowerTools2022>`__"
 msgstr ""
-"Visual Studio: `ClangFormat <https://marketplace.visualstudio.com/items?"
-"itemName=LLVMExtensions.ClangFormat>`__"
+"Visual Studio: `Clang Power Tools 2022 <https://marketplace.visualstudio.com/"
+"items?itemName=caphyon.ClangPowerTools2022>`__"
 
 msgid "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
 msgstr "vim: `vim-clang-format <https://github.com/rhysd/vim-clang-format>`__"
@@ -296,7 +291,6 @@ msgstr ""
 "Sie stattdessen `ClangFormat <https://www.jetbrains.com/help/clion/"
 "clangformat-as-alternative-formatter.html#clion-support>`__"
 
-#, fuzzy
 msgid "(Pull requests are welcome to extend this list with tested plugins.)"
 msgstr ""
 "(Pull Requests sind willkommen, um diese Liste mit getesteten Plugins zu "
@@ -358,7 +352,7 @@ msgid ""
 msgstr ""
 "Schließlich kommen Drittanbieter-Header (entweder von ``thirdparty`` oder "
 "aus den Include-Pfaden des Systems) und sollten mit den Symbolen < und > "
-"eingebunden werden, z. B. ``#include <png.h>``. Auf den Block der "
+"eingebunden werden, z.B. ``#include <png.h>``. Auf den Block der "
 "Drittanbieter-Header sollte ebenfalls eine Leerzeile zur Trennung folgen."
 
 msgid ""
@@ -466,7 +460,6 @@ msgstr ""
 msgid "Editor integration"
 msgstr "Editor-Integration"
 
-#, fuzzy
 msgid ""
 "Many IDEs or code editors have beautifier plugins that can be configured to "
 "run black automatically, for example, each time you save a file. For "

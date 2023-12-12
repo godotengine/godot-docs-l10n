@@ -263,14 +263,13 @@ msgstr ""
 "GDScript) por conveniencia, cuando un nodo y todos sus hijos están dentro de "
 "la escena activa."
 
-#, fuzzy
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( ``_exit_tree()`` callback in GDScript) in bottom-to-top order "
 "(the exact reverse of top-to-bottom order)."
 msgstr ""
 "Cuando se elimina una escena (o parte de ella), reciben la notificación "
-"\"exit scene\" ( _exit_tree() callback en GDScript) en orden descendente"
+"\"exit scene\" ( callback ``_exit_tree()`` en GDScript) en orden ascendente."
 
 msgid "Changing current scene"
 msgstr "Cambiando la escena actual"

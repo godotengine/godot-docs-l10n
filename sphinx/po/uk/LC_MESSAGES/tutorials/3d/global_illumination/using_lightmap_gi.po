@@ -356,16 +356,16 @@ msgstr ""
 "карта освітлення)*. Він дозволить легко запікати світло на всіх вузлах (і "
 "під-вузлах) в цій сцені, і навіть на вставлених екземплярах сцен."
 
-#, fuzzy
 msgid ""
 "A sub-scene can be instanced several times, as this is supported by the "
 "baker. Each instance will be assigned a lightmap of its own. To avoid issues "
 "with inconsistent lightmap texel scaling, make sure to respect the rule "
 "about mesh scaling mentioned before."
 msgstr ""
-"Можна вставити кілька екземплярів під-сцен, оскільки це підтримується "
-"запіканням, і кожному буде присвоєно власну карту освітлення (просто "
-"обов'язково дотримуйтесь правила про масштабування, згаданого раніше):"
+"Підсцена може бути створена декілька разів, оскільки це підтримується "
+"бейкером. Кожному екземпляру буде призначено власну світлову карту. Щоб "
+"уникнути проблем з непослідовним масштабуванням текселів лайтмапи, "
+"переконайтеся, що ви дотримуєтеся правила масштабування сіті, згаданого вище."
 
 msgid "Setting up meshes"
 msgstr "Налаштування мешів (сіток)"
@@ -428,9 +428,8 @@ msgid ""
 "disabling its **Visible** property."
 msgstr ""
 
-#, fuzzy
 msgid "Dynamic"
-msgstr "Динамічний:"
+msgstr "Динамічний"
 
 #, fuzzy
 msgid ""
@@ -453,9 +452,8 @@ msgstr ""
 "використовувати його для створення мерехтливих статичних факелів, і запекти "
 "їх непряме світло."
 
-#, fuzzy
 msgid "Static"
-msgstr "Статичний:"
+msgstr "Статичний"
 
 #, fuzzy
 msgid ""

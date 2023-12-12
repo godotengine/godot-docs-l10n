@@ -128,9 +128,8 @@ msgid ""
 "lower resolution than the rest of the sky:"
 msgstr ""
 
-#, fuzzy
 msgid "Render mode"
-msgstr "Опции Отрисовки"
+msgstr "Режим рендеринга"
 
 msgid "Description"
 msgstr "Описание"
@@ -155,9 +154,8 @@ msgstr "**disаble_force**"
 msgid "If used, fog will not affect the sky."
 msgstr ""
 
-#, fuzzy
 msgid "Built-ins"
-msgstr "Встроенный"
+msgstr "Встроенные функции"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -165,9 +163,8 @@ msgid ""
 "cannot be written to so they are not marked."
 msgstr ""
 
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Векторные встроенные типы"
+msgstr "Глобальные встроенные функции"
 
 msgid ""
 "Global built-ins are available everywhere, including in custom functions."
@@ -185,7 +182,7 @@ msgid "in float **TIME**"
 msgstr ""
 
 msgid "Global time, in seconds."
-msgstr ""
+msgstr "Глобальное время в секундах."
 
 #, fuzzy
 msgid "in vec3 **POSITION**"
@@ -276,15 +273,18 @@ msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
+"Константа ``TAU`` (``6.283185``). Эквивалент ``PI * 2`` и количество "
+"радианов в полном обороте."
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "**float**"
+msgstr ""
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
 "logarithm."
 msgstr ""
+"Константа ``E`` (``2,718281``). Число Эйлера и основание натурального "
+"логарифма."
 
 #, fuzzy
 msgid "Sky built-ins"
@@ -300,7 +300,7 @@ msgid ""
 msgstr ""
 
 msgid "in vec2 **SCREEN_UV**"
-msgstr ""
+msgstr "vec2 **SCREEN_UV**"
 
 msgid ""
 "Screen UV coordinate for current pixel. Used to map a texture to the full "

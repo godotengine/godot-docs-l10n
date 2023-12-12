@@ -21,18 +21,16 @@ msgstr ""
 msgid "C# exported properties"
 msgstr "Властивості вузла"
 
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``[Export]`` attribute."
 msgstr ""
-"У Godot члени класу можуть експортуватися. Це означає, що їх значення "
-"зберігається разом із ресурсом (наприклад, :ref:`сценою "
-"<class_PackedScene>`), до якого вони приєднані. Вони також будуть доступні "
-"для редагування в редакторі властивостей. Експорт здійснюється за допомогою "
-"ключового слова ``export``::"
+"У Godot члени класу можна експортувати. Це означає, що їх значення буде "
+"збережено разом з ресурсом (наприклад, :ref:`scene <class_PackedScene>`), до "
+"якого вони приєднані. Вони також будуть доступні для редагування у редакторі "
+"властивостей. Експорт здійснюється за допомогою атрибута ``[Export]``."
 
 msgid ""
 "In that example the value ``5`` will be saved, and after building the "
@@ -64,9 +62,8 @@ msgstr ""
 msgid "Basic use"
 msgstr "Основа"
 
-#, fuzzy
 msgid "Exporting can work with fields and properties."
-msgstr "Експорт пакетів, патчів та модів"
+msgstr "Експорт може працювати з полями та властивостями."
 
 msgid ""
 "Exported members can specify a default value; otherwise, the `default value "
@@ -117,9 +114,8 @@ msgstr "Довжина тексту"
 msgid "Property hints can be used to export strings as paths"
 msgstr ""
 
-#, fuzzy
 msgid "String as a path to a file."
-msgstr "Спільний доступ до профілю"
+msgstr "Рядок як шлях до файлу."
 
 msgid "String as a path to a directory."
 msgstr ""
@@ -238,16 +234,14 @@ msgid ""
 "multiple of the enum members. The value will be stored as an integer."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Integers used as bit flags can store multiple ``true``/``false`` (boolean) "
 "values in one property. By using the ``Flags`` property hint, they can be "
 "set from the editor."
 msgstr ""
-"Цілі числа, що використовуються як бітові позначки, можуть зберігати "
-"декілька ``true``/``false`` (булевих) значень в одній властивості. За "
-"допомогою підказки щодо експорту ``int, FLAGS, ...``, їх можна встановити з "
-"редактора:"
+"Цілі числа, що використовуються як бітові прапори, можуть зберігати декілька "
+"значень ``true``/``false`` (булеві) в одній властивості. За допомогою "
+"підказки властивості ``Flags`` їх можна встановити у редакторі."
 
 #, fuzzy
 msgid ""
@@ -270,13 +264,12 @@ msgid ""
 "that are a combination of other flags:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Export annotations are also provided for the physics and render layers "
 "defined in the project settings."
 msgstr ""
-"Також передбачені підказки щодо експорту для фізики та шарів візуалізації, "
-"визначених у параметрах проєкту:"
+"Експортні анотації також надаються для шарів фізики та рендерингу, "
+"визначених у налаштуваннях проекту."
 
 msgid ""
 "Using bit flags requires some understanding of bitwise operations. If in "

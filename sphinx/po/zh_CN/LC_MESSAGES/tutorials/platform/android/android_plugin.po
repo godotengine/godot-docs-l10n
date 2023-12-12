@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Godot Android plugins"
-msgstr "Android 插件"
+msgstr "Godot Android 插件"
 
 msgid "Introduction"
 msgstr "前言"
@@ -47,61 +46,62 @@ msgid ""
 "and compatible with Godot 4.0 and 4.1. That version allowed developers to "
 "augment the Godot engine with Java, Kotlin and native functionality."
 msgstr ""
+"Android 插件系统的\\ **第一版（v1）**\\ 是在 Godot 3 中引入的，与 Godot 4.0 "
+"和 4.1 兼容。这个版本能够让开发者使用 Java、Kotlin 和原生功能增强 Godot 引"
+"擎。"
 
 msgid ""
 "Starting in Godot 4.2, Android plugins built on the v1 architecture are now "
 "deprecated. Instead, Godot 4.2 introduces a new **Version 2 (v2)** "
 "architecture for Android plugins."
 msgstr ""
+"从 Godot 4.2 开始，废弃了使用 v1 架构构建的 Android 插件。Godot 4.2 为 "
+"Android 插件引入了全新的\\ **第二版（v2）**\\ 架构。"
 
-#, fuzzy
 msgid "v2 Architecture"
-msgstr "架构"
+msgstr "v2 架构"
 
 msgid ""
 "Godot Android plugin leverages the :ref:`Gradle build system "
 "<doc_android_gradle_build>`."
 msgstr ""
+"Godot Android 插件使用 :ref:`Gradle 构建系统 <doc_android_gradle_build>`\\ 。"
 
-#, fuzzy
 msgid ""
 "Building on the previous v1 architecture, Android plugins continue to be "
 "derived from the `Android archive library <https://developer.android.com/"
 "studio/projects/android-library#aar-contents>`_."
 msgstr ""
-"Godot Android 插件的核心是一个 `Android 归档库 <https://developer.android."
-"com/studio/projects/android-library#aar-contents>`_\\ （\\ *aar* 归档文件），"
-"其注意事项如下："
+"与之前的 v1 架构一样，Android 插件仍然是基于 `Android 归档库 <https://"
+"developer.android.com/studio/projects/android-library#aar-contents>`_\\ 的。"
 
 msgid ""
 "At its core, a Godot Android plugin v2 is an Android library with a "
 "dependency on the :ref:`Godot Android library <doc_android_library>`, and a "
 "custom Android library manifest."
 msgstr ""
+"Godot Android 插件 v2 的本质仍然是一个 Android 库，依赖于 :ref:`Godot "
+"Android 库 <doc_android_library>`\\ 和自定义的 Android 库说明文件。"
 
 msgid ""
 "This architecture allows Android plugins to extend the functionality of the "
 "engine with:"
-msgstr ""
+msgstr "这个架构能够让 Android 插件通过以下方法扩展功能："
 
-#, fuzzy
 msgid "Android platform APIs"
-msgstr "Android SDK Platform 31"
+msgstr "Android 平台 API"
 
-#, fuzzy
 msgid "Android libraries"
-msgstr "复制库"
+msgstr "Android 库"
 
-#, fuzzy
 msgid "Kotlin and Java libraries"
-msgstr "使用动画库"
+msgstr "Kotlin 和 Java 库"
 
 msgid "Native libraries (via JNI)"
-msgstr ""
+msgstr "原生库（通过 JNI）"
 
-#, fuzzy
 msgid "GDExtension libraries"
-msgstr "GDExtension"
+msgstr "GDExtension 库"
 
 msgid ""
 "Each plugin has an init class extending from the `GodotPlugin <https://"
@@ -116,9 +116,8 @@ msgid ""
 "and hook into its lifecycle. It is loaded at runtime by the Godot engine."
 msgstr ""
 
-#, fuzzy
 msgid "v2 Packaging format"
-msgstr "来来回回"
+msgstr "v2 打包格式"
 
 msgid ""
 "v1 Android plugins required a custom ``gdap`` configuration file that was "
@@ -136,9 +135,8 @@ msgid ""
 "turn has been extended to properly support Android plugins."
 msgstr ""
 
-#, fuzzy
 msgid "Building a v2 Android plugin"
-msgstr "创建 Android 插件"
+msgstr "构建 v2 Android 插件"
 
 msgid ""
 "A github project template **is provided** at https://github.com/m4gr3d/Godot-"
@@ -230,7 +228,7 @@ msgid ""
 msgstr ""
 
 msgid "Building a v2 Android plugin with GDExtension capabilities"
-msgstr ""
+msgstr "构建带 GDExtension 能力的 v2 Android 插件"
 
 msgid ""
 "Similar to GDNative support in v1 Android plugins, v2 Android plugins "
@@ -295,9 +293,8 @@ msgid ""
 "`Packaging a v2 Android plugin`_ section to set up the plugin configuration."
 msgstr ""
 
-#, fuzzy
 msgid "Packaging a v2 Android plugin"
-msgstr "创建 Android 插件"
+msgstr "打包 v2 Android 插件"
 
 msgid ""
 "As mentioned, a v2 Android plugin is now provided to the Godot Editor as an "
@@ -449,12 +446,11 @@ msgid ""
 "use them to load and initialize the bundled GDExtension libraries."
 msgstr ""
 
-#, fuzzy
 msgid "Using a v2 Android plugin"
-msgstr "创建 Android 插件"
+msgstr "使用 v2 Android 插件"
 
 msgid "Godot 4.2 or higher is required"
-msgstr ""
+msgstr "要求 Godot 4.2 或更高版本"
 
 msgid ""
 "v2 Android plugin requires the use of the `Gradle build process <https://"
@@ -477,13 +473,10 @@ msgid ""
 "Open the project in the Godot Editor; the Editor should detect the plugin"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Navigate to ``Project`` -> ``Project Settings...`` -> ``Plugins``, and "
 "ensure the plugin is enabled"
-msgstr ""
-"在主工具栏中，点击 ``项目`` 下拉菜单，然后点击 ``项目设置...``\\ 。然后转到 "
-"``插件`` 选项卡，点击右上角的 ``创建`` 按钮。"
+msgstr "导航到 ``项目`` -> ``项目设置...`` -> ``插件`` ，并确保插件已启用"
 
 msgid ""
 "Install the Godot Android build template by clicking on ``Project`` -> "
@@ -529,38 +522,35 @@ msgstr ""
 msgid "Reference implementations"
 msgstr "参考实现"
 
-#, fuzzy
 msgid ""
 "`Godot Android Plugins Samples <https://github.com/m4gr3d/Godot-Android-"
 "Samples/tree/master/plugins>`_"
 msgstr ""
-"`Godot iOS 插件 <https://github.com/godotengine/godot-ios-plugins>`_\\ 。"
+"`Godot Android 插件范例 <https://github.com/m4gr3d/Godot-Android-Samples/"
+"tree/master/plugins>`_"
 
-#, fuzzy
 msgid ""
 "`Godot Android Plugin Template <https://github.com/m4gr3d/Godot-Android-"
 "Plugin-Template>`_"
 msgstr ""
-"`Godot iOS 插件 <https://github.com/godotengine/godot-ios-plugins>`_\\ 。"
+"`Godot Android 插件模板 <https://github.com/m4gr3d/Godot-Android-Plugin-"
+"Template>`_"
 
 msgid ""
 "`GDExtension Android Plugin Template <https://github.com/m4gr3d/GDExtension-"
 "Android-Plugin-Template>`_"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "`Godot OpenXR Loaders <https://github.com/GodotVR/godot_openxr_loaders>`_"
 msgstr ""
-"你可以在 `OpenVR GitHub 仓库 <https://github.com/GodotVR/"
-"godot_openvr_fps>`_\\ 上找到完成的项目。"
+"`Godot OpenXR 加载程序 <https://github.com/GodotVR/godot_openxr_loaders>`_"
 
-#, fuzzy
 msgid "Tips and Guidelines"
-msgstr "规范"
+msgstr "技巧与指南"
 
 msgid "Simplify access to the exposed Java / Kotlin APIs"
-msgstr ""
+msgstr "简化对暴露的 Java / Kotlin API 的访问"
 
 msgid ""
 "To make it easier to access the exposed Java / Kotlin APIs in the Godot "
@@ -572,7 +562,7 @@ msgid "For example::"
 msgstr "例如： ::"
 
 msgid "Support using the gdextension functionality in the Godot Editor"
-msgstr ""
+msgstr "支持在 Godot 编辑器中使用 GDExtension 的功能"
 
 msgid ""
 "If planning to use the gdextension functionality in the Godot Editor, it is "

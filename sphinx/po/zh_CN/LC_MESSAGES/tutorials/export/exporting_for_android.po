@@ -41,16 +41,18 @@ msgid ""
 "support is experimental and :ref:`some limitations apply "
 "<doc_c_sharp_platforms>`."
 msgstr ""
+"Godot 4.2 中，使用 C# 编写的项目可以导出到 Android，但这种支持是实验性"
+"的，\\ :ref:`存在某些限制 <doc_c_sharp_platforms>`\\ 。"
 
-#, fuzzy
 msgid "Install OpenJDK 17"
-msgstr "安装 OpenJDK 11"
+msgstr "安装 OpenJDK 17"
 
-#, fuzzy
 msgid ""
 "Download and install `OpenJDK 17 <https://adoptium.net/temurin/releases/?"
 "variant=openjdk17>`__."
-msgstr "下载并安装  `OpenJDK 11 <https://adoptium.net/?variant=openjdk11>`__."
+msgstr ""
+"下载并安装 `OpenJDK 17 <https://adoptium.net/temurin/releases/?"
+"variant=openjdk17>`__\\ 。"
 
 msgid "Download the Android SDK"
 msgstr "下载 Android SDK"
@@ -58,13 +60,12 @@ msgstr "下载 Android SDK"
 msgid "Download and install the Android SDK."
 msgstr "下载并安装 Android SDK."
 
-#, fuzzy
 msgid ""
 "You can install the Android SDK using `Android Studio version 4.1 or later "
 "<https://developer.android.com/studio/>`__."
 msgstr ""
-"你可以使用 `Android Studio 4.1或更高版本 <https://developer.android.com/"
-"studio/>`__ 进行安装."
+"你可以使用 `Android Studio 4.1 或更高版本 <https://developer.android.com/"
+"studio/>`__\\ 来安装 Android SDK。"
 
 msgid ""
 "Run it once to complete the SDK setup using these `instructions <https://"
@@ -83,13 +84,11 @@ msgstr ""
 msgid "Android SDK Platform-Tools version 30.0.5 or later"
 msgstr "Android SDK Platform-Tools 30.0.5 或更高版本"
 
-#, fuzzy
 msgid "Android SDK Build-Tools version 33.0.2"
-msgstr "Android SDK Build-Tools 版本 30.0.3"
+msgstr "Android SDK Build-Tools 版本 33.0.2"
 
-#, fuzzy
 msgid "Android SDK Platform 33"
-msgstr "Android SDK Platform 31"
+msgstr "Android SDK Platform 33"
 
 msgid "Android SDK Command-line Tools (latest)"
 msgstr "Android SDK Command-line Tools（最新）"
@@ -100,13 +99,12 @@ msgstr "CMake 版本 3.10.2.4988404"
 msgid "NDK version r23c (23.2.8568313)"
 msgstr "NDK 版本 r23c（23.2.8568313）"
 
-#, fuzzy
 msgid ""
 "Alternatively, you can install the Android SDK using the `command line tools "
 "<https://developer.android.com/studio/#command-tools>`__."
 msgstr ""
-"你可以使用\\ `命令行工具 <https://developer.android.com/studio/#command-"
-"tools>`__\\ 安装。"
+"或者你也可以使用\\ `命令行工具 <https://developer.android.com/studio/"
+"#command-tools>`__\\ 来安装 Android SDK。"
 
 msgid ""
 "Once the command line tools are installed, run the `sdkmanager <https://"
@@ -383,66 +381,56 @@ msgid ""
 "that you set in the export menu."
 msgstr ""
 
-#, fuzzy
 msgid "Android export environment variables"
-msgstr "环境变量"
+msgstr "Android 导出环境变量"
 
-#, fuzzy
 msgid "Export option"
 msgstr "导出选项"
 
-#, fuzzy
 msgid "Environment variable"
 msgstr "环境变量"
 
 msgid "Encryption / Encryption Key"
-msgstr ""
+msgstr "加密 / 密钥"
 
-#, fuzzy
 msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
-msgstr "GODOT_SCRIPT_ENCRYPTION_KEY"
+msgstr "``GODOT_SCRIPT_ENCRYPTION_KEY``"
 
 msgid "Options / Keystore / Debug"
-msgstr ""
+msgstr "选项 / 密钥库 / 调试"
 
-#, fuzzy
 msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
-msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_PATH"
+msgstr "``GODOT_ANDROID_KEYSTORE_DEBUG_PATH``"
 
 msgid "Options / Keystore / Debug User"
-msgstr ""
+msgstr "选项 / 密钥库 / 调试用户"
 
-#, fuzzy
 msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
-msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_USER"
+msgstr "``GODOT_ANDROID_KEYSTORE_DEBUG_USER``"
 
 msgid "Options / Keystore / Debug Password"
-msgstr ""
+msgstr "选项 / 密钥库 / 调试密码"
 
-#, fuzzy
 msgid "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
-msgstr "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD"
+msgstr "``GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD``"
 
 msgid "Options / Keystore / Release"
-msgstr ""
+msgstr "选项 / 密钥库 / 发布"
 
-#, fuzzy
 msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
-msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_PATH"
+msgstr "``GODOT_ANDROID_KEYSTORE_RELEASE_PATH``"
 
 msgid "Options / Keystore / Release User"
-msgstr ""
+msgstr "选项 / 密钥库 / 发布用户"
 
-#, fuzzy
 msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
-msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_USER"
+msgstr "``GODOT_ANDROID_KEYSTORE_RELEASE_USER``"
 
 msgid "Options / Keystore / Release Password"
-msgstr ""
+msgstr "选项 / 密钥库 / 发布密码"
 
-#, fuzzy
 msgid "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
-msgstr "GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD"
+msgstr "``GODOT_ANDROID_KEYSTORE_RELEASE_PASSWORD``"
 
 msgid "Translation status"
 msgstr "翻译状态"

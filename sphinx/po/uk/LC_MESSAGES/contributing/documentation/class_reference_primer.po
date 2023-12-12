@@ -56,9 +56,8 @@ msgstr "<brief_description></brief_description>"
 msgid "`<description>`"
 msgstr "Опис"
 
-#, fuzzy
 msgid "`<constant>`"
-msgstr "Константа Пі (π)."
+msgstr "`<константа>`"
 
 msgid ""
 "`<method>` (in its `<description>` tag; return types and arguments don't "
@@ -167,9 +166,8 @@ msgstr "Посилання на клас"
 msgid "``Move the [Sprite2D].``"
 msgstr ":ref:`Sprite <class_Sprite>`"
 
-#, fuzzy
 msgid "Move the :ref:`class_Sprite2D`."
-msgstr ":ref:`Sprite <class_Sprite>`"
+msgstr "Перемістити :ref:`class_Sprite2D`."
 
 msgid "``[annotation Class.name]``"
 msgstr ""
@@ -188,9 +186,8 @@ msgstr ""
 msgid "``[constant Class.name]``"
 msgstr "[signal Class.signalname]"
 
-#, fuzzy
 msgid "Link to constant"
-msgstr "Визначає константу."
+msgstr "Посилання на константу"
 
 msgid "``See [constant @GlobalScope.KEY_F1].``"
 msgstr ""
@@ -237,9 +234,8 @@ msgstr "Редагувати член"
 msgid "``Get [member Node2D.scale].``"
 msgstr ""
 
-#, fuzzy
 msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
-msgstr ":ref:`NodePath <class_NodePath>`"
+msgstr "Отримати :ref:`Node2D.scale <клас_Node2D_властивості_масштабу>`."
 
 #, fuzzy
 msgid "``[signal Class.name]``"
@@ -252,9 +248,8 @@ msgstr "Використання сигналів"
 msgid "``Emit [signal Node.renamed].``"
 msgstr ""
 
-#, fuzzy
 msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
-msgstr ":ref:`NodePath <class_NodePath>`"
+msgstr "Видати :ref:`Node.renamed <class_Node_signal_renamed>`."
 
 msgid "``[theme_item Class.name]``"
 msgstr ""
@@ -315,9 +310,8 @@ msgstr "``[b]{текст}[/b]``"
 msgid "Bold"
 msgstr "Напівжирний"
 
-#, fuzzy
 msgid "``Some [b]bold[/b] text.``"
-msgstr "Якийсь текст [b]напівжирним шрифтом[/b]."
+msgstr "''Деякий [b]жирний[/b] текст.''"
 
 msgid "Some **bold** text."
 msgstr "Якийсь текст **напівжирним шрифтом**."
@@ -329,24 +323,21 @@ msgstr "``[i]{текст}[/i]``"
 msgid "Italic"
 msgstr "Курсив"
 
-#, fuzzy
 msgid "``Some [i]italic[/i] text.``"
-msgstr "Якийсь текст [i]курсивом[/i]."
+msgstr "``Деякий [i]курсивний[/i] текст.``"
 
 msgid "Some *italic* text."
 msgstr "Якийсь текст *курсивом*."
 
-#, fuzzy
 msgid "``[kbd]`` ``[/kbd]``"
-msgstr ". [kbd] [/kbd]"
+msgstr "``[kbd]`` ``[/kbd]``"
 
 #, fuzzy
 msgid "Keyboard/mouse shortcut"
 msgstr "Гарячі клавіші"
 
-#, fuzzy
 msgid "``Some [kbd]Ctrl + C[/kbd] key.``"
-msgstr "Деякі [kbd] клавіші Ctrl + C [/kbd]."
+msgstr "``Якась клавіша [kbd]Ctrl + C[/kbd].``"
 
 msgid "Some :kbd:`Ctrl + C` key."
 msgstr ""
@@ -355,23 +346,20 @@ msgstr ""
 msgid "Formatting code"
 msgstr "Форматування"
 
-#, fuzzy
 msgid "``[code]`` ``[/code]``"
-msgstr "[code] [/code]"
+msgstr "``[code]`` ``[/code]``"
 
 msgid "Monospace"
 msgstr "Моноширинний"
 
-#, fuzzy
 msgid "``Some [code]monospace[/code] text.``"
-msgstr "Якийсь текст [code]моноширинним шрифтом[/code]."
+msgstr "``Деякий [code]монопросторовий[/code] текст.``"
 
 msgid "Some ``monospace`` text."
 msgstr "Якийсь текст ``моноширинним шрифтом``."
 
-#, fuzzy
 msgid "``[codeblock]`` ``[/codeblock]``"
-msgstr "[codeblock] [/codeblock]"
+msgstr "``[codeblock]`` ``[/codeblock]``"
 
 msgid "Multiline preformatted block"
 msgstr ""
@@ -379,16 +367,14 @@ msgstr ""
 msgid "*See below.*"
 msgstr "*Див. нижче.*"
 
-#, fuzzy
 msgid "``[codeblocks]`` ``[/codeblocks]``"
-msgstr "[codeblocks] [/codeblocks]"
+msgstr "``[codeblocks]`` ``[/codeblocks]``"
 
 msgid "Codeblock for multiple languages"
 msgstr ""
 
-#, fuzzy
 msgid "``[gdscript]`` ``[/gdscript]``"
-msgstr "[gdscript] [/gdscript]"
+msgstr "``[gdscript]`` ``[/gdscript]``"
 
 msgid "GDScript codeblock tab in codeblocks"
 msgstr "Вкладка GDScript codeblock в codeblocks"

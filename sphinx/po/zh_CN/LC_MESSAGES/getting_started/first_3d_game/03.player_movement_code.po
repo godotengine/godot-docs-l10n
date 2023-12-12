@@ -104,7 +104,6 @@ msgid ""
 "directions."
 msgstr "这四个条件给了我们八个可能性和八个可能的方向。"
 
-#, fuzzy
 msgid ""
 "In case the player presses, say, both W and D simultaneously, the vector "
 "will have a length of about ``1.4``. But if they press a single key, it will "
@@ -166,14 +165,14 @@ msgstr ""
 "如果物体在这一帧中与地板发生了碰撞，那么 ``CharacterBody3D.is_on_floor()`` 函"
 "数就会返回 ``true``\\ 。这就是为什么我们只在空中对 ``Player`` 施加重力。"
 
-#, fuzzy
 msgid ""
 "For the vertical velocity, we subtract the fall acceleration multiplied by "
 "the delta time every frame. This line of code will cause our character to "
 "fall in every frame, as long as it is not on or colliding with the floor."
 msgstr ""
-"对于垂直速度，在每一帧中减去下降加速度乘以帧时间。这条代码将使角色在没有碰撞"
-"地板的情况下，每帧都会下降。"
+"对于垂直速度，在每一帧中减去下降加速度乘以增量时间（delta time，每个帧之间的"
+"时间，也称帧时间）。这条代码将使角色在没有在地板上或是碰撞地板的情况下，每帧"
+"都会下降。"
 
 msgid ""
 "The physics engine can only detect interactions with walls, the floor, or "
@@ -232,7 +231,6 @@ msgid ""
 msgstr ""
 "如果场景之前已关闭，请转到 *文件系统* 面板，双击 ``main.tscn`` 文件重新打开。"
 
-#, fuzzy
 msgid ""
 "To instantiate the ``Player``, right-click on the ``Main`` node and select "
 "*Instantiate Child Scene*."

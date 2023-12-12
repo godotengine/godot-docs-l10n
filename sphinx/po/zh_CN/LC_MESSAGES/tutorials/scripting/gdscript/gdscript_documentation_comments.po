@@ -79,7 +79,6 @@ msgstr "描述"
 msgid "No tag. Use one blank line to separate the description from the brief."
 msgstr "无标记，用一行空的文档注释行来与文档概述隔开。"
 
-#, fuzzy
 msgid "Tutorial"
 msgstr "文字教程"
 
@@ -124,7 +123,7 @@ msgid "Documenting script members"
 msgstr "为脚本类成员编写文档"
 
 msgid "Members that are applicable for documentation:"
-msgstr "脚本类成员也可以使用文档注释来生成对应文档说明：::"
+msgstr "脚本类成员也可以使用文档注释来生成对应文档说明："
 
 msgid "Inner class"
 msgstr "内部类"
@@ -160,9 +159,8 @@ msgstr ""
 msgid "No tag."
 msgstr "无标记。"
 
-#, fuzzy
 msgid "Alternatively, you can use inline documentation comments::"
-msgstr "或者你也可以手动调用 sphinx-build 程序来构建文档："
+msgstr "或者你也可以手动调用 sphinx-build 程序来构建文档：::"
 
 msgid ""
 "The script documentation will update in the editor help window every time "
@@ -193,20 +191,24 @@ msgid ""
 "incompatible change in a future major release. Usually the API is kept for "
 "backwards compatibility."
 msgstr ""
-"**已废弃**将标记目标 API 为不再推荐使用的 API，意味着该 API 将会在未来版本中"
-"被移除或无法与现有体系兼容。该 API 通常留作向下兼容使用。"
+"**已废弃** 标记不推荐的 API，该 API 可能会在未来的主要版本中移除或进行不兼容"
+"的更改。保留 API 通常是为了向后兼容。"
 
 msgid ""
 "**Experimental** marks a new unstable API that may be changed or removed in "
 "the current major branch. Using this API is not recommended in production "
 "code."
 msgstr ""
+"**实验性** 标记了一个新的不稳定 API，该 API 可能会在当前主要分支中更改或移"
+"除。不建议在生产代码中使用该 API。"
 
 msgid ""
 "While technically you can use both ``@deprecated`` and ``@experimental`` "
 "tags on the same class/member, this is not recommended as it is against "
 "common conventions."
 msgstr ""
+"当然，技术上来说，你可以给同一个类/成员同时使用 ``@deprecated`` and "
+"``@experimental`` 这两个标记，不过并不推荐这样做，会比较反直觉。"
 
 msgid "BBCode and class reference"
 msgstr "BBCode 与类参考"
@@ -218,6 +220,10 @@ msgid ""
 "animation effects, etc. can be added with the :ref:`bbcode "
 "<doc_bbcode_in_richtextlabel>`."
 msgstr ""
+"编辑器帮助窗口的文档界面支持 :ref:`bbcode <doc_bbcode_in_richtextlabel>`，这"
+"样一来，就能够使用 BBCode 对你的文档进行对齐与排版操作。文本颜色、图片、字"
+"体、表格、URL 链接和动画等元素可通过 :ref:`bbcode "
+"<doc_bbcode_in_richtextlabel>` 来加入到文档当中。"
 
 msgid ""
 "Godot's class reference supports BBCode-like tags. They add nice formatting "
@@ -232,12 +238,12 @@ msgid ""
 "class name. For links to the same class, the class name is optional and can "
 "be omitted."
 msgstr ""
+"每从其他类里链接一个成员，你都要在成员名前面加上该类的类名。而链接类内成员"
+"时，类名可省略。"
 
-#, fuzzy
 msgid "Here's the list of available tags:"
-msgstr "有以下类型可用："
+msgstr "可用的标记如下："
 
-#, fuzzy
 msgid "Tag and Description"
 msgstr "描述"
 
@@ -256,134 +262,122 @@ msgstr "链接类"
 msgid "``Move the [Sprite2D].``"
 msgstr "``移动 [Sprite]。``"
 
-#, fuzzy
 msgid "Move the :ref:`class_Sprite2D`."
-msgstr "移动 :ref:`class_Sprite`\\ 。"
+msgstr "移动 :ref:`class_Sprite2D`\\ 。"
 
 msgid "``[annotation Class.name]``"
-msgstr ""
+msgstr "``[annotation Class.name]``"
 
 msgid "Link to annotation"
 msgstr "链接到注解"
 
 msgid "``See [annotation @GDScript.@export].``"
-msgstr ""
+msgstr "``见 [annotation @GDScript.@export].``"
 
 msgid "See :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`."
-msgstr ""
+msgstr "见 :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`。"
 
-#, fuzzy
 msgid "``[constant Class.name]``"
-msgstr "[signal Class.signalname]"
+msgstr "``[constant Class.name]``"
 
 msgid "Link to constant"
 msgstr "链接到常量"
 
 msgid "``See [constant @GlobalScope.KEY_F1].``"
-msgstr ""
+msgstr "``见 [constant @GlobalScope.KEY_F1]。``"
 
 msgid "See :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`."
-msgstr ""
+msgstr "见 :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`。"
 
-#, fuzzy
 msgid "``[enum Class.name]``"
-msgstr "[member Class.membername]"
+msgstr "``[enum Class.name]``"
 
 msgid "Link to enum"
 msgstr "链接到枚举"
 
 msgid "``See [enum Mesh.ArrayType].``"
-msgstr ""
+msgstr "``见 [enum Mesh.ArrayType]。``"
 
 msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
-msgstr ""
+msgstr "见 :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`。"
 
-#, fuzzy
 msgid "``[method Class.name]``"
-msgstr "[method Class.methodname]"
+msgstr "``[method Class.name]``"
 
 msgid "Link to method"
 msgstr "链接到方法"
 
 msgid "``Call [method Node3D.hide].``"
-msgstr "``调用 [method hide]。``"
+msgstr "``调用 [method Node3D.hide].``"
 
-#, fuzzy
 msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
-msgstr "调用 :ref:`hide <class_Spatial_method_hide>`\\ 。"
+msgstr "调用 :ref:`Node3D.hide() <class_Node3D_method_hide>`。"
 
-#, fuzzy
 msgid "``[member Class.name]``"
-msgstr "[member Class.membername]"
+msgstr "``[member Class.name]``"
 
 msgid "Link to member"
 msgstr "链接到成员"
 
 msgid "``Get [member Node2D.scale].``"
-msgstr "``获得 [member Node2D.scale].``"
+msgstr "``获取 [member Node2D.scale]。``"
 
-#, fuzzy
 msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
-msgstr "获取 :ref:`scale <class_Node2D_property_scale>`\\ 。"
+msgstr "获取 :ref:`Node2D.scale <class_Node2D_property_scale>`."
 
-#, fuzzy
 msgid "``[signal Class.name]``"
-msgstr "[signal Class.signalname]"
+msgstr "``[signal Class.name]``"
 
 msgid "Link to signal"
 msgstr "链接到信号"
 
 msgid "``Emit [signal Node.renamed].``"
-msgstr "``Emit [signal Node.renamed]。``"
+msgstr "``发送 [signal Node.renamed]。``"
 
-#, fuzzy
 msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
-msgstr "触发 :ref:`renamed <class_Node_signal_renamed>`\\ 。"
+msgstr "发送 :ref:`Node.renamed <class_Node_signal_renamed>`。"
 
-#, fuzzy
 msgid "``[theme_item Class.name]``"
-msgstr "[method Class.methodname]"
+msgstr "``[theme_item Class.name]``"
 
 msgid "Link to theme item"
 msgstr "链接到主题项"
 
 msgid "``See [theme_item Label.font].``"
-msgstr ""
+msgstr "``见 [theme_item Label.font]。``"
 
 msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
-msgstr ""
+msgstr "见 :ref:`Label.font <class_Label_theme_font_font>`。"
 
-#, fuzzy
 msgid "``[param name]``"
-msgstr "``name``"
+msgstr "``[param name]``"
 
 msgid "Formats a parameter name (as code)"
-msgstr ""
+msgstr "格式化参数名称（作为代码）"
 
 msgid "``Takes [param size] for the size.``"
-msgstr ""
+msgstr "``用 [param size] 来表示大小。``"
 
 msgid "Takes ``size`` for the size."
-msgstr ""
+msgstr "用 ``size`` 表示大小。"
 
 msgid "``[br]``"
 msgstr "``[br]``"
 
-#, fuzzy
 msgid "Line break"
-msgstr "break"
+msgstr "换行"
 
 msgid "``Line 1.[br]``"
-msgstr ""
+msgstr "``行 1。[br]``"
 
 msgid "``Line 2.``"
-msgstr ""
+msgstr "``行 2。``"
 
 msgid "Line 1."
-msgstr ""
+msgstr "行 1。"
 
 msgid "Line 2."
-msgstr ""
+msgstr "行 2。"
 
 msgid "``[b]`` ``[/b]``"
 msgstr "``[b]`` ``[/b]``"
@@ -446,18 +440,19 @@ msgid "Currently only :ref:`class_@GDScript` has annotations."
 msgstr "目前只有 :ref:`class_@GDScript` 有注解。"
 
 msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
-msgstr ""
+msgstr "从 ``[code]`` 开始禁用 BBCode ，直到文档解析器解析到 ``[/code]`` 。"
 
 msgid ""
 "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
 msgstr ""
+"从 ``[codeblock]`` 开始禁用 BBCode ，直到文档解析器解析到 ``[/codeblock]`` 。"
 
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
 "always use **four spaces** for indentation (the parser will delete tabs)."
 msgstr ""
 "对预格式化的代码块使用 ``[codeblock]``\\ 。在 ``[codeblock]`` 中，请始终使用"
-"\\ **四个空格**\\ 进行缩进。解析器将删除制表符。例如。"
+"\\ **四个空格**\\ 进行缩进，解析器会删除制表符。例如。"
 
 msgid "Translation status"
 msgstr "翻译状态"

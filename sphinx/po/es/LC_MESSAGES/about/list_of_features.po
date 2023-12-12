@@ -25,14 +25,13 @@ msgstr ""
 "Esta pagina tiene como objetivo listar **todas** las características "
 "actualmente soportadas por Godot."
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot. "
 "Some of these features may not be available in the `LTS release series (3.x) "
 "<https://docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
 msgstr ""
 "Esta página lista todas las características soportadas por la versión "
-"estable actual de Godot (4.0). Algunas de esas características no están "
+"estable actual de Godot. Algunas de esas características no están "
 "disponibles en `las versiones LTS (3.x) <https://docs.godotengine.org/en/3.5/"
 "about/list_of_features.html>`__."
 
@@ -126,6 +125,8 @@ msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
 "rendering pipeline."
 msgstr ""
+"Generador de perfiles visual con indicaciones de tiempo de CPU y GPU para "
+"cada paso del proceso de renderizado."
 
 msgid ""
 "Performance monitoring tools, including :ref:`custom performance monitors "
@@ -495,11 +496,12 @@ msgstr "Luces omnidireccionales."
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Focos con ángulo de cono ajustable y atenuación."
 
-#, fuzzy
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
-msgstr "La energía especular se puede ajustar en una base por luz."
+msgstr ""
+"Las energías de efecto especular, luz indirecta y niebla volumétrica se "
+"puede ajustar por cada luz."
 
 msgid ""
 "Adjustable light \"size\" for fake area lights (will also make shadows "
@@ -560,13 +562,12 @@ msgstr "Difuminado de sombra ajustable por cada luz."
 msgid "**Global illumination with indirect lighting:**"
 msgstr "** Iluminación global con iluminación indirecta: **"
 
-#, fuzzy
 msgid ""
 ":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
 "at run-time)."
 msgstr ""
-"Lightmaps horneados (rápidos, pero no se pueden actualizar en tiempo de "
-"ejecución)."
+":ref:`Lightmaps precalculados (baked) <doc_using_lightmap_gi>` (rápidos pero "
+"no se pueden actualizar en tiempo de ejecución)."
 
 msgid ""
 "Supports baking indirect light only or baking both direct and indirect "
@@ -756,9 +757,8 @@ msgid ""
 "separate controls for traditional and volumetric fog."
 msgstr ""
 
-#, fuzzy
 msgid "Support for making specific materials ignore fog."
-msgstr "Soporte de dispersión de sol en la niebla."
+msgstr "Soporte para que materiales específicos ignoren la niebla."
 
 msgid "**Volumetric fog:**"
 msgstr ""
@@ -1552,24 +1552,24 @@ msgstr "Soporte XR (AR y VR)"
 msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Including support for popular desktop headsets like the Valve Index, WMR "
 "headsets, and Quest over Link."
 msgstr ""
-"Incluye soporte para dispositivos populares como Meta Quest y Valve Index."
+"Incluye soporte para dispositivos populares como Valve Index, WMR y Quest "
+"con Link."
 
 msgid ""
 "Support for :ref:`Android based headsets <doc_deploying_to_android>` using "
 "OpenXR through a plugin."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
 "and Pro, Pico 4, Magic Leap 2, and Lynx R1."
 msgstr ""
-"Incluye soporte para dispositivos populares como Meta Quest y Valve Index."
+"Incluye soporte para dispositivos independientes populares como Meta Quest "
+"1/2/3 y Pro, Pico 4, Magic Leap 2 y Lynx R1."
 
 msgid "Other devices supported through an XR plugin structure."
 msgstr ""

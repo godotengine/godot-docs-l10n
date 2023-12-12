@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "3D navigation overview"
-msgstr "Mode Navigation"
+msgstr "Aperçu de la navigation 3D"
 
 msgid ""
 "Godot provides multiple objects, classes and servers to facilitate grid-"
@@ -27,34 +26,46 @@ msgid ""
 "following section provides a quick overview over all available navigation "
 "related objects in Godot for 3D scenes and their primary use."
 msgstr ""
+"Godot fournit plusieurs objets, classes et serveurs pour faciliter la "
+"navigation et la recherche de chemin, basées sur des grilles ou des meshs, "
+"pour des jeux-vidéo en 2D et 3D. Les sections suivantes fournissent un "
+"aperçu rapide de tous les objets disponibles liés à la navigation dans Godot "
+"pour les scènes 3D et leurs utilisations primaires."
 
-#, fuzzy
 msgid "Godot provides the following objects and classes for 3D navigation:"
-msgstr "Godot fournit les types de formes de collision primitives suivants :"
+msgstr ""
+"Godot fournit les objets et classes pour la navigation en 3D suivants :"
 
-#, fuzzy
 msgid ":ref:`Astar3D<class_Astar3D>`"
-msgstr ":ref:`Area2D <class_Area2D>`"
+msgstr ":ref:`Astar3D<class_Astar3D>`"
 
 msgid ""
 "``Astar3D`` objects provide an option to find the shortest path in a graph "
 "of weighted **points**."
 msgstr ""
+"Les objets ``Astar3D`` fournissent une option pour trouver le chemin le plus "
+"court dans un graphe de **points** pondérés."
 
 msgid ""
 "The AStar3D class is best suited for cell-based 3D gameplay that does not "
 "require actors to reach any possible position within an area but only "
 "predefined, distinct positions."
 msgstr ""
+"La classe AStar3D est plus appropriée à un gameplay 3D basé sur des cellules "
+"qui ne requièrent pas aux acteurs d'atteindre n'importe quelle position à "
+"l'intérieur d'une zone, mais uniquement des positions distinctes et "
+"prédéfinies."
 
-#, fuzzy
 msgid ":ref:`NavigationServer3D<class_NavigationServer3D>`"
-msgstr ":ref:`NavigationAgent<class_NavigationAgent>`"
+msgstr ":ref:`NavigationServer3D<class_NavigationServer3D>`"
 
 msgid ""
 "``NavigationServer3D`` provides a powerful server API to find the shortest "
 "path between two positions on an area defined by a navigation mesh."
 msgstr ""
+"``NavigationServer3D`` fournit une API de serveur puissante pour trouver le "
+"chemin le plus court entre deux position dans une zone définie par un mesh "
+"de navigation."
 
 msgid ""
 "The NavigationServer is best suited for 3D realtime gameplay that does "
@@ -63,6 +74,12 @@ msgid ""
 "large area can often be defined with a single polygon when it would require "
 "many, many grid cells."
 msgstr ""
+"Le NavigationServer est plus approprié pour un gameplay 3D en temps réel qui "
+"requiert les acteurs d'atteindre n'importe quelle position possible à "
+"l'intérieur d'une zone définie par un mesh de navigation. La navigation "
+"basée sur les meshs s'adapte bien aux grands univers de jeu puisqu'une "
+"grande zone peut souvent être définie avec un polygone seul alors qu'il "
+"faudrait beaucoup, beaucoup de cellules de grille."
 
 msgid ""
 "The NavigationServer holds different navigation maps that each consist of "
@@ -108,6 +125,8 @@ msgid ""
 "Reference to a specific avoidance agent. The avoidance is defined by a "
 "radius value."
 msgstr ""
+"Référence à une agent d'évitement spécifique. L'évitement est définit par "
+"une valeur de rayon."
 
 #, fuzzy
 msgid "NavObstacle RID"
@@ -122,15 +141,18 @@ msgid ""
 "The following scene tree nodes are available as helpers to work with the "
 "NavigationServer3D API."
 msgstr ""
+"Les nœuds de hiérarchie suivants sont disponibles en tant qu'aide pour "
+"travailler avec l'API NavigationServer3D."
 
-#, fuzzy
 msgid ":ref:`NavigationRegion3D<class_NavigationRegion3D>` Node"
-msgstr ":ref:`NavigationAgent<class_NavigationAgent>`"
+msgstr "Nœud :ref:`NavigationRegion3D<class_NavigationRegion3D>`"
 
 msgid ""
 "A Node that holds a Navigation Mesh resource that defines a navigation mesh "
 "for the NavigationServer3D."
 msgstr ""
+"Un nœud qui tient une ressource de mesh de navigation qui définit un mesh de "
+"navigation pour le NavigationServer3D."
 
 msgid "The region can be enabled / disabled."
 msgstr ""
@@ -144,10 +166,11 @@ msgid ""
 "The NavigationServer3D will join the navigation meshes of regions by "
 "proximity for a combined navigation mesh."
 msgstr ""
+"Le NavigationServer3D rejoindra les meshs de navigation des régions par "
+"proximité pour un mesh de navigation combiné."
 
-#, fuzzy
 msgid ":ref:`NavigationLink3D<class_NavigationLink3D>` Node"
-msgstr ":ref:`NavigationAgent<class_NavigationAgent>`"
+msgstr "Nœud :ref:`NavigationLink3D<class_NavigationLink3D>`"
 
 msgid ""
 "A Node that connects two positions on navigation meshes over arbitrary "
@@ -165,19 +188,20 @@ msgid ""
 "actual agent handling and movement needs to happen in custom scripts."
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`NavigationAgent3D<class_NavigationAgent3D>` Node"
-msgstr ":ref:`NavigationAgent<class_NavigationAgent>`"
+msgstr "Nœud :ref:`NavigationAgent3D<class_NavigationAgent3D>`"
 
 msgid ""
 "A helper Node used to facilitate common NavigationServer3D API calls for "
 "pathfinding and avoidance. Use this Node with a Node3D inheriting parent "
 "Node."
 msgstr ""
+"Un nœud assistant pour faciliter les appels communs de l'API "
+"NavigationServer3D pour la recherche de chemin et l'évitement. Utilisez ce "
+"nœud avec un nœud parent héritant de Node3D."
 
-#, fuzzy
 msgid ":ref:`NavigationObstacle3D<class_NavigationObstacle3D>` Node"
-msgstr ":ref:`NavigationObstacle<class_NavigationObstacle>`"
+msgstr "Nœud :ref:`NavigationObstacle3D<class_NavigationObstacle3D>`"
 
 msgid ""
 "A Node that can be used to affect and constrain the avoidance velocity of "
@@ -185,52 +209,62 @@ msgid ""
 "agents. You need to change the navigation meshes for that instead."
 msgstr ""
 
-#, fuzzy
 msgid "The 3D navigation meshes are defined with the following resources:"
-msgstr "Remplissez le formulaire avec les paramètres suivants :"
+msgstr ""
+"Les meshs de navigation 3D sont définis avec les ressources suivantes :"
 
-#, fuzzy
 msgid ":ref:`NavigationMesh<class_NavigationMesh>` Resource"
-msgstr ":ref:`Navigation<class_Navigation>` (obsolète)"
+msgstr "Ressource :ref:`NavigationMesh<class_NavigationMesh>`"
 
 msgid ""
 "A resource that holds 3D navigation mesh data. It provides 3D geometry "
 "baking options to define navigation areas inside the Editor as well as at "
 "runtime."
 msgstr ""
+"Une ressource qui tient les données de mesh de navigation 3D. Elle fournit "
+"des options de précalcul de géométrie 3D pour définir des zones de "
+"navigation à l'intérieur de l'éditeur ainsi qu'à l’exécution."
 
 msgid ""
 "The NavigationRegion3D Node uses this resource to define its navigation area."
 msgstr ""
+"Le nœud NavigationRegion3D utilise cette ressource pour définir sa zone de "
+"navigation."
 
 msgid ""
 "The NavigationServer3D uses this resource to update the navigation mesh of "
 "individual regions."
 msgstr ""
+"Le NavigationServer3D utilise cette ressource pour mettre à jour le mesh de "
+"navigation des régions individuelles."
 
 msgid ""
 "The GridMap Editor uses this resource when specific navigation meshes are "
 "defined for each grid cell."
 msgstr ""
+"L'éditeur GridMap utilise cette ressource lorsque des meshs de navigation "
+"spécifiques sont définis pour chaque cellule de la grille."
 
-#, fuzzy
 msgid ""
 "You can see how 3D navigation works in action using the `3D Navigation demo "
 "project <https://github.com/godotengine/godot-demo-projects/tree/master/3d/"
 "navigation>`__."
 msgstr ""
-"Si vous apprenez mieux en regardant un exemple, vous pouvez trouver le "
-"projet de démo `ici <https://github.com/godotengine/godot-demo-projects/tree/"
-"master/mobile/android_iap>`__."
+"Vous pouvez voir comment la navigation 3D fonctionne en utilisant le `projet "
+"de démonstration de navigation 3D <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/navigation>`__."
+
+msgid "Setup for 3D scene"
+msgstr "Configuration pour une scène 3D"
 
 #, fuzzy
-msgid "Setup for 3D scene"
-msgstr "Importation de scènes 3D"
-
 msgid ""
 "The following steps show a basic setup for minimal viable navigation in 3D. "
 "It uses the NavigationServer3D and a NavigationAgent3D for path movement."
 msgstr ""
+"Les étapes suivantes montrent une configuration basique pour une navigation "
+"en 3D. Elle utilise le NavigationServer3D et un NavigationAgent3D pour les "
+"mouvements sur chemin."
 
 msgid "Add a NavigationRegion3D Node to the scene."
 msgstr ""

@@ -21,18 +21,16 @@ msgstr ""
 msgid "GDScript exported properties"
 msgstr "Експорт GDScript"
 
-#, fuzzy
 msgid ""
 "In Godot, class members can be exported. This means their value gets saved "
 "along with the resource (such as the :ref:`scene <class_PackedScene>`) "
 "they're attached to. They will also be available for editing in the property "
 "editor. Exporting is done by using the ``@export`` annotation."
 msgstr ""
-"У Godot члени класу можуть експортуватися. Це означає, що їх значення "
-"зберігається разом із ресурсом (наприклад, :ref:`сценою "
-"<class_PackedScene>`), до якого вони приєднані. Вони також будуть доступні "
-"для редагування в редакторі властивостей. Експорт здійснюється за допомогою "
-"ключового слова ``export``::"
+"У Godot члени класу можна експортувати. Це означає, що їх значення буде "
+"збережено разом з ресурсом (наприклад, :ref:`scene <class_PackedScene>`), до "
+"якого вони приєднані. Вони також будуть доступні для редагування у редакторі "
+"властивостей. Експорт здійснюється за допомогою анотації ``@export``."
 
 msgid ""
 "In that example the value ``5`` will be saved and visible in the property "
@@ -124,9 +122,8 @@ msgstr ""
 msgid "Strings as paths"
 msgstr "Довжина тексту"
 
-#, fuzzy
 msgid "String as a path to a file."
-msgstr "Спільний доступ до профілю"
+msgstr "Рядок як шлях до файлу."
 
 msgid "String as a path to a directory."
 msgstr ""

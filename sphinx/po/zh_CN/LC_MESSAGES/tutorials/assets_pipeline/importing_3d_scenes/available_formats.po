@@ -99,23 +99,21 @@ msgstr ""
 "作为 glTF 文本文件，二进制数据和纹理独立（\\ ``.gltf`` 文件 + ``.bin`` 文件 "
 "+ 纹理）。"
 
-#, fuzzy
 msgid ""
 "glTF binary files (``.glb``) are the smallest of the three options. They "
 "include the mesh and textures set up in Blender. When brought into Godot the "
 "textures are part of the object's material file."
 msgstr ""
-"二进制 glTF 文件是三个选项中最小的。包含在 Blender 中设置的网格和纹理。当放"
-"入 Godot 中时，纹理将成为对象材质文件的一部分。"
+"glTF 二进制文件（\\ ``.glb``\\ ）是三个选项中最小的。包含在 Blender 中设置的"
+"网格和纹理。当放入 Godot 中时，纹理将成为对象材质文件的一部分。"
 
-#, fuzzy
 msgid ""
 "glTF embedded files (``.gltf``) function the same way as binary files. They "
 "don't provide extra functionality in Godot, and shouldn't be used since they "
 "have a larger file size."
 msgstr ""
-"嵌入式 glTF 文件的功能与二进制文件相同。没有在 Godot 中提供额外的功能，也不应"
-"使用，因为它们的文件较大。"
+"glTF 嵌入式文件（\\ ``.gltf``\\ ）的功能与二进制文件相同。Godot 中没有提供额"
+"外的功能，不应使用，因为文件比较大。"
 
 #, fuzzy
 msgid ""

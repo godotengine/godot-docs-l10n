@@ -169,32 +169,32 @@ msgstr ""
 "<class_node_method_add_child>` 调用. 由于 :ref:`NodePath <class_nodepath>` 可"
 "能无效, 因此可能还需要某种方式将子项链接到父项."
 
-#, fuzzy
 msgid "JSON vs binary serialization"
-msgstr "二进制序列化 API"
+msgstr "JSON 与二进制序列化"
 
 msgid ""
 "For simple game state, JSON may work and it generates human-readable files "
 "that are easy to debug."
-msgstr ""
+msgstr "简单的游戏状态可能可以使用 JSON，生成的是人类可读的文件，便于调试。"
 
 msgid ""
 "But JSON has many limitations. If you need to store more complex game state "
 "or a lot of it, :ref:`binary serialization<doc_binary_serialization_api>` "
 "may be a better approach."
 msgstr ""
+"但是 JSON 也存在限制。如果你需要存储比较复杂的游戏状态，或者量比较大，使用"
+"\\ :ref:`二进制序列化 <doc_binary_serialization_api>`\\ 可能更合适。"
 
-#, fuzzy
 msgid "JSON limitations"
-msgstr "限制"
+msgstr "JSON 的限制"
 
 msgid "Here are some important gotchas to know about when using JSON."
-msgstr ""
+msgstr "以下是一些使用 JSON 时会遇到的大坑。"
 
 msgid ""
 "**Filesize:** JSON stores data in text format, which is much larger than "
 "binary formats."
-msgstr ""
+msgstr "**文件大小：**\\ JSON 使用文本格式存储数据，比二进制格式要大很多。"
 
 msgid ""
 "**Data types:** JSON only offers a limited set of data types. If you have "
@@ -203,16 +203,21 @@ msgid ""
 "JSON can't parse are: ``Vector2``, ``Vector3``, ``Color``, ``Rect2``, and "
 "``Quaternion``."
 msgstr ""
+"**数据类型：**\\ JSON 只提供了有限的数据类型。如果你用到了 JSON 没有的数据类"
+"型，就需要自己在这个类型和 JSON 能够处理的类型之间来回转换。例如 JSON 无法解"
+"析以下重要的类型：\\ ``Vector2``\\ 、\\ ``Vector3``\\ 、\\ ``Color``\\ 、\\ "
+"``Rect2``\\ 、\\ ``Quaternion``\\ 。"
 
 msgid ""
 "**Custom logic needed for encoding/decoding:** If you have any custom "
 "classes that you want to store with JSON, you will need to write your own "
 "logic for encoding and decoding those classes."
 msgstr ""
+"**编解码需要自定义逻辑：**\\ 如果你想要用 JSON 存储自定义的类，就需要自己编写"
+"这些类的编解码逻辑。"
 
-#, fuzzy
 msgid "Binary serialization"
-msgstr "二进制序列化 API"
+msgstr "二进制序列化"
 
 msgid ""
 ":ref:`Binary serialization<doc_binary_serialization_api>` is an alternative "

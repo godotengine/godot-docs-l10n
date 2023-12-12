@@ -101,14 +101,13 @@ msgid ""
 "language and file path, among other options."
 msgstr "弹出“附加节点脚本”窗口。你可以选择脚本的语言和文件路径，以及其他选项。"
 
-#, fuzzy
 msgid ""
 "Change the Template field from \"Node: Default\" to \"Object: Empty\" to "
 "start with a clean file. Leave the other options set to their default values "
 "and click the Create button to create the script."
 msgstr ""
-"把模板字段从“Node: Default”改为“Object: Empty”从而得到一个干净的脚本。其他选"
-"项保持默认，然后点击“创建”按钮来创建脚本。"
+"把模板字段从“Node: Default”改为“Object: Empty”从而得到一个干净的脚本文件。其"
+"他选项保持默认，然后点击“创建”按钮来创建脚本。"
 
 msgid ""
 "The Script workspace should appear with your new ``sprite_2d.gd`` file open "
@@ -340,7 +339,6 @@ msgstr ""
 "正如我们所看到的，\\ ``var`` 关键字可以定义新变量。如果你把它放在脚本顶部，定"
 "义的就是类的属性。在函数内部，定义的则是局部变量：只在函数的作用域中存在。"
 
-#, fuzzy
 msgid ""
 "We define a local variable named ``velocity``, a 2D vector representing both "
 "a direction and a speed. To make the node move forward, we start from the "
@@ -376,7 +374,6 @@ msgstr ""
 "使用这样的方法不会考虑与墙壁和地面的碰撞。在 :ref:`doc_your_first_2d_game` "
 "中，你会学到另一种移动对象的方法，可以检测碰撞。"
 
-#, fuzzy
 msgid ""
 "Our node currently moves by itself. In the next part, :ref:"
 "`doc_scripting_player_input`, we'll use player input to control it."

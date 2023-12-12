@@ -20,22 +20,20 @@ msgstr ""
 msgid "List of features"
 msgstr "Список особливостей"
 
-#, fuzzy
 msgid "This page aims to list **all** features currently supported by Godot."
 msgstr ""
-"Ця сторінка створена щоб показати всі особливості, що підтримуються рушієм "
-"на даний момент."
+"Ця сторінка має на меті перелічити **всі** можливості, які наразі "
+"підтримуються у Godot."
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot. "
 "Some of these features may not be available in the `LTS release series (3.x) "
 "<https://docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
 msgstr ""
-"Ця сторінка показує список особливостей які підтримує поточна, стабільна "
-"версія Godot(3.5). `Більше особливостей <https://docs.godotengine.org/en/"
-"latest/about/list_of_features.html>`__ доступні в останній версії розробки "
-"(4.0)."
+"На цій сторінці перелічено можливості, які підтримуються поточною стабільною "
+"версією Godot. Деякі з цих можливостей можуть бути відсутніми у `LTS "
+"випусках (3.x) <https://docs.godotengine.org/en/3.5/about/list_of_features."
+"html>`__."
 
 msgid "Platforms"
 msgstr "Платформи"
@@ -49,9 +47,8 @@ msgstr "Windows 7 або новіша (64-біт або 32-біт)."
 msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
 msgstr "macOS 10.12 або новіша (64-біт, x86 і ARM)."
 
-#, fuzzy
 msgid "Linux (64-bit, x86 and ARM)."
-msgstr "Linux (64-бітна та 32-бітна, x86 та ARM)."
+msgstr "Linux (64-розрядний, x86 та ARM)."
 
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
@@ -77,20 +74,18 @@ msgstr ""
 msgid "**Runs exported projects:**"
 msgstr "**Запускає експортовані проєкти:**"
 
-#, fuzzy
 msgid "iOS 11.0 and later."
-msgstr "iOS 10.0 або новіша."
+msgstr "iOS 11.0 та новіша версія."
 
 msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":док:`Consoles <doc_consoles>`."
 
-#, fuzzy
 msgid ""
 "Godot aims to be as platform-independent as possible and can be :ref:`ported "
 "to new platforms <doc_custom_platform_ports>` with relative ease."
 msgstr ""
-"Godot прагне бути максимально незалежним від платформи і може бути відноснох "
-"легко перенесений на нові платформ."
+"Godot прагне бути максимально незалежним від платформи і може бути відносно "
+"легко :ref:`перенесений на нові платформи <doc_custom_platform_ports>`."
 
 msgid ""
 "Projects written in C# using Godot 4 currently cannot be exported to the web "
@@ -186,13 +181,12 @@ msgstr ""
 ":ref:`Створюйте власні плагіни<doc_making_plugins>` за допомогою GDScript, "
 "щоб додати нові функції, чи прискорити свою роботу."
 
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-":ref:`Завантажуйте проекти з бібліотеки активів <doc_using_assetlib_editor>` "
-"в менеджері проектів та імпортуйте їх безпосередньо."
+":ref:`Звантажуйте проекти з бібліотеки ресурсів <doc_using_assetlib_editor>` "
+"у Диспетчері проектів та імпортуйте їх напряму."
 
 msgid "Rendering"
 msgstr "Рендеринг"
@@ -225,17 +219,15 @@ msgstr "2D графіка"
 msgid "Sprite, polygon and line rendering."
 msgstr "Рендер спрайтів, полігонів і ліній."
 
-#, fuzzy
 msgid ""
 "High-level tools to draw lines and polygons such as :ref:`class_Polygon2D` "
 "and :ref:`class_Line2D`, with support for texturing."
 msgstr ""
-"Інструменти високого рівня для малювання ліній та багатокутників, таких як "
-"Polygon2D та Line2D."
+"Високорівневі інструменти для малювання ліній та полігонів, такі як :ref:"
+"`class_Polygon2D` та :ref:`class_Line2D`, з підтримкою текстурування."
 
-#, fuzzy
 msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr "AnimatedSprite як помічник для створення анімованих спрайтів."
+msgstr "AnimatedSprite2D як помічник для створення анімованих спрайтів."
 
 msgid "Parallax layers."
 msgstr "Шари паралакса."
@@ -248,13 +240,11 @@ msgid ""
 "maps."
 msgstr ""
 
-#, fuzzy
 msgid "Point (omni/spot) and directional 2D lights."
-msgstr "Всебічне світло."
+msgstr "Точкове (омні/спот) і спрямоване 2D світло."
 
-#, fuzzy
 msgid "Hard or soft shadows (adjustable on a per-light basis)."
-msgstr "Енергію відбивання можна регулювати для кожного світла окремо."
+msgstr "Жорсткі або м'які тіні (регулюються для кожного світла окремо)."
 
 msgid ""
 "Custom shaders can access a real-time :abbr:`SDF (Signed Distance Field)` "
@@ -268,28 +258,25 @@ msgid ""
 "using FreeType or multi-channel signed distance fields (MSDF)."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Bitmap fonts can be exported using tools like BMFont, or imported from "
 "images (for fixed-width fonts only)."
 msgstr ""
 "Растрові шрифти можна експортувати за допомогою таких інструментів, як "
-"BMFont."
+"BMFont, або імпортувати із зображень (лише для шрифтів фіксованої ширини)."
 
-#, fuzzy
 msgid ""
 "Dynamic fonts support monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
-"DynamicFont підтримує однотонні шрифти, а також кольорові шрифти (наприклад "
-"емоджі). Підтримувані формати: TTF, OTF, WOFF1 та WOFF2."
+"DynamicFont підтримує монохромні шрифти, а також кольорові шрифти "
+"(наприклад, емодзі). Підтримувані формати: TTF, OTF, WOFF1 та WOFF2."
 
-#, fuzzy
 msgid ""
 "Dynamic fonts support optional font outlines with adjustable width and color."
 msgstr ""
-"DynamicFont підтримує додаткові контури шрифту з регульованою шириною та "
-"кольором."
+"Динамічні шрифти підтримують додаткові контури шрифту з регульованою шириною "
+"та кольором."
 
 msgid ""
 "Dynamic fonts support variable fonts and OpenType features including "
@@ -301,12 +288,11 @@ msgid ""
 "those styles."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Dynamic fonts support oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
-"Підтримка масштабування шрифтів для збереження їх чіткості при високій "
-"роздільній здатності."
+"Динамічні шрифти підтримують передискретизацію, щоб зберегти чіткість "
+"шрифтів при високій роздільній здатності."
 
 msgid ""
 "Dynamic fonts support subpixel positioning to make fonts crisper at low "
@@ -324,11 +310,12 @@ msgid ""
 "to lower sizes better compared to monochrome SDF fonts."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "GPU-based :ref:`particles <doc_particle_systems_2d>` with support for :ref:"
 "`custom particle shaders <doc_particle_shader>`."
-msgstr "Частинки, що оброблюються GPU, з підтримкою користувацьких шейдерів."
+msgstr ""
+"Графічні :ref:`частинки <doc_article_systems_2d>` з підтримкою :ref:"
+"`кастомних шейдерів частинок <doc_article_shader>`."
 
 msgid "CPU-based particles."
 msgstr "Частинки, що оброблюються CPU."
@@ -357,9 +344,8 @@ msgstr "Може бути намальовано в редакторі або з
 msgid "PathFollow2D node to make nodes follow a Path2D."
 msgstr "Вузол PathFollow2D, щоб змусити вузли рухатися по Path2D."
 
-#, fuzzy
 msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
-msgstr "Клас, що допомагає з 2d геометрією."
+msgstr "ref:`2D геометрія допоміжний клас <class_Geometry2D>`."
 
 msgid "2D physics"
 msgstr "2D фізика"
@@ -378,9 +364,8 @@ msgstr ""
 msgid "Rigid bodies."
 msgstr "Тверді тіла."
 
-#, fuzzy
 msgid "Character bodies."
-msgstr "Статичні тіла."
+msgstr "Тіла персонажів."
 
 msgid "Joints."
 msgstr "Суглоби."
@@ -393,10 +378,11 @@ msgstr ""
 msgid "**Collision detection:**"
 msgstr "**Виявлення зіткнень:**"
 
-#, fuzzy
 msgid ""
 "Built-in shapes: line, box, circle, capsule, world boundary (infinite plane)."
-msgstr "Вбудовані фігури: лінія, квадрат, коло, капсула."
+msgstr ""
+"Вбудовані форми: лінія, коробка, коло, капсула, межа світу (нескінченна "
+"площина)."
 
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
@@ -408,9 +394,8 @@ msgstr ""
 msgid "3D graphics"
 msgstr "3D графіка"
 
-#, fuzzy
 msgid "HDR rendering with sRGB."
-msgstr "Обмеження 3D відображення"
+msgstr "HDR-рендеринг з sRGB."
 
 msgid "Perspective, orthographic and frustum-offset cameras."
 msgstr "Перспективні, ортографічні та фрустум-офсетні камери."
@@ -431,69 +416,58 @@ msgstr "**Фізично достовірний рендеринг (вбудов
 msgid "Follows the Disney PBR model."
 msgstr "Наслідує модель Disney PBR."
 
-#, fuzzy
 msgid ""
 "Supports Burley, Lambert, Lambert Wrap (half-Lambert) and Toon diffuse "
 "shading modes."
 msgstr ""
-"Підтримує режими дифузних шейдерів Lambert, Lambert Wrap (наполовину-"
-"Lambert), Oren-Nayar та Toon."
+"Підтримує режими розсіяного затінення Burley, Lambert, Lambert Wrap (half-"
+"Lambert) і Toon."
 
-#, fuzzy
 msgid "Supports Schlick-GGX, Toon and Disabled specular shading modes."
-msgstr ""
-"Підтримує режими дзеркальних шейдерів Schlick-GGX, Blinn, Phong, Toon та "
-"Disabled (Вимкнений)."
+msgstr "Підтримує режими дзеркального затінення Schlick-GGX, Toon та Disabled."
 
 msgid "Uses a roughness-metallic workflow with support for ORM textures."
 msgstr ""
 "Використовує шорстко-металевий робочий процес із підтримкою ORM-текстур."
 
-#, fuzzy
 msgid ""
 "Uses horizon specular occlusion (Filament model) to improve material "
 "appearance."
 msgstr ""
-"Використовує горизонтальну дзеркальну оклюзію (модель Filament) для "
-"поліпшення зовнішнього вигляду матеріалу"
+"Використовує дзеркальну оклюзію горизонту (модель Filament) для покращення "
+"зовнішнього вигляду матеріалу."
 
 msgid "Normal mapping."
 msgstr "Normal Map (Карта нормалей)."
 
-#, fuzzy
 msgid ""
 "Parallax/relief mapping with automatic level of detail based on distance."
 msgstr ""
-"* GLES3: * Паралакс / рельєфне відображення з автоматичним рівнем "
-"деталізації на основі відстані."
+"Мапування паралаксу/рельєфу з автоматичним рівнем деталізації залежно від "
+"відстані."
 
 msgid "Detail mapping for the albedo and normal maps."
 msgstr "Детальне відображення альбедо і карт нормалей."
 
-#, fuzzy
 msgid "Sub-surface scattering and transmittance."
-msgstr "* GLES3: * Розсіювання та підповерхневе пропускання."
+msgstr "Підповерхневе розсіювання та пропускання."
 
-#, fuzzy
 msgid ""
 "Screen-space refraction with support for material roughness (resulting in "
 "blurry refraction)."
 msgstr ""
-"*GLES3:* Заломлення з підтримкою шорсткості матеріалу (в результаті "
-"розмитого заломлення). На GLES2 заломлення працює, але не має підтримки для "
-"шорсткості матеріалу."
+"Екранно-просторове заломлення з підтримкою шорсткості матеріалу (що "
+"призводить до розмитого заломлення)."
 
-#, fuzzy
 msgid "Proximity fade (soft particles) and distance fade."
-msgstr "*GLES3:* Ближнє затухання (м'які частинки)."
+msgstr "Згасання поблизу (м'які частинки) і згасання на відстані."
 
-#, fuzzy
 msgid ""
 "Distance fade can use alpha blending or dithering to avoid going through the "
 "transparent pipeline."
 msgstr ""
-"Затухання з відстаню, яке може використовувати альфа-змішування або "
-"відтіняння, щоб уникнути проходження прозорого трубопроводу."
+"Для згладжування відстані можна використовувати альфа-змішування або "
+"згладжування, щоб уникнути проходження через прозорий контур."
 
 msgid "Dithering can be determined on a per-pixel or per-object basis."
 msgstr "Дитеринг може бути визначено на рівні пікселів або окремих об'єктів."
@@ -510,11 +484,12 @@ msgstr "Всебічне світло."
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Точкове світло з регульованим кутом конуса і загасанням."
 
-#, fuzzy
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
-msgstr "Енергію відбивання можна регулювати для кожного світла окремо."
+msgstr ""
+"Енергію дзеркального, непрямого світла та об'ємного туману можна регулювати "
+"окремо для кожного джерела світла."
 
 msgid ""
 "Adjustable light \"size\" for fake area lights (will also make shadows "
@@ -557,9 +532,8 @@ msgstr ""
 "карта (повільніша, але точніша). Підтримує кольорові текстури проєктора у "
 "вигляді панорам."
 
-#, fuzzy
 msgid "*SpotLight:* Single texture. Supports colored projector textures."
-msgstr "*SpotLight (Точкове світло):* Одна текстура."
+msgstr "*SpotLight:* Окрема текстура. Підтримує кольорові текстури проектора."
 
 msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
@@ -571,20 +545,18 @@ msgid ""
 "light size and distance from the surface the shadow is cast on."
 msgstr ""
 
-#, fuzzy
 msgid "Adjustable shadow blur on a per-light basis."
-msgstr "Енергію відбивання можна регулювати для кожного світла окремо."
+msgstr "Регульоване розмиття тіней на основі кожного світла."
 
 msgid "**Global illumination with indirect lighting:**"
 msgstr "** Глобальне освітлення з непрямим світлом: **"
 
-#, fuzzy
 msgid ""
 ":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
 "at run-time)."
 msgstr ""
-"Запечені світлові карти (швидкі, але не можуть бути оновлені в режимі "
-"реального часу)."
+":ref:`Запечені світлові карти <doc_using_lightmap_gi>` (швидко, але не може "
+"бути оновлена під час виконання)."
 
 msgid ""
 "Supports baking indirect light only or baking both direct and indirect "
@@ -595,12 +567,11 @@ msgstr ""
 "і непрямого освітлення. Режим запікання можна налаштувати залежно від "
 "світла, щоб забезпечити гібридні налаштування запікання."
 
-#, fuzzy
 msgid ""
 "Supports lighting dynamic objects using automatic and manually placed probes."
 msgstr ""
-"Підтримує освітлення динамічних об'єктів за допомогою автоматичної системи "
-"на основі октрі дерева. Розміщення датника вручну не потрібне."
+"Підтримує освітлення динамічних об'єктів за допомогою автоматичних і ручних "
+"зондів."
 
 msgid ""
 "Optionally supports directional lighting and rough reflections based on "
@@ -684,9 +655,8 @@ msgid ""
 "displayed per mesh resource."
 msgstr ""
 
-#, fuzzy
 msgid "**Decals:**"
-msgstr "**Особливості:**"
+msgstr "**Наклейки:**"
 
 msgid ""
 ":ref:`Supports albedo <doc_using_decals>`, emissive, :abbr:`ORM (Occlusion "
@@ -708,11 +678,12 @@ msgid ""
 "every frame."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Support for nearest, bilinear, trilinear or anisotropic texture filtering "
 "(configured globally)."
-msgstr "Найближнє, білінійне, трилінійне та анізотропне фільтрування."
+msgstr ""
+"Підтримка найближчої, білінійної, трилінійної або анізотропної фільтрації "
+"текстур (налаштовується глобально)."
 
 msgid ""
 "When using the Forward+ backend (default on desktop), decals are rendered "
@@ -756,26 +727,23 @@ msgstr ""
 msgid "Exponential height fog."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Support for automatic fog color depending on the sky color (aerial "
 "perspective)."
 msgstr ""
-"Автоматична підтримка кольору туману в залежності в напряму камери (щоб "
-"відповідати кольору сонця)."
+"Підтримка автоматичного кольору туману залежно від кольору неба (повітряна "
+"перспектива)."
 
-#, fuzzy
 msgid "Support for sun scattering in the fog."
-msgstr "Підтримка плагінів візуальних шейдерів."
+msgstr "Підтримка розсіювання сонця в тумані."
 
 msgid ""
 "Support for controlling how much fog rendering should affect the sky, with "
 "separate controls for traditional and volumetric fog."
 msgstr ""
 
-#, fuzzy
 msgid "Support for making specific materials ignore fog."
-msgstr "Підтримка плагінів візуальних шейдерів."
+msgstr "Підтримка ігнорування туману певними матеріалами."
 
 msgid "**Volumetric fog:**"
 msgstr ""
@@ -838,31 +806,29 @@ msgstr "**Пост-обробка:**"
 msgid "Tonemapping (Linear, Reinhard, Filmic, ACES)."
 msgstr "Замалювання (Linear, Reinhard, Filmic, ACES)."
 
-#, fuzzy
 msgid ""
 "Automatic exposure adjustments based on viewport brightness (and manual "
 "exposure override)."
 msgstr ""
-"*GLES3:* Автоматичне регулювання експозиції на основі яскравості вікна "
-"перегляду."
+"Автоматичне регулювання експозиції на основі яскравості видошукача (і ручне "
+"перевизначення експозиції)."
 
 msgid ""
 "Near and far depth of field with adjustable bokeh simulation (box, hexagon, "
 "circle)."
 msgstr ""
 
-#, fuzzy
 msgid "Screen-space ambient occlusion (SSAO) at half or full resolution."
-msgstr "*GLES3:* Перепона навколишнього світу в екранному просторі."
+msgstr ""
+"Екранно-просторова оклюзія навколишнього середовища (SSAO) при половинній "
+"або повній роздільній здатності."
 
-#, fuzzy
 msgid ""
 "Glow/bloom with optional bicubic upscaling and several blend modes "
 "available: Screen, Soft Light, Add, Replace, Mix."
 msgstr ""
-"Світіння/блум c можливим збільшенням роздільної здатності та декількома "
-"доступними режимами змішування: Screen (Екран), Soft Light (М'яке світло), "
-"Add (Додати), Replace (Замінити)."
+"Сяйво/цвітіння з додатковим бікубічним масштабуванням і кількома режимами "
+"накладання: Екран, М'яке світло, Додати, Замінити, Змішати."
 
 msgid "Glow can have a colored dirt map texture, acting as a lens dirt effect."
 msgstr ""
@@ -872,11 +838,8 @@ msgid ""
 "<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`."
 msgstr ""
 
-#, fuzzy
 msgid "Color correction using a one-dimensional ramp or a 3D LUT texture."
-msgstr ""
-"Корекція кольору з використанням одновимірної рамп-функції (лінійно-часової "
-"функції)."
+msgstr "Корекція кольору за допомогою одновимірної рампи або 3D LUT-текстури."
 
 msgid "Roughness limiter to reduce the impact of specular aliasing."
 msgstr ""
@@ -890,10 +853,11 @@ msgstr "**Фільтрування текстур:**"
 msgid "Nearest, bilinear, trilinear or anisotropic filtering."
 msgstr "Найближнє, білінійне, трилінійне та анізотропне фільтрування."
 
-#, fuzzy
 msgid ""
 "Filtering options are defined on a per-use basis, not a per-texture basis."
-msgstr "Дитеринг може бути визначено на рівні пікселів або окремих об'єктів."
+msgstr ""
+"Параметри фільтрації визначаються на основі використання, а не на основі "
+"текстури."
 
 msgid "**Texture compression:**"
 msgstr "**Стиснення текстур:**"
@@ -901,18 +865,14 @@ msgstr "**Стиснення текстур:**"
 msgid "Basis Universal (slow, but results in smaller files)."
 msgstr ""
 
-#, fuzzy
 msgid "BPTC for high-quality compression (not supported on macOS)."
-msgstr ""
-"*GLES3:* BPTC для високоякісного стиснення (не підтримується на macOS)."
+msgstr "BPTC для якісного стиснення (не підтримується на macOS)."
 
-#, fuzzy
 msgid "ETC2 (not supported on macOS)."
-msgstr "*GLES3:* ETC2 (не підтримується на macOS)."
+msgstr "ETC2 (не підтримується на macOS)."
 
-#, fuzzy
 msgid "S3TC (not supported on mobile/Web platforms)."
-msgstr "S3TC (не підтримується на настільних платформах)."
+msgstr "S3TC (не підтримується на мобільних/веб-платформах)."
 
 msgid "**Anti-aliasing:**"
 msgstr "**Згладжування:**"
@@ -944,9 +904,8 @@ msgid ""
 "material basis."
 msgstr ""
 
-#, fuzzy
 msgid "**Resolution scaling:**"
-msgstr "**Відображення:**"
+msgstr "**Масштабування роздільної здатності:**"
 
 msgid ""
 "Support for :ref:`rendering 3D at a lower resolution "
@@ -965,26 +924,25 @@ msgid ""
 "lower resolution scales. It can also be modified with a manual offset."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Most effects listed above can be adjusted for better performance or to "
 "further improve quality. This can be helpful when :ref:`using Godot for "
 "offline rendering <doc_creating_movies>`."
 msgstr ""
-"Більшість із цих ефектів можна скорегувати для покращення продуктивності, "
-"або подальшого покращення якості. Це може бути корисно при використанні "
-"Godot для офлайн-рендеринга."
+"Більшість ефектів, перелічених вище, можна налаштувати для кращої "
+"продуктивності або для подальшого покращення якості. Це може бути корисним у "
+"випадку :ref:`використання Godot для автономного рендерингу "
+"<doc_creating_movies>`."
 
 msgid "3D tools"
 msgstr "3D інструменти"
 
-#, fuzzy
 msgid ""
 "Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad, "
 "torus, ribbon, tube."
 msgstr ""
-"Вбудовані меші (сітки): куб, циліндр/конус, (пів)куля, призма, площина, "
-"квадрат."
+"Вбудовані сітки: куб, циліндр/конус, (гемі)сфера, призма, площина, квадрат, "
+"тор, стрічка, труба."
 
 msgid ":ref:`GridMaps <doc_using_gridmaps>` for 3D tile-based level design."
 msgstr ""
@@ -1008,15 +966,15 @@ msgstr "Вузол Path3D для зображення шляху в 3D прос�
 msgid "PathFollow3D node to make nodes follow a Path3D."
 msgstr "Вузол PathFollow3D, щоб заставити вузли рухатися по Path3D."
 
-#, fuzzy
 msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
-msgstr "Допоміжний клас 3D-геометрії."
+msgstr ":ref:`3D геометрія допоміжного класу <class_Geometry3D>`."
 
-#, fuzzy
 msgid ""
 "Support for exporting the current scene as a glTF 2.0 file, both from the "
 "editor and at run-time from an exported project."
-msgstr "Підтримка експорту поточної сцени з редактора, як файлу glTF 2.0."
+msgstr ""
+"Підтримка експорту поточної сцени у формат glTF 2.0 як з редактора, так і "
+"під час виконання з експортованого проекту."
 
 msgid "3D physics"
 msgstr "3D фізика"
@@ -1030,11 +988,12 @@ msgstr "М'які тіла."
 msgid "Ragdolls."
 msgstr "Система Ragdolls (\"rag\" - ганчірка, \"doll\" - лялька)."
 
-#, fuzzy
 msgid ""
 "Built-in shapes: cuboid, sphere, capsule, cylinder, world boundary (infinite "
 "plane)."
-msgstr "Вбудовані форми: куб, куля, капсула, циліндр."
+msgstr ""
+"Вбудовані форми: кубоїд, сфера, капсула, циліндр, межа світу (нескінченна "
+"площина)."
 
 msgid "Generate triangle collision shapes for any mesh from the editor."
 msgstr ""
@@ -1086,11 +1045,10 @@ msgid ""
 "Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
 msgstr "Підтримка :ref:`багатомовних скриптів <doc_cross_language_scripting>`."
 
-#, fuzzy
 msgid ""
 "Many 2D, 3D and 4D linear algebra data types such as vectors and transforms."
 msgstr ""
-"Багато типів даних 2D та 3D лінійної алгебри, таких як вектори та "
+"Багато типів даних 2D, 3D і 4D лінійної алгебри, таких як вектори і "
 "перетворення."
 
 msgid ":ref:`GDScript: <toc-learn-scripting-gdscript>`"
@@ -1127,9 +1085,8 @@ msgstr ""
 msgid "Supports .NET 6 and higher."
 msgstr ""
 
-#, fuzzy
 msgid "Full support for the C# 10.0 syntax and features."
-msgstr "Повна підтримка синтаксису та функцій C# 7.0."
+msgstr "Повна підтримка синтаксису та можливостей C# 10.0."
 
 msgid ""
 "Supports Windows, Linux, and macOS. As of 4.2 experimental support for "
@@ -1156,9 +1113,8 @@ msgstr ""
 "Рекомендується використовувати зовнішній редактор, щоб скористатися "
 "функціоналом IDE."
 
-#, fuzzy
 msgid "**GDExtension (C, C++, Rust, D, ...):**"
-msgstr "**GDNative (C, C++, Rust, D, ...):**"
+msgstr "**GDEрозширення (C, C++, Rust, D, ...):**"
 
 msgid ""
 "When you need it, link to native libraries for higher performance and third-"
@@ -1216,13 +1172,11 @@ msgid ""
 "AudioStreamPlayer node)."
 msgstr ""
 
-#, fuzzy
 msgid "Support for random volume and pitch."
-msgstr "Підтримка плагінів візуальних шейдерів."
+msgstr "Підтримка довільної гучності та висоти тону."
 
-#, fuzzy
 msgid "Support for real-time pitch scaling."
-msgstr "Підтримка плагінів візуальних шейдерів."
+msgstr "Підтримка масштабування висоти тону в реальному часі."
 
 msgid ""
 "Support for sequential/random sample selection, including repetition "
@@ -1236,12 +1190,10 @@ msgstr ""
 "Вузли Listener2D та Listener3D для прослуховування з іншої позиції, ніж "
 "камера."
 
-#, fuzzy
 msgid ""
 "Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
 msgstr ""
-"Інструменти для :ref:`генерації процедурної геометрії "
-"<doc_procedural_geometry>`."
+"Підтримка :ref:`процедурної генерації звуку <клас_AudioStreamGenerator>`."
 
 msgid "Audio input to record microphones."
 msgstr ""
@@ -1256,10 +1208,10 @@ msgid "**APIs used:**"
 msgstr "**Використані API:**"
 
 msgid "*Windows:* WASAPI."
-msgstr "*Windows:* WASAPI."
+msgstr "*Windows:* ВАСАПІ."
 
 msgid "*macOS:* CoreAudio."
-msgstr "*macOS:* CoreAudio."
+msgstr "*macOS:* Аудіо ядро."
 
 msgid "*Linux:* PulseAudio or ALSA."
 msgstr "*Linux:* PulseAudio чи ALSA."
@@ -1273,9 +1225,8 @@ msgstr "Підтримка :ref:`користувацьких плагінів �
 msgid "**Formats:**"
 msgstr "**Формати:**"
 
-#, fuzzy
 msgid "*Images:* See :ref:`doc_importing_images`."
-msgstr "*Зображення:* Дивіться :ref:`doc_import_images`."
+msgstr "*Зображення:* Дивіться :ref:`doc_importing_images`."
 
 msgid "*Audio:*"
 msgstr "*Аудіо:*"
@@ -1289,9 +1240,8 @@ msgstr "Ogg Vorbis."
 msgid "MP3."
 msgstr "MP3."
 
-#, fuzzy
 msgid "*3D scenes:* See :ref:`doc_importing_3d_scenes`."
-msgstr "*Зображення:* Дивіться :ref:`doc_import_images`."
+msgstr "*3D сцени:* Дивіться :ref:`doc_importing_3d_scenes`."
 
 msgid "glTF 2.0 *(recommended)*."
 msgstr "glTF 2.0 *(рекомендовано)*."
@@ -1306,23 +1256,21 @@ msgid ""
 msgstr ""
 
 msgid "Collada (.dae)."
-msgstr "Collada (.dae)."
+msgstr "Коллада (.dae)."
 
-#, fuzzy
 msgid ""
 "Wavefront OBJ (static scenes only, can be loaded directly as a mesh or "
 "imported as a 3D scene)."
 msgstr ""
-"Wavefront OBJ (тільки статичні сцени, можуть бути завантажені безпосередньо "
-"як меш (сітка))."
+"Wavefront OBJ (тільки статичні сцени, можна завантажити безпосередньо як "
+"сітку або імпортувати як 3D-сцену)."
 
-#, fuzzy
 msgid ""
 "Support for loading glTF 2.0 scenes at run-time, including from an exported "
 "project."
 msgstr ""
-"Створення навігаційних мешів (сіток) в редакторі, чи під час виконання "
-"(включаючи з експортованого проекту)."
+"Підтримка завантаження сцен glTF 2.0 під час виконання, зокрема з "
+"експортованого проекту."
 
 msgid ""
 "3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
@@ -1336,13 +1284,12 @@ msgstr ""
 msgid "Input"
 msgstr "Введення"
 
-#, fuzzy
 msgid ""
 ":ref:`Input mapping system <doc_input_examples>` using hardcoded input "
 "events or remappable input actions."
 msgstr ""
-"Система вводу використовує жорстко запрограмовані ввідні події, або змінні "
-"ввідні дії."
+"ref:`Система відображення вводу <doc_input_examples>` з використанням "
+"жорстко закодованих подій вводу або дій вводу, які можна перерозподіляти."
 
 msgid ""
 "Axis values can be mapped to two different actions with a configurable "
@@ -1409,35 +1356,36 @@ msgstr ""
 msgid "Networking"
 msgstr "Робота у мережі"
 
-#, fuzzy
 msgid ""
 "Low-level TCP networking using :ref:`class_StreamPeer` and :ref:"
 "`class_TCPServer`."
-msgstr "Низькорівненва мережа TCP використовуюча StreamPeer і TCP_Server."
+msgstr ""
+"Низькорівнева TCP-мережа з використанням :ref:`class_StreamPeer` та :ref:"
+"`class_TCPServer`."
 
-#, fuzzy
 msgid ""
 "Low-level UDP networking using :ref:`class_PacketPeer` and :ref:"
 "`class_UDPServer`."
-msgstr "Низькорівнева мережа UDP використовуюча PacketPeer і UDPServer."
+msgstr ""
+"Низькорівнева UDP-мережа з використанням :ref:`class_PacketPeer` та :ref:"
+"`class_UDPServer`."
 
-#, fuzzy
 msgid "Low-level HTTP requests using :ref:`class_HTTPClient`."
-msgstr "Низькорівневі HTTP-запити з використанням HTTPClient."
+msgstr "Низькорівневі HTTP-запити з використанням :ref:`class_HTTPClient`."
 
-#, fuzzy
 msgid "High-level HTTP requests using :ref:`class_HTTPRequest`."
-msgstr "Високорівневі HTTP-запити з використанням HTTPRequest."
+msgstr "Високорівневі HTTP-запити з використанням :ref:`class_HTTPRequest`."
 
 msgid "Supports HTTPS out of the box using bundled certificates."
 msgstr ""
 "Підтримка HTTPS прямо з коробки з використанням пов'язаних сертифікатів."
 
-#, fuzzy
 msgid ""
 ":ref:`High-level multiplayer <doc_high_level_multiplayer>` API using UDP and "
 "ENet."
-msgstr "Багатокористувацький високорівневий API з використанням UDP і ENet."
+msgstr ""
+":ref:`Високорівневий багатокористувацький <doc_high_level_multiplayer>` API "
+"з використанням UDP та ENet."
 
 msgid "Automatic replication using remote procedure calls (RPCs)."
 msgstr ""
@@ -1446,24 +1394,24 @@ msgstr ""
 msgid "Supports unreliable, reliable and ordered transfers."
 msgstr "Підтримує ненадійні, надійні та впорядковані трансфери."
 
-#, fuzzy
 msgid ""
 ":ref:`WebSocket <doc_websocket>` client and server, available on all "
 "platforms."
-msgstr "Клієнт і сервер WebSocket, доступні на всіх платформах."
+msgstr ""
+":ref:`WebSocket <doc_websocket>` клієнт і сервер, доступний на всіх "
+"платформах."
 
-#, fuzzy
 msgid ""
 ":ref:`WebRTC <doc_webrtc>` client and server, available on all platforms."
-msgstr "Клієнт і сервер WebRTC, доступні на всіх платформах."
+msgstr ""
+":ref:`WebRTC <doc_webrtc>` клієнт і сервер, доступний на всіх платформах."
 
-#, fuzzy
 msgid ""
 "Support for :ref:`UPnP <class_UPNP>` to sidestep the requirement to forward "
 "ports when hosting a server behind a NAT."
 msgstr ""
-"Підтримка UPnP, щоб обійти вимогу переадресації портів при розміщенні "
-"сервера за NAT."
+"Підтримка :ref:`UPnP <class_UPNP>`, щоб обійти вимогу переадресації портів "
+"при розміщенні сервера за NAT."
 
 msgid "Internationalization"
 msgstr "Інтернаціоналізація"
@@ -1479,9 +1427,8 @@ msgstr ""
 "<doc_internationalizing_games>`, або :ref:`gettext "
 "<doc_localization_using_gettext>`."
 
-#, fuzzy
 msgid "Support for generating gettext POT and PO files from the editor."
-msgstr "Підтримка експорту поточної сцени з редактора, як файлу glTF 2.0."
+msgstr "Підтримка генерації gettext POT та PO файлів з редактора."
 
 msgid ""
 "Use localized strings in your project automatically in GUI elements or by "
@@ -1514,11 +1461,10 @@ msgstr "Робота з вікном та інтеграція ОС"
 msgid "Spawn multiple independent windows within a single process."
 msgstr ""
 
-#, fuzzy
 msgid "Move, resize, minimize, and maximize windows spawned by the project."
 msgstr ""
-"Переміщення, зміна розміру, мінімізація та розгортання вікон, створених "
-"проєктом."
+"Переміщення, зміна розміру, згортання та розгортання вікон, створених "
+"проектом."
 
 msgid "Change the window title and icon."
 msgstr "Зміна заголовку та значка вікна."
@@ -1536,22 +1482,21 @@ msgid ""
 "can optionally use exclusive fullscreen to reduce input lag."
 msgstr ""
 
-#, fuzzy
 msgid "Borderless windows (fullscreen or non-fullscreen)."
-msgstr "Вікно без полів (повноекранне, чи не повноекранне)."
+msgstr "Вікна без меж (повноекранні або неповноекранні)."
 
-#, fuzzy
 msgid "Ability to keep a window always on top."
 msgstr "Можливість тримати вікно завжди зверху."
 
 msgid "Global menu integration on macOS."
 msgstr "Інтеграція глобального меню на macOS."
 
-#, fuzzy
 msgid ""
 "Execute commands in a blocking or non-blocking manner (including running "
 "multiple instances of the same project)."
-msgstr "Виконання команд блокуючим, чи не блокуючим способом."
+msgstr ""
+"Виконувати команди у блокуючий або неблокуючий спосіб (включаючи запуск "
+"декількох екземплярів одного проєкту)."
 
 msgid ""
 "Open file paths and URLs using default or custom protocol handlers (if "
@@ -1587,24 +1532,24 @@ msgstr "Підтримка XR (AR та VR)"
 msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Including support for popular desktop headsets like the Valve Index, WMR "
 "headsets, and Quest over Link."
 msgstr ""
-"Включає підтримку популярних гарнітур, таких як Meta Quest і Valve Index."
+"Включаючи підтримку популярних настільних гарнітур, таких як Valve Index, "
+"гарнітури WMR та Quest over Link."
 
 msgid ""
 "Support for :ref:`Android based headsets <doc_deploying_to_android>` using "
 "OpenXR through a plugin."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
 "and Pro, Pico 4, Magic Leap 2, and Lynx R1."
 msgstr ""
-"Включає підтримку популярних гарнітур, таких як Meta Quest і Valve Index."
+"Включаючи підтримку популярних автономних гарнітур, таких як Meta Quest "
+"1/2/3 і Pro, Pico 4, Magic Leap 2 і Lynx R1."
 
 msgid "Other devices supported through an XR plugin structure."
 msgstr ""
@@ -1641,10 +1586,11 @@ msgid ""
 "features such as displaying line numbers and syntax highlighting."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
-msgstr "Спливаючі меню з допомогою PopupMenu і OptionButton."
+msgstr ""
+"Випадаючі меню з використанням :ref:`class_PopupMenu` та :ref:"
+"`class_OptionButton`."
 
 msgid "Scrollbars."
 msgstr "Полоси прокрутки."
@@ -1652,13 +1598,13 @@ msgstr "Полоси прокрутки."
 msgid "Labels."
 msgstr "Мітки."
 
-#, fuzzy
 msgid ""
 "RichTextLabel for :ref:`text formatted using BBCode "
 "<doc_bbcode_in_richtextlabel>`, with support for animated custom effects."
 msgstr ""
-"RichTextLabel для :ref:`текста відформатованого з допомогою BBCode "
-"<doc_bbcode_in_richtextlabel>`."
+"RichTextLabel для :ref:`тексту, відформатованого за допомогою BBCode "
+"<doc_bbcode_in_richtextlabel>`, з підтримкою анімованих користувацьких "
+"ефектів."
 
 msgid "Trees (can also be used to represent tables)."
 msgstr "Дерева (також можуть використовуватися для створення таблиць)."
@@ -1688,30 +1634,29 @@ msgstr "Макети :ref:`Stack (Складання) <class_BoxContainer>`."
 msgid ":ref:`Grid <class_GridContainer>` layouts."
 msgstr "Макети :ref:`Grid (Сітки) <class_GridContainer>`."
 
-#, fuzzy
 msgid ""
 ":ref:`Flow <class_FlowContainer>` layouts (similar to autowrapping text)."
-msgstr "Макети :ref:`Stack (Складання) <class_BoxContainer>`."
+msgstr ""
+":ref:`Flow <class_FlowContainer>` макетів (подібно до автообгортання тексту)."
 
-#, fuzzy
 msgid ""
 ":ref:`Margin <class_MarginContainer>`, :ref:`centered "
 "<class_CenterContainer>` and :ref:`aspect ratio "
 "<class_AspectRatioContainer>` layouts."
 msgstr ""
-"Макети :ref:`Margin (Поля) <class_MarginContainer>` і :ref:`центрування "
-"<class_CenterContainer>`."
+":ref:`Margin <class_MarginContainer>`, :ref:`centered "
+"<class_CenterContainer>` та :ref:`aspect ratio <class_AspectRatioContainer>` "
+"макети."
 
 msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
 msgstr "Макети :ref:`Перетягуваного спліттера <class_SplitContainer>`."
 
-#, fuzzy
 msgid ""
 "Scale to :ref:`multiple resolutions <doc_multiple_resolutions>` using the "
 "``canvas_items`` or ``viewport`` stretch modes."
 msgstr ""
-"Масштабування до кількох роздільних здатностей з допомогою ``2d``, або "
-"``viewport``, режимів розтягування."
+"Масштабуйте до :ref:`multiple resolutions <doc_multiple_resolutions>` за "
+"допомогою режимів розтягування ``canvas_items`` або ``viewport``."
 
 msgid ""
 "Support any aspect ratio using anchors and the ``expand`` stretch aspect."
@@ -1785,11 +1730,10 @@ msgid "Binary formats are faster to save/load for large scenes/resources."
 msgstr ""
 "Бінарні формати швидше зберігаються/завантажуються для великих сцен/ресурсів."
 
-#, fuzzy
 msgid "Read and write text or binary files using :ref:`class_FileAccess`."
 msgstr ""
-"Читання та запис текстових, або двійкових, файлів за допомогою :ref:"
-"`class_File`."
+"Читання та запис текстових або бінарних файлів з використанням :ref:"
+"`class_FileAccess`."
 
 msgid "Can optionally be compressed or encrypted."
 msgstr "За бажання можна стиснути, або зашифрувати."
@@ -1876,17 +1820,15 @@ msgid ""
 "`print_rich <class_@GlobalScope_method_print_rich>`."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Support for :ref:`C++ modules <doc_custom_modules_in_cpp>` statically linked "
 "into the engine binary."
 msgstr ""
-"Підтримка для :ref:`модулів C++ <doc_custom_modules_in_c++>` статично "
-"зв'язаних з бінарником редактора."
+"Підтримка :ref:`C++ модулів <doc_custom_modules_in_cpp>`, статично "
+"прив'язаних до бінарного коду рушія."
 
-#, fuzzy
 msgid "Engine and editor written in C++17."
-msgstr "Движок і редактор написані в C++03."
+msgstr "Рушій та редактор написані на C++17."
 
 msgid ""
 "Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
@@ -1907,13 +1849,11 @@ msgstr ""
 msgid "Licensed under the permissive MIT license."
 msgstr "Ліцензовано відповідно до дозволу MIT."
 
-#, fuzzy
 msgid ""
 "Open development process with :ref:`contributions welcome "
 "<doc_ways_to_contribute>`."
 msgstr ""
-"Відкритий процес розробки за допомогою :ref:`благодійності "
-"<doc_ways_to_contribute>`."
+"Відкритий процес розробки з :ref:`внески вітаються <doc_ways_to_contribute>`."
 
 msgid ""
 "The `Godot proposals repository <https://github.com/godotengine/godot-"

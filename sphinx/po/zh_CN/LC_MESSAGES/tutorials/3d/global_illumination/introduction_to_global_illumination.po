@@ -438,14 +438,13 @@ msgstr "实时能力"
 msgid "**VoxelGI:** |good| Fully real-time."
 msgstr "**VoxelGI：** |good| 完全实时。"
 
-#, fuzzy
 msgid ""
 "Indirect lighting and reflections are fully real-time. Dynamic objects can "
 "receive GI *and* contribute to it with their emissive surfaces. Custom "
 "shaders can also emit their own light, which will be emitted accurately."
 msgstr ""
-"间接关照和反射是完全实时的。动态物体可以接收 GI， *并* 通过其发射表面对 GI 做"
-"出贡献。自定义着色器也可以准确地发射自己的光线。"
+"间接关照和反射是完全实时的。动态物体可以接收 GI， *并* 通过其自发光表面对 GI "
+"做出贡献。自定义着色器也可以准确地发出自己的光。"
 
 msgid ""
 "Viable for procedurally generated levels *if they are generated in advance* "
@@ -603,14 +602,13 @@ msgstr ""
 "`ReflectionProbe <doc_reflection_probes>` 是唯一受支持的选项。另见 :ref:"
 "`doc_introduction_to_global_illumination_alternatives`\\ 。"
 
-#, fuzzy
 msgid ""
 "You can compare global illumination techniques in action using the `Global "
 "Illumination demo project <https://github.com/godotengine/godot-demo-"
 "projects/tree/master/3d/global_illumination>`__."
 msgstr ""
-"如果您更善于通过查看示例学习，可以在\\ `这里 <https://github.com/godotengine/"
-"godot-demo-projects/tree/master/mobile/android_iap>`__\\ 找到演示项目。"
+"你可以使用 `全局照明演示项目 <https://github.com/godotengine/godot-demo-"
+"projects/tree/master/3d/global_illumination>`__ 比较实际的全局照明技术。"
 
 msgid "Which global illumination mode should I use on meshes and lights?"
 msgstr "我应该在网格和灯光上使用哪种全局光照模式？"
@@ -676,9 +674,8 @@ msgstr ""
 "值）* 。请注意，这只对 VoxelGI 和 SDFGI 有影响，因为 LightmapGI 不支持动态灯"
 "光的全局光照。"
 
-#, fuzzy
 msgid "Alternatives to GI techniques"
-msgstr "或者, 你可以运行"
+msgstr "GI 技术的替代方案"
 
 msgid ""
 "If none of the GI techniques mentioned above fits, it's still possible to :"

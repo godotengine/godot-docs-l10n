@@ -20,7 +20,6 @@ msgstr ""
 msgid "Godot notifications"
 msgstr "Сповіщення Godot"
 
-#, fuzzy
 msgid ""
 "Every Object in Godot implements a :ref:`_notification "
 "<class_Object_private_method__notification>` method. Its purpose is to allow "
@@ -29,11 +28,11 @@ msgid ""
 "<class_CanvasItem>` to \"draw\", it will call "
 "``_notification(NOTIFICATION_DRAW)``."
 msgstr ""
-"Кожен об'єкт у Godot реалізує метод :ref:`_notification "
-"<class_Object_method__notification>`. Його мета - дозволити Об'єкту "
-"реагувати на різноманітні зворотні виклики на рівні движка, які можуть "
-"стосуватися його. Наприклад, якщо движок каже :ref:`CanvasItem "
-"<class_CanvasItem>` \"малювати\" *(\"draw\")*, він викликає "
+"Кожен Об'єкт у Godot реалізує метод :ref:`_notification "
+"<клас_Об'єкта_приватний_метод__notification>`. Його мета - дозволити об'єкту "
+"реагувати на різноманітні зворотні виклики на рівні рушія, які можуть мати "
+"до нього відношення. Наприклад, якщо рушій скаже :ref:`CanvasItem "
+"<клас_CanvasItem>` \"намалювати\", він викличе "
 "``_notification(NOTIFICATION_DRAW)``."
 
 msgid ""
@@ -44,37 +43,30 @@ msgstr ""
 "скриптах. Настільки, що Godot поставляє багатьох із них зі спеціальними "
 "функціями:"
 
-#, fuzzy
 msgid "``_ready()``: ``NOTIFICATION_READY``"
-msgstr "``_ready()`` : NOTIFICATION_READY"
+msgstr "``_ready()``: ``ПОВІДОМЛЕННЯ_ГОТОВЕ``"
 
-#, fuzzy
 msgid "``_enter_tree()``: ``NOTIFICATION_ENTER_TREE``"
-msgstr "``_enter_tree()`` : NOTIFICATION_ENTER_TREE"
+msgstr "``_enter_tree()``: ``NOTIFICATION_ENTER_TREE``"
 
-#, fuzzy
 msgid "``_exit_tree()``: ``NOTIFICATION_EXIT_TREE``"
-msgstr "``_exit_tree()`` : NOTIFICATION_EXIT_TREE"
+msgstr "``_exit_tree()`` : ДЕРЕВО_ВИХОДУ_ПОВІДОМЛЕННЯ"
 
-#, fuzzy
 msgid "``_process(delta)``: ``NOTIFICATION_PROCESS``"
-msgstr "``_process(delta)`` : NOTIFICATION_PROCESS"
+msgstr "``_process(delta)`` : ПРОЦЕС_ПОВІДОМЛЕННЯ"
 
-#, fuzzy
 msgid "``_physics_process(delta)``: ``NOTIFICATION_PHYSICS_PROCESS``"
-msgstr "``_physics_process(delta)`` : NOTIFICATION_PHYSICS_PROCESS"
+msgstr "``_physics_process(delta)``: ``ПОВІДОМЛЕННЯ_ФІЗИЧНОГО_ПРОЦЕСУ``"
 
-#, fuzzy
 msgid "``_draw()``: ``NOTIFICATION_DRAW``"
-msgstr "``_draw()`` : NOTIFICATION_DRAW"
+msgstr "``_draw()`` : ПОВІДОМЛЕННЯ"
 
-#, fuzzy
 msgid ""
 "What users might *not* realize is that notifications exist for types other "
 "than Node alone, for example:"
 msgstr ""
-"Користувачі можуть *не* усвідомлювати, що сповіщення крім Вузлів існують і "
-"для інших типів:"
+"Користувачі можуть *не* розуміти, що сповіщення існують і для інших типів, "
+"окрім, наприклад, Node:"
 
 msgid ""
 ":ref:`Object::NOTIFICATION_POSTINITIALIZE "
@@ -85,7 +77,6 @@ msgstr ""
 "<class_Object_constant_NOTIFICATION_POSTINITIALIZE>`: зворотний виклик, який "
 "спрацьовує під час ініціалізації об’єкта. Не доступний для скриптів."
 
-#, fuzzy
 msgid ""
 ":ref:`Object::NOTIFICATION_PREDELETE "
 "<class_Object_constant_NOTIFICATION_PREDELETE>`: a callback that triggers "
@@ -93,7 +84,7 @@ msgid ""
 msgstr ""
 ":ref:`Object::NOTIFICATION_PREDELETE "
 "<class_Object_constant_NOTIFICATION_PREDELETE>`: зворотний виклик, який "
-"спрацьовує до того, як движок видалить Об’єкт, тобто 'деструктор'."
+"спрацьовує перед тим, як рушій видалить об'єкт, тобто \"деструктор\"."
 
 msgid ""
 "And many of the callbacks that *do* exist in Nodes don't have any dedicated "
@@ -121,13 +112,12 @@ msgstr ""
 "запускається в будь-який час, коли один видаляє дочірній вузол з іншого "
 "вузла."
 
-#, fuzzy
 msgid ""
 "One can access all these custom notifications from the universal "
 "``_notification()`` method."
 msgstr ""
-"Доступ до всіх цих спеціальних сповіщень можна отримати за допомогою "
-"універсального метода ``_notification``."
+"Доступ до всіх цих кастомних сповіщень можна отримати за допомогою "
+"універсального методу ``_notification()``."
 
 msgid ""
 "Methods in the documentation labeled as \"virtual\" are also intended to be "
@@ -136,16 +126,15 @@ msgstr ""
 "Методи в документації, позначені як \"virtual\" *(віртуальні)*, також "
 "призначені для перевизначення у скриптах."
 
-#, fuzzy
 msgid ""
 "A classic example is the :ref:`_init <class_Object_private_method__init>` "
 "method in Object. While it has no ``NOTIFICATION_*`` equivalent, the engine "
 "still calls the method. Most languages (except C#) rely on it as a "
 "constructor."
 msgstr ""
-"Класичним прикладом є метод :ref:`_init <class_Object_method__init>` в "
-"Об'єкті. Хоча він не має еквівалента ``NOTIFICATION_*`` движок все одно "
-"викликає метод. Більшість мов (крім C#) покладаються на нього як на "
+"Класичним прикладом є метод :ref:`_init <class_Object_private_method__init>` "
+"в Object. Хоча він не має еквівалента ``NOTIFICATION_*``, рушій все одно "
+"викликає цей метод. Більшість мов (крім C#) використовують його як "
 "конструктор."
 
 msgid ""

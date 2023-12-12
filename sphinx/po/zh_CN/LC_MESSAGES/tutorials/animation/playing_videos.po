@@ -245,14 +245,13 @@ msgstr ""
 "github.com/godotengine/godot-demo-projects/tree/master/viewport/"
 "gui_in_3d>`__\\ 。"
 
-#, fuzzy
 msgid "Looping a video"
-msgstr "原型设计"
+msgstr "循环视频"
 
 msgid ""
 "For looping a video, the **Loop** property can be enabled. This will "
 "seamlessly restart the video when it reaches its end."
-msgstr ""
+msgstr "要循环视频，可以启用 **Loop** 属性。这样视频在抵达末尾时就会无缝重启。"
 
 msgid ""
 "Note that setting the project setting **Video Delay Compensation** to a non-"
@@ -402,7 +401,6 @@ msgstr ""
 "范围内。因为 1440p 和 4K 视频的像素密度更高，相较于低分辨率的视频，较低的质量"
 "预设看上去的效果是一样甚至更好的。"
 
-#, fuzzy
 msgid ""
 "The **audio quality** level (``-q:a``) must be between ``-1`` and ``10``. "
 "Quality ``6`` provides a good compromise between quality and file size. In "
@@ -451,9 +449,7 @@ msgstr ""
 "件分辨率是大于 720p 的，就能够显著降低文件大小："
 
 msgid "Chroma Key Videos"
-msgstr ""
-"不支持循环，但你可以将 VideoStreamPlayer 的 :ref:`finished "
-"<class_VideoStreamPlayer_signal_finished>` 信号连接到会再次播放视频的函数上。"
+msgstr "色键视频"
 
 msgid ""
 "Chroma key, commonly known as the \"green screen\" or \"blue screen\" "
@@ -461,13 +457,15 @@ msgid ""
 "replace it with another background. This effect is widely used in video "
 "production to composite different elements together seamlessly."
 msgstr ""
+"色键（Chroma Key）也就是常说的“绿幕”“蓝幕”效果，能够移除图像或视频中的特定颜"
+"色，替换为其他背景。这种效果在视频制作领域广泛使用，可以将不同的元素无缝合成"
+"到一起。"
 
 msgid ""
 "We will achieve the chroma key effect by writing a custom shader in GDScript "
 "and using a `VideoStreamPlayer` node to display the video content."
 msgstr ""
 
-#, fuzzy
 msgid "Scene Setup"
 msgstr "场景设置"
 
@@ -477,9 +475,8 @@ msgid ""
 "effect."
 msgstr ""
 
-#, fuzzy
 msgid "Writing the Custom Shader"
-msgstr "改进着色器"
+msgstr "编写自定义着色器"
 
 msgid "To implement the chroma key effect, follow these steps:"
 msgstr ""
@@ -509,9 +506,8 @@ msgid ""
 "and users can customize it according to their specific requirements."
 msgstr ""
 
-#, fuzzy
 msgid "UI Controls"
-msgstr "Control"
+msgstr "UI 控件"
 
 msgid ""
 "To allow users to manipulate the chroma key effect in real-time, we created "
@@ -524,9 +520,8 @@ msgid ""
 "are :"
 msgstr ""
 
-#, fuzzy
 msgid "Signal Handling"
-msgstr "输入处理"
+msgstr "信号处理"
 
 msgid ""
 "Connect the appropriate signal from the UI elements to the `Control` node's "

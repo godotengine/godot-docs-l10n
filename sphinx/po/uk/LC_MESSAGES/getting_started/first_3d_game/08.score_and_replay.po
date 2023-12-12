@@ -45,9 +45,8 @@ msgstr ""
 "*Main* та назвіть його *UserInterface*. Ви автоматично потрапите на 2D-"
 "екран, де зможете редагувати свій інтерфейс користувача (UI)."
 
-#, fuzzy
 msgid "Add a :ref:`Label <class_Label>` node and name it ``ScoreLabel``"
-msgstr ":ref:`Label <class_Label>` названа ``ScoreLabel`` (Мітка рахунку)."
+msgstr "Додайте вузол :ref:`Label <class_Label>` і назвіть його ``ScoreLabel``"
 
 msgid "|image1|"
 msgstr "|image1|"
@@ -75,14 +74,14 @@ msgstr ""
 "Крім того, текст за замовчуванням білий, як і фон нашої гри. Нам потрібно "
 "змінити його колір, щоб побачити під час виконання."
 
-#, fuzzy
 msgid ""
 "Scroll down to *Theme Overrides*, and expand *Colors* and enable *Font "
 "Color* in order to tint the text to black (which contrasts well with the "
 "white 3D scene)"
 msgstr ""
-"Прогорніть униз до розділу *Theme Overrides*, розгорніть *Colors* та "
-"клацніть чорне поле поруч із пунктом *Font Color*, щоб тонувати текст."
+"Прокрутіть вниз до *Перевизначення теми*, розгорніть *Кольори* та увімкніть "
+"*Колір шрифту*, щоб відтінити текст у чорний колір (який добре контрастує з "
+"білою 3D-сценою)"
 
 msgid "|image3|"
 msgstr "|image3|"
@@ -160,13 +159,12 @@ msgstr ""
 "інтерфейсів користувача, але це виходить за рамки цієї серії. Щоб дізнатися "
 "більше про створення та редагування тем гляньте на :ref:`doc_gui_skinning`."
 
-#, fuzzy
 msgid ""
 "This one expects a font file like the ones you have on your computer. Two "
 "common font file formats are TrueType Font (TTF) and OpenType Font (OTF)."
 msgstr ""
 "Тут має бути файл шрифту, подібний до тих, які є на вашому комп'ютері. "
-"DynamicFont підтримує наступні формати:"
+"DynamicFont підтримує наступні формати."
 
 #, fuzzy
 msgid ""
@@ -245,12 +243,11 @@ msgstr ""
 "Крім того, ви можете двічі клацнути файл ``Main.gd`` на панелі *Файлова "
 "система*."
 
-#, fuzzy
 msgid ""
 "At the bottom of the ``_on_mob_timer_timeout()`` function, add the following "
 "line:"
 msgstr ""
-"У нижній частині функції ``_on_MobTimer_timeout()`` додайте наступний рядок."
+"У нижній частині функції ``_on_MobTimer_timeout()`` додайте наступний рядок:"
 
 #, fuzzy
 msgid ""
@@ -508,13 +505,12 @@ msgstr ""
 "завантажував вузол, або сцену, на початку гри, за межами поточної сцени. Ви "
 "також можете використовувати його для створення глобально доступних об'єктів."
 
-#, fuzzy
 msgid ""
 "Create a new scene by going to the *Scene* menu and clicking *New Scene* or "
 "by using the *+* icon next to your currently opened scene."
 msgstr ""
-"Створіть нову сцену, перейшовши в меню *Сцена* та натиснувши кнопку *Нова "
-"сцена*."
+"Створіть нову сцену, перейшовши до меню *Сцена* і натиснувши *Нова сцена* "
+"або за допомогою піктограми *+* поруч з поточною відкритою сценою."
 
 msgid "|image15|"
 msgstr "|image15|"
@@ -522,13 +518,12 @@ msgstr "|image15|"
 msgid "image15"
 msgstr "image15"
 
-#, fuzzy
 msgid ""
 "Click the *Other Node* button to create an :ref:`AudioStreamPlayer "
 "<class_AudioStreamPlayer>` and rename it to ``MusicPlayer``."
 msgstr ""
-"Натисніть кнопку *Інший вузол*, щоб створити *AudioStreamPlayer* і "
-"перейменувати його на *MusicPlayer*."
+"Натисніть кнопку *Інший вузол*, щоб створити :ref:`AudioStreamPlayer "
+"<клас_AudioStreamPlayer>` і перейменувати його на ``MusicPlayer``."
 
 msgid "|image16|"
 msgstr "|image16|"
@@ -613,13 +608,12 @@ msgstr "|image20|"
 msgid "image20"
 msgstr "image20"
 
-#, fuzzy
 msgid ""
 "At the top are the autoloaded ``MusicPlayer`` and a *root* node, which is "
 "your game's viewport."
 msgstr ""
-"У верхній частині знаходяться автоматично завантажений *MusicPlayer* і "
-"кореневий вузол, який є вікном перегляду вашої гри."
+"У верхній частині знаходиться автозавантажуваний ``MusicPlayer`` і вузол "
+"*root*, який є вікном перегляду вашої гри."
 
 msgid ""
 "And that does it for this lesson. In the next part, we'll add an animation "
@@ -628,9 +622,8 @@ msgstr ""
 "І це все для цього уроку. У наступній частині ми додамо анімацію, щоб гра "
 "виглядала набагато приємніше."
 
-#, fuzzy
 msgid "Here is the complete ``main.gd`` script for reference."
-msgstr "Ось повний скрипт ``Main.gd`` для довідки."
+msgstr "Ось повний скрипт ``main.gd`` для довідки."
 
 msgid "Translation status"
 msgstr "Стан перекладу"

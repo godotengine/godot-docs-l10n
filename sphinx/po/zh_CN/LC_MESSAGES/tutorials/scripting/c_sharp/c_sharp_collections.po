@@ -29,7 +29,7 @@ msgstr ""
 "型，它们与引擎的其他部分紧密集成。"
 
 msgid "Choose a collection"
-msgstr "选择一种合集"
+msgstr "选择一种集合"
 
 msgid ""
 "The main difference between the `.NET collections <https://learn.microsoft."
@@ -114,38 +114,46 @@ msgid ""
 "microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-"
 "class>`_."
 msgstr ""
+"如果不是，请考虑 ` 选择一个合适的 .NET 集合 <https://learn.microsoft.com/zh-"
+"cn/dotnet/standard/collections/selecting-a-collection-class>`_ 。"
 
 msgid ""
 "Do you need a Godot collection that represents a list or sequential set of "
 "data?"
-msgstr ""
+msgstr "你是否需要一个 Godot 集合，用来表示一个列表或顺序的数据集？"
 
 msgid ""
 "Godot :ref:`arrays <doc_c_sharp_collections_array>` are similar to the C# "
 "collection ``List<T>``."
 msgstr ""
+"Godot :ref:`数组 <doc_c_sharp_collections_array>` 与 C# 集合 ``List<T>`` 类"
+"似。"
 
 msgid ""
 "Godot :ref:`packed arrays <doc_c_sharp_collections_packedarray>` are more "
 "memory-efficient arrays, in C# use one of the supported ``System.Array`` "
 "types."
 msgstr ""
+"Godot :ref:`紧缩数组 <doc_c_sharp_collections_packedarray>` 是更高效的内存数"
+"组，在 C# 中使用一个支持 ``System.Array`` 的类型。"
 
 msgid ""
 "Do you need a Godot collection that maps a set of keys to a set of values?"
-msgstr ""
+msgstr "你需一个 Godot 集合将一组键映射到一组值吗？"
 
 msgid ""
 "Godot :ref:`dictionaries <doc_c_sharp_collections_dictionary>` store pairs "
 "of keys and values and allow easy access to the values by their associated "
 "key."
 msgstr ""
+"Godot :ref:`字典 <doc_c_sharp_collections_dictionary>` 存储键值对，并通过其关"
+"联的键轻松访问值。"
 
 msgid "Godot collections"
-msgstr "Godot 合集"
+msgstr "Godot 集合"
 
 msgid "PackedArray"
-msgstr "PackedArray"
+msgstr "紧缩数组"
 
 msgid ""
 "Godot packed arrays are implemented as an array of a specific type, allowing "
@@ -223,6 +231,8 @@ msgid ""
 "equivalent does not exist. See :ref:`Variant <doc_c_sharp_variant>` for a "
 "list of all the compatible types."
 msgstr ""
+"其他 C# 数组在 Godot C# API 中不受支持，因为没有等效的紧缩数组。请查看 :ref:"
+"`Variant <doc_c_sharp_variant>` 以获取所有兼容类型的列表。"
 
 msgid "Array"
 msgstr "数组"
@@ -232,30 +242,34 @@ msgid ""
 "several elements of any type. In C#, the equivalent type is ``Godot."
 "Collections.Array``."
 msgstr ""
+"Godot 数组被实现为一个包含多个任意类型元素的 ``Variant`` 数组。在 C# 中，对应"
+"的类型是 ``Godot.Collections.Array`` 。"
 
 msgid ""
 "The generic ``Godot.Collections.Array<T>`` type allows restricting the "
 "element type to a :ref:`Variant-compatible <doc_c_sharp_variant>` type."
 msgstr ""
+"泛型 ``Godot.Collections.Array<T>`` 类型允许将元素类型限制为 :ref:`Variant 兼"
+"容 <doc_c_sharp_variant>` 类型。"
 
-#, fuzzy
 msgid ""
 "An untyped ``Godot.Collections.Array`` can be converted to a typed array "
 "using the ``Godot.Collections.Array<T>(Godot.Collections.Array)`` "
 "constructor."
 msgstr ""
-"``Godot.Collections.Array<T>`` 是 ``Godot.Collections.Array`` 的类型安全包装"
-"器. 可使用 ``Godot.Collections.Array<T>(Godot.Collections.Array)`` 构造器创建"
-"一个."
+"一个未指定类型的 ``Godot.Collections.Array`` 可以使用 ``Godot.Collections."
+"Array<T>(Godot.Collections.Array)`` 构造函数转换为一个指定类型的数组。"
 
 msgid ""
 "Despite the name, Godot arrays are more similar to the C# collection "
 "``List<T>`` than ``System.Array``. Their size is not fixed and can grow or "
 "shrink as elements are added/removed from the collection."
 msgstr ""
+"尽管名字如此，Godot 数组与 C# 集合 ``List<T>`` 更相似，而不是 ``System."
+"Array`` 。它们的大小不固定，随着集合中添加/删除元素而增长或缩小。"
 
 msgid "List of Godot's Array methods and their equivalent in C#:"
-msgstr ""
+msgstr "Godot Array 方法列表及其在 C# 中的对应："
 
 msgid "all"
 msgstr "all"
@@ -310,7 +324,7 @@ msgid "N/A"
 msgstr "N/A"
 
 msgid "clear"
-msgstr "clear（明显）"
+msgstr "clear"
 
 msgid "Clear"
 msgstr "Clear"
@@ -325,7 +339,7 @@ msgid "duplicate"
 msgstr "duplicate"
 
 msgid "Duplicate"
-msgstr "创建副本"
+msgstr "Duplicate"
 
 msgid "erase"
 msgstr "erase"
@@ -392,7 +406,7 @@ msgid "is_empty"
 msgstr "is_empty"
 
 msgid "Use ``Count == 0``"
-msgstr ""
+msgstr "使用 ``Count == 0``"
 
 msgid "is_read_only"
 msgstr "is_read_only"
@@ -434,25 +448,25 @@ msgid "pick_random"
 msgstr "pick_random"
 
 msgid "PickRandom (Consider using `System.Random`_)"
-msgstr ""
+msgstr "PickRandom（请考虑用 `System.Random`_ ）"
 
 msgid "pop_at"
 msgstr "pop_at"
 
 msgid "``Array[i]`` with ``RemoveAt(i)``"
-msgstr ""
+msgstr "``Array[i]`` 用 ``RemoveAt(i)``"
 
 msgid "pop_back"
 msgstr "pop_back"
 
 msgid "``Array[^1]`` with ``RemoveAt(Count - 1)``"
-msgstr ""
+msgstr "``Array[^1]`` 用 ``RemoveAt(Count - 1)``"
 
 msgid "pop_front"
 msgstr "pop_front"
 
 msgid "``Array[0]`` with ``RemoveAt(0)``"
-msgstr ""
+msgstr "``Array[0]`` 用 ``RemoveAt(0)``"
 
 msgid "push_back"
 msgstr "push_back"
@@ -526,41 +540,38 @@ msgstr "sort_custom"
 msgid "`System.Linq.Enumerable.OrderBy`_"
 msgstr "`System.Linq.Enumerable.OrderBy`_"
 
-#, fuzzy
 msgid "operator !="
-msgstr "操作符"
+msgstr "操作符 !="
 
 msgid "!RecursiveEqual"
 msgstr "!RecursiveEqual"
 
-#, fuzzy
 msgid "operator +"
-msgstr "操作符"
+msgstr "操作符 +"
 
-#, fuzzy
 msgid "operator <"
-msgstr "操作符"
+msgstr "操作符 <"
 
 msgid "operator <="
-msgstr "operator <="
+msgstr "操作符 <="
 
 msgid "operator =="
-msgstr "operator =="
+msgstr "操作符 =="
 
 msgid "RecursiveEqual"
 msgstr "RecursiveEqual"
 
 msgid "operator >"
-msgstr "operator >"
+msgstr "操作符 >"
 
 msgid "operator >="
-msgstr "operator >="
+msgstr "操作符 >="
 
 msgid "operator []"
-msgstr "operator []"
+msgstr "操作符 []"
 
 msgid "Array[int] indexer"
-msgstr "Array[int] indexer"
+msgstr "Array[int] 索引器"
 
 msgid "Dictionary"
 msgstr "字典"
@@ -569,22 +580,25 @@ msgid ""
 "Godot dictionaries are implemented as a dictionary with ``Variant`` keys and "
 "values. In C#, the equivalent type is ``Godot.Collections.Dictionary``."
 msgstr ""
+"Godot 字典是用 ``Variant`` 类型的键和值实现的。在 C# 中，对应的类型是 "
+"``Godot.Collections.Dictionary`` 。"
 
 msgid ""
 "The generic ``Godot.Collections.Dictionary<TKey, TValue>`` type allows "
 "restricting the key and value types to a :ref:`Variant-compatible "
 "<doc_c_sharp_variant>` type."
 msgstr ""
+"泛型 ``Godot.Collections.Dictionary<TKey, TValue>`` 类型允许将键和值的类型限"
+"制为 :ref:`Variant 兼容 <doc_c_sharp_variant>` 类型。"
 
-#, fuzzy
 msgid ""
 "An untyped ``Godot.Collections.Dictionary`` can be converted to a typed "
 "dictionary using the ``Godot.Collections.Dictionary<TKey, TValue>(Godot."
 "Collections.Dictionary)`` constructor."
 msgstr ""
-"``Godot.Collections.Dictionary<T>`` 是 ``Godot.Collections.Dictionary`` 的类"
-"型安全包装器. 可使用 ``Godot.Collections.Dictionary<T>(Godot.Collections."
-"Dictionary)`` 构造器创建一个."
+"一个无类型的 ``Godot.Collections.Dictionary`` 可以用 ``Godot.Collections."
+"Dictionary<TKey, TValue>(Godot.Collections.Dictionary)`` 构造函数转换为一个有"
+"类型的字典。"
 
 msgid ""
 "If you need a dictionary where the key is typed but not the value, use "
@@ -610,7 +624,7 @@ msgid "has_all"
 msgstr "has_all"
 
 msgid "keys"
-msgstr "键"
+msgstr "keys"
 
 msgid "Keys"
 msgstr "Keys"

@@ -48,7 +48,7 @@ msgid "Description"
 msgstr "Опис"
 
 msgid "**void**"
-msgstr "**void**"
+msgstr "**порожнеча**"
 
 msgid "Void datatype, useful only for functions that return nothing."
 msgstr ""
@@ -60,21 +60,21 @@ msgid "Boolean datatype, can only contain ``true`` or ``false``."
 msgstr ""
 
 msgid "**bvec2**"
-msgstr "**bvec2**"
+msgstr "**б-вектор2**"
 
 #, fuzzy
 msgid "Two-component vector of booleans."
 msgstr "Двокомпонентний вектор із булевих значень."
 
 msgid "**bvec3**"
-msgstr "**bvec3**"
+msgstr "**б-вектор3**"
 
 #, fuzzy
 msgid "Three-component vector of booleans."
 msgstr "Трикомпонентний вектор із булевих значень."
 
 msgid "**bvec4**"
-msgstr "**bvec4**"
+msgstr "**б-вектор4**"
 
 #, fuzzy
 msgid "Four-component vector of booleans."
@@ -87,48 +87,48 @@ msgid "Signed scalar integer."
 msgstr "Ціле число зі знаком."
 
 msgid "**ivec2**"
-msgstr "**ivec2**"
+msgstr "**ай-вектор2**"
 
 #, fuzzy
 msgid "Two-component vector of signed integers."
 msgstr "Двокомпонентний вектор із булевих значень."
 
 msgid "**ivec3**"
-msgstr "**ivec3**"
+msgstr "**ай-вектор3**"
 
 #, fuzzy
 msgid "Three-component vector of signed integers."
 msgstr "Трикомпонентний вектор із булевих значень."
 
 msgid "**ivec4**"
-msgstr "**ivec4**"
+msgstr "**ай-вектор4**"
 
 #, fuzzy
 msgid "Four-component vector of signed integers."
 msgstr "Чотирикомпонентний вектор із булевих значень."
 
 msgid "**uint**"
-msgstr "**uint**"
+msgstr "**юінт**"
 
 msgid "Unsigned scalar integer; can't contain negative numbers."
 msgstr ""
 
 msgid "**uvec2**"
-msgstr "**uvec2**"
+msgstr "**ю-вектор2**"
 
 #, fuzzy
 msgid "Two-component vector of unsigned integers."
 msgstr "Двокомпонентний вектор із булевих значень."
 
 msgid "**uvec3**"
-msgstr "**uvec3**"
+msgstr "**ю-вектор3**"
 
 #, fuzzy
 msgid "Three-component vector of unsigned integers."
 msgstr "Трикомпонентний вектор із булевих значень."
 
 msgid "**uvec4**"
-msgstr "**uvec4**"
+msgstr "**ю-вектор4**"
 
 #, fuzzy
 msgid "Four-component vector of unsigned integers."
@@ -141,58 +141,58 @@ msgid "Floating-point scalar."
 msgstr "Число з рухомою крапкою."
 
 msgid "**vec2**"
-msgstr "**vec2**"
+msgstr "**вектор2**"
 
 #, fuzzy
 msgid "Two-component vector of floating-point values."
 msgstr "Двокомпонентний вектор із булевих значень."
 
 msgid "**vec3**"
-msgstr "**vec3**"
+msgstr "**вектор3**"
 
 #, fuzzy
 msgid "Three-component vector of floating-point values."
 msgstr "Трикомпонентний вектор із булевих значень."
 
 msgid "**vec4**"
-msgstr "**vec4**"
+msgstr "**вектор4**"
 
 #, fuzzy
 msgid "Four-component vector of floating-point values."
 msgstr "Чотирикомпонентний вектор із булевих значень."
 
 msgid "**mat2**"
-msgstr "**mat2**"
+msgstr "**мат2**"
 
 msgid "2x2 matrix, in column major order."
 msgstr ""
 
 msgid "**mat3**"
-msgstr "**mat3**"
+msgstr "**мат3**"
 
 msgid "3x3 matrix, in column major order."
 msgstr ""
 
 msgid "**mat4**"
-msgstr "**mat4**"
+msgstr "**мат4**"
 
 msgid "4x4 matrix, in column major order."
 msgstr ""
 
 msgid "**sampler2D**"
-msgstr "**sampler2D**"
+msgstr "**семплер2D**"
 
 msgid "Sampler type for binding 2D textures, which are read as float."
 msgstr ""
 
 msgid "**isampler2D**"
-msgstr "**isampler2D**"
+msgstr "**ай-семплер2D**"
 
 msgid "Sampler type for binding 2D textures, which are read as signed integer."
 msgstr ""
 
 msgid "**usampler2D**"
-msgstr "**usampler2D**"
+msgstr "**ю-семплер2D**"
 
 msgid ""
 "Sampler type for binding 2D textures, which are read as unsigned integer."
@@ -245,7 +245,7 @@ msgid ""
 msgstr ""
 
 msgid "**samplerCube**"
-msgstr "**samplerCube**"
+msgstr "**семплерКуб**"
 
 msgid "Sampler type for binding Cubemaps, which are read as float."
 msgstr ""
@@ -803,9 +803,8 @@ msgstr "**vec4**"
 msgid "source_color"
 msgstr ""
 
-#, fuzzy
 msgid "Used as color."
-msgstr "Use as Albedo (Використати як колір поверхні)"
+msgstr "Використовується як колір."
 
 msgid "**int, float**"
 msgstr ""
@@ -816,9 +815,8 @@ msgstr ""
 msgid "Restricted to values in a range (with min/max/step)."
 msgstr ""
 
-#, fuzzy
 msgid "Used as albedo color."
-msgstr "Use as Albedo (Використати як колір поверхні)"
+msgstr "Використовується як колір альбедо."
 
 msgid "hint_normal"
 msgstr ""
@@ -1218,58 +1216,50 @@ msgstr ""
 msgid "vec_type **radians** (vec_type degrees)"
 msgstr ""
 
-#, fuzzy
 msgid "Convert degrees to radians."
-msgstr "Перетворити відступ на табуляції"
+msgstr "Перетворіть градуси в радіани."
 
 msgid "vec_type **degrees** (vec_type radians)"
 msgstr ""
 
-#, fuzzy
 msgid "Convert radians to degrees."
-msgstr "Перетворити відступ на пропуски"
+msgstr "Перетворіть радіани в градуси."
 
 msgid "vec_type **sin** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Sine."
-msgstr "Синус"
+msgstr "Синус."
 
 msgid "vec_type **cos** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Cosine."
-msgstr "Синусоїда"
+msgstr "Косинус."
 
 msgid "vec_type **tan** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Tangent."
-msgstr "Дотична"
+msgstr "По дотичній."
 
 msgid "vec_type **asin** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Arcsine."
-msgstr "Арккосинус"
+msgstr "Арксин."
 
 msgid "vec_type **acos** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Arccosine."
-msgstr "Арккосинус"
+msgstr "Аркозин."
 
 msgid "vec_type **atan** (vec_type y_over_x)"
 msgstr ""
 
-#, fuzzy
 msgid "Arctangent."
-msgstr "Обернений тангенс"
+msgstr "Арктангенс."
 
 msgid "vec_type **atan** (vec_type y, vec_type x)"
 msgstr ""
@@ -1277,44 +1267,38 @@ msgstr ""
 msgid "vec_type **sinh** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Hyperbolic sine."
-msgstr "Гіперболічний косинус"
+msgstr "Гіперболічний синус."
 
 msgid "vec_type **cosh** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Hyperbolic cosine."
-msgstr "Гіперболічний косинус"
+msgstr "Гіперболічний косинус."
 
 msgid "vec_type **tanh** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Hyperbolic tangent."
-msgstr "Гіперболічний тангенс"
+msgstr "Гіперболічний тангенс."
 
 msgid "vec_type **asinh** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Inverse hyperbolic sine."
-msgstr "Обернений гіперболічний косинус"
+msgstr "Обернений гіперболічний синус."
 
 msgid "vec_type **acosh** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Inverse hyperbolic cosine."
-msgstr "Обернений гіперболічний косинус"
+msgstr "Обернений гіперболічний косинус."
 
 msgid "vec_type **atanh** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Inverse hyperbolic tangent."
-msgstr "Гіперболічний арктангенс"
+msgstr "Обернена гіперболічна дотична."
 
 msgid "vec_type **pow** (vec_type x, vec_type y)"
 msgstr ""
@@ -1337,30 +1321,26 @@ msgstr ""
 msgid "vec_type **log** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Natural logarithm."
-msgstr "Десятковий логарифм"
+msgstr "Натуральний логарифм."
 
 msgid "vec_type **log2** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Base-2 logarithm."
-msgstr "Десятковий логарифм"
+msgstr "Логарифм з основою 2."
 
 msgid "vec_type **sqrt** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Square root."
-msgstr "Квадратний корінь"
+msgstr "Квадратний корінь."
 
 msgid "vec_type **inversesqrt** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Inverse square root."
-msgstr "Квадратний корінь"
+msgstr "Обернений квадратний корінь."
 
 msgid "vec_type **abs** (vec_type x)"
 msgstr ""
@@ -1402,9 +1382,8 @@ msgstr ""
 msgid "vec_type **trunc** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Truncation."
-msgstr "функція"
+msgstr "Усічення."
 
 msgid "vec_type **ceil** (vec_type x)"
 msgstr ""
@@ -1424,9 +1403,8 @@ msgstr ""
 msgid "vec_type **mod** (vec_type x, float y)"
 msgstr ""
 
-#, fuzzy
 msgid "Modulo (division remainder)."
-msgstr "Множення/Ділення/Залишок ділення"
+msgstr "По модулю (залишок від ділення)."
 
 msgid "vec_type **modf** (vec_type x, out vec_type i)"
 msgstr ""
@@ -1532,9 +1510,8 @@ msgstr ""
 msgid "float **length** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Vector length."
-msgstr "Довжина рядка"
+msgstr "Довжина вектора."
 
 msgid "float **distance** (vec_type a, vec_type b)"
 msgstr ""
@@ -1545,16 +1522,14 @@ msgstr ""
 msgid "float **dot** (vec_type a, vec_type b)"
 msgstr ""
 
-#, fuzzy
 msgid "Dot product."
-msgstr "Скалярний добуток"
+msgstr "Точковий продукт."
 
 msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr ""
 
-#, fuzzy
 msgid "Cross product."
-msgstr "Векторний добуток"
+msgstr "Перехресний продукт."
 
 msgid "vec_type **normalize** (vec_type x)"
 msgstr ""
@@ -1565,16 +1540,14 @@ msgstr ""
 msgid "vec3 **reflect** (vec3 I, vec3 N)"
 msgstr ""
 
-#, fuzzy
 msgid "Reflect."
-msgstr "Віддзеркалення"
+msgstr "Подумай."
 
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
 msgstr ""
 
-#, fuzzy
 msgid "Refract."
-msgstr "Заломлення"
+msgstr "Заломлення."
 
 msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 msgstr ""
@@ -1585,23 +1558,20 @@ msgstr ""
 msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 msgstr ""
 
-#, fuzzy
 msgid "Matrix component multiplication."
-msgstr "Множення на скаляр"
+msgstr "Множення компонент матриці."
 
 msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
 msgstr ""
 
-#, fuzzy
 msgid "Matrix outer product."
-msgstr "Скалярний добуток"
+msgstr "Зовнішній продукт матриці."
 
 msgid "mat_type **transpose** (mat_type m)"
 msgstr ""
 
-#, fuzzy
 msgid "Transpose matrix."
-msgstr "&Транспонувати матрицю"
+msgstr "Транспонуємо матрицю."
 
 msgid "float **determinant** (mat_type m)"
 msgstr ""
@@ -1612,9 +1582,8 @@ msgstr ""
 msgid "mat_type **inverse** (mat_type m)"
 msgstr ""
 
-#, fuzzy
 msgid "Inverse matrix."
-msgstr "&Транспонувати матрицю"
+msgstr "Обернена матриця."
 
 msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
 msgstr ""
@@ -1667,9 +1636,8 @@ msgstr ""
 msgid "bvec_type **not** (bvec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Invert boolean vector."
-msgstr "Invert Color (Інвертувати колір)"
+msgstr "Інвертувати булевий вектор."
 
 msgid "ivec2 **textureSize** (gsampler2D s, int lod)"
 msgstr ""

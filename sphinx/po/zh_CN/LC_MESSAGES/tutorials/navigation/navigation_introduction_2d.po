@@ -17,7 +17,6 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "2D navigation overview"
 msgstr "2D 导航概述"
 
@@ -128,9 +127,8 @@ msgid ""
 "radius value."
 msgstr "引用指定的避障代理，包含半径值，只会在避障中使用。"
 
-#, fuzzy
 msgid "NavObstacle RID"
-msgstr "导航地图 RID"
+msgstr "导航障碍物 RID"
 
 #, fuzzy
 msgid ""
@@ -157,11 +155,11 @@ msgstr ""
 msgid "The region can be enabled / disabled."
 msgstr "区块可以启用/禁用。"
 
-#, fuzzy
 msgid ""
 "The use in pathfinding can be further restricted through the "
 "``navigation_layers`` bitmask."
-msgstr "通过导航层位掩码，可以对其在寻路中的使用做进一步的限制。"
+msgstr ""
+"通过 ``navigation_layers`` 掩码，可以对其在寻路中的使用做进一步的限制。"
 
 #, fuzzy
 msgid ""
@@ -231,7 +229,6 @@ msgid ""
 "The NavigationRegion2D Node uses this resource to define its navigation area."
 msgstr "NavigationRegion2D 节点使用该资源定义其导航区域。"
 
-#, fuzzy
 msgid ""
 "The NavigationServer2D uses this resource to update the navigation mesh of "
 "individual regions."

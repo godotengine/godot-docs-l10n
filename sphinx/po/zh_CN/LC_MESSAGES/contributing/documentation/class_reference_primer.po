@@ -172,8 +172,9 @@ msgid ""
 "class name. For links to the same class, the class name is optional and can "
 "be omitted."
 msgstr ""
+"每从其他类里链接一个成员，你都要在成员名前面加上该类的类名。而链接类内成员"
+"时，类名可省略。"
 
-#, fuzzy
 msgid "Tag and Description"
 msgstr "描述"
 
@@ -192,102 +193,92 @@ msgstr "链接类"
 msgid "``Move the [Sprite2D].``"
 msgstr "``移动 [Sprite]。``"
 
-#, fuzzy
 msgid "Move the :ref:`class_Sprite2D`."
-msgstr "移动 :ref:`class_Sprite`\\ 。"
+msgstr "移动 :ref:`class_Sprite2D`\\ 。"
 
 msgid "``[annotation Class.name]``"
-msgstr ""
+msgstr "``[annotation Class.name]``"
 
 msgid "Link to annotation"
 msgstr "链接到注解"
 
 msgid "``See [annotation @GDScript.@export].``"
-msgstr ""
+msgstr "``见 [annotation @GDScript.@export].``"
 
 msgid "See :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`."
-msgstr ""
+msgstr "见 :ref:`@GDScript.@export <class_@GDScript_annotation_@export>`。"
 
-#, fuzzy
 msgid "``[constant Class.name]``"
-msgstr "[signal Class.signalname]"
+msgstr "``[constant Class.name]``"
 
 msgid "Link to constant"
 msgstr "链接到常量"
 
 msgid "``See [constant @GlobalScope.KEY_F1].``"
-msgstr ""
+msgstr "``见 [constant @GlobalScope.KEY_F1]。``"
 
 msgid "See :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`."
-msgstr ""
+msgstr "见 :ref:`@GlobalScope.KEY_F1 <class_@GlobalScope_constant_KEY_F1>`。"
 
-#, fuzzy
 msgid "``[enum Class.name]``"
-msgstr "[member Class.membername]"
+msgstr "``[enum Class.name]``"
 
 msgid "Link to enum"
 msgstr "链接到枚举"
 
 msgid "``See [enum Mesh.ArrayType].``"
-msgstr ""
+msgstr "``见 [enum Mesh.ArrayType]。``"
 
 msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
-msgstr ""
+msgstr "见 :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`。"
 
-#, fuzzy
 msgid "``[method Class.name]``"
-msgstr "[method Class.methodname]"
+msgstr "``[method Class.name]``"
 
 msgid "Link to method"
 msgstr "链接到方法"
 
 msgid "``Call [method Node3D.hide].``"
-msgstr "``调用 [method hide]。``"
+msgstr "``调用 [method Node3D.hide].``"
 
-#, fuzzy
 msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
-msgstr "调用 :ref:`hide <class_Spatial_method_hide>`\\ 。"
+msgstr "调用 :ref:`Node3D.hide() <class_Node3D_method_hide>`。"
 
-#, fuzzy
 msgid "``[member Class.name]``"
-msgstr "[member Class.membername]"
+msgstr "``[member Class.name]``"
 
 msgid "Link to member"
 msgstr "链接到成员"
 
 msgid "``Get [member Node2D.scale].``"
-msgstr "``获得 [member Node2D.scale].``"
+msgstr "``获取 [member Node2D.scale]。``"
 
-#, fuzzy
 msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
-msgstr "获取 :ref:`scale <class_Node2D_property_scale>`\\ 。"
+msgstr "获取 :ref:`Node2D.scale <class_Node2D_property_scale>`."
 
-#, fuzzy
 msgid "``[signal Class.name]``"
-msgstr "[signal Class.signalname]"
+msgstr "``[signal Class.name]``"
 
 msgid "Link to signal"
 msgstr "链接到信号"
 
 msgid "``Emit [signal Node.renamed].``"
-msgstr "``Emit [signal Node.renamed]。``"
+msgstr "``发送 [signal Node.renamed]。``"
 
-#, fuzzy
 msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
-msgstr "触发 :ref:`renamed <class_Node_signal_renamed>`\\ 。"
+msgstr "发送 :ref:`Node.renamed <class_Node_signal_renamed>`。"
 
-#, fuzzy
 msgid "``[theme_item Class.name]``"
-msgstr "[method Class.methodname]"
+msgstr "``[theme_item Class.name]``"
 
 msgid "Link to theme item"
 msgstr "链接到主题项"
 
 msgid "``See [theme_item Label.font].``"
-msgstr ""
+msgstr "``见 [theme_item Label.font]。``"
 
 msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
-msgstr ""
+msgstr "见 :ref:`Label.font <class_Label_theme_font_font>`。"
 
 msgid "Currently only :ref:`class_@GDScript` has annotations."
 msgstr "目前只有 :ref:`class_@GDScript` 有注解。"
@@ -295,37 +286,35 @@ msgstr "目前只有 :ref:`class_@GDScript` 有注解。"
 msgid "Formatting text"
 msgstr "格式化文本"
 
-#, fuzzy
 msgid "``[param name]``"
-msgstr "``name``"
+msgstr "``[param name]``"
 
 msgid "Formats a parameter name (as code)"
-msgstr ""
+msgstr "格式化参数名称（作为代码）"
 
 msgid "``Takes [param size] for the size.``"
-msgstr ""
+msgstr "``用 [param size] 来表示大小。``"
 
 msgid "Takes ``size`` for the size."
-msgstr ""
+msgstr "用 ``size`` 表示大小。"
 
 msgid "``[br]``"
 msgstr "``[br]``"
 
-#, fuzzy
 msgid "Line break"
-msgstr "break"
+msgstr "换行"
 
 msgid "``Line 1.[br]``"
-msgstr ""
+msgstr "``行 1。[br]``"
 
 msgid "``Line 2.``"
-msgstr ""
+msgstr "``行 2。``"
 
 msgid "Line 1."
-msgstr ""
+msgstr "行 1。"
 
 msgid "Line 2."
-msgstr ""
+msgstr "行 2。"
 
 msgid "``[b]`` ``[/b]``"
 msgstr "``[b]`` ``[/b]``"
@@ -406,11 +395,12 @@ msgid "C# codeblock tab in codeblocks"
 msgstr "代码块中的 C# 代码块选项卡"
 
 msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
-msgstr ""
+msgstr "从 ``[code]`` 开始禁用 BBCode ，直到文档解析器解析到 ``[/code]`` 。"
 
 msgid ""
 "``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
 msgstr ""
+"从 ``[codeblock]`` 开始禁用 BBCode ，直到文档解析器解析到 ``[/codeblock]`` 。"
 
 msgid ""
 "Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "

@@ -20,7 +20,6 @@ msgstr ""
 msgid "Listening to player input"
 msgstr "监听玩家的输入"
 
-#, fuzzy
 msgid ""
 "Building upon the previous lesson, :ref:`doc_scripting_first_script`, let's "
 "look at another important feature of any game: giving control to the player. "
@@ -166,7 +165,6 @@ msgstr ""
 msgid "Summary"
 msgstr "总结"
 
-#, fuzzy
 msgid ""
 "In summary, every script in Godot represents a class and extends one of the "
 "engine's built-in classes. The node types your classes inherit from give you "
@@ -175,8 +173,9 @@ msgid ""
 "example."
 msgstr ""
 "总之，Godot中的每个脚本都代表一个类，并扩展了引擎的一个内置类。在我们sprite的"
-"例子中，你的类所继承的节点类型可以让你访问一些属性，如 ``rotation`` 和 "
-"``position`` 。你还继承了许多函数，但我们在这个例子中没有使用这些函数。"
+"例子中，你的类所继承的节点类型可以让你访问一些属性，例如在“精灵” 例子中的 "
+"``rotation`` 和 ``position`` 。你还继承了许多函数，但我们在这个例子中没有使用"
+"这些函数。"
 
 msgid ""
 "In GDScript, the variables you put at the top of the file are your class's "
@@ -203,7 +202,6 @@ msgstr ""
 "``Input`` 单例允许你在代码中的任何位置对玩家的输入做出反应。 尤其是，你在 "
 "``_process()`` 循环中使用它。"
 
-#, fuzzy
 msgid ""
 "In the next lesson, :ref:`doc_signals`, we'll build upon the relationship "
 "between scripts and nodes by having our nodes trigger code in scripts."

@@ -32,14 +32,14 @@ msgstr ""
 "большинство типов данных и функций, а те что остались за бортом, скорее "
 "всего будет добавлены в будущем."
 
-#, fuzzy
 msgid ""
 "If you are already familiar with GLSL, the :ref:`Godot Shader Migration "
 "Guide<doc_converting_glsl_to_godot_shaders>` is a resource that will help "
 "you transition from regular GLSL to Godot's shading language."
 msgstr ""
-"Если вы уже знакомы с GLSL, :ref:`Руководство по переходу на шейдеры Godot "
-"<doc_migrating_to_godot_shader_language>` поможет вам перейти на них с GLSL."
+"Если вы уже знакомы с GLSL, то :ref:`Руководство по переходу на шейдеры "
+"Godot<doc_converting_glsl_to_godot_shaders>` - это ресурс, который поможет "
+"вам перейти с обычного GLSL на язык шейдеров Godot."
 
 msgid "Data types"
 msgstr "Типы данных"
@@ -66,8 +66,8 @@ msgstr "**bool**"
 
 msgid "Boolean datatype, can only contain ``true`` or ``false``."
 msgstr ""
-"Булевый (логический) тип данных, может содержать только \"true\" или "
-"\"false\"."
+"Булевый (логический) тип данных, может содержать только ``true`` или "
+"``false``."
 
 msgid "**bvec2**"
 msgstr "**bvеc2**"
@@ -103,13 +103,13 @@ msgid "**ivec3**"
 msgstr "**ivеc3**"
 
 msgid "Three-component vector of signed integers."
-msgstr "Трех-компонентный вектор из целых чисел."
+msgstr "Трёх-компонентный вектор из целых чисел."
 
 msgid "**ivec4**"
 msgstr "**iveс4**"
 
 msgid "Four-component vector of signed integers."
-msgstr "Четырех-компонентный вектор из целых чисел."
+msgstr "Четырёх-компонентный вектор из целых чисел."
 
 msgid "**uint**"
 msgstr "**uіnt**"
@@ -127,59 +127,55 @@ msgid "**uvec3**"
 msgstr "**uvеc3**"
 
 msgid "Three-component vector of unsigned integers."
-msgstr "Трех-компонентный вектор из беззнаковых целых чисел."
+msgstr "Трёх-компонентный вектор из беззнаковых целых чисел."
 
 msgid "**uvec4**"
 msgstr "**uvеc4**"
 
 msgid "Four-component vector of unsigned integers."
-msgstr "Четырех-компонентный вектор из беззнаковых целых чисел."
+msgstr "Четырёх-компонентный вектор из беззнаковых целых чисел."
 
 msgid "**float**"
 msgstr "**float**"
 
-#, fuzzy
 msgid "Floating-point scalar."
 msgstr "Число с плавающей точкой(дробное число)."
 
 msgid "**vec2**"
 msgstr "**vеc2**"
 
-#, fuzzy
 msgid "Two-component vector of floating-point values."
 msgstr "Двух-компонентный вектор из чисел с плавающей точкой."
 
 msgid "**vec3**"
 msgstr "**vеc3**"
 
-#, fuzzy
 msgid "Three-component vector of floating-point values."
-msgstr "Трех-компонентный вектор из чисел с плавающей точкой."
+msgstr "Трёх-компонентный вектор из чисел с плавающей точкой."
 
 msgid "**vec4**"
 msgstr "**vеc4**"
 
-#, fuzzy
 msgid "Four-component vector of floating-point values."
-msgstr "Четырех-компонентный вектор из чисел с плавающей точкой."
+msgstr "Четырёх-компонентный вектор из чисел с плавающей точкой."
 
 msgid "**mat2**"
 msgstr "**mаt2**"
 
 msgid "2x2 matrix, in column major order."
-msgstr "Матрица 2x2, с развёрсткой по столбцу."
+msgstr "Матрица 2x2, с развёрткой по столбцу."
 
 msgid "**mat3**"
 msgstr "**mаt3**"
 
 msgid "3x3 matrix, in column major order."
-msgstr "Матрица 3x3, с развёрсткой по столбцу."
+msgstr "Матрица 3x3, с развёрткой по столбцу."
 
 msgid "**mat4**"
 msgstr "**mаt4**"
 
 msgid "4x4 matrix, in column major order."
-msgstr "Матрица 4x4, с развёрсткой по столбцу."
+msgstr "Матрица 4x4, с развёрткой по столбцу."
 
 msgid "**sampler2D**"
 msgstr "**samplеr2D**"
@@ -205,31 +201,25 @@ msgstr ""
 "Тип сэмплера, для связки 2D текстур, которые читаются через целые "
 "беззнаковые числа."
 
-#, fuzzy
 msgid "**sampler2DArray**"
-msgstr "**Пример**"
+msgstr "**sampler2DArray**"
 
-#, fuzzy
 msgid "Sampler type for binding 2D texture arrays, which are read as float."
 msgstr ""
 "Тип сэмплера, для связки 2D текстур, которые читаются через числа с "
 "плавающей точкой."
 
-#, fuzzy
 msgid "**isampler2DArray**"
-msgstr "**Пример**"
+msgstr "**isampler2DArray**"
 
-#, fuzzy
 msgid ""
 "Sampler type for binding 2D texture arrays, which are read as signed integer."
 msgstr ""
 "Тип сэмплера, для связки 2D текстур, которые читаются через целые числа."
 
-#, fuzzy
 msgid "**usampler2DArray**"
-msgstr "**Пример**"
+msgstr "**usampler2DArray**"
 
-#, fuzzy
 msgid ""
 "Sampler type for binding 2D texture arrays, which are read as unsigned "
 "integer."
@@ -237,30 +227,24 @@ msgstr ""
 "Тип сэмплера, для связки 2D текстур, которые читаются через целые "
 "беззнаковые числа."
 
-#, fuzzy
 msgid "**sampler3D**"
-msgstr "**Пример**"
+msgstr "**sampler3D**"
 
-#, fuzzy
 msgid "Sampler type for binding 3D textures, which are read as float."
 msgstr ""
 "Тип сэмплера, для связки 2D текстур, которые читаются через числа с "
 "плавающей точкой."
 
-#, fuzzy
 msgid "**isampler3D**"
-msgstr "**Пример**"
+msgstr "**isampler3D**"
 
-#, fuzzy
 msgid "Sampler type for binding 3D textures, which are read as signed integer."
 msgstr ""
 "Тип сэмплера, для связки 2D текстур, которые читаются через целые числа."
 
-#, fuzzy
 msgid "**usampler3D**"
-msgstr "**Пример**"
+msgstr "**usampler3D**"
 
-#, fuzzy
 msgid ""
 "Sampler type for binding 3D textures, which are read as unsigned integer."
 msgstr ""
@@ -270,17 +254,14 @@ msgstr ""
 msgid "**samplerCube**"
 msgstr "**samplerCubе**"
 
-#, fuzzy
 msgid "Sampler type for binding Cubemaps, which are read as float."
 msgstr ""
 "Тип сэмплера, для связки кубических текстур, которые читаются через числа с "
 "плавающей точкой."
 
-#, fuzzy
 msgid "**samplerCubeArray**"
-msgstr "**samplerCubе**"
+msgstr "**samplerCubeArray**"
 
-#, fuzzy
 msgid "Sampler type for binding Cubemap arrays, which are read as float."
 msgstr ""
 "Тип сэмплера, для связки кубических текстур, которые читаются через числа с "
@@ -307,8 +288,8 @@ msgid ""
 "Default integer constants are signed, so casting is always needed to convert "
 "to unsigned:"
 msgstr ""
-"Числовые константы это целые числа по умолчанию, так что приведение всегда "
-"необходимо при конвертации в без-знаковое целое:"
+"Числовые константы - это целые числа по умолчанию, так что приведение всегда "
+"необходимо при конвертации в беззнаковое целое:"
 
 msgid "Members"
 msgstr "Доступ к компонентам"
@@ -323,7 +304,6 @@ msgstr ""
 "эквивалентные им \"r\", \"g\", \"b\" и \"a\". Используйте то, что вы "
 "считаете лучшим для ваших задач."
 
-#, fuzzy
 msgid ""
 "For matrices, use the ``m[column][row]`` indexing syntax to access each "
 "scalar, or ``m[idx]`` to access a vector by row index. For example, for "
@@ -331,7 +311,7 @@ msgid ""
 msgstr ""
 "Для матриц, используйте синтаксис ``m[ряд][колонка]`` для доступа к "
 "отдельному скаляру, или ``m[индекс]`` для доступа к целому вектору по "
-"индексу ряда. Например, для доступа к позиции объекта по оси y в mat4 "
+"индексу ряда. Например, для доступа к позиции объекта по оси ``y`` в mat4 "
 "используйте ``m[3][1]``."
 
 msgid "Constructing"
@@ -353,19 +333,19 @@ msgid ""
 "Matrices can also be built from a matrix of another dimension. There are two "
 "rules:"
 msgstr ""
+"Матрицы также могут быть построены из матрицы другой размерности. Существует "
+"два правила:"
 
-#, fuzzy
 msgid ""
 "1. If a larger matrix is constructed from a smaller matrix, the additional "
 "rows and columns are set to the values they would have in an identity "
 "matrix. 2. If a smaller matrix is constructed from a larger matrix, the top, "
 "left submatrix of the larger matrix is used."
 msgstr ""
-"Матрица может также быть построена из матрицы другой размерности. Существует "
-"два правила: Если большая матрица была построена из меньшей матрицы, её "
-"дополнительные ряды и колонки будут заполнены значениями из единичной "
-"матрицы. Если меньшая матрица была построена из большей матрицы - будет "
-"использована лишь верхняя, левая часть большей матрицы."
+"1. Если из меньшей матрицы строится большая матрица, то дополнительные "
+"строки и столбцы принимают значения, которые они имели бы в матрице "
+"тождеств. 2. Если меньшая матрица строится из большей матрицы, используется "
+"верхняя, левая подматрица большей матрицы."
 
 msgid "Swizzling"
 msgstr "Перестановка"
@@ -397,8 +377,8 @@ msgid ""
 msgstr ""
 "Использование более низкой точности для некоторых операций может ускорить "
 "вычисление (за счет меньшей точности). Это редко требуется в функции "
-"процессора вершин (где большую часть времени требуется полная точность), но "
-"часто полезно в процессоре фрагментов."
+"вершинного процессора (где большую часть времени требуется полная точность), "
+"но часто полезно во фрагментном процессоре."
 
 msgid ""
 "Some architectures (mainly mobile) can benefit significantly from this, but "
@@ -408,39 +388,53 @@ msgid ""
 "unexpected behavior and it is best to avoid specifying precision unless "
 "necessary."
 msgstr ""
+"Некоторые архитектуры (в основном мобильные) могут значительно выиграть от "
+"этого, но есть и минусы, например, дополнительные накладные расходы на "
+"преобразование между точными значениями. За дополнительной информацией "
+"обратитесь к документации по целевой архитектуре. Во многих случаях "
+"мобильные драйверы вызывают непоследовательное или неожиданное поведение, "
+"поэтому лучше не указывать точность, если это не требуется."
 
 msgid "Arrays"
 msgstr "Массивы"
 
 msgid "Arrays are containers for multiple variables of a similar type."
-msgstr ""
+msgstr "Массивы - это контейнеры для нескольких переменных одного типа."
 
-#, fuzzy
 msgid "Local arrays"
-msgstr "Локальные Переменные"
+msgstr "Локальные массивы"
 
 msgid ""
 "Local arrays are declared in functions. They can use all of the allowed "
 "datatypes, except samplers. The array declaration follows a C-style syntax: "
 "``[const] + [precision] + typename + identifier + [array size]``."
 msgstr ""
+"Локальные массивы объявляются в функциях. Они могут использовать все "
+"разрешённые типы данных, кроме сэмплеров. Объявление массива следует "
+"синтаксису в стиле C: ``[константа] + [точность] + имя_типа + идентификатор "
+"+ [размер массива]``."
 
 msgid "They can be initialized at the beginning like:"
-msgstr ""
+msgstr "Они могут быть инициализированы в начале, например:"
 
 msgid ""
 "You can declare multiple arrays (even with different sizes) in one "
 "expression:"
 msgstr ""
+"В одном выражении можно объявить несколько массивов (даже разного размера):"
 
 msgid "To access an array element, use the indexing syntax:"
 msgstr ""
+"Чтобы получить доступ к элементу массива, используйте синтаксис индексации:"
 
 msgid ""
 "Arrays also have a built-in function ``.length()`` (not to be confused with "
 "the built-in ``length()`` function). It doesn't accept any parameters and "
 "will return the array's size."
 msgstr ""
+"Массивы также имеют встроенную функцию ``.length()`` (не путать со "
+"встроенной функцией ``length()``). Она не принимает никаких параметров и "
+"возвращает размер массива."
 
 msgid ""
 "If you use an index either below 0 or greater than array size - the shader "
@@ -450,18 +444,25 @@ msgid ""
 "expression or a number, the editor will check its bounds to prevent this "
 "crash."
 msgstr ""
+"Если вы используете индекс меньше 0 или больше размера массива, шейдер будет "
+"аварийно завершен и прервёт рендеринг. Чтобы предотвратить это, используйте "
+"функции ``length()``, ``if`` или ``clamp()``, чтобы убедиться, что индекс "
+"находится между 0 и длиной массива. Всегда тщательно тестируйте и проверяйте "
+"свой код. Если вы передадите константное выражение или число, редактор "
+"проверит его границы, чтобы предотвратить этот сбой."
 
-#, fuzzy
 msgid "Global arrays"
-msgstr "Локальные Переменные"
+msgstr "Глобальные массивы"
 
 msgid "You can declare arrays at global space like:"
-msgstr ""
+msgstr "Вы можете объявлять массивы в глобальном пространстве, например:"
 
 msgid ""
 "Global arrays have to be declared as global constants, otherwise they can be "
 "declared the same as local arrays."
 msgstr ""
+"Глобальные массивы должны быть объявлены как глобальные константы, в "
+"противном случае они могут быть объявлены так же, как и локальные массивы."
 
 msgid "Constants"
 msgstr "Константы"
@@ -473,15 +474,25 @@ msgid ""
 "value is slightly faster than using a uniform. Constants must be initialized "
 "at their declaration."
 msgstr ""
+"Используйте ключевое слово ``const`` перед объявлением переменной, чтобы "
+"сделать ее неизменяемой, что означает, что она не может быть изменена. Все "
+"базовые типы, кроме сэмплеров, могут быть объявлены как константы. Доступ и "
+"использование константного значения происходит немного быстрее, чем "
+"использование uniform-переменных. Константы должны быть инициализированы при "
+"их объявлении."
 
 msgid ""
 "Constants cannot be modified and additionally cannot have hints, but "
 "multiple of them (if they have the same type) can be declared in a single "
 "expression e.g"
 msgstr ""
+"Константы не могут быть изменены и, кроме того, не могут иметь подсказок, но "
+"несколько из них (если они имеют один и тот же тип) могут быть объявлены в "
+"одном выражении, например"
 
 msgid "Similar to variables, arrays can also be declared with ``const``."
 msgstr ""
+"Как и переменные, массивы также могут быть объявлены с помощью ``const``."
 
 msgid ""
 "Constants can be declared both globally (outside of any function) or locally "
@@ -490,42 +501,56 @@ msgid ""
 "Like uniforms, global constants are shared between all shader stages, but "
 "they are not accessible outside of the shader."
 msgstr ""
+"Константы могут быть объявлены как глобально (вне функции), так и локально "
+"(внутри функции). Глобальные константы полезны, когда вы хотите иметь доступ "
+"к значению во всём шейдере, которое не нужно изменять. Как и uniform-"
+"переменные, глобальные константы используются совместно на всех этапах "
+"шейдера, но они недоступны за пределами шейдера."
 
 msgid ""
 "Constants of the ``float`` type must be initialized using ``.`` notation "
 "after the decimal part or by using the scientific notation. The optional "
 "``f`` post-suffix is also supported."
 msgstr ""
+"Константы типа ``float`` должны инициализироваться с помощью обозначения ``."
+"`` после десятичной части или с помощью научной нотации. Также "
+"поддерживается необязательный постсуффикс ``f``."
 
 msgid ""
 "Constants of the ``uint`` (unsigned int) type must have a ``u`` suffix to "
 "differentiate them from signed integers. Alternatively, this can be done by "
 "using the ``uint(x)`` built-in conversion function."
 msgstr ""
+"Константы типа ``uint`` (целое беззнаковое) должны иметь суффикс ``u``, "
+"чтобы отличать их от знаковых целых чисел. Альтернативно это можно сделать с "
+"помощью встроенной функции преобразования ``uint(x)``."
 
-#, fuzzy
 msgid "Structs"
-msgstr "Конструкторы"
+msgstr "Структуры"
 
 msgid ""
 "Structs are compound types which can be used for better abstraction of "
 "shader code. You can declare them at the global scope like:"
 msgstr ""
+"Структуры - это составные типы, которые можно использовать для лучшей "
+"абстракции шейдерного кода. Вы можете объявить их в глобальной области "
+"видимости, например:"
 
 msgid "After declaration, you can instantiate and initialize them like:"
-msgstr ""
+msgstr "После объявления их можно инстанцировать и инициализировать, например:"
 
 msgid "Or use struct constructor for same purpose:"
-msgstr ""
+msgstr "Или используйте конструктор struct для той же цели:"
 
 msgid ""
 "Structs may contain other struct or array, you can also instance them as "
 "global constant:"
 msgstr ""
+"Структуры могут содержать другие структуры или массивы, вы также можете "
+"использовать их в качестве глобальных констант:"
 
-#, fuzzy
 msgid "You can also pass them to functions:"
-msgstr "Вы можете достичь того же результата в коде:"
+msgstr "Вы также можете передавать их в функции:"
 
 msgid "Operators"
 msgstr "Операторы"
@@ -534,6 +559,8 @@ msgid ""
 "Godot shading language supports the same set of operators as GLSL ES 3.0. "
 "Below is the list of them in precedence order:"
 msgstr ""
+"Язык шейдеров Godot поддерживает тот же набор операторов, что и GLSL ES 3.0. "
+"Ниже приведён их список в порядке старшинства:"
 
 msgid "Precedence"
 msgstr "Приоритет"
@@ -545,10 +572,10 @@ msgid "Operator"
 msgstr "Оператор"
 
 msgid "1 (highest)"
-msgstr ""
+msgstr "1 (высший)"
 
 msgid "parenthetical grouping"
-msgstr ""
+msgstr "группировка скобок"
 
 msgid "**()**"
 msgstr "**()**"
@@ -584,7 +611,7 @@ msgid "5"
 msgstr "5"
 
 msgid "bit-wise shift"
-msgstr ""
+msgstr "побитовый сдвиг"
 
 msgid "**<<, >>**"
 msgstr ""
@@ -610,9 +637,8 @@ msgstr ""
 msgid "8"
 msgstr "8"
 
-#, fuzzy
 msgid "bit-wise AND"
-msgstr "Побитовое И"
+msgstr "побитовое И (AND)"
 
 msgid "**&**"
 msgstr "**&**"
@@ -621,7 +647,7 @@ msgid "9"
 msgstr "9"
 
 msgid "bit-wise exclusive OR"
-msgstr ""
+msgstr "побитовое исключающее ИЛИ"
 
 msgid "**^**"
 msgstr "**^**"
@@ -630,7 +656,7 @@ msgid "10"
 msgstr "10"
 
 msgid "bit-wise inclusive OR"
-msgstr ""
+msgstr "побитовое включающее ИЛИ"
 
 msgid "**|**"
 msgstr "**|**"
@@ -639,56 +665,72 @@ msgid "11"
 msgstr "11"
 
 msgid "logical AND"
-msgstr ""
+msgstr "логическое И"
 
 msgid "**&&**"
 msgstr "**&&**"
 
 msgid "12 (lowest)"
-msgstr ""
+msgstr "12 (низший)"
 
 msgid "logical inclusive OR"
-msgstr ""
+msgstr "логическое включающее ИЛИ"
 
 msgid "**||**"
 msgstr "**||**"
 
 msgid "Flow control"
-msgstr ""
+msgstr "Контроль над потоком"
 
 msgid "Godot Shading language supports the most common types of flow control:"
 msgstr ""
+"Шейдерный язык Godot поддерживает наиболее распространённые типы управления "
+"потоком:"
 
 msgid ""
 "Keep in mind that in modern GPUs, an infinite loop can exist and can freeze "
 "your application (including editor). Godot can't protect you from this, so "
 "be careful not to make this mistake!"
 msgstr ""
+"Помните, что в современных GPU может существовать бесконечный цикл, который "
+"может заморозить ваше приложение (включая редактор). Godot не может защитить "
+"вас от этого, поэтому будьте осторожны и не допускайте такой ошибки!"
 
 msgid ""
 "Also, when comparing floating-point values against a number, make sure to "
 "compare them against a *range* instead of an exact number."
 msgstr ""
+"Кроме того, сравнивая значения с плавающей точкой с числом, убедитесь, что "
+"они сравниваются с *диапазоном*, а не с точным числом."
 
 msgid ""
 "A comparison like ``if (value == 0.3)`` may not evaluate to ``true``. "
 "Floating-point math is often approximate and can defy expectations. It can "
 "also behave differently depending on the hardware."
 msgstr ""
+"Сравнение типа ``if (value == 0.3)`` может не привести к значению ``true``. "
+"Математика с плавающей точкой часто является приблизительной и может не "
+"соответствовать ожиданиям. Кроме того, она может вести себя по-разному в "
+"зависимости от аппаратного обеспечения."
 
 msgid "**Don't** do this."
-msgstr ""
+msgstr "**Не делайте** этого."
 
 msgid ""
 "Instead, always perform a range comparison with an epsilon value. The larger "
 "the floating-point number (and the less precise the floating-point number), "
 "the larger the epsilon value should be."
 msgstr ""
+"Вместо этого всегда выполняйте сравнение диапазонов со значением эпсилон. "
+"Чем больше число с плавающей точкой (и чем менее точное число с плавающей "
+"точкой), тем больше должно быть значение эпсилон."
 
 msgid ""
 "See `floating-point-gui.de <https://floating-point-gui.de/>`__ for more "
 "information."
 msgstr ""
+"Дополнительную информацию см. в разделе `floating-point-gui.de <https://"
+"floating-point-gui.de/>`__."
 
 msgid "Discarding"
 msgstr "Отбрасывание"
@@ -697,6 +739,9 @@ msgid ""
 "Fragment and light functions can use the ``discard`` keyword. If used, the "
 "fragment is discarded and nothing is written."
 msgstr ""
+"Функции **Fragment** и **Light** могут использовать ключевое слово "
+"``discard``. Если оно используется, фрагмент отбрасывается и ничего не "
+"записывается."
 
 msgid ""
 "Beware that ``discard`` has a performance cost when used, as it will prevent "
@@ -706,6 +751,13 @@ msgid ""
 "more expensive to render compared to not rendering any object in the first "
 "place."
 msgstr ""
+"Имейте в виду, что использование ``discard`` приводит к снижению "
+"производительности, так как не позволяет препассу глубины быть эффективным "
+"на любых поверхностях, использующих этот шейдер. Кроме того, отброшенный "
+"пиксель всё равно должен быть отрисован в вершинном шейдере, что означает, "
+"что шейдер, использующий ``discard`` для всех своих пикселей, все равно "
+"будет более дорогим для рендеринга по сравнению с отсутствием рендеринга "
+"каких-либо объектов."
 
 msgid "Functions"
 msgstr "Функции"
@@ -714,6 +766,7 @@ msgid ""
 "It is possible to define functions in a Godot shader. They use the following "
 "syntax:"
 msgstr ""
+"В шейдере Godot можно определять функции. Они используют следующий синтаксис:"
 
 msgid ""
 "You can only use functions that have been defined above (higher in the "
@@ -721,26 +774,33 @@ msgid ""
 "that has already been defined above (or is a built-in function name) will "
 "cause an error."
 msgstr ""
+"Вы можете использовать только те функции, которые были определены выше (выше "
+"в редакторе) той функции, из которой вы их вызываете. Переопределение "
+"функции, которая уже была определена выше (или является именем встроенной "
+"функции), приведет к ошибке."
 
 msgid "Function arguments can have special qualifiers:"
-msgstr ""
+msgstr "Аргументы функции могут иметь специальные идентификаторы:"
 
 msgid "**in**: Means the argument is only for reading (default)."
 msgstr ""
+"**in**: Означает, что аргумент предназначен только для чтения (по умолчанию)."
 
 msgid "**out**: Means the argument is only for writing."
-msgstr ""
+msgstr "**out**: Означает, что аргумент предназначен только для записи."
 
 msgid "**inout**: Means the argument is fully passed via reference."
-msgstr ""
+msgstr "**inout**: Означает, что аргумент полностью передаётся по ссылке."
 
 msgid ""
 "**const**: Means the argument is a constant and cannot be changed, may be "
 "combined with **in** qualifier."
 msgstr ""
+"**const**: Означает, что аргумент является константой и не может быть "
+"изменён, может сочетаться с квалификатором **in**."
 
 msgid "Example below:"
-msgstr ""
+msgstr "Пример ниже:"
 
 msgid ""
 "Unlike GLSL, Godot's shader language does **not** support function "
@@ -749,6 +809,11 @@ msgid ""
 "different names for functions that accept a different number of arguments or "
 "arguments of different types."
 msgstr ""
+"В отличие от GLSL, шейдерный язык Godot **не** поддерживает перегрузку "
+"функций. Это означает, что функция не может быть определена несколько раз с "
+"разными типами аргументов или их количеством. В качестве обходного пути "
+"используйте разные имена для функций, которые принимают разное количество "
+"аргументов или аргументы разных типов."
 
 msgid "Varyings"
 msgstr "Varуings"
@@ -759,36 +824,49 @@ msgid ""
 "processor*, and the value is interpolated for every pixel in the *fragment "
 "processor*."
 msgstr ""
+"Для передачи данных от функций вершинного процессора к функции фрагментного "
+"процессора (или света) используются *varyings*. Они устанавливаются для "
+"каждой примитивной вершины в *вершинном процессоре*, и значение "
+"интерполируется для каждого пикселя во *фрагментном процессоре*."
 
 msgid "Varying can also be an array:"
-msgstr ""
+msgstr "Varying также может быть массивом:"
 
 msgid ""
 "It's also possible to send data from *fragment* to *light* processors using "
 "*varying* keyword. To do so you can assign it in the *fragment* and later "
 "use it in the *light* function."
 msgstr ""
+"Также можно передавать данные из *фрагментного* (fragment) процессора в "
+"процессоры *light*, используя ключевое слово *varying*. Для этого вы можете "
+"присвоить его в *fragment* и затем использовать в функции *light*."
 
 msgid ""
 "Note that varying may not be assigned in custom functions or a *light "
 "processor* function like:"
 msgstr ""
+"Обратите внимание, что переменные не могут быть назначены в пользовательских "
+"функциях или функциях *светового процессора* (light), например:"
 
 msgid ""
 "This limitation was introduced to prevent incorrect usage before "
 "initialization."
 msgstr ""
+"Это ограничение было введено для предотвращения неправильного использования "
+"до инициализации."
 
 msgid "Interpolation qualifiers"
-msgstr ""
+msgstr "Интерполяционные квалификаторы"
 
 msgid ""
 "Certain values are interpolated during the shading pipeline. You can modify "
 "how these interpolations are done by using *interpolation qualifiers*."
 msgstr ""
+"Некоторые значения интерполируются во время конвейера затенения. Вы можете "
+"изменить способ интерполяции, используя квалификаторы *интерполяции*."
 
 msgid "There are two possible interpolation qualifiers:"
-msgstr ""
+msgstr "Существует два возможных квалификатора интерполяции:"
 
 msgid "Qualifier"
 msgstr "Квалификатор"
@@ -797,7 +875,7 @@ msgid "**flat**"
 msgstr "**flаt**"
 
 msgid "The value is not interpolated."
-msgstr ""
+msgstr "Значение не интерполируется."
 
 msgid "**smooth**"
 msgstr "**smоoth**"
@@ -806,9 +884,11 @@ msgid ""
 "The value is interpolated in a perspective-correct fashion. This is the "
 "default."
 msgstr ""
+"Значение интерполируется с учётом коррекции перспективы. Это используется по "
+"умолчанию."
 
 msgid "Uniforms"
-msgstr "Униформы"
+msgstr "Uniform-переменные"
 
 msgid ""
 "Passing values to shaders is possible. These are global to the whole shader "
@@ -816,23 +896,36 @@ msgid ""
 "the uniforms will appear as editable parameters in it. Uniforms can't be "
 "written from within the shader."
 msgstr ""
+"Передача значений в шейдеры возможна. Они являются глобальными для всего "
+"шейдера и называются *uniform*. Когда шейдер впоследствии будет назначен "
+"материалу, uniform-переменные появятся в нём как редактируемые параметры. "
+"Uniform-переменные не могут быть записаны изнутри шейдера."
 
 msgid ""
 "You can set uniforms in the editor in the material. Or you can set them "
 "through GDScript:"
 msgstr ""
+"Вы можете задать uniform-переменные в редакторе в материале. Или вы можете "
+"задать их через GDScript:"
 
 msgid ""
 "The first argument to ``set_shader_parameter`` is the name of the uniform in "
 "the shader. It must match *exactly* to the name of the uniform in the shader "
 "or else it will not be recognized."
 msgstr ""
+"Первый аргумент ``set_shader_parameter`` - это имя uniform-переменной в "
+"шейдере. Оно должно *точно* совпадать с именем uniform-переменной в шейдере, "
+"иначе она не будет распознана."
 
 msgid ""
 "Any GLSL type except for *void* can be a uniform. Additionally, Godot "
 "provides optional shader hints to make the compiler understand for what the "
 "uniform is used, and how the editor should allow users to modify it."
 msgstr ""
+"Любой тип GLSL, кроме *void*, может быть униформой. Кроме того, Godot "
+"предоставляет дополнительные подсказки для шейдеров, чтобы компилятор "
+"понимал, для чего используется униформа и как редактор должен позволять "
+"пользователям изменять её."
 
 msgid ""
 "It's important to understand that textures *that are supplied as color* "
@@ -840,6 +933,10 @@ msgid ""
 "as Godot's 3D engine renders in linear color space. If this is not done, the "
 "texture will appear washed out."
 msgstr ""
+"Важно понимать, что текстуры, *которые поставляются как цветные*, требуют "
+"подсказки для правильного преобразования sRGB -> linear (т.е. "
+"``source_color`), поскольку 3D-движок Godot рендерит в линейном цветовом "
+"пространстве. Если этого не сделать, текстура будет выглядеть размытой."
 
 msgid ""
 "The 2D renderer also renders in linear color space if the **Rendering > "
@@ -848,16 +945,21 @@ msgid ""
 "``source_color`` will keep working correctly in ``canvas_item`` shaders, so "
 "it's recommend to use it either way."
 msgstr ""
+"2D-рендерер также рендерит в линейном цветовом пространстве, если включена "
+"настройка проекта **Rendering > Viewport > HDR 2D**, поэтому "
+"``source_color`` также должен использоваться в шейдерах ``canvas_item``. "
+"Если 2D HDR отключен, ``source_color`` будет продолжать корректно работать в "
+"шейдерах ``canvas_item``, поэтому рекомендуется использовать его в любом "
+"случае."
 
 msgid "Full list of hints below:"
-msgstr ""
+msgstr "Полный список подсказок ниже:"
 
 msgid "Hint"
 msgstr "Подсказка"
 
-#, fuzzy
 msgid "**vec3, vec4**"
-msgstr "**vеc4**"
+msgstr "**vec3, vec4**"
 
 msgid "source_color"
 msgstr ""
@@ -872,44 +974,43 @@ msgid "hint_range(min, max[, step])"
 msgstr ""
 
 msgid "Restricted to values in a range (with min/max/step)."
-msgstr ""
+msgstr "Ограничение на значения в диапазоне (мин/макс/шаг)."
 
-#, fuzzy
 msgid "Used as albedo color."
-msgstr "Используется как цвет."
+msgstr "Используется как цвет альбедо."
 
 msgid "hint_normal"
 msgstr "hіnt_normal"
 
 msgid "Used as normalmap."
-msgstr ""
+msgstr "Используется как карта нормалей."
 
-#, fuzzy
 msgid "hint_default_white"
-msgstr "hіnt_white"
+msgstr "hint_default_white"
 
 msgid "As value or albedo color, default to opaque white."
 msgstr ""
+"В качестве значения или цвета альбедо, по умолчанию - непрозрачный белый."
 
-#, fuzzy
 msgid "hint_default_black"
-msgstr "hіnt_black"
+msgstr "hint_default_black"
 
 msgid "As value or albedo color, default to opaque black."
 msgstr ""
+"В качестве значения или цвета альбедо, по умолчанию - непрозрачный чёрный."
 
 msgid "hint_default_transparent"
 msgstr ""
 
 msgid "As value or albedo color, default to transparent black."
 msgstr ""
+"В качестве значения или цвета альбедо, по умолчанию - прозрачный черный."
 
-#, fuzzy
 msgid "hint_anisotropy"
-msgstr "hіnt_aniso"
+msgstr "hint_anisotropy"
 
 msgid "As flowmap, default to right."
-msgstr ""
+msgstr "Как карта потока, по умолчанию справа."
 
 msgid "hint_roughness[_r, _g, _b, _a, _normal, _gray]"
 msgstr ""
@@ -919,37 +1020,41 @@ msgid ""
 "``_normal`` is a normal map that guides the roughness limiter, with "
 "roughness increasing in areas that have high-frequency detail."
 msgstr ""
+"Используется для ограничителя шероховатости при импорте (попытки уменьшить "
+"сглаживание блика). ``_normal`` - это карта нормалей, которая направляет "
+"работу ограничителя шероховатости, при этом шероховатость увеличивается в "
+"областях с высокочастотными деталями."
 
 msgid "filter[_nearest, _linear][_mipmap][_anisotropic]"
 msgstr ""
 
 msgid "Enabled specified texture filtering."
-msgstr ""
+msgstr "Включает фильтрацию заданных текстур."
 
 msgid "repeat[_enable, _disable]"
 msgstr ""
 
 msgid "Enabled texture repeating."
-msgstr ""
+msgstr "Включает повтор текстуры."
 
 msgid "hint_screen_texture"
 msgstr ""
 
 msgid "Texture is the screen texture."
-msgstr ""
+msgstr "Texture - это текстура экрана."
 
-#, fuzzy
 msgid "hint_depth_texture"
-msgstr "Движение Игрока"
+msgstr ""
 
 msgid "Texture is the depth texture."
-msgstr ""
+msgstr "Текстура глубины."
 
 msgid "hint_normal_roughness_texture"
 msgstr ""
 
 msgid "Texture is the normal roughness texture (only supported in Forward+)."
 msgstr ""
+"Texture - обычная текстура шероховатости (поддерживается только в Forward+)."
 
 msgid ""
 "GDScript uses different variable types than GLSL does, so when passing "
@@ -961,32 +1066,28 @@ msgstr ""
 "таблице ниже указаны соответствующие типы:"
 
 msgid "GLSL type"
-msgstr ""
+msgstr "Типы GLSL"
 
-#, fuzzy
 msgid "GDScript type"
-msgstr "GDScript"
+msgstr "Типы GDScript"
 
 msgid "Notes"
 msgstr "Примечания"
 
 msgid "Bitwise packed int where bit 0 (LSB) corresponds to x."
-msgstr ""
+msgstr "Побитовая упаковка int, где бит 0 (LSB) соответствует x."
 
 msgid "For example, a bvec2 of (bx, by) could be created in the following way:"
+msgstr "Например, bvec2 из (bx, by) можно создать следующим образом:"
+
+msgid "**Vector2i**"
 msgstr ""
 
-#, fuzzy
-msgid "**Vector2i**"
-msgstr "**Версия**"
-
-#, fuzzy
 msgid "**Vector3i**"
-msgstr "**Версия**"
+msgstr ""
 
-#, fuzzy
 msgid "**Vector4i**"
-msgstr "**Версия**"
+msgstr ""
 
 msgid "**Vector2**"
 msgstr ""
@@ -995,94 +1096,99 @@ msgid "**Vector3**, **Color**"
 msgstr ""
 
 msgid "When Color is used, it will be interpreted as (r, g, b)."
-msgstr ""
+msgstr "Когда используется Color (цвет), он интерпретируется как (r, g, b)."
 
 msgid "**Vector4**, **Color**, **Rect2**, **Plane**, **Quaternion**"
 msgstr ""
 
 msgid "When Color is used, it will be interpreted as (r, g, b, a)."
-msgstr ""
+msgstr "Когда используется Color (цвет), он интерпретируется как (r, g, b, a)."
 
 msgid ""
 "When Rect2 is used, it will be interpreted as (position.x, position.y, size."
 "x, size.y)."
 msgstr ""
+"Если используется Rect2 (прямоугольник), он будет интерпретирован как "
+"(position.x, position.y, size.x, size.y)."
 
 msgid ""
 "When Plane is used it will be interpreted as (normal.x, normal.y, normal.z, "
 "d)."
 msgstr ""
+"Когда используется Plane (плоскость), это будет интерпретироваться как "
+"(normal.x, normal.y, normal.z, d)."
 
-#, fuzzy
 msgid "**Transform2D**"
-msgstr "Преобразование"
+msgstr ""
 
 #, fuzzy
 msgid "**Basis**"
 msgstr "Базис"
 
-#, fuzzy
 msgid "**mat4** **mat4**"
-msgstr "**mаt4**"
+msgstr ""
 
-#, fuzzy
 msgid "**Projection**, **Transform3D**"
-msgstr "Преобразование"
+msgstr ""
 
 msgid "When a Transform3D is used, the w Vector is set to the identity."
 msgstr ""
+"При использовании Transform3D вектор w устанавливается на идентичность."
 
-#, fuzzy
 msgid "**Texture2D**"
-msgstr "Текстура"
+msgstr ""
 
-#, fuzzy
 msgid "**Texture2DArray**"
-msgstr "**Пример**"
+msgstr ""
 
-#, fuzzy
 msgid "**Texture3D**"
-msgstr "Текстура"
+msgstr ""
 
-#, fuzzy
 msgid "**Cubemap**"
-msgstr "**samplerCubе**"
+msgstr ""
 
-#, fuzzy
 msgid "**CubemapArray**"
-msgstr "**Пример**"
+msgstr ""
 
 msgid ""
 "Be careful when setting shader uniforms from GDScript, no error will be "
 "thrown if the type does not match. Your shader will just exhibit undefined "
 "behavior."
 msgstr ""
+"Будьте осторожны при задании формы шейдера из GDScript, если тип не "
+"совпадает, ошибка не возникнет. Ваш шейдер просто будет демонстрировать "
+"неопределенное поведение."
 
 msgid "Uniforms can also be assigned default values:"
-msgstr ""
+msgstr "Униформе также можно присвоить значения по умолчанию:"
 
 msgid ""
 "Note that when adding a default value and a hint, the default value goes "
 "after the hint."
 msgstr ""
+"Обратите внимание, что при добавлении значения по умолчанию и подсказки, "
+"значение по умолчанию идёт после подсказки."
 
 msgid ""
 "If you need to make multiple uniforms to be grouped in the specific category "
 "of an inspector, you can use a `group_uniform` keyword like:"
 msgstr ""
+"Если вам нужно, чтобы несколько униформ были сгруппированы в определённой "
+"категории инспектора, вы можете использовать ключевое слово `group_uniform`, "
+"например:"
 
-#, fuzzy
 msgid "You can close the group by using:"
-msgstr "Вы можете достичь того же результата в коде:"
+msgstr "Вы можете закрыть группу, используя:"
 
 msgid ""
 "The syntax also supports subgroups (it's not mandatory to declare the base "
 "group before this):"
 msgstr ""
+"Синтаксис также поддерживает подгруппы (перед этим необязательно объявлять "
+"базовую группу):"
 
-#, fuzzy
 msgid "Global uniforms"
-msgstr "Векторные встроенные типы"
+msgstr "Глобальные uniforms"
 
 msgid ""
 "Sometimes, you want to modify a parameter in many different shaders at once. "
@@ -1092,12 +1198,21 @@ msgid ""
 "all shaders, in every shader type (``canvas_item``, ``spatial``, "
 "``particles``, ``sky`` and ``fog``)."
 msgstr ""
+"Иногда требуется изменить параметр сразу в нескольких шейдерах. При "
+"использовании обычной униформы это требует много работы, поскольку "
+"необходимо отслеживать все шейдеры и устанавливать униформу для каждого из "
+"них. Глобальные униформы позволяют создавать и обновлять униформы, которые "
+"будут доступны во всех шейдерах, в каждом типе шейдеров (``canvas_item``, "
+"``spatial``, ``particles``, ``sky`` и ``fog``)."
 
 msgid ""
 "Global uniforms are especially useful for environmental effects that affect "
 "many objects in a scene, like having foliage bend when the player is nearby, "
 "or having objects move with the wind."
 msgstr ""
+"Глобальные униформы особенно полезны для эффектов окружающей среды, которые "
+"влияют на многие объекты в сцене, например, когда листва изгибается, когда "
+"рядом находится игрок, или когда объекты движутся под действием ветра."
 
 msgid ""
 "To create a global uniform, open the **Project Settings** then go to the "
@@ -1106,13 +1221,20 @@ msgid ""
 "then edit the value assigned to the uniform by clicking the value in the "
 "list of uniforms:"
 msgstr ""
+"Чтобы создать глобальную униформу, откройте **Project Settings** и перейдите "
+"на вкладку **Shader Globals**. Укажите имя униформы (с учетом регистра) и "
+"тип, затем нажмите **Add** в правом верхнем углу диалога. Затем вы можете "
+"изменить значение, присвоенное униформе, щёлкнув значение в списке:"
 
 msgid ""
 "Adding a global uniform in the Shader Globals tab of the Project Settings"
 msgstr ""
+"Добавление глобальной униформы на вкладке Shader Globals в Настройках проекта"
 
 msgid "After creating a global uniform, you can use it in a shader as follows:"
 msgstr ""
+"После создания глобальной uniform-переменной, вы можете использовать её в "
+"шейдере следующим образом:"
 
 msgid ""
 "Note that the global uniform *must* exist in the Project Settings at the "
@@ -1121,6 +1243,12 @@ msgid ""
 "code, it will be ignored as the global uniform must always be defined in the "
 "Project Settings anyway."
 msgstr ""
+"Обратите внимание, что глобальная uniform-переменная *должна* существовать в "
+"Настройках проекта на момент сохранения шейдера, иначе компиляция будет "
+"неудачной. Хотя вы можете присвоить значение по умолчанию, используя "
+"``global uniform vec4 my_color = ...`` в коде шейдера, оно будет "
+"проигнорировано, так как глобальная uniform-переменная в любом случае должна "
+"быть определена в Настройках проекта."
 
 msgid ""
 "To change the value of a global uniform at run-time, use the :ref:"
@@ -1128,24 +1256,33 @@ msgid ""
 "<class_RenderingServer_method_global_shader_parameter_set>` method in a "
 "script:"
 msgstr ""
+"Чтобы изменить значение глобальной uniform-переменной во время выполнения, "
+"используйте метод :ref:`RenderingServer.global_shader_parameter_set "
+"<class_RenderingServer_method_global_shader_parameter_set>` в скрипте:"
 
 msgid ""
 "Assigning global uniform values can be done as many times as desired without "
 "impacting performance, as setting data doesn't require synchronization "
 "between the CPU and GPU."
 msgstr ""
+"Присваивать глобальные uniform-значения можно сколько угодно раз без ущерба "
+"для производительности, поскольку установка данных не требует синхронизации "
+"между CPU и GPU."
 
-#, fuzzy
 msgid "You can also add or remove global uniforms at run-time:"
 msgstr ""
-"Вы также можете использовать свои собственные узлы в качестве возвращаемых "
-"типов:"
+"Вы также можете добавлять или удалять глобальные uniform-переменные во время "
+"выполнения:"
 
 msgid ""
 "Adding or removing global uniforms at run-time has a performance cost, "
 "although it's not as pronounced compared to getting global uniform values "
 "from a script (see the warning below)."
 msgstr ""
+"Добавление или удаление глобальных uniform-переменных во время выполнения "
+"имеет свои издержки производительности, хотя они не так заметны по сравнению "
+"с получением значений глобальных uniform-переменных из скрипта (см. "
+"предупреждение ниже)."
 
 msgid ""
 "While you *can* query the value of a global uniform at run-time in a script "
@@ -1153,6 +1290,11 @@ msgid ""
 "this has a large performance penalty as the rendering thread needs to "
 "synchronize with the calling thread."
 msgstr ""
+"Хотя вы *можете* запросить значение глобальной uniform-переменной во время "
+"выполнения скрипта, используя ``RenderingServer."
+"global_shader_parameter_get(\"uniform_name\")``, это приводит к большим "
+"потерям производительности, поскольку поток рендеринга должен "
+"синхронизироваться с вызывающим потоком."
 
 msgid ""
 "Therefore, it's not recommended to read global shader uniform values "
@@ -1161,12 +1303,20 @@ msgid ""
 "where you store the values you need to query at the same time you're setting "
 "them as global uniforms."
 msgstr ""
+"Поэтому не рекомендуется постоянно считывать значения глобальной шейдерной "
+"uniform-переменной в скрипте. Если вам нужно читать значения в скрипте после "
+"их установки, подумайте о создании :ref:`autoload "
+"<doc_singletons_autoload>`, где вы храните значения, которые вам нужно "
+"запросить, одновременно устанавливая их в качестве глобальных uniform-"
+"переменных."
 
 msgid "Per-instance uniforms"
-msgstr ""
+msgstr "Uniform-переменные на экземпляр"
 
 msgid "Per-instance uniforms are only available in ``spatial`` (3D) shaders."
 msgstr ""
+"Uniform-переменная для каждого экземпляра доступна только в 3D шейдерах "
+"``spatial``."
 
 msgid ""
 "Sometimes, you want to modify a parameter on each node using the material. "
@@ -1179,33 +1329,56 @@ msgid ""
 "require creating unique copies of the mesh for each different color, which "
 "also has a performance overhead."
 msgstr ""
+"Иногда требуется изменить параметр на каждом узле с помощью материала. "
+"Например, в лесу, полном деревьев, когда вы хотите, чтобы каждое дерево "
+"имело немного другой цвет, который можно редактировать вручную. Без uniform-"
+"переменных для каждого экземпляра это требует создания уникального материала "
+"для каждого дерева (каждый из которых имеет немного другой оттенок). Это "
+"усложняет управление материалами, а также увеличивает производительность, "
+"поскольку сцена требует больше уникальных экземпляров материалов. Здесь "
+"также можно использовать цвета вершин, но это потребует создания уникальных "
+"копий сетки для каждого цвета, что также приведёт к снижению "
+"производительности."
 
 msgid ""
 "Per-instance uniforms are set on each GeometryInstance3D, rather than on "
 "each Material instance. Take this into account when working with meshes that "
 "have multiple materials assigned to them, or MultiMesh setups."
 msgstr ""
+"Uniform-переменная задаётся для каждого экземпляра GeometryInstance3D, а не "
+"для каждого экземпляра материала. Учитывайте это при работе с сетками, "
+"которым назначено несколько материалов, или при настройке MultiMesh."
 
 msgid ""
 "After saving the shader, you can change the per-instance uniform's value "
 "using the inspector:"
 msgstr ""
+"После сохранения шейдера вы можете изменить значение uniform-переменной для "
+"каждого экземпляра с помощью инспектора:"
 
 msgid ""
 "Setting a per-instance uniform's value in the GeometryInstance3D section of "
 "the inspector"
 msgstr ""
+"Установка значения uniform-переменной для каждого экземпляра в разделе "
+"инспектора GeometryInstance3D"
 
 msgid ""
 "Per-instance uniform values can also be set at run-time using "
 "`set_instance_shader_parameter<class_GeometryInstance3D_method_set_instance_shader_parameter>` "
 "method on a node that inherits from :ref:`class_GeometryInstance3D`:"
 msgstr ""
+"Uniform-переменные для каждого экземпляра также могут быть установлены во "
+"время выполнения с помощью метода "
+"`set_instance_shader_parameter<class_GeometryInstance3D_method_set_instance_shader_parameter>` "
+"на узле, который наследуется от :ref:`class_GeometryInstance3D`:"
 
 msgid ""
 "When using per-instance uniforms, there are some restrictions you should be "
 "aware of:"
 msgstr ""
+"При использовании uniform-переменной для каждого экземпляра есть некоторые "
+"ограничения, о которых вы должны знать:"
 
 msgid ""
 "**Per-instance uniforms do not support textures**, only regular scalar and "
@@ -1213,9 +1386,16 @@ msgid ""
 "uniform, then pass the index of the texture to be drawn using a per-instance "
 "uniform."
 msgstr ""
+"**Uniform-переменные на экземпляр не поддерживают текстуры**, только обычные "
+"скалярные и векторные типы. В качестве обходного пути вы можете передать "
+"массив текстур как обычную uniform-переменную, а затем передать индекс "
+"текстуры, которая будет отрисована, используя uniform-переменную для "
+"экземпляра."
 
 msgid "There is a practical maximum limit of 16 instance uniforms per shader."
 msgstr ""
+"Максимальный практический предел - 16 экземпляров uniform-переменной на "
+"шейдер."
 
 msgid ""
 "If your mesh uses multiple materials, the parameters for the first mesh "
@@ -1223,16 +1403,21 @@ msgid ""
 "same name, index *and* type. In this case, all parameters are affected "
 "correctly."
 msgstr ""
+"Если в сетке используется несколько материалов, параметры первого найденного "
+"материала сетки \"победят\" последующие, если только они не имеют одинаковое "
+"имя, индекс *и* тип. В этом случае все параметры будут затронуты корректно."
 
 msgid ""
 "If you run into the above situation, you can avoid clashes by manually "
 "specifying the index (0-15) of the instance uniform by using the "
 "``instance_index`` hint:"
 msgstr ""
+"Если вы столкнулись с описанной выше ситуацией, вы можете избежать "
+"столкновений, указав вручную индекс (0-15) uniform-переменной экземпляра с "
+"помощью подсказки ``instance_index``:"
 
-#, fuzzy
 msgid "Built-in variables"
-msgstr "Редактирование экземпляров"
+msgstr "Встроенные переменные"
 
 msgid ""
 "A large number of built-in variables are available, like ``UV``, ``COLOR`` "
@@ -1241,96 +1426,93 @@ msgid ""
 "(``vertex``, ``fragment`` or ``light``). For a list of the built-in "
 "variables that are available, please see the corresponding pages:"
 msgstr ""
+"Доступно большое количество встроенных переменных, таких как ``UV``, "
+"``COLOR`` и ``VERTEX``. Доступность переменных зависит от типа шейдера "
+"(``spatial``, ``canvas_item`` или ``particle``) и используемой функции "
+"(``vertex``, ``fragment`` или ``light``). Список доступных встроенных "
+"переменных можно найти на соответствующих страницах:"
 
-#, fuzzy
 msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
-msgstr ":ref:`doc_spatial_shader`"
+msgstr ":ref:`Шейдеры Spatial <doc_spatial_shader>` (3D)"
 
 msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
-msgstr ":ref:`Шейдеры элементов холста <doc_canvas_item_shader>`"
+msgstr ""
+":ref:`Шейдеры элементов холста <doc_canvas_item_shader>` (canvas_item, 2D)"
 
-#, fuzzy
 msgid ":ref:`Particle shaders <doc_particle_shader>`"
-msgstr ":ref:`doc_particle_shader`"
+msgstr ":ref:`Шейдеры частиц <doc_particle_shader>`"
 
-#, fuzzy
 msgid ":ref:`Sky shaders <doc_sky_shader>`"
-msgstr ":ref:`doc_spatial_shader`"
+msgstr ":ref:`Шейдеры неба <doc_sky_shader>`"
 
-#, fuzzy
 msgid ":ref:`Fog shaders <doc_fog_shader>`"
-msgstr ":ref:`doc_spatial_shader`"
+msgstr ":ref:`Шейдеры тумана <doc_fog_shader>`"
 
-#, fuzzy
 msgid "Built-in functions"
-msgstr "Статические функции"
+msgstr "Встроенные функции"
 
 msgid ""
 "A large number of built-in functions are supported, conforming to GLSL ES "
 "3.0. When vec_type (float), vec_int_type, vec_uint_type, vec_bool_type "
 "nomenclature is used, it can be scalar or vector."
 msgstr ""
+"Поддерживается большое количество встроенных функций, соответствующих GLSL "
+"ES 3.0. При использовании номенклатуры vec_type (float), vec_int_type, "
+"vec_uint_type, vec_bool_type могут быть скалярными или векторными."
 
 msgid "Function"
 msgstr "Функция"
 
 msgid "Description / Return value"
-msgstr ""
+msgstr "Описание / Возвращаемое значение"
 
 msgid "vec_type **radians** (vec_type degrees)"
 msgstr ""
 
-#, fuzzy
 msgid "Convert degrees to radians."
-msgstr "Преобразовать отступ в табуляцию"
+msgstr "Преобразование градусов в радианы."
 
 msgid "vec_type **degrees** (vec_type radians)"
 msgstr ""
 
-#, fuzzy
 msgid "Convert radians to degrees."
-msgstr "Преобразование радианов в градусы"
+msgstr "Преобразование радиан в градусы."
 
 msgid "vec_type **sin** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Sine."
-msgstr "Синус"
+msgstr "Синус."
 
 msgid "vec_type **cos** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Cosine."
-msgstr "Косинус"
+msgstr "Косинус."
 
 msgid "vec_type **tan** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Tangent."
-msgstr "Тангенс"
+msgstr "Тангенс."
 
 msgid "vec_type **asin** (vec_type x)"
 msgstr ""
 
 msgid "Arcsine."
-msgstr ""
+msgstr "Арксинус."
 
 msgid "vec_type **acos** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Arccosine."
-msgstr "Косинус"
+msgstr "Арккосинус."
 
 msgid "vec_type **atan** (vec_type y_over_x)"
 msgstr ""
 
-#, fuzzy
 msgid "Arctangent."
-msgstr "Тангенс"
+msgstr "Арктангенс."
 
 msgid "vec_type **atan** (vec_type y, vec_type x)"
 msgstr ""
@@ -1339,79 +1521,79 @@ msgid "vec_type **sinh** (vec_type x)"
 msgstr ""
 
 msgid "Hyperbolic sine."
-msgstr ""
+msgstr "Гиперболический синус."
 
 msgid "vec_type **cosh** (vec_type x)"
 msgstr ""
 
 msgid "Hyperbolic cosine."
-msgstr ""
+msgstr "Гиперболический косинус."
 
 msgid "vec_type **tanh** (vec_type x)"
 msgstr ""
 
 msgid "Hyperbolic tangent."
-msgstr ""
+msgstr "Гиперболический тангенс."
 
 msgid "vec_type **asinh** (vec_type x)"
 msgstr ""
 
 msgid "Inverse hyperbolic sine."
-msgstr ""
+msgstr "Обратный гиперболический синус."
 
 msgid "vec_type **acosh** (vec_type x)"
 msgstr ""
 
 msgid "Inverse hyperbolic cosine."
-msgstr ""
+msgstr "Обратный гиперболический косинус."
 
 msgid "vec_type **atanh** (vec_type x)"
 msgstr ""
 
 msgid "Inverse hyperbolic tangent."
-msgstr ""
+msgstr "Обратный гиперболический тангенс."
 
 msgid "vec_type **pow** (vec_type x, vec_type y)"
 msgstr ""
 
 msgid "Power (undefined if ``x`` < 0 or if ``x`` == 0 and ``y`` <= 0)."
-msgstr ""
+msgstr "Power (неопределено, если ``x`` < 0 или если ``x`` == 0 и ``y`` <= 0)."
 
 msgid "vec_type **exp** (vec_type x)"
 msgstr ""
 
 msgid "Base-e exponential."
-msgstr ""
+msgstr "Экспонента."
 
 msgid "vec_type **exp2** (vec_type x)"
 msgstr ""
 
 msgid "Base-2 exponential."
-msgstr ""
+msgstr "Экспонента по основанию 2."
 
 msgid "vec_type **log** (vec_type x)"
 msgstr ""
 
 msgid "Natural logarithm."
-msgstr ""
+msgstr "Натуральный логарифм."
 
 msgid "vec_type **log2** (vec_type x)"
 msgstr ""
 
 msgid "Base-2 logarithm."
-msgstr ""
+msgstr "Логарифм по основанию 2."
 
 msgid "vec_type **sqrt** (vec_type x)"
 msgstr ""
 
 msgid "Square root."
-msgstr ""
+msgstr "Квадратный корень."
 
 msgid "vec_type **inversesqrt** (vec_type x)"
 msgstr ""
 
 msgid "Inverse square root."
-msgstr ""
+msgstr "Обратный квадратный корень."
 
 msgid "vec_type **abs** (vec_type x)"
 msgstr ""
@@ -1421,6 +1603,7 @@ msgstr ""
 
 msgid "Absolute value (returns positive value if negative)."
 msgstr ""
+"Абсолютное значение (возвращает положительное значение если отрицательно)."
 
 msgid "vec_type **sign** (vec_type x)"
 msgstr ""
@@ -1431,102 +1614,99 @@ msgstr ""
 msgid ""
 "Sign (returns ``1.0`` if positive, ``-1.0`` if negative, ``0.0`` if zero)."
 msgstr ""
+"Знак числа (возвращает ``1.0`` если положительно, ``-1.0`` если "
+"отрицательно, ``0.0`` если ноль)."
 
 msgid "vec_type **floor** (vec_type x)"
 msgstr ""
 
 msgid "Round to the integer below."
-msgstr ""
+msgstr "Округление до целого в меньшую сторону (floor(3.9)=3)."
 
 msgid "vec_type **round** (vec_type x)"
 msgstr ""
 
 msgid "Round to the nearest integer."
-msgstr ""
+msgstr "Округление до ближайшего целого."
 
 msgid "vec_type **roundEven** (vec_type x)"
 msgstr ""
 
 msgid "Round to the nearest even integer."
-msgstr ""
+msgstr "Округление до ближайшего чётного целого."
 
 msgid "vec_type **trunc** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Truncation."
-msgstr "Усечение"
+msgstr "Усечение (trunc(123.56) = 123)."
 
 msgid "vec_type **ceil** (vec_type x)"
 msgstr ""
 
 msgid "Round to the integer above."
-msgstr ""
+msgstr "Округление до целого в большую сторону."
 
 msgid "vec_type **fract** (vec_type x)"
 msgstr ""
 
 msgid "Fractional (returns ``x - floor(x)``)."
+msgstr "Дробная часть (возвращает ``x - floor(x)``)."
+
+msgid "vec_type **mod** (vec_type x, vec_type y)"
 msgstr ""
 
-#, fuzzy
-msgid "vec_type **mod** (vec_type x, vec_type y)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
 msgid "vec_type **mod** (vec_type x, float y)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "Modulo (division remainder)."
-msgstr "Умножение / Деление / Остаток от деления"
+msgstr "Модуль (остаток от деления)."
 
 msgid "vec_type **modf** (vec_type x, out vec_type i)"
 msgstr ""
 
 msgid "Fractional of ``x``, with ``i`` as integer part."
-msgstr ""
+msgstr "Дробь от ``x``, с ``i`` в качестве целой части."
 
 msgid "vec_type  **min** (vec_type a, vec_type b)"
 msgstr ""
 
 msgid "Lowest value between ``a`` and ``b``."
-msgstr ""
+msgstr "Наименьшее значение между ``a`` и ``b``."
 
 msgid "vec_type  **max** (vec_type a, vec_type b)"
 msgstr ""
 
 msgid "Highest value between ``a`` and ``b``."
-msgstr ""
+msgstr "Наибольшее значение между ``a`` и ``b``."
 
 msgid "vec_type **clamp** (vec_type x, vec_type min, vec_type max)"
 msgstr ""
 
 msgid "Clamp ``x`` between ``min`` and ``max`` (inclusive)."
+msgstr "Ограничение (диапазон) ``x`` между ``min`` и ``max`` (включительно)."
+
+msgid "float **mix** (float a, float b, float c)"
 msgstr ""
 
-#, fuzzy
-msgid "float **mix** (float a, float b, float c)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
 msgid "vec_type **mix** (vec_type a, vec_type b, float c)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "vec_type **mix** (vec_type a, vec_type b, bvec_type c)"
 msgstr ""
 
 msgid "Linear interpolate between ``a`` and ``b`` by ``c``."
-msgstr ""
+msgstr "Линейная интерполяция между ``a`` и ``b`` по ``c``."
 
-#, fuzzy
 msgid "vec_type **fma** (vec_type a, vec_type b, vec_type c)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Performs a fused multiply-add operation: ``(a * b + c)`` (faster than doing "
 "it manually)."
 msgstr ""
+"Выполняет операцию умножения и сложения: ``(a * b + c)`` (быстрее, чем "
+"вручную)."
 
 msgid "vec_type **step** (vec_type a, vec_type b)"
 msgstr ""
@@ -1547,91 +1727,88 @@ msgid "vec_type **smoothstep** (float a, float b, vec_type c)"
 msgstr ""
 
 msgid "Hermite interpolate between ``a`` and ``b`` by ``c``."
-msgstr ""
+msgstr "Эрмитова интерполяция между ``a`` и ``b`` по ``c``."
 
 msgid "bvec_type **isnan** (vec_type x)"
 msgstr ""
 
 msgid "Returns ``true`` if scalar or vector component is ``NaN``."
 msgstr ""
+"Возвращает ``true``, если скалярная или векторная компонента является "
+"``NaN``."
 
 msgid "bvec_type **isinf** (vec_type x)"
 msgstr ""
 
 msgid "Returns ``true`` if scalar or vector component is ``INF``."
 msgstr ""
+"Возвращает ``true``, если скалярный или векторный компонент является ``INF``."
 
 msgid "ivec_type **floatBitsToInt** (vec_type x)"
 msgstr ""
 
 msgid "Float->Int bit copying, no conversion."
-msgstr ""
+msgstr "Побитовое копирование Float->Int, без преобразования."
 
 msgid "uvec_type **floatBitsToUint** (vec_type x)"
 msgstr ""
 
 msgid "Float->UInt bit copying, no conversion."
-msgstr ""
+msgstr "Побитовое копирование Float->UInt, без преобразования."
 
 msgid "vec_type **intBitsToFloat** (ivec_type x)"
 msgstr ""
 
 msgid "Int->Float bit copying, no conversion."
-msgstr ""
+msgstr "Побитовое копирование Int->Float, без преобразования."
 
 msgid "vec_type **uintBitsToFloat** (uvec_type x)"
 msgstr ""
 
 msgid "UInt->Float bit copying, no conversion."
-msgstr ""
+msgstr "Побитовое копирование UInt->Float, без преобразования."
 
 msgid "float **length** (vec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Vector length."
-msgstr "Длина вектора"
+msgstr "Длина вектора."
 
 msgid "float **distance** (vec_type a, vec_type b)"
 msgstr ""
 
-#, fuzzy
 msgid "Distance between vectors i.e ``length(a - b)``."
-msgstr "Расстояние между векторами, т.е. ``length(a - b)``"
+msgstr "Расстояние между векторами, т.е. ``length(a - b)``."
 
 msgid "float **dot** (vec_type a, vec_type b)"
 msgstr ""
 
-#, fuzzy
 msgid "Dot product."
-msgstr "Скалярное произведение"
+msgstr "Скалярное произведение."
 
 msgid "vec3 **cross** (vec3 a, vec3 b)"
 msgstr ""
 
-#, fuzzy
 msgid "Cross product."
-msgstr "Векторное произведение"
+msgstr "Векторное произведение."
 
 msgid "vec_type **normalize** (vec_type x)"
 msgstr ""
 
 msgid "Normalize to unit length."
-msgstr ""
+msgstr "Нармализация к единицы длины."
 
 msgid "vec3 **reflect** (vec3 I, vec3 N)"
 msgstr ""
 
-#, fuzzy
 msgid "Reflect."
-msgstr "Отражение"
+msgstr "Отражение."
 
 msgid "vec3 **refract** (vec3 I, vec3 N, float eta)"
 msgstr ""
 
-#, fuzzy
 msgid "Refract."
-msgstr "Преломление"
+msgstr "Преломление."
 
 msgid "vec_type **faceforward** (vec_type N, vec_type I, vec_type Nref)"
 msgstr ""
@@ -1642,135 +1819,123 @@ msgstr ""
 msgid "mat_type **matrixCompMult** (mat_type x, mat_type y)"
 msgstr ""
 
-#, fuzzy
 msgid "Matrix component multiplication."
-msgstr "Скалярное перемножение"
+msgstr "Скалярное перемножение."
 
 msgid "mat_type **outerProduct** (vec_type column, vec_type row)"
 msgstr ""
 
-#, fuzzy
 msgid "Matrix outer product."
-msgstr "Скалярное произведение"
+msgstr "Матричное внешнее произведение."
 
 msgid "mat_type **transpose** (mat_type m)"
 msgstr ""
 
-#, fuzzy
 msgid "Transpose matrix."
-msgstr "Транспонировать"
+msgstr "Транспонирование матрицы."
 
 msgid "float **determinant** (mat_type m)"
 msgstr ""
 
 msgid "Matrix determinant."
-msgstr ""
+msgstr "Матричный определитель."
 
 msgid "mat_type **inverse** (mat_type m)"
 msgstr ""
 
 msgid "Inverse matrix."
-msgstr ""
+msgstr "Обратная матрица."
 
 msgid "bvec_type **lessThan** (vec_type x, vec_type y)"
 msgstr ""
 
 msgid "Bool vector comparison on < int/uint/float vectors."
-msgstr ""
+msgstr "Логическое сравнение векторов < int/uint/float."
 
 msgid "bvec_type **greaterThan** (vec_type x, vec_type y)"
 msgstr ""
 
 msgid "Bool vector comparison on > int/uint/float vectors."
-msgstr ""
+msgstr "Логическое сравнение векторов > int/uint/float."
 
 msgid "bvec_type **lessThanEqual** (vec_type x, vec_type y)"
 msgstr ""
 
 msgid "Bool vector comparison on <= int/uint/float vectors."
-msgstr ""
+msgstr "Логическое сравнение векторов <= int/uint/float."
 
 msgid "bvec_type **greaterThanEqual** (vec_type x, vec_type y)"
 msgstr ""
 
 msgid "Bool vector comparison on >= int/uint/float vectors."
-msgstr ""
+msgstr "Логическое сравнение векторов >= int/uint/float."
 
 msgid "bvec_type **equal** (vec_type x, vec_type y)"
 msgstr ""
 
 msgid "Bool vector comparison on == int/uint/float vectors."
-msgstr ""
+msgstr "Логическое сравнение векторов == int/uint/float."
 
 msgid "bvec_type **notEqual** (vec_type x, vec_type y)"
 msgstr ""
 
 msgid "Bool vector comparison on != int/uint/float vectors."
-msgstr ""
+msgstr "Логическое сравнение векторов != int/uint/float."
 
 msgid "bool **any** (bvec_type x)"
 msgstr ""
 
 msgid "``true`` if any component is ``true``, ``false`` otherwise."
-msgstr ""
+msgstr "``true`` если любой компонент является ``true``, иначе ``false``."
 
 msgid "bool **all** (bvec_type x)"
 msgstr ""
 
 msgid "``true`` if all components are ``true``, ``false`` otherwise."
-msgstr ""
+msgstr "``true`` если все компоненты являются ``true``, иначе ``false``."
 
 msgid "bvec_type **not** (bvec_type x)"
 msgstr ""
 
-#, fuzzy
 msgid "Invert boolean vector."
-msgstr "Обращенный цвет"
+msgstr "Обратный логический вектор."
 
-#, fuzzy
 msgid "ivec2 **textureSize** (gsampler2D s, int lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "ivec3 **textureSize** (gsampler2DArray s, int lod)"
-msgstr "ivеc3 **textureSize** (sampler2DArray_type s, int lod)"
+msgstr ""
 
-#, fuzzy
 msgid "ivec3 **textureSize** (gsampler3D s, int lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "ivec2 **textureSize** (samplerCube s, int lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "ivec2 **textureSize** (samplerCubeArray s, int lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "Get the size of a texture."
-msgstr "Смена текстуры."
+msgstr "Получает размер текстуры."
 
 msgid ""
 "The LOD defines which mipmap level is used. An LOD value of ``0`` will use "
 "the full resolution texture."
 msgstr ""
+"LOD определяет, какой уровень mipmap будет использоваться. При значении LOD, "
+"равном ``0``, будет использоваться текстура с полным разрешением."
 
-#, fuzzy
 msgid "vec2 **textureQueryLod** (gsampler2D s, vec2 p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "vec3 **textureQueryLod** (gsampler2DArray s, vec2 p)"
-msgstr "ivеc3 **textureSize** (sampler2DArray_type s, int lod)"
+msgstr ""
 
-#, fuzzy
 msgid "vec2 **textureQueryLod** (gsampler3D s, vec3 p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "vec2 **textureQueryLod** (samplerCube s, vec3 p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Compute the level-of-detail that would be used to sample from a texture. The "
@@ -1778,190 +1943,163 @@ msgid ""
 "accessed. The ``y`` component is computed level-of-detail relative to the "
 "base level (regardless of the mipmap levels of the texture)."
 msgstr ""
+"Вычисляет уровень детализации, который будет использоваться для выборки из "
+"текстуры. Компонент ``x`` полученного значения - это массив mipmap, к "
+"которому будет осуществляться доступ. Компонент ``y`` - это вычисленный "
+"уровень детализации относительно базового уровня (независимо от уровней "
+"mipmap текстуры)."
 
-#, fuzzy
 msgid "int **textureQueryLevels** (gsampler2D s)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "int **textureQueryLevels** (gsampler2DArray s)"
-msgstr "ivеc3 **textureSize** (sampler2DArray_type s, int lod)"
+msgstr ""
 
-#, fuzzy
 msgid "int **textureQueryLevels** (gsampler3D s)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "int **textureQueryLevels** (samplerCube s)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Get the number of accessible mipmap levels of a texture."
-msgstr ""
+msgstr "Получает количество доступных уровней mipmap текстуры."
 
 msgid "If the texture is unassigned to a sampler, ``0`` is returned."
+msgstr "Если текстура не назначена сэмплеру, возвращается ``0``."
+
+msgid "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
 msgstr ""
 
-#, fuzzy
-msgid "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
-msgstr "vеc4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
-
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler2DArray s, vec3 p [, float bias])"
 msgstr ""
-"vec4_type  **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
 
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler3D s, vec3 p [, float bias])"
 msgstr ""
-"vec4_type  **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
 
-#, fuzzy
 msgid "vec4 **texture** (samplerCube s, vec3 p [, float bias])"
-msgstr "vеc4 **texture** (samplerCube s, vec3 uv [, float bias])"
+msgstr ""
 
-#, fuzzy
 msgid "vec4 **texture** (samplerCubeArray s, vec4 p [, float bias])"
-msgstr "vеc4 **texture** (samplerCube s, vec3 uv [, float bias])"
+msgstr ""
 
 msgid "Perform a texture read."
+msgstr "Выполняет чтение текстуры."
+
+msgid "gvec4_type **textureProj** (gsampler2D s, vec3 p [, float bias])"
 msgstr ""
 
-#, fuzzy
-msgid "gvec4_type **textureProj** (gsampler2D s, vec3 p [, float bias])"
-msgstr "veс4_type **textureProj** (sampler2D_type s, vec3 uv [, float bias])"
-
-#, fuzzy
 msgid "gvec4_type **textureProj** (gsampler2D s, vec4 p [, float bias])"
-msgstr "veс4_type **textureProj** (sampler2D_type s, vec4 uv [, float bias])"
+msgstr ""
 
-#, fuzzy
 msgid "gvec4_type **textureProj** (gsampler3D s, vec4 p [, float bias])"
 msgstr ""
-"vec4_type  **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
 
 msgid "Perform a texture read with projection."
+msgstr "Выполняет чтение текстуры с проекцией."
+
+msgid "gvec4_type **textureLod** (gsampler2D s, vec2 p, float lod)"
 msgstr ""
 
-#, fuzzy
-msgid "gvec4_type **textureLod** (gsampler2D s, vec2 p, float lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
 msgid "gvec4_type **textureLod** (gsampler2DArray s, vec3 p, float lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "gvec4_type **textureLod** (gsampler3D s, vec3 p, float lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "vec4 **textureLod** (samplerCube s, vec3 p, float lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "vec4 **textureLod** (samplerCubeArray s, vec4 p, float lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Perform a texture read at custom mipmap."
-msgstr ""
+msgstr "Выполняет чтение текстуры с пользовательской mipmap."
 
 msgid ""
 "The LOD defines which mipmap level is used. An LOD value of ``0.0`` will use "
 "the full resolution texture. If the texture lacks mipmaps, all LOD values "
 "will act like ``0.0``."
 msgstr ""
+"LOD определяет, какой уровень mipmap будет использоваться. Значение LOD, "
+"равное ``0.0``, будет использовать текстуру с полным разрешением. Если "
+"текстура не имеет mipmap, то все значения LOD будут работать как ``0.0``."
 
-#, fuzzy
 msgid "gvec4_type **textureProjLod** (gsampler2D s, vec3 p, float lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "gvec4_type **textureProjLod** (gsampler2D s, vec4 p, float lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid "gvec4_type **textureProjLod** (gsampler3D s, vec4 p, float lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Performs a texture read with projection/LOD."
+msgstr "Выполняет чтение текстуры с проекцией/LOD."
+
+msgid "gvec4_type **textureGrad** (gsampler2D s, vec2 p, vec2 dPdx, vec2 dPdy)"
 msgstr ""
 
-#, fuzzy
-msgid "gvec4_type **textureGrad** (gsampler2D s, vec2 p, vec2 dPdx, vec2 dPdy)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
 msgid ""
 "gvec4_type **textureGrad** (gsampler2DArray s, vec3 p, vec2 dPdx, vec2 dPdy)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
-msgid "gvec4_type **textureGrad** (gsampler3D s, vec3 p, vec2 dPdx, vec2 dPdy)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
-msgid "vec4 **textureGrad** (samplerCube s, vec3 p, vec3 dPdx, vec3 dPdy)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
-msgid "vec4 **textureGrad** (samplerCubeArray s, vec3 p, vec3 dPdx, vec3 dPdy)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-msgid "Performs a texture read with explicit gradients."
 msgstr ""
 
-#, fuzzy
+msgid "gvec4_type **textureGrad** (gsampler3D s, vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+
+msgid "vec4 **textureGrad** (samplerCube s, vec3 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+
+msgid "vec4 **textureGrad** (samplerCubeArray s, vec3 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+
+msgid "Performs a texture read with explicit gradients."
+msgstr "Выполняет чтение текстуры с явными градиентами."
+
 msgid ""
 "gvec4_type **textureProjGrad** (gsampler2D s, vec3 p, vec2 dPdx, vec2 dPdy)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "gvec4_type **textureProjGrad** (gsampler2D s, vec4 p, vec2 dPdx, vec2 dPdy)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "gvec4_type **textureProjGrad** (gsampler3D s, vec4 p, vec3 dPdx, vec3 dPdy)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Performs a texture read with projection/LOD and with explicit gradients."
+msgstr "Выполняет чтение текстуры с проекцией/LOD и с явными градиентами."
+
+msgid "gvec4_type **texelFetch** (gsampler2D s, ivec2 p, int lod)"
 msgstr ""
 
-#, fuzzy
-msgid "gvec4_type **texelFetch** (gsampler2D s, ivec2 p, int lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
 msgid "gvec4_type **texelFetch** (gsampler2DArray s, ivec3 p, int lod)"
-msgstr "vеc4_type **texelFetch** (sampler2DArray_type s, ivec3 uv, int lod)"
+msgstr ""
 
-#, fuzzy
 msgid "gvec4_type **texelFetch** (gsampler3D s, ivec3 p, int lod)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Fetches a single texel using integer coordinates."
+msgstr "Получает один тексель, используя целочисленные координаты."
+
+msgid "gvec4_type **textureGather** (gsampler2D s, vec2 p [, int comps])"
 msgstr ""
 
-#, fuzzy
-msgid "gvec4_type **textureGather** (gsampler2D s, vec2 p [, int comps])"
-msgstr "vеc4_type **texture** (sampler2D_type s, vec2 uv [, float bias])"
-
-#, fuzzy
 msgid "gvec4_type **textureGather** (gsampler2DArray s, vec3 p [, int comps])"
 msgstr ""
-"vec4_type  **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
 
-#, fuzzy
 msgid "vec4 **textureGather** (samplerCube s, vec3 p [, int comps])"
-msgstr "vеc4 **texture** (samplerCube s, vec3 uv [, float bias])"
+msgstr ""
 
 msgid ""
 "Gathers four texels from a texture. Use ``comps`` within range of 0..3 to "
 "define which component (x, y, z, w) is returned. If ``comps`` is not "
 "provided: 0 (or x-component) is used."
 msgstr ""
+"Собирает четыре текселя из текстуры. Используйте ``comps`` в диапазоне 0..3, "
+"чтобы определить, какой компонент (x, y, z, w) будет возвращён. Если "
+"``comps`` не указан: 0 (или x-компонент) будет использован."
 
 msgid "vec_type **dFdx** (vec_type p)"
 msgstr ""
@@ -1971,10 +2109,12 @@ msgid ""
 "``dFdxCoarse`` or ``dFdxFine``, but the decision for which to use is made by "
 "the GPU driver."
 msgstr ""
+"Производная в ``x`` с использованием локального дифферента. Внутренне может "
+"использовать либо ``dFdxCoarse``, либо ``dFdxFine``, но решение о том, что "
+"использовать, принимает драйвер GPU."
 
-#, fuzzy
 msgid "vec_type **dFdxCoarse** (vec_type p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Calculates derivative with respect to ``x`` window coordinate using local "
@@ -1983,10 +2123,13 @@ msgid ""
 "the current fragment. This function is not available on ``gl_compatibility`` "
 "profile."
 msgstr ""
+"Вычисляет производную по координате окна ``x`` с использованием локального "
+"дифференцирования на основе значения ``p`` для соседей (соседей) текущего "
+"фрагмента, и возможно, но не обязательно, включает значение для текущего "
+"фрагмента. Эта функция недоступна для профиля ``gl_compatibility``."
 
-#, fuzzy
 msgid "vec_type **dFdxFine** (vec_type p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Calculates derivative with respect to ``x`` window coordinate using local "
@@ -1994,6 +2137,10 @@ msgid ""
 "immediate neighbour(s). This function is not available on "
 "``gl_compatibility`` profile."
 msgstr ""
+"Вычисляет производную по координате окна ``x`` с помощью локального "
+"дифференцирования на основе значения ``p`` для текущего фрагмента и его "
+"ближайшего соседа (соседей). Эта функция недоступна для профиля "
+"``gl_compatibility``."
 
 msgid "vec_type **dFdy** (vec_type p)"
 msgstr ""
@@ -2003,10 +2150,12 @@ msgid ""
 "``dFdyCoarse`` or ``dFdyFine``, but the decision for which to use is made by "
 "the GPU driver."
 msgstr ""
+"Производная в ``y`` с использованием локального дифференцирования. Внутренне "
+"может использовать либо ``dFdyCoarse``, либо ``dFdyFine``, но решение о том, "
+"что использовать, принимает драйвер GPU."
 
-#, fuzzy
 msgid "vec_type **dFdyCoarse** (vec_type p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Calculates derivative with respect to ``y`` window coordinate using local "
@@ -2015,10 +2164,13 @@ msgid ""
 "the current fragment. This function is not available on ``gl_compatibility`` "
 "profile."
 msgstr ""
+"Вычисляет производную по оконной координате ``y`` с использованием "
+"локального дифференцирования на основе значения ``p`` для соседей (соседей) "
+"текущего фрагмента, и возможно, но не обязательно, включает значение для "
+"текущего фрагмента. Эта функция недоступна для профиля ``gl_compatibility``."
 
-#, fuzzy
 msgid "vec_type **dFdyFine** (vec_type p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Calculates derivative with respect to ``y`` window coordinate using local "
@@ -2026,6 +2178,10 @@ msgid ""
 "immediate neighbour(s). This function is not available on "
 "``gl_compatibility`` profile."
 msgstr ""
+"Вычисляет производную по оконной координате ``y`` с помощью локального "
+"дифференцирования на основе значения ``p`` для текущего фрагмента и его "
+"ближайшего соседа/соседей. Эта функция недоступна для профиля "
+"``gl_compatibility``."
 
 msgid "vec_type **fwidth** (vec_type p)"
 msgstr ""
@@ -2034,26 +2190,32 @@ msgid ""
 "Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
 "using ``abs(dFdx(p)) + abs(dFdy(p))``."
 msgstr ""
+"Сумма абсолютных производных по ``x`` и ``y``. Это эквивалентно "
+"использованию ``abs(dFdx(p)) + abs(dFdy(p))``."
 
-#, fuzzy
 msgid "vec_type **fwidthCoarse** (vec_type p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
 "using ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``. This function is not "
 "available on ``gl_compatibility`` profile."
 msgstr ""
+"Сумма абсолютных производных по ``x`` и ``y``. Это эквивалентно "
+"использованию ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``. Эта функция "
+"недоступна в профиле ``gl_compatibility``."
 
-#, fuzzy
 msgid "vec_type **fwidthFine** (vec_type p)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Sum of absolute derivative in ``x`` and ``y``. This is the equivalent of "
 "using ``abs(dFdxFine(p)) + abs(dFdyFine(p))``. This function is not "
 "available on ``gl_compatibility`` profile."
 msgstr ""
+"Сумма абсолютных производных по ``x`` и ``y``. Это эквивалентно "
+"использованию ``abs(dFdxFine(p)) + abs(dFdyFine(p))``. Эта функция "
+"недоступна в профиле ``gl_compatibility``."
 
 msgid "uint **packHalf2x16** (vec2 v)"
 msgstr ""
@@ -2065,6 +2227,8 @@ msgid ""
 "Convert two 32-bit floating-point numbers into 16-bit and pack them into a "
 "32-bit unsigned integer and vice-versa."
 msgstr ""
+"Преобразование двух 32-битных чисел с плавающей точкой в 16-битные и "
+"упаковка их в 32-битное беззнаковое целое число и наоборот."
 
 msgid "uint **packUnorm2x16** (vec2 v)"
 msgstr ""
@@ -2076,6 +2240,8 @@ msgid ""
 "Convert two 32-bit floating-point numbers (clamped within 0..1 range) into "
 "16-bit and pack them into a 32-bit unsigned integer and vice-versa."
 msgstr ""
+"Преобразование двух 32-битных чисел с плавающей точкой (в диапазоне 0..1) в "
+"16-битные и упаковка их в 32-битное беззнаковое целое число и наоборот."
 
 msgid "uint **packSnorm2x16** (vec2 v)"
 msgstr ""
@@ -2087,6 +2253,8 @@ msgid ""
 "Convert two 32-bit floating-point numbers (clamped within -1..1 range) into "
 "16-bit and pack them into a 32-bit unsigned integer and vice-versa."
 msgstr ""
+"Преобразование двух 32-битных чисел с плавающей точкой (в диапазоне -1..1) в "
+"16-битные и упаковка их в 32-битное беззнаковое целое число и наоборот."
 
 msgid "uint **packUnorm4x8** (vec4 v)"
 msgstr ""
@@ -2098,6 +2266,8 @@ msgid ""
 "Convert four 32-bit floating-point numbers (clamped within 0..1 range) into "
 "8-bit and pack them into a 32-bit unsigned integer and vice-versa."
 msgstr ""
+"Преобразование четырёх 32-битных чисел с плавающей точкой (в диапазоне 0..1) "
+"в 8-битные и их упаковка в 32-битное беззнаковое целое число, и наоборот."
 
 msgid "uint **packSnorm4x8** (vec4 v)"
 msgstr ""
@@ -2109,135 +2279,130 @@ msgid ""
 "Convert four 32-bit floating-point numbers (clamped within -1..1 range) into "
 "8-bit and pack them into a 32-bit unsigned integer and vice-versa."
 msgstr ""
+"Преобразование четырёх 32-битных чисел с плавающей точкой (в диапазоне "
+"-1..1) в 8-битные и их упаковка в 32-битное беззнаковое целое число, и "
+"наоборот."
 
-#, fuzzy
 msgid "ivec_type **bitfieldExtract** (ivec_type value, int offset, int bits)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
-msgid "uvec_type **bitfieldExtract** (uvec_type value, int offset, int bits)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-msgid "Extracts a range of bits from an integer."
 msgstr ""
 
-#, fuzzy
+msgid "uvec_type **bitfieldExtract** (uvec_type value, int offset, int bits)"
+msgstr ""
+
+msgid "Extracts a range of bits from an integer."
+msgstr "Извлечение диапазона битов из целого числа."
+
 msgid ""
 "ivec_type **bitfieldInsert** (ivec_type base, ivec_type insert, int offset, "
 "int bits)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "uvec_type **bitfieldInsert** (uvec_type base, uvec_type insert, int offset, "
 "int bits)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Insert a range of bits into an integer."
+msgstr "Вставка диапазона битов в целое число."
+
+msgid "ivec_type **bitfieldReverse** (ivec_type value)"
 msgstr ""
 
-#, fuzzy
-msgid "ivec_type **bitfieldReverse** (ivec_type value)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
 msgid "uvec_type **bitfieldReverse** (uvec_type value)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Reverse the order of bits in an integer."
+msgstr "Изменение порядка следования битов в целых числах."
+
+msgid "ivec_type **bitCount** (ivec_type value)"
 msgstr ""
 
-#, fuzzy
-msgid "ivec_type **bitCount** (ivec_type value)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
 msgid "uvec_type **bitCount** (uvec_type value)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Counts the number of 1 bits in an integer."
+msgstr "Подсчитывает количество бит 1 в целых числах."
+
+msgid "ivec_type **findLSB** (ivec_type value)"
 msgstr ""
 
-#, fuzzy
-msgid "ivec_type **findLSB** (ivec_type value)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
 msgid "uvec_type **findLSB** (uvec_type value)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Find the index of the least significant bit set to 1 in an integer."
 msgstr ""
+"Находит индекс наименьшего значащего бита, установленного в 1, в целом числе."
 
-#, fuzzy
 msgid "ivec_type **findMSB** (ivec_type value)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-#, fuzzy
-msgid "uvec_type **findMSB** (uvec_type value)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
-
-msgid "Find the index of the most significant bit set to 1 in an integer."
 msgstr ""
 
-#, fuzzy
+msgid "uvec_type **findMSB** (uvec_type value)"
+msgstr ""
+
+msgid "Find the index of the most significant bit set to 1 in an integer."
+msgstr "Находит индекс старшего бита, установленного в 1, в целом числе."
+
 msgid ""
 "void **imulExtended** (ivec_type x, ivec_type y, out ivec_type msb, out "
 "ivec_type lsb)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
-#, fuzzy
 msgid ""
 "void **umulExtended** (uvec_type x, uvec_type y, out uvec_type msb, out "
 "uvec_type lsb)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Multiplies two 32-bit numbers and produce a 64-bit result. ``x`` - the first "
 "number. ``y`` - the second number. ``msb`` - will contain the most "
 "significant bits. ``lsb`` - will contain the least significant bits."
 msgstr ""
+"Перемножает два 32-битных числа и выдает 64-битный результат. ``x`` - первое "
+"число. ``y`` - второе число. ``msb`` - будет содержать старшие значащие "
+"биты. ``lsb`` - содержит младшие значащие биты."
 
-#, fuzzy
 msgid "uvec_type **uaddCarry** (uvec_type x, uvec_type y, out uvec_type carry)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Adds two unsigned integers and generates carry."
-msgstr ""
+msgstr "Складывает два беззнаковых целых числа и генерирует перенос."
 
-#, fuzzy
 msgid ""
 "uvec_type **usubBorrow** (uvec_type x, uvec_type y, out uvec_type borrow)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Subtracts two unsigned integers and generates borrow."
-msgstr ""
+msgstr "Вычитает два беззнаковых целых числа и генерирует заимствование."
 
-#, fuzzy
 msgid "vec_type **ldexp** (vec_type x, out ivec_type exp)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid "Assemble a floating-point number from a value and exponent."
-msgstr ""
+msgstr "Сборка числа с плавающей точкой из значения и экспоненты."
 
 msgid ""
 "If this product is too large to be represented in the floating-point type "
 "the result is undefined."
 msgstr ""
+"Если это произведение слишком велико для представления в типе с плавающей "
+"точкой, результат будет не определён."
 
-#, fuzzy
 msgid "vec_type **frexp** (vec_type x, out ivec_type exp)"
-msgstr "vec4_type **textureLod** ( sampler3D_type s, vec3 uv, float lod )"
+msgstr ""
 
 msgid ""
 "Splits a floating-point number(``x``) into significand (in the range of "
 "[0.5, 1.0]) and an integral exponent."
 msgstr ""
+"Разделяет число с плавающей точкой(``x``) на сигнификат (в диапазоне [0.5, "
+"1.0]) и интегральную экспоненту."
 
 msgid ""
 "For ``x`` equals zero the significand and exponent are both zero. For ``x`` "
 "of infinity or NaN, the results are undefined."
 msgstr ""
+"Для ``x``, равного нулю, сигнификат и экспонента равны нулю. Для ``x``, "
+"равного бесконечности или NaN, результат будет не определён."
 
 msgid "Translation status"
 msgstr "Статус перевода"

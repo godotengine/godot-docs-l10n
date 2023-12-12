@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Particle shaders"
-msgstr "Частицы"
+msgstr "Шейдеры частиц (particle)"
 
 msgid ""
 "Particle shaders are a special type of shader that runs before the object is "
@@ -27,6 +26,10 @@ msgid ""
 "position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
+"Шейдеры частиц - это особый тип шейдеров, которые запускаются до отрисовки "
+"объекта. Они используются для вычисления свойств материала, таких как цвет, "
+"положение и вращение. Они рисуются вместе с любым обычным материалом для "
+"CanvasItem или Spatial, в зависимости от того, являются ли они 2D или 3D."
 
 msgid ""
 "Particle shaders are unique because they are not used to draw the object "
@@ -34,17 +37,26 @@ msgid ""
 "by a CanvasItem or Spatial shader. They contain two processor functions: "
 "``start()`` and ``process()``."
 msgstr ""
+"Шейдеры частиц уникальны тем, что они не используются для рисования самого "
+"объекта; они используются для вычисления свойств частиц, которые затем "
+"используются шейдером CanvasItem или Spatial. Они содержат две процессорные "
+"функции: ``start()`` и ``process()``."
 
 msgid ""
 "Unlike other shader types, particle shaders keep the data that was output "
 "the previous frame. Therefore, particle shaders can be used for complex "
 "effects that take place over multiple frames."
 msgstr ""
+"В отличие от других типов шейдеров, шейдеры частиц сохраняют данные, которые "
+"были выведены на предыдущем кадре. Поэтому шейдеры частиц можно использовать "
+"для сложных эффектов, которые происходят в течение нескольких кадров."
 
 msgid ""
 "Particle shaders are only available with GPU-based particle nodes (:ref:"
 "`class_GPUParticles2D` and :ref:`class_GPUParticles3D`)."
 msgstr ""
+"Шейдеры частиц доступны только для узлов частиц на базе GPU (:ref:"
+"`class_GPUParticles2D` и :ref:`class_GPUParticles3D`)."
 
 msgid ""
 "CPU-based particle nodes (:ref:`class_CPUParticles2D` and :ref:"
@@ -52,13 +64,16 @@ msgid ""
 "custom CanvasItem or Spatial shaders), but their motion is *simulated* on "
 "the CPU."
 msgstr ""
+"Узлы частиц на базе CPU (:ref:`class_CPUParticles2D` и :ref:"
+"`class_CPUParticles3D`) *отрисовываются* на GPU (что означает, что они могут "
+"использовать пользовательские шейдеры CanvasItem или Spatial), но их "
+"движение *симулируется* на CPU."
 
 msgid "Render modes"
 msgstr "Режимы визуализации"
 
-#, fuzzy
 msgid "Render mode"
-msgstr "Опции Отрисовки"
+msgstr "Режим рендеринга"
 
 msgid "Description"
 msgstr "Описание"
@@ -67,7 +82,7 @@ msgid "**keep_data**"
 msgstr "**kеep_data**"
 
 msgid "Do not clear previous data on restart."
-msgstr ""
+msgstr "Не удаляет предыдущие данные при перезапуске."
 
 msgid "**disable_force**"
 msgstr "**disаble_force**"
@@ -79,19 +94,16 @@ msgid "**disable_velocity**"
 msgstr "**disаble_velocity**"
 
 msgid "Ignore **VELOCITY** value."
+msgstr "Игнорирует значение **VELOCITY**."
+
+msgid "**collision_use_scale**"
 msgstr ""
 
-#, fuzzy
-msgid "**collision_use_scale**"
-msgstr "collision_layеr"
-
-#, fuzzy
 msgid "Scale the particle's size for collisions."
-msgstr "Подготовка к столкновениям"
+msgstr "Масштабирует размер частицы для столкновений."
 
-#, fuzzy
 msgid "Built-ins"
-msgstr "Встроенный"
+msgstr "Встроенные функции"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -99,13 +111,19 @@ msgid ""
 "marked as \"inout\" provide a sensible default value, and can optionally be "
 "written to. Samplers are not subjects of writing and they are not marked."
 msgstr ""
+"Значения, помеченные как \"in\", предназначены только для чтения. Значения, "
+"помеченные как \"out\", предназначены для необязательной записи и не "
+"обязательно будут содержать разумные значения. Значения, помеченные как "
+"\"inout\", содержат разумное значение по умолчанию и могут быть записаны по "
+"желанию. Сэмплеры не являются объектами записи и не помечаются."
 
-#, fuzzy
 msgid "Global built-ins"
-msgstr "Векторные встроенные типы"
+msgstr "Глобальные встроенные функции"
 
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
+"Глобальные встроенные модули доступны везде, включая пользовательские "
+"функции."
 
 msgid "Built-in"
 msgstr "Встроенный"
@@ -114,7 +132,7 @@ msgid "in float **TIME**"
 msgstr ""
 
 msgid "Global time, in seconds."
-msgstr ""
+msgstr "Глобальное время в секундах."
 
 msgid "in float **PI**"
 msgstr ""
@@ -123,6 +141,8 @@ msgid ""
 "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
 "diameter and amount of radians in half turn."
 msgstr ""
+"Константа ``PI`` (``3.141592``). Отношение окружности круга к его диаметру и "
+"количество радианов в половине оборота."
 
 msgid "in float **TAU**"
 msgstr ""
@@ -131,24 +151,28 @@ msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
+"Константа ``TAU`` (``6.283185``). Эквивалент ``PI * 2`` и количество "
+"радианов в полном обороте."
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "**float**"
+msgstr ""
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
 "logarithm."
 msgstr ""
+"Константа ``E`` (``2,718281``). Число Эйлера и основание натурального "
+"логарифма."
 
-#, fuzzy
 msgid "Start and Process built-ins"
-msgstr "Векторные встроенные типы"
+msgstr "Встроенные Start и Process"
 
 msgid ""
 "These properties can be accessed from both the ``start()`` and ``process()`` "
 "functions."
 msgstr ""
+"Доступ к этим свойствам можно получить как из функций ``start()``, так и из "
+"``process()``."
 
 msgid "Function"
 msgstr "Функция"
@@ -157,43 +181,45 @@ msgid "in float **LIFETIME**"
 msgstr ""
 
 msgid "Particle lifetime."
-msgstr ""
+msgstr "Время жизни частицы."
 
 msgid "in float **DELTA**"
 msgstr ""
 
 msgid "Delta process time."
-msgstr ""
+msgstr "Дельта времени процесса."
 
 msgid "in uint **NUMBER**"
 msgstr ""
 
 msgid "Unique number since emission start."
-msgstr ""
+msgstr "Уникальный номер с момента начала эмиссии."
 
 msgid "in uint **INDEX**"
 msgstr ""
 
 msgid "Particle index (from total particles)."
-msgstr ""
+msgstr "Индекс частиц (от общего количества частиц)."
 
 msgid "in mat4 **EMISSION_TRANSFORM**"
 msgstr ""
 
 msgid "Emitter transform (used for non-local systems)."
-msgstr ""
+msgstr "Преобразование эмиттера (используется для нелокальных систем)."
 
 msgid "in uint **RANDOM_SEED**"
 msgstr ""
 
 msgid "Random seed used as base for random."
 msgstr ""
+"Случайное начальное число используемое в качестве основы для случайного "
+"числа."
 
 msgid "inout bool **ACTIVE**"
 msgstr ""
 
 msgid "``true`` when the particle is active, can be set ``false``."
-msgstr ""
+msgstr "``true``, когда частица активна, может быть установлено ``false``."
 
 msgid "inout vec4 **COLOR**"
 msgstr ""
@@ -201,18 +227,20 @@ msgstr ""
 msgid ""
 "Particle color, can be written to and accessed in mesh's vertex function."
 msgstr ""
+"Цвет частицы можно записать и получить к нему доступ в вершинной функции "
+"сетки."
 
 msgid "inout vec3 **VELOCITY**"
 msgstr ""
 
 msgid "Particle velocity, can be modified."
-msgstr ""
+msgstr "Скорость частиц, может быть изменена."
 
 msgid "inout mat4 **TRANSFORM**"
 msgstr ""
 
 msgid "Particle transform."
-msgstr ""
+msgstr "Преобразование частиц."
 
 msgid "inout vec4 **CUSTOM**"
 msgstr ""
@@ -220,6 +248,8 @@ msgstr ""
 msgid ""
 "Custom particle data. Accessible from shader of mesh as **INSTANCE_CUSTOM**."
 msgstr ""
+"Пользовательские данные о частицах. Доступны из шейдера сетки как "
+"**INSTANCE_CUSTOM**."
 
 msgid "inout float **MASS**"
 msgstr ""
@@ -228,6 +258,8 @@ msgid ""
 "Particle mass, intended to be used with attractors. Equals ``1.0`` by "
 "default."
 msgstr ""
+"Масса частицы, предназначенная для использования с аттракторами. По "
+"умолчанию равна ``1.0``."
 
 msgid "in vec4 **USERDATAX**"
 msgstr ""
@@ -237,15 +269,19 @@ msgid ""
 "the particle process shader. ``USERDATAX`` are six built-ins identified by "
 "number, ``X`` can be numbers between 1 and 6."
 msgstr ""
+"Вектор, позволяющий интегрировать дополнительные пользовательские данные в "
+"шейдер процесса частиц. ``USERDATAX`` - это шесть встроенных модулей, "
+"обозначенных номером, ``X`` может быть числом от 1 до 6."
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_POSITION**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a position to a new particle's transform."
 msgstr ""
+"Флаг для использования в последнем аргументе функции ``emit_subparticle`` "
+"для присвоения позиции трансформации новой частицы."
 
 msgid "in uint **FLAG_EMIT_ROT_SCALE**"
 msgstr ""
@@ -254,6 +290,8 @@ msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign the rotation and scale to a new particle's transform."
 msgstr ""
+"Флаг для использования в последнем аргументе функции ``emit_subparticle`` "
+"для назначения вращения и масштаба трансформации новой частицы."
 
 msgid "in uint **FLAG_EMIT_VELOCITY**"
 msgstr ""
@@ -262,6 +300,8 @@ msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a velocity to a new particle."
 msgstr ""
+"Флаг для использования в последнем аргументе функции ``emit_subparticle`` "
+"для присвоения скорости новой частице."
 
 msgid "in uint **FLAG_EMIT_COLOR**"
 msgstr ""
@@ -270,6 +310,8 @@ msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a color to a new particle."
 msgstr ""
+"Флаг для использования в последнем аргументе функции ``emit_subparticle`` "
+"для назначения цвета новой частице."
 
 msgid "in uint **FLAG_EMIT_CUSTOM**"
 msgstr ""
@@ -278,48 +320,50 @@ msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a custom data vector to a new particle."
 msgstr ""
+"Флаг для использования в последнем аргументе функции ``emit_subparticle`` "
+"для присвоения новой частице пользовательского вектора данных."
 
-#, fuzzy
 msgid "in vec3 **EMITTER_VELOCITY**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
-#, fuzzy
 msgid "Velocity of the Particles node."
-msgstr "Подключите его к узлу *Main*."
+msgstr ""
 
-#, fuzzy
 msgid "in float **INTERPOLATE_TO_END**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid "Value of ``interp_to_end`` property of Particles node."
-msgstr ""
+msgstr "Значение свойства ``interp_to_end`` узла Particles."
 
-#, fuzzy
 msgid "in uint **AMOUNT_RATIO**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid "Value of ``amount_ratio`` property of Particles node."
-msgstr ""
+msgstr "Значение свойства ``amount_ratio`` узла Particles."
 
 msgid ""
 "In order to use the ``COLOR`` variable in a StandardMaterial3D, set "
 "``vertex_color_use_as_albedo`` to ``true``. In a ShaderMaterial, access it "
 "with the ``COLOR`` variable."
 msgstr ""
+"Чтобы использовать переменную ``COLOR`` в StandardMaterial3D, установите "
+"``vertex_color_use_as_albedo`` в ``true``. В ShaderMaterial доступ к ней "
+"осуществляется с помощью переменной ``COLOR``."
 
-#, fuzzy
 msgid "Start built-ins"
-msgstr "Векторные встроенные типы"
+msgstr "Встроенные константы функции Start"
 
-#, fuzzy
 msgid "in bool **RESTART_POSITION**"
-msgstr "в vec2 **LIGHT_UV**"
+msgstr ""
 
 msgid ""
 "``true`` if particle is restarted, or emitted without a custom position (i."
 "e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_POSITION`` flag)."
 msgstr ""
+"``true``, если частица перезапущена или испущена без заданной позиции (т.е. "
+"эта частица была создана с помощью ``emit_subparticle()`` без флага "
+"``FLAG_EMIT_POSITION``)."
 
 msgid "in bool **RESTART_ROT_SCALE**"
 msgstr ""
@@ -329,6 +373,9 @@ msgid ""
 "scale (i.e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_ROT_SCALE`` flag)."
 msgstr ""
+"``true``, если частица перезапущена или испущена без заданного вращения или "
+"масштаба (т.е. эта частица была создана с помощью ``emit_subparticle()`` без "
+"флага ``FLAG_EMIT_ROT_SCALE``)."
 
 msgid "in bool **RESTART_VELOCITY**"
 msgstr ""
@@ -338,6 +385,9 @@ msgid ""
 "e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_VELOCITY`` flag)."
 msgstr ""
+"``true``, если частица перезапущена или испущена без заданной скорости (т.е. "
+"эта частица была создана с помощью ``emit_subparticle()`` без флага "
+"``FLAG_EMIT_VELOCITY``)."
 
 msgid "in bool **RESTART_COLOR**"
 msgstr ""
@@ -347,6 +397,9 @@ msgid ""
 "this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_COLOR`` flag)."
 msgstr ""
+"``true``, если частица перезапущена или испущена без пользовательского цвета "
+"(т.е. эта частица была создана с помощью ``emit_subparticle()`` без флага "
+"``FLAG_EMIT_COLOR``)."
 
 msgid "in bool **RESTART_CUSTOM**"
 msgstr ""
@@ -356,10 +409,12 @@ msgid ""
 "e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_CUSTOM`` flag)."
 msgstr ""
+"``true``, если частица перезапущена или испущена без пользовательского "
+"свойства (т.е. эта частица была создана с помощью ``emit_subparticle()`` без "
+"флага ``FLAG_EMIT_CUSTOM``)."
 
-#, fuzzy
 msgid "Process built-ins"
-msgstr "Векторные встроенные типы"
+msgstr "Встроенные константы функции Process"
 
 msgid "in bool **RESTART**"
 msgstr ""

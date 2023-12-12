@@ -17,17 +17,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Using navigation meshes"
-msgstr "使用 NavigationMesh"
+msgstr "使用导航网格"
 
-#, fuzzy
 msgid ""
 "2D and 3D versions of the navigation mesh are available as :ref:"
 "`NavigationPolygon<class_NavigationPolygon>` and :ref:"
 "`NavigationMesh<class_NavigationMesh>`  respectively."
 msgstr ""
-"NavigationMesh 即导航网格。2D 和 3D 版本的导航网格分别为 :ref:"
+"2D 和 3D 版本的导航网格分别为 :ref:"
 "`NavigationPolygon<class_NavigationPolygon>` 和 :ref:"
 "`NavigationMesh<class_NavigationMesh>`\\ 。"
 
@@ -37,6 +35,8 @@ msgid ""
 "pathfinding to account for an agent's (collision) size you need to shrink "
 "the navigation mesh accordingly."
 msgstr ""
+"导航网格描述的只是代理中心位置的可达区域，会忽略代理可能存在的半径值。如果你"
+"想要让寻路考虑代理的（碰撞）尺寸，就需要让导航网格收缩对应的量。"
 
 msgid ""
 "Navigation works independently from other engine parts like rendering or "
@@ -58,9 +58,8 @@ msgid ""
 "path safely because it is on a navigation mesh\"."
 msgstr ""
 
-#, fuzzy
 msgid "Creating 2D navigation meshes"
-msgstr "NavigationMesh"
+msgstr "创建 2D 导航网格"
 
 msgid ""
 "Navigation meshes in the 2D editor are created with the help of the "
@@ -110,9 +109,8 @@ msgid ""
 "actor sizes."
 msgstr ""
 
-#, fuzzy
 msgid "Creating 3D navigation meshes"
-msgstr "创建 3D NavigationMesh"
+msgstr "创建 3D 导航网格"
 
 msgid ""
 "Navigation meshes in the 3D editor are created with the help of the :ref:"
@@ -229,9 +227,8 @@ msgstr ""
 "别。2D 绘制工具可以用来创建扁平的 3D 导航网格，3D 烘焙工具也能够用来把扁平的 "
 "3D 几何体解析成对应的 2D 导航网格。"
 
-#, fuzzy
 msgid "2D navigation mesh from CollisionPolygons"
-msgstr "调试导航网格多边形"
+msgstr "根据 CollisionPolygon 创建 2D 导航网格"
 
 msgid ""
 "The following script parses all child nodes of a NavigationRegion2D for "
@@ -240,9 +237,8 @@ msgid ""
 "cannot overlap."
 msgstr ""
 
-#, fuzzy
 msgid "Procedural 2D navigation mesh"
-msgstr "NavigationMesh"
+msgstr "程序式 2D 导航网格"
 
 msgid ""
 "The following script creates a new 2D navigation region and fills it with "
@@ -250,16 +246,14 @@ msgid ""
 "resource."
 msgstr ""
 
-#, fuzzy
 msgid "Procedural 3D navigation mesh"
-msgstr "NavigationMesh"
+msgstr "程序式 3D 导航网格"
 
 msgid ""
 "The following script creates a new 3D navigation region and fills it with "
 "procedurally generated navigation mesh data from a NavigationMesh resource."
 msgstr ""
 
-#, fuzzy
 msgid "Navigation mesh for 3D GridMaps"
 msgstr "3D GridMap 的导航网格"
 

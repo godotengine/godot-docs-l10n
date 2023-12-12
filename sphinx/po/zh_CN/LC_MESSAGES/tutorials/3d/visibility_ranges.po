@@ -251,7 +251,6 @@ msgstr ""
 "Range > End Margin** 确定。此模式可提供最佳性能，因为它不会强制渲染在淡入淡出"
 "过渡期间变得透明。"
 
-#, fuzzy
 msgid ""
 "**Self:** Uses alpha blending to smoothly fade between LOD levels. The node "
 "will fade-out itself when reaching the limits of its own visibility range. "
@@ -260,10 +259,10 @@ msgid ""
 "rendering on the object during its fade transition, so it has a performance "
 "impact."
 msgstr ""
-"**Self（自身）：** 使用 Alpha 混合在 LOD 级别之间平滑地淡入淡出。淡入淡出过渡"
-"距离由 **Visibility Range > Begin Margin** 和 **Visibility Range > End "
-"Margin** 确定。此模式在淡入淡出过渡期间，强制对对象进行透明渲染，因此会对性能"
-"产生一定影响。"
+"**Self（自身）：** 使用 Alpha 混合在 LOD 级别之间平滑地淡入淡出。当达到其自身"
+"可见范围的极限时，节点将自行淡出。淡入淡出过渡距离由 **Visibility Range > "
+"Begin Margin** 和 **Visibility Range > End Margin** 确定。此模式在淡入淡出过"
+"渡期间，强制对对象进行透明渲染，因此会对性能产生一定影响。"
 
 #, fuzzy
 msgid ""
@@ -396,7 +395,7 @@ msgid "Normal Map (especially on mobile platforms)"
 msgstr "法线贴图（尤其是在移动平台上）"
 
 msgid "Rim"
-msgstr "Rim(边缘)"
+msgstr "Rim（边缘）"
 
 msgid "Clearcoat"
 msgstr "Clearcoat（清漆）"
@@ -404,9 +403,8 @@ msgstr "Clearcoat（清漆）"
 msgid "Anisotropy"
 msgstr "Anisotropy（各向异性）"
 
-#, fuzzy
 msgid "Height"
-msgstr "灯光"
+msgstr "高度"
 
 msgid "Subsurface Scattering"
 msgstr "Subsurface Scattering（次表面散射）"

@@ -101,7 +101,6 @@ msgstr ""
 "Приєднання :ref:`скрипта <class_Script>` до вашого об'єкта розширює методи, "
 "властивості та сигнали, доступні з ``ClassDB``."
 
-#, fuzzy
 msgid ""
 "Even scripts that don't use the ``extends`` keyword implicitly inherit from "
 "the engine's base :ref:`RefCounted <class_RefCounted>` class. As a result, "
@@ -110,10 +109,10 @@ msgid ""
 "<class_Node>`."
 msgstr ""
 "Навіть скрипти, які не використовують ключове слово ``extends``, неявно "
-"успадковують базовий клас :ref:`Reference <class_Reference>`. Як результат, "
-"ви можете створити екземпляр скрипта без ключового слова ``extends`` з коду. "
-"Оскільки вони розширюються ``Reference`` , ви не можете приєднати їх до :ref:"
-"`вузла<class_Node>`."
+"успадковують з бази рушія клас :ref:`RefCounted <class_RefCounted>`. В "
+"результаті ви можете викликати з коду скрипти без ключового слова "
+"``extends``. Однак, оскільки вони розширюють ``RefCounted``, ви не можете "
+"приєднати їх до :ref:`Node <class_Node>`."
 
 msgid "Scenes"
 msgstr "Сцени"
@@ -129,34 +128,29 @@ msgstr ""
 "Створення сцени схоже на наявність скрипта, який створює вузли та додає їх "
 "як нащадки з допомогою ``add_child()``."
 
-#, fuzzy
 msgid ""
 "We often pair a scene with a scripted root node that makes use of the "
 "scene's nodes. As such, the script extends the scene by adding behavior "
 "through imperative code."
 msgstr ""
-"Ми часто поєднуємо сцену зі скриптовим кореневим вузлом, який використовує "
-"вузли сцени. Таким чином, сцена часто є продовженням декларативного коду "
-"скрипта."
+"Ми часто об'єднуємо сцену зі скриптовим кореневим вузлом, який використовує "
+"вузли сцени. Таким чином, скрипт розширює сцену, додаючи поведінку за "
+"допомогою імперативного коду."
 
 msgid "The content of a scene helps to define:"
 msgstr "Зміст сцени допомагає визначити:"
 
-#, fuzzy
 msgid "What nodes are available to the script."
-msgstr "Які вузли доступні для скрипта"
+msgstr "Які вузли доступні скрипту."
 
-#, fuzzy
 msgid "How they are organized."
-msgstr "Як вони організовані"
+msgstr "Як вони організовані."
 
-#, fuzzy
 msgid "How they are initialized."
-msgstr "Як вони ініціалізовані"
+msgstr "Як вони ініціалізуються."
 
-#, fuzzy
 msgid "What signal connections they have with each other."
-msgstr "Які сигнальні зв’язки вони мають між собою"
+msgstr "Які сигнальні зв'язки вони мають між собою."
 
 msgid ""
 "Why is any of this important to scene organization? Because instances of "

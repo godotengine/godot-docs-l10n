@@ -261,15 +261,14 @@ msgstr ""
 "(_ready () в GDScript), коли вузол та всі його нащадки знаходяться всередині "
 "активної сцени."
 
-#, fuzzy
 msgid ""
 "When a scene (or part of it) is removed, they receive the \"exit scene\" "
 "notification ( ``_exit_tree()`` callback in GDScript) in bottom-to-top order "
 "(the exact reverse of top-to-bottom order)."
 msgstr ""
-"Коли сцена (або її частина) видаляється, вони отримують сповіщення \"exit "
-"scene\" (зворотний виклик _exit_tree () у GDScript) у порядку \"знизу до "
-"верху\""
+"Коли сцену (або її частину) видалено, вони отримують сповіщення про \"вихід "
+"зі сцени\" (зворотний виклик ``_exit_tree()`` у GDScript) у порядку знизу-"
+"вгору (зворотному порядку зверху-вниз)."
 
 msgid "Changing current scene"
 msgstr "Зміна поточної сцени"

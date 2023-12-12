@@ -24,8 +24,8 @@ msgid ""
 "A NavigationMap is an abstract navigation world on the NavigationServer "
 "identified by a NavigationServer :ref:`RID<class_RID>`."
 msgstr ""
-"NavigationMap 即导航地图。NavigationMap 是抽象的导航世界，位于 "
-"NavigationServer 中，使用 NavigationServer 的 :ref:`RID<class_RID>` 标识。"
+"NavigationMap 即导航地图，是抽象的导航世界，位于 NavigationServer 中，使用 "
+"NavigationServer 的 :ref:`RID<class_RID>` 标识。"
 
 msgid ""
 "A map can hold and connect a near infinite number of navigation regions with "
@@ -44,29 +44,33 @@ msgid ""
 "Switches will become effective on NavigationServer synchronization."
 msgstr ""
 
-#, fuzzy
 msgid "Default navigation maps"
-msgstr "创建导航（-navmesh）"
+msgstr "默认导航地图"
 
 msgid ""
 "By default Godot creates a navigation map for each :ref:"
 "`World2D<class_World2D>` and :ref:`World3D<class_World3D>` of the root "
 "viewport."
 msgstr ""
+"Godot 默认会为根视口的每个 :ref:`World2D<class_World2D>` 和 :ref:"
+"`World3D<class_World3D>` 创建一个导航地图。"
 
 msgid ""
 "The 2D default navigation map RID can be obtained with ``get_world_2d()."
 "get_navigation_map()`` from any :ref:`Node2D<class_Node2D>` inheriting Node."
 msgstr ""
+"默认的 2D 导航地图 RID 可以从继承自 :ref:`Node2D<class_Node2D>` 的任何 Node "
+"的 ``get_world_2d().get_navigation_map()`` 获取。"
 
 msgid ""
 "The 3D default navigation map RID can be obtained with ``get_world_3d()."
 "get_navigation_map()`` from any :ref:`Node3D<class_Node3D>` inheriting Node."
 msgstr ""
+"默认的 3D 导航地图 RID 可以从继承自 :ref:`Node3D<class_Node3D>` 的任何 Node "
+"的 ``get_world_3d().get_navigation_map()`` 获取。"
 
-#, fuzzy
 msgid "Creating new navigation maps"
-msgstr "创建导航（-navmesh）"
+msgstr "新建导航地图"
 
 msgid ""
 "The NavigationServer can create and support as many navigation maps as "

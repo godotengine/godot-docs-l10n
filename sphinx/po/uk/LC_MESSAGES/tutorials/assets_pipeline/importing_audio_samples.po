@@ -31,9 +31,8 @@ msgstr ""
 "Godot пропонує три основні варіанти імпорту аудіоданих: WAV, Ogg Vorbis і "
 "MP3."
 
-#, fuzzy
 msgid "Each format has different advantages:"
-msgstr "Кожен має різні переваги."
+msgstr "Кожен формат має свої переваги:"
 
 msgid ""
 "WAV files use raw data or light compression (IMA-ADPCM). They are "
@@ -309,9 +308,8 @@ msgid ""
 "playing dozens of compressed sounds at the same time on mobile/web platforms."
 msgstr ""
 
-#, fuzzy
 msgid "Import options (Ogg Vorbis and MP3)"
-msgstr "Варіантів імпорту дуже багато:"
+msgstr "Варіанти імпорту (Ogg Vorbis та MP3)"
 
 #, fuzzy
 msgid "Loop"
@@ -322,9 +320,8 @@ msgid ""
 "ends by reaching the end of the audio."
 msgstr ""
 
-#, fuzzy
 msgid "Loop Offset"
-msgstr "Зміщення"
+msgstr "Циклічне зміщення"
 
 msgid ""
 "The loop offset determines where audio will start to loop after playback "
@@ -402,13 +399,12 @@ msgid ""
 "choose **Advanced…** in the Import dock), you will see a dialog appear:"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Advanced dialog when double-clicking a Ogg Vorbis or MP3 file in the "
 "FileSystem dock"
 msgstr ""
-"Крім того, ви можете двічі клацнути файл ``Main.gd`` на панелі *Файлова "
-"система*."
+"Розширене діалогове вікно після подвійного клацання Ogg Vorbis або MP3-файлу "
+"у док-станції FileSystem"
 
 msgid ""
 "This dialog allows you to edit the audio's loop point with a real-time "
@@ -474,16 +470,15 @@ msgstr ""
 msgid "Use real-time audio effects to reduce file size"
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Godot has an :ref:`extensive bus system <doc_audio_buses>` with built-in "
 "effects. This saves SFX artists the need to add reverb to the sound effects, "
 "reducing their size greatly and ensuring correct trimming."
 msgstr ""
-"Godot має :ref:`розгалужену систему <doc_audio_buses>` із вбудованими "
-"ефектами. Це позбавляє виконавців SFX необхідності додавати реверберацію до "
-"звукових ефектів, значно зменшуючи їх розмір та забезпечуючи правильне "
-"обрізання. Скажіть ні SFX із запеченим ревербератором!"
+"Godot має :ref:`розгалужену систему шин <doc_audio_buses>` з вбудованими "
+"ефектами. Це позбавляє SFX-художників необхідності додавати реверберацію до "
+"звукових ефектів, значно зменшуючи їхній розмір і забезпечуючи правильне "
+"обрізання."
 
 #, fuzzy
 msgid ""

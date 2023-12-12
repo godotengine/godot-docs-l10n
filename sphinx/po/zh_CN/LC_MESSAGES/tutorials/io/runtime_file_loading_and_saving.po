@@ -17,9 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "Runtime file loading and saving"
-msgstr "运行以下命令："
+msgstr "运行时文件加载和保存"
 
 #, fuzzy
 msgid ""
@@ -88,12 +87,12 @@ msgstr ""
 "godot-demo-projects/tree/master/mobile/android_iap>`__\\ 找到演示项目。"
 
 msgid "Plain text and binary files"
-msgstr ""
+msgstr "纯文本文件和二进制文件"
 
 msgid ""
 "Godot's :ref:`class_FileAccess` class provides methods to access files on "
 "the filesystem for reading and writing:"
-msgstr ""
+msgstr "Godot 的 :ref:`class_FileAccess` 类提供了读写文件系统中文件的方法："
 
 msgid ""
 "To handle custom binary formats (such as loading file formats not supported "
@@ -110,9 +109,8 @@ msgid ""
 "``decode_`` and ``encode_``. See also :ref:`doc_binary_serialization_api`."
 msgstr ""
 
-#, fuzzy
 msgid "Images"
-msgstr "mainImage"
+msgstr "图像"
 
 msgid ""
 "Image's :ref:`Image.load_from_file <class_Image_method_load_from_file>` "
@@ -128,28 +126,36 @@ msgstr ""
 msgid ""
 ":ref:`Image.load_jpg_from_buffer <class_Image_method_load_jpg_from_buffer>`"
 msgstr ""
+":ref:`Image.load_jpg_from_buffer <class_Image_method_load_jpg_from_buffer>`"
 
 msgid ""
 ":ref:`Image.load_ktx_from_buffer <class_Image_method_load_ktx_from_buffer>`"
 msgstr ""
+":ref:`Image.load_ktx_from_buffer <class_Image_method_load_ktx_from_buffer>`"
 
 msgid ""
 ":ref:`Image.load_png_from_buffer <class_Image_method_load_png_from_buffer>`"
 msgstr ""
+":ref:`Image.load_png_from_buffer <class_Image_method_load_png_from_buffer>`"
 
 msgid ""
 ":ref:`Image.load_svg_from_buffer <class_Image_method_load_svg_from_buffer>` "
 "or :ref:`Image.load_svg_from_string "
 "<class_Image_method_load_svg_from_string>`"
 msgstr ""
+":ref:`Image.load_svg_from_buffer <class_Image_method_load_svg_from_buffer>` "
+"或 :ref:`Image.load_svg_from_string "
+"<class_Image_method_load_svg_from_string>`"
 
 msgid ""
 ":ref:`Image.load_tga_from_buffer <class_Image_method_load_tga_from_buffer>`"
 msgstr ""
+":ref:`Image.load_tga_from_buffer <class_Image_method_load_tga_from_buffer>`"
 
 msgid ""
 ":ref:`Image.load_webp_from_buffer <class_Image_method_load_webp_from_buffer>`"
 msgstr ""
+":ref:`Image.load_webp_from_buffer <class_Image_method_load_webp_from_buffer>`"
 
 msgid ""
 "Several image formats can also be saved by Godot at runtime using the "
@@ -160,22 +166,31 @@ msgid ""
 ":ref:`Image.save_png <class_Image_method_save_png>` or :ref:`Image."
 "save_png_to_buffer <class_Image_method_save_png_to_buffer>`"
 msgstr ""
+":ref:`Image.save_png <class_Image_method_save_png>` 或 :ref:`Image."
+"save_png_to_buffer <class_Image_method_save_png_to_buffer>`"
 
 msgid ""
 ":ref:`Image.save_webp <class_Image_method_save_webp>` or :ref:`Image."
 "save_webp_to_buffer <class_Image_method_save_webp_to_buffer>`"
 msgstr ""
+":ref:`Image.save_webp <class_Image_method_save_webp>` 或 :ref:`Image."
+"save_webp_to_buffer <class_Image_method_save_webp_to_buffer>`"
 
 msgid ""
 ":ref:`Image.save_jpg <class_Image_method_save_jpg>` or :ref:`Image."
 "save_jpg_to_buffer <class_Image_method_save_jpg_to_buffer>`"
 msgstr ""
+":ref:`Image.save_jpg <class_Image_method_save_jpg>` 或 :ref:`Image."
+"save_jpg_to_buffer <class_Image_method_save_jpg_to_buffer>`"
 
 msgid ""
 ":ref:`Image.save_exr <class_Image_method_save_exr>` or :ref:`Image."
 "save_exr_to_buffer <class_Image_method_save_exr_to_buffer>` *(only available "
 "in editor builds, cannot be used in exported projects)*"
 msgstr ""
+":ref:`Image.save_exr <class_Image_method_save_exr>` 或 :ref:`Image."
+"save_exr_to_buffer <class_Image_method_save_exr_to_buffer>` *（仅在编辑器版本"
+"中可用，无法在导出后的项目中使用）*"
 
 msgid ""
 "The methods with the ``to_buffer`` suffix save the image to a "
@@ -197,9 +212,8 @@ msgid ""
 "node (which requires conversion to :ref:`class_ImageTexture`):"
 msgstr ""
 
-#, fuzzy
 msgid "Audio/video files"
-msgstr "音频特效"
+msgstr "音视频文件"
 
 msgid ""
 "Godot supports loading Ogg Vorbis audio at runtime. Note that not *all* "
@@ -212,12 +226,13 @@ msgid ""
 "Example of loading an Ogg Vorbis audio file in an :ref:"
 "`class_AudioStreamPlayer` node:"
 msgstr ""
+"通过 :ref:`class_AudioStreamPlayer` 节点加载 Ogg Vorbis 音频文件的示例："
 
-#, fuzzy
 msgid ""
 "Example of loading an Ogg Theora video file in a :ref:"
 "`class_VideoStreamPlayer` node:"
-msgstr "Godot 通过 :ref:`class_VideoPlayer` 节点支持视频的播放。"
+msgstr ""
+"通过 :ref:`class_VideoStreamPlayer` 节点加载 Ogg Theora 视频文件的示例："
 
 msgid ""
 "Godot doesn't support runtime loading of MP3 or WAV files yet. Until this is "
@@ -232,9 +247,8 @@ msgid ""
 "procedurally generated audio or microphone recordings."
 msgstr ""
 
-#, fuzzy
 msgid "3D scenes"
-msgstr "场景"
+msgstr "3D 场景"
 
 msgid ""
 "Godot has first-class support for glTF 2.0, both in the editor and exported "
@@ -265,14 +279,15 @@ msgid ""
 "append_from_file <class_GLTFDocument_method_append_from_file>`."
 msgstr ""
 
-#, fuzzy
 msgid "Fonts"
-msgstr "字体别名"
+msgstr "字体"
 
 msgid ""
 ":ref:`FontFile.load_dynamic_font <class_FontFile_method_load_bitmap_font>` "
 "supports the following font file formats: TTF, OTF, WOFF, WOFF2, PFB, PFM"
 msgstr ""
+":ref:`FontFile.load_dynamic_font <class_FontFile_method_load_bitmap_font>` 支"
+"持以下字体文件格式：TTF、OTF、WOFF、WOFF2、PFB、PFM"
 
 msgid ""
 "On the other hand, :ref:`FontFile.load_bitmap_font "
@@ -291,7 +306,7 @@ msgid ""
 msgstr ""
 
 msgid "ZIP archives"
-msgstr ""
+msgstr "ZIP 压缩包"
 
 msgid ""
 "Godot supports reading and writing ZIP archives using the :ref:"

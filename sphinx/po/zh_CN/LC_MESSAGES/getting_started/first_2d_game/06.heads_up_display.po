@@ -27,16 +27,15 @@ msgstr ""
 "我们的游戏最后还需要用户界面（User Interface，UI），显示分数、“游戏结束”信"
 "息、重启按钮。"
 
-#, fuzzy
 msgid ""
 "Create a new scene, click the \"Other Node\" button and add a :ref:"
 "`CanvasLayer <class_CanvasLayer>` node named ``HUD``. \"HUD\" stands for "
 "\"heads-up display\", an informational display that appears as an overlay on "
 "top of the game view."
 msgstr ""
-"创建新场景，然后添加一个 :ref:`CanvasLayer <class_CanvasLayer>` 节点并命名为 "
-"``HUD``\\ 。“HUD”是“heads-up display”（游戏信息显示）的缩写，是覆盖在游戏视图"
-"上显示的信息。"
+"创建新场景，点击“其他节点”按钮，然后添加一个 :ref:`CanvasLayer "
+"<class_CanvasLayer>` 节点并命名为 ``HUD``\\ 。“HUD”是“heads-up display”（游戏"
+"信息显示）的缩写，是覆盖在游戏视图上显示的信息。"
 
 msgid ""
 "The :ref:`CanvasLayer <class_CanvasLayer>` node lets us draw our UI elements "
@@ -139,7 +138,6 @@ msgstr "为“Anchor Preset”选择 ``Center Top``\\ 。"
 msgid "Message"
 msgstr "Message"
 
-#, fuzzy
 msgid "Add the text ``Dodge the Creeps!``."
 msgstr "添加文本 ``Dodge the Creeps!``\\ 。"
 
@@ -274,11 +272,12 @@ msgstr ""
 "最后，将下面的代码添加到 ``_on_score_timer_timeout()`` 中，保持不断变化的分数"
 "的同步显示："
 
-#, fuzzy
 msgid ""
 "Remember to remove the call to ``new_game()`` from ``_ready()`` if you "
 "haven't already, otherwise your game will start automatically."
-msgstr "请不要忘记在 ``_ready()`` 中移除对 ``new_game()`` 的调用。"
+msgstr ""
+"如果还没做的话，请不要忘记在 ``_ready()`` 中移除对 ``new_game()`` 的调用。否"
+"则你的游戏将自动开始。"
 
 msgid ""
 "Now you're ready to play! Click the \"Play the Project\" button. You will be "

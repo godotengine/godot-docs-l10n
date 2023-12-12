@@ -121,7 +121,6 @@ msgstr ""
 "Diese vier Bedingungen geben uns acht Möglichkeiten und somit acht mögliche "
 "Richtungen."
 
-#, fuzzy
 msgid ""
 "In case the player presses, say, both W and D simultaneously, the vector "
 "will have a length of about ``1.4``. But if they press a single key, it will "
@@ -133,7 +132,7 @@ msgstr ""
 "von etwa ``1,4``. Drückt er aber nur eine Taste, hat er eine Länge von "
 "``1``. Wir wollen, dass die Länge des Vektors konsistent ist und sich nicht "
 "diagonal schneller bewegt. Um dies zu erreichen, können wir seine Methode "
-"``normalize()`` aufrufen."
+"``normalized()`` aufrufen."
 
 msgid ""
 "Here, we only normalize the vector if the direction has a length greater "
@@ -193,7 +192,6 @@ msgstr ""
 "warum wir die Schwerkraft auf den ``Player`` nur anwenden, während er in der "
 "Luft ist."
 
-#, fuzzy
 msgid ""
 "For the vertical velocity, we subtract the fall acceleration multiplied by "
 "the delta time every frame. This line of code will cause our character to "
@@ -270,7 +268,6 @@ msgstr ""
 "Wenn Sie die Szene zuvor geschlossen hatten, gehen Sie zum *Dateisystem*-"
 "Dock und doppelklicken Sie auf ``main.tscn``, um sie erneut zu öffnen."
 
-#, fuzzy
 msgid ""
 "To instantiate the ``Player``, right-click on the ``Main`` node and select "
 "*Instantiate Child Scene*."

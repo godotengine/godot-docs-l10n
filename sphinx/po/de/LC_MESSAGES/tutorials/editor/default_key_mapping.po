@@ -30,12 +30,11 @@ msgid ""
 "keys associated with these and other actions navigate to ``Editor -> Editor "
 "Settings -> Shortcuts``."
 msgstr ""
-"Viele der Godot Editor Funktionen können auch mittels Tastatur-Kurzbefehlen "
-"(Tastenkürzel) erreicht werden. Diese Seite listet Funktionen mit den "
-"standardmäßig zugewiesenen Shortcuts auf, es können aber auch eigene in den "
-"Editor Einstellungen zugewiesen werden. Um die Kurzbefehle zu ändern oder "
-"für andere Aktionen zu erzeugen, gehe zu ``Editor -> Editoreinstellungen -> "
-"Tastenkürzel``."
+"Viele der Funktionen des Godot Editors können auch mittels Tastenkürzeln "
+"erreicht werden. Diese Seite listet Funktionen mit den Default-Tastenkürzeln "
+"auf, es können aber auch eigene in den Editor-Einstellungen zugewiesen "
+"werden. Um die Tastenkürzel zu ändern oder für andere Aktionen zu erzeugen, "
+"gehnavigieren Sie zu ``Editor -> Editoreinstellungen -> Tastenkürzel``."
 
 msgid ""
 "While some actions are universal, a lot of shortcuts are specific to "
@@ -43,8 +42,8 @@ msgid ""
 "to be assigned to more than one function. The correct action will be "
 "performed depending on the context."
 msgstr ""
-"Während einige Aktionen universell sind, gibt es auch viele Verknüpfungen "
-"speziell für einzelne Tools. Aus diesem Grund können einige "
+"Während einige Aktionen universell sind, gibt es auch viele Tastenkürzel "
+"speziell für bestimmte Tools. Aus diesem Grund können einige "
 "Tastenkombinationen mehr als einer Funktion zugeordnet werden. Die richtige "
 "Aktion wird je nach Kontext ausgeführt."
 
@@ -58,15 +57,15 @@ msgstr ""
 "Während Windows und Linux die meisten Standardeinstellungen des Editors "
 "gemeinsam nutzen, können sich einige Tastenkürzel für die MacOS-Version "
 "unterscheiden. Dies geschieht zur besseren Integration des Editors in das "
-"MacOS-Ökosystem. Benutzer, die mit Tastenkürzeln auf diesem Betriebssystem "
-"fließend umgehen, sollten die Standardtastenzuordnung des Godot Editors "
-"intuitiv finden."
+"MacOS-Ökosystem. Benutzer, die mit den Tastenkürzeln auf diesem "
+"Betriebssystem vertraut sind, sollten die Default-Tastenbelegung des Godot-"
+"Editors intuitiv finden."
 
 msgid "General Editor Actions"
 msgstr "Allgemeine Editoraktionen"
 
 msgid "Action name"
-msgstr "Aktionsname"
+msgstr "Name der Aktion"
 
 msgid "Windows, Linux"
 msgstr "Windows, Linux"
@@ -75,13 +74,13 @@ msgid "macOS"
 msgstr "macOS"
 
 msgid "Editor setting"
-msgstr "Editoreinstellungen"
+msgstr "Editoreinstellung"
 
 msgid "Open 2D Editor"
 msgstr "2D-Editor öffnen"
 
 msgid ":kbd:`Ctrl + F1`"
-msgstr ":kbd:`Ctrl + F12`"
+msgstr ":kbd:`Strg + F1`"
 
 msgid ":kbd:`Alt + 1`"
 msgstr ":kbd:`Alt + 1`"
@@ -93,7 +92,7 @@ msgid "Open 3D Editor"
 msgstr "3D-Editor öffnen"
 
 msgid ":kbd:`Ctrl + F2`"
-msgstr ":kbd:`Ctrl + F2`"
+msgstr ":kbd:`Strg + F2`"
 
 msgid ":kbd:`Alt + 2`"
 msgstr ":kbd:`Alt + 2`"
@@ -105,7 +104,7 @@ msgid "Open Script Editor"
 msgstr "Skripteditor öffnen"
 
 msgid ":kbd:`Ctrl + F3`"
-msgstr ":kbd:`Ctrl + F`"
+msgstr ":kbd:`Strg + F3`"
 
 msgid ":kbd:`Alt + 3`"
 msgstr ":kbd:`Alt + 3`"
@@ -120,7 +119,7 @@ msgid ":kbd:`F1`"
 msgstr ":kbd:`F1`"
 
 msgid ":kbd:`Alt + Space`"
-msgstr ":kbd:`Alt + Space`"
+msgstr ":kbd:`Alt + Leertaste`"
 
 msgid "``editor/editor_help``"
 msgstr "``editor/editor_help``"
@@ -129,7 +128,7 @@ msgid "Distraction Free Mode"
 msgstr "Ablenkungsfreier Modus"
 
 msgid ":kbd:`Ctrl + Shift + F11`"
-msgstr ":kbd:`Ctrl + Shift + F11`"
+msgstr ":kbd:`Strg + Umschalt + F11`"
 
 msgid ":kbd:`Cmd + Ctrl + D`"
 msgstr ":kbd:`Cmd + Ctrl + D`"
@@ -141,7 +140,7 @@ msgid "Next tab"
 msgstr "Nächster Tab"
 
 msgid ":kbd:`Ctrl + Tab`"
-msgstr ":kbd:`Ctrl + Tab`"
+msgstr ":kbd:`Strg + Tab`"
 
 msgid ":kbd:`Cmd + Tab`"
 msgstr ":kbd:`Cmd + Tab`"
@@ -153,10 +152,10 @@ msgid "Previous tab"
 msgstr "Vorheriger Tab"
 
 msgid ":kbd:`Ctrl + Shift + Tab`"
-msgstr ":kbd:`Ctrl + Shift + Tab`"
+msgstr ":kbd:`Strg + Umschalt + Tab`"
 
 msgid ":kbd:`Cmd + Shift + Tab`"
-msgstr ":kbd:`Cmd + Shift + Tab`"
+msgstr ":kbd:`Cmd + Umschalt + Tab`"
 
 msgid "``editor/prev_tab``"
 msgstr "``editor/prev_tab``"
@@ -165,7 +164,7 @@ msgid "Filter Files"
 msgstr "Dateien filtern"
 
 msgid ":kbd:`Ctrl + Alt + P`"
-msgstr ":kbd:`Ctrl + Alt + P`"
+msgstr ":kbd:`Strg + Alt + P`"
 
 msgid ":kbd:`Cmd + Alt + P`"
 msgstr ":kbd:`Cmd + Alt + P`"
@@ -177,7 +176,7 @@ msgid "Open Scene"
 msgstr "Szene öffnen"
 
 msgid ":kbd:`Ctrl + O`"
-msgstr ":kbd:`Ctrl + O`"
+msgstr ":kbd:`Strg + O`"
 
 msgid ":kbd:`Cmd + O`"
 msgstr ":kbd:`Cmd + O`"
@@ -189,10 +188,10 @@ msgid "Close Scene"
 msgstr "Szene schließen"
 
 msgid ":kbd:`Ctrl + Shift + W`"
-msgstr ":kbd:`Ctrl + Shift + W`"
+msgstr ":kbd:`Strg + Umschalt + W`"
 
 msgid ":kbd:`Cmd + Shift + W`"
-msgstr ":kbd:`Cmd + Shift + W`"
+msgstr ":kbd:`Cmd + Umschalt + W`"
 
 msgid "``editor/close_scene``"
 msgstr "``editor/close_scene``"
@@ -201,10 +200,10 @@ msgid "Reopen Closed Scene"
 msgstr "Geschlossene Szene erneut öffnen"
 
 msgid ":kbd:`Ctrl + Shift + T`"
-msgstr ":kbd:`Ctrl + Shift + T`"
+msgstr ":kbd:`Strg + Umschalt + T`"
 
 msgid ":kbd:`Cmd + Shift + T`"
-msgstr ":kbd:`Cmd + Shift + T`"
+msgstr ":kbd:`Cmd + Umschalt + T`"
 
 msgid "``editor/reopen_closed_scene``"
 msgstr "``editor/reopen_closed_scene``"
@@ -213,7 +212,7 @@ msgid "Save Scene"
 msgstr "Szene speichern"
 
 msgid ":kbd:`Ctrl + S`"
-msgstr ":kbd:`Ctrl + S`"
+msgstr ":kbd:`Strg + S`"
 
 msgid ":kbd:`Cmd + S`"
 msgstr ":kbd:`Cmd + S`"
@@ -225,10 +224,10 @@ msgid "Save Scene As"
 msgstr "Szene speichern als"
 
 msgid ":kbd:`Ctrl + Shift + S`"
-msgstr ":kbd:`Ctrl + Shift + S`"
+msgstr ":kbd:`Strg + Umschalt + S`"
 
 msgid ":kbd:`Cmd + Shift + S`"
-msgstr ":kbd:`Cmd + Shift + S`"
+msgstr ":kbd:`Cmd + Umschalt + S`"
 
 msgid "``editor/save_scene_as``"
 msgstr "``editor/save_scene_as``"
@@ -237,10 +236,10 @@ msgid "Save All Scenes"
 msgstr "Alle Szenen speichern"
 
 msgid ":kbd:`Ctrl + Shift + Alt + S`"
-msgstr ":kbd:`Ctrl + Shift + Alt + S`"
+msgstr ":kbd:`Strg + Umschalt + Alt + S`"
 
 msgid ":kbd:`Cmd + Shift + Alt + S`"
-msgstr ":kbd:`Cmd + Shift + Alt + S`"
+msgstr ":kbd:`Cmd + Umschalt + Alt + S`"
 
 msgid "``editor/save_all_scenes``"
 msgstr "``editor/save_all_scenes``"
@@ -249,19 +248,19 @@ msgid "Quick Open"
 msgstr "Schnell Öffnen"
 
 msgid ":kbd:`Shift + Alt + O`"
-msgstr ":kbd:`Shift + Alt + O`"
+msgstr ":kbd:`Umschalt + Alt + O`"
 
 msgid "``editor/quick_open``"
 msgstr "``editor/quick_open``"
 
 msgid "Quick Open Scene"
-msgstr "Schnell Szene öffnen"
+msgstr "Szene schnell öffnen"
 
 msgid ":kbd:`Ctrl + Shift + O`"
-msgstr ":kbd:`Ctrl + Shift + O`"
+msgstr ":kbd:`Strg + Umschalt + O`"
 
 msgid ":kbd:`Cmd + Shift + O`"
-msgstr ":kbd:`Cmd + Shift + O`"
+msgstr ":kbd:`Cmd + Umschalt + O`"
 
 msgid "``editor/quick_open_scene``"
 msgstr "``editor/quick_open_scene``"
@@ -270,7 +269,7 @@ msgid "Quick Open Script"
 msgstr "Skript schnell öffnen"
 
 msgid ":kbd:`Ctrl + Alt + O`"
-msgstr ":kbd:`Ctrl + Alt + O`"
+msgstr ":kbd:`Strg + Alt + O`"
 
 msgid ":kbd:`Cmd + Alt + O`"
 msgstr ":kbd:`Cmd + Alt + O`"
@@ -282,7 +281,7 @@ msgid "Undo"
 msgstr "Rückgängig"
 
 msgid ":kbd:`Ctrl + Z`"
-msgstr ":kbd:`Ctrl + Z`"
+msgstr ":kbd:`Strg + Z`"
 
 msgid ":kbd:`Cmd + Z`"
 msgstr ":kbd:`Cmd + Z`"
@@ -294,19 +293,19 @@ msgid "Redo"
 msgstr "Wiederherstellen"
 
 msgid ":kbd:`Ctrl + Shift + Z`"
-msgstr ":kbd:`Ctrl + Shift + Z`"
+msgstr ":kbd:`Strg + Umschalt + Z`"
 
 msgid ":kbd:`Cmd + Shift + Z`"
-msgstr ":kbd:`Cmd + Shift + Z`"
+msgstr ":kbd:`Cmd + Umschalt + Z`"
 
 msgid "``editor/redo``"
 msgstr "``editor/redo``"
 
 msgid "Quit"
-msgstr "Verlassen"
+msgstr "Beenden"
 
 msgid ":kbd:`Ctrl + Q`"
-msgstr ":kbd:`Ctrl + Q`"
+msgstr ":kbd:`Strg + Q`"
 
 msgid ":kbd:`Cmd + Q`"
 msgstr ":kbd:`Cmd + Q`"
@@ -318,10 +317,10 @@ msgid "Quit to Project List"
 msgstr "Zum Projektmanager zurückkehren"
 
 msgid ":kbd:`Ctrl + Shift + Q`"
-msgstr ":kbd:`Ctrl + Shift + Q`"
+msgstr ":kbd:`Strg + Umschalt + Q`"
 
 msgid ":kbd:`Shift + Alt + Q`"
-msgstr ":kbd:`Shift + Alt + Q`"
+msgstr ":kbd:`Umschalt + Alt + Q`"
 
 msgid "``editor/quit_to_project_list``"
 msgstr "``editor/quit_to_project_list``"
@@ -330,7 +329,7 @@ msgid "Take Screenshot"
 msgstr "Screenshot erstellen"
 
 msgid ":kbd:`Ctrl + F12`"
-msgstr ":kbd:`Ctrl + F12`"
+msgstr ":kbd:`Strg + F12`"
 
 msgid ":kbd:`Cmd + F12`"
 msgstr ":kbd:`Cmd + F12`"
@@ -342,7 +341,7 @@ msgid "Toggle Fullscreen"
 msgstr "Vollbildmodus ein-/ausschalten"
 
 msgid ":kbd:`Shift + F11`"
-msgstr ":kbd:`Shift + F11`"
+msgstr ":kbd:`Umschalt + F11`"
 
 msgid ":kbd:`Cmd + Ctrl + F`"
 msgstr ":kbd:`Cmd + Ctrl + F`"
@@ -399,13 +398,13 @@ msgid "``editor/play_scene``"
 msgstr "``editor/play_scene``"
 
 msgid "Play Custom Scene"
-msgstr "Angepasste Szene abspielen"
+msgstr "Benutzerdefinierte Szene abspielen"
 
 msgid ":kbd:`Ctrl + Shift + F5`"
-msgstr ":kbd:`Ctrl + Shift + F5`"
+msgstr ":kbd:`Strg + Umschalt + F5`"
 
 msgid ":kbd:`Cmd + Shift + R`"
-msgstr ":kbd:`Cmd + Shift + R`"
+msgstr ":kbd:`Cmd + Umschalt + R`"
 
 msgid "``editor/play_custom_scene``"
 msgstr "``editor/play_custom_scene``"
@@ -414,7 +413,7 @@ msgid "Expand Bottom Panel"
 msgstr "Unteres Bedienfeld vergrößern"
 
 msgid ":kbd:`Shift + F12`"
-msgstr ":kbd:`Shift + F12`"
+msgstr ":kbd:`Umschalt + F12`"
 
 msgid "``editor/bottom_panel_expand``"
 msgstr "``editor/bottom_panel_expand``"
@@ -426,7 +425,7 @@ msgid "Zoom In"
 msgstr "Hereinzoomen"
 
 msgid ":kbd:`Ctrl + =`"
-msgstr ":kbd:`Ctrl + =`"
+msgstr ":kbd:`Strg + =`"
 
 msgid ":kbd:`Cmd + =`"
 msgstr ":kbd:`Cmd + =`"
@@ -438,7 +437,7 @@ msgid "Zoom Out"
 msgstr "Hinauszoomen"
 
 msgid ":kbd:`Ctrl + -`"
-msgstr ":kbd:`Ctrl + -`"
+msgstr ":kbd:`Strg + -`"
 
 msgid ":kbd:`Cmd + -`"
 msgstr ":kbd:`Cmd + -`"
@@ -450,7 +449,7 @@ msgid "Zoom Reset"
 msgstr "Zoom zurücksetzen"
 
 msgid ":kbd:`Ctrl + 0`"
-msgstr ":kbd:`Ctrl + 0`"
+msgstr ":kbd:`Strg + 0`"
 
 msgid ":kbd:`Cmd + 0`"
 msgstr ":kbd:`Cmd + 0`"
@@ -459,7 +458,7 @@ msgid "``canvas_item_editor/zoom_reset``"
 msgstr "``canvas_item_editor/zoom_reset``"
 
 msgid "Pan View"
-msgstr "Sicht schwenken"
+msgstr "Ansicht schwenken"
 
 msgid ":kbd:`Space`"
 msgstr ":kbd:`Space`"
@@ -516,7 +515,7 @@ msgid "Use Smart Snap"
 msgstr "Intelligentes Einrasten"
 
 msgid ":kbd:`Shift + S`"
-msgstr ":kbd:`Shift + S`"
+msgstr ":kbd:`Umschalt + S`"
 
 msgid "``canvas_item_editor/use_smart_snap``"
 msgstr "``canvas_item_editor/use_smart_snap``"
@@ -525,7 +524,7 @@ msgid "Use Grid Snap"
 msgstr "am Raster einrasten"
 
 msgid ":kbd:`Shift + G`"
-msgstr ":kbd:`Shift + G`"
+msgstr ":kbd:`Umschalt + G`"
 
 msgid "``canvas_item_editor/use_grid_snap``"
 msgstr "``canvas_item_editor/use_grid_snap``"
@@ -588,7 +587,7 @@ msgid "Frame Selection"
 msgstr "Frame-Auswahl"
 
 msgid ":kbd:`Shift + F`"
-msgstr ":kbd:`Shift + F`"
+msgstr ":kbd:`Umschalt + F`"
 
 msgid "``canvas_item_editor/frame_selection``"
 msgstr "``canvas_item_editor/frame_selection``"
@@ -597,10 +596,10 @@ msgid "Preview Canvas Scale"
 msgstr "Vorschau Canvas-Skalierung"
 
 msgid ":kbd:`Ctrl + Shift + P`"
-msgstr ":kbd:`Ctrl + Shift + P`"
+msgstr ":kbd:`Strg + Umschalt + P`"
 
 msgid ":kbd:`Cmd + Shift + P`"
-msgstr ":kbd:`Cmd + Shift + P`"
+msgstr ":kbd:`Cmd + Umschalt + P`"
 
 msgid "``canvas_item_editor/preview_canvas_scale``"
 msgstr "``canvas_item_editor/preview_canvas_scale``"
@@ -609,7 +608,7 @@ msgid "Insert Key"
 msgstr "Key einfügen"
 
 msgid ":kbd:`Ins`"
-msgstr ":kbd:`Ins`"
+msgstr ":kbd:`Einfg`"
 
 msgid "``canvas_item_editor/anim_insert_key``"
 msgstr "``canvas_item_editor/anim_insert_key``"
@@ -618,10 +617,10 @@ msgid "Insert Key (Existing Tracks)"
 msgstr "Key einfügen (in existierende Tracks)"
 
 msgid ":kbd:`Ctrl + Ins`"
-msgstr ":kbd:`Ctrl + Ins`"
+msgstr ":kbd:`Strg + Einfg`"
 
 msgid ":kbd:`Cmd + Ins`"
-msgstr ":kbd:`Cmd + Ins`"
+msgstr ":kbd:`Cmd + Einfg`"
 
 msgid "``canvas_item_editor/anim_insert_key_existing_tracks``"
 msgstr "``canvas_item_editor/anim_insert_key_existing_tracks``"
@@ -630,19 +629,19 @@ msgid "Make Custom Bones from Nodes"
 msgstr "Benutzerdefinierte Knochen aus Nodes erstellen"
 
 msgid ":kbd:`Ctrl + Shift + B`"
-msgstr ":kbd:`Ctrl + Shift + B`"
+msgstr ":kbd:`Strg + Umschalt + B`"
 
 msgid ":kbd:`Cmd + Shift + B`"
-msgstr ":kbd:`Cmd + Shift + B`"
+msgstr ":kbd:`Cmd + Umschalt + B`"
 
 msgid "``canvas_item_editor/skeleton_make_bones``"
 msgstr "``canvas_item_editor/skeleton_make_bones``"
 
 msgid "Clear Pose"
-msgstr "Pose/Stellung löschen"
+msgstr "Pose zurücksetzen"
 
 msgid ":kbd:`Shift + K`"
-msgstr ":kbd:`Shift + K`"
+msgstr ":kbd:`Umschalt + K`"
 
 msgid "``canvas_item_editor/anim_clear_pose``"
 msgstr "``canvas_item_editor/anim_clear_pose``"
@@ -651,7 +650,7 @@ msgid "3D / Spatial Editor"
 msgstr "3D / Spatial-Editor"
 
 msgid "Toggle Freelook"
-msgstr "Freie Kamera ein-/ausschalten"
+msgstr "Freelook ein-/ausschalten"
 
 msgid "``spatial_editor/freelook_toggle``"
 msgstr "``spatial_editor/freelook_toggle``"
@@ -702,7 +701,7 @@ msgid "Freelook Speed Modifier"
 msgstr "Freelook-Geschwindigkeits-Modifier"
 
 msgid ":kbd:`Shift`"
-msgstr ":kbd:`Shift`"
+msgstr ":kbd:`Umschalt`"
 
 msgid "``spatial_editor/freelook_speed_modifier``"
 msgstr "``spatial_editor/freelook_speed_modifier``"
@@ -747,7 +746,7 @@ msgid "Snap Object to Floor"
 msgstr "Objekt am Boden einrasten"
 
 msgid ":kbd:`PgDown`"
-msgstr ":kbd:`PgDown`"
+msgstr ":kbd:`Bild runter`"
 
 msgid "``spatial_editor/snap_to_floor``"
 msgstr "``spatial_editor/snap_to_floor``"
@@ -834,7 +833,7 @@ msgid "``spatial_editor/focus_origin``"
 msgstr "``spatial_editor/focus_origin``"
 
 msgid "Focus Selection"
-msgstr "Auswahl fokussieren"
+msgstr "Auf Auswahl zentrieren"
 
 msgid "``spatial_editor/focus_selection``"
 msgstr "``spatial_editor/focus_selection``"
@@ -843,7 +842,7 @@ msgid "Align Transform with View"
 msgstr "Transform an Ansicht ausrichten"
 
 msgid ":kbd:`Ctrl + Alt + M`"
-msgstr ":kbd:`Ctrl + Alt + M`"
+msgstr ":kbd:`Strg + Alt + M`"
 
 msgid ":kbd:`Cmd + Alt + M`"
 msgstr ":kbd:`Cmd + Alt + M`"
@@ -852,10 +851,10 @@ msgid "``spatial_editor/align_transform_with_view``"
 msgstr "``spatial_editor/align_transform_with_view``"
 
 msgid "Align Rotation with View"
-msgstr "Rotation auf Sicht ausrichten"
+msgstr "Rotation auf Ansicht ausrichten"
 
 msgid ":kbd:`Ctrl + Alt + F`"
-msgstr ":kbd:`Ctrl + Alt + F`"
+msgstr ":kbd:`Strg + Alt + F`"
 
 msgid ":kbd:`Cmd + Alt + F`"
 msgstr ":kbd:`Cmd + Alt + F`"
@@ -867,7 +866,7 @@ msgid "1 Viewport"
 msgstr "1 Viewport"
 
 msgid ":kbd:`Ctrl + 1`"
-msgstr ":kbd:`Ctrl + 1`"
+msgstr ":kbd:`Strg + 1`"
 
 msgid ":kbd:`Cmd + 1`"
 msgstr ":kbd:`Cmd + 1`"
@@ -879,7 +878,7 @@ msgid "2 Viewports"
 msgstr "2 Viewports"
 
 msgid ":kbd:`Ctrl + 2`"
-msgstr ":kbd:`Ctrl + 2`"
+msgstr ":kbd:`Strg + 2`"
 
 msgid ":kbd:`Cmd + 2`"
 msgstr ":kbd:`Cmd + 2`"
@@ -891,7 +890,7 @@ msgid "2 Viewports (Alt)"
 msgstr "2 Viewports (alternativ)"
 
 msgid ":kbd:`Ctrl + Alt + 2`"
-msgstr ":kbd:`Ctrl + Alt + 2`"
+msgstr ":kbd:`Strg + Alt + 2`"
 
 msgid ":kbd:`Cmd + Alt + 2`"
 msgstr ":kbd:`Cmd + Alt + 2`"
@@ -903,7 +902,7 @@ msgid "3 Viewports"
 msgstr "3 Viewports"
 
 msgid ":kbd:`Ctrl + 3`"
-msgstr ":kbd:`Ctrl + 3`"
+msgstr ":kbd:`Strg + 3`"
 
 msgid ":kbd:`Cmd + 3`"
 msgstr ":kbd:`Cmd + 3`"
@@ -915,7 +914,7 @@ msgid "3 Viewports (Alt)"
 msgstr "3 Viewports (alternativ)"
 
 msgid ":kbd:`Ctrl + Alt + 3`"
-msgstr ":kbd:`Ctrl + Alt + 3`"
+msgstr ":kbd:`Strg + Alt + 3`"
 
 msgid ":kbd:`Cmd + Alt + 3`"
 msgstr ":kbd:`Cmd + Alt + 3`"
@@ -927,7 +926,7 @@ msgid "4 Viewports"
 msgstr "4 Viewports"
 
 msgid ":kbd:`Ctrl + 4`"
-msgstr ":kbd:`Ctrl + 4`"
+msgstr ":kbd:`Strg + 4`"
 
 msgid ":kbd:`Cmd + 4`"
 msgstr ":kbd:`Cmd + 4`"
@@ -942,7 +941,7 @@ msgid "Cut"
 msgstr "Ausschneiden"
 
 msgid ":kbd:`Ctrl + X`"
-msgstr ":kbd:`Ctrl + X`"
+msgstr ":kbd:`Strg + X`"
 
 msgid ":kbd:`Cmd + X`"
 msgstr ":kbd:`Cmd + X`"
@@ -954,7 +953,7 @@ msgid "Copy"
 msgstr "Kopieren"
 
 msgid ":kbd:`Ctrl + C`"
-msgstr ":kbd:`Ctrl + C`"
+msgstr ":kbd:`Strg + C`"
 
 msgid ":kbd:`Cmd + C`"
 msgstr ":kbd:`Cmd + C`"
@@ -966,7 +965,7 @@ msgid "Paste"
 msgstr "Einfügen"
 
 msgid ":kbd:`Ctrl + V`"
-msgstr ":kbd:`Ctrl + V`"
+msgstr ":kbd:`Strg + V`"
 
 msgid ":kbd:`Cmd + V`"
 msgstr ":kbd:`Cmd + V`"
@@ -978,7 +977,7 @@ msgid "Select All"
 msgstr "Alles auswählen"
 
 msgid ":kbd:`Ctrl + A`"
-msgstr ":kbd:`Ctrl + A`"
+msgstr ":kbd:`Strg + A`"
 
 msgid ":kbd:`Cmd + A`"
 msgstr ":kbd:`Cmd + A`"
@@ -987,10 +986,10 @@ msgid "``script_text_editor/select_all``"
 msgstr "``script_text_editor/select_all``"
 
 msgid "Find"
-msgstr "Finde"
+msgstr "Suchen"
 
 msgid ":kbd:`Ctrl + F`"
-msgstr ":kbd:`Ctrl + F`"
+msgstr ":kbd:`Strg + F`"
 
 msgid ":kbd:`Cmd + F`"
 msgstr ":kbd:`Cmd + F`"
@@ -999,7 +998,7 @@ msgid "``script_text_editor/find``"
 msgstr "``script_text_editor/find``"
 
 msgid "Find Next"
-msgstr "Finde Nächstes"
+msgstr "Suche Nächstes"
 
 msgid ":kbd:`F3`"
 msgstr ":kbd:`F3`"
@@ -1011,13 +1010,13 @@ msgid "``script_text_editor/find_next``"
 msgstr "``script_text_editor/find_next``"
 
 msgid "Find Previous"
-msgstr "Finde Vorheriges"
+msgstr "Suche Vorheriges"
 
 msgid ":kbd:`Shift + F3`"
-msgstr ":kbd:`Shift + F3`"
+msgstr ":kbd:`Umschalt + F3`"
 
 msgid ":kbd:`Cmd + Shift + G`"
-msgstr ":kbd:`Cmd + Shift + G`"
+msgstr ":kbd:`Cmd + Umschalt + G`"
 
 msgid "``script_text_editor/find_previous``"
 msgstr "``script_text_editor/find_previous``"
@@ -1026,10 +1025,10 @@ msgid "Find in Files"
 msgstr "In Dateien suchen"
 
 msgid ":kbd:`Ctrl + Shift + F`"
-msgstr ":kbd:`Ctrl + Shift + F`"
+msgstr ":kbd:`Strg + Umschalt + F`"
 
 msgid ":kbd:`Cmd + Shift + F`"
-msgstr ":kbd:`Cmd + Shift + F`"
+msgstr ":kbd:`Cmd + Umschalt + F`"
 
 msgid "``script_text_editor/find_in_files``"
 msgstr "``script_text_editor/find_in_files``"
@@ -1038,7 +1037,7 @@ msgid "Replace"
 msgstr "Ersetzen"
 
 msgid ":kbd:`Ctrl + R`"
-msgstr ":kbd:`Ctrl + R`"
+msgstr ":kbd:`Strg + R`"
 
 msgid ":kbd:`Alt + Cmd + F`"
 msgstr ":kbd:`Alt + Cmd + F`"
@@ -1050,7 +1049,7 @@ msgid "Replace in Files"
 msgstr "In Dateien ersetzen"
 
 msgid ":kbd:`Ctrl + Shift + R`"
-msgstr ":kbd:`Ctrl + Shift + R`"
+msgstr ":kbd:`Strg + Umschalt + R`"
 
 msgid "``script_text_editor/replace_in_files``"
 msgstr "``script_text_editor/replace_in_files``"
@@ -1059,7 +1058,7 @@ msgid "``script_text_editor/undo``"
 msgstr "``script_text_editor/undo``"
 
 msgid ":kbd:`Ctrl + Y`"
-msgstr ":kbd:`Ctrl + Y`"
+msgstr ":kbd:`Strg + Y`"
 
 msgid ":kbd:`Cmd + Y`"
 msgstr ":kbd:`Cmd + Y`"
@@ -1071,7 +1070,7 @@ msgid "Move Up"
 msgstr "Hoch schieben"
 
 msgid ":kbd:`Alt + Up Arrow`"
-msgstr ":kbd:`Alt + Up Arrow`"
+msgstr ":kbd:`Alt + Pfeil oben`"
 
 msgid "``script_text_editor/move_up``"
 msgstr "``script_text_editor/move_up``"
@@ -1080,7 +1079,7 @@ msgid "Move Down"
 msgstr "Runter schieben"
 
 msgid ":kbd:`Alt + Down Arrow`"
-msgstr ":kbd:`Alt + Down Arrow`"
+msgstr ":kbd:`Alt + Pfeil unten`"
 
 msgid "``script_text_editor/move_down``"
 msgstr "``script_text_editor/move_down``"
@@ -1089,10 +1088,10 @@ msgid "Delete Line"
 msgstr "Zeile löschen"
 
 msgid ":kbd:`Ctrl + Shift + K`"
-msgstr ":kbd:`Ctrl + Shift + K`"
+msgstr ":kbd:`Strg + Umschalt + K`"
 
 msgid ":kbd:`Cmd + Shift + K`"
-msgstr ":kbd:`Cmd + Shift + K`"
+msgstr ":kbd:`Cmd + Umschalt + K`"
 
 msgid "``script_text_editor/delete_line``"
 msgstr "``script_text_editor/delete_line``"
@@ -1101,7 +1100,7 @@ msgid "Toggle Comment"
 msgstr "Kommentar ein-/ausschalten"
 
 msgid ":kbd:`Ctrl + K`"
-msgstr ":kbd:`Ctrl + K`"
+msgstr ":kbd:`Strg + K`"
 
 msgid ":kbd:`Cmd + K`"
 msgstr ":kbd:`Cmd + K`"
@@ -1126,20 +1125,19 @@ msgid "Duplicate Selection"
 msgstr "Auswahl duplizieren"
 
 msgid ":kbd:`Ctrl + Shift + D`"
-msgstr ":kbd:`Ctrl + Shift + D`"
+msgstr ":kbd:`Strg + Umschalt + D`"
 
 msgid ":kbd:`Cmd + Shift + C`"
-msgstr ":kbd:`Cmd + Shift + C`"
+msgstr ":kbd:`Cmd + Umschalt + C`"
 
-#, fuzzy
 msgid "``script_text_editor/duplicate_selection``"
-msgstr "``script_text_editor/evaluate_selection``"
+msgstr "``script_text_editor/duplicate_selection``"
 
 msgid "Complete Symbol"
 msgstr "Symbol vervollständigen"
 
 msgid ":kbd:`Ctrl + Space`"
-msgstr ":kbd:`Ctrl + Space`"
+msgstr ":kbd:`Strg + Space`"
 
 msgid "``script_text_editor/complete_symbol``"
 msgstr "``script_text_editor/complete_symbol``"
@@ -1148,19 +1146,19 @@ msgid "Evaluate Selection"
 msgstr "Auswahl auswerten"
 
 msgid ":kbd:`Ctrl + Shift + E`"
-msgstr ":kbd:`Ctrl + Shift + E`"
+msgstr ":kbd:`Strg + Umschalt + E`"
 
 msgid ":kbd:`Cmd + Shift + E`"
-msgstr ":kbd:`Cmd + Shift + E`"
+msgstr ":kbd:`Cmd + Umschalt + E`"
 
 msgid "``script_text_editor/evaluate_selection``"
 msgstr "``script_text_editor/evaluate_selection``"
 
 msgid "Trim Trailing Whitespace"
-msgstr "Kürze Whitespace am Zeilenende"
+msgstr "Whitespace am Zeilenende entfernen"
 
 msgid ":kbd:`Ctrl + Alt + T`"
-msgstr ":kbd:`Ctrl + Alt + T`"
+msgstr ":kbd:`Strg + Alt + T`"
 
 msgid ":kbd:`Cmd + Alt + T`"
 msgstr ":kbd:`Cmd + Alt + T`"
@@ -1172,7 +1170,7 @@ msgid "Uppercase"
 msgstr "Großbuchstaben"
 
 msgid ":kbd:`Shift + F4`"
-msgstr ":kbd:`Shift + F4`"
+msgstr ":kbd:`Umschalt + F4`"
 
 msgid "``script_text_editor/convert_to_uppercase``"
 msgstr "``script_text_editor/convert_to_uppercase``"
@@ -1181,7 +1179,7 @@ msgid "Lowercase"
 msgstr "Kleinbuchstaben"
 
 msgid ":kbd:`Shift + F5`"
-msgstr ":kbd:`Shift + F5`"
+msgstr ":kbd:`Umschalt + F5`"
 
 msgid "``script_text_editor/convert_to_lowercase``"
 msgstr "``script_text_editor/convert_to_lowercase``"
@@ -1190,7 +1188,7 @@ msgid "Capitalize"
 msgstr "Anfangsbuchstaben großschreiben"
 
 msgid ":kbd:`Shift + F6`"
-msgstr ":kbd:`Shift + F6`"
+msgstr ":kbd:`Umschalt + F6`"
 
 msgid "``script_text_editor/capitalize``"
 msgstr "``script_text_editor/capitalize``"
@@ -1199,10 +1197,10 @@ msgid "Convert Indent to Spaces"
 msgstr "Konvertiere Einrückung zu Leerzeichen"
 
 msgid ":kbd:`Ctrl + Shift + Y`"
-msgstr ":kbd:`Ctrl + Shift + Y`"
+msgstr ":kbd:`Strg + Umschalt + Y`"
 
 msgid ":kbd:`Cmd + Shift + Y`"
-msgstr ":kbd:`Cmd + Shift + Y`"
+msgstr ":kbd:`Cmd + Umschalt + Y`"
 
 msgid "``script_text_editor/convert_indent_to_spaces``"
 msgstr "``script_text_editor/convert_indent_to_spaces``"
@@ -1211,10 +1209,10 @@ msgid "Convert Indent to Tabs"
 msgstr "Konvertiere Einrückung zu Tabulatoren"
 
 msgid ":kbd:`Ctrl + Shift + I`"
-msgstr ":kbd:`Ctrl + Shift + I`"
+msgstr ":kbd:`Strg + Umschalt + I`"
 
 msgid ":kbd:`Cmd + Shift + I`"
-msgstr ":kbd:`Cmd + Shift + I`"
+msgstr ":kbd:`Cmd + Umschalt + I`"
 
 msgid "``script_text_editor/convert_indent_to_tabs``"
 msgstr "``script_text_editor/convert_indent_to_tabs``"
@@ -1223,7 +1221,7 @@ msgid "Auto Indent"
 msgstr "Automatische Einrückung"
 
 msgid ":kbd:`Ctrl + I`"
-msgstr ":kbd:`Ctrl + I`"
+msgstr ":kbd:`Strg + I`"
 
 msgid ":kbd:`Cmd + I`"
 msgstr ":kbd:`Cmd + I`"
@@ -1235,7 +1233,7 @@ msgid "Toggle Bookmark"
 msgstr "Lesezeichen ein-/ausschalten"
 
 msgid ":kbd:`Ctrl + Alt + B`"
-msgstr ":kbd:`Ctrl + Alt + B`"
+msgstr ":kbd:`Strg + Alt + B`"
 
 msgid ":kbd:`Cmd + Alt + B`"
 msgstr ":kbd:`Cmd + Alt + B`"
@@ -1247,7 +1245,7 @@ msgid "Go to Next Bookmark"
 msgstr "Zum nächsten Lesezeichen springen"
 
 msgid ":kbd:`Ctrl + B`"
-msgstr ":kbd:`Ctrl + B`"
+msgstr ":kbd:`Strg + B`"
 
 msgid "``script_text_editor/goto_next_bookmark``"
 msgstr "``script_text_editor/goto_next_bookmark``"
@@ -1262,7 +1260,7 @@ msgid "Go to Function"
 msgstr "Zu Funktion springen"
 
 msgid ":kbd:`Ctrl + Cmd + J`"
-msgstr ":kbd:`Ctrl + Cmd + J`"
+msgstr ":kbd:`Strg + Cmd + J`"
 
 msgid "``script_text_editor/goto_function``"
 msgstr "``script_text_editor/goto_function``"
@@ -1271,7 +1269,7 @@ msgid "Go to Line"
 msgstr "Zu Zeile springen"
 
 msgid ":kbd:`Ctrl + L`"
-msgstr ":kbd:`Ctrl + L`"
+msgstr ":kbd:`Strg + L`"
 
 msgid ":kbd:`Cmd + L`"
 msgstr ":kbd:`Cmd + L`"
@@ -1289,13 +1287,13 @@ msgid "``script_text_editor/toggle_breakpoint``"
 msgstr "``script_text_editor/toggle_breakpoint``"
 
 msgid "Remove All Breakpoints"
-msgstr "Lösche alle Haltepunkte"
+msgstr "Alle Haltepunkte löschen"
 
 msgid ":kbd:`Ctrl + Shift + F9`"
-msgstr ":kbd:`Ctrl + Shift + F9`"
+msgstr ":kbd:`Strg + Umschalt + F9`"
 
 msgid ":kbd:`Cmd + Shift + F9`"
-msgstr ":kbd:`Cmd + Shift + F9`"
+msgstr ":kbd:`Cmd + Umschalt + F9`"
 
 msgid "``script_text_editor/remove_all_breakpoints``"
 msgstr "``script_text_editor/remove_all_breakpoints``"
@@ -1304,7 +1302,7 @@ msgid "Go to Next Breakpoint"
 msgstr "Zum nächsten Haltepunkt springen"
 
 msgid ":kbd:`Ctrl + .`"
-msgstr ":kbd:`Ctrl + .`"
+msgstr ":kbd:`Strg + .`"
 
 msgid "``script_text_editor/goto_next_breakpoint``"
 msgstr "``script_text_editor/goto_next_breakpoint``"
@@ -1313,7 +1311,7 @@ msgid "Go to Previous Breakpoint"
 msgstr "Zum vorigen Haltepunkt springen"
 
 msgid ":kbd:`Ctrl + ,`"
-msgstr ":kbd:`Ctrl + ,`"
+msgstr ":kbd:`Strg + ,`"
 
 msgid ":kbd:`Cmd + ,`"
 msgstr ":kbd:`Cmd + ,`"
@@ -1328,7 +1326,7 @@ msgid ":kbd:`Alt + F1`"
 msgstr ":kbd:`Alt + F1`"
 
 msgid ":kbd:`Alt + Shift + Space`"
-msgstr ":kbd:`Alt + Shift + Space`"
+msgstr ":kbd:`Alt + Umschalt + Space`"
 
 msgid "``script_text_editor/contextual_help``"
 msgstr "``script_text_editor/contextual_help``"
@@ -1349,13 +1347,13 @@ msgid "``script_editor/find_in_files``"
 msgstr "``script_editor/find_in_files``"
 
 msgid ":kbd:`Shift + Alt + Up Arrow`"
-msgstr ":kbd:`Shift + Alt + Up Arrow`"
+msgstr ":kbd:`Umschalt + Alt + Pfeil oben`"
 
 msgid "``script_editor/window_move_up``"
 msgstr "``script_editor/window_move_up``"
 
 msgid ":kbd:`Shift + Alt + Down Arrow`"
-msgstr ":kbd:`Shift + Alt + Down Arrow`"
+msgstr ":kbd:`Umschalt + Alt + Pfeil unten`"
 
 msgid "``script_editor/window_move_down``"
 msgstr "``script_editor/window_move_down``"
@@ -1364,10 +1362,10 @@ msgid "Next Script"
 msgstr "Nächstes Skript"
 
 msgid ":kbd:`Ctrl + Shift + .`"
-msgstr ":kbd:`Ctrl + Shift + .`"
+msgstr ":kbd:`Strg + Umschalt + .`"
 
 msgid ":kbd:`Cmd + Shift + .`"
-msgstr ":kbd:`Cmd + Shift + .`"
+msgstr ":kbd:`Cmd + Umschalt + .`"
 
 msgid "``script_editor/next_script``"
 msgstr "``script_editor/next_script``"
@@ -1376,10 +1374,10 @@ msgid "Previous Script"
 msgstr "Vorheriges Skript"
 
 msgid ":kbd:`Ctrl + Shift + ,`"
-msgstr ":kbd:`Ctrl + Shift + ,`"
+msgstr ":kbd:`Strg + Umschalt + ,`"
 
 msgid ":kbd:`Cmd + Shift + ,`"
-msgstr ":kbd:`Cmd + Shift + ,`"
+msgstr ":kbd:`Cmd + Umschalt + ,`"
 
 msgid "``script_editor/prev_script``"
 msgstr "``script_editor/prev_script``"
@@ -1394,7 +1392,7 @@ msgid "Save"
 msgstr "Speichern"
 
 msgid ":kbd:`Ctrl + Alt + S`"
-msgstr ":kbd:`Ctrl + Alt + S`"
+msgstr ":kbd:`Strg + Alt + S`"
 
 msgid ":kbd:`Cmd + Alt + S`"
 msgstr ":kbd:`Cmd + Alt + S`"
@@ -1409,7 +1407,7 @@ msgid "``script_editor/save_all``"
 msgstr "``script_editor/save_all``"
 
 msgid "Soft Reload Script"
-msgstr "Zaghaftes Skript-Neuladen"
+msgstr "Soft Neuladen von Skript"
 
 msgid "``script_editor/reload_script_soft``"
 msgstr "``script_editor/reload_script_soft``"
@@ -1418,7 +1416,7 @@ msgid "History Previous"
 msgstr "Zurück im Verlauf"
 
 msgid ":kbd:`Alt + Left Arrow`"
-msgstr ":kbd:`Alt + Left Arrow`"
+msgstr ":kbd:`Alt + Pfeil links`"
 
 msgid "``script_editor/history_previous``"
 msgstr "``script_editor/history_previous``"
@@ -1427,7 +1425,7 @@ msgid "History Next"
 msgstr "Vorwärts im Verlauf"
 
 msgid ":kbd:`Alt + Right Arrow`"
-msgstr ":kbd:`Alt + Right Arrow`"
+msgstr ":kbd:`Alt + Pfeil rechts`"
 
 msgid "``script_editor/history_next``"
 msgstr "``script_editor/history_next``"
@@ -1436,7 +1434,7 @@ msgid "Close"
 msgstr "Schließen"
 
 msgid ":kbd:`Ctrl + W`"
-msgstr ":kbd:`Ctrl + W`"
+msgstr ":kbd:`Strg + W`"
 
 msgid ":kbd:`Cmd + W`"
 msgstr ":kbd:`Cmd + W`"
@@ -1448,10 +1446,10 @@ msgid "Run"
 msgstr "Ausführen"
 
 msgid ":kbd:`Ctrl + Shift + X`"
-msgstr ":kbd:`Ctrl + Shift + X`"
+msgstr ":kbd:`Strg + Umschalt + X`"
 
 msgid ":kbd:`Cmd + Shift + X`"
-msgstr ":kbd:`Cmd + Shift + X`"
+msgstr ":kbd:`Cmd + Umschalt + X`"
 
 msgid "``script_editor/run_file``"
 msgstr "``script_editor/run_file``"
@@ -1460,7 +1458,7 @@ msgid "Toggle Scripts Panel"
 msgstr "Skript-Panel ein-/ausschalten"
 
 msgid ":kbd:`Ctrl + \\\\`"
-msgstr ":kbd:`Ctrl + \\\\`"
+msgstr ":kbd:`Strg + \\\\`"
 
 msgid ":kbd:`Cmd + \\\\`"
 msgstr ":kbd:`Cmd + \\\\`"
@@ -1481,7 +1479,7 @@ msgid "``script_editor/reset_zoom``"
 msgstr "``script_editor/reset_zoom``"
 
 msgid "Editor Output"
-msgstr "Editor Ausgabe"
+msgstr "Editor-Ausgabe"
 
 msgid "Copy Selection"
 msgstr "Auswahl kopieren"
@@ -1556,7 +1554,7 @@ msgid "Toggle Hidden Files"
 msgstr "Versteckte Dateien ein-/ausblenden"
 
 msgid ":kbd:`Ctrl + H`"
-msgstr ":kbd:`Ctrl + H`"
+msgstr ":kbd:`Strg + H`"
 
 msgid ":kbd:`Cmd + H`"
 msgstr ":kbd:`Cmd + H`"
@@ -1583,7 +1581,7 @@ msgid "Create Folder"
 msgstr "Ordner erstellen"
 
 msgid ":kbd:`Ctrl + N`"
-msgstr ":kbd:`Ctrl + N`"
+msgstr ":kbd:`Strg + N`"
 
 msgid ":kbd:`Cmd + N`"
 msgstr ":kbd:`Cmd + N`"
@@ -1595,7 +1593,7 @@ msgid "Delete"
 msgstr "Löschen"
 
 msgid ":kbd:`Del`"
-msgstr ":kbd:`Del`"
+msgstr ":kbd:`Entf`"
 
 msgid ":kbd:`Cmd + BkSp`"
 msgstr ":kbd:`Cmd + BkSp`"
@@ -1607,7 +1605,7 @@ msgid "Focus Path"
 msgstr "Zu Pfad springen"
 
 msgid ":kbd:`Ctrl + D`"
-msgstr ":kbd:`Ctrl + D`"
+msgstr ":kbd:`Strg + D`"
 
 msgid ":kbd:`Cmd + D`"
 msgstr ":kbd:`Cmd + D`"
@@ -1619,10 +1617,10 @@ msgid "Move Favorite Up"
 msgstr "Favorit nach oben schieben"
 
 msgid ":kbd:`Ctrl + Up Arrow`"
-msgstr ":kbd:`Ctrl + Up Arrow`"
+msgstr ":kbd:`Strg + Pfeil oben`"
 
 msgid ":kbd:`Cmd + Up Arrow`"
-msgstr ":kbd:`Cmd + Up Arrow`"
+msgstr ":kbd:`Cmd + Pfeil oben`"
 
 msgid "``file_dialog/move_favorite_up``"
 msgstr "``file_dialog/move_favorite_up``"
@@ -1631,10 +1629,10 @@ msgid "Move Favorite Down"
 msgstr "Favorit nach unten schieben"
 
 msgid ":kbd:`Ctrl + Down Arrow`"
-msgstr ":kbd:`Ctrl + Down Arrow`"
+msgstr ":kbd:`Strg + Pfeil unten`"
 
 msgid ":kbd:`Cmd + Down Arrow`"
-msgstr ":kbd:`Cmd + Down Arrow`"
+msgstr ":kbd:`Cmd + Pfeil unten`"
 
 msgid "``file_dialog/move_favorite_down``"
 msgstr "``file_dialog/move_favorite_down``"
@@ -1661,13 +1659,13 @@ msgid "Scene Tree Dock"
 msgstr "Szenenbaum-Dock"
 
 msgid "Add Child Node"
-msgstr "Node anhängen"
+msgstr "Child-Node hinzufügen"
 
 msgid "``scene_tree/add_child_node``"
 msgstr "``scene_tree/add_child_node``"
 
 msgid "Batch Rename"
-msgstr "Stapelweise Umbenennung"
+msgstr "Mehrfach-Umbenennung"
 
 msgid ":kbd:`Cmd + F2`"
 msgstr ":kbd:`Cmd + F2`"
@@ -1678,13 +1676,11 @@ msgstr "``scene_tree/batch_rename``"
 msgid "Copy Node Path"
 msgstr "Node-Pfad kopieren"
 
-#, fuzzy
 msgid ":kbd:`Ctrl + Shift + C`"
-msgstr ":kbd:`Ctrl + Shift + W`"
+msgstr ":kbd:`Strg + Umschalt + W`"
 
-#, fuzzy
 msgid ":kbd:`Cmd + Shift +  C`"
-msgstr ":kbd:`Cmd + Shift + C`"
+msgstr ":kbd:`Cmd + Umschalt + C`"
 
 msgid "``scene_tree/copy_node_path``"
 msgstr "``scene_tree/copy_node_path``"
@@ -1696,7 +1692,7 @@ msgid "Force Delete"
 msgstr "Löschen erzwingen"
 
 msgid ":kbd:`Shift + Del`"
-msgstr ":kbd:`Shift + Del`"
+msgstr ":kbd:`Umschalt + Entf`"
 
 msgid "``scene_tree/delete_no_confirm``"
 msgstr "``scene_tree/delete_no_confirm``"
@@ -1711,16 +1707,16 @@ msgid "``scene_tree/move_down``"
 msgstr "``scene_tree/move_down``"
 
 msgid "Animation Track Editor"
-msgstr "Animations-Spur Editor"
+msgstr "Animationstrack-Editor"
 
 msgid "``animation_editor/duplicate_selection``"
 msgstr "``animation_editor/duplicate_selection``"
 
 msgid "Duplicate Transposed"
-msgstr "Umgesetztes duplizieren"
+msgstr "Transponiert duplizieren"
 
 msgid ":kbd:`Cmd + Shift + D`"
-msgstr ":kbd:`Cmd + Shift + D`"
+msgstr ":kbd:`Cmd + Umschalt + D`"
 
 msgid "``animation_editor/duplicate_selection_transposed``"
 msgstr "``animation_editor/duplicate_selection_transposed``"
@@ -1735,10 +1731,10 @@ msgid "Go to Next Step"
 msgstr "Zum nächsten Schritt"
 
 msgid ":kbd:`Ctrl + Right Arrow`"
-msgstr ":kbd:`Ctrl + Right Arrow`"
+msgstr ":kbd:`Strg + Pfeil rechts`"
 
 msgid ":kbd:`Cmd + Right Arrow`"
-msgstr ":kbd:`Cmd + Right Arrow`"
+msgstr ":kbd:`Cmd + Pfeil rechts`"
 
 msgid "``animation_editor/goto_next_step``"
 msgstr "``animation_editor/goto_next_step``"
@@ -1747,25 +1743,25 @@ msgid "Go to Previous Step"
 msgstr "Zum vorherigen Schritt"
 
 msgid ":kbd:`Ctrl + Left Arrow`"
-msgstr ":kbd:`Ctrl + Left Arrow`"
+msgstr ":kbd:`Strg + Pfeil links`"
 
 msgid ":kbd:`Cmd + Left Arrow`"
-msgstr ":kbd:`Cmd + Left Arrow`"
+msgstr ":kbd:`Cmd + Pfeil links`"
 
 msgid "``animation_editor/goto_prev_step``"
 msgstr "``animation_editor/goto_prev_step``"
 
 msgid "Tile Map Editor"
-msgstr "TileMap Editor"
+msgstr "TileMap-Editor"
 
 msgid "Find Tile"
-msgstr "Kachel finden"
+msgstr "Tile finden"
 
 msgid "``tile_map_editor/find_tile``"
 msgstr "``tile_map_editor/find_tile``"
 
 msgid "Pick Tile"
-msgstr "Wähle Kachel"
+msgstr "Tile wählen"
 
 msgid ":kbd:`I`"
 msgstr ":kbd:`I`"
@@ -1774,7 +1770,7 @@ msgid "``tile_map_editor/pick_tile``"
 msgstr "``tile_map_editor/pick_tile``"
 
 msgid "Paint Tile"
-msgstr "Kachel zeichnen"
+msgstr "Tile malen"
 
 msgid ":kbd:`P`"
 msgstr ":kbd:`P`"
@@ -1855,7 +1851,7 @@ msgid "``tile_map_editor/erase_selection``"
 msgstr "``tile_map_editor/erase_selection``"
 
 msgid "Tileset Editor"
-msgstr "TileSet Editor"
+msgstr "TileSet-Editor"
 
 msgid "Next Coordinate"
 msgstr "Nächste Koordinate"
@@ -1867,13 +1863,13 @@ msgid "Previous Coordinate"
 msgstr "Vorherige Koordinate"
 
 msgid ":kbd:`PgUp`"
-msgstr ":kbd:`PgUp`"
+msgstr ":kbd:`Bild Hoch`"
 
 msgid "``tileset_editor/previous_shape``"
 msgstr "``tileset_editor/previous_shape``"
 
 msgid "Region Mode"
-msgstr "Bereichsmodus"
+msgstr "Regionsmodus"
 
 msgid ":kbd:`1`"
 msgstr ":kbd:`1`"
@@ -1936,7 +1932,7 @@ msgid "``tileset_editor/editmode_icon``"
 msgstr "``tileset_editor/editmode_icon``"
 
 msgid "Z Index Mode"
-msgstr "Z-Indexmodus"
+msgstr "Z-Index-Modus"
 
 msgid ":kbd:`8`"
 msgstr ":kbd:`8`"

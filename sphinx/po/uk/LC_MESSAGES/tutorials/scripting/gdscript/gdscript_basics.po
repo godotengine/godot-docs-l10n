@@ -142,10 +142,10 @@ msgid "See `if/else/elif`_."
 msgstr "Дивіться `if/else/elif`_."
 
 msgid "elif"
-msgstr "elif"
+msgstr "Єлиф"
 
 msgid "else"
-msgstr "else"
+msgstr "інакше"
 
 msgid "for"
 msgstr "for"
@@ -154,25 +154,25 @@ msgid "See for_."
 msgstr "Дивіться for_."
 
 msgid "while"
-msgstr "while"
+msgstr "доки"
 
 msgid "See while_."
 msgstr "Дивіться while_."
 
 msgid "match"
-msgstr "match"
+msgstr "збіг"
 
 msgid "See match_."
 msgstr "Дивіться match_."
 
 msgid "break"
-msgstr "break"
+msgstr "перерва"
 
 msgid "Exits the execution of the current ``for`` or ``while`` loop."
 msgstr "Перериває виконання поточного циклу ``for``, або ``while``."
 
 msgid "continue"
-msgstr "continue"
+msgstr "продовжити"
 
 msgid ""
 "Immediately skips to the next iteration of the ``for`` or ``while`` loop."
@@ -203,7 +203,7 @@ msgid "Defines an inner class. See `Inner classes`_."
 msgstr "Внутрішнього класу всередині іншого файла класу."
 
 msgid "class_name"
-msgstr "class_name"
+msgstr "Ім'я_класу"
 
 msgid ""
 "Defines the script as a globally accessible class with the specified name. "
@@ -211,7 +211,7 @@ msgid ""
 msgstr ""
 
 msgid "extends"
-msgstr "extends"
+msgstr "поширюється"
 
 msgid "Defines what class to extend with the current class."
 msgstr "Визначає який клас розширити поточним класом."
@@ -241,32 +241,32 @@ msgid "Cast the value to a given type if possible."
 msgstr "Якщо можливо, то переводить значення в заданий тип."
 
 msgid "self"
-msgstr "self"
+msgstr "себе"
 
 msgid "Refers to current class instance."
 msgstr "Посилається на поточний екземпляр класу."
 
 msgid "signal"
-msgstr "signal"
+msgstr "сигнал"
 
 msgid "Defines a signal."
 msgstr "Визначає (оголошує) сигнал."
 
 msgid "func"
-msgstr "func"
+msgstr "функція"
 
 msgid "Defines a function."
 msgstr "Визначає (оголошує) функцію."
 
 msgid "static"
-msgstr "static"
+msgstr "статичний"
 
 #, fuzzy
 msgid "Defines a static function or a static member variable."
 msgstr "Визначає статичну функцію. Статичні змінні члена не надані."
 
 msgid "const"
-msgstr "const"
+msgstr "константа"
 
 msgid "Defines a constant."
 msgstr "Визначає константу."
@@ -284,7 +284,7 @@ msgid "Defines a variable."
 msgstr "Визначає змінну."
 
 msgid "breakpoint"
-msgstr "breakpoint"
+msgstr "точка зупинки"
 
 msgid ""
 "Editor helper for debugger breakpoints. Unlike breakpoints created by "
@@ -293,7 +293,7 @@ msgid ""
 msgstr ""
 
 msgid "preload"
-msgstr "preload"
+msgstr "пре завантаження"
 
 msgid "Preloads a class or variable. See `Classes as resources`_."
 msgstr ""
@@ -314,7 +314,7 @@ msgid "Previously used for coroutines. Kept as keyword for transition."
 msgstr ""
 
 msgid "assert"
-msgstr "assert"
+msgstr "стверджувати"
 
 msgid ""
 "Asserts a condition, logs error on failure. Ignored in non-debug builds. See "
@@ -1041,9 +1041,8 @@ msgid ""
 "**Text Editor > Theme > Comment Markers** section of the Editor Settings."
 msgstr ""
 
-#, fuzzy
 msgid "Code regions"
-msgstr "Вмикає підписування коду."
+msgstr "Кодові регіони"
 
 msgid ""
 "Code regions are special types of comments that the script editor "
@@ -1085,9 +1084,8 @@ msgid ""
 "group multiple elements together."
 msgstr ""
 
-#, fuzzy
 msgid "Line continuation"
-msgstr "Налаштування збирання:"
+msgstr "Продовження лінії"
 
 msgid ""
 "A line of code in GDScript can be continued on the next line by using a "
@@ -1101,7 +1099,6 @@ msgstr ""
 msgid "Built-in types"
 msgstr "Вбудовані типи"
 
-#, fuzzy
 msgid ""
 "Built-in types are stack-allocated. They are passed as values. This means a "
 "copy is created on each assignment or when passing them as arguments to "
@@ -1110,12 +1107,13 @@ msgid ""
 "so they are shared. All arrays, ``Dictionary``, and some objects (``Node``, "
 "``Resource``) have a ``duplicate()`` method that allows you to make a copy."
 msgstr ""
-"Вбудовані типи виділяються стеком. Вони передаються як значення. Це означає, "
-"що їх копії створюються для кожного завдання, або при передачі їх, як "
-"аргументів, функціям. Єдині винятки - це ``Array`` (Масиви) і "
-"``Dictionaries`` (Словники), які передаються посиланням, щоб бути спільними. "
-"(Об'єднані масиви, такі як ``PoolByteArray``, не входять в число винятків і "
-"передаються як значення.)"
+"Вбудовані типи розміщуються в стеку. Вони передаються як значення. Це "
+"означає, що копія створюється при кожному присвоюванні або при передачі їх "
+"як аргументів у функції. Виняток становлять ``Object``, ``Array``, "
+"``Dictionary`` та упаковані масиви (такі як ``PackedByteArray``), які "
+"передаються за посиланням, тому вони є спільними. Всі масиви, ``Dictionary`` "
+"і деякі об'єкти (``Node``, ``Resource``) мають метод ``duplicate()``, який "
+"дозволяє зробити копію."
 
 msgid "Basic built-in types"
 msgstr "Базові вбудовані типи"
@@ -1169,13 +1167,12 @@ msgstr ""
 msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_."
 msgstr ""
-"Послідовність символів у `форматі Unicode <https://en.wikipedia.org/wiki/"
-"Unicode>`_. Рядки (текст) можуть містити наступні escape послідовності:"
+"Послідовність символів у форматі `Unicode <https://en.wikipedia.org/wiki/"
+"Unicode>`_."
 
 msgid ""
 "An immutable string that allows only one instance of each name. They are "
@@ -1981,7 +1978,7 @@ msgid ""
 msgstr ""
 
 msgid "if/else/elif"
-msgstr "if/else/elif"
+msgstr "якщо/інакше/якщо-інакше (ельіф)"
 
 msgid ""
 "Simple conditions are created by using the ``if``/``else``/``elif`` syntax. "
@@ -2064,13 +2061,11 @@ msgid ""
 "equal to the StringName ``&\"hello\"``."
 msgstr ""
 
-#, fuzzy
 msgid "Basic syntax"
-msgstr "Основний синтаксис:"
+msgstr "Основний синтаксис"
 
-#, fuzzy
 msgid "Crash-course for people who are familiar with switch statements"
-msgstr "**Прискорений курс для людей, які знайомі із switch**:"
+msgstr "Експрес-курс для тих, хто знайомий з операторами перемикання"
 
 msgid "Replace ``switch`` with ``match``."
 msgstr "Замініть ``switch`` на ``match``."
@@ -2085,9 +2080,8 @@ msgstr "Видаліть ``case``."
 msgid "Change ``default`` to a single underscore."
 msgstr "Змініть ``default`` на одне підкреслення."
 
-#, fuzzy
 msgid "Control flow"
-msgstr "**Потік керування**:"
+msgstr "Контрольний потік"
 
 #, fuzzy
 msgid ""
