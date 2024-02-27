@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -19,67 +19,77 @@ msgstr ""
 
 msgid "GD0107: Types not derived from Node should not export Node members"
 msgstr ""
+"GD0107: Typen, die nicht von Node abgeleitet sind, sollten keine Node-Member "
+"exportieren"
 
 msgid "**Rule ID**"
-msgstr ""
+msgstr "**Regel-ID**"
 
 msgid "GD0107"
-msgstr ""
+msgstr "GD0107"
 
 msgid "**Category**"
-msgstr ""
+msgstr "**Kategorie**"
 
 msgid "Usage"
-msgstr "Nutzung"
+msgstr "Verwendung"
 
 msgid "**Fix is breaking or non-breaking**"
-msgstr ""
+msgstr "**Breaking- oder nicht-Breaking-Fix**"
 
-#, fuzzy
 msgid "Breaking"
-msgstr "Backen"
+msgstr "Breaking"
 
 msgid "**Enabled by default**"
-msgstr ""
+msgstr "**Standardmäßig aktiviert**"
 
-#, fuzzy
 msgid "Yes"
-msgstr "es"
+msgstr "Ja"
 
 msgid "Cause"
-msgstr ""
+msgstr "Ursache"
 
 msgid ""
 "A type that doesn't derive from ``Node`` contains an exported field or "
 "property of a type that derives from ``Node``."
 msgstr ""
+"Ein Typ, der nicht von ``Node`` abgeleitet ist, enthält ein exportiertes "
+"Feld oder eine Property eines Typs, der von ``Node`` abgeleitet ist."
 
-#, fuzzy
 msgid "Rule description"
-msgstr "<brief_description></brief_description>"
+msgstr "Beschreibung der Regel"
 
 msgid ""
 "Exported nodes are serialized as ``NodePath``. Only types derived from "
 "``Node`` are able to get the node instance from the ``NodePath``."
 msgstr ""
+"Exportierte Nodes werden als ``NodePath`` serialisiert. Nur Typen, die von "
+"``Node`` abgeleitet sind, sind in der Lage, die Node-Instanz aus dem "
+"``NodePath`` zu erhalten."
 
-#, fuzzy
 msgid "How to fix violations"
-msgstr "isoliert existieren sollte"
+msgstr "Wie man Verstöße behebt"
 
 msgid ""
 "To fix a violation of this rule, avoid exporting ``Node`` members on a type "
 "that doesn't derive from ``Node``, or consider exporting a ``NodePath``."
 msgstr ""
+"Um einen Verstoß gegen diese Regel zu beheben, vermeiden Sie den Export von "
+"``Node``-Membern auf einem Typ, der nicht von ``Node`` abgeleitet ist, oder "
+"erwägen Sie den Export eines ``NodePath``."
 
 msgid "When to suppress warnings"
-msgstr ""
+msgstr "Wann Warnungen unterdrückt werden sollten"
 
 msgid ""
 "Do not suppress a warning from this rule. Types that don't derive from "
 "``Node`` will be unable to retrieve the right node instance for exported "
 "``Node`` members, resulting in unexpected runtime errors."
 msgstr ""
+"Unterdrücken Sie nicht eine Warnung dieser Regel. Typen, die nicht von "
+"``Node`` ableiten, sind nicht in der Lage, die richtige Node-Instanz für "
+"exportierte ``Node``-Member zu finden, was zu unerwarteten Laufzeitfehlern "
+"führt."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

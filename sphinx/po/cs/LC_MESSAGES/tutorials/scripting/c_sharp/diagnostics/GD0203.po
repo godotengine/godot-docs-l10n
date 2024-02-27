@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0203: The delegate signature of the signal must return void"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr ""
+
+msgid "GD0203"
+msgstr ""
+
+msgid "**Category**"
+msgstr "**Kategorie**"
+
+msgid "Usage"
+msgstr "Používání"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+msgid "Breaking - If the return type is changed"
+msgstr ""
+
+msgid "Non-breaking - If the ``[Signal]`` attribute is removed"
+msgstr ""
+
+msgid "**Enabled by default**"
+msgstr ""
+
+#, fuzzy
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr ""
+
+msgid ""
+"A delegate annotated with the ``[Signal]`` attribute has a return type when "
+"``void`` was expected."
+msgstr ""
+
+#, fuzzy
+msgid "Rule description"
+msgstr "`<brief_description>`"
+
+msgid ""
+"Every signal must return ``void``. There can be multiple callbacks "
+"registered for each signal, if signal callbacks could return something it "
+"wouldn't be possible to determine which of the returned values to use."
+msgstr ""
+
+msgid ""
+"Take a look at the :ref:`C# signals <doc_c_sharp_signals>` documentation for "
+"more information about how to declare and use signals."
+msgstr ""
+
+msgid "How to fix violations"
+msgstr ""
+
+msgid ""
+"To fix a violation of this rule, change the delegate to return ``void`` or "
+"remove the ``[Signal]`` attribute from the delegate. Note that removing the "
+"attribute will mean the signal is not registered."
+msgstr ""
+
+msgid ""
+"If the signal doesn't need to interact with Godot, consider using `C# events "
+"<https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/"
+">`_ directly. Pure C# events allow you to use any C# type for its parameters."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr ""
+
+msgid ""
+"Do not suppress a warning from this rule. Signal delegates that return "
+"something will result in unexpected runtime errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stav překladu"

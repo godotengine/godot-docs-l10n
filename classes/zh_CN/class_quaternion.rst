@@ -346,9 +346,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **exp** **(** **)** |const|
 
-.. container:: contribute
-
-	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+返回该四元数的指数。该结果的旋转轴是该四元数的归一化旋转轴，该结果的角度是该四元数的向量部分的长度。
 
 .. rst-class:: classref-item-separator
 
@@ -372,9 +370,9 @@ Quaternion
 
 :ref:`float<class_float>` **get_angle** **(** **)** |const|
 
-.. container:: contribute
+返回该四元数表示的旋转角度。
 
-	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+\ **注意：**\ 该四元数必须被归一化。
 
 .. rst-class:: classref-item-separator
 
@@ -386,9 +384,7 @@ Quaternion
 
 :ref:`Vector3<class_Vector3>` **get_axis** **(** **)** |const|
 
-.. container:: contribute
-
-	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+返回该四元数表示的旋转的旋转轴。
 
 .. rst-class:: classref-item-separator
 
@@ -484,9 +480,7 @@ Quaternion
 
 :ref:`Quaternion<class_Quaternion>` **log** **(** **)** |const|
 
-.. container:: contribute
-
-	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+返回该四元数的对数。该结果的向量部分是该四元数的旋转轴乘以其旋转角度，该结果的实部为零。
 
 .. rst-class:: classref-item-separator
 

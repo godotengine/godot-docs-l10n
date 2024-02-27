@@ -12,14 +12,14 @@ MenuBar
 
 **继承：** :ref:`Control<class_Control>` **<** :ref:`CanvasItem<class_CanvasItem>` **<** :ref:`Node<class_Node>` **<** :ref:`Object<class_Object>`
 
-水平菜单栏，会为每个 :ref:`PopupMenu<class_PopupMenu>` 子项创建一个 :ref:`MenuButton<class_MenuButton>`\ 。
+水平菜单栏，会为每个 :ref:`PopupMenu<class_PopupMenu>` 类型的子节点创建一个 :ref:`MenuButton<class_MenuButton>`\ 。
 
 .. rst-class:: classref-introduction-group
 
 描述
 ----
 
-水平菜单栏，会为每个 :ref:`PopupMenu<class_PopupMenu>` 子项创建一个 :ref:`MenuButton<class_MenuButton>`\ 。向这个节点添加 :ref:`PopupMenu<class_PopupMenu>` 就会创建新的项目。
+水平菜单栏，会为每个 :ref:`PopupMenu<class_PopupMenu>` 类型的子节点创建一个 :ref:`MenuButton<class_MenuButton>`\ 。通过添加 :ref:`PopupMenu<class_PopupMenu>` 节点来创建新的菜单选项。
 
 .. rst-class:: classref-reftable-group
 

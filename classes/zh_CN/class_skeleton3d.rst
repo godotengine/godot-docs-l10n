@@ -25,8 +25,6 @@ Skeleton3D
 
 请注意，下文的“全局姿势”是指骨骼相对于骨架的整体变换，因此并不是骨骼的实际全局/世界变换。
 
-要设置不同类型的反向运动学，请考虑使用 :ref:`SkeletonIK3D<class_SkeletonIK3D>`\ ，或者添加一个子节点并在 :ref:`Node._process<class_Node_private_method__process>` 中实现自定义 IK。
-
 .. rst-class:: classref-introduction-group
 
 教程
@@ -157,9 +155,7 @@ Skeleton3D
 
 **bone_enabled_changed** **(** :ref:`int<class_int>` bone_idx **)**
 
-.. container:: contribute
-
-	目前没有这个信号的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+当使用 :ref:`set_bone_enabled<class_Skeleton3D_method_set_bone_enabled>` 切换 ``bone_idx`` 处的骨骼时发出。使用 :ref:`is_bone_enabled<class_Skeleton3D_method_is_bone_enabled>` 来检查新值。
 
 .. rst-class:: classref-item-separator
 
@@ -183,9 +179,7 @@ Skeleton3D
 
 **pose_updated** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个信号的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+收到 :ref:`NOTIFICATION_UPDATE_SKELETON<class_Skeleton3D_constant_NOTIFICATION_UPDATE_SKELETON>` 后更新姿势时触发。
 
 .. rst-class:: classref-item-separator
 
@@ -197,9 +191,7 @@ Skeleton3D
 
 **show_rest_only_changed** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个信号的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+当 :ref:`show_rest_only<class_Skeleton3D_property_show_rest_only>` 的值改变时触发。
 
 .. rst-class:: classref-section-separator
 
@@ -216,7 +208,9 @@ Skeleton3D
 
 **NOTIFICATION_UPDATE_SKELETON** = ``50``
 
+当该骨架的姿势需要更新时收到的通知。
 
+该通知是在相关 :ref:`pose_updated<class_Skeleton3D_signal_pose_updated>` 信号\ *之前*\ 接收的。
 
 .. rst-class:: classref-section-separator
 
@@ -276,9 +270,7 @@ Skeleton3D
 - void **set_show_rest_only** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_show_rest_only** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+如果为 ``true``\ ，则无论其值如何，强制骨骼处于默认放松姿势。在编辑器中，这也会阻止骨骼被编辑。
 
 .. rst-class:: classref-section-separator
 

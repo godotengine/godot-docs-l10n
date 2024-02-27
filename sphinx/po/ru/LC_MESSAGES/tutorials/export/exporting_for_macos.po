@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,10 +31,14 @@ msgstr ""
 "исходного кода, читайте :ref:`doc_compiling_for_osx`."
 
 msgid ""
-"macOS apps are exported as an ``.app`` bundle, a folder with a specific "
+"macOS apps exported with the official export templates are exported as a "
+"single \"Universal 2\" binary ``.app`` bundle, a folder with a specific "
 "structure which stores the executable, libraries and all the project files. "
 "This bundle can be exported as is, packed in a ZIP archive or DMG disk image "
-"(only supported when exporting from a computer running macOS)."
+"(only supported when exporting from a computer running macOS). `Universal "
+"binaries for macOS support both Intel x86_64 and ARM64 (Apple silicon, i.e. "
+"M1) architectures <https://developer.apple.com/documentation/apple-silicon/"
+"building-a-universal-macos-binary>`__."
 msgstr ""
 
 msgid "Requirements"
@@ -191,7 +195,7 @@ msgid ""
 msgstr ""
 
 msgid "If you do not have an Apple Developer ID Certificate"
-msgstr ""
+msgstr "Если у вас нет сертификата Apple Developer ID"
 
 msgid ""
 "Select ``Built-in (ad-hoc only)`` in the ``Code Signing > Codesign`` option."
@@ -276,7 +280,7 @@ msgid "Tool to use for notarization."
 msgstr ""
 
 msgid "Apple ID Name"
-msgstr ""
+msgstr "Имя Apple ID"
 
 msgid "Apple ID account name (email address). [3]_"
 msgstr ""
@@ -291,7 +295,7 @@ msgid ""
 msgstr ""
 
 msgid "Apple Team ID"
-msgstr ""
+msgstr "Apple ID команды"
 
 msgid ""
 "Team ID (\"Organization Unit\"), if your Apple ID belongs to multiple teams "
@@ -348,11 +352,15 @@ msgstr "Окружение"
 msgid "Allow JIT Code Execution [4]_"
 msgstr ""
 
+#, fuzzy
 msgid ""
 "Allows creating writable and executable memory for JIT code. If you are "
 "using add-ons with dynamic or self-modifying native code, enable them "
 "according to the add-on documentation."
 msgstr ""
+"Позволяет создавать доступную для записи и исполняемую память для JIT-кода. "
+"Если вы используете дополнения с динамическим или самомодифицирующимся "
+"машинным кодом, включите их в соответствии с документацией по дополнениям."
 
 msgid "Allow Unsigned Executable Memory [4]_"
 msgstr ""
@@ -409,7 +417,7 @@ msgid ""
 msgstr ""
 
 msgid "Address Book"
-msgstr ""
+msgstr "Адресная книга"
 
 msgid ""
 "[5]_ Enable to allow access contacts in the user's address book, if it's "
@@ -479,15 +487,19 @@ msgid ""
 "more info."
 msgstr ""
 
+#, fuzzy
 msgid ""
 "To distribute an app through the App Store, you must enable the App Sandbox."
 msgstr ""
+"Чтобы распространять приложение через App Store, вы должны включить Sandbox "
+"приложение."
 
 msgid "Enabled"
 msgstr "Включено"
 
+#, fuzzy
 msgid "Enables App Sandbox."
-msgstr ""
+msgstr "Включить Sandbox приложение"
 
 msgid "Network Server"
 msgstr "Сетевой сервер"
@@ -513,7 +525,7 @@ msgid ""
 msgstr ""
 
 msgid "Device Bluetooth"
-msgstr ""
+msgstr "Устройство Bluetooth"
 
 msgid ""
 "Enable to allow app to interact with Bluetooth devices. This entitlement is "
@@ -529,13 +541,16 @@ msgstr "Структура файла"
 
 msgid "Allows read or write access to the user's \"Downloads\" folder."
 msgstr ""
+"Разрешает доступ для чтения или записи в папку пользователя \"Загрузки\"."
 
 #, fuzzy
 msgid "Files Pictures [7]_"
 msgstr "Структура файла"
 
+#, fuzzy
 msgid "Allows read or write access to the user's \"Pictures\" folder."
 msgstr ""
+"Разрешает доступ на чтение или запись к папке \"Картинки\" пользователя."
 
 #, fuzzy
 msgid "Files Music [7]_"
@@ -543,13 +558,14 @@ msgstr "Структура файла"
 
 msgid "Allows read or write access to the user's \"Music\" folder."
 msgstr ""
+"Разрешает доступ для чтения или записи в папку пользователя \"Музыка\"."
 
 #, fuzzy
 msgid "Files Movies [7]_"
 msgstr "Структура файла"
 
 msgid "Allows read or write access to the user's \"Movies\" folder."
-msgstr ""
+msgstr "Разрешает доступ для чтения или записи в папку пользователя \"Видео\"."
 
 #, fuzzy
 msgid "Files User Selected [7]_"

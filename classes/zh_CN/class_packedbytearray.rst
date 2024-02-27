@@ -471,6 +471,8 @@ void **clear** **(** **)**
 
 返回新的 **PackedByteArray**\ ，其中的数据已解压。请将 ``buffer_size`` 设置为数据解压后的大小。请将压缩模式设置为 :ref:`CompressionMode<enum_FileAccess_CompressionMode>` 常量。
 
+\ **注意：**\ 不保证解压缩可以处理未经 Godot 压缩的数据，例如，如果使用 deflate 压缩模式压缩的数据缺少校验和或标头。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -486,6 +488,8 @@ void **clear** **(** **)**
 这个方法可能比 :ref:`decompress<class_PackedByteArray_method_decompress>` 慢，因为在解压时可能需要多次重新分配输出缓冲区，而 :ref:`decompress<class_PackedByteArray_method_decompress>` 则在一开始就知道输出缓冲区的大小。
 
 GZIP 的最大压缩率为 1032:1，这意味着较小的压缩后负载很有可能解压出非常巨大的输出。为了防止这种情况，你可以通过 ``max_output_size`` 提供允许这个函数分配的最大字节数。传入 -1 则不限制输出。传入正数且解压超过该字节数时，会返回错误。
+
+\ **注意：**\ 不保证解压缩可以处理未经 Godot 压缩的数据，例如，如果使用 deflate 压缩模式压缩的数据缺少校验和或标头。
 
 .. rst-class:: classref-item-separator
 
@@ -836,7 +840,7 @@ void **remove_at** **(** :ref:`int<class_int>` index **)**
 
 :ref:`int<class_int>` **resize** **(** :ref:`int<class_int>` new_size **)**
 
-设置数组的大小。如果数组被增大，则保留数组末端的元素。如果数组被缩小，则将数组截断到新的大小。
+设置数组的大小。如果数组被增大，则保留数组末端的元素。如果数组被缩小，则将数组截断到新的大小。调用一次 :ref:`resize<class_PackedByteArray_method_resize>` 并分配新值比逐个添加新元素要快。
 
 .. rst-class:: classref-item-separator
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -178,7 +178,7 @@ msgid ""
 msgstr ""
 
 msgid "Stretch settings"
-msgstr ""
+msgstr "Настройки растяжения"
 
 msgid ""
 "Stretch settings are located in the project settings and provide several "
@@ -231,7 +231,7 @@ msgid ""
 msgstr ""
 
 msgid "Stretch Aspect"
-msgstr ""
+msgstr "Соотношение растяжений"
 
 msgid ""
 "The second setting is the stretch aspect. Note that this only takes effect "
@@ -426,6 +426,26 @@ msgid ""
 "``viewport`` stretch mode with the ``integer`` scale mode)."
 msgstr ""
 
+msgid ""
+"Games should use the **Exclusive Fullscreen** window mode, as opposed to "
+"**Fullscreen** which is designed to prevent Windows from automatically "
+"treating the window as if it was exclusive fullscreen."
+msgstr ""
+
+msgid ""
+"**Fullscreen** is meant to be used by GUI applications that want to use per-"
+"pixel transparency without a risk of having it disabled by the OS. It "
+"achieves this by leaving a 1-pixel line at the bottom of the screen. By "
+"contrast, **Exclusive Fullscreen** uses the actual screen size and allows "
+"Windows to reduce jitter and input lag for fullscreen games."
+msgstr ""
+
+msgid ""
+"When using integer scaling, this is particularly important as the 1-pixel "
+"height reduction from the **Fullscreen** mode can cause integer scaling to "
+"use a smaller scale factor than expected."
+msgstr ""
+
 msgid "Common use case scenarios"
 msgstr ""
 
@@ -437,10 +457,10 @@ msgstr ""
 "рекомендуется использовать следующие настройки."
 
 msgid "Desktop game"
-msgstr ""
+msgstr "Игра для десктопа"
 
 msgid "**Non-pixel art:**"
-msgstr ""
+msgstr "**Не пиксельная рисовка:**"
 
 msgid ""
 "Set the base window width to ``1920`` and window height to ``1080``. If you "
@@ -473,9 +493,8 @@ msgid ""
 "**Layout** menu."
 msgstr ""
 
-#, fuzzy
 msgid "**Pixel art:**"
-msgstr "**Формат PCK:**"
+msgstr "**Пиксельная рисовка:**"
 
 msgid ""
 "Set the base window size to the viewport size you intend to use. Most pixel "
@@ -593,9 +612,8 @@ msgid ""
 "base window height to ``1280``."
 msgstr ""
 
-#, fuzzy
 msgid "Non-game application"
-msgstr "Нормализация"
+msgstr "Неигровое приложение"
 
 msgid ""
 "Set the base window width and height to the smallest window size that you "
@@ -624,9 +642,8 @@ msgid ""
 "allow for the OS to use its low-DPI fallback."
 msgstr ""
 
-#, fuzzy
 msgid "hiDPI support"
-msgstr "Поддерживаемые платформы"
+msgstr "Поддержка дисплеев высокой плотности(DPI)"
 
 msgid ""
 "By default, Godot projects aren't considered DPI-aware by the operating "

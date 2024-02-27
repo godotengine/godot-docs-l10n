@@ -458,15 +458,15 @@ String
 
     "move_local_x".capitalize()   # 返回 "Move Local X"
     "sceneFile_path".capitalize() # 返回 "Scene File Path"
+    "2D, FPS, PNG".capitalize()   # 返回 "2d, Fps, Png"
 
  .. code-tab:: csharp
 
     "move_local_x".Capitalize();   // 返回 "Move Local X"
     "sceneFile_path".Capitalize(); // 返回 "Scene File Path"
+    "2D, FPS, PNG".Capitalize();   // 返回 "2d, Fps, Png"
 
 
-
-\ **注意：**\ 这个方法与检查器面板中属性的默认外观不一样，不会像你期望的那样将首字母缩写大写（\ ``"2D"``\ 、\ ``"FPS"``\ 、\ ``"PNG"`` 等）。
 
 .. rst-class:: classref-item-separator
 
@@ -1833,7 +1833,7 @@ String
 
 :ref:`String<class_String>` **to_lower** **(** **)** |const|
 
-返回将该字符串转换为小写的结果。
+返回将该字符串转换为小写 ``lowercase`` 的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -1859,6 +1859,25 @@ String
 
 返回将该字符串转换为蛇形命名 ``snake_case`` 的结果。
 
+\ **注意：**\ 如果数字之后存在的是\ *单个*\ 字符，则不会进行拆分，这是为了保证某些单词的连贯（例如“2D”）。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    "Node2D".to_snake_case()               # 返回 "node_2d"
+    "2nd place".to_snake_case()            # 返回 "2_nd_place"
+    "Texture3DAssetFolder".to_snake_case() # 返回 "texture_3d_asset_folder"
+
+ .. code-tab:: csharp
+
+    "Node2D".ToSnakeCase();               // 返回 "node_2d"
+    "2nd place".ToSnakeCase();            // 返回 "2_nd_place"
+    "Texture3DAssetFolder".ToSnakeCase(); // 返回 "texture_3d_asset_folder"
+
+
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1869,7 +1888,7 @@ String
 
 :ref:`String<class_String>` **to_upper** **(** **)** |const|
 
-返回将该字符串转换为大写的结果。
+返回将该字符串转换为大写 ``UPPERCASE`` 的结果。
 
 .. rst-class:: classref-item-separator
 

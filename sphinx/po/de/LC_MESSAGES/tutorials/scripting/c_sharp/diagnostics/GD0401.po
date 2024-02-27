@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0401: The class must derive from GodotObject or a derived class"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr "**Regel-ID**"
+
+msgid "GD0401"
+msgstr ""
+
+msgid "**Category**"
+msgstr "**Kategorie**"
+
+msgid "Usage"
+msgstr "Verwendung"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**Breaking- oder nicht-Breaking-Fix**"
+
+msgid "Breaking - If changing the inheritance chain"
+msgstr ""
+
+msgid "Non-breaking - If removing the ``[GlobalClass]`` attribute"
+msgstr ""
+
+msgid "**Enabled by default**"
+msgstr "**Standardmäßig aktiviert**"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "Cause"
+msgstr "Ursache"
+
+msgid ""
+"A type annotated with the ``[GlobalClass]`` attribute does not derive from "
+"``GodotObject``."
+msgstr ""
+
+msgid "Rule description"
+msgstr "Beschreibung der Regel"
+
+msgid ""
+"The ``[GlobalClass]`` has no effect for types that don't derive from "
+"``GodotObject``. Every :ref:`global class <doc_c_sharp_global_classes>` must "
+"ultimately derive from ``GodotObject`` so it can be marshalled."
+msgstr ""
+
+msgid "How to fix violations"
+msgstr "Wie man Verstöße behebt"
+
+#, fuzzy
+msgid ""
+"To fix a violation of this rule, change the type to derive from "
+"``GodotObject`` or remove the ``[GlobalClass]`` attribute."
+msgstr ""
+"Um einen Verstoß gegen diese Regel zu beheben, vermeiden Sie den Export von "
+"``Node``-Membern auf einem Typ, der nicht von ``Node`` abgeleitet ist, oder "
+"erwägen Sie den Export eines ``NodePath``."
+
+msgid "When to suppress warnings"
+msgstr "Wann Warnungen unterdrückt werden sollten"
+
+#, fuzzy
+msgid ""
+"Do not suppress a warning from this rule. Adding the ``[GlobalClass]`` to a "
+"type that doesn't derive from ``GodotObject`` is an easy mistake to make and "
+"this warning helps users realize that it may result in unexpected errors."
+msgstr ""
+"Unterdrücken Sie nicht eine Warnung dieser Regel. Typen, die nicht von "
+"``Node`` ableiten, sind nicht in der Lage, die richtige Node-Instanz für "
+"exportierte ``Node``-Member zu finden, was zu unerwarteten Laufzeitfehlern "
+"führt."
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

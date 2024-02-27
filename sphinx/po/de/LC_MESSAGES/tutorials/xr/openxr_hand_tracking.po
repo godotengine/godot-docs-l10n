@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,21 +17,26 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "The OpenXR hand tracking"
-msgstr "Nodes und deren Fachausdrücke"
+msgstr "Das OpenXR-Handtracking"
 
 msgid ""
 "Hand tracking is the process by which the position and orientation of the "
 "players hands are tracked, including the orientation of the players fingers. "
 "We can identify 3 categories of this:"
 msgstr ""
+"Beim Handtracking werden die Position und die Ausrichtung der Spielerhände, "
+"einschließlich der Ausrichtung der Spielerfinger, verfolgt. Wir können dabei "
+"3 Kategorien unterscheiden:"
 
 msgid ""
 "One, hand tracking through external sensors such as cameras. This is what "
 "Hololens, Quest, UltraLeap and similar devices do. This often results in "
 "very accurate tracking of all fingers of the players hands."
 msgstr ""
+"Erstens: Hand-Tracking durch externe Sensoren wie Kameras. Das ist es, was "
+"Hololens, Quest, UltraLeap und ähnliche Geräte tun. Dies führt oft zu einem "
+"sehr genauen Tracking aller Finger der Spielerhände."
 
 msgid ""
 "Two, hand tracking through VR gloves. This method is still mostly "
@@ -41,6 +46,13 @@ msgid ""
 "recognised as controllers and often will have additional controls such as "
 "buttons embedded."
 msgstr ""
+"Zweitens: Hand-Tracking durch VR-Handschuhe. Diese Methode ist noch "
+"weitgehend experimentell, wird aber wahrscheinlich bald an Popularität "
+"gewinnen. Handschuhe verfügen oft über gute Tracking-Funktionen für die "
+"Finger, aber ihr eigentliches Verkaufsargument ist die Fähigkeit, die "
+"Bewegung einzuschränken. Dadurch wird das Gefühl von Berührung ermöglicht. "
+"Handschuhe werden oft auch als Controller erkannt und haben oft zusätzliche "
+"Steuerelemente wie Tasten integriert."
 
 msgid ""
 "Three, inferred hand tracking. This has been the de facto approach since the "
@@ -50,6 +62,14 @@ msgid ""
 "interacting with. Many modern VR controllers have additional sensors to help "
 "determine finger positions on the controller."
 msgstr ""
+"Drittens: Inferiertes Hand-Tracking. Dies ist seit den Anfängen der VR der "
+"De-facto-Ansatz. Da wir wissen, dass der Spieler einen Controller in der "
+"Hand hält und wir die Position dieses Controllers kennen, können wir "
+"ableiten, wo die Hand des Spielers gerendert werden soll. Die Finger können "
+"auf der Grundlage der Bedienelemente, mit denen der Spieler interagiert, "
+"positioniert werden. Viele moderne VR-Controller verfügen über zusätzliche "
+"Sensoren, die bei der Bestimmung der Fingerpositionen auf dem Controller "
+"helfen."
 
 msgid ""
 "Traditionally inferred hand tracking has been the responsibility of the "
@@ -59,20 +79,32 @@ msgid ""
 "There is an expectation that other XR Runtimes will follow this example in "
 "the near future."
 msgstr ""
+"Traditionell liegt das Hand-Tracking in der Verantwortung des Spiels. "
+"Allerdings haben die Prinzipien hinter der Action Map die möglichen Optionen "
+"hier etwas eingeschränkt. Valve ist derzeit die einzige XR-Runtime, die "
+"abgeleitetes Hand-Tracking als Teil der Hand-Tracking-Erweiterung "
+"implementiert hat. Es ist zu erwarten, dass andere XR Runtimes diesem "
+"Beispiel in naher Zukunft folgen werden."
 
 msgid ""
 "Until then we recommend that if your game depends on inferred hand tracking, "
 "to use the hand assets that are part of Godot XR Tools."
 msgstr ""
+"Bis dahin empfehlen wir, wenn Ihr Spiel auf inferiertes Hand-Tracking "
+"angewiesen ist, die Hand-Assets zu verwenden, die Teil der Godot XR-Tools "
+"sind."
 
 msgid "Tracking through interaction profiles"
-msgstr ""
+msgstr "Tracking durch Interaktionsprofile"
 
 msgid ""
 "Tracking the location and state of controllers are performed through "
 "interaction profiles. Bindings can be set within the :ref:`action map "
 "<doc_xr_action_map>`."
 msgstr ""
+"Das Tracken des Ortes und des Zustands von Controllern erfolgt über "
+"Interaktionsprofile. Bindings können innerhalb der :ref:`Action "
+"Map<doc_xr_action_map>` festgelegt werden."
 
 msgid ""
 "However it is important to realise that in OpenXR controllers are bound to "
@@ -83,6 +115,14 @@ msgid ""
 "be extended with paths such as ``/user/foot/left`` and ``/user/foot/right`` "
 "at some point."
 msgstr ""
+"Es ist jedoch wichtig zu wissen, dass in OpenXR-Controller an Pfade gebunden "
+"sind, welche die Verwendung dieser Controller anzeigt. D.h. der Controller, "
+"der in der linken Hand des Spielers gehalten wird, ist an ``/user/hand/"
+"left`` gebunden, während der Controller in der rechten Hand des Spielers an "
+"``/user/hand/right`` gebunden ist. Und obwohl es noch nicht außerhalb der "
+"HTC-Tracker-Erweiterung unterstützt wird, ist es wahrscheinlich, dass OpenXR "
+"später einmal mit Pfaden wie ``/user/foot/left`` und ``/user/foot/right`` "
+"erweitert wird."
 
 msgid ""
 "This paradigm therefore begs the question what happens to a controller that "
@@ -90,41 +130,58 @@ msgid ""
 "is still being debated and the specification may change in the near future. "
 "The behavior is thus undefined and can be different for different platforms."
 msgstr ""
+"Dieses Paradigma wirft daher die Frage auf, was mit einem Controller "
+"geschieht, der sich nicht in der Hand eines Benutzers befindet. Auf diese "
+"Frage gibt es noch keine Antwort, sie wird noch diskutiert und die "
+"Spezifikation könnte sich in naher Zukunft ändern. Das Verhalten ist also "
+"undefiniert und kann für verschiedene Plattformen unterschiedlich sein."
 
 msgid ""
 "The most common is that the controller will remain bound regardless of "
 "whether the player is actually holding the controller."
 msgstr ""
+"Die häufigste ist, dass der Controller gebunden bleibt, unabhängig davon, ob "
+"der Spieler den Controller tatsächlich hält."
 
 msgid ""
 "However there are runtimes, such as the Quest, that can unbind a controller "
 "when it is not being held by the user."
 msgstr ""
+"Es gibt jedoch Runtimes, wie z.B. Quest, die das Binding eines Controllers "
+"aufheben können, wenn er nicht vom Benutzer gehalten wird."
 
 msgid ""
 "This may become the norm in the future and the expectation is that the "
 "action map system will be enhanced accordingly."
 msgstr ""
+"Dies könnte in Zukunft zur Norm werden, und es wird erwartet, dass das "
+"System der Action Maps entsprechend verbessert wird."
 
-#, fuzzy
 msgid "The hand tracking extension"
-msgstr "Installation von Tracking"
+msgstr "Die Hand-Tracking-Erweiterung"
 
 msgid ""
 "OpenXR has an extension that exposes hand tracking functionality. This "
 "extension allows a game to request the hand skeleton with all bone positions "
 "for each hand."
 msgstr ""
+"OpenXR verfügt über eine Erweiterung um die Funktionalität des Hand-Tracking "
+"zur Verfügung zu stellen. Diese Erweiterung ermöglicht es einem Spiel, das "
+"Handskelett mit allen Knochenpositionen für jede Hand anzufordern."
 
 msgid ""
 "Copyright (c) 2017-2022, The Khronos Group Inc. SPDX-License-Identifier: CC-"
 "BY-4.0"
 msgstr ""
+"Copyright (c) 2017-2022, The Khronos Group Inc. SPDX-Licenz-Identifikator: "
+"CC-BY-4.0"
 
 msgid ""
 "The above image shows the joints that have to be provided by each XR runtime "
 "that implements this extension."
 msgstr ""
+"Die obige Abbildung zeigt die Verbindungen, die von jeder XR-Runtime, die "
+"diese Erweiterung implementiert, bereitgestellt werden müssen."
 
 msgid ""
 "Currently Godot exposes this functionality through the :ref:`OpenXRHand "
@@ -132,339 +189,319 @@ msgid ""
 "tracking data from OpenXR and apply it to a skeleton in Godot. You select "
 "either the left or right hand through the ``hand`` property on this node."
 msgstr ""
+"Derzeit stellt Godot diese Funktionalität über den Node :ref:`OpenXRHand "
+"<class_openxrhand>` zur Verfügung. Dies ist ein Helper-Node, der die Hand "
+"Tracking-Daten von OpenXR abruft und sie auf ein Skelett in Godot anwendet. "
+"Sie wählen entweder die linke oder die rechte Hand über die Property "
+"``hand`` auf diesem Node aus."
 
 msgid ""
 "The hand asset itself has to be provided by the developer and is thus "
 "separate from the OpenXRHand node. You set the ``hand_skeleton`` on the "
 "OpenXRHand node to the skeleton it needs to apply the tracking data to."
 msgstr ""
+"Das Hand-Asset selbst muss vom Entwickler bereitgestellt werden und ist "
+"daher vom OpenXRHand-Node getrennt. Man setzt den Parameter "
+"``hand_skeleton`` auf dem OpenXRHand Node auf das Skelett, auf das die "
+"Tracking Daten angewendet werden sollen."
 
 msgid ""
 "If supported by the XR runtime you can also set the ``motion_range`` "
 "property to limit how far the hand can close."
 msgstr ""
+"Wenn es von der XR-Runtime unterstützt wird, können Sie auch die Property "
+"``motion_range`` setzen, um zu begrenzen, wie weit sich die Hand schließen "
+"kann."
 
 msgid "The skeleton for this asset has to have the following bones:"
-msgstr ""
+msgstr "Das Skelett für dieses Asset muss die folgenden Knochen haben:"
 
-#, fuzzy
 msgid "OpenXR hand skeleton"
-msgstr "Das Skelett vervollständigen"
+msgstr "OpenXR Handskelett"
 
 msgid "Left hand"
-msgstr ""
+msgstr "Linke Hand"
 
-#, fuzzy
 msgid "Right hand"
-msgstr "Beleuchtungs-Nodes"
+msgstr "Rechte Hand"
 
-#, fuzzy
 msgid "Palm_L"
-msgstr "Handfläche"
+msgstr "Palm_L"
 
-#, fuzzy
 msgid "Palm_R"
-msgstr "Handfläche"
+msgstr "Palm_R"
 
-#, fuzzy
 msgid "Wrist_L"
-msgstr "Handgelenk"
+msgstr "Wrist_L"
 
-#, fuzzy
 msgid "Wrist_R"
-msgstr "Handgelenk"
+msgstr "Wrist_R"
 
-#, fuzzy
 msgid "Thumb_Metacarpal_L"
-msgstr "Ring_Metacarpal"
+msgstr "Thumb_Metacarpal_L"
 
-#, fuzzy
 msgid "Thumb_Metacarpal_R"
-msgstr "Ring_Metacarpal"
+msgstr "Thumb_Metacarpal_R"
 
-#, fuzzy
 msgid "Thumb_Proximal_L"
-msgstr "Ring_Proximal"
+msgstr "Thumb_Proximal_L"
 
-#, fuzzy
 msgid "Thumb_Proximal_R"
-msgstr "Ring_Proximal"
+msgstr "Thumb_Proximal_R"
 
-#, fuzzy
 msgid "Thumb_Distal_L"
-msgstr "Thumb_Tip"
+msgstr "Thumb_Distal_L"
 
-#, fuzzy
 msgid "Thumb_Distal_R"
-msgstr "Thumb_Tip"
+msgstr "Thumb_Distal_R"
 
-#, fuzzy
 msgid "Thumb_Tip_L"
-msgstr "Thumb_Tip"
+msgstr "Thumb_Tip_L"
 
-#, fuzzy
 msgid "Thumb_Tip_R"
-msgstr "Thumb_Tip"
+msgstr "Thumb_Tip_R"
 
-#, fuzzy
 msgid "Index_Metacarpal_L"
-msgstr "Index_Metacarpal"
+msgstr "Index_Metacarpal_L"
 
-#, fuzzy
 msgid "Index_Metacarpal_R"
-msgstr "Index_Metacarpal"
+msgstr "Index_Metacarpal_R"
 
-#, fuzzy
 msgid "Index_Proximal_L"
-msgstr "Index_Proximal"
+msgstr "Index_Proximal_L"
 
-#, fuzzy
 msgid "Index_Proximal_R"
-msgstr "Index_Proximal"
+msgstr "Index_Proximal_R"
 
-#, fuzzy
 msgid "Index_Intermediate_L"
-msgstr "Index_Intermediate"
+msgstr "Index_Intermediate_L"
 
-#, fuzzy
 msgid "Index_Intermediate_R"
-msgstr "Index_Intermediate"
+msgstr "Index_Intermediate_R"
 
-#, fuzzy
 msgid "Index_Distal_L"
-msgstr "Index_Distal"
+msgstr "Index_Distal_L"
 
-#, fuzzy
 msgid "Index_Distal_R"
-msgstr "Index_Distal"
+msgstr "Index_Distal_R"
 
-#, fuzzy
 msgid "Index_Tip_L"
-msgstr "Index"
+msgstr "Index_Tip_L"
 
-#, fuzzy
 msgid "Index_Tip_R"
-msgstr "Index"
+msgstr "Index_Tip_R"
 
-#, fuzzy
 msgid "Middle_Metacarpal_L"
-msgstr "Middle_Metacarpal"
+msgstr "Middle_Metacarpal_L"
 
-#, fuzzy
 msgid "Middle_Metacarpal_R"
-msgstr "Middle_Metacarpal"
+msgstr "Middle_Metacarpal_R"
 
-#, fuzzy
 msgid "Middle_Proximal_L"
-msgstr "Middle_Proximal"
+msgstr "Middle_Proximal_L"
 
-#, fuzzy
 msgid "Middle_Proximal_R"
-msgstr "Middle_Proximal"
+msgstr "Middle_Proximal_R"
 
-#, fuzzy
 msgid "Middle_Intermediate_L"
-msgstr "Middle_Intermediate"
+msgstr "Middle_Intermediate_L"
 
-#, fuzzy
 msgid "Middle_Intermediate_R"
-msgstr "Middle_Intermediate"
+msgstr "Middle_Intermediate_R"
 
-#, fuzzy
 msgid "Middle_Distal_L"
-msgstr "Middle_Distal"
+msgstr "Middle_Distal_L"
 
-#, fuzzy
 msgid "Middle_Distal_R"
-msgstr "Middle_Distal"
+msgstr "Middle_Distal_R"
 
-#, fuzzy
 msgid "Middle_Tip_L"
-msgstr "Middle_Tip"
+msgstr "Middle_Tip_L"
 
-#, fuzzy
 msgid "Middle_Tip_R"
-msgstr "Middle_Tip"
+msgstr "Middle_Tip_R"
 
-#, fuzzy
 msgid "Ring_Metacarpal_L"
-msgstr "Ring_Metacarpal"
+msgstr "Ring_Metacarpal_L"
 
-#, fuzzy
 msgid "Ring_Metacarpal_R"
-msgstr "Ring_Metacarpal"
+msgstr "Ring_Metacarpal_R"
 
-#, fuzzy
 msgid "Ring_Proximal_L"
-msgstr "Ring_Proximal"
+msgstr "Ring_Proximal_L"
 
-#, fuzzy
 msgid "Ring_Proximal_R"
-msgstr "Ring_Proximal"
+msgstr "Ring_Proximal_R"
 
-#, fuzzy
 msgid "Ring_Intermediate_L"
-msgstr "Ring_Intermediate"
+msgstr "Ring_Intermediate_L"
 
-#, fuzzy
 msgid "Ring_Intermediate_R"
-msgstr "Ring_Intermediate"
+msgstr "Ring_Intermediate_R"
 
-#, fuzzy
 msgid "Ring_Distal_L"
-msgstr "Ring_Distal"
+msgstr "Ring_Distal_L"
 
-#, fuzzy
 msgid "Ring_Distal_R"
-msgstr "Ring_Distal"
+msgstr "Ring_Distal_R"
 
-#, fuzzy
 msgid "Ring_Tip_L"
-msgstr "Ring_Tip"
+msgstr "Ring_Tip_L"
 
-#, fuzzy
 msgid "Ring_Tip_R"
-msgstr "Ring_Tip"
+msgstr "Ring_Tip_R"
 
-#, fuzzy
 msgid "Little_Metacarpal_L"
-msgstr "Little_Metacarpal"
+msgstr "Little_Metacarpal_L"
 
-#, fuzzy
 msgid "Little_Metacarpal_R"
-msgstr "Little_Metacarpal"
+msgstr "Little_Metacarpal_R"
 
-#, fuzzy
 msgid "Little_Proximal_L"
-msgstr "Little_Proximal"
+msgstr "Little_Proximal_L"
 
-#, fuzzy
 msgid "Little_Proximal_R"
-msgstr "Little_Proximal"
+msgstr "Little_Proximal_R"
 
-#, fuzzy
 msgid "Little_Intermediate_L"
-msgstr "Little_Intermediate"
+msgstr "Little_Intermediate_L"
 
-#, fuzzy
 msgid "Little_Intermediate_R"
-msgstr "Little_Intermediate"
+msgstr "Little_Intermediate_R"
 
-#, fuzzy
 msgid "Little_Distal_L"
-msgstr "Little_Distal"
+msgstr "Little_Distal_L"
 
-#, fuzzy
 msgid "Little_Distal_R"
-msgstr "Little_Distal"
+msgstr "Little_Distal_R"
 
-#, fuzzy
 msgid "Little_Tip_L"
-msgstr "Little_Tip"
+msgstr "Little_Tip_L"
 
-#, fuzzy
 msgid "Little_Tip_R"
-msgstr "Little_Tip"
+msgstr "Little_Tip_R"
 
 msgid ""
 "The skeleton data returned from different XR runtimes are often not "
 "compatible which poses a problem for cross platform development."
 msgstr ""
+"Die von verschiedenen XR-Runtimes zurückgegebenen Skelettdaten sind oft "
+"nicht kompatibel, was ein Problem für die plattformübergreifende Entwicklung "
+"darstellt."
 
 msgid ""
 "For instance both Microsoft and Meta runtimes base the skeleton on the "
 "actual hands of the player. These skeletons will thus conform to the size of "
 "the players hand."
 msgstr ""
+"So basieren beispielsweise sowohl die Microsoft- als auch die Meta-Runtimes "
+"auf den tatsächlichen Händen des Spielers als Skelett. Diese Skelette passen "
+"sich also an die Größe der Spielerhand an."
 
 msgid ""
 "Contrast that to Valve where a fixed skeleton is used if inferred hand "
 "tracking is applied."
 msgstr ""
+"Im Gegensatz dazu wird bei Valve ein festes Skelett verwendet, wenn das Hand-"
+"Tracking angewendet wird."
 
 msgid ""
 "We are still gathering experience on how best to deal with these differences "
 "in the platforms."
 msgstr ""
+"Wir sind noch dabei, Erfahrungen zu sammeln, wie wir am besten mit diesen "
+"Unterschieden in den Plattformen umgehen können."
 
 msgid "When exporting to Meta Quest you need to enable the following setting:"
 msgstr ""
+"Beim Exportieren nach Meta Quest müssen Sie die folgende Einstellung "
+"aktivieren:"
 
-#, fuzzy
 msgid "Body tracking"
-msgstr "Installation von Tracking"
+msgstr "Body-Tracking"
 
 msgid ""
 "At the time of writing, OpenXR does not support body tracking as part of the "
 "core spec. We are expecting this to change in the near future as more and "
 "more body tracking solutions are hitting the market."
 msgstr ""
+"Zum Zeitpunkt der Erstellung dieses Artikels unterstützt OpenXR kein Body "
+"Tracking als Teil der Kernspezifikation. Wir gehen davon aus, dass sich dies "
+"in naher Zukunft ändern wird, da mehr und mehr Body Tracking-Lösungen auf "
+"den Markt kommen."
 
 msgid ""
 "For now the only option available here is through HTC trackers. There is an "
 "extension that becomes available if HTC trackers are supported by the XR "
 "runtime. These are fully exposed through the action map system."
 msgstr ""
+"Im Moment ist die einzige Option, die hier verfügbar ist, durch HTC-Tracker. "
+"Es gibt eine Erweiterung, die verfügbar wird, wenn HTC-Tracker von der XR "
+"Runtime unterstützt werden. Diese werden vollständig durch das Action Map-"
+"System zugänglich gemacht."
 
 msgid ""
 "Godot has full support for these and you can setup the trackers in the "
 "action map. Each tracker is assigned a usage within the SteamVR interface."
 msgstr ""
+"Godot bietet volle Unterstützung dafür, und Sie können die Tracker in der "
+"Action Map einrichten. Jedem Tracker wird eine Verwendung innerhalb des "
+"SteamVR-Interface zugewiesen."
 
-#, fuzzy
 msgid "These are exposed through the following trackers:"
-msgstr "Füllen Sie das Formular mit den folgenden Einstellungen aus:"
+msgstr "Diese werden über die folgenden Tracker angezeigt:"
 
 msgid "HTC trackers"
-msgstr ""
+msgstr "HTC-Tracker"
 
 msgid "/user/vive_tracker_htcx/role/handheld_object"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/handheld_object"
 
 msgid "/user/vive_tracker_htcx/role/left_foot"
-msgstr ""
+msgstr "user/vive_tracker_htcx/role/left_foot"
 
 msgid "/user/vive_tracker_htcx/role/right_foot"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_foot"
 
 msgid "/user/vive_tracker_htcx/role/left_shoulder"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_shoulder"
 
 msgid "/user/vive_tracker_htcx/role/right_shoulder"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_shoulder"
 
 msgid "/user/vive_tracker_htcx/role/left_elbow"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_elbow"
 
 msgid "/user/vive_tracker_htcx/role/right_elbow"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_elbow"
 
 msgid "/user/vive_tracker_htcx/role/left_knee"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/left_knee"
 
 msgid "/user/vive_tracker_htcx/role/right_knee"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/right_knee"
 
 msgid "/user/vive_tracker_htcx/role/waist"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/waist"
 
 msgid "/user/vive_tracker_htcx/role/chest"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/chest"
 
 msgid "/user/vive_tracker_htcx/role/camera"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/camera"
 
 msgid "/user/vive_tracker_htcx/role/keyboard"
-msgstr ""
+msgstr "/user/vive_tracker_htcx/role/keyboard"
 
-#, fuzzy
 msgid "Some final words"
-msgstr "Signal Schlüsselwörter"
+msgstr "Einige abschließende Worte"
 
 msgid ""
 "Hand tracking is an area that is still under active development and we are "
 "expecting improvements in the near future."
 msgstr ""
+"Das Hand-Tracking ist ein Bereich, der noch aktiv entwickelt wird, und wir "
+"erwarten in naher Zukunft Verbesserungen."
 
 msgid ""
 "The underlying principle that we're hoping will eventuate is that the action "
@@ -473,6 +510,12 @@ msgid ""
 "that improvements to the OpenXR specification will ensure better portability "
 "between platforms."
 msgstr ""
+"Das zugrundeliegende Prinzip, das sich hoffentlich durchsetzen wird, ist, "
+"dass die Action Map für die Interaktionen verwendet wird, während die Hand-"
+"Tracking-Erweiterung in erster Linie ein Mittel zur Visualisierung der "
+"Spielerhand ist. Wir hoffen, dass Verbesserungen an der OpenXR-Spezifikation "
+"eine bessere Portabilität zwischen verschiedenen Plattformen gewährleisten "
+"werden."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

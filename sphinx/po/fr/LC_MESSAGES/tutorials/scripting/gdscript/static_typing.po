@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,18 +23,15 @@ msgstr "Typage statique en GDScript"
 msgid "In this guide, you will learn:"
 msgstr "Dans ce guide, vous apprendrez :"
 
-#, fuzzy
 msgid "how to use static typing in GDScript;"
-msgstr "Typage statique en GDScript"
+msgstr "comment utiliser le typage statique avec GDScript;"
 
-#, fuzzy
 msgid "that static types can help you avoid bugs;"
-msgstr "Les **types statiques peuvent aider à éviter les bugs**"
+msgstr "ces types statiques peuvent vous aider à éviter les bugs;"
 
 msgid "that static typing improves your experience with the editor."
 msgstr ""
 
-#, fuzzy
 msgid ""
 "Where and how you use this language feature is entirely up to you: you can "
 "use it only in some sensitive GDScript files, use it everywhere, or don't "
@@ -42,8 +39,7 @@ msgid ""
 msgstr ""
 "Vous êtes libre de choisir où et comment utiliser cette nouvelle "
 "fonctionnalité de langage : vous pouvez ne l'utiliser que dans certains "
-"fichiers sensibles GDScript, l'utiliser partout ou écrire du code comme vous "
-"l'avez toujours fait !"
+"fichiers sensibles GDScript, l'utiliser partout ou ne pas l'utiliser."
 
 msgid ""
 "Static types can be used on variables, constants, functions, parameters, and "
@@ -182,9 +178,8 @@ msgstr ""
 "car Godot le définit automatiquement à partir de la valeur attribuée. Mais "
 "vous pouvez toujours le faire pour clarifier votre code."
 
-#, fuzzy
 msgid "What can be a type hint"
-msgstr "Qu'est-ce que le moteur de jeu peut faire ?"
+msgstr "Qu'est-ce que le moteur de jeu peut faire"
 
 #, fuzzy
 msgid "Here is a complete list of what can be used as a type hint:"
@@ -558,6 +553,63 @@ msgid ""
 "lines cover."
 msgstr ""
 
+msgid "Common unsafe operations and their safe counterparts"
+msgstr ""
+
+msgid "``UNSAFE_PROPERTY_ACCESS`` and ``UNSAFE_METHOD_ACCESS`` warnings"
+msgstr ""
+
+msgid ""
+"In this example, we aim to set a property and call a method on an object "
+"that has a script attached with ``class_name MyScript`` and that ``extends "
+"Node2D``. If we have a reference to the object as a ``Node2D`` (for "
+"instance, as it was passed to us by the physics system), we can first check "
+"if the property and method exist and then set and call them if they do::"
+msgstr ""
+
+msgid ""
+"However, this code will produce ``UNSAFE_PROPERTY_ACCESS`` and "
+"``UNSAFE_METHOD_ACCESS`` warnings as the property and method are not present "
+"in the referenced type - in this case a ``Node2D``. To make these operations "
+"safe, you can first check if the object is of type ``MyScript`` using the "
+"``is`` keyword and then declare a variable with the type ``MyScript`` on "
+"which you can set its properties and call its methods::"
+msgstr ""
+
+msgid ""
+"Alternatively, you can declare a variable and use the ``as`` operator to try "
+"to cast the object. You'll then want to check whether the cast was "
+"successful by confirming that the variable was assigned::"
+msgstr ""
+
+msgid "``UNSAFE_CAST`` warning"
+msgstr ""
+
+msgid ""
+"In this example, we would like the label connected to an object entering our "
+"collision area to show the area's name. Once the object enters the collision "
+"area, the physics system sends a signal with a ``Node2D`` object, and the "
+"most straightforward (but not statically typed) solution to do what we want "
+"could be achieved like this::"
+msgstr ""
+
+msgid ""
+"This piece of code produces an ``UNSAFE_PROPERTY_ACCESS`` warning because "
+"``label`` is not defined in ``Node2D``. To solve this, we could first check "
+"if the ``label`` property exist and cast it to type ``Label`` before "
+"settings its text property like so::"
+msgstr ""
+
+msgid ""
+"However, this produces an ``UNSAFE_CAST`` warning because ``body.label`` is "
+"of a ``Variant`` type. To safely get the property in the type you want, you "
+"can use the ``Object.get()`` method which returns the object as a "
+"``Variant`` value or returns ``null`` if the property doesn't exist. You can "
+"then determine whether the property contains an object of the right type "
+"using the ``is`` keyword, and finally declare a statically typed variable "
+"with the object::"
+msgstr ""
+
 #, fuzzy
 msgid "Cases where you can't specify types"
 msgstr "Cas où vous ne pouvez pas spécifier de types"
@@ -579,13 +631,11 @@ msgstr ""
 "Vous ne pouvez pas spécifier le type de membres individuels dans un tableau. "
 "Cela vous donnera une erreur :"
 
-#, fuzzy
 msgid "Nested types are not currently supported::"
-msgstr "**Les navigateurs mobiles ne sont actuellement pas pris en charge.**"
+msgstr "Les types imbriqués ne sont actuellement pas pris en charge :"
 
-#, fuzzy
 msgid "Typed dictionaries are not currently supported::"
-msgstr "**Les navigateurs mobiles ne sont actuellement pas pris en charge.**"
+msgstr "Les dictionnaires typés ne sont actuellement pas pris en charge :"
 
 msgid "Summary"
 msgstr "Résumé"

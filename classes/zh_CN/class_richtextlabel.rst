@@ -1305,7 +1305,32 @@ void **deselect** **(** **)**
 
 void **install_effect** **(** :ref:`Variant<class_Variant>` effect **)**
 
-安装自定义效果。\ ``effect`` 应该是有效的 :ref:`RichTextEffect<class_RichTextEffect>`\ 。
+安装自定义效果。这也可以在 RichTextLabel 检查器中使用 :ref:`custom_effects<class_RichTextLabel_property_custom_effects>` 属性来完成。\ ``effect`` 应该是一个有效的 :ref:`RichTextEffect<class_RichTextEffect>`\ 。
+
+RichTextEffect 示例：
+
+::
+
+    # effect.gd
+    class_name MyCustomEffect
+    extends RichTextEffect
+    
+    var bbcode = "my_custom_effect"
+    
+    # ...
+
+通过脚本在 RichTextLabel 中注册上述效果：
+
+::
+
+    # rich_text_label.gd
+    extends RichTextLabel
+    
+    func _ready():
+        install_effect(MyCustomEffect.new())
+    
+        # 或者，如果在扩展 RichTextEffect 的脚本中不使用“class_name”：
+        install_effect(preload("res://effect.gd").new())
 
 .. rst-class:: classref-item-separator
 

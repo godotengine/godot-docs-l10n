@@ -25,7 +25,13 @@ StringName
 
 \ :ref:`String<class_String>` 的所有方法都在这个类中可用。它们会将 **StringName** 转换为字符串，返回的也是字符串。这样做效率非常低，应该只在需要字符串时使用。
 
+\ **注意：**\ 在 C# 中，需要显式转换为 ``System.String`` 才能使用本页列出的方法。使用 ``ToString()`` 方法将 **StringName** 转换为字符串，然后使用 ``System.String`` 或 ``StringExtensions`` 中的等效方法。
+
 \ **注意：**\ 转换为布尔值时，空的 **StringName**\ （\ ``StringName("")``\ ）为 ``false``\ ，其他 **StringName** 均为 ``true``\ 。不能使用 ``not`` 运算符。请改用 :ref:`is_empty<class_StringName_method_is_empty>` 来检查空的 **StringName**\ 。
+
+.. note::
+
+	通过 C# 使用这个 API 时有显著的不同。详见 :ref:`doc_c_sharp_differences`\ 。
 
 .. rst-class:: classref-reftable-group
 
@@ -425,15 +431,15 @@ StringName
 
     "move_local_x".capitalize()   # 返回 "Move Local X"
     "sceneFile_path".capitalize() # 返回 "Scene File Path"
+    "2D, FPS, PNG".capitalize()   # 返回 "2d, Fps, Png"
 
  .. code-tab:: csharp
 
     "move_local_x".Capitalize();   // 返回 "Move Local X"
     "sceneFile_path".Capitalize(); // 返回 "Scene File Path"
+    "2D, FPS, PNG".Capitalize();   // 返回 "2d, Fps, Png"
 
 
-
-\ **注意：**\ 这个方法与检查器面板中属性的默认外观不一样，不会像你期望的那样将首字母缩写大写（\ ``"2D"``\ 、\ ``"FPS"``\ 、\ ``"PNG"`` 等）。
 
 .. rst-class:: classref-item-separator
 
@@ -1672,7 +1678,7 @@ StringName
 
 :ref:`String<class_String>` **to_lower** **(** **)** |const|
 
-返回将该字符串转换为小写的结果。
+返回将该字符串转换为小写 ``lowercase`` 的结果。
 
 .. rst-class:: classref-item-separator
 
@@ -1698,6 +1704,25 @@ StringName
 
 返回将该字符串转换为蛇形命名 ``snake_case`` 的结果。
 
+\ **注意：**\ 如果数字之后存在的是\ *单个*\ 字符，则不会进行拆分，这是为了保证某些单词的连贯（例如“2D”）。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    "Node2D".to_snake_case()               # 返回 "node_2d"
+    "2nd place".to_snake_case()            # 返回 "2_nd_place"
+    "Texture3DAssetFolder".to_snake_case() # 返回 "texture_3d_asset_folder"
+
+ .. code-tab:: csharp
+
+    "Node2D".ToSnakeCase();               // 返回 "node_2d"
+    "2nd place".ToSnakeCase();            // 返回 "2_nd_place"
+    "Texture3DAssetFolder".ToSnakeCase(); // 返回 "texture_3d_asset_folder"
+
+
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -1708,7 +1733,7 @@ StringName
 
 :ref:`String<class_String>` **to_upper** **(** **)** |const|
 
-返回将该字符串转换为大写的结果。
+返回将该字符串转换为大写 ``UPPERCASE`` 的结果。
 
 .. rst-class:: classref-item-separator
 

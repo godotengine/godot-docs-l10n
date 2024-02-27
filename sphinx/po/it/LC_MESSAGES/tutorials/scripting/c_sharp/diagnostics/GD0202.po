@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"GD0202: The parameter of the delegate signature of the signal is not "
+"supported"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr ""
+
+msgid "GD0202"
+msgstr ""
+
+#, fuzzy
+msgid "**Category**"
+msgstr "**Categoria**:"
+
+msgid "Usage"
+msgstr "Utilizzo"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+msgid "Breaking - If the parameter type is changed"
+msgstr ""
+
+msgid "Non-breaking - If the ``[Signal]`` attribute is removed"
+msgstr ""
+
+msgid "**Enabled by default**"
+msgstr ""
+
+#, fuzzy
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr ""
+
+msgid ""
+"An unsupported type is specified for a parameter of a delegate annotated "
+"with the ``[Signal]`` attribute when a :ref:`Variant-compatible "
+"<doc_c_sharp_variant>` type is expected."
+msgstr ""
+
+#, fuzzy
+msgid "Rule description"
+msgstr "`<brief_description>`"
+
+msgid ""
+"Every signal parameter must be Variant-compatible so it can be marshalled "
+"when emitting the signal and invoking the callbacks."
+msgstr ""
+
+msgid ""
+"Take a look at the :ref:`C# signals <doc_c_sharp_signals>` documentation for "
+"more information about how to declare and use signals."
+msgstr ""
+
+msgid "How to fix violations"
+msgstr ""
+
+msgid ""
+"To fix a violation of this rule, change the parameter type to be Variant-"
+"compatible or remove the ``[Signal]`` attribute from the delegate. Note that "
+"removing the attribute will mean the signal is not registered."
+msgstr ""
+
+msgid ""
+"If the signal doesn't need to interact with Godot, consider using `C# events "
+"<https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/events/"
+">`_ directly. Pure C# events allow you to use any C# type for its parameters."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr ""
+
+msgid ""
+"Do not suppress a warning from this rule. Signal delegates with parameters "
+"that can't be marshalled will result in runtime errors when emitting the "
+"signal or invoking the callbacks."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stato della traduzione"

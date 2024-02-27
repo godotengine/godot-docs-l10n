@@ -185,9 +185,7 @@ enum **DisableMode**:
 - void **set_damping_coefficient** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_damping_coefficient** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+物体的阻尼系数。当施加力时，较高的值会更明显地减慢物体的速度。
 
 .. rst-class:: classref-item-separator
 
@@ -221,9 +219,9 @@ enum **DisableMode**:
 - void **set_drag_coefficient** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_drag_coefficient** **(** **)**
 
-.. container:: contribute
+物体的阻力系数。较高的值会增加该物体的空气阻力。
 
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+\ **注意：**\ Godot 的默认物理实现当前未使用该值。
 
 .. rst-class:: classref-item-separator
 
@@ -274,9 +272,7 @@ enum **DisableMode**:
 - void **set_pressure_coefficient** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_pressure_coefficient** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+该软体的压力系数。模拟物体内部的压力积聚。较高的值会增加该效果的强度。
 
 .. rst-class:: classref-item-separator
 
@@ -392,9 +388,7 @@ void **add_collision_exception_with** **(** :ref:`Node<class_Node>` body **)**
 
 :ref:`RID<class_RID>` **get_physics_rid** **(** **)** |const|
 
-.. container:: contribute
-
-	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+返回 :ref:`PhysicsServer3D<class_PhysicsServer3D>` 用于该实体的内部 :ref:`RID<class_RID>`\ 。
 
 .. rst-class:: classref-item-separator
 

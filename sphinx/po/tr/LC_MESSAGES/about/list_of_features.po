@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -40,18 +40,24 @@ msgstr ""
 msgid "Platforms"
 msgstr "Platformlar"
 
+msgid ""
+"See :ref:`doc_system_requirements` for hardware and software version "
+"requirements."
+msgstr ""
+
 msgid "**Can run both the editor and exported projects:**"
 msgstr "**Hem düzenleyici hem de dışa aktarılan projeleri çalıştırabilir:**"
 
-msgid "Windows 7 and later (64-bit and 32-bit)."
+#, fuzzy
+msgid "Windows (x86, 64-bit and 32-bit)."
 msgstr "Windows 7 ve sonrası (64-bit ve 32-bit)."
 
-msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr "macOS 10.12 ve sonrası (64-bit, x86 ve ARM)."
+msgid "macOS (x86 and ARM, 64-bit only)."
+msgstr ""
 
 #, fuzzy
-msgid "Linux (64-bit, x86 and ARM)."
-msgstr "Linux (64-bit ve 32-bit, x86 ve ARM)."
+msgid "Linux (x86 and ARM, 64-bit and 32-bit)."
+msgstr "Windows 7 ve sonrası (64-bit ve 32-bit)."
 
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
@@ -60,14 +66,15 @@ msgstr ""
 "İkili-tip dosyalar statik olarak bağlıdır, ve yeterince eski bir temel "
 "dağıtımda derlenirse herhangi bir dağıtımda çalışabilir."
 
-msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr "Resmi çalıştırılabilir dosyalar Ubuntu 14.04 ile derlenmiştir."
-
-msgid "32-bit binaries can be compiled from source."
+msgid ""
+"Official binaries are compiled using the `Godot Engine buildroot <https://"
+"github.com/godotengine/buildroot>`__, allowing for binaries that work across "
+"common Linux distributions (including LTS variants)."
 msgstr ""
 
-msgid "Android 6.0 and later (editor support is experimental)."
-msgstr ""
+#, fuzzy
+msgid "Android (editor support is experimental)."
+msgstr "Android (deneysel)"
 
 msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
@@ -77,9 +84,8 @@ msgstr ""
 msgid "**Runs exported projects:**"
 msgstr "**Dışa aktarılan projeleri çalıştırır:**"
 
-#, fuzzy
-msgid "iOS 11.0 and later."
-msgstr "iOS 10.0 ve sonrası."
+msgid "iOS."
+msgstr ""
 
 msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`Oyun Konsolları <doc_consoles>`."
@@ -121,7 +127,8 @@ msgstr ""
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`hata ayıklayıcısı<doc_debugger_panel>`."
 
-msgid "No support for debugging in threads yet."
+#, fuzzy
+msgid "Support for debugging in threads is available since 4.2."
 msgstr "İş parçacıklarında hata ayıklama desteği henüz yok."
 
 msgid ""
@@ -512,11 +519,12 @@ msgstr "Her-yönlü ışıklar."
 msgid "Spot lights with adjustable cone angle and attenuation."
 msgstr "Ayarlanabilir koni açısı ve zayıflama kullanan spot ışıklar."
 
-#, fuzzy
 msgid ""
 "Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
 "light basis."
-msgstr "Yasıtma enerjisi, ışık-başına temelli olarak ayarlanabilir."
+msgstr ""
+"Yansıtıcı, dolaylı ışık ve hacimsel sis enerjisi ışık-başına bazında "
+"ayarlanabilir."
 
 msgid ""
 "Adjustable light \"size\" for fake area lights (will also make shadows "

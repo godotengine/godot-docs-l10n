@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1591,6 +1591,59 @@ msgstr ""
 "您可以透過在專案設定中變更它來關閉此檢查，或將其僅作為警告。有關詳細信息，請"
 "參閱 doc_gdscript_warning_system`。"
 
+#, fuzzy
+msgid "Initialization order"
+msgstr "在下方範例中："
+
+#, fuzzy
+msgid "Member variables are initialized in the following order:"
+msgstr "這幾個檔案的內容如下："
+
+msgid ""
+"Depending on the variable's static type, the variable is either ``null`` "
+"(untyped variables and objects) or has a default value of the type (``0`` "
+"for ``int``, ``false`` for ``bool``, etc.)."
+msgstr ""
+
+msgid ""
+"The specified values are assigned in the order of the variables in the "
+"script, from top to bottom. - *(Only for ``Node``-derived classes)* If the "
+"``@onready`` annotation is applied to a variable, its initialization is "
+"deferred to step 5."
+msgstr ""
+
+#, fuzzy
+msgid "If defined, the ``_init()`` method is called."
+msgstr "必須定義 ``_init()`` 方法，設定控制項節點的結構。"
+
+msgid ""
+"When instantiating scenes and resources, the exported values are assigned."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* ``@onready`` variables are initialized."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* If defined, the ``_ready()`` method is "
+"called."
+msgstr ""
+
+msgid ""
+"You can specify a complex expression as a variable initializer, including "
+"function calls. Make sure the variables are initialized in the correct "
+"order, otherwise your values may be overwritten. For example::"
+msgstr ""
+
+#, fuzzy
+msgid "Will print::"
+msgstr "這將列印:"
+
+msgid ""
+"To fix this, move the ``_data`` variable definition above the ``a`` "
+"definition or remove the empty dictionary assignment (``= {}``)."
+msgstr ""
+
 msgid "Static variables"
 msgstr "本地坐標"
 
@@ -1862,6 +1915,11 @@ msgstr ""
 
 msgid "Lambda functions can be named for debugging purposes::"
 msgstr "可以出於除錯目的命名 Lambda 函式：："
+
+msgid ""
+"Note that if you want to return a value from a lambda, an explicit "
+"``return`` is required (you can't omit ``return``)::"
+msgstr ""
 
 msgid ""
 "Lambda functions capture the local environment. Local variables are passed "
@@ -2215,6 +2273,14 @@ msgstr ""
 "但也可以設定類別名稱，並將該類別註冊為 Godot 編輯器中的新型別。使用 "
 "``class_name`` 來設定類別名稱。也可以選擇性地在後方加上逗號與一個圖片路徑，該"
 "圖片會用作圖示。新定義的類別與圖示會在編輯器中顯示："
+
+msgid ""
+"SVG images that are used as custom node icons should have the **Editor > "
+"Scale With Editor Scale** and **Editor > Convert Icons With Editor Theme** :"
+"ref:`import options <doc_importing_images_editor_import_options>` enabled. "
+"This allows icons to follow the editor's scale and theming settings if the "
+"icons are designed with the same color palette as Godot's own icons."
+msgstr ""
 
 msgid "Here's a class file example:"
 msgstr "下列為類別檔案範例："

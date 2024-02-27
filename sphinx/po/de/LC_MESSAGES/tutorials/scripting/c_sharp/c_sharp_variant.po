@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,6 +24,8 @@ msgid ""
 "For a detailed explanation of Variant in general, see the :ref:`Variant "
 "<class_Variant>` documentation page."
 msgstr ""
+"Für eine detaillierte Beschreibung von Variant im Allgemeinen, siehe die :"
+"ref:`Variant <class_Variant>`-Dokumentationsseite."
 
 msgid ""
 "``Godot.Variant`` is used to represent Godot's native :ref:`Variant "
@@ -32,6 +34,12 @@ msgid ""
 "interact with untyped engine APIs. Take advantage of C#'s type safety when "
 "possible."
 msgstr ""
+"``Godot.Variant`` wird verwendet, um Godots nativen Typ :ref:`Variant "
+"<class_Variant>` zu repräsentieren. Jeder Variant-kompatible Typ kann von/zu "
+"ihm konvertiert werden. Wir empfehlen, ``Godot.Variant`` zu vermeiden, es "
+"sei denn, es ist notwendig, mit nicht typisierten Engine-APIs zu "
+"interagieren. Nutzen Sie, wenn möglich, die Vorteile der Typsicherheit von "
+"C#."
 
 msgid ""
 "Any of ``Variant.As{TYPE}`` methods or the generic ``Variant.As<T>`` method "
@@ -39,27 +47,40 @@ msgid ""
 "Variant`` type contains implicit conversions defined for all the supported "
 "types, calling these methods directly is usually not necessary."
 msgstr ""
+"Jede der Methoden ``Variant.As{TYPE}`` oder die generische Methode ``Variant."
+"As<T>`` kann verwendet werden, um eine ``Godot.Variant`` in einen C#-Typ zu "
+"konvertieren. Da der ``Godot.Variant``-Typ implizite Konvertierungen "
+"enthält, die für alle unterstützten Typen definiert sind, ist der direkte "
+"Aufruf dieser Methoden normalerweise nicht notwendig."
 
 msgid ""
 "Use ``CreateFrom`` method overloads or the generic ``Variant.From<T>`` "
 "method to convert a C# type to a ``Godot.Variant``."
 msgstr ""
+"Verwenden Sie ``CreateFrom``-Methodenüberladungen oder die generische "
+"Methode ``Variant.From<T>``, um einen C#-Typ in eine ``Godot.Variant`` zu "
+"konvertieren."
 
 msgid ""
 "Since the Variant type in C# is a struct, it can't be null. To create a "
 "\"null\" Variant use the ``default`` keyword or the parameterless "
 "constructor."
 msgstr ""
+"Da der Variant-Typ in C# ein Struct ist, kann er nicht null sein. Um eine "
+"\"null\"-Variante zu erzeugen, verwenden Sie das ``default``-Schlüsselwort "
+"oder den parameterlosen Konstruktor."
 
-#, fuzzy
 msgid "Variant-compatible types"
-msgstr "Eigene Variablentypen"
+msgstr "Variantenkompatible Typen"
 
 msgid ""
 "All the `built-in value types <https://docs.microsoft.com/en-us/dotnet/"
 "csharp/language-reference/keywords/built-in-types-table>`_, except "
 "``decimal``, ``nint`` and ``nuint``."
 msgstr ""
+"Alle `Built-in-Werttypen <https://docs.microsoft.com/en-us/dotnet/csharp/"
+"language-reference/keywords/built-in-types-table>`_ außer ``decimal``, "
+"``nint`` und ``nuint``."
 
 msgid "``string``."
 msgstr "``string``."
@@ -69,26 +90,26 @@ msgstr "Von :ref:`GodotObject <class_Object>` abgeleitete Klassen."
 
 msgid "Collections types defined in the ``Godot.Collections`` namespace."
 msgstr ""
+"Collections-Typen, die im ``Godot.Collections``-Namespace definiert sind."
 
 msgid "Full list of Variant types and their equivalent C# type:"
 msgstr ""
+"Vollständige Liste der Variantentypen und ihres entsprechenden C#-Typs:"
 
-#, fuzzy
 msgid "Variant.Type"
-msgstr "Variante"
+msgstr "Variant.Type"
 
-#, fuzzy
 msgid "C# Type"
-msgstr "Art"
+msgstr "C#-Typ"
 
 msgid "``Nil``"
-msgstr ""
+msgstr "``Nil``"
 
 msgid "``null`` (Not a type)"
-msgstr ""
+msgstr "``null`` (kein Typ)"
 
 msgid "``Bool``"
-msgstr ""
+msgstr "``Bool``"
 
 msgid "``bool``"
 msgstr "``bool``"
@@ -97,13 +118,13 @@ msgid "``Int``"
 msgstr "``Int``"
 
 msgid "``long`` (Godot stores 64-bit integers in Variant)"
-msgstr ""
+msgstr "``long`` (Godot speichert 64-Bit-Integer in Variant)"
 
 msgid "``Float``"
 msgstr "``Float``"
 
 msgid "``double`` (Godot stores 64-bit floats in Variant)"
-msgstr ""
+msgstr "``double`` (Godot speichert 64-Bit-Floats in Variant)"
 
 msgid "``String``"
 msgstr "``String``"
@@ -165,16 +186,14 @@ msgstr "``Vector4I``"
 msgid "``Godot.Vector4I``"
 msgstr "``Godot.Vector4I``"
 
-#, fuzzy
 msgid "``Plane``"
-msgstr "Ebene"
+msgstr "``Plane``"
 
 msgid "``Godot.Plane``"
-msgstr ""
+msgstr "``Godot.Plane``"
 
-#, fuzzy
 msgid "``Quaternion``"
-msgstr "``Quadrant``"
+msgstr "``Quaternion``"
 
 msgid "``Godot.Quaternion``"
 msgstr "``Godot.Quaternion``"
@@ -183,14 +202,13 @@ msgid "``Aabb``"
 msgstr "``Aabb``"
 
 msgid "``Godot.Aabb``"
-msgstr ""
+msgstr "``Godot.Aabb``"
 
-#, fuzzy
 msgid "``Basis``"
-msgstr "``is``"
+msgstr "``Basis``"
 
 msgid "``Godot.Basis``"
-msgstr ""
+msgstr "``Godot.Basis``"
 
 msgid "``Transform3D``"
 msgstr "``Transform3D``"
@@ -198,16 +216,14 @@ msgstr "``Transform3D``"
 msgid "``Godot.Transform3D``"
 msgstr "``Godot.Transform3D``"
 
-#, fuzzy
 msgid "``Projection``"
-msgstr "``connection``"
+msgstr "``Projection``"
 
 msgid "``Godot.Projection``"
 msgstr "``Godot.Projection``"
 
-#, fuzzy
 msgid "``Color``"
-msgstr "``Color8``"
+msgstr "``Color``"
 
 msgid "``Godot.Color``"
 msgstr "``Godot.Color``"
@@ -224,37 +240,32 @@ msgstr "``NodePath``"
 msgid "``Godot.NodePath``"
 msgstr "``Godot.NodePath``"
 
-#, fuzzy
 msgid "``Rid``"
-msgstr "``-> void``"
+msgstr "``Rid``"
 
 msgid "``Godot.Rid``"
-msgstr ""
+msgstr "``Godot.Rid``"
 
-#, fuzzy
 msgid "``Object``"
-msgstr "Object"
+msgstr "``Object``"
 
 msgid "``Godot.GodotObject`` or any derived type."
-msgstr ""
+msgstr "``Godot.GodotObject`` oder ein abgeleiteter Typ."
 
-#, fuzzy
 msgid "``Callable``"
-msgstr "``enabled``"
+msgstr "``Callable``"
 
 msgid "``Godot.Callable``"
 msgstr "``Godot.Callable``"
 
-#, fuzzy
 msgid "``Signal``"
-msgstr "Ereignis"
+msgstr "``Signal``"
 
 msgid "``Godot.Signal``"
 msgstr "``Godot.Signal``"
 
-#, fuzzy
 msgid "``Dictionary``"
-msgstr "Dictionary (Wörterbuch)"
+msgstr "``Dictionary``"
 
 msgid "``Godot.Collections.Dictionary``"
 msgstr "``Godot.Collections.Dictionary``"
@@ -325,6 +336,11 @@ msgid ""
 "fit in the bigger type. Be aware that an implicit conversion is performed so "
 "using the wrong type will result in potential precision loss."
 msgstr ""
+"Godot verwendet 64-Bit-Integer und -Floats in Variant. Kleinere Integer- und "
+"Float-Typen wie ``int``, ``short`` und ``float`` werden unterstützt, da sie "
+"in den größeren Typ passen. Beachten Sie, dass eine implizite Konvertierung "
+"durchgeführt wird, so dass die Verwendung des falschen Typs zu einem "
+"möglichen Präzisionsverlust führt."
 
 msgid ""
 "Enums are supported by ``Godot.Variant`` since their underlying type is an "
@@ -333,21 +349,34 @@ msgid ""
 "before they can converted to/from ``Godot.Variant`` or use the generic "
 "``Variant.As<T>`` and ``Variant.From<T>`` methods to convert them."
 msgstr ""
+"Enums werden von ``Godot.Variant`` unterstützt, da ihr zugrundeliegender Typ "
+"ein Integer-Typ ist, die alle kompatibel sind. Allerdings gibt es keine "
+"impliziten Konvertierungen. Enums müssen manuell in ihren zugrundeliegenden "
+"Integer-Typ konvertiert werden, bevor sie in/aus ``Godot.Variant`` "
+"konvertiert werden können oder die generischen Methoden ``Variant.As<T>`` "
+"und ``Variant.From<T>`` verwenden, um sie zu konvertieren."
 
 msgid "Using Variant in a generic context"
-msgstr ""
+msgstr "Verwendung von Variant in einem generischen Kontext"
 
 msgid ""
 "When using generics, you may be interested in restricting the generic ``T`` "
 "type to be only one of the Variant-compatible types. This can be achieved "
 "using the ``[MustBeVariant]`` attribute."
 msgstr ""
+"Bei der Verwendung von Generics kann es von Interesse sein, den generischen "
+"``T``-Typ darauf zu beschränken, dass er nur einer der Variant-kompatiblen "
+"Typen ist. Dies kann mit dem Attribut ``[MustBeVariant]`` erreicht werden."
 
 msgid ""
 "Combined with the generic ``Variant.From<T>`` allows you to obtain an "
 "instance of ``Godot.Variant`` from an instance of a generic ``T`` type. Then "
 "it can be used in any API that only supports the ``Godot.Variant`` struct."
 msgstr ""
+"Kombiniert mit dem generischen ``Variant.From<T>`` erlaubt es Ihnen, eine "
+"Instanz von ``Godot.Variant`` aus einer Instanz eines generischen ``T``-Typs "
+"zu erhalten. Dann kann es in jeder API verwendet werden, die nur die ``Godot."
+"Variant``-Struktur unterstützt."
 
 msgid ""
 "In order to invoke a method with a generic parameter annotated with the "
@@ -355,6 +384,10 @@ msgid ""
 "or a generic ``T`` type annotated with the ``[MustBeVariant]`` attribute as "
 "well."
 msgstr ""
+"Um eine Methode mit einem generischen Parameter aufzurufen, der mit dem "
+"Attribut ``[MustBeVariant]`` versehen ist, muss der Wert ein Variant-"
+"kompatibler Typ oder ein generischer ``T``-Typ sein, der ebenfalls mit dem "
+"Attribut ``[MustBeVariant]`` versehen ist."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

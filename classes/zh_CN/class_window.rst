@@ -2369,7 +2369,7 @@ void **set_unparent_when_invisible** **(** :ref:`bool<class_bool>` unparent **)*
 
 如果 ``unparent`` 为 ``true``\ ，则窗口会在隐藏时自动解除与父节点的关系。
 
-\ **注意：**\ 请确保存在对该节点的引用，否则该节点会变为孤儿节点。没有父节点时，你还需要手动调用 :ref:`Node.queue_free<class_Node_method_queue_free>` 来释放该窗口。
+\ **注意：**\ 请确保存在对该节点的引用，否则该节点会变为孤立节点。没有父节点时，你还需要手动调用 :ref:`Node.queue_free<class_Node_method_queue_free>` 来释放该窗口。
 
 .. rst-class:: classref-item-separator
 

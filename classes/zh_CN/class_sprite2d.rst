@@ -176,7 +176,7 @@ Sprite2D
 - void **set_frame** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_frame** **(** **)**
 
-当前显示的精灵表中的帧。\ :ref:`vframes<class_Sprite2D_property_vframes>` 或 :ref:`hframes<class_Sprite2D_property_hframes>` 必须大于 1。
+当前显示的精灵表中的帧。\ :ref:`hframes<class_Sprite2D_property_hframes>` 和 :ref:`vframes<class_Sprite2D_property_vframes>` 必须大于 1。\ :ref:`hframes<class_Sprite2D_property_hframes>` 或 :ref:`vframes<class_Sprite2D_property_vframes>` 发生变化时会自动调整该属性，让它在视觉上保持指向同一帧（同一行、同一列）。 如果无法保持，则会重置为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -210,7 +210,7 @@ Sprite2D
 - void **set_hframes** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_hframes** **(** **)**
 
-精灵表中的列数。
+精灵表中的列数。该属性发生变化时会对 :ref:`frame<class_Sprite2D_property_frame>` 进行调整，在视觉上维持相同的帧（同一行、同一列）。如果无法维持，则会将 :ref:`frame<class_Sprite2D_property_frame>` 重置为 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +312,7 @@ Sprite2D
 - void **set_vframes** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_vframes** **(** **)**
 
-精灵表中的行数。
+精灵表中的行数。该属性发生变化时会对 :ref:`frame<class_Sprite2D_property_frame>` 进行调整，在视觉上维持相同的帧（同一行、同一列）。如果无法维持，则会将 :ref:`frame<class_Sprite2D_property_frame>` 重置为 ``0``\ 。
 
 .. rst-class:: classref-section-separator
 

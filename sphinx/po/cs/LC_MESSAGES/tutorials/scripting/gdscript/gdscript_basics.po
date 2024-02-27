@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1165,13 +1165,12 @@ msgstr ""
 msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_."
 msgstr ""
 "Posloupnost znaků ve formátu `Unicode <https://en.wikipedia.org/wiki/"
-"Unicode>`_. Řetězce mohou obsahovat následující escape sekvence:"
+"Unicode>`_."
 
 msgid ""
 "An immutable string that allows only one instance of each name. They are "
@@ -1619,6 +1618,57 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+msgid "Initialization order"
+msgstr "Příklad inicializace:"
+
+#, fuzzy
+msgid "Member variables are initialized in the following order:"
+msgstr "Vyplňte formulář s následujícím nastavením:"
+
+msgid ""
+"Depending on the variable's static type, the variable is either ``null`` "
+"(untyped variables and objects) or has a default value of the type (``0`` "
+"for ``int``, ``false`` for ``bool``, etc.)."
+msgstr ""
+
+msgid ""
+"The specified values are assigned in the order of the variables in the "
+"script, from top to bottom. - *(Only for ``Node``-derived classes)* If the "
+"``@onready`` annotation is applied to a variable, its initialization is "
+"deferred to step 5."
+msgstr ""
+
+msgid "If defined, the ``_init()`` method is called."
+msgstr ""
+
+msgid ""
+"When instantiating scenes and resources, the exported values are assigned."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* ``@onready`` variables are initialized."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* If defined, the ``_ready()`` method is "
+"called."
+msgstr ""
+
+msgid ""
+"You can specify a complex expression as a variable initializer, including "
+"function calls. Make sure the variables are initialized in the correct "
+"order, otherwise your values may be overwritten. For example::"
+msgstr ""
+
+msgid "Will print::"
+msgstr ""
+
+msgid ""
+"To fix this, move the ``_data`` variable definition above the ``a`` "
+"definition or remove the empty dictionary assignment (``= {}``)."
+msgstr ""
+
+#, fuzzy
 msgid "Static variables"
 msgstr "Úpravy proměnných"
 
@@ -1900,6 +1950,11 @@ msgid "Lambda functions can be named for debugging purposes::"
 msgstr ""
 
 msgid ""
+"Note that if you want to return a value from a lambda, an explicit "
+"``return`` is required (you can't omit ``return``)::"
+msgstr ""
+
+msgid ""
 "Lambda functions capture the local environment. Local variables are passed "
 "by value, so they won't be updated in the lambda if changed in the local "
 "function::"
@@ -2051,13 +2106,11 @@ msgid ""
 "equal to the StringName ``&\"hello\"``."
 msgstr ""
 
-#, fuzzy
 msgid "Basic syntax"
-msgstr "Základní syntaxe::"
+msgstr "Základní syntaxe"
 
-#, fuzzy
 msgid "Crash-course for people who are familiar with switch statements"
-msgstr "**Kurz pro lidi, kteří znají příkazy switch**:"
+msgstr "Crash Klkurz pro lidi, kteří jsou obeznámen s příkazy switch"
 
 msgid "Replace ``switch`` with ``match``."
 msgstr "Nahraďte ``switch`` příkazem ``match``."
@@ -2072,9 +2125,8 @@ msgstr "Odstraňte ``case``."
 msgid "Change ``default`` to a single underscore."
 msgstr "Změňte ``default`` na jedno podtržítko."
 
-#, fuzzy
 msgid "Control flow"
-msgstr "**Pořadí vyhodnocování**:"
+msgstr "Kontrola toku"
 
 #, fuzzy
 msgid ""
@@ -2259,6 +2311,14 @@ msgstr ""
 "editoru Godot. K tomu slouží klíčové slovo ``class_name``. Můžete přidat "
 "volitelnou čárkou oddělenou cestou k obrázku, abyste ho mohli použít jako "
 "ikonu. Vaše třída se pak v editoru objeví s touto novou ikonou::"
+
+msgid ""
+"SVG images that are used as custom node icons should have the **Editor > "
+"Scale With Editor Scale** and **Editor > Convert Icons With Editor Theme** :"
+"ref:`import options <doc_importing_images_editor_import_options>` enabled. "
+"This allows icons to follow the editor's scale and theming settings if the "
+"icons are designed with the same color palette as Godot's own icons."
+msgstr ""
 
 msgid "Here's a class file example:"
 msgstr "Zde je příklad souboru třídy:"
@@ -2488,9 +2548,8 @@ msgid ""
 "assigned."
 msgstr ""
 
-#, fuzzy
 msgid "Example::"
-msgstr "Příklady"
+msgstr "Příklad::"
 
 msgid ""
 "Unlike ``setget`` in previous Godot versions, the properties setter and "

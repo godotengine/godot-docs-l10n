@@ -194,7 +194,7 @@ GraphEdit
 
 **begin_node_move** **(** **)**
 
-在 GraphNode 移动开始时发出。
+在 :ref:`GraphElement<class_GraphElement>` 移动开始时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -266,7 +266,7 @@ GraphEdit
 
 **copy_nodes_request** **(** **)**
 
-当用户按下 :kbd:`Ctrl + C` 时发出。
+当该 **GraphEdit** 捕获 ``ui_copy`` 动作（默认情况下为 :kbd:`Ctrl + C`\ ）时发出。一般来说，该信号指示所选的 :ref:`GraphElement<class_GraphElement>` 应被复制。
 
 .. rst-class:: classref-item-separator
 
@@ -278,7 +278,9 @@ GraphEdit
 
 **delete_nodes_request** **(** :ref:`StringName[]<class_StringName>` nodes **)**
 
-当尝试从该 GraphEdit 中移除一个 GraphNode 时触发。提供要移除的节点名称列表（所有选中的节点，除去不包含关闭按钮的节点）。
+当该 **GraphEdit** 捕获 ``ui_graph_delete`` 动作（默认为 :kbd:`Delete`\ ）时触发。
+
+\ ``nodes`` 是应被移除的节点的名称的数组。这些通常包括所有选定的节点。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +304,7 @@ GraphEdit
 
 **duplicate_nodes_request** **(** **)**
 
-当 GraphNode 试图在 GraphEdit 中被复制时发出的。
+当该 **GraphEdit** 捕获 ``ui_graph_duplicate`` 动作（默认为 :kbd:`Ctrl + D`\ ）时触发。一般来说，该信号指示应被复制的所选的 :ref:`GraphElement<class_GraphElement>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -314,7 +316,7 @@ GraphEdit
 
 **end_node_move** **(** **)**
 
-在 GraphNode 移动结束时发出。
+在 :ref:`GraphElement<class_GraphElement>` 移动结束时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -326,9 +328,7 @@ GraphEdit
 
 **node_deselected** **(** :ref:`Node<class_Node>` node **)**
 
-.. container:: contribute
-
-	目前没有这个信号的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+当给定的 :ref:`GraphElement<class_GraphElement>` 节点被取消选择时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -340,7 +340,7 @@ GraphEdit
 
 **node_selected** **(** :ref:`Node<class_Node>` node **)**
 
-当 GraphNode 被选择时发出。
+当给定的 :ref:`GraphElement<class_GraphElement>` 节点被选中时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -352,7 +352,7 @@ GraphEdit
 
 **paste_nodes_request** **(** **)**
 
-当用户按下 :kbd:`Ctrl + V` 时发出。
+当该 **GraphEdit** 捕获 ``ui_paste`` 动作（默认为 :kbd:`Ctrl + V`\ ）时触发。一般来说，该信号指示应被粘贴的先前复制的 :ref:`GraphElement<class_GraphElement>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1010,7 +1010,7 @@ void **force_connection_drag_end** **(** **)**
 
 :ref:`Dictionary[]<class_Dictionary>` **get_connection_list** **(** **)** |const|
 
-返回一个包含连接列表的数组。一个连接包括一个结构，其形式为 ``{ from_port:0, from: "GraphNode name 0", to_port:1, to:"GraphNode name 1" }``\ 。
+返回包含连接列表的数组。连接由以下形式的结构组成：\ ``{ from_port: 0, from_node: "GraphNode name 0", to_port: 1, to_node: "GraphNode name 1" }``\ 。
 
 .. rst-class:: classref-item-separator
 

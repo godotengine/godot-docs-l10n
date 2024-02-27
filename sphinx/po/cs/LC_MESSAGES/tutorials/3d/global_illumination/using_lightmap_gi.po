@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -317,9 +317,8 @@ msgid ""
 "disabling its **Visible** property."
 msgstr ""
 
-#, fuzzy
 msgid "Dynamic"
-msgstr "Dynamické:"
+msgstr "Dynamické"
 
 msgid ""
 "This is the default mode, and is a compromise between performance and real-"
@@ -333,9 +332,8 @@ msgid ""
 "to create flickering static torches that have their indirect light baked."
 msgstr ""
 
-#, fuzzy
 msgid "Static"
-msgstr "Statické:"
+msgstr "Statické"
 
 msgid ""
 "Both indirect and direct lighting will be baked. Since static surfaces can "
@@ -696,6 +694,17 @@ msgid ""
 "The generated EXR file can be viewed and even edited using an image editor "
 "to perform post-processing if needed. However, keep in mind that changes to "
 "the EXR file will be lost when baking lightmaps again."
+msgstr ""
+
+msgid "Reducing LightmapGI artifacts"
+msgstr ""
+
+msgid ""
+"If you notice LightmapGI nodes popping in and out of existence as the camera "
+"moves, this is most likely because the engine is rendering too many "
+"LightmapGI instances at once. Godot is limited to rendering 8 LightmapGI "
+"nodes at once, which means up to 8 instances can be in the camera view "
+"before some of them will start flickering."
 msgstr ""
 
 msgid "Translation status"

@@ -5471,7 +5471,7 @@ enum **Variant.Operator**:
 
 :ref:`Variant<class_Variant>` **clamp** **(** :ref:`Variant<class_Variant>` value, :ref:`Variant<class_Variant>` min, :ref:`Variant<class_Variant>` max **)**
 
-钳制 ``value``\ ，返回不小于 ``min`` 且不大于 ``max`` 的 :ref:`Variant<class_Variant>`\ 。可以使用任何能够用小于和大于运算符进行比较的值。
+钳制 ``value``\ ，返回不小于 ``min`` 且不大于 ``max`` 的 :ref:`Variant<class_Variant>`\ 。任何能够用小于和大于运算符进行比较的值都能工作。
 
 ::
 
@@ -5480,20 +5480,10 @@ enum **Variant.Operator**:
     
     var b = clamp(8.1, 0.9, 5.5)
     # b 是 5.5
-    
-    var c = clamp(Vector2(-3.5, -4), Vector2(-3.2, -2), Vector2(2, 6.5))
-    # c 是 (-3.2, -2)
-    
-    var d = clamp(Vector2i(7, 8), Vector2i(-3, -2), Vector2i(2, 6))
-    # d 是 (2, 6)
-    
-    var e = clamp(Vector3(-7, 8.5, -3.8), Vector3(-3, -2, 5.4), Vector3(-2, 6, -4.1))
-    # e 是 (-3, -2, 5.4)
-    
-    var f = clamp(Vector3i(-7, -8, -9), Vector3i(-1, 2, 3), Vector3i(-4, -5, -6))
-    # f 是 (-4, -5, -6)
 
-\ **注意：**\ 为了更好的类型安全，请使用 :ref:`clampf<class_@GlobalScope_method_clampf>`\ 、\ :ref:`clampi<class_@GlobalScope_method_clampi>`\ 、\ :ref:`Vector2.clamp<class_Vector2_method_clamp>`\ 、\ :ref:`Vector2i.clamp<class_Vector2i_method_clamp>`\ 、\ :ref:`Vector3.clamp<class_Vector3_method_clamp>`\ 、\ :ref:`Vector3i.clamp<class_Vector3i_method_clamp>`\ 、\ :ref:`Vector4.clamp<class_Vector4_method_clamp>` 或 :ref:`Vector4i.clamp<class_Vector4i_method_clamp>`\ 。
+\ **注意：**\ 为了更好的类型安全，请使用 :ref:`clampf<class_@GlobalScope_method_clampf>`\ 、\ :ref:`clampi<class_@GlobalScope_method_clampi>`\ 、\ :ref:`Vector2.clamp<class_Vector2_method_clamp>`\ 、\ :ref:`Vector2i.clamp<class_Vector2i_method_clamp>`\ 、\ :ref:`Vector3.clamp<class_Vector3_method_clamp>`\ 、\ :ref:`Vector3i.clamp<class_Vector3i_method_clamp>`\ 、\ :ref:`Vector4.clamp<class_Vector4_method_clamp>`\ 、\ :ref:`Vector4i.clamp<class_Vector4i_method_clamp>` 或 :ref:`Color.clamp<class_Color_method_clamp>`\ （该方法当前不受支持）。
+
+\ **注意：**\ 当在向量上使用该函数时，它\ *不*\ 会执行逐分量钳制，并且如果 ``value < min`` 则结果为 ``min``\ ，如果 ``value > max`` 则为 ``max``\ 。要执行逐分量钳制，请使用上面列出的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -7293,6 +7283,8 @@ void **seed** **(** :ref:`int<class_int>` base **)**
 
 \ **注意：**\ 如果需要对象序列化，参见 :ref:`var_to_bytes_with_objects<class_@GlobalScope_method_var_to_bytes_with_objects>`\ 。
 
+\ **注意：**\ 编码 :ref:`Callable<class_Callable>` 不受支持，无论数据如何，都会导致空值。
+
 .. rst-class:: classref-item-separator
 
 ----
@@ -7304,6 +7296,8 @@ void **seed** **(** :ref:`int<class_int>` base **)**
 :ref:`PackedByteArray<class_PackedByteArray>` **var_to_bytes_with_objects** **(** :ref:`Variant<class_Variant>` variable **)**
 
 将 :ref:`Variant<class_Variant>` 值编码为字节数组。允许对对象进行编码（并且可能包括可执行代码）。反序列化可以使用 :ref:`bytes_to_var_with_objects<class_@GlobalScope_method_bytes_to_var_with_objects>` 来完成。
+
+\ **注意：**\ 编码 :ref:`Callable<class_Callable>` 不受支持，无论数据如何，都会导致空值。
 
 .. rst-class:: classref-item-separator
 

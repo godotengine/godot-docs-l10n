@@ -17,13 +17,13 @@ AABB
 描述
 ----
 
-**AABB** 由一个位置、一个大小和若干实用函数组成。通常用于快速重叠测试。
+**AABB** 内置 :ref:`Variant<class_Variant>` 类型表示 3D 空间中的轴对齐边界框。它由其 :ref:`position<class_AABB_property_position>` 和 :ref:`size<class_AABB_property_size>` 定义，皆为 :ref:`Vector3<class_Vector3>` 类型。它经常被用于快速重叠测试（参见 :ref:`intersects<class_AABB_method_intersects>`\ ）。虽然 **AABB** 本身是轴对齐的，但它可以与 :ref:`Transform3D<class_Transform3D>` 组合来表示旋转或倾斜的边界框。
 
-它使用浮点坐标。\ **AABB** 的 2D 对应物为 :ref:`Rect2<class_Rect2>`\ 。
+它使用浮点坐标。\ **AABB** 的 2D 等效体是 :ref:`Rect2<class_Rect2>`\ 。没有使用整数坐标的 **AABB** 版本。
 
-不支持负的 :ref:`size<class_AABB_property_size>`\ ，并且不适用于大多数方法。使用 :ref:`abs<class_AABB_method_abs>` 获得具有正尺寸的 AABB。
+\ **注意：**\ 不支持负的 :ref:`size<class_AABB_property_size>`\ 。对于负大小，大多数 **AABB** 方法都无法正常工作。使用 :ref:`abs<class_AABB_method_abs>` 获取具有非负大小的等效 **AABB**\ 。
 
-\ **注意：**\ 与 :ref:`Rect2<class_Rect2>` 不同，\ **AABB** 没有使用整数坐标的变体。
+\ **注意：**\ 在布尔上下文中，如果 :ref:`position<class_AABB_property_position>` 和 :ref:`size<class_AABB_property_size>` 均为零（等于 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ ），则 **AABB** 的计算结果为 ``false``\ 。否则，它的计算结果始终为 ``true``\ 。
 
 .. note::
 
@@ -163,7 +163,7 @@ AABB
 
 :ref:`Vector3<class_Vector3>` **end** = ``Vector3(0, 0, 0)``
 
-终点角。通过 ``position + size`` 计算而来。设置该值会修改大小。
+终点。通常是边界框的前方右上角，等价于 ``position + size``\ 。设置该点会影响 :ref:`size<class_AABB_property_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -175,7 +175,7 @@ AABB
 
 :ref:`Vector3<class_Vector3>` **position** = ``Vector3(0, 0, 0)``
 
-起点角。通常比 :ref:`end<class_AABB_property_end>` 小。
+原点。通常是边界框的背面左下角。
 
 .. rst-class:: classref-item-separator
 
@@ -187,9 +187,9 @@ AABB
 
 :ref:`Vector3<class_Vector3>` **size** = ``Vector3(0, 0, 0)``
 
-从 :ref:`position<class_AABB_property_position>` 到 :ref:`end<class_AABB_property_end>` 的大小。通常所有分量都是正数。
+边界框的宽度、高度、深度，相对于 :ref:`position<class_AABB_property_position>`\ 。设置该值会影响终点 :ref:`end<class_AABB_property_end>`\ 。
 
-如果大小为负，可以用 :ref:`abs<class_AABB_method_abs>` 修正。
+\ **注意：**\ 建议将宽度、高度、深度设置为非负数，因为 Godot 中的大多数方法假设 :ref:`position<class_AABB_property_position>` 为背面的左下角、\ :ref:`end<class_AABB_property_end>` 为正面的右上角。要获取等价且大小非负的边界框，请使用 :ref:`abs<class_AABB_method_abs>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -206,7 +206,7 @@ AABB
 
 :ref:`AABB<class_AABB>` **AABB** **(** **)**
 
-默认构造 **AABB**\ ，\ :ref:`position<class_AABB_property_position>` 和 :ref:`size<class_AABB_property_size>` 均为默认值（零）。
+构造 **AABB**\ ，并将 :ref:`position<class_AABB_property_position>` 和 :ref:`size<class_AABB_property_size>` 设置为 :ref:`Vector3.ZERO<class_Vector3_constant_ZERO>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -226,7 +226,7 @@ AABB
 
 :ref:`AABB<class_AABB>` **AABB** **(** :ref:`Vector3<class_Vector3>` position, :ref:`Vector3<class_Vector3>` size **)**
 
-从一个位置和大小构造 **AABB** 。
+使用指定的 ``position`` 和 ``size`` 构造 **AABB**\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -243,7 +243,28 @@ AABB
 
 :ref:`AABB<class_AABB>` **abs** **(** **)** |const|
 
-返回等价的 AABB，其原点被修正至最负数的角落，大小被修正为正数。
+返回一个与该边界框等效的 **AABB**\ ，其宽度、高度和深度被修改为非负值。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var box = AABB(Vector3(5, 0, 5), Vector3(-20, -10, -5))
+    var absolute = box.abs()
+    print(absolute.position) # 打印 (-15, -10, 0)
+    print(absolute.size)     # 打印 (20, 10, 5)
+
+ .. code-tab:: csharp
+
+    var box = new Aabb(new Vector3(5, 0, 5), new Vector3(-20, -10, -5));
+    var absolute = box.Abs();
+    GD.Print(absolute.Position); // 打印 (-15, -10, 0)
+    GD.Print(absolute.Size);     // 打印 (20, 10, 5)
+
+
+
+\ **注意：**\ 当 :ref:`size<class_AABB_property_size>` 为负时，建议使用该方法，因为 Godot 中的大多数其他方法都假设 :ref:`size<class_AABB_property_size>` 的分量大于 ``0``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -255,7 +276,32 @@ AABB
 
 :ref:`bool<class_bool>` **encloses** **(** :ref:`AABB<class_AABB>` with **)** |const|
 
-该 **AABB** 完全包含另一个时，返回 ``true``\ 。
+如果该边界框\ *完全*\ 包围 ``with`` 框，则返回 ``true``\ 。两个框的边都包括在内。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var a = AABB(Vector3(0, 0, 0), Vector3(4, 4, 4))
+    var b = AABB(Vector3(1, 1, 1), Vector3(3, 3, 3))
+    var c = AABB(Vector3(2, 2, 2), Vector3(8, 8, 8))
+    
+    print(a.encloses(a)) # 打印 true
+    print(a.encloses(b)) # 打印 true
+    print(a.encloses(c)) # 打印 false
+
+ .. code-tab:: csharp
+
+    var a = new Aabb(new Vector3(0, 0, 0), new Vector3(4, 4, 4));
+    var b = new Aabb(new Vector3(1, 1, 1), new Vector3(3, 3, 3));
+    var c = new Aabb(new Vector3(2, 2, 2), new Vector3(8, 8, 8));
+    
+    GD.Print(a.Encloses(a)); // 打印 True
+    GD.Print(a.Encloses(b)); // 打印 True
+    GD.Print(a.Encloses(c)); // 打印 False
+
+
 
 .. rst-class:: classref-item-separator
 
@@ -267,26 +313,34 @@ AABB
 
 :ref:`AABB<class_AABB>` **expand** **(** :ref:`Vector3<class_Vector3>` to_point **)** |const|
 
-返回该 **AABB** 的副本，该副本扩展至包含给出的点。
-
-\ **例子：**\ 
+返回该边界框的副本，如有必要，该边界框被扩展为将边与给定的 ``to_point`` 对齐。
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 位置 (-3, 2, 0)，大小 (1, 1, 1)
-    var box = AABB(Vector3(-3, 2, 0), Vector3(1, 1, 1))
-    # 位置 (-3, -1, 0)，大小 (3, 4, 2)，包含原来的 AABB 和 Vector3(0, -1, 2)
-    var box2 = box.expand(Vector3(0, -1, 2))
+    var box = AABB(Vector3(0, 0, 0), Vector3(5, 2, 5))
+    
+    box = box.expand(Vector3(10, 0, 0))
+    print(box.position) # 打印 (0, 0, 0)
+    print(box.size)     # 打印 (10, 2, 5)
+    
+    box = box.expand(Vector3(-5, 0, 5))
+    print(box.position) # 打印 (-5, 0, 0)
+    print(box.size)     # 打印 (15, 2, 5)
 
  .. code-tab:: csharp
 
-    // 位置 (-3, 2, 0)，大小 (1, 1, 1)
-    var box = new Aabb(new Vector3(-3, 2, 0), new Vector3(1, 1, 1));
-    // 位置 (-3, -1, 0)，大小 (3, 4, 2)，包含原来的 AABB 和 Vector3(0, -1, 2)
-    var box2 = box.Expand(new Vector3(0, -1, 2));
+    var box = new Aabb(new Vector3(0, 0, 0), new Vector3(5, 2, 5));
+    
+    box = box.Expand(new Vector3(10, 0, 0));
+    GD.Print(box.Position); // 打印 (0, 0, 0)
+    GD.Print(box.Size);     // 打印 (10, 2, 5)
+    
+    box = box.Expand(new Vector3(-5, 0, 5));
+    GD.Print(box.Position); // 打印 (-5, 0, 0)
+    GD.Print(box.Size);     // 打印 (15, 2, 5)
 
 
 
@@ -300,7 +354,7 @@ AABB
 
 :ref:`Vector3<class_Vector3>` **get_center** **(** **)** |const|
 
-返回该 **AABB** 的中心点，等于 :ref:`position<class_AABB_property_position>` + (:ref:`size<class_AABB_property_size>` / 2)。
+返回该边界框的中心点。这与 ``position + (size / 2.0)`` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -312,7 +366,7 @@ AABB
 
 :ref:`Vector3<class_Vector3>` **get_endpoint** **(** :ref:`int<class_int>` idx **)** |const|
 
-获取该 **AABB** 的 8 个端点的位置。
+返回组成该边界框的 8 个顶点之一的位置。当 ``idx`` 为 ``0`` 时，这与 :ref:`position<class_AABB_property_position>` 相同；\ ``idx`` 为 ``7`` 时，与 :ref:`end<class_AABB_property_end>` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -324,7 +378,30 @@ AABB
 
 :ref:`Vector3<class_Vector3>` **get_longest_axis** **(** **)** |const|
 
-返回该 **AABB** 归一化后的最长轴。
+返回该边界框的 :ref:`size<class_AABB_property_size>` 的最长归一化轴，作为 :ref:`Vector3<class_Vector3>`\ （\ :ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`\ 、\ :ref:`Vector3.UP<class_Vector3_constant_UP>` 或 :ref:`Vector3.BACK<class_Vector3_constant_BACK>`\ ）。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var box = AABB(Vector3(0, 0, 0), Vector3(2, 4, 8))
+    
+    print(box.get_longest_axis())       # 打印 (0, 0, 1)
+    print(box.get_longest_axis_index()) # 打印 2
+    print(box.get_longest_axis_size())  # 打印 8
+
+ .. code-tab:: csharp
+
+    var box = new Aabb(new Vector3(0, 0, 0), new Vector3(2, 4, 8));
+    
+    GD.Print(box.GetLongestAxis());      // 打印 (0, 0, 1)
+    GD.Print(box.GetLongestAxisIndex()); // 打印 2
+    GD.Print(box.GetLongestAxisSize());  // 打印 8
+
+
+
+另见 :ref:`get_longest_axis_index<class_AABB_method_get_longest_axis_index>` 和 :ref:`get_longest_axis_size<class_AABB_method_get_longest_axis_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -336,7 +413,9 @@ AABB
 
 :ref:`int<class_int>` **get_longest_axis_index** **(** **)** |const|
 
-返回该 **AABB** 最长轴的索引（根据 :ref:`Vector3<class_Vector3>` 的 ``AXIS_*`` 常量）。
+返回该边界框的 :ref:`size<class_AABB_property_size>` 的最长轴的索引（请参阅 :ref:`Vector3.AXIS_X<class_Vector3_constant_AXIS_X>`\ 、\ :ref:`Vector3.AXIS_Y<class_Vector3_constant_AXIS_Y>`\ 、和 :ref:`Vector3.AXIS_Z<class_Vector3_constant_AXIS_Z>`\ ）。
+
+有关示例，请参阅 :ref:`get_longest_axis<class_AABB_method_get_longest_axis>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -348,7 +427,9 @@ AABB
 
 :ref:`float<class_float>` **get_longest_axis_size** **(** **)** |const|
 
-返回该 **AABB** 最长轴的标量长度。
+返回该边界框的 :ref:`size<class_AABB_property_size>` 的最长尺度。
+
+有关示例，请参阅 :ref:`get_longest_axis<class_AABB_method_get_longest_axis>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -360,7 +441,30 @@ AABB
 
 :ref:`Vector3<class_Vector3>` **get_shortest_axis** **(** **)** |const|
 
-返回该 **AABB** 归一化后的最短轴。
+返回该边界框的 :ref:`size<class_AABB_property_size>` 的最短归一化轴，作为 :ref:`Vector3<class_Vector3>`\ （\ :ref:`Vector3.RIGHT<class_Vector3_constant_RIGHT>`\ 、\ :ref:`Vector3.UP<class_Vector3_constant_UP>`\ 、或 :ref:`Vector3.BACK<class_Vector3_constant_BACK>`\ ）。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var box = AABB(Vector3(0, 0, 0), Vector3(2, 4, 8))
+    
+    print(box.get_shortest_axis())       # 打印 (1, 0, 0)
+    print(box.get_shortest_axis_index()) # 打印 0
+    print(box.get_shortest_axis_size())  # 打印 2
+
+ .. code-tab:: csharp
+
+    var box = new Aabb(new Vector3(0, 0, 0), new Vector3(2, 4, 8));
+    
+    GD.Print(box.GetShortestAxis());      // 打印 (1, 0, 0)
+    GD.Print(box.GetShortestAxisIndex()); // 打印 0
+    GD.Print(box.GetShortestAxisSize());  // 打印 2
+
+
+
+另见 :ref:`get_shortest_axis_index<class_AABB_method_get_shortest_axis_index>` 和 :ref:`get_shortest_axis_size<class_AABB_method_get_shortest_axis_size>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -372,7 +476,9 @@ AABB
 
 :ref:`int<class_int>` **get_shortest_axis_index** **(** **)** |const|
 
-返回该 **AABB** 最短轴的索引（根据 :ref:`Vector3<class_Vector3>`::AXIS\* 常量）。
+返回该边界框的 :ref:`size<class_AABB_property_size>` 的最短轴的索引（请参阅 :ref:`Vector3.AXIS_X<class_Vector3_constant_AXIS_X>`\ 、\ :ref:`Vector3.AXIS_Y<class_Vector3_constant_AXIS_Y>`\ 、和 :ref:`Vector3.AXIS_Z<class_Vector3_constant_AXIS_Z>`\ ）。
+
+有关示例，请参阅 :ref:`get_shortest_axis<class_AABB_method_get_shortest_axis>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -384,7 +490,9 @@ AABB
 
 :ref:`float<class_float>` **get_shortest_axis_size** **(** **)** |const|
 
-返回该 **AABB** 最短轴的标量长度。
+返回该边界框的 :ref:`size<class_AABB_property_size>` 的最短尺度。
+
+有关示例，请参阅 :ref:`get_shortest_axis<class_AABB_method_get_shortest_axis>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -396,7 +504,7 @@ AABB
 
 :ref:`Vector3<class_Vector3>` **get_support** **(** :ref:`Vector3<class_Vector3>` dir **)** |const|
 
-返回指定方向上最远的 AABB 顶点。该点通常称为碰撞检测算法的支撑点。
+返回给定方向上最远的边界框的顶点位置。该点在碰撞检测算法中通常被称为支撑点。
 
 .. rst-class:: classref-item-separator
 
@@ -408,7 +516,7 @@ AABB
 
 :ref:`float<class_float>` **get_volume** **(** **)** |const|
 
-返回该 **AABB** 的体积。
+返回该边界框的体积。这相当于 ``size.x * size.y * size.z``\ 。另请参阅 :ref:`has_volume<class_AABB_method_has_volume>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -420,7 +528,32 @@ AABB
 
 :ref:`AABB<class_AABB>` **grow** **(** :ref:`float<class_float>` by **)** |const|
 
-返回 **AABB** 的副本，该副本向所有方向增长了给定数量的单位。
+返回该边界框的副本，该边界框在所有边上扩展给定量 ``by``\ 。负数会缩小该框。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var a = AABB(Vector3(4, 4, 4), Vector3(8, 8, 8)).grow(4)
+    print(a.position) # 打印 (0, 0, 0)
+    print(a.size)     # 打印 (16, 16, 16)
+    
+    var b = AABB(Vector3(0, 0, 0), Vector3(8, 4, 2)).grow(2)
+    print(b.position) # 打印 (-2, -2, -2)
+    print(b.size)     # 打印 (12, 8, 6)
+
+ .. code-tab:: csharp
+
+    var a = new Aabb(new Vector3(4, 4, 4), new Vector3(8, 8, 8)).Grow(4);
+    GD.Print(a.Position); // 打印 (0, 0, 0)
+    GD.Print(a.Size);     // 打印 (16, 16, 16)
+    
+    var b = new Aabb(new Vector3(0, 0, 0), new Vector3(8, 4, 2)).Grow(2);
+    GD.Print(b.Position); // 打印 (-2, -2, -2)
+    GD.Print(b.Size);     // 打印 (12, 8, 6)
+
+
 
 .. rst-class:: classref-item-separator
 
@@ -432,9 +565,9 @@ AABB
 
 :ref:`bool<class_bool>` **has_point** **(** :ref:`Vector3<class_Vector3>` point **)** |const|
 
-如果 **AABB** 包含点，则返回 ``true``\ 。AABB 表面上的点被视为包括在内，但浮点精度误差可能会影响此类检测的准确性。
+如果该边界框包含给定的 ``point``\ ，则返回 ``true``\ 。依照惯例，\ **不**\ 包括正好位于右侧、顶部和前侧的点。
 
-\ **注意：**\ 这种方法对于具有\ *负尺寸*\ 的 **AABB** 是不可靠的。使用 :ref:`abs<class_AABB_method_abs>` 获得一个正尺寸的等效 **AABB** 在检查是否包含点。
+\ **注意：**\ 对于具有\ *负* :ref:`size<class_AABB_property_size>` 的 **AABB**\ ，该方法并不可靠。请首先使用 :ref:`abs<class_AABB_method_abs>` 获取一个有效的边界框。
 
 .. rst-class:: classref-item-separator
 
@@ -446,7 +579,7 @@ AABB
 
 :ref:`bool<class_bool>` **has_surface** **(** **)** |const|
 
-如果 **AABB** 具有表面或长度，则返回 ``true``\ ；如果 **AABB** 为空（\ :ref:`size<class_AABB_property_size>` 的所有分量为零或负），则返回 ``false``\ 。
+如果该边界框具有表面或长度，即 :ref:`size<class_AABB_property_size>` 的至少一个分量大于 ``0``\ ，则返回 ``true``\ 。否则，返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -458,7 +591,7 @@ AABB
 
 :ref:`bool<class_bool>` **has_volume** **(** **)** |const|
 
-如果 **AABB** 有体积，则返回 ``true``\ ；如果 **AABB** 是扁平的、空的或具有负的 :ref:`size<class_AABB_property_size>`\ ，则返回 ``false``\ 。
+如果该边界框的宽度、高度和深度均为正值，则返回 ``true``\ 。另见 :ref:`get_volume<class_AABB_method_get_volume>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -470,7 +603,32 @@ AABB
 
 :ref:`AABB<class_AABB>` **intersection** **(** :ref:`AABB<class_AABB>` with **)** |const|
 
-返回两个 **AABB** 的交叠区域。失败时返回空的 AABB（大小为 ``(0, 0, 0)``\ ）。
+返回该边界框与 ``with`` 之间的交集。如果框不相交，则返回空的 **AABB**\ 。如果框在边相交，则返回没有体积的平 **AABB**\ （请参阅 :ref:`has_surface<class_AABB_method_has_surface>` 和 :ref:`has_volume<class_AABB_method_has_volume>`\ ）。
+
+
+.. tabs::
+
+ .. code-tab:: gdscript
+
+    var box1 = AABB(Vector3(0, 0, 0), Vector3(5, 2, 8))
+    var box2 = AABB(Vector3(2, 0, 2), Vector3(8, 4, 4))
+    
+    var intersection = box1.intersection(box2)
+    print(intersection.position) # 打印 (2, 0, 2)
+    print(intersection.size)     # 打印 (3, 2, 4)
+
+ .. code-tab:: csharp
+
+    var box1 = new Aabb(new Vector3(0, 0, 0), new Vector3(5, 2, 8));
+    var box2 = new Aabb(new Vector3(2, 0, 2), new Vector3(8, 4, 4));
+    
+    var intersection = box1.Intersection(box2);
+    GD.Print(intersection.Position); // 打印 (2, 0, 2)
+    GD.Print(intersection.Size);     // 打印 (3, 2, 4)
+
+
+
+\ **注意：**\ 如果你只需要知道两个边界框是否相交，请改用 :ref:`intersects<class_AABB_method_intersects>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -482,7 +640,7 @@ AABB
 
 :ref:`bool<class_bool>` **intersects** **(** :ref:`AABB<class_AABB>` with **)** |const|
 
-该 **AABB** 与另一个交叠时，返回 ``true``\ 。
+如果该边界框与框 ``with`` 重叠，则返回 ``true``\ 。两个框的边\ *总是*\ 被排除。
 
 .. rst-class:: classref-item-separator
 
@@ -494,7 +652,7 @@ AABB
 
 :ref:`bool<class_bool>` **intersects_plane** **(** :ref:`Plane<class_Plane>` plane **)** |const|
 
-该 **AABB** 同时位于指定平面的两边时，返回 ``true``\ 。
+如果该边界框位于给定 ``plane`` 的两侧，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -506,7 +664,9 @@ AABB
 
 :ref:`Variant<class_Variant>` **intersects_ray** **(** :ref:`Vector3<class_Vector3>` from, :ref:`Vector3<class_Vector3>` dir **)** |const|
 
-返回给定的射线与该 **AABB** 的交点，如果不相交则返回 ``null``\ 。射线无限长。
+返回该边界框与给定射线相交的第一个点，作为 :ref:`Vector3<class_Vector3>`\ 。如果没有交集存在，则返回 ``null``\ 。
+
+射线从 ``from`` 开始，面向 ``dir`` 并向无穷远延伸。
 
 .. rst-class:: classref-item-separator
 
@@ -518,7 +678,9 @@ AABB
 
 :ref:`Variant<class_Variant>` **intersects_segment** **(** :ref:`Vector3<class_Vector3>` from, :ref:`Vector3<class_Vector3>` to **)** |const|
 
-如果没有交点，则返回 ``null``\ ，否则返回 ``from`` 和 ``to`` 与此 **AABB** 的交点。
+返回该边界框与给定线段相交的第一个点，作为 :ref:`Vector3<class_Vector3>`\ 。如果没有交集存在，则返回 ``null``\ 。
+
+该线段从 ``from`` 开始，到 ``to`` 结束。
 
 .. rst-class:: classref-item-separator
 
@@ -530,7 +692,7 @@ AABB
 
 :ref:`bool<class_bool>` **is_equal_approx** **(** :ref:`AABB<class_AABB>` aabb **)** |const|
 
-如果该 **AABB** 和 ``aabb`` 近似相等，则返回 ``true``\ ，通过在每个分量上调用 :ref:`@GlobalScope.is_equal_approx<class_@GlobalScope_method_is_equal_approx>`\ 。
+如果该边界框和 ``aabb`` 近似相等，则返回 ``true``\ ，判断方法是通过在 :ref:`position<class_AABB_property_position>` 和 :ref:`size<class_AABB_property_size>` 上调用 :ref:`Vector3.is_equal_approx<class_Vector3_method_is_equal_approx>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -542,7 +704,7 @@ AABB
 
 :ref:`bool<class_bool>` **is_finite** **(** **)** |const|
 
-如果该 **AABB** 是有限的，则返回 ``true``\ ，方法是在每个分量上调用 :ref:`@GlobalScope.is_finite<class_@GlobalScope_method_is_finite>`\ 。
+如果该边界框的值是有限的，则返回 ``true``\ ，判断方法是通过在 :ref:`position<class_AABB_property_position>` 和 :ref:`size<class_AABB_property_size>` 上调用 :ref:`Vector3.is_finite<class_Vector3_method_is_finite>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -554,7 +716,7 @@ AABB
 
 :ref:`AABB<class_AABB>` **merge** **(** :ref:`AABB<class_AABB>` with **)** |const|
 
-返回同时包含该 **AABB** 和 ``with`` 的更大的 **AABB**\ 。
+返回边界包围该边界框和 ``with`` 的 **AABB**\ 。另见 :ref:`encloses<class_AABB_method_encloses>`\ 。
 
 .. rst-class:: classref-section-separator
 
@@ -571,7 +733,7 @@ AABB
 
 :ref:`bool<class_bool>` **operator !=** **(** :ref:`AABB<class_AABB>` right **)**
 
-如果 AABB 不相等，则返回 ``true``\ 。
+如果两个边界框的 :ref:`position<class_AABB_property_position>` 不相等或 :ref:`size<class_AABB_property_size>` 不相等，则返回 ``true``\ 。
 
 \ **注意：**\ 由于浮点数精度误差，请考虑改用 :ref:`is_equal_approx<class_AABB_method_is_equal_approx>`\ ，会更可靠。
 
@@ -601,7 +763,7 @@ AABB
 
 :ref:`bool<class_bool>` **operator ==** **(** :ref:`AABB<class_AABB>` right **)**
 
-如果 AABB 完全相等，则返回 ``true``\ 。
+如果两个边界框的 :ref:`position<class_AABB_property_position>` 完全相等且 :ref:`size<class_AABB_property_size>` 完全相等，则返回 ``true``\ 。
 
 \ **注意：**\ 由于浮点数精度误差，请考虑改用 :ref:`is_equal_approx<class_AABB_method_is_equal_approx>`\ ，会更可靠。
 

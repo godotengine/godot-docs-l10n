@@ -93,9 +93,7 @@ RDPipelineDepthStencilState
 - void **set_back_op_compare** **(** :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` value **)**
 - :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **get_back_op_compare** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+用于比较前一个背面模板值和 :ref:`back_op_reference<class_RDPipelineDepthStencilState_property_back_op_reference>` 的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -112,9 +110,7 @@ RDPipelineDepthStencilState
 - void **set_back_op_compare_mask** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_back_op_compare_mask** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+选择将比较背面模板值中的哪些位。
 
 .. rst-class:: classref-item-separator
 
@@ -131,9 +127,7 @@ RDPipelineDepthStencilState
 - void **set_back_op_depth_fail** **(** :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` value **)**
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_depth_fail** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+对通过模板测试但未通过深度测试的背面像素的模板缓冲区执行的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -150,9 +144,7 @@ RDPipelineDepthStencilState
 - void **set_back_op_fail** **(** :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` value **)**
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_fail** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+对模板缓冲区中未通过模板测试的背面像素执行的操作
 
 .. rst-class:: classref-item-separator
 
@@ -169,9 +161,7 @@ RDPipelineDepthStencilState
 - void **set_back_op_pass** **(** :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` value **)**
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_back_op_pass** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+对通过模板测试的背面像素的模板缓冲区执行的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -188,9 +178,7 @@ RDPipelineDepthStencilState
 - void **set_back_op_reference** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_back_op_reference** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+将与前一个背面模板值进行比较的值。
 
 .. rst-class:: classref-item-separator
 
@@ -207,9 +195,7 @@ RDPipelineDepthStencilState
 - void **set_back_op_write_mask** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_back_op_write_mask** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+选择背面模板值中的哪些位将被更改。
 
 .. rst-class:: classref-item-separator
 
@@ -226,9 +212,7 @@ RDPipelineDepthStencilState
 - void **set_depth_compare_operator** **(** :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` value **)**
 - :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **get_depth_compare_operator** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+用于比较前一个和当前深度值的方法。
 
 .. rst-class:: classref-item-separator
 
@@ -245,9 +229,7 @@ RDPipelineDepthStencilState
 - void **set_depth_range_max** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_depth_range_max** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+:ref:`enable_depth_range<class_RDPipelineDepthStencilState_property_enable_depth_range>` 将返回 true 的最大深度。
 
 .. rst-class:: classref-item-separator
 
@@ -264,9 +246,7 @@ RDPipelineDepthStencilState
 - void **set_depth_range_min** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_depth_range_min** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+:ref:`enable_depth_range<class_RDPipelineDepthStencilState_property_enable_depth_range>` 将返回 true 的最小深度。
 
 .. rst-class:: classref-item-separator
 
@@ -283,9 +263,7 @@ RDPipelineDepthStencilState
 - void **set_enable_depth_range** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_enable_depth_range** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+如果为 ``true``\ ，则将测试每个深度值以查看它是否在 :ref:`depth_range_min<class_RDPipelineDepthStencilState_property_depth_range_min>` 和 :ref:`depth_range_max<class_RDPipelineDepthStencilState_property_depth_range_max>` 之间。如果超出这些值，则将其丢弃。
 
 .. rst-class:: classref-item-separator
 
@@ -302,7 +280,7 @@ RDPipelineDepthStencilState
 - void **set_enable_depth_test** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_enable_depth_test** **(** **)**
 
-如果为 ``true``\ ，则会启用深度测试，能够让对象根据深度自动被其他对象遮挡。这样对象就能够被其他对象部分遮挡。如果为 ``false``\ ，则会按照绘制顺序显示（类似 Godot 的 2D 渲染器）。
+如果为 ``true``\ ，则会启用深度测试，能够让对象根据深度自动被其他对象遮挡。这样对象就能够被其他对象部分遮挡。如果为 ``false``\ ，则对象会按照绘制顺序显示（类似 Godot 的 2D 渲染器）。
 
 .. rst-class:: classref-item-separator
 
@@ -319,9 +297,7 @@ RDPipelineDepthStencilState
 - void **set_enable_depth_write** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_enable_depth_write** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+如果为 ``true``\ ，则每当深度测试返回 true 时写入深度缓冲区。仅当 enable_depth_test 也为 true 时才有效。
 
 .. rst-class:: classref-item-separator
 
@@ -338,9 +314,7 @@ RDPipelineDepthStencilState
 - void **set_enable_stencil** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **get_enable_stencil** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+如果为 ``true``\ ，则启用模板测试。正面三角形和背面三角形有单独的模板缓冲区。请参阅每个以“front_op”开头、和以“back_op”开头的属性。
 
 .. rst-class:: classref-item-separator
 
@@ -357,9 +331,7 @@ RDPipelineDepthStencilState
 - void **set_front_op_compare** **(** :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` value **)**
 - :ref:`CompareOperator<enum_RenderingDevice_CompareOperator>` **get_front_op_compare** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+该方法用于比较前一个正面模板值和 :ref:`front_op_reference<class_RDPipelineDepthStencilState_property_front_op_reference>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -376,9 +348,7 @@ RDPipelineDepthStencilState
 - void **set_front_op_compare_mask** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_front_op_compare_mask** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+选择正面模板值中的哪些位将被比较。
 
 .. rst-class:: classref-item-separator
 
@@ -395,9 +365,7 @@ RDPipelineDepthStencilState
 - void **set_front_op_depth_fail** **(** :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` value **)**
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_depth_fail** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+对通过模板测试但未通过深度测试的正面像素的模板缓冲区执行的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -414,9 +382,7 @@ RDPipelineDepthStencilState
 - void **set_front_op_fail** **(** :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` value **)**
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_fail** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+对模板缓冲区中未通过模板测试的正面像素执行的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -433,9 +399,7 @@ RDPipelineDepthStencilState
 - void **set_front_op_pass** **(** :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` value **)**
 - :ref:`StencilOperation<enum_RenderingDevice_StencilOperation>` **get_front_op_pass** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+对通过模板测试的正面像素的模板缓冲区执行的操作。
 
 .. rst-class:: classref-item-separator
 
@@ -452,9 +416,7 @@ RDPipelineDepthStencilState
 - void **set_front_op_reference** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_front_op_reference** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+将与前一个正面模板值进行比较的值。
 
 .. rst-class:: classref-item-separator
 
@@ -471,9 +433,7 @@ RDPipelineDepthStencilState
 - void **set_front_op_write_mask** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_front_op_write_mask** **(** **)**
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+选择正面模板值中的哪些位将被更改。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`

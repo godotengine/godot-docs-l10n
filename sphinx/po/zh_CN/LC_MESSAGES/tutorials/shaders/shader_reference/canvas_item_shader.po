@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -326,10 +326,10 @@ msgstr ""
 msgid "in vec4 **FRAGCOORD**"
 msgstr "in vec4 **FRAGCOORD**"
 
+#, fuzzy
 msgid ""
 "Coordinate of pixel center. In screen space. ``xy`` specifies position in "
-"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
-"lower-left."
+"window. Origin is lower-left."
 msgstr ""
 "像素中心的坐标。在屏幕空间中，\\ ``xy`` 表示窗口中的位置，如果没有用 "
 "``DEPTH``\\ ，则 ``z`` 表示片段深度。原点位于左下角。"
@@ -390,9 +390,8 @@ msgstr "inout vec3 **NORMAL**"
 msgid "Normal read from **NORMAL_TEXTURE**. Writable."
 msgstr "从 ** NORMAL_TEXTURE ** 中正常读取. 可写的."
 
-#, fuzzy
 msgid "sampler2D **NORMAL_TEXTURE**"
-msgstr "输入sampler2D **NORMAL_TEXTURE**"
+msgstr "sampler2D **NORMAL_TEXTURE**"
 
 msgid "Default 2D normal texture."
 msgstr "默认 2D 法线纹理。"
@@ -412,15 +411,14 @@ msgstr "out float **NORMAL_MAP_DEPTH**"
 msgid "Normalmap depth for scaling."
 msgstr "用于缩放的法线贴图深度."
 
-#, fuzzy
 msgid "Pixel position in screen space."
-msgstr "法向量, 在视图空间中."
+msgstr "屏幕空间中的像素位置。"
 
 msgid "inout vec2 **SHADOW_VERTEX**"
 msgstr "inout vec2 **SHADOW_VERTEX**"
 
 msgid "Same as ``VERTEX`` but can be written to alter shadows."
-msgstr ""
+msgstr "与 ``VERTEX`` 相同，但是可以通过写入来修改阴影。"
 
 msgid "inout vec3 **LIGHT_VERTEX**"
 msgstr "inout vec3 **LIGHT_VERTEX**"
@@ -428,7 +426,7 @@ msgstr "inout vec3 **LIGHT_VERTEX**"
 msgid ""
 "Same as ``VERTEX`` but can be written to alter lighting. Z component "
 "represents height."
-msgstr ""
+msgstr "与 ``VERTEX`` 相同，但是可以通过写入来修改灯光。Z 分量代表高度。"
 
 #, fuzzy
 msgid ""
@@ -472,19 +470,16 @@ msgid "in vec3 **NORMAL**"
 msgstr "in vec3 **NORMAL**"
 
 msgid "Input Normal."
-msgstr "输入。"
+msgstr "输入法线。"
 
 msgid "in vec4 **COLOR**"
 msgstr "in vec4 **COLOR**"
 
-#, fuzzy
 msgid "Input Color. This is the output of the fragment function."
-msgstr ""
-"输入颜色. 这是片段函数的输出(如果在着色器的任何函数中没有使用 **MODULATE** , "
-"则应用最终调制)."
+msgstr "输入颜色。这是 fragment 函数的输出。"
 
 msgid "UV from vertex function, equivalent to the UV in the fragment function."
-msgstr "来自顶点函数的UV, 相当于片段函数中的UV."
+msgstr "UV，来自 vertex 函数，等价于 fragment 函数中的 UV。"
 
 msgid "Current texture in use for CanvasItem."
 msgstr "CanvasItem使用的当前纹理."
@@ -531,26 +526,23 @@ msgstr "灯光在屏幕空间中的方向。"
 msgid "in bool **LIGHT_IS_DIRECTIONAL**"
 msgstr "in bool **LIGHT_IS_DIRECTIONAL**"
 
-#, fuzzy
 msgid "``true`` if this pass is a ``DirectionalLight2D``."
-msgstr "如果 ``true`` 代表光照通道."
+msgstr "如果该阶段为 ``DirectionalLight2D`` 则为 ``true``\\ 。"
 
 msgid "in vec3 **LIGHT_VERTEX**"
 msgstr "in vec3 **LIGHT_VERTEX**"
 
-#, fuzzy
 msgid "Pixel position, in screen space as modified in the fragment function."
-msgstr "``world_position`` 可用于顶点函数或片段函数."
+msgstr "像素位置，使用屏幕空间坐标，是在 fragment 函数中修改的。"
 
 msgid "inout vec4 **LIGHT**"
 msgstr "inout vec4 **LIGHT**"
 
-#, fuzzy
 msgid "Output color for this Light."
-msgstr "每个像素的输出颜色."
+msgstr "该 Light 的输出颜色。"
 
 msgid "Specular shininess, as set in the object's texture."
-msgstr ""
+msgstr "镜面反射光泽度，由对象的纹理设置。"
 
 msgid "out vec4 **SHADOW_MODULATE**"
 msgstr "out vec4 **SHADOW_MODULATE**"

@@ -1,0 +1,98 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0201: The name of the delegate must end with 'EventHandler'"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr ""
+
+msgid "GD0201"
+msgstr ""
+
+msgid "**Category**"
+msgstr "**Категорія**"
+
+msgid "Usage"
+msgstr "Використання"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+#, fuzzy
+msgid "Breaking"
+msgstr "Запікання"
+
+msgid "**Enabled by default**"
+msgstr ""
+
+#, fuzzy
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr ""
+
+msgid ""
+"A delegate annotated with the ``[Signal]`` attribute has a name that doesn't "
+"end with 'EventHandler'."
+msgstr ""
+
+#, fuzzy
+msgid "Rule description"
+msgstr "<brief_description></brief_description>"
+
+msgid ""
+"Godot source generators will generate C# events using the name of the "
+"delegate with the 'EventHandler' suffix removed. Adding the 'EventHandler' "
+"suffix to the name of delegates used in events is a `.NET naming convention "
+"<https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/names-"
+"of-classes-structs-and-interfaces#names-of-common-types>`_."
+msgstr ""
+
+msgid ""
+"Using a suffix for the delegate allows the generated event to use the name "
+"without the suffix avoiding a naming conflict."
+msgstr ""
+
+msgid ""
+"Take a look at the :ref:`C# signals <doc_c_sharp_signals>` documentation for "
+"more information about how to declare and use signals."
+msgstr ""
+
+#, fuzzy
+msgid "How to fix violations"
+msgstr "може існувати ізольовано"
+
+msgid ""
+"To fix a violation of this rule, add 'EventHandler' to the end of the "
+"delegate name."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr ""
+
+msgid ""
+"Do not suppress a warning from this rule. Signal delegates without the "
+"suffix will be ignored by the source generator, so the signal won't be "
+"registered."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Стан перекладу"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,11 +28,11 @@ msgid ""
 "is represented as a string, which can refer to many of the following:"
 msgstr ""
 "Godot verfügt über ein spezielles System zur Kennzeichnung der Verfügbarkeit "
-"von Funktionen. Jedes *Merkmal* wird als Zeichenfolge dargestellt, das sich "
-"auf viele der folgenden Elemente beziehen kann:"
+"von Features. Jedes *Feature* wird als String dargestellt, der sich auf "
+"viele der folgenden Elemente beziehen kann:"
 
 msgid "Platform name."
-msgstr "Plattform Name."
+msgstr "Plattformname."
 
 msgid "Platform architecture (64-bit or 32-bit, x86 or ARM)."
 msgstr "Plattformarchitektur (64-Bit oder 32-Bit, x86 oder ARM)."
@@ -67,70 +67,68 @@ msgid ""
 "load. For example, a library for ``linux.debug.editor.x86_64`` will be "
 "loaded only on a debug editor build for Linux x86_64."
 msgstr ""
+"GDExtension verwendet die Betriebssystem-Tags, um zu bestimmen, welche "
+"Bibliotheken geladen werden sollen. Zum Beispiel wird eine Bibliothek für "
+"``linux.debug.editor.x86_64`` nur auf einem Debug-Editor geladen, der für "
+"Linux x86_64 gebaut wurde."
 
 msgid "Default features"
-msgstr "Standardfunktionen"
+msgstr "Default-Funktionen"
 
 msgid ""
 "Here is a list of most feature tags in Godot. Keep in mind they are **case-"
 "sensitive**:"
 msgstr ""
 "Hier ist eine Liste der meisten Feature-Tags in Godot. Beachten Sie, dass "
-"bei ihnen die Groß- und Kleinschreibung beachtet wird:"
+"bei ihnen die Groß- und Kleinschreibung wichtig ist:"
 
 msgid "**Feature tag**"
-msgstr "**Feature Tag**"
+msgstr "**Feature-Tag**"
 
 msgid "**Description**"
 msgstr "**Beschreibung**"
 
-#, fuzzy
 msgid "**android**"
-msgstr "**Android**"
+msgstr "**android**"
 
 msgid "Running on Android (but not within a Web browser)"
-msgstr ""
+msgstr "Läuft auf Android (aber nicht innerhalb eines Webbrowsers)"
 
 msgid "**bsd**"
-msgstr ""
+msgstr "**bsd**"
 
 msgid "Running on \\*BSD (but not within a Web browser)"
-msgstr ""
+msgstr "Läuft auf \\*BSD (aber nicht in einem Webbrowser)"
 
-#, fuzzy
 msgid "**linux**"
-msgstr "**Alpine Linux**"
+msgstr "**linux**"
 
 msgid "Running on Linux (but not within a Web browser)"
-msgstr ""
+msgstr "Läuft unter Linux (aber nicht innerhalb eines Webbrowsers)"
 
-#, fuzzy
 msgid "**macos**"
-msgstr "**MacOS**"
+msgstr "**macos**"
 
 msgid "Running on macOS (but not within a Web browser)"
-msgstr ""
+msgstr "Läuft unter macOS (aber nicht in einem Webbrowser)"
 
 msgid "**ios**"
-msgstr ""
+msgstr "**ios**"
 
 msgid "Running on iOS (but not within a Web browser)"
-msgstr ""
+msgstr "Läuft unter iOS (aber nicht innerhalb eines Webbrowsers)"
 
-#, fuzzy
 msgid "**windows**"
-msgstr "**Windows**"
+msgstr "**windows**"
 
 msgid "Running on Windows"
 msgstr "Läuft unter Windows"
 
-#, fuzzy
 msgid "**linuxbsd**"
-msgstr "**Alpine Linux**"
+msgstr "**linuxbsd**"
 
-#, fuzzy
 msgid "Running on Linux or \\*BSD"
-msgstr "Läuft unter iOS"
+msgstr "Läuft unter Linux oder \\*BSD"
 
 msgid "**debug**"
 msgstr "**debug**"
@@ -139,213 +137,179 @@ msgid "Running on a debug build (including the editor)"
 msgstr "Läuft auf einem Debug-Build (einschließlich des Editors)"
 
 msgid "**release**"
-msgstr "**Veröffentlichung**"
+msgstr "**release**"
 
 msgid "Running on a release build"
 msgstr "Läuft auf einem Release-Build"
 
 msgid "**editor**"
-msgstr "**Editor**"
+msgstr "**editor**"
 
 msgid "Running on an editor build"
 msgstr "Läuft auf einem Editor-Build"
 
-#, fuzzy
 msgid "**template**"
-msgstr "**Erscheinungsdatum**"
+msgstr "**template**"
 
-#, fuzzy
 msgid "Running on a non-editor (export template) build"
-msgstr "Läuft auf einem Nicht-Editor-Build"
+msgstr "Läuft auf einem Nicht-Editor-Build (Exportvorlage)"
 
-#, fuzzy
 msgid "**double**"
-msgstr "**Mobil**"
+msgstr "**double**"
 
-#, fuzzy
 msgid "Running on a double-precision build"
-msgstr "Läuft auf einem Nicht-Editor-Build"
+msgstr "Läuft auf einem Double-Precision-Build"
 
-#, fuzzy
 msgid "**single**"
-msgstr "**Mobil**"
+msgstr "**single**"
 
-#, fuzzy
 msgid "Running on a single-precision build"
-msgstr "Läuft auf einem Nicht-Editor-Build"
+msgstr "Läuft auf einem Single-Precision-Build"
 
 msgid "**64**"
 msgstr "**64**"
 
 msgid "Running on a 64-bit build (any architecture)"
-msgstr "Läuft auf einem 64-bit System (jede Architektur)"
+msgstr "Läuft auf einem 64-bit Build (jede Architektur)"
 
 msgid "**32**"
 msgstr "**32**"
 
 msgid "Running on a 32-bit build (any architecture)"
-msgstr "Läuft auf einem 32-bit System (jede Architektur)"
+msgstr "Läuft auf einem 32-bit Build (jede Architektur)"
 
 msgid "**x86_64**"
 msgstr "**x86_64**"
 
 msgid "Running on a 64-bit x86 build"
-msgstr "Läuft auf einem 64-bit x86"
+msgstr "Läuft auf einem 64-bit x86 Build"
 
-#, fuzzy
 msgid "**x86_32**"
-msgstr "**x86**"
+msgstr "**x86_32**"
 
 msgid "Running on a 32-bit x86 build"
-msgstr "Läuft auf einem 32-bit x86"
+msgstr "Läuft auf einem 32-bit x86 Build"
 
 msgid "**x86**"
 msgstr "**x86**"
 
-#, fuzzy
 msgid "Running on an x86 build (any bitness)"
-msgstr "Läuft auf einem 64-bit System (jede Architektur)"
+msgstr "Läuft auf einem x86 Build (jede Bitgröße)"
 
 msgid "**arm64**"
 msgstr "**arm64**"
 
 msgid "Running on a 64-bit ARM build"
-msgstr "Läuft auf einem 64-bit ARM"
+msgstr "Läuft auf einem 64-bit ARM Build"
 
-#, fuzzy
 msgid "**arm32**"
-msgstr "**arm**"
+msgstr "**arm32**"
 
 msgid "Running on a 32-bit ARM build"
-msgstr "Läuft auf einem 32-Bit ARM"
+msgstr "Läuft auf einem 32-Bit ARM Build"
 
 msgid "**arm**"
 msgstr "**arm**"
 
-#, fuzzy
 msgid "Running on an ARM build (any bitness)"
-msgstr "Läuft auf einem 64-bit System (jede Architektur)"
+msgstr "Läuft auf einem 64-bit Build (jede Bitgröße)"
 
-#, fuzzy
 msgid "**rv64**"
-msgstr "**64**"
+msgstr "**rv64**"
 
-#, fuzzy
 msgid "Running on a 64-bit RISC-V build"
-msgstr "Läuft auf einem 64-bit ARM"
+msgstr "Läuft auf einem 64-bit RISC-V Build"
 
-#, fuzzy
 msgid "**riscv**"
-msgstr "**right**"
+msgstr "**riscv**"
 
-#, fuzzy
 msgid "Running on a RISC-V build (any bitness)"
-msgstr "Läuft auf einem 64-bit System (jede Architektur)"
+msgstr "Läuft auf einem RISC-V-Build (jede Bitgröße)"
 
-#, fuzzy
 msgid "**ppc64**"
-msgstr "**64**"
+msgstr "**ppc64**"
 
-#, fuzzy
 msgid "Running on a 64-bit PowerPC build"
-msgstr "Läuft auf einem 64-bit x86"
+msgstr "Läuft auf einem 64-Bit-PowerPC-Build"
 
-#, fuzzy
 msgid "**ppc32**"
-msgstr "**32**"
+msgstr "**ppc32**"
 
-#, fuzzy
 msgid "Running on a 32-bit PowerPC build"
-msgstr "Läuft auf einem 32-bit x86"
+msgstr "Läuft auf einem 32-Bit-PowerPC-Build"
 
-#, fuzzy
 msgid "**ppc**"
-msgstr "**pc**"
+msgstr "**ppc**"
 
-#, fuzzy
 msgid "Running on a PowerPC build (any bitness)"
-msgstr "Läuft auf einem 64-bit System (jede Architektur)"
+msgstr "Läuft auf einem PowerPC-Build (jede Bitgröße)"
 
-#, fuzzy
 msgid "**wasm64**"
-msgstr "**arm64**"
+msgstr "**wasm64**"
 
-#, fuzzy
 msgid "Running on a 64-bit WebAssembly build (not yet possible)"
-msgstr "Läuft auf einem 64-bit System (jede Architektur)"
+msgstr "Läuftg auf einem 64-Bit-WebAssembly-Build (noch nicht möglich)"
 
-#, fuzzy
 msgid "**wasm32**"
-msgstr "**32**"
+msgstr "**wasm32**"
 
-#, fuzzy
 msgid "Running on a 32-bit WebAssembly build"
-msgstr "Läuft auf einem 32-Bit ARM"
+msgstr "Läuft auf einem 32-Bit-WebAssembly-Build"
 
 msgid "**wasm**"
-msgstr ""
+msgstr "**wasm**"
 
-#, fuzzy
 msgid "Running on a WebAssembly build (any bitness)"
-msgstr "Läuft auf einem 64-bit System (jede Architektur)"
+msgstr "Läuft auf einem WebAssembly-Build (beliebige Bitgröße)"
 
 msgid "**mobile**"
-msgstr "**Mobil**"
+msgstr "**mobile**"
 
 msgid "Host OS is a mobile platform"
-msgstr "Host OS ist eine mobile Plattform"
+msgstr "Host-Betriebssystem ist eine mobile Plattform"
 
 msgid "**pc**"
 msgstr "**pc**"
 
 msgid "Host OS is a PC platform (desktop/laptop)"
-msgstr "Host OS ist eine PC-Plattform (Desktop/Laptop)"
+msgstr "Host-Betriebssystem ist eine PC-Plattform (Desktop/Laptop)"
 
 msgid "**web**"
 msgstr "**web**"
 
 msgid "Host OS is a Web browser"
-msgstr "Das Host OS ist ein Webbrowser"
+msgstr "Das Host-Betriebssystem ist ein Webbrowser"
 
-#, fuzzy
 msgid "**web_android**"
-msgstr "**Android**"
+msgstr "**web_android**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Android"
-msgstr "Das Host OS ist ein Webbrowser"
+msgstr "Host OS ist ein Webbrowser, der auf Android läuft"
 
-#, fuzzy
 msgid "**web_ios**"
-msgstr "**web**"
+msgstr "**web_ios**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on iOS"
-msgstr "Das Host OS ist ein Webbrowser"
+msgstr "Host OS ist ein Webbrowser, der auf iOS läuft"
 
-#, fuzzy
 msgid "**web_linuxbsd**"
-msgstr "**web**"
+msgstr "**web_linuxbsd**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Linux or \\*BSD"
-msgstr "Das Host OS ist ein Webbrowser"
+msgstr ""
+"Host-Betriebssystem ist ein Webbrowser, der unter Linux oder \\*BSD läuft"
 
-#, fuzzy
 msgid "**web_macos**"
-msgstr "**web**"
+msgstr "**web_macos**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on macOS"
-msgstr "Das Host OS ist ein Webbrowser"
+msgstr "Host OS ist ein Webbrowser, der unter macOS läuft"
 
-#, fuzzy
 msgid "**web_windows**"
-msgstr "**Windows**"
+msgstr "**web_windows**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Windows"
-msgstr "Das Host OS ist ein Webbrowser"
+msgstr "Host-Betriebssystem ist ein Webbrowser, der unter Windows läuft"
 
 msgid "**etc**"
 msgstr "**etc**"
@@ -363,14 +327,13 @@ msgid "**s3tc**"
 msgstr "**s3tc**"
 
 msgid "Textures using S3TC (DXT/BC) compression are supported"
-msgstr "Texturen die S3TC (DXT/BC) Kompression nutzen, werden unterstützt"
+msgstr "Texturen die S3TC (DXT/BC)-Kompression nutzen, werden unterstützt"
 
-#, fuzzy
 msgid "**movie**"
-msgstr "**Mobil**"
+msgstr "**movie**"
 
 msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
-msgstr ""
+msgstr ":ref:`Movie Maker mode <doc_creating_movies>` ist aktiv"
 
 msgid ""
 "With the exception of texture compression and ``movie`` feature tags, "
@@ -379,23 +342,31 @@ msgid ""
 "has_feature(\"mobile\")`` will return ``false`` when running a project "
 "exported to HTML5 on a mobile device."
 msgstr ""
+"Mit Ausnahme von Texturkompression und ``movie``-Featuretags sind die "
+"Default-Featuretags **unveränderlich**. Das bedeutet, dass sie sich *nicht* "
+"abhängig von den Laufzeitbedingungen ändern können. Zum Beispiel wird ``OS."
+"has_feature(\"mobile\")`` den Wert ``false`` zurückgeben, wenn ein nach "
+"HTML5 exportiertes Projekt auf einem mobilen Gerät läuft."
 
 msgid ""
 "To check whether a project exported to HTML5 is running on a mobile device, :"
 "ref:`call JavaScript code <doc_javascript_eval>` that reads the browser's "
 "user agent."
 msgstr ""
+"Um zu prüfen, ob ein nach HTML5 exportiertes Projekt auf einem mobilen Gerät "
+"läuft, :ref:`rufen Sie den JavaScript-Code <doc_javascript_eval>` auf, der "
+"den User-Agenten des Browsers ausliest."
 
 msgid "Custom features"
-msgstr "Benutzerdefinierte Funktionen"
+msgstr "Benutzerdefinierte Features"
 
 msgid ""
 "It is possible to add custom features to a build; use the relevant field in "
 "the *export preset* used to generate it:"
 msgstr ""
 "Es ist möglich, benutzerdefinierte Features zu einem Build hinzuzufügen; "
-"verwenden Sie dazu das entsprechende Feld in der *Exportvoreinstellung*, die "
-"zur Erstellung des Builds verwendet wurde:"
+"verwenden Sie dazu das entsprechende Feld in der *Exportvorgabe*, die zur "
+"Erstellung des Builds verwendet wurde:"
 
 msgid ""
 "Custom feature tags are only used when running the exported project "
@@ -403,6 +374,11 @@ msgid ""
 "running the project from the editor, even if the export preset marked as "
 "**Runnable** for your current platform has custom feature tags defined."
 msgstr ""
+"Benutzerdefinierte Feature-Tags werden nur verwendet, wenn das exportierte "
+"Projekt ausgeführt wird (auch mit :ref:`doc_one-click_deploy`). Sie werden "
+"**nicht** verwendet, wenn das Projekt vom Editor aus ausgeführt wird, selbst "
+"wenn die Exportvorgabe, die für Ihre aktuelle Plattform als **Runnable** "
+"markiert ist, benutzerdefinierte Featuretags definiert hat."
 
 msgid "Overriding project settings"
 msgstr "Projekteinstellungen überschreiben"
@@ -412,18 +388,18 @@ msgid ""
 "*Project Settings*. This allows you to better customize any configuration "
 "when doing a build."
 msgstr ""
-"Funktionen können verwendet werden, um bestimmte Konfigurationswerte in den "
-"*Projekt-Einstellungen* außer Kraft zu setzen. Dadurch können Sie jede "
-"Konfiguration beim Erstellen eines Builds besser anpassen."
+"Features können verwendet werden, um bestimmte Konfigurationswerte in den "
+"*Projekteinstellungen* außer Kraft zu setzen. Dadurch können Sie eine "
+"beliebige Konfiguration beim Erstellen eines Builds besser anpassen."
 
 msgid ""
 "In the following example, a different icon is added for the demo build of "
 "the game (which was customized in a special export preset, which, in turn, "
 "includes only demo levels)."
 msgstr ""
-"Im folgenden Beispiel wird ein anderes Symbol für den Demo-Build des Spiels "
-"hinzugefügt (der in einer speziellen Exportvoreinstellung angepasst wurde, "
-"die wiederum nur Demo-Levels enthält)."
+"Im folgenden Beispiel wird ein anderes Icon für den Demo-Build des Spiels "
+"hinzugefügt (der in einer speziellen Exportvorgabe angepasst wurde, die "
+"wiederum nur Demo-Levels enthält)."
 
 msgid "After overriding, a new field is added for this specific configuration:"
 msgstr ""
@@ -437,16 +413,16 @@ msgid ""
 "setting with the desired feature tag(s) if you want them to override base "
 "project settings on all platforms and configurations."
 msgstr ""
-"Benutzt man die Funktion :ref:`project settings \"override.cfg\" "
-"functionality <class_ProjectSettings>` (die unabhängig von den feature tags "
-"ist), sollte man beachten, dass die feature tags dennoch gelten. Aus diesem "
-"Grund sollte sichergestellt werden, dass die Einstellungen mit den/dem "
-"gewünschten feature tag(s) überschrieben werden, wenn Basis-Projekt-"
-"Einstellungen auf allen Plattformen und in allen Konfigurationen "
-"überschrieben werden sollen."
+"Wenn Sie die :ref:`Projekteinstellungen \"override.cfg\"-Funktionalität "
+"<class_ProjectSettings>` verwenden (die nichts mit Featuretags zu tun hat), "
+"denken Sie daran, dass Featuretags weiterhin gelten. Stellen Sie daher "
+"sicher, dass Sie *auch* die Einstellung mit dem/den gewünschten "
+"Featuretag(s) überschreiben, wenn Sie wollen, dass diese die "
+"Basisprojekteinstellungen auf allen Plattformen und Konfigurationen "
+"überschreiben."
 
 msgid "Default overrides"
-msgstr "Standardüberschreibungen"
+msgstr "Default-Überschreibungen"
 
 msgid ""
 "There are already a lot of settings that come with overrides by default; "
@@ -457,18 +433,17 @@ msgstr ""
 "Projekteinstellungen zu finden."
 
 msgid "Customizing the build"
-msgstr "Den Build anpassen"
+msgstr "Anpassen des Builds"
 
-#, fuzzy
 msgid ""
 "Feature tags can be used to customize a build process too, by writing a "
 "custom **ExportPlugin**. They are also used to specify which shared library "
 "is loaded and exported in **GDExtension**."
 msgstr ""
-"Feature-Tags können auch verwendet werden, um einen Build-Prozess "
-"anzupassen, indem ein benutzerdefiniertes **ExportPlugin** geschrieben wird. "
-"Sie werden auch verwendet, um anzugeben, welche Shared Library in "
-"**GDNative** geladen und exportiert wird."
+"Featuretags können auch verwendet werden, um einen Build-Prozess anzupassen, "
+"indem man ein eigenes **ExportPlugin** schreibt. Sie werden auch verwendet, "
+"um festzulegen, welche Shared Library in **GDExtension** geladen und "
+"exportiert wird."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

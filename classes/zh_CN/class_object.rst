@@ -655,7 +655,7 @@ void **_validate_property** **(** :ref:`Dictionary<class_Dictionary>` property *
         {
             if (property["name"].AsStringName() == PropertyName.Number && IsNumberEditable)
             {
-                var usage = property["usage"].As>PropertyUsageFlags<() | PropertyUsageFlags.ReadOnly;
+                var usage = property["usage"].As<PropertyUsageFlags>() | PropertyUsageFlags.ReadOnly;
                 property["usage"] = (int)usage;
             }
         }

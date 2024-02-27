@@ -538,7 +538,7 @@ enum **FontLCDSubpixelLayout**:
 
 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` **FONT_LCD_SUBPIXEL_LAYOUT_MAX** = ``5``
 
-
+代表 :ref:`FontLCDSubpixelLayout<enum_TextServer_FontLCDSubpixelLayout>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 
@@ -948,7 +948,7 @@ flags **TextOverrunFlag**:
 
 :ref:`TextOverrunFlag<enum_TextServer_TextOverrunFlag>` **OVERRUN_JUSTIFICATION_AWARE** = ``16``
 
-
+在尝试修剪文本之前考虑文本是否对齐（请参阅 :ref:`JustificationFlag<enum_TextServer_JustificationFlag>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1376,7 +1376,7 @@ enum **SpacingType**:
 
 :ref:`SpacingType<enum_TextServer_SpacingType>` **SPACING_MAX** = ``4``
 
-
+代表 :ref:`SpacingType<enum_TextServer_SpacingType>` 枚举的大小。
 
 .. rst-class:: classref-item-separator
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,7 @@ msgid ""
 msgstr ""
 
 msgid "Render modes"
-msgstr "渲染模式"
+msgstr "算繪模式"
 
 msgid ""
 "Subpasses allow you to do more expensive calculations at a lower resolution "
@@ -145,10 +145,10 @@ msgid ""
 "lower resolution than the rest of the sky:"
 msgstr ""
 "子通道可讓您以較低的解析度進行更昂貴的計算，以加快著色器的速度。例如，以下程"
-"式碼以低於天空其餘部分的解析度渲染雲："
+"式碼以低於天空其餘部分的解析度算繪雲："
 
 msgid "Render mode"
-msgstr "渲染模式"
+msgstr "算繪模式"
 
 msgid "Description"
 msgstr "說明"
@@ -225,19 +225,19 @@ msgid "in bool **AT_HALF_RES_PASS**"
 msgstr "in bool **AT_HALF_RES_PASS**"
 
 msgid "Currently rendering to half resolution pass."
-msgstr "目前正在渲染半解析度階段。"
+msgstr "目前正在算繪半解析度階段。"
 
 msgid "in bool **AT_QUARTER_RES_PASS**"
 msgstr "in bool **AT_QUARTER_RES_PASS**"
 
 msgid "Currently rendering to quarter resolution pass."
-msgstr "目前正在渲染四分之一解析度階段。"
+msgstr "目前正在算繪四分之一解析度階段。"
 
 msgid "in bool **AT_CUBEMAP_PASS**"
 msgstr "in bool **AT_CUBEMAP_PASS**"
 
 msgid "Currently rendering to radiance cubemap."
-msgstr "目前正在渲染輻射度立方體貼圖。"
+msgstr "目前正在算繪輻射度立方體貼圖。"
 
 msgid "in bool **LIGHTX_ENABLED**"
 msgstr "in bool **LIGHTX_ENABLED**"

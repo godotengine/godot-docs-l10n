@@ -401,7 +401,7 @@ void **deindex** **(** **)**
 
 为给定的 ``nd_threshold`` 生成 LOD，使用线性单位（四次误差的平方根），最多使用 ``target_index_count`` 个索引。
 
-\ *已弃用。*\ 内部不再使用，忽略后能够保持法线和 UV。请考虑改用 :ref:`ImporterMesh.generate_lods<class_ImporterMesh_method_generate_lods>`\ 。
+\ *已弃用。*\ 内部不再使用，并且无法保留法线或 UV。请考虑改用 :ref:`ImporterMesh.generate_lods<class_ImporterMesh_method_generate_lods>`\ 。
 
 .. rst-class:: classref-item-separator
 

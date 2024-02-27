@@ -19,17 +19,17 @@ LightmapGI
 描述
 ----
 
-**LightmapGI** 节点用于计算和存储烘焙的光照贴图。光照贴图用于提供高质量的间接照明，并且漏光很少。如果启用 :ref:`directional<class_LightmapGI_property_directional>`\ ，\ **LightmapGI** 还可以使用球谐函数，以提供粗略的反射。由于\ *光照探针*\ ，动态物体可以接收间接光照，可以通过将 :ref:`generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>` 设置为 :ref:`GENERATE_PROBES_DISABLED<class_LightmapGI_constant_GENERATE_PROBES_DISABLED>` 以外的值，来自动放置光照探针。也可以通过创建 :ref:`LightmapProbe<class_LightmapProbe>` 节点，来添加额外的光照贴图探针。缺点是光照贴图是完全静态的，不能在导出的项目中烘焙。与 :ref:`VoxelGI<class_VoxelGI>` 相比，烘焙 **LightmapGI** 节点也更慢。
+The **LightmapGI** node is used to compute and store baked lightmaps. Lightmaps are used to provide high-quality indirect lighting with very little light leaking. **LightmapGI** can also provide rough reflections using spherical harmonics if :ref:`directional<class_LightmapGI_property_directional>` is enabled. Dynamic objects can receive indirect lighting thanks to *light probes*, which can be automatically placed by setting :ref:`generate_probes_subdiv<class_LightmapGI_property_generate_probes_subdiv>` to a value other than :ref:`GENERATE_PROBES_DISABLED<class_LightmapGI_constant_GENERATE_PROBES_DISABLED>`. Additional lightmap probes can also be added by creating :ref:`LightmapProbe<class_LightmapProbe>` nodes. The downside is that lightmaps are fully static and cannot be baked in an exported project. Baking a **LightmapGI** node is also slower compared to :ref:`VoxelGI<class_VoxelGI>`.
 
-\ **程序生成：**\ 光照贴图烘焙功能仅在编辑器中可用。这意味着 **LightmapGI** 不适合程序生成或用户构建的关卡。对于程序生成或用户构建的关卡，请改用 :ref:`VoxelGI<class_VoxelGI>` 或 SDFGI（请参阅 :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`\ ）。
+\ **Procedural generation:** Lightmap baking functionality is only available in the editor. This means **LightmapGI** is not suited to procedurally generated or user-built levels. For procedurally generated or user-built levels, use :ref:`VoxelGI<class_VoxelGI>` or SDFGI instead (see :ref:`Environment.sdfgi_enabled<class_Environment_property_sdfgi_enabled>`).
 
-\ **性能：**\ **LightmapGI** 为全局照明提供最佳的运行时性能。它适用于包括集成显卡和移动设备在内的低端硬件。
+\ **Performance:** **LightmapGI** provides the best possible run-time performance for global illumination. It is suitable for low-end hardware including integrated graphics and mobile devices.
 
-\ **注意：**\ 由于光照贴图的工作方式，大多数属性只有在光照贴图被再次烘焙后，才会产生可见效果。
+\ **Note:** Due to how lightmaps work, most properties only have a visible effect once lightmaps are baked again.
 
-\ **注意：**\ 不支持在 :ref:`CSGShape3D<class_CSGShape3D>` 和 :ref:`PrimitiveMesh<class_PrimitiveMesh>` 上烘焙光照贴图，因为它们无法存储烘焙所需的 UV2 数据。
+\ **Note:** Lightmap baking on :ref:`CSGShape3D<class_CSGShape3D>`\ s and :ref:`PrimitiveMesh<class_PrimitiveMesh>`\ es is not supported, as these cannot store UV2 data required for baking.
 
-\ **注意：**\ 如果没有安装自定义光照贴图，\ **LightmapGI** 只能在使用 Vulkan 后端（Forward+ 或 Mobile）时进行烘焙，而不能在使用 OpenGL 时烘焙。
+\ **Note:** If no custom lightmappers are installed, **LightmapGI** can only be baked when using the Vulkan backend (Forward+ or Mobile), not OpenGL. Additionally, **LightmapGI** rendering is not currently supported when using the OpenGL backend (Compatibility).
 
 .. rst-class:: classref-introduction-group
 

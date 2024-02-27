@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,31 +29,32 @@ msgid ""
 "provides the ability to use real-time 2D lighting and shadows, which can "
 "greatly enhance the sense of depth in your project."
 msgstr ""
+"По умолчанию 2D-сцены в Godot не затенены, свет и тени не видны. Хотя "
+"рендеринг выполняется быстро, незатененные сцены могут выглядеть скучными. "
+"Godot предоставляет возможность использовать 2D-освещение и тени в реальном "
+"времени, что может значительно усилить ощущение глубины в вашем проекте."
 
 msgid "No 2D lights or shadows, scene is unshaded"
-msgstr ""
+msgstr "Нет 2D-света и теней, сцена не затенена"
 
-#, fuzzy
 msgid "2D lights enabled (without shadows)"
-msgstr "2D свет и тени"
+msgstr "Включено 2D освещение (без теней)"
 
-#, fuzzy
 msgid "2D lights and shadows enabled"
-msgstr "2D свет и тени"
+msgstr "2D-свет и тени включены"
 
 msgid "Nodes"
 msgstr "Узлы"
 
 msgid "There are several nodes involved in a complete 2D lighting setup:"
-msgstr ""
+msgstr "В полной настройке 2D-освещения задействовано несколько узлов:"
 
-#, fuzzy
 msgid ""
 ":ref:`CanvasModulate <class_CanvasModulate>` (to darken the rest of the "
 "scene)"
 msgstr ""
-":ref:`CanvasModulate<class_CanvasModulate>` используется для затемнения "
-"сцены."
+":ref:`CanvasModulate<class_CanvasModulate>` (используется для затемнения "
+"сцены)"
 
 msgid ""
 ":ref:`PointLight2D <class_PointLight2D>` (for omnidirectional or spot lights)"

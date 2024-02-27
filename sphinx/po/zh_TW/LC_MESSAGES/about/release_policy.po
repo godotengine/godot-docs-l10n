@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -73,7 +73,7 @@ msgid ""
 "might sometimes require changing a feature's behavior or modifying a class's "
 "interface, even if the rest of the engine API remains backwards compatible."
 msgstr ""
-"這是因為 Godot 作為一個遊戲引擎， 涵蓋了渲染、物理、腳本等許多領域。修復某個"
+"這是因為 Godot 作為一個遊戲引擎， 涵蓋了算繪、物理、腳本等許多領域。修復某個"
 "領域的 Bug 或實作新功能，有時可能需要改變某個功能的行為，或者修改某個類的介"
 "面，即便是引擎 API 的其他部分仍然向後相容。"
 
@@ -159,11 +159,13 @@ msgstr "**釋出日期**"
 msgid "**Support level**"
 msgstr "**支援等級**"
 
-msgid "Godot 4.2 (`master`)"
+#, fuzzy
+msgid "Godot 4.3 (`master`)"
 msgstr "Godot 4.2（ `master` ）"
 
-msgid "November 2023 (estimate)"
-msgstr "2014 年 12 月"
+#, fuzzy
+msgid "April 2024 (estimate)"
+msgstr "2023 年第三季度（預計）"
 
 msgid ""
 "|unstable| *Development.* Receives new features, usability and performance "
@@ -174,11 +176,13 @@ msgstr ""
 msgid "unstable"
 msgstr "啟用"
 
-msgid "Godot 4.1"
+#, fuzzy
+msgid "Godot 4.2"
 msgstr "Godot 4.0"
 
-msgid "July 2023"
-msgstr "2016 年 7 月"
+#, fuzzy
+msgid "November 2023"
+msgstr "2014 年 12 月"
 
 msgid ""
 "|supported| Receives fixes for bugs and security issues, as well as patches "
@@ -188,16 +192,30 @@ msgstr "|supported| 接收錯誤和安全性問題的修復，以及啟用平台
 msgid "supported"
 msgstr "支援的圖片格式"
 
+msgid "Godot 4.1"
+msgstr "Godot 4.0"
+
+msgid "July 2023"
+msgstr "2016 年 7 月"
+
 msgid "Godot 4.0"
 msgstr "Godot 4.0"
 
 msgid "March 2023"
 msgstr "2019 年 3 月"
 
+#, fuzzy
+msgid "|eol| No longer supported (last update: 4.0.4)."
+msgstr "|eol| 已停止支援。"
+
+msgid "eol"
+msgstr "eol"
+
 msgid "Godot 3.6 (`3.x`, LTS)"
 msgstr "Godot 3.2"
 
-msgid "Q3 2023 (estimate)"
+#, fuzzy
+msgid "Q1 2024 (estimate)"
 msgstr "2023 年第三季度（預計）"
 
 msgid ""
@@ -218,13 +236,9 @@ msgstr "Godot 3.2"
 msgid "November 2021"
 msgstr "2014 年 12 月"
 
-msgid ""
-"|eol| No longer supported, as fully superseded by the compatible 3.5 release "
-"(last update: 3.4.5)."
+#, fuzzy
+msgid "|eol| No longer supported (last update: 3.4.5)."
 msgstr "|eol| 已停止支援。"
-
-msgid "eol"
-msgstr "eol"
 
 msgid "Godot 3.3"
 msgstr "Godot 3.2"
@@ -232,9 +246,8 @@ msgstr "Godot 3.2"
 msgid "April 2021"
 msgstr "2019 年 3 月"
 
-msgid ""
-"|eol| No longer supported, as fully superseded by the compatible 3.4 release "
-"(last update: 3.3.4)."
+#, fuzzy
+msgid "|eol| No longer supported (last update: 3.3.4)."
 msgstr "|eol| 已停止支援。"
 
 msgid "Godot 3.2"

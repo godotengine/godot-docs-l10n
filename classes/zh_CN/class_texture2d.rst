@@ -236,7 +236,9 @@ void **draw_rect_region** **(** :ref:`RID<class_RID>` canvas_item, :ref:`Rect2<c
 
 :ref:`Image<class_Image>` **get_image** **(** **)** |const|
 
-返回一个 :ref:`Image<class_Image>`\ ，是这个 **Texture2D** 中数据的副本（每次都会新建一个 :ref:`Image<class_Image>`\ ）。可以直接访问并操作 :ref:`Image<class_Image>`\ 。
+返回一个 :ref:`Image<class_Image>`\ ，该对象是这个 **Texture2D** 中数据的副本（每次都会新建一个 :ref:`Image<class_Image>`\ ）。可以直接访问并操作 :ref:`Image<class_Image>`\ 。
+
+\ **注意：**\ 如果该 **Texture2D** 无效，则会返回 ``null``\ 。
 
 \ **注意：**\ 这个函数会从 GPU 获取纹理数据，过度使用可能会引起性能问题。
 

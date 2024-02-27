@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,68 +18,72 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "GD0107: Types not derived from Node should not export Node members"
-msgstr ""
+msgstr "GD0107: 未继承自 Node 的类型不应导出 Node 成员"
 
 msgid "**Rule ID**"
-msgstr ""
+msgstr "**规则 ID**"
 
 msgid "GD0107"
-msgstr ""
+msgstr "GD0107"
 
 msgid "**Category**"
-msgstr "**Category**\\"
+msgstr "**类别**"
 
 msgid "Usage"
 msgstr "用法"
 
 msgid "**Fix is breaking or non-breaking**"
-msgstr ""
+msgstr "**修复是中断修复还是非中断修复**"
 
-#, fuzzy
 msgid "Breaking"
-msgstr "烘焙"
+msgstr "中断"
 
 msgid "**Enabled by default**"
-msgstr ""
+msgstr "**默认启用**"
 
-#, fuzzy
 msgid "Yes"
-msgstr "es"
+msgstr "是"
 
 msgid "Cause"
-msgstr ""
+msgstr "原因"
 
 msgid ""
 "A type that doesn't derive from ``Node`` contains an exported field or "
 "property of a type that derives from ``Node``."
 msgstr ""
+"一个并未继承自 ``Node`` 的类型内包含了一个导出字段或属性，其类型继承自 "
+"``Node``。"
 
-#, fuzzy
 msgid "Rule description"
-msgstr "`<brief_description>`"
+msgstr "规则说明"
 
 msgid ""
 "Exported nodes are serialized as ``NodePath``. Only types derived from "
 "``Node`` are able to get the node instance from the ``NodePath``."
 msgstr ""
+"导出的节点将会被序列化为 ``NodePath``。只有继承自 ``Node`` 的类型才能通过 "
+"``NodePath`` 获取类型实例。"
 
-#, fuzzy
 msgid "How to fix violations"
-msgstr "应该是独立存在的"
+msgstr "如何解决冲突"
 
 msgid ""
 "To fix a violation of this rule, avoid exporting ``Node`` members on a type "
 "that doesn't derive from ``Node``, or consider exporting a ``NodePath``."
 msgstr ""
+"欲解决该规则带来的冲突，请避免在并未继承自 ``Node`` 的类型中导出 ``Node`` 成"
+"员，或考虑导出 ``NodePath``。"
 
 msgid "When to suppress warnings"
-msgstr ""
+msgstr "何时禁止显示警告"
 
 msgid ""
 "Do not suppress a warning from this rule. Types that don't derive from "
 "``Node`` will be unable to retrieve the right node instance for exported "
 "``Node`` members, resulting in unexpected runtime errors."
 msgstr ""
+"请勿禁止该规则的警告。未继承自 ``Node`` 的类型无法获取导出 ``Node`` 成员的正"
+"确实例，这会导致预料之外的运行时错误。"
 
 msgid "Translation status"
 msgstr "翻译状态"

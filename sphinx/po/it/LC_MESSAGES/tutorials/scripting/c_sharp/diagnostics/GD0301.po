@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0301: The generic type argument must be a Variant compatible type"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr ""
+
+msgid "GD0301"
+msgstr ""
+
+#, fuzzy
+msgid "**Category**"
+msgstr "**Categoria**:"
+
+msgid "Usage"
+msgstr "Utilizzo"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+#, fuzzy
+msgid "Breaking"
+msgstr "Baking"
+
+msgid "**Enabled by default**"
+msgstr ""
+
+#, fuzzy
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr ""
+
+msgid ""
+"An unsupported type is specified for a generic type argument when a :ref:"
+"`Variant-compatible <doc_c_sharp_variant>` type is expected."
+msgstr ""
+
+#, fuzzy
+msgid "Rule description"
+msgstr "`<brief_description>`"
+
+msgid ""
+"When a generic type parameter is annotated with the ``[MustBeVariant]`` "
+"attribute, the generic type is required to be a Variant-compatible type. For "
+"example, the generic ``Godot.Collections.Array<T>`` type only supports items "
+"of a type that can be converted to Variant."
+msgstr ""
+
+msgid "How to fix violations"
+msgstr ""
+
+msgid ""
+"To fix a violation of this rule, change the generic type argument to be a "
+"Variant-compatible type or use a different API that doesn't require the "
+"generic type argument to be a Variant-compatible type."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr ""
+
+msgid ""
+"Do not suppress a warning from this rule. API that contains generic type "
+"arguments annotated with the ``[MustBeVariant]`` attribute usually has this "
+"requirement because the values will be passed to the engine, if the type "
+"can't be marshalled it will result in runtime errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stato della traduzione"

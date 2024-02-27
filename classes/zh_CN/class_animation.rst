@@ -26,23 +26,25 @@ Animation
 
  .. code-tab:: gdscript
 
-    # 创建动画，让“Enemy”节点在 0.5 秒内
+    # 创建动画，让“Enemy”节点在 2.0 秒内
     # 向右移动 100 像素。
     var animation = Animation.new()
     var track_index = animation.add_track(Animation.TYPE_VALUE)
     animation.track_set_path(track_index, "Enemy:position:x")
     animation.track_insert_key(track_index, 0.0, 0)
-    animation.track_insert_key(track_index, 0.5, 100)
+    animation.track_insert_key(track_index, 2.0, 100)
+    animation.length = 2.0
 
  .. code-tab:: csharp
 
-    # 创建动画，让“Enemy”节点在 0.5 秒内
+    # 创建动画，让“Enemy”节点在 2.0 秒内
     # 向右移动 100 像素。
     var animation = new Animation();
     int trackIndex = animation.AddTrack(Animation.TrackType.Value);
     animation.TrackSetPath(trackIndex, "Enemy:position:x");
     animation.TrackInsertKey(trackIndex, 0.0f, 0);
-    animation.TrackInsertKey(trackIndex, 0.5f, 100);
+    animation.TrackInsertKey(trackIndex, 2.0f, 100);
+    animation.Length = 2.0f;
 
 
 

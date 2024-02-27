@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -1258,9 +1258,10 @@ msgid ""
 msgstr ""
 
 msgid ""
-"Per-instance uniform values can also be set at run-time using "
-"`set_instance_shader_parameter<class_GeometryInstance3D_method_set_instance_shader_parameter>` "
-"method on a node that inherits from :ref:`class_GeometryInstance3D`:"
+"Per-instance uniform values can also be set at run-time using :ref:"
+"`set_instance_shader_parameter "
+"<class_GeometryInstance3D_method_set_instance_shader_parameter>` method on a "
+"node that inherits from :ref:`class_GeometryInstance3D`:"
 msgstr ""
 
 msgid ""
@@ -1977,21 +1978,21 @@ msgstr "\\ ivec2 **textureSize** ( samplerCube s, int lod )"
 msgid "Get the number of accessible mipmap levels of a texture."
 msgstr "キューブテクスチャのサイズを取得する"
 
-msgid "If the texture is unassigned to a sampler, ``0`` is returned."
+msgid ""
+"If the texture is unassigned to a sampler, ``1`` is returned (Godot always "
+"internally assigns a texture even to an empty sampler)."
 msgstr ""
 
 #, fuzzy
 msgid "gvec4_type **texture** (gsampler2D s, vec2 p [, float bias])"
 msgstr "\\ vec4_type **texture** ( sampler2D_type s, vec2 uv [, float bias] )"
 
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler2DArray s, vec3 p [, float bias])"
 msgstr ""
-"\\ vec4_type  **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
+"\\ vec4_type **texture** ( sampler2DArray_type s, vec3 uv [, float bias] )"
 
-#, fuzzy
 msgid "gvec4_type **texture** (gsampler3D s, vec3 p [, float bias])"
-msgstr "\\ vec4_type  **texture** ( sampler3D_type s, vec3 uv [, float bias] )"
+msgstr "\\ vec4_type **texture** ( sampler3D_type s, vec3 uv [, float bias] )"
 
 #, fuzzy
 msgid "vec4 **texture** (samplerCube s, vec3 p [, float bias])"

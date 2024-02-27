@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,39 +18,43 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "List of features"
-msgstr "Seznam vlastností"
+msgstr "Seznam funkcí"
 
-#, fuzzy
 msgid "This page aims to list **all** features currently supported by Godot."
 msgstr ""
-"Tato stránka si klade za cíl vypsat všechny funkce, které Godot v současné "
-"době podporuje."
+"Tato stránka si klade za cíl sepsat **všechny** funkce, které Godot v "
+"současné době podporuje."
 
-#, fuzzy
 msgid ""
 "This page lists features supported by the current stable version of Godot. "
 "Some of these features may not be available in the `LTS release series (3.x) "
 "<https://docs.godotengine.org/en/3.5/about/list_of_features.html>`__."
 msgstr ""
-"Na této stránce jsou uvedeny funkce podporované aktuální stabilní verzí "
-"Godota (3.4). `Další funkce <https://docs.godotengine.org/en/latest/about/"
-"list_of_features.html>`_ jsou k dispozici v nejnovější vývojové verzi (4.0)."
+"Na této stránce jsou uvedeny funkce podporované aktuální stable verzí Godot. "
+"Některé funkce nemusí být k dispozici v `vydání LTS <https://docs."
+"godotengine.org/en/3.5/about/list_of_features.html>`_."
 
 msgid "Platforms"
 msgstr "Platformy"
 
+msgid ""
+"See :ref:`doc_system_requirements` for hardware and software version "
+"requirements."
+msgstr ""
+
 msgid "**Can run both the editor and exported projects:**"
-msgstr "**Může spouštět jak editor, tak exportované projekty:**"
-
-msgid "Windows 7 and later (64-bit and 32-bit)."
-msgstr "Windows 7 a novější (64bitový a 32bitový)."
-
-msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr "macOS 10.12 a novější (64-bit, x86 a ARM)."
+msgstr "**Dokáží spustit jak editor, tak exportované projekty:**"
 
 #, fuzzy
-msgid "Linux (64-bit, x86 and ARM)."
-msgstr "Linux (64bitový a 32bitový, x86 a ARM)."
+msgid "Windows (x86, 64-bit and 32-bit)."
+msgstr "Windows 7 a novější (64bitový a 32bitový)."
+
+msgid "macOS (x86 and ARM, 64-bit only)."
+msgstr ""
+
+#, fuzzy
+msgid "Linux (x86 and ARM, 64-bit and 32-bit)."
+msgstr "Windows 7 a novější (64bitový a 32bitový)."
 
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
@@ -59,37 +63,39 @@ msgstr ""
 "Binární soubory jsou staticky propojeny a mohou být spuštěny na jakékoli "
 "distribuci, pokud jsou kompilovány na dostatečně staré základní distribuci."
 
-msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr "Oficiální binární soubory jsou kompilovány na Ubuntu 14.04."
-
-msgid "32-bit binaries can be compiled from source."
+msgid ""
+"Official binaries are compiled using the `Godot Engine buildroot <https://"
+"github.com/godotengine/buildroot>`__, allowing for binaries that work across "
+"common Linux distributions (including LTS variants)."
 msgstr ""
 
-msgid "Android 6.0 and later (editor support is experimental)."
-msgstr ""
+#, fuzzy
+msgid "Android (editor support is experimental)."
+msgstr "Android 6.0 nebo novější (podpora editoru je ve experimentální)."
 
 msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
 "Godot 3.x is recommended instead when targeting HTML5."
 msgstr ""
+":ref: `Webové prohlížeče <doc_using_the_web_editor>`. Experimentální ve "
+"verzi 4.0, při cílení na HTML5 je doporučeno použít verze Godot 3.x."
 
 msgid "**Runs exported projects:**"
 msgstr "**Spustí exportované projekty:**"
 
-#, fuzzy
-msgid "iOS 11.0 and later."
-msgstr "iOS 10.0 a novější."
+msgid "iOS."
+msgstr ""
 
 msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`Konzole <doc_consoles>`."
 
-#, fuzzy
 msgid ""
 "Godot aims to be as platform-independent as possible and can be :ref:`ported "
 "to new platforms <doc_custom_platform_ports>` with relative ease."
 msgstr ""
 "Godot si klade za cíl být co nejvíce nezávislý na platformě a může být "
-"relativně snadno portován na nové platformy."
+"relativně snadno :ref:`portován na nové platformy "
+"<doc_custom_platform_ports>`."
 
 msgid ""
 "Projects written in C# using Godot 4 currently cannot be exported to the web "
@@ -97,15 +103,19 @@ msgid ""
 "iOS platform support is available as of Godot 4.2, but is experimental and :"
 "ref:`some limitations apply <doc_c_sharp_platforms>`."
 msgstr ""
+"Projekty napsané v C# používající Godot 4 nemohou být momentálně exportovány "
+"na webové platformy. Zvažte místo toho použití Godot 3 pro použití C# na "
+"této platformě. Podpora platform Android a iOS je dostupná pro Godot 4.2, "
+"ale je stále experimentální a `platí určitá omezení <doc_c_sharp_platforms>`."
 
 msgid "Editor"
 msgstr "Editor"
 
 msgid "**Features:**"
-msgstr "**Vlastnosti:**"
+msgstr "**Funkce:**"
 
 msgid "Scene tree editor."
-msgstr "Editor stromů scény."
+msgstr "Stromový editor scény."
 
 msgid "Built-in script editor."
 msgstr "Vestavěný editor skriptů."
@@ -120,24 +130,29 @@ msgstr ""
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDSkript :ref:`debugger <doc_debugger_panel>`."
 
-msgid "No support for debugging in threads yet."
+#, fuzzy
+msgid "Support for debugging in threads is available since 4.2."
 msgstr "Zatím neexistuje podpora pro ladění ve vláknech."
 
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
 "rendering pipeline."
 msgstr ""
+"Vizuální profiler s indikací času CPU a GPU pro každý krok vykreslovacího "
+"kanálu."
 
 msgid ""
 "Performance monitoring tools, including :ref:`custom performance monitors "
 "<doc_custom_performance_monitors>`."
 msgstr ""
+"Nástroje pro sledování výkonu, včetně :ref:`vlastních monitorů výkonu "
+"<doc_custom_performance_monitors>`."
 
 msgid "Live script reloading."
 msgstr "Načtení skiptu za chodu."
 
 msgid "Live scene editing."
-msgstr "Živé úpravy scény."
+msgstr "Úprava scény za chodu programu."
 
 msgid ""
 "Changes will reflect in the editor and will be kept after closing the "
@@ -146,7 +161,7 @@ msgstr ""
 "Změny se projeví v editoru a budou zachovány i po ukončení běžícího projektu."
 
 msgid "Remote inspector."
-msgstr "Vzdálený inspektor."
+msgstr "Prenosný inspektor."
 
 msgid ""
 "Changes won't reflect in the editor and won't be kept after closing the "
@@ -156,14 +171,14 @@ msgstr ""
 "zachovány."
 
 msgid "Live camera replication."
-msgstr "Animace kamery."
+msgstr "Replikace kameryza chodu programu."
 
 msgid "Move the in-editor camera and see the result in the running project."
 msgstr ""
-"Přesuňte kameru v editoru a podívejte se na výsledek probíhajícího projektu."
+"Přesuňte kameru v editoru a podívejte se na výsledek v probíhajícím projektu."
 
 msgid "Built-in offline class reference documentation."
-msgstr ""
+msgstr "Vestavěná offline dokumentace třídních referencí."
 
 msgid "Use the editor in dozens of languages contributed by the community."
 msgstr "Použijte editor v desítkách jazyků připravených komunitou."
@@ -175,24 +190,22 @@ msgid ""
 "Editor plugins can be downloaded from the :ref:`asset library "
 "<doc_what_is_assetlib>` to extend editor functionality."
 msgstr ""
-"Pluginy pro rozšíření funkcí editoru lze stáhnout z :ref:`library library "
-"<doc_what_is_assetlib>` ."
+"Pluginy pro rozšíření funkcí editoru lze stáhnout z :ref:`knihovny doplňků "
+"<doc_what_is_assetlib>`."
 
-#, fuzzy
 msgid ""
 ":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
 "new features or speed up your workflow."
 msgstr ""
-":ref:`Vytvořte si vlastní pluginy <doc_making_plugins>` pomocí GDScriptu a "
-"přidejte nové"
+":ref:`Vytvořte si vlastní pluginy <doc_making_plugins>` pomocí GDScriptu pro "
+"přidání nové funkce nebo urychlení pracovního postupu."
 
-#, fuzzy
 msgid ""
 ":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
 "in the Project Manager and import them directly."
 msgstr ""
-":ref:`Stáhněte si projekty z knihovny aktiv <doc_using_assetlib_editor>` ve "
-"správci projektů a obratem je naimportujte."
+":ref:`Stáhněte si projekty z knihovny doplňků <doc_using_assetlib_editor>` "
+"ve správci projektů a obratem je naimportujte."
 
 msgid "Rendering"
 msgstr "Vykreslování"
@@ -200,24 +213,35 @@ msgstr "Vykreslování"
 msgid ""
 "3 rendering *methods* (running over 2 rendering *drivers*) are available:"
 msgstr ""
+"K dispozici jsou 3 *metody* vykreslování (běží přes 2 *ovladače* "
+"vykreslování):"
 
 msgid ""
 "**Forward+**, running over Vulkan 1.0 (with optional Vulkan 1.1 and 1.2 "
 "features). The most advanced graphics backend, suited for desktop platforms "
 "only. Used by default on desktop platforms."
 msgstr ""
+"**Forward+** běží přes Vulkan 1.0 (s volitelnými funkcemi Vulkan 1.1 a 1.2). "
+"Nejpokročilejší grafický back-end uzpůsobený jen pro desktopové platformy. "
+"Je použit jako defaultní na dektopových platformách."
 
 msgid ""
 "**Forward Mobile**, running over Vulkan 1.0 (with optional Vulkan 1.1 and "
 "1.2 features). Less features, but renders simple scenes faster. Suited for "
 "mobile and desktop platforms. Used by default on mobile platforms."
 msgstr ""
+"**Forward Mobile**, běží na Vulkan 1.0 (s volitelnými funkcemi Vulkan 1.1 a "
+"1.2). Méně funkcí, ale vykresluje jednodušší scény rychleji. Vhodný pro "
+"mobilní a dektopové platformy. Je defaultně použitý pro mobilní platformy."
 
 msgid ""
 "**Compatibility**, running over OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2.0. The "
 "least advanced graphics backend, suited for low-end desktop and mobile "
 "platforms. Used by default on the web platform."
 msgstr ""
+"**Compatibility** běží na OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2.0. Nejméně "
+"pokročilý grafický back-end vhodný pro low-endové dektopové a mobilní "
+"platformy. Je defaultne použitý pro webové platformy."
 
 msgid "2D graphics"
 msgstr "2D grafika"
@@ -225,36 +249,34 @@ msgstr "2D grafika"
 msgid "Sprite, polygon and line rendering."
 msgstr "Vykreslování spritů, polygonů a čar."
 
-#, fuzzy
 msgid ""
 "High-level tools to draw lines and polygons such as :ref:`class_Polygon2D` "
 "and :ref:`class_Line2D`, with support for texturing."
 msgstr ""
-"Nástroje na vysoké úrovni pro kreslení čar a mnohoúhelníků, jako je "
-"Polygon2D a Line2D."
+"Nástroje špičkové kvality pro kreslení čar a mnohoúhelníků, jako je :ref:` "
+"class_Polygon2D` a :ref:` class_Line2D` s podporou texturování."
 
-#, fuzzy
 msgid "AnimatedSprite2D as a helper for creating animated sprites."
-msgstr "AnimatedSprite jako pomocník při vytváření animovaných spritů."
+msgstr "AnimatedSprite2D jako pomocník při vytváření animovaných spritů."
 
 msgid "Parallax layers."
 msgstr "Paralaxní vrstvy."
 
 msgid "Pseudo-3D support including preview in the editor."
-msgstr ""
+msgstr "Podpora Pseudo-3D s náhledem v editoru."
 
 msgid ""
 ":ref:`2D lighting <doc_2d_lights_and_shadows>` with normal maps and specular "
 "maps."
 msgstr ""
+":ref:` 2D světelné efekty <doc_2d_lights_and_shadows>` s normálními a "
+"zrcadlovymi mapami."
 
-#, fuzzy
 msgid "Point (omni/spot) and directional 2D lights."
-msgstr "Všesměrová světla."
+msgstr "Bodová (omni/spot) a směrová 2D osvětlení."
 
-#, fuzzy
 msgid "Hard or soft shadows (adjustable on a per-light basis)."
-msgstr "Zrcadlovou energii lze nastavit pro každé světlo zvlášť."
+msgstr "Tvrdé a měkké stínování (nastavitelné pro jednotlivá osvětlení)."
 
 msgid ""
 "Custom shaders can access a real-time :abbr:`SDF (Signed Distance Field)` "
@@ -262,88 +284,110 @@ msgid ""
 "which can be used for improved 2D lighting effects including 2D global "
 "illumination."
 msgstr ""
+"Vlastní stínování mají v reálném čase přístup k :abbr:` SDF ( Signed "
+"Distance Field)`reprezentaci 2D scény založené na :ref:` "
+"class_LightOccluder2D` uzlech, které mohou být použity ke zlepšení 2D "
+"světelných efektů včetně 2D globálního osvětlení."
 
 msgid ""
 ":ref:`Font rendering <doc_gui_using_fonts>` using bitmaps, rasterization "
 "using FreeType or multi-channel signed distance fields (MSDF)."
 msgstr ""
+":ref:` Vykreslení fontů <doc_gui_using_fonts>`používá bitmapy, rastrování "
+"používá FreeType nebo multi kanálová podepsaná distanční pole (MSDF)."
 
-#, fuzzy
 msgid ""
 "Bitmap fonts can be exported using tools like BMFont, or imported from "
 "images (for fixed-width fonts only)."
-msgstr "Bitmapová písma lze exportovat pomocí nástrojů, jako je BMFont."
+msgstr ""
+"Bitmapové fonty lze exportovat pomocí nástrojů, jako je BMFont nebo "
+"importovány z obrázku (pouze pro fonty s pevnou šířkou)."
 
-#, fuzzy
 msgid ""
 "Dynamic fonts support monochrome fonts as well as colored fonts (e.g. for "
 "emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
 msgstr ""
-"DynamicFont podporuje monochromatická i barevná písma (tzn. pro emoji). "
-"Podporované formáty jsou TTF a OTF WOFF1."
+"Dynamické fonty podporují monochromatická i barevná písma (tzn. pro emoji). "
+"Podporované formáty jsou TTF, OTF, WOFF1 a WOFF2."
 
-#, fuzzy
 msgid ""
 "Dynamic fonts support optional font outlines with adjustable width and color."
 msgstr ""
-"DynamicFont podporuje volitelné obrysy písma s nastavitelnou šířkou a barvou."
+"Dynamické fonty podporuje volitelné obrysy fontulů s nastavitelnou šířkou a "
+"barvou."
 
 msgid ""
 "Dynamic fonts support variable fonts and OpenType features including "
 "ligatures."
 msgstr ""
+"Dynamické fonty podporují variabilní fonty a OpenType funkce včetně ligatur."
 
 msgid ""
 "Dynamic fonts support simulated bold and italic when the font file lacks "
 "those styles."
 msgstr ""
+"Dynamické fonty podporují simulované tučné písmo a kurzívu, pokud v souboru "
+"písma tyto styly chybí."
 
-#, fuzzy
 msgid ""
 "Dynamic fonts support oversampling to keep fonts sharp at higher resolutions."
 msgstr ""
-"Podpora nadměrného vzorkování fontů (oversampling), aby byla písma ve "
-"vyšších rozlišeních ostrá."
+"Dynamické fonty podpora nadměrné vzorkování (oversampling), aby byla písma "
+"ve vyšších rozlišeních ostrá."
 
 msgid ""
 "Dynamic fonts support subpixel positioning to make fonts crisper at low "
 "sizes."
 msgstr ""
+"Dynamické fonty podporují sub-pixelové pozicování aby byla písma při malých "
+"velikostech ostřejší."
 
 msgid ""
 "Dynamic fonts support LCD subpixel optimizations to make fonts even crisper "
 "at low sizes."
 msgstr ""
+"Dynamické fonty podporují sub-pixelovou optimalizaci LCD vytvářející ještě "
+"ostřejší fonty při malých velikostech."
 
 msgid ""
 "Signed distance field fonts can be scaled at any resolution without "
 "requiring re-rasterization. Multi-channel usage makes SDF fonts scale down "
 "to lower sizes better compared to monochrome SDF fonts."
 msgstr ""
+"Fonty podepsaného distančního pole mohou být škálovány bez nutnosti "
+"opětovného rastrování. Multi-kanálové. Díky vícekanálovému použití se písma "
+"SDF zmenšují na menší velikosti lépe ve srovnání s monochromatickými písmy "
+"SDF."
 
-#, fuzzy
 msgid ""
 "GPU-based :ref:`particles <doc_particle_systems_2d>` with support for :ref:"
 "`custom particle shaders <doc_particle_shader>`."
-msgstr "Částice generované GPU s podporou pro vlastní částicové shadery."
+msgstr ""
+"GPU generované :ref:`částice <doc_particle_systems_2D>` s podporou pro :ref:"
+"`volitelné částicové stíny <doc_particle_shader>`."
 
 msgid "CPU-based particles."
-msgstr "Částice generované CPU."
+msgstr "CPU generované částice."
 
 msgid ""
 "Optional :ref:`2D HDR rendering "
 "<doc_environment_and_post_processing_using_glow_in_2d>` for better glow "
 "capabilities."
 msgstr ""
+"Volitelné :ref: `2D HDR renderování "
+"<doc_environment_and_post_processing_using_glow_in_2d>` pro lepší možnosti "
+"osvícení."
 
 msgid "2D tools"
 msgstr "2D nástroje"
 
 msgid ":ref:`TileMaps <doc_using_tilemaps>` for 2D tile-based level design."
 msgstr ""
+":ref:`Dlaždicové mapy <doc_using_tilemaps>` pro návrh úrovní založených na "
+"2D dlaždicích."
 
 msgid "2D camera with built-in smoothing and drag margins."
-msgstr "2D kamera s vestavěným vyhlazováním a okraji tažení."
+msgstr "2D kamera s vestavěným vyhlazováním s upravitelnými okraji."
 
 msgid "Path2D node to represent a path in 2D space."
 msgstr "Uzel Path2D reprezentující cestu ve 2D prostoru."
@@ -352,13 +396,10 @@ msgid "Can be drawn in the editor or generated procedurally."
 msgstr "Lze nakreslit v editoru nebo generovat procedurálně."
 
 msgid "PathFollow2D node to make nodes follow a Path2D."
-msgstr ""
-"Uzel PathFollow2D, pro přidání vlastnosti následovat Path2D do nadřazeného "
-"uzlu."
+msgstr "Uzel PathFollow2D, pro přidání vlastnosti uzlů následovat Path2D."
 
-#, fuzzy
 msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
-msgstr "Pomocná třída 2D geometrie."
+msgstr ":ref:`Pomocná třída 2D geometrie <class_Geometry2D>`."
 
 msgid "2D physics"
 msgstr "2D fyzika"
@@ -373,44 +414,45 @@ msgid ""
 "Animatable bodies (for objects moving only by script or animation, such as "
 "doors and platforms)."
 msgstr ""
+"Animovatelná tělesa (pro objekty pohybující se pomocí skriptů nebo animace, "
+"jako třeba dveře nebo platformy)."
 
 msgid "Rigid bodies."
 msgstr "Tuhá tělesa."
 
-#, fuzzy
 msgid "Character bodies."
-msgstr "Statická tělesa."
+msgstr "Tělesa charakterů."
 
 msgid "Joints."
-msgstr "Spojení."
+msgstr "Klouby."
 
 msgid "Areas to detect bodies entering or leaving it."
-msgstr "Oblasti pro detekci těles, která do něj vstupují nebo opouštějí."
+msgstr "Oblasti pro detekci těles, která do něj vstupují nebo jej opouštějí."
 
 msgid "**Collision detection:**"
 msgstr "**Detekce kolize:**"
 
-#, fuzzy
 msgid ""
 "Built-in shapes: line, box, circle, capsule, world boundary (infinite plane)."
-msgstr "Vestavěné tvary: linie, box, kruh, kapsle."
+msgstr ""
+"Vestavěné tvary: linie, box, kruh, kapsle, hranice světa (nekonečná plocha)."
 
 msgid ""
 "Collision polygons (can be drawn manually or generated from a sprite in the "
 "editor)."
 msgstr ""
-"Kolizní polygony (lze je kreslit ručně nebo generovat ze sprite v editoru)."
+"Kolizní polygony (lze je kreslit ručně nebo generovat ze spritů v editoru)."
 
 msgid "3D graphics"
 msgstr "3D grafika"
 
-#, fuzzy
 msgid "HDR rendering with sRGB."
-msgstr ""
-"Volitelné vykreslování HDR v režimu sRGB (ve výchozím nastavení povoleno)."
+msgstr "HDR renderování společně s sRGB."
 
 msgid "Perspective, orthographic and frustum-offset cameras."
-msgstr "Perspektivní, ortografické a komutované kamery."
+msgstr ""
+"Perspektivní, ortografické a frustrum-offset (záběr ve tvaru jehlanu - "
+"vyrovnávaný) kamery."
 
 msgid ""
 "When using the Forward+ backend, a depth prepass is used to improve "

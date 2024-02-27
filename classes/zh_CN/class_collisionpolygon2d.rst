@@ -166,6 +166,8 @@ enum **BuildMode**:
 
 该多边形的顶点列表。每个点都与下一个点相连，最后一个点与第一个点相连。
 
+\ **注意：**\ 返回的顶点位于给定的 **CollisionPolygon2D** 的局部坐标空间中。
+
 \ **警告：**\ 返回值是 :ref:`PackedVector2Array<class_PackedVector2Array>` 的副本，不是引用。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`

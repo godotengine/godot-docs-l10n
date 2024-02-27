@@ -420,7 +420,7 @@ void **force_raycast_update** **(** **)**
 
 :ref:`Vector3<class_Vector3>` **get_collision_point** **(** **)** |const|
 
-返回射线与最近的物体相交的碰撞点。
+返回射线与最近的物体相交的碰撞点。如果 :ref:`hit_from_inside<class_RayCast3D_property_hit_from_inside>` 为 ``true`` 并且射线从碰撞形状内部开始，则该函数将返回该射线的原点。
 
 \ **注意：**\ 这个点是在\ **全局**\ 坐标系中。
 

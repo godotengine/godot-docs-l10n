@@ -12,7 +12,7 @@ ResourceImporterOBJ
 
 **继承：** :ref:`ResourceImporter<class_ResourceImporter>` **<** :ref:`RefCounted<class_RefCounted>` **<** :ref:`Object<class_Object>`
 
-将 OBJ 3D 模型导入为独立 :ref:`Mesh<class_Mesh>` 或场景。
+将 OBJ 3D 模型导入为独立的 :ref:`Mesh<class_Mesh>` 或场景。
 
 .. rst-class:: classref-introduction-group
 

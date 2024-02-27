@@ -2240,7 +2240,7 @@ ProjectSettings
 
 :ref:`int<class_int>` **audio/video/video_delay_compensation_ms** = ``0``
 
-播放视频时设置为硬编码音频延迟。除非你知道自己在做什么，否则最好不要动它。
+播放视频时设置为硬编码音频延迟。除非你知道自己在做什么，否则最好保持不变。
 
 .. rst-class:: classref-item-separator
 
@@ -3834,9 +3834,13 @@ Zstandard 的默认压缩级别。影响压缩的场景和资源。较高的级�
 
 :ref:`bool<class_bool>` **display/window/size/resizable** = ``true``
 
-允许窗口默认可调整大小。
+如果为 ``true``\ ，则默认允许窗口调整大小。
 
-\ **注意：**\ 这个设置在 iOS 上将忽略。
+\ **注意：**\ 该属性仅在项目启动时读取。要更改窗口在运行时是否可调整大小，请改在根窗口上设置 :ref:`Window.unresizable<class_Window_property_unresizable>`\ ，这样可以使用 ``get_viewport().get_window()`` 检索根窗口。\ :ref:`Window.unresizable<class_Window_property_unresizable>` 采用与该设置相反的值。
+
+\ **注意：**\ 某些窗口管理器可以被配置为忽略窗口的不可调整大小状态。不要依赖该设置来保证窗口\ *永远不会*\ 调整大小。
+
+\ **注意：**\ 该设置在 iOS 上被忽略。
 
 .. rst-class:: classref-item-separator
 
@@ -9106,7 +9110,7 @@ Godot 使用一个消息队列来延迟一些函数调用。如果你的空间�
 
 :ref:`float<class_float>` **physics/common/physics_jitter_fix** = ``0.5``
 
-控制物理周期与真实时间的同步程度。小于等于 0 时，周期是同步的。对时钟同步有要求的网络游戏建议使用此类值。较高的值会导致游戏内时钟和真实时钟的较大偏差，但可以平滑帧率抖动。大多数情况下，默认值 0.5 应该没问题；大于 2 的值可能导致游戏对丢帧作出明显延迟的反应，因此不推荐使用。
+控制物理周期与真实时间的同步程度。小于等于 0 时，周期是同步的。对时钟同步有要求的网络游戏建议使用此类值。较高的值会导致游戏内时钟和真实时钟的较大偏差，但可以平滑帧率抖动。大多数情况下，默认值 0.5 应该足够好了；大于 2 的值可能导致游戏对丢帧作出明显延迟的反应，因此不推荐使用。
 
 \ **注意：**\ 为了获得最佳的结果，使用自定义物理插值解决方案时，应通过将 :ref:`physics/common/physics_jitter_fix<class_ProjectSettings_property_physics/common/physics_jitter_fix>` 设置为 ``0`` 来禁用物理抖动修复。
 
@@ -10382,9 +10386,7 @@ OIDN 将在可用时使用 GPU 加速。与使用计算着色器进行加速的 
 
 :ref:`int<class_int>` **rendering/limits/spatial_indexer/threaded_cull_minimum_instances** = ``1000``
 
-.. container:: contribute
-
-	目前没有这个属性的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+在多线程上启用剔除计算时，场景中必须存在的最小实例数。如果场景的实例数少于该数量，则在单线程上完成剔除。
 
 .. rst-class:: classref-item-separator
 

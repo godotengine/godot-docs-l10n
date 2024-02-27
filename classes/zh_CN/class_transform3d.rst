@@ -19,7 +19,7 @@ Transform3D
 
 用于 3D 线性变换的 3×4 矩阵（3 行 4 列），可以表示平移、旋转、缩放等变换，由 :ref:`basis<class_Transform3D_property_basis>`\ （前三列）和 :ref:`origin<class_Transform3D_property_origin>` 的 :ref:`Vector3<class_Vector3>`\ （最后一列）组成。
 
-更多信息请阅读文档文章《矩阵与变换》。
+通用介绍见教程\ :doc:`《矩阵与变换》 <../tutorials/math/matrices_and_transforms>`\ 。
 
 .. note::
 

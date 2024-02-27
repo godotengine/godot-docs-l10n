@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,25 +25,36 @@ msgid ""
 "and for updating radiance cubemaps which are used for image-based lighting "
 "(IBL). Sky shaders only have one processing function, the ``sky()`` function."
 msgstr ""
+"Sky-Shader sind eine spezielle Art von Shader, die zum Zeichnen von "
+"Himmelshintergründen und zum Aktualisieren von Strahlungs-Cubemaps verwendet "
+"werden, die für die bildbasierte Beleuchtung (IBL) eingesetzt werden. "
+"Himmels-Shader haben nur eine Verarbeitungsfunktion, die Funktion ``Sky()``."
 
-#, fuzzy
 msgid "There are three places the sky shader is used."
-msgstr "Es gibt zwei Stellen, an denen Vorlagen verwaltet werden können."
+msgstr "Es gibt drei Stellen, an denen der Sky-Shader verwendet wird."
 
 msgid ""
 "First the sky shader is used to draw the sky when you have selected to use a "
 "Sky as the background in your scene."
 msgstr ""
+"Zunächst wird der Sky-Shader verwendet, um den Himmel zu zeichnen, wenn Sie "
+"einen Himmel als Hintergrund in Ihrer Szene ausgewählt haben."
 
 msgid ""
 "Second, the sky shader is used to update the radiance cubemap when using the "
 "Sky for ambient color or reflections."
 msgstr ""
+"Zweitens wird der Sky-Shader verwendet, um die Radiance-Cubemap zu "
+"aktualisieren, wenn der Himmel für Umgebungsfarben oder Reflexionen "
+"verwendet wird."
 
 msgid ""
 "Third, the sky shader is used to draw the lower res subpasses which can be "
 "used in the high-res background or cubemap pass."
 msgstr ""
+"Drittens wird der Sky-Shader verwendet, um die niedriger aufgelösten "
+"Subpasses zu zeichnen, die im hochauflösenden Hintergrund oder Cubemap-Pass "
+"verwendet werden können."
 
 msgid ""
 "In total, this means the sky shader can run up to six times per frame, "
@@ -52,12 +63,22 @@ msgid ""
 "be used. You can change the behavior of the shader based on where it is "
 "called by checking the ``AT_*_PASS`` booleans. For example:"
 msgstr ""
+"Insgesamt bedeutet dies, dass der Sky-Shader bis zu sechsmal pro Frame "
+"ausgeführt werden kann. In der Praxis wird es jedoch viel weniger sein, da "
+"die Radiance Cubemap nicht bei jedem Frame aktualisiert werden muss und "
+"nicht alle Subpasses verwendet werden. Man kann das Verhalten des Shaders "
+"ändern, je nachdem, wo er aufgerufen wird, indem man die ``AT_*_PASS`` "
+"Booleschen Werte überprüft. Zum Beispiel:"
 
 msgid ""
 "When using the sky shader to draw a background, the shader will be called "
 "for all non-occluded fragments on the screen. However, for the background's "
 "subpasses, the shader will be called for every pixel of the subpass."
 msgstr ""
+"Wenn Sie den Sky-Shader verwenden, um einen Hintergrund zu zeichnen, wird "
+"der Shader für alle nicht verdeckten Fragmente auf dem Bildschirm "
+"aufgerufen. Bei den Unter-Durchläufen des Hintergrunds wird der Shader "
+"jedoch für jedes Pixel des Unter-Durchlaufs aufgerufen."
 
 msgid ""
 "When using the sky shader to update the radiance cubemap, the sky shader "
@@ -68,23 +89,35 @@ msgid ""
 "cubemap will update every frame. The following list of changes force an "
 "update of the radiance cubemap:"
 msgstr ""
+"Wenn Sie den Sky-Shader zur Aktualisierung der Radiance Cubemap verwenden, "
+"wird der Sky-Shader für jedes Pixel in der Cubemap aufgerufen. Andererseits "
+"wird der Shader nur aufgerufen, wenn die Radiance Cubemap aktualisiert "
+"werden muss. Die Radiance Cubemap muss aktualisiert werden, wenn einer der "
+"Shader-Parameter aktualisiert wird. Wenn zum Beispiel ``TIME`` im Shader "
+"verwendet wird, dann wird die Radiance Cubemap bei jedem Frame aktualisiert. "
+"Die folgende Liste von Änderungen erzwingt eine Aktualisierung der Radiance "
+"Cubemap:"
 
 msgid "``TIME`` is used."
-msgstr ""
+msgstr "``TIME`` wird verwendet."
 
 msgid "``POSITION`` is used and the camera position changes."
-msgstr ""
+msgstr "``POSITION`` wird verwendet und die Kameraposition ändert sich."
 
 msgid ""
 "If any ``LIGHTX_*`` properties are used and any :ref:`DirectionalLight3D "
 "<class_DirectionalLight3D>` changes."
 msgstr ""
+"Wenn irgendwelche ``LIGHTX_*`` Propertys verwendet werden und sich "
+"irgendwelche :ref:`DirectionalLight3D <class_DirectionalLight3D>` ändern."
 
 msgid "If any uniform is changed in the shader."
-msgstr ""
+msgstr "Wenn ein Uniform im Shader geändert wird."
 
 msgid "If the screen is resized and either of the subpasses are used."
 msgstr ""
+"Wenn die Größe des Bildschirms geändert wird und einer der Unter-Durchläufe "
+"verwendet wird."
 
 msgid ""
 "Try to avoid updating the radiance cubemap needlessly. If you do need to "
@@ -92,6 +125,11 @@ msgid ""
 "mode <class_Sky_property_process_mode>` is set to :ref:`REALTIME "
 "<class_Sky_constant_PROCESS_MODE_REALTIME>`."
 msgstr ""
+"Versuchen Sie, eine unnötige Aktualisierung der Radiance Cubemap zu "
+"vermeiden. Wenn Sie die Radiance Cubemap bei jedem Frame aktualisieren "
+"müssen, stellen Sie sicher, dass Ihr :ref:`Sky process mode "
+"<class_Sky_property_process_mode>` auf :ref:`REALTIME "
+"<class_Sky_constant_PROCESS_MODE_REALTIME>` gesetzt ist."
 
 msgid ""
 "Note that the :ref:`process mode <class_Sky_property_process_mode>` only "
@@ -104,11 +142,24 @@ msgid ""
 "cubemap when rendering the visible sky. With a completely static sky, this "
 "means that it needs to be rendered only once."
 msgstr ""
+"Beachten Sie, dass der :ref:`Prozessierungmodus "
+"<class_Sky_property_process_mode>` nur das Rendering der Radiance Cubemap "
+"beeinflusst. Der sichtbare Himmel wird immer durch den Aufruf des Fragment-"
+"Shaders für jedes Pixel gerendert. Bei komplexen Fragment-Shadern kann dies "
+"zu einem hohen Rendering-Overhead führen. Wenn der Himmel statisch ist (die "
+"oben genannten Bedingungen sind erfüllt) oder sich nur langsam ändert, ist "
+"es nicht erforderlich, den vollständigen Fragment-Shader für jedes Bild "
+"aufzurufen. Dies kann vermieden werden, indem der gesamte Himmel in die "
+"Radiance Cubemap gerendert und beim Rendern des sichtbaren Himmels aus "
+"dieser Cubemap gelesen wird. Bei einem völlig statischen Himmel bedeutet "
+"dies, dass er nur einmal gerendert werden muss."
 
 msgid ""
 "The following code renders the full sky into the radiance cubemap and reads "
 "from that cubemap for displaying the visible sky:"
 msgstr ""
+"Der folgende Code rendert den gesamten Himmel in die Radiance Cubemap und "
+"liest aus dieser Cubemap den sichtbaren Himmel aus:"
 
 msgid ""
 "This way, the complex calculations happen only in the cubemap pass, which "
@@ -117,6 +168,11 @@ msgid ""
 "<class_Sky_property_radiance_size>` to get the desired balance between "
 "performance and visual fidelity."
 msgstr ""
+"Auf diese Weise finden die komplexen Berechnungen nur im Cubemap-Durchlauf "
+"statt, der durch Einstellen des :ref:`Prozessmodus "
+"<class_Sky_property_process_mode>` und der :ref:`Radianzgröße "
+"<class_Sky_property_radiance_size>` optimiert werden kann, um die gewünschte "
+"Balance zwischen Performance und visueller Wiedergabetreue zu erreichen."
 
 msgid "Render modes"
 msgstr "Render-Modi"
@@ -126,62 +182,68 @@ msgid ""
 "to speed up your shaders. For example the following code renders clouds at a "
 "lower resolution than the rest of the sky:"
 msgstr ""
+"Mit Unter-Durchläufen können Sie aufwändigere Berechnungen mit einer "
+"niedrigeren Auflösung durchführen, um Ihre Shader zu beschleunigen. Der "
+"folgende Code rendert zum Beispiel die Wolken mit einer niedrigeren "
+"Auflösung als den Rest des Himmels:"
 
 msgid "Render mode"
-msgstr "Render Modus"
+msgstr "Rendermodus"
 
 msgid "Description"
 msgstr "Beschreibung"
 
-#, fuzzy
 msgid "**use_half_res_pass**"
-msgstr "**depth_draw_alpha_prepass**"
+msgstr "**use_half_res_pass**"
 
 msgid "Allows the shader to write to and access the half resolution pass."
 msgstr ""
+"Ermöglicht dem Shader das Schreiben in und den Zugriff auf den Halbe-"
+"Auflösungs-Durchlauf."
 
 msgid "**use_quarter_res_pass**"
-msgstr ""
+msgstr "**use_quarter_res_pass**"
 
 msgid "Allows the shader to write to and access the quarter resolution pass."
 msgstr ""
+"Ermöglicht dem Shader das Schreiben in und den Zugriff auf den Viertel-"
+"Auflösungs-Durchlauf."
 
-#, fuzzy
 msgid "**disable_fog**"
-msgstr "**disable_force**"
+msgstr "**disable_fog**"
 
 msgid "If used, fog will not affect the sky."
 msgstr ""
+"Wenn er verwendet wird, hat der Nebel keine Auswirkungen auf den Himmel."
 
 msgid "Built-ins"
-msgstr "integrierte Elemente"
+msgstr "Built-ins"
 
-#, fuzzy
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
 "optional writing and will not necessarily contain sensible values. Samplers "
 "cannot be written to so they are not marked."
 msgstr ""
-"Mit \"in\" gekennzeichnete Werte sind schreibgeschützt. Mit \"out\" "
-"gekennzeichnete Werte dienen zum optionalen Schreiben und enthalten nicht "
-"unbedingt sinnvolle Werte. Als \"inout\" gekennzeichnete Werte stellen einen "
-"sinnvollen Standardwert dar und können optional beschrieben werden. Sampler "
-"können nicht geschrieben werden und sind nicht markiert."
+"Die als \"in\" gekennzeichneten Werte sind schreibgeschützt. Mit \"out\" "
+"gekennzeichnete Werte sind zum optionalen Schreiben vorgesehen und enthalten "
+"nicht unbedingt sinnvolle Werte. Sampler können nicht beschrieben werden, "
+"daher sind sie nicht markiert."
 
 msgid "Global built-ins"
-msgstr "Global integrierte Elemente"
+msgstr "Globale Built-ins"
 
-#, fuzzy
 msgid ""
 "Global built-ins are available everywhere, including in custom functions."
 msgstr ""
-"Globale integrierte Elemente sind überall verfügbar, einschließlich "
-"benutzerdefinierter Funktionen."
+"Globale Built-ins sind überall verfügbar, auch in benutzerdefinierten "
+"Funktionen."
 
 msgid ""
 "There are 4 ``LIGHTX`` lights, accessed as ``LIGHT0``, ``LIGHT1``, "
 "``LIGHT2``, and ``LIGHT3``."
 msgstr ""
+"Es gibt 4 ``LIGHTX``-Lichter, die als ``LIGHT0``, ``LIGHT1``, ``LIGHT2`` und "
+"``LIGHT3`` angesprochen werden."
 
 msgid "Built-in"
 msgstr "Built-in"
@@ -193,158 +255,160 @@ msgid "Global time, in seconds."
 msgstr "Globale Zeit in Sekunden."
 
 msgid "in vec3 **POSITION**"
-msgstr "out vec4 **POSITION**"
+msgstr "in vec3 **POSITION**"
 
 msgid "Camera position in world space"
-msgstr "Kameraposition im Weltspace"
+msgstr "Kameraposition im World-Space"
 
-#, fuzzy
 msgid "samplerCube **RADIANCE**"
-msgstr "**samplerCube**"
+msgstr "samplerCube **RADIANCE**"
 
 msgid ""
 "Radiance cubemap. Can only be read from during background pass. Check ``!"
 "AT_CUBEMAP_PASS`` before using."
 msgstr ""
+"Radiance Cubemap. Kann nur während des Hintergrund-Durchlaufs gelesen "
+"werden. Prüfen Sie ``!AT_CUBEMAP_PASS`` vor der Verwendung."
 
-#, fuzzy
 msgid "in bool **AT_HALF_RES_PASS**"
-msgstr "in bool **AT_LIGHT_PASS**"
+msgstr "in bool **AT_HALF_RES_PASS**"
 
 msgid "Currently rendering to half resolution pass."
-msgstr ""
+msgstr "Derzeit wird der Halbe-Auflösungs-Durchlauf gerendert."
 
-#, fuzzy
 msgid "in bool **AT_QUARTER_RES_PASS**"
-msgstr "in bool **AT_LIGHT_PASS**"
+msgstr "in bool **AT_QUARTER_RES_PASS**"
 
 msgid "Currently rendering to quarter resolution pass."
-msgstr ""
+msgstr "Derzeit wird der Viertel-Auflösungs-Durchlauf gerendert."
 
-#, fuzzy
 msgid "in bool **AT_CUBEMAP_PASS**"
-msgstr "in bool **AT_LIGHT_PASS**"
+msgstr "in bool **AT_CUBEMAP_PASS**"
 
 msgid "Currently rendering to radiance cubemap."
-msgstr ""
+msgstr "Derzeit wird in die Radiance Cubemap gerendert."
 
-#, fuzzy
 msgid "in bool **LIGHTX_ENABLED**"
-msgstr "in bool **AT_LIGHT_PASS**"
+msgstr "in bool **LIGHTX_ENABLED**"
 
 msgid ""
 "``LightX`` is visible and in the scene. If ``false``, other light properties "
 "may be garbage."
 msgstr ""
+"``LightX`` ist sichtbar und in der Szene. Wenn ``false``, können andere "
+"Light Propertys Müll sein."
 
-#, fuzzy
 msgid "in float **LIGHTX_ENERGY**"
-msgstr "inout float **LIGHT_HEIGHT**"
+msgstr "in float **LIGHTX_ENERGY**"
 
 msgid "Energy multiplier for ``LIGHTX``."
-msgstr ""
+msgstr "Energiemultiplikator für ``LIGHTX``."
 
-#, fuzzy
 msgid "in vec3 **LIGHTX_DIRECTION**"
-msgstr "in vec3 **LIGHT_COLOR**"
+msgstr "in vec3 **LIGHTX_DIRECTION**"
 
 msgid "Direction that ``LIGHTX`` is facing."
-msgstr ""
+msgstr "Richtung, in die ``LIGHTX`` gerichtet ist."
 
-#, fuzzy
 msgid "in vec3 **LIGHTX_COLOR**"
-msgstr "in vec3 **LIGHT_COLOR**"
+msgstr "in vec3 **LIGHTX_COLOR**"
 
-#, fuzzy
 msgid "Color of ``LIGHTX``."
-msgstr "Farbe des Lichts."
+msgstr "Farbe von ``LIGHTX``."
 
-#, fuzzy
 msgid "in float **LIGHTX_SIZE**"
-msgstr "inout float **POINT_SIZE**"
+msgstr "in float **LIGHTX_SIZE**"
 
 msgid ""
 "Angular diameter of ``LIGHTX`` in the sky. Expressed in degrees. For "
 "reference, the sun from earth is about 0.5 degrees."
 msgstr ""
+"Winkeldurchmesser von ``LIGHTX`` am Himmel. Ausgedrückt in Grad. Zum "
+"Vergleich: Die Sonne ist von der Erde aus gesehen etwa 0,5 Grad groß."
 
-#, fuzzy
 msgid "in float **PI**"
-msgstr "in float **TIME**"
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ratio of a circle's circumference to its "
 "diameter and amount of radians in half turn."
 msgstr ""
+"Eine ``PI``-Konstante (``3,141592``). Das Verhältnis des Umfangs eines "
+"Kreises zu seinem Durchmesser und die Anzahl der Bogenmaßeinheiten in einer "
+"halben Umdrehung."
 
-#, fuzzy
 msgid "in float **TAU**"
-msgstr "in float **DELTA**"
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
+"Eine ``TAU``-Konstante (``6.283185``). Ein Äquivalent von ``PI * 2`` und die "
+"Anzahl der Bogenmaßeinheiten in einer vollen Umdrehung."
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "in float **TIME**"
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
 "logarithm."
 msgstr ""
+"Eine ``E``-Konstante (``2,718281``). Eulersche Zahl und eine Basis des "
+"natürlichen Logarithmus."
 
-#, fuzzy
 msgid "Sky built-ins"
-msgstr "integrierte Elemente"
+msgstr "Himmels-Built-ins"
 
-#, fuzzy
 msgid "in vec3 **EYEDIR**"
-msgstr "in vec3 **VERTEX**"
+msgstr "in vec3 **EYEDIR**"
 
 msgid ""
 "Normalized direction of current pixel. Use this as your basic direction for "
 "procedural effects."
 msgstr ""
+"Normalisierte Richtung des aktuellen Pixels. Verwenden Sie dies als "
+"Grundrichtung für prozedurale Effekte."
 
 msgid "in vec2 **SCREEN_UV**"
 msgstr "in vec2 **SCREEN_UV**"
 
-#, fuzzy
 msgid ""
 "Screen UV coordinate for current pixel. Used to map a texture to the full "
 "screen."
-msgstr "Bildschirm-UV-Koordinate für das aktuelle Pixel."
+msgstr ""
+"Bildschirm-UV-Koordinate für das aktuelle Pixel. Wird verwendet, um eine "
+"Textur auf den gesamten Bildschirm abzubilden."
 
-#, fuzzy
 msgid "in vec2 **SKY_COORDS**"
-msgstr "in vec2 **POINT_COORD**"
+msgstr "in vec2 **SKY_COORDS**"
 
 msgid "Sphere UV. Used to map a panorama texture to the sky."
 msgstr ""
+"Kugel-UV. Wird verwendet, um eine Panoramatextur auf den Himmel abzubilden."
 
-#, fuzzy
 msgid "in vec4 **HALF_RES_COLOR**"
-msgstr "in vec4 **COLOR**"
+msgstr "in vec4 **HALF_RES_COLOR**"
 
 msgid ""
 "Color value of corresponding pixel from half resolution pass. Uses linear "
 "filter."
 msgstr ""
+"Farbwert des entsprechenden Pixels aus dem Halbe-Auflösungs-Durchlauf. "
+"Verwendet einen linearen Filter."
 
-#, fuzzy
 msgid "in vec4 **QUARTER_RES_COLOR**"
-msgstr "in vec4 **COLOR**"
+msgstr "in vec4 **QUARTER_RES_COLOR**"
 
 msgid ""
 "Color value of corresponding pixel from quarter resolution pass. Uses linear "
 "filter."
 msgstr ""
+"Farbwert des entsprechenden Pixels aus dem Viertel-Auflösungs-Durchlauf. "
+"Verwendet einen linearen Filter."
 
-#, fuzzy
 msgid "out vec3 **COLOR**"
-msgstr "inout vec4 **COLOR**"
+msgstr "out vec3 **COLOR**"
 
 msgid "Output color."
 msgstr "Farbe der Ausgabe."
@@ -353,11 +417,10 @@ msgid "out float **ALPHA**"
 msgstr "out float **ALPHA**"
 
 msgid "Output alpha value, can only be used in subpasses."
-msgstr ""
+msgstr "Alphawert der Ausgabe, kann nur in Unterdurchläufen verwendet werden."
 
-#, fuzzy
 msgid "out vec4 **FOG**"
-msgstr "inout vec4 **COLOR**"
+msgstr "out vec4 **FOG**"
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

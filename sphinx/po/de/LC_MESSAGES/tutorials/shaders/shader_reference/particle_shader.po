@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,42 +20,44 @@ msgstr ""
 msgid "Particle shaders"
 msgstr "Partikel-Shader"
 
-#, fuzzy
 msgid ""
 "Particle shaders are a special type of shader that runs before the object is "
 "drawn. They are used for calculating material properties such as color, "
 "position, and rotation. They are drawn with any regular material for "
 "CanvasItem or Spatial, depending on whether they are 2D or 3D."
 msgstr ""
-"Partikel-Shader sind spezielle Vertex-Shader, die ausgeführt werden, bevor "
-"das Objekt gezeichnet wird. Sie werden zur Berechnung von "
-"Materialeigenschaften wie Farbe, Position und Drehung verwendet. Sie werden "
+"Partikel-Shader sind eine spezielle Art von Shader, die ausgeführt werden, "
+"bevor das Objekt gezeichnet wird. Sie werden für die Berechnung von "
+"Materialeigenschaften wie Farbe, Position und Rotation verwendet. Sie werden "
 "mit jedem regulären Material für CanvasItem oder Spatial gezeichnet, je "
-"nachdem, ob es sich um 2D oder 3D handelt."
+"nachdem, ob sie 2D oder 3D sind."
 
-#, fuzzy
 msgid ""
 "Particle shaders are unique because they are not used to draw the object "
 "itself; they are used to calculate particle properties, which are then used "
 "by a CanvasItem or Spatial shader. They contain two processor functions: "
 "``start()`` and ``process()``."
 msgstr ""
-"Partikel-Shader sind einzigartig, da sie nicht zum Zeichnen des Objekts "
-"selbst verwendet werden. Sie werden zur Berechnung der Partikeleigenschaften "
-"verwendet, die dann von CanvasItem oder Spatial-Shader verwendet werden. Sie "
-"enthalten nur eine Vertex-Prozessorfunktion, die mehrere Eigenschaften "
-"ausgibt (siehe integrierte Funktionen unten)."
+"Partikel-Shader sind einzigartig, weil sie nicht zum Zeichnen des Objekts "
+"selbst verwendet werden, sondern zur Berechnung von Partikeleigenschaften, "
+"die dann von einem CanvasItem- oder Spatial-Shader verwendet werden. Sie "
+"enthalten zwei Prozessor-Funktionen: ``Start()`` und ``Process()``."
 
 msgid ""
 "Unlike other shader types, particle shaders keep the data that was output "
 "the previous frame. Therefore, particle shaders can be used for complex "
 "effects that take place over multiple frames."
 msgstr ""
+"Im Gegensatz zu anderen Shader-Typen behalten Partikel-Shader die Daten, die "
+"im vorherigen Frame ausgegeben wurden. Daher können Partikel-Shader für "
+"komplexe Effekte verwendet werden, die sich über mehrere Frames erstrecken."
 
 msgid ""
 "Particle shaders are only available with GPU-based particle nodes (:ref:"
 "`class_GPUParticles2D` and :ref:`class_GPUParticles3D`)."
 msgstr ""
+"Partikel-Shader sind nur bei GPU-basierten Nodes (:ref:"
+"`class_GPUParticles2D` und :ref:`class_GPUParticles3D`) verfügbar."
 
 msgid ""
 "CPU-based particle nodes (:ref:`class_CPUParticles2D` and :ref:"
@@ -63,12 +65,16 @@ msgid ""
 "custom CanvasItem or Spatial shaders), but their motion is *simulated* on "
 "the CPU."
 msgstr ""
+"CPU-basierte Partikel-Nodes (:ref:`class_CPUParticles2D` und :ref:"
+"`class_CPUParticles3D`) werden auf der GPU *gerendert* (d.h. sie können "
+"benutzerdefinierte CanvasItem- oder Spatial-Shader verwenden), aber ihre "
+"Bewegung wird auf der CPU *simuliert*."
 
 msgid "Render modes"
 msgstr "Render-Modi"
 
 msgid "Render mode"
-msgstr "Render Modus"
+msgstr "Rendermodus"
 
 msgid "Description"
 msgstr "Beschreibung"
@@ -77,29 +83,28 @@ msgid "**keep_data**"
 msgstr "**keep_data**"
 
 msgid "Do not clear previous data on restart."
-msgstr "Löschen Sie beim Neustart keine vorherigen Daten."
+msgstr "Beim Neustart keine vorherigen Daten löschen."
 
 msgid "**disable_force**"
 msgstr "**disable_force**"
 
 msgid "Disable attractor force."
-msgstr ""
+msgstr "Attraktor-Kraft deaktivieren."
 
 msgid "**disable_velocity**"
 msgstr "**disable_velocity**"
 
 msgid "Ignore **VELOCITY** value."
-msgstr "Ignoriert den Wert **VELOCITY**."
+msgstr "Ignorieren des **VELOCITY**-Wertes."
 
-#, fuzzy
 msgid "**collision_use_scale**"
-msgstr "collision_layer"
+msgstr "**collision_use_scale**"
 
 msgid "Scale the particle's size for collisions."
-msgstr ""
+msgstr "Skalierung der Partikelgröße für Kollisionen."
 
 msgid "Built-ins"
-msgstr "integrierte Elemente"
+msgstr "Built-ins"
 
 msgid ""
 "Values marked as \"in\" are read-only. Values marked as \"out\" are for "
@@ -110,16 +115,16 @@ msgstr ""
 "Mit \"in\" gekennzeichnete Werte sind schreibgeschützt. Mit \"out\" "
 "gekennzeichnete Werte dienen zum optionalen Schreiben und enthalten nicht "
 "unbedingt sinnvolle Werte. Als \"inout\" gekennzeichnete Werte stellen einen "
-"sinnvollen Standardwert dar und können optional beschrieben werden. Sampler "
-"können nicht geschrieben werden und sind nicht markiert."
+"sinnvollen Default-Wert dar und können optional beschrieben werden. Sampler "
+"sind nicht Gegenstand des Schreibens und werden nicht markiert."
 
 msgid "Global built-ins"
-msgstr "Global integrierte Elemente"
+msgstr "Globale Built-ins"
 
 msgid "Global built-ins are available everywhere, including custom functions."
 msgstr ""
-"Globale integrierte Elemente sind überall verfügbar, einschließlich "
-"benutzerdefinierter Funktionen."
+"Globale Built-ins sind überall verfügbar, einschließlich benutzerdefinierter "
+"Funktionen."
 
 msgid "Built-in"
 msgstr "Built-in"
@@ -130,41 +135,46 @@ msgstr "in float **TIME**"
 msgid "Global time, in seconds."
 msgstr "Globale Zeit in Sekunden."
 
-#, fuzzy
 msgid "in float **PI**"
-msgstr "in float **TIME**"
+msgstr "in float **PI**"
 
 msgid ""
 "A ``PI`` constant (``3.141592``). A ration of circle's circumference to its "
 "diameter and amount of radians in half turn."
 msgstr ""
+"Eine ``PI``-Konstante (``3,141592``). Das Verhältnis des Kreisumfangs zu "
+"seinem Durchmesser und die Anzahl der Bogenmaßeinheiten in einer halben "
+"Umdrehung."
 
-#, fuzzy
 msgid "in float **TAU**"
-msgstr "in float **DELTA**"
+msgstr "in float **TAU**"
 
 msgid ""
 "A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
 "radians in full turn."
 msgstr ""
+"Eine ``TAU``-Konstante (``6.283185``). Ein Äquivalent von ``PI * 2`` und die "
+"Anzahl der Bogenmaßeinheiten in einer vollen Umdrehung."
 
-#, fuzzy
 msgid "in float **E**"
-msgstr "in float **TIME**"
+msgstr "in float **E**"
 
 msgid ""
 "A ``E`` constant (``2.718281``). Euler's number and a base of the natural "
 "logarithm."
 msgstr ""
+"Eine ``E``-Konstante (``2,718281``). Eulersche Zahl und eine Basis des "
+"natürlichen Logarithmus."
 
-#, fuzzy
 msgid "Start and Process built-ins"
-msgstr "integrierte Vertex-Elemente"
+msgstr "Start- und Prozess-Built-ins"
 
 msgid ""
 "These properties can be accessed from both the ``start()`` and ``process()`` "
 "functions."
 msgstr ""
+"Auf diese Propertys kann sowohl von den ``start()`` als auch von den "
+"``process()``-Funktionen zugegriffen werden."
 
 msgid "Function"
 msgstr "Funktion"
@@ -173,13 +183,13 @@ msgid "in float **LIFETIME**"
 msgstr "in float **LIFETIME**"
 
 msgid "Particle lifetime."
-msgstr "Partikel Lebensdauer."
+msgstr "Partikel-Lebensdauer."
 
 msgid "in float **DELTA**"
 msgstr "in float **DELTA**"
 
 msgid "Delta process time."
-msgstr "Delta Ausführungszeit."
+msgstr "Delta-Ausführungszeit."
 
 msgid "in uint **NUMBER**"
 msgstr "in uint **NUMBER**"
@@ -187,12 +197,11 @@ msgstr "in uint **NUMBER**"
 msgid "Unique number since emission start."
 msgstr "Eindeutige Nummer seit Emissionsbeginn."
 
-#, fuzzy
 msgid "in uint **INDEX**"
-msgstr "in int **INDEX**"
+msgstr "in uint **INDEX**"
 
 msgid "Particle index (from total particles)."
-msgstr "Partikelindex (aus Gesamtpartikeln)."
+msgstr "Partikelindex (von Gesamtpartikeln)."
 
 msgid "in mat4 **EMISSION_TRANSFORM**"
 msgstr "in mat4 **EMISSION_TRANSFORM**"
@@ -204,14 +213,13 @@ msgid "in uint **RANDOM_SEED**"
 msgstr "in uint **RANDOM_SEED**"
 
 msgid "Random seed used as base for random."
-msgstr "Zufälliger Startwert, der als Basis für random verwendet wird."
+msgstr "Zufälliger Seed, der als Basis für random verwendet wird."
 
 msgid "inout bool **ACTIVE**"
 msgstr "inout bool **ACTIVE**"
 
-#, fuzzy
 msgid "``true`` when the particle is active, can be set ``false``."
-msgstr "``wahr``, wenn Partikel aktiv ist, kann auf ``falsch`` gesetzt werden."
+msgstr "``true``, wenn der Partikel aktiv ist, kann ``false`` gesetzt werden."
 
 msgid "inout vec4 **COLOR**"
 msgstr "inout vec4 **COLOR**"
@@ -243,200 +251,216 @@ msgstr ""
 "Benutzerdefinierte Partikeldaten. Zugänglich vom Shader des Mesh als "
 "**INSTANCE_CUSTOM**."
 
-#, fuzzy
 msgid "inout float **MASS**"
-msgstr "out float **MASS**"
+msgstr "inout float **MASS**"
 
 msgid ""
 "Particle mass, intended to be used with attractors. Equals ``1.0`` by "
 "default."
 msgstr ""
+"Partikelmasse, vorgesehen für die Verwendung mit Attraktoren. Entspricht "
+"standardmäßig ``1.0``."
 
-#, fuzzy
 msgid "in vec4 **USERDATAX**"
-msgstr "in vec3 **VERTEX**"
+msgstr "in vec4 **USERDATAX**"
 
 msgid ""
 "Vector that enables the integration of supplementary user-defined data into "
 "the particle process shader. ``USERDATAX`` are six built-ins identified by "
 "number, ``X`` can be numbers between 1 and 6."
 msgstr ""
+"Vektor, der die Integration von zusätzlichen benutzerdefinierten Daten in "
+"den Partikelprozess-Shader ermöglicht. ``USERDATAX`` sind sechs Built-Ins, "
+"die durch eine Zahl identifiziert werden, wobei ``X`` Zahlen zwischen 1 und "
+"6 sein können."
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_POSITION**"
-msgstr "in uint **RANDOM_SEED**"
+msgstr "in uint **FLAG_EMIT_POSITION**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a position to a new particle's transform."
 msgstr ""
+"Ein Flag, das im letzten Argument der Funktion ``emit_subparticle`` "
+"verwendet wird, um der Transformation eines neuen Partikels eine Position "
+"zuzuweisen."
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_ROT_SCALE**"
-msgstr "in uint **RANDOM_SEED**"
+msgstr "in uint **FLAG_EMIT_ROT_SCALE**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign the rotation and scale to a new particle's transform."
 msgstr ""
+"Ein Flag, das im letzten Argument der Funktion ``emit_subparticle`` "
+"verwendet wird, um die Rotation und den Maßstab der Transformation eines "
+"neuen Partikels zuzuweisen."
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_VELOCITY**"
-msgstr "inout vec3 **VELOCITY**"
+msgstr "in uint **FLAG_EMIT_VELOCITY**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a velocity to a new particle."
 msgstr ""
+"Ein Flag, das im letzten Argument der Funktion ``emit_subparticle`` "
+"verwendet wird, um einem neuen Partikel eine Geschwindigkeit zuzuweisen."
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_COLOR**"
-msgstr "in vec3 **LIGHT_COLOR**"
+msgstr "in uint **FLAG_EMIT_COLOR**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a color to a new particle."
 msgstr ""
+"Ein Flag, das im letzten Argument der Funktion ``emit_subparticle`` "
+"verwendet wird, um einem neuen Partikel eine Farbe zuzuweisen."
 
-#, fuzzy
 msgid "in uint **FLAG_EMIT_CUSTOM**"
-msgstr "in uint **RANDOM_SEED**"
+msgstr "in uint **FLAG_EMIT_CUSTOM**"
 
 msgid ""
 "A flag for using on the last argument of ``emit_subparticle`` function to "
 "assign a custom data vector to a new particle."
 msgstr ""
+"Ein Flag das im letzten Argument der Funktion ``emit_subparticle`` verwendet "
+"wird, um einem neuen Partikel einen eigenen Datenvektor zuzuweisen."
 
-#, fuzzy
 msgid "in vec3 **EMITTER_VELOCITY**"
-msgstr "inout vec3 **VELOCITY**"
+msgstr "in vec3 **EMITTER_VELOCITY**"
 
-#, fuzzy
 msgid "Velocity of the Particles node."
-msgstr "Verbinden Sie es mit dem *Main*-Node."
+msgstr "Geschwindigkeit des Particles-Nodes."
 
-#, fuzzy
 msgid "in float **INTERPOLATE_TO_END**"
-msgstr "in vec3 **ATTENUATION**"
+msgstr "in float **INTERPOLATE_TO_END**"
 
 msgid "Value of ``interp_to_end`` property of Particles node."
-msgstr ""
+msgstr "Wert der Property ``interp_to_end`` des Particles-Nodes."
 
-#, fuzzy
 msgid "in uint **AMOUNT_RATIO**"
-msgstr "in uint **RANDOM_SEED**"
+msgstr "in uint **AMOUNT_RATIO**"
 
 msgid "Value of ``amount_ratio`` property of Particles node."
-msgstr ""
+msgstr "Wert der Property ``amount_ratio`` des Particles-Nodes."
 
 msgid ""
 "In order to use the ``COLOR`` variable in a StandardMaterial3D, set "
 "``vertex_color_use_as_albedo`` to ``true``. In a ShaderMaterial, access it "
 "with the ``COLOR`` variable."
 msgstr ""
+"Um die ``COLOR`` Variable in einem StandardMaterial3D zu benutzen, setzen "
+"Sie ``vertex_color_use_as_albedo`` auf ``true``. In einem ShaderMaterial "
+"greifen Sie mit der Variable ``COLOR`` darauf zu."
 
-#, fuzzy
 msgid "Start built-ins"
-msgstr "integrierte Vertex-Elemente"
+msgstr "Start-Built-ins"
 
-#, fuzzy
 msgid "in bool **RESTART_POSITION**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_POSITION**"
 
 msgid ""
 "``true`` if particle is restarted, or emitted without a custom position (i."
 "e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_POSITION`` flag)."
 msgstr ""
+"``true``, wenn der Partikel neu gestartet wurde, oder ohne eigene Position "
+"emittiert wurde (d.h. dieser Partikel wurde mit ``emit_subparticle()`` ohne "
+"das ``FLAG_EMIT_POSITION`` Flag erzeugt)."
 
-#, fuzzy
 msgid "in bool **RESTART_ROT_SCALE**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_ROT_SCALE**"
 
 msgid ""
 "``true`` if particle is restarted, or emitted without a custom rotation or "
 "scale (i.e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_ROT_SCALE`` flag)."
 msgstr ""
+"``true``, wenn der Partikel neu gestartet oder ohne eigene Rotation oder "
+"Skalierung emittiert wurde (d.h. dieser Partikel wurde mit "
+"``emit_subparticle()`` ohne das ``FLAG_EMIT_ROT_SCALE`` Flag erzeugt)."
 
-#, fuzzy
 msgid "in bool **RESTART_VELOCITY**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_VELOCITY**"
 
 msgid ""
 "``true`` if particle is restarted, or emitted without a custom velocity (i."
 "e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_VELOCITY`` flag)."
 msgstr ""
+"``true``, wenn der Partikel neu gestartet oder ohne eigene Geschwindigkeit "
+"emittiert wurde (d.h. dieser Partikel wurde mit ``emit_subparticle()`` ohne "
+"das ``FLAG_EMIT_VELOCITY``-Flag erzeugt)."
 
-#, fuzzy
 msgid "in bool **RESTART_COLOR**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_COLOR**"
 
 msgid ""
 "``true`` if particle is restarted, or emitted without a custom color (i.e. "
 "this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_COLOR`` flag)."
 msgstr ""
+"``true``, wenn der Partikel neu gestartet oder ohne eigene Farbe emittiert "
+"wurde (d.h. dieser Partikel wurde mit ``emit_subparticle()`` ohne das "
+"``FLAG_EMIT_COLOR``-Flag erzeugt)."
 
-#, fuzzy
 msgid "in bool **RESTART_CUSTOM**"
-msgstr "in bool **RESTART**"
+msgstr "in bool **RESTART_CUSTOM**"
 
 msgid ""
 "``true`` if particle is restarted, or emitted without a custom property (i."
 "e. this particle was created by ``emit_subparticle()`` without the "
 "``FLAG_EMIT_CUSTOM`` flag)."
 msgstr ""
+"``true``, wenn der Partikel neu gestartet wurde oder ohne eine eigene "
+"Property emittiert wurde (d.h. dieser Partikel wurde mit "
+"``emit_subparticle()`` ohne das ``FLAG_EMIT_CUSTOM``-Flag erzeugt)."
 
-#, fuzzy
 msgid "Process built-ins"
-msgstr "integrierte Vertex-Elemente"
+msgstr "Prozess-Built-ins"
 
 msgid "in bool **RESTART**"
 msgstr "in bool **RESTART**"
 
-#, fuzzy
 msgid "``true`` if the current process frame is first for the particle."
-msgstr "``true`` wenn das aktuelle Gesicht das vordere Gesicht ist."
+msgstr ""
+"``true``, wenn der aktuelle Prozessframe der erste für das Partikel ist."
 
-#, fuzzy
 msgid "in bool **COLLIDED**"
-msgstr "inout bool **ACTIVE**"
+msgstr "in bool **COLLIDED**"
 
-#, fuzzy
 msgid "``true`` when the particle has collided with a particle collider."
 msgstr ""
-"``true`` wenn das Partikel neu gestartet werden muss (Lebensdauerzyklus)."
+"``true``, wenn das Partikel mit einem Partikel-Collider zusammengestoßen ist."
 
-#, fuzzy
 msgid "in vec3 **COLLISION_NORMAL**"
-msgstr "in vec3 **NORMAL**"
+msgstr "in vec3 **COLLISION_NORMAL**"
 
 msgid ""
 "A normal of the last collision. If there is no collision detected it is "
 "equal to ``vec3(0.0)``."
 msgstr ""
+"Eine Normale der letzten Kollision. Wenn keine Kollision festgestellt wird, "
+"ist sie gleich ``vec3(0.0)``."
 
-#, fuzzy
 msgid "in float **COLLISION_DEPTH**"
-msgstr "inout float **NORMALMAP_DEPTH**"
+msgstr "in float **COLLISION_DEPTH**"
 
 msgid ""
 "A length of normal of the last collision. If there is no collision detected "
 "it is equal to ``0.0``."
 msgstr ""
+"Eine Länge der Normalen der letzten Kollision. Wenn keine Kollision "
+"festgestellt wird, ist sie gleich ``0.0``."
 
-#, fuzzy
 msgid "in vec3 **ATTRACTOR_FORCE**"
-msgstr "in vec3 **ATTENUATION**"
+msgstr "in vec3 **ATTRACTOR_FORCE**"
 
 msgid "A combined force of the attractors at the moment on that particle."
-msgstr ""
+msgstr "Eine kombinierte Kraft der Attraktoren im Moment auf dieses Teilchen."
 
-#, fuzzy
 msgid "Process functions"
-msgstr "Prozessor-Funktionen"
+msgstr "Prozess-Funktionen"
 
 msgid ""
 "``emit_subparticle`` is currently the only custom function supported by "
@@ -446,14 +470,24 @@ msgid ""
 "code will emit a particle with a specified position, velocity, and color, "
 "but unspecified rotation, scale, and custom value:"
 msgstr ""
+"``emit_subparticle`` ist derzeit die einzige benutzerdefinierte Funktion, "
+"die von Partikel-Shadern unterstützt wird. Sie erlaubt es dem Benutzer, ein "
+"neues Partikel mit bestimmten Parametern von einem Sub-Emitter hinzuzufügen. "
+"Das neu erstellte Partikel wird nur die Propertys verwenden, die mit dem "
+"Parameter ``flags`` übereinstimmen. Zum Beispiel wird der folgende Code ein "
+"Partikel mit einer spezifizierten Position, Geschwindigkeit und Farbe "
+"emittieren, aber ohne spezifizierte Rotation, Skalierung und "
+"benutzerdefinierten Wert:"
 
 msgid ""
 "bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 "
 "custom, uint flags)"
 msgstr ""
+"bool **emit_subparticle** (mat4 xform, vec3 velocity, vec4 color, vec4 "
+"custom, uint flags)"
 
 msgid "Emits a particle from a sub-emitter."
-msgstr ""
+msgstr "Sendet ein Partikel von einem Sub-Emitter aus."
 
 msgid "Translation status"
 msgstr "Übersetzungsstatus"

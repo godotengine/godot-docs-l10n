@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,9 @@ msgid ""
 "GDExtension targeting Godot 4.2 should work just fine in Godot 4.3, but one "
 "targeting Godot 4.3 won't work in Godot 4.2."
 msgstr ""
+"我们的长期目标是，面向早先版本的 GDExtension 在后续的小版本中依然能够运作，但"
+"反之则不然。例如，一个面向 Godot 4.2 的 GDExtension 应当在 Godot 4.3 中正常运"
+"作，但面向 Godot 4.3 的则不能在 Godot 4.2 中运作。"
 
 msgid ""
 "However, GDExtension is currently *experimental*, which means that we may "
@@ -68,6 +71,9 @@ msgid ""
 "For example, GDExtensions created for Godot 4.0 aren't compatible with Godot "
 "4.1 (see :ref:`updating_your_gdextension_for_godot_4_1`)."
 msgstr ""
+"不过，GDExtension 目前仍是 *实验性的*，这就意味着我们为了修复严重的 bug 或引"
+"入重大的特性，可能会牺牲兼容性。例如，为 Godot 4.0 创建的 GDExtension 与 "
+"Godot 4.1 并不兼容（参见 :ref:`updating_your_gdextension_for_godot_4_1` ）。"
 
 msgid "Advantages of GDExtension"
 msgstr "GDExtension 的优点"
@@ -128,11 +134,12 @@ msgstr ""
 "如果 GDExtension 无法满足要求，我们推荐使用 :ref:`C++ 模块 "
 "<doc_custom_modules_in_cpp>`\\ ："
 
-#, fuzzy
 msgid ""
 "C++ modules provide deeper integration into the engine. GDExtension's access "
 "is not as deep as static modules."
-msgstr "C++ 模块与引擎的集成更加紧密。GDExtension 对引擎的访问没有静态模块深入"
+msgstr ""
+"C++ 模块提供了与引擎更深层次的集成。GDExtension 的访问能力不如静态模块那般深"
+"入。"
 
 msgid ""
 "You can use C++ modules to provide additional features in a project without "
@@ -176,10 +183,15 @@ msgid "`D <https://github.com/godot-dlang/godot-dlang>`__"
 msgstr "`Rust <https://github.com/godot-rust/gdextension>`__"
 
 #, fuzzy
+msgid "`Go <https://github.com/grow-graphics/gd>`__"
+msgstr "`GitHub <https://github.com/godotengine/>`_"
+
+#, fuzzy
 msgid "`Haxe <https://hxgodot.github.io/>`__"
 msgstr "`Git <https://git-scm.com/>`_"
 
-msgid "`Rust <https://github.com/godot-rust/gdextension>`__"
+#, fuzzy
+msgid "`Rust <https://github.com/godot-rust/gdext>`__"
 msgstr "`Rust <https://github.com/godot-rust/gdextension>`__"
 
 #, fuzzy

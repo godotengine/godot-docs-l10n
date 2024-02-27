@@ -43,7 +43,7 @@ Node
 
 \ **节点的网络编程：**\ 在连接到服务器（或制作服务器，见 :ref:`ENetMultiplayerPeer<class_ENetMultiplayerPeer>`\ ）之后，可以使用内置的 RPC（远程过程调用）系统在网络上进行通信。在调用 :ref:`rpc<class_Node_method_rpc>` 时传入方法名，将在本地和所有已连接的对等体中调用对应的方法（对等体=客户端和接受连接的服务器）。为了识别哪个节点收到 RPC 调用，Godot 将使用它的 :ref:`NodePath<class_NodePath>`\ （请确保所有对等体上的节点名称相同）。另外，请参阅高级网络教程和相应的演示。
 
-\ **注意：**\ ``script`` 属性是 :ref:`Object<class_Object>` 类的一部分，不属于 **Node**\ 。这个属性暴露的方式和其他属性不同，但提供了 setter 和 getter（\ ``set_script()`` 和 ``get_script()``\ ）。
+\ **注意：**\ ``script`` 属性是 :ref:`Object<class_Object>` 类的一部分，不属于 **Node**\ 。这个属性暴露的方式和其他属性不同，但提供了 setter 和 getter（见 :ref:`Object.set_script<class_Object_method_set_script>` 和 :ref:`Object.get_script<class_Object_method_get_script>`\ ）。
 
 .. rst-class:: classref-introduction-group
 
@@ -297,9 +297,9 @@ Node
 
 **child_entered_tree** **(** :ref:`Node<class_Node>` node **)**
 
-在子节点进入场景树时触发，可以是因为该子节点自行进入，也可以是因为本节点带着该子节点一起进入。
+当子节点 ``node`` 进入 :ref:`SceneTree<class_SceneTree>` 时触发，通常是因为该节点进入了树（参见 :ref:`tree_entered<class_Node_signal_tree_entered>`\ ），或者 :ref:`add_child<class_Node_method_add_child>` 已被调用。
 
-这个信号会在该子节点自身的 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 和 :ref:`tree_entered<class_Node_signal_tree_entered>` *之后*\ 触发。
+该信号在子节点自己的 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 和 :ref:`tree_entered<class_Node_signal_tree_entered>` *之后*\ 触发。
 
 .. rst-class:: classref-item-separator
 
@@ -311,9 +311,9 @@ Node
 
 **child_exiting_tree** **(** :ref:`Node<class_Node>` node **)**
 
-当一个子节点即将退出场景树时发出，要么是因为它正在被移除或直接释放，要么是因为该节点正在退出树。
+当子节点 ``node`` 即将退出 :ref:`SceneTree<class_SceneTree>` 时发出，通常是因为该节点正在退出树（请参阅 :ref:`tree_exiting<class_Node_signal_tree_exiting>`\ ），或者因为子节点 ``node`` 正在被移除或释放。
 
-当收到这个信号时，子 ``node`` 仍然在树中并且有效。该信号在子节点自己的 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 和 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` *之后*\ 发出。
+当收到该信号时，子节点 ``node`` 仍然可以在树内访问。该信号在子节点自己的 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 和 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` *之后*\ 触发。
 
 .. rst-class:: classref-item-separator
 
@@ -337,7 +337,7 @@ Node
 
 **ready** **(** **)**
 
-当该节点就绪时发出。在 :ref:`_ready<class_Node_private_method__ready>` 回调之后发出，遵循相同的规则。
+在 :ref:`_ready<class_Node_private_method__ready>` 被调用后，当节点被视为就绪时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -349,7 +349,7 @@ Node
 
 **renamed** **(** **)**
 
-当该节点被重命名时触发。
+节点位于场景树中，在节点的 :ref:`name<class_Node_property_name>` 更改时发出。
 
 .. rst-class:: classref-item-separator
 
@@ -389,7 +389,9 @@ Node
 
 **tree_exited** **(** **)**
 
-当该节点退出树之后触发，并且不再处于活动状态。
+节点退出树并且不再活动后发出。
+
+该信号会在相关的 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` 通知\ *之后*\ 发出。
 
 .. rst-class:: classref-item-separator
 
@@ -401,9 +403,9 @@ Node
 
 **tree_exiting** **(** **)**
 
-当该节点仍处于活动状态但即将退出树时发出。这是反初始化的正确位置（如果愿意，也可以称之为“析构函数”）。
+当节点即将退出树时发出。节点仍然有效。因此，这是反初始化（如果愿意，也可以称之为“析构函数”）的正确位置。
 
-这个信号会在相关的 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` 通知\ *之前*\ 触发。
+该信号会在节点的 :ref:`_exit_tree<class_Node_private_method__exit_tree>` *之后*\ 和相关的 :ref:`NOTIFICATION_EXIT_TREE<class_Node_constant_NOTIFICATION_EXIT_TREE>` *之前*\ 发出。
 
 .. rst-class:: classref-section-separator
 
@@ -426,7 +428,7 @@ enum **ProcessMode**:
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_INHERIT** = ``0``
 
-从该节点的父节点继承处理模式。如果是根节点，则等价于 :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`\ 。默认值。
+从该节点的父节点继承 :ref:`process_mode<class_Node_property_process_mode>`\ 。对于根节点来说，这相当于 :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>`\ 。这是任何新创建的节点的默认设置。
 
 .. _class_Node_constant_PROCESS_MODE_PAUSABLE:
 
@@ -434,7 +436,7 @@ enum **ProcessMode**:
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_PAUSABLE** = ``1``
 
-:ref:`SceneTree<class_SceneTree>` 暂停时停止处理（取消暂停时处理）。与 :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>` 相反。
+当 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``true`` 时停止处理。与 :ref:`PROCESS_MODE_WHEN_PAUSED<class_Node_constant_PROCESS_MODE_WHEN_PAUSED>` 相反。
 
 .. _class_Node_constant_PROCESS_MODE_WHEN_PAUSED:
 
@@ -442,7 +444,7 @@ enum **ProcessMode**:
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_WHEN_PAUSED** = ``2``
 
-仅在 :ref:`SceneTree<class_SceneTree>` 暂停时处理（取消暂停时不处理）。与 :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>` 相反。
+**仅**\ 当 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 为 ``true`` 时处理。与 :ref:`PROCESS_MODE_PAUSABLE<class_Node_constant_PROCESS_MODE_PAUSABLE>` 相反。
 
 .. _class_Node_constant_PROCESS_MODE_ALWAYS:
 
@@ -450,7 +452,7 @@ enum **ProcessMode**:
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_ALWAYS** = ``3``
 
-始终处理。始终继续处理，忽略 :ref:`SceneTree<class_SceneTree>` 的 paused 属性。与 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 相反。
+始终处理。继续处理，忽略 :ref:`SceneTree.paused<class_SceneTree_property_paused>`\ 。与 :ref:`PROCESS_MODE_DISABLED<class_Node_constant_PROCESS_MODE_DISABLED>` 相反。
 
 .. _class_Node_constant_PROCESS_MODE_DISABLED:
 
@@ -458,7 +460,7 @@ enum **ProcessMode**:
 
 :ref:`ProcessMode<enum_Node_ProcessMode>` **PROCESS_MODE_DISABLED** = ``4``
 
-从不处理。完全禁用处理，忽略 :ref:`SceneTree<class_SceneTree>` 的 paused 属性。与 :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>` 相反。
+从不处理。完全禁用处理，忽略 :ref:`SceneTree.paused<class_SceneTree_property_paused>`\ 。与 :ref:`PROCESS_MODE_ALWAYS<class_Node_constant_PROCESS_MODE_ALWAYS>` 相反。
 
 .. rst-class:: classref-item-separator
 
@@ -544,7 +546,7 @@ enum **DuplicateFlags**:
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_SIGNALS** = ``1``
 
-复制该节点的信号。
+复制该节点的信号连接。
 
 .. _class_Node_constant_DUPLICATE_GROUPS:
 
@@ -552,7 +554,7 @@ enum **DuplicateFlags**:
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_GROUPS** = ``2``
 
-复制节点的组。
+复制节点的分组。
 
 .. _class_Node_constant_DUPLICATE_SCRIPTS:
 
@@ -560,7 +562,7 @@ enum **DuplicateFlags**:
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_SCRIPTS** = ``4``
 
-复制该节点的脚本。
+复制该节点的脚本（与 :ref:`DUPLICATE_USE_INSTANTIATION<class_Node_constant_DUPLICATE_USE_INSTANTIATION>` 组合时包括祖级脚本）。
 
 .. _class_Node_constant_DUPLICATE_USE_INSTANTIATION:
 
@@ -568,9 +570,7 @@ enum **DuplicateFlags**:
 
 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>` **DUPLICATE_USE_INSTANTIATION** = ``8``
 
-使用实例化进行复制。
-
-实例与原件保持链接，因此当原件发生变化时，实例也会发生变化。
+使用 :ref:`PackedScene.instantiate<class_PackedScene_method_instantiate>` 进行复制。如果该节点来自磁盘上保存的场景，则会重用 :ref:`PackedScene.instantiate<class_PackedScene_method_instantiate>` 作为该节点及其子节点副本的基础。
 
 .. rst-class:: classref-item-separator
 
@@ -596,7 +596,7 @@ enum **InternalMode**:
 
 :ref:`InternalMode<enum_Node_InternalMode>` **INTERNAL_MODE_FRONT** = ``1``
 
-该节点将被放置在父节点的节点列表开头，在所有非内部兄弟节点之前。
+该节点将被放置在父节点的子节点列表开头，位于所有非内部兄弟节点之前。
 
 .. _class_Node_constant_INTERNAL_MODE_BACK:
 
@@ -604,7 +604,7 @@ enum **InternalMode**:
 
 :ref:`InternalMode<enum_Node_InternalMode>` **INTERNAL_MODE_BACK** = ``2``
 
-该节点将被放置在父节点的节点列表末尾，在所有非内部兄弟节点之后。
+该节点将被放置在父节点的子节点列表末尾，位于所有非内部兄弟节点之后。
 
 .. rst-class:: classref-section-separator
 
@@ -621,9 +621,9 @@ enum **InternalMode**:
 
 **NOTIFICATION_ENTER_TREE** = ``10``
 
-当该节点进入 :ref:`SceneTree<class_SceneTree>` 时收到的通知。
+当节点进入 :ref:`SceneTree<class_SceneTree>` 时收到的通知。请参阅 :ref:`_enter_tree<class_Node_private_method__enter_tree>`\ 。
 
-这个通知会在相关的 :ref:`tree_entered<class_Node_signal_tree_entered>` *之前*\ 发出。
+该通知会在相关 :ref:`tree_entered<class_Node_signal_tree_entered>` 信号\ *之前*\ 收到。
 
 .. _class_Node_constant_NOTIFICATION_EXIT_TREE:
 
@@ -631,9 +631,9 @@ enum **InternalMode**:
 
 **NOTIFICATION_EXIT_TREE** = ``11``
 
-当该节点即将退出 :ref:`SceneTree<class_SceneTree>` 时收到的通知。
+当节点即将退出 :ref:`SceneTree<class_SceneTree>` 时收到的通知。请参阅 :ref:`_exit_tree<class_Node_private_method__exit_tree>`\ 。
 
-这个通知会在相关的 :ref:`tree_exiting<class_Node_signal_tree_exiting>` *之后*\ 发出。
+该通知会在相关的 :ref:`tree_exiting<class_Node_signal_tree_exiting>` 信号\ *之后*\ 收到。
 
 .. _class_Node_constant_NOTIFICATION_MOVED_IN_PARENT:
 
@@ -657,7 +657,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_PAUSED** = ``14``
 
-当该节点被暂停时接收到的通知。
+当节点暂停时收到的通知。请参阅 :ref:`process_mode<class_Node_property_process_mode>`\ 。
 
 .. _class_Node_constant_NOTIFICATION_UNPAUSED:
 
@@ -665,7 +665,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_UNPAUSED** = ``15``
 
-当该节点被取消暂停时收到的通知。
+当节点取消暂停时收到的通知。请参阅 :ref:`process_mode<class_Node_property_process_mode>`\ 。
 
 .. _class_Node_constant_NOTIFICATION_PHYSICS_PROCESS:
 
@@ -673,7 +673,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_PHYSICS_PROCESS** = ``16``
 
-当设置了 physics process 标志时，每一帧都会收到的通知（见 :ref:`set_physics_process<class_Node_method_set_physics_process>`\ ）。
+当 :ref:`is_physics_processing<class_Node_method_is_physics_processing>` 返回 ``true`` 时，每个物理帧都会从场景树收到的通知。请参阅 :ref:`_physics_process<class_Node_private_method__physics_process>`\ 。
 
 .. _class_Node_constant_NOTIFICATION_PROCESS:
 
@@ -681,7 +681,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_PROCESS** = ``17``
 
-当设置了 process 标志时，每一帧都会收到的通知（见 :ref:`set_process<class_Node_method_set_process>`\ ）。
+当 :ref:`is_processing<class_Node_method_is_processing>` 返回 ``true`` 时，每个渲染帧从场景树收到的通知。请参阅 :ref:`_process<class_Node_private_method__process>`\ 。
 
 .. _class_Node_constant_NOTIFICATION_PARENTED:
 
@@ -689,9 +689,9 @@ enum **InternalMode**:
 
 **NOTIFICATION_PARENTED** = ``18``
 
-当一个节点被设置为另一个节点的子节点时收到该通知。
+当节点被设置为另一个节点的子节点时收到的通知（请参阅 :ref:`add_child<class_Node_method_add_child>` 和 :ref:`add_sibling<class_Node_method_add_sibling>`\ ）。
 
-\ **注意：**\ 这并不意味着一个节点进入了 :ref:`SceneTree<class_SceneTree>`\ 。
+\ **注意：**\ 这并\ *不*\ 意味着该节点进入了 :ref:`SceneTree<class_SceneTree>`\ 。
 
 .. _class_Node_constant_NOTIFICATION_UNPARENTED:
 
@@ -699,7 +699,9 @@ enum **InternalMode**:
 
 **NOTIFICATION_UNPARENTED** = ``19``
 
-当该节点失去父节点时收到的通知（父节点将其从子节点列表中删除）。
+当父节点在该节点上调用 :ref:`remove_child<class_Node_method_remove_child>` 时收到的通知。
+
+\ **注意：**\ 这并\ *不*\ 意味着该节点退出了 :ref:`SceneTree<class_SceneTree>`\ 。
 
 .. _class_Node_constant_NOTIFICATION_SCENE_INSTANTIATED:
 
@@ -707,7 +709,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_SCENE_INSTANTIATED** = ``20``
 
-当场景被实例化时，该场景的所有者收到的通知。
+当 :ref:`PackedScene.instantiate<class_PackedScene_method_instantiate>` 完成时，\ *仅*\ 被新实例化的场景根节点收到的通知。
 
 .. _class_Node_constant_NOTIFICATION_DRAG_BEGIN:
 
@@ -737,7 +739,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_PATH_RENAMED** = ``23``
 
-当该节点或其祖级的名称被更改时收到的通知。当节点从场景树中移除，稍后被添加到另一个父节点时，\ *不会*\ 收到此通知。
+当该节点的 :ref:`name<class_Node_property_name>` 或其祖先节点之一的 :ref:`name<class_Node_property_name>` 更改时收到的通知。当节点从 :ref:`SceneTree<class_SceneTree>` 中移除时，\ *不会*\ 收到该通知。
 
 .. _class_Node_constant_NOTIFICATION_CHILD_ORDER_CHANGED:
 
@@ -753,7 +755,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_INTERNAL_PROCESS** = ``25``
 
-当设置了内部处理标志时，每一帧都会收到的通知（见 :ref:`set_process_internal<class_Node_method_set_process_internal>`\ ）。
+当 :ref:`is_processing_internal<class_Node_method_is_processing_internal>` 返回 ``true`` 时，每个渲染帧都会从树中收到的通知。
 
 .. _class_Node_constant_NOTIFICATION_INTERNAL_PHYSICS_PROCESS:
 
@@ -761,7 +763,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_INTERNAL_PHYSICS_PROCESS** = ``26``
 
-当设置了内部物理处理标志时，每一帧都会收到的通知（见 :ref:`set_physics_process_internal<class_Node_method_set_physics_process_internal>`\ ）。
+当 :ref:`is_physics_processing_internal<class_Node_method_is_physics_processing_internal>` 返回 ``true`` 时，每个物理帧都会从树中收到的通知。
 
 .. _class_Node_constant_NOTIFICATION_POST_ENTER_TREE:
 
@@ -769,7 +771,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_POST_ENTER_TREE** = ``27``
 
-当该节点就绪，在收到 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 之前收到的通知。与后者不同，该节点每次进入树时都会发送，而不是只发送一次。
+当该节点进入树时，刚好在可能收到 :ref:`NOTIFICATION_READY<class_Node_constant_NOTIFICATION_READY>` 之前，收到的通知。与后者不同的是，它在节点每次进入树时都会发送，而不是只发送一次。
 
 .. _class_Node_constant_NOTIFICATION_DISABLED:
 
@@ -829,7 +831,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_WM_WINDOW_FOCUS_IN** = ``1004``
 
-当该节点的父 :ref:`Window<class_Window>` 获得焦点时收到的通知。可能是在同一引擎实例的两个窗口之间的焦点变化，也可能是从操作系统桌面或第三方应用程序切换到游戏的某个窗口（在这种情况下，还会发出 :ref:`NOTIFICATION_APPLICATION_FOCUS_IN<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_IN>`\ ）。
+当节点的 :ref:`Window<class_Window>` 祖先获得焦点时从操作系统收到的通知。这可能是同一引擎实例的两个窗口之间的焦点变化，也可能是从操作系统桌面或第三方应用程序切换到游戏的某个窗口的焦点变化（在这种情况下，还会收到 :ref:`NOTIFICATION_APPLICATION_FOCUS_IN<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_IN>`\ ）。
 
 \ :ref:`Window<class_Window>` 节点会在获得焦点时收到该通知。
 
@@ -839,7 +841,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_WM_WINDOW_FOCUS_OUT** = ``1005``
 
-当该节点的父 :ref:`Window<class_Window>` 失去焦点时收到的通知。可能是在同一引擎实例的两个窗口之间的焦点变化，也可能是从游戏的某个窗口切换到操作系统桌面或第三方应用程序（在这种情况下，还会发出 :ref:`NOTIFICATION_APPLICATION_FOCUS_OUT<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_OUT>`\ ）。
+当节点的 :ref:`Window<class_Window>` 祖先失去焦点时从操作系统收到的通知。这可能是同一引擎实例的两个窗口之间的焦点变化，也可能是从游戏的某一窗口切换到操作系统桌面或第三方应用程序的焦点变化（在这种情况下，还会收到 :ref:`NOTIFICATION_APPLICATION_FOCUS_OUT<class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_OUT>`\ ）。
 
 \ :ref:`Window<class_Window>` 节点会在失去焦点时收到该通知。
 
@@ -859,9 +861,9 @@ enum **InternalMode**:
 
 **NOTIFICATION_WM_GO_BACK_REQUEST** = ``1007``
 
-当发出返回请求时，从操作系统收到的通知（例如在 Android 系统上按下“返回”按钮）。
+当一个返回请求发出时，从操作系统收到的通知（例如在 Android 系统上按下“返回”按钮）。
 
-仅限 Android 平台。
+仅在 iOS 上实现。
 
 .. _class_Node_constant_NOTIFICATION_WM_SIZE_CHANGED:
 
@@ -869,7 +871,9 @@ enum **InternalMode**:
 
 **NOTIFICATION_WM_SIZE_CHANGED** = ``1008``
 
-当窗口大小发生改变时，从操作系统收到的通知。
+当窗口大小被调整时收到的通知。
+
+\ **注意：**\ 只有调整大小的 :ref:`Window<class_Window>` 节点才会收到该通知，并且不会传播到子节点。
 
 .. _class_Node_constant_NOTIFICATION_WM_DPI_CHANGE:
 
@@ -877,7 +881,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_WM_DPI_CHANGE** = ``1009``
 
-当屏幕的 DPI 发生更改时，从操作系统受到的通知。仅在 macOS 上实现。
+当屏幕的每英寸点数（DPI）比例发生更改时，从操作系统收到的通知。仅在 macOS 上实现。
 
 .. _class_Node_constant_NOTIFICATION_VP_MOUSE_ENTER:
 
@@ -903,7 +907,7 @@ enum **InternalMode**:
 
 当应用程序超过其分配的内存时，从操作系统收到的通知。
 
-仅限 iOS 平台。
+仅在 iOS 上被实现。
 
 .. _class_Node_constant_NOTIFICATION_TRANSLATION_CHANGED:
 
@@ -921,7 +925,7 @@ enum **InternalMode**:
 
 当发出“关于”信息请求时，从操作系统收到的通知。
 
-仅限 macOS 平台。
+仅在 macOS 上被实现。
 
 .. _class_Node_constant_NOTIFICATION_CRASH:
 
@@ -931,7 +935,7 @@ enum **InternalMode**:
 
 当引擎即将崩溃时，从Godot的崩溃处理程序收到的通知。
 
-如果崩溃处理程序被启用，这只会在桌面平台上实现。
+如果崩溃处理程序被启用，则在桌面平台上被实现。
 
 .. _class_Node_constant_NOTIFICATION_OS_IME_UPDATE:
 
@@ -941,7 +945,7 @@ enum **InternalMode**:
 
 当输入法引擎发生更新时，从操作系统收到的通知（例如，IME 光标位置或组成字符串的变化）。
 
-仅限 macOS 平台。
+仅在 macOS 上被实现。
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_RESUMED:
 
@@ -951,7 +955,7 @@ enum **InternalMode**:
 
 当应用程序恢复时，从操作系统收到的通知。
 
-仅限 Android 平台。
+仅在 Android 上被实现。
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_PAUSED:
 
@@ -961,7 +965,7 @@ enum **InternalMode**:
 
 当应用程序暂停时，从操作系统收到的通知。
 
-仅限 Android 平台。
+仅在 Android 上被实现。
 
 .. _class_Node_constant_NOTIFICATION_APPLICATION_FOCUS_IN:
 
@@ -989,7 +993,7 @@ enum **InternalMode**:
 
 **NOTIFICATION_TEXT_SERVER_CHANGED** = ``2018``
 
-文本服务器被更改时，收到的通知。
+:ref:`TextServer<class_TextServer>` 被更改时收到的通知。
 
 .. rst-class:: classref-section-separator
 
@@ -1011,7 +1015,7 @@ enum **InternalMode**:
 - void **set_editor_description** **(** :ref:`String<class_String>` value **)**
 - :ref:`String<class_String>` **get_editor_description** **(** **)**
 
-为该节点添加自定义描述。该节点在编辑器的场景树中处于悬停状态时，该描述将显示在工具提示中。
+节点的可选描述。当将悬停在编辑器场景面板中的节点上时，它将显示为工具提示。
 
 .. rst-class:: classref-item-separator
 
@@ -1046,9 +1050,9 @@ enum **InternalMode**:
 - void **set_name** **(** :ref:`StringName<class_StringName>` value **)**
 - :ref:`StringName<class_StringName>` **get_name** **(** **)**
 
-该节点的名称。这个名称在兄弟节点（来自同一父节点的其他子节点）中是唯一的。当设置为现有名称时，节点将自动重命名。
+该节点的名称。该名称在同级节点（来自同一父节点的其他子节点）中必须是唯一的。当设置为已有同级节点的名称时，该节点将会自动重命名。
 
-\ **注意：**\ 自动生成的名称可能包含 ``@`` 字符，在使用 :ref:`add_child<class_Node_method_add_child>` 时保留该字符用于唯一名称。手动设置名称时，将删除任何 ``@``\ 。
+\ **注意：**\ 更改名称时，以下字符将被移除：（\ ``.`` ``:`` ``@`` ``/`` ``"`` ``%``\ ）。特别是，\ ``@`` 字符是为自动生成的名称保留的。另请参阅 :ref:`String.validate_node_name<class_String_method_validate_node_name>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1065,9 +1069,9 @@ enum **InternalMode**:
 - void **set_owner** **(** :ref:`Node<class_Node>` value **)**
 - :ref:`Node<class_Node>` **get_owner** **(** **)**
 
-该节点的所有者。节点的所有者可以是任何祖先节点（即父节点、祖父节点等沿场景树向上的节点）。也就是说，应该在设置所有者之前调用 :ref:`add_child<class_Node_method_add_child>`\ ，这样才能存在父子关系。（通过 :ref:`PackedScene<class_PackedScene>`\ ）保存节点时，它拥有的所有节点也会随之保存。这样就可以创建复杂的场景树，能够进行实例化和子实例化。
+该节点的所有者。所有者必须是该节点的祖先节点。当将所有者节点打包到 :ref:`PackedScene<class_PackedScene>` 中时，它拥有的所有节点也会随之保存。
 
-\ **注意：**\ 如果想要将子节点持久化进 :ref:`PackedScene<class_PackedScene>`\ ，除了调用 :ref:`add_child<class_Node_method_add_child>` 之外还必须设置 :ref:`owner<class_Node_property_owner>`\ 。通常在\ :doc:`工具脚本 <../tutorials/plugins/running_code_in_the_editor>`\ 和\ :doc:`编辑器插件 <../tutorials/plugins/editor/index>`\ 中会用到。如果将新节点添加到了场景树中但没有将场景树中的祖先设置为所有者，那么这个节点在 2D/3D 视图中可见，但在场景树中不可见（也不会在打包或保存时进行持久化）。
+\ **注意：**\ 在编辑器中，不属于场景根的节点通常不会显示在场景面板中，并且\ **不**\ 会被保存。为了防止这种情况，请记住在调用 :ref:`add_child<class_Node_method_add_child>` 后设置所有者。另见（参见 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ）
 
 .. rst-class:: classref-item-separator
 
@@ -1084,7 +1088,7 @@ enum **InternalMode**:
 - void **set_process_mode** **(** :ref:`ProcessMode<enum_Node_ProcessMode>` value **)**
 - :ref:`ProcessMode<enum_Node_ProcessMode>` **get_process_mode** **(** **)**
 
-可用于暂停或取消暂停该节点，也可以让该节点根据 :ref:`SceneTree<class_SceneTree>` 来暂停，还可以让它继承父级的处理模式（默认）。
+该节点的处理行为（请参阅 :ref:`ProcessMode<enum_Node_ProcessMode>`\ ）。要检查该节点是否能够在当前模式和 :ref:`SceneTree.paused<class_SceneTree_property_paused>` 下进行处理，请使用 :ref:`can_process<class_Node_method_can_process>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1118,7 +1122,7 @@ enum **InternalMode**:
 - void **set_process_priority** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_process_priority** **(** **)**
 
-该节点在已启用的处理回调（即 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ 、\ :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` 及其内部对应物）的执行顺序中的优先级。进程优先级值\ *较低*\ 的节点将首先执行其处理回调。
+处理回调（\ :ref:`_process<class_Node_private_method__process>`\ 、\ :ref:`_physics_process<class_Node_private_method__physics_process>`\ 、和内部处理）的节点执行顺序。无论树顺序如何，优先级值\ *较低*\ 的节点将先调用其处理回调。
 
 .. rst-class:: classref-item-separator
 
@@ -1192,7 +1196,7 @@ enum **InternalMode**:
 - void **set_scene_file_path** **(** :ref:`String<class_String>` value **)**
 - :ref:`String<class_String>` **get_scene_file_path** **(** **)**
 
-如果一个场景是从一个文件实例化来的，则其最顶层的节点的 :ref:`scene_file_path<class_Node_property_scene_file_path>` 中，将包含它从何处被加载的绝对文件路径（例如 ``res://levels/1.tscn``\ ）。否则 :ref:`scene_file_path<class_Node_property_scene_file_path>` 被设置为一个空字符串。
+原始场景的文件路径（如果节点已从 :ref:`PackedScene<class_PackedScene>` 文件完成实例化）。只有场景根节点包含该文件路径。
 
 .. rst-class:: classref-item-separator
 
@@ -1209,9 +1213,9 @@ enum **InternalMode**:
 - void **set_unique_name_in_owner** **(** :ref:`bool<class_bool>` value **)**
 - :ref:`bool<class_bool>` **is_unique_name_in_owner** **(** **)**
 
-将这个节点的名称设置为其 :ref:`owner<class_Node_property_owner>` 中的唯一名称。这样就可以从该场景中的任意节点处使用 ``%名称`` 来访问这个节点，无需使用完整路径。
+如果为 ``true``\ ，则可以从共享相同 :ref:`owner<class_Node_property_owner>` 的任意节点或从 :ref:`owner<class_Node_property_owner>` 本身访问该节点，并可在 :ref:`get_node<class_Node_method_get_node>` 中使用特殊的 ``%Name`` 语法。
 
-如果所有者相同的另一个节点已经将该名称声明为唯一，那么其他节点就无法再将此名称设置为唯一名称。
+\ **注意：**\ 如果具有相同 :ref:`owner<class_Node_property_owner>` 的另一个节点与该节点共享相同的 :ref:`name<class_Node_property_name>`\ ，则另一个节点将不可再作为唯一节点名称进行访问。
 
 .. rst-class:: classref-section-separator
 
@@ -1228,7 +1232,7 @@ enum **InternalMode**:
 
 void **_enter_tree** **(** **)** |virtual|
 
-当节点进入 :ref:`SceneTree<class_SceneTree>` 时调用（例如实例化时，场景改变时，或者在脚本中调用 :ref:`add_child<class_Node_method_add_child>` 后）。如果节点有子节点，则首先调用它的 :ref:`_enter_tree<class_Node_private_method__enter_tree>` 回调函数，然后再调用子节点的回调函数。
+当节点进入 :ref:`SceneTree<class_SceneTree>` 时调用（例如实例化时、场景改变时、或者在脚本中调用 :ref:`add_child<class_Node_method_add_child>` 后）。如果节点有子节点，则首先调用它的 :ref:`_enter_tree<class_Node_private_method__enter_tree>` 回调函数，然后再调用子节点的回调函数。
 
 对应于 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_ENTER_TREE<class_Node_constant_NOTIFICATION_ENTER_TREE>` 通知。
 
@@ -1311,7 +1315,7 @@ void **_physics_process** **(** :ref:`float<class_float>` delta **)** |virtual|
 
 对应于 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` 通知。
 
-\ **注意：**\ 这个方法只有在当节点存在于场景树中时才会被调用（也就是说，如果它不是“孤儿”）。
+\ **注意：**\ 这个方法只有在当节点存在于场景树中时才会被调用（也就是说，如果它不是孤立节点）。
 
 .. rst-class:: classref-item-separator
 
@@ -1329,7 +1333,7 @@ void **_process** **(** :ref:`float<class_float>` delta **)** |virtual|
 
 对应于 :ref:`Object._notification<class_Object_private_method__notification>` 中的 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>` 通知。
 
-\ **注意：**\ 这个方法只有在节点存在于场景树中时才会被调用（也就是说，如果它不是“孤儿”）。
+\ **注意：**\ 这个方法只有在节点存在于场景树中时才会被调用（也就是说，如果它不是孤立节点）。
 
 .. rst-class:: classref-item-separator
 
@@ -1347,7 +1351,7 @@ void **_ready** **(** **)** |virtual|
 
 通常用于初始化。对于更早的初始化，可以使用 :ref:`Object._init<class_Object_private_method__init>`\ 。另见 :ref:`_enter_tree<class_Node_private_method__enter_tree>`\ 。
 
-\ **注意：**\ 对于每个节点可能仅调用一次 :ref:`_ready<class_Node_private_method__ready>`\ 。从场景树中移除一个节点后，并再次添加该节点时，将不会第二次调用 :ref:`_ready<class_Node_private_method__ready>`\ 。这时可以通过使用 :ref:`request_ready<class_Node_method_request_ready>`\ ，它可以在再次添加节点之前的任何地方被调用。
+\ **注意：**\ 该方法对于每个节点可能仅调用一次。从场景树中移除一个节点后，并再次添加该节点时，将\ **不**\ 会第二次调用 :ref:`_ready<class_Node_private_method__ready>`\ 。这时可以通过使用 :ref:`request_ready<class_Node_method_request_ready>`\ ，它可以在再次添加节点之前的任何地方被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -1367,7 +1371,7 @@ void **_shortcut_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** |
 
 此方法可用于处理快捷键。如果是常规的 GUI 事件，请改用 :ref:`_input<class_Node_private_method__input>`\ 。游戏事件通常应该使用 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 或 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` 处理。
 
-\ **注意：**\ 仅当该节点存在于场景树中（即它不是一个孤儿节点）时，此方法才会被调用。
+\ **注意：**\ 仅当该节点存在于场景树中（即它不是一个孤立节点）时，此方法才会被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -1387,7 +1391,7 @@ void **_unhandled_input** **(** :ref:`InputEvent<class_InputEvent>` event **)** 
 
 对于游戏输入，这个方法通常比 :ref:`_input<class_Node_private_method__input>` 更合适，因为 GUI 事件需要更高的优先级。对于键盘快捷键，请考虑改用 :ref:`_shortcut_input<class_Node_private_method__shortcut_input>`\ ，因为是在这个方法之前调用的。最后，如果要处理键盘事件，那么出于性能方面的原因请考虑使用 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>`\ 。
 
-\ **注意：**\ 仅当该节点存在于场景树中（即不是孤儿节点）时，该方法才会被调用。
+\ **注意：**\ 仅当该节点存在于场景树中（即不是孤立节点）时，该方法才会被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -1409,7 +1413,7 @@ void **_unhandled_key_input** **(** :ref:`InputEvent<class_InputEvent>` event **
 
 对于游戏输入，这和 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 通常比 :ref:`_input<class_Node_private_method__input>` 更适合，因为应该先处理 GUI 事件。该方法的性能也比 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 更好，因为 :ref:`InputEventMouseMotion<class_InputEventMouseMotion>` 等无关事件会被自动过滤。
 
-\ **注意：**\ 只有当节点存在于场景树中（即不是孤儿节点）时，该方法才会被调用。
+\ **注意：**\ 只有当节点存在于场景树中（即不是孤立节点）时，该方法才会被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -1425,9 +1429,9 @@ void **add_child** **(** :ref:`Node<class_Node>` node, :ref:`bool<class_bool>` f
 
 如果 ``force_readable_name`` 为 ``true``\ ，则将提高所添加的 ``node`` 的可读性。如果尚未命名，\ ``node`` 将重命名为它的类型，如果存在 :ref:`name<class_Node_property_name>` 相同的兄弟节点，则会添加合适的数字后缀。这个操作很慢。因此，建议将其保留为 ``false``\ ，在这两种情况下会分配包含 ``@`` 的虚拟名称。
 
-如果 ``internal`` 不同于 :ref:`INTERNAL_MODE_DISABLED<class_Node_constant_INTERNAL_MODE_DISABLED>`\ ，则该子节点将被添加为内部节点。\ :ref:`get_children<class_Node_method_get_children>` 等方法会忽略这种节点，除非它们的参数 ``include_internal`` 为 ``true``\ 。这种功能的设计初衷是对用户隐藏内部节点，这样用户就不会意外删除或修改这些节点。部分 GUI 节点会使用这个功能，例如 :ref:`ColorPicker<class_ColorPicker>`\ 。可用的模式见 :ref:`InternalMode<enum_Node_InternalMode>`\ 。
+如果 ``internal`` 不同于 :ref:`INTERNAL_MODE_DISABLED<class_Node_constant_INTERNAL_MODE_DISABLED>`\ ，则该子节点将被添加为内部节点。\ :ref:`get_children<class_Node_method_get_children>` 等方法会忽略这些节点，除非它们的参数 ``include_internal`` 为 ``true``\ 。这种功能的设计初衷是对用户隐藏内部节点，这样用户就不会意外删除或修改这些节点。部分 GUI 节点会使用这个功能，例如 :ref:`ColorPicker<class_ColorPicker>`\ 。可用的模式见 :ref:`InternalMode<enum_Node_InternalMode>`\ 。
 
-\ **注意：**\ 如果子节点已经有父节点，则该函数会失败。请先使用 :ref:`remove_child<class_Node_method_remove_child>` 将节点从当前父节点中移除。例如：
+\ **注意：**\ 如果 ``node`` 已经有父节点，则该方法会失败。请先使用 :ref:`remove_child<class_Node_method_remove_child>` 将 ``node`` 从其当前父节点中移除。例如：
 
 
 .. tabs::
@@ -1464,13 +1468,13 @@ void **add_child** **(** :ref:`Node<class_Node>` node, :ref:`bool<class_bool>` f
 
 void **add_sibling** **(** :ref:`Node<class_Node>` sibling, :ref:`bool<class_bool>` force_readable_name=false **)**
 
-将一个 ``sibling`` 节点添加到当前节点的父节点，与该节点处于同一级别，就在它的正下方。
+将一个 ``sibling`` 节点添加到该节点的父节点，并将该添加的同级节点移动到该节点的正下方。
 
 如果 ``force_readable_name`` 为 ``true``\ ，则提高添加的 ``sibling`` 的可读性。如果没有命名，\ ``sibling`` 将被重命名为它的类型，如果它与一个同级节点共享 :ref:`name<class_Node_property_name>`\ ，则添加一个更合适的数字后缀。这个操作很慢。因此，建议将其保留为 ``false``\ ，这会在两种情况下分配一个以 ``@`` 为特色的虚拟名称。
 
 如果不需要将该子节点添加到子列表中特定节点的下方，请使用 :ref:`add_child<class_Node_method_add_child>` 而不是该方法。
 
-\ **注意：**\ 如果这个节点是内部的，则新的同级节点也将是内部的（参见 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+\ **注意：**\ 如果这个节点是内部的，则添加的同级节点也将是内部的（参见 :ref:`add_child<class_Node_method_add_child>` 的 ``internal`` 参数）。
 
 .. rst-class:: classref-item-separator
 
@@ -1482,11 +1486,13 @@ void **add_sibling** **(** :ref:`Node<class_Node>` sibling, :ref:`bool<class_boo
 
 void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`bool<class_bool>` persistent=false **)**
 
-将节点添加到一个组中。组是命名和组织节点子集的辅助工具，例如“敌人”或“收集品”等。一个节点可以在任意数量的组中。节点可以随时被分配到一个组中，但在它们进入场景树之前不会添加（参见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ ）。参阅描述中的注释，以及 :ref:`SceneTree<class_SceneTree>` 中的分组方法。
+将该节点加入 ``group`` 分组。使用分组可以很方便地组织部分节点，例如将敌人加入 ``"enemies"`` 分组、将收集品加入 ``"collectables"`` 分组。注意事项见下文，以及 :ref:`SceneTree<class_SceneTree>` 中相关的分组方法。
 
-\ ``persistent`` 选项在将节点打包到 :ref:`PackedScene<class_PackedScene>` 并保存到文件时使用。非持久化的组不会被存储。
+如果 ``persistent`` 为 ``true``\ ，则保存 :ref:`PackedScene<class_PackedScene>` 时会存储该分组。在“节点”面板中创建、显示的分组都能够进行持久化。
 
-\ **注意：**\ 出于性能原因，\ *不*\ 保证节点组的顺序。不应依赖节点组的顺序，因为它可能因项目运行而异。
+\ **注意：**\ 为了提升性能，\ *并不*\ 保证分组名称的顺序，每次运行项目可能会不同。因此请不要依赖分组的顺序。
+
+\ **注意：**\ 不再场景树中时，\ :ref:`SceneTree<class_SceneTree>` 的分组方法\ *无法*\ 正常工作（见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1522,7 +1528,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **can_process** **(** **)** |const|
 
-如果场景树暂停时节点可以处理（请参阅 :ref:`process_mode<class_Node_property_process_mode>`\ ），则返回 ``true``\ 。如果场景树未被暂停，则始终返回 ``true``\ ，如果该节点不在树中，则始终返回 ``false``\ 。
+如果节点可以从 :ref:`SceneTree<class_SceneTree>` 和 :ref:`Viewport<class_Viewport>` 接收处理通知和输入回调（\ :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ 、\ :ref:`_input<class_Node_private_method__input>` 等），则返回 ``true``\ 。该值取决于当前的 :ref:`process_mode<class_Node_property_process_mode>` 和 :ref:`SceneTree.paused<class_SceneTree_property_paused>`\ 。如果节点不在树内，则返回 ``false``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1534,7 +1540,9 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Tween<class_Tween>` **create_tween** **(** **)**
 
-新建 :ref:`Tween<class_Tween>` 并将其绑定到这个节点。与如下操作等价：
+新建 :ref:`Tween<class_Tween>` 并将其绑定到这个节点。
+
+与如下操作等价：
 
 
 .. tabs::
@@ -1549,7 +1557,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 
 
-该 Tween 将在下一个处理帧或物理处理帧时自动开始（取决于 :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`\ ）。
+该 Tween 将在下一个处理帧或物理帧时自动开始（取决于 :ref:`TweenProcessMode<enum_Tween_TweenProcessMode>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1561,11 +1569,9 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node<class_Node>` **duplicate** **(** :ref:`int<class_int>` flags=15 **)** |const|
 
-复制该节点，返回一个新的节点。
+复制该节点，返回一个新节点，其中包含从原始节点复制的所有属性、信号和组。可以通过 ``flags`` 调整该行为（请参阅 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`\ ）。
 
-可以使用 ``flags`` 微调该行为（请参阅 :ref:`DuplicateFlags<enum_Node_DuplicateFlags>`\ ）。
-
-\ **注意：**\ 如果节点包含一个带有构造参数的脚本（即需要向 :ref:`Object._init<class_Object_private_method__init>` 方法提供参数），它将无法正常工作。在这种情况下，节点将在没有脚本的情况下被复制。
+\ **注意：**\ 对于附带有 :ref:`Script<class_Script>` 的节点，如果 :ref:`Object._init<class_Object_private_method__init>` 已使用所需参数定义，则复制的节点将不会有 :ref:`Script<class_Script>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1577,17 +1583,13 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node<class_Node>` **find_child** **(** :ref:`String<class_String>` pattern, :ref:`bool<class_bool>` recursive=true, :ref:`bool<class_bool>` owned=true **)** |const|
 
-查找此节点的后代中，其名称与 :ref:`String.match<class_String_method_match>` 中的 ``pattern`` 匹配的第一个节点。也会查找内部子节点（见 :ref:`add_child<class_Node_method_add_child>` 的 ``internal`` 参数）。
+查找该节点的后代节点中，其 :ref:`name<class_Node_property_name>` 与 ``pattern`` 匹配的第一个节点。如果找不到匹配项，则返回 ``null``\ 。匹配是通过 :ref:`String.match<class_String_method_match>` 针对节点名称完成的，而\ *不*\ 是针对其路径。因此，它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配任意单个字符。
 
-\ ``pattern`` 不匹配完整路径，只匹配单个节点名称。它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配除 ``"."`` 之外的任意单个字符。
+如果 ``recursive`` 为 ``false``\ ，则仅检查该节点的直接子节点。节点按树顺序检查，因此首先检查该节点的第一个直接子节点，然后检查它自己的直接子节点，依此类推；然后移动到第二个直接子节点，依此类推。内部子级也包含在该搜索中（请参阅 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
 
-如果 ``recursive`` 为 ``true``\ ，则查找范围包括所有子节点，即使嵌套很深。节点按树顺序检查，因此首先检查该节点的第一个直接子节点，然后是该直接子节点的直接子节点，等等，然后移动到第二个直接子节点，依此类推。如果 ``recursive`` 为 ``false``\ ，则仅匹配该节点的直接子节点。
+如果 ``owned`` 为 ``true``\ ，则仅检查具有有效 :ref:`owner<class_Node_property_owner>` 节点的后代。
 
-如果 ``owned`` 为 ``true``\ ，则该方法仅查找分配有 :ref:`owner<class_Node_property_owner>` 的节点。这对于通过脚本实例化的场景尤其重要，因为这些场景没有所有者。
-
-如果找不到匹配的 **Node**\ ，则返回 ``null``\ 。
-
-\ **注意：**\ 由于该方法会遍历节点的所有后代，因此它是获取对另一个节点的引用的最慢方法。只要有可能，请考虑改用使用唯一名称的 :ref:`get_node<class_Node_method_get_node>`\ （请参阅 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ），或将该节点引用缓存到变量中。
+\ **注意：**\ 该方法可能非常慢。考虑将找到的节点的引用存储在变量中。或者，使用唯一名称调用 :ref:`get_node<class_Node_method_get_node>`\ （请参阅 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ）。
 
 \ **注意：**\ 要查找匹配一个模式或类类型的所有后代节点，请参阅 :ref:`find_children<class_Node_method_find_children>`\ 。
 
@@ -1601,21 +1603,17 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node[]<class_Node>` **find_children** **(** :ref:`String<class_String>` pattern, :ref:`String<class_String>` type="", :ref:`bool<class_bool>` recursive=true, :ref:`bool<class_bool>` owned=true **)** |const|
 
-查找该节点的后代节点，其名称与 :ref:`String.match<class_String_method_match>` 中的 ``pattern`` 匹配，和/或类型与 :ref:`Object.is_class<class_Object_method_is_class>` 中的 ``type`` 匹配。也会查找内部子节点（见 :ref:`add_child<class_Node_method_add_child>` 的 ``internal`` 参数）。
+查找该节点的后代节点中，其名称与 ``pattern`` 匹配的所有节点。如果找不到匹配项，则返回空 :ref:`Array<class_Array>`\ 。匹配是通过 :ref:`String.match<class_String_method_match>` 针对节点名称完成的，而\ *不*\ 是针对其路径。因此，它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配任意单个字符。
 
-\ ``pattern`` 不匹配完整路径，只匹配单个节点名称。它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配除 ``"."`` 之外的任意单个字符。
+如果 ``type`` 不为空，则仅包含从 ``type`` 继承的后代节点（请参阅 :ref:`Object.is_class<class_Object_method_is_class>`\ ）。
 
-\ ``type`` 将检查相等性或继承关系，并且区分大小写。\ ``"Object"`` 会匹配类型为 ``"Node"`` 的节点，但反之则不然。
+如果 ``recursive`` 为 ``false``\ ，则仅检查该节点的直接子节点。节点按树顺序检查，因此首先检查该节点的第一个直接子节点，然后检查它自己的直接子节点，依此类推；然后移动到第二个直接子节点，依此类推。内部子级也包含在该搜索中（请参阅 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
 
-如果 ``recursive`` 为 ``true``\ ，则匹配范围包括所有子节点，即使嵌套很深。节点按树顺序检查，因此首先检查该节点的第一个直接子节点，然后是该直接子节点的直接子节点，等等，然后移动到第二个直接子节点，依此类推。如果 ``recursive`` 为 ``false``\ ，则仅匹配该节点的直接子节点。
+如果 ``owned`` 为 ``true``\ ，则仅检查具有有效 :ref:`owner<class_Node_property_owner>` 节点的后代。
 
-如果 ``owned`` 为 ``true``\ ，则该方法仅查找分配有 :ref:`owner<class_Node_property_owner>` 的节点。这对于通过脚本实例化的场景尤其重要，因为这些场景没有所有者。
+\ **注意：**\ 该方法可能非常慢。考虑将找到的节点的引用存储在变量中。
 
-如果找不到匹配的节点，则返回空数组。
-
-\ **注意：**\ 由于该方法会遍历节点的所有后代，因此它是获取对其他节点的引用的最慢方法。只要有可能，请考虑将节点引用缓存到变量中。
-
-\ **注意：**\ 如果只想查找匹配模式的第一个后代节点，请参阅 :ref:`find_child<class_Node_method_find_child>`\ 。
+\ **注意：**\ 如果只想查找匹配一个模式的单个后代节点，请参阅 :ref:`find_child<class_Node_method_find_child>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1627,11 +1625,9 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node<class_Node>` **find_parent** **(** :ref:`String<class_String>` pattern **)** |const|
 
-查找当前节点的第一个父节点，其名称与 :ref:`String.match<class_String_method_match>` 中的 ``pattern`` 匹配。
+查找该节点的祖先节点中，其 :ref:`name<class_Node_property_name>` 与 ``pattern`` 匹配的第一个节点。如果找不到匹配项，则返回 ``null``\ 。匹配是通过 :ref:`String.match<class_String_method_match>` 完成的。因此，它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配任意单个字符。另见 :ref:`find_child<class_Node_method_find_child>` 和 :ref:`find_children<class_Node_method_find_children>`\ 。
 
-\ ``pattern`` 不匹配完整路径，只匹配单个节点名称。它区分大小写，\ ``"*"`` 匹配零个或多个字符，\ ``"?"`` 匹配除 ``"."`` 之外的任意单个字符。
-
-\ **注意：**\ 由于该方法在场景树中向上遍历，因此在大型、深度嵌套的场景树中可能会很慢。只要有可能，请考虑使用具有唯一名称的 :ref:`get_node<class_Node_method_get_node>`\ （请参阅 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ），或将该节点引用缓存到变量中。
+\ **注意：** 由于该方法在场景树中向上遍历，因此在大型、深度嵌套的节点中可能会很慢。考虑将找到的节点的引用存储在变量中。或者，使用唯一名称调用 :ref:`get_node<class_Node_method_get_node>`\ （请参阅 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1643,13 +1639,21 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node<class_Node>` **get_child** **(** :ref:`int<class_int>` idx, :ref:`bool<class_bool>` include_internal=false **)** |const|
 
-按索引返回一个子节点（见 :ref:`get_child_count<class_Node_method_get_child_count>`\ ）。这个方法经常被用于遍历一个节点的所有子节点。
+通过索引获取子节点。每个子节点都有一个相对于其同级节点的索引（请参阅 :ref:`get_index<class_Node_method_get_index>`\ ）。第一个子节点位于索引 0 处。负值也可用于从列表末尾开始。该方法可以与 :ref:`get_child_count<class_Node_method_get_child_count>` 结合使用来迭代该节点的子节点。如果给定索引处不存在子节点，则该方法返回 ``null`` 并生成一个错误。
 
-负索引将从最后一个开始访问子节点。
+如果 ``include_internal`` 为 ``false``\ ，则忽略内部子节点（请参阅 :ref:`add_child<class_Node_method_add_child>` 的 ``internal`` 参数）。
 
-如果 ``include_internal`` 为 ``false``\ ，则跳过内部子节点（见 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+::
 
-要通过名称访问一个子节点，请使用 :ref:`get_node<class_Node_method_get_node>`\ 。
+    # 假设以下是该节点的子节点（按顺序）：
+    # 第一、中间、最后。
+    
+    var a = get_child(0).name  # a 是 “第一”
+    var b = get_child(1).name  # b 是 “中间”
+    var b = get_child(2).name  # b 是 “最后”
+    var c = get_child(-1).name # c 是 “最后”
+
+\ **注意：**\ 要通过 :ref:`NodePath<class_NodePath>` 获取节点，请使用 :ref:`get_node<class_Node_method_get_node>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1661,7 +1665,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`int<class_int>` **get_child_count** **(** :ref:`bool<class_bool>` include_internal=false **)** |const|
 
-返回子节点的数量。
+返回该节点的子节点的数量。
 
 如果 ``include_internal`` 为 ``false`` ，则不计算内部子节点（见 :ref:`add_child<class_Node_method_add_child>` 的 ``internal`` 参数）。
 
@@ -1675,9 +1679,9 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node[]<class_Node>` **get_children** **(** :ref:`bool<class_bool>` include_internal=false **)** |const|
 
-返回一组对节点子节点的引用。
+返回该节点的所有子节点到一个 :ref:`Array<class_Array>` 内。
 
-如果 ``include_internal`` 为 ``false``\ ，则返回的数组将不包含内部子节点（见 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+如果 ``include_internal`` 为 ``false``\ ，则从返回的数组中排除内部子节点（见 :ref:`add_child<class_Node_method_add_child>` 的 ``internal`` 参数）。
 
 .. rst-class:: classref-item-separator
 
@@ -1689,26 +1693,26 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`StringName[]<class_StringName>` **get_groups** **(** **)** |const|
 
-返回一个列出该节点所属的分组的数组。
+返回该节点已被添加到的分组的名称的 :ref:`Array<class_Array>`\ 。
 
-\ **注意：**\ 出于性能原因，\ *不*\ 保证节点分组的顺序。 不应依赖节点分组的顺序，因为它可能因项目运行而异。
+\ **注意：**\ 为了提高性能，\ *不*\ 保证分组名称的顺序，并且在项目运行之间可能会有所不同。因此，不要依赖分组顺序。
 
-\ **注意：**\ 引擎在内部使用了一些分组名称（全部以下划线开头）。为避免与内部分组冲突，请勿添加名称以下划线开头的自定义分组。要在遍历 :ref:`get_groups<class_Node_method_get_groups>` 时排除内部分组，请使用以下代码段：
+\ **注意：**\ 该方法还可能返回一些以下划线（\ ``_``\ ）开头的分组名称。这些名称被引擎内部使用。为避免冲突，请勿使用以下划线开头的自定义分组。要排除内部分组，请参阅以下代码片段：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    # 仅存储节点的非内部分组（作为一个字符串数组）。
+    # 仅存储节点的非内部分组（作为一个 StringNames 数组）。
     var non_internal_groups = []
     for group in get_groups():
-        if not group.begins_with("_"):
+        if not str(group).begins_with("_"):
             non_internal_groups.push_back(group)
 
  .. code-tab:: csharp
 
-    // 仅存储节点的非内部分组（作为一个字符串列表）。
+    // 仅存储节点的非内部分组（作为一个 StringNames 列表）。
     List<string> nonInternalGroups = new List<string>();
     foreach (string group in GetGroups())
     {
@@ -1728,9 +1732,9 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`int<class_int>` **get_index** **(** :ref:`bool<class_bool>` include_internal=false **)** |const|
 
-返回节点在场景树分支中的顺序。例如，如果在第一个子节点上调用，则位置为 ``0``\ 。
+返回该节点在其同级节点中的顺序。第一个节点的索引是 ``0``\ 。另见 :ref:`get_child<class_Node_method_get_child>`\ 。
 
-如果 ``include_internal`` 为 ``false``\ ，则索引将不会考虑内部子节点，即第一个非内部子节点的索引将为 0（见 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+如果 ``include_internal`` 为 ``false``\ ，则返回的索引会忽略内部子节点。第一个非内部子节点的索引为 ``0``\ （见 :ref:`add_child<class_Node_method_add_child>` 的 ``internal`` 参数）。
 
 .. rst-class:: classref-item-separator
 
@@ -1766,24 +1770,26 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node<class_Node>` **get_node** **(** :ref:`NodePath<class_NodePath>` path **)** |const|
 
-获取一个节点。\ :ref:`NodePath<class_NodePath>` 可以是到一个节点的相对路径（从当前节点）或绝对路径（在场景树中）。如果该路径不存在，则返回 ``null`` 并记录一个错误。尝试访问该返回值上的方法，将产生一个“尝试在一个 null 实例上调用 <method>。”错误。
+获取一个节点。\ :ref:`NodePath<class_NodePath>` 可以是到一个节点的相对路径（从该节点开始）或绝对路径（从 :ref:`SceneTree.root<class_SceneTree_property_root>` 开始）。如果 ``path`` 未指向一个有效节点，则会生成错误并返回 ``null``\ 。尝试访问返回值上的方法将导致\ *“尝试在一个 null 实例上调用 <method>。”*\ 错误。
 
-\ **注意：**\ 获取绝对路径，仅在节点位于场景树内部时有效（参见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ ）。
+\ **注意：**\ 通过绝对路径获取，仅在节点位于场景树内部时有效（参见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ ）。
 
-\ **示例：**\ 假设你当前的节点是 Character 和以下树：
+\ **示例：**\ 假设从以下树内的 Character 节点调用该方法：
 
 ::
 
-    /root
-    /root/Character
-    /root/Character/Sword
-    /root/Character/Backpack/Dagger
-    /root/MyGame
-    /root/Swamp/Alligator
-    /root/Swamp/Mosquito
-    /root/Swamp/Goblin
+     ┖╴root
+        ┠╴Character (you are here!)
+        ┃  ┠╴Sword
+        ┃  ┖╴Backpack
+        ┃     ┖╴Dagger
+        ┠╴MyGame
+        ┖╴Swamp
+           ┠╴Alligator
+           ┠╴Mosquito
+           ┖╴Goblin
 
-可能的路径有：
+以下调用将返回一个有效节点：
 
 
 .. tabs::
@@ -1814,26 +1820,52 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Array<class_Array>` **get_node_and_resource** **(** :ref:`NodePath<class_NodePath>` path **)**
 
-按照 :ref:`NodePath<class_NodePath>` 的子名称（例如 ``Area2D/CollisionShape2D:shape``\ ）指定的方式，获取节点及其一个资源。如果在 :ref:`NodePath<class_NodePath>` 中指定了多个嵌套资源，则将获取最后一个。
+获取节点及其由 :ref:`NodePath<class_NodePath>` 子名指定的嵌套最深的资源。返回一个大小为 ``3`` 的 :ref:`Array<class_Array>`\ ，其中：
 
-返回值是一个大小为 3 的数组：第一个索引指向该 **Node**\ （如果未找到，则为 ``null``\ ），第二个索引指向 :ref:`Resource<class_Resource>`\ （或者未找到时为 ``null``\ ），第三个索引是剩余的 :ref:`NodePath<class_NodePath>`\ ，如果有的话。
+- 元素 ``0`` 是 **Node**\ ，如果找不到，则为 ``null``\ ；
 
-例如，假设 ``Area2D/CollisionShape2D`` 是一个有效的节点，并且它的 ``shape`` 属性已被分配了一个 :ref:`RectangleShape2D<class_RectangleShape2D>` 资源，那么可以得到这样的输出：
+- 元素 ``1`` 是子名中最后嵌套的 :ref:`Resource<class_Resource>`\ ，如果找不到，则为 ``null``\ ；
+
+- 元素 ``2`` 是剩余的 :ref:`NodePath<class_NodePath>`\ ，引用一个已有的非 :ref:`Resource<class_Resource>` 属性（请参阅 :ref:`Object.get_indexed<class_Object_method_get_indexed>`\ ）。
+
+\ **示例：**\ 假设子节点的 :ref:`Sprite2D.texture<class_Sprite2D_property_texture>` 已被分配了一个\ :ref:`AtlasTexture<class_AtlasTexture>`\ ：
 
 
 .. tabs::
 
  .. code-tab:: gdscript
 
-    print(get_node_and_resource("Area2D/CollisionShape2D")) # [[CollisionShape2D:1161], Null, ]
-    print(get_node_and_resource("Area2D/CollisionShape2D:shape")) # [[CollisionShape2D:1161], [RectangleShape2D:1156], ]
-    print(get_node_and_resource("Area2D/CollisionShape2D:shape:extents")) # [[CollisionShape2D:1161], [RectangleShape2D:1156], :extents]
+    var a = get_node_and_resource("Area2D/Sprite2D")
+    print(a[0].name) # 打印 Sprite2D
+    print(a[1])      # 打印 <null>
+    print(a[2])      # 打印 ^""
+    
+    var b = get_node_and_resource("Area2D/Sprite2D:texture:atlas")
+    print(b[0].name)        # 打印 Sprite2D
+    print(b[1].get_class()) # 打印 AtlasTexture
+    print(b[2])             # 打印 ^""
+    
+    var c = get_node_and_resource("Area2D/Sprite2D:texture:atlas:region")
+    print(c[0].name)        # 打印 Sprite2D
+    print(c[1].get_class()) # 打印 AtlasTexture
+    print(c[2])             # 打印 ^":region"
 
  .. code-tab:: csharp
 
-    GD.Print(GetNodeAndResource("Area2D/CollisionShape2D")); // [[CollisionShape2D:1161], Null, ]
-    GD.Print(GetNodeAndResource("Area2D/CollisionShape2D:shape")); // [[CollisionShape2D:1161], [RectangleShape2D:1156], ]
-    GD.Print(GetNodeAndResource("Area2D/CollisionShape2D:shape:extents")); // [[CollisionShape2D:1161], [RectangleShape2D:1156], :extents]
+    var a = GetNodeAndResource(NodePath("Area2D/Sprite2D"));
+    GD.Print(a[0].Name); // 打印 Sprite2D
+    GD.Print(a[1]);      // 打印 <null>
+    GD.Print(a[2]);      // 打印 ^"
+    
+    var b = GetNodeAndResource(NodePath("Area2D/Sprite2D:texture:atlas"));
+    GD.Print(b[0].name);        // 打印 Sprite2D
+    GD.Print(b[1].get_class()); // 打印 AtlasTexture
+    GD.Print(b[2]);             // 打印 ^""
+    
+    var c = GetNodeAndResource(NodePath("Area2D/Sprite2D:texture:atlas:region"));
+    GD.Print(c[0].name);        // 打印 Sprite2D
+    GD.Print(c[1].get_class()); // 打印 AtlasTexture
+    GD.Print(c[2]);             // 打印 ^":region"
 
 
 
@@ -1847,7 +1879,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node<class_Node>` **get_node_or_null** **(** :ref:`NodePath<class_NodePath>` path **)** |const|
 
-类似于 :ref:`get_node<class_Node_method_get_node>`\ ，但在 ``path`` 没有指向有效的 **Node** 时不会记录错误。
+通过 :ref:`NodePath<class_NodePath>` 获取节点。类似于 :ref:`get_node<class_Node_method_get_node>`\ ，但在 ``path`` 没有指向有效节点时不会生成错误。
 
 .. rst-class:: classref-item-separator
 
@@ -1859,7 +1891,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Node<class_Node>` **get_parent** **(** **)** |const|
 
-返回当前节点的父节点，如果节点缺少父节点，则返回 ``null``\ 。
+返回该节点的父节点，如果该节点没有父节点，则返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1871,7 +1903,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`NodePath<class_NodePath>` **get_path** **(** **)** |const|
 
-返回当前节点的绝对路径。这只在当前节点在场景树中起作用（见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ ）。
+返回该节点相对于 :ref:`SceneTree.root<class_SceneTree_property_root>` 的绝对路径。如果该节点不在场景树内部，则该方法失败并返回空的 :ref:`NodePath<class_NodePath>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1883,11 +1915,11 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`NodePath<class_NodePath>` **get_path_to** **(** :ref:`Node<class_Node>` node, :ref:`bool<class_bool>` use_unique_path=false **)** |const|
 
-返回从该节点到指定节点 ``node`` 的相对 :ref:`NodePath<class_NodePath>`\ 。这两个节点都必须在同一个场景中，否则函数会失败。
+返回从该节点到指定节点 ``node`` 的相对 :ref:`NodePath<class_NodePath>`\ 。这两个节点都必须在同一个 :ref:`SceneTree<class_SceneTree>` 中，否则该方法将失败并返回一个空的 :ref:`NodePath<class_NodePath>`\ 。
 
-如果 ``use_unique_path`` 为 ``true``\ ，则会返回考虑唯一节点的最短路径。
+如果 ``use_unique_path`` 为 ``true``\ ，则返回考虑该节点唯一名称的最短路径（请参阅 :ref:`unique_name_in_owner<class_Node_property_unique_name_in_owner>`\ ）。
 
-\ **注意：**\ 如果你获取了从唯一节点开始的相对路径，则该路径可能由于唯一节点的名称长度而比普通的相对路径长。
+\ **注意：**\ 如果你获取了从唯一节点开始的相对路径，则由于添加了唯一节点的名称，该路径可能比普通的相对路径长。
 
 .. rst-class:: classref-item-separator
 
@@ -1899,7 +1931,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`float<class_float>` **get_physics_process_delta_time** **(** **)** |const|
 
-返回自上一个物理绑定帧以来经过的时间（单位为秒）（见 :ref:`_physics_process<class_Node_private_method__physics_process>`\ ）。除非通过 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 更改每秒帧数，否则这在物理处理中始终是一个恒定值。
+返回自上次物理回调以来经过的时间（单位为秒）。该值与 :ref:`_physics_process<class_Node_private_method__physics_process>` 的 ``delta`` 参数相同，并且除非 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 被更改，否则这在运行时通常是恒定的。另请参阅 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1911,7 +1943,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`float<class_float>` **get_process_delta_time** **(** **)** |const|
 
-返回自上次处理回调以来经过的时间（单位为秒）。这个值可能因帧而异。
+返回自上次处理回调以来经过的时间（单位为秒）。该值与 :ref:`_process<class_Node_private_method__process>` 的 ``delta`` 参数相同，并且可能因帧而异。另请参阅 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1923,7 +1955,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **get_scene_instance_load_placeholder** **(** **)** |const|
 
-如果这是一个实例加载占位符，则返回 ``true``\ 。见 :ref:`InstancePlaceholder<class_InstancePlaceholder>`\ 。
+如果该节点是一个实例加载占位符，则返回 ``true``\ 。见 :ref:`InstancePlaceholder<class_InstancePlaceholder>` 和 :ref:`set_scene_instance_load_placeholder<class_Node_method_set_scene_instance_load_placeholder>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1935,7 +1967,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`SceneTree<class_SceneTree>` **get_tree** **(** **)** |const|
 
-返回包含该节点的 :ref:`SceneTree<class_SceneTree>`\ 。如果该节点不在场景树内，则返回 ``null`` 并打印错误。另见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ 。
+返回包含该节点的 :ref:`SceneTree<class_SceneTree>`\ 。如果该节点不在场景树内，则会生成错误并返回 ``null``\ 。另见 :ref:`is_inside_tree<class_Node_method_is_inside_tree>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -1993,7 +2025,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`Viewport<class_Viewport>` **get_viewport** **(** **)** |const|
 
-返回节点的 :ref:`Viewport<class_Viewport>`\ 。
+如果节点位于场景树内部，则返回该节点最近的 :ref:`Viewport<class_Viewport>` 祖先。否则，返回 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2017,7 +2049,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **has_node** **(** :ref:`NodePath<class_NodePath>` path **)** |const|
 
-如果 :ref:`NodePath<class_NodePath>` 指向的节点存在，则返回 ``true``\ 。
+如果 ``path`` 指向一个有效节点，则返回 ``true``\ 。另见 :ref:`get_node<class_Node_method_get_node>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2029,7 +2061,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **has_node_and_resource** **(** :ref:`NodePath<class_NodePath>` path **)** |const|
 
-如果 :ref:`NodePath<class_NodePath>` 指向一个有效的节点，并且它的子名称指向一个有效的资源，例如 ``Area2D/CollisionShape2D:shape``\ ，则返回 ``true``\ 。具有非 :ref:`Resource<class_Resource>` 类型的属性（例如节点或基本数学类型）不被认为是资源。
+如果 ``path`` 指向一个有效的节点，并且它的子名称指向一个有效的 :ref:`Resource<class_Resource>`\ ，例如 ``Area2D/CollisionShape2D:shape``\ ，则返回 ``true``\ 。不考虑非 :ref:`Resource<class_Resource>` 类型（例如节点或其他 :ref:`Variant<class_Variant>` 类型）的属性。另见 :ref:`get_node_and_resource<class_Node_method_get_node_and_resource>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2041,7 +2073,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **is_ancestor_of** **(** :ref:`Node<class_Node>` node **)** |const|
 
-如果给定节点是当前节点的直接或间接子节点，则返回 ``true``\ 。
+如果给定的 ``node`` 是该节点的直接或间接子节点，则返回 ``true``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2053,7 +2085,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **is_displayed_folded** **(** **)** |const|
 
-如果该节点在“场景”面板中被折叠，则返回 ``true``\ 。该方法仅适用于编辑器工具。
+如果该节点在“场景”面板中被折叠，则返回 ``true``\ 。该方法旨在用于编辑器插件和工具。另见 :ref:`set_display_folded<class_Node_method_set_display_folded>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2065,7 +2097,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **is_editable_instance** **(** :ref:`Node<class_Node>` node **)** |const|
 
-如果 ``node`` 有与相对于此节点的可编辑子节点，则返回 ``true``\ 。该方法仅适用于编辑器工具。
+如果 ``node`` 具有相对于该节点启用的可编辑子节点，则返回 ``true``\ 。该方法旨在用于编辑器插件和工具。另见 :ref:`set_editable_instance<class_Node_method_set_editable_instance>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2077,7 +2109,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **is_greater_than** **(** :ref:`Node<class_Node>` node **)** |const|
 
-如果给定节点在场景层次结构中出现的时间晚于当前节点，则返回 ``true``\ 。
+如果给定的 ``node`` 在场景层次结构中出现得比该节点晚，则返回 ``true``\ 。晚出现的节点通常晚处理。
 
 .. rst-class:: classref-item-separator
 
@@ -2089,7 +2121,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **is_in_group** **(** :ref:`StringName<class_StringName>` group **)** |const|
 
-如果该节点在指定的组中，则返回 ``true``\ 。参阅描述中的注释和 :ref:`SceneTree<class_SceneTree>` 中的组方法。
+如果该节点已被添加到给定的 ``group``\ ，则返回 ``true``\ 。请参阅 :ref:`add_to_group<class_Node_method_add_to_group>` 和 :ref:`remove_from_group<class_Node_method_remove_from_group>`\ 。另请参阅描述中的注释以及 :ref:`SceneTree<class_SceneTree>` 的分组方法。
 
 .. rst-class:: classref-item-separator
 
@@ -2101,7 +2133,7 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 :ref:`bool<class_bool>` **is_inside_tree** **(** **)** |const|
 
-如果该节点当前在 :ref:`SceneTree<class_SceneTree>` 中，返回 ``true``\ 。
+如果该节点当前在 :ref:`SceneTree<class_SceneTree>` 中，返回 ``true``\ 。另见 :ref:`get_tree<class_Node_method_get_tree>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2235,9 +2267,9 @@ void **add_to_group** **(** :ref:`StringName<class_StringName>` group, :ref:`boo
 
 void **move_child** **(** :ref:`Node<class_Node>` child_node, :ref:`int<class_int>` to_index **)**
 
-在其他子节点中将子节点移动到不同的索引（顺序）。由于调用、信号等是按树顺序执行的，因此更改子节点的顺序可能会很有用。如果 ``to_index`` 为负数，索引将从末尾开始计算。
+将 ``child_node`` 移动到给定索引。节点的索引是其同级节点之间的顺序。如果 ``to_index`` 为负，则索引从列表末尾开始计数。另见 :ref:`get_child<class_Node_method_get_child>` 和 :ref:`get_index<class_Node_method_get_index>`\ 。
 
-\ **注意：**\ 内部子节点只能在其期望的“内部范围”内移动（参见 :ref:`add_child<class_Node_method_add_child>` 中的 ``internal`` 参数）。
+\ **注意：**\ 几个引擎回调（\ :ref:`_ready<class_Node_private_method__ready>`\ 、\ :ref:`_process<class_Node_private_method__process>` 等）和通过 :ref:`propagate_notification<class_Node_method_propagate_notification>` 发送的通知的处理顺序受树顺序的影响。\ :ref:`CanvasItem<class_CanvasItem>` 节点也按树顺序渲染。另见\ :ref:`process_priority<class_Node_property_process_priority>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2273,9 +2305,9 @@ void **notify_thread_safe** **(** :ref:`int<class_int>` what **)**
 
 void **print_orphan_nodes** **(** **)** |static|
 
-输出所有孤立节点（\ :ref:`SceneTree<class_SceneTree>` 之外的节点）。用于调试。
+输出所有孤立节点（\ :ref:`SceneTree<class_SceneTree>` 之外的节点）。利于调试。
 
-\ **注意：**\ :ref:`print_orphan_nodes<class_Node_method_print_orphan_nodes>` 只在调试版本中有效。在以发布模式导出的项目中调用时，\ :ref:`print_orphan_nodes<class_Node_method_print_orphan_nodes>` 不会输出任何内容。
+\ **注意：**\ 该方法仅适用于调试构建版本。在以发布模式导出的项目中不执行任何操作。
 
 .. rst-class:: classref-item-separator
 
@@ -2287,18 +2319,18 @@ void **print_orphan_nodes** **(** **)** |static|
 
 void **print_tree** **(** **)**
 
-将树打印到标准输出。主要用于调试。这个版本显示相对于当前节点的路径，适合复制/粘贴到 :ref:`get_node<class_Node_method_get_node>` 函数中。
+将该节点及其子节点打印到标准输出，会进行递归操作。该节点可以不在树中。这个方法输出的是相对于当前节点的路径，适合复制/粘贴到 :ref:`get_node<class_Node_method_get_node>` 函数中。另见 :ref:`print_tree_pretty<class_Node_method_print_tree_pretty>`\ 。
 
 \ **示例输出：**\ 
 
 ::
 
-    TheGame
-    TheGame/Menu
-    TheGame/Menu/Label
-    TheGame/Menu/Camera2D
-    TheGame/SplashScreen
-    TheGame/SplashScreen/Camera2D
+    .
+    Menu
+    Menu/Label
+    Menu/Camera2D
+    SplashScreen
+    SplashScreen/Camera2D
 
 .. rst-class:: classref-item-separator
 
@@ -2310,7 +2342,7 @@ void **print_tree** **(** **)**
 
 void **print_tree_pretty** **(** **)**
 
-类似于 :ref:`print_tree<class_Node_method_print_tree>`\ ，会将树打印到标准输出。这个版本显示了一种更加图形化的表示方式，类似于在场景面板中显示的内容。非常适合检查较大的树。
+递归地将节点及其子节点打印到控制台。节点不必位于场景树中。类似于 :ref:`print_tree<class_Node_method_print_tree>`\ ，但图形表示看起来像编辑器的场景面板中显示的内容。利于检查较大的树。
 
 \ **输出示例：**\ 
 
@@ -2333,7 +2365,9 @@ void **print_tree_pretty** **(** **)**
 
 void **propagate_call** **(** :ref:`StringName<class_StringName>` method, :ref:`Array<class_Array>` args=[], :ref:`bool<class_bool>` parent_first=false **)**
 
-在该节点上并递归地在其所有子节点上，使用 ``args`` 中给出的参数调用给定方法（如果存在）。如果 ``parent_first`` 参数为 ``true``\ ，则该方法将首先在当前节点上调用，然后在其所有子节点上调用。如果 ``parent_first`` 为 ``false``\ ，则子节点上的方法将首先被调用。
+在该节点上并递归地在其所有子节点上，调用给定的 ``method`` 名称，并将 ``args`` 作为参数传递。
+
+如果 ``parent_first`` 参数为 ``true``\ ，则该方法将首先在该节点上调用，然后在其所有子节点上调用。如果为 ``false``\ ，则子节点的方法将首先被调用。
 
 .. rst-class:: classref-item-separator
 
@@ -2345,7 +2379,7 @@ void **propagate_call** **(** :ref:`StringName<class_StringName>` method, :ref:`
 
 void **propagate_notification** **(** :ref:`int<class_int>` what **)**
 
-通过对所有节点调用 :ref:`Object.notification<class_Object_method_notification>`\ ，递归地通知当前节点和它的所有子节点。
+在该节点上并递归地在其所有子节点上，使用 ``what`` 调用 :ref:`Object.notification<class_Object_method_notification>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2357,11 +2391,11 @@ void **propagate_notification** **(** :ref:`int<class_int>` what **)**
 
 void **queue_free** **(** **)**
 
-将节点加入队列，在当前帧结束时删除。节点被删除时，它的所有子节点也将被删除，对该节点及其子节点的引用也会失效，见 :ref:`Object.free<class_Object_method_free>`\ 。
+将该节点加入队列以在当前帧末尾删除。被删除时，其所有子节点也将被删除，并且对该节点及其子节点的所有引用都将变得无效。
 
-同一帧可以对同一个节点调用多次 :ref:`queue_free<class_Node_method_queue_free>`\ ，也可以 :ref:`Object.free<class_Object_method_free>` 已经排队删除的节点。请使用 :ref:`Object.is_queued_for_deletion<class_Object_method_is_queued_for_deletion>` 检查节点是否将在帧结束时被删除。
+与 :ref:`Object.free<class_Object_method_free>` 不同，该节点不会被立即删除，并且它在被删除前仍然可以访问。多次调用 :ref:`queue_free<class_Node_method_queue_free>` 也是安全的。使用 :ref:`Object.is_queued_for_deletion<class_Object_method_is_queued_for_deletion>` 检查节点是否会在该帧末尾删除。
 
-该节点会在所有其他已延迟的调用结束后释放，所以使用 :ref:`queue_free<class_Node_method_queue_free>` 并不总是和通过 :ref:`Object.call_deferred<class_Object_method_call_deferred>` 调用 :ref:`Object.free<class_Object_method_free>` 相同。
+\ **注意：**\ 该节点只会在所有其他已延迟的调用完成后释放。使用该方法并不总会和通过 :ref:`Object.call_deferred<class_Object_method_call_deferred>` 调用 :ref:`Object.free<class_Object_method_free>` 相同。
 
 .. rst-class:: classref-item-separator
 
@@ -2373,9 +2407,9 @@ void **queue_free** **(** **)**
 
 void **remove_child** **(** :ref:`Node<class_Node>` node **)**
 
-删除一个子节点。该节点不会被删除，必须手动删除。
+移除一个子 ``node``\ 。该 ``node`` 及其子节点\ **不会**\ 被删除。要删除节点，见 :ref:`queue_free<class_Node_method_queue_free>`\ 。
 
-\ **注意：**\ 如果该 :ref:`owner<class_Node_property_owner>` 不再是父节点或祖先，则该函数可以将被移除节点（或其后代）的 :ref:`owner<class_Node_property_owner>` 设置为 ``null``\ 。
+\ **注意：**\ 当该节点位于场景树中时，如果被移除的 ``node``\ （或其后代）的 :ref:`owner<class_Node_property_owner>` 不再是祖先（参见 :ref:`is_ancestor_of<class_Node_method_is_ancestor_of>`\ ），则该方法将它们的 :ref:`owner<class_Node_property_owner>` 设置为 ``null``\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2387,7 +2421,7 @@ void **remove_child** **(** :ref:`Node<class_Node>` node **)**
 
 void **remove_from_group** **(** :ref:`StringName<class_StringName>` group **)**
 
-从 ``group`` 中移除一个节点。如果该节点不在 ``group`` 中，则不执行任何操作。见描述中的注意项，以及 :ref:`SceneTree<class_SceneTree>` 中的分组方法。
+从给定的 ``group`` 中移除该节点。如果该节点不在 ``group`` 中，则不执行任何操作。另请参阅描述中的注释以及 :ref:`SceneTree<class_SceneTree>` 的分组方法。
 
 .. rst-class:: classref-item-separator
 
@@ -2413,13 +2447,11 @@ void **reparent** **(** :ref:`Node<class_Node>` new_parent, :ref:`bool<class_boo
 
 void **replace_by** **(** :ref:`Node<class_Node>` node, :ref:`bool<class_bool>` keep_groups=false **)**
 
-将场景中的某个节点替换为给定的节点。经过该节点的订阅会丢失。
+将该节点替换为给定的 ``node``\ 。该节点的所有子节点都会被移动到 ``node``\ 。
 
-如果 ``keep_groups`` 为 ``true``\ ，则 ``node`` 被添加到被替换节点所在的相同分组中。
+如果 ``keep_groups`` 为 ``true``\ ，则 ``node`` 将被添加到被替换节点所在的相同分组中（请参阅 :ref:`add_to_group<class_Node_method_add_to_group>`\ ）。
 
-\ **注意：**\ 给定的节点将成为被替换节点的所有子节点的新的父节点。
-
-\ **注意：**\ 被替换的节点不会被自动释放，因此需要将其保存在变量中以备后用，或者使用 :ref:`Object.free<class_Object_method_free>` 释放它。
+\ **警告：**\ 被替换的节点已从树中移除，但\ **未**\ 被删除。为了防止内存泄漏，请将该节点的引用存储在变量中，或使用 :ref:`Object.free<class_Object_method_free>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2431,7 +2463,9 @@ void **replace_by** **(** :ref:`Node<class_Node>` node, :ref:`bool<class_bool>` 
 
 void **request_ready** **(** **)**
 
-请求再次调用 :ref:`_ready<class_Node_private_method__ready>`\ 。注意，该方法不会被立即调用，而是被安排在该节点再次被添加到场景树时。只会为进行了请求的节点调用 :ref:`_ready<class_Node_private_method__ready>`\ ，也就是说，如果你想让每个子节点都调用 :ref:`_ready<class_Node_private_method__ready>`\ ，就需要为它们分别进行就绪请求（在这种情况下，\ :ref:`_ready<class_Node_private_method__ready>` 的调用顺序与正常情况下相同）。
+请求在该节点下次进入树时再次调用 :ref:`_ready<class_Node_private_method__ready>`\ 。\ **不**\ 会立即调用 :ref:`_ready<class_Node_private_method__ready>`\ 。
+
+\ **注意：**\ 该方法只影响当前节点。如果该节点的子节点也需要请求就绪，则需要为每个子节点调用该方法。当节点及其子节点再次进入树时，\ :ref:`_ready<class_Node_private_method__ready>` 回调的顺序将与正常情况相同。
 
 .. rst-class:: classref-item-separator
 
@@ -2443,9 +2477,11 @@ void **request_ready** **(** **)**
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc** **(** :ref:`StringName<class_StringName>` method, ... **)** |vararg|
 
-将给定 ``method`` 的远程过程调用请求发送到网络（和本地）上的对等体，可选择将所有其他参数作为参数发送给 RPC 调用的方法。调用请求只会被具有相同 :ref:`NodePath<class_NodePath>` 的节点接收，该节点包括完全相同的节点名称。行为取决于给定方法的 RPC 配置，请参阅 :ref:`rpc_config<class_Node_method_rpc_config>` 和 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>`\ 。默认情况下，方法不会暴露给 RPC。返回 ``null``\ 。
+将给定 ``method`` 的远程过程调用请求发送到网络（和本地）上的对等体，并将额外参数发送给 RPC 调用的方法。该调用请求只会被具有相同 :ref:`NodePath<class_NodePath>` 的节点接收，该节点包括完全相同的 :ref:`name<class_Node_property_name>`\ 。行为取决于给定 ``method`` 的 RPC 配置（请参阅 :ref:`rpc_config<class_Node_method_rpc_config>` 和 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>`\ ）。默认情况下，方法不会暴露给 RPC。
 
-\ **注意：**\ 只有在收到来自 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的 ``connected_to_server`` 信号后，才能在客户端上安全地使用 RPC。还需要跟踪连接状态，可通过 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 信号（例如 ``server_disconnected``\ ）或检查 ``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED`` 来跟踪。
+如果调用成功，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果 ``method`` 中传递的参数不匹配，则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；如果无法获取节点的 :ref:`multiplayer<class_Node_property_multiplayer>`\ （例如当该节点不在树中），则返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果 :ref:`multiplayer<class_Node_property_multiplayer>` 的连接不可用，则返回 :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>`\ 。
+
+\ **注意：**\ 只有在收到来自 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 的 :ref:`MultiplayerAPI.connected_to_server<class_MultiplayerAPI_signal_connected_to_server>` 信号后，才能在客户端上安全地使用 RPC。还需要跟踪连接状态，可通过 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 信号（如 :ref:`MultiplayerAPI.server_disconnected<class_MultiplayerAPI_signal_server_disconnected>`\ ）或通过检查（\ ``get_multiplayer().peer.get_connection_status() == CONNECTION_CONNECTED``\ ）来跟踪。
 
 .. rst-class:: classref-item-separator
 
@@ -2457,18 +2493,17 @@ void **request_ready** **(** **)**
 
 void **rpc_config** **(** :ref:`StringName<class_StringName>` method, :ref:`Variant<class_Variant>` config **)**
 
-将给定方法 ``method`` 的 RPC 模式更改为给定的配置 ``config``\ ，该配置应该是 ``null``\ （表示禁用）或者是以下形式的 :ref:`Dictionary<class_Dictionary>`\ ：
+更改给定 ``method`` 的 RPC 配置。\ ``config`` 应该是 ``null`` 以禁用该功能（默认情况下），或者是包含以下条目的 :ref:`Dictionary<class_Dictionary>`\ ：
 
-::
+- ``rpc_mode``\ ：见 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>`\ ；
 
-    {
-        rpc_mode = MultiplayerAPI.RPCMode,
-        transfer_mode = MultiplayerPeer.TransferMode,
-        call_local = false,
-        channel = 0,
-    }
+- ``transfer_mode``\ ：见 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`\ ；
 
-见 :ref:`RPCMode<enum_MultiplayerAPI_RPCMode>` 和 :ref:`TransferMode<enum_MultiplayerPeer_TransferMode>`\ 。另一种选择是使用相应的 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 注解对方法和属性进行注解（例如 ``@rpc("any_peer")``\ 、\ ``@rpc("authority")``\ ）。默认情况下，方法不会被暴露给网络（和 RPC）。
+- ``call_local``\ ：如果为 ``true``\ ，该方法也将会在本地调用；
+
+- ``channel``\ ：一个 :ref:`int<class_int>` 表示启用了发送 RPC 的通道。
+
+\ **注意：**\ 在 GDScript 中，该方法对应 :ref:`@GDScript.@rpc<class_@GDScript_annotation_@rpc>` 注解，并传递各种参数（\ ``@rpc(any)``\ 、\ ``@rpc(authority)``\ ……）。 另请参阅 :doc:`高级多人游戏 <../tutorials/networking/high_level_multiplayer>` 教程。
 
 .. rst-class:: classref-item-separator
 
@@ -2480,7 +2515,9 @@ void **rpc_config** **(** :ref:`StringName<class_StringName>` method, :ref:`Vari
 
 :ref:`Error<enum_@GlobalScope_Error>` **rpc_id** **(** :ref:`int<class_int>` peer_id, :ref:`StringName<class_StringName>` method, ... **)** |vararg|
 
-向指定的对等体发送 :ref:`rpc<class_Node_method_rpc>`\ ，对等体由 ``peer_id`` 标识（见 :ref:`MultiplayerPeer.set_target_peer<class_MultiplayerPeer_method_set_target_peer>`\ ）。返回 ``null``\ 。
+将 :ref:`rpc<class_Node_method_rpc>` 发送到由 ``peer_id`` 标识的特定对等体（请参阅 :ref:`MultiplayerPeer.set_target_peer<class_MultiplayerPeer_method_set_target_peer>`\ ）。
+
+如果调用成功，则返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ；如果 ``method`` 中传递的参数不匹配，则返回 :ref:`@GlobalScope.ERR_INVALID_PARAMETER<class_@GlobalScope_constant_ERR_INVALID_PARAMETER>`\ ；如果无法获取节点的 :ref:`multiplayer<class_Node_property_multiplayer>`\ （例如当节点不在场景树中），则返回 :ref:`@GlobalScope.ERR_UNCONFIGURED<class_@GlobalScope_constant_ERR_UNCONFIGURED>`\ ；如果 :ref:`multiplayer<class_Node_property_multiplayer>` 的连接不可用，则返回 :ref:`@GlobalScope.ERR_CONNECTION_ERROR<class_@GlobalScope_constant_ERR_CONNECTION_ERROR>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2504,7 +2541,7 @@ void **set_deferred_thread_group** **(** :ref:`StringName<class_StringName>` pro
 
 void **set_display_folded** **(** :ref:`bool<class_bool>` fold **)**
 
-设置该节点在“场景”面板中的折叠状态。这个方法仅适用于编辑器工具。
+如果设置为 ``true``\ ，则节点将在场景面板中显示为被折叠。结果，它的所有子节点都被隐藏了。该方法旨在用于编辑器插件和工具脚本，但它也适用于发布构建版本。另请参阅 :ref:`is_displayed_folded<class_Node_method_is_displayed_folded>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2516,7 +2553,7 @@ void **set_display_folded** **(** :ref:`bool<class_bool>` fold **)**
 
 void **set_editable_instance** **(** :ref:`Node<class_Node>` node, :ref:`bool<class_bool>` is_editable **)**
 
-设置 ``node`` 相对于这个节点的可编辑子节点状态。这个方法仅适用于编辑器工具。
+设置为 ``true`` 以允许 ``node`` 拥有的所有节点在场景面板中可用且可编辑，即使它们的 :ref:`owner<class_Node_property_owner>` 不是场景根。该方法旨在用于编辑器插件和工具脚本，但它也适用于发布构建版本。另见 :ref:`is_editable_instance<class_Node_method_is_editable_instance>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2528,9 +2565,11 @@ void **set_editable_instance** **(** :ref:`Node<class_Node>` node, :ref:`bool<cl
 
 void **set_multiplayer_authority** **(** :ref:`int<class_int>` id, :ref:`bool<class_bool>` recursive=true **)**
 
-将该节点的多人游戏控制方设置为具有给定对等体 ID 的对等体。多人游戏控制方是对网络上的节点具有控制权限的对等体。可以与 :ref:`rpc_config<class_Node_method_rpc_config>` 和 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 结合使用。默认为对等体 ID 1（服务器）。如果 ``recursive``\ ，则给定的对等体会被递归设置为该节点所有子节点的控制方。
+将该节点的多人游戏控制方设置为具有给定对等体 ``id`` 的对等体。多人游戏控制方是对网络上的节点具有控制权限的对等体。默认为对等体 ID 1（服务器）。利于与 :ref:`rpc_config<class_Node_method_rpc_config>` 和 :ref:`MultiplayerAPI<class_MultiplayerAPI>` 结合使用。
 
-\ **警告：**\ 这样做\ **不会**\ 自动将新的控制方复制给其他对等体。开发者需要自己负责。你可以使用 :ref:`MultiplayerSpawner.spawn_function<class_MultiplayerSpawner_property_spawn_function>`\ 、RPC、\ :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 等方法将这个信息传播出去。另外，父节点的控制方\ **不会**\ 传播给新添加的子节点。
+如果 ``recursive`` 为 ``true``\ ，则该节点的所有子节点将递归地将给定的对等体设置为控制方。
+
+\ **警告：**\ 这\ **不会**\ 自动将新的控制方复制给其他对等体。是否这样做由开发者负责。可以使用 :ref:`MultiplayerSpawner.spawn_function<class_MultiplayerSpawner_property_spawn_function>`\ 、RPC、或 :ref:`MultiplayerSynchronizer<class_MultiplayerSynchronizer>` 复制新控制方的信息。此外，父节点的控制方\ **不会**\ 传播给新添加的子节点。
 
 .. rst-class:: classref-item-separator
 
@@ -2542,7 +2581,7 @@ void **set_multiplayer_authority** **(** :ref:`int<class_int>` id, :ref:`bool<cl
 
 void **set_physics_process** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用物理（即固定帧率）处理。当一个节点正在被处理时，它会在一个固定的（通常是 60 FPS，参见 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 以更改）时间间隔，接收一个 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>` （如果存在 :ref:`_physics_process<class_Node_private_method__physics_process>` 回调，该回调将被调用）。如果 :ref:`_physics_process<class_Node_private_method__physics_process>` 被重写，则自动被启用。在 :ref:`_ready<class_Node_private_method__ready>` 之前对该函数的任何调用，都将被忽略。
+如果设置为 ``true``\ ，则启用物理（固定帧率）处理。当一个节点正在被处理时，它将以固定的（通常是 60 FPS，请参阅 :ref:`Engine.physics_ticks_per_second<class_Engine_property_physics_ticks_per_second>` 以更改）时间间隔，接收一个 :ref:`NOTIFICATION_PHYSICS_PROCESS<class_Node_constant_NOTIFICATION_PHYSICS_PROCESS>`\ （如果存在 :ref:`_physics_process<class_Node_private_method__physics_process>` 回调，该回调将被调用）。如果 :ref:`_physics_process<class_Node_private_method__physics_process>` 被重写，则会自动启用该属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2554,9 +2593,9 @@ void **set_physics_process** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_physics_process_internal** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用该节点的内部物理。内部物理处理与正常的 :ref:`_physics_process<class_Node_private_method__physics_process>` 调用隔离进行，并且由某些节点内部使用，以确保正常工作，即使节点暂停或物理处理因脚本而禁用（\ :ref:`set_physics_process<class_Node_method_set_physics_process>`\ ）。仅适用于用于操纵内置节点行为的高级用途。
+如果设置为 ``true``\ ，则启用该节点的内部物理。内部物理处理独立于正常的 :ref:`_physics_process<class_Node_private_method__physics_process>` 调用而发生，并且由某些节点内部使用以确保正常工作，即使节点暂停或物理处理因脚本而禁用（\ :ref:`set_physics_process<class_Node_method_set_physics_process>`\ ）也是如此。
 
-\ **警告：**\ 内置节点依靠内部处理来实现自己的逻辑，所以从你的代码中改变这个值可能会导致意外的行为。为特定的高级用途提供了对此内部逻辑的脚本访问，但不安全且不支持。
+\ **警告：**\ 内置节点依靠内部处理来实现其内部逻辑。禁用它是不安全的，并且可能会导致意外行为。请在你知道自己正在做什么时使用该方法。
 
 .. rst-class:: classref-item-separator
 
@@ -2568,7 +2607,7 @@ void **set_physics_process_internal** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用帧处理。当一个节点被处理时，它将在每个绘制的帧上收到一个\ :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ （如果存在，\ :ref:`_process<class_Node_private_method__process>`\ 回调将被调用）。如果\ :ref:`_process<class_Node_private_method__process>`\ 被重写，则自动启用。在 :ref:`_ready<class_Node_private_method__ready>` 之前对它的任何调用都将被忽略。
+如果设置为 ``true``\ ，则启用帧处理。当一个节点正在被处理时，它将在每个绘制的帧上收到一个 :ref:`NOTIFICATION_PROCESS<class_Node_constant_NOTIFICATION_PROCESS>`\ （如果存在 :ref:`_process<class_Node_private_method__process>` 回调，该回调将被调用）。如果 :ref:`_process<class_Node_private_method__process>` 被重写，则会自动启用该属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2580,7 +2619,7 @@ void **set_process** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_input** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用输入处理。对于 GUI 控件来说不是必需的。如果 :ref:`_input<class_Node_private_method__input>` 被覆盖，则自动启用。任何在 :ref:`_ready<class_Node_private_method__ready>` 之前对它的调用都将被忽略。
+如果设置为 ``true``\ ，则启用输入处理。它对于 GUI 控件来说不是必需的！如果 :ref:`_input<class_Node_private_method__input>` 被重写，则会自动启用该属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2592,9 +2631,9 @@ void **set_process_input** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_internal** **(** :ref:`bool<class_bool>` enable **)**
 
-启用或禁用此节点的内部处理。内部处理与正常的 :ref:`_process<class_Node_private_method__process>` 调用隔离进行，并且由某些节点内部使用，以确保正常工作，即使节点已暂停或处理因脚本而禁用（\ :ref:`set_process<class_Node_method_set_process>`\ ）。仅适用于操纵内置节点行为的高级用途。
+如果设置为 ``true``\ ，则启用该节点的内部处理。内部处理独立于正常的 :ref:`_process<class_Node_private_method__process>` 调用而发生，并且由某些节点在内部使用以保证正常运行，即使节点已暂停或处理因脚本而禁用（\ :ref:`set_process<class_Node_method_set_process>`\ ）也是如此。
 
-\ **警告：**\ 内置节点依赖于内部处理来实现自己的逻辑，因此更改代码中的这个值可能会导致意外行为。为特定的高级用途提供了对此内部逻辑的脚本访问，但不安全且不支持。
+\ **警告：**\ 内置节点依靠内部处理来实现其内部逻辑。禁用它是不安全的，并且可能会导致意外行为。请在你知道自己正在做什么时使用该方法。
 
 .. rst-class:: classref-item-separator
 
@@ -2606,7 +2645,7 @@ void **set_process_internal** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_shortcut_input** **(** :ref:`bool<class_bool>` enable **)**
 
-启用快捷键处理。如果 :ref:`_shortcut_input<class_Node_private_method__shortcut_input>` 被覆盖，则自动启用。在 :ref:`_ready<class_Node_private_method__ready>` 之前对此的任何调用都将被忽略。
+如果设置为 ``true``\ ，则启用该节点的快捷键处理。如果 :ref:`_shortcut_input<class_Node_private_method__shortcut_input>` 被重写，则会自动启用该属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2618,7 +2657,7 @@ void **set_process_shortcut_input** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_unhandled_input** **(** :ref:`bool<class_bool>` enable **)**
 
-启用未处理的输入处理。这对 GUI 控件来说是不需要的！它使节点能够接收所有以前没有处理的输入（通常是由 :ref:`Control<class_Control>` 处理的）。如果 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 被覆盖，则自动启用。在 :ref:`_ready<class_Node_private_method__ready>` 之前对它的任何调用都将被忽略。
+如果设置为 ``true``\ ，则启用未处理的输入处理。这对 GUI 控件来说是不需要的！它使节点能够接收所有以前没有处理的输入（通常是由 :ref:`Control<class_Control>` 处理的）。如果 :ref:`_unhandled_input<class_Node_private_method__unhandled_input>` 被重写，则会自动启用该属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2630,7 +2669,7 @@ void **set_process_unhandled_input** **(** :ref:`bool<class_bool>` enable **)**
 
 void **set_process_unhandled_key_input** **(** :ref:`bool<class_bool>` enable **)**
 
-启用未处理的按键输入处理。如果 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` 被重写，则自动启用。任何在 :ref:`_ready<class_Node_private_method__ready>` 之前对它的调用都将被忽略。
+如果设置为 ``true``\ ，则启用未处理的按键输入处理。如果 :ref:`_unhandled_key_input<class_Node_private_method__unhandled_key_input>` 被重写，则会自动启用该属性。
 
 .. rst-class:: classref-item-separator
 
@@ -2642,7 +2681,7 @@ void **set_process_unhandled_key_input** **(** :ref:`bool<class_bool>` enable **
 
 void **set_scene_instance_load_placeholder** **(** :ref:`bool<class_bool>` load_placeholder **)**
 
-设置这是否是实例加载占位符。见 :ref:`InstancePlaceholder<class_InstancePlaceholder>`\ 。
+如果设置为 ``true``\ ，则当从 :ref:`PackedScene<class_PackedScene>` 打包和实例化时，节点将变为 :ref:`InstancePlaceholder<class_InstancePlaceholder>`\ 。另见 :ref:`get_scene_instance_load_placeholder<class_Node_method_get_scene_instance_load_placeholder>`\ 。
 
 .. rst-class:: classref-item-separator
 
@@ -2666,9 +2705,7 @@ void **set_thread_safe** **(** :ref:`StringName<class_StringName>` property, :re
 
 void **update_configuration_warnings** **(** **)**
 
-更新在场景面板中为该节点显示的警告。
-
-使用 :ref:`_get_configuration_warnings<class_Node_private_method__get_configuration_warnings>` 配置要显示的警告消息。
+刷新场景面板中为该节点显示的警告。使用 :ref:`_get_configuration_warnings<class_Node_private_method__get_configuration_warnings>` 自定义要显示的警告消息。
 
 .. |virtual| replace:: :abbr:`virtual (本方法通常需要用户覆盖才能生效。)`
 .. |const| replace:: :abbr:`const (本方法没有副作用。不会修改该实例的任何成员变量。)`

@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0106: Attempted to export explicit interface property implementation"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr ""
+
+msgid "GD0106"
+msgstr ""
+
+msgid "**Category**"
+msgstr "**Kategorie**"
+
+msgid "Usage"
+msgstr "Používání"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+#, fuzzy
+msgid "Non-breaking"
+msgstr "Přispívání změnami"
+
+msgid "**Enabled by default**"
+msgstr ""
+
+#, fuzzy
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr ""
+
+msgid ""
+"An explicit interface property implementation is annotated with the "
+"``[Export]`` attribute. Properties that implement an interface explicitly "
+"can't be exported."
+msgstr ""
+
+#, fuzzy
+msgid "Rule description"
+msgstr "`<brief_description>`"
+
+msgid ""
+"Godot doesn't allow exporting explicit interface property implementations. "
+"When an interface member is implemented explicitly, the member is hidden and "
+"consumers can't access them unless the type is converted to the interface "
+"first. Explicitly implemented members can also share the same name of other "
+"members in the type, so it could create naming conflicts with other exported "
+"members."
+msgstr ""
+
+msgid "How to fix violations"
+msgstr ""
+
+msgid ""
+"To fix a violation of this rule, implement the interface implicitly or "
+"remove the ``[Export]`` attribute."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr ""
+
+msgid ""
+"Do not suppress a warning from this rule. Explicit interface property "
+"implementations can't be exported so they will be ignored by Godot, "
+"resulting in runtime errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Stav překladu"

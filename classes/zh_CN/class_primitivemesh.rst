@@ -166,9 +166,7 @@ PrimitiveMesh
 
 :ref:`Array<class_Array>` **_create_mesh_array** **(** **)** |virtual| |const|
 
-.. container:: contribute
-
-	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+重写该方法以自定义应如何生成该基本网格。应该返回一个 :ref:`Array<class_Array>`\ ，其中每个元素都是该网格所需的另一个值数组（请参阅 :ref:`ArrayType<enum_Mesh_ArrayType>` 常量）。
 
 .. rst-class:: classref-item-separator
 

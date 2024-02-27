@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,7 +115,6 @@ msgstr ""
 "通常情况下, 一个材质是与Mesh中的一个给定表面相关联的, 但有些节点, 如"
 "MeshInstance, 允许你覆盖一个特定的表面或所有表面的材质."
 
-#, fuzzy
 msgid ""
 "If you set a material on the surface or mesh itself, then all "
 "MeshInstance3Ds that share that mesh will share that material. However, if "
@@ -123,9 +122,9 @@ msgid ""
 "different materials for each instance then you should set the material on "
 "the MeshInstance3D."
 msgstr ""
-"如果你在表面或Mesh本身上设置了材质, 那么所有共享该Mesh的MeshInstance都共享该"
-"材质. 但是, 如果你想在多个Mesh实例中重用同一个Mesh, 但每个实例具有不同的材"
-"质, 那么你应该在Meshinstance上设置材质."
+"如果你在表面或网格本身上设置了材质，那么所有共享该网格的 MeshInstance3D 都共"
+"享该材质。但是如果你想在多个网格实例中重用同一个网格，而每个实例又要具有不同"
+"的材质，那么你就应该在 MeshInstance3D 上设置材质。"
 
 #, fuzzy
 msgid ""
@@ -137,10 +136,9 @@ msgstr ""
 msgid "Setting up"
 msgstr "设置"
 
-#, fuzzy
 msgid ""
 "Add a new :ref:`MeshInstance3D <class_MeshInstance3D>` node to your scene."
-msgstr "向场景添加一个新的 :ref:`MeshInstance <class_meshinstance>` 节点."
+msgstr "向场景添加一个新的 :ref:`MeshInstance3D <class_MeshInstance3D>` 节点。"
 
 msgid ""
 "In the inspector tab beside \"Mesh\" click \"[empty]\" and select \"New "
@@ -163,11 +161,12 @@ msgstr ""
 msgid "This will allow you to see the triangles making up the plane."
 msgstr "这将允许你查看构成平面的三角形."
 
-#, fuzzy
 msgid ""
 "Now set ``Subdivide Width`` and ``Subdivide Depth`` of the :ref:`PlaneMesh "
 "<class_planemesh>` to ``32``."
-msgstr "现在将 ``Subdivide Width`` 和 ``Subdivide Depth`` 设置为 ``32`` ."
+msgstr ""
+"现在将 :ref:`PlaneMesh <class_planemesh>` 的 ``Subdivide Width`` 和 "
+"``Subdivide Depth`` 设置为 ``32``\\ 。"
 
 #, fuzzy
 msgid ""

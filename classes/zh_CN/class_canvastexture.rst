@@ -21,7 +21,7 @@ CanvasTexture
 
 **CanvasTexture** 是用于 2D 渲染的 :ref:`ImageTexture<class_ImageTexture>` 的替代品。它允许在任何继承自 :ref:`CanvasItem<class_CanvasItem>` 的节点中使用法线贴图和镜面贴图。\ **CanvasTexture** 还允许独立于节点的属性（或项目设置）覆盖纹理的过滤模式和重复模式。
 
-\ **注意：**\ **CanvasTexture** 不能用于 3D 渲染。对于 3D 中基于物理的材质，请使用 :ref:`BaseMaterial3D<class_BaseMaterial3D>` 来代替。
+\ **注意：**\ **CanvasTexture** 不能在 3D 中使用。当应用于任何 :ref:`VisualInstance3D<class_VisualInstance3D>`\ ，例如 :ref:`Sprite3D<class_Sprite3D>` 或 :ref:`Decal<class_Decal>` 时，它将无法正确显示。对于 3D 中基于物理的材质，请改用 :ref:`BaseMaterial3D<class_BaseMaterial3D>`\ 。
 
 .. rst-class:: classref-introduction-group
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,18 +39,24 @@ msgstr ""
 msgid "Platforms"
 msgstr "プラットフォーム"
 
+msgid ""
+"See :ref:`doc_system_requirements` for hardware and software version "
+"requirements."
+msgstr ""
+
 msgid "**Can run both the editor and exported projects:**"
 msgstr "**エディタとエクスポートしたプロジェクトの両方を実行可能:**"
 
-msgid "Windows 7 and later (64-bit and 32-bit)."
+#, fuzzy
+msgid "Windows (x86, 64-bit and 32-bit)."
 msgstr "Windows 7以降 (64ビットと32ビット)。"
 
-msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr "macOS 10.12以降 (64ビットと x86とARM)。"
+msgid "macOS (x86 and ARM, 64-bit only)."
+msgstr ""
 
 #, fuzzy
-msgid "Linux (64-bit, x86 and ARM)."
-msgstr "Linux (64ビットと32ビット、x86とARM)。"
+msgid "Linux (x86 and ARM, 64-bit and 32-bit)."
+msgstr "Windows 7以降 (64ビットと32ビット)。"
 
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
@@ -59,26 +65,28 @@ msgstr ""
 "古い十分なベースのディストリビューションでコンパイルされた場合、バイナリは静"
 "的にリンクされ様々なディストリビューションで実行できます。"
 
-msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr "公式のバイナリはUbuntu 14.04でコンパイルされています。"
+msgid ""
+"Official binaries are compiled using the `Godot Engine buildroot <https://"
+"github.com/godotengine/buildroot>`__, allowing for binaries that work across "
+"common Linux distributions (including LTS variants)."
+msgstr ""
 
-msgid "32-bit binaries can be compiled from source."
-msgstr "ソースから32ビットのバイナリをコンパイルできます。."
-
-msgid "Android 6.0 and later (editor support is experimental)."
+#, fuzzy
+msgid "Android (editor support is experimental)."
 msgstr "Android 6.0以降(エディターは実験的)。"
 
 msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
 "Godot 3.x is recommended instead when targeting HTML5."
 msgstr ""
+":ref:`Webブラウザ <doc_using_the_web_editor>` 4.0では実験的です。HTML5をター"
+"ゲットにする場合は、代わりにGodot 3.xを使うことが推奨されます。"
 
 msgid "**Runs exported projects:**"
 msgstr "**エクスポートされたプロジェクトの実行:**"
 
-#, fuzzy
-msgid "iOS 11.0 and later."
-msgstr "iOS 10.0 以降。"
+msgid "iOS."
+msgstr ""
 
 msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`コンソール <doc_consoles>`\\ 。"
@@ -97,6 +105,11 @@ msgid ""
 "iOS platform support is available as of Godot 4.2, but is experimental and :"
 "ref:`some limitations apply <doc_c_sharp_platforms>`."
 msgstr ""
+"Godot 4 を使用して書かれた C# のプロジェクトは、Web プラットフォームにエクス"
+"ポートできません。 WebプラットフォームでC#を使用するには、代わりにGodot 3の使"
+"用を検討してください。 Android および iOS プラットフォームのサポートは、"
+"Godot 4.2 で利用できますが実験的であり、 :ref:`some limitations apply "
+"<doc_c_sharp_platforms>` が適用されます。"
 
 msgid "Editor"
 msgstr "エディタ"
@@ -120,18 +133,23 @@ msgstr ""
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript\\ :ref:`デバッガ <doc_debugger_panel>`\\ 。"
 
-msgid "No support for debugging in threads yet."
+#, fuzzy
+msgid "Support for debugging in threads is available since 4.2."
 msgstr "複数スレッドでのデバッグはまだサポートされていません。"
 
 msgid ""
 "Visual profiler with CPU and GPU time indications for each step of the "
 "rendering pipeline."
 msgstr ""
+"レンダリングパイプラインの各ステップのCPUとGPUの時間を示すビジュアルプロファ"
+"イラ。"
 
 msgid ""
 "Performance monitoring tools, including :ref:`custom performance monitors "
 "<doc_custom_performance_monitors>`."
 msgstr ""
+":ref:`カスタムパフォーマンスモニター <doc_custom_performance_monitors>` を含"
+"むパフォーマンスモニターツール。"
 
 msgid "Live script reloading."
 msgstr "実行時スクリプト再読み込み。"
@@ -252,6 +270,8 @@ msgid ""
 ":ref:`2D lighting <doc_2d_lights_and_shadows>` with normal maps and specular "
 "maps."
 msgstr ""
+"法線マップとスペキュラマップによる :ref:`2Dライティング "
+"<doc_2d_lights_and_shadows>` 。"
 
 #, fuzzy
 msgid "Point (omni/spot) and directional 2D lights."

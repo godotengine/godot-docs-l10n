@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0301: The generic type argument must be a Variant compatible type"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr "**规则 ID**"
+
+msgid "GD0301"
+msgstr ""
+
+msgid "**Category**"
+msgstr "**类别**"
+
+msgid "Usage"
+msgstr "用法"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**修复是中断修复还是非中断修复**"
+
+msgid "Breaking"
+msgstr "中断"
+
+msgid "**Enabled by default**"
+msgstr "**默认启用**"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Cause"
+msgstr "原因"
+
+#, fuzzy
+msgid ""
+"An unsupported type is specified for a generic type argument when a :ref:"
+"`Variant-compatible <doc_c_sharp_variant>` type is expected."
+msgstr "信号支持任何 :ref:`Variant 兼容 <doc_c_sharp_variant>` 类型的参数。"
+
+msgid "Rule description"
+msgstr "规则说明"
+
+#, fuzzy
+msgid ""
+"When a generic type parameter is annotated with the ``[MustBeVariant]`` "
+"attribute, the generic type is required to be a Variant-compatible type. For "
+"example, the generic ``Godot.Collections.Array<T>`` type only supports items "
+"of a type that can be converted to Variant."
+msgstr ""
+"为了调用一个带有泛型参数的方法，该参数用 ``[MustBeVariant]`` 特性标注，值必须"
+"是 Variant 兼容类型或者带有 ``[MustBeVariant]`` 特性标注的泛型 ``T`` 类型。"
+
+msgid "How to fix violations"
+msgstr "如何解决冲突"
+
+msgid ""
+"To fix a violation of this rule, change the generic type argument to be a "
+"Variant-compatible type or use a different API that doesn't require the "
+"generic type argument to be a Variant-compatible type."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr "何时禁止显示警告"
+
+msgid ""
+"Do not suppress a warning from this rule. API that contains generic type "
+"arguments annotated with the ``[MustBeVariant]`` attribute usually has this "
+"requirement because the values will be passed to the engine, if the type "
+"can't be marshalled it will result in runtime errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "翻译状态"

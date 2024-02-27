@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -39,19 +39,25 @@ msgstr ""
 msgid "Platforms"
 msgstr "Plataformas"
 
+msgid ""
+"See :ref:`doc_system_requirements` for hardware and software version "
+"requirements."
+msgstr ""
+
 msgid "**Can run both the editor and exported projects:**"
 msgstr ""
 "**É possível executar tanto o editor quanto os projetos exportados em:**"
 
-msgid "Windows 7 and later (64-bit and 32-bit)."
+#, fuzzy
+msgid "Windows (x86, 64-bit and 32-bit)."
 msgstr "Windows 7 e superior (64-bit e 32-bit)."
 
-msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr "macOS 10.12 e superior (64-bit, x86 e ARM)."
+msgid "macOS (x86 and ARM, 64-bit only)."
+msgstr ""
 
 #, fuzzy
-msgid "Linux (64-bit, x86 and ARM)."
-msgstr "Linux (64-bits e 32-bits, x86 e ARM)."
+msgid "Linux (x86 and ARM, 64-bit and 32-bit)."
+msgstr "Windows 7 e superior (64-bit e 32-bit)."
 
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
@@ -61,26 +67,28 @@ msgstr ""
 "qualquer distribuição, se compilados a partir de uma distribuição-base mais "
 "antiga."
 
-msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr "Arquivos binários oficiais são compilados no Ubuntu 14.04."
-
-msgid "32-bit binaries can be compiled from source."
+msgid ""
+"Official binaries are compiled using the `Godot Engine buildroot <https://"
+"github.com/godotengine/buildroot>`__, allowing for binaries that work across "
+"common Linux distributions (including LTS variants)."
 msgstr ""
 
-msgid "Android 6.0 and later (editor support is experimental)."
-msgstr ""
+#, fuzzy
+msgid "Android (editor support is experimental)."
+msgstr "Android 6.0 e posterior (o suporte do editor é experimental)."
 
 msgid ""
 ":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
 "Godot 3.x is recommended instead when targeting HTML5."
 msgstr ""
+":ref:`Navegadores Web <doc_using_the_web_editor>`. Experimental em 4.0, uso "
+"do Godot 3.x é recomendado quando quer usar HTML5."
 
 msgid "**Runs exported projects:**"
 msgstr "**É possível executar apenas projetos exportados em:**"
 
-#, fuzzy
-msgid "iOS 11.0 and later."
-msgstr "iOS 10.0 e superior."
+msgid "iOS."
+msgstr ""
 
 msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`Consoles <doc_consoles>`."
@@ -99,6 +107,11 @@ msgid ""
 "iOS platform support is available as of Godot 4.2, but is experimental and :"
 "ref:`some limitations apply <doc_c_sharp_platforms>`."
 msgstr ""
+"Projetos escritos em C# usando Godot 4 atualmente não podem ser exportados "
+"para a plataforma web. Para usar C# nessa plataforma, considere Godot 3 em "
+"vez disso. Suporte de plataforma Android e iOS está disponível a partir de "
+"Godot 4.2, mas é experimental e :ref: `algumas limitações aplicam "
+"<doc_c_sharp_platforms>`."
 
 msgid "Editor"
 msgstr "Editor"
@@ -122,7 +135,8 @@ msgstr ""
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`depurador <doc_debugger_panel>`."
 
-msgid "No support for debugging in threads yet."
+#, fuzzy
+msgid "Support for debugging in threads is available since 4.2."
 msgstr "Por enquanto, sem suporte para depuração em threads."
 
 msgid ""
@@ -134,6 +148,8 @@ msgid ""
 "Performance monitoring tools, including :ref:`custom performance monitors "
 "<doc_custom_performance_monitors>`."
 msgstr ""
+"Ferramentas de monitoramento de desempenho, incluindo :ref:`custom "
+"performance monitors <doc_custom_performance_monitors>`."
 
 msgid "Live script reloading."
 msgstr "Recarregamento de script em tempo real."
@@ -204,24 +220,37 @@ msgstr "Renderizando"
 msgid ""
 "3 rendering *methods* (running over 2 rendering *drivers*) are available:"
 msgstr ""
+"3 *métodos* de renderização (que funcionam sobre 2 *drivers* de "
+"renderização) estão disponíveis:"
 
 msgid ""
 "**Forward+**, running over Vulkan 1.0 (with optional Vulkan 1.1 and 1.2 "
 "features). The most advanced graphics backend, suited for desktop platforms "
 "only. Used by default on desktop platforms."
 msgstr ""
+"**Forward+**, rodando sobre Vulkan 1.0 (com recursos opcionais Vulkan 1.1 e "
+"1.2). O backend gráfico mais avançado, adequado apenas para plataformas de "
+"desktop. Usado por padrão em plataformas de desktop."
 
 msgid ""
 "**Forward Mobile**, running over Vulkan 1.0 (with optional Vulkan 1.1 and "
 "1.2 features). Less features, but renders simple scenes faster. Suited for "
 "mobile and desktop platforms. Used by default on mobile platforms."
 msgstr ""
+"**Forward Mobile**, rodando sobre Vulkan 1.0 (com recursos opcionais Vulkan "
+"1.1 e 1.2). Menos recursos, mas renderiza cenas simples mais rápidas. "
+"Adequado para plataformas mobile e desktop. Usado por padrão em plataformas "
+"mobiles."
 
+#, fuzzy
 msgid ""
 "**Compatibility**, running over OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2.0. The "
 "least advanced graphics backend, suited for low-end desktop and mobile "
 "platforms. Used by default on the web platform."
 msgstr ""
+"**Compatibilidade**, rodando sobre OpenGL 3.3 / OpenGL ES 3.0 / WebGL 2.0. O "
+"backend gráfico menos avançado, adequado para plataformas desktop e mobiles "
+"low-end. Usado por padrão na plataforma web."
 
 msgid "2D graphics"
 msgstr "Gráficos 2D"
@@ -247,10 +276,13 @@ msgstr "Camadas de parallax."
 msgid "Pseudo-3D support including preview in the editor."
 msgstr "Suporte Pseudo-3D incluindo visualização no editor."
 
+#, fuzzy
 msgid ""
 ":ref:`2D lighting <doc_2d_lights_and_shadows>` with normal maps and specular "
 "maps."
 msgstr ""
+":ref:`iluminação 2D<doc_2d_lights_and_shadows>` com mapas normais e mapas "
+"especulares."
 
 #, fuzzy
 msgid "Point (omni/spot) and directional 2D lights."
@@ -1850,6 +1882,8 @@ msgid ""
 ":ref:`Movie Maker mode <doc_creating_movies>` to record videos from a "
 "running project with synchronized audio and perfect frame pacing."
 msgstr ""
+":ref:` Modo de criação de vídeos <doc_creating_movies>` para gravar vídeos "
+"de um projeto em execução com áudio sincronizado e ritmo de quadro perfeito."
 
 msgid ""
 ":ref:`Low-level access to servers <doc_using_servers>` which allows "
@@ -1874,10 +1908,13 @@ msgstr ""
 "`Scripts shell de complementação <https://github.com/godotengine/godot/tree/"
 "master/misc/dist/shell>`__ estão disponíveis para Bash, zsh e fish."
 
+#, fuzzy
 msgid ""
 "Print colored text to standard output on all platforms using :ref:"
 "`print_rich <class_@GlobalScope_method_print_rich>`."
 msgstr ""
+"Imprimir texto colorido para saída padrão em todas as plataformas usando :"
+"ref:`print_rich <class_@GlobalScope_method_print_rich>`."
 
 #, fuzzy
 msgid ""

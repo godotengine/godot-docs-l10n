@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,17 +35,24 @@ msgstr ""
 msgid "Platforms"
 msgstr "平台"
 
+msgid ""
+"See :ref:`doc_system_requirements` for hardware and software version "
+"requirements."
+msgstr ""
+
 msgid "**Can run both the editor and exported projects:**"
 msgstr "**可以运行编辑器以及导出项目的：**"
 
-msgid "Windows 7 and later (64-bit and 32-bit)."
+#, fuzzy
+msgid "Windows (x86, 64-bit and 32-bit)."
 msgstr "Windows 7 以及更新的系统版本（64 位和 32 位）。"
 
-msgid "macOS 10.12 and later (64-bit, x86 and ARM)."
-msgstr "macOS 10.12 以及更新的系统版本（64 位，x86 和 ARM）。"
+msgid "macOS (x86 and ARM, 64-bit only)."
+msgstr ""
 
-msgid "Linux (64-bit, x86 and ARM)."
-msgstr "Linux（64 位，x86 和 ARM）。"
+#, fuzzy
+msgid "Linux (x86 and ARM, 64-bit and 32-bit)."
+msgstr "Windows 7 以及更新的系统版本（64 位和 32 位）。"
 
 msgid ""
 "Binaries are statically linked and can run on any distribution if compiled "
@@ -54,13 +61,14 @@ msgstr ""
 "二进制文件是静态链接的，并且如果在足够旧的基本发行版上进行编译，则可以在任何"
 "发行版上运行。"
 
-msgid "Official binaries are compiled on Ubuntu 14.04."
-msgstr "官方二进制文件是在 Ubuntu 14.04 上编译的。"
+msgid ""
+"Official binaries are compiled using the `Godot Engine buildroot <https://"
+"github.com/godotengine/buildroot>`__, allowing for binaries that work across "
+"common Linux distributions (including LTS variants)."
+msgstr ""
 
-msgid "32-bit binaries can be compiled from source."
-msgstr "可以从源代码编译 32 位二进制文件。"
-
-msgid "Android 6.0 and later (editor support is experimental)."
+#, fuzzy
+msgid "Android (editor support is experimental)."
 msgstr "Android 6.0及更高版本（编辑器支持是实验性的）。"
 
 msgid ""
@@ -73,8 +81,8 @@ msgstr ""
 msgid "**Runs exported projects:**"
 msgstr "**运行导出的项目：**"
 
-msgid "iOS 11.0 and later."
-msgstr "iOS 11.0 及更高版本。"
+msgid "iOS."
+msgstr ""
 
 msgid ":ref:`Consoles <doc_consoles>`."
 msgstr ":ref:`主机 <doc_consoles>`。"
@@ -118,7 +126,8 @@ msgstr ""
 msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
 msgstr "GDScript :ref:`调试器 <doc_debugger_panel>`。"
 
-msgid "No support for debugging in threads yet."
+#, fuzzy
+msgid "Support for debugging in threads is available since 4.2."
 msgstr "尚不支持在线程中调试。"
 
 msgid ""
@@ -545,7 +554,8 @@ msgid ""
 "Shadow normal offset bias and shadow pancaking to decrease the amount of "
 "visible shadow acne and peter-panning."
 msgstr ""
-"阴影通常情况下会偏置补偿和阴影平移，以减少可见的阴影失真和阴影悬浮的数量。"
+"要缓解可见的阴影失真和阴影悬浮的情况，可以调整阴影的法线偏移量偏置以及阴影压"
+"平。"
 
 msgid ""
 ":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "

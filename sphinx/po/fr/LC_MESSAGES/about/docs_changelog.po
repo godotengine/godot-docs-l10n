@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,11 +44,52 @@ msgstr ""
 "le présent document."
 
 #, fuzzy
-msgid "New pages since version 4.0"
+msgid "New pages since version 4.1"
 msgstr "Nouveaux tutoriels depuis la version 3.0"
+
+msgid "C#"
+msgstr "C#"
+
+#, fuzzy
+msgid ":ref:`doc_c_sharp_diagnostics`"
+msgstr ":ref:`doc_2d_sprite_animation`"
 
 msgid "Development"
 msgstr "Développement"
+
+#, fuzzy
+msgid ":ref:`doc_2d_coordinate_systems`"
+msgstr ""
+":ref:`Les scènes de godot et les scripts sont des classes "
+"<doc_what_are_godot_classes>`"
+
+#, fuzzy
+msgid "Migrating"
+msgstr "Éclairage"
+
+#, fuzzy
+msgid ":ref:`doc_upgrading_to_godot_4.2`"
+msgstr ""
+":ref:`Migration vers le langage de Shader de Godot "
+"<doc_converting_glsl_to_godot_shaders>`"
+
+msgid "I/O"
+msgstr ""
+
+#, fuzzy
+msgid ":ref:`doc_runtime_loading_and_saving`"
+msgstr ":ref:`Exporter <doc_exporting_basics>`"
+
+msgid "Platform-specific"
+msgstr "Propre à une plateforme"
+
+#, fuzzy
+msgid ":ref:`doc_android_library`"
+msgstr ":ref:`doc_android_plugin`"
+
+#, fuzzy
+msgid "New pages since version 4.0"
+msgstr "Nouveaux tutoriels depuis la version 3.0"
 
 #, fuzzy
 msgid ":ref:`doc_internal_rendering_architecture`"
@@ -59,10 +100,6 @@ msgstr ""
 #, fuzzy
 msgid ":ref:`doc_using_sanitizers`"
 msgstr ":ref:`Utilisation de serveur <doc_using_servers>`"
-
-#, fuzzy
-msgid "Migrating"
-msgstr "Éclairage"
 
 #, fuzzy
 msgid ":ref:`doc_upgrading_to_godot_4.1`"
@@ -196,9 +233,8 @@ msgstr ":ref:`Shaders de particule <doc_particle_shader>`"
 msgid "Workflow"
 msgstr ""
 
-#, fuzzy
 msgid ":ref:`doc_pr_review_guidelines`"
-msgstr "Lisez notre :ref:`doc_content_guidelines`."
+msgstr ":ref :`doc_pr_review_guidelines`"
 
 #, fuzzy
 msgid "XR"
@@ -301,9 +337,8 @@ msgstr "Bonnes pratiques pour les contributeurs au moteur"
 msgid ":ref:`doc_bisecting_regressions`"
 msgstr "Régressions en bisectation"
 
-#, fuzzy
 msgid ":ref:`doc_editor_and_docs_localization`"
-msgstr "Voir :ref:`doc_editor_and_docs_localization` pour plus de détails."
+msgstr "Voir :ref :`doc_editor_and_docs_localization` pour plus de détails"
 
 #, fuzzy
 msgid ":ref:`doc_introduction_to_editor_development`"
@@ -358,9 +393,6 @@ msgstr "Maths"
 msgid ":ref:`doc_random_number_generation`"
 msgstr "Génération de nombres aléatoires"
 
-msgid "Platform-specific"
-msgstr "Propre à une plateforme"
-
 #, fuzzy
 msgid ":ref:`doc_plugins_for_ios`"
 msgstr ":ref:`doc_optimizing_for_size`"
@@ -387,9 +419,8 @@ msgstr ":ref:`doc_visual_shaders`"
 msgid ":ref:`doc_shaders_style_guide`"
 msgstr ":ref:`Langage de shading <doc_shading_language>`"
 
-#, fuzzy
 msgid ":ref:`doc_debugger_panel`"
-msgstr "GDScript :ref:`debugger <doc_debugger_panel>`."
+msgstr ":ref :`doc_debugger_panel`"
 
 #, fuzzy
 msgid ":ref:`doc_creating_script_templates`"
@@ -483,7 +514,7 @@ msgstr ":ref:`Votre premier shader Spatial <doc_your_first_spatial_shader>`"
 
 msgid ":ref:`doc_your_second_spatial_shader`"
 msgstr ""
-":ref:`Votre premier shader Spatial : Partie 2 "
+":ref:`Votre premier shader Spatial : Partie 2 "
 "<doc_your_second_spatial_shader>`"
 
 msgid ":ref:`doc_visual_shaders`"

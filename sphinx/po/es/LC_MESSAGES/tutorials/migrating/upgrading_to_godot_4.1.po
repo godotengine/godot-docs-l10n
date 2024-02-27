@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,11 +57,10 @@ msgid ""
 msgstr ""
 
 msgid "Core"
-msgstr ""
+msgstr "Núcleo"
 
-#, fuzzy
 msgid "Change"
-msgstr "Cambios"
+msgstr "Cambio"
 
 #, fuzzy
 msgid "GDScript Compatible"
@@ -73,26 +72,23 @@ msgstr ""
 msgid "C# Source Compatible"
 msgstr ""
 
-#, fuzzy
 msgid "Introduced"
-msgstr "Introducción"
+msgstr "Introducido"
 
-#, fuzzy
 msgid "**Basis**"
-msgstr "Basis"
+msgstr "**Basis**"
 
 msgid "Method ``looking_at`` adds a new ``use_model_front`` optional parameter"
 msgstr ""
 
 msgid "|✔️|"
-msgstr ""
+msgstr "|✔️|"
 
 msgid "`GH-76082`_"
-msgstr ""
+msgstr "`GH-76082`_"
 
-#, fuzzy
 msgid "**Object**"
-msgstr "Objeto"
+msgstr "**Object**"
 
 msgid ""
 "Method ``get_meta_list`` changes return type from ``PackedStringArray`` to "
@@ -100,17 +96,16 @@ msgid ""
 msgstr ""
 
 msgid "|❌|"
-msgstr ""
+msgstr "|❌|"
 
 msgid "`GH-76418`_"
-msgstr ""
+msgstr "`GH-76418`_"
 
-#, fuzzy
 msgid "**Transform3D**"
-msgstr "**Transform2D**"
+msgstr "**Transform3D**"
 
 msgid "**UndoRedo**"
-msgstr ""
+msgstr "**UndoRedo**"
 
 msgid ""
 "Method ``create_action`` adds a new ``backward_undo_ops`` optional parameter"
@@ -120,10 +115,10 @@ msgid "|✔️ with compat|"
 msgstr ""
 
 msgid "`GH-76688`_"
-msgstr ""
+msgstr "`GH-76688`_"
 
 msgid "**WorkerThreadPool**"
-msgstr ""
+msgstr "**WorkerThreadPool**"
 
 msgid ""
 "Method ``wait_for_task_completion`` changes return type from ``void`` to "
@@ -131,20 +126,19 @@ msgid ""
 msgstr ""
 
 msgid "`GH-77143`_"
-msgstr ""
+msgstr "`GH-77143`_"
 
 msgid "Animation"
 msgstr "Animación"
 
-#, fuzzy
 msgid "**AnimationNode**"
-msgstr "Modo Animación"
+msgstr "**AnimationNode**"
 
 msgid "Method ``_process`` adds a new ``test_only`` parameter"
 msgstr ""
 
 msgid "`GH-75759`_"
-msgstr ""
+msgstr "`GH-75759`_"
 
 msgid "Method ``blend_input`` adds a new ``test_only`` optional parameter"
 msgstr ""
@@ -153,42 +147,38 @@ msgid "Method ``blend_node`` adds a new ``test_only`` optional parameter"
 msgstr ""
 
 msgid "**AnimationNodeStateMachinePlayback**"
-msgstr ""
+msgstr "**AnimationNodeStateMachinePlayback**"
 
 msgid ""
 "Method ``get_travel_path`` changes return type from ``PackedStringArray`` to "
 "``Array[StringName]``"
 msgstr ""
 
-#, fuzzy
 msgid "2D nodes"
-msgstr "Si el nodo"
+msgstr "Nodos 2D"
 
 msgid "**PathFollow2D**"
-msgstr ""
+msgstr "**PathFollow2D**"
 
 msgid "Property ``lookahead`` removed"
 msgstr ""
 
 msgid "`GH-72842`_"
-msgstr ""
+msgstr "`GH-72842`_"
 
-#, fuzzy
 msgid "3D nodes"
-msgstr "Si el nodo"
+msgstr "Nodos 3D"
 
-#, fuzzy
 msgid "**Geometry3D**"
-msgstr "**sampler3D**"
+msgstr "**Geometry3D**"
 
 msgid ""
 "Method ``segment_intersects_convex`` changes ``planes`` parameter type from "
 "untyped ``Array`` to ``Array[Plane]``"
 msgstr ""
 
-#, fuzzy
 msgid "**MeshInstance3D**"
-msgstr "**Métodos de Instancia**"
+msgstr "**MeshInstance3D**"
 
 msgid ""
 "Method ``create_multiple_convex_collisions`` adds a new ``settings`` "
@@ -196,11 +186,10 @@ msgid ""
 msgstr ""
 
 msgid "`GH-72152`_"
-msgstr ""
+msgstr "`GH-72152`_"
 
-#, fuzzy
 msgid "**Node3D**"
-msgstr "**Nodos:**"
+msgstr "**Node3D**"
 
 msgid "Method ``look_at`` adds a new ``use_model_front`` optional parameter"
 msgstr ""
@@ -210,12 +199,11 @@ msgid ""
 "parameter"
 msgstr ""
 
-#, fuzzy
 msgid "GUI nodes"
-msgstr "Si el nodo"
+msgstr "Nodos GUI"
 
 msgid "**CodeEdit**"
-msgstr ""
+msgstr "**CodeEdit**"
 
 msgid ""
 "Method ``add_code_completion_option`` adds a new ``location`` optional "
@@ -223,17 +211,16 @@ msgid ""
 msgstr ""
 
 msgid "`GH-75746`_"
-msgstr ""
+msgstr "`GH-75746`_"
 
-#, fuzzy
 msgid "**RichTextLabel**"
-msgstr "RichTextLabel"
+msgstr "**RichTextLabel**"
 
 msgid "Method ``push_list`` adds a new ``bullet`` optional parameter"
 msgstr ""
 
 msgid "`GH-75017`_"
-msgstr ""
+msgstr "`GH-75017`_"
 
 msgid ""
 "Method ``push_paragraph`` adds a new ``justification_flags`` optional "
@@ -241,43 +228,40 @@ msgid ""
 msgstr ""
 
 msgid "`GH-75250`_"
-msgstr ""
+msgstr "`GH-75250`_"
 
 msgid "Method ``push_paragraph`` adds a new ``tab_stops`` optional parameter"
 msgstr ""
 
 msgid "`GH-76401`_"
-msgstr ""
+msgstr "`GH-76401`_"
 
-#, fuzzy
 msgid "**Tree**"
-msgstr "**True**"
+msgstr "**Árbol**"
 
 msgid "Method ``edit_selected`` adds a new ``force_edit`` optional parameter"
 msgstr ""
 
 msgid "`GH-76794`_"
-msgstr ""
+msgstr "`GH-76794`_"
 
 msgid "Physics"
 msgstr "Física"
 
-#, fuzzy
 msgid "**Area2D**"
-msgstr "Area2D"
+msgstr "**Area2D**"
 
 msgid "Property ``priority`` changes type from ``float`` to ``int``"
 msgstr ""
 
 msgid "`GH-72749`_"
-msgstr ""
+msgstr "`GH-72749`_"
 
-#, fuzzy
 msgid "**Area3D**"
-msgstr "Area2D"
+msgstr "**Area3D**"
 
 msgid "**PhysicsDirectSpaceState2D**"
-msgstr ""
+msgstr "**PhysicsDirectSpaceState2D**"
 
 msgid ""
 "Method ``collide_shape`` changes return type from "
@@ -285,10 +269,10 @@ msgid ""
 msgstr ""
 
 msgid "`GH-75260`_"
-msgstr ""
+msgstr "`GH-75260`_"
 
 msgid "**PhysicsDirectSpaceState3D**"
-msgstr ""
+msgstr "**PhysicsDirectSpaceState3D**"
 
 msgid ""
 "Method ``collide_shape`` changes return type from "
@@ -299,34 +283,31 @@ msgid "Rendering"
 msgstr "Renderización"
 
 msgid "**RDShaderFile**"
-msgstr ""
+msgstr "**RDShaderFile**"
 
 msgid ""
 "Method ``get_version_list`` changes return type from ``PackedStringArray`` "
 "to ``Array[StringName]``"
 msgstr ""
 
-#, fuzzy
 msgid "**RenderingDevice**"
-msgstr "**Subrayado**"
+msgstr "**RenderingDevice**"
 
 msgid ""
 "Method ``draw_list_begin`` changes ``storage_textures`` parameter type from "
 "untyped ``Array`` to ``Array[RID]``"
 msgstr ""
 
-#, fuzzy
 msgid "**RenderingServer**"
-msgstr "**Server**"
+msgstr "**RenderingServer**"
 
 msgid ""
 "Method ``global_shader_parameter_get_list`` changes return type from "
 "``PackedStringArray`` to ``Array[StringName]``"
 msgstr ""
 
-#, fuzzy
 msgid "**SurfaceTool**"
-msgstr "SurfaceTool"
+msgstr "**SurfaceTool**"
 
 msgid ""
 "Method ``add_triangle_fan`` changes ``tangents`` parameter type from untyped "
@@ -336,24 +317,22 @@ msgstr ""
 msgid "Navigation"
 msgstr "Navegación"
 
-#, fuzzy
 msgid "**NavigationAgent2D**"
-msgstr "NavegaciónAgent3D"
+msgstr "**NavigationAgent2D**"
 
 msgid "Method ``set_velocity`` replaced with ``velocity`` property"
 msgstr ""
 
 msgid "`GH-69988`_"
-msgstr ""
+msgstr "`GH-69988`_"
 
 msgid ""
 "Property ``time_horizon`` split into ``time_horizon_agents`` and "
 "``time_horizon_obstacles``"
 msgstr ""
 
-#, fuzzy
 msgid "**NavigationAgent3D**"
-msgstr "NavegaciónAgent3D"
+msgstr "**NavigationAgent3D**"
 
 msgid "Property ``agent_height_offset`` renamed to ``path_height_offset``"
 msgstr ""
@@ -361,9 +340,8 @@ msgstr ""
 msgid "Property ``ignore_y`` removed"
 msgstr ""
 
-#, fuzzy
 msgid "**NavigationObstacle2D**"
-msgstr "NavigationObstacle3D"
+msgstr "**NavigationObstacle2D**"
 
 msgid "Property ``estimate_radius`` removed"
 msgstr ""
@@ -371,13 +349,11 @@ msgstr ""
 msgid "Method ``get_rid`` renamed to ``get_agent_rid``"
 msgstr ""
 
-#, fuzzy
 msgid "**NavigationObstacle3D**"
-msgstr "NavigationObstacle3D"
+msgstr "**NavigationObstacle3D**"
 
-#, fuzzy
 msgid "**NavigationServer2D**"
-msgstr "NavigationMeshes"
+msgstr "**NavigationServer2D**"
 
 msgid ""
 "Method ``agent_set_callback`` renamed to ``agent_set_avoidance_callback``"
@@ -391,15 +367,14 @@ msgid ""
 "``agent_set_time_horizon_agents`` and ``agent_set_time_horizon_obstacles``"
 msgstr ""
 
-#, fuzzy
 msgid "**NavigationServer3D**"
-msgstr "NavigationMeshes"
+msgstr "**NavigationServer3D**"
 
 msgid "Networking"
 msgstr "Redes"
 
 msgid "**WebRTCPeerConnectionExtension**"
-msgstr ""
+msgstr "**WebRTCPeerConnectionExtension**"
 
 msgid ""
 "Method ``_create_data_channel`` changes return type from ``Object`` to "
@@ -407,32 +382,30 @@ msgid ""
 msgstr ""
 
 msgid "`GH-78237`_"
-msgstr ""
+msgstr "`GH-78237`_"
 
 msgid "Editor plugins"
 msgstr "Plugins del editor"
 
-#, fuzzy
 msgid "**AnimationTrackEditPlugin**"
-msgstr "Editor de pistas de animación"
+msgstr "**AnimationTrackEditPlugin**"
 
 #, fuzzy
 msgid "Type ``AnimationTrackEditPlugin`` removed"
 msgstr "Editor de pistas de animación"
 
 msgid "`GH-76413`_"
-msgstr ""
+msgstr "`GH-76413`_"
 
-#, fuzzy
 msgid "**EditorInterface**"
-msgstr "Interfaz del editor (C ++)"
+msgstr "**EditorInterface**"
 
 msgid ""
 "Type ``EditorInterface`` changes inheritance from ``Node`` to ``Object``"
 msgstr ""
 
 msgid "`GH-76176`_"
-msgstr ""
+msgstr "`GH-76176`_"
 
 msgid ""
 "Method ``set_movie_maker_enabled`` replaced with ``movie_maker_enabled`` "
@@ -445,19 +418,19 @@ msgid ""
 msgstr ""
 
 msgid "**EditorResourcePreviewGenerator**"
-msgstr ""
+msgstr "**EditorResourcePreviewGenerator**"
 
 msgid "Method ``_generate`` adds a new ``metadata`` parameter"
 msgstr ""
 
 msgid "`GH-64628`_"
-msgstr ""
+msgstr "`GH-64628`_"
 
 msgid "Method ``_generate_from_path`` adds a new ``metadata`` parameter"
 msgstr ""
 
 msgid "**EditorUndoRedoManager**"
-msgstr ""
+msgstr "**EditorUndoRedoManager**"
 
 #, fuzzy
 msgid "Behavior changes"
@@ -468,9 +441,8 @@ msgid ""
 "to adjust your project."
 msgstr ""
 
-#, fuzzy
 msgid "**SubViewportContainer**"
-msgstr "ViewportContainer"
+msgstr "**SubViewportContainer**"
 
 msgid ""
 "When input events should reach SubViewports and their children, "
@@ -479,7 +451,7 @@ msgid ""
 msgstr ""
 
 msgid "`GH-57894`_"
-msgstr ""
+msgstr "`GH-57894`_"
 
 msgid ""
 "Multiple layered ``SubViewportContainer`` nodes, that should all receive "
@@ -487,9 +459,8 @@ msgid ""
 "`GH-79128`_ for details."
 msgstr ""
 
-#, fuzzy
 msgid "**Viewport**"
-msgstr "Viewports"
+msgstr "**Viewport**"
 
 msgid ""
 "``Viewport`` nodes, that have Physics Picking enabled, now automatically set "
@@ -497,7 +468,7 @@ msgid ""
 msgstr ""
 
 msgid "`GH-77595`_"
-msgstr ""
+msgstr "`GH-77595`_"
 
 msgid "Updating your GDExtension for 4.1"
 msgstr ""

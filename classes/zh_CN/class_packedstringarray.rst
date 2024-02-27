@@ -334,7 +334,7 @@ void **remove_at** **(** :ref:`int<class_int>` index **)**
 
 :ref:`int<class_int>` **resize** **(** :ref:`int<class_int>` new_size **)**
 
-设置数组的大小。如果数组被增大，则保留数组末端的元素。如果数组被缩小，则将数组截断到新的大小。
+设置数组的大小。如果数组被增大，则保留数组末端的元素。如果数组被缩小，则将数组截断到新的大小。调用一次 :ref:`resize<class_PackedStringArray_method_resize>` 并分配新值比逐个添加新元素要快。
 
 .. rst-class:: classref-item-separator
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -23,7 +23,6 @@ msgstr "Binäre Serialisierungs-API"
 msgid "Introduction"
 msgstr "Einführung"
 
-#, fuzzy
 msgid ""
 "Godot has a serialization API based on Variant. It's used for converting "
 "data types to an array of bytes efficiently. This API is exposed via the "
@@ -33,26 +32,34 @@ msgid ""
 "`class_FileAccess` as well as the packet APIs for :ref:`class_PacketPeer`. "
 "This format is *not* used for binary scenes and resources."
 msgstr ""
-"Godot verfügt über eine einfache Serialisierungs-API, die auf Variant "
-"basiert. Sie wird verwendet um Datentypen effizient in ein Array von Bytes "
-"zu konvertieren. Diese API wird in den Funktionen ``get_var`` und "
-"``store_var`` von :ref:`class_File` sowie in den Paket-APIs für :ref:"
-"`class_PacketPeer` verwendet. Dieses Format wird *nicht* für binäre Szenen "
-"und Ressourcen verwendet."
+"Godot hat eine Serialisierungs-API, die auf Variant basiert. Sie wird "
+"verwendet, um Datentypen effizient in ein Array von Bytes zu konvertieren. "
+"Diese API wird über die globalen Funktionen :ref:`bytes_to_var() "
+"<class_@GlobalScope_method_bytes_to_var>` und :ref:`var_to_bytes() "
+"<class_@GlobalScope_method_var_to_bytes>` zugänglich gemacht, aber sie wird "
+"auch in den Methoden ``get_var`` und ``store_var`` von :ref:"
+"`class_FileAccess` sowie in den Paket-APIs für :ref:`class_PacketPeer` "
+"verwendet. Dieses Format wird *nicht* für binäre Szenen und Ressourcen "
+"verwendet."
 
 msgid "Full Objects vs Object instance IDs"
-msgstr ""
+msgstr "Vollständige Objekte vs. Objektinstanz-IDs"
 
 msgid ""
 "If a variable is serialized with ``full_objects = true``, then any Objects "
 "contained in the variable will be serialized and included in the result. "
 "This is recursive."
 msgstr ""
+"Wenn eine Variable mit ``full_objects = true`` serialisiert wird, dann "
+"werden alle in der Variable enthaltenen Objekte serialisiert und in das "
+"Ergebnis aufgenommen. Dies ist rekursiv."
 
 msgid ""
 "If ``full_objects = false``, then only the instance IDs will be serialized "
 "for any Objects contained in the variable."
 msgstr ""
+"Wenn ``full_objects = false``, dann werden nur die Instanz-IDs für alle in "
+"der Variable enthaltenen Objekte serialisiert."
 
 msgid "Packet specification"
 msgstr "Paketspezifikation"
@@ -63,17 +70,18 @@ msgid ""
 "specifying the type of data."
 msgstr ""
 "Das Paket ist so konzipiert, dass es immer auf 4 Bytes aufgefüllt wird. Alle "
-"Werte sind Little-Endian-codiert (kleinstwertige Byte zuerst). Alle Pakete "
-"haben einen 4-Byte-Header, der eine Ganzzahl darstellt und den Datentyp "
-"angibt."
+"Werte sind Little-Endian-codiert. Alle Pakete haben einen 4-Byte-Header, der "
+"eine Ganzzahl darstellt und den Datentyp angibt."
 
 msgid ""
 "The lowest value two bytes are used to determine the type, while the highest "
 "value two bytes contain flags::"
 msgstr ""
+"Die zwei Bytes mit dem niedrigsten Wert werden zur Bestimmung des Typs "
+"verwendet, während die zwei Bytes mit dem höchsten Wert Flags enthalten::"
 
 msgid "Type"
-msgstr "Art"
+msgstr "Typ"
 
 msgid "Value"
 msgstr "Wert"
@@ -94,7 +102,7 @@ msgid "2"
 msgstr "2"
 
 msgid "integer"
-msgstr "Integer"
+msgstr "integer"
 
 msgid "3"
 msgstr "3"
@@ -106,7 +114,7 @@ msgid "4"
 msgstr "4"
 
 msgid "string"
-msgstr "Zeichenkette"
+msgstr "String"
 
 msgid "5"
 msgstr "5"
@@ -142,7 +150,7 @@ msgid "10"
 msgstr "10"
 
 msgid "quaternion"
-msgstr ""
+msgstr "quaternion"
 
 msgid "11"
 msgstr "11"
@@ -166,13 +174,13 @@ msgid "14"
 msgstr "14"
 
 msgid "color"
-msgstr "Farbe"
+msgstr "color"
 
 msgid "15"
 msgstr "15"
 
 msgid "node path"
-msgstr "Node-Pfad"
+msgstr "node path"
 
 msgid "16"
 msgstr "16"
@@ -184,7 +192,7 @@ msgid "17"
 msgstr "17"
 
 msgid "object"
-msgstr "Objekt"
+msgstr "object"
 
 msgid "18"
 msgstr "18"
@@ -196,7 +204,7 @@ msgid "19"
 msgstr "19"
 
 msgid "array"
-msgstr "Array"
+msgstr "array"
 
 msgid "20"
 msgstr "20"
@@ -207,30 +215,26 @@ msgstr "raw array"
 msgid "21"
 msgstr "21"
 
-#, fuzzy
 msgid "int32 array"
-msgstr "int array"
+msgstr "int32 array"
 
 msgid "22"
 msgstr "22"
 
-#, fuzzy
 msgid "int64 array"
-msgstr "int array"
+msgstr "int64 array"
 
 msgid "23"
 msgstr "23"
 
-#, fuzzy
 msgid "float32 array"
-msgstr "Farb-Array"
+msgstr "float32 array"
 
 msgid "24"
 msgstr "24"
 
-#, fuzzy
 msgid "float64 array"
-msgstr "Farb-Array"
+msgstr "float64 array"
 
 msgid "25"
 msgstr "25"
@@ -254,7 +258,7 @@ msgid "28"
 msgstr "28"
 
 msgid "color array"
-msgstr "Farb-Array"
+msgstr "color array"
 
 msgid "29"
 msgstr "29"
@@ -272,11 +276,11 @@ msgid ""
 msgstr ""
 "Darauf folgt der tatsächliche Paketinhalt, der für jeden Pakettyp "
 "unterschiedlich ist. Beachten Sie, dass dies voraussetzt, dass Godot mit "
-"Fließkommzahlen einfacher Genauigkeit kompiliert wird. Dies ist die "
-"Standardeinstellung. Wenn Godot mit Fließkommzahlen doppelter Genauigkeit "
-"kompiliert wurde, sollte die Länge der \"Float\"-Felder in Datenstrukturen 8 "
-"und der Offset ``(offset - 4) * 2 + 4`` betragen. Der Typ \"float\" selbst "
-"verwendet immer die doppelte Genauigkeit."
+"Single Precision-Floats kompiliert wird. Dies ist die Default-Einstellung. "
+"Wenn Godot mit Double Precision-Floats kompiliert wurde, sollte die Länge "
+"der \"Float\"-Felder in Datenstrukturen 8 und der Offset ``(offset - 4) * 2 "
+"+ 4`` betragen. Der Typ \"float\" selbst verwendet immer die Double "
+"Precision."
 
 msgid "0: null"
 msgstr "0: null"
@@ -294,10 +298,10 @@ msgid "Description"
 msgstr "Beschreibung"
 
 msgid "Integer"
-msgstr "Ganze Zahl"
+msgstr "Integer"
 
 msgid "0 for False, 1 for True"
-msgstr "0 für \"False\", 1 für \"True\""
+msgstr "0 für False, 1 für True"
 
 msgid "2: :ref:`int<class_int>`"
 msgstr "2: :ref:`int<class_int>`"
@@ -305,17 +309,21 @@ msgstr "2: :ref:`int<class_int>`"
 msgid ""
 "If no flags are set (flags == 0), the integer is sent as a 32 bit integer:"
 msgstr ""
+"Wenn keine Flags gesetzt sind (flags == 0), wird die Integer als 32-Bit-"
+"Integer gesendet:"
 
 msgid "32-bit signed integer"
-msgstr "32-bit signed integer (Vorzeichen behaftet)"
+msgstr "32-bit Signed Integer"
 
 msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the integer is sent "
 "as a 64-bit integer:"
 msgstr ""
+"Wenn das Flag ``ENCODE_FLAG_64`` gesetzt ist (``flags & 1 == 1``), wird das "
+"Integer als 64-Bit Integer gesendet:"
 
 msgid "64-bit signed integer"
-msgstr "64-Bit-Ganzzahl mit Vorzeichen"
+msgstr "64-Bit Signed Integer"
 
 msgid "3: :ref:`float<class_float>`"
 msgstr "3: :ref:`float<class_float>`"
@@ -324,26 +332,30 @@ msgid ""
 "If no flags are set (flags == 0), the float is sent as a 32 bit single "
 "precision:"
 msgstr ""
+"Wenn keine Flags gesetzt sind (flags == 0), wird der Float als 32-Bit-Single-"
+"Precision gesendet:"
 
 msgid "Float"
 msgstr "Float"
 
 msgid "IEEE 754 single-precision float"
-msgstr "IEEE 754 Fließkommazahl mit einfacher Genauigkeit"
+msgstr "IEEE 754 Single Precision Float"
 
 msgid ""
 "If flag ``ENCODE_FLAG_64`` is set (``flags & 1 == 1``), the float is sent as "
 "a 64-bit double precision number:"
 msgstr ""
+"Wenn das Flag ``ENCODE_FLAG_64`` gesetzt ist (``flags & 1 == 1``), wird der "
+"Float als 64-Bit-Zahl mit Double Precision gesendet:"
 
 msgid "IEEE 754 double-precision float"
-msgstr "IEEE 754 Fließkommazahl mit doppelter Genauigkeit"
+msgstr "IEEE 754 Double Precision Float"
 
 msgid "4: :ref:`String<class_string>`"
 msgstr "4: :ref:`String<class_string>`"
 
 msgid "String length (in bytes)"
-msgstr "String Länge (in Bytes)"
+msgstr "String-Länge (in Bytes)"
 
 msgid "X"
 msgstr "X"
@@ -352,34 +364,34 @@ msgid "Bytes"
 msgstr "Bytes"
 
 msgid "UTF-8 encoded string"
-msgstr "UTF-8-codierte Zeichenfolge"
+msgstr "UTF-8-codierter String"
 
 msgid "This field is padded to 4 bytes."
-msgstr "Dieses Feld wird auf 4 Bytes aufgefüllt."
+msgstr "Dieses Feld wird auf 4 Bytes per Padding aufgefüllt."
 
 msgid "5: :ref:`Vector2<class_vector2>`"
 msgstr "5: :ref:`Vector2<class_vector2>`"
 
 msgid "X coordinate"
-msgstr "X Koordinate"
+msgstr "X-Koordinate"
 
 msgid "Y coordinate"
-msgstr "Y Koordinate"
+msgstr "Y-Koordinate"
 
 msgid "6: :ref:`Rect2<class_rect2>`"
 msgstr "6: :ref:`Rect2<class_rect2>`"
 
 msgid "X size"
-msgstr "X Größe"
+msgstr "X-Größe"
 
 msgid "Y size"
-msgstr "Y Größe"
+msgstr "Y-Größe"
 
 msgid "7: :ref:`Vector3<class_vector3>`"
 msgstr "7: :ref:`Vector3<class_vector3>`"
 
 msgid "Z coordinate"
-msgstr "Z Koordinate"
+msgstr "Z-Koordinate"
 
 msgid "8: :ref:`Transform2D<class_transform2d>`"
 msgstr "8: :ref:`Transform2D<class_transform2d>`"
@@ -401,22 +413,24 @@ msgstr ""
 "Die Y-Komponente des Y-Spaltenvektors, auf die über [1][1] zugegriffen wird"
 
 msgid "The X component of the origin vector, accessed via [2][0]"
-msgstr "Die X Komponente des Ursprungsvektors, Zugriff über [2][0]"
+msgstr ""
+"Die X-Komponente des Ursprungsvektors, auf die über [2][0] zugegriffen wird"
 
 msgid "The Y component of the origin vector, accessed via [2][1]"
-msgstr "Die Y Komponente des Ursprungsvektors, Zugriff über [2][1]"
+msgstr ""
+"Die Y-Komponente des Ursprungsvektors, auf die über [2][1] zugegriffen wird"
 
 msgid "9: :ref:`Plane<class_plane>`"
 msgstr "9: :ref:`Plane<class_plane>`"
 
 msgid "Normal X"
-msgstr "Normal X"
+msgstr "Normalen-X"
 
 msgid "Normal Y"
-msgstr "Normal Y"
+msgstr "Normalen-Y"
 
 msgid "Normal Z"
-msgstr "Normal Z"
+msgstr "Normalen-Z"
 
 msgid "Distance"
 msgstr "Distanz"
@@ -440,7 +454,7 @@ msgid "11: :ref:`AABB<class_aabb>`"
 msgstr "11: :ref:`AABB<class_aabb>`"
 
 msgid "Z size"
-msgstr "Z Größe"
+msgstr "Z-Größe"
 
 msgid "12: :ref:`Basis<class_basis>`"
 msgstr "12: :ref:`Basis<class_basis>`"
@@ -478,19 +492,22 @@ msgid "40"
 msgstr "40"
 
 msgid "The X component of the origin vector, accessed via [3][0]"
-msgstr "Die X Komponente des Ursprungsvektors, Zugriff über [3][0]"
+msgstr ""
+"Die X-Komponente des Ursprungsvektors, auf die über [3][0] zugegriffen wird"
 
 msgid "44"
 msgstr "44"
 
 msgid "The Y component of the origin vector, accessed via [3][1]"
-msgstr "Die Y Komponente des Ursprungsvektors. Zugriff über [3][1]"
+msgstr ""
+"Die Y-Komponente des Ursprungsvektors, auf die über [3][1] zugegriffen wird"
 
 msgid "48"
 msgstr "48"
 
 msgid "The Z component of the origin vector, accessed via [3][2]"
-msgstr "Die Z Komponente des Ursprungsvektors, Zugriff über [3][2]"
+msgstr ""
+"Die Z-Komponente des Ursprungsvektors, auf die über [3][2] zugegriffen wird"
 
 msgid "14: :ref:`Color<class_color>`"
 msgstr "14: :ref:`Color<class_color>`"
@@ -513,17 +530,17 @@ msgstr "15: :ref:`NodePath<class_nodepath>`"
 msgid ""
 "String length, or new format (val&0x80000000!=0 and NameCount=val&0x7FFFFFFF)"
 msgstr ""
-"Zeichenketten Länge, oder neues Format (val&0x80000000!=0 und "
+"String-Länge, oder neues Format (val&0x80000000!=0 und "
 "NameCount=val&0x7FFFFFFF)"
 
 msgid "For old format:"
-msgstr "für altes Format:"
+msgstr "Für altes Format:"
 
 msgid "Padded to 4 bytes."
-msgstr "aufgefüllt auf 4 Byte."
+msgstr "Aufgefüllt mit Padding auf 4 Byte."
 
 msgid "For new format:"
-msgstr "für neues Format:"
+msgstr "Für neues Format:"
 
 msgid "Sub-name count"
 msgstr "Anzahl der Unternamen"
@@ -538,13 +555,13 @@ msgid "X+0"
 msgstr "X+0"
 
 msgid "String length"
-msgstr "Zeichenketten Länge"
+msgstr "String-Länge"
 
 msgid "X+4"
 msgstr "X+4"
 
 msgid "Every name string is padded to 4 bytes."
-msgstr "Jede Namenszeichenfolge wird auf 4 Bytes aufgefüllt."
+msgstr "Jeder Namens-String wird mit Padding auf 4 Bytes aufgefüllt."
 
 msgid "16: :ref:`RID<class_rid>` (unsupported)"
 msgstr "16: :ref:`RID<class_rid>` (nicht unterstützt)"
@@ -556,73 +573,65 @@ msgid ""
 "An Object could be serialized in three different ways: as a null value, with "
 "``full_objects = false``, or with ``full_objects = true``."
 msgstr ""
+"Ein Objekt kann auf drei verschiedene Arten serialisiert werden: als ein "
+"null-Wert, mit ``full_objects = false``, oder mit ``full_objects = true``."
 
-#, fuzzy
 msgid "A null value"
-msgstr "Aufzählungswert"
+msgstr "Ein null-Wert"
 
-#, fuzzy
 msgid "Zero (32-bit signed integer)"
-msgstr "32-bit signed integer (Vorzeichen behaftet)"
+msgstr "Null (32-Bit Signed Integer)"
 
 msgid "``full_objects`` disabled"
-msgstr ""
+msgstr "``full_objects`` deaktiviert"
 
-#, fuzzy
 msgid "The Object instance ID (64-bit signed integer)"
-msgstr "64-Bit-Ganzzahl mit Vorzeichen"
+msgstr "Die Objektinstanz-ID (64-Bit Signed Integer)"
 
 msgid "``full_objects`` enabled"
-msgstr ""
+msgstr "``full_objects`` aktiviert"
 
-#, fuzzy
 msgid "Class name (String length)"
-msgstr "Zeichenketten Länge"
+msgstr "Klassenname (String-Länge)"
 
-#, fuzzy
 msgid "Class name (UTF-8 encoded string)"
-msgstr "UTF-8-codierte Zeichenfolge"
+msgstr "Klassenname (UTF-8 kodierter String)"
 
-#, fuzzy
 msgid "X+8"
-msgstr "X+0"
+msgstr "X+8"
 
 msgid "The number of properties that are serialized"
-msgstr "Die Anzahl der Eigenschaften, die serialisiert werden"
+msgstr "Die Anzahl der Propertys, die serialisiert werden"
 
 msgid "For each property:"
-msgstr "Für jede Eigenschaft:"
+msgstr "Für jede Property:"
 
 msgid "Y"
-msgstr ""
+msgstr "Y"
 
-#, fuzzy
 msgid "Property name (String length)"
-msgstr "Zeichenketten Länge"
+msgstr "Property-Name (String-Länge)"
 
-#, fuzzy
 msgid "Y+4"
-msgstr "X+4"
+msgstr "Y+4"
 
 msgid "Z"
-msgstr ""
+msgstr "Z"
 
-#, fuzzy
 msgid "Property name (UTF-8 encoded string)"
-msgstr "UTF-8-codierte Zeichenfolge"
+msgstr "Property-Name (UTF-8 kodierter String)"
 
 msgid "Y+4+Z"
-msgstr ""
+msgstr "Y+4+Z"
 
 msgid "W"
-msgstr ""
+msgstr "W"
 
-#, fuzzy
 msgid "<variable>"
-msgstr "Variable"
+msgstr "<variable>"
 
 msgid "Property value, using this same format"
-msgstr ""
+msgstr "Wert der Property, unter Verwendung desselben Formats"
 
 msgid ""
 "Not all properties are included. Only properties that are configured with "
@@ -636,9 +645,20 @@ msgid ""
 "`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` for the possible "
 "usage flags."
 msgstr ""
+"Es werden nicht alle Propertys einbezogen. Nur Propertys, die mit dem "
+"gesetzten :ref:"
+"`PROPERTY_USAGE_STORAGE<class_@GlobalScope_constant_PROPERTY_USAGE_STORAGE>`-"
+"Flag konfiguriert sind, werden serialisiert. Sie können eine neue Usage Flag "
+"zu einer Property hinzufügen, indem Sie die Methode :ref:"
+"`_get_property_list<class_Object_private_method__get_property_list>` in "
+"Ihrer Klasse überschreiben. Sie können auch überprüfen, wie die Property-"
+"Verwendung konfiguriert ist, indem Sie ``Object._get_property_list`` "
+"aufrufen. Siehe :ref:"
+"`PropertyUsageFlags<enum_@GlobalScope_PropertyUsageFlags>` für die möglichen "
+"Usage-Flags."
 
 msgid "18: :ref:`Dictionary<class_dictionary>`"
-msgstr "18: :ref:`Dictionary<class_dictionary>`"
+msgstr "18: :ref:`Dictionary <class_dictionary>`"
 
 msgid "val&0x7FFFFFFF = elements, val&0x80000000 = shared (bool)"
 msgstr "val&0x7FFFFFFF = Elemente, val&0x80000000 = shared (Bool)"
@@ -647,20 +667,24 @@ msgid ""
 "Then what follows is, for amount of \"elements\", pairs of key and value, "
 "one after the other, using this same format."
 msgstr ""
+"Dann folgen für die Menge der \"Elemente\", Paare von Schlüssel und Wert, "
+"eines nach dem anderen, unter Verwendung desselben Formats."
 
 msgid "19: :ref:`Array<class_array>`"
-msgstr "19: :ref:`Array<class_array>`"
+msgstr "19: :ref:`Array <class_array>`"
 
 msgid ""
 "Then what follows is, for amount of \"elements\", values one after the "
 "other, using this same format."
 msgstr ""
+"Dann folgen für die Menge der \"Elemente\" nacheinander Werte in demselben "
+"Format."
 
 msgid "20: :ref:`PackedByteArray<class_PackedByteArray>`"
 msgstr "20: :ref:`PackedByteArray<class_PackedByteArray>`"
 
 msgid "Array length (Bytes)"
-msgstr "Feld Länge (Bytes)"
+msgstr "Array-Länge (Bytes)"
 
 msgid "8..8+length"
 msgstr "8..8+Länge"
@@ -672,13 +696,13 @@ msgid "Byte (0..255)"
 msgstr "Byte (0..255)"
 
 msgid "The array data is padded to 4 bytes."
-msgstr "Die Array-Daten werden auf 4 Byte aufgefüllt."
+msgstr "Die Array-Daten werden mit Padding auf 4 Byte aufgefüllt."
 
 msgid "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
 msgstr "21: :ref:`PackedInt32Array<class_PackedInt32Array>`"
 
 msgid "Array length (Integers)"
-msgstr "Feld Länge (Integer)"
+msgstr "Array-Länge (Integers)"
 
 msgid "8..8+length\\*4"
 msgstr "8..8+Länge\\*4"
@@ -693,36 +717,34 @@ msgid "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
 msgstr "23: :ref:`PackedFloat32Array<class_PackedFloat32Array>`"
 
 msgid "Array length (Floats)"
-msgstr "Array Länge (Fließkomma)"
+msgstr "Array-Länge (Floats)"
 
-#, fuzzy
 msgid "32-bit IEEE 754 single-precision float"
-msgstr "IEEE 754 Fließkommazahl mit einfacher Genauigkeit"
+msgstr "32-Bit IEEE 754 Single Precision Float"
 
 msgid "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
 msgstr "24: :ref:`PackedFloat64Array<class_PackedFloat64Array>`"
 
-#, fuzzy
 msgid "64-bit IEEE 754 double-precision float"
-msgstr "IEEE 754 Fließkommazahl mit doppelter Genauigkeit"
+msgstr "64-Bit IEEE 754 Double Precision Float"
 
 msgid "25: :ref:`PackedStringArray<class_PackedStringArray>`"
 msgstr "25: :ref:`PackedStringArray<class_PackedStringArray>`"
 
 msgid "Array length (Strings)"
-msgstr "Feld Länge (Zeichenketten)"
+msgstr "Array-Länge (Strings)"
 
 msgid "For each String:"
-msgstr "für jede Zeichenkette:"
+msgstr "für jeden String:"
 
 msgid "Every string is padded to 4 bytes."
-msgstr "Jede Zeichenkette wird auf 4 Bytes aufgefüllt."
+msgstr "Jeder String wird mit Padding auf 4 Bytes aufgefüllt."
 
 msgid "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
 msgstr "26: :ref:`PackedVector2Array<class_PackedVector2Array>`"
 
 msgid "Array length"
-msgstr "Array Länge"
+msgstr "Array-Länge"
 
 msgid "8..12+length\\*8"
 msgstr "8..12+Länge\\*8"

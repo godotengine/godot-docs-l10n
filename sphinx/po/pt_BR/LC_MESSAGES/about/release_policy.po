@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -191,11 +191,12 @@ msgstr "**Data de lançamento**"
 msgid "**Support level**"
 msgstr "**Nível de suporte**"
 
-msgid "Godot 4.2 (`master`)"
-msgstr ""
+#, fuzzy
+msgid "Godot 4.3 (`master`)"
+msgstr "Godot 4.2 (`master`)"
 
 #, fuzzy
-msgid "November 2023 (estimate)"
+msgid "April 2024 (estimate)"
 msgstr "Q1 2023 (Previsto)"
 
 #, fuzzy
@@ -210,12 +211,12 @@ msgid "unstable"
 msgstr "instável"
 
 #, fuzzy
-msgid "Godot 4.1"
+msgid "Godot 4.2"
 msgstr "Godot 4.0"
 
 #, fuzzy
-msgid "July 2023"
-msgstr "Julho de 2016"
+msgid "November 2023"
+msgstr "Novembro de 2021"
 
 #, fuzzy
 msgid ""
@@ -228,6 +229,14 @@ msgstr ""
 msgid "supported"
 msgstr "Suportado"
 
+#, fuzzy
+msgid "Godot 4.1"
+msgstr "Godot 4.0"
+
+#, fuzzy
+msgid "July 2023"
+msgstr "Julho de 2016"
+
 msgid "Godot 4.0"
 msgstr "Godot 4.0"
 
@@ -236,11 +245,18 @@ msgid "March 2023"
 msgstr "Março de 2019"
 
 #, fuzzy
+msgid "|eol| No longer supported (last update: 4.0.4)."
+msgstr "|eol| Não recebe suporte. (última atualização: 2.0.4.1)."
+
+msgid "eol"
+msgstr "eol"
+
+#, fuzzy
 msgid "Godot 3.6 (`3.x`, LTS)"
 msgstr "Godot 3.6 (LTS)"
 
 #, fuzzy
-msgid "Q3 2023 (estimate)"
+msgid "Q1 2024 (estimate)"
 msgstr "Q1 2023 (Previsto)"
 
 #, fuzzy
@@ -264,15 +280,9 @@ msgid "November 2021"
 msgstr "Novembro de 2021"
 
 #, fuzzy
-msgid ""
-"|eol| No longer supported, as fully superseded by the compatible 3.5 release "
-"(last update: 3.4.5)."
+msgid "|eol| No longer supported (last update: 3.4.5)."
 msgstr ""
-"|eol| Não é mais suportado como totalmente substituído pela compatível "
-"versão 3.4 (última atualização: 3.3.4)."
-
-msgid "eol"
-msgstr "eol"
+"|eol| Está versão já não é mais suportada. (última atualização: 3.2.3)."
 
 msgid "Godot 3.3"
 msgstr "Godot 3.3"
@@ -281,12 +291,9 @@ msgid "April 2021"
 msgstr "Abril de 2021"
 
 #, fuzzy
-msgid ""
-"|eol| No longer supported, as fully superseded by the compatible 3.4 release "
-"(last update: 3.3.4)."
+msgid "|eol| No longer supported (last update: 3.3.4)."
 msgstr ""
-"|eol| Não é mais suportado como totalmente substituído pela compatível "
-"versão 3.4 (última atualização: 3.3.4)."
+"|eol| Está versão já não é mais suportada. (última atualização: 3.2.3)."
 
 msgid "Godot 3.2"
 msgstr "Godot 3.2"
@@ -372,6 +379,8 @@ msgid ""
 "See :ref:`doc_upgrading_to_godot_4` for instructions on migrating a project "
 "from Godot 3.x to 4.x."
 msgstr ""
+"Veja :ref:`doc_upgrading_to_godot_4` para instruções sobre como migrar um "
+"projeto de Godot 3.x para 4.x."
 
 #, fuzzy
 msgid "Which version should I use for a new project?"
@@ -386,14 +395,24 @@ msgid ""
 "check which methods have been renamed (if you get a script error while "
 "trying to use a specific node or method that was renamed in Godot 4.x)."
 msgstr ""
+"Recomendamos usar o Godot 4.x para novos projetos, já que a série Godot 4.x "
+"será suportada muito depois que 3.x parar de receber atualizações no futuro. "
+"Uma ressalva é que muita documentação de terceiros ainda não foi atualizada "
+"para Godot 4.x. Se você tem que seguir um tutorial projetado para Godot 3.x, "
+"recomendamos manter :ref:`doc_upgrading_to_godot_4` aberto em uma guia "
+"separada para verificar quais métodos foram renomeados (se você obter um "
+"erro de script ao tentar usar um nó específico ou método que foi renomeado "
+"em Godot 4.x)."
 
 msgid ""
 "If your project requires a feature that is missing in 4.x (such as GLES2/"
 "WebGL 1.0), you should use Godot 3.x for a new project instead."
 msgstr ""
+"Se o seu projeto requer uma funcionalidade que está faltando no 4.x (como "
+"GLES2/WebGL 1.0), você deve usar Godot 3.x para um novo projeto."
 
 msgid "Should I upgrade my project to use new engine versions?"
-msgstr ""
+msgstr "Devo atualizar meu projeto para usar novas versões do Godot?"
 
 msgid ""
 "Upgrading software while working on a project is inherently risky, so "
@@ -401,11 +420,18 @@ msgid ""
 "upgrade. Also, make backups of your project or use version control to "
 "prevent losing data in case the upgrade goes wrong."
 msgstr ""
+"Atualizar um software enquanto trabalha em um projeto é inerentemente "
+"arriscado, então considere se é uma boa ideia para o seu projeto antes de "
+"tentar uma atualização. Além disso, faça backups de seu projeto ou use "
+"controle de versão para evitar a perda de dados no caso de a atualização "
+"correr mal."
 
 msgid ""
 "That said, we do our best to keep minor and especially patch releases "
 "compatible with existing projects."
 msgstr ""
+"Dito isto, fazemos o nosso melhor para manter lançamentos menores e "
+"especialmente patchs compatíveis com projetos existentes."
 
 msgid ""
 "The general recommendation is to upgrade your project to follow new *patch* "

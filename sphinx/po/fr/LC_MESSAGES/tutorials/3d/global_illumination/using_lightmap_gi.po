@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -361,16 +361,17 @@ msgstr ""
 "à une scène. Cela permettra le light baking sur tous les nœuds (et sous-"
 "nœuds) de cette scène, même sur les scènes instanciées."
 
-#, fuzzy
 msgid ""
 "A sub-scene can be instanced several times, as this is supported by the "
 "baker. Each instance will be assigned a lightmap of its own. To avoid issues "
 "with inconsistent lightmap texel scaling, make sure to respect the rule "
 "about mesh scaling mentioned before."
 msgstr ""
-"Une sous-scène peut être instanciée plusieurs fois, car cela est supporté "
-"par le baker, et chacune se verra attribuer une lightmap (assurez-vous juste "
-"de respecter la règle de mise à l'échelle mentionnée précédemment) :"
+"Une sous-scène peut être instanciée plusieurs fois, car cela est pris en "
+"charge par le Baker. Chaque instance se verra attribuer sa propre carte de "
+"lumières. Pour éviter les problèmes de mise à l'échelle incohérente des "
+"texels de la carte de lumières, assurez-vous de respecter la règle "
+"concernant la mise à l'échelle du maillage mentionnée précédemment."
 
 msgid "Setting up meshes"
 msgstr "Mise en place des maillages"
@@ -433,9 +434,8 @@ msgid ""
 "disabling its **Visible** property."
 msgstr ""
 
-#, fuzzy
 msgid "Dynamic"
-msgstr "Dynamique :"
+msgstr "Dynamique"
 
 #, fuzzy
 msgid ""
@@ -458,9 +458,8 @@ msgstr ""
 "relativement correcte. Par exemple, vous pouvez l'utiliser pour créer des "
 "torches statiques vacillantes dont la lumière indirecte est préparée."
 
-#, fuzzy
 msgid "Static"
-msgstr "Statique :"
+msgstr "Statique"
 
 #, fuzzy
 msgid ""
@@ -903,6 +902,17 @@ msgstr ""
 "éditeur d'images pour effectuer un post-traitement si nécessaire. Cependant, "
 "gardez à l'esprit que les modifications apportées au fichier EXR seront "
 "perdues lors d'une nouvelle préparation de lightmaps."
+
+msgid "Reducing LightmapGI artifacts"
+msgstr ""
+
+msgid ""
+"If you notice LightmapGI nodes popping in and out of existence as the camera "
+"moves, this is most likely because the engine is rendering too many "
+"LightmapGI instances at once. Godot is limited to rendering 8 LightmapGI "
+"nodes at once, which means up to 8 instances can be in the camera view "
+"before some of them will start flickering."
+msgstr ""
 
 msgid "Translation status"
 msgstr "État de la traduction"

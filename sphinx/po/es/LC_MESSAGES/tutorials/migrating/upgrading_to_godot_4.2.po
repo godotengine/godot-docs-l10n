@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -88,11 +88,10 @@ msgid ""
 msgstr ""
 
 msgid "Core"
-msgstr ""
+msgstr "Núcleo"
 
-#, fuzzy
 msgid "Change"
-msgstr "Cambios"
+msgstr "Cambio"
 
 #, fuzzy
 msgid "GDScript Compatible"
@@ -104,39 +103,36 @@ msgstr ""
 msgid "C# Source Compatible"
 msgstr ""
 
-#, fuzzy
 msgid "Introduced"
-msgstr "Introducción"
+msgstr "Introducido"
 
-#, fuzzy
 msgid "**Node**"
-msgstr "**Nodos:**"
+msgstr "**Node**"
 
 msgid "Constant ``NOTIFICATION_NODE_RECACHE_REQUESTED`` removed"
 msgstr ""
 
 msgid "|❌|"
-msgstr ""
+msgstr "|❌|"
 
 msgid "|✔️|"
-msgstr ""
+msgstr "|✔️|"
 
 msgid "`GH-84419`_"
-msgstr ""
+msgstr "`GH-84419`_"
 
 msgid "Animation"
 msgstr "Animación"
 
-#, fuzzy
 msgid "**AnimationPlayer**"
-msgstr "AnimationPlayer"
+msgstr "**AnimationPlayer**"
 
 msgid ""
 "Method ``_post_process_key_value`` moved to base class ``AnimationMixer``"
 msgstr ""
 
 msgid "`GH-80813`_"
-msgstr ""
+msgstr "`GH-80813`_"
 
 msgid "Method ``add_animation_library`` moved to base class ``AnimationMixer``"
 msgstr ""
@@ -232,9 +228,8 @@ msgstr ""
 msgid "Method ``seek`` adds a new ``update_only`` optional parameter"
 msgstr ""
 
-#, fuzzy
 msgid "**AnimationTree**"
-msgstr "Animación"
+msgstr "**AnimationTree**"
 
 msgid "Property ``active`` moved to base class ``AnimationMixer``"
 msgstr ""
@@ -278,20 +273,18 @@ msgid ""
 "``AnimationRootNode``"
 msgstr ""
 
-#, fuzzy
 msgid "GUI nodes"
-msgstr "Si el nodo"
+msgstr "Nodos GUI"
 
-#, fuzzy
 msgid "**PopupMenu**"
-msgstr "PopupMenu"
+msgstr "**PopupMenu**"
 
 msgid ""
 "Method ``add_icon_shortcut`` adds a new ``allow_echo`` optional parameter"
 msgstr ""
 
 msgid "`GH-36493`_"
-msgstr ""
+msgstr "`GH-36493`_"
 
 msgid "Method ``add_shortcut`` adds a new ``allow_echo`` optional parameter"
 msgstr ""
@@ -300,11 +293,10 @@ msgid "Method ``clear`` adds a new ``free_submenus`` optional parameter"
 msgstr ""
 
 msgid "`GH-79965`_"
-msgstr ""
+msgstr "`GH-79965`_"
 
-#, fuzzy
 msgid "**RichTextLabel**"
-msgstr "RichTextLabel"
+msgstr "**RichTextLabel**"
 
 msgid ""
 "Method ``add_image`` adds new ``key``, ``pad``, ``tooltip``, and "
@@ -312,14 +304,13 @@ msgid ""
 msgstr ""
 
 msgid "`GH-80410`_"
-msgstr ""
+msgstr "`GH-80410`_"
 
 msgid "Rendering"
 msgstr "Renderización"
 
-#, fuzzy
 msgid "**ImporterMesh**"
-msgstr "**JavaScript**"
+msgstr "**ImporterMesh**"
 
 msgid ""
 "Method ``add_surface`` changes ``flags`` parameter type from ``uint32`` to "
@@ -327,16 +318,15 @@ msgid ""
 msgstr ""
 
 msgid "`GH-81138`_"
-msgstr ""
+msgstr "`GH-81138`_"
 
 msgid ""
 "Method ``get_surface_format`` changes return type from ``uint32`` to "
 "``uint64``"
 msgstr ""
 
-#, fuzzy
 msgid "**MeshDataTool**"
-msgstr "MeshDataTool"
+msgstr "**MeshDataTool**"
 
 msgid ""
 "Method ``commit_to_surface`` adds a new ``compression_flags`` optional "
@@ -346,9 +336,8 @@ msgstr ""
 msgid "Method ``get_format`` changes return type from ``uint32`` to ``uint64``"
 msgstr ""
 
-#, fuzzy
 msgid "**RenderingDevice**"
-msgstr "**Subrayado**"
+msgstr "**RenderingDevice**"
 
 msgid ""
 "Enum field ``BarrierMask.BARRIER_MASK_RASTER`` changes value from ``1`` to "
@@ -356,7 +345,7 @@ msgid ""
 msgstr ""
 
 msgid "`GH-79911`_"
-msgstr ""
+msgstr "`GH-79911`_"
 
 msgid ""
 "Enum field ``BarrierMask.BARRIER_MASK_ALL_BARRIERS`` changes value from "
@@ -374,25 +363,23 @@ msgid ""
 msgstr ""
 
 msgid "`GH-79606`_"
-msgstr ""
+msgstr "`GH-79606`_"
 
 msgid ""
 "Method ``shader_get_vertex_input_attribute_ask`` changes return type from "
 "``uint32`` to ``uint64``"
 msgstr ""
 
-#, fuzzy
 msgid "**SurfaceTool**"
-msgstr "SurfaceTool"
+msgstr "**SurfaceTool**"
 
 msgid ""
 "Method ``commit`` changes ``flags`` parameter type from ``uint32`` to "
 "``uint64``"
 msgstr ""
 
-#, fuzzy
 msgid "Text"
-msgstr "Textura"
+msgstr "Text"
 
 msgid "**Font**"
 msgstr "**Fuente**"
@@ -401,7 +388,7 @@ msgid "Method ``set_fallbacks`` replaced with ``fallbacks`` property"
 msgstr ""
 
 msgid "`GH-78266`_"
-msgstr ""
+msgstr "`GH-78266`_"
 
 msgid "Method ``get_fallbacks`` replaced with ``fallbacks`` property"
 msgstr ""
@@ -412,27 +399,26 @@ msgid ""
 msgstr ""
 
 msgid "`GH-80954`_"
-msgstr ""
+msgstr "`GH-80954`_"
 
 msgid "GraphEdit"
 msgstr "GraphEdit"
 
-#, fuzzy
 msgid "**GraphEdit**"
-msgstr "GraphEdit"
+msgstr "**GraphEdit**"
 
 msgid ""
 "Property ``arrange_nodes_button_hidden`` renamed to ``show_arrange_button``"
 msgstr ""
 
 msgid "`GH-81582`_"
-msgstr ""
+msgstr "`GH-81582`_"
 
 msgid "Method ``get_zoom_hbox`` renamed to ``get_menu_hbox``"
 msgstr ""
 
 msgid "`GH-79308`_"
-msgstr ""
+msgstr "`GH-79308`_"
 
 msgid "Property ``snap_distance`` renamed to ``snapping_distance``"
 msgstr ""
@@ -440,15 +426,14 @@ msgstr ""
 msgid "Property ``use_snap`` renamed to ``snapping_enabled``"
 msgstr ""
 
-#, fuzzy
 msgid "**GraphNode**"
-msgstr "GraphNode"
+msgstr "**GraphNode**"
 
 msgid "Property ``comment`` removed"
 msgstr ""
 
 msgid "`GH-79307`_"
-msgstr ""
+msgstr "`GH-79307`_"
 
 msgid ""
 "Signal ``close_request`` renamed to ``delete_request`` and moved to base "
@@ -456,7 +441,7 @@ msgid ""
 msgstr ""
 
 msgid "`GH-79311`_"
-msgstr ""
+msgstr "`GH-79311`_"
 
 msgid "Property ``draggable`` moved to base class ``GraphElement``"
 msgstr ""
@@ -539,26 +524,23 @@ msgstr ""
 msgid "Property ``text_direction`` removed"
 msgstr ""
 
-#, fuzzy
 msgid "TileMap"
-msgstr "Usando TileMaps"
+msgstr "TileMap"
 
-#, fuzzy
 msgid "**TileMap**"
-msgstr "**samplerCube**"
+msgstr "**TileMap**"
 
 msgid "Property ``cell_quadrant_size`` renamed to ``rendering_quadrant_size``"
 msgstr ""
 
 msgid "`GH-81070`_"
-msgstr ""
+msgstr "`GH-81070`_"
 
 msgid "XR"
 msgstr "XR"
 
-#, fuzzy
 msgid "**XRInterface**"
-msgstr "Interfaz de Usuario (UI)"
+msgstr "**XRInterface**"
 
 msgid "Property ``environment_blend_mode`` added"
 msgstr ""

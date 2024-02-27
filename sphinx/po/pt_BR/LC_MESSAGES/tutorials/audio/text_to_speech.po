@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,13 +26,41 @@ msgstr "Uso básico"
 msgid "Basic usage of text-to-speech involves the following one-time steps:"
 msgstr ""
 
+#, fuzzy
+msgid "Enable TTS in the Godot editor for your project"
+msgstr "Otimizando uma compilação para o tamanho"
+
 msgid "Query the system for a list of usable voices"
 msgstr ""
 
 msgid "Store the ID of the voice you want to use"
 msgstr ""
 
-msgid "Once you have the voice ID, you can use it to speak some text:"
+msgid ""
+"By default, the Godot project-level setting for text-to-speech is disabled, "
+"to avoid unnecessary overhead. To enable it:"
+msgstr ""
+
+#, fuzzy
+msgid "Go to **Project > Project Settings**"
+msgstr "Vá para *Project -> Project Settings*."
+
+msgid "Make sure the **Advanced Settings** toggle is enabled"
+msgstr ""
+
+msgid "Click on **Audio > General**"
+msgstr ""
+
+msgid "Ensure the **Text to Speech** option is checked"
+msgstr ""
+
+msgid "Restart Godot if prompted to do so."
+msgstr ""
+
+msgid ""
+"Text-to-speech uses a specific voice. Depending on the user's system, they "
+"might have multiple voices installed. Once you have the voice ID, you can "
+"use it to speak some text:"
 msgstr ""
 
 msgid "Requirements for functionality"
@@ -63,6 +91,23 @@ msgstr ""
 
 msgid "**Arch Linux**"
 msgstr "**Arch Linux**"
+
+msgid "Troubleshooting"
+msgstr "Solução de problemas"
+
+msgid ""
+"If you get the error `Invalid get index '0' (on base: 'PackedStringArray').` "
+"for the line `var voice_id = voices[0]`, check if there are any items in "
+"`voices`. If not:"
+msgstr ""
+
+msgid "All users: make sure you enabled **Text to Speech** in project settings"
+msgstr ""
+
+msgid ""
+"Linux users: ensure you installed the system-specific libraries for text to "
+"speech"
+msgstr ""
 
 msgid "Best practices"
 msgstr "Boas práticas"

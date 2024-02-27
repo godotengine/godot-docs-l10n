@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,13 +122,12 @@ msgstr ""
 "uzlu k jeho kotvě. Viz :ref:`doc_design_interfaces_with_the_control_nodes` "
 "pro více informací."
 
-#, fuzzy
 msgid ""
 "Arrange the nodes as shown below. You can drag the nodes to place them "
 "manually, or for more precise placement, use \"Anchor Presets\"."
 msgstr ""
 "Uzly můžete přetáhnout a umístit je ručně, nebo pro přesnější umístění "
-"použijte následující nastavení:"
+"použijte následující nastavení."
 
 msgid "ScoreLabel"
 msgstr "ScoreLabel"
@@ -146,9 +145,8 @@ msgstr ""
 msgid "Message"
 msgstr "Zpráva"
 
-#, fuzzy
 msgid "Add the text ``Dodge the Creeps!``."
-msgstr "*Text*: ``Dodge the Creeps!``"
+msgstr "Přidejte text ``Dodge the Creeps!``."
 
 msgid ""
 "Set the \"Autowrap Mode\" to ``Word``, otherwise the label will stay on one "
@@ -166,9 +164,8 @@ msgstr ""
 msgid "StartButton"
 msgstr "StartButton"
 
-#, fuzzy
 msgid "Add the text ``Start``."
-msgstr "*Text*: ``Start``"
+msgstr "Přidejte text ``Start``."
 
 msgid ""
 "Under \"Control - Layout/Transform\", set \"Size X\" to ``200`` and \"Size "
@@ -191,13 +188,12 @@ msgstr ""
 msgid "Now add this script to ``HUD``:"
 msgstr "Nyní přidejte tento skript do ``HUD``:"
 
-#, fuzzy
 msgid ""
 "We now want to display a message temporarily, such as \"Get Ready\", so we "
 "add the following code"
 msgstr ""
-"Tato funkce se volá, když chceme dočasně zobrazit zprávu, například "
-"„Připravte se“."
+"Nyní cheme zobrazit dočasnou zprávu, například „Připravte se“, takže přidáme "
+"následující kód"
 
 #, fuzzy
 msgid ""
@@ -234,8 +230,8 @@ msgstr ""
 
 #, fuzzy
 msgid ""
-"Connect the ``timeout()`` signal of ``MessageTimer`` and the ``pressed()`` "
-"signal of ``StartButton``, and add the following code to the new functions:"
+"Connect the ``pressed()`` signal of ``StartButton`` and the ``timeout()`` "
+"signal of ``MessageTimer``, and add the following code to the new functions:"
 msgstr ""
 "Připojte signál ``timeout()`` uzlu ``MessageTimer`` a ``pressed()`` signál "
 "uzlu ``StartButton`` a k novým funkcím přidejte následující kód:"

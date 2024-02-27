@@ -21,7 +21,7 @@ Tween
 
 Tween 主要用于需要将一个数值属性插值到一系列值的动画。\ *tween* 这个名字来自 *in-betweening*\ ，这是一种动画技术，可以在其中指定 *关键帧*\ ，然后计算机会插入出现在它们之间的帧。使用 **Tween** 制作动画被称为补间动画。
 
-\ **Tween** 比 :ref:`AnimationPlayer<class_AnimationPlayer>` 更适合事先不知道最终值的动画。例如，插入动态选择的相机缩放值最好使用 **Tween** 完成；很难使用 :ref:`AnimationPlayer<class_AnimationPlayer>` 节点做同样的事情。Tween 也比 :ref:`AnimationPlayer<class_AnimationPlayer>` 更轻量级，因此它们非常适合简单的动画，或不需要编辑器提供的视觉调整的通用任务。对于通常由代码完成的某些逻辑，它们可以以即用即弃的方式使用。例如，可以使用带延迟的循环 :ref:`CallbackTweener<class_CallbackTweener>` 定期射击。
+\ **Tween** 比 :ref:`AnimationPlayer<class_AnimationPlayer>` 更适合事先不知道最终值的动画。例如，插入动态选择的相机缩放值最好使用 **Tween** 完成；很难使用 :ref:`AnimationPlayer<class_AnimationPlayer>` 节点做同样的事情。Tween 也比 :ref:`AnimationPlayer<class_AnimationPlayer>` 更轻量级，因此它们非常适合简单的动画，或不需要编辑器提供的视觉调整的通用任务。对于通常由代码完成的某些逻辑，它们可以以“即用即弃”的方式使用。例如，可以使用带延迟的循环 :ref:`CallbackTweener<class_CallbackTweener>` 定期射击。
 
 可以使用 :ref:`SceneTree.create_tween<class_SceneTree_method_create_tween>` 或 :ref:`Node.create_tween<class_Node_method_create_tween>` 创建 **Tween**\ 。手动创建的 **Tween**\ （即使用 ``Tween.new()``\ ）无效，不能用于对值进行补间。
 

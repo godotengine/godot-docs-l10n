@@ -19,7 +19,7 @@ ResourceImporterScene
 描述
 ----
 
-另请参见 :ref:`ResourceImporterOBJ<class_ResourceImporterOBJ>`\ ，它被用于可作为独立 :ref:`Mesh<class_Mesh>` 或场景导入的 OBJ 模型。
+另请参见 :ref:`ResourceImporterOBJ<class_ResourceImporterOBJ>`\ ，它被用于可作为独立的 :ref:`Mesh<class_Mesh>` 或场景导入的 OBJ 模型。
 
 \ **高级导入设置** 对话框中提供了其他选项（例如将单个网格或材质提取到文件）。可以通过双击文件系统停靠面板中的 3D 场景或通过选择文件系统停靠面板中的 3D 场景，转至导入停靠面板并选择\ **高级**\ 来访问该对话框。
 
@@ -287,13 +287,13 @@ ResourceImporterScene
 
 :ref:`bool<class_bool>` **skins/use_named_skins** = ``true``
 
-如果勾选，则为动画使用命名的 :ref:`Skin<class_Skin>`\ 。\ :ref:`MeshInstance3D<class_MeshInstance3D>` 节点包含 3 个相关属性：指向 :ref:`Skeleton3D<class_Skeleton3D>` 节点的骨架 :ref:`NodePath<class_NodePath>`\ （通常为 ``..``\ ）、网格、和皮肤：
+如果勾选，则为动画使用命名的 :ref:`Skin<class_Skin>`\ 。\ :ref:`MeshInstance3D<class_MeshInstance3D>` 节点包含 3 个相关属性：指向 :ref:`Skeleton3D<class_Skeleton3D>` 节点的骨架 :ref:`NodePath<class_NodePath>`\ （通常为 ``..``\ ）、网格、蒙皮：
 
 - :ref:`Skeleton3D<class_Skeleton3D>` 节点包含骨骼列表，其中包含名称、姿势和休息、名称和父骨骼。
 
 - 网格是显示网格所需的所有原始顶点数据。就网格而言，它知道如何对顶点进行权重绘制，并使用通常从 3D 建模软件导入的某些内部编号。
 
-- 皮肤包含将该网格绑定到该 Skeleton3D 上所必需的信息。对于 3D 建模软件选择的每一个内部骨骼 ID，它都包含两件事。首先是一个名为绑定姿势矩阵、逆绑定矩阵、或简称为 IBM 的矩阵。其次，该 :ref:`Skin<class_Skin>` 包含每个骨骼的名称（如果 :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` 为 ``true``\ ），或者骨骼在 :ref:`Skeleton3D<class_Skeleton3D>` 列表中的索引（如果 :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` 为 ``false``\ ）。
+- 蒙皮包含将该网格绑定到该 Skeleton3D 上所必需的信息。对于 3D 建模软件选择的每一个内部骨骼 ID，它都包含两件事。首先是一个名为绑定姿势矩阵、逆绑定矩阵、或简称为 IBM 的矩阵。其次，该 :ref:`Skin<class_Skin>` 包含每个骨骼的名称（如果 :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` 为 ``true``\ ），或者骨骼在 :ref:`Skeleton3D<class_Skeleton3D>` 列表中的索引（如果 :ref:`skins/use_named_skins<class_ResourceImporterScene_property_skins/use_named_skins>` 为 ``false``\ ）。
 
 总之，这些信息足以告诉 Godot 如何使用 :ref:`Skeleton3D<class_Skeleton3D>` 节点中的骨骼姿势来渲染每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 的网格。请注意，每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 可以共享绑定，这在从 Blender 导出的模型中很常见；或者每个 :ref:`MeshInstance3D<class_MeshInstance3D>` 可以使用单独的 :ref:`Skin<class_Skin>` 对象，这在从其他工具（例如 Maya）导出的模型中很常见。
 

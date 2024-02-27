@@ -19,7 +19,7 @@ Transform2D
 
 用于 2D 线性变换的 2×3 矩阵（2 行 3 列），可以表示平移、旋转、缩放等变换，由三个 :ref:`Vector2<class_Vector2>` 值组成：\ :ref:`x<class_Transform2D_property_x>`\ 、\ :ref:`y<class_Transform2D_property_y>`\ 、\ :ref:`origin<class_Transform2D_property_origin>`\ 。
 
-更多信息请阅读文档文章《矩阵与变换》。
+通用介绍见教程\ :doc:`《矩阵与变换》 <../tutorials/math/matrices_and_transforms>`\ 。
 
 .. note::
 

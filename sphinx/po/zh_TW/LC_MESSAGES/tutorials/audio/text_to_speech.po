@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -26,14 +26,43 @@ msgstr "基本用法"
 msgid "Basic usage of text-to-speech involves the following one-time steps:"
 msgstr "文字轉語音的基本用法涉及以下一次性步驟："
 
+#, fuzzy
+msgid "Enable TTS in the Godot editor for your project"
+msgstr "最佳化建置檔案大小"
+
 msgid "Query the system for a list of usable voices"
 msgstr "查詢系統以取得可用語音列表"
 
 msgid "Store the ID of the voice you want to use"
 msgstr "儲存您要使用的語音的 ID"
 
-msgid "Once you have the voice ID, you can use it to speak some text:"
-msgstr "獲得語音 ID 後，您可以用它來說出一些文字："
+msgid ""
+"By default, the Godot project-level setting for text-to-speech is disabled, "
+"to avoid unnecessary overhead. To enable it:"
+msgstr ""
+
+#, fuzzy
+msgid "Go to **Project > Project Settings**"
+msgstr "選擇 [專案] -> [專案設定] 來打開這個對話框。現在就試試吧。"
+
+#, fuzzy
+msgid "Make sure the **Advanced Settings** toggle is enabled"
+msgstr "Movie Maker 專案設定（啟用進階切換）"
+
+msgid "Click on **Audio > General**"
+msgstr ""
+
+msgid "Ensure the **Text to Speech** option is checked"
+msgstr ""
+
+msgid "Restart Godot if prompted to do so."
+msgstr ""
+
+msgid ""
+"Text-to-speech uses a specific voice. Depending on the user's system, they "
+"might have multiple voices installed. Once you have the voice ID, you can "
+"use it to speak some text:"
+msgstr ""
 
 msgid "Requirements for functionality"
 msgstr "變換函式"
@@ -72,6 +101,23 @@ msgstr "用於各個發行版的單行安裝程式"
 
 msgid "**Arch Linux**"
 msgstr "**Arch Linux**"
+
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+msgid ""
+"If you get the error `Invalid get index '0' (on base: 'PackedStringArray').` "
+"for the line `var voice_id = voices[0]`, check if there are any items in "
+"`voices`. If not:"
+msgstr ""
+
+msgid "All users: make sure you enabled **Text to Speech** in project settings"
+msgstr ""
+
+msgid ""
+"Linux users: ensure you installed the system-specific libraries for text to "
+"speech"
+msgstr ""
 
 msgid "Best practices"
 msgstr "最佳實踐"

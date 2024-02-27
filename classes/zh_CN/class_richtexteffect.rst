@@ -19,7 +19,7 @@ RichTextEffect
 描述
 ----
 
-:ref:`RichTextLabel<class_RichTextLabel>` 的自定义效果。
+:ref:`RichTextLabel<class_RichTextLabel>` 的自定义效果，可以在 :ref:`RichTextLabel<class_RichTextLabel>` 检查器中加载或使用 :ref:`RichTextLabel.install_effect<class_RichTextLabel_method_install_effect>` 加载。
 
 \ **注意：**\ 要使用 **RichTextEffect**\ ，必须在脚本中定义名为 ``bbcode`` 的成员变量作为 BBCode 标签。
 

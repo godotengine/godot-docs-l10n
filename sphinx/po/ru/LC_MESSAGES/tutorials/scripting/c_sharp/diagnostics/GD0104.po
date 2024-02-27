@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0104: The exported property is write-only"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr ""
+
+msgid "GD0104"
+msgstr ""
+
+#, fuzzy
+msgid "**Category**"
+msgstr "**Категория**:"
+
+msgid "Usage"
+msgstr "Использование"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr ""
+
+#, fuzzy
+msgid "Non-breaking"
+msgstr "Запекание"
+
+msgid "**Enabled by default**"
+msgstr ""
+
+#, fuzzy
+msgid "Yes"
+msgstr "es"
+
+msgid "Cause"
+msgstr ""
+
+msgid ""
+"A write-only property is annotated with the ``[Export]`` attribute. Write-"
+"only properties can't be exported."
+msgstr ""
+
+#, fuzzy
+msgid "Rule description"
+msgstr "<brief_description></brief_description>"
+
+msgid "Godot doesn't allow exporting write-only properties."
+msgstr ""
+
+#, fuzzy
+msgid "How to fix violations"
+msgstr "может существовать изолированно"
+
+msgid ""
+"To fix a violation of this rule, make sure the property declares both a "
+"getter and a setter, or remove the ``[Export]`` attribute."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr ""
+
+msgid ""
+"Do not suppress a warning from this rule. Write-only members can't be "
+"exported so they will be ignored by Godot, resulting in runtime errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Статус перевода"

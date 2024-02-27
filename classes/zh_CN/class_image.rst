@@ -275,7 +275,7 @@ OpenGL 纹理格式 ``RGBA`` 有四个部分，每个分量部分的位深度为
 
 :ref:`Format<enum_Image_Format>` **FORMAT_RGB565** = ``7``
 
-
+OpenGL 纹理格式 ``RGB``\ ，具有三个组件。红色和蓝色的位深度为 5，绿色的位深度为 6。
 
 .. _class_Image_constant_FORMAT_RF:
 
@@ -497,7 +497,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_ETC2_RA_AS_RG** = ``33``
 
-
+`ETC2%E5%92%8CEAC]爱立信纹理压缩格式 2 <https://zh.wikipedia.org/zh-cn/%E7%88%B1%E7%AB%8B%E4%BF%A1%E7%BA%B9%E7%90%86%E5%8E%8B%E7%BC%A9#[3>`__\ （\ ``RGBA8`` 变体），能够压缩 RA 数据，将其解释为两个通道（红和绿）。另见 :ref:`FORMAT_ETC2_RGBA8<class_Image_constant_FORMAT_ETC2_RGBA8>`\ 。
 
 .. _class_Image_constant_FORMAT_DXT5_RA_AS_RG:
 
@@ -505,7 +505,7 @@ OpenGL 纹理格式 ``GL_RGBA16F``\ ，其中有四个分量，每个都是 16 �
 
 :ref:`Format<enum_Image_Format>` **FORMAT_DXT5_RA_AS_RG** = ``34``
 
-
+`S3TC <https://en.wikipedia.org/wiki/S3_Texture_Compression>`__ 纹理格式，也叫 Block Compression 3、BC3。能够压缩 RA 数据并将其解释为两个通道（红和绿）。另见 :ref:`FORMAT_DXT5<class_Image_constant_FORMAT_DXT5>`\ 。
 
 .. _class_Image_constant_FORMAT_ASTC_4x4:
 
@@ -713,7 +713,7 @@ enum **UsedChannels**:
 
 :ref:`UsedChannels<enum_Image_UsedChannels>` **USED_CHANNELS_L** = ``0``
 
-
+该图像仅使用一个通道表示亮度（灰度图）。
 
 .. _class_Image_constant_USED_CHANNELS_LA:
 
@@ -721,7 +721,7 @@ enum **UsedChannels**:
 
 :ref:`UsedChannels<enum_Image_UsedChannels>` **USED_CHANNELS_LA** = ``1``
 
-
+该图像使用两个通道，分别表示亮度和 Alpha。
 
 .. _class_Image_constant_USED_CHANNELS_R:
 
@@ -729,7 +729,7 @@ enum **UsedChannels**:
 
 :ref:`UsedChannels<enum_Image_UsedChannels>` **USED_CHANNELS_R** = ``2``
 
-
+该图像仅使用红色通道。
 
 .. _class_Image_constant_USED_CHANNELS_RG:
 
@@ -737,7 +737,7 @@ enum **UsedChannels**:
 
 :ref:`UsedChannels<enum_Image_UsedChannels>` **USED_CHANNELS_RG** = ``3``
 
-
+该图像使用红色和绿色两个通道。
 
 .. _class_Image_constant_USED_CHANNELS_RGB:
 
@@ -745,7 +745,7 @@ enum **UsedChannels**:
 
 :ref:`UsedChannels<enum_Image_UsedChannels>` **USED_CHANNELS_RGB** = ``4``
 
-
+该图像使用红、绿、蓝三个通道。
 
 .. _class_Image_constant_USED_CHANNELS_RGBA:
 
@@ -753,7 +753,7 @@ enum **UsedChannels**:
 
 :ref:`UsedChannels<enum_Image_UsedChannels>` **USED_CHANNELS_RGBA** = ``5``
 
-
+该图像使用红色、绿色、蓝色和 Alpha 四个通道。
 
 .. rst-class:: classref-item-separator
 
@@ -872,9 +872,7 @@ enum **ASTCFormat**:
 
 void **adjust_bcs** **(** :ref:`float<class_float>` brightness, :ref:`float<class_float>` contrast, :ref:`float<class_float>` saturation **)**
 
-.. container:: contribute
-
-	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+使用 ``brightness`` 调整图像的亮度，使用 ``contrast`` 调整图像的对比度，使用 ``saturation`` 调整图像的饱和度。对压缩图像无效（见 :ref:`is_compressed<class_Image_method_is_compressed>`\ ）。
 
 .. rst-class:: classref-item-separator
 
@@ -1090,9 +1088,7 @@ void **crop** **(** :ref:`int<class_int>` width, :ref:`int<class_int>` height **
 
 :ref:`UsedChannels<enum_Image_UsedChannels>` **detect_used_channels** **(** :ref:`CompressSource<enum_Image_CompressSource>` source=0 **)** |const|
 
-.. container:: contribute
-
-	目前没有这个方法的描述。请帮我们\ :ref:`贡献一个 <doc_updating_the_class_reference>`\ ！
+返回某个 :ref:`UsedChannels<enum_Image_UsedChannels>` 常量，表示该图像所使用的颜色通道。如果为压缩图像，则必须使用 ``source`` 指定原始图像的属性。
 
 .. rst-class:: classref-item-separator
 

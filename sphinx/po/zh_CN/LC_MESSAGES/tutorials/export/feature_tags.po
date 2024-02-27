@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -61,6 +61,9 @@ msgid ""
 "load. For example, a library for ``linux.debug.editor.x86_64`` will be "
 "loaded only on a debug editor build for Linux x86_64."
 msgstr ""
+"GDExtension 使用操作系统功能标签（OS feature tag）来确定要加载的库。例如，标"
+"记为 ``linux.debug.editor.x86_64`` 的库将仅在 Linux x86_64 的调试编辑器版本上"
+"加载。"
 
 msgid "Default features"
 msgstr "默认功能"
@@ -271,37 +274,32 @@ msgstr "宿主操作系统是网页浏览器"
 msgid "**web_android**"
 msgstr "**web_android**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Android"
-msgstr "宿主操作系统是网页浏览器"
+msgstr "宿主操作系统是运行在 Android 系统上的网页浏览器"
 
 msgid "**web_ios**"
 msgstr "**web_ios**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on iOS"
-msgstr "宿主操作系统是网页浏览器"
+msgstr "宿主操作系统是运行在 iOS 上的网页浏览器"
 
 msgid "**web_linuxbsd**"
 msgstr "**web_linuxbsd**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Linux or \\*BSD"
-msgstr "宿主操作系统是网页浏览器"
+msgstr "宿主操作系统是运行在 Linux 或 BSD 系统上的网页浏览器"
 
 msgid "**web_macos**"
 msgstr "**web_macos**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on macOS"
-msgstr "宿主操作系统是网页浏览器"
+msgstr "宿主操作系统是运行在 macOS 上的网页浏览器"
 
 msgid "**web_windows**"
 msgstr "**web_windows**"
 
-#, fuzzy
 msgid "Host OS is a Web browser running on Windows"
-msgstr "宿主操作系统是网页浏览器"
+msgstr "宿主操作系统是运行在 Windows 系统上的网页浏览器"
 
 msgid "**etc**"
 msgstr "**etc**"
@@ -325,7 +323,7 @@ msgid "**movie**"
 msgstr "**movie**"
 
 msgid ":ref:`Movie Maker mode <doc_creating_movies>` is active"
-msgstr ""
+msgstr ":ref:`Movie Maker mode <doc_creating_movies>`已激活"
 
 #, fuzzy
 msgid ""

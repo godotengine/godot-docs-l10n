@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,16 +57,14 @@ msgstr ""
 "的Python版本, 改为 ``#!/usr/bin/python3``. 使用命令``which scons``来找到SCons"
 "脚本文件的位置."
 
-#, fuzzy
 msgid "pkg-config (used to detect the development libraries listed below)."
-msgstr "pkg-config（用于检测下面这些依赖库）。"
+msgstr "pkg-config（用于检测下面这些开发库）。"
 
 msgid "Development libraries:"
-msgstr "ALSA 开发库："
+msgstr "开发库："
 
-#, fuzzy
 msgid "X11, Xcursor, Xinerama, Xi and XRandR."
-msgstr "X11、Xcursor、Xinerama、Xi、XRandR 开发库。"
+msgstr "X11、Xcursor、Xinerama、Xi、XRandR。"
 
 msgid "MesaGL."
 msgstr "MesaGL."
@@ -75,7 +73,7 @@ msgid "ALSA."
 msgstr "ALSA."
 
 msgid "PulseAudio."
-msgstr "音频。"
+msgstr "PulseAudio。"
 
 msgid "*Optional* - libudev (build with ``udev=yes``)."
 msgstr "*可选*\\ ——libudev（使用 ``udev = yes`` 构建）。"
@@ -94,13 +92,11 @@ msgstr ""
 msgid "Distro-specific one-liners"
 msgstr "针对各个发行版的单行命令"
 
-#, fuzzy
 msgid "Alpine Linux"
-msgstr "**Alpine Linux**"
+msgstr "Alpine Linux"
 
-#, fuzzy
 msgid "Arch Linux"
-msgstr "**Arch Linux**"
+msgstr "Arch Linux"
 
 msgid "Debian/Ubuntu"
 msgstr "Debian/Ubuntu"

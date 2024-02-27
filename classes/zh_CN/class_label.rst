@@ -586,6 +586,8 @@ Label
 
 \ **注意：**\ 如果使用启用了 :ref:`FontFile.multichannel_signed_distance_field<class_FontFile_property_multichannel_signed_distance_field>` 的字体，其 :ref:`FontFile.msdf_pixel_range<class_FontFile_property_msdf_pixel_range>` 必须至少设置为 :ref:`outline_size<class_Label_theme_constant_outline_size>` 的\ *两倍*\ ，轮廓渲染才能看起来正确。否则，轮廓可能会比预期的更早被切断。
 
+\ **注意：**\ 不建议使用大于字体大小一半的值，因为这种情况下字体轮廓可能无法完全闭合。
+
 .. rst-class:: classref-item-separator
 
 ----

@@ -190,7 +190,7 @@ MIDI 信号可以通过 5 针 MIDI 连接器或 USB 发送，如果你的设备�
 - void **set_instrument** **(** :ref:`int<class_int>` value **)**
 - :ref:`int<class_int>` **get_instrument** **(** **)**
 
-这个输入事件的乐器。这个值的范围是 0 到 127。乐器列表请参考维基百科的 General MIDI 文中的乐器列表，不过这个值是从 0 开始的，所以请把那张表中的数字都减一。标准钢琴的乐器号为 0。
+这个输入事件的乐器。这个值的范围是 0 到 127。乐器列表请参考维基百科的 `General MIDI <https://zh.wikipedia.org/zh-cn/General_MIDI#%E9%9F%B3%E8%89%B2%E8%BD%89%E6%8F%9B%E4%BA%8B%E4%BB%B6%EF%BC%88Program_change_events%EF%BC%89>`__ 文中的乐器列表，不过这个值是从 0 开始的，所以请把那张表中的数字都减一。标准钢琴的乐器号为 0。
 
 .. rst-class:: classref-item-separator
 

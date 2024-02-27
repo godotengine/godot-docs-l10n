@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,11 +17,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#, fuzzy
 msgid "GDScript reference"
-msgstr "Смена текущей сцены"
+msgstr "Справочник по GDScript"
 
-#, fuzzy
 msgid ""
 ":ref:`GDScript<doc_gdscript>` is a high-level, `object-oriented <https://en."
 "wikipedia.org/wiki/Object-oriented_programming>`_, `imperative <https://en."
@@ -32,15 +30,19 @@ msgid ""
 "goal is to be optimized for and tightly integrated with Godot Engine, "
 "allowing great flexibility for content creation and integration."
 msgstr ""
-"*GDScript* это высокоуровневый, динамически типизированный язык "
-"программирования. Он использует синтаксис похожий на `Python <https://en."
-"wikipedia.org/wiki/Python_%28programming_language%29>`_ (блоки выделяются "
-"табуляцией и множество ключевых слов идентичны). Его цель быть "
-"оптимизированным и плотно интегрированным в движок Godot, позволяя достичь "
-"высокой гибкости в создании контента и интеграции."
+":ref:`GDScript<doc_gdscript>` — это высокоуровневый, `объектно-"
+"ориентированный <https://en.wikipedia.org/wiki/Object-"
+"oriented_programming>`_, `императивный <https://en.wikipedia.org/wiki/"
+"Imperative_programming>`_ язык программирования с `последовательной "
+"типизацией <https://en.wikipedia.org/wiki/Gradual_typing>`_, созданный для "
+"Godot. Он использует синтаксис на основе отступов, аналогичный такому языку, "
+"как `Python <https://en.wikipedia.org/wiki/"
+"Python_%28programming_language%29>`_. Его цель — оптимизировать и тесно "
+"интегрировать с Godot Engine, обеспечивая большую гибкость при создании "
+"контента."
 
 msgid "GDScript is entirely independent from Python and is not based on it."
-msgstr ""
+msgstr "GDScript полностью независим от Python и не основан на нем."
 
 msgid "History"
 msgstr "История"
@@ -55,7 +57,6 @@ msgstr ""
 msgid "Example of GDScript"
 msgstr "Пример GDScript"
 
-#, fuzzy
 msgid ""
 "Some people can learn better by taking a look at the syntax, so here's an "
 "example of how GDScript looks."
@@ -336,13 +337,13 @@ msgid "PI"
 msgstr "PI"
 
 msgid "PI constant."
-msgstr "Константа Пи."
+msgstr "Постоянная PI."
 
 msgid "TAU"
 msgstr "TAU"
 
 msgid "TAU constant."
-msgstr "Константа Тау."
+msgstr "Постоянная TAU."
 
 msgid "INF"
 msgstr "INF"
@@ -443,10 +444,11 @@ msgid "``~x``"
 msgstr ""
 
 msgid "Bitwise NOT"
-msgstr "Побитовое НЕ"
+msgstr "Битовое НЕ"
 
+#, fuzzy
 msgid "``+x``"
-msgstr ""
+msgstr "``+x``"
 
 msgid "``-x``"
 msgstr "``-x``"
@@ -501,19 +503,19 @@ msgid "``x & y``"
 msgstr ""
 
 msgid "Bitwise AND"
-msgstr "Побитовое И"
+msgstr "Битовое И"
 
 msgid "``x ^ y``"
 msgstr ""
 
 msgid "Bitwise XOR"
-msgstr "Побитовое Исключающее ИЛИ"
+msgstr "Битовое Искл. ИЛИ"
 
 msgid "``x | y``"
 msgstr ""
 
 msgid "Bitwise OR"
-msgstr "Побитовое ИЛИ"
+msgstr "Битовое ИЛИ"
 
 msgid "``x == y``"
 msgstr ""
@@ -533,9 +535,8 @@ msgstr ""
 msgid "``x >= y``"
 msgstr ""
 
-#, fuzzy
 msgid "Comparison"
-msgstr "Сравнения"
+msgstr "Сравнение"
 
 msgid "See a detailed note after the table."
 msgstr ""
@@ -555,25 +556,28 @@ msgstr ""
 
 #, fuzzy
 msgid "``not x``"
-msgstr "``!`` ``not``"
+msgstr "``not x``"
 
+#, fuzzy
 msgid "``!x``"
-msgstr ""
+msgstr "``!x``"
 
 msgid "Boolean NOT and its :ref:`unrecommended <boolean_operators>` alias"
 msgstr ""
 
+#, fuzzy
 msgid "``x and y``"
-msgstr ""
+msgstr "``x and y``"
 
+#, fuzzy
 msgid "``x && y``"
-msgstr ""
+msgstr "``x && y``"
 
 msgid "Boolean AND and its :ref:`unrecommended <boolean_operators>` alias"
 msgstr ""
 
 msgid "``x or y``"
-msgstr ""
+msgstr "``x or y``"
 
 msgid "``x || y``"
 msgstr ""
@@ -688,9 +692,8 @@ msgstr "Литералы"
 msgid "**Example(s)**"
 msgstr "**Пример**"
 
-#, fuzzy
 msgid "``null``"
-msgstr "null"
+msgstr "``null``"
 
 #, fuzzy
 msgid "Null value"
@@ -728,32 +731,27 @@ msgstr "``3.14``, ``58.1e-10``"
 msgid "Floating-point number (real)"
 msgstr "Число с плавающей точкой (вещественное число)"
 
-#, fuzzy
 msgid "``\"Hello\"``, ``'Hi'``"
-msgstr "``\"Привет\"``, ``\"Дарова!\"``"
+msgstr "``\"Здравствуй\"``, ``\"Привет!\"``"
 
-#, fuzzy
 msgid "Regular strings"
-msgstr "|обычно| Незначительно"
+msgstr "Обычные строки"
 
-#, fuzzy
 msgid "``\"\"\"Hello\"\"\"``, ``'''Hi'''``"
-msgstr "``\"Привет\"``, ``\"Дарова!\"``"
+msgstr "``\"Здравствуй\"``, ``\"Привет!\"``"
 
 msgid "Triple-quoted regular strings"
-msgstr ""
+msgstr "Строки в тройных кавычках"
 
-#, fuzzy
 msgid "``r\"Hello\"``, ``r'Hi'``"
-msgstr "``\"Привет\"``, ``\"Дарова!\"``"
+msgstr "``\"Здравствуй\"``, ``\"Привет\"``"
 
 #, fuzzy
 msgid "Raw strings"
 msgstr "string"
 
-#, fuzzy
 msgid "``r\"\"\"Hello\"\"\"``, ``r'''Hi'''``"
-msgstr "``\"Привет\"``, ``\"Дарова!\"``"
+msgstr "``\"Здравствуй\"``, ``\"Привет\"``"
 
 #, fuzzy
 msgid "Triple-quoted raw strings"
@@ -761,11 +759,11 @@ msgstr "Форматирование строки GDScript"
 
 #, fuzzy
 msgid "``&\"name\"``"
-msgstr "``имя``"
+msgstr "``&\"name\"``"
 
 #, fuzzy
 msgid ":ref:`StringName <class_StringName>`"
-msgstr ":ref:`String <class_String>`"
+msgstr ":ref:`StringName <class_StringName>`"
 
 #, fuzzy
 msgid "``^\"Node/Label\"``"
@@ -776,7 +774,7 @@ msgstr ":ref:`NodePath <class_NodePath>`"
 
 msgid ""
 "There are also two constructs that look like literals, but actually are not:"
-msgstr ""
+msgstr "Две конструкции похожие на литералы, но не являющиеся ими:"
 
 msgid "**Example**"
 msgstr "**Пример**"
@@ -966,7 +964,7 @@ msgid "Both of these are the same::"
 msgstr ""
 
 msgid "``@onready`` annotation"
-msgstr ""
+msgstr "Пометка ``@onready``"
 
 msgid ""
 "When using nodes, it's common to desire to keep references to parts of the "
@@ -1087,9 +1085,8 @@ msgid ""
 "group multiple elements together."
 msgstr ""
 
-#, fuzzy
 msgid "Line continuation"
-msgstr "Настройка движка"
+msgstr "Продолжение строки"
 
 msgid ""
 "A line of code in GDScript can be continued on the next line by using a "
@@ -1211,12 +1208,14 @@ msgstr ""
 
 #, fuzzy
 msgid ":ref:`Vector2i <class_Vector2i>`"
-msgstr ":ref:`Vector2 <class_Vector2>`"
+msgstr ":ref:`Vector2i <class_Vector2i>`"
 
 msgid ""
 "Same as a Vector2 but the components are integers. Useful for representing "
 "items in a 2D grid."
 msgstr ""
+"Как Vector2, но с целыми компонентами. Удобен при описании элементов на 2D "
+"сетке."
 
 msgid ":ref:`Rect2 <class_Rect2>`"
 msgstr ":ref:`Rect2 <class_Rect2>`"
@@ -1636,8 +1635,59 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+msgid "Initialization order"
+msgstr "Управление соединениями"
+
+#, fuzzy
+msgid "Member variables are initialized in the following order:"
+msgstr "Создайте Node и прикрепите следующий скрипт."
+
+msgid ""
+"Depending on the variable's static type, the variable is either ``null`` "
+"(untyped variables and objects) or has a default value of the type (``0`` "
+"for ``int``, ``false`` for ``bool``, etc.)."
+msgstr ""
+
+msgid ""
+"The specified values are assigned in the order of the variables in the "
+"script, from top to bottom. - *(Only for ``Node``-derived classes)* If the "
+"``@onready`` annotation is applied to a variable, its initialization is "
+"deferred to step 5."
+msgstr ""
+
+msgid "If defined, the ``_init()`` method is called."
+msgstr ""
+
+msgid ""
+"When instantiating scenes and resources, the exported values are assigned."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* ``@onready`` variables are initialized."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* If defined, the ``_ready()`` method is "
+"called."
+msgstr ""
+
+msgid ""
+"You can specify a complex expression as a variable initializer, including "
+"function calls. Make sure the variables are initialized in the correct "
+"order, otherwise your values may be overwritten. For example::"
+msgstr ""
+
+#, fuzzy
+msgid "Will print::"
+msgstr "Выведет:"
+
+msgid ""
+"To fix this, move the ``_data`` variable definition above the ``a`` "
+"definition or remove the empty dictionary assignment (``= {}``)."
+msgstr ""
+
 msgid "Static variables"
-msgstr "Редактирование экземпляров"
+msgstr "Статические перменные"
 
 msgid "A class member variable can be declared static::"
 msgstr ""
@@ -1659,6 +1709,8 @@ msgid ""
 "The ``@export`` and ``@onready`` annotations cannot be applied to a static "
 "variable. Local variables cannot be static."
 msgstr ""
+"``@export`` и ``@onready`` пометки не работают со статическими переменными. "
+"Локальные переменные не могут быть статическими."
 
 msgid ""
 "The following example defines a ``Person`` class with a static variable "
@@ -1680,7 +1732,7 @@ msgid "A base class static variable can also be accessed via a child class::"
 msgstr ""
 
 msgid "``@static_unload`` annotation"
-msgstr ""
+msgstr "``@static_unload`` пометка"
 
 msgid ""
 "Since GDScript classes are resources, having static variables in a script "
@@ -1908,9 +1960,8 @@ msgid ""
 "issues on direct function calls."
 msgstr ""
 
-#, fuzzy
 msgid "Lambda functions"
-msgstr "Случайные функции"
+msgstr "Лямбда-функции"
 
 msgid ""
 "Lambda functions allow you to declare functions that do not belong to a "
@@ -1920,6 +1971,11 @@ msgid ""
 msgstr ""
 
 msgid "Lambda functions can be named for debugging purposes::"
+msgstr ""
+
+msgid ""
+"Note that if you want to return a value from a lambda, an explicit "
+"``return`` is required (you can't omit ``return``)::"
 msgstr ""
 
 msgid ""
@@ -2297,6 +2353,14 @@ msgstr ""
 "использоваться как иконка. После этих действий ваш класс появится с его "
 "новой иконкой в редакторе::"
 
+msgid ""
+"SVG images that are used as custom node icons should have the **Editor > "
+"Scale With Editor Scale** and **Editor > Convert Icons With Editor Theme** :"
+"ref:`import options <doc_importing_images_editor_import_options>` enabled. "
+"This allows icons to follow the editor's scale and theming settings if the "
+"icons are designed with the same color palette as Godot's own icons."
+msgstr ""
+
 msgid "Here's a class file example:"
 msgstr "Вот пример файла класса:"
 
@@ -2459,9 +2523,8 @@ msgstr ""
 "gd``, даже если он ничего не делает. Что подводит нас к тому, что литералы "
 "можно передавать не только переменным, но и в базовом конструкторе. Например:"
 
-#, fuzzy
 msgid "Static constructor"
-msgstr "Конструктор класса"
+msgstr "Статический конструктор"
 
 msgid ""
 "A static constructor is a static function ``_static_init`` that is called "

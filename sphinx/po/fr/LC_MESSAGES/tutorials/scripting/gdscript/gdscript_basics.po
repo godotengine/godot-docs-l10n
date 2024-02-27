@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -280,7 +280,7 @@ msgid "Defines a constant."
 msgstr "Définit une constante."
 
 msgid "enum"
-msgstr "enum"
+msgstr "énumération"
 
 msgid "Defines an enum."
 msgstr "Définit une énumération."
@@ -1180,14 +1180,12 @@ msgstr ""
 msgid ":ref:`String <class_String>`"
 msgstr ":ref:`String <class_String>`"
 
-#, fuzzy
 msgid ""
 "A sequence of characters in `Unicode format <https://en.wikipedia.org/wiki/"
 "Unicode>`_."
 msgstr ""
-"Une séquence de caractères au `format Unicode <https://en.wikipedia.org/wiki/"
-"Unicode>`_. Les chaînes de caractère peuvent contenir les séquences "
-"d'échappement suivante :"
+"Une séquence de caractères au format `Unicode <https://en.wikipedia.org/wiki/"
+"Unicode>`_."
 
 msgid ""
 "An immutable string that allows only one instance of each name. They are "
@@ -1648,6 +1646,61 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+msgid "Initialization order"
+msgstr "Exemple d'initialisation :"
+
+#, fuzzy
+msgid "Member variables are initialized in the following order:"
+msgstr "L'image ci-dessus a été créée à l'aide du script suivant :"
+
+msgid ""
+"Depending on the variable's static type, the variable is either ``null`` "
+"(untyped variables and objects) or has a default value of the type (``0`` "
+"for ``int``, ``false`` for ``bool``, etc.)."
+msgstr ""
+
+msgid ""
+"The specified values are assigned in the order of the variables in the "
+"script, from top to bottom. - *(Only for ``Node``-derived classes)* If the "
+"``@onready`` annotation is applied to a variable, its initialization is "
+"deferred to step 5."
+msgstr ""
+
+#, fuzzy
+msgid "If defined, the ``_init()`` method is called."
+msgstr ""
+"Vous devez définir la méthode ``_init()`` pour mettre en place la structure "
+"des nœuds de contrôle."
+
+msgid ""
+"When instantiating scenes and resources, the exported values are assigned."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* ``@onready`` variables are initialized."
+msgstr ""
+
+msgid ""
+"*(Only for ``Node``-derived classes)* If defined, the ``_ready()`` method is "
+"called."
+msgstr ""
+
+msgid ""
+"You can specify a complex expression as a variable initializer, including "
+"function calls. Make sure the variables are initialized in the correct "
+"order, otherwise your values may be overwritten. For example::"
+msgstr ""
+
+#, fuzzy
+msgid "Will print::"
+msgstr "Ceci s'affichera :"
+
+msgid ""
+"To fix this, move the ``_data`` variable definition above the ``a`` "
+"definition or remove the empty dictionary assignment (``= {}``)."
+msgstr ""
+
+#, fuzzy
 msgid "Static variables"
 msgstr "Édition des variables"
 
@@ -1943,6 +1996,11 @@ msgid "Lambda functions can be named for debugging purposes::"
 msgstr ""
 
 msgid ""
+"Note that if you want to return a value from a lambda, an explicit "
+"``return`` is required (you can't omit ``return``)::"
+msgstr ""
+
+msgid ""
 "Lambda functions capture the local environment. Local variables are passed "
 "by value, so they won't be updated in the lambda if changed in the local "
 "function::"
@@ -2105,14 +2163,12 @@ msgid ""
 "equal to the StringName ``&\"hello\"``."
 msgstr ""
 
-#, fuzzy
 msgid "Basic syntax"
-msgstr "Syntaxe de base :"
+msgstr "Syntaxe de base"
 
-#, fuzzy
 msgid "Crash-course for people who are familiar with switch statements"
 msgstr ""
-"**Cours rapide pour ceux qui sont familiers avec les instructions switch** :"
+"Cours intensif pour les personnes familiarisées avec les instructions switch"
 
 msgid "Replace ``switch`` with ``match``."
 msgstr "Remplacez ``switch`` par ``match``."
@@ -2127,9 +2183,8 @@ msgstr "Supprimer ``case``."
 msgid "Change ``default`` to a single underscore."
 msgstr "Remplacer ``default`` par un unique underscore (_)."
 
-#, fuzzy
 msgid "Control flow"
-msgstr "**Contrôle du flux d’exécution** :"
+msgstr "Contrôle du flux d’exécution"
 
 #, fuzzy
 msgid ""
@@ -2327,6 +2382,14 @@ msgstr ""
 "``class_name``. Vous pouvez éventuellement ajouter une virgule suivie d'un "
 "chemin vers une image, pour l'utiliser comme icône. Votre classe apparaîtra "
 "alors avec sa nouvelle icône dans l'éditeur :"
+
+msgid ""
+"SVG images that are used as custom node icons should have the **Editor > "
+"Scale With Editor Scale** and **Editor > Convert Icons With Editor Theme** :"
+"ref:`import options <doc_importing_images_editor_import_options>` enabled. "
+"This allows icons to follow the editor's scale and theming settings if the "
+"icons are designed with the same color palette as Godot's own icons."
+msgstr ""
 
 msgid "Here's a class file example:"
 msgstr "Voici un exemple de fichier de classe :"

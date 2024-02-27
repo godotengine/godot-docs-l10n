@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.2\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0102: The type of the exported member is not supported"
+msgstr ""
+
+msgid "**Rule ID**"
+msgstr "**Regel-ID**"
+
+#, fuzzy
+msgid "GD0102"
+msgstr "GD0107"
+
+msgid "**Category**"
+msgstr "**Kategorie**"
+
+msgid "Usage"
+msgstr "Verwendung"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**Breaking- oder nicht-Breaking-Fix**"
+
+msgid "Breaking - If the member type is changed"
+msgstr ""
+
+msgid "Non-breaking - If the ``[Export]`` attribute is removed"
+msgstr ""
+
+msgid "**Enabled by default**"
+msgstr "**Standardmäßig aktiviert**"
+
+msgid "Yes"
+msgstr "Ja"
+
+msgid "Cause"
+msgstr "Ursache"
+
+#, fuzzy
+msgid ""
+"An unsupported type is specified for a member annotated with the "
+"``[Export]`` attribute when a :ref:`Variant-compatible "
+"<doc_c_sharp_variant>` type is expected."
+msgstr ""
+"Exportieren kann nur mit :ref:`Variant-kompatiblen <doc_c_sharp_variant>`-"
+"Typen durchgeführt werden."
+
+msgid "Rule description"
+msgstr "Beschreibung der Regel"
+
+msgid ""
+"Every exported member must be Variant-compatible so it can be marshalled by "
+"the engine."
+msgstr ""
+
+msgid "How to fix violations"
+msgstr "Wie man Verstöße behebt"
+
+msgid ""
+"To fix a violation of this rule, change the member's type to be Variant-"
+"compatible or remove the ``[Export]`` attribute."
+msgstr ""
+
+msgid "When to suppress warnings"
+msgstr "Wann Warnungen unterdrückt werden sollten"
+
+msgid ""
+"Do not suppress a warning from this rule. Members with types that can't be "
+"marshalled will result in runtime errors."
+msgstr ""
+
+msgid "Translation status"
+msgstr "Übersetzungsstatus"

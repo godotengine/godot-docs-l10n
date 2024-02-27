@@ -333,7 +333,7 @@ VehicleWheel3D
 - void **set_roll_influence** **(** :ref:`float<class_float>` value **)**
 - :ref:`float<class_float>` **get_roll_influence** **(** **)**
 
-这个值会影响车辆的滚动。如果所有车轮都设置为 1.0，车辆将容易翻车，而 0.0 的值将阻止车身侧倾。
+该值会影响车辆的滚动。如果将所有车轮都设置为 1.0，车辆将抵抗车身侧倾，而值为 0.0 则容易翻车。
 
 .. rst-class:: classref-section-separator
 

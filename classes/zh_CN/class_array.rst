@@ -936,7 +936,7 @@ void **make_read_only** **(** **)**
 
 :ref:`Variant<class_Variant>` **pop_at** **(** :ref:`int<class_int>` position **)**
 
-移除并返回数组中位于 ``position`` 索引处的元素。如果 ``position`` 为负数，则认为是相对于该数组末尾的值。如果该数组为空，则返回 ``null``\ ，不会改动数组。数组访问越界时会输出错误消息，但如果数组为空时不会。
+移除并返回数组中位于 ``position`` 索引处的元素。如果 ``position`` 为负数，则认为是相对于该数组末尾的值。如果该数组为空或访问越界，则保持该数组不变并返回 ``null``\ 。数组访问越界时会输出错误消息，但如果数组为空时不会。
 
 \ **注意：**\ 在较大的数组上，这个方法会比 :ref:`pop_back<class_Array_method_pop_back>` 慢，因为会对移除元素后的数组元素重新进行索引。数组越大，或者移除元素的索引越小，\ :ref:`pop_at<class_Array_method_pop_at>` 就越慢。
 
@@ -1046,6 +1046,8 @@ void **remove_at** **(** :ref:`int<class_int>` position **)**
 :ref:`int<class_int>` **resize** **(** :ref:`int<class_int>` size **)**
 
 调整数组的大小，让包含的元素数量发生变化。如果数组变小则清除多余元素，变大则新元素为 ``null``\ 。成功时返回 :ref:`@GlobalScope.OK<class_@GlobalScope_constant_OK>`\ ，操作失败时返回其他 :ref:`Error<enum_@GlobalScope_Error>` 值。
+
+调用一次 :ref:`resize<class_Array_method_resize>` 并分配新值比逐个添加新元素要快。
 
 \ **注意：**\ 这个方法是就地操作的，不返回修改后的数组。
 
