@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -121,30 +121,34 @@ msgid "`D <https://github.com/godot-dlang/godot-dlang>`__"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:99
-msgid "`Haxe <https://hxgodot.github.io/>`__"
+msgid "`Go <https://github.com/grow-graphics/gd>`__"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:100
-msgid "`Rust <https://github.com/godot-rust/gdextension>`__"
+msgid "`Haxe <https://hxgodot.github.io/>`__"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:101
+msgid "`Rust <https://github.com/godot-rust/gdext>`__"
+msgstr ""
+
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:102
 msgid "`Swift <https://github.com/migueldeicaza/SwiftGodot>`__"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:105
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:106
 msgid "Not all bindings mentioned here may be production-ready. Make sure to research options thoroughly before starting a project with one of those. Also, double-check whether the binding is compatible with the Godot version you're using."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:111
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:112
 msgid "Version compatibility"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:113
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:114
 msgid "GDExtension add-ons compiled for a given Godot version are only guaranteed to work with the same minor release series. For example, a GDExtension add-on compiled for Godot 4.0 will only work with Godot 4.0, 4.0.1, 4.0.2. In addition, GDExtension is not compatible with Godot 3.x."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:118
+#: ../../docs/tutorials/scripting/gdextension/what_is_gdextension.rst:119
 msgid "GDExtension add-ons are also only compatible with engine builds that use the level of floating-point precision the extension was compiled for. This means that if you use a engine build with double-precision floats, the extension must also be compiled for double-precision floats. See :ref:`doc_large_world_coordinates` for details."
 msgstr ""
 

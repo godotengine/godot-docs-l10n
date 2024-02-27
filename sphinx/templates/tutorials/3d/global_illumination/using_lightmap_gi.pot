@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -358,136 +358,144 @@ msgstr ""
 msgid "Reducing the lightmap resolution by increasing **Lightmap Texel Size** on the imported 3D scenes will also speed up baking significantly. However, this will require you to reimport all lightmapped 3D scenes before you can bake lightmaps again."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:388
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:387
 msgid "Denoising"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:390
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:389
 msgid "Since baking lightmaps relies on raytracing, there will always be visible noise in the \"raw\" baked lightmap. Noise is especially visible in areas that are difficult to reach by bounced light, such as indoor areas with small openings where the sunlight can enter. Noise can be reduced by increasing bake quality, but doing so will increase bake times significantly."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:400
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:399
 msgid "Comparison between denoising disabled and enabled"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:400
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:399
 msgid "Comparison between denoising disabled and enabled (with the default JNLM denoiser)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:402
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:401
 msgid "To combat noise without increasing bake times too much, a denoiser can be used. A denoiser is an algorithm that runs on the final baked lightmap, detects patterns of noise and softens them while attempting to best preseve detail. Godot offers two denoising algorithms:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:408
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:407
 msgid "JNLM (Non-Local Means with Joint Filtering)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:410
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:409
 msgid "JNLM is the default denoising method and is included in Godot. It uses a simple but efficient denoising algorithm known as *non-local means*. JNLM runs on the GPU using a compute shader, and is compatible with any GPU that can run Godot 4's Vulkan-based rendering methods. No additional setup is required."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:415
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:414
 msgid "JNLM's denoising can be adjusted using the **Denoiser Strength** property that is visible when **Use Denoiser** enabled. Higher values can be more effective at removing noise, at the cost of suppressing shadow detail for static shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:423
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:422
 msgid "Comparison between JNLM denoiser strength values"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:423
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:422
 msgid "Comparison between JNLM denoiser strength values. Higher values can reduce detail."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:426
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:425
 msgid "OIDN (Open Image Denoise)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:428
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:427
 msgid "Unlike JNLM, OIDN uses a machine learning approach to denoising lightmaps. It features a model specifically trained to remove noise from lightmaps while preserving more shadow detail in most scenes compared to JNLM."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:432
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:431
 msgid "OIDN can run on the GPU if hardware acceleration is configured. With a modern high-end GPU, this can provide a speedup of over 50× over CPU-based denoising:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:435
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:434
 msgid "On AMD GPUs, HIP must be installed and configured."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:436
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:435
 msgid "On NVIDIA GPUs, CUDA must be installed and configured. This may automatically be done by the NVIDIA installer, but on Linux, CUDA libraries may not be installed by default. Double-check that the CUDA packages from your Linux distribution are installed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:440
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:439
 msgid "On Intel GPUs, SYCL must be installed and configured."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:442
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:441
 msgid "If hardware acceleration is not available, OIDN will fall back to multithreaded CPU-based denoising. To confirm whether GPU-based denoising is working, use a GPU utilization monitor while baking lightmaps and look at the GPU utilization percentage and VRAM utilization while the denoising step is shown in the Godot editor. The ``nvidia-smi`` command line tool can be useful for this."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:448
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:447
 msgid "OIDN is not included with Godot due to its relatively large download size. You can download precompiled OIDN binary packages from its `website <https://www.openimagedenoise.org/downloads.html>`__. Extract the package to a location on your PC, then specify the path to the ``oidnDenoise`` executable in the Editor Settings (**FileSystem > Tools > OIDN > OIDN Denoise Path**). This executable is located within the ``bin`` folder of the binary package you extracted."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:456
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:455
 msgid "After specifying the path to the OIDN denoising executable, change the denoising method in the project settings by setting **Rendering > Lightmapping > Denoiser** to **OIDN**. This will affect all lightmap bakes on this project after the setting is changed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:463
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:462
 msgid "The denoising method is configured in the project settings instead of the editor settings. This is done so that different team members working on the same project are assured to be using the same denoising method for consistent results."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:472
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:471
 msgid "Comparison between JNLM and OIDN denoisers"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:472
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:471
 msgid "Comparison between JNLM and OIDN denoisers. Notice how OIDN better preserves detail and reduces seams across different objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:478
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:477
 msgid "Dynamic objects"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:480
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:479
 msgid "Unlike VoxelGI and SDFGI, dynamic objects receive indirect lighting differently compared to static objects. This is because lightmapping is only performed on static objects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:484
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:483
 msgid "To display indirect lighting on dynamic objects, a 3D probe system is used, with light probes being spread throughout the scene. When baking lightmaps, the lightmapper will calculate the amount of *indirect* light received by the probe. Direct light is not stored within light probes, even for lights that have their bake mode set to **Static** (as dynamic objects continue to be lit in real-time)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:491
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:490
 msgid "There are 2 ways to add light probes to a scene:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:493
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:492
 msgid "**Automatic:** Set **Gen Probes > Subdiv** to a value other than **Disabled**, then bake lightmaps. The default is ``8``, but you can choose a greater value to improve precision at the cost of longer bake times and larger output file size."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:497
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:496
 msgid "**Manual:** In addition or as an alternative to generating probes automatically, you can add light probes manually by adding :ref:`class_LightmapProbe` nodes to the scene. This can be used to improve lighting detail in areas frequently travelled by dynamic objects. After placing LightmapProbe nodes in the scene, you must bake lightmaps again for them to be effective."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:505
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:504
 msgid "After baking lightmaps, you will notice white spheres in the 3D scene that represent how baked lighting will affect dynamic objects. These spheres do **not** appear in the running project."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:509
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:508
 msgid "If you want to hide these spheres in the editor, toggle **View > Gizmos > LightmapGI** at the top of the 3D editor (a \"closed eye\" icon indicates the gizmo is hidden)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:516
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:515
 msgid "Lightmap data"
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:518
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:517
 msgid "The **Data > Light Data** property in the LightmapGI node contains the lightmap data after baking. Textures are saved to disk, but this also contains the capture data for dynamic objects, which can be heavy. If you are using a scene in ``.tscn`` format, you should save this resource to an external binary ``.lmbake`` file to avoid bloating the ``.tscn`` scene with binary data encoded in Base64."
 msgstr ""
 
-#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:527
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:526
 msgid "The generated EXR file can be viewed and even edited using an image editor to perform post-processing if needed. However, keep in mind that changes to the EXR file will be lost when baking lightmaps again."
+msgstr ""
+
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:531
+msgid "Reducing LightmapGI artifacts"
+msgstr ""
+
+#: ../../docs/tutorials/3d/global_illumination/using_lightmap_gi.rst:533
+msgid "If you notice LightmapGI nodes popping in and out of existence as the camera moves, this is most likely because the engine is rendering too many LightmapGI instances at once. Godot is limited to rendering 8 LightmapGI nodes at once, which means up to 8 instances can be in the camera view before some of them will start flickering."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

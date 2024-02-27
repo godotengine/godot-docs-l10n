@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -105,86 +105,102 @@ msgid "The API assemblies, source generators, and custom MSBuild project SDK are
 msgstr ""
 
 #: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:102
-msgid "In order to use Godot with a development version of those packages, a local NuGet source must be created where MSBuild can find them. This can be done with the .NET CLI:"
+msgid "In order to use Godot with a development version of those packages, a local NuGet source must be created where MSBuild can find them."
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:110
-msgid "The Godot NuGet packages must be added to that local source. Additionally, we must make sure there are no other versions of the package in the NuGet cache, as MSBuild may pick one of those instead."
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:105
+msgid "First, pick a location for the local NuGet source. If you don't have a preference, create an empty directory at one of these recommended locations:"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:114
-msgid "In order to simplify this process, the ``build_assemblies.py`` script provides the following ``--push-nupkgs-local`` option:"
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:108
+msgid "On Windows, ``C:\\Users\\<username>\\MyLocalNugetSource``"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:121
-msgid "This option ensures the packages will be added to the specified local NuGet source and that conflicting versions of the package are removed from the NuGet cache. It's recommended to always use this option when building the C# solutions during development to avoid mistakes."
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:109
+msgid "On Linux, \\*BSD, etc., ``~/MyLocalNugetSource``"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:111
+msgid "This path is referred to later as ``<my_local_source>``."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:113
+msgid "After picking a directory, run this .NET CLI command to configure NuGet to use your local source:"
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:120
+msgid "When you run the ``build_assemblies.py`` script, pass ``<my_local_source>`` to the ``--push-nupkgs-local`` option:"
 msgstr ""
 
 #: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:127
+msgid "This option ensures the packages will be added to the specified local NuGet source and that conflicting versions of the package are removed from the NuGet cache. It's recommended to always use this option when building the C# solutions during development to avoid mistakes."
+msgstr ""
+
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:133
 msgid "Double Precision Support (REAL_T_IS_DOUBLE)"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:129
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:135
 msgid "When building Godot with double precision support, i.e. the ``precision=double`` argument for scons, the managed libraries must be adjusted to match by passing the ``--precision=double`` argument:"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:138
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:144
 msgid "Examples"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:141
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:147
 msgid "Example (Windows)"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:158
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:164
 msgid "Example (Linux, \\*BSD)"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:176
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:182
 msgid "Data directory"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:178
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:184
 msgid "The data directory is a dependency for Godot binaries built with the .NET module enabled. It contains important files for the correct functioning of Godot. It must be distributed together with the Godot executable."
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:183
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:189
 msgid "Editor"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:185
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:191
 msgid "The name of the data directory for the Godot editor will always be ``GodotSharp``. This directory contains an ``Api`` subdirectory with the Godot API assemblies and a ``Tools`` subdirectory with the tools required by the editor, like the ``GodotTools`` assemblies and its dependencies."
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:190
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:196
 msgid "On macOS, if the Godot editor is distributed as a bundle, the ``GodotSharp`` directory may be placed in the ``<bundle_name>.app/Contents/Resources/`` directory inside the bundle."
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:195
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:201
 msgid "Export templates"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:197
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:203
 msgid "The data directory for exported projects is generated by the editor during the export. It is named ``data_<APPNAME>_<ARCH>``, where ``<APPNAME>`` is the application name as specified in the project setting ``application/config/name`` and ``<ARCH>`` is the current architecture of the export."
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:202
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:208
 msgid "In the case of multi-architecture exports multiple such data directories will be generated."
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:206
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:212
 msgid "Command-line options"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:208
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:214
 msgid "The following is the list of command-line options available when building with the .NET module:"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:211
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:217
 msgid "**module_mono_enabled**\\ =yes | **no**"
 msgstr ""
 
-#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:213
+#: ../../docs/contributing/development/compiling/compiling_with_dotnet.rst:219
 msgid "Build Godot with the .NET module enabled."
 msgstr ""
 

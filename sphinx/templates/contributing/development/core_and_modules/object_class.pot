@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -37,11 +37,11 @@ msgid "This adds a lot of functionality to Objects. For example:"
 msgstr ""
 
 #: ../../docs/contributing/development/core_and_modules/object_class.rst:36
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:94
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:266
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:282
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:303
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:322
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:98
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:270
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:286
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:307
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:326
 msgid "References:"
 msgstr ""
 
@@ -78,210 +78,214 @@ msgid "Inside ``_bind_methods``, there are a couple of things that can be done. 
 msgstr ""
 
 #: ../../docs/contributing/development/core_and_modules/object_class.rst:76
-msgid "Default values for arguments can be passed in reverse order:"
+msgid "Default values for arguments can be passed as parameters at the end:"
 msgstr ""
 
 #: ../../docs/contributing/development/core_and_modules/object_class.rst:82
+msgid "Default values must be provided in the same order as they are declared, skipping required arguments and then providing default values for the optional ones. This matches the syntax for declaring methods in C++."
+msgstr ""
+
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:86
 msgid "``D_METHOD`` is a macro that converts \"methodname\" to a StringName for more efficiency. Argument names are used for introspection, but when compiling on release, the macro ignores them, so the strings are unused and optimized away."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:87
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:91
 msgid "Check ``_bind_methods`` of Control or Object for more examples."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:89
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:93
 msgid "If just adding modules and functionality that is not expected to be documented as thoroughly, the ``D_METHOD()`` macro can safely be ignored and a string passing the name can be passed for brevity."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:96
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:100
 msgid "`core/object/class_db.h <https://github.com/godotengine/godot/blob/master/core/object/class_db.h>`__"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:99
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:103
 msgid "Constants"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:101
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:105
 msgid "Classes often have enums such as:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:110
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:114
 msgid "For these to work when binding to methods, the enum must be declared convertible to int. A macro is provided to help with this:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:117
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:121
 msgid "The constants can also be bound inside ``_bind_methods``, by using:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:125
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:129
 msgid "Properties (set/get)"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:127
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:131
 msgid "Objects export properties, properties are useful for the following:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:129
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:133
 msgid "Serializing and deserializing the object."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:130
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:134
 msgid "Creating a list of editable values for the Object derived class."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:132
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:136
 msgid "Properties are usually defined by the PropertyInfo() class and constructed as:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:139
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:143
 msgid "For example:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:145
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:149
 msgid "This is an integer property named \"amount\". The hint is a range, and the range goes from 0 to 49 in steps of 1 (integers). It is only usable for the editor (editing the value visually) but won't be serialized."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:149
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:153
 msgid "Another example:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:155
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:159
 msgid "This is a string property, can take any string but the editor will only allow the defined hint ones. Since no usage flags were specified, the default ones are PROPERTY_USAGE_STORAGE and PROPERTY_USAGE_EDITOR."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:159
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:163
 msgid "There are plenty of hints and usage flags available in object.h, give them a check."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:162
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:166
 msgid "Properties can also work like C# properties and be accessed from script using indexing, but this usage is generally discouraged, as using functions is preferred for legibility. Many properties are also bound with categories, such as \"animation/frame\" which also make indexing impossible unless using operator []."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:168
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:172
 msgid "From ``_bind_methods()``, properties can be created and bound as long as set/get functions exist. Example:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:175
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:179
 msgid "This creates the property using the setter and the getter."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:180
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:184
 msgid "Binding properties using ``_set``/``_get``/``_get_property_list``"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:182
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:186
 msgid "An additional method of creating properties exists when more flexibility is desired (i.e. adding or removing properties on context)."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:185
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:189
 msgid "The following functions can be overridden in an Object derived class, they are NOT virtual, DO NOT make them virtual, they are called for every override and the previous ones are not invalidated (multilevel call)."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:197
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:201
 msgid "This is also a little less efficient since ``p_property`` must be compared against the desired names in serial order."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:201
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:205
 msgid "Dynamic casting"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:203
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:207
 msgid "Godot provides dynamic casting between Object-derived classes, for example:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:213
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:217
 msgid "If cast fails, NULL is returned. This system uses RTTI, but it also works fine (although a bit slower) when RTTI is disabled. This is useful on platforms where a small binary size is ideal, such as HTML5 or consoles (with low memory footprint)."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:219
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:223
 msgid "Signals"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:221
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:225
 msgid "Objects can have a set of signals defined (similar to Delegates in other languages). This example shows how to connect to them:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:230
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:234
 msgid "The method ``_node_entered_tree`` must be registered to the class using ``ClassDB::bind_method`` (explained before)."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:233
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:237
 msgid "Adding signals to a class is done in ``_bind_methods``, using the ``ADD_SIGNAL`` macro, for example:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:241
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:245
 msgid "Notifications"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:243
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:247
 msgid "All objects in Godot have a :ref:`_notification <class_Object_private_method__notification>` method that allows it to respond to engine level callbacks that may relate to it. More information can be found on the :ref:`doc_godot_notifications` page."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:248
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:252
 msgid "References"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:250
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:254
 msgid ":ref:`RefCounted <class_RefCounted>` inherits from Object and holds a reference count. It is the base for reference counted object types. Declaring them must be done using Ref<> template. For example:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:262
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:266
 msgid "``myref`` is reference counted. It will be freed when no more Ref<> templates point to it."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:268
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:272
 msgid "`core/object/reference.h <https://github.com/godotengine/godot/blob/master/core/object/ref_counted.h>`__"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:271
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:275
 msgid "Resources"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:273
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:277
 msgid ":ref:`Resource <class_resource>` inherits from Reference, so all resources are reference counted. Resources can optionally contain a path, which reference a file on disk. This can be set with ``resource.set_path(path)``, though this is normally done by the resource loader. No two different resources can have the same path; attempting to do so will result in an error."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:279
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:283
 msgid "Resources without a path are fine too."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:284
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:288
 msgid "`core/io/resource.h <https://github.com/godotengine/godot/blob/master/core/io/resource.h>`__"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:287
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:291
 msgid "Resource loading"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:289
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:293
 msgid "Resources can be loaded with the ResourceLoader API, like this:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:295
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:299
 msgid "If a reference to that resource has been loaded previously and is in memory, the resource loader will return that reference. This means that there can be only one resource loaded from a file referenced on disk at the same time."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:300
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:304
 msgid "resourceinteractiveloader (TODO)"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:305
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:309
 msgid "`core/io/resource_loader.h <https://github.com/godotengine/godot/blob/master/core/io/resource_loader.h>`__"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:308
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:312
 msgid "Resource saving"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:310
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:314
 msgid "Saving a resource can be done with the resource saver API:"
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:316
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:320
 msgid "The instance will be saved, and sub resources that have a path to a file will be saved as a reference to that resource. Sub resources without a path will be bundled with the saved resource and assigned sub-IDs, like ``res://someresource.res::1``. This also helps to cache them when loaded."
 msgstr ""
 
-#: ../../docs/contributing/development/core_and_modules/object_class.rst:324
+#: ../../docs/contributing/development/core_and_modules/object_class.rst:328
 msgid "`core/io/resource_saver.h <https://github.com/godotengine/godot/blob/master/core/io/resource_saver.h>`__"
 msgstr ""
 

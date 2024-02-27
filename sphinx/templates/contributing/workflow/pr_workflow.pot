@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -321,7 +321,7 @@ msgid "The interactive rebase"
 msgstr ""
 
 #: ../../docs/contributing/workflow/pr_workflow.rst:437
-msgid "If you didn't follow the above steps closely to *amend* changes into a commit instead of creating fixup commits, or if you authored your changes without being aware of our workflow and Git usage tips, reviewers might request of your to *rebase* your branch to *squash* some or all of the commits into one."
+msgid "If you didn't follow the above steps closely to *amend* changes into a commit instead of creating fixup commits, or if you authored your changes without being aware of our workflow and Git usage tips, reviewers might request you to *rebase* your branch to *squash* some or all of the commits into one."
 msgstr ""
 
 #: ../../docs/contributing/workflow/pr_workflow.rst:442
@@ -365,7 +365,7 @@ msgid "But! You rewrote the history, and now your local and remote branches have
 msgstr ""
 
 #: ../../docs/contributing/workflow/pr_workflow.rst:521
-msgid "This is a sane behavior, Git will not let you push changes that would override remote content. But that's actually what we want to do here, so we will have to *force* it:"
+msgid "This is reasonable behavior, Git will not let you push changes that would override remote content. But that's actually what we want to do here, so we will have to *force* it:"
 msgstr ""
 
 #: ../../docs/contributing/workflow/pr_workflow.rst:529
@@ -373,26 +373,46 @@ msgid "And tadaa! Git will happily *replace* your remote branch with what you ha
 msgstr ""
 
 #: ../../docs/contributing/workflow/pr_workflow.rst:534
-msgid "Deleting a Git branch"
+msgid "Rebasing onto another branch"
 msgstr ""
 
 #: ../../docs/contributing/workflow/pr_workflow.rst:536
-msgid "After your pull request gets merged, there's one last thing you should do: delete your Git branch for the PR. There won't be issues if you don't delete your branch, but it's good practice to do so. You'll need to do this twice, once for the local branch and another for the remote branch on GitHub."
+msgid "If you have accidentally opened your PR on the wrong branch, or need to target another branch for some reason, you might need to filter out a lot of commits that differ between the old branch (for example ``4.2``) and the new branch (for example ``master``). This can make rebasing difficult and tedious. Fortunately ``git`` has a command just for this situation, ``git rebase --onto``."
 msgstr ""
 
 #: ../../docs/contributing/workflow/pr_workflow.rst:541
+msgid "If your PR was created from the ``4.2`` branch and you want to update it to instead start at ``master`` the following steps *should* fix this in one step:"
+msgstr ""
+
+#: ../../docs/contributing/workflow/pr_workflow.rst:548
+msgid "This will take all the commits on your branch *after* the ``4.2`` branch, and then splice them on top of ``master``, ignoring any commits from the ``4.2`` branch not on the ``master`` branch. You may still need to do some fixing, but this command should save you a lot of tedious work removing commits."
+msgstr ""
+
+#: ../../docs/contributing/workflow/pr_workflow.rst:552
+msgid "Just like above for the interactive rebase you need to force push your branch to handle the different changes:"
+msgstr ""
+
+#: ../../docs/contributing/workflow/pr_workflow.rst:559
+msgid "Deleting a Git branch"
+msgstr ""
+
+#: ../../docs/contributing/workflow/pr_workflow.rst:561
+msgid "After your pull request gets merged, there's one last thing you should do: delete your Git branch for the PR. There won't be issues if you don't delete your branch, but it's good practice to do so. You'll need to do this twice, once for the local branch and another for the remote branch on GitHub."
+msgstr ""
+
+#: ../../docs/contributing/workflow/pr_workflow.rst:566
 msgid "To delete our better Project Manager branch locally, use this command:"
 msgstr ""
 
-#: ../../docs/contributing/workflow/pr_workflow.rst:547
+#: ../../docs/contributing/workflow/pr_workflow.rst:572
 msgid "Alternatively, if the branch hadn't been merged yet and we wanted to delete it anyway, instead of ``-d`` you would use ``-D``."
 msgstr ""
 
-#: ../../docs/contributing/workflow/pr_workflow.rst:550
+#: ../../docs/contributing/workflow/pr_workflow.rst:575
 msgid "Next, to delete the remote branch on GitHub use this command:"
 msgstr ""
 
-#: ../../docs/contributing/workflow/pr_workflow.rst:556
+#: ../../docs/contributing/workflow/pr_workflow.rst:581
 msgid "You can also delete the remote branch from the GitHub PR itself, a button should appear once it has been merged or closed."
 msgstr ""
 

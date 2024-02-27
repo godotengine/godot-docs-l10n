@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -137,7 +137,7 @@ msgid "Set its Bounce property to ``0.5`` by clicking on the number field, typin
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:131
-msgid "Play the game by pressing :kbd:`F5` and notice how all balls now bounce a lot more. As the Ball scene is a template for all instances, modifying it and saving causes all instances to update accordingly."
+msgid "Play the game by pressing :kbd:`F5` (:kbd:`Cmd + B` on macOS) and notice how all balls now bounce a lot more. As the Ball scene is a template for all instances, modifying it and saving causes all instances to update accordingly."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:135
@@ -161,7 +161,7 @@ msgid "Rerun the game and notice how this ball now falls much faster than the ot
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:156
-msgid "If you change a value on the ``PhysicsMaterial`` of one instance, it will affect all the others. This is because ``PhysicsMaterial`` is a resource, and resources are shared between instances. To make a resource unique for one instance, right-click on it in the Inspector and click Make Unique in the contextual menu."
+msgid "You may notice you are unable to change the values of the ``PhysicsMaterial`` of the ball. This is because ``PhysicsMaterial`` is a resource, and needs to be made unique before you can edit it in a scene that is linking to its original scene. To make a resource unique for one instance, right-click on it in the Inspector and click Make Unique in the contextual menu."
 msgstr ""
 
 #: ../../docs/getting_started/step_by_step/instancing.rst:162

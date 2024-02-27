@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -92,159 +92,175 @@ msgstr ""
 msgid "At that time, the user is expected to come back to the documentation and follow instructions on how to properly set up that platform."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:93
-msgid "Export templates"
+#: ../../docs/tutorials/export/exporting_projects.rst:92
+msgid "The buttons at the bottom of the menu allow you to export the project in a few different ways:"
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:95
-msgid "Apart from setting up the platform, the export templates must be installed to be able to export projects. They can be obtained as a TPZ file (which is a renamed ZIP archive) from the `download page of the website <https://www.godotengine.org/download>`_."
+msgid "Export All: Export the project as a playable build (Godot executable and project data) for all the presets defined. All presets must have an **Export Path** defined for this to work."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:98
+msgid "Export Project: Export the project as a playable build (Godot executable and project data) for the selected preset."
 msgstr ""
 
 #: ../../docs/tutorials/export/exporting_projects.rst:100
+msgid "Export PCK/ZIP: Export the project resources as a PCK or ZIP package. This is not a playable build, it only exports the project data without a Godot executable."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:104
+msgid "Export templates"
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:106
+msgid "Apart from setting up the platform, the export templates must be installed to be able to export projects. They can be obtained as a TPZ file (which is a renamed ZIP archive) from the `download page of the website <https://www.godotengine.org/download>`_."
+msgstr ""
+
+#: ../../docs/tutorials/export/exporting_projects.rst:111
 msgid "Once downloaded, they can be installed using the **Install Export Templates** option in the editor:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:108
+#: ../../docs/tutorials/export/exporting_projects.rst:119
 msgid "Resource options"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:110
+#: ../../docs/tutorials/export/exporting_projects.rst:121
 msgid "When exporting, Godot makes a list of all the files to export and then creates the package. There are 3 different modes for exporting:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:113
+#: ../../docs/tutorials/export/exporting_projects.rst:124
 msgid "Export all resources in the project"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:114
+#: ../../docs/tutorials/export/exporting_projects.rst:125
 msgid "Export selected scenes (and dependencies)"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:115
+#: ../../docs/tutorials/export/exporting_projects.rst:126
 msgid "Export selected resources (and dependencies)"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:119
+#: ../../docs/tutorials/export/exporting_projects.rst:130
 msgid "**Export all resources in the project** will export every resource in the project. **Export selected scenes** and **Export selected resources** gives you a list of the scenes or resources in the project, and you have to select every scene or resource you want to export."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:128
+#: ../../docs/tutorials/export/exporting_projects.rst:139
 msgid "Files and folders whose name begin with a period will never be included in the exported project. This is done to prevent version control folders like ``.git`` from being included in the exported PCK file."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:132
+#: ../../docs/tutorials/export/exporting_projects.rst:143
 msgid "Below the list of resources are two filters that can be setup. The first allows non resource files such as ``.txt``, ``.json`` and ``.csv`` to be exported with the project. The second filter can be used to exclude every file of a certain type without manually deselecting every one. For example, ``.png`` files."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:138
+#: ../../docs/tutorials/export/exporting_projects.rst:149
 msgid "Configuration files"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:140
+#: ../../docs/tutorials/export/exporting_projects.rst:151
 msgid "The export configuration is stored in two files that can both be found in the project directory:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:143
+#: ../../docs/tutorials/export/exporting_projects.rst:154
 msgid "``export_presets.cfg``: This file contains the vast majority of the export configuration and can be safely committed to version control. There is nothing in here that you would normally have to keep secret."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:146
+#: ../../docs/tutorials/export/exporting_projects.rst:157
 msgid "``.godot/export_credentials.cfg``: This file contains export options that are considered confidential, like passwords and encryption keys. It should generally **not** be committed to version control or shared with others unless you know exactly what you are doing."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:151
+#: ../../docs/tutorials/export/exporting_projects.rst:162
 msgid "Since the credentials file is usually kept out of version control systems, some export options will be missing if you clone the project to a new machine. The easiest way to deal with this is to copy the file manually from the old location to the new one."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:156
+#: ../../docs/tutorials/export/exporting_projects.rst:167
 msgid "Exporting from the command line"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:158
+#: ../../docs/tutorials/export/exporting_projects.rst:169
 msgid "In production, it is useful to automate builds, and Godot supports this with the ``--export`` and ``--export-debug`` command line parameters. Exporting from the command line still requires an export preset to define the export parameters. A basic invocation of the command would be:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:167
+#: ../../docs/tutorials/export/exporting_projects.rst:178
 msgid "This will export to ``some_name.exe``, assuming there is a preset called \"Windows Desktop\" and the template can be found. (The export preset name must be written within quotes if it contains spaces or special characters.) The output path is *relative to the project path* or *absolute*; **it does not respect the directory the command was invoked from**."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:173
+#: ../../docs/tutorials/export/exporting_projects.rst:184
 msgid "The output file extension should match the one used by the Godot export process:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:175
+#: ../../docs/tutorials/export/exporting_projects.rst:186
 msgid "Windows: ``.exe``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:176
+#: ../../docs/tutorials/export/exporting_projects.rst:187
 msgid "macOS: ``.zip`` (from all platforms) or ``.dmg`` (only when exporting *from* macOS). ``.app`` is not supported directly, although the generated ZIP archive contains an ``.app`` bundle."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:178
+#: ../../docs/tutorials/export/exporting_projects.rst:189
 msgid "Linux: Any extension (including none). ``.x86_64`` is typically used for 64-bit x86 binaries."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:179
+#: ../../docs/tutorials/export/exporting_projects.rst:190
 msgid "HTML5: ``.zip``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:180
+#: ../../docs/tutorials/export/exporting_projects.rst:191
 msgid "Android: ``.apk``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:181
+#: ../../docs/tutorials/export/exporting_projects.rst:192
 msgid "iOS: ``.zip``"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:183
+#: ../../docs/tutorials/export/exporting_projects.rst:194
 msgid "You can also configure it to export *only* the PCK or ZIP file, allowing a single exported main pack file to be used with multiple Godot executables. When doing so, the export preset name must still be specified on the command line:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:191
+#: ../../docs/tutorials/export/exporting_projects.rst:202
 msgid "It is often useful to combine the ``--export`` flag with the ``--path`` flag, so that you do not need to ``cd`` to the project folder before running the command:"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:201
+#: ../../docs/tutorials/export/exporting_projects.rst:212
 msgid "See :ref:`doc_command_line_tutorial` for more information about using Godot from the command line."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:205
+#: ../../docs/tutorials/export/exporting_projects.rst:216
 msgid "PCK versus ZIP pack file formats"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:207
+#: ../../docs/tutorials/export/exporting_projects.rst:218
 msgid "Each format has its upsides and downsides. PCK is the default and recommended format for most use cases, but you may want to use a ZIP archive instead depending on your needs."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:211
+#: ../../docs/tutorials/export/exporting_projects.rst:222
 msgid "**PCK format:**"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:213
+#: ../../docs/tutorials/export/exporting_projects.rst:224
 msgid "Uncompressed format. Larger file size, but faster to read/write."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:214
+#: ../../docs/tutorials/export/exporting_projects.rst:225
 msgid "Not readable and writable using tools normally present on the user's operating system, even though there are `third-party tools <https://github.com/hhyyrylainen/GodotPckTool>`__ to extract and create PCK files."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:219
+#: ../../docs/tutorials/export/exporting_projects.rst:230
 msgid "**ZIP format:**"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:221
+#: ../../docs/tutorials/export/exporting_projects.rst:232
 msgid "Compressed format. Smaller file size, but slower to read/write."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:222
+#: ../../docs/tutorials/export/exporting_projects.rst:233
 msgid "Readable and writable using tools normally present on the user's operating system. This can be useful to make modding easier (see also :ref:`doc_exporting_pcks`)."
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:227
+#: ../../docs/tutorials/export/exporting_projects.rst:238
 msgid "Due to a `known bug <https://github.com/godotengine/godot/pull/42123>`__, when using a ZIP file as a pack file, the exported binary will not try to use it automatically. Therefore, you have to create a *launcher script* that the player can double-click or run from a terminal to launch the project::"
 msgstr ""
 
-#: ../../docs/tutorials/export/exporting_projects.rst:239
+#: ../../docs/tutorials/export/exporting_projects.rst:250
 msgid "Save the launcher script and place it in the same folder as the exported binary. On Linux, make sure to give executable permissions to the launcher script using the command ``chmod +x launch.sh``."
 msgstr ""
 

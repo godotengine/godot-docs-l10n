@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -220,6 +220,14 @@ msgstr ""
 
 #: ../../docs/tutorials/3d/global_illumination/using_voxel_gi.rst:193
 msgid "To combat artifacts that can appear on reflective surfaces, try increasing **Bias** and/or **Normal Bias** in the VoxelGIData resource as described above. Do not increase these values too high, or light leaking will become more pronounced."
+msgstr ""
+
+#: ../../docs/tutorials/3d/global_illumination/using_voxel_gi.rst:197
+msgid "If you notice VoxelGI nodes popping in and out of existence as the camera moves, this is most likely because the engine is rendering too many VoxelGI instances at once. Godot is limited to rendering 8 VoxelGI nodes at once, which means up to 8 instances can be in the camera view before some of them will start flickering."
+msgstr ""
+
+#: ../../docs/tutorials/3d/global_illumination/using_voxel_gi.rst:203
+msgid "Additionally, for performance reasons, Godot can only blend between 2 VoxelGI nodes at a given pixel on the screen. If you have more than 2 VoxelGI nodes overlapping, global illumination may appear to flicker as the camera moves or rotates."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,136 +20,321 @@ msgstr ""
 msgid "Using navigation meshes"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:6
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:8
 msgid "2D and 3D versions of the navigation mesh are available as :ref:`NavigationPolygon<class_NavigationPolygon>` and :ref:`NavigationMesh<class_NavigationMesh>`  respectively."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:12
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:14
 msgid "A navigation mesh only describes a traversable area for an agent's center position. Any radius values an agent may have are ignored. If you want pathfinding to account for an agent's (collision) size you need to shrink the navigation mesh accordingly."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:15
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:17
 msgid "Navigation works independently from other engine parts like rendering or physics. Navigation meshes are the only things considered when doing pathfinding, e.g. visuals and collision shapes for example are completely ignored by the navigation system. If you need to take other data (like visuals for example) into account when doing pathfinding, you need to adapt your navigation meshes accordingly. The process of factoring in navigation restrictions in navigation meshes is commonly referred to as navigation mesh baking."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:20
-msgid "If you experience clipping or collision problems while following navigation paths, always remember that you need to tell the navigation system what your intentions are through an appropriate navigation mesh. By itself the navigation system will never know \"this is a tree / rock / wall collision shape or visual mesh\" because it only knows that \"here I was told I can path safely because it is on a navigation mesh\"."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:26
+msgid "Navigation mesh polygon convex vs concave comparison"
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:26
-msgid "Creating 2D navigation meshes"
+msgid "A navigation mesh describes a surface that an agent can stand on safely with its center compared to physics shapes that describe outer collision bounds."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:28
-msgid "Navigation meshes in the 2D editor are created with the help of the NavigationPolygon draw tools that appear in the top bar of the editor when a NavigationRegion2D is selected."
+msgid "If you experience clipping or collision problems while following navigation paths, always remember that you need to tell the navigation system what your intentions are through an appropriate navigation mesh. By itself the navigation system will never know \"this is a tree / rock / wall collision shape or visual mesh\" because it only knows that \"here I was told I can path safely because it is on a navigation mesh\"."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:33
-msgid "The NavigationPolygon draw tools can be used to create and edit navigation meshes by defining **outline** polygons. The outline polygons are later converted to real navigation mesh resources for the NavigationServer regions."
+msgid "Navigation mesh baking can be done either by using a :ref:`NavigationRegion2D<class_NavigationRegion2D>` or :ref:`NavigationRegion3D<class_NavigationRegion3D>`, or by using the :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>` API directly."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:38
-msgid "Multiple outlines can be added to the same NavigationPolygon resource as long as they **do not intersect or overlap**. Each additional outline will cut a hole in the polygon created by the larger outline. If the larger polygon is already a hole, it will create a new navigation mesh polygon inside."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:39
+msgid "Baking a navigation mesh with a NavigationRegion"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:42
-msgid "Outlines are not a replacement if the intention is to merge aligned polygons e.g. from grid cells. Outlines, as the name would suggest, cannot intersect each other or have any overlapping vertex positions."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:45
+msgid "Navigation mesh baking steps"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:45
+msgid "Baking a navigation mesh with agent radius offset from geometry."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:47
-msgid "Outline layouts like seen in this picture will fail the convex partitioning required by the navigation mesh generation. In these layout cases, the outline tool cannot be used. Use the :ref:`Geometry2D<class_Geometry2D>` class to merge or intersect polygons to create a merged mesh that is valid for navigation."
+msgid "The navigation mesh baking is made more accessible with the NavigationRegion node. When baking with a NavigationRegion node, the individual parsing, baking, and region update steps are all combined into one function."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:52
-msgid "The NavigationServer does not connect navigation mesh islands from the same navigation mesh resource. Do not create multiple disconnected islands in the same NavigationRegion2D or NavigationPolygon resource if they should be later connected."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:50
+msgid "The nodes are available in 2D and 3D as :ref:`NavigationRegion2D<class_NavigationRegion2D>` and :ref:`NavigationRegion3D<class_NavigationRegion3D>` respectively."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:55
-msgid "For 2D, no similar navigation mesh baking with geometry parsing exists like in 3D. The Geometry2D class functions for offset, merge, intersect, and clip can be used to shrink or enlarge existing NavigationPolygons for different actor sizes."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:54
+msgid "Baking with a NavigationRegion2D"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:59
-msgid "Creating 3D navigation meshes"
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:56
+msgid "When a NavigationRegion2D node is selected in the Editor, bake options as well as polygon draw tools appear in the top bar of the Editor."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:63
-msgid "Navigation meshes in the 3D editor are created with the help of the :ref:`NavigationMeshGenerator<class_NavigationMeshGenerator>` singleton and the NavigationMesh bake settings that appear in the editor inspector."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:60
+msgid "In order for the region to work a :ref:`NavigationPolygon<class_NavigationPolygon>` resource needs to be added."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:67
-msgid "Navigation mesh baking is the process of creating a simplified mesh used for pathfinding out of (complex) 3D level geometry. For this process Godot parses scene geometry and hands the raw mesh or collision data to the third-party ReCast library for processing and creation of the final navigation mesh."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:62
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:108
+msgid "The properties to parse and bake a navigation mesh are then part of the used resource and can be found in the resource Inspector."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:66
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:112
+msgid "The result of the source geometry parsing can be influenced with the following properties."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:68
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:114
+msgid "The ``parsed_geometry_type`` that filters if visual objects or physics objects or both should be parsed from the :ref:`SceneTree<class_SceneTree>`. For more details on what objects are parsed and how, see the section about parsing source geometry below."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:70
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:116
+msgid "The ``collision_mask`` filters which physics collision objects are included when the ``parsed_geometry_type`` includes static colliders."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:71
-msgid "The resulting navigation mesh is an approximation of the source geometry surfaces for both performance and technical reasons. Do not expect the navigation mesh to perfectly follow the original surfaces. Especially navigation polygons placed over ramps will not keep an equal distance to the ground surface. To align an actor perfectly with the ground use other means like physics."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:117
+msgid "The ``source_geometry_mode`` that defines on which node(s) to start the parsing, and how to traverse the :ref:`SceneTree<class_SceneTree>`."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:72
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:118
+msgid "The ``source_geometry_group_name`` is used when only a certain node group should be parsed. Depends on the selected ``source_geometry_mode``."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:74
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:120
+msgid "With the source geometry added, the result of the baking can be controlled with the following properties."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:76
+msgid "The ``cell_size`` sets the rasterization grid size and should match the navigation map size."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:77
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:123
+msgid "The ``agent_radius`` shrinks the baked navigation mesh to have enough margin for the agent (collision) size."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:79
-msgid "Meshes need to be triangulated to work as navigation meshes. Other mesh face formats like quad or ngon are not supported."
+msgid "The NavigationRegion2D baking can also be used at runtime with scripts."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:82
-msgid "NavigationMesh rebaking at runtime"
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:87
+msgid "To quickly test the 2D baking with default settings:"
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:84
-msgid "To rebake a ``NavigationMesh`` at runtime, use the ``NavigationRegion3D.bake_navigation_mesh()`` function. Another option is to use the ``NavigationMeshGenerator.bake()`` singleton function with the NavigationMesh resource directly. If the NavigationMesh resource is already prepared, the region can be updated with the NavigationServer3D API directly as well."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:89
+msgid "Add a :ref:`NavigationRegion2D<class_NavigationRegion2D>`."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:112
-msgid "Baking a NavigationMesh at runtime is a costly operation. A complex navigation mesh takes some time to bake and if done on the main thread can freeze a game. (Re)baking a large navigation mesh is preferably done in a separate thread."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:90
+msgid "Add a :ref:`NavigationPolygon<class_NavigationPolygon>` resource to the NavigationRegion2D."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:118
-msgid "Property values on a NavigationMesh resource like ``cell_size`` need to match the actual mesh data stored inside in order to merge different navigation meshes without issues."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:91
+msgid "Add a :ref:`Polygon2D<class_Polygon2D>` below the NavigationRegion2D."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:92
+msgid "Draw 1 NavigationPolygon outline with the selected NavigationRegion2D draw tool."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:93
+msgid "Draw 1 Polygon2D outline inside the NavigationPolygon outline with the selected Polygon2D draw tool."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:94
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:146
+msgid "Hit the Editor bake button and a navigation mesh should appear."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:100
+msgid "Baking with a NavigationRegion3D"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:102
+msgid "When a NavigationRegion3D node is selected in the Editor, bake options appear in the top bar of the Editor."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:106
+msgid "In order for the region to work a :ref:`NavigationMesh<class_NavigationMesh>` resource needs to be added."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:122
-msgid "NavigationRegion2D and NavigationRegion3D both use meshes to mark traversable areas, only the tools to create them are different."
+msgid "The ``cell_size`` and ``cell_height`` sets the rasterization voxel grid size and should match the navigation map size."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:124
-msgid "For 2D, NavigationPolygon resources are used to draw outline points in the editor. From these outline points the NavigationServer2D creates a mesh to upload navigation data to the NavigationServer."
+msgid "The ``agent_height`` excludes areas from the navigation mesh where the agent is too tall to fit in."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:126
-msgid "For 3D, NavigationMesh resources are used. Instead of providing draw tools the 3D variant provides an extensive amount of parameters to bake a navigation mesh directly from 3D source geometry."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:125
+msgid "The ``agent_max_climb`` and ``agent_max_slope`` removes areas where the height difference between neighboring voxels is too large, or where their surface is too steep."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:131
-msgid "Technically there is no hard distinction between 2D and 3D on how to use the given toolsets to create flat navigation meshes. The 2D drawing tool can be used to create a flat 3D navigation mesh and the 3D baking tool can be used to parse flat 3D geometry into appropriate 2D navigation meshes."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:129
+msgid "A too small ``cell_size`` or ``cell_height`` can create so many voxels that it has the potential to freeze the game or even crash."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:134
-msgid "2D navigation mesh from CollisionPolygons"
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:132
+msgid "The NavigationRegion3D baking can also be used at runtime with scripts."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:136
-msgid "The following script parses all child nodes of a NavigationRegion2D for CollisionPolygons and bakes their shape into the NavigationPolygon. As the NavigationPolygon creates the navigation mesh from outline data the shapes cannot overlap."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:140
+msgid "To quickly test the 3D baking with default settings:"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:142
+msgid "Add a :ref:`NavigationRegion3D<class_NavigationRegion3D>`."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:143
+msgid "Add a :ref:`NavigationMesh<class_NavigationMesh>` resource to the NavigationRegion3D."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:144
+msgid "Add a :ref:`MeshInstance3D<class_MeshInstance3D>` below the NavigationRegion3D."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:145
+msgid "Add a :ref:`PlaneMesh<class_PlaneMesh>` to the MeshInstance3D."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:155
+msgid "Baking a navigation mesh with the NavigationServer"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:157
+msgid "The :ref:`NavigationServer2D<class_NavigationServer2D>` and :ref:`NavigationServer3D<class_NavigationServer3D>` have API functions to call each step of the navigation mesh baking process individually."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:159
+msgid "``parse_source_geometry_data()`` can be used to parse source geometry to a reusable and serializable resource."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:160
+msgid "``bake_from_source_geometry_data()`` can be used to bake a navigation mesh from already parsed data e.g. to avoid runtime performance issues with (redundant) parsing."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:161
+msgid "``bake_from_source_geometry_data_async()`` is the same but bakes the navigation mesh deferred with threads, not blocking the main thread."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:163
+msgid "Compared to a NavigationRegion, the NavigationServer offers finer control over the navigation mesh baking process. In turn it is more complex to use but also provides more advanced options."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:166
+msgid "Some other advantages of the NavigationServer over a NavigationRegion are:"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:168
+msgid "The server can parse source geometry without baking, e.g. to cache it for later use."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:169
+msgid "The server allows selecting the root node at which to start the source geometry parsing manually."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:170
+msgid "The server can accept and bake from procedurally generated source geometry data."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:171
-msgid "Procedural 2D navigation mesh"
+msgid "The server can bake multiple navigation meshes in sequence while (re)using the same source geometry data."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:173
-msgid "The following script creates a new 2D navigation region and fills it with procedurally generated navigation mesh data from a NavigationPolygon resource."
+msgid "To bake navigation meshes with the NavigationServer, source geometry is required. Source geometry is geometry data that should be considered in a navigation mesh baking process. Both navigation meshes for 2D and 3D are created by baking them from source geometry."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:198
-msgid "Procedural 3D navigation mesh"
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:177
+msgid "2D and 3D versions of the source geometry resources are available as :ref:`NavigationMeshSourceGeometryData2D<class_NavigationMeshSourceGeometryData2D>` and :ref:`NavigationMeshSourceGeometryData3D<class_NavigationMeshSourceGeometryData3D>`  respectively."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:200
-msgid "The following script creates a new 3D navigation region and fills it with procedurally generated navigation mesh data from a NavigationMesh resource."
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:181
+msgid "Source geometry can be geometry parsed from visual meshes, from physics collision, or procedural created arrays of data, like outlines (2D) and triangle faces (3D). For convenience, source geometry is commonly parsed directly from node setups in the SceneTree. For runtime navigation mesh (re)bakes, be aware that the geometry parsing always happens on the main thread."
 msgstr ""
 
-#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:226
-msgid "Navigation mesh for 3D GridMaps"
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:188
+msgid "The SceneTree is not thread-safe. Parsing source geometry from the SceneTree can only be done on the main thread."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:192
+msgid "The data from visual meshes and polygons needs to be received from the GPU, stalling the RenderingServer in the process. For runtime (re)baking prefer using physics shapes as parsed source geometry."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:195
+msgid "Source geometry is stored inside resources so the created geometry can be reused for multiple bakes. E.g. baking multiple navigation meshes for different agent sizes from the same source geometry. This also allows to save source geometry to disk so it can be loaded later, e.g. to avoid the overhead of parsing it again at runtime."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:199
+msgid "The geometry data should be in general kept very simple. As many edges as are required but as few as possible. Especially in 2D duplicated and nested geometry should be avoided as it forces polygon hole calculation that can result in flipped polygons. An example for nested geometry would be a smaller StaticBody2D shape placed completely inside the bounds of another StaticBody2D shape."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:204
+msgid "Navigation mesh baking common problems"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:206
+msgid "There are some common user problems and important caveats to consider when creating or baking navigation meshes."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:218
+msgid "Navigation mesh baking creates frame rate problems at runtime"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:209
+msgid "The navigation mesh baking is by default done on a background thread, so as long as the platform supports threads, the actual baking is rarely the source of any performance issues (assuming a reasonably sized and complex geometry for runtime rebakes)."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:212
+msgid "The common source for performance issues at runtime is the parsing step for source geometry that involves nodes and the SceneTree. The SceneTree is not thread-safe so all the nodes need to be parsed on the main thread. Some nodes with a lot of data can be very heavy and slow to parse at runtime, e.g. a TileMap has one or more polygons for every single used cell and TileMapLayer to parse. Nodes that hold meshes need to request the data from the RenderingServer stalling the rendering in the process."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:217
+msgid "To improve performance, use more optimized shapes, e.g. collision shapes over detailed visual meshes, and merge and simplify as much geometry as possible upfront. If nothing helps, don't parse the SceneTree and add the source geometry procedural with scripts. If only pure data arrays are used as source geometry, the entire baking process can be done on a background thread."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:225
+msgid "Navigation mesh creates unintended holes in 2D."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:221
+msgid "The navigation mesh baking in 2D is done by doing polygon clipping operations based on outline paths. Polygons with \"holes\" are a necessary evil to create more complex 2D polygons but can become unpredictable for users with many complex shapes involved."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:224
+msgid "To avoid any unexpected problems with polygon hole calculations, avoid nesting any outlines inside other outlines of the same type (traversable / obstruction). This includes the parsed shapes from nodes. E.g. placing a smaller StaticBody2D shape inside a larger StaticBody2D shape can result in the resulting polygon being flipped."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:230
+msgid "Navigation mesh appears inside geometry in 3D."
 msgstr ""
 
 #: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:228
-msgid "The following script creates a new 3D navigation mesh for each GridMap items, clears the current grid cells, and adds new procedural grid cells with the new navigation mesh."
+msgid "The navigation mesh baking in 3D has no concept of \"inside\". The voxel cells used to rasterize the geometry are either occupied or not. Remove the geometry that is on the ground inside the other geometry. If that is not possible, add smaller \"dummy\" geometry inside with as few triangles as possible so the cells are occupied with something."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:233
+msgid "Navigation mesh script templates"
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:235
+msgid "The following script uses the NavigationServer to parse source geometry from the scene tree, bakes a navigation mesh, and updates a navigation region with the updated navigation mesh."
+msgstr ""
+
+#: ../../docs/tutorials/navigation/navigation_using_navigationmeshes.rst:350
+msgid "The following script uses the NavigationServer to update a navigation region with procedurally generated navigation mesh data."
 msgstr ""
 
 #: ../../docs/<rst_epilog>:0

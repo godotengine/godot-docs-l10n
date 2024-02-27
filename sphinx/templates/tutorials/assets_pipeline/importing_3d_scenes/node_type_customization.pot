@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -122,46 +122,54 @@ msgid "See :ref:`doc_collision_shapes_3d` for a comprehensive overview of collis
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:95
-msgid "Create navigation (-navmesh)"
+msgid "Create Occluder (-occ, -occonly)"
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:97
-msgid "A mesh node with the ``-navmesh`` suffix will be converted to a navigation mesh. The original Mesh object will be removed at import-time."
-msgstr ""
-
-#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:101
-msgid "Create a VehicleBody (-vehicle)"
+msgid "If a mesh is imported with the ``-occ`` suffix an :ref:`class_occluder3D` node will be created based on the geometry of the mesh, it does not replace the mesh. A mesh node with the ``-occonly`` suffix will be converted to an :ref:`class_occluder3D` on import."
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:103
-msgid "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :ref:`class_VehicleBody3D` node."
+msgid "Create navigation (-navmesh)"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:107
-msgid "Create a VehicleWheel (-wheel)"
+#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:105
+msgid "A mesh node with the ``-navmesh`` suffix will be converted to a navigation mesh. The original Mesh object will be removed at import-time."
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:109
-msgid "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:`class_VehicleWheel3D` node."
+msgid "Create a VehicleBody (-vehicle)"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:113
-msgid "Rigid Body (-rigid)"
+#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:111
+msgid "A mesh node with the ``-vehicle`` suffix will be imported as a child to a :ref:`class_VehicleBody3D` node."
 msgstr ""
 
 #: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:115
+msgid "Create a VehicleWheel (-wheel)"
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:117
+msgid "A mesh node with the ``-wheel`` suffix will be imported as a child to a :ref:`class_VehicleWheel3D` node."
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:121
+msgid "Rigid Body (-rigid)"
+msgstr ""
+
+#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:123
 msgid "A mesh node with the ``-rigid`` suffix will be imported as a :ref:`class_RigidBody3D`."
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:118
+#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:126
 msgid "Animation loop (-loop, -cycle)"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:120
+#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:128
 msgid "Animation clips in the source 3D file that start or end with the token ``loop`` or ``cycle`` will be imported as a Godot :ref:`class_Animation` with the loop flag set. **Unlike the other suffixes described above, this does not require a hyphen.**"
 msgstr ""
 
-#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:124
+#: ../../docs/tutorials/assets_pipeline/importing_3d_scenes/node_type_customization.rst:132
 msgid "In Blender, this requires using the NLA Editor and naming the Action with the ``loop`` or ``cycle`` prefix or suffix."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,8 +32,8 @@ msgstr ""
 msgid "|image0|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:447
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:447
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:438
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:438
 msgid "image0"
 msgstr ""
 
@@ -73,230 +73,222 @@ msgstr ""
 msgid "In case the player presses, say, both W and D simultaneously, the vector will have a length of about ``1.4``. But if they press a single key, it will have a length of ``1``. We want the vector's length to be consistent, and not move faster diagonally. To do so, we can call its ``normalized()`` method."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:157
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:159
 msgid "Here, we only normalize the vector if the direction has a length greater than zero, which means the player is pressing a direction key."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:160
-msgid "In this case, we also get the ``Pivot`` node and call its ``look_at()`` method. This method takes a position in space to look at in global coordinates and the up direction. In this case, we can use the ``Vector3.UP`` constant."
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:162
+msgid "We compute the direction the ``$Pivot`` is looking by creating a :ref:`Basis <class_Basis>` that looks in the ``direction`` direction."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:166
-msgid "A node's local coordinates, like ``position``, are relative to their parent. Global coordinates, like ``global_position`` are relative to the world's main axes you can see in the viewport instead."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:170
-msgid "In 3D, the property that contains a node's position is ``position``. By adding the ``direction`` to it, we get a position to look at that's one meter away from the ``Player``."
-msgstr ""
-
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:174
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:165
 msgid "Then, we update the velocity. We have to calculate the ground velocity and the fall speed separately. Be sure to go back one tab so the lines are inside the ``_physics_process()`` function but outside the condition we just wrote above."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:223
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:214
 msgid "The ``CharacterBody3D.is_on_floor()`` function returns ``true`` if the body collided with the floor in this frame. That's why we apply gravity to the ``Player`` only while it is in the air."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:226
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:217
 msgid "For the vertical velocity, we subtract the fall acceleration multiplied by the delta time every frame. This line of code will cause our character to fall in every frame, as long as it is not on or colliding with the floor."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:230
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:221
 msgid "The physics engine can only detect interactions with walls, the floor, or other bodies during a given frame if movement and collisions happen. We will use this property later to code the jump."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:234
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:225
 msgid "On the last line, we call ``CharacterBody3D.move_and_slide()`` which is a powerful method of the ``CharacterBody3D`` class that allows you to move a character smoothly. If it hits a wall midway through a motion, the engine will try to smooth it out for you. It uses the *velocity* value native to the :ref:`CharacterBody3D <class_CharacterBody3D>`"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:246
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:237
 msgid "And that's all the code you need to move the character on the floor."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:248
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:239
 msgid "Here is the complete ``Player.gd`` code for reference."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:350
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:341
 msgid "Testing our player's movement"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:352
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:343
 msgid "We're going to put our player in the ``Main`` scene to test it. To do so, we need to instantiate the player and then add a camera. Unlike in 2D, in 3D, you won't see anything if your viewport doesn't have a camera pointing at something."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:356
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:347
 msgid "Save your ``Player`` scene and open the ``Main`` scene. You can click on the *Main* tab at the top of the editor to do so."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:359
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:350
 msgid "|image1|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:448
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:448
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:439
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:439
 msgid "image1"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:361
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:352
 msgid "If you closed the scene before, head to the *FileSystem* dock and double-click ``main.tscn`` to re-open it."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:364
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:355
 msgid "To instantiate the ``Player``, right-click on the ``Main`` node and select *Instantiate Child Scene*."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:367
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:358
 msgid "|image2|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:449
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:449
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:440
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:440
 msgid "image2"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:369
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:360
 msgid "In the popup, double-click ``player.tscn``. The character should appear in the center of the viewport."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:373
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:364
 msgid "Adding a camera"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:375
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:366
 msgid "Let's add the camera next. Like we did with our *Player*\\ 's *Pivot*, we're going to create a basic rig. Right-click on the ``Main`` node again and select *Add Child Node*. Create a new :ref:`Marker3D <class_Marker3D>`, and name it ``CameraPivot``. Select ``CameraPivot`` and add a child node :ref:`Camera3D <class_Camera3D>` to it. Your scene tree should look like this."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:379
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:370
 msgid "|image3|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:450
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:450
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:441
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:441
 msgid "image3"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:381
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:372
 msgid "Notice the *Preview* checkbox that appears in the top-left when you have the *Camera* selected. You can click it to preview the in-game camera projection."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:384
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:375
 msgid "|image4|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:451
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:451
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:442
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:442
 msgid "image4"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:386
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:377
 msgid "We're going to use the *Pivot* to rotate the camera as if it was on a crane. Let's first split the 3D view to be able to freely navigate the scene and see what the camera sees."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:390
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:381
 msgid "In the toolbar right above the viewport, click on *View*, then *2 Viewports*. You can also press :kbd:`Ctrl + 2` (:kbd:`Cmd + 2` on macOS)."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:393
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:384
 msgid "|image11|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:458
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:458
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:449
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:449
 msgid "image11"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:395
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:386
 msgid "|image5|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:452
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:452
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:443
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:443
 msgid "image5"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:397
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:388
 msgid "On the bottom view, select your :ref:`Camera3D <class_Camera3D>` and turn on camera Preview by clicking the checkbox."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:400
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:391
 msgid "|image6|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:453
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:453
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:444
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:444
 msgid "image6"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:402
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:393
 msgid "In the top view, move the camera about ``19`` units on the Z axis (the blue one)."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:405
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:396
 msgid "|image7|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:454
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:454
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:445
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:445
 msgid "image7"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:407
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:398
 msgid "Here's where the magic happens. Select the *CameraPivot* and rotate it ``-45`` degrees around the X axis (using the red circle). You'll see the camera move as if it was attached to a crane."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:411
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:402
 msgid "|image8|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:455
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:455
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:446
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:446
 msgid "image8"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:413
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:404
 msgid "You can run the scene by pressing :kbd:`F6` and press the arrow keys to move the character."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:416
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:407
 msgid "|image9|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:456
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:456
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:447
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:447
 msgid "image9"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:418
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:409
 msgid "We can see some empty space around the character due to the perspective projection. In this game, we're going to use an orthographic projection instead to better frame the gameplay area and make it easier for the player to read distances."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:423
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:414
 msgid "Select the *Camera* again and in the *Inspector*, set the *Projection* to *Orthogonal* and the *Size* to ``19``. The character should now look flatter and the ground should fill the background."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:429
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:420
 msgid "When using an orthogonal camera in Godot 4, directional shadow quality is dependent on the camera's *Far* value. The higher the *Far* value, the further away the camera will be able to see. However, higher *Far* values also decrease shadow quality as the shadow rendering has to cover a greater distance."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:435
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:426
 msgid "If directional shadows look too blurry after switching to an orthogonal camera, decrease the camera's *Far* property to a lower value such as ``100``. Don't decrease this *Far* property too much, or objects in the distance will start disappearing."
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:440
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:431
 msgid "|image10|"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:457
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:457
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:448
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:448
 msgid "image10"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:442
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:433
 msgid "Test your scene and you should be able to move in all 8 directions and not glitch through the floor!"
 msgstr ""
 
-#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:444
+#: ../../docs/getting_started/first_3d_game/03.player_movement_code.rst:435
 msgid "Ultimately, we have both player movement and the view in place. Next, we will work on the monsters."
 msgstr ""
 

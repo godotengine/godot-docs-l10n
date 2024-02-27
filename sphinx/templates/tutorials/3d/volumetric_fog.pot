@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Godot Engine 4.2\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-29 23:14+0100\n"
+"POT-Creation-Date: 2024-02-27 19:04+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -164,191 +164,195 @@ msgstr ""
 msgid "**Rendering > Environment > Volumetric Fog > Use Filter:** Enables filtering of the volumetric fog effect prior to integration. This substantially blurs the fog which reduces fine details but also smooths out harsh edges and aliasing artifacts. Disable when more detail is required."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:153
-msgid "Using fog volumes for local volumetric fog"
-msgstr ""
-
-#: ../../docs/tutorials/3d/volumetric_fog.rst:155
-msgid "Sometimes, you want fog to be constrained to specific areas. Conversely, you may want to have global volumetric fog but fog should be excluded from certain areas. Both approaches can be followed using FogVolume nodes."
+#: ../../docs/tutorials/3d/volumetric_fog.rst:154
+msgid "Volumetric fog can cause banding to appear on the viewport, especially at higher density levels. See :ref:`doc_3d_rendering_limitations_color_banding` for guidance on reducing banding."
 msgstr ""
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:159
-msgid "Here's a quick start guide to using FogVolumes:"
+msgid "Using fog volumes for local volumetric fog"
 msgstr ""
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:161
-msgid "Make sure **Volumetric Fog** is enabled in the Environment properties. If global volumetric fog is undesired, set its **Density** to ``0.0``."
-msgstr ""
-
-#: ../../docs/tutorials/3d/volumetric_fog.rst:163
-msgid "Create a FogVolume node."
-msgstr ""
-
-#: ../../docs/tutorials/3d/volumetric_fog.rst:164
-msgid "Assign a new FogMaterial to the FogVolume node's **Material** property."
+msgid "Sometimes, you want fog to be constrained to specific areas. Conversely, you may want to have global volumetric fog but fog should be excluded from certain areas. Both approaches can be followed using FogVolume nodes."
 msgstr ""
 
 #: ../../docs/tutorials/3d/volumetric_fog.rst:165
+msgid "Here's a quick start guide to using FogVolumes:"
+msgstr ""
+
+#: ../../docs/tutorials/3d/volumetric_fog.rst:167
+msgid "Make sure **Volumetric Fog** is enabled in the Environment properties. If global volumetric fog is undesired, set its **Density** to ``0.0``."
+msgstr ""
+
+#: ../../docs/tutorials/3d/volumetric_fog.rst:169
+msgid "Create a FogVolume node."
+msgstr ""
+
+#: ../../docs/tutorials/3d/volumetric_fog.rst:170
+msgid "Assign a new FogMaterial to the FogVolume node's **Material** property."
+msgstr ""
+
+#: ../../docs/tutorials/3d/volumetric_fog.rst:171
 msgid "In the FogMaterial, set **Density** to a positive value to increase density within the FogVolume, or a negative value to subtract the density from global volumetric fog."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:168
+#: ../../docs/tutorials/3d/volumetric_fog.rst:174
 msgid "Configure the FogVolume's extents and shape as needed."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:172
+#: ../../docs/tutorials/3d/volumetric_fog.rst:178
 msgid "Thin fog volumes may appear to flicker when the camera moves or rotates. This can be alleviated by increasing the **Rendering > Environment > Volumetric Fog > Volume Depth** project setting (at a performance cost) or by decreasing **Length** in the Environment volumetric fog properties (at no performance cost, but at the cost of lower fog range). Alternatively, the FogVolume can be made thicker and use a lower density in the **Material**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:181
+#: ../../docs/tutorials/3d/volumetric_fog.rst:187
 msgid "FogVolume properties"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:183
+#: ../../docs/tutorials/3d/volumetric_fog.rst:189
 msgid "**Extents:** The size of the FogVolume when **Shape** is **Ellipsoid**, **Cone**, **Cylinder** or **Box**. If **Shape** is **Cone** or **Cylinder**, the cone/cylinder will be adjusted to fit within the extents. Non-uniform scaling of cone/cylinder shapes via the **Extents** property is not supported, but you can scale the FogVolume node instead."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:188
+#: ../../docs/tutorials/3d/volumetric_fog.rst:194
 msgid "**Shape:** The shape of the FogVolume. This can be set to **Ellipsoid**, **Cone**, **Cylinder**, **Box** or **World** (acts as global volumetric fog)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:190
+#: ../../docs/tutorials/3d/volumetric_fog.rst:196
 msgid "**Material:** The material used by the FogVolume. Can be either a built-in FogMaterial or a custom ShaderMaterial (:ref:`doc_fog_shader`)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:193
+#: ../../docs/tutorials/3d/volumetric_fog.rst:199
 msgid "After choosing **New FogMaterial** in the **Material** property, you can adjust the following properties in FogMaterial:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:196
+#: ../../docs/tutorials/3d/volumetric_fog.rst:202
 msgid "**Density:** The density of the FogVolume. Denser objects are more opaque, but may suffer from under-sampling artifacts that look like stripes. Negative values can be used to subtract fog from other FogVolumes or global volumetric fog."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:200
+#: ../../docs/tutorials/3d/volumetric_fog.rst:206
 msgid "**Albedo:** The single-scattering Color of the FogVolume. Internally, member albedo is converted into single-scattering, which is additively blended with other FogVolumes and global volumetric fog's **Albedo**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:203
+#: ../../docs/tutorials/3d/volumetric_fog.rst:209
 msgid "**Emission:** The Color of the light emitted by the FogVolume. Emitted light will not cast light or shadows on other objects, but can be useful for modulating the Color of the FogVolume independently from light sources."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:206
+#: ../../docs/tutorials/3d/volumetric_fog.rst:212
 msgid "**Height Falloff:** The rate by which the height-based fog decreases in density as height increases in world space. A high falloff will result in a sharp transition, while a low falloff will result in a smoother transition. A value of ``0.0`` results in uniform-density fog. The height threshold is determined by the height of the associated FogVolume."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:211
+#: ../../docs/tutorials/3d/volumetric_fog.rst:217
 msgid "**Edge Fade:** The hardness of the edges of the FogVolume. A higher value will result in softer edges, while a lower value will result in harder edges."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:213
+#: ../../docs/tutorials/3d/volumetric_fog.rst:219
 msgid "**Density Texture:** The 3D texture that is used to scale the member density of the FogVolume. This can be used to vary fog density within the FogVolume with any kind of static pattern. For animated effects, consider using a custom :ref:`fog shader <doc_fog_shader>`. You can import any image as a 3D texture by :ref:`changing its import type in the Import dock <doc_importing_images_changing_import_type>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:221
+#: ../../docs/tutorials/3d/volumetric_fog.rst:227
 msgid "Using 3D noise density textures"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:223
+#: ../../docs/tutorials/3d/volumetric_fog.rst:229
 msgid "Since Godot 4.1, there is a NoiseTexture3D resource that can be used to procedurally generate 3D noise. This is well-suited to FogMaterial density textures, which can result in more detailed fog effects:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:230
+#: ../../docs/tutorials/3d/volumetric_fog.rst:236
 msgid "FogMaterial comparison (without and with density texture)"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:230
+#: ../../docs/tutorials/3d/volumetric_fog.rst:236
 msgid "Screenshot taken with **Volume Size** project setting set to 192 to make high-frequency detail more visible in the fog."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:233
+#: ../../docs/tutorials/3d/volumetric_fog.rst:239
 msgid "To do so, select the **Density Texture** property and choose **New NoiseTexture3D**. Edit this NoiseTexture3D by clicking it, then click **Noise** at the bottom of the NoiseTexture3D properties and choose **New FastNoiseLite**. Adjust the noise texture's width, height and depth according to your fog volume's dimensions."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:238
+#: ../../docs/tutorials/3d/volumetric_fog.rst:244
 msgid "To improve performance, it's recommended to use low texture sizes (64×64×64 or lower), as high-frequency detail is difficult to notice in a FogVolume. If you wish to represent more detailed density variations, you will need to increase **Rendering > Environment > Volumetric Fog > Volume Size** in the project settings, which has a performance cost."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:246
+#: ../../docs/tutorials/3d/volumetric_fog.rst:252
 msgid "NoiseTexture3D's **Color Ramp** affects FogMaterial density textures, but since only the texture's red channel is sampled, only the color ramp's red channel will affect the resulting density."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:250
+#: ../../docs/tutorials/3d/volumetric_fog.rst:256
 msgid "However, using a color ramp will *not* tint the fog volume according to the texture. You would need to use a custom shader that reads a Texture3D to achieve this."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:255
+#: ../../docs/tutorials/3d/volumetric_fog.rst:261
 msgid "Custom FogVolume shaders"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:257
+#: ../../docs/tutorials/3d/volumetric_fog.rst:263
 msgid "This page only covers the built-in settings offered by FogMaterial. If you need to customize fog behavior within a FogVolume node (such as creating animated fog), FogVolume nodes' appearance can be customized using :ref:`doc_fog_shader`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:262
+#: ../../docs/tutorials/3d/volumetric_fog.rst:268
 msgid "Faking volumetric fog using quads"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:264
+#: ../../docs/tutorials/3d/volumetric_fog.rst:270
 msgid "In some cases, it may be better to use specially configured QuadMeshes as an alternative to volumetric fog:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:267
+#: ../../docs/tutorials/3d/volumetric_fog.rst:273
 msgid "Quads work with any rendering method, including Forward Mobile and Compatibility."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:268
+#: ../../docs/tutorials/3d/volumetric_fog.rst:274
 msgid "Quads do not require temporal reprojection to look smooth, which makes them suited to fast-moving dynamic effects such as lasers. They can also represent small details which volumetric fog cannot do efficiently."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:271
+#: ../../docs/tutorials/3d/volumetric_fog.rst:277
 msgid "Quads generally have a lower performance cost than volumetric fog."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:273
+#: ../../docs/tutorials/3d/volumetric_fog.rst:279
 msgid "This approach has a few downsides though:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:275
+#: ../../docs/tutorials/3d/volumetric_fog.rst:281
 msgid "The fog effect has less realistic falloff, especially if the camera enters the fog."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:276
+#: ../../docs/tutorials/3d/volumetric_fog.rst:282
 msgid "Transparency sorting issues may occur when sprites overlap."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:277
+#: ../../docs/tutorials/3d/volumetric_fog.rst:283
 msgid "Performance will not necessarily be better than volumetric fog if there are lots of sprites close to the camera."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:280
+#: ../../docs/tutorials/3d/volumetric_fog.rst:286
 msgid "To create a QuadMesh-based fog sprite:"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:282
+#: ../../docs/tutorials/3d/volumetric_fog.rst:288
 msgid "Create a MeshInstance3D node with a QuadMesh resource in the **Mesh** property. Set the size as desired."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:284
+#: ../../docs/tutorials/3d/volumetric_fog.rst:290
 msgid "Create a new StandardMaterial3D in the mesh's **Material** property."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:285
+#: ../../docs/tutorials/3d/volumetric_fog.rst:291
 msgid "In the StandardMaterial3D, set **Shading > Shading Mode** to **Unshaded**, **Billboard > Mode** to **Enabled**, enable **Proximity Fade** and set **Distance Fade** to **Pixel Alpha**."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:288
+#: ../../docs/tutorials/3d/volumetric_fog.rst:294
 msgid "Set the **Albedo > Texture** to the texture below (right-click and choose **Save as…**):"
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:292
+#: ../../docs/tutorials/3d/volumetric_fog.rst:298
 msgid "*After* setting the albedo texture, go to the Import dock, select the texture and change its compression mode to **Lossless** to improve quality."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:295
+#: ../../docs/tutorials/3d/volumetric_fog.rst:301
 msgid "The fog's color is set using the **Albedo > Color** property; its density is set using the color's alpha channel. For best results, you will have to adjust **Proximity Fade > Distance** and **Distance Fade > Max Distance** depending on the size of your QuadMesh."
 msgstr ""
 
-#: ../../docs/tutorials/3d/volumetric_fog.rst:300
+#: ../../docs/tutorials/3d/volumetric_fog.rst:306
 msgid "Optionally, billboarding may be left disabled if you place the quad in a way where all of its corners are in solid geometry. This can be useful for fogging large planes that the camera cannot enter, such as bottomless pits."
 msgstr ""
 
