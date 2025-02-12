@@ -3,13 +3,19 @@
 import polib
 
 
-def check(lang):
+def get_percent_translated(lang):
+    """
+    Get overall translation completion percentage.
+    """
     pofile = polib.pofile("./weblate/{}.po".format(lang))
+    return pofile.percent_translated()
 
-    if pofile.percent_translated() > 50:
-        return
-    print("==== {} - {}% translated ====".format(lang, pofile.percent_translated()))
 
+def get_stats(lang):
+    """
+    Print completion stats per folder.
+    """
+    pofile = polib.pofile("./weblate/{}.po".format(lang))
     statistic = {}  # section -> [complete, incomplete]
 
     for entry in pofile:
@@ -27,10 +33,10 @@ def check(lang):
 
     for k, v in sorted(statistic.items()):
         ratio = v[0] / (v[0] + v[1])
-        if ratio > 0.5:
-            print("{:5.1f}\t{}".format(100 * ratio, k or "<root>"))
+        print("{:5.1f}\t{}".format(100 * ratio, k or "<root>"))
 
 
 with open("build_langs.txt") as f:
     for lang in f.read().splitlines():
-        check(lang)
+        completion = get_percent_translated(lang)
+        print("==== {}:\t{}% translated ====".format(lang, completion))
