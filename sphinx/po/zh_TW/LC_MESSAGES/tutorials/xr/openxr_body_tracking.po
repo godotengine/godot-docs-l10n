@@ -1,0 +1,90 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "OpenXR body tracking"
+msgstr "OpenXR 身體追蹤"
+
+msgid ""
+"Support for full body tracking in OpenXR is only just becoming available for "
+"a select few platforms. As support solidifies information will be added to "
+"this page."
+msgstr ""
+"OpenXR 的全身追蹤功能目前僅在少數平台上提供。隨著支援度提升，將會在本頁補充相"
+"關資訊。"
+
+msgid "HTC Tracker support"
+msgstr "HTC 追蹤器支援"
+
+msgid ""
+"An option that has been available for some time is doing full body tracking "
+"using HTC trackers. These are currently supported through SteamVR and on HTC "
+"Elite XR headsets. They are exposed through the action map system."
+msgstr ""
+"其中一種行之有年的全身追蹤方案，是使用 HTC 追蹤器。這些裝置目前可透過 "
+"SteamVR 及 HTC Elite XR 頭戴裝置支援，並可經由動作對應系統進行操作。"
+
+msgid ""
+"These trackers are identified by their roles which are assigned to them when "
+"configured. Simply add :ref:`XRController3D <class_xrcontroller3d>` nodes as "
+"children to the :ref:`XROrigin3D <class_xrorigin3d>` node and assign one of "
+"the following trackers:"
+msgstr ""
+"這些追蹤器會在設定時分配特定角色。只需將 :ref:`XRController3D "
+"<class_xrcontroller3d>` 節點作為 :ref:`XROrigin3D <class_xrorigin3d>` 子節"
+"點，並指定下列其中一個追蹤器角色："
+
+msgid "HTC trackers"
+msgstr "HTC 追蹤器"
+
+msgid "/user/vive_tracker_htcx/role/handheld_object"
+msgstr "/user/vive_tracker_htcx/role/handheld_object"
+
+msgid "/user/vive_tracker_htcx/role/left_foot"
+msgstr "/user/vive_tracker_htcx/role/left_foot"
+
+msgid "/user/vive_tracker_htcx/role/right_foot"
+msgstr "/user/vive_tracker_htcx/role/right_foot"
+
+msgid "/user/vive_tracker_htcx/role/left_shoulder"
+msgstr "/user/vive_tracker_htcx/role/left_shoulder"
+
+msgid "/user/vive_tracker_htcx/role/right_shoulder"
+msgstr "/user/vive_tracker_htcx/role/right_shoulder"
+
+msgid "/user/vive_tracker_htcx/role/left_elbow"
+msgstr "/user/vive_tracker_htcx/role/left_elbow"
+
+msgid "/user/vive_tracker_htcx/role/right_elbow"
+msgstr "/user/vive_tracker_htcx/role/right_elbow"
+
+msgid "/user/vive_tracker_htcx/role/left_knee"
+msgstr "/user/vive_tracker_htcx/role/left_knee"
+
+msgid "/user/vive_tracker_htcx/role/right_knee"
+msgstr "/user/vive_tracker_htcx/role/right_knee"
+
+msgid "/user/vive_tracker_htcx/role/waist"
+msgstr "/user/vive_tracker_htcx/role/waist"
+
+msgid "/user/vive_tracker_htcx/role/chest"
+msgstr "/user/vive_tracker_htcx/role/chest"
+
+msgid "/user/vive_tracker_htcx/role/camera"
+msgstr "/user/vive_tracker_htcx/role/camera"
+
+msgid "/user/vive_tracker_htcx/role/keyboard"
+msgstr "/user/vive_tracker_htcx/role/keyboard"
+
+msgid ""
+"You can now use these as targets for IK modifiers on a full body avatar."
+msgstr "你現在可以將這些追蹤器作為全身虛擬角色的 IK（反向運動學）修飾器目標。"

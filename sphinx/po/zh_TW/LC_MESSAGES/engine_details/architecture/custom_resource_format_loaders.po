@@ -1,0 +1,201 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Custom resource format loaders"
+msgstr "自訂資源格式載入器"
+
+msgid "Introduction"
+msgstr "前言"
+
+msgid ""
+"ResourceFormatLoader is a factory interface for loading file assets. "
+"Resources are primary containers. When load is called on the same file path "
+"again, the previous loaded Resource will be referenced. Naturally, loaded "
+"resources must be stateless."
+msgstr ""
+"ResourceFormatLoader 是用來載入檔案資產的工廠介面。資源是主要的容器，當再次於"
+"相同檔案路徑呼叫載入時，會參照到先前已載入的 Resource。理論上，載入的資源必須"
+"是無狀態的。"
+
+msgid ""
+"This guide assumes the reader knows how to create C++ modules and Godot data "
+"types. If not, refer to this guide: :ref:`doc_custom_modules_in_cpp`"
+msgstr ""
+"本指南假設讀者已經了解如何建立 C++ 模組與 Godot 資料型別。若不熟悉，請參"
+"考 :ref:`doc_custom_modules_in_cpp` 此指南"
+
+msgid "References"
+msgstr "參考資料"
+
+msgid ":ref:`ResourceLoader<class_resourceloader>`"
+msgstr ":ref:`ResourceLoader<class_resourceloader>`"
+
+msgid ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
+msgstr ""
+"`core/io/resource_loader.cpp <https://github.com/godotengine/godot/blob/"
+"master/core/io/resource_loader.cpp>`_"
+
+msgid "What for?"
+msgstr "用途說明?"
+
+msgid "Adding new support for many file formats"
+msgstr "新增多種檔案格式的支援"
+
+msgid "Audio formats"
+msgstr "音訊格式"
+
+msgid "Video formats"
+msgstr "影片格式"
+
+msgid "Machine learning models"
+msgstr "機器學習模型"
+
+msgid "What not?"
+msgstr "不適用於哪些？"
+
+msgid "Raster images"
+msgstr "點陣圖"
+
+msgid "ImageFormatLoader should be used to load images."
+msgstr "應使用 ImageFormatLoader 來載入圖片。"
+
+msgid ""
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
+msgstr ""
+"`core/io/image_loader.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/image_loader.h>`_"
+
+msgid "Creating a ResourceFormatLoader"
+msgstr "建立 ResourceFormatLoader"
+
+msgid ""
+"Each file format consist of a data container and a ``ResourceFormatLoader``."
+msgstr "每個檔案格式都包含一個資料容器以及一個 ``ResourceFormatLoader``。"
+
+msgid ""
+"ResourceFormatLoaders are classes which return all the necessary metadata "
+"for supporting new extensions in Godot. The class must return the format "
+"name and the extension string."
+msgstr ""
+"ResourceFormatLoader 是回傳所有必要後設資料以支援 Godot 新副檔名的類別。該類"
+"別必須回傳格式名稱與副檔名字串。"
+
+msgid ""
+"In addition, ResourceFormatLoaders must convert file paths into resources "
+"with the ``load`` function. To load a resource, ``load`` must read and "
+"handle data serialization."
+msgstr ""
+"此外，ResourceFormatLoader 必須實作 ``load`` 函式，將檔案路徑轉換為資源。載入"
+"資源時，``load`` 必須負責讀取並處理資料序列化。"
+
+msgid "resource_loader_json.h"
+msgstr "resource_loader_json.h"
+
+msgid "resource_loader_json.cpp"
+msgstr "resource_loader_json.cpp"
+
+msgid "Creating a ResourceFormatSaver"
+msgstr "建立 ResourceFormatSaver"
+
+msgid ""
+"If you'd like to be able to edit and save a resource, you can implement a "
+"``ResourceFormatSaver``:"
+msgstr "若希望能夠編輯並儲存資源，可實作一個 ``ResourceFormatSaver``："
+
+msgid "resource_saver_json.h"
+msgstr "resource_saver_json.h"
+
+msgid "resource_saver_json.cpp"
+msgstr "resource_saver_json.cpp"
+
+msgid "Creating custom data types"
+msgstr "建立自訂資料型別"
+
+msgid ""
+"Godot may not have a proper substitute within its :ref:`doc_core_types` or "
+"managed resources. Godot needs a new registered data type to understand "
+"additional binary formats such as machine learning models."
+msgstr ""
+"Godot 的 :ref:`doc_core_types` 或管理的資源中可能沒有適當的替代品。這時需註冊"
+"新的資料型別，讓 Godot 能夠辨識如機器學習模型等額外的二進位格式。"
+
+msgid "Here is an example of creating a custom datatype:"
+msgstr "以下為建立自訂資料型別的範例："
+
+msgid "resource_json.h"
+msgstr "resource_json.h"
+
+msgid "resource_json.cpp"
+msgstr "resource_json.cpp"
+
+msgid "Considerations"
+msgstr "注意事項"
+
+msgid ""
+"Some libraries may not define certain common routines such as IO handling. "
+"Therefore, Godot call translations are required."
+msgstr ""
+"有些函式庫可能未定義像是 IO 處理等常用操作，因此必須將 Godot 的呼叫進行轉換。"
+
+msgid ""
+"For example, here is the code for translating ``FileAccess`` calls into "
+"``std::istream``."
+msgstr ""
+"例如，以下程式碼示範如何將 ``FileAccess`` 呼叫轉換為 ``std::istream``。"
+
+msgid "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+msgstr "`istream <https://cplusplus.com/reference/istream/istream/>`_"
+
+msgid ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+msgstr ""
+"`streambuf <https://cplusplus.com/reference/streambuf/streambuf/?"
+"kw=streambuf>`_"
+
+msgid ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+msgstr ""
+"`core/io/file_access.h <https://github.com/godotengine/godot/blob/master/"
+"core/io/file_access.h>`_"
+
+msgid "Registering the new file format"
+msgstr "註冊新檔案格式"
+
+msgid ""
+"Godot registers ``ResourcesFormatLoader`` with a ``ResourceLoader`` handler. "
+"The handler selects the proper loader automatically when ``load`` is called."
+msgstr ""
+"Godot 會利用 ``ResourceLoader`` 處理器註冊 ``ResourceFormatLoader``，當 "
+"``load`` 被呼叫時，該處理器會自動選擇適合的載入器。"
+
+msgid "register_types.h"
+msgstr "register_types.h"
+
+msgid "register_types.cpp"
+msgstr "register_types.cpp"
+
+msgid "Loading it on GDScript"
+msgstr "在 GDScript 載入"
+
+msgid ""
+"Save a file called ``demo.json`` with the following contents and place it in "
+"the project's root folder:"
+msgstr "建立一個名為 ``demo.json`` 的檔案，填入以下內容，並放在專案根目錄下："
+
+msgid "Then attach the following script to any node:"
+msgstr "然後將下列腳本附加到任意節點："

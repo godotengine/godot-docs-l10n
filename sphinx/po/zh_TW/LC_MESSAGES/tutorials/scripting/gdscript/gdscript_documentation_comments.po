@@ -1,0 +1,580 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript documentation comments"
+msgstr "GDScript 文件註解"
+
+msgid ""
+"In GDScript, comments can be used to document your code and add descriptions "
+"to the members of a script. There are two differences between a normal "
+"comment and a documentation comment. Firstly, a documentation comment should "
+"start with double hash symbols ``##``. Secondly, it must immediately precede "
+"a script member, or for script descriptions, be placed at the top of the "
+"script. If an exported variable is documented, its description is used as a "
+"tooltip in the editor. This documentation can be generated as XML files by "
+"the editor."
+msgstr ""
+"在 GDScript 中，註解可用於為你的程式碼撰寫說明文件，也能為腳本成員添加描述。"
+"普通註解和文件註解有兩個差異。首先，文件註解必須以雙井號 ``##`` 開頭。其次，"
+"它必須緊接在腳本成員之前，或若是腳本說明則須放在腳本最上方。若有加上文件註解"
+"的匯出變數，其描述會在編輯器中顯示為工具提示。這些說明文件也可由編輯器匯出成 "
+"XML 檔案。"
+
+msgid "Documenting a script"
+msgstr "腳本文件撰寫方式"
+
+msgid ""
+"Comments documenting a script must come before any member documentation. A "
+"suggested format for script documentation can be divided into three parts."
+msgstr ""
+"腳本說明文件註解必須寫在所有成員文件之前。建議的腳本說明格式可分三個部分。"
+
+msgid "A brief description of the script."
+msgstr "腳本的簡短描述。"
+
+msgid "Detailed description."
+msgstr "詳細描述。"
+
+msgid "Tutorials and deprecated/experimental marks."
+msgstr "教學連結，以及已棄用/實驗性註記。"
+
+msgid ""
+"To separate these from each other, the documentation comments use special "
+"tags. The tag must be at the beginning of a line (ignoring preceding white "
+"space) and must have the format ``@``, followed by the keyword."
+msgstr ""
+"為了分隔不同區塊，文件註解支援特殊標籤。標籤必須在行首（可忽略前導空白），格"
+"式為 ``@`` 加上關鍵字。"
+
+msgid "Tags"
+msgstr "標籤"
+
+msgid "Brief description"
+msgstr "簡要說明"
+
+msgid "No tag. Lives at the very beginning of the documentation section."
+msgstr "無標籤。必須放在說明區塊的最開頭。"
+
+msgid "Description"
+msgstr "說明"
+
+msgid "No tag. Use one blank line to separate the description from the brief."
+msgstr "無標籤。以一行空白分隔簡要與詳細描述。"
+
+msgid "Tutorial"
+msgstr "教學"
+
+msgid "``@tutorial: https://example.com``"
+msgstr "``@tutorial: https://example.com``"
+
+msgid "``@tutorial(The Title Here): https://example.com``"
+msgstr "``@tutorial(此處填寫標題): https://example.com``"
+
+msgid "Deprecated"
+msgstr "已棄用"
+
+msgid "``@deprecated``"
+msgstr "``@deprecated``"
+
+msgid "``@deprecated: Use [AnotherClass] instead.``"
+msgstr "``@deprecated: 請改用 [AnotherClass]。``"
+
+msgid "Experimental"
+msgstr "實驗性"
+
+msgid "``@experimental``"
+msgstr "``@experimental``"
+
+msgid "``@experimental: This class is unstable.``"
+msgstr "``@experimental: 此類別尚未穩定。``"
+
+msgid "For example:"
+msgstr "例如："
+
+msgid ""
+"If there is any space in between the tag name and colon, for example "
+"``@tutorial  :``, it won't be treated as a valid tag and will be ignored."
+msgstr ""
+"若標籤名稱與冒號之間有空格（如 ``@tutorial  :``），則此標籤無效會被忽略。"
+
+msgid ""
+"When the description spans multiple lines, the preceding and trailing white "
+"spaces will be stripped and joined with a single space. To preserve the line "
+"break use ``[br]``. See also `BBCode and class reference`_ below."
+msgstr ""
+"當描述跨多行時，前後空白會被移除並以單一空格串接。若要保留換行請使用 "
+"``[br]`` 。可參考下方的 `BBCode 與類別參考`_ 。"
+
+msgid "Documenting script members"
+msgstr "腳本成員文件化"
+
+msgid "Members that are applicable for documentation:"
+msgstr "可撰寫說明文件的成員有："
+
+msgid "Signal"
+msgstr "訊號"
+
+msgid "Enum"
+msgstr "列舉"
+
+msgid "Enum value"
+msgstr "列舉值"
+
+msgid "Constant"
+msgstr "常數"
+
+msgid "Variable"
+msgstr "變數"
+
+msgid "Function"
+msgstr "函式"
+
+msgid "Inner class"
+msgstr "內部類別"
+
+msgid ""
+"Documentation of a script member must immediately precede the member or its "
+"annotations if it has any. The description can have more than one line but "
+"every line must start with the double hash symbol ``##`` to be considered as "
+"part of the documentation."
+msgstr ""
+"腳本成員的文件註解必須緊接於該成員（或其註解）之前。描述可多行，但每行都必須"
+"以雙井號 ``##`` 開頭才會被視為說明文件的一部分。"
+
+msgid "No tag."
+msgstr "無標籤。"
+
+msgid "``@deprecated: Use [member another] instead.``"
+msgstr "``@deprecated: 請改用 [member another]。``"
+
+msgid "``@experimental: This method is incomplete.``"
+msgstr "``@experimental: 此方法尚未完成。``"
+
+msgid "Alternatively, you can use inline documentation comments:"
+msgstr "另外，你也可以使用行內說明註解："
+
+msgid ""
+"The script documentation will update in the editor help window every time "
+"the script is updated. If any member variable or function name starts with "
+"an underscore, it will be treated as private. It will not appear in the "
+"documentation and will be ignored in the help window."
+msgstr ""
+"每當腳本更新時，說明文件會自動於編輯器的說明視窗中同步更新。若成員變數或函式"
+"名稱以底線開頭，將被視為私有成員，不會出現在文件裡，也不會顯示於說明視窗。"
+
+msgid "Complete script example"
+msgstr "完整腳本範例"
+
+msgid "``@deprecated`` and ``@experimental`` tags"
+msgstr "``@deprecated`` 與 ``@experimental`` 標籤"
+
+msgid ""
+"You can mark a class or any of its members as deprecated or experimental. "
+"This will add the corresponding indicator in the built-in documentation "
+"viewer. Optionally, you can provide a short message explaining why the API "
+"is not recommended. This can be especially useful for plugin and library "
+"creators."
+msgstr ""
+"你可以將類別或其任何成員標記為已棄用或實驗性，這樣在內建說明檢視器就會顯示對"
+"應的註記。也可以加上簡短說明，說明為何此 API 不建議使用。這對外掛或函式庫作者"
+"特別有幫助。"
+
+msgid ""
+"**Deprecated** marks a non-recommended API that is subject to removal or "
+"incompatible change in a future major release. Usually the API is kept for "
+"backwards compatibility."
+msgstr ""
+"**已棄用** 標記表示此 API 未來主要版本可能移除或有不相容更動，通常僅為向下相"
+"容而保留。"
+
+msgid ""
+"**Experimental** marks a new unstable API that may be changed or removed in "
+"the current major branch. Using this API is not recommended in production "
+"code."
+msgstr ""
+"**實驗性** 標記表示此 API 尚不穩定，可能於目前主要分支中變更或移除。不建議於"
+"正式產品程式中使用。"
+
+msgid ""
+"While technically you can use both ``@deprecated`` and ``@experimental`` "
+"tags on the same class/member, this is not recommended as it is against "
+"common conventions."
+msgstr ""
+"雖然技術上可以同時在同一類別/成員上標註 ``@deprecated`` 及 "
+"``@experimental``，但這不符合慣例，不建議這麼做。"
+
+msgid "BBCode and class reference"
+msgstr "BBCode 與類別參考"
+
+msgid ""
+"Godot's class reference supports BBCode-like tags. They add nice formatting "
+"to the text which could also be used in the documentation. See "
+"also :ref:`class reference bbcode <doc_class_reference_bbcode>`. Note that "
+"this is slightly different from the ``RichTextLabel`` :ref:`BBCode "
+"<doc_bbcode_in_richtextlabel>`."
+msgstr ""
+"Godot 的類別參考支援類似 BBCode 的標籤，可讓文字有更好格式，同樣能用於腳本說"
+"明文件。詳見 :ref:`類別參考 BBCode <doc_class_reference_bbcode>`。注意這與 "
+"``RichTextLabel`` 的 :ref:`BBCode <doc_bbcode_in_richtextlabel>` 用法略有不"
+"同。"
+
+msgid ""
+"Whenever you link to a member of another class, you need to specify the "
+"class name. For links to the same class, the class name is optional and can "
+"be omitted."
+msgstr ""
+"當你要連結到其他類別的成員時，需要寫上類別名稱。若是連結到同一類別的成員，類"
+"別名稱可省略。"
+
+msgid "Here's the list of available tags:"
+msgstr "可用標籤如下："
+
+msgid "Tag and Description"
+msgstr "標籤與說明"
+
+msgid "Example"
+msgstr "範例"
+
+msgid "Result"
+msgstr "結果"
+
+msgid "``[Class]``"
+msgstr "``[Class]``"
+
+msgid "Link to class"
+msgstr "連結至類別"
+
+msgid "``Move the [Sprite2D].``"
+msgstr "``移動 [Sprite2D]。``"
+
+msgid "Move the :ref:`class_Sprite2D`."
+msgstr "移動 :ref:`class_Sprite2D`。"
+
+msgid "``[annotation Class.name]``"
+msgstr "``[annotation Class.name]``"
+
+msgid "Link to annotation"
+msgstr "連結至註解"
+
+msgid "``See [annotation @GDScript.@rpc].``"
+msgstr "``請參閱 [annotation @GDScript.@rpc]。``"
+
+msgid "See :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`."
+msgstr "請參閱 :ref:`@GDScript.@rpc <class_@GDScript_annotation_@rpc>`。"
+
+msgid "``[constant Class.name]``"
+msgstr "``[constant Class.name]``"
+
+msgid "Link to constant"
+msgstr "連結至常數"
+
+msgid "``See [constant Color.RED].``"
+msgstr "``請參閱 [constant Color.RED]。``"
+
+msgid "See :ref:`Color.RED <class_Color_constant_RED>`."
+msgstr "請參閱 :ref:`Color.RED <class_Color_constant_RED>`。"
+
+msgid "``[enum Class.name]``"
+msgstr "``[enum Class.name]``"
+
+msgid "Link to enum"
+msgstr "連結至列舉"
+
+msgid "``See [enum Mesh.ArrayType].``"
+msgstr "``請參閱 [enum Mesh.ArrayType]。``"
+
+msgid "See :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`."
+msgstr "請參閱 :ref:`Mesh.ArrayType <enum_Mesh_ArrayType>`。"
+
+msgid "``[member Class.name]``"
+msgstr "``[member Class.name]``"
+
+msgid "Link to member (property)"
+msgstr "成員（屬性）連結"
+
+msgid "``Get [member Node2D.scale].``"
+msgstr "``取得 [member Node2D.scale]。``"
+
+msgid "Get :ref:`Node2D.scale <class_Node2D_property_scale>`."
+msgstr "取得 :ref:`Node2D.scale <class_Node2D_property_scale>`。"
+
+msgid "``[method Class.name]``"
+msgstr "``[method Class.name]``"
+
+msgid "Link to method"
+msgstr "連結至方法"
+
+msgid "``Call [method Node3D.hide].``"
+msgstr "``呼叫 [method Node3D.hide]。``"
+
+msgid "Call :ref:`Node3D.hide() <class_Node3D_method_hide>`."
+msgstr "呼叫 :ref:`Node3D.hide() <class_Node3D_method_hide>`。"
+
+msgid "``[constructor Class.name]``"
+msgstr "``[constructor Class.name]``"
+
+msgid "Link to built-in constructor"
+msgstr "連結至建構子"
+
+msgid "``Use [constructor Color.Color].``"
+msgstr "``使用 [constructor Color.Color]。``"
+
+msgid "Use  :ref:`Color.Color <class_Color_constructor_Color>`."
+msgstr "使用 :ref:`Color.Color <class_Color_constructor_Color>`。"
+
+msgid "``[operator Class.name]``"
+msgstr "``[operator Class.name]``"
+
+msgid "Link to built-in operator"
+msgstr "連結至運算子"
+
+msgid "``Use [operator Color.operator *].``"
+msgstr "``使用 [operator Color.operator *]。``"
+
+msgid "Use  :ref:`Color.operator * <class_Color_operator_mul_int>`."
+msgstr "使用 :ref:`Color.operator * <class_Color_operator_mul_int>`。"
+
+msgid "``[signal Class.name]``"
+msgstr "``[signal Class.name]``"
+
+msgid "Link to signal"
+msgstr "連結至訊號"
+
+msgid "``Emit [signal Node.renamed].``"
+msgstr "``發送 [signal Node.renamed]。``"
+
+msgid "Emit :ref:`Node.renamed <class_Node_signal_renamed>`."
+msgstr "發送 :ref:`Node.renamed <class_Node_signal_renamed>`。"
+
+msgid "``[theme_item Class.name]``"
+msgstr "``[theme_item Class.name]``"
+
+msgid "Link to theme item"
+msgstr "連結至佈景項目"
+
+msgid "``See [theme_item Label.font].``"
+msgstr "``請參閱 [theme_item Label.font]。``"
+
+msgid "See :ref:`Label.font <class_Label_theme_font_font>`."
+msgstr "請參閱 :ref:`Label.font <class_Label_theme_font_font>`。"
+
+msgid "``[param name]``"
+msgstr "``[param name]``"
+
+msgid "Parameter name (as code)"
+msgstr "參數名稱（程式碼樣式）"
+
+msgid "``Takes [param size] for the size.``"
+msgstr "``以 [param size] 作為尺寸。``"
+
+msgid "Takes ``size`` for the size."
+msgstr "以 ``size`` 作為尺寸。"
+
+msgid "``[br]``"
+msgstr "``[br]``"
+
+msgid "Line break"
+msgstr "換行"
+
+msgid "``Line 1.[br]``"
+msgstr "``第 1 行。[br]``"
+
+msgid "``Line 2.``"
+msgstr "``第 2 行。``"
+
+msgid "Line 1."
+msgstr "第 1 行。"
+
+msgid "Line 2."
+msgstr "第 2 行。"
+
+msgid "``[lb]`` ``[rb]``"
+msgstr "``[lb]`` ``[rb]``"
+
+msgid "``[`` and ``]`` respectively"
+msgstr "分別為 ``[`` 與 ``]``"
+
+msgid "``[lb]b[rb]text[lb]/b[rb]``"
+msgstr "``[lb]b[rb]text[lb]/b[rb]``"
+
+msgid "[b]text[/b]"
+msgstr "[b]text[/b]"
+
+msgid "``[b]`` ``[/b]``"
+msgstr "``[b]`` ``[/b]``"
+
+msgid "Bold"
+msgstr "粗體"
+
+msgid "``Do [b]not[/b] call this method.``"
+msgstr "``請[b]不要[/b]呼叫此方法。``"
+
+msgid "Do **not** call this method."
+msgstr "請**不要**呼叫此方法。"
+
+msgid "``[i]`` ``[/i]``"
+msgstr "``[i]`` ``[/i]``"
+
+msgid "Italic"
+msgstr "斜體"
+
+msgid "``Returns the [i]global[/i] position.``"
+msgstr "``回傳[i]全域[/i]座標。``"
+
+msgid "Returns the *global* position."
+msgstr "回傳*全域*座標。"
+
+msgid "``[u]`` ``[/u]``"
+msgstr "``[u]`` ``[/u]``"
+
+msgid "Underline"
+msgstr "底線"
+
+msgid "``[u]Always[/u] use this method.``"
+msgstr "``[u]Always[/u] use this method.``"
+
+msgid "``[s]`` ``[/s]``"
+msgstr "``[s]`` ``[/s]``"
+
+msgid "Strikethrough"
+msgstr "刪除線"
+
+msgid "``[s]Outdated information.[/s]``"
+msgstr "``[s]過時資訊。[/s]``"
+
+msgid "``[color]`` ``[/color]``"
+msgstr "``[color]`` ``[/color]``"
+
+msgid "Color"
+msgstr "顏色"
+
+msgid "``[color=red]Error![/color]``"
+msgstr "``[color=red]Error![/color]``"
+
+msgid "``[font]`` ``[/font]``"
+msgstr "``[font]`` ``[/font]``"
+
+msgid "Font"
+msgstr "字型"
+
+msgid "``[font=res://mono.ttf]LICENSE[/font]``"
+msgstr "``[font=res://mono.ttf]LICENSE[/font]``"
+
+msgid "``[img]`` ``[/img]``"
+msgstr "``[img]`` ``[/img]``"
+
+msgid "Image"
+msgstr "圖片"
+
+msgid "``[img width=32]res://icon.svg[/img]``"
+msgstr "``[img width=32]res://icon.svg[/img]``"
+
+msgid "``[url]`` ``[/url]``"
+msgstr "``[url]`` ``[/url]``"
+
+msgid "Hyperlink"
+msgstr "超連結"
+
+msgid "``[url]https://example.com[/url]``"
+msgstr "``[url]https://example.com[/url]``"
+
+msgid "``[url=https://example.com]Website[/url]``"
+msgstr "``[url=https://example.com]網站[/url]``"
+
+msgid "https://example.com"
+msgstr "https://example.com"
+
+msgid "`Website <https://example.com>`_"
+msgstr "`網站 <https://example.com>`_"
+
+msgid "``[center]`` ``[/center]``"
+msgstr "``[center]`` ``[/center]``"
+
+msgid "Horizontal centering"
+msgstr "水平置中"
+
+msgid "``[center]2 + 2 = 4[/center]``"
+msgstr "``[center]2 + 2 = 4[/center]``"
+
+msgid "``[kbd]`` ``[/kbd]``"
+msgstr "``[kbd]`` ``[/kbd]``"
+
+msgid "Keyboard/mouse shortcut"
+msgstr "鍵盤／滑鼠快捷鍵"
+
+msgid "``Press [kbd]Ctrl + C[/kbd].``"
+msgstr "``按下 [kbd]Ctrl + C[/kbd]。``"
+
+msgid "Press :kbd:`Ctrl + C`."
+msgstr "按下 :kbd:`Ctrl + C`。"
+
+msgid "``[code]`` ``[/code]``"
+msgstr "``[code]`` ``[/code]``"
+
+msgid "Inline code fragment"
+msgstr "行內程式碼片段"
+
+msgid "``Returns [code]true[/code].``"
+msgstr "``回傳 [code]true[/code]。``"
+
+msgid "Returns ``true``."
+msgstr "回傳 ``true``。"
+
+msgid "``[codeblock]``"
+msgstr "``[codeblock]``"
+
+msgid "``[/codeblock]``"
+msgstr "``[/codeblock]``"
+
+msgid "Multiline code block"
+msgstr "多行程式碼區塊"
+
+msgid "*See below.*"
+msgstr "*見下方。*"
+
+msgid "Currently only :ref:`class_@GDScript` has annotations."
+msgstr "目前僅 :ref:`class_@GDScript` 有註解。"
+
+msgid "``[kbd]`` disables BBCode until the parser encounters ``[/kbd]``."
+msgstr "``[kbd]`` 會停用 BBCode，直到解析器遇到 ``[/kbd]`` 為止。"
+
+msgid "``[code]`` disables BBCode until the parser encounters ``[/code]``."
+msgstr "``[code]`` 會停用 BBCode，直到解析器遇到 ``[/code]`` 為止。"
+
+msgid ""
+"``[codeblock]`` disables BBCode until the parser encounters ``[/codeblock]``."
+msgstr "``[codeblock]`` 會停用 BBCode，直到解析器遇到 ``[/codeblock]`` 為止。"
+
+msgid ""
+"Use ``[codeblock]`` for pre-formatted code blocks. Inside ``[codeblock]``, "
+"always use **four spaces** for indentation (the parser will delete tabs)."
+msgstr ""
+"請使用 ``[codeblock]`` 來標註預格式化程式碼區塊。在 ``[codeblock]`` 內請統一"
+"使用**四個空白**縮排（解析器會刪除 Tab）。"
+
+msgid ""
+"By default, ``[codeblock]`` highlights GDScript syntax. You can change it "
+"using the ``lang`` attribute. Currently supported options are:"
+msgstr ""
+"預設情況下，``[codeblock]`` 會高亮顯示 GDScript 語法。你可以透過 ``lang`` 屬"
+"性來更改，目前支援的選項有："
+
+msgid "``[codeblock lang=text]`` disables syntax highlighting;"
+msgstr "``[codeblock lang=text]`` 不會進行語法高亮;"
+
+msgid "``[codeblock lang=gdscript]`` highlights GDScript syntax;"
+msgstr "``[codeblock lang=gdscript]`` 會高亮 GDScript 語法;"
+
+msgid ""
+"``[codeblock lang=csharp]`` highlights C# syntax (only in .NET version)."
+msgstr "``[codeblock lang=csharp]`` 會高亮 C# 語法（僅 .NET 版本適用）。"

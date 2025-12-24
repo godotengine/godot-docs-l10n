@@ -1,0 +1,92 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Compiling with .NET"
+msgstr "使用 .NET 编译"
+
+msgid "Requirements"
+msgstr "需求"
+
+msgid "Enable the .NET module"
+msgstr "启用 .NET 模块"
+
+msgid "Generate the glue"
+msgstr "生成胶水代码"
+
+msgid ""
+"The glue sources must be regenerated every time the ClassDB-registered API "
+"changes. That is, for example, when a new method is registered to the "
+"scripting API or one of the parameters of such a method changes. Godot will "
+"print an error at startup if there is an API mismatch between ClassDB and "
+"the glue sources."
+msgstr ""
+"每次ClassDB注册的API更改时, 都必须重新生成胶水源码. 即, 例如, 当将新方法注册"
+"到脚本API时, 或该方法的参数之一发生更改时. 如果ClassDB和胶水源码之间的API不匹"
+"配,Godot将在启动时打印一条错误."
+
+msgid "Building the managed libraries"
+msgstr "构建托管库"
+
+msgid ""
+"If everything went well, the ``GodotSharp`` directory, containing the "
+"managed libraries, should have been created in the ``bin`` directory."
+msgstr ""
+"如果一切正常, 除了正常的输出,SCons应该在 ``bin`` 目录中创建了以下文件。"
+
+msgid ""
+"In order to use Godot with a development version of those packages, a local "
+"NuGet source must be created where MSBuild can find them."
+msgstr ""
+"为了将Godot与这些包的开发版本一起使用，必须在 MSBuild 可以找到它们的地方创建"
+"一个本地 NuGet 源代码。"
+
+msgid "On Windows, ``C:\\Users\\<username>\\MyLocalNugetSource``"
+msgstr "在Windows系统中,``C:\\Users\\<username>\\MyLocalNugetSource``"
+
+msgid "On Linux, \\*BSD, etc., ``~/MyLocalNugetSource``"
+msgstr "在Linux上， \\*BSD, etc., ``~/MyLocalNugetSource``"
+
+msgid "Building without depending on deprecated features (NO_DEPRECATED)"
+msgstr "在不依赖已弃用功能的情况下构建（NO_DEPRECATED）"
+
+msgid "Double Precision Support (REAL_T_IS_DOUBLE)"
+msgstr "双精度支持 (REAL_T_IS_DOUBLE)"
+
+msgid "Examples"
+msgstr "示例"
+
+msgid "Example (Windows)"
+msgstr "示例（Windows）"
+
+msgid "Example (Linux, \\*BSD)"
+msgstr "示例 (Linux, \\*BSD)"
+
+msgid "Data directory"
+msgstr "数据目录"
+
+msgid "Editor"
+msgstr "编辑器"
+
+msgid "Export templates"
+msgstr "导出模板"
+
+msgid ""
+"In the case of multi-architecture exports multiple such data directories "
+"will be generated."
+msgstr "在多体系结构导出的情况下，将生成多个这样的数据目录。"
+
+msgid "Command-line options"
+msgstr "命令行选项"
+
+msgid "**module_mono_enabled**\\ =yes | **no**"
+msgstr "**module_mono_enabled** \\ =yes | **no**"

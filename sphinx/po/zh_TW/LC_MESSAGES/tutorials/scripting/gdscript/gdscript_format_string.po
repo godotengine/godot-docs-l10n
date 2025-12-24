@@ -1,0 +1,474 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript format strings"
+msgstr "GDScript 格式化字串"
+
+msgid ""
+"Godot offers multiple ways to dynamically change the contents of strings:"
+msgstr "Godot 提供多種方式可動態變更字串內容："
+
+msgid "Format strings: ``var string = \"I have %s cats.\" % \"3\"``"
+msgstr "格式化字串： ``var string = \"I have %s cats.\" % \"3\"``"
+
+msgid ""
+"The ``String.format()`` method: ``var string = \"I have {0} cats."
+"\".format([3])``"
+msgstr ""
+"``String.format()`` 方法： ``var string = \"I have {0} cats.\".format([3])``"
+
+msgid ""
+"String concatenation: ``var string = \"I have \" + str(3) + \" cats.\"``"
+msgstr "字串串接： ``var string = \"I have \" + str(3) + \" cats.\"``"
+
+msgid ""
+"This page explains how to use format strings, and briefly explains the "
+"``format()`` method and string concatenation."
+msgstr "本頁將說明如何使用格式化字串，並簡單介紹 ``format()`` 方法與字串串接。"
+
+msgid "Format strings"
+msgstr "格式化字串"
+
+msgid ""
+"*Format strings* are a way to reuse text templates to succinctly create "
+"different but similar strings."
+msgstr "*格式化字串* 是用來重複利用文字樣板，簡潔地產生不同但類似字串的方法。"
+
+msgid ""
+"Format strings are just like normal strings, except they contain certain "
+"placeholder character sequences such as ``%s``. These placeholders can then "
+"be replaced by parameters handed to the format string."
+msgstr ""
+"格式化字串和一般字串類似，只是它們包含像 ``%s`` 這樣的預留位置符號。這些預留"
+"位置可由傳入的參數取代。"
+
+msgid "Examine this concrete GDScript example:"
+msgstr "來看看這個實際的 GDScript 範例："
+
+msgid ""
+"Placeholders always start with a ``%``, but the next character or "
+"characters, the *format specifier*, determines how the given value is "
+"converted to a string."
+msgstr ""
+"預留位置總是以 ``%`` 開頭，接下來的字元稱為 *格式規範*，決定該值如何被轉換為"
+"字串。"
+
+msgid ""
+"The ``%s`` seen in the example above is the simplest placeholder and works "
+"for most use cases: it converts the value by the same method by which an "
+"implicit String conversion or :ref:`str() <class_@GlobalScope_method_str>` "
+"would convert it. Strings remain unchanged, booleans turn into either "
+"``\"True\"`` or ``\"False\"``, an ``int`` or ``float`` becomes a decimal, "
+"and other types usually return their data in a human-readable string."
+msgstr ""
+"上方範例中的 ``%s`` 是最簡單的預留位置，適用於大多數情境：它會以隱式 String "
+"轉型或 :ref:`str() <class_@GlobalScope_method_str>` 相同的方式轉換值。字串會"
+"保持不變，布林值會變成 ``\"True\"`` 或 ``\"False\"``，整數或浮點數會轉為十進"
+"位，其他類型則會轉為人類可讀的字串。"
+
+msgid "There are other `format specifiers`_."
+msgstr "還有其他 `格式規範`_ 可用。"
+
+msgid "Multiple placeholders"
+msgstr "多重預留位置"
+
+msgid ""
+"Format strings may contain multiple placeholders. In such a case, the values "
+"are handed in the form of an array, one value per placeholder (unless using "
+"a format specifier with ``*``, see `dynamic padding`_):"
+msgstr ""
+"格式化字串可以包含多個預留位置。此時，參數需以陣列方式傳入，每個預留位置對應"
+"一個值（除非使用 ``*`` 格式規範，請見 `動態填充`_）："
+
+msgid ""
+"Note the values are inserted in order. Remember all placeholders must be "
+"replaced at once, so there must be an appropriate number of values."
+msgstr ""
+"注意值會依序插入。請記得所有預留位置必須一次填滿，因此需要有正確數量的值。"
+
+msgid "Format specifiers"
+msgstr "格式規範"
+
+msgid ""
+"There are format specifiers other than ``s`` that can be used in "
+"placeholders. They consist of one or more characters. Some of them work by "
+"themselves like ``s``, some appear before other characters, some only work "
+"with certain values or characters."
+msgstr ""
+"除了 ``s`` 之外，預留位置還可以使用其他格式規範。格式規範可以是一個或多個字"
+"元。有些像 ``s`` 一樣獨立使用，有些要搭配其他字元，有些則只適用於特定數值或字"
+"元。"
+
+msgid "Placeholder types"
+msgstr "預留位置類型"
+
+msgid ""
+"One and only one of these must always appear as the last character in a "
+"format specifier. Apart from ``s``, these require certain types of "
+"parameters."
+msgstr ""
+"格式規範最後一定要有下表其中一個（且僅能有一個）。除了 ``s`` 之外，其他規範都"
+"需要特定型別的參數。"
+
+msgid "``s``"
+msgstr "``s``"
+
+msgid ""
+"**Simple** conversion to String by the same method as implicit String "
+"conversion."
+msgstr "**單純** 以隱式 String 轉型的方式轉換為字串。"
+
+msgid "``c``"
+msgstr "``c``"
+
+msgid ""
+"A single **Unicode character**. Accepts a Unicode code point (integer) or a "
+"single-character string. Supports values beyond 255."
+msgstr ""
+"單一的 **Unicode 字元**。接受 Unicode 碼位（整數）或單一字元的字串。支援超過 "
+"255 的值。"
+
+msgid "``d``"
+msgstr "``d``"
+
+msgid ""
+"A **decimal integer**. Expects an integer or a real number (will be floored)."
+msgstr "**十進位整數**。需傳入整數或浮點數（小數部分會被無條件捨去）。"
+
+msgid "``o``"
+msgstr "``o``"
+
+msgid ""
+"An **octal integer**. Expects an integer or a real number (will be floored)."
+msgstr "**八進位整數**。需傳入整數或浮點數（小數部分會被無條件捨去）。"
+
+msgid "``x``"
+msgstr "``x``"
+
+msgid ""
+"A **hexadecimal integer** with **lower-case** letters. Expects an integer or "
+"a real number (will be floored)."
+msgstr ""
+"**小寫** 字母的 **十六進位整數**。需傳入整數或浮點數（小數部分會被無條件捨"
+"去）。"
+
+msgid "``X``"
+msgstr "``X``"
+
+msgid ""
+"A **hexadecimal integer** with **upper-case** letters. Expects an integer or "
+"a real number (will be floored)."
+msgstr ""
+"**大寫** 字母的 **十六進位整數**。需傳入整數或浮點數（小數部分會被無條件捨"
+"去）。"
+
+msgid "``f``"
+msgstr "``f``"
+
+msgid "A **decimal real** number. Expects an integer or a real number."
+msgstr "**十進位實數**。需傳入整數或浮點數。"
+
+msgid "``v``"
+msgstr "``v``"
+
+msgid ""
+"A **vector**. Expects any float or int-based vector object ( ``Vector2``, "
+"``Vector3``, ``Vector4``, ``Vector2i``, ``Vector3i`` or ``Vector4i``). Will "
+"display the vector coordinates in parentheses, formatting each coordinate as "
+"if it was an ``%f``, and using the same modifiers."
+msgstr ""
+"**向量**。需傳入任一以整數或浮點數為基礎的向量物件（如 ``Vector2``、"
+"``Vector3``、``Vector4``、``Vector2i``、``Vector3i`` 或 ``Vector4i``）。會以"
+"括號顯示向量座標，每個座標會以 ``%f`` 方式格式化，且可套用相同修飾元。"
+
+msgid "Placeholder modifiers"
+msgstr "預留位置修飾元"
+
+msgid ""
+"These characters appear before the above. Some of them work only under "
+"certain conditions."
+msgstr "這些字元要放在格式規範前面。有些只在特定情況下有效。"
+
+msgid "``+``"
+msgstr "``+``"
+
+msgid "In number specifiers, **show + sign** if positive."
+msgstr "在數字格式規範中，若為正數則 **顯示 + 號**。"
+
+msgid "Integer"
+msgstr "整數"
+
+msgid ""
+"Set **padding**. Padded with spaces or with zeroes if integer starts with "
+"``0`` in an integer or real number placeholder. The leading ``0`` is ignored "
+"if ``-`` is present. When used after ``.``, see ``.``."
+msgstr ""
+"設定 **填充**。若在整數或實數預留位置中以 ``0`` 開頭，則以 0 填充，否則以空白"
+"填充。若同時有 ``-``，則忽略前導 ``0``。若用於 ``.`` 之後，請見 ``.`` 說明。"
+
+msgid "``.``"
+msgstr "``.``"
+
+msgid ""
+"Before ``f`` or ``v``, set **precision** to 0 decimal places. Can be "
+"followed up with numbers to change. Padded with zeroes."
+msgstr ""
+"在 ``f`` 或 ``v`` 前面時，將 **精度** 設為 0 小數位。可以在後面加數字更改小數"
+"位數。以 0 進行填充。"
+
+msgid "``-``"
+msgstr "``-``"
+
+msgid "**Pad to the right** rather than the left."
+msgstr "**向右填充**，而非向左填充。"
+
+msgid "``*``"
+msgstr "``*``"
+
+msgid ""
+"**Dynamic padding**, expects additional integer parameter to set padding or "
+"precision after ``.``, see `dynamic padding`_."
+msgstr ""
+"**動態填充**，會預期額外的整數參數來設定填充或 ``.`` 後的精度，請見 `動態填充"
+"`_。"
+
+msgid "Padding"
+msgstr "填充"
+
+msgid ""
+"The ``.`` (*dot*), ``*`` (*asterisk*), ``-`` (*minus sign*) and digit (``0``-"
+"``9``) characters are used for padding. This allows printing several values "
+"aligned vertically as if in a column, provided a fixed-width font is used."
+msgstr ""
+"``.``（點）、``*``（星號）、``-``（減號）及數字（``0``-``9``）可用於填充。若"
+"搭配等寬字型，可讓多個值垂直對齊，像表格一樣。"
+
+msgid "To pad a string to a minimum length, add an integer to the specifier:"
+msgstr "若要將字串填充至最小長度，可在格式規範中加整數："
+
+msgid ""
+"If the integer starts with ``0``, integer values are padded with zeroes "
+"instead of white space:"
+msgstr "若整數以 ``0`` 開頭，則會以 0 填充整數值，而非空白："
+
+msgid ""
+"Precision can be specified for real numbers by adding a ``.`` (*dot*) with "
+"an integer following it. With no integer after ``.``, a precision of 0 is "
+"used, rounding to integer values. The integer to use for padding must appear "
+"before the dot."
+msgstr ""
+"對於實數，可在格式規範中加上 ``.``（點）及整數來指定精度。若 ``.`` 後未加數"
+"字，則精度為 0（四捨五入為整數）。用來填充的整數必須寫在點之前。"
+
+msgid ""
+"The ``-`` character will cause padding to the right rather than the left, "
+"useful for right text alignment:"
+msgstr "``-`` 字元會讓填充改為向右（右對齊），方便右側對齊字串："
+
+msgid "Dynamic padding"
+msgstr "動態填充"
+
+msgid ""
+"By using the ``*`` (*asterisk*) character, the padding or precision can be "
+"set without modifying the format string. It is used in place of an integer "
+"in the format specifier. The values for padding and precision are then "
+"passed when formatting:"
+msgstr ""
+"使用 ``*`` （星號）可讓你不用修改格式化字串本身，就能動態設定填充或精度。它會"
+"取代格式規範中的整數，並於格式化時傳入填充或精度的數值："
+
+msgid ""
+"It is still possible to pad with zeroes in integer placeholders by adding "
+"``0`` before ``*``:"
+msgstr "若要在整數預留位置用 0 填充，則可在 ``*`` 前加上 ``0``："
+
+msgid "Escape sequence"
+msgstr "跳脫字元"
+
+msgid ""
+"To insert a literal ``%`` character into a format string, it must be escaped "
+"to avoid reading it as a placeholder. This is done by doubling the character:"
+msgstr ""
+"若要將字面上的 ``%`` 字元插入格式化字串，必須跳脫它，避免被解析為預留位置。這"
+"可透過連續輸入兩個 ``%`` 達成："
+
+msgid "String format method"
+msgstr "字串格式化方法"
+
+msgid ""
+"There is also another way to format text in GDScript, namely "
+"the :ref:`String.format() <class_String_method_format>` method. It replaces "
+"all occurrences of a key in the string with the corresponding value. The "
+"method can handle arrays or dictionaries for the key/value pairs."
+msgstr ""
+"GDScript 也支援另一種格式化字串的方式，就是 :ref:`String.format() "
+"<class_String_method_format>` 方法。它會將字串中出現的所有索引鍵，替換為對應"
+"的值。這個方法可以處理陣列或字典型態的索引鍵／值組。"
+
+msgid ""
+"Arrays can be used as key, index, or mixed style (see below examples). Order "
+"only matters when the index or mixed style of Array is used."
+msgstr ""
+"陣列可以作為索引鍵、索引，或混合樣式使用（請見下方範例）。只有在用索引或混合"
+"樣式時才需注意順序。"
+
+msgid "A quick example in GDScript:"
+msgstr "GDScript 的簡易範例："
+
+msgid "Format method examples"
+msgstr "格式化方法範例"
+
+msgid ""
+"The following are some examples of how to use the various invocations of the "
+"``String.format()``  method."
+msgstr "以下展示各種方式呼叫 ``String.format()`` 方法的範例。"
+
+msgid "**Type**"
+msgstr "**型別**"
+
+msgid "**Style**"
+msgstr "**樣式**"
+
+msgid "**Example**"
+msgstr "**範例**"
+
+msgid "**Result**"
+msgstr "**結果**"
+
+msgid "Dictionary"
+msgstr "字典"
+
+msgid "key"
+msgstr "索引鍵"
+
+msgid ""
+"``\"Hi, {name} v{version}!\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+msgstr ""
+"``\"你好，{name} v{version}！\".format({\"name\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+
+msgid "Hi, Godette v3.0!"
+msgstr "你好，Godette v3.0！"
+
+msgid "index"
+msgstr "索引"
+
+msgid "``\"Hi, {0} v{1}!\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
+msgstr "``\"你好，{0} v{1}！\".format({\"0\":\"Godette\", \"1\":\"3.0\"})``"
+
+msgid "mix"
+msgstr "混合"
+
+msgid ""
+"``\"Hi, {0} v{version}!\".format({\"0\":\"Godette\", \"version\":\"3.0\"})``"
+msgstr ""
+"``\"你好，{0} v{version}！\".format({\"0\":\"Godette\", \"version\":"
+"\"3.0\"})``"
+
+msgid "Array"
+msgstr "陣列"
+
+msgid ""
+"``\"Hi, {name} v{version}!\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
+msgstr ""
+"``\"你好，{name} v{version}！\".format([[\"version\",\"3.0\"], [\"name\","
+"\"Godette\"]])``"
+
+msgid "``\"Hi, {0} v{1}!\".format([\"Godette\",\"3.0\"])``"
+msgstr "``\"你好，{0} v{1}！\".format([\"Godette\",\"3.0\"])``"
+
+msgid "``\"Hi, {name} v{0}!\".format([\"3.0\", [\"name\",\"Godette\"]])``"
+msgstr "``\"你好，{name} v{0}！\".format([\"3.0\", [\"name\",\"Godette\"]])``"
+
+msgid "no index"
+msgstr "無索引"
+
+msgid "``\"Hi, {} v{}!\".format([\"Godette\", \"3.0\"], \"{}\")``"
+msgstr "``\"你好，{} v{}！\".format([\"Godette\", \"3.0\"], \"{}\")``"
+
+msgid ""
+"Placeholders can also be customized when using ``String.format``, here's "
+"some examples of that functionality."
+msgstr "在使用 ``String.format`` 時也能自訂預留位置，下列為相關功能範例。"
+
+msgid "Infix (default)"
+msgstr "中置（預設）"
+
+msgid "``\"Hi, {0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
+msgstr "``\"你好，{0} v{1}\".format([\"Godette\", \"3.0\"], \"{_}\")``"
+
+msgid "Hi, Godette v3.0"
+msgstr "你好，Godette v3.0"
+
+msgid "Postfix"
+msgstr "後置"
+
+msgid "``\"Hi, 0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
+msgstr "``\"你好，0% v1%\".format([\"Godette\", \"3.0\"], \"_%\")``"
+
+msgid "Prefix"
+msgstr "前置"
+
+msgid "``\"Hi, %0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
+msgstr "``\"你好，%0 v%1\".format([\"Godette\", \"3.0\"], \"%_\")``"
+
+msgid ""
+"Combining both the ``String.format`` method and the ``%`` operator could be "
+"useful, as ``String.format`` does not have a way to manipulate the "
+"representation of numbers."
+msgstr ""
+"有時可以同時使用 ``String.format`` 方法與 ``%`` 運算子，因為 "
+"``String.format`` 無法直接調整數字格式。"
+
+msgid ""
+"``\"Hi, {0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
+msgstr ""
+"``\"你好，{0} v{version}\".format({0:\"Godette\", \"version\":\"%0.2f\" % "
+"3.114})``"
+
+msgid "Hi, Godette v3.11"
+msgstr "你好，Godette v3.11"
+
+msgid "String concatenation"
+msgstr "字串串接"
+
+msgid ""
+"You can also combine strings by *concatenating* them together, using the "
+"``+`` operator."
+msgstr "你也可以用 ``+`` 運算子來將字串 *串接* 在一起。"
+
+msgid ""
+"When using string concatenation, values that are not strings must be "
+"converted using the ``str()`` function. There is no way to specify the "
+"string format of converted values."
+msgstr ""
+"在使用字串串接時，非字串的值必須先用 ``str()`` 函式轉換。這種方式無法指定轉換"
+"後數值的格式。"
+
+msgid ""
+"Because of these limitations, format strings or the ``format()`` method are "
+"often a better choice. In many cases, string concatenation is also less "
+"readable."
+msgstr ""
+"由於上述限制，格式化字串或 ``format()`` 方法通常會是更好的選擇。很多時候，字"
+"串串接也較難閱讀。"
+
+msgid ""
+"In Godot's C++ code, GDScript format strings can be accessed using the "
+"``vformat()`` helper function in the :ref:`Variant<class_Variant>` header."
+msgstr ""
+"在 Godot 的 C++ 程式碼中，可以透過 :ref:`Variant<class_Variant>` 標頭裡的 "
+"``vformat()`` 輔助函式來存取 GDScript 格式化字串。"

@@ -1,0 +1,649 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "C# collections"
+msgstr "C# 集合"
+
+msgid ""
+"The .NET base class library contains multiple collection types that can be "
+"used to store and manipulate data. Godot also provide some collection types "
+"that are tightly integrated with the rest of the engine."
+msgstr ""
+".NET 基礎類別庫包含多種可用於儲存和操作資料的集合型別。Godot 也提供了一些與引"
+"擎緊密整合的集合型別。"
+
+msgid "Choose a collection"
+msgstr "選擇集合類型"
+
+msgid ""
+"The main difference between the `.NET collections <https://"
+"learn.microsoft.com/en-us/dotnet/standard/collections/>`_ and the Godot "
+"collections is that the .NET collections are implemented in C# while the "
+"Godot collections are implemented in C++ and the Godot C# API is a wrapper "
+"over it, this is an important distinction since it means every operation on "
+"a Godot collection requires marshaling which can be expensive especially "
+"inside a loop."
+msgstr ""
+"`.NET 集合 <https://learn.microsoft.com/en-us/dotnet/standard/collections/"
+">`_ 與 Godot 集合的主要差異在於 .NET 集合是以 C# 實作，而 Godot 集合是以 C++ "
+"實作，Godot 的 C# API 則是對其的包裝。這是一個重要的區別，因為這代表對 Godot "
+"集合的每一個操作都需要資料編組（marshaling），這在迴圈中尤其會產生成本。"
+
+msgid ""
+"Due to the performance implications, using Godot collections is only "
+"recommended when absolutely necessary (such as interacting with the Godot "
+"API). Godot only understands its own collection types, so it's required to "
+"use them when talking to the engine."
+msgstr ""
+"由於效能上的考量，僅在絕對必要時（如與 Godot API 互動時）才建議使用 Godot 集"
+"合。Godot 只認得自己的集合型別，因此在與引擎溝通時必須使用這些型別。"
+
+msgid ""
+"If you have a collection of elements that don't need to be passed to a Godot "
+"API, using a .NET collection would be more performant."
+msgstr "如果你的資料不需傳遞給 Godot API，建議使用 .NET 集合以獲得更佳效能。"
+
+msgid ""
+"It's also possible to convert between .NET collections and Godot "
+"collections. The Godot collections contain constructors from generic .NET "
+"collection interfaces that copy their elements, and the Godot collections "
+"can be used with the `LINQ <https://learn.microsoft.com/en-us/dotnet/"
+"standard/linq>`_ ``ToList``, ``ToArray`` and ``ToDictionary`` methods. But "
+"keep in mind this conversion requires marshaling every element in the "
+"collection and copies it to a new collection so it can be expensive."
+msgstr ""
+"你也可以在 .NET 集合與 Godot 集合之間互相轉換。Godot 集合提供從泛型 .NET 集合"
+"介面複製元素的建構子，且 Godot 集合能搭配 `LINQ <https://learn.microsoft.com/"
+"en-us/dotnet/standard/linq>`_ 的 ``ToList``、``ToArray`` 與 ``ToDictionary`` "
+"方法一起使用。但請注意，這些轉換會對每個元素進行資料編組並複製到新集合，成本"
+"不低。"
+
+msgid ""
+"Despite this, the Godot collections are optimized to try and avoid "
+"unnecessary marshaling, so methods like ``Sort`` or ``Reverse`` are "
+"implemented with a single interop call and don't need to marshal every "
+"element. Keep an eye out for generic APIs that take collection interfaces "
+"like `LINQ <https://learn.microsoft.com/en-us/dotnet/standard/linq>`_ "
+"because every method requires iterating the collection and, therefore, "
+"marshaling every element. Prefer using the instance methods of the Godot "
+"collections when possible."
+msgstr ""
+"儘管如此，Godot 集合已經盡量最佳化以避免不必要的資料編組，例如 ``Sort`` 與 "
+"``Reverse`` 這類方法只需透過單一跨語言呼叫執行，不會針對每一個元素做編組。但"
+"若使用像 `LINQ <https://learn.microsoft.com/en-us/dotnet/standard/linq>`_ 這"
+"類泛型 API，每次方法呼叫都會遍歷集合並對每個元素進行編組。建議盡量優先使用 "
+"Godot 集合的實體方法。"
+
+msgid ""
+"To choose which collection type to use for each situation, consider the "
+"following questions:"
+msgstr "要選擇適合的集合型別，請考慮下列問題："
+
+msgid ""
+"Does your collection need to interact with the Godot engine? (e.g.: the type "
+"of an exported property, calling a Godot method)."
+msgstr ""
+"你的集合是否需要與 Godot 引擎互動？（例如：作為匯出屬性的型別、呼叫 Godot 方"
+"法等）。"
+
+msgid ""
+"If yes, since Godot only supports :ref:`c_sharp_variant_compatible_types`, "
+"use a Godot collection."
+msgstr ""
+"如果需要，因為 Godot 只支援 :ref:`c_sharp_variant_compatible_types`，請使用 "
+"Godot 集合型別。"
+
+msgid ""
+"If not, consider `choosing an appropriate .NET collection <https://"
+"learn.microsoft.com/en-us/dotnet/standard/collections/selecting-a-collection-"
+"class>`_."
+msgstr ""
+"如果不需要，請考慮 `選擇合適的 .NET 集合 <https://learn.microsoft.com/en-us/"
+"dotnet/standard/collections/selecting-a-collection-class>`_ 。"
+
+msgid ""
+"Do you need a Godot collection that represents a list or sequential set of "
+"data?"
+msgstr "你是否需要一個代表清單或序列資料的 Godot 集合？"
+
+msgid ""
+"Godot :ref:`arrays <doc_c_sharp_collections_array>` are similar to the C# "
+"collection ``List<T>``."
+msgstr ""
+"Godot :ref:`陣列 <doc_c_sharp_collections_array>` 類似於 C# 的 ``List<T>`` 集"
+"合。"
+
+msgid ""
+"Godot :ref:`packed arrays <doc_c_sharp_collections_packedarray>` are more "
+"memory-efficient arrays, in C# use one of the supported ``System.Array`` "
+"types."
+msgstr ""
+"Godot :ref:`打包陣列 <doc_c_sharp_collections_packedarray>` 是記憶體使用更有"
+"效率的陣列；在 C# 中可以用對應的 ``System.Array`` 型別。"
+
+msgid ""
+"Do you need a Godot collection that maps a set of keys to a set of values?"
+msgstr "你是否需要一個將鍵對應到值的 Godot 集合？"
+
+msgid ""
+"Godot :ref:`dictionaries <doc_c_sharp_collections_dictionary>` store pairs "
+"of keys and values and allow easy access to the values by their associated "
+"key."
+msgstr ""
+"Godot :ref:`字典 <doc_c_sharp_collections_dictionary>` 能儲存鍵值對，並可透過"
+"鍵快速存取對應的值。"
+
+msgid "Godot collections"
+msgstr "Godot 集合"
+
+msgid "PackedArray"
+msgstr "打包陣列"
+
+msgid ""
+"Godot packed arrays are implemented as an array of a specific type, allowing "
+"it to be more tightly packed as each element has the size of the specific "
+"type, not ``Variant``."
+msgstr ""
+"Godot 的打包陣列是以特定型別的陣列實作，因此每個元素都僅佔據該型別的大小，而"
+"不是 ``Variant``，能更有效率使用記憶體。"
+
+msgid "In C#, packed arrays are replaced by ``System.Array``:"
+msgstr "在 C# 中，打包陣列可用 ``System.Array`` 來取代："
+
+msgid "GDScript"
+msgstr "GDScript"
+
+msgid "C#"
+msgstr "C#"
+
+msgid "``PackedByteArray``"
+msgstr "``PackedByteArray``"
+
+msgid "``byte[]``"
+msgstr "``byte[]``"
+
+msgid "``PackedInt32Array``"
+msgstr "``PackedInt32Array``"
+
+msgid "``int[]``"
+msgstr "``int[]``"
+
+msgid "``PackedInt64Array``"
+msgstr "``PackedInt64Array``"
+
+msgid "``long[]``"
+msgstr "``long[]``"
+
+msgid "``PackedFloat32Array``"
+msgstr "``PackedFloat32Array``"
+
+msgid "``float[]``"
+msgstr "``float[]``"
+
+msgid "``PackedFloat64Array``"
+msgstr "``PackedFloat64Array``"
+
+msgid "``double[]``"
+msgstr "``double[]``"
+
+msgid "``PackedStringArray``"
+msgstr "``PackedStringArray``"
+
+msgid "``string[]``"
+msgstr "``string[]``"
+
+msgid "``PackedVector2Array``"
+msgstr "``PackedVector2Array``"
+
+msgid "``Vector2[]``"
+msgstr "``Vector2[]``"
+
+msgid "``PackedVector3Array``"
+msgstr "``PackedVector3Array``"
+
+msgid "``Vector3[]``"
+msgstr "``Vector3[]``"
+
+msgid "``PackedVector4Array``"
+msgstr "``PackedVector4Array``"
+
+msgid "``Vector4[]``"
+msgstr "``Vector4[]``"
+
+msgid "``PackedColorArray``"
+msgstr "``PackedColorArray``"
+
+msgid "``Color[]``"
+msgstr "``Color[]``"
+
+msgid ""
+"Other C# arrays are not supported by the Godot C# API since a packed array "
+"equivalent does not exist. See the list "
+"of :ref:`c_sharp_variant_compatible_types`."
+msgstr ""
+"Godot C# API 不支援其他 C# 陣列，因為沒有對應的打包陣列型別。請參"
+"考 :ref:`c_sharp_variant_compatible_types` 取得支援型別列表。"
+
+msgid "Array"
+msgstr "陣列"
+
+msgid ""
+"Godot arrays are implemented as an array of ``Variant`` and can contain "
+"several elements of any type. In C#, the equivalent type is "
+"``Godot.Collections.Array``."
+msgstr ""
+"Godot 陣列以 ``Variant`` 為元素型別，可以存放任何型別的多個元素。在 C# 中，對"
+"應型別為 ``Godot.Collections.Array``。"
+
+msgid ""
+"The generic ``Godot.Collections.Array<T>`` type allows restricting the "
+"element type to a :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>`."
+msgstr ""
+"泛型 ``Godot.Collections.Array<T>`` 可限制元素型別為 :ref:`Variant-"
+"compatible type <c_sharp_variant_compatible_types>`。"
+
+msgid ""
+"An untyped ``Godot.Collections.Array`` can be converted to a typed array "
+"using the ``Godot.Collections.Array<T>(Godot.Collections.Array)`` "
+"constructor."
+msgstr ""
+"未指定型別的 ``Godot.Collections.Array`` 可以用 "
+"``Godot.Collections.Array<T>(Godot.Collections.Array)`` 建構子轉換為指定型別"
+"的陣列。"
+
+msgid ""
+"Despite the name, Godot arrays are more similar to the C# collection "
+"``List<T>`` than ``System.Array``. Their size is not fixed and can grow or "
+"shrink as elements are added/removed from the collection."
+msgstr ""
+"雖然名稱為「Array」，但 Godot 陣列其實更接近 C# 的 ``List<T>``，而不是 "
+"``System.Array``。其大小不是固定的，可以隨著新增或移除元素動態增減。"
+
+msgid "List of Godot's Array methods and their equivalent in C#:"
+msgstr "Godot 陣列方法及其在 C# 的對應方法列表："
+
+msgid "all"
+msgstr "all"
+
+msgid "`System.Linq.Enumerable.All`_"
+msgstr "`System.Linq.Enumerable.All`_"
+
+msgid "any"
+msgstr "any"
+
+msgid "`System.Linq.Enumerable.Any`_"
+msgstr "`System.Linq.Enumerable.Any`_"
+
+msgid "append"
+msgstr "append"
+
+msgid "Add"
+msgstr "Add"
+
+msgid "append_array"
+msgstr "append_array"
+
+msgid "AddRange"
+msgstr "AddRange"
+
+msgid "assign"
+msgstr "assign"
+
+msgid "Clear and AddRange"
+msgstr "Clear and AddRange"
+
+msgid "back"
+msgstr "back"
+
+msgid ""
+"``Array[^1]`` or `System.Linq.Enumerable.Last`_ or "
+"`System.Linq.Enumerable.LastOrDefault`_"
+msgstr ""
+"``Array[^1]`` or `System.Linq.Enumerable.Last`_ or "
+"`System.Linq.Enumerable.LastOrDefault`_"
+
+msgid "bsearch"
+msgstr "bsearch"
+
+msgid "BinarySearch"
+msgstr "BinarySearch"
+
+msgid "bsearch_custom"
+msgstr "bsearch_custom"
+
+msgid "N/A"
+msgstr "N/A"
+
+msgid "clear"
+msgstr "清除"
+
+msgid "Clear"
+msgstr "清除"
+
+msgid "count"
+msgstr "count"
+
+msgid "`System.Linq.Enumerable.Count`_"
+msgstr "`System.Linq.Enumerable.Count`_"
+
+msgid "duplicate"
+msgstr "duplicate"
+
+msgid "Duplicate"
+msgstr "重複"
+
+msgid "erase"
+msgstr "erase"
+
+msgid "Remove"
+msgstr "移除"
+
+msgid "fill"
+msgstr "fill"
+
+msgid "Fill"
+msgstr "填入"
+
+msgid "filter"
+msgstr "filter"
+
+msgid "Use `System.Linq.Enumerable.Where`_"
+msgstr "Use `System.Linq.Enumerable.Where`_"
+
+msgid "find"
+msgstr "find"
+
+msgid "IndexOf"
+msgstr "IndexOf"
+
+msgid "front"
+msgstr "front"
+
+msgid ""
+"``Array[0]`` or `System.Linq.Enumerable.First`_ or "
+"`System.Linq.Enumerable.FirstOrDefault`_"
+msgstr ""
+"``Array[0]`` 或 `System.Linq.Enumerable.First`_ 或 "
+"`System.Linq.Enumerable.FirstOrDefault`_"
+
+msgid "get_typed_builtin"
+msgstr "get_typed_builtin"
+
+msgid "get_typed_class_name"
+msgstr "get_typed_class_name"
+
+msgid "get_typed_script"
+msgstr "get_typed_script"
+
+msgid "has"
+msgstr "has"
+
+msgid "Contains"
+msgstr "Contains"
+
+msgid "hash"
+msgstr "hash"
+
+msgid "GD.Hash"
+msgstr "GD.Hash"
+
+msgid "insert"
+msgstr "insert"
+
+msgid "Insert"
+msgstr "Insert"
+
+msgid "is_empty"
+msgstr "is_empty"
+
+msgid "Use ``Count == 0``"
+msgstr "使用``計數== 0``"
+
+msgid "is_read_only"
+msgstr "is_read_only"
+
+msgid "IsReadOnly"
+msgstr "IsReadOnly"
+
+msgid "is_same_typed"
+msgstr "is_same_typed"
+
+msgid "is_typed"
+msgstr "``type``"
+
+msgid "make_read_only"
+msgstr "make_read_only"
+
+msgid "MakeReadOnly"
+msgstr "MakeReadOnly"
+
+msgid "map"
+msgstr "對應 Map"
+
+msgid "`System.Linq.Enumerable.Select`_"
+msgstr "`System.Linq.Enumerable.Select`_"
+
+msgid "max"
+msgstr "最大值"
+
+msgid "Max"
+msgstr "對應 Map"
+
+msgid "min"
+msgstr "min"
+
+msgid "Min"
+msgstr "Min"
+
+msgid "pick_random"
+msgstr "pick_random"
+
+msgid "PickRandom (Consider using `System.Random`_)"
+msgstr "PickRandom（考慮使用 `System.Random`_ ）"
+
+msgid "pop_at"
+msgstr "pop_at"
+
+msgid "``Array[i]`` with ``RemoveAt(i)``"
+msgstr "``Array[i]`` 和 ``RemoveAt(i)``"
+
+msgid "pop_back"
+msgstr "pop_back"
+
+msgid "``Array[^1]`` with ``RemoveAt(Count - 1)``"
+msgstr "``Array[^1]`` 和 ``RemoveAt(Count - 1)``"
+
+msgid "pop_front"
+msgstr "pop_front"
+
+msgid "``Array[0]`` with ``RemoveAt(0)``"
+msgstr "``Array[0]`` 和 ``RemoveAt(0)``"
+
+msgid "push_back"
+msgstr "push_back"
+
+msgid "``Insert(Count, item)``"
+msgstr "``Insert(Count, item)``"
+
+msgid "push_front"
+msgstr "push_front"
+
+msgid "``Insert(0, item)``"
+msgstr "``Insert(0, item)``"
+
+msgid "reduce"
+msgstr "reduce"
+
+msgid "`System.Linq.Enumerable.Aggregate`_"
+msgstr "`System.Linq.Enumerable.Aggregate`_"
+
+msgid "remove_at"
+msgstr "remove_at"
+
+msgid "RemoveAt"
+msgstr "RemoveAt"
+
+msgid "resize"
+msgstr "resize"
+
+msgid "Resize"
+msgstr "Resize"
+
+msgid "reverse"
+msgstr "reverse"
+
+msgid "Reverse"
+msgstr "Reverse"
+
+msgid "rfind"
+msgstr "rfind"
+
+msgid "LastIndexOf"
+msgstr "索引"
+
+msgid "shuffle"
+msgstr "shuffle"
+
+msgid "Shuffle"
+msgstr "Shuffle"
+
+msgid "size"
+msgstr "size"
+
+msgid "Count"
+msgstr "數量"
+
+msgid "slice"
+msgstr "slice"
+
+msgid "Slice"
+msgstr "Slice"
+
+msgid "sort"
+msgstr "sort"
+
+msgid "Sort"
+msgstr "排序"
+
+msgid "sort_custom"
+msgstr "sort_custom"
+
+msgid "`System.Linq.Enumerable.OrderBy`_"
+msgstr "`System.Linq.Enumerable.OrderBy`_"
+
+msgid "operator !="
+msgstr "運算子"
+
+msgid "!RecursiveEqual"
+msgstr "!RecursiveEqual"
+
+msgid "operator +"
+msgstr "運算子"
+
+msgid "operator <"
+msgstr "運算子"
+
+msgid "operator <="
+msgstr "運算子"
+
+msgid "operator =="
+msgstr "運算子"
+
+msgid "RecursiveEqual"
+msgstr "RecursiveEqual"
+
+msgid "operator >"
+msgstr "運算子"
+
+msgid "operator >="
+msgstr "運算子"
+
+msgid "operator []"
+msgstr "運算子"
+
+msgid "Array[int] indexer"
+msgstr "Array[int] indexer"
+
+msgid "Dictionary"
+msgstr "字典"
+
+msgid ""
+"Godot dictionaries are implemented as a dictionary with ``Variant`` keys and "
+"values. In C#, the equivalent type is ``Godot.Collections.Dictionary``."
+msgstr ""
+"Godot 字典是以 ``Variant`` 作為鍵和值來實作的。在 C# 中，對應型別為 "
+"``Godot.Collections.Dictionary``。"
+
+msgid ""
+"The generic ``Godot.Collections.Dictionary<TKey, TValue>`` type allows "
+"restricting the key and value types to a :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>`."
+msgstr ""
+"泛型 ``Godot.Collections.Dictionary<TKey, TValue>`` 可限制鍵和值的型別"
+"為 :ref:`Variant-compatible type <c_sharp_variant_compatible_types>`。"
+
+msgid ""
+"An untyped ``Godot.Collections.Dictionary`` can be converted to a typed "
+"dictionary using the ``Godot.Collections.Dictionary<TKey, "
+"TValue>(Godot.Collections.Dictionary)`` constructor."
+msgstr ""
+"未指定型別的 ``Godot.Collections.Dictionary`` 可以用 "
+"``Godot.Collections.Dictionary<TKey, TValue>(Godot.Collections.Dictionary)`` "
+"建構子轉換為指定型別的字典。"
+
+msgid ""
+"If you need a dictionary where the key is typed but not the value, use "
+"``Variant`` as the ``TValue`` generic parameter of the typed dictionary."
+msgstr ""
+"如果你需要鍵有型別但值無型別的字典，可將 ``TValue`` 泛型參數設為 "
+"``Variant``。"
+
+msgid "List of Godot's Dictionary methods and their equivalent in C#:"
+msgstr "Godot 字典方法及其在 C# 的對應方法列表："
+
+msgid "find_key"
+msgstr "find_key"
+
+msgid "get"
+msgstr "設定"
+
+msgid "Dictionary[Variant] indexer or TryGetValue"
+msgstr "Dictionary[Variant] 索引器或 TryGetValue"
+
+msgid "ContainsKey"
+msgstr "繼續"
+
+msgid "has_all"
+msgstr "has_all"
+
+msgid "keys"
+msgstr "keys"
+
+msgid "Keys"
+msgstr "Keys"
+
+msgid "merge"
+msgstr "merge"
+
+msgid "Merge"
+msgstr "Merge"
+
+msgid "values"
+msgstr "值"
+
+msgid "Values"
+msgstr "值"
+
+msgid "Dictionary[Variant] indexer, Add or TryGetValue"
+msgstr "Dictionary[Variant] 索引器、Add 或 TryGetValue"

@@ -1,0 +1,198 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Localization using spreadsheets"
+msgstr "使用电子表格进行本地化"
+
+msgid ""
+"Spreadsheets are one of the most common formats for localizing games. In "
+"Godot, spreadsheets are supported through the CSV format. This guide "
+"explains how to work with CSVs."
+msgstr ""
+"电子表格是游戏本地化最常用的格式之一。Godot 使用 CSV 格式来支持电子表格。本指"
+"南将介绍 CSV 的操作方法。"
+
+msgid ""
+"The CSV files **must** be saved with UTF-8 encoding without a `byte order "
+"mark <https://en.wikipedia.org/wiki/Byte_order_mark>`__."
+msgstr ""
+"CSV 文件\\ **必须**\\ 使用 UTF-8 编码保存，不带\\ `字节序标记 <https://"
+"en.wikipedia.org/wiki/Byte_order_mark>`__\\ 。"
+
+msgid ""
+"By default, Microsoft Excel will always save CSV files with ANSI encoding "
+"rather than UTF-8. There is no built-in way to do this, but there are "
+"workarounds as described `here <https://stackoverflow.com/questions/4221176/"
+"excel-to-csv-with-utf8-encoding>`__."
+msgstr ""
+"默认情况下，Microsoft Excel 始终以 ANSI 编码保存 CSV 文件，不使用 UTF-8。虽然"
+"内置的方法实现，但可以使用\\ `此处 <https://stackoverflow.com/questions/"
+"4221176/excel-to-csv-with-utf8-encoding>`__\\ 描述的变通方案。"
+
+msgid ""
+"We recommend using `LibreOffice <https://www.libreoffice.org/>`__ or Google "
+"Sheets instead."
+msgstr ""
+"我们推荐改用 `LibreOffice <https://www.libreoffice.org/>`__ 或 Google "
+"Sheets。"
+
+msgid "Formatting"
+msgstr "格式"
+
+msgid "CSV files must be formatted as follows:"
+msgstr "CSV 文件必须使用以下格式："
+
+msgid "keys"
+msgstr "keys"
+
+msgid "<lang1>"
+msgstr "<lang1>"
+
+msgid "<lang2>"
+msgstr "<lang2>"
+
+msgid "<langN>"
+msgstr "<langN>"
+
+msgid "KEY1"
+msgstr "KEY1"
+
+msgid "string"
+msgstr "字符串"
+
+msgid "KEY2"
+msgstr "KEY2"
+
+msgid "KEYN"
+msgstr "KEYN"
+
+msgid ""
+"The \"lang\" tags must represent a language, which must be one of "
+"the :ref:`valid locales <doc_locales>` supported by the engine, or they must "
+"start with an underscore (`_`), which means the related column is served as "
+"comment and won't be imported. The \"KEY\" tags must be unique and represent "
+"a string universally (they are usually in uppercase, to differentiate from "
+"other strings). These keys will be replaced at runtime by the matching "
+"translated string. Note that the case is important, \"KEY1\" and \"Key1\" "
+"will be different keys. The top-left cell is ignored and can be left empty "
+"or having any content. Here's an example:"
+msgstr ""
+"“lang”标签必须代表一种语言，即必须是引擎支持的\\ :ref:`有效区域设置 "
+"<doc_locales>`\\ ，否则必须以下划线（\\ `_`\\ ）开头，表示这一列是注释，不进"
+"行导入。“KEY”标签必须唯一，代表一个全局字符串（通常为全大写，以区别于其他字符"
+"串）。这些键将在运行时替换为匹配的翻译字符串。请注意，大小写很重"
+"要，“KEY1”和“Key1”是不同的键。左上角的单元格会被忽略，可以留空或包含任何内"
+"容。示例："
+
+msgid "en"
+msgstr "en"
+
+msgid "es"
+msgstr "es"
+
+msgid "ja"
+msgstr "ja"
+
+msgid "GREET"
+msgstr "GREET"
+
+msgid "Hello, friend!"
+msgstr "Hello, friend!"
+
+msgid "Hola, amigo!"
+msgstr "Hola, amigo!"
+
+msgid "こんにちは"
+msgstr "こんにちは"
+
+msgid "ASK"
+msgstr "ASK"
+
+msgid "How are you?"
+msgstr "How are you?"
+
+msgid "Cómo está?"
+msgstr "Cómo está?"
+
+msgid "元気ですか"
+msgstr "元気ですか"
+
+msgid "BYE"
+msgstr "BYE"
+
+msgid "Goodbye"
+msgstr "Goodbye"
+
+msgid "Adiós"
+msgstr "Adiós"
+
+msgid "さようなら"
+msgstr "さようなら"
+
+msgid "QUOTE"
+msgstr "QUOTE"
+
+msgid "\"Hello\" said the man."
+msgstr "\"Hello\" said the man."
+
+msgid "\"Hola\" dijo el hombre."
+msgstr "\"Hola\" dijo el hombre."
+
+msgid "「こんにちは」男は言いました"
+msgstr "「こんにちは」男は言いました"
+
+msgid ""
+"The same example is shown below as a comma-separated plain text file, which "
+"should be the result of editing the above in a spreadsheet. When editing the "
+"plain text version, be sure to enclose with double quotes any message that "
+"contains commas, line breaks or double quotes, so that commas are not parsed "
+"as delimiters, line breaks don't create new entries and double quotes are "
+"not parsed as enclosing characters. Be sure to escape any double quotes a "
+"message may contain by preceding them with another double quote. "
+"Alternatively, you can select another delimiter than comma in the import "
+"options."
+msgstr ""
+"下面是以逗号分隔的纯文本文件形式同样的例子, 这应该是在电子表格中编辑上述内容"
+"的结果. 当编辑纯文本时, 请确保用双引号包裹任何包含逗号, 换行符或双引号的消"
+"息, 这样逗号就不会被解析为定界符, 换行符不会创建新条目, 双引号也不会被解析为"
+"包裹字符. 请确保在信息中包含的任何双引号之前使用另一个双引号来转义. 另外, 你"
+"也可以在导入选项中选择逗号以外的其他定界符."
+
+msgid "CSV importer"
+msgstr "CSV 导入器"
+
+msgid ""
+"Godot will treat CSV files as translations by default. It will import them "
+"and generate one or more compressed translation resource files next to it."
+msgstr ""
+"Godot 默认会将 CSV 文件作为翻译导入，在同一文件夹中生成一个或多个压缩后的翻译"
+"资源文件。"
+
+msgid ""
+"Importing will also add the translation to the list of translations to load "
+"when the game runs, specified in project.godot (or the project settings). "
+"Godot allows loading and removing translations at runtime as well."
+msgstr ""
+"导入还会将翻译添加到要在游戏运行时加载的翻译列表中，在 project.godot（或项目"
+"设置）中指定。Godot 还允许在运行时加载和删除翻译。"
+
+msgid ""
+"Select the ``.csv`` file and access the **Import** dock to define import "
+"options. You can toggle the compression of the imported translations, and "
+"select the delimiter to use when parsing the CSV file."
+msgstr ""
+"选择 ``.csv`` 文件并访问\\ **导入**\\ 停靠面板，以定义导入选项。你可以切换是"
+"否压缩导入的翻译，并选择在解析 CSV 文件时使用的定界符。"
+
+msgid "Be sure to click **Reimport** after any change to these options."
+msgstr "对这些选项进行任何更改后，请务必点击\\ **重新导入**\\ 。"

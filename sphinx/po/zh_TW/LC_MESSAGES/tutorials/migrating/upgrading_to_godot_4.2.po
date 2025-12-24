@@ -1,0 +1,600 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Upgrading from Godot 4.1 to Godot 4.2"
+msgstr "從 Godot 4.1 升級到 Godot 4.2"
+
+msgid ""
+"For most games and apps made with 4.1 it should be relatively safe to "
+"migrate to 4.2. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"對於大多數使用 4.1 製作的遊戲和應用程式來說，遷移到 4.2 應該相對安全。本頁旨"
+"在介紹遷移專案時需要注意的所有事項。"
+
+msgid "Breaking changes"
+msgstr "做出更改"
+
+msgid ""
+"If you are migrating from 4.1 to 4.2, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"如果你要從 4.1 遷移到 4.2，這裡列出的破壞性更改可能會影響到你。更改按照領域/"
+"系統群組。"
+
+msgid ""
+"The :ref:`class_Mesh` resource format has changed in 4.2 to allow for "
+"`vertex and attribute compression <https://github.com/godotengine/godot/pull/"
+"81138>`__. This allows for improved rendering performance, especially on "
+"platforms constrained by memory bandwidth such as mobile."
+msgstr ""
+":ref:`class_Mesh` 資源格式在 4.2 版本中已變更，以支援 `頂點與屬性壓縮 "
+"<https://github.com/godotengine/godot/pull/81138>`__ 。這能提升算繪效能，尤其"
+"是在受限於記憶體頻寬的平台（如行動裝置）上。"
+
+msgid ""
+"It is still possible to load the Godot 4.0-4.1 Mesh formats, but it is "
+"**not** possible to load the Godot 4.2 Mesh format in prior Godot versions. "
+"When opening a Godot project made with a version prior to 4.2, you may be "
+"presented with an upgrade dialog that offers two options:"
+msgstr ""
+"仍然可以載入 Godot 4.0-4.1 的網格格式，但**無法**在舊版的 Godot 中載入 Godot "
+"4.2 的網格格式。當開啟使用 4.2 之前的版本製作的 Godot 專案時，您可能會看到一"
+"個升級對話框，提供兩個選項："
+
+msgid ""
+"**Restart & Upgrade:** Upgrades the mesh format for all meshes in the "
+"project and saves the result to disk. Once chosen, this option prevents "
+"downgrading the project to a Godot version prior to 4.2. Set up a version "
+"control system and push your changes *before* choosing this option!"
+msgstr ""
+"**重新啟動並升級：** 升級專案中所有網格（Mesh）的格式並儲存到磁碟。選擇此選項"
+"後，將無法將專案降版回 Godot 4.2 之前的版本。請務必在選擇此選項*之前*，設定好"
+"版本控制系統並推送你的變更！"
+
+msgid ""
+"**Upgrade Only:** Upgrades the mesh format in-memory without writing it to "
+"disk. This allows downgrading the project to a Godot version older than 4.2 "
+"if you need to do so in the future. The downside is that loading the project "
+"will be slower every time as the mesh format needs to be upgraded every time "
+"the project is loaded. These increased loading times will also affect the "
+"exported project. The number and complexity of Mesh resources determines how "
+"much loading times are affected."
+msgstr ""
+"**僅升級：** 只在記憶體中升級網格格式，不會寫入磁碟。這樣一來，如果未來有需"
+"要，仍可將專案降版至 4.2 以前的 Godot 版本。缺點是每次載入專案時都會重新升級"
+"網格格式，導致載入速度變慢，這種載入延遲也會影響到導出的專案。網格資源的數量"
+"與複雜度會決定載入時間受影響的程度。"
+
+msgid ""
+"If this dialog doesn't appear, use **Project > Tools > Upgrade Mesh Surfaces…"
+"** at the top of the editor."
+msgstr ""
+"如果沒有出現此對話框，請在編輯器上方選擇 **專案 > 工具 > 升級網格表面…** 來手"
+"動執行升級。"
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"這篇文章指出了每項破壞性改動是否會影響 GDScript，以及 C# 的破壞性改動是 *二進"
+"位相容* 還是 *原始程式碼相容*："
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the runtime behavior won't change."
+msgstr ""
+"**二進制相容** - 現有的二進制檔案無需重新編譯即可成功載入和執行，且運行時的行"
+"為不會改變。"
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr ""
+"** 原始程式碼相容** —— 在升級 Godot 時，原始程式碼可成功編譯，無需更改。"
+
+msgid "Core"
+msgstr "核心"
+
+msgid "Change"
+msgstr "改動"
+
+msgid "GDScript Compatible"
+msgstr "GDScript 格式化字串"
+
+msgid "C# Binary Compatible"
+msgstr "C# 二進位相容"
+
+msgid "C# Source Compatible"
+msgstr "C# 原始程式碼相容"
+
+msgid "Introduced"
+msgstr "簡介"
+
+msgid "**Node**"
+msgstr "**節點**"
+
+msgid "Constant ``NOTIFICATION_NODE_RECACHE_REQUESTED`` removed"
+msgstr "常數 ``NOTIFICATION_NODE_RECACHE_REQUESTED`` 已移除"
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "`GH-84419`_"
+msgstr "`GH-84419`_"
+
+msgid "Animation"
+msgstr "動畫"
+
+msgid "**AnimationPlayer**"
+msgstr "**動畫播放器（AnimationPlayer）**"
+
+msgid ""
+"Method ``_post_process_key_value`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``_post_process_key_value`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "`GH-80813`_"
+msgstr "`GH-80813`_"
+
+msgid "Method ``add_animation_library`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``add_animation_library`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``advance`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``advance`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Signal ``animation_finished`` moved to base class ``AnimationMixer``"
+msgstr "訊號 ``animation_finished`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Signal ``animation_started`` moved to base class ``AnimationMixer``"
+msgstr "訊號 ``animation_started`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Signal ``animation_libraries_updated`` moved to base class ``AnimationMixer``"
+msgstr "訊號 ``animation_libraries_updated`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Signal ``animation_list_changed`` moved to base class ``AnimationMixer``"
+msgstr "訊號 ``animation_list_changed`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Property ``audio_max_polyphony`` moved to base class ``AnimationMixer``"
+msgstr "屬性 ``audio_max_polyphony`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Signal ``caches_cleared`` moved to base class ``AnimationMixer``"
+msgstr "訊號 ``caches_cleared`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``clear_caches`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``clear_caches`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``find_animation`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``find_animation`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``find_animation_library`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``find_animation_library`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``get_animation`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``get_animation`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``get_animation_library`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``get_animation_library`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``get_animation_library_list`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``get_animation_library_list`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``get_animation_list`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``get_animation_list`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``has_animation`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``has_animation`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``has_animation_library`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``has_animation_library`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Property ``method_call_mode`` renamed to ``callback_mode_method`` and moved "
+"to base class ``AnimationMixer``"
+msgstr ""
+"屬性 ``method_call_mode`` 已更名為 ``callback_mode_method``，並移至基底類別 "
+"``AnimationMixer``"
+
+msgid "|✔️ with compat|"
+msgstr "| ✔️相容|"
+
+msgid ""
+"Property ``playback_active`` renamed to ``active`` and moved to base class "
+"``AnimationMixer``"
+msgstr ""
+"屬性 ``playback_active`` 已更名為 ``active``，並移至基底類別 "
+"``AnimationMixer``"
+
+msgid ""
+"Property ``playback_process_mode`` renamed to ``callback_mode_process`` and "
+"moved to base class ``AnimationMixer``"
+msgstr ""
+"屬性 ``playback_process_mode`` 已更名為 ``callback_mode_process``，並移至基底"
+"類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``remove_animation_library`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``remove_animation_library`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``rename_animation_library`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``rename_animation_library`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Property ``reset_on_save`` moved to base class ``AnimationMixer``"
+msgstr "屬性 ``reset_on_save`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Property ``root_node`` moved to base class ``AnimationMixer``"
+msgstr "屬性 ``root_node`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``set_reset_on_save_enabled`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``set_reset_on_save_enabled`` 已移至基底類別 ``AnimationMixer``"
+
+msgid "Method ``seek`` adds a new ``update_only`` optional parameter"
+msgstr "方法 ``seek`` 新增了 ``update_only`` 選用參數"
+
+msgid "**AnimationTree**"
+msgstr "**動畫樹（AnimationTree）**"
+
+msgid "Property ``active`` moved to base class ``AnimationMixer``"
+msgstr "屬性 ``active`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``get_root_motion_position`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``get_root_motion_position`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``get_root_motion_position_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+"方法 ``get_root_motion_position_accumulator`` 已移至基底類別 "
+"``AnimationMixer``"
+
+msgid ""
+"Method ``get_root_motion_rotation`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``get_root_motion_rotation`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``get_root_motion_rotation_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+"方法 ``get_root_motion_rotation_accumulator`` 已移至基底類別 "
+"``AnimationMixer``"
+
+msgid "Method ``get_root_motion_scale`` moved to base class ``AnimationMixer``"
+msgstr "方法 ``get_root_motion_scale`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Method ``get_root_motion_scale_accumulator`` moved to base class "
+"``AnimationMixer``"
+msgstr ""
+"方法 ``get_root_motion_scale_accumulator`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Property ``process_callback`` renamed to ``callback_mode_process`` and moved "
+"to base class ``AnimationMixer``"
+msgstr ""
+"屬性 ``process_callback`` 已更名為 ``callback_mode_process``，並移至基底類別 "
+"``AnimationMixer``"
+
+msgid "Property ``root_motion_track``  moved to base class ``AnimationMixer``"
+msgstr "屬性 ``root_motion_track`` 已移至基底類別 ``AnimationMixer``"
+
+msgid ""
+"Property ``tree_root`` changes type from ``AnimationNode`` to "
+"``AnimationRootNode``"
+msgstr "屬性 ``tree_root`` 型別由 ``AnimationNode`` 改為 ``AnimationRootNode``"
+
+msgid "GUI nodes"
+msgstr "建立節點"
+
+msgid "**PopupMenu**"
+msgstr "**彈出選單（PopupMenu）**"
+
+msgid ""
+"Method ``add_icon_shortcut`` adds a new ``allow_echo`` optional parameter"
+msgstr "方法 ``add_icon_shortcut`` 新增了 ``allow_echo`` 選用參數"
+
+msgid "`GH-36493`_"
+msgstr "`GH-36493`_"
+
+msgid "Method ``add_shortcut`` adds a new ``allow_echo`` optional parameter"
+msgstr "方法 ``add_shortcut`` 新增了 ``allow_echo`` 選用參數"
+
+msgid "Method ``clear`` adds a new ``free_submenus`` optional parameter"
+msgstr "方法 ``clear`` 新增了 ``free_submenus`` 選用參數"
+
+msgid "`GH-79965`_"
+msgstr "`GH-79965`_"
+
+msgid "**RichTextLabel**"
+msgstr "**RichTextLabel**"
+
+msgid ""
+"Method ``add_image`` adds new ``key``, ``pad``, ``tooltip``, and "
+"``size_in_percent`` optional parameters"
+msgstr ""
+"方法 ``add_image`` 新增了 ``key``、``pad``、``tooltip`` 與 "
+"``size_in_percent`` 選用參數"
+
+msgid "`GH-80410`_"
+msgstr "`GH-80410`_"
+
+msgid "Rendering"
+msgstr "算繪"
+
+msgid "**ImporterMesh**"
+msgstr "**匯入網格（ImporterMesh）**"
+
+msgid ""
+"Method ``add_surface`` changes ``flags`` parameter type from ``uint32`` to "
+"``uint64``"
+msgstr ""
+"方法 ``add_surface`` 的 ``flags`` 參數型別由 ``uint32`` 改為 ``uint64``"
+
+msgid "`GH-81138`_"
+msgstr "`GH-81138`_"
+
+msgid ""
+"Method ``get_surface_format`` changes return type from ``uint32`` to "
+"``uint64``"
+msgstr "方法 ``get_surface_format`` 的回傳型別由 ``uint32`` 改為 ``uint64``"
+
+msgid "**MeshDataTool**"
+msgstr "**網格資料工具（MeshDataTool）**"
+
+msgid ""
+"Method ``commit_to_surface`` adds a new ``compression_flags`` optional "
+"parameter"
+msgstr "方法 ``commit_to_surface`` 新增了 ``compression_flags`` 選用參數"
+
+msgid "Method ``get_format`` changes return type from ``uint32`` to ``uint64``"
+msgstr "方法 ``get_format`` 的回傳型別由 ``uint32`` 改為 ``uint64``"
+
+msgid "**RenderingDevice**"
+msgstr "算繪"
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_RASTER`` changes value from ``1`` to "
+"``9``"
+msgstr "列舉欄位 ``BarrierMask.BARRIER_MASK_RASTER`` 的值由 ``1`` 改為 ``9``"
+
+msgid "`GH-79911`_"
+msgstr "`GH-79911`_"
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_ALL_BARRIERS`` changes value from "
+"``7`` to ``32767``"
+msgstr ""
+"列舉欄位 ``BarrierMask.BARRIER_MASK_ALL_BARRIERS`` 的值由 ``7`` 改為 "
+"``32767``"
+
+msgid ""
+"Enum field ``BarrierMask.BARRIER_MASK_NO_BARRIER`` changes value from ``8`` "
+"to ``32768``"
+msgstr ""
+"列舉欄位 ``BarrierMask.BARRIER_MASK_NO_BARRIER`` 的值由 ``8`` 改為 ``32768``"
+
+msgid ""
+"Method ``shader_create_from_bytecode`` adds a new ``placeholder_rid`` "
+"optional parameter"
+msgstr ""
+"方法 ``shader_create_from_bytecode`` 新增了 ``placeholder_rid`` 選用參數"
+
+msgid "`GH-79606`_"
+msgstr "`GH-79606`_"
+
+msgid ""
+"Method ``shader_get_vertex_input_attribute_ask`` changes return type from "
+"``uint32`` to ``uint64``"
+msgstr ""
+"方法 ``shader_get_vertex_input_attribute_ask`` 的回傳型別由 ``uint32`` 改為 "
+"``uint64``"
+
+msgid "**SurfaceTool**"
+msgstr "建立內容"
+
+msgid ""
+"Method ``commit`` changes ``flags`` parameter type from ``uint32`` to "
+"``uint64``"
+msgstr "方法 ``commit`` 的 ``flags`` 參數型別由 ``uint32`` 改為 ``uint64``"
+
+msgid "Text"
+msgstr "文字"
+
+msgid "**Font**"
+msgstr "**字型**"
+
+msgid "Method ``set_fallbacks`` replaced with ``fallbacks`` property"
+msgstr "方法 ``set_fallbacks`` 已被 ``fallbacks`` 屬性取代"
+
+msgid "`GH-78266`_"
+msgstr "`GH-78266`_"
+
+msgid "Method ``get_fallbacks`` replaced with ``fallbacks`` property"
+msgstr "方法 ``get_fallbacks`` 已被 ``fallbacks`` 屬性取代"
+
+msgid ""
+"Method ``find_variation`` adds new ``spacing_top``, ``spacing_bottom``, "
+"``spacing_space``, and ``spacing_glyph`` optional parameters"
+msgstr ""
+"方法 ``find_variation`` 新增了 ``spacing_top``、``spacing_bottom``、"
+"``spacing_space``、以及 ``spacing_glyph`` 選用參數"
+
+msgid "`GH-80954`_"
+msgstr "`GH-80954`_"
+
+msgid "GraphEdit"
+msgstr "GraphEdit"
+
+msgid "**GraphEdit**"
+msgstr "**圖形編輯器（GraphEdit）**"
+
+msgid ""
+"Property ``arrange_nodes_button_hidden`` renamed to ``show_arrange_button``"
+msgstr "屬性 ``arrange_nodes_button_hidden`` 已更名為 ``show_arrange_button``"
+
+msgid "`GH-81582`_"
+msgstr "`GH-81582`_"
+
+msgid "Method ``get_zoom_hbox`` renamed to ``get_menu_hbox``"
+msgstr "方法 ``get_zoom_hbox`` 已更名為 ``get_menu_hbox``"
+
+msgid "`GH-79308`_"
+msgstr "`GH-79308`_"
+
+msgid "Property ``snap_distance`` renamed to ``snapping_distance``"
+msgstr "屬性 ``snap_distance`` 已更名為 ``snapping_distance``"
+
+msgid "Property ``use_snap`` renamed to ``snapping_enabled``"
+msgstr "屬性 ``use_snap`` 已更名為 ``snapping_enabled``"
+
+msgid "**GraphNode**"
+msgstr "**圖形節點（GraphNode）**"
+
+msgid "Property ``comment`` removed"
+msgstr "屬性 ``comment`` 已移除"
+
+msgid "`GH-79307`_"
+msgstr "`GH-79307`_"
+
+msgid ""
+"Signal ``close_request`` renamed to ``delete_request`` and moved to base "
+"class ``GraphElement``"
+msgstr ""
+"訊號 ``close_request`` 已更名為 ``delete_request``，並移至基底類別 "
+"``GraphElement``"
+
+msgid "`GH-79311`_"
+msgstr "`GH-79311`_"
+
+msgid "Property ``draggable`` moved to base class ``GraphElement``"
+msgstr "屬性 ``draggable`` 已移至基底類別 ``GraphElement``"
+
+msgid "Signal ``dragged`` moved to base class ``GraphElement``"
+msgstr "訊號 ``dragged`` 已移至基底類別 ``GraphElement``"
+
+msgid "Method ``get_connection_input_color`` removed"
+msgstr "方法 ``get_connection_input_color`` 已移除"
+
+msgid "Method ``get_connection_input_count`` removed"
+msgstr "方法 ``get_connection_input_count`` 已移除"
+
+msgid "Method ``get_connection_input_height`` removed"
+msgstr "方法 ``get_connection_input_height`` 已移除"
+
+msgid "Method ``get_connection_input_position`` removed"
+msgstr "方法 ``get_connection_input_position`` 已移除"
+
+msgid "Method ``get_connection_input_slot`` removed"
+msgstr "方法 ``get_connection_input_slot`` 已移除"
+
+msgid "Method ``get_connection_input_type`` removed"
+msgstr "方法 ``get_connection_input_type`` 已移除"
+
+msgid "Method ``get_connection_output_color`` removed"
+msgstr "方法 ``get_connection_output_color`` 已移除"
+
+msgid "Method ``get_connection_output_count`` removed"
+msgstr "方法 ``get_connection_output_count`` 已移除"
+
+msgid "Method ``get_connection_output_height`` removed"
+msgstr "方法 ``get_connection_output_height`` 已移除"
+
+msgid "Method ``get_connection_output_position`` removed"
+msgstr "方法 ``get_connection_output_position`` 已移除"
+
+msgid "Method ``get_connection_output_slot`` removed"
+msgstr "方法 ``get_connection_output_slot`` 已移除"
+
+msgid "Method ``get_connection_output_type`` removed"
+msgstr "方法 ``get_connection_output_type`` 已移除"
+
+msgid "Property ``language`` removed"
+msgstr "屬性 ``language`` 已移除"
+
+msgid "Signal ``node_deselected`` moved to base class ``GraphElement``"
+msgstr "訊號 ``node_deselected`` 已移至基底類別 ``GraphElement``"
+
+msgid "Signal ``node_selected`` moved to base class ``GraphElement``"
+msgstr "訊號 ``node_selected`` 已移至基底類別 ``GraphElement``"
+
+msgid "Property ``overlay`` removed"
+msgstr "屬性 ``overlay`` 已移除"
+
+msgid "Property ``position_offset`` moved to base class ``GraphElement``"
+msgstr "屬性 ``position_offset`` 已移至基底類別 ``GraphElement``"
+
+msgid "Signal ``position_offset_changed`` moved to base class ``GraphElement``"
+msgstr "訊號 ``position_offset_changed`` 已移至基底類別 ``GraphElement``"
+
+msgid "Signal ``raise_request`` moved to base class ``GraphElement``"
+msgstr "訊號 ``raise_request`` 已移至基底類別 ``GraphElement``"
+
+msgid "Property ``resizable`` moved to base class ``GraphElement``"
+msgstr "屬性 ``resizable`` 已移至基底類別 ``GraphElement``"
+
+msgid "Signal ``resize_request`` moved to base class ``GraphElement``"
+msgstr "訊號 ``resize_request`` 已移至基底類別 ``GraphElement``"
+
+msgid "Property ``selectable`` moved to base class ``GraphElement``"
+msgstr "屬性 ``selectable`` 已移至基底類別 ``GraphElement``"
+
+msgid "Property ``selected`` moved to base class ``GraphElement``"
+msgstr "屬性 ``selected`` 已移至基底類別 ``GraphElement``"
+
+msgid "Property ``show_close`` removed"
+msgstr "屬性 ``show_close`` 已移除"
+
+msgid "Property ``text_direction`` removed"
+msgstr "屬性 ``text_direction`` 已移除"
+
+msgid "TileMap"
+msgstr "圖塊地圖（TileMap）"
+
+msgid "**TileMap**"
+msgstr "**圖塊地圖（TileMap）**"
+
+msgid "Property ``cell_quadrant_size`` renamed to ``rendering_quadrant_size``"
+msgstr "屬性 ``cell_quadrant_size`` 已更名為 ``rendering_quadrant_size``"
+
+msgid "`GH-81070`_"
+msgstr "`GH-81070`_"
+
+msgid "XR"
+msgstr "XR"
+
+msgid "**XRInterface**"
+msgstr "**XR 介面（XRInterface）**"
+
+msgid "Property ``environment_blend_mode`` added"
+msgstr "新增屬性 ``environment_blend_mode``"
+
+msgid "`GH-81561`_"
+msgstr "`GH-81561`_"
+
+msgid ""
+"This change breaks compatibility in C# because the new property conflicts "
+"with the name of an existing enum and the C# bindings generator gives "
+"priority to properties, so the enum type was renamed from "
+"``EnvironmentBlendMode`` to ``EnvironmentBlendModeEnum``."
+msgstr ""
+"這項變更會導致 C# 相容性問題，因為新增的屬性名稱與現有列舉型別名稱衝突，而 "
+"C# 綁定生成器會優先處理屬性，因此該列舉型別名稱已由 ``EnvironmentBlendMode`` "
+"改為 ``EnvironmentBlendModeEnum``。"

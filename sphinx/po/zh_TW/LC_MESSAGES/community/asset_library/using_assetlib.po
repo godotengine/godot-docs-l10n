@@ -1,0 +1,384 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using the Asset Library"
+msgstr "使用素材庫"
+
+msgid "On the website"
+msgstr "在網站上"
+
+msgid "Overview"
+msgstr "總覽"
+
+msgid ""
+"As mentioned before, you can access the web frontend of the Asset Library on "
+"`Godot's official website <https://godotengine.org/asset-library/asset>`_. "
+"This is what it looks like when you first visit it:"
+msgstr ""
+"如前所述，你可以在 `Godot 官方網站 <https://godotengine.org/asset-library/"
+"asset>`_ 上使用素材庫的網頁前端。這是你第一次造訪時的畫面："
+
+msgid "|image0|"
+msgstr "\\ |image0|"
+
+msgid "image0"
+msgstr "image0"
+
+msgid ""
+"At the top, you see the **header**, which takes you to various other parts "
+"of the AssetLib - at the moment, it's empty, as we are not logged in."
+msgstr ""
+"在頂部你會看到 **標題列**，它可以導覽到素材庫的其他區塊。目前這裡是空的，因為"
+"我們尚未登入。"
+
+msgid "Searching"
+msgstr "搜尋"
+
+msgid ""
+"In the left sidebar is the **search bar + settings** section, and the "
+"**assets** section takes up the main content area on the right. Below the "
+"search bar, you can filter assets by **category** (such as 2D tools, scripts "
+"and demos), **support level**, **engine version**, and **license**. You can "
+"also change the **sorting order** to sort by license, name, or update date."
+msgstr ""
+"左側側邊欄包含 **search bar + settings** 區塊, 右側主要內容區則是 **assets** "
+"區塊。在搜尋列下方, 你可以依 **category** (例如 2D 工具、腳本與示例)、"
+"**support level**、**engine version** 與 **license** 來篩選素材。也可以調整 "
+"**sorting order** , 依授權、名稱或更新日期排序。"
+
+msgid ""
+"While most other filter settings should be fairly self-explanatory, it's "
+"worth going over what \"support level\" means in the Asset Library. "
+"Currently there are three support levels, and each asset can belong to only "
+"one."
+msgstr ""
+"雖然大多數其他篩選設定都很直觀，但「支援層級」在素材庫中有特殊意義。目前共有"
+"三種支援層級，每個素材只能隸屬其中之一。"
+
+msgid ""
+"**Featured** assets are hand-picked resources recognized for their value to "
+"the community."
+msgstr "**精選** 素材是經過挑選、對社群特別有價值的資源。"
+
+msgid ""
+"**Community** assets are submitted and maintained by the members of the "
+"Godot community."
+msgstr "**社群** 素材由 Godot 社群成員提供與維護。"
+
+msgid ""
+"**Testing** assets are works-in-progress, and may contain bugs and usability "
+"issues. They are not recommended for use in serious projects, but you are "
+"encouraged to download, test them, and submit issues to the original authors."
+msgstr ""
+"**測試** 素材處於開發中階段，可能包含錯誤或可用性問題。不建議在正式專案中使"
+"用，但鼓勵你下載試用並回報問題給原作者。"
+
+msgid ""
+"You can mix and match any of the search filters and criteria, and upon "
+"clicking the Search button, receive the list of all assets in the Library "
+"that match them."
+msgstr ""
+"你可以任意組合搜尋篩選條件，點擊「搜尋」按鈕後，即會顯示所有符合條件的素材列"
+"表。"
+
+msgid "|image1|"
+msgstr "\\ |image1|"
+
+msgid "image1"
+msgstr "image1"
+
+msgid ""
+"Note that the search results are not updated in real-time, so you will have "
+"to re-submit the search query each time you change the query settings."
+msgstr "請注意，搜尋結果並不會即時更新，每次修改搜尋條件後都需要重新送出查詢。"
+
+msgid "Breakdown of an asset"
+msgstr "素材頁面介紹"
+
+msgid ""
+"Now let's take a look at what an asset's page looks like and what it "
+"contains."
+msgstr "接下來讓我們看看素材頁面長什麼樣子以及包含哪些資訊。"
+
+msgid "|image2|"
+msgstr "\\ |image2|"
+
+msgid "image2"
+msgstr "image2"
+
+msgid "Asset's thumbnail/icon."
+msgstr "素材縮圖／圖示。"
+
+msgid "Asset's name."
+msgstr "素材名稱。"
+
+msgid "Current version number of the asset."
+msgstr "素材目前版本號。"
+
+msgid "Asset's category, Godot version, and support status."
+msgstr "素材類別、Godot 版本及支援狀態。"
+
+msgid "Asset's original author/submitter."
+msgstr "素材原作者／提交者。"
+
+msgid "The license the asset is distributed under."
+msgstr "素材的授權條款。"
+
+msgid "The date of the asset's latest edit/update."
+msgstr "素材最近一次編輯／更新日期。"
+
+msgid "A textual description of the asset."
+msgstr "素材的文字描述。"
+
+msgid "Links related to the asset (download link, file list, issue tracker)."
+msgstr "與素材相關的連結（下載連結、檔案列表、問題回報等）。"
+
+msgid "Images and videos showcasing the asset."
+msgstr "展示素材的圖片和影片。"
+
+msgid "Registering and logging in"
+msgstr "註冊與登入"
+
+msgid ""
+"In order to upload assets to the AssetLib, you need to be logged in, and to "
+"do that, you need a registered user account. In the future, this may also "
+"give you access to other features, such as commenting on or rating the "
+"existing assets. You do *not* need to be logged in to browse and download "
+"the assets."
+msgstr ""
+"若要上傳素材至素材庫，你必須先登入，這需要註冊一個用戶帳號。未來登入後可能還"
+"能使用其他功能，例如評論或評分現有素材。 *瀏覽或下載素材則不需登入* 。"
+
+msgid "The login/registration page can be accessed from the AssetLib header."
+msgstr "你可以從素材庫標題列進入登入／註冊頁面。"
+
+msgid "|image3|"
+msgstr "\\ |image3|"
+
+msgid "image3"
+msgstr "image3"
+
+msgid ""
+"From here, you can register your account, which requires a valid email "
+"address, a username, and a (preferably strong) password."
+msgstr ""
+"在這裡，你可以註冊帳號，需填寫有效的電子郵件、用戶名稱，並設置（建議較強的）"
+"密碼。"
+
+msgid "|image4|"
+msgstr "\\ |image4|"
+
+msgid "image4"
+msgstr "image4"
+
+msgid "Then, you can use your username and password to log in."
+msgstr "接著，你就可以用你的用戶名稱和密碼登入。"
+
+msgid "|image5|"
+msgstr "\\ |image5|"
+
+msgid "image5"
+msgstr "image5"
+
+msgid ""
+"This will change the look of the AssetLib header. Now you get access to a "
+"handful of new functions:"
+msgstr "登入後，素材庫的標題列會出現新功能："
+
+msgid ""
+"The feed, which shows a list of status updates on your submitted assets (and "
+"possibly more in the future)."
+msgstr "活動訊息流：列出你已提交素材的狀態更新（未來可能包含更多）。"
+
+msgid "A list of your uploaded assets."
+msgstr "你已上傳的素材清單。"
+
+msgid "The ability to submit new assets."
+msgstr "可以提交新素材。"
+
+msgid "|image6|"
+msgstr "|image6|"
+
+msgid "image6"
+msgstr "image6"
+
+msgid ""
+"You can learn how to submit assets to the Library, and what the asset "
+"submission guidelines are, in the next part of this "
+"tutorial, :ref:`doc_submitting_to_assetlib`."
+msgstr ""
+"你可以在本教學下一節 :ref:`doc_submitting_to_assetlib` 了解如何提交素材到素材"
+"庫，以及素材提交規範。"
+
+msgid "In the editor"
+msgstr "在編輯器中"
+
+msgid ""
+"The editor will display different categories of assets depending on whether "
+"you're browsing the Project Manager's **Asset Library Projects** tab or the "
+"editor's **AssetLib** tab."
+msgstr ""
+"編輯器會根據你正在瀏覽「專案管理員」的 **素材庫專案** 分頁，或是編輯器本身的 "
+"**素材庫** 分頁，顯示不同分類的素材。"
+
+msgid ""
+"The Project Manager's **Asset Library Projects** tab will only display "
+"assets that are standalone projects by themselves. This is denoted on the "
+"asset library with the *Templates*, *Demos* and *Projects* categories."
+msgstr ""
+"專案管理員的 **素材庫專案** 分頁只會顯示獨立專案類型的素材，這類素材在素材庫"
+"中以 *Templates*、*Demos* 和 *Projects* 分類。"
+
+msgid ""
+"The editor's **AssetLib** tab will only display assets that are *not* "
+"standalone projects by themselves. In other words, it will display assets "
+"from all categories except *Templates*, *Demos* and *Projects*."
+msgstr ""
+"編輯器的 **素材庫** 分頁只會顯示「非獨立專案」的素材，也就是除了 "
+"*Templates*、*Demos* 和 *Projects* 以外的所有類型。"
+
+msgid "You can also access the AssetLib directly from Godot:"
+msgstr "你也可以直接在 Godot 內開啟素材庫："
+
+msgid "|image7|"
+msgstr "|image7|"
+
+msgid "image7"
+msgstr "image7"
+
+msgid "|image14|"
+msgstr "|image14|"
+
+msgid "image14"
+msgstr "image14"
+
+msgid ""
+"Click on it, and Godot will fetch info about the assets from the AssetLib. "
+"Once it's finished, you will see a window similar to what the AssetLib "
+"website looks like, with some differences:"
+msgstr ""
+"點擊後，Godot 會從素材庫抓取素材資訊。完成後會顯示一個視窗，畫面和網站上的素"
+"材庫類似，但有些差異："
+
+msgid "|image8|"
+msgstr "|image8|"
+
+msgid "image8"
+msgstr "image8"
+
+msgid ""
+"Similarly to the web version of the AssetLib, here you can search for assets "
+"by category, name, and sort them by factors such as name or edit date."
+msgstr ""
+"和網頁版素材庫一樣，你可以依分類、名稱搜尋素材，並依名稱或編輯日期等排序。"
+
+msgid ""
+"Notably, you can only fetch assets for the current version of Godot you are "
+"running. Projects, Demos and Templates can be downloaded from the Project "
+"Manager view of the AssetLib. Addons (tools, scripts, materials etc.) can be "
+"downloaded from the in-project AssetLib and added to the current project. In "
+"addition, unlike when using the web frontend, the search results are updated "
+"in real-time (you do not have to press Search after every change to your "
+"search query for the changes to take place)."
+msgstr ""
+"值得注意的是，你只能取得與目前 Godot 版本相容的素材。專案、範例和範本可從專案"
+"管理員的素材庫分頁下載。附加元件（工具、腳本、材質等）則可從專案內的素材庫下"
+"載並直接加入目前專案。此外，和網頁版不同，這裡搜尋結果會即時更新（修改搜尋條"
+"件後不需再按搜尋）。"
+
+msgid ""
+"In the future, you will be able to choose a different AssetLib provider to "
+"fetch assets from (using the Site dropdown menu), however currently only the "
+"official `Godot website <https://godotengine.org>`_ version of the AssetLib "
+"is supported, as well as the version that may be running on your local "
+"machine's web server (the localhost option)."
+msgstr ""
+"未來你可以使用「網站」下拉選單切換不同的素材庫來源，但目前僅支援官方 `Godot "
+"網站 <https://godotengine.org>`_ 版本，以及本機端網頁伺服器（localhost 選項）"
+"上的素材庫。"
+
+msgid "When you click on an asset, you will see more information about it."
+msgstr "點選素材後會顯示更多詳細資訊。"
+
+msgid "|image9|"
+msgstr "|image9|"
+
+msgid "image9"
+msgstr "image9"
+
+msgid ""
+"If you click on the Install button, Godot will fetch an archive of the "
+"asset, and will track download progress of it at the bottom of the editor "
+"window. If the download fails, you can retry it using the Retry button."
+msgstr ""
+"如果你點選「安裝」按鈕，Godot 會下載該素材的壓縮檔，並在編輯器視窗下方顯示下"
+"載進度。若下載失敗，可按「重試」按鈕重新下載。"
+
+msgid "|image10|"
+msgstr "|image10|"
+
+msgid "image10"
+msgstr "image10"
+
+msgid ""
+"When it finishes, you can proceed to install it using the Install button. "
+"This will bring up the Package Installer window."
+msgstr ""
+"下載完成後，你可以再次點選「安裝」來進行安裝作業，這會開啟套件安裝視窗。"
+
+msgid "|image11|"
+msgstr "|image11|"
+
+msgid "image11"
+msgstr "image11"
+
+msgid ""
+"Here you can see a list of all the files that will be installed. You can "
+"tick off any of the files that you do not wish to install, and Godot will "
+"also inform you about any problems with files that it cannot install. These "
+"files will be shown in red, and hovering over them will show you a message "
+"stating why it cannot be installed."
+msgstr ""
+"你可以在這裡看到所有將被安裝的檔案清單。可以取消勾選不想安裝的檔案。Godot 也"
+"會標示無法安裝的檔案（紅色），將滑鼠移到該檔案上會顯示無法安裝的原因說明。"
+
+msgid "|image12|"
+msgstr "|image12|"
+
+msgid "image12"
+msgstr "image12"
+
+msgid ""
+"Once you are done, you can press the Install button, which will unzip all "
+"the files in the archive, and import any assets contained therein, such as "
+"images or 3D models. Once this is done, you should see a message stating "
+"that the Package installation is complete."
+msgstr ""
+"確認後，點擊「安裝」按鈕會解壓縮所有檔案，並自動匯入其中的素材（如圖片、3D 模"
+"型等）。完成後會顯示「套件安裝完成」訊息。"
+
+msgid "|image13|"
+msgstr "|image13|"
+
+msgid "image13"
+msgstr "image13"
+
+msgid ""
+"You may also use the Import button to import asset archives obtained "
+"elsewhere (such as downloading them directly from the AssetLib web "
+"frontend), which will take you through the same package installation "
+"procedure as with the assets downloaded directly via Godot that we just "
+"covered."
+msgstr ""
+"你也可以用「匯入」按鈕，將其他地方取得的素材壓縮檔（例如從素材庫網頁前端直接"
+"下載）匯入，步驟與剛才從 Godot 內下載素材相同。"

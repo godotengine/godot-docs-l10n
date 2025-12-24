@@ -1,0 +1,78 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"GD0303: The parent symbol of a type argument that must be Variant compatible "
+"was not handled"
+msgstr "GD0303：必須為 Variant 相容型別的型別參數之父符號未被正確處理"
+
+msgid "**Rule ID**"
+msgstr "**規則 ID**"
+
+msgid "GD0303"
+msgstr "GD0303"
+
+msgid "**Category**"
+msgstr "**分類**"
+
+msgid "Usage"
+msgstr "用法"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**修正是否會破壞相容性**"
+
+msgid "Not fixable"
+msgstr "無法修正"
+
+msgid "**Enabled by default**"
+msgstr "**預設啟用**"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Cause"
+msgstr "原因"
+
+msgid "This is a bug in the engine and must be reported."
+msgstr "這是引擎的錯誤，請回報此問題。"
+
+msgid "Rule description"
+msgstr "規則說明"
+
+msgid ""
+"The ``MustBeVariantAnalyzer`` has found an unhandled case in the user source "
+"code. Please, open an `issue <https://github.com/godotengine/godot/issues>`_ "
+"and attach a minimal reproduction project so it can be fixed."
+msgstr ""
+"``MustBeVariantAnalyzer`` 在你的原始碼中發現了未處理的情境。請於 `GitHub 問題"
+"追蹤 <https://github.com/godotengine/godot/issues>`_ 回報，並附上簡要的重現專"
+"案，以便修正。"
+
+msgid "How to fix violations"
+msgstr "修正方式"
+
+msgid "Violations of this rule can't be fixed."
+msgstr "此規則的違規情形無法自行修正。"
+
+msgid "When to suppress warnings"
+msgstr "什麼時候應該忽略警告"
+
+msgid ""
+"Suppressing a warning from this rule may result in unexpected errors, since "
+"the case found by the analyzer may need to be handled by the user to prevent "
+"types that are not Variant-compatible from reaching the engine. Attempting "
+"to marshal incompatible types will result in runtime errors."
+msgstr ""
+"忽略此規則的警告可能導致不可預期的錯誤，因為分析器發現的這種情況可能需要你手"
+"動處理，以避免非 Variant 相容型別被傳遞到引擎。嘗試傳遞不相容型別將會造成執行"
+"階段錯誤。"

@@ -1,0 +1,681 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GDScript style guide"
+msgstr "GDScript 風格指南"
+
+msgid ""
+"This style guide lists conventions to write elegant GDScript. The goal is to "
+"encourage writing clean, readable code and promote consistency across "
+"projects, discussions, and tutorials. Hopefully, this will also support the "
+"development of auto-formatting tools."
+msgstr ""
+"本風格指南列出了撰寫優雅 GDScript 的公約。本指南的目標是要鼓勵寫出乾淨、可閱"
+"讀的程式碼，並促進在專案、討論與教學中使用一貫的樣式。希望此一教學也能促進開"
+"發自動格式化工具。"
+
+msgid ""
+"Since GDScript is close to Python, this guide is inspired by Python's `PEP 8 "
+"<https://www.python.org/dev/peps/pep-0008/>`__ programming style guide."
+msgstr ""
+"由於 GDScript 類似 Python，本指南啟發自 Python 的 `PEP 8 <https://"
+"www.python.org/dev/peps/pep-0008/>`__ 程式碼風格指引。"
+
+msgid ""
+"Style guides aren't meant as hard rulebooks. At times, you may not be able "
+"to apply some of the guidelines below. When that happens, use your best "
+"judgment, and ask fellow developers for insights."
+msgstr ""
+"風格指南並不是一種強制規範。有時候可能會無法符合下列的某些準則，這是則需要自"
+"行判斷最佳方法，或是詢問其他開發者的意見。"
+
+msgid ""
+"In general, keeping your code consistent in your projects and within your "
+"team is more important than following this guide to a tee."
+msgstr ""
+"一般來說，在專案中或是在團隊成員間保持程式碼風格的一致性比嚴格遵守本指南還要"
+"重要。"
+
+msgid ""
+"Godot's built-in script editor uses a lot of these conventions by default. "
+"Let it help you."
+msgstr ""
+"Godot 的內建腳本編輯器預設也使用了許多本公約的規範。可以使用編輯器的協助。"
+
+msgid "Here is a complete class example based on these guidelines:"
+msgstr "下列為遵守本方針的完整類別範例："
+
+msgid "Formatting"
+msgstr "格式"
+
+msgid "Encoding and special characters"
+msgstr "編碼與特殊字元"
+
+msgid ""
+"Use line feed (**LF**) characters to break lines, not CRLF or CR. *(editor "
+"default)*"
+msgstr "使用 **LF** 換行字元來換行，而非 CRLF 或 CR。（*編輯器預設*）"
+
+msgid "Use one line feed character at the end of each file. *(editor default)*"
+msgstr "每個檔案結尾都應有一個 LF 換行字元。（*編輯器預設*）"
+
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_. *(editor default)*"
+msgstr ""
+"使用不含 `位元組順序標記 <https://zh.wikipedia.org/wiki/"
+"%E4%BD%8D%E5%85%83%E7%B5%84%E9%A0%86%E5%BA%8F%E8%A8%98%E8%99%9F>`_ 的 "
+"**UTF-8** 編碼。（*編輯器預設*）"
+
+msgid "Use **Tabs** instead of spaces for indentation. *(editor default)*"
+msgstr "縮排請使用 **Tab** 字元，勿使用空白字元。（*編輯器預設*）"
+
+msgid "Indentation"
+msgstr "縮排"
+
+msgid "Each indent level should be one greater than the block containing it."
+msgstr "縮排等級在每個區塊都應增加。"
+
+msgid "**Good**:"
+msgstr "**正確例** :"
+
+msgid "**Bad**:"
+msgstr "**錯誤例** :"
+
+msgid ""
+"Use 2 indent levels to distinguish continuation lines from regular code "
+"blocks."
+msgstr "使用兩層縮排來區分連續行與一般程式碼區塊。"
+
+msgid ""
+"Exceptions to this rule are arrays, dictionaries, and enums. Use a single "
+"indentation level to distinguish continuation lines:"
+msgstr "但本規則的例外為陣列、字典與列舉型別。使用單一縮排等級來區分連續行："
+
+msgid "Trailing comma"
+msgstr "結尾逗號"
+
+msgid ""
+"Use a trailing comma on the last line in arrays, dictionaries, and enums. "
+"This results in easier refactoring and better diffs in version control as "
+"the last line doesn't need to be modified when adding new elements."
+msgstr ""
+"在陣列、字典與列舉型別的最後一行末尾加上逗號。這樣一來在重構時就比較容易，且"
+"在版本控制系統中比較差異時也更簡單，因為新增新元素時不需要修改上一行。"
+
+msgid ""
+"Trailing commas are unnecessary in single-line lists, so don't add them in "
+"this case."
+msgstr "單行列表中不需要加上結尾逗號，所以下列例子中未加上逗號。"
+
+msgid "Blank lines"
+msgstr "空白行"
+
+msgid "Surround functions and class definitions with two blank lines:"
+msgstr "在函式與類別定義周圍加上兩個空行："
+
+msgid "Use one blank line inside functions to separate logical sections."
+msgstr "在函式中則使用單一空行來區分不同的邏輯區塊。"
+
+msgid ""
+"We use a single line between classes and function definitions in the class "
+"reference and in short code snippets in this documentation."
+msgstr ""
+"在類參考和本文件的短程式碼片段中，我們會在類和函式定義之間使用單個空行。"
+
+msgid "Line length"
+msgstr "單行長度"
+
+msgid "Keep individual lines of code under 100 characters."
+msgstr "每行程式碼請控制在 100 字元內。"
+
+msgid ""
+"If you can, try to keep lines under 80 characters. This helps to read the "
+"code on small displays and with two scripts opened side-by-side in an "
+"external text editor. For example, when looking at a differential revision."
+msgstr ""
+"若可以的話，儘量將每行控制在 80 個字元內。這樣一來在小螢幕或是在外部文字編輯"
+"器中左右並排開啟兩個腳本時比較容易閱讀。舉例來說，需要對照兩個版本的時候。"
+
+msgid "One statement per line"
+msgstr "一行一個敘述式"
+
+msgid ""
+"Avoid combining multiple statements on a single line, including conditional "
+"statements, to adhere to the GDScript style guidelines for readability."
+msgstr ""
+"為了可讀性，避免在同一行內合併多個陳述式（包含條件判斷式）。請遵守 GDScript "
+"程式風格指引，每行只寫一個陳述式。"
+
+msgid "The only exception to that rule is the ternary operator:"
+msgstr "唯一的例外是三元運算子："
+
+msgid "Format multiline statements for readability"
+msgstr "為可讀性格式化多行敘述"
+
+msgid ""
+"When you have particularly long ``if`` statements or nested ternary "
+"expressions, wrapping them over multiple lines improves readability. Since "
+"continuation lines are still part of the same expression, 2 indent levels "
+"should be used instead of one."
+msgstr ""
+"如果你的 ``if`` 敘述特別長，或者是巢狀的三元運算式時，把它們拆分成多行可以提"
+"高可讀性。因為這些連續的行仍然屬於同一個運算式，應該縮進兩級而不是一級。"
+
+msgid ""
+"GDScript allows wrapping statements using multiple lines using parentheses "
+"or backslashes. Parentheses are favored in this style guide since they make "
+"for easier refactoring. With backslashes, you have to ensure that the last "
+"line never contains a backslash at the end. With parentheses, you don't have "
+"to worry about the last line having a backslash at the end."
+msgstr ""
+"GDScript 允許使用括弧或反斜線將敘述拆成多行。本風格指南傾向於使用括弧，因為重"
+"構起來更簡單。使用反斜線的話，你必須保證最後一行的末尾沒有反斜線。而如果是括"
+"弧，你就不必擔心最後一行的反斜線問題。"
+
+msgid ""
+"When wrapping a conditional expression over multiple lines, the ``and``/"
+"``or`` keywords should be placed at the beginning of the line continuation, "
+"not at the end of the previous line."
+msgstr ""
+"把條件運算式拆分成多行時，``and`` 和 ``or`` 關鍵字應當放在下一行的開頭，而不"
+"是上一行的結尾。"
+
+msgid "Avoid unnecessary parentheses"
+msgstr "避免不必要的括號"
+
+msgid ""
+"Avoid parentheses in expressions and conditional statements. Unless "
+"necessary for order of operations or wrapping over multiple lines, they only "
+"reduce readability."
+msgstr ""
+"避免在運算式與條件陳述式中加上不必要的括號。除非是為了運算子的順序，否則加上"
+"括號只會降低可讀性。"
+
+msgid "Boolean operators"
+msgstr "布林運算子"
+
+msgid ""
+"Prefer the plain English versions of boolean operators, as they are the most "
+"accessible:"
+msgstr "為了可存取性，應優先使用英語的布林運算子："
+
+msgid "Use ``and`` instead of ``&&``."
+msgstr "使用 ``and`` 而不是 ``&&`` 。"
+
+msgid "Use ``or`` instead of ``||``."
+msgstr "使用 ``or`` 而不是 ``||`` 。"
+
+msgid "Use ``not`` instead of ``!``."
+msgstr "使用 ``not`` 而不是 ``!`` 。"
+
+msgid ""
+"You may also use parentheses around boolean operators to clear any "
+"ambiguity. This can make long expressions easier to read."
+msgstr ""
+"也可以在布林運算子周圍加上括號來避免歧義。這樣一來比較長的運算式就比較好讀。"
+
+msgid "Comment spacing"
+msgstr "註解空白"
+
+msgid ""
+"Regular comments (``#``) and documentation comments (``##``) should start "
+"with a space, but not code that you comment out. Additionally, code region "
+"comments (``#region``/``#endregion``) must follow that precise syntax, so "
+"they should not start with a space."
+msgstr ""
+"一般註解（``#``）與文件註解（``##``）應在符號後加上空格，不過被註解掉的程式碼"
+"則不需加空格。另外，程式區塊註解（``#region``/``#endregion``）必須嚴格遵循該"
+"語法，因此前面不能有空格。"
+
+msgid ""
+"Using a space for regular and documentation comments helps differentiate "
+"text comments from disabled code."
+msgstr ""
+"在一般註解與文件註解後加上空格，有助於區分純文字註解與被停用（註解掉）的程式"
+"碼。"
+
+msgid ""
+"In the script editor, to toggle commenting of the selected code, "
+"press :kbd:`Ctrl + K`. This feature adds/removes a single ``#`` sign before "
+"any code on the selected lines."
+msgstr ""
+"在腳本編輯器中，可以按下 :kbd:`Ctrl + K` 來註解或取消註解選取的程式碼。此功能"
+"會於選取行的開頭自動加上或移除一個 ``#`` 符號。"
+
+msgid ""
+"Prefer writing comments on their own line as opposed to inline comments "
+"(comments written on the same line as code). Inline comments are best used "
+"for short comments, typically a few words at most:"
+msgstr ""
+"註解傾向寫在獨立一行，而非行內註解（與程式碼寫在同一行的註解）。行內註解適合"
+"非常短的說明，通常最多幾個字："
+
+msgid "Whitespace"
+msgstr "空白字元"
+
+msgid ""
+"Always use one space around operators and after commas. Also, avoid extra "
+"spaces in dictionary references and function calls. One exception to this is "
+"for single-line dictionary declarations, where a space should be added after "
+"the opening brace and before the closing brace. This makes the dictionary "
+"easier to visually distinguish from an array, as the ``[]`` characters look "
+"close to ``{}`` with most fonts."
+msgstr ""
+"運算子前後以及逗號之後，請務必加上一個空格。也請避免在字典存取與函式呼叫時加"
+"上多餘的空格。唯一的例外是單行字典宣告，這種情況下建議在開頭與結尾的大括號"
+"（``{}``）內各加上一個空格，這樣可以讓字典與陣列（``[]``）在大多數字型下更容"
+"易分辨。"
+
+msgid "Don't use spaces to align expressions vertically:"
+msgstr "請勿用空格來讓運算式垂直對齊："
+
+msgid "Quotes"
+msgstr "引號"
+
+msgid ""
+"Use double quotes unless single quotes make it possible to escape fewer "
+"characters in a given string. See the examples below:"
+msgstr ""
+"儘量使用雙引號，除非使用單引號能在字串中跳脫比較少的字元。請參考下方範例："
+
+msgid "Numbers"
+msgstr "數字"
+
+msgid ""
+"Don't omit the leading or trailing zero in floating-point numbers. "
+"Otherwise, this makes them less readable and harder to distinguish from "
+"integers at a glance."
+msgstr ""
+"不要忽略浮點數中的前置或後置 0。以免降低數字的可讀性，並難以一眼區分與整數的"
+"不同。"
+
+msgid ""
+"Use lowercase for letters in hexadecimal numbers, as their lower height "
+"makes the number easier to read."
+msgstr "16 進位數字使用小寫字母，因為當字母比數字矮的時候比較好閱讀數字。"
+
+msgid ""
+"Take advantage of GDScript's underscores in literals to make large numbers "
+"more readable."
+msgstr "在字面值中通過 GDScript 的底線功能來讓大數更好閱讀。"
+
+msgid "Naming conventions"
+msgstr "命名慣例"
+
+msgid ""
+"These naming conventions follow the Godot Engine style. Breaking these will "
+"make your code clash with the built-in naming conventions, leading to "
+"inconsistent code. As a summary table:"
+msgstr ""
+"這些命名規範遵循 Godot Engine 樣式。若不遵循這些規則，將導致你的程式碼與內建"
+"命名慣例衝突，造成不一致。以下為摘要對照表："
+
+msgid "Type"
+msgstr "型別"
+
+msgid "Convention"
+msgstr "命名規則"
+
+msgid "Example"
+msgstr "範例"
+
+msgid "File names"
+msgstr "檔案名稱"
+
+msgid "snake_case"
+msgstr "snake_case"
+
+msgid "``yaml_parser.gd``"
+msgstr "``yaml_parser.gd``"
+
+msgid "Class names"
+msgstr "類別名稱"
+
+msgid "PascalCase"
+msgstr "PascalCase"
+
+msgid "``class_name YAMLParser``"
+msgstr "``class_name YAMLParser``"
+
+msgid "Node names"
+msgstr "節點名稱"
+
+msgid "``Camera3D``, ``Player``"
+msgstr "``Camera3D``, ``Player``"
+
+msgid "Functions"
+msgstr "函式"
+
+msgid "``func load_level():``"
+msgstr "``func load_level():``"
+
+msgid "Variables"
+msgstr "變數"
+
+msgid "``var particle_effect``"
+msgstr "``var particle_effect``"
+
+msgid "Signals"
+msgstr "訊號"
+
+msgid "``signal door_opened``"
+msgstr "``signal door_opened``"
+
+msgid "Constants"
+msgstr "常數"
+
+msgid "CONSTANT_CASE"
+msgstr "CONSTANT_CASE"
+
+msgid "``const MAX_SPEED = 200``"
+msgstr "``const MAX_SPEED = 200``"
+
+msgid "Enum names"
+msgstr "列舉名稱"
+
+msgid "``enum Element``"
+msgstr "``enum Element``"
+
+msgid "Enum members"
+msgstr "列舉成員"
+
+msgid "``{EARTH, WATER, AIR, FIRE}``"
+msgstr "``{EARTH, WATER, AIR, FIRE}``"
+
+msgid ""
+"Use snake_case for file names. For named classes, convert the PascalCase "
+"class name to snake_case:"
+msgstr ""
+"檔案名稱請使用 snake_case。有命名的類別則將其 PascalCase 類別名稱轉成 "
+"snake_case："
+
+msgid ""
+"This is consistent with how C++ files are named in Godot's source code. This "
+"also avoids case sensitivity issues that can crop up when exporting a "
+"project from Windows to other platforms."
+msgstr ""
+"這種命名方式與 Godot 原始碼中的 C++ 檔案保持一致，另外也能從 Windows 匯出到其"
+"他平台時發生區分大小寫的問題。"
+
+msgid "Classes and nodes"
+msgstr "類別與節點"
+
+msgid "Use PascalCase for class and node names:"
+msgstr "類別與節點名稱使用 PascalCase："
+
+msgid "Also use PascalCase when loading a class into a constant or a variable:"
+msgstr "當將類別載入至常數或變數時也使用 PascalCase："
+
+msgid "Functions and variables"
+msgstr "函式與變數"
+
+msgid "Use snake\\_case to name functions and variables:"
+msgstr "函式與變數名稱請使用 snake\\_case："
+
+msgid ""
+"Prepend a single underscore (\\_) to virtual methods functions the user must "
+"override, private functions, and private variables:"
+msgstr ""
+"在需要由使用者覆寫的虛擬方法、Private 函式、Private 變數前加上一個底線 "
+"(\\_)："
+
+msgid "Use the past tense to name signals:"
+msgstr "訊號使用過去式來命名："
+
+msgid "Constants and enums"
+msgstr "常數與列舉型別"
+
+msgid ""
+"Write constants with CONSTANT\\_CASE, that is to say in all caps with an "
+"underscore (\\_) to separate words:"
+msgstr "常數請使用 CONSTANT\\_CASE，也就是全部大寫且用底線（\\_）分隔單字："
+
+msgid ""
+"Use PascalCase for enum *names* and keep them singular, as they represent a "
+"type. Use CONSTANT\\_CASE for their members, as they are constants:"
+msgstr ""
+"列舉的 *名稱* 使用 PascalCase, 且以單數表示, 因為它們代表的是一種型別。其成員"
+"使用 CONSTANT\\_CASE, 因為它們是常數:"
+
+msgid ""
+"Write enums with each item on its own line. This allows adding documentation "
+"comments above each item more easily, and also makes for cleaner diffs in "
+"version control when items are added or removed."
+msgstr ""
+"列舉型別請每個項目各佔一行。這樣能更方便在每項目前方新增註解，同時在版本控制"
+"時，項目增刪時也能獲得更清楚的差異比較。"
+
+msgid "Code order"
+msgstr "程式碼順序"
+
+msgid ""
+"This section focuses on code order. For formatting, see :ref:`formatting`. "
+"For naming conventions, see :ref:`naming_conventions`."
+msgstr ""
+"本章節著重於程式碼順序。關於格式化，請參考 :ref:`formatting`。命名規則請"
+"見 :ref:`naming_conventions`。"
+
+msgid "We suggest to organize GDScript code this way:"
+msgstr "建議按照這種方法來組織 GDScript 程式碼："
+
+msgid ""
+"And put the class methods and variables in the following order depending on "
+"their access modifiers:"
+msgstr "類別中的方法與變數請依存取修飾子的不同，按照下列順序排列："
+
+msgid ""
+"We optimized the order to make it easy to read the code from top to bottom, "
+"to help developers reading the code for the first time understand how it "
+"works, and to avoid errors linked to the order of variable declarations."
+msgstr ""
+"我們最佳化了順序，來讓程式碼從上到下閱讀時比較容易，也幫助首次閱讀程式碼的開"
+"發者能瞭解程式如何運作的，並避免因變數宣告順序導致的錯誤。"
+
+msgid "This code order follows four rules of thumb:"
+msgstr "這個程式碼順序遵守了四個經驗法則："
+
+msgid "Properties and signals come first, followed by methods."
+msgstr "先寫屬性與訊號，然後寫方法。"
+
+msgid "Public comes before private."
+msgstr "先寫 Public 再寫 Private。"
+
+msgid "Virtual callbacks come before the class's interface."
+msgstr "先寫虛擬回呼函式，再寫類別介面。"
+
+msgid ""
+"The object's construction and initialization functions, ``_init`` and "
+"``_ready``, come before functions that modify the object at runtime."
+msgstr ""
+"先寫物件的結構與初始化函式 ``_init`` 與 ``_ready`` ，再寫會在執行環境修改物件"
+"的函式。"
+
+msgid "Class declaration"
+msgstr "類別宣告"
+
+msgid ""
+"If the code is meant to run in the editor, place the ``@tool`` annotation on "
+"the first line of the script."
+msgstr "若程式碼是要在編輯器中執行的，請在腳本的第一行加上 ``@tool`` 關鍵字。"
+
+msgid ""
+"Follow with the optional ``@icon`` then the ``class_name`` if necessary. You "
+"can turn a GDScript file into a global type in your project using "
+"``class_name``. For more information, "
+"see :ref:`doc_gdscript_basics_class_name`. If the class is meant to be "
+"an :ref:`abstract class <doc_gdscript_basics_abstract_class>`, add "
+"``@abstract`` *before* the ``class_name`` keyword."
+msgstr ""
+"接著 (如有需要) 加入可選的 ``@icon`` , 然後是 ``class_name`` 。你可以使用 "
+"``class_name`` 將 GDScript 檔案註冊為專案中的全域型別。詳情請參"
+"閱 :ref:`doc_gdscript_basics_class_name` 。若此類別是要作為 :ref:`抽象類別 "
+"<doc_gdscript_basics_abstract_class>` , 請在 ``class_name`` 關鍵字 *之前* 加"
+"上 ``@abstract``."
+
+msgid "Then, add the ``extends`` keyword if the class extends a built-in type."
+msgstr "接著，若類別繼承內建型別，加上 ``extends`` 關鍵字。"
+
+msgid ""
+"Following that, you should have the class's optional :ref:`documentation "
+"comments <doc_gdscript_documentation_comments>`. You can use that to explain "
+"the role of your class to your teammates, how it works, and how other "
+"developers should use it, for example."
+msgstr ""
+"接著，您應該要有該類別的可選 :ref:`文件註解 "
+"<doc_gdscript_documentation_comments>`。您可以使用它來解釋您的類別對隊友的作"
+"用、它的運作方式，以及其他開發人員應該如何使用它等等。"
+
+msgid "For inner classes, use single-line declarations:"
+msgstr "對於內部類別，請使用單行宣告："
+
+msgid "Signals and properties"
+msgstr "訊號與屬性"
+
+msgid ""
+"Write signal declarations, followed by properties, that is to say, member "
+"variables, after the docstring."
+msgstr "接著是訊號宣告，再來是屬性，也就是說成員變數要寫在 DocString 之後。"
+
+msgid ""
+"Enums should come after signals, as you can use them as export hints for "
+"other properties."
+msgstr "列舉型別應該寫在訊號之後，因為可以使用列舉性來匯出其他屬性的提示。"
+
+msgid ""
+"Then, write constants, exported variables, public, private, and onready "
+"variables, in that order."
+msgstr "接著按照順序是常數、匯出變數、Public、Private 以及 Onready 變數。"
+
+msgid ""
+"GDScript evaluates ``@onready`` variables right before the ``_ready`` "
+"callback. You can use that to cache node dependencies, that is to say, to "
+"get child nodes in the scene that your class relies on. This is what the "
+"example above shows."
+msgstr ""
+"GDScript 會在 ``_ready`` 回呼執行前初始化 ``@onready`` 變數。這可用於快取節點"
+"相依性，也就是取得類別所需的場景子節點。上方範例即為示範。"
+
+msgid "Member variables"
+msgstr "成員變數"
+
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+"如果某個變數只會在一個方法內使用，不要把它宣告成成員變數。這會讓程式碼難以追"
+"蹤。請直接在方法內宣告為區域變數。"
+
+msgid "Local variables"
+msgstr "區域變數"
+
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+"區域變數請盡量在首次使用的附近宣告。這樣能讓程式碼更易閱讀，也不用頻繁捲動去"
+"尋找變數的宣告位置。"
+
+msgid "Methods and static functions"
+msgstr "方法與靜態函式"
+
+msgid "After the class's properties come the methods."
+msgstr "方法寫在類別的屬性後。"
+
+msgid ""
+"Start with the ``_init()`` callback method, that the engine will call upon "
+"creating the object in memory. Follow with the ``_ready()`` callback, that "
+"Godot calls when it adds a node to the scene tree."
+msgstr ""
+"先寫 ``_init()`` 回呼函式，因為 Godot 會在記憶體中建立物件時呼叫 _init()。接"
+"著是 ``_ready()`` 回呼函式，Godot 會在節點被新增至場景樹時呼叫 _ready()。"
+
+msgid ""
+"These functions should come first because they show how the object is "
+"initialized."
+msgstr "應該先寫這幾個函式，因為這個順序是物件初始化的順序。"
+
+msgid ""
+"Other built-in virtual callbacks, like ``_unhandled_input()`` and "
+"``_physics_process``, should come next. These control the object's main loop "
+"and interactions with the game engine."
+msgstr ""
+"其他內建的虛擬回呼函式，如 ``_unhandled_input()`` 與 ``_physics_process`` 則"
+"應該接在後面。這幾個函式控制了物件的主循環以及與遊戲引擎的互動方法。"
+
+msgid ""
+"The rest of the class's interface, public and private methods, come after "
+"that, in that order."
+msgstr "剩下的則依序為類別介面、Public 與 Private 方法。"
+
+msgid "Static typing"
+msgstr "靜態型別"
+
+msgid ""
+"GDScript supports :ref:`optional static typing<doc_gdscript_static_typing>`."
+msgstr "GDScript 支援 :ref:`可選靜態型別 <doc_gdscript_static_typing>`。"
+
+msgid "Declared types"
+msgstr "宣告型別"
+
+msgid "To declare a variable's type, use ``<variable>: <type>``:"
+msgstr "若要宣告變數的型別，請使用 ``<變數>: <型別>`` ："
+
+msgid "To declare the return type of a function, use ``-> <type>``:"
+msgstr "若要宣告函式的回傳型別，請使用 ``-> <型別>`` ："
+
+msgid "Inferred types"
+msgstr "推斷型別"
+
+msgid ""
+"In most cases, you can let the compiler infer the type using ``:=``. Prefer "
+"``:=`` when the type is written on the same line as the assignment, "
+"otherwise prefer writing the type explicitly."
+msgstr ""
+"在多數情況下，你可以使用 ``:=`` 讓編譯器推斷型別。當型別與指定值寫在同一行"
+"時，優先使用 ``:=``；否則請優先明確寫出型別。"
+
+msgid ""
+"Include the type hint when the type is ambiguous, and omit the type hint "
+"when it's redundant."
+msgstr "當型別不明確時包含型別提示，當型別提示多餘時省略型別提示。"
+
+msgid ""
+"In some cases, the type must be stated explicitly, otherwise the behavior "
+"will not be as expected because the compiler will only be able to use the "
+"function's return type. For example, ``get_node()`` cannot infer a type "
+"unless the scene or file of the node is loaded in memory. In this case, you "
+"should set the type explicitly."
+msgstr ""
+"然而，有時候會因為本文不足而讓編譯器無法得知函式的回傳型別。舉例來說，除非已"
+"經將場景或節點檔案載入至記憶體，否則 ``get_node()`` 無法進行型別推斷。這時"
+"候，就需要明確設定型別。"
+
+msgid ""
+"Alternatively, you can use the ``as`` keyword to cast the return type, and "
+"that type will be used to infer the type of the var."
+msgstr ""
+"或者，你也可以使用 ``as`` 關鍵字來轉換返回型別，這個型別會被用於推導變數的型"
+"別。"
+
+msgid ""
+"This option is considered more :ref:`type-"
+"safe<doc_gdscript_static_typing_safe_lines>` than type hints, but also less "
+"null-safe as it silently casts the variable to ``null`` in case of a type "
+"mismatch at runtime, without an error/warning."
+msgstr ""
+"與型別提示相比，這個選項被視為更具 :ref:`型別安全性 "
+"<doc_gdscript_static_typing_safe_lines>`，但在空值安全性上較差，因為在執行階"
+"段若型別不相符，會在沒有錯誤或警告的情況下，將變數悄悄轉為 ``null``。"

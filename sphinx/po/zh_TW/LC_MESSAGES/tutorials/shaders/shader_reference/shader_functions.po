@@ -1,0 +1,4612 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Built-in functions"
+msgstr "內建函式"
+
+msgid ""
+"Godot supports a large number of built-in functions, conforming roughly to "
+"the GLSL ES 3.0 specification."
+msgstr "Godot 支援大量內建函式，大致遵循 GLSL ES 3.0 規範。"
+
+msgid ""
+"The following type aliases only used in documentation to reduce repetitive "
+"function declarations. They can each refer to any of several actual types."
+msgstr ""
+"下列型別別名僅用於文件中，減少重複的函式宣告。每個別名可對應多種實際型別。"
+
+msgid "alias"
+msgstr "別名"
+
+msgid "actual types"
+msgstr "實際類型"
+
+msgid "glsl documentation alias"
+msgstr "glsl 文件別名"
+
+msgid "vec_type"
+msgstr "vec_type"
+
+msgid "float, vec2, vec3, or vec4"
+msgstr "float、vec2、vec3 或 vec4"
+
+msgid "genType"
+msgstr "genType"
+
+msgid "vec_int_type"
+msgstr "vec_int_type"
+
+msgid "int, ivec2, ivec3, or ivec4"
+msgstr "int、ivec2、ivec3 或 ivec4"
+
+msgid "genIType"
+msgstr "genIType"
+
+msgid "vec_uint_type"
+msgstr "vec_uint_type"
+
+msgid "uint, uvec2, uvec3, or uvec4"
+msgstr "uint、uvec2、uvec3 或 uvec4"
+
+msgid "genUType"
+msgstr "genUType"
+
+msgid "vec_bool_type"
+msgstr "vec_bool_type"
+
+msgid "bool, bvec2, bvec3, or bvec4"
+msgstr "bool、bvec2、bvec3 或 bvec4"
+
+msgid "genBType"
+msgstr "genBType"
+
+msgid "mat_type"
+msgstr "mat_type"
+
+msgid "mat2, mat3, or mat4"
+msgstr "mat2、mat3 或 mat4"
+
+msgid "mat"
+msgstr "mat"
+
+msgid "gvec4_type"
+msgstr "gvec4_type"
+
+msgid "vec4, ivec4, or uvec4"
+msgstr "vec4、ivec4 或 uvec4"
+
+msgid "gvec4"
+msgstr "gvec4"
+
+msgid "gsampler2D"
+msgstr "gsampler2D"
+
+msgid "sampler2D, isampler2D, or uSampler2D"
+msgstr "sampler2D、isampler2D 或 uSampler2D"
+
+msgid "gsampler2DArray"
+msgstr "gsampler2DArray"
+
+msgid "sampler2DArray, isampler2DArray, or uSampler2DArray"
+msgstr "sampler2DArray、isampler2DArray 或 uSampler2DArray"
+
+msgid "gsampler3D"
+msgstr "gsampler3D"
+
+msgid "sampler3D, isampler3D, or uSampler3D"
+msgstr "sampler3D、isampler3D 或 uSampler3D"
+
+msgid ""
+"If any of these are specified for multiple parameters, they must all be the "
+"same type unless otherwise noted."
+msgstr "若多個參數指定這些型別時，除非特別說明，必須全部為相同型別。"
+
+msgid ""
+"Many functions that accept one or more vectors or matrices perform the "
+"described function on each component of the vector/matrix. Some examples:"
+msgstr "許多接受一個或多個向量或矩陣的函式，會對每個分量進行該操作。例如："
+
+msgid "Operation"
+msgstr "運算"
+
+msgid "Equivalent Scalar Operation"
+msgstr "等價標量運算"
+
+msgid "``sqrt(vec2(4, 64))``"
+msgstr "``sqrt(vec2(4, 64))``"
+
+msgid "``vec2(sqrt(4), sqrt(64))``"
+msgstr "``vec2(sqrt(4), sqrt(64))``"
+
+msgid "``min(vec2(3, 4), 1)``"
+msgstr "``min(vec2(3, 4), 1)``"
+
+msgid "``vec2(min(3, 1), min(4, 1))``"
+msgstr "``vec2(min(3, 1), min(4, 1))``"
+
+msgid "``min(vec3(1, 2, 3),vec3(5, 1, 3))``"
+msgstr "``min(vec3(1, 2, 3),vec3(5, 1, 3))``"
+
+msgid "``vec3(min(1, 5), min(2, 1), min(3, 3))``"
+msgstr "``vec3(min(1, 5), min(2, 1), min(3, 3))``"
+
+msgid "``pow(vec3(3, 8, 5 ), 2)``"
+msgstr "``pow(vec3(3, 8, 5 ), 2)``"
+
+msgid "``vec3(pow(3, 2), pow(8, 2), pow(5, 2))``"
+msgstr "``vec3(pow(3, 2), pow(8, 2), pow(5, 2))``"
+
+msgid "``pow(vec3(3, 8, 5), vec3(1, 2, 4))``"
+msgstr "``pow(vec3(3, 8, 5), vec3(1, 2, 4))``"
+
+msgid "``vec3(pow(3, 1), pow(8, 2), pow(5, 4))``"
+msgstr "``vec3(pow(3, 1), pow(8, 2), pow(5, 4))``"
+
+msgid ""
+"The `GLSL Language Specification <http://www.opengl.org/registry/doc/"
+"GLSLangSpec.4.30.6.pdf>`_ says under section 5.10 Vector and Matrix "
+"Operations:"
+msgstr ""
+"依據 `GLSL 語言規範 <http://www.opengl.org/registry/doc/"
+"GLSLangSpec.4.30.6.pdf>`_ 第 5.10 節（向量與矩陣運算）說明："
+
+msgid ""
+"With a few exceptions, operations are component-wise. Usually, when an "
+"operator operates on a vector or matrix, it is operating independently on "
+"each component of the vector or matrix, in a component-wise fashion. [...] "
+"The exceptions are matrix multiplied by vector, vector multiplied by matrix, "
+"and matrix multiplied by matrix. These do not operate component-wise, but "
+"rather perform the correct linear algebraic multiply."
+msgstr ""
+"除少數例外，運算皆以分量為單位執行。通常，當運算子用於向量或矩陣時，會對每個"
+"分量分別運算。[...] 例外情況為：矩陣乘以向量、向量乘以矩陣、及矩陣乘以矩陣。"
+"這些情況不按分量運算，而是進行正確的線性代數乘法。"
+
+msgid ""
+"These function descriptions are adapted and modified from `official OpenGL "
+"documentation <https://registry.khronos.org/OpenGL-Refpages/gl4/>`__ "
+"originally published by Khronos Group under the `Open Publication License "
+"<https://opencontent.org/openpub>`__. Each function description links to the "
+"corresponding official OpenGL documentation. Modification history for this "
+"page can be found on `GitHub <https://github.com/godotengine/godot-docs/blob/"
+"master/tutorials/shaders/shader_reference/shader_functions.rst>`__."
+msgstr ""
+"本頁函式說明改編自 Khronos Group 以 `Open Publication License <https://"
+"opencontent.org/openpub>`__ 發布之 `OpenGL 官方文件 <https://"
+"registry.khronos.org/OpenGL-Refpages/gl4/>`__，每個函式均連結至其官方說明。此"
+"頁的修改紀錄可於 `GitHub <https://github.com/godotengine/godot-docs/blob/"
+"master/tutorials/shaders/shader_reference/shader_functions.rst>`__ 查閱。"
+
+msgid "Trigonometric functions"
+msgstr "三角函式"
+
+msgid "Return Type"
+msgstr "回傳型別"
+
+msgid "Function"
+msgstr "函式"
+
+msgid "Description / Return value"
+msgstr "描述／回傳值"
+
+msgid "|vec_type|"
+msgstr "|vec_type|"
+
+msgid ":ref:`radians<shader_func_radians>`\\ (\\ |vec_type| degrees)"
+msgstr ":ref:`radians<shader_func_radians>`\\ (\\ |vec_type| degrees)"
+
+msgid "Convert degrees to radians."
+msgstr "將角度轉換為弧度。"
+
+msgid ":ref:`degrees<shader_func_degrees>`\\ (\\ |vec_type| radians)"
+msgstr ":ref:`degrees<shader_func_degrees>`\\ (\\ |vec_type| radians)"
+
+msgid "Convert radians to degrees."
+msgstr "將弧度轉換為角度。"
+
+msgid ":ref:`sin<shader_func_sin>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sin<shader_func_sin>`\\ (\\ |vec_type| x)"
+
+msgid "Sine."
+msgstr "正弦。"
+
+msgid ":ref:`cos<shader_func_cos>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`cos<shader_func_cos>`\\ (\\ |vec_type| x)"
+
+msgid "Cosine."
+msgstr "餘弦。"
+
+msgid ":ref:`tan<shader_func_tan>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`tan<shader_func_tan>`\\ (\\ |vec_type| x)"
+
+msgid "Tangent."
+msgstr "正切。"
+
+msgid ":ref:`asin<shader_func_asin>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`asin<shader_func_asin>`\\ (\\ |vec_type| x)"
+
+msgid "Arc sine."
+msgstr "反正弦。"
+
+msgid ":ref:`acos<shader_func_acos>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`acos<shader_func_acos>`\\ (\\ |vec_type| x)"
+
+msgid "Arc cosine."
+msgstr "反餘弦。"
+
+msgid ":ref:`atan<shader_func_atan>`\\ (\\ |vec_type| y_over_x)"
+msgstr ":ref:`atan<shader_func_atan>`\\ (\\ |vec_type| y_over_x)"
+
+msgid ":ref:`atan<shader_func_atan2>`\\ (\\ |vec_type| y, |vec_type| x)"
+msgstr ":ref:`atan<shader_func_atan2>`\\ (\\ |vec_type| y, |vec_type| x)"
+
+msgid "Arc tangent."
+msgstr "反正切。"
+
+msgid ":ref:`sinh<shader_func_sinh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sinh<shader_func_sinh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic sine."
+msgstr "雙曲正弦。"
+
+msgid ":ref:`cosh<shader_func_cosh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`cosh<shader_func_cosh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic cosine."
+msgstr "雙曲餘弦。"
+
+msgid ":ref:`tanh<shader_func_tanh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`tanh<shader_func_tanh>`\\ (\\ |vec_type| x)"
+
+msgid "Hyperbolic tangent."
+msgstr "雙曲正切。"
+
+msgid ":ref:`asinh<shader_func_asinh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`asinh<shader_func_asinh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic sine."
+msgstr "反雙曲正弦。"
+
+msgid ":ref:`acosh<shader_func_acosh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`acosh<shader_func_acosh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic cosine."
+msgstr "反雙曲餘弦。"
+
+msgid ":ref:`atanh<shader_func_atanh>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`atanh<shader_func_atanh>`\\ (\\ |vec_type| x)"
+
+msgid "Arc hyperbolic tangent."
+msgstr "反雙曲正切。"
+
+msgid "Trigonometric function descriptions"
+msgstr "三角函式說明"
+
+msgid ""
+"|vec_type| **radians**\\ (\\ |vec_type| "
+"degrees) :ref:`🔗<shader_func_radians>`"
+msgstr ""
+"|vec_type| **radians**\\ (\\ |vec_type| "
+"degrees) :ref:`🔗<shader_func_radians>`"
+
+msgid "|componentwise|"
+msgstr "分量逐一運算"
+
+msgid ""
+"Converts a quantity specified in degrees into radians, with the formula "
+"``degrees * (PI / 180)``."
+msgstr "將以角度表示的數值轉換為弧度，公式為 ``degrees * (PI / 180)``。"
+
+msgid "param degrees"
+msgstr "參數 degrees"
+
+msgid "The quantity, in degrees, to be converted to radians."
+msgstr "要轉換為弧度的角度數值。"
+
+msgid "return"
+msgstr "return"
+
+msgid "The input ``degrees`` converted to radians."
+msgstr "輸入的 ``degrees`` 轉換為弧度。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/radians.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/radians.xhtml"
+
+msgid ""
+"|vec_type| **degrees**\\ (\\ |vec_type| "
+"radians) :ref:`🔗<shader_func_degrees>`"
+msgstr ""
+"|vec_type| **degrees**\\ (\\ |vec_type| "
+"radians) :ref:`🔗<shader_func_degrees>`"
+
+msgid ""
+"Converts a quantity specified in radians into degrees, with the formula "
+"``radians * (180 / PI)``"
+msgstr "將以弧度表示的數值轉換為角度，公式為 ``radians * (180 / PI)``"
+
+msgid "param radians"
+msgstr "參數 radians"
+
+msgid "The quantity, in radians, to be converted to degrees."
+msgstr "要轉換為角度的弧度數值。"
+
+msgid "The input ``radians`` converted to degrees."
+msgstr "輸入的 ``radians`` 轉換為角度。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/degrees.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/degrees.xhtml"
+
+msgid "|vec_type| **sin**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_sin>`"
+msgstr "|vec_type| **sin**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_sin>`"
+
+msgid "Returns the trigonometric sine of ``angle``."
+msgstr "回傳 ``angle`` 的三角正弦值。"
+
+msgid "param angle"
+msgstr "參數 angle"
+
+msgid "The quantity, in radians, of which to return the sine."
+msgstr "以弧度表示，要計算正弦值的數值。"
+
+msgid "The sine of ``angle``."
+msgstr "``angle`` 的正弦值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sin.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sin.xhtml"
+
+msgid "|vec_type| **cos**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_cos>`"
+msgstr "|vec_type| **cos**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_cos>`"
+
+msgid "Returns the trigonometric cosine of ``angle``."
+msgstr "回傳 ``angle`` 的三角餘弦值。"
+
+msgid "The quantity, in radians, of which to return the cosine."
+msgstr "以弧度表示，要計算餘弦值的數值。"
+
+msgid "The cosine of ``angle``."
+msgstr "``angle`` 的餘弦值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cos.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cos.xhtml"
+
+msgid "|vec_type| **tan**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_tan>`"
+msgstr "|vec_type| **tan**\\ (\\ |vec_type| angle) :ref:`🔗<shader_func_tan>`"
+
+msgid "Returns the trigonometric tangent of ``angle``."
+msgstr "回傳 ``angle`` 的三角正切值。"
+
+msgid "The quantity, in radians, of which to return the tangent."
+msgstr "以弧度表示，要計算正切值的數值。"
+
+msgid "The tangent of ``angle``."
+msgstr "``angle`` 的正切值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tan.xhtml"
+
+msgid "|vec_type| **asin**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asin>`"
+msgstr "|vec_type| **asin**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asin>`"
+
+msgid ""
+"Arc sine, or inverse sine. Calculates the angle whose sine is ``x`` and is "
+"in the range ``[-PI/2, PI/2]``. The result is undefined if ``x < -1`` or ``x "
+"> 1``."
+msgstr ""
+"反正弦（arcsin）。計算正弦值為 ``x`` 的角度，結果範圍為 ``[-PI/2, PI/2]``。"
+"若 ``x < -1`` 或 ``x > 1``，結果未定義。"
+
+msgid "param x"
+msgstr "參數 x"
+
+msgid "The value whose arc sine to return."
+msgstr "要計算反正弦的值。"
+
+msgid "The angle whose trigonometric sine is ``x``."
+msgstr "其三角正弦為 ``x`` 的角度。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asin.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asin.xhtml"
+
+msgid "|vec_type| **acos**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acos>`"
+msgstr "|vec_type| **acos**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acos>`"
+
+msgid ""
+"Arc cosine, or inverse cosine. Calculates the angle whose cosine is ``x`` "
+"and is in the range ``[0, PI]``."
+msgstr "反餘弦（arccos）。計算餘弦值為 ``x`` 的角度，結果範圍為 ``[0, PI]``。"
+
+msgid "The result is undefined if ``x < -1`` or ``x > 1``."
+msgstr "若 ``x < -1`` 或 ``x > 1``，則結果未定義。"
+
+msgid "The value whose arc cosine to return."
+msgstr "要計算反餘弦的值。"
+
+msgid "The angle whose trigonometric cosine is ``x``."
+msgstr "其三角餘弦為 ``x`` 的角度。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acos.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acos.xhtml"
+
+msgid ""
+"|vec_type| **atan**\\ (\\ |vec_type| y_over_x) :ref:`🔗<shader_func_atan>`"
+msgstr ""
+"|vec_type| **atan**\\ (\\ |vec_type| y_over_x) :ref:`🔗<shader_func_atan>`"
+
+msgid "Calculates the arc tangent given a tangent value of ``y/x``."
+msgstr "根據 ``y/x`` 的值計算反正切（arctan）。"
+
+msgid ""
+"Because of the sign ambiguity, the function cannot determine with certainty "
+"in which quadrant the angle falls only by its tangent value. If you need to "
+"know the quadrant, use :ref:`atan(vec_type y, vec_type "
+"x)<shader_func_atan2>`."
+msgstr ""
+"由於正切值有正負號的二義性，僅靠正切值無法判斷角度所屬象限。若需知道象限，請"
+"使用 :ref:`atan(vec_type y, vec_type x)<shader_func_atan2>`。"
+
+msgid "param y_over_x"
+msgstr "參數 y_over_x"
+
+msgid "The fraction whose arc tangent to return."
+msgstr "要計算反正切的分數值。"
+
+msgid ""
+"The trigonometric arc-tangent of ``y_over_x`` and is in the range ``[-PI/2, "
+"PI/2]``."
+msgstr "``y_over_x`` 的三角反正切值，範圍為 ``[-PI/2, PI/2]``。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atan.xhtml"
+
+msgid ""
+"|vec_type| **atan**\\ (\\ |vec_type| y, |vec_type| "
+"x) :ref:`🔗<shader_func_atan2>`"
+msgstr ""
+"|vec_type| **atan**\\ (\\ |vec_type| y, |vec_type| "
+"x) :ref:`🔗<shader_func_atan2>`"
+
+msgid ""
+"Calculates the arc tangent given a numerator and denominator. The signs of "
+"``y`` and ``x`` are used to determine the quadrant that the angle lies in. "
+"The result is undefined if ``x == 0``."
+msgstr ""
+"給定分子與分母計算反正切值。會根據 ``y`` 與 ``x`` 的正負來判斷角度所在象限。"
+"若 ``x == 0``，結果未定義。"
+
+msgid ""
+"Equivalent to :ref:`atan2() <class_@GlobalScope_method_atan2>` in GDScript."
+msgstr ""
+"等同於 GDScript 中的 :ref:`atan2() <class_@GlobalScope_method_atan2>`。"
+
+msgid "param y"
+msgstr "參數 y"
+
+msgid "The numerator of the fraction whose arc tangent to return."
+msgstr "分數的分子（將計算反正切的數值）。"
+
+msgid "The denominator of the fraction whose arc tangent to return."
+msgstr "分數的分母（將計算反正切的數值）。"
+
+msgid ""
+"The trigonometric arc tangent of ``y/x`` and is in the range ``[-PI, PI]``."
+msgstr "``y/x`` 的反正切值，範圍為 ``[-PI, PI]``。"
+
+msgid "|vec_type| **sinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sinh>`"
+msgstr "|vec_type| **sinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sinh>`"
+
+msgid "Calculates the hyperbolic sine using ``(e^x - e^-x)/2``."
+msgstr "使用 ``(e^x - e^-x)/2`` 計算雙曲正弦值（sinh）。"
+
+msgid "The value whose hyperbolic sine to return."
+msgstr "要計算雙曲正弦的值。"
+
+msgid "The hyperbolic sine of ``x``."
+msgstr "``x`` 的雙曲正弦值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sinh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sinh.xhtml"
+
+msgid "|vec_type| **cosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_cosh>`"
+msgstr "|vec_type| **cosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_cosh>`"
+
+msgid "Calculates the hyperbolic cosine using ``(e^x + e^-x)/2``."
+msgstr "使用 ``(e^x + e^-x)/2`` 計算雙曲餘弦值（cosh）。"
+
+msgid "The value whose hyperbolic cosine to return."
+msgstr "要計算雙曲餘弦的值。"
+
+msgid "The hyperbolic cosine of ``x``."
+msgstr "``x`` 的雙曲餘弦值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cosh.xhtml"
+
+msgid "|vec_type| **tanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_tanh>`"
+msgstr "|vec_type| **tanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_tanh>`"
+
+msgid "Calculates the hyperbolic tangent using ``sinh(x)/cosh(x)``."
+msgstr "使用 ``sinh(x)/cosh(x)`` 計算雙曲正切值（tanh）。"
+
+msgid "The value whose hyperbolic tangent to return."
+msgstr "要計算雙曲正切的值。"
+
+msgid "The hyperbolic tangent of ``x``."
+msgstr "``x`` 的雙曲正切值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/tanh.xhtml"
+
+msgid "|vec_type| **asinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asinh>`"
+msgstr "|vec_type| **asinh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_asinh>`"
+
+msgid ""
+"Calculates the arc hyperbolic sine of ``x``, or the inverse of ``sinh``."
+msgstr "計算 ``x`` 的反雙曲正弦值（asinh），即 ``sinh`` 的反函數。"
+
+msgid "The value whose arc hyperbolic sine to return."
+msgstr "要計算反雙曲正弦的值。"
+
+msgid "The arc hyperbolic sine of ``x``."
+msgstr "``x`` 的反雙曲正弦值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/asinh.xhtml"
+
+msgid "|vec_type| **acosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acosh>`"
+msgstr "|vec_type| **acosh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_acosh>`"
+
+msgid ""
+"Calculates the arc hyperbolic cosine of ``x``, or the non-negative inverse "
+"of ``cosh``. The result is undefined if ``x < 1``."
+msgstr ""
+"計算 ``x`` 的反雙曲餘弦值（acosh），即 ``cosh`` 的非負反函數。若 ``x < 1``，"
+"結果未定義。"
+
+msgid "The value whose arc hyperbolic cosine to return."
+msgstr "要計算反雙曲餘弦的值。"
+
+msgid "The arc hyperbolic cosine of ``x``."
+msgstr "``x`` 的反雙曲餘弦值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/acosh.xhtml"
+
+msgid "|vec_type| **atanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_atanh>`"
+msgstr "|vec_type| **atanh**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_atanh>`"
+
+msgid ""
+"Calculates the arc hyperbolic tangent of ``x``, or the inverse of ``tanh``. "
+"The result is undefined if ``abs(x) > 1``."
+msgstr ""
+"計算 ``x`` 的反雙曲正切值（atanh），即 ``tanh`` 的反函數。若 ``abs(x) > 1``，"
+"結果未定義。"
+
+msgid "The value whose arc hyperbolic tangent to return."
+msgstr "要計算反雙曲正切的值。"
+
+msgid "The arc hyperbolic tangent of ``x``."
+msgstr "``x`` 的反雙曲正切值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/atanh.xhtml"
+
+msgid "Exponential and math functions"
+msgstr "指數與數學函式"
+
+msgid ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`pow<shader_func_pow>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Power (undefined if ``x < 0`` or if ``x == 0`` and ``y <= 0``)."
+msgstr "次方運算（若 ``x < 0`` 或 ``x == 0`` 且 ``y <= 0`` 時未定義）。"
+
+msgid ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`exp<shader_func_exp>`\\ (\\ |vec_type| x)"
+
+msgid "Base-e exponential."
+msgstr "以 e 為底的指數。"
+
+msgid ":ref:`exp2<shader_func_exp2>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`exp2<shader_func_exp2>`\\ (\\ |vec_type| x)"
+
+msgid "Base-2 exponential."
+msgstr "以 2 為底的指數。"
+
+msgid ":ref:`log<shader_func_log>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`log<shader_func_log>`\\ (\\ |vec_type| x)"
+
+msgid "Natural (base-e) logarithm."
+msgstr "自然對數（以 e 為底）。"
+
+msgid ":ref:`log2<shader_func_log2>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`log2<shader_func_log2>`\\ (\\ |vec_type| x)"
+
+msgid "Base-2 logarithm."
+msgstr "以 2 為底的對數。"
+
+msgid ":ref:`sqrt<shader_func_sqrt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sqrt<shader_func_sqrt>`\\ (\\ |vec_type| x)"
+
+msgid "Square root."
+msgstr "平方根。"
+
+msgid ":ref:`inversesqrt<shader_func_inversesqrt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`inversesqrt<shader_func_inversesqrt>`\\ (\\ |vec_type| x)"
+
+msgid "Inverse square root."
+msgstr "反平方根。"
+
+msgid "|vec_int_type|"
+msgstr "|vec_int_type|"
+
+msgid ":ref:`abs<shader_func_abs>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`abs<shader_func_abs>`\\ (\\ |vec_type| x)"
+
+msgid ":ref:`abs<shader_func_abs>`\\ (\\ |vec_int_type| x)"
+msgstr ":ref:`abs<shader_func_abs>`\\ (\\ |vec_int_type| x)"
+
+msgid "Absolute value (returns positive value if negative)."
+msgstr "絕對值（若為負則傳回正值）。"
+
+msgid ":ref:`sign<shader_func_sign>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`sign<shader_func_sign>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``1.0`` if positive, ``-1.0`` if negative, ``0.0`` otherwise."
+msgstr "若為正回傳 ``1.0``，若為負回傳 ``-1.0``，否則回傳 ``0.0``。"
+
+msgid ":ref:`sign<shader_func_sign>`\\ (\\ |vec_int_type| x)"
+msgstr ":ref:`sign<shader_func_sign>`\\ (\\ |vec_int_type| x)"
+
+msgid "Returns ``1`` if positive, ``-1`` if negative, ``0`` otherwise."
+msgstr "若為正回傳 ``1``，若為負回傳 ``-1``，否則回傳 ``0``。"
+
+msgid ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`floor<shader_func_floor>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the integer below."
+msgstr "無條件捨去至較小整數。"
+
+msgid ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`round<shader_func_round>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the nearest integer."
+msgstr "四捨五入至最接近整數。"
+
+msgid ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`roundEven<shader_func_roundEven>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the nearest even integer."
+msgstr "四捨五入至最接近的偶數整數。"
+
+msgid ":ref:`trunc<shader_func_trunc>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`trunc<shader_func_trunc>`\\ (\\ |vec_type| x)"
+
+msgid "Truncation."
+msgstr "截斷。"
+
+msgid ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`ceil<shader_func_ceil>`\\ (\\ |vec_type| x)"
+
+msgid "Rounds to the integer above."
+msgstr "無條件進位至較大整數。"
+
+msgid ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`fract<shader_func_fract>`\\ (\\ |vec_type| x)"
+
+msgid "Fractional (returns ``x - floor(x)``)."
+msgstr "小數（返回“x - Floor(x)”）。"
+
+msgid ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, float y)"
+msgstr ":ref:`mod<shader_func_mod>`\\ (\\ |vec_type| x, float y)"
+
+msgid "Modulo (division remainder)."
+msgstr "取餘數（模運算）。"
+
+msgid ":ref:`modf<shader_func_modf>`\\ (\\ |vec_type| x, out |vec_type| i)"
+msgstr ":ref:`modf<shader_func_modf>`\\ (\\ |vec_type| x, out |vec_type| i)"
+
+msgid "Fractional of ``x``, with ``i`` as integer part."
+msgstr "``x`` 的小數部分，``i`` 為整數部分。"
+
+msgid "|vec_uint_type|"
+msgstr "|vec_uint_type|"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, float b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_type| a, float b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, int b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_int_type| a, int b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+msgstr ""
+":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+
+msgid ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, uint b)"
+msgstr ":ref:`min<shader_func_min>`\\ (\\ |vec_uint_type| a, uint b)"
+
+msgid "Lowest value between ``a`` and ``b``."
+msgstr "``a`` 與 ``b`` 之間的較小值。"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, float b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_type| a, float b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, |vec_int_type| b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, int b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_int_type| a, int b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+msgstr ""
+":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, |vec_uint_type| b)"
+
+msgid ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
+msgstr ":ref:`max<shader_func_max>`\\ (\\ |vec_uint_type| a, uint b)"
+
+msgid "Highest value between ``a`` and ``b``."
+msgstr "``a`` 與 ``b`` 之間的較大值。"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, |vec_type| min, |"
+"vec_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, |vec_type| min, |"
+"vec_type| max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, float min, float max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_type| x, float min, float max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, |vec_int_type| min, |"
+"vec_int_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, |vec_int_type| min, |"
+"vec_int_type| max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, int min, int max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_int_type| x, int min, int max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, |vec_uint_type| "
+"min, |vec_uint_type| max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, |vec_uint_type| "
+"min, |vec_uint_type| max)"
+
+msgid ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, uint min, uint max)"
+msgstr ""
+":ref:`clamp<shader_func_clamp>`\\ (\\ |vec_uint_type| x, uint min, uint max)"
+
+msgid "Clamps ``x`` between ``min`` and ``max`` (inclusive)."
+msgstr "將 ``x`` 夾限在 ``min`` 與 ``max`` （包含端點）之間。"
+
+msgid ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+msgstr ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+
+msgid ":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, float c)"
+msgstr ":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, float c)"
+
+msgid ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_bool_type| c)"
+msgstr ""
+":ref:`mix<shader_func_mix>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_bool_type| c)"
+
+msgid "Linear interpolate between ``a`` and ``b`` by ``c``."
+msgstr "根據 ``c`` 在 ``a`` 與 ``b`` 之間進行線性插值。"
+
+msgid ""
+":ref:`fma<shader_func_fma>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+msgstr ""
+":ref:`fma<shader_func_fma>`\\ (\\ |vec_type| a, |vec_type| b, |vec_type| c)"
+
+msgid "Fused multiply-add operation: ``(a * b + c)``"
+msgstr "融合乘加運算： ``(a * b + c)``"
+
+msgid ":ref:`step<shader_func_step>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`step<shader_func_step>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid ":ref:`step<shader_func_step>`\\ (\\ float a, |vec_type| b)"
+msgstr ":ref:`step<shader_func_step>`\\ (\\ float a, |vec_type| b)"
+
+msgid "``b < a ? 0.0 : 1.0``"
+msgstr "``b < a ? 0.0 : 1.0``"
+
+msgid ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_type| c)"
+msgstr ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ |vec_type| a, |vec_type| b, |"
+"vec_type| c)"
+
+msgid ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ float a, float b, |vec_type| "
+"c)"
+msgstr ""
+":ref:`smoothstep<shader_func_smoothstep>`\\ (\\ float a, float b, |vec_type| "
+"c)"
+
+msgid "Hermite interpolate between ``a`` and ``b`` by ``c``."
+msgstr "以 Hermite 方式根據 ``c`` 在 ``a`` 和 ``b`` 之間內插。"
+
+msgid "|vec_bool_type|"
+msgstr "|vec_bool_type|"
+
+msgid ":ref:`isnan<shader_func_isnan>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`isnan<shader_func_isnan>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``true`` if scalar or vector component is ``NaN``."
+msgstr "若標量或向量分量為 ``NaN`` 則回傳 ``true``。"
+
+msgid ":ref:`isinf<shader_func_isinf>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`isinf<shader_func_isinf>`\\ (\\ |vec_type| x)"
+
+msgid "Returns ``true`` if scalar or vector component is ``INF``."
+msgstr "若標量或向量分量為 ``INF`` 則回傳 ``true``。"
+
+msgid ":ref:`floatBitsToInt<shader_func_floatBitsToInt>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`floatBitsToInt<shader_func_floatBitsToInt>`\\ (\\ |vec_type| x)"
+
+msgid "``float`` to ``int`` bit copying, no conversion."
+msgstr "``float`` 位元直接複製為 ``int``，不進行數值轉換。"
+
+msgid ":ref:`floatBitsToUint<shader_func_floatBitsToUint>`\\ (\\ |vec_type| x)"
+msgstr ""
+":ref:`floatBitsToUint<shader_func_floatBitsToUint>`\\ (\\ |vec_type| x)"
+
+msgid "``float`` to ``uint`` bit copying, no conversion."
+msgstr "``float`` 位元直接複製為 ``uint``，不進行數值轉換。"
+
+msgid ""
+":ref:`intBitsToFloat<shader_func_intBitsToFloat>`\\ (\\ |vec_int_type| x)"
+msgstr ""
+":ref:`intBitsToFloat<shader_func_intBitsToFloat>`\\ (\\ |vec_int_type| x)"
+
+msgid "``int`` to ``float`` bit copying, no conversion."
+msgstr "``int`` 位元直接複製為 ``float``，不進行數值轉換。"
+
+msgid ""
+":ref:`uintBitsToFloat<shader_func_uintBitsToFloat>`\\ (\\ |vec_uint_type| x)"
+msgstr ""
+":ref:`uintBitsToFloat<shader_func_uintBitsToFloat>`\\ (\\ |vec_uint_type| x)"
+
+msgid "``uint`` to ``float`` bit copying, no conversion."
+msgstr "``uint`` 位元直接複製為 ``float``，不進行數值轉換。"
+
+msgid "Exponential and math function descriptions"
+msgstr "指數與數學函式說明"
+
+msgid ""
+"|vec_type| **pow**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_pow>`"
+msgstr ""
+"|vec_type| **pow**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_pow>`"
+
+msgid "Raises ``x`` to the power of ``y``."
+msgstr "將 ``x`` 提升到 ``y`` 次方。"
+
+msgid "The result is undefined if ``x < 0`` or  if ``x == 0`` and ``y <= 0``."
+msgstr "若 ``x < 0``，或 ``x == 0`` 且 ``y <= 0``，則結果未定義。"
+
+msgid "The value to be raised to the power ``y``."
+msgstr "要被提升次方的數值 ``x``。"
+
+msgid "The power to which ``x`` will be raised."
+msgstr "``x`` 要被提升的次方 ``y``。"
+
+msgid "The value of ``x`` raised to the ``y`` power."
+msgstr "``x`` 的 ``y`` 次方。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/pow.xhtml"
+
+msgid "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
+msgstr "|vec_type| **exp**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp>`"
+
+msgid "Raises ``e`` to the power of ``x``, or the the natural exponentiation."
+msgstr "將數學常數 e 提升到 ``x`` 次方，即自然指數。"
+
+msgid "Equivalent to ``pow(e, x)``."
+msgstr "等同於 ``pow(e, x)``。"
+
+msgid "The value to exponentiate."
+msgstr "要計算指數的數值。"
+
+msgid "The natural exponentiation of ``x``."
+msgstr "``x`` 的自然指數。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp.xhtml"
+
+msgid "|vec_type| **exp2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp2>`"
+msgstr "|vec_type| **exp2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_exp2>`"
+
+msgid "Raises ``2`` to the power of ``x``."
+msgstr "將 2 提升到 ``x`` 次方。"
+
+msgid "Equivalent to ``pow(2.0, x)``."
+msgstr "等同於 ``pow(2.0, x)`` 。"
+
+msgid "The value of the power to which ``2`` will be raised."
+msgstr "``2`` 要被提升的次方值。"
+
+msgid "``2`` raised to the power of x."
+msgstr "2 的 ``x`` 次方。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/exp2.xhtml"
+
+msgid "|vec_type| **log**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log>`"
+msgstr "|vec_type| **log**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log>`"
+
+msgid ""
+"Returns the natural logarithm of ``x``, i.e. the value ``y`` which satisfies "
+"``x == pow(e, y)``. The result is undefined if ``x <= 0``."
+msgstr ""
+"回傳 ``x`` 的自然對數（滿足 ``x == pow(e, y)`` 的 ``y``）。若 ``x <= 0`` 結果"
+"未定義。"
+
+msgid "The value of which to take the natural logarithm."
+msgstr "要取自然對數的數值。"
+
+msgid "The natural logarithm of ``x``."
+msgstr "``x`` 的自然對數。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log.xhtml"
+
+msgid "|vec_type| **log2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log2>`"
+msgstr "|vec_type| **log2**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_log2>`"
+
+msgid ""
+"Returns the base-2 logarithm of ``x``, i.e. the value ``y`` which satisfies "
+"``x == pow(2, y)``. The result is undefined if ``x <= 0``."
+msgstr ""
+"回傳 ``x`` 的以 2 為底的對數（滿足 ``x == pow(2, y)`` 的 ``y``）。若 ``x <= "
+"0`` 結果未定義。"
+
+msgid "The value of which to take the base-2 logarithm."
+msgstr "要取以 2 為底對數的數值。"
+
+msgid "The base-2 logarithm of ``x``."
+msgstr "``x`` 的以 2 為底對數。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/log2.xhtml"
+
+msgid "|vec_type| **sqrt**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sqrt>`"
+msgstr "|vec_type| **sqrt**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sqrt>`"
+
+msgid "Returns the square root of ``x``. The result is undefined if ``x < 0``."
+msgstr "回傳 ``x`` 的平方根。若 ``x < 0`` 則結果未定義。"
+
+msgid "The value of which to take the square root."
+msgstr "要取平方根的數值。"
+
+msgid "The square root of ``x``."
+msgstr "``x`` 的平方根。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sqrt.xhtml"
+
+msgid ""
+"|vec_type| **inversesqrt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_inversesqrt>`"
+msgstr ""
+"|vec_type| **inversesqrt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_inversesqrt>`"
+
+msgid ""
+"Returns the inverse of the square root of ``x``, or ``1.0 / sqrt(x)``. The "
+"result is undefined if ``x <= 0``."
+msgstr ""
+"回傳 ``x`` 的反平方根（即 ``1.0 / sqrt(x)``）。若 ``x <= 0`` 則結果未定義。"
+
+msgid "The value of which to take the inverse of the square root."
+msgstr "要取反平方根的數值。"
+
+msgid "The inverse of the square root of ``x``."
+msgstr "``x`` 的反平方根。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inversesqrt.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inversesqrt.xhtml"
+
+msgid "|vec_type| **abs**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_abs>`"
+msgstr "|vec_type| **abs**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_abs>`"
+
+msgid ""
+"|vec_int_type| **abs**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_abs>`"
+msgstr ""
+"|vec_int_type| **abs**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_abs>`"
+
+msgid ""
+"Returns the absolute value of ``x``. Returns ``x`` if ``x`` is positive, "
+"otherwise returns ``-1 * x``."
+msgstr ""
+"回傳 ``x`` 的絕對值。如果 ``x`` 為正則回傳 ``x``，否則回傳 ``-1 * x``。"
+
+msgid "The value of which to return the absolute."
+msgstr "要取絕對值的數值。"
+
+msgid "The absolute value of ``x``."
+msgstr "``x`` 的絕對值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/abs.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/abs.xhtml"
+
+msgid "|vec_type| **sign**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sign>`"
+msgstr "|vec_type| **sign**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_sign>`"
+
+msgid ""
+"|vec_int_type| **sign**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_sign>`"
+msgstr ""
+"|vec_int_type| **sign**\\ (\\ |vec_int_type| x) :ref:`🔗<shader_func_sign>`"
+
+msgid ""
+"Returns ``-1`` if ``x < 0``, ``0`` if ``x == 0``, and ``1`` if ``x > 0``."
+msgstr ""
+"若 ``x < 0`` 回傳 ``-1``，若 ``x == 0`` 回傳 ``0``，若 ``x > 0`` 回傳 ``1``。"
+
+msgid "The value from which to extract the sign."
+msgstr "要判斷正負號的數值。"
+
+msgid "The sign of ``x``."
+msgstr "``x`` 的正負號。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sign.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/sign.xhtml"
+
+msgid "|vec_type| **floor**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_floor>`"
+msgstr "|vec_type| **floor**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_floor>`"
+
+msgid ""
+"Returns a value equal to the nearest integer that is less than or equal to "
+"``x``."
+msgstr "回傳小於或等於 ``x`` 的最大整數。"
+
+msgid "The value to floor."
+msgstr "要向下取整的數值。"
+
+msgid "The nearest integer that is less than or equal to ``x``."
+msgstr "小於或等於 ``x`` 的最近整數。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/floor.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/floor.xhtml"
+
+msgid "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
+msgstr "|vec_type| **round**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_round>`"
+
+msgid "Rounds ``x`` to the nearest integer."
+msgstr "將 ``x`` 四捨五入到最接近的整數。"
+
+msgid ""
+"Rounding of values with a fractional part of ``0.5`` is implementation-"
+"dependent. This includes the possibility that ``round(x)`` returns the same "
+"value as ``roundEven(x)``for all values of ``x``."
+msgstr ""
+"對於小數部分為 ``0.5`` 的數值，其四捨五入方式取決於實作。這也代表 "
+"``round(x)`` 在所有 ``x`` 的情況下，可能會與 ``roundEven(x)`` 回傳相同的結"
+"果。"
+
+msgid "The value to round."
+msgstr "要四捨五入的數值。"
+
+msgid "The rounded value."
+msgstr "四捨五入的結果。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/round.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/round.xhtml"
+
+msgid ""
+"|vec_type| **roundEven**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_roundEven>`"
+msgstr ""
+"|vec_type| **roundEven**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_roundEven>`"
+
+msgid ""
+"Rounds ``x`` to the nearest integer. A value with a fractional part of "
+"``0.5`` will always round toward the nearest even integer. For example, both "
+"``3.5`` and ``4.5`` will round to ``4.0``."
+msgstr ""
+"將 ``x`` 四捨五入到最接近的整數。若小數部分為 ``0.5``，則總是四捨五入至最近的"
+"偶數，例如 ``3.5`` 和 ``4.5`` 都會變成 ``4.0``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/roundEven.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/roundEven.xhtml"
+
+msgid "|vec_type| **trunc**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_trunc>`"
+msgstr "|vec_type| **trunc**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_trunc>`"
+
+msgid ""
+"Truncates ``x``. Returns a value equal to the nearest integer to ``x`` whose "
+"absolute value is not larger than the absolute value of ``x``."
+msgstr "截斷 ``x``，回傳離 ``x`` 最近且絕對值不大於 ``x`` 的整數。"
+
+msgid "The value to evaluate."
+msgstr "要評估的值。"
+
+msgid "The truncated value."
+msgstr "截斷後的數值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/trunc.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/trunc.xhtml"
+
+msgid "|vec_type| **ceil**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_ceil>`"
+msgstr "|vec_type| **ceil**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_ceil>`"
+
+msgid ""
+"Returns a value equal to the nearest integer that is greater than or equal "
+"to ``x``."
+msgstr "回傳大於或等於 ``x`` 的最小整數。"
+
+msgid "The ceiling-ed value."
+msgstr "向上取整的結果。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ceil.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ceil.xhtml"
+
+msgid "|vec_type| **fract**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_fract>`"
+msgstr "|vec_type| **fract**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_fract>`"
+
+msgid "Returns the fractional part of ``x``."
+msgstr "回傳 ``x`` 的小數部分。"
+
+msgid "This is calculated as ``x - floor(x)``."
+msgstr "計算方式為 ``x - floor(x)``。"
+
+msgid "The fractional part of ``x``."
+msgstr "``x`` 的小數部分。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fract.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fract.xhtml"
+
+msgid ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_mod>`"
+msgstr ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_mod>`"
+
+msgid ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, float y) :ref:`🔗<shader_func_mod>`"
+msgstr ""
+"|vec_type| **mod**\\ (\\ |vec_type| x, float y) :ref:`🔗<shader_func_mod>`"
+
+msgid ""
+"Returns the value of ``x modulo y``. This is also sometimes called the "
+"remainder."
+msgstr "回傳 ``x`` 對 ``y`` 的餘數（模），亦即 ``x modulo y``。"
+
+msgid "This is computed as ``x - y * floor(x/y)``."
+msgstr "計算方式為 ``x - y * floor(x/y)``。"
+
+msgid "The value of ``x modulo y``."
+msgstr "``x`` 對 ``y`` 取模的結果。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mod.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mod.xhtml"
+
+msgid ""
+"|vec_type| **modf**\\ (\\ |vec_type| x, out |vec_type| "
+"i) :ref:`🔗<shader_func_modf>`"
+msgstr ""
+"|vec_type| **modf**\\ (\\ |vec_type| x, out |vec_type| "
+"i) :ref:`🔗<shader_func_modf>`"
+
+msgid ""
+"Separates a floating-point value ``x`` into its integer and fractional parts."
+msgstr "將浮點數 ``x`` 拆分為整數部分與小數部分。"
+
+msgid ""
+"The fractional part of the number is returned from the function. The integer "
+"part (as a floating-point quantity) is returned in the output parameter "
+"``i``."
+msgstr ""
+"函式回傳數值的小數部分，整數部分（以浮點型別表示）則回傳於輸出參數 ``i``。"
+
+msgid "The value to separate."
+msgstr "要拆分的數值。"
+
+msgid "param out i"
+msgstr "輸出參數 i"
+
+msgid "A variable that receives the integer part of ``x``."
+msgstr "用來接收 ``x`` 的整數部分的變數。"
+
+msgid "The fractional part of the number."
+msgstr "數值的小數部分。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/modf.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/modf.xhtml"
+
+msgid ""
+"|vec_type| **min**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_type| **min**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_type| **min**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_type| **min**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_int_type| **min**\\ (\\ |vec_int_type| a, |vec_int_type| "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_int_type| **min**\\ (\\ |vec_int_type| a, |vec_int_type| "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_int_type| **min**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_int_type| **min**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid ""
+"|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_min>`"
+msgstr ""
+"|vec_uint_type| **min**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_min>`"
+
+msgid "Returns the minimum of two values ``a`` and ``b``."
+msgstr "回傳 ``a`` 與 ``b`` 兩值中的最小值。"
+
+msgid "Returns ``b`` if ``b < a``, otherwise returns ``a``."
+msgstr "若 ``b < a`` 則回傳 ``b``，否則回傳 ``a``。"
+
+msgid "param a"
+msgstr "參數 a"
+
+msgid "The first value to compare."
+msgstr "第一個要比較的值。"
+
+msgid "param b"
+msgstr "參數 b"
+
+msgid "The second value to compare."
+msgstr "第二個要比較的值。"
+
+msgid "The minimum value."
+msgstr "最小值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/min.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/min.xhtml"
+
+msgid ""
+"|vec_type| **max**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_type| **max**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_type| **max**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_type| **max**\\ (\\ |vec_type| a, float b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, |vec_uint_type| "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_uint_type| **max**\\ (\\ |vec_uint_type| a, uint "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_int_type| **max**\\ (\\ |vec_int_type| a, |vec_int_type| "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_int_type| **max**\\ (\\ |vec_int_type| a, |vec_int_type| "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid ""
+"|vec_int_type| **max**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_max>`"
+msgstr ""
+"|vec_int_type| **max**\\ (\\ |vec_int_type| a, int "
+"b) :ref:`🔗<shader_func_max>`"
+
+msgid "Returns the maximum of two values ``a`` and ``b``."
+msgstr "回傳 ``a`` 與 ``b`` 兩值中的最大值。"
+
+msgid "It returns ``b`` if ``b > a``, otherwise it returns ``a``."
+msgstr "若 ``b > a`` 則回傳 ``b``，否則回傳 ``a``。"
+
+msgid "The maximum value."
+msgstr "最大值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/max.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/max.xhtml"
+
+msgid ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, |vec_type| minVal, |vec_type| "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, |vec_type| minVal, |vec_type| "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, float minVal, float "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_type| **clamp**\\ (\\ |vec_type| x, float minVal, float "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, |vec_int_type| minVal, |"
+"vec_int_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, |vec_int_type| minVal, |"
+"vec_int_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, int minVal, int "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_int_type| **clamp**\\ (\\ |vec_int_type| x, int minVal, int "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, |vec_uint_type| minVal, |"
+"vec_uint_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, |vec_uint_type| minVal, |"
+"vec_uint_type| maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, uint minVal, uint "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+msgstr ""
+"|vec_uint_type| **clamp**\\ (\\ |vec_uint_type| x, uint minVal, uint "
+"maxVal) :ref:`🔗<shader_func_clamp>`"
+
+msgid ""
+"Returns the value of ``x`` constrained to the range ``minVal`` to ``maxVal``."
+msgstr "將 ``x`` 夾制在 ``minVal`` 和 ``maxVal`` 之間（包含兩端點）。"
+
+msgid "The returned value is computed as ``min(max(x, minVal), maxVal)``."
+msgstr "回傳值計算方式為 ``min(max(x, minVal), maxVal)``。"
+
+msgid "The value to constrain."
+msgstr "要限制範圍的值。"
+
+msgid "param minVal"
+msgstr "參數 minVal"
+
+msgid "The lower end of the range into which to constrain ``x``."
+msgstr "用於限制 ``x`` 的下界。"
+
+msgid "param maxVal"
+msgstr "參數 maxVal"
+
+msgid "The upper end of the range into which to constrain ``x``."
+msgstr "用於限制 ``x`` 的上界。"
+
+msgid "The clamped value."
+msgstr "夾制後的值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/clamp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/clamp.xhtml"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, float "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, float "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"Performs a linear interpolation between ``a`` and ``b`` using ``c`` to "
+"weight between them."
+msgstr "根據 ``c`` 權重在線性插值 ``a`` 與 ``b`` 之間。"
+
+msgid "Computed as ``a * (1 - c) + b * c``."
+msgstr "依公式 ``a * (1 - c) + b * c`` 計算。"
+
+msgid ""
+"Equivalent to :ref:`lerp() <class_@GlobalScope_method_lerp>` in GDScript."
+msgstr "等同於 GDScript 中的 :ref:`lerp() <class_@GlobalScope_method_lerp>`。"
+
+msgid "The start of the range in which to interpolate."
+msgstr "內插範圍的起點。"
+
+msgid "The end of the range in which to interpolate."
+msgstr "內插範圍的終點。"
+
+msgid "param c"
+msgstr "參數 c"
+
+msgid "The value to use to interpolate between ``a`` and ``b``."
+msgstr "作為 ``a`` 與 ``b`` 之間插值的權重。"
+
+msgid "The interpolated value."
+msgstr "插值結果。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mix.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/mix.xhtml"
+
+msgid ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_bool_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+msgstr ""
+"|vec_type| **mix**\\ (\\ |vec_type| a, |vec_type| b, |vec_bool_type| "
+"c) :ref:`🔗<shader_func_mix>`"
+
+msgid ""
+"Selects either value ``a`` or value ``b`` based on the value of ``c``. For a "
+"component of ``c`` that is false, the corresponding component of ``a`` is "
+"returned. For a component of ``c`` that is true, the corresponding component "
+"of ``b`` is returned. Components of ``a`` and ``b`` that are not selected "
+"are allowed to be invalid floating-point values and will have no effect on "
+"the results."
+msgstr ""
+"根據 ``c`` 的值選擇 ``a`` 或 ``b``。若 ``c`` 的某分量為 false，則回傳 ``a`` "
+"對應分量，為 true 則回傳 ``b`` 對應分量。未被選取的 ``a`` 與 ``b`` 分量可為無"
+"效浮點數，對結果無影響。"
+
+msgid ""
+"If ``a``, ``b``, and ``c`` are vector types the operation is "
+"performed :ref:`component-wise <shading_componentwise>`. ie. ``mix(vec2(42, "
+"314), vec2(9.8, 6e23), bvec2(true, false)))`` will return ``vec2(9.8, 314)``."
+msgstr ""
+"若 ``a`` 、 ``b`` 、 ``c`` 皆為向量型別，則會 :ref:`逐分量運算 "
+"<shading_componentwise>`。例如 ``mix(vec2(42, 314), vec2(9.8, 6e23), "
+"bvec2(true, false))`` 會回傳 ``vec2(9.8, 314)`` 。"
+
+msgid "Value returned when ``c`` is false."
+msgstr "當 ``c`` 為 false 時回傳的值。"
+
+msgid "Value returned when ``c`` is true."
+msgstr "當 ``c`` 為 true 時回傳的值。"
+
+msgid "The value used to select between ``a`` and ``b``."
+msgstr "用於選擇 ``a`` 或 ``b`` 的值。"
+
+msgid ""
+"|vec_type| **fma**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_fma>`"
+msgstr ""
+"|vec_type| **fma**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_fma>`"
+
+msgid ""
+"Performs, where possible, a fused multiply-add operation, returning ``a * b "
+"+ c``. In use cases where the return value is eventually consumed by a "
+"variable declared as precise:"
+msgstr ""
+"在可能的情況下，執行融合乘加運算（fused multiply-add），回傳 ``a * b + c`` 。"
+"若回傳值最終被賦值給宣告為 precise 的變數："
+
+msgid ""
+"``fma()`` is considered a single operation, whereas the expression ``a * b + "
+"c`` consumed by a variable declared as precise is considered two operations."
+msgstr ""
+"``fma()`` 被視為單一運算，而 ``a * b + c`` 若被 precise 變數消耗則視為兩次運"
+"算。"
+
+msgid ""
+"The precision of ``fma()`` can differ from the precision of the expression "
+"``a * b + c``."
+msgstr "``fma()`` 的精度可能與 ``a * b + c`` 表達式不同。"
+
+msgid ""
+"``fma()`` will be computed with the same precision as any other ``fma()`` "
+"consumed by a precise variable, giving invariant results for the same input "
+"values of a, b and c."
+msgstr ""
+"``fma()`` 在被 precise 變數消耗時，會以一致的精度進行運算，對於相同的 a、b、"
+"c 輸入值會得到不變的結果。"
+
+msgid ""
+"Otherwise, in the absence of precise consumption, there are no special "
+"constraints on the number of operations or difference in precision between "
+"``fma()`` and the expression ``a * b + c``."
+msgstr ""
+"否則，若未被 precise 變數消耗，則對於 ``fma()`` 與 ``a * b + c`` 之間的運算次"
+"數或精度沒有特殊限制。"
+
+msgid "The first value to be multiplied."
+msgstr "第一個要相乘的值。"
+
+msgid "The second value to be multiplied."
+msgstr "第二個要相乘的值。"
+
+msgid "The value to be added to the result."
+msgstr "要加到結果上的值。"
+
+msgid "The value of ``a * b + c``."
+msgstr "``a * b + c`` 的結果。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fma.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fma.xhtml"
+
+msgid ""
+"|vec_type| **step**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_step>`"
+msgstr ""
+"|vec_type| **step**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_step>`"
+
+msgid ""
+"|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
+msgstr ""
+"|vec_type| **step**\\ (\\ float a, |vec_type| b) :ref:`🔗<shader_func_step>`"
+
+msgid "Generates a step function by comparing b to a."
+msgstr "比較 b 與 a，產生階梯函式。"
+
+msgid ""
+"Equivalent to ``if (b < a) { return 0.0; } else { return 1.0; }``. For "
+"element i of the return value, 0.0 is returned if b[i] < a[i], and 1.0 is "
+"returned otherwise."
+msgstr ""
+"等同於 ``if (b < a) { return 0.0; } else { return 1.0; }`` 。對於回傳值的第 "
+"i 個元素，若 b[i] < a[i] 則回傳 0.0 ，否則回傳 1.0 。"
+
+msgid "The location of the edge of the step function."
+msgstr "階梯函式的邊緣位置。"
+
+msgid "The value to be used to generate the step function."
+msgstr "用於產生階梯函式的值。"
+
+msgid "``0.0`` or ``1.0``."
+msgstr "``0.0`` 或 ``1.0``。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/step.xhtml"
+
+msgid ""
+"|vec_type| **smoothstep**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+msgstr ""
+"|vec_type| **smoothstep**\\ (\\ |vec_type| a, |vec_type| b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+
+msgid ""
+"|vec_type| **smoothstep**\\ (\\ float a, float b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+msgstr ""
+"|vec_type| **smoothstep**\\ (\\ float a, float b, |vec_type| "
+"c) :ref:`🔗<shader_func_smoothstep>`"
+
+msgid ""
+"Performs smooth Hermite interpolation between ``0`` and ``1`` when a < c < "
+"b. This is useful in cases where a threshold function with a smooth "
+"transition is desired."
+msgstr ""
+"當 a < c < b 時，在 ``0`` 與 ``1`` 之間執行平滑 Hermite 插值。這在需平滑過渡"
+"閾值函式時非常有用。"
+
+msgid "Smoothstep is equivalent to:"
+msgstr "Smoothstep 等同於："
+
+msgid "Results are undefined if ``a >= b``."
+msgstr "若 ``a >= b`` ，結果未定義。"
+
+msgid "The value of the lower edge of the Hermite function."
+msgstr "Hermite 函式的下界值。"
+
+msgid "The value of the upper edge of the Hermite function."
+msgstr "Hermite 函式的上界值。"
+
+msgid "The source value for interpolation."
+msgstr "內插的來源值。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/smoothstep.xhtml"
+
+msgid ""
+"|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
+msgstr ""
+"|vec_bool_type| **isnan**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isnan>`"
+
+msgid ""
+"For each element i of the result, returns ``true`` if x[i] is positive or "
+"negative floating-point NaN (Not a Number) and false otherwise."
+msgstr ""
+"對於結果的每個分量 i，若 x[i] 為正或負的浮點 NaN（非數值）則回傳 ``true``，否"
+"則回傳 ``false``。"
+
+msgid "The value to test for NaN."
+msgstr "要測試是否為 NaN 的值。"
+
+msgid "``true`` or ``false``."
+msgstr "``true`` 或 ``false``。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isnan.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isnan.xhtml"
+
+msgid ""
+"|vec_bool_type| **isinf**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isinf>`"
+msgstr ""
+"|vec_bool_type| **isinf**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_isinf>`"
+
+msgid ""
+"For each element i of the result, returns ``true`` if x[i] is positive or "
+"negative floating-point infinity and false otherwise."
+msgstr ""
+"對於結果的每個分量 i，若 x[i] 為正或負的浮點無窮大則回傳 ``true``，否則回傳 "
+"``false``。"
+
+msgid "The value to test for infinity."
+msgstr "要測試是否為無限大的值。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isinf.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/isinf.xhtml"
+
+msgid ""
+"|vec_int_type| **floatBitsToInt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToInt>`"
+msgstr ""
+"|vec_int_type| **floatBitsToInt**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToInt>`"
+
+msgid "Returns the encoding of the floating-point parameters as ``int``."
+msgstr "將浮點參數的編碼以 ``int`` 型態回傳。"
+
+msgid "The floating-point bit-level representation is preserved."
+msgstr "會保留浮點數的位元層級表示方式。"
+
+msgid "The value whose floating-point encoding to return."
+msgstr "欲獲取其浮點編碼的數值。"
+
+msgid "The floating-point encoding of ``x``."
+msgstr "``x`` 的浮點編碼值。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"floatBitsToInt.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"floatBitsToInt.xhtml"
+
+msgid ""
+"|vec_uint_type| **floatBitsToUint**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToUint>`"
+msgstr ""
+"|vec_uint_type| **floatBitsToUint**\\ (\\ |vec_type| "
+"x) :ref:`🔗<shader_func_floatBitsToUint>`"
+
+msgid "Returns the encoding of the floating-point parameters as ``uint``."
+msgstr "將浮點參數的編碼以 ``uint`` 型態回傳。"
+
+msgid ""
+"|vec_type| **intBitsToFloat**\\ (\\ |vec_int_type| "
+"x) :ref:`🔗<shader_func_intBitsToFloat>`"
+msgstr ""
+"|vec_type| **intBitsToFloat**\\ (\\ |vec_int_type| "
+"x) :ref:`🔗<shader_func_intBitsToFloat>`"
+
+msgid ""
+"Converts a bit encoding to a floating-point value. Opposite of "
+"`floatBitsToInt<shader_func_floatBitsToInt>`"
+msgstr ""
+"將位元編碼轉換為浮點數值。與 `floatBitsToInt<shader_func_floatBitsToInt>` 相"
+"反"
+
+msgid ""
+"If the encoding of a ``NaN`` is passed in ``x``, it will not signal and the "
+"resulting value will be undefined."
+msgstr "若 ``x`` 為 NaN 的位元編碼，則不會產生訊號且結果未定義。"
+
+msgid ""
+"If the encoding of a floating-point infinity is passed in parameter ``x``, "
+"the resulting floating-point value is the corresponding (positive or "
+"negative) floating-point infinity."
+msgstr "若 ``x`` 為無窮大的位元編碼，則結果為對應的（正或負）浮點無窮大。"
+
+msgid "The bit encoding to return as a floating-point value."
+msgstr "要作為浮點值返回的位元編碼。"
+
+msgid "A floating-point value."
+msgstr "浮點值。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"intBitsToFloat.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"intBitsToFloat.xhtml"
+
+msgid ""
+"|vec_type| **uintBitsToFloat**\\ (\\ |vec_uint_type| "
+"x) :ref:`🔗<shader_func_uintBitsToFloat>`"
+msgstr ""
+"|vec_type| **uintBitsToFloat**\\ (\\ |vec_uint_type| "
+"x) :ref:`🔗<shader_func_uintBitsToFloat>`"
+
+msgid ""
+"Converts a bit encoding to a floating-point value. Opposite of "
+"`floatBitsToUint<shader_func_floatBitsToUint>`"
+msgstr ""
+"將位元編碼轉換為浮點數值。功能與 "
+"`floatBitsToUint<shader_func_floatBitsToUint>` 相反"
+
+msgid "Geometric functions"
+msgstr "幾何函式"
+
+msgid "float"
+msgstr "浮點數"
+
+msgid ":ref:`length<shader_func_length>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`length<shader_func_length>`\\ (\\ |vec_type| x)"
+
+msgid "Vector length."
+msgstr "向量長度。"
+
+msgid ":ref:`distance<shader_func_distance>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ""
+":ref:`distance<shader_func_distance>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid "Distance between vectors i.e ``length(a - b)``."
+msgstr "向量間距（即 ``length(a - b)``）。"
+
+msgid ":ref:`dot<shader_func_dot>`\\ (\\ |vec_type| a, |vec_type| b)"
+msgstr ":ref:`dot<shader_func_dot>`\\ (\\ |vec_type| a, |vec_type| b)"
+
+msgid "Dot product."
+msgstr "點積。"
+
+msgid "vec3"
+msgstr "vec3"
+
+msgid ":ref:`cross<shader_func_cross>`\\ (\\ vec3 a, vec3 b)"
+msgstr ":ref:`cross<shader_func_cross>`\\ (\\ vec3 a, vec3 b)"
+
+msgid "Cross product."
+msgstr "外積。"
+
+msgid ":ref:`normalize<shader_func_normalize>`\\ (\\ |vec_type| x)"
+msgstr ":ref:`normalize<shader_func_normalize>`\\ (\\ |vec_type| x)"
+
+msgid "Normalize to unit length."
+msgstr "標準化為單位長度。"
+
+msgid ":ref:`reflect<shader_func_reflect>`\\ (\\ vec3 I, vec3 N)"
+msgstr ":ref:`reflect<shader_func_reflect>`\\ (\\ vec3 I, vec3 N)"
+
+msgid "Reflect."
+msgstr "反射。"
+
+msgid ":ref:`refract<shader_func_refract>`\\ (\\ vec3 I, vec3 N, float eta)"
+msgstr ":ref:`refract<shader_func_refract>`\\ (\\ vec3 I, vec3 N, float eta)"
+
+msgid "Refract."
+msgstr "折射。"
+
+msgid ""
+":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
+"I, |vec_type| Nref)"
+msgstr ""
+":ref:`faceforward<shader_func_faceforward>`\\ (\\ |vec_type| N, |vec_type| "
+"I, |vec_type| Nref)"
+
+msgid "If ``dot(Nref, I)`` < 0, return ``N``, otherwise ``-N``."
+msgstr "若 ``dot(Nref, I)`` < 0，回傳 ``N``，否則回傳 ``-N``。"
+
+msgid "|mat_type|"
+msgstr "|mat_type|"
+
+msgid ""
+":ref:`matrixCompMult<shader_func_matrixCompMult>`\\ (\\ |mat_type| x, |"
+"mat_type| y)"
+msgstr ""
+":ref:`matrixCompMult<shader_func_matrixCompMult>`\\ (\\ |mat_type| x, |"
+"mat_type| y)"
+
+msgid "Matrix component multiplication."
+msgstr "矩陣分量乘法。"
+
+msgid ""
+":ref:`outerProduct<shader_func_outerProduct>`\\ (\\ |vec_type| column, |"
+"vec_type| row)"
+msgstr ""
+":ref:`outerProduct<shader_func_outerProduct>`\\ (\\ |vec_type| column, |"
+"vec_type| row)"
+
+msgid "Matrix outer product."
+msgstr "矩陣外積。"
+
+msgid ":ref:`transpose<shader_func_transpose>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`transpose<shader_func_transpose>`\\ (\\ |mat_type| m)"
+
+msgid "Transpose matrix."
+msgstr "矩陣轉置。"
+
+msgid ":ref:`determinant<shader_func_determinant>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`determinant<shader_func_determinant>`\\ (\\ |mat_type| m)"
+
+msgid "Matrix determinant."
+msgstr "矩陣行列式。"
+
+msgid ":ref:`inverse<shader_func_inverse>`\\ (\\ |mat_type| m)"
+msgstr ":ref:`inverse<shader_func_inverse>`\\ (\\ |mat_type| m)"
+
+msgid "Inverse matrix."
+msgstr "逆矩陣。"
+
+msgid "Geometric function descriptions"
+msgstr "幾何函式說明"
+
+msgid "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
+msgstr "float **length**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_length>`"
+
+msgid ""
+"Returns the length of the vector. ie. ``sqrt(x[0] * x[0] + x[1] * x[1] + ... "
+"+ x[n] * x[n])``"
+msgstr ""
+"回傳向量的長度，例如 ``sqrt(x[0] * x[0] + x[1] * x[1] + ... + x[n] * x[n])``"
+
+msgid "The vector"
+msgstr "向量"
+
+msgid "The length of the vector."
+msgstr "向量的長度。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/length.xhtml"
+
+msgid ""
+"float **distance**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_distance>`"
+msgstr ""
+"float **distance**\\ (\\ |vec_type| a, |vec_type| "
+"b) :ref:`🔗<shader_func_distance>`"
+
+msgid "Returns the distance between the two points a and b."
+msgstr "回傳兩點 a 與 b 之間的距離。"
+
+msgid "i.e., ``length(b - a);``"
+msgstr "即 ``length(b - a);``"
+
+msgid "The first point."
+msgstr "第一個點。"
+
+msgid "The second point."
+msgstr "第二個點。"
+
+msgid "The scalar distance between the points"
+msgstr "這兩點之間的純量距離"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/distance.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/distance.xhtml"
+
+msgid ""
+"float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
+msgstr ""
+"float **dot**\\ (\\ |vec_type| a, |vec_type| b) :ref:`🔗<shader_func_dot>`"
+
+msgid ""
+"Returns the dot product of two vectors, ``a`` and ``b``. i.e., ``a.x * b.x + "
+"a.y * b.y + ...``"
+msgstr ""
+"回傳兩向量 ``a`` 與 ``b`` 的點積。例如：``a.x * b.x + a.y * b.y + ...``"
+
+msgid "The first vector."
+msgstr "第一個向量。"
+
+msgid "The second vector."
+msgstr "第二個向量。"
+
+msgid "The dot product."
+msgstr "點積。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dot.xhtml"
+
+msgid "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
+msgstr "vec3 **cross**\\ (\\ vec3 a, vec3 b) :ref:`🔗<shader_func_cross>`"
+
+msgid "Returns the cross product of two vectors. i.e.:"
+msgstr "回傳兩向量的外積（叉積）。例如："
+
+msgid "The cross product of ``a`` and ``b``."
+msgstr "``a`` 和 ``b`` 的外積。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/cross.xhtml"
+
+msgid ""
+"|vec_type| **normalize**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_normalize>`"
+msgstr ""
+"|vec_type| **normalize**\\ (\\ |vec_type| x) :ref:`🔗<shader_func_normalize>`"
+
+msgid ""
+"Returns a vector with the same direction as ``x`` but with length ``1.0``."
+msgstr "回傳與 ``x`` 相同方向但長度為 1.0 的單位向量。"
+
+msgid "The vector to normalize."
+msgstr "要標準化的向量。"
+
+msgid "The normalized vector."
+msgstr "已標準化的向量。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/normalize.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/normalize.xhtml"
+
+msgid "vec3 **reflect**\\ (\\ vec3 I, vec3 N) :ref:`🔗<shader_func_reflect>`"
+msgstr "vec3 **reflect**\\ (\\ vec3 I, vec3 N) :ref:`🔗<shader_func_reflect>`"
+
+msgid "Calculate the reflection direction for an incident vector."
+msgstr "計算入射向量的反射方向。"
+
+msgid ""
+"For a given incident vector ``I`` and surface normal ``N`` reflect returns "
+"the reflection direction calculated as ``I - 2.0 * dot(N, I) * N``."
+msgstr ""
+"對於給定入射向量 ``I`` 和表面法線 ``N`` ，reflect 會回傳以 ``I - 2.0 * "
+"dot(N, I) * N`` 計算的反射方向。"
+
+msgid "``N`` should be normalized in order to achieve the desired result."
+msgstr "為取得正確結果，``N`` 應先正規化。"
+
+msgid "param I"
+msgstr "參數 I"
+
+msgid "The incident vector."
+msgstr "入射向量。"
+
+msgid "param N"
+msgstr "參數 N"
+
+msgid "The normal vector."
+msgstr "法向量。"
+
+msgid "The reflection vector."
+msgstr "反射向量。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/reflect.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/reflect.xhtml"
+
+msgid ""
+"vec3 **refract**\\ (\\ vec3 I, vec3 N, float "
+"eta) :ref:`🔗<shader_func_refract>`"
+msgstr ""
+"vec3 **refract**\\ (\\ vec3 I, vec3 N, float "
+"eta) :ref:`🔗<shader_func_refract>`"
+
+msgid "Calculate the refraction direction for an incident vector."
+msgstr "計算入射向量的折射方向。"
+
+msgid ""
+"For a given incident vector ``I``, surface normal ``N`` and ratio of indices "
+"of refraction, ``eta``, refract returns the refraction vector, ``R``."
+msgstr ""
+"對於給定的入射向量 ``I`` 、表面法線 ``N`` 以及折射率比值 ``eta`` ，refract 會"
+"回傳折射向量 ``R``。"
+
+msgid "``R`` is calculated as:"
+msgstr "``R`` 計算方式如下："
+
+msgid ""
+"The input parameters I and N should be normalized in order to achieve the "
+"desired result."
+msgstr "輸入參數 I 與 N 應先標準化，才能獲得正確的結果。"
+
+msgid "param eta"
+msgstr "參數 eta"
+
+msgid "The ratio of indices of refraction."
+msgstr "折射率比值。"
+
+msgid "The refraction vector."
+msgstr "折射向量。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/refract.xhtml"
+
+msgid ""
+"|vec_type| **faceforward**\\ (\\ |vec_type| N, |vec_type| I, |vec_type| "
+"Nref) :ref:`🔗<shader_func_faceforward>`"
+msgstr ""
+"|vec_type| **faceforward**\\ (\\ |vec_type| N, |vec_type| I, |vec_type| "
+"Nref) :ref:`🔗<shader_func_faceforward>`"
+
+msgid "Returns a vector pointing in the same direction as another."
+msgstr "回傳一個與另一向量方向相同的向量。"
+
+msgid ""
+"Orients a vector to point away from a surface as defined by its normal. If "
+"``dot(Nref, I) < 0`` faceforward returns ``N``, otherwise it returns ``-N``."
+msgstr ""
+"根據法線，將向量調整為遠離表面的方向。若 ``dot(Nref, I) < 0`` ，faceforward "
+"回傳 ``N`` ，否則回傳 ``-N``。"
+
+msgid "The vector to orient."
+msgstr "要進行方向調整的向量。"
+
+msgid "param Nref"
+msgstr "參數 Nref"
+
+msgid "The reference vector."
+msgstr "參考向量。"
+
+msgid "The oriented vector."
+msgstr "已調整方向的向量。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/faceforward.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/faceforward.xhtml"
+
+msgid ""
+"|mat_type| **matrixCompMult**\\ (\\ |mat_type| x, |mat_type| "
+"y) :ref:`🔗<shader_func_matrixCompMult>`"
+msgstr ""
+"|mat_type| **matrixCompMult**\\ (\\ |mat_type| x, |mat_type| "
+"y) :ref:`🔗<shader_func_matrixCompMult>`"
+
+msgid ""
+"Perform a :ref:`component-wise <shading_componentwise>` multiplication of "
+"two matrices."
+msgstr "對兩個矩陣執行 :ref:`元件逐一 <shading_componentwise>` 相乘運算。"
+
+msgid ""
+"Performs a component-wise multiplication of two matrices, yielding a result "
+"matrix where each component, ``result[i][j]`` is computed as the scalar "
+"product of ``x[i][j]`` and ``y[i][j]``."
+msgstr ""
+"對兩個矩陣進行元件逐一相乘，產生一個結果矩陣，其每個元件 ``result[i][j]`` 皆"
+"為 ``x[i][j]`` 與 ``y[i][j]`` 的純量乘積。"
+
+msgid "The first matrix multiplicand."
+msgstr "第一個矩陣乘數。"
+
+msgid "The second matrix multiplicand."
+msgstr "第二個矩陣乘數。"
+
+msgid "The resultant matrix."
+msgstr "運算後的矩陣。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"matrixCompMult.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"matrixCompMult.xhtml"
+
+msgid ""
+"|mat_type| **outerProduct**\\ (\\ |vec_type| column, |vec_type| "
+"row) :ref:`🔗<shader_func_outerProduct>`"
+msgstr ""
+"|mat_type| **outerProduct**\\ (\\ |vec_type| column, |vec_type| "
+"row) :ref:`🔗<shader_func_outerProduct>`"
+
+msgid "Calculate the outer product of a pair of vectors."
+msgstr "計算一對向量的外積。"
+
+msgid ""
+"Does a linear algebraic matrix multiply ``column * row``, yielding a matrix "
+"whose number of rows is the number of components in ``column`` and whose "
+"number of columns is the number of components in ``row``."
+msgstr ""
+"執行線性代數中的矩陣乘法 ``column * row``，產生一個矩陣，其列數等於 "
+"``column`` 的分量數，行數等於 ``row`` 的分量數。"
+
+msgid "param column"
+msgstr "參數 column"
+
+msgid "The column vector for multiplication."
+msgstr "作為乘法的欄向量。"
+
+msgid "param row"
+msgstr "參數 row"
+
+msgid "The row vector for multiplication."
+msgstr "作為乘法的列向量。"
+
+msgid "The outer product matrix."
+msgstr "外積結果矩陣。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/outerProduct.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/outerProduct.xhtml"
+
+msgid ""
+"|mat_type| **transpose**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_transpose>`"
+msgstr ""
+"|mat_type| **transpose**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_transpose>`"
+
+msgid "Calculate the transpose of a matrix."
+msgstr "計算矩陣的轉置。"
+
+msgid "param m"
+msgstr "參數 m"
+
+msgid "The matrix to transpose."
+msgstr "要轉置的矩陣。"
+
+msgid "A new matrix that is the transpose of the input matrix ``m``."
+msgstr "輸入矩陣 ``m`` 的轉置結果。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/transpose.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/transpose.xhtml"
+
+msgid ""
+"float **determinant**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_determinant>`"
+msgstr ""
+"float **determinant**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_determinant>`"
+
+msgid "Calculate the determinant of a matrix."
+msgstr "計算矩陣的行列式。"
+
+msgid "The matrix."
+msgstr "矩陣。"
+
+msgid "The determinant of the input matrix ``m``."
+msgstr "輸入矩陣 ``m`` 的行列式。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/determinant.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/determinant.xhtml"
+
+msgid ""
+"|mat_type| **inverse**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_inverse>`"
+msgstr ""
+"|mat_type| **inverse**\\ (\\ |mat_type| m) :ref:`🔗<shader_func_inverse>`"
+
+msgid "Calculate the inverse of a matrix."
+msgstr "計算矩陣的反矩陣。"
+
+msgid ""
+"The values in the returned matrix are undefined if ``m`` is singular or "
+"poorly-conditioned (nearly singular)."
+msgstr "若 ``m`` 為奇異矩陣或條件數過大（接近奇異），回傳矩陣的值未定義。"
+
+msgid "The matrix of which to take the inverse."
+msgstr "要取反矩陣的矩陣。"
+
+msgid "A new matrix which is the inverse of the input matrix ``m``."
+msgstr "輸入矩陣 ``m`` 的反矩陣。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/inverse.xhtml"
+
+msgid "Comparison functions"
+msgstr "比較函式"
+
+msgid ":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`lessThan<shader_func_lessThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector comparison on < int/uint/float vectors."
+msgstr "Bool 向量與 int/uint/float 向量進行 < 比較。"
+
+msgid ""
+":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`greaterThan<shader_func_greaterThan>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector comparison on > int/uint/float vectors."
+msgstr "Bool 向量與 int/uint/float 向量進行 > 比較。"
+
+msgid ""
+":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
+"vec_type| y)"
+msgstr ""
+":ref:`lessThanEqual<shader_func_lessThanEqual>`\\ (\\ |vec_type| x, |"
+"vec_type| y)"
+
+msgid "Bool vector comparison on <= int/uint/float vectors."
+msgstr "Bool 向量與 int/uint/float 向量進行 <= 比較。"
+
+msgid ""
+":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
+"vec_type| y)"
+msgstr ""
+":ref:`greaterThanEqual<shader_func_greaterThanEqual>`\\ (\\  |vec_type| x, |"
+"vec_type| y)"
+
+msgid "Bool vector comparison on >= int/uint/float vectors."
+msgstr "Bool 向量與 int/uint/float 向量進行 >= 比較。"
+
+msgid ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ":ref:`equal<shader_func_equal>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector comparison on == int/uint/float vectors."
+msgstr "Bool 向量與 int/uint/float 向量進行 == 比較。"
+
+msgid ":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
+msgstr ""
+":ref:`notEqual<shader_func_notEqual>`\\ (\\ |vec_type| x, |vec_type| y)"
+
+msgid "Bool vector comparison on != int/uint/float vectors."
+msgstr "Bool 向量與 int/uint/float 向量進行 != 比較。"
+
+msgid "bool"
+msgstr "bool"
+
+msgid ":ref:`any<shader_func_any>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`any<shader_func_any>`\\ (\\ |vec_bool_type| x)"
+
+msgid "``true`` if any component is ``true``, ``false`` otherwise."
+msgstr "只要任一分量為 ``true``，則回傳 ``true``，否則回傳 ``false``。"
+
+msgid ":ref:`all<shader_func_all>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`all<shader_func_all>`\\ (\\ |vec_bool_type| x)"
+
+msgid "``true`` if all components are ``true``, ``false`` otherwise."
+msgstr "僅當所有分量皆為 ``true`` 時回傳 ``true``，否則回傳 ``false``。"
+
+msgid ":ref:`not<shader_func_not>`\\ (\\ |vec_bool_type| x)"
+msgstr ":ref:`not<shader_func_not>`\\ (\\ |vec_bool_type| x)"
+
+msgid "Invert boolean vector."
+msgstr "反轉布林向量。"
+
+msgid "Comparison function descriptions"
+msgstr "比較函式說明"
+
+msgid ""
+"|vec_bool_type| **lessThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThan>`"
+msgstr ""
+"|vec_bool_type| **lessThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThan>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` less-than comparison "
+"of two vectors."
+msgstr "對兩個向量執行 :ref:`元件逐一<shading_componentwise>` 小於比較。"
+
+msgid "The first vector to compare."
+msgstr "要比較的第一個向量。"
+
+msgid "The second vector to compare."
+msgstr "要比較的第二個向量。"
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] < y[i]``."
+msgstr "結果為布林向量，每個分量 i 的值為 ``x[i] < y[i]``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThan.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThan.xhtml"
+
+msgid ""
+"|vec_bool_type| **greaterThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThan>`"
+msgstr ""
+"|vec_bool_type| **greaterThan**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThan>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` greater-than "
+"comparison of two vectors."
+msgstr "對兩個向量執行 :ref:`元件逐一<shading_componentwise>` 大於比較。"
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] > y[i]``."
+msgstr "結果為布林向量，每個分量 i 的值為 ``x[i] > y[i]``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/greaterThan.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/greaterThan.xhtml"
+
+msgid ""
+"|vec_bool_type| **lessThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThanEqual>`"
+msgstr ""
+"|vec_bool_type| **lessThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_lessThanEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` less-than-or-equal "
+"comparison of two vectors."
+msgstr "對兩個向量執行 :ref:`元件逐一<shading_componentwise>` 小於等於比較。"
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] <= y[i]``."
+msgstr "結果為布林向量，每個分量 i 的值為 ``x[i] <= y[i]``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThanEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/lessThanEqual.xhtml"
+
+msgid ""
+"|vec_bool_type| **greaterThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThanEqual>`"
+msgstr ""
+"|vec_bool_type| **greaterThanEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_greaterThanEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` greater-than-or-"
+"equal comparison of two vectors."
+msgstr "對兩個向量執行 :ref:`元件逐一<shading_componentwise>` 大於等於比較。"
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] >= y[i]``."
+msgstr "結果為布林向量，每個分量 i 的值為 ``x[i] >= y[i]``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"greaterThanEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"greaterThanEqual.xhtml"
+
+msgid ""
+"|vec_bool_type| **equal**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_equal>`"
+msgstr ""
+"|vec_bool_type| **equal**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_equal>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` equal-to comparison "
+"of two vectors."
+msgstr "對兩個向量執行 :ref:`元件逐一<shading_componentwise>` 等於比較。"
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] == y[i]``."
+msgstr "結果為布林向量，每個分量 i 的值為 ``x[i] == y[i]``。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/equal.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/equal.xhtml"
+
+msgid ""
+"|vec_bool_type| **notEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_notEqual>`"
+msgstr ""
+"|vec_bool_type| **notEqual**\\ (\\ |vec_type| x, |vec_type| "
+"y) :ref:`🔗<shader_func_notEqual>`"
+
+msgid ""
+"Performs a :ref:`component-wise<shading_componentwise>` not-equal-to "
+"comparison of two vectors."
+msgstr "對兩個向量執行 :ref:`元件逐一<shading_componentwise>` 不等於比較。"
+
+msgid "The first vector for comparison."
+msgstr "比較用的第一個向量。"
+
+msgid "The second vector for comparison."
+msgstr "比較用的第二個向量。"
+
+msgid ""
+"A boolean vector in which each element ``i`` is computed as ``x[i] != y[i]``."
+msgstr "結果為布林向量，每個分量 i 的值為 ``x[i] != y[i]``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/notEqual.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/notEqual.xhtml"
+
+msgid "bool **any**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_any>`"
+msgstr "bool **any**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_any>`"
+
+msgid ""
+"Returns ``true`` if any element of a boolean vector is ``true``, ``false`` "
+"otherwise."
+msgstr "若布林向量任一元素為 ``true`` 則回傳 ``true``，否則回傳 ``false``。"
+
+msgid "Functionally equivalent to:"
+msgstr "功能上等同於："
+
+msgid "The vector to be tested for truth."
+msgstr "要測試是否有 true 的布林向量。"
+
+msgid "True if any element of x is true and false otherwise."
+msgstr "若 ``x`` 任一分量為 true 則回傳 true，否則為 false。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/any.xhtml"
+
+msgid "bool **all**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_all>`"
+msgstr "bool **all**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_all>`"
+
+msgid ""
+"Returns ``true`` if all elements of a boolean vector are ``true``, ``false`` "
+"otherwise."
+msgstr "若布林向量所有元素皆為 ``true`` 則回傳 ``true``，否則回傳 ``false``。"
+
+msgid "``true`` if all elements of ``x`` are ``true`` and ``false`` otherwise."
+msgstr "僅當 ``x`` 所有分量皆為 true 時回傳 true，否則為 false。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/all.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/all.xhtml"
+
+msgid ""
+"|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
+msgstr ""
+"|vec_bool_type| **not**\\ (\\ |vec_bool_type| x) :ref:`🔗<shader_func_not>`"
+
+msgid "Logically invert a boolean vector."
+msgstr "邏輯反轉布林向量。"
+
+msgid "The vector to be inverted."
+msgstr "要反轉的布林向量。"
+
+msgid "A new boolean vector for which each element i is computed as !x[i]."
+msgstr "回傳每個分量為 !x[i] 的新布林向量。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/not.xhtml"
+
+msgid "Texture functions"
+msgstr "紋理函式"
+
+msgid "ivec2"
+msgstr "ivec2"
+
+msgid "ivec3"
+msgstr "ivec3"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2D| s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2D| s, int lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCube s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCube s, int lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCubeArray s, int "
+"lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ samplerCubeArray s, int "
+"lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2DArray| s, int "
+"lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler2DArray| s, int "
+"lod)"
+
+msgid ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
+msgstr ""
+":ref:`textureSize<shader_func_textureSize>`\\ (\\ |gsampler3D| s, int lod)"
+
+msgid "Get the size of a texture."
+msgstr "取得紋理大小。"
+
+msgid "vec2"
+msgstr "vec2"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2D| s, "
+"vec2 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2D| s, "
+"vec2 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2DArray| "
+"s, vec2 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler2DArray| "
+"s, vec2 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler3D| s, "
+"vec3 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ |gsampler3D| s, "
+"vec3 p)"
+
+msgid ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ samplerCube s, "
+"vec3 p)"
+msgstr ""
+":ref:`textureQueryLod<shader_func_textureQueryLod>`\\ (\\ samplerCube s, "
+"vec3 p)"
+
+msgid ""
+"Compute the level-of-detail that would be used to sample from a texture."
+msgstr "計算取樣紋理時會用到的細節層級（LOD）。"
+
+msgid "int"
+msgstr "int"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler2D| "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler2D| "
+"s)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |"
+"gsampler2DArray| s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |"
+"gsampler2DArray| s)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler3D| "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ |gsampler3D| "
+"s)"
+
+msgid ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
+"s)"
+msgstr ""
+":ref:`textureQueryLevels<shader_func_textureQueryLevels>`\\ (\\ samplerCube "
+"s)"
+
+msgid "Get the number of accessible mipmap levels of a texture."
+msgstr "取得紋理可存取的 mipmap 層數。"
+
+msgid "|gvec4_type|"
+msgstr "|gvec4_type|"
+
+msgid "vec4"
+msgstr "vec4"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2DArray| s, vec3 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler2DArray| s, vec3 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCube s, vec3 p [, float "
+"bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCube s, vec3 p [, float "
+"bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCubeArray s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerCubeArray s, vec4 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerExternalOES s, vec2 p [, "
+"float bias] )"
+msgstr ""
+":ref:`texture<shader_func_texture>`\\ (\\ samplerExternalOES s, vec2 p [, "
+"float bias] )"
+
+msgid "Performs a texture read."
+msgstr "執行紋理讀取。"
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec3 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec3 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler2D| s, vec4 p [, "
+"float bias] )"
+
+msgid ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler3D| s, vec4 p [, "
+"float bias] )"
+msgstr ""
+":ref:`textureProj<shader_func_textureProj>`\\ (\\ |gsampler3D| s, vec4 p [, "
+"float bias] )"
+
+msgid "Performs a texture read with projection."
+msgstr "執行帶投影的紋理讀取。"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2D| s, vec2 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2D| s, vec2 p, "
+"float lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2DArray| s, vec3 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler2DArray| s, vec3 p, "
+"float lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler3D| s, vec3 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ |gsampler3D| s, vec3 p, "
+"float lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCube s, vec3 p, float "
+"lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCube s, vec3 p, float "
+"lod)"
+
+msgid ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCubeArray s, vec4 p, "
+"float lod)"
+msgstr ""
+":ref:`textureLod<shader_func_textureLod>`\\ (\\ samplerCubeArray s, vec4 p, "
+"float lod)"
+
+msgid "Performs a texture read at custom mipmap."
+msgstr "在指定 mipmap 層進行紋理取樣。"
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec3 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec3 "
+"p, float lod)"
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec4 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler2D| s, vec4 "
+"p, float lod)"
+
+msgid ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler3D| s, vec4 "
+"p, float lod)"
+msgstr ""
+":ref:`textureProjLod<shader_func_textureProjLod>`\\ (\\ |gsampler3D| s, vec4 "
+"p, float lod)"
+
+msgid "Performs a texture read with projection/LOD."
+msgstr "執行帶投影/LOD 的紋理取樣。"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2D| s, vec2 p, "
+"vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2D| s, vec2 p, "
+"vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2DArray| s, vec3 "
+"p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler2DArray| s, vec3 "
+"p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler3D| s, vec3 p, "
+"vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ |gsampler3D| s, vec3 p, "
+"vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCube s, vec3 p, "
+"vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCube s, vec3 p, "
+"vec3 dPdx, vec3 dPdy)"
+
+msgid ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCubeArray s, vec3 "
+"p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureGrad<shader_func_textureGrad>`\\ (\\ samplerCubeArray s, vec3 "
+"p, vec3 dPdx, vec3 dPdy)"
+
+msgid "Performs a texture read with explicit gradients."
+msgstr "執行具有明確梯度的紋理取樣。"
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec3 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec3 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec4 p, vec2 dPdx, vec2 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler2D| s, "
+"vec4 p, vec2 dPdx, vec2 dPdy)"
+
+msgid ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
+"vec4 p, vec3 dPdx, vec3 dPdy)"
+msgstr ""
+":ref:`textureProjGrad<shader_func_textureProjGrad>`\\ (\\ |gsampler3D| s, "
+"vec4 p, vec3 dPdx, vec3 dPdy)"
+
+msgid "Performs a texture read with projection/LOD and with explicit"
+msgstr "執行帶有投影/細節層級（LOD）和明確梯度的材質讀取"
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod)"
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2DArray| s, ivec3 "
+"p, int lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler2DArray| s, ivec3 "
+"p, int lod)"
+
+msgid ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod)"
+msgstr ""
+":ref:`texelFetch<shader_func_texelFetch>`\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod)"
+
+msgid "Fetches a single texel using integer coordinates."
+msgstr "用整數座標讀取單一紋素（texel）。"
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2D| s, vec2 p "
+"[, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2D| s, vec2 p "
+"[, int comps] )"
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2DArray| s, "
+"vec3 p [, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ |gsampler2DArray| s, "
+"vec3 p [, int comps] )"
+
+msgid ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ samplerCube s, vec3 p "
+"[, int comps] )"
+msgstr ""
+":ref:`textureGather<shader_func_textureGather>`\\ (\\ samplerCube s, vec3 p "
+"[, int comps] )"
+
+msgid "Gathers four texels from a texture."
+msgstr "從紋理中收集四個紋素。"
+
+msgid ":ref:`dFdx<shader_func_dFdx>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdx<shader_func_dFdx>`\\ (\\ |vec_type| p)"
+
+msgid ""
+"Derivative with respect to ``x`` window coordinate, automatic granularity."
+msgstr "對 ``x`` 視窗座標取偏導數，自動粒度。"
+
+msgid ":ref:`dFdxCoarse<shader_func_dFdxCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdxCoarse<shader_func_dFdxCoarse>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``x`` window coordinate, course granularity."
+msgstr "對 ``x`` 視窗座標取偏導數，較粗粒度。"
+
+msgid "Not available when using the Compatibility renderer."
+msgstr "於使用相容性繪圖器時無法使用。"
+
+msgid ":ref:`dFdxFine<shader_func_dFdxFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdxFine<shader_func_dFdxFine>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``x`` window coordinate, fine granularity."
+msgstr "對 ``x`` 視窗座標取偏導數，細緻粒度。"
+
+msgid ":ref:`dFdy<shader_func_dFdy>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdy<shader_func_dFdy>`\\ (\\ |vec_type| p)"
+
+msgid ""
+"Derivative with respect to ``y`` window coordinate, automatic granularity."
+msgstr "對 ``y`` 視窗座標取偏導數，自動粒度。"
+
+msgid ":ref:`dFdyCoarse<shader_func_dFdyCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdyCoarse<shader_func_dFdyCoarse>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``y`` window coordinate, course granularity."
+msgstr "對 ``y`` 視窗座標取偏導數，較粗粒度。"
+
+msgid ":ref:`dFdyFine<shader_func_dFdyFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`dFdyFine<shader_func_dFdyFine>`\\ (\\ |vec_type| p)"
+
+msgid "Derivative with respect to ``y`` window coordinate, fine granularity."
+msgstr "對 ``y`` 視窗座標取偏導數，細緻粒度。"
+
+msgid ":ref:`fwidth<shader_func_fwidth>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidth<shader_func_fwidth>`\\ (\\ |vec_type| p)"
+
+msgid "Sum of absolute derivative in ``x`` and ``y``."
+msgstr "``x`` 與 ``y`` 方向偏導數的絕對值總和。"
+
+msgid ":ref:`fwidthCoarse<shader_func_fwidthCoarse>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidthCoarse<shader_func_fwidthCoarse>`\\ (\\ |vec_type| p)"
+
+msgid ":ref:`fwidthFine<shader_func_fwidthFine>`\\ (\\ |vec_type| p)"
+msgstr ":ref:`fwidthFine<shader_func_fwidthFine>`\\ (\\ |vec_type| p)"
+
+msgid "Texture function descriptions"
+msgstr "紋理函式說明"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ |gsampler2D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ |gsampler2D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ samplerCube s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ samplerCube s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec2 **textureSize**\\ (\\ samplerCubeArray s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec2 **textureSize**\\ (\\ samplerCubeArray s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec3 **textureSize**\\ (\\ |gsampler2DArray| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec3 **textureSize**\\ (\\ |gsampler2DArray| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid ""
+"ivec3 **textureSize**\\ (\\ |gsampler3D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+msgstr ""
+"ivec3 **textureSize**\\ (\\ |gsampler3D| s, int "
+"lod) :ref:`🔗<shader_func_textureSize>`"
+
+msgid "Retrieves the dimensions of a level of a texture."
+msgstr "取得材質指定層級的尺寸。"
+
+msgid ""
+"Returns the dimensions of level ``lod`` (if present) of the texture bound to "
+"sampler."
+msgstr "回傳綁定於取樣器的紋理，在指定 ``lod`` 層級（若有）下的尺寸。"
+
+msgid ""
+"The components in the return value are filled in, in order, with the width, "
+"height and depth of the texture. For the array forms, the last component of "
+"the return value is the number of layers in the texture array."
+msgstr ""
+"回傳值的各分量依序填入紋理的寬度、高度與深度。若為陣列形式，最後一個分量則為"
+"紋理陣列的圖層數。"
+
+msgid "param s"
+msgstr "參數 s"
+
+msgid "The sampler to which the texture whose dimensions to retrieve is bound."
+msgstr "用於綁定目標紋理的取樣器。"
+
+msgid "param lod"
+msgstr "參數 lod"
+
+msgid "The level of the texture for which to retrieve the dimensions."
+msgstr "欲查詢尺寸的紋理層級。"
+
+msgid ""
+"The dimensions of level ``lod`` (if present) of the texture bound to sampler."
+msgstr "綁定於取樣器的紋理，第 ``lod`` 層的尺寸（若存在）。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureSize.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureSize.xhtml"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2D| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2D| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2DArray| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler2DArray| s, vec2 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler3D| s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ |gsampler3D| s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid ""
+"vec2 **textureQueryLod**\\ (\\ samplerCube s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+msgstr ""
+"vec2 **textureQueryLod**\\ (\\ samplerCube s, vec3 "
+"p) :ref:`🔗<shader_func_textureQueryLod>`"
+
+msgid "Available only in the fragment shader."
+msgstr "僅於片段著色器中可用。"
+
+msgid ""
+"The mipmap array(s) that would be accessed is returned in the x component of "
+"the return value. The computed level-of-detail relative to the base level is "
+"returned in the y component of the return value."
+msgstr ""
+"會被存取的 mipmap 陣列會回傳於 x 分量。以基礎層級為基準計算的細節層級會回傳"
+"於 y 分量。"
+
+msgid ""
+"If called on an incomplete texture, the result of the operation is undefined."
+msgstr "若針對不完整的紋理呼叫，操作結果未定義。"
+
+msgid ""
+"The sampler to which the texture whose level-of-detail will be queried is "
+"bound."
+msgstr "要查詢細節層級（LOD）的紋理所綁定的取樣器。"
+
+msgid "param p"
+msgstr "參數 p"
+
+msgid "The texture coordinates at which the level-of-detail will be queried."
+msgstr "查詢細節層級時使用的紋理座標。"
+
+msgid "See description."
+msgstr "詳見說明。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLod.xhtml"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler2D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler2D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler2DArray| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler2DArray| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ |gsampler3D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ |gsampler3D| "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid ""
+"int **textureQueryLevels**\\ (\\ samplerCube "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+msgstr ""
+"int **textureQueryLevels**\\ (\\ samplerCube "
+"s) :ref:`🔗<shader_func_textureQueryLevels>`"
+
+msgid "Compute the number of accessible mipmap levels of a texture."
+msgstr "計算紋理可存取的 mipmap 層數。"
+
+msgid ""
+"If called on an incomplete texture, or if no texture is associated with "
+"sampler, ``0`` is returned."
+msgstr "若對不完整的紋理或未關聯紋理的取樣器呼叫，則回傳 ``0``。"
+
+msgid ""
+"The sampler to which the texture whose mipmap level count will be queried is "
+"bound."
+msgstr "要查詢 mipmap 層數的紋理所綁定的取樣器。"
+
+msgid "The number of accessible mipmap levels in the texture, or ``0``."
+msgstr "紋理可存取的 mipmap 層數，或 ``0``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLevels.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureQueryLevels.xhtml"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2D| s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2DArray| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **texture**\\ (\\ |gsampler2DArray| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"|gvec4_type| **texture**\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"|gvec4_type| **texture**\\ (\\ |gsampler3D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerCube s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **texture**\\ (\\ samplerCube s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerCubeArray s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **texture**\\ (\\ samplerCubeArray s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid ""
+"vec4 **texture**\\ (\\ samplerExternalOES s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+msgstr ""
+"vec4 **texture**\\ (\\ samplerExternalOES s, vec2 p [, float "
+"bias] ) :ref:`🔗<shader_func_texture>`"
+
+msgid "Retrieves texels from a texture."
+msgstr "從材質中取得像素（texel）。"
+
+msgid ""
+"Samples texels from the texture bound to ``s`` at texture coordinate ``p``. "
+"An optional bias, specified in ``bias`` is included in the level-of-detail "
+"computation that is used to choose mipmap(s) from which to sample."
+msgstr ""
+"於座標 ``p`` 上，從綁定於 ``s`` 的紋理取樣紋素。細節層級計算時可選用 "
+"``bias`` 作為偏移，選擇要取樣的 mipmap 層。"
+
+msgid ""
+"For shadow forms, the last component of ``p`` is used as Dsub and the array "
+"layer is specified in the second to last component of ``p``. (The second "
+"component of ``p`` is unused for 1D shadow lookups.)"
+msgstr ""
+"對於陰影型態，``p`` 的最後一個分量作為 Dsub，用於比較，倒數第二個分量指定陣列"
+"層（1D 陰影查詢時第二個分量不使用）"
+
+msgid ""
+"For non-shadow variants, the array layer comes from the last component of P."
+msgstr "非陰影版本時，陣列層來自 P 的最後一個分量。"
+
+msgid ""
+"The sampler to which the texture from which texels will be retrieved is "
+"bound."
+msgstr "從中取樣紋素的紋理所綁定的取樣器。"
+
+msgid "The texture coordinates at which texture will be sampled."
+msgstr "要取樣的紋理座標。"
+
+msgid "param bias"
+msgstr "參數 bias"
+
+msgid "An optional bias to be applied during level-of-detail computation."
+msgstr "細節層級（LOD）計算時可選用的偏移值。"
+
+msgid "A texel."
+msgstr "一個紋素。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texture.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec3 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler2D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+msgstr ""
+"|gvec4_type| **textureProj**\\ (\\ |gsampler3D| s, vec4 p [, float "
+"bias] ) :ref:`🔗<shader_func_textureProj>`"
+
+msgid "Perform a texture lookup with projection."
+msgstr "執行帶投影的紋理查詢。"
+
+msgid ""
+"The texture coordinates consumed from ``p``, not including the last "
+"component of ``p``, are divided by the last component of ``p``. The "
+"resulting 3rd component of ``p`` in the shadow forms is used as Dref. After "
+"these values are computed, the texture lookup proceeds as in texture."
+msgstr ""
+"從 ``p`` 取得的紋理座標（不含最後一個分量）會除以 ``p`` 的最後一個分量。若為"
+"陰影（shadow）形式，計算後的第三分量會作為 Dref。計算完成後，即依 texture 進"
+"行查詢。"
+
+msgid "Optional bias to be applied during level-of-detail computation."
+msgstr "細節層級（LOD）計算時可選用的偏移量。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProj.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureProj.xhtml"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2D| s, vec2 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2D| s, vec2 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2DArray| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler2DArray| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler3D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"|gvec4_type| **textureLod**\\ (\\ |gsampler3D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"vec4 **textureLod**\\ (\\ samplerCube s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"vec4 **textureLod**\\ (\\ samplerCube s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"vec4 **textureLod**\\ (\\ samplerCubeArray s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+msgstr ""
+"vec4 **textureLod**\\ (\\ samplerCubeArray s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureLod>`"
+
+msgid ""
+"Performs a texture lookup at coordinate ``p`` from the texture bound to "
+"sampler with an explicit level-of-detail as specified in ``lod``. ``lod`` "
+"specifies λbase and sets the partial derivatives as follows:"
+msgstr ""
+"在由取樣器綁定的紋理中，於座標 ``p`` 進行查詢，並使用 ``lod`` 指定的顯式細節"
+"層級。``lod`` 指定 λbase，並將偏導數設為："
+
+msgid "The explicit level-of-detail."
+msgstr "指定的細節層級（LOD）。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureLod.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec3 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler2D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler3D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+msgstr ""
+"|gvec4_type| **textureProjLod**\\ (\\ |gsampler3D| s, vec4 p, float "
+"lod) :ref:`🔗<shader_func_textureProjLod>`"
+
+msgid ""
+"Performs a texture lookup with projection from an explicitly specified level-"
+"of-detail."
+msgstr "執行從指定細節層級（LOD）開始的帶投影材質查找。"
+
+msgid ""
+"The texture coordinates consumed from P, not including the last component of "
+"``p``, are divided by the last component of ``p``. The resulting 3rd "
+"component of ``p`` in the shadow forms is used as Dref. After these values "
+"are computed, the texture lookup proceeds as in "
+"`textureLod<shader_func_textureLod>`, with ``lod`` used to specify the level-"
+"of-detail from which the texture will be sampled."
+msgstr ""
+"從 P 取用的紋理座標（不含最後一個分量）會除以 ``p`` 的最後分量。若為 shadow "
+"形式，最後的第三分量作為 Dref。計算後，紋理查詢會如 "
+"`textureLod<shader_func_textureLod>` 一般，並由 ``lod`` 指定取樣細節層級。"
+
+msgid "The explicit level-of-detail from which to fetch texels."
+msgstr "要從哪個明確細節層級（LOD）取得像素。"
+
+msgid "a texel"
+msgstr "一個像素（texel）"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjLod.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjLod.xhtml"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2D| s, vec2 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2D| s, vec2 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2DArray| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler2DArray| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler3D| s, vec3 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"|gvec4_type| **textureGrad**\\ (\\ |gsampler3D| s, vec3 p, vec2 dPdx, vec2 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"vec4 **textureGrad**\\ (\\ samplerCube s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"vec4 **textureGrad**\\ (\\ samplerCube s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"vec4 **textureGrad**\\ (\\ samplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+msgstr ""
+"vec4 **textureGrad**\\ (\\ samplerCubeArray s, vec3 p, vec3 dPdx, vec3 "
+"dPdy) :ref:`🔗<shader_func_textureGrad>`"
+
+msgid ""
+"Performs a texture lookup at coordinate ``p`` from the texture bound to "
+"sampler with explicit texture coordinate gradiends as specified in ``dPdx`` "
+"and ``dPdy``. Set:"
+msgstr ""
+"於由取樣器綁定的紋理中，以 ``p`` 為座標，並以 ``dPdx`` 和 ``dPdy`` 指定的紋理"
+"座標梯度進行查詢。設定如下："
+
+msgid "``δs/δx=δp/δx`` for a 1D texture, ``δp.s/δx`` otherwise"
+msgstr "對 1D 紋理為 ``δs/δx=δp/δx``，否則為 ``δp.s/δx``"
+
+msgid "``δs/δy=δp/δy`` for a 1D texture, ``δp.s/δy`` otherwise"
+msgstr "對 1D 紋理為 ``δs/δy=δp/δy``，否則為 ``δp.s/δy``"
+
+msgid "``δt/δx=0.0`` for a 1D texture, ``δp.t/δx`` otherwise"
+msgstr "對 1D 紋理為 ``δt/δx=0.0``，否則為 ``δp.t/δx``"
+
+msgid "``δt/δy=0.0`` for a 1D texture, ``δp.t/δy`` otherwise"
+msgstr "對 1D 紋理為 ``δt/δy=0.0``，否則為 ``δp.t/δy``"
+
+msgid "``δr/δx=0.0`` for a 1D or 2D texture, ``δp.p/δx`` otherwise"
+msgstr "對 1D 或 2D 紋理為 ``δr/δx=0.0``，否則為 ``δp.p/δx``"
+
+msgid "``δr/δy=0.0``  for a 1D or 2D texture, ``δp.p/δy`` otherwise"
+msgstr "對 1D 或 2D 紋理為 ``δr/δy=0.0``，否則為 ``δp.p/δy``"
+
+msgid ""
+"For the cube version, the partial derivatives of ``p`` are assumed to be in "
+"the coordinate system used before texture coordinates are projected onto the "
+"appropriate cube face."
+msgstr "對於立方體版本，``p`` 的偏導數假設是投影到對應立方體面之前的座標系統。"
+
+msgid "param dPdx"
+msgstr "參數 dPdx"
+
+msgid "The partial derivative of P with respect to window x."
+msgstr "P 關於視窗 x 的偏導數。"
+
+msgid "param dPdy"
+msgstr "參數 dPdy"
+
+msgid "The partial derivative of P with respect to window y."
+msgstr "P 關於視窗 y 的偏導數。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGrad.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGrad.xhtml"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec3 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec4 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler2D| s, vec4 p, vec2 dPdx, "
+"vec2 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
+"vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+msgstr ""
+"|gvec4_type| **textureProjGrad**\\ (\\ |gsampler3D| s, vec4 p, vec3 dPdx, "
+"vec3 dPdy) :ref:`🔗<shader_func_textureProjGrad>`"
+
+msgid "Perform a texture lookup with projection and explicit gradients."
+msgstr "執行帶有投影與明確梯度的材質查找。"
+
+msgid ""
+"The texture coordinates consumed from ``p``, not including the last "
+"component of ``p``, are divided by the last component of ``p``. After these "
+"values are computed, the texture lookup proceeds as in "
+"`textureGrad<shader_func_textureGrad>`, passing ``dPdx`` and ``dPdy`` as "
+"gradients."
+msgstr ""
+"從 ``p`` 取用的紋理座標（不含最後一個分量）會除以最後分量。計算完成後，紋理查"
+"詢會如 `textureGrad<shader_func_textureGrad>`，並以 ``dPdx`` 與 ``dPdy`` 作為"
+"梯度傳入。"
+
+msgid "The partial derivative of ``p`` with respect to window x."
+msgstr "``p`` 對視窗 x 座標的偏導數。"
+
+msgid "The partial derivative of ``p`` with respect to window y."
+msgstr "``p`` 對視窗 y 座標的偏導數。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjGrad.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"textureProjGrad.xhtml"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2D| s, ivec2 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2DArray| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler2DArray| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+msgstr ""
+"|gvec4_type| **texelFetch**\\ (\\ |gsampler3D| s, ivec3 p, int "
+"lod) :ref:`🔗<shader_func_texelFetch>`"
+
+msgid ""
+"Performs a lookup of a single texel from texture coordinate ``p`` in the "
+"texture bound to sampler."
+msgstr "從由取樣器綁定的紋理，以座標 ``p`` 查詢單一 texel。"
+
+msgid ""
+"Specifies the level-of-detail within the texture from which the texel will "
+"be fetched."
+msgstr "指定從哪個細節層級（level-of-detail）取出 texel。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texelFetch.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/texelFetch.xhtml"
+
+msgid ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2D| s, vec2 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2D| s, vec2 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
+msgid ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2DArray| s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"|gvec4_type| **textureGather**\\ (\\ |gsampler2DArray| s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
+msgid ""
+"vec4 **textureGather**\\ (\\ samplerCube s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+msgstr ""
+"vec4 **textureGather**\\ (\\ samplerCube s, vec3 p [, int "
+"comps] ) :ref:`🔗<shader_func_textureGather>`"
+
+msgid "Returns the value:"
+msgstr "回傳下列值："
+
+msgid "param comps"
+msgstr "參數 comps"
+
+msgid ""
+"*optional* the component of the source texture (0 -> x, 1 -> y, 2 -> z, 3 -> "
+"w) that will be used to generate the resulting vector. Zero if not specified."
+msgstr ""
+"*選填* 來源紋理的分量（0 → x, 1 → y, 2 → z, 3 → w），用於產生結果向量。未指定"
+"時預設為 0。"
+
+msgid "The gathered texel."
+msgstr "收集到的紋素。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGather.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/textureGather.xhtml"
+
+msgid "|vec_type| **dFdx**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdx>`"
+msgstr "|vec_type| **dFdx**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdx>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window x "
+"coordinate using local differencing."
+msgstr "以局部差分方式，回傳 ``p`` 相對於視窗 x 座標的偏導數。"
+
+msgid ""
+"Returns either :ref:`dFdxCoarse<shader_func_dFdxCoarse>` "
+"or :ref:`dFdxFine<shader_func_dfdxFine>`. The implementation may choose "
+"which calculation to perform based upon factors such as performance or the "
+"value of the API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` hint."
+msgstr ""
+"回傳 :ref:`dFdxCoarse<shader_func_dFdxCoarse>` "
+"或 :ref:`dFdxFine<shader_func_dfdxFine>`。實作端可根據效能或 "
+"``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` API 參數等因素選擇計算方式。"
+
+msgid ""
+"Expressions that imply higher order derivatives such as ``dFdx(dFdx(n))`` "
+"have undefined results, as do mixed-order derivatives such as "
+"``dFdx(dFdy(n))``."
+msgstr ""
+"出現高階導數（如 ``dFdx(dFdx(n))``）或混合導數（如 ``dFdx(dFdy(n))``）的表達"
+"式，結果未定義。"
+
+msgid "The expression of which to take the partial derivative."
+msgstr "欲計算偏導數的運算式。"
+
+msgid ""
+"It is assumed that the expression ``p`` is continuous and therefore "
+"expressions evaluated via non-uniform control flow may be undefined."
+msgstr ""
+"假設運算式 ``p`` 是連續的，因此經由非均勻控制流程計算的表達式可能結果未定義。"
+
+msgid "The partial derivative of ``p``."
+msgstr "``p`` 的偏導數。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+
+msgid ""
+"|vec_type| **dFdxCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdxCoarse>`"
+msgstr ""
+"|vec_type| **dFdxCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdxCoarse>`"
+
+msgid ""
+"Available only in the fragment shader. Not available when using the "
+"Compatibility renderer."
+msgstr "僅於片段著色器可用。使用相容性繪圖器時無法使用。"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window x "
+"coordinate."
+msgstr "回傳 ``p`` 相對於視窗 x 座標的偏導數。"
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment's neighbors, and will possibly, but not "
+"necessarily, include the value for the current fragment. That is, over a "
+"given area, the implementation can compute derivatives in fewer unique "
+"locations than would be allowed for the "
+"corresponding :ref:`dFdxFine<shader_func_dFdxFine>` function."
+msgstr ""
+"根據目前片段鄰近片段的 ``p`` 值，使用區域差分計算導數，可能但不一定包含目前片"
+"段本身的值。也就是說，在同一範圍內，實作可在"
+"比 :ref:`dFdxFine<shader_func_dFdxFine>` 更少的位置計算導數。"
+
+msgid "https://registry.khronos.org/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+msgstr "https://registry.khronos.org/OpenGL-Refpages/gl4/html/dFdx.xhtml"
+
+msgid ""
+"|vec_type| **dFdxFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdxFine>`"
+msgstr ""
+"|vec_type| **dFdxFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdxFine>`"
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment and its immediate neighbor(s)."
+msgstr "根據目前片段與其相鄰片段的 ``p`` 值，使用區域差分計算導數。"
+
+msgid "|vec_type| **dFdy**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdy>`"
+msgstr "|vec_type| **dFdy**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdy>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window y "
+"coordinate using local differencing."
+msgstr "以局部差分方式回傳 ``p`` 相對於視窗 y 座標的偏導數。"
+
+msgid ""
+"Returns either :ref:`dFdyCoarse<shader_func_dFdyCoarse>` "
+"or :ref:`dFdyFine<shader_func_dfdyFine>`. The implementation may choose "
+"which calculation to perform based upon factors such as performance or the "
+"value of the API ``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` hint."
+msgstr ""
+"回傳 :ref:`dFdyCoarse<shader_func_dFdyCoarse>` "
+"或 :ref:`dFdyFine<shader_func_dfdyFine>`。實作端可根據效能或 "
+"``GL_FRAGMENT_SHADER_DERIVATIVE_HINT`` API 參數等因素選擇計算方式。"
+
+msgid ""
+"|vec_type| **dFdyCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdyCoarse>`"
+msgstr ""
+"|vec_type| **dFdyCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_dFdyCoarse>`"
+
+msgid ""
+"Returns the partial derivative of ``p`` with respect to the window y "
+"coordinate."
+msgstr "回傳 ``p`` 相對於視窗 y 座標的偏導數。"
+
+msgid ""
+"Calculates derivatives using local differencing based on the value of ``p`` "
+"for the current fragment's neighbors, and will possibly, but not "
+"necessarily, include the value for the current fragment. That is, over a "
+"given area, the implementation can compute derivatives in fewer unique "
+"locations than would be allowed for the corresponding dFdyFine and dFdyFine "
+"functions."
+msgstr ""
+"使用當前片段鄰近區塊的 ``p`` 值進行局部差分計算導數，且可能（但不一定）包含當"
+"前片段的值。也就是說，在給定區域內，實作端可在比 dFdyFine 等函式更少的位置計"
+"算導數。"
+
+msgid ""
+"|vec_type| **dFdyFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdyFine>`"
+msgstr ""
+"|vec_type| **dFdyFine**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_dFdyFine>`"
+
+msgid "|vec_type| **fwidth**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_fwidth>`"
+msgstr ""
+"|vec_type| **fwidth**\\ (\\ |vec_type| p) :ref:`🔗<shader_func_fwidth>`"
+
+msgid "Returns the sum of the absolute value of derivatives in x and y."
+msgstr "回傳 x 與 y 方向導數的絕對值總和。"
+
+msgid "Uses local differencing for the input argument ``p``."
+msgstr "對輸入參數 ``p`` 使用局部差分。"
+
+msgid "Equivalent to ``abs(dFdx(p)) + abs(dFdy(p))``."
+msgstr "等同於 ``abs(dFdx(p)) + abs(dFdy(p))`` 。"
+
+msgid "The partial derivative."
+msgstr "偏導數。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+
+msgid ""
+"|vec_type| **fwidthCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthCoarse>`"
+msgstr ""
+"|vec_type| **fwidthCoarse**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthCoarse>`"
+
+msgid "Uses local differencing for the input argument p."
+msgstr "對輸入參數 p 使用區域差分運算。"
+
+msgid "Equivalent  to ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``."
+msgstr "等同於 ``abs(dFdxCoarse(p)) + abs(dFdyCoarse(p))``。"
+
+msgid ""
+"|vec_type| **fwidthFine**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthFine>`"
+msgstr ""
+"|vec_type| **fwidthFine**\\ (\\ |vec_type| "
+"p) :ref:`🔗<shader_func_fwidthFine>`"
+
+msgid "Equivalent to ``abs(dFdxFine(p)) + abs(dFdyFine(p))``."
+msgstr "等同於 ``abs(dFdxFine(p)) + abs(dFdyFine(p))``。"
+
+msgid "https://registry.khronos.org/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+msgstr "https://registry.khronos.org/OpenGL-Refpages/gl4/html/fwidth.xhtml"
+
+msgid "Packing and unpacking functions"
+msgstr "打包與解包函式"
+
+msgid ""
+"These functions convert floating-point numbers into various sized integers "
+"and then pack those integers into a single 32bit unsigned integer. The "
+"'unpack' functions perform the opposite operation, returning the original "
+"floating-point numbers."
+msgstr ""
+"這些函式可將浮點數轉換為不同大小的整數，並將其打包為單一 32 位元無符號整"
+"數。'unpack' 函式則反向操作，還原為原本的浮點數。"
+
+msgid "uint"
+msgstr "uint"
+
+msgid ":ref:`packHalf2x16<shader_func_packHalf2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packHalf2x16<shader_func_packHalf2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackHalf2x16<shader_func_unpackHalf2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackHalf2x16<shader_func_unpackHalf2x16>`\\ (\\ uint v)"
+
+msgid "Convert two 32-bit floats to 16 bit floats and pack them."
+msgstr "將兩個 32 位元 float 轉換並打包為 16 位元 float。"
+
+msgid ":ref:`packUnorm2x16<shader_func_packUnorm2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packUnorm2x16<shader_func_packUnorm2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackUnorm2x16<shader_func_unpackUnorm2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackUnorm2x16<shader_func_unpackUnorm2x16>`\\ (\\ uint v)"
+
+msgid ""
+"Convert two normalized (range 0..1) 32-bit floats to 16-bit unsigned ints "
+"and pack them."
+msgstr ""
+"將兩個正規化（範圍 0..1）的 32 位元浮點數轉換為 16 位元無號整數並加以打包。"
+
+msgid ":ref:`packSnorm2x16<shader_func_packSnorm2x16>`\\ (\\ vec2 v)"
+msgstr ":ref:`packSnorm2x16<shader_func_packSnorm2x16>`\\ (\\ vec2 v)"
+
+msgid ":ref:`unpackSnorm2x16<shader_func_unpackSnorm2x16>`\\ (\\ uint v)"
+msgstr ":ref:`unpackSnorm2x16<shader_func_unpackSnorm2x16>`\\ (\\ uint v)"
+
+msgid ""
+"Convert two signed normalized (range -1..1) 32-bit floats to 16-bit signed "
+"ints and pack them."
+msgstr ""
+"將兩個有號正規化（範圍 -1..1）的 32 位元浮點數轉換為 16 位元有號整數並加以打"
+"包。"
+
+msgid ":ref:`packUnorm4x8<shader_func_packUnorm4x8>`\\ (\\ vec4 v)"
+msgstr ":ref:`packUnorm4x8<shader_func_packUnorm4x8>`\\ (\\ vec4 v)"
+
+msgid ":ref:`unpackUnorm4x8<shader_func_unpackUnorm4x8>`\\ (\\ uint v)"
+msgstr ":ref:`unpackUnorm4x8<shader_func_unpackUnorm4x8>`\\ (\\ uint v)"
+
+msgid ""
+"Convert four normalized (range 0..1) 32-bit floats into 8-bit unsigned ints "
+"and pack them."
+msgstr ""
+"將四個正規化（範圍 0..1）的 32 位元浮點數轉換為 8 位元無號整數並加以打包。"
+
+msgid ":ref:`packSnorm4x8<shader_func_packSnorm4x8>`\\ (\\ vec4 v)"
+msgstr ":ref:`packSnorm4x8<shader_func_packSnorm4x8>`\\ (\\ vec4 v)"
+
+msgid ":ref:`unpackSnorm4x8<shader_func_unpackSnorm4x8>`\\ (\\ uint v)"
+msgstr ":ref:`unpackSnorm4x8<shader_func_unpackSnorm4x8>`\\ (\\ uint v)"
+
+msgid ""
+"Convert four signed normalized (range -1..1) 32-bit floats into 8-bit signed "
+"ints and pack them."
+msgstr ""
+"將四個有號正規化（範圍 -1..1）的 32 位元浮點數轉換為 8 位元有號整數並加以打"
+"包。"
+
+msgid "Packing and unpacking function descriptions"
+msgstr "打包與解包函式說明"
+
+msgid "uint **packHalf2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packHalf2x16>`"
+msgstr ""
+"uint **packHalf2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packHalf2x16>`"
+
+msgid ""
+"Converts two 32-bit floating-point quantities to 16-bit floating-point "
+"quantities and packs them into a single 32-bit integer."
+msgstr "將兩個 32 位元浮點數轉換為 16 位元浮點數，並封裝成一個 32 位元整數。"
+
+msgid ""
+"Returns an unsigned integer obtained by converting the components of a two-"
+"component floating-point vector to the 16-bit floating-point representation "
+"found in the OpenGL Specification, and then packing these two 16-bit "
+"integers into a 32-bit unsigned integer. The first vector component "
+"specifies the 16 least-significant bits of the result; the second component "
+"specifies the 16 most-significant bits."
+msgstr ""
+"將兩個分量的 32 位元浮點數轉為 OpenGL 規範中的 16 位元浮點格式，並將這兩個 "
+"16 位元值打包為一個 32 位元無符號整數。第一個分量成為低 16 位元，第二個分量成"
+"為高 16 位元。"
+
+msgid "param v"
+msgstr "參數 v"
+
+msgid ""
+"A vector of two 32-bit floating-point values that are to be converted to 16-"
+"bit representation and packed into the result."
+msgstr "要轉換為 16 位元並打包的兩分量 32 位元浮點向量。"
+
+msgid "The packed value."
+msgstr "打包後的值。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packHalf2x16.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packHalf2x16.xhtml"
+
+msgid ""
+"vec2 **unpackHalf2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackHalf2x16>`"
+msgstr ""
+"vec2 **unpackHalf2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackHalf2x16>`"
+
+msgid "Inverse of :ref:`packHalf2x16<shader_func_packHalf2x16>`."
+msgstr "與 :ref:`packHalf2x16<shader_func_packHalf2x16>` 相反。"
+
+msgid ""
+"Unpacks a 32-bit integer into two 16-bit floating-point values, converts "
+"them to 32-bit floating-point values, and puts them into a vector. The first "
+"component of the vector is obtained from the 16 least-significant bits of "
+"``v``; the second component is obtained from the 16 most-significant bits of "
+"``v``."
+msgstr ""
+"將一個 32 位元整數解包為兩個 16 位元浮點值，再轉換為 32 位元浮點數後輸出為向"
+"量。第一分量取自 ``v`` 的低 16 位元，第二分量取自高 16 位元。"
+
+msgid ""
+"A single 32-bit unsigned integer containing 2 packed 16-bit floating-point "
+"values."
+msgstr "包含兩個已打包 16 位元浮點數的 32 位元無符號整數。"
+
+msgid "Two unpacked floating-point values."
+msgstr "解包後的兩個浮點數值。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"unpackHalf2x16.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"unpackHalf2x16.xhtml"
+
+msgid ""
+"uint **packUnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packUnorm2x16>`"
+msgstr ""
+"uint **packUnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packUnorm2x16>`"
+
+msgid "Pack floating-point values into an unsigned integer."
+msgstr "將浮點數值打包成無符號整數。"
+
+msgid ""
+"Converts each component of the normalized floating-point value v into 16-bit "
+"integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"將每個分量的歸一化浮點數值 v 轉為 16 位元整數，然後打包為一個 32 位元無符號整"
+"數。"
+
+msgid ""
+"The conversion for component c of ``v`` to fixed-point is performed as "
+"follows:"
+msgstr "將 ``v`` 的分量 c 轉換為定點數的處理如下:"
+
+msgid ""
+"The first component of the vector will be written to the least significant "
+"bits of the output; the last component will be written to the most "
+"significant bits."
+msgstr "向量的第一個分量寫入輸出值的最低有效位，最後一個分量寫入最高有效位。"
+
+msgid "A vector of values to be packed into an unsigned integer."
+msgstr "要打包成無符號整數的向量值。"
+
+msgid "Unsigned 32 bit integer containing the packed encoding of the vector."
+msgstr "已打包向量的 32 位元無符號整數。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packUnorm.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/packUnorm.xhtml"
+
+msgid ""
+"vec2 **unpackUnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm2x16>`"
+msgstr ""
+"vec2 **unpackUnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm2x16>`"
+
+msgid "Unpack floating-point values from an unsigned integer."
+msgstr "從無符號整數解包浮點數值。"
+
+msgid ""
+"Unpack single 32-bit unsigned integers into a pair of 16-bit unsigned "
+"integers. Then, each component is converted to a normalized floating-point "
+"value to generate the returned two-component vector."
+msgstr ""
+"將單一 32 位元無符號整數解包為兩個 16 位元無符號整數，然後將每個分量轉換為正"
+"規化浮點值，最後回傳兩分量向量。"
+
+msgid ""
+"The conversion for unpacked fixed point value f to floating-point is "
+"performed as follows:"
+msgstr "將解包後的定點值 f 轉回浮點數的運算如下："
+
+msgid "f / 65535.0"
+msgstr "f / 65535.0"
+
+msgid ""
+"The first component of the returned vector will be extracted from the least "
+"significant bits of the input; the last component will be extracted from the "
+"most significant bits."
+msgstr ""
+"回傳向量的第一個分量取自輸入值的最低有效位，最後一個分量取自最高有效位。"
+
+msgid "An unsigned integer containing packed floating-point values."
+msgstr "包含已打包浮點數值的無符號整數。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/unpackUnorm.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/unpackUnorm.xhtml"
+
+msgid ""
+"uint **packSnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packSnorm2x16>`"
+msgstr ""
+"uint **packSnorm2x16**\\ (\\ vec2 v) :ref:`🔗<shader_func_packSnorm2x16>`"
+
+msgid "Packs floating-point values into an unsigned integer."
+msgstr "將浮點數值打包成無符號整數。"
+
+msgid ""
+"Convert each component of the normalized floating-point value ``v`` into 16-"
+"bit integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"將每個分量的歸一化浮點數值 ``v`` 轉為 16 位元整數，然後打包為一個 32 位元無符"
+"號整數。"
+
+msgid ""
+"vec2 **unpackSnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm2x16>`"
+msgstr ""
+"vec2 **unpackSnorm2x16**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm2x16>`"
+
+msgid "Unpacks floating-point values from an unsigned integer."
+msgstr "從無符號整數解包浮點數值。"
+
+msgid ""
+"Unpacks single 32-bit unsigned integers into a pair of 16-bit signed "
+"integers. Then, each component is converted to a normalized floating-point "
+"value to generate the returned two-component vector."
+msgstr ""
+"將單一 32 位元無符號整數解包為兩個 16 位元有符號整數，然後轉換為正規化浮點數"
+"後組成兩分量向量回傳。"
+
+msgid "clamp(f / 32727.0, -1.0, 1.0)"
+msgstr "clamp(f / 32727.0, -1.0, 1.0)"
+
+msgid "uint **packUnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packUnorm4x8>`"
+msgstr ""
+"uint **packUnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packUnorm4x8>`"
+
+msgid ""
+"Converts each component of the normalized floating-point value ``v`` into 16-"
+"bit integer values and then packs the results into a 32-bit unsigned integer."
+msgstr ""
+"將正規化浮點值 ``v`` 的每個分量轉換為 8 位元整數，並將結果組合打包為一個 32 "
+"位元無符號整數。"
+
+msgid ""
+"vec4 **unpackUnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm4x8>`"
+msgstr ""
+"vec4 **unpackUnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackUnorm4x8>`"
+
+msgid ""
+"Unpacks single 32-bit unsigned integers into four 8-bit unsigned integers. "
+"Then, each component is converted to a normalized floating-point value to "
+"generate the returned four-component vector."
+msgstr ""
+"將單一 32 位元無符號整數解包為四個 8 位元無符號整數，然後每個分量轉換為正規化"
+"浮點數，最後組成四分量向量回傳。"
+
+msgid "f / 255.0"
+msgstr "f / 255.0"
+
+msgid "uint **packSnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packSnorm4x8>`"
+msgstr ""
+"uint **packSnorm4x8**\\ (\\ vec4 v) :ref:`🔗<shader_func_packSnorm4x8>`"
+
+msgid ""
+"vec4 **unpackSnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm4x8>`"
+msgstr ""
+"vec4 **unpackSnorm4x8**\\ (\\ uint v) :ref:`🔗<shader_func_unpackSnorm4x8>`"
+
+msgid ""
+"Unpack single 32-bit unsigned integers into four 8-bit signed integers. "
+"Then, each component is converted to a normalized floating-point value to "
+"generate the returned four-component vector."
+msgstr ""
+"將單一 32 位元無符號整數解包為四個 8 位元有符號整數，再分別轉換為正規化浮點"
+"數，最後組成四分量向量回傳。"
+
+msgid "clamp(f / 127.0, -1.0, 1.0)"
+msgstr "clamp(f / 127.0, -1.0, 1.0)"
+
+msgid "Bitwise functions"
+msgstr "位元運算函式"
+
+msgid ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_int_type| "
+"value, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_int_type| "
+"value, int offset, int bits)"
+
+msgid ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_uint_type| "
+"value, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldExtract<shader_func_bitfieldExtract>`\\ (\\ |vec_uint_type| "
+"value, int offset, int bits)"
+
+msgid "Extracts a range of bits from an integer."
+msgstr "從整數中擷取一段位元。"
+
+msgid ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_int_type| base, "
+"|vec_int_type| insert, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_int_type| base, "
+"|vec_int_type| insert, int offset, int bits)"
+
+msgid ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_uint_type| "
+"base, |vec_uint_type| insert, int offset, int bits)"
+msgstr ""
+":ref:`bitfieldInsert<shader_func_bitfieldInsert>`\\ (\\ |vec_uint_type| "
+"base, |vec_uint_type| insert, int offset, int bits)"
+
+msgid "Insert a range of bits into an integer."
+msgstr "將一段位元插入整數。"
+
+msgid ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_int_type| "
+"value)"
+msgstr ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_int_type| "
+"value)"
+
+msgid ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_uint_type| "
+"value)"
+msgstr ""
+":ref:`bitfieldReverse<shader_func_bitfieldReverse>`\\ (\\ |vec_uint_type| "
+"value)"
+
+msgid "Reverse the order of bits in an integer."
+msgstr "反轉整數的位元順序。"
+
+msgid ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`bitCount<shader_func_bitCount>`\\ (\\ |vec_uint_type| value)"
+
+msgid "Counts the number of 1 bits in an integer."
+msgstr "計算整數中 1 的數量。"
+
+msgid ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`findLSB<shader_func_findLSB>`\\ (\\ |vec_uint_type| value)"
+
+msgid "Find the index of the least significant bit set to 1 in an integer."
+msgstr "尋找整數中最低位且為 1 的位元索引。"
+
+msgid ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_int_type| value)"
+msgstr ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_int_type| value)"
+
+msgid ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_uint_type| value)"
+msgstr ":ref:`findMSB<shader_func_findMSB>`\\ (\\ |vec_uint_type| value)"
+
+msgid "Find the index of the most significant bit set to 1 in an integer."
+msgstr "尋找整數中最高位且為 1 的位元索引。"
+
+msgid "|void|"
+msgstr "|void|"
+
+msgid ""
+":ref:`imulExtended<shader_func_imulExtended>`\\ (\\ |vec_int_type| x, |"
+"vec_int_type| y, out |vec_int_type| msb, out |vec_int_type| lsb)"
+msgstr ""
+":ref:`imulExtended<shader_func_imulExtended>`\\ (\\ |vec_int_type| x, |"
+"vec_int_type| y, out |vec_int_type| msb, out |vec_int_type| lsb)"
+
+msgid ""
+":ref:`umulExtended<shader_func_umulExtended>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| msb, out |vec_uint_type| lsb)"
+msgstr ""
+":ref:`umulExtended<shader_func_umulExtended>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| msb, out |vec_uint_type| lsb)"
+
+msgid "Multiplies two 32-bit numbers and produce a 64-bit result."
+msgstr "將兩個 32 位元數相乘，產生 64 位元結果。"
+
+msgid ""
+":ref:`uaddCarry<shader_func_uaddCarry>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| carry)"
+msgstr ""
+":ref:`uaddCarry<shader_func_uaddCarry>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| carry)"
+
+msgid "Adds two unsigned integers and generates carry."
+msgstr "兩個無號整數相加並產生進位。"
+
+msgid ""
+":ref:`usubBorrow<shader_func_usubBorrow>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| borrow)"
+msgstr ""
+":ref:`usubBorrow<shader_func_usubBorrow>`\\ (\\ |vec_uint_type| x, |"
+"vec_uint_type| y, out |vec_uint_type| borrow)"
+
+msgid "Subtracts two unsigned integers and generates borrow."
+msgstr "兩個無符號整數相減並產生借位。"
+
+msgid ""
+":ref:`ldexp<shader_func_ldexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+msgstr ""
+":ref:`ldexp<shader_func_ldexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+
+msgid "Assemble a floating-point number from a value and exponent."
+msgstr "由數值與指數組合成一個浮點數。"
+
+msgid ""
+":ref:`frexp<shader_func_frexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+msgstr ""
+":ref:`frexp<shader_func_frexp>`\\ (\\ |vec_type| x, out |vec_int_type| exp)"
+
+msgid ""
+"Splits a floating-point number (``x``) into significand integral components"
+msgstr "將浮點數 (``x``) 拆分為尾數的整數分量"
+
+msgid "Bitwise function descriptions"
+msgstr "位元運算函式說明"
+
+msgid ""
+"|vec_int_type| **bitfieldExtract**\\ (\\ |vec_int_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+msgstr ""
+"|vec_int_type| **bitfieldExtract**\\ (\\ |vec_int_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+
+msgid ""
+"Extracts a subset of the bits of ``value`` and returns it in the least "
+"significant bits of the result. The range of bits extracted is ``[offset, "
+"offset + bits - 1]``."
+msgstr ""
+"從 ``value`` 中擷取指定範圍的位元，並將其放於結果的最低有效位元。擷取範圍為 "
+"``[offset, offset + bits - 1]``。"
+
+msgid "The most significant bits of the result will be set to zero."
+msgstr "結果的最高有效位元會被設為零。"
+
+msgid "If bits is zero, the result will be zero."
+msgstr "若 bits 為零，則結果也會為零。"
+
+msgid "The result will be undefined if:"
+msgstr "若發生以下狀況，結果未定義："
+
+msgid "offset or bits is negative."
+msgstr "offset 或 bits 為負值。"
+
+msgid ""
+"if the sum of offset and bits is greater than the number of bits used to "
+"store the operand."
+msgstr "如果 offset 與 bits 的總和大於運算元位元數。"
+
+msgid "param value"
+msgstr "參數 value"
+
+msgid "The integer from which to extract bits."
+msgstr "要擷取位元的整數。"
+
+msgid "param offset"
+msgstr "參數 offset"
+
+msgid "The index of the first bit to extract."
+msgstr "要擷取的第一個位元索引。"
+
+msgid "param bits"
+msgstr "參數 bits"
+
+msgid "The number of bits to extract."
+msgstr "要擷取的位元數。"
+
+msgid "Integer with the requested bits."
+msgstr "包含擷取後位元的整數。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldExtract.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldExtract.xhtml"
+
+msgid ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+msgstr ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldExtract>`"
+
+msgid ""
+"The most significant bits will be set to the value of ``offset + base - 1`` "
+"(i.e., it is sign extended to the width of the return type)."
+msgstr ""
+"最高有效位元將設為 ``offset + base - 1`` 的值（即以符號擴展至回傳型別寬度）。"
+
+msgid ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+msgstr ""
+"|vec_uint_type| **bitfieldExtract**\\ (\\ |vec_uint_type| value, int offset, "
+"int bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+
+msgid ""
+"|vec_uint_type| **bitfieldInsert**\\ (\\ |vec_uint_type| base, |"
+"vec_uint_type| insert, int offset, int "
+"bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+msgstr ""
+"|vec_uint_type| **bitfieldInsert**\\ (\\ |vec_uint_type| base, |"
+"vec_uint_type| insert, int offset, int "
+"bits) :ref:`🔗<shader_func_bitfieldInsert>`"
+
+msgid ""
+"Inserts the ``bits`` least significant bits of ``insert`` into ``base`` at "
+"offset ``offset``."
+msgstr ""
+"將 ``insert`` 的最低 ``bits`` 位元插入 ``base``，位置自 ``offset`` 起。"
+
+msgid ""
+"The returned value will have bits [offset, offset + bits + 1] taken from [0, "
+"bits - 1] of ``insert`` and all other bits taken directly from the "
+"corresponding bits of base."
+msgstr ""
+"回傳值的 [offset, offset + bits + 1] 位元來自 ``insert`` 的 [0, bits - 1]，其"
+"餘位元則直接取自 base 對應位元。"
+
+msgid "If bits is zero, the result will be the original value of base."
+msgstr "若 bits 為零，則結果為 base 原始值。"
+
+msgid "param base"
+msgstr "參數 base"
+
+msgid "The integer into which to insert ``insert``."
+msgstr "要插入 ``insert`` 位元的整數。"
+
+msgid "param insert"
+msgstr "參數 insert"
+
+msgid "The value of the bits to insert."
+msgstr "要插入的位元值。"
+
+msgid "The index of the first bit to insert."
+msgstr "要插入的第一個位元索引。"
+
+msgid "The number of bits to insert."
+msgstr "要插入的位元數。"
+
+msgid "``base`` with inserted bits."
+msgstr "已插入指定位元的 ``base``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldInsert.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldInsert.xhtml"
+
+msgid ""
+"|vec_int_type| **bitfieldReverse**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+msgstr ""
+"|vec_int_type| **bitfieldReverse**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+
+msgid ""
+"|vec_uint_type| **bitfieldReverse**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+msgstr ""
+"|vec_uint_type| **bitfieldReverse**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitfieldReverse>`"
+
+msgid ""
+"The bit numbered ``n`` will be taken from bit ``(bits - 1) - n`` of "
+"``value``, where bits is the total number of bits used to represent "
+"``value``."
+msgstr ""
+"第 ``n`` 號位元會取自 ``value`` 的第 ``(bits - 1) - n`` 位，其中 bits 為 "
+"``value`` 的總位元數。"
+
+msgid "The value whose bits to reverse."
+msgstr "要反轉其位元的值。"
+
+msgid "``value`` but with its bits reversed."
+msgstr "反轉位元後的 ``value``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldReverse.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/"
+"bitfieldReverse.xhtml"
+
+msgid ""
+"|vec_int_type| **bitCount**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+msgstr ""
+"|vec_int_type| **bitCount**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+
+msgid ""
+"|vec_uint_type| **bitCount**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+msgstr ""
+"|vec_uint_type| **bitCount**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_bitCount>`"
+
+msgid "The value whose bits to count."
+msgstr "要計算其位元數的值。"
+
+msgid ""
+"The number of bits that are set to 1 in the binary representation of "
+"``value``."
+msgstr "``value`` 二進位表示中為 1 的位元數。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/bitCount.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/bitCount.xhtml"
+
+msgid ""
+"|vec_int_type| **findLSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+msgstr ""
+"|vec_int_type| **findLSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+
+msgid ""
+"|vec_uint_type| **findLSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+msgstr ""
+"|vec_uint_type| **findLSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findLSB>`"
+
+msgid "Find the index of the least significant bit set to ``1``."
+msgstr "尋找最低有效位元且為 ``1`` 的索引。"
+
+msgid "If ``value`` is zero, ``-1`` will be returned."
+msgstr "若 ``value`` 為零，則回傳 ``-1``。"
+
+msgid "The value whose bits to scan."
+msgstr "要掃描其位元的值。"
+
+msgid ""
+"The bit number of the least significant bit that is set to 1 in the binary "
+"representation of value."
+msgstr "該二進位值中，最低位且為 1 的位元索引。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findLSB.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findLSB.xhtml"
+
+msgid ""
+"|vec_int_type| **findMSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+msgstr ""
+"|vec_int_type| **findMSB**\\ (\\ |vec_int_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+
+msgid ""
+"|vec_uint_type| **findMSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+msgstr ""
+"|vec_uint_type| **findMSB**\\ (\\ |vec_uint_type| "
+"value) :ref:`🔗<shader_func_findMSB>`"
+
+msgid "Find the index of the most significant bit set to 1."
+msgstr "尋找最高有效位元且為 1 的索引。"
+
+msgid "For signed integer types, the sign bit is checked first and then:"
+msgstr "對有符號整數型別，會先檢查符號位元，然後："
+
+msgid ""
+"For positive integers, the result will be the bit number of the most "
+"significant bit that is set to 1."
+msgstr "若為正整數，結果為最左側為 1 的位元編號。"
+
+msgid ""
+"For negative integers, the result will be the bit number of the most "
+"significant bit set to 0."
+msgstr "若為負整數，則結果為最高有效位為 0 的位元索引。"
+
+msgid "For a value of zero or negative 1, -1 will be returned."
+msgstr "若值為 0 或 -1，則回傳 -1。"
+
+msgid ""
+"The bit number of the most significant bit that is set to 1 in the binary "
+"representation of value."
+msgstr "該二進位值中，最高位且為 1 的位元索引。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findMSB.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/findMSB.xhtml"
+
+msgid ""
+"|void| **imulExtended**\\ (\\ |vec_int_type| x, |vec_int_type| y, out |"
+"vec_int_type| msb, out |vec_int_type| "
+"lsb) :ref:`🔗<shader_func_imulExtended>`"
+msgstr ""
+"|void| **imulExtended**\\ (\\ |vec_int_type| x, |vec_int_type| y, out |"
+"vec_int_type| msb, out |vec_int_type| "
+"lsb) :ref:`🔗<shader_func_imulExtended>`"
+
+msgid ""
+"Perform 32-bit by 32-bit signed multiplication to produce a 64-bit result."
+msgstr "進行 32 位元帶號整數乘法，產生 64 位元結果。"
+
+msgid ""
+"The 32 least significant bits of this product are returned in ``lsb`` and "
+"the 32 most significant bits are returned in ``msb``."
+msgstr "乘積的低 32 位元回傳於 ``lsb``，高 32 位元回傳於 ``msb``。"
+
+msgid "The first multiplicand."
+msgstr "第一個乘數。"
+
+msgid "The second multiplicand."
+msgstr "第二個乘數。"
+
+msgid "param msb"
+msgstr "參數 msb"
+
+msgid "The variable to receive the most significant word of the product."
+msgstr "用於存放乘積高位元的變數。"
+
+msgid "param lsb"
+msgstr "參數 lsb"
+
+msgid "The variable to receive the least significant word of the product."
+msgstr "用於存放乘積低位元的變數。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/umulExtended.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/umulExtended.xhtml"
+
+msgid ""
+"|void| **umulExtended**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, out |"
+"vec_uint_type| msb, out |vec_uint_type| "
+"lsb) :ref:`🔗<shader_func_umulExtended>`"
+msgstr ""
+"|void| **umulExtended**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, out |"
+"vec_uint_type| msb, out |vec_uint_type| "
+"lsb) :ref:`🔗<shader_func_umulExtended>`"
+
+msgid ""
+"Perform 32-bit by 32-bit unsigned multiplication to produce a 64-bit result."
+msgstr "進行 32 位元無號整數乘法，產生 64 位元結果。"
+
+msgid ""
+"|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| carry) :ref:`🔗<shader_func_uaddCarry>`"
+msgstr ""
+"|vec_uint_type| **uaddCarry**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| carry) :ref:`🔗<shader_func_uaddCarry>`"
+
+msgid "Add unsigned integers and generate carry."
+msgstr "將無符號整數相加並產生進位。"
+
+msgid ""
+"adds two 32-bit unsigned integer variables (scalars or vectors) and "
+"generates a 32-bit unsigned integer result, along with a carry output. The "
+"value carry is ."
+msgstr ""
+"將兩個 32 位元無號整數（純量或向量）相加，產生一個 32 位元無號整數結果並帶有"
+"進位輸出。carry 為進位值。"
+
+msgid "The first operand."
+msgstr "第一個運算元。"
+
+msgid "The second operand."
+msgstr "第二個運算元。"
+
+msgid "param carry"
+msgstr "參數 carry"
+
+msgid "0 if the sum is less than 2\\ :sup:`32`, otherwise 1."
+msgstr "若總和小於 2\\ :sup:`32` 則為 0，否則為 1。"
+
+msgid "``(x + y) % 2^32``."
+msgstr "``(x + y) % 2^32``。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/uaddCarry.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/uaddCarry.xhtml"
+
+msgid ""
+"|vec_uint_type| **usubBorrow**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| borrow) :ref:`🔗<shader_func_usubBorrow>`"
+msgstr ""
+"|vec_uint_type| **usubBorrow**\\ (\\ |vec_uint_type| x, |vec_uint_type| y, "
+"out |vec_uint_type| borrow) :ref:`🔗<shader_func_usubBorrow>`"
+
+msgid "Subtract unsigned integers and generate borrow."
+msgstr "兩個無號整數相減並產生借位。"
+
+msgid "param borrow"
+msgstr "參數 borrow"
+
+msgid "``0`` if ``x >= y``, otherwise ``1``."
+msgstr "若 ``x >= y`` 則為 ``0``，否則為 ``1``。"
+
+msgid ""
+"The difference of ``x`` and ``y`` if non-negative, or 2\\ :sup:`32` plus "
+"that difference otherwise."
+msgstr "如果 ``x`` 減 ``y`` 為非負則為差值，否則為 2\\ :sup:`32` 加上差值。"
+
+msgid ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/usubBorrow.xhtml"
+msgstr ""
+"https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/usubBorrow.xhtml"
+
+msgid ""
+"|vec_type| **ldexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_ldexp>`"
+msgstr ""
+"|vec_type| **ldexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_ldexp>`"
+
+msgid "Assembles a floating-point number from a value and exponent."
+msgstr "由數值與指數組合成浮點數。"
+
+msgid ""
+"If this product is too large to be represented in the floating-point type, "
+"the result is undefined."
+msgstr "若該乘積過大無法以浮點型別表示，則結果未定義。"
+
+msgid "The value to be used as a source of significand."
+msgstr "作為有效數來源的值。"
+
+msgid "param exp"
+msgstr "參數 exp"
+
+msgid "The value to be used as a source of exponent."
+msgstr "作為指數來源的值。"
+
+msgid "``x * 2^exp``"
+msgstr "``x * 2^exp``"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ldexp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/ldexp.xhtml"
+
+msgid ""
+"|vec_type| **frexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_frexp>`"
+msgstr ""
+"|vec_type| **frexp**\\ (\\ |vec_type| x, out |vec_int_type| "
+"exp) :ref:`🔗<shader_func_frexp>`"
+
+msgid ""
+"Extracts ``x`` into a floating-point significand in the range ``[0.5, 1.0)`` "
+"and in integral exponent of two, such that:"
+msgstr ""
+"將 ``x`` 分解為範圍為 ``[0.5, 1.0)`` 的浮點尾數與以 2 為底的整數指數，使得："
+
+msgid ""
+"For a floating-point value of zero, the significand and exponent are both "
+"zero."
+msgstr "若為零，則有效數與指數皆為零。"
+
+msgid ""
+"For a floating-point value that is an infinity or a floating-point NaN, the "
+"results are undefined."
+msgstr "若為無窮大或 NaN，則結果未定義。"
+
+msgid "The value from which significand and exponent are to be extracted."
+msgstr "要拆分有效數與指數的值。"
+
+msgid "The variable into which to place the exponent of ``x``."
+msgstr "用於存放 ``x`` 指數的變數。"
+
+msgid "The significand of ``x``."
+msgstr "``x`` 的有效數。"
+
+msgid "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/frexp.xhtml"
+msgstr "https://www.khronos.org/registry/OpenGL-Refpages/gl4/html/frexp.xhtml"

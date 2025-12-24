@@ -1,0 +1,507 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "System requirements"
+msgstr "系統需求"
+
+msgid ""
+"This page contains system requirements for the editor and exported projects. "
+"These specifications are given for informative purposes only, but they can "
+"be referred to if you're looking to build or upgrade a system to use Godot "
+"on."
+msgstr ""
+"此頁面包含編輯器與匯出專案的系統需求。這些規格僅供參考，但若你打算打造或升級"
+"可使用 Godot 的系統，可作為依據。"
+
+msgid "Godot editor"
+msgstr "Godot 編輯器"
+
+msgid ""
+"These are the **minimum** specifications required to run the Godot editor "
+"and work on a simple 2D or 3D project:"
+msgstr ""
+"以下是可執行 Godot 編輯器並處理簡單 2D 或 3D 專案所需的 **最低** 規格："
+
+msgid "Desktop or laptop PC - Minimum"
+msgstr "桌上型或筆記型電腦 - 最低需求"
+
+msgid "**CPU**"
+msgstr "**CPU**"
+
+msgid ""
+"**Windows:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
+"ARMv8 CPU"
+msgstr ""
+"**Windows：** 支援 SSE2 的 x86_32 CPU、支援 SSE4.2 的 x86_64 CPU、ARMv8 CPU"
+
+msgid "*Example: Intel Core 2 Duo E8200, AMD FX-4100, Snapdragon X Elite*"
+msgstr "*範例：Intel Core 2 Duo E8200、AMD FX-4100、Snapdragon X Elite*"
+
+msgid "**macOS:** x86_64 or ARM CPU (Apple Silicon)"
+msgstr "**macOS：** x86_64 或 ARM CPU（Apple Silicon）"
+
+msgid "*Example: Intel Core 2 Duo SU9400, Apple M1*"
+msgstr "*範例：Intel Core 2 Duo SU9400、Apple M1*"
+
+msgid ""
+"**Linux:** x86_32 CPU with SSE2 support, x86_64 CPU with SSE4.2 support, "
+"ARMv7 or ARMv8 CPU"
+msgstr ""
+"**Linux：** 支援 SSE2 的 x86_32 CPU、支援 SSE4.2 的 x86_64 CPU、ARMv7 或 "
+"ARMv8 CPU"
+
+msgid "*Example: Intel Core 2 Duo E8200, AMD FX-4100, Raspberry Pi 4*"
+msgstr "*範例：Intel Core 2 Duo E8200、AMD FX-4100、Raspberry Pi 4*"
+
+msgid "**GPU**"
+msgstr "**GPU**"
+
+msgid "**Forward+ renderer:** Integrated graphics with full Vulkan 1.0 support"
+msgstr "**Forward+ 算繪器：** 內建顯示晶片，完整支援 Vulkan 1.0"
+
+msgid ""
+"*Example: Intel HD Graphics 510 (Skylake), AMD Radeon R5 Graphics (Kaveri)*"
+msgstr ""
+"*範例：Intel HD Graphics 510（Skylake）、AMD Radeon R5 Graphics（Kaveri）*"
+
+msgid "**Mobile renderer:** Integrated graphics with full Vulkan 1.0 support"
+msgstr "**行動裝置算繪器：** 具備完整 Vulkan 1.0 支援的內建顯示晶片"
+
+msgid ""
+"**Compatibility renderer:** Integrated graphics with full OpenGL 3.3 support"
+msgstr "**相容性算繪器：** 內建顯示晶片，完整支援 OpenGL 3.3"
+
+msgid ""
+"*Example: Intel HD Graphics 2500 (Ivy Bridge), AMD Radeon R5 Graphics "
+"(Kaveri)*"
+msgstr ""
+"*範例：Intel HD Graphics 2500（Ivy Bridge）、AMD Radeon R5 Graphics（Kaveri）"
+"*"
+
+msgid "**RAM**"
+msgstr "**記憶體**"
+
+msgid "**Native editor:** 4 GB"
+msgstr "**原生編輯器：** 4 GB"
+
+msgid "**Web editor:** 8 GB"
+msgstr "**網頁編輯器：** 8 GB"
+
+msgid "**Storage**"
+msgstr "**儲存空間**"
+
+msgid ""
+"200 MB (used for the executable, project files and cache). Exporting "
+"projects requires downloading export templates separately (1.3 GB after "
+"installation)."
+msgstr ""
+"200 MB（用於可執行檔、專案檔案與快取）。匯出專案需另外下載匯出範本（安裝後約 "
+"1.3 GB）。"
+
+msgid "**Operating system**"
+msgstr "**作業系統**"
+
+msgid ""
+"**Native editor:** Windows 10, macOS 10.13 (Compatibility) or macOS 10.15 "
+"(Forward+/Mobile), Linux distribution released after 2018"
+msgstr ""
+"**原生編輯器：** Windows 10、macOS 10.13（相容性）或 macOS 10.15（Forward+/行"
+"動版）、2018 年後發行的 Linux 發行版"
+
+msgid ""
+"**Web editor:** Recent versions of mainstream browsers: Firefox and "
+"derivatives (including ESR), Chrome and Chromium derivatives, Safari and "
+"WebKit derivatives."
+msgstr ""
+"**網頁編輯器：** 主流瀏覽器的近期版本：Firefox 與其衍生版（含 ESR）、Chrome "
+"與 Chromium 衍生版、Safari 與 WebKit 衍生版。"
+
+msgid ""
+"If your x86_64 CPU does not support SSE4.2, you can still run the 32-bit "
+"Godot executable which only has a SSE2 requirement (all x86_64 CPUs support "
+"SSE2)."
+msgstr ""
+"若你的 x86_64 CPU 不支援 SSE4.2，仍可改用僅需 SSE2 的 32 位元 Godot 可執行檔"
+"（所有 x86_64 CPU 皆支援 SSE2）。"
+
+msgid ""
+"While supported on Linux, we have no official minimum requirements for "
+"running on rv64 (RISC-V), ppc64 & ppc32 (PowerPC), and loongarch64. In "
+"addition you must compile the editor for that platform (as well as export "
+"templates) yourself, no official downloads are currently provided. RISC-V "
+"compiling instructions can be found on the :ref:`doc_compiling_for_linuxbsd` "
+"page."
+msgstr ""
+"雖然在 Linux 上可支援，但我們未提供在 rv64（RISC-V）、ppc64 與 ppc32"
+"（PowerPC）以及 loongarch64 上執行的官方最低需求。此外你必須自行為該平台編譯"
+"編輯器與匯出範本，目前沒有提供官方下載。RISC-V 的編譯說明可參"
+"考 :ref:`doc_compiling_for_linuxbsd` 頁面。"
+
+msgid "Mobile device (smartphone/tablet) - Minimum"
+msgstr "行動裝置（智慧型手機／平板）- 最低需求"
+
+msgid "**Android:** SoC with any 32-bit or 64-bit ARM or x86 CPU"
+msgstr "**Android：** 具備任一 32 位元或 64 位元 ARM 或 x86 CPU 的 SoC"
+
+msgid "*Example: Qualcomm Snapdragon 430, Samsung Exynos 5 Octa 5430*"
+msgstr "*範例：Qualcomm Snapdragon 430、Samsung Exynos 5 Octa 5430*"
+
+msgid "**iOS:** *Cannot run the editor*"
+msgstr "**iOS：** *無法執行編輯器*"
+
+msgid "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support"
+msgstr "**Forward+ 算繪器：** 具備完整 Vulkan 1.0 支援 GPU 的 SoC"
+
+msgid "*Example: Qualcomm Adreno 505, Mali-G71 MP2*"
+msgstr "*範例：Qualcomm Adreno 505、Mali-G71 MP2*"
+
+msgid "**Mobile renderer:** SoC featuring GPU with full Vulkan 1.0 support"
+msgstr "**行動裝置算繪器：** 具備完整 Vulkan 1.0 支援 GPU 的 SoC"
+
+msgid ""
+"**Compatibility renderer:** SoC featuring GPU with full OpenGL ES 3.0 support"
+msgstr "**相容性算繪器：** 具備完整 OpenGL ES 3.0 支援 GPU 的 SoC"
+
+msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6*"
+msgstr "*範例：Qualcomm Adreno 306、Mali-T628 MP6*"
+
+msgid "**Native editor:** 3 GB"
+msgstr "**原生編輯器：** 3 GB"
+
+msgid "**Web editor:** 6 GB"
+msgstr "**網頁編輯器：** 6 GB"
+
+msgid ""
+"200 MB (used for the executable, project files and cache) Exporting projects "
+"requires downloading export templates separately (1.3 GB after installation)"
+msgstr ""
+"200 MB（用於可執行檔、專案檔案與快取）。匯出專案需另外下載匯出範本（安裝後為 "
+"1.3 GB）"
+
+msgid ""
+"**Native editor:** Android 6.0 (Compatibility) or Android 9.0 (Forward+/"
+"Mobile)"
+msgstr ""
+"**原生編輯器：** Android 6.0（相容性）或 Android 9.0（Forward+/行動版）"
+
+msgid ""
+"These are the **recommended** specifications to get a smooth experience with "
+"the Godot editor on a simple 2D or 3D project:"
+msgstr ""
+"以下是為在簡單 2D 或 3D 專案中順暢使用 Godot 編輯器所 **建議** 的規格："
+
+msgid "Desktop or laptop PC - Recommended"
+msgstr "桌上型或筆記型電腦 - 建議配備"
+
+msgid ""
+"**Windows:** x86_64 CPU with SSE4.2 support, with 4 physical cores or more, "
+"ARMv8 CPU"
+msgstr ""
+"**Windows：** 支援 SSE4.2 的 x86_64 CPU，具 4 個以上實體核心，或 ARMv8 CPU"
+
+msgid "*Example: Intel Core i5-6600K, AMD Ryzen 5 1600, Snapdragon X Elite*"
+msgstr "*範例：Intel Core i5-6600K、AMD Ryzen 5 1600、Snapdragon X Elite*"
+
+msgid "*Example: Intel Core i5-8500, Apple M1*"
+msgstr "*範例：Intel Core i5-8500、Apple M1*"
+
+msgid "**Linux:** x86_64 CPU with SSE4.2 support, ARMv7 or ARMv8 CPU"
+msgstr "**Linux：** 支援 SSE4.2 的 x86_64 CPU、ARMv7 或 ARMv8 CPU"
+
+msgid ""
+"*Example: Intel Core i5-6600K, AMD Ryzen 5 1600, Raspberry Pi 5 with "
+"overclocking*"
+msgstr "*範例：Intel Core i5-6600K、AMD Ryzen 5 1600、超頻的 Raspberry Pi 5*"
+
+msgid "**Forward+ renderer:** Dedicated graphics with full Vulkan 1.2 support"
+msgstr "**Forward+ 算繪器：** 具備完整 Vulkan 1.2 支援的獨立顯示卡"
+
+msgid ""
+"*Example: NVIDIA GeForce GTX 1050 (Pascal), AMD Radeon RX 460 (GCN 4.0)*"
+msgstr ""
+"*範例：NVIDIA GeForce GTX 1050（Pascal）、AMD Radeon RX 460（GCN 4.0）*"
+
+msgid "**Mobile renderer:** Dedicated graphics with full Vulkan 1.2 support"
+msgstr "**行動裝置算繪器：** 具備完整 Vulkan 1.2 支援的獨立顯示卡"
+
+msgid ""
+"**Compatibility renderer:** Dedicated graphics with full OpenGL 4.6 support"
+msgstr "**相容性算繪器：** 具備完整 OpenGL 4.6 支援的獨立顯示卡"
+
+msgid ""
+"*Example: NVIDIA GeForce GTX 650 (Kepler), AMD Radeon HD 7750 (GCN 1.0)*"
+msgstr ""
+"*範例：NVIDIA GeForce GTX 650（Kepler）、AMD Radeon HD 7750（GCN 1.0）*"
+
+msgid "**Native editor:** 8 GB"
+msgstr "**原生編輯器：** 8 GB"
+
+msgid "**Web editor:** 12 GB"
+msgstr "**網頁編輯器：** 12 GB"
+
+msgid ""
+"1.5 GB (used for the executable, project files, all export templates and "
+"cache)"
+msgstr "1.5 GB（用於可執行檔、專案檔案、所有匯出範本與快取）"
+
+msgid ""
+"**Native editor:** Windows 10, macOS 10.15, Linux distribution released "
+"after 2020"
+msgstr "**原生編輯器：** Windows 10、macOS 10.15、2020 年後發行的 Linux 發行版"
+
+msgid "**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
+msgstr "**網頁編輯器：** 最新版本的 Firefox、Chrome、Edge、Safari、Opera"
+
+msgid "Mobile device (smartphone/tablet) - Recommended"
+msgstr "行動裝置（智慧型手機／平板）- 建議配備"
+
+msgid ""
+"**Android:** SoC with 64-bit ARM or x86 CPU, with 3 \"performance\" cores or "
+"more"
+msgstr ""
+"**Android：** 具 64 位元 ARM 或 x86 CPU 的 SoC，且具 3 個以上「效能」核心"
+
+msgid "*Example: Qualcomm Snapdragon 845, Samsung Exynos 9810*"
+msgstr "*範例：Qualcomm Snapdragon 845、Samsung Exynos 9810*"
+
+msgid "**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.2 support"
+msgstr "**Forward+ 算繪器：** 具備完整 Vulkan 1.2 支援 GPU 的 SoC"
+
+msgid "*Example: Qualcomm Adreno 630, Mali-G72 MP18*"
+msgstr "*範例：Qualcomm Adreno 630、Mali-G72 MP18*"
+
+msgid "**Mobile renderer:** SoC featuring GPU with full Vulkan 1.2 support"
+msgstr "**行動裝置算繪器：** 具備完整 Vulkan 1.2 支援 GPU 的 SoC"
+
+msgid ""
+"**Compatibility renderer:** SoC featuring GPU with full OpenGL ES 3.2 support"
+msgstr "**相容性算繪器：** 具備完整 OpenGL ES 3.2 支援 GPU 的 SoC"
+
+msgid "**Native editor:** 6 GB"
+msgstr "**原生編輯器：** 6 GB"
+
+msgid "**Native editor:** Android 9.0"
+msgstr "**原生編輯器：** Android 9.0"
+
+msgid ""
+"**Web editor:** Latest version of Firefox, Chrome, Edge, Safari, Opera, "
+"Samsung Internet"
+msgstr ""
+"**網頁編輯器：** 最新版本的 Firefox、Chrome、Edge、Safari、Opera、Samsung "
+"Internet"
+
+msgid "Exported Godot project"
+msgstr "匯出的 Godot 專案"
+
+msgid ""
+"The requirements below are a baseline for a **simple** 2D or 3D project, "
+"with basic scripting and few visual flourishes. CPU, GPU, RAM and storage "
+"requirements will heavily vary depending on your project's scope, its "
+"renderer, viewport resolution and graphics settings chosen. Other programs "
+"running on the system while the project is running will also compete for "
+"resources, including RAM and video RAM."
+msgstr ""
+"以下需求為 **簡單** 2D 或 3D 專案（含基礎腳本與少量視覺特效）的基準。CPU、"
+"GPU、記憶體與儲存空間會因專案規模、算繪器、視埠解析度與圖形設定而大幅變動。專"
+"案執行時系統中的其他程式也會搶占資源，包括 RAM 與視訊記憶體（VRAM）。"
+
+msgid ""
+"It is strongly recommended to do your own testing on low-end hardware to "
+"make sure your project runs at the desired speed. To provide scalability for "
+"low-end hardware, you will also need to introduce a `graphics options menu "
+"<https://github.com/godotengine/godot-demo-projects/tree/master/3d/"
+"graphics_settings>`__ to your project."
+msgstr ""
+"強烈建議你在低階硬體上自行測試，以確保專案能以預期的速度運行。為了對低階硬體"
+"提供延展性，你也需要在專案中加入 `圖形選項選單 <https://github.com/"
+"godotengine/godot-demo-projects/tree/master/3d/graphics_settings>`__。"
+
+msgid ""
+"These are the **minimum** specifications required to run a simple 2D or 3D "
+"project exported with Godot:"
+msgstr "以下為執行以 Godot 匯出的簡單 2D 或 3D 專案所需的 **最低** 規格："
+
+msgid ""
+"**Forward+ renderer:** Integrated graphics with full Vulkan 1.0 support, "
+"Metal 3 support (macOS) or Direct3D 12 (12_0 feature level) support (Windows)"
+msgstr ""
+"**Forward+ 算繪器：** 內建顯示晶片需完整支援 Vulkan 1.0，或支援 Metal 3"
+"（macOS），或支援 Direct3D 12（功能等級 12_0，Windows）"
+
+msgid ""
+"**Mobile renderer:** Integrated graphics with full Vulkan 1.0 support, Metal "
+"3 support (macOS) or Direct3D 12 (12_0 feature level) support (Windows)"
+msgstr ""
+"**行動裝置算繪器：** 內建顯示晶片需完整支援 Vulkan 1.0，或支援 Metal 3"
+"（macOS），或支援 Direct3D 12（功能等級 12_0，Windows）"
+
+msgid ""
+"**Compatibility renderer:** Integrated graphics with full OpenGL 3.3 support "
+"or Direct3D 11 support (Windows)."
+msgstr ""
+"**相容性算繪器：** 內建顯示晶片需完整支援 OpenGL 3.3，或支援 Direct3D 11"
+"（Windows）。"
+
+msgid "**For native exports:** 2 GB"
+msgstr "**針對原生匯出：** 2 GB"
+
+msgid "**For web exports:** 4 GB"
+msgstr "**針對網頁匯出：** 4 GB"
+
+msgid "150 MB (used for the executable, project files and cache)"
+msgstr "150 MB（用於可執行檔、專案檔案與快取）"
+
+msgid ""
+"**For native exports:** Windows 10, macOS 10.13 (Compatibility), macOS 10.15 "
+"(Forward+/Mobile, Vulkan), macOS 13.0 (Forward+/Mobile, Metal), Linux "
+"distribution released after 2018"
+msgstr ""
+"**針對原生匯出：** Windows 10、macOS 10.13（相容性）、macOS 10.15（Forward+/"
+"行動版，Vulkan）、macOS 13.0（Forward+/行動版，Metal）、2018 年後發行的 "
+"Linux 發行版"
+
+msgid "**iOS:** SoC with any 64-bit ARM CPU"
+msgstr "**iOS：** 具備任一 64 位元 ARM CPU 的 SoC"
+
+msgid "*Example: Apple A7 (iPhone 5S)*"
+msgstr "*範例：Apple A7（iPhone 5S）*"
+
+msgid ""
+"**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
+"Metal 3 support (iOS/iPadOS)"
+msgstr ""
+"**Forward+ 算繪器：** 具備完整 Vulkan 1.0 支援或支援 Metal 3（iOS/iPadOS）的 "
+"SoC（內含 GPU）"
+
+msgid ""
+"*Example (Vulkan): Qualcomm Adreno 505, Mali-G71 MP2, Apple A12 (iPhone XR/"
+"XS)*"
+msgstr ""
+"*範例（Vulkan）：Qualcomm Adreno 505、Mali-G71 MP2、Apple A12（iPhone XR/XS）"
+"*"
+
+msgid "*Example (Metal): Apple A11 (iPhone 8/X)*"
+msgstr "*範例（Metal）：Apple A11（iPhone 8/X）*"
+
+msgid ""
+"**Mobile renderer:** SoC featuring GPU with full Vulkan 1.0 support, or "
+"Metal 3 support (iOS/iPadOS)"
+msgstr ""
+"**行動裝置算繪器：** 具備完整 Vulkan 1.0 支援或支援 Metal 3（iOS/iPadOS）的 "
+"SoC（內含 GPU）"
+
+msgid "*Example: Qualcomm Adreno 306, Mali-T628 MP6, Apple A7 (iPhone 5S)*"
+msgstr "*範例：Qualcomm Adreno 306、Mali-T628 MP6、Apple A7（iPhone 5S）*"
+
+msgid "**For native exports:** 1 GB"
+msgstr "**針對原生匯出：** 1 GB"
+
+msgid "**For web exports:** 2 GB"
+msgstr "**針對網頁匯出：** 2 GB"
+
+msgid ""
+"**For native exports:** Android 6.0 (Compatibility), Android 9.0 (Forward+/"
+"Mobile), iOS 12.0 (Forward+/Mobile, Vulkan), iOS 16.0 (Forward+/Mobile, "
+"Metal)"
+msgstr ""
+"**針對原生匯出：** Android 6.0（相容性）、Android 9.0（Forward+/行動版）、"
+"iOS 12.0（Forward+/行動版，Vulkan）、iOS 16.0（Forward+/行動版，Metal）"
+
+msgid ""
+"These are the **recommended** specifications to get a smooth experience with "
+"a simple 2D or 3D project exported with Godot:"
+msgstr "以下為順暢體驗以 Godot 匯出的簡單 2D 或 3D 專案所 **建議** 的規格："
+
+msgid ""
+"**Linux:** x86_64 CPU with SSE4.2 support, with 4 physical cores or more, "
+"ARMv7 or ARMv8 CPU"
+msgstr ""
+"**Linux：** 支援 SSE4.2 的 x86_64 CPU，具 4 個以上實體核心，或 ARMv7／ARMv8 "
+"CPU"
+
+msgid ""
+"**Forward+ renderer:** Dedicated graphics with full Vulkan 1.2 support, "
+"Metal 3 support (macOS), or Direct3D 12 (12_0 feature level) support "
+"(Windows)"
+msgstr ""
+"**Forward+ 算繪器：** 獨立顯示卡需完整支援 Vulkan 1.2，或支援 Metal 3"
+"（macOS），或支援 Direct3D 12（功能等級 12_0，Windows）"
+
+msgid ""
+"**Mobile renderer:** Dedicated graphics with full Vulkan 1.2 support, Metal "
+"3 support (macOS), or Direct3D 12 (12_0 feature level) support (Windows)"
+msgstr ""
+"**行動裝置算繪器：** 獨立顯示卡需完整支援 Vulkan 1.2，或支援 Metal 3"
+"（macOS），或支援 Direct3D 12（功能等級 12_0，Windows）"
+
+msgid "**For native exports:** 4 GB"
+msgstr "**針對原生匯出：** 4 GB"
+
+msgid "**For web exports:** 8 GB"
+msgstr "**針對網頁匯出：** 8 GB"
+
+msgid ""
+"**For native exports:** Windows 10, macOS 10.15 (Forward+/Mobile, Vulkan), "
+"macOS 13.0 (Forward+/Mobile, Metal), Linux distribution released after 2020"
+msgstr ""
+"**針對原生匯出：** Windows 10、macOS 10.15（Forward+/行動版，Vulkan）、macOS "
+"13.0（Forward+/行動版，Metal）、2020 年後發行的 Linux 發行版"
+
+msgid ""
+"**For web exports:** Latest version of Firefox, Chrome, Edge, Safari, Opera"
+msgstr "**針對網頁匯出：** 最新版本的 Firefox、Chrome、Edge、Safari、Opera"
+
+msgid "**iOS:** SoC with 64-bit ARM CPU"
+msgstr "**iOS：** 具備 64 位元 ARM CPU 的 SoC"
+
+msgid "*Example: Apple A14 (iPhone 12)*"
+msgstr "*範例：Apple A14（iPhone 12）*"
+
+msgid ""
+"**Forward+ renderer:** SoC featuring GPU with full Vulkan 1.2 support, or "
+"Metal 3 support (iOS/iPadOS)"
+msgstr ""
+"**Forward+ 算繪器：** 具備完整 Vulkan 1.2 支援或支援 Metal 3（iOS/iPadOS）的 "
+"SoC（內含 GPU）"
+
+msgid "*Example: Qualcomm Adreno 630, Mali-G72 MP18, Apple A14 (iPhone 12)*"
+msgstr "*範例：Qualcomm Adreno 630、Mali-G72 MP18、Apple A14（iPhone 12）*"
+
+msgid ""
+"**Mobile renderer:** SoC featuring GPU with full Vulkan 1.2 support, or "
+"Metal 3 support (iOS/iPadOS)"
+msgstr ""
+"**行動裝置算繪器：** 具備完整 Vulkan 1.2 支援或支援 Metal 3（iOS/iPadOS）的 "
+"SoC（內含 GPU）"
+
+msgid ""
+"**For native exports:** Android 9.0, iOS 14.1 (Forward+/Mobile, Vulkan), iOS "
+"16.0 (Forward+/Mobile, Metal)"
+msgstr ""
+"**針對原生匯出：** Android 9.0、iOS 14.1（Forward+/行動版，Vulkan）、iOS 16.0"
+"（Forward+/行動版，Metal）"
+
+msgid ""
+"**For web exports:** Latest version of Firefox, Chrome, Edge, Safari, Opera, "
+"Samsung Internet"
+msgstr ""
+"**針對網頁匯出：** 最新版本的 Firefox、Chrome、Edge、Safari、Opera、Samsung "
+"Internet"
+
+msgid ""
+"Godot doesn't use OpenGL/OpenGL ES extensions introduced after OpenGL 3.3/"
+"OpenGL ES 3.0, but GPUs supporting newer OpenGL/OpenGL ES versions generally "
+"have fewer driver issues."
+msgstr ""
+"Godot 不使用在 OpenGL 3.3／OpenGL ES 3.0 之後引入的 OpenGL／OpenGL ES 擴充功"
+"能，但支援較新版 OpenGL／OpenGL ES 的 GPU 通常有較少驅動程式問題。"

@@ -1,0 +1,330 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Core types"
+msgstr "核心类型"
+
+msgid ""
+"Godot has a rich set of classes and templates that compose its core, and "
+"everything is built upon them."
+msgstr "Godot 具有构成其核心的丰富的类和模板集，并且所有内容都基于它们构建。"
+
+msgid ""
+"This reference will try to list them in order for their better understanding."
+msgstr "这份参考将试着按顺序列出它们，使之更容易被理解。"
+
+msgid "Definitions"
+msgstr "定义"
+
+msgid ""
+"Godot uses the standard C99 datatypes, such as ``uint8_t``, ``uint32_t``, "
+"``int64_t``, etc. which are nowadays supported by every compiler. "
+"Reinventing the wheel for those is not fun, as it makes code more difficult "
+"to read."
+msgstr ""
+"Godot 使用标准的 C99 数据类型，如 ``uint8_t``\\ 、\\ ``uint32_t``\\ 、\\ "
+"``int64_t`` 等，现在每个编译器都支持。为这些东西重新发明轮子没什么意思，只会"
+"让代码更难以阅读。"
+
+msgid ""
+"For Unicode characters, CharType instead of wchar_t is used, because many "
+"architectures have 4 bytes long wchar_t, where 2 bytes might be desired. "
+"However, by default, this has not been forced and CharType maps directly to "
+"wchar_t."
+msgstr ""
+"对于 Unicode 字符，使用 CharType 而不是 wchar_t，因为许多架构中 wchar_t 的长"
+"度是 4 个字节，而我们需要的是 2 个字节。但是默认情况下，这不会被强制，"
+"CharType 会直接映射到 wchar_t。"
+
+msgid ""
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
+"typedefs.h>`__"
+msgstr ""
+"`core/typedefs.h <https://github.com/godotengine/godot/blob/master/core/"
+"typedefs.h>`__"
+
+msgid "Memory model"
+msgstr "内存模型"
+
+msgid ""
+"PC is a wonderful architecture. Computers often have gigabytes of RAM, "
+"terabytes of storage and gigahertz of CPU, and when an application needs "
+"more resources the OS will swap out the inactive ones. Other architectures "
+"(like mobile or consoles) are in general more limited."
+msgstr ""
+"PC 是一个很棒的架构。计算机通常具有 GB 级的内存、TB 级的存储空间和 GHz 级的 "
+"CPU，当应用程序需要更多资源时，操作系统会交换出不活动的资源。其他架构（如移动"
+"设备或游戏主机）在这些方面通常有更多的限制。"
+
+msgid ""
+"The most common memory model is the heap, where an application will request "
+"a region of memory, and the underlying OS will try to fit it somewhere and "
+"return it. This often works best and is flexible, but over time and with "
+"abuse, this can lead to segmentation."
+msgstr ""
+"最常见的内存模型是堆，应用程序会从中请求一块内存区域，底层操作系统会试着从某"
+"处找到一块适合这样的内存并返回它。这通常效果最好，并且很灵活，但是随着时间的"
+"流逝和滥用，这可能会导致分段。"
+
+msgid ""
+"Segmentation slowly creates holes that are too small for most common "
+"allocations, so that memory is wasted. There is a lot of literature about "
+"heap and segmentation, so this topic will not be developed further here. "
+"Modern operating systems use paged memory, which helps mitigate the problem "
+"of segmentation but doesn't solve it."
+msgstr ""
+"分段缓慢地产生对于大多数常见分配而言太小的孔洞，从而浪费了内存。关于堆和分段"
+"的文献有很多，因此在此不再赘述。现代操作系统使用分页内存，这有助于减轻但不能"
+"解决分段问题。"
+
+msgid ""
+"However, in many studies and tests, it is shown that given enough memory, if "
+"the maximum allocation size is below a given threshold in proportion to the "
+"maximum heap size and proportion of memory intended to be unused, "
+"segmentation will not be a problem over time as it will remain constant. In "
+"other words, leave 10-20% of your memory free and perform all small "
+"allocations and you are fine."
+msgstr ""
+"然而，许多研究和测试显示，在给出足够内存的情况下，如果最大分配大小所占堆最大"
+"大小的比例低于一个给定的阈值，并且有一定比例的内存本来就是不使用的，那么分段"
+"就不会变化，不会随着时间的推移成为问题。换句话说，如果留出 10-20％ 的可用内存"
+"空间，并且执行的都是小额内存分配，那么就不会出事。"
+
+msgid "Allocating memory"
+msgstr "内存分配"
+
+msgid ""
+"Godot has many tools for tracking memory usage in a game, especially during "
+"debug. Because of this, the regular C and C++ library calls should not be "
+"used. Instead, a few other ones are provided."
+msgstr ""
+"Godot有许多工具可用于跟踪游戏中的内存使用情况, 尤其是在调试期间. 因此, 不应使"
+"用常规的C和C++库调用. 相反,Godot提供了一些其它的供你使用."
+
+msgid "For C-style allocation, Godot provides a few macros:"
+msgstr "Godot提供了一些宏可以用来处理C风格的内存分配:"
+
+msgid "For C++-style allocation, special macros are provided:"
+msgstr "这些宏可以用来处理C++风格的内存分配:"
+
+msgid ""
+"memnew/memdelete also use a little C++ magic and notify Objects right after "
+"they are created, and right before they are deleted."
+msgstr ""
+"memnew/memdelete也使用一点C++的小技巧, 在对象创建之后和删除之前, 通知对象."
+
+msgid ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`__"
+msgstr ""
+"`core/os/memory.h <https://github.com/godotengine/godot/blob/master/core/os/"
+"memory.h>`__"
+
+msgid "Containers"
+msgstr "容器"
+
+msgid ""
+"Godot provides its own set of containers, which means STL containers like "
+"``std::string`` and ``std::vector`` are generally not used in the codebase. "
+"See :ref:`doc_faq_why_not_stl` for more information."
+msgstr ""
+"Godot 提供了自己的容器，代码库中通常不使用 ``std::string``\\ 、\\ "
+"``std::vector`` 等 STL 容器。详见 :ref:`doc_faq_why_not_stl`\\ 。"
+
+msgid ""
+"A 📜 icon denotes the type is part of :ref:`Variant <doc_variant_class>`. "
+"This means it can be used as a parameter or return value of a method exposed "
+"to the scripting API."
+msgstr ""
+"📜 图标表示该类型属于 :ref:`Variant <doc_variant_class>`\\ 。这意味着它可以作"
+"为 API 的方法参数和返回值暴露给脚本。"
+
+msgid "Godot datatype"
+msgstr "Godot 数据类型"
+
+msgid "Closest C++ STL datatype"
+msgstr "最接近的 C++ STL 数据类型"
+
+msgid "Comment"
+msgstr "注释"
+
+msgid "|string| 📜"
+msgstr "|string| 📜"
+
+msgid "``std::string``"
+msgstr "``std::string``"
+
+msgid "|vector|"
+msgstr "|vector|"
+
+msgid "``std::vector``"
+msgstr "``std::vector``"
+
+msgid ""
+"**Use this as the \"default\" vector type.** Uses copy-on-write (COW) "
+"semantics. This means it's generally slower but can be copied around almost "
+"for free. Use ``LocalVector`` instead where COW isn't needed and performance "
+"matters."
+msgstr ""
+"**请作为“默认”动态数组类型使用。**\\ 采用写时复制（COW）机制。这意味着速度通"
+"常较慢，但可以几乎零成本地进行复制操作。不需要 COW、性能敏感时请改用 "
+"``LocalVector``\\ 。"
+
+msgid "|hash_set|"
+msgstr "|hash_set|"
+
+msgid "``std::unordered_set``"
+msgstr "``std::unordered_set``"
+
+msgid "**Use this as the \"default\" set type.**"
+msgstr "**请作为“默认”集合类型使用。**"
+
+msgid "|a_hash_map|"
+msgstr "|a_hash_map|"
+
+msgid "``std::unordered_map``"
+msgstr "``std::unordered_map``"
+
+msgid ""
+"**Use this as the \"default\" map type.** Does not preserve insertion order. "
+"Note that pointers into the map, as well as iterators, are not stable under "
+"mutations. If either of these affordances are needed, use ``HashMap`` "
+"instead."
+msgstr ""
+"**请作为“默认”映射类型使用。**\\ 不保持插入顺序。请注意，指向映射内部的指针和"
+"迭代器在映射发生修改后均不稳定。如果需要支持这些功能，请改用 ``HashMap``\\ 。"
+
+msgid "|string_name| 📜"
+msgstr "|string_name| 📜"
+
+msgid "|local_vector|"
+msgstr "|local_vector|"
+
+msgid ""
+"Closer to ``std::vector`` in semantics, doesn't use copy-on-write (COW) thus "
+"it's faster than ``Vector``. Prefer it over ``Vector`` when copying it "
+"cheaply is not needed."
+msgstr ""
+"语义上接近 ``std::vector``\\ ，不使用写时复制（COW），因此比 ``Vector`` 快。"
+"不需要用到轻量复制时优先于 ``Vector`` 使用。"
+
+msgid "|array| 📜"
+msgstr "|array| 📜"
+
+msgid "|typed_array| 📜"
+msgstr "|typed_array| 📜"
+
+msgid "|packed_array| 📜"
+msgstr "|packed_array| 📜"
+
+msgid "|list|"
+msgstr "|list|"
+
+msgid "``std::list``"
+msgstr "``std::list``"
+
+msgid ""
+"Linked list type. Generally slower than other array/vector types. Prefer "
+"using other types in new code, unless using ``List`` avoids the need for "
+"type conversions."
+msgstr ""
+"链表类型。通常比其他数组/向量类型更慢。在新代码中建议优先使用其他类型，除非使"
+"用 ``List`` 能避免类型转换需求。"
+
+msgid "|fixed_vector|"
+msgstr "|fixed_vector|"
+
+msgid "``std::array``"
+msgstr "``std::array``"
+
+msgid "|span|"
+msgstr "|span|"
+
+msgid "``std::span``"
+msgstr "``std::span``"
+
+msgid "|rb_set|"
+msgstr "|rb_set|"
+
+msgid "``std::set``"
+msgstr "``std::set``"
+
+msgid ""
+"Uses a `red-black tree <https://en.wikipedia.org/wiki/Red-black_tree>`__ for "
+"faster access."
+msgstr ""
+"使用\\ `红黑树 <https://zh.wikipedia.org/zh-hans/"
+"%E7%BA%A2%E9%BB%91%E6%A0%91>`__\\ 实现快速访问。"
+
+msgid "|v_set|"
+msgstr "|v_set|"
+
+msgid "``std::flat_set``"
+msgstr "``std::flat_set``"
+
+msgid "|hash_map|"
+msgstr "|hash_map|"
+
+msgid "|rb_map|"
+msgstr "|rb_map|"
+
+msgid "``std::map``"
+msgstr "``std::map``"
+
+msgid "|dictionary| 📜"
+msgstr "|dictionary| 📜"
+
+msgid "|typed_dictionary| 📜"
+msgstr "|typed_dictionary| 📜"
+
+msgid ""
+"Subclass of ``Dictionary`` but with static typing for its keys and values."
+msgstr "``Dictionary`` 的子类，对键和值进行了静态类型约束。"
+
+msgid "|pair|"
+msgstr "|pair|"
+
+msgid "``std::pair``"
+msgstr "``std::pair``"
+
+msgid "Math types"
+msgstr "数学类型"
+
+msgid ""
+"There are several linear math types available in the ``core/math`` directory:"
+msgstr "在 ``core/math`` 目录中有一些线性代数相关的类型："
+
+msgid ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+msgstr ""
+"`core/math <https://github.com/godotengine/godot/tree/master/core/math>`__"
+
+msgid "NodePath"
+msgstr "节点路径"
+
+msgid ""
+"`core/string/node_path.h <https://github.com/godotengine/godot/blob/master/"
+"core/string/node_path.h>`__"
+msgstr ""
+"`core/string/node_path.h <https://github.com/godotengine/godot/blob/master/"
+"core/string/node_path.h>`__"
+
+msgid "RID"
+msgstr "RID"
+
+msgid ""
+"`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/"
+"templates/rid.h>`__"
+msgstr ""
+"`core/templates/rid.h <https://github.com/godotengine/godot/blob/master/core/"
+"templates/rid.h>`__"

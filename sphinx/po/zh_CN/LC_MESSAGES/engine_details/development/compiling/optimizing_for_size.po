@@ -1,0 +1,378 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Optimizing a build for size"
+msgstr "为尺寸优化构建"
+
+msgid "Rationale"
+msgstr "依据"
+
+msgid ""
+"Sometimes, it is desired to optimize a build for size rather than speed. "
+"This means not compiling unused functions from the engine, as well as using "
+"specific compiler flags to aid on decreasing build size. Common situations "
+"include creating builds for mobile and Web platforms."
+msgstr ""
+"有时, 需要针对大小而不是速度来优化构建. 这意味着不编译引擎上的未使用的函数, "
+"以及使用特定的编译器标志来帮助减小构建大小. 常见情况包括为移动和Web平台创建构"
+"建."
+
+msgid ""
+"This tutorial aims to give an overview on different methods to create a "
+"smaller binary. Before continuing, it is recommended to read the previous "
+"tutorials on compiling Godot for each platform."
+msgstr ""
+"本教程旨在概述创建较小二进制文件的不同方法. 在继续之前, 建议阅读之前有关为每"
+"个平台编译Godot的教程."
+
+msgid ""
+"The options below are listed from the most important (greatest size savings) "
+"to the least important (lowest size savings)."
+msgstr ""
+"下面的选项按照从最重要（大小节省得最多）到最不重要（大小节省得最少）的顺序排"
+"列。"
+
+msgid "Stripping binaries"
+msgstr "剥离二进制文件"
+
+msgid "**Space savings:** Very high"
+msgstr "**节省空间：**\\ 非常高"
+
+msgid "**Difficulty:** Easy"
+msgstr "**难度：**\\ 简单"
+
+msgid "**Performed in official builds:** Yes"
+msgstr "**在官方构建中执行：**\\ 是"
+
+msgid ""
+"If you build Windows (MinGW), Linux or macOS binaries from source, remember "
+"to strip debug symbols from binaries by installing the ``strip`` package "
+"from your distribution then running:"
+msgstr ""
+"如果你从源码构建了 Windows（MinGW）、Linux、macOS 的二进制文件，请记得剥离二"
+"进制文件中的调试符号。首先请安装你的发行版中的 ``strip`` 包，然后执行："
+
+msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
+msgstr "在 Windows 上，大多数 MinGW 工具链安装时都会包含 ``strip.exe``\\ 。"
+
+msgid ""
+"This will reduce the size of compiled binaries by a factor between 5× and "
+"10×. The downside is that crash backtraces will no longer provide accurate "
+"information (which is useful for troubleshooting the cause of a "
+"crash). :ref:`C++ profilers <doc_using_cpp_profilers>` will also no longer "
+"be able to display function names (this does not affect the built-in "
+"GDScript profiler)."
+msgstr ""
+"这样可以将编译后二进制文件减少到原先五分之一到十分之一的大小。缺点是崩溃追踪"
+"中就无法再提供准确的信息了（可用于查找崩溃原因）。\\ :ref:`C++ 性能分析器 "
+"<doc_using_cpp_profilers>`\\ 也将无法显示函数名称（不影响内置的 GDScript 性能"
+"分析器）。"
+
+msgid "Compiling with link-time optimization"
+msgstr "编译时使用连接时间优化"
+
+msgid "**Space savings:** High"
+msgstr "**节省空间：**\\ 高"
+
+msgid ""
+"Enabling link-time optimization produces more efficient binaries, both in "
+"terms of performance and file size. It works by eliminating duplicate "
+"template functions and unused code. It can currently be used with the GCC "
+"and MSVC compilers:"
+msgstr ""
+"启用链接时优化可以在性能和文件大小方面生成更高效的二进制文件. 它通过消除重复"
+"的模板功能和未使用的代码来工作. 目前, 它可以与GCC和MSVC编译器一起使用:"
+
+msgid "Optimizing for size instead of speed"
+msgstr "针对大小而不是速度优化"
+
+msgid "**Performed in official builds:** Yes, but only for web builds"
+msgstr "**在官方构建中执行：**\\ 是，但仅限于 Web 构建"
+
+msgid ""
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+"Godot 3.1以上版本允许使用尺寸优化(而不是速度优化)进行编译. 要启用这个功能, 请"
+"将 ``optimize`` 标志设置为 ``size`` :"
+
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr "某些平台如WebAssembly默认情况下已使用此模式."
+
+msgid ""
+"Godot 4.5 introduced the ``size_extra`` option, which can further reduce "
+"size."
+msgstr "Godot 4.5 新增了 ``size_extra`` 选项，可进一步减小构建体积。"
+
+msgid ""
+"Detecting used features from the current project and disabling unused "
+"features"
+msgstr "从当前项目中检测已使用的功能，并禁用未使用的功能"
+
+msgid "**Performed in official builds:** No"
+msgstr "**在官方构建中执行：**\\ 否"
+
+msgid ""
+"Godot features an :ref:`doc_engine_compilation_configuration_editor` tool "
+"that can detect the features used in the current project and create a build "
+"profile. Once saved, this build profile can then be passed to SCons when "
+"compiling custom export templates:"
+msgstr ""
+"Godot 提供了一个 :ref:`doc_engine_compilation_configuration_editor` 工具，可"
+"检测当前项目中使用到的功能并生成构建配置文件。保存后，该配置文件可在编译自定"
+"义导出模板时传递给 SCons："
+
+msgid ""
+"Note that for certain projects, the feature detection may be too aggressive "
+"and disable features that are actually needed at runtime. This can occur if "
+"certain features are used in a way that their usage cannot be detected "
+"statically (such as a script being procedurally created and run at runtime)."
+msgstr ""
+"请注意，对于某些项目，功能检测可能会过于激进，导致禁用实际运行时所需的功能。"
+"这种情况可能发生在某些功能的使用方式无法通过静态分析检测到时（例如脚本在运行"
+"时被程序化地创建并执行）。"
+
+msgid ""
+"More specific features can be disabled by following the sections below, but "
+"remember that many of them are automatically detected by the engine "
+"compilation configuration detector."
+msgstr ""
+"可通过以下章节禁用更具体的功能，但请注意，其中许多功能会被引擎编译配置检测器"
+"自动识别并处理。"
+
+msgid "Disabling advanced text server"
+msgstr "禁用高级文本服务器"
+
+msgid ""
+"By default, Godot uses an advanced text server with the support for the "
+"following features:"
+msgstr "默认情况下，Godot使用一个支持以下功能的高级文本服务器:"
+
+msgid ""
+"Right-to-left typesetting and complex scripts, required to write languages "
+"such as Arabic and Hebrew."
+msgstr "书写阿拉伯语和希伯来语等语言所需的从右向左的排版和复杂的文字。"
+
+msgid ""
+"Font ligatures and OpenType features (such as small capitals, fractions and "
+"slashed zero)."
+msgstr "字体连字和 OpenType 功能(例如小型大写字母、分数和斜线零)。"
+
+msgid ""
+"Remember to always pass ``module_text_server_fb_enabled=yes`` when using "
+"``module_text_server_adv_enabled=no``. Otherwise, the compiled binary won't "
+"contain any text server, which means no text will be displayed at all when "
+"running the project."
+msgstr ""
+"请记得在使用 ``module_text_server_adv_enabled=no`` 的同时传入 "
+"``module_text_server_fb_enabled=yes``\\ 。否则编译后的二进制文件中不会包含任"
+"何文本服务器，导致运行项目时不显示任何文本。"
+
+msgid "Disabling 3D"
+msgstr "禁用 3D"
+
+msgid "**Space savings:** Moderate"
+msgstr "**节省空间：**\\ 一般"
+
+msgid ""
+"For 2D games, having the whole 3D engine available usually makes no sense. "
+"Because of this, there is a build flag to disable it:"
+msgstr ""
+"对于 2D 游戏，拥有整个 3D 引擎通常没有任何意义。因此，有一个构建标志来禁用"
+"它："
+
+msgid ""
+"Tools must be disabled in order to use this flag, as the editor is not "
+"designed to operate without 3D support. Without it, the binary size can be "
+"reduced by about 15%."
+msgstr ""
+"必须禁用工具才能使用此标志, 因为编辑器不能在没有3D支持的情况下运行. 没有它, "
+"二进制大小可以减少大约15％."
+
+msgid "Disabling advanced GUI objects"
+msgstr "禁用高级 GUI 对象"
+
+msgid ""
+"Most small games don't require complex GUI controls such as Tree, ItemList, "
+"TextEdit or GraphEdit. They can be disabled using a build flag:"
+msgstr ""
+"大多数小游戏不需要复杂的GUI控件, 如Tree, ItemList, TextEdit或GraphEdit. 它们"
+"可以用一个构建标志来禁用:"
+
+msgid "This is everything that will be disabled:"
+msgstr "以下所有东西都会被禁用："
+
+msgid ":ref:`class_AcceptDialog`"
+msgstr ":ref:`class_AcceptDialog`"
+
+msgid ":ref:`class_CharFXTransform`"
+msgstr ":ref:`class_CharFXTransform`"
+
+msgid ":ref:`class_CodeEdit`"
+msgstr ":ref:`class_CodeEdit`"
+
+msgid ":ref:`class_CodeHighlighter`"
+msgstr ":ref:`class_CodeHighlighter`"
+
+msgid ":ref:`class_ColorPicker`"
+msgstr ":ref:`class_ColorPicker`"
+
+msgid ":ref:`class_ColorPickerButton`"
+msgstr ":ref:`class_ColorPickerButton`"
+
+msgid ":ref:`class_ConfirmationDialog`"
+msgstr ":ref:`class_ConfirmationDialog`"
+
+msgid ":ref:`class_FileDialog`"
+msgstr ":ref:`class_FileDialog`"
+
+msgid ":ref:`class_FoldableContainer`"
+msgstr ":ref:`class_FoldableContainer`"
+
+msgid ":ref:`class_FoldableGroup`"
+msgstr ":ref:`class_FoldableGroup`"
+
+msgid ":ref:`class_GraphEdit`"
+msgstr ":ref:`class_GraphEdit`"
+
+msgid ":ref:`class_GraphElement`"
+msgstr ":ref:`class_GraphElement`"
+
+msgid ":ref:`class_GraphFrame`"
+msgstr ":ref:`class_GraphFrame`"
+
+msgid ":ref:`class_GraphNode`"
+msgstr ":ref:`class_GraphNode`"
+
+msgid ":ref:`class_HSplitContainer`"
+msgstr ":ref:`class_HSplitContainer`"
+
+msgid ":ref:`class_MenuBar`"
+msgstr ":ref:`class_MenuBar`"
+
+msgid ":ref:`class_MenuButton`"
+msgstr ":ref:`class_MenuButton`"
+
+msgid ":ref:`class_OptionButton`"
+msgstr ":ref:`class_OptionButton`"
+
+msgid ""
+":ref:`class_PopupMenu` (will make all popup menus unavailable in code for "
+"classes that use them, like :ref:`class_LineEdit`, even though those classes "
+"are still available)"
+msgstr ""
+":ref:`class_PopupMenu`\\ （这将使 :ref:`class_LineEdit` 等使用弹出菜单的类在"
+"代码中无法使用弹出菜单，尽管这些类本身仍然可用）"
+
+msgid ":ref:`class_RichTextEffect`"
+msgstr ":ref:`class_RichTextEffect`"
+
+msgid ":ref:`class_RichTextLabel`"
+msgstr ":ref:`class_RichTextLabel`"
+
+msgid ":ref:`class_SpinBox`"
+msgstr ":ref:`class_SpinBox`"
+
+msgid ":ref:`class_SplitContainer`"
+msgstr ":ref:`class_SplitContainer`"
+
+msgid ":ref:`class_SubViewportContainer`"
+msgstr ":ref:`class_SubViewportContainer`"
+
+msgid ":ref:`class_SyntaxHighlighter`"
+msgstr ":ref:`class_SyntaxHighlighter`"
+
+msgid ":ref:`class_TextEdit`"
+msgstr ":ref:`class_TextEdit`"
+
+msgid ":ref:`class_Tree`"
+msgstr ":ref:`class_Tree`"
+
+msgid ":ref:`class_TreeItem`"
+msgstr ":ref:`class_TreeItem`"
+
+msgid ":ref:`class_VSplitContainer`"
+msgstr ":ref:`class_VSplitContainer`"
+
+msgid "Disabling physics engines"
+msgstr "禁用物理引擎"
+
+msgid "Disabling unwanted modules"
+msgstr "禁用不需要的模块"
+
+msgid "**Space savings:** Very low to moderate depending on modules"
+msgstr "**节省空间：**\\ 非常低到一般之间，取决于模块"
+
+msgid "**Difficulty:** Medium to hard depending on modules"
+msgstr "**难度：**\\ 中等到难之间，取决于模块"
+
+msgid ""
+"A lot of Godot's functions are offered as modules. You can see a list of "
+"modules with the following command:"
+msgstr "许多Godot的功能都作为模块提供. 你可以使用以下命令查看模块列表:"
+
+msgid ""
+"The list of modules that can be disabled will appear, together with all "
+"build options. If you are working on a simple 2D game, you could disable a "
+"lot of them:"
+msgstr ""
+"将显示可以禁用的模块列表以及所有构建选项. 如果你正在开发简单的2D游戏, 则可以"
+"禁用其中的许多功能:"
+
+msgid ""
+"Alternatively, you can supply a list of disabled modules by creating "
+"``custom.py`` at the root of the source, with the contents similar to the "
+"following:"
+msgstr ""
+"或者, 你也可以通过在源代码的根部创建 ``custom.py`` 来提供一个禁用模块的列表, "
+"其内容类似于以下:"
+
+msgid ":ref:`doc_overriding_build_options`."
+msgstr ":ref:`doc_overriding_build_options`."
+
+msgid "Optimizing the distribution of your project"
+msgstr "优化项目的分发"
+
+msgid "Desktop"
+msgstr "桌面"
+
+msgid ""
+"Platforms like Steam already apply their own compression scheme, so you "
+"don't need to create a ZIP archive to distribute files in the first place."
+msgstr ""
+"像 Steam 这样的平台已经应用了它们自己的压缩方案，所以你不需要首先创建一个 "
+"ZIP 存档来分发文件。"
+
+msgid ""
+"When using the 7-Zip GUI, this is done by creating a ZIP archive with the "
+"Ultra compression mode. When using the command line, this is done using the "
+"following command:"
+msgstr ""
+"当使用 7-Zip GUI 时，这是通过使用超压缩模式创建 Zip 存档来完成的。使用命令行"
+"时，使用以下命令完成此操作:"
+
+msgid "Web"
+msgstr "Web"
+
+msgid ""
+"Creating precompressed gzip or Brotli files with a high compression level "
+"can be even more efficient, as long as the web server is configured to serve "
+"those files when they exist. When supported, Brotli should be preferred over "
+"gzip as it has a greater potential for file size reduction."
+msgstr ""
+"创建具有高压缩级别的预压缩 gzip 或 Brotli 文件可能会更有效，只要 web 服务器被"
+"配置为在这些文件存在时提供服务。如果支持的话，Brotli 应该比 gzip 更受欢迎，因"
+"为它在减小文件大小方面有更大的潜力。"
+
+msgid "See :ref:`doc_exporting_for_web_serving_the_files` for instructions."
+msgstr "详细步骤见 :ref:`doc_exporting_for_web_serving_the_files`\\ 。"

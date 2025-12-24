@@ -1,0 +1,79 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"GD0002: Missing partial modifier on declaration of type which contains "
+"nested classes that derive from GodotObject"
+msgstr "GD0002：包含从 GodotObject 派生的嵌套类的类型声明中缺少 partial 修饰符"
+
+msgid "**Rule ID**"
+msgstr "**规则 ID**"
+
+msgid "GD0002"
+msgstr "GD0002"
+
+msgid "**Category**"
+msgstr "**类别**"
+
+msgid "Usage"
+msgstr "用法"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**修复是破坏性的还是非破坏性的**"
+
+msgid "Non-breaking"
+msgstr "非破坏性的"
+
+msgid "**Enabled by default**"
+msgstr "**默认启用**"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Cause"
+msgstr "原因"
+
+msgid ""
+"A type that derives from ``GodotObject`` is contained in a non-partial type "
+"declaration."
+msgstr "从 ``GodotObject`` 派生的类型包含在非 partial 类型声明中。"
+
+msgid "Rule description"
+msgstr "规则说明"
+
+msgid ""
+"Godot source generators add generated code to user-defined types to "
+"implement the integration with the engine. Source generators can't add "
+"generated code to types that aren't declared partial."
+msgstr ""
+"Godot 源生成器将生成的代码添加到用户定义的类型以实现与引擎的集成。源生成器无"
+"法将生成的代码添加到未声明为 partial 的类型。"
+
+msgid "How to fix violations"
+msgstr "如何解决违规情况"
+
+msgid ""
+"To fix a violation of this rule, add the ``partial`` keyword to the type "
+"declaration."
+msgstr "要修复违反该规则的情况，请将 ``partial`` 关键字添加到类型声明中。"
+
+msgid "When to suppress warnings"
+msgstr "何时抑制警告"
+
+msgid ""
+"Do not suppress a warning from this rule. Types that derive from "
+"``GodotObject`` but aren't partial can't be enhanced by the source "
+"generators, resulting in unexpected runtime errors."
+msgstr ""
+"不要抑制该规则的警告。从 ``GodotObject`` 派生但不是 partial 的类型无法通过源"
+"生成器进行增强，从而导致意外的运行时错误。"

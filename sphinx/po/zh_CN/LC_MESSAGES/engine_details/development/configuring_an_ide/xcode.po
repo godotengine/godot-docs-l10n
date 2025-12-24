@@ -1,0 +1,104 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Xcode"
+msgstr "Xcode"
+
+msgid ""
+"`Xcode <https://developer.apple.com/xcode>`_ is a free macOS-only IDE. You "
+"can download it from the Mac App Store."
+msgstr ""
+"`Xcode <https://developer.apple.com/xcode>`_ 是一个免费的macOS专用IDE, 你可以"
+"从Mac App Store下载它."
+
+msgid "Importing the project"
+msgstr "导入项目"
+
+msgid "Fill out the form with the following settings:"
+msgstr "按以下设置填写表格:"
+
+msgid "Arguments"
+msgstr "参数"
+
+msgid ""
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr "参见 :ref:`doc_introduction_to_the_buildsystem`, 获取完整的参数列表."
+
+msgid "Directory"
+msgstr "目录"
+
+msgid "A full path to the Godot root folder"
+msgstr "到Godot根文件夹的完整路径"
+
+msgid ""
+"Name it something so you know not to compile with this target (e.g. "
+"``GodotXcodeIndex``)."
+msgstr "为它命名, 以使你知道不使用该目标进行编译(例如 ``GodotXcodeIndex``)."
+
+msgid ""
+"Set **Header Search Paths** to the absolute path to the Godot root folder. "
+"You need to include subdirectories as well. To achieve that, add two two "
+"asterisks (``**``) to the end of the path, e.g. ``/Users/me/repos/godot-"
+"source/**``."
+msgstr ""
+"将 **Header Search Paths** 设置为 Godot 根文件夹的绝对路径。子目录也需要包含"
+"进来，为此，请在路径末尾添加两个星号（\\ ``**``\\ ），例如 ``/Users/me/repos/"
+"godot-source/**``\\ 。"
+
+msgid ""
+"Add the Godot source to the project by dragging and dropping it into the "
+"project file browser."
+msgstr "将Godot源码拖放到项目文件浏览器中, 将其添加到项目中."
+
+msgid "Xcode will now index the files. This may take a few minutes."
+msgstr "Xcode现在将索引这些文件. 这可能需要几分钟的时间."
+
+msgid ""
+"Once Xcode is done indexing, you should have jump-to-definition, "
+"autocompletion, and full syntax highlighting."
+msgstr "一旦Xcode完成了索引, 你应该有跳转定义, 自动完成和完整的语法突出显示."
+
+msgid "Debugging the project"
+msgstr "调试项目"
+
+msgid ""
+"To enable debugging support you need to edit the external build target's "
+"build and run schemes."
+msgstr "要启用调试支持, 需要编辑外部构建目标的构建和运行方案."
+
+msgid "Open the scheme editor of the external build target."
+msgstr "打开外部构建目标的方案编辑器."
+
+msgid "Locate the **Build > Post Actions** section."
+msgstr "定位到 **Build > Post Actions** 区."
+
+msgid "Add a new script run action"
+msgstr "增加一个新的脚本运行操作"
+
+msgid ""
+"Create a script that will give the binary a name that Xcode can recognize, "
+"e.g.:"
+msgstr "创建一个脚本, 给二进制文件起一个Xcode可以识别的名字, 例如:"
+
+msgid "Build the external build target."
+msgstr "构建外部构建目标."
+
+msgid "Open the scheme editor again and select **Run**."
+msgstr "再次打开方案编辑器, 然后选择 **运行** ."
+
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"如果遇到问题, 也可在 `Godot 社区论坛 <https://godotengine.org/community>`__ "
+"中寻求帮助."

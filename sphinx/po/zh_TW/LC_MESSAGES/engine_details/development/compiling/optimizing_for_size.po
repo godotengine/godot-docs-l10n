@@ -1,0 +1,497 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Optimizing a build for size"
+msgstr "最佳化建置檔案大小"
+
+msgid "Rationale"
+msgstr "說明"
+
+msgid ""
+"Sometimes, it is desired to optimize a build for size rather than speed. "
+"This means not compiling unused functions from the engine, as well as using "
+"specific compiler flags to aid on decreasing build size. Common situations "
+"include creating builds for mobile and Web platforms."
+msgstr ""
+"有時候希望以檔案大小為優先進行最佳化，而非速度。這意味著不會編譯引擎中未使用"
+"的函式，並利用特定的編譯器旗標來協助縮小建置檔案。常見情境包含針對行動裝置與 "
+"Web 平台建立建置檔。"
+
+msgid ""
+"This tutorial aims to give an overview on different methods to create a "
+"smaller binary. Before continuing, it is recommended to read the previous "
+"tutorials on compiling Godot for each platform."
+msgstr ""
+"本教學旨在概述各種縮小二進位檔的方法。在繼續之前，建議先閱讀針對各平台編譯 "
+"Godot 的相關教學。"
+
+msgid ""
+"The options below are listed from the most important (greatest size savings) "
+"to the least important (lowest size savings)."
+msgstr "以下選項依照重要程度（節省空間最多到最少）的順序排列。"
+
+msgid "Stripping binaries"
+msgstr "移除二進位檔符號"
+
+msgid "**Space savings:** Very high"
+msgstr "**節省空間：** 非常高"
+
+msgid "**Difficulty:** Easy"
+msgstr "**難度：** 簡單"
+
+msgid "**Performed in official builds:** Yes"
+msgstr "**官方建構是否執行：** 是"
+
+msgid ""
+"If you build Windows (MinGW), Linux or macOS binaries from source, remember "
+"to strip debug symbols from binaries by installing the ``strip`` package "
+"from your distribution then running:"
+msgstr ""
+"如果你從原始碼建構 Windows（MinGW）、Linux 或 macOS 的二進位檔，請記得透過發"
+"行版安裝 ``strip`` 套件，然後執行下列指令以移除除錯符號："
+
+msgid "On Windows, ``strip.exe`` is included in most MinGW toolchain setups."
+msgstr "在 Windows 上，大多數 MinGW 工具鏈都已內含 ``strip.exe``。"
+
+msgid ""
+"This will reduce the size of compiled binaries by a factor between 5× and "
+"10×. The downside is that crash backtraces will no longer provide accurate "
+"information (which is useful for troubleshooting the cause of a "
+"crash). :ref:`C++ profilers <doc_using_cpp_profilers>` will also no longer "
+"be able to display function names (this does not affect the built-in "
+"GDScript profiler)."
+msgstr ""
+"這樣做能將編譯後的二進位檔案縮小至原本的五分之一到十分之一。缺點是當機回溯將"
+"無法再提供準確資訊（此對於排除當機原因很有幫助）。:ref:`C++ 性能分析工具 "
+"<doc_using_cpp_profilers>` 也無法顯示函式名稱（但不影響內建的 GDScript 性能分"
+"析器）。"
+
+msgid ""
+"The above command will not work on Windows binaries compiled with MSVC and "
+"platforms such as Android and Web. Instead, pass ``debug_symbols=no`` on the "
+"SCons command line when compiling."
+msgstr ""
+"上述指令無法用於以 MSVC 編譯的 Windows 二進位檔，以及 Android 和 Web 等平台。"
+"請改為在 SCons 編譯指令列加上 ``debug_symbols=no``。"
+
+msgid "Compiling with link-time optimization"
+msgstr "以連結時期最佳化（LTO）編譯"
+
+msgid "**Space savings:** High"
+msgstr "**節省空間：** 高"
+
+msgid ""
+"Enabling link-time optimization produces more efficient binaries, both in "
+"terms of performance and file size. It works by eliminating duplicate "
+"template functions and unused code. It can currently be used with the GCC "
+"and MSVC compilers:"
+msgstr ""
+"啟用連結時期最佳化（LTO）能讓二進位檔效能與檔案大小更有效率。LTO 會消除重複的"
+"樣板函式與未使用的程式碼。目前可於 GCC 與 MSVC 編譯器使用："
+
+msgid ""
+"Linking becomes much slower and more RAM-consuming with this option, so it "
+"should be used only for release builds. You need to have at least 8 GB of "
+"RAM available for successful linking with LTO enabled. Since the operating "
+"system and programs will take up some RAM, in practice, you need 12 GB of "
+"RAM installed in your system (preferably 16 GB) to compile Godot with LTO "
+"enabled."
+msgstr ""
+"啟用此選項後，連結會變得更慢且更耗記憶體，所以應僅在發行版建置時使用。啟用 "
+"LTO 成功連結至少需要 8 GB 可用記憶體。由於作業系統與程式也會占用記憶體，實務"
+"上建議系統安裝 12 GB（最好是 16 GB）記憶體來啟用 LTO 編譯 Godot。"
+
+msgid "Optimizing for size instead of speed"
+msgstr "優先最佳化大小而非速度"
+
+msgid "**Performed in official builds:** Yes, but only for web builds"
+msgstr "**官方建構是否執行：** 是，但僅限於 Web 平台"
+
+msgid ""
+"Godot 3.1 onwards allows compiling using size optimizations (instead of "
+"speed). To enable this, set the ``optimize`` flag to ``size``:"
+msgstr ""
+"自 Godot 3.1 起可選擇以檔案大小為優先進行最佳化。啟用方式為將 ``optimize`` 旗"
+"標設為 ``size``："
+
+msgid "Some platforms such as WebAssembly already use this mode by default."
+msgstr "某些平台（如 WebAssembly）預設即使用此模式。"
+
+msgid ""
+"Godot 4.5 introduced the ``size_extra`` option, which can further reduce "
+"size."
+msgstr "Godot 4.5 新增了 ``size_extra`` 選項，可進一步縮小體積。"
+
+msgid ""
+"Detecting used features from the current project and disabling unused "
+"features"
+msgstr "偵測當前專案所用功能並停用未使用的功能"
+
+msgid "**Space savings:** Moderate to high depending on project"
+msgstr "**節省空間：** 中等到高，視專案而定"
+
+msgid "**Difficulty:** Easy to medium depending on project"
+msgstr "**難度：** 簡單至中等，視專案而定"
+
+msgid "**Performed in official builds:** No"
+msgstr "**在官方建構中執行：** 否"
+
+msgid ""
+"Godot features an :ref:`doc_engine_compilation_configuration_editor` tool "
+"that can detect the features used in the current project and create a build "
+"profile. Once saved, this build profile can then be passed to SCons when "
+"compiling custom export templates:"
+msgstr ""
+"Godot 提供一個 :ref:`doc_engine_compilation_configuration_editor` 工具，可偵"
+"測目前專案使用到的功能並建立建置設定檔。儲存後，即可在編譯自訂匯出樣板時將該"
+"設定檔傳給 SCons："
+
+msgid ""
+"Note that for certain projects, the feature detection may be too aggressive "
+"and disable features that are actually needed at runtime. This can occur if "
+"certain features are used in a way that their usage cannot be detected "
+"statically (such as a script being procedurally created and run at runtime)."
+msgstr ""
+"請注意，對某些專案而言，功能偵測可能過於積極，導致停用了執行時其實需要的功"
+"能。例如某些功能的使用方式無法靜態偵測（像是於執行時動態產生並執行的腳本）。"
+
+msgid ""
+"More specific features can be disabled by following the sections below, but "
+"remember that many of them are automatically detected by the engine "
+"compilation configuration detector."
+msgstr ""
+"你也可以依下列章節停用更細部的功能，但請記得其中多數功能可由引擎的編譯組態偵"
+"測器自動判斷。"
+
+msgid "Disabling advanced text server"
+msgstr "停用進階文字伺服器"
+
+msgid ""
+"By default, Godot uses an advanced text server with the support for the "
+"following features:"
+msgstr "Godot 預設使用進階文字伺服器，支援以下功能："
+
+msgid ""
+"Right-to-left typesetting and complex scripts, required to write languages "
+"such as Arabic and Hebrew."
+msgstr "支援由右至左排版與複雜文字腳本，這對阿拉伯文、希伯來文等語言是必要的。"
+
+msgid ""
+"Font ligatures and OpenType features (such as small capitals, fractions and "
+"slashed zero)."
+msgstr "字體連字與 OpenType 功能（如小型大寫字母、分數、斜線零）。"
+
+msgid ""
+"Godot provides a fallback text server that isn't compiled by default. This "
+"text server can be used as a lightweight alternative to the default advanced "
+"text server:"
+msgstr ""
+"Godot 也提供一個預設不會編譯的備用文字伺服器。這個備用文字伺服器可作為輕量級"
+"選擇，取代進階文字伺服器："
+
+msgid ""
+"If you only intend on supporting Latin, Greek and Cyrillic-based languages "
+"in your project, the fallback text server should suffice."
+msgstr ""
+"若你的專案僅需支援拉丁文、希臘文與西里爾文等語系，備用文字伺服器就已足夠。"
+
+msgid ""
+"This fallback text server can also process large amounts of text more "
+"quickly than the advanced text server. This makes the fallback text server a "
+"good fit for mobile/web projects."
+msgstr ""
+"此外，備用文字伺服器處理大量文字的速度也比進階文字伺服器快，因此很適合用於行"
+"動裝置或 Web 專案。"
+
+msgid ""
+"Remember to always pass ``module_text_server_fb_enabled=yes`` when using "
+"``module_text_server_adv_enabled=no``. Otherwise, the compiled binary won't "
+"contain any text server, which means no text will be displayed at all when "
+"running the project."
+msgstr ""
+"使用 ``module_text_server_adv_enabled=no`` 時，請務必同時加上 "
+"``module_text_server_fb_enabled=yes``，否則編譯出來的二進位檔將不包含任何文字"
+"伺服器，專案執行時將無法顯示任何文字。"
+
+msgid "Disabling 3D"
+msgstr "停用 3D 支援"
+
+msgid "**Space savings:** Moderate"
+msgstr "**節省空間：** 中等"
+
+msgid ""
+"For 2D games, having the whole 3D engine available usually makes no sense. "
+"Because of this, there is a build flag to disable it:"
+msgstr ""
+"對於 2D 遊戲而言，完整的 3D 引擎通常不必要，因此可使用建置旗標將其停用："
+
+msgid ""
+"Tools must be disabled in order to use this flag, as the editor is not "
+"designed to operate without 3D support. Without it, the binary size can be "
+"reduced by about 15%."
+msgstr ""
+"必須同時停用 Tools 功能才能啟用此旗標，因為 Godot 編輯器設計上必須支援 3D。停"
+"用 3D 支援後，二進位檔大小約可減少 15%。"
+
+msgid "Disabling advanced GUI objects"
+msgstr "停用進階 GUI 元件"
+
+msgid ""
+"Most small games don't require complex GUI controls such as Tree, ItemList, "
+"TextEdit or GraphEdit. They can be disabled using a build flag:"
+msgstr ""
+"大多數小型遊戲不需要如 Tree、ItemList、TextEdit 或 GraphEdit 等複雜 GUI 控制"
+"元件。可使用建置旗標將這些元件停用："
+
+msgid "This is everything that will be disabled:"
+msgstr "停用後將無法使用下列元件："
+
+msgid ":ref:`class_AcceptDialog`"
+msgstr ":ref:`class_AcceptDialog`"
+
+msgid ":ref:`class_CharFXTransform`"
+msgstr ":ref:`class_CharFXTransform`"
+
+msgid ":ref:`class_CodeEdit`"
+msgstr ":ref:`class_CodeEdit`"
+
+msgid ":ref:`class_CodeHighlighter`"
+msgstr ":ref:`class_CodeHighlighter`"
+
+msgid ":ref:`class_ColorPicker`"
+msgstr ":ref:`class_ColorPicker`"
+
+msgid ":ref:`class_ColorPickerButton`"
+msgstr ":ref:`class_ColorPickerButton`"
+
+msgid ":ref:`class_ConfirmationDialog`"
+msgstr ":ref:`class_ConfirmationDialog`"
+
+msgid ":ref:`class_FileDialog`"
+msgstr ":ref:`class_FileDialog`"
+
+msgid ":ref:`class_FoldableContainer`"
+msgstr ":ref:`class_FoldableContainer`"
+
+msgid ":ref:`class_FoldableGroup`"
+msgstr ":ref:`class_FoldableGroup`"
+
+msgid ":ref:`class_GraphEdit`"
+msgstr ":ref:`class_GraphEdit`"
+
+msgid ":ref:`class_GraphElement`"
+msgstr ":ref:`class_GraphElement`"
+
+msgid ":ref:`class_GraphFrame`"
+msgstr ":ref:`class_GraphFrame`"
+
+msgid ":ref:`class_GraphNode`"
+msgstr ":ref:`class_GraphNode`"
+
+msgid ":ref:`class_HSplitContainer`"
+msgstr ":ref:`class_HSplitContainer`"
+
+msgid ":ref:`class_MenuBar`"
+msgstr ":ref:`class_MenuBar`"
+
+msgid ":ref:`class_MenuButton`"
+msgstr ":ref:`class_MenuButton`"
+
+msgid ":ref:`class_OptionButton`"
+msgstr ":ref:`class_OptionButton`"
+
+msgid ""
+":ref:`class_PopupMenu` (will make all popup menus unavailable in code for "
+"classes that use them, like :ref:`class_LineEdit`, even though those classes "
+"are still available)"
+msgstr ""
+":ref:`class_PopupMenu`（將使所有使用此元件的類別，如 :ref:`class_LineEdit`，"
+"在程式中無法使用彈出式選單，但這些類別本身仍可用）"
+
+msgid ":ref:`class_RichTextEffect`"
+msgstr ":ref:`class_RichTextEffect`"
+
+msgid ":ref:`class_RichTextLabel`"
+msgstr ":ref:`class_RichTextLabel`"
+
+msgid ":ref:`class_SpinBox`"
+msgstr ":ref:`class_SpinBox`"
+
+msgid ":ref:`class_SplitContainer`"
+msgstr ":ref:`class_SplitContainer`"
+
+msgid ":ref:`class_SubViewportContainer`"
+msgstr ":ref:`class_SubViewportContainer`"
+
+msgid ":ref:`class_SyntaxHighlighter`"
+msgstr ":ref:`class_SyntaxHighlighter`"
+
+msgid ":ref:`class_TextEdit`"
+msgstr ":ref:`class_TextEdit`"
+
+msgid ":ref:`class_Tree`"
+msgstr ":ref:`class_Tree`"
+
+msgid ":ref:`class_TreeItem`"
+msgstr ":ref:`class_TreeItem`"
+
+msgid ":ref:`class_VSplitContainer`"
+msgstr ":ref:`class_VSplitContainer`"
+
+msgid "Disabling physics engines"
+msgstr "停用物理引擎"
+
+msgid "**Space savings:** Low to moderate"
+msgstr "**節省空間：** 低到中等"
+
+msgid ""
+"If your 3D project uses Jolt Physics, you can disable GodotPhysics3D at "
+"compile-time as it will never be used:"
+msgstr ""
+"如果你的 3D 專案使用 Jolt Physics，就可以在編譯時停用 GodotPhysics3D，因為它"
+"不會被使用："
+
+msgid ""
+"Inversely, if your 3D project uses GodotPhysics3D, you can disable Jolt "
+"Physics at compile-time:"
+msgstr ""
+"反之，若你的 3D 專案使用 GodotPhysics3D，就可以在編譯時停用 Jolt Physics："
+
+msgid ""
+"If your project uses 3D rendering but not physics (or 2D rendering but not "
+"physics), you can also disable 2D or 3D physics entirely. Most 3D projects "
+"can take advantage of this, as they don't make use of 2D physics:"
+msgstr ""
+"如果你的專案使用 3D 繪製但不使用物理（或使用 2D 繪製但不使用物理），也可以完"
+"全停用 2D 或 3D 物理。多數 3D 專案都能利用這點，因為它們通常不會用到 2D 物"
+"理："
+
+msgid "Disabling unwanted modules"
+msgstr "停用不需要的模組"
+
+msgid "**Space savings:** Very low to moderate depending on modules"
+msgstr "**節省空間：** 非常低到中等，視模組而定"
+
+msgid "**Difficulty:** Medium to hard depending on modules"
+msgstr "**難度：** 中等至困難，視模組而定"
+
+msgid ""
+"A lot of Godot's functions are offered as modules. You can see a list of "
+"modules with the following command:"
+msgstr "Godot 許多功能都以模組形式提供。你可以用下列指令查看模組列表："
+
+msgid ""
+"The list of modules that can be disabled will appear, together with all "
+"build options. If you are working on a simple 2D game, you could disable a "
+"lot of them:"
+msgstr ""
+"會顯示所有可停用的模組以及建置選項。若你正在開發簡單的 2D 遊戲，這些模組多數"
+"都可直接停用："
+
+msgid ""
+"If this proves not to work for your use case, you should review the list of "
+"modules and see which ones you actually still need for your game (e.g. you "
+"might want to keep networking-related modules, regex support, ``minimp3``/"
+"``ogg``/``vorbis`` to play music, or ``theora`` to play videos)."
+msgstr ""
+"若這樣的設定不適用於你的專案，請自行檢查模組列表，確認遊戲實際需求。例如，你"
+"可能需要保留與網路相關的模組、正規表示式支援、音樂播放的 ``minimp3``/``ogg``/"
+"``vorbis``，或播放影片的 ``theora`` 等模組。"
+
+msgid ""
+"Alternatively, you can supply a list of disabled modules by creating "
+"``custom.py`` at the root of the source, with the contents similar to the "
+"following:"
+msgstr ""
+"此外，你可以在原始碼根目錄建立 `custom.py`，以清單方式指定要停用的模組，其內"
+"容類似如下："
+
+msgid "custom.py"
+msgstr "custom.py"
+
+msgid ":ref:`doc_overriding_build_options`."
+msgstr ":ref:`doc_overriding_build_options` 。"
+
+msgid "Optimizing the distribution of your project"
+msgstr "最佳化專案散佈方式"
+
+msgid "Desktop"
+msgstr "桌上型電腦"
+
+msgid ""
+"This section is only relevant when distributing the files on a desktop "
+"platform that doesn't perform its own compression or packing. As such, this "
+"advice is relevant when you distribute ZIP archives on itch.io or GitHub "
+"Releases."
+msgstr ""
+"本節僅適用於檔案發佈於未自帶壓縮或封包機制的桌機平台。例如，你在 itch.io 或 "
+"GitHub Releases 上提供 ZIP 壓縮檔時，以下建議就很有幫助。"
+
+msgid ""
+"Platforms like Steam already apply their own compression scheme, so you "
+"don't need to create a ZIP archive to distribute files in the first place."
+msgstr "像 Steam 這類平台已自動進行壓縮，因此不需要再自行打包 ZIP 檔案。"
+
+msgid ""
+"As an aside, you can look into optimizing the distribution of your project "
+"itself. This can be done even without recompiling the export template."
+msgstr ""
+"此外，你也可以針對專案分發本身進行最佳化。即使不重新編譯匯出範本，也能採取這"
+"些措施。"
+
+msgid ""
+"`7-Zip <https://7-zip.org/>`__ can be used to create ZIP archives that are "
+"more efficient than usual, while remaining compatible with every ZIP "
+"extractor (including Windows' own built-in extractor). ZIP size reduction in "
+"a large project can reach dozens of megabytes compared to a typical ZIP "
+"compressor, although average savings are in the 1-5 MB range. Creating this "
+"ZIP archive will take longer than usual, but it will extract just as fast as "
+"any other ZIP archive."
+msgstr ""
+"`7-Zip <https://7-zip.org/>`__ 可用來建立壓縮效率更高的 ZIP 檔案，且與所有 "
+"ZIP 解壓縮工具（包含 Windows 內建的）相容。對大型專案來說，與一般 ZIP 工具相"
+"比，壓縮後可減少數十 MB，平均則能省下 1-5 MB 空間。建立這類 ZIP 檔所需時間較"
+"長，但解壓速度與普通 ZIP 檔無異。"
+
+msgid ""
+"When using the 7-Zip GUI, this is done by creating a ZIP archive with the "
+"Ultra compression mode. When using the command line, this is done using the "
+"following command:"
+msgstr ""
+"若用 7-Zip 圖形介面，請選擇「Ultra」壓縮等級來建立 ZIP 檔。若用命令列，請執行"
+"下列指令："
+
+msgid "Web"
+msgstr "Web"
+
+msgid ""
+"Enabling gzip or Brotli compression for all file types from the web export "
+"(especially the ``.wasm`` and ``.pck``) can reduce the download size "
+"significantly, leading to faster loading times, especially on slow "
+"connections."
+msgstr ""
+"針對 Web 匯出檔案（特別是 ``.wasm`` 與 ``.pck`` 等），開啟 gzip 或 Brotli 壓"
+"縮能大幅減少下載量，進而加快載入速度，尤其適用於慢速網路連線。"
+
+msgid ""
+"Creating precompressed gzip or Brotli files with a high compression level "
+"can be even more efficient, as long as the web server is configured to serve "
+"those files when they exist. When supported, Brotli should be preferred over "
+"gzip as it has a greater potential for file size reduction."
+msgstr ""
+"如果網頁伺服器能正確傳送預先壓縮好的 gzip 或 Brotli 檔案，建議直接產生高壓縮"
+"等級的這類檔案，效果會更好。若伺服器支援，Brotli 通常比 gzip 有更高壓縮比，建"
+"議優先選用。"
+
+msgid "See :ref:`doc_exporting_for_web_serving_the_files` for instructions."
+msgstr "詳情請參考 :ref:`doc_exporting_for_web_serving_the_files` 。"

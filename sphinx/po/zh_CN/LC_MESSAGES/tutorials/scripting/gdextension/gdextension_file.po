@@ -1,0 +1,287 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "The .gdextension file"
+msgstr ".gdextension 文件"
+
+msgid "Introduction"
+msgstr "前言"
+
+msgid "Configuration section"
+msgstr "配置部分"
+
+msgid "Property"
+msgstr "属性"
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "**entry_symbol**"
+msgstr "**entry_symbol**"
+
+msgid "String"
+msgstr "字符串"
+
+msgid ""
+"Name of the entry function for initializing the GDExtension. This function "
+"should be defined in the ``register_types.cpp`` file when using godot-cpp. "
+"Adding this is necessary for the extension to work."
+msgstr ""
+"入口函数的名称，用于初始化 GDExtension。使用 godot-cpp 时，该函数应在 "
+"``register_types.cpp`` 中定义。添加后扩展才能正常工作。"
+
+msgid "**compatibility_minimum**"
+msgstr "**compatibility_minimum**"
+
+msgid ""
+"Minimum compatible version. This prevents older versions of Godot from "
+"loading extensions that depend on features from newer versions of Godot. "
+"**Only supported in Godot 4.1 or later**"
+msgstr ""
+"最低兼容版本。较旧版本的 Godot 不会加载依赖较新版本 Godot 功能的扩展。\\ **"
+"仅 Godot 4.1 及后续版本支持**"
+
+msgid "**compatibility_maximum**"
+msgstr "**compatibility_maximum**"
+
+msgid ""
+"Maximum compatible version. This prevents newer versions of Godot from "
+"loading the extension. **Only supported in Godot 4.3 or later**"
+msgstr ""
+"最高兼容版本。较新版本的 Godot 不会加载该扩展。\\ **仅 Godot 4.3 及后续版本支"
+"持**"
+
+msgid "**reloadable**"
+msgstr "**reloadable**"
+
+msgid "Boolean"
+msgstr "Boolean"
+
+msgid ""
+"Reloads the extension upon recompilation. Reloading is supported for the "
+"godot-cpp binding in Godot 4.2 or later. Other language bindings may or may "
+"not support it as well. This flag should be mainly used for developing or "
+"debugging an extension."
+msgstr ""
+"重新编译后重新加载该扩展。Godot 4.2 及后续版本支持 godot-cpp 绑定的重新加载。"
+"其他语言的绑定可能支持也可能不支持。该标志应主要用于扩展的开发和调试。"
+
+msgid "**android_aar_plugin**"
+msgstr "**android_aar_plugin**"
+
+msgid ""
+"The GDExtension is part of a :ref:`v2 Android plugin <doc_android_plugin>`. "
+"During export this flag will indicate to the editor that the GDExtension "
+"native shared libraries are exported by the Android plugin AAR binaries."
+msgstr ""
+"该 GDExtension 属于某个 :ref:`v2 Android 插件 <doc_android_plugin>`\\ 。导出"
+"时，该标志会告诉编辑器该 GDExtension 原生共享库由 Android 插件 AAR 二进制文件"
+"导出。"
+
+msgid "Libraries section"
+msgstr "库部分"
+
+msgid ""
+"In this section you can set the paths to the compiled binaries of your "
+"GDExtension libraries. By specifying feature flags you can filter which "
+"version should be loaded and exported with your game depending on which "
+"feature flags are active. Every feature flag must match to Godot's feature "
+"flags or your custom export flags to be loaded in an exported game. For "
+"instance ``macos.debug`` means that it will be loaded if Godot has both the "
+"``macos`` and ``debug`` flag active. Each line of the section is evaluated "
+"from top to bottom."
+msgstr ""
+"在该部分，你可以设置路径来指向你编译好的 GDExtension 二进制库文件，可以通过指"
+"定功能标志，并根据功能标志的活动状态来过滤应加载和导出游戏的版本。每个功能标"
+"志都必须与 Godot 的功能标志或自定义导出标志相匹配，才能在导出的游戏中加载。例"
+"如，\\ ``macos.debug`` 表示如果 Godot 同时具有 ``macos`` 和 ``debug`` 标志，"
+"则将加载该 GDExtension。该部分的每一行内容均由上至下进行评估。"
+
+msgid "Here is an example of what that can look like:"
+msgstr "下面是库部分的内容示例："
+
+msgid ""
+"Here are lists of some of the available built-in options (for more look at "
+"the :ref:`feature tags <doc_feature_tags>`):"
+msgstr ""
+"下表列出了一些可用的内置选项（更多选项见\\ :ref:`特性标签 "
+"<doc_feature_tags>`\\ ）："
+
+msgid "Running system"
+msgstr "运行系统"
+
+msgid "Flag"
+msgstr "标志"
+
+msgid "**windows**"
+msgstr "**windows**"
+
+msgid "Windows operating system"
+msgstr "Windows 操作系统"
+
+msgid "**macos**"
+msgstr "**macos**"
+
+msgid "Mac operating system"
+msgstr "Mac 操作系统"
+
+msgid "**linux**"
+msgstr "**linux**"
+
+msgid "Linux operating system"
+msgstr "Linux 操作系统"
+
+msgid "**bsd**"
+msgstr "**bsd**"
+
+msgid "BSD operating system"
+msgstr "BSD 操作系统"
+
+msgid "**linuxbsd**"
+msgstr "**linuxbsd**"
+
+msgid "Linux or BSD operating system"
+msgstr "Linux 或 BSD 操作系统"
+
+msgid "**android**"
+msgstr "**android**"
+
+msgid "Android operating system"
+msgstr "Android 操作系统"
+
+msgid "**ios**"
+msgstr "**ios**"
+
+msgid "iOS operating system"
+msgstr "iOS 操作系统"
+
+msgid "**web**"
+msgstr "**web**"
+
+msgid "Web browser"
+msgstr "网页浏览器"
+
+msgid "Build"
+msgstr "构建"
+
+msgid "**debug**"
+msgstr "**debug**"
+
+msgid "Build with debug symbols"
+msgstr "带调试符号的构建"
+
+msgid "**release**"
+msgstr "**release**"
+
+msgid "Optimized build without debug symbols"
+msgstr "不带调试符号的优化构建"
+
+msgid "**editor**"
+msgstr "**editor**"
+
+msgid "Editor build"
+msgstr "编辑器构建"
+
+msgid "Architecture"
+msgstr "架构"
+
+msgid "**double**"
+msgstr "**double**"
+
+msgid "double-precision build"
+msgstr "双精度构建"
+
+msgid "**single**"
+msgstr "**single**"
+
+msgid "single-precision build"
+msgstr "单精度构建"
+
+msgid "**x86_64**"
+msgstr "**x86_64**"
+
+msgid "64-bit x86 build"
+msgstr "64 位 x86 构建"
+
+msgid "**arm64**"
+msgstr "**arm64**"
+
+msgid "64-bit ARM build"
+msgstr "64 位 ARM 构建"
+
+msgid "**rv64**"
+msgstr "**rv64**"
+
+msgid "64-bit RISC-V build"
+msgstr "64 位 RISC-V 构建"
+
+msgid "**riscv**"
+msgstr "**riscv**"
+
+msgid "RISC-V build (any bitness)"
+msgstr "RISC-V 构建（不限位数）"
+
+msgid "**wasm32**"
+msgstr "**wasm32**"
+
+msgid "32-bit WebAssembly build"
+msgstr "32 位 WebAssembly 构建"
+
+msgid "Icons section"
+msgstr "图标部分"
+
+msgid ""
+"By default, Godot uses the Node icon in the scene dock for GDExtension "
+"nodes. A custom icon can be set by reference to its name and resource path "
+"of an SVG file."
+msgstr ""
+"默认情况下 Godot 在场景面板中为 GDExtension 节点使用的是 Node 图标。指定节点"
+"的名称和 SVG 文件的资源路径即可设置自定义图标。"
+
+msgid "For example:"
+msgstr "例如："
+
+msgid ""
+"The path should point to a 16 by 16 pixel SVG image. Read the guide "
+"for :ref:`creating icons <doc_editor_icons>` for more information."
+msgstr ""
+"这个路径应指向 16 乘 16 像素的 SVG 图像。详情见\\ :ref:`创建图标 "
+"<doc_editor_icons>`\\ 指南。"
+
+msgid "Dependencies section"
+msgstr "依赖部分"
+
+msgid ""
+"In this section you set the paths of the GDExtension dependencies. This is "
+"used internally to export the dependencies when exporting your game "
+"executable. You are able to set which dependency is loaded depending on the "
+"feature flags of the exported executable. In addition, you are able to set "
+"an optional subdirectory to move your dependencies into. If no path is "
+"supplied Godot will move the libraries into the same directory as your game "
+"executable."
+msgstr ""
+"在本部分设置指向 GDExtension 依赖项的路径，其用于在导出游戏可执行文件时从内部"
+"导出依赖项。你可以根据导出的可执行文件的功能标志来设置加载哪些依赖项。此外，"
+"你还可以设置一个可选的子目录，将依赖项项移动到其中。如果没有提供路径，Godot "
+"会将库移动到与游戏可执行文件相同的目录中。"
+
+msgid ""
+"In MacOS it is necessary to have shared libraries inside a folder called "
+"``Frameworks`` with a directory structure like this: ``Game.app/Contents/"
+"Frameworks``."
+msgstr ""
+"在 macOS 中需要将共享库放在一个命名为 ``Frameworks`` 的文件夹中，其目录结构应"
+"当类似于 ``Game.app/Contents/Frameworks``\\ 。"

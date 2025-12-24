@@ -1,0 +1,260 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "How to read the Godot API"
+msgstr "如何閱讀 Godot API"
+
+msgid ""
+"On this page, you'll learn how to read the class reference for the Godot API."
+msgstr "在本頁您將學會如何閱讀 Godot API 的類別參考。"
+
+msgid ""
+"The API, or Application Programming Interface, is an index of what Godot "
+"offers users. It provides a brief summary of which classes exist, how they "
+"are related to each other, what features they have, and how to use them."
+msgstr ""
+"API（應用程式介面）是 Godot 提供給使用者的功能索引。它簡要說明有哪些類別、彼"
+"此之間的關係、各自的功能，以及如何使用它們。"
+
+msgid "Inheritance"
+msgstr "繼承"
+
+msgid "At the top of each file, you will see the name of the class."
+msgstr "每個檔案的頂部都會顯示該類別的名稱。"
+
+msgid ""
+"The \"Inherits\" section lists each class the current one inherits. Here "
+"``CanvasItem`` inherits ``Node`` and ``Node`` inherits ``Object``."
+msgstr ""
+"「繼承」區段會列出當前類別繼承自哪些類別。例如 ``CanvasItem`` 繼承自 "
+"``Node``，而 ``Node`` 則繼承自 ``Object``。"
+
+msgid ""
+"The \"Inherited By\" section lists each class which directly inherits the "
+"current class. Here ``Control`` and ``Node2D`` both inherit ``CanvasItem``."
+msgstr ""
+"「被繼承」區段會列出直接繼承此類別的其他類別。例如 ``Control`` 和 ``Node2D`` "
+"都繼承自 ``CanvasItem``。"
+
+msgid "Brief Description"
+msgstr "簡要說明"
+
+msgid ""
+"Next a brief description of the class. This text appears in Godot Editor "
+"popups for creating Nodes, Resources, and other types."
+msgstr ""
+"接著會有該類別的簡要說明。這段文字會出現在 Godot 編輯器建立節點、資源等類型時"
+"的彈出視窗中。"
+
+msgid "Description"
+msgstr "說明"
+
+msgid ""
+"Next a more detailed description the class, its features, and its use "
+"case(s)."
+msgstr "接下來會有更詳細的類別說明、其功能及用例。"
+
+msgid "Things you may find here:"
+msgstr "你可以在這裡找到："
+
+msgid "Specifics of how the class works."
+msgstr "類別的運作細節。"
+
+msgid "Code samples of common use cases."
+msgstr "常見用法的程式碼範例。"
+
+msgid "Usage details which are shared between each of the class's methods."
+msgstr "該類別每個方法都適用的使用細節。"
+
+msgid "Warnings about required dependencies or configuration."
+msgstr "有關必要相依項或組態的警告訊息。"
+
+msgid "Links to other related parts of the Godot API."
+msgstr "與 Godot API 其他相關部分的連結。"
+
+msgid "Tutorials"
+msgstr "教學"
+
+msgid ""
+"The page then provides links to parts of the manual which mention or make "
+"use of the current class."
+msgstr "頁面會提供手冊中提到或使用此類別的相關連結。"
+
+msgid "Properties"
+msgstr "屬性"
+
+msgid ""
+"The Properties table lists the variables which belong to each instance of "
+"the class, also known as the \"properties.\""
+msgstr "屬性表會列出此類別每個實例所擁有的變數，也就是「屬性」"
+
+msgid ""
+"The left column contains the data type of the property. The text is also a "
+"link to that data type's Godot API page."
+msgstr "左欄顯示屬性的資料型別，並同時提供該型別在 Godot API 的連結。"
+
+msgid ""
+"The center column contains the name of the property. The text is also a link "
+"to that property's full description on the page. Use this name to get the "
+"property's data or set a new value to it."
+msgstr ""
+"中間欄位顯示屬性的名稱，也會連結到該屬性的詳細說明。可用該名稱取得屬性值或設"
+"定新值。"
+
+msgid ""
+"The right column contains the default value of the property. To initialize "
+"it with a different value, you must set a different value via script or the "
+"Inspector."
+msgstr ""
+"右欄顯示屬性的預設值。如果要用其他值初始化，必須透過腳本或屬性面板設定新值。"
+
+msgid "Methods"
+msgstr "方法"
+
+msgid ""
+"The Methods table lists the functions which belong to each instance of the "
+"class, also known as the \"methods.\""
+msgstr "方法表會列出此類別每個實例所擁有的函式，也就是「方法」"
+
+msgid "The left column contains the data type of the method's return value."
+msgstr "左欄顯示方法的回傳資料型別。"
+
+msgid ""
+"The right column contains the name, parameters, and qualifiers of the "
+"method. The name is the text before the opening parenthesis. It is also a "
+"link to the method's full description on the page. Use this name to call the "
+"method."
+msgstr ""
+"右欄顯示方法名稱（括號前的文字）、參數及限定符，並連結到方法的詳細說明。可用"
+"此名稱呼叫該方法。"
+
+msgid ""
+"For each parameter, the page details its data type, name, and default value, "
+"if any."
+msgstr "每個參數都會說明其資料型別、名稱及預設值（如果有的話）。"
+
+msgid "Possible qualifiers include..."
+msgstr "可能的限定符包括..."
+
+msgid "``const``: the method does not change any data in the class instance."
+msgstr "``const``：此方法不會修改類別實例的任何資料。"
+
+msgid ""
+"``virtual``: the method does nothing but wait for a script to override it."
+msgstr "``virtual``：此方法本身不執行任何操作，只等待腳本覆寫。"
+
+msgid "``vararg``: the method can accept an arbitrary number of arguments."
+msgstr "``vararg``：此方法可以接收任意數量的參數。"
+
+msgid "Signals"
+msgstr "訊號"
+
+msgid ""
+"The Signals list details the names and parameters of events which \"signal\" "
+"a change in game state to other class instances."
+msgstr ""
+"訊號列表會詳細說明這些事件的名稱和參數，這些事件會「發出訊號」通知其他類別實"
+"例遊戲狀態的變化。"
+
+msgid ""
+"Like the Methods table, any parameters will include their data type and name."
+msgstr "與方法表一樣，每個參數都會包含其資料型別與名稱。"
+
+msgid ""
+"Each signal also has a detailed explanation of when the signal is emitted."
+msgstr "每個訊號也都會詳細說明其觸發時機。"
+
+msgid "Enumerations"
+msgstr "列舉"
+
+msgid ""
+"The Enumerations list details the enumerable data types associated with the "
+"current class."
+msgstr "列舉列表會詳細說明與該類別關聯的可列舉資料型別。"
+
+msgid ""
+"For each enumeration, the page states its name and then lists its possible "
+"values."
+msgstr "每個列舉都會說明其名稱並列出所有可能的值。"
+
+msgid ""
+"For each enumeration value, the page states its name, its integer value, and "
+"an explanation of its use case(s) and/or affects."
+msgstr "每個列舉值都會說明其名稱、整數值，及其用途或影響。"
+
+msgid "Constants"
+msgstr "常數"
+
+msgid ""
+"The Constants list details named integer constants in the current class."
+msgstr "常數列表會詳細說明此類別中命名的整數常數。"
+
+msgid ""
+"For each constant, the page states its name, its integer value, and an "
+"explanation of its use case(s) and/or affects."
+msgstr "每個常數都會說明其名稱、整數值，以及用途或影響的說明。"
+
+msgid ""
+"``NOTIFICATION_*`` constants' descriptions will state which engine event "
+"triggers the notification."
+msgstr "``NOTIFICATION_*`` 常數的說明會標示是哪個引擎事件會觸發該通知。"
+
+msgid "Property Descriptions"
+msgstr "屬性說明"
+
+msgid "The Property Descriptions list details everything about each property."
+msgstr "屬性說明列表會詳細說明每個屬性的所有資訊。"
+
+msgid "It restates the data type and name of the property."
+msgstr "會再次說明屬性的資料型別與名稱。"
+
+msgid ""
+"Every property in the Godot API is bound to a pair of setter and getter "
+"functions. Using either is equivalent. They are listed here."
+msgstr ""
+"Godot API 中的每個屬性都會綁定一對 setter 和 getter 函式。使用任一者都可以。"
+"這裡會列出它們。"
+
+msgid ""
+"Below that is a detailed summary of what the property's data represents, its "
+"use case(s) and/or the affects of changing it. It may include code samples "
+"and/or links to relevant parts of the Godot API."
+msgstr ""
+"下方會有該屬性資料代表的意義、用途及更改後的影響等詳細說明，可能還會包含程式"
+"碼範例或是 Godot API 相關部分的連結。"
+
+msgid ""
+"Knowing the setter and getter names is useful when one must bind a method "
+"name or :ref:`Callable<class_Callable>` to something."
+msgstr ""
+"當你需要將方法名稱或 :ref:`Callable<class_Callable>` 綁定到某個目標時，知道 "
+"setter 與 getter 的名稱會很有幫助。"
+
+msgid "Method Descriptions"
+msgstr "方法說明"
+
+msgid "The Method Descriptions list details everything about each method."
+msgstr "方法說明列表會詳細說明每個方法的所有內容。"
+
+msgid ""
+"It restates the method's return data type, parameter names/types/defaults, "
+"and qualifiers."
+msgstr "會再次說明方法的回傳資料型別、參數名稱／型別／預設值，以及限定符。"
+
+msgid ""
+"Below that is a detailed summary of what the method does and its use "
+"case(s). It may include code samples and/or links to relevant parts of the "
+"Godot API."
+msgstr ""
+"下方會有該方法的用途與用例等詳細說明，可能還會包含程式碼範例或是 Godot API 相"
+"關部分的連結。"

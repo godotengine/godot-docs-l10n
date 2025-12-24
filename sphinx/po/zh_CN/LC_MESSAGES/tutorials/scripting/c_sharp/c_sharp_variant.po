@@ -1,0 +1,446 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "C# Variant"
+msgstr "C# Variant"
+
+msgid ""
+"For a detailed explanation of Variant in general, see the :ref:`Variant "
+"<class_Variant>` documentation page."
+msgstr ""
+"对于 Variant 的详细解释，请参阅 :ref:`Variant <class_Variant>` 文档页面。"
+
+msgid ""
+"``Godot.Variant`` is used to represent Godot's native :ref:`Variant "
+"<class_Variant>` type. Any :ref:`Variant-compatible type "
+"<c_sharp_variant_compatible_types>` can be converted from/to it. We "
+"recommend avoiding ``Godot.Variant`` unless it is necessary to interact with "
+"untyped engine APIs. Take advantage of C#'s type safety when possible."
+msgstr ""
+"``Godot.Variant`` 用于表示 Godot 的原生 :ref:`Variant <class_Variant>` 类型。"
+"任何 :ref:`Variant 兼容类型 <c_sharp_variant_compatible_types>` 都可以和它进"
+"行转换。我们建议仅在与无类型的引擎 API 交互时使用 ``Godot.Variant``\\ 。尽可"
+"能利用 C# 的类型安全性。"
+
+msgid ""
+"Converting from a Variant-compatible C# type to ``Godot.Variant`` can be "
+"done using implicit conversions. There are also ``CreateFrom`` method "
+"overloads and the generic ``Variant.From<T>`` methods. Only the syntax is "
+"different: the behavior is the same."
+msgstr ""
+"将 Variant 兼容的 C# 类型转换为 ``Godot.Variant`` 可以使用隐式转换。也有 "
+"``CreateFrom`` 方法重载和泛型 ``Variant.From<T>`` 方法。只有语法不同：行为是"
+"相同的。"
+
+msgid ""
+"Implicit conversions to ``Godot.Variant`` make passing variants as method "
+"arguments very convenient. For example, the third argument "
+"of :ref:`tween_property<class_Tween_method_tween_property>` specifying the "
+"final color of the tween is a ``Godot.Variant``."
+msgstr ""
+"隐式转换为 ``Godot.Variant`` 使得将变体作为方法参数传递非常方便。例如，"
+"\\ :ref:`tween_property<class_Tween_method_tween_property>` 的第三个参数指定"
+"了补间的最终颜色，是一个 ``Godot.Variant``\\ 。"
+
+msgid ""
+"Converting from ``Godot.Variant`` to a C# type can be done using explicit "
+"conversions. There are also ``Variant.As{TYPE}`` methods and the generic "
+"``Variant.As<T>`` method. All of these behave the same."
+msgstr ""
+"从 ``Godot.Variant`` 转换为 C# 类型可以使用显式转换。还有 ``Variant.As{TYPE}"
+"`` 方法和泛型 ``Variant.As<T>`` 方法。所有这些的行为是相同的。"
+
+msgid ""
+"The ``Variant.As{TYPE}`` methods are typically named after C# types "
+"(``Int32``), not C# keywords (``int``)."
+msgstr ""
+"``Variant.As{TYPE}`` 方法通常以 C# 类型命名（ ``Int32`` ），而不是 C# 关键字"
+"（ ``int`` ）。"
+
+msgid ""
+"If the Variant type doesn't match the conversion target type, the "
+"consequences vary depending on the source and target values."
+msgstr ""
+"如果 Variant 类型与转换目标类型不匹配，则结果会根据源值和目标值而有所不同。"
+
+msgid ""
+"The conversion may examine the value and return a similar but potentially "
+"unexpected value of the target type. For example, the string ``\"42a\"`` may "
+"be converted to the integer ``42``."
+msgstr ""
+"转换可能会检查该值并返回目标类型的类似但可能出乎意料的值。例如，字符串 "
+"``\"42a\"`` 可能会被转换为整数 ``42``\\ 。"
+
+msgid "The default value of the target type may be returned."
+msgstr "可能会返回目标类型的默认值。"
+
+msgid "An empty array may be returned."
+msgstr "可能会返回一个空数组。"
+
+msgid "An exception may be thrown."
+msgstr "可能会引发一个异常。"
+
+msgid ""
+"Converting to the correct type avoids complicated behavior and should be "
+"preferred."
+msgstr "转换为正确的类型可以避免复杂的行为，因此应优先考虑。"
+
+msgid ""
+"The ``Variant.Obj`` property returns a C# ``object`` with the correct value "
+"for any variant. This may be useful when the type of Variant is completely "
+"unknown. However, when possible, prefer more specific conversions. "
+"``Variant.Obj`` evaluates a ``switch`` on ``Variant.VariantType`` and it may "
+"not be necessary. Also, if the result is a value type, it is boxed."
+msgstr ""
+"``Variant.Obj`` 属性返回一个 C# ``object``\\ ，其中包含任何变体的正确值。当变"
+"体的类型完全未知时，这可能很有用。但是，如果可能，最好使用更具体的转换。\\ "
+"``Variant.Obj`` 会关于 ``Variant.VariantType`` 执行一个 ``switch``\\ ，这可能"
+"不是必需的。此外，如果结果是值类型，则会对其进行装箱。"
+
+msgid ""
+"For example, if the potential for ``Variant.As<MyNode>()`` to throw an "
+"invalid cast exception isn't acceptable, consider using a "
+"``Variant.As<GodotObject>() is MyNode n`` type pattern instead."
+msgstr ""
+"例如，如果 ``Variant.As<MyNode>()`` 引发一个无效转换异常的可能性是不可接受"
+"的，请考虑改用 ``Variant.As<GodotObject>() is MyNode n`` 类型模式。"
+
+msgid ""
+"Since the Variant type in C# is a struct, it can't be null. To create a "
+"\"null\" Variant, use the ``default`` keyword or the ``Godot.Variant`` "
+"parameterless constructor."
+msgstr ""
+"由于 C# 中的 Variant 类型是一个结构体，它不能为 null。要创建一个 “null” "
+"Variant，请使用 ``default`` 关键字或 ``Godot.Variant`` 无参数构造函数。"
+
+msgid "Variant-compatible types"
+msgstr "Variant 兼容类型"
+
+msgid ""
+"A Variant-compatible type can be converted to and from a ``Godot.Variant``. "
+"These C# types are Variant-compatible:"
+msgstr ""
+"Variant 兼容类型可以与 ``Godot.Variant`` 相互转换。以下 C# 类型与 Variant 兼"
+"容："
+
+msgid ""
+"All the `built-in value types <https://docs.microsoft.com/en-us/dotnet/"
+"csharp/language-reference/keywords/built-in-types-table>`_, except "
+"``decimal``, ``nint`` and ``nuint``."
+msgstr ""
+"除了 ``decimal`` 、 ``nint`` 和 ``nuint`` 之外，所有的 `内置值类型 <https://"
+"docs.microsoft.com/zh-cn/dotnet/csharp/language-reference/keywords/built-in-"
+"types-table>`_ 。"
+
+msgid "``string``."
+msgstr "``String``\\ 。"
+
+msgid "Classes derived from :ref:`GodotObject <class_Object>`."
+msgstr "从 :ref:`GodotObject <class_Object>` 派生的类。"
+
+msgid "Collections types defined in the ``Godot.Collections`` namespace."
+msgstr "在 ``Godot.Collections`` 命名空间中定义的集合类型。"
+
+msgid "Full list of Variant types and their equivalent C# type:"
+msgstr "Variant 类型的完整列表及其对应的 C# 类型："
+
+msgid "Variant.Type"
+msgstr "Variant.Type"
+
+msgid "C# Type"
+msgstr "C# 类型"
+
+msgid "``Nil``"
+msgstr "``Nil``"
+
+msgid "``null`` (Not a type)"
+msgstr "``null`` （不是类型）"
+
+msgid "``Bool``"
+msgstr "``Bool``"
+
+msgid "``bool``"
+msgstr "``bool``"
+
+msgid "``Int``"
+msgstr "``Int``"
+
+msgid "``long`` (Godot stores 64-bit integers in Variant)"
+msgstr "``long`` （Godot 在 Variant 中存储 64 位整数）"
+
+msgid "``Float``"
+msgstr "``Float``"
+
+msgid "``double`` (Godot stores 64-bit floats in Variant)"
+msgstr "``double`` （Godot 在 Variant 中存储 64 位浮点数）"
+
+msgid "``String``"
+msgstr "``String``"
+
+msgid "``string``"
+msgstr "``string``"
+
+msgid "``Vector2``"
+msgstr "``Vector2``"
+
+msgid "``Godot.Vector2``"
+msgstr "``Godot.Vector2``"
+
+msgid "``Vector2I``"
+msgstr "``Vector2I``"
+
+msgid "``Godot.Vector2I``"
+msgstr "``Godot.Vector2I``"
+
+msgid "``Rect2``"
+msgstr "``Rect2``"
+
+msgid "``Godot.Rect2``"
+msgstr "``Godot.Rect2``"
+
+msgid "``Rect2I``"
+msgstr "``Rect2I``"
+
+msgid "``Godot.Rect2I``"
+msgstr "``Godot.Rect2I``"
+
+msgid "``Vector3``"
+msgstr "``Vector3``"
+
+msgid "``Godot.Vector3``"
+msgstr "``Godot.Vector3``"
+
+msgid "``Vector3I``"
+msgstr "``Vector3I``"
+
+msgid "``Godot.Vector3I``"
+msgstr "``Godot.Vector3I``"
+
+msgid "``Transform2D``"
+msgstr "``Transform2D``"
+
+msgid "``Godot.Transform2D``"
+msgstr "``Godot.Transform2D``"
+
+msgid "``Vector4``"
+msgstr "``Vector4``"
+
+msgid "``Godot.Vector4``"
+msgstr "``Godot.Vector4``"
+
+msgid "``Vector4I``"
+msgstr "``Vector4I``"
+
+msgid "``Godot.Vector4I``"
+msgstr "``Godot.Vector4I``"
+
+msgid "``Plane``"
+msgstr "``Plane``"
+
+msgid "``Godot.Plane``"
+msgstr "``Godot.Plane``"
+
+msgid "``Quaternion``"
+msgstr "``Quaternion``"
+
+msgid "``Godot.Quaternion``"
+msgstr "``Godot.Quaternion``"
+
+msgid "``Aabb``"
+msgstr "``Aabb``"
+
+msgid "``Godot.Aabb``"
+msgstr "``Godot.Aabb``"
+
+msgid "``Basis``"
+msgstr "``Basis``"
+
+msgid "``Godot.Basis``"
+msgstr "``Godot.Basis``"
+
+msgid "``Transform3D``"
+msgstr "``Transform3D``"
+
+msgid "``Godot.Transform3D``"
+msgstr "``Godot.Transform3D``"
+
+msgid "``Projection``"
+msgstr "``Projection``"
+
+msgid "``Godot.Projection``"
+msgstr "``Godot.Projection``"
+
+msgid "``Color``"
+msgstr "``Color``"
+
+msgid "``Godot.Color``"
+msgstr "``Godot.Color``"
+
+msgid "``StringName``"
+msgstr "``StringName``"
+
+msgid "``Godot.StringName``"
+msgstr "``Godot.StringName``"
+
+msgid "``NodePath``"
+msgstr "``NodePath``"
+
+msgid "``Godot.NodePath``"
+msgstr "``Godot.NodePath``"
+
+msgid "``Rid``"
+msgstr "``Rid``"
+
+msgid "``Godot.Rid``"
+msgstr "``Godot.Rid``"
+
+msgid "``Object``"
+msgstr "``Object``"
+
+msgid "``Godot.GodotObject`` or any derived type."
+msgstr "``Godot.GodotObject`` 或其他派生类型。"
+
+msgid "``Callable``"
+msgstr "``Callable``"
+
+msgid "``Godot.Callable``"
+msgstr "``Godot.Callable``"
+
+msgid "``Signal``"
+msgstr "``Signal``"
+
+msgid "``Godot.Signal``"
+msgstr "``Godot.Signal``"
+
+msgid "``Dictionary``"
+msgstr "``Dictionary``"
+
+msgid "``Godot.Collections.Dictionary``"
+msgstr "``Godot.Collections.Dictionary``"
+
+msgid "``Array``"
+msgstr "``Array``"
+
+msgid "``Godot.Collections.Array``"
+msgstr "``Godot.Collections.Array``"
+
+msgid "``PackedByteArray``"
+msgstr "``PackedByteArray``"
+
+msgid "``byte[]``"
+msgstr "``byte[]``"
+
+msgid "``PackedInt32Array``"
+msgstr "``PackedInt32Array``"
+
+msgid "``int[]``"
+msgstr "``int[]``"
+
+msgid "``PackedInt64Array``"
+msgstr "``PackedInt64Array``"
+
+msgid "``long[]``"
+msgstr "``long[]``"
+
+msgid "``PackedFloat32Array``"
+msgstr "``PackedFloat32Array``"
+
+msgid "``float[]``"
+msgstr "``float[]``"
+
+msgid "``PackedFloat64Array``"
+msgstr "``PackedFloat64Array``"
+
+msgid "``double[]``"
+msgstr "``double[]``"
+
+msgid "``PackedStringArray``"
+msgstr "``PackedStringArray``"
+
+msgid "``string[]``"
+msgstr "``string[]``"
+
+msgid "``PackedVector2Array``"
+msgstr "``PackedVector2Array``"
+
+msgid "``Godot.Vector2[]``"
+msgstr "``Godot.Vector2[]``"
+
+msgid "``PackedVector3Array``"
+msgstr "``PackedVector3Array``"
+
+msgid "``Godot.Vector3[]``"
+msgstr "``Godot.Vector3[]``"
+
+msgid "``PackedVector4Array``"
+msgstr "``PackedVector4Array``"
+
+msgid "``Godot.Vector4[]``"
+msgstr "``Godot.Vector4[]``"
+
+msgid "``PackedColorArray``"
+msgstr "``PackedColorArray``"
+
+msgid "``Godot.Color[]``"
+msgstr "``Godot.Color[]``"
+
+msgid ""
+"Godot uses 64-bit integers and floats in Variant. Smaller integer and float "
+"types such as ``int``, ``short`` and ``float`` are supported since they can "
+"fit in the bigger type. Be aware that when a conversion is performed, using "
+"the wrong type will result in potential precision loss."
+msgstr ""
+"Godot 在 Variant 中使用 64 位的整数和浮点数。较小的整数和浮点数类型，如 "
+"``int``\\ ，\\ ``short`` 和 ``float``\\ ，也是支持的，因为它们可以容纳在更大"
+"的类型中。请注意，执行转换时，使用错误的类型可能会导致潜在的精度损失。"
+
+msgid ""
+"Enums are supported by ``Godot.Variant`` since their underlying type is an "
+"integer type which are all compatible. However, implicit conversions don't "
+"exist, enums must be manually converted to their underlying integer type "
+"before they can converted to/from ``Godot.Variant`` or use the generic "
+"``Variant.As<T>`` and ``Variant.From<T>`` methods to convert them."
+msgstr ""
+"枚举类型由于其底层类型是整数类型，因此都与 ``Godot.Variant`` 兼容。但是，隐式"
+"转换不存在，枚举类型必须在转换为/从 ``Godot.Variant`` 之前手动转换为其底层的"
+"整数类型，或者使用通用的 ``Variant.As<T>`` 和 ``Variant.From<T>`` 方法来转换"
+"它们。"
+
+msgid "Using Variant in a generic context"
+msgstr "在泛型上下文中使用 Variant"
+
+msgid ""
+"When using generics, you may be interested in restricting the generic ``T`` "
+"type to be only one of the Variant-compatible types. This can be achieved "
+"using the ``[MustBeVariant]`` attribute."
+msgstr ""
+"在使用泛型时，你可能希望限制泛型 ``T`` 类型仅为 Variant 兼容类型之一。这可以"
+"通过使用 ``[MustBeVariant]`` 特性来实现。"
+
+msgid ""
+"Combined with the generic ``Variant.From<T>`` allows you to obtain an "
+"instance of ``Godot.Variant`` from an instance of a generic ``T`` type. Then "
+"it can be used in any API that only supports the ``Godot.Variant`` struct."
+msgstr ""
+"结合泛型 ``Variant.From<T>`` 可以让你从一个泛型 ``T`` 类型的实例中获取一个 "
+"``Godot.Variant`` 的实例。然后它可以用在任何只支持 ``Godot.Variant`` 结构体"
+"的 API 中。"
+
+msgid ""
+"In order to invoke a method with a generic parameter annotated with the "
+"``[MustBeVariant]`` attribute, the value must be a Variant-compatible type "
+"or a generic ``T`` type annotated with the ``[MustBeVariant]`` attribute as "
+"well."
+msgstr ""
+"为了调用一个带有泛型参数的方法，该参数用 ``[MustBeVariant]`` 特性标注，值必须"
+"是 Variant 兼容类型或者带有 ``[MustBeVariant]`` 特性标注的泛型 ``T`` 类型。"

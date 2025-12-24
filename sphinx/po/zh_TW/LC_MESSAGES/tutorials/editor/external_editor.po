@@ -1,0 +1,275 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using an external text editor"
+msgstr "使用外部文字編輯器"
+
+msgid "This page explains how to code using an external text editor."
+msgstr "本頁說明如何使用外部文字編輯器進行程式開發。"
+
+msgid ""
+"To code C# in an external editor, see :ref:`the C# guide to configure an "
+"external editor <doc_c_sharp_setup_external_editor>`."
+msgstr ""
+"若要使用外部編輯器編寫 C# 程式碼，請參閱 :ref:`設定外部編輯器的 C# 指南 "
+"<doc_c_sharp_setup_external_editor>`。"
+
+msgid ""
+"Godot can be used with an external text editor, such as Sublime Text or "
+"Visual Studio Code. Browse to the relevant editor settings: **Editor > "
+"Editor Settings > Text Editor > External**"
+msgstr ""
+"Godot 可與外部編輯器一起使用，如 Sublime Text 或 Visual Studio Code。欲啟用外"
+"部文字編輯器，請於 ``編輯器 -> 編輯器設定 --> Text Editor（文字編輯器） -> "
+"External（外部）`` 瀏覽對應的編輯器設定"
+
+msgid "Text Editor > External section of the Editor Settings"
+msgstr "文字編輯器 > 編輯器設定的外部部分"
+
+msgid "**Text Editor > External** section of the Editor Settings"
+msgstr "編輯器設定中的 **文字編輯器 > 外部** 部分"
+
+msgid ""
+"There are two text fields: the executable path and command-line flags. The "
+"flags allow you to integrate the editor with Godot, passing it the file path "
+"to open and other relevant arguments. Godot will replace the following "
+"placeholders in the flags string:"
+msgstr ""
+"該設定有兩個欄位：執行路徑與命令列旗標。旗標可允許將該編輯器與 Godot 整合、傳"
+"入欲開啟的檔案、以及其他相關的參數。Godot 會取代旗標中的下列佔位字元："
+
+msgid "Field in Exec Flags"
+msgstr "Exec Flags 中的欄位"
+
+msgid "Is replaced with"
+msgstr "會取代為"
+
+msgid "``{project}``"
+msgstr "``{project}``"
+
+msgid "The absolute path to the project directory"
+msgstr "專案目錄的絕對路徑"
+
+msgid "``{file}``"
+msgstr "``{file}``"
+
+msgid "The absolute path to the file"
+msgstr "檔案的絕對路徑"
+
+msgid "``{col}``"
+msgstr "``{col}``"
+
+msgid "The column number of the error"
+msgstr "錯誤的列號"
+
+msgid "``{line}``"
+msgstr "``{line}``"
+
+msgid "The line number of the error"
+msgstr "錯誤的行號"
+
+msgid "Some example **Exec Flags** for various editors include:"
+msgstr "下列為各種編輯器的一些 Exec Flags 範例："
+
+msgid "Editor"
+msgstr "編輯器"
+
+msgid "Exec Flags"
+msgstr "執行旗標"
+
+msgid "Geany/Kate"
+msgstr "Geany/Kate"
+
+msgid "``{file} --line {line} --column {col}``"
+msgstr "``{file} --line {line} --column {col}``"
+
+msgid "Atom"
+msgstr "Atom"
+
+msgid "``{file}:{line}``"
+msgstr "``{file}:{line}``"
+
+msgid "JetBrains Rider"
+msgstr "JetBrains Rider"
+
+msgid "``{project} --line {line} {file}``"
+msgstr "``--line {line} {file}``"
+
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+msgid "``{project} --goto {file}:{line}:{col}``"
+msgstr "``{project} --goto {file}:{line}:{col}``"
+
+msgid "Vim (gVim)"
+msgstr "Vim (gVim)"
+
+msgid "``\"+call cursor({line}, {col})\" {file}``"
+msgstr "``\"+call cursor({line}, {col})\" {file}``"
+
+msgid "Emacs"
+msgstr "Emacs"
+
+msgid "``emacs +{line}:{col} {file}``"
+msgstr "``\"+call cursor({line}, {col})\" {file}``"
+
+msgid "Sublime Text"
+msgstr "Atom/Sublime Text"
+
+msgid "``{project} {file}:{line}:{col}``"
+msgstr "``{project} {file}:{line}:{col}``"
+
+msgid "Visual Studio*"
+msgstr "Visual Studio*"
+
+msgid "``/edit \"file\"``"
+msgstr "``/edit \"file\"``"
+
+msgid ""
+"\\*: Arguments are not automatically detected, so you must fill them in "
+"manually."
+msgstr "\\*：無法自動偵測參數，需手動填寫。"
+
+msgid ""
+"Since Godot 4.5, **Exec Flags** are automatically detected for all editors "
+"listed above (unless denoted with an asterisk). You don't need to paste them "
+"from this page for it to work, unless your editor has an executable name not "
+"recognized automatically (e.g. a fork of an editor listed here)."
+msgstr ""
+"自 Godot 4.5 起，以上列出的編輯器（除標註星號者外）會自動偵測 **Exec "
+"Flags**。通常不需從本頁貼上參數即可運作，除非你的編輯器可執行檔名稱無法自動辨"
+"識（例如上述編輯器的分支版本）。"
+
+msgid ""
+"For Visual Studio Code on Windows, you will have to point to the "
+"``code.cmd`` file."
+msgstr ""
+"對於 Windows 平臺上的 Visual Studio Code，你需要指向 ``code.cmd`` 檔案。"
+
+msgid ""
+"For Emacs, you can call ``emacsclient`` instead of ``emacs`` if you use the "
+"server mode."
+msgstr "Visual Studio 必須指向 ``code.cmd`` 檔案。"
+
+msgid ""
+"For Visual Studio, you will have to open the solution file ``.sln`` manually "
+"to get access to the IDE features. Additionally, it will not go to a "
+"specific line."
+msgstr ""
+"對於 Visual Studio，您必須手動開啟解決方案檔案 ``.sln`` 以存取 IDE 功能。此"
+"外，它將不會跳到特定行。"
+
+msgid "Automatically reloading your changes"
+msgstr "自動重新載入您的變更"
+
+msgid ""
+"To have the Godot Editor automatically reload any script that has been "
+"changed by an external text editor, enable **Editor > Editor Settings > Text "
+"Editor > Behavior > Auto Reload Scripts on External Change**."
+msgstr ""
+"若要讓 Godot 編輯器自動重新載入任何由外部文字編輯器變更過的腳本，請啟用 **編"
+"輯器 > 編輯器設定 > 文字編輯器 > 行為 > 外部變更時自動重新載入腳本**。"
+
+msgid "Using External Editor in Debugger"
+msgstr "使用外部文字編輯器"
+
+msgid ""
+"Using external editor in debugger is determined by a separate option in "
+"settings. For details, see :ref:`Script editor debug tools and options "
+"<doc_debugger_tools_and_options>`."
+msgstr ""
+"在除錯器中使用外部編輯器由設定中的單獨選項決定。更多細節詳見 :ref:`腳本編輯器"
+"除錯工具及選項<doc_debugger_tools_and_options>`。"
+
+msgid "Official editor plugins"
+msgstr "官方 Git 外掛"
+
+msgid "We have official plugins for the following code editors:"
+msgstr "以下程式碼編輯器有官方外掛程式："
+
+msgid ""
+"`Visual Studio Code <https://github.com/godotengine/godot-vscode-plugin>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`_"
+
+msgid "`Emacs <https://github.com/godotengine/emacs-gdscript-mode>`_"
+msgstr "`GitHub <https://github.com/godotengine/>`_"
+
+msgid "LSP/DAP support"
+msgstr "LSP/DAP 支援"
+
+msgid ""
+"Godot supports the `Language Server Protocol <https://microsoft.github.io/"
+"language-server-protocol/>`_ (**LSP**) for code completion and the `Debug "
+"Adapter Protocol <https://microsoft.github.io/debug-adapter-protocol/>`_ "
+"(**DAP**) for debugging. You can check the `LSP client list <https://"
+"microsoft.github.io/language-server-protocol/implementors/tools/>`_ and `DAP "
+"client list <https://microsoft.github.io/debug-adapter-protocol/implementors/"
+"tools/>`_ to find if your editor supports them. If this is the case, you "
+"should be able to take advantage of these features without the need of a "
+"custom plugin."
+msgstr ""
+"Godot 支援用於程式碼補齊的 `語言伺服器協定 <https://microsoft.github.io/"
+"language-server-protocol/>`_ (**LSP**)，以及用於除錯的 `除錯轉接器協定 "
+"<https://microsoft.github.io/debug-adapter-protocol/>`_ (**DAP**)。您可以查"
+"看 `LSP 用戶端列表 <https://microsoft.github.io/language-server-protocol/"
+"implementors/tools/>`_ 和 `DAP 用戶端列表 <https://microsoft.github.io/debug-"
+"adapter-protocol/implementors/tools/>`_ 以了解您的編輯器是否支援它們。如果是"
+"這樣，您應該能夠無需自訂外掛程式即可利用這些功能。"
+
+msgid ""
+"To use these protocols, a Godot instance must be running on your current "
+"project. You should then configure your editor to communicate to the running "
+"adapter ports in Godot, which by default are ``6005`` for **LSP**, and "
+"``6006`` for **DAP**. You can change these ports and other settings in the "
+"**Editor Settings**, under the **Network > Language Server** and **Network > "
+"Debug Adapter** sections respectively."
+msgstr ""
+"若要使用這些協定，必須有一個 Godot 實例正在您的目前專案上執行。您接著應該設定"
+"您的編輯器，以與 Godot 中正在執行的轉接器連接埠通訊，預設 **LSP** 為 "
+"``6005``，**DAP** 為 ``6006``。您可以在 **編輯器設定** 中，分別位於 **網路 > "
+"語言伺服器** 和 **網路 > 除錯轉接器** 區段下，變更這些連接埠及其他設定。"
+
+msgid "Below are some configuration steps for specific editors:"
+msgstr "以下是一些針對特定編輯器的設定步驟："
+
+msgid ""
+"You need to install the official `Visual Studio Code plugin <https://"
+"github.com/godotengine/godot-vscode-plugin>`_."
+msgstr ""
+"您需要安裝官方的 `Visual Studio Code 外掛程式 <https://github.com/"
+"godotengine/godot-vscode-plugin>`_。"
+
+msgid ""
+"For **LSP**, follow `these instructions <https://github.com/godotengine/"
+"godot-vscode-plugin#gdscript_lsp_server_port>`_ to change the default LSP "
+"port. The connection status can be checked on the status bar:"
+msgstr ""
+"對於 **LSP**，請依照 `這些指示 <https://github.com/godotengine/godot-vscode-"
+"plugin#gdscript_lsp_server_port>`_ 以變更預設的 LSP 連接埠。連線狀態可以在狀"
+"態列上查看："
+
+msgid ""
+"For **DAP**, specify the ``debugServer`` property in your ``launch.json`` "
+"file:"
+msgstr ""
+"對於 **DAP**，請在您的 ``launch.json`` 檔案中指定 ``debugServer`` 屬性："
+
+msgid ""
+"Check the official instructions to configure `LSP <https://github.com/"
+"godotengine/emacs-gdscript-mode#auto-completion-with-the-language-server-"
+"protocol-lsp>`_, and `DAP <https://github.com/godotengine/emacs-gdscript-"
+"mode#using-the-debugger>`_."
+msgstr ""
+"請查看官方指示以設定 `LSP <https://github.com/godotengine/emacs-gdscript-"
+"mode#auto-completion-with-the-language-server-protocol-lsp>`_，以及 `DAP "
+"<https://github.com/godotengine/emacs-gdscript-mode#using-the-debugger>`_。"

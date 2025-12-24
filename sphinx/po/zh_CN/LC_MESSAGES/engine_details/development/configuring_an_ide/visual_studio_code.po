@@ -1,0 +1,129 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Visual Studio Code"
+msgstr "Visual Studio Code"
+
+msgid ""
+"`Visual Studio Code <https://code.visualstudio.com>`_ is a free cross-"
+"platform code editor by `Microsoft <https://microsoft.com>`_ (not to be "
+"confused with :ref:`doc_configuring_an_ide_vs`)."
+msgstr ""
+"`Visual Studio Code <https://code.visualstudio.com>`_ 是\\ `微软 <https://"
+"microsoft.com>`_\\ 推出的免费跨平台代码编辑器（请勿"
+"与 :ref:`doc_configuring_an_ide_vs` 混淆）。"
+
+msgid "Importing the project"
+msgstr "导入项目"
+
+msgid ""
+"Make sure the C/C++ extension is installed. You can find instructions in the "
+"`official documentation <https://code.visualstudio.com/docs/languages/"
+"cpp>`_. Alternatively, `clangd <https://open-vsx.org/extension/llvm-vs-code-"
+"extensions/vscode-clangd>`_ can be used instead."
+msgstr ""
+"确保已安装 C/C++ 扩展。你可以在\\ `官方文档 <https://code.visualstudio.com/"
+"docs/languages/cpp>`_\\ 中找到说明。或者也可以用 `clangd <https://open-"
+"vsx.org/extension/llvm-vs-code-extensions/vscode-clangd>`_ 代替。"
+
+msgid "When using the clangd extension, run ``scons compiledb=yes``."
+msgstr "使用 clangd 扩展时，请执行 ``scons compiledb=yes``\\ 。"
+
+msgid ""
+"From the Visual Studio Code's main screen open the Godot root folder with "
+"**File > Open Folder...**."
+msgstr "现在在VS Code中打开克隆的godot文件夹 **文件 > 打开文件夹...** ."
+
+msgid ""
+"Press :kbd:`Ctrl + Shift + P` to open the command prompt window and enter "
+"*Configure Task*."
+msgstr ""
+"按 :kbd:`Ctrl + Shift + P` 打开命令提示符窗口，然后输入 *Configure Task*\\ 。"
+
+msgid "Select the **Create tasks.json file from template** option."
+msgstr "选择 **Create tasks.json file from template** 选项。"
+
+msgid "Then select **Others**."
+msgstr "然后选择\\ **其他**\\ 。"
+
+msgid ""
+"Within the ``tasks.json`` file find the ``\"tasks\"`` array and add a new "
+"section to it:"
+msgstr ""
+"在 ``tasks.json`` 文件中找到 ``\"tasks\"`` 数组, 并在其中添加一个新部分:"
+
+msgid ".vscode/tasks.json"
+msgstr ".vscode/tasks.json"
+
+msgid "An example of a filled out ``tasks.json``."
+msgstr "填好了 ``tasks.json`` 的一个例子."
+
+msgid ""
+"Arguments can be different based on your own setup and needs. "
+"See :ref:`doc_introduction_to_the_buildsystem` for a full list of arguments."
+msgstr ""
+"参数可以根据你自己的设置和需要而不同. 参"
+"见 :ref:`doc_introduction_to_the_buildsystem` 以获取完整的参数列表."
+
+msgid "Debugging the project"
+msgstr "调试项目"
+
+msgid ""
+"To run and debug the project you need to create a new configuration in the "
+"``launch.json`` file."
+msgstr "为了构建项目, 我们需要配置文件 ``launch.json``."
+
+msgid "Press :kbd:`Ctrl + Shift + D` to open the Run panel."
+msgstr "按 :kbd:`Ctrl + Shift + D` 打开“运行”面板。"
+
+msgid ""
+"If ``launch.json`` file is missing you will be prompted to create a new one."
+msgstr "如果缺少 ``launch.json`` 文件, 系统会提示你创建一个新的文件."
+
+msgid ""
+"Within the ``launch.json`` file find the ``\"configurations\"`` array and "
+"add a new section to it:"
+msgstr ""
+"在 ``launch.json`` 文件中找到 ``\"configurations\"`` 数组, 并添加一个新部分:"
+
+msgid "An example of a filled out ``launch.json``."
+msgstr "填写好的 ``launch.json`` 示例。"
+
+msgid "Configuring Intellisense"
+msgstr "配置 Intellisense"
+
+msgid "For the C/C++ extension:"
+msgstr "对于 C/C++ 扩展："
+
+msgid ""
+"The ``c_cpp_properties.json`` file should look similar to this for Windows:"
+msgstr "``c_cpp_properties.json`` 文件在 Windows 系统下应该类似于这样："
+
+msgid ".vscode/c_cpp_properties.json"
+msgstr ".vscode/c_cpp_properties.json"
+
+msgid ""
+"Alternatively, you can use the scons argument ``compiledb=yes`` and set the "
+"compile commands setting ``compileCommands`` to ``compile_commands.json``, "
+"found in the advanced section of the C/C++ Configuration UI."
+msgstr ""
+"你也可以使用 scons 参数 ``compiledb=yes`` 并将编译命令设置 "
+"``compileCommands`` 设置为 ``compile_commands.json``\\ ，该设置可以在 C/C++ "
+"配置界面的高级部分找到。"
+
+msgid ""
+"If you run into any issues, ask for help in one of `Godot's community "
+"channels <https://godotengine.org/community>`__."
+msgstr ""
+"如果遇到问题, 也可在 `Godot 社区论坛 <https://godotengine.org/community>`__ "
+"中寻求帮助."

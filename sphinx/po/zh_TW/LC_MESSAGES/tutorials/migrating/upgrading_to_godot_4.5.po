@@ -1,0 +1,583 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Upgrading from Godot 4.4 to Godot 4.5"
+msgstr "從 Godot 4.4 升級到 Godot 4.5"
+
+msgid ""
+"For most games and apps made with 4.4 it should be relatively safe to "
+"migrate to 4.5. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"對於大多數以 4.4 製作的遊戲和應用程式來說，升級到 4.5 應該相對安全。本頁將說"
+"明專案升級時需要注意的所有事項。"
+
+msgid "Breaking changes"
+msgstr "做出更改"
+
+msgid ""
+"If you are migrating from 4.4 to 4.5, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"如果你要從 4.4 升級到 4.5，這裡列出的不相容變更可能會影響到你的專案。變更內容"
+"依領域/系統分類整理。"
+
+msgid ""
+"In order to support `new Google Play requirements`_ Android now requires "
+"targeting .NET 9 when exporting C# projects to Android, other platforms "
+"continue to use .NET 8 as the minimum required version but newer versions "
+"are supported and encouraged."
+msgstr ""
+"為了支援 `新的 Google Play 規範`_，現在在將 C# 專案匯出到 Android 時必須"
+"以 .NET 9 為目標；其他平台仍以 .NET 8 作為最低需求版本，但亦支援並鼓勵使用更"
+"新版本。"
+
+msgid ""
+"If you are using C# in your project and want to export to Android, you will "
+"need to upgrade your project to .NET 9 (see `Upgrading to a new .NET "
+"version`_ for instructions)."
+msgstr ""
+"若你的專案使用 C# 且要匯出到 Android，你需要將專案升級到 .NET 9（請參見 `升級"
+"到新的 .NET 版本`_ 取得操作說明）。"
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"這篇文章指出了每項破壞性改動是否會影響 GDScript，以及 C# 的破壞性改動是 *二進"
+"位相容* 還是 *原始程式碼相容*："
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the run-time behavior won't change."
+msgstr ""
+"**二進位相容** - 現有二進位檔可在無需重新編譯的情況下成功載入與執行，且執行時"
+"行為不會改變。"
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr ""
+"** 原始程式碼相容** —— 在升級 Godot 時，原始程式碼可成功編譯，無需更改。"
+
+msgid "Core"
+msgstr "核心"
+
+msgid "Change"
+msgstr "改動"
+
+msgid "GDScript Compatible"
+msgstr "GDScript 格式化字串"
+
+msgid "C# Binary Compatible"
+msgstr "C# 二進位相容"
+
+msgid "C# Source Compatible"
+msgstr "C# 原始程式碼相容"
+
+msgid "Introduced"
+msgstr "簡介"
+
+msgid "**JSONRPC**"
+msgstr "**JSONRPC**"
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "`GH-104890`_"
+msgstr "`GH-104890`_"
+
+msgid "**Node**"
+msgstr "**節點**"
+
+msgid "Method ``get_rpc_config`` renamed to ``get_node_rpc_config``"
+msgstr "方法 ``get_rpc_config`` 更名為 ``get_node_rpc_config``"
+
+msgid "|✔️ with compat|"
+msgstr "| ✔️相容|"
+
+msgid "`GH-106848`_"
+msgstr "`GH-106848`_"
+
+msgid ""
+"Method ``set_name`` changes ``name`` parameter type from ``String`` to "
+"``StringName``"
+msgstr ""
+"方法 ``set_name`` 的 ``name`` 參數型別由 ``String`` 改為 ``StringName``"
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "`GH-76560`_"
+msgstr "`GH-76560`_"
+
+msgid "Rendering"
+msgstr "算繪"
+
+msgid "**DisplayServer**"
+msgstr "**DisplayServer**"
+
+msgid ""
+"Method ``file_dialog_show`` adds a new ``parent_window_id`` optional "
+"parameter"
+msgstr "方法 ``file_dialog_show`` 新增了 ``parent_window_id`` 選用參數"
+
+msgid "`GH-98194`_"
+msgstr "`GH-98194`_"
+
+msgid ""
+"Method ``file_dialog_with_options_show`` adds a new ``parent_window_id`` "
+"optional parameter"
+msgstr ""
+"方法 ``file_dialog_with_options_show`` 新增了 ``parent_window_id`` 選用參數"
+
+msgid "**RenderingDevice**"
+msgstr "算繪"
+
+msgid ""
+"Method ``texture_create_from_extension`` adds a new ``mipmaps`` optional "
+"parameter"
+msgstr "方法 ``texture_create_from_extension`` 新增了 ``mipmaps`` 選用參數"
+
+msgid "`GH-105570`_"
+msgstr "`GH-105570`_"
+
+msgid "**RenderingServer**"
+msgstr "**RenderingServer**"
+
+msgid "Method ``instance_reset_physics_interpolation`` removed"
+msgstr "方法 ``instance_reset_physics_interpolation`` 已移除"
+
+msgid "`GH-104269`_"
+msgstr "`GH-104269`_"
+
+msgid "Method ``instance_set_interpolated`` removed"
+msgstr "方法 ``instance_set_interpolated`` 已移除"
+
+msgid "GLTF"
+msgstr "GLTF"
+
+msgid "**GLTFAccessor**"
+msgstr "**GLTFAccessor**"
+
+msgid ""
+"Property ``byte_offset`` changes type metadata from ``int32`` to ``int64``"
+msgstr "屬性 ``byte_offset`` 的型別中繼資料由 ``int32`` 改為 ``int64``"
+
+msgid "`GH-106220`_"
+msgstr "`GH-106220`_"
+
+msgid ""
+"Property ``component_type`` changes type from ``int`` to "
+"``GLTFAccessor::GLTFComponentType``"
+msgstr ""
+"屬性 ``component_type`` 的型別由 ``int`` 改為 "
+"``GLTFAccessor::GLTFComponentType``"
+
+msgid "Property ``count`` changes type metadata from ``int32`` to ``int64``"
+msgstr "屬性 ``count`` 的型別中繼資料由 ``int32`` 改為 ``int64``"
+
+msgid ""
+"Property ``sparse_count`` changes type metadata from ``int32`` to ``int64``"
+msgstr "屬性 ``sparse_count`` 的型別中繼資料由 ``int32`` 改為 ``int64``"
+
+msgid ""
+"Property ``sparse_indices_byte_offset`` changes type metadata from ``int32`` "
+"to ``int64``"
+msgstr ""
+"屬性 ``sparse_indices_byte_offset`` 的型別中繼資料由 ``int32`` 改為 ``int64``"
+
+msgid ""
+"Property ``sparse_indices_component_type`` changes type from ``int`` to "
+"``GLTFAccessor::GLTFComponentType``"
+msgstr ""
+"屬性 ``sparse_indices_component_type`` 的型別由 ``int`` 改為 "
+"``GLTFAccessor::GLTFComponentType``"
+
+msgid ""
+"Property ``sparse_values_byte_offset`` changes type metadata from ``int32`` "
+"to ``int64``"
+msgstr ""
+"屬性 ``sparse_values_byte_offset`` 的型別中繼資料由 ``int32`` 改為 ``int64``"
+
+msgid "**GLTFBufferView**"
+msgstr "**GLTFBufferView**"
+
+msgid ""
+"Property ``byte_length`` changes type metadata from ``int32`` to ``int64``"
+msgstr "屬性 ``byte_length`` 的型別中繼資料由 ``int32`` 改為 ``int64``"
+
+msgid ""
+"Property ``byte_stride`` changes type metadata from ``int32`` to ``int64``"
+msgstr "屬性 ``byte_stride`` 的型別中繼資料由 ``int32`` 改為 ``int64``"
+
+msgid ""
+"As a result of changing the type metadata, the C# bindings changed the type "
+"from ``int`` (32-bytes) to ``long`` (64-bytes)."
+msgstr ""
+"由於型別中繼資料的變更，C# 繫結的型別也從 ``int`` （32 位元）改為 ``long`` "
+"（64 位元）。"
+
+msgid "Text"
+msgstr "文字"
+
+msgid "**CanvasItem**"
+msgstr "**CanvasItem**"
+
+msgid "Method ``draw_char`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw_char`` 新增了 ``oversampling`` 選用參數"
+
+msgid "`GH-104872`_"
+msgstr "`GH-104872`_"
+
+msgid ""
+"Method ``draw_char_outline`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw_char_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``draw_multiline_string`` adds a new ``oversampling`` optional "
+"parameter"
+msgstr "方法 ``draw_multiline_string`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``draw_multiline_string_outline`` adds a new ``oversampling`` "
+"optional parameter"
+msgstr ""
+"方法 ``draw_multiline_string_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid "Method ``draw_string`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw_string`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``draw_string_outline`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw_string_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid "**Font**"
+msgstr "**字型**"
+
+msgid "**RichTextLabel**"
+msgstr "**RichTextLabel**"
+
+msgid "Method ``add_image`` adds a new ``alt_text`` optional parameter"
+msgstr "方法 ``add_image`` 新增了 ``alt_text`` 選用參數"
+
+msgid "`GH-76829`_"
+msgstr "`GH-76829`_"
+
+msgid ""
+"Method ``add_image`` replaced ``size_in_percent`` parameter by "
+"``width_in_percent`` and ``height_in_percent``"
+msgstr ""
+"方法 ``add_image`` 將參數 ``size_in_percent`` 替換為 ``width_in_percent`` 與 "
+"``height_in_percent``"
+
+msgid "`GH-107347`_"
+msgstr "`GH-107347`_"
+
+msgid "Method ``push_strikethrough`` adds optional ``color`` parameter"
+msgstr "方法 ``push_strikethrough`` 新增了選用參數 ``color``"
+
+msgid "`GH-106300`_"
+msgstr "`GH-106300`_"
+
+msgid "Method ``push_table`` adds a new ``name`` optional parameter"
+msgstr "方法 ``push_table`` 新增了 ``name`` 選用參數"
+
+msgid "Method ``push_underline`` adds optional ``color`` parameter"
+msgstr "方法 ``push_underline`` 新增了選用參數 ``color``"
+
+msgid ""
+"Method ``update_image`` replaced ``size_in_percent`` parameter by "
+"``width_in_percent`` and ``height_in_percent``"
+msgstr ""
+"方法 ``update_image`` 將參數 ``size_in_percent`` 替換為 ``width_in_percent`` "
+"與 ``height_in_percent``"
+
+msgid "**TextLine**"
+msgstr "**TextLine**"
+
+msgid "Method ``draw`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw`` 新增了 ``oversampling`` 選用參數"
+
+msgid "Method ``draw_outline`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid "**TextParagraph**"
+msgstr "**TextParagraph**"
+
+msgid "Method ``draw_dropcap`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw_dropcap`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``draw_dropcap_outline`` adds a new ``oversampling`` optional "
+"parameter"
+msgstr "方法 ``draw_dropcap_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid "Method ``draw_line`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw_line`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``draw_line_outline`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``draw_line_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid "**TextServer**"
+msgstr "**TextServer**"
+
+msgid ""
+"Method ``font_draw_glyph`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``font_draw_glyph`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``font_draw_glyph_outline`` adds a new ``oversampling`` optional "
+"parameter"
+msgstr "方法 ``font_draw_glyph_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``shaped_text_draw`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``shaped_text_draw`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``shaped_text_draw_outline`` adds a new ``oversampling`` optional "
+"parameter"
+msgstr "方法 ``shaped_text_draw_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid "**TreeItem**"
+msgstr "**TreeItem**"
+
+msgid "Method ``add_button`` adds a new ``alt_text`` optional parameter"
+msgstr "方法 ``add_button`` 新增了 ``alt_text`` 選用參數"
+
+msgid "**TextServerExtension**"
+msgstr "**TextServerExtension**"
+
+msgid ""
+"Method ``_font_draw_glyph`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``_font_draw_glyph`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``_font_draw_glyph_outline`` adds a new ``oversampling`` optional "
+"parameter"
+msgstr "方法 ``_font_draw_glyph_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``_shaped_text_draw`` adds a new ``oversampling`` optional parameter"
+msgstr "方法 ``_shaped_text_draw`` 新增了 ``oversampling`` 選用參數"
+
+msgid ""
+"Method ``_shaped_text_draw_outline`` adds a new ``oversampling`` optional "
+"parameter"
+msgstr "方法 ``_shaped_text_draw_outline`` 新增了 ``oversampling`` 選用參數"
+
+msgid "XR"
+msgstr "XR"
+
+msgid "**OpenXRAPIExtension**"
+msgstr "**OpenXRAPIExtension**"
+
+msgid ""
+"Method ``register_composition_layer_provider`` changes ``extension`` "
+"parameter type from ``OpenXRExtensionWrapperExtension`` to "
+"``OpenXRExtensionWrapper``"
+msgstr ""
+"方法 ``register_composition_layer_provider`` 的 ``extension`` 參數型別由 "
+"``OpenXRExtensionWrapperExtension`` 改為 ``OpenXRExtensionWrapper``"
+
+msgid "`GH-104087`_"
+msgstr "`GH-104087`_"
+
+msgid ""
+"Method ``register_projection_views_extension`` changes ``extension`` "
+"parameter type from ``OpenXRExtensionWrapperExtension`` to "
+"``OpenXRExtensionWrapper``"
+msgstr ""
+"方法 ``register_projection_views_extension`` 的 ``extension`` 參數型別由 "
+"``OpenXRExtensionWrapperExtension`` 改為 ``OpenXRExtensionWrapper``"
+
+msgid ""
+"Method ``unregister_composition_layer_provider`` changes ``extension`` "
+"parameter type from ``OpenXRExtensionWrapperExtension`` to "
+"``OpenXRExtensionWrapper``"
+msgstr ""
+"方法 ``unregister_composition_layer_provider`` 的 ``extension`` 參數型別由 "
+"``OpenXRExtensionWrapperExtension`` 改為 ``OpenXRExtensionWrapper``"
+
+msgid ""
+"Method ``unregister_projection_views_extension`` changes ``extension`` "
+"parameter type from ``OpenXRExtensionWrapperExtension`` to "
+"``OpenXRExtensionWrapper``"
+msgstr ""
+"方法 ``unregister_projection_views_extension`` 的 ``extension`` 參數型別由 "
+"``OpenXRExtensionWrapperExtension`` 改為 ``OpenXRExtensionWrapper``"
+
+msgid "**OpenXRBindingModifierEditor**"
+msgstr "**OpenXRBindingModifierEditor**"
+
+msgid ""
+"Type ``OpenXRBindingModifierEditor`` changed API type from Core to Editor"
+msgstr "型別 ``OpenXRBindingModifierEditor`` 的 API 類型由 Core 改為 Editor"
+
+msgid "`GH-103869`_"
+msgstr "`GH-103869`_"
+
+msgid "**OpenXRInteractionProfileEditor**"
+msgstr "**OpenXRInteractionProfileEditor**"
+
+msgid ""
+"Type ``OpenXRInteractionProfileEditor`` changed API type from Core to Editor"
+msgstr "型別 ``OpenXRInteractionProfileEditor`` 的 API 類型由 Core 改為 Editor"
+
+msgid "**OpenXRInteractionProfileEditorBase**"
+msgstr "**OpenXRInteractionProfileEditorBase**"
+
+msgid ""
+"Type ``OpenXRInteractionProfileEditorBase`` changed API type from Core to "
+"Editor"
+msgstr ""
+"型別 ``OpenXRInteractionProfileEditorBase`` 的 API 類型由 Core 改為 Editor"
+
+msgid ""
+"Classes ``OpenXRBindingModifierEditor``, ``OpenXRInteractionProfileEditor``, "
+"and ``OpenXRInteractionProfileEditorBase`` are only available in the editor. "
+"Using them outside of the editor will result in a compilation error."
+msgstr ""
+"類別 ``OpenXRBindingModifierEditor``、``OpenXRInteractionProfileEditor`` 與 "
+"``OpenXRInteractionProfileEditorBase`` 只在編輯器中可用。在編輯器外使用會導致"
+"編譯錯誤。"
+
+msgid ""
+"In C#, this means the types are moved from the ``GodotSharp`` assembly to "
+"the ``GodotSharpEditor`` assembly. Make sure to wrap code that uses these "
+"types in a ``#if TOOLS`` block to ensure they are not included in an "
+"exported game."
+msgstr ""
+"在 C# 中，這代表這些型別已從 ``GodotSharp`` 程式集移至 ``GodotSharpEditor`` "
+"程式集。請確保將使用這些型別的程式碼包在 ``#if TOOLS`` 區塊中，以避免被包含進"
+"匯出的遊戲。"
+
+msgid "**This change was also backported to 4.4.1.**"
+msgstr "**此變更也已回溯至 4.4.1。**"
+
+msgid "Editor plugins"
+msgstr "編輯器外掛程式"
+
+msgid "**EditorExportPlatform**"
+msgstr "**EditorExportPlatform**"
+
+msgid ""
+"Method ``get_forced_export_files`` adds a new ``preset`` optional parameter"
+msgstr "方法 ``get_forced_export_files`` 新增了 ``preset`` 選用參數"
+
+msgid "`GH-71542`_"
+msgstr "`GH-71542`_"
+
+msgid "**EditorUndoRedoManager**"
+msgstr "**EditorUndoRedoManager**"
+
+msgid "Method ``create_action`` adds a new ``mark_unsaved`` optional parameter"
+msgstr "方法 ``create_action`` 新增了 ``mark_unsaved`` 選用參數"
+
+msgid "`GH-106121`_"
+msgstr "`GH-106121`_"
+
+msgid "**EditorExportPlatformExtension**"
+msgstr "**EditorExportPlatformExtension**"
+
+msgid ""
+"Method ``_get_option_icon`` changes return type from ``ImageTexture`` to "
+"``Texture2D``"
+msgstr ""
+"方法 ``_get_option_icon`` 的回傳型別由 ``ImageTexture`` 改為 ``Texture2D``"
+
+msgid "`GH-108825`_"
+msgstr "`GH-108825`_"
+
+msgid "Behavior changes"
+msgstr "做出更改"
+
+msgid "3D Model Import"
+msgstr "3D 模型匯入"
+
+msgid ""
+"A fix has been made to the 3D model importers to correctly handle non-joint "
+"nodes within a skeleton hierarchy (`GH-104184`_). To preserve compatibility, "
+"the default behavior is to import existing files with the same behavior as "
+"before (`GH-107352`_). New ``.gltf``, ``.glb``, ``.blend``, and ``.fbx`` "
+"files (without a corresponding ``.import`` file) will be imported with the "
+"new behavior. However, for existing files, if you want to use the new "
+"behavior, you must change the \"Naming Version\" option at the bottom of the "
+"Import dock:"
+msgstr ""
+"已修正 3D 模型匯入器，能正確處理骨架階層中的非關節節點（`GH-104184`_）。為了"
+"維持相容性，預設會以既有行為匯入既有檔案（`GH-107352`_）。新的 ``.gltf``、"
+"``.glb``、``.blend`` 與 ``.fbx`` 檔（沒有對應的 ``.import`` 檔）將以新行為匯"
+"入。不過對既有檔案而言，若你想使用新行為，必須在「匯入」面板底部變更「Naming "
+"Version」選項："
+
+msgid ""
+"In C#, ``StringExtensions.PathJoin`` now avoids adding an extra path "
+"separator when the original string is empty, or when the appended path "
+"starts with a path separator (`GH-105281`_)."
+msgstr ""
+"在 C# 中，``StringExtensions.PathJoin`` 現在會在原始字串為空或附加的路徑以分"
+"隔符開頭時，避免多加一個路徑分隔符（`GH-105281`_）。"
+
+msgid ""
+"In C#, ``StringExtensions.GetExtension`` now returns an empty string instead "
+"of the original string when the original string does not contain an "
+"extension (`GH-108041`_)."
+msgstr ""
+"在 C# 中，當原始字串不含副檔名時，``StringExtensions.GetExtension`` 現在會回"
+"傳空字串而非原始字串（`GH-108041`_）。"
+
+msgid ""
+"In C#, the ``Quaternion(Vector3, Vector3)`` constructor now correctly "
+"creates a quaternion representing the shortest arc between the two input "
+"vectors. Previously, it would return incorrect values for certain inputs "
+"(`GH-107618`_)."
+msgstr ""
+"在 C# 中，``Quaternion(Vector3, Vector3)`` 建構式現在能正確建立代表兩輸入向量"
+"間最短弧的四元數。先前在某些輸入下會回傳錯誤的值（`GH-107618`_）。"
+
+msgid "Navigation"
+msgstr "導覽"
+
+msgid "Physics"
+msgstr "物理"
+
+msgid ""
+"When the 3D physics engine is set to Jolt Physics, you will now always have "
+"overlaps between ``Area3D`` and static bodies reported by default, as the "
+"``physics/jolt_physics_3d/simulation/areas_detect_static_bodies`` project "
+"setting has been removed (`GH-105746`_). If you still want such overlaps to "
+"be ignored, you will need to change the collision mask or layer of either "
+"the ``Area3D`` or the static body instead."
+msgstr ""
+"當 3D 物理引擎設定為 Jolt Physics 時，預設情況下現在會永遠回報 ``Area3D`` 與"
+"靜態物體之間的重疊，因為已移除專案設定 ``physics/jolt_physics_3d/simulation/"
+"areas_detect_static_bodies`` （ `GH-105746`_ ）。若你仍想忽略這類重疊，請改為"
+"調整 ``Area3D`` 或該靜態物體的碰撞遮罩或圖層。"
+
+msgid ""
+"In GDScript, calls to functions ``RichTextLabel::add_image`` and "
+"``RichTextLabel::update_image`` will continue to work, but the "
+"``size_in_percent`` argument will now be used as the value for "
+"``width_in_percent`` and ``height_in_percent`` will default to ``false`` "
+"(`GH-107347`_). To restore the previous behavior, you can explicitly set "
+"``height_in_percent`` to the same value you were passing as "
+"``size_in_percent``."
+msgstr ""
+"在 GDScript 中，呼叫 ``RichTextLabel::add_image`` 與 "
+"``RichTextLabel::update_image`` 仍可運作，但 ``size_in_percent`` 參數現在會用"
+"作 ``width_in_percent`` 的值，且 ``height_in_percent`` 預設為 ``false`` "
+"(`GH-107347`_ )。若要恢復先前行為，你可以將 ``height_in_percent`` 明確設為與"
+"原先傳入的 ``size_in_percent`` 相同的值。"

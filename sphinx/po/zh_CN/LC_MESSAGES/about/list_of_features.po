@@ -1,0 +1,1894 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "List of features"
+msgstr "特性列表"
+
+msgid "This page aims to list **all** features currently supported by Godot."
+msgstr "本页旨在列出 Godot 当前支持的\\ **所有**\\ 特性。"
+
+msgid ""
+"This page lists features supported by the current stable version of Godot. "
+"Some of these features are not available in the `3.x release series <https://"
+"docs.godotengine.org/en/3.6/about/list_of_features.html>`__."
+msgstr ""
+"此页面列出了当前稳定版本的 Godot 所支持的功能。部分功能在 `3.x 版本系列 "
+"<https://docs.godotengine.org/en/3.6/about/list_of_features.html>`__ 中不可"
+"用。"
+
+msgid "Platforms"
+msgstr "平台"
+
+msgid ""
+"See :ref:`doc_system_requirements` for hardware and software version "
+"requirements."
+msgstr "软硬件版本需求见 :ref:`doc_system_requirements`\\ 。"
+
+msgid "**Can run both the editor and exported projects:**"
+msgstr "**可以运行编辑器以及导出项目的：**"
+
+msgid "Windows (x86 and ARM, 64-bit and 32-bit)."
+msgstr "Windows (x86 和 ARM, 64位 和 32位)."
+
+msgid "macOS (x86 and ARM, 64-bit only)."
+msgstr "macOS（x86 和 ARM，仅 64 位）。"
+
+msgid "Linux (x86 and ARM, 64-bit and 32-bit)."
+msgstr "Linux（x86 和 ARM，64 位和 32 位）。"
+
+msgid ""
+"Binaries are statically linked and can run on any distribution if compiled "
+"on an old enough base distribution."
+msgstr ""
+"二进制文件是静态链接的，并且如果在足够旧的基本发行版上进行编译，则可以在任何"
+"发行版上运行。"
+
+msgid ""
+"Official binaries are compiled using the `Godot Engine buildroot <https://"
+"github.com/godotengine/buildroot>`__, allowing for binaries that work across "
+"common Linux distributions."
+msgstr ""
+"官方二进制文件是使用 `Godot Engine buildroot <https://github.com/godotengine/"
+"buildroot>`__ 编译的，从而生成可在常见 Linux 发行版上运行的二进制文件。"
+
+msgid "Android (editor support is experimental)."
+msgstr "Android（编辑器支持是实验性的）。"
+
+msgid ""
+":ref:`Web browsers <doc_using_the_web_editor>`. Experimental in 4.0, using "
+"Godot 3.x is recommended instead when targeting HTML5."
+msgstr ""
+":ref:`Web 浏览器 <doc_using_the_web_editor>` 。在 4.0 中是实验性的，当针对 "
+"HTML5 时，建议改用 Godot 3.x。"
+
+msgid ""
+"Linux supports rv64 (RISC-V), ppc64 & ppc32 (PowerPC), and loongarch64. "
+"However you must compile the editor for that platform (as well as export "
+"templates) yourself, no official downloads are currently provided. RISC-V "
+"compiling instructions can be found on the :ref:`doc_compiling_for_linuxbsd` "
+"page."
+msgstr ""
+"Linux 支持 rv64（RISC-V）、ppc64 和 ppc32（PowerPC）以及 loongarch64 架构。但"
+"你需要自行编译该平台的编辑器（以及导出模板），目前不提供官方预编译版本。RISC-"
+"V 的编译说明可查阅 :ref:`doc_compiling_for_linuxbsd` 页面。"
+
+msgid "**Runs exported projects:**"
+msgstr "**运行导出的项目：**"
+
+msgid "iOS."
+msgstr "iOS。"
+
+msgid ":ref:`Consoles <doc_consoles>`."
+msgstr ":ref:`主机 <doc_consoles>`\\ 。"
+
+msgid ""
+"Godot aims to be as platform-independent as possible and can be :ref:`ported "
+"to new platforms <doc_custom_platform_ports>` with relative ease."
+msgstr ""
+"Godot 的目标是尽可能地独立于平台，并且可以相对轻松地\\ :ref:`移植到新平台 "
+"<doc_custom_platform_ports>`\\ 。"
+
+msgid ""
+"Projects written in C# using Godot 4 currently cannot be exported to the web "
+"platform. To use C# on that platform, consider Godot 3 instead. Android and "
+"iOS platform support is available as of Godot 4.2, but is experimental "
+"and :ref:`some limitations apply <doc_c_sharp_platforms>`."
+msgstr ""
+"在 Godot 4 中用 C# 编写的项目目前无法导出到 Web 平台。如果要在该平台上使用 "
+"C#，请考虑使用 Godot 3。（C# 的）Android 和 iOS 平台支持从 Godot 4.2 开始提"
+"供，但仍处于实验阶段，并且\\ :ref:`存在一些限制 <doc_c_sharp_platforms>`\\ 。"
+
+msgid "Editor"
+msgstr "编辑器"
+
+msgid "**Features:**"
+msgstr "**特性：**"
+
+msgid "Scene tree editor."
+msgstr "场景树编辑器。"
+
+msgid "Built-in script editor."
+msgstr "内置脚本编辑器。"
+
+msgid ""
+"Support for :ref:`external script editors <doc_external_editor>` such as "
+"Visual Studio Code or Vim."
+msgstr ""
+"支持 Visual Studio Code、VIM 等\\ :ref:`外部文本编辑器 "
+"<doc_external_editor>`\\ 。"
+
+msgid "GDScript :ref:`debugger <doc_debugger_panel>`."
+msgstr "GDScript :ref:`调试器 <doc_debugger_panel>`\\ 。"
+
+msgid "Support for debugging in threads is available since 4.2."
+msgstr "从 4.2 版本开始支持多线程调试。"
+
+msgid ""
+"Visual profiler with CPU and GPU time indications for each step of the "
+"rendering pipeline."
+msgstr ""
+"可视化（性能）分析器，能指出在渲染管线中 CPU 与 GPU 在每个步骤花费的时间。"
+
+msgid ""
+"Performance monitoring tools, including :ref:`custom performance monitors "
+"<doc_custom_performance_monitors>`."
+msgstr ""
+"性能监视工具，包括\\ :ref:`自定义性能监视器 "
+"<doc_custom_performance_monitors>`\\ 。"
+
+msgid "Live script reloading."
+msgstr "脚本热重载。"
+
+msgid "Live scene editing."
+msgstr "场景热编辑。"
+
+msgid ""
+"Changes will reflect in the editor and will be kept after closing the "
+"running project."
+msgstr "更改会在编辑器中生效，并会在关闭运行的项目后保留。"
+
+msgid "Remote inspector."
+msgstr "远程检查器。"
+
+msgid ""
+"Changes won't reflect in the editor and won't be kept after closing the "
+"running project."
+msgstr "更改不会在编辑器中生效，也不会在关闭运行的项目后保留。"
+
+msgid "Live camera replication."
+msgstr "实时相机复制。"
+
+msgid "Move the in-editor camera and see the result in the running project."
+msgstr "移动编辑器中的相机，并在正在运行的项目中查看结果。"
+
+msgid "Built-in offline class reference documentation."
+msgstr "内置离线类参考文档。"
+
+msgid "Use the editor in dozens of languages contributed by the community."
+msgstr "使用由社区贡献的支持数十种语言的编辑器。"
+
+msgid "**Plugins:**"
+msgstr "**插件：**"
+
+msgid ""
+"Editor plugins can be downloaded from the :ref:`asset library "
+"<doc_what_is_assetlib>` to extend editor functionality."
+msgstr ""
+"可以从\\ :ref:`资产库 <doc_what_is_assetlib>`\\ 下载编辑器插件，扩展编辑器的"
+"功能。"
+
+msgid ""
+":ref:`Create your own plugins <doc_making_plugins>` using GDScript to add "
+"new features or speed up your workflow."
+msgstr ""
+"使用 GDScript 来\\ :ref:`创建属于自己的插件 <doc_making_plugins>`\\ ，从而为"
+"引擎添加新功能或加速你的工作流。"
+
+msgid ""
+":ref:`Download projects from the asset library <doc_using_assetlib_editor>` "
+"in the Project Manager and import them directly."
+msgstr ""
+"在项目管理器中，\\ :ref:`从资产库下载项目 <doc_using_assetlib_editor>`\\ 并直"
+"接导入。"
+
+msgid "Rendering"
+msgstr "渲染"
+
+msgid "Godot 4 includes three renderers:"
+msgstr "Godot 4 包括 三个渲染器："
+
+msgid ""
+"**Forward+**. The most advanced renderer, suited for desktop platforms only. "
+"Used by default on desktop platforms. This renderer uses **Vulkan**, "
+"**Direct3D 12**, or **Metal** as the rendering driver, and it uses the "
+"**RenderingDevice** backend."
+msgstr ""
+"**Forward+**\\ 。最先进的渲染器，仅适合桌面平台，桌面平台默认使用。该渲染器使"
+"用 **Vulkan**\\ 、\\ **Direct3D 12** 或 **Metal** 作为渲染驱动，使用 "
+"**RenderingDevice** 后端。"
+
+msgid ""
+"**Mobile**. Fewer features, but renders simple scenes faster. Suited for "
+"mobile and desktop platforms. Used by default on mobile platforms. This "
+"renderer uses **Vulkan**, **Direct3D 12**, or **Metal** as the rendering "
+"driver, and it uses the **RenderingDevice** backend."
+msgstr ""
+"**Mobile**\\ （移动）。功能较少，但渲染简单场景的速度更快。适用于移动平台和桌"
+"面平台。移动平台默认使用该渲染器。该渲染器使用 **Vulkan**\\ 、\\ **Direct3D "
+"12** 或 **Metal** 作为渲染驱动，使用 **RenderingDevice** 后端。"
+
+msgid ""
+"**Compatibility**, sometimes called **GL Compatibility**. The least advanced "
+"renderer, suited for low-end desktop and mobile platforms. Used by default "
+"on the web platform. This renderer uses **OpenGL** as the rendering driver."
+msgstr ""
+"**Compatibility（兼容）**\\ ，在 OpenGL 3.3、OpenGL ES 3.0 和 WebGL 2.0 以上"
+"运行。最低级的图形后端，适合低端桌面和移动平台。在 Web 平台上默认使用。"
+
+msgid ""
+"See :ref:`doc_renderers` for a detailed comparison of the rendering methods."
+msgstr "请参阅 :ref:`doc_renderers` 以获取详细的渲染方法比较。"
+
+msgid "2D graphics"
+msgstr "2D 图形"
+
+msgid "Sprite, polygon and line rendering."
+msgstr "精灵、多边形和线条渲染。"
+
+msgid ""
+"High-level tools to draw lines and polygons such as :ref:`class_Polygon2D` "
+"and :ref:`class_Line2D`, with support for texturing."
+msgstr ""
+"用于绘制线和多边形的高级工具，例如 :ref:`class_Polygon2D` "
+"和 :ref:`class_Line2D`\\ ，支持纹理。"
+
+msgid "AnimatedSprite2D as a helper for creating animated sprites."
+msgstr "AnimatedSprite2D 辅助制作动画精灵。"
+
+msgid "Parallax layers."
+msgstr "视差层。"
+
+msgid "Pseudo-3D support including preview in the editor."
+msgstr "伪 3D 支持，可在编辑器中进行预览。"
+
+msgid ""
+":ref:`2D lighting <doc_2d_lights_and_shadows>` with normal maps and specular "
+"maps."
+msgstr ""
+"带有法线贴图和镜面反射贴图的 :ref:`2D 光照 <doc_2d_lights_and_shadows>`\\ 。"
+
+msgid "Point (omni/spot) and directional 2D lights."
+msgstr "2D 点光源（全向灯/聚光灯）和定向光源。"
+
+msgid "Hard or soft shadows (adjustable on a per-light basis)."
+msgstr "硬阴影或软阴影（可根据每个光源进行调整）。"
+
+msgid ""
+"Custom shaders can access a real-time :abbr:`SDF (Signed Distance Field)` "
+"representation of the 2D scene based on :ref:`class_LightOccluder2D` nodes, "
+"which can be used for improved 2D lighting effects including 2D global "
+"illumination."
+msgstr ""
+"自定义着色器可以访问一个基于 :ref:`class_LightOccluder2D` 节点的，由实"
+"时 :abbr:`SDF (Signed Distance Field，带符号距离场)` 表示的 2D 场景，它可以用"
+"于改进 2D 照明效果，包括 2D 全局光源。"
+
+msgid ""
+":ref:`Font rendering <doc_gui_using_fonts>` using bitmaps, rasterization "
+"using FreeType or multi-channel signed distance fields (MSDF)."
+msgstr ""
+":ref:`字体渲染 <doc_gui_using_fonts>`\\ 使用位图，光栅化使用 FreeType 或多通"
+"道有符号距离场（MSDF）。"
+
+msgid ""
+"Bitmap fonts can be exported using tools like BMFont, or imported from "
+"images (for fixed-width fonts only)."
+msgstr ""
+"位图字体可以使用 BMFont 等工具导出，也可以从图像导入（仅适用于等宽字体）。"
+
+msgid ""
+"Dynamic fonts support monochrome fonts as well as colored fonts (e.g. for "
+"emoji). Supported formats are TTF, OTF, WOFF1 and WOFF2."
+msgstr ""
+"动态字体支持单色字体以及彩色字体（例如用于表情符号）。支持的格式有 TTF、OTF、"
+"WOFF1 和 WOFF2。"
+
+msgid ""
+"Dynamic fonts support optional font outlines with adjustable width and color."
+msgstr "动态字体支持宽度和颜色可调的可选字体轮廓。"
+
+msgid ""
+"Dynamic fonts support variable fonts and OpenType features including "
+"ligatures."
+msgstr "动态字体支持可变字体和 OpenType 功能，包括连字（ligatures）。"
+
+msgid ""
+"Dynamic fonts support simulated bold and italic when the font file lacks "
+"those styles."
+msgstr "当字体文件缺少粗体和斜体样式时，动态字体支持模拟这些样式。"
+
+msgid ""
+"Dynamic fonts support oversampling to keep fonts sharp at higher resolutions."
+msgstr "动态字体支持超采样, 以在更高的分辨率下保持字体的清晰度."
+
+msgid ""
+"Dynamic fonts support subpixel positioning to make fonts crisper at low "
+"sizes."
+msgstr ""
+"动态字体支持亚像素定位（subpixel positioning），使字体在小尺寸下更清晰。"
+
+msgid ""
+"Dynamic fonts support LCD subpixel optimizations to make fonts even crisper "
+"at low sizes."
+msgstr "动态字体支持 LCD 亚像素优化，使字体在小尺寸下更加清晰。"
+
+msgid ""
+"Signed distance field fonts can be scaled at any resolution without "
+"requiring re-rasterization. Multi-channel usage makes SDF fonts scale down "
+"to lower sizes better compared to monochrome SDF fonts."
+msgstr ""
+"带符号距离场字体可以按任意分辨率缩放，而无需重新光栅化。与单色带符号距离场字"
+"体相比，利用多通道可使带符号距离场字体能够更好地缩小到较小的大小。"
+
+msgid ""
+"GPU-based :ref:`particles <doc_particle_systems_2d>` with support "
+"for :ref:`custom particle shaders <doc_particle_shader>`."
+msgstr ""
+"基于 GPU 的\\ :ref:`粒子 <doc_particle_systems_2d>`\\ ，支持\\ :ref:`自定义粒"
+"子着色器 <doc_particle_shader>`\\ 。"
+
+msgid "CPU-based particles."
+msgstr "基于 CPU 的粒子。"
+
+msgid ""
+"Optional :ref:`2D HDR rendering "
+"<doc_environment_and_post_processing_using_glow_in_2d>` for better glow "
+"capabilities."
+msgstr ""
+"用于更好的辉光功能的可选 :ref:`2D HDR 渲染 "
+"<doc_environment_and_post_processing_using_glow_in_2d>`\\ 。"
+
+msgid "2D tools"
+msgstr "2D 工具"
+
+msgid ":ref:`TileMaps <doc_using_tilemaps>` for 2D tile-based level design."
+msgstr ":ref:`TileMap <doc_using_tilemaps>` 用于由 2D 图块构建的关卡设计。"
+
+msgid "2D camera with built-in smoothing and drag margins."
+msgstr "2D 相机，拥有内置平滑和拖动边距。"
+
+msgid "Path2D node to represent a path in 2D space."
+msgstr "Path2D 节点，用于代表 2D 空间中的一条路径。"
+
+msgid "Can be drawn in the editor or generated procedurally."
+msgstr "可以在编辑器中绘制或者程序化生成。"
+
+msgid "PathFollow2D node to make nodes follow a Path2D."
+msgstr "PathFollow2D 节点，用于使节点跟随一个 Path2D。"
+
+msgid ":ref:`2D geometry helper class <class_Geometry2D>`."
+msgstr ":ref:`2D 几何辅助类 <class_Geometry2D>`\\ 。"
+
+msgid "2D physics"
+msgstr "2D 物理"
+
+msgid "**Physics bodies:**"
+msgstr "**物理体：**"
+
+msgid "Static bodies."
+msgstr "静态物体。"
+
+msgid ""
+"Animatable bodies (for objects moving only by script or animation, such as "
+"doors and platforms)."
+msgstr "可动画物体（用于仅通过脚本或动画移动的物体，如门和平台）。"
+
+msgid "Rigid bodies."
+msgstr "刚体。"
+
+msgid "Character bodies."
+msgstr "角色体。"
+
+msgid "Joints."
+msgstr "关节。"
+
+msgid "Areas to detect bodies entering or leaving it."
+msgstr "区域，用以检测实体进入或离开。"
+
+msgid "**Collision detection:**"
+msgstr "**碰撞检测：**"
+
+msgid ""
+"Built-in shapes: line, box, circle, capsule, world boundary (infinite plane)."
+msgstr "内置形状：线条、框体、圆圈、胶囊、世界边界（无限平面）。"
+
+msgid ""
+"Collision polygons (can be drawn manually or generated from a sprite in the "
+"editor)."
+msgstr "碰撞多边形（可以人工绘制，或者在编辑器中根据精灵生成）。"
+
+msgid "3D graphics"
+msgstr "3D 图形"
+
+msgid "HDR rendering with sRGB."
+msgstr "使用 sRGB 进行 HDR 渲染。"
+
+msgid "Perspective, orthographic and frustum-offset cameras."
+msgstr "透视、正交以及视锥偏移摄像机。"
+
+msgid ""
+"When using the Forward+ renderer, a depth prepass is used to improve "
+"performance in complex scenes by reducing the cost of overdraw."
+msgstr ""
+"使用 Forward+ 渲染器时，通过深度预通道来提高复杂场景中的性能，从而减少过度绘"
+"制的成本。"
+
+msgid ""
+":ref:`doc_variable_rate_shading` on supported GPUs in Forward+ and Mobile."
+msgstr ""
+"在 Forward+ 和 Mobile 渲染器中，支持的 GPU 上可以使"
+"用 :ref:`doc_variable_rate_shading`\\ 。"
+
+msgid "**Physically-based rendering (built-in material features):**"
+msgstr "**基于物理的渲染（内置材质特性）：**"
+
+msgid "Follows the Disney PBR model."
+msgstr "遵循迪士尼 PBR 模型。"
+
+msgid ""
+"Supports Burley, Lambert, Lambert Wrap (half-Lambert) and Toon diffuse "
+"shading modes."
+msgstr ""
+"支持 Burley、Lambert、Lambert Wrap（half-Lambert）、Toon 漫反射着色模式。"
+
+msgid "Supports Schlick-GGX, Toon and Disabled specular shading modes."
+msgstr "支持 Schlick-GGX、Toon 和 Disabled 镜面反射着色模式。"
+
+msgid "Uses a roughness-metallic workflow with support for ORM textures."
+msgstr "使用粗糙度金属度工作流，支持 ORM 纹理。"
+
+msgid ""
+"Uses horizon specular occlusion (Filament model) to improve material "
+"appearance."
+msgstr "使用地平线镜面反射遮蔽（Filament 模型）提升材质外观。"
+
+msgid "Normal mapping."
+msgstr "法线贴图。"
+
+msgid ""
+"Parallax/relief mapping with automatic level of detail based on distance."
+msgstr "具有基于距离的自动细节层次的视差/浮雕贴图。"
+
+msgid "Detail mapping for the albedo and normal maps."
+msgstr "反照率及法线贴图的细节贴图。"
+
+msgid "Sub-surface scattering and transmittance."
+msgstr "次表面散射和透射率。"
+
+msgid ""
+"Screen-space refraction with support for material roughness (resulting in "
+"blurry refraction)."
+msgstr "支持材质粗糙度的屏幕空间折射（产生模糊折射）。"
+
+msgid "Proximity fade (soft particles) and distance fade."
+msgstr "邻近淡出（柔化粒子）与距离淡出。"
+
+msgid ""
+"Distance fade can use alpha blending or dithering to avoid going through the "
+"transparent pipeline."
+msgstr "距离淡出可以使用透明度混合或抖动以避免穿过透明管线。"
+
+msgid "Dithering can be determined on a per-pixel or per-object basis."
+msgstr "抖动可以根据每个像素或每个对象来确定。"
+
+msgid "**Real-time lighting:**"
+msgstr "**实时光照：**"
+
+msgid "Directional lights (sun/moon). Up to 4 per scene."
+msgstr "定向光（日光/月光）。每个场景最多 4 个。"
+
+msgid "Omnidirectional lights."
+msgstr "全向光。"
+
+msgid "Spot lights with adjustable cone angle and attenuation."
+msgstr "可调整锥角和衰减的聚光。"
+
+msgid ""
+"Specular, indirect light, and volumetric fog energy can be adjusted on a per-"
+"light basis."
+msgstr "镜面反射、间接光和体积雾能量可以根据每个光源进行调整。"
+
+msgid ""
+"Adjustable light \"size\" for fake area lights (will also make shadows "
+"blurrier)."
+msgstr "可调节的灯光 \"大小\" 用于伪造面光（也会使阴影更模糊）。"
+
+msgid ""
+"Optional distance fade system to fade distant lights and their shadows, "
+"improving performance."
+msgstr ""
+"可选的距离淡化系统（distance fade system）可以淡化远处的灯光及其阴影，从而提"
+"高性能。"
+
+msgid ""
+"When using the Forward+ renderer (default on desktop), lights are rendered "
+"with clustered forward optimizations to decrease their individual cost. "
+"Clustered rendering also lifts any limits on the number of lights that can "
+"be used on a mesh."
+msgstr ""
+"使用 Forward+ 渲染器（桌面平台默认）时，光源通过集群前向优化渲染，以减少其单"
+"独的成本。集群渲染还消除了对网格上可使用的光源数量的任何限制。"
+
+msgid ""
+"When using the Mobile renderer, up to 8 omni lights and 8 spot lights can be "
+"displayed per mesh resource. Baked lighting can be used to overcome this "
+"limit if needed."
+msgstr ""
+"使用 Mobile 渲染器时，每个网格资源最多可以显示 8 个全向光源和 8 个聚光灯。如"
+"果需要，可以使用烘焙光照来克服这一限制。"
+
+msgid "**Shadow mapping:**"
+msgstr "**阴影贴图：**"
+
+msgid ""
+"*DirectionalLight:* Orthogonal (fastest), PSSM 2-split and 4-split. Supports "
+"blending between splits."
+msgstr ""
+"*DirectionalLight：*\\ 正交（最快）、PSSM 2 分割和 4 分割。支持分割之间的混"
+"合。"
+
+msgid ""
+"*OmniLight:* Dual paraboloid (fast) or cubemap (slower but more accurate). "
+"Supports colored projector textures in the form of panoramas."
+msgstr ""
+"*OmniLight：*\\ 双抛物面（快速）或立方映射（较慢但更精确）。支持全景形式的彩"
+"色投影纹理。"
+
+msgid "*SpotLight:* Single texture. Supports colored projector textures."
+msgstr "*SpotLight：*\\ 单个纹理。支持彩色投影纹理。"
+
+msgid ""
+"Shadow normal offset bias and shadow pancaking to decrease the amount of "
+"visible shadow acne and peter-panning."
+msgstr ""
+"要缓解可见的阴影失真和阴影悬浮的情况，可以调整阴影的法线偏移量偏置以及阴影压"
+"平。"
+
+msgid ""
+":abbr:`PCSS (Percentage Closer Soft Shadows)`-like shadow blur based on the "
+"light size and distance from the surface the shadow is cast on."
+msgstr ""
+"类似 :abbr:`PCSS (Percentage Closer Soft Shadows，百分比靠近软阴影)` 的阴影模"
+"糊是基于光源大小和距阴影投射表面的距离。"
+
+msgid "Adjustable shadow blur on a per-light basis."
+msgstr "根据每个灯光调整阴影模糊。"
+
+msgid "**Global illumination with indirect lighting:**"
+msgstr "**具有间接照明的全局光照：**"
+
+msgid ""
+":ref:`Baked lightmaps <doc_using_lightmap_gi>` (fast, but can't be updated "
+"at runtime)."
+msgstr ""
+":ref:`\\ 烘焙光照贴图 <doc_using_lightmap_gi>`\\ （快速，但无法在运行时更"
+"新）。"
+
+msgid ""
+"Supports baking indirect light only or baking both direct and indirect "
+"lighting. The bake mode can be adjusted on a per-light basis to allow for "
+"hybrid light baking setups."
+msgstr ""
+"支持仅烘焙间接光照，或者同时烘焙直接和间接光照。可以根据每个灯光调整烘焙模"
+"式，以允许混合光照烘焙设置。"
+
+msgid ""
+"Supports lighting dynamic objects using automatic and manually placed probes."
+msgstr "支持使用自动和手动放置的探针照明动态物体。"
+
+msgid ""
+"Optionally supports directional lighting and rough reflections based on "
+"spherical harmonics."
+msgstr "可选支持基于球谐函数的平行光和粗糙反射。"
+
+msgid ""
+"Lightmaps are baked on the GPU using compute shaders (much faster compared "
+"to CPU lightmapping). Baking can only be performed from the editor, not in "
+"exported projects."
+msgstr ""
+"光照贴图使用计算着色器在 GPU 上烘焙（与 CPU 光照贴图相比速度更快）。烘焙只能"
+"从编辑器执行，而不能在导出的项目中执行。"
+
+msgid ""
+"Supports GPU-based :ref:`denoising <doc_using_lightmap_gi_denoising>` with "
+"JNLM, or CPU/GPU-based denoising with OIDN."
+msgstr ""
+"支持使用 JNLM 进行基于 GPU 的\\ :ref:`降噪 "
+"<doc_using_lightmap_gi_denoising>`\\ ，或使用 OIDN 进行基于 CPU/GPU 的降噪。"
+
+msgid ""
+":ref:`Voxel-based GI probes <doc_using_voxel_gi>`. Supports dynamic lights "
+"*and* dynamic occluders, while also supporting reflections. Requires a fast "
+"baking step which can be performed in the editor or at runtime (including "
+"from an exported project)."
+msgstr ""
+":ref:`基于体素的 GI 探针 <doc_using_voxel_gi>`\\ 。支持动态灯光\\ *和*\\ 动态"
+"遮挡器，同时还支持反射。需要执行快速烘焙步骤，该步骤可在编辑器中或运行时（包"
+"括从导出的项目中）执行。"
+
+msgid ""
+":ref:`Signed-distance field GI <doc_using_sdfgi>` designed for large open "
+"worlds. Supports dynamic lights, but not dynamic occluders. Supports "
+"reflections. No baking required."
+msgstr ""
+"为大型开放世界设计的\\ :ref:`有符号距离场 GI <doc_using_sdfgi>`\\ 。支持动态"
+"光照，不支持动态遮挡器。支持反射。无需烘焙。"
+
+msgid ""
+":ref:`Screen-space indirect lighting (SSIL) "
+"<doc_environment_and_post_processing_ssil>` at half or full resolution. "
+"Fully real-time and supports any kind of emissive light source (including "
+"decals)."
+msgstr ""
+"以半分辨率或全分辨率进行的\\ :ref:`屏幕空间间接光照（SSIL）"
+"<doc_environment_and_post_processing_ssil>`\\ 。完全实时并支持任何类型的自发"
+"光光源（包括贴花）。"
+
+msgid ""
+"VoxelGI and SDFGI use a deferred pass to allow for rendering GI at half "
+"resolution to improve performance (while still having functional MSAA "
+"support)."
+msgstr ""
+"VoxelGI 和 SDFGI 使用延迟渲染通道，可以在半分辨率下渲染全局光照，以提高性能"
+"（同时还支持 MSAA 抗锯齿）。"
+
+msgid "**Reflections:**"
+msgstr "**反射：**"
+
+msgid ""
+"Voxel-based reflections (when using GI probes) and SDF-based reflections "
+"(when using signed distance field GI). Voxel-based reflections are visible "
+"on transparent surfaces, while rough SDF-based reflections are visible on "
+"transparent surfaces."
+msgstr ""
+"基于体素的反射（使用 GI 探针时）和基于 SDF 的反射（使用符号距离场 GI 时）。基"
+"于体素的反射在透明表面上可见，而基于粗糙 SDF 的反射在透明表面上可见。"
+
+msgid ""
+"Fast baked reflections or slow real-time reflections using ReflectionProbe. "
+"Parallax box correction can optionally be enabled."
+msgstr ""
+"使用 ReflectionProbe 实现较快的烘焙反射或较慢的实时反射。可以选择启用视差盒校"
+"正。"
+
+msgid "Screen-space reflections with support for material roughness."
+msgstr "支持材料粗糙度的屏幕空间反射。"
+
+msgid ""
+"Reflection techniques can be mixed together for greater accuracy or "
+"scalability."
+msgstr "可以混用反射技术，以获得更高的准确性或可扩展性。"
+
+msgid ""
+"When using the Forward+ renderer (default on desktop), reflection probes are "
+"rendered with clustered forward optimizations to decrease their individual "
+"cost. Clustered rendering also lifts any limits on the number of reflection "
+"probes that can be used on a mesh."
+msgstr ""
+"使用 Forward+ 渲染器（桌面平台默认）时，反射探针通过集群前向优化渲染，以减少"
+"其单独的成本。集群渲染还消除了对网格上可使用的反射探针数量的任何限制。"
+
+msgid ""
+"When using the Mobile renderer, up to 8 reflection probes can be displayed "
+"per mesh resource. When using the Compatibility renderer, up to 2 reflection "
+"probes can be displayed per mesh resource."
+msgstr ""
+"使用移动渲染器时，每个网格资源最多可以显示 8 个反射探针。使用兼容渲染器时，每"
+"个网格资源最多可以显示 2 个反射探针。"
+
+msgid "**Decals:**"
+msgstr "**贴花：**"
+
+msgid ""
+":ref:`Supports albedo <doc_using_decals>`, emissive, :abbr:`ORM (Occlusion "
+"Roughness Metallic)`, and normal mapping."
+msgstr ""
+":ref:`支持反照率 <doc_using_decals>`、自发光、\\ :abbr:`ORM (遮挡度粗糙度金属"
+"度)` 和法线贴图。"
+
+msgid ""
+"Texture channels are smoothly overlaid on top of the underlying material, "
+"with support for normal/ORM-only decals."
+msgstr "纹理通道平滑地叠加在底层材质之上，并支持普通/仅 ORM 贴花。"
+
+msgid ""
+"Support for normal fade to fade the decal depending on its incidence angle."
+msgstr "支持法线淡化，以根据入射角度来淡化贴花。"
+
+msgid ""
+"Does not rely on runtime mesh generation. This means decals can be used on "
+"complex skinned meshes with no performance penalty, even if the decal moves "
+"every frame."
+msgstr ""
+"不依赖于实时网格生成。这意味着即使贴花每帧都在移动，也可以在复杂的蒙皮网格上"
+"使用贴花，而不会影响性能。"
+
+msgid ""
+"Support for nearest, bilinear, trilinear or anisotropic texture filtering "
+"(configured globally)."
+msgstr "支持最近邻、双线性、三线性、各向异性纹理过滤（全局设置）。"
+
+msgid ""
+"Optional distance fade system to fade distant decals, improving performance."
+msgstr "可选的距离淡化系统（distance fade system）以淡化远处的贴花，提高性能。"
+
+msgid ""
+"When using the Forward+ renderer (default on desktop), decals are rendered "
+"with clustered forward optimizations to decrease their individual cost. "
+"Clustered rendering also lifts any limits on the number of decals that can "
+"be used on a mesh."
+msgstr ""
+"使用 Forward+ 渲染器（桌面平台默认）时，贴花通过集群前向优化渲染，以减少其单"
+"独的成本。集群渲染还消除了对网格上可使用的贴花数量的任何限制。"
+
+msgid ""
+"When using the Mobile renderer, up to 8 decals can be displayed per mesh "
+"resource."
+msgstr "使用移动渲染器时，每个网格资源最多可以显示 8 个贴花。"
+
+msgid "**Sky:**"
+msgstr "**天空:**"
+
+msgid "Panorama sky (using an HDRI)."
+msgstr "全景天空（使用 HDRI）。"
+
+msgid ""
+"Procedural sky and Physically-based sky that respond to the "
+"DirectionalLights in the scene."
+msgstr "程序天空和基于物理的天空，用于响应场景中的定向光。"
+
+msgid ""
+"Support for :ref:`custom sky shaders <doc_sky_shader>`, which can be "
+"animated."
+msgstr "支持可以动画化的\\ :ref:`自定义天空着色器 <doc_sky_shader>`\\ 。"
+
+msgid ""
+"The radiance map used for ambient and specular light can be updated in real-"
+"time depending on the quality settings chosen."
+msgstr "取决于所选的质量设置，用于环境光和镜面反射光的辐射图可以实时更新。"
+
+msgid "**Fog:**"
+msgstr "**雾：**"
+
+msgid "Exponential depth fog."
+msgstr "指数深度雾。"
+
+msgid "Exponential height fog."
+msgstr "指数高度雾。"
+
+msgid ""
+"Support for automatic fog color depending on the sky color (aerial "
+"perspective)."
+msgstr "支持根据天空颜色自动调整雾的颜色（使用大气透视）。"
+
+msgid "Support for sun scattering in the fog."
+msgstr "支持雾中的太阳散射。"
+
+msgid ""
+"Support for controlling how much fog rendering should affect the sky, with "
+"separate controls for traditional and volumetric fog."
+msgstr "支持控制雾的渲染对天空的影响程度，对传统的雾和体积雾进行单独控制。"
+
+msgid "Support for making specific materials ignore fog."
+msgstr "支持使特定材质忽略雾。"
+
+msgid "**Volumetric fog:**"
+msgstr "**体积雾：**"
+
+msgid ""
+"Global :ref:`volumetric fog <doc_volumetric_fog>` that reacts to lights and "
+"shadows."
+msgstr "对光影做出反应的全局\\ :ref:`体积雾<doc_volumetric_fog>`\\ 。"
+
+msgid ""
+"Volumetric fog can take indirect light into account when using VoxelGI or "
+"SDFGI."
+msgstr "在使用 VoxelGI 或 SDFGI 时体积雾可以受间接光影响。"
+
+msgid ""
+"Fog volume nodes that can be placed to add fog to specific areas (or remove "
+"fog from specific areas). Supported shapes include box, ellipse, cone, "
+"cylinder, and 3D texture-based density maps."
+msgstr ""
+"可以放置雾体积节点以向特定区域添加雾（或从特定区域去除雾）。支持的形状包括盒"
+"状、椭圆形、圆锥体、圆柱体和基于 3D 纹理的密度图。"
+
+msgid "Each fog volume can have its own custom shader."
+msgstr "每个雾体积都可以有自己的自定义着色器。"
+
+msgid "Can be used together with traditional fog."
+msgstr "可与传统雾一起使用。"
+
+msgid "**Particles:**"
+msgstr "**粒子：**"
+
+msgid ""
+"GPU-based particles with support for subemitters (2D + 3D), trails (2D + "
+"3D), attractors (3D only) and collision (2D + 3D)."
+msgstr ""
+"基于 GPU 的粒子，支持子发射器（2D + 3D）、尾迹（2D + 3D）、吸引器（仅 3D）和"
+"碰撞（2D + 3D）。"
+
+msgid ""
+"3D particle attractor shapes supported: box, sphere and 3D vector fields."
+msgstr "支持 3D 粒子吸引器形状：盒状、球体和 3D 向量场。"
+
+msgid ""
+"3D particle collision shapes supported: box, sphere, baked signed distance "
+"field and real-time heightmap (suited for open world weather effects)."
+msgstr ""
+"支持 3D 粒子碰撞形状：盒状、球体、烘焙带符号距离场和实时高度图（适用于开放世"
+"界天气效果）。"
+
+msgid ""
+"2D particle collision is handled using a signed distance field generated in "
+"real-time based on :ref:`class_LightOccluder2D` nodes in the scene."
+msgstr ""
+"2D 粒子碰撞是使用基于场景中的 :ref:`class_LightOccluder2D` 节点实时生成的带符"
+"号距离场来处理的。"
+
+msgid ""
+"Trails can use the built-in ribbon trail and tube trail meshes, or custom "
+"meshes with skeletons."
+msgstr ""
+"尾迹可以使用内置的带状尾迹和管状尾迹网格，也可以使用带有骨架的自定义网格。"
+
+msgid "Support for custom particle shaders with manual emission."
+msgstr "支持手动发射的自定义粒子着色器。"
+
+msgid "**Post-processing:**"
+msgstr "**后期处理：**"
+
+msgid "Tonemapping (Linear, Reinhard, Filmic, ACES, AgX)."
+msgstr "色调映射（线性、Reinhard、Filmic、ACES、AgX）。"
+
+msgid ""
+"Automatic exposure adjustments based on viewport brightness (and manual "
+"exposure override)."
+msgstr "根据视口亮度自动调整曝光（或使用手动曝光覆盖）。"
+
+msgid ""
+"Near and far depth of field with adjustable bokeh simulation (box, hexagon, "
+"circle)."
+msgstr "可以通过景深的远近调节对焦外散斑的模拟（方框、六边形、圆形）。"
+
+msgid "Screen-space ambient occlusion (SSAO) at half or full resolution."
+msgstr "半分辨率或全分辨率的屏幕空间环境光遮蔽（SSAO）。"
+
+msgid ""
+"Glow/bloom with optional bicubic upscaling and several blend modes "
+"available: Screen, Soft Light, Add, Replace, Mix."
+msgstr ""
+"辉光/泛光，可以使用可选的双三次放大和多种混合模式：滤色（Screen）、柔光"
+"（Soft Light）、添加（Add）、替换（Replace）、融合（Mix）。"
+
+msgid "Glow can have a colored dirt map texture, acting as a lens dirt effect."
+msgstr "辉光可以使用彩色污渍贴图纹理，实现镜头脏污效果。"
+
+msgid ""
+"Glow can be :ref:`used as a screen-space blur effect "
+"<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`."
+msgstr ""
+"辉光可\\ :ref:`用作屏幕空间模糊效果 "
+"<doc_environment_and_post_processing_using_glow_to_blur_the_screen>`\\ 。"
+
+msgid "Color correction using a one-dimensional ramp or a 3D LUT texture."
+msgstr "使用一维渐变或 3D LUT 纹理进行颜色校正。"
+
+msgid "Roughness limiter to reduce the impact of specular aliasing."
+msgstr "可减少镜面反射锯齿的影响的粗糙度限幅器。"
+
+msgid "Brightness, contrast and saturation adjustments."
+msgstr "亮度，对比度和饱和度调整。"
+
+msgid "**Texture filtering:**"
+msgstr "**纹理过滤：**"
+
+msgid "Nearest, bilinear, trilinear or anisotropic filtering."
+msgstr "最近邻、双线性、三线性、各向异性过滤。"
+
+msgid ""
+"Filtering options are defined on a per-use basis, not a per-texture basis."
+msgstr "过滤选项是根据每个用途定义的，而不是根据每个纹理定义的。"
+
+msgid "**Texture compression:**"
+msgstr "**纹理压缩：**"
+
+msgid "Basis Universal (slow, but results in smaller files)."
+msgstr "Basis Universal（速度较慢，但文件较小）。"
+
+msgid "BPTC for high-quality compression (not supported on macOS)."
+msgstr "用于高质量压缩的 BPTC（macOS 不支持）。"
+
+msgid "ETC2 (not supported on macOS)."
+msgstr "ETC2（macOS 不支持）。"
+
+msgid "S3TC (not supported on mobile/Web platforms)."
+msgstr "S3TC（不支持网页和移动平台）。"
+
+msgid "**Antialiasing:**"
+msgstr "**抗锯齿：**"
+
+msgid "Temporal :ref:`antialiasing <doc_3d_antialiasing>` (TAA)."
+msgstr "时间\\ :ref:`抗锯齿 <doc_3d_antialiasing>`\\ （TAA）。"
+
+msgid ""
+"AMD FidelityFX Super Resolution 2.2 :ref:`antialiasing "
+"<doc_3d_antialiasing>` (FSR2), which can be used at native resolution as a "
+"form of high-quality temporal antialiasing."
+msgstr ""
+"AMD FidelityFX Super Resolution 2.2 :ref:`抗锯齿 <doc_3d_antialiasing>`\\ "
+"（FSR2）可在原始分辨率下用作高质量的时间抗锯齿。"
+
+msgid ""
+"Multi-sample antialiasing (MSAA), for both :ref:`doc_2d_antialiasing` "
+"and :ref:`doc_3d_antialiasing`."
+msgstr ""
+"多重采样抗锯齿（ MSAA ），同时适用于 :ref:`doc_2d_antialiasing` "
+"和 :ref:`doc_3d_antialiasing` 。"
+
+msgid "Fast approximate antialiasing (FXAA)."
+msgstr "快速近似抗锯齿（FXAA）。"
+
+msgid ""
+"Super-sample antialiasing (SSAA) using bilinear 3D scaling and a 3D "
+"resolution scale above 1.0."
+msgstr "使用双线性三维缩放和高于 1.0 的三维分辨率比例进行超采样抗锯齿 (SSAA)。"
+
+msgid ""
+"Alpha antialiasing, MSAA alpha to coverage and alpha hashing on a per-"
+"material basis."
+msgstr ""
+"在每种材质基础上的 Alpha 抗锯齿、基于多重采样（MSAA）的 Alpha 覆盖（Alpha-To-"
+"Coverage）和 Alpha 哈希。"
+
+msgid "**Resolution scaling:**"
+msgstr "**分辨率缩放：**"
+
+msgid ""
+"Support for :ref:`rendering 3D at a lower resolution "
+"<doc_resolution_scaling>` while keeping 2D rendering at the original scale. "
+"This can be used to improve performance on low-end systems or improve "
+"visuals on high-end systems."
+msgstr ""
+"支持\\ :ref:`以较低分辨率渲染 3D <doc_resolution_scaling>`\\ ，同时保持原始比"
+"例的 2D 渲染。 这可用于提高低端系统的性能或改善高端系统的视觉效果。"
+
+msgid ""
+"Resolution scaling uses bilinear filtering, AMD FidelityFX Super Resolution "
+"1.0 (FSR1) or AMD FidelityFX Super Resolution 2.2 (FSR2)."
+msgstr ""
+"分辨率缩放使用了双线性过滤、 AMD FidelityFX Super Resolution 1.0 （FSR1）和 "
+"AMD FidelityFX Super Resolution 2.2 （FSR2）。"
+
+msgid ""
+"Texture mipmap LOD bias is adjusted automatically to improve quality at "
+"lower resolution scales. It can also be modified with a manual offset."
+msgstr ""
+"多级渐远纹理 LOD 偏置会自动调整，以提高较低分辨率比例下的质量。也可以通过手动"
+"偏移进行修改。"
+
+msgid ""
+"Most effects listed above can be adjusted for better performance or to "
+"further improve quality. This can be helpful when :ref:`using Godot for "
+"offline rendering <doc_creating_movies>`."
+msgstr ""
+"上述效果中的大多数都可以进行调整，从而提升性能、提高质量。这在\\ :ref:`使用 "
+"Godot 进行脱机渲染 <doc_creating_movies>`\\ 时非常有用。"
+
+msgid "3D tools"
+msgstr "3D 工具"
+
+msgid ""
+"Built-in meshes: cube, cylinder/cone, (hemi)sphere, prism, plane, quad, "
+"torus, ribbon, tube."
+msgstr ""
+"内置网格：立方体、圆柱体/圆锥体、（半）球体、棱柱体、平面、四边形、圆环面、条"
+"带、管状。"
+
+msgid ":ref:`GridMaps <doc_using_gridmaps>` for 3D tile-based level design."
+msgstr ":ref:`GridMaps <doc_using_gridmaps>` 用于由 3D 图块构建的关卡设计。"
+
+msgid ""
+":ref:`Constructive solid geometry <doc_csg_tools>` (intended for "
+"prototyping)."
+msgstr ":ref:`构造实体几何 <doc_csg_tools>`\\ （用于原型制作）。"
+
+msgid ""
+"Tools for :ref:`procedural geometry generation <doc_procedural_geometry>`."
+msgstr ":ref:`程序式几何体生成 <doc_procedural_geometry>`\\ 工具。"
+
+msgid "Path3D node to represent a path in 3D space."
+msgstr "Path3D 节点表示 3D 空间中的路径。"
+
+msgid "PathFollow3D node to make nodes follow a Path3D."
+msgstr "PathFollow3D 节点使节点沿 Path3D 运动。"
+
+msgid ":ref:`3D geometry helper class <class_Geometry3D>`."
+msgstr ":ref:`3D 几何体辅助类 <class_Geometry3D>`\\ 。"
+
+msgid ""
+"Support for exporting the current scene as a glTF 2.0 file, both from the "
+"editor and at runtime from an exported project."
+msgstr ""
+"支持在编辑器中、或在导出项目的运行时中，将当前场景导出为 glTF 2.0 文件。"
+
+msgid "3D physics"
+msgstr "3D 物理学"
+
+msgid "Vehicle bodies (intended for arcade physics, not simulation)."
+msgstr "车身（用于街机物理，而非模拟）。"
+
+msgid "Soft bodies."
+msgstr "柔体。"
+
+msgid "Ragdolls."
+msgstr "布娃娃。"
+
+msgid ""
+"Built-in shapes: cuboid, sphere, capsule, cylinder, world boundary (infinite "
+"plane)."
+msgstr "内置形状：立方体、球体、胶囊体、圆柱体、世界边界（无限平面）。"
+
+msgid "Generate triangle collision shapes for any mesh from the editor."
+msgstr "从编辑器中为任意网格生成三角形碰撞形状。"
+
+msgid ""
+"Generate one or several convex collision shapes for any mesh from the editor."
+msgstr "从编辑器中为任意网格生成一个或多个凸碰撞形状。"
+
+msgid "Shaders"
+msgstr "着色器"
+
+msgid "*2D:* Custom vertex, fragment, and light shaders."
+msgstr "*2D：*\\ 自定义顶点、片段和灯光着色器。"
+
+msgid "*3D:* Custom vertex, fragment, light, and sky shaders."
+msgstr "*3D：*\\ 自定义顶点、片段、灯光和天空着色器。"
+
+msgid ""
+"Text-based shaders using a :ref:`shader language inspired by GLSL "
+"<doc_shading_language>`."
+msgstr ""
+"基于文本的着色器，使用\\ :ref:`由 GLSL 启发的着色器语言 "
+"<doc_shading_language>`\\ 。"
+
+msgid "Visual shader editor."
+msgstr "可视化着色器编辑器。"
+
+msgid "Support for visual shader plugins."
+msgstr "支持可视化着色器插件。"
+
+msgid "Scripting"
+msgstr "脚本"
+
+msgid "**General:**"
+msgstr "**常规：**"
+
+msgid "Object-oriented design pattern with scripts extending nodes."
+msgstr "具有脚本扩展节点的面向对象设计模式。"
+
+msgid "Signals and groups for communicating between scripts."
+msgstr "用于脚本之间通信的信号和组。"
+
+msgid ""
+"Support for :ref:`cross-language scripting <doc_cross_language_scripting>`."
+msgstr "支持\\ :ref:`跨语言脚本编程 <doc_cross_language_scripting>`\\ 。"
+
+msgid ""
+"Many 2D, 3D and 4D linear algebra data types such as vectors and transforms."
+msgstr "多种 2D、3D 以及 4D 线性代数数据类型，比如向量和变换。"
+
+msgid ":ref:`GDScript: <doc_gdscript>`"
+msgstr ":ref:`GDScript: <doc_gdscript>`"
+
+msgid ""
+":ref:`High-level interpreted language <doc_gdscript_reference>` "
+"with :ref:`optional static typing <doc_gdscript_static_typing>`."
+msgstr ""
+":ref:`高级解释语言 <doc_gdscript_reference>`\\ ，支持\\ :ref:`可选的静态类型 "
+"<doc_gdscript_static_typing>`\\ 。"
+
+msgid ""
+"Syntax inspired by Python. However, GDScript is **not** based on Python."
+msgstr "语法受 Python 启发。但是，GDScript **并不**\\ 基于 Python。"
+
+msgid "Syntax highlighting is provided on GitHub."
+msgstr "GitHub 上提供了语法高亮显示。"
+
+msgid ""
+":ref:`Use threads <doc_using_multiple_threads>` to perform asynchronous "
+"actions or make use of multiple processor cores."
+msgstr ""
+":ref:`使用线程 <doc_using_multiple_threads>`\\ 执行异步操作或使用多个处理器内"
+"核。"
+
+msgid ":ref:`C#: <doc_c_sharp>`"
+msgstr ":ref:`C#: <doc_c_sharp>`"
+
+msgid "Packaged in a separate binary to keep file sizes and dependencies down."
+msgstr "打包成单个单独的二进制文件，以降低文件大小和依赖关系。"
+
+msgid "Supports .NET 8 and higher."
+msgstr "支持 .NET 8 及更高版本。"
+
+msgid "Full support for the C# 12.0 syntax and features."
+msgstr "完全支持 C# 12.0 语法和特性。"
+
+msgid ""
+"Supports Windows, Linux, and macOS. Since Godot 4.2, experimental support "
+"for Android and iOS is also available."
+msgstr ""
+"支持 Windows、Linux 和 macOS。从 Godot 4.2 开始，也提供对 Android 和 iOS 的实"
+"验性支持。"
+
+msgid "On the iOS platform only some architectures are supported: ``arm64``."
+msgstr "在 iOS 平台上仅支持部分架构：\\ ``arm64``\\ 。"
+
+msgid ""
+"The web platform is currently unsupported. To use C# on that platform, "
+"consider Godot 3 instead."
+msgstr "目前不支持 Web 平台。要在该平台上使用 C# ，请考虑改用 Godot 3。"
+
+msgid ""
+"Using an external editor is recommended to benefit from IDE functionality."
+msgstr "建议使用外部编辑器以从 IDE 功能中获益。"
+
+msgid "**GDExtension (C, C++, Rust, D, ...):**"
+msgstr "**GDExtension（C、C++、Rust、D……）：**"
+
+msgid ""
+"When you need it, link to native libraries for higher performance and third-"
+"party integrations."
+msgstr "按需链接到本机库以获得更高的性能和第三方集成。"
+
+msgid ""
+"For scripting game logic, GDScript or C# are recommended if their "
+"performance is suitable."
+msgstr "对于编写游戏逻辑脚本，如果性能合适，建议使用 GDScript 或 C#。"
+
+msgid ""
+"Official GDExtension bindings for `C <https://github.com/godotengine/godot-"
+"headers>`__ and `C++ <https://github.com/godotengine/godot-cpp>`__."
+msgstr ""
+"用于 `C <https://github.com/godotengine/godot-headers>`__ 和 `C++ <https://"
+"github.com/godotengine/godot-cpp>`__ 的官方 GDExtension 绑定。"
+
+msgid "Use any build system and language features you wish."
+msgstr "使用你希望的任意构建系统和语言特性。"
+
+msgid ""
+"Actively developed GDExtension bindings for `D <https://github.com/godot-"
+"dlang/godot-dlang>`__, `Swift <https://github.com/migueldeicaza/"
+"SwiftGodot>`__, and `Rust <https://github.com/godot-rust/gdextension>`__ "
+"bindings provided by the community. (Some of these bindings may be "
+"experimental and not production-ready)."
+msgstr ""
+"社区提供的积极开发中的 GDExtension 绑定包括 `D <https://github.com/godot-"
+"dlang/godot-dlang>`__、`Swift <https://github.com/migueldeicaza/"
+"SwiftGodot>`__ 和 `Rust <https://github.com/godot-rust/gdextension>`__。 （这"
+"些绑定中的一些可能是实验性的，尚不适用于生产环境）。"
+
+msgid "Audio"
+msgstr "音频"
+
+msgid "Mono, stereo, 5.1 and 7.1 output."
+msgstr "单声道、立体声、5.1 和 7.1 输出。"
+
+msgid "Non-positional and positional playback in 2D and 3D."
+msgstr "2D 和 3D 的非定位和定位播放。"
+
+msgid "Optional Doppler effect in 2D and 3D."
+msgstr "2D 或 3D 中可选的多普勒效应。"
+
+msgid ""
+"Support for re-routable :ref:`audio buses <doc_audio_buses>` and effects "
+"with dozens of effects included."
+msgstr ""
+"支持可重路由的\\ :ref:`音频总线 <doc_audio_buses>`\\ 和包含数十种效果的效果。"
+
+msgid ""
+"Support for polyphony (playing several sounds from a single "
+"AudioStreamPlayer node)."
+msgstr "支持复调（使用单个 AudioStreamPlayer 节点播放多个声音）。"
+
+msgid "Support for random volume and pitch."
+msgstr "支持随机音量和音高。"
+
+msgid "Support for real-time pitch scaling."
+msgstr "支持实时音高缩放。"
+
+msgid ""
+"Support for sequential/random sample selection, including repetition "
+"prevention when using random sample selection."
+msgstr "支持顺序 / 随机采样，包括在随机采样时的重复预防。"
+
+msgid ""
+"Listener2D and Listener3D nodes to listen from a position different than the "
+"camera."
+msgstr "Listener2D 和 Listener3D 节点从不同于摄像机的位置进行侦听。"
+
+msgid ""
+"Support for :ref:`procedural audio generation <class_AudioStreamGenerator>`."
+msgstr "支持\\ :ref:`程序式音频生成 <class_AudioStreamGenerator>`\\ 。"
+
+msgid "Audio input to record microphones."
+msgstr "录制麦克风的音频输入。"
+
+msgid "MIDI input."
+msgstr "MIDI 输入。"
+
+msgid "No support for MIDI output yet."
+msgstr "尚不支持 MIDI 输出。"
+
+msgid "**APIs used:**"
+msgstr "**使用的 API：**"
+
+msgid "*Windows:* WASAPI."
+msgstr "*Windows：* WASAPI。"
+
+msgid "*macOS:* CoreAudio."
+msgstr "*macOS：* CoreAudio。"
+
+msgid "*Linux:* PulseAudio or ALSA."
+msgstr "*Linux：* PulseAudio 或 ALSA。"
+
+msgid "Import"
+msgstr "导入"
+
+msgid "Support for :ref:`custom import plugins <doc_import_plugins>`."
+msgstr "支持\\ :ref:`自定义导入插件 <doc_import_plugins>`\\ 。"
+
+msgid "**Formats:**"
+msgstr "**格式：**"
+
+msgid "*Images:* See :ref:`doc_importing_images`."
+msgstr "*图片：*\\ 见\\ :ref:`doc_importing_images`\\ 。"
+
+msgid "*Audio:*"
+msgstr "*音频：*"
+
+msgid "WAV with optional IMA-ADPCM compression."
+msgstr "WAV，可选 IMA-ADPCM 压缩。"
+
+msgid "Ogg Vorbis."
+msgstr "Ogg Vorbis。"
+
+msgid "MP3."
+msgstr "MP3。"
+
+msgid "*3D scenes:* See :ref:`doc_importing_3d_scenes`."
+msgstr "*3D 场景：*\\ 见\\ :ref:`doc_importing_3d_scenes`\\ 。"
+
+msgid "glTF 2.0 *(recommended)*."
+msgstr "glTF 2.0 *（推荐）*\\ 。"
+
+msgid ""
+"``.blend`` (by calling Blender's glTF export functionality transparently)."
+msgstr "``.blend``\\ （通过透明调用 Blender 的 glTF 导出功能）。"
+
+msgid ""
+"FBX (by calling `FBX2glTF <https://github.com/godotengine/FBX2glTF>`__ "
+"transparently)."
+msgstr ""
+"FBX （通过透明调用 `FBX2glTF <https://github.com/godotengine/"
+"FBX2glTF>`__\\ ）。"
+
+msgid "Collada (.dae)."
+msgstr "Collada（.dae）。"
+
+msgid ""
+"Wavefront OBJ (static scenes only, can be loaded directly as a mesh or "
+"imported as a 3D scene)."
+msgstr "Wavefront OBJ（仅静态场景，可直接被加载为网格或导入为 3D 场景）。"
+
+msgid ""
+"Support for loading glTF 2.0 scenes at runtime, including from an exported "
+"project."
+msgstr "支持在运行时以及导出项目中加载 glTF 2.0 场景。"
+
+msgid ""
+"3D meshes use `Mikktspace <http://www.mikktspace.com/>`__ to generate "
+"tangents on import, which ensures consistency with other 3D applications "
+"such as Blender."
+msgstr ""
+"在导入时使用 `Mikktspace <http://www.mikktspace.com/>`__ 为 3D 网格生成切线，"
+"保证与 Blender 等其他 3D 应用的一致性。"
+
+msgid "Input"
+msgstr "输入"
+
+msgid ""
+":ref:`Input mapping system <doc_input_examples>` using hardcoded input "
+"events or remappable input actions."
+msgstr ""
+":ref:`输入映射系统 <doc_input_examples>`\\ 使用硬编码的输入事件或可重映射的输"
+"入动作。"
+
+msgid ""
+"Axis values can be mapped to two different actions with a configurable "
+"deadzone."
+msgstr "轴值可以映射到具有可配置死区的两个不同的动作。"
+
+msgid "Use the same code to support both keyboards and gamepads."
+msgstr "使用相同的代码来支持键盘和游戏手柄。"
+
+msgid "Keyboard input."
+msgstr "键盘输入。"
+
+msgid ""
+"Keys can be mapped in \"physical\" mode to be independent of the keyboard "
+"layout."
+msgstr "按键可以以“物理”模式映射，以独立于键盘布局。"
+
+msgid "Mouse input."
+msgstr "鼠标输入。"
+
+msgid ""
+"The mouse cursor can be visible, hidden, captured or confined within the "
+"window."
+msgstr "鼠标光标可以是可见的、隐藏的、被捕获的或被限制在窗口内的。"
+
+msgid ""
+"When captured, raw input will be used on Windows and Linux to sidestep the "
+"OS' mouse acceleration settings."
+msgstr ""
+"捕获输入时，在 Windows 和 Linux 平台会使用原始输入，回避操作系统的鼠标加速度"
+"设置。"
+
+msgid "Gamepad input (up to 8 simultaneous controllers)."
+msgstr "手柄输入（最多同时支持 8 个控制器）。"
+
+msgid "Pen/tablet input with pressure support."
+msgstr "支持带压感的绘图笔和平板输入。"
+
+msgid "Navigation"
+msgstr "导航"
+
+msgid ""
+"A* algorithm in :ref:`2D <class_AStar2D>` and :ref:`3D <class_AStar3D>`."
+msgstr "A* 算法在 :ref:`2D <class_AStar2D>` 和 :ref:`3D <class_AStar3D>` 里。"
+
+msgid ""
+"Navigation meshes with dynamic obstacle avoidance in :ref:`2D "
+"<doc_navigation_overview_2d>` and :ref:`3D <doc_navigation_overview_3d>`."
+msgstr ""
+"具有动态避障功能的导航网格在 :ref:`2D <doc_navigation_overview_2d>` "
+"和 :ref:`3D <doc_navigation_overview_3d>` 里。"
+
+msgid ""
+"Generate navigation meshes from the editor or at runtime (including from an "
+"exported project)."
+msgstr "在编辑器内或运行时（包括导出项目）生成导航网格。"
+
+msgid "Networking"
+msgstr "网络"
+
+msgid ""
+"Low-level TCP networking using :ref:`class_StreamPeer` "
+"and :ref:`class_TCPServer`."
+msgstr ""
+"使用 :ref:`class_StreamPeer` 和 :ref:`class_TCPServer` 进行低阶 TCP 网络通"
+"信。"
+
+msgid ""
+"Low-level UDP networking using :ref:`class_PacketPeer` "
+"and :ref:`class_UDPServer`."
+msgstr ""
+"使用 :ref:`class_PacketPeer` 和 :ref:`class_UDPServer` 进行低阶 UDP 网络通"
+"信。"
+
+msgid "Low-level HTTP requests using :ref:`class_HTTPClient`."
+msgstr "使用 :ref:`class_HTTPClient` 进行低阶 HTTP 请求。"
+
+msgid "High-level HTTP requests using :ref:`class_HTTPRequest`."
+msgstr "使用 :ref:`class_HTTPRequest` 进行高阶 HTTP 请求。"
+
+msgid "Supports HTTPS out of the box using bundled certificates."
+msgstr "使用捆绑证书支持开箱即用的 HTTPS。"
+
+msgid ""
+":ref:`High-level multiplayer <doc_high_level_multiplayer>` API using UDP and "
+"ENet."
+msgstr ""
+"使用 UDP 和 ENet 的\\ :ref:`高级联机 <doc_high_level_multiplayer>`\\ API。"
+
+msgid "Automatic replication using remote procedure calls (RPCs)."
+msgstr "使用远程过程调用（RPC）进行自动复制。"
+
+msgid "Supports unreliable, reliable and ordered transfers."
+msgstr "支持不可靠、可靠和有序传输。"
+
+msgid ""
+":ref:`WebSocket <doc_websocket>` client and server, available on all "
+"platforms."
+msgstr ":ref:`WebSocket <doc_websocket>` 客户端和服务器，全平台可用。"
+
+msgid ""
+":ref:`WebRTC <doc_webrtc>` client and server, available on all platforms."
+msgstr ":ref:`WebRTC <doc_webrtc>` 客户端和服务器，全平台可用。"
+
+msgid ""
+"Support for :ref:`UPnP <class_UPNP>` to sidestep the requirement to forward "
+"ports when hosting a server behind a NAT."
+msgstr ""
+"当在 NAT 后托管服务器时，支持使用 :ref:`UPnP <class_UPNP>` 来避免转发端口的需"
+"求。"
+
+msgid "Internationalization"
+msgstr "国际化"
+
+msgid "Full support for Unicode including emoji."
+msgstr "完全支持 Unicode，包括表情符号。"
+
+msgid ""
+"Store localization strings using :ref:`CSV <doc_internationalizing_games>` "
+"or :ref:`gettext <doc_localization_using_gettext>`."
+msgstr ""
+"使用 :ref:`CSV <doc_internationalizing_games>` 或 :ref:`gettext "
+"<doc_localization_using_gettext>` 存储本地化字符串。"
+
+msgid "Support for generating gettext POT and PO files from the editor."
+msgstr "支持从编辑器中生成 gettext POT 和 PO 文件。"
+
+msgid ""
+"Use localized strings in your project automatically in GUI elements or by "
+"using the ``tr()`` function."
+msgstr ""
+"在你的项目中自动在 GUI 元素中或通过使用 ``tr()`` 函数使用本地化的字符串。"
+
+msgid ""
+"Support for pluralization and translation contexts when using gettext "
+"translations."
+msgstr "使用 gettext 翻译时支持复数形式和翻译上下文。"
+
+msgid ""
+"Support for :ref:`bidirectional typesetting "
+"<doc_internationalizing_games_bidi>`, text shaping and OpenType localized "
+"forms."
+msgstr ""
+"支持\\ :ref:`双向排版 <doc_internationalizing_games_bidi>`\\ 、文本整形和 "
+"OpenType 本地化表单。"
+
+msgid "Automatic UI mirroring for right-to-left locales."
+msgstr "用于从右到左区域设置的自动 UI 镜像。"
+
+msgid ""
+"Support for pseudolocalization to test your project for i18n-friendliness."
+msgstr "支持伪本地化，以测试你的项目对 i18n 的友好性。"
+
+msgid "Windowing and OS integration"
+msgstr "窗口功能与操作系统整合"
+
+msgid "Spawn multiple independent windows within a single process."
+msgstr "在单个进程中生成多个独立窗口。"
+
+msgid "Move, resize, minimize, and maximize windows spawned by the project."
+msgstr "移动、调整大小、最小化和最大化由项目产生的窗口。"
+
+msgid "Change the window title and icon."
+msgstr "更改窗口标题和图标。"
+
+msgid ""
+"Request attention (will cause the title bar to blink on most platforms)."
+msgstr "吸引注意（在大多数平台上表现为标题栏闪烁）。"
+
+msgid "Fullscreen mode."
+msgstr "全屏模式。"
+
+msgid ""
+"Uses borderless fullscreen by default on Windows for fast alt-tabbing, but "
+"can optionally use exclusive fullscreen to reduce input lag."
+msgstr ""
+"在 Windows 上，默认情况下使用无边框全屏进行快速切换，但也可以选择使用独占全屏"
+"来减少输入滞后。"
+
+msgid "Borderless windows (fullscreen or non-fullscreen)."
+msgstr "无边框窗口（全屏或非全屏）。"
+
+msgid "Ability to keep a window always on top."
+msgstr "窗口置顶功能。"
+
+msgid "Global menu integration on macOS."
+msgstr "macOS 上的全局菜单整合。"
+
+msgid ""
+"Execute commands in a blocking or non-blocking manner (including running "
+"multiple instances of the same project)."
+msgstr "以阻塞或非阻塞方式执行命令（包括运行同一项目的多个实例）。"
+
+msgid ""
+"Open file paths and URLs using default or custom protocol handlers (if "
+"registered on the system)."
+msgstr "使用默认或自定义（已在系统上注册）协议处理程序打开文件路径和 URL。"
+
+msgid "Parse custom command line arguments."
+msgstr "解析自定义命令行参数。"
+
+msgid ""
+"Any Godot binary (editor or exported project) can be :ref:`used as a "
+"headless server <doc_exporting_for_dedicated_servers>` by starting it with "
+"the ``--headless`` command line argument. This allows running the engine "
+"without a GPU or display server."
+msgstr ""
+"通过用 ``--headless`` 命令行参数启动它，任何 Godot 二进制文件（编辑器或导出的"
+"项目）都可以\\ :ref:`用作无头服务器 "
+"<doc_exporting_for_dedicated_servers>`\\ 。这允许在没有 GPU 或显示服务器的情"
+"况下运行引擎。"
+
+msgid "Mobile"
+msgstr "移动端"
+
+msgid ""
+"In-app purchases on :ref:`Android <doc_android_in_app_purchases>` "
+"and :ref:`iOS <doc_plugins_for_ios>`."
+msgstr ""
+"在 :ref:`Android <doc_android_in_app_purchases>` 或 :ref:`iOS "
+"<doc_plugins_for_ios>` 上的应用内购。"
+
+msgid "Support for advertisements using third-party modules."
+msgstr "支持使用第三方模块的广告。"
+
+msgid "XR support (AR and VR)"
+msgstr "XR 支持（AR 和 VR）"
+
+msgid "Out of the box :ref:`support for OpenXR <doc_setting_up_xr>`."
+msgstr "开箱即用的 :ref:`OpenXR 支持 <doc_setting_up_xr>`\\ 。"
+
+msgid ""
+"Including support for popular desktop headsets like the Valve Index, WMR "
+"headsets, and Quest over Link."
+msgstr ""
+"包括对流行的桌面 VR 头显的支持，例如 Valve Index、WMR 头显和 Quest over "
+"Link。"
+
+msgid ""
+"Support for :ref:`Android-based headsets <doc_deploying_to_android>` using "
+"OpenXR through a plugin."
+msgstr ""
+"通过插件，使用 OpenXR 支持\\ :ref:`基于 Android 的头显 "
+"<doc_deploying_to_android>`\\ 。"
+
+msgid ""
+"Including support for popular stand alone headsets like the Meta Quest 1/2/3 "
+"and Pro, Pico 4, Magic Leap 2, and Lynx R1."
+msgstr ""
+"包括对流行的独立头显的支持，例如 Meta Quest 1/2/3 和 Pro、Pico 4、Magic Leap "
+"2 和 Lynx R1。"
+
+msgid "Out of the box limited support for visionOS Apple headsets."
+msgstr "对 Apple visionOS 头戴式设备的开箱即用支持有限。"
+
+msgid ""
+"Currently only exporting an application for use on a flat plane within the "
+"headset is supported. Immersive experiences are not supported."
+msgstr "目前仅支持导出一个在头显内部的平面上使用的应用程序，不支持沉浸式体验。"
+
+msgid "Other devices supported through an XR plugin structure."
+msgstr "通过 XR 插件结构支持的其他设备。"
+
+msgid ""
+"Various advanced toolkits are available that implement common features "
+"required by XR applications."
+msgstr "可以使用各种高级工具包来实现 XR 应用程序所需的常见功能。"
+
+msgid "GUI system"
+msgstr "GUI 系统"
+
+msgid ""
+"Godot's GUI is built using the same Control nodes used to make games in "
+"Godot. The editor UI can easily be extended in many ways using add-ons."
+msgstr ""
+"Godot 的 GUI 也是使用与用于在 Godot 中制作游戏相同的 Control 节点构建的。编辑"
+"器 UI 可以使用插件以多种方式轻松扩展。"
+
+msgid "**Nodes:**"
+msgstr "**节点：**"
+
+msgid "Buttons."
+msgstr "按钮。"
+
+msgid "Checkboxes, check buttons, radio buttons."
+msgstr "复选框、复选按钮、单选按钮。"
+
+msgid ""
+"Text entry using :ref:`class_LineEdit` (single line) "
+"and :ref:`class_TextEdit` (multiple lines). TextEdit also supports code "
+"editing features such as displaying line numbers and syntax highlighting."
+msgstr ""
+"使用 :ref:`class_LineEdit`\\ （单行）和 :ref:`class_TextEdit`\\ （多行）进行"
+"文本输入。TextEdit 还支持代码编辑功能，例如显示行号和语法高亮。"
+
+msgid ""
+"Dropdown menus using :ref:`class_PopupMenu` and :ref:`class_OptionButton`."
+msgstr ""
+"使用 :ref:`class_PopupMenu` 和 :ref:`class_OptionButton` 实现下拉菜单。"
+
+msgid "Scrollbars."
+msgstr "滚动条。"
+
+msgid "Labels."
+msgstr "标签。"
+
+msgid ""
+"RichTextLabel for :ref:`text formatted using BBCode "
+"<doc_bbcode_in_richtextlabel>`, with support for animated custom effects."
+msgstr ""
+"用于\\ :ref:`使用 BBCode 的格式化文本 <doc_bbcode_in_richtextlabel>`\\ 的 "
+"RichTextLabel，支持自定义动画效果。"
+
+msgid "Trees (can also be used to represent tables)."
+msgstr "树（也可用于显示表格）。"
+
+msgid "Color picker with RGB and HSV modes."
+msgstr "支持 RGB 及 HSV 模式的取色器。"
+
+msgid "Controls can be rotated and scaled."
+msgstr "控件可以被旋转和缩放。"
+
+msgid "**Sizing:**"
+msgstr "**调整大小：**"
+
+msgid "Anchors to keep GUI elements in a specific corner, edge or centered."
+msgstr "锚点将 GUI 元素保持在特定的角落、边缘或中心。"
+
+msgid "Containers to place GUI elements automatically following certain rules."
+msgstr "容器按照特定规则自动放置 GUI 元素。"
+
+msgid ":ref:`Stack <class_BoxContainer>` layouts."
+msgstr ":ref:`堆叠 <class_BoxContainer>`\\ 布局。"
+
+msgid ":ref:`Grid <class_GridContainer>` layouts."
+msgstr ":ref:`网格 <class_GridContainer>`\\ 布局。"
+
+msgid ""
+":ref:`Flow <class_FlowContainer>` layouts (similar to autowrapping text)."
+msgstr ":ref:`流式 <class_FlowContainer>`\\ 布局（类似于文本自动折行）。"
+
+msgid ""
+":ref:`Margin <class_MarginContainer>`, :ref:`centered "
+"<class_CenterContainer>` and :ref:`aspect ratio "
+"<class_AspectRatioContainer>` layouts."
+msgstr ""
+":ref:`边距 <class_MarginContainer>`\\ 、\\ :ref:`居中 "
+"<class_CenterContainer>`\\ 和\\ :ref:`纵横比 <class_AspectRatioContainer>`\\ "
+"布局。"
+
+msgid ":ref:`Draggable splitter <class_SplitContainer>` layouts."
+msgstr ":ref:`可拖拽分割器 <class_SplitContainer>`\\ 布局。"
+
+msgid ""
+"Scale to :ref:`multiple resolutions <doc_multiple_resolutions>` using the "
+"``canvas_items`` or ``viewport`` stretch modes."
+msgstr ""
+"使用 ``canvas_items`` 或 ``viewport`` 拉伸模式，缩放至\\ :ref:`多种分辨率 "
+"<doc_multiple_resolutions>`\\ 。"
+
+msgid ""
+"Support any aspect ratio using anchors and the ``expand`` stretch aspect."
+msgstr "使用锚点和 ``expand`` 拉伸比例，支持任意纵横比。"
+
+msgid "**Theming:**"
+msgstr "**主题：**"
+
+msgid "Built-in theme editor."
+msgstr "内置主题编辑器。"
+
+msgid "Generate a theme based on the current editor theme settings."
+msgstr "根据当前的编辑器主题设置生成主题。"
+
+msgid "Procedural vector-based theming using :ref:`class_StyleBoxFlat`."
+msgstr "使用 :ref:`class_StyleBoxFlat` 进行基于向量的程序式主题设计。"
+
+msgid ""
+"Supports rounded/beveled corners, drop shadows, per-border widths and "
+"antialiasing."
+msgstr "支持圆角/斜角、阴影、各边框宽度、抗锯齿。"
+
+msgid "Texture-based theming using :ref:`class_StyleBoxTexture`."
+msgstr "使用 :ref:`class_StyleBoxTexture` 进行基于纹理的主题设计。"
+
+msgid ""
+"Godot's small distribution size can make it a suitable alternative to "
+"frameworks like Electron or Qt."
+msgstr "Godot 较小的发行包大小，使其适合成为 Electron 或 Qt 等框架的替代品。"
+
+msgid "Animation"
+msgstr "动画"
+
+msgid "Direct kinematics and inverse kinematics."
+msgstr "正向运动学与反向运动学。"
+
+msgid "Support for animating any property with customizable interpolation."
+msgstr "支持使用可自定义插值动画化任意属性。"
+
+msgid "Support for calling methods in animation tracks."
+msgstr "支持在动画轨道中调用方法。"
+
+msgid "Support for playing sounds in animation tracks."
+msgstr "支持在动画轨道中播放声音。"
+
+msgid "Support for Bézier curves in animation."
+msgstr "支持在动画中使用贝塞尔曲线。"
+
+msgid "File formats"
+msgstr "文件格式"
+
+msgid ""
+"Scenes and resources can be saved in :ref:`text-based "
+"<doc_tscn_file_format>` or binary formats."
+msgstr ""
+"场景和资源可保存为\\ :ref:`文本 <doc_tscn_file_format>`\\ 或二进制格式。"
+
+msgid ""
+"Text-based formats are human-readable and more friendly to version control."
+msgstr "基于文本的格式易于阅读，并且对版本控制更友好。"
+
+msgid "Binary formats are faster to save/load for large scenes/resources."
+msgstr "二进制格式保存/加载大型场景/资源的速度更快。"
+
+msgid "Read and write text or binary files using :ref:`class_FileAccess`."
+msgstr "使用 :ref:`class_FileAccess` 读写文本或二进制文件。"
+
+msgid "Can optionally be compressed or encrypted."
+msgstr "可选择使用压缩或加密。"
+
+msgid "Read and write :ref:`class_JSON` files."
+msgstr "读写 :ref:`class_JSON` 文件。"
+
+msgid ""
+"Read and write INI-style configuration files using :ref:`class_ConfigFile`."
+msgstr "使用 :ref:`class_ConfigFile` 读写 INI 样式的配置文件。"
+
+msgid "Can (de)serialize any Godot datatype, including Vector2/3, Color, ..."
+msgstr "可以（反）序列化任何 Godot 数据类型，包括 Vector2/3、Color 等。"
+
+msgid "Read XML files using :ref:`class_XMLParser`."
+msgstr "使用 :ref:`class_XMLParser` 读取 XML 文件。"
+
+msgid ""
+":ref:`Load and save images, audio/video, fonts and ZIP archives "
+"<doc_runtime_loading_and_saving>` in an exported project without having to "
+"go through Godot's import system."
+msgstr ""
+"无需通过 Godot 的导入系统， 即可在导出的项目中\\ :ref:`加载和保存图像、音频/"
+"视频、字体和 ZIP 存档 <doc_runtime_loading_and_saving>`\\ 。"
+
+msgid ""
+"Pack game data into a PCK file (custom format optimized for fast seeking), "
+"into a ZIP archive, or directly into the executable for single-file "
+"distribution."
+msgstr ""
+"将游戏数据打包到 PCK 文件（针对快速搜索优化的自定义格式）、ZIP 存档或直接打包"
+"到可执行文件中以进行单文件分发。"
+
+msgid ""
+":ref:`Export additional PCK files<doc_exporting_pcks>` that can be read by "
+"the engine to support mods and DLCs."
+msgstr ""
+":ref:`导出额外的 PCK 文件 <doc_exporting_pcks>`\\ ，引擎可以读取这些文件以支"
+"持 mod 和 DLC。"
+
+msgid "Miscellaneous"
+msgstr "杂项"
+
+msgid ""
+":ref:`Video playback <doc_playing_videos>` with built-in support for Ogg "
+"Theora."
+msgstr ":ref:`视频播放 <doc_playing_videos>`\\ 内置支持 Ogg Theora。"
+
+msgid ""
+":ref:`Movie Maker mode <doc_creating_movies>` to record videos from a "
+"running project with synchronized audio and perfect frame pacing."
+msgstr ""
+":ref:`Movie Maker 模式 <doc_creating_movies>`\\ 可从正在运行的项目中录制视"
+"频，并具有同步音频和完美的帧同步。"
+
+msgid ""
+":ref:`Low-level access to servers <doc_using_servers>` which allows "
+"bypassing the scene tree's overhead when needed."
+msgstr ""
+":ref:`对服务器的低级别访问 <doc_using_servers>`\\ ，能够在必要时绕过场景树的"
+"开销。"
+
+msgid ""
+":ref:`Command line interface <doc_command_line_tutorial>` for automation."
+msgstr "使用\\ :ref:`命令行接口 <doc_command_line_tutorial>`\\ 进行自动化。"
+
+msgid "Export and deploy projects using continuous integration platforms."
+msgstr "使用持续集成平台导出和部署项目。"
+
+msgid ""
+"`Shell completion scripts <https://github.com/godotengine/godot/tree/master/"
+"misc/dist/shell>`__ are available for Bash, zsh and fish."
+msgstr ""
+"适用于 Bash、zsh 和 fish 的 `Shell 补全脚本 <https://github.com/godotengine/"
+"godot/tree/master/misc/dist/shell>`__ 。"
+
+msgid ""
+"Print colored text to standard output on all platforms "
+"using :ref:`print_rich <class_@GlobalScope_method_print_rich>`."
+msgstr ""
+"在所有平台使用 :ref:`print_rich <class_@GlobalScope_method_print_rich>` 将彩"
+"色文本打印至标准输出。"
+
+msgid ""
+"The editor can :ref:`detect features used in a project and create a "
+"compilation profile <doc_engine_compilation_configuration_editor>`, which "
+"can be used to create smaller export template binaries with unneeded "
+"features disabled."
+msgstr ""
+"编辑器可以 :ref:`检测项目所用到的功能并建立一个编译配置 "
+"<doc_engine_compilation_configuration_editor>`，该配置可用于创建关闭了多余功"
+"能、二进制文件体积更小的导出模板。"
+
+msgid ""
+"Support for :ref:`C++ modules <doc_custom_modules_in_cpp>` statically linked "
+"into the engine binary."
+msgstr ""
+"支持将 :ref:`C++ 模块 <doc_custom_modules_in_cpp>`\\ 静态链接到引擎二进制文件"
+"中。"
+
+msgid ""
+"Most built-in modules can be disabled at compile-time to reduce binary size "
+"in custom builds. See :ref:`doc_optimizing_for_size` for details."
+msgstr ""
+"大多数引擎内置功能模块均可在编译时禁用，以减少自行编译版本的二进制文件体积，"
+"详情请参阅 :ref:`doc_optimizing_for_size` 页面。"
+
+msgid "Engine and editor written in C++17."
+msgstr "引擎和编辑器以 C++17 编写。"
+
+msgid ""
+"Can be :ref:`compiled <doc_introduction_to_the_buildsystem>` using GCC, "
+"Clang and MSVC. MinGW is also supported."
+msgstr ""
+"可使用 GCC、Clang、MSVC 进行\\ :ref:`编译 "
+"<doc_introduction_to_the_buildsystem>`\\ 。同样支持 MinGW。"
+
+msgid ""
+"Friendly towards packagers. In most cases, system libraries can be used "
+"instead of the ones provided by Godot. The build system doesn't download "
+"anything. Builds can be fully reproducible."
+msgstr ""
+"对打包者友好。通常情况下，可以使用系统库代替 Godot 提供的库。构建系统不会下载"
+"任何东西。构建完全可重现。"
+
+msgid "Licensed under the permissive MIT license."
+msgstr "使用宽松的 MIT 许可。"
+
+msgid ""
+"Open development process with `contributions welcome <https://"
+"contributing.godotengine.org/en/latest/organization/"
+"how_to_contribute.html>`__."
+msgstr ""
+"开放的开发过程，\\ `欢迎贡献 <https://contributing.godotengine.org/en/latest/"
+"organization/how_to_contribute.html>`__\\ 。"
+
+msgid ""
+"The `Godot proposals repository <https://github.com/godotengine/godot-"
+"proposals>`__ lists features that have been requested by the community and "
+"may be implemented in future Godot releases."
+msgstr ""
+"`Godot 提案库 <https://github.com/godotengine/godot-proposals>`__\\ 列出了社"
+"区要求的、可能在未来 Godot 版本中实现的功能。"

@@ -1,0 +1,719 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Upgrading from Godot 4.2 to Godot 4.3"
+msgstr "從 Godot 4.2 升級到 Godot 4.3"
+
+msgid ""
+"For most games and apps made with 4.2 it should be relatively safe to "
+"migrate to 4.3. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"對於大多數以 4.2 製作的遊戲和應用程式來說，升級到 4.3 應該相對安全。本頁將說"
+"明專案升級時需要注意的所有事項。"
+
+msgid "Breaking changes"
+msgstr "做出更改"
+
+msgid ""
+"If you are migrating from 4.2 to 4.3, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"如果你要從 4.2 升級到 4.3，這裡列出的不相容變更可能會影響到你的專案。變更內容"
+"依領域/系統分類整理。"
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"這篇文章指出了每項破壞性改動是否會影響 GDScript，以及 C# 的破壞性改動是 *二進"
+"位相容* 還是 *原始程式碼相容*："
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the runtime behavior won't change."
+msgstr ""
+"**二進制相容** - 現有的二進制檔案無需重新編譯即可成功載入和執行，且運行時的行"
+"為不會改變。"
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr ""
+"** 原始程式碼相容** —— 在升級 Godot 時，原始程式碼可成功編譯，無需更改。"
+
+msgid "GDExtension"
+msgstr "GDExtension"
+
+msgid "Change"
+msgstr "改動"
+
+msgid "GDScript Compatible"
+msgstr "GDScript 格式化字串"
+
+msgid "C# Binary Compatible"
+msgstr "C# 二進位相容"
+
+msgid "C# Source Compatible"
+msgstr "C# 原始程式碼相容"
+
+msgid "Introduced"
+msgstr "簡介"
+
+msgid "**GDExtension**"
+msgstr "**GDExtension**"
+
+msgid "Method ``close_library`` removed"
+msgstr "方法 ``close_library`` 已移除"
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "`GH-88418`_"
+msgstr "`GH-88418`_"
+
+msgid "Method ``initialize_library`` removed"
+msgstr "方法 ``initialize_library`` 已移除"
+
+msgid "Method ``open_library`` removed"
+msgstr "方法 ``open_library`` 已移除"
+
+msgid ""
+"Since it was basically impossible to use these methods in any useful way, "
+"these methods have been removed. Use ``GDExtensionManager::load_extension`` "
+"and ``GDExtensionManager::unload_extension`` instead to correctly load and "
+"unload a GDExtension."
+msgstr ""
+"由於這些方法實際上無法被有效利用，因此已將其移除。請改用 "
+"``GDExtensionManager::load_extension`` 和 "
+"``GDExtensionManager::unload_extension`` 來正確載入與卸載 GDExtension。"
+
+msgid "Animation"
+msgstr "動畫"
+
+msgid "**Animation**"
+msgstr "動畫"
+
+msgid ""
+"Method ``position_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr "方法 ``position_track_interpolate`` 新增了 ``backward`` 選用參數"
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "|✔️ with compat|"
+msgstr "| ✔️相容|"
+
+msgid "`GH-86629`_"
+msgstr "`GH-86629`_"
+
+msgid ""
+"Method ``rotation_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr "方法 ``rotation_track_interpolate`` 新增了 ``backward`` 選用參數"
+
+msgid ""
+"Method ``scale_track_interpolate`` adds a new ``backward`` optional parameter"
+msgstr "方法 ``scale_track_interpolate`` 新增了 ``backward`` 選用參數"
+
+msgid ""
+"Method ``blend_shape_track_interpolate`` adds a new ``backward`` optional "
+"parameter"
+msgstr "方法 ``blend_shape_track_interpolate`` 新增了 ``backward`` 選用參數"
+
+msgid ""
+"Method ``value_track_interpolate`` adds a new ``backward`` optional parameter"
+msgstr "方法 ``value_track_interpolate`` 新增了 ``backward`` 選用參數"
+
+msgid "Method ``track_find_key`` adds a new ``limit`` optional parameter"
+msgstr "方法 ``track_find_key`` 新增了 ``limit`` 選用參數"
+
+msgid "`GH-86661`_"
+msgstr "`GH-86661`_"
+
+msgid "Method ``track_find_key`` adds a new ``backward`` optional parameter"
+msgstr "方法 ``track_find_key`` 新增了 ``backward`` 選用參數"
+
+msgid "`GH-92861`_"
+msgstr "`GH-92861`_"
+
+msgid "**AnimationMixer**"
+msgstr "**動畫混合器（AnimationMixer）**"
+
+msgid ""
+"Method ``_post_process_key_value`` changes ``object`` parameter type from "
+"``Object`` to ``uint64``"
+msgstr ""
+"方法 ``_post_process_key_value`` 的 ``object`` 參數型別由 ``Object`` 改為 "
+"``uint64``"
+
+msgid "`GH-86687`_"
+msgstr "`GH-86687`_"
+
+msgid "**Skeleton3D**"
+msgstr "**Skeleton3D**"
+
+msgid "Method ``add_bone`` changes return type from ``void`` to ``int32``"
+msgstr "方法 ``add_bone`` 的回傳型別由 ``void`` 改為 ``int32``"
+
+msgid "`GH-88791`_"
+msgstr "`GH-88791`_"
+
+msgid "Signal ``bone_pose_changed`` replaced by ``skeleton_updated``"
+msgstr "訊號 ``bone_pose_changed`` 已被 ``skeleton_updated`` 取代"
+
+msgid "`GH-90575`_"
+msgstr "`GH-90575`_"
+
+msgid "**BoneAttachment3D**"
+msgstr "**BoneAttachment3D**"
+
+msgid "Method ``on_bone_pose_update`` replaced by ``on_skeleton_update``"
+msgstr "方法 ``on_bone_pose_update`` 已被 ``on_skeleton_update`` 取代"
+
+msgid "GUI nodes"
+msgstr "建立節點"
+
+msgid "**AcceptDialog**"
+msgstr "**AcceptDialog**"
+
+msgid ""
+"Method ``register_text_enter`` changes parameter ``line_edit`` type from "
+"``Control`` to ``LineEdit``"
+msgstr ""
+"方法 ``register_text_enter`` 的 ``line_edit`` 參數型別由 ``Control`` 改為 "
+"``LineEdit``"
+
+msgid "`GH-89419`_"
+msgstr "`GH-89419`_"
+
+msgid ""
+"Method ``remove_button`` changes parameter ``button`` type from ``Control`` "
+"to ``Button``"
+msgstr ""
+"方法 ``remove_button`` 的 ``button`` 參數型別由 ``Control`` 改為 ``Button``"
+
+msgid "Physics"
+msgstr "物理"
+
+msgid "**PhysicsShapeQueryParameters3D**"
+msgstr "**PhysicsShapeQueryParameters3D**"
+
+msgid "Property ``motion`` changes type from ``Vector2`` to ``Vector3``"
+msgstr "屬性 ``motion`` 的型別由 ``Vector2`` 改為 ``Vector3``"
+
+msgid "`GH-85393`_"
+msgstr "`GH-85393`_"
+
+msgid ""
+"In C#, the enum ``PhysicsServer3D.G6DofJointAxisFlag`` breaks compatibility "
+"because of the way the bindings generator detects the enum prefix. New "
+"members were added in `GH-89851`_ to the enum that caused the enum members "
+"to be renamed."
+msgstr ""
+"在 C# 中，列舉 ``PhysicsServer3D.G6DofJointAxisFlag`` 因綁定產生器解析列舉前"
+"綴方式而導致相容性問題。在 `GH-89851`_ 中新增的成員會讓該列舉的成員名稱被重新"
+"命名。"
+
+msgid "Rendering"
+msgstr "算繪"
+
+msgid "**RenderingDevice**"
+msgstr "算繪"
+
+msgid ""
+"Enum field ``FinalAction.FINAL_ACTION_CONTINUE`` changes value from ``2`` to "
+"``0``"
+msgstr "列舉欄位 ``FinalAction.FINAL_ACTION_CONTINUE`` 的值由 ``2`` 改為 ``0``"
+
+msgid "`GH-84976`_"
+msgstr "`GH-84976`_"
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_CLEAR`` changes value from ``0`` "
+"to ``1``"
+msgstr ""
+"列舉欄位 ``InitialAction.INITIAL_ACTION_CLEAR`` 的值由 ``0`` 改為 ``1``"
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_CLEAR_REGION_CONTINUE`` changes "
+"value from ``2`` to ``1``"
+msgstr ""
+"列舉欄位 ``InitialAction.INITIAL_ACTION_CLEAR_REGION_CONTINUE`` 的值由 ``2`` "
+"改為 ``1``"
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_CONTINUE`` changes value from "
+"``5`` to ``0``"
+msgstr ""
+"列舉欄位 ``InitialAction.INITIAL_ACTION_CONTINUE`` 的值由 ``5`` 改為 ``0``"
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_DROP`` changes value from ``4`` to "
+"``2``"
+msgstr "列舉欄位 ``InitialAction.INITIAL_ACTION_DROP`` 的值由 ``4`` 改為 ``2``"
+
+msgid ""
+"Enum field ``InitialAction.INITIAL_ACTION_KEEP`` changes value from ``3`` to "
+"``0``"
+msgstr "列舉欄位 ``InitialAction.INITIAL_ACTION_KEEP`` 的值由 ``3`` 改為 ``0``"
+
+msgid "Method ``buffer_clear`` removes ``post_barrier`` parameter"
+msgstr "方法 ``buffer_clear`` 移除了 ``post_barrier`` 參數"
+
+msgid "Method ``buffer_update`` removes ``post_barrier`` parameter"
+msgstr "方法 ``buffer_update`` 移除了 ``post_barrier`` 參數"
+
+msgid "Method ``compute_list_begin`` removes ``allow_draw_overlap`` parameter"
+msgstr "方法 ``compute_list_begin`` 移除了 ``allow_draw_overlap`` 參數"
+
+msgid "Method ``compute_list_end`` removes ``post_barrier`` parameter"
+msgstr "方法 ``compute_list_end`` 移除了 ``post_barrier`` 參數"
+
+msgid "Method ``draw_list_begin`` removes ``storage_textures`` parameter"
+msgstr "方法 ``draw_list_begin`` 移除了 ``storage_textures`` 參數"
+
+msgid "Method ``draw_list_end`` removes ``post_barrier`` parameter"
+msgstr "方法 ``draw_list_end`` 移除了 ``post_barrier`` 參數"
+
+msgid "Method ``texture_clear`` removes ``post_barrier`` parameter"
+msgstr "方法 ``texture_clear`` 移除了 ``post_barrier`` 參數"
+
+msgid "Method ``texture_copy`` removes ``post_barrier`` parameter"
+msgstr "方法 ``texture_copy`` 移除了 ``post_barrier`` 參數"
+
+msgid ""
+"Method ``texture_resolve_multisample`` removes ``post_barrier`` parameter"
+msgstr "方法 ``texture_resolve_multisample`` 移除了 ``post_barrier`` 參數"
+
+msgid "Method ``texture_update`` removes ``post_barrier`` parameter"
+msgstr "方法 ``texture_update`` 移除了 ``post_barrier`` 參數"
+
+msgid "**RenderingServer**"
+msgstr "**RenderingServer**"
+
+msgid ""
+"Method ``environment_set_fog`` adds a new ``fog_mode`` optional parameter"
+msgstr "方法 ``environment_set_fog`` 新增了 ``fog_mode`` 選用參數"
+
+msgid "`GH-84792`_"
+msgstr "`GH-84792`_"
+
+msgid "**RenderSceneBuffersRD**"
+msgstr "**RenderSceneBuffersRD**"
+
+msgid "Method ``get_color_layer`` adds a new ``msaa`` optional parameter"
+msgstr "方法 ``get_color_layer`` 新增了 ``msaa`` 選用參數"
+
+msgid "`GH-80214`_"
+msgstr "`GH-80214`_"
+
+msgid "Method ``get_depth_layer`` adds a new ``msaa`` optional parameter"
+msgstr "方法 ``get_depth_layer`` 新增了 ``msaa`` 選用參數"
+
+msgid "Method ``get_velocity_layer`` adds a new ``msaa`` optional parameter"
+msgstr "方法 ``get_velocity_layer`` 新增了 ``msaa`` 選用參數"
+
+msgid "Method ``get_color_texture`` adds a new ``msaa`` optional parameter"
+msgstr "方法 ``get_color_texture`` 新增了 ``msaa`` 選用參數"
+
+msgid "Method ``get_depth_texture`` adds a new ``msaa`` optional parameter"
+msgstr "方法 ``get_depth_texture`` 新增了 ``msaa`` 選用參數"
+
+msgid "Method ``get_velocity_texture`` adds a new ``msaa`` optional parameter"
+msgstr "方法 ``get_velocity_texture`` 新增了 ``msaa`` 選用參數"
+
+msgid ""
+"While the values of the enum fields in ``RenderingDevice.InitialAction`` and "
+"``RenderingDevice.FinalAction`` changed, the only method that consumed them "
+"(``draw_list_begin``) added a compatibility method which supports the old "
+"values. So in practice it doesn't break compatibility."
+msgstr ""
+"雖然 ``RenderingDevice.InitialAction`` 及 ``RenderingDevice.FinalAction`` 中"
+"的列舉值已改變，但唯一會使用它們的方法（``draw_list_begin``）已新增相容舊值的"
+"支援。因此實務上並不會破壞相容性。"
+
+msgid ""
+"In C#, the enum ``RenderingDevice.DriverResource`` breaks compatibility "
+"because of the way the bindings generator detects the enum prefix. New "
+"members were added in `GH-83452`_ to the enum that caused the enum members "
+"to be renamed."
+msgstr ""
+"在 C# 中，列舉 ``RenderingDevice.DriverResource`` 由於綁定產生器解析列舉前綴"
+"的方式，當 `GH-83452`_ 新增新成員時會造成成員名稱被重新命名，進而導致相容性問"
+"題。"
+
+msgid "Text"
+msgstr "文字"
+
+msgid "**Font**"
+msgstr "**字型**"
+
+msgid ""
+"Method ``find_variation`` adds a new ``baseline_offset`` optional parameter"
+msgstr "方法 ``find_variation`` 新增了 ``baseline_offset`` 選用參數"
+
+msgid "`GH-87668`_"
+msgstr "`GH-87668`_"
+
+msgid "**RichTextLabel**"
+msgstr "**RichTextLabel**"
+
+msgid "Method ``push_meta`` adds a new ``underline_mode`` optional parameter"
+msgstr "方法 ``push_meta`` 新增了 ``underline_mode`` 選用參數"
+
+msgid "`GH-89024`_"
+msgstr "`GH-89024`_"
+
+msgid "**TextServer**"
+msgstr "**TextServer**"
+
+msgid ""
+"Method ``shaped_text_get_word_breaks`` adds a new optional "
+"``skip_grapheme_flags`` parameter"
+msgstr ""
+"方法 ``shaped_text_get_word_breaks`` 新增了 ``skip_grapheme_flags`` 選用參數"
+
+msgid "`GH-90732`_"
+msgstr "`GH-90732`_"
+
+msgid "**TextServerExtension**"
+msgstr "**TextServerExtension**"
+
+msgid ""
+"Method ``_shaped_text_get_word_breaks`` adds a new ``skip_grapheme_flags`` "
+"parameter"
+msgstr ""
+"方法 ``_shaped_text_get_word_breaks`` 新增了 ``skip_grapheme_flags`` 參數"
+
+msgid "Audio"
+msgstr "音訊"
+
+msgid "**AudioStreamPlaybackPolyphonic**"
+msgstr "**AudioStreamPlaybackPolyphonic**"
+
+msgid ""
+"Method ``play_stream`` adds new ``playback_type``, and ``bus`` optional "
+"parameters"
+msgstr "方法 ``play_stream`` 新增了 ``playback_type`` 及 ``bus`` 選用參數"
+
+msgid "`GH-91382`_"
+msgstr "`GH-91382`_"
+
+msgid "Navigation"
+msgstr "導覽"
+
+msgid "**AStar2D**"
+msgstr "**AStar2D**"
+
+msgid ""
+"Method ``get_id_path`` adds new ``allow_partial_path`` optional parameter"
+msgstr "方法 ``get_id_path`` 新增了 ``allow_partial_path`` 選用參數"
+
+msgid "`GH-88047`_"
+msgstr "`GH-88047`_"
+
+msgid ""
+"Method ``get_point_path`` adds new ``allow_partial_path`` optional parameter"
+msgstr "方法 ``get_point_path`` 新增了 ``allow_partial_path`` 選用參數"
+
+msgid "**AStar3D**"
+msgstr "**AStar3D**"
+
+msgid "**AStarGrid2D**"
+msgstr "**AStarGrid2D**"
+
+msgid "**NavigationRegion2D**"
+msgstr "**NavigationRegion2D**"
+
+msgid "Property ``avoidance_layers`` removed"
+msgstr "屬性 ``avoidance_layers`` 已移除"
+
+msgid "`GH-90747`_"
+msgstr "`GH-90747`_"
+
+msgid "Property ``constrain_avoidance`` removed"
+msgstr "屬性 ``constrain_avoidance`` 已移除"
+
+msgid "Method ``get_avoidance_layer_value`` removed"
+msgstr "方法 ``get_avoidance_layer_value`` 已移除"
+
+msgid "Method ``set_avoidance_layer_value`` removed"
+msgstr "方法 ``set_avoidance_layer_value`` 已移除"
+
+msgid ""
+"The constrain avoidance feature in ``NavigationRegion2D`` was experimental "
+"and has been discontinued with no replacement."
+msgstr ""
+"``NavigationRegion2D`` 的避障限制功能曾為實驗性，現已移除且無替代方案。"
+
+msgid "TileMap"
+msgstr "圖塊地圖（TileMap）"
+
+msgid "**TileData**"
+msgstr "**TileData**"
+
+msgid ""
+"Method ``get_navigation_polygon`` adds new ``flip_h``, ``flip_v``, and "
+"``transpose`` optional parameters"
+msgstr ""
+"方法 ``get_navigation_polygon`` 新增了 ``flip_h``、``flip_v`` 及 "
+"``transpose`` 選用參數"
+
+msgid "`GH-84660`_"
+msgstr "`GH-84660`_"
+
+msgid ""
+"Method ``get_occluder`` adds new ``flip_h``, ``flip_v``, and ``transpose`` "
+"optional parameters"
+msgstr ""
+"方法 ``get_occluder`` 新增了 ``flip_h``、``flip_v`` 及 ``transpose`` 選用參數"
+
+msgid "XR"
+msgstr "XR"
+
+msgid "**WebXRInterface**"
+msgstr "**WebXRInterface**"
+
+msgid ""
+"Method ``get_input_source_tracker`` changes return type from "
+"``XRPositionalTracker`` to ``XRControllerTracker``"
+msgstr ""
+"方法 ``get_input_source_tracker`` 的回傳型別由 ``XRPositionalTracker`` 改為 "
+"``XRControllerTracker``"
+
+msgid "`GH-90645`_"
+msgstr "`GH-90645`_"
+
+msgid "**XRServer**"
+msgstr "**XRServer**"
+
+msgid ""
+"Method ``get_tracker`` changes return type from ``XRPositionalTracker`` to "
+"``XRTracker``"
+msgstr ""
+"方法 ``get_tracker`` 的回傳型別由 ``XRPositionalTracker`` 改為 ``XRTracker``"
+
+msgid "Editor plugins"
+msgstr "編輯器外掛程式"
+
+msgid "**EditorInspectorPlugin**"
+msgstr "**EditorInspectorPlugin**"
+
+msgid "Method ``add_property_editor`` adds a new ``label`` optional parameter"
+msgstr "方法 ``add_property_editor`` 新增了 ``label`` 選用參數"
+
+msgid "`GH-92322`_"
+msgstr "`GH-92322`_"
+
+msgid "**EditorPlugin**"
+msgstr "**EditorPlugin**"
+
+msgid ""
+"Method ``add_control_to_bottom_panel`` adds a new ``shortcut`` optional "
+"parameter"
+msgstr "方法 ``add_control_to_bottom_panel`` 新增了 ``shortcut`` 選用參數"
+
+msgid "`GH-88081`_"
+msgstr "`GH-88081`_"
+
+msgid ""
+"Method ``add_control_to_dock`` adds a new ``shortcut`` optional parameter"
+msgstr "方法 ``add_control_to_dock`` 新增了 ``shortcut`` 選用參數"
+
+msgid "**EditorSceneFormatImporterFBX**"
+msgstr "**EditorSceneFormatImporterFBX**"
+
+msgid "Type renamed to ``EditorSceneFormatImporterFBX2GLTF``"
+msgstr "型別已更名為 ``EditorSceneFormatImporterFBX2GLTF``"
+
+msgid "`GH-81746`_"
+msgstr "`GH-81746`_"
+
+msgid "Behavior changes"
+msgstr "做出更改"
+
+msgid "Core"
+msgstr "核心"
+
+msgid ""
+"Binary serialization was modified to fix some issues with the serialization "
+"of scripted Objects and typed Arrays (`GH-78219`_). This breaks compat with "
+"script encoding/decoding."
+msgstr ""
+"二進位序列化已調整，修復了腳本物件與型別化陣列序列化的相關問題（詳見 "
+"`GH-78219`_）。這會導致舊有腳本編碼/解碼的相容性中斷。"
+
+msgid ""
+"``PackedByteArray`` is now able to use a more compact base64 encoding for "
+"storage. But the trade-off is that it breaks compatibility, meaning that "
+"older versions of Godot may not be able to open resources saved by 4.3 "
+"(`GH-89186`_)."
+msgstr ""
+"``PackedByteArray`` 現在能使用更精簡的 base64 編碼來儲存資料。但這樣會影響相"
+"容性，代表舊版 Godot 可能無法開啟由 4.3 儲存的資源（詳見 `GH-89186`_）。"
+
+msgid ""
+"To maximize compatibility, this new storage format will only be enabled for "
+"resources and scenes that contain large PackedByteArrays for now. Support "
+"for this new format will also be added in patch updates for older versions "
+"of Godot. Once all supported Godot versions are able to read the new format, "
+"we will gradually retire the compatibility measures and have all resources "
+"and scenes use the new storage format."
+msgstr ""
+"為了最大化相容性，目前僅對包含大量 PackedByteArray 的資源與場景啟用這個新儲存"
+"格式。未來此格式也會陸續回補至舊版 Godot 的修補更新中。待所有支援中的 Godot "
+"版本都能讀取新格式後，將逐步淘汰相容性措施，讓所有資源與場景都採用新格式。"
+
+msgid ""
+"In C#, the ``Transform3D.InterpolateWith`` implementation was fixed to use "
+"the right order of operations, applying the rotation before the scale "
+"(`GH-89843`_)."
+msgstr ""
+"於 C# 中，``Transform3D.InterpolateWith`` 的實作已修正為先進行旋轉、再進行縮"
+"放的正確運算順序（詳見 `GH-89843`_）。"
+
+msgid ""
+"In C#, the ``Aabb.GetSupport`` implementation was fixed to properly return "
+"the support vector (`GH-88919`_)."
+msgstr ""
+"於 C# 中，``Aabb.GetSupport`` 的實作已修正，現在能正確回傳支撐向量（詳見 "
+"`GH-88919`_）。"
+
+msgid ""
+"In C#, the Variant types' ``ToString`` implementation now defaults to using "
+"the ``InvariantCulture`` (`GH-89547`_) which means ``Vector2(1.2, 3.4)`` is "
+"formatted using ``.`` as the decimal separator independently of the language "
+"of the operating system that the program is running on."
+msgstr ""
+"於 C# 中，Variant 型別的 ``ToString`` 實作現在預設會使用 ``InvariantCulture``"
+"（詳見 `GH-89547`_），這代表像 ``Vector2(1.2, 3.4)`` 這樣的格式，無論作業系統"
+"語言為何，都會以 ``.`` 作為小數點分隔符。"
+
+msgid ""
+"``AnimationMixer`` replaced its Capture mode with a new Capture feature that "
+"works much better than the old one, this replaces the existing cache "
+"(`GH-86715`_)."
+msgstr ""
+"``AnimationMixer`` 的捕捉（Capture）模式已被全新設計的捕捉功能所取代，效能與"
+"可靠性都大幅提升，並且也取代了原有的快取機制（詳見 `GH-86715`_）。"
+
+msgid ""
+"``AnimationNode`` has a reworked process for retrieving the semantic time "
+"info. This ensures that time-related behavior works as expected, but changes "
+"the blending behavior. Implementors of the ``_process`` virtual method "
+"should also note that this method is now deprecated and will be replaced by "
+"a new one in the future (`GH-87171`_)."
+msgstr ""
+"``AnimationNode`` 取得語意時間資訊的流程已重構。這確保與時間相關的行為能如預"
+"期運作，但也改變了混合（blending）行為。實作 ``_process`` 虛擬方法的開發者請"
+"注意，此方法已被標記為過時，未來將會有新方法取而代之（詳見 `GH-87171`_）。"
+
+msgid ""
+"More information about the changes to Animation can be found in the "
+"`Migrating Animations from Godot 4.0 to 4.3 <https://godotengine.org/article/"
+"migrating-animations-from-godot-4-0-to-4-3>`__ article."
+msgstr ""
+"關於動畫相關變更的更多資訊，請參考《Migrating Animations from Godot 4.0 to "
+"4.3 <https://godotengine.org/article/migrating-animations-from-godot-4-0-"
+"to-4-3>》。"
+
+msgid ""
+"The default font outline color was changed from white to black (`GH-54641`_)."
+msgstr "預設字型外框顏色已由白色改為黑色（詳見 `GH-54641`_）。"
+
+msgid ""
+"The ``auto_translate`` property is deprecated in favor of the "
+"``auto_translate_mode`` property which is now in ``Node`` (`GH-87530`_). The "
+"default value for ``auto_translate_mode`` is ``AUTO_TRANSLATE_INHERIT``, "
+"which means nodes inherit the ``auto_translate_mode`` value from their "
+"parent. This means, existing nodes with the ``auto_translate`` property set "
+"to ``true`` may no longer be translated if they are children of a node with "
+"the ``auto_translate`` property set to ``false``."
+msgstr ""
+"``auto_translate`` 屬性已廢棄，請改用現在新增至 ``Node`` 的 "
+"``auto_translate_mode`` 屬性（詳見 `GH-87530`_）。``auto_translate_mode`` 的"
+"預設值為 ``AUTO_TRANSLATE_INHERIT``，代表節點會繼承父節點的翻譯模式。這表示，"
+"原本有設定 ``auto_translate = true`` 的節點，如果其父節點 ``auto_translate`` "
+"為 ``false``，可能就不會再被自動翻譯。"
+
+msgid "Multiplayer"
+msgstr "多人連線"
+
+msgid ""
+"The ``SceneMultiplayer`` caching protocol was changed to send the received "
+"ID instead of the Node path when sending a node removal confirmation packet "
+"(`GH-90027`_)."
+msgstr ""
+"``SceneMultiplayer`` 的快取協定已改為在發送節點移除確認封包時，傳送收到的 "
+"ID，而非節點路徑（詳見 `GH-90027`_）。"
+
+msgid ""
+"This is a breaking change for the high-level multiplayer protocol making it "
+"incompatible with previous Godot versions. Upgrade both your server and "
+"client versions to Godot 4.3 to handle this change gracefully."
+msgstr ""
+"此為高階多人連線協定的不相容變更，與舊版 Godot 並不相容。請同時將你的伺服器與"
+"客戶端一併升級到 Godot 4.3，才能正常運作。"
+
+msgid ""
+"Note that high-level multiplayer facilities are only ever meant to be "
+"compatible with server and client using the same Godot version. It is "
+"recommended to implement some kind of version checking."
+msgstr ""
+"請注意，高階多人連線設施僅設計給相同 Godot 版本的伺服器與客戶端共同使用。建議"
+"你在專案中實作版本檢查機制。"
+
+msgid ""
+"Decals now convert the modulate color from an sRGB color to a linear color, "
+"like all other inputs, to ensure proper blending (`GH-89849`_). Existing "
+"projects that were using the decal's modulate property will notice a change "
+"in their visuals."
+msgstr ""
+"貼花（Decal）現在會將調變（modulate）顏色從 sRGB 色彩空間轉換為線性色彩，與其"
+"他輸入一致，以確保正確的混色效果（詳見 `GH-89849`_）。如果你的專案有用到貼花"
+"的調變屬性，將會發現畫面有些微變化。"
+
+msgid ""
+"The reverse Z depth buffer technique is now implemented. This may break "
+"compatibility for some shaders. Read the `Introducing Reverse Z (AKA I'm "
+"sorry for breaking your shader) <https://godotengine.org/article/introducing-"
+"reverse-z/>`__ article for more information and guidance on how to fix "
+"common scenarios."
+msgstr ""
+"已導入反向 Z（Reverse Z）深度緩衝技術。這可能會讓部分著色器（Shader）出現不相"
+"容。請參考《Introducing Reverse Z (AKA I'm sorry for breaking your shader) "
+"<https://godotengine.org/article/introducing-reverse-z/>》一文，取得更多資訊"
+"與修正建議。"
+
+msgid ""
+"``TileMap`` layers were moved to individual nodes (`GH-87379`_ and "
+"`GH-89179`_)."
+msgstr ""
+"``TileMap`` 圖層現在拆分為獨立節點（詳見 `GH-87379`_ 與 `GH-89179`_）。"
+
+msgid "Android"
+msgstr "Android"
+
+msgid ""
+"Android permissions are no longer requested automatically because it goes "
+"against the recommended best practices (`GH-87080`_). Use the "
+"``request_permission`` method in ``OS`` and the "
+"``on_request_permissions_result`` signal on ``MainLoop`` to request "
+"permissions and wait for the user response."
+msgstr ""
+"Android 權限不會再自動請求，因為這不符合官方建議的最佳實踐（詳見 "
+"`GH-87080`_）。請自行在 ``OS`` 使用 ``request_permission`` 方法，並透過 "
+"``MainLoop`` 的 ``on_request_permissions_result`` 訊號來請求權限並等待使用者"
+"回應。"

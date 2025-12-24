@@ -1,0 +1,1541 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Shading language"
+msgstr "着色语言"
+
+msgid "Introduction"
+msgstr "前言"
+
+msgid ""
+"Godot uses a shading language similar to GLSL ES 3.0. Most datatypes and "
+"functions are supported, and the few remaining ones will likely be added "
+"over time."
+msgstr ""
+"Godot 使用类似于 GLSL ES 3.0 的着色语言。支持大多数数据类型和函数，并且可能会"
+"随着时间的推移添加剩余的几种类型和函数。"
+
+msgid ""
+"If you are already familiar with GLSL, the :ref:`Godot Shader Migration "
+"Guide<doc_converting_glsl_to_godot_shaders>` is a resource that will help "
+"you transition from regular GLSL to Godot's shading language."
+msgstr ""
+"如果你已经熟悉 GLSL，\\ :ref:`Godot 着色器迁移指南 "
+"<doc_converting_glsl_to_godot_shaders>`\\ 是一个帮助你从常规 GLSL 转换到 "
+"Godot 着色语言的资源。"
+
+msgid "Data types"
+msgstr "数据类型"
+
+msgid "Most GLSL ES 3.0 datatypes are supported:"
+msgstr "支持大多数 GLSL ES 3.0 数据类型："
+
+msgid "Type"
+msgstr "类型"
+
+msgid "Description"
+msgstr "描述"
+
+msgid "**void**"
+msgstr "**void**"
+
+msgid "Void datatype, useful only for functions that return nothing."
+msgstr "Void 数据类型，只对不返回任何内容的函数有用。"
+
+msgid "**bool**"
+msgstr "**bool**"
+
+msgid "Boolean datatype, can only contain ``true`` or ``false``."
+msgstr "布尔数据类型，只能包含 ``true`` 或 ``false``\\ 。"
+
+msgid "**bvec2**"
+msgstr "**bvec2**"
+
+msgid "Two-component vector of booleans."
+msgstr "布尔的两分量向量。"
+
+msgid "**bvec3**"
+msgstr "**bvec3**"
+
+msgid "Three-component vector of booleans."
+msgstr "布尔的三分量向量。"
+
+msgid "**bvec4**"
+msgstr "**bvec4**"
+
+msgid "Four-component vector of booleans."
+msgstr "布尔的四分量向量。"
+
+msgid "**int**"
+msgstr "**int**"
+
+msgid "**ivec2**"
+msgstr "**ivec2**"
+
+msgid "Two-component vector of signed integers."
+msgstr "有符号整数的双分量向量。"
+
+msgid "**ivec3**"
+msgstr "**ivec3**"
+
+msgid "Three-component vector of signed integers."
+msgstr "有符号整数的三分量向量。"
+
+msgid "**ivec4**"
+msgstr "**ivec4**"
+
+msgid "Four-component vector of signed integers."
+msgstr "有符号整数的四分量向量。"
+
+msgid "**uint**"
+msgstr "**uint**"
+
+msgid "Unsigned scalar integer; can't contain negative numbers."
+msgstr "无符号标量整数；不能包含负数。"
+
+msgid "**uvec2**"
+msgstr "**uvec2**"
+
+msgid "Two-component vector of unsigned integers."
+msgstr "无符号整数的两分量向量。"
+
+msgid "**uvec3**"
+msgstr "**uvec3**"
+
+msgid "Three-component vector of unsigned integers."
+msgstr "无符号整数的三分量向量。"
+
+msgid "**uvec4**"
+msgstr "**uvec4**"
+
+msgid "Four-component vector of unsigned integers."
+msgstr "无符号整数的四分量向量。"
+
+msgid "**float**"
+msgstr "**float**"
+
+msgid "**vec2**"
+msgstr "**vec2**"
+
+msgid "Two-component vector of floating-point values."
+msgstr "浮点值的两分量向量。"
+
+msgid "**vec3**"
+msgstr "**vec3**"
+
+msgid "Three-component vector of floating-point values."
+msgstr "浮点值的三分量向量。"
+
+msgid "**vec4**"
+msgstr "**vec4**"
+
+msgid "Four-component vector of floating-point values."
+msgstr "浮点值的四分量向量。"
+
+msgid "**mat2**"
+msgstr "**mat2**"
+
+msgid "2x2 matrix, in column major order."
+msgstr "2x2 矩阵，按列主要顺序。"
+
+msgid "**mat3**"
+msgstr "**mat3**"
+
+msgid "3x3 matrix, in column major order."
+msgstr "3x3 矩阵，按列主要顺序。"
+
+msgid "**mat4**"
+msgstr "**mat4**"
+
+msgid "4x4 matrix, in column major order."
+msgstr "4x4 矩阵，按列主要顺序。"
+
+msgid "**sampler2D**"
+msgstr "**sampler2D**"
+
+msgid "Sampler type for binding 2D textures, which are read as float."
+msgstr "用于绑定被读取为浮点数的 2D 纹理的采样器类型。"
+
+msgid "**isampler2D**"
+msgstr "**isampler2D**"
+
+msgid "Sampler type for binding 2D textures, which are read as signed integer."
+msgstr "用于绑定被读取为有符号整数的 2D 纹理的采样器类型。"
+
+msgid "**usampler2D**"
+msgstr "**usampler2D**"
+
+msgid ""
+"Sampler type for binding 2D textures, which are read as unsigned integer."
+msgstr "用于绑定被读取为无符号整数的 2D 纹理的采样器类型。"
+
+msgid "**sampler2DArray**"
+msgstr "**sampler2DArray**"
+
+msgid "Sampler type for binding 2D texture arrays, which are read as float."
+msgstr "用于绑定被读取为浮点数的 2D 纹理数组的采样器类型。"
+
+msgid "**isampler2DArray**"
+msgstr "**isampler2DArray**"
+
+msgid ""
+"Sampler type for binding 2D texture arrays, which are read as signed integer."
+msgstr "用于绑定被读取为有符号整数的 2D 纹理数组的采样器类型。"
+
+msgid "**usampler2DArray**"
+msgstr "**usampler2DArray**"
+
+msgid ""
+"Sampler type for binding 2D texture arrays, which are read as unsigned "
+"integer."
+msgstr "用于绑定被读取为无符号整数的 2D 纹理数组的采样器类型。"
+
+msgid "**sampler3D**"
+msgstr "**sampler3D**"
+
+msgid "Sampler type for binding 3D textures, which are read as float."
+msgstr "用于绑定被读取为浮点数的 3D 纹理的采样器类型。"
+
+msgid "**isampler3D**"
+msgstr "**isampler3D**"
+
+msgid "Sampler type for binding 3D textures, which are read as signed integer."
+msgstr "用于绑定被读取为有符号整数的 3D 纹理的采样器类型。"
+
+msgid "**usampler3D**"
+msgstr "**usampler3D**"
+
+msgid ""
+"Sampler type for binding 3D textures, which are read as unsigned integer."
+msgstr "用于绑定被读取为无符号整数的 3D 纹理的采样器类型。"
+
+msgid "**samplerCube**"
+msgstr "**samplerCube**"
+
+msgid "Sampler type for binding Cubemaps, which are read as float."
+msgstr "用于绑定被读取为浮点数的立方体贴图的采样器类型。"
+
+msgid "**samplerCubeArray**"
+msgstr "**samplerCubeArray**"
+
+msgid ""
+"Sampler type for binding Cubemap arrays, which are read as float. Only "
+"supported in Forward+ and Mobile, not Compatibility."
+msgstr ""
+"用于绑定被读取为浮点数的立方体贴图数组的采样器类型。仅在 Forward+ 和移动中支"
+"持，兼容不支持。"
+
+msgid "**samplerExternalOES**"
+msgstr "**samplerExternalOES**"
+
+msgid ""
+"External sampler type. Only supported in Compatibility/Android platform."
+msgstr "外部采样器类型。仅在兼容/ Android 平台中支持。"
+
+msgid ""
+"Local variables are not initialized to a default value such as ``0.0``. If "
+"you use a variable without assigning it first, it will contain whatever "
+"value was already present at that memory location, and unpredictable visual "
+"glitches will appear. However, uniforms and varyings are initialized to a "
+"default value."
+msgstr ""
+"局部变量不会被初始化为像 ``0.0`` 这样的默认值。如果你在使用变量之前未对其赋"
+"值，它将包含该内存位置中已经存在的任何值，从而导致不可预测的视觉故障。然而，"
+"uniform 和 varying 变量会被初始化为默认值。"
+
+msgid "Comments"
+msgstr "注释"
+
+msgid ""
+"The shading language supports the same comment syntax as used in C# and C++, "
+"using ``//`` for single-line comments and ``/* */`` for multi-line comments:"
+msgstr ""
+"着色语言支持与 C# 和 C++ 相同的注释语法，使用 ``//`` 进行单行注释和 ``/* */"
+"`` 进行多行注释："
+
+msgid ""
+"Additionally, you can use documentation comments that are displayed in the "
+"inspector when hovering a shader parameter. Documentation comments are "
+"currently only supported when placed immediately above a ``uniform`` "
+"declaration. These documentation comments only support the **multiline** "
+"comment syntax and must use **two** leading asterisks (``/**``) instead of "
+"just one (``/*``):"
+msgstr ""
+"此外，你还可以使用文档注释，当鼠标悬停在着色器参数上时，这些注释会显示在检查"
+"器中。目前，文档注释仅支持紧贴置于 ``uniform`` 声明之上的情况。这些文档注释仅"
+"支持 **多行** 注释语法，且必须使用 **两个** 前导星号（``/**``）而非单个（``/"
+"*``）："
+
+msgid ""
+"The asterisks on the follow-up lines are not required, but are recommended "
+"as per the :ref:`doc_shaders_style_guide`. These asterisks are automatically "
+"stripped by the inspector, so they won't appear in the tooltip."
+msgstr ""
+"后续行上的星号不是必需的，但根据《\\ :ref:`doc_shaders_style_guide`\\ 》建议"
+"使用。这些星号会被检查器自动删除，因此它们不会出现在工具提示中。"
+
+msgid "Casting"
+msgstr "类型转换"
+
+msgid ""
+"Just like GLSL ES 3.0, implicit casting between scalars and vectors of the "
+"same size but different type is not allowed. Casting of types of different "
+"size is also not allowed. Conversion must be done explicitly via "
+"constructors."
+msgstr ""
+"与 GLSL ES 3.0 一样，不允许在大小相同但类型不同的标量和向量之间进行隐式转换。"
+"也不允许强制转换不同大小的类型。转换必须通过构造函数显式完成。"
+
+msgid "Example:"
+msgstr "示例："
+
+msgid ""
+"Default integer constants are signed, so casting is always needed to convert "
+"to unsigned:"
+msgstr "默认整数常量是有符号的，因此转换为无符号时始终需要强制类型转换："
+
+msgid "Members"
+msgstr "成员"
+
+msgid ""
+"Individual scalar members of vector types are accessed via the \"x\", \"y\", "
+"\"z\" and \"w\" members. Alternatively, using \"r\", \"g\", \"b\" and \"a\" "
+"also works and is equivalent. Use whatever fits best for your needs."
+msgstr ""
+"向量类型的单个标量成员可通过“x”、“y”、“z”和“w”成员访问。或者，使"
+"用“r”、“g”、“b”和“a”也行且效果相同。使用最适合你需求的方式。"
+
+msgid ""
+"For matrices, use the ``m[column][row]`` indexing syntax to access each "
+"scalar, or ``m[column]`` to access a vector by column index. For example, "
+"for accessing the y-component of the translation from a mat4 transform "
+"matrix (4th column, 2nd line) you use ``m[3][1]`` or ``m[3].y``."
+msgstr ""
+"对于矩阵，使用 ``m[column][row]`` 索引语法来访问每个标量，或使用 "
+"``m[column]`` 按列索引来访问一个向量。例如，要从 4×4 变换矩阵中访问它的 y 分"
+"量（第 4 列，第 2 行），可使用 ``m[3][1]`` 或 ``m[3].y``\\ 。"
+
+msgid "Constructing"
+msgstr "构造"
+
+msgid "Construction of vector types must always pass:"
+msgstr "向量类型的构造必须始终通过："
+
+msgid ""
+"Construction of matrix types requires vectors of the same dimension as the "
+"matrix, interpreted as columns. You can also build a diagonal matrix using "
+"``matx(float)`` syntax. Accordingly, ``mat4(1.0)`` is an identity matrix."
+msgstr ""
+"矩阵类型的构造需要使用与矩阵维度相同的向量，这些向量被解释为列向量。你也可以"
+"使用 ``matx(float)`` 语法来构建一个对角矩阵。因此， ``mat4(1.0)`` 是一个单位"
+"矩阵。"
+
+msgid ""
+"Matrices can also be built from a matrix of another dimension. There are two "
+"rules:"
+msgstr "矩阵也可以由另一维的矩阵构建。有两个规则："
+
+msgid ""
+"1. If a larger matrix is constructed from a smaller matrix, the additional "
+"rows and columns are set to the values they would have in an identity "
+"matrix. 2. If a smaller matrix is constructed from a larger matrix, the top, "
+"left submatrix of the larger matrix is used."
+msgstr ""
+"1. 由较小的矩阵构建较大的矩阵时，新增的行和列将被设置为单位矩阵中对应的值。 "
+"2. 当由较大的矩阵构建较小的矩阵时，则使用该较大矩阵左上角的子矩阵。"
+
+msgid "Swizzling"
+msgstr "调换"
+
+msgid ""
+"It is possible to obtain any combination of components in any order, as long "
+"as the result is another vector type (or scalar). This is easier shown than "
+"explained:"
+msgstr ""
+"只要结果是另一种向量类型（或标量），就可以按任意顺序获得组件的任意组合。百闻"
+"不如一见："
+
+msgid "Precision"
+msgstr "精度"
+
+msgid ""
+"It is possible to add precision modifiers to datatypes; use them for "
+"uniforms, variables, arguments and varyings:"
+msgstr ""
+"可以为数据类型添加精度修饰符；将它们用于 uniform、变量、参数、varying："
+
+msgid ""
+"Using lower precision for some operations can speed up the math involved (at "
+"the cost of less precision). This is rarely needed in the vertex processor "
+"function (where full precision is needed most of the time), but is often "
+"useful in the fragment processor."
+msgstr ""
+"对某些操作使用较低的精度可以加快所涉及的数学运算速度（但代价是精度较低）。这"
+"在顶点处理函数中鲜有需要（大多数情况下需要全精度），但在片段处理函数中通常很"
+"有用。"
+
+msgid ""
+"Some architectures (mainly mobile) can benefit significantly from this, but "
+"there are downsides such as the additional overhead of conversion between "
+"precisions. Refer to the documentation of the target architecture for "
+"further information. In many cases, mobile drivers cause inconsistent or "
+"unexpected behavior and it is best to avoid specifying precision unless "
+"necessary."
+msgstr ""
+"某些架构（主要是移动架构）可以从中受益匪浅，但也存在一些缺点，例如精度转换的"
+"额外开销。有关更多信息，请参阅目标架构的文档。在许多情况下，移动驱动程序会导"
+"致不一致或意外的行为，除非必要，否则最好避免指定精度。"
+
+msgid "Arrays"
+msgstr "数组"
+
+msgid "Arrays are containers for multiple variables of a similar type."
+msgstr "数组是用于多个相似类型的变量的容器。"
+
+msgid "Local arrays"
+msgstr "局部数组"
+
+msgid ""
+"Local arrays are declared in functions. They can use all of the allowed "
+"datatypes, except samplers. The array declaration follows a C-style syntax: "
+"``[const] + [precision] + typename + identifier + [array size]``."
+msgstr ""
+"局部数组在函数中声明。它们可以使用除采样器之外的所有允许的数据类型。数组声明"
+"遵循 C 样式语法：\\ ``[const] + [precision] + typename + identifier + [array "
+"size]``\\ 。"
+
+msgid "They can be initialized at the beginning like:"
+msgstr "它们可以在开始时被初始化，像这样："
+
+msgid ""
+"You can declare multiple arrays (even with different sizes) in one "
+"expression:"
+msgstr "你可以在一个表达式中声明多个数组（即使大小不同）："
+
+msgid "To access an array element, use the indexing syntax:"
+msgstr "要访问一个数组元素，请使用索引语法："
+
+msgid ""
+"Arrays also have a built-in function ``.length()`` (not to be confused with "
+"the built-in ``length()`` function). It doesn't accept any parameters and "
+"will return the array's size."
+msgstr ""
+"数组还有一个内置函数 ``.length()``\\ （不要与内置函数 ``length()`` 混淆）。它"
+"不接受任何参数，并将返回数组的大小。"
+
+msgid ""
+"If you use an index either below 0 or greater than array size - the shader "
+"will crash and break rendering. To prevent this, use ``length()``, ``if``, "
+"or ``clamp()`` functions to ensure the index is between 0 and the array's "
+"length. Always carefully test and check your code. If you pass a constant "
+"expression or a number, the editor will check its bounds to prevent this "
+"crash."
+msgstr ""
+"如果你使用的索引小于 0 或大于数组大小——着色器将崩溃并中断渲染。为防止这种情"
+"况，请使用 ``length()``\\ 、\\ ``if`` 或 ``clamp()`` 函数来确保索引介于 0 和"
+"数组长度之间。务必仔细测试和检查你的代码。如果你传递一个常量表达式或数字，编"
+"辑器将检查其边界以防止这种崩溃。"
+
+msgid "Global arrays"
+msgstr "全局数组"
+
+msgid ""
+"You can declare arrays in global space as either ``const`` or ``uniform``:"
+msgstr "你可以在全局作用域中将数组声明为 ``const`` 或 ``uniform``\\："
+
+msgid ""
+"Global arrays use the same syntax as local arrays, except with a ``const`` "
+"or ``uniform`` added to their declaration. Note that uniform arrays can't "
+"have a default value."
+msgstr ""
+"全局数组的语法与局部数组相同，只是在声明时需要添加 ``const`` 或 "
+"``uniform``\\。注意，uniform 数组不能有默认值。"
+
+msgid "Constants"
+msgstr "常量"
+
+msgid ""
+"Use the ``const`` keyword before the variable declaration to make that "
+"variable immutable, which means that it cannot be modified. All basic types, "
+"except samplers can be declared as constants. Accessing and using a constant "
+"value is slightly faster than using a uniform. Constants must be initialized "
+"at their declaration."
+msgstr ""
+"在变量声明前使用 ``const`` 关键字，可以使该变量不可变， 这意味着它不能被修"
+"改。除采样器外的所有基本类型都可以被声明为常量。访问和使用常量值的速度比使用 "
+"uniform 的速度略快。常量必须在其声明时被初始化。"
+
+msgid ""
+"Constants cannot be modified and additionally cannot have hints, but "
+"multiple of them (if they have the same type) can be declared in a single "
+"expression e.g"
+msgstr ""
+"常量不能被修改，也不能有提示，但可以在单个表达式中声明多个常量（如果它们具有"
+"相同的类型），例如"
+
+msgid "Similar to variables, arrays can also be declared with ``const``."
+msgstr "与变量类似，数组也可以用 ``const`` 来声明。"
+
+msgid ""
+"Constants can be declared both globally (outside of any function) or locally "
+"(inside a function). Global constants are useful when you want to have "
+"access to a value throughout your shader that does not need to be modified. "
+"Like uniforms, global constants are shared between all shader stages, but "
+"they are not accessible outside of the shader."
+msgstr ""
+"常量既可以被全局声明（在任何函数之外），也可以被本地声明（在函数内部）。当你"
+"想要访问整个着色器中不需要修改的值时，全局常量非常有用。与 uniform 一样，全局"
+"常量在所有着色器阶段之间共享，但在着色器外部无法访问。"
+
+msgid ""
+"Constants of the ``float`` type must be initialized using ``.`` notation "
+"after the decimal part or by using the scientific notation. The optional "
+"``f`` post-suffix is also supported."
+msgstr ""
+"``float`` 类型常量的初始化必须使用整数部分后的 ``.`` 符号或科学计数法。还支持"
+"可选的 ``f`` 后缀。"
+
+msgid ""
+"Constants of the ``uint`` (unsigned int) type must have a ``u`` suffix to "
+"differentiate them from signed integers. Alternatively, this can be done by "
+"using the ``uint(x)`` built-in conversion function."
+msgstr ""
+"``uint``\\ （无符号整数）类型的常量必须有后缀 ``u``\\ ，以区别于有符号整数。"
+"或者，也可以使用 ``uint(x)`` 内置转换函数来实现这一点。"
+
+msgid "Structs"
+msgstr "结构体"
+
+msgid ""
+"Structs are compound types which can be used for better abstraction of "
+"shader code. You can declare them at the global scope like:"
+msgstr ""
+"结构体是一种复合类型，可以对着色器代码进行更好的抽象。你可以在全局范围内声明"
+"它们，如下所示："
+
+msgid "After declaration, you can instantiate and initialize them like:"
+msgstr "声明后，你可以像这样实例化和初始化它们："
+
+msgid "Or use struct constructor for same purpose:"
+msgstr "或者使用结构体的构造函数达到同样的效果："
+
+msgid ""
+"Structs may contain other struct or array, you can also instance them as "
+"global constant:"
+msgstr "结构体中可以包含其他结构体或者数组，你还可以把它们作为全局常量实例化："
+
+msgid "You can also pass them to functions:"
+msgstr "也可以把它们传递给函数："
+
+msgid "Operators"
+msgstr "运算符"
+
+msgid ""
+"Godot shading language supports the same set of operators as GLSL ES 3.0. "
+"Below is the list of them in precedence order:"
+msgstr ""
+"Godot 着色语言支持与 GLSL ES 3.0 相同的运算符集。以下是按优先顺序列出的运算符"
+"列表："
+
+msgid "Precedence"
+msgstr "优先级"
+
+msgid "Class"
+msgstr "类"
+
+msgid "Operator"
+msgstr "运算符"
+
+msgid "1 (highest)"
+msgstr "1（最高）"
+
+msgid "parenthetical grouping"
+msgstr "括号分组"
+
+msgid "**()**"
+msgstr "**()**"
+
+msgid "2"
+msgstr "2"
+
+msgid "unary"
+msgstr "一元"
+
+msgid "**+, -, !, ~**"
+msgstr "**+, -, !, ~**"
+
+msgid "3"
+msgstr "3"
+
+msgid "multiplicative"
+msgstr "乘除余"
+
+msgid "**/, \\*, %**"
+msgstr "**/, \\*, %**"
+
+msgid "4"
+msgstr "4"
+
+msgid "additive"
+msgstr "加减法"
+
+msgid "**+, -**"
+msgstr "**+, -**"
+
+msgid "5"
+msgstr "5"
+
+msgid "bit-wise shift"
+msgstr "按位移位"
+
+msgid "**<<, >>**"
+msgstr "**<<, >>**"
+
+msgid "6"
+msgstr "6"
+
+msgid "relational"
+msgstr "关系比较"
+
+msgid "**<, >, <=, >=**"
+msgstr "**<, >, <=, >=**"
+
+msgid "7"
+msgstr "7"
+
+msgid "equality"
+msgstr "相等比较"
+
+msgid "**==, !=**"
+msgstr "**==, !=**"
+
+msgid "8"
+msgstr "8"
+
+msgid "bit-wise AND"
+msgstr "按位与"
+
+msgid "**&**"
+msgstr "**&**"
+
+msgid "9"
+msgstr "9"
+
+msgid "bit-wise exclusive OR"
+msgstr "按位异或"
+
+msgid "**^**"
+msgstr "**^**"
+
+msgid "10"
+msgstr "10"
+
+msgid "bit-wise inclusive OR"
+msgstr "按位或"
+
+msgid "**|**"
+msgstr "**|**"
+
+msgid "11"
+msgstr "11"
+
+msgid "logical AND"
+msgstr "逻辑与"
+
+msgid "**&&**"
+msgstr "**&&**"
+
+msgid "12 (lowest)"
+msgstr "12（最低）"
+
+msgid "logical inclusive OR"
+msgstr "逻辑或"
+
+msgid "**||**"
+msgstr "**||**"
+
+msgid ""
+"Most operators that accept vectors or matrices (multiplication, division, "
+"etc) operate component-wise, meaning the function is applied to the first "
+"value of each vector and then on the second value of each vector, etc. Some "
+"examples:"
+msgstr ""
+"大多数向量或矩阵的运算（乘法、除法等）都是按分量操作的，这意味着运算会先作用"
+"于每个向量的第一个值，然后是每个向量的第二个值，以此类推。以下是一些示例："
+
+msgid "Operation"
+msgstr "运算"
+
+msgid "Equivalent Scalar Operation"
+msgstr "等价标量运算"
+
+msgid "``vec3(4, 5, 6) + 2``"
+msgstr "``vec3(4, 5, 6) + 2``"
+
+msgid "``vec3(4 + 2, 5 + 2, 6 + 2)``"
+msgstr "``vec3(4 + 2, 5 + 2, 6 + 2)``"
+
+msgid "``vec2(3, 4) * vec2(10, 20)``"
+msgstr "``vec2(3, 4) * vec2(10, 20)``"
+
+msgid "``vec2(3 * 10, 4 * 20)``"
+msgstr "``vec2(3 * 10, 4 * 20)``"
+
+msgid "``mat2(vec2(1, 2), vec2(3, 4)) + 10``"
+msgstr "``mat2(vec2(1, 2), vec2(3, 4)) + 10``"
+
+msgid "``mat2(vec2(1 + 10, 2 + 10), vec2(3 + 10, 4 + 10))``"
+msgstr "``mat2(vec2(1 + 10, 2 + 10), vec2(3 + 10, 4 + 10))``"
+
+msgid ""
+"The `GLSL Language Specification <http://www.opengl.org/registry/doc/"
+"GLSLangSpec.4.30.6.pdf>`_ says under section 5.10 Vector and Matrix "
+"Operations:"
+msgstr ""
+"`GLSL 语言规范 <http://www.opengl.org/registry/doc/GLSLangSpec.4.30.6.pdf>`_ "
+"在第 5.10 节向量和矩阵运算中指出："
+
+msgid ""
+"With a few exceptions, operations are component-wise. Usually, when an "
+"operator operates on a vector or matrix, it is operating independently on "
+"each component of the vector or matrix, in a component-wise fashion. [...] "
+"The exceptions are matrix multiplied by vector, vector multiplied by matrix, "
+"and matrix multiplied by matrix. These do not operate component-wise, but "
+"rather perform the correct linear algebraic multiply."
+msgstr ""
+"除少数情况外，大多数运算都是按分量进行的。通常，当运算符作用于向量或矩阵时，"
+"它会以按分量的方式独立地作用于向量或矩阵的每个分量。[...] 例外情况包括矩阵乘"
+"以向量、向量乘以矩阵以及矩阵乘以矩阵。这些运算不是按分量进行的，而是执行正确"
+"的线性代数乘法。"
+
+msgid "Flow control"
+msgstr "控制流"
+
+msgid "Godot Shading language supports the most common types of flow control:"
+msgstr "Godot 着色语言支持最常见的控制流类型："
+
+msgid ""
+"Keep in mind that in modern GPUs, an infinite loop can exist and can freeze "
+"your application (including editor). Godot can't protect you from this, so "
+"be careful not to make this mistake!"
+msgstr ""
+"请记住，在现代 GPU 中，无限循环可以存在，并可能冻结你的应用程序（包括编辑"
+"器）。Godot 无法保护你免受这种影响，因此请小心，不要犯这种错误！"
+
+msgid ""
+"Also, when comparing floating-point values against a number, make sure to "
+"compare them against a *range* instead of an exact number."
+msgstr ""
+"此外，将浮点值与数字进行比较时，请确保将它们与一个\\ *范围*\\ 而不是一个精确"
+"数字进行比较。"
+
+msgid ""
+"A comparison like ``if (value == 0.3)`` may not evaluate to ``true``. "
+"Floating-point math is often approximate and can defy expectations. It can "
+"also behave differently depending on the hardware."
+msgstr ""
+"类似 ``if (value == 0.3)`` 的比较可能不会评估为 ``true``\\ 。浮点数学通常是近"
+"似的，可能会与预期不符。它还可能根据硬件的不同而表现不同。"
+
+msgid "**Don't** do this."
+msgstr "**不要**\\ 这样做。"
+
+msgid ""
+"Instead, always perform a range comparison with an epsilon value. The larger "
+"the floating-point number (and the less precise the floating-point number), "
+"the larger the epsilon value should be."
+msgstr ""
+"相反，始终使用 epsilon 值进行范围比较。浮点数越大（浮点数越不精确），则 "
+"epsilon 值应该越大。"
+
+msgid ""
+"See `floating-point-gui.de <https://floating-point-gui.de/>`__ for more "
+"information."
+msgstr ""
+"有关更多信息，请参阅 `floating-point-gui.de <https://floating-point-gui.de/"
+">`__\\ 。"
+
+msgid "Discarding"
+msgstr "丢弃"
+
+msgid ""
+"Fragment, light, and custom functions (called from fragment or light) can "
+"use the ``discard`` keyword. If used, the fragment is discarded and nothing "
+"is written."
+msgstr ""
+"片段函数、光照函数以及自定义函数（从片段或光照中调用）可使用 ``discard`` 关键"
+"字。若使用该关键字，则丢弃当前片段且不写入任何数据。"
+
+msgid ""
+"Beware that ``discard`` has a performance cost when used, as it will prevent "
+"the depth prepass from being effective on any surfaces using the shader. "
+"Also, a discarded pixel still needs to be rendered in the vertex shader, "
+"which means a shader that uses ``discard`` on all of its pixels is still "
+"more expensive to render compared to not rendering any object in the first "
+"place."
+msgstr ""
+"请注意，使用 ``discard`` 会降低性能，因为它会阻止预深度阶段在使用着色器的任何"
+"表面上起作用。此外，被丢弃的像素仍需在顶点着色器中渲染，这意味着，与一开始就"
+"不渲染任何对象相比，在所有像素上使用 ``discard`` 的着色器的渲染成本仍然更高。"
+
+msgid "Functions"
+msgstr "函数"
+
+msgid ""
+"It is possible to define functions in a Godot shader. They use the following "
+"syntax:"
+msgstr "可以在 Godot 着色器中定义函数。它们使用以下语法："
+
+msgid ""
+"You can only use functions that have been defined above (higher in the "
+"editor) the function from which you are calling them. Redefining a function "
+"that has already been defined above (or is a built-in function name) will "
+"cause an error."
+msgstr ""
+"你只能使用已在调用它们的函数上方（编辑器中较高位置）定义的函数。重新定义已在"
+"上方定义的函数（或使用内置函数名称）将导致错误。"
+
+msgid "Function arguments can have special qualifiers:"
+msgstr "函数参数可以有特殊的限定符："
+
+msgid "**in**: Means the argument is only for reading (default)."
+msgstr "**in**\\ ：表示该参数仅供读取（默认）。"
+
+msgid "**out**: Means the argument is only for writing."
+msgstr "**out**\\ ：表示该参数仅供写入。"
+
+msgid "**inout**: Means the argument is fully passed via reference."
+msgstr "**inout**\\ ：表示参数完全通过引用传递。"
+
+msgid ""
+"**const**: Means the argument is a constant and cannot be changed, may be "
+"combined with **in** qualifier."
+msgstr "**const**\\ ：表示参数是常量且不能更改，可以与 **in** 限定符结合使用。"
+
+msgid "Example below:"
+msgstr "以下为示例："
+
+msgid ""
+"Function overloading is supported. You can define multiple functions with "
+"the same name, but different arguments. Note that `implicit casting "
+"<Casting_>`_ in overloaded function calls is not allowed, such as from "
+"``int`` to ``float`` (``1`` to ``1.0``)."
+msgstr ""
+"支持函数重载。你可以定义多个同名但参数不同的函数。需要注意的是，在重载函数调"
+"用中不允许 `隐式类型转换 <Casting_>`_ ，例如从 ``int`` 转换为 ``float`` "
+"（ ``1`` 转换为 ``1.0`` ）。"
+
+msgid "Varyings"
+msgstr "Varying"
+
+msgid ""
+"To send data from the vertex to the fragment (or light) processor function, "
+"*varyings* are used. They are set for every primitive vertex in the *vertex "
+"processor*, and the value is interpolated for every pixel in the *fragment "
+"processor*."
+msgstr ""
+"要从顶点处理器函数往片段（或者灯光）处理器函数里发送数据，可以使用 "
+"*varying*\\ 。它们在\\ *顶点处理器*\\ 中为每个图元顶点设置，并且该值对\\ *片"
+"段处理器*\\ 中的每个像素进行插值。"
+
+msgid "Varying can also be an array:"
+msgstr "Varying 也可以是一个数组："
+
+msgid ""
+"It's also possible to send data from *fragment* to *light* processors using "
+"*varying* keyword. To do so you can assign it in the *fragment* and later "
+"use it in the *light* function."
+msgstr ""
+"也可以使用 *varying* 关键字将数据从\\ *片段*\\ 处理器发送到\\ *灯光*\\ 处理"
+"器。在\\ *片段*\\ 函数中赋值，然后在\\ *灯光*\\ 函数中使用即可。"
+
+msgid ""
+"Note that varying may not be assigned in custom functions or a *light "
+"processor* function like:"
+msgstr ""
+"请注意，在自定义函数或\\ *灯光处理器*\\ 函数中可能无法为 varying 赋值，例如："
+
+msgid ""
+"This limitation was introduced to prevent incorrect usage before "
+"initialization."
+msgstr "加入这一限制的目的是为了防止在初始化前进行错误的使用。"
+
+msgid "Interpolation qualifiers"
+msgstr "插值限定符"
+
+msgid ""
+"Certain values are interpolated during the shading pipeline. You can modify "
+"how these interpolations are done by using *interpolation qualifiers*."
+msgstr ""
+"某些值在着色管道期间进行插值。你可以使用\\ *插值限定符*\\ 来修改这些插值的方"
+"式。"
+
+msgid "There are two possible interpolation qualifiers:"
+msgstr "有两种可能的插值限定符："
+
+msgid "Qualifier"
+msgstr "限定符"
+
+msgid "**flat**"
+msgstr "**flat**"
+
+msgid "The value is not interpolated."
+msgstr "该值未插值。"
+
+msgid "**smooth**"
+msgstr "**smooth**"
+
+msgid ""
+"The value is interpolated in a perspective-correct fashion. This is the "
+"default."
+msgstr "该值以透视校正方式进行插值。这是默认值。"
+
+msgid "Uniforms"
+msgstr "Uniform"
+
+msgid ""
+"Passing values to shaders is possible with *uniforms*, which are defined in "
+"the global scope of the shader, outside of functions. When a shader is later "
+"assigned to a material, the uniforms will appear as editable parameters in "
+"the material's inspector. Uniforms can't be written from within the shader. "
+"Any :ref:`data type <doc_shading_language_data_types>` except for ``void`` "
+"can be a uniform."
+msgstr ""
+"可通过 *uniform* 向着色器传递值，这些变量定义在着色器的全局作用域（函数之"
+"外）。当着色器被指定给材质时，uniform 将作为可编辑参数显示在材质的检查器中。"
+"Uniform 不可在着色器内部写入。除 ``void`` 外的任何 :ref:`数据类型 "
+"<doc_shading_language_data_types>` 均可作为 uniform。"
+
+msgid ""
+"You can set uniforms in the editor in the material's inspector. Alternately, "
+"you can set them :ref:`from code "
+"<doc_shading_language_setting_uniforms_from_code>`."
+msgstr ""
+"你可在编辑器的材质检查器中设置 uniform 变量，也可 :ref:`通过代码设置 "
+"<doc_shading_language_setting_uniforms_from_code>` 。"
+
+msgid "Uniform hints"
+msgstr "Uniform 提示"
+
+msgid ""
+"Godot provides optional uniform hints to make the compiler understand what "
+"the uniform is used for, and how the editor should allow users to modify it."
+msgstr ""
+"Godot 提供了可选的 uniform 提示，用于让编译器理解 uniform 的用途，以及指示编"
+"辑器提供什么样的控件来让用户修改它。"
+
+msgid "Uniforms can also be assigned default values:"
+msgstr "Uniform 也可以分配默认值："
+
+msgid ""
+"Note that when adding a default value and a hint, the default value goes "
+"after the hint."
+msgstr "请注意，同时添加默认值和提示时，默认值应该写在提示的后面。"
+
+msgid "Full list of uniform hints below:"
+msgstr "以下是完整的提示列表："
+
+msgid "Hint"
+msgstr "提示"
+
+msgid "**vec3, vec4**"
+msgstr "**vec3、vec4**"
+
+msgid "source_color"
+msgstr "source_color"
+
+msgid "Used as color."
+msgstr "用作颜色。"
+
+msgid "hint_enum(\"String1\", \"String2\")"
+msgstr "hint_enum(\"String1\", \"String2\")"
+
+msgid "Displays int input as a dropdown widget in the editor."
+msgstr "在编辑器中以下拉菜单形式显示整数输入。"
+
+msgid "**int, float**"
+msgstr "**int、float**"
+
+msgid "hint_range(min, max[, step])"
+msgstr "hint_range(min, max[, step])"
+
+msgid "Restricted to values in a range (with min/max/step)."
+msgstr "限制取值范围（最小值/最大值/步长）。"
+
+msgid "Used as albedo color."
+msgstr "用作反照颜色。"
+
+msgid "hint_normal"
+msgstr "hint_normal"
+
+msgid "Used as normalmap."
+msgstr "用作法线贴图。"
+
+msgid "hint_default_white"
+msgstr "hint_default_white"
+
+msgid "As value or albedo color, default to opaque white."
+msgstr "作为值或反照颜色，默认为不透明白色。"
+
+msgid "hint_default_black"
+msgstr "hint_default_black"
+
+msgid "As value or albedo color, default to opaque black."
+msgstr "作为值或反照颜色，默认为不透明黑色。"
+
+msgid "hint_default_transparent"
+msgstr "hint_default_transparent"
+
+msgid "As value or albedo color, default to transparent black."
+msgstr "作为值或反照颜色，默认为透明黑色。"
+
+msgid "hint_anisotropy"
+msgstr "hint_anisotropy"
+
+msgid "As flowmap, default to right."
+msgstr "作为 FlowMap，默认为右。"
+
+msgid "hint_roughness[_r, _g, _b, _a, _normal, _gray]"
+msgstr "hint_roughness[_r, _g, _b, _a, _normal, _gray]"
+
+msgid ""
+"Used for roughness limiter on import (attempts reducing specular aliasing). "
+"``_normal`` is a normal map that guides the roughness limiter, with "
+"roughness increasing in areas that have high-frequency detail."
+msgstr ""
+"用于导入时的粗糙度限制器（尝试减少镜面锯齿）。\\ ``_normal``\\ 是引导粗糙度限"
+"制器的法线贴图，在具有高频细节的区域中粗糙度会增加。"
+
+msgid "filter[_nearest, _linear][_mipmap][_anisotropic]"
+msgstr "filter[_nearest, _linear][_mipmap][_anisotropic]"
+
+msgid "Enabled specified texture filtering."
+msgstr "启用指定的纹理过滤。"
+
+msgid "repeat[_enable, _disable]"
+msgstr "repeat[_enable, _disable]"
+
+msgid "Enabled texture repeating."
+msgstr "启用纹理重复。"
+
+msgid "hint_screen_texture"
+msgstr "hint_screen_texture"
+
+msgid "Texture is the screen texture."
+msgstr "纹理是屏幕纹理。"
+
+msgid "hint_depth_texture"
+msgstr "hint_depth_texture"
+
+msgid "Texture is the depth texture."
+msgstr "纹理是深度纹理。"
+
+msgid "hint_normal_roughness_texture"
+msgstr "hint_normal_roughness_texture"
+
+msgid "Texture is the normal roughness texture (only supported in Forward+)."
+msgstr "纹理是法线粗糙度纹理（仅在 Forward+ 中受支持）。"
+
+msgid "Using ``hint_enum``"
+msgstr "使用 ``hint_enum``"
+
+msgid ""
+"You can access ``int`` values as a readable dropdown widget using the "
+"``hint_enum`` uniform:"
+msgstr ""
+"你可以使用 ``hint_enum`` uniform，通过一个可读的下拉菜单来访问 ``int`` 值："
+
+msgid ""
+"You can assign explicit values to the ``hint_enum`` uniform using colon "
+"syntax similar to GDScript:"
+msgstr ""
+"你可以使用类似于 GDScript 的冒号语法为 ``hint_enum`` uniform 显式赋值："
+
+msgid ""
+"The value will be stored as an integer, corresponding to the index of the "
+"selected option (i.e. ``0``, ``1``, or ``2``) or the value assigned by colon "
+"syntax (i.e. ``30``, ``60``, or ``200``). When setting the value with "
+"``set_shader_parameter()``, you must use the integer value, not the "
+"``String`` name."
+msgstr ""
+"该值将作为整数存储，其值为所选选项的索引（例如 ``0``/、 ``1`` 或 ``2``/）或通"
+"过冒号语法分配的值（例如 ``30``/、 ``60`` 或 ``200``/）。当使用 "
+"``set_shader_parameter()`` 方法设置该值时，必须使用整数而非 ``String`` 名称。"
+
+msgid "Using ``source_color``"
+msgstr "使用 ``source_color``"
+
+msgid ""
+"Any texture which contains *sRGB color data* requires a ``source_color`` "
+"hint in order to be correctly sampled. This is because Godot renders in "
+"linear color space, but some textures contain sRGB color data. If this hint "
+"is not used, the texture will appear washed out."
+msgstr ""
+"任何包含 *sRGB 颜色数据*\\的纹理都需要使用 ``source_color`` 提示才能被正确采"
+"样。这是因为 Godot 在线性色彩空间中进行渲染，但某些纹理包含的是 sRGB 颜色数"
+"据。如果未使用此提示，纹理将看起来颜色发白。"
+
+msgid ""
+"Albedo and color textures should typically have a ``source_color`` hint. "
+"Normal, roughness, metallic, and height textures typically do not need a "
+"``source_color`` hint."
+msgstr ""
+"反照率和颜色纹理通常应具有 ``source_color`` 提示。法线、粗糙度、金属度和高度"
+"纹理通常不需要 ``source_color`` 提示。"
+
+msgid ""
+"Using ``source_color`` hint is required in the Forward+ and Mobile "
+"renderers, and in ``canvas_item`` shaders when :ref:`HDR "
+"2D<class_ProjectSettings_property_rendering/viewport/hdr_2d>` is enabled. "
+"The ``source_color`` hint is optional for the Compatibility renderer, and "
+"for ``canvas_item`` shaders if ``HDR 2D`` is disabled. However, it is "
+"recommended to always use the ``source_color`` hint, because it works even "
+"if you change renderers or disable ``HDR 2D``."
+msgstr ""
+"Forward+ 和 Mobile 渲染器，以及启用了 :ref:`HDR "
+"2D<class_ProjectSettings_property_rendering/viewport/hdr_2d>` 的 "
+"``canvas_item`` 着色器，必须使用 ``source_color`` 提示。对于兼容渲染器，以及"
+"禁用了 ``HDR 2D`` 的 ``canvas_item`` 着色器， ``source_color`` 提示是可选的。"
+"然而，建议始终使用 ``source_color`` 提示，因为即使你更改了渲染器或禁用了 "
+"``HDR 2D``\\，它仍能正常工作。"
+
+msgid "Uniform groups"
+msgstr "Uniform 组"
+
+msgid ""
+"To group multiple uniforms in a section in the inspector, you can use a "
+"``group_uniform`` keyword like this:"
+msgstr ""
+"如果你需要在检查器中将多个 uniform 分组到某个特定的分类里，可以使用 "
+"`group_uniform` 关键字，就像这样："
+
+msgid "You can close the group by using:"
+msgstr "结束分组的方法是："
+
+msgid ""
+"The syntax also supports subgroups (it's not mandatory to declare the base "
+"group before this):"
+msgstr "这一语法还支持子分组（在此之前不需要声明基础分组）："
+
+msgid "Global uniforms"
+msgstr "全局 Uniform"
+
+msgid ""
+"Sometimes, you want to modify a parameter in many different shaders at once. "
+"With a regular uniform, this takes a lot of work as all these shaders need "
+"to be tracked and the uniform needs to be set for each of them. Global "
+"uniforms allow you to create and update uniforms that will be available in "
+"all shaders, in every shader type (``canvas_item``, ``spatial``, "
+"``particles``, ``sky`` and ``fog``)."
+msgstr ""
+"有时你会想要统一修改很多不同着色器中的某个参数。使用普通的 uniform 就会很麻"
+"烦，因为你需要记录这些着色器，并且需要一个个地设 uniform。使用全局 uniform 就"
+"可以创建并更新所有着色器中均可以使用的 uniform，所有类型的着色器都适用（\\ "
+"``canvas_item``\\ 、\\ ``spatial``\\ 、\\ ``particles``\\ 、\\ ``sky``\\ 、"
+"\\ ``fog``\\ ）。"
+
+msgid ""
+"Global uniforms are especially useful for environmental effects that affect "
+"many objects in a scene, like having foliage bend when the player is nearby, "
+"or having objects move with the wind."
+msgstr ""
+"全局 uniform 适用于能够影响场景中大量对象的环境效果，例如玩家在附近时的植被弯"
+"曲效果、物体随风移动的效果等。"
+
+msgid ""
+"*Global uniforms* are not the same as *global scope* for an individual "
+"shader. While regular uniforms are defined outside of shader functions and "
+"are therefore the global scope of the shader, global uniforms are global to "
+"all shaders in the entire project (but within each shader, are also in the "
+"global scope)."
+msgstr ""
+"*全局 uniform* 与单个着色器的 *全局作用域* 并不相同。普通 uniform 定义在着色"
+"器函数之外，因此属于该着色器的全局作用域；而全局 uniform 则是整个项目中所有着"
+"色器共用的全局变量（但在每个着色器内部，它们同样处于全局作用域中）。"
+
+msgid ""
+"To create a global uniform, open the **Project Settings** then go to the "
+"**Shader Globals** tab. Specify a name for the uniform (case-sensitive) and "
+"a type, then click **Add** in the top-right corner of the dialog. You can "
+"then edit the value assigned to the uniform by clicking the value in the "
+"list of uniforms:"
+msgstr ""
+"要创建全局 uniform，请打开\\ **项目设置**\\ ，切换到\\ **着色器全局量**\\ 选"
+"项卡。为 uniform 指定名称（区分大小写）和类型，然后点击对话框右上角的\\ **添"
+"加**\\ 。点击 uniform 列表中的值即可编辑 uniform 的取值："
+
+msgid ""
+"Adding a global uniform in the Shader Globals tab of the Project Settings"
+msgstr "在“项目设置”的“着色器全局量”中添加全局 uniform"
+
+msgid "After creating a global uniform, you can use it in a shader as follows:"
+msgstr "创建全局 uniform 之后，在着色器中的使用方法如下："
+
+msgid ""
+"Note that the global uniform *must* exist in the Project Settings at the "
+"time the shader is saved, or compilation will fail. While you can assign a "
+"default value using ``global uniform vec4 my_color = ...`` in the shader "
+"code, it will be ignored as the global uniform must always be defined in the "
+"Project Settings anyway."
+msgstr ""
+"请注意，保存着色器的时候该全局 uniform *必须*\\ 在“项目设置”中存在，否则编译"
+"就会失败。虽然可以在着色器代码中使用 ``global uniform vec4 my_color = ...`` "
+"赋默认值，但是这个默认值会被忽略，因为全局 uniform 必须在“项目设置”中定义。"
+
+msgid ""
+"To change the value of a global uniform at runtime, use "
+"the :ref:`RenderingServer.global_shader_parameter_set "
+"<class_RenderingServer_method_global_shader_parameter_set>` method in a "
+"script:"
+msgstr ""
+"要在运行时修改全局 uniform 的值，请在脚本中使"
+"用 :ref:`RenderingServer.global_shader_parameter_set "
+"<class_RenderingServer_method_global_shader_parameter_set>` 方法："
+
+msgid ""
+"Assigning global uniform values can be done as many times as desired without "
+"impacting performance, as setting data doesn't require synchronization "
+"between the CPU and GPU."
+msgstr ""
+"全局 uniform 可以重复赋值，不会影响性能，因为设置数据不需要在 CPU 和 GPU 之间"
+"进行同步。"
+
+msgid "You can also add or remove global uniforms at runtime:"
+msgstr "你还可以在运行时添加和移除全局 uniform："
+
+msgid ""
+"Adding or removing global uniforms at runtime has a performance cost, "
+"although it's not as pronounced compared to getting global uniform values "
+"from a script (see the warning below)."
+msgstr ""
+"在运行时添加或移除全局 uniform 会产生性能开销，尽管与从脚本中获取全局 "
+"uniform 值相比，此开销并不显著（见下方的警告提示）。"
+
+msgid ""
+"While you *can* query the value of a global uniform at runtime in a script "
+"using ``RenderingServer.global_shader_parameter_get(\"uniform_name\")``, "
+"this has a large performance penalty as the rendering thread needs to "
+"synchronize with the calling thread."
+msgstr ""
+"虽然你\\ *可以*\\在运行时通过脚本使用 "
+"``RenderingServer.global_shader_parameter_get(\"uniform_name\")`` 查询全局 "
+"uniform 的值，但这会带来较大的性能损耗，因为渲染线程需要与调用线程进行同步。"
+
+msgid ""
+"Therefore, it's not recommended to read global shader uniform values "
+"continuously in a script. If you need to read values in a script after "
+"setting them, consider creating an :ref:`autoload <doc_singletons_autoload>` "
+"where you store the values you need to query at the same time you're setting "
+"them as global uniforms."
+msgstr ""
+"因此，不建议在脚本中频繁读取全局着色器 uniform 的取值。如果你需要在设值之后用"
+"脚本读取，请考虑创建一个\\ :ref:`自动加载 <doc_singletons_autoload>`\\ ，在设"
+"置需要查询的全局 uniform 的同时保存对应的值。"
+
+msgid "Per-instance uniforms"
+msgstr "单实例 uniform"
+
+msgid ""
+"Per-instance uniforms are available in both ``canvas_item`` (2D) and "
+"``spatial`` (3D) shaders."
+msgstr ""
+"单实例 uniform 在 ``canvas_item``\\（2D）和 ``spatial``\\（3D）着色器中均可使"
+"用。"
+
+msgid ""
+"Sometimes, you want to modify a parameter on each node using the material. "
+"As an example, in a forest full of trees, when you want each tree to have a "
+"slightly different color that is editable by hand. Without per-instance "
+"uniforms, this requires creating a unique material for each tree (each with "
+"a slightly different hue). This makes material management more complex, and "
+"also has a performance overhead due to the scene requiring more unique "
+"material instances. Vertex colors could also be used here, but they'd "
+"require creating unique copies of the mesh for each different color, which "
+"also has a performance overhead."
+msgstr ""
+"有时，你希望使用材质修改每个节点上的某个参数。例如，在一个充满树木的森林中，"
+"你想让每棵树都有一个可以手动调整、略微不同的颜色。若不使用单实例 uniform，则"
+"需为每棵树创建单独的材质（每个材质具有略微不同的色相）。这使得材质管理变得复"
+"杂，并且由于场景需要更多单独的材质实例，还会产生性能开销。虽然可以使用顶点颜"
+"色来实现，但该方法需要为每种不同的颜色创建单独的网格副本，同样会带来性能开"
+"销。"
+
+msgid ""
+"Per-instance uniforms are set on each GeometryInstance3D, rather than on "
+"each Material instance. Take this into account when working with meshes that "
+"have multiple materials assigned to them, or MultiMesh setups."
+msgstr ""
+"单实例 uniform 设置在每个 GeometryInstance3D 上，而不是在每个材质实例上。在处"
+"理指定了多种材质的网格或多重网格设置时，请考虑这一点。"
+
+msgid ""
+"After saving the shader, you can change the per-instance uniform's value "
+"using the inspector:"
+msgstr "在保存着色器后，你可以在检查器中更改单实例 uniform 的值："
+
+msgid ""
+"Setting a per-instance uniform's value in the GeometryInstance3D section of "
+"the inspector"
+msgstr "在检查器中的 GeometryInstance3D 部分设置单实例 uniform 的值"
+
+msgid ""
+"Per-instance uniform values can also be set at runtime "
+"using :ref:`set_instance_shader_parameter "
+"<class_GeometryInstance3D_method_set_instance_shader_parameter>` method on a "
+"node that inherits from :ref:`class_GeometryInstance3D`:"
+msgstr ""
+"单实例 uniform 的值也可在运行时通过调用继承"
+"自 :ref:`class_GeometryInstance3D`: 的节点上"
+"的 :ref:`set_instance_shader_parameter "
+"<class_GeometryInstance3D_method_set_instance_shader_parameter>` 方法进行设"
+"置："
+
+msgid ""
+"When using per-instance uniforms, there are some restrictions you should be "
+"aware of:"
+msgstr "在使用单实例 uniform 时，你应该注意一些限制："
+
+msgid ""
+"**Per-instance uniforms do not support textures or arrays**, only regular "
+"scalar and vector types. As a workaround, you can pass a texture array as a "
+"regular uniform, then pass the index of the texture to be drawn using a per-"
+"instance uniform."
+msgstr ""
+"**单实例 uniform 不支持纹理或数组**\\ ，仅支持常规的标量与向量类型。作为一种"
+"变通方案，你可以将纹理数组作为常规 uniform 传入，然后通过单实例 uniform 来指"
+"定需要绘制的纹理索引。"
+
+msgid "There is a practical maximum limit of 16 instance uniforms per shader."
+msgstr "每个着色器最多可使用 16 个单实例 uniform。"
+
+msgid ""
+"If your mesh uses multiple materials, the parameters for the first mesh "
+"material found will \"win\" over the subsequent ones, unless they have the "
+"same name, index *and* type. In this case, all parameters are affected "
+"correctly."
+msgstr ""
+"如果你的网格使用了多个材质，则第一个被找到的网格材质中的参数将“优先生效”于后"
+"续材质中的参数，除非这些参数具有相同的名称、索引\\ *和*\\ 类型。在这种情况"
+"下，所有参数将正确生效。"
+
+msgid ""
+"If you run into the above situation, you can avoid clashes by manually "
+"specifying the index (0-15) of the instance uniform by using the "
+"``instance_index`` hint:"
+msgstr ""
+"如果遇到上述情况，你可以通过使用 ``instance_index`` 提示来手动指定单实例 "
+"uniform 的索引（0-15）来避免冲突："
+
+msgid "Setting uniforms from code"
+msgstr "通过代码设置 uniform"
+
+msgid ""
+"You can set uniforms from GDScript using the :ref:`set_shader_parameter() "
+"<class_ShaderMaterial_method_set_shader_parameter>` method:"
+msgstr ""
+"你可以通过 GDScript 使用 :ref:`set_shader_parameter() "
+"<class_ShaderMaterial_method_set_shader_parameter>` 方法设置 uniform 变量："
+
+msgid ""
+"The first argument to ``set_shader_parameter()`` is the name of the uniform "
+"in the shader. It must match *exactly* to the name of the uniform in the "
+"shader or else it will not be recognized."
+msgstr ""
+"``set_shader_parameter`` 的第一个参数是着色器中的 uniform 的名称。它必须与着"
+"色器中的 uniform 的名称\\ *完全*\\ 一致，否则将无法被识别。"
+
+msgid ""
+"GDScript uses different variable types than GLSL does, so when passing "
+"variables from GDScript to shaders, Godot converts the type automatically. "
+"Below is a table of the corresponding types:"
+msgstr ""
+"GDScript 使用的变量类型与 GLSL 不同，所以当把变量从 GDScript 传递到着色器时，"
+"Godot 会自动转换类型。以下是相应类型的表格："
+
+msgid "GLSL type"
+msgstr "GLSL 类型"
+
+msgid "GDScript type"
+msgstr "GDScript 类型"
+
+msgid "Notes"
+msgstr "注意"
+
+msgid "Bitwise packed int where bit 0 (LSB) corresponds to x."
+msgstr "按位打包整数，其中位 0 (LSB) 对应 x。"
+
+msgid "For example, a bvec2 of (bx, by) could be created in the following way:"
+msgstr "例如，值为 (bx, by) 的 bvec2 可以按以下方式创建："
+
+msgid "**Vector2i**"
+msgstr "**Vector2i**"
+
+msgid "**Vector3i**"
+msgstr "**Vector3i**"
+
+msgid "**Vector4i**"
+msgstr "**Vector4i**"
+
+msgid "**Vector2**"
+msgstr "**Vector2**"
+
+msgid "**Vector3**, **Color**"
+msgstr "**Vector3**\\ 、\\ **Color**"
+
+msgid "When Color is used, it will be interpreted as (r, g, b)."
+msgstr "使用 Color 时会将其解释为 (r, g, b)。"
+
+msgid "**Vector4**, **Color**, **Rect2**, **Plane**, **Quaternion**"
+msgstr ""
+"**Vector4**\\ 、\\ **Color**\\ 、\\ **Rect2**\\ 、\\ **Plane**\\ 、\\ "
+"**Quaternion**"
+
+msgid "When Color is used, it will be interpreted as (r, g, b, a)."
+msgstr "使用 Color 时会将其解释为 (r, g, b, a)。"
+
+msgid ""
+"When Rect2 is used, it will be interpreted as (position.x, position.y, "
+"size.x, size.y)."
+msgstr "使用 Rect2 时会将其解释为 (position.x, position.y, size.x, size.y)。"
+
+msgid ""
+"When Plane is used it will be interpreted as (normal.x, normal.y, normal.z, "
+"d)."
+msgstr "使用 Plane 时会将其解释为 (normal.x, normal.y, normal.z, d)。"
+
+msgid "**Transform2D**"
+msgstr "**Transform2D**"
+
+msgid "**Basis**"
+msgstr "**Basis**"
+
+msgid "**Projection**, **Transform3D**"
+msgstr "**Projection**\\ 、\\ **Transform3D**"
+
+msgid "When a Transform3D is used, the w Vector is set to the identity."
+msgstr "使用 Transform3D 时，向量 w 为单位向量。"
+
+msgid "**Texture2D**"
+msgstr "**Texture2D**"
+
+msgid "**Texture2DArray**"
+msgstr "**Texture2DArray**"
+
+msgid "**Texture3D**"
+msgstr "**Texture3D**"
+
+msgid "**Cubemap**"
+msgstr "**Cubemap**"
+
+msgid ""
+"See :ref:`doc_importing_images_changing_import_type` for instructions on "
+"importing cubemaps for use in Godot."
+msgstr ""
+"请参阅 :ref:`doc_importing_images_changing_import_type` 获取在 Godot 中导入立"
+"方体贴图（Cubemap）的使用说明。"
+
+msgid "**CubemapArray**"
+msgstr "**CubemapArray**"
+
+msgid "Only supported in Forward+ and Mobile, not Compatibility."
+msgstr "仅支持 Forward+ 和移动渲染器，不支持兼容渲染器。"
+
+msgid "**ExternalTexture**"
+msgstr "**ExternalTexture**"
+
+msgid "Only supported in Compatibility/Android platform."
+msgstr "仅支持兼容渲染器（Compatibility）/ Android 平台。"
+
+msgid ""
+"Be careful when setting shader uniforms from GDScript, since no error will "
+"be thrown if the type does not match. Your shader will just exhibit "
+"undefined behavior. Specifically, this includes setting a GDScript int/float "
+"(64 bit) into a Godot shader language int/float (32 bit). This may lead to "
+"unintended consequences in cases where high precision is required."
+msgstr ""
+"通过 GDScript 设置着色器 uniform 时务必谨慎，因为即使类型不匹配也不会抛出错"
+"误。着色器仅会出现未定义行为。特别需要注意的是，将 GDScript 的 int/float（64 "
+"位）设置到 Godot 着色器语言的 int/float（32 位）时，在需要高精度的场景中可能"
+"导致非预期结果。"
+
+msgid "Uniform limits"
+msgstr "Uniform 限制"
+
+msgid ""
+"There is a limit to the total size of shader uniforms that you can use in a "
+"single shader. On most desktop platforms, this limit is ``65536`` bytes, or "
+"4096 ``vec4`` uniforms. On mobile platforms, the limit is typically "
+"``16384`` bytes, or 1024 ``vec4`` uniforms. Vector uniforms smaller than a "
+"``vec4``, such as ``vec2`` or ``vec3``, are padded to the size of a "
+"``vec4``. Scalar uniforms such as ``int`` or ``float`` are not padded, and "
+"``bool`` is padded to the size of an ``int``."
+msgstr ""
+"在单个着色器中，你可以使用的着色器 uniform 的总大小是有限制的。在大多数桌面平"
+"台上，这个限制是 ``65536`` 字节或 4096 个 ``vec4`` uniform。在移动平台上，这"
+"个限制通常是 ``16384`` 字节或 1024 个 ``vec4`` uniform。小于 ``vec4`` 的向量 "
+"uniform（如 ``vec2`` 或 ``vec3``\\）会补齐到 ``vec4`` 的大小。标量 uniform"
+"（如 ``int`` 或 ``float``\\）不会进行补齐，而 ``bool`` 类型会补齐到 ``int`` "
+"的大小。"
+
+msgid ""
+"Arrays count as the total size of their contents. If you need a uniform "
+"array that is larger than this limit, consider packing the data into a "
+"texture instead, since the *contents* of a texture do not count towards this "
+"limit, only the size of the sampler uniform."
+msgstr ""
+"数组的大小按其内容的总大小计算。如果你需要一个超过此限制的 uniform 数组，可考"
+"虑将数据打包到纹理中，因为纹理的\\ *内容*\\ 不计入此限制，只有采样器 uniform "
+"的大小会被计算。"
+
+msgid "Built-in variables"
+msgstr "内置变量"
+
+msgid ""
+"A large number of built-in variables are available, like ``UV``, ``COLOR`` "
+"and ``VERTEX``. What variables are available depends on the type of shader "
+"(``spatial``, ``canvas_item``, ``particle``, etc) and the function used "
+"(``vertex``, ``fragment``, ``light``, ``start``, ``process``, ``sky``, or "
+"``fog``). For a list of the built-in variables that are available, please "
+"see the corresponding pages:"
+msgstr ""
+"有大量内置变量可用，例如 ``UV``\\、\\ ``COLOR`` 和 ``VERTEX``\\。具体有哪些可"
+"用的变量取决于着色器类型（\\ ``spatial``\\、\\ ``canvas_item``\\、\\ "
+"``particle`` 等）以及所使用的函数（\\ ``vertex``\\、\\ ``fragment``\\、\\ "
+"``light``\\、\\ ``start``\\、\\ ``process``\\、\\ ``sky`` 或 ``fog``\\）。有"
+"关可用内置变量的完整列表，请参阅相应页面："
+
+msgid ":ref:`Spatial shaders <doc_spatial_shader>`"
+msgstr ":ref:`空间着色器 <doc_spatial_shader>`"
+
+msgid ":ref:`Canvas item shaders <doc_canvas_item_shader>`"
+msgstr ":ref:`画布物品着色器 <doc_canvas_item_shader>`"
+
+msgid ":ref:`Particle shaders <doc_particle_shader>`"
+msgstr ":ref:`粒子着色器 <doc_particle_shader>`"
+
+msgid ":ref:`Sky shaders <doc_sky_shader>`"
+msgstr ":ref:`天空着色器 <doc_sky_shader>`"
+
+msgid ":ref:`Fog shaders <doc_fog_shader>`"
+msgstr ":ref:`雾效着色器 <doc_fog_shader>`"
+
+msgid "Built-in functions"
+msgstr "内置函数"
+
+msgid ""
+"A large number of built-in functions are supported, conforming to GLSL ES "
+"3.0. See the :ref:`Built-in functions <doc_shader_functions>` page for "
+"details."
+msgstr ""
+"支持大量符合 GLSL ES 3.0 标准的内置函数。详情请参阅 :ref:`内置函数 "
+"<doc_shader_functions>` 页面。"

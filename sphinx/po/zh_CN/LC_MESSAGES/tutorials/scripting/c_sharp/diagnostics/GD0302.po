@@ -1,0 +1,95 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid ""
+"GD0302: The generic type parameter must be annotated with the "
+"'[MustBeVariant]' attribute"
+msgstr "GD0302：泛型类型参数必须用“[MustBeVariant]”属性注解"
+
+msgid "**Rule ID**"
+msgstr "**规则 ID**"
+
+msgid "GD0302"
+msgstr "GD0302"
+
+msgid "**Category**"
+msgstr "**类别**"
+
+msgid "Usage"
+msgstr "用法"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**修复是破坏性的还是非破坏性的**"
+
+msgid "Breaking"
+msgstr "破坏性的"
+
+msgid "**Enabled by default**"
+msgstr "**默认启用**"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Cause"
+msgstr "原因"
+
+msgid ""
+"A generic type is specified for a generic type argument when a :ref:`Variant-"
+"compatible type <c_sharp_variant_compatible_types>` is expected, but the "
+"specified generic type is not annotated with the ``[MustBeVariant]`` "
+"attribute."
+msgstr ""
+"当泛型类型参数期望 :ref:`Variant 兼容类型 "
+"<c_sharp_variant_compatible_types>`\\ 时，为其指定泛型类型但指定的泛型类型未"
+"用 ``[MustBeVariant]`` 属性注解。"
+
+msgid "Rule description"
+msgstr "规则说明"
+
+msgid ""
+"When a generic type parameter is annotated with the ``[MustBeVariant]`` "
+"attribute, the generic type is required to be a Variant-compatible type. "
+"When the type used is also a generic type, this generic type must be "
+"annotated with the ``[MustBeVariant]`` attribute as well. For example, the "
+"generic ``Godot.Collections.Array<T>`` type only supports items of a type "
+"that can be converted to Variant, a generic type can be specified if it's "
+"properly annotated."
+msgstr ""
+"当泛型类型参数使用 ``[MustBeVariant]`` 属性进行注解时，泛型类型必须是与 "
+"Variant 兼容的类型。当使用的类型也是泛型类型时，该泛型类型也必须使用 "
+"``[MustBeVariant]`` 属性进行注解。例如，泛型 ``Godot.Collections.Array<T>`` "
+"类型仅支持可以被转换为 Variant 类型的项，如果被正确注解，则可以指定泛型类型。"
+
+msgid "How to fix violations"
+msgstr "如何解决违规情况"
+
+msgid ""
+"To fix a violation of this rule, add the ``[MustBeVariant]`` attribute to "
+"the generic type that is used as a generic type argument that must be "
+"Variant-compatible."
+msgstr ""
+"要修复违反该规则的情况，请将 ``[MustBeVariant]`` 属性添加到泛型类型，该泛型类"
+"型被用作必须与 Variant 兼容的泛型类型参数。"
+
+msgid "When to suppress warnings"
+msgstr "何时抑制警告"
+
+msgid ""
+"Do not suppress a warning from this rule. API that contains generic type "
+"arguments annotated with the ``[MustBeVariant]`` attribute usually has this "
+"requirement because the values will be passed to the engine, if the type "
+"can't be marshalled it will result in runtime errors."
+msgstr ""
+"不要抑制该规则的警告。包含用 ``[MustBeVariant]`` 属性注解的泛型类型参数的 "
+"API 通常有此要求，因为值将被传递给引擎，如果该类型无法被编组，则会导致运行时"
+"错误。"

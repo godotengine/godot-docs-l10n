@@ -1,0 +1,93 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0201: The name of the delegate must end with 'EventHandler'"
+msgstr "GD0201：委托的名称必须以“EventHandler”结尾"
+
+msgid "**Rule ID**"
+msgstr "**规则 ID**"
+
+msgid "GD0201"
+msgstr "GD0201"
+
+msgid "**Category**"
+msgstr "**类别**"
+
+msgid "Usage"
+msgstr "用法"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**修复是破坏性的还是非破坏性的**"
+
+msgid "Breaking"
+msgstr "破坏性的"
+
+msgid "**Enabled by default**"
+msgstr "**默认启用**"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Cause"
+msgstr "原因"
+
+msgid ""
+"A delegate annotated with the ``[Signal]`` attribute has a name that doesn't "
+"end with 'EventHandler'."
+msgstr "用 ``[Signal]`` 属性注解的委托拥有不以“EventHandler”结尾的名称。"
+
+msgid "Rule description"
+msgstr "规则说明"
+
+msgid ""
+"Godot source generators will generate C# events using the name of the "
+"delegate with the 'EventHandler' suffix removed. Adding the 'EventHandler' "
+"suffix to the name of delegates used in events is a `.NET naming convention "
+"<https://learn.microsoft.com/en-us/dotnet/standard/design-guidelines/names-"
+"of-classes-structs-and-interfaces#names-of-common-types>`_."
+msgstr ""
+"Godot 源生成器将使用移除了“EventHandler”后缀的委托名称生成 C# 事件。在事件中"
+"使用的委托名称中添加“EventHandler”后缀是 `.NET 命名约定 <https://"
+"learn.microsoft.com/zh-cn/dotnet/standard/design-guidelines/names-of-classes-"
+"structs-and-interfaces#names-of-common-types>`_\\ 。"
+
+msgid ""
+"Using a suffix for the delegate allows the generated event to use the name "
+"without the suffix avoiding a naming conflict."
+msgstr "对委托使用后缀允许生成的事件使用不带后缀的名称，从而避免命名冲突。"
+
+msgid ""
+"Take a look at the :ref:`C# signals <doc_c_sharp_signals>` documentation for "
+"more information about how to declare and use signals."
+msgstr ""
+"查看 :ref:`C# 信号 <doc_c_sharp_signals>`\\ 文档以获取有关如何声明和使用信号"
+"的更多信息。"
+
+msgid "How to fix violations"
+msgstr "如何解决违规情况"
+
+msgid ""
+"To fix a violation of this rule, add 'EventHandler' to the end of the "
+"delegate name."
+msgstr "要修复违反该规则的情况，请将“EventHandler”添加到委托名称的末尾。"
+
+msgid "When to suppress warnings"
+msgstr "何时抑制警告"
+
+msgid ""
+"Do not suppress a warning from this rule. Signal delegates without the "
+"suffix will be ignored by the source generator, so the signal won't be "
+"registered."
+msgstr ""
+"不要抑制该规则的警告。没有后缀的信号委托将被源生成器忽略，因此该信号不会被注"
+"册。"

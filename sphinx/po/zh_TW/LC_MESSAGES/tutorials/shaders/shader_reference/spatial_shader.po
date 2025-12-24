@@ -1,0 +1,1261 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Spatial shaders"
+msgstr "空間著色器"
+
+msgid ""
+"Spatial shaders are used for shading 3D objects. They are the most complex "
+"type of shader Godot offers. Spatial shaders are highly configurable with "
+"different render modes and different rendering options (e.g. Subsurface "
+"Scattering, Transmission, Ambient Occlusion, Rim lighting etc). Users can "
+"optionally write vertex, fragment, and light processor functions to affect "
+"how objects are drawn."
+msgstr ""
+"空間著色器用於三維物件的著色，是 Godot 提供中最複雜的著色器類型。空間著色器支"
+"援高度自訂，擁有多種算繪模式與不同的算繪選項（如：次表面散射、透射、環境遮"
+"蔽、邊緣光等）。開發者可以選擇撰寫頂點、片段、光照處理函式，以自訂物件的繪製"
+"方式。"
+
+msgid "Render modes"
+msgstr "算繪模式"
+
+msgid ""
+"For visual examples of these render modes, see :ref:`Standard Material 3D "
+"and ORM Material 3D<doc_standard_material_3d>`."
+msgstr ""
+"這些算繪模式的視覺範例，請參見 :ref:`Standard Material 3D 與 ORM Material "
+"3D<doc_standard_material_3d>`。"
+
+msgid "Render mode"
+msgstr "算繪模式"
+
+msgid "Description"
+msgstr "說明"
+
+msgid "**blend_mix**"
+msgstr "**blend_mix**"
+
+msgid "Mix blend mode (alpha is transparency), default."
+msgstr "混合混合模式（Alpha 為透明度），預設。"
+
+msgid "**blend_add**"
+msgstr "**blend_add**"
+
+msgid "Additive blend mode."
+msgstr "加法混合模式。"
+
+msgid "**blend_sub**"
+msgstr "**blend_sub**"
+
+msgid "Subtractive blend mode."
+msgstr "減法混合模式。"
+
+msgid "**blend_mul**"
+msgstr "**blend_mul**"
+
+msgid "Multiplicative blend mode."
+msgstr "乘法混合模式。"
+
+msgid "**blend_premul_alpha**"
+msgstr "**blend_premul_alpha**"
+
+msgid ""
+"Premultiplied alpha blend mode (fully transparent = add, fully opaque = mix)."
+msgstr "預乘 Alpha 混合模式（完全透明時為加法，完全不透明時為混合模式）。"
+
+msgid "**depth_draw_opaque**"
+msgstr "**depth_draw_opaque**"
+
+msgid "Only draw depth for opaque geometry (not transparent)."
+msgstr "僅繪製不透明幾何體的深度（不含透明部分）。"
+
+msgid "**depth_draw_always**"
+msgstr "**depth_draw_always**"
+
+msgid "Always draw depth (opaque and transparent)."
+msgstr "始終繪製深度（不透明與透明物件均包含）。"
+
+msgid "**depth_draw_never**"
+msgstr "**depth_draw_never**"
+
+msgid "Never draw depth."
+msgstr "不繪製深度。"
+
+msgid "**depth_prepass_alpha**"
+msgstr "**depth_prepass_alpha**"
+
+msgid "Do opaque depth pre-pass for transparent geometry."
+msgstr "對透明幾何體進行不透明的深度預處理。"
+
+msgid "**depth_test_disabled**"
+msgstr "**depth_test_disabled**"
+
+msgid "Disable depth testing."
+msgstr "停用深度測試。"
+
+msgid "**sss_mode_skin**"
+msgstr "**sss_mode_skin**"
+
+msgid ""
+"Subsurface Scattering mode for skin (optimizes visuals for human skin, e.g. "
+"boosted red channel)."
+msgstr "皮膚用的次表面散射模式（最佳化人類皮膚的視覺效果，例如加強紅色通道）。"
+
+msgid "**cull_back**"
+msgstr "**cull_back**"
+
+msgid "Cull back-faces (default)."
+msgstr "剔除背面（預設）。"
+
+msgid "**cull_front**"
+msgstr "**cull_front**"
+
+msgid "Cull front-faces."
+msgstr "剔除正面。"
+
+msgid "**cull_disabled**"
+msgstr "**cull_disabled**"
+
+msgid "Culling disabled (double sided)."
+msgstr "停用剔除（雙面渲染）。"
+
+msgid "**unshaded**"
+msgstr "**unshaded**"
+
+msgid ""
+"Result is just albedo. No lighting/shading happens in material, making it "
+"faster to render."
+msgstr "僅顯示反照率，不進行任何燈光或陰影計算，提升渲染效能。"
+
+msgid "**wireframe**"
+msgstr "**wireframe**"
+
+msgid "Geometry draws using lines (useful for troubleshooting)."
+msgstr "以線條方式繪製幾何體（適合除錯用）。"
+
+msgid "**debug_shadow_splits**"
+msgstr "**debug_shadow_splits**"
+
+msgid ""
+"Directional shadows are drawn using different colors for each split (useful "
+"for troubleshooting)."
+msgstr "方向性陰影的每個分割區會以不同顏色繪製（方便除錯）。"
+
+msgid "**diffuse_burley**"
+msgstr "**diffuse_burley**"
+
+msgid "Burley (Disney PBS) for diffuse (default)."
+msgstr "漫反射使用 Burley（迪士尼 PBS，預設）。"
+
+msgid "**diffuse_lambert**"
+msgstr "**diffuse_lambert**"
+
+msgid "Lambert shading for diffuse."
+msgstr "漫反射使用 Lambert 著色。"
+
+msgid "**diffuse_lambert_wrap**"
+msgstr "**diffuse_lambert_wrap**"
+
+msgid "Lambert-wrap shading (roughness-dependent) for diffuse."
+msgstr "漫反射使用 Lambert Wrap 著色（依粗糙度變化）。"
+
+msgid "**diffuse_toon**"
+msgstr "**diffuse_toon**"
+
+msgid "Toon shading for diffuse."
+msgstr "漫反射使用卡通著色。"
+
+msgid "**specular_schlick_ggx**"
+msgstr "**specular_schlick_ggx**"
+
+msgid "Schlick-GGX for direct light specular lobes (default)."
+msgstr "直接光鏡面反射使用 Schlick-GGX（預設）。"
+
+msgid "**specular_toon**"
+msgstr "**specular_toon**"
+
+msgid "Toon for direct light specular lobes."
+msgstr "直接光鏡面反射使用卡通著色。"
+
+msgid "**specular_disabled**"
+msgstr "**specular_disabled**"
+
+msgid ""
+"Disable direct light specular lobes. Doesn't affect reflected light (use "
+"``SPECULAR = 0.0`` instead)."
+msgstr ""
+"停用直接光的鏡面高光，不影響反射光（如需完全停用請使用 ``SPECULAR = 0.0``）。"
+
+msgid "**skip_vertex_transform**"
+msgstr "**skip_vertex_transform**"
+
+msgid ""
+"``VERTEX``, ``NORMAL``, ``TANGENT``, and ``BITANGENT`` need to be "
+"transformed manually in the ``vertex()`` function."
+msgstr ""
+"``VERTEX``、``NORMAL``、``TANGENT`` 及 ``BITANGENT`` 需要在 ``vertex()`` 函式"
+"中手動進行轉換。"
+
+msgid "**world_vertex_coords**"
+msgstr "**world_vertex_coords**"
+
+msgid ""
+"``VERTEX``, ``NORMAL``, ``TANGENT``, and ``BITANGENT`` are modified in world "
+"space instead of model space."
+msgstr ""
+"``VERTEX``、``NORMAL``、``TANGENT``、``BITANGENT`` 會在世界空間（而非模型空"
+"間）下被修改。"
+
+msgid "**ensure_correct_normals**"
+msgstr "**ensure_correct_normals**"
+
+msgid ""
+"Use when non-uniform scale is applied to mesh *(note: currently "
+"unimplemented)*."
+msgstr "當網格有非均勻縮放時使用（*註：目前尚未實作*）。"
+
+msgid "**shadows_disabled**"
+msgstr "**shadows_disabled**"
+
+msgid ""
+"Disable computing shadows in shader. The shader will not receive shadows, "
+"but can still cast them."
+msgstr "停用著色器中的陰影運算。該著色器不會接收陰影，但仍可投射陰影。"
+
+msgid "**ambient_light_disabled**"
+msgstr "**ambient_light_disabled**"
+
+msgid "Disable contribution from ambient light and radiance map."
+msgstr "停用環境光與輻射圖的影響。"
+
+msgid "**shadow_to_opacity**"
+msgstr "**shadow_to_opacity**"
+
+msgid ""
+"Lighting modifies the alpha so shadowed areas are opaque and non-shadowed "
+"areas are transparent. Useful for overlaying shadows onto a camera feed in "
+"AR."
+msgstr ""
+"光照會調整 Alpha，使陰影區域不透明、無陰影區域透明。適合用於 AR 場景將陰影融"
+"合在相機畫面上。"
+
+msgid "**vertex_lighting**"
+msgstr "**vertex_lighting**"
+
+msgid "Use vertex-based lighting instead of per-pixel lighting."
+msgstr "使用頂點光照（取代逐像素光照）。"
+
+msgid "**particle_trails**"
+msgstr "**particle_trails**"
+
+msgid "Enables the trails when used on particles geometry."
+msgstr "用於粒子幾何時啟用軌跡效果。"
+
+msgid "**alpha_to_coverage**"
+msgstr "**alpha_to_coverage**"
+
+msgid ""
+"Alpha antialiasing mode, see `here <https://github.com/godotengine/godot/"
+"pull/40364>`_ for more."
+msgstr ""
+"Alpha 抗鋸齒模式，詳見 `此連結 <https://github.com/godotengine/godot/pull/"
+"40364>`_。"
+
+msgid "**alpha_to_coverage_and_one**"
+msgstr "**alpha_to_coverage_and_one**"
+
+msgid "**fog_disabled**"
+msgstr "**fog_disabled**"
+
+msgid ""
+"Disable receiving depth-based or volumetric fog. Useful for ``blend_add`` "
+"materials like particles."
+msgstr "停用基於深度或體積的霧氣接收。對於如粒子的 ``blend_add`` 材質很有用。"
+
+msgid "Built-ins"
+msgstr "內建變數"
+
+msgid ""
+"Values marked as ``in`` are read-only. Values marked as ``out`` can "
+"optionally be written to and will not necessarily contain sensible values. "
+"Values marked as ``inout`` provide a sensible default value, and can "
+"optionally be written to. Samplers cannot be written to so they are not "
+"marked."
+msgstr ""
+"標記為 ``in`` 的值為唯讀。標記為 ``out`` 的值可以選擇寫入，且不一定包含合理的"
+"預設值。標記為 ``inout`` 的值則有預設值，可以選擇寫入。取樣器（sampler）無法"
+"寫入，因此未標註。"
+
+msgid ""
+"Not all built-ins are available in all processing functions. To access a "
+"vertex built-in from the ``fragment()`` function, you can use "
+"a :ref:`varying <doc_shading_language_varyings>`. The same applies for "
+"accessing fragment built-ins from the ``light()`` function."
+msgstr ""
+"並非所有內建變數都能在所有處理函式中使用。若要在 ``fragment()`` 函式中存取頂"
+"點階段內建變數，可以利用 :ref:`varying <doc_shading_language_varyings>`。同"
+"理，若需在 ``light()`` 函式中存取片段階段的內建變數，也請使用 varying。"
+
+msgid "Global built-ins"
+msgstr "全域內建變數"
+
+msgid "Global built-ins are available everywhere, including custom functions."
+msgstr "全域內建變數可於任何地方使用，包括自訂函式。"
+
+msgid "Built-in"
+msgstr "內建變數"
+
+msgid "in float **TIME**"
+msgstr "in float **TIME**"
+
+msgid ""
+"Global time since the engine has started, in seconds. It repeats after every "
+"``3,600`` seconds (which can  be changed with "
+"the :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` setting). It's affected "
+"by :ref:`time_scale<class_Engine_property_time_scale>` but not by pausing. "
+"If you need a ``TIME`` variable that is not affected by time scale, add your "
+"own :ref:`global shader uniform<doc_shading_language_global_uniforms>` and "
+"update it each frame."
+msgstr ""
+"自引擎啟動以來的全域時間（秒）。每 3,600 秒會重設（可透"
+"過 :ref:`rollover<class_ProjectSettings_property_rendering/limits/time/"
+"time_rollover_secs>` 設定變更）。該值會受"
+"到 :ref:`time_scale<class_Engine_property_time_scale>` 影響，但不受暫停影響。"
+"如果你需要不受 time_scale 影響的 ``TIME``，請自訂 :ref:`全域著色器 "
+"uniform<doc_shading_language_global_uniforms>` 並於每幀更新。"
+
+msgid "in float **PI**"
+msgstr "in float **PI**"
+
+msgid ""
+"A ``PI`` constant (``3.141592``). A ratio of a circle's circumference to its "
+"diameter and amount of radians in half turn."
+msgstr "常數 PI（3.141592），為圓周長與直徑的比值，也是一半圈的弧度數。"
+
+msgid "in float **TAU**"
+msgstr "in float **TAU**"
+
+msgid ""
+"A ``TAU`` constant (``6.283185``). An equivalent of ``PI * 2`` and amount of "
+"radians in full turn."
+msgstr "常數 TAU（6.283185），等於 PI * 2，也是一整圈的弧度數。"
+
+msgid "in float **E**"
+msgstr "in float **E**"
+
+msgid ""
+"An ``E`` constant (``2.718281``). Euler's number and a base of the natural "
+"logarithm."
+msgstr "常數 E（2.718281），歐拉數，也是自然對數的底數。"
+
+msgid "in bool **OUTPUT_IS_SRGB**"
+msgstr "in bool **OUTPUT_IS_SRGB**"
+
+msgid ""
+"``true`` when output is in sRGB color space (this is ``true`` in the "
+"Compatibility renderer, ``false`` in Forward+ and Mobile)."
+msgstr ""
+"當輸出處於 sRGB 色彩空間時為 ``true``（相容性算繪器為 ``true``，Forward+ 與行"
+"動端為 ``false``）。"
+
+msgid "in float **CLIP_SPACE_FAR**"
+msgstr "in float **CLIP_SPACE_FAR**"
+
+msgid ""
+"Clip space far ``z`` value. In the Forward+ or Mobile renderers, it's "
+"``0.0``. In the Compatibility renderer, it's ``-1.0``."
+msgstr ""
+"裁剪空間的遠端 z 值。在 Forward+ 或行動算繪器中為 0.0，在相容性算繪器中為 "
+"-1.0。"
+
+msgid "Vertex built-ins"
+msgstr "頂點階段內建變數"
+
+msgid ""
+"Vertex data (``VERTEX``, ``NORMAL``, ``TANGENT``, and ``BITANGENT``) are "
+"presented in model space (also called local space). If not written to, these "
+"values will not be modified and be passed through as they came, then "
+"transformed into view space to be used in ``fragment()``."
+msgstr ""
+"頂點資料（``VERTEX``、``NORMAL``、``TANGENT``、``BITANGENT``）預設以模型（本"
+"地）空間表示。若未對這些變數寫入，將直接傳遞並在之後自動轉換為視圖空間給 "
+"``fragment()`` 使用。"
+
+msgid ""
+"They can optionally be presented in world space by using the "
+"``world_vertex_coords`` render mode."
+msgstr "啟用 ``world_vertex_coords`` 算繪模式時，這些值可選擇以世界空間表示。"
+
+msgid ""
+"Users can disable the built-in modelview transform (projection will still "
+"happen later) and do it manually with the following code:"
+msgstr ""
+"使用者可停用內建的 modelview 變換（投影仍會在後續進行），並自行於 shader 內進"
+"行如下轉換："
+
+msgid ""
+"Other built-ins, such as ``UV``, ``UV2``, and ``COLOR``, are also passed "
+"through to the ``fragment()`` function if not modified."
+msgstr ""
+"其他內建變數如 ``UV``、``UV2``、``COLOR``，若未於頂點階段修改，亦會自動傳遞"
+"至 ``fragment()`` 階段。"
+
+msgid ""
+"Users can override the modelview and projection transforms using the "
+"``POSITION`` built-in. If ``POSITION`` is written to anywhere in the shader, "
+"it will always be used, so the user becomes responsible for ensuring that it "
+"always has an acceptable value. When ``POSITION`` is used, the value from "
+"``VERTEX`` is ignored and projection does not happen. However, the value "
+"passed to the fragment shader still comes from ``VERTEX``."
+msgstr ""
+"使用者可透過寫入 ``POSITION`` 內建變數來覆蓋模型視圖與投影轉換。只要 shader "
+"任何地方有寫入 ``POSITION``，就會以該值為主，使用者需確保它始終有效。當 "
+"``POSITION`` 被使用時，``VERTEX`` 的值會被忽略且不進行投影，但傳遞至 "
+"fragment shader 的插值仍來自 ``VERTEX``。"
+
+msgid ""
+"For instancing, the ``INSTANCE_CUSTOM`` variable contains the instance "
+"custom data. When using particles, this information is usually:"
+msgstr ""
+"在產生實體（instancing）時，``INSTANCE_CUSTOM`` 變數包含自訂實例資料。用於粒"
+"子時內容通常如下："
+
+msgid "**x**: Rotation angle in radians."
+msgstr "**x**：旋轉角度，單位為弧度。"
+
+msgid "**y**: Phase during lifetime (``0.0`` to ``1.0``)."
+msgstr "**y**：生命週期進度階段（0.0 ~ 1.0）。"
+
+msgid "**z**: Animation frame."
+msgstr "**z**：動畫影格索引。"
+
+msgid ""
+"This allows you to easily adjust the shader to a particle system using "
+"default particles material. When writing a custom particle shader, this "
+"value can be used as desired."
+msgstr ""
+"如此可讓你輕鬆將著色器調整至採用預設粒子材質的粒子系統。若撰寫自訂粒子 "
+"shader，也可依需求使用這些值。"
+
+msgid "in vec2 **VIEWPORT_SIZE**"
+msgstr "in vec2 **VIEWPORT_SIZE**"
+
+msgid "Size of viewport (in pixels)."
+msgstr "視窗大小（像素）。"
+
+msgid "in mat4 **VIEW_MATRIX**"
+msgstr "in mat4 **VIEW_MATRIX**"
+
+msgid "World space to view space transform."
+msgstr "世界空間到視圖空間的轉換。"
+
+msgid "in mat4 **INV_VIEW_MATRIX**"
+msgstr "in mat4 **INV_VIEW_MATRIX**"
+
+msgid "View space to world space transform."
+msgstr "視圖空間到世界空間的轉換。"
+
+msgid "in mat4 **MAIN_CAM_INV_VIEW_MATRIX**"
+msgstr "in mat4 **MAIN_CAM_INV_VIEW_MATRIX**"
+
+msgid ""
+"View space to world space transform of camera used to draw the current "
+"viewport."
+msgstr "用於繪製目前視窗的相機，其視圖空間到世界空間的轉換。"
+
+msgid "in mat4 **INV_PROJECTION_MATRIX**"
+msgstr "in mat4 **INV_PROJECTION_MATRIX**"
+
+msgid "Clip space to view space transform."
+msgstr "裁剪空間到視圖空間的轉換。"
+
+msgid "in vec3 **NODE_POSITION_WORLD**"
+msgstr "in vec3 **NODE_POSITION_WORLD**"
+
+msgid "Node position, in world space."
+msgstr "節點位置（世界空間）。"
+
+msgid "in vec3 **NODE_POSITION_VIEW**"
+msgstr "in vec3 **NODE_POSITION_VIEW**"
+
+msgid "Node position, in view space."
+msgstr "節點位置（視圖空間）。"
+
+msgid "in vec3 **CAMERA_POSITION_WORLD**"
+msgstr "in vec3 **CAMERA_POSITION_WORLD**"
+
+msgid "in vec3 **CAMERA_DIRECTION_WORLD**"
+msgstr "in vec3 **CAMERA_DIRECTION_WORLD**"
+
+msgid "Camera direction, in world space."
+msgstr "相機方向（世界空間）。"
+
+msgid "in uint **CAMERA_VISIBLE_LAYERS**"
+msgstr "in uint **CAMERA_VISIBLE_LAYERS**"
+
+msgid "Cull layers of the camera rendering the current pass."
+msgstr "目前算繪通道的相機可見圖層遮罩。"
+
+msgid "in int **INSTANCE_ID**"
+msgstr "in int **INSTANCE_ID**"
+
+msgid "Instance ID for instancing."
+msgstr "產生實體（instancing）時的實例 ID。"
+
+msgid "in vec4 **INSTANCE_CUSTOM**"
+msgstr "in vec4 **INSTANCE_CUSTOM**"
+
+msgid "Instance custom data (for particles, mostly)."
+msgstr "自訂實體資料（主要用於粒子）。"
+
+msgid "in int **VIEW_INDEX**"
+msgstr "in int **VIEW_INDEX**"
+
+msgid ""
+"The view that we are rendering. ``VIEW_MONO_LEFT`` (``0``) for Mono (not "
+"multiview) or left eye, ``VIEW_RIGHT`` (``1``) for right eye."
+msgstr ""
+"目前算繪的視圖。 ``VIEW_MONO_LEFT`` （ ``0`` ）用於單視圖或左眼， "
+"``VIEW_RIGHT`` （ ``1`` ）用於右眼。"
+
+msgid "in int **VIEW_MONO_LEFT**"
+msgstr "in int **VIEW_MONO_LEFT**"
+
+msgid "Constant for Mono or left eye, always ``0``."
+msgstr "單視圖或左眼用常數，值永遠為 0。"
+
+msgid "in int **VIEW_RIGHT**"
+msgstr "in int **VIEW_RIGHT**"
+
+msgid "Constant for right eye, always ``1``."
+msgstr "右眼用常數，值永遠為 1。"
+
+msgid "in vec3 **EYE_OFFSET**"
+msgstr "in vec3 **EYE_OFFSET**"
+
+msgid "inout vec3 **VERTEX**"
+msgstr "inout vec3 **VERTEX**"
+
+msgid ""
+"Position of the vertex, in model space. In world space if "
+"``world_vertex_coords`` is used."
+msgstr "頂點位置（模型空間）。如啟用 ``world_vertex_coords`` 則為世界空間。"
+
+msgid "in int **VERTEX_ID**"
+msgstr "in int **VERTEX_ID**"
+
+msgid "The index of the current vertex in the vertex buffer."
+msgstr "目前頂點在頂點緩衝區中的索引。"
+
+msgid "inout vec3 **NORMAL**"
+msgstr "inout vec3 **NORMAL**"
+
+msgid ""
+"Normal in model space. In world space if ``world_vertex_coords`` is used."
+msgstr "法線向量（模型空間），若啟用 ``world_vertex_coords`` 則為世界空間。"
+
+msgid "inout vec3 **TANGENT**"
+msgstr "inout vec3 **TANGENT**"
+
+msgid ""
+"Tangent in model space. In world space if ``world_vertex_coords`` is used."
+msgstr "切線向量（模型空間），如啟用 ``world_vertex_coords`` 則為世界空間。"
+
+msgid "inout vec3 **BINORMAL**"
+msgstr "inout vec3 **BINORMAL**"
+
+msgid ""
+"Binormal in model space. In world space if ``world_vertex_coords`` is used."
+msgstr "副法線向量（模型空間），如啟用 ``world_vertex_coords`` 則為世界空間。"
+
+msgid "out vec4 **POSITION**"
+msgstr "out vec4 **POSITION**"
+
+msgid "If written to, overrides final vertex position in clip space."
+msgstr "如有寫入，將覆蓋最終裁剪空間的頂點位置。"
+
+msgid "inout vec2 **UV**"
+msgstr "inout vec2 **UV**"
+
+msgid "UV main channel."
+msgstr "UV 主通道。"
+
+msgid "inout vec2 **UV2**"
+msgstr "inout vec2 **UV2**"
+
+msgid "UV secondary channel."
+msgstr "UV2 次通道。"
+
+msgid "inout vec4 **COLOR**"
+msgstr "inout vec4 **COLOR**"
+
+msgid "Color from vertices."
+msgstr "頂點顏色。"
+
+msgid "out float **ROUGHNESS**"
+msgstr "out float **ROUGHNESS**"
+
+msgid "Roughness for vertex lighting."
+msgstr "頂點光照用的粗糙度。"
+
+msgid "inout float **POINT_SIZE**"
+msgstr "inout float **POINT_SIZE**"
+
+msgid "Point size for point rendering."
+msgstr "點算繪時的點大小。"
+
+msgid "inout mat4 **MODELVIEW_MATRIX**"
+msgstr "inout mat4 **MODELVIEW_MATRIX**"
+
+msgid "Model/local space to view space transform (use if possible)."
+msgstr "模型（本地）空間到視圖空間的轉換（建議使用）。"
+
+msgid "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
+msgstr "inout mat3 **MODELVIEW_NORMAL_MATRIX**"
+
+msgid "in mat4 **MODEL_MATRIX**"
+msgstr "in mat4 **MODEL_MATRIX**"
+
+msgid "Model/local space to world space transform."
+msgstr "模型（本地）空間到世界空間的轉換。"
+
+msgid "in mat3 **MODEL_NORMAL_MATRIX**"
+msgstr "in mat3 **MODEL_NORMAL_MATRIX**"
+
+msgid "inout mat4 **PROJECTION_MATRIX**"
+msgstr "inout mat4 **PROJECTION_MATRIX**"
+
+msgid "View space to clip space transform."
+msgstr "視圖空間到裁剪空間的轉換。"
+
+msgid "in uvec4 **BONE_INDICES**"
+msgstr "in uvec4 **BONE_INDICES**"
+
+msgid "in vec4 **BONE_WEIGHTS**"
+msgstr "in vec4 **BONE_WEIGHTS**"
+
+msgid "in vec4 **CUSTOM0**"
+msgstr "in vec4 **CUSTOM0**"
+
+msgid ""
+"Custom value from vertex primitive. When using extra UVs, ``xy`` is UV3 and "
+"``zw`` is UV4."
+msgstr ""
+"來自頂點原始資料的自訂值。若使用額外 UV，``xy`` 對應 UV3，``zw`` 對應 UV4。"
+
+msgid "in vec4 **CUSTOM1**"
+msgstr "in vec4 **CUSTOM1**"
+
+msgid ""
+"Custom value from vertex primitive. When using extra UVs, ``xy`` is UV5 and "
+"``zw`` is UV6."
+msgstr ""
+"來自頂點原始資料的自訂值。若使用額外 UV，``xy`` 對應 UV5，``zw`` 對應 UV6。"
+
+msgid "in vec4 **CUSTOM2**"
+msgstr "in vec4 **CUSTOM2**"
+
+msgid ""
+"Custom value from vertex primitive. When using extra UVs, ``xy`` is UV7 and "
+"``zw`` is UV8."
+msgstr ""
+"來自頂點原始資料的自訂值。若使用額外 UV，``xy`` 對應 UV7，``zw`` 對應 UV8。"
+
+msgid "in vec4 **CUSTOM3**"
+msgstr "in vec4 **CUSTOM3**"
+
+msgid "Custom value from vertex primitive."
+msgstr "來自頂點原始資料的自訂值。"
+
+msgid ""
+"``MODELVIEW_MATRIX`` combines both the ``MODEL_MATRIX`` and ``VIEW_MATRIX`` "
+"and is better suited when floating point issues may arise. For example, if "
+"the object is very far away from the world origin, you may run into floating "
+"point issues when using the separated ``MODEL_MATRIX`` and ``VIEW_MATRIX``."
+msgstr ""
+"``MODELVIEW_MATRIX`` 結合了 ``WORLD_MATRIX`` 和 ``INV_CAMERA_MATRIX``，更適合"
+"可能會造成浮點數問題的場合。例如，如果物件距離世界原點非常遠，那麼使用單獨的 "
+"``WORLD_MATRIX`` 和 ``INV_CAMERA_MATRIX`` 可能就會遇到浮點數問題。"
+
+msgid ""
+"``INV_VIEW_MATRIX`` is the matrix used for rendering the object in that "
+"pass, unlike ``MAIN_CAM_INV_VIEW_MATRIX``, which is the matrix of the camera "
+"in the scene. In the shadow pass, ``INV_VIEW_MATRIX``'s view is based on the "
+"camera that is located at the position of the light."
+msgstr ""
+"``INV_VIEW_MATRIX`` 是本次算繪通道用來轉換物件的矩陣，與 "
+"``MAIN_CAM_INV_VIEW_MATRIX``（場景中主相機的矩陣）不同。在陰影通道時，"
+"``INV_VIEW_MATRIX`` 會以燈光所處位置的相機視圖為基準。"
+
+msgid "Fragment built-ins"
+msgstr "片段階段內建變數"
+
+msgid ""
+"The default use of a Godot fragment processor function is to set up the "
+"material properties of your object and to let the built-in renderer handle "
+"the final shading. However, you are not required to use all these "
+"properties, and if you don't write to them, Godot will optimize away the "
+"corresponding functionality."
+msgstr ""
+"Godot 片段處理函式的預設用途是設定物件的材質屬性，並交由內建算繪器處理最終著"
+"色。不必對所有這些屬性都寫入，未使用的部份 Godot 會自動優化移除相關運算。"
+
+msgid "in vec4 **FRAGCOORD**"
+msgstr "in vec4 **FRAGCOORD**"
+
+msgid ""
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
+"window. Origin is lower left. ``z`` specifies fragment depth. It is also "
+"used as the output value for the fragment depth unless ``DEPTH`` is written "
+"to."
+msgstr ""
+"像素中心在螢幕空間中的座標。``xy`` 表示在視窗中的位置，原點為左下角。``z`` 表"
+"示片段深度，若未寫入 ``DEPTH``，此值即作為片段深度輸出。"
+
+msgid "in bool **FRONT_FACING**"
+msgstr "in bool **FRONT_FACING**"
+
+msgid "``true`` if current face is front facing, ``false`` otherwise."
+msgstr "若當前面朝向正面則為 ``true``，否則為 ``false``。"
+
+msgid "in vec3 **VIEW**"
+msgstr "in vec3 **VIEW**"
+
+msgid ""
+"Normalized vector from fragment position to camera (in view space). This is "
+"the same for both perspective and orthogonal cameras."
+msgstr ""
+"從片段位置指向相機的單位向量（視圖空間）。無論透視或正交攝影機，皆相同。"
+
+msgid "in vec2 **UV**"
+msgstr "in vec2 **UV**"
+
+msgid "UV that comes from the ``vertex()`` function."
+msgstr "由 ``vertex()`` 傳來的 UV。"
+
+msgid "in vec2 **UV2**"
+msgstr "in vec2 **UV2**"
+
+msgid "UV2 that comes from the ``vertex()`` function."
+msgstr "由 ``vertex()`` 傳來的 UV2。"
+
+msgid "in vec4 **COLOR**"
+msgstr "in vec4 **COLOR**"
+
+msgid "COLOR that comes from the ``vertex()`` function."
+msgstr "由 ``vertex()`` 函式傳遞來的顏色。"
+
+msgid "in vec2 **POINT_COORD**"
+msgstr "in vec2 **POINT_COORD**"
+
+msgid "Point coordinate for drawing points with ``POINT_SIZE``."
+msgstr "使用 ``POINT_SIZE`` 算繪點時的點座標。"
+
+msgid ""
+"Model/local space to world space transform for normals. This is the same as "
+"``MODEL_MATRIX`` by default unless the object is scaled non-uniformly, in "
+"which case this is set to ``transpose(inverse(mat3(MODEL_MATRIX)))``."
+msgstr ""
+"模型（本地）空間至世界空間的法線轉換矩陣。預設與 ``MODEL_MATRIX`` 相同，若物"
+"件有非均勻縮放則設為 ``transpose(inverse(mat3(MODEL_MATRIX)))``。"
+
+msgid "in mat4 **PROJECTION_MATRIX**"
+msgstr "in mat4 **PROJECTION_MATRIX**"
+
+msgid "in vec3 **VERTEX**"
+msgstr "in vec3 **VERTEX**"
+
+msgid ""
+"Position of the fragment (pixel), in view space. It is the ``VERTEX`` value "
+"from ``vertex()`` interpolated between the face's vertices and transformed "
+"into view space. If ``skip_vertex_transform`` is enabled, it may not be in "
+"view space."
+msgstr ""
+"片段（像素）的位置（視圖空間）。為 ``vertex()`` 傳來的 ``VERTEX`` 插值轉換至"
+"視圖空間的結果。若啟用 ``skip_vertex_transform``，則可能不是視圖空間。"
+
+msgid "inout vec3 **LIGHT_VERTEX**"
+msgstr "inout vec3 **LIGHT_VERTEX**"
+
+msgid ""
+"A writable version of ``VERTEX`` that can be used to alter light and "
+"shadows. Writing to this will not change the position of the fragment."
+msgstr ""
+"可寫入的 ``VERTEX`` 版本，用於更改光照與陰影。寫入本變數不會改變片段的位置。"
+
+msgid ""
+"The view that we are rendering. Used to distinguish between views in "
+"multiview/stereo rendering. ``VIEW_MONO_LEFT`` (``0``) for Mono (not "
+"multiview) or left eye, ``VIEW_RIGHT`` (``1``) for right eye."
+msgstr ""
+"目前算繪的視圖。用於多視角／立體算繪時區分視角。 ``VIEW_MONO_LEFT`` "
+"（ ``0`` ）代表單視角（非多視角）或左眼， ``VIEW_RIGHT`` （ ``1`` ）代表右"
+"眼。"
+
+msgid "sampler2D **SCREEN_TEXTURE**"
+msgstr "sampler2D **SCREEN_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_screen_texture`` instead."
+msgstr ""
+"已於 Godot 4 移除。請改用帶有 ``hint_screen_texture`` 的 ``sampler2D``。"
+
+msgid "in vec2 **SCREEN_UV**"
+msgstr "in vec2 **SCREEN_UV**"
+
+msgid "Screen UV coordinate for current pixel."
+msgstr "當前像素的螢幕 UV 座標。"
+
+msgid "sampler2D **DEPTH_TEXTURE**"
+msgstr "sampler2D **DEPTH_TEXTURE**"
+
+msgid ""
+"Removed in Godot 4. Use a ``sampler2D`` with ``hint_depth_texture`` instead."
+msgstr ""
+"已於 Godot 4 移除。請改用帶有 ``hint_depth_texture`` 的 ``sampler2D``。"
+
+msgid "out float **DEPTH**"
+msgstr "out float **DEPTH**"
+
+msgid ""
+"Custom depth value (range of ``[0.0, 1.0]``). If ``DEPTH`` is being written "
+"to in any shader branch, then you are responsible for setting the ``DEPTH`` "
+"for **all** other branches. Otherwise, the graphics API will leave them "
+"uninitialized."
+msgstr ""
+"自訂深度值（範圍 0.0 ~ 1.0）。若任一 shader 分支寫入 ``DEPTH``，則所有分支都"
+"必須明確設定 ``DEPTH``，否則圖形 API 會將其視為未初始化。"
+
+msgid ""
+"Normal that comes from the ``vertex()`` function, in view space. If "
+"``skip_vertex_transform`` is enabled, it may not be in view space."
+msgstr ""
+"由 ``vertex()`` 函式傳來的法線（視圖空間）。若啟用 "
+"``skip_vertex_transform``，則可能不是視圖空間。"
+
+msgid ""
+"Tangent that comes from the ``vertex()`` function, in view space. If "
+"``skip_vertex_transform`` is enabled, it may not be in view space."
+msgstr ""
+"由 ``vertex()`` 傳來的切線（視圖空間）。若啟用 ``skip_vertex_transform``，則"
+"可能不是視圖空間。"
+
+msgid ""
+"Binormal that comes from the ``vertex()`` function, in view space. If "
+"``skip_vertex_transform`` is enabled, it may not be in view space."
+msgstr ""
+"由 ``vertex()`` 傳來的副法線（視圖空間）。若啟用 ``skip_vertex_transform``，"
+"則可能不是視圖空間。"
+
+msgid "out vec3 **NORMAL_MAP**"
+msgstr "out vec3 **NORMAL_MAP**"
+
+msgid "Set normal here if reading normal from a texture instead of ``NORMAL``."
+msgstr "若需從材質貼圖（而非 ``NORMAL``）讀取法線，請在此設定法線值。"
+
+msgid "out float **NORMAL_MAP_DEPTH**"
+msgstr "out float **NORMAL_MAP_DEPTH**"
+
+msgid "Depth from ``NORMAL_MAP``. Defaults to ``1.0``."
+msgstr "``NORMAL_MAP`` 的深度值，預設為 1.0。"
+
+msgid "out vec3 **ALBEDO**"
+msgstr "out vec3 **ALBEDO**"
+
+msgid "Albedo (default white). Base color."
+msgstr "反照率（預設白色）。基底色。"
+
+msgid "out float **ALPHA**"
+msgstr "out float **ALPHA**"
+
+msgid ""
+"Alpha (range of ``[0.0, 1.0]``). If read from or written to, the material "
+"will go to the transparent pipeline."
+msgstr "Alpha（0.0 ~ 1.0）。若有讀寫，材質將進入透明管線。"
+
+msgid "out float **ALPHA_SCISSOR_THRESHOLD**"
+msgstr "out float **ALPHA_SCISSOR_THRESHOLD**"
+
+msgid "If written to, values below a certain amount of alpha are discarded."
+msgstr "如有寫入，Alpha 值低於此閾值的像素會被丟棄。"
+
+msgid "out float **ALPHA_HASH_SCALE**"
+msgstr "out float **ALPHA_HASH_SCALE**"
+
+msgid ""
+"Alpha hash scale when using the alpha hash transparency mode. Defaults to "
+"``1.0``. Higher values result in more visible pixels in the dithering "
+"pattern."
+msgstr ""
+"使用 alpha hash 透明模式時的雜湊縮放。預設為 1.0，值越高，抖動圖樣中可見像素"
+"越多。"
+
+msgid "out float **ALPHA_ANTIALIASING_EDGE**"
+msgstr "out float **ALPHA_ANTIALIASING_EDGE**"
+
+msgid ""
+"The threshold below which alpha to coverage antialiasing should be used. "
+"Defaults to ``0.0``. Requires the ``alpha_to_coverage`` render mode. Should "
+"be set to a value lower than ``ALPHA_SCISSOR_THRESHOLD`` to be effective."
+msgstr ""
+"設定啟用 alpha to coverage 抗鋸齒的 alpha 閾值。預設 0.0。需搭配 "
+"``alpha_to_coverage`` 模式，且此值應小於 ``ALPHA_SCISSOR_THRESHOLD`` 才有效。"
+
+msgid "out vec2 **ALPHA_TEXTURE_COORDINATE**"
+msgstr "out vec2 **ALPHA_TEXTURE_COORDINATE**"
+
+msgid ""
+"The texture coordinate to use for alpha-to-coverge antialiasing. Requires "
+"the ``alpha_to_coverage`` render mode. Typically set to ``UV * "
+"vec2(albedo_texture_size)`` where ``albedo_texture_size`` is the size of the "
+"albedo texture in pixels."
+msgstr ""
+"用於 alpha-to-coverage 抗鋸齒的材質座標。需啟用 ``alpha_to_coverage`` 模式。"
+"通常設為 ``UV * vec2(albedo_texture_size)``，其中 ``albedo_texture_size`` 為"
+"反照率貼圖的像素大小。"
+
+msgid "out float **PREMUL_ALPHA_FACTOR**"
+msgstr "out float **PREMUL_ALPHA_FACTOR**"
+
+msgid ""
+"Premultiplied alpha factor. Only effective if ``render_mode "
+"blend_premul_alpha;`` is used. This should be written to when using a "
+"*shaded* material with premultiplied alpha blending for interaction with "
+"lighting. This is not required for unshaded materials."
+msgstr ""
+"預乘 Alpha 因子。僅於啟用 ``render_mode blend_premul_alpha;`` 時生效。若使用"
+"有光照的預乘 Alpha 混合材質，請寫入此值。無光照（unshaded）材質則不需處理。"
+
+msgid "out float **METALLIC**"
+msgstr "out float **METALLIC**"
+
+msgid "Metallic (range of ``[0.0, 1.0]``)."
+msgstr "金屬度（0.0 ~ 1.0）。"
+
+msgid "out float **SPECULAR**"
+msgstr "out float **SPECULAR**"
+
+msgid ""
+"Specular (not physically accurate to change). Defaults to ``0.5``. ``0.0`` "
+"disables reflections."
+msgstr "鏡面反射強度（非物理準確）。預設 0.5，設為 0.0 可停用反射。"
+
+msgid "Roughness (range of ``[0.0, 1.0]``)."
+msgstr "粗糙度（0.0 ~ 1.0）。"
+
+msgid "out float **RIM**"
+msgstr "out float **RIM**"
+
+msgid ""
+"Rim (range of ``[0.0, 1.0]``). If used, Godot calculates rim lighting. Rim "
+"size depends on ``ROUGHNESS``."
+msgstr ""
+"邊緣光（0.0 ~ 1.0）。如有使用 Godot 會自動計算邊緣光照，大小取決於 "
+"``ROUGHNESS``。"
+
+msgid "out float **RIM_TINT**"
+msgstr "out float **RIM_TINT**"
+
+msgid ""
+"Rim Tint, range of ``0.0`` (white) to ``1.0`` (albedo). If used, Godot "
+"calculates rim lighting."
+msgstr ""
+"邊緣色調，範圍從 0.0（白）到 1.0（反照率顏色）。如有使用，Godot 會計算邊緣光"
+"照。"
+
+msgid "out float **CLEARCOAT**"
+msgstr "out float **CLEARCOAT**"
+
+msgid ""
+"Small specular blob added on top of the existing one. If used, Godot "
+"calculates clearcoat."
+msgstr ""
+"在現有鏡面反射上新增小範圍的高光。如有使用，Godot 會自動計算 Clearcoat（透明"
+"漆層）。"
+
+msgid "out float **CLEARCOAT_GLOSS**"
+msgstr "out float **CLEARCOAT_GLOSS**"
+
+msgid "Gloss of clearcoat. If used, Godot calculates clearcoat."
+msgstr "Clearcoat 光澤度。如有使用，Godot 會自動計算 Clearcoat。"
+
+msgid "out float **ANISOTROPY**"
+msgstr "out float **ANISOTROPY**"
+
+msgid "For distorting the specular blob according to tangent space."
+msgstr "依切線空間變形鏡面反射高光。"
+
+msgid "out vec2 **ANISOTROPY_FLOW**"
+msgstr "out vec2 **ANISOTROPY_FLOW**"
+
+msgid "Distortion direction, use with flowmaps."
+msgstr "失真方向，搭配 flowmap 使用。"
+
+msgid "out float **SSS_STRENGTH**"
+msgstr "out float **SSS_STRENGTH**"
+
+msgid ""
+"Strength of subsurface scattering. If used, subsurface scattering will be "
+"applied to the object."
+msgstr "次表面散射強度。如有設定物件會啟用 SSS 效果。"
+
+msgid "out vec4 **SSS_TRANSMITTANCE_COLOR**"
+msgstr "out vec4 **SSS_TRANSMITTANCE_COLOR**"
+
+msgid ""
+"Color of subsurface scattering transmittance. If used, subsurface scattering "
+"transmittance will be applied to the object."
+msgstr "次表面散射穿透顏色。如有設定物件會啟用 SSS 穿透效果。"
+
+msgid "out float **SSS_TRANSMITTANCE_DEPTH**"
+msgstr "out float **SSS_TRANSMITTANCE_DEPTH**"
+
+msgid ""
+"Depth of subsurface scattering transmittance. Higher values allow the effect "
+"to reach deeper into the object."
+msgstr "次表面散射穿透深度，值越高效果越深入物件內部。"
+
+msgid "out float **SSS_TRANSMITTANCE_BOOST**"
+msgstr "out float **SSS_TRANSMITTANCE_BOOST**"
+
+msgid ""
+"Boosts the subsurface scattering transmittance if set above ``0.0``. This "
+"makes the effect show up even on directly lit surfaces"
+msgstr "如設為大於 ``0.0`` ，會加強次表面散射穿透，讓效果即使在直射光下也可見"
+
+msgid "inout vec3 **BACKLIGHT**"
+msgstr "inout vec3 **BACKLIGHT**"
+
+msgid ""
+"Color of backlighting (works like direct light, but it's received even if "
+"the normal is slightly facing away from the light). If used, backlighting "
+"will be applied to the object. Can be used as a cheaper approximation of "
+"subsurface scattering."
+msgstr ""
+"背光顏色（類似直接光照，但就算法線未完全朝向光源也會接收）。如有設定，物件會"
+"有背光效果，可作為次表面散射的較省效能近似法。"
+
+msgid "out float **AO**"
+msgstr "out float **AO**"
+
+msgid "Strength of ambient occlusion. For use with pre-baked AO."
+msgstr "環境遮蔽強度。用於搭配預先烘焙的 AO。"
+
+msgid "out float **AO_LIGHT_AFFECT**"
+msgstr "out float **AO_LIGHT_AFFECT**"
+
+msgid ""
+"How much ambient occlusion affects direct light (range of ``[0.0, 1.0]``, "
+"default ``0.0``)."
+msgstr "環境遮蔽對直接光影響程度（0.0 ~ 1.0，預設 0.0）。"
+
+msgid "out vec3 **EMISSION**"
+msgstr "out vec3 **EMISSION**"
+
+msgid "Emission color (can go over ``(1.0, 1.0, 1.0)`` for HDR)."
+msgstr "自發光顏色（HDR 可超過 ``(1.0, 1.0, 1.0)`` ）。"
+
+msgid "out vec4 **FOG**"
+msgstr "out vec4 **FOG**"
+
+msgid ""
+"If written to, blends final pixel color with ``FOG.rgb`` based on ``FOG.a``."
+msgstr "如有寫入，最終像素顏色將依 ``FOG.a`` 與 ``FOG.rgb`` 混合。"
+
+msgid "out vec4 **RADIANCE**"
+msgstr "out vec4 **RADIANCE**"
+
+msgid ""
+"If written to, blends environment map radiance with ``RADIANCE.rgb`` based "
+"on ``RADIANCE.a``."
+msgstr ""
+"如有寫入，環境貼圖的輻射度將依 ``RADIANCE.a`` 與 ``RADIANCE.rgb`` 混合。"
+
+msgid "out vec4 **IRRADIANCE**"
+msgstr "out vec4 **IRRADIANCE**"
+
+msgid ""
+"If written to, blends environment map irradiance with ``IRRADIANCE.rgb`` "
+"based on ``IRRADIANCE.a``."
+msgstr ""
+"如有寫入，環境貼圖的照度會依 ``IRRADIANCE.a`` 與 ``IRRADIANCE.rgb`` 混合。"
+
+msgid ""
+"Shaders going through the transparent pipeline when ``ALPHA`` is written to "
+"may exhibit transparency sorting issues. Read the :ref:`transparency sorting "
+"section in the 3D rendering limitations page "
+"<doc_3d_rendering_limitations_transparency_sorting>` for more information "
+"and ways to avoid issues."
+msgstr ""
+"寫入 ``ALPHA`` 並進入透明管線的 shader 可能會遇到透明排序問題。詳情與解法請參"
+"閱 :ref:`3D 算繪限制頁之透明排序章節 "
+"<doc_3d_rendering_limitations_transparency_sorting>`。"
+
+msgid "Light built-ins"
+msgstr "燈光階段內建變數"
+
+msgid ""
+"Writing light processor functions is completely optional. You can skip the "
+"``light()`` function by using the ``unshaded`` render mode. If no light "
+"function is written, Godot will use the material properties written to in "
+"the ``fragment()`` function to calculate the lighting for you (subject to "
+"the render mode)."
+msgstr ""
+"撰寫光照處理函式（light processor function）是完全可選的。若使用 "
+"``unshaded`` 算繪模式則可直接省略 ``light()``。如果未撰寫 light 函式，Godot "
+"會根據 ``fragment()`` 中的材質屬性自動計算燈光效果（依算繪模式而定）。"
+
+msgid ""
+"The ``light()`` function is called for every light in every pixel. It is "
+"called within a loop for each light type."
+msgstr ""
+"每一盞燈、每一個像素都會呼叫一次 ``light()`` 函式。此函式會針對每種燈光型別在"
+"迴圈中被呼叫。"
+
+msgid ""
+"Below is an example of a custom ``light()`` function using a Lambertian "
+"lighting model:"
+msgstr "以下是一個採用 Lambert 漫反射模型的自訂 ``light()`` 函式範例："
+
+msgid ""
+"If you want the lights to add together, add the light contribution to "
+"``DIFFUSE_LIGHT`` using ``+=``, rather than overwriting it."
+msgstr ""
+"若要讓多盞燈光疊加，請使用 ``+=`` 將光照貢獻加到 ``DIFFUSE_LIGHT``，而非直接"
+"覆蓋。"
+
+msgid ""
+"The ``light()`` function won't be run if the ``vertex_lighting`` render mode "
+"is enabled, or if :ref:`Rendering > Quality > Shading > Force Vertex "
+"Shading<class_ProjectSettings_property_rendering/shading/overrides/"
+"force_vertex_shading>` is enabled in the Project Settings. (It's enabled by "
+"default on mobile platforms.)"
+msgstr ""
+"若啟用 ``vertex_lighting`` 算繪模式，或在專案設定啟用 :ref:`Rendering > "
+"Quality > Shading > Force Vertex "
+"Shading<class_ProjectSettings_property_rendering/shading/overrides/"
+"force_vertex_shading>` 時，``light()`` 函式將不會執行。（在行動裝置預設啟"
+"用。）"
+
+msgid ""
+"Coordinate of pixel center in screen space. ``xy`` specifies position in "
+"window, ``z`` specifies fragment depth if ``DEPTH`` is not used. Origin is "
+"lower-left."
+msgstr ""
+"像素中心在螢幕空間中的座標。``xy`` 表示視窗中的位置，若未使用 ``DEPTH``，則 "
+"``z`` 為片段深度。原點為左下角。"
+
+msgid "in vec3 **NORMAL**"
+msgstr "in vec3 **NORMAL**"
+
+msgid "Normal vector, in view space."
+msgstr "法線向量（視圖空間）。"
+
+msgid "View vector, in view space."
+msgstr "視線向量（視圖空間）。"
+
+msgid "in vec3 **LIGHT**"
+msgstr "in vec3 **LIGHT**"
+
+msgid "Light vector, in view space."
+msgstr "燈光向量（視圖空間）。"
+
+msgid "in vec3 **LIGHT_COLOR**"
+msgstr "in vec3 **LIGHT_COLOR**"
+
+msgid ""
+":ref:`Light color<class_Light3D_property_light_color>` multiplied "
+"by :ref:`light energy<class_Light3D_property_light_energy>` multiplied by "
+"``PI``. The ``PI`` multiplication is present because physically-based "
+"lighting models include a division by ``PI``."
+msgstr ""
+":ref:`光源顏色<class_Light3D_property_light_color>` 乘以 :ref:`光源能量"
+"<class_Light3D_property_light_energy>` 再乘以 ``PI``。乘上 ``PI`` 是因物理式"
+"光照模型會對光能量除以 ``PI``。"
+
+msgid "in float **SPECULAR_AMOUNT**"
+msgstr "in float **SPECULAR_AMOUNT**"
+
+msgid ""
+"For :ref:`class_OmniLight3D` and :ref:`class_SpotLight3D`, ``2.0`` "
+"multiplied by :ref:`light_specular<class_Light3D_property_light_specular>`. "
+"For :ref:`class_DirectionalLight3D`, ``1.0``."
+msgstr ""
+"若為 :ref:`class_OmniLight3D` 或 :ref:`class_SpotLight3D`，為 ``2.0`` 乘"
+"以 :ref:`light_specular<class_Light3D_property_light_specular>`；若"
+"為 :ref:`class_DirectionalLight3D`，則為 ``1.0``。"
+
+msgid "in bool **LIGHT_IS_DIRECTIONAL**"
+msgstr "in bool **LIGHT_IS_DIRECTIONAL**"
+
+msgid "``true`` if this pass is a :ref:`class_DirectionalLight3D`."
+msgstr "若本通道為 :ref:`class_DirectionalLight3D` 則為 ``true``。"
+
+msgid "in float **ATTENUATION**"
+msgstr "in float **ATTENUATION**"
+
+msgid "Attenuation based on distance or shadow."
+msgstr "距離或陰影造成的光照衰減。"
+
+msgid "in vec3 **ALBEDO**"
+msgstr "in vec3 **ALBEDO**"
+
+msgid "Base albedo."
+msgstr "基底反照率。"
+
+msgid "in vec3 **BACKLIGHT**"
+msgstr "in vec3 **BACKLIGHT**"
+
+msgid "in float **METALLIC**"
+msgstr "in float **METALLIC**"
+
+msgid "Metallic."
+msgstr "金屬度。"
+
+msgid "in float **ROUGHNESS**"
+msgstr "in float **ROUGHNESS**"
+
+msgid "Roughness."
+msgstr "粗糙度。"
+
+msgid "out vec3 **DIFFUSE_LIGHT**"
+msgstr "out vec3 **DIFFUSE_LIGHT**"
+
+msgid "Diffuse light result."
+msgstr "漫反射光輸出。"
+
+msgid "out vec3 **SPECULAR_LIGHT**"
+msgstr "out vec3 **SPECULAR_LIGHT**"
+
+msgid "Specular light result."
+msgstr "鏡面反射光輸出。"
+
+msgid ""
+"Alpha (range of ``[0.0, 1.0]``). If written to, the material will go to the "
+"transparent pipeline."
+msgstr "Alpha（0.0 ~ 1.0）。如有寫入，材質將進入透明管線。"
+
+msgid ""
+"Transparent materials also cannot cast shadows or appear in "
+"``hint_screen_texture`` and ``hint_depth_texture`` uniforms. This in turn "
+"prevents those materials from appearing in screen-space reflections or "
+"refraction. :ref:`SDFGI <doc_using_sdfgi>` sharp reflections are not visible "
+"on transparent materials (only rough reflections are visible on transparent "
+"materials)."
+msgstr ""
+"透明材質無法投射陰影，也無法出現在 ``hint_screen_texture`` 與 "
+"``hint_depth_texture`` uniform 內。因此這些材質不會出現在螢幕空間反射或折射效"
+"果中。:ref:`SDFGI <doc_using_sdfgi>` 的銳利反射不會顯示於透明材質（僅粗糙反射"
+"可見）。"

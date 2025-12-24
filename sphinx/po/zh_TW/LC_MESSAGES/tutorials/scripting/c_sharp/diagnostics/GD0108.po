@@ -1,0 +1,80 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0108: The exported tool button is not in a tool class"
+msgstr "GD0108：匯出的工具按鈕不在標註為 [Tool] 的類別中"
+
+msgid "**Rule ID**"
+msgstr "**規則 ID**"
+
+msgid "GD0108"
+msgstr "GD0108"
+
+msgid "**Category**"
+msgstr "**分類**"
+
+msgid "Usage"
+msgstr "用法"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**修正是否會破壞相容性**"
+
+msgid "Non-breaking"
+msgstr "非破壞性"
+
+msgid "**Enabled by default**"
+msgstr "**預設啟用**"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Cause"
+msgstr "原因"
+
+msgid ""
+"A property is annotated with the ``[ExportToolButton]`` attribute in a class "
+"that is **not** annotated with the ``[Tool]`` attribute."
+msgstr ""
+"某個屬性在 **未** 標註 ``[Tool]`` 的類別中, 被標註了 ``[ExportToolButton]`` "
+"屬性。"
+
+msgid "Rule description"
+msgstr "規則說明"
+
+msgid ""
+"The ``[ExportToolButton]`` is used to create clickable buttons in the "
+"inspector so, like every other script that runs in the editor, it needs to "
+"be annotated with the ``[Tool]`` attribute."
+msgstr ""
+"``[ExportToolButton]`` 用來在屬性檢視器中建立可點擊的按鈕；因此，就像其他會在"
+"編輯器中執行的腳本一樣，包含它的類別必須標註 ``[Tool]``。"
+
+msgid "How to fix violations"
+msgstr "修正方式"
+
+msgid ""
+"To fix a violation of this rule, add the ``[Tool]`` attribute to the class "
+"that contains the member annotated with the ``[ExportToolButton]`` attribute."
+msgstr ""
+"要修正此違規，請在包含 ``[ExportToolButton]`` 成員的類別上加上 ``[Tool]`` 屬"
+"性。"
+
+msgid "When to suppress warnings"
+msgstr "什麼時候應該忽略警告"
+
+msgid ""
+"Do not suppress a warning from this rule. The clickable buttons in the "
+"inspector won't be functional if their script is not annotated with the "
+"``[Tool]`` attribute."
+msgstr ""
+"請勿忽略此規則的警告。若腳本未標註 ``[Tool]``，屬性檢視器中的按鈕將無法運作。"

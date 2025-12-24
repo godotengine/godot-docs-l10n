@@ -1,0 +1,503 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Upgrading from Godot 4.3 to Godot 4.4"
+msgstr "从 Godot 4.3 升级到 Godot 4.4"
+
+msgid ""
+"For most games and apps made with 4.3 it should be relatively safe to "
+"migrate to 4.4. This page intends to cover everything you need to pay "
+"attention to when migrating your project."
+msgstr ""
+"对于大多数使用 4.3 版本开发的游戏和应用程序来说，迁移到 4.4 版本应该是相对安"
+"全的。本页面旨在涵盖你在迁移项目时需要注意的所有事项。"
+
+msgid "Breaking changes"
+msgstr "破坏性更改"
+
+msgid ""
+"If you are migrating from 4.3 to 4.4, the breaking changes listed here might "
+"affect you. Changes are grouped by areas/systems."
+msgstr ""
+"如果你正从 4.3 迁移到 4.4，此处列出的破坏性变更可能会影响你。这些变更按领域/"
+"系统进行了分组。"
+
+msgid ""
+"This article indicates whether each breaking change affects GDScript and "
+"whether the C# breaking change is *binary compatible* or *source compatible*:"
+msgstr ""
+"这篇文章指出了每项破坏性改动是否会影响 GDScript，以及 C# 的破坏性改动是 *二进"
+"制兼容* 还是 *源代码兼容*\\ ："
+
+msgid ""
+"**Binary compatible** - Existing binaries will load and execute successfully "
+"without recompilation, and the run-time behavior won't change."
+msgstr ""
+"**二进制兼容** — 现有可执行文件无需重新编译即可成功加载和执行，且运行时行为不"
+"会发生变化。"
+
+msgid ""
+"**Source compatible** - Source code will compile successfully without "
+"changes when upgrading Godot."
+msgstr "**源代码兼容**\\ —— 在升级 Godot 时，源代码可成功编译，无需更改。"
+
+msgid "Core"
+msgstr "核心"
+
+msgid "Change"
+msgstr "更改"
+
+msgid "GDScript Compatible"
+msgstr "GDScript 兼容"
+
+msgid "C# Binary Compatible"
+msgstr "C# 二进制兼容"
+
+msgid "C# Source Compatible"
+msgstr "C# 源代码兼容"
+
+msgid "Introduced"
+msgstr "引入"
+
+msgid "**FileAccess**"
+msgstr "**FileAccess**"
+
+msgid "Method ``open_encrypted`` adds a new ``iv`` optional parameter"
+msgstr "方法 ``open_encrypted`` 增加了一个新的 ``iv`` 可选参数"
+
+msgid "|✔️|"
+msgstr "|✔️|"
+
+msgid "|✔️ with compat|"
+msgstr "|✔️ with compat|"
+
+msgid "`GH-98918`_"
+msgstr "`GH-98918`_"
+
+msgid "Method ``store_8`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_8`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "|❌|"
+msgstr "|❌|"
+
+msgid "`GH-78289`_"
+msgstr "`GH-78289`_"
+
+msgid "Method ``store_16`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_16`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "Method ``store_32`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_32`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "Method ``store_64`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_64`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "Method ``store_buffer`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_buffer`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "Method ``store_csv_line`` changes return type from ``void`` to ``bool``"
+msgstr "``store_csv_line`` 方法的返回类型从 ``void`` 改成了 ``bool``"
+
+msgid "Method ``store_double`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_double`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "Method ``store_float`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_float`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "Method ``store_half`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_half`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "Method ``store_line`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_line`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid ""
+"Method ``store_pascal_string`` changes return type from ``void`` to ``bool``"
+msgstr "``store_pascal_string`` 方法的返回类型从 ``void`` 改成了 ``bool``"
+
+msgid "Method ``store_real`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_real`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "Method ``store_string`` changes return type from ``void`` to ``bool``"
+msgstr "``store_string`` 方法的返回类型从 ``void`` 改成了 ``bool``"
+
+msgid "Method ``store_var`` changes return type from ``void`` to ``bool``"
+msgstr "方法 ``store_var`` 的返回类型从 ``void`` 更改为 ``bool``"
+
+msgid "**OS**"
+msgstr "**OS**"
+
+msgid "Method ``execute_with_pipe`` adds a new ``blocking`` optional parameter"
+msgstr "方法 ``execute_with_pipe`` 添加了一个新的可选参数 ``blocking``"
+
+msgid "`GH-94434`_"
+msgstr "`GH-94434`_"
+
+msgid ""
+"Method ``read_string_from_stdin`` adds a new ``buffer_size`` parameter [#f1]_"
+msgstr "``read_string_from_stdin`` 方法添加了 ``buffer_size`` 参数 [#f1]_"
+
+msgid "`GH-91201`_"
+msgstr "`GH-91201`_"
+
+msgid "**RegEx**"
+msgstr "**RegEx**"
+
+msgid "Method ``compile`` adds a new ``show_error`` optional parameter"
+msgstr "方法 ``compile`` 添加了一个新的可选参数 ``show_error``"
+
+msgid "`GH-95212`_"
+msgstr "`GH-95212`_"
+
+msgid ""
+"Method ``create_from_string`` adds a new ``show_error`` optional parameter"
+msgstr "方法 ``create_from_string`` 添加了一个新的可选参数 ``show_error``"
+
+msgid "**Semaphore**"
+msgstr "**Semaphore**"
+
+msgid "Method ``post`` adds a new ``count`` optional parameter"
+msgstr "方法 ``post`` 添加了一个新的可选参数 ``count``"
+
+msgid "`GH-93605`_"
+msgstr "`GH-93605`_"
+
+msgid "**TranslationServer**"
+msgstr "**TranslationServer**"
+
+msgid ""
+"Method ``standardize_locale`` adds a new ``add_defaults`` optional parameter"
+msgstr "``standardize_locale`` 方法添加了一个新的可选参数 ``add_defaults``"
+
+msgid "`GH-98972`_"
+msgstr "`GH-98972`_"
+
+msgid "**Export annotations**"
+msgstr "**导出注解**"
+
+msgid ""
+"The behavior of ``@export_file`` changed in Godot 4.4. When assigning a new "
+"value from the Inspector, the path is now stored and returned as a ``uid://"
+"`` reference instead of the traditional ``res://`` path(`GH-97912`_). This "
+"is a **breaking change** and may cause issues if you're expecting ``res://``-"
+"based paths in scripts or serialized files."
+msgstr ""
+"Godot 4.4中， ``@export_file`` 的行为有所改变。当从检查器分配新值时，其路径被"
+"存储并且以 ``uid://`` 的形式返回该引用，以这种方式代替之前的 ``res://`` "
+"path(GH-97912_)方式。这是一个破坏性改动，如果你的脚本或者序列化文件中依赖 "
+"``res://``路径，很可能会导致问题。"
+
+msgid ""
+"For example, exported arrays of files may now contain a mix of ``uid://`` "
+"and ``res://`` paths, especially if they were partially edited in the "
+"Inspector."
+msgstr ""
+"例如，导出的文件数组中的可能包含混合的 ``uid://`` 和 ``res://`` 的路径，尤其"
+"是他们一部分在检查器编辑过。"
+
+msgid ""
+"In 4.4, the only way to retain the ``res://`` format is to **manually edit** "
+"the `.tscn` or `.tres` files in a text editor. Starting in Godot 4.5, a new "
+"annotation ``@export_file_path`` can be used to explicitly retain the old "
+"behavior and export raw ``res://`` paths."
+msgstr ""
+"在 4.4 版本中，保留``res://``格式的唯一方法是手动编辑`.tscn` 或 `.tres` 文"
+"件，使用文本编辑器进行修改。从 Godot 4.5 开始，可以使用一个新的注解 "
+"``@export_file_path`` 来显式保留旧的行为，并导出原始的 ``res://`` 路径。"
+
+msgid "Default buffer size in 4.3 is ``1024``."
+msgstr "4.3 版本默认缓冲区大小为 ``1024``\\ 。"
+
+msgid "GUI nodes"
+msgstr "GUI 节点"
+
+msgid "**RichTextLabel**"
+msgstr "**RichTextLabel**"
+
+msgid "Method ``push_meta`` adds a new ``tooltip`` optional parameter"
+msgstr "方法 ``push_meta`` 添加了一个新的可选参数 ``tooltip``"
+
+msgid "`GH-99481`_"
+msgstr "`GH-99481`_"
+
+msgid ""
+"Method ``set_table_column_expand`` adds a new ``shrink`` optional parameter"
+msgstr "``set_table_column_expand`` 方法添加了一个新的可选参数 ``shrink``"
+
+msgid "`GH-101482`_"
+msgstr "`GH-101482`_"
+
+msgid "**GraphEdit**"
+msgstr "**GraphEdit**"
+
+msgid "Method ``connect_node`` adds a new ``keep_alive`` optional parameter"
+msgstr "``connect_node`` 方法添加了新的一个可选参数 ``keep_alive``"
+
+msgid "`GH-97449`_"
+msgstr "`GH-97449`_"
+
+msgid ""
+"Signal ``frame_rect_changed`` changes ``new_rect`` parameter type from "
+"``Vector2`` to ``Rect2``"
+msgstr ""
+"信号 ``frame_rect_changed`` 的 ``new_rect`` 参数类型从 ``Vector2`` 更改为 "
+"``Rect2``"
+
+msgid "`GH-102796`_"
+msgstr "`GH-102796`_"
+
+msgid "Physics"
+msgstr "物理"
+
+msgid "**SoftBody3D**"
+msgstr "**SoftBody3D**"
+
+msgid "Method ``set_point_pinned`` adds a new ``insert_at`` optional parameter"
+msgstr "``set_point_pinned`` 方法增加了一个新的 ``insert_at`` 可选参数"
+
+msgid "`GH-94684`_"
+msgstr "`GH-94684`_"
+
+msgid "Rendering"
+msgstr "渲染"
+
+msgid "**CPUParticles2D**"
+msgstr "**CPUParticles2D**"
+
+msgid "Method ``restart`` adds a new ``keep_seed`` optional parameter"
+msgstr "方法 ``restart`` 添加了一个新的 ``keep_seed`` 可选参数"
+
+msgid "`GH-92089`_"
+msgstr "`GH-92089`_"
+
+msgid "**CPUParticles3D**"
+msgstr "**CPUParticles3D**"
+
+msgid "**GPUParticles2D**"
+msgstr "**GPUParticles2D**"
+
+msgid "**GPUParticles3D**"
+msgstr "**GPUParticles3D**"
+
+msgid "**RenderingDevice**"
+msgstr "**RenderingDevice**"
+
+msgid "Method ``draw_list_begin`` adds a new ``breadcrumb`` optional parameter"
+msgstr "方法 ``draw_list_begin`` 添加了新的 ``breadcrumb`` 可选参数"
+
+msgid "`GH-90993`_"
+msgstr "`GH-90993`_"
+
+msgid "Method ``draw_list_begin`` removes many parameters"
+msgstr "``draw_list_begin`` 方法移除了许多参数"
+
+msgid "`GH-98670`_"
+msgstr "`GH-98670`_"
+
+msgid ""
+"Method ``index_buffer_create`` adds a new ``enable_device_address`` optional "
+"parameter"
+msgstr ""
+"``index_buffer_create`` 方法增加了新的 ``enable_device_address`` 可选参数"
+
+msgid "`GH-100062`_"
+msgstr "`GH-100062`_"
+
+msgid ""
+"Method ``uniform_buffer_create`` adds a new ``enable_device_address`` "
+"optional parameter"
+msgstr ""
+"方法 ``uniform_buffer_create`` 添加了一个新的可选参数 "
+"``enable_device_address``"
+
+msgid ""
+"Method ``vertex_buffer_create`` adds a new ``enable_device_address`` "
+"optional parameter"
+msgstr ""
+"方法 ``vertex_buffer_create`` 添加了一个新的可选参数 "
+"``enable_device_address``"
+
+msgid "**RenderingServer**"
+msgstr "**RenderingServer**"
+
+msgid ""
+"Method ``multimesh_allocate_data`` adds a new ``use_indirect`` optional "
+"parameter"
+msgstr ""
+"方法 ``multimesh_allocate_data`` 添加了一个新的可选参数 ``use_indirect``"
+
+msgid "`GH-99455`_"
+msgstr "`GH-99455`_"
+
+msgid "**Shader**"
+msgstr "**Shader**"
+
+msgid ""
+"Method ``get_default_texture_parameter`` changes return type from "
+"``Texture2D`` to ``Texture``"
+msgstr ""
+"方法 ``get_default_texture_parameter`` 的返回类型从 ``Texture2D`` 更改为 "
+"``Texture``"
+
+msgid "`GH-95126`_"
+msgstr "`GH-95126`_"
+
+msgid ""
+"Method ``set_default_texture_parameter`` changes ``texture`` parameter type "
+"from ``Texture2D`` to ``Texture``"
+msgstr ""
+"方法 ``set_default_texture_parameter`` 的 ``texture`` 参数类型从 "
+"``Texture2D`` 更改为 ``Texture``"
+
+msgid "**VisualShaderNodeCubemap**"
+msgstr "**VisualShaderNodeCubemap**"
+
+msgid ""
+"Property ``cube_map`` changes type from ``Cubemap`` to ``TextureLayered``"
+msgstr "属性 ``cube_map`` 的类型从 ``CubeMap`` 改为 ``TextureLayered``"
+
+msgid "**VisualShaderNodeTexture2DArray**"
+msgstr "**VisualShaderNodeTexture2DArray**"
+
+msgid ""
+"Property ``texture_array`` changes type from ``Texture2DArray`` to "
+"``TextureLayered``"
+msgstr ""
+"属性 ``texture_array`` 的类型从 ``Texture2DArray`` 改为 ``TextureLayered``"
+
+msgid ""
+"In C#, the enum ``RenderingDevice.StorageBufferUsage`` breaks compatibility "
+"because of the way the bindings generator detects the enum prefix. New "
+"members where added in `GH-100062`_ to the enum that caused the enum members "
+"to be renamed."
+msgstr ""
+"在 C# 中，枚举 ``RenderingDevice.StorageBufferUsage`` 由于绑定生成器检测枚举"
+"前缀的方式而破坏了兼容性。在 `GH-100062`_ 中向该枚举添加了新成员，导致枚举成"
+"员被重命名。"
+
+msgid "Navigation"
+msgstr "导航"
+
+msgid "**NavigationServer2D**"
+msgstr "**NavigationServer2D**"
+
+msgid "Method ``query_path`` adds a new ``callback`` optional parameter"
+msgstr "方法 ``query_path`` 添加了一个新的可选参数 ``callback``"
+
+msgid "`GH-100129`_"
+msgstr "`GH-100129`_"
+
+msgid "**NavigationServer3D**"
+msgstr "**NavigationServer3D**"
+
+msgid "Editor plugins"
+msgstr "编辑器插件"
+
+msgid "**EditorInterface**"
+msgstr "**EditorInterface**"
+
+msgid ""
+"Method ``open_scene_from_path`` adds a new ``set_inherited`` optional "
+"parameter"
+msgstr "方法 ``open_scene_from_path`` 添加了一个新的可选参数 ``set_inherited``"
+
+msgid "`GH-90057`_"
+msgstr "`GH-90057`_"
+
+msgid ""
+"Method ``popup_node_selector`` adds a new ``current_value`` optional "
+"parameter"
+msgstr "方法 ``popup_node_selector`` 添加了一个新的可选参数 ``current_value``"
+
+msgid "`GH-94323`_"
+msgstr "`GH-94323`_"
+
+msgid ""
+"Method ``popup_property_selector`` adds a new ``current_value`` optional "
+"parameter"
+msgstr ""
+"方法 ``popup_property_selector`` 添加了一个新的可选参数 ``current_value``"
+
+msgid "**EditorSceneFormatImporter**"
+msgstr "**EditorSceneFormatImporter**"
+
+msgid "Method ``_get_import_flags`` removed"
+msgstr "方法 ``_get_import_flags`` 已被移除"
+
+msgid "`GH-101531`_"
+msgstr "`GH-101531`_"
+
+msgid "**EditorTranslationParserPlugin**"
+msgstr "**EditorTranslationParserPlugin**"
+
+msgid ""
+"Method ``_parse_file`` changes return type to ``Array`` and removes "
+"``msgids`` and ``msgids_context_plural`` parameters"
+msgstr ""
+"方法 ``_parse_file`` 的返回类型改为 ``Array`` ，并移除参数 ``msgids`` 和 "
+"``msgids_context_plural``"
+
+msgid "`GH-99297`_"
+msgstr "`GH-99297`_"
+
+msgid ""
+"The method ``_get_import_flags`` was never used by the engine. It was "
+"removed despite the compatibility breakage as there's no way for users to "
+"rely on this affecting engine behavior."
+msgstr ""
+"方法 ``_get_import_flags`` 从未被引擎调用。尽管会造成兼容性被破坏，但用户实际"
+"无法依赖此方法影响引擎行为，因此被移除。"
+
+msgid "Behavior changes"
+msgstr "行为更改"
+
+msgid ""
+"The ``Curve`` resource now enforces its value range, so ``min_value`` and "
+"``max_value`` need to be changed if any of the points fall outside of the "
+"default ``[0, 1]`` range."
+msgstr ""
+"``Curve`` 资源现在强制执行数值范围，若有点位超出默认 ``[0, 1]`` 范围，则需调"
+"整 ``min_value`` 和 ``max_value`` 。"
+
+msgid ""
+"The ``VisualShaderNodeVec4Constant`` shader node had its input type changed "
+"to ``Vector4``. Users need to recreate the values in their constants."
+msgstr ""
+"``VisualShaderNodeVec4Constant`` 着色器节点的输入类型已改为 ``Vector4`` ，用"
+"户需在常量中重新创建数值。"
+
+msgid "CSG"
+msgstr "CSG"
+
+msgid ""
+"The CSG implementation now uses Emmett Lalish's `Manifold <https://"
+"github.com/elalish/manifold>`_ library (`GH-94321`_). The new implementation "
+"is more consistent with manifold definitions and fixes a number of bugs and "
+"stability issues. As a result, non-manifold meshes are no longer supported. "
+"You can use ``MeshInstance3D`` for rendering non-manifold geometry, such as "
+"quads or planes."
+msgstr ""
+"CSG 实现现采用 Emmett Lalish 的 `Manifold <https://github.com/elalish/"
+"manifold>`_ 库（`GH-94321`_）。新实现更符合流形定义并修复了诸多错误与稳定性问"
+"题，因此不再支持非流形网格。如需渲染四边形或平面等非流形几何体，请改用 "
+"``MeshInstance3D`` 。"
+
+msgid "Android"
+msgstr "Android"
+
+msgid ""
+"Android sensor events are no longer enabled by default (`GH-94799`_). "
+"Projects that use sensor events can enable them as needed in Project "
+"Settings under **Input Devices > Sensors**."
+msgstr ""
+"Android 传感器事件现默认禁用（`GH-94799`_）。需使用传感器事件的项目可在项目设"
+"置的 **输入设备 > 传感器** 中按需启用。"

@@ -1,0 +1,74 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "GD0101: The exported member is static"
+msgstr "GD0101：被匯出的成員為 static"
+
+msgid "**Rule ID**"
+msgstr "**規則 ID**"
+
+msgid "GD0101"
+msgstr "GD0101"
+
+msgid "**Category**"
+msgstr "**分類**"
+
+msgid "Usage"
+msgstr "用法"
+
+msgid "**Fix is breaking or non-breaking**"
+msgstr "**修正是否會破壞相容性**"
+
+msgid "Breaking - If the ``static`` keyword is removed"
+msgstr "破壞性變更 - 若移除 ``static`` 關鍵字"
+
+msgid "Non-breaking - If the ``[Export]`` attribute is removed"
+msgstr "非破壞性變更 - 若移除 ``[Export]`` 屬性"
+
+msgid "**Enabled by default**"
+msgstr "**預設啟用**"
+
+msgid "Yes"
+msgstr "是"
+
+msgid "Cause"
+msgstr "原因"
+
+msgid ""
+"A static member is annotated with the ``[Export]`` attribute. Static members "
+"can't be exported."
+msgstr "靜態成員被標註為 ``[Export]``。靜態成員無法被匯出。"
+
+msgid "Rule description"
+msgstr "規則說明"
+
+msgid "Godot doesn't allow exporting static members."
+msgstr "Godot 不允許匯出靜態成員。"
+
+msgid "How to fix violations"
+msgstr "修正方式"
+
+msgid ""
+"To fix a violation of this rule, remove the ``[Export]`` attribute or remove "
+"the ``static`` keyword."
+msgstr "要修正此規則的違規情形，請移除 ``[Export]`` 屬性或 ``static`` 關鍵字。"
+
+msgid "When to suppress warnings"
+msgstr "什麼時候應該忽略警告"
+
+msgid ""
+"Do not suppress a warning from this rule. Static members can't be exported "
+"so they will be ignored by Godot, resulting in runtime errors."
+msgstr ""
+"請勿忽略此規則的警告。靜態成員無法被匯出，Godot 將會忽略這些成員，導致執行階"
+"段錯誤。"

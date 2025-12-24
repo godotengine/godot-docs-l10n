@@ -1,0 +1,275 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Variant class"
+msgstr "Variant 類別"
+
+msgid "About"
+msgstr "關於"
+
+msgid ""
+"Variant is the most important datatype in Godot. A Variant takes up only 24 "
+"bytes on 64-bit platforms (20 bytes on 32-bit platforms) and can store "
+"almost any engine datatype inside of it. Variants are rarely used to hold "
+"information for long periods of time, instead they are used mainly for "
+"communication, editing, serialization and generally moving data around."
+msgstr ""
+"Variant 是 Godot 中最重要的資料型別。在 64 位元平台上僅佔用 24 位元組（32 位"
+"元平台為 20 位元組），能夠儲存幾乎所有引擎資料型別。Variant 通常不會長時間持"
+"有資料，主要用途為溝通、編輯、序列化，以及一般資料的傳遞。"
+
+msgid "A Variant can:"
+msgstr "Variant 可以："
+
+msgid "Store almost any datatype."
+msgstr "儲存幾乎所有資料型別。"
+
+msgid ""
+"Perform operations between many variants (GDScript uses Variant as its "
+"atomic/native datatype)."
+msgstr ""
+"在多個 Variant 之間進行運算（GDScript 以 Variant 作為其原生/基本資料型別）。"
+
+msgid "Be hashed, so it can be compared quickly to other variants."
+msgstr "可進行雜湊，能迅速與其他 Variant 比較。"
+
+msgid "Be used to convert safely between datatypes."
+msgstr "可用於安全地在各種資料型別間轉換。"
+
+msgid ""
+"Be used to abstract calling methods and their arguments (Godot exports all "
+"its functions through variants)."
+msgstr "可用於抽象化方法呼叫及其參數（Godot 以 Variant 匯出其所有函式）。"
+
+msgid "Be used to defer calls or move data between threads."
+msgstr "可用來延遲呼叫或在線程間傳遞資料。"
+
+msgid "Be serialized as binary and stored to disk, or transferred via network."
+msgstr "可序列化為二進位格式，儲存至磁碟或經由網路傳輸。"
+
+msgid ""
+"Be serialized to text and use it for printing values and editable settings."
+msgstr "可序列化為文字，用於列印數值或可編輯的設定。"
+
+msgid "Work as an exported property, so the editor can edit it universally."
+msgstr "可作為匯出屬性，讓編輯器能進行通用編輯。"
+
+msgid "Be used for dictionaries, arrays, parsers, etc."
+msgstr "可用於字典、陣列、剖析器等結構。"
+
+msgid ""
+"Basically, thanks to the Variant class, writing Godot itself was a much, "
+"much easier task, as it allows for highly dynamic constructs not common of C+"
+"+ with little effort. Become a friend of Variant today."
+msgstr ""
+"基本上，多虧了 Variant 類別，撰寫 Godot 本身變得容易許多，因為它讓 C++ 中少見"
+"的高度動態結構能輕鬆實現。現在就來好好認識 Variant 吧。"
+
+msgid ""
+"All types within Variant except Nil and Object **cannot** be ``null`` and "
+"must always store a valid value. These types within Variant are therefore "
+"called *non-nullable* types."
+msgstr ""
+"Variant 內除了 Nil 與 Object 以外的所有型別， **都不能** 為 ``null`` ，必須始"
+"終儲存有效的值。因此這些型別被稱為 *不可為 null* 的型別。"
+
+msgid ""
+"One of the Variant types is *Nil* which can only store the value ``null``. "
+"Therefore, it is possible for a Variant to contain the value ``null``, even "
+"though all Variant types excluding Nil and Object are non-nullable."
+msgstr ""
+"Variant 型別中的一種是 *Nil*，僅能儲存 ``null``。因此，即使除了 Nil 與 "
+"Object 之外的 Variant 型別皆不可為 null，Variant 仍有可能包含 ``null`` 值。"
+
+msgid "References"
+msgstr "參考資料"
+
+msgid ""
+"`core/variant/variant.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/variant.h>`__"
+msgstr ""
+"`core/variant/variant.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/variant.h>`__"
+
+msgid "List of variant types"
+msgstr "Variant 型別清單"
+
+msgid "These types are available in Variant:"
+msgstr "Variant 支援以下型別："
+
+msgid "Type"
+msgstr "型別"
+
+msgid "Notes"
+msgstr "說明"
+
+msgid "Nil (can only store ``null``)"
+msgstr "Nil（僅能儲存 ``null``）"
+
+msgid "Nullable type"
+msgstr "可為 null 型別"
+
+msgid ":ref:`class_bool`"
+msgstr ":ref:`class_bool`"
+
+msgid ":ref:`class_int`"
+msgstr ":ref:`class_int`"
+
+msgid ":ref:`class_float`"
+msgstr ":ref:`class_float`"
+
+msgid ":ref:`class_string`"
+msgstr ":ref:`class_string`"
+
+msgid ":ref:`class_vector2`"
+msgstr ":ref:`class_vector2`"
+
+msgid ":ref:`class_vector2i`"
+msgstr ":ref:`class_vector2i`"
+
+msgid ":ref:`class_rect2`"
+msgstr ":ref:`class_rect2`"
+
+msgid "2D counterpart of AABB"
+msgstr "AABB 的 2D 對應型別"
+
+msgid ":ref:`class_rect2i`"
+msgstr ":ref:`class_rect2i`"
+
+msgid ":ref:`class_vector3`"
+msgstr ":ref:`class_vector3`"
+
+msgid ":ref:`class_vector3i`"
+msgstr ":ref:`class_vector3i`"
+
+msgid ":ref:`class_transform2d`"
+msgstr ":ref:`class_transform2d`"
+
+msgid ":ref:`class_vector4`"
+msgstr ":ref:`class_vector4`"
+
+msgid ":ref:`class_vector4i`"
+msgstr ":ref:`class_vector4i`"
+
+msgid ":ref:`class_plane`"
+msgstr ":ref:`class_plane`"
+
+msgid ":ref:`class_quaternion`"
+msgstr ":ref:`class_quaternion`"
+
+msgid ":ref:`class_aabb`"
+msgstr ":ref:`class_aabb`"
+
+msgid "3D counterpart of Rect2"
+msgstr "Rect2 的 3D 對應型別"
+
+msgid ":ref:`class_basis`"
+msgstr ":ref:`class_basis`"
+
+msgid ":ref:`class_transform3d`"
+msgstr ":ref:`class_transform3d`"
+
+msgid ":ref:`class_projection`"
+msgstr ":ref:`class_projection`"
+
+msgid ":ref:`class_color`"
+msgstr ":ref:`class_color`"
+
+msgid ":ref:`class_stringname`"
+msgstr ":ref:`class_stringname`"
+
+msgid ":ref:`class_nodepath`"
+msgstr ":ref:`class_nodepath`"
+
+msgid ":ref:`class_rid`"
+msgstr ":ref:`class_rid`"
+
+msgid ":ref:`class_object`"
+msgstr ":ref:`class_object`"
+
+msgid ":ref:`class_callable`"
+msgstr ":ref:`class_callable`"
+
+msgid ":ref:`class_signal`"
+msgstr ":ref:`class_signal`"
+
+msgid ":ref:`class_dictionary`"
+msgstr ":ref:`class_dictionary`"
+
+msgid ":ref:`class_array`"
+msgstr ":ref:`class_array`"
+
+msgid ":ref:`class_packedbytearray`"
+msgstr ":ref:`class_packedbytearray`"
+
+msgid ":ref:`class_packedint32array`"
+msgstr ":ref:`class_packedint32array`"
+
+msgid ":ref:`class_packedint64array`"
+msgstr ":ref:`class_packedint64array`"
+
+msgid ":ref:`class_packedfloat32array`"
+msgstr ":ref:`class_packedfloat32array`"
+
+msgid ":ref:`class_packedfloat64array`"
+msgstr ":ref:`class_packedfloat64array`"
+
+msgid ":ref:`class_packedstringarray`"
+msgstr ":ref:`class_packedstringarray`"
+
+msgid ":ref:`class_packedvector2array`"
+msgstr ":ref:`class_packedvector2array`"
+
+msgid ":ref:`class_packedvector3array`"
+msgstr ":ref:`class_packedvector3array`"
+
+msgid ":ref:`class_packedcolorarray`"
+msgstr ":ref:`class_packedcolorarray`"
+
+msgid ":ref:`class_packedvector4array`"
+msgstr ":ref:`class_packedvector4array`"
+
+msgid "Containers: Array and Dictionary"
+msgstr "容器：Array 與 Dictionary"
+
+msgid ""
+"Both :ref:`class_array` and :ref:`class_dictionary` are implemented using "
+"variants. A Dictionary can match any datatype used as key to any other "
+"datatype. An Array just holds an array of Variants. Of course, a Variant can "
+"also hold a Dictionary or an Array inside, making it even more flexible."
+msgstr ""
+":ref:`class_array` 與 :ref:`class_dictionary` 都是透過 Variant 實作。"
+"Dictionary 可將任意型別作為鍵對應至其他任意型別。Array 則僅儲存 Variant 的陣"
+"列。當然，Variant 內也能再儲存 Dictionary 或 Array，讓其更加靈活。"
+
+msgid ""
+"Modifications to a container will modify all references to it. A Mutex "
+"should be created to lock it if :ref:`multi-threaded access "
+"<doc_using_multiple_threads>` is desired."
+msgstr ""
+"對容器的修改會影響所有指向該容器的參照。若需 :ref:`多執行緒存取 "
+"<doc_using_multiple_threads>`，應建立 Mutex 來鎖定。"
+
+msgid ""
+"`core/variant/dictionary.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/dictionary.h>`__"
+msgstr ""
+"`core/variant/dictionary.h <https://github.com/godotengine/godot/blob/master/"
+"core/variant/dictionary.h>`__"
+
+msgid ""
+"`core/variant/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant/array.h>`__"
+msgstr ""
+"`core/variant/array.h <https://github.com/godotengine/godot/blob/master/core/"
+"variant/array.h>`__"

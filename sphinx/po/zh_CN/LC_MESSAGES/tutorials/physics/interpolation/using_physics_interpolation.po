@@ -1,0 +1,103 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Using physics interpolation"
+msgstr "使用物理插值"
+
+msgid ""
+"How do we incorporate physics interpolation into a Godot game? Are there any "
+"caveats?"
+msgstr "如何在 Godot 游戏中加入物理插值？有什么注意事项吗？"
+
+msgid "Turn on the physics interpolation setting"
+msgstr "启用物理插值设置"
+
+msgid "Move (almost) all game logic from _process to _physics_process"
+msgstr "将（几乎）所有游戏逻辑从 _process 移到 _physics_process"
+
+msgid "Ensure that all indirect movement happens during physics ticks"
+msgstr "确保所有间接移动都在物理周期中进行"
+
+msgid "Choose a physics tick rate"
+msgstr "选择物理周期率"
+
+msgid ""
+"When using physics interpolation, the rendering is decoupled from physics, "
+"and you can choose any value that makes sense for your game. You are no "
+"longer limited to values that are multiples of the user's monitor refresh "
+"rate (for stutter-free gameplay if the target FPS is reached)."
+msgstr ""
+"使用物理插值时，渲染与物理解耦，你可以根据自己的游戏选择合适的值，不再受限于"
+"用户显示器刷新率的倍数（如果达到目标 FPS，可以实现无卡顿的游戏体验）。"
+
+msgid "As a rough guide:"
+msgstr "大致的参考："
+
+msgid "Low tick rates (10-30)"
+msgstr "低周期率（10-30）"
+
+msgid "Medium tick rates (30-60)"
+msgstr "中等周期率（30-60）"
+
+msgid "High tick rates (60+)"
+msgstr "高周期率（60+）"
+
+msgid "Better CPU performance"
+msgstr "CPU 性能更佳"
+
+msgid "Good physics behavior in complex scenes"
+msgstr "复杂场景中物理行为良好"
+
+msgid "Good with fast physics"
+msgstr "适合快速物理"
+
+msgid "Add some delay to input"
+msgstr "引入一些输入延迟"
+
+msgid "Good for first person games"
+msgstr "适合第一人称游戏"
+
+msgid "Good for racing games"
+msgstr "适合赛车游戏"
+
+msgid "Simple physics behaviour"
+msgstr "简单物理行为"
+
+msgid "Call ``reset_physics_interpolation()`` when teleporting objects"
+msgstr "传送对象时调用 ``reset_physics_interpolation()``"
+
+msgid "There are actually two ways to use ``reset_physics_interpolation()``:"
+msgstr "实际上有两种使用 ``reset_physics_interpolation()`` 的方法："
+
+msgid "*Standing start (e.g. player)*"
+msgstr "*立定起步（例如玩家）*"
+
+msgid "Set the initial transform"
+msgstr "设置初始变换"
+
+msgid "Call ``reset_physics_interpolation()``"
+msgstr "调用 ``reset_physics_interpolation()``"
+
+msgid ""
+"The previous and current transforms will be identical, resulting in no "
+"initial movement."
+msgstr "上一个变换和当前变换相同，因此不会产生初始移动。"
+
+msgid "*Moving start (e.g. bullet)*"
+msgstr "*移动起步（例如子弹）*"
+
+msgid "Immediately set the transform expected after the first tick of motion"
+msgstr "第一个运动周期后会立即设置变换"
+
+msgid "Testing and debugging tips"
+msgstr "测试和调试贴士"

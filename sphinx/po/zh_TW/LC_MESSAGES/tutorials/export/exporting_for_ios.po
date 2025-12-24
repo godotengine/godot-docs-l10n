@@ -1,0 +1,323 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Exporting for iOS"
+msgstr "為 iOS 匯出"
+
+msgid ""
+"This page describes how to export a Godot project to iOS. If you're looking "
+"to compile export template binaries from source instead, "
+"read :ref:`doc_compiling_for_ios`."
+msgstr ""
+"這個頁面描述的是如何將 Godot 專案匯出到 iOS。如果你想要找的是從源碼編譯編輯器"
+"或匯出範本二進位檔案，請閱讀 :ref:`doc_compiling_for_ios`。"
+
+msgid ""
+"These are the steps to load a Godot project in Xcode. This allows you to "
+"build and deploy to an iOS device, build a release for the App Store, and do "
+"everything else you can normally do with Xcode."
+msgstr ""
+"下列步驟為在 Xcode 中載入 Godot 專案的方法。這些步驟能用來建置與部署專案至 "
+"iOS 裝置上、為 App Store 建置發行版本，並可在 Xcode 中執行各種其他一般操作。"
+
+msgid ""
+"Projects written in C# can be exported to iOS as of Godot 4.2, but support "
+"is experimental and :ref:`some limitations apply <doc_c_sharp_platforms>`."
+msgstr ""
+"自 Godot 4.2 起，C# 專案也可以匯出到 iOS，但目前仍屬實驗性支援，且 :ref:`有部"
+"分限制 <doc_c_sharp_platforms>`。"
+
+msgid "Requirements"
+msgstr "系統需求"
+
+msgid ""
+"You must export for iOS from a computer running macOS with Xcode installed."
+msgstr "必須從有安裝 Xcode 的 macOS 電腦上為 iOS 匯出。"
+
+msgid ""
+"Download the Godot export templates. Use the Godot menu: Editor > Manage "
+"Export Templates"
+msgstr "下載 Godot 匯出樣板。使用 Godot 選單：[編輯器] > [管理匯出樣板]"
+
+msgid "Export a Godot project to Xcode"
+msgstr "匯出 Godot 專案至 Xcode"
+
+msgid ""
+"In the Godot editor, open the **Export** window from the **Project** menu. "
+"When the Export window opens, click **Add..** and select **iOS**."
+msgstr ""
+"在 Godot 編輯器中，打開 **[專案]** 選單中的 **[匯出]** 視窗。[匯出] 視窗開啟"
+"後，點擊 **[新增...]** 然後選擇 **[iOS]** 。"
+
+msgid ""
+"The **App Store Team ID** and (Bundle) **Identifier** options in the "
+"**Application** category are required. Leaving them blank will cause the "
+"exporter to throw an error."
+msgstr ""
+"在 **應用程式** 類別中的 **App Store 團隊 ID** 和 (Bundle) **識別碼** 選項為"
+"必填項。將它們留空將會導致匯出工具產生錯誤。"
+
+msgid "If you encounter an error during export similar to"
+msgstr "如果您在匯出過程中遇到類似以下錯誤"
+
+msgid ""
+"``JSON text did not start with array or object and option to allow fragments "
+"not set``"
+msgstr "“JSON 文字未以陣列或物件開頭，且未設定允許片段的選項”"
+
+msgid "then it might be due to a malformated **App Store Team ID**!"
+msgstr "那麼可能是由於 **App Store 團隊 ID** 格式錯誤！"
+
+msgid ""
+"The exporter expects a (10 characters long) code like ``ABCDE12XYZ`` and "
+"not, e.g., your name as Xcode likes to display in the *Signing & "
+"Capabilities* tab."
+msgstr ""
+"匯出器需要一個（10 個字元長）程式碼，例如“ABCDE12XYZ”，而不是例如 Xcode 喜歡"
+"在“簽章和功能”標籤中顯示的您的姓名。"
+
+msgid ""
+"You can find the code over at `developer.apple.com <https://"
+"developer.apple.com/account/resources/certificates/list>`_ next to your name "
+"in the top right corner."
+msgstr ""
+"您可以在右上角您姓名旁的 `developer.apple.com <https://developer.apple.com/"
+"account/resources/certificates/list>`_ 找到程式碼。"
+
+msgid ""
+"After you click **Export Project**, there are still two important options "
+"left:"
+msgstr "點擊 **[匯出專案]** 後，還有兩個重要的選項要填："
+
+msgid ""
+"**Path** is an empty folder that will contain the exported Xcode project "
+"files."
+msgstr "**[路徑]** 為一個空資料夾，會用來儲存匯出後的 Xcode 專案檔案。"
+
+msgid ""
+"**File** will be the name of the Xcode project and several project specific "
+"files and directories."
+msgstr "**[檔案]** 為 Xcode 專案的名稱，以及各種專案特定檔案與資料夾的名稱。"
+
+msgid ""
+"This tutorial uses **exported_xcode_project_name**, but you will use your "
+"project's name. When you see **exported_xcode_project_name** in the "
+"following steps, replace it with the name you used instead."
+msgstr ""
+"本教學使用 **exported_xcode_project_name** ，但實際應該使用專案名稱。在接下來"
+"的步驟看到 **exported_xcode_project_name** 時，請自行替換。"
+
+msgid ""
+"Avoid using spaces when you choose your **exported_xcode_project_name** as "
+"this can lead to corruption in your XCode project file."
+msgstr ""
+"選擇 **exported_xcode_project_name** 時請避免使用空格，可能會導致 Xcode 專案"
+"檔案出錯。"
+
+msgid "When the export completes, the output folder should look like this:"
+msgstr "匯出完成後，輸出資料夾應該長得像這樣："
+
+msgid ""
+"Opening **exported_xcode_project_name.xcodeproj** lets you build and deploy "
+"like any other iOS app."
+msgstr ""
+"開啟 **exported_xcode_project_name.xcodeproj** 即可像其他 iOS 應用程式一樣進"
+"行建置與部署。"
+
+msgid "Active development considerations"
+msgstr "活躍開發中的注意事項"
+
+msgid ""
+"The above method creates an exported project that you can build for release, "
+"but you have to re-export every time you make a change in Godot."
+msgstr ""
+"上述方法能建立匯出專案，並用於建置發行版本，但每次於 Godot 中修改後都必須重新"
+"匯出。"
+
+msgid ""
+"While developing, you can speed this process up by linking your Godot "
+"project files directly into your app."
+msgstr "開發時，可通過直接將 Godot 專案檔案串聯到應用程式中來加速這個過程。"
+
+msgid "In the following example:"
+msgstr "在下方範例中："
+
+msgid ""
+"**exported_xcode_project_name** is the name of the exported iOS application "
+"(as above)."
+msgstr "**exported_xcode_project_name** 為匯出的 iOS 應用程式名稱 (如上)。"
+
+msgid "**godot_project_to_export** is the name of the Godot project."
+msgstr "**godot_project_to_export** 為 Godot 專案名稱。"
+
+msgid ""
+"**godot_project_to_export** must not be the same as "
+"**exported_xcode_project_name** to prevent signing issues in Xcode."
+msgstr ""
+"**godot_project_to_export** 不可與 **exported_xcode_project_name** 相同，以避"
+"免 Xcode 上產生簽署問題。"
+
+msgid "Steps to link a Godot project folder to Xcode"
+msgstr "將 Godot 專案資料夾串聯至 Xcode 的步驟"
+
+msgid "Start from an exported iOS project (follow the steps above)."
+msgstr "先從匯出的 iOS 專案開始 (依照上面的步驟)。"
+
+msgid "In Finder, drag the Godot project folder into the Xcode file browser."
+msgstr "在 Finder 中，將 Godot 專案資料夾拖曳到 Xcode 檔案瀏覽器中。"
+
+msgid ""
+"In the dialog, make sure to select Action: **Reference files in place** and "
+"Groups: **Create folders**. Uncheck Targets: **exported_xcode_project_name**."
+msgstr ""
+"在對話方塊中，請確保選擇 Action：**Reference files in place**，以及 Groups："
+"**Create folders**。取消勾選 Targets：**exported_xcode_project_name**。"
+
+msgid "See the **godot_project_to_export** folder in the Xcode file browser."
+msgstr "在 Xcode 檔案瀏覽器中檢視 **godot_project_to_export** 資料夾。"
+
+msgid ""
+"Select the godot project in the Project navigator. Then on the other side of "
+"the XCode window, in the File Inspector, make these selections:"
+msgstr ""
+"在 Project 導覽器中選取 godot 專案。接著在 Xcode 視窗右側的 File Inspector "
+"中，做以下選擇："
+
+msgid "**Location**: Relative to Project"
+msgstr "**Location**：Relative to Project"
+
+msgid "**Build Rules**: Apply Once to Folder"
+msgstr "**Build Rules**：Apply Once to Folder"
+
+msgid "add your project to **Target Membership**"
+msgstr "將你的專案加入 **Target Membership**"
+
+msgid ""
+"Delete **exported_xcode_project_name.pck** from the Xcode project in the "
+"project navigator."
+msgstr ""
+"從 Project 導覽器中的 Xcode 專案刪除 **exported_xcode_project_name.pck**。"
+
+msgid ""
+"8. Open **exported_xcode_project_name-Info.plist** and add a string property "
+"named **godot_path** (this is the real key name) with a value "
+"**godot_project_to_export** (this is the name of your project)"
+msgstr ""
+"8. 開啟 **exported_xcode_project_name-Info.plist** , 新增一個名為 "
+"**godot_path** (這是真正的鍵名) 的字串屬性, 值設為 "
+"**godot_project_to_export** (你的專案名稱)"
+
+msgid ""
+"That's it! You can now edit your project in the Godot editor and build it in "
+"Xcode when you want to run it on a device."
+msgstr ""
+"就這樣！現在可以在 Godot 編輯器中編輯專案並於準備好在裝置上執行時於 Xcode 中"
+"進行建置。"
+
+msgid "Plugins for iOS"
+msgstr "iOS 外掛程式"
+
+msgid ""
+"Special iOS plugins can be used in Godot. Check out "
+"the :ref:`doc_plugins_for_ios` page."
+msgstr ""
+"可以在 Godot 中使用特殊的 iOS 外掛程式。請查看 :ref:`doc_plugins_for_ios` 頁"
+"面。"
+
+msgid "Environment variables"
+msgstr "環境變數"
+
+msgid ""
+"You can use the following environment variables to set export options "
+"outside of the editor. During the export process, these override the values "
+"that you set in the export menu."
+msgstr ""
+"您可以使用下列環境變數在編輯器外部設定匯出選項。在匯出過程中，這些值會覆寫您"
+"在匯出選單中設定的值。"
+
+msgid "iOS export environment variables"
+msgstr "環境變數"
+
+msgid "Export option"
+msgstr "匯出選項"
+
+msgid "Environment variable"
+msgstr "環境變數"
+
+msgid "Encryption / Encryption Key"
+msgstr "加密／加密金鑰"
+
+msgid "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+msgstr "``GODOT_SCRIPT_ENCRYPTION_KEY``"
+
+msgid "Options / Application / Provisioning Profile UUID Debug"
+msgstr "選項/應用程式/設定檔 UUID 偵錯"
+
+msgid "``GODOT_IOS_PROVISIONING_PROFILE_UUID_DEBUG``"
+msgstr "``GODOT_IOS_PROVISIONING_PROFILE_UUID_DEBUG``"
+
+msgid "Options / Application / Provisioning Profile UUID Release"
+msgstr "選項/應用程式/設定檔 UUID 發布"
+
+msgid "``GODOT_IOS_PROVISIONING_PROFILE_UUID_RELEASE``"
+msgstr "``GODOT_IOS_PROVISIONING_PROFILE_UUID_RELEASE``"
+
+msgid "Troubleshooting"
+msgstr "疑難排解"
+
+msgid "xcode-select points at wrong SDK location"
+msgstr "xcode-select 指向錯誤的 SDK 位置"
+
+msgid ""
+"xcode-select is a tool that comes with Xcode and among other things points "
+"at iOS SDKs on your Mac. If you have Xcode installed, opened it, agreed to "
+"the license agreement, and installed the command line tools, xcode-select "
+"should point at the right location for the iPhone SDK. If it somehow "
+"doesn't, Godot will fail exporting to iOS with an error that may look like "
+"this:"
+msgstr ""
+"xcode-select 是隨 Xcode 附帶的工具，負責指向你電腦上的 iOS SDK 位置。如果你已"
+"經安裝並開啟過 Xcode，接受了授權條款，並且安裝了命令列工具，xcode-select 應該"
+"會指向正確的 iPhone SDK 位置。如果沒有，Godot 匯出到 iOS 時會出現像這樣的錯"
+"誤："
+
+msgid ""
+"In this case, Godot is trying to find the ``Platforms`` folder containing "
+"the iPhone SDK inside the ``/Library/Developer/CommandLineTools/`` folder, "
+"but the ``Platforms`` folder with the iPhone SDK is actually located under "
+"``/Applications/Xcode.app/Contents/Developer``. To verify this, you can open "
+"up Terminal and run the following command to see what xcode-select points at:"
+msgstr ""
+"在這種情況下，Godot 會嘗試在 ``/Library/Developer/CommandLineTools/`` 資料夾"
+"下尋找包含 iPhone SDK 的 ``Platforms`` 資料夾，但實際上該資料夾應位於 ``/"
+"Applications/Xcode.app/Contents/Developer``。你可以打開終端機，執行下列指令來"
+"確認 xcode-select 目前指向的位置："
+
+msgid ""
+"To fix xcode-select pointing at a wrong location, enter this command in "
+"Terminal:"
+msgstr "若要修正 xcode-select 指向錯誤位置，在終端機輸入下方指令："
+
+msgid ""
+"After running this command, Godot should be able to successfully export to "
+"iOS."
+msgstr "執行完上述指令後，Godot 應該就能順利匯出到 iOS。"
+
+msgid "Export options"
+msgstr "匯出選項"
+
+msgid ""
+"You can find a full list of export options available in "
+"the :ref:`class_EditorExportPlatformIOS` class reference."
+msgstr ""
+"完整的可用匯出選項列表請見 :ref:`class_EditorExportPlatformIOS` 類別參考。"

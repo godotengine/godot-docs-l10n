@@ -1,0 +1,344 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "C# style guide"
+msgstr "C# 風格指南"
+
+msgid ""
+"Having well-defined and consistent coding conventions is important for every "
+"project, and Godot is no exception to this rule."
+msgstr "明確且一致的程式編寫慣例對每個專案都很重要，Godot 也不例外。"
+
+msgid ""
+"This page contains a coding style guide, which is followed by developers of "
+"and contributors to Godot itself. As such, it is mainly intended for those "
+"who want to contribute to the project, but since the conventions and "
+"guidelines mentioned in this article are those most widely adopted by the "
+"users of the language, we encourage you to do the same, especially if you do "
+"not have such a guide yet."
+msgstr ""
+"本頁包含了程式風格指南，Godot 的開發者與貢獻者都會遵循。因此，這份指南主要是"
+"給想要貢獻 Godot 專案的人。但因為本文所列的慣例與指引也是該語言最廣泛採用的寫"
+"法，我們也鼓勵你參考採用，尤其如果你還沒有一份自己的風格指南時。"
+
+msgid ""
+"This article is by no means an exhaustive guide on how to follow the "
+"standard coding conventions or best practices. If you feel unsure of an "
+"aspect which is not covered here, please refer to more comprehensive "
+"documentation, such as `C# Coding Conventions <https://docs.microsoft.com/en-"
+"us/dotnet/csharp/programming-guide/inside-a-program/coding-conventions>`_ or "
+"`Framework Design Guidelines <https://docs.microsoft.com/en-us/dotnet/"
+"standard/design-guidelines/naming-guidelines>`_."
+msgstr ""
+"本文章並非一份涵蓋所有標準程式設計慣例或最佳實踐的完整指南。如果你對本文未涵"
+"蓋的部分感到疑慮，請參考更完整的說明文件，例如 `C# 編碼慣例 <https://"
+"docs.microsoft.com/zh-tw/dotnet/csharp/programming-guide/inside-a-program/"
+"coding-conventions>`_ 或 `Framework 設計指引 <https://docs.microsoft.com/zh-"
+"tw/dotnet/standard/design-guidelines/naming-guidelines>`_ 。"
+
+msgid "Language specification"
+msgstr "語言規範"
+
+msgid ""
+"Godot currently uses **C# version 12.0** in its engine and example source "
+"code, as this is the version supported by .NET 8.0 (the current baseline "
+"requirement). So, before we move to a newer version, care must be taken to "
+"avoid mixing language features only available in C# 13.0 or later."
+msgstr ""
+"Godot 目前在引擎與範例程式碼中使用 **C# 12.0 版**，這是因為 .NET 8.0（目前的"
+"基本需求）所支援的版本。因此，在升級到新版本前，應避免混用僅在 C# 13.0 或更新"
+"版本才有的語言功能。"
+
+msgid ""
+"For detailed information on C# features in different versions, please see "
+"`What's New in C# <https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/"
+">`_."
+msgstr ""
+"更多關於不同 C# 版本功能的資訊，請參考 `C# 新功能 <https://"
+"docs.microsoft.com/en-us/dotnet/csharp/whats-new/>`_ 。"
+
+msgid "Formatting"
+msgstr "格式"
+
+msgid "General guidelines"
+msgstr "通用指引"
+
+msgid "Use line feed (**LF**) characters to break lines, not CRLF or CR."
+msgstr "換行時請使用 **LF** 字元，不要用 CRLF 或 CR。"
+
+msgid ""
+"Use one line feed character at the end of each file, except for `csproj` "
+"files."
+msgstr "除了 `csproj` 檔案外，每個檔案結尾請用一個 LF 換行字元。"
+
+msgid ""
+"Use **UTF-8** encoding without a `byte order mark <https://en.wikipedia.org/"
+"wiki/Byte_order_mark>`_."
+msgstr ""
+"請使用無 `BOM <https://zh.wikipedia.org/zh-tw/"
+"%E4%BD%8D%E5%85%83%E7%B5%84%E9%A0%86%E5%BA%8F%E8%A8%98%E8%99%9F>`_ 的 "
+"**UTF-8** 編碼。"
+
+msgid ""
+"Use **4 spaces** instead of tabs for indentation (which is referred to as "
+"\"soft tabs\")."
+msgstr "縮排請使用 **4 個空白字元**，不要用 Tab 字元（這稱為「軟 Tab」）。"
+
+msgid ""
+"Consider breaking a line into several if it's longer than 100 characters."
+msgstr "當一行超過 100 個字元時，建議拆成多行。"
+
+msgid "Line breaks and blank lines"
+msgstr "換行與空白行"
+
+msgid ""
+"For a general indentation rule, follow `the \"Allman Style\" <https://"
+"en.wikipedia.org/wiki/Indentation_style#Allman_style>`_ which recommends "
+"placing the brace associated with a control statement on the next line, "
+"indented to the same level:"
+msgstr ""
+"一般縮排建議遵循 `Allman 風格 <https://en.wikipedia.org/wiki/"
+"Indentation_style#Allman_style>`_ ，也就是將控制敘述的大括號放在下一行，並與"
+"該行縮排對齊："
+
+msgid "However, you may choose to omit line breaks inside brackets:"
+msgstr "但你可以在以下情況省略大括號內的換行："
+
+msgid "For simple property accessors."
+msgstr "用於簡單的屬性存取子。"
+
+msgid "For simple object, array, or collection initializers."
+msgstr "用於簡單的物件、陣列或集合初始值。"
+
+msgid "For abstract auto property, indexer, or event declarations."
+msgstr "用於抽象自動屬性、索引子或事件宣告。"
+
+msgid "Insert a blank line:"
+msgstr "應插入空行的情況："
+
+msgid "After a list of ``using`` statements."
+msgstr "在 ``using`` 陳述式列表之後。"
+
+msgid "Between method, properties, and inner type declarations."
+msgstr "在方法、屬性與內部型別宣告之間。"
+
+msgid "At the end of each file."
+msgstr "在每個檔案的結尾。"
+
+msgid ""
+"Field and constant declarations can be grouped together according to "
+"relevance. In that case, consider inserting a blank line between the groups "
+"for easier reading."
+msgstr ""
+"欄位與常數的宣告可以根據相關性分組。這種情況下，建議在不同群組間插入空行以方"
+"便閱讀。"
+
+msgid "Avoid inserting a blank line:"
+msgstr "應避免插入空行的情況："
+
+msgid "After ``{``, the opening brace."
+msgstr "在 ``{`` 左大括號之後。"
+
+msgid "Before ``}``, the closing brace."
+msgstr "在 ``}`` 右大括號之前。"
+
+msgid "After a comment block or a single-line comment."
+msgstr "在註解區塊或單行註解之後。"
+
+msgid "Adjacent to another blank line."
+msgstr "在另一個空行旁邊時。"
+
+msgid "Using spaces"
+msgstr "空白字元使用"
+
+msgid "Insert a space:"
+msgstr "應插入空白字元的情況："
+
+msgid "Around a binary and ternary operator."
+msgstr "在二元與三元運算子兩側。"
+
+msgid ""
+"Between an opening parenthesis and ``if``, ``for``, ``foreach``, ``catch``, "
+"``while``, ``lock`` or ``using`` keywords."
+msgstr ""
+"在左括號與 ``if``、``for``、``foreach``、``catch``、``while``、``lock`` 或 "
+"``using`` 關鍵字之間。"
+
+msgid "Before and within a single line accessor block."
+msgstr "在單行存取子區塊之前與區塊內。"
+
+msgid "Between accessors in a single line accessor block."
+msgstr "在單行存取子區塊的存取子之間。"
+
+msgid "After a comma which is not at the end of a line."
+msgstr "在不是行尾的逗號後方。"
+
+msgid "After a semicolon in a ``for`` statement."
+msgstr "在 ``for`` 陳述式中的分號之後。"
+
+msgid "After a colon in a single line ``case`` statement."
+msgstr "在單行 ``case`` 陳述式的冒號之後。"
+
+msgid "Around a colon in a type declaration."
+msgstr "在型別宣告中的冒號兩側。"
+
+msgid "Around a lambda arrow."
+msgstr "在 Lambda 箭頭的兩側。"
+
+msgid ""
+"After a single-line comment symbol (``//``), and before it if used at the "
+"end of a line."
+msgstr "在單行註解符號（``//``）之後，若用於行尾則也要在前面加空白。"
+
+msgid ""
+"After the opening brace, and before the closing brace in a single line "
+"initializer."
+msgstr "於單行初始化式中，在左大括號之後與右大括號之前插入空白字元。"
+
+msgid "Do not use a space:"
+msgstr "以下情形不使用空白字元："
+
+msgid "After type cast parentheses."
+msgstr "在型別轉換的括號後方。"
+
+msgid ""
+"The following example shows a proper use of spaces, according to some of the "
+"above mentioned conventions:"
+msgstr "以下範例根據上述慣例展示了正確的空白字元用法："
+
+msgid "Naming conventions"
+msgstr "命名慣例"
+
+msgid ""
+"Use **PascalCase** for all namespaces, type names and member level "
+"identifiers (i.e. methods, properties, constants, events), except for "
+"private fields:"
+msgstr ""
+"所有命名空間、型別名稱以及成員層級識別子（如方法、屬性、常數、事件）都使用 "
+"**PascalCase**，Private 欄位除外："
+
+msgid ""
+"Use **camelCase** for all other identifiers (i.e. local variables, method "
+"arguments), and use an underscore (``_``) as a prefix for private fields "
+"(but not for methods or properties, as explained above):"
+msgstr ""
+"其他所有識別子（如區域變數、方法參數）請用 **camelCase**。Private 欄位請在前"
+"面加底線（``_``）（但方法與屬性不加，如上所述）："
+
+msgid ""
+"There's an exception with acronyms which consist of two letters, like "
+"``UI``, which should be written in uppercase letters where PascalCase would "
+"be expected, and in lowercase letters otherwise."
+msgstr ""
+"有個例外，像 ``UI`` 這種只有兩個字母的縮寫，在需要 PascalCase 的場合請用全大"
+"寫，其餘情況請用小寫。"
+
+msgid ""
+"Note that ``id`` is **not** an acronym, so it should be treated as a normal "
+"identifier:"
+msgstr "請注意，``id`` **不是** 縮寫，應當作一般識別子處理："
+
+msgid ""
+"It is generally discouraged to use a type name as a prefix of an identifier, "
+"like ``string strText`` or ``float fPower``, for example. An exception is "
+"made, however, for interfaces, which **should**, in fact, have an uppercase "
+"letter ``I`` prefixed to their names, like ``IInventoryHolder`` or "
+"``IDamageable``."
+msgstr ""
+"一般不建議用型別名稱作為識別子的前綴，例如 ``string strText`` 或 ``float "
+"fPower``。不過介面是例外，介面名稱前面 **應該** 加上大寫的 ``I``，如 "
+"``IInventoryHolder`` 或 ``IDamageable``。"
+
+msgid ""
+"Lastly, consider choosing descriptive names and do not try to shorten them "
+"too much if it affects readability."
+msgstr "最後，請盡量選擇具描述性的名稱，不要為了簡短而犧牲可讀性。"
+
+msgid ""
+"For instance, if you want to write code to find a nearby enemy and hit it "
+"with a weapon, prefer:"
+msgstr "舉例來說，如果你要寫尋找鄰近敵人並用武器攻擊的程式，建議這樣命名："
+
+msgid "Rather than:"
+msgstr "而不是："
+
+msgid "Member variables"
+msgstr "成員變數"
+
+msgid ""
+"Don't declare member variables if they are only used locally in a method, as "
+"it makes the code more difficult to follow. Instead, declare them as local "
+"variables in the method's body."
+msgstr ""
+"如果某個變數只會在一個方法內使用，不要把它宣告成成員變數。這會讓程式碼難以追"
+"蹤。請直接在方法內宣告為區域變數。"
+
+msgid "Local variables"
+msgstr "區域變數"
+
+msgid ""
+"Declare local variables as close as possible to their first use. This makes "
+"it easier to follow the code, without having to scroll too much to find "
+"where the variable was declared."
+msgstr ""
+"區域變數請盡量在首次使用的附近宣告。這樣能讓程式碼更易閱讀，也不用頻繁捲動去"
+"尋找變數的宣告位置。"
+
+msgid "Implicitly typed local variables"
+msgstr "隱含型別區域變數"
+
+msgid ""
+"Consider using implicitly typing (``var``) for declaration of a local "
+"variable, but do so **only when the type is evident** from the right side of "
+"the assignment:"
+msgstr ""
+"建議可以用隱含型別（``var``）宣告區域變數，但**僅限於型別能從指派右側明確判斷"
+"時**："
+
+msgid "Other considerations"
+msgstr "其他注意事項"
+
+msgid "Use explicit access modifiers."
+msgstr "請使用明確的存取修飾詞。"
+
+msgid "Use properties instead of non-private fields."
+msgstr "請用屬性取代非 private 欄位。"
+
+msgid ""
+"Use modifiers in this order: ``public``/``protected``/``private``/"
+"``internal``/``virtual``/``override``/``abstract``/``new``/``static``/"
+"``readonly``."
+msgstr ""
+"修飾詞的順序應為：``public``/``protected``/``private``/``internal``/"
+"``virtual``/``override``/``abstract``/``new``/``static``/``readonly``。"
+
+msgid ""
+"Avoid using fully-qualified names or ``this.`` prefix for members when it's "
+"not necessary."
+msgstr "不必要時請避免對成員用完整限定名稱或 ``this.`` 前綴。"
+
+msgid "Remove unused ``using`` statements and unnecessary parentheses."
+msgstr "請移除未使用的 ``using`` 陳述式與不必要的括號。"
+
+msgid "Consider omitting the default initial value for a type."
+msgstr "可省略型別的預設初值。"
+
+msgid ""
+"Consider using null-conditional operators or type initializers to make the "
+"code more compact."
+msgstr "建議使用 null 條件運算子或型別初始化式讓程式碼更精簡。"
+
+msgid ""
+"Use safe cast when there is a possibility of the value being a different "
+"type, and use direct cast otherwise."
+msgstr "當數值有可能是不同型別時請用安全轉型，否則可用直接轉型。"

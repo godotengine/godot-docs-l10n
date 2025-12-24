@@ -1,0 +1,102 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine 4.5\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "Reducing stutter from shader (pipeline) compilations"
+msgstr "减少着色器（管线）编译导致的卡顿"
+
+msgid "Pipeline precompilation monitors"
+msgstr "管道预编译监视器"
+
+msgid "Screenshot of the Godot pipeline compilations monitor"
+msgstr "Godot 管线编译监视器的截图"
+
+msgid "Pipeline compilations of one of the demo projects."
+msgstr "演示项目的管线编译。"
+
+msgid "Pipeline precompilation features"
+msgstr "管道预编译功能"
+
+msgid "Pipeline precompilation instancing"
+msgstr "管线预编译实例化"
+
+msgid "Shader baker"
+msgstr "着色器烘焙器"
+
+msgid ""
+"The shader baker can only bake the source into the intermediate format (SPIR-"
+"V for Vulkan, DXIL for Direct3D 12, MIL for Metal). It cannot bake the "
+"intermediate format into the final pipeline, as this is dependent on the GPU "
+"driver and the hardware."
+msgstr ""
+"着色器烘焙器只能将源代码烘焙为中间格式（Vulkan 使用 SPIR-V，Direct3D 12 使用 "
+"DXIL，Metal 使用 MIL），无法将中间格式进一步烘焙为最终的渲染管线，因为这依赖"
+"于 GPU 驱动程序和硬件。"
+
+msgid ""
+"The shader baker is not a replacement for pipeline precompilation, but it "
+"aims to complement it."
+msgstr "着色器烘焙器并非用于替代管线预编译，而是旨在对其进行补充。"
+
+msgid ""
+"When enabled, the shader baker will bundle compiled shader code into the "
+"PCK, which results in the shader compilation step being skipped entirely. "
+"The downside is that exporting will take slightly longer. The PCK file will "
+"be larger by a few megabytes."
+msgstr ""
+"启用后，着色器烘焙器会将已编译的着色器代码打包进 PCK 文件中，从而完全跳过运行"
+"时的着色器编译步骤。缺点是导出过程会稍慢一些，且 PCK 文件体积会增加数兆字节。"
+
+msgid ""
+"The shader baker is disabled by default, but you can enable it in each "
+"export preset in the Export dialog by ticking the :ui:`Shader Baker > "
+"Enabled` export option."
+msgstr ""
+"着色器烘焙器默认处于禁用状态，但您可以在导出对话框的每个导出预设中，通过勾"
+"选:ui:`Shader Baker > Enabled`导出选项来启用它。"
+
+msgid ""
+"Note that shader baking will only be able to export shaders for drivers "
+"supported by the platform the editor is currently running on:"
+msgstr ""
+"请注意，着色器烘焙只能导出当前编辑器运行平台所支持的驱动程序对应的着色器："
+
+msgid ""
+"The editor running on Windows can export shaders for Vulkan and Direct3D 12."
+msgstr ""
+"在 Windows 上运行的编辑器可以导出适用于 Vulkan 和 Direct3D 12 的着色器。"
+
+msgid "The editor running on macOS can export shaders for Vulkan and Metal."
+msgstr "在 macOS 上运行的编辑器可以导出适用于 Vulkan 和 Metal 的着色器。"
+
+msgid "The editor running on Linux can export shaders for Vulkan only."
+msgstr "在 Linux 上运行的编辑器仅能导出适用于 Vulkan 的着色器。"
+
+msgid "The editor running on Android can export shaders for Vulkan only."
+msgstr "在 Android 上运行的编辑器仅能导出适用于 Vulkan 的着色器。"
+
+msgid ""
+"The shader baker will only export shaders that match the ``rendering/"
+"rendering_device/driver`` project setting for the target platform."
+msgstr ""
+"着色器烘焙器仅会导出与目标平台的 ``rendering/rendering_device/driver`` 项目设"
+"置相匹配的着色器。"
+
+msgid ""
+"The shader baker is only supported for the Forward+ and Mobile renderers. It "
+"will have no effect if the project uses the Compatibility renderer, or for "
+"users who make use of the Compatibility fallback due to their hardware not "
+"supporting the Forward+ or Mobile renderer."
+msgstr ""
+"着色器烘焙器仅支持 Forward+ 和 Mobile 渲染器。如果项目使用的是 Compatibility "
+"渲染器，或因硬件不支持 Forward+ 或 Mobile 渲染器而回退到 Compatibility 模式，"
+"则着色器烘焙器将不会生效。"
