@@ -221,25 +221,25 @@ msgid "If you play until \"Game Over\" and then start a new game right away, the
 msgstr ""
 
 #: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:282
-msgid "In the ``Mob`` scene, select the root node and click the \"Node\" tab next to the Inspector (the same place where you find the node's signals). Next to \"Signals\", click \"Groups\" to open the group overview and the \"+\" button to open the \"Create New Group\" dialog."
+msgid "In the ``Mob`` scene, select the root node and click the :ui:`Groups` tab next to the :ui:`Signals` tab and the \"+\" button to open the \"Create New Group\" dialog."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:289
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:287
 msgid "Name the group ``mobs`` and click \"ok\" to add a new scene group."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:293
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:291
 msgid "Now all mobs will be in the \"mobs\" group."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:297
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:295
 msgid "We can then add the following line to the ``new_game()`` function in ``Main``:"
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:310
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:308
 msgid "The ``call_group()`` function calls the named function on every node in a group - in this case we are telling every mob to delete itself."
 msgstr ""
 
-#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:313
+#: ../../docs/getting_started/first_2d_game/06.heads_up_display.rst:311
 msgid "The game's mostly done at this point. In the next and last part, we'll polish it a bit by adding a background, looping music, and some keyboard shortcuts."
 msgstr ""

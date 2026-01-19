@@ -1,0 +1,132 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:4
+msgid "Tracy"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:6
+msgid "Please see the :ref:`tracing profiler instructions <doc_tracing_profilers>` for more information."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:8
+msgid "`Tracy <https://github.com/wolfpld/tracy>`__ is an Open Source profiler that runs on a wide variety of platforms, including Windows, Linux, and macOS. While it is primarily a tracing profiler, it can also periodically sample data like a :ref:`sampling profiler <doc_sampling_profilers>`, giving some of the benefits of both approaches."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:15
+msgid "Build Godot with Tracy support"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:17
+msgid "First, clone the latest version of the Tracy source code (\"0.13.0\" at the time of writing) using Git:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:24
+msgid "This will create a ``tracy`` directory - you can place this anywhere."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:26
+msgid "Next, build the release templates for your platform using ``scons``, but adding the ``profiler=tracy profiler_path=path/to/tracy`` arguments with the real path to the ``tracy`` directory, as well as ``debug_symbols=yes`` to allow Tracy's sampling features to work."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:33
+msgid "You don't have to build release templates, you could also build debug templates, or even the editor. However, it's generally recommended to profile release templates, because that is the version your players will use, and it will perform differently than other types of builds."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:38
+msgid "For example, to build release templates for Windows:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:45
+msgid "Get the Tracy \"server\""
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:47
+msgid "In Tracy terminology, the application you are profiling is the \"client\", and the one receiving the data is the \"server\"."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:50
+msgid "If you are on Windows, you can download a pre-built ``tracy-profiler.exe`` from the Tracy `releases page <https://github.com/wolfpld/tracy/releases>`_."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:53
+msgid "However, if you're on Linux or macOS, you'll either need to find a pre-built binary from a package manager (like ``brew`` or ``nix``), or build it from source yourself."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:59
+msgid "If you do use a pre-built binary, be sure to use the same version that you used when building Godot."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:63
+msgid "Build the Tracy server from source"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:65
+msgid "In order to build Tracy, you'll need to install ``cmake``, which can be downloaded from the `CMake website <https://cmake.org/download/>`_, or possibly installed via a package manager (like ``brew`` or ``nix``)."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:69
+msgid "The full instructions for building Tracy from source can be found in the `Tracy manual <https://github.com/wolfpld/tracy/releases/latest/download/tracy.pdf>`_, but here is the TL;DR:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:79
+msgid "This will place the binary at ``tracy/profiler/build/tracy-profiler`` or ``tracy/profiler/build/tracy-profiler.exe`` (on Windows)."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:83
+msgid "Record a trace"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:85
+msgid "Launch the Tracy server - you'll see something like this:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:89
+msgid "Press \"connect\". This will ensure tracy makes a connection immediately when the game launches. If you forget to press \"connect\", Tracy will store system events in RAM, which can quickly blow up your memory usage (see the ``TRACY_ON_DEMAND`` documentation)."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:94
+msgid "Now, export your game using the release templates you built above, and run it. As soon as both are running, and you have pressed the \"Connect\" button in Tracy, you'll see data coming in:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:100
+msgid "When you think you've gathered enough data, press the \"Stop\" button. If you clicked somewhere and the box with the \"Stop\" button disappeared, you can click the top-left most icon to bring it back."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:105
+msgid "Examining the trace"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:107
+msgid "Here are some of the basic controls:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:109
+msgid "Zoom in/out with the mouse wheel"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:110
+msgid "Right click and drag to move forward/backward on the timeline"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:111
+msgid "In the top bar, click the left and right arrow buttons by \"Frames\" to move a single frame on the timeline"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/tracy.rst:113
+msgid "To learn more, see the `Tracy manual <https://github.com/wolfpld/tracy/releases/latest/download/tracy.pdf>`_."
+msgstr ""

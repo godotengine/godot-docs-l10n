@@ -16,33 +16,33 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/engine_details/development/debugging/index.rst:4
-msgid "Debugging and profiling"
+msgid "Debugging"
 msgstr ""
 
 #: ../../docs/engine_details/development/debugging/index.rst:6
 msgid "This section contains pages that provide guidance if you're looking at the engine code trying to find an underlying issue or an optimization possibility."
 msgstr ""
 
-#: ../../docs/engine_details/development/debugging/index.rst:19
+#: ../../docs/engine_details/development/debugging/index.rst:18
 msgid "Debugging the editor"
 msgstr ""
 
-#: ../../docs/engine_details/development/debugging/index.rst:21
+#: ../../docs/engine_details/development/debugging/index.rst:20
 msgid "When working on the Godot editor keep in mind that by default the executable will start in the Project Manager mode. Opening a project from the Project Manager spawns a new process, which stops the debugging session. To avoid that you should launch directly into the project using ``-e`` and ``--path`` launch options."
 msgstr ""
 
-#: ../../docs/engine_details/development/debugging/index.rst:27
+#: ../../docs/engine_details/development/debugging/index.rst:26
 msgid "For example, using ``gdb`` directly, you may do this:"
 msgstr ""
 
-#: ../../docs/engine_details/development/debugging/index.rst:34
+#: ../../docs/engine_details/development/debugging/index.rst:33
 msgid "You can also run the editor directly from your project's folder. In that case, only the ``-e`` option is required."
 msgstr ""
 
-#: ../../docs/engine_details/development/debugging/index.rst:43
+#: ../../docs/engine_details/development/debugging/index.rst:42
 msgid "You can learn more about these launch options and other command line arguments in the :ref:`command line tutorial <doc_command_line_tutorial>`."
 msgstr ""
 
-#: ../../docs/engine_details/development/debugging/index.rst:46
+#: ../../docs/engine_details/development/debugging/index.rst:45
 msgid "If you're using a code editor or an IDE to debug Godot, check out our :ref:`configuration guides <doc_configuring_an_ide>`, which cover the setup process for building and debugging with your particular editor."
 msgstr ""

@@ -310,3 +310,15 @@ msgstr ""
 #: ../../docs/tutorials/2d/particle_process_material_2d.rst:285
 msgid "An image should not be added to ``Point Texture`` or ``Color Texture`` directly. The \"Load Emission Mask\" menu should always be used instead."
 msgstr ""
+
+#: ../../docs/tutorials/2d/particle_process_material_2d.rst:289
+msgid "Customizing the process material"
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_process_material_2d.rst:291
+msgid "If you need to change or implement new behaviors in shader code, you can do so by converting the current ParticleProcessMaterial to a :ref:`class_ShaderMaterial`. Existing properties are preserved by the conversion process. Features that are enabled will also affect what's present in the converted shader code."
+msgstr ""
+
+#: ../../docs/tutorials/2d/particle_process_material_2d.rst:296
+msgid "To do so, right-click on the material in the FileSystem dock and choose **Convert to ShaderMaterial**. You can also do so by right-clicking on any property holding a reference to the material in the inspector."
+msgstr ""

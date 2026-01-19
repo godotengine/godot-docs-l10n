@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:4
+msgid "Hotspot"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:6
+msgid "Please see the :ref:`sampling profiler instructions <doc_sampling_profilers>` for more information."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:8
+msgid "Open `Hotspot <https://github.com/KDAB/hotspot>`__. Click **Record Data**:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:12
+msgid "In the next window, specify the path to the Godot binary that includes debug symbols."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:13
+msgid "Specify command line arguments to run a specific project, with or without the editor."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:14
+msgid "The path to the working directory can be anything if an absolute path is used for the ``--path`` command line argument. Otherwise, it must be set so that the relative path to the project is valid."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:17
+msgid "Make sure **Elevate Privileges** is checked if you have administrative privileges. While not essential for profiling Godot, this will ensure all events can be captured. Otherwise, some events may be missing from the capture. Your settings should now look something like this:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:24
+msgid "Click **Start Recording** and perform the actions you wish to profile in the editor/project."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:25
+msgid "Quit the editor/project normally or use the **Stop Profiling** button in Hotspot to stop profiling early. Stopping profiling early can result in cleaner profiles if you're not interested in the engine's shutdown procedure."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:28
+msgid "Click **View Results** and wait for the profiling visualization to be generated:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:32
+msgid "Use the tabs at the top to navigate between the different views. These views show the same data, but in different ways. The **Flame Graph** tab is a good way to see which functions take up the most time at a glance. These functions are therefore the most important ones to optimize, since optimizing them will improve performance the most."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:37
+msgid "At the bottom of all tabs except **Summary**, you will also see a list of CPU threads started by the engine along with the CPU utilization for each thread. This lets you see threads that can be a bottleneck at a given point in time."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:45
+msgid "If you don't want the startup procedure to be included in the profile, you can also attach Hotspot to a running process by clicking **Record Data** then setting the **Launch Application** dropdown option to **Attach To Process(es)**."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/hotspot.rst:50
+msgid "This process attachment-based workflow is similar to the one used by VerySleepy."
+msgstr ""

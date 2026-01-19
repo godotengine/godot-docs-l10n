@@ -304,109 +304,137 @@ msgid "This allows you to choose which debug messages are logged."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:240
-msgid "Hand Tracking"
+msgid "Frame Synthesis"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:242
-msgid "This enables the hand tracking extension when supported by the device used. This is on by default for legacy reasons. The hand tracking extension provides access to data that allows you to visualise the user's hands with correct finger positions. Depending on platform capabilities the hand tracking data can be inferred from controller inputs, come from data gloves, come from optical hand tracking sensors or any other applicable source."
+msgid "When enabled, provided it's supported by the XR runtime, lower resolution motion vector and depth buffers are rendered and provided to the XR runtime. The XR runtime can now inject reprojection frames and compensate for lower framerates."
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:247
-msgid "If your game only supports controllers this should be turned off."
+#: ../../docs/tutorials/xr/openxr_settings.rst:246
+msgid "It currently has the following limitations:"
+msgstr ""
+
+#: ../../docs/tutorials/xr/openxr_settings.rst:248
+msgid "Does NOT work in the Forward+ renderer."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:249
-msgid "See the page on :ref:`hand tracking <doc_openxr_hand_tracking>` for additional details."
+msgid "Only works with stereo rendering."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:252
-msgid "Hand Tracking Unobstructed Data Source"
+msgid "Hand Tracking"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:254
-msgid "Enabling this means hand tracking may use the exact position of fingers, usually what a headset camera sees."
+msgid "This enables the hand tracking extension when supported by the device used. This is on by default for legacy reasons. The hand tracking extension provides access to data that allows you to visualise the user's hands with correct finger positions. Depending on platform capabilities the hand tracking data can be inferred from controller inputs, come from data gloves, come from optical hand tracking sensors or any other applicable source."
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:258
-msgid "Hand Tracking Controller Data Source"
+#: ../../docs/tutorials/xr/openxr_settings.rst:259
+msgid "If your game only supports controllers this should be turned off."
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:260
-msgid "Enabling this means hand tracking may use the controller itself, and infer where fingers are based on controller input or sensors on the controller."
+#: ../../docs/tutorials/xr/openxr_settings.rst:261
+msgid "See the page on :ref:`hand tracking <doc_openxr_hand_tracking>` for additional details."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:264
-msgid "Hand Interaction Profile"
+msgid "Hand Tracking Unobstructed Data Source"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:266
-msgid "Enabling this extension allows the use of two new hand tracking poses. Pinch pose which is the location between the thumb and index finger pointing forward, and poke pose which is at the tip of the index finger."
+msgid "Enabling this means hand tracking may use the exact position of fingers, usually what a headset camera sees."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:270
-msgid "This also allows 3 more gesture based inputs. Pinch, when the user pinches their thumb and index finger together. Aim activation, when the index finger is fully extended. And Grasps, when the user makes a fist."
+msgid "Hand Tracking Controller Data Source"
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:274
-msgid "When a hand interaction profile and controller interaction profile are supplied, the runtime will switch between profiles depending on if optical tracking is used or if the user is holding a controller."
+#: ../../docs/tutorials/xr/openxr_settings.rst:272
+msgid "Enabling this means hand tracking may use the controller itself, and infer where fingers are based on controller input or sensors on the controller."
+msgstr ""
+
+#: ../../docs/tutorials/xr/openxr_settings.rst:276
+msgid "Hand Interaction Profile"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:278
-msgid "If only a hand interaction profile is supplied any runtime should use hand interaction even if a controller is being held."
+msgid "Enabling this extension allows the use of two new hand tracking poses. Pinch pose which is the location between the thumb and index finger pointing forward, and poke pose which is at the tip of the index finger."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:282
-msgid "Eye Gaze Interaction"
+msgid "This also allows 3 more gesture based inputs. Pinch, when the user pinches their thumb and index finger together. Aim activation, when the index finger is fully extended. And Grasps, when the user makes a fist."
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:284
-msgid "This enables the eye gaze interaction extension when supported by the device used. When enabled we will get feedback from eye tracking through a pose situated between the user's eyes orientated in the direction the user is looking. This will be a unified orientation."
+#: ../../docs/tutorials/xr/openxr_settings.rst:286
+msgid "When a hand interaction profile and controller interaction profile are supplied, the runtime will switch between profiles depending on if optical tracking is used or if the user is holding a controller."
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:288
-msgid "In order to use this functionality you need to edit your action map and add a new pose action, say ``eye_pose``. Now add a new interaction profile for the eye gaze interaction and map the ``eye_pose``:"
+#: ../../docs/tutorials/xr/openxr_settings.rst:290
+msgid "If only a hand interaction profile is supplied any runtime should use hand interaction even if a controller is being held."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:294
-msgid "Don't forget to save!"
+msgid "Spatial Entities"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:296
-msgid "Next add a new :ref:`XRController3D <class_xrcontroller3d>` node to your origin node and set its ``tracker`` property to ``/user/eyes_ext`` and set its ``pose`` property to ``eye_pose``."
+msgid "This extension and its settings are used to obtain and interact with information about the user's real world environment. You can find more detailed information on how it works on the :ref:`spatial entities page <doc_openxr_spatial_entities>`."
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:300
-msgid "Now you can add things to this controller node such as a raycast, and control things with your eyes."
+#: ../../docs/tutorials/xr/openxr_settings.rst:301
+msgid "Eye Gaze Interaction"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:303
-msgid "Render Models"
+msgid "This enables the eye gaze interaction extension when supported by the device used. When enabled we will get feedback from eye tracking through a pose situated between the user's eyes orientated in the direction the user is looking. This will be a unified orientation."
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:305
-msgid "This extension is used to query the XR runtime for 3D assets of the hardware being used, usually a controller, as well as the position of that hardware. You can find a detailed guide on how to use it :ref:`here <doc_openxr_render_models>`."
+#: ../../docs/tutorials/xr/openxr_settings.rst:307
+msgid "In order to use this functionality you need to edit your action map and add a new pose action, say ``eye_pose``. Now add a new interaction profile for the eye gaze interaction and map the ``eye_pose``:"
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:310
-msgid "Binding Modifiers"
+#: ../../docs/tutorials/xr/openxr_settings.rst:313
+msgid "Don't forget to save!"
 msgstr ""
 
-#: ../../docs/tutorials/xr/openxr_settings.rst:312
-msgid "These control whether or not binding modifiers can be used. Binding modifiers are used to apply thresholds or offset values. You can find information on how to use and set them up on the XR action map page :ref:`here <doc_binding_modifiers>`."
-msgstr ""
-
-#: ../../docs/tutorials/xr/openxr_settings.rst:317
-msgid "Analog Threshold"
+#: ../../docs/tutorials/xr/openxr_settings.rst:315
+msgid "Next add a new :ref:`XRController3D <class_xrcontroller3d>` node to your origin node and set its ``tracker`` property to ``/user/eyes_ext`` and set its ``pose`` property to ``eye_pose``."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:319
-msgid "Allow analog threshold binding modifiers."
+msgid "Now you can add things to this controller node such as a raycast, and control things with your eyes."
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:322
-msgid "Dpad Binding"
+msgid "Render Models"
 msgstr ""
 
 #: ../../docs/tutorials/xr/openxr_settings.rst:324
+msgid "This extension is used to query the XR runtime for 3D assets of the hardware being used, usually a controller, as well as the position of that hardware. You can find a detailed guide on how to use it :ref:`here <doc_openxr_render_models>`."
+msgstr ""
+
+#: ../../docs/tutorials/xr/openxr_settings.rst:329
+msgid "Binding Modifiers"
+msgstr ""
+
+#: ../../docs/tutorials/xr/openxr_settings.rst:331
+msgid "These control whether or not binding modifiers can be used. Binding modifiers are used to apply thresholds or offset values. You can find information on how to use and set them up on the XR action map page :ref:`here <doc_binding_modifiers>`."
+msgstr ""
+
+#: ../../docs/tutorials/xr/openxr_settings.rst:336
+msgid "Analog Threshold"
+msgstr ""
+
+#: ../../docs/tutorials/xr/openxr_settings.rst:338
+msgid "Allow analog threshold binding modifiers."
+msgstr ""
+
+#: ../../docs/tutorials/xr/openxr_settings.rst:341
+msgid "Dpad Binding"
+msgstr ""
+
+#: ../../docs/tutorials/xr/openxr_settings.rst:343
 msgid "Allow D-pad binding modifiers."
 msgstr ""

@@ -16,9 +16,81 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:4
-msgid "Godot's architecture diagram"
+msgid "Godot's architecture overview"
 msgstr ""
 
 #: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:6
-msgid "The following diagram describes the architecture used by Godot, from the core components down to the abstracted drivers, via the scene structure and the servers."
+msgid "The following diagram describes the most important aspects of Godot's architecture. It's not designed to be exhaustive, with the purpose of just giving a high-level overview of the main components and their relationships to each other."
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:10
+msgid "Diagram of Godot's Architecture; divided into three layers (from top to bottom: Scene layer, Server layer, and Drivers & Platform interface layer), with Core and Main separated on the right side since they interact with all layers."
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:13
+msgid "Credit: `Hendrik Brucker <https://github.com/Geometror/godot-architecture-diagram>`__"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:16
+msgid "Scene Layer"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:18
+msgid "The Scene layer is the highest level of Godot's architecture, providing the scene system, which is the main way to build and structure your applications or games. See :ref:`class_SceneTree` / :ref:`doc_scene_tree` and :ref:`class_Node` for more information."
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:21
+msgid "Corresponding source code: `/scene/* <https://github.com/godotengine/godot/tree/master/scene>`__"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:24
+msgid "Server Layer"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:26
+msgid "Server components implement most of Godot's subsystems (rendering, audio, physics, etc.). They are singleton objects initialized at engine startup."
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:28
+msgid "`Why does Godot use servers and RIDs? <https://godotengine.org/article/why-does-godot-use-servers-and-rids>`__"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:30
+msgid "Corresponding source code: `/servers/* <https://github.com/godotengine/godot/tree/master/servers>`__"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:33
+msgid "Drivers / Platform Interface"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:35
+msgid "This layer abstracts low-level platform-specific details, containing drivers for graphics APIs, audio backends and operating system interfaces (all platform-specific :ref:`class_OS` and :ref:`class_DisplayServer` implementations)."
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:38
+msgid "Corresponding source code: `/drivers/* <https://github.com/godotengine/godot/tree/master/drivers>`__ and `/platform/* <https://github.com/godotengine/godot/tree/master/platform>`__"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:41
+msgid "Core"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:43
+msgid "The Engine's core contains essential functionality and data structures used throughout the engine, like :ref:`class_Object` and :ref:`class_ClassDB`, :ref:`memory management <doc_core_types>`, :ref:`containers <doc_core_types>`, file I/O, :ref:`Variant <doc_variant_class>`, and :ref:`other utilities <doc_common_engine_methods_and_macros>`."
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:46
+msgid "Corresponding source code: `/core/* <https://github.com/godotengine/godot/tree/master/core>`__"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:49
+msgid "Main"
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:51
+msgid "The Main component is responsible for initializing and managing the engine lifecycle, including startup, shutdown, and the main loop. See :ref:`class_MainLoop` for more details."
+msgstr ""
+
+#: ../../docs/engine_details/architecture/godot_architecture_diagram.rst:53
+msgid "Corresponding source code: `/main/* <https://github.com/godotengine/godot/tree/master/main>`__"
 msgstr ""

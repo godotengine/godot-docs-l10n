@@ -1,0 +1,64 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:4
+msgid "Instruments"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:6
+msgid "Please see the :ref:`sampling profiler instructions <doc_sampling_profilers>` and the :ref:`tracing profiler instructions <doc_tracing_profilers>` for more information."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:10
+msgid "Open `Xcode <https://developer.apple.com/xcode/>`__. Select **Open Developer Tool** - **Instruments** from the **Xcode** app menu:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:12
+msgid "Double-click on **Time Profiler** in the **Instruments** window:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:16
+msgid "In the Time Profiler window, click on the **Target** menu, select **Choose target...** and specify the path to the Godot binary, command line arguments, and environment variables in the next window."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:22
+msgid "You can also attach the Time Profiler to a running process by selecting it from the **Target** menu."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:25
+msgid "Click the **Start an immediate mode recording** button to start profiling."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:29
+msgid "Perform the actions you wish to profile in the editor or project. When you're done, click the **Stop** button."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:32
+msgid "Wait for the results to appear."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:33
+msgid "At the bottom of the window you will see a call tree for all CPU threads started, and the **Heaviest Stack Trace** overview."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:35
+msgid "Select **Hide system libraries** in the **Call Tree** menu (at the bottom of the window) to remove external modules."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/instruments.rst:37
+msgid "You can use the timeline at the top of the window to display details for the specific time period."
+msgstr ""

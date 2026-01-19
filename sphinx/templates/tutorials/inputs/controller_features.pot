@@ -1,0 +1,76 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/tutorials/inputs/controller_features.rst:4
+msgid "Controller features"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:6
+msgid "Godot supports controller-specific features that can further enhance the gameplay experience. This page describes these features, how existing games have used them, and how you can get started with them in Godot."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:12
+msgid "These controller features are currently only supported on Windows, macOS, and Linux."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:17
+msgid "Unless you specifically advertise your game as requiring specific controllers, remember that there is no guarantee that players will have a controller with any given features."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:21
+msgid "As a result, we suggest using these features to enhance the gameplay experience for players whose controllers support them, without detracting from those who don't have controllers."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:27
+msgid "LED color"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:29
+msgid "Games can use the LED lights on certain controllers to subtly complement the on-screen gameplay by providing some matching visuals in the player's hands. Here are some notable examples:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:32
+msgid "In *Hades*, the color of the light matches the god you're receiving a boon from."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:33
+msgid "In *Resident Evil 2*, the color of the light indicates your health (green for full, yellow for medium, red for low)."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:34
+msgid "In *Star Wars Jedi: Fallen Order*, the color of the light matches your lightsaber's color."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:36
+msgid "Use the method :ref:`Input.set_joy_light()<class_Input_method_set_joy_light>` to set the color of a given controller's LEDs."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:39
+msgid "To determine if a given controller supports setting LED lights, use the :ref:`Input.has_joy_light()<class_Input_method_has_joy_light>` method. The PlayStation DualShock and DualSense controllers are known to support LED lights."
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:42
+msgid "The following ``_process()`` method sets the LED color according to the currently pressed button, and turns it off if no button is being pressed:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:62
+msgid "The following example smoothly fades the LED through hues in a loop:"
+msgstr ""
+
+#: ../../docs/tutorials/inputs/controller_features.rst:73
+msgid "The following example makes the LED blink red three times when the south button (Cross/X on PlayStation controllers) is pressed:"
+msgstr ""

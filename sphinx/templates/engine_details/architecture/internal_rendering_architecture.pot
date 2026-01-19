@@ -569,7 +569,7 @@ msgstr ""
 
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:526
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:638
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:714
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:713
 msgid "Only available in the Forward+ renderer, not the Mobile or Compatibility renderers."
 msgstr ""
 
@@ -774,274 +774,274 @@ msgid "When both SSAO and SSIL are enabled, parts of SSAO and SSIL are shared to
 msgstr ""
 
 #: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:651
-msgid "SSAO and SSIL are performed at half resolution by default to improve performance. SSR is always performed at half resolution to improve performance."
+msgid "SSAO, SSIL, and SSR are performed at half resolution by default to improve performance."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:654
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:653
 msgid "**Screen-space effects C++ code:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:656
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:655
 msgid "`servers/rendering/renderer_rd/effects/ss_effects.cpp <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/effects/ss_effects.cpp>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:658
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:657
 msgid "**Screen-space ambient occlusion GLSL shader:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:660
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:659
 msgid "`servers/rendering/renderer_rd/shaders/effects/ssao.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/ssao.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:661
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:660
 msgid "`servers/rendering/renderer_rd/shaders/effects/ssao_blur.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/ssao_blur.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:662
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:661
 msgid "`servers/rendering/renderer_rd/shaders/effects/ssao_interleave.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/ssao_interleave.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:663
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:662
 msgid "`servers/rendering/renderer_rd/shaders/effects/ssao_importance_map.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/ssao_importance_map.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:665
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:664
 msgid "**Screen-space indirect lighting GLSL shader:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:667
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:666
 msgid "`servers/rendering/renderer_rd/shaders/effects/ssil.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/ssil.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:668
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:667
 msgid "`servers/rendering/renderer_rd/shaders/effects/ssil_blur.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/ssil_blur.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:669
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:668
 msgid "`servers/rendering/renderer_rd/shaders/effects/ssil_interleave.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/ssil_interleave.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:670
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:669
 msgid "`servers/rendering/renderer_rd/shaders/effects/ssil_importance_map.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/ssil_importance_map.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:672
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:671
 msgid "**Screen-space reflections GLSL shader:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:674
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:673
 msgid "`servers/rendering/renderer_rd/shaders/effects/screen_space_reflection.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/screen_space_reflection.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:675
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:674
 msgid "`servers/rendering/renderer_rd/shaders/effects/screen_space_reflection_scale.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/screen_space_reflection_scale.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:676
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:675
 msgid "`servers/rendering/renderer_rd/shaders/effects/screen_space_reflection_filter.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/screen_space_reflection_filter.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:678
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:677
 msgid "**Subsurface scattering GLSL:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:680
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:679
 msgid "`servers/rendering/renderer_rd/shaders/effects/subsurface_scattering.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/effects/subsurface_scattering.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:683
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:682
 msgid "Sky rendering"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:687
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:686
 msgid ":ref:`doc_sky_shader`"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:689
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:688
 msgid "Godot supports using shaders to render the sky background. The radiance map (which is used to provide ambient light and reflections for PBR materials) is automatically updated based on the sky shader."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:693
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:692
 msgid "The SkyMaterial resources such as ProceduralSkyMaterial, PhysicalSkyMaterial and PanoramaSkyMaterial generate a built-in shader for sky rendering. This is similar to what BaseMaterial3D provides for 3D scene materials."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:697
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:696
 msgid "A detailed technical implementation can be found in the `Custom sky shaders in Godot 4.0 <https://godotengine.org/article/custom-sky-shaders-godot-4-0>`__ article."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:701
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:700
 msgid "**Sky rendering C++ code:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:703
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:702
 msgid "`servers/rendering/renderer_rd/environment/sky.cpp <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/environment/sky.cpp>`__ - Sky rendering"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:704
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:703
 msgid "`scene/resources/sky.cpp <https://github.com/godotengine/godot/blob/4.2/scene/resources/sky.cpp>`__ - Sky resource (not to be confused with sky rendering)"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:705
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:704
 msgid "`scene/resources/sky_material.cpp <https://github.com/godotengine/godot/blob/4.2/scene/resources/sky_material.cpp>`__ SkyMaterial resources (used in the Sky resource)"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:707
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:706
 msgid "**Sky rendering GLSL shader:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:710
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:709
 msgid "Volumetric fog"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:718
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:717
 msgid ":ref:`doc_fog_shader`"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:720
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:719
 msgid "Godot supports a frustum-aligned voxel (froxel) approach to volumetric fog rendering. As opposed to a post-processing filter, this approach is more general-purpose as it can work with any light type. Fog can also use shaders for custom behavior, which allows animating the fog or using a 3D texture to represent density."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:726
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:725
 msgid "The FogMaterial resource generates a built-in shader for FogVolume nodes. This is similar to what BaseMaterial3D provides for 3D scene materials."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:729
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:728
 msgid "A detailed technical explanation can be found in the `Fog Volumes arrive in Godot 4.0 <https://godotengine.org/article/fog-volumes-arrive-in-godot-4>`__ article."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:733
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:732
 msgid "**Volumetric fog C++ code:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:735
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:734
 msgid "`servers/rendering/renderer_rd/environment/fog.cpp <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/environment/fog.cpp>`__ - General volumetric fog"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:736
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:735
 msgid "`scene/3d/fog_volume.cpp <https://github.com/godotengine/godot/blob/4.2/scene/3d/fog_volume.cpp>`__ - FogVolume node"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:737
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:736
 msgid "`scene/resources/fog_material.cpp <https://github.com/godotengine/godot/blob/4.2/scene/resources/fog_material.cpp>`__ - FogMaterial resource (used by FogVolume)"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:739
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:738
 msgid "**Volumetric fog GLSL shaders:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:741
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:740
 msgid "`servers/rendering/renderer_rd/shaders/environment/volumetric_fog.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/environment/volumetric_fog.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:742
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:741
 msgid "`servers/rendering/renderer_rd/shaders/environment/volumetric_fog_process.glsl <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_rd/shaders/environment/volumetric_fog_process.glsl>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:745
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:744
 msgid "Occlusion culling"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:747
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:746
 msgid "While modern GPUs can handle drawing a lot of triangles, the number of draw calls in complex scenes can still be a bottleneck (even with Vulkan, Direct3D 12, and Metal)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:751
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:750
 msgid "Godot 4 supports occlusion culling to reduce overdraw (when the depth prepass is disabled) and reduce vertex throughput. This is done by rasterizing a low-resolution buffer on the CPU using `Embree <https://github.com/embree/embree>`__. The buffer's resolution depends on the number of CPU threads on the system, as this is done in parallel. This buffer includes occluder shapes that were baked in the editor or created at runtime."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:759
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:758
 msgid "As complex occluders can introduce a lot of strain on the CPU, baked occluders can be simplified automatically when generated in the editor."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:762
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:761
 msgid "Godot's occlusion culling doesn't support dynamic occluders yet, but OccluderInstance3D nodes can still have their visibility toggled or be moved. However, this will be slow when updating complex occluders this way. Therefore, updating occluders at runtime is best done only on simple occluder shapes such as quads or cuboids."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:768
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:767
 msgid "This CPU-based approach has a few advantages over other solutions, such as portals and rooms or a GPU-based culling solution:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:771
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:770
 msgid "No manual setup required (but can be tweaked manually for best performance)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:772
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:771
 msgid "No frame delay, which is problematic in cutscenes during camera cuts or when the camera moves fast behind a wall."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:774
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:773
 msgid "Works the same on all rendering drivers and methods, with no unpredictable behavior depending on the driver or GPU hardware."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:777
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:776
 msgid "Occlusion culling is performed by registering occluder meshes, which is done using OccluderInstance3D *nodes* (which themselves use Occluder3D *resources*). RenderingServer then performs occlusion culling by calling Embree in RendererSceneOcclusionCull."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:782
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:781
 msgid "**Occlusion culling C++ code:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:784
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:783
 msgid "`scene/3d/occluder_instance_3d.cpp <https://github.com/godotengine/godot/blob/4.2/scene/3d/occluder_instance_3d.cpp>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:785
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:784
 msgid "`servers/rendering/renderer_scene_occlusion_cull.cpp <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_scene_occlusion_cull.cpp>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:788
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:787
 msgid "Visibility range (LOD)"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:790
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:789
 msgid "Godot supports manually authored hierarchical level of detail (HLOD), with distances specified by the user in the inspector."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:793
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:792
 msgid "In RenderingSceneCull, the ``_scene_cull()`` and ``_render_scene()`` functions are where most of the LOD determination happens. Each viewport can render the same mesh with different LODs (to allow for split screen rendering to look correct)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:797
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:796
 msgid "**Visibility range C++ code:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:799
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:830
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:798
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:829
 msgid "`servers/rendering/renderer_scene_cull.cpp <https://github.com/godotengine/godot/blob/4.2/servers/rendering/renderer_scene_cull.cpp>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:802
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:801
 msgid "Automatic mesh LOD"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:804
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:803
 msgid "The ImporterMesh class is used for the 3D mesh import workflow in the editor. Its ``generate_lods()`` function handles generating using the `meshoptimizer <https://meshoptimizer.org/>`__ library."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:808
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:807
 msgid "LOD mesh generation also generates shadow meshes at the same time. These are meshes that have their vertices welded regardless of smoothing and materials. This is used to improve shadow rendering performance by lowering the vertex throughput required to render shadows."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:813
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:812
 msgid "The RenderingSceneCull class's ``_render_scene()`` function determines which mesh LOD should be used when rendering. Each viewport can render the same mesh with different LODs (to allow for split screen rendering to look correct)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:817
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:816
 msgid "The mesh LOD is automatically chosen based on a screen coverage metric. This takes resolution and camera FOV changes into account without requiring user intervention. The threshold multiplier can be adjusted in the project settings."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:821
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:820
 msgid "To improve performance, shadow rendering and reflection probe rendering also choose their own mesh LOD thresholds (which can be different from the main scene rendering)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:824
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:823
 msgid "**Mesh LOD generation on import C++ code:**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:826
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:825
 msgid "`scene/resources/importer_mesh.cpp <https://github.com/godotengine/godot/blob/4.2/scene/resources/importer_mesh.cpp>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:828
+#: ../../docs/engine_details/architecture/internal_rendering_architecture.rst:827
 msgid "**Mesh LOD determination C++ code:**"
 msgstr ""

@@ -110,26 +110,30 @@ msgid "In Godot, transparent materials are drawn after opaque materials. Transpa
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:122
-msgid "Some rendering engines feature *order-independent transparency* techniques to alleviate this, but this is costly on the GPU. Godot currently doesn't provide this feature. There are still several ways to avoid this problem:"
+msgid "Transparent objects are not rendered to the normal-roughness buffer, as they are drawn after opaque geometry. As a result, features that rely on the normal-roughness buffer will not affect transparent materials."
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:126
-msgid "Only make materials transparent if you actually need it. If a material only has a small transparent part, consider splitting it into a separate material. This will allow the opaque part to cast shadows and will also improve performance."
+msgid "Some rendering engines feature *order-independent transparency* techniques to alleviate this, but this is costly on the GPU. Godot currently doesn't provide this feature. There are still several ways to avoid this problem:"
 msgstr ""
 
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:130
+msgid "Only make materials transparent if you actually need it. If a material only has a small transparent part, consider splitting it into a separate material. This will allow the opaque part to cast shadows and will also improve performance."
+msgstr ""
+
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:134
 msgid "If your texture mostly has fully opaque and fully transparent areas, you can use alpha testing instead of alpha blending. This transparency mode is faster to render and doesn't suffer from transparency issues. Enable **Transparency > Transparency** to **Alpha Scissor** in StandardMaterial3D, and adjust **Transparency > Alpha Scissor Threshold** accordingly if needed. Note that MSAA will not antialias the texture's edges unless alpha antialiasing is enabled in the material's properties. However, FXAA, TAA and supersampling will be able to antialias the texture's edges regardless of whether alpha antialiasing is enabled on the material."
 msgstr ""
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:140
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:144
 msgid "If you need to render semi-transparent areas of the texture, alpha scissor isn't suitable. Instead, setting the StandardMaterial3D's **Transparency > Transparency** property to **Depth Pre-Pass** can sometimes work (at a performance cost). You can also try the **Alpha Hash** mode."
 msgstr ""
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:145
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:149
 msgid "If you want a material to fade with distance, use the StandardMaterial3D distance fade mode **Pixel Dither** or **Object Dither** instead of **Pixel Alpha**. This will make the material opaque, which also speeds up rendering."
 msgstr ""
 
-#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:149
 #: ../../docs/tutorials/3d/3d_rendering_limitations.rst:153
+#: ../../docs/tutorials/3d/3d_rendering_limitations.rst:157
 msgid "Transparency sorting comparison (alpha-blended materials on the left, alpha scissor materials on the right)"
 msgstr ""

@@ -32,193 +32,193 @@ msgid "Some reasons to create custom platform ports might be:"
 msgstr ""
 
 #: ../../docs/engine_details/architecture/custom_platform_ports.rst:17
-msgid "You want to :ref:`port your game to consoles <doc_consoles>`, but wish to write the platform layer yourself. This is a long and arduous process, as it requires signing NDAs with console manufacturers, but it allows you to have full control over the console porting process."
+msgid "You want to port your game to consoles (see also the `Godot website on console support <https://godotengine.org/consoles/>`_), but wish to write the platform layer yourself. This is a long and arduous process, as it requires signing NDAs with console manufacturers, but it allows you to have full control over the console porting process."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:21
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:22
 msgid "You want to port Godot to an exotic platform that isn't currently supported."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:23
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:24
 msgid "If you have questions about creating a custom platform port, feel free to ask in the ``#platforms`` channel of the `Godot Contributors Chat <https://chat.godotengine.org/channel/platforms>`__."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:29
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:30
 msgid "Godot is a modern engine with modern requirements. Even if you only intend to run simple 2D projects on the target platform, it still requires an amount of memory that makes it unviable to run on most retro consoles. For reference, in Godot 4, an empty project with nothing visible requires about 100 MB of RAM to run on Linux (50 MB in headless mode)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:35
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:36
 msgid "If you want to run Godot on heavily memory-constrained platforms, older Godot versions have lower memory requirements. The porting process is similar, with the exception of :ref:`class_DisplayServer` not being split from the :ref:`class_OS` singleton."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:41
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:42
 msgid "Official platform ports"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:43
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:44
 msgid "The official platform ports can be used as a reference when creating a custom platform port:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:45
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:46
 msgid "`Windows <https://github.com/godotengine/godot/tree/master/platform/windows>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:46
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:47
 msgid "`macOS <https://github.com/godotengine/godot/tree/master/platform/macos>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:47
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:48
 msgid "`Linux/\\*BSD <https://github.com/godotengine/godot/tree/master/platform/linuxbsd>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:48
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:49
 msgid "`Android <https://github.com/godotengine/godot/tree/master/platform/android>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:49
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:50
 msgid "`iOS <https://github.com/godotengine/godot/tree/master/platform/ios>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:50
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:51
 msgid "`Web <https://github.com/godotengine/godot/tree/master/platform/web>`__"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:52
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:53
 msgid "While platform code is usually self-contained, there are exceptions to this rule. For instance, audio drivers that are shared across several platforms and rendering drivers are located in the `drivers/ folder <https://github.com/godotengine/godot/tree/master/drivers>`__ of the Godot source code."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:59
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:60
 msgid "Creating a custom platform port"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:61
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:62
 msgid "Creating a custom platform port is a large undertaking which requires prior knowledge of the platform's SDKs. Depending on what features you need, the amount of work needed varies:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:66
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:67
 msgid "Required features of a platform port"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:68
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:69
 msgid "At the very least, a platform port must have methods from the :ref:`class_OS` singleton implemented to be buildable and usable for headless operation. A ``logo.svg`` (32×32) vector image must also be present within the platform folder. This logo is displayed in the Export dialog for each export preset targeting the platform in question."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:74
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:75
 msgid "See `this implementation <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/os_linuxbsd.cpp>`__ for the Linux/\\*BSD platform as an example. See also the `OS singleton header <https://github.com/godotengine/godot/blob/master/core/os/os.h>`__ for reference."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:81
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:82
 msgid "If your target platform is UNIX-like, consider inheriting from the ``OS_Unix`` class to get much of the work done automatically."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:84
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:85
 msgid "If the platform is not UNIX-like, you might use the `Windows port <https://github.com/godotengine/godot/blob/master/platform/windows/os_windows.cpp>`__ as a reference."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:88
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:89
 msgid "**detect.py file**"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:90
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:91
 msgid "A ``detect.py`` file must be created within the platform's folder with all methods implemented. This file is required for SCons to detect the platform as a valid option for compiling. See the `detect.py file <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/detect.py>`__ for the Linux/\\*BSD platform as an example."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:96
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:97
 msgid "All methods should be implemented within ``detect.py`` as follows:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:98
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:99
 msgid "``is_active()``: Can be used to temporarily disable building for a platform. This should generally always return ``True``."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:100
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:101
 msgid "``get_name()``: Returns the platform's user-visible name as a string."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:101
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:102
 msgid "``can_build()``: Return ``True`` if the host system is able to build for the target platform, ``False`` otherwise. Do not put slow checks here, as this is queried when the list of platforms is requested by the user. Use ``configure()`` for extensive dependency checks instead."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:105
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:106
 msgid "``get_opts()``: Returns the list of SCons build options that can be defined by the user for this platform."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:107
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:108
 msgid "``get_flags()``: Returns the list of overridden SCons flags for this platform."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:108
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:109
 msgid "``configure()``: Perform build configuration, such as selecting compiler options depending on SCons options chosen."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:112
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:113
 msgid "Optional features of a platform port"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:114
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:115
 msgid "In practice, headless operation doesn't suffice if you want to see anything on screen and handle input devices. You may also want audio output for most games."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:118
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:119
 msgid "*Some links on this list point to the Linux/\\*BSD platform implementation as a reference.*"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:120
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:121
 msgid "One or more `DisplayServers <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/display_server_x11.cpp>`__, with the windowing methods implemented. DisplayServer also covers features such as mouse support, touchscreen support and tablet driver (for pen input). See the `DisplayServer singleton header <https://github.com/godotengine/godot/blob/master/servers/display_server.h>`__ for reference."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:127
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:128
 msgid "For platforms not featuring full windowing support (or if it's not relevant for the port you are making), most windowing functions can be left mostly unimplemented. These functions can be made to only check if the window ID is ``MAIN_WINDOW_ID`` and specific operations like resizing may be tied to the platform's screen resolution feature (if relevant). Any attempt to create or manipulate other window IDs can be rejected."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:133
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:134
 msgid "*If the target platform supports the graphics APIs in question:* Rendering context for `Vulkan <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/rendering_context_driver_vulkan_x11.cpp>`__, `Direct3D 12 <https://github.com/godotengine/godot/blob/master/drivers/d3d12/rendering_context_driver_d3d12.cpp>`__ `OpenGL 3.3 or OpenGL ES 3.0 <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/gl_manager_x11.cpp>`__."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:137
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:138
 msgid "Input handlers for `keyboard <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/x11/key_mapping_x11.cpp>`__ and `controller <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/joypad_linux.cpp>`__."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:139
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:140
 msgid "One or more `audio drivers <https://github.com/godotengine/godot/blob/master/drivers/pulseaudio/audio_driver_pulseaudio.cpp>`__. The audio driver can be located in the ``platform/`` folder (this is done for the Android and Web platforms), or in the ``drivers/`` folder if multiple platforms may be using this audio driver. See the `AudioServer singleton header <https://github.com/godotengine/godot/blob/master/servers/audio_server.h>`__ for reference."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:145
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:146
 msgid "`Crash handler <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/crash_handler_linuxbsd.cpp>`__, for printing crash backtraces when the game crashes. This allows for easier troubleshooting on platforms where logs aren't readily accessible."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:148
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:149
 msgid "`Text-to-speech driver <https://github.com/godotengine/godot/blob/master/platform/linuxbsd/tts_linux.cpp>`__ (for accessibility)."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:150
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:151
 msgid "`Export handler <https://github.com/godotengine/godot/tree/master/platform/linuxbsd/export>`__ (for exporting from the editor, including :ref:`doc_one-click_deploy`). Not required if you intend to export only a PCK from the editor, then run the export template binary directly by renaming it to match the PCK file. See the `EditorExportPlatform header <https://github.com/godotengine/godot/blob/master/editor/export/editor_export_platform.h>`__ for reference. ``run_icon.svg`` (16×16) should be present within the platform folder if :ref:`doc_one-click_deploy` is implemented for the target platform. This icon is displayed at the top of the editor when one-click deploy is set up for the target platform."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:161
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:162
 msgid "If the target platform doesn't support running Vulkan, Direct3D 12, OpenGL 3.3, or OpenGL ES 3.0, you have two options:"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:164
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:165
 msgid "Use a library at runtime to translate Vulkan or OpenGL calls to another graphics API. For example, `MoltenVK <https://moltengl.com/moltenvk/>`__ is used on macOS to translate Vulkan to Metal at runtime."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:167
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:168
 msgid "Create a new renderer from scratch. This is a large undertaking, especially if you want to support both 2D and 3D rendering with advanced features."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:171
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:172
 msgid "Distributing a custom platform port"
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:175
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:176
 msgid "Before distributing a custom platform port, make sure you're allowed to distribute all the code that is being linked against. Console SDKs are typically under NDAs which prevent redistribution to the public."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:179
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:180
 msgid "Platform ports are designed to be as self-contained as possible. Most of the code can be kept within a single folder located in ``platform/``. Like :ref:`doc_custom_modules_in_cpp`, this allows for streamlining the build process by making it possible to ``git clone`` a platform folder within a Godot repository clone's ``platform/`` folder, then run ``scons platform=<name>``. No other steps are necessary for building, unless third-party platform-specific dependencies need to be installed first."
 msgstr ""
 
-#: ../../docs/engine_details/architecture/custom_platform_ports.rst:187
+#: ../../docs/engine_details/architecture/custom_platform_ports.rst:188
 msgid "However, when a custom rendering driver is needed, another folder must be added in ``drivers/``. In this case, the platform port can be distributed as a fork of the Godot repository, or as a collection of several folders that can be added over a Godot Git repository clone."
 msgstr ""

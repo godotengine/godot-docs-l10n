@@ -470,3 +470,15 @@ msgstr ""
 #: ../../docs/tutorials/3d/particles/process_material_properties.rst:448
 msgid "See the :ref:`Sub-emitters <doc_3d_particles_subemitters>` section in this manual for a detailed explanation of how to add a sub-emitter to a particle system."
 msgstr ""
+
+#: ../../docs/tutorials/3d/particles/process_material_properties.rst:452
+msgid "Customizing the process material"
+msgstr ""
+
+#: ../../docs/tutorials/3d/particles/process_material_properties.rst:454
+msgid "If you need to change or implement new behaviors in shader code, you can do so by converting the current ParticleProcessMaterial to a :ref:`class_ShaderMaterial`. Existing properties are preserved by the conversion process. Features that are enabled will also affect what's present in the converted shader code."
+msgstr ""
+
+#: ../../docs/tutorials/3d/particles/process_material_properties.rst:459
+msgid "To do so, right-click on the material in the FileSystem dock and choose **Convert to ShaderMaterial**. You can also do so by right-clicking on any property holding a reference to the material in the inspector."
+msgstr ""

@@ -140,10 +140,14 @@ msgstr ""
 msgid "Save your crash log to a text file (for example, ``crash.txt``)."
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/resolving_crashes_on_android.rst:101
+#: ../../docs/tutorials/platform/android/resolving_crashes_on_android.rst:104
+msgid "``ndk-stack`` looks for an initial line of asterisks when parsing the crash log. Make sure your ``crash.txt`` starts with the following line:"
+msgstr ""
+
+#: ../../docs/tutorials/platform/android/resolving_crashes_on_android.rst:111
 msgid "Run ndk-stack with the path to the symbol directory that matches the crash's CPU architecture (for example, ``arm64-v8a``):"
 msgstr ""
 
-#: ../../docs/tutorials/platform/android/resolving_crashes_on_android.rst:107
+#: ../../docs/tutorials/platform/android/resolving_crashes_on_android.rst:117
 msgid "The output will display a symbolicated trace, showing file names and line numbers in Godot's source code (or your custom build)."
 msgstr ""

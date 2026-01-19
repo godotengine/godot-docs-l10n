@@ -1,0 +1,129 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2014-present Juan Linietsky, Ariel Manzur and the Godot community (CC BY 3.0)
+# This file is distributed under the same license as the Godot Engine package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Godot Engine latest\n"
+"Report-Msgid-Bugs-To: \n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../../docs/engine_details/development/profiling/index.rst:4
+msgid "Using C++ profilers"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:6
+msgid "To optimize Godot's performance, you need to know what to optimize first. To this end, profilers are useful tools."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:11
+msgid "There is a :ref:`built-in GDScript profiler <doc_the_profiler>` in the editor, but using a C++ profiler may be useful in cases where the GDScript profiler is not accurate enough or is missing information due to bugs in the profiler."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:15
+msgid "There are two main types of profilers: sampling profilers and tracing profilers."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:17
+msgid "Sampling profilers periodically interrupt the running program and take a \"sample\", which records which functions are running. Using this information, the profiler estimates which functions the program spent the most time in."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:21
+msgid "Tracing profilers work by recording application-specific events (such as the start and end of a single frame), producing a log called a \"trace\". The profiler can use the trace to produce a graph showing an accurate high-level timeline of what happened. However, any code that is not explicitly instrumented will not appear in a tracing profiler's timeline!"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:27
+msgid "Godot supports both sampling profilers and tracing profilers, and already includes the logging code for common Godot events for use with a tracing profiler!"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:30
+msgid "Different problems may be easier to debug with one kind of profiler over the other, but it's difficult to provide a set of rules for which to use. Give both a try, and see what you can learn from them!"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:37
+msgid "Sampling profilers"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:39
+msgid "We recommend the following sampling profilers:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:41
+msgid ":ref:`VerySleepy <doc_profiler_very_sleepy>` (Windows only)"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:42
+msgid ":ref:`Hotspot <doc_profiler_hotspot>` (Linux only)"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:43
+#: ../../docs/engine_details/development/profiling/index.rst:90
+msgid ":ref:`Instruments <doc_profiler_instruments>` (Apple only)"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:45
+msgid "These profilers may not be the most powerful or flexible options, but their standalone operation and limited feature set tends to make them easier to use."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:49
+msgid "Setting up Godot"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:51
+msgid "To get useful profiling information, it is **absolutely required** to use a Godot build that includes debugging symbols. Official binaries do not include debugging symbols, since these would make the download size significantly larger."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:55
+msgid "To get profiling data that best matches the production environment (but with debugging symbols), you should compile binaries with the ``production=yes debug_symbols=yes`` SCons options."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:58
+msgid "It is possible to run a profiler on less optimized builds (e.g. ``target=template_debug`` without LTO), but results will naturally be less representative of real world conditions."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:63
+msgid "Do *not* strip debugging symbols on the binaries using the ``strip`` command after compiling the binaries. Otherwise, you will no longer get useful profiling information when running a profiler."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:68
+msgid "Benchmarking startup/shutdown times"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:70
+msgid "If you're looking into optimizing Godot's startup/shutdown performance, you can tell the profiler to use the ``--quit`` command line option on the Godot binary. This will exit Godot just after it's done starting. The ``--quit`` option works with ``--editor``, ``--project-manager``, and ``--path <path to project directory>`` (which runs a project directly)."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:78
+msgid "See :ref:`doc_command_line_tutorial` for more command line arguments supported by Godot."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:84
+msgid "Tracing profilers"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:86
+msgid "Godot currently supports three tracing profilers:"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:88
+msgid ":ref:`Tracy <doc_profiler_tracy>`"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:89
+msgid ":ref:`Perfetto <doc_profiler_perfetto>`"
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:92
+msgid "In order to use either of them, you'll need to build the engine from source. If you've never done this before, please read :ref:`these docs <doc_compiling_index>` for the platform you want to profile on. You'll need to perform the same steps here, but with some additional arguments for ``scons``."
+msgstr ""
+
+#: ../../docs/engine_details/development/profiling/index.rst:99
+msgid "All recommended profilers"
+msgstr ""

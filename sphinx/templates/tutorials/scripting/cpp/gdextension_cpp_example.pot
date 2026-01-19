@@ -40,7 +40,7 @@ msgid "Build and test your code with the earliest compatible Godot version."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:15
-msgid "Create builds for all platforms you want to support (e.g. using `GitHub Actions <https://github.com/godotengine/godot-cpp-template/blob/main/.github/workflows/builds.yml>`__)."
+msgid "Create builds for all platforms you want to support (e.g. using `GitHub Actions <https://github.com/godotengine/godot-cpp-template/blob/main/.github/workflows/make_build.yml>`__)."
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:16
@@ -208,197 +208,201 @@ msgid "gdextension_cpp_example/src/register_types.cpp"
 msgstr ""
 
 #: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:264
-msgid "The ``initialize_example_module`` and ``uninitialize_example_module`` functions get called respectively when Godot loads our plugin and when it unloads it. All we're doing here is parse through the functions in our bindings module to initialize them, but you might have to set up more things depending on your needs. We call the ``GDREGISTER_RUNTIME_CLASS`` macro for each of our classes in our library. This will make them run only in game, like the default for GDScript."
+msgid "The ``initialize_example_module`` and ``uninitialize_example_module`` functions get called respectively when Godot loads our plugin and when it unloads it. All we're doing here is parse through the functions in our bindings module to initialize them, but you might have to set up more things depending on your needs. We call the ``GDREGISTER_CLASS`` macro for each of our classes in our library."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:271
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:272
+msgid "You can find information about ``GDREGISTER_CLASS`` (and alternatives) at :ref:`doc_object_class`."
+msgstr ""
+
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:274
 msgid "The important function is the third function called ``example_library_init``. We first call a function in our bindings library that creates an initialization object. This object registers the initialization and termination functions of the GDExtension. Furthermore, it sets the level of initialization (core, servers, scene, editor, level)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:276
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:279
 msgid "At last, we need the header file for the ``register_types.cpp`` named ``register_types.h``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:279
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:282
 msgid "gdextension_cpp_example/src/register_types.h"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:292
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:295
 msgid "Compiling the plugin"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:294
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:297
 msgid "To compile the project we need to define how SCons using should compile it using an ``SConstruct`` file which references the one in ``godot-cpp``. Writing it from scratch is outside the scope of this tutorial, but you can :download:`the SConstruct file we prepared <files/cpp_example/SConstruct>`. We'll cover a more customizable, detailed example on how to use these build files in a subsequent tutorial."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:303
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:306
 msgid "This ``SConstruct`` file was written to be used with the latest ``godot-cpp`` master, you may need to make small changes using it with older versions or refer to the ``SConstruct`` file in the Godot 4.x documentation."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:307
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:310
 msgid "Once you've downloaded the ``SConstruct`` file, place it in your GDExtension folder structure alongside ``godot-cpp``, ``src`` and ``demo``, then run:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:314
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:317
 msgid "You should now be able to find the module in ``demo/bin/<platform>``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:318
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:321
 msgid "Here, we've compiled both godot-cpp and our gdexample library as debug builds. For optimized builds, you should compile them using the ``target=template_release`` switch."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:323
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:326
 msgid "Using the GDExtension module"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:325
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:328
 msgid "Before we jump back into Godot, we need to create one more file in ``demo/bin/``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:328
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:331
 msgid "This file lets Godot know what dynamic libraries should be loaded for each platform and the entry function for the module. It is called ``gdexample.gdextension``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:354
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:357
 msgid "This file contains a ``configuration`` section that controls the entry function of the module. You should also set the minimum compatible Godot version with ``compatibility_minimum``, which prevents older version of Godot from trying to load your extension. The ``reloadable`` flag enables automatic reloading of your extension by the editor every time you recompile it, without needing to restart the editor. This only works if you compile your extension in debug mode (default)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:360
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:363
 msgid "The ``libraries`` section is the important bit: it tells Godot the location of the dynamic library in the project's filesystem for each supported platform. It will also result in *just* that file being exported when you export the project, which means the data pack won't contain libraries that are incompatible with the target platform."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:366
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:369
 msgid "You can learn more about ``.gdextension`` files at :ref:`doc_gdextension_file`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:368
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:371
 msgid "Here is another overview to check the correct file structure:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:391
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:394
 msgid "Time to jump back into Godot. We load up the main scene we created way back in the beginning and now add a newly available GDExample node to the scene:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:396
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:399
 msgid "We're going to assign the Godot logo to this node as our texture, disable the ``centered`` property:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:401
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:404
 msgid "We're finally ready to run the project:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:411
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:414
 msgid "Adding properties"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:413
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:416
 msgid "GDScript allows you to add properties to your script using the ``export`` keyword. In GDExtension you have to register the properties with a getter and setter function or directly implement the ``_get_property_list``, ``_get`` and ``_set`` methods of an object (but that goes far beyond the scope of this tutorial)."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:419
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:422
 msgid "Lets add a property that allows us to control the amplitude of our wave."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:421
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:424
 msgid "In our ``gdexample.h`` file we need to add a member variable and getter and setter functions:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:436
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:439
 msgid "In our ``gdexample.cpp`` file we need to make a number of changes, we will only show the methods we end up changing, don't remove the lines we're omitting:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:473
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:476
 msgid "Once you compile the module with these changes in place, you will see that a property has been added to our interface. You can now change this property and when you run your project, you will see that our Godot icon travels along a larger figure."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:478
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:481
 msgid "Let's do the same but for the speed of our animation and use a setter and getter function. Our ``gdexample.h`` header file again only needs a few more lines of code:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:493
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:496
 msgid "This requires a few more changes to our ``gdexample.cpp`` file, again we're only showing the methods that have changed so don't remove anything we're omitting:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:533
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:536
 msgid "Now when the project is compiled, we'll see another property called speed. Changing its value will make the animation go faster or slower. Furthermore, we added a property range which describes in which range the value can be. The first two arguments are the minimum and maximum value and the third is the step size."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:540
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:543
 msgid "For simplicity, we've only used the hint_range of the property method. There are a lot more options to choose from. These can be used to further configure how properties are displayed and set on the Godot side."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:545
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:548
 msgid "Signals"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:547
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:550
 msgid "Last but not least, signals fully work in GDExtension as well. Having your extension react to a signal given out by another object requires you to call ``connect`` on that object. We can't think of a good example for our wobbling Godot icon, we would need to showcase a far more complete example."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:552
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:555
 msgid "This is the required syntax:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:558
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:561
 msgid "To connect our signal ``the_signal`` from some other node with our method ``my_method``, we need to provide the ``connect`` method with the name of the signal and a ``Callable``. The ``Callable`` holds information about an object on which a method can be called. In our case, it associates our current object instance ``this`` with the method ``my_method`` of the object. Then the ``connect`` method will add this to the observers of ``the_signal``. Whenever ``the_signal`` is now emitted, Godot knows which method of which object it needs to call."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:566
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:569
 msgid "Note that you can only call ``my_method`` if you've previously registered it in your ``_bind_methods`` method. Otherwise Godot will not know about the existence of ``my_method``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:570
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:573
 msgid "To learn more about ``Callable``, check out the class reference here: :ref:`Callable <class_Callable>`."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:572
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:575
 msgid "Having your object sending out signals is more common. For our wobbling Godot icon, we'll do something silly just to show how it works. We're going to emit a signal every time a second has passed and pass the new location along."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:576
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:579
 msgid "In our ``gdexample.h`` header file, we need to define a new member ``time_emit``:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:586
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:589
 msgid "This time, the changes in ``gdexample.cpp`` are more elaborate. First, you'll need to set ``time_emit = 0.0;`` in either our ``_init`` method or in our constructor. We'll look at the other 2 needed changes one by one."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:590
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:593
 msgid "In our ``_bind_methods`` method, we need to declare our signal. This is done as follows:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:602
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:605
 msgid "Here, our ``ADD_SIGNAL`` macro can be a single call with a ``MethodInfo`` argument. ``MethodInfo``'s first parameter will be the signal's name, and its remaining parameters are ``PropertyInfo`` types which describe the essentials of each of the method's parameters. ``PropertyInfo`` parameters are defined with the data type of the parameter, and then the name that the parameter will have by default."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:608
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:611
 msgid "So here, we add a signal, with a ``MethodInfo`` which names the signal \"position_changed\". The ``PropertyInfo`` parameters describe two essential arguments, one of type ``Object``, the other of type ``Vector2``, respectively named \"node\" and \"new_pos\"."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:612
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:615
 msgid "Next, we'll need to change our ``_process`` method:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:634
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:637
 msgid "After a second has passed, we emit our signal and reset our counter. We can add our parameter values directly to ``emit_signal``."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:637
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:640
 msgid "Once the GDExtension library is compiled, we can go into Godot and select our sprite node. In the **Node** dock, we can find our new signal and link it up by pressing the **Connect** button or double-clicking the signal. We've added a script on our main node and implemented our signal like this:"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:649
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:652
 msgid "Every second, we output our position to the console."
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:652
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:655
 msgid "Next steps"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:654
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:657
 msgid "We hope the above example showed you the basics. You can build upon this example to create full-fledged scripts to control nodes in Godot using C++!"
 msgstr ""
 
-#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:657
+#: ../../docs/tutorials/scripting/cpp/gdextension_cpp_example.rst:660
 msgid "Instead of basing your project off the above example setup, we recommend to restart now by cloning the `godot-cpp template <https://github.com/godotengine/godot-cpp-template>`__, and base your project off of that. It has better coverage of features, such as a GitHub build action and additional useful ``SConstruct`` boilerplate."
 msgstr ""

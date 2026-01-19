@@ -198,6 +198,7 @@ tutorials/inputs/input_examples.pot
 tutorials/inputs/mouse_and_input_coordinates.pot
 tutorials/inputs/custom_mouse_cursor.pot
 tutorials/inputs/controllers_gamepads_joysticks.pot
+tutorials/inputs/controller_features.pot
 tutorials/inputs/handling_quit_requests.pot
 tutorials/math/index.pot
 tutorials/math/vector_math.pot
@@ -279,7 +280,6 @@ tutorials/platform/web/index.pot
 tutorials/platform/web/javascript_bridge.pot
 tutorials/platform/web/html5_shell_classref.pot
 tutorials/platform/web/customizing_html5_shell.pot
-tutorials/platform/consoles.pot
 tutorials/plugins/index.pot
 tutorials/plugins/editor/index.pot
 tutorials/plugins/editor/installing_plugins.pot
@@ -351,6 +351,7 @@ tutorials/scripting/other_languages.pot
 tutorials/scripting/gdextension/index.pot
 tutorials/scripting/gdextension/what_is_gdextension.pot
 tutorials/scripting/gdextension/gdextension_file.pot
+tutorials/scripting/gdextension/gdextension_interface_json_file.pot
 tutorials/scripting/gdextension/gdextension_c_example.pot
 tutorials/scripting/how_to_read_the_godot_api.pot
 tutorials/scripting/debug/index.pot
@@ -437,7 +438,6 @@ engine_details/architecture/object_class.pot
 engine_details/architecture/inheritance_class_tree.pot
 engine_details/architecture/internal_rendering_architecture.pot
 engine_details/architecture/2d_coordinate_systems.pot
-engine_details/architecture/scripting_development.pot
 engine_details/architecture/custom_modules_in_cpp.pot
 engine_details/architecture/binding_to_external_libraries.pot
 engine_details/architecture/custom_godot_servers.pot
@@ -471,13 +471,16 @@ engine_details/development/compiling/compiling_with_dotnet.pot
 engine_details/development/compiling/compiling_with_script_encryption_key.pot
 engine_details/development/compiling/optimizing_for_size.pot
 engine_details/development/debugging/index.pot
-engine_details/development/debugging/using_cpp_profilers.pot
-engine_details/development/debugging/profiling/sampling_profilers.pot
-engine_details/development/debugging/profiling/tracing_profilers.pot
 engine_details/development/debugging/using_sanitizers.pot
 engine_details/development/debugging/macos_debug.pot
 engine_details/development/debugging/vulkan/index.pot
 engine_details/development/debugging/vulkan/vulkan_validation_layers.pot
+engine_details/development/profiling/index.pot
+engine_details/development/profiling/hotspot.pot
+engine_details/development/profiling/instruments.pot
+engine_details/development/profiling/perfetto.pot
+engine_details/development/profiling/tracy.pot
+engine_details/development/profiling/very_sleepy.pot
 engine_details/development/handling_compatibility_breakages.pot
 engine_details/editor/index.pot
 engine_details/editor/introduction_to_editor_development.pot

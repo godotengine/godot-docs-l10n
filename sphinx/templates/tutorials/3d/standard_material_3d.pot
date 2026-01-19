@@ -500,6 +500,7 @@ msgid "Bent normal map"
 msgstr ""
 
 #: ../../docs/tutorials/3d/standard_material_3d.rst:438
+#: ../../docs/tutorials/3d/standard_material_3d.rst:768
 msgid "*This is only available in the Forward+ and Mobile renderers, not the Compatibility renderer.*"
 msgstr ""
 
@@ -851,118 +852,118 @@ msgstr ""
 msgid "Use Particle Trails"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:768
+#: ../../docs/tutorials/3d/standard_material_3d.rst:771
 msgid "If true, enables parts of the shader required for GPUParticles3D trails to function. This also requires using a mesh with appropriate skinning, such as RibbonTrailMesh or TubeTrailMesh. Enabling this feature outside of materials used in GPUParticles3D meshes will break material rendering."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:774
+#: ../../docs/tutorials/3d/standard_material_3d.rst:777
 msgid "Use Z Clip Scale"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:776
+#: ../../docs/tutorials/3d/standard_material_3d.rst:779
 msgid "Scales the object being rendered towards the camera to avoid clipping into things like walls. This is intended to be used for objects that are fixed with respect to the camera like player arms, tools, etc. Lighting and shadows will continue to work correctly when this setting is adjusted, but screen-space effects like SSAO and SSR may break with lower scales. Therefore, try to keep this setting as close to 1.0 as possible."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:784
+#: ../../docs/tutorials/3d/standard_material_3d.rst:787
 msgid "Use FOV Override"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:786
+#: ../../docs/tutorials/3d/standard_material_3d.rst:789
 msgid "Overrides the ``Camera3D``'s field of view angle (in degrees)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:790
+#: ../../docs/tutorials/3d/standard_material_3d.rst:793
 msgid "This behaves as if the field of view is set on a ``Camera3D`` with ``Camera3D.keep_aspect`` set to ``Camera3D.KEEP_HEIGHT``. Additionally, it may not look correct on a non-perspective camera where the field of view setting is ignored."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:796
+#: ../../docs/tutorials/3d/standard_material_3d.rst:799
 msgid "Proximity and Distance Fade"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:798
+#: ../../docs/tutorials/3d/standard_material_3d.rst:801
 msgid "Godot allows materials to fade by proximity to each other as well as depending on the distance from the viewer. Proximity fade is useful for effects such as soft particles or a mass of water with a smooth blending to the shores."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:804
+#: ../../docs/tutorials/3d/standard_material_3d.rst:807
 msgid "Distance fade is useful for light shafts or indicators that are only present after a given distance."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:807
+#: ../../docs/tutorials/3d/standard_material_3d.rst:810
 msgid "Keep in mind enabling proximity fade or distance fade with **Pixel Alpha** mode enables alpha blending. Alpha blending is more GPU-intensive and can cause transparency sorting issues. Alpha blending also disables many material features such as the ability to cast shadows."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:814
+#: ../../docs/tutorials/3d/standard_material_3d.rst:817
 msgid "To hide a character when they get too close to the camera, consider using **Pixel Dither** or better, **Object Dither** (which is even faster than **Pixel Dither**)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:818
+#: ../../docs/tutorials/3d/standard_material_3d.rst:821
 msgid "**Pixel Alpha** mode: The actual transparency of a pixel of the object changes with distance to the camera. This is the most effect, but forces the material into the transparency pipeline (which leads, for example, to no shadows)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:824
+#: ../../docs/tutorials/3d/standard_material_3d.rst:827
 msgid "**Pixel Dither** mode: What this does is sort of approximate the transparency by only having a fraction of the pixels rendered."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:829
+#: ../../docs/tutorials/3d/standard_material_3d.rst:832
 msgid "**Object Dither** mode: Like the previous mode, but the calculated transparency is the same across the entire object's surface."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:837
+#: ../../docs/tutorials/3d/standard_material_3d.rst:840
 msgid "Stencil"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:839
+#: ../../docs/tutorials/3d/standard_material_3d.rst:842
 msgid "Since Godot 4.5, Godot allows materials to make use of the stencil buffer. This feature is commonly used to create outlines and X-ray effects, which can be useful to highlight objects, especially behind walls."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:843
+#: ../../docs/tutorials/3d/standard_material_3d.rst:846
 msgid "The **Outline** and **X-Ray** modes assign a preconfigured stencil material in the material's **Next Pass** property. The **Custom** mode can be used for advanced effects."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:849
+#: ../../docs/tutorials/3d/standard_material_3d.rst:852
 msgid "Materials that write to the stencil buffer are always drawn in the transparent pass, so they are subject to the usual :ref:`transparency limitations <doc_3d_rendering_limitations_transparency_sorting>`."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:855
+#: ../../docs/tutorials/3d/standard_material_3d.rst:858
 msgid "Like with the :ref:`Grow property <ref_standard_material_3d_grow>`, for the stencil outline to work as expected, the mesh must have connected faces with shared vertices, or \"smooth shading\". If the mesh has disconnected faces with unique vertices, or \"flat shading\", the mesh will appear to have gaps when using a stencil outline."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:861
+#: ../../docs/tutorials/3d/standard_material_3d.rst:864
 msgid "Stencil outlines render similarly to the Grow property, but won't look identical in every scenario, especially when intersections with opaque surfaces are involved."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:865
+#: ../../docs/tutorials/3d/standard_material_3d.rst:868
 msgid "Material Settings"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:868
+#: ../../docs/tutorials/3d/standard_material_3d.rst:871
 msgid "Render priority"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:870
+#: ../../docs/tutorials/3d/standard_material_3d.rst:873
 msgid "The rendering order of objects can be changed, although this is mostly useful for transparent objects (or opaque objects that perform depth draw but no color draw, such as cracks on the floor)."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:874
+#: ../../docs/tutorials/3d/standard_material_3d.rst:877
 msgid "Objects are sorted by an opaque/transparent queue, then :ref:`render_priority<class_Material_property_render_priority>`, with higher priority being drawn later. Transparent objects are also sorted by depth."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:877
+#: ../../docs/tutorials/3d/standard_material_3d.rst:880
 msgid "Depth testing overrules priority. Priority alone cannot force opaque objects to be drawn over each other."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:880
+#: ../../docs/tutorials/3d/standard_material_3d.rst:883
 msgid "Next Pass"
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:882
+#: ../../docs/tutorials/3d/standard_material_3d.rst:885
 msgid "Setting :ref:`next_pass<class_Material_property_next_pass>` on a material will cause an object to be rendered again with that next material."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:885
+#: ../../docs/tutorials/3d/standard_material_3d.rst:888
 msgid "Materials are sorted by an opaque/transparent queue, then :ref:`render_priority<class_Material_property_render_priority>`, with higher priority being drawn later."
 msgstr ""
 
-#: ../../docs/tutorials/3d/standard_material_3d.rst:890
+#: ../../docs/tutorials/3d/standard_material_3d.rst:893
 msgid "Depth will test equal between both materials unless the grow setting or other vertex transformations are used. Multiple transparent passes should use :ref:`render_priority<class_Material_property_render_priority>` to ensure correct ordering."
 msgstr ""
